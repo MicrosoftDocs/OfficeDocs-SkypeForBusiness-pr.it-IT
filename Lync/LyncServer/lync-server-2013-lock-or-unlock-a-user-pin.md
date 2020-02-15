@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: bloccare o sbloccare un PIN utente'
+title: 'Lync Server 2013: bloccare o sbloccare il PIN di un utente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733618
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ce748039b0e8f19a4efee56424c7661908fe6552
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1f8f75f42dd7265e9aea22fa1dc03afd2f2c684a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765547"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42033365"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="lock-or-unlock-a-user-pin-in-lync-server-2013"></a>Bloccare o sbloccare un PIN utente in Lync Server 2013
+# <a name="lock-or-unlock-a-user-pin-in-lync-server-2013"></a>Bloccare o sbloccare il PIN di un utente in Lync Server 2013
 
 </div>
 
@@ -35,7 +35,7 @@ ms.locfileid: "41765547"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
 È possibile bloccare o sbloccare il PIN di un utente dalla sezione **utenti** del pannello di controllo di Lync Server 2013.
 
@@ -43,40 +43,40 @@ _**Argomento Ultima modifica:** 2013-02-23_
 
 ## <a name="to-lock-a-users-pin-in-lync-server-control-panel"></a>Per bloccare il PIN di un utente nel pannello di controllo di Lync Server
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **utenti**.
+3.  Sulla barra di spostamento sinistra fare clic su **Utenti**.
 
-4.  Usare uno dei metodi seguenti per individuare un utente:
+4.  Utilizzare uno dei metodi seguenti per individuare un utente:
     
-      - Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di gestione account di sicurezza (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente e quindi fare clic su **trova**.
+      - Nella casella **Cerca utenti** digitare per intero nome visualizzato, nome, cognome, nome account SAM (Security Accounts Manager), indirizzo SIP o URI linea dell'account utente desiderato, oppure digitare la prima parte di questi e quindi fare clic su **Trova**.
     
-      - Se si ha una query salvata, fare clic sull'icona **Apri query** , usare la finestra di dialogo **Apri** per recuperare la query (un file con estensione USF) e quindi fare clic su **trova**.
+      - Se è disponibile una query salvata, fare clic sull'icona **Apri query**, recuperare la query (file con estensione usf) mediante la finestra di dialogo **Apri** e quindi fare clic su **Trova**.
 
-5.  Opzionale Specificare altri criteri di ricerca per restringere i risultati:
+5.  (Facoltativo) Specificare ulteriori criteri di ricerca per limitare i risultati:
     
     1.  Fare clic su **Aggiungi filtro**.
     
-    2.  Immettere la proprietà User digitando o facendo clic sulla freccia nell'elenco a discesa per selezionare la proprietà.
+    2.  Immettere una proprietà utente digitandola o selezionandola dall'elenco a discesa dopo aver fatto clic sulla freccia.
     
-    3.  Nell'elenco **a discesa uguale a** fare clic sull'operatore, ad esempio **uguale** a o diverso **da**.
+    3.  Nell'elenco a discesa **Uguale a** fare clic sull'operatore, ad esempio **Uguale a** o **Diverso da**.
     
-    4.  A seconda della proprietà utente selezionata, immettere i criteri da usare per filtrare i risultati della ricerca digitando o facendo clic sulla freccia nell'elenco a discesa.
+    4.  A seconda della proprietà utente selezionata, immettere i criteri che si desidera utilizzare per filtrare i risultati della ricerca digitandoli oppure facendo clic sulla freccia nell'elenco a discesa.
         
         <div>
         
 
         > [!TIP]  
-        > Per aggiungere altre clausole di ricerca alla query, fare clic su <STRONG>Aggiungi filtro</STRONG>.
+        > Per aggiungere ulteriori clausole di ricerca alla query, fare clic su <STRONG>Aggiungi filtro</STRONG>.
 
         
         </div>
     
-    5.  Fare clic su **trova**.
+    5.  Fare clic su **Trova**.
     
-    6.  Fare clic sull'utente, fare clic su **azione**e quindi su **blocca pin**.
+    6.  Fare clic sull'utente, su **Azione** e quindi su **Blocca PIN**.
 
 </div>
 
@@ -84,54 +84,54 @@ _**Argomento Ultima modifica:** 2013-02-23_
 
 ## <a name="to-unlock-a-users-pin-in-lync-server-control-panel"></a>Per sbloccare il PIN di un utente nel pannello di controllo di Lync Server
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **utenti**.
+3.  Sulla barra di spostamento sinistra fare clic su **Utenti**.
 
-4.  Usare uno dei metodi seguenti per individuare un utente:
+4.  Utilizzare uno dei metodi seguenti per individuare un utente:
     
-      - Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di gestione account di sicurezza (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente e quindi fare clic su **trova**.
+      - Nella casella **Cerca utenti** digitare per intero nome visualizzato, nome, cognome, nome account SAM (Security Accounts Manager), indirizzo SIP o URI linea dell'account utente desiderato, oppure digitare la prima parte di questi e quindi fare clic su **Trova**.
     
-      - Se si ha una query salvata, fare clic sull'icona **Apri query** , usare la finestra di dialogo **Apri** per recuperare la query (un file con estensione USF) e quindi fare clic su **trova**.
+      - Se è disponibile una query salvata, fare clic sull'icona **Apri query**, recuperare la query (file con estensione usf) mediante la finestra di dialogo **Apri** e quindi fare clic su **Trova**.
 
-5.  Opzionale Specificare altri criteri di ricerca per restringere i risultati:
+5.  (Facoltativo) Specificare ulteriori criteri di ricerca per limitare i risultati:
     
     1.  Fare clic su **Aggiungi filtro**.
     
-    2.  Immettere la proprietà User digitando o facendo clic sulla freccia nell'elenco a discesa per selezionare la proprietà.
+    2.  Immettere una proprietà utente digitandola o selezionandola dall'elenco a discesa dopo aver fatto clic sulla freccia.
     
-    3.  Nell'elenco **a discesa uguale a** fare clic sull'operatore, ad esempio **uguale** a o diverso **da**.
+    3.  Nell'elenco a discesa **Uguale a** fare clic sull'operatore, ad esempio **Uguale a** o **Diverso da**.
     
-    4.  A seconda della proprietà utente selezionata, immettere i criteri da usare per filtrare i risultati della ricerca digitando o facendo clic sulla freccia nell'elenco a discesa.
+    4.  A seconda della proprietà utente selezionata, immettere i criteri che si desidera utilizzare per filtrare i risultati della ricerca digitandoli oppure facendo clic sulla freccia nell'elenco a discesa.
         
         <div>
         
 
         > [!TIP]  
-        > Per aggiungere altre clausole di ricerca alla query, fare clic su <STRONG>Aggiungi filtro</STRONG>.
+        > Per aggiungere ulteriori clausole di ricerca alla query, fare clic su <STRONG>Aggiungi filtro</STRONG>.
 
         
         </div>
     
-    5.  Fare clic su **trova**.
+    5.  Fare clic su **Trova**.
     
-    6.  Fare clic sull'utente, scegliere **azione**e quindi fare clic su **Sblocca PIN**.
+    6.  Fare clic sull'utente, su **Azione** e quindi su **Sblocca PIN**.
 
 </div>
 
 <div>
 
-## <a name="locking-and-unlocking-user-pins-by-using-windows-powershell-cmdlets"></a>Blocco e sblocco di PIN utente tramite i cmdlet di Windows PowerShell
+## <a name="locking-and-unlocking-user-pins-by-using-windows-powershell-cmdlets"></a>Blocco e sblocco dei PIN utente tramite i cmdlet di Windows PowerShell
 
-È possibile bloccare e sbloccare i pin degli utenti usando Windows PowerShell e i cmdlet Lock-CsClientPin e Unlock-CsClientPin. È possibile eseguire questi cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile bloccare e sbloccare i pin degli utenti utilizzando Windows PowerShell e i cmdlet Lock-CsClientPin e Unlock-CsClientPin. È possibile eseguire questi cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
-## <a name="to-lock-a-user-pin"></a>Per bloccare un PIN utente
+## <a name="to-lock-a-user-pin"></a>Per bloccare il PIN di un utente
 
-  - Per bloccare il PIN di un utente, usare il cmdlet Lock-CsClientPin. Ad esempio:
+  - Per bloccare il PIN di un utente, utilizzare il cmdlet Lock-CsClientPin. Ad esempio:
     
         Lock-CsClientPin -Identity "Ken Myer"
 
@@ -139,15 +139,15 @@ _**Argomento Ultima modifica:** 2013-02-23_
 
 <div>
 
-## <a name="to-unlock-a-user-pin"></a>Per sbloccare un PIN utente
+## <a name="to-unlock-a-user-pin"></a>Per sbloccare il PIN di un utente
 
-  - Per sbloccare il PIN di un utente, usare il cmdlet Unlock-CsClientPin. Ad esempio:
+  - Per sbloccare il PIN di un utente, utilizzare il cmdlet Unlock-CsClientPin. Ad esempio:
     
         Unlock-CsClientPin -Identity "Ken Myer"
 
 </div>
 
-Per altre informazioni, vedere l'argomento della Guida per i cmdlet [Lock-CsClientPin](https://docs.microsoft.com/powershell/module/skype/Lock-CsClientPin) e [Unlock-CsClientPin](https://docs.microsoft.com/powershell/module/skype/Unlock-CsClientPin) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo ai cmdlet [Lock-CsClientPin](https://docs.microsoft.com/powershell/module/skype/Lock-CsClientPin) e [Unlock-CsClientPin](https://docs.microsoft.com/powershell/module/skype/Unlock-CsClientPin) .
 
 </div>
 

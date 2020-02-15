@@ -12,16 +12,16 @@ ms:contentKeyID: 49733851
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ff3a7189d0f9d5cbbea4a34e558ac67defa2aab5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ab0af46f3f2170de0a169520c9f2097e7abbb058
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757810"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028737"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41757810"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
-Quando si configurano gli annunci, si sta realmente configurando come gestire le chiamate a numeri non assegnati. È possibile riprodurre un prompt, che può essere un file audio o un file di sintesi vocale, oppure semplicemente trasferire la chiamata a una destinazione specificata senza riuscire a eseguire una richiesta.
+Quando si configurano gli annunci, si specifica in realtà come devono essere gestite le chiamate a numeri non assegnati. È possibile riprodurre un messaggio, che può essere un file audio o un file di sintesi vocale oppure è possibile trasferire semplicemente la chiamata a una destinazione specificata senza riprodurre alcun messaggio.
 
-È necessario creare annunci prima di definire la tabella dei numeri non assegnati. È necessario eseguire questo passaggio per tutti gli annunci che usano un prompt audio, un prompt TTS o nessun messaggio.
+È necessario creare gli annunci prima di definire la tabella dei numeri non assegnati. È necessario eseguire questa operazione per tutti gli annunci con un messaggio audio o un messaggio di sintesi vocale, oppure senza alcun messaggio.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Creare un annuncio in Lync Server 2013](lync-server-2013-create-an-announcement.md)
 

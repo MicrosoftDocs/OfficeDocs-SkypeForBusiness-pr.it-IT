@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare i numeri di accesso per le conferenze telefoniche con accesso esterno'
+title: 'Lync Server 2013: configurare i numeri di accesso per le conferenze telefoniche in ingresso'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185623
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e19d594b8d1661a314b834e6c2e92d8668490ad7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4762971397192dc45fdcc402d40c2adec72414f5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757910"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028637"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-dial-in-conferencing-access-numbers-in-lync-server-2013"></a>Configurare i numeri di accesso per le conferenze telefoniche con accesso esterno in Lync Server 2013
+# <a name="configure-dial-in-conferencing-access-numbers-in-lync-server-2013"></a>Configurare i numeri di accesso per le conferenze telefoniche con chiamata in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41757910"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2011-07-17_
+_**Ultimo argomento modificato:** 2011-07-17_
 
-Quando si distribuiscono i servizi di conferenza telefonica con accesso esterno, è necessario configurare i numeri di telefono che gli utenti possono effettuare la chiamata dalla rete PSTN (Public Switched Telephone Network) per partecipare alla parte audio delle conferenze. I numeri di accesso per le connessioni in ingresso vengono visualizzati negli inviti alle riunioni e nella pagina Web delle impostazioni di conferenza telefonica con accesso esterno.
+Quando si distribuiscono le conferenze telefoniche con accesso esterno, è necessario configurare i numeri di telefono che gli utenti possono comporre dalla rete PSTN (Public Switched Telephone Network) per partecipare alla parte audio delle conferenze. Questi numeri di accesso esterno vengono visualizzati negli inviti alle riunioni e nella pagina Web delle impostazioni per le conferenze telefoniche con chiamata in ingresso.
 
-Prima di poter creare numeri di accesso per la chiamata in ingresso, è necessario pianificare le aree dei servizi di conferenza telefonica con accesso esterno e quindi configurare i dial plan con le aree geografiche. Per informazioni dettagliate sulle aree geografiche, vedere Requisiti per i servizi di [conferenza telefonica con accesso esterno in Lync Server 2013](lync-server-2013-dial-in-conferencing-requirements.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sulla configurazione dei dial plan per i servizi di conferenza telefonica con accesso esterno, vedere Configurare i dial plan per i servizi di [conferenza telefonica con accesso esterno in Lync Server 2013](lync-server-2013-configure-dial-plans-for-dial-in-conferencing.md).
+Prima di poter creare numeri di accesso esterno, è necessario prima di tutto pianificare le aree di audioconferenza e quindi configurare i dial plan con le aree geografiche. Per informazioni dettagliate sulle aree geografiche, vedere Servizi di [conferenza telefonica con accesso esterno in Lync Server 2013](lync-server-2013-dial-in-conferencing-requirements.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sulla configurazione dei dial plan per le conferenze telefoniche con accesso esterno, vedere [configurare dial plan per le conferenze telefoniche con accesso esterno in Lync Server 2013](lync-server-2013-configure-dial-plans-for-dial-in-conferencing.md).
 
 <div>
 
 
 > [!NOTE]  
-> Non è possibile usare un nuovo numero di accesso esterno finché non viene completata la replica di&nbsp;Active Directory Domain Services (ad DS). La replica può richiedere diverse ore per il completamento.
+> Non è possibile utilizzare un nuovo numero di accesso esterno finché non viene completata la replica di&nbsp;servizi di dominio Active Directory (ad DS) del numero di accesso. La replica può richiedere diverse ore per il completamento.
 
 
 
@@ -55,7 +55,7 @@ Prima di poter creare numeri di accesso per la chiamata in ingresso, è necessar
 
 
 > [!NOTE]  
-> Dopo aver creato i numeri di accesso esterno, è possibile modificare il nome visualizzato per gli oggetti contatto di Active Directory in modo che gli utenti possano identificare più facilmente il numero di accesso corretto. Usa il cmdlet <STRONG>Set-CsDialInConferencingAccessNumber</STRONG> per modificare il nome visualizzato. Non è consigliabile modificare manualmente gli oggetti di Active Directory. Per informazioni dettagliate sulla modifica di un numero di accesso, vedere la documentazione di Lync Server Management Shell per il cmdlet <STRONG>Set-CsDialInConferencingAccessNumber</STRONG> .
+> Dopo aver creato i numeri di accesso esterno, è possibile modificare il nome visualizzato per gli oggetti contatto di Active Directory in modo che gli utenti possano identificare più facilmente il numero di accesso corretto. Utilizzare il cmdlet <STRONG>Set-CsDialInConferencingAccessNumber</STRONG> per modificare il nome visualizzato. Non è necessario modificare gli oggetti di Active Directory manualmente. Per informazioni dettagliate sulla modifica di un numero di accesso, vedere la documentazione di Lync Server Management Shell per il cmdlet <STRONG>Set-CsDialInConferencingAccessNumber</STRONG> .
 
 
 
@@ -63,9 +63,9 @@ Prima di poter creare numeri di accesso per la chiamata in ingresso, è necessar
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-[Creare o modificare un numero di accesso per una conferenza telefonica con accesso esterno in Lync Server 2013](lync-server-2013-create-or-modify-a-dial-in-conferencing-access-number.md)
+[Creare o modificare un numero di accesso per le conferenze telefoniche in Lync Server 2013](lync-server-2013-create-or-modify-a-dial-in-conferencing-access-number.md)
 
 </div>
 
@@ -74,10 +74,10 @@ Prima di poter creare numeri di accesso per la chiamata in ingresso, è necessar
 ## <a name="see-also"></a>Vedere anche
 
 
-[Requisiti per i servizi di conferenza telefonica con accesso esterno in Lync Server 2013](lync-server-2013-dial-in-conferencing-requirements.md)  
+[Requisiti per le conferenze telefoniche con accesso esterno in Lync Server 2013](lync-server-2013-dial-in-conferencing-requirements.md)  
 
 
-[Configurare dial plan per le conferenze telefoniche con accesso esterno in Lync Server 2013](lync-server-2013-configure-dial-plans-for-dial-in-conferencing.md)  
+[Configurare i dial plan per le conferenze telefoniche con accesso esterno in Lync Server 2013](lync-server-2013-configure-dial-plans-for-dial-in-conferencing.md)  
   
 
 </div>

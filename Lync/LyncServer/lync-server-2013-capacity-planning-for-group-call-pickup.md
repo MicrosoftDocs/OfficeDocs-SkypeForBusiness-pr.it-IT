@@ -12,16 +12,16 @@ ms:contentKeyID: 51476680
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8d694b20d026d83b4cef37c713e38ab8066e22f3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 403a00887cb64b33075f173499e855eb8783bb20
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730296"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036536"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41730296"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-12_
+_**Ultimo argomento modificato:** 2013-02-12_
 
 <div id="sectionSection0" class="section">
 
-La tabella seguente descrive il modello di utente di prelievo delle chiamate di gruppo che puoi usare come base per i requisiti di pianificazione della capacità.
+Nella tabella seguente viene descritto il modello utente di prelievo delle chiamate di gruppo che è possibile utilizzare come base per i requisiti di pianificazione della capacità.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Il ritiro delle chiamate di gruppo si basa sull'applicazione Call Park. Tieni presente che, per la pianificazione della capacità di ripristino di emergenza, ogni pool di un pool associato dovrebbe essere in grado di gestire i carichi di lavoro per i servizi di Call Park, incluso il ritiro delle chiamate di gruppo, in entrambi i pool.
+> Il prelievo delle chiamate di gruppo si basa sull'applicazione Parcheggio di chiamata. Tenere presente che, per la pianificazione della capacità di ripristino di emergenza, ogni pool di un pool associato dovrebbe essere in grado di gestire i carichi di lavoro per i servizi del parcheggio di chiamata, incluso il prelievo delle chiamate di gruppo, in entrambi i pool.
 
 
 
 </div>
 
-### <a name="group-call-pickup-user-model"></a>Modello utente di raccolta chiamate di gruppo
+### <a name="group-call-pickup-user-model"></a>Modello utente di prelievo delle chiamate di gruppo
 
 <table>
 <colgroup>
@@ -62,13 +62,13 @@ La tabella seguente descrive il modello di utente di prelievo delle chiamate di 
 <thead>
 <tr class="header">
 <th>Metrica</th>
-<th>Per pool Front-End (con 8 server front-end)</th>
+<th>Per pool Front End (con 8 Front End Server)</th>
 <th>Per server Standard Edition</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Numero di utenti consigliati per gruppo</p></td>
+<td><p>Numero consigliato di utenti per gruppo</p></td>
 <td><p>50</p></td>
 <td><p>50</p></td>
 </tr>
@@ -78,17 +78,17 @@ La tabella seguente descrive il modello di utente di prelievo delle chiamate di 
 <td><p>60</p></td>
 </tr>
 <tr class="odd">
-<td><p>Numero massimo di utenti per pool abilitato per il ritiro delle chiamate di gruppo</p></td>
+<td><p>Numero massimo di utenti per pool abilitato per il prelievo delle chiamate di gruppo</p></td>
 <td><p>25.000</p></td>
 <td><p>3.000</p></td>
 </tr>
 <tr class="even">
-<td><p>Tasso massimo delle chiamate in arrivo per il totale degli utenti abilitati per il ritiro delle chiamate di gruppo per pool al minuto</p></td>
+<td><p>Velocità massima delle chiamate in arrivo per il numero totale di utenti abilitati per il prelievo delle chiamate di gruppo per pool al minuto</p></td>
 <td><p>500</p></td>
 <td><p>60</p></td>
 </tr>
 <tr class="odd">
-<td><p>Tasso massimo delle chiamate recuperate dagli utenti con il ritiro delle chiamate di gruppo per pool al minuto</p></td>
+<td><p>Velocità massima delle chiamate recuperate dagli utenti con il prelievo di chiamata di gruppo per pool al minuto</p></td>
 <td><p>200</p></td>
 <td><p>25</p></td>
 </tr>
@@ -102,9 +102,9 @@ La tabella seguente descrive il modello di utente di prelievo delle chiamate di 
 > [!NOTE]  
 > <UL>
 > <LI>
-> <P>Per i pool Front-end con meno di otto server front-end, calcolare le metriche linearmente. Ad esempio, se il pool Front-End ha un server front-end, calcolare il carico massimo come 1/8 dei valori visualizzati nella tabella.</P>
+> <P>Per i pool Front end con meno di otto Front End Server, calcolare le metriche linearmente. Ad esempio, se il pool Front End ha un front end server, calcolare il carico massimo come 1/8 dei valori riportati nella tabella.</P>
 > <LI>
-> <P>È possibile aumentare o ridurre il numero di utenti consigliati per ogni gruppo e numero di gruppi purché non venga superato il numero massimo di utenti per pool. Ad esempio, il server Standard Edition può avere gruppi di 120 con 25 utenti per gruppo, perché il numero di utenti abilitati per il ritiro delle chiamate di gruppo è ancora all'interno del massimo del modello utente (ovvero 120 gruppi per 25 utenti è consentito agli utenti di 3.000 per il ritiro delle chiamate di gruppo).</P></LI></UL>
+> <P>È possibile aumentare o diminuire il numero consigliato di utenti per gruppo e numero di gruppi finché non si supera il numero massimo di utenti per pool. Ad esempio, il server Standard Edition può avere 120 gruppi con 25 utenti per gruppo, perché il numero di utenti abilitati per il prelievo delle chiamate di gruppo è ancora all'interno del massimo modello utente (ovvero 120 gruppi per 25 utenti è 3.000 utenti abilitati per il ritiro delle chiamate di gruppo).</P></LI></UL>
 
 
 

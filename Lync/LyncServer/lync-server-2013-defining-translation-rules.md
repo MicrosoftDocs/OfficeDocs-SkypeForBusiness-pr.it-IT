@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Definizione delle regole di conversione'
+title: 'Lync Server 2013: definizione delle regole di conversione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184093
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3bd6b46dbe0362f81cdaf6a1bf52a27112604a46
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c67030878e4fe99a0deaa89e69c553b2e225fd8f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728296"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029647"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41728296"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-22_
+_**Ultimo argomento modificato:** 2013-02-22_
 
-Lync Server 2013 Enterprise Voice instrada le chiamate in base ai numeri di telefono normalizzati in formato E. 164. Questo significa che tutte le stringhe con chiamata devono essere normalizzate in formato E. 164 allo scopo di eseguire la ricerca di numeri inversa (RNL) in modo che possano essere convertite nell'URI SIP corrispondente. Lync Server 2013 offre la possibilità di modificare l'ID chiamato e la presentazione dell'ID chiamante.
+Lync Server 2013 Enterprise Voice Routes calls in base ai numeri di telefono normalizzati nel formato E. 164. Questo significa che tutte le stringhe commutate devono essere normalizzate nel formato E. 164 allo scopo di eseguire la ricerca di numeri inversi (inversa), in modo che possano essere convertite nell'URI SIP corrispondente. Lync Server 2013 offre la possibilità di modificare l'ID denominato e la presentazione dell'ID chiamante.
 
-In questa sezione viene descritto come modificare l'ID chiamante e il nome utente.
+In questa sezione viene descritto come modificare l'ID chiamato e l'ID chiamante.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Presentazione dell'ID chiamante in Lync Server 2013](lync-server-2013-caller-id-presentation.md)
 
-  - [Presentazione ID chiamata in Lync Server 2013](lync-server-2013-called-id-presentation.md)
+  - [Presentazione ID denominata in Lync Server 2013](lync-server-2013-called-id-presentation.md)
 
 </div>
 

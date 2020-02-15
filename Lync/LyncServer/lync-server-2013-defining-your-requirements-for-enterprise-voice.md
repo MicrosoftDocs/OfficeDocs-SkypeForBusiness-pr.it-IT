@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Definizione dei requisiti dell'organizzazione per VoIP aziendale"
+title: 'Lync Server 2013: definizione dei requisiti per VoIP aziendale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183816
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8987905d2b117eb889486882b7d74ce4e52659a8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d88a70796282fe09941ce7632d8c13258defc515
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739936"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42032158"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="defining-your-requirements-for-enterprise-voice-in-lync-server-2013"></a>Definizione dei requisiti dell'organizzazione per VoIP aziendale in Lync Server 2013
+# <a name="defining-your-requirements-for-enterprise-voice-in-lync-server-2013"></a>Definizione dei requisiti per VoIP aziendale in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41739936"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-08-07_
+_**Ultimo argomento modificato:** 2012-08-07_
 
-Questo argomento offre una panoramica delle considerazioni che è necessario apportare in merito alle aree geografiche, ai siti e ai collegamenti tra i siti della topologia e in che modo sono importanti quando si distribuisce VoIP aziendale. Per informazioni dettagliate su come prendere queste decisioni, vedere [impostazioni di rete per le funzionalità vocali avanzate di Enterprise in Lync Server 2013](lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md) nella documentazione relativa alla pianificazione.
+In questo argomento viene fornita una panoramica delle considerazioni che è necessario apportare in merito alle aree geografiche, ai siti e ai collegamenti tra i siti nella topologia e su come questi sono importanti quando si distribuisce VoIP aziendale. Per informazioni dettagliate su come prendere queste decisioni, vedere [impostazioni di rete per le funzionalità di VoIP aziendale avanzate in Lync Server 2013](lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md) nella documentazione relativa alla pianificazione.
 
 <div>
 
-## <a name="sites-and-regions"></a>Siti e aree geografiche
+## <a name="sites-and-regions"></a>Siti e aree
 
-Prima di tutto, identificare i siti della topologia in cui distribuire VoIP aziendale e le aree di rete a cui appartengono tali siti. In particolare, valutare come si fornirà la connettività PSTN (Public Switched Telephone Network) a ogni sito. Per motivi di gestibilità e logistica, le aree geografiche a cui appartengono questi siti possono essere un fattore decisivo. Decidere dove verranno distribuiti i gateway localmente, dove saranno distribuiti gli appliance Survivable Branch (SBAs) e dove è possibile configurare trunk SIP (localmente o nel sito centrale) in un provider di servizi di telefonia Internet (ITSP).
+In primo luogo, identificare i siti nella topologia in cui verranno distribuiti Enterprise Voice e le aree di rete a cui appartengono tali siti. Valutare in particolare il modo in cui verrà fornita la connettività PSTN (Public Switched Telephone Network) a ogni sito. Per motivi logistici e di gestione, le aree a cui appartengono questi siti possono rappresentare un fattore decisivo. Decidere dove verranno distribuiti i gateway localmente, in cui verrà distribuito Survivable Branch Appliance (SBA) e dove è possibile configurare trunk SIP (localmente o nel sito centrale) a un provider di servizi di telefonia Internet (ITSP).
 
 </div>
 
@@ -51,7 +51,7 @@ Prima di tutto, identificare i siti della topologia in cui distribuire VoIP azie
 
 ## <a name="network-links-between-sites"></a>Collegamenti di rete tra siti
 
-È inoltre necessario prendere in considerazione l'utilizzo della larghezza di banda previsto nei collegamenti di rete tra il sito centrale e i siti di succursale. Se si ha o si prevede di distribuire i collegamenti WAN resilienti tra i siti, è consigliabile distribuire un gateway in ogni sito di succursale per specificare la terminazione per gli utenti di tali siti. Se si hanno collegamenti WAN resilienti, ma è probabile che la larghezza di banda di un collegamento WAN sia vincolata, configurare il controllo di ammissione delle chiamate per il collegamento. Se non si dispone di collegamenti WAN resilienti, è necessario ospitare meno di 1000 utenti nel sito di succursale e non sono disponibili amministratori di Lync Server addestrati localmente, è consigliabile distribuire un Survivable Branch Appliance nel sito della filiale. Se si ospitano tra gli utenti di 1000 e 5000 nel sito di succursale, non è disponibile una connessione WAN resiliente e sono stati addestrati gli amministratori di Lync Server, è consigliabile distribuire un Survivable Branch Server con un piccolo gateway nel sito della filiale. Se si ha un peer del gateway che supporta il bypass multimediale, è consigliabile anche abilitare il bypass multimediale sui collegamenti vincolati.
+È inoltre necessario prendere in considerazione l'utilizzo della larghezza di banda previsto nei collegamenti di rete tra il sito centrale e i siti di succursale. Se si dispone o si pianifica la distribuzione dei collegamenti WAN resilienti tra i siti, è consigliabile distribuire un gateway in ogni sito di succursale per fornire la terminazione DID (Direct inwards) locale per gli utenti di tali siti. Se si dispone di collegamenti WAN resilienti, ma è probabile che la larghezza di banda di un collegamento WAN sia vincolata, configurare il servizio Controllo di ammissione di chiamata per il collegamento. Se non si dispone di collegamenti WAN resilienti, ospitare meno di 1000 utenti nel sito di succursale e non sono disponibili amministratori di Lync Server addestrati localmente, è consigliabile distribuire un Survivable Branch Appliance nel sito di succursale. Se si ospitano tra 1000 e 5000 utenti nel sito di succursale, manca una connessione WAN resiliente e sono disponibili amministratori di Lync Server addestrati, è consigliabile distribuire un Survivable Branch Server con un gateway di piccole dimensioni nel sito di succursale. Prendere inoltre in considerazione l'eventualità di abilitare il bypass multimediale nei collegamenti vincolati se si dispone di un peer gateway che supporta il bypass multimediale.
 
 </div>
 
@@ -60,7 +60,7 @@ Prima di tutto, identificare i siti della topologia in cui distribuire VoIP azie
 ## <a name="see-also"></a>Vedere anche
 
 
-[Impostazioni di rete per le funzionalità vocali avanzate di Enterprise in Lync Server 2013](lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md)  
+[Impostazioni di rete per le funzionalità di VoIP aziendale avanzate in Lync Server 2013](lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md)  
   
 
 </div>

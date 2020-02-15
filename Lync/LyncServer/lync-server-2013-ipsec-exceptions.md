@@ -12,16 +12,16 @@ ms:contentKeyID: 48183627
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 37d5becaab996d6fe4889086d3a68a45ffc1f6d7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: db7291674485dec30211d88e2739b0da89fb334f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733456"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035058"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41733456"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-27_
+_**Ultimo argomento modificato:** 2012-06-27_
 
-Per le reti aziendali in cui è stato distribuito Internet Protocol Security (IPsec) (Vedi IETF RFC 4301-4309), IPsec deve essere disabilitato tramite l'intervallo di porte usate per il recapito di audio, video e video panoramico. La raccomandazione è motivata dalla necessità di evitare qualsiasi ritardo nell'allocazione delle porte multimediali a causa della negoziazione IPsec.
+Per le reti aziendali in cui è stato distribuito IPsec (Internet Protocol Security) (vedere IETF RFC 4301-4309), è necessario disabilitare tale protocollo per l'intervallo delle porte utilizzate per l'invio del traffico audio, video e panorama video. Questa richiesta nasce dall'esigenza di evitare ritardi nell'allocazione delle porte multimediali a causa della negoziazione IPsec.
 
-La tabella seguente illustra le impostazioni di eccezione IPsec consigliate.
+Nella tabella riportata di seguito vengono illustrate le impostazioni di eccezione IPsec consigliate.
 
 ### <a name="recommended-ipsec-exceptions"></a>Eccezioni IPsec consigliate
 
@@ -56,106 +56,106 @@ La tabella seguente illustra le impostazioni di eccezione IPsec consigliate.
 <thead>
 <tr class="header">
 <th>Nome regola</th>
-<th>IP di origine</th>
-<th>IP di destinazione</th>
-<th>Protocollo</th>
-<th>Porta di origine</th>
-<th>Porta di destinazione</th>
+<th>IP origine</th>
+<th>IP destinazione</th>
+<th>Protocol</th>
+<th>Porta origine</th>
+<th>Porta destinazione</th>
 <th>Requisito di autenticazione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>A/V Edge Server Internal in ingresso</p></td>
+<td><p>A/V Edge Server in ingresso interno</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>A/V Edge Server interno</p></td>
 <td><p>UDP e TCP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="even">
-<td><p>A/V Edge Server esterno in ingresso</p></td>
+<td><p>A/V Edge Server in ingresso esterno</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>A/V Edge Server esterno</p></td>
 <td><p>UDP e TCP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="odd">
-<td><p>A/V Edge Server in uscita interna</p></td>
+<td><p>A/V Edge Server interno in uscita</p></td>
 <td><p>A/V Edge Server interno</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>TCP &amp; UDP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="even">
-<td><p>A/V Edge Server in uscita esterna</p></td>
+<td><p>A/V Edge Server esterno in uscita</p></td>
 <td><p>A/V Edge Server esterno</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>UDP e TCP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="odd">
 <td><p>Mediation Server in ingresso</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Pubblicitari</p>
+<td><p>Mediation</p>
 <p>Server (s)</p></td>
 <td><p>UDP e TCP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="even">
 <td><p>Mediation Server in uscita</p></td>
-<td><p>Pubblicitari</p>
+<td><p>Mediation</p>
 <p>Server (s)</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>UDP e TCP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="odd">
-<td><p>Operatore di conferenza in ingresso</p></td>
+<td><p>Operatore Conferenza in ingresso</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Server front-end con l'operatore di conferenza</p></td>
+<td><p>Front End Server con Operatore Conferenza</p></td>
 <td><p>UDP e TCP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="even">
-<td><p>Operatore di conferenza in uscita</p></td>
-<td><p>Server front-end con l'operatore di conferenza</p></td>
+<td><p>Operatore Conferenza in uscita</p></td>
+<td><p>Front End Server con Operatore Conferenza</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>UDP e TCP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="odd">
-<td><p>A/V Conferencing in ingresso</p></td>
+<td><p>A/V Conferencing Server in ingresso</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Server front-end</p></td>
+<td><p>Front End Server</p></td>
 <td><p>UDP e TCP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="even">
 <td><p>A/V Conferencing in uscita</p></td>
-<td><p>Server front-end</p></td>
+<td><p>Front End Server</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>UDP e TCP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="odd">
 <td><p>Exchange in ingresso</p></td>
@@ -164,7 +164,7 @@ La tabella seguente illustra le impostazioni di eccezione IPsec consigliate.
 <td><p>UDP e TCP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="even">
 <td><p>Server di condivisione applicazioni in ingresso</p></td>
@@ -173,7 +173,7 @@ La tabella seguente illustra le impostazioni di eccezione IPsec consigliate.
 <td><p>TCP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="odd">
 <td><p>Server di condivisione applicazioni in uscita</p></td>
@@ -182,7 +182,7 @@ La tabella seguente illustra le impostazioni di eccezione IPsec consigliate.
 <td><p>TCP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="even">
 <td><p>Exchange in uscita</p></td>
@@ -191,16 +191,16 @@ La tabella seguente illustra le impostazioni di eccezione IPsec consigliate.
 <td><p>UDP e TCP</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 <tr class="odd">
 <td><p>Client</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>UDP</p></td>
-<td><p>Intervallo di porte multimediali specificato</p></td>
+<td><p>Intervallo porte multimediali specificato</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Non eseguire l'autenticazione</p></td>
+<td><p>Non autenticare</p></td>
 </tr>
 </tbody>
 </table>

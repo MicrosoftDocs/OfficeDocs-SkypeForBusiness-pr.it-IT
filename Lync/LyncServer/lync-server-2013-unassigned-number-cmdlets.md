@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: cmdlet di numeri non assegnati'
+title: 'Lync Server 2013: cmdlet per i numeri non assegnati'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184065
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f928958c976d2849d3ea8d6afd899315fe25e8da
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e3dc86689bd79a8efd8831f3b7028fb1f8dcc34f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744846"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029157"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="unassigned-number-cmdlets-in-lync-server-2013"></a>Cmdlet di numeri non assegnati in Lync Server 2013
+# <a name="unassigned-number-cmdlets-in-lync-server-2013"></a>Cmdlet per i numeri non assegnati in Lync Server 2013
 
 </div>
 
@@ -35,48 +35,48 @@ ms.locfileid: "41744846"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-03-21_
+_**Ultimo argomento modificato:** 2012-03-21_
 
-I numeri non assegnati sono numeri di telefono che appartengono a un'organizzazione, ma non sono stati assegnati a un utente o un telefono. I numeri non assegnati possono essere configurati in modo da riprodurre vari tipi di annunci quando viene effettuata una chiamata a tali numeri.
+I numeri non assegnati sono numeri di telefono appartenenti a un'organizzazione, ma non assegnati a un utente o a un telefono. I numeri non assegnati possono essere configurati in modo da riprodurre diversi tipi di annunci quando viene effettuata una chiamata a tali numeri.
 
 <div>
 
-## <a name="unassigned-number-cmdlets"></a>Cmdlet di numeri non assegnati
+## <a name="unassigned-number-cmdlets"></a>Cmdlet per i numeri non assegnati
 
-I cmdlet seguenti possono essere usati per gestire i numeri non assegnati.
+I cmdlet seguenti possono essere utilizzati per gestire i numeri non assegnati.
 
-**Numero non assegnato**
-
-  - <span></span>  
-    [Get-CsUnassignedNumber](https://technet.microsoft.com/en-us/library/Gg412792(v=OCS.15))
+**Numeri non assegnati**
 
   - <span></span>  
-    [New-CsUnassignedNumber](https://technet.microsoft.com/en-us/library/Gg398651(v=OCS.15))
+    [Get-CsUnassignedNumber](https://technet.microsoft.com/library/Gg412792(v=OCS.15))
 
   - <span></span>  
-    [Remove-CsUnassignedNumber](https://technet.microsoft.com/en-us/library/Gg398209(v=OCS.15))
+    [New-CsUnassignedNumber](https://technet.microsoft.com/library/Gg398651(v=OCS.15))
 
   - <span></span>  
-    [Set-CsUnassignedNumber](https://technet.microsoft.com/en-us/library/Gg399033(v=OCS.15))
+    [Remove-CsUnassignedNumber](https://technet.microsoft.com/library/Gg398209(v=OCS.15))
+
+  - <span></span>  
+    [Set-CsUnassignedNumber](https://technet.microsoft.com/library/Gg399033(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Get-CsAnnouncement](https://technet.microsoft.com/en-us/library/Gg398937(v=OCS.15))
+    [Get-CsAnnouncement](https://technet.microsoft.com/library/Gg398937(v=OCS.15))
 
   - <span></span>  
-    [New-CsAnnouncement](https://technet.microsoft.com/en-us/library/Gg398522(v=OCS.15))
+    [New-CsAnnouncement](https://technet.microsoft.com/library/Gg398522(v=OCS.15))
 
   - <span></span>  
-    [Remove-CsAnnouncement](https://technet.microsoft.com/en-us/library/Gg412766(v=OCS.15))
+    [Remove-CsAnnouncement](https://technet.microsoft.com/library/Gg412766(v=OCS.15))
 
   - <span></span>  
-    [Set-CsAnnouncement](https://technet.microsoft.com/en-us/library/Gg425752(v=OCS.15))
+    [Set-CsAnnouncement](https://technet.microsoft.com/library/Gg425752(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Import-CsAnnouncementFile](https://technet.microsoft.com/en-us/library/Gg398472(v=OCS.15))
+    [Import-CsAnnouncementFile](https://technet.microsoft.com/library/Gg398472(v=OCS.15))
 
 </div>
 

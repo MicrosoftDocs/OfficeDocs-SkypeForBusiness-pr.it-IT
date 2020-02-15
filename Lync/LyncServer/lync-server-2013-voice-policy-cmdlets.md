@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: cmdlet dei criteri vocali'
+title: 'Lync Server 2013: cmdlet per i criteri vocali'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184800
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 00f45a7da053dd6dc150ae99e93b780117ba01e1
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6e47225ae9effb4adfb4e312769a79d5f8b59f53
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758598"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030469"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="voice-policy-cmdlets-in-lync-server-2013"></a>Cmdlet dei criteri vocali in Lync Server 2013
+# <a name="voice-policy-cmdlets-in-lync-server-2013"></a>Cmdlet per i criteri vocali in Lync Server 2013
 
 </div>
 
@@ -35,63 +35,63 @@ ms.locfileid: "41758598"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-18_
+_**Ultimo argomento modificato:** 2013-02-18_
 
-La gestione di VoIP aziendale include la configurazione di criteri vocali e di dial plan e l'associazione di criteri vocali con le route vocali. I cmdlet correlati alla gestione dei criteri vocali possono essere usati per impostare funzionalità come la chiamata simultanea (la possibilità di avere un secondo squillo di telefono ogni volta che qualcuno chiama il telefono di Office), l'inoltro di chiamata e il requisito di accesso.
+La gestione di VoIP aziendale include la configurazione di aspetti quali i criteri vocali e i dial plan, nonché l'associazione dei criteri vocali alle route vocali. I cmdlet correlati alla gestione dei criteri vocali possono essere utilizzati per impostare funzionalità quali lo squillo simultaneo (ovvero la possibilità di fare squillare un secondo telefono ogni volta che si viene contattati sul telefono dell'ufficio), l'inoltro di chiamata e i requisiti di composizione.
 
 <div>
 
 ## <a name="voice-policy-cmdlets"></a>Cmdlet dei criteri vocali
 
-I cmdlet seguenti possono essere usati per gestire i criteri vocali e i dial plan per Enterprise Voice.
+I cmdlet seguenti possono essere utilizzati per gestire i criteri vocali e i dial plan per VoIP aziendale.
 
 **Criteri vocali**
 
   - <span></span>  
-    [Get-CsDialPlan](https://technet.microsoft.com/en-us/library/Gg413043(v=OCS.15))
+    [Get-CsDialPlan](https://technet.microsoft.com/library/Gg413043(v=OCS.15))
 
   - <span></span>  
-    [Grant-CsDialPlan](https://technet.microsoft.com/en-us/library/Gg398547(v=OCS.15))
+    [Grant-CsDialPlan](https://technet.microsoft.com/library/Gg398547(v=OCS.15))
 
   - <span></span>  
-    [New-CsDialPlan](https://technet.microsoft.com/en-us/library/Gg425860(v=OCS.15))
+    [New-CsDialPlan](https://technet.microsoft.com/library/Gg425860(v=OCS.15))
 
   - <span></span>  
-    [Remove-CsDialPlan](https://technet.microsoft.com/en-us/library/Gg398791(v=OCS.15))
+    [Remove-CsDialPlan](https://technet.microsoft.com/library/Gg398791(v=OCS.15))
 
   - <span></span>  
-    [Set-CsDialPlan](https://technet.microsoft.com/en-us/library/Gg398644(v=OCS.15))
+    [Set-CsDialPlan](https://technet.microsoft.com/library/Gg398644(v=OCS.15))
 
   - <span></span>  
-    [Test-CsDialPlan](https://technet.microsoft.com/en-us/library/Gg399024(v=OCS.15))
+    [Test-CsDialPlan](https://technet.microsoft.com/library/Gg399024(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Get-CsPstnUsage](https://technet.microsoft.com/en-us/library/Gg412734(v=OCS.15))
+    [Get-CsPstnUsage](https://technet.microsoft.com/library/Gg412734(v=OCS.15))
 
   - <span></span>  
-    [Set-CsPstnUsage](https://technet.microsoft.com/en-us/library/Gg399069(v=OCS.15))
+    [Set-CsPstnUsage](https://technet.microsoft.com/library/Gg399069(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Get-CsVoicePolicy](https://technet.microsoft.com/en-us/library/Gg398101(v=OCS.15))
+    [Get-CsVoicePolicy](https://technet.microsoft.com/library/Gg398101(v=OCS.15))
 
   - <span></span>  
-    [Grant-CsVoicePolicy](https://technet.microsoft.com/en-us/library/Gg398828(v=OCS.15))
+    [Grant-CsVoicePolicy](https://technet.microsoft.com/library/Gg398828(v=OCS.15))
 
   - <span></span>  
-    [New-CsVoicePolicy](https://technet.microsoft.com/en-us/library/Gg425856(v=OCS.15))
+    [New-CsVoicePolicy](https://technet.microsoft.com/library/Gg425856(v=OCS.15))
 
   - <span></span>  
-    [Remove-CsVoicePolicy](https://technet.microsoft.com/en-us/library/Gg398309(v=OCS.15))
+    [Remove-CsVoicePolicy](https://technet.microsoft.com/library/Gg398309(v=OCS.15))
 
   - <span></span>  
-    [Set-CsVoicePolicy](https://technet.microsoft.com/en-us/library/Gg399021(v=OCS.15))
+    [Set-CsVoicePolicy](https://technet.microsoft.com/library/Gg399021(v=OCS.15))
 
   - <span></span>  
-    [Test-CsVoicePolicy](https://technet.microsoft.com/en-us/library/Gg398310(v=OCS.15))
+    [Test-CsVoicePolicy](https://technet.microsoft.com/library/Gg398310(v=OCS.15))
 
 </div>
 
@@ -100,7 +100,7 @@ I cmdlet seguenti possono essere usati per gestire i criteri vocali e i dial pla
 ## <a name="see-also"></a>Vedere anche
 
 
-[Cmdlet Enterprise Voice in Lync Server 2013](lync-server-2013-enterprise-voice-cmdlets.md)  
+[Cmdlet di VoIP aziendale in Lync Server 2013](lync-server-2013-enterprise-voice-cmdlets.md)  
 
 
 [Blog di PowerShell per Lync Server](http://go.microsoft.com/fwlink/p/?linkid=203150)  

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Consentire a un utente la gestione di categorie, chat room, autorizzazioni e diritti utente'
+title: 'Lync Server 2013: abilitazione di un utente alla gestione di categorie, chat room e diritti utente e autorizzazioni'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48706002
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4fa2c31a293f13fdca861f4183911272c55a2bad
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7bfa07380a5c6e73b8112cd0a421ed05c33bc1b9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735876"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034788"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="enabling-a-user-to-manage-categories-chat-rooms-and-user-rights-and-permissions-in-lync-server-2013"></a>Consentire a un utente la gestione di categorie, chat room, autorizzazioni e diritti utente in Lync Server 2013
+# <a name="enabling-a-user-to-manage-categories-chat-rooms-and-user-rights-and-permissions-in-lync-server-2013"></a>Abilitazione di un utente alla gestione di categorie, chat room e diritti utente e autorizzazioni in Lync Server 2013
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41735876"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-I membri del ruolo **CsPersistentChatAdministrator** (amministratori di chat permanenti) possono concedere i diritti e le autorizzazioni di chat room Manager ad altri utenti e a se stessi.
+I membri del ruolo **ruolo CsPersistentChatAdministrator** (amministratori di chat persistente) possono concedere diritti e autorizzazioni di chat room Manager ad altri utenti e a se stessi.
 
-Un amministratore della chat persistente può eseguire le operazioni seguenti:
+Un amministratore di chat persistente può eseguire le operazioni seguenti:
 
-  - Creare categorie di camere e chat room.
+  - Creare categorie di chat e chat room.
 
-  - Impostare l'appartenenza a tutte le categorie e alle chat room.
+  - Impostare l'appartenenza di tutte le categorie e le chat room.
 
   - Gestire tutte le impostazioni di tutte le categorie e le chat room.
 
-  - Abilitare o disabilitare i criteri per il server di chat persistente.
+  - Abilitazione o disabilitazione dei criteri per il server Chat persistente.
 
-  - Impostare e gestire le impostazioni di configurazione in un pool di server di chat persistente.
+  - Impostare e gestire le impostazioni di configurazione in un pool di server Chat persistente.
 
-Per informazioni dettagliate, vedere [aggiunta di un amministratore di chat persistente in Lync Server 2013](lync-server-2013-adding-a-persistent-chat-administrator.md) nella documentazione relativa alla distribuzione.
+Per ulteriori informazioni, vedere [aggiunta di un amministratore di chat persistente in Lync Server 2013](lync-server-2013-adding-a-persistent-chat-administrator.md) nella documentazione relativa alla distribuzione.
 
 </div>
 

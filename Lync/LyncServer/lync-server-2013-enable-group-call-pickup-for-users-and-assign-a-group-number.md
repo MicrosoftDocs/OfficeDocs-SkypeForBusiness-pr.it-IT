@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: abilitare il ritiro delle chiamate di gruppo per gli utenti e assegnare un numero di gruppo'
+title: 'Lync Server 2013: abilitare il prelievo delle chiamate di gruppo per gli utenti e assegnare un numero di gruppo'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541517
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a5ad9bbc6f5505e5778872a568bdbc80b3f7bf91
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c541d5a82becf253ebbbb2bbab6d1c69e9fb7016
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729396"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42033775"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="enable-group-call-pickup-for-users-in-lync-server-2013-and-assign-a-group-number"></a>Abilitare il ritiro delle chiamate di gruppo per gli utenti in Lync Server 2013 e assegnare un numero di gruppo
+# <a name="enable-group-call-pickup-for-users-in-lync-server-2013-and-assign-a-group-number"></a>Abilitazione del prelievo delle chiamate di gruppo per gli utenti in Lync Server 2013 e assegnazione di un numero di gruppo
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41729396"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-01-30_
+_**Ultimo argomento modificato:** 2013-01-30_
 
-Dopo aver aggiunto numeri di gruppo di prelievo chiamate alla tabella Orbit di Call Park, assegnare i numeri di gruppo agli utenti e abilitare il ritiro delle chiamate di gruppo. Usare lo strumento Resource Kit di attivazione delle funzionalità di estensione secondaria (SEFAUtil) per assegnare numeri di gruppo e consentire il prelievo delle chiamate di gruppo.
+Dopo aver aggiunto i numeri del gruppo di prelievo delle chiamate alla tabella di orbit del parcheggio di chiamata, è necessario assegnare i numeri di gruppo agli utenti e attivare il prelievo delle chiamate di gruppo. Utilizzare lo strumento Resource Kit di attivazione delle funzionalità di estensione secondaria (SEFAUtil) per assegnare i numeri di gruppo e abilitare il prelievo delle chiamate di gruppo.
 
 <div>
 
 
 > [!NOTE]  
-> In una distribuzione ibrida non assegnare un gruppo di raccolta chiamate di gruppo agli utenti ospitati online. Gli utenti ospitati online non possono partecipare al ritiro delle chiamate di gruppo. Ossia, non è possibile rispondere alle chiamate di altri utenti, e non possono ricevere risposte ad altri utenti.
+> In una distribuzione ibrida, non assegnare un gruppo di prelievo di chiamata di gruppo agli utenti ospitati online. Gli utenti ospitati online non possono partecipare al ritiro delle chiamate di gruppo. Vale a fare che le chiamate non possono rispondere ad altri utenti e che non rispondono alle chiamate ad altri utenti.
 
 
 
@@ -51,15 +51,15 @@ Dopo aver aggiunto numeri di gruppo di prelievo chiamate alla tabella Orbit di C
 
 <div>
 
-## <a name="to-assign-a-group-number-and-enable-group-call-pickup-for-a-user"></a>Per assegnare un numero di gruppo e abilitare il ritiro delle chiamate di gruppo per un utente
+## <a name="to-assign-a-group-number-and-enable-group-call-pickup-for-a-user"></a>Per assegnare un numero di gruppo e abilitare il prelievo delle chiamate di gruppo per un utente
 
 1.  Accedere al computer in cui è stato installato lo strumento SEFAUtil con i diritti di amministratore.
 
-2.  Nella riga di comando eseguire:
+2.  Nella riga di comando digitare il comando seguente:
     
         SEFAUtil.exe sip:<sip address of user> /server:<pool FQDN> /enablegrouppickup:<group number>
     
-    Ad esempio, per assegnare un numero di gruppo 199 a un utente:
+    Ad esempio, per assegnare il numero di gruppo 199 a un utente:
     
         SEFAUtil.exe katarina@contoso.com /server:pool01.contoso.com /enablegrouppickup:199 
 
@@ -70,7 +70,7 @@ Dopo aver aggiunto numeri di gruppo di prelievo chiamate alla tabella Orbit di C
 ## <a name="see-also"></a>Vedere anche
 
 
-[Disabilitare il ritiro delle chiamate di gruppo per gli utenti in Lync Server 2013](lync-server-2013-disable-group-call-pickup-for-users.md)  
+[Disabilitare il prelievo delle chiamate di gruppo per gli utenti in Lync Server 2013](lync-server-2013-disable-group-call-pickup-for-users.md)  
   
 
 </div>

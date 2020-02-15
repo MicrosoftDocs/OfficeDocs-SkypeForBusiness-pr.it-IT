@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Esclusioni dall'analisi antivirus"
+title: 'Lync Server 2013: esclusioni di analisi antivirus'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 57793042
 ms.date: 11/03/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 90847830d9f2586e0d111846f2867400c52fc940
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f8faeba1d3b661110bcaf633d3c780dc2c2ad2b1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737776"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029037"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="antivirus-scanning-exclusions-for-lync-server-2013"></a>Esclusioni dall'analisi antivirus per Lync Server 2013
+# <a name="antivirus-scanning-exclusions-for-lync-server-2013"></a>Esclusioni di analisi antivirus per Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41737776"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-11-02_
+_**Ultimo argomento modificato:** 2015-11-02_
 
-Per assicurarsi che lo scanner antivirus non interferisca con l'operazione di Lync Server 2013, è necessario escludere processi e directory specifici per ogni ruolo server o server di Lync Server 2013 in cui si esegue uno scanner antivirus. I processi e le directory seguenti devono essere esclusi:
+Per assicurarsi che lo scanner antivirus non interferisca con il funzionamento di Lync Server 2013, è necessario escludere processi e directory specifici per ogni server Lync Server 2013 o ruolo del server in cui si esegue uno scanner antivirus. È necessario escludere le directory e i processi seguenti:
 
 <div>
 
 
 > [!NOTE]  
-> Le posizioni di cartella e file elencate di seguito sono le posizioni predefinite per Lync Server 2013. Per qualsiasi posizione per cui non è stato usato l'impostazione predefinita, escludere i percorsi specificati per l'organizzazione anziché i percorsi predefiniti specificati in questo argomento.
+> Le posizioni dei file e delle cartelle elencate di seguito sono le posizioni predefinite per Lync Server 2013. Per tutti i percorsi per i quali non è stata utilizzata l'impostazione predefinita, escludere i percorsi specificati per l'organizzazione anziché i percorsi predefiniti specificati in questo argomento.
 
 
 
@@ -53,13 +53,13 @@ Per assicurarsi che lo scanner antivirus non interferisca con l'operazione di Ly
 
 
 > [!IMPORTANT]  
-> Tieni presente che alcuni programmi antivirus potrebbero avere bisogno di percorsi assoluti, non relativi, per l'elenco di esclusione.
+> Tenere presente che alcuni programmi antivirus potrebbero richiedere percorsi assoluti, non relativi, per l'elenco di esclusione.
 
 
 
 </div>
 
-  - Processi di Lync Server 2013:
+  - Lync Server 2013 processi:
     
       - ABServer. exe
     
@@ -107,7 +107,7 @@ Per assicurarsi che lo scanner antivirus non interferisca con l'operazione di Ly
     
       - XmppTGW. exe
 
-  - Processi del servizio host di Windows Fabric:
+  - Processi del servizio host Windows Fabric:
     
       - Fabric. exe
     
@@ -115,19 +115,19 @@ Per assicurarsi che lo scanner antivirus non interferisca con l'operazione di Ly
     
       - FabricHost. exe
 
-  - Processi di IIS:
+  - Processi IIS:
     
       - % SystemRoot%\\system32\\inetsrv\\w3wp. exe
     
       - % SystemRoot%\\SysWow64\\inetsrv\\w3wp. exe
 
-  - Processi di back-end di SQL Server:
+  - Processi back-end di SQL Server:
     
       - % ProgramFiles%\\Microsoft SQL Server\\MSSQL11. MSSQLSERVER\\MSSQL\\contenitori\\sqlservr. exe
     
-      - % ProgramFiles%\\Microsoft SQL Server\\MSRS11. MSSQLSERVER\\di Reporting\\Services\\ReportServer\\bin ReportingServicesService. exe
+      - % ProgramFiles%\\Microsoft SQL Server\\MSRS11. MSSQLSERVER\\Reporting Services\\ReportServer\\bin\\ReportingServicesService. exe
     
-      - % ProgramFiles%\\Microsoft SQL Server\\MSAS11. MSMDSrv\\.\\exe\\di MSSQLSERVER OLAP bin
+      - % ProgramFiles%\\Microsoft SQL Server\\MSAS11. MSMDSrv\\.\\exe\\(MSSQLSERVER OLAP bin)
 
   - Processi front-end di SQL Server:
     
@@ -139,23 +139,23 @@ Per assicurarsi che lo scanner antivirus non interferisca con l'operazione di Ly
     
       - file di log\\di\\% SystemRoot% system32
     
-      - file di log\\di\\SysWow64% SystemRoot%
+      - file di registro\\%\\SystemRoot% SysWow64
     
       - % SystemRoot%\\Microsoft.NET\\assembly\\MSIL\_GAC
     
       - % ProgramFiles%\\Microsoft Lync Server 2013
     
-      - Nodo di Watcher\\di\\Microsoft Lync Server 2013\\per% programmi% comuni
+      - % ProgramFiles%\\Common Files\\Microsoft Lync Server 2013\\Watcher node
     
-      - % programmi%\\file\\comuni Microsoft Lync Server 2013
+      - % ProgramFiles%\\file\\comuni Microsoft Lync Server 2013
     
       - % SystemDrive%\\RtcReplicaRoot
     
-      - Archivio condivisione file (specificato in Generatore di topologia). Gli archivi di file sono specificati in Generatore di topologia.
+      - Archivio condivisione file (specificato in Generatore di topologie). Gli archivi file sono specificati in Generatore di topologie.
     
-      - Dati e file di log di SQL Server, inclusi quelli per il database back-end, l'archivio utenti, l'archivio archiviazione, l'archivio di monitoraggio e l'archivio applicazioni. I file di database e di log possono essere specificati in Generatore di topologie. Per informazioni dettagliate sui file di dati e di log per ogni database, inclusi i nomi predefiniti, vedere [dati di SQL Server e il posizionamento dei file di log per Lync Server 2013](lync-server-2013-sql-server-data-and-log-file-placement.md) nella documentazione relativa alla distribuzione.
+      - File di registro e dati di SQL Server, inclusi quelli per il database back-end, l'archivio utente, l'archivio di archiviazione, l'archivio di monitoraggio e l'archivio applicazioni. I file di registro e di database possono essere specificati in Generatore di topologie. Per informazioni dettagliate sui file di dati e di registro per ogni database, inclusi i nomi predefiniti, vedere [SQL Server Data and log file Placement for Lync Server 2013](lync-server-2013-sql-server-data-and-log-file-placement.md) nella documentazione relativa alla distribuzione.
     
-      - Dati e file di log di SQL Server, inclusi quelli per il database front-end, Lync Store e RtcDatabase Store. In genere sono in% UnitàLocale%\\CSData.
+      - File di dati e di registro di SQL Server, inclusi quelli per il database front-end, l'archivio Lync e l'archivio di RtcDatabase. Sono in genere in% UnitàLocale%\\CSData.
 
 </div>
 

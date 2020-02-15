@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Supporto per la disponibilità elevata e il ripristino di emergenza'
+title: 'Lync Server 2013: supporto per la disponibilità elevata e il ripristino di emergenza'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184053
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b73f6605f2fff063858a0180d61a306f7dd2d746
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6d3be41dd4ca3f942d5b57e1954cecf105fcc714
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729986"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030269"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41729986"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-25_
+_**Ultimo argomento modificato:** 2012-09-25_
 
-Lync Server 2013 offre una disponibilità elevata tramite la ridondanza del server tramite pooling. Se un server che esegue un determinato ruolo del server non riesce, gli altri server nel pool che esegue lo stesso ruolo accettano il carico del server. Questo vale per i server front-end, Edge Server, Mediation Server e direttori. Per informazioni dettagliate sui ruoli del server, vedere [ruoli del server in Lync server 2013](lync-server-2013-server-roles.md).
+Lync Server 2013 garantisce una disponibilità elevata per la ridondanza del server tramite pool. In caso di errore di un server che esegue un determinato ruolo, gli altri server del pool che eseguono lo stesso ruolo sopportano il carico del server in errore. Ciò vale per Front End Server, server perimetrali, Mediation Server e Director. Per informazioni dettagliate sui ruoli del server, vedere [Server Roles in Lync server 2013](lync-server-2013-server-roles.md).
 
-Lync Server 2013 offre anche misure per il ripristino di emergenza abilitando l'associazione del pool. Se si distribuisce questa topologia, verranno designate coppie di pool Front-End, con ogni pool in una coppia che si trova in un centro dati separato e in un'area geografica separata. Se si abbassa un pool o un sito, è possibile reindirizzare gli utenti di tale pool a usare l'altro pool nella coppia, con l'interruzione minima del servizio.
+Lync Server 2013 fornisce anche misure di ripristino di emergenza abilitando l'abbinamento del pool. Se si distribuisce questa topologia, vengono designate coppie di pool Front End, in cui ogni pool si trova in un data center distinto e in un'area geografica separata. Se uno dei pool o dei siti diventa inattivo, è possibile reindirizzare gli utenti che vi appartengono all'altro pool della coppia, provocando in questo modo un'interruzione minima del servizio.
 
-Lync Server 2013 supporta inoltre l'elevata disponibilità del server back-end. Si tratta di una topologia facoltativa in cui si distribuiscono due server back-end per un pool Front-end e si configura il mirroring sincrono di SQL Server per tutti i database Lync in uso nei server back-end.
+Lync Server 2013 supporta anche la disponibilità elevata del server back-end. Si tratta di una topologia facoltativa in cui è possibile distribuire due server back-end per un pool Front end e configurare il mirroring sincrono di SQL Server per tutti i database Lync in esecuzione nei server back-end.
 
-Per informazioni dettagliate sull'associazione del pool e il mirroring del server back-end, vedere [pianificazione per l'elevata disponibilità e il ripristino di emergenza in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md).
+Per informazioni dettagliate sull'abbinamento dei pool e sul mirroring dei server back-end, vedere [Planning for High Availability and Disaster Recovery in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md).
 
 <div>
 

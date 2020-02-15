@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurazione di una route di failover'
+title: 'Lync Server 2013: configurazione di una route di failover'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184542
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 22ebdf359a8cdf5f20ada8740a589b0181c3cc93
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 17477c647d2e5dd5918225486c43b93a29509fb2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41741286"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034226"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41741286"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-L'esempio seguente mostra il modo in cui un amministratore può definire una route di failover da usare se Dallas-GW1 è in calo per la manutenzione o altrimenti non è disponibile. Le tabelle seguenti illustrano la modifica della configurazione necessaria.
+Nell'esempio seguente viene illustrato il modo in cui un amministratore può definire una route di failover da utilizzare se Dallas-GW1 viene disconnesso per la manutenzione o è altrimenti non disponibile. Nelle tabelle seguenti viene illustrata la modifica di configurazione necessaria.
 
 ### <a name="table-1-user-policy"></a>Tabella 1. Criteri utente
 
@@ -49,13 +49,13 @@ L'esempio seguente mostra il modo in cui un amministratore può definire una rou
 <thead>
 <tr class="header">
 <th>Criteri utente</th>
-<th>Uso del telefono</th>
+<th>Utilizzo telefono</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>Criteri di chiamata predefiniti</p></td>
-<td><p>Locale</p>
+<td><p>Local</p>
 <p>GlobalPSTNHopoff</p></td>
 </tr>
 <tr class="even">
@@ -71,7 +71,7 @@ L'esempio seguente mostra il modo in cui un amministratore può definire una rou
 </table>
 
 
-### <a name="table-2-routes"></a>Tabella 2. Indirizza
+### <a name="table-2-routes"></a>Tabella 2. Route
 
 <table>
 <colgroup>
@@ -83,10 +83,10 @@ L'esempio seguente mostra il modo in cui un amministratore può definire una rou
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome Route</th>
-<th>Schema numerico</th>
-<th>Uso del telefono</th>
-<th>Tronco</th>
+<th>Nome route</th>
+<th>Formato numero</th>
+<th>Utilizzo telefono</th>
+<th>Trunk</th>
 <th>Gateway</th>
 </tr>
 </thead>
@@ -94,7 +94,7 @@ L'esempio seguente mostra il modo in cui un amministratore può definire una rou
 <tr class="odd">
 <td><p>Route locale Redmond</p></td>
 <td><p>^\+1 (425 | 206 | 253) (\d{7}) $</p></td>
-<td><p>Locale</p>
+<td><p>Local</p>
 <p>RedmondLocal</p></td>
 <td><p>Trunk1</p>
 <p>Trunk2</p></td>
@@ -102,14 +102,14 @@ L'esempio seguente mostra il modo in cui un amministratore può definire una rou
 <p>Rosso-GW2</p></td>
 </tr>
 <tr class="even">
-<td><p>Route locale di Dallas</p></td>
+<td><p>Route locale Dallas</p></td>
 <td><p>^\+1 (972 | 214 | 469) (\d{7}) $</p></td>
-<td><p>Locale</p></td>
+<td><p>Local</p></td>
 <td><p>Trunk3</p></td>
 <td><p>Dallas-GW1</p></td>
 </tr>
 <tr class="odd">
-<td><p>Route universale</p></td>
+<td><p>Universal Route</p></td>
 <td><p>^\+? (\d *) $</p></td>
 <td><p>GlobalPSTNHopoff</p></td>
 <td><p>Trunk1</p>
@@ -130,7 +130,7 @@ L'esempio seguente mostra il modo in cui un amministratore può definire una rou
 </table>
 
 
-Nella tabella 1 viene aggiunto un uso telefonico di GlobalPSTNHopoff dopo l'uso del telefono DallasUsers nei criteri di chiamata di Dallas. In questo modo, le chiamate con i criteri di chiamata di Dallas possono usare le route configurate per l'utilizzo di GlobalPSTNHopoff Phone se non è disponibile una route per l'utilizzo del telefono DallasUsers.
+Nella tabella 1, è stato aggiunto l'utilizzo telefono GlobalPSTNHopoff dopo l'utilizzo telefono DallasUsers nei criteri di chiamata Dallas. In questo modo, le chiamate con i criteri di chiamata Dallas possono utilizzare le route configurate per l'utilizzo telefono GlobalPSTNHopoff se non è disponibile una route per l'utilizzo telefono DallasUsers.
 
 </div>
 

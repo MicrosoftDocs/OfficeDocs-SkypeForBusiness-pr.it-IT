@@ -12,16 +12,16 @@ ms:contentKeyID: 63969643
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 344512a1dd4db44b8290efdcc726275b4a6898de
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 67a0355d32e5e704d6609335c82f8cfe1fe7aa86
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738406"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029287"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,25 +35,25 @@ ms.locfileid: "41738406"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-08-18_
+_**Ultimo argomento modificato:** 2014-08-18_
 
-Eseguire le attività seguenti in modo necessario. Sono spesso coperti anche da procedure standard:
+Eseguire le attività seguenti in base alle esigenze. Essi sono spesso anche coperti da procedure standard:
 
-  - **Controllo di sicurezza completo   ** È possibile eseguire regolarmente questo controllo, in risposta a un aggiornamento o alla riprogettazione del sistema di messaggistica oppure in risposta a una violazione della sicurezza tentata (o riuscita). La procedura può comportare la scansione di porte su server e firewall, verifiche di correzioni di sicurezza e test di penetrazione di terze parti.
+  - **Controllo completo della sicurezza   ** È possibile eseguire questa verifica regolarmente, in risposta a un aggiornamento o riprogettazione del sistema di messaggistica, o in risposta a una violazione della protezione tentata (o riuscita). La procedura può comportare l'analisi delle porte sui server e sui firewall, sulle verifiche delle correzioni di sicurezza e sui test di penetrazione di terze parti.
 
-  - **Sostituire i certificati relativi alla scadenza**   il controllo dei certificati di Lync Server è una delle attività settimanali regolari e, come parte della procedura, un amministratore deve avere un record delle date di scadenza di tutti i certificati. Questo record consente a un amministratore di creare una notifica quando un determinato certificato sta per essere scaduto e sostituito in base alle esigenze.
+  - **Sostituire i certificati per la scadenza**   del controllo i certificati di Lync Server sono una delle attività settimanali regolari e, nell'ambito della procedura, un amministratore deve disporre di un record di tutte le date di scadenza dei certificati. Questo record consente a un amministratore di creare una notifica quando un determinato certificato sta per essere scaduto e sostituito in base alle esigenze.
 
-  - **Aggiornamento delle previsioni delle prestazioni**   aggiornare le previsioni delle prestazioni dopo un aggiornamento o una modifica della configurazione. L'organizzazione può usare le previsioni per misurare le prestazioni e rilevare i problemi che influiscono sulle prestazioni del sistema.
+  - **Aggiornamento delle linee di base delle**   prestazioni aggiornare le linee di base delle prestazioni dopo un aggiornamento o una modifica alla configurazione. L'organizzazione può utilizzare le linee di base per misurare le modifiche alle prestazioni e rilevare i problemi che influiscono sulle prestazioni del sistema.
 
-  - **La gestione**   della configurazione iniziale del pool aziendale di pool Enterprise, server Standard Edition e qualsiasi altro server nell'ambiente dell'organizzazione sono stati eseguiti durante la distribuzione dei singoli server. La gestione post-distribuzione di server e pool per i server standard e i pool Enterprise include le attività seguenti:
+  - **Gestione del pool**   Enterprise la configurazione iniziale dei pool Enterprise, server Standard Edition e qualsiasi altro server nell'ambiente dell'organizzazione sono stati eseguiti durante la distribuzione dei singoli server. La gestione dopo la distribuzione di server e pool per i server Standard Edition e i pool Enterprise include le attività seguenti:
     
-      - Gestione dei server front-end
+      - Gestione dei Front End Server
     
       - Gestione delle conferenze Web
     
-      - Gestione dei servizi di conferenza
+      - Gestione delle conferenze
     
-      - Modifica delle credenziali dell'account del servizio
+      - Modifica delle credenziali dell'account di servizio
     
       - Gestione dei database
     
@@ -61,41 +61,41 @@ Eseguire le attività seguenti in modo necessario. Sono spesso coperti anche da 
     
       - Rimozione di server e ruoli del server, rimozione di pool e disattivazione di server e pool
 
-  - **Gestione dell'utilizzo**   è possibile configurare Lync Server 2013 in modo da specificare le funzionalità e le funzionalità più appropriate per l'organizzazione. Sono inclusi i seguenti:
+  - **Gestione dell'utilizzo**   è possibile configurare Lync Server 2013 per fornire le caratteristiche e le funzionalità più appropriate per l'organizzazione. Sono incluse le attività seguenti:
     
-      - Gestione del supporto per le riunioni di conferenza Web locale
+      - Gestione del supporto per le riunioni di Web Conferencing locali
     
-      - Gestione dell'uso di gruppi di distribuzione per l'invio di messaggi istantanei
+      - Gestione dell'utilizzo di gruppi di distribuzione per l'invio di messaggi istantanei
     
       - Gestione di contatti, presenza e query
     
-      - Configurazione del filtro della versione client
+      - Configurazione del filtro delle versioni client
     
-      - Configurazione del filtro ISTANTANEo intelligente
+      - Configurazione del filtro di messaggistica istantanea intelligente
     
-      - Configurazione dell'archiviazione, della registrazione del dettaglio delle chiamate e della conformità delle riunioni
+      - Configurazione dell'archiviazione, registrazione dettagli chiamata e conformità alle riunioni
 
-  - ****   Gestione della connettività di Edge Server la gestione continua dei server e delle impostazioni necessarie per la connettività esterna include quanto segue:
+  - ****   Gestione della connettività del server perimetrale la gestione continua dei server e delle impostazioni necessarie per fornire la connettività esterna include quanto segue:
     
-      - Gestione della connettività tra server interni e Edge Server
+      - Gestione della connettività tra server interni e server perimetrali
     
-      - Configurazione di interfacce e certificati interni ed esterni per Edge Server
+      - Configurazione di interfacce e certificati interni ed esterni per server perimetrali
     
       - Gestione dell'accesso dei partner federati
 
-  - **L'amministrazione della**   rubrica che amministra i server della rubrica include le operazioni seguenti:
+  - **L'amministrazione della**   rubrica che amministra i server della rubrica include gli elementi seguenti:
     
-      - Configurazione della normalizzazione telefonica del server rubrica
+      - Configurazione della normalizzazione del telefono del server rubrica
     
-      - Gestione del server rubrica dalla riga di comando
+      - Gestione del server della rubrica dalla riga di comando
 
-  - **** La gestione degli account utente che gestiscono gli account utente include le operazioni seguenti:   
+  - **Gestione degli account utente la**   gestione degli account utente include gli elementi seguenti:
     
       - Abilitazione degli account utente per Lync Server
     
       - Configurazione degli utenti di Lync Server tramite la procedura guidata
     
-      - Configurazione delle singole proprietà degli account utente di Lync Server
+      - Configurazione di singole proprietà dell'account utente di Lync Server
     
       - Ricerca di utenti di Lync Server
     
@@ -103,33 +103,33 @@ Eseguire le attività seguenti in modo necessario. Sono spesso coperti anche da 
     
       - Eliminazione degli utenti di Lync Server
 
-  - **Analisi dei file**   di log di Lync Server 2013 uno strumento molto utile, in genere usato per la risoluzione dei problemi, è lo strumento di registrazione di Lync Server 2013 descritto in dettaglio nell' [uso dello strumento di registrazione di Lync Server 2013](http://technet.microsoft.com/en-us/library/gg558599.aspx).
+  - **Analisi dei file**   di registro di Lync Server 2013 uno strumento molto utile, generalmente utilizzato per la risoluzione dei problemi, è lo strumento di registrazione di Lync Server 2013 descritto in dettaglio nell' [utilizzo dello strumento di registrazione di Lync Server 2013](http://technet.microsoft.com/library/gg558599.aspx).
 
-Poiché lo strumento di registrazione genera i file di log (in base al server), questi file di log possono essere visualizzati e analizzati usando lo strumento Snooper, se nel computer sono installati gli strumenti di Microsoft Office Server 12 Resource Kit. In caso contrario, i log possono essere analizzati anche usando un editor di testo, che è molto meno trasparente e più complesso rispetto all'uso dell'utilità Snooper.
+Poiché lo strumento di registrazione genera file di registro (per ogni server), questi file di registro possono essere visualizzati e analizzati utilizzando lo strumento Snooper, se gli strumenti di Microsoft Office Server 12 Resource Kit sono installati nel computer. In caso contrario, i registri possono essere analizzati anche utilizzando un editor di testo, molto meno trasparente e più complesso rispetto all'utilizzo dell'utilità Snooper.
 
 Per visualizzare e analizzare i messaggi di protocollo
 
-Quando si termina la sessione di debug nello strumento registrazione, fare clic su Analizza file di log per visualizzare i file di log usando lo strumento Snooper. È possibile analizzare i registri di protocollo per i componenti seguenti:
+Nello strumento di registrazione, dopo aver terminato la sessione di debug, fare clic su Analizza file di registro per visualizzare i file di registro utilizzando lo strumento Snooper. È possibile analizzare i registri di protocollo per i componenti seguenti:
 
   - Lync Server SipStack (SIP)
 
   - Lync Server S4 (SIP)
 
-  - Lync Server Conference signaling Traffic (C3P), tra cui MCU infra C3P e lo stato di attivazione C3P
+  - Lync Server Conferencing signaling Traffic (C3P), tra cui MCU infra C3P e Focus C3P
 
-  - Traffico per le conferenze Web di Lync Server (PSOM)
+  - Traffico Web Conferencing di Lync Server (PSOM)
 
   - Client della piattaforma client per le comunicazioni unificate di Lync Server (UCCP)
 
-  - Report sugli errori dal database di archiviazione
+  - Segnalazioni di errori dal database di archiviazione
 
-Per organizzare le prestazioni delle attività necessarie, vedere elenco di controllo delle operazioni necessario.
+Per facilitare l'organizzazione delle prestazioni delle attività necessarie, vedere l'elenco di controllo delle operazioni necessario.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Per informazioni dettagliate sull'amministrazione e le procedure di gestione, vedere la Guida all'amministrazione di Microsoft Lync Server 2013.
+> Per le procedure dettagliate per l'amministrazione e la gestione, vedere la Guida all'amministrazione di Microsoft Lync Server 2013.
 
 
 
@@ -139,17 +139,17 @@ Per organizzare le prestazioni delle attività necessarie, vedere elenco di cont
 
 ## <a name="backup-and-restore-policies-or-configuration-settings"></a>Criteri di backup (e ripristino) o impostazioni di configurazione
 
-Lync Server 2013 consente di eseguire il backup e il ripristino dell'intero sistema. IIF di cui si vuole eseguire il backup (e quindi magari un giorno ripristinare) un singolo criterio o una singola raccolta di impostazioni di configurazione, recuperare i criteri appropriati e quindi reindirizzare l'oggetto al cmdlet Export-Clixml, che salva le informazioni sui criteri come file XML:
+Lync Server 2013 consente di eseguire il backup e il ripristino dell'intero sistema. Se si desidera eseguire il backup (e quindi eventualmente ripristinare) un singolo criterio o una singola raccolta di impostazioni di configurazione, recuperare il criterio appropriato e quindi indirizzare l'oggetto al cmdlet Export-Clixml, che consente di salvare le informazioni sui criteri come file XML:
 
 `Get-CsClientPolicy -Identity "RedmondClientPolicy" | Export-Clixml -Path C:\Backup\RedmondClientPolicy.xml`
 
-Ora puoi provare a usare RedmondClientPolicy e modificare molte delle impostazioni. Se invece si decide di ripristinare il vecchio criterio, immettere:
+È ora possibile provare a utilizzare RedmondClientPolicy e modificare molte impostazioni. Se si decide invece di ripristinare i criteri obsoleti, immettere quanto segue:
 
 `$x = Import-Clixml -Path C:\Backup\RedmondClientPolicy.xml`
 
 `Set-CsClientPolicy -Instance $x`
 
-Tieni presente che questo approccio funzionerà per la maggior parte dei criteri e delle impostazioni, ma non funzionerà con alcuni degli elementi più complessi, ovvero gli elementi che contengono più oggetti secondari, ad esempio le impostazioni di configurazione del routing, che contengono molte route vocali separate.
+Si noti che questo approccio funzionerà per la maggior parte dei criteri e delle impostazioni, ma non funzionerà con alcuni degli elementi più complessi, ovvero gli elementi che contengono più oggetti secondari, ad esempio le impostazioni di configurazione del routing, che contengono molte route vocali separate.
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Supporto dell'archiviazione di file"
+title: Supporto per l'archiviazione file di Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185743
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 000f3357c8b30b83a2d2cecf74bdbec44d867d96
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bba71468c9797ad52cd01e163c726f779f43aea9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743406"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028497"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="file-storage-support-in-lync-server-2013"></a>Supporto dell'archiviazione di file in Lync Server 2013
+# <a name="file-storage-support-in-lync-server-2013"></a>Supporto per l'archiviazione di file in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41743406"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-16_
+_**Ultimo argomento modificato:** 2012-10-16_
 
-Lync Server 2013 usa lo stesso archivio di file per tutti gli archivi. Il supporto per l'archiviazione dei file include le operazioni seguenti:
+Lync Server 2013 utilizza lo stesso archivio file per l'archiviazione di tutti i file. Il supporto per l'archiviazione dei file include gli elementi seguenti:
 
-  - Condivisione di file in un ambiente di archiviazione Direct Attached (DAS) o in una rete di archiviazione (SAN), incluso il file System distribuito (DFS) e in una matrice ridondante di dischi indipendenti (RAID) per archivi di file. Per informazioni dettagliate sui requisiti di archiviazione, vedere [requisiti tecnici per i server front-end, la messaggistica istantanea e la presenza in Lync server 2013](lync-server-2013-technical-requirements-for-front-end-servers-instant-messaging-and-presence.md) e [i requisiti hardware e software per il Director in Lync Server 2013](lync-server-2013-hardware-and-software-requirements-for-the-director.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sul sistema operativo DFS per Windows Server 2008, vedere la guida dettagliata a [http://go.microsoft.com/fwlink/p/?linkId=202835](http://go.microsoft.com/fwlink/p/?linkid=202835)DFS per windows Server 2008.
+  - Condivisione di file per l'archiviazione diretta (DAS) o per una rete di archiviazione (SAN), tra cui il file System distribuito (DFS) e su una matrice ridondante di dischi indipendenti (RAID) per gli archivi di file. Per informazioni dettagliate sui requisiti di archiviazione, vedere [requisiti tecnici per Front End Server, messaggistica istantanea e presenza in Lync server 2013](lync-server-2013-technical-requirements-for-front-end-servers-instant-messaging-and-presence.md) e [requisiti hardware e software per il Director in Lync Server 2013](lync-server-2013-hardware-and-software-requirements-for-the-director.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sul sistema operativo DFS per Windows Server 2008, vedere la guida dettagliata di DFS per Windows Server 2008 all'indirizzo [http://go.microsoft.com/fwlink/p/?linkId=202835](http://go.microsoft.com/fwlink/p/?linkid=202835).
 
-  - Un cluster condiviso per la condivisione file. Se si usa un cluster condiviso, è consigliabile usare i server cluster che usano Windows Server 2008 o Windows Server 2008 R2. L'uso di server cluster in cui è in esecuzione una versione precedente di Windows può causare problemi di autorizzazione che impediscono la disponibilità di alcune funzionalità. Usare l'amministratore del cluster per creare le condivisioni file. Per informazioni dettagliate sull'uso dell'amministratore del cluster, vedere l'articolo 284838 della Microsoft Knowledge Base "come creare una condivisione file del [http://go.microsoft.com/fwlink/p/?linkId=140899](http://go.microsoft.com/fwlink/p/?linkid=140899)cluster di server con cluster. exe".
+  - Un cluster condiviso per la condivisione file. Se si utilizza un cluster condiviso, è consigliabile utilizzare i server cluster che eseguono Windows Server 2008 o Windows Server 2008 R2. L'utilizzo di server di cluster che eseguono una versione precedente di Windows può causare problemi di autorizzazione che impediscono che alcune funzionalità siano disponibili. Utilizzare Amministrazione cluster per creare le condivisioni file. Per informazioni dettagliate sull'utilizzo dell'amministratore del cluster, vedere l'articolo 284838 della Microsoft Knowledge Base "come creare una condivisione file cluster di server con cluster. [http://go.microsoft.com/fwlink/p/?linkId=140899](http://go.microsoft.com/fwlink/p/?linkid=140899)exe" all'indirizzo.
 
 </div>
 

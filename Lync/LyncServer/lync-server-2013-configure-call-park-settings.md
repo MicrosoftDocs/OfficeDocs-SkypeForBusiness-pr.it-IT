@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurare le impostazioni del parcheggio delle chiamate'
+title: 'Lync Server 2013: configurare le impostazioni del parcheggio di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183922
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ee4f12ccf614816e27262f8b393cdc1dac4a7a5e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 644ec44d4086b0acc326e043cbf63d7ceb2c640c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757780"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028717"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-call-park-settings-in-lync-server-2013"></a>Configurare le impostazioni di Call Park in Lync Server 2013
+# <a name="configure-call-park-settings-in-lync-server-2013"></a>Configurare le impostazioni del parcheggio di chiamata in Lync Server 2013
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41757780"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Se non si vogliono usare le impostazioni predefinite di Call Park, è possibile personalizzarle. Quando si installa l'applicazione Call Park, le impostazioni globali sono configurate per impostazione predefinita. È possibile modificare le impostazioni globali ed è anche possibile specificare impostazioni specifiche del sito. Usa il cmdlet **New-CsCpsConfiguration** per creare nuove impostazioni specifiche del sito. Usare il cmdlet **Set-CsCpsConfiguration** per modificare le impostazioni esistenti.
+Se non si desidera utilizzare le impostazioni predefinite del parcheggio di chiamata, è possibile personalizzarle. Quando si installa l'applicazione Parcheggio di chiamata, le impostazioni globali sono configurate per impostazione predefinita. È possibile modificarle, nonché specificare impostazioni specifiche del sito. Usare il cmdlet **New-CsCpsConfiguration** per creare nuove impostazioni specifiche del sito. Usare il cmdlet **Set-CsCpsConfiguration** per modificare le impostazioni esistenti.
 
 <div>
 
 
 > [!NOTE]  
-> È consigliabile configurare almeno l'opzione <STRONG>OnTimeoutURI</STRONG> per la destinazione di fallback da usare quando si verifica un timeout per una chiamata parcheggiata e la risponderia non riesce.
+> È consigliabile configurare come minimo l'opzione <STRONG>OnTimeoutURI</STRONG> per la destinazione di fallback da utilizzare quando si verifica il timeout di una chiamata parcheggiata e la richiamata ha esito negativo.
 
 
 
 </div>
 
-USA cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration** per configurare una delle impostazioni seguenti:
+Usare il cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration** per configurare una delle impostazioni seguenti:
 
 
 <table>
@@ -59,29 +59,29 @@ USA cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration** per
 </colgroup>
 <thead>
 <tr class="header">
-<th>Questa opzione:</th>
-<th>Specifica questo:</th>
+<th>Opzione:</th>
+<th>Descrizione:</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><strong>CallPickupTimeoutThreshold</strong></p></td>
-<td><p>La quantità di tempo che trascorre dopo il parcheggio di una chiamata prima che ritorni al telefono in cui è stata risolta la chiamata.</p>
-<p>Il valore deve essere immesso nel formato HH: mm: SS per specificare le ore, i minuti e i secondi. Il valore minimo è di 10 secondi e il valore massimo è di 10 minuti. Il valore predefinito è 00:01:30.</p></td>
+<td><p>Specifica quanto tempo deve trascorrere dopo che una chiamata è stata parcheggiata prima che squilli sul telefono da cui è stata effettuata la risposta.</p>
+<p>Il valore deve essere immesso nel formato hh:mm:ss per specificare le ore, i minuti e i secondi. Il valore minimo è 10 secondi e il valore massimo è 10 minuti. Il valore predefinito è 00:01:30.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>EnableMusicOnHold</strong></p></td>
-<td><p>Se la musica viene riprodotta per un chiamante mentre viene parcheggiata una chiamata.</p>
-<p>I valori sono true o false. Il valore predefinito è true.</p></td>
+<td><p>Specifica se viene riprodotto un brano musicale per il chiamante mentre una chiamata è parcheggiata.</p>
+<p>I valori consentiti sono True o False. Il valore predefinito è True.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MaxCallPickupAttempts</strong></p></td>
-<td><p>Il numero di squilli di una chiamata parcheggiata torna al telefono che risponde prima che venga inoltrato all'URI (Uniform Resource Identifier) di fallback specificato per <strong>OnTimeoutURI</strong>. Il valore predefinito è 1.</p></td>
+<td><p>Specifica per una chiamata parcheggiata il numero di squilli sul telefono da cui è stata effettuata la risposta prima che la chiamata venga inoltrata all'URI (Uniform Resource Identifier) di fallback indicato per <strong>OnTimeoutURI</strong>. Il valore predefinito è 1.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>OnTimeoutURI</strong></p></td>
-<td><p>Indirizzo SIP dell'utente o del gruppo di risposte a cui viene instradata una chiamata parcheggiata senza risposta quando viene superato <strong>MaxCallPickupAttempts</strong> .</p>
-<p>Value deve essere un URI SIP che inizia con la stringa SIP:. Ad esempio, sip:bob@contoso.com. L'impostazione predefinita non è l'indirizzo di inoltro.</p></td>
+<td><p>Specifica l'indirizzo SIP dell'utente o del Response Group a cui viene instradata una chiamata parcheggiata senza risposta quando viene superato il valore specificato per <strong>MaxCallPickupAttempts</strong>.</p>
+<p>Il valore deve essere un URI SIP che inizia con la stringa sip:, ad esempio sip:bob@contoso.com. Per impostazione predefinita, non viene specificato un indirizzo di inoltro.</p></td>
 </tr>
 </tbody>
 </table>
@@ -89,13 +89,13 @@ USA cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration** per
 
 <div>
 
-## <a name="to-configure-call-park-settings"></a>Per configurare le impostazioni di Call Park
+## <a name="to-configure-call-park-settings"></a>Per configurare le impostazioni del parcheggio di chiamata
 
-1.  Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di [configurazione delegate in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in [delegate Setup Permissions in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Eseguire
+3.  Eseguire: 
     
         New-CsCpsConfiguration -Identity site:<sitename to apply settings> [-CallPickupTimeoutThreshold <hh:mm:ss>] -[EnableMusicOnHold <$true | $false>] [-MaxCallPickupAttempts <number of rings>] [-OnTimeoutURI sip:<sip URI for routing unanswered call>]
     
@@ -103,7 +103,7 @@ USA cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration** per
     
 
     > [!TIP]  
-    > Usa il cmdlet <STRONG>Get-CsSite</STRONG> per identificare il sito. Per informazioni dettagliate, vedere documentazione di Lync Server Management Shell.
+    > Utilizzare il cmdlet <STRONG>Get-CsSite</STRONG> per identificare il sito. Per informazioni dettagliate, vedere Lync Server Management Shell Documentation.
 
     
     </div>
@@ -119,7 +119,7 @@ USA cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration** per
 ## <a name="see-also"></a>Vedere anche
 
 
-[Personalizzare la musica di Call Park in attesa in Lync Server 2013](lync-server-2013-customize-call-park-music-on-hold.md)  
+[Personalizzare la musica del parcheggio di chiamata in attesa in Lync Server 2013](lync-server-2013-customize-call-park-music-on-hold.md)  
 
 
 [New-CsCpsConfiguration](https://docs.microsoft.com/powershell/module/skype/New-CsCpsConfiguration)  

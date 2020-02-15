@@ -12,16 +12,16 @@ ms:contentKeyID: 48184648
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 848f4dc19ddf64c53c2dd30ae6ca4c8036b67c79
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3a3571cd93ae5d69fa4a432035284b9a752287b1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764096"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42033685"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41764096"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
 tblPrincipalMeta contiene le entità che devono essere aggiornate da servizi di dominio Active Directory.
 
@@ -63,38 +63,38 @@ tblPrincipalMeta contiene le entità che devono essere aggiornate da servizi di 
 <tr class="even">
 <td><p>prinAffiliationsDirty</p></td>
 <td><p>bit, not null</p></td>
-<td><p>True se le affiliazioni principali devono essere aggiornate.</p></td>
+<td><p>True se le affiliazioni delle entità devono essere aggiornate.</p></td>
 </tr>
 <tr class="odd">
 <td><p>prinAttributesDirty</p></td>
 <td><p>bit, not null</p></td>
-<td><p>True se gli attributi Principal devono essere aggiornati.</p></td>
+<td><p>True se gli attributi delle entità devono essere aggiornati.</p></td>
 </tr>
 <tr class="even">
 <td><p>prinDeleted</p></td>
-<td><p>bit, not null</p></td>
+<td><p>bit, non null</p></td>
 <td><p>True se l'entità è stata eliminata.</p></td>
 </tr>
 <tr class="odd">
 <td><p>tryCount</p></td>
 <td><p>int</p></td>
-<td><p>Numero di tentativi di aggiornare l'oggetto Principal da servizi di dominio Active Directory che si sono verificati finora.</p></td>
+<td><p>Numero di tentativi di aggiornamento dell'entità eseguiti fino a questo momento da Servizi di dominio Active Directory.</p></td>
 </tr>
 <tr class="even">
 <td><p>lastTry</p></td>
-<td><p>DateTime</p></td>
-<td><p>Indicatore di data e ora dal tentativo più recente di aggiornare l'entità. Può essere null se non è ancora stato tentato l'aggiornamento.</p></td>
+<td><p>datetime</p></td>
+<td><p>Indicatore di data e ora del tentativo più recente di aggiornamento dell'entità. Può essere Null se non è ancora stato eseguito alcun tentativo di aggiornamento.</p></td>
 </tr>
 <tr class="odd">
 <td><p>nextTry</p></td>
-<td><p>DateTime</p></td>
-<td><p>Indicatore di data e ora per il successivo aggiornamento programmato. Può essere null se non è stato programmato un ulteriore aggiornamento.</p></td>
+<td><p>datetime</p></td>
+<td><p>Indicatore di data e ora del successivo aggiornamento pianificato. Può essere Null se non sono stati pianificati ulteriori aggiornamenti.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="keys"></a>Tasti
+### <a name="keys"></a>Chiavi
 
 <table>
 <colgroup>
@@ -114,7 +114,7 @@ tblPrincipalMeta contiene le entità che devono essere aggiornate da servizi di 
 </tr>
 <tr class="even">
 <td><p>prinID</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblPrincipal. prinID.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblPrincipal.prinID.</p></td>
 </tr>
 </tbody>
 </table>

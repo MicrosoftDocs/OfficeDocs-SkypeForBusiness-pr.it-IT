@@ -1,5 +1,5 @@
 ---
-title: 'Fase 8: rimuovere le autorizzazioni dei pool legacy'
+title: 'Fase 8: rimuovere i pool legacy'
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183557
 ms.date: 12/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a9c21aa29f2e98aacd3ec68076a21ba2b4d2a76e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6450e129d68aadcb0e79f38def3e89176ef93373
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729076"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034146"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="phase-8-decommission-legacy-pools"></a>Fase 8: rimuovere le autorizzazioni dei pool legacy
+# <a name="phase-8-decommission-legacy-pools"></a>Fase 8: rimuovere i pool legacy
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41729076"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-12-08_
+_**Ultimo argomento modificato:** 2016-12-08_
 
-L'argomento seguente fornisce indicazioni per l'aggiornamento delle voci DNS, lo spostamento del server di gestione del contenuto, lo smantellamento dei pool e la disattivazione e la rimozione di server e pool da una distribuzione legacy di Lync Server 2010. Non tutte le procedure elencate in questa sezione sono obbligatorie. Leggere la documentazione e determinare la procedura di disattivazione da usare.
+Nell'argomento seguente vengono fornite indicazioni per l'aggiornamento delle voci DNS, lo spostamento del server di gestione del contenuto, la rimozione delle autorizzazioni dei pool e la disattivazione di server e pool da una distribuzione legacy di Lync Server 2010. Non tutte le procedure elencate in questa sezione sono necessarie. Leggere la documentazione e determinare quale procedura di rimozione utilizzare.
 
-Per una copertura esaustiva della rimozione di server e ruoli server di Lync Server 2010 e una guida dettagliata per la disattivazione di una distribuzione di Lync Server 2010, vedere "disinstallazione di Microsoft Lync Server 2010 e rimozione dei ruoli del server", a [https://go.microsoft.com/fwlink/p/?linkId=246227](https://go.microsoft.com/fwlink/p/?linkid=246227)cui è possibile eseguire il download.
+Per una copertura esaustiva sulla rimozione di server e ruoli del server di Lync Server 2010 e una guida dettagliata per rimuovere una distribuzione di Lync Server 2010, vedere la sezione relativa alla disinstallazione di Microsoft Lync Server 2010 e alla rimozione dei ruoli del server, che [https://go.microsoft.com/fwlink/p/?linkId=246227](https://go.microsoft.com/fwlink/p/?linkid=246227)possono essere scaricati in.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Per informazioni su come eseguire la migrazione e l'aggiornamento delle applicazioni Microsoft Unified Communications Managed API (UCMA), prima della disattivazione dell'ambiente legacy, vedere<A href="https://go.microsoft.com/fwlink/p/?linkid=269555">https://go.microsoft.com/fwlink/p/?LinkId=269555</A>
+> Per informazioni su come eseguire la migrazione e l'aggiornamento delle applicazioni Microsoft Unified Communications Managed API (UCMA), prima di rimuovere l'ambiente legacy, vedere<A href="https://go.microsoft.com/fwlink/p/?linkid=269555">https://go.microsoft.com/fwlink/p/?LinkId=269555</A>
 
 
 
@@ -53,13 +53,13 @@ Per una copertura esaustiva della rimozione di server e ruoli server di Lync Ser
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - <span></span>  
     [Aggiornare i record SRV DNS](update-dns-srv-records.md)
 
   - <span></span>  
-    [Trasferire il server di gestione centrale di Lync Server 2010 in Lync Server 2013](move-the-lync-server-2010-central-management-server-to-lync-server-2013.md)
+    [Spostare il server di gestione centrale Lync Server 2010 in Lync Server 2013](move-the-lync-server-2010-central-management-server-to-lync-server-2013.md)
 
   - <span></span>  
     [Spostare le directory conferenze](move-lync-server-2010-conference-directories-to-lync-server-2013.md)
@@ -68,13 +68,13 @@ Per una copertura esaustiva della rimozione di server e ruoli server di Lync Ser
     [Rimuovere l'associazione del server di archiviazione](remove-the-archiving-server-association.md)
 
   - <span></span>  
-    [Rimuovere l'associazione del server di monitoraggio](remove-the-monitoring-server-association.md)
+    [Rimuovere l'associazione di Monitoring Server](remove-the-monitoring-server-association.md)
 
   - <span></span>  
-    [Rimuovere il server front-end Enterprise Edition o front-end Standard Edition](remove-the-enterprise-edition-front-end-server-or-standard-edition-front-end-server.md)
+    [Rimuovere Enterprise Edition Front End Server o Standard Edition Front End Server](remove-the-enterprise-edition-front-end-server-or-standard-edition-front-end-server.md)
 
   - <span></span>  
-    [Rimuovere database e istanze di SQL Server nel server back-end](remove-sql-server-instances-and-databases-on-the-back-end-server.md)
+    [Rimuovere le istanze e i database di SQL Server nel server back-end](remove-sql-server-instances-and-databases-on-the-back-end-server.md)
 
 </div>
 

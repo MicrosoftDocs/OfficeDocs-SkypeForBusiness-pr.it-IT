@@ -1,5 +1,5 @@
 ---
-title: Trasferire il server di gestione centrale di Lync Server 2010 in Lync Server 2013
+title: Spostare il server di gestione centrale Lync Server 2010 in Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733602
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5f301c8f6e11ca3c8f19ed167489bb3fbf51fc63
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 29bdf9a5956dfec0dd35703aaf7a7606da63595b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743696"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034466"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="move-the-lync-server-2010-central-management-server-to-lync-server-2013"></a>Trasferire il server di gestione centrale di Lync Server 2010 in Lync Server 2013
+# <a name="move-the-lync-server-2010-central-management-server-to-lync-server-2013"></a>Spostare il server di gestione centrale Lync Server 2010 in Lync Server 2013
 
 </div>
 
@@ -35,64 +35,64 @@ ms.locfileid: "41743696"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-11-25_
+_**Ultimo argomento modificato:** 2013-11-25_
 
-Dopo aver eseguito la migrazione da Lync Server 2010 a Lync Server 2013, è necessario trasferire il server di gestione centralizzato di Lync Server 2010 in Lync Server 2013 front end server o pool, prima di poter rimuovere il server legacy di Lync Server 2010.
+Dopo aver eseguito la migrazione da Lync Server 2010 a Lync Server 2013, è necessario spostare il server di gestione centrale Lync Server 2010 in Lync Server 2013 front end server o pool, prima di poter rimuovere il server Lync Server 2010 legacy.
 
-Il server di gestione centrale è un singolo sistema master/replica multipla, in cui la copia di lettura/scrittura del database è tenuta dal server front-end che contiene il server di gestione centrale. Ogni computer della topologia, incluso il front end server che contiene il server di gestione centrale, ha una copia di sola lettura dei dati di Central Management store nel database di SQL Server (denominata RTCLOCAL per impostazione predefinita) installati nel computer durante l'installazione e distribuzione. Il database locale riceve gli aggiornamenti della replica tramite l'agente replicatore di Lync Server che viene eseguito come servizio in tutti i computer. Il nome del database effettivo nel server di gestione centrale e la replica locale è XDS, costituito dai file XDS. mdf e XDS. ldf. Il percorso del database master viene fatto riferimento da un punto di controllo del servizio (SCP) in servizi di dominio Active Directory. Tutti gli strumenti che usano il server di gestione centralizzato per gestire e configurare Lync Server usano l'SCP per individuare l'Central Management store.
+Il server di gestione centrale è un singolo sistema di replica master/multiple, in cui la copia di lettura/scrittura del database è conservata dal front end server che contiene il server di gestione centrale. Ogni computer della topologia, incluso il front end server che contiene il server di gestione centrale, dispone di una copia di sola lettura dei dati dell'archivio di gestione centrale nel database di SQL Server, denominata RTCLOCAL per impostazione predefinita, installata nel computer durante l'installazione e distribuzione. Il database locale riceve gli aggiornamenti delle repliche tramite l'agente Replicator di replica di Lync Server eseguito come servizio in tutti i computer. Il nome del database effettivo sul server di gestione centrale e la replica locale è XDS, costituito dai file XDS. mdf e XDS. ldf. Il percorso del database master è fatto riferimento da un punto di controllo del servizio (SCP) in servizi di dominio Active Directory. Tutti gli strumenti che utilizzano il server di gestione centrale per la gestione e la configurazione di Lync Server utilizzano l'SCP per individuare l'archivio di gestione centrale.
 
-Dopo aver spostato correttamente il server di gestione centrale, è necessario rimuovere i database di Central Management Server dal server front-end originale. Per informazioni sulla rimozione dei database di Central Management Server, vedere [rimuovere il database di SQL Server per un pool Front-End](remove-the-sql-server-database-for-a-front-end-pool.md).
+Dopo aver correttamente spostato il server di gestione centrale, è necessario rimuovere i database del server di gestione centrale dal front end server originale. Per informazioni sulla rimozione dei database del server di gestione centrale, vedere [rimuovere il database di SQL Server per un pool Front End](remove-the-sql-server-database-for-a-front-end-pool.md).
 
-Puoi usare il cmdlet **Move-csmanagementserver** di Windows PowerShell in Lync Server Management Shell per spostare il database dal database di SQL Server di lync Server 2010 al database di SQL Server di lync Server 2013 e quindi aggiornare il SCP in modo che punti al percorso del server di gestione centrale di lync Server 2013.
-
-<div>
-
-## <a name="preparing-lync-server-2013front-end-servers-before-moving-the-central-management-server"></a>Preparazione dei server front-end di Lync Server 2013 prima di spostare il server di gestione centrale
-
-Usare le procedure descritte in questa sezione per preparare i server front end di Lync Server 2013 prima di trasferire il server di gestione centralizzato di Lync Server 2010.
+Utilizzare il cmdlet **Move-csmanagementserver** di Windows PowerShell in Lync Server Management Shell per spostare il database dal database di SQL Server lync Server 2010 al database di SQL Server di lync Server 2013 e quindi aggiornare il punto SCP in modo che punti al percorso del server di gestione centrale di lync Server 2013.
 
 <div>
 
-## <a name="to-prepare-an-enterprise-edition-front-end-pool"></a>Per preparare un pool di front-end Enterprise Edition
+## <a name="preparing-lync-server-2013front-end-servers-before-moving-the-central-management-server"></a>Preparazione dei front end server di Lync Server 2013 prima dello spostamento del server di gestione centrale
 
-1.  Nel pool di front end di Lync Server 2013 Enterprise Edition in cui si vuole spostare il server di gestione centralizzato: accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo **RTCUniversalServerAdmins** . Per il database in cui si vuole installare l'Central Management store, è necessario disporre anche dei diritti utente e delle autorizzazioni di amministratore del database di SQL Server.
+Utilizzare le procedure descritte in questa sezione per preparare i server front end di Lync Server 2013 prima di spostare il server di gestione centrale Lync Server 2010.
+
+<div>
+
+## <a name="to-prepare-an-enterprise-edition-front-end-pool"></a>Per preparare un pool Enterprise Edition front end
+
+1.  Nel pool Lync Server 2013 Enterprise Edition front end in cui si desidera spostare il server di gestione centrale, eseguire l'accesso al computer in cui è installato Lync Server Management Shell come membro del gruppo **RTCUniversalServerAdmins** . È inoltre necessario disporre di autorizzazioni e diritti utente del database di SQL Server per il database in cui si desidera installare l'archivio di gestione centrale.
 
 2.  Aprire Lync Server Management Shell.
 
-3.  Per creare il nuovo archivio di gestione centrale nel database di SQL Server di Lync Server 2013, in Lync Server Management Shell digitare:
+3.  Per creare il nuovo archivio di gestione centrale nel database di SQL Server Lync Server 2013, in Lync Server Management Shell digitare quanto segue:
     
         Install-CsDatabase -CentralManagementDatabase -SQLServerFQDN <FQDN of your SQL Server> -SQLInstanceName <name of instance>
 
-4.  Verificare che lo stato del servizio **front-end di Lync Server** sia stato **avviato**.
+4.  Verificare che lo stato del servizio **Lync Server Front-End** sia **Avviato**.
 
 </div>
 
 <div>
 
-## <a name="to-prepare-a-standard-edition-front-end-server"></a>Per preparare un server front-end Standard Edition
+## <a name="to-prepare-a-standard-edition-front-end-server"></a>Per preparare un front end server Standard Edition
 
-1.  Nel server front-end Standard Edition di Lync Server 2013 in cui si vuole spostare il server di gestione centralizzato: accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo **RTCUniversalServerAdmins** .
+1.  Nel server Lync Server 2013 Standard Edition front end in cui si desidera spostare il server di gestione centrale, eseguire l'accesso al computer in cui è installato Lync Server Management Shell come membro del gruppo **RTCUniversalServerAdmins** .
 
-2.  Aprire la distribuzione guidata di Lync Server.
+2.  Aprire la Distribuzione guidata di Lync Server.
 
-3.  Nella distribuzione guidata di Lync Server fare clic su **prepara primo server Standard Edition**.
+3.  Nella distribuzione guidata di Lync Server, fare clic su **prepara primo server Standard Edition**.
 
-4.  Nella pagina **esecuzione dei comandi** , SQL Server Express viene installato come server di gestione centrale. Vengono create le regole firewall necessarie. Dopo aver completato l'installazione del database e del software prerequisito, fare clic su **fine**.
+4.  Nella pagina **esecuzione comandi** in corso, SQL Server Express è installato come server di gestione centrale. Vengono create le regole firewall necessarie. Al termine dell'installazione del database e dei prerequisiti software, fare clic su **Fine**.
     
     <div>
     
 
     > [!NOTE]  
-    > L'installazione iniziale può richiedere del tempo senza aggiornamenti visibili alla schermata di riepilogo dell'output del comando. Ciò è dovuto all'installazione di SQL Server Express. Se è necessario monitorare l'installazione del database, usare Gestione attività per monitorare la configurazione.
+    > L'installazione iniziale può richiedere tempo senza che vengano visualizzati aggiornamenti visibili nella schermata riepilogativa di output dei comandi. Ciò è dovuto all'installazione di SQL Server Express. Se si desidera monitorare l'installazione del database, usare Gestione attività.
 
     
     </div>
 
-5.  Per creare il nuovo archivio di gestione centrale nel server front-end Standard Edition di Lync Server 2013, in Lync Server Management Shell digitare:
+5.  Per creare il nuovo archivio di gestione centrale in Lync Server 2013 Standard Edition Front End Server, in Lync Server Management Shell digitare quanto segue:
     
         Install-CsDatabase -CentralManagementDatabase -SQLServerFQDN <FQDN of your Standard Edition Server> -SQLInstanceName <name of instance - RTC by default>
 
-6.  Verificare che lo stato del servizio **front-end di Lync Server** sia stato **avviato**.
+6.  Verificare che lo stato del servizio **Lync Server Front-End** sia **Avviato**.
 
 </div>
 
@@ -100,13 +100,13 @@ Usare le procedure descritte in questa sezione per preparare i server front end 
 
 <div>
 
-## <a name="to-move-the-lync-server-2010central-management-server-to-lync-server-2013"></a>Per trasferire il server di gestione centrale di Lync Server 2010 in Lync Server 2013
+## <a name="to-move-the-lync-server-2010central-management-server-to-lync-server-2013"></a>Per spostare il server di gestione centrale Lync Server 2010 in Lync Server 2013
 
-1.  Nel server Lync Server 2013 che sarà il server di gestione centralizzato: accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo **RTCUniversalServerAdmins** . È inoltre necessario disporre dei diritti e delle autorizzazioni per gli utenti di amministratore del database di SQL Server.
+1.  Sul server Lync Server 2013 che fungerà da server di gestione centrale: eseguire l'accesso al computer in cui è installato Lync Server Management Shell come membro del gruppo **RTCUniversalServerAdmins** . È anche necessario disporre dei diritti e delle autorizzazioni di amministratore del database SQL Server.
 
 2.  Aprire Lync Server Management Shell.
 
-3.  In Lync Server Management Shell digitare:
+3.  In Lync Server Management Shell, digitare quanto segue:
     
         Enable-CsTopology
     
@@ -114,30 +114,30 @@ Usare le procedure descritte in questa sezione per preparare i server front end 
     
 
     > [!WARNING]  
-    > Se <CODE>Enable-CsTopology</CODE> l'operazione non riesce, risolvere il problema impedendo il completamento del comando prima di continuare. Se <STRONG>Enable-CsTopology</STRONG> non riesce, il passaggio non riesce e può lasciare la topologia in uno stato in cui non è presente un Central Management store.
+    > Se <CODE>Enable-CsTopology</CODE> l'operazione non è riuscita, risolvere il problema impedendo il completamento del comando prima di continuare. Se <STRONG>Enable-CsTopology</STRONG> non ha esito positivo, lo spostamento avrà esito negativo e potrebbe lasciare la topologia in uno stato in cui non è presente un archivio di gestione centrale.
 
     
     </div>
 
-4.  Nel server front-end o nel pool Front-End di Lync Server 2013, in Lync Server Management Shell, digitare:
+4.  Nel server Lync Server 2013 front end o nel pool Front End, in Lync Server Management Shell, digitare quanto segue:
     
         Move-CsManagementServer
 
-5.  Lync Server Management Shell Visualizza i server, i file Store, gli archivi di database e i punti di connessione del servizio dello stato corrente e dello stato proposto. Leggere attentamente le informazioni e verificare che si tratta dell'origine e della destinazione desiderate. Digitare **Y** per continuare o **N** per interrompere lo stato di trasferimento.
+5.  Lync Server Management Shell consente di visualizzare i server, i file Store, gli archivi di database e i punti di connessione del servizio dello stato corrente e dello stato proposto. Leggere attentamente le informazioni e verificare che l'origine e la destinazione siano corrette. Digitare **S** per continuare o **N** per interrompere lo spostamento.
 
-6.  Esaminare gli avvisi o gli errori generati dal comando **Move-csmanagementserver** e risolverli.
+6.  Esaminare eventuali avvisi o errori generati dal comando **Move-CsManagementServer** e risolverli.
 
 7.  Nel server Lync Server 2013 aprire la distribuzione guidata di Lync Server.
 
-8.  Nella distribuzione guidata di Lync Server fare clic su **Installa o aggiorna Lync Server System**, fare clic su **passaggio 2: configurare o rimuovere i componenti di Lync Server**, fare clic su **Avanti**, rivedere il riepilogo e quindi fare clic su **fine**.
+8.  Nella distribuzione guidata di Lync Server, fare clic su **Installa o aggiorna il sistema Lync Server**, fare clic su **passaggio 2: installazione o rimozione componenti di Lync Server**, fare clic su **Avanti**, esaminare il riepilogo e quindi fare clic su **fine**.
 
 9.  Nel server Lync Server 2010 aprire la distribuzione guidata di Lync Server.
 
-10. Nella distribuzione guidata di Lync Server fare clic su **Installa o aggiorna Lync Server System**, fare clic su **passaggio 2: configurare o rimuovere i componenti di Lync Server**, fare clic su **Avanti**, rivedere il riepilogo e quindi fare clic su **fine**.
+10. Nella distribuzione guidata di Lync Server, fare clic su **Installa o aggiorna il sistema Lync Server**, fare clic su **passaggio 2: installazione o rimozione componenti di Lync Server**, fare clic su **Avanti**, esaminare il riepilogo e quindi fare clic su **fine**.
 
-11. Riavviare il server Lync Server 2013. Questa operazione è necessaria a causa di una modifica dell'appartenenza al gruppo per accedere al database di Central Management Server.
+11. Riavviare il server Lync Server 2013. Questa operazione è necessaria a causa di una modifica dell'appartenenza a un gruppo al database del server di gestione centrale di Access.
 
-12. Per verificare che la replica con il nuovo archivio di gestione centrale si verifichi, in Lync Server Management Shell digitare:
+12. Per verificare che la replica con il nuovo archivio di gestione centrale si verifichi, in Lync Server Management Shell digitare quanto segue:
     
         Get-CsManagementStoreReplicationStatus
     
@@ -145,7 +145,7 @@ Usare le procedure descritte in questa sezione per preparare i server front end 
     
 
     > [!NOTE]  
-    > La replica può richiedere del tempo per aggiornare tutte le repliche correnti.
+    > Il processo di replica può richiedere tempo per aggiornare tutte le repliche correnti.
 
     
     </div>
@@ -154,9 +154,9 @@ Usare le procedure descritte in questa sezione per preparare i server front end 
 
 <div>
 
-## <a name="to-remove-lync-server-2010central-management-store-files-after-a-move"></a>Per rimuovere i file di Lync Server 2010 Central Management store dopo una mossa
+## <a name="to-remove-lync-server-2010central-management-store-files-after-a-move"></a>Per rimuovere i file dell'archivio di gestione centrale di Lync Server 2010 dopo uno spostamento
 
-1.  Nel server Lync Server 2010: accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo **RTCUniversalServerAdmins** . È inoltre necessario disporre dei diritti e delle autorizzazioni per gli utenti di amministratore del database di SQL Server.
+1.  Nel server Lync Server 2010: accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo **RTCUniversalServerAdmins** . È anche necessario disporre dei diritti e delle autorizzazioni di amministratore del database SQL Server.
 
 2.  Aprire Lync Server Management Shell
     
@@ -164,12 +164,12 @@ Usare le procedure descritte in questa sezione per preparare i server front end 
     
 
     > [!WARNING]  
-    > Non procedere con la rimozione dei file di database precedenti finché la replica non è completa ed è stabile. Se si rimuovono i file prima di completare la replica, si interromperà il processo di replica e si lascerà il server di gestione centralizzato appena spostato in uno stato sconosciuto. Usa il cmdlet <STRONG>Get-CsManagementStoreReplicationStatus</STRONG> per confermare lo stato di replica.
+    > Non procedere con la rimozione dei file di database precedenti prima del completamento e della stabilizzazione della replica. Se si rimuovono i file prima del completamento della replica, si interrompe il processo di replica e si lascia il server di gestione centrale appena spostato in uno stato sconosciuto. Usare il cmdlet <STRONG>Get-CsManagementStoreReplicationStatus</STRONG> per verificare lo stato della replica.
 
     
     </div>
 
-3.  Per rimuovere i file di database di Central Management Store dal server di gestione centrale di Lync Server 2010, digitare:
+3.  Per rimuovere i file di database dell'archivio di gestione centrale dal server di gestione centrale Lync Server 2010, digitare quanto segue:
     
         Uninstall-CsDatabase -CentralManagementDatabase -SqlServerFqdn <FQDN of SQL Server> -SqlInstanceName <Name of source server>
     
@@ -177,7 +177,7 @@ Usare le procedure descritte in questa sezione per preparare i server front end 
     
         Uninstall-CsDatabase -CentralManagementDatabase -SqlServerFqdn sql.contoso.net -SqlInstanceName rtc
     
-    Dove il \<nome di dominio completo\> di SQL Server è il server back-End di Lync Server 2010 in una distribuzione di Enterprise Edition o il nome di dominio completo del server Standard Edition.
+    Dove il \<nome di dominio completo\> di SQL Server è il server di back-end Lync Server 2010 in una distribuzione Enterprise Edition o il nome di dominio completo del server Standard Edition.
 
 </div>
 

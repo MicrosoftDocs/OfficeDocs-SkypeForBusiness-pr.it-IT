@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: report tendenze posizione'
+title: 'Lync Server 2013: Rapporto tendenze percorso'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184280
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 26f825a33eeb90817685c1694a5c6579110ffcd6
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e74cf4e763272f2309e358120abb12b0424aa40b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762144"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030940"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="location-trend-report-in-lync-server-2013"></a>Report tendenze posizione in Lync Server 2013
+# <a name="location-trend-report-in-lync-server-2013"></a>Rapporto tendenze percorso in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41762144"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-06_
+_**Ultimo argomento modificato:** 2012-06-06_
 
-Il report tendenze posizione offre informazioni sulle tendenze della qualità delle chiamate per i percorsi di rete.
+Il Rapporto tendenze percorso offre informazioni sulle tendenze di qualità delle chiamate per i percorso di rete.
 
 <div>
 
 ## <a name="filters"></a>Filtri
 
-I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi. Ad esempio, il rapporto di tendenza della posizione consente di filtrare i dati restituiti in base a elementi come il tipo di accesso, ovvero l'accesso tramite intervallo o l'accesso esterno, o la connessione di rete cablata/wireless. È anche possibile scegliere la modalità di raggruppamento dei dati. In questo caso, le chiamate vengono raggruppate per ora, giorno o settimana.
+I filtri consentono di ottenere un set di dati più specifico o di visualizzare in modo diverso i dati restituiti. Il Rapporto tendenze percorso, ad esempio, consente di filtrare i dati restituiti in base a fattori come il tipo di accesso (interno o esterno) o il tipo di connessione di rete (cablata o wireless). È inoltre possibile scegliere la modalità di raggruppamento dei dati. In questo caso le chiamate sono raggruppate per ora, giorno o settimana.
 
-Nella tabella seguente sono elencati i filtri che è possibile usare con il report tendenze posizione.
+Nella tabella che segue sono elencati i filtri applicabili al Rapporto tendenze percorso.
 
-### <a name="location-trend-report-filters"></a>Filtri per i report sulle tendenze di posizione
+### <a name="location-trend-report-filters"></a>Filtri del Rapporto tendenze percorso
 
 <table>
 <colgroup>
@@ -62,47 +62,47 @@ Nella tabella seguente sono elencati i filtri che è possibile usare con il repo
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Da</strong></p></td>
-<td><p>Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:</p>
-<p>7/7/2012 1:00 PM</p>
-<p>Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:</p>
+<td><p><strong>From</strong></p></td>
+<td><p>Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:</p>
+<p>07/07/2012 13.00</p>
+<p>Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/7/2012</p>
-<p>Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</p>
+<p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane si eseguono sempre da domenica a sabato.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>A</strong></p></td>
-<td><p>Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:</p>
-<p>7/7/2012 1:00 PM</p>
-<p>Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:</p>
+<td><p><strong>To</strong></p></td>
+<td><p>Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:</p>
+<p>07/07/2012 13.00</p>
+<p>Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/7/2012</p>
-<p>Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</p>
+<p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane si eseguono sempre da domenica a sabato.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Intervallo</strong></p></td>
-<td><p>Intervallo di tempo. Selezionare una delle opzioni seguenti:</p>
+<td><p>Selezionare uno dei seguenti:</p>
 <ul>
-<li><p>Ogni ora (può essere visualizzato un massimo di 25 ore)</p></li>
-<li><p>Giornaliera (è possibile visualizzare un massimo di 31 giorni)</p></li>
-<li><p>Settimanale (può essere visualizzato un massimo di 12 settimane)</p></li>
+<li><p>Orario (è possibile visualizzare un massimo di 25 ore)</p></li>
+<li><p>Giornaliero (è possibile visualizzare un massimo di 31 giorni)</p></li>
+<li><p>Settimanale (è possibile visualizzare un massimo di 12 settimane)</p></li>
 </ul>
-<p>Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, viene visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo giornaliero con una data di inizio di 1/1/2011 e una data di fine 2/28/2011, i dati verranno visualizzati per i giorni 8/1/2011 12:00 da AM a 9/1/2011 12:00 AM, ovvero un totale di 31 giorni di dati.</p></td>
+<p>Se per le date di inizio e di fine si immette un numero di valori superiore al massimo consentito per l'intervallo selezionato, verrà visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo Giornaliero con la data di inizio 01/01/2011 e la data di fine 28/02/2011, verranno visualizzati i dati relativi ai giorni da 01/08/2011 alle 00.00 a 01/09/2011 alle 00.00, ovvero per un totale di 31 giorni.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Tipo di accesso</strong></p></td>
-<td><p>Indica se il client ha effettuato l'accesso alla rete interna o alla rete esterna quando è stata inserita la chiamata. Selezionare una delle opzioni seguenti:</p>
+<td><p>Indica se al momento dell'esecuzione della chiamata il client era connesso alla rete interna o alla rete esterna. Selezionare una delle opzioni seguenti:</p>
 <ul>
 <li><p>Tutti</p></li>
-<li><p>Interno</p></li>
-<li><p>Esterno</p></li>
+<li><p>Interna</p></li>
+<li><p>Esterna</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Tipo di rete</strong></p></td>
-<td><p>Indica il tipo di rete a cui il client è connesso quando è stata inserita la chiamata. Selezionare una delle opzioni seguenti:</p>
+<td><p>Indica il tipo di rete alla quale era connesso il client quando è stata effettuata la chiamata. Selezionare una delle opzioni seguenti:</p>
 <ul>
 <li><p>Tutti</p></li>
 <li><p>Cablata</p></li>
@@ -111,7 +111,7 @@ Nella tabella seguente sono elencati i filtri che è possibile usare con il repo
 </tr>
 <tr class="even">
 <td><p><strong>VPN</strong></p></td>
-<td><p>Indica se un client esterno usa una connessione VPN (Virtual Private Network) quando la chiamata è stata inserita. Selezionare una delle opzioni seguenti:</p>
+<td><p>Indica se un client esterno stava utilizzando una connessione VPN (Virtual Private Network) al momento della chiamata. Selezionare una delle opzioni seguenti:</p>
 <ul>
 <li><p>Tutti</p></li>
 <li><p>VPN</p></li>

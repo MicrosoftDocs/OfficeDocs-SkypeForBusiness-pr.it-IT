@@ -12,16 +12,16 @@ ms:contentKeyID: 48184716
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e4aeeff884decf5d94ba15eecd5f49c87baece99
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a23252190b9ce93ed397e1e44ea400efa9db856c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41745866"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036666"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41745866"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2010-11-03_
+_**Ultimo argomento modificato:** 2010-11-03_
 
-Se è necessario testare le assegnazioni Kerberos o determinare lo stato dell'autenticazione Kerberos, è possibile usare i cmdlet di Windows PowerShell.
+Se è necessario verificare le assegnazioni Kerberos o determinare lo stato dell'autenticazione Kerberos, è possibile utilizzare i cmdlet di Windows PowerShell.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Testare e segnalare la disponibilità funzionale per l'autenticazione Kerberos in Lync Server 2013](lync-server-2013-test-and-report-functional-readiness-for-kerberos-authentication.md)
 
-  - [Generare un rapporto sulle assegnazioni degli account Kerberos in Lync Server 2013](lync-server-2013-report-kerberos-account-assignments.md)
+  - [Segnalare le assegnazioni degli account Kerberos in Lync Server 2013](lync-server-2013-report-kerberos-account-assignments.md)
 
 </div>
 

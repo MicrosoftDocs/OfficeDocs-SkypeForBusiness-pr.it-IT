@@ -12,20 +12,20 @@ ms:contentKeyID: 51541465
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ea5e4ce57e61be50bfd1e2a78529830b4a40e3ed
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b86f283aae05985ea903a17dfb15dff83574c42f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730406"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029217"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="backup-and-restoration-requirements-in-lync-server-2013-tools-and-permissions"></a>Requisiti di backup e ripristino in Lync Server 2013: strumenti e autorizzazioni
+# <a name="backup-and-restoration-requirements-in-lync-server-2013-tools-and-permissions"></a>Requisiti di backup e ripristino in Lync Server 2013: Tools and Permissions
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41730406"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-17_
+_**Ultimo argomento modificato:** 2013-02-17_
 
-Questo argomento identifica gli strumenti che è possibile usare per eseguire il backup e il ripristino di Lync Server 2013, le autorizzazioni necessarie e se è possibile eseguire comandi in remoto o localmente. In particolare, questo argomento si basa sugli strumenti forniti con Lync Server per il backup e il ripristino.
+In questo argomento vengono identificati gli strumenti che è possibile utilizzare per eseguire il backup e il ripristino di Lync Server 2013, le autorizzazioni necessarie e la possibilità di eseguire comandi in remoto o localmente. In particolare, questo argomento si concentra sugli strumenti forniti con Lync Server per il backup e il ripristino.
 
 <div>
 
 ## <a name="backups"></a>Backup
 
-Per eseguire il backup di Lync Server, usare gli strumenti identificati nella tabella seguente. Tutti i comandi necessari per eseguire il backup di Lync Server possono essere creati tramite script e possono essere eseguiti in remoto.
+Per eseguire il backup di Lync Server, utilizzare gli strumenti identificati nella tabella seguente. Tutti i comandi di cui è necessario eseguire il backup di Lync Server possono essere scritti in remoto e possono essere eseguiti in modalità remota.
 
 ### <a name="tools-for-backing-up-lync-server"></a>Strumenti per il backup di Lync Server
 
@@ -54,21 +54,21 @@ Per eseguire il backup di Lync Server, usare gli strumenti identificati nella ta
 </colgroup>
 <thead>
 <tr class="header">
-<th>Per eseguire il backup:</th>
-<th>Usare questo strumento o cmdlet:</th>
+<th>Per il backup di questo componente:</th>
+<th>Utilizzare questo strumento o cmdlet:</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Dati di configurazione della topologia (XDS. MDF)</p></td>
+<td><p>Dati di configurazione della topologia (Xds.mdf)</p></td>
 <td><p>Export-CsConfiguration</p></td>
 </tr>
 <tr class="even">
-<td><p>Dati del servizio informazioni sulla posizione (E9-1-1) (LIS. MDF)</p></td>
+<td><p>Dati del servizio Informazioni percorso (E9-1-1) (Lis.mdf)</p></td>
 <td><p>Export-CsLisConfiguration</p></td>
 </tr>
 <tr class="odd">
-<td><p>Dati di configurazione dei gruppi di risposte (RgsConfig. MDF)</p></td>
+<td><p>Dati di configurazione di Response Group (RgsConfig.mdf)</p></td>
 <td><p>Export-CsRgsConfiguration</p></td>
 </tr>
 <tr class="even">
@@ -78,22 +78,22 @@ Per eseguire il backup di Lync Server, usare gli strumenti identificati nella ta
 </tr>
 <tr class="odd">
 <td><ul>
-<li><p>Database di archiviazione (LcsLog. MDF)</p></li>
-<li><p>Monitoraggio del database di record dettagli chiamata (LcsCDR. MDF)</p></li>
-<li><p>Monitoraggio del database QoE (QoEMetrics. MDF)</p></li>
+<li><p>Database di archiviazione (LcsLog.mdf)</p></li>
+<li><p>Database di registrazione dettagli chiamata di monitoraggio (LcsCDR.mdf)</p></li>
+<li><p>Database QoE di monitoraggio (QoEMetrics.mdf)</p></li>
 </ul></td>
-<td><p>Strumento database di SQL Server, ad esempio SQL Server Management Studio</p></td>
+<td><p>Strumento dei database di SQL Server, ad esempio SQL Server Management Studio</p></td>
 </tr>
 <tr class="even">
 <td><p>Database di chat persistente (MGC. MDF)</p></td>
-<td><p>Procedure di backup di SQL Server o Export-CsPersistentChatData. Export-CsPersistentChatData Esporta i dati della chat persistente come file.</p></td>
+<td><p>Procedure di backup o Export-CsPersistentChatData di SQL Server. Export-CsPersistentChatData Esporta i dati della chat persistente come file.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Tutti gli archivi di file: Lync Server file Store, archiviazione file Store</p>
+<td><p>Tutti gli archivi file: archivio file di Lync Server, archivio file di archiviazione</p>
 <div>
 
 > [!NOTE]  
-> Non è necessario eseguire il backup dei file denominati <STRONG>meeting. Active</STRONG> . Questi file sono in uso e bloccati durante una riunione.
+> Non eseguire il backup dei file denominati <STRONG>Meeting.Active</STRONG>. Questi file sono in uso e bloccati mentre è in corso una riunione.
 
 
 </div></td>
@@ -107,9 +107,9 @@ Per eseguire il backup di Lync Server, usare gli strumenti identificati nella ta
 
 <div>
 
-## <a name="restoration"></a>Restauro
+## <a name="restoration"></a>Ripristino
 
-Per ripristinare Lync Server, usare gli strumenti della tabella seguente. Tutti i comandi necessari per ripristinare Lync Server possono essere creati tramite script. Alcune possono essere eseguite in remoto, ma altre devono essere eseguite localmente, come specificato nella tabella seguente.
+Per ripristinare Lync Server, utilizzare gli strumenti riportati nella tabella seguente. Tutti i comandi necessari per il ripristino di Lync Server possono essere scritti tramite script. Alcuni possono essere eseguiti in remoto, mentre altri devono essere eseguiti localmente, come specificato nella tabella seguente.
 
 ### <a name="tools-for-restoring-lync-server"></a>Strumenti per il ripristino di Lync Server
 
@@ -120,8 +120,8 @@ Per ripristinare Lync Server, usare gli strumenti della tabella seguente. Tutti 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Procedi come segue.</th>
-<th>Usare questo strumento o cmdlet:</th>
+<th>Per eseguire questa operazione:</th>
+<th>Utilizzare questo strumento o cmdlet:</th>
 </tr>
 </thead>
 <tbody>
@@ -130,17 +130,17 @@ Per ripristinare Lync Server, usare gli strumenti della tabella seguente. Tutti 
 <td><ul>
 <li><p>Software di installazione del sistema operativo Windows</p></li>
 <li><p>Software di installazione di SQL Server</p></li>
-<li><p>Snap-in certificati di Microsoft Management Console (MMC), se il ripristino di certificati con una chiave privata esportabile</p></li>
+<li><p>Snap-in MMC (Microsoft Management Console) Certificati, per ripristinare certificati con una chiave privata esportabile</p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>Ripristinare i dati dell'archivio file</p></td>
-<td><p>Strumento di gestione del file System standard, ad esempio Robocopy</p></td>
+<td><p>Ripristinare dati dell'archivio file</p></td>
+<td><p>Strumento di gestione del file system standard, ad esempio Robocopy</p></td>
 </tr>
 <tr class="odd">
 <td><p>Ricreare database vuoti e impostare le autorizzazioni per gli elementi seguenti:</p>
 <ul>
-<li><p>Central Management store</p></li>
+<li><p>Archivio di gestione centrale</p></li>
 <li><p>Server back-end</p></li>
 <li><p>Database di monitoraggio</p></li>
 <li><p>Database di archiviazione</p></li>
@@ -148,24 +148,24 @@ Per ripristinare Lync Server, usare gli strumenti della tabella seguente. Tutti 
 <td><p>Install-CsDatabase</p></td>
 </tr>
 <tr class="even">
-<td><p>Ripristinare il puntatore di servizi di dominio Active Directory a Central Management store</p>
+<td><p>Ripristinare il puntatore di servizi di dominio Active Directory all'archivio di gestione centrale</p>
 <div>
 
 > [!NOTE]  
-> Se si perde il punto di connessione del servizio in qualsiasi momento, è possibile rieseguire questo cmdlet.
+> Se a un certo punto si perde il punto di connessione del servizio, è possibile eseguire di nuovo questo cmdlet.
 
 
 </div></td>
 <td><p>Set-CsConfigurationStoreLocation</p></td>
 </tr>
 <tr class="odd">
-<td><p>Importare la topologia, i criteri e le impostazioni di configurazione in Central Management store (XDS. MDF)</p></td>
+<td><p>Importare la topologia, i criteri e le impostazioni di configurazione nell'archivio di gestione centrale (XDS. MDF)</p></td>
 <td><p>Import-CsConfiguration</p></td>
 </tr>
 <tr class="even">
 <td><p>Pubblicare e abilitare la topologia</p></td>
-<td><p>Generatore di topologie</p>
-<p>o</p>
+<td><p>Strumento di generazione topologia</p>
+<p>-oppure-</p>
 <p>Publish-CsTopology e Enable-CsTopology</p></td>
 </tr>
 <tr class="odd">
@@ -174,17 +174,17 @@ Per ripristinare Lync Server, usare gli strumenti della tabella seguente. Tutti 
 </tr>
 <tr class="even">
 <td><p>Reinstallare i componenti di Lync Server</p></td>
-<td><p>Configurazione di Lync Server</p>
+<td><p>Installazione di Lync Server</p>
 <div>
 
 > [!NOTE]  
-> Disponibile nella cartella di installazione di Lync Server o in un file multimediale in \setup\amd64\Setup.exe.
+> Si trova nella cartella di installazione di Lync Server o nel supporto in \setup\amd64\Setup.exe.
 
 
 </div></td>
 </tr>
 <tr class="odd">
-<td><p>Ripristinare le informazioni sulla posizione (E9-1-1) dati (LIS. MDF)</p></td>
+<td><p>Ripristinare i dati di Informazioni percorso (E9-1-1) (Lis.mdf)</p></td>
 <td><p>Import-CsLisConfiguration</p></td>
 </tr>
 <tr class="even">
@@ -192,12 +192,12 @@ Per ripristinare Lync Server, usare gli strumenti della tabella seguente. Tutti 
 <td><p>Import-CsUserData</p></td>
 </tr>
 <tr class="odd">
-<td><p>Ripristinare i dati di configurazione di Response Group (RgsConfig. MDF)</p></td>
+<td><p>Ripristinare i dati di configurazione di Response Group (RgsConfig.mdf)</p></td>
 <td><p>Import-CsRgsConfiguration</p>
 <div>
 
 > [!NOTE]  
-> Se la configurazione viene ripristinata in un pool appena distribuito che non contiene dati del gruppo di risposte nel database, è necessario usare l'opzione – OverwriteOwner. Usare questa opzione anche se i dati da ripristinare si trova in un pool con lo stesso nome di dominio completo (FQDN). In caso contrario, l'importazione non avrà esito positivo, a causa degli oggetti contatto per i gruppi di risposte già esistenti in Active Directory.
+> Se la configurazione viene ripristinata in un pool appena distribuito che non dispone di dati di Response Group nel database, è consigliabile utilizzare l'opzione – OverwriteOwner. Utilizzare questa opzione anche se i dati ripristinati sono presenti in un pool con lo stesso nome di dominio completo (FQDN). In caso contrario, l'importazione non avrà esito positivo, a causa degli oggetti contatto ai Response Group già esistenti in Active Directory.
 
 
 </div></td>
@@ -205,14 +205,14 @@ Per ripristinare Lync Server, usare gli strumenti della tabella seguente. Tutti 
 <tr class="even">
 <td><p>Ripristinare i database seguenti:</p>
 <ul>
-<li><p>Database di archiviazione (LcsLog. MDF)</p></li>
-<li><p>Database di monitoraggio: database di record dettagli chiamata (LcsCDR. MDF) e database QoE (QoEMetrics. MDF)</p></li>
+<li><p>Database di archiviazione (LcsLog.mdf)</p></li>
+<li><p>Database di monitoraggio: database di registrazione dettagli chiamata (LcsCDR.mdf) e database QoE (QoEMetrics.mdf)</p></li>
 </ul></td>
-<td><p>Strumenti di gestione di database di SQL Server</p></td>
+<td><p>Strumenti di gestione dei database di SQL Server</p></td>
 </tr>
 <tr class="odd">
 <td><p>Database di chat persistente (MGS. MDF)</p></td>
-<td><p>Procedure di ripristino di SQL Server o Import-CsPersistentChatData. È possibile usare Import-CsPersistentChatData con un file creato da Export-CsPersistentChatData e i dati verranno importati nel database della chat persistente.</p></td>
+<td><p>Procedure di ripristino di SQL Server o Import-CsPersistentChatData. È possibile utilizzare Import-CsPersistentChatData con un file creato da Export-CsPersistentChatData e i dati verranno importati nel database di Persistent Chat.</p></td>
 </tr>
 </tbody>
 </table>
@@ -224,7 +224,7 @@ Per ripristinare Lync Server, usare gli strumenti della tabella seguente. Tutti 
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 
-Gli utenti devono essere membri del gruppo **RTCUniversalServerAdmins** per eseguire tutti i comandi descritti in questo argomento. La maggior parte dei comandi di backup e ripristino non supporta il controllo di accesso basato sui ruoli (RBAC). Due eccezioni sono i cmdlet per la chat persistente Export-CsPersistentChatData e Import-CsPersistentChatData, che devono essere eseguiti da un utente membro del gruppo CsPersistentChatAdministrator. Per eseguire la distribuzione guidata di Lync Server, un utente deve essere anche membro del gruppo di amministratori locale.
+Gli utenti devono essere membri del gruppo **RTCUniversalServerAdmins** per eseguire tutti i comandi descritti in questo argomento. La maggior parte dei comandi di backup e ripristino non supporta il controllo di accesso basato sui ruoli (RBAC). Due eccezioni sono i cmdlet di Persistent Chat Export-CsPersistentChatData e Import-CsPersistentChatData, che devono essere eseguiti da un utente membro del gruppo ruolo CsPersistentChatAdministrator. Per eseguire la distribuzione guidata di Lync Server, è necessario che un utente sia anche membro del gruppo amministratori locale.
 
 </div>
 

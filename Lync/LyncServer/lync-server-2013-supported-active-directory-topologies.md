@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Topologie di Active Directory supportate'
+title: 'Lync Server 2013: topologie di Active Directory supportate'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183391
 ms.date: 10/02/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3e4aca368f6ea7d5b31a1cfe74273dfbd42a6594
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 199191b8e87ba7f46956ff92fcda7239ff27dc5c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764362"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029847"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41764362"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-10-02_
+_**Ultimo argomento modificato:** 2014-10-02_
 
-Lync Server 2013 supporta le stesse topologie dei servizi di dominio Active Directory di Microsoft Lync Server 2010 e Microsoft Office Communications Server 2007 R2. Sono supportate le topologie seguenti:
+Lync Server 2013 supporta le stesse topologie di servizi di dominio Active Directory di Microsoft Lync Server 2010 e Microsoft Office Communications Server 2007 R2. Le topologie supportate sono:
 
-  - Singola foresta con un singolo dominio
+  - Foresta singola con singolo dominio
 
-  - Singola foresta con un solo albero e più domini
+  - Foresta singola con albero singolo e più domini
 
   - Foresta singola con più alberi e spazi dei nomi disgiunti
 
-  - Più foreste in una topologia di foresta centrale
+  - Più foreste in una topologia di foreste centralizzate
 
   - Più foreste in una topologia di foresta di risorse
 
   - Più foreste in una topologia di foresta di risorse di Lync con Exchange Online
 
-La figura seguente identifica le icone usate nelle illustrazioni in questa sezione.
+Nella figura seguente vengono identificate le icone utilizzate nelle illustrazioni di questa sezione.
 
 **Legenda per le illustrazioni relative alle topologie**
 
@@ -59,27 +59,27 @@ La figura seguente identifica le icone usate nelle illustrazioni in questa sezio
 
 <div>
 
-## <a name="single-forest-single-domain"></a>Singola foresta, singolo dominio
+## <a name="single-forest-single-domain"></a>Foresta singola, dominio singolo
 
-La topologia di Active Directory più semplice supportata da Lync Server, una singola foresta di domini, è una topologia comune.
+La topologia di Active Directory più semplice supportata da Lync Server, una foresta a dominio singolo, è una topologia comune.
 
-Nella figura seguente viene illustrata una distribuzione di Lync Server in una singola topologia di Active Directory di dominio.
+Nella figura seguente viene illustrata una distribuzione di Lync Server in una topologia di Active Directory a dominio singolo.
 
-**Topologia a un solo dominio**
+**Topologia a dominio singolo**
 
-![Topologia a un solo dominio](images/Gg398173.258b3b3f-0558-4a36-a4c2-031be7299668(OCS.15).jpg "Topologia a un solo dominio")
+![Topologia a dominio singolo](images/Gg398173.258b3b3f-0558-4a36-a4c2-031be7299668(OCS.15).jpg "Topologia a dominio singolo")
 
 </div>
 
 <div>
 
-## <a name="single-forest-multiple-domains"></a>Singola foresta, più domini
+## <a name="single-forest-multiple-domains"></a>Foresta singola, più domini
 
-Un'altra topologia di Active Directory supportata da Lync Server è una singola foresta costituita da un dominio radice e uno o più domini figlio. In questo tipo di topologia di Active Directory, il dominio in cui è possibile creare gli utenti può essere diverso dal dominio in cui si distribuisce Lync Server. Tuttavia, se si distribuisce un pool Front-End, è necessario distribuire tutti i server front-end nel pool all'interno di un singolo dominio. Il supporto di Lync Server per i gruppi di amministratori universali di Windows consente l'amministrazione tra domini.
+Un'altra topologia di Active Directory supportata da Lync Server è una foresta singola costituita da un dominio radice e da uno o più domini figlio. In questo tipo di topologia di Active Directory, il dominio in cui si creano gli utenti può essere diverso dal dominio in cui si distribuisce Lync Server. Se però si distribuisce un pool Front End, sarà necessario distribuire tutti i Front End Server del pool in un singolo dominio. Il supporto di Lync Server per i gruppi di amministratori universali di Windows consente l'amministrazione tra domini.
 
-Nella figura seguente viene illustrata una distribuzione in una singola foresta con più domini. In questa figura l'icona dell'utente Mostra il dominio in cui è stato assegnato l'account utente e la freccia punta sul dominio in cui risiede il pool di Lync Server. Gli account utente includono i seguenti:
+Nella figura seguente viene illustrata una distribuzione in una foresta singola con più domini. In questa figura viene visualizzata un'icona dell'utente che indica il dominio in cui risiede l'account utente e la freccia punta al dominio in cui risiede il pool di Lync Server. Gli account utente includono i seguenti:
 
-  - Account utente nello stesso dominio del pool di Lync Server
+  - Account utente all'interno dello stesso dominio del pool di Lync Server
 
   - Account utente in un dominio diverso dal pool di Lync Server
 
@@ -93,15 +93,15 @@ Nella figura seguente viene illustrata una distribuzione in una singola foresta 
 
 <div>
 
-## <a name="single-forest-multiple-trees"></a>Singola foresta, più alberi
+## <a name="single-forest-multiple-trees"></a>Foresta singola, più alberi
 
-Una topologia di foresta a più alberi è costituita da due o più domini che definiscono strutture ad albero indipendenti e spazi dei nomi Active Directory distinti.
+Una topologia di foresta a più alberi è costituita da due o più domini che definiscono strutture ad albero indipendenti e spazi dei nomi di Active Directory separati.
 
-Nella figura seguente viene illustrata una singola foresta con più alberi. In questa figura l'icona di un utente Mostra il dominio in cui è stato assegnato l'account utente, una linea fissa punta a un pool di Lync Server che risiede nello stesso dominio o un altro, e una linea tratteggiata punta al pool di Lync Server che risiede in un albero diverso. Gli account utente includono i seguenti:
+Nella figura seguente viene illustrata una foresta singola con più alberi. In questa figura, un'icona dell'utente Visualizza il dominio in cui è ospitato l'account utente, una linea continua che punta a un pool di Lync Server che risiede nello stesso dominio o in un altro, e una linea tratteggiata punta al pool di Lync Server che risiede in un albero diverso. Gli account utente includono i seguenti:
 
-  - Account utente nello stesso dominio del pool di Lync Server
+  - Account utente all'interno dello stesso dominio del pool di Lync Server
 
-  - Account utente in un dominio diverso da (ma lo stesso albero) il pool di Lync Server
+  - Account utente in un dominio diverso da (ma lo stesso albero di) il pool di Lync Server
 
   - Account utente in un albero diverso dal pool di Lync Server
 
@@ -113,21 +113,21 @@ Nella figura seguente viene illustrata una singola foresta con più alberi. In q
 
 <div>
 
-## <a name="multiple-forests-central-forest"></a>Più foreste, foresta centrale
+## <a name="multiple-forests-central-forest"></a>Più foreste, foresta centralizzata
 
-Lync Server supporta più foreste configurate in una topologia di foresta centrale. Le topologie della foresta centrale usano gli oggetti contatto nella foresta centrale per rappresentare gli utenti nelle altre foreste. La foresta centrale ospita anche gli account utente per tutti gli utenti della foresta. Un prodotto di sincronizzazione della directory, ad esempio Microsoft Identity Integration Server (MIIS), Microsoft Forefront Identity Manager (FIM) 2010 o Microsoft Identity Lifecycle Manager (ILM) 2007 Feature Pack 1 (FP1), gestisce il ciclo di vita degli account utente in organizzazione: quando viene creato un nuovo account utente in una delle foreste o un account utente viene eliminato da una foresta, il prodotto di sincronizzazione della directory Sincronizza il contatto corrispondente nella foresta centrale.
+Lync Server supporta più insiemi di strutture configurati in una topologia a foresta centralizzata. Le topologie della foresta centrale utilizzano gli oggetti contatto nella foresta centrale per rappresentare gli utenti nelle altre foreste. La foresta centrale ospita anche account utente per tutti gli utenti della foresta. Un prodotto di sincronizzazione della directory, ad esempio Microsoft Identity Integration Server (MIIS), Microsoft Forefront Identity Manager (FIM) 2010 o Microsoft Identity Lifecycle Manager (ILM) 2007 Feature Pack 1 (FP1), gestisce il ciclo di vita degli account utente all'interno di l'organizzazione: quando viene creato un nuovo account utente in uno dei boschi o un account utente viene eliminato da una foresta, il prodotto di sincronizzazione della directory Sincronizza il contatto corrispondente nella foresta centrale.
 
-Una foresta centrale presenta i vantaggi seguenti:
+Una foresta centralizzata presenta i vantaggi seguenti:
 
-  - I server che esegue Lync Server vengono centralizzati in una singola foresta.
+  - I server che eseguono Lync Server sono centralizzati all'interno di una singola foresta.
 
-  - Gli utenti possono cercare e comunicare con altri utenti in qualsiasi foresta.
+  - Gli utenti possono cercare altri utenti e comunicare con loro in qualsiasi foresta.
 
   - Gli utenti possono visualizzare la presenza di altri utenti in qualsiasi foresta.
 
-  - Il prodotto di sincronizzazione della directory automatizza l'aggiunta e l'eliminazione degli oggetti contatto nella foresta centrale quando gli account utente vengono creati o rimossi.
+  - Il prodotto di sincronizzazione della directory automatizza l'aggiunta e l'eliminazione di oggetti contatto nella foresta centralizzata durante la creazione o la rimozione di account utente.
 
-Nella figura seguente viene illustrata una topologia di foresta centrale. In questa figura esistono relazioni di trust bidirezionali tra il dominio che ospita Lync Server, che si trova nella foresta centrale e ogni dominio solo utente, che si trova in una foresta separata. Non è necessario estendere lo schema nelle foreste utente separate.
+Nella figura seguente viene illustrata una topologia a foresta centralizzata. In questa figura, esistono relazioni di trust bidirezionali tra il dominio che ospita Lync Server, che si trova nella foresta centrale, e ogni dominio solo utente, che si trova in una foresta separata. Non è necessario estendere lo schema nelle foreste degli utenti separate.
 
 **Topologia a foresta centralizzata**
 
@@ -139,17 +139,17 @@ Nella figura seguente viene illustrata una topologia di foresta centrale. In que
 
 ## <a name="multiple-forests-resource-forest"></a>Più foreste, foresta delle risorse
 
-In una topologia di foresta di risorse, una foresta è dedicata all'uso di applicazioni server, come Microsoft Exchange Server e Lync Server. La foresta di risorse ospita le applicazioni server e una rappresentazione sincronizzata dell'oggetto utente attivo, ma non contiene account utente abilitati per l'accesso. La foresta di risorse funge da ambiente di servizi condivisi per gli altri insiemi di strutture in cui risiedono gli oggetti utente. Le foreste degli utenti hanno una relazione di trust a livello di foresta con la foresta di risorse. Quando si distribuisce Lync Server in questo tipo di topologia, è possibile creare un oggetto utente disabilitato nella foresta di risorse per ogni account utente nelle foreste degli utenti. Se Microsoft Exchange è già distribuito nella foresta delle risorse, gli account utente disabilitati potrebbero già esistere. Un prodotto di sincronizzazione della directory, ad esempio MIIS, Microsoft Forefront Identity Manager (FIM) 2010 o Microsoft Identity Lifecycle Manager (ILM) 2007 Feature Pack 1 (FP1), gestisce il ciclo di vita degli account utente. Quando viene creato un nuovo account utente in una delle foreste degli utenti o un account utente viene eliminato da una foresta, il prodotto di sincronizzazione della directory Sincronizza la corrispondente rappresentazione dell'utente nella foresta di risorse.
+In una topologia con foresta di risorse, una foresta è dedicata all'esecuzione di applicazioni server, ad esempio Microsoft Exchange Server e Lync Server. La foresta delle risorse ospita le applicazioni server e una rappresentazione sincronizzata dell'oggetto utente attivo, ma non contiene alcun account utente abilitato per l'accesso. La foresta delle risorse funge da ambiente dei servizi condivisi per le altre foreste in cui risiedono gli oggetti utente. Le foreste degli utenti presentano una relazione di trust a livello di foresta con la foresta delle risorse. Quando si distribuisce Lync Server in questo tipo di topologia, è possibile creare un oggetto utente disabilitato nella foresta di risorse per ogni account utente nelle foreste di utenti. Se Microsoft Exchange è già distribuito nella foresta di risorse, potrebbero esistere già gli account utente disabilitati. Un prodotto di sincronizzazione della directory, come MIIS, Microsoft Forefront Identity Manager (FIM) 2010 o Microsoft Identity Lifecycle Manager (ILM) 2007 Feature Pack 1 (FP1), gestisce il ciclo di vita degli account utente. Quando un nuovo account utente viene creato in una delle foreste degli utenti o un account utente viene eliminato da una foresta, il prodotto di sincronizzazione della directory sincronizza la rappresentazione dell'utente corrispondente nella foresta delle risorse.
 
-Questa topologia può essere usata per specificare un'infrastruttura condivisa per i servizi in organizzazioni che gestiscono più foreste o per separare l'amministrazione degli oggetti di Active Directory da un'altra amministrazione. Le aziende che devono isolare l'amministrazione di Active Directory per motivi di sicurezza spesso scelgono questa topologia.
+Questa topologia può essere utilizzata per fornire un'infrastruttura condivisa per i servizi in organizzazioni che gestiscono più foreste o per separare l'amministrazione degli oggetti di Active Directory da un'altra amministrazione. Si tratta della scelta più frequente da parte delle società che hanno la necessità di isolare l'amministrazione di Active Directory per motivi di sicurezza.
 
-Questa topologia offre il vantaggio di limitare la necessità di estendere lo schema di Active Directory a una singola foresta, ossia alla foresta di risorse.
+Questa topologia offre il vantaggio di limitare la necessità di estendere lo schema di Active Directory a una singola foresta, ovvero la foresta delle risorse.
 
-Il diagramma seguente illustra una topologia di foresta di risorse.
+Nella figura seguente viene illustrata la topologia con foresta delle risorse.
 
-**Topologia della foresta di risorse**
+**Topologia con foresta delle risorse**
 
-![Topologia con foresta delle risorse di Active Directory](images/Gg398173.54ab82f1-e9e5-40f0-a54e-86e340b65c2a(OCS.15).jpg "Topologia con foresta delle risorse di Active Directory")
+![Topologia della foresta di risorse di Active Directory](images/Gg398173.54ab82f1-e9e5-40f0-a54e-86e340b65c2a(OCS.15).jpg "Topologia della foresta di risorse di Active Directory")
 
 </div>
 
@@ -157,9 +157,9 @@ Il diagramma seguente illustra una topologia di foresta di risorse.
 
 ## <a name="multiple-forests-in-a-lync-resource-forest-topology-with-exchange-online"></a>Più foreste in una topologia di foresta di risorse di Lync con Exchange Online
 
-In questa topologia, uno o più insiemi di strutture si trovano in locale e sono dedicati all'hosting degli account utente di Active Directory. La foresta delle risorse si trova fuori sede e viene gestita da un provider di hosting di terze parti. La foresta di risorse contiene solo la distribuzione di Lync Server e una replica sincronizzata degli account utente dagli insiemi di strutture degli account utente locali. Non contiene account utente abilitati per l'accesso. Exchange viene distribuito nella foresta di account utente locale integrata insieme a Exchange Online (Hybrid) o i servizi di posta elettronica per gli account utente locali vengono forniti esclusivamente da Exchange Online.
+In questa topologia, una o più foreste si trovano in locale e sono dedicate all'hosting degli account utente di Active Directory. La foresta di risorse si trova fuori sede ed è gestita da un provider di hosting di terze parti. La foresta di risorse contiene solo la distribuzione di Lync Server e una replica sincronizzata degli account utente dalla foresta degli account utente locali. Non contiene account utente abilitati per l'accesso. Exchange è distribuito in una foresta di account utente locale integrata insieme a Exchange Online (ibrido) oppure i servizi di posta elettronica per gli account utente locali sono forniti esclusivamente da Exchange Online.
 
-La foresta di risorse funge da ambiente di servizi condivisi per gli insiemi di strutture Active Directory locali in cui risiedono gli oggetti utente. Le foreste dell'account utente hanno una relazione di trust a livello di foresta unidirezionale con la foresta di risorse. Quando si distribuisce Lync Server in questo tipo di topologia, è possibile creare un oggetto utente disabilitato nella foresta di risorse per ogni account utente nelle foreste degli utenti. Un prodotto di sincronizzazione della directory, ad esempio MIIS, Microsoft Forefront Identity Manager (FIM) 2010 o Microsoft Identity Lifecycle Manager (ILM) 2007 Feature Pack 1 (FP1), gestisce il ciclo di vita degli account utente. Quando viene creato un nuovo account utente in una delle foreste degli utenti o un account utente viene eliminato da una foresta, il prodotto di sincronizzazione della directory Sincronizza la corrispondente rappresentazione dell'utente nella foresta di risorse. Per altre informazioni sulla configurazione di una distribuzione con più insiemi di strutture, vedere [distribuzione di Lync in un'architettura con più insiemi di strutture (partner Lync ospitata con Exchange Hybrid)](http://go.microsoft.com/fwlink/p/?linkid=513216).
+La foresta di risorse funge da ambiente di servizi condivisi per le foreste di Active Directory locali in cui risiedono gli oggetti utente. Le foreste degli account utente dispongono di una relazione di trust a livello di foresta unidirezionale con la foresta di risorse. Quando si distribuisce Lync Server in questo tipo di topologia, è possibile creare un oggetto utente disabilitato nella foresta di risorse per ogni account utente nelle foreste di utenti. Un prodotto di sincronizzazione della directory, come MIIS, Microsoft Forefront Identity Manager (FIM) 2010 o Microsoft Identity Lifecycle Manager (ILM) 2007 Feature Pack 1 (FP1), gestisce il ciclo di vita degli account utente. Quando un nuovo account utente viene creato in una delle foreste degli utenti o un account utente viene eliminato da una foresta, il prodotto di sincronizzazione della directory sincronizza la rappresentazione dell'utente corrispondente nella foresta delle risorse. Per ulteriori informazioni sulla configurazione di una distribuzione a più foreste, vedere [Deploying Lync in a multi-Forest Architecture (Partner Hosted Lync with Exchange Hybrid)](http://go.microsoft.com/fwlink/p/?linkid=513216).
 
 </div>
 

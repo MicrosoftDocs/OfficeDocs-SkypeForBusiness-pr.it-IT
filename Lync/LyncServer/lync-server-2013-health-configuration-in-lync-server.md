@@ -12,16 +12,16 @@ ms:contentKeyID: 48185305
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 14a4da3ec3f06dfb573ef7e9422bdd6b751db636
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 831dd021799f658ae9ce332935ff2381e5d79bef
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733476"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030279"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,39 +35,39 @@ ms.locfileid: "41733476"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-22_
+_**Ultimo argomento modificato:** 2012-10-22_
 
-Tra i vari siti Web, gli articoli della Microsoft Knowledge base e gli strumenti di Lync Server Resource Kit, gli amministratori che incontrano problemi durante l'uso di Lync Server non sono mai lontani da un modo per risolvere questi problemi.
+Tra i diversi siti Web, gli articoli della Microsoft Knowledge base e gli strumenti di Lync Server Resource Kit, gli amministratori che riscontrano problemi durante l'esecuzione di Lync Server non sono mai lontani da un modo per risolvere questi problemi.
 
-Ovviamente non è possibile garantire che non si verifichino problemi con Lync Server 2013 perché Lync Server può essere influenzato da molti aspetti, ad esempio gli arresti anomali della rete e gli errori hardware, che il prodotto stesso non può controllare. Implementando il monitoraggio dell'integrità, gli amministratori possono identificare potenziali problemi prima che vengano trasformati in problemi reali. Ad esempio, gli amministratori possono usare il monitoraggio di Lync Server per identificare tendenze e tendenze. Ad esempio, un aumento costante del numero di conferenze audio/video potrebbe suggerire la necessità di aggiungere capacità prima che il sistema diventi sovraccaricato.
+Non è ovviamente possibile garantire che non vengano mai riscontrati problemi con Lync Server 2013 perché Lync Server può essere influenzato da molte operazioni, ad esempio arresti anomali della rete e hardware, che il prodotto stesso non è in grado di controllare. Implementando il monitoraggio dello stato, gli amministratori possono identificare potenziali problemi prima che diventino problemi a tutti gli effetti. Ad esempio, gli amministratori possono utilizzare il monitoraggio di Lync Server per identificare tendenze e tendenze. Un aumento costante del numero di conferenze audio/video ad esempio può suggerire la necessità di aggiungere capacità prima che si verifichi un sovraccarico del sistema.
 
-In modo analogo, gli amministratori possono usare System Center Operations Manager per eseguire operazioni come l'emissione di avvisi in tempo reale quando si verificano eventi specificati e per l'esecuzione di transazioni sintetiche che verificano in modo proattivo il sistema. Le transazioni sintetiche vengono usate in Lync Server per verificare che gli utenti siano in grado di completare correttamente le attività comuni, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o l'esecuzione di chiamate a un telefono che si trova nella rete PSTN (Public Switched Telephone Network). Ad esempio, l'uso periodico di questi test può avvisare i potenziali problemi con gli utenti che accedono a Lync Server e consente di risolvere il problema prima che il team di supporto venga allagato con chiamate provenienti da utenti non in grado di creare una connessione. Usando System Center Operations Manager per eseguire queste transazioni sintetiche, gli amministratori possono monitorare abitualmente la distribuzione di Lync Server continuamente per 24 ore ogni giorno, senza dover rispondere a qualsiasi avviso che potrebbe essere emesse.
+Analogamente, gli amministratori possono utilizzare System Center Operations Manager per eseguire operazioni quali gli avvisi in tempo reale quando si verificano gli eventi specificati e l'esecuzione di transazioni sintetiche che verificano il sistema in modo proattivo. Le transazioni sintetiche vengono utilizzate in Lync Server per verificare che gli utenti siano in grado di completare correttamente attività comuni, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o l'esecuzione di chiamate a un telefono che si trova nella rete PSTN (Public Switched Telephone Network). Ad esempio, l'esecuzione periodica di questi test può avvisare l'utente di eventuali problemi con gli utenti che accedono a Lync Server e fornire la possibilità di risolvere il problema prima che il team di supporto sia inondato da chiamate provenienti da utenti che non sono in grado di effettuare una connessione. Tramite System Center Operations Manager per eseguire queste transazioni sintetiche, gli amministratori possono monitorare periodicamente la distribuzione di Lync Server continuamente per 24 ore al giorno, senza dover rispondere a qualsiasi avviso che potrebbe essere rilasciato.
 
 <div>
 
 
 > [!NOTE]  
-> Per Lync Server 2013, il Management Pack di System Center Operations Manager è anche in grado di rilevare i problemi "esterni" che possono influire negativamente su Lync Server. Ad esempio, gli amministratori possono ricevere una notifica se Internet Information Services (IIS) non è in linea, le risorse di sistema in un computer Lync Server scendono al di sotto di un importo specificato o un computer Lync Server sperimenta un errore hardware.
+> Per Lync Server 2013, il Management Pack per System Center Operations Manager è anche in grado di rilevare problemi "esterni" che possono influire negativamente su Lync Server. Ad esempio, gli amministratori possono ricevere una notifica se Internet Information Services (IIS) non è in linea, le risorse di sistema in un computer Lync Server scendono al di sotto di un determinato importo oppure un computer con Lync Server subisce un errore hardware.
 
 
 
 </div>
 
-La configurazione dell'integrità in Lync Server 2013 è basata su System Center Operations Manager e sull'uso di Lync Server Management Pack. Questi Management Pack includono una serie di nuove funzionalità e miglioramenti, tra cui:
+La configurazione dell'integrità in Lync Server 2013 è basata su System Center Operations Manager e sull'utilizzo dei Management Pack di Lync Server. Tali Management Pack includono diverse nuove funzionalità e miglioramenti, tra cui:
 
-  - **Disponibilità dello scenario da qualsiasi posizione.** Il Management Pack di Lync Server 2010 ha introdotto il concetto di monitoraggio della disponibilità degli scenari per gli utenti finali con le transazioni sintetiche. In Lync Server 2013 questi agenti hanno più transazioni sintetiche e possono essere eseguiti da un'ampia gamma di posizioni all'interno dell'organizzazione, da postazioni geografiche remote all'esterno dell'organizzazione, dagli strumenti di filiale e da Lync Server 2010 distribuzioni per aggiungere una copertura alle distribuzioni di Edge legacy.
+  - **Disponibilità degli scenari da qualsiasi posizione.** Il Management Pack di Lync Server 2010 introduce il concetto di monitoraggio della disponibilità degli scenari degli utenti finali con transazioni sintetiche. In Lync Server 2013, questi agenti dispongono di transazioni più sintetiche e possono essere eseguiti da diverse posizioni all'interno dell'organizzazione, da posizioni geografiche remote all'esterno dell'organizzazione, contro gli strumenti di succursale e contro Lync Server 2010 distribuzioni per aggiungere una copertura alle distribuzioni di Edge legacy.
 
-  - **Registri delle transazioni sintetici.** Quando una transazione sintetica non riesce, gli amministratori hanno accesso ai log HTML per determinare il risultato non riuscito. Ciò include la comprensione dell'azione non riuscita, la latenza di ogni azione, la riga di comando usata per eseguire il test e l'errore che si è verificato.
+  - **Log delle transazioni sintetiche.** Quando una transazione sintetica ha esito negativo, gli amministratori hanno accesso a log HTML utili per determinare cosa sia accaduto. Tra le informazioni fornite vi sono l'azione non riuscita, la latenza di ogni azione, la riga di comando utilizzata per eseguire il test e l'errore verificatosi.
 
-  - **Maggiore copertura dell'affidabilità delle chiamate.** Il Management Pack di Lync Server 2010 ha introdotto l'avviso di affidabilità delle chiamate per rilevare gravi problemi di connettività che influiscono sulle chiamate audio degli utenti finali. I Management Pack di Lync Server 2013 aggiungono una copertura per la messaggistica istantanea peer-to-peer e altre funzionalità di conferenza di base per massimizzare la copertura riducendo il rumore.
+  - **Maggiore copertura per segnalare l'affidabilità delle chiamate.** Lync Server 2010 Management Pack ha introdotto l'avviso di affidabilità delle chiamate per rilevare gravi problemi di connettività che influiscono sulle chiamate audio degli utenti finali. I Management Pack di Lync Server 2013 aggiungono una copertura per la messaggistica istantanea peer-to-peer e altre funzionalità di base per le conferenze per massimizzare la copertura durante la riduzione del rumore.
 
-  - **Monitoraggio delle dipendenze.** Gli scenari di Lync Server possono avere esito negativo a causa di diversi fattori esterni, ad esempio IIS offline, limitate risorse di CPU e memoria e problemi relativi al disco. I nuovi Management Pack controllano diverse dipendenze critiche per assicurarsi che gli amministratori siano a conoscenza del loro impatto.
+  - **Monitoraggio delle dipendenze.** Gli scenari di Lync Server possono avere esito negativo a causa di una serie di fattori esterni, ad esempio IIS non in linea, limitate risorse di memoria e CPU e problemi relativi al disco. I nuovi Management Pack verificano diverse dipendenze critiche in modo che gli amministratori siano consapevoli del relativo impatto.
 
-  - **Report avanzato.** Un set di report per aiutare gli amministratori a valutare la disponibilità dello scenario, pianificare la capacità e vedere quali componenti stanno vivendo la maggior parte dei problemi.
+  - **Miglioramento dei report.** È disponibile una serie di report che consentono agli amministratori di stimare la disponibilità degli scenari, pianificare la capacità e controllare i componenti su cui si verifica la maggior parte dei problemi.
 
-I Management Pack includono anche varie funzionalità che consentono di rilevare e diagnosticare una visibilità in tempo reale nell'integrità della distribuzione di Lync Server. Queste caratteristiche sono elencate nella tabella seguente.
+I Management Pack includono anche una serie di funzionalità che consentono di rilevare e diagnosticare una visibilità in tempo reale nell'integrità della distribuzione di Lync Server. Queste funzionalità sono elencate nella tabella riportata di seguito.
 
-### <a name="management-pack-features"></a>Caratteristiche del Management Pack
+### <a name="management-pack-features"></a>Funzionalità dei Management Pack
 
 <table>
 <colgroup>
@@ -83,35 +83,35 @@ I Management Pack includono anche varie funzionalità che consentono di rilevare
 <tbody>
 <tr class="odd">
 <td><p>Transazioni sintetiche</p></td>
-<td><p>Cmdlet di Windows PowerShell che possono essere eseguiti da varie posizioni per garantire che gli scenari degli utenti finali, ad esempio accesso, presenza, messaggistica istantanea e conferenza siano prontamente disponibili per gli utenti finali.</p></td>
+<td><p>Cmdlet di Windows PowerShell che possono essere eseguiti da diverse posizioni per garantire che gli scenari degli utenti finali, ad esempio l'accesso, la presenza, la messaggistica istantanea e le conferenze, siano prontamente disponibili per gli utenti finali.</p></td>
 </tr>
 <tr class="even">
 <td><p>Avvisi di affidabilità delle chiamate</p></td>
-<td><p>Query di database per i record dei dettagli delle chiamate (CDR). Questi record vengono scritti dai server front-end per indicare se gli utenti finali sono stati in grado di connettersi a una chiamata o perché una chiamata è stata terminata. Queste query generano avvisi che indicano quando una vasta gamma di utenti finali sta vivendo problemi di connettività per le chiamate peer-to-peer o per le funzionalità di conferenza di base.</p></td>
+<td><p>Query di database per le registrazioni dettagli chiamata. Questi record vengono scritti dai Front End Server per riflettere se gli utenti finali sono stati in grado di connettersi a una chiamata o perché una chiamata è stata terminata. Queste query generano avvisi che segnalano quando un numero elevato di utenti finali ha problemi di connettività per chiamate peer-to-peer o funzionalità di conferenza di base.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Avvisi di qualità multimediale</p></td>
-<td><p>Query di database che esaminano i report di qualità dell'esperienza (QoE) pubblicati dai client alla fine di ogni chiamata. Queste query generano avvisi che individuano scenari in cui gli utenti possono provare una qualità media scadente durante le chiamate e le conferenze. I dati sono basati su metriche chiave, ad esempio la latenza e la perdita di pacchetti, le metriche note per contribuire direttamente alla qualità delle chiamate.</p></td>
+<td><p>Avvisi sulla qualità multimediale</p></td>
+<td><p>Query di database che esaminano i report sulla qualità percepita dagli utenti (QoE) pubblicati dai client alla fine di ogni chiamata. Queste query generano avvisi che segnalano gli scenari in cui è probabile che gli utenti percepiscano una scarsa qualità multimediale durante le chiamate e le conferenze. I dati si basano su metriche chiave, come la latenza e la perdita di pacchetti, che notoriamente contribuiscono in modo diretto alla qualità delle chiamate.</p></td>
 </tr>
 <tr class="even">
-<td><p>Integrità dei componenti</p></td>
-<td><p>I singoli componenti del server generano avvisi usando i registri eventi e i contatori delle prestazioni. Questi avvisi indicano le condizioni di errore che possono influire gravemente su uno o più scenari degli utenti finali. Questi avvisi possono anche indicare una varietà di altre condizioni di errore, inclusi i servizi non in uso, le alte frequenze di errore, la latenza elevata dei messaggi o i problemi di connettività.</p></td>
+<td><p>Stato dei componenti</p></td>
+<td><p>I singoli componenti server generano avvisi mediante log eventi e contatori delle prestazioni. Questi avvisi indicano le condizioni di errore che possono influire in modo significativo su uno o più scenari degli utenti finali. Questi avvisi inoltre indicano diverse altre condizioni di errore, tra cui i servizi non in esecuzione, alte percentuali di problemi, un'elevata latenza dei messaggi o i problemi di connettività.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Integrità delle dipendenze</p></td>
-<td><p>È possibile che si verifichino errori per diversi motivi esterni. I Management Pack ora controllano e raccolgono dati per alcune delle dipendenze esterne critiche che potrebbero indicare problemi gravi, tra cui disponibilità di IIS, utilizzo della CPU e della memoria di server e processi e metriche del disco.</p></td>
+<td><p>Stato delle dipendenze</p></td>
+<td><p>I problemi possono essere causati da una vasta gamma di motivi esterni. I Management Pack ora eseguono il monitoraggio e raccolgono dati per alcune delle dipendenze esterne più importanti che possono indicare seri problemi, inclusi la disponibilità di IIS, l'utilizzo di CPU e memoria dei server e dei processi e le metriche del disco.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Gli avvisi emessi dal sistema sono stati classificati in tre categorie generali:
+Gli avvisi generati dal sistema sono stati classificati in tre categorie generali:
 
-  - **Avvisi ad alta priorità.** Questi avvisi indicano le condizioni che causano interruzioni dei servizi per gruppi di utenti di grandi dimensioni. Ad esempio, un errore del componente in un singolo computer non è un avviso ad alta priorità, perché Lync Server 2013 include caratteristiche di disponibilità elevata predefinite. Al contrario, gli avvisi ad alta priorità rappresentano problemi abbastanza seri "per riattivare gli amministratori durante la notte". Le interruzioni rilevate dalle transazioni sintetiche e dai servizi offline, ad esempio le conferenze audio/video, si qualificano come avvisi ad alta priorità.
+  - **Avvisi di alta priorità.** Questi avvisi indicano le condizioni che causeranno interruzioni dei servizi per gruppi estesi di utenti. Ad esempio, un errore del componente su un singolo computer non è un avviso di priorità alta perché Lync Server 2013 dispone di funzionalità di disponibilità elevata incorporate. Gli avvisi di alta priorità rappresentano invece problemi sufficientemente gravi da richiedere l'attenzione degli amministratori anche in piena notte. I problemi rilevati dalle transazioni sintetiche e i servizi offline, ad esempio per conferenze audio/video, sono considerati avvisi di alta priorità.
 
-  - **Avvisi con priorità media.**. Questi avvisi indicano le condizioni che influiscono su un sottoinsieme di utenti o indicano la degradazione della qualità delle chiamate. Che include problemi come gli errori dei componenti, la latenza nello stabilimento di chiamata o la qualità audio degradata nella chiamata. Gli avvisi in questa categoria sono con stato e indicano lo stato corrente del problema. Supponiamo ad esempio che i tempi di creazione delle chiamate superino la soglia di avviso. Se le chiamate allo stabilimento per il ritorno alla normalità, questi avvisi verranno risolti automaticamente in System Center Operations Manager. L'aspettativa per questi avvisi è che un amministratore li guarderà nello stesso giorno lavorativo.
+  - **Avvisi di media priorità.** Questi avvisi indicano le condizioni che incidono su un sottoinsieme di utenti o segnalano un degrado della qualità delle chiamate. Sono inclusi problemi quali guasti dei componenti, latenza per stabilire una chiamata o un peggioramento della qualità audio durante una chiamata. Gli avvisi di questa categoria sono con stato e indicano lo stato corrente del problema. Si supponga ad esempio che i tempi per stabilire una chiamata superino la soglia di avviso. Se l'establishment di chiamata torna alla normalità, questi avvisi verranno risolti automaticamente in System Center Operations Manager. È prevedibile che un amministratore esamini tali avvisi nello stesso giorno lavorativo.
 
-  - **Altri avvisi.** Si tratta di avvisi provenienti da componenti che possono influire su un utente o un sottoinsieme specifico di utenti. Ad esempio, forse il servizio Rubrica non può analizzare l'immissione di Active Directory di un utente specifico. L'aspettativa per questi avvisi consiste nel fatto che gli amministratori possano accedervi quando hanno tempo disponibile.
+  - **Altri avvisi.** Sono avvisi di componenti che possono incidere su un utente o un sottoinsieme specifico di utenti. Ad esempio, il servizio Rubrica non riesce ad analizzare la voce di Active Directory di un determinato utente. È prevedibile che gli amministratori si occupino di tali avvisi quando hanno tempo a disposizione.
 
 <div>
 
@@ -119,9 +119,9 @@ Gli avvisi emessi dal sistema sono stati classificati in tre categorie generali:
 
   - [Configurazione di Lync Server 2013 per l'utilizzo con System Center Operations Manager](lync-server-2013-configuring-lync-server-to-work-with-system-center-operations-manager.md)
 
-  - [Uso della registrazione avanzata per le transazioni sintetiche in Lync Server 2013](lync-server-2013-using-rich-logging-for-synthetic-transactions.md)
+  - [Utilizzo della registrazione avanzata per le transazioni sintetiche in Lync Server 2013](lync-server-2013-using-rich-logging-for-synthetic-transactions.md)
 
-  - [Uso di Microsoft SQL Server 2008 R2 come database di Operations Manager di System Center per Lync Server 2013](lync-server-2013-using-microsoft-sql-server-2008-r2-as-your-system-center-operations-manager-database.md)
+  - [Utilizzo di Microsoft SQL Server 2008 R2 come database di System Center Operations Manager per Lync Server 2013](lync-server-2013-using-microsoft-sql-server-2008-r2-as-your-system-center-operations-manager-database.md)
 
 </div>
 

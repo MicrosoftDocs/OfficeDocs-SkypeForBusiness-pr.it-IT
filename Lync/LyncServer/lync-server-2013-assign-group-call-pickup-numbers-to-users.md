@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: assegnare numeri di raccolta chiamate di gruppo agli utenti'
+title: 'Lync Server 2013: assegnare i numeri di prelievo delle chiamate di gruppo agli utenti'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541508
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e65eef9fcf425ad8ea9f36dc57899bb6af924bf5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5a27746909a5a4baa5ea6c3c6d050393e66dab05
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41734056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030079"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="assign-group-call-pickup-numbers-to-users-in-lync-server-2013"></a>Assegnare numeri di raccolta chiamate di gruppo agli utenti in Lync Server 2013
+# <a name="assign-group-call-pickup-numbers-to-users-in-lync-server-2013"></a>Assegnare numeri di prelievo delle chiamate di gruppo agli utenti in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41734056"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-01-30_
+_**Ultimo argomento modificato:** 2013-01-30_
 
-Dopo aver aggiunto i numeri dei gruppi di prelievo delle chiamate di gruppo alla tabella Orbit di Call Park, è possibile assegnare i gruppi agli utenti. Usare lo strumento Resource Kit di attivazione delle funzionalità di estensione secondaria (SEFAUtil) per assegnare gruppi di prelievo delle chiamate agli utenti.
+Dopo aver aggiunto i numeri del gruppo di prelievo delle chiamate di gruppo alla tabella orbit del parcheggio di chiamata, è possibile assegnare i gruppi agli utenti. Utilizzare lo strumento Resource Kit di attivazione delle funzionalità di SEFAUtil (Secondary Extension feature Activation) per assegnare i gruppi di prelievo delle chiamate agli utenti.
 
 <div>
 
 
 > [!NOTE]  
-> In una distribuzione ibrida non assegnare un gruppo di raccolta chiamate di gruppo agli utenti ospitati online. Gli utenti ospitati online non possono partecipare al ritiro delle chiamate di gruppo. Ossia, non è possibile rispondere alle chiamate di altri utenti, e non possono ricevere risposte ad altri utenti.
+> In una distribuzione ibrida, non assegnare un gruppo di prelievo di chiamata di gruppo agli utenti ospitati online. Gli utenti ospitati online non possono partecipare al ritiro delle chiamate di gruppo. Vale a fare che le chiamate non possono rispondere ad altri utenti e che non rispondono alle chiamate ad altri utenti.
 
 
 
@@ -51,11 +51,11 @@ Dopo aver aggiunto i numeri dei gruppi di prelievo delle chiamate di gruppo alla
 
 <div>
 
-## <a name="to-assign-a-group-call-pickup-group-to-a-user"></a>Per assegnare un gruppo di raccolta chiamate di gruppo a un utente
+## <a name="to-assign-a-group-call-pickup-group-to-a-user"></a>Per assegnare un gruppo di prelievo di chiamata di gruppo a un utente
 
 1.  Accedere al computer in cui è stato installato lo strumento SEFAUtil con i diritti di amministratore.
 
-2.  Nella riga di comando eseguire:
+2.  Nella riga di comando digitare il comando seguente:
     
         SEFAUtil.exe sip:<sip address of user> /server:<pool FQDN> /enablegrouppickup:<group number>
     
@@ -70,8 +70,8 @@ Dopo aver aggiunto i numeri dei gruppi di prelievo delle chiamate di gruppo alla
 ## <a name="see-also"></a>Vedere anche
 
 
-[Abilitare il ritiro delle chiamate di gruppo per gli utenti in Lync Server 2013](lync-server-2013-enable-group-call-pickup-for-users.md)  
-[Disabilitare il ritiro delle chiamate di gruppo per gli utenti in Lync Server 2013](lync-server-2013-disable-group-call-pickup-for-users.md)  
+[Abilitare il prelievo delle chiamate di gruppo per gli utenti in Lync Server 2013](lync-server-2013-enable-group-call-pickup-for-users.md)  
+[Disabilitare il prelievo delle chiamate di gruppo per gli utenti in Lync Server 2013](lync-server-2013-disable-group-call-pickup-for-users.md)  
   
 
 </div>

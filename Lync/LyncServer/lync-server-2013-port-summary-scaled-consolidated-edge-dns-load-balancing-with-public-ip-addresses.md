@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Riepilogo delle porte - topologia perimetrale consolidata con scalabilità implementata, bilanciamento del carico DNS con indirizzi IP pubblici'
+title: 'Lync Server 2013: riepilogo delle porte-perimetro consolidato in scala, bilanciamento del carico DNS con indirizzi IP pubblici'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185865
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f67a12b05d8724d31f8ef83bfa4aa704b41cee13
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5f49a5f14d66e921dc84c42553d3af6a6dddf925
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747586"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034066"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="port-summary---scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses-in-lync-server-2013"></a>Riepilogo delle porte - topologia perimetrale consolidata con scalabilità implementata, bilanciamento del carico DNS con indirizzi IP pubblici in Lync Server 2013
+# <a name="port-summary---scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses-in-lync-server-2013"></a>Riepilogo delle porte-perimetro consolidato in scala, bilanciamento del carico DNS con indirizzi IP pubblici in Lync Server 2013
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41747586"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-04-03_
+_**Ultimo argomento modificato:** 2013-04-03_
 
-Le funzionalità di Lync Server 2013 e Edge Server descritte in questa architettura di scenario sono molto simili a quelle implementate in Lync Server 2010. L'aggiunta più evidente è la porta **5269 sulla voce TCP** per il protocollo XMPP (Extensible Messaging and Presence Protocol). Lync Server 2013 consente di distribuire facoltativamente un proxy XMPP nell'Edge Server o nel pool Edge e nel server gateway XMPP nel server front-end o nel pool Front-end.
+La funzionalità Lync Server 2013, Edge Server descritta in questa architettura dello scenario è molto simile a quella che è stata implementata in Lync Server 2010. L'aggiunta più evidente è la voce della porta **5269 su TCP** per il protocollo XMPP (Extensible Messaging and Presence Protocol). Lync Server 2013 consente di distribuire facoltativamente un proxy XMPP nel server perimetrale o nel pool perimetrale e nel server gateway XMPP nel server front-end o nel pool Front end.
 
-Oltre a IPv4, il server perimetrale supporta ora IPv6. Per chiarezza, solo IPv4 viene usato negli scenari.
+Oltre a IPv4, il server perimetrale supporta ora IPv6. Per maggiore chiarezza, solo IPv4 viene utilizzato in questi scenari.
 
-**Rete perimetrale aziendale per il bordo consolidato in scala, bilanciamento del carico DNS con indirizzi IP pubblici**
+**Rete perimetrale aziendale per Edge consolidato in scala, bilanciamento del carico DNS con indirizzi IP pubblici**
 
 ![96f5a8f5-16d2-464d-b86e-7c7ecfc89ead](images/JJ205394.96f5a8f5-16d2-464d-b86e-7c7ecfc89ead(OCS.15).jpg "96f5a8f5-16d2-464d-b86e-7c7ecfc89ead")
 
 <div>
 
-## <a name="port-and-protocol-details"></a>Dettagli sulla porta e sul protocollo
+## <a name="port-and-protocol-details"></a>Informazioni dettagliate sulle porte e sui protocolli
 
-È consigliabile aprire solo le porte necessarie per supportare la funzionalità per cui si fornisce l'accesso esterno.
+È consigliabile aprire solo le porte necessarie per supportare le funzionalità per cui si fornisce l'accesso esterno.
 
-Per l'accesso remoto al lavoro per qualsiasi servizio Edge, è obbligatorio che il traffico SIP sia consentito per il flusso bidirezionale, come illustrato nella figura del traffico Edge in ingresso/in uscita. In un altro modo, la messaggistica SIP da e verso il servizio Access Edge è coinvolta in messaggistica istantanea (IM), presenza, Web Conferencing, audio/video (A/V) e Federazione.
+Per il corretto funzionamento dell'accesso remoto per qualsiasi servizio perimetrale, è obbligatorio che sia consentito il flusso bidirezionale del traffico SIP, come illustrato nella figura Traffico perimetrale in ingresso/in uscita. In altre parole, la messaggistica SIP da e al servizio Access Edge è coinvolta nella messaggistica istantanea, nella presenza, nelle conferenze Web, nell'audio/video (A/V) e nella federazione.
 
-### <a name="firewall-summary-for-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses-external-interface--node-1-and-node-2-example"></a>Riepilogo del firewall per il bordo consolidato in scala, il bilanciamento del carico DNS con gli indirizzi IP pubblici: interfaccia esterna-node 1 e node 2 (esempio)
+### <a name="firewall-summary-for-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses-external-interface--node-1-and-node-2-example"></a>Riepilogo del firewall per il server perimetrale consolidato in scala, bilanciamento del carico DNS con indirizzi IP pubblici: interfaccia esterna – nodo 1 e nodo 2 (esempio)
 
 <table>
 <colgroup>
@@ -67,103 +67,104 @@ Per l'accesso remoto al lavoro per qualsiasi servizio Edge, è obbligatorio che 
 <th>Ruolo/protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Note</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>XMPP/TCP/5269</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Servizio proxy XMPP (condivide l'indirizzo IP con Access Edge service)</p></td>
-<td><p>Il servizio proxy XMPP accetta il traffico da contatti XMPP in federazioni XMPP definite</p></td>
+<td><p>Servizio proxy XMPP (condivide l'indirizzo IP con il servizio Access Edge)</p></td>
+<td><p>Il servizio proxy XMPP accetta il traffico dai contatti XMPP in federazioni XMPP definite</p></td>
 </tr>
 <tr class="even">
 <td><p>Access/HTTP/TCP/80</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge Server perimetrale</p></td>
+<td><p>Indirizzo IP pubblico del servizio Access Edge Server perimetrale</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Controllo e recupero di certificati revocati/CRL</p></td>
+<td><p>Revoca di certificati/controllo CRL e recupero</p></td>
 </tr>
 <tr class="odd">
-<td><p>Access/DNS/TCP/53</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge Server perimetrale</p></td>
+<td><p>Accesso/DNS/TCP/53</p></td>
+<td><p>Indirizzo IP pubblico del servizio Access Edge Server perimetrale</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Query DNS su TCP</p></td>
 </tr>
 <tr class="even">
-<td><p>Access/DNS/UDP/53</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge Server perimetrale</p></td>
+<td><p>Accesso/DNS/UDP/53</p></td>
+<td><p>Indirizzo IP pubblico del servizio Access Edge Server perimetrale</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Query DNS su UDP</p></td>
 </tr>
 <tr class="odd">
-<td><p>Access/SIP (TLS)/TCP/443</p></td>
+<td><p>Accesso/SIP (TLS)/TCP/443</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge Server perimetrale</p></td>
-<td><p>Traffico SIP da client a server per l'accesso degli utenti esterni</p></td>
+<td><p>Indirizzo IP pubblico del servizio Access Edge Server perimetrale</p></td>
+<td><p>Traffico SIP client-server per l'accesso degli utenti esterni</p></td>
 </tr>
 <tr class="even">
-<td><p>Access/SIP (MTLS)/TCP/5061</p></td>
+<td><p>Accesso/SIP (MTLS)/TCP/5061</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge Server perimetrale</p></td>
-<td><p>Per la connettività di messaggistica istantanea federata e pubblica con SIP</p></td>
+<td><p>Indirizzo IP pubblico del servizio Access Edge Server perimetrale</p></td>
+<td><p>Per connettività di messaggistica istantanea pubblica e federata con SIP
+</p></td>
 </tr>
 <tr class="odd">
-<td><p>Access/SIP (MTLS)/TCP/5061</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge Server perimetrale</p></td>
+<td><p>Accesso/SIP (MTLS)/TCP/5061</p></td>
+<td><p>Indirizzo IP pubblico del servizio Access Edge Server perimetrale</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Per la connettività di messaggistica istantanea federata e pubblica con SIP</p></td>
+<td><p>Per connettività di messaggistica istantanea pubblica e federata con SIP</p></td>
 </tr>
 <tr class="even">
-<td><p>Web Conferencing/PSOM (TLS) TCP/443</p></td>
+<td><p>Web Conferencing/PSOM(TLS)TCP/443</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Indirizzo IP pubblico di Edge Server Web Conferencing Edge</p></td>
-<td><p>Supporto per Web Conferencing</p></td>
-</tr>
-<tr class="odd">
-<td><p>A/V/RTP/TCP/50000-59.999</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge A/V Edge Server</p></td>
-<td><p>Qualsiasi</p></td>
-<td><p>Obbligatorio per la Federazione con partner che gestiscono Office Communications Server 2007, Office Communications Server 2007 R2, Lync Server 2010 e Lync Server 2013.</p></td>
-</tr>
-<tr class="even">
-<td><p>A/V/RTP/UDP/50000-59.999</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge A/V Edge Server</p></td>
-<td><p>Qualsiasi</p></td>
-<td><p>Obbligatorio solo per la Federazione con partner che gestiscono Office Communications Server 2007.</p></td>
+<td><p>Indirizzo IP pubblico del servizio Web Conferencing Edge Server perimetrale</p></td>
+<td><p>File multimediali Web Conferencing</p></td>
 </tr>
 <tr class="odd">
 <td><p>A/V/RTP/TCP/50000-59.999</p></td>
+<td><p>Indirizzo IP pubblico del servizio A/V Edge Server perimetrale</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge A/V Edge Server</p></td>
-<td><p>Obbligatorio solo per la Federazione con partner che gestiscono Office Communications Server 2007</p></td>
+<td><p>Necessario per la Federazione con partner che eseguono Office Communications Server 2007, Office Communications Server 2007 R2, Lync Server 2010 e Lync Server 2013.</p></td>
+</tr>
+<tr class="even">
+<td><p>A/V/RTP/UDP/50000-59.999</p></td>
+<td><p>Indirizzo IP pubblico del servizio A/V Edge Server perimetrale</p></td>
+<td><p>Qualsiasi</p></td>
+<td><p>Obbligatorio solo per la Federazione con partner che eseguono Office Communications Server 2007.</p></td>
+</tr>
+<tr class="odd">
+<td><p>A/V/RTP/TCP/50000-59.999</p></td>
+<td><p>Qualsiasi</p></td>
+<td><p>Indirizzo IP pubblico del servizio A/V Edge Server perimetrale</p></td>
+<td><p>Obbligatorio solo per la Federazione con partner che eseguono Office Communications Server 2007</p></td>
 </tr>
 <tr class="even">
 <td><p>A/V/RTP/UDP/50000-59.999</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge A/V Edge Server</p></td>
-<td><p>Obbligatorio solo per la Federazione con partner che gestiscono Office Communications Server 2007</p></td>
+<td><p>Indirizzo IP pubblico del servizio A/V Edge Server perimetrale</p></td>
+<td><p>Obbligatorio solo per la Federazione con partner che eseguono Office Communications Server 2007</p></td>
 </tr>
 <tr class="odd">
 <td><p>A/V/STUN, MSTURN/UDP/3478</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge A/V Edge Server</p></td>
+<td><p>Indirizzo IP pubblico del servizio A/V Edge Server perimetrale</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>3478 in uscita viene usato per determinare la versione di Edge Server in cui Lync Server sta comunicando e anche per il traffico multimediale da Edge Server-to-Edge Server. Obbligatorio per la Federazione con Lync Server 2010, Windows Live Messenger e Office Communications Server 2007 R2 e anche se sono distribuiti più pool di Edge all'interno di una società.</p></td>
+<td><p>3478 in uscita viene utilizzato per determinare la versione del server perimetrale in cui è in comunicazione Lync Server e anche per il traffico multimediale proveniente dal server Edge Server-Edge. Obbligatorio per la Federazione con Lync Server 2010, Windows Live Messenger e Office Communications Server 2007 R2, nonché se più pool di server perimetrali sono distribuiti all'interno di una società.</p></td>
 </tr>
 <tr class="even">
 <td><p>A/V/STUN, MSTURN/UDP/3478</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge A/V Edge Server</p></td>
+<td><p>Indirizzo IP pubblico del servizio A/V Edge Server perimetrale</p></td>
 <td><p>Negoziazione STUN/TURN dei candidati su UDP/3478</p></td>
 </tr>
 <tr class="odd">
 <td><p>A/V/STUN, MSTURN/TCP/443</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge A/V Edge Server</p></td>
+<td><p>Indirizzo IP pubblico del servizio A/V Edge Server perimetrale</p></td>
 <td><p>Negoziazione STUN/TURN dei candidati su TCP/443</p></td>
 </tr>
 <tr class="even">
 <td><p>A/V/STUN, MSTURN/TCP/443</p></td>
-<td><p>Edge Server A/V Edge service</p></td>
+<td><p>Servizio A/V Edge Server perimetrale</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Negoziazione STUN/TURN dei candidati su TCP/443</p></td>
 </tr>
@@ -171,7 +172,7 @@ Per l'accesso remoto al lavoro per qualsiasi servizio Edge, è obbligatorio che 
 </table>
 
 
-### <a name="firewall-summary-for-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses-internal-interface--node-1-and-node-2-example"></a>Riepilogo del firewall per il bordo consolidato in scala, il bilanciamento del carico DNS con gli indirizzi IP pubblici: interfaccia interna-nodo 1 e nodo 2 (esempio)
+### <a name="firewall-summary-for-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses-internal-interface--node-1-and-node-2-example"></a>Riepilogo firewall per topologia perimetrale consolidata con scalabilità implementata, bilanciamento del carico DNS con indirizzi IP pubblici: interfaccia interna – nodo 1 e nodo 2 (esempio)
 
 <table>
 <colgroup>
@@ -191,69 +192,69 @@ Per l'accesso remoto al lavoro per qualsiasi servizio Edge, è obbligatorio che 
 <tbody>
 <tr class="odd">
 <td><p>XMPP/MTLS/TCP/23456</p></td>
-<td><p>Any (può essere definito come indirizzo del server front-end o indirizzo IP del pool Front-end che gestisce il servizio gateway XMPP)</p></td>
+<td><p>Qualsiasi (può essere definito come indirizzo front end server o indirizzo IP del pool Front end che esegue il servizio gateway XMPP)</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Traffico XMPP in uscita dal servizio gateway XMPP in uso sul server front-end o sul pool Front-End</p></td>
+<td><p>Traffico XMPP in uscita dal servizio gateway XMPP in esecuzione nel front end server o nel pool Front End</p></td>
 </tr>
 <tr class="even">
 <td><p>SIP/MTLS/TCP/5061</p></td>
-<td><p>Any (può essere definito come Director, indirizzo IP del pool di Director, indirizzo IP del server front-end o pool di front-end)</p></td>
+<td><p>Qualsiasi (può essere definito come amministratore, indirizzo IP del pool di server Director, indirizzo IP del pool Front end o front end)</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Traffico SIP in uscita (da Director, indirizzo IP del pool di Director, indirizzo IP del server front-end o pool di front-end) all'interfaccia interna del server Edge</p></td>
+<td><p>Traffico SIP in uscita (da Director, indirizzo IP del pool Director, Front End Server o indirizzo IP del pool Front End) all'interfaccia interna del server perimetrale</p></td>
 </tr>
 <tr class="odd">
 <td><p>SIP/MTLS/TCP/5061</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Any (può essere definito come Director, indirizzo IP del pool di Director, indirizzo IP del server front-end o pool di front-end)</p></td>
-<td><p>Traffico SIP in ingresso (per Director, indirizzo IP del pool di Director, indirizzo IP del server front-end o di front end) dall'interfaccia interna di Edge Server</p></td>
+<td><p>Qualsiasi (può essere definito come amministratore, indirizzo IP del pool di server Director, indirizzo IP del pool Front end o front end)</p></td>
+<td><p>Traffico SIP in ingresso (per il server Director, l'indirizzo IP del pool di Director, l'indirizzo IP del pool Front end o il front end) dall'interfaccia interna del server perimetrale</p></td>
 </tr>
 <tr class="even">
 <td><p>PSOM/MTLS/TCP/8057</p></td>
-<td><p>Any (può essere definito come indirizzo IP del server front-end o ogni indirizzo IP del server front-end in un pool Front-End)</p></td>
+<td><p>Qualsiasi (può essere definito come indirizzo IP front end server o ogni indirizzo IP di front end server in un pool Front End)</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Traffico di Web Conferencing dal server front-end o da ogni server front-end se in un pool, all'interfaccia interna di Edge Server</p></td>
+<td><p>Traffico Web Conferencing da front end server o ogni Front End Server se in un pool, per l'interfaccia interna del server perimetrale</p></td>
 </tr>
 <tr class="odd">
 <td><p>SIP/MTLS/TCP/5062</p></td>
-<td><p>Any (può essere definito come indirizzo IP del server front-end o indirizzo IP del pool Front-end o un Survivable Branch Appliance o Survivable Branch Server con questo Edge Server)</p></td>
+<td><p>Qualsiasi (può essere definito come indirizzo IP front end server o indirizzo IP del pool Front end o un Survivable Branch Appliance o Survivable Branch Server con questo server perimetrale)</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Autenticazione degli utenti A/V (servizio di autenticazione A/V) dall'indirizzo IP del server front-end o del pool Front-end o da qualsiasi Appliance Survivable Branch o Survivable Branch Server con questo Edge Server</p></td>
+<td><p>Autenticazione degli utenti A/V (servizio di autenticazione A/V) dall'indirizzo IP di front end server o del pool Front end o da un Survivable Branch Appliance o Survivable Branch Server che utilizza questo server perimetrale</p></td>
 </tr>
 <tr class="even">
 <td><p>STUN/MSTURN/UDP/3478</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Percorso preferito per il trasferimento multimediale A/V tra utenti interni ed esterni, Survivable Branch Appliance o Survivable Branch Server</p></td>
+<td><p>Percorso preferito per il trasferimento multimediale A/V tra gli utenti interni ed esterni, Survivable Branch Appliance o Survivable Branch Server</p></td>
 </tr>
 <tr class="odd">
 <td><p>STUN/MSTURN/TCP/443</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Percorso di fallback per il trasferimento multimediale A/V tra utenti interni ed esterni, Survivable Branch Appliance o Survivable Branch Server se non è possibile stabilire la comunicazione UDP, TCP viene usato per il trasferimento di file e la condivisione desktop</p></td>
+<td><p>Percorso di fallback per il trasferimento multimediale A/V tra gli utenti interni ed esterni, Survivable Branch Appliance o Survivable Branch Server se non è possibile stabilire la comunicazione UDP, viene utilizzato TCP per il trasferimento di file e la condivisione del desktop</p></td>
 </tr>
 <tr class="even">
 <td><p>HTTPS/TCP/4443</p></td>
-<td><p>Any (può essere definito come indirizzo IP del server front-end o pool che contiene l'Central Management store)</p></td>
+<td><p>Qualsiasi (può essere definito come l'indirizzo IP del server front end o il pool che contiene l'archivio di gestione centrale)</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Replica delle modifiche da Central Management store a Edge Server</p></td>
+<td><p>Replica delle modifiche dall'archivio di gestione centrale al server perimetrale</p></td>
 </tr>
 <tr class="odd">
 <td><p>MTLS/TCP/50001</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Controller di servizio di registrazione centralizzato con Lync Server Management Shell e cmdlet del servizio di registrazione centralizzato, comandi della riga di comando di ClsController (ClsController. exe) o Agent (ClsAgent. exe) e raccolta log</p></td>
+<td><p>Controller del servizio di registrazione centralizzato utilizzando i cmdlet di Lync Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando di ClsController (ClsController. exe) o dell'agente (ClsAgent. exe) e la raccolta di registri</p></td>
 </tr>
 <tr class="even">
 <td><p>MTLS/TCP/50002</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Controller di servizio di registrazione centralizzato con Lync Server Management Shell e cmdlet del servizio di registrazione centralizzato, comandi della riga di comando di ClsController (ClsController. exe) o Agent (ClsAgent. exe) e raccolta log</p></td>
+<td><p>Controller del servizio di registrazione centralizzato utilizzando i cmdlet di Lync Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando di ClsController (ClsController. exe) o dell'agente (ClsAgent. exe) e la raccolta di registri</p></td>
 </tr>
 <tr class="odd">
 <td><p>MTLS/TCP/50003</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Interfaccia interna del server perimetrale</p></td>
-<td><p>Controller di servizio di registrazione centralizzato con Lync Server Management Shell e cmdlet del servizio di registrazione centralizzato, comandi della riga di comando di ClsController (ClsController. exe) o Agent (ClsAgent. exe) e raccolta log</p></td>
+<td><p>Controller del servizio di registrazione centralizzato utilizzando i cmdlet di Lync Server Management Shell e del servizio di registrazione centralizzata, i comandi della riga di comando di ClsController (ClsController. exe) o dell'agente (ClsAgent. exe) e la raccolta di registri</p></td>
 </tr>
 </tbody>
 </table>
@@ -263,7 +264,7 @@ Per l'accesso remoto al lavoro per qualsiasi servizio Edge, è obbligatorio che 
 
 <div>
 
-## <a name="firewall-summary-for-federation"></a>Riepilogo del firewall per la Federazione
+## <a name="firewall-summary-for-federation"></a>Riepilogo firewall per la federazione
 
 
 <table>
@@ -278,15 +279,15 @@ Per l'accesso remoto al lavoro per qualsiasi servizio Edge, è obbligatorio che 
 <th>Ruolo/protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Note</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Access/SIP (MTLS)/TCP/5061</p></td>
-<td><p>Indirizzo IP pubblico del servizio Edge di Access</p></td>
+<td><p>Accesso/SIP (MTLS)/TCP/5061</p></td>
+<td><p>Indirizzo IP pubblico del servizio Access Edge</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Per la connettività di messaggistica istantanea federata e pubblica con SIP</p></td>
+<td><p>Per connettività per messaggistica istantanea pubblica e federata tramite SIP</p></td>
 </tr>
 </tbody>
 </table>
@@ -296,7 +297,7 @@ Per l'accesso remoto al lavoro per qualsiasi servizio Edge, è obbligatorio che 
 
 <div>
 
-## <a name="firewall-summary--public-instant-messaging-connectivity"></a>Riepilogo firewall-connettività di messaggistica istantanea pubblica
+## <a name="firewall-summary--public-instant-messaging-connectivity"></a>Riepilogo firewall - connettività per messaggistica istantanea pubblica
 
 
 <table>
@@ -308,48 +309,49 @@ Per l'accesso remoto al lavoro per qualsiasi servizio Edge, è obbligatorio che 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Ruolo/protocollo/TCP o UDP/porta</th>
+<th>Ruolo/Protocollo/TCP o UDP/Porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Note</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Access/SIP (MTLS)/TCP/5061</p></td>
-<td><p>Partner di connettività per messaggistica istantanea pubblica</p></td>
-<td><p>Edge Server Access Edge service</p></td>
-<td><p>Per la connettività di messaggistica istantanea federata e pubblica con SIP</p></td>
+<td><p>Accesso/SIP (MTLS)/TCP/5061</p></td>
+<td><p>Partner per la connettività per messaggistica istantanea pubblica</p></td>
+<td><p>Servizio Access Edge Server perimetrale</p></td>
+<td><p>Per connettività di messaggistica istantanea pubblica e federata con SIP
+</p></td>
 </tr>
 <tr class="even">
-<td><p>Access/SIP (MTLS)/TCP/5061</p></td>
-<td><p>Edge Server Access Edge service</p></td>
-<td><p>Partner di connettività per messaggistica istantanea pubblica</p></td>
-<td><p>Per la connettività di messaggistica istantanea federata e pubblica con SIP</p></td>
+<td><p>Accesso/SIP (MTLS)/TCP/5061</p></td>
+<td><p>Servizio Access Edge Server perimetrale</p></td>
+<td><p>Partner per la connettività per messaggistica istantanea pubblica</p></td>
+<td><p>Per connettività di messaggistica istantanea pubblica e federata con SIP</p></td>
 </tr>
 <tr class="odd">
-<td><p>Access/SIP (TLS)/TCP/443</p></td>
+<td><p>Accesso/SIP (TLS)/TCP/443</p></td>
 <td><p>Client</p></td>
-<td><p>Edge Server Access Edge service</p></td>
-<td><p>Traffico SIP da client a server per l'accesso degli utenti esterni</p></td>
+<td><p>Servizio Access Edge Server perimetrale</p></td>
+<td><p>Traffico SIP client-server per l'accesso utente esterno</p></td>
 </tr>
 <tr class="even">
 <td><p>A/V/RTP/TCP/50000-59.999</p></td>
-<td><p>Edge Server A/V Edge service</p></td>
-<td><p>Client di Messenger Live</p></td>
-<td><p>Usato per sessioni A/V con Windows Live Messenger se è configurata la connettività di messaggistica istantanea pubblica.</p></td>
+<td><p>Servizio A/V Edge Server perimetrale</p></td>
+<td><p>Client Live Messenger</p></td>
+<td><p>Utilizzato per le sessioni A/V con Windows Live Messenger se è configurata la connettività per messaggistica istantanea pubblica.</p></td>
 </tr>
 <tr class="odd">
 <td><p>A/V/STUN, MSTURN/UDP/3478</p></td>
-<td><p>Edge Server A/V Edge service</p></td>
-<td><p>Client di Messenger Live</p></td>
-<td><p>Obbligatorio per la connettività di messaggistica istantanea pubblica con Windows Live Messenger</p></td>
+<td><p>Servizio A/V Edge Server perimetrale</p></td>
+<td><p>Client Live Messenger</p></td>
+<td><p>Obbligatorio per la connettività per messaggistica istantanea pubblica con Windows Live Messenger</p></td>
 </tr>
 <tr class="even">
 <td><p>A/V/STUN, MSTURN/UDP/3478</p></td>
-<td><p>Client di Messenger Live</p></td>
-<td><p>Edge Server A/V Edge service</p></td>
-<td><p>Obbligatorio per la connettività di messaggistica istantanea pubblica con Windows Live Messenger</p></td>
+<td><p>Client Live Messenger</p></td>
+<td><p>Servizio A/V Edge Server perimetrale</p></td>
+<td><p>Obbligatorio per la connettività per messaggistica istantanea pubblica con Windows Live Messenger</p></td>
 </tr>
 </tbody>
 </table>
@@ -359,7 +361,7 @@ Per l'accesso remoto al lavoro per qualsiasi servizio Edge, è obbligatorio che 
 
 <div>
 
-## <a name="firewall-summary-for-extensible-messaging-and-presence-protocol"></a>Riepilogo del firewall per il protocollo di messaggistica e presenza estensibile
+## <a name="firewall-summary-for-extensible-messaging-and-presence-protocol"></a>Riepilogo firewall per XMPP (Extensible Messaging and Presence Protocol)
 
 
 <table>
@@ -381,20 +383,20 @@ Per l'accesso remoto al lavoro per qualsiasi servizio Edge, è obbligatorio che 
 <tr class="odd">
 <td><p>XMPP/TCP/5269</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Indirizzo IP dell'interfaccia del servizio Edge Server Edge</p></td>
-<td><p>Porta di comunicazione standard da server a server per XMPP. Consente la comunicazione al proxy XMPP di Edge Server da partner XMPP federati</p></td>
+<td><p>Indirizzo IP dell'interfaccia del servizio Access Edge Server perimetrale</p></td>
+<td><p>Porta di comunicazione standard da server a server per XMPP. Consente la comunicazione con il proxy XMPP del server perimetrale da partner federati XMPP</p></td>
 </tr>
 <tr class="even">
 <td><p>XMPP/TCP/5269</p></td>
-<td><p>Indirizzo IP dell'interfaccia del servizio Edge Server Edge</p></td>
+<td><p>Indirizzo IP dell'interfaccia del servizio Access Edge Server perimetrale</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Porta di comunicazione standard da server a server per XMPP. Consente la comunicazione dal proxy XMPP di Edge Server ai partner XMPP federati</p></td>
+<td><p>Porta di comunicazione standard da server a server per XMPP. Consente la comunicazione dal proxy XMPP del server perimetrale ai partner XMPP federati</p></td>
 </tr>
 <tr class="odd">
 <td><p>XMPP/MTLS/TCP/23456</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Ogni IP dell'interfaccia del server perimetrale interno</p></td>
-<td><p>Traffico XMPP interno dal gateway XMPP nel server front-end o nel pool Front end all'indirizzo IP interno del server perimetrale o all'indirizzo IP interno di ogni membro del pool di Edge</p></td>
+<td><p>Traffico XMPP interno dal gateway XMPP nel front end server o nel pool Front end all'indirizzo IP interno del server perimetrale o all'indirizzo IP interno di ogni membro del pool perimetrale</p></td>
 </tr>
 </tbody>
 </table>

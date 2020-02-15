@@ -1,5 +1,5 @@
 ---
-title: Trasferire oggetti contatto di messaggistica unificata di Exchange
+title: Spostare gli oggetti contatto della messaggistica unificata di Exchange
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733612
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d79354522675daaf221052579b0863899d1176ee
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6c02e391fa66084a27e3790ccaf42753bcaeaa16
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756040"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034416"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="move-exchange-unified-messaging-contact-objects"></a>Trasferire oggetti contatto di messaggistica unificata di Exchange
+# <a name="move-exchange-unified-messaging-contact-objects"></a>Spostare gli oggetti contatto della messaggistica unificata di Exchange
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41756040"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-19_
+_**Ultimo argomento modificato:** 2012-10-19_
 
-Per eseguire la migrazione degli oggetti di contatto AutoAttendant (AA) e di accesso sottoscrittore (SA) alla nuova distribuzione di Lync Server 2013, prima di tutto spostare gli oggetti dalla distribuzione legacy di Office Communications Server 2007 R2 alla nuova distribuzione di Lync Server 2013 usando i cmdlet **Get-CsExUmContact** e **Move-CsExUmContact** . Sul server Exchange viene quindi eseguito lo script di Windows PowerShell di **ExchUCUtil** per eseguire le operazioni seguenti per il pool di Lync appena distribuito:
+Per eseguire la migrazione degli oggetti contatto dell'operatore automatico (AA) e dell'accesso sottoscrittore (SA) alla nuova distribuzione di Lync Server 2013, è necessario prima di tutto spostare gli oggetti dalla distribuzione di Office Communications Server 2007 R2 legacy alla nuova distribuzione di Lync Server 2013 utilizzando i cmdlet **Get-CsExUmContact** e **Move-CsExUmContact** . Sul server Exchange, eseguire lo script di Windows PowerShell di **ExchUCUtil** per effettuare le seguenti operazioni per il pool Lync appena distribuito:
 
   - Aggiungerlo ai gateway IP di messaggistica unificata.
 
-  - Aggiungerlo ai gruppi di caccia alla messaggistica unificata.
+  - Aggiungerlo ai gruppi di risposta di messaggistica unificata.
 
 <div>
 
 
 > [!NOTE]  
-> Per usare i cmdlet <STRONG>Get-CsExUmContact</STRONG> e <STRONG>Move-CsExUmContact</STRONG> , è necessario essere un membro del gruppo RTCUniversalUserAdmins e disporre dell'autorizzazione unità organizzativa (OU) per l'unità organizzativa in cui sono archiviati gli oggetti contatti. L'autorizzazione dell'unità organizzativa può essere concessa usando il cmdlet <STRONG>Grant-OUPermission</STRONG> .
+> Per poter utilizzare i cmdlet <STRONG>Get-CsExUmContact</STRONG> e <STRONG>Move-CsExUmContact</STRONG>, è necessario essere membri del gruppo RTCUniversalUserAdmins e disporre dell'autorizzazione per l'unità organizzativa (OU) in cui sono archiviati gli oggetti contatto. Tale autorizzazione può essere concessa eseguendo il cmdlet <STRONG>Grant-OUPermission</STRONG>.
 
 
 
@@ -55,45 +55,45 @@ Per eseguire la migrazione degli oggetti di contatto AutoAttendant (AA) e di acc
 
 <div>
 
-## <a name="to-move-contact-objects-by-using-the-lync-server-management-shell"></a>Per trasferire oggetti contatto tramite Lync Server Management Shell
+## <a name="to-move-contact-objects-by-using-the-lync-server-management-shell"></a>Per spostare gli oggetti contatto utilizzando Lync Server Management Shell
 
 1.  Aprire Lync Server Management Shell.
 
-2.  Per ogni pool registrato con la messaggistica unificata di Exchange (dove pool1.contoso.net è un pool della distribuzione di Office Communications Server 2007 R2 e pool2.contoso.net è il pool della distribuzione di Lync Server 2013) nella riga di comando, digitare quanto segue:
+2.  Per ogni pool registrato con messaggistica unificata di Exchange (dove pool1.contoso.net è un pool della distribuzione di Office Communications Server 2007 R2 e pool2.contoso.net è il pool della distribuzione di Lync Server 2013) dalla riga di comando digitare quanto segue:
     
         Get-CsExUmContact -Filter {RegistrarPool -eq "pool01.contoso.net"} | Move-CsExUmContact -Target pool02.contoso.net
     
-    Per verificare che gli oggetti contatto vengano spostati, eseguire il cmdlet **Get-CsExUmContact** e verificare che **RegistrarPool** ora faccia riferimento al nuovo pool.
+    Per accertarsi che gli oggetti contatto siano stati spostati, eseguire il cmdlet **Get-CsExumContact** e verificare che **RegistrarPool** ora punti al nuovo pool.
 
 </div>
 
 <div>
 
-## <a name="to-run-the-exchucutil-windows-powershell-script"></a>Per eseguire lo script di Windows PowerShell di ExchUCUtil
+## <a name="to-run-the-exchucutil-windows-powershell-script"></a>Per eseguire lo script ExchUCUtil di Windows PowerShell
 
-1.  Accedere al server Messaggistica unificata di Exchange come utente con privilegi di amministratore dell'organizzazione di Exchange.
+1.  Accedere al server di messaggistica unificata di Exchange come utente con privilegi di amministratore dell'organizzazione di Exchange.
 
 2.  Passare allo script di Windows PowerShell di ExchUCUtil.
     
     In Exchange 2007, ExchUCUtil. ps1 si trova in: **% Program Files%\\Microsoft\\Exchange Server\\Scripts\\exchucutil. ps1**
     
-    In Exchange 2010, ExchUCUtil. ps1 si trova in: **% Program Files%\\Microsoft\\Exchange Server\\V14\\script\\exchucutil. ps1**
+    In Exchange 2010, ExchUCUtil. ps1 si trova in: **% Program Files%\\Microsoft\\Exchange Server\\V14\\Scripts\\exchucutil. ps1**
 
-3.  Se Exchange viene distribuito in una singola foresta, digitare:
+3.  Se Exchange è distribuito in una singola foresta, digitare quanto indicato di seguito:
     
         exchucutil.ps1
     
-    In alternativa, se Exchange è distribuito in più foreste, digitare:
+    In alternativa, se Exchange è distribuito in più foreste, digitare quanto indicato di seguito:
     
         exchucutil.ps1 -Forest:" <forest FQDN>"
     
-    dove FQDN foresta specifica la foresta in cui è distribuito Lync Server 2013.
+    dove la foresta FQDN Specifica la foresta in cui è distribuito Lync Server 2013.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > Assicurarsi di riavviare il servizio <STRONG>front-end di Lync Server</STRONG> (RtcSrv. exe) <EM>dopo</EM> l'esecuzione di exchucutil. ps1. In caso contrario, Lync Server 2013 non rileverà la messaggistica unificata nella topologia.
+    > Riavviare il servizio <STRONG>Lync Server Front End</STRONG> (rtcsrv.exe) <EM>dopo</EM> aver eseguito exchucutil.ps1. In caso contrario, Lync Server 2013 non rileva la messaggistica unificata nella topologia.
 
     
     </div>

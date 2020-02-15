@@ -12,16 +12,16 @@ ms:contentKeyID: 51803952
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9d6bf9f79725f1f4812ac1e1c1c3c0e3217b939b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 76105b9bee5ce35801196b5a4cd20b2a1feed3e7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728936"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030630"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41728936"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-03-12_
+_**Ultimo argomento modificato:** 2013-03-12_
 
-Per distribuire Enterprise Voice, è necessario configurare le operazioni seguenti:
+Per distribuire VoIP aziendale, è necessario configurare quanto segue:
 
   - Creare un trunk
 
@@ -51,9 +51,9 @@ Per distribuire Enterprise Voice, è necessario configurare le operazioni seguen
 
 ## <a name="create-a-trunk"></a>Creare un trunk
 
-È necessario definire Trunks nella distribuzione di VoIP aziendale. Per il routing basato sulla posizione, devi creare una configurazione trunk per tronco. Usare il generatore di topologia di Lync Server per definire i trunk e usare il comando Lync Server di Windows PowerShell, New-CsTrunkConfiguration o il pannello di controllo di Lync Server per definire le configurazioni trunk corrispondenti. Altre informazioni su come abilitare il routing basato sulla posizione sulle configurazioni trunk sono disponibili nella sezione abilitare il routing basato sulla posizione ai trunk, nell'argomento abilitare il [routing basato sulla posizione in Lync Server 2013](lync-server-2013-enabling-location-based-routing.md). Per questo esempio, la tabella seguente illustra i trunk usati in questo scenario.
+È necessario definire trunk nella distribuzione di VoIP aziendale. Per il routing in base alla posizione, è necessario creare una configurazione trunk per trunk. Utilizzare il generatore di topologie di Lync Server per definire i trunk e utilizzare il comando di Windows PowerShell di Lync Server, New-CsTrunkConfiguration o il pannello di controllo di Lync Server per definire le configurazioni trunk corrispondenti. Ulteriori informazioni su come abilitare il routing basato sulla posizione sulle configurazioni trunk sono disponibili nella sezione abilitare il routing in base alla posizione ai trunk, nell'argomento, per abilitare il [routing in base alla posizione in Lync Server 2013](lync-server-2013-enabling-location-based-routing.md). In questo esempio, nella tabella seguente vengono illustrati i trunk utilizzati in questo scenario.
 
-Per altre informazioni, vedere [definire trunk aggiuntivi in Generatore di topologia in Lync Server 2013](lync-server-2013-define-additional-trunks-in-topology-builder.md).
+Per ulteriori informazioni, vedere [definire ulteriori trunk in Generatore di topologie in Lync Server 2013](lync-server-2013-define-additional-trunks-in-topology-builder.md).
 
 
 <table>
@@ -117,9 +117,9 @@ Per altre informazioni, vedere [definire trunk aggiuntivi in Generatore di topol
 
 ## <a name="defines-voice-policies"></a>Definisce i criteri vocali
 
-È necessario definire i criteri vocali per la distribuzione vocale aziendale. Definire un criterio vocale per applicare restrizioni di routing basate sul percorso a un sottoinsieme di utenti, se è necessario solo un sottoinsieme per l'uso del routing basato sulla posizione. Per questo esempio, la tabella seguente illustra i criteri vocali usati in questo scenario. Nella tabella sono incluse solo le impostazioni specifiche del routing basato sulla posizione.
+È necessario definire i criteri vocali per la distribuzione di VoIP aziendale. Definire un criterio vocale per applicare restrizioni di routing basate sul percorso a un sottoinsieme di utenti se solo un sottoinsieme di essi è necessario per l'utilizzo del routing in base alla posizione. In questo esempio, nella tabella seguente sono illustrati i criteri vocali utilizzati in questo scenario. Solo le impostazioni specifiche del routing in base alla posizione sono incluse nella tabella a scopo illustrativo.
 
-Per altre informazioni, vedere [configurazione di criteri vocali e record di utilizzo PSTN per autorizzare le funzionalità e i privilegi di chiamata in Lync Server 2013](lync-server-2013-configuring-voice-policies-and-pstn-usage-records-to-authorize-calling-features-and-privileges.md).
+Per ulteriori informazioni, vedere [configurazione di criteri vocali e record utilizzo PSTN per autorizzare le funzionalità e i privilegi di chiamata in Lync Server 2013](lync-server-2013-configuring-voice-policies-and-pstn-usage-records-to-authorize-calling-features-and-privileges.md).
 
 
 <table>
@@ -138,13 +138,13 @@ Per altre informazioni, vedere [configurazione di criteri vocali e record di uti
 <tbody>
 <tr class="odd">
 <td><p>ID criterio vocale</p></td>
-<td><p>Politica vocale di Delhi</p></td>
-<td><p>Politica vocale di Hyderabad</p></td>
+<td><p>Criteri vocali Delhi</p></td>
+<td><p>Criteri vocali di Hyderabad</p></td>
 </tr>
 <tr class="even">
-<td><p>Usi PSTN</p></td>
-<td><p>Uso di Delhi, uso del PBX, uso di HYD PBX</p></td>
-<td><p>Uso di Hyderabad, uso del PBX HYD, uso del PBX</p></td>
+<td><p>Utilizzi PSTN</p></td>
+<td><p>Utilizzo di Delhi, utilizzo del sistema PBX del PBX, utilizzo del sistema idraulico HYD</p></td>
+<td><p>Utilizzo di Hyderabad, utilizzo del PBX HYD, utilizzo del sistema PBX del</p></td>
 </tr>
 <tr class="odd">
 <td><p>PreventPSTNTollBypass</p></td>
@@ -166,9 +166,9 @@ Per altre informazioni, vedere [configurazione di criteri vocali e record di uti
 
 ## <a name="define-voice-routes"></a>Definire le route vocali
 
-È necessario definire le route vocali per la distribuzione vocale aziendale. Per questo esempio, la tabella seguente illustra le route vocali usate in questo scenario. Nella tabella sono incluse solo le impostazioni specifiche del routing basato sulla posizione.
+È necessario definire le route vocali per la distribuzione di VoIP aziendale. In questo esempio, nella tabella seguente vengono illustrate le route vocali utilizzate in questo scenario. Solo le impostazioni specifiche del routing in base alla posizione sono incluse nella tabella a scopo illustrativo.
 
-Per altre informazioni, vedere [configurazione delle route vocali per le chiamate in uscita in Lync Server 2013](lync-server-2013-configuring-voice-routes-for-outbound-calls.md).
+Per ulteriori informazioni, vedere [configurazione delle route vocali per le chiamate in uscita in Lync Server 2013](lync-server-2013-configuring-voice-routes-for-outbound-calls.md).
 
 
 <table>
@@ -191,20 +191,20 @@ Per altre informazioni, vedere [configurazione delle route vocali per le chiamat
 <tbody>
 <tr class="odd">
 <td><p>Nome</p></td>
-<td><p>Itinerario Delhi</p></td>
-<td><p>Itinerario di Hyderabad</p></td>
+<td><p>Route Delhi</p></td>
+<td><p>Route Hyderabad</p></td>
 <td><p>PBX del Route</p></td>
 <td><p>Route HYD PBX</p></td>
 </tr>
 <tr class="even">
-<td><p>Usi PSTN</p></td>
-<td><p>Uso di Delhi</p></td>
-<td><p>Uso di Hyderabad</p></td>
-<td><p>Utilizzo di PBX del</p></td>
-<td><p>Uso di HYD PBX</p></td>
+<td><p>Utilizzi PSTN</p></td>
+<td><p>Utilizzo Delhi</p></td>
+<td><p>Utilizzo di Hyderabad</p></td>
+<td><p>Utilizzo del sistema PBX del</p></td>
+<td><p>Utilizzo di HYD PBX</p></td>
 </tr>
 <tr class="odd">
-<td><p>Tronco</p></td>
+<td><p>Trunk</p></td>
 <td><p>Trunk 1 DEL-GW</p></td>
 <td><p>Trunk 2 HYD-GW</p></td>
 <td><p>Trunk 3 DEL-PBX</p></td>
@@ -225,9 +225,9 @@ Per altre informazioni, vedere [configurazione delle route vocali per le chiamat
 
 ## <a name="enable-users-for-enterprise-voice"></a>Abilitare gli utenti per VoIP aziendale
 
-Consente agli utenti di VoIP aziendale di assegnare loro un criterio vocale già definito. Per questo esempio, la tabella seguente illustra l'assegnazione usata in questo scenario. Nella tabella sono incluse solo le impostazioni specifiche del routing basato sulla posizione.
+Abilitare gli utenti per VoIP aziendale e assegnargli un criterio vocale precedentemente definito. In questo esempio, nella tabella seguente viene illustrata l'assegnazione utilizzata in questo scenario. Solo le impostazioni specifiche del routing in base alla posizione sono incluse nella tabella a scopo illustrativo.
 
-Per altre informazioni, vedere [abilitare gli utenti per VoIP aziendale in Lync Server 2013](lync-server-2013-enable-users-for-enterprise-voice.md).
+Per ulteriori informazioni, vedere [abilitare gli utenti per VoIP aziendale in Lync Server 2013](lync-server-2013-enable-users-for-enterprise-voice.md).
 
 
 <table>
@@ -239,15 +239,15 @@ Per altre informazioni, vedere [abilitare gli utenti per VoIP aziendale in Lync 
 <thead>
 <tr class="header">
 <th></th>
-<th>Utenti ubicati in Delhi</th>
-<th>Utenti ubicati in Hyderabad</th>
+<th>Utenti che si trovano a Delhi</th>
+<th>Utenti che si trovano in Hyderabad</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Criterio vocale associato</p></td>
-<td><p>Politica vocale di Delhi</p></td>
-<td><p>Politica vocale di Hyderabad</p></td>
+<td><p>Criteri vocali associati</p></td>
+<td><p>Criteri vocali Delhi</p></td>
+<td><p>Criteri vocali di Hyderabad</p></td>
 </tr>
 <tr class="even">
 <td><p>Utenti di esempio</p></td>

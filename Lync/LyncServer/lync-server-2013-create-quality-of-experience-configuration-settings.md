@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: creare impostazioni di configurazione della qualità delle esperienze'
+title: 'Lync Server 2013: creare impostazioni di configurazione per la qualità delle esperienze'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184357
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0f651da026dcf73253eaccada14332a7f2f5c1f8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5e2d81f62bb35710d14450aa26f3100ea53021ca
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41734246"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030750"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-quality-of-experience-configuration-settings-in-lync-server-2013"></a>Creare impostazioni di configurazione della qualità delle esperienze in Lync Server 2013
+# <a name="create-quality-of-experience-configuration-settings-in-lync-server-2013"></a>Creare le impostazioni di configurazione per la qualità delle esperienze in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41734246"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-Le metriche sulla qualità delle esperienze (QoE) tengono traccia della qualità delle chiamate audio e video effettuate nell'organizzazione, tra cui il numero di pacchetti di rete persi, il rumore di fondo e la quantità di "jitter" (differenze nel ritardo del pacchetto). Queste metriche sono archiviate in un database, oltre ad altri dati, ad esempio i record dettagli chiamata, che consentono di abilitare e disabilitare QoE indipendentemente da altre registrazioni di dati.
+La metrica QoE registra la qualità delle chiamate audio e video effettuate nell'organizzazione, includendo informazioni quali il numero di pacchetti di rete persi, i rumori di fondo e il livello di "instabilità" (differenze nel ritardo dei pacchetti). Questa metrica viene archiviata in un database separatamente rispetto ad altri dati, ad esempio la registrazione dettagli chiamata, in modo che sia possibile abilitare e disabilitare il servizio QoE in maniera indipendente rispetto ad altre registrazioni di dati.
 
-Quando si installa Microsoft Lync Server 2013, viene creata una singola raccolta globale di impostazioni di configurazione QoE. Gli amministratori hanno anche la possibilità di creare impostazioni personalizzate nell'ambito del sito. Ogni volta che vengono usate queste impostazioni con ambito sito, hanno la precedenza sulle impostazioni globali. Ad esempio, se crei impostazioni con ambito sito per il sito Redmond, le impostazioni (invece delle impostazioni globali) verranno usate per gestire i QoE in Redmond.
+Quando si installa Microsoft Lync Server 2013, viene creata una singola raccolta globale di impostazioni di configurazione QoE. Gli amministratori hanno inoltre la possibilità di creare impostazioni personalizzato con ambito sito. Ogni volta che vengono utilizzate tali impostazioni con ambito sito, queste avranno la precedenza rispetto alle impostazioni globali. Se si creano impostazioni con ambito sito per il sito Redmond, ad esempio, per gestire i criteri QoE nel sito di Redmond verranno utilizzate tali impostazioni, anziché quelle globali.
 
-Le impostazioni di configurazione QoE possono essere create usando il pannello di controllo di Lync Server o il cmdlet [New-CsQoEConfiguration](https://docs.microsoft.com/powershell/module/skype/New-CsQoEConfiguration) . Se si usa il pannello di controllo di Lync Server per creare nuove impostazioni, saranno disponibili le opzioni seguenti:
+È possibile creare le impostazioni di configurazione QoE utilizzando il pannello di controllo di Lync Server o il cmdlet [New-CsQoEConfiguration](https://docs.microsoft.com/powershell/module/skype/New-CsQoEConfiguration) . Se si utilizza il pannello di controllo di Lync Server per creare nuove impostazioni, saranno disponibili le opzioni seguenti:
 
 
 <table>
@@ -60,23 +60,23 @@ Le impostazioni di configurazione QoE possono essere create usando il pannello d
 <tbody>
 <tr class="odd">
 <td><p>Nome</p></td>
-<td><p>Identity</p></td>
-<td><p>Identificatore univoco per le impostazioni da creare. Le impostazioni di configurazione QoE possono essere create solo nell'ambito del sito.</p></td>
+<td><p>Identità</p></td>
+<td><p>Identificatore univoco delle impostazioni da creare. Le impostazioni di configurazione QoE possono essere create solo in ambito di sito.</p></td>
 </tr>
 <tr class="even">
-<td><p>Abilitare il monitoraggio dei dati QoE</p></td>
+<td><p>Abilita monitoraggio dei dati QoE</p></td>
 <td><p>EnableQoE</p></td>
-<td><p>Specifica se i record QoE verranno raccolti e salvati nel database di monitoraggio.</p></td>
+<td><p>Indica se i record QoE verranno raccolti e salvati nel database di monitoraggio.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Abilitare l'eliminazione dei dati QoE</p></td>
+<td><p>Abilita eliminazione dei dati QoE</p></td>
 <td><p>EnablePurging</p></td>
-<td><p>Specifica se i record verranno eliminati dopo che è trascorso il periodo definito nella proprietà <strong>Mantieni i dati QoE per una durata massima (giorni)</strong> .</p></td>
+<td><p>Indica se i record verranno cancellati dopo la scadenza specificata nella proprietà <strong>Mantieni dati QoE per durata massima (giorni)</strong>.</p></td>
 </tr>
 <tr class="even">
-<td><p>Mantieni i dati QoE per la durata massima (giorni)</p></td>
+<td><p>Mantieni dati QoE per durata massima (giorni)</p></td>
 <td><p>KeepQoEDataForDays</p></td>
-<td><p>Numero di giorni i dati QoE verranno archiviati prima di essere eliminati dal database. Questo valore viene ignorato se l'eliminazione è disabilitata.</p></td>
+<td><p>Il numero di giorni in cui i dati QoE verranno archiviati prima di essere eliminati dal database. Questo valore viene ignorato se l'eliminazione è disabilitata.</p></td>
 </tr>
 </tbody>
 </table>
@@ -86,7 +86,7 @@ Le impostazioni di configurazione QoE possono essere create usando il pannello d
 
 
 > [!NOTE]  
-> Il cmdlet New-CsQoEConfiguration include opzioni aggiuntive non disponibili nel pannello di controllo di Lync Server. Per altre informazioni, vedere l'argomento della Guida <A href="https://docs.microsoft.com/powershell/module/skype/New-CsQoEConfiguration">New-CsQoEConfiguration</A> .
+> Il cmdlet New-CsQoEConfiguration include opzioni aggiuntive non disponibili nel pannello di controllo di Lync Server. Per ulteriori informazioni, vedere l'argomento relativo alla guida di <A href="https://docs.microsoft.com/powershell/module/skype/New-CsQoEConfiguration">New-CsQoEConfiguration</A> .
 
 
 
@@ -94,25 +94,25 @@ Le impostazioni di configurazione QoE possono essere create usando il pannello d
 
 <div>
 
-## <a name="to-create-qoe-configuration-settings-by-using-lync-server-control-panel"></a>Per creare impostazioni di configurazione QoE tramite il pannello di controllo di Lync Server
+## <a name="to-create-qoe-configuration-settings-by-using-lync-server-control-panel"></a>Per creare le impostazioni di configurazione QoE utilizzando il pannello di controllo di Lync Server
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **monitoraggio e archiviazione**, quindi fare clic su **qualità dei dati dell'esperienza**.
+3.  Sulla barra di spostamento sinistra fare clic su **Monitoraggio e archiviazione** e quindi su **Dati QoE**.
 
-4.  Nella pagina **qualità di dati esperienza** fare clic su **nuovo**.
+4.  Nella pagina **Dati QoE** fare clic su **Nuovo**.
 
-5.  In **Seleziona un sito**fare clic sul sito a cui applicare il criterio e fare clic su **OK**.
+5.  In **Seleziona un sito** fare clic sul sito a cui si desidera applicare i criteri e quindi fare clic su **OK**.
 
-6.  Nell' **impostazione nuova qualità dell'esperienza**, eseguire le operazioni seguenti:
+6.  In **Crea nuova impostazione QoE** eseguire le operazioni seguenti:
     
-      - Selezionare **Abilita il monitoraggio dei dati QoE** per attivare il monitoraggio.
+      - Selezionare **Abilita monitoraggio dei dati QoE** per attivare il monitoraggio.
     
-      - Selezionare **Abilita l'eliminazione dei dati QoE** per attivare l'eliminazione.
+      - Selezionare **Abilita eliminazione dei dati QoE** per attivare l'eliminazione.
     
-      - In **Mantieni QoE per la durata massima (giorni)** selezionare il numero massimo di giorni in cui devono essere conservati i record QoE.
+      - In **Mantieni dati QoE per durata massima (giorni)** selezionare il numero massimo di giorni per il mantenimento dei record QoE.
 
 7.  Fare clic su **Commit**.
 
@@ -120,15 +120,15 @@ Le impostazioni di configurazione QoE possono essere create usando il pannello d
 
 <div>
 
-## <a name="creating-qoe-configuration-settings-by-using-windows-powershell-cmdlets"></a>Creazione di impostazioni di configurazione QoE con i cmdlet di Windows PowerShell
+## <a name="creating-qoe-configuration-settings-by-using-windows-powershell-cmdlets"></a>Creazione di impostazioni di configurazione QoE tramite i cmdlet di Windows PowerShell
 
-Puoi creare impostazioni di configurazione QoE usando Windows PowerShell e il cmdlet New-CsQoEConfiguration. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile creare impostazioni di configurazione QoE utilizzando Windows PowerShell e il cmdlet New-CsQoEConfiguration. È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
 ## <a name="to-create-a-new-collection-of-qoe-configuration-settings"></a>Per creare una nuova raccolta di impostazioni di configurazione QoE
 
-  - Questo comando crea una nuova raccolta di impostazioni di configurazione QoE applicate al sito Redmond:
+  - Questo comando crea una nuova raccolta di impostazioni di configurazione QoE per il sito Redmond:
     
         New-CsQoEConfiguration -Identity "site:Redmond"
 
@@ -138,7 +138,7 @@ Puoi creare impostazioni di configurazione QoE usando Windows PowerShell e il cm
 
 ## <a name="to-create-a-new-collection-of-qoe-configuration-settings-where-qoe-monitoring-is-disabled"></a>Per creare una nuova raccolta di impostazioni di configurazione QoE in cui il monitoraggio QoE è disabilitato
 
-  - Poiché non sono stati specificati parametri (ad eccezione del parametro di identità obbligatorio) nel comando precedente, la nuova raccolta di impostazioni di configurazione utilizzerà i valori predefiniti per tutte le relative proprietà. Per creare impostazioni che usano valori di proprietà diversi, includere semplicemente il parametro e il valore del parametro appropriati. Ad esempio, per creare una raccolta di impostazioni di configurazione della qualità delle esperienze che, per impostazione predefinita, consentono di disabilitare la registrazione QoE usare un comando simile al seguente:
+  - Dal momento che nel comando precedente non sono stati specificati parametri, oltre al parametro Identity obbligatorio, la nuova raccolta di impostazioni di configurazione utilizzerà i valori predefiniti per ogni proprietà. Per creare impostazioni che utilizzano valori di proprietà diversi, includere semplicemente il parametro e il valore di parametro appropriato. Per creare una raccolta di impostazioni di configurazione QoE che consenta la disabilitazione della registrazione QoE per impostazione predefinita, utilizzare un comando come il seguente:
     
         New-CsQoEConfiguration -Identity "site:Redmond" -EnableQoE $False
 
@@ -146,15 +146,15 @@ Puoi creare impostazioni di configurazione QoE usando Windows PowerShell e il cm
 
 <div>
 
-## <a name="to-specify-multiple-property-values-when-creating-a-new-collection-of-qoe-configuration-settings"></a>Per specificare più valori di proprietà quando si crea una nuova raccolta di impostazioni di configurazione QoE
+## <a name="to-specify-multiple-property-values-when-creating-a-new-collection-of-qoe-configuration-settings"></a>Per specificare più valori di proprietà durante la creazione di una nuova raccolta di impostazioni di configurazione QoE
 
-  - Puoi includere più valori di proprietà includendo più parametri. Ad esempio, questo comando Configura le nuove impostazioni per conservare i dati QoE per 30 giorni e per eliminare i vecchi dati in 3:00 AM:
+  - È possibile specificare più valori di proprietà includendo più parametri. Questo comando, ad esempio, configura le nuove impostazioni per mantenere i dati QoE per 30 giorni ed eliminare i dati obsoleti alle 3.00:
     
         New-CsQoEConfiguration -Identity "site:Redmond" -KeepQoEDataForDays 30 -PurgeHourOfDay 3
 
 </div>
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsQoEConfiguration](https://docs.microsoft.com/powershell/module/skype/New-CsQoEConfiguration) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsQoEConfiguration](https://docs.microsoft.com/powershell/module/skype/New-CsQoEConfiguration) .
 
 </div>
 

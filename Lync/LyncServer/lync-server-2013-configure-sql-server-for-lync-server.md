@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare SQL Server per Lync Server'
+title: 'Lync Server 2013: configurare SQL Server per Lync Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183869
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: efdd9d8fa7b010b420c7c532d422c9b52b6d69ba
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1e52534744849e41fa08895bd114833892f4b8a2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756970"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035188"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41756970"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-08-12_
+_**Ultimo argomento modificato:** 2013-08-12_
 
-Gli argomenti di questa sezione illustrano come distribuire e configurare SQL Server per l'uso in una distribuzione aziendale di Lync Server. I server Standard Edition usano una versione di SQL Server Express di SQL Server collocata di dimensioni adeguate per i carichi di lavoro di un server Standard Edition.
+Negli argomenti di questa sezione viene illustrato come distribuire e configurare SQL Server per l'utilizzo in una distribuzione aziendale di Lync Server. I server Standard Edition utilizzano una versione di SQL Server Express collocata di SQL Server di dimensioni adeguate per i carichi di lavoro di un server Standard Edition.
 
-Lync Server 2013 Central Management store contiene i dati utente per tutti i server Enterprise Edition in un pool ed è progettato per essere posizionato in un server back-end basato su SQL Server. Come repository centralizzato, il Central Management store non può essere installato nello stesso computer di qualsiasi altro ruolo di Lync Server 2013. L'Central Management store non può risiedere in un server Enterprise Edition nel pool. L'archivio di gestione centralizzato viene creato automaticamente quando si pubblica la topologia per la prima volta e si seleziona per creare i database. Il computer designato come server back-end deve già eseguire il software di database di SQL Server in modo che l'installazione abbia successo.
+L'archivio di gestione centrale di Lync Server 2013 contiene i dati utente per tutti i server Enterprise Edition all'interno di un pool ed è stato creato per essere posizionato su un server back-end basato su SQL Server. Poiché si tratta di un archivio centralizzato, l'archivio di gestione centrale non può essere installato nello stesso computer di qualsiasi altro ruolo Lync Server 2013. L'archivio di gestione centrale non può trovarsi in un server Enterprise Edition del pool. L'archivio di gestione centrale viene creato automaticamente quando si pubblica la topologia per la prima volta e si sceglie di creare i database. Il computer che si desidera definire come server back-end deve già eseguire il software di database di SQL Server in modo che l'installazione abbia esito positivo.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Posizionamento dei file di log e dei file di dati di SQL Server per Lync Server 2013](lync-server-2013-sql-server-data-and-log-file-placement.md)
+  - [Disposizione dei file di registro e di dati di SQL Server per Lync Server 2013](lync-server-2013-sql-server-data-and-log-file-placement.md)
 
   - [Configurare SQL Server in Lync Server 2013](lync-server-2013-configure-sql-server.md)
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Definizione di regole di normalizzazione'
+title: 'Lync Server 2013: definizione di regole di normalizzazione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185741
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b75883d99d218d711e9d96de7ebfd7d360972a6a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 99a09f5075ffe8ff267f31333d3dba0f4fffbc41
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728366"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036395"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,25 +35,25 @@ ms.locfileid: "41728366"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-04-22_
+_**Ultimo argomento modificato:** 2014-04-22_
 
-Le regole di normalizzazione di Lync Server 2013 usano le espressioni regolari di .NET Framework per tradurre i numeri di telefono composti in formato E. 164; in altre parole, le regole di normalizzazione accettano il numero di telefono composto da un utente e convertono tale numero nel formato usato internamente da Lync Server. A ogni dial plan devono essere assegnate una o più regole di normalizzazione.
+Le regole di normalizzazione di Lync Server 2013 utilizzano le espressioni regolari di .NET Framework per tradurre i numeri di telefono composti in formato E. 164; in altre parole, le regole di normalizzazione assumono il numero di telefono composto da un utente e convertono tale numero nel formato utilizzato internamente da Lync Server. A ogni dial plan deve essere assegnata una o più regole di normalizzazione.
 
 Per informazioni dettagliate sulle regole di normalizzazione, vedere [dial plan e regole di normalizzazione in Lync Server 2013](lync-server-2013-dial-plans-and-normalization-rules.md) nella documentazione relativa alla pianificazione.
 
-Per informazioni dettagliate su come scrivere espressioni regolari, vedere "espressioni regolari di .NET Framework" [http://go.microsoft.com/fwlink/p/?linkId=140927](http://go.microsoft.com/fwlink/p/?linkid=140927).
+Per informazioni dettagliate su come scrivere espressioni regolari, vedere la sezione relativa alle espressioni regolari di [http://go.microsoft.com/fwlink/p/?linkId=140927](http://go.microsoft.com/fwlink/p/?linkid=140927).NET Framework all'indirizzo.
 
-Per definire o modificare una regola di normalizzazione, è possibile usare uno dei metodi seguenti:
+È possibile utilizzare uno dei metodi seguenti per definire o modificare una regola di normalizzazione:
 
-  - Usare lo strumento **Costruisci una regola di normalizzazione** per specificare i valori per le cifre iniziali, la lunghezza, le cifre da rimuovere e le cifre da aggiungere e quindi consentire al pannello di controllo di Lync Server di generare automaticamente il modello corrispondente e la regola di traduzione.
+  - Utilizzare lo strumento **Crea regola di normalizzazione** per specificare i valori per le cifre iniziali, la lunghezza, le cifre da rimuovere e le cifre da aggiungere, quindi lasciare che il pannello di controllo di Lync Server generi il corrispondente schema di corrispondenza e la regola di conversione.
 
-  - Scrivere manualmente le espressioni regolari per definire il modello e la regola di traduzione corrispondenti.
+  - Scrivere manualmente espressioni regolari per definire il formato di corrispondenza e la regola di conversione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Creare o modificare una regola di normalizzazione tramite Build una regola di normalizzazione in Lync Server 2013](lync-server-2013-create-or-modify-a-normalization-rule-by-using-build-a-normalization-rule.md)
+  - [Creare o modificare una regola di normalizzazione utilizzando crea una regola di normalizzazione in Lync Server 2013](lync-server-2013-create-or-modify-a-normalization-rule-by-using-build-a-normalization-rule.md)
 
   - [Creare o modificare manualmente una regola di normalizzazione in Lync Server 2013](lync-server-2013-create-or-modify-a-normalization-rule-manually.md)
 

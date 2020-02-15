@@ -1,5 +1,5 @@
 ---
-title: Migrazione di server di archiviazione e di monitoraggio
+title: Migrazione di server di archiviazione e monitoraggio
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733722
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ee3abd26386ad26e3b6628d5b9db873bd17373be
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 100ec85b345a744232e9bfab37a2ee11c7f84430
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743776"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036114"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="migrating-archiving-and-monitoring-servers"></a>Migrazione di server di archiviazione e di monitoraggio
+# <a name="migrating-archiving-and-monitoring-servers"></a>Migrazione di server di archiviazione e monitoraggio
 
 </div>
 
@@ -35,28 +35,28 @@ ms.locfileid: "41743776"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-02_
+_**Ultimo argomento modificato:** 2012-10-02_
 
-Se il server di archiviazione e il server di monitoraggio sono stati distribuiti in Office Communications Server 2007 R2, è possibile distribuire questi server nell'ambiente Lync Server 2013 dopo la migrazione dei pool di front-end. Se le funzionalità di archiviazione e monitoraggio sono critiche per l'organizzazione, è tuttavia necessario aggiungere l'archiviazione e il monitoraggio al pool di piloti prima di eseguire la migrazione in modo che la funzionalità sia disponibile durante il processo di migrazione.
+Se il server di archiviazione e il Monitoring Server sono stati distribuiti in Office Communications Server 2007 R2, è possibile distribuire questi server nell'ambiente Lync Server 2013 dopo aver eseguito la migrazione dei pool Front end. Se le funzionalità di archiviazione e monitoraggio sono di importanza cruciale per l'organizzazione, tuttavia, è consigliabile aggiungerle al pool pilota prima di eseguire la migrazione in modo che le funzionalità siano disponibili durante il processo di migrazione.
 
-Per le funzionalità di archiviazione e monitoraggio durante la fase di migrazione e coesistenza, tieni presenti le considerazioni seguenti:
+Se si desiderano funzionalità di archiviazione e monitoraggio durante la fase di migrazione e coesistenza, tenere presente quanto segue:
 
-  - L'archiviazione dei dati e il monitoraggio dei dati non vengono spostati nella distribuzione di Lync Server 2013. I dati di cui eseguire il backup prima della disattivazione dell'ambiente legacy saranno la cronologia delle attività in Office Communications Server 2007 R2.
+  - I dati di archiviazione e i dati di monitoraggio non vengono spostati nella distribuzione di Lync Server 2013. I dati di cui è stato eseguito il backup prima della rimozione dell'ambiente legacy saranno la cronologia delle attività in Office Communications Server 2007 R2.
 
-  - La versione di Office Communications Server 2007 R2 del server di archiviazione e del server di monitoraggio può essere associata solo a un pool Front-End di Office Communications Server 2007 R2. In Lync Server 2013 l'archiviazione e il monitoraggio non sono più ruoli del server, ma i servizi sono integrati nel pool Front End di Lync Server 2013.
+  - La versione Office Communications Server 2007 R2 del server di archiviazione e il Monitoring Server possono essere associati solo a un pool Front End di Office Communications Server 2007 R2. In Lync Server 2013, l'archiviazione e il monitoraggio non sono più ruoli del server, ma i servizi sono integrati nel pool Front End di Lync Server 2013.
 
-  - Durante il periodo di coesistenza tra le distribuzioni legacy e Lync Server 2013, la versione Office Communications Server 2007 R2 di Archiving Server e Monitoring Server raccoglie i dati per gli utenti ospitati nei pool di Office Communications Server 2007 R2. La versione Lync Server 2013 di archiviazione del server e del server di monitoraggio raccoglie i dati per gli utenti ospitati nei pool di Lync Server 2013.
+  - Durante il periodo di coesistenza tra le distribuzioni legacy e Lync Server 2013, la versione Office Communications Server 2007 R2 del server di archiviazione e il Monitoring Server raccolgono i dati per gli utenti ospitati nei pool di Office Communications Server 2007 R2. La versione Lync Server 2013 del server di archiviazione e il Monitoring Server raccolgono i dati per gli utenti ospitati nei pool di Lync Server 2013.
     
     <div>
     
 
     > [!NOTE]  
-    > Durante la fase di migrazione quando si usa ancora il server perimetrale legacy con il nuovo pool di piloti di Lync Server 2013, la versione di archiviazione di Office Communications Server 2007 R2 continua a raccogliere dati per gli utenti ospitati in Office Communications Server 2007 I pool R2 e la versione Lync Server 2013 del server di archiviazione raccolgono i dati per gli utenti ospitati nei pool di Lync Server 2013.
+    > Durante la fase di migrazione quando si utilizza ancora il server perimetrale legacy con il nuovo pool pilota di Lync Server 2013, la versione Office Communications Server 2007 R2 del server di archiviazione continua a raccogliere dati per gli utenti ospitati in Office Communications Server 2007 I pool R2 e la versione Lync Server 2013 del server di archiviazione raccolgono i dati per gli utenti ospitati nei pool di Lync Server 2013.
 
     
     </div>
 
-  - Se si usa una soluzione di archiviazione e monitoraggio di terze parti in combinazione con server di archiviazione e server di monitoraggio, rivolgersi al proprio fornitore per informazioni su quando e in che modo è necessario integrare la soluzione di terze parti con Lync Server 2013.
+  - Se si utilizza una soluzione di archiviazione e monitoraggio di terze parti insieme al server di archiviazione e al Monitoring Server, contattare il fornitore quando e in che modo è necessario integrare la soluzione di terze parti con Lync Server 2013.
 
 </div>
 

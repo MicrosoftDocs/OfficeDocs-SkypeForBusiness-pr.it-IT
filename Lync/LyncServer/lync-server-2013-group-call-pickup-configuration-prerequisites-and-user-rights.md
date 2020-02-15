@@ -1,5 +1,5 @@
 ---
-title: Prerequisiti e diritti utente della configurazione del prelievo delle chiamate di gruppo
+title: Prerequisiti e diritti utente per la configurazione del prelievo delle chiamate di gruppo
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541495
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2ed2a44ccd1730de2ebede4b08c1a4d3d7e0da9d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d1f5387ac7c67e01e3c4473367e1256cf07181a3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763880"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030399"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="group-call-pickup-configuration-prerequisites-and-user-rights-in-lync-server-2013"></a>Prerequisiti e diritti utente della configurazione del prelievo delle chiamate di gruppo in Lync Server 2013
+# <a name="group-call-pickup-configuration-prerequisites-and-user-rights-in-lync-server-2013"></a>Prerequisiti di configurazione del prelievo delle chiamate di gruppo e diritti utente in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41763880"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-01-30_
+_**Ultimo argomento modificato:** 2013-01-30_
 
-Raccolta chiamate di gruppo è una caratteristica di gestione delle chiamate installata per impostazione predefinita quando si distribuisce VoIP aziendale. Questo argomento descrive le informazioni necessarie per configurare il prelievo delle chiamate di gruppo e i diritti utente necessari per eseguire le attività di configurazione.
+Prelievo delle chiamate di gruppo è una funzionalità di gestione delle chiamate installata per impostazione predefinita quando si distribuisce VoIP aziendale. In questo argomento vengono descritte le operazioni necessarie per poter configurare il prelievo delle chiamate di gruppo e i diritti utente necessari per eseguire le attività di configurazione.
 
-In questa sezione si presuppone che sia stata letta la documentazione relativa alla pianificazione relativa al ritiro delle chiamate di gruppo (vedere [pianificazione del ritiro delle chiamate di gruppo in Lync Server 2013](lync-server-2013-planning-for-group-call-pickup.md)).
+In questa sezione si presuppone che sia stata letta la documentazione relativa alla pianificazione relativa al prelievo delle chiamate di gruppo (vedere [Planning for Group Call Pickup in Lync Server 2013](lync-server-2013-planning-for-group-call-pickup.md)).
 
 <div>
 
-## <a name="group-call-pickup-configuration-prerequisites"></a>Prerequisiti per la configurazione del pickup delle chiamate di gruppo
+## <a name="group-call-pickup-configuration-prerequisites"></a>Prerequisiti per la configurazione del prelievo delle chiamate di gruppo
 
-Il ritiro delle chiamate di gruppo richiede i componenti seguenti:
+Il prelievo delle chiamate di gruppo richiede i componenti seguenti:
 
-  - Servizio applicazione
+  - Servizio dell'applicazione
 
   - Applicazione Parcheggio di chiamata
 
@@ -57,23 +57,23 @@ Questi componenti vengono installati automaticamente quando si distribuisce VoIP
 
 <div>
 
-## <a name="group-call-pickup-configuration-user-rights"></a>Configurazione dei prelievo delle chiamate di gruppo diritti utente
+## <a name="group-call-pickup-configuration-user-rights"></a>Configurazione del prelievo delle chiamate di gruppo diritti utente
 
-Puoi usare gli strumenti di amministrazione seguenti per configurare il ritiro delle chiamate di gruppo:
+È possibile utilizzare gli strumenti di amministrazione seguenti per configurare il prelievo delle chiamate di gruppo:
 
   - Lync Server Management Shell
 
-  - Strumento SEFAUtil Resource Kit
+  - Strumento del Resource Kit di SEFAUtil
 
-Usare Lync Server Management Shell per creare e gestire gruppi di pick-up delle chiamate nella tabella Orbit di Call Park. Usare lo strumento SEFAUtil Resource Kit per assegnare un gruppo di raccolta chiamate e abilitare il ritiro delle chiamate di gruppo per gli utenti o disabilitare il ritiro delle chiamate di gruppo per gli utenti.
+Utilizzo di Lync Server Management Shell per la creazione e la gestione dei gruppi di prelievo delle chiamate nella tabella orbit del parcheggio di chiamata. Utilizzare lo strumento SEFAUtil Resource Kit per assegnare un gruppo di prelievo di chiamata e abilitare il prelievo delle chiamate di gruppo per gli utenti o per disabilitare il prelievo delle chiamate di gruppo per gli utenti
 
-La configurazione del ritiro delle chiamate di gruppo richiede uno dei ruoli amministrativi seguenti, a seconda dell'attività:
+La configurazione del prelievo delle chiamate di gruppo richiede uno dei ruoli amministrativi seguenti, a seconda dell'attività:
 
-  - **CsVoiceAdministrator:** Questo ruolo di amministratore può creare, configurare e gestire tutte le impostazioni e i criteri relativi alla voce.
+  - **CsVoiceAdministrator:** Questo ruolo di amministratore può creare, configurare e gestire tutte le impostazioni e i criteri vocali.
 
-  - **CsUserAdministrator:** Questo ruolo di amministratore può abilitare il ritiro delle chiamate di gruppo per gli utenti. Questo ruolo di amministratore ha anche l'accesso alla visualizzazione di sola lettura a tutte le configurazioni vocali.
+  - **CsUserAdministrator:** Questo ruolo di amministratore può abilitare il prelievo delle chiamate di gruppo per gli utenti. Dispone inoltre dell'accesso per la visualizzazione di sola lettura di tutte le configurazioni vocali.
 
-  - **CsServerAdministrator:** Questo ruolo di amministratore può gestire, monitorare e risolvere i problemi di server e servizi.
+  - **CsServerAdministrator:** Questo ruolo di amministratore può gestire, monitorare e risolvere i problemi relativi a server e servizi.
 
   - **CsAdministrator:** Questo ruolo di amministratore può eseguire tutte le attività di CsVoiceAdministrator, CsServerAdministrator e CsUserAdministrator.
 
@@ -81,7 +81,7 @@ La configurazione del ritiro delle chiamate di gruppo richiede uno dei ruoli amm
 
 
 > [!NOTE]
-> Per informazioni dettagliate sui diritti amministrativi, vedere <A href="lync-server-2013-planning-for-role-based-access-control.md">pianificazione per il controllo dell'accesso basato sui ruoli in Lync Server 2013</A> nella documentazione relativa alla pianificazione.
+> Per informazioni dettagliate sui diritti amministrativi, vedere <A href="lync-server-2013-planning-for-role-based-access-control.md">Planning for Role-Based Access Control in Lync Server 2013</A> nella documentazione relativa alla pianificazione.
 
 
 

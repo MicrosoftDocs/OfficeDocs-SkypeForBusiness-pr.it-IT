@@ -12,16 +12,16 @@ ms:contentKeyID: 48183993
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3976b98fddc96ad08f3de4413bf8f38ec3525496
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ee16c492a42cb98ff3b5f326bd6f43a57c4d3f56
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764152"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034276"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41764152"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
-tblPrincipalAffiliations contiene le principali affiliazioni che descrivono le appartenenze in posizioni, inclusi i gruppi di sicurezza dei servizi di dominio Active Directory, in contenitori di Active Directory in domini.
+tblPrincipalAffiliations contiene le affiliazioni principali che descrivono le appartenenze nelle posizioni, inclusi i gruppi di sicurezza di servizi di dominio Active Directory, in contenitori di Active Directory, in domini.
 
 ### <a name="columns"></a>Colonne
 
@@ -58,28 +58,28 @@ tblPrincipalAffiliations contiene le principali affiliazioni che descrivono le a
 <tr class="odd">
 <td><p>principalID</p></td>
 <td><p>int, not null</p></td>
-<td><p>ID dell'oggetto Principal affiliato.</p></td>
+<td><p>ID dell'entità affiliata.</p></td>
 </tr>
 <tr class="even">
 <td><p>affiliationID</p></td>
 <td><p>int, not null</p></td>
-<td><p>ID dell'entità che rappresenta l'affiliazione. Ogni entità (ad eccezione di System-User-Types) ha anche una propria affiliazione.</p></td>
+<td><p>ID dell'entità che rappresenta l'affiliazione. Ogni entità prevede anche un'auto-affiliazione (eccetto system-user-types).</p></td>
 </tr>
 <tr class="odd">
 <td><p>Indice</p></td>
 <td><p>int, not null</p></td>
-<td><p>Indice. Il valore di self-Affiliations è-1 e per le altre affiliazioni aumenta sequenzialmente da 1 all'interno di ogni &lt;PrincipalId, affiliationId&gt; bucket.</p></td>
+<td><p>Indice. Il valore per le self-affiliazioni è-1 e per le altre affiliazioni aumenta sequenzialmente da 1 all'interno di &lt;ogni PrincipalId,&gt; affiliationId bucket.</p></td>
 </tr>
 <tr class="even">
 <td><p>updatedBy</p></td>
 <td><p>int, not null</p></td>
-<td><p>Principal che ha eseguito l'aggiornamento più recente. Si tratta in genere di 1, che indica la sincronizzazione di Active Directory.</p></td>
+<td><p>Entità che ha effettuato l'ultimo aggiornamento. Viene utilizzato in genere il valore 1, che indica la sincronizzazione di Active Directory.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="keys"></a>Tasti
+### <a name="keys"></a>Chiavi
 
 <table>
 <colgroup>
@@ -99,11 +99,11 @@ tblPrincipalAffiliations contiene le principali affiliazioni che descrivono le a
 </tr>
 <tr class="even">
 <td><p>principalID</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblPrincipal. prinID.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblPrincipal.prinID.</p></td>
 </tr>
 <tr class="odd">
 <td><p>affiliationID</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblPrincipal. prinID.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblPrincipal.prinID.</p></td>
 </tr>
 </tbody>
 </table>

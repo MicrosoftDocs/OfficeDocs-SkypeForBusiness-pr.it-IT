@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pianificazione della resilienza di VoIP aziendale'
+title: 'Lync Server 2013: pianificazione della resilienza di VoIP aziendale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185408
 ms.date: 10/17/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7b8b35871b740bd6d52d741922a3dcea9b7b60b5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 635e252953956d9dc6619ab51eea88804c2905c9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41754056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036908"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41754056"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-10-17_
+_**Ultimo argomento modificato:** 2014-10-17_
 
-La resilienza vocale si riferisce alla capacità degli utenti di continuare a effettuare e ricevere chiamate se un sito centrale che ospita Lync Server 2013 non è disponibile, sia tramite un errore WAN (Wide Area Network) che con un'altra causa. Se un sito centrale non riesce, il servizio VoIP aziendale deve continuare senza interruzioni attraverso il failover continuo in un sito di backup. In caso di errore WAN, le chiamate del sito di succursale devono essere reindirizzate a un gateway PSTN locale. In questa sezione viene illustrata la pianificazione della resilienza vocale in caso di errori WAN o del sito centrale.
+La resilienza vocale si riferisce alla capacità degli utenti di continuare a effettuare e ricevere chiamate se un sito centrale che ospita Lync Server 2013 non è disponibile, tramite un errore di rete WAN o un'altra causa. In caso di errore di un sito centrale, il servizio VoIP aziendale deve proseguire senza interruzione mediante failover ininterrotto su un sito di backup. In caso di errore della WAN, le chiamate dei siti di succursale devono essere reindirizzate a un PSTN locale. In questa sezione viene illustrata la pianificazione della resilienza vocale in caso di errore di un sito centrale o della WAN.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Pianificazione della resilienza vocale del sito centrale in Lync Server 2013](lync-server-2013-planning-for-central-site-voice-resiliency.md)
 

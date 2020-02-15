@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Nuove funzionalità di virtualizzazione'
+title: 'Lync Server 2013: nuove funzionalità di virtualizzazione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49733861
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 687e1c77cec18dc9ad4372fd911db32c537c61c9
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2d5c60926db1238c586c2c516302649c5c44cd8d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755860"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42033315"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41755860"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-11-07_
+_**Ultimo argomento modificato:** 2013-11-07_
 
-Lync Server 2013 supporta la virtualizzazione sia in Windows Server 2012, Windows Server 2012 R2 che in Windows Server 2008 R2. Il supporto per Windows Server 2012 e Windows Server 2012 R2 include il supporto per le singole funzionalità di virtualizzazione I/O (SR-IOV) radice. Con SR-IOV, la funzione virtuale di una scheda di rete fisica viene assegnata direttamente a una macchina virtuale. Questo aumenta la velocità effettiva della rete e riduce la latenza della rete riducendo anche l'overhead della CPU host necessario per l'elaborazione del traffico di rete. Per trarre vantaggio da SR-IOV, è necessario usare un server host che disponga del BIOS che supporti SR-IOV, oltre a usare le schede di rete che supportano SR-IOV.
+Lync Server 2013 supporta la virtualizzazione sia su Windows Server 2012, Windows Server 2012 R2 che su Windows Server 2008 R2. Il supporto su Windows Server 2012 e Windows Server 2012 R2 include il supporto per le funzionalità di virtualizzazione di I/O (SR-IOV) radice singola. Con SR-IOV, la funzione virtuale di una scheda di rete fisica è assegnata direttamente a una macchina virtuale. Questo aumenta la larghezza di banda della rete e ne riduce la latenza, riducendo al contempo anche il carico che grava sulla CPU dell'host per l'elaborazione del traffico di rete. Per beneficiare delle funzionalità SR-IOV, è necessario utilizzare un server host il cui BIOS supporti SR-IOV e schede di rete che supportino SR-IOV.
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare i servizi di emergenza avanzati'
+title: 'Lync Server 2013: Configurare Enhanced 9-1-1'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184205
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e171d2d3d72675d194a8272dfca1e2f24b8fa150
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9851bdb85f0bbd91d0b58897656186c739ecbf8f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755960"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028567"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-enhanced-9-1-1-in-lync-server-2013"></a>Configurare i servizi di emergenza avanzati in Lync Server 2013
+# <a name="configure-enhanced-9-1-1-in-lync-server-2013"></a>Configurare Enhanced 9-1-1 in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41755960"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-24_
+_**Ultimo argomento modificato:** 2013-02-24_
 
-Enhanced 9-1-1 (E9-1-1) è una funzionalità di notifica di emergenza che associa il numero di telefono della parte chiamante a un indirizzo civico o stradale. Usando queste informazioni, il PSAP (Public Safety Answering Point) può immediatamente inviare i servizi di emergenza al chiamante in difficoltà.
+Enhanced 9-1-1 (E9-1-1) è una funzionalità di notifica per chiamate di emergenza che associa il numero di telefono del chiamante a una via o a un numero civico. Con tali informazioni, l'operatore del servizio di salute pubblica e sicurezza nazionale (PSAP) è in grado di erogare immediatamente servizi di emergenza nei confronti del chiamante in difficoltà.
 
-Per supportare E9-1-1, Lync Server 2013 deve essere in grado di associare correttamente una posizione a un client e verificare che queste informazioni vengano usate per instradare la chiamata di emergenza al PSAP più vicino.
+Per supportare il servizio E9-1-1, Lync Server 2013 deve essere in grado di associare correttamente una posizione a un client e di verificare che tali informazioni vengano utilizzate per instradare la chiamata di emergenza al PSAP più vicino.
 
-Per informazioni dettagliate sulla pianificazione di una distribuzione di E9-1-1, vedere [pianificazione per i servizi di emergenza (E9-1-1) in Lync Server 2013](lync-server-2013-planning-for-emergency-services-e9-1-1.md).
+Per informazioni dettagliate sulla pianificazione di una distribuzione di E9-1-1, vedere [Planning for Emergency Services (E9-1-1) in Lync Server 2013](lync-server-2013-planning-for-emergency-services-e9-1-1.md).
 
 <div>
 
 
 > [!IMPORTANT]  
-> Lync Server 2013 supporta solo E9-1-1 negli Stati Uniti. Per distribuire E9-1-1, è necessario configurare una connessione SIP a un provider di servizi E9-1-1 qualificato oppure distribuire un gateway ELIN (Emergency Location Identification Number) a un provider di servizi E9-1-1 Basato su PSTN (Public Switched Telephone). Per informazioni dettagliate, vedere <A href="lync-server-2013-enhanced-9-1-1-e9-1-1-and-mediation-server.md">Enhanced 9-1-1 (E9-1-1) e Mediation Server in Lync server 2013</A>. Per informazioni dettagliate sulla configurazione delle connessioni trunk, vedere <A href="lync-server-2013-configure-a-trunk-with-media-bypass.md">configurare un trunk con il bypass multimediale in Lync Server 2013</A>.
+> Lync Server 2013 supporta solo il servizio E9-1-1 all'interno degli Stati Uniti. Per distribuire il servizio E9-1-1, è necessario configurare una connessione SIP a un provider del servizio E9-1-1 qualificato o distribuire un gateway ELIN (Emergency Location Identification Number) a un provider del servizio E9-1-1 basato su PSTN (Public Switched Telephone). Per informazioni dettagliate, vedere <A href="lync-server-2013-enhanced-9-1-1-e9-1-1-and-mediation-server.md">Enhanced 9-1-1 (E9-1-1) e Mediation Server in Lync server 2013</A>. Per informazioni dettagliate sulla configurazione delle connessioni trunk, vedere <A href="lync-server-2013-configure-a-trunk-with-media-bypass.md">Configure a Trunk with media bypass in Lync Server 2013</A>.
 
 
 
@@ -55,15 +55,15 @@ Per informazioni dettagliate sulla pianificazione di una distribuzione di E9-1-1
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Configurare una route vocale E9-1-1 in Lync Server 2013](lync-server-2013-configure-an-e9-1-1-voice-route.md)
 
-  - [Creare criteri di posizione in Lync Server 2013](lync-server-2013-create-location-policies.md)
+  - [Creare criteri percorso in Lync Server 2013](lync-server-2013-create-location-policies.md)
 
-  - [Configurare le informazioni sul sito per E9-1-1 in Lync Server 2013](lync-server-2013-configure-site-information-for-e9-1-1.md)
+  - [Configurare le informazioni sul sito per il servizio E9-1-1 in Lync Server 2013](lync-server-2013-configure-site-information-for-e9-1-1.md)
 
-  - [Configurare il database della posizione in Lync Server 2013](lync-server-2013-configure-the-location-database.md)
+  - [Configurare il database delle posizioni in Lync Server 2013](lync-server-2013-configure-the-location-database.md)
 
   - [Configurare le funzionalità di E9-1-1 avanzate in Lync Server 2013](lync-server-2013-configure-advanced-e9-1-1-features.md)
 

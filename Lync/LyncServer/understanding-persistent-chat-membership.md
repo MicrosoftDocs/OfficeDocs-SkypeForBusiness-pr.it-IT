@@ -1,5 +1,5 @@
 ---
-title: Informazioni sull'appartenenza di Chat persistente
+title: Informazioni sull'appartenenza di chat persistente
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184781
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c2b4eb5fbe4342c1bd6bcb3bbb842e076e5863ad
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9bb9718267798a937f482b09d2752f9d47e5967f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41741946"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035470"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="understanding-persistent-chat-membership"></a>Informazioni sull'appartenenza di Chat persistente
+# <a name="understanding-persistent-chat-membership"></a>Informazioni sull'appartenenza di chat persistente
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41741946"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-22_
+_**Ultimo argomento modificato:** 2013-02-22_
 
-L'accesso degli utenti alle chat room permanenti viene gestito dall'appartenenza; Gli utenti devono essere membri di una chat room per poter pubblicare e leggere i messaggi. Solo i **relatori** con un'affiliazione designata con chat room possono usare la **registrazione nelle sale dell'Auditorium**. Un auditorium è un tipo di chat room (l'altro è **normale**), dove possono essere pubblicati solo relatori e tutti possono leggere.
+L'accesso degli utenti alle chat room permanenti è gestito dall'appartenenza; Gli utenti devono essere membri di una chat room per poter postare e leggere i messaggi. Solo i **relatori** con un'affiliazione designata alle chat room possono utilizzare la **pubblicazione nelle sale auditorium**. Un auditorium è un tipo di chat room (l'altro è **normale**), in cui solo i relatori possono pubblicare e in cui tutti possono leggere.
 
-Inoltre, le chat room permanenti funzionano in base alle regole di una categoria. Per informazioni dettagliate sulle categorie, vedere [gestione di categorie, sale e componenti aggiuntivi in Lync Server 2013](lync-server-2013-managing-categories-rooms-and-add-ins.md)e anche le sezioni "come funziona l'ambito della categoria" e "strategie per la categoria della sala" più avanti in questo argomento.
+Inoltre, le chat room persistenti operano secondo le regole di una categoria. Per informazioni dettagliate sulle categorie, vedere [Managing Categories, rooms, and Add-ins in Lync Server 2013](lync-server-2013-managing-categories-rooms-and-add-ins.md), nonché le sezioni "come funziona l'ambito delle categorie" e "strategie di categoria della sala" più avanti in questo argomento.
 
-Un amministratore della chat persistente può creare e gestire le categorie delle chat room. Nell'ambito della creazione e della gestione delle categorie di chat room, l'amministratore della chat persistente può configurare le entità (gruppi, contenitori e utenti di servizi di dominio Active Directory) che hanno accesso a membri o creatori di chat room di una specifica categoria.
+Un amministratore di chat persistente può creare e gestire le categorie delle chat room. Durante la creazione e la gestione delle categorie di chat room, l'amministratore di chat persistente può configurare le entità (gruppi di servizi di dominio Active Directory, contenitori e utenti) che hanno accesso ai membri o ai creatori delle chat room di una categoria specifica.
 
 <div>
 
-## <a name="active-directory-domain-services-and-persistent-chat"></a>Servizi di dominio Active Directory e chat persistenti
+## <a name="active-directory-domain-services-and-persistent-chat"></a>Servizi di dominio Active Directory e chat persistente
 
-Il server di chat persistente si basa su Active Directory per il pool di utenti di chat permanenti interni. Dopo aver installato la chat persistente (client), è possibile aggiungere i domini di utenti e gruppi utenti alla categoria sala. È quindi possibile aggiungere questi utenti e gruppi all'appartenenza delle categorie della sala.
+Il server Chat persistente si basa su Active Directory per il pool di utenti di chat permanenti interni. Dopo l'installazione di Persistent Chat (client), è possibile aggiungere domini di utenti e gruppi utente alla categoria sala. È quindi possibile aggiungere questi utenti e gruppi all'appartenenza delle categorie di chat room.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Devi assicurarti che non ci siano nomi duplicati per gli utenti che vogliono apportare modifiche alle chat room persistenti. Se sono presenti nomi utente duplicati, modificarli in nomi diversi per sbloccare gli utenti da apportare tali modifiche. Se un utente ha nomi duplicati in Active Directory e prova a apportare modifiche nelle rispettive sale, viene visualizzato un messaggio di errore che chiede all'utente di contattare l'amministratore per la risoluzione.
+> È necessario assicurarsi che non vi siano nomi duplicati per gli utenti che desiderano apportare modifiche alle chat room persistente. Se sono presenti nomi duplicati, modificarli per consentire agli utenti di apportare le modifiche. Se un utente ha nomi duplicati in Active Directory e cerca di apportare modifiche nelle rispettive sale, verrà visualizzato un messaggio di errore che richiede all'utente di contattare l'amministratore per la risoluzione.
 
 
 
@@ -63,31 +63,31 @@ Il server di chat persistente si basa su Active Directory per il pool di utenti 
 
 <div>
 
-## <a name="how-category-scoping-works"></a>Funzionamento dell'ambito delle categorie
+## <a name="how-category-scoping-works"></a>Funzionamento degli ambiti delle categorie
 
-Una categoria specifica tutti gli utenti e i gruppi che possono essere membri in un elenco di appartenenza di una chat room persistente in quella categoria, in base alla relativa proprietà **AllowedMembers** . Se ad esempio si imposta la **AllowedMembers** della categoria su contoso.com, è possibile aggiungere un gruppo o un utente a *Contoso* come membro delle chat room della categoria. Se si imposta **AllowedMembers** su una categoria per le *vendite*, solo i gruppi e gli utenti della lista di distribuzione possono essere aggiunti come membri alle chat room della categoria. Analogamente, la proprietà **Creators** consente di controllare chi può creare chat room in quella categoria. Dopo la creazione della chat room, tutti i membri del gruppo **AllowedMembers** possono essere designati come **Manager** per le operazioni di gestione in corso nelle sale, ad esempio per le modifiche e le approvazioni.
+Una categoria specifica tutti gli utenti e i gruppi che possono essere membri di un elenco di appartenenze di una chat room persistente in quella categoria, in base alla relativa proprietà **AllowedMembers** . Ad esempio, se si imposta la categoria **AllowedMembers** su contoso.com, è possibile aggiungere qualsiasi gruppo o utente a *Contoso* come membro delle chat room della categoria. Se si imposta la proprietà **AllowedMembers** di una categoria su *Vendite* solo i gruppi e gli utenti di questa lista di distribuzione potranno essere aggiunti come membri delle chat room della categoria. Analogamente la proprietà **Creators** consente di controllare chi può creare le chat room nella categoria. Dopo aver creato una chat room, chiunque appartenga al gruppo di **AllowedMembers** può essere designato come **responsabile** per la gestione delle chat room (ad esempio, modifiche e approvazioni alle appartenenze).
 
 La definizione di **AllowedMembers** e **Creators** per una categoria ha i vantaggi seguenti:
 
-  - Tutte le chat room di questa categoria sono associate alle restrizioni impostate a livello di categoria. Puoi usare questa funzione per separare le chat room in base alle esigenze aziendali e ai criteri di accesso.
+  - Tutte le chat room nella categoria sono vincolate da restrizioni impostate a livello di categoria. È possibile usare questo aspetto per isolare le chat room in base ai criteri di accesso e alle esigenze aziendali.
 
-  - Un utente nell'elenco **Creators** può creare nuove chat room in quella categoria. Se vuoi implementare un sistema in cui un numero limitato di personale dell'organizzazione può creare chat room, questo controllo può essere usato per soddisfare tale requisito.
+  - Un utente incluso nell'elenco **Creator** può creare nuove chat room nella categoria. Se si desidera implementare un sistema in cui un numero limitato di persone dell'organizzazione può creare chat room, questo controllo può essere usato per soddisfare tale requisito.
 
 </div>
 
 <div>
 
-## <a name="room-category-strategies"></a>Strategie per le categorie di camere
+## <a name="room-category-strategies"></a>Strategie per le categorie di chat room
 
-Il **AllowedMembers** di una categoria deve includere tutti gli utenti che useranno qualsiasi chat room persistente in questa categoria. A seconda dei requisiti per proteggere i dati aziendali e garantire il livello di accesso appropriato, è consigliabile definire una o più categorie per specificare chi può cercare e partecipare alle sale. Se si vuole consentire solo un determinato set di utenti (helpdesk centrale o solo dipendenti a tempo pieno) per la creazione di sale, è possibile applicare l'ambito agli **autori** di una categoria per soddisfare tale requisito.
+Il **AllowedMembers** di una categoria deve includere tutti gli utenti che utilizzeranno qualsiasi chat room persistente in questa categoria. A seconda dei requisiti di protezione dei dati aziendali e di verifica del livello appropriato di accesso, è possibile definire una o più categorie per specificare chi può cercare e partecipare alle chat room. Se si vuole consentire solo a un determinato set di utenti (un helpdesk centrale o solo i dipendenti a tempo pieno) di creare chat room, è possibile limitare l'ambito di utenti **Creator** di una categoria in modo conseguente.
 
-Le categorie possono essere usate anche per creare muri etici. I muri etici impediscono qualsiasi conflitto di interessi in un'organizzazione. Ad esempio, un amministratore può creare chat room in una categoria solo per gli operatori commerciali, mentre le chat room in un'altra categoria possono essere usate solo dagli analisti.
+Le categorie possono essere inoltre usate per creare barriere etiche, le quali impediscono conflitti di interesse in un'organizzazione. Un amministratore può ad esempio creare chat room in una categoria solo per operatori di borsa mentre un'altra categoria può essere riservata agli analisti.
 
 <div>
 
 
 > [!NOTE]  
-> In Lync Server 2013, Persistent Chat Server, non è supportato l'accesso agli utenti federati. Se sono presenti chat provenienti da utenti federati nelle versioni precedenti del server di chat persistente, verranno migrati. Gli utenti federati vengono aggiunti come entità disabilitate.
+> In Lync Server 2013, il server Chat persistente non supporta l'accesso agli utenti federati. Se sono presenti chat da parte di utenti federati nelle versioni precedenti del server Chat persistente, verranno migrate. Gli utenti federati vengono aggiunti come entità disabilitate.
 
 
 
@@ -97,11 +97,11 @@ Le categorie possono essere usate anche per creare muri etici. I muri etici impe
 
 <div>
 
-## <a name="narrowing-the-members-to-user-groups"></a>Restringere i membri ai gruppi di utenti
+## <a name="narrowing-the-members-to-user-groups"></a>Limitazione dei membri a gruppi di utenti
 
-Quando si aggiunge un dominio a una categoria, i gruppi di utenti il cui oggetto gruppo è contenuto in tale dominio sono disponibili in modo che sia possibile specificarli come membri di sale della categoria.
+Quando si aggiunge un dominio all'ambito della categoria radice, i gruppi di utenti i cui oggetti gruppo sono inclusi in tale dominio vengono resi disponibili per essere specificati come membri delle chat room nella categoria in questione.
 
-Come regola generale, è consigliabile usare i contenitori di Active Directory, ad esempio i domini e le unità organizzative, per definire i **AllowedMembers** e i **creatori**di una categoria. Puoi aggiungere oggetti da qualsiasi dominio a un elenco **AllowedMembers** o **Creators** . Solo gli oggetti inclusi nell'elenco **AllowedMembers** o **Creators** possono essere aggiunti alle sale di tale categoria.
+È consigliabile, come regola generale, utilizzare i contenitori di Active Directory, ad esempio i domini e le unità organizzative, per la definizione di **AllowedMembers** e dei **creatori**di una categoria. È possibile aggiungere oggetti di qualsiasi dominio a un elenco **AllowedMembers** o **Creators**. Solo gli oggetti negli elenchi **AllowedMembers** e **Creators** possono essere aggiunti alle chat room nella categoria.
 
 </div>
 

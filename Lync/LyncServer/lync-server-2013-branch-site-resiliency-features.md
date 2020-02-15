@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Funzionalità di resilienza dei siti di succursale'
+title: 'Lync Server 2013: funzionalità di resilienza dei siti di succursale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184765
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a490de36322914235346cbc141784aab2c24f2ce
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bf5f477bcb5620112789a338339b6ca00bf9c3c5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737566"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42031040"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,52 +35,52 @@ ms.locfileid: "41737566"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-02-10_
+_**Ultimo argomento modificato:** 2014-02-10_
 
-Se si specifica la resilienza del sito di succursale, se la connessione WAN di un sito di succursale a un sito centrale non riesce o se il sito centrale non è raggiungibile, è necessario che le caratteristiche vocali seguenti continuino a essere disponibili:
+Se si fornisce la resilienza dei siti derivati, in caso di errore della connessione WAN di un sito derivato con un sito centrale o qualora il sito centrale non sia raggiungibile, le funzionalità vocali seguenti devono continuare a essere disponibili:
 
 <div>
 
 
-  - Chiamate PSTN (Public Switched Telephone Network) in ingresso e in uscita
+  - Chiamate PSTN in entrata e in uscita
 
-  - Chiamate aziendali tra utenti sia nello stesso sito che tra due siti diversi
+  - Chiamate Enterprise tra utenti dello stesso sito e di due siti diversi
 
-  - Gestione delle chiamate di base, incluso il blocco delle chiamate, il recupero e il trasferimento
+  - Gestione di base delle chiamate inclusi la messa in attesa, il recupero e il trasferimento
 
-  - Messaggistica istantanea a due parti
+  - Messaggistica istantanea tra due parti
 
-  - Inoltro di chiamata, squillo simultaneo di endpoint, delega delle chiamate e servizi di chiamata del team, ma solo se il delegante e il delegato, ad esempio un Manager e l'amministratore del responsabile, o tutti i membri del team, sono configurati nello stesso sito
+  - Inoltro di chiamata, squillo simultaneo degli endpoint, delega delle chiamate e servizi di intercettazione team, ma solo se delegante e delegato (ad esempio un capo e l'amministratore del capo), oppure tutti i membri del team, sono configurati nello stesso sito
 
-  - Record dettagli chiamata (CDRs)
+  - Registrazione dettagli chiamata (CDR)
 
-  - Servizi di conferenza telefonica con accesso esterno PSTN con l'operatore automatico di conferenza
+  - Conferenze telefoniche con accesso esterno PSTN con Operatore automatico conferenza
 
-  - Funzionalità della segreteria telefonica se si configurano le impostazioni di reinstradamento della segreteria telefonica. Per informazioni dettagliate, vedere [requisiti di resilienza dei siti secondari per Lync Server 2013](lync-server-2013-branch-site-resiliency-requirements.md).
+  - Funzionalità di segreteria telefonica, se si configurano le impostazioni di rerouting della segreteria telefonica. Per informazioni dettagliate, vedere [requisiti di resilienza dei siti di succursale per Lync Server 2013](lync-server-2013-branch-site-resiliency-requirements.md).
 
-  - Autenticazione e autorizzazione dell'utente
+  - Autenticazione e autorizzazione utente
 
-Le caratteristiche seguenti saranno disponibili solo se la soluzione di resilienza è una distribuzione su vasta scala di Lync Server presso il sito della filiale:
+Le funzionalità seguenti saranno disponibili solo se la soluzione di resilienza è una distribuzione di Lync Server su vasta scala nel sito di succursale:
 
-  - Servizi di conferenza di messaggistica istantanea, Web e A/V
+  - Conferenze di messaggistica istantanea, Web e audio/video
 
-  - Routing basato su presenza e non disturbare (DND) (dove le chiamate non squillano in estensioni con DND attivato)
+  - Routing in base a presenza e Non disturbare (le chiamate non squillano agli interni che hanno il Non disturbare attivato)
 
-  - Aggiornamento delle impostazioni di inoltro di chiamata
+  - Aggiornamento delle impostazioni di inoltro di chiamata.
 
-  - Applicazione Response Group Application e Call Park
+  - Applicazione Response Group e applicazione Parcheggio di chiamata
 
-  - Provisioning di nuovi telefoni e client, ma solo se i servizi di dominio Active Directory sono presenti nel sito della filiale.
+  - Provisioning di nuovi telefoni e client, ma solo se i servizi di dominio Active Directory sono presenti nel sito di succursale.
 
   - Enhanced 9-1-1 (E9-1-1)
     
-    Se E9-1-1 è distribuito e il trunk SIP nel sito centrale non è disponibile perché il collegamento WAN è in calo, il Survivable Branch Appliance instraderà le chiamate E9-1-1 al gateway della filiale locale. Per abilitare questa funzionalità, i criteri vocali degli utenti del sito della filiale devono instradare le chiamate al gateway locale in caso di errore WAN.
+    Se si distribuisce il servizio E9-1-1 e il trunk SIP nel sito centrale non è disponibile perché il collegamento WAN è inattivo, il Survivable Branch Appliance instraderà le chiamate di E9-1-1 al gateway di succursale locale. Per abilitare questa funzionalità, i criteri vocali degli utenti del sito di succursale devono eseguire il routing delle chiamate al gateway locale in caso di errore della WAN.
 
 <div>
 
 
 > [!NOTE]  
-> SBA (Survivable Branch Office) non è supportato per XMPP. Gli utenti ospitati in una configurazione SBA non saranno in grado di inviare messaggi istantanei o vedere la presenza con contatti XMPP.
+> SBA (Survivable Branch Office) non è supportato per XMPP. Gli utenti ospitati in una configurazione SBA non saranno in grado di inviare messaggi istantanei o vedere presenza con contatti XMPP.
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Collocazione dei server supportata per i componenti perimetrali'
+title: 'Lync Server 2013: collocazione dei server supportata per i componenti perimetrali'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183978
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bc12e442be98ba1fd962634460200ce749aca3d6
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e52d1c630bba8c93193c2e309d4d3299f45a6388
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731666"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029787"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41731666"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-08_
+_**Ultimo argomento modificato:** 2012-09-08_
 
-I servizi Edge di Access, Web Conferencing Edge service, A/V Edge e il servizio proxy XMPP sono collocati negli Edge Server. I server seguenti includono le funzioni necessarie per l'accesso degli utenti esterni e devono essere distribuite come server dedicati:
+Il servizio Access Edge, il servizio Web Conferencing Edge, il servizio A/V Edge e il servizio proxy XMPP sono collocati nei server perimetrali. I server seguenti forniscono le funzioni necessarie per l'accesso degli utenti esterni e devono essere distribuiti come server dedicati:
 
-  - Edge Server
+  - Server perimetrale
 
-  - Director (facoltativo)
+  - Server Director (facoltativo)
 
   - Proxy inverso
 
@@ -49,7 +49,7 @@ I servizi Edge di Access, Web Conferencing Edge service, A/V Edge e il servizio 
 
 
 > [!IMPORTANT]  
-> Non è necessario che il proxy inverso sia dedicato al servizio solo di Lync Server 2013. Ad esempio, puoi prestare servizi per pubblicare i servizi Web di Lync Server e contemporaneamente creare un sito Web pubblicato per un altro sito Web che non ha alcun impatto su Lync Server. Se si dispone già di un server proxy inverso nella rete perimetrale per supportare altri servizi, è possibile usarlo per Lync Server 2013.
+> Non è necessario che il proxy inverso sia dedicato alla gestione di solo Lync Server 2013. Ad esempio, è possibile fornire servizi per la pubblicazione dei servizi Web di Lync Server e fornire contemporaneamente un sito Web pubblicato per un altro sito Web che non ha alcun impatto su Lync Server. Se si dispone già di un server proxy inverso nella rete perimetrale per supportare altri servizi, è possibile utilizzarlo per Lync Server 2013.
 
 
 

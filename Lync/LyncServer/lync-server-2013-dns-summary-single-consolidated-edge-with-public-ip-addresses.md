@@ -1,5 +1,5 @@
 ---
-title: Riepilogo di DNS - singola topologia perimetrale consolidata con indirizzi IP pubblici
+title: Riepilogo DNS-singolo server perimetrale consolidato con indirizzi IP pubblici
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184601
 ms.date: 03/09/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: db3578bc7b1668bf8cb2268ed079e558e1cf1761
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 0d78bcb5733b2630ad69ebc7686885625ce6ed13
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733546"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036324"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="dns-summary---single-consolidated-edge-with-public-ip-addresses-in-lync-server-2013"></a>Riepilogo di DNS - singola topologia perimetrale consolidata con indirizzi IP pubblici in Lync Server 2013
+# <a name="dns-summary---single-consolidated-edge-with-public-ip-addresses-in-lync-server-2013"></a>Riepilogo DNS-singolo server perimetrale consolidato con indirizzi IP pubblici in Lync Server 2013
 
 </div>
 
@@ -35,60 +35,60 @@ ms.locfileid: "41733546"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2017-03-09_
+_**Ultimo argomento modificato:** 2017-03-09_
 
-I requisiti dei record DNS per l'accesso remoto a Lync Server 2013 sono abbastanza semplici rispetto a quelli per i certificati e le porte. Inoltre, molti record sono facoltativi, a seconda di come si configurano i client che usano Lync 2013 e se si Abilita la Federazione.
+I requisiti dei record DNS per l'accesso remoto a Lync Server 2013 sono relativamente semplici rispetto a quelli relativi ai certificati e alle porte. Inoltre, molti record sono facoltativi, a seconda del modo in cui vengono configurati i client che eseguono Lync 2013 e se si Abilita la Federazione.
 
-Per informazioni dettagliate sui requisiti DNS di Lync 2013, vedere [determinare i requisiti DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md).
+Per informazioni dettagliate sui requisiti DNS di Lync 2013, vedere [determine DNS requirements for Lync Server 2013](lync-server-2013-determine-dns-requirements.md).
 
-Per informazioni dettagliate sulla configurazione automatica dei client in cui è in uso Lync 2013 se non è configurato il DNS split-brain, vedere "configurazione automatica senza DNS split-brain" in [determinare i requisiti DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md).
+Per informazioni dettagliate sulla configurazione automatica dei client che eseguono Lync 2013 se il DNS split-brain non è configurato, vedere la sezione relativa alla configurazione automatica senza DNS split-brain in [determine DNS requirements for Lync Server 2013](lync-server-2013-determine-dns-requirements.md).
 
-La tabella seguente contiene un riepilogo dei record DNS necessari per supportare la singola topologia perimetrale consolidata visualizzata nella figura singola topologia perimetrale consolidata. Tieni presente che alcuni record DNS sono necessari solo per la configurazione automatica dei client Lync 2013 e Lync 2010. Se si prevede di usare gli oggetti Criteri di gruppo per configurare i client Lync, i record di configurazione automatica associati non sono necessari.
+Nella tabella seguente viene fornito un riepilogo dei record DNS necessari per supportare la topologia perimetrale consolidata singola illustrata nella relativa figura. Si noti che alcuni record DNS sono necessari solo per la configurazione automatica dei client Lync 2013 e Lync 2010. Se si prevede di utilizzare gli oggetti Criteri di gruppo per configurare i client Lync, i record di configurazione automatica associati non sono necessari.
 
 <div>
 
-## <a name="important-edge-server-network-adapter-requirements"></a>IMPORTANTE: requisiti della scheda di rete Edge Server
+## <a name="important-edge-server-network-adapter-requirements"></a>IMPORTANTE: requisiti della scheda di rete per i server perimetrali
 
-Per evitare problemi di routing, verificare che siano presenti almeno due schede di rete negli Edge Server e che il gateway predefinito sia impostato solo sulla scheda di rete associata all'interfaccia esterna. Ad esempio, come illustrato nella topologia di Edge consolidato con indirizzi IP pubblici in un [unico bordo consolidato con indirizzi IP pubblici in Lync Server 2013](lync-server-2013-single-consolidated-edge-with-public-ip-addresses.md), il gateway predefinito punta al router esterno nel perimetro Internet o nel firewall in grado di specificare indirizzi IP pubblici. La relazione di rete per le interfacce Edge Server è una relazione di route anziché una relazione NAT.
+Per evitare problemi di routing, verificare che siano presenti almeno due schede di rete nei server perimetrali e che il gateway predefinito sia impostato solo sulla scheda di rete associata all'interfaccia esterna. Ad esempio, come illustrato nella singola topologia perimetrale consolidata con indirizzi IP pubblici in un [unico perimetro consolidato con indirizzi IP pubblici in Lync Server 2013](lync-server-2013-single-consolidated-edge-with-public-ip-addresses.md), il gateway predefinito potrebbe puntare al router esterno nel perimetro o nel firewall Internet che può fornire un indirizzo IP pubblico. La relazione di rete per le interfacce del server perimetrale è una relazione di route anziché una relazione NAT.
 
-È possibile configurare due schede di rete nel server perimetrale nel modo seguente:
+È possibile configurare due schede di rete all'interno del server perimetrale come segue:
 
   - **Scheda di rete 1 (interfaccia interna)**
     
-    Interfaccia interna con 172.25.33.10 assegnati.
+    Interfaccia interna con indirizzo 172.25.33.10 assegnato.
     
-    Nessun gateway predefinito è definito.
+    Non è specificato alcun gateway predefinito.
     
-    Verificare che esista una route dalla rete che contiene l'interfaccia interna di Edge a tutte le reti che contengono server che includono client Lync Server 2013 o Lync Server 2013, ad esempio da 172.25.33.0 a 192.168.10.0.
+    Verificare che esista una route dalla rete che contiene l'interfaccia interna del server perimetrale a qualsiasi rete che contiene server che eseguono i client Lync 2013 o Lync Server 2013 (ad esempio, da 172.25.33.0 a 192.168.10.0).
 
   - **Scheda di rete 2 (interfaccia esterna)**
     
-    Alla scheda di rete vengono assegnati tre indirizzi IP pubblici, ad esempio 131.107.155.10 for Access Edge, 131.107.155.20 for Web Conferencing Edge, 131.107.155.30 for AV Edge.
+    A questa scheda di rete sono assegnati tre indirizzi IP pubblici, ad esempio 131.107.155.10 per Access Edge, 131.107.155.20 per Web Conferencing Edge, 131.107.155.30 per AV Edge.
     
     <div>
     
 
     > [!NOTE]
-    > È comunque possibile usare un singolo indirizzo IP per tutte le tre interfacce del servizio Edge. Anche se questo Salva gli indirizzi IP, richiede numeri di porta diversi per ogni servizio. Il numero di porta predefinito è 443/TCP, che garantisce che la maggior parte dei firewall remoti consentirà il traffico. La modifica dei valori della porta in (ad esempio) 5061/TCP per l'Access Edge, 444/TCP per il Web Conferencing Edge e 443/TCP per il Edge AV può causare problemi per gli utenti remoti in cui un firewall che si trovano dietro non consente il traffico su 5061/TCP e 444/TCP. Inoltre, tre indirizzi IP distinti semplificano la risoluzione dei problemi grazie alla possibilità di filtrare in base all'indirizzo IP.
+    > È possibile, sebbene non consigliabile, utilizzare un unico indirizzo IP per le tre interfacce del servizio Edge. Sebbene in questo modo sia possibile risparmiare indirizzi IP, è necessario un numero di porta separato per ciascun servizio. Il numero di porta predefinito è 443/TCP, porta questa che permette anche ai firewall più remoti di consentire il traffico. Se si cambia il valore delle porte, come ad esempio 5061/TCP per l'Access Edge, 444/TCP per il Web Conferencing Edge e 443/TCP A/V Edge, si potrebbero causare problemi agli utenti remoti qualora il firewall dietro il quale essi si trovano non consentisse il traffico su 5061/TCP e 444/TCP. Inoltre, la presenza di tre indirizzi IP differenti semplifica la risoluzione dei problemi, poiché questa è in grado di filtrare a seconda dell'indirizzo IP.
 
     
     </div>
     
-    L'indirizzo IP pubblico di Access Edge è primario con il set di gateway predefinito per il router pubblico (131.107.155.1).
+    L'indirizzo IP pubblico di Access Edge è quello primario, con il gateway predefinito impostato sul router pubblico (131.107.155.1).
     
-    Gli indirizzi IP pubblici di Web Conferencing e A/V Edge sono indirizzi IP aggiuntivi nella sezione **Advanced** delle proprietà di **Internet Protocol versione 4 (TCP/IPv4)** e **Internet Protocol versione 6 (TCP/IPv6)** delle **proprietà di connessione all'area locale** in Windows Server.
+    Gli indirizzi IP pubblici di Web conferencing e A/V Edge sono indirizzi IP aggiuntivi nella sezione **Avanzate** delle proprietà di **Internet Protocol Version 4 (TCP/IPv4)** e **Internet Protocol Version 6 (TCP/IPv6)** delle **Proprietà LAN** in Windows Server.
 
 <div>
 
 
 > [!TIP]
-> La configurazione di Edge Server con due schede di rete è una delle due opzioni. L'altra opzione consiste nell'usare una scheda di rete per il lato interno e tre schede di rete per il lato esterno del server perimetrale. Il vantaggio principale di questa opzione è una scheda di rete distinta per ogni servizio Edge Server e una raccolta di dati potenzialmente più concisa quando è necessaria la risoluzione dei problemi
+> La configurazione del server perimetrale con due schede di rete è una delle due opzioni. L'altra opzione consiste nell'utilizzare una scheda di rete per il lato interno e tre schede di rete per il lato esterno del server perimetrale. Il vantaggio principale di questa opzione è una scheda di rete distinta per ogni servizio server perimetrale e una raccolta di dati potenzialmente più concisa quando è necessaria la risoluzione dei problemi
 
 
 
 </div>
 
-### <a name="dns-records-required-for-single-consolidated-edge-with-public-ip-addresses-example"></a>Record DNS necessari per un singolo bordo consolidato con indirizzi IP pubblici (ad esempio)
+### <a name="dns-records-required-for-single-consolidated-edge-with-public-ip-addresses-example"></a>Record DNS necessari per la topologia perimetrale singola con indirizzi IP pubblici (esempio)
 
 <table>
 <colgroup>
@@ -100,9 +100,9 @@ Per evitare problemi di routing, verificare che siano presenti almeno due schede
 <thead>
 <tr class="header">
 <th>Posizione/tipo/porta</th>
-<th>Record FQDN/DNS</th>
+<th>FQDN/Record DNS</th>
 <th>Indirizzo IP/FQDN</th>
-<th>Mapping a/commenti</th>
+<th>Mapping a/Commenti</th>
 </tr>
 </thead>
 <tbody>
@@ -110,37 +110,37 @@ Per evitare problemi di routing, verificare che siano presenti almeno due schede
 <td><p>DNS esterno/A</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>131.107.155.10</p></td>
-<td><p>Ripetizione dell'interfaccia esterna di Access Edge (contoso), se necessario per tutti i domini SIP con gli utenti abilitati a Lync</p></td>
+<td><p>Interfaccia esterna di Access Edge (Contoso). Ripetere secondo necessità per tutti i domini SIP con utenti abilitati per Lync</p></td>
 </tr>
 <tr class="even">
 <td><p>DNS esterno/A</p></td>
 <td><p>webcon.contoso.com</p></td>
 <td><p>131.107.155.20</p></td>
-<td><p>Interfaccia esterna di Web Conferencing Edge</p></td>
+<td><p>Interfaccia esterna Web Conferencing Edge Server</p></td>
 </tr>
 <tr class="odd">
 <td><p>DNS esterno/A</p></td>
 <td><p>av.contoso.com</p></td>
 <td><p>131.107.155.30</p></td>
-<td><p>Interfaccia esterna Edge A/V</p></td>
+<td><p>Interfaccia esterna A/V Edge Server</p></td>
 </tr>
 <tr class="even">
 <td><p>DNS esterno/SRV/443</p></td>
 <td><p>_sip. _tls. contoso. com</p></td>
 <td><p>sip.contoso.com</p></td>
-<td><p>Interfaccia esterna di Access Edge. Necessario per la configurazione automatica dei client Lync 2013 e Lync 2010 per l'utilizzo esterno. Ripetere le esigenze per tutti i domini SIP con gli utenti abilitati a Lync.</p></td>
+<td><p>Interfaccia esterna di Access Edge. Necessario per la configurazione automatica dei client Lync 2013 e Lync 2010 per funzionare esternamente. Ripetere secondo necessità per tutti i domini SIP con utenti abilitati per Lync.</p></td>
 </tr>
 <tr class="odd">
 <td><p>DNS esterno/SRV/5061</p></td>
 <td><p>_sipfederationtls. _tcp. contoso. com</p></td>
 <td><p>sip.contoso.com</p></td>
-<td><p>Interfaccia esterna di Access Edge SIP necessaria per l'individuazione automatica di DNS dei partner federati noti come "dominio SIP consentito" (chiamata federazione avanzata nelle versioni precedenti). Ripetere la procedura necessaria per tutti i domini SIP con gli utenti abilitati a Lync</p></td>
+<td><p>Interfaccia esterna SIP di Access Edge. Necessaria per l'individuazione DNS automatica di partner federati, nota come dominio SIP consentito, nonché come federazione avanzata nelle versioni precedenti. Ripetere secondo necessità per tutti i domini SIP con utenti abilitati per Lync.</p></td>
 </tr>
 <tr class="even">
 <td><p>DNS interno/A</p></td>
 <td><p>lsedge.contoso.net</p></td>
 <td><p>172.25.33.10</p></td>
-<td><p>Interfaccia interna del bordo consolidato</p></td>
+<td><p>Interfaccia interna perimetrale consolidata</p></td>
 </tr>
 </tbody>
 </table>
@@ -150,7 +150,7 @@ Per evitare problemi di routing, verificare che siano presenti almeno due schede
 
 
 > [!IMPORTANT]
-> I record elencati nella tabella precedente vengono visualizzati con un'estensione <EM>.NET</EM> o con estensione <EM>com</EM> per evidenziare la zona in cui devono trovarsi se non si usa il DNS split-brain. Se si usa il DNS con suddivisione in cervello, tutti i record si troverebbero nella stessa zona, con l'unica distinzione che indica se si trovano nella versione interna o esterna. Per informazioni dettagliate, vedere "DNS con suddivisione del cervello" in <A href="lync-server-2013-determine-dns-requirements.md">determinare i requisiti DNS per Lync Server 2013</A>.
+> I record elencati nella tabella precedente sono visualizzati con estensione <EM>net</EM> o <EM>com</EM>, per evidenziare la zona in cui devono trovarsi se non si utilizza il DNS di tipo split brain. Se si utilizza il DNS di tipo split brain, tutti i record devono trovarsi nella stessa zona, con l'unica distinzione tra versione interna ed esterna. Per informazioni dettagliate, vedere "DNS split-brain" in <A href="lync-server-2013-determine-dns-requirements.md">determine DNS requirements for Lync Server 2013</A>.
 
 
 
@@ -160,7 +160,7 @@ Per evitare problemi di routing, verificare che siano presenti almeno due schede
 
 <div>
 
-## <a name="records-required-for-federation"></a>Record necessari per la Federazione
+## <a name="records-required-for-federation"></a>Record necessari per la federazione
 
 
 <table>
@@ -174,8 +174,8 @@ Per evitare problemi di routing, verificare che siano presenti almeno due schede
 <tr class="header">
 <th>Posizione/tipo/porta</th>
 <th>FQDN</th>
-<th>Indirizzo IP/record host FQDN</th>
-<th>Mapping a/commenti</th>
+<th>Indirizzo IP/FQDN record host</th>
+<th>Si mappa a/Commenti</th>
 </tr>
 </thead>
 <tbody>
@@ -183,12 +183,12 @@ Per evitare problemi di routing, verificare che siano presenti almeno due schede
 <td><p>DNS esterno/SRV/5061</p></td>
 <td><p>_sipfederationtls. _tcp. contoso. com</p></td>
 <td><p>sip.contoso.com</p></td>
-<td><p>Interfaccia esterna di Access Edge SIP necessaria per l'individuazione automatica del DNS della Federazione ad altri potenziali partner federativi ed è nota come "domini SIP consentiti" (chiamata federazione avanzata nelle versioni precedenti). Ripetere la procedura necessaria per tutti i domini SIP con gli utenti abilitati a Lync</p>
+<td><p>Interfaccia esterna SIP di Access Edge. Necessaria per l'individuazione DNS automatica di partner federati, nota come dominio SIP consentito, nonché come federazione avanzata nelle versioni precedenti. Ripetere secondo necessità per tutti i domini SIP con utenti abilitati per Lync.</p>
 
 
 
 > [!IMPORTANT]
-> Questo record SRV è necessario per la mobilità e la camera di compensazione delle notifiche push
+> Questo record SRV è necessario per la mobilità e il fornitore di servizi di accesso a terze parti delle notifiche push
 
 </td>
 </tr>
@@ -200,7 +200,7 @@ Per evitare problemi di routing, verificare che siano presenti almeno due schede
 
 <div>
 
-## <a name="dns-summary-for-extensible-messaging-and-presence-protocol"></a>Riepilogo DNS per il protocollo di messaggistica e presenza estensibile
+## <a name="dns-summary-for-extensible-messaging-and-presence-protocol"></a>Riepilogo DNS per il protocollo XMPP
 
 
 <table>
@@ -214,8 +214,8 @@ Per evitare problemi di routing, verificare che siano presenti almeno due schede
 <tr class="header">
 <th>Posizione/tipo/porta</th>
 <th>FQDN</th>
-<th>Indirizzo IP/record host FQDN</th>
-<th>Mapping a/commenti</th>
+<th>Indirizzo IP/FQDN record host</th>
+<th>Si mappa a/Commenti</th>
 </tr>
 </thead>
 <tbody>
@@ -223,13 +223,13 @@ Per evitare problemi di routing, verificare che siano presenti almeno due schede
 <td><p>DNS esterno/SRV/5269</p></td>
 <td><p>_xmpp-server. _tcp. contoso. com</p></td>
 <td><p>xmpp.contoso.com</p></td>
-<td><p>Interfaccia esterna proxy XMPP nel pool di servizi o Edge di Access. Ripetere l'impostazione necessaria per tutti i domini SIP interni con gli utenti abilitati a Lync in cui è consentito il contatto con i contatti XMPP tramite la configurazione dei criteri di accesso esterno tramite un criterio globale, il criterio del sito in cui si trova l'utente o i criteri degli utenti applicati alla Utenti abilitati per Lync. Un dominio XMPP consentito deve essere configurato anche nei criteri dei partner federati XMPP. Vedere gli argomenti in <strong>vedere anche</strong> per ulteriori dettagli</p></td>
+<td><p>Interfaccia esterna del proxy XMPP nel servizio Access Edge o nel pool di server perimetrali. Ripetere quanto necessario per tutti i domini SIP interni con gli utenti abilitati per Lync, in cui è consentito il contatto con i contatti XMPP tramite la configurazione del criterio di accesso esterno tramite un criterio globale, il criterio del sito in cui si trova l'utente o il criterio utente applicato all' Utente abilitato per Lync. Un dominio XMPP consentito deve inoltre essere configurato nel criterio dei partner XMPP federati. Per informazioni dettagliate, vedere gli argomenti in <strong>Vedere anche</strong></p></td>
 </tr>
 <tr class="even">
 <td><p>DNS esterno/A</p></td>
-<td><p>xmpp.contoso.com (ad esempio)</p></td>
-<td><p>Indirizzo IP del servizio Access Edge nell'Edge Server o nel pool di Edge che ospita il proxy XMPP</p></td>
-<td><p>Punta al servizio di Access Edge o al pool di Edge che ospita il servizio proxy XMPP. In genere, il record SRV creato punterà al record host (A o AAAA)</p></td>
+<td><p>xmpp.contoso.com (esempio)</p></td>
+<td><p>Indirizzo IP del servizio Access Edge nel server perimetrale o nel pool perimetrale che ospita il proxy XMPP</p></td>
+<td><p>Punta al servizio Access Edge o al pool di server perimetrali che ospita il servizio proxy XMPP. Il record SRV creato punterà a questo record host (A o AAAA).</p></td>
 </tr>
 </tbody>
 </table>

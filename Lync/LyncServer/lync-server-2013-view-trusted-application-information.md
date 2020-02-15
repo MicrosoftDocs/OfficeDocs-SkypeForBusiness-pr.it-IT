@@ -12,20 +12,20 @@ ms:contentKeyID: 49733702
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bf8a95fa58ea1398c281fc5cba2f8b08a5ec902e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bca1ec48696cab7a0dffa1881dba34a589954874
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757390"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036364"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="view-trusted-application-information-in-lync-server-2013"></a>Visualizzare informazioni attendibili sull'applicazione in Lync Server 2013
+# <a name="view-trusted-application-information-in-lync-server-2013"></a>Visualizzare le informazioni sull'applicazione attendibili in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41757390"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-Per visualizzare informazioni sulle applicazioni attendibili, è possibile usare Windows PowerShell e il cmdlet **Get-CsTrustedApplication** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile visualizzare informazioni sulle applicazioni attendibili utilizzando Windows PowerShell e il cmdlet **Get-CsTrustedApplication** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
-## <a name="to-view-trusted-applications"></a>Per visualizzare le applicazioni attendibili
+## <a name="to-view-trusted-applications"></a>Per visualizzare le applicazioni affidabili
 
   - Per visualizzare tutte le applicazioni attendibili, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
     
         Get-CsConferenceDisclaimer
     
-    Questo comando restituisce informazioni simili a quelle seguenti per ogni applicazione attendibile:
+    Il comando restituisce informazioni simili a questa, per ciascuna applicazione affidabile:
     
         Identity               : CN={5dedf4b0-a590-49b3-80cf-f16f914bbef9},CN=Application Contacts,CN=RTC
                                  Service,CN=Services,CN=Configuration,DC=litware,DC=com
@@ -65,7 +65,7 @@ Per visualizzare informazioni sulle applicazioni attendibili, è possibile usare
         ExUmEnabled            : False
         Enabled                : True
     
-    Per informazioni dettagliate, vedere [Get-CsTrustedApplication](https://docs.microsoft.com/powershell/module/skype/Get-CsTrustedApplication).
+    For details, see [Get-CsTrustedApplication](https://docs.microsoft.com/powershell/module/skype/Get-CsTrustedApplication).
 
 </div>
 

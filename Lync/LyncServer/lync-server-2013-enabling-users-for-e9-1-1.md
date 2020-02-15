@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Abilitazione degli utenti per il E9-1-1'
+title: 'Lync Server 2013: attivazione degli utenti per il servizio E9-1-1'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183884
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 86d5032defc7322e96662dcfe6357bd30c598e45
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1a5ba14f24694bf3b9485e60102007a0bfee788c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735606"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42031090"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="enabling-users-for-e9-1-1-in-lync-server-2013"></a>Abilitazione degli utenti per E9-1-1 in Lync Server 2013
+# <a name="enabling-users-for-e9-1-1-in-lync-server-2013"></a>Abilitazione degli utenti per il servizio E9-1-1 in Lync Server 2013
 
 </div>
 
@@ -35,24 +35,24 @@ ms.locfileid: "41735606"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-06_
+_**Ultimo argomento modificato:** 2012-06-06_
 
-Durante la registrazione del client, Lync Server usa un criterio di posizione per configurare le proprietà di E9-1-1 per gli utenti abilitati per VoIP aziendale. Questo criterio contiene le impostazioni che definiscono la modalità di implementazione di E9-1-1. Ad esempio, il criterio di posizione contiene informazioni come la stringa di chiamata di emergenza e se un utente deve immettere manualmente una posizione se il servizio informazioni sulla posizione non ne fornisce automaticamente uno. Per una definizione completa di un criterio di posizione, vedere [definizione dei criteri di posizione per Lync Server 2013](lync-server-2013-defining-the-location-policy.md).
+Durante la registrazione client, Lync Server utilizza un criterio percorso per configurare le proprietà di E9-1-1 per gli utenti abilitati per VoIP aziendale. In un criterio percorso sono contenute tutte le impostazioni che definiscono come verrà implementata la funzionalità E9-1-1. Ad esempio, il criterio percorso contiene informazioni quali la stringa di chiamata di emergenza e se un utente è tenuto a immettere manualmente una posizione se il servizio informazioni percorso non ne fornisce automaticamente una. Per una definizione completa dei criteri percorso, vedere [define the location policy for Lync Server 2013](lync-server-2013-defining-the-location-policy.md).
 
-Lync Server può assegnare un criterio di posizione ai client in base alla subnet o agli utenti in base a un criterio globale, per sito o per utente. Per decidere come abilitare gli utenti, è necessario prima rispondere alle domande seguenti.
+Lync Server è in grado di assegnare un criterio percorso ai client basati sulla subnet o agli utenti in base a un criterio globale, per sito o per utente. Per decidere come abilitare gli utenti, è consigliabile innanzitutto tenere conto degli aspetti seguenti.
 
-  - **Si prevede di abilitare tutti gli utenti o di limitare il supporto a specifiche aree geografiche dell'organizzazione?**  
-    È possibile assegnare una posizione a tutti gli utenti dell'organizzazione usando un criterio di posizione globale. Tuttavia, assegnando un criterio di posizione a un sito di rete di Lync Server e aggiungendo subnet al sito, è possibile limitare il supporto di E9-1-1 ai percorsi selezionati all'interno dell'organizzazione e specificare il comportamento di routing di E9-1-1 per ogni singolo sito.
-
-<!-- end list -->
-
-  - **Si prevede di abilitare singoli utenti tramite un criterio utente?**  
-    Per personalizzare il supporto di E9-1-1, è possibile assegnare i criteri di posizione direttamente a utenti specifici o oggetti contatto telefonico di area comune.
+  - **Valutare se si prevede di abilitare tutti gli utenti o di limitare il supporto a specifiche aree geografiche dell'organizzazione**  
+    È possibile assegnare una posizione a tutti gli utenti dell'organizzazione utilizzando un criterio percorso globale. Tuttavia, assegnando un criterio percorso a un sito di rete di Lync Server e quindi aggiungendo subnet al sito, è possibile limitare il supporto di E9-1-1 ai percorsi selezionati all'interno dell'organizzazione e specificare il comportamento di routing di E9-1-1 per ogni singolo sito.
 
 <!-- end list -->
 
-  - **Quando i client vagano all'esterno della rete o si connettono da una subnet non definita, i client devono essere ancora abilitati per E9-1-1?**  
-    Se agli utenti viene assegnato un criterio di posizione globale, sito o per utente, è possibile che sia necessario immettere manualmente una posizione nel client se il client non si trova all'interno di una subnet definita o se il servizio informazioni sulla posizione non è stato trovato. Per informazioni dettagliate, vedere [definizione dell'esperienza utente per l'acquisizione manuale di una posizione in Lync Server 2013](lync-server-2013-defining-the-user-experience-for-manually-acquiring-a-location.md).
+  - **Valutare se si prevede di abilitare singoli utenti mediante un criterio utente**  
+    È possibile assegnare criteri percorso direttamente a utenti specifici o a oggetti contatto di telefoni di area comune se si desidera personalizzare il relativo supporto E9-1-1.
+
+<!-- end list -->
+
+  - **Valutare se abilitare per E9-1-1 i client che effettuano il roaming all'esterno della rete o si connettono da una subnet non definita**  
+    Se agli utenti viene assegnato un criterio percorso globale, sito o per utente, è possibile che venga richiesto di immettere manualmente una posizione nel client se il client non si trova all'interno di una subnet definita o se il servizio informazioni percorso non è stato trovato. Per informazioni dettagliate, vedere [definizione dell'esperienza utente per l'acquisizione manuale di una posizione in Lync Server 2013](lync-server-2013-defining-the-user-experience-for-manually-acquiring-a-location.md).
 
 </div>
 

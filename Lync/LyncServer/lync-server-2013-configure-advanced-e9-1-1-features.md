@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurare le funzionalità avanzate di E9-1-1'
+title: 'Lync Server 2013: configurare le funzionalità di E9-1-1 avanzate'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184646
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9805f505896cb27b7e895c0a586ffff3c6847fdb
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: af8c376620c37af533aabec318ccbf1b1b745978
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757850"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028767"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41757850"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-06_
+_**Ultimo argomento modificato:** 2012-06-06_
 
-Lync Server 2013 include le caratteristiche seguenti che è possibile usare per personalizzare la distribuzione di E9-1-1:
+Lync Server 2013 include le funzionalità seguenti che è possibile utilizzare per personalizzare la distribuzione di E9-1-1:
 
-  - Interfaccia del servizio Web per connettere il server delle informazioni sulla posizione a un'applicazione SNMP.
+  - Interfaccia Web per la connessione del server Informazioni percorso a un'applicazione SNMP.
 
-  - Interfaccia del servizio Web per la connessione a un database di origine della posizione secondario.
+  - Interfaccia di servizio Web per la connessione a un database SLS (Secondary Location Source).
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Configurare un'applicazione SNMP in Lync Server 2013](lync-server-2013-configure-an-snmp-application.md)
 
-  - [Configurare un servizio di informazioni sulla posizione secondaria in Lync Server 2013](lync-server-2013-configure-a-secondary-location-information-service.md)
+  - [Configurare un servizio informazioni percorso secondario in Lync Server 2013](lync-server-2013-configure-a-secondary-location-information-service.md)
 
 </div>
 

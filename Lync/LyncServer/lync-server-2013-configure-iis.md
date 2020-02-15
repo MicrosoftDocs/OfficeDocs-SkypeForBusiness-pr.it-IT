@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare IIS'
+title: 'Lync Server 2013: configurazione di IIS'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185248
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6c5eb1d20997ab05f6b40c3d8b527230eef04174
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 864de129804285aaebb6584663fab2808a19ba31
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729826"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036234"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41729826"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2011-12-16_
+_**Ultimo argomento modificato:** 2011-12-16_
 
-La configurazione di Internet Information Services (IIS) per Lync Server 2013 prevede l'installazione dei componenti corretti per supportare i servizi Web necessari per Lync Server 2013. Per informazioni dettagliate sull'installazione di IIS, vedere [configurazione di IIS in Lync Server 2013](lync-server-2013-iis-configuration.md). Se si dispone di un criterio per eseguire la configurazione guidata sicurezza nei server prima di inserirli in servizio o come parte tipica della manutenzione, vedere [riattivare il server dopo la configurazione guidata della sicurezza chiude le porte in IIS](lync-server-2013-re-activate-server-after-security-configuration-wizard-closes-ports-in-iis.md) per informazioni su un effetto collaterale dell'esecuzione della procedura guidata che chiuderà le porte in una configurazione di IIS di Lync Server 2013.
+La configurazione di Internet Information Services (IIS) per Lync Server 2013 implica l'installazione dei componenti corretti per il supporto dei servizi Web necessari per Lync Server 2013. Per informazioni dettagliate sull'installazione di IIS, vedere [configurazione di IIS in Lync Server 2013](lync-server-2013-iis-configuration.md). Se si dispone di un criterio per eseguire la configurazione guidata protezione sui server prima di metterli in servizio o come parte tipica della manutenzione, vedere [reactivate server after Security Configuration Wizard chiude le porte in IIS](lync-server-2013-re-activate-server-after-security-configuration-wizard-closes-ports-in-iis.md) per informazioni su un effetto collaterale dell'esecuzione della procedura guidata che consente di chiudere le porte su una configurazione IIS di Lync Server 2013.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Configurazione di IIS in Lync Server 2013](lync-server-2013-iis-configuration.md)
 
-  - [Riattivare il server dopo la chiusura delle porte in IIS da parte della Configurazione guidata impostazioni di sicurezza](lync-server-2013-re-activate-server-after-security-configuration-wizard-closes-ports-in-iis.md)
+  - [Riattivare il server dopo la procedura guidata per la configurazione della sicurezza chiude le porte in IIS](lync-server-2013-re-activate-server-after-security-configuration-wizard-closes-ports-in-iis.md)
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Gestione dei servizi di emergenza avanzati e del servizio di posizione'
+title: 'Lync Server 2013: Managing Enhanced 9-1-1 and the location Service'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733600
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 251d76cd7fcdc04834dbab3146ac39847630f45c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6ea5107ddbcc4e98473f58c43d10fe8f745b2e64
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729286"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029497"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="managing-enhanced-9-1-1-and-the-location-service-in-lync-server-2013"></a>Gestione dei servizi di emergenza avanzati e del servizio di posizione in Lync Server 2013
+# <a name="managing-enhanced-9-1-1-and-the-location-service-in-lync-server-2013"></a>Managing Enhanced 9-1-1 e The location Service in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41729286"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Lync Server 2013 supporta le chiamate avanzate 9-1-1 (E9-1-1) dai client Lync e dai dispositivi Lync Phone Edition. Quando si configura Lync Server 2013 per E9-1-1, le chiamate di emergenza effettuate da Lync 2013 o Lync Phone Edition includono le informazioni sulla posizione di risposta alle emergenze dal database del servizio informazioni sulla posizione. Usare le procedure descritte in questa sezione per gestire i criteri di posizione.
+Lync Server 2013 supporta la chiamata avanzata 9-1-1 (E9-1-1) dai client Lync e dai dispositivi Lync Phone Edition. Quando si configura Lync Server 2013 per il servizio E9-1-1, le chiamate di emergenza effettuate da Lync 2013 o Lync Phone Edition includono le informazioni di Emergency Response Location (elfi) dal database dei servizi di informazioni sulla posizione. Usare le procedure descritte in questa sezione per gestire i criteri percorso.
 
 <div>
 
 
 > [!NOTE]  
-> Per informazioni dettagliate sulla distribuzione di funzionalità vocali avanzate per l'organizzazione, ad esempio E9-1-1 e il servizio informazioni sulla posizione, vedere <A href="lync-server-2013-deploying-advanced-enterprise-voice-features.md">distribuzione di funzionalità vocali avanzate di Enterprise in Lync Server 2013</A>.
+> Per informazioni dettagliate sulla distribuzione di funzionalità avanzate di VoIP aziendale, ad esempio E9-1-1 e il servizio informazioni percorso, vedere <A href="lync-server-2013-deploying-advanced-enterprise-voice-features.md">Deploying Advanced Enterprise Voice features in Lync Server 2013</A>.
 
 
 
@@ -51,9 +51,9 @@ Lync Server 2013 supporta le chiamate avanzate 9-1-1 (E9-1-1) dai client Lync e 
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Gestione dei criteri di posizione in Lync Server 2013](lync-server-2013-managing-location-policy.md)
+  - [Gestione dei criteri percorso in Lync Server 2013](lync-server-2013-managing-location-policy.md)
 
 </div>
 

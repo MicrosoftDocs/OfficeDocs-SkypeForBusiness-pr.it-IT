@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella FileTransfers'
+title: 'Lync Server 2013: tabella FileTransfers'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184118
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: de8a3e69c670c273bcdd91ac5895c0b1f0b15d80
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9aedca2ae840947aef4ccc6ec7bff4ba825090a0
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743364"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028487"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41743364"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-28_
+_**Ultimo argomento modificato:** 2012-09-28_
 
 Ogni record rappresenta una sessione di trasferimento file.
 
@@ -58,18 +58,18 @@ Ogni record rappresenta una sessione di trasferimento file.
 <tbody>
 <tr class="odd">
 <td><p><strong>SessionIdTime</strong></p></td>
-<td><p>DateTime</p></td>
-<td><p>Primaria, straniera</p></td>
-<td><p>Ora della richiesta della sessione. Usato in combinazione con <strong>SessionIdSeq</strong> per identificare in modo univoco una sessione. Per altre informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella finestre di dialogo in Lync Server 2013</a> .</p></td>
+<td><p>datetime</p></td>
+<td><p>Primaria, esterna</p></td>
+<td><p>Data e ora della richiesta di sessione. Valore utilizzato insieme a <strong>SessionIdSeq</strong> per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SessionIdSeq</strong></p></td>
 <td><p>int</p></td>
-<td><p>Primaria, straniera</p></td>
-<td><p>Numero ID per identificare la sessione. Usato in combinazione con <strong>SessionIdTime</strong> per identificare in modo univoco una sessione. Per altre informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella finestre di dialogo in Lync Server 2013</a> .</p></td>
+<td><p>Primaria, esterna</p></td>
+<td><p>Numero ID per identificare la sessione. Valore utilizzato insieme a <strong>SessionIdTime</strong> per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Nome file</strong></p></td>
+<td><p><strong>FileName</strong></p></td>
 <td><p>nvarchar (256)</p></td>
 <td></td>
 <td><p>Nome del file.</p></td>
@@ -78,31 +78,31 @@ Ogni record rappresenta una sessione di trasferimento file.
 <td><p><strong>Fileidentity</strong></p></td>
 <td><p>uniqueidentifier</p></td>
 <td></td>
-<td><p>Identificatore univoco per distinguere tra i trasferimenti di file che coinvolgono lo stesso nome file.</p></td>
+<td><p>Identificatore univoco che distingue trasferimenti diversi che interessano lo stesso nome file.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Cookie</strong></p></td>
 <td><p>nvarchar (128)</p></td>
 <td><p>Principale</p></td>
-<td><p>Usato per identificare ogni messaggio di follow-up associato a questo.</p></td>
+<td><p>Valore utilizzato per identificare ogni messaggio successivo come associato a questo.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Accettare</strong></p></td>
 <td><p>po'</p></td>
 <td></td>
-<td><p>Può essere TRUE o NULL. Se TRUE, quindi Reject e Cancel saranno NULL.</p></td>
+<td><p>Può essere TRUE o NULL. Se TRUE, allora Reject e Cancel saranno NULL.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Rifiutare</strong></p></td>
+<td><p><strong>Rifiuta</strong></p></td>
 <td><p>po'</p></td>
 <td></td>
-<td><p>Può essere TRUE o NULL. Se TRUE, accetta e Annulla sarà NULL.</p></td>
+<td><p>Può essere TRUE o NULL. Se TRUE, allora Accept e Cancel saranno NULL.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Annulla</strong></p></td>
 <td><p>po'</p></td>
 <td></td>
-<td><p>Può essere TRUE o NULL. Se TRUE, accetta e rifiuta sarà NULL.</p></td>
+<td><p>Può essere TRUE o NULL. Se TRUE, allora Accept e Reject saranno NULL.</p></td>
 </tr>
 </tbody>
 </table>

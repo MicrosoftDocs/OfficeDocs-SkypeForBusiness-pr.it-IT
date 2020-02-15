@@ -12,20 +12,20 @@ ms:contentKeyID: 48184545
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 632c76e04c58abd5458de78d17c4a8f6bb079e6d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f2ad6cf0792898994ba2b31f94cccf878337d1d9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41754136"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036978"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-devices-in-lync-server-2013"></a>Pianificazione per i dispositivi in Lync Server 2013
+# <a name="planning-for-devices-in-lync-server-2013"></a>Pianificazione dei dispositivi in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41754136"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-28_
+_**Ultimo argomento modificato:** 2013-02-28_
 
-Lync Server 2013 include Lync Phone Edition, software che viene eseguito su dispositivi qualificati e offre funzionalità di telefonia tradizionali e avanzate, sicurezza integrata, gestibilità e altro ancora. Lync Phone Edition funziona allo stesso modo con Lync Server 2013 come avviene con Lync Server 2010. Per informazioni dettagliate sulla pianificazione dei dispositivi, vedere [pianificazione dei dispositivi](http://go.microsoft.com/fwlink/p/?linkid=285880) nella raccolta TechNet di Lync Server 2010.
+Lync Server 2013 include Lync Phone Edition, software che viene eseguito su dispositivi qualificati e fornisce funzionalità di telefonia tradizionali e avanzate, sicurezza integrata, gestibilità e altro ancora. Lync Phone Edition è compatibile con Lync Server 2013 come avviene con Lync Server 2010. Per informazioni dettagliate sulla pianificazione per i dispositivi, vedere [Planning for Devices](http://go.microsoft.com/fwlink/p/?linkid=285880) in the Lync Server 2010 TechNet Library.
 
 <div>
 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Distribuzione di dispositivi](http://go.microsoft.com/fwlink/p/?linkid=285881)  
-[Supporto per software e infrastruttura per client e dispositivi](http://go.microsoft.com/fwlink/p/?linkid=285882)  
+[Distribuzione dei dispositivi](http://go.microsoft.com/fwlink/p/?linkid=285881)  
+[Supporto dell'infrastruttura e del software di dispositivi e client](http://go.microsoft.com/fwlink/p/?linkid=285882)  
   
 
 </div>

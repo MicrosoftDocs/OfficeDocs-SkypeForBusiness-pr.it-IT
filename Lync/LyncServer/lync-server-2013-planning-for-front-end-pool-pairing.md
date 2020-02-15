@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Pianificazione dell'abbinamento dei pool Front End"
+title: "Lync Server 2013: pianificazione dell'abbinamento dei pool Front End"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185508
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d85f6e19f3aa74c09a522e737d1223095f17d7c1
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4daeb3ea88570afaf9fc90c0e252466be67ed192
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725396"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036776"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-front-end-pool-pairing-in-lync-server-2013"></a>Pianificazione dell'abbinamento dei pool Front End in Lync Server 2013
+# <a name="planning-for-front-end-pool-pairing-in-lync-server-2013"></a>Pianificazione dell'abbinamento dei pool Front end in Lync Server 2013
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41725396"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-28_
+_**Ultimo argomento modificato:** 2012-09-28_
 
-Per le migliori capacità di ripristino di emergenza in Lync Server 2013, distribuire coppie di pool Front-end in due siti dislocati geograficamente. Ogni sito contiene un pool Front-end che viene associato a un pool Front-End corrispondente nell'altro sito. Entrambi i siti sono attivi e il servizio di backup di Lync Server offre la replica dei dati in tempo reale per sincronizzare i pool. Il servizio di backup è una nuova funzionalità di Lync Server 2013, progettata per supportare la soluzione di ripristino di emergenza. Viene installata in un pool Front-end quando si associa il pool a un altro pool Front-end.
+Per le migliori funzionalità di ripristino di emergenza in Lync Server 2013, distribuire coppie di pool Front end tra due siti dislocati in aree geografiche diverse. Ogni sito contiene un pool Front end che è associato a un pool Front End corrispondente nell'altro sito. Entrambi i siti sono attivi e il servizio di backup di Lync Server fornisce la replica dei dati in tempo reale per mantenere sincronizzati i pool. Il servizio di backup è una nuova funzionalità di Lync Server 2013, progettata per supportare la soluzione di ripristino di emergenza. L'installazione viene eseguita in un pool Front end quando si associa il pool a un altro pool Front end.
 
-Se il pool in un sito non riesce, è possibile eseguire il failover degli utenti da tale pool al pool nell'altro sito, che fornisce quindi Servizi a tutti gli utenti in entrambi i pool. Per scopi di pianificazione della capacità, ogni pool deve essere progettato per gestire i carichi di lavoro di tutti gli utenti in entrambi i pool in caso di emergenza.
+Se il pool in un sito ha esito negativo, è possibile eseguire il failover degli utenti da tale pool al pool nell'altro sito, che fornisce quindi Servizi a tutti gli utenti in entrambi i pool. A scopo di pianificazione della capacità, ogni pool deve essere progettato per gestire i carichi di lavoro di tutti gli utenti in entrambi i pool in caso di emergenza.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Opzioni di associazione e procedure consigliate per la combinazione di pool supportate per Lync Server 2013](lync-server-2013-supported-pool-pairing-options-and-best-practices.md)
+  - [Opzioni di abbinamento del pool supportate e procedure consigliate per Lync Server 2013](lync-server-2013-supported-pool-pairing-options-and-best-practices.md)
 
-  - [Eseguire il backup delle relazioni di registrazione in Lync Server 2013](lync-server-2013-backup-registrar-relationships.md)
+  - [Relazioni di registrazione di backup in Lync Server 2013](lync-server-2013-backup-registrar-relationships.md)
 
-  - [Tempo di ripristino per il failover e il failback dei pool in Lync Server 2013](lync-server-2013-recovery-time-for-pool-failover-and-pool-failback.md)
+  - [Tempo di ripristino per il failover del pool e il failback del pool in Lync Server 2013](lync-server-2013-recovery-time-for-pool-failover-and-pool-failback.md)
 
   - [Failover dell'archivio di gestione centrale in Lync Server 2013](lync-server-2013-central-management-store-failover.md)
 
-  - [Sicurezza dei dati per l'abbinamento dei pool Front End in Lync Server 2013](lync-server-2013-front-end-pool-pairing-data-security.md)
+  - [Sicurezza dei dati per l'abbinamento del pool Front end in Lync Server 2013](lync-server-2013-front-end-pool-pairing-data-security.md)
 
 </div>
 

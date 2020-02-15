@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Requisiti DNS'
+title: 'Lync Server 2013: requisiti DNS'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183690
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dabb05b40acc6536b57e00e6355c56bcdc3017df
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1d374c946a8093f6464b8c673d548cc4784bfede
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737356"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029587"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41737356"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-29_
+_**Ultimo argomento modificato:** 2012-06-29_
 
-Gli argomenti seguenti descrivono i requisiti DNS per un pool Front-end e un server Standard Edition.
+Negli argomenti seguenti vengono descritti i requisiti DNS per un pool Front End e un server Standard Edition.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Requisiti di DNS per il pool Front End in Lync Server 2013](lync-server-2013-dns-requirements-for-front-end-pool.md)
+  - [Requisiti DNS per il pool Front end in Lync Server 2013](lync-server-2013-dns-requirements-for-front-end-pool.md)
 
   - [Requisiti DNS per un server Standard Edition in Lync Server 2013](lync-server-2013-dns-requirements-for-a-standard-edition-server.md)
 

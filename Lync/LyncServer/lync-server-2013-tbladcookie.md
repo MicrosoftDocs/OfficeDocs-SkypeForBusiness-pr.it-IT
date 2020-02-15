@@ -12,16 +12,16 @@ ms:contentKeyID: 48183366
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8b1b5096c087661bf5afadd2668d6d1bb7ac8330
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1f733397483693ad4c18418f3e82b9f99cfa640f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731566"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42031190"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41731566"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-25_
+_**Ultimo argomento modificato:** 2012-06-25_
 
 tblADCookie contiene i cookie di sincronizzazione LDAP (Lightweight Directory Access Protocol) correnti.
 
@@ -57,34 +57,34 @@ tblADCookie contiene i cookie di sincronizzazione LDAP (Lightweight Directory Ac
 <tbody>
 <tr class="odd">
 <td><p>prinGuid</p></td>
-<td><p>GUID, non null</p></td>
-<td><p>GUID principale del dominio da monitorare.</p></td>
+<td><p>GUID, not null</p></td>
+<td><p>GUID entità del dominio da monitorare.</p></td>
 </tr>
 <tr class="even">
 <td><p>prinDCHost</p></td>
 <td><p>nvarchar (255)</p></td>
-<td><p>Nome di dominio completo (FQDN) del controller di dominio corrente usato per la sincronizzazione dei servizi di dominio Active Directory. Ha un valore informativo.</p></td>
+<td><p>Nome di dominio completo (FQDN) del controller di dominio corrente utilizzato per la sincronizzazione dei servizi di dominio Active Directory. Ha un valore informativo.</p></td>
 </tr>
 <tr class="odd">
 <td><p>adcContent</p></td>
-<td><p>immagine (binario)</p></td>
+<td><p>image (binary)</p></td>
 <td><p>Cookie di sincronizzazione di Active Directory.</p></td>
 </tr>
 <tr class="even">
 <td><p>lastUpdated</p></td>
-<td><p>DateTime</p></td>
-<td><p>Indicatore di data e ora con il tempo di aggiornamento delle righe.</p></td>
+<td><p>datetime</p></td>
+<td><p>Timestamp con data e ora di aggiornamento della riga</p></td>
 </tr>
 <tr class="odd">
 <td><p>lockedUntil</p></td>
-<td><p>DateTime</p></td>
-<td><p>Ora fino a quando la riga non viene bloccata per le modifiche. Questo fa parte di un meccanismo di blocco software che garantisce che solo uno dei servizi di chat esegue la sincronizzazione di Active Directory alla volta.</p></td>
+<td><p>datetime</p></td>
+<td><p>Data e ora fino a cui la riga è bloccata in modo da impedire eventuali modifiche. Fa parte di un meccanismo di blocco software che garantisce che un solo servizio chat alla volta esegua la sincronizzazione di Active Directory.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="keys"></a>Tasti
+### <a name="keys"></a>Chiavi
 
 <table>
 <colgroup>
@@ -104,7 +104,7 @@ tblADCookie contiene i cookie di sincronizzazione LDAP (Lightweight Directory Ac
 </tr>
 <tr class="even">
 <td><p>prinGuid</p></td>
-<td><p>Chiave esterna con ricerca nella tabella Principal. prinGuid.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella Principal.prinGuid.</p></td>
 </tr>
 </tbody>
 </table>

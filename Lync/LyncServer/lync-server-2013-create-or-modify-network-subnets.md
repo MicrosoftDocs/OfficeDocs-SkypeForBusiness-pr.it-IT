@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: creare o modificare subnet di rete'
+title: 'Lync Server 2013: creare o modificare le subnet di rete'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183548
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4d743e5cdbe8dc7f200175b74f55b1b3d003e769
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 47075e96171bbeef5c2709e3eb38a480d08938f0
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41734256"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030760"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-network-subnets-in-lync-server-2013"></a>Creare o modificare subnet di rete in Lync Server 2013
+# <a name="create-or-modify-network-subnets-in-lync-server-2013"></a>Creare o modificare le subnet di rete in Lync Server 2013
 
 </div>
 
@@ -35,40 +35,40 @@ ms.locfileid: "41734256"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-Una subnet di rete deve essere associata a un sito di rete allo scopo di determinare la posizione geografica dell'host appartenente alla subnet. È possibile usare il pannello di controllo di Lync Server per configurare le subnet. Dal pannello di controllo di Lync Server è possibile creare, modificare o eliminare una subnet di rete. Per informazioni dettagliate sull'eliminazione delle subnet di rete, vedere [eliminazione delle subnet di rete in Lync Server 2013](lync-server-2013-deleting-network-subnets.md).
+Una subnet di rete deve essere associata a un sito di rete per la determinazione della posizione geografica dell'host appartenente alla subnet. È possibile utilizzare il pannello di controllo di Lync Server per configurare le subnet. Dal pannello di controllo di Lync Server, è possibile creare, modificare o eliminare una subnet di rete. Per informazioni dettagliate sull'eliminazione delle subnet di rete, vedere [eliminazione di subnet di rete in Lync Server 2013](lync-server-2013-deleting-network-subnets.md).
 
-Nella maggior parte delle distribuzioni di Microsoft Lync Server 2013 in cui viene implementato il controllo di ammissione di chiamata (CAC), in genere esiste un numero elevato di subnet. Per questo motivo, è spesso consigliabile configurare subnet da Lync Server Management Shell. Da lì è possibile chiamare **New-CsNetworkSubnet** in combinazione con il cmdlet di Windows PowerShell **Import-CSV**. Usando questi cmdlet insieme, è possibile leggere le impostazioni della subnet da un file con valori delimitati da virgole (CSV) e creare più subnet contemporaneamente. Per esempi su come creare subnet da un file CSV, vedere [New-CsNetworkSubnet](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkSubnet).
+Nella maggior parte delle distribuzioni di Microsoft Lync Server 2013 in cui è implementato il controllo di ammissione di chiamata (CAC), in genere vi sarà un numero elevato di subnet. Per questo motivo, è spesso preferibile configurare le subnet da Lync Server Management Shell. Da questa pagina è possibile chiamare **New-CsNetworkSubnet** in combinazione con il cmdlet **Import-CSV**di Windows PowerShell. Se si utilizzano questi cmdlet insieme, è possibile leggere le impostazioni della subnet da un file con valori delimitati da virgole (con estensione CSV) e creare più subnet contemporaneamente. Per esempi su come creare subnet da un file CSV, vedere [New-CsNetworkSubnet](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkSubnet).
 
 <div>
 
 ## <a name="to-create-a-network-subnet"></a>Per creare una subnet di rete
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **Subnet**.
+3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Subnet**.
 
-4.  Nella pagina **subnet** fare clic su **nuovo**.
+4.  Nella pagina **Subnet** fare clic su **Nuovo**.
 
-5.  Nella **nuova subnet**immettere un valore nel campo **ID Subnet** . Deve essere un indirizzo IP, ad esempio 174.11.12.0, e deve essere il primo indirizzo nell'intervallo di indirizzi IP definito dalla subnet.
+5.  In **Nuova subnet** immettere un valore nel campo **ID subnet**. Questo valore deve essere il primo indirizzo IP (ad esempio, 174.11.12.0) dell'intervallo di indirizzi IP definito dalla subnet.
 
-6.  Nel campo **maschera** immettere un valore numerico compreso tra 1 e 32.
+6.  Nel campo **Maschera** immettere un valore numerico compreso tra 1 e 32.
     
     <div>
     
 
     > [!NOTE]  
-    > Questo valore è la maschera di maschere che deve essere applicata alla subnet da creare.
+    > Questo valore corrisponde alla maschera di bit da applicare alla subnet da creare.
 
     
     </div>
 
-7.  In **ID sito di rete**selezionare il sito a cui appartiene la subnet.
+7.  In **ID sito di rete** selezionare il sito a cui appartiene la subnet.
 
-8.  Opzionale Digitare un valore nel campo **Description** per ottenere altre informazioni su questa subnet che non può essere espressa solo dal nome.
+8.  (Facoltativo) Digitare un valore nel campo **Descrizione** per fornire ulteriori informazioni sulla subnet che non possono essere espresse dal solo nome.
 
 9.  Fare clic su **Commit**.
 
@@ -78,17 +78,17 @@ Nella maggior parte delle distribuzioni di Microsoft Lync Server 2013 in cui vie
 
 ## <a name="to-modify-a-network-subnet"></a>Per modificare una subnet di rete
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **Subnet**.
+3.  Nella barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Subnet**.
 
-4.  Nella pagina **subnet** fare clic sulla subnet che si vuole modificare.
+4.  Nella pagina **Subnet** fare clic sulla subnet che si desidera modificare.
 
-5.  Nel menu **modifica** fare clic su **Mostra dettagli**.
+5.  Scegliere **Mostra dettagli** dal menu **Modifica**.
 
-6.  Nella pagina **modifica subnet** è possibile modificare la maschera di posizione, il sito di rete associato o la descrizione. Se modifichi la maschera di base, tieni presente che l'ID subnet deve essere il primo indirizzo nell'intervallo di indirizzi IP definito dalla subnet.
+6.  Nella pagina **Modifica Subnet** è possibile modificare la maschera di bit, il sito di rete associato o la descrizione. Se si modifica la maschera di bit, tenere presente che l'ID subnet deve essere comunque il primo indirizzo IP dell'intervallo di indirizzi IP definito dalla subnet.
 
 7.  Fare clic su **Commit**.
 
@@ -99,7 +99,7 @@ Nella maggior parte delle distribuzioni di Microsoft Lync Server 2013 in cui vie
 ## <a name="see-also"></a>Vedere anche
 
 
-[Eliminazione delle subnet di rete in Lync Server 2013](lync-server-2013-deleting-network-subnets.md)  
+[Eliminazione di subnet di rete in Lync Server 2013](lync-server-2013-deleting-network-subnets.md)  
 
 
 [Informazioni su aree di rete, siti e subnet in Lync Server 2013](lync-server-2013-about-network-regions-sites-and-subnets.md)  

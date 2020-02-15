@@ -12,16 +12,16 @@ ms:contentKeyID: 53312965
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2c584a20df5dc2516115b4b137c0543576d5fa4d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c89439f46c98fd1f00d7cb95eb4a910b26971be0
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765494"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030900"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,31 +35,31 @@ ms.locfileid: "41765494"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-04-24_
+_**Ultimo argomento modificato:** 2014-04-24_
 
-Microsoft Lync 2013 Microsoft Lync 2013 per Android offre funzionalità di messaggistica istantanea, presenza avanzata e capacità di partecipazione alle riunioni di Lync per gli utenti dell'organizzazione che si connettono da un dispositivo Android. Questo argomento descrive le considerazioni relative a Lync 2013 per Android, inclusi i prerequisiti, i requisiti tecnici e i componenti necessari.
+Microsoft Lync 2013 Microsoft Lync 2013 per Android fornisce funzionalità di messaggistica istantanea, presenza avanzata e capacità di partecipazione alle riunioni di Lync per gli utenti dell'organizzazione che si connettono da un dispositivo Android. In questo argomento vengono descritte le considerazioni relative a Lync 2013 per Android, inclusi i prerequisiti, i requisiti tecnici e i componenti necessari.
 
 <div>
 
-## <a name="lync-for-android-prerequisite"></a>Prerequisiti di Lync per Android
+## <a name="lync-for-android-prerequisite"></a>Prerequisito per Lync per Android
 
 Per supportare Lync 2013 per Android, il dispositivo Android deve soddisfare i requisiti seguenti:
 
-  - Il dispositivo Android deve eseguire Android 4,0 o un sistema operativo più tardi basato su telefono o tablet, inclusi i tablet, ad eccezione di quelli con il chip Tegra2.
+  - Il dispositivo Android deve eseguire Android 4,0 o un sistema operativo successivo o basato su tavolette, incluse le tavolette, ad eccezione di quelle con il chip Tegra2.
 
-  - Il dispositivo deve avere una CPU dual core o superiore di 1,2 GHz.
+  - Il dispositivo deve avere una CPU dual core 1,2 GHz o superiore.
 
-  - La risoluzione del dispositivo fotocamera (anteriore/posteriore) deve essere VGA o successiva.
+  - La risoluzione della fotocamera del dispositivo (anteriore/posteriore) deve essere VGA o superiore.
 
-  - Altri requisiti hardware devono essere allineati con il documento di definizione compatibilità di Android 4,0.
+  - Altri requisiti hardware devono essere allineati al documento di definizione della compatibilità con Android 4,0.
 
 </div>
 
 <div>
 
-## <a name="other-technical-considerations"></a>Altre considerazioni tecniche
+## <a name="other-technical-considerations"></a>Altre considerazioni di carattere tecnico
 
-Nella piattaforma per dispositivi Android l'applicazione Lync può essere eseguita in background. Pertanto, a differenza di altre piattaforme per dispositivi mobili, le notifiche push non sono necessarie per i dispositivi Android. L'unico modo per uscire dall'applicazione Lync in un dispositivo Android consiste nel disconnettersi esplicitamente da Lync. Questa versione dell'applicazione Lync non è supportata nei dispositivi con chipset Tegra 2.
+Nella piattaforma del dispositivo Android, l'applicazione Lync può essere eseguita in background. Pertanto, a differenza di altre piattaforme per dispositivi mobili, le notifiche push non sono necessarie per i dispositivi Android. L'unico modo per uscire dall'applicazione Lync su un dispositivo Android è di disconnettersi in modo esplicito da Lync. Questa versione dell'applicazione Lync non è supportata nei dispositivi con chipset Tegra 2.
 
 </div>
 

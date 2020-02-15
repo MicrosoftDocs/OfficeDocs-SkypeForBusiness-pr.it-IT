@@ -12,16 +12,16 @@ ms:contentKeyID: 48184668
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 624bbfa52c5d4ed963fda895e7af3a544f0f3733
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d55f9e1f9233b838c1fe6ee56c4642edee1cc67e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765737"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034286"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41765737"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-03-29_
+_**Ultimo argomento modificato:** 2012-03-29_
 
-Negli argomenti seguenti sono illustrati i passaggi necessari per unire i pool di Microsoft Office Communications Server 2007 R2 ai pool di Microsoft Lync Server 2013. Prima di tutto, è possibile usare la creazione guidata generatore di topologia per unire le informazioni sulla topologia. Questo strumento raccoglie informazioni sull'ambiente di Office Communications Server 2007 R2, incluse le informazioni su Edge Server e pubblica tali informazioni in un database condiviso con Lync Server 2013. Dopo aver pubblicato la topologia unita, il generatore di topologia viene usato per visualizzare le informazioni sulla topologia di Office Communications Server 2007 R2 e le informazioni sulla topologia di Lync Server 2013 appena distribuita. Infine, puoi usare i cmdlet di Lync Server Management Shell per importare i criteri e le impostazioni di configurazione.
+Negli argomenti seguenti vengono illustrati i passaggi necessari per unire i pool di Microsoft Office Communications Server 2007 R2 ai pool di Microsoft Lync Server 2013. È innanzitutto necessario utilizzare l'Unione guidata di Generatore di topologie per unire le informazioni della topologia. Questo strumento consente di raccogliere informazioni sull'ambiente Office Communications Server 2007 R2, incluse le informazioni sui server perimetrali e di pubblicare tali informazioni in un database condiviso con Lync Server 2013. Dopo aver pubblicato la topologia unita, il generatore di topologie viene utilizzato per visualizzare le informazioni sulla topologia di Office Communications Server 2007 R2 e le informazioni sulla topologia di Lync Server 2013 appena distribuita. È infine necessario utilizzare i cmdlet di nm-csshellper importare i criteri e le impostazioni di configurazione.
 
 <div>
 
@@ -45,7 +45,7 @@ Negli argomenti seguenti sono illustrati i passaggi necessari per unire i pool d
 
   - [Installare il pacchetto di compatibilità con le versioni precedenti di WMI](install-wmi-backward-compatibility-package.md)
 
-  - [Unione tramite la creazione guidata generatore di topologia](merge-using-topology-builder-merge-wizard.md)
+  - [Unione mediante l'Unione guidata generatore di topologie](merge-using-topology-builder-merge-wizard.md)
 
   - [Importare criteri e impostazioni](import-policies-and-settings.md)
 

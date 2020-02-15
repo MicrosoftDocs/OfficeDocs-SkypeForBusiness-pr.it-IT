@@ -12,16 +12,16 @@ ms:contentKeyID: 48184569
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4a2da84e03cc05607a47f1fe5af4a8b7987946df
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: cb77c4f22122694d928489f7d61beaa9cbae9355
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737796"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029017"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41737796"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-07_
+_**Ultimo argomento modificato:** 2012-10-07_
 
-Questo argomento descrive come distribuire un Survivable Branch Appliance tramite Lync Server Management Shell. Eseguire questa procedura nel sito centrale.
+In questo argomento viene descritto come distribuire un Survivable Branch Appliance utilizzando Lync Server Management Shell. Eseguire questa procedura nel sito centrale.
 
 <div>
 
@@ -45,13 +45,13 @@ Questo argomento descrive come distribuire un Survivable Branch Appliance tramit
 
 1.  Seguire la procedura descritta in [aggiungere siti di succursale alla topologia in Lync Server 2013](lync-server-2013-add-branch-sites-to-your-topology.md) per aggiungere un nuovo sito di succursale.
 
-2.  Partecipare al sito della filiale al dominio.
+2.  Aggiungere il sito derivato al dominio.
 
 3.  Aggiungere il gruppo RTCUniversalSBATechnicians al gruppo Administrators locale.
 
-4.  Riavviare il server ed eseguire l'accesso come membro del gruppo RTCUniversalSBATechnicians.
+4.  Riavviare il server e accedervi con un account membro del gruppo RTCUniversalSBATechnicians.
 
-5.  In Lync Server Management Shell digitare i comandi seguenti, sostituendo i segnaposto con le informazioni corrette per l'organizzazione:
+5.  In Lync Server Management Shell, digitare i comandi seguenti, sostituendo i segnaposto con le informazioni corrette per l'organizzazione:
     
         Export-CsConfiguration -FileName C:\CSConfig.zip
         Import-CsConfiguration -LocalStore -FileName C:\CSConfig.zip -Verbose

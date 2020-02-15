@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Informazioni legali'
+title: Informazioni legali su Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183258
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f9486431d320a5ba081afd85daa3b5e295028a12
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 84def7e711a18762f4473bbda5946a14eff3b1e8
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758000"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034928"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41758000"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2011-02-22_
+_**Ultimo argomento modificato:** 2011-02-22_
 
-Questo documento viene fornito "così com'è". Le informazioni e le visualizzazioni espresse in questo documento, incluso l'URL e altri riferimenti a siti Web Internet, possono cambiare senza preavviso.
+Questo documento viene fornito "come è". Le informazioni e i punti di vista espressi nel presente documento, inclusi URL e altri riferimenti a siti Web, possono essere soggetti a modifiche senza preavviso.
 
-Alcuni esempi descritti in questo documento sono forniti solo per le illustrazioni e sono fittizi. Nessuna associazione o connessione reale è destinata o deve essere dedotta.
+Alcuni esempi descritti vengono forniti solo a scopo illustrativo e sono fittizi. Non è intesa né dovrà intendersi alcuna associazione o connessione a dati reali.
 
-Questo documento non offre alcun diritto legale per qualsiasi proprietà intellettuale in qualsiasi prodotto Microsoft. È possibile copiare e usare questo documento per gli scopi interni e di riferimento.
+Questo documento non garantisce alcun diritto legale verso alcuna proprietà intellettuale per i prodotti Microsoft. Il documento può essere copiato e utilizzato solo per uso interno e come riferimento.
 
-Copyright © 2013 Microsoft Corporation. Tutti i diritti riservati.
+Copyright © 2013 Microsoft Corporation. Tutti i diritti sono riservati.
 
 </div>
 

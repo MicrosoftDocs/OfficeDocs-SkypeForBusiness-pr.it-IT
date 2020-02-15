@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Configurare l'archiviazione dei file"
+title: "Lync Server 2013: configurare l'archiviazione di file DFS"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185037
 ms.date: 05/23/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1bbb932a602ad1fc49907be9c5ab2777bc7a415f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d5ce6be2a3fce1f334e9e4b1d14ea41a3dd57a6e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739336"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028647"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-dfs-file-storage-for-lync-server-2013"></a>Configurare l'archiviazione dei file per Lync Server 2013
+# <a name="configure-dfs-file-storage-for-lync-server-2013"></a>Configurare l'archiviazione dei file DFS per Lync Server 2013
 
 </div>
 
@@ -35,51 +35,51 @@ ms.locfileid: "41739336"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-05-23_
+_**Ultimo argomento modificato:** 2016-05-23_
 
-Lync Server 2013 supporta l'uso di condivisioni file in un file System distribuito (DFS). Per informazioni dettagliate su DFS per Windows Server 2008, vedere la guida dettagliata a [http://go.microsoft.com/fwlink/p/?linkId=202835](http://go.microsoft.com/fwlink/p/?linkid=202835)DFS per windows Server 2008. Per usare un DFS, Lync Server 2013 richiede le operazioni seguenti:
+Lync Server 2013 supporta l'utilizzo di condivisioni di file in un file System distribuito (DFS). Per informazioni dettagliate su DFS per Windows Server 2008, vedere la guida dettagliata di DFS per Windows Server 2008 all'indirizzo [http://go.microsoft.com/fwlink/p/?linkId=202835](http://go.microsoft.com/fwlink/p/?linkid=202835). Per utilizzare un DFS, Lync Server 2013 richiede quanto segue:
 
-  - Gli spazi dei nomi sono basati su dominio
+  - Gli spazi dei nomi devono essere basati sul dominio.
 
-  - Tutti i server dello spazio dei nomi esegue un minimo di Windows 2008
+  - Tutti i server dello spazio dei nomi devono eseguire almeno Windows 2008.
 
-La configurazione di Lync Server 2013 richiede che le autorizzazioni per la cartella condivisa consentano l'accesso completo all'amministratore. Lync Server 2013 utilizzerà quindi le autorizzazioni per i file NTFS per l'ACL delle cartelle. Le autorizzazioni di condivisione DFS ereditate non verranno usate per limitare l'accesso.
+L'installazione di Lync Server 2013 richiede che le autorizzazioni per la cartella condivisa consentano l'accesso completo all'amministratore. Lync Server 2013 utilizzerà le autorizzazioni per i file NTFS per le cartelle ACL. Le autorizzazioni di condivisione DFS ereditate non verranno utilizzate per limitare l'accesso.
 
-Per altre informazioni sui requisiti di condivisione file, vedere Supporto per l' [archiviazione dei file in Lync Server 2013](lync-server-2013-file-storage-support.md) nella documentazione relativa alla supportabilità.
+Per ulteriori informazioni sui requisiti di condivisione file, vedere [file Storage Support in Lync Server 2013](lync-server-2013-file-storage-support.md) nella documentazione relativa alla supportabilità.
 
 <div>
 
 
 > [!NOTE]  
-> Potrebbe essere necessario cercare informazioni sulla configurazione di una condivisione non DFS. In questo caso, estrarre <A href="lync-server-2013-hardware-setup.md">la configurazione hardware per Lync Server 2013</A>.
+> È possibile cercare informazioni sulla configurazione di una condivisione non DFS. In caso affermativo, vedere <A href="lync-server-2013-hardware-setup.md">installazione hardware per Lync Server 2013</A>.
 
 
 
 </div>
 
-La procedura seguente descrive come configurare correttamente le autorizzazioni per le cartelle condivise usando la procedura guidata dello spazio dei nomi DFS, come descritto nella Guida alla configurazione DFS.
+Nella procedura seguente viene illustrato come configurare correttamente le autorizzazioni delle cartelle condivise utilizzando la procedura guidata per lo spazio dei nomi DFS, come descritto nella guida all'installazione di DFS.
 
 <div>
 
-## <a name="to-configure-shared-folder-permissions"></a>Per configurare le autorizzazioni per le cartelle condivise
+## <a name="to-configure-shared-folder-permissions"></a>Per configurare le autorizzazioni delle cartelle condivise
 
-1.  Fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **strumenti di amministrazione**e quindi fare clic su **Gestione DFS**.
+1.  Fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Strumenti di amministrazione** e quindi **Gestione DFS**.
 
-2.  Nell'albero della console dello snap-in Gestione DFS fare clic con il pulsante destro del mouse sul server dello spazio dei nomi (ad esempio filesrv1.contoso.com) e quindi scegliere **Modifica impostazioni**.
+2.  Nell'albero della console dello snap-in Gestione DFS fare clic con il pulsante destro del mouse sul server dello spazio dei nomi, ad esempio filesrv1.contoso.com, e quindi scegliere **Modifica impostazioni**.
 
-3.  Selezionare **autorizzazioni cartella condivisa**.
+3.  Selezionare **Autorizzazioni cartella condivisa**.
 
 4.  Selezionare **Usa autorizzazioni personalizzate**.
 
-5.  Per il gruppo amministratore selezionare le opzioni seguenti in **Consenti**:
+5.  Per il gruppo degli amministratori, selezionare quanto segue in **Consenti**:
     
       - **Controllo completo**
     
-      - **Modificare**
+      - **Modifica**
     
-      - **Leggere**
+      - **Lettura**
 
-6.  Fare clic su **applica**e quindi su **OK**.
+6.  Fare clic su **Applica** e quindi su **OK**.
 
 </div>
 

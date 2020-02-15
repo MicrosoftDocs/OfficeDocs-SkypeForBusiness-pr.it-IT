@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare le interfacce di rete per i server perimetrali'
+title: 'Lync Server 2013: configurare le interfacce di rete per i server perimetrali'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185152
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dfbae47a5f5e99e603e3f095a2e07dbb9b49515f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 49b363e4803d493ed5859455104945d0d1d2d23c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764642"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034236"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41764642"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-08_
+_**Ultimo argomento modificato:** 2012-09-08_
 
-Ogni Edge Server è un computer multihome con interfacce esterne e interne. Le impostazioni DNS (adapter Domain Name System) dipendono dalla presenza di server DNS nella rete perimetrale. Se nel perimetro sono presenti server DNS, è necessario che dispongano di una zona contenente uno o più record DNS per il server o il pool di hop successivo, ovvero un pool di Director o di front-end designato, e per le query esterne che fanno riferimento alle ricerche dei nomi ad altri server DNS pubblici. Se nel perimetro non sono presenti server DNS, gli Edge Server usano server DNS esterni per risolvere le ricerche di nomi Internet e ogni Edge Server usa un HOST per risolvere i nomi dei server dell'hop successivo in indirizzi IP.
+Ogni Edge Server è un computer multihomed con interfacce rivolte verso l'esterno e verso l'interno. Le impostazioni DNS (Domain Name System ) della scheda dipendono dalla presenza di server DNS nella rete perimetrale. Se nel perimetro sono presenti server DNS, devono disporre di un'area contenente uno o più record A DNS per il server hop successivo o per il pool (ovvero un pool Director o un pool Front End designato) e per query esterne che per le ricerche dei nomi fanno riferimento ad altri server DNS pubblici. Se nel perimetro non sono presenti server DNS, il server o i server Edge Server utilizzeranno i server DNS esterni per risolvere le ricerche dei nomi Internet e ogni Edge Server utilizzerà un HOST per risolvere i nomi di server hop successivo in indirizzi IP.
 
 <div>
 
@@ -49,7 +49,7 @@ Ogni Edge Server è un computer multihome con interfacce esterne e interne. Le i
 </thead>
 <tbody>
 <tr class="odd">
-<td>Per motivi di sicurezza, è consigliabile non avere l'accesso dei server Edge a un server DNS situato nella rete interna.</td>
+<td>Per motivi di protezione, è consigliabile non consentire agli Edge Server di accedere a un server DNS presente nella rete interna.</td>
 </tr>
 </tbody>
 </table>
@@ -61,31 +61,31 @@ Ogni Edge Server è un computer multihome con interfacce esterne e interne. Le i
 
 ## <a name="to-configure-interfaces-with-dns-servers-in-the-perimeter-network"></a>Per configurare le interfacce con i server DNS nella rete perimetrale
 
-1.  Installare due schede di rete per ogni server perimetrale, uno per l'interfaccia di rivestimento interno e uno per l'interfaccia esterna.
+1.  Installare due schede di rete per ogni Edge Server, una per l'interfaccia connessa alla rete interna e una per quella connessa alla rete esterna.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > Le subnet interne ed esterne non devono essere instradate tra loro.
+    > Le subnet interna ed esterna non devono essere vicendevolmente instradabili.
 
     
     </div>
 
-2.  Nell'interfaccia esterna configurare tre indirizzi IP statici nella subnet della rete perimetrale esterna (nota anche come DMZ, zona demilitarizzata e subnet schermata) e puntare il gateway predefinito all'interfaccia interna del firewall esterno. Configurare le impostazioni DNS della scheda in maniera che puntino a una coppia di server DNS perimetrali.
+2.  Nell'interfaccia esterna configurare tre indirizzi IP statici nella subnet della rete perimetrale esterna, denominata anche DMZ o subnet schermata, e puntare il gateway predefinito all'interfaccia interna del firewall esterno. Configurare le impostazioni DNS della scheda in modo da puntare a una coppia di server DNS perimetrali.
     
     <div>
     
 
     > [!NOTE]  
-    > È possibile usare un solo indirizzo IP per questa interfaccia, ma per eseguire questa operazione è necessario modificare le assegnazioni della porta in valori non standard. Questa operazione viene determinata quando si crea la topologia in Generatore di topologie.
+    > È possibile utilizzare anche un solo indirizzo IP per questa interfaccia, ma a tale scopo sarà necessario modificare le assegnazioni delle porte con valori non standard. Questa operazione viene determinata quando si crea la topologia in Generatore di topologie.
 
     
     </div>
 
-3.  Nell'interfaccia interna configurare un indirizzo IP statico nella subnet della rete perimetrale interna e non impostare un gateway predefinito. Configurare le impostazioni DNS adapter in maniera che puntino ad almeno un server DNS, preferibilmente una coppia di server DNS perimetrali.
+3.  Nell'interfaccia interna, configurare un indirizzo IP statico nella subnet della rete perimetrale interna e non impostare un gateway predefinito. Configurare le impostazioni DNS della scheda in modo da puntare ad almeno un server DNS, preferibilmente una coppia di server DNS perimetrali.
 
-4.  Creare route statiche permanenti sull'interfaccia interna per tutte le reti interne in cui risiedono i client, i server Lync Server 2013 e la messaggistica unificata di Exchange.
+4.  Creare route statiche persistenti nell'interfaccia interna a tutte le reti interne in cui risiedono i client, Lync Server 2013 e i server di messaggistica unificata di Exchange.
 
 </div>
 
@@ -93,33 +93,33 @@ Ogni Edge Server è un computer multihome con interfacce esterne e interne. Le i
 
 ## <a name="to-configure-interfaces-without-dns-servers-in-the-perimeter-network"></a>Per configurare le interfacce senza server DNS nella rete perimetrale
 
-1.  Installare due schede di rete per ogni server perimetrale, uno per l'interfaccia di rivestimento interno e uno per l'interfaccia esterna.
+1.  Installare due schede di rete per ogni Edge Server, una per l'interfaccia connessa alla rete interna e una per quella connessa alla rete esterna.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > Le subnet interne ed esterne non devono essere instradate tra loro.
+    > Le subnet interna ed esterna non devono essere vicendevolmente instradabili.
 
     
     </div>
 
-2.  Nell'interfaccia esterna configurare tre indirizzi IP statici nella subnet della rete perimetrale esterna. È anche possibile configurare il gateway predefinito nell'interfaccia esterna. Ad esempio, Definisci il router che si affaccia su Internet o il firewall esterno come gateway predefinito. Configurare le impostazioni DNS in maniera che puntino a un server DNS, preferibilmente a una coppia di server DNS esterni.
+2.  Nell'interfaccia esterna configurare tre indirizzi IP statici nella subnet della rete perimetrale esterna. È inoltre possibile configurare il gateway predefinito nell'interfaccia esterna. Ad esempio, definire il router con connessione Internet o il firewall esterno come gateway predefinito. Configurare le impostazioni DNS in modo da puntare a un server DNS, preferibilmente a una coppia di server DNS esterni.
     
     <div>
     
 
     > [!NOTE]  
-    > È possibile, ma non consigliabile, usare il minor numero di un indirizzo IP per l'interfaccia esterna. Per consentire il funzionamento, è necessario modificare le assegnazioni della porta in valori non standard e non la porta predefinita 443 che è in genere "firewall friendly" per la comunicazione client. Puoi determinare l'impostazione dell'indirizzo IP e le impostazioni della porta quando crei la topologia in Generatore di topologie.
+    > È possibile, ma non consigliabile, utilizzare anche un solo indirizzo IP per l'interfaccia esterna. A tale scopo, è necessario impostare le assegnazioni delle porte su valori non standard e lontani dalla porta predefinita 443 che in genere è appropriata per il firewall per la comunicazione client. È possibile determinare l'impostazione dell'indirizzo IP e le impostazioni della porta quando si crea la topologia in Generatore di topologie.
 
     
     </div>
 
-3.  Nell'interfaccia interna configurare un indirizzo IP statico nella subnet della rete perimetrale interna e non impostare un gateway predefinito. Abbandonare le impostazioni DNS della scheda vuoto.
+3.  Nell'interfaccia interna, configurare un indirizzo IP statico nella subnet della rete perimetrale interna e non impostare un gateway predefinito. Lasciare le impostazioni DNS della scheda vuote.
 
-4.  Creare route statiche permanenti sull'interfaccia interna per tutte le reti interne in cui risiedono i client Lync o i server che utilizzano Lync Server 2013.
+4.  Creare route statiche persistenti nell'interfaccia interna a tutte le reti interne in cui risiedono i client o i server Lync che eseguono Lync Server 2013.
 
-5.  Modificare il file HOST in ogni Edge Server in modo che contenga un record per il server hop successivo o l'IP virtuale (VIP) (il record sarà il Director, il server Standard Edition o un pool Front-end configurato come indirizzo hop successivo di Edge Server in Generatore di topologia). Se si usa il bilanciamento del carico DNS, includere una riga per ogni membro del pool hop successivo.
+5.  Modificare il file HOST in ogni server perimetrale in modo che contenga un record per il server dell'hop successivo o l'IP virtuale (VIP) (il record sarà il server Director, Standard Edition o un pool Front end configurato come indirizzo hop successivo del server perimetrale in Generatore di topologie). Se si utilizza il bilanciamento del carico DNS, includere una riga per ogni membro del pool di hop successivo.
 
 </div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 48185955
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4ec15b826614afcca970989b6436d3ad94d7941f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 618ab1b18f92d19f65084d321b71219cc0fafb06
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722836"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030029"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41722836"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-11_
+_**Ultimo argomento modificato:** 2012-10-11_
 
-Un criterio di presenza è un insieme di limiti e restrizioni che influiscono sulla presenza. La tabella seguente descrive le impostazioni dei criteri di presenza disponibili in Lync Server 2013.
+Per criteri di presenza si intende un insieme di limiti e restrizioni che influiscono sulla presenza. Nella tabella seguente vengono descritte le impostazioni dei criteri di presenza disponibili in Lync Server 2013.
 
 ### <a name="presence-policy-settings"></a>Impostazioni dei criteri di presenza
 
@@ -61,13 +61,13 @@ Un criterio di presenza è un insieme di limiti e restrizioni che influiscono su
 <tbody>
 <tr class="odd">
 <td><p>CategorySubscriptions</p></td>
-<td><p>Numero massimo di abbonamenti alle categorie del Sottoscrittore</p></td>
-<td><p>Limita il numero di abbonamenti alle categorie di abbonati. Ad esempio, quando Communicator sottoscrive la presenza di un utente, ottiene un abbonamento a categoria per ogni scheda contatto, dati del calendario, note, servizi e categorie di stato.</p>
-<p>Un'impostazione pari a 0 indica che l'utente o l'oggetto contatto non può essere sottoscritto da altri.</p>
+<td><p>Numero massimo di sottoscrizioni di categoria dei sottoscrittori</p></td>
+<td><p>Limita il numero di sottoscrizioni di categoria dei sottoscrittori. Ad esempio, quando Communicator sottoscrive la presenza di un utente, ottiene una sottoscrizione di categoria per ogni categoria scheda contatto, dati del calendario, note, servizi e stato.</p>
+<p>Un valore 0 indica che l'utente o l'oggetto contatto non può essere sottoscritto da altri.</p>
 <div>
 
 > [!NOTE]  
-> Questa impostazione può avere un impatto significativo sulle prestazioni se è impostata su un numero alto e l'utente medio ha un numero elevato di utenti che si abbonano alla propria presenza.
+> Questa impostazione può avere un impatto notevole sulle prestazioni se è impostata su un valore elevato e l'utente medio presenta un numero elevato di utenti che sottoscrivono la sua presenza.
 
 
 </div></td>
@@ -76,9 +76,9 @@ Un criterio di presenza è un insieme di limiti e restrizioni che influiscono su
 </tr>
 <tr class="even">
 <td><p>PromptedSubscribers</p></td>
-<td><p>Numero massimo di avvisi per gli abbonamenti alla presenza in coda</p></td>
-<td><p>Limita il numero di voci nella tabella abbonati richiesto. Questa impostazione determina il numero massimo di richieste che possono essere accodate per un determinato utente. Ad esempio, quando un utente sottoscrive la presenza dell'utente B, l'utente B riceverà una richiesta di conferma che l'utente a è ora abbonato all'utente B e viene creata una richiesta di conferma nella tabella sottoscrittori richiesto dall'utente B. Dopo che l'utente B accetta o riconosce l'abbonamento, la richiesta di conferma viene rimossa dalla tabella sottoscrittori richiesta dall'utente B.</p>
-<p>Un'impostazione pari a 0 indica che l'utente non viene visualizzato quando qualcuno sottoscrive la propria presenza.</p></td>
+<td><p>Numero massimo di avvisi di sottoscrizione presenza in coda</p></td>
+<td><p>Limita il numero di voci nella tabella dei sottoscrittori richiedenti che possono essere accodati per un dato utente. Ad esempio, quando l'utente A sottoscrive la presenza dell'utente B, l'utente B riceve una richiesta che indica che l'utente A ha sottoscritto l'utente B e viene creata una richiesta di accettazione nella tabella dei sottoscrittori richiedenti dell'utente B. Dopo che l'utente B accetta la sottoscrizione, la richiesta di accettazione viene rimossa dalla tabella dei sottoscrittori richiedenti dell'utente B.</p>
+<p>Un valore 0 indica che all'utente non viene inviata alcuna richiesta quando qualcuno sottoscrive la sua presenza.</p></td>
 <td><p>Numero intero o token</p></td>
 <td><p>0-500</p></td>
 </tr>
@@ -86,9 +86,9 @@ Un criterio di presenza è un insieme di limiti e restrizioni che influiscono su
 </table>
 
 
-Per impostazione predefinita, i **criteri** e il servizio predefiniti: i criteri di presenza **media** vengono installati quando si distribuisce Lync Server. La tabella seguente descrive le impostazioni specifiche dei due criteri di presenza.
+Per impostazione predefinita, i **criteri** e il servizio predefiniti: i criteri di presenza **media** vengono installati quando si distribuisce Lync Server. Nella tabella seguente sono descritte le impostazioni specifiche dei due criteri di presenza.
 
-### <a name="presence-policies"></a>Criteri di presenza
+### <a name="presence-policies"></a>Criterio di presenza
 
 <table>
 <colgroup>
@@ -99,7 +99,7 @@ Per impostazione predefinita, i **criteri** e il servizio predefiniti: i criteri
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome del criterio</th>
+<th>Nome criterio</th>
 <th>Descrizione</th>
 <th>CategorySubscriptions</th>
 <th>PromptedSubscribers</th>
@@ -107,14 +107,14 @@ Per impostazione predefinita, i **criteri** e il servizio predefiniti: i criteri
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Criteri predefiniti</p></td>
-<td><p>Criteri per gli utenti tipici. Questo è il criterio di presenza predefinito.</p></td>
+<td><p>Criterio predefinito</p></td>
+<td><p>Criterio per gli utenti tipici. Si tratta del criterio di presenza predefinito.</p></td>
 <td><p>1000</p></td>
 <td><p>200</p></td>
 </tr>
 <tr class="even">
-<td><p>Servizio: media</p></td>
-<td><p>Criteri per le applicazioni che richiedono ad altri utenti di sottoscrivere la presenza dell'oggetto.</p></td>
+<td><p>Servizio: Medio</p></td>
+<td><p>Criterio per le applicazioni che richiedono più utenti che sottoscrivano la presenza dell'oggetto.</p></td>
 <td><p>1000</p></td>
 <td><p>0</p></td>
 </tr>

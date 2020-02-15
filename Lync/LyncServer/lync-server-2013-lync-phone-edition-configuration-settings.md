@@ -12,16 +12,16 @@ ms:contentKeyID: 49733881
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8f48f165d9694e35aebb3861d0bce9fddd70be49
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 45fed4d87adc438ce282c340d329f59036a596f5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765464"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035268"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41765464"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-10_
+_**Ultimo argomento modificato:** 2012-10-10_
 
-Le impostazioni di configurazione per i dispositivi in cui è in uso Lync Phone Edition si applicano globalmente oppure è possibile creare nuove raccolte di impostazioni valide per un determinato sito. Le raccolte includono la sicurezza SIP, le impostazioni di blocco del dispositivo e altro ancora.
+Le impostazioni di configurazione per i dispositivi in cui è in esecuzione Lync Phone Edition vengono applicate a livello globale oppure è possibile creare nuove raccolte di impostazioni che si applicano a un sito specifico. Gli insiemi includono la sicurezza SIP, le impostazioni di blocco del dispositivo e altro ancora.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Visualizzare le informazioni sulle impostazioni di configurazione di Lync Phone Edition in Lync Server 2013](lync-server-2013-view-lync-phone-edition-configuration-settings-information.md)
 
@@ -51,7 +51,7 @@ Le impostazioni di configurazione per i dispositivi in cui è in uso Lync Phone 
 
   - [Configurare le impostazioni di sicurezza per Lync Phone Edition in Lync Server 2013](lync-server-2013-configure-security-settings-for-lync-phone-edition.md)
 
-  - [Applicare il blocco telefonico in Lync Server 2013](lync-server-2013-enforce-phone-locking.md)
+  - [Applicare il blocco del telefono in Lync Server 2013](lync-server-2013-enforce-phone-locking.md)
 
 </div>
 

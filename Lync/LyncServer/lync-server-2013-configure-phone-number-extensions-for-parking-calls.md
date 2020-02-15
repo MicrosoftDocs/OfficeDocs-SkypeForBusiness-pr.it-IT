@@ -12,20 +12,20 @@ ms:contentKeyID: 48185980
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ba64f4f622a6f9ae9e134b2447abe21bc99ec62c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6546488deb6ee1f00539944271f6f80cfc7a06b7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762824"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035348"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-phone-number-extensions-for-parking-calls-in-lync-server-2013"></a>Configurare le estensioni dei numeri di telefono per le chiamate di parcheggio in Lync Server 2013
+# <a name="configure-phone-number-extensions-for-parking-calls-in-lync-server-2013"></a>Configurare le estensioni dei numeri di telefono per il parcheggio delle chiamate in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41762824"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-10_
+_**Ultimo argomento modificato:** 2012-09-10_
 
-L'applicazione Call Park USA i numeri di interno nella tabella Orbit di Call Park per parcheggiare le chiamate. È necessario configurare la tabella Orbit di Call Park con gli intervalli di numeri di interno che l'organizzazione riserva per le chiamate parcheggiate. Questi interni devono essere virtuali (ossia interni a cui non è assegnato alcun utente o telefono). Ogni pool di Lync Server in cui viene distribuita e configurata un'applicazione di parcheggio di chiamata può avere uno o più intervalli di orbita. Gli intervalli di Orbit devono essere univoci a livello globale in tutta la distribuzione di Lync Server.
+L'applicazione Parcheggio di chiamata utilizza i numeri di interno nella tabella orbit del parcheggio di chiamata per parcheggiare le chiamate. È necessario configurare la tabella orbit del parcheggio di chiamata con gli intervalli di numeri di interno riserve dall'organizzazione per le chiamate parcheggiate. Questi interni devono essere virtuali (ossia interni a cui non è assegnato alcun utente o telefono). Ogni pool di Lync Server in cui viene distribuita e configurata un'applicazione del parcheggio di chiamata può disporre di uno o più intervalli di Orbit. Gli intervalli di Orbit devono essere univoci a livello globale nella distribuzione di Lync Server.
 
 <div>
 
 
 > [!IMPORTANT]  
-> È necessario selezionare la casella di controllo <STRONG>Abilita parcheggio chiamata</STRONG> nel criterio vocale prima di poter usare Call Park. Per impostazione predefinita, questa opzione non è selezionata.
+> È necessario selezionare la casella di controllo <STRONG>Abilita il parcheggio di chiamata</STRONG> nel criterio vocale prima di poter utilizzare il parcheggio di chiamata. Per impostazione predefinita, questa opzione non è selezionata.
 
 
 
@@ -51,11 +51,11 @@ L'applicazione Call Park USA i numeri di interno nella tabella Orbit di Call Par
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Creare o modificare un intervallo orbit di Call Park in Lync Server 2013](lync-server-2013-create-or-modify-a-call-park-orbit-range.md)
+  - [Creare o modificare un intervallo di codici orbit del parcheggio di chiamata in Lync Server 2013](lync-server-2013-create-or-modify-a-call-park-orbit-range.md)
 
-  - [Eliminare un intervallo di Orbit di Call Park in Lync Server 2013](lync-server-2013-delete-a-call-park-orbit-range.md)
+  - [Eliminare un intervallo di codici orbit del parcheggio di chiamata in Lync Server 2013](lync-server-2013-delete-a-call-park-orbit-range.md)
 
 </div>
 

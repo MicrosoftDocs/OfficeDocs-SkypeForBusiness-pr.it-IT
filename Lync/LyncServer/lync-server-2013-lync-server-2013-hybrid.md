@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Distribuzione ibrida di Lync Server 2013'
+title: 'Lync Server 2013: Lync Server 2013 ibrido'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183839
 ms.date: 05/25/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 105caa9a892d8bd3c6facca5c768c7e748aec824
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9ae168c2afb115ac3883938124298713af9bb264
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742296"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030249"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="lync-server-2013-hybrid"></a>Distribuzione ibrida di Lync Server 2013
+# <a name="lync-server-2013-hybrid"></a>Lync Server 2013 ibrido
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41742296"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-05-25_
+_**Ultimo argomento modificato:** 2016-05-25_
 
-Con distribuzioni ibride di Lync è possibile avere alcuni utenti di Lync in locale e altri utenti in Lync Online, condividendo entrambi lo stesso dominio. In questo modo, puoi semplificare la fornitura di servizi Lync agli utenti dell'organizzazione in diverse posizioni geografiche o utenti che si connettono in remoto. È anche possibile sfruttare le configurazioni ibride di Lync come percorso di migrazione a Office 365.
+Con distribuzioni ibride di Lync, è possibile disporre di alcuni degli utenti di Lync in locale e di altri utenti in Lync Online, che condividono entrambi lo stesso dominio. In questo modo è più facile fornire servizi Lync agli utenti dell'organizzazione in diverse posizioni geografiche o utenti che si connettono in remoto. È inoltre possibile avvalersi delle configurazioni ibride di Lync come percorso di migrazione a Office 365.
 
-Questa sezione descrive le configurazioni ibride per Lync Server 2013.
+In questa sezione vengono descritte le configurazioni ibride per Lync Server 2013.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
 [Panoramica delle distribuzioni ibride di Lync Server 2013](lync-server-2013-overview-of-hybrid-deployments.md)
 
-[Pianificazione di distribuzioni ibride di Lync Server 2013](lync-server-2013-planning-for-hybrid-deployments.md)
+[Pianificazione delle distribuzioni ibride di Lync Server 2013](lync-server-2013-planning-for-hybrid-deployments.md)
 
-[Configurazione di distribuzioni ibride per Lync Server 2013](lync-server-2013-configuring-hybrid-deployments.md)
+[Configurazione delle distribuzioni ibride di Lync Server 2013](lync-server-2013-configuring-hybrid-deployments.md)
 
 </div>
 

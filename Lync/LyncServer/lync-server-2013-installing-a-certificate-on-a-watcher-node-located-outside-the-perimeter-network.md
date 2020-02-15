@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: installazione di un certificato in un nodo Watcher situato all'esterno della rete perimetrale"
+title: "Lync Server 2013: installazione di un certificato in un nodo Watcher che si trova all'esterno della rete perimetrale"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733711
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 10cd31639445fab6138ea77cb40a03d727ecce12
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 74d89b14b783e2b78050b2db8e71a1009c974384
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726176"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029547"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="installing-a-certificate-on-a-watcher-node-located-outside-the-perimeter-network-of-lync-server-2013"></a>Installazione di un certificato in un nodo Watcher situato all'esterno della rete perimetrale di Lync Server 2013
+# <a name="installing-a-certificate-on-a-watcher-node-located-outside-the-perimeter-network-of-lync-server-2013"></a>Installazione di un certificato in un nodo Watcher che si trova all'esterno della rete perimetrale di Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41726176"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-22_
+_**Ultimo argomento modificato:** 2012-10-22_
 
-Gli agenti di System Center Operations Manager eseguiti in una rete perimetrale, ad esempio un server Edge Lync Server, all'esterno dell'organizzazione, ad esempio un nodo di Watcher delle transazioni sintetiche esterne o in un limite di attendibilità dei servizi di dominio Active Directory, potrebbero richiedere la configurazione di un server gateway di System Center Operations Manager. Questo ruolo del server consente agli agenti che non hanno una relazione di trust con il server di gestione radice di generare avvisi. Per informazioni dettagliate, vedere "gestione dei server gateway in Operations Manager 2007" nella raccolta TechNet di System Center Operations [http://go.microsoft.com/fwlink/p/?LinkId=268703](http://go.microsoft.com/fwlink/p/?linkid=268703)Manager.
+Gli agenti di System Center Operations Manager in esecuzione in una rete perimetrale, ad esempio un server perimetrale di Lync Server, all'esterno dell'organizzazione (ad esempio un nodo Watcher esterno di una transazione sintetica) o in un limite di attendibilità dei servizi di dominio Active Directory, potrebbero richiedere la configurazione di un server Gateway System Center Operations Manager. Questo ruolo del server consente agli agenti che non dispongono di una relazione di trust con il server di gestione principale di emettere avvisi. Per informazioni dettagliate, vedere la sezione relativa alla gestione dei server gateway in Operations Manager 2007 nella libreria TechNet di System [http://go.microsoft.com/fwlink/p/?LinkId=268703](http://go.microsoft.com/fwlink/p/?linkid=268703)Center Operations Manager all'indirizzo.
 
-Se si distribuisce un agente in una di queste posizioni, sarà anche necessario richiedere e configurare un certificato che consenta al nodo Watcher di inviare avvisi a System Center Operations Manager. Per semplificare questo processo, il team di Operations Manager ha creato un set di utilità che consentono di richiedere e installare il tipo corretto di certificato nel computer del nodo Watcher. Per informazioni dettagliate e per scaricare queste utilità, vedere l'articolo su [http://go.microsoft.com/fwlink/p/?LinkId=267421](http://go.microsoft.com/fwlink/p/?linkid=267421)Blog "ottenere i certificati per gli agenti non appartenenti a un dominio con la creazione guidata di certificati".
+Se si distribuisce un agente in una di queste posizioni, sarà inoltre necessario richiedere e configurare un certificato che consenta al nodo Watcher di inviare avvisi a System Center Operations Manager. Per semplificare questo processo, il team di Operations Manager ha creato un set di utilità che consente di richiedere e installare il tipo di certificato corretto nel computer del nodo di controllo. Per ulteriori informazioni e per scaricare queste utilità, vedere l'articolo su [http://go.microsoft.com/fwlink/p/?LinkId=267421](http://go.microsoft.com/fwlink/p/?linkid=267421)Blog "ottenere certificati per gli agenti non appartenenti a un dominio semplificato con la generazione guidata dei certificati".
 
 </div>
 

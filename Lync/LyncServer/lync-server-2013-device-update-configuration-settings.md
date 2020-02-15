@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: impostazioni di configurazione per l'aggiornamento del dispositivo"
+title: 'Lync Server 2013: impostazioni di configurazione di aggiornamento dispositivi'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51803969
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3c8b06c3fdf4d854c79bff7b03f497858fc64b15
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ef868bfa52d206996cd1cf344e2c504f83a9cbf9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762404"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42031270"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="device-update-configuration-settings-in-lync-server-2013"></a>Impostazioni di configurazione di aggiornamento del dispositivo in Lync Server 2013
+# <a name="device-update-configuration-settings-in-lync-server-2013"></a>Impostazioni di configurazione per l'aggiornamento del dispositivo in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41762404"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-20_
+_**Ultimo argomento modificato:** 2013-02-20_
 
-Il servizio Web aggiornamento dispositivi viene gestito con le impostazioni di configurazione del dispositivo. Queste impostazioni possono essere applicate nell'ambito globale o nell'ambito del sito.
+Il servizio Web aggiornamento dispositivi è gestito mediante le impostazioni di configurazione dei dispositivi. Queste impostazioni possono essere applicate nell'ambito globale o nell'ambito del sito.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Visualizzare le impostazioni di configurazione di Aggiornamento dispositivi in Lync Server 2013](lync-server-2013-view-device-update-configuration-settings.md)
+  - [Visualizzare le impostazioni di configurazione per l'aggiornamento dei dispositivi in Lync Server 2013](lync-server-2013-view-device-update-configuration-settings.md)
 
-  - [Creare o modificare una raccolta di impostazioni di configurazione di aggiornamento dei dispositivi in Lync Server 2013](lync-server-2013-create-or-modify-a-collection-of-device-update-configuration-settings.md)
+  - [Creare o modificare una raccolta di impostazioni di configurazione per l'aggiornamento dei dispositivi in Lync Server 2013](lync-server-2013-create-or-modify-a-collection-of-device-update-configuration-settings.md)
 
-  - [Eliminare una raccolta di impostazioni di configurazione di aggiornamento dei dispositivi in Lync Server 2013](lync-server-2013-delete-a-collection-of-device-update-configuration-settings.md)
+  - [Eliminare una raccolta di impostazioni di configurazione per l'aggiornamento dei dispositivi in Lync Server 2013](lync-server-2013-delete-a-collection-of-device-update-configuration-settings.md)
 
 </div>
 

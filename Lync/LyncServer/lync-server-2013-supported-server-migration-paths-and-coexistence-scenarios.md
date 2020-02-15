@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Percorsi di migrazione dei server supportati e scenari di coesistenza'
+title: 'Lync Server 2013: percorsi di migrazione del server supportati e scenari di coesistenza'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183686
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1b16b0c92954c004aa04b9cc665786badb9bf632
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 168cea4e41b7ff51e03132e300c2085a82f8bc66
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731676"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029777"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="supported-server-migration-paths-and-coexistence-scenarios-in-lync-server-2013"></a>Percorsi di migrazione dei server supportati e scenari di coesistenza in Lync Server 2013
+# <a name="supported-server-migration-paths-and-coexistence-scenarios-in-lync-server-2013"></a>Percorsi di migrazione del server supportati e scenari di coesistenza in Lync Server 2013
 
 </div>
 
@@ -35,30 +35,30 @@ ms.locfileid: "41731676"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-16_
+_**Ultimo argomento modificato:** 2012-10-16_
 
-Lync Server 2013 supporta la migrazione da una delle opzioni seguenti:
+Lync Server 2013 supporta la migrazione da una delle seguenti operazioni:
 
   - Microsoft Lync Server 2010
 
   - Microsoft Office Communications Server 2007 R2
 
-La migrazione da un ambiente in cui sono in uso entrambe le versioni precedenti non è supportata. La migrazione dalle versioni precedenti, ad esempio Microsoft Office Communications Server 2007 o Live Communications Server 2005, non è supportata. Se la distribuzione precedente includeva la chat di gruppo, è necessario eseguirne la migrazione separatamente.
+La migrazione da un ambiente che esegue entrambe le versioni precedenti non è supportata. La migrazione da versioni precedenti, ad esempio Microsoft Office Communications Server 2007 o Live Communications Server 2005, non è supportata. Se la distribuzione precedente includeva Group Chat, è necessario eseguirne la migrazione separatamente.
 
 <div>
 
 ## <a name="migration-methods"></a>Metodi di migrazione
 
-È supportata la migrazione di tutte le topologie e i ruoli del server di Lync Server. È possibile eseguire la migrazione da una topologia a una topologia diversa, ad esempio dal server Standard Edition al server Enterprise Edition.
+È supportata la migrazione di tutte le topologie di Lync Server e i ruoli del server. È possibile eseguire la migrazione da una topologia a un'altra, incluso da un server Standard Edition a un server Enterprise Edition.
 
 Lync Server 2013 supporta solo il metodo di migrazione seguente:
 
   - <span></span>  
-    **Migrazione affiancata.** Nella migrazione affiancata Lync Server 2013 viene distribuito insieme a una distribuzione di Microsoft Lync Server 2010 o Office Communications Server 2007 R2 esistente e quindi si trasferiscono le operazioni nei nuovi server e si spostano gli utenti in Lync Server 2013. Questo metodo richiede piattaforme server aggiuntive, inclusi hardware e software, durante la migrazione e i nomi di sistema e i nomi di pool sono diversi nella nuova configurazione. Se è necessario eseguire il rollback alla versione precedente, è possibile spostare di nuovo le operazioni nei server precedenti.
+    **Migrazione side-by-side** Nella migrazione affiancata, Lync Server 2013 viene distribuito insieme a una distribuzione di Microsoft Lync Server 2010 o Office Communications Server 2007 R2 esistente e quindi si trasferiscono le operazioni nei nuovi server e si spostano gli utenti in Lync Server 2013. Questo metodo richiede l'uso di ulteriori piattaforme server, inclusi hardware e software, durante la migrazione e i nomi dei sistemi e dei pool sono diversi nella nuova configurazione. Se è necessario ripristinare la versione precedente, è possibile spostare di nuovo le operazioni nei server precedenti.
 
 La migrazione tra foreste di servizi di dominio Active Directory non è supportata.
 
-Il percorso di migrazione consigliato è un approccio graduale. Per informazioni dettagliate sulla migrazione da una versione precedente, inclusa l'appropriata fase di distribuzione dei componenti, vedere gli argomenti seguenti nella documentazione relativa alla migrazione:
+Il metodo di migrazione consigliato è di tipo incrementale. Per informazioni dettagliate sulla migrazione da una versione precedente, inclusa la tempistica appropriata per la distribuzione dei componenti, vedere gli argomenti seguenti nella documentazione relativa alla migrazione:
 
   - [Migrazione da Lync Server 2010 a Lync Server 2013](migration-from-lync-server-2010-to-lync-server-2013.md)
 
@@ -76,23 +76,23 @@ Il percorso di migrazione consigliato è un approccio graduale. Per informazioni
 
 Lync Server 2013 può coesistere con i componenti di una distribuzione di Lync Server 2010 o di una distribuzione di Office Communications Server 2007 R2. La distribuzione simultanea di Lync Server 2013 con Lync Server 2010 e Office Communications Server 2007 R2 (distribuzione simultanea di tutte e tre le versioni) non è supportata.
 
-Durante una migrazione a fasi in cui una distribuzione di Lync Server 2010 o Office Communications Server 2007 R2 precedente coesiste temporaneamente con la nuova distribuzione di Lync Server 2013, il supporto per il routing di versioni miste è limitato. Per informazioni dettagliate, vedere la documentazione relativa alla migrazione.
+Durante una migrazione in fasi in cui una distribuzione di Lync Server 2010 o Office Communications Server 2007 R2 precedente coesiste temporaneamente con la nuova distribuzione di Lync Server 2013, il supporto per il routing di versioni miste è limitato. Per informazioni dettagliate, vedere la documentazione relativa alla migrazione.
 
-È necessario usare computer separati e distinti con Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 per le istanze di database di Lync Server 2013. Non è possibile usare la stessa istanza di SQL Server per un pool di front end di Lync Server 2013 che si usa per un pool di front end di Lync Server 2010 o Office Communications Server 2007 R2. Se si definisce e si configura Lync Server 2013 in Generatore di topologia per una distribuzione che ha già implementato Lync Server 2010 o Office Communications Server 2007 R2, generatore di topologie non consentirà di definire un'istanza di un server Lync 2013 già in uso in la topologia.
+È necessario utilizzare computer separati e distinti che eseguono Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 per le istanze di database di Lync Server 2013. Non è possibile utilizzare la stessa istanza di SQL Server per un pool Front End di Lync Server 2013 utilizzato per un pool Front End di Lync Server 2010 o Office Communications Server 2007 R2. Se si definisce e si configura Lync Server 2013 in Generatore di topologie per una distribuzione che dispone già di Lync Server 2010 o Office Communications Server 2007 R2 distribuito, generatore di topologie non consentirà di definire un'istanza di Lync Server 2013 già in uso in la topologia.
 
-Generatore di topologia visualizzerà il messaggio seguente per segnalare il problema: "il nome di \[dominio completo di SQL\] server del server contiene già un ruolo di hosting dell'istanza SQL" archivio utenti ".
+Il generatore di topologie visualizzerà il seguente messaggio per informare l'utente del problema: " \[l'FQDN di SQL\] server del server contiene già un ruolo di hosting dell'istanza di SQL ' archivio utenti '".
 
 <div>
 
 
 > [!NOTE]  
-> Se si intende distribuire ruoli del server nuovi alla distribuzione di Lync Server 2013, è consigliabile prima di tutto aggiornare la distribuzione esistente, come descritto nella documentazione relativa alla migrazione e nella documentazione di distribuzione, quindi distribuire i nuovi ruoli del server come descritto in documentazione sulla pianificazione e la documentazione sulla distribuzione. Se si esegue la migrazione di una versione precedente di Group Chat, eseguire la migrazione per ultima, dopo aver completato il processo di migrazione di tutti gli altri componenti da Lync Server 2010 o Office Communications Server 2007 R2.
+> Se si intende distribuire i ruoli del server nuovi per la distribuzione di Lync Server 2013, è consigliabile prima aggiornare la distribuzione esistente come descritto nella documentazione relativa alla migrazione e la documentazione relativa alla distribuzione e quindi distribuire i nuovi ruoli del server come descritto in documentazione sulla pianificazione e la documentazione relativa alla distribuzione. Se si esegue la migrazione di una versione precedente di Group Chat, eseguirne la migrazione per ultima, dopo aver completato il processo di migrazione di tutti gli altri componenti da Lync Server 2010 o Office Communications Server 2007 R2.
 
 
 
 </div>
 
-Per specifici requisiti di coesistenza e altri dettagli sulla coesistenza e la migrazione dei componenti di Lync Server 2010 o Office Communications Server 2007 R2 e Lync Server 2013, vedere [migrazione da Lync server 2010 a Lync server 2013](migration-from-lync-server-2010-to-lync-server-2013.md) e [migrazione da Office Communications Server 2007 R2 a Lync Server 2013](migration-from-office-communications-server-2007-r2-to-lync-server-2013.md) nella documentazione di migrazione. Per informazioni dettagliate sul supporto della versione mista per i client, vedere [client supportati da distribuzioni precedenti in Lync Server 2013](lync-server-2013-supported-clients-from-previous-deployments.md).
+Per i requisiti specifici di coesistenza e altri dettagli sulla coesistenza e la migrazione dei componenti di Lync Server 2010 o Office Communications Server 2007 R2 e Lync Server 2013, vedere [Migration from Lync server 2010 to Lync server 2013](migration-from-lync-server-2010-to-lync-server-2013.md) and [Migration from office Communications Server 2007 R2 to Lync Server 2013](migration-from-office-communications-server-2007-r2-to-lync-server-2013.md) nella documentazione relativa alla migrazione. Per informazioni dettagliate sul supporto di versioni miste per i client, vedere [client supportati dalle distribuzioni precedenti in Lync Server 2013](lync-server-2013-supported-clients-from-previous-deployments.md).
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Appendici: Survivable Branch Appliance e Survivable Branch Server'
+title: 'Lync Server 2013: appendici: Survivable Branch Appliance e server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183896
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f6f825179b2967ef96db3b2f035eefbad1049572
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bf5f651e93097537659d6df0ea7bb4fa469fabcd
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737786"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029027"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="appendices-survivable-branch-appliances-and-servers-in-lync-server-2013"></a>Appendici: Survivable Branch Appliance e Survivable Branch Server in Lync Server 2013
+# <a name="appendices-survivable-branch-appliances-and-servers-in-lync-server-2013"></a>Appendici: Survivable Branch Appliance e server in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41737786"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-28_
+_**Ultimo argomento modificato:** 2012-06-28_
 
-La sezione contiene informazioni aggiuntive su Survivable Branch Appliances e Survivable Branch Servers.
+La sezione fornisce ulteriori informazioni su Survivable Branch Appliance e Survivable Branch Server.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Appendice A: utilizzo dei cmdlet per distribuire un Survivable Branch Appliance in Lync Server 2013](lync-server-2013-appendix-a-using-cmdlets-to-deploy-a-survivable-branch-appliance.md)
 

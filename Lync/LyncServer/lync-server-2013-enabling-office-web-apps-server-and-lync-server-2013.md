@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Abilitazione di Office Web Apps Server e Lync Server 2013'
+title: 'Lync Server 2013: attivazione del server Office Web Apps e di Lync Server 2013'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183790
 ms.date: 08/19/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 37715182ba704f71bad463044ec9b47cea8f777b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fb7e35b9347cc38239df7d2e28ddeda05e86cda5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735786"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030479"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,31 +35,31 @@ ms.locfileid: "41735786"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-08-19_
+_**Ultimo argomento modificato:** 2016-08-19_
 
-Lync Server 2013 impiega Office Web Apps Server per gestire le presentazioni di PowerPoint. Per informazioni sui vantaggi di questo approccio, vedere [Panoramica delle conferenze Web in Lync Server 2013](lync-server-2013-web-conferencing-overview.md).
+Lync Server 2013 utilizza il server Office Web Apps per gestire le presentazioni di PowerPoint. Per informazioni sui vantaggi di questo approccio, vedere [Overview of Web Conferencing in Lync Server 2013](lync-server-2013-web-conferencing-overview.md).
 
-Per usare questi nuovi amministratori delle funzionalità, è necessario installare Office Web Apps Server e configurare Lync Server 2013 per la comunicazione con Office Web Apps Server. Questa documentazione contiene informazioni su come configurare Lync Server 2013 per l'utilizzo con Office Web Apps Server. La documentazione non fornita contiene informazioni su come installare Office Web Apps Server stesso; per queste informazioni, vedere il sito Web Microsoft Office Web Apps Deployment <http://go.microsoft.com/fwlink/p/?linkid=257525>. Questa guida include informazioni complete sui prerequisiti per Office Web Apps Server; Tieni presente che il server Office Web Apps deve essere installato in un computer autonomo che non è in grado di eseguire Lync Server, Microsoft SQL Server o qualsiasi altra applicazione server. Non è necessario che nel computer sia installata una versione di Microsoft Office. Qualsiasi computer usato per eseguire Office Web Apps Server deve avere anche un set di software specifico installato (inclusi .NET Framework 4,5 e Windows PowerShell 3,0); questi requisiti, oltre a informazioni sulla configurazione di certificati e Internet Information Services (IIS), vengono descritti in dettaglio nel sito Web Microsoft Office Web Apps Deployment <http://go.microsoft.com/fwlink/p/?linkid=257525>.
+Per poter utilizzare questi nuovi amministratori delle funzionalità, è necessario installare il server Office Web Apps e configurare Lync Server 2013 per la comunicazione con il server Office Web Apps. In questa documentazione vengono fornite informazioni su come configurare Lync Server 2013 per l'utilizzo con il server Office Web Apps. La documentazione non fornita contiene informazioni su come installare il server Office Web Apps stesso. per tali informazioni, vedere il sito Web di distribuzione di Microsoft Office <http://go.microsoft.com/fwlink/p/?linkid=257525>Web Apps all'indirizzo. Tale guida include informazioni complete sui prerequisiti per il server Office Web Apps. Si noti che il server Office Web Apps deve essere installato in un computer autonomo che non esegue Lync Server, Microsoft SQL Server o qualsiasi altra applicazione server. (Non è necessario che nel computer sia installata alcuna versione di Microsoft Office). Qualsiasi computer utilizzato per eseguire il server Office Web Apps deve disporre anche di un insieme specifico di software installato (inclusi .NET Framework 4,5 e Windows PowerShell 3,0). tali requisiti, oltre alle informazioni sulla configurazione dei certificati e di Internet Information Services (IIS), vengono illustrati in dettaglio nel sito Web Microsoft Office Web <http://go.microsoft.com/fwlink/p/?linkid=257525>Apps Deployment all'indirizzo.
 
 <div>
 
 
 > [!NOTE]  
-> L'iterazione più recente di Office Web Apps Server è denominata Office Online Server, supportata da Lync Server 2013. Per altre informazioni, vedere la <A href="https://technet.microsoft.com/en-us/library/jj219456(v=office.16).aspx">documentazione del server Office Online</A>.
+> L'ultima iterazione del server Office Web Apps è denominata Office Online Server, che è supportato da Lync Server 2013. Per ulteriori informazioni, fare riferimento alla <A href="https://technet.microsoft.com/library/jj219456(v=office.16).aspx">documentazione di Office Online Server</A>.
 
 
 
 </div>
 
-Questo documento illustra le aree tematiche seguenti:
+In questo documento sono riportate le aree tematiche seguenti:
 
-  - [Configurazione di Lync Server 2013 per l'utilizzo con Office Web Apps Server](lync-server-2013-configuring-lync-server-2013-to-work-with-office-web-apps-server.md)
+  - [Configurazione di Lync Server 2013 per l'utilizzo con il server Office Web Apps](lync-server-2013-configuring-lync-server-2013-to-work-with-office-web-apps-server.md)
 
-  - [Pubblicazione di Office Web Apps Server in Lync Server 2013 con un server proxy inverso](lync-server-2013-publishing-office-web-apps-server-using-a-reverse-proxy-server.md)
+  - [Pubblicazione del server Office Web Apps in Lync Server 2013 utilizzando un server proxy inverso](lync-server-2013-publishing-office-web-apps-server-using-a-reverse-proxy-server.md)
 
-  - [Convalida della configurazione di Office Web Apps Server in Lync Server 2013](lync-server-2013-validating-the-configuration-of-office-web-apps-server.md)
+  - [Convalidare la configurazione del server Office Web Apps in Lync Server 2013](lync-server-2013-validating-the-configuration-of-office-web-apps-server.md)
 
-  - [Configurazione dei client di Lync Server 2013 per l'uso con Office Web Apps Server](lync-server-2013-configuring-clients-for-use-with-office-web-apps-server.md)
+  - [Configurazione dei client di Lync Server 2013 per l'utilizzo con il server Office Web Apps](lync-server-2013-configuring-clients-for-use-with-office-web-apps-server.md)
 
 </div>
 

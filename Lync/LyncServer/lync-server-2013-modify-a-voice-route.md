@@ -12,16 +12,16 @@ ms:contentKeyID: 48185143
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c0731383eea99e7510ef1748777e7139e2d9f369
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 86c64b9cc595c108676a519bc98cba3ecad04a62
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41727546"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035902"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,54 +35,54 @@ ms.locfileid: "41727546"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Questo argomento spiega come modificare una route vocale. Per creare una nuova route, vedere [creare una route vocale in Lync Server 2013](lync-server-2013-create-a-voice-route.md).
+In questo argomento viene illustrato come modificare una route vocale. Per creare una nuova route, vedere [Create a Voice Route in Lync Server 2013](lync-server-2013-create-a-voice-route.md).
 
 <div>
 
 ## <a name="to-modify-a-voice-route"></a>Per modificare una route vocale
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **routing vocale**e quindi su **instrada**.
+3.  Sulla barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Route**.
 
-4.  Nella pagina **Route** usare uno dei metodi seguenti per modificare una route vocale:
+4.  Nella pagina **Route** utilizzare uno dei metodi seguenti per modificare una route vocale:
     
-      - Fare clic sul nome di una route vocale, scegliere **modifica**e quindi fare clic su **Mostra dettagli**.
+      - Fare clic sul nome di una route vocale, fare clic su **Modifica**, quindi su **Mostra dettagli**.
     
-      - Fare clic sul nome di una route vocale, scegliere **modifica**, fare clic su **copia**e quindi su **Incolla**. Fare clic sulla nuova copia della route vocale appena creata, fare clic su **modifica**e quindi su **Mostra dettagli**.
+      - Fare clic sul nome di una route vocale, fare clic su **Modifica**, su **Copia**, quindi su **Incolla**. Fare clic sulla nuova copia della route vocale appena creata, fare clic su **Modifica**, quindi su **Mostra dettagli**.
 
-5.  Nel campo **nome** della pagina **modifica route vocale** digitare un nome descrittivo per la route vocale.
+5.  Nel campo **Nome** della pagina **Modifica route vocale** digitare un nome descrittivo per la route vocale.
 
-6.  Opzionale Nel campo **Descrizione** digitare altre informazioni descrittive per la route vocale.
+6.  Nel campo **Descrizione** digitare altre informazioni descrittive per la route vocale (facoltativo).
 
-7.  Per specificare i motivi per cui si vuole che questa route sia adatta, è possibile usare lo strumento **Crea un modello per abbinarlo** per generare un'espressione regolare o scrivere manualmente l'espressione regolare.
+7.  Per specificare i formati che questa route deve includere, è possibile utilizzare lo strumento **Formato per corrispondenza** per generare un'espressione regolare oppure scrivere tale espressione manualmente.
     
-      - Per usare lo strumento **Crea un motivo per** creare un'espressione regolare, immettere i valori come indicato di seguito. È possibile specificare due tipi di criteri di corrispondenza:
+      - Per utilizzare lo strumento **Formato per corrispondenza** per generare un'espressione regolare, immettere i valori come indicato di seguito. È possibile specificare due tipi di corrispondenze di formato:
         
-          - **Cifre iniziali per i numeri che si desidera consentire:** Immettere i valori di prefisso che questa route deve contenere (incluso il + iniziale, se necessario). Ad esempio, digitare **+ 425** e quindi fare clic su **Aggiungi**. Ripetere questa operazione per ogni valore di prefisso che si vuole includere nella route.
+          - **Cifre iniziali per i numeri che si desidera consentire:** Immettere i valori di prefisso che questa route deve contenere (incluso il + iniziale se necessario). Digitare, ad esempio, **+425** e quindi fare clic su **Aggiungi**. Ripetere questa operazione per ogni valore di prefisso da includere nella route.
         
-          - **Eccezioni:** Se si desidera specificare una o più eccezioni per un valore di prefisso, evidenziare il prefisso e fare clic su **eccezioni**. Digitare uno o più valori per i criteri di corrispondenza che *non* si vuole includere in questa route. Ad esempio, per escludere i numeri che iniziano con + 425237 dalla Route, immettere il valore **+ 425237** nel campo **eccezioni** e quindi fare clic su **OK**.
+          - **Eccezioni:** Se si desidera specificare una o più eccezioni per un valore di prefisso, evidenziare il prefisso e fare clic su **eccezioni**. Digitare uno o più valori per i formati di corrispondenza che la route *non* deve includere. Ad esempio, per escludere i numeri che iniziano con + 425237 dalla Route, immettere il valore **+ 425237** nel campo **eccezioni** e quindi fare clic su **OK**.
     
-      - Per definire il modello di corrispondenza manualmente, fare clic su **modifica** nello strumento Crea modello in modo che **corrisponda** e quindi digitare un'espressione regolare di .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui è applicata la route. Per informazioni su come scrivere espressioni regolari, vedere "espressioni regolari di .NET Framework" [http://go.microsoft.com/fwlink/p/?linkId=140927](http://go.microsoft.com/fwlink/p/?linkid=140927).
+      - Per definire manualmente il formato di corrispondenza, fare clic su **Modifica** nello strumento **Formato per corrispondenza** e quindi digitare un'espressione regolare .NET Framework per specificare il formato di corrispondenza per i numeri di telefono di destinazione ai quali viene applicata la route. Per informazioni su come scrivere espressioni regolari, vedere la sezione relativa alle espressioni regolari di .NET [http://go.microsoft.com/fwlink/p/?linkId=140927](http://go.microsoft.com/fwlink/p/?linkid=140927)Framework all'indirizzo.
 
-8.  Selezionare **Elimina ID chiamante** se non si vuole che l'ID del telefono che sta effettuando la chiamata in uscita venga visualizzato nel destinatario della chiamata. Se si seleziona questa opzione, è necessario specificare un **ID chiamante alternativo** che verrà visualizzato nella visualizzazione ID chiamante del destinatario.
+8.  Selezionare Ignora **ID chiamante** se non si desidera che l'ID del telefono che rende la chiamata in uscita venga visualizzato al destinatario della chiamata. Se si seleziona questa opzione, è necessario specificare un **ID chiamante alternativo** che verrà visualizzato sullo schermo dell'ID chiamante del destinatario.
 
-9.  Per associare uno o più Trunks PSTN (Public Switched Telephone Network) alla route vocale, fare clic su **Aggiungi**e quindi selezionare un trunk nell'elenco.
+9.  Per associare uno o più trunk PSTN (Public Switched Telephone Network) alla route vocale, fare clic su **Aggiungi**e quindi selezionare un trunk dall'elenco.
     
     <div>
     
 
     > [!NOTE]  
-    > Se la distribuzione include qualsiasi server di mediazione di Microsoft Office Communications Server 2007 R2, sarà disponibile anche nell'elenco.
+    > Se la distribuzione include tutti i Mediation Server di Microsoft Office Communications Server 2007 R2, saranno disponibili anche nell'elenco.
 
     
     </div>
 
-10. Per associare uno o più usi PSTN alla route vocale, fare clic su **Seleziona** e scegliere un record dall'elenco dei record di utilizzo PSTN definiti per la distribuzione vocale aziendale.
+10. Per associare uno o più utilizzi PSTN alla route vocale, fare clic su **Seleziona** e scegliere un record nell'elenco dei record di utilizzo PSTN definiti per la distribuzione di VoIP aziendale.
     
     <div>
     
@@ -93,37 +93,37 @@ Questo argomento spiega come modificare una route vocale. Per creare una nuova r
     
     </div>
 
-11. Disporre i record di utilizzo PSTN per ottenere prestazioni ottimali. Per modificare la posizione di un record nell'elenco, evidenziare il nome del record e fare clic sulla freccia verso l'alto o verso il basso.
+11. Disporre i record di utilizzo PSTN per garantire prestazioni ottimali. Per modificare la posizione di un record nell'elenco, evidenziare il nome del record e fare clic sulla freccia in su o in giù.
     
     <div>
     
 
     > [!NOTE]  
-    > A differenza di un criterio vocale in cui l'ordine in cui sono elencati i record di utilizzo PSTN è importante, l'ordine dei record di utilizzo PSTN in una route vocale non è significativo. Tuttavia, ti consigliamo di organizzare l'elenco in base alla frequenza di utilizzo, ad esempio: RedmondLocal, RedmondLongDist, RedmondInternational, RedmondBackup. (Lync Server attraversa l'elenco dall'alto verso il basso.)
+    > A differenza di un criterio vocale in cui l'ordine in cui sono elencati i record di utilizzo PSTN è importante, l'ordine dei record di utilizzo PSTN in una route vocale è insignificante. È tuttavia consigliabile organizzare l'elenco per frequenza di utilizzo, ad esempio: RedmondLocal, RedmondLongDist, RedmondInternational, RedmondBackup. (Lync Server attraversa l'elenco dall'alto verso il basso).
 
     
     </div>
 
-12. Opzionale Digitare un valore nel campo **immettere un numero tradotto in test** e fare clic su **Vai**. I risultati del test vengono visualizzati sotto il campo.
+12. Digitare un valore nel campo **Numero convertito da testare** e fare clic su **Vai**. I risultati del test vengono visualizzati nel campo (facoltativo).
     
     <div>
     
 
     > [!NOTE]  
-    > È possibile salvare una route vocale che non supera ancora il test e quindi riconfigurarla in un secondo momento. Per informazioni dettagliate, vedere <A href="lync-server-2013-test-voice-routing.md">eseguire il test del routing vocale in Lync Server 2013</A>.
+    > È possibile salvare una route vocale che non passa ancora il test e quindi riconfigurarla successivamente. Per ulteriori informazioni, vedere <A href="lync-server-2013-test-voice-routing.md">test Voice routing in Lync Server 2013</A>.
 
     
     </div>
 
 13. Fare clic su **OK**.
 
-14. Nella pagina **Route** fare clic su **commit**e quindi su **Commit all**.
+14. Nella pagina **Route** fare clic su **Commit** e quindi su **Salva tutto**.
     
     <div>
     
 
     > [!NOTE]  
-    > Ogni volta che si crea o si modifica una route vocale, è necessario eseguire il comando <STRONG>commit tutti</STRONG> per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">pubblicare le modifiche in sospeso nella configurazione del routing vocale in Lync Server 2013</A> nella documentazione Operations.
+    > Ogni volta che si crea o si modifica una route vocale, è necessario eseguire il comando <STRONG>Commit all</STRONG> per pubblicare la modifica della configurazione. Per ulteriori informazioni, vedere <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">pubblicare le modifiche in sospeso alla configurazione del routing vocale in Lync Server 2013</A> nella documentazione relativa alle operazioni.
 
     
     </div>
@@ -139,7 +139,7 @@ Questo argomento spiega come modificare una route vocale. Per creare una nuova r
 [Visualizzare i record di utilizzo PSTN in Lync Server 2013](lync-server-2013-view-pstn-usage-records.md)  
 [Creare un criterio vocale e configurare i record di utilizzo PSTN in Lync Server 2013](lync-server-2013-create-a-voice-policy-and-configure-pstn-usage-records.md)  
 [Modificare un criterio vocale e configurare i record di utilizzo PSTN in Lync Server 2013](lync-server-2013-modify-a-voice-policy-and-configure-pstn-usage-records.md)  
-[Pubblicare le modifiche in sospeso nella configurazione di routing vocale in Lync Server 2013](lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md)  
+[Pubblicare le modifiche in sospeso alla configurazione del routing vocale in Lync Server 2013](lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md)  
 
 
 [Testare il routing vocale in Lync Server 2013](lync-server-2013-test-voice-routing.md)  

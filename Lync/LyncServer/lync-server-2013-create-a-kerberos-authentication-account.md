@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Creare un account di autenticazione Kerberos'
+title: 'Lync Server 2013: creare un account di autenticazione Kerberos'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184348
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 797e9216aed5d523e39dc4827d630e0cb1b857fd
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e59703328fad7c8763bc1a6cc018c2cbc585c3ed
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740426"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035088"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41740426"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-01-02_
+_**Ultimo argomento modificato:** 2012-01-02_
 
-Per completare correttamente questa procedura, è necessario avere effettuato l'accesso al server o al dominio in minima parte come membro del gruppo Domain Admins.
+Per eseguire correttamente questa procedura, è necessario essere connessi al server o al dominio almeno come membri del gruppo Domain Admins.
 
-È possibile creare account di autenticazione Kerberos per ogni sito oppure creare un singolo account di autenticazione Kerberos e usarlo per tutti i siti. Puoi usare i cmdlet di Windows PowerShell per creare e gestire gli account, incluso l'identificazione degli account assegnati a ogni sito. Il generatore di topologia e il pannello di controllo di Lync Server 2013 non visualizzano gli account di autenticazione Kerberos. Usare la procedura seguente per creare uno o più account utente da usare per l'autenticazione Kerberos.
+È possibile creare account di autenticazione Kerberos per ogni sito oppure creare un singolo account di autenticazione Kerberos e utilizzarlo per tutti i siti. È possibile utilizzare i cmdlet di Windows PowerShell per creare e gestire gli account, tra cui l'identificazione degli account assegnati a ogni sito. Il generatore di topologie e il pannello di controllo di Lync Server 2013 non visualizzano gli account di autenticazione Kerberos. Utilizzare la procedura seguente per creare uno o più account utente da utilizzare per l'autenticazione Kerberos.
 
 <div>
 
 ## <a name="to-create-a-kerberos-account"></a>Per creare un account Kerberos
 
-1.  Come membro del gruppo Domain Admins, accedere a un computer nel dominio in cui è in uso Lync Server 2013 o in un computer in cui sono installati gli strumenti di amministrazione.
+1.  Come membri del gruppo Domain Admins, accedere a un computer nel dominio in cui è in esecuzione Lync Server 2013 o a un computer in cui sono installati gli strumenti di amministrazione.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Nella riga di comando eseguire il comando seguente:
+3.  Eseguire il comando seguente dalla riga di comando:
     
         New-CsKerberosAccount -UserAccount "Domain\UserAccount" -ContainerDN "CN=Users,DC=DomainName,DC=DomainExtension"
     
@@ -57,7 +57,7 @@ Per completare correttamente questa procedura, è necessario avere effettuato l'
     
         New-CsKerberosAccount -UserAccount "Contoso\KerbAuth" -ContainerDN "CN=Users,DC=contoso,DC=com"
 
-4.  Verificare che l'oggetto computer sia stato creato aprendo utenti e computer di Active Directory, espandere il contenitore **utenti** e quindi verificare che l'oggetto computer per l'account utente si trovi nel contenitore.
+4.  Verificare che l'oggetto Computer sia stato creato. A tale scopo aprire Utenti e computer di Active Directory, espandere il contenitore **Utenti** e quindi verificare che l'oggetto Computer per l'account utente sia presente nel contenitore.
 
 </div>
 

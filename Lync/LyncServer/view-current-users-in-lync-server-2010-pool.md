@@ -12,16 +12,16 @@ ms:contentKeyID: 49733804
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: da91f6a7247f152599f740aebaa7ebea09c852bc
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fadc7b822fe1bdd04c170031407fe0441bfdc2f1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730756"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036184"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41730756"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-26_
+_**Ultimo argomento modificato:** 2012-09-26_
 
-Prima di apprendere i vari modi per trasferire gli utenti tra i pool, è prima di tutto necessario determinare gli utenti presenti nel pool legacy di Lync Server 2010. Nell'immagine seguente la colonna del pool di registrar identifica sei utenti configurati per il pool legacy di Lync Server 2010. Questi sono gli utenti di test che sposteremo nel pool di Lync Server 2013.
+Prima di imparare i diversi modi in cui è possibile spostare gli utenti tra i pool, è innanzitutto necessario determinare quali utenti sono presenti nel pool di Lync Server 2010 legacy. Nell'immagine seguente, la colonna pool di registrazione identifica sei utenti configurati per il pool di Lync Server 2010 legacy. Questi sono gli utenti di test che verranno spostati nel pool di Lync Server 2013.
 
 **Per visualizzare l'elenco degli utenti nel pool di Lync Server 2010**
 
-1.  Accedere al server front-end di Lync Server 2010 con un account che è un membro del gruppo RTCUniversalServerAdmins o un membro del ruolo di amministratore di CsAdministrator o CsUserAdministrator.
+1.  Accedere a Lync Server 2010 Front End Server con un account membro del gruppo RTCUniversalServerAdmins o membro del ruolo amministrativo CsAdministrator o CsUserAdministrator.
 
 2.  Aprire il **Pannello di controllo di Lync Server**.
 
-3.  Fare clic su **utenti**, fare clic su Cerca e quindi su **trova**.
+3.  Fare clic su **Utenti**, su Cerca e quindi su **Trova**.
 
 **Pannello di controllo di Lync Server 15**
 
-![Pannello di controllo di Lync Server - Finestra di dialogo Spostare un utente](images/JJ721870.a2bce284-0392-4db3-9bb2-9f12699738e7(OCS.15).jpg "Pannello di controllo di Lync Server - Finestra di dialogo Spostare un utente")
+![Pannello di controllo di Lync Server, finestra di dialogo Sposta utente](images/JJ721870.a2bce284-0392-4db3-9bb2-9f12699738e7(OCS.15).jpg "Pannello di controllo di Lync Server, finestra di dialogo Sposta utente")
 
 </div>
 

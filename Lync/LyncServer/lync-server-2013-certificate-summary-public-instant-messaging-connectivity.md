@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: riepilogo del certificato-connettività di messaggistica istantanea pubblica'
+title: 'Lync Server 2013: riepilogo dei certificati-connettività per la messaggistica istantanea pubblica'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49105657
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5c93e79eed643d608ac9ab04516222227fc7c1f6
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8e2cce89560c885ad04e03c77d0542289221f1ec
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736636"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42031110"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="certificate-summary---public-instant-messaging-connectivity-in-lync-server-2013"></a>Riepilogo del certificato-connettività di messaggistica istantanea pubblica in Lync Server 2013
+# <a name="certificate-summary---public-instant-messaging-connectivity-in-lync-server-2013"></a>Riepilogo dei certificati-connettività per la messaggistica istantanea pubblica in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41736636"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-19_
+_**Ultimo argomento modificato:** 2013-02-19_
 
-Per configurare i certificati per la connettività di messaggistica istantanea pubblica, è necessario prima di tutto notare che non c'è niente di diverso dagli altri tipi di federazione SIP o anche da certificati standard del server Edge, ad eccezione del fatto che America Online (AOL) richiede un unico configurazione del certificato. Oltre al consueto utilizzo della chiave avanzata per server (EKU), America Online richiede il certificato o i certificati (nel caso di un pool di bordi) che contengano anche l'EKU client. L'EKU client è un'aggiunta al certificato e fa parte del certificato pubblico esterno assegnato al server perimetrale.
+Per configurare i certificati per la connettività per la messaggistica istantanea pubblica, è necessario prima di tutto notare che non vi è nulla di diverso da altri tipi di federazione SIP o persino certificati standard del server perimetrale, tranne per il fatto che America Online (AOL) richiede un'unica configurazione del certificato. Oltre al consueto utilizzo della chiave avanzata del server (EKU), in America Online è necessario che il certificato o i certificati (nel caso di un pool perimetrale) contengano anche l'EKU client. L'EKU client è un'aggiunta al certificato e fa parte del certificato pubblico esterno assegnato al server perimetrale.
 
 <div>
 
-## <a name="certificate-summary--public-instant-messaging-connectivity"></a>Riepilogo del certificato-connettività di messaggistica istantanea pubblica
+## <a name="certificate-summary--public-instant-messaging-connectivity"></a>Riepilogo dei certificati - Connettività per messaggistica istantanea pubblica
 
 
 <table>
@@ -54,25 +54,25 @@ Per configurare i certificati per la connettività di messaggistica istantanea p
 <thead>
 <tr class="header">
 <th>Componente</th>
-<th>Nome oggetto</th>
-<th>Nomi alternativi oggetto (SAN)/Order</th>
+<th>Nome soggetto</th>
+<th>Ordine/voci nomi alternativi del soggetto (SAN)</th>
 <th>Commenti</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Esterno/bordo di accesso</p></td>
+<td><p>Perimetro esterno/Access Edge</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>sip.contoso.com</p>
 <p>webcon.contoso.com</p>
 <p>sip.fabrikam.com</p></td>
-<td><p>Il certificato deve provenire da una CA pubblica e deve avere il server EKU e il client EKU se è necessario distribuire la connettività di messaggistica istantanea pubblica con AOL. Il certificato viene assegnato alle interfacce di Edge Server esterne per:</p>
+<td><p>Il certificato deve provenire da un'autorità di certificazione pubblica e deve disporre del server EKU e del client EKU se è necessario distribuire la connettività di messaggistica istantanea pubblica con AOL. Il certificato viene assegnato alle interfacce del server perimetrale esterno per:</p>
 <ul>
-<li><p>Access Edge Services</p></li>
-<li><p>Web Conferencing Edge service</p></li>
-<li><p>A/V Edge service</p></li>
+<li><p>Servizio Access Edge</p></li>
+<li><p>Servizio Web Conferencing Edge</p></li>
+<li><p>Servizio A/V Edge</p></li>
 </ul>
-<p>Tieni presente che i SANs vengono aggiunti automaticamente al certificato in base alle tue definizioni in Generatore di topologie. Si aggiungono le voci SAN in base alle esigenze per altri domini SIP e altre voci che è necessario supportare. Il nome del soggetto viene replicato nella SAN e deve essere presente per il corretto funzionamento.</p></td>
+<p>Si noti che i SAN vengono aggiunti automaticamente al certificato in base alle definizioni fornite nel Generatore di topologie. Le voci SAN vengono aggiunte in base alle esigenze per i domini SIP aggiuntivi e per altre voci di cui è richiesto il supporto. Il nome soggetto viene replicato nel SAN e deve essere presente per il funzionamento corretto.</p></td>
 </tr>
 </tbody>
 </table>

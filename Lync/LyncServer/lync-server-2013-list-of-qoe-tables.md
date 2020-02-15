@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Elenco delle tabelle QoE'
+title: 'Lync Server 2013: elenco delle tabelle QoE'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183512
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c3161415b65c8e85ace7968ab29d86c0d0c5387a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3b15cab5a39e74cbbc1813fb9d4f5ce56d777408
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765394"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42033755"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41765394"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-02_
+_**Ultimo argomento modificato:** 2012-10-02_
 
 Lo schema del database è costituito dalle tabelle seguenti.
 
@@ -49,30 +49,30 @@ Lo schema del database è costituito dalle tabelle seguenti.
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Tabella</strong></th>
+<th><strong>tavolo</strong></th>
 <th><strong>Descrizione</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><a href="lync-server-2013-appsharingmetricsthreshold-table.md">Tabella AppSharingMetricsThreshold in Lync Server 2013</a></p></td>
-<td><p>Consente di archiviare valori ottimali e accettabili per la qualità delle metriche di esperienza usate con la condivisione delle applicazioni.</p></td>
+<td><p>Archivia i valori ottimali e accettabili per le metriche sulla qualità delle esperienze utilizzate con la condivisione di applicazioni.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-codecdescription-table.md">Tabella CodecDescription in Lync Server 2013</a></p></td>
-<td><p>Associa gli identificatori di codec univoci al relativo codec.</p></td>
+<td><p>Consente di mappare gli identificatori di codec univoci al codec corrispondente.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-ipaddress-table.md">Tabella IPAddress in Lync Server 2013</a></p></td>
-<td><p>Esegue il mapping degli indirizzi IP agli identificatori di indirizzi IP univoci usati altrove nel database qualità di esperienza.</p></td>
+<td><p>Consente di eseguire il mapping degli indirizzi IP agli identificatori di indirizzi IP univoci utilizzati altrove nel database Quality of Experience.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-networkconnectiondetail-table.md">Tabella NetworkConnectionDetail in Lync Server 2013</a></p></td>
-<td><p>Associa i tipi di connessione di rete agli identificatori di connessione di rete usati in un altro punto del database qualità dell'esperienza.</p></td>
+<td><p>Esegue il mapping dei tipi di connessione di rete agli identificatori di connessione di rete utilizzati in altri punti del database Quality of Experience.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-purgesettings-table-qoe.md">Tabella PurgeSettings (QoE) in Lync Server 2013</a></p></td>
-<td><p>Archivia le informazioni che specificano se (e quando) la qualità obsoleta dei record dell'esperienza verrà eliminata automaticamente dal database QoE.</p></td>
+<td><p>Archivia le informazioni che specificano se (e quando) i record di qualità di esperienza obsoleti verranno eliminati automaticamente dal database QoE.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-traceroute-table.md">Tabella TraceRoute in Lync Server 2013</a></p></td>
@@ -80,55 +80,55 @@ Lo schema del database è costituito dalle tabelle seguenti.
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-useragentdef-table-qoe.md">Tabella UserAgentDef (QoE) in Lync Server 2013</a></p></td>
-<td><p>Associa gli identificatori dell'agente utente ai nomi descrittivi dell'agente.</p></td>
+<td><p>Questa tabella contiene il mapping degli identificatori degli agenti utente ai nomi descrittivi degli agenti.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-videometricsthreshold-table.md">Tabella VideoMetricsThreshold in Lync Server 2013</a></p></td>
-<td><p>Consente di archiviare valori ottimali e accettabili per la qualità delle metriche delle esperienze usate con videochiamate.</p></td>
+<td><p>Archivia valori ottimali e accettabili per le metriche sulla qualità delle esperienze utilizzate con le videochiamate.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-useragent-table.md">Tabella UserAgent in Lync Server 2013</a></p></td>
-<td><p>Archivia le stringhe degli agenti utente SIP (Session Initiation Protocol) e i tipi UA usati nelle sessioni audio e video.</p></td>
+<td><p>Archivia le stringhe degli agenti utente SIP (Session Initiation Protocol) e i tipi UA utilizzati nelle sessioni audio e video.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="lync-server-2013-user-table.md">Tabella User in Lync Server 2013</a></p></td>
-<td><p>Archivia gli URI dell'utente, della conferenza e del telefono usati nelle sessioni audio e video.</p></td>
+<td><p><a href="lync-server-2013-user-table.md">Tabella user in Lync Server 2013</a></p></td>
+<td><p>Archivia gli URI degli utenti, delle conferenze e dei telefoni utilizzati nelle sessioni audio e video.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="lync-server-2013-endpoint-table.md">Tabella Endpoint in Lync Server 2013</a></p></td>
-<td><p>Archivia i nomi di computer FQDN degli endpoint che partecipano a sessioni audio e video.</p></td>
+<td><p><a href="lync-server-2013-endpoint-table.md">Tabella endpoint in Lync Server 2013</a></p></td>
+<td><p>Archivia i nomi dei computer FQDN degli endpoint che partecipano alle sessioni audio e video.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="lync-server-2013-pool-table.md">Tabella Pool in Lync Server 2013</a></p></td>
+<td><p><a href="lync-server-2013-pool-table.md">Tabella del pool in Lync Server 2013</a></p></td>
 <td><p>Archivia i nomi dei pool a cui appartengono i dati della metrica.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-device-table.md">Tabella Device in Lync Server 2013</a></p></td>
-<td><p>Archivia i dispositivi di acquisizione e i dispositivi di rendering usati in una chiamata audio/video.</p></td>
+<td><p>Archivia i dispositivi di acquisizione e i dispositivi di rendering utilizzati nelle chiamate audio/video.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="lync-server-2013-devicedriver-table.md">Tabella DeviceDriver in Lync Server 2013</a></p></td>
-<td><p>Archivia il driver per il dispositivo di acquisizione e il dispositivo di rendering usato nelle chiamate audio/video.</p></td>
+<td><p><a href="lync-server-2013-devicedriver-table.md">Tabella QRTDDriver in Lync Server 2013</a></p></td>
+<td><p>Archivia il driver per il dispositivo di acquisizione e il dispositivo di rendering utilizzati nelle chiamate audio/video.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="lync-server-2013-conference-table.md">Tabella Conference in Lync Server 2013</a></p></td>
-<td><p>Archivia gli URI della conferenza per gli scenari di conferenza o DialogID per altri scenari.</p></td>
+<td><p><a href="lync-server-2013-conference-table.md">Tabella conferenze in Lync Server 2013</a></p></td>
+<td><p>Archivia gli URI di conferenza per gli scenari di conferenza o DialogID per altri scenari.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-sessioncorrelation-table.md">Tabella SessionCorrelation in Lync Server 2013</a></p></td>
-<td><p>Memorizza CorrelationID per le chiamate PSTN.</p></td>
+<td><p>Consente di archiviare CorrelationID per le chiamate PSTN.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-payloaddescription-table.md">Tabella PayloadDescription in Lync Server 2013</a></p></td>
-<td><p>Archivia il codec usato nelle chiamate audio/video.</p></td>
+<td><p>Archivia il codec utilizzato nelle chiamate audio/video.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-appliedbandwidthsource-table.md">Tabella AppliedBandwidthSource in Lync Server 2013</a></p></td>
-<td><p>Archivia l'origine della larghezza di banda usata nelle chiamate audio/video.</p></td>
+<td><p>Archivia l'origine della larghezza di banda utilizzata nelle chiamate audio/video.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-macaddress-table.md">Tabella MacAddress in Lync Server 2013</a></p></td>
-<td><p>Archivia l'indirizzo MAC degli endpoint che partecipano a sessioni audio e video.</p></td>
+<td><p>Archivia l'indirizzo MAC degli endpoint che partecipano alle sessioni audio e video.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-dialog-table.md">Tabella Dialog in Lync Server 2013</a></p></td>
@@ -136,37 +136,37 @@ Lo schema del database è costituito dalle tabelle seguenti.
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-region-table.md">Tabella Region in Lync Server 2013</a></p></td>
-<td><p>Archivia l'area di rete definita in impostazione NCS.</p></td>
+<td><p>Archivia l'area di rete definita nell'impostazione NCS.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-usersite-table.md">Tabella UserSite in Lync Server 2013</a></p></td>
 <td><p>Archivia il sito di rete definito nell'impostazione NCS.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="lync-server-2013-subnet-table.md">Tabella Subnet in Lync Server 2013</a></p></td>
+<td><p><a href="lync-server-2013-subnet-table.md">Tabella subnet in Lync Server 2013</a></p></td>
 <td><p>Archivia la subnet definita nell'impostazione NCS.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-monitoredregionlink-table.md">Tabella MonitoredRegionLink in Lync Server 2013</a></p></td>
-<td><p>Archivia il collegamento all'area geografica definito nell'impostazione NCS.</p></td>
+<td><p>Archivia il collegamento area definito nell'impostazione NCS.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="monitoredusersitelink-table.md">Tabella MonitoredUserSiteLink</a></p></td>
-<td><p>Archivia i collegamenti ai siti di rete definiti nell'impostazione NCS.</p></td>
+<td><p>Archivia i collegamenti di sito di rete definiti nell'impostazione NCS.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-endpointsubnet-table.md">Tabella EndpointSubnet in Lync Server 2013</a></p></td>
 <td><p>Archivia la subnet dell'endpoint che partecipa a una sessione audio e video.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="lync-server-2013-server-table.md">Tabella Server in Lync Server 2013</a></p></td>
-<td><p>Archivia il nome di dominio completo o l'indirizzo IP del server in cui passa il contenuto multimediale.</p></td>
+<td><p><a href="lync-server-2013-server-table.md">Tabella server in Lync Server 2013</a></p></td>
+<td><p>Archivia il nome di dominio completo o l'indirizzo IP del server che passa attraverso il supporto.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-**Tabelle per i dati delle metriche**
+**Tabelle per i dati di metrica**
 
 
 <table>
@@ -176,42 +176,42 @@ Lo schema del database è costituito dalle tabelle seguenti.
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Tabella</strong></th>
+<th><strong>tavolo</strong></th>
 <th><strong>Descrizione</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><a href="lync-server-2013-appsharingstream-table.md">Tabella AppSharingStream in Lync Server 2013</a></p></td>
-<td><p>Archivia la qualità delle metriche dell'esperienza per i flussi di rete usati per la condivisione delle applicazioni. Qualità delle metriche dell'esperienza per i flussi di rete usati per la condivisione delle applicazioni.</p></td>
+<td><p>Archivia le metriche relative alla qualità delle esperienze per i flussi di rete utilizzati per la condivisione delle applicazioni. Metriche sulla qualità delle esperienze per i flussi di rete utilizzati per la condivisione delle applicazioni.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="lync-server-2013-session-table.md">Tabella Session in Lync Server 2013</a></p></td>
-<td><p>Archivia informazioni generali su una sessione audio o audio/video. Una sessione viene definita come una finestra di dialogo SIP audio o video tra due endpoint.</p></td>
+<td><p><a href="lync-server-2013-session-table.md">Tabella di sessione in Lync Server 2013</a></p></td>
+<td><p>Archivia le informazioni generali su una sessione audio o audio/video. Una sessione è definita come una finestra di dialogo SIP audio o video tra due endpoint.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-medialine-table.md">Tabella MediaLine in Lync Server 2013</a></p></td>
-<td><p>Archivia informazioni su ogni riga multimediale di una sessione. Una linea media è una raccolta di uno o più flussi audio e video. In genere, una singola linea multimediale avrà due flussi, audio o video.</p></td>
+<td><p>Archivia informazioni su ogni linea multimediale in una sessione. Una linea multimediale è una raccolta di uno o più flussi audio e video. In genere, una singola linea multimediale avrà due flussi, audio o video.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-audiostream-table.md">Tabella AudioStream in Lync Server 2013</a></p></td>
-<td><p>Memorizza le metriche per la qualità del supporto audio per ogni flusso audio nella linea media.</p></td>
+<td><p>Archivia le metriche per la qualità del supporto audio per ogni flusso audio della linea multimediale.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-audiosignal-table.md">Tabella AudioSignal in Lync Server 2013</a></p></td>
-<td><p>Memorizza le metriche di qualità per i supporti audio nella linea media. Sono incluse le metriche per l'annullamento dell'eco acustica (AEC) e il controllo automatico del guadagno (AGC).</p></td>
+<td><p>Archivia le metriche relative alla qualità multimediale audio nella linea multimediale. Sono incluse le metriche di annullamento dell'eco acustico (AEC) e di controllo di guadagno automatico (AGC).</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-videostream-table.md">Tabella VideoStream in Lync Server 2013</a></p></td>
-<td><p>Archivia le metriche di qualità multimediali video per ogni flusso audio nella linea media.</p></td>
+<td><p>Archivia le metriche di qualità multimediale video per ogni flusso audio nella linea multimediale.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-audioclientevent-table.md">Tabella AudioClientEvent in Lync Server 2013</a></p></td>
-<td><p>Archivia le metriche di qualità del supporto audio raccolte dall'evento client.</p></td>
+<td><p>Archivia le metriche di qualità multimediale audio raccolte dall'evento client.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-videoclientevent-table.md">Tabella VideoClientEvent in Lync Server 2013</a></p></td>
-<td><p>Archivia le metriche di qualità multimediali video raccolte dall'evento client.</p></td>
+<td><p>Archivia le metriche di qualità multimediale video raccolte dall'evento client.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Tabella DiagnosticData</strong></p></td>
@@ -231,28 +231,28 @@ Lo schema del database è costituito dalle tabelle seguenti.
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Tabella</strong></th>
+<th><strong>tavolo</strong></th>
 <th><strong>Descrizione</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><strong>Tabella ServerSummary</strong></p></td>
-<td><p>Archivia i dati di riepilogo per i server, questi dati vengono usati solo per i report di qualità dell'esperienza (QoE).</p></td>
+<td><p>Archivia i dati di riepilogo per i server, questi dati vengono utilizzati solo per i report di qualità di esperienza (QoE).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Tabella UserSummary</strong></p></td>
-<td><p>Archivia i dati di riepilogo per gli utenti, questi dati vengono usati solo per i report QoE.</p></td>
+<td><p>Archivia i dati di riepilogo per gli utenti, questi dati vengono utilizzati solo per i report QoE.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Tabella CallTypeSummary</strong></p></td>
-<td><p>Archiviare i dati di riepilogo per i tipi di chiamata, questi dati vengono usati solo per i report QoE.</p></td>
+<td><p>Archivia i dati di riepilogo per i tipi di chiamata, questi dati vengono utilizzati solo per i report QoE.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-**Tabelle per l'uso interno tramite Monitoring Server**
+**Tabelle per l'utilizzo interno da parte di Monitoring Server**
 
 
 <table>
@@ -262,7 +262,7 @@ Lo schema del database è costituito dalle tabelle seguenti.
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Tabella</strong></th>
+<th><strong>tavolo</strong></th>
 <th><strong>Descrizione</strong></th>
 </tr>
 </thead>
@@ -280,7 +280,7 @@ Lo schema del database è costituito dalle tabelle seguenti.
 <td><p>Solo per uso interno.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Tabella delle attività</strong></p></td>
+<td><p><strong>Tabella Task</strong></p></td>
 <td><p>Solo per uso interno.</p></td>
 </tr>
 <tr class="odd">
@@ -305,7 +305,7 @@ Lo schema del database è costituito dalle tabelle seguenti.
 </tr>
 <tr class="even">
 <td><p><strong>TimeZones</strong></p></td>
-<td><p>Solo per uso interno.</p></td>
+<td><p>Solo per utilizzo interno.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Tabella CallSummary</strong></p></td>
@@ -316,7 +316,7 @@ Lo schema del database è costituito dalle tabelle seguenti.
 <td><p>Solo per uso interno.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Tabella tenant</strong></p></td>
+<td><p><strong>Tabella Tenant</strong></p></td>
 <td><p>Solo per uso interno.</p></td>
 </tr>
 <tr class="even">

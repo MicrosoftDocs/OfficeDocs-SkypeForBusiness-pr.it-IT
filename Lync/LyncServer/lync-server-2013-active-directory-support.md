@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Supporto di Active Directory'
+title: Lync Server 2013 supporto di Active Directory
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183679
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cd35b9444f0ede4abc9b66ab6b5513d049df57ee
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b3ded5de5500778559efe632c5272db50b0eadbd
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735186"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034116"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41735186"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-12-04_
+_**Ultimo argomento modificato:** 2012-12-04_
 
 Di seguito sono riportate le topologie locali dei servizi di dominio Active Directory supportate da Lync Server 2013:
 
-  - Singola foresta con un singolo dominio
+  - Foresta singola con singolo dominio
 
-  - Singola foresta con un solo albero e più domini
+  - Foresta singola con albero singolo e più domini
 
   - Foresta singola con più alberi e spazi dei nomi disgiunti
 
-  - Più foreste in una topologia di foresta centrale
+  - Più foreste in una topologia di foreste centralizzate
 
   - Più foreste in una topologia di foresta di risorse
 
@@ -53,7 +53,7 @@ Di seguito sono riportate le topologie locali dei servizi di dominio Active Dire
 
 
 > [!NOTE]  
-> Lync Server 2013 non supporta i domini con etichetta singola. Ad esempio, è supportata una foresta con un dominio radice denominato <STRONG>contoso. local</STRONG> , ma un dominio radice con etichetta singola denominata <STRONG>local</STRONG> non è supportato. Per informazioni dettagliate, vedere l'articolo 300684 della Microsoft Knowledge Base "informazioni sulla configurazione di Windows per i domini con nomi DNS con etichetta <A href="http://go.microsoft.com/fwlink/p/?linkid=143752">http://go.microsoft.com/fwlink/p/?linkId=143752</A>singola".
+> Lync Server 2013 non supporta i domini con etichetta singola. Ad esempio, un insieme di strutture con un dominio radice denominato <STRONG>contoso. local</STRONG> è supportato, ma non è supportato un dominio radice con etichetta singola denominato <STRONG>local</STRONG> . Per informazioni dettagliate, vedere l'articolo 300684 della Microsoft Knowledge Base "informazioni sulla configurazione di Windows per domini con nomi DNS con etichetta singola <A href="http://go.microsoft.com/fwlink/p/?linkid=143752">http://go.microsoft.com/fwlink/p/?linkId=143752</A>" all'indirizzo.
 
 
 
@@ -63,13 +63,13 @@ Di seguito sono riportate le topologie locali dei servizi di dominio Active Dire
 
 
 > [!NOTE]  
-> Lync Server 2013 non supporta la ridenominazione dei domini. Se è necessario rinominare un dominio in cui è distribuito Lync Server, è necessario prima disinstallare Lync Server, quindi rinominare il dominio e quindi reinstallare Lync Server.
+> Lync Server 2013 non supporta la ridenominazione dei domini. Se è necessario rinominare un dominio in cui è distribuito Lync Server, è necessario innanzitutto disinstallare Lync Server, rinominare il dominio e quindi reinstallare Lync Server.
 
 
 
 </div>
 
-Per informazioni dettagliate sulle topologie e i requisiti supportati per le distribuzioni locali, vedere [requisiti di servizi di dominio Active Directory, supporto e topologie in Lync Server 2013](lync-server-2013-active-directory-domain-services-requirements-support-and-topologies.md) nella documentazione relativa alla pianificazione.
+Per informazioni dettagliate sulle topologie e i requisiti supportati per le distribuzioni locali, vedere [servizi di dominio Active Directory requisiti, supporto e topologie in Lync Server 2013](lync-server-2013-active-directory-domain-services-requirements-support-and-topologies.md) nella documentazione relativa alla pianificazione.
 
 </div>
 

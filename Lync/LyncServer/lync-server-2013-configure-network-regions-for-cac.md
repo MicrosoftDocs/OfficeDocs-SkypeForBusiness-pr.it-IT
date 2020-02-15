@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurare le aree di rete per CAC'
+title: 'Lync Server 2013: configurare le aree di rete per il servizio di controllo di ammissione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185906
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d80a5ec8d02376ae084f1973f47690259cac364d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: acafaca86af1943d2614349ff42f04fa87faddaa
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758374"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036948"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-network-regions-for-cac-in-lync-server-2013"></a>Configurare le aree di rete per CAC in Lync Server 2013
+# <a name="configure-network-regions-for-cac-in-lync-server-2013"></a>Configurare le aree di rete per il servizio di controllo di ammissione in Lync Server 2013
 
 </div>
 
@@ -35,27 +35,27 @@ ms.locfileid: "41758374"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
 <div>
 
 
 > [!IMPORTANT]  
-> Se sono già state create aree di rete per il E9-1-1 o il bypass multimediale, è possibile modificare le aree di rete esistenti aggiungendo le impostazioni specifiche del controllo di ammissione di chiamata tramite il cmdlet <STRONG>Set-CsNetworkRegion</STRONG> . Per un esempio di come modificare un'area geografica di rete, vedere <A href="lync-server-2013-create-or-modify-a-network-region.md">creare o modificare un'area di rete in Lync Server 2013</A>.
+> Se sono state già create aree di rete per il servizio di emergenza (E9-1-1) o per il bypass multimediale, è possibile modificare le aree di rete esistenti aggiungendo impostazioni specifiche del servizio Controllo di ammissione di chiamata utilizzando il cmdlet <STRONG>Set-CsNetworkRegion</STRONG>. Per un esempio di come modificare un'area di rete, vedere <A href="lync-server-2013-create-or-modify-a-network-region.md">creare o modificare un'area di rete in Lync Server 2013</A>.
 
 
 
 </div>
 
-Le *aree di rete* sono gli hub di rete o le backbone usate per la configurazione di CAC, E9-1-1 e bypass multimediale. Usare la procedura seguente per creare aree di rete che si allineano alle aree di rete nella topologia di rete di esempio per CAC. Per visualizzare la topologia di rete di esempio, vedere [esempio: raccogliere i requisiti per il controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md) nella documentazione relativa alla pianificazione.
+Le *aree di rete* sono hub o backbone di rete che si utilizzano nella configurazione del servizio Controllo di ammissione di chiamata, nel servizio di emergenza (E9-1-1) e nel bypass multimediale. Eseguire la procedura seguente per creare aree di rete allineate a quelle dell'esempio di topologia di rete per il servizio Controllo di ammissione di chiamata. Per visualizzare la topologia di rete di esempio, vedere [esempio: raccogliere i requisiti per il controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md) nella documentazione relativa alla pianificazione.
 
-La topologia di rete di esempio per CAC include tre aree geografiche: Nord America, EMEA e APAC. Ogni area geografica ha un sito centrale specificato. Per l'area Nord America, il sito centrale designato è denominato CHICAGO. La procedura seguente mostra un esempio di come usare il cmdlet **New-CsNetworkRegion** per creare l'area Nord America.
+L'esempio di topologia di rete per il servizio Controllo di ammissione di chiamata include tre aree: Nord America, EMEA e APAC. Per ogni area è specificato un sito centrale. Per il Nord America, il sito centrale designato è denominato CHICAGO. Nella procedura seguente è illustrato un esempio di come utilizzare il cmdlet **New-CsNetworkRegion** per creare l'area del Nord America.
 
 <div>
 
 
 > [!NOTE]  
-> Nella procedura seguente viene usato Lync Server Management Shell per creare un'area di rete. Per informazioni dettagliate sull'uso del pannello di controllo di Lync Server per creare un'area di rete, vedere <A href="lync-server-2013-create-or-modify-a-network-region.md">creare o modificare un'area di rete in Lync Server 2013</A>.
+> Nella procedura seguente, Lync Server Management Shell viene utilizzato per creare un'area di rete. Per informazioni dettagliate sull'utilizzo del pannello di controllo di Lync Server per creare un'area di rete, vedere <A href="lync-server-2013-create-or-modify-a-network-region.md">creare o modificare un'area di rete in Lync Server 2013</A>.
 
 
 
@@ -63,15 +63,15 @@ La topologia di rete di esempio per CAC include tre aree geografiche: Nord Ameri
 
 <div>
 
-## <a name="to-create-a-network-region-for-call-admission-control"></a>Per creare un'area di rete per il controllo dell'ammissione alle chiamate
+## <a name="to-create-a-network-region-for-call-admission-control"></a>Per creare un'area di reste per il servizio Controllo di ammissione di chiamata
 
-1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-2.  Per ogni area geografica che è necessario creare, eseguire il cmdlet **New-CsNetworkRegion** . Ad esempio, per creare l'area Nord America, eseguire:
+2.  Eseguire il cmdlet **New-CsNetworkRegion** per ogni area che è necessario creare. Ad esempio, per creare l'area del Nord America, eseguire:
     
         New-CsNetworkRegion -Identity NorthAmerica -CentralSite CHICAGO -Description "All North America Locations"
 
-3.  Ripetere il passaggio 2 per creare le aree di rete, EMEA e APAC.
+3.  Ripetere il passaggio 2 per creare le aree di rete di EMEA e APAC.
 
 </div>
 

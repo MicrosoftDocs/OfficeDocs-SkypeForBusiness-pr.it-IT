@@ -12,16 +12,16 @@ ms:contentKeyID: 48184073
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b469b79e680c202654024d1ac20a55b9929e4b10
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 839086521c6e9054d1759943134b305c8205f59f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764182"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42025717"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41764182"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
-tblFileToken contiene token temporanei per scopi di trasferimento di file.
+In tblFileToken sono inclusi i token temporanei ai fini del trasferimento di file.
 
 ### <a name="columns"></a>Colonne
 
@@ -58,7 +58,7 @@ tblFileToken contiene token temporanei per scopi di trasferimento di file.
 <tr class="odd">
 <td><p>fileToken</p></td>
 <td><p>nvarchar (50), not null</p></td>
-<td><p>Token univoco (GUID).</p></td>
+<td><p>Token univoco (un GUID).</p></td>
 </tr>
 <tr class="even">
 <td><p>fileTokenUserID</p></td>
@@ -67,44 +67,44 @@ tblFileToken contiene token temporanei per scopi di trasferimento di file.
 </tr>
 <tr class="odd">
 <td><p>fileTokenChannelID</p></td>
-<td><p>GUID, non null</p></td>
-<td><p>GUID del nodo della chat room.</p></td>
+<td><p>GUID, not null</p></td>
+<td><p>GUID del nodo della chat.</p></td>
 </tr>
 <tr class="even">
 <td><p>fileTokenExpireDate</p></td>
-<td><p>DateTime, not null</p></td>
-<td><p>Data di scadenza. I token scadono dopo 30 minuti, a meno che non siano stati aggiunti (Vedi le descrizioni seguenti in questa colonna).</p></td>
+<td><p>datetime, not null</p></td>
+<td><p>Ora di scadenza. I token scadono dopo 30 minuti, se non sono stati bloccati (vedere le descrizioni che seguono in questa colonna).</p></td>
 </tr>
 <tr class="odd">
 <td><p>fileTokenComplianceFileUrl</p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>URL del file trasferito (per l'uso del servizio di conformità).</p></td>
+<td><p>URL del file trasferito (per l'uso con il servizio Conformità).</p></td>
 </tr>
 <tr class="even">
 <td><p>fileTokenComplianceThumbnailUrl</p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>URL dell'anteprima del file trasferito (per l'uso del servizio di conformità).</p></td>
+<td><p>URL dell'anteprima del file trasferito (per l'uso con il servizio Conformità).</p></td>
 </tr>
 <tr class="odd">
 <td><p>fileTokenComplianceTime</p></td>
 <td><p>datetime2</p></td>
-<td><p>Timestamp per l'effettiva operazione di trasferimento file (per l'uso del servizio di conformità).</p></td>
+<td><p>Timestamp dell'effettiva operazione di trasferimento del file (per l'uso con il servizio Conformità).</p></td>
 </tr>
 <tr class="even">
 <td><p>fileTokenComplianceIsUpload</p></td>
 <td><p>po'</p></td>
-<td><p>True se upload; False se il download (per l'uso del servizio di conformità).</p></td>
+<td><p>True se si tratta di un caricamento, False se si tratta di un download (per l'uso con il servizio Conformità).</p></td>
 </tr>
 <tr class="odd">
 <td><p>fileTokenCompliancePinned</p></td>
 <td><p>bit, not null</p></td>
-<td><p>True se il token è bloccato. Viene usato per conservare il token nella tabella finché il servizio di conformità non ha la possibilità di recuperare i campi rilevanti.</p></td>
+<td><p>True se il token è bloccato. Usato per mantenere il token nella tabella finché il servizio Conformità non ha l'opportunità di recuperare i campi pertinenti dal token stesso.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="keys"></a>Tasti
+### <a name="keys"></a>Chiavi
 
 <table>
 <colgroup>
@@ -124,7 +124,7 @@ tblFileToken contiene token temporanei per scopi di trasferimento di file.
 </tr>
 <tr class="even">
 <td><p>fileTokenChannelID</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblNode. nodeGuid.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblNode.nodeGuid.</p></td>
 </tr>
 </tbody>
 </table>

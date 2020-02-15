@@ -12,16 +12,16 @@ ms:contentKeyID: 48185937
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 61824b09d1c36aec876ef81762205c81c7f1300d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2eadff371314088e99752ca2bab4c74bcae174c1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764202"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42027597"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41764202"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-28_
+_**Ultimo argomento modificato:** 2012-06-28_
 
-tblComplianceState contiene informazioni sullo stato di conformità a livello di pool.
+tblComplianceState contiene informazioni sullo stato della conformità a livello di pool.
 
 ### <a name="columns"></a>Colonne
 
@@ -57,18 +57,18 @@ tblComplianceState contiene informazioni sullo stato di conformità a livello di
 <tbody>
 <tr class="odd">
 <td><p>lastProcessedEntryID</p></td>
-<td><p>bigint e non null</p></td>
-<td><p>ID dell'evento di conformità elaborato più recente.</p></td>
+<td><p>bigint, not null</p></td>
+<td><p>ID dell'ultimo evento di conformità elaborato.</p></td>
 </tr>
 <tr class="even">
 <td><p>activeServerID</p></td>
 <td><p>int, not null</p></td>
-<td><p>ID del server di conformità che contiene il blocco esclusivo nel database oppure-1 se nessuno.</p></td>
+<td><p>ID del server di conformità che detiene il blocco esclusivo sul database, o -1 se assente.</p></td>
 </tr>
 <tr class="odd">
 <td><p>lockExpirationTime</p></td>
 <td><p>datetime2, not null</p></td>
-<td><p>Blocca ora di scadenza (se activeServerID non è-1).</p></td>
+<td><p>Ora di scadenza del blocco (se activeServerID è diverso da  -1).</p></td>
 </tr>
 </tbody>
 </table>

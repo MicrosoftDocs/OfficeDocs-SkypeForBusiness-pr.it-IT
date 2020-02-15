@@ -1,5 +1,5 @@
 ---
-title: 'Fase 5: aggiungere Lync Server 2013 Edge Server al pool pilota'
+title: 'Fase 5: aggiungere il server perimetrale di Lync Server 2013 al pool pilota'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185423
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 88949c4a2be1779d6be0704bfa90c211640e88be
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4822e68ea060056e78f460b77a01e9931d4ee604
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765717"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034256"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="phase-5-add-lync-server-2013-edge-server-to-pilot-pool"></a>Fase 5: aggiungere Lync Server 2013 Edge Server al pool pilota
+# <a name="phase-5-add-lync-server-2013-edge-server-to-pilot-pool"></a>Fase 5: aggiungere il server perimetrale di Lync Server 2013 al pool pilota
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41765717"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-06_
+_**Ultimo argomento modificato:** 2012-09-06_
 
-Gli argomenti di questa sezione illustrano come aggiungere un server perimetrale Lync Server 2013 alla distribuzione del pool pilota. Gli argomenti includono indicazioni per la configurazione e la verifica quando si utilizza la procedura guidata Distribuisci nuovo pool Edge.
+Negli argomenti di questa sezione viene illustrato come aggiungere un server perimetrale di Lync Server 2013 alla distribuzione del pool pilota. In questi argomenti vengono fornite indicazioni per la configurazione e la verifica durante l'esecuzione della procedura guidata Definisci pool di server perimetrali.
 
 <div>
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-  - [Distribuire Edge Server pilota](deploy-pilot-edge-server.md)
+  - [Distribuire il server perimetrale pilota](deploy-pilot-edge-server.md)
 
-  - [Verificare impostazioni di configurazione](verify-configuration-settings.md)
+  - [Verificare le impostazioni di configurazione](verify-configuration-settings.md)
 
 </div>
 

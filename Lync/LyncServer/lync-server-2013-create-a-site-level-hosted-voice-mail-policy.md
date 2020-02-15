@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: creare un criterio per la segreteria telefonica ospitata a livello di sito'
+title: 'Lync Server 2013: creare un criterio di segreteria telefonica ospitata a livello di sito'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183481
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6aeae2e533bd62cf1f3e24e7ceff69b870ebc7b3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b103369591846cc49b2c676a90103675fe09baec
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740366"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034868"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41740366"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-24_
+_**Ultimo argomento modificato:** 2012-09-24_
 
-Un criterio di *sito* può avere un impatto su tutti gli utenti ospitati nel sito per cui sono definiti i criteri. Se un utente è configurato per l'accesso alla messaggistica unificata di Exchange ospitata e non è stato assegnato un criterio per utente, verranno applicati i criteri del sito. Se non è stato distribuito un criterio per il sito, si applicano i criteri globali.
+Un criterio a livello di *sito* può influire su tutti gli utenti situati nel sito per cui il criterio viene definito. Se un utente è configurato per l'accesso alla messaggistica unificata di Exchange ospitata e non gli è stato assegnato un criterio per utente, verrà applicato il criterio a livello di sito. Se non è stato distribuito un criterio a livello di sito, verrà applicato il criterio globale.
 
-Per informazioni dettagliate sulla configurazione dei criteri del sito, vedere la documentazione di Lync Server Management Shell per i cmdlet seguenti:
+Per informazioni dettagliate sulla configurazione dei criteri di sito, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:
 
   - [New-CsHostedVoicemailPolicy](https://docs.microsoft.com/powershell/module/skype/New-CsHostedVoicemailPolicy)
 
@@ -49,23 +49,23 @@ Per informazioni dettagliate sulla configurazione dei criteri del sito, vedere l
 
 <div>
 
-## <a name="to-create-a-site-hosted-voice-mail-policy"></a>Per creare un criterio per la segreteria telefonica ospitata nel sito
+## <a name="to-create-a-site-hosted-voice-mail-policy"></a>Per creare un criterio segreteria telefonica ospitata con ambito sito
 
-1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
 2.  Eseguire il cmdlet New-CsHostedVoicemailPolicy per creare il criterio. Ad esempio, eseguire:
     
         New-CsHostedVoicemailPolicy -Identity site:Redmond -Destination ExUM.fabrikam.com -Description "Hosted voice mail policy for the Redmond site." -Organization "corp1.litwareinc.com, corp2.litwareinc.com"
     
-    Questo esempio crea un criterio di segreteria telefonica ospitata con l'ambito del sito e imposta i parametri seguenti:
+    In questo esempio viene creato un criterio segreteria telefonica ospitata con ambito sito e vengono impostati i parametri seguenti:
     
-      - **Identity** specifica un identificatore univoco per il criterio, che include l'ambito. Per un criterio con ambito sito, il valore del parametro Identity deve essere specificato nel `site:` * \<nome\>* del formato, ad esempio `site:Redmond`.
+      - **Identity** specifica un identificatore univoco per il criterio, che include l'ambito. Per un criterio con ambito sito, è necessario specificare il valore del parametro Identity nel formato `site:` * \<nome\>*, ad esempio `site:Redmond`.
     
-      - **Destination** specifica il nome di dominio completo (FQDN) del servizio di messaggistica unificata di Exchange ospitata. Questo parametro è facoltativo, ma se tenti di abilitare un utente per la segreteria telefonica ospitata e il criterio assegnato dall'utente non ha un valore di destinazione, l'opzione di abilitazione avrà esito negativo.
+      - **Destination** specifica il nome di dominio completo (FQDN) del servizio Messaggistica unificata di Exchange ospitato. Questo parametro è facoltativo, ma se si tenta di abilitare un utente per la segreteria telefonica ospitata e il criterio assegnato all'utente non dispone di un valore Destination, l'abilitazione avrà esito negativo.
     
-      - **Descrizione** fornisce informazioni descrittive facoltative sui criteri.
+      - **Description** fornisce informazioni descrittive facoltative sul criterio.
     
-      - **Organizzazione** specifica un elenco delimitato da virgole dei tenant di Exchange che ospitano gli utenti di Lync Server 2013. Ogni tenant deve essere specificato come FQDN del tenant nel servizio di messaggistica unificata di Exchange ospitata.
+      - L' **organizzazione** specifica un elenco delimitato da virgole dei tenant di Exchange che ospitano gli utenti di Lync Server 2013. Ogni tenant deve essere specificato come FQDN di quel tenant nel servizio di messaggistica unificata di Exchange ospitata.
 
 </div>
 

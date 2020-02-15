@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurare i tipi di indirizzo IP'
+title: 'Lync Server 2013: configurare i tipi di indirizzi IP'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183515
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7e1b03e7c64c15d147e09883b9d7580bacbca7be
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4cb04adb830e4b7207391675aeabd5f3be315724
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729766"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036224"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-ip-address-types-in-lync-server-2013"></a>Configurare i tipi di indirizzo IP in Lync Server 2013
+# <a name="configure-ip-address-types-in-lync-server-2013"></a>Configurare i tipi di indirizzi IP in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41729766"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-13_
+_**Ultimo argomento modificato:** 2012-06-13_
 
-I tipi di indirizzo IP vengono distribuiti usando le impostazioni della topologia configurate in Generatore di topologie. Questa sezione descrive come distribuire i tipi di indirizzo IP in server front-end, Mediation Server e Edge Server.
+È possibile distribuire i tipi di indirizzi IP utilizzando le impostazioni di topologia configurate in Generatore di topologie. In questa sezione viene descritto come distribuire i tipi di indirizzi IP nei Front End Server, Mediation Server e server perimetrali.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Distribuire i tipi di indirizzi IP in un Front End Server per Lync Server 2013](lync-server-2013-deploy-ip-address-types-on-a-front-end-server.md)
+  - [Distribuire i tipi di indirizzi IP in un front end server per Lync Server 2013](lync-server-2013-deploy-ip-address-types-on-a-front-end-server.md)
 
   - [Distribuire i tipi di indirizzi IP in un Mediation Server per Lync Server 2013](lync-server-2013-deploy-ip-address-types-on-a-mediation-server.md)
 

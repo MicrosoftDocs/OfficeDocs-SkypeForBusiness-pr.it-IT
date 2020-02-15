@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: criteri di mobilità'
+title: 'Lync Server 2013: criteri per dispositivi mobili'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733723
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ac02103b99a4524c23d10a2162ea120d1060917b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f96061011087bc3e23f4e57172b85cc9a379a83f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758678"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035962"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="mobility-policies-in-lync-server-2013"></a>Criteri di mobilità in Lync Server 2013
+# <a name="mobility-policies-in-lync-server-2013"></a>Criteri per dispositivi mobili in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41758678"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-18_
+_**Ultimo argomento modificato:** 2012-10-18_
 
-Usare le procedure seguenti per configurare i criteri di mobilità per Lync Server 2013.
+Utilizzare le procedure seguenti per configurare i criteri per dispositivi mobili per Lync Server 2013.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Creare o modificare un criterio di mobilità in Lync Server 2013](lync-server-2013-create-or-modify-a-mobility-policy.md)
+  - [Creare o modificare un criterio per dispositivi mobili in Lync Server 2013](lync-server-2013-create-or-modify-a-mobility-policy.md)
 
-  - [Assegnare un criterio di mobilità per utente in Lync Server 2013](lync-server-2013-assign-a-per-user-mobility-policy.md)
+  - [Assegnare un criterio per dispositivi mobili per utente in Lync Server 2013](lync-server-2013-assign-a-per-user-mobility-policy.md)
 
-  - [Applicare il blocco telefonico in Lync Server 2013](lync-server-2013-enforce-phone-locking.md)
+  - [Applicare il blocco del telefono in Lync Server 2013](lync-server-2013-enforce-phone-locking.md)
 
 </div>
 
@@ -56,7 +56,7 @@ Usare le procedure seguenti per configurare i criteri di mobilità per Lync Serv
 ## <a name="see-also"></a>Vedere anche
 
 
-[Pianificazione della versione per dispositivi mobili in Lync Server 2013](lync-server-2013-planning-for-mobility.md)  
+[Pianificazione della funzionalità per dispositivi mobili in Lync Server 2013](lync-server-2013-planning-for-mobility.md)  
   
 
 </div>

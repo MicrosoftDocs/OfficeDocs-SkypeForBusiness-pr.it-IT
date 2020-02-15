@@ -12,16 +12,16 @@ ms:contentKeyID: 51541534
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dcd995a99514fa54a221e17f1ea556565cbebdcb
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b3ff23a228710ecc934e2984f27c63351ccf6d32
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729616"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030950"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,27 +35,27 @@ ms.locfileid: "41729616"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-01-30_
+_**Ultimo argomento modificato:** 2013-01-30_
 
-Per distribuire e gestire il ritiro delle chiamate di gruppo, è necessario usare lo strumento SEFAUtil Resource Kit. Lo strumento fa parte degli strumenti di Lync Server 2013 Resource Kit. Prima di poter installare SEFAUtil, è necessario disporre di un pool di applicazioni attendibili nella topologia, specificare SEFAUtil come applicazione attendibile e abilitare la topologia.
+Per distribuire e gestire il prelievo delle chiamate di gruppo, è necessario utilizzare lo strumento SEFAUtil Resource Kit. Lo strumento fa parte degli strumenti di Lync Server 2013 Resource Kit. Prima di poter installare SEFAUtil, è necessario disporre di un pool di applicazioni attendibili nella topologia, specificare SEFAUtil come applicazione attendibile e abilitare la topologia.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Microsoft Unified Communications Managed API (UCMA) 3,0 Core SDK deve essere installato in qualsiasi computer in cui si prevede di eseguire lo strumento SEFAUtil.
+> Microsoft Unified Communications Managed API (UCMA) 3,0 Core SDK deve essere installato in tutti i computer in cui si prevede di eseguire lo strumento SEFAUtil.
 
 
 
 </div>
 
-È possibile eseguire SEFAUtil in qualsiasi pool Front-end della distribuzione.
+È possibile eseguire la SEFAUtil in qualsiasi pool Front end della distribuzione.
 
 <div>
 
 
 > [!NOTE]  
-> Per altre informazioni sull'uso di SEFAUtil, vedere l'articolo del Blog di TechNet "come ottenere SEFAutil in corso?" at <A href="http://go.microsoft.com/fwlink/?linkid=278940">http://go.microsoft.com/fwlink/?LinkId=278940</A>.
+> Per ulteriori informazioni sull'esecuzione di SEFAUtil, vedere l'articolo del Blog di TechNet, "How to get SEFAutil running?" in <A href="http://go.microsoft.com/fwlink/?linkid=278940">http://go.microsoft.com/fwlink/?LinkId=278940</A>.
 
 
 
@@ -65,15 +65,15 @@ Per distribuire e gestire il ritiro delle chiamate di gruppo, è necessario usar
 
 ## <a name="to-deploy-sefautil"></a>Per distribuire SEFAUtil
 
-1.  Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di [configurazione delegate in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in [delegate Setup Permissions in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Lo strumento SEFAUtil può essere eseguito solo in un computer che fa parte di un pool di applicazioni attendibile. Se necessario, definire un pool di applicazioni attendibili per il pool Front-end in cui si prevede di eseguire SEFAUtil. Nella riga di comando eseguire:
+3.  Lo strumento SEFAUtil può essere eseguito solo in un computer che fa parte di un pool di applicazioni attendibili. Se necessario, definire un pool di applicazioni attendibili per il pool Front end in cui si prevede di eseguire SEFAUtil. Nella riga di comando digitare il comando seguente:
     
         New-CsTrustedApplicationPool -id <Pool FQDN> -Registrar <Pool Registrar FQDN> -site Site:<Pool Site>
 
-4.  Definire lo strumento SEFAUtil come applicazione attendibile. Nella riga di comando eseguire:
+4.  Definire lo strumento SEFAUtil come applicazione attendibile. Nella riga di comando digitare il comando seguente:
     
         New-CsTrustedApplication -ApplicationId sefautil -TrustedApplicationPoolFqdn <Pool FQDN>  -Port 7489
     
@@ -81,18 +81,18 @@ Per distribuire e gestire il ritiro delle chiamate di gruppo, è necessario usar
     
 
     > [!NOTE]  
-    > Se necessario, è possibile usare una porta diversa.
+    > Se necessario, è possibile utilizzare una porta diversa.
 
     
     </div>
 
-5.  Abilitare la topologia con le modifiche apportate. Nella riga di comando eseguire:
+5.  Abilitare la topologia con le modifiche apportate. Nella riga di comando digitare il comando seguente:
     
         Enable-CsTopology
 
-6.  Installare gli strumenti del Resource Kit di Lync Server 2013 in un server front-end che si trova nel pool di applicazioni attendibile creato nel passaggio 3.
+6.  Installare gli strumenti di Lync Server 2013 Resource Kit in un front end server che si trova nel pool di applicazioni attendibili creato nel passaggio 3.
 
-7.  Verificare che lo strumento SEFAUtil sia in uso correttamente, come indicato di seguito:
+7.  Verificare che lo strumento SEFAUtil sia in esecuzione correttamente, come indicato di seguito:
     
     1.  Eseguire lo strumento dal prompt dei comandi di Windows con privilegi di amministratore per visualizzare le impostazioni di inoltro di chiamata di un utente nella distribuzione.
         
@@ -105,7 +105,7 @@ Per distribuire e gestire il ritiro delle chiamate di gruppo, è necessario usar
         
         </div>
     
-    2.  Visualizzare le impostazioni di inoltro di chiamata di un utente. Nella riga di comando eseguire:
+    2.  Visualizzare le impostazioni di inoltro di chiamata di un utente. Nella riga di comando digitare il comando seguente:
         
             SEFAUtil.exe <user SIP address> /server:<Lync Server/Pool FQDN>
         

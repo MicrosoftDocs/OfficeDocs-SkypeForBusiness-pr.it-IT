@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: creare un criterio per la segreteria telefonica ospitata per utente'
+title: 'Lync Server 2013: creare un criterio di segreteria telefonica ospitata per utente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183902
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 535515fd11c0cb736b5b6fb4b70d041ea3af8a3c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 055d65fe691d99c8b960ebed088ba47cbcb2f988
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740376"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034878"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-a-per-user-hosted-voice-mail-policy-in-lync-server-2013"></a>Creare un criterio di segreteria telefonica ospitata per utente in Lync Server 2013
+# <a name="create-a-per-user-hosted-voice-mail-policy-in-lync-server-2013"></a>Creare criteri di segreteria telefonica ospitata per utente in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41740376"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-24_
+_**Ultimo argomento modificato:** 2012-09-24_
 
-Un criterio *per utente* può influire solo su singoli utenti, gruppi e oggetti contatto. Per distribuire un criterio per utente, è necessario assegnare esplicitamente i criteri a uno o più utenti, gruppi o oggetti contatto. Per informazioni dettagliate, vedere [assegnare un criterio di segreteria telefonica ospitata per utente in Lync Server 2013](lync-server-2013-assign-a-per-user-hosted-voice-mail-policy.md).
+Un criterio *per utente* può avere effetto solo su singoli utenti, gruppi e oggetti contatto. Per distribuire un criterio per utente, è necessario assegnarlo esplicitamente a uno o più utenti, gruppi o oggetti contatto. Per ulteriori informazioni, vedere [assegnare criteri di segreteria telefonica ospitata per utente in Lync Server 2013](lync-server-2013-assign-a-per-user-hosted-voice-mail-policy.md).
 
-Per informazioni dettagliate sull'uso dei criteri per la segreteria telefonica ospitata per utente, vedere la documentazione di Lync Server Management Shell per i cmdlet seguenti:
+Per informazioni dettagliate sull'utilizzo dei criteri di segreteria telefonica ospitata per utente, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:
 
   - [New-CsHostedVoicemailPolicy](https://docs.microsoft.com/powershell/module/skype/New-CsHostedVoicemailPolicy)
 
@@ -49,23 +49,23 @@ Per informazioni dettagliate sull'uso dei criteri per la segreteria telefonica o
 
 <div>
 
-## <a name="to-create-a-per-user-hosted-voice-mail-policy"></a>Per creare un criterio di segreteria telefonica ospitata per utente
+## <a name="to-create-a-per-user-hosted-voice-mail-policy"></a>Per creare un criterio segreteria telefonica ospitata per utente
 
-1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-2.  Eseguire il cmdlet New-CsHostedVoicemailPolicy per creare il criterio. Ad esempio, eseguire:
+2.  Eseguire il cmdlet New-CsHostedVoicemailPolicy per creare il criterio, ad esempio:
     
         New-CsHostedVoicemailPolicy -Identity ExRedmond -Destination ExUM.fabrikam.com -Description "Hosted voice mail policy for Redmond users." -Organization "corp1.litwareinc.com, corp2.litwareinc.com"
     
-    L'esempio precedente crea un criterio di segreteria telefonica ospitata con ambito per utente e imposta i parametri seguenti:
+    Nell'esempio precedente viene creato un criterio segreteria telefonica ospitata con ambito per utente e vengono impostati i parametri seguenti:
     
-      - **Identity** specifica un identificatore univoco per il criterio, che include l'ambito. Per un criterio con ambito per utente, il valore di questo parametro viene specificato come stringa semplice, ad esempio ExRedmond.
+      - **Identity** specifica un identificatore univoco per il criterio, che include l'ambito. Per un criterio con ambito per utente, questo valore di parametro viene specificato come stringa semplice, ad esempio ExRedmond.
     
-      - **Destination** specifica il nome di dominio completo (FQDN) del servizio di messaggistica unificata di Exchange ospitata. Questo parametro è facoltativo, ma se tenti di abilitare un utente per la segreteria telefonica ospitata e il criterio assegnato dall'utente non ha un valore di destinazione, l'opzione di abilitazione avrà esito negativo.
+      - **Destination** specifica il nome di dominio completo (FQDN) del servizio Messaggistica unificata di Exchange ospitato. Questo parametro è facoltativo, ma se si tenta di abilitare un utente per la segreteria telefonica ospitata e il criterio assegnato all'utente non dispone di un valore Destination, l'abilitazione avrà esito negativo.
     
-      - **Descrizione** fornisce informazioni descrittive facoltative sui criteri.
+      - **Description** fornisce informazioni descrittive facoltative sul criterio.
     
-      - **Organizzazione** specifica un elenco delimitato da virgole dei tenant di Exchange che ospitano gli utenti di Lync Server 2013. Ogni tenant deve essere specificato come FQDN del tenant nel servizio di messaggistica unificata di Exchange ospitata.
+      - L' **organizzazione** specifica un elenco delimitato da virgole dei tenant di Exchange che ospitano gli utenti di Lync Server 2013. Ogni tenant deve essere specificato come FQDN del tenant nel servizio Messaggistica unificata di Exchange ospitato.
 
 </div>
 
@@ -74,7 +74,7 @@ Per informazioni dettagliate sull'uso dei criteri per la segreteria telefonica o
 ## <a name="see-also"></a>Vedere anche
 
 
-[Assegnare un criterio di segreteria telefonica ospitata per utente in Lync Server 2013](lync-server-2013-assign-a-per-user-hosted-voice-mail-policy.md)  
+[Assegnare criteri di segreteria telefonica ospitata per utente in Lync Server 2013](lync-server-2013-assign-a-per-user-hosted-voice-mail-policy.md)  
   
 
 </div>

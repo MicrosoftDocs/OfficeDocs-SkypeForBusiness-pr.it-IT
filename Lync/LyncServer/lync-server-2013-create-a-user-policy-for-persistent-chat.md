@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Creare criteri utente per Chat persistente'
+title: 'Lync Server 2013: creare un criterio utente per la chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185103
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5a9bd88dd84b8b5056adf19ebc098daac54cb005
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bafc3a8681b2c85a01e48881e8a22f35c29d0d61
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726396"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034778"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-a-user-policy-for-persistent-chat-in-lync-server-2013"></a>Creare criteri utente per Chat persistente in Lync Server 2013
+# <a name="create-a-user-policy-for-persistent-chat-in-lync-server-2013"></a>Creare un criterio utente per la chat persistente in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41726396"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-06_
+_**Ultimo argomento modificato:** 2012-10-06_
 
-Nel pannello di controllo di Lync Server puoi definire i criteri utente che possono essere assegnati agli utenti negli **utenti**.
+Nel pannello di controllo di Lync Server, è possibile definire i criteri utente che possono essere assegnati agli utenti in **utenti**.
 
-Il criterio utente ha la priorità sul criterio globale e sui criteri sito, ma solo per gli utenti specifici a cui viene assegnato il criterio utente.
+I criteri utente hanno la precedenza sui criteri globali e di sito, ma solo per gli utenti specifici a cui tali criteri utente sono assegnati.
 
 <div>
 
 
 > [!NOTE]  
-> Per configurare e usare il server di chat persistente, è necessario prima di tutto usare generatore di topologia per aggiungere il supporto del server di chat persistente alla topologia e quindi pubblicare la topologia. Per informazioni dettagliate, vedere <A href="lync-server-2013-adding-persistent-chat-server-to-your-deployment.md">aggiunta di un server di chat persistente alla distribuzione in Lync Server 2013</A> nella documentazione relativa alla distribuzione.<BR>Per configurare le impostazioni di configurazione del server di chat persistente, vedere <A href="lync-server-2013-configure-persistent-chat-server-options-globally-or-for-persistent-chat-server-pool.md">configurare le opzioni del server di chat permanenti globalmente o per il pool di server di chat persistente in Lync server 2013</A> nella documentazione relativa alla distribuzione
+> Per configurare e utilizzare il server Chat persistente, è necessario innanzitutto utilizzare Generatore di topologie per aggiungere il supporto del server Chat persistente alla topologia e quindi pubblicare la topologia. Per ulteriori informazioni, vedere <A href="lync-server-2013-adding-persistent-chat-server-to-your-deployment.md">aggiunta del server Chat persistente alla distribuzione in Lync Server 2013</A> nella documentazione relativa alla distribuzione.<BR>Per configurare le impostazioni di configurazione del server Chat persistente, vedere <A href="lync-server-2013-configure-persistent-chat-server-options-globally-or-for-persistent-chat-server-pool.md">configurare le opzioni del server Chat persistente a livello globale o per il pool di server Chat persistente in Lync server 2013</A> nella documentazione relativa alla distribuzione.
 
 
 
@@ -55,30 +55,30 @@ Il criterio utente ha la priorità sul criterio globale e sui criteri sito, ma s
 
 ## <a name="to-create-a-user-policy-for-persistent-chat"></a>Per creare un criterio utente per la chat persistente
 
-1.  Da un account utente assegnato al ruolo CsPersistentChatAdministrator, CsAdministrator o CsUserAdministrator, eseguire l'accesso a qualsiasi computer nella distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsPersistentChatAdministrator, CsAdministrator o CsUserAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Nel menu **Start** selezionare il pannello di controllo di Lync Server o aprire una finestra del browser e quindi immettere l'URL dell'amministratore. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Dal menu **Start** selezionare il pannello di controllo di Lync Server o aprire una finestra del browser e quindi immettere l'URL di amministratore. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
     
     <div>
     
 
     > [!IMPORTANT]  
-    > È anche possibile usare i cmdlet di Windows PowerShell. Vedere <A href="configuring-persistent-chat-server-by-using-windows-powershell-cmdlets.md">configurazione del server di chat persistente con i cmdlet di Windows PowerShell</A> nella documentazione relativa alla distribuzione.
+    > È inoltre possibile utilizzare i cmdlet di Windows PowerShell. Vedere <A href="configuring-persistent-chat-server-by-using-windows-powershell-cmdlets.md">Configuring Persistent Chat Server using Windows PowerShell cmdlets</A> nella documentazione relativa alla distribuzione.
 
     
     </div>
 
-3.  Nella barra di spostamento sinistra fare clic su **Chat persistente** e quindi su **Criteri di Chat persistente**.
+3.  Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Criteri Persistent Chat**.
 
 4.  Fare clic su **Nuovo** e quindi su **Criteri utente**.
 
-5.  In **Nuovi criteri Chat persistente** eseguire le operazioni seguenti:
+5.  In **Nuovi criteri Persistent Chat** eseguire le operazioni seguenti:
     
       - In **Nome** specificare un nome per il nuovo criterio utente.
     
-      - In **Descrizione**, fornisci i dettagli sui criteri degli utenti, ad esempio i criteri di chat persistenti per un utente specifico.
+      - In **Descrizione**fornire informazioni dettagliate sugli elementi del criterio utente, ad esempio criteri di chat persistente per utenti specifici.
     
-      - Per controllare la chat persistente per tutti gli utenti che non sono specificamente controllati tramite un criterio utente, selezionare o deselezionare la casella di controllo **Abilita Chat persistente** .
+      - Per controllare la chat persistente per tutti gli utenti non controllati in modo specifico tramite criteri utente, selezionare o deselezionare la casella di controllo **Abilita Chat persistente** .
 
 6.  Fare clic su **Commit**.
 

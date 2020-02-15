@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Riepilogo di DNS - proxy inverso'
+title: 'Lync Server 2013: Riepilogo di DNS-proxy inverso'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183755
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ae4834ce608f6726403e8742a4d506b173309b35
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fde945b4bd08020a072f36be073169454e423279
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737206"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028507"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="dns-summary---reverse-proxy-in-lync-server-2013"></a>Riepilogo di DNS - proxy inverso in Lync Server 2013
+# <a name="dns-summary---reverse-proxy-in-lync-server-2013"></a>Riepilogo DNS-proxy inverso in Lync Server 2013
 
 </div>
 
@@ -35,27 +35,27 @@ ms.locfileid: "41737206"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-03-22_
+_**Ultimo argomento modificato:** 2013-03-22_
 
-Si configurano due schede di rete nel proxy inverso, come indicato di seguito:
+È possibile configurare due schede di rete all'interno del proxy inverso in questo modo:
 
 <div>
 
-## <a name="reverse-proxy-network-adapter-requirements"></a>Requisiti della scheda di rete proxy inverso
+## <a name="reverse-proxy-network-adapter-requirements"></a>Requisiti relativi alla scheda di rete per proxy inverso
 
   - Esempio di **scheda di rete 1 (interfaccia interna)**
     
-    Interfaccia interna con 172.25.33.40 assegnati.
+    Interfaccia interna con indirizzo 172.25.33.40 assegnato.
     
-    Nessun gateway predefinito è definito.
+    Nessun gateway predefinito definito.
     
-    Verificare che esista una route dalla rete che contiene l'interfaccia interna del proxy inverso a tutte le reti che contengono i server del pool Front-End di Lync Server, ad esempio da 172.25.33.0 a 192.168.10.0.
+    Verificare che esista una route dalla rete che contiene l'interfaccia interna del proxy inverso a qualsiasi rete che contiene server del pool Front End di Lync Server (ad esempio, da 172.25.33.0 a 192.168.10.0).
 
   - Esempio di **scheda di rete 2 (interfaccia esterna)**
     
-    Alla scheda di rete viene assegnato un minimo di un indirizzo IP pubblico.
+    A questa scheda di rete viene assegnato almeno un indirizzo IP pubblico.
     
-    Il gateway viene definito in punti al router o al firewall integrato nel perimetro esterno. (10.45.16.1 negli esempi di scenario)
+    Il gateway viene definito in modo da puntare al router o al firewall integrato nel perimetro esterno (10.45.16.1 in questi esempi di scenario).
 
 ### <a name="dns-records-required-for-reverse-proxy"></a>Record DNS necessari per il proxy inverso
 
@@ -71,25 +71,25 @@ Si configurano due schede di rete nel proxy inverso, come indicato di seguito:
 <th>Posizione/tipo/porta</th>
 <th>FQDN</th>
 <th>Indirizzo IP</th>
-<th>Mapping a/commenti</th>
+<th>Mapping a/Commenti</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>DNS esterno/A</p></td>
 <td><p>webext.contoso.com</p></td>
-<td><p>Listener assegnato per le risorse pubblicate esternamente</p></td>
-<td><p>Servizi Web esterni dalla distribuzione interna. È possibile definire e creare record aggiuntivi per tutti i pool e i singoli server per qualsiasi dominio SIP che utilizzerà questo proxy inverso e ha definito servizi Web esterni.</p></td>
+<td><p>Listener assegnato per risorse pubblicate esternamente</p></td>
+<td><p>Servizi Web esterni dalla distribuzione interna. È possibile definire e creare altri record per tutti i pool e singoli server per un dominio SIP che userà questo proxy inverso e dispone di servizi Web esterni definiti.</p></td>
 </tr>
 <tr class="even">
-<td><p>DNS esterno/A</p></td>
+<td><p>DNS/A esterno</p></td>
 <td><p>webdirext.contoso.com</p></td>
-<td><p>Listener assegnato per le risorse pubblicate esternamente</p></td>
-<td><p>Servizi Web esterni per i pool di direttori o di Director nella distribuzione. Puoi definire il numero di amministratori che ci sono direttori distinti, di cui possono essere associati ad altri domini SIP.</p>
+<td><p>Listener assegnato per risorse pubblicate esternamente</p></td>
+<td><p>Servizi Web esterni per i direttori o i pool di server Director nella distribuzione. È possibile definire il numero di amministratori che sono direttori distinti, di cui possono essere associati ad altri domini SIP.</p>
 <div>
 
 > [!IMPORTANT]  
-> La definizione dei record DNS per la pubblicazione dei direttori non è un pool di front end o la decisione del direttore. Se si usano gli amministratori, è necessario definire e pubblicare sia il Director che i servizi Web esterni del pool Front-end. I tipi di traffico specifici (per l'autenticazione e altri usi) verranno inviati prima al Director, se sono definiti nella topologia.
+> La definizione dei record DNS per e la pubblicazione dei direttori non è una decisione del pool Front end o del Director. Se si utilizzano i Director, è necessario definire e pubblicare sia il server Director che i servizi Web esterni del pool Front end. I tipi di traffico specifici (per l'autenticazione e altri utilizzi) verranno inviati prima al server Director, se definito nella topologia.
 
 
 </div></td>
@@ -97,26 +97,26 @@ Si configurano due schede di rete nel proxy inverso, come indicato di seguito:
 <tr class="odd">
 <td><p>DNS esterno/A</p></td>
 <td><p>dialin.contoso.com</p></td>
-<td><p>Listener assegnato per le risorse pubblicate esternamente</p></td>
-<td><p>Servizi di conferenza telefonica con accesso esterno pubblicati esternamente</p></td>
+<td><p>Listener assegnato per risorse pubblicate esternamente</p></td>
+<td><p>Conferenza telefonica con accesso remoto pubblicata esternamente</p></td>
 </tr>
 <tr class="even">
 <td><p>DNS esterno/A</p></td>
 <td><p>meet.contoso.com</p></td>
-<td><p>Listener assegnato per le risorse pubblicate esternamente</p></td>
+<td><p>Listener assegnato per risorse pubblicate esternamente</p></td>
 <td><p>Conferenze pubblicate esternamente</p></td>
 </tr>
 <tr class="odd">
 <td><p>DNS esterno/A</p></td>
 <td><p>officewebapps01.contoso.com</p></td>
-<td><p>Listener assegnato per Office Web Apps Server</p></td>
+<td><p>Listener assegnato per il server Office Web Apps</p></td>
 <td><p>Server Office Web Apps distribuito internamente o nel perimetro e pubblicato per l'accesso client esterno</p></td>
 </tr>
 <tr class="even">
-<td><p>DNS esterno/A</p></td>
+<td><p>DNS/A esterno</p></td>
 <td><p>lyncdiscover.contoso.com</p></td>
-<td><p>Listener assegnato per le risorse pubblicate esternamente</p></td>
-<td><p>Lync scopre il record esterno per l'individuazione automatica pubblicata esternamente e include mobilità, Microsoft Lync Web App e Scheduler Web App</p></td>
+<td><p>Listener assegnato per risorse pubblicate esternamente</p></td>
+<td><p>Record esterno di individuazione di Lync per l'individuazione automatica pubblicata esternamente e include mobilità, Microsoft Lync Web App e Scheduler Web App</p></td>
 </tr>
 </tbody>
 </table>

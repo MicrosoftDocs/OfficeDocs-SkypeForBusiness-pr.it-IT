@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Creare o modificare provider federati SIP ospitati'
+title: 'Lync Server 2013: creare o modificare provider federati SIP ospitati'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48679556
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d6c97255ce1dc9fce00d9eca6f358f4c68e1ff8a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 68e87e5a6a59c2e14705d8a89578a0408c39b8e6
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740226"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035742"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-or-edit-hosted-sip-federated-providers-lync-server-2013"></a>Creare o modificare provider federati SIP ospitati in Lync Server 2013
+# <a name="create-or-edit-hosted-sip-federated-providers-lync-server-2013"></a>Creare o modificare provider federati SIP ospitati Lync Server 2013
 
 </div>
 
@@ -35,41 +35,41 @@ ms.locfileid: "41740226"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-19_
+_**Ultimo argomento modificato:** 2012-10-19_
 
-La connettività di messaggistica istantanea del provider ospitata consente agli utenti dell'organizzazione di usare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti da provider ospitati, tra cui Microsoft Office 365 e Lync Online.
+La connettività di messaggistica istantanea (IM) del provider hosted consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti da provider ospitati, tra cui Microsoft Office 365 e Lync Online.
 
-Ogni provider ospitato è configurato con il nome di dominio completo del server perimetrale del provider e il livello di verifica predefinito **consente agli utenti di comunicare solo con persone presenti nell'elenco contatti che usano questo provider**.
+Ogni provider ospitato è configurato con il nome di dominio completo del server perimetrale del provider e il livello di verifica predefinito **Consenti agli utenti di comunicare solo con le persone incluse nell'elenco Contatti che usano questo provider**.
 
-Usare la procedura seguente per creare o modificare i provider ospitati:
+Per creare o modificare provider gestiti, eseguire la procedura seguente:
 
 <div>
 
-## <a name="to-create-or-edit-hosted-providers"></a>Per creare o modificare i provider ospitati
+## <a name="to-create-or-edit-hosted-providers"></a>Per creare o modificare provider gestiti
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Nella barra di spostamento sinistra fare clic su **Federazione e accesso esterno**, quindi fare clic su **provider federati SIP**.
+3.  Nella barra di spostamento sinistra fare clic su **Federazione e accesso esterno** e quindi su **Provider federati SIP**.
 
-4.  Se è necessario creare un nuovo provider ospitato, fare clic su **nuovo** e quindi su **provider ospitati**.
+4.  Se è necessario creare un nuovo provider ospitato fare clic su **Nuovo** e quindi su **Provider ospitato**.
 
-5.  Se è necessario modificare una voce dall'elenco di provider ospitati, selezionare un provider ospitata, fare clic su **modifica**e quindi su **Mostra dettagli**.
+5.  Se è necessario modificare una voce nell'elenco di provider ospitati, selezionare un provider ospitato, fare clic su **Modifica** e quindi su **Mostra dettagli**.
 
-6.  Nella pagina **Modifica provider FEDERATO SIP** è possibile digitare o modificare le impostazioni seguenti:
+6.  Nella pagina **Modifica provider federato SIP** è possibile immettere o modificare le seguenti impostazioni:
     
-      - **Abilitare le comunicazioni con questo provider**   Selezionare questa impostazione consente le comunicazioni con gli utenti del provider.
+      - **Abilitare le comunicazioni con questo provider**   selezionando questa impostazione, viene abilitata la comunicazione con gli utenti del provider.
     
-      - **Nome provider:**   una proprietà obbligatoria, digitare il nome del provider che verrà riflesso nell'elenco dei provider federati SIP.
+      - **Nome provider:**   una proprietà obbligatoria, digitare il nome del provider come verrà riflesso nell'elenco dei provider federati SIP.
     
-      - **Access Edge service (FQDN):**   una proprietà obbligatoria, digitare il nome di dominio completo del servizio Access Edge del provider ospitato che si sta configurando. Queste informazioni devono essere fornite dal provider ospitato e devono essere modificate solo se il provider ospitato apporta una modifica all'FQDN del servizio Access Edge presso il provider ospitata.
+      - **Servizio Access Edge (FQDN):**   una proprietà obbligatoria, digitare il nome di dominio completo del servizio Access Edge del provider ospitato che si sta configurando. Queste informazioni devono essere fornite dal provider ospitato e devono essere modificate solo se il provider ospitato apporta una modifica al nome di dominio completo del servizio Access Edge nel provider ospitato.
     
-      - **Livello di verifica predefinito:**   l'impostazione predefinita **consente agli utenti di comunicare con persone nell'elenco contatti che usano questo provider** limiterà la comunicazione ai contatti accettati e inclusi nell'elenco contatti.
+      - **Livello di verifica predefinito:**   l'impostazione predefinita, **Consenti agli utenti di comunicare con persone presenti nell'elenco contatti che usano questo provider** limiterà la comunicazione ai contatti accettati e che si trovano nell'elenco dei contatti.
         
-        Selezionando **Consenti agli utenti di comunicare con tutti i membri che usano questo provider** , viene eliminata la restrizione che deve essere stata ricevuta e accettata da un contatto. Questa impostazione non limita chi può contattarti dalla rete del provider ospitata.
+        Se si seleziona **Consenti agli utenti di comunicare con chiunque usi questo provider**, viene rimossa la limitazione che prevede che sia stato ricevuto e accettato un invito di contatto. Questa impostazione non limita gli utenti dai quali è possibile essere contattati dalla rete del provider ospitato.
 
-7.  Dopo aver configurato le impostazioni, fare clic su **conferma** per salvare o su **Annulla per annullare** le modifiche.
+7.  Terminata la configurazione delle impostazioni, fare clic su **Commit** per salvare oppure su **Annulla** per annullare le modifiche.
 
 </div>
 
@@ -78,8 +78,8 @@ Usare la procedura seguente per creare o modificare i provider ospitati:
 ## <a name="see-also"></a>Vedere anche
 
 
-[Configurare criteri per controllare l'accesso degli utenti pubblici in Lync Server 2013](lync-server-2013-configure-policies-to-control-public-user-access.md)  
-[Abilitare o disabilitare la federazione e la connettività per la messaggistica istantanea pubblica in Lync Server 2013](lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md)  
+[Configurazione di criteri per il controllo dell'accesso degli utenti pubblici in Lync Server 2013](lync-server-2013-configure-policies-to-control-public-user-access.md)  
+[Abilitare o disabilitare la Federazione e la connettività per la messaggistica istantanea pubblica in Lync Server 2013](lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md)  
   
 
 </div>

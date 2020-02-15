@@ -12,16 +12,16 @@ ms:contentKeyID: 49733796
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 630472c67c560438f37fa65607dc817782535963
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fe22268f7376b1744e5997a3f9916395109c9e39
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756030"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035662"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41756030"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-04_
+_**Ultimo argomento modificato:** 2012-10-04_
 
-È possibile usare il pannello di controllo di Lync Server per avviare o arrestare tutti i servizi di Lync Server 2010 in uso in un computer specifico oppure per avviare o arrestare un servizio specifico di Lync Server 2010.
+È possibile utilizzare il pannello di controllo di Lync Server per avviare o arrestare tutti i servizi di Lync Server 2010 in esecuzione in un computer specifico oppure per avviare o arrestare un servizio Lync Server 2010 specifico.
 
 <div>
 
-## <a name="to-start-or-stop-all-lync-server-services-on-a-computer"></a>Per avviare o arrestare tutti i servizi Lync Server in un computer
+## <a name="to-start-or-stop-all-lync-server-services-on-a-computer"></a>Per avviare o arrestare tutti i servizi di Lync Server in un computer
 
-1.  Aprire il pannello di controllo di Lync Server.
+1.  Aprire il Pannello di controllo di Lync Server.
 
-2.  Nella barra di spostamento sinistra fare clic su **topologia** e quindi su **stato**.
+2.  Nella barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.
 
-3.  Nella pagina **stato** ordinare o cercare l'elenco in base alle esigenze per trovare il computer in cui sono in esecuzione i servizi che si desidera avviare o arrestare e quindi fare clic su di esso.
+3.  Nella pagina **Stato** ordinare o scorrere l'elenco per trovare il computer in cui sono in esecuzione i servizi che si desidera avviare o arrestare e quindi fare clic su di esso.
 
-4.  Fare clic su **azione**.
+4.  Fare clic su **Azione**.
 
-5.  Fare clic su **Avvia tutti i servizi** o **arrestare tutti i servizi**.
+5.  Fare clic su **Avvia tutti i servizi** o **Arresta tutti i servizi**.
 
 </div>
 
@@ -59,19 +59,19 @@ _**Argomento Ultima modifica:** 2012-10-04_
 
 ## <a name="to-start-or-stop-a-specific-service"></a>Per avviare o arrestare un servizio specifico
 
-1.  Aprire il pannello di controllo di Lync Server.
+1.  Aprire il Pannello di controllo di Lync Server.
 
-2.  Nella barra di spostamento sinistra fare clic su **topologia** e quindi su **stato**.
+2.  Nella barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.
 
-3.  Nella pagina **stato** ordinare o cercare l'elenco in base alle esigenze per trovare il computer in cui è in esecuzione il servizio che si vuole avviare o arrestare e quindi fare clic su di esso.
+3.  Nella pagina **Stato** ordinare o scorrere l'elenco per trovare il computer in cui è in esecuzione il servizio che si desidera avviare o arrestare e quindi fare clic su di esso.
 
 4.  Fare clic su **Proprietà**.
 
-5.  Ordinare l'elenco dei servizi, se necessario, e fare clic sul servizio che si vuole avviare o arrestare.
+5.  Ordinare l'elenco dei servizi, se necessario, e fare clic sul servizio da avviare o arrestare.
 
-6.  Fare clic su **azione**.
+6.  Fare clic su **Azione**.
 
-7.  Fare clic su **Avvia servizio** o **Interrompi servizio**.
+7.  Fare clic su **Avvia servizio** o **Arresta servizio**.
 
 8.  Fare clic su **Chiudi**.
 

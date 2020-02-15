@@ -1,5 +1,5 @@
 ---
-title: Esempio di raccolta dei requisiti per il controllo dell'ammissione alle chiamate
+title: Esempio di raccolta dei requisiti per il controllo di ammissione di chiamata
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183820
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 345f5d7e41dd9da3e6d68c59ce9656d3052c57b5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 204339161cf5af83f0d9e393a0a4db981c0e8445
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756270"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035158"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="example-gathering-your-requirements-for-call-admission-control-in-lync-server-2013"></a>Esempio: raccogliere i requisiti per il controllo di ammissione di chiamata in Lync Server 2013
+# <a name="example-gathering-your-requirements-for-call-admission-control-in-lync-server-2013"></a>Esempio: raccolta dei requisiti per il controllo di ammissione di chiamata in Lync Server 2013
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41756270"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-Questo esempio illustra come pianificare e implementare il controllo di ammissione di chiamata (CAC). Ad alto livello, è costituito dalle attività seguenti:
+In questo esempio viene illustrato come pianificare e implementare il servizio Controllo di ammissione di chiamata (CAC). A livello generale, sono previste le attività seguenti:
 
-1.  Identificare tutti gli hub di rete e le dorsali (note come *aree di rete*).
+1.  Identificare tutti gli hub e le backbone di rete (note come *aree di rete*).
 
-2.  Identificare il sito centrale di Lync Server che gestirà CAC per ogni area di rete.
+2.  Identificare il sito centrale di Lync Server che gestirà il servizio di controllo di ammissione per ogni area di rete.
 
 3.  Identificare e definire i *siti di rete* connessi a ogni area di rete.
 
-4.  Per ogni sito di rete la cui connessione alla WAN è vincolata da larghezza di banda, descrivere la capacità di larghezza di banda della connessione WAN e i limiti di larghezza di banda che l'amministratore di rete ha impostato per il traffico multimediale di Lync Server, se applicabile. Non è necessario includere siti la cui connessione alla rete WAN non è vincolata da larghezza di banda.
+4.  Per ogni sito di rete la cui connessione alla WAN è vincolata dalla larghezza di banda, descrivere la capacità della larghezza di banda della connessione WAN e i limiti di larghezza di banda che l'amministratore di rete ha impostato per il traffico multimediale di Lync Server, se applicabile. Non è necessario includere siti con connessione alla WAN non soggetta a vincoli di larghezza di banda.
 
 5.  Associare ogni subnet della rete a un sito di rete.
 
-6.  Mappare i collegamenti tra le aree di rete. Per ogni collegamento, Descrivi la sua capacità di larghezza di banda e i limiti che l'amministratore di rete ha inserito nel traffico multimediale di Lync Server.
+6.  Eseguire il mapping dei collegamenti tra le aree di rete. Per ogni collegamento, descrivere la capacità della larghezza di banda e gli eventuali limiti imposti dall'amministratore di rete sul traffico multimediale di Lync Server.
 
 7.  Definire una route tra ogni coppia di aree di rete.
 
@@ -57,17 +57,17 @@ Questo esempio illustra come pianificare e implementare il controllo di ammissio
 
 ## <a name="gather-the-required-information"></a>Raccogliere le informazioni necessarie
 
-Per preparare il controllo di ammissione alle chiamate, raccogliere le informazioni descritte nei passaggi seguenti:
+Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogliere le informazioni descritte nei passaggi seguenti:
 
-1.  Identificare le aree di rete. Un'area di rete rappresenta un backbone di rete o un hub di rete.
+1.  Identificare le aree di rete. Un'area di rete rappresenta una backbone o un hub di rete.
     
-    Un backbone di rete o un hub di rete fa parte dell'infrastruttura di rete di computer che interconnette vari elementi di rete, fornendo un percorso per lo scambio di informazioni tra LAN o subnet diverse. Una backbone può legare insieme diverse reti, da una piccola posizione a un'area geografica ampia. La capacità della colonna vertebrale è in genere maggiore rispetto a quella delle reti connesse.
+    Una backbone o un hub di rete è una parte dell'infrastruttura della rete del computer che interconnette diverse parti della rete, fornendo un percorso per lo scambio di informazioni tra diverse LAN o subnet. Una backbone può unire reti diverse, da una piccola postazione a un'area geografica estesa. La capacità della backbone è in genere superiore a quella delle reti a essa connesse.
     
-    La topologia di esempio include tre aree di rete: Nord America, EMEA e APAC. Un'area di rete contiene una raccolta di siti di rete. Collaborare con l'amministratore di rete per definire le aree di rete per l'organizzazione.
+    Nella topologia di esempio sono presenti tre aree di rete: Nord America, EMEA e APAC. In un'area di rete è contenuto un insieme di siti di rete. Consultarsi con l'amministratore di rete per definire le aree di rete dell'organizzazione.
 
-2.  Identificare il sito centrale associato di ogni area di rete. Un sito centrale contiene almeno un server front-end ed è la distribuzione di Lync Server che gestirà CAC per tutto il traffico multimediale che passa attraverso la connessione WAN dell'area di rete.
+2.  Identificare il sito centrale associato a ogni area di rete. Un sito centrale contiene almeno un front end server ed è la distribuzione di Lync Server che gestirà il servizio di controllo di accesso per tutto il traffico multimediale che passa attraverso la connessione WAN dell'area di rete.
     
-    **Esempio di rete aziendale divisa in tre aree di rete**
+    **Rete aziendale di esempio divisa in tre aree di rete**
     
     ![Esempio di topologia di rete con tre aree di rete](images/Gg425827.08937347-250f-488f-ba5f-c256e6afcd8b(OCS.15).jpg "Esempio di topologia di rete con tre aree di rete")  
     
@@ -75,18 +75,18 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     
 
     > [!NOTE]
-    > Una rete MPLS (Multiprotocol Label Switching) deve essere rappresentata come area di rete in cui ogni posizione geografica contiene un sito di rete corrispondente. Per informazioni dettagliate, vedere l'argomento "<A href="lync-server-2013-call-admission-control-on-an-mpls-network.md">controllo ammissione chiamata in rete MPLS con Lync Server 2013</A>" nella documentazione relativa alla pianificazione.
+    > Una rete Multiprotocol Label Switching (MPLS) dovrebbe essere rappresentata come area di rete in cui a ogni posizione geografica corrisponde un sito di rete. Per ulteriori informazioni, vedere l'argomento "<A href="lync-server-2013-call-admission-control-on-an-mpls-network.md">controllo di ammissione di chiamata su una rete MPLS con Lync Server 2013</A>" nella documentazione relativa alla pianificazione.
 
     
     </div>
     
-    Nella topologia di rete di esempio precedente sono presenti tre aree di rete, ognuna con un sito centrale di Lync Server che gestisce CAC. Il sito centrale appropriato per un'area geografica di rete viene scelto dalle vicinanze geografiche. Poiché il traffico multimediale sarà più pesante nelle aree di rete, la proprietà per le vicinanze geografiche lo rende autonomo e continuerà a essere funzionante anche se altri siti centrali diventano non disponibili.
+    Nella topologia di rete di esempio precedente esistono tre aree di rete, ognuna con un sito centrale di Lync Server che gestisce il servizio di controllo di ammissione. Il sito centrale appropriato per un'area di rete viene scelto in base alla vicinanza geografica. Poiché il traffico multimediale sarà più intenso all'interno delle aree di rete, la proprietà per vicinanza geografica rende il traffico autonomo e ne garantisce il funzionamento anche in caso di non disponibilità degli altri siti centrali.
     
     In questo esempio, una distribuzione di Lync Server denominata Chicago è il sito centrale per l'area Nord America.
     
-    Tutti gli utenti di Lync in Nord America vengono ospitati nei server della distribuzione di Chicago. La tabella seguente mostra i siti centrali per tutte e tre le aree di rete.
+    Tutti gli utenti di Lync nel Nord America sono ospitati nei server della distribuzione di Chicago. Nella tabella seguente sono elencati i siti centrali per tutte e tre le aree di rete.
     
-    ### <a name="network-regions-and-their-associated-central-sites"></a>Aree di rete e relativi siti centrali associati
+    ### <a name="network-regions-and-their-associated-central-sites"></a>Aree di rete e siti centrali associati
     
     <table>
     <colgroup>
@@ -101,7 +101,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </thead>
     <tbody>
     <tr class="odd">
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     <td><p>Chicago</p></td>
     </tr>
     <tr class="even">
@@ -119,16 +119,16 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     
 
     > [!NOTE]
-    > A seconda della topologia di Lync Server, è possibile assegnare lo stesso sito centrale a più aree di rete.
+    > A seconda della topologia di Lync Server, lo stesso sito centrale può essere assegnato a più aree di rete.
 
     
     </div>
 
-3.  Per ogni area geografica di rete, identificare tutti i siti di rete (uffici o posizioni) le cui connessioni WAN non sono vincolate da larghezza di banda. Poiché questi siti non sono vincolati alla larghezza di banda, non è necessario applicare i criteri di larghezza di banda CAC.
+3.  Per ogni area di rete, identificare tutti i siti di rete (uffici o postazioni) le cui connessioni WAN non siano vincolate dalla larghezza di banda. Poiché questi siti non sono vincolati dalla larghezza di banda, non è necessario applicare criteri di larghezza di banda del servizio Controllo di ammissione di chiamata.
     
-    Nell'esempio illustrato nella tabella seguente tre siti di rete non dispongono di collegamenti WAN con larghezza di banda limitata: New York, Chicago e Detroit.
+    Nell'esempio illustrato nella tabella seguente tre siti di rete non dispongono di collegamenti WAN con vincoli di larghezza di banda: New York, Chicago e Detroit.
     
-    ### <a name="network-sites-not-constrained-by-wan-bandwidth"></a>Siti di rete non vincolati dalla larghezza di banda WAN
+    ### <a name="network-sites-not-constrained-by-wan-bandwidth"></a>Siti di rete non vincolati dalla larghezza di banda della WAN
     
     <table>
     <colgroup>
@@ -144,27 +144,27 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     <tbody>
     <tr class="odd">
     <td><p>New York</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     </tr>
     <tr class="even">
     <td><p>Chicago</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     </tr>
     <tr class="odd">
     <td><p>Detroit</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     </tr>
     </tbody>
     </table>
 
 
-4.  Per ogni area geografica di rete, identificare tutti i siti di rete che si connettono all'area di rete tramite collegamenti WAN con larghezza di banda limitata.
+4.  Per ogni area di rete identificare tutti i siti di rete che si connettono all'area di rete mediante collegamenti WAN con vincoli di larghezza di banda.
     
-    Per garantire la qualità audio e video, è consigliabile che i siti di rete con vincoli di larghezza di banda dispongano delle WAN monitorate e dei criteri di larghezza di banda CAC che limitano il flusso di traffico multimediale (vocale o video) da e verso l'area di rete.
+    Per garantire la qualità audio e video, è consigliabile fare in modo che le WAN dei siti di rete con vincoli di larghezza di banda siano monitorate e applicare criteri di larghezza di banda del servizio Controllo di ammissione di chiamata che limitino il flusso del traffico multimediale (vocale o video) scambiato con l'area di rete.
     
-    Nell'esempio illustrato nella tabella seguente sono disponibili tre siti di rete vincolati da larghezza di banda WAN: Portland, Reno e Albuquerque.
+    Nell'esempio illustrato nella tabella seguente sono presenti tre siti di rete vincolati dalla larghezza di banda della WAN: Portland, Reno e Albuquerque.
     
-    ### <a name="network-sites-constrained-by-wan-bandwidth"></a>Siti di rete vincolati da larghezza di banda WAN
+    ### <a name="network-sites-constrained-by-wan-bandwidth"></a>Siti di rete vincolati dalla larghezza di banda della WAN
     
     <table>
     <colgroup>
@@ -180,34 +180,34 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     <tbody>
     <tr class="odd">
     <td><p>Albuquerque</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     </tr>
     <tr class="even">
     <td><p>Reno</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     </tr>
     <tr class="odd">
     <td><p>Portland</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     </tr>
     </tbody>
     </table>
     
-    **Area di rete CAC Nord America con tre siti di rete non vincolati per larghezza di banda (Chicago, New York e Detroit) e tre siti di rete vincolati dalla larghezza di banda WAN (Portland, Reno e Albuquerque)**
+    **Area di rete Nord America con servizio Controllo di ammissione di chiamata con tre siti di rete non vincolati dalla larghezza di banda (Chicago, New York e Detroit) e tre siti di rete vincolati dalla larghezza di banda della WAN (Portland, Reno e Albuquerque)**
     
     ![Siti di rete di esempio vincolati dalla larghezza di banda WAN](images/Gg425827.d9d1f231-db4d-4dd7-8fbc-eb0b6d1e705d(OCS.15).jpg "Siti di rete di esempio vincolati dalla larghezza di banda WAN")  
 
-5.  Per ogni collegamento WAN con larghezza di banda limitata, determinare le operazioni seguenti:
+5.  Per ogni collegamento WAN con vincoli di larghezza di banda, determinare quanto segue:
     
-      - Limite di larghezza di banda complessivo che si vuole impostare per tutte le sessioni audio simultanee. Se una nuova sessione audio causa il superamento di questo limite, Lync Server non consente l'avvio della sessione.
+      - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni audio simultanee. Se una nuova sessione audio provocherà il superamento di questo limite, Lync Server non consentirà di avviare la sessione.
     
-      - Limite di larghezza di banda che si vuole impostare per ogni singola sessione audio. Il limite di larghezza di banda predefinito di CAC è di 175 kbps, ma può essere modificato dall'amministratore.
+      - Limite di larghezza di banda che si desidera impostare per ogni singola sessione audio. Il limite di larghezza di banda predefinito per il servizio Controllo di ammissione di chiamata è 175 kbps, ma può essere modificato dall'amministratore.
     
-      - Limite di larghezza di banda complessivo che si vuole impostare per tutte le sessioni video simultanee. Se una nuova sessione video causerà il superamento di questo limite, Lync Server non consente l'avvio della sessione.
+      - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni video simultanee. Se una nuova sessione video provocherà il superamento di questo limite, Lync Server non consentirà di avviare la sessione.
     
-      - Limite di larghezza di banda che si vuole impostare per ogni singola sessione video. Il limite di larghezza di banda predefinito di CAC è di 700 Kbps, ma può essere modificato dall'amministratore.
+      - Limite di larghezza di banda che si desidera impostare per ogni singola sessione video. Il limite di larghezza di banda predefinito per il servizio Controllo di ammissione di chiamata è 700 kbps, ma può essere modificato dall'amministratore.
     
-    ### <a name="network-sites-with-wan-bandwidth-constraint-information-bandwidth-in-kbps"></a>Siti di rete con informazioni sui vincoli di larghezza di banda WAN (larghezza di banda in Kbps)
+    ### <a name="network-sites-with-wan-bandwidth-constraint-information-bandwidth-in-kbps"></a>Siti di rete con informazioni sui vincoli della larghezza di banda della WAN (larghezza di banda in kbps)
     
     <table style="width:100%;">
     <colgroup>
@@ -223,18 +223,18 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     <tr class="header">
     <th>Sito di rete</th>
     <th>Area di rete</th>
-    <th>Limite di BW</th>
+    <th>Limite di larghezza di banda</th>
     <th>Limite audio</th>
-    <th>Limite della sessione audio</th>
+    <th>Limite sessione audio</th>
     <th>Limite video</th>
-    <th>Limite di sessione video</th>
+    <th>Limite sessione video</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
     <td><p>Albuquerque</p></td>
-    <td><p>America del Nord</p></td>
-    <td><p>5.000</p></td>
+    <td><p>Nord America</p></td>
+    <td><p>5,000</p></td>
     <td><p>2.000</p></td>
     <td><p>175</p></td>
     <td><p>1.400</p></td>
@@ -242,7 +242,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </tr>
     <tr class="even">
     <td><p>Reno</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     <td><p>10.000</p></td>
     <td><p>4.000</p></td>
     <td><p>175</p></td>
@@ -251,8 +251,8 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </tr>
     <tr class="odd">
     <td><p>Portland</p></td>
-    <td><p>America del Nord</p></td>
-    <td><p>5.000</p></td>
+    <td><p>Nord America</p></td>
+    <td><p>5,000</p></td>
     <td><p>4.000</p></td>
     <td><p>175</p></td>
     <td><p>2.800</p></td>
@@ -260,7 +260,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </tr>
     <tr class="even">
     <td><p>New York</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     <td><p>(nessun limite)</p></td>
     <td><p>(nessun limite)</p></td>
     <td><p>(nessun limite)</p></td>
@@ -269,7 +269,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </tr>
     <tr class="odd">
     <td><p>Chicago</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     <td><p>(nessun limite)</p></td>
     <td><p>(nessun limite)</p></td>
     <td><p>(nessun limite)</p></td>
@@ -278,7 +278,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </tr>
     <tr class="even">
     <td><p>Detroit</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     <td><p>(nessun limite)</p></td>
     <td><p>(nessun limite)</p></td>
     <td><p>(nessun limite)</p></td>
@@ -295,7 +295,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     
 
     > [!IMPORTANT]
-    > Ogni subnet della rete deve essere associata a un sito di rete, anche se il sito di rete non è vincolato alla larghezza di banda. Questo perché il controllo di ammissione delle chiamate usa le informazioni sulla subnet per determinare in quale sito di rete si trova un endpoint. Quando vengono determinate le posizioni di entrambe le parti della sessione, il controllo di ammissione delle chiamate può determinare se è disponibile una larghezza di banda sufficiente per stabilire una chiamata. Quando viene stabilita una sessione su un collegamento che non contiene limiti di larghezza di banda, viene generato un avviso.<BR>Se si distribuiscono server Edge audio/video, gli indirizzi IP pubblici di ogni Edge Server devono essere associati al sito di rete in cui è distribuito il server perimetrale. Ogni indirizzo IP pubblico di un/V Edge Server deve essere aggiunto alle impostazioni di configurazione della rete come subnet con una subnet mask di 32. Ad esempio, se si distribuisce un/V Edge Server a Chicago, per ogni indirizzo IP esterno di questi server è possibile creare una subnet con una subnet mask di 32 e associare il sito di rete a Chicago con tali subnet. Per informazioni dettagliate sugli indirizzi IP pubblici, vedere <A href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">determinare i requisiti per il firewall e la porta a/V esterni per Lync Server 2013</A> nella documentazione relativa alla pianificazione.
+    > Ogni subnet della rete deve essere associata a un sito di rete, anche se non vincolato dalla larghezza di banda, poiché il servizio Controllo di ammissione di chiamata utilizza le informazioni delle subnet per determinate il sito di rete in cui è posizionato un endpoint. Dopo che sono state determinate le posizioni in entrambe le parti della sessione, il servizio Controllo di ammissione di chiamata può determinare se la larghezza di banda è sufficiente per stabilire una chiamata. Quando viene stabilita una sessione su un collegamento senza limiti di larghezza di banda, viene generato un avviso.<BR>Se si distribuiscono Audio/Video Edge Server, gli indirizzi IP pubblici di ognuno di questi server deve essere associato al sito di rete in cui è distribuito il server. Ogni indirizzo IP pubblico dell'A/V Edge Server deve essere aggiunto alle impostazioni di configurazione di rete come subnet con subnet mask 32. Se ad esempio si distribuiscono A/V Edge Server nel sito di Chicago, creare per ogni indirizzo IP esterno di tali server una subnet con subnet mask 32 e associare il sito di rete Chicago a tali subnet. Per informazioni dettagliate sugli indirizzi IP pubblici, vedere <A href="lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md">Determine External a/V firewall and Port requirements for Lync Server 2013</A> nella documentazione relativa alla pianificazione.
 
     
     </div>
@@ -304,17 +304,17 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     
 
     > [!NOTE]
-    > Viene generato un avviso KHI (Key Health Indicator), che specifica un elenco di indirizzi IP presenti nella rete, ma che non sono associati a una subnet oppure che la subnet che include gli indirizzi IP non è associata a un sito di rete. Questo avviso non verrà generato più di una volta entro un periodo di 8 ore. Di seguito sono riportate le informazioni relative agli avvisi e un esempio:<BR><STRONG>Origine:</STRONG> Servizio di criteri di larghezza di banda CS (Core)<BR><STRONG>Numero evento:</STRONG> 36034<BR><STRONG>Livello:</STRONG> 2<BR><STRONG>Descrizione:</STRONG> Le subnet per gli indirizzi IP seguenti: &lt;l'elenco di indirizzi&gt; IP non è configurato o le subnet non sono associate a un sito di rete.<BR><STRONG>Causa:</STRONG> Le subnet per gli indirizzi IP corrispondenti sono mancanti nelle impostazioni di configurazione della rete o le subnet non sono associate a un sito di rete.<BR><STRONG>Risoluzione:</STRONG> Aggiungere subnet che corrispondono all'elenco precedente di indirizzi IP nelle impostazioni di configurazione della rete e associare ogni subnet a un sito di rete.<BR>Ad esempio, se l'elenco di indirizzi IP nell'avviso specifica 10.121.248.226 e 10.121.249.20, questi indirizzi IP non sono associati a una subnet o la subnet a cui sono associati non appartiene a un sito di rete. Se 10.121.248.0/24 e 10.121.249.0/24 sono le subnet corrispondenti per questi indirizzi, è possibile risolvere il problema come segue: 
+    > Viene generato un avviso Key Health Indicator (KHI) in cui viene specificato un elenco di indirizzi IP presenti nella rete che non sono associati a una subnet oppure la cui subnet non è associata a un sito di rete. Questo avviso viene generato una sola volta ogni 8 ore. Di seguito vengono riportati un esempio e le informazioni rilevanti dell'avviso:<BR><STRONG>Origine:</STRONG> Servizio criteri di larghezza di banda CS (Core)<BR><STRONG>Numero evento:</STRONG> 36034<BR><STRONG>Livello:</STRONG> 2<BR><STRONG>Descrizione:</STRONG> Le subnet per gli indirizzi IP seguenti: &lt;elenco di indirizzi&gt; IP non sono configurati o le subnet non sono associate a un sito di rete.<BR><STRONG>Causa:</STRONG> Le subnet per gli indirizzi IP corrispondenti sono mancanti nelle impostazioni di configurazione di rete o le subnet non sono associate a un sito di rete.<BR><STRONG>Soluzione:</STRONG> Aggiungere le subnet corrispondenti all'elenco precedente di indirizzi IP nelle impostazioni di configurazione di rete e associare ogni subnet a un sito di rete.<BR>Se ad esempio nell'elenco di indirizzi IP nell'avviso sono specificati sia 10.121.248.226 che 10.121.249.20, questi indirizzi IP non sono associati a una subnet oppure la subnet a cui sono associati non appartiene a un sito di rete. Se 10.121.248.0/24 e 10.121.249.0/24 sono le subnet corrispondenti per questi indirizzi, è possibile risolvere il problema in questo modo: 
     > <OL>
     > <LI>
-    > <P>Assicurarsi che l'indirizzo IP 10.121.248.226 sia associato alla subnet 10.121.248.0/24 e l'indirizzo IP 10.121.249.20 sia associato alla subnet 10.121.249.0/24.</P>
+    > <P>Verificare che l'indirizzo IP 10.121.248.226 sia associato alla subnet 10.121.248.0/24 e che l'indirizzo IP 10.121.249.20 sia associato alla subnet 10.121.249.0/24.</P>
     > <LI>
-    > <P>Assicurarsi che le subnet 10.121.248.0/24 e 10.121.249.0/24 siano associate a un sito di rete.</P></LI></OL>
+    > <P>Verificare che le subnet 10.121.248.0/24 e 10.121.249.0/24 siano associate ognuna a un sito di rete.</P></LI></OL>
 
     
     </div>
     
-    ### <a name="network-sites-and-associated-subnets-bandwidth-in-kbps"></a>Siti di rete e subnet associate (larghezza di banda in Kbps)
+    ### <a name="network-sites-and-associated-subnets-bandwidth-in-kbps"></a>Siti di rete e subnet associate (larghezza di banda in kbps)
     
     <table>
     <colgroup>
@@ -331,19 +331,19 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     <tr class="header">
     <th>Sito di rete</th>
     <th>Area di rete</th>
-    <th>Limite di BW</th>
+    <th>Limite di larghezza di banda</th>
     <th>Limite audio</th>
-    <th>Limite della sessione audio</th>
+    <th>Limite sessione audio</th>
     <th>Limite video</th>
-    <th>Limite di sessione video</th>
+    <th>Limite sessione video</th>
     <th>Subnet</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
     <td><p>Albuquerque</p></td>
-    <td><p>America del Nord</p></td>
-    <td><p>5.000</p></td>
+    <td><p>Nord America</p></td>
+    <td><p>5,000</p></td>
     <td><p>2.000</p></td>
     <td><p>175</p></td>
     <td><p>1.400</p></td>
@@ -352,7 +352,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </tr>
     <tr class="even">
     <td><p>Reno</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     <td><p>10.000</p></td>
     <td><p>4.000</p></td>
     <td><p>175</p></td>
@@ -362,8 +362,8 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </tr>
     <tr class="odd">
     <td><p>Portland</p></td>
-    <td><p>America del Nord</p></td>
-    <td><p>5.000</p></td>
+    <td><p>Nord America</p></td>
+    <td><p>5,000</p></td>
     <td><p>4.000</p></td>
     <td><p>175</p></td>
     <td><p>2.800</p></td>
@@ -372,7 +372,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </tr>
     <tr class="even">
     <td><p>New York</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     <td><p>(nessun limite)</p></td>
     <td><p>(nessun limite)</p></td>
     <td><p>(nessun limite)</p></td>
@@ -382,7 +382,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </tr>
     <tr class="odd">
     <td><p>Chicago</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     <td><p>(nessun limite)</p></td>
     <td><p>(nessun limite)</p></td>
     <td><p>(nessun limite)</p></td>
@@ -392,7 +392,7 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </tr>
     <tr class="even">
     <td><p>Detroit</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     <td><p>(nessun limite)</p></td>
     <td><p>(nessun limite)</p></td>
     <td><p>(nessun limite)</p></td>
@@ -404,21 +404,21 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </table>
 
 
-7.  Nel controllo di ammissione alle chiamate di Lync Server le connessioni tra le aree di rete sono chiamate *collegamenti di area geografica*. Per ogni collegamento all'area geografica, determinare quanto segue, come per i siti di rete:
+7.  Nel controllo di ammissione di chiamata di Lync Server, le connessioni tra aree di rete sono denominate *collegamenti area*. Come per i siti di rete, determinare per ogni collegamento area gli aspetti seguenti:
     
-      - Limite di larghezza di banda complessivo che si vuole impostare per tutte le sessioni audio simultanee. Se una nuova sessione audio causa il superamento di questo limite, Lync Server non consente l'avvio della sessione.
+      - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni audio simultanee. Se una nuova sessione audio provocherà il superamento di questo limite, Lync Server non consentirà di avviare la sessione.
     
-      - Limite di larghezza di banda che si vuole impostare per ogni singola sessione audio. Il limite di larghezza di banda predefinito di CAC è di 175 kbps, ma può essere modificato dall'amministratore.
+      - Limite di larghezza di banda che si desidera impostare per ogni singola sessione audio. Il limite di larghezza di banda predefinito per il servizio Controllo di ammissione di chiamata è 175 kbps, ma può essere modificato dall'amministratore.
     
-      - Limite di larghezza di banda complessivo che si vuole impostare per tutte le sessioni video simultanee. Se una nuova sessione video causerà il superamento di questo limite, Lync Server non consente l'avvio della sessione.
+      - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni video simultanee. Se una nuova sessione video provocherà il superamento di questo limite, Lync Server non consentirà di avviare la sessione.
     
-      - Limite di larghezza di banda che si vuole impostare per ogni singola sessione video. Il limite di larghezza di banda predefinito di CAC è di 700 Kbps, ma può essere modificato dall'amministratore.
+      - Limite di larghezza di banda che si desidera impostare per ogni singola sessione video. Il limite di larghezza di banda predefinito per il servizio Controllo di ammissione di chiamata è 700 kbps, ma può essere modificato dall'amministratore.
     
-    **Collegamenti all'area di rete con limiti di larghezza di banda associati**
+    **Collegamenti aree di rete con limiti di larghezza di banda associati**
     
-    ![Esempio di limitazioni fra tre aree](images/Gg425827.25259afa-ee7c-4d26-bc41-92ba9cb56dec(OCS.15).jpg "Esempio di limitazioni fra tre aree")  
+    ![Esempio di limitazioni tra 3 aree](images/Gg425827.25259afa-ee7c-4d26-bc41-92ba9cb56dec(OCS.15).jpg "Esempio di limitazioni tra 3 aree")  
     
-    ### <a name="region-link-bandwidth-information-bandwidth-in-kbps"></a>Informazioni sulla larghezza di banda del collegamento geografica (larghezza di banda in Kbps)
+    ### <a name="region-link-bandwidth-information-bandwidth-in-kbps"></a>Informazioni sulla larghezza di banda dei collegamenti aree (larghezza di banda in kbps)
     
     <table>
     <colgroup>
@@ -433,23 +433,23 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </colgroup>
     <thead>
     <tr class="header">
-    <th>Nome collegamento area geografica</th>
-    <th>First Region</th>
-    <th>Second Region</th>
-    <th>Limite di BW</th>
+    <th>Nome collegamento area</th>
+    <th>Prima area</th>
+    <th>Seconda area</th>
+    <th>Limite di larghezza di banda</th>
     <th>Limite audio</th>
-    <th>Limite della sessione audio</th>
+    <th>Limite sessione audio</th>
     <th>Limite video</th>
-    <th>Limite di sessione video</th>
+    <th>Limite sessione video</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
     <td><p>NA-EMEA-COLLEGAMENTO</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     <td><p>EMEA</p></td>
     <td><p>50.000</p></td>
-    <td><p>20.000</p></td>
+    <td><p>20,000</p></td>
     <td><p>175</p></td>
     <td><p>14.000</p></td>
     <td><p>700</p></td>
@@ -474,12 +474,12 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     
 
     > [!NOTE]
-    > Sono necessari due collegamenti per la route tra il Nord America e le aree APAC perché non è presente un collegamento all'area geografica che li connette direttamente.
+    > Sono necessari due collegamenti per la route tra le aree Nord America e APAC poiché non sono connesse direttamente tramite un collegamento area.
 
     
     </div>
     
-    ### <a name="region-routes"></a>Route di area geografica
+    ### <a name="region-routes"></a>Route aree
     
     <table>
     <colgroup>
@@ -490,16 +490,16 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </colgroup>
     <thead>
     <tr class="header">
-    <th>Nome route dell'area geografica</th>
-    <th>First Region</th>
-    <th>Second Region</th>
-    <th>Collegamenti all'area geografica</th>
+    <th>Nome route area</th>
+    <th>Prima area</th>
+    <th>Seconda area</th>
+    <th>Collegamenti aree</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
     <td><p>NA-EMEA-ROUTE</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     <td><p>EMEA</p></td>
     <td><p>NA-EMEA-COLLEGAMENTO</p></td>
     </tr>
@@ -511,29 +511,29 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     </tr>
     <tr class="odd">
     <td><p>NA-APAC-ROUTE</p></td>
-    <td><p>America del Nord</p></td>
+    <td><p>Nord America</p></td>
     <td><p>APAC</p></td>
-    <td><p>NA-EMEA-LINK, EMEA-APAC-LINK</p></td>
+    <td><p>COLLEGAMENTO-NA-EMEA, COLLEGAMENTO-EMEA-APAC</p></td>
     </tr>
     </tbody>
     </table>
 
 
-9.  Per ogni coppia di siti di rete collegati direttamente da un singolo collegamento (denominato collegamento *tra siti* ), determinare le operazioni seguenti:
+9.  Per ogni coppia di siti di rete direttamente connessi tramite un collegamento singolo, denominato collegamento *tra siti*, determinare quanto segue:
     
-      - Limite di larghezza di banda complessivo che si vuole impostare per tutte le sessioni audio simultanee. Se una nuova sessione audio causa il superamento di questo limite, Lync Server non consente l'avvio della sessione.
+      - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni audio simultanee. Se una nuova sessione audio provocherà il superamento di questo limite, Lync Server non consentirà di avviare la sessione.
     
-      - Limite di larghezza di banda che si vuole impostare per ogni singola sessione audio. Il limite di larghezza di banda predefinito di CAC è di 175 kbps, ma può essere modificato dall'amministratore.
+      - Limite di larghezza di banda che si desidera impostare per ogni singola sessione audio. Il limite di larghezza di banda predefinito per il servizio Controllo di ammissione di chiamata è 175 kbps, ma può essere modificato dall'amministratore.
     
-      - Limite di larghezza di banda complessivo che si vuole impostare per tutte le sessioni video simultanee. Se una nuova sessione video causerà il superamento di questo limite, Lync Server non consente l'avvio della sessione.
+      - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni video simultanee. Se una nuova sessione video provocherà il superamento di questo limite, Lync Server non consentirà di avviare la sessione.
     
-      - Limite di larghezza di banda che si vuole impostare per ogni singola sessione video. Il limite di larghezza di banda predefinito di CAC è di 700 Kbps, ma può essere modificato dall'amministratore.
+      - Limite di larghezza di banda che si desidera impostare per ogni singola sessione video. Il limite di larghezza di banda predefinito per il servizio Controllo di ammissione di chiamata è 700 kbps, ma può essere modificato dall'amministratore.
     
-    **Area di rete CAC Nord America che mostra le capacità di larghezza di banda e i limiti di larghezza di banda per il collegamento tra siti tra Reno e Albuquerque**
+    **Area di rete Nord America con servizio Controllo di ammissione di chiamata in cui vengono indicate le capacità di larghezza di banda e i limiti di larghezza di banda per il collegamento tra siti tra Reno e Albuquerque**
     
-    ![Esempio di siti di rete vincolati dalla larghezza di banda WAN](images/Gg425827.063e5e1d-b6c8-4e8c-98db-c227c78f671d(OCS.15).jpg "Esempio di siti di rete vincolati dalla larghezza di banda WAN")  
+    ![Esempio di siti di rete vincolati dall'ampiezza della larghezza di banda WAN](images/Gg425827.063e5e1d-b6c8-4e8c-98db-c227c78f671d(OCS.15).jpg "Esempio di siti di rete vincolati dall'ampiezza della larghezza di banda WAN")  
     
-    ### <a name="bandwidth-information-for-an-inter-site-link-between-two-network-sites-bandwidth-in-kbps"></a>Informazioni sulla larghezza di banda per un collegamento intersito tra due siti di rete (larghezza di banda in Kbps)
+    ### <a name="bandwidth-information-for-an-inter-site-link-between-two-network-sites-bandwidth-in-kbps"></a>Informazioni sulla larghezza di banda per un collegamento tra siti tra due siti di rete (larghezza di banda in kbps)
     
     <table>
     <colgroup>
@@ -551,22 +551,22 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
     <th>Nome collegamento tra siti</th>
     <th>Primo sito</th>
     <th>Secondo sito</th>
-    <th>Limite di BW</th>
+    <th>Limite di larghezza di banda</th>
     <th>Limite audio</th>
-    <th>Limite della sessione audio</th>
+    <th>Limite sessione audio</th>
     <th>Limite video</th>
-    <th>Limite di sessione video</th>
+    <th>Limite sessione video</th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td><p>Reno-albu-collegamento intersito</p></td>
+    <td><p>Reno-albu-collegamento tra siti</p></td>
     <td><p>Reno</p></td>
     <td><p>Albuquerque</p></td>
-    <td><p>20.000</p></td>
+    <td><p>20,000</p></td>
     <td><p>12.000</p></td>
     <td><p>175</p></td>
-    <td><p>5.000</p></td>
+    <td><p>5,000</p></td>
     <td><p>700</p></td>
     </tr>
     </tbody>
@@ -577,13 +577,13 @@ Per preparare il controllo di ammissione alle chiamate, raccogliere le informazi
 
 ## <a name="next-steps"></a>Operazioni successive
 
-Dopo aver raccolto le informazioni necessarie, è possibile eseguire la distribuzione di CAC usando il pannello di controllo di Lync Server Management Shell o Lync Server.
+Dopo aver raccolto le informazioni necessarie, è possibile eseguire la distribuzione di CAC utilizzando Lync Server Management Shell o il pannello di controllo di Lync Server.
 
 <div>
 
 
 > [!NOTE]
-> Anche se è possibile eseguire la maggior parte delle attività di configurazione della rete tramite il pannello di controllo di Lync Server, per creare subnet e collegamenti intersito, è necessario usare Lync Server Management Shell. Per informazioni dettagliate, vedere la documentazione di Lync Server Management Shell per il cmdlet <STRONG>New-CsNetworkSubnet</STRONG> e il cmdlet <STRONG>New-CsNetworkIntersitePolicy</STRONG> .
+> Anche se è possibile eseguire la maggior parte delle attività di configurazione di rete utilizzando il pannello di controllo di Lync Server, per creare subnet e collegamenti tra siti, è necessario utilizzare Lync Server Management Shell. Per informazioni dettagliate, vedere la documentazione di Lync Server Management Shell per il cmdlet <STRONG>New-CsNetworkSubnet</STRONG> e il cmdlet <STRONG>New-CsNetworkIntersitePolicy</STRONG> .
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: supportare riunioni di grandi dimensioni'
+title: 'Lync Server 2013: supporto di riunioni di grandi dimensioni'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184136
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6d2c36d99bc5af62771aabb643df1223db3a291c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 73c9a5d2ad4688f622298378c84b61574048a3b1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764302"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029757"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="supporting-large-meetings-using-lync-server-2013"></a>Supporto di riunioni di grandi dimensioni tramite Lync Server 2013
+# <a name="supporting-large-meetings-using-lync-server-2013"></a>Supporto di riunioni di grandi dimensioni con Lync Server 2013
 
 </div>
 
@@ -35,37 +35,37 @@ ms.locfileid: "41764302"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-03_
+_**Ultimo argomento modificato:** 2012-10-03_
 
-Le riunioni di grandi dimensioni non seguono il modello di test descritto nella sezione precedente perché presentano le caratteristiche seguenti:
+Le riunioni di grandi dimensioni non seguono il modello di test descritto nella sezione precedente, poiché hanno le caratteristiche seguenti:
 
-  - Il formato della riunione è una presentazione uno-a-molti.
+  - La riunione è una presentazione uno a molti.
 
-  - Uno o più utenti sono relatori e tutti gli altri membri partecipano solo come partecipanti.
+  - Pochi utenti hanno il ruolo di relatori o il relatore è uno solo e gli altri utenti sono solo partecipanti.
 
-  - La condivisione delle presentazioni di PowerPoint è l'attività di collaborazione dati principale.
+  - La principale attività di collaborazione dati è la condivisione di presentazioni di PowerPoint.
 
-  - L'audio è obbligatorio e può essere usato anche il video.
+  - L'audio è indispensabile e possono essere usate anche le funzionalità video.
 
-  - Una persona dedicata, in genere l'organizzatore della riunione o un assistente dell'organizzatore configura bene la riunione in anticipo.
+  - Una persona dedicata, di solito l'organizzatore della riunione o un assistente dell'organizzatore, imposta la riunione con buon anticipo.
 
-  - Il personale dedicato (non i relatori) esegue la riunione, inclusa la connessione a una riunione online, verificando che l'audio, il video e la condivisione delle diapositive funzionino, gestiscono i ruoli di lobby e utenti, riattivano e riattivano i partecipanti, le domande e la gestione delle registrazioni, come appropriato.
+  - Uno staff dedicato (non i relatori) si occupa di aspetti della riunione quali la connessione alla riunione online, la verifica del funzionamento di audio, video e condivisione delle diapositive, la gestione della sala di attesa e dei ruoli utente, la disattivazione e la riattivazione dell'audio dei partecipanti, la raccolta delle domande e la gestione delle registrazione, come più opportuno.
 
-Il supporto di riunioni di grandi dimensioni fino a 1000 utenti richiede la risoluzione dei problemi relativi al modello hardware condiviso e al modello senza prenotazione.
+Per supportare riunioni di grandi dimensioni con un massimo di 1000 utenti, è necessario affrontare i problemi relativi al modello dell'hardware condiviso e al modello senza prenotazione.
 
-Per avere sufficienti risorse di memoria e CPU per riunioni fino a 1000 utenti, i server front-end ospitanti non devono ospitare altri carichi di lavoro istantanei e di presenza o di Enterprise Voice. Non deve inoltre ospitare altre riunioni, indipendentemente dalle dimensioni delle altre riunioni. Ciò significa che le riunioni di hosting di un massimo di 1000 utenti richiedono la configurazione di un pool di Lync Server separato dedicato all'hosting di riunioni di grandi dimensioni fino a 1000 utenti.
+Per disporre di risorse di memoria e CPU sufficienti per riunioni fino a 1000 utenti, i front end server host non devono ospitare altri carichi di lavoro per la messaggistica istantanea e la presenza o VoIP aziendale. Inoltre, non devono ospitare altre riunioni, non importa quanto grandi. Questo significa che l'hosting di riunioni fino a 1000 utenti richiede la configurazione di un pool di Lync Server separato dedicato all'hosting di riunioni di grandi dimensioni fino a 1000 utenti.
 
-Un pool di Lync Server dedicato all'hosting di riunioni di grandi dimensioni dovrebbe ospitare una sola riunione di un massimo di 1000 utenti contemporaneamente, in modo che gli orari delle riunioni debbano essere prenotati in anticipo tramite un processo di pianificazione fuori banda per garantire il supporto dedicato del servizio front end ERS. Per supportare più di una riunione di grandi dimensioni contemporaneamente, è consigliabile configurare più pool di riunioni di grandi dimensioni dedicati.
+Un pool di Lync Server dedicato all'hosting di riunioni di grandi dimensioni deve ospitare una sola riunione fino a 1000 utenti contemporaneamente, in modo che i tempi di riunione debbano essere prenotati in anticipo tramite un processo di pianificazione fuori banda per garantire un supporto dedicato dal servizio front end Service. ERS. Per supportare più riunioni di grandi dimensioni contemporaneamente, si consiglia di configurare più pool dedicati.
 
-È consigliabile che una persona dedicata esegua e controlli la parte online di una riunione di grandi dimensioni. Questa persona può essere l'organizzatore, il delegato dell'organizzatore o del relatore oppure un membro del team di supporto di grandi riunioni dedicato, a seconda delle preferenze dell'organizzazione.
+Si consiglia inoltre di dedicare una persona all'esecuzione e al monitoraggio della parte online delle riunioni di grandi dimensioni. Questa persona può essere l'organizzatore, un delegato dell'organizzatore o del relatore o un membro del team di supporto alle riunioni di grandi dimensioni, a seconda delle preferenze dell'organizzazione.
 
-Nelle sezioni seguenti viene descritto come implementare un pool dedicato per riunioni di grandi dimensioni, incluse le procedure consigliate per l'uso di Lync Server 2013 per supportare scenari di grandi riunioni.
+Nelle sezioni seguenti viene descritto come implementare un pool dedicato per riunioni di grandi dimensioni, incluse le procedure consigliate per l'utilizzo di Lync Server 2013 per il supporto di scenari di riunioni di grandi dimensioni.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Configurazione del supporto per riunioni di grandi dimensioni in Lync Server 2013](lync-server-2013-setting-up-support-for-large-meetings.md)
+  - [Configurazione del supporto per le riunioni di grandi dimensioni in Lync Server 2013](lync-server-2013-setting-up-support-for-large-meetings.md)
 
   - [Gestione di riunioni di grandi dimensioni in Lync Server 2013](lync-server-2013-managing-large-meetings.md)
 

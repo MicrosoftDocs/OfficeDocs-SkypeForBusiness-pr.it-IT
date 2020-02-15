@@ -1,5 +1,5 @@
 ---
-title: Transizione di un Mediation Server collocato a un Mediation Server autonomo (facoltativo)
+title: Eseguire la transizione di un Mediation Server collocato a un Mediation Server autonomo (facoltativo)
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184602
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2c6a76bceb935900521859911ce5398ae2213e22
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6fe982dca1c1cfda341bd3226b57e7793a948fb7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738666"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035562"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="transition-a-collocated-mediation-server-to-a-stand-alone-mediation-server-optional"></a>Transizione di un Mediation Server collocato a un Mediation Server autonomo (facoltativo)
+# <a name="transition-a-collocated-mediation-server-to-a-stand-alone-mediation-server-optional"></a>Eseguire la transizione di un Mediation Server collocato a un Mediation Server autonomo (facoltativo)
 
 </div>
 
@@ -35,45 +35,45 @@ ms.locfileid: "41738666"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-19_
+_**Ultimo argomento modificato:** 2012-10-19_
 
-Usare la procedura seguente per eseguire la transizione del server di mediazione, collocato nel server standard o nel pool Front-End, in un Mediation Server autonomo per una distribuzione a sito singolo.
+Eseguire la procedura seguente per la transizione del Mediation Server, collocato nel server Standard Edition o nel pool Front End, in un Mediation Server autonomo per una distribuzione a sito singolo.
 
 <div>
 
-## <a name="to-transition-a-collocated-mediation-server-to-a-stand-alone-mediation-server"></a>Per eseguire la transizione di un Mediation Server collocato a un Mediation Server autonomo
+## <a name="to-transition-a-collocated-mediation-server-to-a-stand-alone-mediation-server"></a>Per effettuare la transizione di un Mediation Server collocato in un server Mediation Server autonomo (facoltativo)
 
-1.  Aprire una topologia esistente da generatore di topologie.
+1.  Apertura di una topologia esistente da Generatore di topologie
 
-2.  Nel riquadro sinistro passare a pool di **mediazione**.
+2.  Nel riquadro sinistro passare a **Pool Mediation Server**.
 
-3.  Fare clic con il pulsante destro del mouse su **pool di mediazione** e scegliere **nuovo Mediation**
+3.  Fare clic con il pulsante destro del mouse su **Pool Mediation Server** e quindi scegliere **Nuovo Mediation Server**.
 
-4.  Nella pagina **Definisci nuovo pool di mediazione** specificare il nome di dominio completo del nuovo pool di Mediation Server. Selezionare inoltre se questo pool sarà un pool a server singolo o a più server e quindi fare clic su **Avanti**.
+4.  Nella pagina **Definisci nuovo pool Mediation Server** immettere il nome di dominio completo del nuovo pool Mediation Server, specificare se sarà un pool a server singolo o a più server e quindi fare clic su **Avanti**.
 
-5.  Selezionare il pool di server front-end hop successivo in cui il nuovo Mediation Server instraderà le chiamate in ingresso e quindi fare clic su **Avanti**.
+5.  Selezionare il pool dell'hop Front End server successivo al quale il nuovo Mediation Server instraderà le chiamate in arrivo e quindi fare clic su **Avanti**.
 
-6.  Selezionare il pool di bordi da usare per Mediation Server e quindi fare clic su **Avanti**.
+6.  Selezionare il pool di server perimetrali che deve essere utilizzato dal Mediation Server e quindi fare clic su **Avanti**.
 
-7.  Nella pagina **specifica gateway PSTN** associare il gateway PSTN precedente al Mediation Server. Selezionare il gateway e quindi fare clic su **Aggiungi**.
+7.  Nella pagina **Specificare i gateway PSTN** associare il gateway PSTN precedente al Mediation Server. Selezionare il gateway e quindi fare clic su **Aggiungi**.
 
-8.  Fare clic su **fine** per chiudere la procedura guidata **Definisci nuovo gruppo di mediazione** .
+8.  Fare clic su **Fine** per chiudere la procedura guidata **Definisci nuovo pool Mediation Server**.
 
-9.  In **Generatore di topologie**selezionare il nodo superiore **Lync Server 2013**.
+9.  In **Generatore di topologie**selezionare il nodo principale **Lync Server 2013**.
 
-10. Nel riquadro **azioni** selezionare **Pubblica topologia** e completare la procedura guidata.
+10. Nel riquadro **Azioni** selezionare **Pubblica topologia** e quindi completare la procedura guidata.
 
-11. Seguire la procedura descritta in [installare i file per Mediation Server in Lync server 2013](lync-server-2013-install-the-files-for-mediation-server.md) nella documentazione relativa alla distribuzione per installare i file nel nuovo Mediation Server.
+11. Attenersi alla procedura descritta in [Install the files for Mediation Server in Lync server 2013](lync-server-2013-install-the-files-for-mediation-server.md) nella documentazione relativa alla distribuzione per installare i file nel nuovo Mediation Server.
 
-12. Dopo aver installato i file nel server Mediation, tornare a Generatore di topologie e nel riquadro sinistro passare al pool.
+12. Dopo l'installazione dei file nel Mediation Server, tornare al Generatore di topologie e nel riquadro sinistro passare al pool.
 
-13. Fare clic con il pulsante destro del mouse sul pool e scegliere **modifica proprietà**.
+13. Fare clic con il pulsante destro del mouse sul pool e quindi scegliere **Modifica proprietà**.
 
-14. In **Mediation Server**deselezionare la casella di controllo **Mediation Server collocata abilitata** e quindi fare clic su **OK**.
+14. In **Mediation Server** deselezionare la casella di controllo **Mediation Server nella stessa posizione abilitato** e quindi fare clic su **OK**.
 
-15. In **Generatore di topologie**selezionare il nodo superiore **Lync Server 2013**.
+15. In **Generatore di topologie**selezionare il nodo principale **Lync Server 2013**.
 
-16. Nel menu **azione** selezionare **Pubblica topologia** e completare la procedura guidata.
+16. Nel menu **Azioni** selezionare **Pubblica topologia** e quindi completare la procedura guidata.
 
 </div>
 

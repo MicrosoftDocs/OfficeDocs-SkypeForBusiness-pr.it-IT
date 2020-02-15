@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: configurazione di ADFS 2,0 per supportare l'autenticazione del client"
+title: "Lync Server 2013: configurazione di ADFS 2,0 per il supporto dell'autenticazione client"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 54973687
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c7fe9587e85ad300a212e4a8199fa4a8a48d1877
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f7054bae609b5d1a1c6fe176c1092614f5d30fa6
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41741196"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029707"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-ad-fs-20-to-support-client-authentication-in-lync-server-2013"></a>Configurazione di ADFS 2,0 per supportare l'autenticazione del client in Lync Server 2013
+# <a name="configuring-ad-fs-20-to-support-client-authentication-in-lync-server-2013"></a>Configurazione di AD FS 2,0 per il supporto dell'autenticazione client in Lync Server 2013
 
 </div>
 
@@ -35,22 +35,22 @@ ms.locfileid: "41741196"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-07-03_
+_**Ultimo argomento modificato:** 2013-07-03_
 
-Esistono due tipi di autenticazione possibili che possono essere configurati in modo da consentire AD FS 2,0 di supportare l'autenticazione tramite smart card:
+Esistono due tipi di autenticazione possibili che possono essere configurati in modo da consentire ad FS 2,0 di supportare l'autenticazione tramite smart card:
 
-  - Autenticazione basata su moduli (FBA)
+  - Autenticazione basata su form (moduli)
 
-  - Autenticazione del client di sicurezza dei livelli di trasporto
+  - Autenticazione del client di sicurezza layer di trasporto
 
-Usando l'autenticazione basata su moduli, puoi sviluppare una pagina Web che consente agli utenti di autenticarsi usando il loro nome utente/password o usando la loro smart card e il PIN. Questo argomento illustra come implementare l'autenticazione del client di sicurezza dei livelli di trasporto con ADFS 2,0. Per altre informazioni sui tipi di autenticazione di ADFS 2,0, vedere ADFS 2,0: come modificare il tipo di autenticazione locale [http://go.microsoft.com/fwlink/p/?LinkId=313384](http://go.microsoft.com/fwlink/p/?linkid=313384).
+Se si utilizza l'autenticazione basata su moduli, è possibile sviluppare una pagina Web che consenta agli utenti di autenticarsi usando il proprio nome utente/password o utilizzando la smart card e il PIN. Questo argomento è dedicato all'implementazione dell'autenticazione del client per la sicurezza del layer di trasporto con AD FS 2,0. Per ulteriori informazioni sui tipi di autenticazione AD FS 2,0, vedere AD FS 2,0: come modificare il tipo di autenticazione locale [http://go.microsoft.com/fwlink/p/?LinkId=313384](http://go.microsoft.com/fwlink/p/?linkid=313384)all'indirizzo.
 
 <div>
 
 
-**Per configurare ADFS 2,0 per supportare l'autenticazione del client**
+**Per configurare ad FS 2,0 per il supporto dell'autenticazione client**
 
-1.  Accedere al computer ADFS 2,0 usando un account di amministratore di dominio.
+1.  Accedere al computer AD FS 2,0 utilizzando un account di amministratore di dominio.
 
 2.  Avviare Esplora risorse.
 
@@ -58,21 +58,21 @@ Usando l'autenticazione basata su moduli, puoi sviluppare una pagina Web che con
 
 4.  Creare una copia di backup del file Web. config esistente.
 
-5.  Aprire il file Web. config esistente tramite il blocco note.
+5.  Aprire il file Web. config esistente utilizzando il blocco note.
 
-6.  Nella barra dei menu selezionare **modifica** e quindi **trova**.
+6.  Dalla barra dei menu, selezionare **modifica** , quindi selezionare **trova**.
 
-7.  Cercare ** \<localAuthenticationTypes\>**.
+7.  Ricerca di ** \<localAuthenticationTypes\>**.
     
-    Tieni presente che sono presenti quattro tipi di autenticazione, uno per riga.
+    Tenere presente che sono presenti quattro tipi di autenticazione, uno per riga.
 
-8.  Posizionare la linea contenente il tipo di autenticazione TLSClient nella parte superiore dell'elenco nella sezione.
+8.  Spostare la riga contenente il tipo di autenticazione di TLSClient nella parte superiore dell'elenco della sezione.
 
 9.  Salvare e chiudere il file Web. config.
 
 10. Avviare un prompt dei comandi con privilegi elevati.
 
-11. Riavviare IIS eseguendo il comando seguente:
+11. Riavviare IIS eseguendo il comando riportato di seguito:
     
         IISReset /Restart /NoForce
 

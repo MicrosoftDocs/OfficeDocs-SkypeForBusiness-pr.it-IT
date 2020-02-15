@@ -12,16 +12,16 @@ ms:contentKeyID: 48184771
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6344319fbdf581a5e51a1f61e141833910e9e29f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 31e99e05013d823d5a3a1c1ce1eef6ccc47cfb59
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733466"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035068"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41733466"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-17_
+_**Ultimo argomento modificato:** 2012-10-17_
 
-La tabella IPAddress esegue il mapping degli indirizzi IP agli identificatori di indirizzi IP univoci usati in un altro punto del database Quality of Experience. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
+La tabella IPAddress mappa gli indirizzi IP agli identificatori di indirizzo IP univoci usati altrove nel database QoS (Quality of Experience). Questa tabella è stata introdotta in Microsoft Lync Server 2013.
 
 
 <table>
@@ -65,8 +65,8 @@ La tabella IPAddress esegue il mapping degli indirizzi IP agli identificatori di
 <tr class="even">
 <td><p><strong>IPAddress</strong></p></td>
 <td><p>varchar (50)</p></td>
-<td><p>Univoci</p></td>
-<td><p>Indirizzo IP univoco, ad esempio 189.168.1.1, che esegue il mapping a IpAddressKey. Può trattarsi di un indirizzo IPv4 o IPv6.</p></td>
+<td><p>Univoco</p></td>
+<td><p>Indirizzo IP univoco (ad esempio, 189.168.1.1) mappato a IpAddressKey. Può trattarsi di un indirizzo IPv4 o IPv6.</p></td>
 </tr>
 </tbody>
 </table>

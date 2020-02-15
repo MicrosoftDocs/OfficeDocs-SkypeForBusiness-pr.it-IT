@@ -12,16 +12,16 @@ ms:contentKeyID: 48185642
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 76719513d3b9df6b3259efef57fc0bd5ae94050f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 08379ec217cc684ae9b6bc11c44b89a3d642f6df
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730946"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030700"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,29 +35,29 @@ ms.locfileid: "41730946"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-17_
+_**Ultimo argomento modificato:** 2012-09-17_
 
-In Lync Server 2013 si definiscono i siti della rete che contengono componenti di Lync Server 2013. Un sito è un set di computer ben connessi da una rete a bassa latenza ad alta velocità, ad esempio una rete LAN (Local Area Network) o due reti connesse da una rete a fibre ottiche ad alta velocità.
+In Lync Server 2013, è possibile definire i siti della rete che contengono componenti di Lync Server 2013. Un sito è un insieme di computer connessi tramite una rete ad alta velocità e a bassa latenza, ad esempio una singola rete locale (LAN) o due reti connesse tramite una rete in fibra ottica ad alta velocità.
 
-Un *pool Front-End* è un set di server front-end configurati in modo identico e collaborano per creare servizi per un gruppo di utenti comune. Un pool offre funzionalità di scalabilità e failover per gli utenti. Ogni server in un pool deve eseguire un ruolo o ruoli del server identico. Un server Standard Edition, progettato per le piccole organizzazioni, definisce anche un pool ed è in esecuzione su un singolo server. In questo modo è possibile avere la funzionalità Lync Server 2013 per un costo inferiore, ma non offre una vera soluzione a elevata disponibilità.
+Un *pool Front End* è un gruppo di Front End Server configurati in modo identico che collaborano per offrire servizi a un gruppo comune di utenti. Un pool garantisce scalabilità e funzionalità di failover per gli utenti. Ogni server in un pool deve eseguire uno o più ruoli del server identici. Un server Standard Edition, disegnato per organizzazioni di piccole dimensioni, definisce anche un pool e viene eseguito su un server singolo. In questo modo è possibile disporre di una funzionalità di Lync Server 2013 per un costo minore, ma non fornisce una vera soluzione a disponibilità elevata.
 
-Le fasi seguenti descrivono il processo di migrazione del pool da Lync Server 2010 a Lync Server 2013. Per più siti che contengono più pool, ogni singolo pool deve seguire questo approccio graduale.
+Nelle fasi seguenti viene descritto il processo di migrazione del pool da Lync Server 2010 a Lync Server 2013. Nel caso di più siti che includono più pool, per ogni singolo pool sarà necessario adottare questo approccio in più fasi.
 
 1.  [Fase 1: pianificare la migrazione da Lync Server 2010](phase-1-plan-your-migration-from-lync-server-2010.md)
 
-2.  [Fase 2: preparare la migrazione](phase-2-prepare-for-migration.md)
+2.  [Fase 2: preparazione per la migrazione](phase-2-prepare-for-migration.md)
 
-3.  [Fase 3: distribuire Lync Server 2013 Pilot pool](phase-3-deploy-lync-server-2013-pilot-pool.md)
+3.  [Fase 3: distribuire il pool pilota di Lync Server 2013](phase-3-deploy-lync-server-2013-pilot-pool.md)
 
-4.  [Fase 4: trasferire gli utenti di test nel pool pilota](phase-4-move-test-users-to-the-pilot-pool.md)
+4.  [Fase 4: spostare gli utenti di test nel pool pilota](phase-4-move-test-users-to-the-pilot-pool.md)
 
-5.  [Fase 5: aggiungere Lync Server 2013 Edge Server al pool pilota](phase-5-add-lync-server-2013-edge-server-to-pilot-pool.md)
+5.  [Fase 5: aggiungere il server perimetrale di Lync Server 2013 al pool pilota](phase-5-add-lync-server-2013-edge-server-to-pilot-pool.md)
 
 6.  [Fase 6: passare dalla distribuzione pilota alla produzione](phase-6-move-from-pilot-deployment-into-production.md)
 
 7.  [Fase 7: completare le attività successive alla migrazione](phase-7-complete-post-migration-tasks.md)
 
-8.  [Fase 8: rimuovere le autorizzazioni dei pool legacy](phase-8-decommission-legacy-pools.md)
+8.  [Fase 8: rimuovere i pool legacy](phase-8-decommission-legacy-pools.md)
 
 </div>
 

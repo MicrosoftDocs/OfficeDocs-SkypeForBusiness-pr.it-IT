@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: installazione di Lync Server 2013 Management Pack'
+title: 'Lync Server 2013: installazione dei Lync Server 2013 Management Pack'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185233
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ffc102eccdbaa941e2691df88899c0cc01348838
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2324d166ab43153cf37b71500da438e6db6b4b4f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725976"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029517"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,48 +35,48 @@ ms.locfileid: "41725976"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-22_
+_**Ultimo argomento modificato:** 2012-10-22_
 
-Di per sé, System Center Operations Manager è in grado di monitorare solo una piccola parte del sistema operativo Windows. È tuttavia possibile estendere le funzionalità di System Center Operations Manager installando Management Pack, un software che detta gli elementi che System Center Operations Manager può monitorare, incluso il monitoraggio degli elementi e la modalità di visualizzazione degli avvisi attivato e segnalato. Microsoft Lync Server 2013 include due Management Pack di System Center Operations Manager che fornisce le funzionalità seguenti:
+Da solo, System Center Operations Manager è in grado di monitorare solo una piccola parte del sistema operativo Windows. Tuttavia, è possibile estendere le funzionalità di System Center Operations Manager installando Management Pack, software che determina quali elementi possono essere monitorati dal System Center Operations Manager, includendo il monitoraggio e il modo in cui devono essere monitorati gli avvisi. attivata e segnalata. Microsoft Lync Server 2013 include due Management Pack di System Center Operations Manager che forniscono le funzionalità seguenti:
 
-  - Il componente e User Management Pack (Microsoft.LS.2013.Monitoring.ComponentAndUser.mp) tiene traccia dei problemi di Lync Server registrati nei registri eventi, registrati da contatori delle prestazioni oppure registrati nei record dettagli chiamata (CDR) o nella qualità dell'esperienza (QoE) database. Per problemi critici, System Center Operations Manager può essere configurato per informare immediatamente gli amministratori tramite posta elettronica, messaggio istantaneo o messaggistica SMS (Short Message Service). SMS è la tecnologia usata per inviare SMS da un dispositivo mobile a un altro.
+  - Il componente e User Management Pack (Microsoft.LS.2013.Monitoring.ComponentAndUser.mp) tiene traccia dei problemi di Lync Server registrati nei registri eventi, registrati dai contatori delle prestazioni o registrati nei record dettagli chiamata (CDR) o nella qualità di esperienza (QoE) database. Per i problemi critici, System Center Operations Manager può essere configurato per informare immediatamente gli amministratori tramite messaggi di posta elettronica, messaggi istantanei o SMS (Short Message Service). La tecnologia SMS viene utilizzata per inviare messaggi di testo da un dispositivo mobile a un altro.
     
     <div>
     
 
     > [!NOTE]  
-    > Per altre informazioni sulla configurazione della notifica di Operations Manager, vedere Configurazione della notifica in TechNet <A class=uri href="http://go.microsoft.com/fwlink/p/?linkid=268785">http://go.microsoft.com/fwlink/p/?linkid=268785</A>Library at.
+    > Per ulteriori informazioni sulla configurazione della notifica di Operations Manager, vedere Configuring Notification in <A class=uri href="http://go.microsoft.com/fwlink/p/?linkid=268785">http://go.microsoft.com/fwlink/p/?linkid=268785</A>the TechNet Library at.
 
     
     </div>
 
-  - Il Active Monitoring Pack (Microsoft.LS.2013.Monitoring.ActiveMonitoring.mp) verifica in modo proattivo i componenti principali di Lync Server, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o l'esecuzione di chiamate a un telefono che si trova nel telefono con commutazioni pubbliche rete (PSTN). Questi test vengono eseguiti usando i cmdlet di transazione sintetica di Lync Server. Ad esempio, il cmdlet **Test-CsIM** viene usato per simulare una conversazione di messaggistica istantanea tra una coppia di utenti di test. Se la conversazione di messaggistica simulata non riesce, verrà generato un avviso.
+  - Il Active Monitoring Pack (Microsoft.LS.2013.Monitoring.ActiveMonitoring.mp) verifica in modo proattivo i componenti chiave di Lync Server, ad esempio l'accesso al sistema, lo scambio di messaggi istantanei o la chiamata a un telefono che si trova sul telefono pubblico a commutazione rete (PSTN). Questi test vengono eseguiti utilizzando i cmdlet per le transazioni sintetiche di Lync Server. Il cmdlet **Test-CsIM** ad esempio viene utilizzato per simulare una conversazione istantanea tra due utenti di test. Se questa conversazione simulata ha esito negativo, verrà generato un avviso.
 
-I due Management Pack inclusi in Lync Server 2013 includono un numero elevato di miglioramenti nei Management Pack usati con Microsoft Lync Server 2010. Ad esempio, il pacchetto di gestione dei componenti di Lync Server 2013 non si limita a monitorare Lync Server stesso. Oltre a monitorare i registri eventi e i contatori delle prestazioni per Lync Server, il Management Pack del componente può anche tenere traccia delle prestazioni e inviare avvisi per elementi cruciali, ad esempio:
+I due Management Pack inclusi in Lync Server 2013 includono un numero elevato di miglioramenti rispetto ai Management Pack utilizzati con Microsoft Lync Server 2010. Ad esempio, il Lync Server 2013 Component Management Pack non è limitato al monitoraggio di Lync Server stesso. Oltre a monitorare i registri eventi e i contatori delle prestazioni per Lync Server, il Management Pack del componente può anche tenere conto delle prestazioni e inviare avvisi per gli elementi cruciali, ad esempio:
 
-  - **Gli avvisi di Internet Information Services (IIS)**   verranno emessi se Internet Information Services è offline. Questo è importante perché i servizi Web di Lync Server si basano su IIS.
+  - **Gli avvisi di Internet Information Services (IIS)**   verranno emessi se Internet Information Services non è in linea. Questo è importante perché i servizi Web di Lync Server si basano su IIS.
 
-  - ****   Gli avvisi per l'uso del processo verranno emessi se le risorse di sistema, ad esempio la memoria disponibile, iniziano a funzionare in basso. Questi avvisi verranno emessi anche se Lync Server non è responsabile dell'uso elevato del sistema.
+  - **Gli avvisi sull'utilizzo**   dei processi verranno emessi se le risorse di sistema, ad esempio la memoria disponibile, cominciano a funzionare in basso. Questi avvisi verranno emessi anche se Lync Server non è responsabile dell'utilizzo del sistema elevato.
 
-  - **Gli avvisi sugli eventi**   di errore del computer verranno emessi in caso di problemi hardware o software che minacciano la redditività di un server. Ad esempio, gli amministratori di Lync Server verranno informati se un server sembra essere in pericolo di un errore del disco rigido.
+  - **Eventi di errore del computer gli**   avvisi verranno emessi in caso di un problema hardware o software che minacci la redditività di un server. Ad esempio, gli amministratori di Lync Server riceveranno una notifica se un server sembra rischiare di riscontrare un errore del disco rigido.
 
-I nuovi Management Pack includono anche report avanzati. I nuovi report per Lync Server 2013 includono:
+I nuovi Management Pack inoltre offrono funzionalità di segnalazione avanzate. I nuovi rapporti per Lync Server 2013 includono:
 
-  - **Report disponibilità scenario finale**   questo report descrive in dettaglio la disponibilità/uptime dei servizi principali di Lync Server, ad esempio registrazione o presenza.
+  - **End to end scenario availability report**   questo rapporto descrive in dettaglio la disponibilità/tempo di uptime per i servizi chiave di Lync Server, ad esempio la registrazione o la presenza.
 
-  - **Report capacità con**   le informazioni sui contatori delle prestazioni, questo report Mostra le tendenze per i componenti di sistema, ad esempio la disponibilità della memoria e l'uso del processore
+  - **Rapporto capacità utilizzando**   le informazioni sui contatori delle prestazioni, in questo report vengono visualizzate le tendenze per i componenti di sistema, ad esempio la disponibilità della memoria e l'utilizzo
 
-  - **Report componente questo**   report elenca i generatori di avvisi principali raggruppati in base al componente Lync Server.
+  - **Report componente in**   questo report sono elencati i generatori di avvisi principali raggruppati in base al componente Lync Server.
 
-Oltre a questi report predefiniti, i Management Pack per Lync Server 2013 segnalano automaticamente gli avvisi sia per l'affidabilità delle chiamate (metriche misurate in base alla registrazione dei dettagli delle chiamate) che per gli Stati QoE (metriche misurate in base alla qualità dell'esperienza). Se è stata abilitata la registrazione dei dettagli delle chiamate, è possibile esaminare gli avvisi di affidabilità delle chiamate completando la procedura seguente dalla console di System Center Operations Manager:
+Oltre a questi rapporti predefiniti, i Management Pack per Lync Server 2013 segnalano automaticamente gli avvisi per l'affidabilità delle chiamate (metriche misurate tramite registrazione dettagli chiamata) e gli Stati QoE (metriche misurate in base alla qualità dell'esperienza). Se è stata abilitata la registrazione dettagli chiamata, è possibile esaminare gli avvisi relativi all'affidabilità delle chiamate eseguendo la procedura seguente dalla console di System Center Operations Manager:
 
-  - Espandi **monitoraggio**, Espandi **Microsoft Lync Server 2013 Health**, Espandi l' **affidabilità delle chiamate e la qualità degli elementi multimediali**e quindi fai clic su **affidabilità chiamata**.
+  - Espandere **Monitoring**, **Microsoft Lync Server 2013 Health** e **Call Reliability and Media Quality** e quindi fare clic su **Call Reliability**.
 
-Per visualizzare gli avvisi relativi alla qualità dell'esperienza, eseguire questa procedura dalla console di System Center Operations Manager:
+Per visualizzare gli avvisi relativi alla qualità delle esperienze, eseguire questa procedura dalla console di System Center Operations Manager:
 
-  - Espandi **monitoraggio**, Espandi **Microsoft Lync Server 2013 Health**, Espandi l' **affidabilità delle chiamate e la qualità degli elementi multimediali**e quindi Espandi **qualità multimediale**.
+  - Espandere **Monitoring**, **Microsoft Lync Server 2013 Health**, **Call Reliability and Media Quality** e quindi **Media Quality**.
 
-I Management Pack per Lync Server 2013 ora usano l'individuazione a livello di computer anziché il meccanismo di individuazione centralizzato usato in Microsoft Lync Server 2010. Questo significa che ogni agente del centro di sistema si rivela in sostanza e ne segnala l'esistenza al server di gestione centrale. L'uso dell'individuazione a livello di computer semplifica l'amministrazione dell'infrastruttura del centro di sistema e consente anche diverse versioni di Lync Server Management Pack, ad esempio Management Pack per Lync Server 2010 e Management Pack per Lync Server 2013, per coesistere.
+I Management Pack per Lync Server 2013 ora utilizzano l'individuazione a livello di computer invece del meccanismo di individuazione centrale utilizzato in Microsoft Lync Server 2010. Questo significa che ogni agente del centro di sistema si riscoprirà e ne riferirà la presenza al server di gestione centrale. L'utilizzo dell'individuazione a livello di computer semplifica l'amministrazione dell'infrastruttura del centro di sistema e consente anche diverse versioni dei Management Pack di Lync Server (ad esempio, Management Pack per Lync Server 2010 e Management Pack per Lync Server 2013) coesistere.
 
 </div>
 

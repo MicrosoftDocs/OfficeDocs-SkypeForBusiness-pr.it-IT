@@ -1,5 +1,5 @@
 ---
-title: Creare o modificare una raccolta di impostazioni di configurazione di aggiornamento dei dispositivi
+title: Creare o modificare una raccolta di impostazioni di configurazione per l'aggiornamento dei dispositivi
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51803938
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 80e550f48e37ab9c225e5a4919cbc65a13fe09e8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a3f58e67a0d1fc8f6b01fecfbab7c7ff7dd8f31d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758120"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035602"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-collection-of-device-update-configuration-settings-in-lync-server-2013"></a>Creare o modificare una raccolta di impostazioni di configurazione di aggiornamento dei dispositivi in Lync Server 2013
+# <a name="create-or-modify-a-collection-of-device-update-configuration-settings-in-lync-server-2013"></a>Creare o modificare una raccolta di impostazioni di configurazione per l'aggiornamento dei dispositivi in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41758120"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-Le impostazioni di configurazione per l'aggiornamento dei dispositivi possono essere create (solo nell'ambito del sito) tramite Windows PowerShell e il cmdlet **New-CsDeviceUpdateConfiguration** e modificate tramite il cmdlet **Set-CsDeviceUpdateConfiguration** . Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.
+È possibile creare le impostazioni di configurazione per l'aggiornamento dei dispositivi (solo nell'ambito del sito) utilizzando Windows PowerShell e il cmdlet **New-CsDeviceUpdateConfiguration** e modificarli utilizzando il cmdlet **Set-CsDeviceUpdateConfiguration** . Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.
 
 <div>
 
 
 > [!NOTE]
-> Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft <A href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</A>Lync Server 2010 con Remote PowerShell" at.
+> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync <A href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</A>Server 2010 using Remote PowerShell" at.
 
 
 
@@ -54,21 +54,21 @@ Le impostazioni di configurazione per l'aggiornamento dei dispositivi possono es
 
 <div>
 
-## <a name="to-create-device-update-configuration-settings-that-use-the-default-values"></a>Per creare impostazioni di configurazione per l'aggiornamento dei dispositivi che usano i valori predefiniti
+## <a name="to-create-device-update-configuration-settings-that-use-the-default-values"></a>Per creare impostazioni di configurazione per l'aggiornamento dei dispositivi che utilizzano i valori predefiniti
 
-  - Questo comando crea un nuovo set di impostazioni di configurazione per l'aggiornamento dei dispositivi per il sito Redmond:
+  - Questo comando consente di creare un nuovo set di impostazioni di configurazione per l'aggiornamento dei dispositivi per il sito Redmond:
     
         New-CsDeviceUpdateConfiguration -Identity "site:Redmond"
     
-    Dato che nel comando precedente non sono stati specificati parametri diversi da quelli di identità obbligatoria, la nuova raccolta di impostazioni di configurazione userà i valori predefiniti per tutte le proprietà.
+    Poiché nel comando precedente non sono stati specificati parametri diversi dal parametro Identity obbligatorio, la nuova raccolta di impostazioni di configurazione utilizzerà i valori predefiniti per tutte le proprietà.
 
 </div>
 
 <div>
 
-## <a name="to-change-a-single-property-value-when-creating-device-update-configuration-settings"></a>Per modificare un valore di proprietà Single durante la creazione di impostazioni di configurazione di aggiornamento dispositivi
+## <a name="to-change-a-single-property-value-when-creating-device-update-configuration-settings"></a>Per modificare un singolo valore di proprietà durante la creazione di impostazioni di configurazione di aggiornamento dispositivi
 
-  - Per creare impostazioni che usano valori di proprietà diversi, includere semplicemente il parametro e il valore del parametro appropriati. Ad esempio, per creare una raccolta di impostazioni di configurazione di aggiornamento dei dispositivi che, per impostazione predefinita, Elimina i file di log obsoleti ogni 21 giorni, usa un comando come questo:
+  - Per creare impostazioni basate su valori di proprietà diversi, è sufficiente includere il parametro appropriato e il valore corrispondente. Ad esempio, per creare una raccolta di impostazioni di configurazione per l'aggiornamento dei dispositivi che, per impostazione predefinita, Elimina i file di registro obsoleti ogni 21 giorni, utilizzare un comando simile al seguente:
     
         New-CsDeviceUpdateConfiguration -Identity "site:Redmond" -LogCleanupInterval "21.00:00:00"
 
@@ -76,15 +76,15 @@ Le impostazioni di configurazione per l'aggiornamento dei dispositivi possono es
 
 <div>
 
-## <a name="to-change-multiple-property-values-when-creating-device-update-configuration-settings"></a>Per modificare più valori di proprietà durante la creazione di impostazioni di configurazione di aggiornamento dei dispositivi
+## <a name="to-change-multiple-property-values-when-creating-device-update-configuration-settings"></a>Per modificare più valori di proprietà durante la creazione di impostazioni di configurazione per l'aggiornamento dei dispositivi
 
-  - Più valori di proprietà possono essere modificati includendo più parametri. Questo comando, ad esempio, imposta l'intervallo di pulizia del log su 21 giorni e l'intervallo di svuotamento del log su 30 minuti:
+  - È possibile modificare più valori di proprietà includendo più parametri. Ad esempio, questo comando consente di impostare l'intervallo di pulizia dei registri su 21 giorni e l'intervallo di incasso dei registri su 30 minuti:
     
         New-CsDeviceUpdateConfiguration -Identity "site:Redmond" -LogCleanupInterval "21.00:00:00" -LogFlushInterval "00:30:00"
 
 </div>
 
-Per informazioni dettagliate sulla modifica delle impostazioni di configurazione dei dispositivi esistenti, vedere l'argomento della Guida relativo al cmdlet [Set-CsDeviceUpdateConfiguration](https://technet.microsoft.com/en-us/library/Gg398320(v=OCS.15)) . Per informazioni dettagliate sulla creazione di raccolte di impostazioni di configurazione, vedere l'argomento della Guida relativo al cmdlet [New-CsDeviceUpdateConfiguration](https://technet.microsoft.com/en-us/library/Gg425761(v=OCS.15)) .
+Per informazioni dettagliate sulla modifica delle impostazioni di configurazione dei dispositivi esistenti, vedere l'argomento della Guida relativo al cmdlet [Set-CsDeviceUpdateConfiguration](https://technet.microsoft.com/library/Gg398320(v=OCS.15)) . Per informazioni dettagliate sulla creazione di raccolte di impostazioni di configurazione, vedere l'argomento della Guida relativo al cmdlet [New-CsDeviceUpdateConfiguration](https://technet.microsoft.com/library/Gg425761(v=OCS.15)) .
 
 </div>
 

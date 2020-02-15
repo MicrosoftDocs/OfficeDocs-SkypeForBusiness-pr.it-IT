@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Assegnare criteri di accesso per gli utenti esterni a un utente abilitato per Lync'
+title: 'Lync Server 2013: assegnare un criterio di accesso utente esterno a un utente abilitato per Lync'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184483
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 523907fbf4bc4cca93be8e529b6b607b43f0ea87
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 96b578028b7e5d68d902557fddeb9dd5e2a61a9e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41723396"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030099"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="assign-an-external-user-access-policy-to-a-lync-enabled-user-in-lync-server-2013"></a>Assegnare criteri di accesso per gli utenti esterni a un utente abilitato per Lync in Lync Server 2013
+# <a name="assign-an-external-user-access-policy-to-a-lync-enabled-user-in-lync-server-2013"></a>Assegnare un criterio di accesso utente esterno a un utente abilitato per Lync in Lync Server 2013
 
 </div>
 
@@ -35,35 +35,35 @@ ms.locfileid: "41723396"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-22_
+_**Ultimo argomento modificato:** 2013-02-22_
 
-Se un utente è stato abilitato per Lync Server, è possibile configurare la federazione SIP, la Federazione XMPP, l'accesso degli utenti remoti e la connettività messaggistica istantanea pubblica nel pannello di controllo di Lync Server applicando i criteri appropriati a utenti specifici. Se ad esempio è stato creato un criterio per supportare l'accesso degli utenti remoti, è necessario applicarlo all'utente prima che l'utente possa connettersi a Lync Server da una posizione remota e collaborare con utenti interni dalla posizione remota.
+Se un utente è stato abilitato per Lync Server, è possibile configurare la federazione SIP, la Federazione XMPP, l'accesso degli utenti remoti e la connettività per la messaggistica istantanea pubblica nel pannello di controllo di Lync Server applicando i criteri corretti a utenti specifici. Ad esempio, se è stato creato un criterio per supportare l'accesso degli utenti remoti, è necessario applicarlo all'utente prima che l'utente possa connettersi a Lync Server da una posizione remota e collaborare con utenti interni dalla postazione remota.
 
 <div>
 
 
 > [!NOTE]  
-> Per supportare l'accesso degli utenti esterni, è necessario abilitare il supporto per ogni tipo di accesso utente esterno che si vuole supportare e configurare i criteri appropriati e altre opzioni per controllarne l'utilizzo. Per informazioni dettagliate, vedere <A href="lync-server-2013-configuring-support-for-external-user-access.md">configurazione del supporto per l'accesso degli utenti esterni in Lync server 2013</A> nella documentazione di distribuzione o <A href="lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md">gestione della Federazione e accesso esterno a Lync Server 2013</A> nella documentazione delle operazioni.
+> Per supportare l'accesso utente esterno, è necessario abilitare il supporto per ogni tipo di accesso utente esterno desiderato e configurare i criteri appropriati e altre opzioni per il controllo. Per ulteriori informazioni, vedere <A href="lync-server-2013-configuring-support-for-external-user-access.md">configurazione del supporto per l'accesso degli utenti esterni in Lync server 2013</A> nella documentazione relativa alla distribuzione o <A href="lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md">gestione della Federazione e dell'accesso esterno a Lync Server 2013</A> nella documentazione relativa alle operazioni.
 
 
 
 </div>
 
-Usare la procedura descritta in questo argomento per applicare un criterio di accesso utente esterno creato in precedenza a uno o più account utente.
+Utilizzare la procedura contenuta in questo argomento per applicare criteri di accesso utente esterno creati in precedenza a uno o più account utente.
 
 <div>
 
-## <a name="to-apply-an-external-user-policy-to-a-user-account"></a>Per applicare un criterio utente esterno a un account utente
+## <a name="to-apply-an-external-user-policy-to-a-user-account"></a>Per applicare criteri di accesso utente esterno a un account utente
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
 3.  Nella barra di spostamento sinistra fare clic su **Utenti** e quindi cercare l'account utente da configurare.
 
-4.  Nella tabella in cui sono elencati i risultati della ricerca fare clic sull'account utente, su **Modifica** e quindi su **Mostra dettagli**.
+4.  Nella tabella in cui sono elencati i risultati della ricerca fare clic sull'account utente, fare clic su **Modifica** e quindi su **Mostra dettagli**.
 
-5.  In **modifica utenti di Lync Server** in **criteri di accesso esterno**Selezionare i criteri utente che si desidera applicare.
+5.  In **Criteri di accesso esterno** in **Modifica utente di Lync Server** selezionare i criteri utente che si desidera applicare.
     
     <div>
     
@@ -78,15 +78,15 @@ Usare la procedura descritta in questo argomento per applicare un criterio di ac
 
 <div>
 
-## <a name="assigning-per-user-external-access-policies-by-using-windows-powershell-cmdlets"></a>Assegnazione di criteri di accesso esterno per utente tramite i cmdlet di Windows PowerShell
+## <a name="assigning-per-user-external-access-policies-by-using-windows-powershell-cmdlets"></a>Assegnazione dei criteri di accesso esterno per utente tramite i cmdlet di Windows PowerShell
 
-I criteri di accesso esterno per utente possono essere assegnati tramite Windows PowerShell e il cmdlet Grant-CsExternalAccessPolicy. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+I criteri di accesso esterno per utente possono essere assegnati utilizzando Windows PowerShell e il cmdlet Grant-CsExternalAccessPolicy. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
 ## <a name="to-assign-a-per-user-external-access-policy-to-a-single-user"></a>Per assegnare un criterio di accesso esterno per utente a un singolo utente
 
-  - Questo comando assegna il criterio di accesso esterno per utente RedmondExternalAccessPolicy all'utente Ken.
+  - Questo comando assegna il criterio di accesso esterno per utente RedmondExternalAccessPolicy all'utente Ken Myer.
     
         Grant-CsExternalAccessPolicy -Identity "Ken Myer" -PolicyName "RedmondExternalAccessPolicy"
 
@@ -94,9 +94,9 @@ I criteri di accesso esterno per utente possono essere assegnati tramite Windows
 
 <div>
 
-## <a name="to-assign-a-per-user-external-access-policy-to-multiple-users"></a>Per assegnare un criterio di accesso esterno per utente a più utenti
+## <a name="to-assign-a-per-user-external-access-policy-to-multiple-users"></a>Per assegnare criteri di accesso esterno per utente a più utenti
 
-  - Questo comando assegna il criterio di accesso esterno per utente USAExternalAccessPolicy a tutti gli utenti che hanno account nell'UO degli Stati Uniti in Active Directory. Per altre informazioni sul parametro OU usato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser](https://docs.microsoft.com/powershell/module/skype/Get-CsUser) .
+  - Questo comando assegna il criterio di accesso esterno per utente USAExternalAccessPolicy a tutti gli utenti che dispongono di account nell'unità organizzativa UnitedStates in Active Directory. Per ulteriori informazioni sul parametro OU utilizzato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser](https://docs.microsoft.com/powershell/module/skype/Get-CsUser) .
     
         Get-CsUser -OU "ou=UnitedStates,dc=litwareinc,dc=com" | Grant-CsExternalAccessPolicy -PolicyName "USAExternalAccessPolicy"
 
@@ -106,13 +106,13 @@ I criteri di accesso esterno per utente possono essere assegnati tramite Windows
 
 ## <a name="to-unassign-a-per-user-external-access-policy"></a>Per annullare l'assegnazione di un criterio di accesso esterno per utente
 
-  - Questo comando Annulla l'assegnazione di qualsiasi criterio di accesso esterno per utente assegnato in precedenza a Ken. Dopo che il criterio per utente non è stato assegnato, Ken è gestito automaticamente tramite il criterio globale oppure, se disponibile, il criterio del sito locale. Un criterio di sito ha la precedenza sui criteri globali.
+  - Questo comando annulla l'assegnazione di tutti i criteri di accesso esterno per utente precedentemente assegnati a Ken Myer. Dopo l'annullamento del criterio per utente, Ken Myer sarà gestito automaticamente dal criterio globale oppure dall'eventuale criterio del sito locale, che ha la precedenza sul criterio globale.
     
         Grant-CsExternalAccessPolicy -Identity "Ken Myer" -PolicyName $Null
 
 </div>
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Grant-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/Grant-CsExternalAccessPolicy) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Grant-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/Grant-CsExternalAccessPolicy) .
 
 </div>
 

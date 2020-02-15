@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: tblLastChatId'
+title: 'Lync Server 2013: LastChatId'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183513
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a0fc42a3151b5863885fdb3853ea529503e18a6b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: be10514a933cb6a311d115fbbb011398f2758ef9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731546"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42025577"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="tbllastchatid-in-lync-server-2013"></a>tblLastChatId in Lync Server 2013
+# <a name="tbllastchatid-in-lync-server-2013"></a>LastChatId in Lync Server 2013
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41731546"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
-tblLastChatId contiene l'ultimo ID chat generato (e usato nella tabella tblChat) per ogni utente.
+LastChatId contiene l'ultimo ID chat generato (e utilizzato nella tabella tblChat) per ogni utente.
 
 ### <a name="columns"></a>Colonne
 
@@ -58,18 +58,18 @@ tblLastChatId contiene l'ultimo ID chat generato (e usato nella tabella tblChat)
 <tr class="odd">
 <td><p>nodeID</p></td>
 <td><p>int, not null</p></td>
-<td><p>ID nodo (solo chat room-tipo).</p></td>
+<td><p>ID nodo (solo di tipo chat).</p></td>
 </tr>
 <tr class="even">
 <td><p>Dalla LastChatId</p></td>
-<td><p>bigint e non null</p></td>
-<td><p>Ultimo ID chat usato.</p></td>
+<td><p>bigint, non null</p></td>
+<td><p>Ultimo ID chat utilizzato.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="keys"></a>Tasti
+### <a name="keys"></a>Chiavi
 
 <table>
 <colgroup>
@@ -89,7 +89,7 @@ tblLastChatId contiene l'ultimo ID chat generato (e usato nella tabella tblChat)
 </tr>
 <tr class="even">
 <td><p>nodeID</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblNode. nodeID.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblNode.nodeID.</p></td>
 </tr>
 </tbody>
 </table>

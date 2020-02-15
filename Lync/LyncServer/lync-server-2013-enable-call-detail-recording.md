@@ -12,16 +12,16 @@ ms:contentKeyID: 48183865
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2b033827600fc962ab5ea9df5c8848ed1533c75e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 65627b4144ff447b92a8be49d23b73cbaf87993a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729366"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42033996"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41729366"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-Registrazione dettagli chiamata (CDR) registra l'uso e le informazioni di diagnostica sulle attività peer-to-peer, tra cui messaggistica istanza, chiamate VoIP (Voice over Internet Protocol), condivisione di applicazioni, trasferimento di file e riunioni. I dati sull'utilizzo possono essere usati per calcolare il ritorno sugli investimenti (ROI) e i dati di diagnostica possono essere usati per risolvere le attività e le riunioni peer-to-peer.
+La funzionalità di registrazione dettagli chiamata (CDR) registra le informazioni di utilizzo e di diagnostica per le attività peer-to-peer, tra cui la messaggistica istantanea, le chiamate VoIP (Voice over Internet Protocol), la condivisione applicazioni, il trasferimento file e le riunioni. I dati di utilizzo possono essere utilizzati per calcolare il rendimento dell'investimento, mentre i dati di diagnostica possono aiutare a risolvere problemi relativi alle attività peer-to-peer e alle riunioni.
 
-Usare la procedura seguente per abilitare CDR per l'intera organizzazione o per ogni sito dell'organizzazione.
+Utilizzare la procedura seguente per abilitare la registrazione dettagli chiamata per l'intera organizzazione o per ogni sito dell'organizzazione.
 
 <div>
 
 
 > [!NOTE]  
-> Per abilitare CDR è necessario configurare il monitoraggio e un database di monitoraggio. Per informazioni dettagliate, vedere <A href="lync-server-2013-deploying-monitoring.md">distribuzione del monitoraggio in Lync Server 2013</A>.
+> Per abilitare la registrazione dettagli chiamata, è necessario configurare il monitoraggio e un database di monitoraggio. Per informazioni dettagliate, vedere <A href="lync-server-2013-deploying-monitoring.md">Deploying Monitoring in Lync Server 2013</A>.
 
 
 
@@ -55,19 +55,19 @@ Usare la procedura seguente per abilitare CDR per l'intera organizzazione o per 
 
 ## <a name="to-enable-cdr-with-lync-server-control-panel"></a>Per abilitare CDR con il pannello di controllo di Lync Server
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer presente nella rete in cui è stato distribuito Lync Server 2013.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a un computer nella rete in cui è stato distribuito Lync Server 2013.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **monitoraggio e archiviazione**, quindi fare clic su **registrazione dettagli chiamata**.
+3.  Nella barra di spostamento sinistra fare clic su **Monitoraggio e archiviazione** e quindi su **Registrazione dettagli chiamata**.
 
-4.  Nella pagina **registrazione dettagli chiamata** fare clic sul sito appropriato nella tabella, fare clic su **azione**e quindi su **Abilita CDR**.
+4.  Nella pagina **Registrazione dettagli chiamata** fare clic sul sito appropriato nella tabella, su **Azione** e quindi su **Abilita registrazione dettagli chiamata**.
     
     <div>
     
 
     > [!NOTE]  
-    > CDR è abilitato per impostazione predefinita.
+    > La funzionalità di registrazione dettagli chiamata è abilitata per impostazione predefinita.
 
     
     </div>
@@ -76,15 +76,15 @@ Usare la procedura seguente per abilitare CDR per l'intera organizzazione o per 
 
 <div>
 
-## <a name="enabling-cdr-by-using-windows-powershell-cmdlets"></a>Attivazione di CDR tramite i cmdlet di Windows PowerShell
+## <a name="enabling-cdr-by-using-windows-powershell-cmdlets"></a>Abilitazione di CDR tramite i cmdlet di Windows PowerShell
 
-È possibile abilitare CDR usando Windows PowerShell e il cmdlet **Set-CsCdrConfiguration** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile abilitare la funzionalità registrazione dettagli chiamata utilizzando Windows PowerShell e il cmdlet **Set-CsCdrConfiguration** . È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
-## <a name="to-enable-cdr-for-a-single-location"></a>Per abilitare CDR per una singola posizione
+## <a name="to-enable-cdr-for-a-single-location"></a>Per abilitare la funzionalità CR per una sola postazione
 
-  - Per disabilitare CDR, imposta il parametro EnableCDR su true ($True).
+  - Per abilitare la funzionalità di registrazione dettaglia chiamata, impostare il parametro EnableCDR su True ($True).
     
         Set-CsCdrConfiguration -Identity "site:Redmond" -EnableCDR $True
 
@@ -92,9 +92,9 @@ Usare la procedura seguente per abilitare CDR per l'intera organizzazione o per 
 
 <div>
 
-## <a name="to-disable-cdr-for-a-single-location"></a>Per disabilitare CDR per una singola posizione
+## <a name="to-disable-cdr-for-a-single-location"></a>Per disabilitare la funzionalità CDR per una sola postazione
 
-  - Per disabilitare CDR, imposta il parametro EnableCDR su false ($False). La disattivazione di CDR non disinstalla il monitoraggio. Sospende la raccolta e lo spazio di archiviazione dei dati CDR.
+  - Per disabilitare la funzionalità di registrazione dettaglia chiamata, impostare il parametro EnableCDR su False ($False). La disattivazione di CDR non disinstalla il monitoraggio. Interrompe la raccolta e l'archiviazione dei dati di registrazione dettagli chiamata.
     
         Set-CsCdrConfiguration -Identity "site:Redmond" -EnableCDR $False
 
@@ -102,15 +102,15 @@ Usare la procedura seguente per abilitare CDR per l'intera organizzazione o per 
 
 <div>
 
-## <a name="to-use-a-single-command-to-enable-cdr-in-multiple-locations"></a>Per usare un singolo comando per abilitare CDR in più posizioni
+## <a name="to-use-a-single-command-to-enable-cdr-in-multiple-locations"></a>Per abilitare la funzionalità CDR in più postazioni con un solo comando
 
-  - Questo comando consente a CDR di usare tutte le impostazioni di configurazione CDR attualmente in uso nell'organizzazione.
+  - Questo comando abilita la funzionalità CDR per tutte le impostazioni di configurazione CDR attualmente in uso nell'organizzazione.
     
         Get-CsCdrConfiguration | Set-CsCdrConfiguration "site:Redmond" -EnableCDR $True
 
 </div>
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsCdrConfiguration) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsCdrConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsCdrConfiguration) .
 
 </div>
 

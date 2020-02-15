@@ -12,16 +12,16 @@ ms:contentKeyID: 48184900
 ms.date: 03/30/2018
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a652fea6c54592526047e8d8b35a0bddd0ef1995
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ca82ae3078a2fd158e48f0dcd5906e3ae6d6983d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41741166"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030499"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,45 +35,45 @@ ms.locfileid: "41741166"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2018-03-30_
+_**Ultimo argomento modificato:** 2018-03-30_
 
-I clienti che usano distribuzioni locali di Lync Server 2013 possono configurare l'interoperabilità con Microsoft Outlook Web App in Microsoft Exchange online in modalità di distribuzione ibrida. Le caratteristiche di interoperabilità includono il Single Sign-on e la messaggistica istantanea (IM) e l'integrazione della presenza con l'interfaccia di Outlook Web App. Per abilitare questa integrazione, è necessario configurare l'Edge Server nella distribuzione locale di Lync Server completando le attività seguenti:
+I clienti che utilizzano le distribuzioni di Lync Server 2013 locali possono configurare l'interoperabilità con Microsoft Outlook Web App in Microsoft Exchange online in una modalità di distribuzione ibrida. Le caratteristiche di interoperabilità includono accesso Single Sign-on e messaggistica immediata (IM) e integrazione della presenza con l'interfaccia di Outlook Web App. Per abilitare questa integrazione, è necessario configurare il server perimetrale nella distribuzione di Lync Server locale completando le attività seguenti:
 
   - Configurare uno spazio di indirizzi SIP condiviso
 
-  - Configurare un provider di hosting nell'Edge Server
+  - Configurare un provider di hosting nel server perimetrale
 
-  - Verificare la replica dell'archivio di gestione centralizzato aggiornato
+  - Verificare la replica dell'archivio di gestione centrale aggiornato
 
-Se Lync Server 2013 è integrato con Exchange Online, un utente che sta provando ad accedere a messaggistica istantanea da OWA viene considerato un utente remoto o esterno. In questo scenario, questo utente deve avere un criterio di accesso esterno assegnato con l'opzione seguente selezionata:
+Se Lync Server 2013 è integrato con Exchange Online, un utente che sta tentando di accedere a messaggistica istantanea da OWA è considerato un utente remoto o esterno. In questo scenario, l'utente deve disporre di un criterio di accesso esterno assegnato con l'opzione seguente selezionata:
 
-**Abilitare le comunicazioni con gli utenti remoti**
+**Abilita comunicazioni con utenti remoti**
 
-Abilitare questa opzione se si vuole che gli utenti dell'organizzazione che si trovano all'esterno del firewall, ad esempio i telelavoratori e gli utenti che viaggiano, possano connettersi a Lync Server tramite Internet.
+Abilitare questa opzione se si desidera che gli utenti dell'organizzazione che si trovano all'esterno del firewall, ad esempio i telelavoratori e gli utenti che viaggiano, siano in grado di connettersi a Lync Server tramite Internet.
 
-Per altre informazioni, vedere [gestire i criteri di accesso esterno in Lync Server 2013](lync-server-2013-manage-external-access-policy-for-your-organization.md).
+Per ulteriori informazioni, vedere [gestire i criteri di accesso esterno in Lync Server 2013](lync-server-2013-manage-external-access-policy-for-your-organization.md).
 
 <div>
 
 ## <a name="configure-a-shared-sip-address-space"></a>Configurare uno spazio di indirizzi SIP condiviso
 
-Per integrare Lync Server 2013 in locale con Exchange Online, è necessario configurare uno spazio di indirizzi SIP condiviso. Lo stesso spazio per l'indirizzo del dominio SIP è supportato sia da Lync Server che dal servizio Exchange Online.
+Per integrare Lync Server 2013 locale con Exchange Online, è necessario configurare uno spazio di indirizzi SIP condiviso. Lo stesso spazio di indirizzi di dominio SIP è supportato sia da Lync Server che dal servizio Exchange Online.
 
-Usando Lync Server Management Shell, configurare l'Edge Server per la federazione eseguendo il cmdlet **Set-CsAccessEdgeConfiguration** , usando i parametri visualizzati nell'esempio seguente:
+Utilizzando Lync Server Management Shell, configurare il server perimetrale per la federazione eseguendo il cmdlet **Set-CsAccessEdgeConfiguration** , utilizzando i parametri visualizzati nell'esempio seguente:
 
     Set-CsAccessEdgeConfiguration -AllowFederatedUsers $True
 
-  - **AllowFederatedUsers ** specifica se agli utenti interni è consentito comunicare con utenti di domini federati. Questa proprietà determina anche se gli utenti interni possono comunicare con gli utenti in uno scenario di spazio di indirizzi SIP condiviso con Lync Server ed Exchange Online.
+  - **AllowFederatedUsers** specifica se agli utenti interni è consentito comunicare con utenti di domini federati. Questa proprietà determina inoltre se gli utenti interni possono comunicare con gli utenti in uno scenario di spazio degli indirizzi SIP condiviso con Lync Server e Exchange Online.
 
-Per informazioni dettagliate su come usare Lync Server Management Shell, vedere [Lync server 2013 Management Shell](lync-server-2013-lync-server-management-shell.md).
+Per informazioni dettagliate sull'utilizzo di Lync Server Management Shell, vedere [Lync server 2013 Management Shell](lync-server-2013-lync-server-management-shell.md).
 
 </div>
 
 <div>
 
-## <a name="configure-a-hosting-provider-on-the-edge-server"></a>Configurare un provider di hosting nell'Edge Server
+## <a name="configure-a-hosting-provider-on-the-edge-server"></a>Configurare un provider di hosting nel server perimetrale
 
-Usare Lync Server Management Shell per configurare un provider di hosting nel server perimetrale. A questo scopo, eseguire il cmdlet **New-CsHostingProvider** usando i parametri nell'esempio seguente:
+Utilizzare Lync Server Management Shell per configurare un provider di hosting nel server perimetrale. A tale scopo, eseguire il cmdlet **New-CsHostingProvider** , utilizzando i parametri nell'esempio seguente:
 
     New-CsHostingProvider -Identity "Exchange Online" -Enabled $True -EnabledSharedAddressSpace $True -HostsOCSUsers $False -ProxyFqdn "exap.um.outlook.com" -IsLocal $False -VerificationLevel UseSourceVerification
 
@@ -81,39 +81,39 @@ Usare Lync Server Management Shell per configurare un provider di hosting nel se
 
 
 > [!NOTE]
-> Se si usa Office 365 gestito da 21Vianet in Cina, sostituire il valore per il parametro <STRONG>ProxyFqdn</STRONG> in questo esempio ("exap.um.Outlook.com") con il nome di dominio completo per il servizio gestito da 21ViaNet: "exap.um.partner.Outlook.cn".
+> Se si utilizza Office 365 gestito da 21Vianet in Cina, sostituire il valore per il parametro <STRONG>ProxyFqdn</STRONG> in questo esempio ("exap.um.Outlook.com") con il nome di dominio completo per il servizio gestito da 21ViaNet: "exap.um.partner.Outlook.cn".
 
 
 
 </div>
 
-  - **Identity** specifica un identificatore di valore di stringa univoco per il provider di hosting da creare, ad esempio "Exchange Online". I valori che contengono spazi devono essere racchiusi tra virgolette doppie.
+  - **Identity** specifica un identificatore di valore stringa univoco per il provider di hosting da creare (ad esempio, "Exchange Online"). I valori che contengono spazi devono essere racchiusi tra virgolette doppie.
 
-  - **Enabled ** indica se la connessione di rete tra il dominio dell'organizzazione e il provider di hosting è abilitata. Deve essere impostato su **true**.
+  - **Enabled** indica se la connessione di rete tra il dominio dell'organizzazione e il provider di hosting è abilitata. Questa impostazione deve essere impostata su **true**.
 
-  - **EnabledSharedAddressSpace** indica se il provider di hosting verrà usato in uno scenario di spazio di indirizzi SIP condiviso. Deve essere impostato su **true**.
+  - **EnabledSharedAddressSpace** consente di indicare se il provider di hosting verrà utilizzato in uno scenario con spazio di indirizzamento SIP condiviso. Questa impostazione deve essere impostata su **true**.
 
-  - **HostsOCSUsers** indica se il provider di hosting viene usato per ospitare Office Communications Server o Lync Server. Deve essere impostato su **false**.
+  - **HostsOCSUsers** indica se il provider di hosting viene utilizzato per ospitare Office Communications Server o Lync Server. Questo valore deve essere impostato su **false**.
 
-  - **ProxyFqdn** specifica il nome di dominio completo (FQDN) per il server proxy usato dal provider di hosting. Per Exchange Online, il nome di dominio completo è exap.um.outlook.com.
+  - **ProxyFQDN** specifica il nome di dominio completo (FQDN) del server proxy utilizzato dal provider di hosting. Per Exchange Online, il nome di dominio completo è exap.um.outlook.com.
 
-  - La **lingua locale** indica se il server proxy usato dal provider di hosting è contenuto all'interno della topologia di Lync Server. Deve essere impostato su **false**.
+  - La **lingua locale** indica se il server proxy utilizzato dal provider di hosting è contenuto nella topologia di Lync Server. Questo valore deve essere impostato su **false**.
 
-  - **VerificationLevel** indica il livello di verifica consentito per i messaggi inviati da e verso il provider ospitato. Specifica **UseSourceVerification**. Questa opzione si basa sul livello di verifica incluso nei messaggi inviati dal provider di hosting. Se questo livello non è specificato, il messaggio verrà rifiutato come non verificabile.
+  - **VerificationLevel** indica il livello di verifica consentito per i messaggi inviati e ricevuti dal provider ospitato. Specificare **UseSourceVerification**. Questa opzione si basa sul livello di verifica incluso nei messaggi inviati dal provider di hosting. Se questo livello non viene specificato, il messaggio verrà rifiutato come non verificabile.
 
 </div>
 
 <div>
 
-## <a name="verify-replication-of-the-updated-central-management-store"></a>Verificare la replica dell'archivio di gestione centralizzato aggiornato
+## <a name="verify-replication-of-the-updated-central-management-store"></a>Verificare la replica dell'archivio di gestione centrale aggiornato
 
-Le modifiche apportate tramite i cmdlet nelle sezioni precedenti vengono applicate automaticamente all'Edge Server e in genere richiedono meno di un minuto per la replica. Puoi verificare lo stato della replica e che le modifiche sono state applicate all'Edge Server usando i cmdlet seguenti.
+Le modifiche apportate utilizzando i cmdlet nelle sezioni precedenti vengono applicate automaticamente al server perimetrale e generalmente richiedono meno di un minuto per la replica. È possibile verificare lo stato della replica e che le modifiche sono state applicate al server perimetrale utilizzando i cmdlet seguenti.
 
 Per verificare gli aggiornamenti della replica su un server interno nella distribuzione di Lync Server, eseguire il cmdlet seguente:
 
     Get-CsManagementStoreReplicationStatus
 
-Per verificare che le modifiche siano state applicate, eseguire il cmdlet seguente nell'Edge Server:
+Per verificare che le modifiche siano state applicate, eseguire il cmdlet seguente nel server perimetrale:
 
     Get-CsHostingProvider -LocalStore
 
@@ -124,7 +124,7 @@ Per verificare che le modifiche siano state applicate, eseguire il cmdlet seguen
 ## <a name="see-also"></a>Vedere anche
 
 
-[Fornire agli utenti di Lync Server 2013 la segreteria telefonica nella messaggistica unificata di Exchange ospitata](lync-server-2013-providing-lync-server-users-voice-mail-on-hosted-exchange-um.md)  
+[Fornire ai messaggi vocali di Lync Server 2013 utenti la messaggistica unificata di Exchange ospitata](lync-server-2013-providing-lync-server-users-voice-mail-on-hosted-exchange-um.md)  
 [Integrazione della messaggistica unificata di Exchange ospitata in Lync Server 2013](lync-server-2013-hosted-exchange-unified-messaging-integration.md)  
   
 

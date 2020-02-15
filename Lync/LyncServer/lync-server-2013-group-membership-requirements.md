@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Requisiti di appartenenza ai gruppi'
+title: 'Lync Server 2013: requisiti di appartenenza ai gruppi'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183239
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 44ad8c7f6eab93f3bdcd7b73d4ae05bd3b2e25ad
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2944b6f3feea6bfc4cadd3566abbdfe4918d9688
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743346"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030389"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41743346"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-05_
+_**Ultimo argomento modificato:** 2012-10-05_
 
-La tabella seguente riepiloga il gruppo o i gruppi a cui deve appartenere una persona per poter installare, gestire e risolvere i problemi di Lync Server 2013.
+Nella tabella seguente viene riepilogato il gruppo o i gruppi a cui appartiene una persona per poter eseguire correttamente l'installazione, la gestione e la risoluzione dei problemi di Lync Server 2013.
 
 
 <table>
@@ -47,49 +47,49 @@ La tabella seguente riepiloga il gruppo o i gruppi a cui deve appartenere una pe
 </colgroup>
 <thead>
 <tr class="header">
-<th>Eseguibile di Lync Server 2013</th>
-<th>Appartenenza a gruppi obbligatoria</th>
+<th>File eseguibile di Lync Server 2013</th>
+<th>Appartenenze ai gruppi richieste</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><strong>Setup. exe</strong> : eseguibile che avvia l'installazione degli strumenti di amministrazione di Lync Server 2013.</p></td>
-<td><p>Membro del gruppo Administrators locale nel computer da cui viene eseguito l'eseguibile. Membro del gruppo Domain Users per leggere le informazioni in servizi di dominio Active Directory. Questo livello di autorizzazione è necessario perché l'installazione automatica dei pacchetti MSI obbligatori nel computer locale richiede privilegi che consentono la lettura e la scrittura in risorse di computer locali protette, ad esempio directory dei file di programma, e protette Registro di sistema, ad esempio l'hive del computer locale.</p>
+<td><p>Membro del gruppo Administrators locale nel computer da cui viene eseguito il file. Membro del gruppo Domain Users per leggere le informazioni in servizi di dominio Active Directory. Questo livello di autorizzazione è necessario perché l'installazione automatica dei pacchetti MSI richiesti nel computer locale richiede privilegi che consentano la lettura e scrittura di risorse del computer locale protette, come le directory Programmi e l'hive Local Machine del Registro di sistema.</p>
 <div>
 
 > [!TIP]  
-> È anche possibile delegare le autorizzazioni di configurazione per gli utenti o i gruppi a cui non si vuole concedere l'appartenenza al gruppo Domain Admins. Per informazioni dettagliate, vedere <A href="lync-server-2013-granting-setup-permissions.md">concessione delle autorizzazioni di configurazione in Lync Server 2013</A> nella documentazione relativa alla distribuzione.
+> È inoltre possibile delegare le autorizzazioni per l'installazione a utenti o gruppi a cui non si desidera concedere l'appartenenza al gruppo Domain Admins. Per informazioni dettagliate, vedere <A href="lync-server-2013-granting-setup-permissions.md">concessione di autorizzazioni di installazione in Lync Server 2013</A> nella documentazione relativa alla distribuzione.
 
 
 </div></td>
 </tr>
 <tr class="even">
-<td><p><strong>Deploy. exe</strong> : chiamato da Setup. exe, deploy. exe è responsabile della distribuzione dei componenti software per i ruoli del server.</p></td>
-<td><p>Membro del gruppo Administrators locale nel computer da cui viene eseguito l'eseguibile. Membro del gruppo Domain Users per leggere le informazioni in servizi di dominio Active Directory. Questo livello di autorizzazione è necessario perché l'installazione automatica dei pacchetti MSI obbligatori nel computer locale richiede privilegi che consentono la lettura e la scrittura in risorse di computer locali protette, ad esempio directory dei file di programma, e protette Registro di sistema, ad esempio l'hive del computer locale. L'appartenenza al gruppo RtcUniversalReadOnlyAdmins è necessaria per leggere l'Central Management store.</p>
+<td><p><strong>Deploy.exe</strong> – Chiamato da setup.exe, deploy.exe è responsabile per la distribuzione dei componenti software per i ruoli del server.</p></td>
+<td><p>Membro del gruppo Administrators locale nel computer da cui viene eseguito il file. Membro del gruppo Domain Users per la lettura delle informazioni in Servizi di dominio Active Directory. Questo livello di autorizzazione è necessario perché l'installazione automatica dei pacchetti MSI richiesti nel computer locale richiede privilegi che consentano la lettura e scrittura di risorse del computer locale protette, come le directory Programmi e l'hive Local Machine del Registro di sistema. L'appartenenza al gruppo di RtcUniversalReadOnlyAdmins è necessaria per leggere l'archivio di gestione centrale.</p>
 <div>
 
 > [!NOTE]  
-> Se si esegue il sistema operativo Windows Vista o Windows 7, verrà richiesto dal controllo dell'account utente per procedere con l'installazione. Se è stato effettuato l'accesso con un account utente standard, sarà necessario disporre di un membro del gruppo Administrators locale per specificare le credenziali quando viene richiesto un account con le autorizzazioni necessarie per installare il software.
+> Se si esegue il sistema operativo Windows Vista o Windows 7, viene richiesto dal controllo dell'account utente di procedere con l'installazione. Se si è connessi con un account utente standard, sarà necessario che qualcuno membro del gruppo Administrators locale fornisca le credenziali quando viene richiesto di specificare un account che dispone delle autorizzazioni per l'installazione del software.
 
 
 </div></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Bootstrapper. exe</strong> : chiamato da Setup. exe, Bootstrapper. exe è responsabile della distribuzione e della configurazione dei ruoli del server.</p></td>
-<td><p>Membro del gruppo Administrators locale nel computer da cui viene eseguito l'eseguibile. Membro del gruppo RTCUniversalServerAdmins per l'esecuzione di Bootstrapper. exe. Membro del gruppo Domain Users per leggere le informazioni in servizi di dominio Active Directory. Questo livello di autorizzazione è necessario perché l'installazione automatica dei pacchetti MSI obbligatori nel computer locale richiede privilegi che consentono la lettura e la scrittura in risorse di computer locali protette, ad esempio directory dei file di programma, e protette Registro di sistema, ad esempio l'hive del computer locale.</p></td>
+<td><p><strong>Bootstrapper.exe</strong> – Chiamato da setup.exe, bootstrapper.exe è responsabile della distribuzione e configurazione dei ruoli del server.</p></td>
+<td><p>Membro del gruppo Administrators locale nel computer da cui viene eseguito il file. Membro del gruppo RTCUniversalServerAdmins per l'esecuzione di Bootstrapper.exe. Membro del gruppo Utenti di dominio per la lettura di informazioni in AD DS. Questo livello di autorizzazione è necessario perché l'installazione automatica dei pacchetti MSI richiesti nel computer locale richiede privilegi che consentano la lettura e scrittura di risorse del computer locale protette, come le directory Programmi e l'hive Local Machine del Registro di sistema.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>TopologyBuilder</strong> -interfaccia utente guidata da Wizard per creare, visualizzare, modificare e convalidare le topologie di Lync Server 2013.</p></td>
-<td><p>Membro del gruppo Administrators locale nel computer da cui viene eseguito l'eseguibile per visualizzare la topologia. Membro del gruppo RTCUniversalServerAdmins per modificare le impostazioni di configurazione. Membro del gruppo RTCUniversalServerAdmins e Domain Admins o membro del gruppo RTCUniversalServerAdmins (solo se al gruppo sono state concesse le autorizzazioni di configurazione del delegato) per pubblicare la topologia. Per informazioni dettagliate sulla delega delle autorizzazioni di configurazione per consentire ai membri del gruppo RTCUniversalServerAdmins di pubblicare la topologia senza essere membri del gruppo Domain Admins, vedere <a href="lync-server-2013-granting-setup-permissions.md">concessione delle autorizzazioni di configurazione in Lync Server 2013</a> nella documentazione relativa alla distribuzione.</p></td>
+<td><p><strong>TopologyBuilder</strong> : interfaccia utente basata su procedura guidata per creare, visualizzare, modificare e convalidare le topologie di Lync Server 2013.</p></td>
+<td><p>Membro del gruppo Administrators locale nel computer da cui viene eseguito il file per visualizzare la topologia. Membro del gruppo RTCUniversalServerAdmins per modificare le impostazioni di configurazione. Membro del gruppo RTCUniversalServerAdmins e del gruppo Domain Admins oppure membro del gruppo RTCUniversalServerAdmins (solo se al gruppo sono state concesse le autorizzazioni per la delega dell'installazione) per pubblicare la topologia. Per informazioni dettagliate sulla delega delle autorizzazioni di installazione per consentire ai membri del gruppo RTCUniversalServerAdmins di pubblicare la topologia senza essere membri del gruppo Domain Admins, vedere <a href="lync-server-2013-granting-setup-permissions.md">concessione di autorizzazioni di installazione in Lync Server 2013</a> nella documentazione relativa alla distribuzione.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>AdminUIHost</strong> -interfaccia utente grafica basata sul Web per la gestione di Lync Server 2013.</p></td>
-<td><p>Membro del gruppo CsAdministrator o membro di un altro ruolo di controllo di accesso basato sui ruoli (RBAC) a cui è assegnata l'attività amministrativa specifica. Il pannello di controllo di Lync Server 2013 implementa le modifiche alla configurazione eseguendo i cmdlet di Lync Server 2013 Management Shell. Per un elenco di ruoli predefiniti e i membri dei cmdlet sono consentiti per l'esecuzione, vedere <a href="lync-server-2013-planning-for-role-based-access-control.md">pianificazione per il controllo dell'accesso basato sui ruoli in Lync Server 2013</a> nella documentazione relativa alla pianificazione.</p></td>
+<td><p>Membro del gruppo CsAdministrator o di un altro ruolo di controllo di accesso basato sui ruoli a cui viene assegnata la specifica attività amministrativa. Il pannello di controllo di Lync Server 2013 implementa le modifiche di configurazione eseguendo i cmdlet di Lync Server 2013 Management Shell. Per un elenco di ruoli predefiniti e per i quali è consentito l'esecuzione dei membri cmdlet, vedere <a href="lync-server-2013-planning-for-role-based-access-control.md">Planning for Role-Based Access Control in Lync Server 2013</a> nella documentazione relativa alla pianificazione.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>PowerShell. exe con il modulo Lync server 2013 caricato</strong> : strumento di amministrazione della riga di comando con cmdlet specifici per la gestione di lync Server 2013.</p></td>
-<td><p>Membro del gruppo CsAdministrator o membro di un altro ruolo RBAC a cui è stato assegnato il cmdlet specifico. Per un elenco di ruoli predefiniti e i membri dei cmdlet sono consentiti per l'esecuzione, vedere <a href="lync-server-2013-planning-for-role-based-access-control.md">pianificazione per il controllo dell'accesso basato sui ruoli in Lync Server 2013</a> nella documentazione relativa alla pianificazione.</p>
-<p>In alternativa, membro di uno o più dei gruppi seguenti, a seconda del cmdlet:</p>
+<td><p><strong>PowerShell. exe con lo</strong> strumento di amministrazione della riga di comando di lync Server 2013 con cmdlet specifici per la gestione di lync Server 2013.</p></td>
+<td><p>Membro del gruppo CsAdministrator o di un altro ruolo di controllo di accesso basato sui ruoli a cui viene assegnato il cmdlet specifico. Per un elenco di ruoli predefiniti e per i quali è consentito l'esecuzione dei membri cmdlet, vedere <a href="lync-server-2013-planning-for-role-based-access-control.md">Planning for Role-Based Access Control in Lync Server 2013</a> nella documentazione relativa alla pianificazione.</p>
+<p>Oppure membro di uno o più dei gruppi seguenti, a seconda del cmdlet:</p>
 <ul>
 <li><p>RTCUniversalServerAdmins</p></li>
 <li><p>RTCUniversalUserAdmins</p></li>

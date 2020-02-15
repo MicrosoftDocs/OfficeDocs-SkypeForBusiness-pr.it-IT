@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: tblServerIdentity'
+title: 'Lync Server 2013: tabella tblServerIdentity'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184125
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2379622ee5b1121367c35b4baac98d6c79d61023
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5f6ed7f0eed08dbb4ab3b0d6f41c9ec91fb719f1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731206"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029187"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="tblserveridentity-in-lync-server-2013"></a>tblServerIdentity in Lync Server 2013
+# <a name="tblserveridentity-in-lync-server-2013"></a>Tabella tblServerIdentity in Lync Server 2013
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41731206"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
-tblServerIdentity contiene i server di chat attivi nel pool del server di chat persistente.
+Tabella tblServerIdentity contiene i server chat attivi nel pool di server Chat persistente.
 
 ### <a name="columns"></a>Colonne
 
@@ -58,17 +58,17 @@ tblServerIdentity contiene i server di chat attivi nel pool del server di chat p
 <tr class="odd">
 <td><p>serverID</p></td>
 <td><p>int, not null</p></td>
-<td><p>ID server. Corrisponde all'ID istanza di Central Management store.</p></td>
+<td><p>ID del server. Corrisponde all'ID istanza dell'archivio di gestione centrale.</p></td>
 </tr>
 <tr class="even">
 <td><p>serverAddress</p></td>
 <td><p>nvarchar (256), not null</p></td>
-<td><p>Indirizzo del server tramite l'indirizzo di Windows Communication Foundation.</p></td>
+<td><p>Indirizzo del server che usa l'indirizzo di Windows Communication Foundation.</p></td>
 </tr>
 <tr class="odd">
 <td><p>serverLastPingTime</p></td>
-<td><p>DateTime</p></td>
-<td><p>L'ultima volta che il Channel Server ha aggiornato questa riga per dare prova che è in esecuzione.</p></td>
+<td><p>datetime</p></td>
+<td><p>Ora dell'ultimo aggiornamento di questa riga eseguito dal Channel Server per confermare che è in esecuzione.</p></td>
 </tr>
 </tbody>
 </table>

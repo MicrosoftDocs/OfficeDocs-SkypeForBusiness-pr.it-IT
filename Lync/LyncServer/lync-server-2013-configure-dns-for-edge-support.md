@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare DNS per il supporto dei componenti perimetrali'
+title: 'Lync Server 2013: configurare DNS per il supporto di Edge'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184894
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c905c8fff7a67b26a7df8d2c741ce0a16fddce6c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e22228ec089f5632f30d4eabc2e8c32d87b5e2d5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757900"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028607"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-dns-for-edge-support-in-lync-server-2013"></a>Configurare DNS per il supporto dei componenti perimetrali in Lync Server 2013
+# <a name="configure-dns-for-edge-support-in-lync-server-2013"></a>Configurare DNS per il supporto Edge in Lync Server 2013
 
 </div>
 
@@ -35,35 +35,35 @@ ms.locfileid: "41757900"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-15_
+_**Ultimo argomento modificato:** 2013-02-15_
 
-È necessario configurare i record DNS (Domain Name System) per le interfacce di Edge interne ed esterne, tra cui le interfacce Edge Server e proxy inverso. Per impostazione predefinita, i server perimetrali non vengono uniti a un dominio e non avranno un nome di dominio completo (nome di dominio completo). Il server perimetrale viene indicato solo dal nome short (computer), non da un nome di dominio completo. Tuttavia, generatore di topologie usa nomi di dominio completi, non brevi. Il nome del server perimetrale deve corrispondere all'FQDN usato da generatore di topologie. A questo scopo, devi definire un suffisso DNS che, se combinato con il nome del computer, restituisce l'FQDN previsto. Usare la procedura seguente in "per aggiungere il suffisso DNS al nome del computer in e Edge Server che non è stato aggiunto a un dominio" per aggiungere il suffisso DNS al nome del computer.
+È necessario configurare record DNS (Domain Name System) per le interfacce perimetrali interne ed esterne, incluse le interfacce di server perimetrali e proxy inversi. Per impostazione predefinita, i server perimetrali non vengono aggiunti a un dominio e non avranno un nome di dominio completo (Fully Qualified Domain Name). Il server perimetrale è denominato solo dal nome breve (computer) e non da un nome di dominio completo. Tuttavia, il generatore di topologie utilizza FQDN e non nomi brevi. Il nome del server perimetrale deve corrispondere all'FQDN utilizzato dal generatore di topologie. A tale scopo, è possibile definire un suffisso DNS che, se combinato con il nome del computer, comporta l'FQDN previsto. Utilizzare la procedura seguente in "per aggiungere il suffisso DNS al nome del computer nel server perimetrale che non è aggiunto a un dominio" per aggiungere il suffisso DNS al nome del computer.
 
 <div>
 
 
 > [!NOTE]  
-> Per impostazione predefinita, il DNS usa un algoritmo round robin per ruotare l'ordine dei dati del record di risorse restituiti nelle risposte alle query in cui sono presenti più record di risorse dello stesso tipo per un nome di dominio DNS interrogato. Il bilanciamento del carico DNS di Lync Server 2013 dipende dal DNS round-robin come parte del meccanismo di bilanciamento del carico DNS. Verificare che l'impostazione Round Robin non sia stata disattivata. Se si usa un server DNS che non esegue un sistema operativo Windows, verificare che l'ordinamento dei record di risorse Round Robin sia abilitato.
+> Per impostazione predefinita, il DNS utilizza un algoritmo round robin per ruotare l'ordine dei dati del record di risorse restituiti nelle risposte di query in cui sono presenti più record di risorse dello stesso tipo per un nome di dominio DNS sottoposto a query. Il bilanciamento del carico DNS di Lync Server 2013 dipende dal Round Robin DNS come parte del meccanismo di bilanciamento del carico DNS. Verificare che l'impostazione Round Robin non sia stata disattivata. Se si utilizza un server DNS che non esegue un sistema operativo Windows, verificare che l'ordinamento dei record di risorse Round Robin sia abilitato.
 
 
 
 </div>
 
-Usare le procedure seguenti in "**per creare un record SRV DNS**" per creare e verificare ogni record SRV DNS. Usare la procedura descritta in "**per creare un record DNS**" per definire i record DNS necessari per l'accesso degli utenti esterni. Per verificare che i record siano configurati e funzioni correttamente, vedere la sezione relativa**alla verifica di un record DNS**in questo argomento. Per informazioni dettagliate su ogni record necessario per supportare l'accesso degli utenti esterni, vedere [determinare i requisiti DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md).
+Utilizzare le procedure seguenti in "**per creare un record DNS SRV**" per creare e verificare ogni record DNS SRV. Utilizzare la procedura descritta in "**per creare un record a DNS**" per definire i record DNS necessari per l'accesso degli utenti esterni. Per verificare che i record siano configurati e funzionino correttamente, vedere la sezione relativa**alla verifica di un record DNS**in questo argomento. Per informazioni dettagliate su ogni record necessario per supportare l'accesso degli utenti esterni, vedere [determine DNS requirements for Lync Server 2013](lync-server-2013-determine-dns-requirements.md).
 
 <div>
 
-## <a name="to-add-the-dns-suffix-to-the-computer-name-on-an-edge-server-that-is-not-joined-to-a-domain"></a>Per aggiungere il suffisso DNS al nome del computer in un server perimetrale che non è stato aggiunto a un dominio
+## <a name="to-add-the-dns-suffix-to-the-computer-name-on-an-edge-server-that-is-not-joined-to-a-domain"></a>Per aggiungere un suffisso DNS al nome del computer in un server perimetrale che non fa parte di un dominio
 
-1.  Nel computer fare clic su **Start**, fare clic con il pulsante destro del mouse su **computer**e quindi scegliere **proprietà**.
+1.  Nel computer fare clic sul pulsante **Start**, fare clic con il pulsante destro del mouse su **Computer** e quindi scegliere **Proprietà**.
 
-2.  In **Impostazioni nome computer, dominio e gruppo**di lavoro fare clic su **Cambia impostazioni**.
+2.  In **Impostazioni relative a nome computer, dominio e gruppo di lavoro** fare clic su **Cambia impostazioni**.
 
-3.  Nella scheda **nome computer** fare clic su **Cambia**.
+3.  Nella scheda **Nome computer** fare clic su **Cambia**.
 
-4.  In **nome computer/Domain Changes**fare clic su **altro**.
+4.  In **Cambiamenti dominio/nome computer** fare clic su **Altro**.
 
-5.  In **suffisso DNS e nome computer NetBIOS**, in **suffisso DNS primario del computer**, digitare il nome del dominio interno, ad esempio Corp.contoso.com, e quindi fare clic su **OK** tre volte.
+5.  In **Suffisso DNS e nome NetBIOS del computer** digitare il nome del dominio interno (ad esempio corp.contoso.com) in **Suffisso DNS primario del computer** e quindi fare clic su **OK** tre volte.
 
 6.  Riavviare il computer.
 
@@ -73,38 +73,38 @@ Usare le procedure seguenti in "**per creare un record SRV DNS**" per creare e v
 
 ## <a name="to-create-a-dns-srv-record"></a>Per creare un record SRV DNS
 
-1.  Nel server DNS appropriato fare clic sul pulsante **Start**, scegliere **Pannello di controllo**, strumenti di **Amministrazione**e quindi fare clic su **DNS**.
+1.  Nel server DNS appropriato fare clic sul pulsante **Start**, scegliere **Pannello di controllo**, **Strumenti di amministrazione** e quindi **DNS**.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > È necessario configurare il DNS in modo che siano presenti: 1) voci DNS esterne per le ricerche DNS esterne da parte di utenti remoti e partner federati; 2) le voci per le ricerche DNS per l'uso da parte di Edge Server all'interno della rete perimetrale (nota anche come DMZ, zona demilitarizzata e subnet schermata), inclusi i record per i server interni che usano Lync Server 2013; e 3) voci DNS interne per le ricerche dei client e dei server interni che utilizzano Lync Server 2013.
+    > È necessario configurare DNS in modo che vi siano: 1) voci DNS esterne per le ricerche DNS esterne da parte degli utenti remoti e dei partner federati; 2) le voci per le ricerche DNS per l'utilizzo da parte dei server perimetrali all'interno della rete (noto anche come DMZ, area demilitarizzata e subnet schermata), inclusi i record per i server interni che eseguono Lync Server 2013; e 3) le voci DNS interne per le ricerche eseguite dai client e dai server interni che eseguono Lync Server 2013.
 
     
     </div>
 
-2.  Nell'albero della console per il dominio SIP espandere **aree di ricerca in avanti**e quindi fare clic con il pulsante destro del mouse sul dominio in cui è installato Lync Server 2013.
+2.  Nell'albero della console per il dominio SIP espandere **zone di ricerca diretta**e quindi fare clic con il pulsante destro del mouse sul dominio in cui è installato Lync Server 2013.
 
-3.  Fare clic su **altri nuovi record**.
+3.  Scegliere **Altri nuovi record**.
 
-4.  In **selezionare un tipo di record di risorse**digitare **posizione servizio (SRV)** e quindi fare clic su **Crea record**.
+4.  In **Selezionare tipo di record di risorsa** digitare **Posizione servizio (SRV)** e quindi su fare clic su **Crea record**.
 
-5.  Fornisci tutte le informazioni necessarie per il record SRV DNS.
+5.  Specificare tutte le informazioni necessarie per il record SRV DNS.
 
 </div>
 
 <div>
 
-## <a name="to-create-a-dns-a-record"></a>Per creare un record DNS
+## <a name="to-create-a-dns-a-record"></a>Per creare un record A DNS
 
-1.  Nel server DNS fare clic sul pulsante **Start**, scegliere **Pannello di controllo**, strumenti di **Amministrazione**e quindi fare clic su **DNS**.
+1.  Nel server DNS fare clic sul pulsante **Start**, scegliere **Pannello di controllo**, **Strumenti di amministrazione** e quindi **DNS**.
 
-2.  Nell'albero della console per il dominio SIP espandere **aree di ricerca in avanti**e quindi fare clic con il pulsante destro del mouse sul dominio in cui è installato Lync Server 2013.
+2.  Nell'albero della console per il dominio SIP espandere **zone di ricerca diretta**e quindi fare clic con il pulsante destro del mouse sul dominio in cui è installato Lync Server 2013.
 
-3.  Fare clic su **nuovo host (A)**.
+3.  Scegliere **Nuovo host (A o AAAA)**.
 
-4.  Fornisci tutte le informazioni necessarie per il record SRV DNS.
+4.  Specificare tutte le informazioni necessarie per il record SRV DNS.
 
 </div>
 
@@ -114,13 +114,13 @@ Usare le procedure seguenti in "**per creare un record SRV DNS**" per creare e v
 
 1.  Accedere a un computer client nel dominio.
 
-2.  Fare clic sul pulsante **Start**e quindi su **Esegui**.
+2.  Fare clic sul pulsante **Start** e quindi scegliere **Esegui**.
 
 3.  Al prompt dei comandi eseguire il comando seguente:
     
         nslookup <FQDN edge interface>
 
-4.  Verificare di ricevere una risposta che venga risolta nell'indirizzo IP appropriato per il nome di dominio completo.
+4.  Verificare che la risposta ricevuta venga risolta nell'indirizzo IP appropriato per l'FQDN.
 
 </div>
 
@@ -129,10 +129,10 @@ Usare le procedure seguenti in "**per creare un record SRV DNS**" per creare e v
 ## <a name="see-also"></a>Vedere anche
 
 
-[Creare un Record DNS SRV per l'integrazione con la messaggistica unificata di Exchange ospitata](lync-server-2013-create-a-dns-srv-record-for-integration-with-hosted-exchange-um.md)  
+[Creare un record DNS SRV per l'integrazione con la messaggistica unificata di Exchange ospitata](lync-server-2013-create-a-dns-srv-record-for-integration-with-hosted-exchange-um.md)  
 
 
-[Determinare i requisiti di DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md)  
+[Determinare i requisiti DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md)  
   
 
 </div>

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurazione di collegamenti ai siti di rete'
+title: 'Lync Server 2013: configurazione di collegamenti di sito di rete'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184622
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e379a8195dd0a50d97a514307ac594908be4736c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: face7287ecf65a75e335b63f0a657c4534891277
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763480"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030509"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-network-site-links-in-lync-server-2013"></a>Configurazione di collegamenti ai siti di rete in Lync Server 2013
+# <a name="configuring-network-site-links-in-lync-server-2013"></a>Configurazione di collegamenti di sito di rete in Lync Server 2013
 
 </div>
 
@@ -35,57 +35,57 @@ ms.locfileid: "41763480"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-All'interno di una configurazione di controllo di ammissione chiamata (CAC), è possibile creare criteri intersito di rete che definiscono le limitazioni della larghezza di banda tra i siti direttamente collegati. Quando i siti di rete condividono un collegamento diretto, è possibile definire limitazioni della larghezza di banda per le connessioni audio e video tra questi due siti. Non è possibile usare il pannello di controllo di Lync Server per configurare i criteri del sito di rete, questo può essere eseguito solo usando i cmdlet di Lync Server Management Shell. È possibile creare, modificare e rimuovere un collegamento al sito di rete (noto anche come criterio intersito di rete) da Lync Server Management Shell.
+In una configurazione di controllo di ammissione di chiamata è possibile creare criteri intersito di rete che definiscono le limitazioni della larghezza di banda tra i siti collegati direttamente. Se due siti di rete condividono un collegamento diretto, è possibile definire dei limiti della larghezza di banda per le connessioni audio e video tra tali siti. Non è possibile utilizzare il pannello di controllo di Lync Server per configurare i criteri sito di rete, è possibile eseguire questa operazione solo utilizzando i cmdlet di Lync Server Management Shell. È possibile creare, modificare e rimuovere un collegamento di sito di rete (noto anche come criterio tra siti di rete) da Lync Server Management Shell.
 
 <div>
 
-## <a name="to-create-a-network-site-link"></a>Per creare un collegamento al sito di rete
+## <a name="to-create-a-network-site-link"></a>Per creare un collegamento di sito di rete
 
-1.  Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di [configurazione delegate in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in [delegate Setup Permissions in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Dal prompt dei comandi digitare il comando seguente, sostituendo i valori validi per la configurazione:
+3.  Al prompt dei comandi digitare il comando seguente, utilizzando valori validi per la configurazione in uso:
     
         New-CsNetworkInterSitePolicy -Identity Reno_Portland -NetworkSiteID1 Reno -NetworkSiteID2 Portland -BWPolicyProfileID LowBWLimits
     
-    Questo esempio crea un nuovo collegamento di sito di rete\_denominato Reno Portland che imposta le limitazioni della larghezza di banda tra i siti di rete Reno e Portland. I siti di rete e il profilo dei criteri di larghezza di banda devono già esistere prima di eseguire questo comando.
+    In questo esempio viene creato un nuovo collegamento di sito\_di rete denominato Reno Portland che imposta le limitazioni della larghezza di banda tra i siti di rete Reno e Portland. Il profilo dei criteri di larghezza di banda e siti di rete deve essere già presente prima dell'esecuzione di questo comando.
 
-Per una descrizione dettagliata dei parametri, vedere [New-CsNetworkInterSitePolicy](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkInterSitePolicy) nella documentazione di Lync Server Management Shell. Per recuperare un elenco di profili dei criteri di larghezza di banda che possono essere applicati al collegamento al sito di rete, chiama il cmdlet **Get-CsNetworkBandwidthPolicyProfile** . Per informazioni dettagliate, vedere [Get-CsNetworkBandwidthPolicyProfile](https://docs.microsoft.com/powershell/module/skype/Get-CsNetworkBandwidthPolicyProfile) nella documentazione di Lync Server Management Shell.
+Per le descrizioni dettagliate dei parametri, vedere [New-CsNetworkInterSitePolicy](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkInterSitePolicy) nella documentazione di Lync Server Management Shell. Per ottenere un elenco dei profili dei criteri di larghezza di banda che è possibile applicare al collegamento di sito di rete, chiamare il cmdlet **Get-CsNetworkBandwidthPolicyProfile**. Per informazioni dettagliate, vedere [Get-CsNetworkBandwidthPolicyProfile](https://docs.microsoft.com/powershell/module/skype/Get-CsNetworkBandwidthPolicyProfile) nella documentazione di Lync Server Management Shell.
 
 </div>
 
 <div>
 
-## <a name="to-modify-a-network-site-link"></a>Per modificare un collegamento al sito di rete
+## <a name="to-modify-a-network-site-link"></a>Per modificare un collegamento di sito di rete
 
-1.  Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di [configurazione delegate in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in [delegate Setup Permissions in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Utilizzare il cmdlet **set-CsNetworkInterSitePolicy** per modificare le proprietà di un collegamento al sito di rete specifico. È possibile modificare uno o entrambi i siti connessi e modificare il profilo dei criteri di larghezza di banda associato al collegamento. Ecco un esempio di modifica del profilo dei criteri di larghezza di banda di un collegamento\_di sito denominato Reno Portland:
+3.  Utilizzare il cmdlet **CsNetworkInterSitePolicy Set** per modificare le proprietà di un collegamento di sito di rete specifico. È possibile modificare uno dei siti connessi o entrambi ed è possibile modificare il profilo dei criteri di larghezza di banda associato al collegamento. Di seguito è riportato un esempio di modifica del profilo dei criteri di larghezza di banda\_di un collegamento di sito denominato Reno Portland:
     
         Set-CsNetworkInterSitePolicy -Identity Reno_Portland -BWPolicyProfileID HighBWLimits
 
-Per una descrizione dettagliata dei parametri, vedere [set-CsNetworkInterSitePolicy](https://docs.microsoft.com/powershell/module/skype/Set-CsNetworkInterSitePolicy) nella documentazione di Lync Server Management Shell.
+Per le descrizioni dettagliate dei parametri, vedere [set-CsNetworkInterSitePolicy](https://docs.microsoft.com/powershell/module/skype/Set-CsNetworkInterSitePolicy) nella documentazione di Lync Server Management Shell.
 
 </div>
 
 <div>
 
-## <a name="to-delete-a-network-site-link"></a>Per eliminare un collegamento al sito di rete
+## <a name="to-delete-a-network-site-link"></a>Per eliminare un collegamento di sito di rete
 
-1.  Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di [configurazione delegate in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in [delegate Setup Permissions in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Utilizzare il cmdlet **Remove-CsNetworkInterSitePolicy** per rimuovere un collegamento al sito di rete. L'esempio seguente elimina il collegamento\_al sito network di Reno Portland:
+3.  Utilizzare il cmdlet **Remove-CsNetworkInterSitePolicy** per rimuovere un collegamento di sito di rete. Nell'esempio seguente viene eliminato il\_collegamento al sito di rete di Reno Portland:
     
         Remove-CsNetworkInterSitePolicy -Identity Reno_Portland
 
-Per una descrizione dettagliata dei parametri, vedere [Remove-CsNetworkInterSitePolicy](https://docs.microsoft.com/powershell/module/skype/Remove-CsNetworkInterSitePolicy) nella documentazione di Lync Server Management Shell.
+Per le descrizioni dettagliate dei parametri, vedere [Remove-CsNetworkInterSitePolicy](https://docs.microsoft.com/powershell/module/skype/Remove-CsNetworkInterSitePolicy) nella documentazione di Lync Server Management Shell.
 
 </div>
 
@@ -94,7 +94,7 @@ Per una descrizione dettagliata dei parametri, vedere [Remove-CsNetworkInterSite
 ## <a name="see-also"></a>Vedere anche
 
 
-[Cmdlet di controllo dell'ammissione alle chiamate in Lync Server 2013](https://docs.microsoft.com/powershell/module/skype/)  
+[Cmdlet per il controllo di ammissione di chiamata in Lync Server 2013](https://docs.microsoft.com/powershell/module/skype/)  
 
 
 [New-CsNetworkInterSitePolicy](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkInterSitePolicy)  

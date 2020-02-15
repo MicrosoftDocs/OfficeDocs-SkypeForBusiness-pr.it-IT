@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare le chat room'
+title: 'Lync Server 2013: configurare le chat room'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184750
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 06fea4fcda27eaedd671d833a4f53ed0ddec67c6
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 0d6d5fabe5b465fd2ecab3cfee7474aa64160210
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730032"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035248"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,31 +35,31 @@ ms.locfileid: "41730032"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-06_
+_**Ultimo argomento modificato:** 2012-10-06_
 
-La configurazione delle chat room permanenti viene comunemente gestita dagli utenti o da altri team centrali usando l'interfaccia della riga di comando di Windows PowerShell; un amministratore in genere non gestisce le chat room. Tuttavia, se è necessario creare e gestire chat room, è possibile usare l'interfaccia della riga di comando di Windows PowerShell oppure aggiungersi come membro di una chat room e usare il client Lync 2013.
+La configurazione delle chat room permanenti è in genere gestita dagli utenti o da altri team centrali tramite l'interfaccia della riga di comando di Windows PowerShell. un amministratore in genere non gestisce le chat room. Tuttavia, se è necessario creare e gestire le chat room, è possibile utilizzare l'interfaccia della riga di comando di Windows PowerShell oppure aggiungere se stessi come membri di una chat room e utilizzare il client Lync 2013.
 
-Per informazioni dettagliate sulla configurazione delle chat room tramite l'interfaccia della riga di comando di Windows PowerShell, vedere "gestione sala" nella [configurazione del server di chat persistente usando i cmdlet di Windows PowerShell](configuring-persistent-chat-server-by-using-windows-powershell-cmdlets.md).
+Per informazioni dettagliate sulla configurazione delle chat room tramite l'interfaccia della riga di comando di Windows PowerShell, vedere la sezione "gestione sala" in [configurazione del server Chat persistente tramite i cmdlet di Windows PowerShell](configuring-persistent-chat-server-by-using-windows-powershell-cmdlets.md).
 
 <div>
 
 ## <a name="managing-data-in-chat-rooms"></a>Gestione dei dati nelle chat room
 
-Il server di chat persistente consente agli utenti di collaborare pubblicando messaggi in chat room permanenti. I dati vengono mantenuti nel server e i membri della sala possono avere accesso ai dati, inclusi i dati cronologici. Tuttavia, gli utenti con ruoli diversi hanno accesso diverso ai dati persistenti, come illustrato nell'elenco seguente.
+Il server Chat persistente consente agli utenti di collaborare inviando messaggi nelle chat room permanenti. I dati restano sul server, e i membri della chat room possono accedere ai dati, compresi quelli della cronologia. Tuttavia, utenti con ruoli diversi avranno un tipo di accesso diverso ai dati sul server, come illustrato nell'elenco di seguito.
 
-  - Gli amministratori possono eliminare il contenuto precedente, ad esempio il contenuto postato prima di una determinata data, da qualsiasi chat room per evitare che il database cresca troppo grande. In alternativa, è possibile rimuovere o sostituire i messaggi considerati inappropriati per una particolare chat room.
+  - Gli amministratori possono eliminare dalla chat room il contenuto meno recente, ad esempio il contenuto pubblicato prima di una certa data, affinché il database non raggiunga dimensioni troppo elevate. Possono inoltre eliminare o spostare messaggi considerati inappropriati per una particolare chat room.
 
-  - Gli utenti finali, inclusi gli autori dei messaggi, non possono eliminare il contenuto da qualsiasi chat room.
+  - Gli utenti finali, compresi gli autori dei messaggi, non possono eliminare il contenuto da una chat room.
 
-  - I responsabili delle chat room possono disabilitare le camere, ma non possono eliminare le camere. Solo gli amministratori possono eliminare una chat room dopo che è stata creata.
+  - I gestori di chat room possono disattivare le chat room, ma non eliminarle. Solo gli amministratori possono eliminare una chat room dopo che è stata creata.
 
-Quando un messaggio viene eliminato, non è possibile annullare l'azione. Tuttavia, i messaggi eliminati possono essere ripristinati se è presente un backup. Se è abilitato un server di conformità della chat persistente, i vecchi messaggi vengono mantenuti nel database di conformità.
+Dopo avere eliminato un messaggio, non è possibile annullare l'operazione. Tuttavia, se esiste un backup, è possibile ripristinare i messaggi eliminati. Se un server di conformità di Persistent Chat è abilitato, i messaggi obsoleti vengono salvati nel database di conformità.
 
 <div>
 
 
 > [!NOTE]  
-> L'utilizzo dei dati delle chat room si applica a Lync Server 2013, l'applicazione API del server di chat persistente, fatta eccezione per il caso in cui è coinvolto il ruolo di amministratore. Non è possibile usare l'API del server di chat persistente per eseguire le operazioni dell'amministratore. È necessario eseguire queste operazioni in Lync Server Management Shell.
+> L'utilizzo di questo tipo di dati della chat room si applica all'applicazione API del server di chat persistente di Lync Server 2013, ad eccezione del caso in cui è coinvolto il ruolo di amministratore. L'API del server Chat persistente non può essere utilizzata per eseguire le operazioni dell'amministratore. È necessario eseguire queste operazioni in Lync Server Management Shell.
 
 
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 51803945
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 56d594f0bf6e393545f4a7c29785b5f66b328bdc
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 03bd3cfa6099d45cbad2d15ed164652756f50f5e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758100"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035404"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41758100"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-10-02_
+_**Ultimo argomento modificato:** 2013-10-02_
 
-Per creare un oggetto sala conferenze, crea prima di tutto un account utente di Active Directory per rappresentare il dispositivo. USA quindi il cmdlet **Enable-CsMeetingRoom** per abilitare l'account come dispositivo per i servizi di conferenza. Se è necessario modificare le proprietà di un dispositivo di conferenza esistente, usare il cmdlet **set-CsMeetingRoom** .
+Per creare un oggetto sala conferenze, creare innanzitutto un account utente di Active Directory per rappresentare il dispositivo. Utilizzare quindi il cmdlet **Enable-CsMeetingRoom** per consentire a tale account di funzionare come dispositivo per i servizi di conferenza. Se è necessario modificare le proprietà di un dispositivo per i servizi di conferenza esistente, utilizzare il cmdlet **set-CsMeetingRoom** .
 
 Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.
 
@@ -45,7 +45,7 @@ Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da 
 
 
 > [!NOTE]  
-> Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft <A href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</A>Lync Server 2010 con Remote PowerShell" at.
+> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync <A href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</A>Server 2010 using Remote PowerShell" at.
 
 
 
@@ -56,9 +56,9 @@ Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da 
 
 <div>
 
-## <a name="creating-a-conferencing-device"></a>Creazione di un dispositivo per i servizi di conferenza
+## <a name="creating-a-conferencing-device"></a>Creazione di un dispositivo per conferenze
 
-  - Dopo aver creato l'account utente di Active Directory che rappresenta il nuovo dispositivo per i servizi di conferenza, abilitarlo usando il cmdlet **Enable-CsMeetingRoom** . Assicurati di includere un) l'identità del dispositivo di conferenza, b) il pool di registrar in cui verrà assegnato l'account della sala e c) l'indirizzo SIP da assegnare all'account. Ad esempio:
+  - Dopo aver creato l'account utente di Active Directory che rappresenta il nuovo dispositivo per conferenze, abilitarlo utilizzando il cmdlet **Enable-CsMeetingRoom** . Assicurarsi di includere a) l'identità del dispositivo per i servizi di conferenza, b) il pool di registrazione in cui verrà ospitata l'account della sala e c) l'indirizzo SIP da assegnare a quell'account. Ad esempio:
     
         Enable-CsMeetingRoom -Identity "Redmond Conferencing device" -RegistrarPool "atl-cs-001.litwareinc.com" -SipAddress "sip:RedmondMeetingRoom@litwareinc.com"
 
@@ -68,13 +68,13 @@ Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da 
 
 ## <a name="modifying-a-conferencing-device"></a>Modifica di un dispositivo per conferenze
 
-  - Per modificare i valori delle proprietà di un dispositivo di conferenza esistente, usare il cmdlet **set-CsMeetingRoom** . Ad esempio, il comando seguente aggiorna il numero di telefono (LineUri) associato a un dispositivo per i servizi di conferenza:
+  - Per modificare i valori delle proprietà di un dispositivo per i servizi di conferenza esistente, utilizzare il cmdlet **set-CsMeetingRoom** . Ad esempio, il seguente comando Aggiorna il numero di telefono (LineUri) associato a un dispositivo per conferenze:
     
         Set-CsMeetingRoom -Identity "Redmond Conferencing device" -LineUri "tel:+12065551219"
 
 </div>
 
-Per informazioni dettagliate, vedere gli argomenti della Guida relativi al cmdlet [Enable-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Enable-CsMeetingRoom) e al cmdlet [set-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Set-CsMeetingRoom) .
+Per informazioni dettagliate, vedere gli argomenti della Guida per il cmdlet [Enable-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Enable-CsMeetingRoom) e il cmdlet [set-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Set-CsMeetingRoom) .
 
 </div>
 

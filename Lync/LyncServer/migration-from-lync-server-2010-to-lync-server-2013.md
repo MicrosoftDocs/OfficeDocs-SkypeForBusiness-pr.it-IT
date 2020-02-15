@@ -12,16 +12,16 @@ ms:contentKeyID: 48185779
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0c32d2679d4f31863e389735efb6660ea670b959
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2cab7ac790d08a848cb90a609720c237c4c20062
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41727726"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035932"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,63 +35,63 @@ ms.locfileid: "41727726"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-17_
+_**Ultimo argomento modificato:** 2012-09-17_
 
-Negli argomenti di questa sezione viene illustrata la procedura di migrazione da Lync Server 2010 a Lync Server 2013.
+Negli argomenti di questa sezione viene illustrato il processo di migrazione da Lync Server 2010 a Lync Server 2013.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Questo documento descrive i passaggi in genere necessari per completare ogni fase della migrazione. Non affronta tutte le possibili topologie di distribuzione legacy o ogni possibile scenario di migrazione. Di conseguenza, potrebbe non essere necessario eseguire ogni passaggio descritto oppure potrebbe essere necessario eseguire passaggi aggiuntivi, a seconda della distribuzione. Questo documento offre anche esempi di passaggi di verifica. Questi passaggi di verifica vengono forniti per aiutarti a capire cosa è necessario cercare per verificare che ogni fase venga completata correttamente durante la migrazione. Adattare questi passaggi di verifica al processo di migrazione specifico.
+> Questo documento descrive i passaggi normalmente necessari per eseguire ogni fase della migrazione. Non sono descritti tutti gli scenari di migrazione o tutte le topologie di distribuzione legacy possibili. Per questi motivi, potrebbe non essere necessario eseguire tutti i passaggi descritti oppure potrebbero servirne altri, a seconda della distribuzione. Nel documento sono inoltre disponibili alcuni esempi dei passaggi di verifica, forniti allo scopo di illustrare quali aspetti ed elementi considerare per assicurarsi che ogni fase venga completata correttamente, man mano che si procede nella migrazione. Adattare tali passaggi di verifica allo specifico processo di migrazione.
 
 
 
 </div>
 
-Questa guida fornisce informazioni specifiche per l'aggiornamento della distribuzione esistente. Non spiega come cambiare la topologia esistente. Questa guida non riguarda l'implementazione delle nuove caratteristiche. Quando una procedura dettagliata è documentata in un'altra posizione, questa guida indica la sezione documento o documento appropriata.
+Questa guida include informazioni specifiche per l'aggiornamento della distribuzione esistente e non spiega come modificare la topologia esistente. Non viene descritta l'implementazione delle nuove caratteristiche. Se una procedura dettagliata è descritta altrove, in questa guida vengono forniti riferimenti al documento o alla sezione del documento appropriato.
 
-Questo documento definisce i termini specificati nell'elenco seguente.
+Nel documento vengono utilizzati termini specifici, con le definizioni seguenti.
 
   - *migrazione*  
-    Spostamento della distribuzione della produzione da una versione precedente di Lync Server 2010 a Lync Server 2013.
+    Spostamento della distribuzione di produzione da una versione precedente di Lync Server 2010 a Lync Server 2013.
 
 <!-- end list -->
 
   - *aggiornamento*  
-    Installazione di una versione più recente del software in un server o un computer client.
+    Installare una versione più recente del software in un computer server o client.
 
 <!-- end list -->
 
   - *coesistenza*  
-    Ambiente temporaneo che esiste durante la migrazione quando alcune funzionalità sono state migrate in Lync Server 2013 e altre funzionalità restano ancora in una versione precedente di Lync Server 2010.
+    Ambiente temporaneo esistente durante la migrazione, quando è stata eseguita la migrazione di alcune funzionalità a Lync Server 2013 e altre funzionalità rimangono ancora in una versione precedente di Lync Server 2010.
 
 <!-- end list -->
 
   - *interoperabilità*  
-    La capacità della distribuzione di funzionare correttamente durante il periodo di coesistenza.
+    Capacità della distribuzione di operare in modo corretto durante il periodo di coesistenza.
 
 <div>
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-  - [Operazioni preliminari alla migrazione](before-you-begin-the-migration.md)
+  - [Prima di iniziare la migrazione](before-you-begin-the-migration.md)
 
   - [Fase 1: pianificare la migrazione da Lync Server 2010](phase-1-plan-your-migration-from-lync-server-2010.md)
 
-  - [Fase 2: preparare la migrazione](phase-2-prepare-for-migration.md)
+  - [Fase 2: preparazione per la migrazione](phase-2-prepare-for-migration.md)
 
-  - [Fase 3: distribuire Lync Server 2013 Pilot pool](phase-3-deploy-lync-server-2013-pilot-pool.md)
+  - [Fase 3: distribuire il pool pilota di Lync Server 2013](phase-3-deploy-lync-server-2013-pilot-pool.md)
 
-  - [Fase 4: trasferire gli utenti di test nel pool pilota](phase-4-move-test-users-to-the-pilot-pool.md)
+  - [Fase 4: spostare gli utenti di test nel pool pilota](phase-4-move-test-users-to-the-pilot-pool.md)
 
-  - [Fase 5: aggiungere Lync Server 2013 Edge Server al pool pilota](phase-5-add-lync-server-2013-edge-server-to-pilot-pool.md)
+  - [Fase 5: aggiungere il server perimetrale di Lync Server 2013 al pool pilota](phase-5-add-lync-server-2013-edge-server-to-pilot-pool.md)
 
   - [Fase 6: passare dalla distribuzione pilota alla produzione](phase-6-move-from-pilot-deployment-into-production.md)
 
   - [Fase 7: completare le attività successive alla migrazione](phase-7-complete-post-migration-tasks.md)
 
-  - [Fase 8: rimuovere le autorizzazioni dei pool legacy](phase-8-decommission-legacy-pools.md)
+  - [Fase 8: rimuovere i pool legacy](phase-8-decommission-legacy-pools.md)
 
 </div>
 

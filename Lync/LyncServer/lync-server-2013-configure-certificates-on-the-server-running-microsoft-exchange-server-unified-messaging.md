@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurare i certificati nel server in cui è in uso la messaggistica unificata di Microsoft Exchange Server'
+title: 'Lync Server 2013: configurare i certificati nel server che esegue la messaggistica unificata di Microsoft Exchange Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184521
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6d31ed8b750d0162a2c09d49ca8a350731896086
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f2885b3610c1edce441c6abbd93a2515fa6cb904
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739356"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028667"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-certificates-on-the-server-running-microsoft-exchange-server-unified-messaging"></a>Configurare i certificati nel server in cui è in uso la messaggistica unificata di Microsoft Exchange Server
+# <a name="configure-certificates-on-the-server-running-microsoft-exchange-server-unified-messaging"></a>Configurare i certificati nel server che esegue la messaggistica unificata di Microsoft Exchange Server
 
 </div>
 
@@ -35,52 +35,52 @@ ms.locfileid: "41739356"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-26_
+_**Ultimo argomento modificato:** 2012-09-26_
 
-Se è stata distribuita la messaggistica unificata di Exchange, come descritto in [pianificazione dell'integrazione della messaggistica unificata di Exchange in Lync server 2013](lync-server-2013-planning-for-exchange-unified-messaging-integration.md) nella documentazione relativa alla pianificazione e si desidera specificare le caratteristiche di messaggistica unificata di Exchange per gli utenti di VoIP aziendale nell'organizzazione, è possibile usare le procedure seguenti per configurare il certificato nel server che usa la messaggistica unificata di Exchange.
+Se la messaggistica unificata di Exchange è stata distribuita, come descritto in [pianificazione dell'integrazione della messaggistica unificata di Exchange in Lync Server 2013](lync-server-2013-planning-for-exchange-unified-messaging-integration.md) nella documentazione relativa alla pianificazione e si desidera fornire le funzionalità di messaggistica unificata di Exchange agli utenti di VoIP aziendale nell'organizzazione, è possibile utilizzare le procedure seguenti per configurare il certificato sul server che esegue la messaggistica unificata di Exchange.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Per i certificati interni, sia i server che esegue Lync Server 2013 che i server che esegue Microsoft Exchange devono avere certificati di autorità radice attendibili che sono mutuamente attendibili. L'autorità di certificazione (CA) può essere uguale o un'autorità di certificazione diversa, purché i server dispongano del certificato radice dell'autorità di certificazione registrato nell'archivio certificati dell'autorità radice attendibile.
+> Per i certificati interni, entrambi i server che eseguono Lync Server 2013 e i server che eseguono Microsoft Exchange devono disporre di certificati autorità radice attendibili che sono mutuamente attendibili. L'autorità di certificazione (CA) può essere la stessa o un'autorità di certificazione diversa, purché i server dispongano del certificato radice dell'autorità di certificazione registrata nell'archivio certificati dell'autorità radice attendibile.
 
 
 
 </div>
 
-Il server Exchange deve essere configurato con un certificato server per la connessione a Lync Server 2013:
+Il server di Exchange deve essere configurato con un certificato server per la connessione a Lync Server 2013:
 
-1.  Scaricare il certificato CA per il server Exchange.
+1.  Scaricare il certificato CA per Exchange Server.
 
-2.  Installare il certificato CA per il server Exchange.
+2.  Installare il certificato CA per Exchange Server.
 
-3.  Verificare che la CA si trovi nell'elenco delle autorità di certificazione radice attendibili del server Exchange.
+3.  Verificare che la CA sia inclusa nell'elenco delle CA radice attendibili di Exchange Server.
 
-4.  Creare una richiesta di certificato per il server Exchange e installare il certificato.
+4.  Creare una richiesta di certificato per Exchange Server e installare il certificato.
 
-5.  Assegnare il certificato per il server Exchange.
+5.  Assegnare il certificato per Exchange Server.
 
 <div>
 
 ## <a name="to-download-the-ca-certificate"></a>Per scaricare il certificato CA
 
-1.  Nel server che esegue la messaggistica unificata di Exchange fare clic sul pulsante **Start**, scegliere **esegui**, digitare **http://\<nome\>del server della CA emittente/certsrv**e quindi fare clic su **OK**.
+1.  Nel server che esegue la messaggistica unificata di Exchange, fare clic sul pulsante **Start**, scegliere **esegui**, digitare **\<http://\>nome del server CA emittente/certsrv**e quindi fare clic su **OK**.
 
-2.  In **selezionare un'attività**fare clic su **Scarica un certificato CA, una catena di certificati o un CRL**.
+2.  In **Selezionare un'attività** fare clic su **Scarica un certificato CA, la catena di certificati o un CRL**.
 
-3.  In **scaricare un certificato CA, una catena di certificati o un CRL**selezionare **metodo di codifica per base 64**e quindi fare clic su **Scarica certificato CA**.
+3.  In **Scarica un certificato CA, una catena di certificati o un CRL selezionare il** **metodo di codifica su base 64**e quindi fare clic su **Scarica certificato CA**.
     
     <div>
     
 
     > [!NOTE]  
-    > È anche possibile specificare la codifica DER (Distinguished Encoding Rules) in questo passaggio. Se si seleziona la codifica DER, il tipo di file nel passaggio successivo di questa procedura e nel passaggio 10 di <STRONG>per installare il certificato della CA</STRONG> è. p7b anziché. cer.
+    > È inoltre possibile specificare la codifica DER (Distinguished Encoding Rules) in questo passaggio. Se si seleziona la codifica DER, il tipo di file nel prossimo passaggio e nel passaggio 10 di <STRONG>Per installare il certificato CA</STRONG> è .p7b anziché .cer.
 
     
     </div>
 
-4.  Nella finestra di dialogo **Download file** fare clic su **Salva**e quindi salvare il file nel disco rigido nel server. In base alla codifica selezionata nel passaggio precedente, il file includerà un file con estensione cer o. p7b.
+4.  Nella finestra di dialogo **Download file** fare clic su **Salva** e quindi salvare il file nel disco rigido del server. Il file avrà estensione cer o p7b, a seconda della codifica selezionata nel passaggio precedente.
 
 </div>
 
@@ -88,41 +88,41 @@ Il server Exchange deve essere configurato con un certificato server per la conn
 
 ## <a name="to-install-the-ca-certificate"></a>Per installare il certificato CA
 
-1.  Nel server che esegue la messaggistica unificata di Exchange aprire Microsoft Management Console (MMC) facendo clic sul pulsante **Start**, scegliendo **Esegui**, digitando **MMC** nella casella **Apri** e quindi facendo clic su **OK**.
+1.  Nel server che esegue la messaggistica unificata di Exchange, aprire Microsoft Management Console (MMC) facendo clic sul pulsante **Start**, scegliendo **Esegui**, digitando **MMC** nella casella **Apri** e quindi facendo clic su **OK**.
 
-2.  Nel menu **file** fare clic su **Aggiungi/Rimuovi snap-in**e quindi fare clic su **Aggiungi**.
+2.  Scegliere **Aggiungi/Rimuovi snap-in** dal menu **File** e quindi fare clic su **Aggiungi**.
 
-3.  Nella casella **Add standalone snap-** in fare clic su **certificati**e quindi fare clic su **Aggiungi**.
+3.  Nella casella **Aggiungi snap-in autonomo** fare clic su **Certificati** e quindi su **Aggiungi**.
 
-4.  Nella finestra di dialogo di **snap-in certificato** fare clic su **account computer**e quindi su **Avanti**.
+4.  Nella finestra di dialogo **Snap-in certificati** fare clic su **Account del computer** e quindi su **Avanti**.
 
-5.  Nella finestra di dialogo **Seleziona computer** verificare che la casella di controllo computer **locale: (il computer in cui è in uso questa console)** sia selezionata e quindi fare clic su **fine**.
+5.  Nella finestra di dialogo **Seleziona computer** verificare che sia selezionata la casella di controllo computer **locale (il computer su cui è in esecuzione questa console)** e quindi fare clic su **fine**.
 
-6.  Fare clic su **Chiudi**e quindi su **OK**.
+6.  Fare clic su **Chiudi** e quindi su **OK**.
 
-7.  Nell'albero della console espandere **certificati (computer locale)**, espandere **autorità di certificazione radice attendibili**e quindi fare clic su **certificati**.
+7.  Nell'albero della console espandere **Certificati (computer locale)**, espandere **Autorità di certificazione radice attendibili** e quindi fare clic su **Certificati**.
 
-8.  Fare clic con il pulsante destro del mouse su **certificati**, scegliere **tutte le attività**e fare clic su **Importa**.
+8.  Fare clic con il pulsante destro del mouse su **Certificati**, scegliere **Tutte le attività** e quindi **Importa**.
 
 9.  Fare clic su **Avanti**.
 
-10. Fare clic su **Sfoglia** per individuare il file e quindi fare clic su **Avanti**. Il file includerà un'estensione cer o p7b, a seconda della codifica selezionata nel passaggio 3 di **per scaricare il certificato della CA**.
+10. Fare clic su **Sfoglia** per individuare il file e quindi fare clic su **Avanti**. Il file avrà estensione cer o p7b, a seconda della codifica selezionata nel passaggio 3 di **Per scaricare il certificato CA**.
 
-11. Fare clic su **Inserisci tutti i certificati nello Store seguente**.
+11. Fare clic su **Mettere tutti i certificati nel seguente archivio**.
 
-12. Fare clic su **Sfoglia**e quindi selezionare **autorità di certificazione radice attendibili**.
+12. Fare clic su **Sfoglia** e quindi selezionare **Autorità di certificazione radice attendibili**.
 
-13. Fare clic su **Avanti** per verificare le impostazioni e quindi fare clic su **fine**.
+13. Fare clic su **Avanti** per verificare le impostazioni e quindi fare clic su **Fine**.
 
 </div>
 
 <div>
 
-## <a name="to-verify-that-the-ca-is-in-the-list-of-trusted-root-cas"></a>Per verificare che la CA si trovi nell'elenco delle autorità di certificazione radice attendibili
+## <a name="to-verify-that-the-ca-is-in-the-list-of-trusted-root-cas"></a>Per verificare che la CA sia inclusa nell'elenco delle CA radice attendibili
 
-1.  Nel server che gestisce la messaggistica unificata di Exchange, in MMC Espandi **certificati (computer locale)**, Espandi **autorità di certificazione radice attendibili**e quindi fai clic su **certificati**.
+1.  Nel server che esegue la messaggistica unificata di Exchange, in MMC espandere **certificati (computer locale)**, espandere **autorità di certificazione radice attendibili**e quindi fare clic su **certificati**.
 
-2.  Nel riquadro dei dettagli verificare che la CA sia nell'elenco delle CA attendibili.
+2.  Nel riquadro dei dettagli verificare che la CA sia inclusa nell'elenco delle CA attendibili.
 
 </div>
 
@@ -130,7 +130,7 @@ Il server Exchange deve essere configurato con un certificato server per la conn
 
 ## <a name="to-configure-exchange-server-2013-um-with-lync-server"></a>Per configurare la messaggistica unificata di Exchange Server 2013 con Lync Server
 
-1.  Per informazioni dettagliate, vedere "integrare la messaggistica unificata di Exchange 2013 con Lync Server" nella [http://go.microsoft.com/fwlink/p/?LinkId=265372](http://go.microsoft.com/fwlink/p/?linkid=265372)documentazione di Exchange Server.
+1.  Per informazioni dettagliate, vedere la sezione relativa alla messaggistica unificata di Exchange 2013 con Lync Server nella [http://go.microsoft.com/fwlink/p/?LinkId=265372](http://go.microsoft.com/fwlink/p/?linkid=265372)documentazione di Exchange Server all'indirizzo.
 
 </div>
 
@@ -138,38 +138,38 @@ Il server Exchange deve essere configurato con un certificato server per la conn
 
 ## <a name="to-create-a-certificate-request-and-install-the-certificate-on-exchange-server-2007-sp1"></a>Per creare una richiesta di certificato e installare il certificato in Exchange Server 2007 (SP1)
 
-1.  Nel server che esegue la messaggistica unificata di Exchange fare clic sul pulsante **Start**, scegliere **Esegui**, digitare **\<http://** nome del server**\>** della CA emittente/certsrv e quindi fare clic su **OK**.
+1.  Nel server che esegue la messaggistica unificata di Exchange, fare clic sul pulsante **Start**, scegliere **Esegui**, digitare **\<http://** nome del server**\>** CA emittente/certsrv e quindi fare clic su **OK**.
 
-2.  In **Seleziona un'attività**fare clic su **Richiedi un certificato**.
+2.  In **Selezionare un'attività** fare clic su **Richiedi un certificato**.
 
-3.  In **Richiedi un certificato**fare clic su **richiesta di certificato avanzata**.
+3.  In **Richiedi un certificato** fare clic su **Richiesta avanzata di certificati**.
 
-4.  In **richiesta di certificato avanzato**fare clic su **Crea e inviare una richiesta alla CA**.
+4.  In **Richiesta avanzata certificati** fare clic su **Creare e inviare una richiesta a questa CA**.
 
-5.  In **richiesta di certificato avanzato**selezionare **server Web** o un altro modello di certificato server configurato per l'autenticazione del server.
+5.  In **Richiesta avanzata di certificati** selezionare **Server Web** o un altro modello di certificato server configurato per l'autenticazione server.
 
-6.  In **informazioni di identificazione per il modello offline**Digitare il nome di dominio completo (FQDN) del server Exchange nella casella **nome** .
+6.  In **informazioni di identificazione per modello**non in linea, nella casella **nome** digitare il nome di dominio completo (FQDN) del server Exchange.
     
     <div>
     
 
     > [!NOTE]  
-    > È necessario immettere il nome di dominio completo del server Exchange per le comunicazioni per il lavoro.
+    > È necessario immettere l'FQDN di Exchange Server per garantire il funzionamento delle comunicazioni.
 
     
     </div>
 
-7.  In **Opzioni chiave**fare clic sulla casella di controllo Archivia **certificato nell'archivio certificati del computer locale** .
+7.  In **Opzioni chiave** selezionare la casella di controllo **Archivia certificato nell'archivio certificati del computer locale**.
 
 8.  Fare clic sul pulsante **Invia** nella parte inferiore della pagina Web.
 
-9.  Nella finestra di dialogo che apre la richiesta di conferma fare clic su **Sì**.
+9.  Nella finestra di dialogo visualizzata in cui viene richiesto di confermare l'operazione, fare clic su **Sì**.
 
-10. Nella pagina certificato rilasciato, in **certificato emesso**, fare clic su **installa questo certificato**.
+10. Nella pagina Certificato emesso fare clic su **Installa questo certificato** in **Certificato emesso**.
 
-11. Nella finestra di dialogo che apre la richiesta di conferma fare clic su **Sì**.
+11. Nella finestra di dialogo visualizzata in cui viene richiesto di confermare l'operazione, fare clic su **Sì**.
 
-12. Verificare che venga visualizzato il messaggio "il nuovo certificato è stato installato correttamente".
+12. Verificare che venga visualizzato il messaggio indicante il completamento dell'installazione del nuovo certificato.
 
 </div>
 
@@ -177,19 +177,19 @@ Il server Exchange deve essere configurato con un certificato server per la conn
 
 ## <a name="to-create-a-certificate-on-exchange-server-2010"></a>Per creare un certificato in Exchange Server 2010
 
-1.  Accedere al server che gestisce la messaggistica unificata di Exchange con i diritti utente appropriati. Per informazioni dettagliate, vedere "autorizzazioni di [http://go.microsoft.com/fwlink/p/?linkId=195499](http://go.microsoft.com/fwlink/p/?linkid=195499)accesso client".
+1.  Accedere al server che esegue la messaggistica unificata di Exchange con diritti utente adeguati. Per informazioni dettagliate, vedere "autorizzazioni di accesso client [http://go.microsoft.com/fwlink/p/?linkId=195499](http://go.microsoft.com/fwlink/p/?linkid=195499)" all'indirizzo.
 
-2.  Per creare il certificato, vedere le procedure seguenti:
+2.  Per creare il certificato, fare riferimento alle procedure seguenti:
     
-    1.  "Creare un nuovo certificato di Exchange" in[http://go.microsoft.com/fwlink/p/?linkId=195494](http://go.microsoft.com/fwlink/p/?linkid=195494)
+    1.  "Creare un nuovo certificato di Exchange" all'indirizzo[http://go.microsoft.com/fwlink/p/?linkId=195494](http://go.microsoft.com/fwlink/p/?linkid=195494)
     
-    2.  "Importare un certificato di Exchange" in[http://go.microsoft.com/fwlink/p/?linkId=195496](http://go.microsoft.com/fwlink/p/?linkid=195496)
+    2.  "Importazione di un certificato di Exchange" all'indirizzo[http://go.microsoft.com/fwlink/p/?linkId=195496](http://go.microsoft.com/fwlink/p/?linkid=195496)
     
     <div>
     
 
     > [!NOTE]  
-    > Per il <STRONG>nome del soggetto</STRONG>del certificato, è necessario immettere l'FQDN del server Exchange per le comunicazioni per il lavoro.
+    > Per l'opzione <STRONG>Nome soggetto</STRONG> del certificato, è necessario immettere l'FQDN di Exchange Server per garantire il funzionamento delle comunicazioni.
 
     
     </div>
@@ -200,11 +200,11 @@ Il server Exchange deve essere configurato con un certificato server per la conn
 
 ## <a name="to-assign-the-certificate-on-exchange-server-2007-sp1"></a>Per assegnare il certificato in Exchange Server 2007 (SP1)
 
-1.  Nel server che gestisce la messaggistica unificata di Exchange aprire MMC.
+1.  Nel server che esegue la messaggistica unificata di Exchange, aprire MMC.
 
-2.  Nell'albero della console espandere **Personal** e quindi fare clic su **certificati**.
+2.  Nell'albero della console espandere **Personale** e quindi fare clic su **Certificati**.
 
-3.  Nel riquadro dei dettagli verificare che venga visualizzato il certificato personale.
+3.  Nel riquadro dei dettagli verificare che il certificato personale sia visualizzato.
 
 4.  Fare doppio clic sul certificato per leggere i dettagli e verificare che sia valido.
     
@@ -212,7 +212,7 @@ Il server Exchange deve essere configurato con un certificato server per la conn
     
 
     > [!NOTE]  
-    > Potrebbe essere necessario attendere alcuni minuti prima che il certificato venga visualizzato come valido.
+    > Prima che il certificato venga visualizzato come valido potrebbero essere necessari alcuni minuti.
 
     
     </div>
@@ -223,12 +223,12 @@ Il server Exchange deve essere configurato con un certificato server per la conn
     
 
     > [!NOTE]  
-    > Il server che gestisce la messaggistica unificata di Exchange Server 2007 SP1 recupera automaticamente il certificato corretto.
+    > Il certificato corretto viene automaticamente recuperato dal server che esegue la messaggistica unificata di Exchange Server 2007 SP1.
 
     
     </div>
 
-6.  Aprire il Visualizzatore eventi e cercare l'ID evento 1112, che specifica quale certificato è stato recuperato dal server che ha eseguito la messaggistica unificata di Exchange Server 2007 SP1.
+6.  Aprire il Visualizzatore eventi e cercare l'ID evento 1112, che specifica il certificato recuperato dal server che esegue la messaggistica unificata di Exchange Server 2007 SP1.
 
 </div>
 
@@ -236,9 +236,9 @@ Il server Exchange deve essere configurato con un certificato server per la conn
 
 ## <a name="to-assign-the-certificate-on-exchange-server-2010"></a>Per assegnare il certificato in Exchange Server 2010
 
-1.  Accedere al server che gestisce la messaggistica unificata di Exchange con i diritti utente appropriati. Per informazioni dettagliate, vedere "autorizzazioni di [http://go.microsoft.com/fwlink/p/?linkId=195499](http://go.microsoft.com/fwlink/p/?linkid=195499)accesso client".
+1.  Accedere al server che esegue la messaggistica unificata di Exchange con diritti utente adeguati. Per informazioni dettagliate, vedere "autorizzazioni di accesso client [http://go.microsoft.com/fwlink/p/?linkId=195499](http://go.microsoft.com/fwlink/p/?linkid=195499)" all'indirizzo.
 
-2.  Per la procedura per l'assegnazione del certificato, vedere "assegnare servizi a un certificato" [http://go.microsoft.com/fwlink/p/?linkId=195497](http://go.microsoft.com/fwlink/p/?linkid=195497).
+2.  Per la procedura per assegnare il certificato, vedere la sezione "assegnare servizi a un certificato [http://go.microsoft.com/fwlink/p/?linkId=195497](http://go.microsoft.com/fwlink/p/?linkid=195497)" all'indirizzo.
 
 </div>
 

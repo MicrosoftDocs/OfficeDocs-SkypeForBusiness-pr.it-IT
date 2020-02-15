@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: creare o modificare un criterio di conferenza'
+title: 'Lync Server 2013: creare o modificare un criterio conferenza'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733844
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7f3dd712b94838382f6022de888383c0f47bee6e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7f5deeab8d2df55f4f2e91a1a90909a3550a3a56
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758090"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035328"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-conferencing-policy-in-lync-server-2013"></a>Creare o modificare criteri per i servizi di conferenza in Lync Server 2013
+# <a name="create-or-modify-a-conferencing-policy-in-lync-server-2013"></a>Creare o modificare criteri di conferenza in Lync Server 2013
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41758090"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-07_
+_**Ultimo argomento modificato:** 2013-02-07_
 
-Seguire questa procedura per creare criteri di conferenza a livello di utente o a livello di sito. Per informazioni dettagliate su come assegnare un criterio a livello di utente a un utente, vedere [assegnare criteri di conferenza per utente in Lync Server 2013](lync-server-2013-assign-a-per-user-conferencing-policy.md). Per un elenco di tutte le impostazioni dei criteri di conferenza disponibili, vedere informazioni di [riferimento sulle impostazioni per i criteri di conferenza per Lync Server 2013](lync-server-2013-conferencing-policy-settings-reference.md).
+Eseguire la procedura seguente per creare criteri di conferenza a livello di utente o di sito. Per informazioni dettagliate sull'assegnazione di un criterio a livello di utente a un utente, vedere [assegnazione di un criterio di conferenza per utente in Lync Server 2013](lync-server-2013-assign-a-per-user-conferencing-policy.md). Per un elenco di tutte le impostazioni disponibili per i criteri di conferenza, vedere informazioni di [riferimento sulle impostazioni dei criteri di conferenza per Lync Server 2013](lync-server-2013-conferencing-policy-settings-reference.md).
 
 <div>
 
-## <a name="to-create-a-new-user-or-site-policy"></a>Per creare un nuovo criterio per un utente o un sito
+## <a name="to-create-a-new-user-or-site-policy"></a>Per creare nuovi criteri a livello di utente o sito
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su servizi di **conferenza** e quindi su **criteri di conferenza**.
+3.  Nella barra di spostamento sinistra fare clic su **Servizio di conferenza** e quindi su **Criteri conferenza**.
 
-4.  Fare clic su **nuovo**e quindi eseguire una delle operazioni seguenti:
+4.  Fare clic su **Nuovo** e quindi eseguire una delle operazioni seguenti:
     
-      - Per creare un criterio a livello di utente, fare clic su **criteri utente**. In **nome**digitare un nome descrittivo per il criterio in **nuovi criteri di conferenza**.
+      - Per creare criteri a livello di utente, fare clic su **Criteri utente**. In **Nuovi criteri conferenza**, in **Nome** digitare un nome descrittivo per il criterio.
     
-      - Per creare un criterio a livello di sito, fare clic su **criteri sito**. Nel campo **Seleziona ricerca sito** digitare tutto o parte del nome del sito per cui si vuole creare un criterio. Nell'elenco dei siti fare clic sul sito desiderato e quindi fare clic su **OK**.
+      - Per creare criteri a livello di sito, fare clic su **Criteri sito**. Nel campo di ricerca **Seleziona un sito** digitare tutto o parte del nome dei sito per cui si desidera creare il criterio. Nell'elenco dei siti fare clic sul sito desiderato e quindi fare clic su **OK**.
         
         <div>
         
@@ -64,77 +64,77 @@ Seguire questa procedura per creare criteri di conferenza a livello di utente o 
         
         </div>
 
-5.  In **Descrizione**Digitare una descrizione per il criterio.
+5.  In **Descrizione** digitare una descrizione per il criterio.
 
-6.  In **Criteri organizzazione**, in **dimensioni massime riunione**, digitare il numero massimo di utenti che si vuole consentire a una riunione. Per impostazione predefinita, la dimensione massima della riunione è 250.
+6.  In **Criteri organizzatore**, in **Dimensione massima riunione** digitare il numero massimo di utenti consentiti in una riunione. Per impostazione predefinita, la dimensione massima della riunione è 250 utenti.
 
-7.  Per impedire agli utenti di invitare utenti anonimi alle riunioni, deselezionare la casella **di controllo Consenti ai partecipanti di invitare utenti anonimi** . Gli utenti anonimi sono utenti che non hanno credenziali nei servizi di dominio Active Directory dell'organizzazione e che, pertanto, non vengono autenticati. Per impostazione predefinita, gli utenti possono invitare utenti anonimi alle riunioni.
+7.  Per impedire ai partecipanti di invitare utenti anonimi alle riunioni, deselezionare la casella di controllo **Consenti ai partecipanti di invitare utenti anonimi**. Gli utenti anonimi sono utenti che non dispongono di credenziali nei servizi di dominio Active Directory dell'organizzazione e che, pertanto, non vengono autenticati. Per impostazione predefinita, l'invito di utenti anonimi alle riunioni è consentito.
 
-8.  In **registrazione**eseguire una delle operazioni seguenti:
+8.  In **Registrazione** eseguire una delle operazioni seguenti:
     
-      - Per impedire ai partecipanti di registrare riunioni, fare clic su **nessuno**. Questa è l'impostazione predefinita.
+      - Per impedire ai partecipanti di registrare le riunioni, fare clic su **Nessuno**. Questa è l'impostazione predefinita.
     
-      - Per consentire ai partecipanti di registrare riunioni, fare clic su **Abilita registrazione**.
+      - Per consentire ai partecipanti di registrare le riunioni, fare clic su ** Abilita registrazione**.
 
-9.  Per consentire ai partecipanti esterni di registrare le riunioni, selezionare la casella **di controllo Consenti ai partecipanti federati e anonimi di registrare** . Il valore predefinito è impedire ai partecipanti esterni di registrare riunioni.
+9.  Per consentire ai partecipanti esterni di registrare le riunioni, selezionare la casella di controllo **Consenti ai partecipanti anonimi e federati di registrare**. L'impostazione predefinita non consente ai partecipanti esterni di registrare le riunioni.
 
-10. In **audio/video**eseguire una delle operazioni seguenti:
+10. In **Audio/Video** eseguire una delle operazioni seguenti:
     
-      - Per evitare l'uso di audio e video, fare clic su **nessuno**.
+      - Per impedire l'utilizzo di audio e video, fare clic su **Nessuno**.
     
-      - Per consentire l'uso di audio ma non video, fare clic su **Abilita audio IP**.
+      - Per consentire l'utilizzo dell'audio, ma non del video, fare clic su **Abilita audio IP**.
     
-      - Per consentire l'uso di audio e video, fare clic su **Abilita audio/video IP**. Questa è l'impostazione predefinita.
+      - Per consentire l'utilizzo dell'audio e del video, fare clic su **Abilita audio/video IP**. Questa è l'impostazione predefinita.
 
-11. Se si è scelto di consentire l'uso di audio in **audio/video**, eseguire le operazioni seguenti:
+11. Se si sceglie di consentire l'utilizzo dell'audio in **Audio/Video**, eseguire le operazioni seguenti:
     
-      - Per impedire agli utenti di partecipare alla riunione effettuando la chiamata, deselezionare la casella di controllo **Abilita conferenza telefonica con accesso esterno PSTN** . Per impostazione predefinita, gli utenti possono eseguire la chiamata alle riunioni tramite la rete PSTN (Public Switched Telephone Network).
+      - Per impedire agli utenti di accedere alle riunioni tramite telefono, deselezionare la casella di controllo **Consenti conferenza telefonica con accesso esterno PSTN**. Per impostazione predefinita, gli utenti possono accedere alle riunioni utilizzando la rete PSTN.
     
-      - Se si consente agli utenti di accedere alle riunioni e si vuole consentire agli utenti non autenticati (anonimi) di partecipare a una riunione con chiamate in uscita, selezionare la casella **di controllo Consenti ai partecipanti anonimi di** effettuare la chiamata in uscita. Con la chiamata in uscita, il server della conferenza chiama l'utente e l'utente risponde al telefono per partecipare alla riunione. Per impostazione predefinita, gli utenti anonimi non possono partecipare a una riunione tramite chiamata in uscita.
+      - Se si consente agli utenti di accedere alle riunioni tramite telefono e si desidera consentire agli utenti non autenticati (anonimi) di accedere utilizzando chiamate in uscita, selezionare la casella di controllo **Consenti chiamate in uscita ai partecipanti anonimi**. Con le chiamate in uscita il server per conferenze telefona all'utente, il quale accederà alla riunione rispondendo al telefono. Per impostazione predefinita, gli utenti anonimi non possono accedere alle riunioni utilizzando chiamate in uscita.
 
-12. Se si è scelto di consentire l'uso di video in **audio/video**, selezionare **Consenti più flussi video** .
+12. Se si sceglie di consentire l'utilizzo del video in **Audio/Video** selezionare **Consenti più flussi video** .
 
-13. In **collaborazione con i dati**eseguire una delle operazioni seguenti:
+13. In **Collaborazione dati** eseguire una delle operazioni seguenti:
     
-      - Per impedire la collaborazione con i dati, fare clic su **nessuno**.
+      - Per impedire la collaborazione sui dati, fare clic su **Nessuno**.
     
-      - Per consentire la collaborazione con i dati, fare clic su **Abilita collaborazione dati**. Questa è l'impostazione predefinita.
+      - Per consentire la collaborazione sui dati, fare clic su **Abilita collaborazione dati**. Questa è l'impostazione predefinita.
 
-14. Se si è scelto di consentire la collaborazione ai dati in collaborazione con i **dati**, eseguire le operazioni seguenti:
+14. Se si è scelto di consentire la collaborazione sui dati in **Collaborazione dati**, eseguire le operazioni seguenti:
     
-      - Per impedire i download esterni, deselezionare la casella **di controllo Consenti ai partecipanti federati e anonimi di scaricare contenuto** . Per impostazione predefinita, gli utenti esterni possono scaricare contenuto.
+      - Per impedire i download esterni, deselezionare la casella di controllo **Consenti ai partecipanti anonimi e federati di scaricare contenuto**. Per impostazione predefinita, gli utenti esterni possono scaricare contenuto.
     
-      - Per impedire i trasferimenti di file, deselezionare la casella **di controllo Consenti ai partecipanti di trasferire file** . Per impostazione predefinita, gli utenti possono trasferire file.
+      - Per impedire i trasferimenti di file, deselezionare la casella di controllo **Consenti ai partecipanti di trasferire file**. Per impostazione predefinita, gli utenti possono trasferire file.
     
-      - Per evitare l'uso di annotazioni, deselezionare la casella di controllo **Abilita annotazioni** . Per l'uso delle annotazioni nelle presentazioni di PowerPoint frammentate, deselezionare l' **Abilitazione delle annotazioni di PowerPoint**. Per impostazione predefinita, le annotazioni sono consentite.
+      - Per impedire l'utilizzo delle annotazioni, deselezionare la casella di controllo **Consenti annotazioni**. Per utilizzare le annotazioni in presentazioni di PowerPoint condivise, deselezionare **Abilita annotazioni di PowerPoint**. Per impostazione predefinita, le annotazioni sono consentite.
     
-      - Per evitare l'uso dei sondaggi, deselezionare la casella di controllo **Abilita sondaggi** . Per impostazione predefinita, i sondaggi sono consentiti.
+      - Per impedire l'utilizzo dei sondaggi, deselezionare la casella di controllo **Consenti sondaggi**. Per impostazione predefinita, i sondaggi sono consentiti.
 
-15. In **condivisione applicazioni**eseguire una delle operazioni seguenti:
+15. In **Condivisione applicazioni** eseguire una delle operazioni seguenti:
     
-      - Per impedire l'uso della condivisione delle applicazioni, fare clic su **Disattiva condivisione applicazioni**.
+      - Per impedire l'utilizzo della condivisione applicazioni, fare clic su **Disabilita condivisione applicazioni**.
     
-      - Per consentire l'uso della condivisione delle applicazioni, fare clic su **Abilita condivisione applicazioni**. Questa è l'impostazione predefinita.
+      - Per consentire l'utilizzo della condivisione applicazioni, fare clic su **Abilita condivisione applicazioni**. Questa è l'impostazione predefinita.
 
-16. Se si è scelto di consentire la condivisione delle applicazioni nella **condivisione delle applicazioni**, eseguire le operazioni seguenti:
+16. Se si è scelto di consentire la condivisione applicazioni in **Condivisione applicazioni**, eseguire le operazioni seguenti:
     
-      - Per evitare che i partecipanti alla riunione prendano il controllo della condivisione delle applicazioni, deselezionare la casella **di controllo Consenti ai partecipanti di assumere controlli** . Per impostazione predefinita, i partecipanti possono assumere il controllo della condivisione delle applicazioni.
+      - Per impedire ai partecipanti della riunione di assumere il controllo della condivisione applicazioni, deselezionare la casella di controllo **Consenti ai partecipanti di assumere il controllo**. Per impostazione predefinita, i partecipanti possono assumere il controllo.
     
-      - Se si è scelto di consentire ai partecipanti alla riunione di assumere il controllo della condivisione delle applicazioni, selezionare la casella di controllo **Consenti ai partecipanti federati e anonimi di assumere controlli** per consentire agli utenti esterni di assumere il controllo della condivisione delle applicazioni. Per impostazione predefinita, gli utenti esterni non possono assumere il controllo della condivisione delle applicazioni.
+      - Se si è scelto di consentire ai partecipanti di assumere il controllo della condivisione applicazioni, selezionare la casella di controllo **Consenti ai partecipanti anonimi e federati di assumere il controllo** per consentire agli utenti esterni di assumere il controllo della condivisione applicazioni. Per impostazione predefinita, gli utenti esterni non possono assumere il controllo.
 
-17. In **criteri partecipante**eseguire una delle operazioni seguenti:
+17. In **Criteri partecipante** eseguire una delle operazioni seguenti:
     
-      - Per impedire sia la condivisione delle applicazioni che la condivisione desktop, fare clic su **Disattiva condivisione applicazioni e desktop**.
+      - Per impedire sia la condivisione applicazioni che la condivisione desktop, fare clic su **Disabilita condivisione applicazioni e desktop**.
     
-      - Per consentire la condivisione delle applicazioni, ma non la condivisione desktop, fare clic su **Abilita condivisione applicazioni**.
+      - Per consentire la condivisione applicazioni, ma non la condivisione desktop, fare clic su **Abilita condivisione applicazioni**.
     
-      - Per consentire la condivisione delle applicazioni e la condivisione desktop, fare clic su **Abilita condivisione applicazioni e desktop**. Questa è l'impostazione predefinita.
+      - Per consentire sia la condivisione applicazioni che la condivisione desktop, fare clic su **Abilita condivisione applicazioni e desktop**.
 
-18. Per impedire i trasferimenti di file peer-to-peer, deselezionare la casella di controllo **Consenti trasferimento file peer-to-** peer. Per impostazione predefinita, i trasferimenti di file peer-to-peer sono consentiti.
+18. Per impedire i trasferimenti di file peer-to-peer, deselezionare la casella di controllo **Consenti trasferimento di file tramite peer-to-peer**. Per impostazione predefinita, i trasferimenti di file peer-to-peer sono consentiti.
 
-19. Per consentire la registrazione peer-to-peer, selezionare la casella di controllo **Abilita registrazione peer-to-peer** . Per impostazione predefinita, la registrazione peer-to-peer non è consentita.
+19. Per consentire la registrazione peer-to-peer, selezionare la casella di controllo **Consenti registrazione peer-to-peer**. Per impostazione predefinita, la registrazione peer-to-peer non è consentita.
 
-20. Per consentire ai partecipanti di partecipare con più flussi video, selezionare la casella **di controllo Consenti ai partecipanti di partecipare con più flussi video** . Per impostazione predefinita, sono consentiti più flussi video.
+20. Per consentire ai partecipanti di partecipare con più flussi video, selezionare la casella di controllo **Consenti ai partecipanti di unirsi con più flussi video**. Per impostazione predefinita sono consentiti più flussi video.
 
 21. Fare clic su **Commit**.
 
@@ -142,17 +142,17 @@ Seguire questa procedura per creare criteri di conferenza a livello di utente o 
 
 <div>
 
-## <a name="to-modify-an-existing-user-or-site-policy"></a>Per modificare un criterio di un utente o di un sito esistente
+## <a name="to-modify-an-existing-user-or-site-policy"></a>Per modificare criteri utente o sito esistenti
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su servizi di **conferenza** e quindi su **criteri di conferenza**.
+3.  Sulla barra di spostamento sinistra fare clic su **Servizio di conferenza** e quindi su **Criteri conferenza**.
 
-4.  Nell'elenco dei criteri di conferenza fare clic sul criterio che si vuole modificare, fare clic su **modifica**e quindi su **Mostra dettagli**.
+4.  Nell'elenco dei criteri per conferenza fare clic sui criteri che si desidera modificare, fare clic su **Modifica ** e quindi su **Mostra dettagli**.
 
-5.  In **modifica criteri di conferenza**modificare le impostazioni dei criteri, ad eccezione del nome del criterio, che non può essere modificato.
+5.  In **Modifica criteri conferenza** modificare qualsiasi impostazione dei criteri ad eccezione del nome, che non può essere modificato.
 
 6.  Fare clic su **Commit**.
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 49733635
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8f89b40a7398f35efab418fac7be92536ec17270
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5a0d2e5cf6eaa6ed594e7f5fbbc5b1e6a4c9103a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762214"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036606"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,40 +35,40 @@ ms.locfileid: "41762214"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-Usare la procedura seguente per disabilitare VoIP aziendale per un account utente abilitato per Lync Server 2013.
+Utilizzare la procedura seguente per disabilitare VoIP aziendale per un account utente abilitato per Lync Server 2013.
 
 <div>
 
 ## <a name="to-disable-a-user-account-for-enterprise-voice"></a>Per disabilitare un account utente per VoIP aziendale
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **utenti**.
+3.  Sulla barra di spostamento sinistra fare clic su **Utenti**.
 
-4.  Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente che si vuole abilitare e quindi fare clic su **trova**.
+4.  Nella casella **Cerca utenti** digitare anche solo la prima parte del nome visualizzato, del nome, del cognome, del nome dell'account di Gestione account di protezione, dell'indirizzo SIP o dell'URI (Uniform Resource Identifier) di linea dell'account utente da abilitare e quindi fare clic su **Trova**.
 
 5.  Nella tabella fare clic sull'account utente che si desidera abilitare per VoIP aziendale.
 
-6.  Nel menu **modifica** fare clic su **Mostra dettagli**.
+6.  Scegliere **Mostra dettagli** dal menu **Modifica**.
 
-7.  Nella pagina **modifica utente di Lync Server** , in **telefonia**, fare clic su qualsiasi opzione eccetto **VoIP aziendale**.
+7.  Nella pagina **Modifica utente Lync Server**, in **Telefonia** fare clic su qualsiasi opzione, ad eccezione di **VoIP aziendale**.
     
     <div>
     
 
     > [!NOTE]  
-    > Per impedire a un utente di effettuare chiamate audio o video tramite Lync, in <STRONG>telefonia</STRONG>fare clic su <STRONG>disabilitato audio/video</STRONG>.
+    > Per impedire a un utente di effettuare chiamate audio o video utilizzando Lync, in <STRONG>telefonia</STRONG>fare clic su <STRONG>audio/video disabilitato</STRONG>.
 
     
     </div>
 
 8.  Fare clic su **Commit**.
 
-Ora l'utente non è in grado di usare la caratteristica VoIP aziendale.
+L'utente non è ora in grado di utilizzare la funzionalità VoIP aziendale.
 
 </div>
 
@@ -77,7 +77,7 @@ Ora l'utente non è in grado di usare la caratteristica VoIP aziendale.
 ## <a name="see-also"></a>Vedere anche
 
 
-[Consentire agli utenti di VoIP aziendale in Lync Server 2013](lync-server-2013-enable-users-for-enterprise-voice.md)  
+[Abilitare gli utenti per VoIP aziendale in Lync Server 2013](lync-server-2013-enable-users-for-enterprise-voice.md)  
 
 
 [Gestione di VoIP aziendale per gli utenti in Lync Server 2013](lync-server-2013-managing-enterprise-voice-for-users.md)  

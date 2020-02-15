@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: regole di traduzione'
+title: 'Lync Server 2013: regole di conversione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184460
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d4ae330633acb04a35abe19356f4b00ff09ef41a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 16623d863e9ca4a252ad7249ba1933cfa6934b08
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41745056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036466"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="translation-rules-in-lync-server-2013"></a>Regole di traduzione in Lync Server 2013
+# <a name="translation-rules-in-lync-server-2013"></a>Regole di conversione in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41745056"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-05_
+_**Ultimo argomento modificato:** 2012-10-05_
 
-Lync Server 2013 Enterprise Voice richiede che tutte le stringhe di chiamata vengano normalizzate in formato E. 164 allo scopo di eseguire la ricerca di numeri inversa (RNL). In Microsoft Lync Server 2010 le regole di traduzione sono supportate solo per i numeri denominati. Novità di Microsoft Lync Server 2013 sono supportate anche regole di traduzione per i numeri di chiamata. Il *peer trunk* , ovvero il gateway associato, il PBX (Private Branch Exchange) o il trunk SIP, può richiedere che i numeri siano in formato di chiamata locale. Per tradurre i numeri dal formato E. 164 a un formato di chiamata locale, è possibile definire una o più regole di traduzione per modificare l'URI della richiesta prima di instradarlo al peer trunk. Ad esempio, è possibile scrivere una regola di conversione per rimuovere +44 dall'inizio di una stringa di composizione e sostituirlo con 0144.
+Lync Server 2013 Enterprise Voice richiede che tutte le stringhe di composizione vengano normalizzate nel formato E. 164 allo scopo di eseguire la ricerca di numeri inversi (inversa). In Microsoft Lync Server 2010, le regole di conversione sono supportate solo per i numeri denominati. Nuovo in Microsoft Lync Server 2013, le regole di conversione sono supportate anche per i numeri di chiamata. Il *trunk peer* ovvero il gateway, il centralino (PBX) o il trunk SIP associato, potrebbe richiedere l'utilizzo del formato di composizione locale per i numeri. Per convertire i numeri dal formato E.164 a quello locale, è possibile definire una o più regole di conversione per modificare l'URI richiesta prima di eseguirne il routing al trunk peer. È possibile, ad esempio, scrivere una regola di conversione per rimuovere +44 dall'inizio di una stringa di composizione e sostituirlo con 0144.
 
-Eseguendo la conversione della route in uscita sul server, è possibile ridurre i requisiti di configurazione per ogni singolo peer trunk per tradurre i numeri di telefono in un formato di chiamata locale. Quando si pianificano i gateway e il numero di gateway da associare a un cluster di Mediation Server specifico, potrebbe essere utile raggruppare i peer trunk con requisiti di selezione locali simili. In questo articolo è possibile ridurre il numero di regole di traduzione necessarie e il tempo necessario per scriverle.
+Eseguendo la conversione delle route in uscita sul server, è possibile ridurre i requisiti di configurazione per ogni singolo peer trunk per tradurre i numeri di telefono in un formato di composizione locale. Quando si pianificano i gateway e il numero di gateway da associare a un cluster di Mediation Server specifico, potrebbe essere utile raggruppare i peer trunk con requisiti di composizione locali simili. In questo modo è possibile ridurre il numero di regole di conversione necessarie e il tempo necessario per scriverle.
 
 <div>
 
 
 > [!IMPORTANT]  
-> L'associazione di una o più regole di traduzione con una configurazione trunk VoIP aziendale dovrebbe essere usata come alternativa alla configurazione delle regole di traduzione nel trunk peer. Non associare regole di traduzione a una configurazione trunk VoIP aziendale se sono state configurate regole di traduzione nel peer trunk, perché le due regole potrebbero essere in conflitto.
+> L'associazione di una o più regole di conversione a una configurazione trunk VoIP aziendale deve essere utilizzata come alternativa alla configurazione delle regole di conversione nel peer trunk. Non associare regole di conversione a una configurazione trunk VoIP aziendale se sono state configurate regole di conversione nel peer trunk, perché le due regole potrebbero essere in conflitto.
 
 
 
@@ -53,11 +53,11 @@ Eseguendo la conversione della route in uscita sul server, è possibile ridurre 
 
 <div>
 
-## <a name="example-translation-rules"></a>Esempio di regole di traduzione
+## <a name="example-translation-rules"></a>Esempi di regole di traduzione
 
-Gli esempi seguenti di regole di traduzione mostrano come sviluppare regole nel server per tradurre i numeri dal formato E. 164 a un formato locale per il peer trunk.
+Gli esempi di regole di traduzione seguenti indicano come sviluppare regole nel server per convertire numeri dal formato E.164 a un formato locale per il trunk peer.
 
-Per informazioni dettagliate su come implementare le regole di traduzione, vedere [definizione delle regole di traduzione in Lync Server 2013](lync-server-2013-defining-translation-rules.md) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate sull'implementazione delle regole di conversione, vedere [definizione delle regole di conversione in Lync Server 2013](lync-server-2013-defining-translation-rules.md) nella documentazione relativa alla distribuzione.
 
 
 <table>
@@ -78,33 +78,33 @@ Per informazioni dettagliate su come implementare le regole di traduzione, veder
 <th>Lunghezza</th>
 <th>Cifre da rimuovere</th>
 <th>Cifre da aggiungere</th>
-<th>Modello di corrispondenza</th>
-<th>Conversione</th>
+<th>Formato corrispondente</th>
+<th>Translation</th>
 <th>Esempio</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Chiamata a lunga distanza convenzionale negli Stati Uniti</p>
-<p>(Elimina il ' +')</p></td>
+<td><p>Composizione convenzionale di interurbane negli Stati Uniti</p>
+<p>(rimuovere il '+')</p></td>
 <td><p>+ 1</p></td>
 <td><p>Esattamente 12</p></td>
-<td><p>1</p></td>
+<td><p>1 </p></td>
 <td><p>0</p></td>
 <td><p>^\+(1 \ d{10}) $</p></td>
 <td><p>$1</p></td>
-<td><p>+ 14255551010 diventa 14255551010</p></td>
+<td><p>+14255551010 diventa 14255551010</p></td>
 </tr>
 <tr class="even">
-<td><p>Chiamate interurbane internazionali degli Stati Uniti</p>
-<p>(Strip out ' +' e Add 011)</p></td>
+<td><p>Composizione di interurbane internazionali negli Stati Uniti</p>
+<p>(rimuovere il '+' e aggiungere 011)</p></td>
 <td><p>+</p></td>
 <td><p>Almeno 11</p></td>
-<td><p>1</p></td>
+<td><p>1 </p></td>
 <td><p>011</p></td>
 <td><p>^\+(\d{9}\d +) $</p></td>
 <td><p>011 $1</p></td>
-<td><p>+ 441235551010 diventa 011441235551010</p></td>
+<td><p>+441235551010 diventa 011441235551010</p></td>
 </tr>
 </tbody>
 </table>

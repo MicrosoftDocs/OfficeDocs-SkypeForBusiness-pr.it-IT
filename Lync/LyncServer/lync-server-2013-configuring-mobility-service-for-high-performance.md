@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurazione del servizio di mobilità per prestazioni elevate'
+title: 'Lync Server 2013: configurazione del servizio per dispositivi mobili per prestazioni elevate'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185332
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 29eaea1e45c5d3b745debbc2f97370a76e6d16db
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 460c56a9e51ab64491402eed22d40d60ad7d89c1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730706"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030530"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-mobility-service-for-high-performance-in-lync-server-2013"></a>Configurazione del servizio di mobilità per prestazioni elevate in Lync Server 2013
+# <a name="configuring-mobility-service-for-high-performance-in-lync-server-2013"></a>Configurazione del servizio per dispositivi mobili per prestazioni elevate in Lync Server 2013
 
 </div>
 
@@ -35,33 +35,33 @@ ms.locfileid: "41730706"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-17_
+_**Ultimo argomento modificato:** 2013-02-17_
 
 <div>
 
 
 > [!IMPORTANT]  
-> Questo argomento si applica solo al servizio di mobilità di Lync Server 2013 (MCX) e non si applica a UCWA (Unified Communications Web API), come fornito negli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013.
+> Questo argomento si applica solo a Lync Server 2013 Mobility Service (MCX) e non si applica a Unified Communications Web API (UCWA), come recapitato negli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013.
 
 
 
 </div>
 
-Quando si installa il servizio di mobilità (MCX) in Internet Information Services (IIS) 7,5, il programma di installazione del servizio di mobilità configura alcune impostazioni di prestazioni nel server front-end. È consigliabile usare IIS 7,5 per la mobilità. Le impostazioni influenzano il numero massimo di richieste utente simultanee e il numero massimo di thread consentiti per il servizio di mobilità.
+Quando si installa il servizio per dispositivi mobili (MCX) su Internet Information Services (IIS) 7,5, il programma di installazione del servizio per dispositivi mobili configura alcune impostazioni delle prestazioni nel front end server. È consigliabile utilizzare IIS 7.5 per la mobilità. Le impostazioni influiscono sul numero massimo di richieste utente simultanee e il numero massimo di thread consentiti per il servizio di mobilità.
 
-Ecco le impostazioni delle prestazioni:
+Di seguito sono conformate le impostazioni delle prestazioni:
 
 <div>
 
 ## <a name="settings-for-mcx-on-iis-75"></a>Impostazioni per MCX in IIS 7,5
 
-1.  **MaxConcurrentThreadsPerCPU** è impostato su zero (0).
+1.  Il valore **maxConcurrentThreadsPerCPU** viene impostato su zero (0).
 
-2.  **maxConcurrentRequestsPerCPU** è impostato su zero (0).
+2.  Il valore **maxConcurrentRequestsPerCPU** viene impostato su zero (0).
 
-3.  Il modello di processo di ASP.NET è impostato su AutoConfig (solo per IIS 7,5).
+3.  Il modello di processo ASP.NET viene impostato su AutoConfig (solo per IIS 7.5).
 
-4.  Il limite della coda HTTP. sys è impostato su 1.000 (per impostazione predefinita).
+4.  Il limite di coda HTTP.sys viene impostato su 1.000 per impostazione predefinita.
 
 </div>
 

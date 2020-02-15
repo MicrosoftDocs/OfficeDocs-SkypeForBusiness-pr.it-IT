@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: creare criteri per la posizione'
+title: 'Lync Server 2013: creare criteri percorso'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185794
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 55c10244bb3a70f7218dc3967e7f4f134048024f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e7b815f533661fb553c7b9217f23b70f0027c559
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726316"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035782"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-location-policies-in-lync-server-2013"></a>Creare criteri di posizione in Lync Server 2013
+# <a name="create-location-policies-in-lync-server-2013"></a>Creare criteri percorso in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41726316"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-11_
+_**Ultimo argomento modificato:** 2012-09-11_
 
-Lync Server usa un criterio di posizione per abilitare i client Lync per il E9-1-1 durante la registrazione client. Un criterio di posizione contiene le impostazioni che definiscono il modo in cui verrà implementato E9-1-1.
+Lync Server utilizza un criterio percorso per abilitare i client Lync per il servizio E9-1-1 durante la registrazione client. I criteri percorso contengono le impostazioni che definiscono la modalità di implementazione di E9-1-1.
 
-È possibile modificare i criteri di posizione globale e creare nuovi criteri di posizione contrassegnati. Un client ottiene un criterio globale quando non si trova all'interno di una subnet con un criterio di posizione associato o quando al client non è stato assegnato direttamente un criterio di posizione. I criteri contrassegnati vengono assegnati a subnet o utenti.
+È possibile modificare i criteri percorso globali e creare nuovi criteri percorso contrassegnati. Un client ottiene criteri globali quando non si trova in una subnet con criteri percorso associati oppure quando non è stato assegnato direttamente a criteri percorso. I criteri contrassegnati vengono assegnati a subnet o a utenti.
 
-Per creare un criterio di posizione, è necessario usare un account che sia membro del gruppo RTCUniversalServerAdmins oppure sia un membro del ruolo amministrativo di CsVoiceAdministrator o disponga di autorizzazioni e diritti di amministratore equivalenti.
+Per creare criteri percorso, è necessario utilizzare un account membro del gruppo RTCUniversalServerAdmins o del ruolo amministrativo CsVoiceAdministrator oppure che disponga di equivalenti diritti e autorizzazioni di amministratore.
 
-Per una descrizione completa dei criteri di posizione, vedere [definizione dei criteri di posizione per Lync Server 2013](lync-server-2013-defining-the-location-policy.md). I cmdlet in questa procedura usano i criteri di posizione definiti con i valori seguenti:
+Per una descrizione completa dei criteri percorso, vedere [define the location policy for Lync Server 2013](lync-server-2013-defining-the-location-policy.md). I cmdlet di questa procedura utilizzano criteri percorso definiti con i valori seguenti:
 
 
 <table>
@@ -68,7 +68,7 @@ Per una descrizione completa dei criteri di posizione, vedere [definizione dei c
 </tr>
 <tr class="odd">
 <td><p>EnhancedEmergencyServiceDisclaimer</p></td>
-<td><p>I criteri aziendali richiedono l'impostazione di una posizione. Se non si imposta una posizione, i servizi di emergenza non saranno in grado di individuare l'utente in caso di emergenza. Impostare una posizione.</p></td>
+<td><p>È necessario impostare un percorso per il criterio aziendale. Se non si imposta un percorso, in caso di emergenza non sarà possibile essere individuati dai servizi di emergenza. Impostare un percorso.</p></td>
 </tr>
 <tr class="even">
 <td><p>UseLocationForE911Only</p></td>
@@ -106,7 +106,7 @@ Per una descrizione completa dei criteri di posizione, vedere [definizione dei c
 </table>
 
 
-Per informazioni dettagliate sull'uso dei criteri di posizione, vedere la documentazione di Lync Server Management Shell per i cmdlet seguenti:
+Per informazioni dettagliate sull'utilizzo dei criteri percorso, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:
 
   - New-CsLocationPolicy
 
@@ -120,28 +120,28 @@ Per informazioni dettagliate sull'uso dei criteri di posizione, vedere la docume
 
 <div>
 
-## <a name="to-create-location-policies"></a>Per creare criteri di posizione
+## <a name="to-create-location-policies"></a>Per creare criteri percorso
 
-1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
     
     <div>
     
 
     > [!NOTE]  
-    > CsLocationPolicy non riesce se l'impostazione per <STRONG>PstnUsage</STRONG> non è già presente nell'elenco globale di PstnUsages.
+    > CsLocationPolicy non verrà eseguito correttamente se l'impostazione di <STRONG>PstnUsage</STRONG> non è già stata inserita nell'elenco Global di PstnUsages.
 
     
     </div>
 
-2.  Facoltativamente, eseguire il cmdlet seguente per modificare il criterio della posizione globale:
+2.  Facoltativamente, eseguire il cmdlet seguente per modificare i criteri percorso globali:
     
         Set-CsLocationPolicy -Identity Global -EnhancedEmergencyServicesEnabled $true -LocationRequired "disclaimer" -EnhancedEmergencyServiceDisclaimer "Your company policy requires you to set a location. If you do not set a location emergency services will not be able to locate you in an emergency. Please set a location." -PstnUsage "emergencyUsage" -EmergencyDialString "911" -ConferenceMode "twoway" -ConferenceUri "sip:+14255550123@litwareinc.com" -EmergencyDialMask "112" NotificationUri "sip:security@litwareinc.com" -UseLocationForE911Only $true -LocationRefreshInterval 2
 
-3.  Eseguire la procedura seguente per creare criteri di posizione contrassegnati.
+3.  Eseguire il cmdlet seguente per creare criteri percorso contrassegnati.
     
         New-CsLocationPolicy -Identity Tag:Redmond - EnhancedEmergencyServicesEnabled $true -LocationRequired "disclaimer" -EnhancedEmergencyServiceDisclaimer "Your company policy requires you to set a location. If you do not set a location emergency services will not be able to locate you in an emergency. Please set a location." -UseLocationForE911Only $false -PstnUsage "EmergencyUsage" -EmergencyDialString "911" -EmergencyDialMask "112" -NotificationUri "sip:security@litwareinc.com" -ConferenceUri "sip:+14255550123@litwareinc.com" -ConferenceMode "twoway" -LocationRefreshInterval 2
 
-4.  Eseguire il cmdlet seguente per applicare il criterio di posizione con tag creato nel passaggio 3 a un criterio utente.
+4.  Eseguire il cmdlet seguente per applicare i criteri percorso creati nel passaggio 3 ai criteri di un utente.
     
         (Get-CsUser | where { $_.Name -match "UserName" }) | Grant-CsLocationPolicy -PolicyName Redmond
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Riepilogo dei certificati - bilanciamento del carico DNS e bilanciamento del carico hardware'
+title: 'Lync Server 2013: riepilogo del certificato-bilanciamento del carico DNS e bilancio di HLB'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184676
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b8cd6d86844629544b54670eb07c3433d19f99f2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 44b89f1b305b99d86fd1843ac61625083a5fb51b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736656"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42031130"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="certificate-summary---dns-and-hlb-load-balanced-in-lync-server-2013"></a>Riepilogo dei certificati - bilanciamento del carico DNS e bilanciamento del carico hardware in Lync Server 2013
+# <a name="certificate-summary---dns-and-hlb-load-balanced-in-lync-server-2013"></a>Riepilogo del certificato-bilanciamento del carico DNS e del caricamento in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41736656"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-22_
+_**Ultimo argomento modificato:** 2012-10-22_
 
-I requisiti di certificato per un amministratore con bilanciamento del carico DNS e un servizio di bilanciamento del carico hardware utilizzeranno un certificato predefinito con un nome soggetto e un oggetto alternativo per i servizi che il Director può ricevere. Viene richiesto un certificato per ogni amministratore del pool. È importante ricordare che il bilanciamento del carico hardware è il bilanciamento del carico solo del traffico proveniente dal proxy inverso. È inoltre disponibile un certificato OAuth per gli scopi di autenticazione server-server installati in ogni server.
+I requisiti dei certificati per un server Director con bilanciamento del carico DNS e un dispositivo di bilanciamento del carico hardware utilizzeranno un certificato predefinito che ha un nome soggetto e i nomi alternativi del soggetto per i servizi che il Director può ricevere. Viene richiesto un certificato per ogni Director del pool. È importante ricordare che il bilanciamento del carico hardware bilancia soltanto il traffic proveniente dal proxy inverso. Inoltre, esiste un certificato OAuth Token a fini di autenticazione server-to-server, installato su ciascun server.
 
-### <a name="certificates-for-director"></a>Certificati per Director
+### <a name="certificates-for-director"></a>Certificati per il Director
 
 <table>
 <colgroup>
@@ -52,7 +52,7 @@ I requisiti di certificato per un amministratore con bilanciamento del carico DN
 <tr class="header">
 <th>Componente</th>
 <th>Nome soggetto (SN)</th>
-<th>Nomi alternativi oggetto (SAN)</th>
+<th>Nomi alternativi soggetto (SAN)</th>
 <th>Commenti</th>
 </tr>
 </thead>
@@ -66,9 +66,9 @@ I requisiti di certificato per un amministratore con bilanciamento del carico DN
 <p>meet.contoso.com</p>
 <p>lyncdiscoverinternal.contoso.com</p>
 <p>lyncdiscover.contoso.com</p>
-<p>(Facoltativamente) *. contoso.com</p></td>
-<td><p>I certificati Director possono essere richiesti da un'autorità di certificazione (CA) gestita internamente o da una CA pubblica.</p>
-<p>Il Director risponde alle richieste provenienti dal proxy inverso nel perimetro o dall'Edge Server. I client interni non useranno il Director.</p>
+<p>(Facoltativamente) *.contoso.com</p></td>
+<td><p>I certificati del server Director possono essere richiesti da un'autorità di certificazione (CA) gestita internamente o da una CA pubblica.</p>
+<p>Il Director risponde alle richieste provenienti dal proxy inverso nel perimetro o dal server perimetrale. I client interni non utilizzeranno il server Director.</p>
 <p>In alternativa, una voce con caratteri jolly per gli URL semplici</p></td>
 </tr>
 <tr class="even">
@@ -78,11 +78,11 @@ I requisiti di certificato per un amministratore con bilanciamento del carico DN
 <td><div>
 
 > [!IMPORTANT]  
-> Tieni presente che la lunghezza della chiave minima è 1024, ma potresti ricevere un avviso che indica che la lunghezza della chiave minima consigliata è 2048 bit.
+> Si noti che la lunghezza minima della chiave è 1024, ma è possibile che si riceva un avviso che indica che la lunghezza minima consigliata per la chiave è 2048 bit.
 
 
 </div>
-<p>Il certificato OAuthTokenIssuer è un certificato a scopo unico per l'autenticazione dei server in un ambiente su larga scala e può essere richiesto da una CA interna o da una CA pubblica. Il certificato è obbligatorio.</p></td>
+<p>Il certificato OAuthTokenIssuer è un certificato finalizzato al solo scopo di autenticare i server in un ambiente su larga scala e può essere richiesto a una CA interna o a una CA pubblica. Il certificato è obbligatorio.</p></td>
 </tr>
 </tbody>
 </table>

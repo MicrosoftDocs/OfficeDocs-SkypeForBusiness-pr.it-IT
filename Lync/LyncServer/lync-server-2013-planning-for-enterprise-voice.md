@@ -12,16 +12,16 @@ ms:contentKeyID: 48185959
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 83b0ec944ad857ffccb419cf9ed36fbca92306c8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e629946d0db408e83ea12313507787df233bcbc0
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41753256"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036868"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,31 +35,31 @@ ms.locfileid: "41753256"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-11-01_
+_**Ultimo argomento modificato:** 2013-11-01_
 
-Il processo di distribuzione per VoIP aziendale dipende dalla topologia, dall'infrastruttura e dalla funzionalità di VoIP aziendale che si vuole supportare. Le procedure necessarie dipendono dalle caratteristiche scelte, ma esistono altre considerazioni di pianificazione che è necessario apportare a un livello elevato.
+Il processo di distribuzione per VoIP aziendale dipende dalla topologia esistente, dall'infrastruttura e dalla funzionalità VoIP aziendale che si desidera supportare. Le procedure necessarie dipenderanno dalle funzionalità scelte, ma è necessario tenere conto di altre considerazioni sulla pianificazione a livello superiore.
 
-In generale, prendere in considerazione il tipo e il numero di siti che si desidera distribuire e le rispettive posizioni geografiche, il volume delle chiamate in ogni sito, i tipi di collegamenti di rete che collegano i siti, se si vuole ottenere la ridondanza e il failover per le funzionalità vocali per ogni sito e se si vuole usare apparecchiature PBX esistenti. Ci sono alcune considerazioni, ad esempio l'elevata disponibilità, da tenere in considerazione quando si prevede di usare il software di comunicazione Lync Server nel suo complesso. Queste considerazioni sono discusse in argomenti in questa sezione, in base alle esigenze.
+In generale, prendere in considerazione il tipo e il numero di siti che si desidera distribuire e le relative posizioni geografiche, il volume delle chiamate in ogni sito, i tipi di collegamenti di rete che collegano i siti, se si desidera fornire la ridondanza e il failover per le funzionalità vocali per ogni sito e se si desidera utilizzare apparecchiature PBX esistenti. Sono presenti alcune considerazioni, ad esempio la disponibilità elevata, che è necessario prendere in considerazione quando si pianifica il software di comunicazione di Lync Server nel suo complesso. Queste considerazioni sono descritte negli argomenti in questa sezione, in base alle esigenze.
 
 <div>
 
-## <a name="planning-considerations"></a>Considerazioni sulla pianificazione
+## <a name="planning-considerations"></a>Considerazioni di pianificazione
 
-Per le decisioni di pianificazione relative alla distribuzione di uno scenario o di un componente specifico o di una funzionalità di distribuzione aziendale, vedere gli argomenti in questa sezione.
+Per le decisioni relative alla distribuzione di uno scenario o di un componente di distribuzione o di una specifica funzionalità di VoIP aziendale, consultare gli argomenti di questa sezione.
 
-  - [Definizione dei requisiti dell'organizzazione per VoIP aziendale in Lync Server 2013](lync-server-2013-defining-your-requirements-for-enterprise-voice.md)
+  - [Definizione dei requisiti per VoIP aziendale in Lync Server 2013](lync-server-2013-defining-your-requirements-for-enterprise-voice.md)
 
-  - [Stima dell'utilizzo e del traffico vocale Lync Server 2013](lync-server-2013-estimating-voice-usage-and-traffic.md)
+  - [Stima dell'utilizzo e del traffico vocale per Lync Server 2013](lync-server-2013-estimating-voice-usage-and-traffic.md)
 
-  - [Impostazioni di rete per le funzionalità vocali avanzate di Enterprise in Lync Server 2013](lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md)
+  - [Impostazioni di rete per le funzionalità di VoIP aziendale avanzate in Lync Server 2013](lync-server-2013-network-settings-for-the-advanced-enterprise-voice-features.md)
 
-  - [Componenti necessari per Enterprise Voice in Lync Server 2013](lync-server-2013-components-required-for-enterprise-voice.md)
+  - [Componenti necessari per VoIP aziendale in Lync Server 2013](lync-server-2013-components-required-for-enterprise-voice.md)
 
   - [Pianificazione della resilienza di VoIP aziendale in Lync Server 2013](lync-server-2013-planning-for-enterprise-voice-resiliency.md)
 
   - [Pianificazione dell'integrazione della messaggistica unificata di Exchange in Lync Server 2013](lync-server-2013-planning-for-exchange-unified-messaging-integration.md)
 
-  - [Pianificazione del servizio Controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-planning-for-call-admission-control.md)
+  - [Pianificazione del controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-planning-for-call-admission-control.md)
 
   - [Pianificazione per i servizi di emergenza (E9-1-1) in Lync Server 2013](lync-server-2013-planning-for-emergency-services-e9-1-1.md)
 
@@ -77,7 +77,7 @@ Per le decisioni di pianificazione relative alla distribuzione di uno scenario o
 
   - [Spostamento di utenti in VoIP aziendale in Lync Server 2013](lync-server-2013-moving-users-to-enterprise-voice.md)
 
-  - [Strumento di diagnostica prechiamata di Lync in Lync Server 2013](lync-server-2013-lync-precall-diagnostics-tool.md)
+  - [Lync PreCall Diagnostics Tool in Lync Server 2013](lync-server-2013-lync-precall-diagnostics-tool.md)
 
 </div>
 

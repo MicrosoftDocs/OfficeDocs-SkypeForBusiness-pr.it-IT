@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella HardwareVersions'
+title: 'Lync Server 2013: tabella HardwareVersions'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185406
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 870b80dd5f67cf2a79e1c44c9754223f6d576e2c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a242f7ac01f89978ad4692f2e36374c52e92bc94
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41727806"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030299"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41727806"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-05-25_
+_**Ultimo argomento modificato:** 2012-05-25_
 
 La tabella HardwareVersions è una tabella di supporto. Ogni record archivia informazioni su una versione hardware del dispositivo.
 

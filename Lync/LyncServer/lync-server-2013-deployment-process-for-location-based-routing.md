@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Processo di distribuzione per il routing in base alla posizione'
+title: 'Lync Server 2013: processo di distribuzione per il routing in base alla posizione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 51803966
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 02e09106bc9d96fbfab2935aec07f3c472f49d6a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 93b26498593038231be527c98e62ee1f13865df1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762604"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035178"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41762604"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-03-09_
+_**Ultimo argomento modificato:** 2013-03-09_
 
-Questo argomento offre una panoramica del processo relativo alla configurazione del routing basato sulla posizione. È necessario distribuire Lync Server Enterprise Edition o Standard Edition con Enterprise Voice prima di configurare il routing basato sulla posizione. I componenti necessari per il routing basato sulla posizione sono già installati e abilitati quando si distribuisce VoIP aziendale.
+In questo argomento viene fornita una panoramica del processo di configurazione del routing in base alla posizione. Prima di configurare il routing in base alla posizione, è necessario distribuire Lync Server Enterprise Edition o Standard Edition con VoIP aziendale. I componenti necessari per il routing in base alla posizione sono già installati e abilitati quando si distribuisce VoIP aziendale.
 
-### <a name="location-based-routing-deployment-process"></a>Processo di distribuzione del routing basato sulla posizione
+### <a name="location-based-routing-deployment-process"></a>Processo di distribuzione del routing in base alla posizione
 
 <table>
 <colgroup>
@@ -53,14 +53,14 @@ Questo argomento offre una panoramica del processo relativo alla configurazione 
 <th>Fase</th>
 <th>Passaggi</th>
 <th>Gruppi e ruoli obbligatori</th>
-<th>Documentazione di distribuzione</th>
+<th>Documentazione sulla distribuzione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>Distribuzione di VoIP aziendale</p></td>
 <td><ul>
-<li><p>Configurare Trunks</p></li>
+<li><p>Configurare trunk</p></li>
 <li><p>Creare criteri vocali</p></li>
 <li><p>Definire le route vocali</p></li>
 </ul></td>
@@ -82,23 +82,23 @@ CsServerAdministrator</p></td>
 <td><ul>
 <li><p>Creare aree di rete</p></li>
 <li><p>Creare siti di rete</p></li>
-<li><p>Associa le subnet con i siti di rete</p></li>
+<li><p>Associa le subnet a siti di rete</p></li>
 </ul></td>
 <td><p>CSVoiceAdmins<br />
 CsAdministrator<br />
 CsServerAdministrator</p></td>
-<td><p>Informazioni sulle aree geografiche, i siti e le subnet di rete<br />
+<td><p>Informazioni su aree di rete, siti e subnet<br />
 Creare o modificare un'area di rete<br />
 Creare o modificare un sito di rete<br />
 Associare una subnet a un sito di rete</p></td>
 </tr>
 <tr class="even">
-<td><p>Configurare il routing basato sulla posizione</p></td>
+<td><p>Configurare il routing in base alla posizione</p></td>
 <td><ul>
 <li><p>Creare criteri di routing vocale</p></li>
-<li><p>Definire una configurazione trunk separata per tronco</p></li>
+<li><p>Definire la configurazione trunk separata per trunk</p></li>
 <li><p>Modificare i criteri vocali</p></li>
-<li><p>Abilitare la configurazione del routing basata sulla posizione</p></li>
+<li><p>Abilitare la configurazione del routing in base alla posizione</p></li>
 </ul></td>
 <td><p>CSVoiceAdmins<br />
 CsAdministrator<br />
@@ -113,7 +113,7 @@ CsServerAdministrator</p></td>
 
 ## <a name="sample-deployment"></a>Distribuzione di esempio
 
-La distribuzione seguente viene usata per illustrare ulteriormente i meccanismi abilitati dal routing basato sulla posizione.
+La distribuzione seguente viene utilizzata per illustrare ulteriormente i meccanismi abilitati dal routing in base alla posizione.
 
 ![e1bd2230-44da-4784-B359-24572b6ce02d](images/JJ994055.e1bd2230-44da-4784-b359-24572b6ce02d(OCS.15).png "e1bd2230-44da-4784-B359-24572b6ce02d")
 
@@ -121,11 +121,11 @@ La distribuzione seguente viene usata per illustrare ulteriormente i meccanismi 
 
 ## <a name="incoming-pstn-calls"></a>Chiamate PSTN in arrivo
 
-Un amministratore può abilitare il trunk definito per instradare le chiamate al "gateway del sito 1" per il routing basato sulla posizione e associare il "gateway del sito 1" al sito 1. Una volta abilitata, le chiamate instradate tramite "gateway sito 1" verranno indirizzate solo agli utenti che si trovano nel sito 1. Tutte le chiamate instradate tramite il trunk "sito 1 gateway" destinato agli utenti in un sito diverso, ad esempio il sito 2, verranno bloccate per evitare il bypass PSTN.
+Un amministratore può abilitare il trunk definito per instradare le chiamate al "sito 1 gateway" per il routing in base alla posizione e associare il "sito 1 gateway" al sito 1. Una volta abilitata, le chiamate instradate tramite "sito 1 gateway" verranno instradate solo agli utenti che si trovano nel sito 1. Tutte le chiamate instradate attraverso il trunk "site 1 gateway" destinate agli utenti in un sito diverso, ad esempio il sito 2, verranno bloccate per impedire il bypass a pedaggio PSTN.
 
-Tutte le chiamate PSTN in arrivo tramite "sito 1 gateway" possono essere instradate solo agli endpoint presenti nel sito 1. Ad esempio, quando "Lync User 1" passa al sito 2, tutte le chiamate PSTN in arrivo tramite "sito 1 gateway" non verranno indirizzate agli endpoint "Lync User 1" presenti nel sito 2. La stessa regola di routing si applica se "Lync User 1" si sposta in un sito di rete sconosciuto in cui non è possibile determinare la posizione dell'utente.
+Tutte le chiamate PSTN in ingresso tramite "site 1 gateway" potranno essere instradate solo agli endpoint situati nel sito 1. Ad esempio, quando "Lync User 1" si sposta nel sito 2, tutte le chiamate PSTN in ingresso tramite "site 1 gateway" non verranno instradate agli endpoint "Lync User 1" presenti nel sito 2. La stessa regola di routing si applica se "Lync User 1" si sposta in un sito di rete sconosciuto in cui la posizione dell'utente non può essere determinata.
 
-La tabella seguente illustra l'esperienza utente di "Lync User 1" in questo contesto.
+Nella tabella seguente viene descritta l'esperienza utente di "Lync User 1" in questo contesto.
 
 
 <table>
@@ -138,17 +138,17 @@ La tabella seguente illustra l'esperienza utente di "Lync User 1" in questo cont
 <thead>
 <tr class="header">
 <th></th>
-<th>Endpoint degli utenti di Lync 1 situati nel sito di rete 1</th>
-<th>Endpoint degli utenti di Lync 1 situati nel sito di rete 2</th>
-<th>Endpoint di Lync User 1 situati nel sito di rete sconosciuto</th>
+<th>Endpoint di Lync User 1 situati nel sito di rete 1</th>
+<th>Endpoint di Lync User 1 situati nel sito di rete 2</th>
+<th>Endpoint di Lync User 1 che si trovano in un sito di rete sconosciuto</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Chiamate PSTN in ingresso per l'utente Lync 1</p></td>
-<td><p>Le chiamate vengono instradate agli endpoint in questa posizione</p></td>
-<td><p>Le chiamate non vengono instradate agli endpoint in questa posizione</p></td>
-<td><p>Le chiamate non vengono instradate agli endpoint in questa posizione</p></td>
+<td><p>Chiamate PSTN in ingresso a Lync User 1</p></td>
+<td><p>Le chiamate vengono instradate agli endpoint in questo percorso</p></td>
+<td><p>Le chiamate non vengono instradate agli endpoint in questo percorso</p></td>
+<td><p>Le chiamate non vengono instradate agli endpoint in questo percorso</p></td>
 </tr>
 </tbody>
 </table>
@@ -160,11 +160,11 @@ La tabella seguente illustra l'esperienza utente di "Lync User 1" in questo cont
 
 ## <a name="outgoing-pstn-calls"></a>Chiamate PSTN in uscita
 
-Si fa riferimento a route vocali sia nei criteri vocali assegnati direttamente agli utenti, sia nei criteri di routing vocale assegnati ai siti di rete. Entrambi i criteri contengono riferimenti alle route, che possono essere usati per instradare una chiamata in modo diverso. Un amministratore può ad esempio definire un criterio di routing vocale per tutti gli utenti che si trovano nel sito di rete 1 per instradare tutte le chiamate in uscita tramite il gateway "sito 1", mentre il criterio vocale di alcuni utenti definisce una route per tutte le chiamate in uscita tramite il "sito 2 gateway". Mentre questi utenti si trovano nel sito di rete 1, le chiamate in uscita verranno instradate tramite il "gateway del sito 1".
+Le route vocali vengono referenziate sia nei criteri vocali assegnati direttamente agli utenti, sia nei criteri di routing vocale assegnati a siti di rete. Entrambi i criteri contengono riferimenti a route, che possono essere utilizzati per instradare una chiamata in modo diverso. Ad esempio, un amministratore può definire un criterio di routing vocale per tutti gli utenti che si trovano nel sito di rete 1 per instradare tutte le chiamate in uscita attraverso il "sito 1 gateway" mentre il criterio vocale di alcuni utenti definisce una route per tutte le chiamate in uscita attraverso il "sito 2 gateway". Anche se questi utenti si trovano nel sito di rete 1, le chiamate in uscita verranno instradate attraverso il "sito 1 gateway".
 
-Quando un utente si trova in un sito di rete configurato per il routing basato sulla posizione, la route dei criteri di routing vocale del sito di rete sostituisce la route dei criteri vocali dell'utente. Questa regola è particolarmente utile per gli utenti che si trasferiscono temporaneamente in un sito diverso. In questo caso specifico un utente userà sempre un gateway locale nella propria posizione; Se "Lync User 3" si trova in "sito 2", tutte le sue chiamate in uscita verranno instradate tramite "gateway del sito 2", ma se si reca nel sito 1, tutte le chiamate in uscita inserite mentre è al sito 1 verranno instradate attraverso "sito 1 gateway".
+Quando un utente si trova in un sito di rete configurato per il routing in base alla posizione, la route dei criteri di routing vocale del sito di rete sostituisce la route dei criteri vocali dell'utente. Questa regola è particolarmente utile per gli utenti che si spostano temporaneamente in un altro sito. In questo caso particolare, un utente utilizzerà sempre un gateway che è locale per la propria posizione. Se "Lync User 3" si trova in "site 2", tutte le chiamate in uscita verranno instradate tramite "site 2 gateway", ma se si sposta sul sito 1, tutte le chiamate in uscita poste mentre è nel sito 1 verranno instradate attraverso "site 1 gateway".
 
-La tabella seguente illustra l'esperienza utente di Lync User 1 che effettua una chiamata in uscita dai siti di rete seguenti.
+Nella tabella seguente viene illustrata l'esperienza utente di Lync User 1 che effettua una chiamata in uscita dai seguenti siti di rete.
 
 
 <table>
@@ -179,21 +179,21 @@ La tabella seguente illustra l'esperienza utente di Lync User 1 che effettua una
 <th></th>
 <th>Sito di rete 1</th>
 <th>Sito di rete 2</th>
-<th>Sito di rete sconosciuto o non abilitato per il routing basato sulla posizione</th>
+<th>Sito di rete sconosciuto o non abilitato per il routing in base alla posizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>Autorizzazione delle chiamate in uscita</p></td>
-<td><p>Criterio vocale di Lync User 1</p></td>
-<td><p>Criterio vocale di Lync User 1</p></td>
-<td><p>Criterio vocale di Lync User 1</p></td>
+<td><p>Criteri vocali di Lync User 1</p></td>
+<td><p>Criteri vocali di Lync User 1</p></td>
+<td><p>Criteri vocali di Lync User 1</p></td>
 </tr>
 <tr class="even">
 <td><p>Routing delle chiamate in uscita</p></td>
-<td><p>Criteri di routing vocale del sito 1</p></td>
-<td><p>Criteri di routing vocale del sito 2</p></td>
-<td><p>Criteri vocali dell'utente e solo per i sistemi non abilitati per il routing basato sulla posizione</p></td>
+<td><p>Criterio di routing vocale del sito 1</p></td>
+<td><p>Criterio di routing vocale del sito 2</p></td>
+<td><p>Criteri vocali dell'utente e solo per i sistemi non abilitati per il routing in base alla posizione</p></td>
 </tr>
 </tbody>
 </table>
@@ -203,11 +203,11 @@ La tabella seguente illustra l'esperienza utente di Lync User 1 che effettua una
 
 <div>
 
-## <a name="call-transfers-and-forwards"></a>Trasferimento e inoltro delle chiamate
+## <a name="call-transfers-and-forwards"></a>Trasferimenti e inoltri di chiamata
 
 Quando le chiamate vengono trasferite o inoltrate, il routing delle chiamate è influenzato dal routing basato sulla posizione.
 
-Nella tabella seguente viene illustrato l'utente di Lync 1 che trasferisce o inoltra una chiamata PSTN a un altro utente Lync.
+Nella tabella seguente viene illustrato Lync User 1 che consente di trasferire o inoltrare una chiamata PSTN a un altro utente di Lync.
 
 
 <table>
@@ -220,23 +220,23 @@ Nella tabella seguente viene illustrato l'utente di Lync 1 che trasferisce o ino
 <thead>
 <tr class="header">
 <th>Utente che avvia il trasferimento delle chiamate o inoltra</th>
-<th>Utente di Lync 2</th>
-<th>Utente di Lync 4</th>
-<th>L'utente di Lync nel sito di rete non è abilitato per il routing basato sulla posizione</th>
+<th>Lync User 2</th>
+<th>Lync User 4</th>
+<th>Utente di Lync nel sito di rete non abilitato per il routing in base alla posizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Utente Lync 1</p></td>
+<td><p>Lync utente 1</p></td>
 <td><p>Inoltro di chiamata o trasferimento consentito</p></td>
-<td><p>La chiamata inoltra o transfer non è consentita</p></td>
-<td><p>La chiamata inoltra o transfer non è consentita</p></td>
+<td><p>Non è consentito l'inoltro di chiamata o il trasferimento</p></td>
+<td><p>Non è consentito l'inoltro di chiamata o il trasferimento</p></td>
 </tr>
 </tbody>
 </table>
 
   
-Nella tabella seguente viene illustrato il modo in cui il routing basato sulla posizione influisce sulla modalità di instradamento della chiamata in base alla posizione dell'utente di Lync trasferito (Lync User 2, Lync User 4 e così via) in un endpoint PSTN
+Nella tabella seguente viene illustrato il modo in cui il routing basato sulla posizione influisce sulla modalità di instradamento della chiamata in base alla posizione dell'utente Lync trasferito (Lync User 2, Lync User 4 e così via) a un endpoint PSTN.
 
 
 <table>
@@ -248,18 +248,18 @@ Nella tabella seguente viene illustrato il modo in cui il routing basato sulla p
 </colgroup>
 <thead>
 <tr class="header">
-<th>Endpoint in cui viene trasferita o inoltrata la chiamata a</th>
-<th>Utente di Lync 2</th>
-<th>Utente di Lync 4</th>
-<th>L'utente di Lync nel sito di rete non è abilitato per il routing basato sulla posizione</th>
+<th>Endpoint in cui la chiamata viene trasferita o inoltrata a</th>
+<th>Lync User 2</th>
+<th>Lync User 4</th>
+<th>Utente di Lync nel sito di rete non abilitato per il routing in base alla posizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>Endpoint PSTN</p></td>
-<td><p>La chiamata inoltra o transfer viene instradato attraverso i criteri di routing vocale del sito 1 e l'uscita tramite gateway del sito 1</p></td>
-<td><p>La chiamata inoltra o transfer viene instradato attraverso i criteri di routing vocale del sito 2 e l'uscita tramite gateway del sito 2</p></td>
-<td><p>Inoltro di chiamata o trasferimento viene instradato tramite il criterio vocale dell'utente di Lync e l'uscita tramite un gateway non abilitato per il routing basato sulla posizione (se disponibile)</p></td>
+<td><p>La chiamata inoltra o il trasferimento viene instradato attraverso i criteri di routing vocale del sito 1 e l'uscita tramite il gateway del sito 1</p></td>
+<td><p>La chiamata inoltra o il trasferimento viene instradato attraverso i criteri di routing vocale del sito 2 e l'uscita tramite il gateway del sito 2</p></td>
+<td><p>La chiamata inoltra o il trasferimento viene instradato attraverso il criterio vocale di Lync User e l'uscita tramite un gateway non abilitato per il routing basato sulla posizione (se disponibile)</p></td>
 </tr>
 </tbody>
 </table>
@@ -271,9 +271,9 @@ Nella tabella seguente viene illustrato il modo in cui il routing basato sulla p
 
 ## <a name="simultaneous-ringing"></a>Squillo simultaneo
 
-Una volta configurato il routing basato sulla posizione nella topologia di esempio, vengono applicate le interazioni seguenti.
+Una volta configurata la distribuzione in base alla posizione nella topologia di esempio, vengono applicate le interazioni seguenti.
 
-La tabella seguente illustra se il routing basato sulla posizione consente la chiamata simultanea per diversi utenti di Lync (ad esempio, Lync User 2, Lync User 4 e così via).
+Nella tabella seguente viene illustrato se il routing in base alla posizione consente lo squillo simultaneo di diversi utenti di Lync (ad esempio, Lync User 2, Lync User 4 e così via).
 
 
 <table>
@@ -285,15 +285,15 @@ La tabella seguente illustra se il routing basato sulla posizione consente la ch
 </colgroup>
 <thead>
 <tr class="header">
-<th>Destinazione chiamata PSTN in arrivo</th>
-<th>Utente di Lync 2</th>
-<th>Utente di Lync 4</th>
-<th>L'utente di Lync nel sito di rete non è abilitato per il routing basato sulla posizione</th>
+<th>Destinazione chiamata PSTN in ingresso</th>
+<th>Lync User 2</th>
+<th>Lync User 4</th>
+<th>Utente di Lync nel sito di rete non abilitato per il routing in base alla posizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Utente Lync 1</p></td>
+<td><p>Lync utente 1</p></td>
 <td><p>Squillo simultaneo consentito</p></td>
 <td><p>Squillo simultaneo non consentito</p></td>
 <td><p>Squillo simultaneo non consentito</p></td>
@@ -302,7 +302,7 @@ La tabella seguente illustra se il routing basato sulla posizione consente la ch
 </table>
 
   
-La tabella seguente illustra se il routing basato sulla posizione consente la chiamata simultanea a un endpoint PSTN da diversi utenti di Lync, ad esempio Lync User 2, Lync User 4 e così via.
+Nella tabella seguente viene illustrato se il routing in base alla posizione consente lo squillo simultaneo a un endpoint PSTN da diversi utenti di Lync (ad esempio, Lync User 2, Lync User 4 e così via).
 
 
 <table>
@@ -315,17 +315,17 @@ La tabella seguente illustra se il routing basato sulla posizione consente la ch
 <thead>
 <tr class="header">
 <th>Destinazione anello simultaneo</th>
-<th>Utente di Lync 2</th>
-<th>Utente di Lync 4</th>
-<th>L'utente di Lync nel sito di rete non è abilitato per il routing basato sulla posizione</th>
+<th>Lync User 2</th>
+<th>Lync User 4</th>
+<th>Utente di Lync nel sito di rete non abilitato per il routing in base alla posizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Lync utente 1 cellulare (endpoint PSTN)</p></td>
-<td><p>Chiamata instradata tramite il criterio di routing vocale di Network site 1 e l'uscita tramite gateway del sito 1</p></td>
-<td><p>Chiamata instradata tramite il criterio di routing vocale di Network site 2 e l'uscita tramite gateway del sito 2</p></td>
-<td><p>Chiamata instradata tramite il criterio vocale chiamante ed è in uscita tramite un gateway PSTN non abilitato per il routing basato sulla posizione</p></td>
+<td><p>Telefono cellulare Lync User 1 (endpoint PSTN)</p></td>
+<td><p>Chiamata instradata tramite il criterio di routing vocale di Network site 1 e l'uscita tramite il gateway del sito 1</p></td>
+<td><p>Chiamata instradata tramite il criterio di routing vocale di Network site 2 e l'uscita tramite il gateway del sito 2</p></td>
+<td><p>La chiamata viene instradata tramite il criterio vocale chiamante e l'uscita tramite un gateway PSTN non è abilitata per il routing in base alla posizione</p></td>
 </tr>
 </tbody>
 </table>

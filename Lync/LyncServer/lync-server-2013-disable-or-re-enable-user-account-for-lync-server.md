@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: disabilitare o riattivare l'account utente per Lync Server"
+title: "Lync Server 2013: disabilitare o riabilitare l'account utente per Lync Server"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183455
 ms.date: 04/05/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: aea86048fa29e9b6a21aa040093edff3f53ffe27
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: cc7ed0572d36a87532c4845df887dc87ccb34eec
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757620"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035128"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="disable-or-re-enable-user-account-for-lync-server-2013"></a>Disabilitare o riattivare l'account utente per Lync Server 2013
+# <a name="disable-or-re-enable-user-account-for-lync-server-2013"></a>Disabilitare o riabilitare l'account utente per Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41757620"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-04-04_
+_**Ultimo argomento modificato:** 2016-04-04_
 
-È possibile usare la procedura seguente per disabilitare un account utente abilitato in precedenza in Lync Server 2013 senza perdere le impostazioni di Lync Server configurate per l'account utente. Poiché non si perdono le impostazioni dell'account utente di Lync Server, è possibile riattivare nuovamente un account utente abilitato in precedenza senza dover riconfigurare l'account utente.
+È possibile utilizzare la procedura seguente per disabilitare un account utente abilitato in precedenza in Lync Server 2013 senza perdere le impostazioni di Lync Server configurate per l'account utente. Poiché le impostazioni dell'account utente di Lync Server non vengono perse, è possibile riattivare nuovamente un account utente abilitato in precedenza senza dover riconfigurare l'account utente.
 
 <div>
 
 
 > [!WARNING]  
-> La semplice disabilitazione di un account utente in Active Directory <STRONG>non</STRONG> impedirà a un utente di accedere o usare Lync Server. Questo perché Lync usa l'autenticazione dei certificati che semplifica il processo di autenticazione e questi certificati client sono validi per 180 giorni. Se si vuole interrompere l'accesso a Lync Server per gli account di Active Directory abilitati per Lync, è necessario utilizzare il cmdlet <STRONG>Disable-CsUser</STRONG> oppure usare il <STRONG>Pannello di controllo di Lync Server</STRONG> come disposto in questo articolo. Quando l'utente è disabilitato in Lync e l'archivio di gestione centrale è stato replicato nell'ambiente, gli utenti non potranno più eseguire l'accesso. Inoltre, gli utenti che hanno eseguito l'accesso verranno disconnessi.
+> La semplice disabilitazione di un account utente in Active Directory <STRONG>non</STRONG> impedirà a un utente di accedere o utilizzare Lync Server. Ciò è dovuto al fatto che Lync utilizza l'autenticazione dei certificati per semplificare il processo di autenticazione e questi certificati client sono validi per 180 giorni. Se si desidera arrestare gli account di Active Directory disabilitati che sono stati abilitati per Lync dall'accesso a Lync Server, è necessario utilizzare il cmdlet <STRONG>Disable-CsUser</STRONG> oppure utilizzare il <STRONG>Pannello di controllo di Lync Server</STRONG> come indicato in questo articolo. Dopo che l'utente è stato disabilitato in Lync e l'archivio di gestione centrale è stato replicato nell'ambiente, gli utenti non saranno più in grado di eseguire l'accesso. Inoltre, gli utenti che hanno effettuato l'accesso verranno disconnessi.
 
 
 
@@ -51,19 +51,19 @@ _**Argomento Ultima modifica:** 2016-04-04_
 
 <div>
 
-## <a name="to-disable-or-re-enable-a-previously-enabled-user-account-for-lync-server"></a>Per disabilitare o riattivare un account utente abilitato in precedenza per Lync Server
+## <a name="to-disable-or-re-enable-a-previously-enabled-user-account-for-lync-server"></a>Per disabilitare o riabilitare un account utente abilitato in precedenza per Lync Server
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **utenti**.
+3.  Sulla barra di spostamento sinistra fare clic su **Utenti**.
 
-4.  Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente che si desidera disabilitare o riabilitare e quindi fare clic su **trova**.
+4.  Nella casella **Cerca utenti** digitare tutto o solo la prima parte del nome visualizzato, del nome, del cognome, del nome di account SAM (Security Accounts Manager), dell'indirizzo SIP o dell'URI (Uniform Resource Identifier) linea dell'account utente che si desidera disabilitare o abilitare di nuovo e quindi fare clic su **Trova**.
 
-5.  Nella tabella fare clic sull'account utente che si vuole disabilitare o riattivare.
+5.  Nella tabella fare clic sull'account utente che si desidera disabilitare o abilitare di nuovo.
 
-6.  Nel menu **azione** eseguire una delle operazioni seguenti:
+6.  Dal menu **Azione** scegliere uno dei comandi seguenti:
     
       - Per disabilitare temporaneamente l'account utente per Lync Server 2013, fare clic su **Disabilita temporaneamente per Lync Server**.
     
@@ -73,15 +73,15 @@ _**Argomento Ultima modifica:** 2016-04-04_
 
 <div>
 
-## <a name="using-windows-powershell-to-disable-or-re-enable-user-accounts"></a>Uso di Windows PowerShell per disabilitare o riattivare gli account utente
+## <a name="using-windows-powershell-to-disable-or-re-enable-user-accounts"></a>Utilizzo di Windows PowerShell per disabilitare o riabilitare gli account utente
 
-Gli account utente possono essere temporaneamente disabilitati e quindi riattivati in seguito usando il cmdlet **Set-CsUser** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+Gli account utente possono essere temporaneamente disattivati e quindi riattivati in un secondo momento utilizzando il cmdlet **Set-CsUser** . È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
 ## <a name="to-disable-a-user-account"></a>Per disabilitare un account utente
 
-  - Per disabilitare temporaneamente un account utente, imposta il valore della proprietà Enabled su false ($False). Ad esempio:
+  - Per disabilitare temporaneamente un account utente, impostare il valore della proprietà Enabled su false ($False). Ad esempio:
     
         Set-CsUser -Identity "Ken Myer" -Enabled $False
 
@@ -91,13 +91,13 @@ Gli account utente possono essere temporaneamente disabilitati e quindi riattiva
 
 ## <a name="to-re-enable-a-user-account"></a>Per riattivare un account utente
 
-  - Per riattivare un account utente disabilitato, imposta il valore della proprietà Enabled su true ($True). Ad esempio:
+  - Per riattivare un account utente disabilitato, impostare il valore della proprietà Enabled su true ($True). Ad esempio:
     
         Set-CsUser -Identity "Ken Myer" -Enabled $True
 
 </div>
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsUser](https://docs.microsoft.com/powershell/module/skype/Set-CsUser) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsUser](https://docs.microsoft.com/powershell/module/skype/Set-CsUser) .
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: eliminare le impostazioni di configurazione del registrar esistenti'
+title: 'Lync Server 2013: eliminare le impostazioni di configurazione esistenti per il registrar'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185132
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 960d0dd055ccf2f380b1ebf8124432da8daf6563
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b8c6b7238ab13c00289c5de1049163137d8cce71
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763500"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029247"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="delete-existing-registrar-configuration-settings-in-lync-server-2013"></a>Eliminare le impostazioni di configurazione del registrar esistenti in Lync Server 2013
+# <a name="delete-existing-registrar-configuration-settings-in-lync-server-2013"></a>Eliminare le impostazioni di configurazione di registrazione esistenti in Lync Server 2013
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41763500"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-Seguire questa procedura per eliminare un registrar.
+Eseguire la procedura seguente per eliminare una funzione di registrazione.
 
 <div>
 
-## <a name="to-delete-registrar-configuration-settings"></a>Per eliminare le impostazioni di configurazione del registrar
+## <a name="to-delete-registrar-configuration-settings"></a>Per eliminare le impostazioni di configurazione del servizio di registrazione
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer presente nella rete in cui è stato distribuito Lync Server 2013.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a un computer nella rete in cui è stato distribuito Lync Server 2013.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **sicurezza** e quindi su **registrar**.
+3.  Sulla barra di spostamento sinistra fare clic su **Sicurezza**, quindi su **Funzione di registrazione**.
 
-4.  Nella pagina **registrar** e nel campo di ricerca digitare tutto o parte del nome del registrar che si vuole eliminare.
+4.  Nella pagina **Funzione di registrazione** digitare il nome della funzione di registrazione che si desidera eliminare nel campo di ricerca, per intero o in parte.
 
-5.  Nell'elenco fare clic sul registrar desiderato, fare clic su **modifica**e quindi su **Elimina**.
+5.  Nell'elenco fare clic sulla funzione di registrazione desiderata, fare clic su **Modifica**, quindi su **Elimina**.
 
 6.  Fare clic su **OK**.
 
@@ -59,15 +59,15 @@ Seguire questa procedura per eliminare un registrar.
 
 <div>
 
-## <a name="removing-registrar-configuration-settings-by-using-windows-powershell-cmdlets"></a>Rimozione delle impostazioni di configurazione del registrar tramite i cmdlet di Windows PowerShell
+## <a name="removing-registrar-configuration-settings-by-using-windows-powershell-cmdlets"></a>Rimozione delle impostazioni di configurazione del servizio di registrazione tramite i cmdlet di Windows PowerShell
 
-Per eliminare le impostazioni di configurazione del registrar, è possibile usare Windows PowerShell e il cmdlet **Remove-CsProxyConfiguration** . Puoi eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile eliminare le impostazioni di configurazione del servizio di registrazione utilizzando Windows PowerShell e il cmdlet **Remove-CsProxyConfiguration** . È possibile eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
-## <a name="to-remove-a-specific-set-of-registrar-security-settings"></a>Per rimuovere un set specifico di impostazioni di sicurezza del registrar
+## <a name="to-remove-a-specific-set-of-registrar-security-settings"></a>Per rimuovere un set specifico di impostazioni di sicurezza della funzione di registrazione
 
-  - Il comando seguente rimuove le impostazioni di sicurezza del registrar applicate alla atl-edge-011.litwareinc.com di Edge Server:
+  - Il comando seguente rimuove le impostazioni di sicurezza della funzione di registrazione applicate al server perimetrale atl-edge-011.litwareinc.com:
     
         Remove-CsProxyConfiguration -Identity service:EdgeServer:atl-edge-011.litwareinc.com
 
@@ -75,9 +75,9 @@ Per eliminare le impostazioni di configurazione del registrar, è possibile usar
 
 <div>
 
-## <a name="to-remove-all-of-the-registrar-security-settings-applied-to-the-site-scope"></a>Per rimuovere tutte le impostazioni di sicurezza del registrar applicate all'ambito del sito
+## <a name="to-remove-all-of-the-registrar-security-settings-applied-to-the-site-scope"></a>Per rimuovere tutte le impostazioni di sicurezza della funzione di registrazione applicate all'ambito del sito
 
-  - Il comando seguente rimuove tutte le impostazioni di sicurezza del registrar applicate al servizio Registrar:
+  - Il comando seguente rimuove tutte le impostazioni di sicurezza della funzione di registrazione applicate al servizio di registrazione:
     
         Get-CsProxyConfiguration -Filter "service:Registrar:*" | Remove-CsProxyConfiguration
 
@@ -85,9 +85,9 @@ Per eliminare le impostazioni di configurazione del registrar, è possibile usar
 
 <div>
 
-## <a name="to-remove-all-of-the-registrar-security-settings-that-allow-ntlm-authentication"></a>Per rimuovere tutte le impostazioni di sicurezza del registrar che consentono l'autenticazione NTLM
+## <a name="to-remove-all-of-the-registrar-security-settings-that-allow-ntlm-authentication"></a>Per rimuovere tutte le impostazioni di sicurezza della funzione di registrazione che consentono l'autenticazione NTLM
 
-  - Il comando seguente elimina tutte le impostazioni di sicurezza del registrar che consentono l'uso di NTLM per l'autenticazione client:
+  - Il comando seguente elimina tutte le impostazioni di sicurezza della funzione di registrazione che consentono l'utilizzo di NTLM per l'autenticazione client:
     
         Get-CsProxyConfiguration | Where-Object {$_.UseNtlmForClientToProxyAuth -eq $True}| Remove-CsProxyConfiguration
 

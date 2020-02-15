@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: cmdlet endpoint applicazione'
+title: "Lync Server 2013: cmdlet per gli endpoint dell'applicazione"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184812
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 455f6c7a8be662b2aeac39929ba6a4263f9f244b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 53c68b2ad88140aadd7e30beb46bb357c83b93c0
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737756"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028997"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="application-endpoints-cmdlets-in-lync-server-2013"></a>Cmdlet endpoint applicazione in Lync Server 2013
+# <a name="application-endpoints-cmdlets-in-lync-server-2013"></a>Cmdlet per gli endpoint dell'applicazione in Lync Server 2013
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41737756"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-20_
+_**Ultimo argomento modificato:** 2012-06-20_
 
-Gli endpoint dell'applicazione sono oggetti contatto all'interno di servizi di dominio Active Directory. È possibile usare i cmdlet di Lync Server Management Shell per gestire questi contatti per Microsoft Lync Server 2013.
+Gli endpoint dell'applicazione sono oggetti contatto all'interno di servizi di dominio Active Directory. È possibile utilizzare i cmdlet dall'interno di Lync Server Management Shell per gestire questi contatti per Microsoft Lync Server 2013.
 
 <div>
 
-## <a name="application-endpoints-cmdlets"></a>Cmdlet endpoint applicazione
+## <a name="application-endpoints-cmdlets"></a>Cmdlet per gli endpoint applicazione
 
-Usare i cmdlet seguenti per gestire gli endpoint dell'applicazione.
+Utilizzare i cmdlet seguenti per gestire gli endpoint applicazione.
 
 **Endpoint applicazione**
 
   - <span></span>  
-    [Get-CsApplicationEndpoint](https://technet.microsoft.com/en-us/library/Gg398655(v=OCS.15))
+    [Get-CsApplicationEndpoint](https://technet.microsoft.com/library/Gg398655(v=OCS.15))
 
   - <span></span>  
-    [Move-CsApplicationEndpoint](https://technet.microsoft.com/en-us/library/Gg398188(v=OCS.15))
+    [Move-CsApplicationEndpoint](https://technet.microsoft.com/library/Gg398188(v=OCS.15))
 
 </div>
 

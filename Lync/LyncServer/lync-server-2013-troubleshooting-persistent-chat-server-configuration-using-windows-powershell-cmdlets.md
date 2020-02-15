@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Risoluzione dei problemi di configurazione del server Chat persistente tramite i cmdlet di Windows PowerShell'
+title: 'Lync Server 2013: risoluzione dei problemi relativi alla configurazione del server Chat persistente tramite i cmdlet di Windows PowerShell'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183921
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ba5420fb06a0c69d94ec7cf5183cba61bb8e72b5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: dff2cf4fb11c04a59baa54db88b5cb90c738fa31
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41745006"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028887"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="troubleshooting-persistent-chat-server-configuration-using-windows-powershell-cmdlets-in-lync-server-2013"></a>Risoluzione dei problemi di configurazione del server Chat persistente tramite i cmdlet di Windows PowerShell in Lync Server 2013
+# <a name="troubleshooting-persistent-chat-server-configuration-using-windows-powershell-cmdlets-in-lync-server-2013"></a>Risoluzione dei problemi relativi alla configurazione del server Chat persistente tramite i cmdlet di Windows PowerShell in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41745006"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-06_
+_**Ultimo argomento modificato:** 2012-10-06_
 
-Usare le soluzioni alternative seguenti per risolvere i problemi di configurazione del server di chat persistente con i cmdlet di interfaccia della riga di comando di Windows PowerShell.
+Utilizzare le soluzioni alternative seguenti per risolvere i problemi di configurazione del server Chat persistente con i cmdlet dell'interfaccia della riga di comando di Windows PowerShell.
 
-  - Se viene visualizzato il messaggio di errore "Principal non provisioning", l'entità che si è tentato di aggiungere non è disponibile.
+  - Se viene visualizzato il messaggio di errore che informa che non è stato eseguito il provisioning dell'entità, l'entità che si sta tentando di aggiungere non è disponibile.
     
     <div>
     
 
     > [!TIP]  
-    > Soluzione alternativa: nessuna soluzione alternativa. Questo messaggio di errore indica che l'entità non è disponibile.
+    > Soluzione: nessuna. Questo messaggio di errore indica che l'entità non è disponibile.
 
     
     </div>

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Delega'
+title: 'Lync Server 2013: delega'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 51803956
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8da9568ae4cd613dcba0760fb4a8b20295fbb68d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a9d9f5473f94f093d92cce1b4664f54d6f32430d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739806"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028517"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41739806"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-03-09_
+_**Ultimo argomento modificato:** 2013-03-09_
 
-Le funzionalità di delega di Lync sono interessate dal routing basato sulla posizione nel modo seguente:
+Le funzionalità di delega di Lync sono intaccate dal routing basato sulla posizione nel modo seguente:
 
-  - Quando un delegato abilitato per il routing basato sulla posizione effettua una chiamata per conto di un Manager, il criterio vocale del delegato viene usato per autorizzare la chiamata e i criteri di routing vocale del sito del delegato verranno usati per instradare la chiamata
+  - Quando un delegato abilitato per il routing in base alla posizione inserisce una chiamata per conto di un responsabile, il criterio vocale del delegato viene utilizzato per autorizzare la chiamata e il criterio di routing vocale del sito del delegato verrà utilizzato per instradare la chiamata
 
-  - Per le chiamate PSTN in arrivo a un responsabile, le stesse regole applicabili per l'inoltro di chiamata o lo squillo simultaneo verranno applicate come descritto negli argomenti trasferimento chiamate e inoltro e squillo simultaneo.
+  - Per le chiamate PSTN in arrivo a un Manager, si applicano le stesse regole applicabili per l'inoltro di chiamata o lo squillo simultaneo come descritto negli argomenti trasferimento di chiamata e inoltro e squillo simultaneo.
 
-  - Quando un delegato imposta un endpoint PSTN come destinazione squillo simultaneo, per una chiamata in arrivo al Manager, il criterio di routing vocale del sito associato al trunk in arrivo verrà usato per instradare la chiamata all'endpoint PSTN del delegato.
+  - Quando un delegato imposta un endpoint PSTN come destinazione anello simultaneo, per una chiamata in arrivo al responsabile, il criterio di routing vocale del sito associato al trunk in ingresso verrà utilizzato per instradare la chiamata all'endpoint PSTN del delegato.
 
   - Per la delega, è consigliabile che il responsabile e i delegati associati si trovino in genere nello stesso sito di rete.
 

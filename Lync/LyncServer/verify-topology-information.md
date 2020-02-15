@@ -12,16 +12,16 @@ ms:contentKeyID: 48185046
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ec6c73f274cb67b527aaf1147f20e83959487255
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5987dc071abb888f8d1f6eca0d3082f2a8ab7523
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730836"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036274"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,32 +35,32 @@ ms.locfileid: "41730836"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-26_
+_**Ultimo argomento modificato:** 2012-09-26_
 
-Il primo passaggio per verificare l'Unione completata correttamente consiste nel visualizzare le informazioni sulla topologia di Office Communications Server 2007 R2 Unite a Lync Server 2013. In Generatore di topologia il nodo **BackCompatSite** Visualizza il nome di dominio completo (FQDN) di ogni pool e server di Office Communications Server 2007 R2 che è stato Unito.
+Il primo passaggio per la verifica dell'Unione completata ha esito positivo per visualizzare le informazioni sulla topologia di Office Communications Server 2007 R2 Unite a Lync Server 2013. In Generatore di topologie il nodo **BackCompatSite** Visualizza il nome di dominio completo (FQDN) di ogni pool e server di Office Communications Server 2007 R2 che è stato Unito.
 
 <div>
 
 ## <a name="to-view-backcompatsite-in-topology-builder"></a>Per visualizzare BackCompatSite in Generatore di topologie
 
-1.  Nell'ambiente Office Communications Server 2007 R2 aprire lo strumento di amministrazione di Office Communications Server 2007 R2 e prendere nota dei nomi di dominio completi dei pool e server legacy.
+1.  Nell'ambiente Office Communications Server 2007 R2, aprire lo strumento di amministrazione di Office Communications Server 2007 R2 e prendere nota dei nomi FQDN dei pool e server legacy.
 
 2.  Nell'ambiente Lync Server 2013 aprire Generatore di topologie e quindi espandere il nodo **BackCompatSite** .
 
-3.  Verificare che i nomi di dominio completi per i pool e i server che si fondono vengano visualizzati.
+3.  Verificare che siano visualizzati gli FQDN dei pool e dei server da unire.
     
     <div>
     
 
     > [!NOTE]  
-    > Non vengono visualizzate informazioni in <STRONG>BackCompatSite</STRONG> per i ruoli server collocati in un server front-end o in un server Standard Edition. Vengono mostrati solo i ruoli del server necessari per l'interoperabilità tra Office Communications Server 2007 R2 e Lync Server 2013.
+    > In <STRONG>BackCompatSite</STRONG> non viene visualizzata alcuna informazione per i ruoli del server collocati in un Front End Server o in un server Standard Edition. Vengono visualizzati solo i ruoli del server necessari per l'interoperabilità tra Office Communications Server 2007 R2 e Lync Server 2013.
 
     
     </div>
 
-![Finestra di dialogo per BackCompatSite in Generatore di topologie](images/JJ205243.62751c76-f018-4c6d-bb48-c61ef8974d31(OCS.15).jpg "Finestra di dialogo per BackCompatSite in Generatore di topologie")
+![Finestra di dialogo Generatore di topologie BackCompatSite](images/JJ205243.62751c76-f018-4c6d-bb48-c61ef8974d31(OCS.15).jpg "Finestra di dialogo Generatore di topologie BackCompatSite")
 
-È anche possibile usare il pannello di controllo di Lync Server 2013 per visualizzare la topologia unita. Nel pannello di controllo di Lync Server 2013 è possibile visualizzare ogni nome di dominio completo del server, FQDN del pool e sito per la topologia unita. I server Uniti hanno un nome di **sito** di **BackCompatSite**.
+È inoltre possibile utilizzare il pannello di controllo di Lync Server 2013 per visualizzare la topologia unita. Nel pannello di controllo di Lync Server 2013, è possibile visualizzare ogni server FQDN, FQDN del pool e nome del sito per la topologia unita. Il **Sito** dei server uniti si chiama **BackCompatSite**.
 
 </div>
 
@@ -70,19 +70,19 @@ Il primo passaggio per verificare l'Unione completata correttamente consiste nel
 
 1.  Aprire il pannello di controllo di Lync Server 2013.
 
-2.  Fare clic su **topologia**.
+2.  Fare clic su **Topologia**.
 
-3.  Nella scheda **stato** verificare che i server e i pool conglobati vengano visualizzati cercando **BackCompatSite** nella colonna **sito** .
+3.  Nella scheda **Stato** verificare che i server e i pool uniti siano visualizzati cercando **BackCompatSite** nella colonna **Sito**.
 
-![Pannello di controllo di Lync Server con unione di topologie](images/JJ205151.f986ddd4-2040-454d-9389-7f6154b59cc9(OCS.15).jpg "Pannello di controllo di Lync Server con unione di topologie")
+![Pannello di controllo di Lync Server che mostra la topologia unita](images/JJ205151.f986ddd4-2040-454d-9389-7f6154b59cc9(OCS.15).jpg "Pannello di controllo di Lync Server che mostra la topologia unita")
 
-Per visualizzare altri dettagli su un pool Unito, usare il cmdlet **Get-CsPool** . Oltre alle informazioni disponibili in Generatore di topologia e nel pannello di controllo di Lync Server 2013, questo cmdlet Visualizza i servizi eseguiti nel pool di Lync Server 2013.
+Per visualizzare altri dettagli su un pool unito, utilizzare il cmdlet **Get-CsPool**. Oltre alle informazioni disponibili nel pannello di controllo di generatore di topologie e Lync Server 2013, questo cmdlet consente di visualizzare i servizi in esecuzione nel pool di Lync Server 2013.
 
 <div>
 
 
 > [!NOTE]  
-> Quando si pubblica la topologia dopo l'esecuzione della creazione guidata unione in Generatore di topologie, le directory conferenza vengono unite a Lync Server 2013. Le directory conferenza possono essere verificate eseguendo il cmdlet <STRONG>Get-CsConferenceDirectory</STRONG> .
+> Quando si pubblica la topologia dopo aver eseguito la procedura di Unione guidata in Generatore di topologie, le directory conferenze vengono unite a Lync Server 2013. Le directory conferenze possono essere verificate eseguendo il cmdlet <STRONG>Get-CsConferenceDirectory</STRONG> .
 
 
 
@@ -92,7 +92,7 @@ Per visualizzare altri dettagli su un pool Unito, usare il cmdlet **Get-CsPool**
 
 <div>
 
-## <a name="to-view-services-on-a-merged-pool"></a>Per visualizzare i servizi in un pool Unito
+## <a name="to-view-services-on-a-merged-pool"></a>Per visualizzare i servizi in un pool unito
 
 1.  Aprire Lync Server 2013 Management Shell.
 
@@ -108,7 +108,7 @@ Per visualizzare altri dettagli su un pool Unito, usare il cmdlet **Get-CsPool**
 
 <div>
 
-## <a name="to-verify-conference-directories-merged"></a>Per verificare l'Unione delle directory conferenza
+## <a name="to-verify-conference-directories-merged"></a>Per verificare le directory conferenze unite
 
 1.  Aprire Lync Server 2013 Management Shell.
 
@@ -116,7 +116,7 @@ Per visualizzare altri dettagli su un pool Unito, usare il cmdlet **Get-CsPool**
     
         Get-CsConferenceDirectory
 
-3.  Verificare che tutte le directory conferenza per il pool o il server da unire siano ora in Lync Server 2013.
+3.  Verificare che tutte le directory conferenze per il pool o il server in cui si esegue l'Unione siano presenti in Lync Server 2013.
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Failover del pool di server perimetrali utilizzato per la federazione di XMPP'
+title: 'Lync Server 2013: failover del pool di Edge utilizzato per la Federazione XMPP'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733659
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9d1c76dc37ce1abb2d34c474d4144b0894d93a0f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f3957f3fc5a315c5b661ddeec4ea83b8e7f0eab0
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765184"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030419"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="failing-over-the-edge-pool-used-for-xmpp-federation-in-lync-server-2013"></a>Failover del pool di server perimetrali utilizzato per la federazione di XMPP in Lync Server 2013
+# <a name="failing-over-the-edge-pool-used-for-xmpp-federation-in-lync-server-2013"></a>Failover del pool di server perimetrali utilizzato per la Federazione XMPP in Lync 2013
 
 </div>
 
@@ -35,39 +35,39 @@ ms.locfileid: "41765184"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-19_
+_**Ultimo argomento modificato:** 2012-10-19_
 
-Nell'organizzazione esiste un pool di bordi designato come pool da usare per la Federazione XMPP. Se il pool scende, è necessario eseguire il failover della Federazione XMPP per usare un pool di bordi diverso prima che la Federazione XMPP possa funzionare di nuovo.
+All'interno dell'organizzazione un solo pool di server perimetrali è designato come pool da usare per la federazione XMPP. Se questo pool non è disponibile, per consentire il funzionamento della federazione XMPP è necessario eseguire il failover di questa a un altro pool di server perimetrali.
 
-La prima volta che si installano pool di bordi e si Abilita la Federazione XMPP, è possibile semplificare il processo di ripristino di emergenza impostando i record SRV DNS esterni per tutti i pool di Edge per la Federazione XMPP, anziché solo uno. Ognuno di questi record SRV deve avere un set di priorità diverso. Tutto il traffico federativo XMPP passa attraverso il pool con il record SRV con la massima priorità. Per altre informazioni sull'abilitazione e la configurazione della Federazione XMPP, vedere [configurazione della Federazione XMPP in Lync Server 2013](lync-server-2013-setting-up-xmpp-federation.md).
+Quando si installano i pool di server perimetrali e si abilita la federazione XMPP per la prima volta, per semplificare il processo di ripristino di emergenza della federazione XMPP è possibile impostare record DNS SRV esterni per tutti i pool di server perimetrali, invece che per uno solo. Per ciascuno di questi record SRV deve essere impostata una priorità diversa. Tutto il traffico di federazione XMPP passa per il pool con il record SRV con la priorità più alta. Per ulteriori informazioni sull'abilitazione e sulla configurazione della Federazione XMPP, vedere [Setting up XMPP Federation in Lync Server 2013](lync-server-2013-setting-up-xmpp-federation.md).
 
-Nella procedura seguente, EdgePool1 è il pool che ospitava originariamente la Federazione XMPP e EdgePool2 è il pool che ora ospiterà la Federazione XMPP.
+Nella procedura seguente EdgePool1 è il pool di server perimetrali che ospita la federazione XMPP originariamente ed EdgePool2 è il pool che la ospiterà.
 
 <div>
 
-## <a name="failing-over-the-edge-pool-used-for-xmpp-federation"></a>Errori nel pool di bordi usato per la Federazione XMPP
+## <a name="failing-over-the-edge-pool-used-for-xmpp-federation"></a>Failover del pool di server perimetrali usato per la federazione XMPP
 
-1.  Se non si dispone già di un altro pool di Edge distribuito, oltre a quello attualmente in calo, distribuire il pool. Per informazioni dettagliate, vedere [distribuzione dell'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-deploying-external-user-access.md).
+1.  Se oltre al pool di server perimetrali non disponibile non ne sono stati distribuiti altri, distribuirne uno. Per informazioni dettagliate, vedere [Deploying External User Access in Lync Server 2013](lync-server-2013-deploying-external-user-access.md).
 
-2.  In ogni Edge Server nel nuovo pool di Edge che ora ospiterà la Federazione XMPP (EdgePool2), eseguire il cmdlet seguente:
+2.  In ogni server perimetrale del nuovo pool di server perimetrali che ora ospita la federazione XMPP (EdgePool2) eseguire il cmdlet seguente:
     
         Stop-CsWindowsService
 
-3.  Eseguire il cmdlet seguente per reindirizzare la route federativo XMPP a EdgePool2:
+3.  Eseguire il cmdlet seguente per puntare la route della federazione XMPP a EdgePool2:
     
         Set-CsSite Site2 -XmppExternalFederationRoute EdgeServer2.contoso.com
     
-    In questo esempio, sito2 è il sito che contiene il pool di bordi che ora ospiterà la route federativa XMPP e EdgeServer2.contoso.com è il nome di dominio completo di un server perimetrale in tale pool.
+    In questo esempio, Site2 è il sito che contiene il pool di server perimetrali che ospiterà la route della federazione XMPP ed EdgeServer2.contoso.com è l'FQDN di un server perimetrale del pool.
 
-4.  Nel server DNS esterno modificare il record DNS per la Federazione XMPP in punti a EdgeServer2.contoso.com.
+4.  Nel server DNS esterno modificare il record DNS A in modo che la federazione XMPP punti a EdgeServer2.contoso.com.
 
-5.  Se non si ha già un record SRV DNS per la Federazione XMPP che si risolve nel pool di Edge che ora ospiterà la Federazione XMPP, è necessario aggiungerlo, come nell'esempio seguente. Questo record SRV deve avere un valore di porta 5269.
+5.  Se per la federazione XMPP non è disponibile un record DNS SRV corrispondente al pool di server perimetrali che ospiterà la federazione XMPP, è necessario aggiungerlo così com'è illustrato nell'esempio seguente. Il valore della porta del record SRV deve essere 5269.
     
         _xmpp-server._tcp.contoso.com
 
-6.  Verificare che il pool di Edge che ora ospita la Federazione XMPP contenga la porta 5269 aperta esternamente.
+6.  Verificare che il pool di server perimetrali che ospiterà la federazione XMPP abbia la porta 5269 aperta verso l'esterno.
 
-7.  Avviare i servizi in tutti i server perimetrali nel pool di Edge, che ora ospiterà la Federazione XMPP:
+7.  Avviare i servizi in tutti i server perimetrali del pool che ospiterà la federazione XMPP:
     
         Start-CsWindowsService
 

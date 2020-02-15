@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Definire la topologia perimetrale'
+title: 'Lync Server 2013: definire la topologia perimetrale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184562
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4a04dca4b935caf8f07546babd2c53f65fff4e89
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9bd7c52eef58d4e40c767f48a296a83a8c056525
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763940"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036426"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,172 +35,172 @@ ms.locfileid: "41763940"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-28_
+_**Ultimo argomento modificato:** 2012-09-28_
 
-Per creare la topologia, è necessario usare generatore di topologia e configurare almeno un pool di front-end interno o un server Standard Edition prima di poter distribuire il server perimetrale. Usare la procedura seguente per definire la topologia di Edge per un singolo Edge Server e quindi usare le procedure descritte in [pubblicare la topologia in Lync server 2013](lync-server-2013-publish-your-topology.md) ed [esportare la topologia di Lync Server 2013 e copiarla in elementi multimediali esterni per l'installazione di Edge](lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md) per pubblicare la topologia e renderla disponibile per il server perimetrale.
+Per poter distribuire il server perimetrale, è necessario utilizzare Generatore di topologie per creare la topologia ed è necessario configurare almeno un pool Front End interno o un server Standard Edition. Utilizzare la procedura seguente per definire la topologia perimetrale per un singolo server perimetrale e quindi utilizzare le procedure descritte in [pubblicare la topologia in Lync server 2013](lync-server-2013-publish-your-topology.md) ed [esportare la topologia di Lync Server 2013 e copiarla su supporto esterno per l'installazione perimetrale](lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md) per pubblicare la topologia e renderla disponibile per il server perimetrale.
 
 <div>
 
 
 > [!NOTE]  
-> L'interfaccia perimetrale interna e l'interfaccia perimetrale esterna devono usare lo stesso tipo di bilanciamento del carico. Non è possibile usare il bilanciamento del carico DNS in un'interfaccia perimetrale e il bilanciamento del carico hardware nell'altra.
+> Per l'interfaccia perimetrale interna e per quella esterna è necessario utilizzare lo stesso tipo di bilanciamento del carico. Non è possibile utilizzare il bilanciamento del carico DNS in un'interfaccia perimetrale e il bilanciamento del carico hardware nell'altra.
 
 
 
 </div>
 
-Per pubblicare, abilitare o disabilitare correttamente una topologia durante l'aggiunta o la rimozione di un ruolo del server, è necessario avere effettuato l'accesso come utente membro dei gruppi RTCUniversalServerAdmins e Domain Admins. È anche possibile concedere i diritti di amministratore e le autorizzazioni necessarie per l'aggiunta di ruoli del server a un account utente. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione in Lync server 2013](lync-server-2013-delegate-setup-permissions.md) nella documentazione sulla distribuzione di server Standard Edition o Server Enterprise Edition. Per altre modifiche alla configurazione, è necessaria solo l'appartenenza al gruppo RTCUniversalServerAdmins.
+Per pubblicare, abilitare o disabilitare correttamente una topologia quando si aggiunge o rimuove un ruolo del server, è necessario aver effettuato l'accesso come membro dei gruppi RTCUniversalServerAdmins e Domain Admins. È anche possibile concedere le autorizzazioni e i diritti di amministratore necessari per l'aggiunta di ruoli del server a un account utente. Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync server 2013](lync-server-2013-delegate-setup-permissions.md) nella documentazione relativa alla distribuzione di server Standard Edition o Server Enterprise Edition. Per altre modifiche di configurazione, è necessaria solo l'appartenenza al gruppo RTCUniversalServerAdmins.
 
-Se è stata definita la topologia di Edge quando è stata definita e pubblicata la topologia interna e non sono necessarie modifiche alla topologia perimetrale definita in precedenza, non è necessario definirla e pubblicarla di nuovo. Usare la procedura seguente solo se è necessario apportare modifiche alla topologia di Edge. Per usare la topologia definita e pubblicata in precedenza per gli Edge Server, è necessario eseguire la procedura descritta in [esportare la topologia di Lync Server 2013 e copiarla in elementi multimediali esterni per l'installazione di Edge](lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md).
+Se la topologia perimetrale è stata definita durante la definizione e la pubblicazione della topologia interna e non sono richieste modifiche alla topologia perimetrale creata in precedenza, non è necessario definirla e pubblicarla di nuovo. Utilizzare la procedura seguente solo se è necessario apportare modifiche alla topologia perimetrale. È necessario rendere disponibile la topologia precedentemente definita e pubblicata ai server perimetrali, eseguendo la procedura descritta in [esportare la topologia di Lync Server 2013 e copiarla su supporto esterno per l'installazione perimetrale](lync-server-2013-export-your-topology-and-copy-it-to-external-media-for-edge-installation.md).
 
 <div>
 
 
 > [!IMPORTANT]  
-> Non è possibile eseguire Generatore di topologia da un server perimetrale. È necessario eseguirlo dal server front-end o da server Standard Edition.
+> Non è possibile eseguire Generatore di topologie da un server perimetrale. È necessario eseguirlo dal front end server o server Standard Edition.
 
 
 
 </div>
 
-Il processo per definire la topologia di Edge Server viene eseguito in Generatore di topologie. Di seguito sono elencati i tre tipi principali di topologie di Edge Server che si prevede di pianificare e configurare:
+Il processo per la definizione della topologia del server perimetrale viene effettuato in Generatore di topologie. In seguito sono elencati i tre tipi principali di topologie dei server perimetrali che è possibile pianificare e configurare:
 
-  - Per definire la topologia di un singolo Edge Server
+  - Per definire la topologia per un singolo server perimetrale
 
-  - Per definire la topologia di un pool di Edge Server con bilanciamento del carico
+  - Per definire la topologia per un pool di server perimetrali con bilanciamento del carico
 
-  - Per definire la topologia di un pool di Edge con bilanciamento del carico hardware
+  - Per definire la topologia per un pool di server perimetrali con bilanciamento del carico hardware
 
 <div>
 
-## <a name="to-define-the-topology-for-a-single-edge-server"></a>Per definire la topologia di un singolo Edge Server
+## <a name="to-define-the-topology-for-a-single-edge-server"></a>Per definire la topologia per un singolo server perimetrale
 
-1.  Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Generatore di topologia di Lync Server**.
+1.  Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Generatore di topologie**.
 
-2.  Nell'albero della console espandere il sito in cui si vuole distribuire un server perimetrale.
+2.  Nell'albero della console espandere il sito in cui si desidera distribuire un server perimetrale.
 
-3.  Fare clic con il pulsante destro del mouse su pool **Edge**e quindi scegliere **nuovo pool di bordi**.
+3.  Fare clic con il pulsante destro del mouse su pool **Edge**e quindi scegliere **nuovo pool di server perimetrali**.
 
-4.  In **definire il nuovo pool di bordi**fare clic su **Avanti**.
+4.  In **Definire il nuovo pool di server perimetrali** fare clic su **Avanti**.
 
-5.  In **definire il nome di dominio completo del pool Edge**eseguire le operazioni seguenti:
+5.  In **Definire l'FQDN del pool di server perimetrali** eseguire le operazioni seguenti:
     
-      - In **FQDN del pool**Digitare il nome di dominio completo (FQDN) dell'interfaccia interna per il server perimetrale.
+      - In **FQDN pool** digitare il nome di dominio completo (FQDN) dell'interfaccia interna per il server perimetrale.
         
         <div>
         
 
         > [!IMPORTANT]  
-        > Il nome specificato deve essere uguale al nome del computer configurato nel server. Per impostazione predefinita, il nome del computer di un computer che non è associato a un dominio è un nome breve, non un FQDN. Generatore di topologie usa gli FQDN e non i nomi brevi. Devi quindi configurare un suffisso DNS sul nome del computer da distribuire come server perimetrale che non è associato a un dominio. Usare solo caratteri standard (tra cui A-Z, a-z, 0-9 e segni meno) durante l'assegnazione di nomi di dominio completi di Lync Server, Edge Server e pool. Non usare caratteri Unicode o carattere di sottolineatura. I caratteri non standard di un nome di dominio completo spesso non sono supportati dal DNS esterno e dalle CA pubbliche (quando il nome di dominio completo deve essere assegnato a SN nel certificato). Per informazioni dettagliate sull'aggiunta di un suffisso DNS a un nome di computer, vedere <A href="lync-server-2013-configure-dns-for-edge-support.md">configurare il supporto DNS per Edge in Lync Server 2013</A>.
+        > Il nome specificato deve essere uguale al nome computer configurato nel server. Per impostazione predefinita, il nome di un computer non aggiunto a un dominio è un nome breve e non un FQDN. Generatore di topologie utilizza gli FQDN e non i nomi brevi. Pertanto, è necessario configurare un suffisso DNS sul nome del computer da distribuire come server perimetrale non aggiunto a un dominio. Utilizzare solo caratteri standard, ovvero A-Z, a-z, 0-9 e trattini, per assegnare FQDN dei server Lync Server, dei server perimetrali e dei pool. Non utilizzare caratteri Unicode o di sottolineatura. La presenza di caratteri non standard in un FQDN è spesso non supportata da DNS esterni e CA pubbliche (quando l'FQDN deve essere assegnato al nome soggetto nel certificato). Per informazioni dettagliate sull'aggiunta di un suffisso DNS a un nome computer, vedere <A href="lync-server-2013-configure-dns-for-edge-support.md">configure DNS for Edge support in Lync Server 2013</A>.
 
         
         </div>
     
-      - Fare clic su **pool di computer singolo**e quindi su **Avanti**.
+      - Fare clic su **Pool computer singolo** e quindi su **Avanti**.
 
-6.  In **Seleziona funzionalità**eseguire le operazioni seguenti:
+6.  In **Selezionare funzionalità** eseguire le operazioni seguenti:
     
-      - Se si prevede di usare un solo FQDN e un indirizzo IP per il servizio di accesso SIP, il servizio di conferenza Web di Lync Server 2013 e i servizi A/V Edge, selezionare la casella di controllo **Usa un solo nome di dominio completo e indirizzo IP** .
+      - Se si prevede di utilizzare un singolo FQDN e indirizzo IP per il servizio di accesso SIP, il servizio Web Conferencing di Lync Server 2013 e i servizi A/V Edge, selezionare la casella di controllo **utilizza un singolo FQDN e indirizzo IP** .
     
-      - Se si prevede di abilitare la Federazione, selezionare la casella **di controllo Abilita federazione per questo pool di bordi (porta 5061)** .
+      - Se si prevede di abilitare la federazione, selezionare la casella di controllo **Abilita la federazione per questo pool di server perimetrali (porta 5061)**.
         
         <div>
         
 
         > [!NOTE]  
-        > È possibile selezionare questa opzione, ma è possibile pubblicare esternamente per la Federazione solo un pool di Edge o un server perimetrale dell'organizzazione. Tutti gli accessi da parte di utenti federati, inclusi gli utenti di messaggistica istantanea pubblica, passano attraverso lo stesso pool di Edge o un singolo Edge Server. Ad esempio, se la distribuzione include un pool di Edge o un server perimetrale distribuito in New York e uno distribuito a Londra e si Abilita il supporto federativo per il pool Edge di New York o un singolo Edge Server, il traffico di segnale per gli utenti federati passerà attraverso New York Edge pool o Single Edge Server. Ciò avviene persino per le comunicazioni con gli utenti di Londra, anche se un utente interno di Londra che chiama un utente federato di Londra utilizza il pool o il server perimetrale di Londra per il traffico A/V.
+        > È possibile selezionare questa opzione, ma è possibile pubblicare esternamente per la federazione solo un pool di server perimetrali o un server perimetrale nell'organizzazione. Tutto l'accesso da parte di utenti federati, inclusi gli utenti di messaggistica istantanea pubblica, passa per lo stesso pool di server perimetrali o singolo server perimetrale. Se, ad esempio, la distribuzione include un pool di server perimetrali o un singolo server perimetrale distribuito a New York e uno distribuito a Londra e si abilita il supporto per la federazione nel pool di server perimetrali o nel server perimetrale di New York, il traffico dei segnali per gli utenti federati passerà per il pool di server perimetrali o il singolo server perimetrale di New York. Ciò vale anche per le comunicazioni con gli utenti di Londra, anche se un utente interno di Londra che chiami un utente federato di Londra utilizzerà il pool o il server perimetrale di Londra per il traffico audio/video.
 
         
         </div>
     
-      - Se si prevede di supportare il protocollo XMPP (Extensible Messaging and Presence Protocol) per la distribuzione, selezionare la casella di controllo **Abilita federazione XMPP (porta 5269)**
+      - Se si prevede di supportare il protocollo XMPP per la distribuzione, selezionare la casella di controllo **Abilita la federazione XMPP (porta 5269)**
 
-7.  In **Seleziona opzioni IP**eseguire le operazioni seguenti:
+7.  In **Selezionare le opzioni IP** eseguire le operazioni seguenti:
     
-      - **Abilitare IPv4 sull'interfaccia interna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv4 all'interfaccia interna del server perimetrale o del pool Edge
+      - **Abilita IPv4 su interfaccia interna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv4 all'interfaccia interna del server perimetrale o del pool perimetrale
     
-      - **Abilitare IPv6 sull'interfaccia interna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv6 all'interfaccia interna del server perimetrale o del pool Edge
+      - **Abilita IPv6 su interfaccia interna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv6 all'interfaccia interna del server perimetrale o del pool perimetrale
     
-      - **Abilitare IPv4 sull'interfaccia esterna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv4 all'interfaccia esterna del server perimetrale o del pool Edge
+      - **Abilita IPv4 su interfaccia esterna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv4 all'interfaccia esterna del server perimetrale o del pool perimetrale
     
-      - **Abilitare IPv6 sull'interfaccia esterna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv6 all'interfaccia esterna del server perimetrale o del pool Edge
+      - **Abilita IPv6 su interfaccia esterna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv6 all'interfaccia esterna del server perimetrale o del pool perimetrale
     
-    È anche possibile configurare l'Edge Server o il pool di Edge in uso di un indirizzo di rete per gli indirizzi IP esterni. A tale scopo, seleziona la casella di controllo **l'indirizzo IP esterno di questo pool di bordi viene tradotto da NAT**.
+    È inoltre possibile configurare il server perimetrale o il pool perimetrale per l'utilizzo di un indirizzo di conversione indirizzo di rete per gli indirizzi IP esterni. A tale scopo, selezionando la casella di controllo **l'indirizzo IP esterno del pool di server perimetrali viene convertito da NAT**.
 
-8.  In **FQDN esterni**eseguire le operazioni seguenti:
+8.  In **FQDN esterni** eseguire le operazioni seguenti:
     
-      - Se in **Seleziona funzionalità** si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio a/V Edge, digitare il nome di dominio completo esterno in **Access SIP**.
+      - Se in **Selezionare funzionalità** si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare l'FQDN esterno in **Accesso SIP**.
         
         <div>
         
 
         > [!NOTE]  
-        > Se si sceglie questa opzione, è necessario specificare un numero di porta diverso per ogni servizio Edge (impostazioni di porta consigliate: 5061 per Access Edge service, 444 per Web Conferencing Edge service e 443 per un/V Edge service). Se si seleziona questa opzione, è possibile evitare potenziali problemi di connettività e semplificare la configurazione perché è quindi possibile usare lo stesso numero di porta, ad esempio 443, per tutti e tre i servizi.
+        > Se si sceglie di selezionare questa opzione, è necessario specificare un numero di porta diverso per ogni servizio Edge (impostazioni di porta consigliate: 5061 per il servizio Access Edge, 444 per il servizio Web Conferencing Edge e 443 per il servizio A/V Edge). Selezionando questa opzione, è possibile evitare possibili problemi di connettività e semplificare la configurazione, in quanto è quindi possibile utilizzare lo stesso numero di porta, ad esempio 443, per i tre servizi.
 
         
         </div>
     
-      - Se in **Seleziona funzionalità** non si è scelto di usare un singolo nome di dominio completo e un indirizzo IP, digitare gli FQDN esterni per l' **accesso SIP**, le **conferenze Web** e il **video audio**, mantenendo le porte predefinite.
+      - Se in **Selezionare funzionalità** non si è scelto di utilizzare un singolo FQDN e indirizzo IP, digitare gli FQDN esterni per **Accesso SIP**, **Web Conferencing** e **Audio/Video**, mantenendo le porte predefinite.
 
 9.  Fare clic su **Avanti**.
 
-10. In **definire l'indirizzo IP interno**Digitare l'indirizzo IP del server perimetrale nell'indirizzo **IPv4 interno** e l' **indirizzo IPv6 interno** , come appropriato per i requisiti. Fare clic su **Avanti**.
+10. In **Definire l'indirizzo IP interno**, digitare l'indirizzo IP del server perimetrale in **Indirizzo IPv4 interno** e **Indirizzo IPv6 interno**, a seconda dei propri requisiti. Fare clic su **Avanti**.
 
-11. In **definire l'indirizzo IP esterno**eseguire le operazioni seguenti:
+11. In **Definire l'indirizzo IP esterno** eseguire le operazioni seguenti:
     
-      - Se si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare l'indirizzo IPv4 esterno del server perimetrale in **Access SIP**e quindi fare clic su **Avanti**.
+      - Se si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare l'indirizzo IPv4 esterno del server perimetrale in **Accesso SIP** e quindi fare clic su **Avanti**.
     
-      - Se si è scelto di usare gli indirizzi IPv6, digitare l'indirizzo IPv6 esterno dell'Edge Server in **Access SIP**e quindi fare clic su **Avanti**.
+      - Se si è scelto di utilizzare indirizzi IPv6, digitare l'indirizzo IPv6 esterno del server perimetrale in **Accesso SIP**, quindi fare clic su **Avanti**.
     
-      - Se non si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare gli indirizzi IPv4 esterni dell'Edge Server in **Access SIP**, servizi di **conferenza Web**e **conferenze a/v**e quindi fare clic su **Avanti**.
+      - Se non si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare gli indirizzi IPv4 esterni del server perimetrale in **Accesso SIP**, **Web Conferencing** e **A/V Conferencing** e quindi fare clic su **Avanti**.
     
-      - Se si è scelto di usare gli indirizzi IPv6 e non si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare gli indirizzi IPv6 esterni dell'Edge Server in **Access SIP**, servizi di **conferenza Web**e **conferenze a/v**e quindi fare clic su **Avanti**.
+      - Se si è scelto di utilizzare indirizzi IPv6 ma non si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare gli indirizzi IPv6 esterni del server perimetrale in **Accesso SIP**, **Web Conferencing** e **A/V Conferencing** e quindi fare clic su **Avanti**.
         
         <div>
         
 
         > [!NOTE]  
-        > Se non si è scelto di abilitare e assegnare l'indirizzo IPv6, la finestra di dialogo non verrà visualizzata.
+        > Se non è stato scelto di abilitare e assegnare gli indirizzi IPv6, questa finestra di dialogo non viene visualizzata.
 
         
         </div>
 
-12. Se si è scelto di usare NAT, viene visualizzata una finestra di dialogo. Nell' **indirizzo IPv4 pubblico per il servizio a/V Edge**Digitare l'indirizzo IPv4 pubblico da tradurre tramite NAT e quindi fare clic su **Avanti**.
+12. Se si è scelto di utilizzare NAT, viene visualizzata una finestra di dialogo. In **Indirizzo IPv4 pubblico per il servizio A/V Edge** digitare l'indirizzo IPv4 pubblico da convertire tramite NAT e quindi fare clic su **Avanti**.
     
     <div>
     
 
     > [!NOTE]  
-    > Dovrebbe essere l'indirizzo IP esterno del servizio A/V Edge.
+    > Tale indirizzo deve corrispondere all'indirizzo IP esterno del servizio A/V Edge.
 
     
     </div>
 
-13. Se si è scelto di usare gli indirizzi NAT e IPv6, viene visualizzata una finestra di dialogo. Nell' **indirizzo IPv6 pubblico per il servizio a/V Edge**Digitare l'indirizzo IPv6 pubblico da tradurre tramite NAT e quindi fare clic su **Avanti**.
+13. Se si è scelto di utilizzare NAT e indirizzi IPv6, viene visualizzata una finestra di dialogo. In **Indirizzo IPv6 pubblico per il servizio A/V Edge** digitare l'indirizzo IPv6 pubblico da convertire tramite NAT e quindi fare clic su **Avanti**.
     
     <div>
     
 
     > [!NOTE]  
-    > Dovrebbe essere l'indirizzo IP esterno del servizio A/V Edge.
+    > Tale indirizzo deve corrispondere all'indirizzo IP esterno del servizio A/V Edge.
 
     
     </div>
 
-14. In **Definisci l'hop successivo**, nel **pool hop successivo**, selezionare il nome del pool interno, che può essere un pool Front-end o un pool Standard Edition. In alternativa, se la distribuzione include un amministratore, selezionare il Director. Quindi fare clic su **Avanti**.
+14. In **Pool hop successivo** in **Definire l'hop successivo** selezionare il nome del pool interno, che può essere un pool Front End o un pool Standard Edition. In alternativa, se la distribuzione include un server Director, selezionare il nome di questo server e quindi fare clic su **Avanti**.
 
-15. In **Associa pool Front End**specificare uno o più pool interni, che possono includere i pool Front-end e i server Standard Edition, da associare a questo Edge Server, selezionando i nomi dei pool interni che devono usare questo Edge Server per la comunicazione con utenti esterni supportati.
+15. In **Associare pool Front End** specificare uno o più pool interni, che possono includere pool Front End e server Standard Edition, da associare a questo server perimetrale, selezionando i nomi dei pool interni che utilizzeranno il server perimetrale per la comunicazione con gli utenti esterni supportati.
     
     <div>
     
 
     > [!NOTE]  
-    > Solo un pool di Edge con bilanciamento del carico o un singolo Edge Server può essere associato a ogni pool interno per il traffico A/V. Se si dispone già di un pool interno associato a un pool di Edge o un server perimetrale, viene visualizzato un avviso che indica che il pool interno è già associato a un pool di Edge o a un server perimetrale. Se si seleziona un pool già associato a un altro Edge Server, l'associazione verrà modificata.
+    > È possibile associare solo un pool di server perimetrali o un singolo server perimetrale con carico bilanciato a ogni pool interno per il traffico audio/video. Se è già stato associato un pool interno a un pool di server perimetrali o a un server perimetrale, viene visualizzato un avviso che indica che al pool interno è già associato un pool di server perimetrali o un server perimetrale. Se si seleziona un pool già associato a un altro server perimetrale, l'associazione verrà modificata.
 
     
     </div>
 
-16. Fare clic su **fine**.
+16. Fare clic su **Fine**.
 
 17. Pubblicare la topologia.
 
@@ -208,135 +208,135 @@ Il processo per definire la topologia di Edge Server viene eseguito in Generator
 
 <div>
 
-## <a name="to-define-the-topology-for-a-dns-load-balanced-edge-server-pool"></a>Per definire la topologia di un pool di server Edge con bilanciamento del carico DNS
+## <a name="to-define-the-topology-for-a-dns-load-balanced-edge-server-pool"></a>Per definire la topologia per un pool di server perimetrali con bilanciamento del carico DNS
 
-1.  Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Generatore di topologia di Lync Server**.
+1.  Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Generatore di topologie**.
 
-2.  Nell'albero della console espandere il sito in cui si vogliono distribuire i server perimetrali.
+2.  Nell'albero della console espandere il sito in cui si desidera distribuire i server perimetrali.
 
-3.  Fare clic con il pulsante destro del mouse su pool **Edge**e quindi scegliere **nuovo pool di bordi**.
+3.  Fare clic con il pulsante destro del mouse su **Pool di server perimetrali** e quindi scegliere **Nuovo pool di server perimetrali**.
 
-4.  In **definire il nuovo pool di bordi**fare clic su **Avanti**.
+4.  In **Definire il nuovo pool di server perimetrali** fare clic su **Avanti**.
 
-5.  In **definire il nome di dominio completo del pool Edge**eseguire le operazioni seguenti:
+5.  In **Definire l'FQDN del pool di server perimetrali** eseguire le operazioni seguenti:
     
-      - In **FQDN del pool**Digitare il nome di dominio completo (FQDN) per la connessione interna del pool di bordi.
+      - In **Pool FQDN** digitare il nome di dominio completo (FQDN) della connessione interna del server perimetrale.
         
         <div>
         
 
         > [!IMPORTANT]  
-        > Il nome specificato per il pool deve essere il nome del pool di Edge interno. Questa operazione deve essere definita come FQDN. Generatore di topologie usa gli FQDN e non i nomi brevi. Usare solo caratteri standard (tra cui A-Z, a-z, 0-9 e segni meno) durante l'assegnazione di nomi di dominio completi di Lync Server, Edge Server e pool. Non usare caratteri Unicode o carattere di sottolineatura. I caratteri non standard di un nome di dominio completo spesso non sono supportati dal DNS esterno e dalle CA pubbliche (quando il nome di dominio completo deve essere assegnato a SN nel certificato).
+        > Il nome specificato per il pool deve essere il nome del pool di server perimetrali interno. Questo deve essere definito come FQDN. Generatore di topologie utilizza gli FQDN e non i nomi brevi. Utilizzare solo caratteri standard, ovvero A-Z, a-z, 0-9 e trattini, per assegnare FQDN dei server Lync Server, dei server perimetrali e dei pool. Non utilizzare caratteri Unicode o di sottolineatura. La presenza di caratteri non standard in un FQDN è spesso non supportata da DNS esterni e CA pubbliche (quando l'FQDN deve essere assegnato al nome soggetto nel certificato).
 
         
         </div>
     
-      - Fare clic su **pool di computer multipli**e quindi su **Avanti**.
+      - Fare clic su **Pool di più computer** e quindi su **Avanti**.
 
-6.  In **Seleziona funzionalità**eseguire le operazioni seguenti:
+6.  In **Selezionare funzionalità** eseguire le operazioni seguenti:
     
-      - Se si prevede di usare un solo FQDN e un indirizzo IP per l'accesso SIP, il servizio Web Conferencing di Lync Server 2013 e un/V Edge Services, selezionare la casella di controllo **Usa un solo nome di dominio completo e indirizzo IP** .
+      - Se si prevede di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing di Lync Server 2013 e i servizi A/V Edge, selezionare la casella di controllo **utilizza un singolo FQDN e indirizzo IP** .
     
-      - Se si prevede di abilitare la Federazione, selezionare la casella **di controllo Abilita federazione per questo pool di bordi (porta 5061)** . Fare clic su **Avanti**
+      - Se si prevede di abilitare la federazione, selezionare la casella di controllo **Abilita la federazione per questo pool di server perimetrali (porta 5061)**. Fare clic su **Avanti**
         
         <div>
         
 
         > [!NOTE]  
-        > È possibile selezionare questa opzione, ma è possibile pubblicare esternamente per la Federazione solo un pool di Edge o un server perimetrale dell'organizzazione. Tutti gli accessi da parte di utenti federati, inclusi gli utenti di messaggistica istantanea pubblica, passano attraverso lo stesso pool di Edge o un singolo Edge Server. Se ad esempio nella distribuzione è incluso un pool di server perimetrali o un singolo server perimetrale distribuito a New York e uno distribuito a Londra e si abilita il supporto della federazione per il pool di server perimetrali o il singolo server perimetrale di New York, il traffico di segnalazione per gli utenti federati passerà attraverso tale pool o server. Ciò avviene persino per le comunicazioni con gli utenti di Londra, anche se un utente interno di Londra che chiama un utente federato di Londra utilizza il pool o il server perimetrale di Londra per il traffico A/V.
+        > È possibile selezionare questa opzione, ma è possibile pubblicare esternamente per la federazione solo un pool di server perimetrali o un server perimetrale nell'organizzazione. Tutto l'accesso da parte di utenti federati, inclusi gli utenti di messaggistica istantanea pubblica, passa per lo stesso pool di server perimetrali o singolo server perimetrale. Se, ad esempio, la distribuzione include un pool di server perimetrali o un singolo server perimetrale distribuito a New York e uno distribuito a Londra e si abilita il supporto per la federazione nel pool di server perimetrali o nel server perimetrale di New York, il traffico dei segnali per gli utenti federati passerà per il pool di server perimetrali o il singolo server perimetrale di New York. Ciò vale anche per le comunicazioni con gli utenti di Londra, anche se un utente interno di Londra che chiama un utente federato di Londra utilizzerà il pool o il server perimetrale di Londra per il traffico audio/video.
 
         
         </div>
     
-      - Se si prevede di supportare il protocollo XMPP (Extensible Messaging and Presence Protocol) per la distribuzione, selezionare la casella di controllo **Abilita federazione XMPP (porta 5269)**
+      - Se si prevede di supportare il protocollo XMPP per la distribuzione, selezionare la casella di controllo **Abilita la federazione XMPP (porta 5269)**
 
 7.  Fare clic su **Avanti**.
 
-8.  In **Seleziona opzioni IP**eseguire le operazioni seguenti:
+8.  In **Selezionare le opzioni IP** eseguire le operazioni seguenti:
     
-      - **Abilitare IPv4 sull'interfaccia interna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv4 all'interfaccia interna del server perimetrale o del pool Edge
+      - **Abilita IPv4 su interfaccia interna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv4 all'interfaccia interna del server perimetrale o del pool perimetrale
     
-      - **Abilitare IPv6 sull'interfaccia interna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv6 all'interfaccia interna del server perimetrale o del pool Edge
+      - **Abilita IPv6 su interfaccia interna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv6 all'interfaccia interna del server perimetrale o del pool perimetrale
     
-      - **Abilitare IPv4 sull'interfaccia esterna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv4 all'interfaccia esterna del server perimetrale o del pool Edge
+      - **Abilita IPv4 su interfaccia esterna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv4 all'interfaccia esterna del server perimetrale o del pool perimetrale
     
-      - **Abilitare IPv6 sull'interfaccia esterna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv6 all'interfaccia esterna del server perimetrale o del pool Edge
+      - **Abilita IPv6 su interfaccia esterna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv6 all'interfaccia esterna del server perimetrale o del pool perimetrale
     
-    È anche possibile configurare l'Edge Server o il pool di Edge in uso di un indirizzo di rete per gli indirizzi IP esterni. A tale scopo, seleziona la casella di controllo **l'indirizzo IP esterno di questo pool di bordi viene tradotto da NAT**.
+    È inoltre possibile configurare il server perimetrale o il pool perimetrale per l'utilizzo di un indirizzo di conversione indirizzo di rete per gli indirizzi IP esterni. A tale scopo, selezionando la casella di controllo **l'indirizzo IP esterno del pool di server perimetrali viene convertito da NAT**.
 
-9.  In **FQDN esterni**eseguire le operazioni seguenti:
+9.  In **FQDN esterni** eseguire le operazioni seguenti:
     
-      - Se in **Seleziona funzionalità** si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio a/V Edge, digitare il nome di dominio completo esterno in **Access SIP**.
+      - Se in **Selezionare funzionalità** si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare l'FQDN esterno in **Accesso SIP**.
         
         <div>
         
 
         > [!NOTE]  
-        > Se si sceglie questa opzione, è necessario specificare un numero di porta diverso per ogni servizio Edge (impostazioni di porta consigliate: 5061 per Access Edge service, 444 per Web Conferencing Edge service e 443 per un/V Edge service). Selezionando questa opzione, è possibile evitare potenziali problemi di connettività e semplificare la configurazione perché è quindi possibile usare lo stesso numero di porta, ad esempio 443, per tutti e tre i servizi.
+        > Se si sceglie di selezionare questa opzione, è necessario specificare un numero di porta diverso per ogni servizio Edge (impostazioni di porta consigliate: 5061 per il servizio Access Edge, 444 per il servizio Web Conferencing Edge e 443 per il servizio A/V Edge). Selezionando questa opzione, è possibile evitare possibili problemi di connettività e semplificare la configurazione, in quanto è quindi possibile utilizzare lo stesso numero di porta, ad esempio 443, per i tre servizi.
 
         
         </div>
     
-      - Se in **Seleziona funzionalità** non si è scelto di usare un singolo nome di dominio completo e indirizzo IP, digitare il nome di dominio completo scelto per il lato pubblico del pool di Edge per l' **accesso SIP**. In **Web Conferencing**Digitare il nome di dominio completo scelto per il lato pubblico del pool di Edge. In **audio/video**Digitare il nome di dominio completo scelto per il lato pubblico del pool di bordi. Usare le porte predefinite.
+      - Se in **Selezionare funzionalità** non si è scelto di utilizzare un singolo FQDN e indirizzo IP, digitare l'FQDN scelto per il lato pubblico del pool di server perimetrali in **Accesso SIP**. In **Web Conferencing** digitare l'FQDN scelto per il lato pubblico del pool di server perimetrali. In **Audio/Video** digitare l'FQDN scelto per il lato pubblico del pool di server perimetrali. Utilizzare le porte predefinite.
 
 10. Fare clic su **Avanti**.
 
-11. In **definire i computer in questo pool**fare clic su **Aggiungi**.
+11. In **Definire i computer nel pool corrente** fare clic su **Aggiungi**.
 
-12. In **FQDN interno e indirizzo IP**eseguire le operazioni seguenti:
+12. In **Indirizzo IP e FQDN interni** eseguire le operazioni seguenti:
     
-      - Nell' **indirizzo IPv4 interno**Digitare l'indirizzo IPv4 e l' **indirizzo IPv6 interno** come appropriato per i requisiti per il primo Edge Server che si vuole creare nel pool.
+      - In **Indirizzo IPv4 interno**, digitare l'indirizzo IPv4 e l'**Indirizzo IPv6 interno**, a seconda dei propri requisiti, del primo server perimetrale che si desidera creare nel pool.
     
-      - In **FQDN interno**Digitare il nome di dominio completo del primo Edge Server che si vuole creare nel pool.
+      - In **FQDN interno** digitare l'FQDN del primo server perimetrale che si desidera creare nel pool.
         
         <div>
         
 
         > [!NOTE]  
-        > Il nome specificato deve essere uguale al nome del computer configurato nel server. Per impostazione predefinita, il nome di un computer non aggiunto a un dominio è un nome breve e non un FQDN. Generatore di topologie usa gli FQDN e non i nomi brevi. Devi quindi configurare un suffisso DNS sul nome del computer da distribuire come server perimetrale che non è associato a un dominio. Usare solo caratteri standard (tra cui A-Z, a-z, 0-9 e segni meno) durante l'assegnazione di nomi di dominio completi di Lync Server, Edge Server, pool e matrici. Non usare caratteri Unicode o carattere di sottolineatura. I caratteri non standard di un nome di dominio completo spesso non sono supportati dal DNS esterno e dalle CA pubbliche (quando il nome di dominio completo deve essere assegnato a SN nel certificato). Per informazioni dettagliate sull'aggiunta di un suffisso DNS a un nome di computer, vedere <A href="lync-server-2013-configure-dns-for-edge-support.md">configurare il supporto DNS per Edge in Lync Server 2013</A>.
+        > Il nome specificato deve essere uguale al nome computer configurato nel server. Per impostazione predefinita, il nome di un computer non aggiunto a un dominio è un nome breve e non un FQDN. Generatore di topologie utilizza gli FQDN e non i nomi brevi. Pertanto, è necessario configurare un suffisso DNS sul nome del computer da distribuire come server perimetrale non aggiunto a un dominio. Utilizzare solo caratteri standard, ovvero A-Z, a-z, 0-9 e trattini, per assegnare FQDN dei server Lync Server, dei server perimetrali, dei pool e degli array. Non utilizzare caratteri Unicode o di sottolineatura. La presenza di caratteri non standard in un FQDN è spesso non supportata da DNS esterni e CA pubbliche (quando l'FQDN deve essere assegnato al nome soggetto nel certificato). Per informazioni dettagliate sull'aggiunta di un suffisso DNS a un nome computer, vedere <A href="lync-server-2013-configure-dns-for-edge-support.md">configure DNS for Edge support in Lync Server 2013</A>.
 
         
         </div>
 
 13. Fare clic su **Avanti**.
 
-14. In **definire gli indirizzi IP esterni**eseguire le operazioni seguenti:
+14. In **Definire l'indirizzo IP esterno** eseguire le operazioni seguenti:
     
-      - Se si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare l'indirizzo IP esterno dell'Edge Server in **Access SIP**.
+      - Se si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare l'indirizzo IP esterno del server perimetrale in **Accesso SIP**.
     
-      - Se non si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio di conferenza Web e il servizio di conferenza telefonica A/V, digitare l'indirizzo IP scelto per il lato pubblico di questo server Edge pool per l' **accesso SIP**. In **Web Conferencing**Digitare l'indirizzo IP scelto per il lato pubblico di questo server Edge pool. In **conferenze telefoniche a/V**Digitare l'indirizzo IP scelto per il lato pubblico di questo server Edge pool.
+      - Se non si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Conferencing, digitare l'indirizzo IP scelto per il lato pubblico di questo server del pool di server perimetrali in **Accesso SIP**. In **Web Conferencing** digitare l'indirizzo IP scelto per il lato pubblico di questo server del pool di server perimetrali. In **A/V Conferencing** digitare l'indirizzo IP scelto per il lato pubblico di questo server del pool di server perimetrali.
 
 15. Fare clic su **Avanti**.
 
-16. Se si è scelto di abilitare gli indirizzi IPv6, in **definire gli indirizzi IP esterni**eseguire le operazioni seguenti:
+16. Se è stato scelto di abilitare gli indirizzi IPv6, in **Definire l'indirizzo IP esterno** eseguire le operazioni seguenti:
     
-      - Se si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare l'indirizzo IPv6 esterno dell'Edge Server in **Access SIP**.
+      - Se si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare l'indirizzo IPv6 esterno del server perimetrale in **Accesso SIP**.
     
-      - Se non si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio di conferenza Web e il servizio di conferenza telefonica A/V, digitare l'indirizzo IPv6 scelto per il lato pubblico di questo server Edge pool per l' **accesso SIP**. In servizi di **conferenza Web**Digitare l'indirizzo IPv6 scelto per il lato pubblico di questo server Edge pool. In **conferenze telefoniche a/V**Digitare l'indirizzo IPv6 scelto per il lato pubblico di questo server Edge pool.
-    
-    <div>
-    
-
-    > [!NOTE]  
-    > Se non si è scelto di abilitare e assegnare l'indirizzo IPv6, la finestra di dialogo non verrà visualizzata.
-
-    
-    </div>
-
-17. Fare clic su **fine**.
+      - Se non si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Conferencing, digitare l'indirizzo IPv6 scelto per il lato pubblico di questo server del pool di server perimetrali in **Accesso SIP**. In **Web Conferencing** digitare l'indirizzo IPv6 scelto per il lato pubblico di questo server del pool di server perimetrali. In **A/V Conferencing** digitare l'indirizzo IPv6 scelto per il lato pubblico di questo server del pool di server perimetrali.
     
     <div>
     
 
     > [!NOTE]  
-    > Si vedrà ora il primo server perimetrale creato nel pool nella finestra di dialogo <STRONG>Definisci computer in questo pool</STRONG> .
+    > Se non è stato scelto di abilitare e assegnare gli indirizzi IPv6, questa finestra di dialogo non viene visualizzata.
 
     
     </div>
 
-18. In **definire i computer in questo pool**fare clic su **Aggiungi**e quindi ripetere i passaggi da 11 a 14 per il secondo Edge Server che si vuole aggiungere al pool di Edge.
+17. Fare clic su **Fine**.
+    
+    <div>
+    
 
-19. Dopo aver ripetuto i passaggi da 11 a 14, fare clic su **Avanti** in **Definisci i computer in questo pool**.
+    > [!NOTE]  
+    > Il primo server perimetrale creato nel pool verrà ora visualizzato nella finestra di dialogo <STRONG>Definire i computer nel pool corrente</STRONG>.
+
+    
+    </div>
+
+18. In **Definire i computer nel pool corrente** fare clic su **Aggiungi** e quindi ripetere i passaggi da 11 a 14 per il secondo server perimetrale che si desidera aggiungere al pool di server perimetrali.
+
+19. Dopo aver ripetuto i passaggi da 11 a 14, fare clic su **Avanti** in **Definire i computer nel pool corrente**.
     
     <div>
     
@@ -347,31 +347,31 @@ Il processo per definire la topologia di Edge Server viene eseguito in Generator
     
     </div>
 
-20. Se si è scelto di usare NAT, viene visualizzata una finestra di dialogo. In **indirizzo IP pubblico**Digitare gli indirizzi IPv4 e IPv6 (in base alle esigenze) pubblici da tradurre tramite NAT e quindi fare clic su **Avanti**.
+20. Se si è scelto di utilizzare NAT, viene visualizzata una finestra di dialogo. In **Indirizzo IP pubblico** digitare l'indirizzo IPv4 o IPv6 pubblico (come appropriato) da convertire tramite NAT e quindi fare clic su **Avanti**.
     
     <div>
     
 
     > [!NOTE]  
-    > Dovrebbe essere l'indirizzo IP esterno del bordo A/V.
+    > Tale indirizzo deve corrispondere all'indirizzo IP esterno di A/V Edge.
 
     
     </div>
 
-21. In **Definisci l'hop successivo**, nell'elenco del **pool hop successivo** , selezionare il nome del pool interno, che può essere un pool di front-end o un pool di Standard Edition. In alternativa, se la distribuzione include un amministratore, selezionare il nome del direttore. Quindi fare clic su **Avanti**.
+21. Nell'elenco **Pool hop successivo** in **Definire l'hop successivo** selezionare il nome del pool interno, che può essere un pool Front End o un pool Standard Edition. In alternativa, se la distribuzione include un server Director, selezionare il nome di questo server e quindi fare clic su **Avanti**.
 
-22. In **Associa pool Front End**specificare uno o più pool interni, che possono includere i pool Front-end e i server Standard Edition, da associare a questo Edge Server, selezionando i nomi dei pool interni che devono usare questo Edge Server per la comunicazione con utenti esterni supportati.
+22. In **Associare pool Front End** specificare uno o più pool interni, che possono includere pool Front End e server Standard Edition, da associare a questo server perimetrale, selezionando i nomi dei pool interni che utilizzeranno il server perimetrale per la comunicazione con gli utenti esterni supportati.
     
     <div>
     
 
     > [!NOTE]  
-    > Solo un pool di Edge con bilanciamento del carico o un singolo Edge Server può essere associato a ogni pool interno per il traffico A/V. Se si dispone già di un pool interno associato a un pool di Edge o un server perimetrale, viene visualizzato un avviso che indica che il pool interno è già associato a un pool di Edge o a un server perimetrale. Se si seleziona un pool già associato a un altro Edge Server, l'associazione verrà modificata.
+    > È possibile associare solo un pool di server perimetrali o un singolo server perimetrale con carico bilanciato a ogni pool interno per il traffico audio/video. Se è già stato associato un pool interno a un pool di server perimetrali o a un server perimetrale, viene visualizzato un avviso che indica che al pool interno è già associato un pool di server perimetrali o un server perimetrale. Se si seleziona un pool già associato a un altro server perimetrale, l'associazione verrà modificata.
 
     
     </div>
 
-23. Fare clic su **fine**.
+23. Fare clic su **Fine**.
 
 24. Pubblicare la topologia.
 
@@ -379,136 +379,136 @@ Il processo per definire la topologia di Edge Server viene eseguito in Generator
 
 <div>
 
-## <a name="to-define-the-topology-for-a-hardware-load-balanced-edge-server-pool"></a>Per definire la topologia di un pool di server Edge con bilanciamento del carico hardware
+## <a name="to-define-the-topology-for-a-hardware-load-balanced-edge-server-pool"></a>Per definire la topologia per un pool di server perimetrali con bilanciamento del carico hardware
 
-1.  Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Generatore di topologia di Lync Server**.
+1.  Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Generatore di topologie**.
 
-2.  Nell'albero della console espandere il sito in cui si vogliono distribuire i server perimetrali.
+2.  Nell'albero della console espandere il sito in cui si desidera distribuire i server perimetrali.
 
-3.  Fare clic con il pulsante destro del mouse su **pool di bordi**e quindi scegliere **nuovo pool di bordi**.
+3.  Fare clic con il pulsante destro del mouse su **pool di server perimetrali**e quindi scegliere **nuovo pool Edge**.
 
-4.  In **definire il nuovo pool di bordi**fare clic su **Avanti**.
+4.  In **Definire il nuovo pool di server perimetrali** fare clic su **Avanti**.
 
-5.  In **definire il nome di dominio completo del pool Edge**eseguire le operazioni seguenti:
+5.  In **Definire l'FQDN del pool di server perimetrali** eseguire le operazioni seguenti:
     
-      - In **FQDN**Digitare il nome di dominio completo (FQDN) scelto per il lato interno del pool di bordi.
+      - In **FQDN** digitare il nome di dominio completo (FQDN) scelto per il lato interno del pool di server perimetrali.
         
         <div>
         
 
         > [!IMPORTANT]  
-        > Il nome specificato per il pool deve essere il nome del pool di Edge interno. Questa operazione deve essere definita come FQDN. Generatore di topologie usa gli FQDN e non i nomi brevi. Usare solo caratteri standard (tra cui A-Z, a-z, 0-9 e segni meno) durante l'assegnazione di nomi di dominio completi di Lync Server, Edge Server e pool. Non usare caratteri Unicode o carattere di sottolineatura. I caratteri non standard di un nome di dominio completo spesso non sono supportati dal DNS esterno e dalle CA pubbliche (quando il nome di dominio completo deve essere assegnato a SN nel certificato).
+        > Il nome specificato per il pool deve essere il nome del pool di server perimetrali interno. Questo deve essere definito come FQDN. Generatore di topologie utilizza gli FQDN e non i nomi brevi. Utilizzare solo caratteri standard, ovvero A-Z, a-z, 0-9 e trattini, per assegnare FQDN dei server Lync Server, dei server perimetrali e dei pool. Non utilizzare caratteri Unicode o di sottolineatura. La presenza di caratteri non standard in un FQDN è spesso non supportata da DNS esterni e CA pubbliche (quando l'FQDN deve essere assegnato al nome soggetto nel certificato).
 
         
         </div>
     
     <!-- end list -->
     
-      - Fare clic su **pool di computer multipli**e quindi su **Avanti**.
+      - Fare clic su **pool di più computer**e quindi su **Avanti**.
 
-6.  In **Seleziona funzionalità** eseguire le operazioni seguenti:
+6.  In **Selezionare funzionalità** eseguire le operazioni seguenti:
     
-      - Se si prevede di usare un solo nome di dominio completo e un indirizzo IP per il servizio di accesso SIP, Lync Server Web Conferencing Service e A/V Edge Services, selezionare la casella **di controllo Usa un solo nome fqdn & indirizzo IP** .
+      - Se si prevede di utilizzare un singolo FQDN e indirizzo IP per il servizio di accesso SIP, il servizio Web Conferencing di Lync Server e il servizio A/V Edge, selezionare la casella di controllo **utilizza un solo fqdn & indirizzo IP** .
     
-      - Se si prevede di abilitare la Federazione, selezionare la casella **di controllo Abilita federazione per questo pool di bordi (porta 5061)** .
+      - Se si prevede di abilitare la federazione, selezionare la casella di controllo **Abilita federazione per pool di server perimetrali (porta 5061)**.
         
         <div>
         
 
         > [!NOTE]  
-        > Puoi selezionare questa opzione, ma solo un bordo o un server perimetrale nell'organizzazione può essere pubblicato esternamente per la Federazione. Tutti gli accessi da parte di utenti federati, inclusi gli utenti di messaggistica istantanea pubblica, passano attraverso lo stesso pool di Edge o un singolo Edge Server. Se ad esempio nella distribuzione è incluso un pool di server perimetrali o un singolo server perimetrale distribuito a New York e uno distribuito a Londra e si abilita il supporto della federazione per il pool di server perimetrali o il singolo server perimetrale di New York, il traffico di segnalazione per gli utenti federati passerà attraverso tale pool o server. Ciò avviene persino per le comunicazioni con gli utenti di Londra, anche se un utente interno di Londra che chiama un utente federato di Londra utilizza il pool o il server perimetrale di Londra per il traffico A/V.
+        > È possibile selezionare questa opzione, ma è possibile pubblicare esternamente per la federazione solo un pool di server perimetrali o un server perimetrale nell'organizzazione. Tutto l'accesso da parte di utenti federati, inclusi gli utenti di messaggistica istantanea pubblica, passa per lo stesso pool di server perimetrali o singolo server perimetrale. Se, ad esempio, la distribuzione include un pool di server perimetrali o un singolo server perimetrale distribuito a New York e uno distribuito a Londra e si abilita il supporto per la federazione nel pool di server perimetrali o nel server perimetrale di New York, il traffico dei segnali per gli utenti federati passerà per il pool di server perimetrali o il singolo server perimetrale di New York. Ciò vale anche per le comunicazioni con gli utenti di Londra, anche se un utente interno di Londra che chiami un utente federato di Londra utilizzerà il pool o il server perimetrale di Londra per il traffico audio/video.
 
         
         </div>
     
-      - Se si prevede di supportare il protocollo XMPP (Extensible Messaging and Presence Protocol) per la distribuzione, selezionare la casella di controllo **Abilita federazione XMPP (porta 5269)**
+      - Se si prevede di supportare il protocollo XMPP per la distribuzione, selezionare la casella di controllo **Abilita la federazione XMPP (porta 5269)**
 
 7.  Fare clic su **Avanti**.
 
-8.  In **Seleziona opzioni IP**eseguire le operazioni seguenti:
+8.  In **Selezionare le opzioni IP** eseguire le operazioni seguenti:
     
-      - **Abilitare IPv4 sull'interfaccia interna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv4 all'interfaccia interna del server perimetrale o del pool Edge
+      - **Abilita IPv4 su interfaccia interna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv4 all'interfaccia interna del server perimetrale o del pool perimetrale
     
-      - **Abilitare IPv6 sull'interfaccia interna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv6 all'interfaccia interna del server perimetrale o del pool Edge
+      - **Abilita IPv6 su interfaccia interna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv6 all'interfaccia interna del server perimetrale o del pool perimetrale
     
-      - **Abilitare IPv4 sull'interfaccia esterna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv4 all'interfaccia esterna del server perimetrale o del pool Edge
+      - **Abilita IPv4 su interfaccia esterna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv4 all'interfaccia esterna del server perimetrale o del pool perimetrale
     
-      - **Abilitare IPv6 sull'interfaccia esterna**: selezionare la casella di controllo se si vuole applicare un indirizzo IPv6 all'interfaccia esterna del server perimetrale o del pool Edge
+      - **Abilita IPv6 su interfaccia esterna**: selezionare questa casella di controllo se si desidera applicare un indirizzo IPv6 all'interfaccia esterna del server perimetrale o del pool perimetrale
     
     <div>
     
 
     > [!IMPORTANT]  
-    > <STRONG>Non selezionare la</STRONG> casella di controllo <STRONG>l'indirizzo IP esterno del pool di Edge viene tradotto da NAT</STRONG> . NAT (Network Address Translation) non è supportato quando si usa il bilanciamento del carico hardware.
+    > <STRONG>Non</STRONG> selezionare la casella di controllo <STRONG>L'indirizzo IP esterno del pool di server perimetrali è convertito da NAT</STRONG>. Network Address Translation (NAT) non è supportato quando si utilizza il bilanciamento del carico di rete hardware.
 
     
     </div>
 
-9.  In **FQDN esterni**eseguire le operazioni seguenti:
+9.  In **FQDN esterni** eseguire le operazioni seguenti:
     
-      - Se in **Seleziona funzionalità** si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio a/V Edge, digitare il nome di dominio completo esterno in **Access SIP**.
+      - Se in **Selezionare funzionalità** si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare l'FQDN esterno in **Accesso SIP**.
         
         <div>
         
 
         > [!NOTE]  
-        > Se si sceglie di selezionare questa opzione, è necessario specificare un numero di porta diverso per ogni servizio Edge (impostazioni di porta consigliate: 5061 per Access Edge service, 444 per Web Conferencing Edge service e 443 per un/V Edge Server). Selezionando questa opzione, è possibile evitare potenziali problemi di connettività e semplificare la configurazione perché è quindi possibile usare lo stesso numero di porta, ad esempio 443, per tutti e tre i servizi.
+        > Se si sceglie di selezionare questa opzione, è necessario specificare un numero di porta diverso per ogni servizio Edge (impostazioni di porta consigliate: 5061 per il servizio Access Edge, 444 per il servizio Web Conferencing Edge e 443 per il servizio A/V Edge). Selezionando questa opzione, è possibile evitare possibili problemi di connettività e semplificare la configurazione, in quanto è quindi possibile utilizzare lo stesso numero di porta, ad esempio 443, per i tre servizi.
 
         
         </div>
     
-      - Se in **Seleziona funzionalità** non si è scelto di usare un singolo nome di dominio completo e indirizzo IP, digitare il nome di dominio completo scelto per il lato pubblico del pool di Edge per l' **accesso SIP**. In **Web Conferencing**Digitare il nome di dominio completo scelto per il lato pubblico del pool di Edge. In **audio/video**Digitare il nome di dominio completo scelto per il lato pubblico del pool di bordi. Usare le porte predefinite.
+      - Se in **Selezionare funzionalità** non si è scelto di utilizzare un singolo FQDN e indirizzo IP, digitare l'FQDN scelto per il lato pubblico del pool di server perimetrali in **Accesso SIP**. In **Web Conferencing** digitare l'FQDN scelto per il lato pubblico del pool di server perimetrali. In **Audio/Video** digitare l'FQDN scelto per il lato pubblico del pool di server perimetrali. Utilizzare le porte predefinite.
         
         <div>
         
 
         > [!NOTE]  
-        > Questi saranno gli FQDN di Virtual IP (VIP) pubblicamente di fronte per il pool.
+        > Questi saranno gli FQDN IP virtuali (VIP) del lato pubblico per il pool.
 
         
         </div>
 
 10. Fare clic su **Avanti**.
 
-11. In **definire i computer in questo pool**fare clic su **Aggiungi**.
+11. In **Definire i computer nel pool corrente** fare clic su **Aggiungi**.
 
-12. In **definire gli indirizzi IP esterni**eseguire le operazioni seguenti:
+12. In **Definire l'indirizzo IP esterno** eseguire le operazioni seguenti:
     
-      - Se si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare l'indirizzo IPv4 esterno dell'Edge Server in **Access**SIP. indirizzo IP esterno dell'Edge Server in **Access SIP**.
+      - Se si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare l'indirizzo IPv4 esterno del server perimetrale in **Accesso SIP** e quindi fare clic su **Avanti**.
     
-      - Se non si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio di conferenza Web e il servizio di conferenza telefonica A/V, digitare l'indirizzo IP scelto per il lato pubblico di questo server Edge pool per l' **accesso SIP**. In **Web Conferencing**Digitare l'indirizzo IP scelto per il lato pubblico di questo server Edge pool. In **conferenze telefoniche a/V**Digitare l'indirizzo IP scelto per il lato pubblico di questo server Edge pool.
+      - Se non si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Conferencing, digitare l'indirizzo IP scelto per il lato pubblico di questo server del pool di server perimetrali in **Accesso SIP**. In **Web Conferencing** digitare l'indirizzo IP scelto per il lato pubblico di questo server del pool di server perimetrali. In **A/V Conferencing** digitare l'indirizzo IP scelto per il lato pubblico di questo server del pool di server perimetrali.
 
 13. Fare clic su **Avanti**.
 
-14. Se si è scelto di abilitare gli indirizzi IPv6, in **definire gli indirizzi IP esterni**eseguire le operazioni seguenti:
+14. Se è stato scelto di abilitare gli indirizzi IPv6, in **Definire l'indirizzo IP esterno** eseguire le operazioni seguenti:
     
-      - Se si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare l'indirizzo IPv6 esterno dell'Edge Server in **Access SIP**.
+      - Se si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Edge, digitare l'indirizzo IPv6 esterno del server perimetrale in **Accesso SIP**.
     
-      - Se non si è scelto di usare un singolo FQDN e un indirizzo IP per l'accesso SIP, il servizio di conferenza Web e il servizio di conferenza telefonica A/V, digitare l'indirizzo IPv6 scelto per il lato pubblico di questo server Edge pool per l' **accesso SIP**. In servizi di **conferenza Web**Digitare l'indirizzo IPv6 scelto per il lato pubblico di questo server Edge pool. In **conferenze telefoniche a/V**Digitare l'indirizzo IPv6 scelto per il lato pubblico di questo server Edge pool.
-    
-    <div>
-    
-
-    > [!NOTE]  
-    > Se non si è scelto di abilitare e assegnare l'indirizzo IPv6, la finestra di dialogo non verrà visualizzata.
-
-    
-    </div>
-
-15. Fare clic su **fine**.
+      - Se non si è scelto di utilizzare un singolo FQDN e indirizzo IP per l'accesso SIP, il servizio Web Conferencing e il servizio A/V Conferencing, digitare l'indirizzo IPv6 scelto per il lato pubblico di questo server del pool di server perimetrali in **Accesso SIP**. In **Web Conferencing** digitare l'indirizzo IPv6 scelto per il lato pubblico di questo server del pool di server perimetrali. In **A/V Conferencing** digitare l'indirizzo IPv6 scelto per il lato pubblico di questo server del pool di server perimetrali.
     
     <div>
     
 
     > [!NOTE]  
-    > Si vedrà ora il primo server perimetrale creato nel pool nella finestra di dialogo <STRONG>Definisci computer in questo pool</STRONG> .
+    > Se non è stato scelto di abilitare e assegnare gli indirizzi IPv6, questa finestra di dialogo non viene visualizzata.
 
     
     </div>
 
-16. In **definire i computer in questo pool**fare clic su **Aggiungi**e quindi ripetere i passaggi da 11 a 14 per il secondo Edge Server che si vuole aggiungere al pool di Edge.
+15. Fare clic su **Fine**.
+    
+    <div>
+    
 
-17. Dopo aver ripetuto i passaggi da 11 a 14, fare clic su **Avanti** in **Definisci i computer in questo pool**.
+    > [!NOTE]  
+    > Il primo server perimetrale creato nel pool verrà ora visualizzato nella finestra di dialogo <STRONG>Definire i computer nel pool corrente</STRONG>.
+
+    
+    </div>
+
+16. In **Definire i computer nel pool corrente** fare clic su **Aggiungi** e quindi ripetere i passaggi da 11 a 14 per il secondo server perimetrale che si desidera aggiungere al pool di server perimetrali.
+
+17. Dopo aver ripetuto i passaggi da 11 a 14, fare clic su **Avanti** in **Definire i computer nel pool corrente**.
     
     <div>
     
@@ -519,20 +519,20 @@ Il processo per definire la topologia di Edge Server viene eseguito in Generator
     
     </div>
 
-18. In **Definisci l'hop successivo**, nell'elenco del **pool hop successivo** , selezionare il nome del pool interno, che può essere un pool di front-end o un pool di Standard Edition. In alternativa, se la distribuzione include un amministratore, selezionare il nome del direttore. Quindi fare clic su **Avanti**.
+18. Nell'elenco **Pool hop successivo** in **Definire l'hop successivo** selezionare il nome del pool interno, che può essere un pool Front End o un pool Standard Edition. In alternativa, se la distribuzione include un server Director, selezionare il nome di questo server e quindi fare clic su **Avanti**.
 
-19. In **Associa pool Front End**specificare uno o più pool interni, che possono includere i pool Front-end e i server Standard Edition, da associare a questo Edge Server, selezionando i nomi dei pool interni che devono usare questo Edge Server per la comunicazione con utenti esterni supportati.
+19. In **Associare pool Front End** specificare uno o più pool interni, che possono includere pool Front End e server Standard Edition, da associare a questo server perimetrale, selezionando i nomi dei pool interni che utilizzeranno il server perimetrale per la comunicazione con gli utenti esterni supportati.
     
     <div>
     
 
     > [!NOTE]  
-    > Solo un pool di Edge con bilanciamento del carico o un singolo Edge Server può essere associato a ogni pool interno per il traffico A/V. Se si dispone già di un pool interno associato a un pool di Edge o un server perimetrale, viene visualizzato un avviso che indica che il pool interno è già associato a un pool di Edge o a un server perimetrale. Se si seleziona un pool già associato a un altro Edge Server, l'associazione verrà modificata.
+    > È possibile associare solo un pool di server perimetrali o un singolo server perimetrale con carico bilanciato a ogni pool interno per il traffico audio/video. Se è già stato associato un pool interno a un pool di server perimetrali o a un server perimetrale, viene visualizzato un avviso che indica che al pool interno è già associato un pool di server perimetrali o un server perimetrale. Se si seleziona un pool già associato a un altro server perimetrale, l'associazione verrà modificata.
 
     
     </div>
 
-20. Fare clic su **fine**.
+20. Fare clic su **Fine**.
 
 21. Pubblicare la topologia.
 

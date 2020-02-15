@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: routing basato sulla posizione per i servizi di conferenza'
+title: 'Lync Server 2013: routing in base alla posizione per le conferenze'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 56335087
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dffc6ee9beaabc4705ac47e643a3fb19e589a745
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ec3268109b522a96e5593f6e0246ee7b36651c06
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762164"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42033385"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="location-based-routing-for-conferencing-in-lync-server-2013"></a>Routing basato sulla posizione per i servizi di conferenza in Lync Server 2013
+# <a name="location-based-routing-for-conferencing-in-lync-server-2013"></a>Routing in base alla posizione per le conferenze in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41762164"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-07-31_
+_**Ultimo argomento modificato:** 2013-07-31_
 
-Il routing basato sulla posizione consente di limitare il routing delle chiamate tra endpoint VoIP e endpoint PSTN in base alla posizione delle parti nella chiamata. Con l'aggiornamento cumulativo 2 di Lync Server 2013, le regole di routing basate sulla posizione possono essere applicate alle riunioni Lync (ad esempio conferenze) per evitare il bypass PSTN. L'applicazione monitora una conferenza attiva e applica restrizioni di routing basate sulla posizione in base alla posizione degli utenti partecipanti. L'applicazione per i servizi di conferenza di routing basata sulla posizione consente inoltre di applicare le restrizioni di routing basate sulla posizione ai trasferimenti consultivi che coinvolgono endpoint PSTN.
+Il routing in base alla posizione rende possibile limitare il routing delle chiamate tra endpoint VoIP e endpoint PSTN in base alla posizione delle parti nella chiamata. Con l'aggiornamento cumulativo 2 di Lync Server 2013, le regole di routing in base alla posizione possono essere applicate nelle riunioni di Lync (ovvero conferenze) per impedire il bypass a pedaggio PSTN. L'applicazione monitora una conferenza attiva e applica restrizioni di routing basate sulla posizione in base alla posizione degli utenti che partecipano. L'applicazione per le conferenze di routing basata sulla posizione consente inoltre di applicare le restrizioni di routing basate sul percorso ai trasferimenti consultivi che coinvolgono endpoint PSTN.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Panoramica del routing basato sulla posizione per i servizi di conferenza in Lync Server 2013](lync-server-2013-overview-of-location-based-routing-for-conferencing.md)
+  - [Panoramica del routing in base alla posizione per le conferenze in Lync Server 2013](lync-server-2013-overview-of-location-based-routing-for-conferencing.md)
 
-  - [Trasferimenti di routing e chiamate consultive basati sulla posizione in Lync Server 2013](lync-server-2013-location-based-routing-and-consultative-call-transfers.md)
+  - [Trasferimenti di chiamate consultive e di routing in base alla posizione in Lync Server 2013](lync-server-2013-location-based-routing-and-consultative-call-transfers.md)
 
-  - [Requisiti per il routing basato sulla posizione per i servizi di conferenza in Lync Server 2013](lync-server-2013-requirements-for-location-based-routing-for-conferencing.md)
+  - [Requisiti per il routing in base alla posizione per le conferenze in Lync Server 2013](lync-server-2013-requirements-for-location-based-routing-for-conferencing.md)
 
   - [Configurazione del routing in base alla posizione per le conferenze in Lync Server 2013](lync-server-2013-configuration-of-location-based-routing-for-conferencing.md)
 

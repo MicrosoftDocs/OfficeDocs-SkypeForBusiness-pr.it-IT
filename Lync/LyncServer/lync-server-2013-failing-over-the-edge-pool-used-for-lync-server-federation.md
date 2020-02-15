@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Failover del pool di server perimetrali utilizzato per la federazione di Lync Server'
+title: 'Lync Server 2013: failover del pool di server perimetrali utilizzato per la Federazione di Lync'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733665
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f144def3d3a8df9cc63221342a85666eb3c28913
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f884f9e2ee822e99ebb17bd4b17717d1e147bf95
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765194"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030429"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="failing-over-the-edge-pool-used-for-lync-server-federation-in-lync-server-2013"></a>Failover del pool di server perimetrali utilizzato per la federazione di Lync Server in Lync Server 2013
+# <a name="failing-over-the-edge-pool-used-for-lync-server-federation-in-lync-server-2013"></a>Failover del pool di server perimetrali utilizzato per la Federazione di Lync ServerAnalysis in Lync Server 2013
 
 </div>
 
@@ -35,29 +35,29 @@ ms.locfileid: "41765194"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-17_
+_**Ultimo argomento modificato:** 2012-09-17_
 
-Se il pool di Edge in cui è configurata la Federazione di Lync Server è configurato, è necessario cambiare la Federazione per usare un pool di bordi diverso per la Federazione.
+Se il pool di server perimetrali in cui è stato configurata la federazione di Lync Server diventa non disponibile, è necessario modificare la federazione in modo da utilizzare un pool di server perimetrali diverso, affinché la federazione funzioni.
 
 <div>
 
-## <a name="failing-over-the-edge-pool-used-for-lync-server-federation"></a>Non superato il pool di Edge usato per la Federazione di Lync Server
+## <a name="failing-over-the-edge-pool-used-for-lync-server-federation"></a>Failover del pool di server perimetrali utilizzato per la federazione di Lync Server
 
-1.  In un server front-end aprire Generatore di topologia. Espandere **pool di bordi**e quindi fare clic con il pulsante destro del mouse sull'Edge Server o sul pool di Edge Server attualmente configurato per la Federazione. Selezionare **modifica proprietà**.
+1.  In un Front End Server aprire Generatore di topologie. Espandere **Pool di server perimetrali** e quindi fare clic con il pulsante destro del mouse sul server perimetrale o sul pool di server perimetrali attualmente configurato per la federazione. Scegliere **Modifica proprietà**.
 
-2.  In **modifica proprietà** in **generale**deselezionare **Abilita federazione per questo pool di bordi (porta 5061)**. Fare clic su **OK**.
+2.  In **Modifica proprietà** in **Generale** deselezionare **Abilita federazione per pool di server perimetrali (porta 5061)**. Fare clic su **OK**.
 
-3.  Espandere **pool di bordi**e quindi fare clic con il pulsante destro del mouse sull'Edge Server o sul pool di Edge Server che si desidera utilizzare per la Federazione. Selezionare **modifica proprietà**.
+3.  Espandere **Pool di server perimetrali** e quindi fare clic con il pulsante destro del mouse sul server perimetrale o sul pool di server perimetrali che si desidera utilizzare per la federazione. Scegliere **Modifica proprietà**
 
-4.  In **modifica proprietà** in **generale**Selezionare **Abilita federazione per questo pool di bordi (porta 5061)**. Fare clic su **OK**.
+4.  In **Modifica proprietà** in **Generale** selezionare **Abilita federazione per pool di server perimetrali (porta 5061)**. Fare clic su **OK**.
 
-5.  Fare clic su **azione**, selezionare **topologia**, quindi **pubblica**. Quando viene richiesto di **pubblicare la topologia**, fare clic su **Avanti**. Al termine della pubblicazione, fare clic su **fine**.
+5.  Fare clic su **Azione**, selezionare **Topologia** e **Pubblica**. Quando viene richiesto in **Pubblicare la topologia** fare clic su **Avanti**. Dopo il completamento della pubblicazione fare clic su **Fine**.
 
-6.  Nell'Edge Server aprire la distribuzione guidata di Lync Server. Fare clic su **Installa o aggiorna Lync Server System**, quindi fare clic su **Imposta o Rimuovi componenti di Lync Server**. Fare di nuovo clic su **Esegui**.
+6.  Nel server perimetrale aprire la Distribuzione guidata di Lync Server. Fare clic su **Installa o aggiorna il sistema Lync Server** e quindi su **Installazione o rimozione componenti di Lync Server**. Fare clic su **Riesegui**.
 
-7.  In configurazione componenti di Lync Server fare clic su **Avanti**. La schermata di riepilogo mostrerà le azioni Man mano che vengono eseguite. Dopo aver completato la distribuzione, fare clic su **Visualizza log** per visualizzare i file di log disponibili. Fare clic su **fine** per completare la distribuzione.
+7.  In Installazione componenti di Lync Server fare clic su **Avanti**. Nella schermata di riepilogo verranno visualizzate le azioni in esecuzione. Al termine della distribuzione, fare clic su **Visualizza log** per visualizzare i file di log disponibili. Fare clic su **Fine** per completare la distribuzione.
     
-    Se il sito che contiene il pool di Edge non riuscito contiene server front-end ancora in corso, è necessario aggiornare il servizio servizi di conferenza Web e il servizio di conferenza telefonica a/V in questi pool di front-end per usare un pool di Edge in un sito remoto ancora in corso. Per altre informazioni, vedere [modifica del pool di bordi associato a un pool Front-end in Lync Server 2013](lync-server-2013-changing-the-edge-pool-associated-with-a-front-end-pool.md).
+    Se il sito che contiene il pool di server perimetrali in errore contiene Front End Server ancora in esecuzione, è necessario aggiornare il servizio Web Conferencing e il servizio A/V Conferencing in questi pool Front End per l'utilizzo di un pool di server perimetrali in un sito remoto ancora funzionante. Per ulteriori informazioni, vedere [Changing the Edge pool associato a un pool Front end in Lync Server 2013](lync-server-2013-changing-the-edge-pool-associated-with-a-front-end-pool.md).
 
 </div>
 
@@ -66,11 +66,11 @@ Se il pool di Edge in cui è configurata la Federazione di Lync Server è config
 ## <a name="see-also"></a>Vedere anche
 
 
-[Failover del pool di server perimetrali utilizzato per la federazione di XMPP in Lync Server 2013](lync-server-2013-failing-over-the-edge-pool-used-for-xmpp-federation.md)  
-[Failback del pool di server perimetrali utilizzato per la federazione di Lync Server o di XMPP in Lync Server 2013](lync-server-2013-failing-back-the-edge-pool-used-for-lync-server-federation-or-xmpp-federation.md)  
+[Failover del pool di server perimetrali utilizzato per la Federazione XMPP in Lync 2013](lync-server-2013-failing-over-the-edge-pool-used-for-xmpp-federation.md)  
+[Failover del pool di server perimetrali utilizzato per la Federazione di Lync o la Federazione XMPP in Lync Server 2013](lync-server-2013-failing-back-the-edge-pool-used-for-lync-server-federation-or-xmpp-federation.md)  
 
 
-[Ripristino di emergenza dei server perimetrali in Lync Server 2013](lync-server-2013-edge-server-disaster-recovery.md)  
+[Ripristino di emergenza del server perimetrale in Lync Server 2013](lync-server-2013-edge-server-disaster-recovery.md)  
   
 
 </div>

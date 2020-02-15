@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Creare o modificare la configurazione dei partner XMPP'
+title: 'Lync Server 2013: creare o modificare la configurazione del partner XMPP'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48679558
 ms.date: 09/03/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 488665bca5cd2ad1b4d2d91a3c85a6a1ddaa3916
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4410444d1565e61fa80ef8b8db29aad63b4401de
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763390"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42032492"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-or-edit-xmpp-partner-configuration-in-lync-server-2013"></a>Creare o modificare la configurazione dei partner XMPP in Lync Server 2013
+# <a name="create-or-edit-xmpp-partner-configuration-in-lync-server-2013"></a>Creare o modificare la configurazione del partner XMPP in Lync Server 2013
 
 </div>
 
@@ -35,66 +35,66 @@ ms.locfileid: "41763390"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-09-03_
+_**Ultimo argomento modificato:** 2014-09-03_
 
-Microsoft Lync Server 2013 integra un proxy XMPP (Extensible Messaging and Presence Protocol) nell'Edge Server e un gateway XMPP nel server front-end o nel pool Front-end. Per consentire connessioni da altre distribuzioni XMPP, è necessario configurare XMPP nel pannello di controllo di Lync Server. Le impostazioni vengono configurate in base al dominio XMPP. Per creare una nuova associazione partner, eseguire le operazioni seguenti:
+Microsoft Lync Server 2013 integra un proxy XMPP (Extensible Messaging and Presence Protocol) nel server perimetrale e un gateway XMPP nel front end server o nel pool Front end. Per consentire connessioni da altre distribuzioni XMPP, è necessario configurare XMPP nel pannello di controllo di Lync Server. Le impostazioni devono essere configurate sulla base del dominio XMPP. Per creare una nuova associazione di partner, procedere come segue:
 
 <div>
 
 ## <a name="to-create-a-new-federated-partner-or-edit-an-existing-configuration"></a>Per creare un nuovo partner federato o modificare una configurazione esistente
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **Federazione e accesso esterno**, quindi fare clic su **partner federativi XMPP**.
+3.  Nella barra di spostamento sinistra fare clic su **Federazione e accesso esterno**, quindi su **Partner federati XMPP**.
 
-4.  Per creare una nuova configurazione, fare clic su **nuovo**
+4.  Per creare una nuova configurazione, fare clic su **Nuovo**
 
-5.  Per modificare una configurazione esistente, selezionare la configurazione e fare clic su **modifica**
+5.  Per modificare una configurazione esistente, selezionarla e fare clic su **Modifica**
 
-6.  Per creare o modificare le configurazioni per i **partner federati XMPP**, è possibile definire le impostazioni seguenti:
+6.  Per creare o modificare le configurazioni per i **Partner federati XMPP**, è necessario definire le impostazioni seguenti:
 
-7.  **Dominio principale** (obbligatorio). Il dominio principale è il dominio di base del partner XMPP. Ad esempio, immetti **Fabrikam.com** per il nome di dominio partner XMPP. Questa è una voce obbligatoria.
+7.  **Dominio primario** (obbligatorio). Il dominio primario è il dominio di base del partner XMPP. Ad esempio, è necessario immettere **fabrikam.com** per il nome di dominio del partner XMPP. Questa voce è obbligatoria.
 
-8.  **Descrizione**. La descrizione riguarda le note o altre informazioni di identificazione per questa particolare configurazione. Questa voce è facoltativa.
+8.  **Descrizione**. La descrizione è costituita da note o altre informazioni di identificazione di questa specifica configurazione. Questa voce è facoltativa.
 
-9.  **Altri domini**. I domini aggiuntivi sono domini che fanno parte del dominio del partner XMPP che deve essere incluso come parte della comunicazione XMPP consentita. Ad esempio, se il dominio principale è **Fabrikam.com**, devi elencare tutti gli altri domini in Fabrikam.com con cui comunicherai per mezzo di XMPP. Ad esempio, è possibile immettere **Corp.fabrikam.com** e **it.fabrikam.com** per il dominio XMPP aziendale e il dominio XMPP delle tecnologie informative sotto il dominio XMPP principale di Fabrikam.
+9.  **Domini aggiuntivi**. I domini aggiuntivi sono domini che fanno parte del dominio del partner XMPP che devono essere inclusi come parte delle comunicazioni XMPP consentite. Se ad esempio il dominio primario è **fabrikam.com**, si dovrebbero elencare tutti gli altri domini al di sotto di fabrikam.com con cui si comunicherà mediante il protocollo XMPP. Ad esempio, si potrebbe immettere **corp.fabrikam.com** e **it.fabrikam.com** per i domini XMPP Corporate e Information Technologies sotto il dominio XMPP principale di fabrikam.com.
 
-10. **Tipo di partner**. Il **tipo di partner** è un'impostazione obbligatoria e offre una selezione di tre opzioni in un menu a discesa. È necessario scegliere una delle opzioni seguenti per descrivere e applicare i contatti che è possibile aggiungere. È possibile selezionare una delle opzioni seguenti:
+10. **Tipo di partner**. Il **Tipo di partner** è un'impostazione obbligatoria che prevede la possibilità di scegliere tra tre opzioni di un menu a discesa. È necessario scegliere una delle opzioni seguenti per descrivere e specificare i contatti che si possono aggiungere. È possibile selezionare le opzioni seguenti:
     
-      - **Federati**. Un tipo di partner **federato** è una connessione attendibile tra una distribuzione di partner di Lync Server o Office Communications Server 2007 R2.
+      - **Federata**. Un tipo di partner **federato** è una connessione attendibile tra una distribuzione di partner di Lync Server o Office Communications Server 2007 R2.
     
-      - **Pubblico verificato**. Un partner **verificato pubblico** si trova quando i contatti che fanno parte di una distribuzione verificata dal provider possono essere aggiunti all'elenco di contatti dell'utente. Gli inviti possono essere inviati dall'utente di Lync o l'utente di Lync può accettare gli inviti dal contatto del partner.
+      - **Pubblico verificato**. Un partner **verificato pubblico** è quando i contatti che fanno parte di una distribuzione verificata dal provider possono essere aggiunti all'elenco di contatti dell'utente. Gli inviti possono essere inviati dall'utente Lync o l'utente di Lync può accettare gli inviti dal contatto del partner.
     
-      - **Pubblico non verificato**. Una relazione **pubblica non verificata** implica che non ci sia stato stabilito e verificabile tra le due distribuzioni. Un utente di Lync deve invitare il contatto non verificato per il contatto per poter aggiungere l'utente di Lync all'elenco contatti. Ad esempio, Google GTalk non è un servizio pubblico verificato per l'XMPP quando si riferisce a Lync Server. Un utente di GTalk non sarà in grado di aggiungere l'utente di Lync come contatto, a meno che non sia presente un invito esplicito inviato dall'utente di Lync.
+      - **Pubblico non verificato**. Una relazione **pubblica non verificata** implica che non vi siano stati stabiliti e verificabili tra le due distribuzioni. Un utente di Lync deve invitare il contatto non verificato per il contatto per poter aggiungere l'utente Lync all'elenco dei contatti. Ad esempio, Google GTalk non è un servizio di verifica XMPP pubblico che si riferisce a Lync Server. Un utente di GTalk non sarà in grado di aggiungere l'utente Lync come contatto, a meno che non sia presente un invito esplicito inviato dall'utente Lync.
 
-11. Note sulla negoziazione Stream e i metodi di sicurezza Transport Layer Security (TLS) e software Authentication and Security Layer (SASL):
+11. Note sulla negoziazione dei flussi e sui metodi di sicurezza TLS (Transport Layer Security) e SASL (Software Authentication and Security Layer):
     
-    La rete di **standard XMPP** (xsf) e la **Internet Engineering Task Force** (IETF) definiscono un set di regole e standard per l'uso e la gestione dei certificati client TLS, dei certificati server TLS e del meccanismo SASL. L'uso di TLS e SASL è il processo necessario per proteggere il flusso XMPP. Dal documento di standard XMPP **XEP-0178**"specifica un flusso di protocollo consigliato per l'uso del meccanismo esterno SASL con certificati PKIX, in particolare quando un servizio XMPP indica che TLS è obbligatorio da negoziare". PKIX, come indicato nella documentazione XSF, fa riferimento all'infrastruttura a chiave pubblica, nota anche come PKI.
+    **XMPP Standards Foundation** (XSF) e **Internet Engineering Task Force** (IETF) definiscono un insieme di regole e standard per l'uso e la gestione dei certificati client TLS, dei certificati server TLS e del meccanismo SASL. L'utilizzo di TLS e SASL è la procedura richiesta per proteggere il flusso XMPP. Nella sintesi del documento **XEP-0178** gli standard XMPP specificano un flusso di protocollo consigliato per l'uso del meccanismo SASL EXTERNAL con i certificati PKIX, soprattutto nei casi in cui un servizio XMPP indica che è necessaria la negoziazione TLS. PKIX, come indicato nella documentazione relativa a XSF, fa riferimento all'infrastruttura a chiave pubblica, nota anche come PKI.
     
-    Per altre informazioni sui requisiti XMPP, vedere il documento XSF XEP-0178. Per informazioni dettagliate, vedere "XEP-0178: procedure consigliate per l'uso di SASL EXTERNAL with Certificates". <http://xmpp.org/extensions/xep-0178.html>
+    Vedere il documento XSF XEP-0178 per altri dettagli sui requisiti del protocollo XMPP. Per informazioni dettagliate, vedere "XEP-0178: Best Practices for Use of SASL EXTERNAL with Certificates". <http://xmpp.org/extensions/xep-0178.html>
     
-    Fare riferimento al documento IETF "Extensible Messaging and Presence Protocol (XMPP): Core", sezione 5,0, negoziazione <http://tools.ietf.org/html/rfc6120>STARTTLS.
+    Fare riferimento al documento IETF "protocollo XMPP (Extensible Messaging and Presence Protocol): Core", sezione 5,0, negoziazione <http://tools.ietf.org/html/rfc6120>STARTTLS.
     
-      - **Negoziazione TLS**. Definisce le regole di negoziazione TLS. Un servizio XMPP può richiedere TLS, può rendere facoltativo TLS oppure definire che TLS non è supportato. La scelta facoltativa lascia il requisito fino al servizio XMPP per una decisione obbligatorio-negoziare. Per visualizzare tutte le impostazioni e i dettagli possibili per la negoziazione SASL, TLS e richiamata, incluse le configurazioni di errore non valide e note, vedere [impostazioni di negoziazione per partner federati XMPP in Lync Server 2013](lync-server-2013-negotiation-settings-for-xmpp-federated-partners.md).
+      - **Negoziazione TLS**. Consente di definire le regole di negoziazione TLS. Un servizio XMPP può richiedere la negoziazione TLS, può definirla come facoltativa oppure l'utente può specificare che la negoziazione TLS non è supportata. Se si seleziona Facoltativa, l'eventuale obbligatorietà della negoziazione viene decisa dal servizio XMPP. Per visualizzare tutte le impostazioni e i dettagli possibili per la negoziazione SASL, TLS e richiamata, incluse le configurazioni degli errori non valide e note, vedere [impostazioni di negoziazione per i partner federati XMPP in Lync Server 2013](lync-server-2013-negotiation-settings-for-xmpp-federated-partners.md).
         
           - <span></span>  
             **Obbligatorio**. Il servizio XMPP richiede la negoziazione TLS.
         
           - <span></span>  
-            **Facoltativo**. Il servizio XMPP indica che TLS è obbligatorio da negoziare.
+            **Facoltativo**. Il servizio XMPP indica se esiste l'obbligo di negoziare con TLS.
         
           - <span></span>  
-            **Non supportato**. Il servizio XMPP non supporta TLS.
+            **Non supportato**. Il servizio XMPP non supporta la negoziazione TLS.
     
-      - **Negoziazione SASL**. Definisce le regole di negoziazione SASL. Un servizio XMPP può richiedere SASL, può rendere SASL facoltativo o Definisci che SASL non è supportato. La scelta facoltativa lascia il requisito fino al servizio XMPP partner per una decisione obbligatorio-to-negotiate.
+      - **Negoziazione SASL**. Consente di definire le regole di negoziazione SASL. Un servizio XMPP può richiedere la negoziazione SASL, può definirla come facoltativa oppure l'utente può specificare che la negoziazione SASL non è supportata. Se si sceglie di renderlo facoltativo, sarà il servizio XMPP a stabilire se rendere obbligatorio il protocollo per consentire la negoziazione.
         
         <div>
         
 
         > [!WARNING]  
-        > SASL richiede TLS. Per usare SASL, TLS deve essere obbligatorio o facoltativo. Qualsiasi configurazione che definisce SASL come obbligatorio o facoltativo deve avere il supporto TLS. Quando si fa clic su <STRONG>conferma</STRONG> per salvare le modifiche, se non è stato impostato TLS su obbligatorio o facoltativo, viene avvisato che SASL deve avere il supporto TLS e che le modifiche non vengono salvate. Per risolvere l'errore, impostare TLS su <STRONG>obbligatorio</STRONG> o <STRONG>facoltativo</STRONG>. Se l'uso di SASL è facoltativo e non è possibile il supporto delle negoziazioni TLS, è necessario impostare la negoziazione SASL su <STRONG>non supportata</STRONG>. Verificare con il servizio XMPP che cosa devono essere i flussi di negoziazione appropriati per TLS e SASL o l'interruzione del servizio.
+        > In SASL è richiesto TLS. Per poter usare SASL, è necessario specificare se TLS deve essere obbligatorio o facoltativo. Qualsiasi configurazione che definisca SASL come obbligatorio o facoltativo deve prevedere il supporto di TLS. Se non si specifica se TLS deve essere obbligatorio o facoltativo e si fa clic su <STRONG>Commit</STRONG> per salvare le modifiche, viene visualizzato un avviso che segnala che SASL deve prevedere il supporto di TLS e che le modifiche non verranno salvate. Per risolvere l'errore, impostare TLS su <STRONG>Richiesto</STRONG> o su <STRONG>Facoltativo</STRONG>. Se l'uso di SASL è facoltativo e il supporto della negoziazione TLS non è possibile, è necessario impostare la negoziazione SASL su <STRONG>Non supportato</STRONG>. Verificare con il servizio XMPP quali sono flussi di negoziazione appropriati per TLS e SASL per evitare che il servizio venga interrotto.
 
         
         </div>
@@ -103,20 +103,20 @@ Microsoft Lync Server 2013 integra un proxy XMPP (Extensible Messaging and Prese
             **Obbligatorio**. Il servizio XMPP richiede la negoziazione SASL.
         
           - <span></span>  
-            **Facoltativo**. Il servizio XMPP indica che SASL è obbligatorio-negoziare.
+            **Facoltativo**. Il servizio XMPP indica se esiste l'obbligo di negoziare con SASL.
         
           - <span></span>  
-            **Non supportato**. Il servizio XMPP non supporta SASL.
+            **Non supportato**. Il servizio XMPP non supporta la negoziazione SASL.
     
-      - **Negoziazione richiamata**. La negoziazione richiamata è definita dall'elemento XSF nel documento **XEP-220: server richiamata** <http://xmpp.org/extensions/xep-0220.html>. Il processo server richiamata USA Domain Name System (DNS) e un server autorevole per verificare che la richiesta provenisse da un partner XMPP valido. A questo scopo, il server di origine crea un messaggio di un tipo specifico con una chiave richiamata generata e cerca il server di ricezione nel DNS. Il server di origine invia la chiave in un flusso XML alla ricerca DNS risultante, presumibilmente il server di ricezione. Al ricevimento della chiave sul flusso XML, il server di ricezione non risponde al server di origine, ma invia la chiave a un server autorevole noto. Il server autorevole verifica che la chiave sia valida o non valida. Se non è valido, il server di ricezione non risponde al server di origine. Se la chiave è valida, il server di ricezione informa il server di origine che l'identità e la chiave sono valide e che la conversazione può iniziare.
+      - **Negoziazione richiamata**. La negoziazione di richiamata è definita dal XSF nel documento **XEP-220: server richiamata** <http://xmpp.org/extensions/xep-0220.html>. Il processo del server richiamata utilizza il DNS (Domain Name System) e un server autorevole per verificare che la richiesta provenisse da un partner XMPP valido. A tale scopo, il server di origine crea un messaggio di un tipo specifico con una chiave richiamata generata e cerca il server di ricezione in DNS. Il server di origine invia la chiave in un flusso XML alla ricerca DNS risultante, presumibilmente il server di ricezione. Al ricevimento della chiave tramite il flusso XML, il server di ricezione non risponde al server di origine, ma invia la chiave a un server autorevole noto. Il server autorevole verifica che la chiave sia valida o non valida. Se non è valido, il server di ricezione non risponde al server di origine. Se la chiave è valida, il server di ricezione informa il server di origine che l'identità e la chiave sono valide e che la conversazione può iniziare.
         
-        Esistono due stati validi per la **negoziazione richiamata**:
-        
-          - <span></span>  
-            **Vero**. Il server XMPP è configurato per l'uso della negoziazione richiamata se una richiesta deve essere ricevuta da un server di origine
+        Sono disponibili due stati validi per la negoziazione di tipo **Dialback**:
         
           - <span></span>  
-            **False**. Il server XMPP non è configurato per l'uso della negoziazione richiamata e se una richiesta deve essere ricevuta da un server di origine, verrà ignorata
+            **Vero**. Il server XMPP è configurato per usare Dialback Negotiation nel caso in cui si riceva una richiesta da un server di origine
+        
+          - <span></span>  
+            Valore **false**. Il server XMPP non è configurato per l'utilizzo di Dialback Negotiation e, se si ricevesse una richiesta da un server di origine, verrebbe ignorata
 
 </div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 48183442
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 637897bce0a160a8cc3b199ec6aee3ffd7375852
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 73b9947cf77df8d0c3baedcb27d8e13cc728e52b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763930"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030740"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,61 +35,61 @@ ms.locfileid: "41763930"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-12-17_
+_**Ultimo argomento modificato:** 2013-12-17_
 
-Sono state apportate modifiche importanti all'infrastruttura di monitoraggio di Microsoft Lync Server 2013, a partire dal fatto che il ruolo del server di monitoraggio è deprecato. Invece dei ruoli distinti del server di monitoraggio (che in genere richiedevano alle organizzazioni di configurare computer dedicati per fungere da server di monitoraggio), i servizi di monitoraggio sono ora collocati in ogni server front-end. Tra le altre cose, questa modifica consente di:
+Sono state apportate modifiche importanti all'infrastruttura di monitoraggio di Microsoft Lync Server 2013, a partire dal fatto che il ruolo Monitoring Server è obsoleto. Al posto di ruoli server Monitoring Server separati (che normalmente richiedono la configurazione di computer dedicati come server di monitoraggio nelle organizzazioni), i servizi di monitoraggio sono ora collocati sui singoli server front-end. Questa modifica, tra le altre cose, consente di:
 
-  - Ridurre il numero di ruoli del server necessari per l'implementazione di Lync Server 2013. In questo caso, il decremento del ruolo del server di monitoraggio consente anche di ridurre i costi eliminando la necessità di gestire server dedicati per il monitoraggio.
+  - Ridurre il numero di ruoli del server necessari per l'implementazione di Lync Server 2013. In questo caso, il decremento del ruolo server Monitoring Server si traduce anche in una riduzione dei costi poiché non è più necessario mantenere server dedicati per il monitoraggio.
 
-  - Ridurre la complessità della configurazione e dell'amministrazione di Lync Server. La collocazione automatica dei servizi di monitoraggio in ogni server front-end non è più necessario installare, configurare e gestire il ruolo del server di monitoraggio.
-
-<div>
-
-
-> [!NOTE]  
-> Il ruolo del server di archiviazione è stato deprecato anche in Lync Server 2013. Come i servizi di monitoraggio, i servizi di archiviazione di Lync Server 2013 sono ora collocati in ogni server front-end. Questa operazione è importante da notare semplicemente perché il monitoraggio e l'archiviazione condividono spesso la stessa istanza di database di SQL Server.
-
-
-
-</div>
-
-Come si può prevedere, queste modifiche hanno un impatto importante sul modo in cui vengono installati e gestiti i servizi di monitoraggio. Poiché il ruolo del server di monitoraggio non esiste più, ad esempio, il nodo server di monitoraggio è stato rimosso dal generatore di topologia di Lync Server. a sua volta, questo significa che non è più possibile usare la procedura guidata nuovo server di monitoraggio di generatore di topologia per aggiungere un nuovo server di monitoraggio alla topologia. (La procedura guidata non esiste più) Al contrario, in genere implementiamo i servizi di monitoraggio all'interno della topologia completando i due passaggi seguenti:
-
-1.  Abilitazione del monitoraggio contemporaneamente alla configurazione di un nuovo pool di Lync Server. In Lync Server 2013 il monitoraggio viene abilitato o disabilitato in base al pool. Tieni presente che puoi abilitare il monitoraggio per un pool senza raccogliere effettivamente i dati di monitoraggio, un processo spiegato nella sezione configurazione della registrazione dei dettagli delle chiamate e della qualità delle impostazioni dell'esperienza di questa documentazione.
-
-2.  Associazione di un archivio di monitoraggio (ovvero un database di monitoraggio) con il nuovo pool. Tieni presente che un singolo archivio di monitoraggio può essere associato a più pool. A seconda del numero di utenti ospitati nei pool di registrar, significa che non è necessario configurare un database di monitoraggio separato per ogni pool. Un singolo archivio di monitoraggio può invece essere usato da più pool.
-
-Anche se spesso è più semplice abilitare il monitoraggio quando si crea un nuovo pool, è anche possibile creare un nuovo pool con il monitoraggio disabilitato. In questo caso, puoi usare il generatore di topologie in seguito per abilitare il servizio: generatore di topologie consente di abilitare o disabilitare il monitoraggio per un pool o di associare un pool a un altro archivio di monitoraggio. Tenere presente che, anche se non è più presente un ruolo di monitoraggio del server, sarà comunque necessario creare uno o più archivi di monitoraggio: i database di backend usati per archiviare i dati raccolti dal servizio di monitoraggio. Questi database back-end possono essere creati usando Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012.
+  - Ridurre la complessità dell'installazione e dell'amministrazione di Lync Server. Collocando automaticamente i servizi di monitoraggio su ogni server front-end, non è più necessario installare, configurare e gestire il ruolo Monitoring Server.
 
 <div>
 
 
 > [!NOTE]  
-> Se il monitoraggio è stato abilitato per un pool, è possibile disabilitare il processo di raccolta dei dati di monitoraggio senza dover modificare la topologia: Lync Server Management Shell consente di disabilitare (e quindi riabilitare) la registrazione dettagli chiamata (CDR) o la qualità raccolta dati di Experience (QoE). Per altre informazioni, vedere la sezione configurazione della registrazione dei dettagli delle chiamate e della qualità delle impostazioni dell'esperienza di questo documento.
+> Il ruolo del server di archiviazione è stato deprecato anche in Lync Server 2013. Analogamente ai servizi di monitoraggio, i servizi di archiviazione di Lync Server 2013 sono ora collocati in ogni Front End Server. È importante tenerlo presente semplicemente perché il monitoraggio e l'archiviazione spesso condividono la stessa istanza di database di SQL Server.
 
 
 
 </div>
 
-Un altro importante miglioramento per il monitoraggio in Lync Server 2013 è il fatto che i report di monitoraggio di Lync Server ora supportano IPv6: i report che usano il campo indirizzo IP visualizzeranno indirizzi IPv4 o IPv6 in base a: 1) la query SQL in uso; e 2) dove l'indirizzo IPv6 viene archiviato o meno nel database di monitoraggio.
+Come si potrebbe immaginare, queste modifiche hanno un impatto importante sulla modalità di installazione e gestione dei servizi di monitoraggio. Ad esempio, poiché il ruolo Monitoring Server non esiste più, il nodo Monitoring Server è stato rimosso dal generatore di topologie di Lync Server. Ciò significa che non è più possibile utilizzare la procedura guidata del nuovo Monitoring Server di generatore di topologie per aggiungere un nuovo server di monitoraggio alla topologia. La procedura guidata non esiste più. In genere, invece, vengono implementati i servizi di monitoraggio all'interno della topologia completando i due passaggi seguenti:
+
+1.  Abilitazione del monitoraggio nello stesso momento in cui si configura un nuovo pool di Lync Server. In Lync Server 2013, il monitoraggio è abilitato o disabilitato in base al pool. Si noti che è possibile abilitare il monitoraggio per un pool senza raccogliere effettivamente i dati di monitoraggio, un processo illustrato nella sezione Configurazione delle impostazioni di registrazione dettagli chiamata e qualità di esperienza di questa documentazione.
+
+2.  Associazione di un archivio (database) di monitoraggio al nuovo pool. Tenere presente che un archivio di monitoraggio può essere associato a più pool. A seconda del numero di utenti ospitati nei pool di registrazione, questo comporta che non è necessario configurare un database di monitoraggio separato per ogni pool, ma un singolo archivio di monitoraggio può essere utilizzato da più pool.
+
+Sebbene spesso risulti più semplice abilitare il monitoraggio al momento della creazione di un nuovo pool, è anche possibile creare un nuovo pool con il monitoraggio disabilitato. In questo caso, è possibile abilitare il servizio in un secondo momento utilizzando il Generatore di topologie, che consente di attivare o disattivare il monitoraggio di topologie o di associare un pool a un diverso archivio di monitoraggio. Tenere presente che, sebbene non esista più il ruolo Monitoring Server, è comunque necessario creare uno o più archivi di monitoraggio, ovvero i database back-end utilizzati per archiviare i dati raccolti dal servizio di monitoraggio. Questi database back-end possono essere creati mediante Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012.
 
 <div>
 
 
 > [!NOTE]  
-> Verificare che il tipo di avvio del servizio di SQL Server Agent sia automatico e che il servizio SQL Server Agent sia in esecuzione per l'istanza SQL che tiene i database di monitoraggio, in modo che i processi di manutenzione di SQL Server di monitoraggio predefiniti possano essere eseguiti nella loro base pianificata sotto il controllo del servizio agente SQL Server.
+> Se è stato abilitato il monitoraggio per un pool, è possibile disabilitare il processo di raccolta dei dati di monitoraggio senza dover modificare la topologia: Lync Server Management Shell consente di disabilitare (e successivamente riabilitare) la registrazione dettagli chiamata (CDR) o la qualità raccolta dati di esperienza (QoE). Per ulteriori informazioni, vedere la sezione relativa alla configurazione delle impostazioni di registrazione dettagli chiamata e QoE di questa documentazione.
 
 
 
 </div>
 
-Questa documentazione illustra il processo di installazione e configurazione dei report di monitoraggio e monitoraggio per Lync Server 2013. La documentazione include istruzioni dettagliate che ti aiuteranno a:
+Un altro importante miglioramento del monitoraggio in Lync Server 2013 è il fatto che i rapporti di monitoraggio di Lync Server ora supportano IPv6: i report che utilizzano il campo indirizzo IP visualizzeranno gli indirizzi IPv4 o IPv6 a seconda di quanto segue: 1) la query SQL utilizzata. e 2) dove l'indirizzo IPv6 è memorizzato o meno nel database di monitoraggio.
 
-  - Abilitare il monitoraggio nella topologia e associare un archivio di monitoraggio a un pool Front-end.
+<div>
 
-  - Installare SQL Server Reporting Services e i report di monitoraggio di Lync Server. I report di monitoraggio sono report preconfigurati che contengono visualizzazioni diverse delle informazioni archiviate in un database di monitoraggio.
 
-  - Configurare la raccolta di dati per la registrazione dei dettagli delle chiamate (CDR) e la qualità dell'esperienza (QoE). La registrazione dei dettagli delle chiamate consente di tenere traccia dell'uso delle funzionalità di Lync Server, ad esempio chiamate telefoniche VoIP (Voice over IP). messaggistica istantanea (IM); trasferimenti di file; Servizi di conferenza audio/video (A/V); e sessioni di condivisione applicazioni. Le metriche QoE tengono traccia della qualità delle chiamate audio e video effettuate nell'organizzazione, inclusi i problemi relativi al numero di pacchetti di rete persi, al rumore di fondo e alla quantità di "jitter" (differenze nel ritardo del pacchetto).
+> [!NOTE]  
+> Verificare che il tipo di avvio del servizio SQL Server Agent sia automatico e che il servizio SQL Server Agent sia in esecuzione per l'istanza di SQL che contiene i database di monitoraggio, in modo che i processi di manutenzione di SQL Server di monitoraggio predefiniti possano essere eseguiti sulla base pianificata sotto il controllo del servizio SQL Server Agent.
+
+
+
+</div>
+
+In questa documentazione viene illustrato il processo di installazione e configurazione dei rapporti di monitoraggio e monitoraggio per Lync Server 2013. Sono fornite istruzioni dettagliate per le seguenti operazioni:
+
+  - Abilitare il monitoraggio nella topologia e associare un archivio di monitoraggio a un pool Front End.
+
+  - Installare SQL Server Reporting Services e i report di monitoraggio di Lync Server. I report di monitoraggio sono rapporti preconfigurati che forniscono visualizzazioni diverse nelle informazioni archiviate in un database di monitoraggio.
+
+  - Configurare la raccolta dei dati di registrazione dettagli chiamata (CDR) e qualità percepita dagli utenti (QoE). La registrazione dettagli chiamata consente di monitorare l'utilizzo delle funzionalità di Lync Server, ad esempio le chiamate telefoniche VoIP (Voice over IP). messaggistica istantanea (IM); trasferimenti di file; Servizi di conferenza audio/video (A/V); e sessioni di condivisione applicazioni. Le metriche QoE tengono traccia della qualità delle chiamate audio e video effettuate nell'organizzazione, includendo informazioni quali il numero di pacchetti di rete persi, i rumori di fondo e la quantità di "instabilità" (differenze nel ritardo dei pacchetti.
 
   - Eliminare manualmente i record CDR e/o QoE dal database di monitoraggio.
 

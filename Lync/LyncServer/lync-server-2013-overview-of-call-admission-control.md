@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Panoramica del controllo di ammissione alle chiamate'
+title: 'Lync Server 2013: Panoramica del controllo di ammissione di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184474
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f5b38fbb1ae1e209e5b5332e896d806d1ca24975
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a4ad2be78d3e2af4c5b016b02e152ba0430d2a1d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755620"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034366"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-call-admission-control-in-lync-server-2013"></a>Panoramica del controllo di ammissione alle chiamate in Lync Server 2013
+# <a name="overview-of-call-admission-control-in-lync-server-2013"></a>Panoramica del controllo di ammissione di chiamata in Lync Server 2013
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41755620"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-22_
+_**Ultimo argomento modificato:** 2012-09-22_
 
-Le comunicazioni in tempo reale sono sensibili alla latenza e alla perdita di pacchetti che possono verificarsi nelle reti congestionate. Il controllo di ammissione di chiamata (CAC) determina, in base alla larghezza di banda della rete disponibile, se consentire la creazione di sessioni di comunicazioni in tempo reale, ad esempio chiamate vocali o videochiamate. La progettazione CAC in Lync Server 2013 offre quattro attributi principali:
+Le comunicazioni in tempo reale sono sensibili alla latenza e alla perdita di pacchetti che possono verificarsi in reti congestionate. Il controllo di ammissione di chiamata determina, in base alla larghezza di banda disponibile, se consentire di stabilire sessioni di comunicazione in tempo reale, ad esempio chiamate vocali o videochiamate. La progettazione del servizio di controllo di ammissione in Lync Server 2013 offre quattro attributi principali:
 
-  - È semplice eseguire la distribuzione e la gestione senza richiedere ulteriori dispositivi, ad esempio router appositamente configurati.
+  - È semplice da distribuire e gestire senza richiedere apparecchiature aggiuntive, ad esempio router configurati in modo speciale.
 
-  - Risolve i casi di utilizzo delle comunicazioni unificate critiche, ad esempio utenti mobili e più punti di presenza. I criteri di CAC vengono applicati in base al punto in cui si trova l'endpoint, non in cui è ospitato l'utente.
+  - Consente di risolvere casi critici di utilizzo delle comunicazioni unificate, ad esempio relativi a utenti mobili e a più punti di presenza. I criteri di controllo di ammissione di chiamata vengono applicati in base alla posizione dell'endpoint e non a quella in cui risiede l'utente.
 
-  - Oltre alle chiamate vocali, può essere applicato ad altri traffici, ad esempio videochiamate e sessioni di conferenze audio/video.
+  - Oltre alle chiamate vocali, può essere applicato ad altro traffico, ad esempio alle videochiamate e alle sessioni di conferenza audio/video.
 
-  - Offre la flessibilità necessaria per consentire la rappresentazione di vari tipi di topologie di rete. Per gli esempi, vedere [componenti e topologie per CAC in Lync Server 2013](lync-server-2013-components-and-topologies-for-cac.md).
+  - Offre la flessibilità necessaria per consentire la rappresentazione di diversi tipi di topologie di rete. Per alcuni esempi, vedere [componenti e topologie per il servizio di controllo di ammissione in Lync Server 2013](lync-server-2013-components-and-topologies-for-cac.md).
 
-Se una nuova sessione vocale o video supera i limiti di larghezza di banda impostati in un collegamento WAN, la sessione viene bloccata oppure (solo per le chiamate telefoniche) viene reinstradata alla rete PSTN.
+Se una nuova sessione vocale o video supera i limiti di larghezza di banda impostati in un collegamento WAN, la sessione viene bloccata (solo per le chiamate telefoniche) o reinstradata alla rete PSTN.
 
-CAC controlla il traffico in tempo reale solo per voce e video. Non controlla il traffico dati.
+Il controllo di ammissione di chiamata controlla solo il traffico audio e video in tempo reale, ma non il traffico di dati.
 
-Gli amministratori definiscono i criteri di CAC, applicati dal servizio dei criteri di larghezza di banda installato con ogni pool Front-end. Le impostazioni di CAC vengono propagate automaticamente a tutti i server front-end di Lync in rete.
+Gli amministratori definiscono i criteri di CAC, applicati dal servizio criteri di larghezza di banda installato con tutti i pool Front end. Le impostazioni del servizio di controllo di ammissione vengono propagate automaticamente a tutti i server front end di Lync Server della rete.
 
-Per le chiamate che non riescono a causa di criteri di CAC, l'ordine di precedenza per il reinstradamento della chiamata è il seguente:
+Per le chiamate non riuscite a causa di criteri di controllo di ammissione di chiamata, l'ordine di precedenza per il rerouting della chiamata è il seguente:
 
 1.  Internet
 
@@ -61,79 +61,79 @@ Per le chiamate che non riescono a causa di criteri di CAC, l'ordine di preceden
 
 3.  Segreteria telefonica
 
-La registrazione dei dettagli delle chiamate (CDR) acquisisce informazioni sulle chiamate reinstradate alla rete PSTN o alla segreteria telefonica. CDR non acquisisce informazioni sulle chiamate reinstradate a Internet, poiché Internet viene considerato come percorso alternativo anziché come opzione secondaria.
+Tramite la registrazione dettagli chiamata (CDR) vengono acquisite informazioni sulle chiamate reinstradate alla rete PSTN o alla segreteria telefonica. CDR non consente l'acquisizione di informazioni sulle chiamate reinstradate a Internet, perché Internet viene considerato un percorso alternativo anziché un'opzione secondaria.
 
 <div>
 
 
 > [!NOTE]  
-> I depositi della segreteria telefonica non verranno negati a causa di vincoli di larghezza di banda.
+> L'archiviazione nella segreteria telefonica non viene negata a causa di vincoli di larghezza di banda.
 
 
 
 </div>
 
-Il servizio criteri di larghezza di banda genera due tipi di file di log in formato CSV (comma separated values). Il file di log degli **errori di controllo** acquisisce informazioni quando le richieste di larghezza di banda vengono negate. Il file di log di **utilizzo del collegamento** acquisisce uno snapshot della topologia di rete e dell'utilizzo della larghezza di banda dei collegamenti WAN. Entrambi i file di log possono aiutarti a ottimizzare i criteri di CAC in base all'utilizzo.
+Il servizio criteri di larghezza di banda genera due tipi di file di registro in formato con valori separati da virgole (CSV). Nel file di registro degli **errori di verifica** vengono acquisite informazioni quando vengono negate richieste di larghezza di banda. Nel file di registro dell'**utilizzo dei collegamenti** viene acquisita un'istantanea dell'utilizzo della larghezza di banda della topologia di rete e del collegamento WAN. Entrambi questi file di registro possono semplificare l'ottimizzazione dei criteri di controllo di ammissione di chiamata in base all'utilizzo.
 
 <div>
 
-## <a name="call-admission-control-considerations"></a>Considerazioni sul controllo dell'ammissione alle chiamate
+## <a name="call-admission-control-considerations"></a>Considerazioni relative al controllo di ammissione di chiamata
 
-L'amministratore seleziona per installare il servizio criteri di larghezza di banda nel primo pool configurato nel sito centrale. Poiché esiste un unico sito centrale per ogni area di rete, esiste un solo servizio per i criteri di larghezza di banda per ogni area di rete, che gestisce i criteri di larghezza di banda per l'area geografica, i siti associati e i collegamenti a tali siti. Il servizio criteri di larghezza di banda viene eseguito come parte dei server front-end e quindi la disponibilità elevata è incorporata all'interno di tale pool. Il servizio criteri di larghezza di banda eseguito in ogni server front-end viene sincronizzato ogni 15 secondi. Se il pool Front-end non riesce, i criteri di CAC non vengono più applicati per il sito fino al pool Front-end e di conseguenza il servizio dei criteri di larghezza di banda diventa operativo. Questo implica che tutte le chiamate verranno effettuate per tutta la durata del servizio per i criteri di larghezza di banda fuori servizio. È quindi possibile che l'oversubscription della larghezza di banda dei collegamenti durante questo periodo
+L'amministratore seleziona per installare il servizio criteri di larghezza di banda sul primo pool configurato nel sito centrale. Poiché è presente un unico sito centrale per ogni area di rete, è presente un solo servizio criteri di larghezza di banda per ogni area di rete, che consente di gestire i criteri di larghezza di banda per tale area, i siti associati e i collegamenti a tali siti. Il servizio criteri di larghezza di banda viene eseguito come parte dei front end server e quindi la disponibilità elevata è incorporata all'interno di tale pool. Il servizio dei criteri di larghezza di banda in esecuzione su ogni Front End Server Sincronizza ogni 15 secondi. Se il pool Front End ha esito negativo, i criteri di CAC non vengono più applicati per il sito fino a quando il pool Front end e di conseguenza il servizio criteri di larghezza di banda diventeranno di nuovo operativi. Questo implica che tutte le chiamate passeranno per la durata del servizio dei criteri di larghezza di banda non è in servizio. Vi è pertanto la possibilità di oversubscription della larghezza di banda dei collegamenti durante questo periodo
 
-Il servizio criteri di larghezza di banda offre una disponibilità elevata all'interno di un pool Front End; Tuttavia, non offre ridondanza nei pool Front-end. Il servizio criteri di larghezza di banda non può eseguire il failover da un pool Front-end a un altro. Una volta ripristinato il servizio al pool Front-End, il servizio criteri di larghezza di banda viene ripreso e può applicare di nuovo i controlli dei criteri di larghezza di banda.
+Il servizio criteri di larghezza di banda garantisce una disponibilità elevata all'interno di un pool Front end. Tuttavia, non fornisce la ridondanza nei pool Front end. Il servizio criteri di larghezza di banda non può eseguire il failover da un pool Front end a un altro. Dopo il ripristino del servizio per il pool Front End, il servizio criteri di larghezza di banda viene ripristinato e può applicare di nuovo i controlli dei criteri di larghezza di banda.
 
 <div>
 
 ## <a name="network-considerations"></a>Considerazioni sulla rete
 
-Anche se la restrizione della larghezza di banda per l'audio e il video viene applicata dal servizio criteri di larghezza di banda in Lync Server 2013, questa restrizione non viene applicata al router di rete (Layer 2 e 3). Lync Server 2010 CAC non può impedire a un'applicazione dati, ad esempio, di consumare l'intera larghezza di banda della rete su un collegamento WAN, inclusa la larghezza di banda riservata per l'audio e il video in base ai criteri di CAC. Per proteggere la larghezza di banda necessaria nella rete, è possibile distribuire un protocollo QoS (Quality of Service), ad esempio servizi differenziati (DiffServ). Una procedura consigliata consiste quindi nel coordinare i criteri di larghezza di banda CAC definiti con le impostazioni QoS eventualmente distribuite.
+Anche se la limitazione della larghezza di banda per l'audio e il video viene applicata dal servizio criteri di larghezza di banda in Lync Server 2013, questa restrizione non viene applicata al router di rete (Layer 2 e 3). Lync Server 2010 CAC non è in grado di impedire l'utilizzo dell'intera larghezza di banda della rete su un collegamento WAN, inclusa la larghezza di banda riservata per audio e video da parte del criterio di controllo di ammissione di chiamata. Per proteggere la larghezza di banda necessaria per la rete, è possibile distribuire un protocollo QoS (Quality of Service), ad esempio servizi differenziati (DiffServ). Pertanto, una procedura consigliata consiste nel coordinare i criteri di larghezza di banda di CAC definiti con eventuali impostazioni QoS che è possibile distribuire.
 
 </div>
 
 <div>
 
-## <a name="media-and-signaling-paths-over-vpn"></a>Percorsi multimediali e di segnalazione su VPN
+## <a name="media-and-signaling-paths-over-vpn"></a>Percorsi di contenuti multimediali e segnali su VPN
 
-Se l'organizzazione supporta i contenuti multimediali tramite VPN, verificare che sia il flusso multimediale che il flusso di segnalazione passano attraverso la rete VPN oppure vengono instradati attraverso Internet. Per impostazione predefinita, i flussi di elementi multimediali e di segnalazione passano attraverso il tunnel VPN.
-
-</div>
-
-<div>
-
-## <a name="call-admission-control-of-outside-users"></a>Controllo dell'ammissione delle chiamate degli utenti esterni
-
-Il controllo di ammissione alle chiamate non viene applicato per gli utenti remoti in cui il traffico di rete scorre su Internet. Poiché il traffico multimediale sta attraversando Internet, che non è gestito da Lync Server, non è possibile applicare CAC. I controlli CAC verranno eseguiti, tuttavia, nella parte della chiamata che scorre attraverso la rete aziendale.
+Se l'organizzazione supporta contenuto multimediale tramite VPN, verificare che il flusso multimediale e il flusso dei segnali attraversino la rete VPN o che venga eseguito il routing di entrambi tramite internet. Per impostazione predefinita, i flussi multimediali e dei segnali passano attraverso il tunnel VPN.
 
 </div>
 
 <div>
 
-## <a name="call-admission-control-of-pstn-connections"></a>Controllo ammissione chiamata delle connessioni PSTN
+## <a name="call-admission-control-of-outside-users"></a>Controllo di ammissione di chiamata di utenti esterni
 
-Il controllo di ammissione delle chiamate è impostabile sul server Mediation indipendentemente dal fatto che sia connesso a un IP/PBX, a un gateway PSTN o a un trunk SIP. Poiché il Mediation Server è un agente utente back-to-back (B2BUA), termina media. Ha due lati di connessione: un lato connesso a Lync Server e un lato del gateway, che è connesso a gateway PSTN, IP/PBX o trunk SIP. Per informazioni dettagliate sulle connessioni PSTN, vedere [pianificazione della connettività PSTN in Lync Server 2013](lync-server-2013-planning-for-pstn-connectivity.md).
-
-CAC può essere applicato su entrambi i lati del Mediation Server, a meno che non sia abilitato il bypass multimediale. Se il bypass multimediale è abilitato, il traffico multimediale non attraversa il Mediation Server, bensì fluisce direttamente tra il client Lync e il gateway. In questo caso, CAC non è necessario. Per informazioni dettagliate, vedere [pianificazione di un bypass multimediale in Lync Server 2013](lync-server-2013-planning-for-media-bypass.md).
-
-Nella figura seguente viene illustrato il modo in cui CAC viene applicato alle connessioni PSTN con e senza bypass multimediale abilitato.
-
-**Applicazione controllo ammissione chiamata sulle connessioni alla rete PSTN**
-
-![Applicazione del controllo di ammissione di chiamata vocale con bypass multimediale sulle connessioni](images/Gg398703.4d66d529-0912-4de1-abec-266f54272eb3(OCS.15).jpg "Applicazione del controllo di ammissione di chiamata vocale con bypass multimediale sulle connessioni")
+Il controllo di ammissione di chiamata non viene applicato per utenti remoti nei casi in cui il flusso del traffico di rete viene eseguito tramite Internet. Poiché il traffico multimediale attraversa Internet, che non è gestito da Lync Server, non è possibile applicare il servizio di controllo di accesso. Tali controlli verranno tuttavia eseguiti sulla parte della chiamata il cui flusso attraversa la rete aziendale.
 
 </div>
 
 <div>
 
-## <a name="compatibility-of-call-admission-control-with-earlier-versions-of-office-communications-server"></a>Compatibilità del controllo di ammissione alle chiamate con versioni precedenti di Office Communications Server
+## <a name="call-admission-control-of-pstn-connections"></a>Controllo di ammissione di chiamata di connessioni PSTN
 
-Il controllo di ammissione delle chiamate può essere abilitato solo sugli endpoint abilitati per Lync Server 2010 e versioni successive.
+Il controllo di ammissione di chiamata è applicabile sul Mediation Server, indipendentemente dal fatto che sia connesso a un IP/PBX, a un gateway PSTN o a un trunk SIP. Poiché il Mediation Server è un agente utente back-to-back (B2BUA), termina il supporto. Ha due lati di connessione: un lato connesso a Lync Server e un lato del gateway, connesso a gateway PSTN, IP/PBX o trunk SIP. Per informazioni dettagliate sulle connessioni PSTN, vedere [Planning for PSTN Connectivity in Lync Server 2013](lync-server-2013-planning-for-pstn-connectivity.md).
 
-Non è possibile abilitare il controllo ammissione chiamata in endpoint con Office Communicator 2007 R2 o versioni precedenti.
+Il servizio di controllo di ammissione può essere applicato su entrambi i lati del Mediation Server, a meno che non sia abilitato il bypass multimediale. Se il bypass multimediale è abilitato, il traffico multimediale non attraversa il Mediation Server, ma invece scorre direttamente tra il client Lync e il gateway. In questo caso, il controllo di ammissione di chiamata non è necessario. Per informazioni dettagliate, vedere [Planning for Media Bypass in Lync Server 2013](lync-server-2013-planning-for-media-bypass.md).
 
-**Applicazione di CAC in diverse versioni di Lync Server**
+Nella figura seguente viene illustrata l'applicazione di controllo di ammissione di chiamata in connessioni PSTN con o senza il bypass multimediale abilitato.
 
-![Diagramma di confronto tra le versioni per il controllo di ammissione di chiamata vocale](images/Gg398529.fdbfee7e-15fc-445b-949d-8d61e61ac350(OCS.15).jpg "Diagramma di confronto tra le versioni per il controllo di ammissione di chiamata vocale")
+**Applicazione del controllo di ammissione di chiamata in connessioni alla rete PSTN**
+
+![Controllo dell'applicazione della connessione al bypass multimediale di Voice CAC](images/Gg398703.4d66d529-0912-4de1-abec-266f54272eb3(OCS.15).jpg "Controllo dell'applicazione della connessione al bypass multimediale di Voice CAC")
+
+</div>
+
+<div>
+
+## <a name="compatibility-of-call-admission-control-with-earlier-versions-of-office-communications-server"></a>Compatibilità del controllo di ammissione di chiamata con le versioni precedenti di Office Communications Server
+
+Il controllo di ammissione di chiamata può essere abilitato solo sugli endpoint abilitati per Lync Server 2010 e versioni successive.
+
+Non è possibile abilitare il controllo di ammissione di chiamata sugli endpoint che eseguono Office Communicator 2007 R2 o versioni precedenti.
+
+**Applicazione del controllo di ammissione di chiamata in versioni di Lync Server diverse**
+
+![Diagramma di confronto delle versioni di Voice CAC](images/Gg398529.fdbfee7e-15fc-445b-949d-8d61e61ac350(OCS.15).jpg "Diagramma di confronto delle versioni di Voice CAC")
 
 </div>
 

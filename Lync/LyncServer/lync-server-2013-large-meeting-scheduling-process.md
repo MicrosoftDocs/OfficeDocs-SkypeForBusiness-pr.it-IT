@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: processo di pianificazione per riunioni di grandi dimensioni'
+title: 'Lync Server 2013: processo di pianificazione delle riunioni di grandi dimensioni'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185639
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b2cfe26b70db612249ca840c86b41fb3d60db663
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3ccbe1735d92d510f4e5016cc2e52b62e1c82bb7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738216"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034978"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41738216"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-22_
+_**Ultimo argomento modificato:** 2012-10-22_
 
-Poiché è supportata solo una riunione di grandi dimensioni alla volta nel pool di riunioni di grandi dimensioni dedicato, è consigliabile implementare un processo di pianificazione delle riunioni di grandi dimensioni per evitare conflitti di riunione di grandi dimensioni. Lo scopo di questo processo di pianificazione è facilitare la configurazione di riunioni di grandi dimensioni. Tale funzionalità non viene fornita direttamente da client Lync Server o Lync Server. Un modo per implementare un processo di questo tipo consiste nell'usare il sistema di ticketing del team di supporto dell'organizzazione, se disponibile.
+Dato che nel pool dedicato per le riunioni di grandi dimensioni è supportata una sola riunione di grandi dimensioni alla volta, è consigliabile implementare un processo per la pianificazione di questo tipo di riunioni in modo da evitare conflitti. Lo scopo di tale processo di pianificazione è agevolare la configurazione delle riunioni di grandi dimensioni. Tale funzionalità non viene fornita direttamente dai client Lync Server o Lync Server. Un metodo per implementare un processo di questo tipo consiste nell'utilizzare il sistema di gestione dei ticket del team di supporto tecnico dell'organizzazione, se disponibile.
 
-Per gli organizzatori di riunioni di grandi dimensioni, la pianificazione di una riunione di grandi dimensioni prevede il completamento dei passaggi seguenti:
+Per gli organizzatori di riunioni di grandi dimensioni, la pianificazione include l'esecuzione dei passaggi seguenti:
 
-1.  L'organizzatore o il delegato della riunione determina l'ora, la durata e le dimensioni di una riunione imminente, oltre all'elenco di relatori. Se la dimensione prevista della riunione supera gli utenti di 250 o per garantire la migliore esperienza utente per una riunione con meno di 250 utenti, l'organizzatore o il delegato invia una richiesta per una riunione di grandi dimensioni.
+1.  L'organizzatore della riunione o il delegato stabilisce data e ora, durata e dimensioni di una riunione prossima, oltre all'elenco dei relatori. Se le dimensioni previste per la riunione superano i 250 utenti oppure per assicurare un'esperienza utente ottimale per una riunione con meno di 250 utenti, l'organizzatore o il delegato invia una richiesta per una riunione di grandi dimensioni.
 
-2.  Il personale di pianificazione controlla se la data e l'ora richieste sono disponibili. Poiché supportiamo solo una singola riunione di grandi dimensioni nel pool dedicato alla volta, il personale di pianificazione deve controllare il calendario della riunione di grandi dimensioni per determinare se è prevista un'altra riunione per la data e l'ora richieste. Se il tempo richiesto è disponibile, il personale approva la convocazione di riunione.
+2.  Il personale addetto della pianificazione verifica se la data e l'ora richieste sono disponibili. Dato che nel pool dedicato è supportata una sola riunione di grandi dimensioni alla volta, il personale addetto alla pianificazione deve controllare il calendario di questo tipo di riunioni per stabilire se ne è già presente un'altra pianificata per la data e l'ora richieste. Se l'intervallo di tempo richiesto risulta disponibile, la richiesta di riunione viene approvata.
 
-3.  Se la richiesta è approvata, il personale di pianificazione (usando le credenziali nel pool dedicato) usa il componente aggiuntivo riunione online per Lync 2013 con Outlook per configurare una riunione nel pool di grandi riunioni dedicato. L'URL da usare per partecipare alla riunione viene fornito al richiedente come parte della notifica di approvazione.
+3.  Se la richiesta viene approvata, il personale di pianificazione (utilizzando le credenziali nel pool dedicato) utilizza il componente aggiuntivo per riunioni online per Lync 2013 con Outlook per impostare una riunione nel pool di riunioni di grandi dimensioni dedicato. L'URL da utilizzare per partecipare alla riunione viene fornito al richiedente nell'ambito della notifica dell'approvazione.
 
-4.  L'organizzatore o il delegato della riunione usa Outlook per pianificare la riunione imminente, aggiungendo l'URL per partecipare alla riunione all'invito alla riunione. L'organizzatore della riunione o il delegato specifica quindi agli utenti di essere invitati e invia l'invito alla riunione.
+4.  L'organizzatore della riunione o il delegato utilizza Outlook per pianificare la riunione imminente, aggiungendo l'URL per la partecipazione alla riunione all'invito alla riunione. L'organizzatore della riunione o il delegato specifica quindi gli utenti da invitare e invia l'invito alla riunione.
     
-    La figura seguente illustra un flusso di lavoro di richiesta e approvazione tipico per la pianificazione di riunioni di grandi dimensioni.
+    Nella figura seguente sono illustrati una richiesta e un flusso di lavoro di approvazione tipici per la pianificazione di riunioni di grandi dimensioni.
     
     ![5d8b1f62-1dc3-47bf-bf8f-be2d8899ab9d](images/JJ205334.5d8b1f62-1dc3-47bf-bf8f-be2d8899ab9d(OCS.15).jpg "5d8b1f62-1dc3-47bf-bf8f-be2d8899ab9d")  
 

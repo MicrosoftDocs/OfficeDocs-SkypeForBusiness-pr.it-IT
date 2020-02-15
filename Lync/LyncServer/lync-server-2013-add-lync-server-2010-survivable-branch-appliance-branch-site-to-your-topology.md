@@ -1,5 +1,5 @@
 ---
-title: Aggiungere un sito di succursale Survivable Branch Appliance di Lync Server 2010 alla topologia
+title: Aggiungere il sito di succursale del Survivable Branch Appliance di Lync Server 2010 alla topologia
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733592
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 64f359a97f6c4bc76d5e0d6f475a037ab53afb91
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bd7b4acc877ba174be0b0d6b03368bb06200574b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735036"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42033785"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="add-lync-server-2010-survivable-branch-appliance-branch-site-to-your-topology"></a>Aggiungere un sito di succursale Survivable Branch Appliance di Lync Server 2010 alla topologia
+# <a name="add-lync-server-2010-survivable-branch-appliance-branch-site-to-your-topology"></a>Aggiungere il sito di succursale del Survivable Branch Appliance di Lync Server 2010 alla topologia
 
 </div>
 
@@ -35,18 +35,18 @@ ms.locfileid: "41735036"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-07_
+_**Ultimo argomento modificato:** 2012-10-07_
 
-Microsoft Lync Server 2010 Survivable Branch Appliances (SBA) può essere associato a un pool di front end di Microsoft Lync Server 2013 come registrar di backup. Per informazioni dettagliate su come connettere la SBA di Microsoft Lync Server 2010 a un pool di front end di Microsoft Lync Server 2013, vedere la sezione migrazione, [connettere un Survivable Branch Appliance](connect-a-survivable-branch-appliance.md).
+Microsoft Lync Server 2010 Survivable Branch Appliances (SBA) può essere associato a un pool Front End di Microsoft Lync Server 2013 come registrar di backup. Per informazioni dettagliate su come connettere Microsoft Lync Server 2010 SBA a un pool Front End di Microsoft Lync Server 2013, vedere la sezione relativa alla migrazione, [connettere un Survivable Branch Appliance](connect-a-survivable-branch-appliance.md).
 
 <div>
 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Definire un Survivable Branch Appliance o un Survivable Branch Server in Lync Server 2013](lync-server-2013-define-a-survivable-branch-appliance-or-server.md)  
+[Definire un Survivable Branch Appliance o un server di succursale in Lync Server 2013](lync-server-2013-define-a-survivable-branch-appliance-or-server.md)  
 [Definire un gateway PSTN per un sito di succursale in Lync Server 2013](lync-server-2013-define-a-pstn-gateway-for-a-branch-site.md)  
-[Configurare un trunk con il bypass multimediale in Lync Server 2013](lync-server-2013-configure-a-trunk-with-media-bypass.md)  
+[Configurare un trunk con bypass multimediale in Lync Server 2013](lync-server-2013-configure-a-trunk-with-media-bypass.md)  
 [Configurare un trunk senza bypass multimediale in Lync Server 2013](lync-server-2013-configure-a-trunk-without-media-bypass.md)  
 
 

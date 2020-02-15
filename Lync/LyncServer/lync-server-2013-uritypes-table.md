@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella UriTypes'
+title: 'Lync Server 2013: tabella UriTypes'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184553
 ms.date: 06/16/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b6f1de8d9ae54a71a04e90a914edbd779aa3e41d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 03d4b2af9c0d746c713a2e98019f278ceb3df6e5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744646"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034006"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41744646"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-06-16_
+_**Ultimo argomento modificato:** 2015-06-16_
 
 La tabella UriTypes contiene i diversi tipi di URI (Uniform Resource Identifier) monitorati in Microsoft Lync Server 2013.
 
@@ -60,16 +60,16 @@ La tabella UriTypes contiene i diversi tipi di URI (Uniform Resource Identifier)
 <td><p><strong>UriTypeId</strong></p></td>
 <td><p>tinyint</p></td>
 <td><p>Principale</p></td>
-<td><p>Identificatore univoco assegnato a un tipo URI.</p></td>
+<td><p>Identificatore univoco assegnato a un tipo di URI.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>UriType</strong></p></td>
 <td><p>nvarchar (256)</p></td>
 <td></td>
-<td><p>Descrizioni dei diversi tipi di URI. I valori consentiti sono:</p>
+<td><p>Descrizione dei diversi tipi di URI. I valori consentiti sono:</p>
 <ul>
-<li><p>1-URI telefono</p></li>
-<li><p>0-URI utente</p></li>
+<li><p>1-URI del telefono</p></li>
+<li><p>0 – URI utente</p></li>
 </ul></td>
 </tr>
 </tbody>

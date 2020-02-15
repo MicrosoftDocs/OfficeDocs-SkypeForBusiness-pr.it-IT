@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Requisiti DNS per un server Standard Edition'
+title: 'Lync Server 2013: requisiti DNS per un server Standard Edition'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184259
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3ab4280ca3ed329d0dc926756f6bfd933595ca08
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fe05133865c0aecdb522e203c1ec2d39ff7b824d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739176"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034798"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41739176"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-22_
+_**Ultimo argomento modificato:** 2013-02-22_
 
-Questa sezione descrive i record DNS (Domain Name System) necessari per la distribuzione di server Standard Edition.
+In questa sezione vengono descritti i record DNS (Domain Name System) necessari per la distribuzione di server Standard Edition.
 
 <div>
 
 ## <a name="dns-records-for-standard-edition-servers"></a>Record DNS per server Standard Edition
 
-Nella tabella seguente sono specificati i requisiti DNS per la distribuzione del server standard di Lync Server 2013.
+Nella tabella seguente vengono specificati i requisiti DNS per la distribuzione del server di Lync Server 2013 Standard Edition.
 
 
 <table>
@@ -60,19 +60,19 @@ Nella tabella seguente sono specificati i requisiti DNS per la distribuzione del
 <tbody>
 <tr class="odd">
 <td><p>Server Standard Edition</p></td>
-<td><p>Un record interno che risolve il nome di dominio completo (FQDN) del server nel relativo indirizzo IP.</p></td>
+<td><p>Un record A interno che risolve il nome di dominio completo (FQDN) del server nel relativo indirizzo IP.</p></td>
 </tr>
 <tr class="even">
-<td><p>Accesso automatico client</p></td>
-<td><p>Per ogni dominio SIP supportato, un record SRV per _sipinternaltls. _tcp. &lt;dominio&gt; sulla porta 5061 che esegue il mapping con il nome di dominio completo del server Standard Edition che autentica e reindirizza le richieste client per l'accesso. Per informazioni dettagliate, vedere <a href="lync-server-2013-dns-requirements-for-automatic-client-sign-in.md">requisiti DNS per l'accesso automatico al client in Lync Server 2013</a>.</p></td>
+<td><p>Accesso client automatico</p></td>
+<td><p>Per ogni dominio SIP supportato, un record SRV per _sipinternaltls. _tcp. &lt;domain&gt; over Port 5061 che corrisponde al nome di dominio completo del server Standard Edition che consente di autenticare e reindirizzare le richieste client per l'accesso. Per informazioni dettagliate, vedere <a href="lync-server-2013-dns-requirements-for-automatic-client-sign-in.md">DNS requirements for Automatic client Sign-in in Lync Server 2013</a>.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Individuazione del servizio Web di aggiornamento dispositivi da dispositivi Unified Communications (UC)</p></td>
-<td><p>Un record interno con il nome ucupdates-R2. &lt;Dominio&gt; SIP che viene risolto nell'indirizzo IP del servizio Web di aggiornamento del server di hosting del dispositivo Standard Edition. Nella situazione in cui è attivato un dispositivo UC, ma un utente non ha mai effettuato l'accesso al dispositivo, il record A consente al dispositivo di individuare il servizio Web di aggiornamento del dispositivo che ospita il server e di ottenere gli aggiornamenti. In caso contrario, i dispositivi ottengono le informazioni sul server anche se il provisioning in banda è la prima volta che si accede a un utente. Per informazioni dettagliate, vedere <a href="lync-server-2013-device-update-web-service.md">servizio Web Update per dispositivi in Lync Server 2013</a> nella documentazione Operations.</p></td>
+<td><p>Individuazione del servizio Web Aggiornamento dispositivi da parte di dispositivi per comunicazioni unificate</p></td>
+<td><p>Un record interno con il nome ucupdates-R2. &lt;Dominio&gt; SIP che viene risolto nell'indirizzo IP del servizio Web aggiornamento dispositivi di hosting del server Standard Edition. Se viene attivato un dispositivo per comunicazioni unificate, ma un utente non ha mai effettuato l'accesso al dispositivo, il record A consente al dispositivo di individuare il server che ospita il servizio Web Aggiornamento dispositivi e ottenere gli aggiornamenti. In caso contrario, i dispositivi ottengono le informazioni del server tramite provisioning di tipo in-band al primo accesso di un utente. Per ulteriori informazioni, vedere <a href="lync-server-2013-device-update-web-service.md">servizio Web aggiornamento dispositivi in Lync Server 2013</a> nella documentazione relativa alle operazioni.</p></td>
 </tr>
 <tr class="even">
-<td><p>Proxy inverso per supportare il traffico HTTP</p></td>
-<td><p>Un record esterno che risolve il nome di dominio completo della Web farm esterna nell'indirizzo IP esterno del proxy inverso. I client e i dispositivi UC usano questo record per connettersi al proxy inverso. Per informazioni dettagliate, vedere <a href="lync-server-2013-determine-dns-requirements.md">determinare i requisiti DNS per Lync Server 2013</a> nella documentazione relativa alla pianificazione.</p></td>
+<td><p>Proxy inverso per il supporto del traffico HTTP</p></td>
+<td><p>Un record A esterno che risolve l'FQDN della Web farm esterna nell'indirizzo IP esterno del proxy inverso. I client e i dispositivi per comunicazioni unificate utilizzano questo record per la connessione al proxy inverso. Per informazioni dettagliate, vedere <a href="lync-server-2013-determine-dns-requirements.md">determine DNS requirements for Lync Server 2013</a> nella documentazione relativa alla pianificazione.</p></td>
 </tr>
 </tbody>
 </table>
@@ -85,8 +85,8 @@ Nella tabella seguente sono specificati i requisiti DNS per la distribuzione del
 ## <a name="see-also"></a>Vedere anche
 
 
-[Requisiti DNS per l'accesso automatico client in Lync Server 2013](lync-server-2013-dns-requirements-for-automatic-client-sign-in.md)  
-[Determinare i requisiti di DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md)  
+[Requisiti DNS per l'accesso automatico dei client in Lync Server 2013](lync-server-2013-dns-requirements-for-automatic-client-sign-in.md)  
+[Determinare i requisiti DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md)  
 
 
 [Servizio Web aggiornamento dispositivi in Lync Server 2013](lync-server-2013-device-update-web-service.md)  

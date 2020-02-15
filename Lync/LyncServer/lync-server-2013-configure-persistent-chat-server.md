@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare il server Chat persistente'
+title: 'Lync Server 2013: configurare il server Chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184709
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3762679b8926370b85e03d0ffac2981c5c7d13a3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 21c43bfaf3b40a746f09a000cb089509b589e39e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41741346"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030810"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41741346"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-06_
+_**Ultimo argomento modificato:** 2012-10-06_
 
-Per creare una nuova configurazione della chat persistente
+Per creare una nuova configurazione di chat persistente
 
     New-CsPersistentChatConfiguration -Identity <XdsIdentity> [-DefaultChatHistory <Integer>] [-MaxChatContentSizeMB <Integer>] [-MaxFileSizeKB <Integer>] [-ParticipantUpdateLimit <Integer>] [-FileServiceUrl <UrlForFileUpload>] [-RoomManagementUrl <RoomManagementUrl>] [-Instance <PSObject>] [-Force <Switch Parameter>] [-Confirm <Switch Parameter>] [-WhatIf <Switch Parameter>]
 
@@ -49,11 +49,11 @@ Per rimuovere la configurazione della chat persistente
 
     Remove-CsPersistentChatConfiguration -Identity <XdsIdentity>
 
-Per impostare la configurazione della chat persistente
+Per impostare la configurazione di chat persistente
 
     Set-CsPersistentChatConfiguration [-DefaultChatHistory <Integer>] [-MaxChatContentSizeMB <Integer>] [-MaxFileSizeKB <Integer>] [-ParticipantUpdateLimit <Integer>] [-FileServiceUrl <UrlForFileUpload>] [-RoomManagementUrl <RoomManagementUrl>] [-Instance <PSObject >] [-Force <Switch Parameter>] [-Confirm <Switch Parameter>] [-WhatIf <Switch Parameter>]
 
-Per Lync Server 2013, tutto il traffico di servizi Web è supportato in Lync Server 2013, server front-end. Di conseguenza, l'indirizzo gcweb01 nel server di chat persistente non è necessario. Continuiamo a supportare l'accesso al servizio Web interno perché forniamo il servizio Web di upload/download del file solo al sito Web *interno* (non al sito Web *esterno* per gli utenti remoti).
+Per Lync Server 2013, tutto il traffico dei servizi Web è supportato in Lync Server 2013, Front End Server. Pertanto, l'indirizzo gcweb01 sul server Chat persistente non è necessario. L'accesso al servizio Web interno è ancora supportato poiché è offerto il servizio Web di Download e Upload file al sito Web *interno* (ma non al sito Web *esterno* per gli utenti remoti).
 
 </div>
 

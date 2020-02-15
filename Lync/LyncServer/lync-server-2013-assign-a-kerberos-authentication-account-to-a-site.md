@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Assegnare un account di autenticazione Kerberos a un sito'
+title: 'Lync Server 2013: assegnare un account di autenticazione Kerberos a un sito'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183929
 ms.date: 04/18/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 230341bfc6b26bebd22b55195280ffdff130873d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bf69e71dd66337551557bddd3bfb7700257a7f69
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738386"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029277"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41738386"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2017-04-18_
+_**Ultimo argomento modificato:** 2017-04-18_
 
-Per completare correttamente questa procedura, è necessario avere effettuato l'accesso come utente membro del gruppo RTCUniversalServerAdmins.
+Per eseguire correttamente questa procedura, è necessario essere connessi come utenti membri del gruppo RTCUniversalServerAdmins.
 
-Dopo aver creato l'account Kerberos, è necessario assegnarlo a un sito. Si tratta di un sito di Lync Server 2013 e non di un sito di Active Directory. È possibile creare più account di autenticazione Kerberos per ogni distribuzione, ma è possibile assegnare un solo account a un sito. Usare la procedura seguente per assegnare un account di autenticazione Kerberos creato in precedenza a un sito. Per informazioni dettagliate sulla creazione dell'account Kerberos, vedere [creare un account di autenticazione Kerberos in Lync Server 2013](lync-server-2013-create-a-kerberos-authentication-account.md).
+Dopo aver creato un account Kerberos, è necessario assegnarlo a un sito. Si tratta di un sito di Lync Server 2013, non di un sito di Active Directory. È possibile creare più account di autenticazione Kerberos per distribuzione, ma è possibile assegnare un solo account a un sito. Utilizzare la procedura seguente per assegnare a un sito un account di autenticazione Kerberos creato precedentemente. Per informazioni dettagliate sulla creazione dell'account Kerberos, vedere [creare un account di autenticazione Kerberos in Lync Server 2013](lync-server-2013-create-a-kerberos-authentication-account.md).
 
 <div>
 
 ## <a name="to-assign-a-kerberos-authentication-account-to-a-site"></a>Per assegnare un account di autenticazione Kerberos a un sito
 
-1.  Come membro del gruppo RTCUniversalServerAdmins, accedere a un computer nel dominio in cui è in uso Lync Server 2013 o in un computer in cui sono installati gli strumenti di amministrazione.
+1.  Come membri del gruppo RTCUniversalServerAdmins, accedere a un computer nel dominio in cui è in esecuzione Lync Server 2013 o a un computer in cui sono installati gli strumenti di amministrazione.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
 3.  Nella riga di comando eseguire i due comandi seguenti:
     
@@ -75,12 +75,12 @@ Dopo aver creato l'account Kerberos, è necessario assegnarlo a un sito. Si trat
     
 
     > [!NOTE]  
-    > Devi specificare il parametro UserAccount usando il formato dominio\utente. Il formato User@Domain. Extension non è supportato per il riferimento agli oggetti computer creati per scopi di autenticazione Kerberos.
+    > È necessario specificare il parametro UserAccount utilizzando il formato Dominio\Utente. Il formato Utente@Dominio.estensione non è supportato per fare riferimento agli oggetti computer creati per l'autenticazione Kerberos.
 
     
     </div>
 
-4.  **Facoltativo**: è possibile che sia stato configurato un nome FQDN (Fully Qualified Domain Name) di override per i servizi Web, come per [modificare l'URL di Microsoft Services in Lync Server 2013](lync-server-2013-change-the-web-services-url.md). In questo caso, è necessario aggiungere un nome SPN anche per questo nome di dominio completo. Ad esempio, se il nome di dominio completo era WebServices. contoso. local, si eseguirebbe:
+4.  **Facoltativo**: è possibile che sia stata configurata una sostituzione FQDN (nome di dominio completo) per i servizi Web, in base alla [modifica dell'URL dei Services in Lync Server 2013](lync-server-2013-change-the-web-services-url.md). In tal caso, sarà necessario aggiungere anche un nome SPN per il nome di dominio completo. Ad esempio, se il nome di dominio completo è WebServices. contoso. local, è necessario eseguire le operazioni seguenti:
     
     ```console
     setspn -S http/webservices.contoso.local kerbauth

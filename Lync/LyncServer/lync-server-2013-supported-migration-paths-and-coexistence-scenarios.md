@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Percorsi di migrazione supportati e scenari di coesistenza'
+title: 'Lync Server 2013: percorsi di migrazione supportati e scenari di coesistenza'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184182
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 71f298db233a76f40538fe2372d4a23f2dc7de62
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 72df2bc5dc871d4eb86ea5f3a8153e7693e6f695
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731696"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029797"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41731696"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-04-30_
+_**Ultimo argomento modificato:** 2012-04-30_
 
-Lync Server 2013 supporta la migrazione da Microsoft Lync Server 2010 e Microsoft Office Communications Server 2007 R2, inclusa la coesistenza con specifici componenti client e server di tali distribuzioni precedenti.
+Lync Server 2013 supporta la migrazione da Microsoft Lync Server 2010 e Microsoft Office Communications Server 2007 R2, inclusa la coesistenza con componenti client e server specifici di tali distribuzioni precedenti.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Percorsi di migrazione dei server supportati e scenari di coesistenza in Lync Server 2013](lync-server-2013-supported-server-migration-paths-and-coexistence-scenarios.md)
+  - [Percorsi di migrazione del server supportati e scenari di coesistenza in Lync Server 2013](lync-server-2013-supported-server-migration-paths-and-coexistence-scenarios.md)
 
   - [Client supportati dalle distribuzioni precedenti in Lync Server 2013](lync-server-2013-supported-clients-from-previous-deployments.md)
 

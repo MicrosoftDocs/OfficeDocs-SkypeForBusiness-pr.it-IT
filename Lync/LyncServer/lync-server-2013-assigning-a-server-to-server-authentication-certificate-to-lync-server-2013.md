@@ -1,5 +1,5 @@
 ---
-title: Assegnazione di un certificato di autenticazione server-server a Lync Server 2013
+title: Assegnazione di un certificato di autenticazione da server a server a Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185367
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 06372be3808f3855bc0172cc408308a0c9c9cab2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4fbead49c200ab1b679ef9b4ffa3d9b03bb72cd5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41734016"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030059"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,67 +35,67 @@ ms.locfileid: "41734016"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-10-24_
+_**Ultimo argomento modificato:** 2013-10-24_
 
 Per determinare se un certificato di autenticazione da server a server è già stato assegnato a Microsoft Lync Server 2013, eseguire il comando seguente da Lync Server 2013 Management Shell:
 
     Get-CsCertificate -Type OAuthTokenIssuer
 
-Se non vengono restituite informazioni di certificato, è necessario assegnare un certificato dell'autorità di certificazione per poter usare l'autenticazione da server a server. Come regola generale, qualsiasi certificato di Lync Server 2013 può essere usato come certificato di OAuthTokenIssuer; ad esempio, il certificato predefinito di Lync Server 2013 può essere usato anche come certificato OAuthTokenIssuer. Il certificato OAUthTokenIssuer può essere anche qualsiasi certificato del server Web che include il nome del dominio SIP nel campo oggetto. I due requisiti principali per il certificato usato per l'autenticazione da server a server sono i seguenti: 1) lo stesso certificato deve essere configurato come certificato OAuthTokenIssuer in tutti i server front-end. e 2) il certificato deve essere di almeno 2048 bit.
+Se non vengono restituite informazioni sui certificati, è necessario assegnare un certificato dell'autorità emittente di token prima di poter utilizzare l'autenticazione da server a server. Come regola generale, qualsiasi certificato di Lync Server 2013 può essere utilizzato come certificato di OAuthTokenIssuer. ad esempio, il certificato predefinito di Lync Server 2013 può essere utilizzato anche come certificato di OAuthTokenIssuer. Il certificato OAUthTokenIssuer può anche essere qualsiasi certificato del server Web che include il nome del dominio SIP nel campo Subject. I due requisiti principali per il certificato utilizzato per l'autenticazione da server a server sono i seguenti: 1) lo stesso certificato deve essere configurato come certificato OAuthTokenIssuer su tutti i Front End Server; 2) il certificato deve essere almeno pari a 2048 bit.
 
-Se non si dispone di un certificato che può essere usato per l'autenticazione da server a server, è possibile ottenere un nuovo certificato, importare il nuovo certificato e quindi usare tale certificato per l'autenticazione da server a server. Dopo aver richiesto e ottenuto il nuovo certificato, è possibile accedere a uno dei server front-end e usare un comando di Windows PowerShell simile a quello per importare e assegnare il certificato:
+Se non si dispone di un certificato da utilizzare per l'autenticazione da server a server, è possibile ottenere un nuovo certificato, importarlo e quindi utilizzarlo per l'autenticazione da server a server. Dopo aver richiesto e ottenuto il nuovo certificato, è possibile accedere a uno dei Front End Server e utilizzare un comando di Windows PowerShell simile al seguente per importare e assegnare il certificato:
 
     Import-CsCertificate -Identity global -Type OAuthTokenIssuer -Path C:\Certificates\ServerToServerAuth.pfx  -Password "P@ssw0rd"
 
-Nel comando precedente il parametro path rappresenta il percorso completo del file di certificato e il parametro password rappresenta la password assegnata al certificato. Questa procedura deve essere eseguita una sola volta: il servizio di replica di Lync Server creerà automaticamente un set di attività pianificate che decriptano e distribuiscono il certificato in tutti i server front-end.
+Nel comando precedente il parametro Path rappresenta il percorso completo del file di certificato e il parametro Password rappresenta la password assegnata al certificato. Questa procedura deve essere eseguita una sola volta. Il servizio di replica di Lync Server creerà quindi automaticamente un insieme di attività pianificate per decrittografare e distribuire il certificato in tutti i Front End Server.
 
-In alternativa, puoi usare un certificato esistente come certificato di autenticazione da server a server. Come indicato, il certificato predefinito può essere usato come certificato di autenticazione da server a server. La coppia di comandi di Windows PowerShell seguente recupera il valore della proprietà identificazione personale del certificato predefinito, quindi usa questo valore per rendere il certificato predefinito il certificato di autenticazione da server a server:
+In alternativa, è possibile utilizzare come certificato di autenticazione da server a server un certificato esistente. Come già specificato, è possibile utilizzare a tale scopo il certificato predefinito. La coppia seguente di comandi di Windows PowerShell recupera il valore della proprietà Thumbprint del certificato predefinito e quindi utilizza tale valore per impostare il certificato predefinito come certificato di autenticazione da server a server:
 
     $x = (Get-CsCertificate -Type Default).Thumbprint
     Set-CsCertificate -Identity global -Type OAuthTokenIssuer -Thumbprint $x
 
-Nel comando precedente il certificato recuperato è configurato per funzionare come certificato di autenticazione server-server globale; Ciò significa che il certificato verrà replicato e usato da tutti i server front-end. Anche in questo caso, questo comando deve essere eseguito solo una volta e solo in uno dei server front-end. Anche se tutti i server front-end devono usare lo stesso certificato, non è necessario configurare il certificato OAuthTokenIssuer in ogni server front-end. Configurare invece il certificato una sola volta, quindi consentire al server di replica di Lync Server di eseguire la copia di tale certificato in ogni server.
+Nel comando precedente il certificato recuperato viene configurato in modo da funzionare come certificato di autenticazione da server a server globale. In questo modo il certificato verrà replicato in tutti i Front End Server e da essi utilizzato. Come già specificato, questo comando deve essere eseguito una sola volta e solo in un Front End Server. Anche se tutti i Front End Server devono utilizzare lo stesso certificato, non è necessario configurare il certificato OAuthTokenIssuer in ognuno di essi. Sarà sufficiente configurarlo una volta e quindi il server di replica di Lync Server lo copierà in ogni server.
 
-Il cmdlet Set-CsCertificate accetta il certificato in questione e configura immediatamente il certificato in modo che agisca come certificato OAuthTokenIssuer corrente. Lync Server 2013 mantiene due copie di un tipo di certificato: il certificato corrente e il certificato precedente. Se è necessario che il nuovo certificato cominci subito ad agire come certificato OAuthTokenIssuer, è necessario usare il cmdlet Set-CsCertificate.
+Il cmdlet Set-CsCertificate accetta il certificato in questione e configura immediatamente il certificato in modo che funga da certificato OAuthTokenIssuer corrente. (Lync Server 2013 conserva due copie di un tipo di certificato: il certificato corrente e il certificato precedente). Se è necessario che il nuovo certificato cominci subito a fungere da certificato OAuthTokenIssuer, è necessario utilizzare il cmdlet Set-CsCertificate.
 
-Puoi anche usare il cmdlet Set-CsCertificate per "eseguire il rollback" di un nuovo certificato. "Rotolare" un certificato significa semplicemente configurare un nuovo certificato per diventare il certificato corrente di OAuthTokenIssuer in un determinato momento. Ad esempio, questo comando Recupera il certificato predefinito e quindi configura tale certificato per subentrare come certificato OAuthTokenIssuer corrente al 1 ° luglio 2012:
+È inoltre possibile utilizzare il cmdlet Set-CsCertificate per distribuire un nuovo certificato, ovvero configurare un nuovo certificato in modo che diventi il certificato OAuthTokenIssuer corrente in un determinato momento. Il comando seguente ad esempio recupera il certificato predefinito e quindi lo configura in modo che subentri come certificato OAuthTokenIssuer corrente a partire dal 1° luglio 2012:
 
     $x = (Get-CsCertificate -Type Default).Thumbprint
     Set-CsCertificate -Identity global -Type OAuthTokenIssuer -Thumbprint $x -EffectiveDate "7/1/2012" -Roll
 
-Il 1 ° luglio 2012 il nuovo certificato verrà configurato come certificato OAuthTokenIssuer corrente e il certificato di OAuthTokenIssuer "vecchio" verrà configurato come certificato precedente.
+Il 1° luglio 2012 il nuovo certificato verrà configurato come certificato OAuthTokenIssuer corrente e il certificato OAuthTokenIssuer attivo fino a quel momento verrà configurato come certificato precedente.
 
-Se non si vuole usare Windows PowerShell, è anche possibile usare la console MMC certificati per esportare un certificato da un server front-end e quindi importare lo stesso certificato in tutti gli altri server front-end. In questo caso, assicurati di esportare la chiave privata insieme al certificato stesso.
+Se non si desidera utilizzare Windows PowerShell, è possibile utilizzare la console MMC Certificati per esportare un certificato da un Front End Server e quindi importarlo in tutti gli altri Front End Server. Se si sceglie questa soluzione, esportare la chiave privata insieme al certificato.
 
 <div>
 
 
 > [!WARNING]
-> In questo caso, la procedura deve essere eseguita su ogni server front-end. Quando si esportano e si importano certificati in questo modo, Lync Server 2013 non replica tale certificato in ogni server front-end.
+> In questo caso, la procedura deve essere eseguita in ogni Front End Server. Quando si esporta e si importano certificati in questo modo, Lync Server 2013 non replica il certificato in ogni Front End Server.
 
 
 
 </div>
 
-Dopo aver importato il certificato in tutti i server front-end, tale certificato può essere assegnato tramite la distribuzione guidata di Lync Server anziché Windows PowerShell. Per assegnare un certificato tramite la distribuzione guidata, eseguire la procedura seguente in un computer in cui è stata installata la distribuzione guidata:
+Dopo che il certificato è stato importato in tutti i Front End Server, tale certificato può essere assegnato tramite la distribuzione guidata di Lync Server anziché Windows PowerShell. Per assegnare un certificato utilizzando la Distribuzione guidata, eseguire le operazioni seguenti in un computer in cui è stata installata la Distribuzione guidata:
 
-1.  Fare clic sul pulsante Start, scegliere tutti i programmi, **Microsoft Lync server 2013**e quindi fare clic su **distribuzione guidata Lync Server**.
+1.  Fare clic sul pulsante Start, scegliere tutti i programmi, **Microsoft Lync server 2013**e quindi **distribuzione guidata di Lync Server**.
 
-2.  Nella distribuzione guidata fare clic su **Installa o aggiorna Lync Server System**.
+2.  Nella Distribuzione guidata fare clic su **Installa o aggiorna il sistema Lync Server**.
 
-3.  Nella pagina Microsoft Lync Server 2013 fare clic sul pulsante **Esegui** sotto il titolo **passaggio 3: Richiedi, installa o assegna certificati**. Nota: se sono già stati installati certificati in questo computer, il pulsante **Esegui** verrà etichettato di **nuovo in esecuzione**.
+3.  Nella pagina Microsoft Lync Server 2013 fare clic sul pulsante **Esegui** al di sotto del titolo **passaggio 3: richiesta, installazione o assegnazione dei certificati**. Nota: se nel computer sono stati già installati certificati, anziché il pulsante **Esegui** sarà disponibile il pulsante **Riesegui**.
 
-4.  Nella procedura guidata certificato selezionare il certificato **OAuthTokenIssuer** e quindi fare clic su **assegna**.
+4.  Nella Configurazione guidata certificati selezionare il certificato **OAuthTokenIssuer** e quindi fare clic su **Assegna certificato**.
 
-5.  Nella pagina **assegnazione** certificato della procedura guidata assegnazione certificati fare clic su **Avanti**.
+5.  Nella pagina **Assegnazione certificato** della procedura guidata Assegnazione certificato fare clic su **Avanti**.
 
-6.  Nella pagina **archivio certificati** selezionare il certificato da usare per l'autenticazione da server a server e quindi fare clic su **Avanti**.
+6.  Nella pagina **Archivio certificati** selezionare il certificato da utilizzare per l'autenticazione da server a server e quindi fare clic su **Avanti**.
 
-7.  Nella pagina Riepilogo assegnazione certificati fare clic su **Avanti**.
+7.  Nella pagina Riepilogo assegnazione certificato fare clic su **Avanti**.
 
-8.  Nella pagina esecuzione dei comandi fare clic su **fine**.
+8.  Nella pagina Esecuzione comandi in corso fare clic su **Fine**.
 
-9.  Chiudere la procedura guidata certificato e la distribuzione guidata.
+9.  Chiudere la Creazione guidata certificati e la Distribuzione guidata.
 
 </div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 48184702
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2396cb1a157b88d8beb9458006c1c8a44874dba3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4a672eea92c820970b3cc4cc1c112c15fcffd641
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744576"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42033795"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41744576"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-18_
+_**Ultimo argomento modificato:** 2013-02-18_
 
-I cmdlet di gestione utenti inclusi in Microsoft Lync Server 2013 consentono di abilitare, disabilitare e modificare gli account utente di Lync Server.
+I cmdlet per la gestione degli utenti inclusi in Microsoft Lync Server 2013 consentono di abilitare, disabilitare e modificare gli account utente di Lync Server.
 
 <div>
 
 ## <a name="user-management-cmdlets"></a>Cmdlet per la gestione degli utenti
 
-La maggior parte delle attività di gestione applicabili agli utenti e agli account utente può essere eseguita dal pannello di controllo di Lync Server. Le eccezioni principali sono i cmdlet che gestiscono i provider di servizi di audioconferenza. Le attività di gestione degli utenti possono essere eseguite usando i cmdlet di Lync Server Management Shell o da uno script. Usando uno script puoi automatizzare alcune attività. Di seguito è riportato un elenco di cmdlet correlati direttamente alla gestione degli utenti e degli account utente:
+La maggior parte delle attività di gestione che si applicano agli utenti e agli account utente può essere eseguita dal pannello di controllo di Lync Server. Le principali eccezioni sono i cmdlet relativi ai provider di servizi di audioconferenza. Le attività di gestione degli utenti possono essere eseguite utilizzando i cmdlet di Lync Server Management Shell o da uno script. L'utilizzo di uno script consente di automatizzare particolari attività. Di seguito è riportato un elenco di cmdlet direttamente correlati alla gestione di utenti e account utente:
 
   - <span></span>  
     [Get-CsAdContact](https://docs.microsoft.com/powershell/module/skype/Get-CsAdContact)

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Utilizzo e gestione del sistema Chat persistente'
+title: 'Lync Server 2013: gestione e gestione del sistema di chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184701
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a90b1416f617dd687bcfff10a925bfe809d18f7d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1ce455f32181ee604c84a6ec0c2e9a1de74aac5a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755820"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034086"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="operating-and-maintaining-the-persistent-chat-system-in-lync-server-2013"></a>Utilizzo e gestione del sistema Chat persistente in Lync Server 2013
+# <a name="operating-and-maintaining-the-persistent-chat-system-in-lync-server-2013"></a>Utilizzo e gestione del sistema di chat persistente in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41755820"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Gli argomenti seguenti descrivono come mantenere il computer in cui è in uso il server di chat persistente e come gestire le operazioni del server di chat persistente.
+Negli argomenti seguenti viene descritto come gestire il computer in cui è in esecuzione il server Chat persistente e la modalità di gestione delle operazioni del server Chat persistente.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Backup del database di chat persistente e del database di conformità in Lync Server 2013](lync-server-2013-backing-up-the-persistent-chat-database-and-compliance-database.md)
 
   - [Personalizzazione del file di definizione XSLT in Lync Server 2013](lync-server-2013-customizing-the-xslt-definition-file.md)
 
-  - [Sostituzione di XMLAdapter con un adattatore di conformità del server di chat persistente personalizzato in Lync Server 2013](lync-server-2013-replacing-the-xmladapter-with-a-customized-persistent-chat-server-compliance-adapter.md)
+  - [Sostituzione di XMLAdapter con una scheda di conformità del server Chat persistente personalizzata in Lync Server 2013](lync-server-2013-replacing-the-xmladapter-with-a-customized-persistent-chat-server-compliance-adapter.md)
 
   - [Gestione dell'integrità del sistema in Lync Server 2013](lync-server-2013-managing-system-health.md)
 

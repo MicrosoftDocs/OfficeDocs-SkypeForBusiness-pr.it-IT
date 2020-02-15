@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare dial plan per le conferenze telefoniche con accesso esterno'
+title: 'Lync Server 2013: configurare dial plan per le conferenze telefoniche con accesso esterno'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185051
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 544c431257dea20db729e80dd1d9acc565da8201
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e28dd2ddb0633a45d19f1a7bb7638d86e042658b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41734996"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028617"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-dial-plans-for-dial-in-conferencing-in-lync-server-2013"></a>Configurare dial plan per le conferenze telefoniche con accesso esterno in Lync Server 2013
+# <a name="configure-dial-plans-for-dial-in-conferencing-in-lync-server-2013"></a>Configurare i dial plan per le conferenze telefoniche con accesso esterno in Lync Server 2013
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41734996"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-25_
+_**Ultimo argomento modificato:** 2013-02-25_
 
-Quando si distribuiscono i servizi di conferenza telefonica con accesso esterno, è necessario creare o modificare uno o più piani di chiamata per il routing dei numeri di telefono di Access per le chiamate in ingresso. Assicurarsi che almeno una regola di normalizzazione in ogni dial plan converta le estensioni telefoniche in numeri di telefono completi nel formato E. 164. Gli utenti di servizi di conferenza telefonica con accesso esterno partecipano alle conferenze come utenti autenticati dell'organizzazione immettendo il PIN (Personal Identification Number) e il relativo numero di telefono. È necessaria una regola di normalizzazione per convertire le estensioni in numeri di telefono completi in modo che gli utenti possano essere autenticati quando immettono solo un'estensione telefonica.
+Quando si distribuiscono le conferenze telefoniche con accesso esterno, è necessario creare o modificare uno o più dial plan per il routing dei numeri di telefono di accessi. Assicurarsi che almeno una regola di normalizzazione in ogni dial plan converta le estensioni telefoniche in numeri di telefono completi nel formato E. 164. Gli utenti delle conferenze telefoniche con accesso esterno partecipano alle conferenze come utenti autenticati dell'organizzazione immettendo il proprio PIN (Personal Identification Number) e il relativo numero di telefono. È necessaria una regola di normalizzazione per convertire le estensioni in numeri di telefono completi in modo che gli utenti possano essere autenticati quando immettono solo un interno telefonico.
 
-Per configurare i dial plan per i servizi di conferenza telefonica con accesso esterno, eseguire le operazioni seguenti:
+Per impostare i dial plan per le conferenze telefoniche con accesso esterno, eseguire le operazioni seguenti:
 
-  - Se si distribuisce o meno Enterprise Voice, modificare il dial plan globale per aggiungere un'area di conferenza telefonica con accesso esterno e verificare che una regola di normalizzazione converta accuratamente i numeri di accesso esterno. Per istruzioni dettagliate, vedere [modificare un dial plan in Lync Server 2013](lync-server-2013-modify-a-dial-plan.md).
+  - Se si distribuisce o meno VoIP aziendale, modificare il dial plan globale per aggiungere un'area di conferenza telefonica con accesso esterno e per assicurarsi che una regola di normalizzazione converta con precisione i numeri di accesso telefonico in ingresso. Per istruzioni dettagliate, vedere [Modify a dial plan in Lync Server 2013](lync-server-2013-modify-a-dial-plan.md).
 
-  - Se non è stata distribuita VoIP aziendale, creare piani di chiamata per i numeri di accesso per i servizi di conferenza telefonica con chiamata in ingresso. Assicurati di includere un'area di conferenza telefonica con accesso esterno. Per istruzioni dettagliate, vedere [creare un dial plan in Lync Server 2013](lync-server-2013-create-a-dial-plan.md).
+  - Se non è stata distribuita VoIP aziendale, creare i dial plan per i numeri di accesso per le conferenze telefoniche con chiamata in ingresso. Assicurarsi di includere un'area di conferenza telefonica con accesso esterno. Per istruzioni dettagliate, vedere [creazione di un dial plan in Lync Server 2013](lync-server-2013-create-a-dial-plan.md).
 
-  - Se Enterprise Voice è stato distribuito, modificare i piani per le chiamate vocali aziendali in base alle esigenze per includere le aree geografiche e usare le regole di normalizzazione per i numeri di accesso esterno. Per istruzioni dettagliate, vedere [modificare un dial plan in Lync Server 2013](lync-server-2013-modify-a-dial-plan.md). È anche possibile creare piani di chiamata dedicati usati solo per i numeri di accesso esterno. Per istruzioni dettagliate, vedere [creare un dial plan in Lync Server 2013](lync-server-2013-create-a-dial-plan.md).
+  - Se è stata distribuita VoIP aziendale, modificare i piani di chiamata VoIP aziendale in base alle esigenze per includere le aree geografiche e utilizzare le regole di normalizzazione appropriate per i numeri di accesso esterno. Per istruzioni dettagliate, vedere [Modify a dial plan in Lync Server 2013](lync-server-2013-modify-a-dial-plan.md). È inoltre possibile creare piani di chiamata dedicati che vengono utilizzati solo per i numeri di accesso esterno. Per istruzioni dettagliate, vedere [creazione di un dial plan in Lync Server 2013](lync-server-2013-create-a-dial-plan.md).
 
-Per informazioni dettagliate sulla pianificazione delle aree geografiche, vedere Requisiti per i servizi di [conferenza telefonica con accesso esterno in Lync Server 2013](lync-server-2013-dial-in-conferencing-requirements.md) nella documentazione relativa alla pianificazione.
+Per informazioni dettagliate sulla pianificazione delle aree geografiche, vedere Servizi di [conferenza telefonica con accesso esterno in Lync Server 2013](lync-server-2013-dial-in-conferencing-requirements.md) nella documentazione relativa alla pianificazione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Visualizzare le informazioni di dial plan in Lync Server 2013](lync-server-2013-view-dial-plan-information.md)
+  - [Visualizzare le informazioni sul dial plan in Lync Server 2013](lync-server-2013-view-dial-plan-information.md)
 
   - [Creare un dial plan in Lync Server 2013](lync-server-2013-create-a-dial-plan.md)
 

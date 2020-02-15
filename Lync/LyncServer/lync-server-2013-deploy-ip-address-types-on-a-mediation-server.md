@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Distribuire i tipi di indirizzi IP in un Mediation Server'
+title: 'Lync Server 2013: distribuire i tipi di indirizzi IP in un Mediation Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184376
 ms.date: 07/28/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ab30a2153dc7dbf5a15557f6eeaf3b6cb65f68f7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 44c8ca531ccb9df74e382068af127d630d5c62b7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729706"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036928"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41729706"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-07-28_
+_**Ultimo argomento modificato:** 2016-07-28_
 
-Usando generatore di topologie, eseguire i passaggi descritti nella procedura seguente per distribuire i tipi di indirizzo IP in un Mediation Server.
+Utilizzando Generatore di topologie, eseguire i passaggi descritti nella procedura seguente per distribuire i tipi di indirizzi IP in un Mediation Server.
 
 <div>
 
-## <a name="to-deploy-ip-address-types-on-a-mediation-server"></a>Per distribuire i tipi di indirizzo IP in un Mediation Server
+## <a name="to-deploy-ip-address-types-on-a-mediation-server"></a>Per distribuire i tipi di indirizzi IP in un Mediation Server
 
-  - In Generatore di topologia, in **pool di mediazione**, fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi scegliere **modifica proprietà**. In alternativa, selezionare il server e quindi fare clic su **modifica proprietà** dal menu **azione** .
+  - In Generatore di topologie fare clic con il pulsante destro del mouse sul server all'interno di un pool in **pool di Mediation**e quindi scegliere **modifica proprietà**. In alternativa, selezionare il server e quindi scegliere **Modifica proprietà** dal menu **Azione**.
 
-  - Nella finestra di dialogo **modifica proprietà** selezionare il tipo di indirizzo IP che si vuole configurare. Per una configurazione a doppio stack, selezionare **Abilita IPv4** e **Abilita IPv6**, come illustrato nella figura seguente.
+  - Nella finestra di dialogo **Modifica proprietà** selezionare il tipo di indirizzo IP che si desidera configurare. Per una configurazione con dual stack, selezionare **Abilita IPv4** e **Abilita IPv6**, come illustrato nella figura seguente.
     
-    **Finestra di dialogo Modifica proprietà per il pool di Mediation Server**
+    **Finestra di dialogo Modifica proprietà per il pool Mediation Server**
     
     ![Pagina delle proprietà generali di Lync Server con FQDN](images/JJ204964.4e650aca-dbff-4a86-b10d-f0162c032539(OCS.15).png "Pagina delle proprietà generali di Lync Server con FQDN")
     
-      - **Usare tutti gli indirizzi IP configurati**. Selezionare questa opzione se si vuole consentire l'uso di qualsiasi indirizzo IP definito nel computer.
+      - **Usa tutti gli indirizzi IP configurati**. Selezionare questa opzione se si desidera consentire l'utilizzo di qualsiasi indirizzo IP definito nel computer.
         
         <div>
         
@@ -62,9 +62,9 @@ Usando generatore di topologie, eseguire i passaggi descritti nella procedura se
         
         </div>
     
-      - **Limitare l'utilizzo del servizio agli indirizzi IP selezionati**. Selezionare questa opzione per specificare un indirizzo specifico da usare nel nuovo server. Se si seleziona questa opzione, è necessario immettere un valore per l'indirizzo IP principale.
+      - **Limita utilizzo servizio a indirizzi IP selezionati**. Selezionare questa opzione per specificare un indirizzo specifico da utilizzare nel nuovo server. Se si seleziona questa opzione è necessario immettere un valore per Indirizzo IP primario.
     
-      - **Indirizzo IP principale**. Immettere un indirizzo IP che il server userà per tutte le comunicazioni eccetto PSTN (Public Switched Telephone Network). L'indirizzo IP immesso deve corrispondere al formato del tipo di indirizzo di selezione.
+      - **Indirizzo IP primario**. Immettere un indirizzo IP che verrà utilizzato dal server per tutte le comunicazioni, ad eccezione di PSTN (Public Switched Telephone Network). L'indirizzo IP immesso deve corrispondere al formato del tipo di indirizzo selezionato.
     
       - **Indirizzo IP PSTN**. Definire un indirizzo IP PSTN quando un Mediation Server è autonomo. Questo indirizzo deve corrispondere al formato del tipo di indirizzo selezionato.
         
@@ -72,7 +72,7 @@ Usando generatore di topologie, eseguire i passaggi descritti nella procedura se
         
 
         > [!NOTE]  
-        > L'installazione di altre schede di interfaccia di rete (NIC) per supportare la configurazione degli indirizzi IP PSTN per Lync Server 2013 non è supportata nei ruoli di Mediation Server collocati. Per altre informazioni sulle configurazioni di NIC supportate per Lync Server 2013, vedere <A href="lync-server-2013-server-hardware-platforms.md">piattaforme hardware del server per Lync server 2013</A>.
+        > L'installazione di altre schede di interfaccia di rete (NIC) per supportare la configurazione degli indirizzi IP PSTN per Lync Server 2013 non è supportata nei ruoli Mediation Server collocati. Per ulteriori informazioni sulle configurazioni NIC supportate per Lync Server 2013, vedere <A href="lync-server-2013-server-hardware-platforms.md">server hardware Platforms for Lync server 2013</A>.
 
         
         </div>

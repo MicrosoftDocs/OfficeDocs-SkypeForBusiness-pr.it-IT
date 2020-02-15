@@ -1,5 +1,5 @@
 ---
-title: Creare o modificare una raccolta di impostazioni di configurazione di un/V Edge Server
+title: Creare o modificare una raccolta di impostazioni di configurazione di A/V Edge Server
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733630
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5c4b45b34b5c52d0eb138fbc16c37e5aaee7262b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 576fcb445eb37b92356ad9fdf36de716581ca6fa
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763368"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035642"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-collection-of-av-edge-server-configuration-settings-in-lync-server-2013"></a>Creare o modificare una raccolta di impostazioni di configurazione di un/V Edge Server in Lync Server 2013
+# <a name="create-or-modify-a-collection-of-av-edge-server-configuration-settings-in-lync-server-2013"></a>Creare o modificare una raccolta di impostazioni di configurazione di A/V Edge Server in Lync Server 2013
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41763368"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Il servizio A/V Edge consente agli utenti interni (utenti che hanno effettuato l'accesso alla rete organizzativa) di condividere audio e video con utenti esterni (utenti che non hanno eseguito l'accesso alla rete organizzativa). Il servizio A/V Edge viene gestito principalmente con le impostazioni di configurazione di Edge A/V, che possono essere configurate nell'ambito del sito o nell'ambito del servizio, ovvero possono essere configurate per un singolo server A/V Edge.
+Il servizio A/V Edge consente agli utenti interni, ovvero gli utenti connessi alla rete dell'organizzazione, di condividere audio e video con gli utenti esterni, ovvero gli utenti non connessi alla rete dell'organizzazione. Il servizio A/V Edge viene gestito principalmente tramite le impostazioni di configurazione di A/V Edge, configurabili nell'ambito del sito o nell'ambito del servizio, ovvero per un singolo server A/V Edge.
 
-Quando si installa Lync Server, viene creata una raccolta globale di impostazioni di configurazione di Edge A/V. Oltre a questo, puoi usare Windows PowerShell e il cmdlet New-CsAVEdgeConfiguration per creare nuove impostazioni nell'ambito del sito o nell'ambito del servizio (ovvero, per un singolo A/V Edge Server). Se crei nuove impostazioni, tieni presente che:
+Quando si installa Lync Server, viene creata una raccolta globale delle impostazioni di configurazione di A/V Edge. Oltre a ciò, è possibile utilizzare Windows PowerShell e il cmdlet New-CsAVEdgeConfiguration per creare nuove impostazioni nell'ambito del sito o nell'ambito del servizio, ovvero per un singolo server A/V Edge. Quando si creano nuove impostazioni, tenere presente quanto segue.
 
-  - Le impostazioni configurate nell'ambito del servizio, ovvero su un singolo server, hanno la priorità su tutto.
+  - Le impostazioni configurate nell'ambito del servizio, ovvero in un singolo server, avranno la precedenza su tutte le altre.
 
-  - Le impostazioni configurate nell'ambito del sito hanno la priorità sulle impostazioni configurate nell'ambito globale. Tuttavia, le impostazioni dell'ambito del servizio sostituiranno anche le impostazioni dell'ambito del sito.
+  - Le impostazioni configurate nell'ambito del sito hanno la priorità su quelle configurate nell'ambito globale. Le impostazioni nell'ambito del servizio avranno tuttavia la precedenza sulle impostazioni nell'ambito del sito.
 
-  - Le impostazioni dell'ambito globale verranno usate solo se non sono state configurate impostazioni di servizio nel singolo server e se non sono presenti impostazioni del sito per il sito in cui si trova il server.
+  - Le impostazioni dell'ambito globale vengono utilizzate solo se non sono state configurate impostazioni del servizio nel singolo server e se non sono presenti impostazioni del sito per il sito in cui si trova il server in oggetto.
 
-È quindi possibile modificare le impostazioni usando il cmdlet Set-CsAVEdgeConfiguration. Per altre informazioni, vedere gli argomenti della Guida per i cmdlet [New-CsAVEdgeConfiguration](https://technet.microsoft.com/en-us/library/Gg412884(v=OCS.15)) e [Set-CsAVEdgeConfiguration](https://technet.microsoft.com/en-us/library/Gg412869(v=OCS.15)) .
+Tutte le impostazioni possono essere quindi modificate utilizzando il cmdlet Set-CsAVEdgeConfiguration. Per ulteriori informazioni, vedere gli argomenti della Guida per i cmdlet [New-CsAVEdgeConfiguration](https://technet.microsoft.com/library/Gg412884(v=OCS.15)) e [Set-CsAVEdgeConfiguration](https://technet.microsoft.com/library/Gg412869(v=OCS.15)) .
 
 <div>
 
 ## <a name="to-create-new-av-edge-configuration-settings-at-the-site-scope"></a>Per creare nuove impostazioni di configurazione a/V Edge nell'ambito del sito
 
-  - Il comando seguente crea una nuova raccolta di impostazioni di configurazione A/V Edge per il sito Redmond:
+  - Il comando seguente crea una nuova raccolta di impostazioni di configurazione di A/V Edge per il sito Redmond.
     
         New-CsAVEdgeConfiguration -Identity "site:Redmond"
 
@@ -61,9 +61,9 @@ Quando si installa Lync Server, viene creata una raccolta globale di impostazion
 
 <div>
 
-## <a name="to-create-custom-av-edge-configuration-settings-at-the-site-scope"></a>Per creare impostazioni di configurazione personalizzate a/V Edge nell'ambito del sito
+## <a name="to-create-custom-av-edge-configuration-settings-at-the-site-scope"></a>Per creare impostazioni di configurazione a/V Edge personalizzate nell'ambito del sito
 
-  - Dato che non sono stati inclusi parametri aggiuntivi, queste nuove impostazioni utilizzeranno i valori predefiniti per il servizio A/V Edge. In alternativa, è possibile aggiungere altri parametri e valori di parametro per creare una raccolta personalizzata. Questo comando, ad esempio, imposta la proprietà MaxTokenLifetime su 4 ore (04 ore: 00 minuti: 00 secondi):
+  - Poiché non sono stati inclusi parametri aggiuntivi, queste nuove impostazioni utilizzeranno i valori predefiniti per il servizio A/V Edge. In alternativa, è possibile inserire altri parametri e valori di parametro per creare una raccolta personalizzata. Questo comando imposta ad esempio la proprietà MaxTokenLifetime su 4 ore (04 ore : 00 minuti : 00 secondi):
     
         New-CsAVEdgeConfiguration -Identity "site:Redmond" -MaxTokenLifetime "04:00:00"
 
@@ -71,9 +71,9 @@ Quando si installa Lync Server, viene creata una raccolta globale di impostazion
 
 <div>
 
-## <a name="to-create-custom-av-edge-configuration-settings-at-the-service-scope"></a>Per creare impostazioni di configurazione personalizzate a/V Edge nell'ambito del servizio
+## <a name="to-create-custom-av-edge-configuration-settings-at-the-service-scope"></a>Per creare impostazioni di configurazione a/V Edge personalizzate nell'ambito del servizio
 
-  - Questo comando crea una raccolta simile applicata all'atl-edge-001.litwareinc.com A/V Edge Server:
+  - Questo comando crea una raccolta simile applicata al server A/V Edge atl-edge-001.litwareinc.com:
     
         New-CsAVEdgeConfiguration -Identity "service:EdgeServer:atl-edge-001.litwareinc.com" -MaxTokenLifetime "04:00:00"
 
@@ -81,9 +81,9 @@ Quando si installa Lync Server, viene creata una raccolta globale di impostazion
 
 <div>
 
-## <a name="to-modify-existing-av-edge-configuration-settings"></a>Per modificare le impostazioni di configurazione di un/V Edge esistenti
+## <a name="to-modify-existing-av-edge-configuration-settings"></a>Per modificare le impostazioni di configurazione di A/V Edge esistenti
 
-  - In questo esempio, il cmdlet Set-CsAVEdgeConfiguration viene usato per modificare la durata del token massimo per il sito Redmond in 12 ore:
+  - In questo esempio il cmdlet Set-CsAVEdgeConfiguration viene utilizzato per modificare in 12 ore la durata massima dei token per il sito Redmond:
     
         Set-CsAVEdgeConfiguration -Identity "site:Redmond" -MaxTokenLifetime "12:00:00"
 
@@ -94,13 +94,13 @@ Quando si installa Lync Server, viene creata una raccolta globale di impostazion
 ## <a name="see-also"></a>Vedere anche
 
 
-[Restituire le informazioni di configurazione A/V Edge Server in Lync Server 2013](lync-server-2013-return-a-v-edge-server-configuration-information.md)  
-[Eliminare una raccolta esistente di impostazioni di configurazione di un/V Edge Server in Lync Server 2013](lync-server-2013-delete-an-existing-collection-of-a-v-edge-server-configuration-settings.md)  
+[Restituire le informazioni di configurazione di A/V Edge Server in Lync Server 2013](lync-server-2013-return-a-v-edge-server-configuration-information.md)  
+[Eliminare una raccolta esistente di impostazioni di configurazione di A/V Edge Server in Lync Server 2013](lync-server-2013-delete-an-existing-collection-of-a-v-edge-server-configuration-settings.md)  
 
 
-[Audio/video (A/V) Edge Server in Lync Server 2013](lync-server-2013-audio-video-a-v-edge-servers.md)  
-[New-CsAVEdgeConfiguration](https://technet.microsoft.com/en-us/library/Gg412884(v=OCS.15))  
-[Set-CsAVEdgeConfiguration](https://technet.microsoft.com/en-us/library/Gg412869(v=OCS.15))  
+[Audio/video (A/V) server perimetrali in Lync Server 2013](lync-server-2013-audio-video-a-v-edge-servers.md)  
+[New-CsAVEdgeConfiguration](https://technet.microsoft.com/library/Gg412884(v=OCS.15))  
+[Set-CsAVEdgeConfiguration](https://technet.microsoft.com/library/Gg412869(v=OCS.15))  
   
 
 </div>

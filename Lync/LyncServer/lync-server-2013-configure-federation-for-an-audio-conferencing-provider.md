@@ -12,16 +12,16 @@ ms:contentKeyID: 60595883
 ms.date: 07/24/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c5c1ca77b2f68a2285fb15d65c19631323a03bda
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4725e80a00da46b7d446b8b8c938b65c569ef8d1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758440"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028557"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41758440"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-07-24_
+_**Ultimo argomento modificato:** 2014-07-24_
 
-Se si vuole usare un provider di servizi di audioconferenza (ACP) nella distribuzione ibrida (Lync Server locale con Lync Online), è necessario configurare la Federazione tra la distribuzione locale di Lync e il partner ACP come server partner consentito. È possibile configurare la Federazione aggiungendo il dominio partner ACP e il server perimetrale (può anche essere chiamato proxy di accesso) nell'elenco dei domini federati per la distribuzione locale. Il partner ACP deve quindi aggiungere il nome di dominio completo del pool di Edge Server locale all'elenco dei domini federati consentiti. Contattare il provider ACP per altri partner di detailsYour ACP deve quindi aggiungere il nome di dominio completo del pool di Edge Server locale all'elenco dei domini federati consentiti.
+Se si desidera utilizzare un provider di servizi di audioconferenza (ACP) nella distribuzione ibrida (Lync Server locale con Lync Online), è necessario configurare la Federazione tra la distribuzione di Lync locale e il partner ACP come server partner consentito. È possibile configurare la Federazione aggiungendo il dominio del partner ACP e il server perimetrale (può anche essere denominato proxy di accesso) all'elenco dei domini federati per la distribuzione locale. Il partner ACP deve quindi aggiungere il nome FQDN del pool di server perimetrali locale all'elenco dei domini federati consentiti. Contattare il provider ACP per ulteriori detailsYour partner ACP è quindi necessario aggiungere il nome di dominio completo del pool di server perimetrali locale all'elenco dei domini federati consentiti.
 
   - **Aggiunta del dominio ACP e del server perimetrale come dominio federato consentito**
     
-    Per aggiungere il dominio ACP come server partner consentito (dominio federato consentito), seguire i passaggi descritti in [configurare il supporto per i domini esterni consentiti in Lync Server 2013](lync-server-2013-configure-support-for-allowed-external-domains.md). Per il server perimetrale, aggiungere il nome di dominio completo del server Edge del partner ACP. Potrebbe essere necessario contattare il partner ACP per ottenere il nome di dominio completo per il server perimetrale, che può anche essere indicato dal proprio proxy di accesso per i paesi ACP.
+    Per aggiungere il dominio ACP come server partner consentito (dominio federato consentito), seguire la procedura illustrata in [configurare il supporto per i domini esterni consentiti in Lync Server 2013](lync-server-2013-configure-support-for-allowed-external-domains.md). Per il server perimetrale, aggiungere il nome di dominio completo del server perimetrale del partner ACP. Potrebbe essere necessario contattare il partner ACP per ottenere il nome di dominio completo per il server perimetrale, che può anche essere definito dal proprio ACP come proxy di accesso.
 
-  - **Specificare il nome di dominio completo del pool di Edge Server per il partner ACP**
+  - **Specificare il nome di dominio completo del pool di server perimetrali per il partner ACP**
     
-    Il partner ACP deve configurare la Federazione per aggiungere il dominio locale come server partner consentito aggiungendo il nome FQDN del pool di Edge Server come dominio federato consentito.
+    È necessario che il partner ACP configuri la Federazione per aggiungere il dominio locale come server partner consentito aggiungendo l'FQDN del pool di server perimetrali come dominio federato consentito.
 
 </div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 49733848
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fc4469140f7f92c563a594c883d02f3add1e65c5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 95cc6790766d68ee478cf1b80326c974f7c15f1f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743376"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42028477"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41743376"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-La visualizzazione filetransfer consente di archiviare informazioni sulle sessioni di trasferimento di file peer-to-peer. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
+La visualizzazione filetransfer archivia le informazioni sulle sessioni di trasferimento file peer-to-peer. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
 
 <div>
 
@@ -65,34 +65,34 @@ La visualizzazione filetransfer consente di archiviare informazioni sulle sessio
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Nome file</strong></p></td>
+<td><p><strong>FileName</strong></p></td>
 <td><p>nvarchar (256)</p></td>
 <td><p>Nome del file trasferito.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Cookie</strong></p></td>
 <td><p>nvarchar (128)</p></td>
-<td><p>Usato per identificare ogni messaggio di follow-up associato a questo.</p></td>
+<td><p>Valore utilizzato per identificare ogni messaggio successivo come associato a questo.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Fileidentity</strong></p></td>
 <td><p>uniqueidentifier</p></td>
-<td><p>Identificatore univoco per distinguere tra i trasferimenti di file che coinvolgono lo stesso nome file.</p></td>
+<td><p>Identificatore univoco per distinguere tra i trasferimenti di file che coinvolgono lo stesso nome di file.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Accettare</strong></p></td>
 <td><p>po'</p></td>
-<td><p>Può essere TRUE o NULL. Se TRUE, quindi Reject e Cancel saranno NULL.</p></td>
+<td><p>Può essere TRUE o NULL. Se TRUE, allora Reject e Cancel saranno NULL.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Rifiutare</strong></p></td>
+<td><p><strong>Rifiuta</strong></p></td>
 <td><p>po'</p></td>
-<td><p>Può essere TRUE o NULL. Se TRUE, accetta e Annulla sarà NULL.</p></td>
+<td><p>Può essere TRUE o NULL. Se TRUE, allora Accept e Cancel saranno NULL.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Annulla</strong></p></td>
 <td><p>po'</p></td>
-<td><p>Può essere TRUE o NULL. Se TRUE, accetta e rifiuta sarà NULL.</p></td>
+<td><p>Può essere TRUE o NULL. Se TRUE, allora Accept e Reject saranno NULL.</p></td>
 </tr>
 </tbody>
 </table>

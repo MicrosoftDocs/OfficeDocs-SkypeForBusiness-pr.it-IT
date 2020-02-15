@@ -12,16 +12,16 @@ ms:contentKeyID: 49105661
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7af2c226397c5225fc26f6dbdf40d12a4bdb1ca0
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 13d2b80ed223f7779b406615806c1c00fd0fc860
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736626"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42031120"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41736626"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-12-23_
+_**Ultimo argomento modificato:** 2012-12-23_
 
-I requisiti di certificato per l'abilitazione e la creazione di comunicazioni con i partner del protocollo XMPP (Extensible Messaging and Presence Protocol) richiedono il record aggiuntivo dei domini XMPP. Il record incluso nel certificato come nome alternativo soggetto (SAN) sarà il dominio che può partecipare alle comunicazioni XMPP. Il dominio può essere il dominio a livello di radice (ad esempio contoso.com) se si vuole abilitare XMPP per l'intero dominio oppure i domini figlio selezionati, ad esempio corp.contoso.com, finance.contoso.com, se si Abilita XMPP per un sottoinsieme di utenti.
+Tra i requisiti dei certificati per consentire e stabilire le comunicazioni con partner XMPP (Extensible Messaging and Presence Protocol) è previsto il record aggiuntivo dei domini XMPP. Il record incluso nel certificato come nome alternativo del soggetto (SAN) corrisponderà al dominio che può partecipare alle comunicazioni XMPP. Il dominio può essere a livello della radice (ad esempio, contoso.com) se si desidera abilitare XMPP per l'intero dominio oppure può corrispondere a domini figlio selezionati (ad esempio, corp.contoso.com, finance.contoso.com) se si desidera abilitare XMPP per un sottoinsieme di utenti.
 
 <div>
 
-## <a name="certificate-summary-for-extensible-messaging-and-presence-protocol"></a>Riepilogo del certificato per il protocollo di messaggistica e presenza estensibile
+## <a name="certificate-summary-for-extensible-messaging-and-presence-protocol"></a>Riepilogo certificati per XMPP (Extensible Messaging and Presence Protocol)
 
 
 <table>
@@ -54,20 +54,20 @@ I requisiti di certificato per l'abilitazione e la creazione di comunicazioni co
 <thead>
 <tr class="header">
 <th>Componente</th>
-<th>Nome oggetto</th>
-<th>Nomi alternativi oggetto (SAN)/Order</th>
+<th>Nome soggetto</th>
+<th>Ordine/voci nomi alternativi del soggetto (SAN)</th>
 <th>Commenti</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Assegna a servizio Edge di Access di Edge Server o pool di Edge</p></td>
+<td><p>Assegnare al servizio Access Edge Server perimetrale o pool Edge</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>webcon.contoso.com</p>
 <p>sip.contoso.com</p>
 <p>sip.fabrikam.com</p>
 <p>contoso.com</p></td>
-<td><p>Le prime tre voci SAN sono le normali voci di SAN per un server perimetrale completo. Contoso.com è la voce necessaria per la Federazione con il partner XMPP a livello di dominio radice. Questa voce consentirà XMPP per tutti i domini con il suffisso contoso.com.</p></td>
+<td><p>Le prime tre voci di SAN sono le normali voci di SAN per un server perimetrale completo. La voce contoso.com è necessaria per la federazione con il partner XMPP a livello del dominio radice. Questa voce consentirà XMPP per tutti i domini con il suffisso contoso.com.</p></td>
 </tr>
 </tbody>
 </table>
@@ -80,7 +80,7 @@ I requisiti di certificato per l'abilitazione e la creazione di comunicazioni co
 ## <a name="see-also"></a>Vedere anche
 
 
-[Esempio di configurazione XMPP in Lync Server 2013 - federazione di XMPP con Google Talk](lync-server-2013-example-xmpp-configuration-–-xmpp-federation-with-google-talk.md)  
+[Esempio di configurazione XMPP in Lync Server 2013 – Federazione XMPP con Google Talk](lync-server-2013-example-xmpp-configuration-–-xmpp-federation-with-google-talk.md)  
 
 
 [Pianificare i certificati dei server perimetrali in Lync Server 2013](lync-server-2013-plan-for-edge-server-certificates.md)  

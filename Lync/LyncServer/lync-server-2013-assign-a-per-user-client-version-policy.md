@@ -12,79 +12,79 @@ ms:contentKeyID: 48185868
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e509427b6d2651f84b96a96c87fbe7cfd6177a7d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3668e21836fd3ecee0740493c8b9bd631227583a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738376"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029267"
 ---
 # <a name="assign-a-per-user-client-version-policy-in-lync-server-2013"></a>Assegnare criteri di versione client per utente in Lync Server 2013
 
  
 
 
-Il criterio di versione client è una delle singole impostazioni di un account utente che è possibile configurare nel pannello di controllo di Lync Server.
+I criteri di versione client sono una delle singole impostazioni di un account utente che è possibile configurare nel pannello di controllo di Lync Server.
 
-La distribuzione di uno o più criteri di versione client per utente è facoltativa. È anche possibile distribuire solo criteri di versione client a livello globale o criteri di versione del client a livello di sito o a livello di pool. Se si distribuiscono criteri per utente, è necessario assegnarli esplicitamente a utenti, gruppi o oggetti contatto. Quando non sono assegnati criteri specifici a livello di sito, a livello di pool o per utente, i client predefiniti consentiti per la registrazione con Lync Server 2013 sono quelli definiti nel criterio di versione client a livello globale.
+La distribuzione di uno o più criteri di versione client per utente è facoltativa. È anche possibile distribuire solo un criterio di versione client a livello globale oppure criteri di versione client a livello di sito o di pool. Se si distribuiscono i criteri per utente, è necessario assegnarli in modo esplicito a utenti, gruppi o oggetti contatto. Quando non vengono assegnati criteri specifici a livello di sito, a livello di pool o per utente, i client predefiniti che sono autorizzati a eseguire la registrazione con Lync Server 2013 sono quelli definiti nei criteri di versione client a livello globale.
 
-Dopo aver creato almeno un criterio di versione client per utente, usare le procedure descritte in questo argomento per assegnare i criteri che specificano le versioni client che si desidera consentire la registrazione con Lync Server.
+Dopo aver creato almeno un criterio di versione client per utente, utilizzare le procedure descritte in questo argomento per assegnare i criteri che specificano le versioni client che si desidera consentire di eseguire la registrazione con Lync Server.
 
-Per informazioni dettagliate sulla creazione di criteri di versione client per utente, vedere [specificare le applicazioni client che è possibile usare per accedere a Lync Server 2013](lync-server-2013-specifying-the-client-applications-that-can-be-used-to-log-on-to-lync-server-2013.md).
+Per informazioni dettagliate sulla creazione di criteri di versione client per utente, vedere [specificare le applicazioni client che possono essere utilizzate per accedere a Lync Server 2013](lync-server-2013-specifying-the-client-applications-that-can-be-used-to-log-on-to-lync-server-2013.md).
 
-## <a name="to-assign-a-per-user-client-version-policy"></a>Per assegnare un criterio di versione client per utente
+## <a name="to-assign-a-per-user-client-version-policy"></a>Per assegnare criteri di versione client per utente
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **utenti**.
+3.  Sulla barra di spostamento sinistra fare clic su **Utenti**.
 
-4.  Usare uno dei metodi seguenti per individuare un utente:
+4.  Utilizzare uno dei metodi seguenti per individuare un utente:
     
-      - Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di gestione account di sicurezza (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente e quindi fare clic su **trova**.
+      - Nella casella **Cerca utenti** digitare per intero nome visualizzato, nome, cognome, nome account SAM (Security Accounts Manager), indirizzo SIP o URI linea dell'account utente desiderato, oppure digitare la prima parte di questi e quindi fare clic su **Trova**.
     
-      - Se si ha una query salvata, fare clic sull'icona **Apri query** , usare la finestra di dialogo **Apri** per recuperare la query (un file con estensione USF) e quindi fare clic su **trova**.
+      - Se è disponibile una query salvata, fare clic sull'icona **Apri query**, recuperare la query (file con estensione usf) mediante la finestra di dialogo **Apri** e quindi fare clic su **Trova**.
 
-5.  Opzionale Specificare altri criteri di ricerca per restringere i risultati:
+5.  (Facoltativo) Specificare ulteriori criteri di ricerca per limitare i risultati:
     
     1.  Fare clic su **Aggiungi filtro**.
     
-    2.  Immettere la proprietà User digitando o facendo clic sulla freccia nell'elenco a discesa per selezionare la proprietà.
+    2.  Immettere una proprietà utente digitandola o selezionandola dall'elenco a discesa dopo aver fatto clic sulla freccia.
     
-    3.  Nell'elenco **a discesa uguale a** fare clic sull'operatore, ad esempio **uguale** a o diverso **da**.
+    3.  Nell'elenco a discesa **Uguale a** fare clic sull'operatore, ad esempio **Uguale a** o **Non uguale a**).
     
-    4.  A seconda della proprietà utente selezionata, immettere i criteri da usare per filtrare i risultati della ricerca digitando o facendo clic sulla freccia nell'elenco a discesa.
+    4.  A seconda della proprietà utente selezionata, immettere i criteri da utilizzare per filtrare i risultati della ricerca digitandoli o facendo clic sulla freccia dell'elenco a discesa.
         
 
         > [!TIP]  
-        > Per aggiungere altre clausole di ricerca alla query, fare clic su <STRONG>Aggiungi filtro</STRONG>.
+        > Per aggiungere ulteriori clausole di ricerca alla query, fare clic su <STRONG>Aggiungi filtro</STRONG>.
 
     
-    5.  Fare clic su **trova**.
+    5.  Fare clic su **Trova**.
 
-6.  Fare clic su un utente nei risultati della ricerca, fare clic su **azione**e quindi su **Assegna criteri**.
+6.  Fare clic su un utente nei risultati di ricerca, fare clic su **Azione** e quindi fare clic su **Assegna criteri**.
     
 
     > [!TIP]  
-    > Se si desidera che gli stessi criteri di versione client per utente vengano applicati a più utenti, selezionare più utenti nei risultati della ricerca, quindi fare clic su <STRONG>azioni</STRONG>e quindi su <STRONG>Assegna criteri</STRONG>.
+    > Se si desidera applicare a più utenti gli stessi criteri di versione client per utente, selezionare più utenti nei risultati di ricerca, fare clic su <STRONG>Azioni</STRONG> e quindi su <STRONG>Assegna criteri</STRONG>.
 
 
 
-7.  In **Assegna criteri**, in **criteri di versione client**, eseguire una delle operazioni seguenti:
+7.  In **Assegna criteri**, in **Criteri versione client** effettuare una delle operazioni seguenti:
     
 
     > [!NOTE]  
-    > Poiché esistono più criteri che è possibile configurare tramite la finestra di dialogo <STRONG>Assegna criteri</STRONG> , <STRONG> &lt;Mantieni come&gt; </STRONG> è selezionato per impostazione predefinita per ogni criterio nella finestra di dialogo. Continuare a usare il criterio precedentemente assegnato all'utente senza apportare alcuna modifica a questa impostazione.
+    > Poiché esistono più criteri che è possibile configurare tramite la finestra di dialogo <STRONG>Assegna criteri</STRONG> , <STRONG> &lt;Mantieni come è&gt; </STRONG> selezionato per impostazione predefinita per tutti i criteri nella finestra di dialogo. Per continuare a utilizzare i criteri assegnati in precedenza all'utente, non modificare l'impostazione.
 
     
-      - Consenti a Lync Server di scegliere automaticamente i criteri a livello globale o, se definiti, i criteri a livello di sito o a livello di pool.
+      - Consentire a Lync Server di scegliere automaticamente i criteri a livello globale o, se definiti, i criteri a livello di sito o a livello di pool.
     
-      - Fare clic sul nome di un criterio di versione client per utente definito in precedenza nella pagina dei **criteri di versione client** .
+      - Fare clic sul nome dei criteri di versione client per utente precedentemente definiti nella pagina **Criteri versione client**.
         
 
         > [!TIP]  
-        > Per decidere i criteri da assegnare, fare clic su <STRONG>Visualizza</STRONG> per visualizzare i diritti utente e le autorizzazioni definiti nel criterio dopo aver fatto clic su un nome di criterio.
+        > Per decidere quali criteri assegnare, dopo aver selezionato un nome di criteri, fare clic su <STRONG>Visualizza</STRONG> per visualizzare i diritti utente e le autorizzazioni definite nei criteri.
 
 
 
@@ -92,27 +92,27 @@ Per informazioni dettagliate sulla creazione di criteri di versione client per u
 
 ## <a name="assigning-a-per-user-client-version-policy-by-using-windows-powershell-cmdlets"></a>Assegnazione di un criterio di versione client per utente tramite i cmdlet di Windows PowerShell
 
-Puoi assegnare criteri di versione client per utente usando il cmdlet Grant-CsClientVersionPolicy. Puoi eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile assegnare un criterio di versione client per utente utilizzando il cmdlet Grant-CsClientVersionPolicy. È possibile eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
-## <a name="to-assign-a-per-user-client-version-policy-to-a-single-user"></a>Per assegnare un criterio di versione client per utente a un singolo utente
+## <a name="to-assign-a-per-user-client-version-policy-to-a-single-user"></a>Per assegnare un criterio di versione client per utente a un unico utente
 
-  - Con il comando seguente viene assegnato il criterio di versione client per utente RedmondClientVersionPolicy all'utente Ken.
+  - Il comando seguente assegna il criterio di versione client per utente RedmondClientVersionPolicy all'utente Davide Garghentini.
     
         Grant-CsClientVersionPolicy -Identity "Ken Myer" -PolicyName "RedmondClientVersionPolicy"
 
-## <a name="to-assign-a-per-user-client-version-policy-to-multiple-users"></a>Per assegnare criteri di versione client per utente a più utenti
+## <a name="to-assign-a-per-user-client-version-policy-to-multiple-users"></a>Per assegnare un criterio di versione client per utente a più utenti
 
-  - Questo comando assegna il criterio di versione client per utente RedmondClientVersionPolicy a tutti gli utenti a cui è attualmente assegnato il criterio vocale RedmondVoicePolicy. Per altre informazioni sul parametro Filter usato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser](https://technet.microsoft.com/en-us/library/gg398125\(v=ocs.15\)) .
+  - Il comando assegna il criterio di versione client per utente RedmondClientVersionPolicy a tutti gli utenti a cui è attualmente assegnato il criterio vocale RedmondVoicePolicy. Per ulteriori informazioni sul parametro Filter utilizzato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser](https://technet.microsoft.com/library/gg398125\(v=ocs.15\)) .
     
         Get-CsUser -Filter {VoicePolicy -eq "RedmondVoicePolicy"} | Grant-CsClientVersionPolicy -PolicyName "RedmondClientVersionPolicy"
 
-## <a name="to-unassign-a-per-user-client-version-policy"></a>Per annullare l'assegnazione di un criterio di versione client per utente
+## <a name="to-unassign-a-per-user-client-version-policy"></a>Per annullare l'assegnazione dei criteri di versione client per utente
 
-  - Il comando seguente annulla l'assegnazione di criteri di versione client per utente assegnati in precedenza a Ken. Dopo che il criterio per utente non è stato assegnato, Ken è gestito automaticamente tramite il criterio globale, i criteri del sito locale (se disponibile) o i criteri di ambito del servizio assegnati al suo registrar. I criteri di ambito del servizio hanno la precedenza su qualsiasi criterio di sito e i criteri del sito hanno la precedenza sui criteri globali.
+  - Il comando seguente annulla l'assegnazione del criterio di versione client per utente precedentemente assegnato a Davide Garghentini. Dopo che l'assegnazione del criterio per utente è stata annullata, Davide Garghentini verrà gestito automaticamente utilizzando il criterio globale, il relativo criterio sito globale (se esistente) o il criterio dell'ambito del servizio assegnato alla relativa Registrazione avanzata. Un criterio ambito del servizio ha la precedenza rispetto a un criterio sito e un criterio sito ha la precedenza rispetto al criterio globale.
     
         Grant-CsClientVersionPolicy -Identity "Ken Myer" -PolicyName $Null
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Grant-CsClientVersionPolicy](https://technet.microsoft.com/en-us/library/gg412903\(v=ocs.15\)) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Grant-CsClientVersionPolicy](https://technet.microsoft.com/library/gg412903\(v=ocs.15\)) .
 
 ## <a name="see-also"></a>Vedere anche
 

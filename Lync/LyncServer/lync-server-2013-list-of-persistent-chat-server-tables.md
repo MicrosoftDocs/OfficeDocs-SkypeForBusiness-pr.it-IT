@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Elenco delle tabelle del server Chat persistente'
+title: 'Lync Server 2013: elenco delle tabelle del server Chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183659
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4902f0710752dd38c146b01bddcc44e135735201
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4327e2a72f91e17fd71cd198940ea01d10423b00
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765404"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034708"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41765404"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-06_
+_**Ultimo argomento modificato:** 2012-10-06_
 
-Lo schema del database della chat persistente è costituito dalle tabelle seguenti.
+Lo schema del database di chat persistente è costituito dalle tabelle seguenti.
 
 <div>
 
@@ -51,28 +51,28 @@ Lo schema del database della chat persistente è costituito dalle tabelle seguen
 </colgroup>
 <thead>
 <tr class="header">
-<th>Tabella</th>
+<th>tavolo</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tbladcookie.md">tblADCookie in Lync Server 2013</a></p></td>
-<td><p>Contiene i cookie di sincronizzazione LDAP (Lightweight Directory Access Protocol) correnti. Ogni riga corrisponde a un dominio di servizi di dominio Active Directory che il server di chat persistente sta monitorando attivamente per le modifiche. In questa tabella sono rappresentati solo i domini di Active Directory rilevanti per il server di chat persistente.</p></td>
+<td><p>Include i cookie di sincronizzazione LDAP (Lightweight Directory Access Protocol) correnti. Ogni riga corrisponde a un dominio di servizi di dominio Active Directory in cui il server Chat persistente sta monitorando attivamente le modifiche. (Solo i domini di Active Directory rilevanti per il server Chat persistente sono rappresentati in questa tabella).</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-tblprincipalmemberdifference.md">tblPrincipalMemberDifference in Lync Server 2013</a></p></td>
-<td><p>Contiene le modifiche alle appartenenze ai gruppi (membri aggiunti e rimossi) che non sono ancora state elaborate dalle successive operazioni di sincronizzazione di Active Directory ed è una delle tabelle temporanee (insieme alla tabella tblADUpdates) che viene usata nel primo passaggio della sincronizzazione di Active Directory.</p>
-<p>Le modifiche apportate all'appartenenza sono archiviate, elaborate o entrambe, solo per i gruppi elencati nella tabella tblPrincipal o che hanno già membri elencati.</p></td>
+<td><p>Contiene le modifiche apportate all'appartenenza ai gruppi (membri aggiunti e rimossi) che non sono state ancora elaborate dai successivi passaggi di sincronizzazione di Active Directory ed è una delle tabelle temporanee (insieme alla tabella tblADUpdates) utilizzate nel primo passaggio della sincronizzazione di Active Directory.</p>
+<p>Le modifiche delle appartenenza sono archiviate e/o elaborate solo per i gruppi che sono elencati nella tabella tblPrincipal o che includono membri già elencati in tale tabella.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tbladupdates.md">tblADUpdates in Lync Server 2013</a></p></td>
-<td><p>Contiene le modifiche apportate ai servizi di dominio Active Directory che non sono ancora state elaborate dalle successive operazioni di sincronizzazione di Active Directory ed è una delle tabelle temporanee (insieme alla tabella tblPrincipalMemberDifference) che viene usata nel primo passaggio di Active Directory Sync.</p>
-<p>Le modifiche apportate a Active Directory vengono archiviate, elaborate o entrambe solo per le entità già elencate nella tabella tblPrincipal.</p></td>
+<td><p>Contiene le modifiche apportate ai servizi di dominio Active Directory che non sono state ancora elaborate dai successivi passaggi di sincronizzazione di Active Directory ed è una delle tabelle temporanee (insieme alla tabella tblPrincipalMemberDifference) utilizzata nel primo passaggio di Active Directory Sincronizzazione.</p>
+<p>Le modifiche apportate a Active Directory sono archiviate, elaborate o entrambe solo per le entità che sono già elencate nella tabella tabella tblPrincipal.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-tblprincipalmembers.md">tblPrincipalMembers in Lync Server 2013</a></p></td>
-<td><p>Contiene le appartenenze principali.</p></td>
+<td><p>Include le appartenenze delle entità.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tblprincipalmeta.md">tblPrincipalMeta in Lync Server 2013</a></p></td>
@@ -80,9 +80,9 @@ Lo schema del database della chat persistente è costituito dalle tabelle seguen
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-tblskippedaffiliations.md">tblSkippedAffiliations in Lync Server 2013</a></p></td>
-<td><p>Contiene le affiliazioni che non è stato possibile aggiornare per qualche motivo, in genere a causa di errori di accesso a Active Directory.</p>
-<p>Questa tabella è a scopo informativo. Il contenuto non viene usato.</p>
-<p>Le entità con affiliazioni che non è stato possibile aggiornare correttamente vengono mantenute nella tabella tblPrincipalMeta e vengono fornite un'altra possibilità di essere aggiornate.</p></td>
+<td><p>Contiene le affiliazioni che non è stato possibile aggiornare per qualche motivo, in genere a causa di errori di accesso di Active Directory.</p>
+<p>Questa tabella è esclusivamente per scopi informativi. Il relativo contenuto non viene utilizzato.</p>
+<p>Le entità di cui non è stato possibile aggiornare correttamente le affiliazioni sono contenute nella tabella tblPrincipalMeta e dispongono di un'altra possibilità di aggiornamento.</p></td>
 </tr>
 </tbody>
 </table>
@@ -102,52 +102,52 @@ Lo schema del database della chat persistente è costituito dalle tabelle seguen
 </colgroup>
 <thead>
 <tr class="header">
-<th>Tabella</th>
+<th>tavolo</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="lync-server-2013-tblprincipaltype.md">tblPrincipalType in Lync Server 2013</a></p></td>
-<td><p>Contiene i tipi Principal per categorizzare il contenuto della tabella tblPrincipal. Questa tabella è statica. La configurazione viene configurata durante la creazione di database e non cambia.</p></td>
+<td><p><a href="lync-server-2013-tblprincipaltype.md">PrincipalType in Lync Server 2013</a></p></td>
+<td><p>Include i tipi di entità per classificare il contenuto della tabella tblPrincipal. Questa tabella è statica, viene configurata durante la creazione del database e non è soggetta a modifiche.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="lync-server-2013-tblprincipal.md">tblPrincipal in Lync Server 2013</a></p></td>
-<td><p>Contiene tutte le entità (utenti, cartelle, gruppi e così via). Il server di chat persistente lo gestisce come elenco di piatti eterogenei. Le varie colonne si basano sul tipo di ogni entità.</p>
-<p>La maggior parte di queste entità sono copie memorizzate nella cache degli oggetti archiviati in Active Directory. La creazione della copia memorizzata nella cache nella tabella principale di questi oggetti Active Directory viene definita <em>provisioning</em>.</p>
-<p>Alcune entità vengono create in modo più aggressivo rispetto ad altre e alcuni oggetti Active Directory vengono ignorati complessivamente.</p></td>
+<td><p><a href="lync-server-2013-tblprincipal.md">Tabella tblPrincipal in Lync Server 2013</a></p></td>
+<td><p>Include tutte le entità, ovvero utenti, cartelle, gruppi e così via. Il server Chat persistente lo gestisce come elenco eterogeneo piano. Diverse colonne sono basate sul tipo di ogni entità.</p>
+<p>La maggior parte di queste entità sono copie memorizzate nella cache degli oggetti archiviati in Active Directory. La creazione della copia memorizzata nella cache nella tabella principale di questi oggetti di Active Directory viene indicata come <em>provisioning</em>.</p>
+<p>Alcune entità vengono create in modo più aggressivo rispetto ad altre e alcuni oggetti di Active Directory vengono ignorati del tutto.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tblprincipalaffiliations.md">tblPrincipalAffiliations in Lync Server 2013</a></p></td>
-<td><p>Contiene le affiliazioni principali che descrivono l'appartenenza a gruppi di sicurezza di Active Directory, contenitori di Active Directory e così via.</p></td>
+<td><p>Contiene le affiliazioni principali che descrivono le appartenenze ai gruppi di sicurezza di Active Directory, ai contenitori di Active Directory e così via.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-tblnode.md">tblNode in Lync Server 2013</a></p></td>
-<td><p>Contiene il nodo Category, come gestito nel pannello di controllo di Lync Server.</p></td>
+<td><p>Contiene il nodo della categoria, come gestito nel pannello di controllo di Lync Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tblroletype.md">tblRoleType in Lync Server 2013</a></p></td>
-<td><p>Contiene i tipi di ruolo e i set di autorizzazioni associati. Questa tabella di ricerca è statica.</p></td>
+<td><p>Include i tipi di ruolo e gli insiemi di autorizzazioni associati. Questa tabella di ricerca è statica.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-tblscopeprincipal.md">tblScopePrincipal in Lync Server 2013</a></p></td>
-<td><p>Contiene gli ambiti assegnati ai nodi.</p></td>
+<td><p>Include gli ambiti assegnati ai nodi.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tblprincipalrole.md">tblPrincipalRole in Lync Server 2013</a></p></td>
-<td><p>Contiene ruoli assegnati ai nodi.</p></td>
+<td><p>Include i ruoli assegnati ai nodi.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-tblsiopwhitelist.md">tblSiopWhiteList in Lync Server 2013</a></p></td>
-<td><p>Contiene i componenti aggiuntivi registrati che possono essere associati ai nodi.</p></td>
+<td><p>Include i componenti aggiuntivi registrati che possono essere associati ai nodi.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tblenumattribute.md">tblEnumAttribute in Lync Server 2013</a></p></td>
-<td><p>Contiene solo gli attributi di &quot;visibilità&quot; e &quot;comportamento&quot; hardcoded usati nella tabella tblNode.</p></td>
+<td><p>Contiene solo gli attributi di &quot;visibilità&quot; e &quot;comportamento&quot; hardcoded che vengono utilizzati nella tabella tblNode.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="lync-server-2013-tblenumvalue.md">tblEnumValue in Lync Server 2013</a></p></td>
-<td><p>Contiene i valori degli attributi di &quot;visibilità hardcoded "e" di&quot; comportamento usati nella tabella tblNode.</p></td>
+<td><p><a href="lync-server-2013-tblenumvalue.md">Nella in Lync Server 2013</a></p></td>
+<td><p>Contiene i valori degli attributi di &quot;visibilità hardcoded "e" dei&quot; comportamenti che vengono utilizzati nella tabella tblNode.</p></td>
 </tr>
 </tbody>
 </table>
@@ -167,34 +167,34 @@ Lo schema del database della chat persistente è costituito dalle tabelle seguen
 </colgroup>
 <thead>
 <tr class="header">
-<th>Tabella</th>
+<th>tavolo</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tblprincipalinvites.md">tblPrincipalInvites in Lync Server 2013</a></p></td>
-<td><p>Contiene invita per tutti gli utenti con provisioning nel sistema per tutti i nodi con l'invito automatico abilitato.</p></td>
+<td><p>Include inviti per tutti gli utenti di cui è stato eseguito il provisioning nel sistema per tutti i nodi con Auto Invite abilitato.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-tblchat.md">tblChat in Lync Server 2013</a></p></td>
-<td><p>Contiene tutti i messaggi di chat.</p></td>
+<td><p>Include tutti i messaggi di chat.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tbllastinviteid.md">tblLastInviteId in Lync Server 2013</a></p></td>
-<td><p>Contiene l'ultimo ID invite generato (e usato nella tabella tblPrincipalInvites) per ogni utente.</p></td>
+<td><p>Include l'ID dell'ultimo invito generato e usato nella tabella tblPrincipalInvites per ogni utente.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="lync-server-2013-tbllastchatid.md">tblLastChatId in Lync Server 2013</a></p></td>
-<td><p>Contiene l'ultimo ID chat generato (e usato nella tabella tblChat) per ogni utente.</p></td>
+<td><p><a href="lync-server-2013-tbllastchatid.md">LastChatId in Lync Server 2013</a></p></td>
+<td><p>Include l'ID dell'ultima chat generata e usata nella tabella tblChat per ogni utente.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tblpreference.md">tblPreference in Lync Server 2013</a></p></td>
-<td><p>Contiene le preferenze del client utente (usate solo dai client legacy).</p></td>
+<td><p>Include le preferenze client degli utenti (usate solo dai client legacy).</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-tblfiletoken.md">tblFileToken in Lync Server 2013</a></p></td>
-<td><p>Contiene token temporanei per scopi di trasferimento di file. Ogni volta che viene caricato o scaricato un file, il servizio chat persistente genera un token che il client usa per accedere al file Store del servizio Web.</p></td>
+<td><p>Include token temporanei per il trasferimento di file. Ogni volta che un file viene caricato o scaricato, il servizio chat persistente genera un token utilizzato dal client per accedere all'archivio file del servizio Web.</p></td>
 </tr>
 </tbody>
 </table>
@@ -214,30 +214,30 @@ Lo schema del database della chat persistente è costituito dalle tabelle seguen
 </colgroup>
 <thead>
 <tr class="header">
-<th>Tabella</th>
+<th>tavolo</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><a href="lync-server-2013-tblserveridentity.md">tblServerIdentity in Lync Server 2013</a></p></td>
-<td><p>Contiene i server attivi nel pool del server di chat persistente.</p></td>
+<td><p><a href="lync-server-2013-tblserveridentity.md">Tabella tblServerIdentity in Lync Server 2013</a></p></td>
+<td><p>Contiene i server attivi nel pool di server Chat persistente.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-tbladminlock.md">tblAdminLock in Lync Server 2013</a></p></td>
-<td><p>Contiene il blocco dell'amministratore per eseguire alcuni comandi di amministratore. La voce di revisione del sistema nella tabella tblSystemRevision viene incrementata dopo ogni rilascio del blocco.</p></td>
+<td><p>Include il blocco amministratore per l'esecuzione di alcuni comandi dell'amministratore. La voce di revisione di sistema nella tabella tblSystemRevision viene incrementata dopo ogni rilascio del blocco.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tblsystemrevision.md">tblSystemRevision in Lync Server 2013</a></p></td>
-<td><p>Contiene la voce del numero di revisione usata (insieme alla tabella tblAdminLock) per ottenere la coerenza tra più server.</p></td>
+<td><p>Include il numero di revisione usato insieme alla tabella tblAdminLock per garantire la coerenza tra più client.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-tblactivepeers.md">tblActivePeers in Lync Server 2013</a></p></td>
-<td><p>Contiene connessioni peer-to-peer correnti tra servizi di chat persistenti.</p></td>
+<td><p>Contiene le connessioni peer-to-peer correnti tra i servizi di chat persistente.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tblconfig.md">tblConfig in Lync Server 2013</a></p></td>
-<td><p>Contiene la configurazione del server di chat persistente non supportata.</p></td>
+<td><p>Contiene la configurazione non supportata del server Chat persistente.</p></td>
 </tr>
 </tbody>
 </table>

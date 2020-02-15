@@ -12,16 +12,16 @@ ms:contentKeyID: 48184023
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 593dfc97f73398dee5f627da1f534d324242845b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 58853e62b7958d564f01b4616d5439d18217b07f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757720"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034436"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41757720"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-29_
+_**Ultimo argomento modificato:** 2012-09-29_
 
-Questa sezione illustra gli argomenti della pianificazione per la migrazione da Office Communications Server 2007 R2 a Lync Server 2013.
+In questa sezione vengono illustrati gli argomenti di pianificazione per la migrazione da Office Communications Server 2007 R2 a Lync Server 2013.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Migrazione degli utenti](user-migration_1.md)
 
-  - [Migrazione di server di archiviazione e di monitoraggio](migrating-archiving-and-monitoring-servers_1.md)
+  - [Migrazione di server di archiviazione e monitoraggio](migrating-archiving-and-monitoring-servers_1.md)
 
   - [Amministrazione dei server dopo la migrazione](administering-servers-after-migration_1.md)
 
   - [Migrazione di più siti e pool](migrating-multiple-sites-and-pools_1.md)
 
-  - [Migrazione della federazione di XMPP](migrating-xmpp-federation_1.md)
+  - [Migrazione della Federazione XMPP](migrating-xmpp-federation_1.md)
 
 </div>
 

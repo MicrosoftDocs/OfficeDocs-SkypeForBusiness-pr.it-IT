@@ -12,31 +12,31 @@ ms:contentKeyID: 49733758
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c3818ae60cd9ae3e8537bf17bee01508e32dfa26
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 029d9c24a5fb460128c523192c7db682e2122370
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41723406"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030109"
 ---
 # <a name="assign-a-per-user-voice-policy-in-lync-server-2013"></a>Assegnare un criterio vocale per utente in Lync Server 2013
 
  
 
 
-I criteri vocali globali e a livello di sito vengono assegnati automaticamente a tutti gli account utente di Lync Server 2013 abilitati per VoIP aziendale. È anche possibile assegnare criteri vocali a utenti specifici tramite il pannello di controllo di Lync Server 2013 o Lync Server 2013 Management Shell. Usare le procedure descritte in questo argomento per assegnare esplicitamente i criteri per utente agli utenti di Lync Server.
+I criteri vocali globali e a livello di sito vengono assegnati automaticamente a tutti gli account utente di Lync Server 2013 abilitati per VoIP aziendale. È inoltre possibile assegnare criteri vocali a utenti specifici utilizzando il pannello di controllo di Lync Server 2013 o Lync Server 2013 Management Shell. Utilizzare le procedure descritte in questo argomento per assegnare in modo esplicito i criteri per utente agli utenti di Lync Server.
 
-## <a name="to-assign-a-user-specific-voice-policy-using-the-lync-server-control-panel"></a>Per assegnare un criterio vocale specifico dell'utente tramite il pannello di controllo di Lync Server
+## <a name="to-assign-a-user-specific-voice-policy-using-the-lync-server-control-panel"></a>Per assegnare un criterio vocale specifico dell'utente utilizzando il pannello di controllo di Lync Server
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
 3.  Nella barra di spostamento sinistra fare clic su **Utenti** e quindi cercare l'account utente da configurare.
 
-4.  Nella tabella in cui sono elencati i risultati della ricerca fare clic sull'account utente, su **Modifica** e quindi su **Mostra dettagli**.
+4.  Nella tabella in cui sono elencati i risultati di ricerca, fare clic sull'account utente, scegliere **Modifica** e quindi **Mostra dettagli**.
 
-5.  In **modifica utenti di Lync Server** in **criteri vocali**Selezionare il criterio utente che si desidera applicare.
+5.  In **Modifica utente di Lync Server**, in **Criteri vocali**, selezionare i criteri utente da applicare.
     
 
     > [!NOTE]  
@@ -46,27 +46,27 @@ I criteri vocali globali e a livello di sito vengono assegnati automaticamente a
 
 ## <a name="assigning-a-per-user-voice-policy-by-using-windows-powershell-cmdlets"></a>Assegnazione di un criterio vocale per utente tramite i cmdlet di Windows PowerShell
 
-È possibile assegnare criteri vocali per utente tramite Windows PowerShell e il cmdlet **Grant-CsVoicePolicy** . Puoi eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile assegnare criteri vocali per utente tramite Windows PowerShell e il cmdlet **Grant-CsVoicePolicy** . È possibile eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 ## <a name="to-assign-a-per-user-voice-policy-to-a-single-user"></a>Per assegnare un criterio vocale per utente a un singolo utente
 
-  - Con il comando seguente viene assegnato il criterio vocale per utente RedmondVoicePolicy all'utente Ken.
+  - Il comando seguente assegna il criterio vocale per utente RedmondVoicePolicy all'utente Ken Myer.
     
         Grant-CsVoicePolicy -Identity "Ken Myer" -PolicyName "RedmondVoicePolicy"
 
-## <a name="to-assign-a-per-user-voice-policy-to-multiple-users"></a>Per assegnare un criterio vocale per utente a più utenti
+## <a name="to-assign-a-per-user-voice-policy-to-multiple-users"></a>Per assegnare criteri vocali per utente a più utenti
 
-  - Questo comando assegna il criterio vocale per utente FinanceVoicePolicy a tutti gli utenti che hanno account nell'unità organizzativa Finanza in Active Directory. Per altre informazioni sul parametro OU usato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser](https://technet.microsoft.com/en-us/library/gg398125\(v=ocs.15\)) .
+  - Questo comando assegnare il criterio vocale per utente FinanceVoicePolicy a tutti gli utenti con account nell'unità organizzativa Finance in Active Directory. Per ulteriori informazioni sul parametro OU utilizzato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser](https://technet.microsoft.com/library/gg398125\(v=ocs.15\)) .
     
         Get-CsUser -OU "ou=Finance,ou=North America,dc=litwareinc,dc=com" | Grant-CsVoicePolicy -PolicyName "FinanceVoicePolicy"
 
 ## <a name="to-unassign-a-per-user-voice-policy"></a>Per annullare l'assegnazione di un criterio vocale per utente
 
-  - Il comando seguente annulla l'assegnazione di qualsiasi criterio vocale per utente assegnato in precedenza a Ken. Dopo che il criterio per utente non è stato assegnato, Ken è gestito automaticamente tramite il criterio globale oppure, se disponibile, il criterio del sito locale. Un criterio di sito ha la precedenza sui criteri globali.
+  - Il comando seguente annulla l'assegnazione di qualsiasi criterio vocale per utente precedentemente assegnato a Ken Myer. Dopo aver annullato l'assegnazione del criterio vocale per utente, Ken Myer verrà automaticamente gestito mediante i criteri globali oppure, se esistente, i criteri a livello di sito locale. I criteri a livello di sito hanno precedenza sui criteri globali.
     
         Grant-CsVoicePolicy -Identity "Ken Myer" -PolicyName $Null
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Grant-CsVoicePolicy](https://technet.microsoft.com/en-us/library/gg398828\(v=ocs.15\)) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Grant-CsVoicePolicy](https://technet.microsoft.com/library/gg398828\(v=ocs.15\)) .
 
 ## <a name="see-also"></a>Vedere anche
 

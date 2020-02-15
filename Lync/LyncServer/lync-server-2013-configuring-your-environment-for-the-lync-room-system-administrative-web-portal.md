@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Configurazione dell'ambiente per il portale Web di amministrazione di Lync Room System"
+title: "Lync Server 2013: configurazione dell'ambiente per il portale Web amministrativo di Lync room System"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 56737623
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4f0f415cfeca5b798a1e29ac6ebe09105fbf08b4
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5c42b5541fb28646e4c01d9d070b67f6fe103234
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740586"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034998"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-your-lync-server-2013-environment-for-the-lync-room-system-administrative-web-portal"></a>Configurazione dell'ambiente di Lync Server 2013 per il portale Web di amministrazione di Lync Room System
+# <a name="configuring-your-lync-server-2013-environment-for-the-lync-room-system-administrative-web-portal"></a>Configurazione dell'ambiente Lync Server 2013 per il portale Web amministrativo di Lync room System
 
 </div>
 
@@ -35,55 +35,55 @@ ms.locfileid: "41740586"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-05-22_
+_**Ultimo argomento modificato:** 2014-05-22_
 
-Per usare il portale Web amministrativo di Lync room System (LRS), sarà necessario installare o configurare i prerequisiti seguenti.
+Per utilizzare il portale Web amministrativo di Lync room System (LRS), sarà necessario installare o configurare i prerequisiti seguenti.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Se il server è configurato con l'autenticazione Kerberos e NTLM e LRS è in esecuzione in un computer non collegato al dominio, l'autenticazione Kerberos non riesce e l'utente non vedrà lo stato di LRS nel portale amministrativo. Per risolvere il problema, configurare il server con l'autenticazione NTLM o sia con autenticazione NTLM che TLS-DSK (senza Kerberos) oppure aggiungere il computer LRS al dominio.
+> Se il server è configurato con l'autenticazione Kerberos e NTLM e LRS è in esecuzione in un computer che non è stato aggiunto al dominio, l'autenticazione Kerberos avrà esito negativo e l'utente non visualizzerà lo stato di LRS nel portale amministrativo. Per risolvere il problema, configurare il server con l'autenticazione NTLM o sia l'autenticazione NTLM che TLS-DSK (senza Kerberos) oppure aggiungere il computer LRS al dominio.
 
 
 
 </div>
 
-1.  Installare gli aggiornamenti cumulativi di Lync Server 2013:2013 luglio nella topologia di Lync Server.
+1.  Installare gli aggiornamenti cumulativi di Lync Server 2013: luglio 2013 nella topologia di Lync Server.
     
-    Per ottenere l'aggiornamento o vedere cosa è incluso, vedere [aggiornamenti per Lync Server 2013](http://go.microsoft.com/fwlink/p/?linkid=323959).
+    Per ottenere l'aggiornamento o vedere cosa è incluso in esso, vedere [Updates for Lync Server 2013](http://go.microsoft.com/fwlink/p/?linkid=323959).
 
 2.  Creare un utente di Active Directory abilitato per SIP.
     
-    Il portale Web amministrativo di LRS usa queste credenziali per eseguire query su informazioni da Lync Server. Il nome utente consigliato è LRSApp.
+    Il portale Web amministrativo di LRS utilizza queste credenziali per eseguire query sulle informazioni di Lync Server. Il nome utente consigliato è LRSApp.
 
-3.  Creare un gruppo di sicurezza di Active Directory con il nome LRSSupportAdminGroup.
+3.  Creare un gruppo di sicurezza di Active Directory con nome LRSSupportAdminGroup.
     
-    Creare il gruppo con ambito gruppo come globale e tipo di gruppo come sicurezza. Gli utenti abilitati per SIP aggiunti a questo gruppo saranno autorizzati a visualizzare l'elenco delle sale ed eseguire determinati comandi, ad esempio la raccolta di registri.
+    Creare il gruppo con ambito gruppo come globale e come tipo di gruppo come protezione. Gli utenti abilitati per SIP che sono stati aggiunti a questo gruppo saranno autorizzati a visualizzare l'elenco delle sale ed eseguire alcuni comandi, ad esempio la raccolta di registri.
 
-4.  Creare un gruppo di sicurezza di Active Directory con il nome LRSFullAccessAdminGroup.
+4.  Creare un gruppo di sicurezza di Active Directory con nome LRSFullAccessAdminGroup.
     
-    Creare il gruppo con ambito gruppo come globale e tipo di gruppo come sicurezza. gli utenti abilitati per SIP aggiunti a questo gruppo sono autorizzati a usare tutte le funzionalità del portale di amministrazione.
+    Creare il gruppo con ambito gruppo come globale e come tipo di gruppo come protezione. gli utenti abilitati per SIP aggiunti a questo gruppo sono autorizzati a utilizzare tutte le funzionalità del portale di amministrazione.
     
      
     
-    ![Elenco dei gruppi di amministratori con il ruolo gruppo di sicurezza](images/Dn436325.5d432819-a2e2-452c-bc2a-5d4ee79d8c33(OCS.15).png "Elenco dei gruppi di amministratori con il ruolo gruppo di sicurezza")  
+    ![Elenco dei gruppi di amministratori con il ruolo di gruppo di sicurezza](images/Dn436325.5d432819-a2e2-452c-bc2a-5d4ee79d8c33(OCS.15).png "Elenco dei gruppi di amministratori con il ruolo di gruppo di sicurezza")  
     
      
 
-5.  Aggiungi LRSFullAccessAdminGroup come membro di LRSSupportAdminGroup.
+5.  Aggiungere LRSFullAccessAdminGroup come membro di LRSSupportAdminGroup.
     
-    ![Pagina dei membri del gruppo LRSSupportAdminGroup](images/Dn436325.91a4a28a-cacf-4ef6-aac1-915ec41c9648(OCS.15).png "Pagina dei membri del gruppo LRSSupportAdminGroup")  
-    
-     
-
-6.  Creare un utente abilitato per SIP Active Directory con il nome LRSSupport. Aggiungere l'utente a LRSSupportAdminGroup.
-    
-    ![Pagina dei membri del gruppo LRSSupportAdminGroup](images/Dn436325.7638055d-22ac-4909-914d-1966f5623909(OCS.15).png "Pagina dei membri del gruppo LRSSupportAdminGroup")  
+    ![Pagina membri proprietà LRSSupportAdminGroup](images/Dn436325.91a4a28a-cacf-4ef6-aac1-915ec41c9648(OCS.15).png "Pagina membri proprietà LRSSupportAdminGroup")  
     
      
 
-7.  Installare ASP.NET MVC 4 per Visual Studio 2010 SP1 e Visual Web Developer 2010 SP1, disponibile nell'area download Microsoft [http://go.microsoft.com/fwlink/p/?LinkId=323967](http://go.microsoft.com/fwlink/p/?linkid=323967).
+6.  Creare un utente di Active Directory SIP abilitato con nome LRSSupport. Aggiungere l'utente a LRSSupportAdminGroup.
+    
+    ![Pagina membri proprietà LRSSupportAdminGroup](images/Dn436325.7638055d-22ac-4909-914d-1966f5623909(OCS.15).png "Pagina membri proprietà LRSSupportAdminGroup")  
+    
+     
+
+7.  Installare ASP.NET MVC 4 per Visual Studio 2010 SP1 e Visual Web Developer 2010 SP1, disponibile nell'area download Microsoft all'indirizzo [http://go.microsoft.com/fwlink/p/?LinkId=323967](http://go.microsoft.com/fwlink/p/?linkid=323967).
 
 </div>
 

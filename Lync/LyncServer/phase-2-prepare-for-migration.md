@@ -1,5 +1,5 @@
 ---
-title: 'Fase 2: preparare la migrazione'
+title: 'Fase 2: preparazione per la migrazione'
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185920
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 85db7e4aea8405bf1ec3f94e491c7007ae8b51ee
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: febd806e55e8e2d6234818ec45eefb33cc3ef708
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757700"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034326"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="phase-2-prepare-for-migration"></a>Fase 2: preparare la migrazione
+# <a name="phase-2-prepare-for-migration"></a>Fase 2: preparazione per la migrazione
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41757700"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-17_
+_**Ultimo argomento modificato:** 2012-09-17_
 
-Prima di iniziare la migrazione a Lync Server 2013 da Lync Server 2010, seguire i passaggi descritti in questa sezione.
+Prima di iniziare la migrazione a Lync Server 2013 da Lync Server 2010, seguire la procedura descritta in questa sezione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Applicare gli aggiornamenti di Lync Server 2010](apply-lync-server-2010-updates.md)
 

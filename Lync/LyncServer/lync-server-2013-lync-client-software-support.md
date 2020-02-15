@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: supporto del software client Lync'
+title: 'Lync Server 2013: supporto per il software client Lync'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184994
 ms.date: 02/25/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6c17f30b05141e9b47ce09685ff18cd166c195f8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 913a484262d9e1b3a899aeda42c5f23049d8c73c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765517"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030920"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41765517"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-02-25_
+_**Ultimo argomento modificato:** 2016-02-25_
 
-Questa sezione riepiloga il supporto software per Lync 2013 e il componente aggiuntivo riunione online per Lync 2013.
+In questa sezione viene riepilogato il supporto software per Lync 2013 e il componente aggiuntivo per riunioni online per Lync 2013.
 
 <div>
 
 
 > [!NOTE]  
-> Il componente aggiuntivo riunione online per Lync 2013, che supporta la gestione delle riunioni dall'interno del client di messaggistica e collaborazione di Outlook, viene installato automaticamente con Lync 2013.
+> Il componente aggiuntivo per riunioni online per Lync 2013, che supporta la gestione delle riunioni dall'interno del client di messaggistica e collaborazione di Outlook, viene installato automaticamente con Lync 2013.
 
 
 
 </div>
 
-### <a name="software-requirements-for-lync-2013-and-the-online-meeting-add-in-for-lync-2013"></a>Requisiti software per Lync 2013 e il componente aggiuntivo riunione online per Lync 2013
+### <a name="software-requirements-for-lync-2013-and-the-online-meeting-add-in-for-lync-2013"></a>Requisiti software per Lync 2013 e il componente aggiuntivo per riunioni online per Lync 2013
 
 <table>
 <colgroup>
@@ -58,7 +58,7 @@ Questa sezione riepiloga il supporto software per Lync 2013 e il componente aggi
 </colgroup>
 <thead>
 <tr class="header">
-<th>Componente di sistema</th>
+<th>Componente del sistema</th>
 <th>Requisito minimo</th>
 </tr>
 </thead>
@@ -73,42 +73,42 @@ Questa sezione riepiloga il supporto software per Lync 2013 e il componente aggi
 <div>
 
 > [!NOTE]  
-> Lync 2013 e il componente aggiuntivo riunione online per Lync 2013 non sono supportati in Windows Vista o Windows XP (qualsiasi versione).
+> Lync 2013 e il componente aggiuntivo per riunioni online per Lync 2013 non sono supportati in Windows Vista o Windows XP (qualsiasi versione).
 
 
 </div></td>
 </tr>
 <tr class="even">
 <td><p>Installazione e aggiornamenti</p></td>
-<td><p>Diritti di amministratore e autorizzazioni</p></td>
+<td><p>Diritti e autorizzazioni di amministratore</p></td>
 </tr>
 <tr class="odd">
 <td><p>Browser</p></td>
 <td><p>Internet Explorer 11 Internet browser</p>
-<p>Web browser Internet Explorer 10</p>
-<p>Internet Explorer 9 Internet browser</p>
-<p>Web browser Internet Explorer 8</p>
-<p>Browser Internet di Internet Explorer 7</p>
-<p>Web browser Mozilla Firefox</p>
+<p>Internet Explorer 10 (browser Internet)</p>
+<p>Internet Explorer 9 (browser Internet)</p>
+<p>Internet Explorer 8 browser Internet</p>
+<p>Internet Explorer 7 Internet browser</p>
+<p>Mozilla Firefox</p>
 <div>
 
 > [!NOTE]  
-> Se si usa Lync con Microsoft Exchange Online e l'organizzazione ha distribuito un proxy HTTP di autenticazione, è necessario Internet Explorer 9 o Internet Explorer 8.
+> Se si utilizza Lync con Microsoft Exchange Online e l'organizzazione ha distribuito un proxy HTTP di autenticazione, è necessario Internet Explorer 9 o Internet Explorer 8.
 
 
 </div></td>
 </tr>
 <tr class="even">
 <td><p>Integrazione di Microsoft Office</p></td>
-<td><p>Per il set completo di caratteristiche di integrazione:</p>
+<td><p>Per il set completo di funzionalità di integrazione:</p>
 <ul>
 <li><p>Client di messaggistica e collaborazione di Outlook 2013</p></li>
 <li><p>Client di messaggistica e collaborazione di Outlook 2010</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Integrazione con Microsoft Exchange</p></td>
-<td><p>Per il set completo di caratteristiche di integrazione:</p>
+<td><p>Integrazione di Microsoft Exchange</p></td>
+<td><p>Per il set completo di funzionalità di integrazione:</p>
 <ul>
 <li><p>Microsoft Exchange Server 2013</p></li>
 <li><p>Microsoft Exchange Server 2010</p></li>
@@ -122,11 +122,11 @@ Questa sezione riepiloga il supporto software per Lync 2013 e il componente aggi
 
 ## <a name="macintosh-operating-systems"></a>Sistemi operativi Macintosh
 
-Lync 2013 è disponibile solo per Windows. Tuttavia, Lync Server 2013 supporta i client seguenti nei computer che eseguono sistemi operativi Mac OS 10.5.8 o più recenti Service Pack o Release (basato su Intel) (il sistema operativo Mac OS 10,9 non è attualmente supportato). Per informazioni dettagliate sulle caratteristiche supportate, vedere [tabelle di confronto dei client per Lync Server 2013](lync-server-2013-desktop-client-comparison-tables.md).
+Lync 2013 è disponibile solo per Windows. Tuttavia, Lync Server 2013 supporta i client seguenti nei computer che eseguono Mac OS 10.5.8 o più recenti sistemi operativi di Service Pack o di rilascio (basati su Intel) (il sistema operativo Mac OS 10,9 non è attualmente supportato). Per informazioni dettagliate sulle funzionalità supportate, vedere [tabelle di confronto dei client per Lync Server 2013](lync-server-2013-desktop-client-comparison-tables.md).
 
-  - Microsoft Lync per Mac 2011 (vedere "Guida alla distribuzione di Lync per Mac 2011 [http://go.microsoft.com/fwlink/p/?LinkId=268786](http://go.microsoft.com/fwlink/p/?linkid=268786)" at)
+  - Microsoft Lync per Mac 2011 (vedere la guida alla distribuzione di [http://go.microsoft.com/fwlink/p/?LinkId=268786](http://go.microsoft.com/fwlink/p/?linkid=268786)Lync per Mac 2011)
 
-  - Microsoft Communicator per Mac 2011 (vedere "Guida alla distribuzione di Communicator per Mac 2011 [http://go.microsoft.com/fwlink/p/?LinkId=268787](http://go.microsoft.com/fwlink/p/?linkid=268787)" at)
+  - Microsoft Communicator per Mac 2011 (vedere la guida alla [http://go.microsoft.com/fwlink/p/?LinkId=268787](http://go.microsoft.com/fwlink/p/?linkid=268787)distribuzione di Communicator per Mac 2011)
 
 </div>
 
@@ -134,7 +134,7 @@ Lync 2013 è disponibile solo per Windows. Tuttavia, Lync Server 2013 supporta i
 
 ## <a name="lync-web-app-browsers"></a>Browser di Lync Web App
 
-Lync Web App supporta combinazioni specifiche di sistemi operativi e browser. Per informazioni dettagliate, vedere [piattaforme supportate da Lync Web App per Lync Server 2013](lync-server-2013-lync-web-app-supported-platforms.md) nella documentazione relativa alla pianificazione.
+Lync Web App supporta specifiche combinazioni di sistemi operativi e browser. Per informazioni dettagliate, vedere [Lync Web App Supported Platforms for Lync Server 2013](lync-server-2013-lync-web-app-supported-platforms.md) nella documentazione relativa alla pianificazione.
 
 </div>
 
@@ -142,21 +142,21 @@ Lync Web App supporta combinazioni specifiche di sistemi operativi e browser. Pe
 
 ## <a name="microsoft-office-supportability"></a>Supporto di Microsoft Office
 
-I client di Lync Server 2013 supportano l'integrazione con varie versioni di Microsoft Office, come riepilogato in questa sezione.
+I client di Lync Server 2013 supportano l'integrazione con diverse versioni di Microsoft Office, come riepilogato in questa sezione.
 
   - Le funzionalità di integrazione di Lync 2013 sono supportate in Outlook 2013 e Microsoft Outlook 2010.
 
   - Le funzionalità di integrazione di Lync 2013 sono supportate in Microsoft Exchange Server 2013 e Microsoft Exchange Server 2010.
 
-  - Il componente aggiuntivo riunione online per Lync 2013 è supportato con Office 2013 e Microsoft Office 2010.
+  - Il componente aggiuntivo per riunioni online per Lync 2013 è supportato con Office 2013 e Microsoft Office 2010.
 
 </div>
 
 <div>
 
-## <a name="using-mandatory-profiles"></a>Uso dei profili obbligatori
+## <a name="using-mandatory-profiles"></a>Utilizzo dei profili obbligatori
 
-Se gli utenti hanno intenzione di usare le funzionalità di conferenza di Lync 2013, non devono usare i profili obbligatori dei servizi di dominio Active Directory per accedere al client Lync 2013. Poiché i profili obbligatori sono profili utente di sola lettura, le chiavi dell'infrastruttura a chiave pubblica (PKI) necessarie per le conferenze di Lync 2013 non possono essere salvate nel profilo. Per informazioni dettagliate, vedere l'articolo 2552221 della Microsoft Knowledge Base "funzionalità di [http://go.microsoft.com/fwlink/p/?linkid=3052\&kbid=2552221](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2552221)conferenza di Lync 2010 non riesce quando l'utente ha eseguito l'accesso con un profilo utente obbligatorio".
+Se gli utenti stanno progettando di utilizzare le funzionalità di conferenza di Lync 2013, non devono utilizzare profili obbligatori di servizi di dominio Active Directory per accedere al client Lync 2013. Poiché i profili obbligatori sono profili utente di sola lettura, le chiavi dell'infrastruttura a chiave pubblica (PKI) necessarie per Lync 2013 Conferencing non possono essere salvate nel profilo. Per informazioni dettagliate, vedere l'articolo 2552221 della Microsoft Knowledge Base "la funzionalità di conferenza di Lync 2010 ha esito negativo quando l'utente ha eseguito l' [http://go.microsoft.com/fwlink/p/?linkid=3052\&kbid=2552221](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2552221)accesso utilizzando un profilo utente obbligatorio" all'indirizzo.
 
 </div>
 
@@ -166,7 +166,7 @@ Se gli utenti hanno intenzione di usare le funzionalità di conferenza di Lync 2
 
 
 [Supporto per l'hardware client di Lync in Lync Server 2013](lync-server-2013-lync-client-hardware-support.md)  
-[Requisiti per i video client di Lync per Lync Server 2013](lync-server-2013-lync-client-video-requirements.md)  
+[Requisiti video di Lync client per Lync Server 2013](lync-server-2013-lync-client-video-requirements.md)  
 [Client supportati dalle distribuzioni precedenti in Lync Server 2013](lync-server-2013-supported-clients-from-previous-deployments.md)  
   
 

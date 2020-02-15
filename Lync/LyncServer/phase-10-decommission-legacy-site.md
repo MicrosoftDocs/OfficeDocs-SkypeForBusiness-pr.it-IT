@@ -1,5 +1,5 @@
 ---
-title: 'Fase 10: sito legacy decommission'
+title: 'Fase 10: rimuovere il sito legacy'
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185540
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8110d41e5f6436bfdbecc64fe07d514b5d0538ac
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6e46c2977289ae8fec1db26e4eb33dfd6736f838
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757710"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034376"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="phase-10-decommission-legacy-site"></a>Fase 10: sito legacy decommission
+# <a name="phase-10-decommission-legacy-site"></a>Fase 10: rimuovere il sito legacy
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41757710"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-16_
+_**Ultimo argomento modificato:** 2012-10-16_
 
-Gli argomenti seguenti includono indicazioni per lo smantellamento dei pool e la disattivazione e la rimozione di server e pool da una distribuzione legacy di Office Communications Server 2007 R2. Non tutte le procedure elencate in questa sezione sono obbligatorie. Leggere le informazioni in ognuno di questi argomenti per determinare la procedura di disattivazione da usare.
+Negli argomenti seguenti vengono fornite indicazioni per la rimozione delle autorizzazioni dei pool e la disattivazione e eliminazione di server e pool da una distribuzione legacy di Office Communications Server 2007 R2. Non tutte le procedure elencate in questa sezione sono obbligatorie. Leggere le informazioni in ognuno di questi argomenti per determinare quale procedura utilizzare per rimuovere la disponibilità.
 
 <div>
 
 
 > [!WARNING]  
-> Se sono state importate le directory conferenza per le conferenze telefoniche con accesso esterno a Lync Server 2013, è importante eseguire la transizione della proprietà della directory conferenza a Lync Server 2013 prima di iniziare la disattivazione dei pool. Se si rimuove la Commissione da un pool senza la prima transizione della proprietà della directory conferenza, la funzionalità di accesso esterno per tutte le riunioni migrate non funzionerà più. È necessario eseguire il passaggio per la proprietà transizione una sola volta per ogni directory di conferenza nel pool legacy.
+> Se sono state importate le directory conferenze per le conferenze telefoniche con accesso esterno a Lync Server 2013, è importante eseguire la transizione della proprietà della directory conferenze a Lync Server 2013 prima di iniziare a rimuovere le autorizzazioni dei pool. Se si rimuove un pool senza prima trasferire la proprietà delle directory conferenze, la funzionalità di accesso esterno non funzionerà più per tutte le riunioni spostate. È necessario eseguire il passaggio di trasferimento di proprietà una volta per ogni directory conferenze del pool legacy.
 
 
 
@@ -53,7 +53,7 @@ Gli argomenti seguenti includono indicazioni per lo smantellamento dei pool e la
 
 
 > [!IMPORTANT]  
-> Per informazioni su come eseguire la migrazione e l'aggiornamento delle applicazioni Microsoft Unified Communications Managed API (UCMA), prima della disattivazione dell'ambiente legacy, vedere<A href="http://go.microsoft.com/fwlink/p/?linkid=269555">http://go.microsoft.com/fwlink/p/?LinkId=269555</A>
+> Per informazioni su come eseguire la migrazione e l'aggiornamento delle applicazioni Microsoft Unified Communications Managed API (UCMA), prima di rimuovere l'ambiente legacy, vedere<A href="http://go.microsoft.com/fwlink/p/?linkid=269555">http://go.microsoft.com/fwlink/p/?LinkId=269555</A>
 
 
 
@@ -61,13 +61,13 @@ Gli argomenti seguenti includono indicazioni per lo smantellamento dei pool e la
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Trasferire le directory conferenza](move-conference-directories.md)
+  - [Spostare le directory conferenze](move-conference-directories.md)
 
   - [Aggiornare i record SRV DNS](update-dns-srv-records_1.md)
 
-  - [Disattivazione di server e pool](decommissioning-servers-and-pools.md)
+  - [Rimozione di autorizzazioni di server e pool](decommissioning-servers-and-pools.md)
 
   - [Rimuovere BackCompatSite](remove-backcompatsite.md)
 

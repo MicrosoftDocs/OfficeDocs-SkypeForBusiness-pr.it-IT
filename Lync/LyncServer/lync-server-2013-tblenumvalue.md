@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: tblEnumValue'
+title: 'Lync Server 2013: nella'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185040
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2c09c5e911dcd63f50d8b15343075c5b3e05e631
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d182a3689ae38d4117b45d6590bb2ccd08c0a8b7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731476"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42027057"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="tblenumvalue-in-lync-server-2013"></a>tblEnumValue in Lync Server 2013
+# <a name="tblenumvalue-in-lync-server-2013"></a>Nella in Lync Server 2013
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41731476"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-28_
+_**Ultimo argomento modificato:** 2012-06-28_
 
-tblEnumValue è una tabella hardcoded che contiene i valori di visibilità e comportamento degli attributi usati nella tabella Node.
+tblEnumValue è una tabella hardcoded contenente i valori Visibility e Behavior degli attributi utilizzati nella tabella Node.
 
 ### <a name="columns"></a>Colonne
 
@@ -57,12 +57,12 @@ tblEnumValue è una tabella hardcoded che contiene i valori di visibilità e com
 <tbody>
 <tr class="odd">
 <td><p>valueID</p></td>
-<td><p>smallint e non null</p></td>
+<td><p>smallint, not null</p></td>
 <td><p>ID del valore.</p></td>
 </tr>
 <tr class="even">
 <td><p>attributeID</p></td>
-<td><p>smallint e non null</p></td>
+<td><p>smallint, not null</p></td>
 <td><p>ID dell'attributo.</p></td>
 </tr>
 <tr class="odd">
@@ -74,7 +74,7 @@ tblEnumValue è una tabella hardcoded che contiene i valori di visibilità e com
 </table>
 
 
-### <a name="keys"></a>Tasti
+### <a name="keys"></a>Chiavi
 
 <table>
 <colgroup>
@@ -94,13 +94,13 @@ tblEnumValue è una tabella hardcoded che contiene i valori di visibilità e com
 </tr>
 <tr class="even">
 <td><p>attributeID</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblEnumAttribute. attributeID.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblEnumAttribute.attributeID.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="table-values"></a>Valori tabella
+### <a name="table-values"></a>Valori della tabella
 
 <table>
 <colgroup>
@@ -117,28 +117,28 @@ tblEnumValue è una tabella hardcoded che contiene i valori di visibilità e com
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>2</p></td>
-<td><p>1</p></td>
-<td><p>privato</p></td>
+<td><p>2 </p></td>
+<td><p>1 </p></td>
+<td><p>privata</p></td>
 </tr>
 <tr class="even">
-<td><p>3</p></td>
-<td><p>1</p></td>
+<td><p>3 </p></td>
+<td><p>1 </p></td>
 <td><p>ambito</p></td>
 </tr>
 <tr class="odd">
-<td><p>4</p></td>
-<td><p>2</p></td>
+<td><p>4 </p></td>
+<td><p>2 </p></td>
 <td><p>normale</p></td>
 </tr>
 <tr class="even">
-<td><p>5</p></td>
-<td><p>2</p></td>
+<td><p>5 </p></td>
+<td><p>2 </p></td>
 <td><p>Auditorium</p></td>
 </tr>
 <tr class="odd">
-<td><p>6</p></td>
-<td><p>1</p></td>
+<td><p>6 </p></td>
+<td><p>1 </p></td>
 <td><p>aprire</p></td>
 </tr>
 </tbody>

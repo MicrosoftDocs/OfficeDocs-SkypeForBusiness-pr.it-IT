@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Supporto per l'hardware client di Lync"
+title: "Lync Server 2013: supporto per l'hardware client di Lync"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49733734
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 907e3244e7c9410d6b6c8f7d61517a7ef5055c6c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4c51adcb773769abc4dfc553d8dc5dd72a0df152
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765527"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030930"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41765527"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-12-14_
+_**Ultimo argomento modificato:** 2012-12-14_
 
-Questa sezione descrive l'hardware consigliato per Lync 2013 e il componente aggiuntivo riunione online per Lync 2013.
+In questa sezione viene descritto l'hardware consigliato per Lync 2013 e il componente aggiuntivo per riunioni online per Lync 2013.
 
-### <a name="recommended-hardware-for-lync-2013-and-the-online-meeting-add-in-for-lync-2013"></a>Hardware consigliato per Lync 2013 e il componente aggiuntivo riunione online per Lync 2013
+### <a name="recommended-hardware-for-lync-2013-and-the-online-meeting-add-in-for-lync-2013"></a>Hardware consigliato per Lync 2013 e il componente aggiuntivo per riunioni online per Lync 2013
 
 <table>
 <colgroup>
@@ -48,7 +48,7 @@ Questa sezione descrive l'hardware consigliato per Lync 2013 e il componente agg
 </colgroup>
 <thead>
 <tr class="header">
-<th>Componente di sistema</th>
+<th>Componente del sistema</th>
 <th>Requisito minimo</th>
 </tr>
 </thead>
@@ -59,27 +59,27 @@ Questa sezione descrive l'hardware consigliato per Lync 2013 e il componente agg
 </tr>
 <tr class="even">
 <td><p>Memoria</p></td>
-<td><p>2 gigabyte (GB) di RAM</p></td>
+<td><p>2 gigabyte (GB) di memoria RAM</p></td>
 </tr>
 <tr class="odd">
 <td><p>Dati e voce</p></td>
-<td><p>Processore minimo di 1,6 gigahertz (GHz) o più veloce. È consigliabile 2,0 gigahertz (32 bit o 64 bit).</p></td>
+<td><p>Minimo processore 1,6 gigahertz (GHz) o superiore. Consigliati 2.0 gigahertz (32 bit o 64 bit).</p></td>
 </tr>
 <tr class="even">
 <td><p>Video</p></td>
-<td><p>Vedere <a href="lync-server-2013-lync-client-video-requirements.md">requisiti per i video client di Lync per Lync Server 2013</a></p></td>
+<td><p>Vedere <a href="lync-server-2013-lync-client-video-requirements.md">i requisiti video di Lync client per Lync Server 2013</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Risoluzione dello schermo</p></td>
-<td><p>1024x768 obbligatorio</p></td>
+<td><p>1024 x 768 (obbligatoria)</p></td>
 </tr>
 <tr class="even">
 <td><p>Hardware grafico</p></td>
 <td><ul>
-<li><p>Supporto per l'interfaccia di programmazione delle applicazioni Microsoft DirectX 9</p></li>
-<li><p>128 megabyte (MB) di memoria grafica (minima). È consigliabile 256 MB di memoria grafica.</p></li>
-<li><p>Driver modello driver di Windows Display</p></li>
-<li><p>Pixel shader 2,0 nell'hardware</p></li>
+<li><p>Supporto per l'interfaccia API Microsoft DirectX 9</p></li>
+<li><p>128 megabyte (MB) di memoria video (minimo). Consigliati 256 MB di memoria video.</p></li>
+<li><p>Driver Windows Display Driver Model</p></li>
+<li><p>Pixel Shader 2.0 nell'hardware</p></li>
 <li><p>32 bit per pixel</p></li>
 </ul></td>
 </tr>
@@ -87,17 +87,17 @@ Questa sezione descrive l'hardware consigliato per Lync 2013 e il componente agg
 <td><p>Telefonia</p></td>
 <td><p>Microfono e altoparlanti, auricolare con microfono o dispositivi equivalenti. Dispositivi consigliati:</p>
 <ul>
-<li><p>Telefoni con il logo "ottimizzato per Microsoft Lync" (vedere telefoni e dispositivi qualificati per Microsoft Lync <a href="http://go.microsoft.com/fwlink/p/?linkid=208938">http://go.microsoft.com/fwlink/p/?LinkID=208938</a> per un elenco)</p></li>
+<li><p>Telefoni con il logo "Optimized for Microsoft Lync" (vedere telefoni e dispositivi qualificati per Microsoft Lync <a href="http://go.microsoft.com/fwlink/p/?linkid=208938">http://go.microsoft.com/fwlink/p/?LinkID=208938</a> all'indirizzo per un elenco)</p></li>
 <li><p>Telefoni che eseguono Lync Phone Edition</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p>Origine video</p></td>
-<td><p>Videocamera USB 2,0 o dispositivo Polycom CX5000 HD (dispositivo RoundTable)</p></td>
+<td><p>Dispositivo videocamera USB 2,0 o Polycom CX5000 HD (dispositivo RoundTable)</p></td>
 </tr>
 <tr class="odd">
 <td><p>Requisiti di larghezza di banda</p></td>
-<td><p>Vedere <a href="lync-server-2013-network-bandwidth-requirements-for-media-traffic.md">requisiti di larghezza di banda di rete per il traffico multimediale in Lync Server 2013</a></p></td>
+<td><p>Visualizzare <a href="lync-server-2013-network-bandwidth-requirements-for-media-traffic.md">i requisiti di larghezza di banda di rete per il traffico multimediale in Lync Server 2013</a></p></td>
 </tr>
 </tbody>
 </table>

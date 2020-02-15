@@ -1,5 +1,5 @@
 ---
-title: Verificare che tutti gli oggetti contatto di messaggistica unificata di Exchange vengano rimossi dal pool legacy
+title: Verificare che tutti gli oggetti contatto della messaggistica unificata di Exchange siano stati rimossi dal pool legacy
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733664
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0e49aa2fdef3731a34de05e04b8195cb8aa32cd7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 79183039cedc058d479d52fa80ce09a70ffd73b3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730846"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036304"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="verify-that-all-exchange-um-contact-objects-are-removed-from-the-legacy-pool"></a>Verificare che tutti gli oggetti contatto di messaggistica unificata di Exchange vengano rimossi dal pool legacy
+# <a name="verify-that-all-exchange-um-contact-objects-are-removed-from-the-legacy-pool"></a>Verificare che tutti gli oggetti contatto della messaggistica unificata di Exchange siano stati rimossi dal pool legacy
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41730846"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-26_
+_**Ultimo argomento modificato:** 2012-09-26_
 
-Puoi usare lo strumento **OCSUmUtil** o il cmdlet **Get-CsExUmContact** per verificare che gli oggetti contatto di messaggistica unificata di Exchange siano stati rimossi dal pool legacy di Office Communications Server 2007 R2. **OCSUmUtil** si trova nella cartella seguente:
+Utilizzare lo strumento **OCSUmUtil** o il cmdlet **Get-CsExUmContact** per verificare che gli oggetti contatto di messaggistica unificata di Exchange siano stati rimossi dal pool di Office Communications Server 2007 R2 legacy. **OCSUmUtil** è contenuto nella cartella seguente:
 
-\\% Programmi% file\\comuni Lync Server 2013\\supporta\\OcsUmUtil. exe
+\\% Programmi%\\file comuni Lync Server 2013\\supporto\\di OcsUmUtil. exe
 
-**OCSUmUtil** deve essere eseguito da un account utente che include:
+Lo strumento **OCSUmUtil** deve essere eseguito da un account utente:
 
-  - Appartenenza al gruppo RTCUniversalServerAdmins e RTCUniversalUserAdmins (che include i diritti per la lettura delle impostazioni della messaggistica unificata di Exchange Server)
+  - Membro del gruppo RTCUniversalServerAdmins e del gruppo RTCUniversalUserAdmins (include i diritti di lettura delle impostazioni di messaggistica unificata di Exchange Server)
 
-  - Diritti di dominio per creare oggetti contatto nel contenitore dell'unità organizzativa specificata
+  - Con diritti a livello di dominio per creare oggetti contatto nel contenitore di unità organizzative specificato
 
-Per informazioni dettagliate sull'uso del cmdlet **Get-CsExUmContact** , vedere [Get-CsExUmContact](https://docs.microsoft.com/powershell/module/skype/Get-CsExUmContact) nella documentazione di Lync Server Management Shell.
+Per informazioni dettagliate sull'utilizzo del cmdlet **Get-CsExUmContact** , vedere [Get-CsExUmContact](https://docs.microsoft.com/powershell/module/skype/Get-CsExUmContact) nella documentazione di Lync Server Management Shell.
 
 </div>
 

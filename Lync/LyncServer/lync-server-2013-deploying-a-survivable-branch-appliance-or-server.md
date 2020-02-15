@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Distribuzione di Survivable Branch Appliance o Survivable Branch Server'
+title: 'Lync Server 2013: distribuzione di un Survivable Branch Appliance o server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185643
 ms.date: 12/11/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ca6fae79854356951701eaf6040fb436e787acd2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 445df692041e24f8a4e134836ea9f6a63561a2ca
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729586"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034758"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deploying-a-survivable-branch-appliance-or-server-with-lync-server-2013"></a>Distribuzione di Survivable Branch Appliance o Survivable Branch Server con Lync Server 2013
+# <a name="deploying-a-survivable-branch-appliance-or-server-with-lync-server-2013"></a>Distribuzione di un Survivable Branch Appliance o server con Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41729586"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-12-10_
+_**Ultimo argomento modificato:** 2014-12-10_
 
-Resiliente Enterprise Voice si riferisce alla resilienza del sito di succursale, ovvero la possibilità di specificare un servizio VoIP aziendale continuo per la succursale degli utenti del sito nel caso in cui il collegamento al sito centrale diventi non disponibile.
+Resiliente Enterprise Voice si riferisce alla resilienza dei siti di succursale, ovvero la possibilità di fornire un servizio di VoIP aziendale continuo per la succursale degli utenti del sito nel caso in cui il collegamento al sito centrale non diventi disponibile.
 
-Per i siti di piccole e medie dimensioni (siti di succursale con utenti da 25 a 1.000), è consigliabile distribuire un Survivable Branch Appliance, che terminerà le chiamate PSTN (Public Switched Telephone Network) tramite il gateway PSTN incorporato o un trunk SIP a un telefono provider di servizi. Un Survivable Branch Appliance è un dispositivo di terze parti che include un server blade che gestisce il sistema operativo Windows Server 2008 R2, il registrar di Lync Server 2013, il software Mediation Server e un gateway PSTN, tutto in uno chassis di un singolo dispositivo.
+Per i siti di succursale di piccole e medie dimensioni (siti di succursale con utenti da 25 a 1.000), è consigliabile distribuire un Survivable Branch Appliance, che consente di terminare le chiamate PSTN (Public Switched Telephone Network) tramite il gateway PSTN incorporato o un trunk SIP a un telefono provider di servizi. Un Survivable Branch Appliance è un dispositivo di terze parti che include un server blade che esegue il sistema operativo Windows Server 2008 R2, il servizio di registrazione di Lync Server 2013, il software Mediation Server e un gateway PSTN, tutto in un singolo chassis di appliance.
 
-Per i siti di succursale con 1.000 per gli utenti di 5.000 e nessuna WAN resiliente, è consigliabile un server di succursale superstite connesso a un gateway PSTN o a un trunk SIP a un provider di servizi telefonici. Un Survivable Branch Server è un computer basato su Windows Server in cui è installato il software registrar e Mediation Server.
+Per i siti di succursale con 1.000 a 5.000 utenti e nessuna WAN resiliente, è consigliabile un Survivable Branch Server connesso a un gateway PSTN o a un trunk SIP a un provider di servizi di telefonia. Survivable Branch Server è un computer basato su Windows Server in cui è installato il software di registrazione e Mediation Server.
 
 <div>
 
 
 > [!NOTE]  
-> Per i siti di succursale con più di 5.000 utenti e amministratori di Lync Server dedicati, è consigliabile una distribuzione completa di Lync Server 2013, separata da quella del sito centrale.<BR>Per informazioni dettagliate sulla scelta della soluzione di resilienza ottimale per i siti delle succursali dell'organizzazione, inclusi prerequisiti e considerazioni sulla pianificazione, vedere requisiti di resilienza dei siti secondari <A href="lync-server-2013-branch-site-resiliency-requirements.md">per Lync Server 2013</A> nella documentazione relativa alla pianificazione.
+> Per i siti di succursale con più di 5.000 utenti e amministratori dedicati di Lync Server, è consigliabile disporre di una distribuzione completa di Lync Server 2013, separata da quella del sito centrale.<BR>Per informazioni dettagliate sulla scelta della soluzione di resilienza ottimale per i siti di succursale nell'organizzazione, inclusi i prerequisiti e le considerazioni relative alla pianificazione, vedere <A href="lync-server-2013-branch-site-resiliency-requirements.md">requisiti di resilienza dei siti di succursale per Lync Server 2013</A> nella documentazione relativa alla pianificazione.
 
 
 
@@ -57,7 +57,7 @@ Per i siti di succursale con 1.000 per gli utenti di 5.000 e nessuna WAN resilie
 
 
 > [!NOTE]  
-> Gli utenti ospitati in un dispositivo Survivable Branch di Lync Server non riescono a creare nuove chat room o a visualizzare la scheda della sala per le camere esistenti.
+> Gli utenti ospitati in un Survivable Branch Appliance di Lync Server non sono in grado di creare nuove chat room o di visualizzare la scheda sala per le sale esistenti.
 
 
 
@@ -65,17 +65,17 @@ Per i siti di succursale con 1.000 per gli utenti di 5.000 e nessuna WAN resilie
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Distribuzione di Survivable Branch Appliance o Survivable Branch Server con Lync Server 2013 - Attività presso il sito centrale](lync-server-2013-deploying-a-survivable-branch-appliance-or-server-central-site-tasks.md)
+  - [Distribuzione di un Survivable Branch Appliance o server con Lync Server 2013-attività del sito centrale](lync-server-2013-deploying-a-survivable-branch-appliance-or-server-central-site-tasks.md)
 
-  - [Distribuire un Survivable Branch Appliance o un Survivable Branch Server con Lync Server 2013 - Attività presso il sito di succursale](lync-server-2013-deploy-a-survivable-branch-appliance-or-server-branch-site-task.md)
+  - [Distribuire un Survivable Branch Appliance o server con Lync Server 2013-Branch site Task](lync-server-2013-deploy-a-survivable-branch-appliance-or-server-branch-site-task.md)
 
   - [Configurazione degli utenti per la resilienza dei siti di succursale in Lync Server 2013](lync-server-2013-configuring-users-for-branch-site-resiliency.md)
 
-  - [Ospitare utenti in Survivable Branch Appliance o Survivable Branch Server in Lync Server 2013](lync-server-2013-home-users-on-a-survivable-branch-appliance-or-server.md)
+  - [Utenti domestici in un Survivable Branch Appliance o server in Lync Server 2013](lync-server-2013-home-users-on-a-survivable-branch-appliance-or-server.md)
 
-  - [Appendici: Survivable Branch Appliance e Survivable Branch Server in Lync Server 2013](lync-server-2013-appendices-survivable-branch-appliances-and-servers.md)
+  - [Appendici: Survivable Branch Appliance e server in Lync Server 2013](lync-server-2013-appendices-survivable-branch-appliances-and-servers.md)
 
 </div>
 

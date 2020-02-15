@@ -12,16 +12,16 @@ ms:contentKeyID: 48185680
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8df31be5f0ede7217c8b6ed1539bfddea50a7280
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 59d9cb3b69ec1df047e1c98f588774e48d25f992
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747676"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034748"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41747676"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2010-11-09_
+_**Ultimo argomento modificato:** 2010-11-09_
 
-La tabella Pools è una tabella di supporto in cui vengono archiviate informazioni sul pool diverso. Ogni record nella tabella rappresenta un pool.
+La tabella Pools è una tabella di supporto in cui vengono archiviate le informazioni relative al pool diverso. Ogni record della tabella rappresenta un pool.
 
 
 <table>
@@ -60,13 +60,13 @@ La tabella Pools è una tabella di supporto in cui vengono archiviate informazio
 <td><p><strong>PoolId</strong></p></td>
 <td><p>int</p></td>
 <td><p>Principale</p></td>
-<td><p>Numero univoco che identifica questo pool.</p></td>
+<td><p>Numero univoco che identifica il pool.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>PoolFQDN</strong></p></td>
 <td><p>nvarchar (256)</p></td>
 <td><p> </p></td>
-<td><p>FQDN del pool.</p></td>
+<td><p>Nome di dominio completo del pool.</p></td>
 </tr>
 </tbody>
 </table>

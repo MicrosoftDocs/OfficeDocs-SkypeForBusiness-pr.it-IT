@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Failover di un database con mirroring'
+title: 'Lync Server 2013: failover di un database con mirroring'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184450
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 822a7a2fa13ce444bbaf590ee0d8ba2144debcc7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a5be1bfa3a2c9cfac24529de65d91d7b58f13842
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756150"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035008"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,39 +35,39 @@ ms.locfileid: "41756150"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-03-14_
+_**Ultimo argomento modificato:** 2014-03-14_
 
-Se il database back-end è stato configurato per usare il mirroring sincronizzato con un testimone, il failover è automatico. Se è stato configurato il mirroring sincronizzato senza un testimone, è possibile usare le procedure seguenti per eseguire il failover e il failback del database. Puoi anche usare queste procedure per eseguire manualmente il failover e il failback dei database anche se hai configurato un testimone.
+Se è stato configurato il database back-end per l'utilizzo del mirroring sincronizzato con un'istanza di controllo, il failover è automatico. Se il mirroring sincronizzato è stato configurato senza istanza di controllo, è possibile utilizzare le procedure seguenti per il failover e failback del database. Queste procedure sono valide inoltre per eseguire il failover e failback manuale dei database anche quando è stata configurata un'istanza di controllo.
 
 <div>
 
 ## <a name="to-fail-over-your-back-end-database"></a>Per eseguire il failover del database back-end
 
-1.  Prima di eseguire il failback, determinare quale database back-end è l'entità e quale mirror digitando il cmdlet seguente:
+1.  Prima di eseguire il failover, determinare quale database back-end è quello principale, e quale è il mirror, utilizzando il seguente cmdlet:
     
         Get-CsDatabaseMirrorState -PoolFqdn <poolFQDN> -DatabaseType User
 
-2.  Se l'archivio di gestione centrale è ospitato in questo pool, digitare il cmdlet seguente per determinare quale è il principale e quale mirror per l'archivio di gestione centrale:
+2.  Se l'archivio di gestione centrale è ospitato in questo pool, digitare il seguente cmdlet per determinare qual è il principale e che è il mirror dell'archivio di gestione centrale:
     
         Get-CsDatabaseMirrorState -PoolFqdn <poolFQDN> -DatabaseType CentralMgmt
 
 3.  Eseguire il failover del database utente:
     
-      - Se il principale non è riuscito e si esegue il failover verso il mirror, digitare:
+      - Se il database primario non ha avuto esito positivo e si esegue il failover del mirror, digitare:
         
             Invoke-CsDatabaseFailover -PoolFqdn <poolFQDN> -DatabaseType User -NewPrincipal mirror -Verbose
     
-      - Se il mirror non è riuscito e non si riesce a eseguire l'operazione principale, digitare:
+      - Se il mirror non ha avuto esito positivo e si esegue il failover del database primario, digitare:
         
             Invoke-CsDatabaseFailover -PoolFqdn <poolFQDN> -DatabaseType User -NewPrincipal primary -Verbose
 
-4.  Se il pool ospita il server di gestione centrale, eseguire il failover di Central Management store.
+4.  Se il pool ospita il server di gestione centrale, eseguire il failover dell'archivio di gestione centrale.
     
-      - Se il principale non è riuscito e si esegue il failover verso il mirror, digitare:
+      - Se il database primario non ha avuto esito positivo e si esegue il failover del mirror, digitare:
         
             Invoke-CsDatabaseFailover -PoolFqdn <poolFQDN> -DatabaseType CentralMgmt -NewPrincipal mirror -Verbose
     
-      - Se il mirror non è riuscito e non si riesce a eseguire l'operazione principale, digitare:
+      - Se il mirror non ha avuto esito positivo e si esegue il failover del database primario, digitare:
         
             Invoke-CsDatabaseFailover -PoolFqdn <poolFQDN> -DatabaseType CentralMgmt -NewPrincipal primary -Verbose
 

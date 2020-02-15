@@ -12,16 +12,16 @@ ms:contentKeyID: 48183296
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 86e71f87c20064e542aa6a8db1d9b38048c5f736
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 811134697ea04f1dab3637e648ff89455fca07d3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731656"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029747"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41731656"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2010-11-08_
+_**Ultimo argomento modificato:** 2010-11-08_
 
-Per completare correttamente questa procedura, è necessario avere effettuato l'accesso come utente membro del gruppo RTCUniversalServerAdmins.
+Per eseguire correttamente questa procedura, è necessario essere connessi come utenti membri del gruppo RTCUniversalServerAdmins.
 
-In un sito i server front-end, i server Standard Edition e gli amministratori possono usare un account di autenticazione Kerberos per l'autenticazione delle richieste al servizio servizi Web. Questa procedura consente di individuare ogni server che utilizza servizi Web in un sito a cui è stato assegnato un account Kerberos e di aggiornare le impostazioni di configurazione di Internet Information Services (IIS) per l'uso dell'account Kerberos. Per informazioni dettagliate, vedere [impostare la password di un account di autenticazione Kerberos in un server in Lync server 2013](lync-server-2013-set-a-kerberos-authentication-account-password-on-a-server.md).
+In un sito, i server front end, i server Standard Edition e gli amministratori possono utilizzare un account di autenticazione Kerberos allo scopo di autenticare le richieste al servizio servizi Web. Questa procedura consente di individuare ogni server che esegue i servizi Web in un sito a cui è stato assegnato un account Kerberos e di aggiornare le impostazioni di configurazione di Internet Information Services (IIS) per l'utilizzo dell'account Kerberos. Per ulteriori informazioni, vedere [impostare la password di un account di autenticazione Kerberos in un server di Lync server 2013](lync-server-2013-set-a-kerberos-authentication-account-password-on-a-server.md).
 
 <div>
 
 ## <a name="to-set-and-configure-a-kerberos-authentication-account-password"></a>Per impostare e configurare una password per l'account di autenticazione Kerberos
 
-1.  Accedere a un computer di origine, ad esempio fe01.contoso.com, come membro del gruppo RTCUniversalServerAdmins.
+1.  Eseguire l'accesso a un computer di origine, ad esempio fe01.contoso.com, come membri del gruppo RTCUniversalServerAdmins.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Nella riga di comando di Lync Server Management Shell eseguire i due comandi seguenti:
+3.  Dalla riga di comando di Lync Server Management Shell, eseguire i due comandi seguenti:
     
         Set-CsKerberosAccountPassword -FromComputer SourceComputer -ToComputer DestinationComputer
     
@@ -61,7 +61,7 @@ In un sito i server front-end, i server Standard Edition e gli amministratori po
     
 
     > [!IMPORTANT]
-    > Il nome del computer di origine e del computer di destinazione deve essere un nome di dominio completo (FQDN) del server. Non è possibile usare l'FQDN del pool a meno che il nome del pool non sia uguale al nome del computer in uso come computer di origine o di destinazione.
+    > Il nome del computer di origine e del computer di destinazione deve essere un nome di dominio completo (FQDN) del server. Non è possibile utilizzare l'FQDN del pool, a meno che il nome del pool non corrisponda al nome del computer utilizzato come origine o destinazione.
 
     
     </div>

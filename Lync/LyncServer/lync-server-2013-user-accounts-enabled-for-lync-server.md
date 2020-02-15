@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: account utente abilitato per Lync Server'
+title: 'Lync Server 2013: account utente abilitati per Lync Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184651
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 613d6350fcb405b1ae8beef78c3ee8c8a64a084c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6d51f72f586ab6d5b5094c61ae09d8ac316350b7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744656"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42033986"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="user-accounts-enabled-for-lync-server-2013"></a>Account utente abilitato per Lync Server 2013
+# <a name="user-accounts-enabled-for-lync-server-2013"></a>Account utente abilitati per Lync Server 2013
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41744656"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-04-18_
+_**Ultimo argomento modificato:** 2014-04-18_
 
-Gli argomenti di questa sezione includono procedure dettagliate per la configurazione delle impostazioni utente che è possibile eseguire tramite il pannello di controllo di Lync Server 2013.
+Negli argomenti di questa sezione vengono fornite procedure dettagliate per la configurazione delle impostazioni utente che è possibile eseguire utilizzando il pannello di controllo di Lync Server 2013.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Non è possibile usare il pannello di controllo di Lync Server per gestire gli utenti membri del gruppo Domain Admins di Active Directory. Per gli utenti di Domain Admins, puoi usare solo il pannello di controllo di Lync Server per eseguire operazioni di ricerca di sola lettura. Per eseguire operazioni di scrittura sugli utenti di Domain Admins, ad esempio abilitare o disabilitare il pannello di controllo di Lync Server, modificare le assegnazioni di pool o criteri, le impostazioni di telefonia, l'indirizzo SIP, è necessario usare i cmdlet di Windows PowerShell durante l'accesso come utente di Domain Admins. Per informazioni dettagliate sull'uso dei cmdlet di Windows PowerShell per gestire gli utenti, vedere <A href="lync-server-2013-lync-server-management-shell.md">Lync Server 2013 Management Shell</A>.
+> Non è possibile utilizzare il pannello di controllo di Lync Server per gestire gli utenti membri del gruppo Domain Admins di Active Directory. Per gli utenti di Domain Admins, è possibile utilizzare solo il pannello di controllo di Lync Server per eseguire le operazioni di ricerca di sola lettura. Per eseguire operazioni di scrittura sugli utenti degli amministratori di dominio (ad esempio, abilitare o disabilitare il pannello di controllo di Lync Server, modificare le assegnazioni del pool o dei criteri, le impostazioni di telefonia, l'indirizzo SIP), è necessario utilizzare i cmdlet di Windows PowerShell durante l'accesso come utente Domain Admins. Per informazioni dettagliate sull'utilizzo dei cmdlet di Windows PowerShell per la gestione degli utenti, vedere <A href="lync-server-2013-lync-server-management-shell.md">Lync Server 2013 Management Shell</A>.
 
 
 
 </div>
 
-Quando si esegue un'attività amministrativa di Lync Server 2013 che include la ricerca di un utente o il filtro dei risultati della ricerca degli utenti, esistono alcune proprietà utente che esistono come attributi in servizi di dominio Active Directory, ma non vengono replicate nel catalogo globale fino alla distribuzione di Microsoft Exchange Server. Microsoft Exchange, non Lync Server, contrassegna gli attributi seguenti per la replica nel catalogo globale al momento dell'installazione:
+Quando si esegue qualsiasi attività amministrativa di Lync Server 2013 che implica la ricerca di un utente o il filtro dei risultati di ricerca degli utenti, esistono proprietà utente che esistono come attributi in servizi di dominio Active Directory, ma non vengono replicate nel catalogo globale. fino alla distribuzione di Microsoft Exchange Server. Microsoft Exchange, non Lync Server, contrassegna gli attributi seguenti per la replica nel catalogo globale al momento dell'installazione:
 
 
 <table>
@@ -68,15 +68,15 @@ Quando si esegue un'attività amministrativa di Lync Server 2013 che include la 
 <tbody>
 <tr class="odd">
 <td><p>Iniziali</p></td>
-<td><p>Indirizzo di strada</p>
-<p>Paese/area geografica</p>
-<p>Cercapersone</p>
+<td><p>Indirizzo</p>
+<p>Paese</p>
+<p>Del cercapersone</p>
 <p>Fax</p>
-<p>Dispositivi mobili</p></td>
+<p>Cellulare</p></td>
 <td><p>Titolo</p>
-<p>Società</p>
-<p>Dipartimento</p>
-<p>Office</p></td>
+<p>Company</p>
+<p>Reparto</p>
+<p>Ufficio</p></td>
 </tr>
 </tbody>
 </table>
@@ -84,17 +84,17 @@ Quando si esegue un'attività amministrativa di Lync Server 2013 che include la 
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Visualizzazione di informazioni sugli account utente abilitati per Lync Server 2013](lync-server-2013-viewing-information-about-user-accounts-enabled-for-lync-server.md)
+  - [Visualizzazione delle informazioni sugli account utente abilitati per Lync Server 2013](lync-server-2013-viewing-information-about-user-accounts-enabled-for-lync-server.md)
 
   - [Abilitazione e disabilitazione degli utenti per Lync Server 2013](lync-server-2013-enabling-and-disabling-users-for-lync-server.md)
 
   - [Gestione di VoIP aziendale per gli utenti in Lync Server 2013](lync-server-2013-managing-enterprise-voice-for-users.md)
 
-  - [Modifica delle proprietà dell'account utente in Lync Server 2013](lync-server-2013-modifying-user-account-properties.md)
+  - [Modifica delle proprietà degli account utente in Lync Server 2013](lync-server-2013-modifying-user-account-properties.md)
 
-  - [Gestire i criteri di accesso esterno per l'organizzazione in Lync Server 2013](lync-server-2013-manage-external-access-policy-for-your-organization.md)
+  - [Gestire i criteri di accesso esterno in Lync Server 2013](lync-server-2013-manage-external-access-policy-for-your-organization.md)
 
   - [Assegnazione di criteri per utente in Lync Server 2013](lync-server-2013-assigning-per-user-policies.md)
 

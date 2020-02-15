@@ -12,20 +12,20 @@ ms:contentKeyID: 48185970
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 65803ff396a9615787291de2d728fe63f3350d0b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b7d077b22c147dd677a5db68636b2c68bfafcf23
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765344"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035048"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="issues-with-the-environment-test-in-lync-server-2013"></a>Problemi con il test dell'ambiente in Lync Server 2013
+# <a name="issues-with-the-environment-test-in-lync-server-2013"></a>Problemi relativi al test dell'ambiente in Lync Server 2013
 
 </div>
 
@@ -35,33 +35,33 @@ ms.locfileid: "41765344"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-Analizzatore procedure consigliate consente di verificare che l'ambiente Lync Server 2013 sia una configurazione supportata. Come parte del controllo Active Directory Domain Services, Best Practices Analyzer esegue le operazioni seguenti:
+Best Practices Analyzer consente di verificare che l'ambiente Lync Server 2013 sia una configurazione supportata. Best Practices Analyzer fa parte dei controlli di Servizi di dominio Active Directory ed esegue le operazioni seguenti:
 
-  - Verifica la preparazione dello schema e della foresta dei servizi di dominio Active Directory.
+  - Verifica la preparazione della foresta e dello schema di Servizi di dominio Active Directory.
 
-  - Identifica il numero di siti e domini di servizi di dominio Active Directory nella distribuzione.
+  - Identifica il numero di siti e domini di Servizi di dominio Active Directory nella distribuzione.
 
-  - Controlla i livelli di foresta e di dominio.
+  - Controlla i livelli di foresta e dominio.
 
   - Controlla la versione del controller di dominio.
 
-  - Identifica il contesto dei nomi di dominio, configurazione e schema.
+  - Identifica il dominio, la configurazione e il contesto di denominazione dello schema.
 
-  - Identifica il numero di utenti abilitati.
+  - Identifica il numero degli utenti abilitati.
 
-  - Controlla la posizione in cui sono archiviate le impostazioni dei servizi di dominio Active Directory globale.
+  - Controlla dove sono archiviate le impostazioni globali di Servizi di dominio Active Directory.
 
-  - Controlla i punti di connessione del servizio (convergenza) per Lync Server.
+  - Verifica la disposizione dei punti di connessione del servizio (SCP) per Lync Server.
 
   - Identifica la versione del database.
 
 <div>
 
-## <a name="resolving-issues-with-the-environment"></a>Risoluzione dei problemi relativi all'ambiente
+## <a name="resolving-issues-with-the-environment"></a>Risoluzione dei problemi con l'ambiente
 
-Se il test dell'ambiente ha riscontrato problemi con l'ambiente, questi problemi sono probabilmente causati da problemi relativi alla configurazione di Active Directory o al livello di software in uso in server specifici. Ad esempio, se Best Practices Analyzer identifica tutti i controller di dominio nell'ambiente in cui è in esecuzione Windows Server 2000, emetterà un avviso e sarà necessario aggiornare questi controller di dominio a una versione supportata di Windows Server.
+Se il test dell'ambiente rileva problemi con l'ambiente, questi potrebbero essere causati da problemi relativi alla configurazione di Active Directory o al livello di software in esecuzione in server specifici. Ad esempio, se Best Practices Analyzer identifica nell'ambiente dei controller di dominio in cui è in esecuzione Windows Server 2000, verrà visualizzato un avviso e sarà necessario aggiornare i controller di dominio alla versione supportata di Windows Server.
 
 </div>
 
