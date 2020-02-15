@@ -12,20 +12,20 @@ ms:contentKeyID: 54973688
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ee6bc90743e20f69579c86c565395e0375c8bb0b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3d51d4ff13fa6ec07827c638db49d9a75d370e71
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41734466"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41996141"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-two-factor-authentication-in-lync-server-2013"></a><span data-ttu-id="4b08e-102">Configurazione dell'autenticazione a due fattori in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4b08e-102">Configuring two-factor authentication in Lync Server 2013</span></span>
+# <a name="configuring-two-factor-authentication-in-lync-server-2013"></a><span data-ttu-id="66574-102">Configurazione dell'autenticazione a due fattori in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="66574-102">Configuring two-factor authentication in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,31 +35,31 @@ ms.locfileid: "41734466"
 
 <span> </span>
 
-<span data-ttu-id="4b08e-103">_**Argomento Ultima modifica:** 2013-07-03_</span><span class="sxs-lookup"><span data-stu-id="4b08e-103">_**Topic Last Modified:** 2013-07-03_</span></span>
+<span data-ttu-id="66574-103">_**Ultimo argomento modificato:** 2013-07-03_</span><span class="sxs-lookup"><span data-stu-id="66574-103">_**Topic Last Modified:** 2013-07-03_</span></span>
 
-<span data-ttu-id="4b08e-104">Nelle sezioni seguenti vengono illustrati i passaggi necessari per configurare l'autenticazione a due fattori per la distribuzione.</span><span class="sxs-lookup"><span data-stu-id="4b08e-104">The following sections describe the steps necessary to configure two-factor authentication for your deployment.</span></span> <span data-ttu-id="4b08e-105">Per altre informazioni sull'autenticazione a due fattori, vedere [abilitare l'autenticazione a più fattori di Office 365 per gli amministratori online-Grid User post](http://go.microsoft.com/fwlink/p/?linkid=313332).</span><span class="sxs-lookup"><span data-stu-id="4b08e-105">For more information about Two-factor authentication, see [Enabling Office 365 multi-factor authentication for online administrators - Grid User Post](http://go.microsoft.com/fwlink/p/?linkid=313332).</span></span>
+<span data-ttu-id="66574-104">Nelle sezioni seguenti vengono descritti i passaggi necessari per configurare l'autenticazione a due fattori per la distribuzione.</span><span class="sxs-lookup"><span data-stu-id="66574-104">The following sections describe the steps necessary to configure two-factor authentication for your deployment.</span></span> <span data-ttu-id="66574-105">Per ulteriori informazioni sull'autenticazione a due fattori, vedere [Abilitazione di Office 365 multi-factor authentication for online Administrators-Grid User post](http://go.microsoft.com/fwlink/p/?linkid=313332).</span><span class="sxs-lookup"><span data-stu-id="66574-105">For more information about Two-factor authentication, see [Enabling Office 365 multi-factor authentication for online administrators - Grid User Post](http://go.microsoft.com/fwlink/p/?linkid=313332).</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="4b08e-106">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="4b08e-106">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="66574-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="66574-106">In This Section</span></span>
 
-[<span data-ttu-id="4b08e-107">Configurazione della CA aziendale per l'autenticazione tramite smart card in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4b08e-107">Configuring Enterprise CA for smart card authentication in Lync Server 2013</span></span>](lync-server-2013-configuring-enterprise-ca-for-smart-card-authentication.md)
+[<span data-ttu-id="66574-107">Configurazione di CA dell'organizzazione per l'autenticazione con smart card in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="66574-107">Configuring Enterprise CA for smart card authentication in Lync Server 2013</span></span>](lync-server-2013-configuring-enterprise-ca-for-smart-card-authentication.md)
 
-[<span data-ttu-id="4b08e-108">Configurazione di Windows 8 per l'uso di smart card virtuali con Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4b08e-108">Configuring Windows 8 for using Virtual Smart Cards with Lync Server 2013</span></span>](lync-server-2013-configuring-windows-8-for-virtual-smart-cards.md)
+[<span data-ttu-id="66574-108">Configurazione di Windows 8 per l'utilizzo di smart card virtuali con Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="66574-108">Configuring Windows 8 for using Virtual Smart Cards with Lync Server 2013</span></span>](lync-server-2013-configuring-windows-8-for-virtual-smart-cards.md)
 
-[<span data-ttu-id="4b08e-109">Registrazione degli utenti per l'autenticazione tramite smart card in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4b08e-109">Enrolling users for smart card authentication in Lync Server 2013</span></span>](lync-server-2013-enrolling-users-for-smart-card-authentication.md)
+[<span data-ttu-id="66574-109">Registrazione degli utenti per l'autenticazione con smart card in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="66574-109">Enrolling users for smart card authentication in Lync Server 2013</span></span>](lync-server-2013-enrolling-users-for-smart-card-authentication.md)
 
-[<span data-ttu-id="4b08e-110">Configurazione di Active Directory Federation Services (AD FS 2,0) per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4b08e-110">Configuring Active Directory Federation Services (AD FS 2.0) for Lync Server 2013</span></span>](lync-server-2013-configuring-active-directory-federation-services-ad-fs-2-0.md)
+[<span data-ttu-id="66574-110">Configurazione di Active Directory Federation Services (AD FS 2,0) per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="66574-110">Configuring Active Directory Federation Services (AD FS 2.0) for Lync Server 2013</span></span>](lync-server-2013-configuring-active-directory-federation-services-ad-fs-2-0.md)
 
-[<span data-ttu-id="4b08e-111">Configurazione di ADFS 2,0 per supportare l'autenticazione del client in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4b08e-111">Configuring AD FS 2.0 to support client authentication in Lync Server 2013</span></span>](lync-server-2013-configuring-ad-fs-2-0-to-support-client-authentication.md)
+[<span data-ttu-id="66574-111">Configurazione di AD FS 2,0 per il supporto dell'autenticazione client in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="66574-111">Configuring AD FS 2.0 to support client authentication in Lync Server 2013</span></span>](lync-server-2013-configuring-ad-fs-2-0-to-support-client-authentication.md)
 
-[<span data-ttu-id="4b08e-112">Configurazione dell'autenticazione passiva di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4b08e-112">Configuring Lync Server 2013 passive authentication</span></span>](lync-server-2013-configuring-passive-authentication.md)
+[<span data-ttu-id="66574-112">Configurazione dell'autenticazione passiva di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="66574-112">Configuring Lync Server 2013 passive authentication</span></span>](lync-server-2013-configuring-passive-authentication.md)
 
 </div>
 
 <div>
 
-## <a name="related-sections"></a><span data-ttu-id="4b08e-113">Sezioni correlate</span><span class="sxs-lookup"><span data-stu-id="4b08e-113">Related Sections</span></span>
+## <a name="related-sections"></a><span data-ttu-id="66574-113">Sezioni correlate</span><span class="sxs-lookup"><span data-stu-id="66574-113">Related Sections</span></span>
 
 </div>
 

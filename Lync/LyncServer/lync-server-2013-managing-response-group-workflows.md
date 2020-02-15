@@ -12,20 +12,20 @@ ms:contentKeyID: 48183974
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 489ad3b47b1502c210fc3f66fea3ed751b4f58a2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4a01005e9c6d78f521c3987bb36813e2d7eadb11
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765587"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41991981"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="managing-response-group-workflows-in-lync-server-2013"></a><span data-ttu-id="2c29f-102">Gestione dei flussi di lavoro di Response Group in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2c29f-102">Managing Response Group workflows in Lync Server 2013</span></span>
+# <a name="managing-response-group-workflows-in-lync-server-2013"></a><span data-ttu-id="854ce-102">Gestione dei flussi di lavoro di Response Group in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="854ce-102">Managing Response Group workflows in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41765587"
 
 <span> </span>
 
-<span data-ttu-id="2c29f-103">_**Argomento Ultima modifica:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="2c29f-103">_**Topic Last Modified:** 2012-10-01_</span></span>
+<span data-ttu-id="854ce-103">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="854ce-103">_**Topic Last Modified:** 2012-10-01_</span></span>
 
-<span data-ttu-id="2c29f-104">Un flusso di lavoro di Response Group definisce il comportamento di una chiamata dal momento in cui il telefono squilla quando un agente risponde alla chiamata.</span><span class="sxs-lookup"><span data-stu-id="2c29f-104">A Response Group workflow defines the behavior of a call from the time that the phone rings to the time that an agent answers the call.</span></span> <span data-ttu-id="2c29f-105">Il flusso di lavoro include informazioni sulle code e sul routing e include le informazioni sul gruppo di risposta o IVR (Interactive Voice Response).</span><span class="sxs-lookup"><span data-stu-id="2c29f-105">The workflow includes queue and routing information, and includes either hunt group or interactive voice response (IVR) information.</span></span>
+<span data-ttu-id="854ce-104">Un flusso di lavoro di Response Group definisce il comportamento di una chiamata dal momento in cui il telefono squilla al momento in cui un agente risponde alla chiamata.</span><span class="sxs-lookup"><span data-stu-id="854ce-104">A Response Group workflow defines the behavior of a call from the time that the phone rings to the time that an agent answers the call.</span></span> <span data-ttu-id="854ce-105">Nel flusso di lavoro sono incluse informazioni sulla coda e sul routing, nonché informazioni sui gruppi di risposta o sul sistema IVR (Interactive Voice Response).</span><span class="sxs-lookup"><span data-stu-id="854ce-105">The workflow includes queue and routing information, and includes either hunt group or interactive voice response (IVR) information.</span></span>
 
-<span data-ttu-id="2c29f-106">Gli argomenti di questa sezione identificano le procedure consigliate per la progettazione di flussi di lavoro IVR e spiegano come creare orari di lavoro personalizzati e set di festività, come creare o modificare flussi di lavoro e come eliminare i Workgroup.</span><span class="sxs-lookup"><span data-stu-id="2c29f-106">Topics in this section identify best practices for designing IVR workflows, and explain how to create customized business hours and holiday sets, how to create or modify workflows, and how to delete workgroups.</span></span>
+<span data-ttu-id="854ce-106">Negli argomenti di questa sezione vengono identificate le procedure consigliate per la progettazione dei flussi di lavoro IVR e viene illustrato come creare insiemi personalizzati di festività e orari di lavoro, nonché creare, modificare ed eliminare gruppi di lavoro.</span><span class="sxs-lookup"><span data-stu-id="854ce-106">Topics in this section identify best practices for designing IVR workflows, and explain how to create customized business hours and holiday sets, how to create or modify workflows, and how to delete workgroups.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="2c29f-107">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="2c29f-107">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="854ce-107">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="854ce-107">In This Section</span></span>
 
-  - [<span data-ttu-id="2c29f-108">Progettare i flussi di chiamate del sistema IVR (Interactive Voice Response) in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2c29f-108">Design interactive voice response call flows in Lync Server 2013</span></span>](lync-server-2013-design-interactive-voice-response-call-flows.md)
+  - [<span data-ttu-id="854ce-108">Progettare flussi di chiamate di risposta vocale interattivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="854ce-108">Design interactive voice response call flows in Lync Server 2013</span></span>](lync-server-2013-design-interactive-voice-response-call-flows.md)
 
-  - [<span data-ttu-id="2c29f-109">Opzionale Definire le ore lavorative per il gruppo di risposte in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2c29f-109">(Optional) Define Response Group business hours in Lync Server 2013</span></span>](lync-server-2013-optional-define-response-group-business-hours.md)
+  - [<span data-ttu-id="854ce-109">Optional Definire l'orario di ufficio di Response Group in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="854ce-109">(Optional) Define Response Group business hours in Lync Server 2013</span></span>](lync-server-2013-optional-define-response-group-business-hours.md)
 
-  - [<span data-ttu-id="2c29f-110">Opzionale Definire set di festività di Response Group in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2c29f-110">(Optional) Define Response Group holiday sets in Lync Server 2013</span></span>](lync-server-2013-optional-define-response-group-holiday-sets.md)
+  - [<span data-ttu-id="854ce-110">Optional Definire i set di festività di Response Group in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="854ce-110">(Optional) Define Response Group holiday sets in Lync Server 2013</span></span>](lync-server-2013-optional-define-response-group-holiday-sets.md)
 
-  - [<span data-ttu-id="2c29f-111">Creare o modificare un flusso di lavoro in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2c29f-111">Create or modify a workflow in Lync Server 2013</span></span>](lync-server-2013-create-or-modify-a-workflow.md)
+  - [<span data-ttu-id="854ce-111">Creare o modificare un flusso di lavoro in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="854ce-111">Create or modify a workflow in Lync Server 2013</span></span>](lync-server-2013-create-or-modify-a-workflow.md)
 
-  - [<span data-ttu-id="2c29f-112">Eliminare un flusso di lavoro in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2c29f-112">Delete a workflow in Lync Server 2013</span></span>](lync-server-2013-delete-a-workflow.md)
+  - [<span data-ttu-id="854ce-112">Eliminare un flusso di lavoro in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="854ce-112">Delete a workflow in Lync Server 2013</span></span>](lync-server-2013-delete-a-workflow.md)
 
 </div>
 
