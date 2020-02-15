@@ -12,20 +12,20 @@ ms:contentKeyID: 48185964
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fe3b3e04940c90cba4e46fc165c2494f77105667
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7f361882d0994b8e3add5447dbcaaffe2b75127d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730896"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043688"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="verify-pilot-pool-coexistence-with-legacy-pool"></a><span data-ttu-id="bde7c-102">Verificare la coesistenza del pool pilota con il pool legacy</span><span class="sxs-lookup"><span data-stu-id="bde7c-102">Verify pilot pool coexistence with legacy pool</span></span>
+# <a name="verify-pilot-pool-coexistence-with-legacy-pool"></a><span data-ttu-id="7d4f6-102">Verificare la coesistenza del pool pilota con il pool legacy</span><span class="sxs-lookup"><span data-stu-id="7d4f6-102">Verify pilot pool coexistence with legacy pool</span></span>
 
 </div>
 
@@ -35,61 +35,61 @@ ms.locfileid: "41730896"
 
 <span> </span>
 
-<span data-ttu-id="bde7c-103">_**Argomento Ultima modifica:** 2012-09-29_</span><span class="sxs-lookup"><span data-stu-id="bde7c-103">_**Topic Last Modified:** 2012-09-29_</span></span>
+<span data-ttu-id="7d4f6-103">_**Ultimo argomento modificato:** 2012-09-29_</span><span class="sxs-lookup"><span data-stu-id="7d4f6-103">_**Topic Last Modified:** 2012-09-29_</span></span>
 
-<span data-ttu-id="bde7c-104">Dopo la distribuzione del pool pilota, è necessario verificare la coesistenza dei due pool usando gli strumenti di amministrazione per visualizzare le informazioni sul pool.</span><span class="sxs-lookup"><span data-stu-id="bde7c-104">After you deploy the pilot pool, you need to verify the coexistence of the two pools by using the administrative tools to view the pool information.</span></span> <span data-ttu-id="bde7c-105">Per i pool di Lync Server 2013 e i pool legacy, è necessario usare il pannello di controllo e gli strumenti del generatore di topologia di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="bde7c-105">For the Lync Server 2013 pools and legacy pools, you must use the Lync Server 2013 Control Panel and Topology Builder tools.</span></span>
+<span data-ttu-id="7d4f6-104">Dopo aver distribuito il pool pilota, è necessario verificare la coesistenza dei due pool utilizzando gli strumenti di amministrazione per visualizzare le informazioni dei pool.</span><span class="sxs-lookup"><span data-stu-id="7d4f6-104">After you deploy the pilot pool, you need to verify the coexistence of the two pools by using the administrative tools to view the pool information.</span></span> <span data-ttu-id="7d4f6-105">Per i pool Lync Server 2013 e i pool legacy, è necessario utilizzare il pannello di controllo di Lync Server 2013 e gli strumenti del generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="7d4f6-105">For the Lync Server 2013 pools and legacy pools, you must use the Lync Server 2013 Control Panel and Topology Builder tools.</span></span>
 
 <div>
 
-## <a name="verify-that-lync-server-2013-services-have-started"></a><span data-ttu-id="bde7c-106">Verificare che i servizi di Lync Server 2013 siano stati avviati</span><span class="sxs-lookup"><span data-stu-id="bde7c-106">Verify that Lync Server 2013 services have started</span></span>
+## <a name="verify-that-lync-server-2013-services-have-started"></a><span data-ttu-id="7d4f6-106">Verificare che i servizi di Lync Server 2013 siano stati avviati</span><span class="sxs-lookup"><span data-stu-id="7d4f6-106">Verify that Lync Server 2013 services have started</span></span>
 
-1.  <span data-ttu-id="bde7c-107">Dal server front-end di Lync Server 2013 passare all'applet strumenti\\di amministrazione di servizi.</span><span class="sxs-lookup"><span data-stu-id="bde7c-107">From the Lync Server 2013 Front End Server, navigate to the Administrative Tools\\Services applet.</span></span>
+1.  <span data-ttu-id="7d4f6-107">Dal front end server di Lync Server 2013 passare all'applet servizi di amministrazione\\degli strumenti.</span><span class="sxs-lookup"><span data-stu-id="7d4f6-107">From the Lync Server 2013 Front End Server, navigate to the Administrative Tools\\Services applet.</span></span>
 
-2.  <span data-ttu-id="bde7c-108">Verificare che i servizi seguenti siano in uso nel server front-end:</span><span class="sxs-lookup"><span data-stu-id="bde7c-108">Verify that the following services are running on the Front End Server:</span></span>
+2.  <span data-ttu-id="7d4f6-108">Verificare che i servizi seguenti siano in esecuzione nel Front End Server:</span><span class="sxs-lookup"><span data-stu-id="7d4f6-108">Verify that the following services are running on the Front End Server:</span></span>
 
-<span data-ttu-id="bde7c-109">**Servizi di Lync Server 2013**</span><span class="sxs-lookup"><span data-stu-id="bde7c-109">**Lync Server 2013 services**</span></span>
+<span data-ttu-id="7d4f6-109">**Servizi di Lync Server 2013**</span><span class="sxs-lookup"><span data-stu-id="7d4f6-109">**Lync Server 2013 services**</span></span>
 
-<span data-ttu-id="bde7c-110">![Elenco di servizi di Lync Server avviati](images/JJ205420.cfff9385-6bf6-461c-982c-e727c9f20b70(OCS.15).png "Elenco di servizi di Lync Server avviati")</span><span class="sxs-lookup"><span data-stu-id="bde7c-110">![List of Lync Server Services Started](images/JJ205420.cfff9385-6bf6-461c-982c-e727c9f20b70(OCS.15).png "List of Lync Server Services Started")</span></span>
+<span data-ttu-id="7d4f6-110">![Elenco dei servizi di Lync Server avviati](images/JJ205420.cfff9385-6bf6-461c-982c-e727c9f20b70(OCS.15).png "Elenco dei servizi di Lync Server avviati")</span><span class="sxs-lookup"><span data-stu-id="7d4f6-110">![List of Lync Server Services Started](images/JJ205420.cfff9385-6bf6-461c-982c-e727c9f20b70(OCS.15).png "List of Lync Server Services Started")</span></span>
 
 </div>
 
 <div>
 
-## <a name="open-the-lync-server-2013-control-panel"></a><span data-ttu-id="bde7c-111">Aprire il pannello di controllo di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="bde7c-111">Open the Lync Server 2013 Control Panel</span></span>
+## <a name="open-the-lync-server-2013-control-panel"></a><span data-ttu-id="7d4f6-111">Aprire il pannello di controllo di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7d4f6-111">Open the Lync Server 2013 Control Panel</span></span>
 
-<span data-ttu-id="bde7c-112">Dal server front-end nella distribuzione di Lync Server 2013 aprire il pannello di controllo di Lync Server 2013 e selezionare il pool di Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="bde7c-112">From the Front End Server in your Lync Server 2013 deployment, open the Lync Server 2013 Control Panel and select the Lync Server 2010 pool.</span></span> <span data-ttu-id="bde7c-113">Ripetere la procedura per aprire il pool di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="bde7c-113">Repeat the procedure to open the Lync Server 2013 pool.</span></span>
+<span data-ttu-id="7d4f6-112">Dal front end server nella distribuzione di Lync Server 2013, aprire il pannello di controllo di Lync Server 2013 e selezionare il pool Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="7d4f6-112">From the Front End Server in your Lync Server 2013 deployment, open the Lync Server 2013 Control Panel and select the Lync Server 2010 pool.</span></span> <span data-ttu-id="7d4f6-113">Ripetere la procedura per aprire il pool di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="7d4f6-113">Repeat the procedure to open the Lync Server 2013 pool.</span></span>
 
-<span data-ttu-id="bde7c-114">**Aprire il pannello di controllo di Lync Server 2013**</span><span class="sxs-lookup"><span data-stu-id="bde7c-114">**Open Lync Server 2013 Control Panel**</span></span>
+<span data-ttu-id="7d4f6-114">**Aprire il Pannello di controllo di Lync Server 2013**</span><span class="sxs-lookup"><span data-stu-id="7d4f6-114">**Open Lync Server 2013 Control Panel**</span></span>
 
-<span data-ttu-id="bde7c-115">![Finestra di dialogo Seleziona URL](images/JJ205420.b1f8e650-9c3c-4563-a403-5069f198342f(OCS.15).png "Finestra di dialogo Seleziona URL")</span><span class="sxs-lookup"><span data-stu-id="bde7c-115">![Select URL dialog box](images/JJ205420.b1f8e650-9c3c-4563-a403-5069f198342f(OCS.15).png "Select URL dialog box")</span></span>
+<span data-ttu-id="7d4f6-115">![Finestra di dialogo Seleziona URL.](images/JJ205420.b1f8e650-9c3c-4563-a403-5069f198342f(OCS.15).png "Finestra di dialogo Seleziona URL.")</span><span class="sxs-lookup"><span data-stu-id="7d4f6-115">![Select URL dialog box](images/JJ205420.b1f8e650-9c3c-4563-a403-5069f198342f(OCS.15).png "Select URL dialog box")</span></span>
 
 <div>
 
 
 > [!IMPORTANT]  
-> <span data-ttu-id="bde7c-116">In Lync Server 2013 è necessario eseguire l'aggiornamento a Silverlight versione 5 prima di usare il pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="bde7c-116">On Lync Server 2013, you must upgrade Silverlight to Silverlight version 5 prior to using the Lync Server Control Panel.</span></span>
+> <span data-ttu-id="7d4f6-116">In Lync Server 2013, è necessario eseguire l'aggiornamento a Silverlight versione 5 prima di utilizzare il pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="7d4f6-116">On Lync Server 2013, you must upgrade Silverlight to Silverlight version 5 prior to using the Lync Server Control Panel.</span></span>
 
 
 
 </div>
 
-<span data-ttu-id="bde7c-117">Questa topologia ora include i ruoli del server Lync Server 2010 e Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="bde7c-117">This topology now includes Lync Server 2010 and Lync Server 2013 server roles.</span></span>
+<span data-ttu-id="7d4f6-117">Questa topologia ora include i ruoli del server Lync Server 2010 e Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="7d4f6-117">This topology now includes Lync Server 2010 and Lync Server 2013 server roles.</span></span>
 
-<span data-ttu-id="bde7c-118">**Pagina della topologia del pannello di controllo di Lync Server 2013**</span><span class="sxs-lookup"><span data-stu-id="bde7c-118">**Lync Server 2013 Control Panel Topology page**</span></span>
+<span data-ttu-id="7d4f6-118">**Pagina della topologia del Pannello di controllo di Lync Server 2013**</span><span class="sxs-lookup"><span data-stu-id="7d4f6-118">**Lync Server 2013 Control Panel Topology page**</span></span>
 
-<span data-ttu-id="bde7c-119">![Pannello di controllo di Lync Server - Pagina della topologia](images/JJ205420.4ed1cc7a-cb3e-42f6-82e2-6d4d71d19352(OCS.15).jpg "Pannello di controllo di Lync Server - Pagina della topologia")</span><span class="sxs-lookup"><span data-stu-id="bde7c-119">![Lync Server Control Panel - Topology page](images/JJ205420.4ed1cc7a-cb3e-42f6-82e2-6d4d71d19352(OCS.15).jpg "Lync Server Control Panel - Topology page")</span></span>
+<span data-ttu-id="7d4f6-119">![Pannello di controllo di Lync Server-pagina della topologia](images/JJ205420.4ed1cc7a-cb3e-42f6-82e2-6d4d71d19352(OCS.15).jpg "Pannello di controllo di Lync Server-pagina della topologia")</span><span class="sxs-lookup"><span data-stu-id="7d4f6-119">![Lync Server Control Panel - Topology page](images/JJ205420.4ed1cc7a-cb3e-42f6-82e2-6d4d71d19352(OCS.15).jpg "Lync Server Control Panel - Topology page")</span></span>
 
 </div>
 
 <div>
 
-## <a name="dont-attempt-to-open-the-topology-in-lync-server-2010-topology-builder"></a><span data-ttu-id="bde7c-120">Non provare ad aprire la topologia in Generatore di topologia di Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="bde7c-120">Don’t attempt to open the topology in Lync Server 2010 Topology Builder</span></span>
+## <a name="dont-attempt-to-open-the-topology-in-lync-server-2010-topology-builder"></a><span data-ttu-id="7d4f6-120">Non tentare di aprire la topologia in Generatore di topologie di Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="7d4f6-120">Don’t attempt to open the topology in Lync Server 2010 Topology Builder</span></span>
 
-<span data-ttu-id="bde7c-121">Se si tenta di aprire la topologia con il generatore di topologia di Lync Server 2010, si verificherà l'errore seguente.</span><span class="sxs-lookup"><span data-stu-id="bde7c-121">If you attempt to open the topology using Lync Server 2010 Topology Builder, you will encounter the error below.</span></span> <span data-ttu-id="bde7c-122">La topologia può essere visualizzata solo con il generatore di topologia di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="bde7c-122">The topology can only be viewed using Lync Server 2013 Topology Builder.</span></span> <span data-ttu-id="bde7c-123">Il generatore di topologia di Lync Server 2013 deve essere usato per creare pool sia per Lync Server 2013 che per Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="bde7c-123">The Lync Server 2013 Topology Builder must be used to create pools for both Lync Server 2013 and Lync Server 2010.</span></span>
+<span data-ttu-id="7d4f6-121">Se si tenta di aprire la topologia mediante il generatore di topologie di Lync Server 2010, verrà visualizzato l'errore seguente.</span><span class="sxs-lookup"><span data-stu-id="7d4f6-121">If you attempt to open the topology using Lync Server 2010 Topology Builder, you will encounter the error below.</span></span> <span data-ttu-id="7d4f6-122">La topologia può essere visualizzata solo utilizzando il generatore di topologie di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="7d4f6-122">The topology can only be viewed using Lync Server 2013 Topology Builder.</span></span> <span data-ttu-id="7d4f6-123">Il generatore di topologie di Lync Server 2013 deve essere utilizzato per creare pool sia per Lync Server 2013 che per Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="7d4f6-123">The Lync Server 2013 Topology Builder must be used to create pools for both Lync Server 2013 and Lync Server 2010.</span></span>
 
-<span data-ttu-id="bde7c-124">**Messaggio di errore del generatore di topologia di Lync Server 2010**</span><span class="sxs-lookup"><span data-stu-id="bde7c-124">**Lync Server 2010 Topology Builder error message**</span></span>
+<span data-ttu-id="7d4f6-124">**Messaggio di errore di Generatore di topologie di Lync Server 2010**</span><span class="sxs-lookup"><span data-stu-id="7d4f6-124">**Lync Server 2010 Topology Builder error message**</span></span>
 
-<span data-ttu-id="bde7c-125">![Errore dello snap-in MMC nel Generatore di topologie di Lync Server](images/JJ205420.f6666343-c348-4d81-ae0e-6ba5a44e16c4(OCS.15).png "Errore dello snap-in MMC nel Generatore di topologie di Lync Server")</span><span class="sxs-lookup"><span data-stu-id="bde7c-125">![Lync Server Topology Builder MMC Snap Error](images/JJ205420.f6666343-c348-4d81-ae0e-6ba5a44e16c4(OCS.15).png "Lync Server Topology Builder MMC Snap Error")</span></span>
+<span data-ttu-id="7d4f6-125">![Errore di snap MMC generatore di topologie di Lync Server](images/JJ205420.f6666343-c348-4d81-ae0e-6ba5a44e16c4(OCS.15).png "Errore di snap MMC generatore di topologie di Lync Server")</span><span class="sxs-lookup"><span data-stu-id="7d4f6-125">![Lync Server Topology Builder MMC Snap Error](images/JJ205420.f6666343-c348-4d81-ae0e-6ba5a44e16c4(OCS.15).png "Lync Server Topology Builder MMC Snap Error")</span></span>
 
 </div>
 

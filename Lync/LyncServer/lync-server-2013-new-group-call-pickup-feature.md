@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: nuova funzionalità di raccolta delle chiamate di gruppo'
+title: 'Lync Server 2013: nuova funzionalità di prelievo delle chiamate di gruppo'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541478
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0e42884d3880fa1a31c96d9a25676b5ceecd8313
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 566ef914236cfde9cb00c28c667189ebb6d1556f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758638"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048467"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="new-group-call-pickup-feature-in-lync-server-2013"></a><span data-ttu-id="c992f-102">Nuova caratteristica raccolta chiamate di gruppo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c992f-102">New Group Call Pickup feature in Lync Server 2013</span></span>
+# <a name="new-group-call-pickup-feature-in-lync-server-2013"></a><span data-ttu-id="e5526-102">Nuova funzionalità di prelievo delle chiamate di gruppo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e5526-102">New Group Call Pickup feature in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,18 +35,18 @@ ms.locfileid: "41758638"
 
 <span> </span>
 
-<span data-ttu-id="c992f-103">_**Argomento Ultima modifica:** 2013-02-12_</span><span class="sxs-lookup"><span data-stu-id="c992f-103">_**Topic Last Modified:** 2013-02-12_</span></span>
+<span data-ttu-id="e5526-103">_**Ultimo argomento modificato:** 2013-02-12_</span><span class="sxs-lookup"><span data-stu-id="e5526-103">_**Topic Last Modified:** 2013-02-12_</span></span>
 
-<span data-ttu-id="c992f-104">Aggiornamenti cumulativi per Lync Server 2013: febbraio 2013 introduce il pick-up delle chiamate di gruppo come nuova funzionalità VoIP aziendale.</span><span class="sxs-lookup"><span data-stu-id="c992f-104">Cumulative Updates for Lync Server 2013: February 2013 introduces Group Call Pickup as a new Enterprise Voice feature.</span></span> <span data-ttu-id="c992f-105">Con il ritiro delle chiamate di gruppo è possibile assegnare utenti ai gruppi in modo che altri utenti possano rispondere alle chiamate in arrivo agli utenti che si trovano nel gruppo dal proprio telefono.</span><span class="sxs-lookup"><span data-stu-id="c992f-105">With Group Call Pickup, you can assign users to groups so that other users can answer incoming calls to users who are in the group from their own phones.</span></span>
+<span data-ttu-id="e5526-104">Aggiornamenti cumulativi per Lync Server 2013: febbraio 2013 introduce il prelievo delle chiamate di gruppo come nuova funzionalità VoIP aziendale.</span><span class="sxs-lookup"><span data-stu-id="e5526-104">Cumulative Updates for Lync Server 2013: February 2013 introduces Group Call Pickup as a new Enterprise Voice feature.</span></span> <span data-ttu-id="e5526-105">Con il prelievo delle chiamate di gruppo, è possibile assegnare gli utenti ai gruppi in modo che altri utenti possano rispondere alle chiamate in arrivo agli utenti che si trovano nel gruppo dai propri telefoni.</span><span class="sxs-lookup"><span data-stu-id="e5526-105">With Group Call Pickup, you can assign users to groups so that other users can answer incoming calls to users who are in the group from their own phones.</span></span>
 
-<span data-ttu-id="c992f-106">Il ritiro delle chiamate di gruppo si basa sull'applicazione Call Park.</span><span class="sxs-lookup"><span data-stu-id="c992f-106">Group Call Pickup is based on the Call Park application.</span></span> <span data-ttu-id="c992f-107">Per il ritiro delle chiamate di gruppo, come per Call Park, è possibile impostare un intervallo di numeri virtuali da usare come numeri di gruppo.</span><span class="sxs-lookup"><span data-stu-id="c992f-107">For Group Call Pickup, as with Call Park, you set up a range of virtual numbers to be used as group numbers.</span></span> <span data-ttu-id="c992f-108">Un utente compone il numero di gruppo per prendere una chiamata che squilla per un altro utente che si trova nel gruppo.</span><span class="sxs-lookup"><span data-stu-id="c992f-108">A user dials the group number to pick up a call that is ringing for another user who is in the group.</span></span>
+<span data-ttu-id="e5526-106">Il prelievo delle chiamate di gruppo si basa sull'applicazione Parcheggio di chiamata.</span><span class="sxs-lookup"><span data-stu-id="e5526-106">Group Call Pickup is based on the Call Park application.</span></span> <span data-ttu-id="e5526-107">Per il prelievo delle chiamate di gruppo, come per il parcheggio di chiamata, è necessario impostare un intervallo di numeri virtuali da utilizzare come numeri di gruppo.</span><span class="sxs-lookup"><span data-stu-id="e5526-107">For Group Call Pickup, as with Call Park, you set up a range of virtual numbers to be used as group numbers.</span></span> <span data-ttu-id="e5526-108">Un utente compone il numero del gruppo per prendere una chiamata che squilla per un altro utente che si trova nel gruppo.</span><span class="sxs-lookup"><span data-stu-id="e5526-108">A user dials the group number to pick up a call that is ringing for another user who is in the group.</span></span>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="c992f-109">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="c992f-109">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="e5526-109">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="e5526-109">See Also</span></span>
 
 
-[<span data-ttu-id="c992f-110">Pianificazione del ritiro delle chiamate di gruppo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c992f-110">Planning for Group Call Pickup in Lync Server 2013</span></span>](lync-server-2013-planning-for-group-call-pickup.md)  
+[<span data-ttu-id="e5526-110">Pianificazione del ritiro delle chiamate di gruppo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e5526-110">Planning for Group Call Pickup in Lync Server 2013</span></span>](lync-server-2013-planning-for-group-call-pickup.md)  
   
 
 </div>

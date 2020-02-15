@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: report di distribuzione degli errori'
+title: 'Lync Server 2013: rapporto distribuzione errori'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183849
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5250b03aef3fb77de2cbeefa4688a150c9b4a302
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 291097d645884d4c5146b48a69e5355db71e2193
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765174"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046609"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="failure-distribution-report-in-lync-server-2013"></a><span data-ttu-id="49e6f-102">Report di distribuzione dell'errore in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="49e6f-102">Failure Distribution Report in Lync Server 2013</span></span>
+# <a name="failure-distribution-report-in-lync-server-2013"></a><span data-ttu-id="1cf32-102">Rapporto distribuzione errori in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1cf32-102">Failure Distribution Report in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,83 +35,83 @@ ms.locfileid: "41765174"
 
 <span> </span>
 
-<span data-ttu-id="49e6f-103">_**Argomento Ultima modifica:** 2012-10-21_</span><span class="sxs-lookup"><span data-stu-id="49e6f-103">_**Topic Last Modified:** 2012-10-21_</span></span>
+<span data-ttu-id="1cf32-103">_**Ultimo argomento modificato:** 2012-10-21_</span><span class="sxs-lookup"><span data-stu-id="1cf32-103">_**Topic Last Modified:** 2012-10-21_</span></span>
 
-<span data-ttu-id="49e6f-104">Il rapporto di distribuzione errori non è in grado di classificare le sessioni non riuscite nelle categorie seguenti:</span><span class="sxs-lookup"><span data-stu-id="49e6f-104">The Failure Distribution Report ranks failed sessions in the following categories:</span></span>
+<span data-ttu-id="1cf32-104">Il Rapporto distribuzione errori classifica le sessioni non riuscite nelle categorie seguenti:</span><span class="sxs-lookup"><span data-stu-id="1cf32-104">The Failure Distribution Report ranks failed sessions in the following categories:</span></span>
 
-  - <span data-ttu-id="49e6f-105">Principali motivi diagnostici</span><span class="sxs-lookup"><span data-stu-id="49e6f-105">Top diagnostic reasons</span></span>
+  - <span data-ttu-id="1cf32-105">Motivi diagnostica principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-105">Top diagnostic reasons</span></span>
 
-  - <span data-ttu-id="49e6f-106">Modalità top</span><span class="sxs-lookup"><span data-stu-id="49e6f-106">Top modalities</span></span>
+  - <span data-ttu-id="1cf32-106">Modalità principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-106">Top modalities</span></span>
 
-  - <span data-ttu-id="49e6f-107">Pool principali</span><span class="sxs-lookup"><span data-stu-id="49e6f-107">Top pools</span></span>
+  - <span data-ttu-id="1cf32-107">Pool principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-107">Top pools</span></span>
 
-  - <span data-ttu-id="49e6f-108">Origini principali</span><span class="sxs-lookup"><span data-stu-id="49e6f-108">Top sources</span></span>
+  - <span data-ttu-id="1cf32-108">Origini principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-108">Top sources</span></span>
 
-  - <span data-ttu-id="49e6f-109">Componenti principali</span><span class="sxs-lookup"><span data-stu-id="49e6f-109">Top components</span></span>
+  - <span data-ttu-id="1cf32-109">Componenti principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-109">Top components</span></span>
 
-  - <span data-ttu-id="49e6f-110">Inizio degli utenti</span><span class="sxs-lookup"><span data-stu-id="49e6f-110">Top from users</span></span>
+  - <span data-ttu-id="1cf32-110">Utenti di origine principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-110">Top from users</span></span>
 
-  - <span data-ttu-id="49e6f-111">Inizio per gli utenti</span><span class="sxs-lookup"><span data-stu-id="49e6f-111">Top to users</span></span>
+  - <span data-ttu-id="1cf32-111">Utenti di destinazione principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-111">Top to users</span></span>
 
-  - <span data-ttu-id="49e6f-112">Inizio da agenti utente</span><span class="sxs-lookup"><span data-stu-id="49e6f-112">Top from user agents</span></span>
+  - <span data-ttu-id="1cf32-112">Agenti utenti di origine principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-112">Top from user agents</span></span>
 
-<span data-ttu-id="49e6f-113">Puoi usare queste categorie per determinare esattamente dove si verifica un problema e, in alcuni casi, perché il problema si verifica.</span><span class="sxs-lookup"><span data-stu-id="49e6f-113">You can use these categories to determine exactly where a problem is occurring and, in some cases, why the problem is occurring.</span></span> <span data-ttu-id="49e6f-114">Ad esempio, si supponga di aver registrato 242 sessioni audio/video non riuscite durante un giorno specifico.</span><span class="sxs-lookup"><span data-stu-id="49e6f-114">For example, suppose you recorded 242 failed audio/video sessions during a given day.</span></span> <span data-ttu-id="49e6f-115">Se si esamina il report di distribuzione degli errori, potrebbe essere necessario che 237 di tali sessioni non riuscite sia avvenuto nel pool di Dublino.</span><span class="sxs-lookup"><span data-stu-id="49e6f-115">If you look at the Failure Distribution Report, it might show that 237 of those failed sessions took place in your Dublin pool.</span></span> <span data-ttu-id="49e6f-116">Questo ti offre un buon punto di partenza per il rilevamento e la diagnosi delle cause che stanno dietro a questi errori.</span><span class="sxs-lookup"><span data-stu-id="49e6f-116">That gives you a good place to start when it comes to tracking down and diagnosing the causes behind those failures.</span></span> <span data-ttu-id="49e6f-117">Se si fa clic sul pool Dublin nella categoria **Top pools** , verrà visualizzato un report di distribuzione di errore solo per il pool.</span><span class="sxs-lookup"><span data-stu-id="49e6f-117">If you click on the Dublin pool under the **Top pools** category, you will see a Failure Distribution Report just for that pool.</span></span> <span data-ttu-id="49e6f-118">È quindi possibile iniziare ad analizzare il motivo per cui il pool di Dublino stava vivendo tante difficoltà.</span><span class="sxs-lookup"><span data-stu-id="49e6f-118">You can then begin analyzing why the Dublin pool was experiencing so many difficulties.</span></span>
+<span data-ttu-id="1cf32-p101">Queste categorie possono essere utilizzate per localizzare con precisione il problema e, in alcuni casi, stabilirne la causa. Si supponga ad esempio di aver registrato 242 sessioni audio/video non riuscite in un giorno specifico. Analizzando il Rapporto distribuzione errori, si può riscontrare che 237 di queste sessioni non riuscite hanno avuto luogo nel pool Dublin. Questa informazione rappresenta un punto di partenza valido nell'individuazione e nella diagnosi delle cause che sono alla base degli errori. Facendo clic sul pool Dublin nella categoria **Pool principali**, verrà visualizzato un Rapporto distribuzione errori per il pool specifico. A questo punto è possibile iniziare ad analizzare le cause dei problemi che hanno interessato il pool Dublin.</span><span class="sxs-lookup"><span data-stu-id="1cf32-p101">You can use these categories to determine exactly where a problem is occurring and, in some cases, why the problem is occurring. For example, suppose you recorded 242 failed audio/video sessions during a given day. If you look at the Failure Distribution Report, it might show that 237 of those failed sessions took place in your Dublin pool. That gives you a good place to start when it comes to tracking down and diagnosing the causes behind those failures. If you click on the Dublin pool under the **Top pools** category, you will see a Failure Distribution Report just for that pool. You can then begin analyzing why the Dublin pool was experiencing so many difficulties.</span></span>
 
 <div>
 
-## <a name="viewing-the-failure-distribution-report"></a><span data-ttu-id="49e6f-119">Visualizzazione del report di distribuzione degli errori</span><span class="sxs-lookup"><span data-stu-id="49e6f-119">Viewing the Failure Distribution Report</span></span>
+## <a name="viewing-the-failure-distribution-report"></a><span data-ttu-id="1cf32-119">Visualizzazione del Rapporto distribuzione errori</span><span class="sxs-lookup"><span data-stu-id="1cf32-119">Viewing the Failure Distribution Report</span></span>
 
-<span data-ttu-id="49e6f-120">È possibile accedere al report di distribuzione dell'errore da uno dei report seguenti facendo clic sul **volume di errore previsto** o sulla metrica di **volume errore imprevisto** :</span><span class="sxs-lookup"><span data-stu-id="49e6f-120">You can access the Failure Distribution Report from any of the following reports by clicking either the **Expected failure volume** or the **Unexpected failure volume** metric:</span></span>
+<span data-ttu-id="1cf32-120">È possibile accedere al Rapporto distribuzione errori da uno qualsiasi dei rapporti seguenti facendo clic sulla metrica **Errore previsto** o **Errore imprevisto**:</span><span class="sxs-lookup"><span data-stu-id="1cf32-120">You can access the Failure Distribution Report from any of the following reports by clicking either the **Expected failure volume** or the **Unexpected failure volume** metric:</span></span>
 
-  - [<span data-ttu-id="49e6f-121">Report errori principali in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="49e6f-121">Top Failures Report in Lync Server 2013</span></span>](lync-server-2013-top-failures-report.md)
+  - [<span data-ttu-id="1cf32-121">Rapporto errori principali in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1cf32-121">Top Failures Report in Lync Server 2013</span></span>](lync-server-2013-top-failures-report.md)
 
-  - [<span data-ttu-id="49e6f-122">Report di diagnostica per conferenze in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="49e6f-122">Conference Diagnostic Report in Lync Server 2013</span></span>](lync-server-2013-conference-diagnostic-report.md)
+  - [<span data-ttu-id="1cf32-122">Rapporto di diagnostica conferenze in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1cf32-122">Conference Diagnostic Report in Lync Server 2013</span></span>](lync-server-2013-conference-diagnostic-report.md)
 
-  - [<span data-ttu-id="49e6f-123">Report di diagnostica attività peer-to-peer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="49e6f-123">Peer-to-Peer Activity Diagnostic Report in Lync Server 2013</span></span>](lync-server-2013-peer-to-peer-activity-diagnostic-report.md)
+  - [<span data-ttu-id="1cf32-123">Rapporto di diagnostica attività peer-to-peer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1cf32-123">Peer-to-Peer Activity Diagnostic Report in Lync Server 2013</span></span>](lync-server-2013-peer-to-peer-activity-diagnostic-report.md)
 
-<span data-ttu-id="49e6f-124">Nel report distribuzione errori è possibile fare clic su una delle metriche seguenti per visualizzare il [report elenco errori in Lync Server 2013](lync-server-2013-failure-list-report.md):</span><span class="sxs-lookup"><span data-stu-id="49e6f-124">From the Failure Distribution Report, you can click any of the following metrics to view the [Failure List Report in Lync Server 2013](lync-server-2013-failure-list-report.md):</span></span>
+<span data-ttu-id="1cf32-124">Nel rapporto distribuzione errori, è possibile fare clic su una delle metriche seguenti per visualizzare il [rapporto Elenco errori in Lync Server 2013](lync-server-2013-failure-list-report.md):</span><span class="sxs-lookup"><span data-stu-id="1cf32-124">From the Failure Distribution Report, you can click any of the following metrics to view the [Failure List Report in Lync Server 2013](lync-server-2013-failure-list-report.md):</span></span>
 
-  - <span data-ttu-id="49e6f-125">Principali motivi diagnostici (sessioni)</span><span class="sxs-lookup"><span data-stu-id="49e6f-125">Top diagnostic reasons (sessions)</span></span>
+  - <span data-ttu-id="1cf32-125">Motivi diagnostica principali (sessioni)</span><span class="sxs-lookup"><span data-stu-id="1cf32-125">Top diagnostic reasons (sessions)</span></span>
 
-  - <span data-ttu-id="49e6f-126">Modalità top (sessioni)</span><span class="sxs-lookup"><span data-stu-id="49e6f-126">Top modalities (sessions)</span></span>
+  - <span data-ttu-id="1cf32-126">Modalità principali (sessioni)</span><span class="sxs-lookup"><span data-stu-id="1cf32-126">Top modalities (sessions)</span></span>
 
-  - <span data-ttu-id="49e6f-127">Pool principali (sessioni)</span><span class="sxs-lookup"><span data-stu-id="49e6f-127">Top pools (sessions)</span></span>
+  - <span data-ttu-id="1cf32-127">Pool principali (sessioni)</span><span class="sxs-lookup"><span data-stu-id="1cf32-127">Top pools (sessions)</span></span>
 
-  - <span data-ttu-id="49e6f-128">Origini principali (sessioni)</span><span class="sxs-lookup"><span data-stu-id="49e6f-128">Top sources (sessions)</span></span>
+  - <span data-ttu-id="1cf32-128">Origini principali (sessioni)</span><span class="sxs-lookup"><span data-stu-id="1cf32-128">Top sources (sessions)</span></span>
 
-  - <span data-ttu-id="49e6f-129">Componenti principali (sessioni)</span><span class="sxs-lookup"><span data-stu-id="49e6f-129">Top components (sessions)</span></span>
+  - <span data-ttu-id="1cf32-129">Componenti principali (sessioni)</span><span class="sxs-lookup"><span data-stu-id="1cf32-129">Top components (sessions)</span></span>
 
-  - <span data-ttu-id="49e6f-130">Inizio da utenti (sessioni)</span><span class="sxs-lookup"><span data-stu-id="49e6f-130">Top from users (sessions)</span></span>
+  - <span data-ttu-id="1cf32-130">Utenti di origine principali (sessioni)</span><span class="sxs-lookup"><span data-stu-id="1cf32-130">Top from users (sessions)</span></span>
 
-  - <span data-ttu-id="49e6f-131">Inizio per gli utenti (sessioni)</span><span class="sxs-lookup"><span data-stu-id="49e6f-131">Top to users (sessions)</span></span>
+  - <span data-ttu-id="1cf32-131">Utenti di destinazione principali (sessioni)</span><span class="sxs-lookup"><span data-stu-id="1cf32-131">Top to users (sessions)</span></span>
 
-  - <span data-ttu-id="49e6f-132">Inizio da agenti utente (sessioni)</span><span class="sxs-lookup"><span data-stu-id="49e6f-132">Top from user agents (sessions)</span></span>
+  - <span data-ttu-id="1cf32-132">Agenti utenti di origine principali (sessioni)</span><span class="sxs-lookup"><span data-stu-id="1cf32-132">Top from user agents (sessions)</span></span>
 
 </div>
 
 <div>
 
-## <a name="using-the-failure-distribution-report"></a><span data-ttu-id="49e6f-133">Uso del report distribuzione errori</span><span class="sxs-lookup"><span data-stu-id="49e6f-133">Using the Failure Distribution Report</span></span>
+## <a name="using-the-failure-distribution-report"></a><span data-ttu-id="1cf32-133">Uso del Rapporto distribuzione errori</span><span class="sxs-lookup"><span data-stu-id="1cf32-133">Using the Failure Distribution Report</span></span>
 
-<span data-ttu-id="49e6f-134">A seconda delle dimensioni del monitor e della risoluzione dello schermo, è possibile che alcuni dati visualizzati nel report di distribuzione dell'errore vengano troncati durante la visualizzazione sullo schermo.</span><span class="sxs-lookup"><span data-stu-id="49e6f-134">Depending on your monitor size and screen resolution, it's possible that some of the data shown in the Failure Distribution Report might be truncated when you view it onscreen.</span></span> <span data-ttu-id="49e6f-135">Questo vale soprattutto per le metriche, ad esempio gli agenti utente, che possono avere etichette molto lunghe.</span><span class="sxs-lookup"><span data-stu-id="49e6f-135">This is especially true for metrics such as user agents, which can have very long labels.</span></span> <span data-ttu-id="49e6f-136">Ad esempio, un agente utente con un nome come "UCCAPI/4.0.7400.0 OC/4.0.7400.0 (Microsoft Lync 2013)" potrebbe essere visualizzato solo parzialmente sullo schermo:</span><span class="sxs-lookup"><span data-stu-id="49e6f-136">For example, a user agent with a name like "UCCAPI/4.0.7400.0 OC/4.0.7400.0 (Microsoft Lync 2013)" might only partially appear onscreen:</span></span>
+<span data-ttu-id="1cf32-p102">A seconda delle dimensioni del monitor e della risoluzione dello schermo, è possibile che alcuni dei dati mostrati nel Rapporto distribuzione errori vengano troncati quando vengono visualizzati. Ciò accade soprattutto nel caso di metriche come gli agenti utente che possono avere etichette particolarmente lunghe. Ad esempio un agente utente con un nome come "UCCAPI/4.0.7400.0 OC/4.0.7400.0 (Microsoft Lync 2013)" può essere visualizzato solo parzialmente:</span><span class="sxs-lookup"><span data-stu-id="1cf32-p102">Depending on your monitor size and screen resolution, it's possible that some of the data shown in the Failure Distribution Report might be truncated when you view it onscreen. This is especially true for metrics such as user agents, which can have very long labels. For example, a user agent with a name like "UCCAPI/4.0.7400.0 OC/4.0.7400.0 (Microsoft Lync 2013)" might only partially appear onscreen:</span></span>
 
-<span data-ttu-id="49e6f-137">UCCAPI/4.0.7400.0 OC/4.0.7400.0 (Microsoft ly...</span><span class="sxs-lookup"><span data-stu-id="49e6f-137">UCCAPI/4.0.7400.0 OC/4.0.7400.0 (Microsoft Ly...</span></span>
+<span data-ttu-id="1cf32-137">UCCAPI/4.0.7400.0 OC/4.0.7400.0 (Microsoft Ly...</span><span class="sxs-lookup"><span data-stu-id="1cf32-137">UCCAPI/4.0.7400.0 OC/4.0.7400.0 (Microsoft Ly...</span></span>
 
-<span data-ttu-id="49e6f-138">Fortunatamente, è possibile visualizzare l'intera etichetta semplicemente tenendo il mouse sopra il valore troncato.</span><span class="sxs-lookup"><span data-stu-id="49e6f-138">Fortunately, you can see the entire label simply by holding your mouse over the truncated value.</span></span>
+<span data-ttu-id="1cf32-138">Fortunatamente, è possibile visualizzare l'intera etichetta semplicemente posizionando il mouse sul valore troncato.</span><span class="sxs-lookup"><span data-stu-id="1cf32-138">Fortunately, you can see the entire label simply by holding your mouse over the truncated value.</span></span>
 
-<span data-ttu-id="49e6f-139">Una metrica interessante in cui è possibile applicare il filtro usando il report distribuzione errori è ID diagnostica.</span><span class="sxs-lookup"><span data-stu-id="49e6f-139">One interesting metric that you can filter on by using the Failure Distribution Report is Diagnostic ID.</span></span> <span data-ttu-id="49e6f-140">Se viene visualizzato lo stesso ID diagnostica in altri report, è possibile filtrare tale ID nel report distribuzione errori e ottenere un'analisi dettagliata precisamente dove e con quale frequenza è stato segnalato l'ID durante una sessione non riuscita.</span><span class="sxs-lookup"><span data-stu-id="49e6f-140">If you see the same Diagnostic ID cropping up in other reports you can filter on that ID in the Failure Distribution Report and get a very detailed look at exactly where, and how often, that ID has been reported during a failed session.</span></span>
+<span data-ttu-id="1cf32-p103">Una metrica interessante in base alla quale è possibile filtrare usando il Rapporto distribuzione errori è ID diagnostica. Se lo stesso valore di ID diagnostica viene fuori in altri rapporti, è possibile applicare il filtro in base all'ID nel Rapporto distribuzione errori e ottenere informazioni estremamente dettagliate su dove e con che frequenza l'ID è stato segnalato durante una sessione non riuscita.</span><span class="sxs-lookup"><span data-stu-id="1cf32-p103">One interesting metric that you can filter on by using the Failure Distribution Report is Diagnostic ID. If you see the same Diagnostic ID cropping up in other reports you can filter on that ID in the Failure Distribution Report and get a very detailed look at exactly where, and how often, that ID has been reported during a failed session.</span></span>
 
 </div>
 
 <div>
 
-## <a name="filters"></a><span data-ttu-id="49e6f-141">Filtri</span><span class="sxs-lookup"><span data-stu-id="49e6f-141">Filters</span></span>
+## <a name="filters"></a><span data-ttu-id="1cf32-141">Filtri</span><span class="sxs-lookup"><span data-stu-id="1cf32-141">Filters</span></span>
 
-<span data-ttu-id="49e6f-142">I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi.</span><span class="sxs-lookup"><span data-stu-id="49e6f-142">Filters provide a way for you to return a more finely-targeted set of data or to view the returned data in different ways.</span></span> <span data-ttu-id="49e6f-143">Ad esempio, il report di distribuzione non riuscito consente di filtrare in base a elementi come il tipo di attività (sessione peer-to-peer o sessione di conferenza) o l'ID di diagnostica che ha accompagnato ogni sessione non riuscita.</span><span class="sxs-lookup"><span data-stu-id="49e6f-143">For example, the Failed Distribution Report enables you to filter on such things as the activity type (peer-to-peer session or conferencing session) or by the diagnostic ID that accompanied each failed session.</span></span>
+<span data-ttu-id="1cf32-p104">I filtri consentono di restituire un insieme di dati più circoscritto o di visualizzare in modi diversi i dati restituiti. Il Rapporto distribuzione errori ad esempio consente di applicare filtri in base a elementi come il tipo di attività (sessione peer-to-peer o di conferenza) o l'ID diagnostica associato a ogni sessione non riuscita.</span><span class="sxs-lookup"><span data-stu-id="1cf32-p104">Filters provide a way for you to return a more finely-targeted set of data or to view the returned data in different ways. For example, the Failed Distribution Report enables you to filter on such things as the activity type (peer-to-peer session or conferencing session) or by the diagnostic ID that accompanied each failed session.</span></span>
 
-<span data-ttu-id="49e6f-144">Nella tabella seguente sono elencati i filtri che è possibile usare con il report di distribuzione dell'errore.</span><span class="sxs-lookup"><span data-stu-id="49e6f-144">The following table lists the filters that you can use with the Failure Distribution Report.</span></span>
+<span data-ttu-id="1cf32-144">Nella tabella riportata di seguito vengono elencati i filtri che è possibile utilizzare con il Rapporto distribuzione errori.</span><span class="sxs-lookup"><span data-stu-id="1cf32-144">The following table lists the filters that you can use with the Failure Distribution Report.</span></span>
 
-### <a name="failure-distribution-report-filters"></a><span data-ttu-id="49e6f-145">Filtri dei report di distribuzione errori</span><span class="sxs-lookup"><span data-stu-id="49e6f-145">Failure Distribution Report Filters</span></span>
+### <a name="failure-distribution-report-filters"></a><span data-ttu-id="1cf32-145">Filtri del Rapporto distribuzione errori</span><span class="sxs-lookup"><span data-stu-id="1cf32-145">Failure Distribution Report Filters</span></span>
 
 <table>
 <colgroup>
@@ -120,58 +120,58 @@ ms.locfileid: "41765174"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="49e6f-146">Nome</span><span class="sxs-lookup"><span data-stu-id="49e6f-146">Name</span></span></th>
-<th><span data-ttu-id="49e6f-147">Descrizione</span><span class="sxs-lookup"><span data-stu-id="49e6f-147">Description</span></span></th>
+<th><span data-ttu-id="1cf32-146">Nome</span><span class="sxs-lookup"><span data-stu-id="1cf32-146">Name</span></span></th>
+<th><span data-ttu-id="1cf32-147">Descrizione</span><span class="sxs-lookup"><span data-stu-id="1cf32-147">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-148"><strong>Da</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-148"><strong>From</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-149">Data/ora di inizio per l'intervallo di tempo.</span><span class="sxs-lookup"><span data-stu-id="49e6f-149">Start date/time for the time range.</span></span> <span data-ttu-id="49e6f-150">Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:</span><span class="sxs-lookup"><span data-stu-id="49e6f-150">To view data by hours, enter both the start date and time as follows:</span></span></p>
-<p><span data-ttu-id="49e6f-151">7/7/2012 1:00 PM</span><span class="sxs-lookup"><span data-stu-id="49e6f-151">7/7/2012 1:00 PM</span></span></p>
-<p><span data-ttu-id="49e6f-152">Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato.</span><span class="sxs-lookup"><span data-stu-id="49e6f-152">If you do not enter a start time, the report automatically begins at 12:00 AM on the specified day.</span></span> <span data-ttu-id="49e6f-153">Per visualizzare i dati per giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="49e6f-153">To view data by day, enter just the date:</span></span></p>
-<p><span data-ttu-id="49e6f-154">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="49e6f-154">7/7/2012</span></span></p>
-<p><span data-ttu-id="49e6f-155">Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="49e6f-155">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
-<p><span data-ttu-id="49e6f-156">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="49e6f-156">7/3/2012</span></span></p>
-<p><span data-ttu-id="49e6f-157">Le settimane si eseguono sempre da domenica a sabato.</span><span class="sxs-lookup"><span data-stu-id="49e6f-157">Weeks always run from Sunday through Saturday.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-148"><strong>From</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-148"><strong>From</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-p105">Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:</span><span class="sxs-lookup"><span data-stu-id="1cf32-p105">Start date/time for the time range. To view data by hours, enter both the start date and time as follows:</span></span></p>
+<p><span data-ttu-id="1cf32-151">07/07/2012 13.00</span><span class="sxs-lookup"><span data-stu-id="1cf32-151">7/7/2012 1:00 PM</span></span></p>
+<p><span data-ttu-id="1cf32-p106">Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="1cf32-p106">If you do not enter a start time, the report automatically begins at 12:00 AM on the specified day. To view data by day, enter just the date:</span></span></p>
+<p><span data-ttu-id="1cf32-154">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="1cf32-154">7/7/2012</span></span></p>
+<p><span data-ttu-id="1cf32-155">Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="1cf32-155">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
+<p><span data-ttu-id="1cf32-156">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="1cf32-156">7/3/2012</span></span></p>
+<p><span data-ttu-id="1cf32-157">Le settimane iniziano sempre con il lunedì e terminano con la domenica.</span><span class="sxs-lookup"><span data-stu-id="1cf32-157">Weeks always run from Sunday through Saturday.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="49e6f-158"><strong>A</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-158"><strong>To</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-159">Data/ora di fine per l'intervallo di tempo.</span><span class="sxs-lookup"><span data-stu-id="49e6f-159">End date/time for the time range.</span></span> <span data-ttu-id="49e6f-160">Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:</span><span class="sxs-lookup"><span data-stu-id="49e6f-160">To view data by hours, enter both the end date and time as follows:</span></span></p>
-<p><span data-ttu-id="49e6f-161">7/7/2012 1:00 PM</span><span class="sxs-lookup"><span data-stu-id="49e6f-161">7/7/2012 1:00 PM</span></span></p>
-<p><span data-ttu-id="49e6f-162">Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato.</span><span class="sxs-lookup"><span data-stu-id="49e6f-162">If you do not enter an end time, the report automatically ends at 12:00 AM on the specified day.</span></span> <span data-ttu-id="49e6f-163">Per visualizzare i dati per giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="49e6f-163">To view data by day, enter just the date:</span></span></p>
-<p><span data-ttu-id="49e6f-164">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="49e6f-164">7/7/2012</span></span></p>
-<p><span data-ttu-id="49e6f-165">Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="49e6f-165">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
-<p><span data-ttu-id="49e6f-166">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="49e6f-166">7/3/2012</span></span></p>
-<p><span data-ttu-id="49e6f-167">Le settimane si eseguono sempre da domenica a sabato.</span><span class="sxs-lookup"><span data-stu-id="49e6f-167">Weeks always run from Sunday through Saturday.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-158"><strong>To</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-158"><strong>To</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-p107">Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:</span><span class="sxs-lookup"><span data-stu-id="1cf32-p107">End date/time for the time range. To view data by hours, enter both the end date and time as follows:</span></span></p>
+<p><span data-ttu-id="1cf32-161">07/07/2012 13.00</span><span class="sxs-lookup"><span data-stu-id="1cf32-161">7/7/2012 1:00 PM</span></span></p>
+<p><span data-ttu-id="1cf32-p108">Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="1cf32-p108">If you do not enter an end time, the report automatically ends at 12:00 AM on the specified day. To view data by day, enter just the date:</span></span></p>
+<p><span data-ttu-id="1cf32-164">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="1cf32-164">7/7/2012</span></span></p>
+<p><span data-ttu-id="1cf32-165">Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="1cf32-165">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
+<p><span data-ttu-id="1cf32-166">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="1cf32-166">7/3/2012</span></span></p>
+<p><span data-ttu-id="1cf32-167">Le settimane vanno sempre dal lunedì alla domenica.</span><span class="sxs-lookup"><span data-stu-id="1cf32-167">Weeks always run from Sunday through Saturday.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-168"><strong>Pool</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-168"><strong>Pool</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-169">Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale.</span><span class="sxs-lookup"><span data-stu-id="49e6f-169">Fully qualified domain name (FQDN) of the Registrar pool or Edge Server.</span></span> <span data-ttu-id="49e6f-170">È possibile selezionare un singolo pool o fare clic su <strong>[tutti]</strong> per visualizzare i dati per tutti i pool.</span><span class="sxs-lookup"><span data-stu-id="49e6f-170">You can either select an individual pool or click <strong>[All]</strong> to view data for all the pools.</span></span> <span data-ttu-id="49e6f-171">Questo elenco a discesa viene compilato automaticamente in base ai record nel database.</span><span class="sxs-lookup"><span data-stu-id="49e6f-171">This drop-down list is automatically populated for you based on the records in the database.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-168"><strong>Pool</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-168"><strong>Pool</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-p109">Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool o fare clic su <strong>[Tutti]</strong> per visualizzare dati per tutti i pool. Questo elenco a discesa viene popolato automaticamente in base ai record del database.</span><span class="sxs-lookup"><span data-stu-id="1cf32-p109">Fully qualified domain name (FQDN) of the Registrar pool or Edge Server. You can either select an individual pool or click <strong>[All]</strong> to view data for all the pools. This drop-down list is automatically populated for you based on the records in the database.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="49e6f-172"><strong>Tipo di attività</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-172"><strong>Activity type</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-173">Tipo di attività su cui applicare il filtro.</span><span class="sxs-lookup"><span data-stu-id="49e6f-173">Type of activity to filter on.</span></span> <span data-ttu-id="49e6f-174">Selezionare una delle opzioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="49e6f-174">Select one of the following:</span></span></p>
+<td><p><span data-ttu-id="1cf32-172"><strong>Tipo di attività</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-172"><strong>Activity type</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-p110">Tipo di attività in base al quale applicare il filtro. Selezionare uno dei valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="1cf32-p110">Type of activity to filter on. Select one of the following:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="49e6f-175">Tutti</span><span class="sxs-lookup"><span data-stu-id="49e6f-175">[All]</span></span></p></li>
-<li><p><span data-ttu-id="49e6f-176">Peer-to-peer</span><span class="sxs-lookup"><span data-stu-id="49e6f-176">Peer-to-peer</span></span></p></li>
-<li><p><span data-ttu-id="49e6f-177">Conferenza</span><span class="sxs-lookup"><span data-stu-id="49e6f-177">Conference</span></span></p></li>
+<li><p><span data-ttu-id="1cf32-175">Tutti</span><span class="sxs-lookup"><span data-stu-id="1cf32-175">[All]</span></span></p></li>
+<li><p><span data-ttu-id="1cf32-176">Peer-to-peer</span><span class="sxs-lookup"><span data-stu-id="1cf32-176">Peer-to-peer</span></span></p></li>
+<li><p><span data-ttu-id="1cf32-177">Conferenza</span><span class="sxs-lookup"><span data-stu-id="1cf32-177">Conference</span></span></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-178"><strong>Categoria sessione</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-178"><strong>Session category</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-179">Indica se l'attività in questione è riuscita o meno.</span><span class="sxs-lookup"><span data-stu-id="49e6f-179">Indicates whether the activity in question succeeded or failed.</span></span> <span data-ttu-id="49e6f-180">Selezionare una delle opzioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="49e6f-180">Select one of the following:</span></span></p>
+<td><p><span data-ttu-id="1cf32-178"><strong>Categoria sessione</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-178"><strong>Session category</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-p111">Indica l'esito dell'attività in questione. Selezionare uno dei valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="1cf32-p111">Indicates whether the activity in question succeeded or failed. Select one of the following:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="49e6f-181">Tutti</span><span class="sxs-lookup"><span data-stu-id="49e6f-181">[All]</span></span></p></li>
-<li><p><span data-ttu-id="49e6f-182">Successo</span><span class="sxs-lookup"><span data-stu-id="49e6f-182">Success</span></span></p></li>
-<li><p><span data-ttu-id="49e6f-183">Errore previsto</span><span class="sxs-lookup"><span data-stu-id="49e6f-183">Expected failure</span></span></p></li>
-<li><p><span data-ttu-id="49e6f-184">Errore imprevisto</span><span class="sxs-lookup"><span data-stu-id="49e6f-184">Unexpected failure</span></span></p></li>
+<li><p><span data-ttu-id="1cf32-181">Tutti</span><span class="sxs-lookup"><span data-stu-id="1cf32-181">[All]</span></span></p></li>
+<li><p><span data-ttu-id="1cf32-182">Success</span><span class="sxs-lookup"><span data-stu-id="1cf32-182">Success</span></span></p></li>
+<li><p><span data-ttu-id="1cf32-183">Errore previsto</span><span class="sxs-lookup"><span data-stu-id="1cf32-183">Expected failure</span></span></p></li>
+<li><p><span data-ttu-id="1cf32-184">Errore imprevisto</span><span class="sxs-lookup"><span data-stu-id="1cf32-184">Unexpected failure</span></span></p></li>
 </ul>
-<p><span data-ttu-id="49e6f-185">Un &quot;errore&quot; previsto è un errore che dovrebbe verificarsi.</span><span class="sxs-lookup"><span data-stu-id="49e6f-185">An &quot;expected failure&quot; is a failure that is expected to happen.</span></span> <span data-ttu-id="49e6f-186">Ad esempio, se un utente ha impostato il proprio stato su non disturbare, si prevede che qualsiasi chiamata non venga eseguita correttamente.</span><span class="sxs-lookup"><span data-stu-id="49e6f-186">For example, if a user has set his or her status to Do Not Disturb you would expect any call to that user to fail.</span></span> <span data-ttu-id="49e6f-187">Un &quot;errore&quot; imprevisto è un errore che si verifica in quello che sembrerebbe essere un sistema altrimenti integro.</span><span class="sxs-lookup"><span data-stu-id="49e6f-187">An &quot;unexpected failure&quot; is a failure that occurs in what would appear to be an otherwise healthy system.</span></span> <span data-ttu-id="49e6f-188">Ad esempio, una chiamata non deve essere terminata se il chiamante viene posizionato in attesa.</span><span class="sxs-lookup"><span data-stu-id="49e6f-188">For example, a call should not be terminated if the caller is placed on hold.</span></span> <span data-ttu-id="49e6f-189">Se questo si verifica, verrebbe contrassegnato come errore imprevisto.</span><span class="sxs-lookup"><span data-stu-id="49e6f-189">If that occurs, that would be flagged as an unexpected failure.</span></span></p></td>
+<p><span data-ttu-id="1cf32-185">Un &quot;errore&quot; previsto è un errore che dovrebbe verificarsi.</span><span class="sxs-lookup"><span data-stu-id="1cf32-185">An &quot;expected failure&quot; is a failure that is expected to happen.</span></span> <span data-ttu-id="1cf32-186">Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo.</span><span class="sxs-lookup"><span data-stu-id="1cf32-186">For example, if a user has set his or her status to Do Not Disturb you would expect any call to that user to fail.</span></span> <span data-ttu-id="1cf32-187">Un &quot;errore&quot; imprevisto è un errore che si verifica in un sistema altrimenti integro.</span><span class="sxs-lookup"><span data-stu-id="1cf32-187">An &quot;unexpected failure&quot; is a failure that occurs in what would appear to be an otherwise healthy system.</span></span> <span data-ttu-id="1cf32-188">Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa.</span><span class="sxs-lookup"><span data-stu-id="1cf32-188">For example, a call should not be terminated if the caller is placed on hold.</span></span> <span data-ttu-id="1cf32-189">Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto.</span><span class="sxs-lookup"><span data-stu-id="1cf32-189">If that occurs, that would be flagged as an unexpected failure.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="49e6f-190"><strong>ID diagnostica</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-190"><strong>Diagnostic ID</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-191">Identificatore univoco (in forma di intestazione MS-Diagnostics) allegato a un messaggio SIP che spesso fornisce informazioni utili per la risoluzione di errori.</span><span class="sxs-lookup"><span data-stu-id="49e6f-191">Unique identifier (in the form of an ms-diagnostics header) attached to a SIP message that often provides information useful in troubleshooting errors.</span></span> <span data-ttu-id="49e6f-192">Le intestazioni di diagnostica sono facoltative (è possibile avere sessioni SIP che non includono queste intestazioni) e gli ID di diagnostica vengono riportati solo per le sessioni con problemi di qualche tipo.</span><span class="sxs-lookup"><span data-stu-id="49e6f-192">Diagnostics headers are optional (it is possible to have SIP sessions that do not include these headers), and diagnostic IDs are reported only for sessions that experienced problems of some kind.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-190"><strong>ID diagnostica</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-190"><strong>Diagnostic ID</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-p113">Identificatore univoco nel formato di un'intestazione ms-diagnostics associato a un messaggio SIP in cui spesso vengono fornite informazioni utili per la risoluzione dei problemi. Le intestazioni di diagnostica sono facoltative (è possibile che in alcune sessioni SIP non siano incluse queste intestazioni) e gli ID diagnostica sono spesso indicati solo per sessioni in cui si sono verificati problemi di un determinato tipo.</span><span class="sxs-lookup"><span data-stu-id="1cf32-p113">Unique identifier (in the form of an ms-diagnostics header) attached to a SIP message that often provides information useful in troubleshooting errors. Diagnostics headers are optional (it is possible to have SIP sessions that do not include these headers), and diagnostic IDs are reported only for sessions that experienced problems of some kind.</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -181,11 +181,11 @@ ms.locfileid: "41765174"
 
 <div>
 
-## <a name="metrics-for-top-diagnostic-reasons"></a><span data-ttu-id="49e6f-193">Metriche per i principali motivi diagnostici</span><span class="sxs-lookup"><span data-stu-id="49e6f-193">Metrics for Top Diagnostic Reasons</span></span>
+## <a name="metrics-for-top-diagnostic-reasons"></a><span data-ttu-id="1cf32-193">Metrica dei motivi di diagnostica principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-193">Metrics for Top Diagnostic Reasons</span></span>
 
-<span data-ttu-id="49e6f-194">Nella tabella seguente sono elencate le informazioni fornite nel report di distribuzione dell'errore in base all'ID di diagnostica segnalato più di frequente.</span><span class="sxs-lookup"><span data-stu-id="49e6f-194">The following table lists the information provided in the Failure Distribution Report based on the most frequently reported diagnostic ID.</span></span>
+<span data-ttu-id="1cf32-194">Nella tabella riportata di seguito vengono elencate le informazioni fornite nel Rapporto distribuzione errori in base all'ID diagnostica segnalato con maggiore frequenza.</span><span class="sxs-lookup"><span data-stu-id="1cf32-194">The following table lists the information provided in the Failure Distribution Report based on the most frequently reported diagnostic ID.</span></span>
 
-### <a name="metrics-for-top-diagnostic-reasons"></a><span data-ttu-id="49e6f-195">Metriche per i principali motivi diagnostici</span><span class="sxs-lookup"><span data-stu-id="49e6f-195">Metrics for Top Diagnostic Reasons</span></span>
+### <a name="metrics-for-top-diagnostic-reasons"></a><span data-ttu-id="1cf32-195">Metrica dei motivi di diagnostica principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-195">Metrics for Top Diagnostic Reasons</span></span>
 
 <table>
 <colgroup>
@@ -195,26 +195,26 @@ ms.locfileid: "41765174"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="49e6f-196">Nome</span><span class="sxs-lookup"><span data-stu-id="49e6f-196">Name</span></span></th>
-<th><span data-ttu-id="49e6f-197">Si può ordinare su questo elemento?</span><span class="sxs-lookup"><span data-stu-id="49e6f-197">Can you sort on this item?</span></span></th>
-<th><span data-ttu-id="49e6f-198">Descrizione</span><span class="sxs-lookup"><span data-stu-id="49e6f-198">Description</span></span></th>
+<th><span data-ttu-id="1cf32-196">Nome</span><span class="sxs-lookup"><span data-stu-id="1cf32-196">Name</span></span></th>
+<th><span data-ttu-id="1cf32-197">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="1cf32-197">Can you sort on this item?</span></span></th>
+<th><span data-ttu-id="1cf32-198">Descrizione</span><span class="sxs-lookup"><span data-stu-id="1cf32-198">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-199"><strong>Rango</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-199"><strong>Rank</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-200">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-200">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-201">Classificazione relativa delle sessioni non riuscite in base agli ID di diagnostica.</span><span class="sxs-lookup"><span data-stu-id="49e6f-201">Relative ranking of failed sessions based on diagnostic IDs.</span></span> <span data-ttu-id="49e6f-202">L'ID di diagnostica è un identificatore univoco (in forma di intestazione MS-Diagnostics) associato a un messaggio SIP che spesso fornisce informazioni utili per la risoluzione degli errori.</span><span class="sxs-lookup"><span data-stu-id="49e6f-202">The diagnostic ID is a unique identifier (in the form of an ms-diagnostics header) attached to a SIP message that often provides information useful in troubleshooting errors.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-199"><strong>Classificazione</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-199"><strong>Rank</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-200">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-200">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-p114">Classificazione relativa di sessioni non riuscite in base agli ID diagnostica. L'ID diagnostica è un identificatore univoco nel formato di un'intestazione ms-diagnostics associato a un messaggio SIP in cui spesso vengono fornite informazioni utili per la risoluzione dei problemi.</span><span class="sxs-lookup"><span data-stu-id="1cf32-p114">Relative ranking of failed sessions based on diagnostic IDs. The diagnostic ID is a unique identifier (in the form of an ms-diagnostics header) attached to a SIP message that often provides information useful in troubleshooting errors.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="49e6f-203"><strong>Principali motivi diagnostici</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-203"><strong>Top diagnostic reasons</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-204">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-204">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-205">ID di diagnostica generato in una sessione.</span><span class="sxs-lookup"><span data-stu-id="49e6f-205">Diagnostic ID generated in a session.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-203"><strong>Motivi diagnostica</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-203"><strong>Top diagnostic reasons</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-204">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-204">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-205">ID diagnostica generato in una sessione.</span><span class="sxs-lookup"><span data-stu-id="1cf32-205">Diagnostic ID generated in a session.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-206"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-206"><strong>Sessions</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-207">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-207">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-208">Numero totale di sessioni non riuscite in cui è stato generato l'ID di diagnostica specificato.</span><span class="sxs-lookup"><span data-stu-id="49e6f-208">Total number of failed sessions where the specified diagnostic ID was generated.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-206"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-206"><strong>Sessions</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-207">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-207">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-208">Numero totale di sessioni non riuscite in cui è stato generato l'ID diagnostica specificato.</span><span class="sxs-lookup"><span data-stu-id="1cf32-208">Total number of failed sessions where the specified diagnostic ID was generated.</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -224,11 +224,11 @@ ms.locfileid: "41765174"
 
 <div>
 
-## <a name="metrics-for-top-modalities"></a><span data-ttu-id="49e6f-209">Metriche per le modalità top</span><span class="sxs-lookup"><span data-stu-id="49e6f-209">Metrics for Top Modalities</span></span>
+## <a name="metrics-for-top-modalities"></a><span data-ttu-id="1cf32-209">Metrica delle modalità principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-209">Metrics for Top Modalities</span></span>
 
-<span data-ttu-id="49e6f-210">Nella tabella seguente sono elencate le informazioni fornite nel report di distribuzione dell'errore in base alle modalità di sessione che hanno registrato più errori.</span><span class="sxs-lookup"><span data-stu-id="49e6f-210">The following table lists the information provided in the Failure Distribution Report based on the session modalities that experienced the most failures.</span></span>
+<span data-ttu-id="1cf32-210">Nella tabella riportata di seguito vengono elencate le informazioni fornite nel Rapporto distribuzione errori in base alle modalità di sessione in cui si sono verificati più errori.</span><span class="sxs-lookup"><span data-stu-id="1cf32-210">The following table lists the information provided in the Failure Distribution Report based on the session modalities that experienced the most failures.</span></span>
 
-### <a name="metrics-for-top-modalities"></a><span data-ttu-id="49e6f-211">Metriche per le modalità top</span><span class="sxs-lookup"><span data-stu-id="49e6f-211">Metrics for Top Modalities</span></span>
+### <a name="metrics-for-top-modalities"></a><span data-ttu-id="1cf32-211">Metrica delle modalità principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-211">Metrics for Top Modalities</span></span>
 
 <table>
 <colgroup>
@@ -238,26 +238,26 @@ ms.locfileid: "41765174"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="49e6f-212">Nome</span><span class="sxs-lookup"><span data-stu-id="49e6f-212">Name</span></span></th>
-<th><span data-ttu-id="49e6f-213">Si può ordinare su questo elemento?</span><span class="sxs-lookup"><span data-stu-id="49e6f-213">Can you sort on this item?</span></span></th>
-<th><span data-ttu-id="49e6f-214">Descrizione</span><span class="sxs-lookup"><span data-stu-id="49e6f-214">Description</span></span></th>
+<th><span data-ttu-id="1cf32-212">Nome</span><span class="sxs-lookup"><span data-stu-id="1cf32-212">Name</span></span></th>
+<th><span data-ttu-id="1cf32-213">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="1cf32-213">Can you sort on this item?</span></span></th>
+<th><span data-ttu-id="1cf32-214">Descrizione</span><span class="sxs-lookup"><span data-stu-id="1cf32-214">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-215"><strong>Rango</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-215"><strong>Rank</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-216">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-216">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-217">Classificazione relativa basata sulla sessione non riuscita in base al tipo di sessione, ad esempio una conferenza audio/video o una sessione di trasferimento di file peer-to-peer.</span><span class="sxs-lookup"><span data-stu-id="49e6f-217">Relative ranking based of failed session based on session type (for example, an audio/video conference or a peer-to-peer file transfer session).</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-215"><strong>Classificazione</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-215"><strong>Rank</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-216">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-216">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-217">Classificazione relativa di sessioni non riuscite in base al tipo di sessione, ad esempio un trasferimento file peer-to-peer o di conferenza audio/video.</span><span class="sxs-lookup"><span data-stu-id="1cf32-217">Relative ranking based of failed session based on session type (for example, an audio/video conference or a peer-to-peer file transfer session).</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="49e6f-218"><strong>Modalità top</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-218"><strong>Top modalities</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-219">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-219">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-220">Tipo di sessione.</span><span class="sxs-lookup"><span data-stu-id="49e6f-220">Session type.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-218"><strong>Modalità</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-218"><strong>Top modalities</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-219">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-219">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-220">Tipo di sessione.</span><span class="sxs-lookup"><span data-stu-id="1cf32-220">Session type.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-221"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-221"><strong>Sessions</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-222">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-222">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-223">Numero totale di sessioni non riuscite che coinvolgono la modalità specificata.</span><span class="sxs-lookup"><span data-stu-id="49e6f-223">Total number of failed sessions involving the specified modality.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-221"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-221"><strong>Sessions</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-222">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-222">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-223">Numero totale di sessioni non riuscite con la modalità specificata.</span><span class="sxs-lookup"><span data-stu-id="1cf32-223">Total number of failed sessions involving the specified modality.</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -267,11 +267,11 @@ ms.locfileid: "41765174"
 
 <div>
 
-## <a name="metrics-for-top-pools"></a><span data-ttu-id="49e6f-224">Metriche per i pool principali</span><span class="sxs-lookup"><span data-stu-id="49e6f-224">Metrics for Top Pools</span></span>
+## <a name="metrics-for-top-pools"></a><span data-ttu-id="1cf32-224">Metrica dei pool principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-224">Metrics for Top Pools</span></span>
 
-<span data-ttu-id="49e6f-225">Nella tabella seguente sono elencate le informazioni fornite nel report di distribuzione dell'errore in base ai pool che hanno sperimentato più errori.</span><span class="sxs-lookup"><span data-stu-id="49e6f-225">The following table lists the information provided in the Failure Distribution Report based on the pools that experienced the most failures.</span></span>
+<span data-ttu-id="1cf32-225">Nella tabella riportata di seguito vengono elencate le informazioni fornite nel Rapporto distribuzione errori in base ai pool in cui si sono verificati più errori.</span><span class="sxs-lookup"><span data-stu-id="1cf32-225">The following table lists the information provided in the Failure Distribution Report based on the pools that experienced the most failures.</span></span>
 
-### <a name="metrics-for-top-pools"></a><span data-ttu-id="49e6f-226">Metriche per i pool principali</span><span class="sxs-lookup"><span data-stu-id="49e6f-226">Metrics for Top Pools</span></span>
+### <a name="metrics-for-top-pools"></a><span data-ttu-id="1cf32-226">Metrica dei pool principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-226">Metrics for Top Pools</span></span>
 
 <table>
 <colgroup>
@@ -281,26 +281,26 @@ ms.locfileid: "41765174"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="49e6f-227">Nome</span><span class="sxs-lookup"><span data-stu-id="49e6f-227">Name</span></span></th>
-<th><span data-ttu-id="49e6f-228">Si può ordinare su questo elemento?</span><span class="sxs-lookup"><span data-stu-id="49e6f-228">Can you sort on this item?</span></span></th>
-<th><span data-ttu-id="49e6f-229">Descrizione</span><span class="sxs-lookup"><span data-stu-id="49e6f-229">Description</span></span></th>
+<th><span data-ttu-id="1cf32-227">Nome</span><span class="sxs-lookup"><span data-stu-id="1cf32-227">Name</span></span></th>
+<th><span data-ttu-id="1cf32-228">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="1cf32-228">Can you sort on this item?</span></span></th>
+<th><span data-ttu-id="1cf32-229">Descrizione</span><span class="sxs-lookup"><span data-stu-id="1cf32-229">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-230"><strong>Rango</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-230"><strong>Rank</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-231">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-231">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-232">Classificazione relativa delle sessioni non riuscite in base al pool di registrazione o al server perimetrale in cui è stata eseguita la sessione.</span><span class="sxs-lookup"><span data-stu-id="49e6f-232">Relative ranking of failed sessions based on the Registrar pool or Edge Server where the session was conducted.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-230"><strong>Classificazione</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-230"><strong>Rank</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-231">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-231">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-232">Classificazione relativa di sessioni non riuscite in base al pool di registrazione o al server perimetrale in cui è stata eseguita la sessione.</span><span class="sxs-lookup"><span data-stu-id="1cf32-232">Relative ranking of failed sessions based on the Registrar pool or Edge Server where the session was conducted.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="49e6f-233"><strong>Pool principali</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-233"><strong>Top pools</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-234">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-234">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-235">Nome del pool di registrazione o del server perimetrale.</span><span class="sxs-lookup"><span data-stu-id="49e6f-235">Name of the Registrar pool or Edge Server.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-233"><strong>Pool</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-233"><strong>Top pools</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-234">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-234">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-235">Nome del pool di registrazione o del server perimetrale.</span><span class="sxs-lookup"><span data-stu-id="1cf32-235">Name of the Registrar pool or Edge Server.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-236"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-236"><strong>Sessions</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-237">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-237">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-238">Numero totale di sessioni non riuscite per ogni pool di registrar o Edge Server.</span><span class="sxs-lookup"><span data-stu-id="49e6f-238">Total number of failed sessions per Registrar pool or Edge Server.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-236"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-236"><strong>Sessions</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-237">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-237">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-238">Numero totale di sessioni non riuscite per pool di registrazione o server perimetrale.</span><span class="sxs-lookup"><span data-stu-id="1cf32-238">Total number of failed sessions per Registrar pool or Edge Server.</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -310,11 +310,11 @@ ms.locfileid: "41765174"
 
 <div>
 
-## <a name="metrics-for-top-sources"></a><span data-ttu-id="49e6f-239">Metriche per le origini principali</span><span class="sxs-lookup"><span data-stu-id="49e6f-239">Metrics for Top Sources</span></span>
+## <a name="metrics-for-top-sources"></a><span data-ttu-id="1cf32-239">Metrica delle origini principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-239">Metrics for Top Sources</span></span>
 
-<span data-ttu-id="49e6f-240">Nella tabella seguente sono elencate le informazioni fornite nel report di distribuzione dell'errore in base ai computer con più errori.</span><span class="sxs-lookup"><span data-stu-id="49e6f-240">The following table lists the information provided in the Failure Distribution Report based on the computers that experienced the most failures.</span></span>
+<span data-ttu-id="1cf32-240">Nella tabella riportata di seguito vengono elencate le informazioni fornite nel Rapporto distribuzione errori in base ai computer in cui si sono verificati più errori.</span><span class="sxs-lookup"><span data-stu-id="1cf32-240">The following table lists the information provided in the Failure Distribution Report based on the computers that experienced the most failures.</span></span>
 
-### <a name="metrics-for-top-sources"></a><span data-ttu-id="49e6f-241">Metriche per le origini principali</span><span class="sxs-lookup"><span data-stu-id="49e6f-241">Metrics for Top Sources</span></span>
+### <a name="metrics-for-top-sources"></a><span data-ttu-id="1cf32-241">Metrica delle origini principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-241">Metrics for Top Sources</span></span>
 
 <table>
 <colgroup>
@@ -324,26 +324,26 @@ ms.locfileid: "41765174"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="49e6f-242">Nome</span><span class="sxs-lookup"><span data-stu-id="49e6f-242">Name</span></span></th>
-<th><span data-ttu-id="49e6f-243">Si può ordinare su questo elemento?</span><span class="sxs-lookup"><span data-stu-id="49e6f-243">Can you sort on this item?</span></span></th>
-<th><span data-ttu-id="49e6f-244">Descrizione</span><span class="sxs-lookup"><span data-stu-id="49e6f-244">Description</span></span></th>
+<th><span data-ttu-id="1cf32-242">Nome</span><span class="sxs-lookup"><span data-stu-id="1cf32-242">Name</span></span></th>
+<th><span data-ttu-id="1cf32-243">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="1cf32-243">Can you sort on this item?</span></span></th>
+<th><span data-ttu-id="1cf32-244">Descrizione</span><span class="sxs-lookup"><span data-stu-id="1cf32-244">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-245"><strong>Rango</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-245"><strong>Rank</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-246">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-246">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-247">Classificazione relativa delle sessioni non riuscite per ogni computer.</span><span class="sxs-lookup"><span data-stu-id="49e6f-247">Relative ranking failed sessions per computer.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-245"><strong>Classificazione</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-245"><strong>Rank</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-246">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-246">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-247">Classificazione relativa di sessioni non riuscite per computer.</span><span class="sxs-lookup"><span data-stu-id="1cf32-247">Relative ranking failed sessions per computer.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="49e6f-248"><strong>Origini principali</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-248"><strong>Top sources</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-249">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-249">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-250">Nome del computer coinvolto nella sessione non riuscita.</span><span class="sxs-lookup"><span data-stu-id="49e6f-250">Name of the computer involved in the failed session.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-248"><strong>Origini</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-248"><strong>Top sources</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-249">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-249">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-250">Nome del computer associato alla sessione non riuscita.</span><span class="sxs-lookup"><span data-stu-id="1cf32-250">Name of the computer involved in the failed session.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-251"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-251"><strong>Sessions</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-252">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-252">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-253">Numero totale di sessioni non riuscite per computer.</span><span class="sxs-lookup"><span data-stu-id="49e6f-253">Total number of failed sessions per computer.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-251"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-251"><strong>Sessions</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-252">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-252">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-253">Numero totale di sessioni non riuscite per computer.</span><span class="sxs-lookup"><span data-stu-id="1cf32-253">Total number of failed sessions per computer.</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -353,11 +353,11 @@ ms.locfileid: "41765174"
 
 <div>
 
-## <a name="metrics-for-top-components"></a><span data-ttu-id="49e6f-254">Metriche per i componenti principali</span><span class="sxs-lookup"><span data-stu-id="49e6f-254">Metrics for Top Components</span></span>
+## <a name="metrics-for-top-components"></a><span data-ttu-id="1cf32-254">Metrica dei componenti principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-254">Metrics for Top Components</span></span>
 
-<span data-ttu-id="49e6f-255">Nella tabella seguente sono elencate le informazioni fornite nel report di distribuzione dell'errore in base ai componenti di Microsoft Lync Server 2010 che hanno sperimentato la maggior parte degli errori.</span><span class="sxs-lookup"><span data-stu-id="49e6f-255">The following table lists the information provided in the Failure Distribution Report based on the Microsoft Lync Server 2010 components that experienced the most failures.</span></span>
+<span data-ttu-id="1cf32-255">Nella tabella seguente sono elencate le informazioni fornite nel rapporto distribuzione errori in base ai componenti di Microsoft Lync Server 2010 che hanno riscontrato la maggior parte dei guasti.</span><span class="sxs-lookup"><span data-stu-id="1cf32-255">The following table lists the information provided in the Failure Distribution Report based on the Microsoft Lync Server 2010 components that experienced the most failures.</span></span>
 
-### <a name="metrics-for-top-components"></a><span data-ttu-id="49e6f-256">Metriche per i componenti principali</span><span class="sxs-lookup"><span data-stu-id="49e6f-256">Metrics for Top Components</span></span>
+### <a name="metrics-for-top-components"></a><span data-ttu-id="1cf32-256">Metrica dei componenti principali</span><span class="sxs-lookup"><span data-stu-id="1cf32-256">Metrics for Top Components</span></span>
 
 <table>
 <colgroup>
@@ -367,26 +367,26 @@ ms.locfileid: "41765174"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="49e6f-257">Nome</span><span class="sxs-lookup"><span data-stu-id="49e6f-257">Name</span></span></th>
-<th><span data-ttu-id="49e6f-258">Si può ordinare su questo elemento?</span><span class="sxs-lookup"><span data-stu-id="49e6f-258">Can you sort on this item?</span></span></th>
-<th><span data-ttu-id="49e6f-259">Descrizione</span><span class="sxs-lookup"><span data-stu-id="49e6f-259">Description</span></span></th>
+<th><span data-ttu-id="1cf32-257">Nome</span><span class="sxs-lookup"><span data-stu-id="1cf32-257">Name</span></span></th>
+<th><span data-ttu-id="1cf32-258">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="1cf32-258">Can you sort on this item?</span></span></th>
+<th><span data-ttu-id="1cf32-259">Descrizione</span><span class="sxs-lookup"><span data-stu-id="1cf32-259">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-260"><strong>Rango</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-260"><strong>Rank</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-261">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-261">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-262">Classificazione relativa delle sessioni non riuscite in base al componente Lync Server 2010 (ad esempio, ExumRouting, GroupChat o MediationServer).</span><span class="sxs-lookup"><span data-stu-id="49e6f-262">Relative ranking of failed sessions based on Lync Server 2010 component (for example, ExumRouting, GroupChat, or MediationServer).</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-260"><strong>Classificazione</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-260"><strong>Rank</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-261">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-261">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-262">Classificazione relativa di sessioni non riuscite in base al componente di Lync Server 2010 (ad esempio, ExumRouting, GroupChat o MediationServer).</span><span class="sxs-lookup"><span data-stu-id="1cf32-262">Relative ranking of failed sessions based on Lync Server 2010 component (for example, ExumRouting, GroupChat, or MediationServer).</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="49e6f-263"><strong>Componenti principali</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-263"><strong>Top components</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-264">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-264">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-265">Nome del componente coinvolto nella sessione non riuscita.</span><span class="sxs-lookup"><span data-stu-id="49e6f-265">Name of the component involved in the failed session.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-263"><strong>Componenti</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-263"><strong>Top components</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-264">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-264">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-265">Nome del componente associato alla sessione non riuscita.</span><span class="sxs-lookup"><span data-stu-id="1cf32-265">Name of the component involved in the failed session.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-266"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-266"><strong>Sessions</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-267">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-267">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-268">Numero totale di sessioni non riuscite per componente.</span><span class="sxs-lookup"><span data-stu-id="49e6f-268">Total number of failed sessions per component.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-266"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-266"><strong>Sessions</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-267">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-267">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-268">Numero totale di sessioni non riuscite per componente.</span><span class="sxs-lookup"><span data-stu-id="1cf32-268">Total number of failed sessions per component.</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -396,11 +396,11 @@ ms.locfileid: "41765174"
 
 <div>
 
-## <a name="metrics-for-top-from-users"></a><span data-ttu-id="49e6f-269">Metriche per l'inizio degli utenti</span><span class="sxs-lookup"><span data-stu-id="49e6f-269">Metrics for Top From Users</span></span>
+## <a name="metrics-for-top-from-users"></a><span data-ttu-id="1cf32-269">Metrica degli utenti di origine delle chiamate</span><span class="sxs-lookup"><span data-stu-id="1cf32-269">Metrics for Top From Users</span></span>
 
-<span data-ttu-id="49e6f-270">Nella tabella seguente sono elencate le informazioni fornite nel report di distribuzione dell'errore in base agli utenti che hanno sperimentato la maggior parte degli errori quando hanno tentato di chiamare un altro utente (detto "da" utenti).</span><span class="sxs-lookup"><span data-stu-id="49e6f-270">The following table lists the information provided in the Failure Distribution Report based on users who experienced the most failures when they tried to call someone else (known as "From" users).</span></span>
+<span data-ttu-id="1cf32-270">Nella tabella seguente vengono elencate le informazioni fornite nel Rapporto distribuzione errori in base agli utenti per cui si sono verificati più errori quando hanno tentato di chiamare un altro utente (utenti "Da").</span><span class="sxs-lookup"><span data-stu-id="1cf32-270">The following table lists the information provided in the Failure Distribution Report based on users who experienced the most failures when they tried to call someone else (known as "From" users).</span></span>
 
-### <a name="metrics-for-top-from-users"></a><span data-ttu-id="49e6f-271">Metriche per l'inizio degli utenti</span><span class="sxs-lookup"><span data-stu-id="49e6f-271">Metrics for Top From Users</span></span>
+### <a name="metrics-for-top-from-users"></a><span data-ttu-id="1cf32-271">Metrica degli utenti di origine delle chiamate</span><span class="sxs-lookup"><span data-stu-id="1cf32-271">Metrics for Top From Users</span></span>
 
 <table>
 <colgroup>
@@ -410,26 +410,26 @@ ms.locfileid: "41765174"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="49e6f-272">Nome</span><span class="sxs-lookup"><span data-stu-id="49e6f-272">Name</span></span></th>
-<th><span data-ttu-id="49e6f-273">Si può ordinare su questo elemento?</span><span class="sxs-lookup"><span data-stu-id="49e6f-273">Can you sort on this item?</span></span></th>
-<th><span data-ttu-id="49e6f-274">Descrizione</span><span class="sxs-lookup"><span data-stu-id="49e6f-274">Description</span></span></th>
+<th><span data-ttu-id="1cf32-272">Nome</span><span class="sxs-lookup"><span data-stu-id="1cf32-272">Name</span></span></th>
+<th><span data-ttu-id="1cf32-273">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="1cf32-273">Can you sort on this item?</span></span></th>
+<th><span data-ttu-id="1cf32-274">Descrizione</span><span class="sxs-lookup"><span data-stu-id="1cf32-274">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-275"><strong>Rango</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-275"><strong>Rank</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-276">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-276">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-277">Classificazione relativa delle sessioni non riuscite in base all'utente invitato a partecipare alla sessione.</span><span class="sxs-lookup"><span data-stu-id="49e6f-277">Relative ranking of failed sessions based on the user who was invited to join the session.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-275"><strong>Classificazione</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-275"><strong>Rank</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-276">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-276">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-277">Classificazione relativa di sessioni non riuscite in base all'utente invitato a partecipare alla sessione.</span><span class="sxs-lookup"><span data-stu-id="1cf32-277">Relative ranking of failed sessions based on the user who was invited to join the session.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="49e6f-278"><strong>Inizio degli utenti</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-278"><strong>Top from users</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-279">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-279">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-280">Indirizzo SIP dell'utente invitato a partecipare alla sessione.</span><span class="sxs-lookup"><span data-stu-id="49e6f-280">SIP address of the user invited to join the session.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-278"><strong>Da utenti</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-278"><strong>Top from users</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-279">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-279">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-280">Indirizzo SIP dell'utente invitato a partecipare alla sessione.</span><span class="sxs-lookup"><span data-stu-id="1cf32-280">SIP address of the user invited to join the session.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-281"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-281"><strong>Sessions</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-282">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-282">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-283">Numero totale di sessioni non riuscite per utente.</span><span class="sxs-lookup"><span data-stu-id="49e6f-283">Total number of failed sessions per user.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-281"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-281"><strong>Sessions</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-282">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-282">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-283">Numero totale di sessioni non riuscite per utente.</span><span class="sxs-lookup"><span data-stu-id="1cf32-283">Total number of failed sessions per user.</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -439,9 +439,9 @@ ms.locfileid: "41765174"
 
 <div>
 
-## <a name="metrics-for-top-to-users"></a><span data-ttu-id="49e6f-284">Metriche per i primi utenti</span><span class="sxs-lookup"><span data-stu-id="49e6f-284">Metrics for Top To Users</span></span>
+## <a name="metrics-for-top-to-users"></a><span data-ttu-id="1cf32-284">Metrica degli utenti destinatari delle chiamate</span><span class="sxs-lookup"><span data-stu-id="1cf32-284">Metrics for Top To Users</span></span>
 
-<span data-ttu-id="49e6f-285">Nella tabella seguente sono elencate le informazioni fornite nel report di distribuzione dell'errore in base agli utenti che hanno sperimentato più errori quando un altro utente ha provato a chiamarli (detti "a" utenti).</span><span class="sxs-lookup"><span data-stu-id="49e6f-285">The following table lists the information provided in the Failure Distribution Report based on the users who experienced the most failures when another user tried to call them (known as "To" users).</span></span>
+<span data-ttu-id="1cf32-285">Nella tabella seguente vengono elencate le informazioni fornite nel Rapporto distribuzione errori in base agli utenti per cui si sono verificati più errori quando un altro utente ha tentato di chiamarli (utenti "A").</span><span class="sxs-lookup"><span data-stu-id="1cf32-285">The following table lists the information provided in the Failure Distribution Report based on the users who experienced the most failures when another user tried to call them (known as "To" users).</span></span>
 
 
 <table>
@@ -452,26 +452,26 @@ ms.locfileid: "41765174"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="49e6f-286">Nome</span><span class="sxs-lookup"><span data-stu-id="49e6f-286">Name</span></span></th>
-<th><span data-ttu-id="49e6f-287">Si può ordinare su questo elemento?</span><span class="sxs-lookup"><span data-stu-id="49e6f-287">Can you sort on this item?</span></span></th>
-<th><span data-ttu-id="49e6f-288">Descrizione</span><span class="sxs-lookup"><span data-stu-id="49e6f-288">Description</span></span></th>
+<th><span data-ttu-id="1cf32-286">Nome</span><span class="sxs-lookup"><span data-stu-id="1cf32-286">Name</span></span></th>
+<th><span data-ttu-id="1cf32-287">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="1cf32-287">Can you sort on this item?</span></span></th>
+<th><span data-ttu-id="1cf32-288">Descrizione</span><span class="sxs-lookup"><span data-stu-id="1cf32-288">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-289"><strong>Rango</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-289"><strong>Rank</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-290">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-290">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-291">Classificazione relativa delle sessioni non riuscite in base all'utente che ha avviato la sessione.</span><span class="sxs-lookup"><span data-stu-id="49e6f-291">Relative ranking of failed sessions based on the user who initiated the session.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-289"><strong>Classificazione</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-289"><strong>Rank</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-290">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-290">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-291">Classificazione relativa di sessioni non riuscite in base all'utente che ha avviato la sessione.</span><span class="sxs-lookup"><span data-stu-id="1cf32-291">Relative ranking of failed sessions based on the user who initiated the session.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="49e6f-292"><strong>Inizio per gli utenti</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-292"><strong>Top to users</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-293">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-293">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-294">Indirizzo SIP dell'utente che ha avviato la sessione.</span><span class="sxs-lookup"><span data-stu-id="49e6f-294">SIP address of the user who initiated the session.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-292"><strong>A utenti</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-292"><strong>Top to users</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-293">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-293">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-294">Indirizzo SIP dell'utente che ha avviato la sessione.</span><span class="sxs-lookup"><span data-stu-id="1cf32-294">SIP address of the user who initiated the session.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-295"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-295"><strong>Sessions</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-296">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-296">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-297">Numero totale di sessioni non riuscite per utente.</span><span class="sxs-lookup"><span data-stu-id="49e6f-297">Total number of failed sessions per user.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-295"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-295"><strong>Sessions</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-296">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-296">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-297">Numero totale di sessioni non riuscite per utente.</span><span class="sxs-lookup"><span data-stu-id="1cf32-297">Total number of failed sessions per user.</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -481,11 +481,11 @@ ms.locfileid: "41765174"
 
 <div>
 
-## <a name="metrics-for-top-user-agents"></a><span data-ttu-id="49e6f-298">Metriche per gli agenti Top User</span><span class="sxs-lookup"><span data-stu-id="49e6f-298">Metrics for Top User Agents</span></span>
+## <a name="metrics-for-top-user-agents"></a><span data-ttu-id="1cf32-298">Metrica degli agenti utente</span><span class="sxs-lookup"><span data-stu-id="1cf32-298">Metrics for Top User Agents</span></span>
 
-<span data-ttu-id="49e6f-299">La tabella seguente elenca le informazioni fornite nel report di distribuzione dell'errore in base al software dell'endpoint che ha riscontrato la maggior parte degli errori.</span><span class="sxs-lookup"><span data-stu-id="49e6f-299">The following table lists the information provided in the Failure Distribution Report based on the endpoint software that experienced the most failures.</span></span>
+<span data-ttu-id="1cf32-299">Nella tabella riportata di seguito vengono elencate le informazioni fornite nel Rapporto distribuzione errori in base al software endpoint in cui si sono verificati più errori.</span><span class="sxs-lookup"><span data-stu-id="1cf32-299">The following table lists the information provided in the Failure Distribution Report based on the endpoint software that experienced the most failures.</span></span>
 
-### <a name="metrics-for-top-user-agents"></a><span data-ttu-id="49e6f-300">Metriche per gli agenti Top User</span><span class="sxs-lookup"><span data-stu-id="49e6f-300">Metrics for Top User Agents</span></span>
+### <a name="metrics-for-top-user-agents"></a><span data-ttu-id="1cf32-300">Metrica degli agenti utente</span><span class="sxs-lookup"><span data-stu-id="1cf32-300">Metrics for Top User Agents</span></span>
 
 <table>
 <colgroup>
@@ -495,26 +495,26 @@ ms.locfileid: "41765174"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="49e6f-301">Nome</span><span class="sxs-lookup"><span data-stu-id="49e6f-301">Name</span></span></th>
-<th><span data-ttu-id="49e6f-302">Si può ordinare su questo elemento?</span><span class="sxs-lookup"><span data-stu-id="49e6f-302">Can you sort on this item?</span></span></th>
-<th><span data-ttu-id="49e6f-303">Descrizione</span><span class="sxs-lookup"><span data-stu-id="49e6f-303">Description</span></span></th>
+<th><span data-ttu-id="1cf32-301">Nome</span><span class="sxs-lookup"><span data-stu-id="1cf32-301">Name</span></span></th>
+<th><span data-ttu-id="1cf32-302">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="1cf32-302">Can you sort on this item?</span></span></th>
+<th><span data-ttu-id="1cf32-303">Descrizione</span><span class="sxs-lookup"><span data-stu-id="1cf32-303">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-304"><strong>Rango</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-304"><strong>Rank</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-305">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-305">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-306">Classificazione relativa delle sessioni non riuscite in base all'agente utente (software) coinvolto nella sessione.</span><span class="sxs-lookup"><span data-stu-id="49e6f-306">Relative ranking of failed sessions based on the user agent (software) involved in the session.</span></span> <span data-ttu-id="49e6f-307">Ad esempio: RTCC/4.0.0.0 routing in ingresso/4.0.0.0.</span><span class="sxs-lookup"><span data-stu-id="49e6f-307">For example: RTCC/4.0.0.0 Inbound Routing/4.0.0.0.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-304"><strong>Classificazione</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-304"><strong>Rank</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-305">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-305">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-p115">Classificazione relativa di sessioni non riuscite in base all'agente utente (software) associato alla sessione, ad esempio RTCC/4.0.0.0 Routing in ingresso/4.0.0.0.</span><span class="sxs-lookup"><span data-stu-id="1cf32-p115">Relative ranking of failed sessions based on the user agent (software) involved in the session. For example: RTCC/4.0.0.0 Inbound Routing/4.0.0.0.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="49e6f-308"><strong>Agenti utente principali</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-308"><strong>Top user agents</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-309">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-309">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-310">Nome dell'agente utente coinvolto nella sessione non riuscita.</span><span class="sxs-lookup"><span data-stu-id="49e6f-310">Name of the user agent involved in the failed session.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-308"><strong>Da agenti utente</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-308"><strong>Top user agents</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-309">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-309">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-310">Nome dell'agente utente coinvolto nella sessione non riuscita.</span><span class="sxs-lookup"><span data-stu-id="1cf32-310">Name of the user agent involved in the failed session.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="49e6f-311"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="49e6f-311"><strong>Sessions</strong></span></span></p></td>
-<td><p><span data-ttu-id="49e6f-312">No</span><span class="sxs-lookup"><span data-stu-id="49e6f-312">No</span></span></p></td>
-<td><p><span data-ttu-id="49e6f-313">Numero totale di sessioni non riuscite per agente utente.</span><span class="sxs-lookup"><span data-stu-id="49e6f-313">Total number of failed sessions per user agent.</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-311"><strong>Sessioni</strong></span><span class="sxs-lookup"><span data-stu-id="1cf32-311"><strong>Sessions</strong></span></span></p></td>
+<td><p><span data-ttu-id="1cf32-312">No</span><span class="sxs-lookup"><span data-stu-id="1cf32-312">No</span></span></p></td>
+<td><p><span data-ttu-id="1cf32-313">Numero totale di sessioni non riuscite per agente.</span><span class="sxs-lookup"><span data-stu-id="1cf32-313">Total number of failed sessions per user agent.</span></span></p></td>
 </tr>
 </tbody>
 </table>

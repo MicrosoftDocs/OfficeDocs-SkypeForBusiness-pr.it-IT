@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: route dell'area di rete"
+title: 'Lync Server 2013: Route delle aree di rete'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733608
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e84c2b0114393a0d9234e18af8af7c8c98f3d8b5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 83db08d7e0630a74ae5c4366afb3b18ed9d7e567
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765897"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049108"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="network-region-routes-in-lync-server-2013"></a><span data-ttu-id="0e58f-102">Route dell'area di rete in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0e58f-102">Network region routes in Lync Server 2013</span></span>
+# <a name="network-region-routes-in-lync-server-2013"></a><span data-ttu-id="2f010-102">Route delle aree di rete in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2f010-102">Network region routes in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,27 +35,27 @@ ms.locfileid: "41765897"
 
 <span> </span>
 
-<span data-ttu-id="0e58f-103">_**Argomento Ultima modifica:** 2013-02-21_</span><span class="sxs-lookup"><span data-stu-id="0e58f-103">_**Topic Last Modified:** 2013-02-21_</span></span>
+<span data-ttu-id="2f010-103">_**Ultimo argomento modificato:** 2013-02-21_</span><span class="sxs-lookup"><span data-stu-id="2f010-103">_**Topic Last Modified:** 2013-02-21_</span></span>
 
-<span data-ttu-id="0e58f-104">Una *route dell'area di rete* definisce la route tra una coppia di aree della rete.</span><span class="sxs-lookup"><span data-stu-id="0e58f-104">A *network region route* defines the route between a pair of network regions.</span></span> <span data-ttu-id="0e58f-105">Ogni coppia di aree della rete nella distribuzione del controllo di ammissione alle chiamate richiede una route dell'area di rete.</span><span class="sxs-lookup"><span data-stu-id="0e58f-105">Each pair of network regions in your call admission control deployment requires a network region route.</span></span> <span data-ttu-id="0e58f-106">In questo modo ogni area di rete della distribuzione consente di accedere a tutte le altre aree geografiche.</span><span class="sxs-lookup"><span data-stu-id="0e58f-106">This enables every network region within the deployment to access every other region.</span></span> <span data-ttu-id="0e58f-107">Usare le procedure descritte in questa sezione per visualizzare, creare, modificare o eliminare le route dell'area di rete.</span><span class="sxs-lookup"><span data-stu-id="0e58f-107">Use the procedures in this section to view, create, modify, or delete network region routes.</span></span>
+<span data-ttu-id="2f010-p101">Una *route area di rete* definisce la route tra una coppia di aree di rete. Ogni coppia di aree di rete nella distribuzione del servizio Controllo di ammissione di chiamata richiede una route di questo tipo. 	In tal modo ogni area di rete della distribuzione può accedere a tutte le altre aree. Usare le procedure descritte in questa sezione per visualizzare, creare, modificare o eliminare le route aree di rete.</span><span class="sxs-lookup"><span data-stu-id="2f010-p101">A *network region route* defines the route between a pair of network regions. Each pair of network regions in your call admission control deployment requires a network region route. This enables every network region within the deployment to access every other region. Use the procedures in this section to view, create, modify, or delete network region routes.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="0e58f-108">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="0e58f-108">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="2f010-108">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="2f010-108">In This Section</span></span>
 
-  - [<span data-ttu-id="0e58f-109">Creazione o modifica di aree di rete in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0e58f-109">Creating or modifying network regions in Lync Server 2013</span></span>](lync-server-2013-creating-or-modifying-network-regions.md)
+  - [<span data-ttu-id="2f010-109">Creazione o modifica di aree di rete in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2f010-109">Creating or modifying network regions in Lync Server 2013</span></span>](lync-server-2013-creating-or-modifying-network-regions.md)
 
-  - [<span data-ttu-id="0e58f-110">Visualizzazione delle informazioni sulla route dell'area di rete in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0e58f-110">Viewing network region route information in Lync Server 2013</span></span>](lync-server-2013-viewing-network-region-route-information.md)
+  - [<span data-ttu-id="2f010-110">Visualizzazione delle informazioni sulle route delle aree di rete in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2f010-110">Viewing network region route information in Lync Server 2013</span></span>](lync-server-2013-viewing-network-region-route-information.md)
 
-  - [<span data-ttu-id="0e58f-111">Eliminazione di route di area di rete esistenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0e58f-111">Deleting existing network region routes in Lync Server 2013</span></span>](lync-server-2013-deleting-existing-network-region-routes.md)
+  - [<span data-ttu-id="2f010-111">Eliminazione delle route delle aree di rete esistenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2f010-111">Deleting existing network region routes in Lync Server 2013</span></span>](lync-server-2013-deleting-existing-network-region-routes.md)
 
 </div>
 
 <div>
 
-## <a name="reference"></a><span data-ttu-id="0e58f-112">Riferimenti</span><span class="sxs-lookup"><span data-stu-id="0e58f-112">Reference</span></span>
+## <a name="reference"></a><span data-ttu-id="2f010-112">Riferimenti</span><span class="sxs-lookup"><span data-stu-id="2f010-112">Reference</span></span>
 
-[<span data-ttu-id="0e58f-113">Distribuzione di funzionalità vocali avanzate di Enterprise in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0e58f-113">Deploying advanced Enterprise Voice features in Lync Server 2013</span></span>](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
+[<span data-ttu-id="2f010-113">Distribuzione di funzionalità di VoIP aziendale avanzate in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2f010-113">Deploying advanced Enterprise Voice features in Lync Server 2013</span></span>](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
 
 </div>
 

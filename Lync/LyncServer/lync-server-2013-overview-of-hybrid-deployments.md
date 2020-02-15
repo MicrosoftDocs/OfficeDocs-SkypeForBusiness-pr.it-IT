@@ -12,20 +12,20 @@ ms:contentKeyID: 48185845
 ms.date: 05/25/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7e7acc66fa3393785497160cd327b1918c27d85b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4c87e727db8538f92d77d3c125e21c96053317ae
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755540"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044638"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-lync-server-2013-hybrid-deployments"></a><span data-ttu-id="76450-102">Panoramica delle distribuzioni ibride di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="76450-102">Overview of Lync Server 2013 hybrid deployments</span></span>
+# <a name="overview-of-lync-server-2013-hybrid-deployments"></a><span data-ttu-id="fd13f-102">Panoramica delle distribuzioni ibride di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fd13f-102">Overview of Lync Server 2013 hybrid deployments</span></span>
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41755540"
 
 <span> </span>
 
-<span data-ttu-id="76450-103">_**Argomento Ultima modifica:** 2016-05-25_</span><span class="sxs-lookup"><span data-stu-id="76450-103">_**Topic Last Modified:** 2016-05-25_</span></span>
+<span data-ttu-id="fd13f-103">_**Ultimo argomento modificato:** 2016-05-25_</span><span class="sxs-lookup"><span data-stu-id="fd13f-103">_**Topic Last Modified:** 2016-05-25_</span></span>
 
-<span data-ttu-id="76450-104">Una distribuzione ibrida di Lync Server è una distribuzione in cui gli utenti di un dominio, ad esempio contoso.com, vengono divisi tra l'uso di Lync Server locale e Microsoft Lync Online.</span><span class="sxs-lookup"><span data-stu-id="76450-104">A Lync Server hybrid deployment is a deployment where users of a domain, such as contoso.com, are split between using Lync Server on-premises and Microsoft Lync Online.</span></span> <span data-ttu-id="76450-105">Alcuni utenti del dominio sono ospitati nel server Lync locale e alcuni utenti si trovano in Skype for business online.</span><span class="sxs-lookup"><span data-stu-id="76450-105">Some of the domain users are homed on the on-premises Lync Server, and some users are homed in Skype for Business Online.</span></span>
+<span data-ttu-id="fd13f-104">Una distribuzione ibrida di Lync Server è una distribuzione in cui gli utenti di un dominio, ad esempio contoso.com, vengono divisi tra l'utilizzo di Lync Server in locale e Microsoft Lync Online.</span><span class="sxs-lookup"><span data-stu-id="fd13f-104">A Lync Server hybrid deployment is a deployment where users of a domain, such as contoso.com, are split between using Lync Server on-premises and Microsoft Lync Online.</span></span> <span data-ttu-id="fd13f-105">Alcuni utenti del dominio sono ospitati nel Lync Server locale e alcuni utenti sono ospitati in Skype for business online.</span><span class="sxs-lookup"><span data-stu-id="fd13f-105">Some of the domain users are homed on the on-premises Lync Server, and some users are homed in Skype for Business Online.</span></span>
 
-<span data-ttu-id="76450-106">È possibile configurare la distribuzione locale di Lync per Hybrid con Skype for business online e usare la sincronizzazione di Active Directory per sincronizzare gli utenti locali e online.</span><span class="sxs-lookup"><span data-stu-id="76450-106">You can configure your on-premises Lync deployment for hybrid with Skype for Business Online and use Active Directory Synchronization to keep your on-premises and online users synchronized.</span></span> <span data-ttu-id="76450-107">È anche possibile configurare distribuzioni ibride per l'integrazione con Exchange locale e SharePoint o con le applicazioni di Microsoft Office 365, tra cui Exchange Online e SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="76450-107">You can also configure hybrid deployments for integration with on-premises Exchange and SharePoint, or with Microsoft Office 365 applications, including Exchange Online and SharePoint Online.</span></span>
+<span data-ttu-id="fd13f-106">È possibile configurare la distribuzione Lync locale per l'ambiente ibrido con Skype for business online e utilizzare la sincronizzazione di Active Directory per sincronizzare gli utenti locali e online.</span><span class="sxs-lookup"><span data-stu-id="fd13f-106">You can configure your on-premises Lync deployment for hybrid with Skype for Business Online and use Active Directory Synchronization to keep your on-premises and online users synchronized.</span></span> <span data-ttu-id="fd13f-107">È inoltre possibile configurare le distribuzioni ibride per l'integrazione con Exchange locale e SharePoint o con le applicazioni di Microsoft Office 365, tra cui Exchange Online e SharePoint Online.</span><span class="sxs-lookup"><span data-stu-id="fd13f-107">You can also configure hybrid deployments for integration with on-premises Exchange and SharePoint, or with Microsoft Office 365 applications, including Exchange Online and SharePoint Online.</span></span>
 
-<span data-ttu-id="76450-108">Questa sezione illustra la distribuzione delle applicazioni necessarie per una distribuzione ibrida di Lync Server e quindi la configurazione della distribuzione per la gestione degli utenti tra Lync Server locale e Skype for business online.</span><span class="sxs-lookup"><span data-stu-id="76450-108">This section guides you through deploying the applications required for a Lync Server hybrid deployment, and then configuring your deployment to manage users between Lync Server on-premises and Skype for Business Online.</span></span>
+<span data-ttu-id="fd13f-108">In questa sezione viene illustrata la distribuzione delle applicazioni necessarie per una distribuzione ibrida di Lync Server e quindi la configurazione della distribuzione per la gestione degli utenti tra Lync Server locale e Skype for business online.</span><span class="sxs-lookup"><span data-stu-id="fd13f-108">This section guides you through deploying the applications required for a Lync Server hybrid deployment, and then configuring your deployment to manage users between Lync Server on-premises and Skype for Business Online.</span></span>
 
-<span data-ttu-id="76450-109">Per informazioni sulla configurazione della distribuzione locale di Lync Server per l'ibrido con Skype for business online, vedere gli argomenti seguenti:</span><span class="sxs-lookup"><span data-stu-id="76450-109">For information about configuring your on-premises Lync Server deployment for hybrid with Skype for Business Online see the following topics:</span></span>
+<span data-ttu-id="fd13f-109">Per informazioni sulla configurazione della distribuzione di Lync Server locale per l'ambiente ibrido con Skype for business online, vedere i seguenti argomenti:</span><span class="sxs-lookup"><span data-stu-id="fd13f-109">For information about configuring your on-premises Lync Server deployment for hybrid with Skype for Business Online see the following topics:</span></span>
 
-  - [<span data-ttu-id="76450-110">Pianificazione di distribuzioni ibride di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="76450-110">Planning for Lync Server 2013 hybrid deployments</span></span>](lync-server-2013-planning-for-hybrid-deployments.md)
+  - [<span data-ttu-id="fd13f-110">Pianificazione delle distribuzioni ibride di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fd13f-110">Planning for Lync Server 2013 hybrid deployments</span></span>](lync-server-2013-planning-for-hybrid-deployments.md)
 
-  - [<span data-ttu-id="76450-111">Configurazione di distribuzioni ibride per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="76450-111">Configuring Lync Server 2013 hybrid deployments</span></span>](lync-server-2013-configuring-hybrid-deployments.md)
+  - [<span data-ttu-id="fd13f-111">Configurazione delle distribuzioni ibride di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="fd13f-111">Configuring Lync Server 2013 hybrid deployments</span></span>](lync-server-2013-configuring-hybrid-deployments.md)
 
-<span data-ttu-id="76450-112">Per altre informazioni su Skype for business online, vedere [Lync Online](http://go.microsoft.com/fwlink/p/?linkid=282396).</span><span class="sxs-lookup"><span data-stu-id="76450-112">For more information about Skype for Business Online, see [Lync Online](http://go.microsoft.com/fwlink/p/?linkid=282396).</span></span>
+<span data-ttu-id="fd13f-112">Per ulteriori informazioni su Skype for business online, vedere [Lync Online](http://go.microsoft.com/fwlink/p/?linkid=282396).</span><span class="sxs-lookup"><span data-stu-id="fd13f-112">For more information about Skype for Business Online, see [Lync Online](http://go.microsoft.com/fwlink/p/?linkid=282396).</span></span>
 
 </div>
 

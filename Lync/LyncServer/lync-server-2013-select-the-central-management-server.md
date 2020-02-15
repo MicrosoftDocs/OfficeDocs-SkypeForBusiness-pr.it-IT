@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Selezionare il server di gestione centrale'
+title: 'Lync Server 2013: selezionare il server di gestione centrale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183561
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: aad97b0f2009b8f90fa64abc66791d5954c637a1
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f7fa21b154b34dbc576291c34ac5239da6fb2d63
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732476"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048857"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="select-the-central-management-server-in-lync-server-2013"></a><span data-ttu-id="a049e-102">Selezionare il server di gestione centrale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a049e-102">Select the Central Management Server in Lync Server 2013</span></span>
+# <a name="select-the-central-management-server-in-lync-server-2013"></a><span data-ttu-id="dd61d-102">Selezionare il server di gestione centrale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="dd61d-102">Select the Central Management Server in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41732476"
 
 <span> </span>
 
-<span data-ttu-id="a049e-103">_**Argomento Ultima modifica:** 2012-01-02_</span><span class="sxs-lookup"><span data-stu-id="a049e-103">_**Topic Last Modified:** 2012-01-02_</span></span>
+<span data-ttu-id="dd61d-103">_**Ultimo argomento modificato:** 2012-01-02_</span><span class="sxs-lookup"><span data-stu-id="dd61d-103">_**Topic Last Modified:** 2012-01-02_</span></span>
 
-<span data-ttu-id="a049e-104">Prima di poter definire e configurare la topologia, è prima di tutto necessario definire la posizione in cui installare il server di gestione centrale.</span><span class="sxs-lookup"><span data-stu-id="a049e-104">Before you can define and configure your topology, you must first define the location to install the Central Management Server.</span></span>
+<span data-ttu-id="dd61d-104">Prima di poter definire e configurare la topologia, è innanzitutto necessario definire il percorso in cui installare il server di gestione centrale.</span><span class="sxs-lookup"><span data-stu-id="dd61d-104">Before you can define and configure your topology, you must first define the location to install the Central Management Server.</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="a049e-105">Questa operazione non avrà effetto finché non verrà pubblicata una topologia in Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="a049e-105">This will not take effect until you have published a topology in Topology Builder.</span></span> <span data-ttu-id="a049e-106">Per impostare il server di gestione centralizzato prima della creazione e della pubblicazione della topologia, eseguire <STRONG>set-CSConfigurationStoreLocation</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="a049e-106">To set the Central Management Server before the topology is created and published, run <STRONG>Set-CSConfigurationStoreLocation</STRONG>.</span></span>
+> <span data-ttu-id="dd61d-105">Questo non avrà effetto finché non verrà pubblicata una topologia in Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="dd61d-105">This will not take effect until you have published a topology in Topology Builder.</span></span> <span data-ttu-id="dd61d-106">Per impostare il server di gestione centrale prima della creazione e della pubblicazione della topologia, eseguire <STRONG>set-CSConfigurationStoreLocation</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="dd61d-106">To set the Central Management Server before the topology is created and published, run <STRONG>Set-CSConfigurationStoreLocation</STRONG>.</span></span>
 
 
 
@@ -51,13 +51,13 @@ ms.locfileid: "41732476"
 
 <div>
 
-## <a name="to-select-the-central-management-server"></a><span data-ttu-id="a049e-107">Per selezionare il server di gestione centrale</span><span class="sxs-lookup"><span data-stu-id="a049e-107">To select the Central Management Server</span></span>
+## <a name="to-select-the-central-management-server"></a><span data-ttu-id="dd61d-107">Per selezionare il server di gestione centrale</span><span class="sxs-lookup"><span data-stu-id="dd61d-107">To select the Central Management Server</span></span>
 
-1.  <span data-ttu-id="a049e-108">Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Generatore di topologia di Lync Server**.</span><span class="sxs-lookup"><span data-stu-id="a049e-108">Start Topology Builder: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Topology Builder**.</span></span>
+1.  <span data-ttu-id="dd61d-108">Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Generatore di topologie**.</span><span class="sxs-lookup"><span data-stu-id="dd61d-108">Start Topology Builder: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Topology Builder**.</span></span>
 
-2.  <span data-ttu-id="a049e-109">Fare clic con il pulsante destro del mouse sul nodo Lync Server 2013 e quindi scegliere **modifica proprietà**.</span><span class="sxs-lookup"><span data-stu-id="a049e-109">Right-click the Lync Server 2013 node, and then click **Edit Properties**.</span></span>
+2.  <span data-ttu-id="dd61d-109">Fare clic con il pulsante destro del mouse sul nodo Lync Server 2013 e quindi scegliere **modifica proprietà**.</span><span class="sxs-lookup"><span data-stu-id="dd61d-109">Right-click the Lync Server 2013 node, and then click **Edit Properties**.</span></span>
 
-3.  <span data-ttu-id="a049e-110">Nel riquadro Central Management Server selezionare il server front-end per installare il server di gestione centrale e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="a049e-110">In the Central Management Server pane, select the Front End Server to install the Central Management Server on and then click **OK**.</span></span>
+3.  <span data-ttu-id="dd61d-110">Nel riquadro del server di gestione centrale, selezionare il front end server per installare il server di gestione centrale e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="dd61d-110">In the Central Management Server pane, select the Front End Server to install the Central Management Server on and then click **OK**.</span></span>
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Eseguire il rollback degli utenti migrati'
+title: 'Lync Server 2013: eseguire il rollback degli utenti migrati'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185286
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5e8b8c53f835bbbaa363a91ef547dd1d301c8976
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7398e69e5a02924025d63fc48096244d67c49aeb
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732906"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051470"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="roll-back-migrated-users-in-lync-server-2013"></a><span data-ttu-id="91b18-102">Eseguire il rollback degli utenti migrati in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="91b18-102">Roll back migrated users in Lync Server 2013</span></span>
+# <a name="roll-back-migrated-users-in-lync-server-2013"></a><span data-ttu-id="35def-102">Eseguire il rollback degli utenti migrati in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="35def-102">Roll back migrated users in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,20 +35,20 @@ ms.locfileid: "41732906"
 
 <span> </span>
 
-<span data-ttu-id="91b18-103">_**Argomento Ultima modifica:** 2012-10-07_</span><span class="sxs-lookup"><span data-stu-id="91b18-103">_**Topic Last Modified:** 2012-10-07_</span></span>
+<span data-ttu-id="35def-103">_**Ultimo argomento modificato:** 2012-10-07_</span><span class="sxs-lookup"><span data-stu-id="35def-103">_**Topic Last Modified:** 2012-10-07_</span></span>
 
-<span data-ttu-id="91b18-104">Se è necessario eseguire il rollback della funzionalità archivio contatti unificato, ripristinare i contatti solo se l'utente viene spostato di nuovo in Exchange 2010 o Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="91b18-104">If you need to roll back the unified contact store feature, roll back the contacts only if you move the user back to Exchange 2010 or Lync Server 2010.</span></span> <span data-ttu-id="91b18-105">Per eseguire il rollback, disabilitare il criterio per l'utente e quindi il cmdlet **Invoke-CsUcsRollback** .</span><span class="sxs-lookup"><span data-stu-id="91b18-105">To roll back, disable the policy for the user, and then run the **Invoke-CsUcsRollback** cmdlet.</span></span> <span data-ttu-id="91b18-106">Solo l'uso di **Invoke-CsUcsRollback** da solo non è sufficiente per garantire un rollback permanente, perché la migrazione dell'archivio contatti unificato verrà avviata di nuovo se il criterio non è disabilitato.</span><span class="sxs-lookup"><span data-stu-id="91b18-106">Just running **Invoke-CsUcsRollback** alone is not enough to ensure permanent rollback, because unified contact store migration will be initiated again if the policy is not disabled.</span></span> <span data-ttu-id="91b18-107">Se ad esempio viene eseguito il rollback di un utente perché Exchange 2013 viene eseguito il rollback in Exchange 2010 e la cassetta postale dell'utente viene spostata in Exchange 2013, la migrazione dell'archivio contatti unificato verrà avviata di nuovo sette giorni dopo il rollback, purché l'archivio contatti unificato è ancora abilitato per l'utente nei criteri servizi utente.</span><span class="sxs-lookup"><span data-stu-id="91b18-107">For example, if a user is rolled back because Exchange 2013 is rolled back to Exchange 2010, and then the user’s mailbox is moved to Exchange 2013, the unified contact store migration will be initiated again seven days after the rollback, as long as unified contact store is still enabled for the user in the user services policy.</span></span>
+<span data-ttu-id="35def-104">Se è necessario eseguire il rollback della caratteristica archivio contatti unificato, eseguire il rollback dei contatti solo se l'utente viene spostato di nuovo in Exchange 2010 o Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="35def-104">If you need to roll back the unified contact store feature, roll back the contacts only if you move the user back to Exchange 2010 or Lync Server 2010.</span></span> <span data-ttu-id="35def-105">Per eseguire il rollback, disabilitare il criterio per l'utente e quindi eseguire il cmdlet **Invoke-CsUcsRollback**.</span><span class="sxs-lookup"><span data-stu-id="35def-105">To roll back, disable the policy for the user, and then run the **Invoke-CsUcsRollback** cmdlet.</span></span> <span data-ttu-id="35def-106">La sola esecuzione di **Invoke-CsUcsRollback** non è sufficiente ad assicurare un rollback permanente, in quanto la migrazione dell'archivio contatti unificato verrà avviata di nuovo se il criterio non viene disabilitato.</span><span class="sxs-lookup"><span data-stu-id="35def-106">Just running **Invoke-CsUcsRollback** alone is not enough to ensure permanent rollback, because unified contact store migration will be initiated again if the policy is not disabled.</span></span> <span data-ttu-id="35def-107">Ad esempio, se un utente viene eseguito il rollback perché Exchange 2013 viene eseguito il rollback a Exchange 2010 e quindi la cassetta postale dell'utente viene spostata in Exchange 2013, la migrazione dell'archivio contatti unificato verrà avviata di nuovo sette giorni dopo il rollback, purché l'archivio contatti unificato è ancora abilitato per l'utente nei criteri servizi utente.</span><span class="sxs-lookup"><span data-stu-id="35def-107">For example, if a user is rolled back because Exchange 2013 is rolled back to Exchange 2010, and then the user’s mailbox is moved to Exchange 2013, the unified contact store migration will be initiated again seven days after the rollback, as long as unified contact store is still enabled for the user in the user services policy.</span></span>
 
 <div>
 
 
 > [!IMPORTANT]  
-> <span data-ttu-id="91b18-108">Il cmdlet <STRONG>Move-CsUser</STRONG> esegue automaticamente il rollback dell'archivio contatti dell'utente da Exchange 2013 a Lync Server 2013 nelle situazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="91b18-108">The <STRONG>Move-CsUser</STRONG> cmdlet automatically rolls back the user's contact store from Exchange 2013 to Lync Server 2013 in the following situations:</span></span> 
+> <span data-ttu-id="35def-108">Il cmdlet <STRONG>Move-CsUser</STRONG> esegue automaticamente il rollback dell'archivio contatti dell'utente da Exchange 2013 a Lync Server 2013 nei casi seguenti:</span><span class="sxs-lookup"><span data-stu-id="35def-108">The <STRONG>Move-CsUser</STRONG> cmdlet automatically rolls back the user's contact store from Exchange 2013 to Lync Server 2013 in the following situations:</span></span> 
 > <UL>
 > <LI>
-> <P><span data-ttu-id="91b18-109">Quando gli utenti vengono spostati da Lync Server 2013 a Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="91b18-109">When users are moved from Lync Server 2013 to Lync Server 2010.</span></span></P>
+> <P><span data-ttu-id="35def-109">Quando gli utenti vengono spostati da Lync Server 2013 a Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="35def-109">When users are moved from Lync Server 2013 to Lync Server 2010.</span></span></P>
 > <LI>
-> <P><span data-ttu-id="91b18-110">Quando gli utenti vengono migrati, ad esempio quando un utente viene spostato da Lync Online a Lync Server 2013 locale o viceversa.</span><span class="sxs-lookup"><span data-stu-id="91b18-110">When users are migrated cross premises, such as when a user is moved from Lync Online to Lync Server 2013 on-premises, or vice versa.</span></span></P></LI></UL>
+> <P><span data-ttu-id="35def-110">Quando gli utenti eseguono la migrazione di spazi incrociati, ad esempio quando un utente viene spostato da Lync Online a Lync Server 2013 in locale o viceversa.</span><span class="sxs-lookup"><span data-stu-id="35def-110">When users are migrated cross premises, such as when a user is moved from Lync Online to Lync Server 2013 on-premises, or vice versa.</span></span></P></LI></UL>
 
 
 
@@ -58,12 +58,12 @@ ms.locfileid: "41732906"
 
 
 > [!IMPORTANT]  
-> <span data-ttu-id="91b18-111">L'importazione di dati dell'archivio contatti unificati da un database di backup può causare il danneggiamento dei dati dell'archivio contatti unificati se la modalità archivio contatti unificata è cambiata tra l'esportazione e l'importazione.</span><span class="sxs-lookup"><span data-stu-id="91b18-111">Importing unified contact store data from a backup database can cause unified contact store data and user data to become corrupted if the unified contact store mode changed between the export and the import.</span></span> <span data-ttu-id="91b18-112">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="91b18-112">For example:</span></span> 
+> <span data-ttu-id="35def-p102">L'importazione dei dati dell'archivio contatti unificato da un database di backup può danneggiare i dati dell'archivio e degli utenti se la modalità dell'archivio stesso è cambiata tra l'esportazione e l'importazione. Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="35def-p102">Importing unified contact store data from a backup database can cause unified contact store data and user data to become corrupted if the unified contact store mode changed between the export and the import. For example:</span></span> 
 > <UL>
 > <LI>
-> <P><span data-ttu-id="91b18-113">Se si esportano elenchi di contatti prima che i contatti degli utenti vengano migrati a Exchange 2013 e quindi, dopo la migrazione, importino gli stessi dati, i dati dell'archivio contatti unificato e gli elenchi di contatti saranno danneggiati.</span><span class="sxs-lookup"><span data-stu-id="91b18-113">If you export contact lists before the users' contacts are migrated to Exchange 2013 and then, after the migration, import the same data, the unified contact store data and contact lists will be corrupted.</span></span></P>
+> <P><span data-ttu-id="35def-113">Se si esportano gli elenchi di contatti prima della migrazione dei contatti degli utenti a Exchange 2013 e successivamente, dopo la migrazione, vengono importati gli stessi dati, i dati degli archivi dei contatti unificati e gli elenchi di contatti verranno danneggiati.</span><span class="sxs-lookup"><span data-stu-id="35def-113">If you export contact lists before the users' contacts are migrated to Exchange 2013 and then, after the migration, import the same data, the unified contact store data and contact lists will be corrupted.</span></span></P>
 > <LI>
-> <P><span data-ttu-id="91b18-114">Se si esporta UserData dopo la migrazione degli utenti a Exchange 2013, eseguire il rollback della migrazione e quindi, per qualche motivo, importare i dati dopo la migrazione, i dati dell'archivio contatti unificati e gli elenchi di contatti saranno danneggiati.</span><span class="sxs-lookup"><span data-stu-id="91b18-114">If you export userdata after you migrate users to Exchange 2013, roll back the migration, and then for some reason you import the data from after the migration, the unified contact store data and contact lists will be corrupted.</span></span></P></LI></UL>
+> <P><span data-ttu-id="35def-114">Se si esporta UserData dopo aver eseguito la migrazione degli utenti a Exchange 2013, eseguire il rollback della migrazione e quindi, per qualche motivo, i dati vengono importati dopo la migrazione, i dati dell'archivio contatti unificato e gli elenchi di contatti verranno danneggiati.</span><span class="sxs-lookup"><span data-stu-id="35def-114">If you export userdata after you migrate users to Exchange 2013, roll back the migration, and then for some reason you import the data from after the migration, the unified contact store data and contact lists will be corrupted.</span></span></P></LI></UL>
 
 
 
@@ -73,44 +73,44 @@ ms.locfileid: "41732906"
 
 
 > [!IMPORTANT]  
-> <span data-ttu-id="91b18-115">Prima di trasferire una cassetta postale di Exchange da Exchange 2013 a Exchange 2010, l'amministratore di Exchange deve verificare che l'amministratore di Lync Server abbia prima eseguito il rollback dei contatti utente di Lync Server da Exchange 2013 a Lync Server.</span><span class="sxs-lookup"><span data-stu-id="91b18-115">Before you move an Exchange mailbox from Exchange 2013 to Exchange 2010, the Exchange administrator must make sure that the Lync Server administrator has first rolled back the Lync Server user contacts from Exchange 2013 to Lync Server.</span></span> <span data-ttu-id="91b18-116">Per ripristinare i contatti degli archivi di contatti unificati in Lync Server, vedere procedura "per ripristinare i contatti dell'archivio contatti unificati da Exchange 2013 a Lync Server 2013" più avanti in questa sezione.</span><span class="sxs-lookup"><span data-stu-id="91b18-116">To roll back unified contact store contacts to Lync Server, see procedure "To roll back unified contact store contacts from Exchange 2013 to Lync Server 2013," later in this section.</span></span>
+> <span data-ttu-id="35def-115">Prima di spostare una cassetta postale di Exchange da Exchange 2013 a Exchange 2010, l'amministratore di Exchange deve verificare che l'amministratore di Lync Server abbia prima eseguito il rollback dei contatti utente di Lync Server da Exchange 2013 a Lync Server.</span><span class="sxs-lookup"><span data-stu-id="35def-115">Before you move an Exchange mailbox from Exchange 2013 to Exchange 2010, the Exchange administrator must make sure that the Lync Server administrator has first rolled back the Lync Server user contacts from Exchange 2013 to Lync Server.</span></span> <span data-ttu-id="35def-116">Per eseguire il rollback dei contatti dell'archivio contatti unificato in Lync Server, vedere la procedura "per eseguire il rollback degli archivi di contatti unificati da Exchange 2013 a Lync Server 2013" più avanti in questa sezione.</span><span class="sxs-lookup"><span data-stu-id="35def-116">To roll back unified contact store contacts to Lync Server, see procedure "To roll back unified contact store contacts from Exchange 2013 to Lync Server 2013," later in this section.</span></span>
 
 
 
 </div>
 
-<span data-ttu-id="91b18-117">La procedura seguente descrive come eseguire il rollback dei contatti utente.</span><span class="sxs-lookup"><span data-stu-id="91b18-117">The following procedure describes how to roll back user contacts.</span></span> <span data-ttu-id="91b18-118">Se si usa il cmdlet **Move-CsUser** per spostare gli utenti tra lync Server 2013 e lync Server 2010, è possibile ignorare questi passaggi perché il cmdlet **Move-CsUser** esegue automaticamente il rollback dell'archivio contatti di unifed quando sposta gli utenti da Lync Server 2013 a Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="91b18-118">If you use the **Move-CsUser** cmdlet to move users between Lync Server 2013 and Lync Server 2010, you can skip these steps because the **Move-CsUser** cmdlet automatically rolls back unifed contact store when it moves users from Lync Server 2013 to Lync Server 2010.</span></span> <span data-ttu-id="91b18-119">**Move-CsUser** non Disabilita i criteri archivio contatti unificati, quindi la migrazione all'archivio contatti unificato si ripresenta se l'utente viene spostato di nuovo in Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="91b18-119">**Move-CsUser** does not disable unified contact store policy, so the migration to unified contact store will recur if the user is moved back to Lync Server 2013.</span></span>
+<span data-ttu-id="35def-117">Nella procedura seguente viene illustrato come eseguire il rollback dei contatti degli utenti.</span><span class="sxs-lookup"><span data-stu-id="35def-117">The following procedure describes how to roll back user contacts.</span></span> <span data-ttu-id="35def-118">Se si utilizza il cmdlet **Move-CsUser** per spostare gli utenti tra lync Server 2013 e lync Server 2010, è possibile ignorare questi passaggi perché il cmdlet **Move-CsUser** esegue automaticamente il rollback dell'archivio contatti di unifed quando sposta gli utenti da Lync Server 2013 a Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="35def-118">If you use the **Move-CsUser** cmdlet to move users between Lync Server 2013 and Lync Server 2010, you can skip these steps because the **Move-CsUser** cmdlet automatically rolls back unifed contact store when it moves users from Lync Server 2013 to Lync Server 2010.</span></span> <span data-ttu-id="35def-119">**Move-CsUser** non disattiva il criterio dell'archivio contatti unificato, quindi la migrazione all'archivio contatti unificato si ripeterà se l'utente viene spostato di nuovo su Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="35def-119">**Move-CsUser** does not disable unified contact store policy, so the migration to unified contact store will recur if the user is moved back to Lync Server 2013.</span></span>
 
 <div>
 
-## <a name="to-roll-back-user-contacts-from-lync-server-2013-to-lync-server-2010"></a><span data-ttu-id="91b18-120">Per ripristinare i contatti utente da Lync Server 2013 a Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="91b18-120">To roll back user contacts from Lync Server 2013 to Lync Server 2010</span></span>
+## <a name="to-roll-back-user-contacts-from-lync-server-2013-to-lync-server-2010"></a><span data-ttu-id="35def-120">Per eseguire il rollback dei contatti utente da Lync Server 2013 a Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="35def-120">To roll back user contacts from Lync Server 2013 to Lync Server 2010</span></span>
 
-1.  <span data-ttu-id="91b18-121">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="91b18-121">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
+1.  <span data-ttu-id="35def-121">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="35def-121">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
 
-2.  <span data-ttu-id="91b18-122">Disabilitare l'archivio contatti unificato per consentire agli utenti di eseguire il rollback in modo che non vengano rimigrati dopo il rollback.</span><span class="sxs-lookup"><span data-stu-id="91b18-122">Disable unified contact store for the users to be rolled back so that they will not be remigrated after rollback.</span></span> <span data-ttu-id="91b18-123">Eseguire questo passaggio solo se si vuole verificare che gli utenti non vengano rimigrati in futuro. Per disabilitare l'archivio contatti unificato per singoli utenti, nella riga di comando digitare:</span><span class="sxs-lookup"><span data-stu-id="91b18-123">(Perform this step only if you want to make sure that users will not remigrate in the future.) To disable unified contact store for individual users, at the command line, type:</span></span>
+2.  <span data-ttu-id="35def-p105">Disabilitare l'archivio contatti unificato per gli utenti di cui è necessario eseguire il rollback in modo che, dopo il rollback, non ne venga ripetuta la migrazione. Eseguire questo passaggio solo se si desidera essere certi che gli utenti non vengano ritrasferiti in futuro. Per disabilitare l'archivio contatti unificato per i singoli utenti, nella riga di comando digitare quanto segue:</span><span class="sxs-lookup"><span data-stu-id="35def-p105">Disable unified contact store for the users to be rolled back so that they will not be remigrated after rollback. (Perform this step only if you want to make sure that users will not remigrate in the future.) To disable unified contact store for individual users, at the command line, type:</span></span>
     
         Set-CsUserServicesPolicy -Identity "<policy name>" -UcsAllowed $False
     
-    <span data-ttu-id="91b18-124">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="91b18-124">For example:</span></span>
+    <span data-ttu-id="35def-124">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="35def-124">For example:</span></span>
     
         Set-CsUserServicesPolicy -Identity "UCS Enabled Users" -UcsAllowed $False
 
-3.  <span data-ttu-id="91b18-125">Prima di spostare un utente da Lync Server 2013 a Lync Server 2010, eseguire il rollback dell'elenco contatti per gli utenti specificati in Lync Server.</span><span class="sxs-lookup"><span data-stu-id="91b18-125">Before moving a user from Lync Server 2013 to Lync Server 2010, roll back the Buddy List for the specified users on Lync Server.</span></span>
+3.  <span data-ttu-id="35def-125">Prima di spostare un utente da Lync Server 2013 a Lync Server 2010, eseguire il rollback dell'elenco contatti per gli utenti specificati in Lync Server.</span><span class="sxs-lookup"><span data-stu-id="35def-125">Before moving a user from Lync Server 2013 to Lync Server 2010, roll back the Buddy List for the specified users on Lync Server.</span></span>
     
     <div>
     
 
     > [!IMPORTANT]  
-    > <span data-ttu-id="91b18-126">Se questo passaggio viene omesso, l'elenco contatti verrà perso.</span><span class="sxs-lookup"><span data-stu-id="91b18-126">If this step is omitted, the Buddy List will be lost.</span></span>
+    > <span data-ttu-id="35def-126">Se si ignora questo passaggio, l'elenco contatti andrà perso.</span><span class="sxs-lookup"><span data-stu-id="35def-126">If this step is omitted, the Buddy List will be lost.</span></span>
 
     
     </div>
 
-4.  <span data-ttu-id="91b18-127">Eseguire il rollback degli utenti specificati.</span><span class="sxs-lookup"><span data-stu-id="91b18-127">Roll back the specified users.</span></span> <span data-ttu-id="91b18-128">Nella riga di comando digitare:</span><span class="sxs-lookup"><span data-stu-id="91b18-128">At the command line, type:</span></span>
+4.  <span data-ttu-id="35def-p106">Eseguire il rollback degli utenti specificati. Nella riga di comando digitare quanto segue:</span><span class="sxs-lookup"><span data-stu-id="35def-p106">Roll back the specified users. At the command line, type:</span></span>
     
         Invoke-CsUcsRollback -Identity "<user display name>"
     
-    <span data-ttu-id="91b18-129">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="91b18-129">For example:</span></span>
+    <span data-ttu-id="35def-129">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="35def-129">For example:</span></span>
     
         Invoke-CsUcsRollback -Identity "Ken Myer"
     
@@ -118,7 +118,7 @@ ms.locfileid: "41732906"
     
 
     > [!IMPORTANT]  
-    > <span data-ttu-id="91b18-130">Non è consigliabile usare l'opzione – Force per forzare il rollback.</span><span class="sxs-lookup"><span data-stu-id="91b18-130">We do not recommend using the –Force option to force the rollback.</span></span> <span data-ttu-id="91b18-131">Se si usa questa opzione, i contatti degli utenti andranno perduti.</span><span class="sxs-lookup"><span data-stu-id="91b18-131">If you use this option, the users' contacts will be lost.</span></span>
+    > <span data-ttu-id="35def-p107">Non è consigliabile utilizzare l'opzione –Force per forzare il rollback. Se si utilizza tale opzione, i contatti degli utenti andranno persi.</span><span class="sxs-lookup"><span data-stu-id="35def-p107">We do not recommend using the –Force option to force the rollback. If you use this option, the users' contacts will be lost.</span></span>
 
     
     </div>
@@ -127,23 +127,23 @@ ms.locfileid: "41732906"
 
 <div>
 
-## <a name="to-roll-back-unified-contact-store-contacts-from-exchange-2013-to-lync-server-2013"></a><span data-ttu-id="91b18-132">Per eseguire il rollback dei contatti dell'archivio contatti unificati da Exchange 2013 a Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="91b18-132">To roll back unified contact store contacts from Exchange 2013 to Lync Server 2013</span></span>
+## <a name="to-roll-back-unified-contact-store-contacts-from-exchange-2013-to-lync-server-2013"></a><span data-ttu-id="35def-132">Per eseguire il rollback dei contatti dell'archivio contatti unificato da Exchange 2013 a Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="35def-132">To roll back unified contact store contacts from Exchange 2013 to Lync Server 2013</span></span>
 
-1.  <span data-ttu-id="91b18-133">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="91b18-133">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
+1.  <span data-ttu-id="35def-133">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="35def-133">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
 
-2.  <span data-ttu-id="91b18-134">Disabilitare l'archivio contatti unificato per consentire agli utenti di eseguire il rollback in modo che non vengano rimigrati dopo il rollback.</span><span class="sxs-lookup"><span data-stu-id="91b18-134">Disable unified contact store for the users to be rolled back so that they will not be remigrated after rollback.</span></span> <span data-ttu-id="91b18-135">Per disabilitare l'archivio contatti unificato per singoli utenti, nella riga di comando digitare:</span><span class="sxs-lookup"><span data-stu-id="91b18-135">To disable unified contact store for individual users, at the command line, type:</span></span>
+2.  <span data-ttu-id="35def-p108">Disabilitare l'archivio contatti unificato per gli utenti di cui è necessario eseguire il rollback in modo che, dopo il rollback, non ne venga ripetuta la migrazione. Per disabilitare l'archivio contatti unificato per i singoli utenti, nella riga di comando digitare quanto segue:</span><span class="sxs-lookup"><span data-stu-id="35def-p108">Disable unified contact store for the users to be rolled back so that they will not be remigrated after rollback. To disable unified contact store for individual users, at the command line, type:</span></span>
     
         Set-CsUserServicesPolicy -Identity "<policy name>" -UcsAllowed $False
     
-    <span data-ttu-id="91b18-136">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="91b18-136">For example:</span></span>
+    <span data-ttu-id="35def-136">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="35def-136">For example:</span></span>
     
         Set-CsUserServicesPolicy -Identity "UCS Enabled Users" -UcsAllowed $False
 
-3.  <span data-ttu-id="91b18-137">Eseguire il rollback degli utenti specificati.</span><span class="sxs-lookup"><span data-stu-id="91b18-137">Roll back the specified users.</span></span> <span data-ttu-id="91b18-138">Nella riga di comando digitare:</span><span class="sxs-lookup"><span data-stu-id="91b18-138">At the command line, type:</span></span>
+3.  <span data-ttu-id="35def-p109">Eseguire il rollback degli utenti specificati. Nella riga di comando digitare quanto segue:</span><span class="sxs-lookup"><span data-stu-id="35def-p109">Roll back the specified users. At the command line, type:</span></span>
     
         Invoke-CsUcsRollback -Identity "<user display name>"
     
-    <span data-ttu-id="91b18-139">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="91b18-139">For example:</span></span>
+    <span data-ttu-id="35def-139">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="35def-139">For example:</span></span>
     
         Invoke-CsUcsRollback -Identity "Ken Myer"
     
@@ -151,12 +151,12 @@ ms.locfileid: "41732906"
     
 
     > [!IMPORTANT]  
-    > <span data-ttu-id="91b18-140">Prima di tutto, è necessario eseguire il rollback dell'utente di Lync Server e quindi la cassetta postale di Exchange 2013.</span><span class="sxs-lookup"><span data-stu-id="91b18-140">You must first roll back the Lync Server user, and then move the Exchange 2013 mailbox.</span></span> <span data-ttu-id="91b18-141">L'amministratore di Exchange viene bloccato dal rollback di Exchange fino al completamento del ripristino di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="91b18-141">The Exchange administrator is blocked from rolling back Exchange until the Lync Server rollback is complete.</span></span> <span data-ttu-id="91b18-142">Non è consigliabile usare l'opzione – Force per forzare il rollback.</span><span class="sxs-lookup"><span data-stu-id="91b18-142">We do not recommend using the –Force option to force the rollback.</span></span> <span data-ttu-id="91b18-143">Se si usa questa opzione, i contatti degli utenti andranno perduti.</span><span class="sxs-lookup"><span data-stu-id="91b18-143">If you use this option, the users' contacts will be lost.</span></span>
+    > <span data-ttu-id="35def-140">È necessario innanzitutto eseguire il rollback dell'utente di Lync Server e quindi spostare la cassetta postale di Exchange 2013.</span><span class="sxs-lookup"><span data-stu-id="35def-140">You must first roll back the Lync Server user, and then move the Exchange 2013 mailbox.</span></span> <span data-ttu-id="35def-141">L'amministratore di Exchange è bloccato dal rollback di Exchange fino al completamento del ripristino di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="35def-141">The Exchange administrator is blocked from rolling back Exchange until the Lync Server rollback is complete.</span></span> <span data-ttu-id="35def-142">Non è consigliabile utilizzare l'opzione –Force per forzare il rollback.</span><span class="sxs-lookup"><span data-stu-id="35def-142">We do not recommend using the –Force option to force the rollback.</span></span> <span data-ttu-id="35def-143">Se si utilizza tale opzione, i contatti degli utenti andranno persi.</span><span class="sxs-lookup"><span data-stu-id="35def-143">If you use this option, the users' contacts will be lost.</span></span>
 
     
     </div>
 
-4.  <span data-ttu-id="91b18-144">Dopo aver eseguito il rollback dell'utente a Lync Server, l'amministratore di Exchange può eseguire il rollback dell'utente di Exchange da Exchange 2013 a Exchange 2010.</span><span class="sxs-lookup"><span data-stu-id="91b18-144">After you roll back the user to Lync Server, the Exchange administrator can roll back the Exchange user from Exchange 2013 to Exchange 2010.</span></span>
+4.  <span data-ttu-id="35def-144">Dopo aver eseguito il rollback dell'utente a Lync Server, l'amministratore di Exchange può eseguire il rollback dell'utente di Exchange da Exchange 2013 a Exchange 2010.</span><span class="sxs-lookup"><span data-stu-id="35def-144">After you roll back the user to Lync Server, the Exchange administrator can roll back the Exchange user from Exchange 2013 to Exchange 2010.</span></span>
 
 </div>
 

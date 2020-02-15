@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: eliminare un intervallo di Orbit di Call Park'
+title: 'Lync Server 2013: eliminare un intervallo di orbit del parcheggio di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184713
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 934559f1b67c1325684ee5b477be18ed112224df
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: caabdfd258bf6f1cc2e30eeed0ac2cdd56f7502e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726216"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037656"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="delete-a-call-park-orbit-range-in-lync-server-2013"></a><span data-ttu-id="2abbc-102">Eliminare un intervallo di Orbit di Call Park in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2abbc-102">Delete a Call Park orbit range in Lync Server 2013</span></span>
+# <a name="delete-a-call-park-orbit-range-in-lync-server-2013"></a><span data-ttu-id="742e9-102">Eliminare un intervallo di codici orbit del parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="742e9-102">Delete a Call Park orbit range in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,41 +35,41 @@ ms.locfileid: "41726216"
 
 <span> </span>
 
-<span data-ttu-id="2abbc-103">_**Argomento Ultima modifica:** 2013-02-20_</span><span class="sxs-lookup"><span data-stu-id="2abbc-103">_**Topic Last Modified:** 2013-02-20_</span></span>
+<span data-ttu-id="742e9-103">_**Ultimo argomento modificato:** 2013-02-20_</span><span class="sxs-lookup"><span data-stu-id="742e9-103">_**Topic Last Modified:** 2013-02-20_</span></span>
 
-<span data-ttu-id="2abbc-104">Usare una delle procedure seguenti per eliminare un intervallo di orbit del parcheggio di chiamata.</span><span class="sxs-lookup"><span data-stu-id="2abbc-104">Use one of the following procedures to delete a Call Park orbit range.</span></span>
+<span data-ttu-id="742e9-104">Per eliminare un intervallo di codici orbit del parcheggio di chiamata, utilizzare una delle procedure seguenti.</span><span class="sxs-lookup"><span data-stu-id="742e9-104">Use one of the following procedures to delete a Call Park orbit range.</span></span>
 
 <div>
 
-## <a name="to-use-lync-server-control-panel-to-delete-a-call-park-orbit-range"></a><span data-ttu-id="2abbc-105">Per usare il pannello di controllo di Lync Server per eliminare un intervallo di Orbit di Call Park</span><span class="sxs-lookup"><span data-stu-id="2abbc-105">To use Lync Server Control Panel to delete a Call Park orbit range</span></span>
+## <a name="to-use-lync-server-control-panel-to-delete-a-call-park-orbit-range"></a><span data-ttu-id="742e9-105">Per utilizzare il pannello di controllo di Lync Server per eliminare un intervallo di codici orbit del parcheggio di chiamata</span><span class="sxs-lookup"><span data-stu-id="742e9-105">To use Lync Server Control Panel to delete a Call Park orbit range</span></span>
 
-1.  <span data-ttu-id="2abbc-106">Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator.</span><span class="sxs-lookup"><span data-stu-id="2abbc-106">Log on to the computer as a member of the RTCUniversalServerAdmins group, or as a member of the CsVoiceAdministrator, CsServerAdministrator, or CsAdministrator role.</span></span> <span data-ttu-id="2abbc-107">Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span><span class="sxs-lookup"><span data-stu-id="2abbc-107">For details, see [Delegate setup permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span></span>
+1.  <span data-ttu-id="742e9-106">Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator.</span><span class="sxs-lookup"><span data-stu-id="742e9-106">Log on to the computer as a member of the RTCUniversalServerAdmins group, or as a member of the CsVoiceAdministrator, CsServerAdministrator, or CsAdministrator role.</span></span> <span data-ttu-id="742e9-107">Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span><span class="sxs-lookup"><span data-stu-id="742e9-107">For details, see [Delegate setup permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span></span>
 
-2.  <span data-ttu-id="2abbc-108">Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="2abbc-108">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="2abbc-109">Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="2abbc-109">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="742e9-108">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="742e9-108">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="742e9-109">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="742e9-109">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="2abbc-110">Sulla barra di spostamento sinistra fare clic su **caratteristiche vocali** e quindi su **Call Park**.</span><span class="sxs-lookup"><span data-stu-id="2abbc-110">In the left navigation bar, click **Voice Features** and then click **Call Park**.</span></span>
+3.  <span data-ttu-id="742e9-110">Sulla barra di spostamento sinistra fare clic su **Funzionalità vocali** e quindi su **Parcheggio di chiamata**.</span><span class="sxs-lookup"><span data-stu-id="742e9-110">In the left navigation bar, click **Voice Features** and then click **Call Park**.</span></span>
 
-4.  <span data-ttu-id="2abbc-111">Nel campo di ricerca della pagina **Call Park** digitare tutto o parte del nome dell'intervallo di Orbit che si desidera eliminare.</span><span class="sxs-lookup"><span data-stu-id="2abbc-111">On the **Call Park** page, in the search field, type all or part of the name of the orbit range that you want to delete.</span></span>
+4.  <span data-ttu-id="742e9-111">Nella pagina **Parcheggio di chiamata**, nel campo di ricerca, digitare il nome, o parte di esso, dell'intervallo di codici orbit che si desidera eliminare.</span><span class="sxs-lookup"><span data-stu-id="742e9-111">On the **Call Park** page, in the search field, type all or part of the name of the orbit range that you want to delete.</span></span>
 
-5.  <span data-ttu-id="2abbc-112">Nell'elenco di orbite risultante fare clic sull'orbita, fare clic su **modifica**e quindi su **Elimina**.</span><span class="sxs-lookup"><span data-stu-id="2abbc-112">In the resulting list of orbits, click the orbit, click **Edit**, and then click **Delete**.</span></span>
+5.  <span data-ttu-id="742e9-112">Nell'elenco di codici orbit fare clic sui codici orbit, fare clic su **Modifica** e quindi su **Elimina**.</span><span class="sxs-lookup"><span data-stu-id="742e9-112">In the resulting list of orbits, click the orbit, click **Edit**, and then click **Delete**.</span></span>
 
-6.  <span data-ttu-id="2abbc-113">Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="2abbc-113">Click **OK**.</span></span>
+6.  <span data-ttu-id="742e9-113">Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="742e9-113">Click **OK**.</span></span>
 
 </div>
 
 <div>
 
-## <a name="to-use-windows-powershell-to-delete-a-call-park-orbit-range"></a><span data-ttu-id="2abbc-114">Per usare Windows PowerShell per eliminare un intervallo di Orbit di Call Park</span><span class="sxs-lookup"><span data-stu-id="2abbc-114">To use Windows PowerShell to delete a Call Park orbit range</span></span>
+## <a name="to-use-windows-powershell-to-delete-a-call-park-orbit-range"></a><span data-ttu-id="742e9-114">Per utilizzare Windows PowerShell per eliminare un intervallo di codici orbit del parcheggio di chiamata</span><span class="sxs-lookup"><span data-stu-id="742e9-114">To use Windows PowerShell to delete a Call Park orbit range</span></span>
 
-1.  <span data-ttu-id="2abbc-115">Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di [configurazione delegate in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).</span><span class="sxs-lookup"><span data-stu-id="2abbc-115">Log on to the computer where Lync Server Management Shell is installed as a member of the RTCUniversalServerAdmins group or with the necessary user rights as described in [Delegate setup permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span></span>
+1.  <span data-ttu-id="742e9-115">Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in [delegate Setup Permissions in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).</span><span class="sxs-lookup"><span data-stu-id="742e9-115">Log on to the computer where Lync Server Management Shell is installed as a member of the RTCUniversalServerAdmins group or with the necessary user rights as described in [Delegate setup permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).</span></span>
 
-2.  <span data-ttu-id="2abbc-116">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="2abbc-116">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
+2.  <span data-ttu-id="742e9-116">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="742e9-116">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
 
-3.  <span data-ttu-id="2abbc-117">Nella riga di comando digitare:</span><span class="sxs-lookup"><span data-stu-id="2abbc-117">At the command line, type:</span></span>
+3.  <span data-ttu-id="742e9-117">Nella riga di comando digitare il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="742e9-117">At the command line, type:</span></span>
     
         Remove-CsCallParkOrbit -Identity "<orbit range name>" 
     
-    <span data-ttu-id="2abbc-118">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="2abbc-118">For example:</span></span>
+    <span data-ttu-id="742e9-118">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="742e9-118">For example:</span></span>
     
         Remove-CsCallParkOrbit -Identity "Redmond orbit 1"
     
@@ -77,7 +77,7 @@ ms.locfileid: "41726216"
     
 
     > [!NOTE]  
-    > <span data-ttu-id="2abbc-119">Per informazioni dettagliate su altre opzioni, vedere <A href="https://docs.microsoft.com/powershell/module/skype/Remove-CsCallParkOrbit">Remove-CsCallParkOrbit</A>.</span><span class="sxs-lookup"><span data-stu-id="2abbc-119">For details about more options, see <A href="https://docs.microsoft.com/powershell/module/skype/Remove-CsCallParkOrbit">Remove-CsCallParkOrbit</A>.</span></span>
+    > <span data-ttu-id="742e9-119">Per informazioni dettagliate su altre opzioni, vedere <A href="https://docs.microsoft.com/powershell/module/skype/Remove-CsCallParkOrbit">Remove-CsCallParkOrbit</A>.</span><span class="sxs-lookup"><span data-stu-id="742e9-119">For details about more options, see <A href="https://docs.microsoft.com/powershell/module/skype/Remove-CsCallParkOrbit">Remove-CsCallParkOrbit</A>.</span></span>
 
     
     </div>
@@ -86,14 +86,14 @@ ms.locfileid: "41726216"
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="2abbc-120">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="2abbc-120">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="742e9-120">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="742e9-120">See Also</span></span>
 
 
-[<span data-ttu-id="2abbc-121">Creare o modificare un intervallo orbit di Call Park in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2abbc-121">Create or modify a Call Park orbit range in Lync Server 2013</span></span>](lync-server-2013-create-or-modify-a-call-park-orbit-range.md)  
+[<span data-ttu-id="742e9-121">Creare o modificare un intervallo di codici orbit del parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="742e9-121">Create or modify a Call Park orbit range in Lync Server 2013</span></span>](lync-server-2013-create-or-modify-a-call-park-orbit-range.md)  
 
 
-[<span data-ttu-id="2abbc-122">Remove-CsCallParkOrbit</span><span class="sxs-lookup"><span data-stu-id="2abbc-122">Remove-CsCallParkOrbit</span></span>](https://docs.microsoft.com/powershell/module/skype/Remove-CsCallParkOrbit)  
-[<span data-ttu-id="2abbc-123">Get-CsCallParkOrbit</span><span class="sxs-lookup"><span data-stu-id="2abbc-123">Get-CsCallParkOrbit</span></span>](https://docs.microsoft.com/powershell/module/skype/Get-CsCallParkOrbit)  
+[<span data-ttu-id="742e9-122">Remove-CsCallParkOrbit</span><span class="sxs-lookup"><span data-stu-id="742e9-122">Remove-CsCallParkOrbit</span></span>](https://docs.microsoft.com/powershell/module/skype/Remove-CsCallParkOrbit)  
+[<span data-ttu-id="742e9-123">Get-CsCallParkOrbit</span><span class="sxs-lookup"><span data-stu-id="742e9-123">Get-CsCallParkOrbit</span></span>](https://docs.microsoft.com/powershell/module/skype/Get-CsCallParkOrbit)  
   
 
 </div>

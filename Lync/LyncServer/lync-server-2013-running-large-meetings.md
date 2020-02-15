@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: eseguire riunioni di grandi dimensioni'
+title: 'Lync Server 2013: esecuzione di riunioni di grandi dimensioni'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185603
 ms.date: 01/17/2019
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0e3dacecfcb619d9b2a7142c562572f60b121894
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: efc7d3d105b09f3a917829e5610396b49f43d923
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765054"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051018"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="running-large-meetings-in-lync-server-2013"></a><span data-ttu-id="96588-102">Eseguire riunioni di grandi dimensioni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="96588-102">Running large meetings in Lync Server 2013</span></span>
+# <a name="running-large-meetings-in-lync-server-2013"></a><span data-ttu-id="d7027-102">Esecuzione di riunioni di grandi dimensioni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d7027-102">Running large meetings in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41765054"
 
 <span> </span>
 
-<span data-ttu-id="96588-103">_**Argomento Ultima modifica:** 2019-01-17_</span><span class="sxs-lookup"><span data-stu-id="96588-103">_**Topic Last Modified:** 2019-01-17_</span></span>
+<span data-ttu-id="d7027-103">_**Ultimo argomento modificato:** 2019-01-17_</span><span class="sxs-lookup"><span data-stu-id="d7027-103">_**Topic Last Modified:** 2019-01-17_</span></span>
 
-<span data-ttu-id="96588-104">Con diverse centinaia di migliaia di utenti in una riunione, è buona norma avere una persona dedicata che modera la sessione online di una riunione di grandi dimensioni.</span><span class="sxs-lookup"><span data-stu-id="96588-104">With several hundred to a thousand users in a meeting, it is a good practice to have a dedicated person moderate the online session of a large meeting.</span></span> <span data-ttu-id="96588-105">Questa persona dedicata può essere un delegato dell'organizzatore della riunione o un membro del personale di supporto per la riunione di grandi dimensioni dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="96588-105">This dedicated person can be a delegate of the meeting organizer or a member of the organization’s large-meeting support staff.</span></span> <span data-ttu-id="96588-106">È importante aggiungere il moderatore della riunione dedicato come relatore al momento della pianificazione della riunione, anche se è possibile promuovere un partecipante alla riunione online per il ruolo di relatore mentre la riunione è in corso.</span><span class="sxs-lookup"><span data-stu-id="96588-106">It is important to add the dedicated meeting moderator as a presenter at the time that the meeting is scheduled, although it is possible to promote an online meeting attendee to the presenter role while the meeting is in progress.</span></span>
+<span data-ttu-id="d7027-104">Con diverse centinaia di migliaia di utenti in una riunione, è consigliabile avere una persona dedicata a moderare la sessione online di una riunione di grandi dimensioni.</span><span class="sxs-lookup"><span data-stu-id="d7027-104">With several hundred to a thousand users in a meeting, it is a good practice to have a dedicated person moderate the online session of a large meeting.</span></span> <span data-ttu-id="d7027-105">Questa persona può essere un delegato dell'organizzatore della riunione oppure un membro del personale di supporto tecnico per le riunioni di grandi dimensioni dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="d7027-105">This dedicated person can be a delegate of the meeting organizer or a member of the organization’s large-meeting support staff.</span></span> <span data-ttu-id="d7027-106">È importante aggiungere il moderatore dedicato di una riunione come relatore al momento della pianificazione della riunione, sebbene sia possibile alzare di livello un partecipante della riunione online al ruolo di relatore nel corso della riunione.</span><span class="sxs-lookup"><span data-stu-id="d7027-106">It is important to add the dedicated meeting moderator as a presenter at the time that the meeting is scheduled, although it is possible to promote an online meeting attendee to the presenter role while the meeting is in progress.</span></span>
 
-<span data-ttu-id="96588-107">Il moderatore della riunione può usare le funzionalità di relatore seguenti dei client di Lync Server 2013 per gestire la riunione di grandi dimensioni:</span><span class="sxs-lookup"><span data-stu-id="96588-107">The meeting moderator can use the following presenter functionalities of Lync Server 2013 clients to manage the large meeting:</span></span>
+<span data-ttu-id="d7027-107">Il moderatore della riunione può utilizzare le seguenti funzionalità del relatore dei client di Lync Server 2013 per gestire la riunione di grandi dimensioni:</span><span class="sxs-lookup"><span data-stu-id="d7027-107">The meeting moderator can use the following presenter functionalities of Lync Server 2013 clients to manage the large meeting:</span></span>
 
-- <span data-ttu-id="96588-108">Modificare i tipi di accesso alle riunioni.</span><span class="sxs-lookup"><span data-stu-id="96588-108">Change meeting access types.</span></span>
+- <span data-ttu-id="d7027-108">Modificare i tipi di accesso alle riunioni.</span><span class="sxs-lookup"><span data-stu-id="d7027-108">Change meeting access types.</span></span>
 
-- <span data-ttu-id="96588-109">Invitare altri partecipanti durante la riunione usando la funzionalità di trascinamento della selezione, la chiamata telefonica o la posta elettronica di Lync.</span><span class="sxs-lookup"><span data-stu-id="96588-109">Invite additional participants during the meeting using Lync drag and drop functionality, phone dial out, or email.</span></span>
+- <span data-ttu-id="d7027-109">Invitare altri partecipanti durante la riunione utilizzando la funzionalità di trascinamento della selezione di Lync, la chiamata in uscita o la posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="d7027-109">Invite additional participants during the meeting using Lync drag and drop functionality, phone dial out, or email.</span></span>
 
-- <span data-ttu-id="96588-110">Gestire il contenuto della riunione, incluso il caricamento del contenuto, l'eliminazione del contenuto e la commutazione di contenuto attivo.</span><span class="sxs-lookup"><span data-stu-id="96588-110">Manage meeting content, including uploading content, deleting content, and switching active content.</span></span>
+- <span data-ttu-id="d7027-110">Gestire il contenuto delle riunioni, incluso il caricamento del contenuto, l'eliminazione del contenuto e il passaggio di contenuto attivo.</span><span class="sxs-lookup"><span data-stu-id="d7027-110">Manage meeting content, including uploading content, deleting content, and switching active content.</span></span>
 
 </div>
 

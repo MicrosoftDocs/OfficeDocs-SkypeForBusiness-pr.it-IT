@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: processo di distribuzione per l'applicazione di annunci"
+title: "Lync Server 2013: processo di distribuzione per l'applicazione annuncio"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184500
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dcb56f197a32403d1207cf0a15d47e0459fc41bf
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 55e0c65bfbbed55a8d7f9c3be4f7a586581c2307
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762574"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042253"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deployment-process-for-the-announcement-application-in-lync-server-2013"></a><span data-ttu-id="0b6d6-102">Processo di distribuzione per l'applicazione di annuncio in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0b6d6-102">Deployment process for the Announcement application in Lync Server 2013</span></span>
+# <a name="deployment-process-for-the-announcement-application-in-lync-server-2013"></a><span data-ttu-id="3687f-102">Processo di distribuzione per l'applicazione annuncio in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="3687f-102">Deployment process for the Announcement application in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41762574"
 
 <span> </span>
 
-<span data-ttu-id="0b6d6-103">_**Argomento Ultima modifica:** 2012-09-12_</span><span class="sxs-lookup"><span data-stu-id="0b6d6-103">_**Topic Last Modified:** 2012-09-12_</span></span>
+<span data-ttu-id="3687f-103">_**Ultimo argomento modificato:** 2012-09-12_</span><span class="sxs-lookup"><span data-stu-id="3687f-103">_**Topic Last Modified:** 2012-09-12_</span></span>
 
-<span data-ttu-id="0b6d6-104">Questa sezione fornisce una panoramica dei passaggi necessari per la distribuzione dell'applicazione di annunci.</span><span class="sxs-lookup"><span data-stu-id="0b6d6-104">This section provides an overview of the steps involved in deploying the Announcement application.</span></span> <span data-ttu-id="0b6d6-105">È necessario distribuire Enterprise Voice prima di configurare gli annunci.</span><span class="sxs-lookup"><span data-stu-id="0b6d6-105">You must deploy Enterprise Voice before you configure announcements.</span></span> <span data-ttu-id="0b6d6-106">I componenti necessari per l'applicazione di annuncio vengono installati e abilitati quando si distribuisce VoIP aziendale.</span><span class="sxs-lookup"><span data-stu-id="0b6d6-106">The components required by the Announcement application are installed and enabled when you deploy Enterprise Voice.</span></span>
+<span data-ttu-id="3687f-104">In questa sezione viene fornita una panoramica dei passaggi necessari per la distribuzione dell'applicazione annuncio.</span><span class="sxs-lookup"><span data-stu-id="3687f-104">This section provides an overview of the steps involved in deploying the Announcement application.</span></span> <span data-ttu-id="3687f-105">Prima di configurare gli annunci, è necessario distribuire VoIP aziendale.</span><span class="sxs-lookup"><span data-stu-id="3687f-105">You must deploy Enterprise Voice before you configure announcements.</span></span> <span data-ttu-id="3687f-106">I componenti richiesti dall'applicazione annuncio sono installati e abilitati quando si distribuisce VoIP aziendale.</span><span class="sxs-lookup"><span data-stu-id="3687f-106">The components required by the Announcement application are installed and enabled when you deploy Enterprise Voice.</span></span>
 
-### <a name="announcement-deployment-process"></a><span data-ttu-id="0b6d6-107">Processo di distribuzione degli annunci</span><span class="sxs-lookup"><span data-stu-id="0b6d6-107">Announcement Deployment Process</span></span>
+### <a name="announcement-deployment-process"></a><span data-ttu-id="3687f-107">Processo di distribuzione degli annunci</span><span class="sxs-lookup"><span data-stu-id="3687f-107">Announcement Deployment Process</span></span>
 
 <table>
 <colgroup>
@@ -50,32 +50,32 @@ ms.locfileid: "41762574"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="0b6d6-108">Fase</span><span class="sxs-lookup"><span data-stu-id="0b6d6-108">Phase</span></span></th>
-<th><span data-ttu-id="0b6d6-109">Passaggi</span><span class="sxs-lookup"><span data-stu-id="0b6d6-109">Steps</span></span></th>
-<th><span data-ttu-id="0b6d6-110">Ruoli</span><span class="sxs-lookup"><span data-stu-id="0b6d6-110">Roles</span></span></th>
-<th><span data-ttu-id="0b6d6-111">Documentazione di distribuzione</span><span class="sxs-lookup"><span data-stu-id="0b6d6-111">Deployment documentation</span></span></th>
+<th><span data-ttu-id="3687f-108">Fase</span><span class="sxs-lookup"><span data-stu-id="3687f-108">Phase</span></span></th>
+<th><span data-ttu-id="3687f-109">Passaggi</span><span class="sxs-lookup"><span data-stu-id="3687f-109">Steps</span></span></th>
+<th><span data-ttu-id="3687f-110">Ruoli</span><span class="sxs-lookup"><span data-stu-id="3687f-110">Roles</span></span></th>
+<th><span data-ttu-id="3687f-111">Documentazione relativa alla distribuzione</span><span class="sxs-lookup"><span data-stu-id="3687f-111">Deployment documentation</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="0b6d6-112">Configurare le impostazioni degli annunci</span><span class="sxs-lookup"><span data-stu-id="0b6d6-112">Configure Announcement settings</span></span></p></td>
+<td><p><span data-ttu-id="3687f-112">Configurazione delle impostazioni degli annunci</span><span class="sxs-lookup"><span data-stu-id="3687f-112">Configure Announcement settings</span></span></p></td>
 <td><ul>
-<li><p><span data-ttu-id="0b6d6-113">Creare l'annuncio registrando e caricando i file audio o tramite sintesi vocale.</span><span class="sxs-lookup"><span data-stu-id="0b6d6-113">Create the announcement by recording and uploading audio files or by using text-to-speech (TTS).</span></span></p></li>
-<li><p><span data-ttu-id="0b6d6-114">Configurare gli intervalli di numeri non assegnati nella tabella dei numeri non assegnati e associarli con l'annuncio appropriato.</span><span class="sxs-lookup"><span data-stu-id="0b6d6-114">Configure the unassigned number ranges in the unassigned number table and associate them with the appropriate announcement.</span></span></p></li>
+<li><p><span data-ttu-id="3687f-113">Creare l'annuncio registrando e caricando file audio o tramite sintesi vocale.</span><span class="sxs-lookup"><span data-stu-id="3687f-113">Create the announcement by recording and uploading audio files or by using text-to-speech (TTS).</span></span></p></li>
+<li><p><span data-ttu-id="3687f-114">Configurare gli intervalli di numeri non assegnati nella tabella dei numeri non assegnati e associarli all'annuncio appropriato.</span><span class="sxs-lookup"><span data-stu-id="3687f-114">Configure the unassigned number ranges in the unassigned number table and associate them with the appropriate announcement.</span></span></p></li>
 </ul></td>
-<td><p><span data-ttu-id="0b6d6-115">RTCUniversalServerAdmins</span><span class="sxs-lookup"><span data-stu-id="0b6d6-115">RTCUniversalServerAdmins</span></span></p>
-<p><span data-ttu-id="0b6d6-116">CsVoiceAdministrator</span><span class="sxs-lookup"><span data-stu-id="0b6d6-116">CsVoiceAdministrator</span></span></p>
-<p><span data-ttu-id="0b6d6-117">CsServerAdministrator</span><span class="sxs-lookup"><span data-stu-id="0b6d6-117">CsServerAdministrator</span></span></p>
-<p><span data-ttu-id="0b6d6-118">CsAdministrator</span><span class="sxs-lookup"><span data-stu-id="0b6d6-118">CsAdministrator</span></span></p>
-<p><span data-ttu-id="0b6d6-119">CsViewOnlyAdministrator</span><span class="sxs-lookup"><span data-stu-id="0b6d6-119">CsViewOnlyAdministrator</span></span></p></td>
-<td><p><span data-ttu-id="0b6d6-120"><a href="lync-server-2013-create-an-announcement.md">Creare un annuncio in Lync Server 2013</a></span><span class="sxs-lookup"><span data-stu-id="0b6d6-120"><a href="lync-server-2013-create-an-announcement.md">Create an announcement in Lync Server 2013</a></span></span></p>
-<p><span data-ttu-id="0b6d6-121"><a href="lync-server-2013-configure-the-unassigned-number-table.md">Configurare la tabella dei numeri non assegnati in Lync Server 2013</a></span><span class="sxs-lookup"><span data-stu-id="0b6d6-121"><a href="lync-server-2013-configure-the-unassigned-number-table.md">Configure the unassigned number table in Lync Server 2013</a></span></span></p></td>
+<td><p><span data-ttu-id="3687f-115">RTCUniversalServerAdmins</span><span class="sxs-lookup"><span data-stu-id="3687f-115">RTCUniversalServerAdmins</span></span></p>
+<p><span data-ttu-id="3687f-116">CsVoiceAdministrator</span><span class="sxs-lookup"><span data-stu-id="3687f-116">CsVoiceAdministrator</span></span></p>
+<p><span data-ttu-id="3687f-117">CsServerAdministrator</span><span class="sxs-lookup"><span data-stu-id="3687f-117">CsServerAdministrator</span></span></p>
+<p><span data-ttu-id="3687f-118">CsAdministrator</span><span class="sxs-lookup"><span data-stu-id="3687f-118">CsAdministrator</span></span></p>
+<p><span data-ttu-id="3687f-119">CsViewOnlyAdministrator</span><span class="sxs-lookup"><span data-stu-id="3687f-119">CsViewOnlyAdministrator</span></span></p></td>
+<td><p><span data-ttu-id="3687f-120"><a href="lync-server-2013-create-an-announcement.md">Creare un annuncio in Lync Server 2013</a></span><span class="sxs-lookup"><span data-stu-id="3687f-120"><a href="lync-server-2013-create-an-announcement.md">Create an announcement in Lync Server 2013</a></span></span></p>
+<p><span data-ttu-id="3687f-121"><a href="lync-server-2013-configure-the-unassigned-number-table.md">Configurare la tabella dei numeri non assegnati in Lync Server 2013</a></span><span class="sxs-lookup"><span data-stu-id="3687f-121"><a href="lync-server-2013-configure-the-unassigned-number-table.md">Configure the unassigned number table in Lync Server 2013</a></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="0b6d6-122">Verificare la distribuzione degli annunci</span><span class="sxs-lookup"><span data-stu-id="0b6d6-122">Verify your Announcement deployment</span></span></p></td>
-<td><p><span data-ttu-id="0b6d6-123">Eseguire il test ascoltando gli annunci per verificare che la configurazione funzioni come previsto.</span><span class="sxs-lookup"><span data-stu-id="0b6d6-123">Test by listening to announcements to verify that your configuration works as expected.</span></span></p></td>
+<td><p><span data-ttu-id="3687f-122">Verifica della distribuzione degli annunci</span><span class="sxs-lookup"><span data-stu-id="3687f-122">Verify your Announcement deployment</span></span></p></td>
+<td><p><span data-ttu-id="3687f-123">Testare ascoltando annunci per verificare che la configurazione funzioni nel modo previsto.</span><span class="sxs-lookup"><span data-stu-id="3687f-123">Test by listening to announcements to verify that your configuration works as expected.</span></span></p></td>
 <td><p>-</p></td>
-<td><p><span data-ttu-id="0b6d6-124"><a href="lync-server-2013-optional-verify-announcement-deployment.md">Opzionale Verificare la distribuzione degli annunci in Lync Server 2013</a></span><span class="sxs-lookup"><span data-stu-id="0b6d6-124"><a href="lync-server-2013-optional-verify-announcement-deployment.md">(Optional) Verify Announcement deployment in Lync Server 2013</a></span></span></p></td>
+<td><p><span data-ttu-id="3687f-124"><a href="lync-server-2013-optional-verify-announcement-deployment.md">Optional Verificare la distribuzione degli annunci in Lync Server 2013</a></span><span class="sxs-lookup"><span data-stu-id="3687f-124"><a href="lync-server-2013-optional-verify-announcement-deployment.md">(Optional) Verify Announcement deployment in Lync Server 2013</a></span></span></p></td>
 </tr>
 </tbody>
 </table>

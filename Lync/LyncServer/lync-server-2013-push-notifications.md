@@ -12,20 +12,20 @@ ms:contentKeyID: 49733581
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0680332d89bb44707d89adf06dc892e5865f576f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5c714741020cd399e59b095bf8780bab4f41e69b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747016"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045798"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="push-notifications-in-lync-server-2013"></a><span data-ttu-id="999d8-102">Notifiche push in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="999d8-102">Push notifications in Lync Server 2013</span></span>
+# <a name="push-notifications-in-lync-server-2013"></a><span data-ttu-id="904aa-102">Notifiche push in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="904aa-102">Push notifications in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,28 +35,28 @@ ms.locfileid: "41747016"
 
 <span> </span>
 
-<span data-ttu-id="999d8-103">_**Argomento Ultima modifica:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="999d8-103">_**Topic Last Modified:** 2012-10-19_</span></span>
+<span data-ttu-id="904aa-103">_**Ultimo argomento modificato:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="904aa-103">_**Topic Last Modified:** 2012-10-19_</span></span>
 
-<span data-ttu-id="999d8-104">È possibile gestire le notifiche push dalla sezione **client** del pannello di controllo di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="999d8-104">You can manage push notifications from the **Clients** section of Lync Server 2013 Control Panel.</span></span>
+<span data-ttu-id="904aa-104">È possibile gestire le notifiche push dalla sezione **client** del pannello di controllo di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="904aa-104">You can manage push notifications from the **Clients** section of Lync Server 2013 Control Panel.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="999d8-105">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="999d8-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="904aa-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="904aa-105">In This Section</span></span>
 
-  - [<span data-ttu-id="999d8-106">Abilitazione o disabilitazione delle notifiche push per iPhones in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="999d8-106">Enabling or disabling push notifications for iPhones in Lync Server 2013</span></span>](lync-server-2013-enabling-or-disabling-push-notifications-for-iphones.md)
+  - [<span data-ttu-id="904aa-106">Abilitazione o disabilitazione delle notifiche push per i iPhones in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="904aa-106">Enabling or disabling push notifications for iPhones in Lync Server 2013</span></span>](lync-server-2013-enabling-or-disabling-push-notifications-for-iphones.md)
 
-  - [<span data-ttu-id="999d8-107">Abilitazione o disabilitazione delle notifiche push per i telefoni Windows in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="999d8-107">Enabling or disabling push notifications for Windows Phones in Lync Server 2013</span></span>](lync-server-2013-enabling-or-disabling-push-notifications-for-windows-phones.md)
+  - [<span data-ttu-id="904aa-107">Abilitazione o disabilitazione delle notifiche push per i telefoni Windows in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="904aa-107">Enabling or disabling push notifications for Windows Phones in Lync Server 2013</span></span>](lync-server-2013-enabling-or-disabling-push-notifications-for-windows-phones.md)
 
-  - [<span data-ttu-id="999d8-108">Visualizzazione delle informazioni sulle impostazioni di notifica push in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="999d8-108">Viewing information about push notification settings in Lync Server 2013</span></span>](lync-server-2013-viewing-information-about-push-notification-settings.md)
+  - [<span data-ttu-id="904aa-108">Visualizzazione delle informazioni sulle impostazioni di notifica push in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="904aa-108">Viewing information about push notification settings in Lync Server 2013</span></span>](lync-server-2013-viewing-information-about-push-notification-settings.md)
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="999d8-109">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="999d8-109">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="904aa-109">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="904aa-109">See Also</span></span>
 
 
-[<span data-ttu-id="999d8-110">Configurazione delle notifiche push in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="999d8-110">Configuring for push notifications in Lync Server 2013</span></span>](lync-server-2013-configuring-for-push-notifications.md)  
+[<span data-ttu-id="904aa-110">Configurazione delle notifiche push in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="904aa-110">Configuring for push notifications in Lync Server 2013</span></span>](lync-server-2013-configuring-for-push-notifications.md)  
   
 
 </div>

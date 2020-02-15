@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: gestione di URL semplici'
+title: 'Lync Server 2013: gestione degli URL semplici'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733748
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1436855e3a5de0a20a0d08a8b8a526939d1bd17c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e72e562c2563a4e90613e2a75c424587bfb7b33d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757980"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042473"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="managing-simple-urls-in-lync-server-2013"></a><span data-ttu-id="83f55-102">Gestione di URL semplici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="83f55-102">Managing simple URLs in Lync Server 2013</span></span>
+# <a name="managing-simple-urls-in-lync-server-2013"></a><span data-ttu-id="381d6-102">Gestione degli URL semplici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="381d6-102">Managing simple URLs in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,24 +35,24 @@ ms.locfileid: "41757980"
 
 <span> </span>
 
-<span data-ttu-id="83f55-103">_**Argomento Ultima modifica:** 2012-10-11_</span><span class="sxs-lookup"><span data-stu-id="83f55-103">_**Topic Last Modified:** 2012-10-11_</span></span>
+<span data-ttu-id="381d6-103">_**Ultimo argomento modificato:** 2012-10-11_</span><span class="sxs-lookup"><span data-stu-id="381d6-103">_**Topic Last Modified:** 2012-10-11_</span></span>
 
-<span data-ttu-id="83f55-104">Usare le procedure descritte in questa sezione per gestire gli URL semplici dalla pagina della **topologia** nel pannello di controllo di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="83f55-104">Use the procedures in this section to manage simple URLs from the **Topology** page in Lync Server 2013 Control Panel.</span></span>
+<span data-ttu-id="381d6-104">Utilizzare le procedure descritte in questa sezione per gestire gli URL semplici dalla pagina **topologia** del pannello di controllo di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="381d6-104">Use the procedures in this section to manage simple URLs from the **Topology** page in Lync Server 2013 Control Panel.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="83f55-105">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="83f55-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="381d6-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="381d6-105">In This Section</span></span>
 
-[<span data-ttu-id="83f55-106">Visualizzare i dettagli degli URL semplici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="83f55-106">View simple URL details in Lync Server 2013</span></span>](lync-server-2013-view-simple-url-details.md)
+[<span data-ttu-id="381d6-106">Visualizzare i dettagli degli URL semplici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="381d6-106">View simple URL details in Lync Server 2013</span></span>](lync-server-2013-view-simple-url-details.md)
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="83f55-107">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="83f55-107">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="381d6-107">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="381d6-107">See Also</span></span>
 
 
-[<span data-ttu-id="83f55-108">Pianificazione degli URL semplici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="83f55-108">Planning for simple URLs in Lync Server 2013</span></span>](lync-server-2013-planning-for-simple-urls.md)  
+[<span data-ttu-id="381d6-108">Pianificazione degli URL semplici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="381d6-108">Planning for simple URLs in Lync Server 2013</span></span>](lync-server-2013-planning-for-simple-urls.md)  
   
 
 </div>

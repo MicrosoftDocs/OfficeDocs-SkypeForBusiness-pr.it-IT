@@ -12,20 +12,20 @@ ms:contentKeyID: 51541493
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 91c449a0bafc4067b3315b659d981f7a57a023bb
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5cdf1e75f950ebf155bfd21c68b860f48af8e978
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755670"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045538"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="optional-verify-the-group-call-pickup-deployment-in-lync-server-2013"></a><span data-ttu-id="1bbf4-102">Opzionale Verificare la distribuzione del ritiro delle chiamate di gruppo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1bbf4-102">(Optional) Verify the Group Call Pickup deployment in Lync Server 2013</span></span>
+# <a name="optional-verify-the-group-call-pickup-deployment-in-lync-server-2013"></a><span data-ttu-id="c7158-102">Optional Verificare la distribuzione del prelievo delle chiamate di gruppo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c7158-102">(Optional) Verify the Group Call Pickup deployment in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41755670"
 
 <span> </span>
 
-<span data-ttu-id="1bbf4-103">_**Argomento Ultima modifica:** 2013-01-30_</span><span class="sxs-lookup"><span data-stu-id="1bbf4-103">_**Topic Last Modified:** 2013-01-30_</span></span>
+<span data-ttu-id="c7158-103">_**Ultimo argomento modificato:** 2013-01-30_</span><span class="sxs-lookup"><span data-stu-id="c7158-103">_**Topic Last Modified:** 2013-01-30_</span></span>
 
-<span data-ttu-id="1bbf4-104">Dopo aver abilitato il ritiro delle chiamate di gruppo per gli utenti, verificare che la configurazione funzioni come previsto.</span><span class="sxs-lookup"><span data-stu-id="1bbf4-104">After you enable Group Call Pickup for users, verify that the configuration works as expected.</span></span> <span data-ttu-id="1bbf4-105">Verificare quanto segue:</span><span class="sxs-lookup"><span data-stu-id="1bbf4-105">At a minimum, verify the following:</span></span>
+<span data-ttu-id="c7158-104">Dopo aver abilitato il prelievo delle chiamate di gruppo per gli utenti, verificare che la configurazione funzioni come previsto.</span><span class="sxs-lookup"><span data-stu-id="c7158-104">After you enable Group Call Pickup for users, verify that the configuration works as expected.</span></span> <span data-ttu-id="c7158-105">Verificare almeno quanto segue:</span><span class="sxs-lookup"><span data-stu-id="c7158-105">At a minimum, verify the following:</span></span>
 
-  - <span data-ttu-id="1bbf4-106">Chiama un utente abilitato per il ritiro delle chiamate di gruppo e Chiedi a un altro utente di recuperare la chiamata.</span><span class="sxs-lookup"><span data-stu-id="1bbf4-106">Call a user who is enabled for Group Call Pickup and have another user retrieve the call.</span></span> <span data-ttu-id="1bbf4-107">L'altro utente può essere nello stesso gruppo, in un gruppo diverso o non ha abilitato il pick-up delle chiamate di gruppo.</span><span class="sxs-lookup"><span data-stu-id="1bbf4-107">The other user can be in the same group, in a different group, or not have Group Call Pickup enabled.</span></span>
+  - <span data-ttu-id="c7158-106">Chiamare un utente abilitato per il prelievo delle chiamate di gruppo e richiedere a un altro utente di recuperare la chiamata.</span><span class="sxs-lookup"><span data-stu-id="c7158-106">Call a user who is enabled for Group Call Pickup and have another user retrieve the call.</span></span> <span data-ttu-id="c7158-107">L'altro utente può trovarsi nello stesso gruppo, in un gruppo diverso o non è abilitato per il prelievo delle chiamate di gruppo.</span><span class="sxs-lookup"><span data-stu-id="c7158-107">The other user can be in the same group, in a different group, or not have Group Call Pickup enabled.</span></span>
 
-  - <span data-ttu-id="1bbf4-108">Chiama un utente abilitato per il ritiro delle chiamate di gruppo e non rispondere alla chiamata.</span><span class="sxs-lookup"><span data-stu-id="1bbf4-108">Call a user who is enabled for Group Call Pickup and do not answer the call.</span></span>
+  - <span data-ttu-id="c7158-108">Chiamare un utente abilitato per il prelievo delle chiamate di gruppo e non rispondere alla chiamata.</span><span class="sxs-lookup"><span data-stu-id="c7158-108">Call a user who is enabled for Group Call Pickup and do not answer the call.</span></span>
 
 </div>
 

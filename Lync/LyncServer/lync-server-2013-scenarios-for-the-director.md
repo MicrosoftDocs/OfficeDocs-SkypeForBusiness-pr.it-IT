@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Scenari per il server Director'
+title: 'Lync Server 2013: scenari per il Director'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185419
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ac7c5a262f5323f28ff089766cab1f4d65e30757
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 23b05a44e139c59dcb0656c2339d67a0e529e59a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732617"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038188"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="scenarios-for-the-director-in-lync-server-2013"></a><span data-ttu-id="c24ab-102">Scenari per il server Director in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c24ab-102">Scenarios for the Director in Lync Server 2013</span></span>
+# <a name="scenarios-for-the-director-in-lync-server-2013"></a><span data-ttu-id="adcbd-102">Scenari per il Director in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="adcbd-102">Scenarios for the Director in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41732617"
 
 <span> </span>
 
-<span data-ttu-id="c24ab-103">_**Argomento Ultima modifica:** 2012-10-22_</span><span class="sxs-lookup"><span data-stu-id="c24ab-103">_**Topic Last Modified:** 2012-10-22_</span></span>
+<span data-ttu-id="adcbd-103">_**Ultimo argomento modificato:** 2012-10-22_</span><span class="sxs-lookup"><span data-stu-id="adcbd-103">_**Topic Last Modified:** 2012-10-22_</span></span>
 
-<span data-ttu-id="c24ab-104">Un amministratore è un server che esegue Microsoft Lync Server 2013 Communications software in grado di autenticare le richieste degli utenti, ma non gli account utente.</span><span class="sxs-lookup"><span data-stu-id="c24ab-104">A Director is a server running Microsoft Lync Server 2013 communications software that can authenticate user requests, but does not home any user accounts.</span></span> <span data-ttu-id="c24ab-105">Il Director ospita inoltre servizi Web simili a front end server e autentica le richieste di ticket web e offre altri servizi.</span><span class="sxs-lookup"><span data-stu-id="c24ab-105">The Director also hosts web services similar to the Front End Server and will authenticate web ticket requests and provide other services.</span></span>
+<span data-ttu-id="adcbd-104">Un Director è un server che esegue Microsoft Lync Server 2013 Communications software in grado di autenticare le richieste degli utenti, ma non gli account utente.</span><span class="sxs-lookup"><span data-stu-id="adcbd-104">A Director is a server running Microsoft Lync Server 2013 communications software that can authenticate user requests, but does not home any user accounts.</span></span> <span data-ttu-id="adcbd-105">Il Director ospita anche servizi Web simili al front end server e autentica le richieste di ticket web e fornisce altri servizi.</span><span class="sxs-lookup"><span data-stu-id="adcbd-105">The Director also hosts web services similar to the Front End Server and will authenticate web ticket requests and provide other services.</span></span>
 
 <div>
 
 
 > [!IMPORTANT]  
-> <span data-ttu-id="c24ab-106">Se si distribuiscono gli amministratori, è necessario pubblicare i servizi Web Director esternamente tramite il proxy inverso e i servizi Web del server front-end.</span><span class="sxs-lookup"><span data-stu-id="c24ab-106">If you deploy Directors, you must publish the Director web services externally through the reverse proxy as well as the web services of the Front End Server.</span></span> <span data-ttu-id="c24ab-107">Gli argomenti seguenti descrivono il processo di pianificazione per le topologie di Director possibili.</span><span class="sxs-lookup"><span data-stu-id="c24ab-107">The topics following describe the planning process for the possible Director topologies.</span></span>
+> <span data-ttu-id="adcbd-106">Se si distribuiscono i direttori, è necessario pubblicare i servizi Web Director esternamente tramite il proxy inverso e i servizi Web del front end server.</span><span class="sxs-lookup"><span data-stu-id="adcbd-106">If you deploy Directors, you must publish the Director web services externally through the reverse proxy as well as the web services of the Front End Server.</span></span> <span data-ttu-id="adcbd-107">Negli argomenti seguenti viene descritto il processo di pianificazione per le topologie di Director possibili.</span><span class="sxs-lookup"><span data-stu-id="adcbd-107">The topics following describe the planning process for the possible Director topologies.</span></span>
 
 
 
@@ -51,27 +51,27 @@ ms.locfileid: "41732617"
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="c24ab-108">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="c24ab-108">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="adcbd-108">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="adcbd-108">In This Section</span></span>
 
-  - [<span data-ttu-id="c24ab-109">Panoramica del server Director in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c24ab-109">Overview of the Director in Lync Server 2013</span></span>](lync-server-2013-overview-of-the-director.md)
+  - [<span data-ttu-id="adcbd-109">Panoramica del Director in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="adcbd-109">Overview of the Director in Lync Server 2013</span></span>](lync-server-2013-overview-of-the-director.md)
 
-  - [<span data-ttu-id="c24ab-110">Componenti richiesti per il server Director in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c24ab-110">Components required for the Director in Lync Server 2013</span></span>](lync-server-2013-components-required-for-the-director.md)
+  - [<span data-ttu-id="adcbd-110">Componenti necessari per il Director in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="adcbd-110">Components required for the Director in Lync Server 2013</span></span>](lync-server-2013-components-required-for-the-director.md)
 
-  - [<span data-ttu-id="c24ab-111">Requisiti hardware e software per il server Director in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c24ab-111">Hardware and software requirements for the Director in Lync Server 2013</span></span>](lync-server-2013-hardware-and-software-requirements-for-the-director.md)
+  - [<span data-ttu-id="adcbd-111">Requisiti hardware e software per il Director in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="adcbd-111">Hardware and software requirements for the Director in Lync Server 2013</span></span>](lync-server-2013-hardware-and-software-requirements-for-the-director.md)
 
-  - [<span data-ttu-id="c24ab-112">Singolo server Director in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c24ab-112">Single Director in Lync Server 2013</span></span>](lync-server-2013-single-director.md)
+  - [<span data-ttu-id="adcbd-112">Single Director in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="adcbd-112">Single Director in Lync Server 2013</span></span>](lync-server-2013-single-director.md)
 
-  - [<span data-ttu-id="c24ab-113">Pool di server Director con scalabilità implementata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c24ab-113">Scaled Director pool in Lync Server 2013</span></span>](lync-server-2013-scaled-director-pool.md)
+  - [<span data-ttu-id="adcbd-113">Pool di server Director in scala in Lync 2013</span><span class="sxs-lookup"><span data-stu-id="adcbd-113">Scaled Director pool in Lync Server 2013</span></span>](lync-server-2013-scaled-director-pool.md)
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="c24ab-114">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="c24ab-114">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="adcbd-114">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="adcbd-114">See Also</span></span>
 
 
-[<span data-ttu-id="c24ab-115">Topologie supportate in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c24ab-115">Supported topologies in Lync Server 2013</span></span>](lync-server-2013-supported-topologies.md)  
-[<span data-ttu-id="c24ab-116">Piattaforme hardware server per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c24ab-116">Server hardware platforms for Lync Server 2013</span></span>](lync-server-2013-server-hardware-platforms.md)  
+[<span data-ttu-id="adcbd-115">Topologie supportate in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="adcbd-115">Supported topologies in Lync Server 2013</span></span>](lync-server-2013-supported-topologies.md)  
+[<span data-ttu-id="adcbd-116">Piattaforme hardware server per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="adcbd-116">Server hardware platforms for Lync Server 2013</span></span>](lync-server-2013-server-hardware-platforms.md)  
   
 
 </div>

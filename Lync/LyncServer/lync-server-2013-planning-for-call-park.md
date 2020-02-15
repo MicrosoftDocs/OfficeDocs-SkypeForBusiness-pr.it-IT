@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pianificazione del parcheggio di chiamata'
+title: 'Lync Server 2013: pianificazione del parcheggio di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185727
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 068c574cc21a3f81d91491da521911aa56c5ce83
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 0f42d4b61302b17d8d6247d7a9a1dcc5dbe6b218
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41754386"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037038"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-call-park-in-lync-server-2013"></a><span data-ttu-id="c86ab-102">Pianificazione del parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c86ab-102">Planning for Call Park in Lync Server 2013</span></span>
+# <a name="planning-for-call-park-in-lync-server-2013"></a><span data-ttu-id="dfe0d-102">Pianificazione del parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="dfe0d-102">Planning for Call Park in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41754386"
 
 <span> </span>
 
-<span data-ttu-id="c86ab-103">_**Argomento Ultima modifica:** 2012-09-07_</span><span class="sxs-lookup"><span data-stu-id="c86ab-103">_**Topic Last Modified:** 2012-09-07_</span></span>
+<span data-ttu-id="dfe0d-103">_**Ultimo argomento modificato:** 2012-09-07_</span><span class="sxs-lookup"><span data-stu-id="dfe0d-103">_**Topic Last Modified:** 2012-09-07_</span></span>
 
-<span data-ttu-id="c86ab-104">L'applicazione Lync Server Call Park consente agli utenti di VoIP aziendale di mettere una chiamata in attesa e quindi recuperarla in seguito da qualsiasi telefono.</span><span class="sxs-lookup"><span data-stu-id="c86ab-104">The Lync Server Call Park application makes it possible for Enterprise Voice users to put a call on hold and then retrieve it later from any phone.</span></span> <span data-ttu-id="c86ab-105">L'utente che ha parcheggiato la chiamata può chiamare il numero dell'orbita fornito da Call Park per recuperare la chiamata parcheggiata o usare un meccanismo esterno, ad esempio la messaggistica istantanea o un sistema di paging, per chiedere a qualcun altro di recuperare la chiamata.</span><span class="sxs-lookup"><span data-stu-id="c86ab-105">The user who parked the call can either dial the orbit number provided by Call Park to retrieve the parked call or use an external mechanism, such as instant messaging or a paging system, to ask someone else to retrieve the call.</span></span> <span data-ttu-id="c86ab-106">Questa sezione include informazioni sulla pianificazione specifiche di Call Park.</span><span class="sxs-lookup"><span data-stu-id="c86ab-106">This section includes planning information that is specific to Call Park.</span></span>
+<span data-ttu-id="dfe0d-104">L'applicazione del parcheggio di chiamata di Lync Server rende possibile per gli utenti di VoIP aziendale di mettere in attesa una chiamata e quindi recuperarla in un secondo momento da qualsiasi telefono.</span><span class="sxs-lookup"><span data-stu-id="dfe0d-104">The Lync Server Call Park application makes it possible for Enterprise Voice users to put a call on hold and then retrieve it later from any phone.</span></span> <span data-ttu-id="dfe0d-105">Per recuperare la chiamata parcheggiata, il parcheggiatore può comporre il codice orbit fornito dall'applicazione oppure utilizzare un meccanismo esterno, ad esempio un sistema di messaggistica istantanea o di cercapersone, per richiedere a un altro utente di recuperare la chiamata.</span><span class="sxs-lookup"><span data-stu-id="dfe0d-105">The user who parked the call can either dial the orbit number provided by Call Park to retrieve the parked call or use an external mechanism, such as instant messaging or a paging system, to ask someone else to retrieve the call.</span></span> <span data-ttu-id="dfe0d-106">In questa sezione sono incluse informazioni sulla pianificazione specifiche del parcheggio di chiamata.</span><span class="sxs-lookup"><span data-stu-id="dfe0d-106">This section includes planning information that is specific to Call Park.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="c86ab-107">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="c86ab-107">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="dfe0d-107">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="dfe0d-107">In This Section</span></span>
 
-  - [<span data-ttu-id="c86ab-108">Panoramica di Call Park in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c86ab-108">Overview of Call Park in Lync Server 2013</span></span>](lync-server-2013-overview-of-call-park.md)
+  - [<span data-ttu-id="dfe0d-108">Panoramica del parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="dfe0d-108">Overview of Call Park in Lync Server 2013</span></span>](lync-server-2013-overview-of-call-park.md)
 
-  - [<span data-ttu-id="c86ab-109">Componenti utilizzati dal parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c86ab-109">Components used by Call Park in Lync Server 2013</span></span>](lync-server-2013-components-used-by-call-park.md)
+  - [<span data-ttu-id="dfe0d-109">Componenti utilizzati dal parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="dfe0d-109">Components used by Call Park in Lync Server 2013</span></span>](lync-server-2013-components-used-by-call-park.md)
 
-  - [<span data-ttu-id="c86ab-110">Requisiti tecnici per il parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c86ab-110">Technical requirements for Call Park in Lync Server 2013</span></span>](lync-server-2013-technical-requirements-for-call-park.md)
+  - [<span data-ttu-id="dfe0d-110">Requisiti tecnici per il parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="dfe0d-110">Technical requirements for Call Park in Lync Server 2013</span></span>](lync-server-2013-technical-requirements-for-call-park.md)
 
-  - [<span data-ttu-id="c86ab-111">Client supportati per il parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c86ab-111">Clients supported for Call Park in Lync Server 2013</span></span>](lync-server-2013-clients-supported-for-call-park.md)
+  - [<span data-ttu-id="dfe0d-111">Client supportati per il parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="dfe0d-111">Clients supported for Call Park in Lync Server 2013</span></span>](lync-server-2013-clients-supported-for-call-park.md)
 
-  - [<span data-ttu-id="c86ab-112">Pianificazione della capacità per il parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c86ab-112">Capacity planning for Call Park in Lync Server 2013</span></span>](lync-server-2013-capacity-planning-for-call-park.md)
+  - [<span data-ttu-id="dfe0d-112">Pianificazione della capacità per il parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="dfe0d-112">Capacity planning for Call Park in Lync Server 2013</span></span>](lync-server-2013-capacity-planning-for-call-park.md)
 
-  - [<span data-ttu-id="c86ab-113">Processo di distribuzione per Call Park in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c86ab-113">Deployment process for Call Park in Lync Server 2013</span></span>](lync-server-2013-deployment-process-for-call-park.md)
+  - [<span data-ttu-id="dfe0d-113">Processo di distribuzione per il parcheggio di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="dfe0d-113">Deployment process for Call Park in Lync Server 2013</span></span>](lync-server-2013-deployment-process-for-call-park.md)
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: configurazione dei criteri utente per l'archiviazione in Lync Server"
+title: "Lync Server 2013: impostazione dei criteri utente per l'archiviazione in Lync Server"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183626
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fa8f377c2a78275419c7d4906a51a9550864b8ba
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4e6a04f976022ea4f3026c7be5caa3ce186efa77
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764532"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42039619"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="setting-up-user-policies-for-archiving-in-lync-server-2013"></a><span data-ttu-id="9ce32-102">Configurazione dei criteri utente per l'archiviazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9ce32-102">Setting up user policies for Archiving in Lync Server 2013</span></span>
+# <a name="setting-up-user-policies-for-archiving-in-lync-server-2013"></a><span data-ttu-id="739e1-102">Configurazione dei criteri utente per l'archiviazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="739e1-102">Setting up user policies for Archiving in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41764532"
 
 <span> </span>
 
-<span data-ttu-id="9ce32-103">_**Argomento Ultima modifica:** 2012-10-10_</span><span class="sxs-lookup"><span data-stu-id="9ce32-103">_**Topic Last Modified:** 2012-10-10_</span></span>
+<span data-ttu-id="739e1-103">_**Ultimo argomento modificato:** 2012-10-10_</span><span class="sxs-lookup"><span data-stu-id="739e1-103">_**Topic Last Modified:** 2012-10-10_</span></span>
 
-<span data-ttu-id="9ce32-104">L'attivazione o la disattivazione dell'archiviazione per utenti specifici ospitati in Lync Server 2013 richiede la creazione e la configurazione di uno o più criteri per gli utenti e quindi l'applicazione del criterio appropriato a utenti o gruppi utente specifici.</span><span class="sxs-lookup"><span data-stu-id="9ce32-104">Enabling or disabling Archiving for specific users homed on Lync Server 2013 requires creating and configuring one or more user policies, and then applying the appropriate policy to specific users or user groups.</span></span> <span data-ttu-id="9ce32-105">I criteri utente eseguono l'override dei criteri sito e globale, ma solo per gli utenti ospitati in Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="9ce32-105">User policies override site and global policies, but only for users homed on Lync Server 2013.</span></span>
+<span data-ttu-id="739e1-104">L'abilitazione o disabilitazione dell'archiviazione per utenti specifici ospitati in Lync Server 2013 richiede la creazione e la configurazione di uno o più criteri utente e l'applicazione del criterio appropriato a specifici utenti o gruppi di utenti.</span><span class="sxs-lookup"><span data-stu-id="739e1-104">Enabling or disabling Archiving for specific users homed on Lync Server 2013 requires creating and configuring one or more user policies, and then applying the appropriate policy to specific users or user groups.</span></span> <span data-ttu-id="739e1-105">I criteri utente hanno la precedenza sul sito e sui criteri globali, ma solo per gli utenti ospitati in Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="739e1-105">User policies override site and global policies, but only for users homed on Lync Server 2013.</span></span>
 
-<span data-ttu-id="9ce32-106">Gli utenti vengono sempre assegnati in Lync Server.</span><span class="sxs-lookup"><span data-stu-id="9ce32-106">Users are always homed in Lync Server.</span></span> <span data-ttu-id="9ce32-107">Se è abilitata l'integrazione di Microsoft Exchange, gli utenti le cui cassette postali si trovano in Microsoft Exchange Server 2013 non devono avere i criteri di archiviazione in Lync Server Managed.</span><span class="sxs-lookup"><span data-stu-id="9ce32-107">If Microsoft Exchange integration is enabled, users whose mailboxes are in Microsoft Exchange Server 2013 don’t need to have their Archiving policies in Lync Server managed.</span></span> <span data-ttu-id="9ce32-108">Questi utenti con l'archiviazione verranno gestiti tramite il blocco sul posto di Exchange.</span><span class="sxs-lookup"><span data-stu-id="9ce32-108">These users with Archiving will be managed by Exchange In-Place Hold.</span></span>
+<span data-ttu-id="739e1-106">Gli utenti sono sempre ospitati in Lync Server.</span><span class="sxs-lookup"><span data-stu-id="739e1-106">Users are always homed in Lync Server.</span></span> <span data-ttu-id="739e1-107">Se l'integrazione di Microsoft Exchange è abilitata, gli utenti le cui cassette postali si trovano in Microsoft Exchange Server 2013 non è necessario che i criteri di archiviazione vengano gestiti in Lync Server.</span><span class="sxs-lookup"><span data-stu-id="739e1-107">If Microsoft Exchange integration is enabled, users whose mailboxes are in Microsoft Exchange Server 2013 don’t need to have their Archiving policies in Lync Server managed.</span></span> <span data-ttu-id="739e1-108">Questi utenti con archiviazione verranno gestiti tramite il blocco sul posto di Exchange.</span><span class="sxs-lookup"><span data-stu-id="739e1-108">These users with Archiving will be managed by Exchange In-Place Hold.</span></span>
 
-<span data-ttu-id="9ce32-109">Per informazioni dettagliate sul funzionamento dei criteri di archiviazione, ad esempio la gerarchia per i criteri globali, per il sito e per gli utenti, vedere funzionamento dell' [archiviazione in Lync Server 2013](lync-server-2013-how-archiving-works.md) nella documentazione relativa alla pianificazione, alla documentazione di distribuzione o alla documentazione operativa.</span><span class="sxs-lookup"><span data-stu-id="9ce32-109">For details about how Archiving policies work, including the hierarchy for global, site, and user policies, see [How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md) in the Planning documentation, Deployment documentation, or Operations documentation.</span></span>
+<span data-ttu-id="739e1-109">Per informazioni dettagliate sul funzionamento dei criteri di archiviazione, inclusa la gerarchia per i criteri globali, sito e utente, vedere [How Archiving Works in Lync Server 2013](lync-server-2013-how-archiving-works.md) nella documentazione relativa alla pianificazione, alla distribuzione o alla documentazione relativa alle operazioni.</span><span class="sxs-lookup"><span data-stu-id="739e1-109">For details about how Archiving policies work, including the hierarchy for global, site, and user policies, see [How Archiving works in Lync Server 2013](lync-server-2013-how-archiving-works.md) in the Planning documentation, Deployment documentation, or Operations documentation.</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="9ce32-110">Se è stata abilitata l'integrazione di Microsoft Exchange per la distribuzione, i criteri di blocco sul posto di Exchange controllano se l'archiviazione è abilitata per gli utenti residenti in Exchange 2013.</span><span class="sxs-lookup"><span data-stu-id="9ce32-110">If you enabled Microsoft Exchange integration for your deployment, Exchange In-Place Hold policies control whether archiving is enabled for the users who are homed on Exchange 2013.</span></span> <span data-ttu-id="9ce32-111">L'archiviazione per questi utenti richiede che le cassette postali vengano inserite in blocco sul posto.</span><span class="sxs-lookup"><span data-stu-id="9ce32-111">Archiving for these users requires that they have their mailboxes put on In-Place Hold.</span></span> <span data-ttu-id="9ce32-112">Per informazioni dettagliate, vedere <A href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">configurazione dei criteri per l'archiviazione in Lync server 2013 quando si usa l'integrazione di Exchange Server</A> nella documentazione relativa alla distribuzione.</span><span class="sxs-lookup"><span data-stu-id="9ce32-112">For details, see <A href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">Setting up policies for Archiving in Lync Server 2013 when using Exchange Server integration</A> in the Deployment documentation.</span></span><BR><span data-ttu-id="9ce32-113">Devi specificare tutte le opzioni appropriate nelle configurazioni di archiviazione prima di abilitare l'archiviazione.</span><span class="sxs-lookup"><span data-stu-id="9ce32-113">You should specify all appropriate options in the Archiving configurations before enabling Archiving.</span></span> <span data-ttu-id="9ce32-114">Per informazioni dettagliate, vedere <A href="lync-server-2013-configuring-archiving-options.md">configurazione delle opzioni di archiviazione in Lync Server 2013</A> nella documentazione relativa alla distribuzione.</span><span class="sxs-lookup"><span data-stu-id="9ce32-114">For details, see <A href="lync-server-2013-configuring-archiving-options.md">Configuring Archiving options in Lync Server 2013</A> in the Deployment documentation.</span></span>
+> <span data-ttu-id="739e1-110">Se è stata abilitata l'integrazione di Microsoft Exchange per la distribuzione, i criteri di conservazione sul posto di Exchange controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange 2013.</span><span class="sxs-lookup"><span data-stu-id="739e1-110">If you enabled Microsoft Exchange integration for your deployment, Exchange In-Place Hold policies control whether archiving is enabled for the users who are homed on Exchange 2013.</span></span> <span data-ttu-id="739e1-111">L'archiviazione per questi utenti richiede che abbiano le cassette postali archiviate sul posto.</span><span class="sxs-lookup"><span data-stu-id="739e1-111">Archiving for these users requires that they have their mailboxes put on In-Place Hold.</span></span> <span data-ttu-id="739e1-112">Per informazioni dettagliate, vedere <A href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">impostazione dei criteri per l'archiviazione in Lync server 2013 quando si utilizza l'integrazione di Exchange Server</A> nella documentazione relativa alla distribuzione.</span><span class="sxs-lookup"><span data-stu-id="739e1-112">For details, see <A href="lync-server-2013-setting-up-policies-for-archiving-when-using-exchange-server-integration.md">Setting up policies for Archiving in Lync Server 2013 when using Exchange Server integration</A> in the Deployment documentation.</span></span><BR><span data-ttu-id="739e1-113">Specificare tutte le opzioni appropriate nelle configurazioni di archiviazione prima di abilitare l'archiviazione.</span><span class="sxs-lookup"><span data-stu-id="739e1-113">You should specify all appropriate options in the Archiving configurations before enabling Archiving.</span></span> <span data-ttu-id="739e1-114">Per ulteriori informazioni, vedere <A href="lync-server-2013-configuring-archiving-options.md">configurazione delle opzioni di archiviazione in Lync Server 2013</A> nella documentazione relativa alla distribuzione.</span><span class="sxs-lookup"><span data-stu-id="739e1-114">For details, see <A href="lync-server-2013-configuring-archiving-options.md">Configuring Archiving options in Lync Server 2013</A> in the Deployment documentation.</span></span>
 
 
 
@@ -55,11 +55,11 @@ ms.locfileid: "41764532"
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="9ce32-115">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="9ce32-115">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="739e1-115">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="739e1-115">In This Section</span></span>
 
-  - [<span data-ttu-id="9ce32-116">Creazione e configurazione di criteri utente per l'archiviazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9ce32-116">Creating and configuring user policies for Archiving in Lync Server 2013</span></span>](lync-server-2013-creating-and-configuring-user-policies-for-archiving-in-lync-server.md)
+  - [<span data-ttu-id="739e1-116">Creazione e configurazione dei criteri utente per l'archiviazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="739e1-116">Creating and configuring user policies for Archiving in Lync Server 2013</span></span>](lync-server-2013-creating-and-configuring-user-policies-for-archiving-in-lync-server.md)
 
-  - [<span data-ttu-id="9ce32-117">Applicazione di un criterio di archiviazione di Lync Server a un utente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9ce32-117">Applying a Lync Server Archiving policy to a user in Lync Server 2013</span></span>](lync-server-2013-applying-a-lync-server-archiving-policy-to-a-user.md)
+  - [<span data-ttu-id="739e1-117">Applicazione di un criterio di archiviazione di Lync Server a un utente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="739e1-117">Applying a Lync Server Archiving policy to a user in Lync Server 2013</span></span>](lync-server-2013-applying-a-lync-server-archiving-policy-to-a-user.md)
 
 </div>
 

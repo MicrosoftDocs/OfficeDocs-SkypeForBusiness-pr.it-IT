@@ -15,16 +15,16 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 7bf70a49-a6db-4c93-bcbf-182e171a98e6
 description: 'Riepilogo: esplorare questi collegamenti per informazioni su come implementare Skype for Business Server 2015.'
-ms.openlocfilehash: 7a5753e481e1014ea8ff95aafc5e3a1f632bafa1
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: 05d9da9fb1edb9b9063b9d2649b34a45003dee7e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824100"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045368"
 ---
 # <a name="skype-for-business-server-2015"></a>Skype for Business Server 2015
 
-Skype for business è una piattaforma di comunicazione e collaborazione che unisce un'esperienza client ispirata da Skype con sicurezza, conformità e controllo di livello aziendale. Skype for business offre funzionalità che includono la presenza, la messaggistica istantanea, le chiamate vocali e video e le riunioni online. 
+Skype for business è una piattaforma di comunicazione e collaborazione che unisce un'esperienza client ispirata a Skype con sicurezza, conformità e controllo a livello aziendale. Skype for business offre funzionalità quali la presenza, la messaggistica istantanea, le chiamate vocali e video e le riunioni online.
 
 <ul class="panelContent cardsFTitle">
     <li>
@@ -92,7 +92,7 @@ Skype for business è una piattaforma di comunicazione e collaborazione che unis
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Upgrade</h3>
+                        <h3>Aggiornamento</h3>
                     </div>
                 </div>
             </div>
@@ -118,7 +118,7 @@ Skype for business è una piattaforma di comunicazione e collaborazione che unis
         </a>
     </li>
     <li>
-        <a href="https://www.microsoft.com/en-us/evalcenter/evaluate-skype-for-business-server">
+        <a href="https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -128,7 +128,7 @@ Skype for business è una piattaforma di comunicazione e collaborazione che unis
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Download dal centro valutazione di Skype for business</h3>
+                        <h3>Scaricare dal centro di valutazione di Skype for business</h3>
                     </div>
                 </div>
             </div>
@@ -173,7 +173,7 @@ Skype for business è una piattaforma di comunicazione e collaborazione che unis
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>VoIP aziendale</h3>
+                        <h3>Enterprise Voice</h3>
                         <p><a href="/SkypeForBusiness/plan-your-deployment/enterprise-voice-solution/enterprise-voice-solution" data-raw-source="[Plan](/SkypeForBusiness/plan-your-deployment/enterprise-voice-solution/enterprise-voice-solution)">Piano</a></p>
                         <p><a href="/SkypeForBusiness/deploy/deploy-enterprise-voice/deploy-enterprise-voice" data-raw-source="[Deploy](/SkypeForBusiness/deploy/deploy-enterprise-voice/deploy-enterprise-voice)">Distribuzione</a></p>
                     </div>
@@ -186,8 +186,8 @@ Skype for business è una piattaforma di comunicazione e collaborazione che unis
             <div class="cardPadding">
                 <div class="card">
                     <div class="cardText">
-                        <h3>Trasmissione riunione Skype</h3>
-                        <p><a href="https://support.office.com/article/what-is-a-skype-meeting-broadcast-c472c76b-21f1-4e4b-ab58-329a6c33757d">Cos'è?</a></p>
+                        <h3>Skype Meeting Broadcast</h3>
+                        <p><a href="https://support.office.com/article/what-is-a-skype-meeting-broadcast-c472c76b-21f1-4e4b-ab58-329a6c33757d">Di cosa si tratta?</a></p>
                         <p><a href="/SkypeForBusiness/deploy/configure-skype-meeting-broadcast" data-raw-source="[Configure your on-premises deployment for Skype Meeting Broadcast](/SkypeForBusiness/deploy/configure-skype-meeting-broadcast)">Configurare la distribuzione locale per Skype meeting broadcast</a>
                     </div>
                 </div>
@@ -204,7 +204,7 @@ Skype for business è una piattaforma di comunicazione e collaborazione che unis
                                        </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </li>
     <li>
         <div class="cardSize">
@@ -212,7 +212,7 @@ Skype for business è una piattaforma di comunicazione e collaborazione che unis
                 <div class="card">
                     <div class="cardText">
                         <h3>Altre risorse</h3>
-                        <p><a href="https://infopedia.eventbuilder.com/?landingpageid=7p1c8p">Serie prontezza di Skype for business</a></p>
+                        <p><a href="https://infopedia.eventbuilder.com/?landingpageid=7p1c8p">Serie di prontezza per Skype for business</a></p>
                         <p><a href="/SkypeForBusiness/skype-for-business-server-2019">Documentazione di Skype for Business Server 2019</a></p>
                         <p><a href="/lyncserver/microsoft-lync-server-2013">Documentazione di Lync Server 2013</a></p>
                     </div>
@@ -221,4 +221,3 @@ Skype for business è una piattaforma di comunicazione e collaborazione che unis
         </div>
     </li>
 </ul>
-

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Squillo simultaneo'
+title: 'Lync Server 2013: squillo simultaneo'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51803990
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1bcdb0d30bccfe628fd02861d257d79268046b77
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4e3104da5e7d351bda26698087e97106cafbdff4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764512"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037506"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="simultaneous-ringing-in-lync-server-2013"></a><span data-ttu-id="bfca8-102">Squillo simultaneo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="bfca8-102">Simultaneous ringing in Lync Server 2013</span></span>
+# <a name="simultaneous-ringing-in-lync-server-2013"></a><span data-ttu-id="efbf3-102">Squillo simultaneo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="efbf3-102">Simultaneous ringing in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41764512"
 
 <span> </span>
 
-<span data-ttu-id="bfca8-103">_**Argomento Ultima modifica:** 2013-03-09_</span><span class="sxs-lookup"><span data-stu-id="bfca8-103">_**Topic Last Modified:** 2013-03-09_</span></span>
+<span data-ttu-id="efbf3-103">_**Ultimo argomento modificato:** 2013-03-09_</span><span class="sxs-lookup"><span data-stu-id="efbf3-103">_**Topic Last Modified:** 2013-03-09_</span></span>
 
-<span data-ttu-id="bfca8-104">Quando l'entità denominata ha attivato la chiamata simultanea, il routing basato sulla posizione analizza la posizione della parte chiamante e gli endpoint delle parti chiamate per determinare se la chiamata deve essere instradata.</span><span class="sxs-lookup"><span data-stu-id="bfca8-104">When the called party has simultaneous ringing enabled, Location-Based Routing analyzes the location of the calling party and the endpoints of the called parties to determine whether the call should be routed.</span></span>
+<span data-ttu-id="efbf3-104">Quando la parte chiamata è abilitata all'esecuzione di squillo simultaneo, il routing in base alla posizione analizza il percorso della parte chiamante e gli endpoint delle parti chiamate per determinare se la chiamata deve essere instradata.</span><span class="sxs-lookup"><span data-stu-id="efbf3-104">When the called party has simultaneous ringing enabled, Location-Based Routing analyzes the location of the calling party and the endpoints of the called parties to determine whether the call should be routed.</span></span>
 
-<span data-ttu-id="bfca8-105">La tabella seguente illustra un utente configurato con squillo simultaneo e la destinazione di chiamata simultanea è un utente nello stesso sito di rete, in un sito di rete diverso o in un sito di rete sconosciuto.</span><span class="sxs-lookup"><span data-stu-id="bfca8-105">The following table illustrates a user configured with simultaneous ringing, and the simultaneous ringing target is a user in the same network site, in a different network site, or in an unknown network site.</span></span>
+<span data-ttu-id="efbf3-105">Nella tabella seguente è illustrato un utente configurato con squillo simultaneo e la destinazione di squillo simultaneo è un utente nello stesso sito di rete, in un sito di rete diverso o in un sito di rete sconosciuto.</span><span class="sxs-lookup"><span data-stu-id="efbf3-105">The following table illustrates a user configured with simultaneous ringing, and the simultaneous ringing target is a user in the same network site, in a different network site, or in an unknown network site.</span></span>
 
 
 <table>
@@ -51,24 +51,24 @@ ms.locfileid: "41764512"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="bfca8-106">Chiamata PSTN in arrivo per</span><span class="sxs-lookup"><span data-stu-id="bfca8-106">Incoming PSTN call for</span></span></th>
-<th><span data-ttu-id="bfca8-107">Situato nello stesso sito di rete di un chiamato</span><span class="sxs-lookup"><span data-stu-id="bfca8-107">Located in the same network site as callee</span></span></th>
-<th><span data-ttu-id="bfca8-108">Situato in un sito di rete diverso rispetto al chiamato</span><span class="sxs-lookup"><span data-stu-id="bfca8-108">Located in different network site than callee</span></span></th>
-<th><span data-ttu-id="bfca8-109">Si trova in un sito di rete sconosciuto o non è abilitato per il routing basato sulla posizione</span><span class="sxs-lookup"><span data-stu-id="bfca8-109">Located in unknown network site or not enabled for Location-Based Routing</span></span></th>
+<th><span data-ttu-id="efbf3-106">Chiamata PSTN in ingresso per</span><span class="sxs-lookup"><span data-stu-id="efbf3-106">Incoming PSTN call for</span></span></th>
+<th><span data-ttu-id="efbf3-107">Si trova nello stesso sito di rete del destinatario della chiamata</span><span class="sxs-lookup"><span data-stu-id="efbf3-107">Located in the same network site as callee</span></span></th>
+<th><span data-ttu-id="efbf3-108">Si trova in un sito di rete diverso dal destinatario della chiamata</span><span class="sxs-lookup"><span data-stu-id="efbf3-108">Located in different network site than callee</span></span></th>
+<th><span data-ttu-id="efbf3-109">Si trova in un sito di rete sconosciuto o non è abilitato per il routing in base alla posizione</span><span class="sxs-lookup"><span data-stu-id="efbf3-109">Located in unknown network site or not enabled for Location-Based Routing</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="bfca8-110">Utenti di Lync</span><span class="sxs-lookup"><span data-stu-id="bfca8-110">Lync user</span></span></p></td>
-<td><p><span data-ttu-id="bfca8-111">Squillo simultaneo consentito</span><span class="sxs-lookup"><span data-stu-id="bfca8-111">Simultaneous ring allowed</span></span></p></td>
-<td><p><span data-ttu-id="bfca8-112">Anello simultaneo non consentito</span><span class="sxs-lookup"><span data-stu-id="bfca8-112">Simultaneous ring not allowed</span></span></p></td>
-<td><p><span data-ttu-id="bfca8-113">Anello simultaneo non consentito</span><span class="sxs-lookup"><span data-stu-id="bfca8-113">Simultaneous ring not allowed</span></span></p></td>
+<td><p><span data-ttu-id="efbf3-110">Utente di Lync</span><span class="sxs-lookup"><span data-stu-id="efbf3-110">Lync user</span></span></p></td>
+<td><p><span data-ttu-id="efbf3-111">Squillo simultaneo consentito</span><span class="sxs-lookup"><span data-stu-id="efbf3-111">Simultaneous ring allowed</span></span></p></td>
+<td><p><span data-ttu-id="efbf3-112">Squillo simultaneo non consentito</span><span class="sxs-lookup"><span data-stu-id="efbf3-112">Simultaneous ring not allowed</span></span></p></td>
+<td><p><span data-ttu-id="efbf3-113">Squillo simultaneo non consentito</span><span class="sxs-lookup"><span data-stu-id="efbf3-113">Simultaneous ring not allowed</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
   
-<span data-ttu-id="bfca8-114">Nella tabella seguente viene illustrata una chiamata da un utente di Lync (ad esempio il chiamante di Lync) nello stesso sito di rete, in un sito di rete diverso o da un sito di rete sconosciuto.</span><span class="sxs-lookup"><span data-stu-id="bfca8-114">The following table illustrates a call from a Lync user (i.e. Lync caller) in the same network site, in a different network site, or from an unknown network site.</span></span> <span data-ttu-id="bfca8-115">Il chiamato ha un endpoint PSTN (i.e. cellulare) configurato come destinazione squillo simultaneo.</span><span class="sxs-lookup"><span data-stu-id="bfca8-115">The callee has a PSTN endpoint (i.e. cellphone) configured as a simultaneous ring target.</span></span> <span data-ttu-id="bfca8-116">In questo scenario, il routing basato sulla posizione determinerà se la chiamata deve essere instradata alla destinazione squillo simultanea (ad esempio cellulare) del destinatario o meno.</span><span class="sxs-lookup"><span data-stu-id="bfca8-116">In this scenario, Location-Based Routing will determine whether the call should be routed to the simultaneous ring target (i.e. cellphone) of the callee or not.</span></span>
+<span data-ttu-id="efbf3-114">Nella tabella seguente viene illustrata una chiamata proveniente da un utente Lync (ovvero il chiamante Lync) nello stesso sito di rete, in un sito di rete diverso o da un sito di rete sconosciuto.</span><span class="sxs-lookup"><span data-stu-id="efbf3-114">The following table illustrates a call from a Lync user (i.e. Lync caller) in the same network site, in a different network site, or from an unknown network site.</span></span> <span data-ttu-id="efbf3-115">Il destinatario della chiamata ha un endpoint PSTN (i.e. cellulare) configurato come destinazione anello simultaneo.</span><span class="sxs-lookup"><span data-stu-id="efbf3-115">The callee has a PSTN endpoint (i.e. cellphone) configured as a simultaneous ring target.</span></span> <span data-ttu-id="efbf3-116">In questo scenario, il routing in base alla posizione determina se la chiamata deve essere instradata alla destinazione dell'anello simultaneo (i.e. cellulare) del destinatario della chiamata oppure no.</span><span class="sxs-lookup"><span data-stu-id="efbf3-116">In this scenario, Location-Based Routing will determine whether the call should be routed to the simultaneous ring target (i.e. cellphone) of the callee or not.</span></span>
 
 
 <table>
@@ -80,18 +80,18 @@ ms.locfileid: "41764512"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="bfca8-117">Destinazione anello simultaneo</span><span class="sxs-lookup"><span data-stu-id="bfca8-117">Simultaneous ring target</span></span></th>
-<th><span data-ttu-id="bfca8-118">Situato nello stesso sito di rete di un chiamato</span><span class="sxs-lookup"><span data-stu-id="bfca8-118">Located in the same network site as callee</span></span></th>
-<th><span data-ttu-id="bfca8-119">Situato in un sito di rete diverso rispetto al chiamato</span><span class="sxs-lookup"><span data-stu-id="bfca8-119">Located in different network site than callee</span></span></th>
-<th><span data-ttu-id="bfca8-120">Si trova in un sito di rete sconosciuto o non è abilitato per il routing basato sulla posizione</span><span class="sxs-lookup"><span data-stu-id="bfca8-120">Located in unknown network site or not enabled for Location-Based Routing</span></span></th>
+<th><span data-ttu-id="efbf3-117">Destinazione anello simultaneo</span><span class="sxs-lookup"><span data-stu-id="efbf3-117">Simultaneous ring target</span></span></th>
+<th><span data-ttu-id="efbf3-118">Si trova nello stesso sito di rete del destinatario della chiamata</span><span class="sxs-lookup"><span data-stu-id="efbf3-118">Located in the same network site as callee</span></span></th>
+<th><span data-ttu-id="efbf3-119">Si trova in un sito di rete diverso dal destinatario della chiamata</span><span class="sxs-lookup"><span data-stu-id="efbf3-119">Located in different network site than callee</span></span></th>
+<th><span data-ttu-id="efbf3-120">Si trova in un sito di rete sconosciuto o non è abilitato per il routing in base alla posizione</span><span class="sxs-lookup"><span data-stu-id="efbf3-120">Located in unknown network site or not enabled for Location-Based Routing</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="bfca8-121">Endpoint PSTN</span><span class="sxs-lookup"><span data-stu-id="bfca8-121">PSTN endpoint</span></span></p></td>
-<td><p><span data-ttu-id="bfca8-122">Squillo simultaneo consentito tramite il criterio di routing vocale del sito del chiamante</span><span class="sxs-lookup"><span data-stu-id="bfca8-122">Simultaneous ring allowed through the caller’s site voice routing policy</span></span></p></td>
-<td><p><span data-ttu-id="bfca8-123">Squillo simultaneo consentito tramite il criterio di routing vocale del sito del chiamante</span><span class="sxs-lookup"><span data-stu-id="bfca8-123">Simultaneous ring allowed through the caller’s site voice routing policy</span></span></p></td>
-<td><p><span data-ttu-id="bfca8-124">Squillo simultaneo consentito tramite il criterio vocale del chiamante per Trunks non abilitato per il routing basato sulla posizione</span><span class="sxs-lookup"><span data-stu-id="bfca8-124">Simultaneous ring allowed through the caller’s voice policy to trunks not enabled for Location-Based Routing</span></span></p></td>
+<td><p><span data-ttu-id="efbf3-121">Endpoint PSTN</span><span class="sxs-lookup"><span data-stu-id="efbf3-121">PSTN endpoint</span></span></p></td>
+<td><p><span data-ttu-id="efbf3-122">Squillo simultaneo consentito tramite il criterio di routing vocale del sito del chiamante</span><span class="sxs-lookup"><span data-stu-id="efbf3-122">Simultaneous ring allowed through the caller’s site voice routing policy</span></span></p></td>
+<td><p><span data-ttu-id="efbf3-123">Squillo simultaneo consentito tramite il criterio di routing vocale del sito del chiamante</span><span class="sxs-lookup"><span data-stu-id="efbf3-123">Simultaneous ring allowed through the caller’s site voice routing policy</span></span></p></td>
+<td><p><span data-ttu-id="efbf3-124">Squillo simultaneo consentito tramite il criterio vocale del chiamante ai trunk non abilitati per il routing in base alla posizione</span><span class="sxs-lookup"><span data-stu-id="efbf3-124">Simultaneous ring allowed through the caller’s voice policy to trunks not enabled for Location-Based Routing</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -99,10 +99,10 @@ ms.locfileid: "41764512"
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="bfca8-125">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="bfca8-125">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="efbf3-125">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="efbf3-125">See Also</span></span>
 
 
-[<span data-ttu-id="bfca8-126">Scenari per il routing in base alla posizione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="bfca8-126">Scenarios for Location-Based Routing in Lync Server 2013</span></span>](lync-server-2013-scenarios-for-location-based-routing.md)  
+[<span data-ttu-id="efbf3-126">Scenari per il routing in base alla posizione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="efbf3-126">Scenarios for Location-Based Routing in Lync Server 2013</span></span>](lync-server-2013-scenarios-for-location-based-routing.md)  
   
 
 </div>

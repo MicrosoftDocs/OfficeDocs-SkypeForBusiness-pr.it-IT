@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: report di diagnostica delle chiamate (per utente)'
+title: 'Lync Server 2013: rapporti di diagnostica chiamate (per utente)'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184916
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7f1d9c1b504ac3b38948e04ed10cfe6d6e2b2744
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 961c6f70c5ca115824c71cf5366cb5f3610fd1fb
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743116"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044518"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="call-diagnostic-reports-per-user-in-lync-server-2013"></a><span data-ttu-id="2c32a-102">Report di diagnostica delle chiamate (per utente) in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2c32a-102">Call Diagnostic Reports (per user) in Lync Server 2013</span></span>
+# <a name="call-diagnostic-reports-per-user-in-lync-server-2013"></a><span data-ttu-id="65767-102">Rapporti di diagnostica chiamate (per utente) in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="65767-102">Call Diagnostic Reports (per user) in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41743116"
 
 <span> </span>
 
-<span data-ttu-id="2c32a-103">_**Argomento Ultima modifica:** 2012-10-21_</span><span class="sxs-lookup"><span data-stu-id="2c32a-103">_**Topic Last Modified:** 2012-10-21_</span></span>
+<span data-ttu-id="65767-103">_**Ultimo argomento modificato:** 2012-10-21_</span><span class="sxs-lookup"><span data-stu-id="65767-103">_**Topic Last Modified:** 2012-10-21_</span></span>
 
-<span data-ttu-id="2c32a-104">I report di diagnostica delle chiamate contengono informazioni per utente sulle sessioni peer-to-peer e conferenze non riuscite.</span><span class="sxs-lookup"><span data-stu-id="2c32a-104">The Call Diagnostic Reports provide per-user information about failed peer-to-peer and conferencing sessions.</span></span>
+<span data-ttu-id="65767-104">I report di diagnostica delle chiamate forniscono informazioni per utente sulle sessioni peer-to-peer e di conferenza non riuscite.</span><span class="sxs-lookup"><span data-stu-id="65767-104">The Call Diagnostic Reports provide per-user information about failed peer-to-peer and conferencing sessions.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="2c32a-105">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="2c32a-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="65767-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="65767-105">In This Section</span></span>
 
-  - <span data-ttu-id="2c32a-106">[Il report attività utente in Lync Server 2013](lync-server-2013-user-activity-report.md)   fornisce informazioni sulle attività peer-to-peer e conferenze per ogni utente.</span><span class="sxs-lookup"><span data-stu-id="2c32a-106">[User Activity Report in Lync Server 2013](lync-server-2013-user-activity-report.md)   Provides information about peer-to-peer and conference activities for each of your users.</span></span>
+  - <span data-ttu-id="65767-106">[Il rapporto attività utente in Lync Server 2013](lync-server-2013-user-activity-report.md)   fornisce informazioni sulle attività peer-to-peer e di conferenza per ogni utente.</span><span class="sxs-lookup"><span data-stu-id="65767-106">[User Activity Report in Lync Server 2013](lync-server-2013-user-activity-report.md)   Provides information about peer-to-peer and conference activities for each of your users.</span></span>
 
 </div>
 

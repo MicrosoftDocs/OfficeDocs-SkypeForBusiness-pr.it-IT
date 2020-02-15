@@ -12,20 +12,20 @@ ms:contentKeyID: 48184155
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 27e99c56ae8c7699b3e19f18ef057b194539b75e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c0726a1c7893a2411ed1fc1ad8981349b8cc9add
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755780"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051338"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="operations-in-lync-server-2013"></a><span data-ttu-id="10522-102">Operazioni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-102">Operations in Lync Server 2013</span></span>
+# <a name="operations-in-lync-server-2013"></a><span data-ttu-id="7a958-102">Operazioni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-102">Operations in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,69 +35,69 @@ ms.locfileid: "41755780"
 
 <span> </span>
 
-<span data-ttu-id="10522-103">_**Argomento Ultima modifica:** 2015-01-26_</span><span class="sxs-lookup"><span data-stu-id="10522-103">_**Topic Last Modified:** 2015-01-26_</span></span>
+<span data-ttu-id="7a958-103">_**Ultimo argomento modificato:** 2015-01-26_</span><span class="sxs-lookup"><span data-stu-id="7a958-103">_**Topic Last Modified:** 2015-01-26_</span></span>
 
-<span data-ttu-id="10522-104">Gli argomenti di questa sezione illustrano come usare gli strumenti di gestione per configurare e gestire la distribuzione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="10522-104">The topics in this section explain how to use management tools to configure and manage your Lync Server 2013 deployment.</span></span>
+<span data-ttu-id="7a958-104">Negli argomenti di questa sezione viene illustrato come utilizzare gli strumenti di gestione per configurare e gestire la distribuzione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="7a958-104">The topics in this section explain how to use management tools to configure and manage your Lync Server 2013 deployment.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="10522-105">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="10522-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="7a958-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="7a958-105">In This Section</span></span>
 
-  - [<span data-ttu-id="10522-106">Operations Guide for Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-106">Operations Guide for Lync Server 2013</span></span>](lync-server-2013-operations-guide.md)
+  - [<span data-ttu-id="7a958-106">Guida alle operazioni per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-106">Operations Guide for Lync Server 2013</span></span>](lync-server-2013-operations-guide.md)
 
-  - [<span data-ttu-id="10522-107">Strumenti di amministrazione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-107">Lync Server 2013 administrative tools</span></span>](lync-server-2013-lync-server-administrative-tools.md)
+  - [<span data-ttu-id="7a958-107">Strumenti di amministrazione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-107">Lync Server 2013 administrative tools</span></span>](lync-server-2013-lync-server-administrative-tools.md)
 
-  - [<span data-ttu-id="10522-108">Gestione degli utenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-108">Managing users in Lync Server 2013</span></span>](lync-server-2013-managing-users-in-lync-server.md)
+  - [<span data-ttu-id="7a958-108">Gestione degli utenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-108">Managing users in Lync Server 2013</span></span>](lync-server-2013-managing-users-in-lync-server.md)
 
-  - [<span data-ttu-id="10522-109">Gestione della topologia di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-109">Managing the Lync Server 2013 topology</span></span>](lync-server-2013-managing-the-lync-server-topology.md)
+  - [<span data-ttu-id="7a958-109">Gestione della topologia di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-109">Managing the Lync Server 2013 topology</span></span>](lync-server-2013-managing-the-lync-server-topology.md)
 
-  - [<span data-ttu-id="10522-110">Delega del controllo amministrativo di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-110">Delegating administrative control of Lync Server 2013</span></span>](lync-server-2013-delegating-administrative-control-of-lync-server.md)
+  - [<span data-ttu-id="7a958-110">Delega del controllo amministrativo di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-110">Delegating administrative control of Lync Server 2013</span></span>](lync-server-2013-delegating-administrative-control-of-lync-server.md)
 
-  - [<span data-ttu-id="10522-111">Gestione delle impostazioni di messaggistica istantanea e presenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-111">Managing IM and presence settings in Lync Server 2013</span></span>](lync-server-2013-managing-im-and-presence-settings.md)
+  - [<span data-ttu-id="7a958-111">Gestione delle impostazioni di messaggistica istantanea e presenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-111">Managing IM and presence settings in Lync Server 2013</span></span>](lync-server-2013-managing-im-and-presence-settings.md)
 
-  - [<span data-ttu-id="10522-112">Gestione del server chat persistente di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-112">Managing Lync Server 2013, Persistent Chat Server</span></span>](managing-lync-server-2013-persistent-chat-server.md)
+  - [<span data-ttu-id="7a958-112">Gestione del server chat persistente di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-112">Managing Lync Server 2013, Persistent Chat Server</span></span>](managing-lync-server-2013-persistent-chat-server.md)
 
-  - [<span data-ttu-id="10522-113">Gestione del routing vocale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-113">Managing voice routing in Lync Server 2013</span></span>](lync-server-2013-managing-voice-routing.md)
+  - [<span data-ttu-id="7a958-113">Gestione del routing vocale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-113">Managing voice routing in Lync Server 2013</span></span>](lync-server-2013-managing-voice-routing.md)
 
-  - [<span data-ttu-id="10522-114">Gestione delle funzionalità di gestione delle chiamate in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-114">Managing call management features in Lync Server 2013</span></span>](lync-server-2013-managing-call-management-features.md)
+  - [<span data-ttu-id="7a958-114">Gestione delle funzionalità di gestione delle chiamate in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-114">Managing call management features in Lync Server 2013</span></span>](lync-server-2013-managing-call-management-features.md)
 
-  - [<span data-ttu-id="10522-115">Gestione di riunioni e conferenze in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-115">Managing meetings and conferences in Lync Server 2013</span></span>](lync-server-2013-managing-meetings-and-conferences.md)
+  - [<span data-ttu-id="7a958-115">Gestione di riunioni e conferenze in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-115">Managing meetings and conferences in Lync Server 2013</span></span>](lync-server-2013-managing-meetings-and-conferences.md)
 
-  - [<span data-ttu-id="10522-116">Gestione di dispositivi, telefoni e applicazioni client in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-116">Managing devices, phones, and client applications in Lync Server 2013</span></span>](lync-server-2013-managing-devices-phones-and-client-applications.md)
+  - [<span data-ttu-id="7a958-116">Gestione di dispositivi, telefoni e applicazioni client in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-116">Managing devices, phones, and client applications in Lync Server 2013</span></span>](lync-server-2013-managing-devices-phones-and-client-applications.md)
 
-  - [<span data-ttu-id="10522-117">Gestione della federazione e dell'accesso esterno a Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-117">Managing federation and external access to Lync Server 2013</span></span>](lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md)
+  - [<span data-ttu-id="7a958-117">Gestione della Federazione e dell'accesso esterno a Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-117">Managing federation and external access to Lync Server 2013</span></span>](lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md)
 
-  - [<span data-ttu-id="10522-118">Gestione dell'archiviazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-118">Managing Lync Server 2013 Archiving</span></span>](lync-server-2013-managing-archiving.md)
+  - [<span data-ttu-id="7a958-118">Gestione dell'archiviazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-118">Managing Lync Server 2013 Archiving</span></span>](lync-server-2013-managing-archiving.md)
 
-  - [<span data-ttu-id="10522-119">Gestione dell'autenticazione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-119">Managing Lync Server 2013 authentication</span></span>](lync-server-2013-managing-lync-server-authentication.md)
+  - [<span data-ttu-id="7a958-119">Gestione dell'autenticazione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-119">Managing Lync Server 2013 authentication</span></span>](lync-server-2013-managing-lync-server-authentication.md)
 
-  - [<span data-ttu-id="10522-120">Gestione dell'infrastruttura di rete di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-120">Managing the Lync Server 2013 network infrastructure</span></span>](lync-server-2013-managing-the-lync-server-2013-network-infrastructure.md)
+  - [<span data-ttu-id="7a958-120">Gestione dell'infrastruttura di rete di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-120">Managing the Lync Server 2013 network infrastructure</span></span>](lync-server-2013-managing-the-lync-server-2013-network-infrastructure.md)
 
-  - [<span data-ttu-id="10522-121">Gestione dei servizi di emergenza avanzati e del servizio di posizione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-121">Managing Enhanced 9-1-1 and the Location service in Lync Server 2013</span></span>](lync-server-2013-managing-enhanced-9-1-1-and-the-location-service.md)
+  - [<span data-ttu-id="7a958-121">Managing Enhanced 9-1-1 e The location Service in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-121">Managing Enhanced 9-1-1 and the Location service in Lync Server 2013</span></span>](lync-server-2013-managing-enhanced-9-1-1-and-the-location-service.md)
 
-  - [<span data-ttu-id="10522-122">Gestione di servizi e ruoli server di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-122">Managing Lync Server 2013 services and server roles</span></span>](lync-server-2013-managing-lync-server-services-and-server-roles.md)
+  - [<span data-ttu-id="7a958-122">Gestione di servizi e ruoli del server di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-122">Managing Lync Server 2013 services and server roles</span></span>](lync-server-2013-managing-lync-server-services-and-server-roles.md)
 
-  - [<span data-ttu-id="10522-123">Gestione delle applicazioni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-123">Managing applications in Lync Server 2013</span></span>](lync-server-2013-managing-applications.md)
+  - [<span data-ttu-id="7a958-123">Gestione delle applicazioni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-123">Managing applications in Lync Server 2013</span></span>](lync-server-2013-managing-applications.md)
 
-  - [<span data-ttu-id="10522-124">Gestione di ripristino di emergenza, disponibilità elevata e servizio di backup di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-124">Managing Lync Server 2013 disaster recovery, high availability, and Backup Service</span></span>](lync-server-2013-managing-lync-server-disaster-recovery-high-availability-and-backup-service.md)
+  - [<span data-ttu-id="7a958-124">Gestione di ripristino di emergenza, disponibilità elevata e servizio di backup di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-124">Managing Lync Server 2013 disaster recovery, high availability, and Backup Service</span></span>](lync-server-2013-managing-lync-server-disaster-recovery-high-availability-and-backup-service.md)
 
-  - [<span data-ttu-id="10522-125">Backup e ripristino di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-125">Backing up and restoring Lync Server 2013</span></span>](lync-server-2013-backing-up-and-restoring-lync-server.md)
+  - [<span data-ttu-id="7a958-125">Backup e ripristino di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-125">Backing up and restoring Lync Server 2013</span></span>](lync-server-2013-backing-up-and-restoring-lync-server.md)
 
-  - [<span data-ttu-id="10522-126">Configurazione di monitoraggio e integrità in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-126">Monitoring and health configuration in Lync Server 2013</span></span>](lync-server-2013-monitoring-and-health-configuration.md)
+  - [<span data-ttu-id="7a958-126">Configurazione del monitoraggio e dell'integrità in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-126">Monitoring and health configuration in Lync Server 2013</span></span>](lync-server-2013-monitoring-and-health-configuration.md)
 
-  - [<span data-ttu-id="10522-127">Lync Server 2013 Management Shell</span><span class="sxs-lookup"><span data-stu-id="10522-127">Lync Server 2013 Management Shell</span></span>](lync-server-2013-lync-server-management-shell.md)
+  - [<span data-ttu-id="7a958-127">Lync Server 2013 Management Shell</span><span class="sxs-lookup"><span data-stu-id="7a958-127">Lync Server 2013 Management Shell</span></span>](lync-server-2013-lync-server-management-shell.md)
 
-  - [<span data-ttu-id="10522-128">Analizzatore delle procedure consigliate di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-128">Lync Server 2013 Best Practices Analyzer</span></span>](lync-server-2013-lync-server-best-practices-analyzer.md)
+  - [<span data-ttu-id="7a958-128">Best Practices Analyzer di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-128">Lync Server 2013 Best Practices Analyzer</span></span>](lync-server-2013-lync-server-best-practices-analyzer.md)
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="10522-129">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="10522-129">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7a958-129">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="7a958-129">See Also</span></span>
 
 
-[<span data-ttu-id="10522-130">Distribuzione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-130">Deployment of Lync Server 2013</span></span>](lync-server-2013-deployment.md)  
-[<span data-ttu-id="10522-131">Pianificazione per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="10522-131">Planning for Lync Server 2013</span></span>](lync-server-2013-planning.md)  
+[<span data-ttu-id="7a958-130">Distribuzione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-130">Deployment of Lync Server 2013</span></span>](lync-server-2013-deployment.md)  
+[<span data-ttu-id="7a958-131">Planning for Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="7a958-131">Planning for Lync Server 2013</span></span>](lync-server-2013-planning.md)  
   
 
 </div>

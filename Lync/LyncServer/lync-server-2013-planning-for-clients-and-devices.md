@@ -12,20 +12,20 @@ ms:contentKeyID: 48184598
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 89ddf40f5f713481ddda36a072c2fd5b91e3f80f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f4a35eb8d388a42bb15a5ea71a1016ac355bf0ff
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725446"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037018"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-clients-and-devices-in-lync-server-2013"></a><span data-ttu-id="0c902-102">Pianificazione per client e dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0c902-102">Planning for clients and devices in Lync Server 2013</span></span>
+# <a name="planning-for-clients-and-devices-in-lync-server-2013"></a><span data-ttu-id="77cfa-102">Pianificazione di client e dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="77cfa-102">Planning for clients and devices in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41725446"
 
 <span> </span>
 
-<span data-ttu-id="0c902-103">_**Argomento Ultima modifica:** 2012-06-04_</span><span class="sxs-lookup"><span data-stu-id="0c902-103">_**Topic Last Modified:** 2012-06-04_</span></span>
+<span data-ttu-id="77cfa-103">_**Ultimo argomento modificato:** 2012-06-04_</span><span class="sxs-lookup"><span data-stu-id="77cfa-103">_**Topic Last Modified:** 2012-06-04_</span></span>
 
-<span data-ttu-id="0c902-104">Gli argomenti di questa sezione illustrano come pianificare i client e i dispositivi di Lync Server 2013 nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="0c902-104">The topics in this section describe how to plan for Lync Server 2013 clients and devices in your organization.</span></span>
+<span data-ttu-id="77cfa-104">Negli argomenti di questa sezione viene descritto come pianificare i client e i dispositivi di Lync Server 2013 nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="77cfa-104">The topics in this section describe how to plan for Lync Server 2013 clients and devices in your organization.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="0c902-105">Contenuto della sezione</span><span class="sxs-lookup"><span data-stu-id="0c902-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="77cfa-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="77cfa-105">In This Section</span></span>
 
-  - [<span data-ttu-id="0c902-106">Pianificazione per i client in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0c902-106">Planning for clients in Lync Server 2013</span></span>](lync-server-2013-planning-for-clients.md)
+  - [<span data-ttu-id="77cfa-106">Pianificazione per i client in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="77cfa-106">Planning for clients in Lync Server 2013</span></span>](lync-server-2013-planning-for-clients.md)
 
-  - [<span data-ttu-id="0c902-107">Pianificazione per i client mobili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0c902-107">Planning for mobile clients in Lync Server 2013</span></span>](lync-server-2013-planning-for-mobile-clients.md)
+  - [<span data-ttu-id="77cfa-107">Pianificazione per i client mobili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="77cfa-107">Planning for mobile clients in Lync Server 2013</span></span>](lync-server-2013-planning-for-mobile-clients.md)
 
-  - [<span data-ttu-id="0c902-108">Pianificazione per i dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0c902-108">Planning for devices in Lync Server 2013</span></span>](lync-server-2013-planning-for-devices.md)
+  - [<span data-ttu-id="77cfa-108">Pianificazione dei dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="77cfa-108">Planning for devices in Lync Server 2013</span></span>](lync-server-2013-planning-for-devices.md)
 
 </div>
 

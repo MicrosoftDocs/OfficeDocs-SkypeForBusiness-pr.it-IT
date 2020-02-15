@@ -1,5 +1,5 @@
 ---
-title: Configurazione
+title: Installazione
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541428
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 16a23ab96b25fa3ba5da846fc5967053fdac041b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5d09980e7a34e5c565fe8282a665cede654a725a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763986"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038258"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="setup"></a><span data-ttu-id="9a8dd-102">Configurazione</span><span class="sxs-lookup"><span data-stu-id="9a8dd-102">Setup</span></span>
+# <a name="setup"></a><span data-ttu-id="a6b6c-102">Installazione</span><span class="sxs-lookup"><span data-stu-id="a6b6c-102">Setup</span></span>
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41763986"
 
 <span> </span>
 
-<span data-ttu-id="9a8dd-103">_**Argomento Ultima modifica:** 2014-04-22_</span><span class="sxs-lookup"><span data-stu-id="9a8dd-103">_**Topic Last Modified:** 2014-04-22_</span></span>
+<span data-ttu-id="a6b6c-103">_**Ultimo argomento modificato:** 2014-04-22_</span><span class="sxs-lookup"><span data-stu-id="a6b6c-103">_**Topic Last Modified:** 2014-04-22_</span></span>
 
-<span data-ttu-id="9a8dd-104">Per installare gli strumenti forniti come parte dello strumento di monitoraggio dello stress e delle prestazioni di Lync Server 2013, seguire queste istruzioni.</span><span class="sxs-lookup"><span data-stu-id="9a8dd-104">To install the tools provided as part of Lync Server 2013 Stress and Performance Tool, follow these instructions.</span></span>
+<span data-ttu-id="a6b6c-104">Per installare gli strumenti forniti come parte dello strumento di stress e prestazioni di Lync Server 2013, seguire le istruzioni riportate di seguito.</span><span class="sxs-lookup"><span data-stu-id="a6b6c-104">To install the tools provided as part of Lync Server 2013 Stress and Performance Tool, follow these instructions.</span></span>
 
 <div>
 
-## <a name="installing-the-stress-and-performance-tool"></a><span data-ttu-id="9a8dd-105">Installazione dello strumento di stress e prestazioni</span><span class="sxs-lookup"><span data-stu-id="9a8dd-105">Installing the Stress and Performance Tool</span></span>
+## <a name="installing-the-stress-and-performance-tool"></a><span data-ttu-id="a6b6c-105">Installazione dello strumento di stress e prestazioni</span><span class="sxs-lookup"><span data-stu-id="a6b6c-105">Installing the Stress and Performance Tool</span></span>
 
-<span data-ttu-id="9a8dd-106">Eseguire il file di Windows Installer, **CapacityPlanningTool. msi**, in ogni computer client che verrà usato per simulare il traffico degli utenti.</span><span class="sxs-lookup"><span data-stu-id="9a8dd-106">Run the Windows Installer file, **CapacityPlanningTool.msi**, on each client computer that you will be using to simulate user traffic.</span></span> <span data-ttu-id="9a8dd-107">Questi computer client non devono eseguire alcun componente Lync Server.</span><span class="sxs-lookup"><span data-stu-id="9a8dd-107">These client computers must not be running any Lync Server components.</span></span>
+<span data-ttu-id="a6b6c-106">Eseguire il file di Windows Installer, **CapacityPlanningTool. msi**, in ogni computer client che verrà utilizzato per simulare il traffico degli utenti.</span><span class="sxs-lookup"><span data-stu-id="a6b6c-106">Run the Windows Installer file, **CapacityPlanningTool.msi**, on each client computer that you will be using to simulate user traffic.</span></span> <span data-ttu-id="a6b6c-107">Questi computer client non devono eseguire alcun componente di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="a6b6c-107">These client computers must not be running any Lync Server components.</span></span>
 
 </div>
 

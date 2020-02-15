@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Creare o modificare un numero di accesso per una conferenza telefonica con accesso esterno'
+title: 'Lync Server 2013: creare o modificare un numero di accesso per le conferenze telefoniche con chiamata in ingresso'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183304
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7ecfebba25d45f53633fdd425e5901929fc32d0c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6406fe5c2f1183b39966902ee2fa5273f509bf2d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758080"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048927"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-dial-in-conferencing-access-number-in-lync-server-2013"></a><span data-ttu-id="f8394-102">Creare o modificare un numero di accesso per una conferenza telefonica con accesso esterno in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f8394-102">Create or modify a dial-in conferencing access number in Lync Server 2013</span></span>
+# <a name="create-or-modify-a-dial-in-conferencing-access-number-in-lync-server-2013"></a><span data-ttu-id="69cd1-102">Creare o modificare un numero di accesso per le conferenze telefoniche in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="69cd1-102">Create or modify a dial-in conferencing access number in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41758080"
 
 <span> </span>
 
-<span data-ttu-id="f8394-103">_**Argomento Ultima modifica:** 2012-09-17_</span><span class="sxs-lookup"><span data-stu-id="f8394-103">_**Topic Last Modified:** 2012-09-17_</span></span>
+<span data-ttu-id="69cd1-103">_**Ultimo argomento modificato:** 2012-09-17_</span><span class="sxs-lookup"><span data-stu-id="69cd1-103">_**Topic Last Modified:** 2012-09-17_</span></span>
 
-<span data-ttu-id="f8394-104">Seguire questa procedura se si vuole creare o modificare un numero di accesso per i servizi di conferenza telefonica con chiamata in ingresso.</span><span class="sxs-lookup"><span data-stu-id="f8394-104">Follow these steps if you want to create or modify a dial-in conferencing access number.</span></span>
+<span data-ttu-id="69cd1-104">Eseguire questa procedura se si desidera creare o modificare un numero di accesso per partecipare a una conferenza telefonica con accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="69cd1-104">Follow these steps if you want to create or modify a dial-in conferencing access number.</span></span>
 
 <div>
 
 
 > [!IMPORTANT]  
-> <span data-ttu-id="f8394-105">Prima di creare un nuovo numero di accesso per la chiamata in ingresso, è necessario impostare un'area di conferenza telefonica con accesso esterno nel dial plan associato al nuovo numero di Access per la chiamata in ingresso.</span><span class="sxs-lookup"><span data-stu-id="f8394-105">Before you create a new dial-in access number, you must set a dial-in conferencing region in the dial plan that is associated with the new dial-in access number.</span></span> <span data-ttu-id="f8394-106">Più piani di chiamata possono usare la stessa area geografica.</span><span class="sxs-lookup"><span data-stu-id="f8394-106">Multiple dial plans can use the same region.</span></span>
+> <span data-ttu-id="69cd1-p101">Prima di creare un nuovo numero di accesso esterno, è necessario impostare per tale numero un'area di conferenza telefonica con accesso esterno associata al dial plan. Più dial plan possono utilizzare la stessa area.</span><span class="sxs-lookup"><span data-stu-id="69cd1-p101">Before you create a new dial-in access number, you must set a dial-in conferencing region in the dial plan that is associated with the new dial-in access number. Multiple dial plans can use the same region.</span></span>
 
 
 
@@ -51,115 +51,115 @@ ms.locfileid: "41758080"
 
 <div>
 
-## <a name="to-create-or-modify-a-dial-in-access-number"></a><span data-ttu-id="f8394-107">Per creare o modificare un numero di accesso esterno</span><span class="sxs-lookup"><span data-stu-id="f8394-107">To create or modify a dial-in access number</span></span>
+## <a name="to-create-or-modify-a-dial-in-access-number"></a><span data-ttu-id="69cd1-107">Per creare o modificare un numero di accesso esterno</span><span class="sxs-lookup"><span data-stu-id="69cd1-107">To create or modify a dial-in access number</span></span>
 
-1.  <span data-ttu-id="f8394-108">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="f8394-108">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+1.  <span data-ttu-id="69cd1-108">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="69cd1-108">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
 
-2.  <span data-ttu-id="f8394-109">Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="f8394-109">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="f8394-110">Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="f8394-110">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="69cd1-109">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="69cd1-109">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="69cd1-110">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="69cd1-110">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="f8394-111">Sulla barra di spostamento sinistra fare clic su servizi di conferenza e quindi su **numero di accesso** **esterno** .</span><span class="sxs-lookup"><span data-stu-id="f8394-111">In the left navigation bar, click **Conferencing** and then click **Dial-in Access Number**.</span></span>
+3.  <span data-ttu-id="69cd1-111">Nella barra di spostamento sinistra fare clic su **Servizio di conferenza** e quindi su **Numero di accesso esterno**.</span><span class="sxs-lookup"><span data-stu-id="69cd1-111">In the left navigation bar, click **Conferencing** and then click **Dial-in Access Number**.</span></span>
 
-4.  <span data-ttu-id="f8394-112">Nella pagina **numero di accesso** esterno effettuare una delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="f8394-112">On the **Dial-in Access Number** page, do one of the following:</span></span>
+4.  <span data-ttu-id="69cd1-112">Nella pagina **Numero di accesso esterno** eseguire una delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="69cd1-112">On the **Dial-in Access Number** page, do one of the following:</span></span>
     
-      - <span data-ttu-id="f8394-113">Fare clic su **nuovo** per aprire il **nuovo numero di accesso**esterno.</span><span class="sxs-lookup"><span data-stu-id="f8394-113">Click **New** to open **New Dial-in Access Number**.</span></span>
+      - <span data-ttu-id="69cd1-113">Fare clic su **Nuovo** per aprire **Nuovo numero di accesso esterno**.</span><span class="sxs-lookup"><span data-stu-id="69cd1-113">Click **New** to open **New Dial-in Access Number**.</span></span>
     
-      - <span data-ttu-id="f8394-114">Fare clic su uno dei numeri di accesso per la chiamata in ingresso nell'elenco, fare clic su **modifica**e quindi su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="f8394-114">Click one of the dial-in access numbers in the list, click **Edit**, and then click **Show details**.</span></span>
+      - <span data-ttu-id="69cd1-114">Fare clic su uno dei numeri di accesso esterno nell'elenco, fare clic su **Modifica** e quindi su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="69cd1-114">Click one of the dial-in access numbers in the list, click **Edit**, and then click **Show details**.</span></span>
         
         <div>
         
 
         > [!NOTE]  
-        > <span data-ttu-id="f8394-115">L'uso del campo di ricerca per cercare il contenuto di una colonna nell'elenco dei numeri di accesso per la chiamata in ingresso potrebbe non restituire i risultati previsti.</span><span class="sxs-lookup"><span data-stu-id="f8394-115">Using the search field to search for the contents of a column in the list of dial-in access numbers may not yield the results you expect.</span></span> <span data-ttu-id="f8394-116">Ordinare invece l'elenco in base alla colonna di interesse per identificare il numero di accesso esterno che si vuole visualizzare o modificare.</span><span class="sxs-lookup"><span data-stu-id="f8394-116">Instead, sort the list by the column of interest to identify the dial-in access number you want to view or change.</span></span>
+        > <span data-ttu-id="69cd1-p103">Se si utilizza il campo di ricerca per cercare il contenuto di una colonna nell'elenco dei numeri di accesso esterno, i risultati ottenuti potrebbero non essere quelli previsti. Ordinare invece l'elenco in base alla colonna a cui si è interessati per identificare il numero di accesso esterno da visualizzare o modificare.</span><span class="sxs-lookup"><span data-stu-id="69cd1-p103">Using the search field to search for the contents of a column in the list of dial-in access numbers may not yield the results you expect. Instead, sort the list by the column of interest to identify the dial-in access number you want to view or change.</span></span>
 
         
         </div>
 
-5.  <span data-ttu-id="f8394-117">In **numero di visualizzazione**Digitare il numero di telefono che gli utenti del telefono PSTN (Public Switched Telephone Network) Dial per partecipare a una conferenza.</span><span class="sxs-lookup"><span data-stu-id="f8394-117">In **Display number**, type the phone number that public switched telephone network (PSTN) phone users dial to join a conference.</span></span>
+5.  <span data-ttu-id="69cd1-117">In **Numero visualizzato** digitare il numero di telefono che gli utenti della rete PSTN (Public Switched Telephone Network) devono comporre per partecipare a una conferenza.</span><span class="sxs-lookup"><span data-stu-id="69cd1-117">In **Display number**, type the phone number that public switched telephone network (PSTN) phone users dial to join a conference.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="f8394-118">Questo numero viene visualizzato negli inviti alle riunioni e nella pagina Web delle impostazioni dei servizi di conferenza telefonica con accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="f8394-118">This number is displayed in meeting invitations and on the Dial-in Conferencing Settings webpage.</span></span>
+    > <span data-ttu-id="69cd1-118">Questo numero viene visualizzato negli inviti alle riunioni e nella pagina Web Impostazioni conferenza telefonica con accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="69cd1-118">This number is displayed in meeting invitations and on the Dial-in Conferencing Settings webpage.</span></span>
 
     
     </div>
 
-6.  <span data-ttu-id="f8394-119">In **nome visualizzato**Digitare una descrizione per il numero di accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="f8394-119">In **Display name**, type a description for the dial-in access number.</span></span> <span data-ttu-id="f8394-120">Questo è il nome associato al numero di accesso esterno nei risultati della ricerca in Lync.</span><span class="sxs-lookup"><span data-stu-id="f8394-120">This is the name that is associated with the dial-in access number in Lync search results.</span></span>
+6.  <span data-ttu-id="69cd1-119">In **Nome visualizzato** digitare una descrizione per il numero di accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="69cd1-119">In **Display name**, type a description for the dial-in access number.</span></span> <span data-ttu-id="69cd1-120">Si tratta del nome associato al numero di accesso esterno nei risultati della ricerca di Lync.</span><span class="sxs-lookup"><span data-stu-id="69cd1-120">This is the name that is associated with the dial-in access number in Lync search results.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="f8394-121">Questo nome viene visualizzato nel client quando un utente chiama il numero di accesso.</span><span class="sxs-lookup"><span data-stu-id="f8394-121">This name is displayed in the client when a user calls the access number.</span></span>
+    > <span data-ttu-id="69cd1-121">Questo nome viene visualizzato nel client quando un utente chiama il numero di accesso.</span><span class="sxs-lookup"><span data-stu-id="69cd1-121">This name is displayed in the client when a user calls the access number.</span></span>
 
     
     </div>
 
-7.  <span data-ttu-id="f8394-122">In **URI di linea**Digitare il numero e. 164 del numero di accesso esterno in formato Tel URI, incluso il simbolo + prima del numero ed escludendo gli spazi.</span><span class="sxs-lookup"><span data-stu-id="f8394-122">In **Line URI**, type the E.164 number of the dial-in access number in TEL URI format, including the + symbol before the number and excluding spaces.</span></span> <span data-ttu-id="f8394-123">Ad esempio, Tel: + 14255550200.</span><span class="sxs-lookup"><span data-stu-id="f8394-123">For example, tel:+14255550200.</span></span>
+7.  <span data-ttu-id="69cd1-p105">In **URI linea** digitare il numero E.164 del numero di accesso esterno nel formato URI TEL, preceduto dal simbolo + e senza utilizzare spazi. Ad esempio, tel:+14255550200.</span><span class="sxs-lookup"><span data-stu-id="69cd1-p105">In **Line URI**, type the E.164 number of the dial-in access number in TEL URI format, including the + symbol before the number and excluding spaces. For example, tel:+14255550200.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="f8394-124">Lo stesso URI di linea non può essere riutilizzato da un altro numero di accesso per i servizi di conferenza telefonica in ingresso.</span><span class="sxs-lookup"><span data-stu-id="f8394-124">The same Line URI cannot be reused by another dial-in conferencing access number.</span></span>
+    > <span data-ttu-id="69cd1-124">Non è possibile riutilizzare lo stesso URI linea per un altro numero di accesso per conferenze con accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="69cd1-124">The same Line URI cannot be reused by another dial-in conferencing access number.</span></span>
 
     
     </div>
 
-8.  <span data-ttu-id="f8394-125">In **URI SIP**eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="f8394-125">In **SIP URI**, do the following:</span></span>
+8.  <span data-ttu-id="69cd1-125">In **URI SIP** eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="69cd1-125">In **SIP URI**, do the following:</span></span>
     
-      - <span data-ttu-id="f8394-126">Nella casella di testo digitare un URI SIP univoco per questo numero di accesso per i servizi di conferenza telefonica con chiamata in ingresso.</span><span class="sxs-lookup"><span data-stu-id="f8394-126">In the text box, type a unique SIP URI for this dial-in conferencing access number.</span></span> <span data-ttu-id="f8394-127">Questo URI SIP viene visualizzato in varie posizioni, inclusi, ma non solo, i messaggi di notifica delle chiamate e le versioni precedenti dei client Communicator.</span><span class="sxs-lookup"><span data-stu-id="f8394-127">This SIP URI is displayed in various locations including, but not limited to, call notification messages and previous versions of Communicator clients.</span></span>
+      - <span data-ttu-id="69cd1-126">Nella casella di testo digitare un URI SIP univoco per il numero di accesso per conferenze con accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="69cd1-126">In the text box, type a unique SIP URI for this dial-in conferencing access number.</span></span> <span data-ttu-id="69cd1-127">Questo URI SIP viene visualizzato in diverse posizioni, tra cui, ma non solo, i messaggi di notifica di chiamata e le versioni precedenti dei client Communicator.</span><span class="sxs-lookup"><span data-stu-id="69cd1-127">This SIP URI is displayed in various locations including, but not limited to, call notification messages and previous versions of Communicator clients.</span></span>
         
         <div>
         
 
         > [!NOTE]  
-        > <span data-ttu-id="f8394-128">Lo stesso URI SIP non può essere riutilizzato da un altro numero di accesso per i servizi di conferenza telefonica con chiamata in ingresso.</span><span class="sxs-lookup"><span data-stu-id="f8394-128">The same SIP URI cannot be reused by another dial-in conferencing access number.</span></span> <span data-ttu-id="f8394-129">L'URI SIP non può essere modificato dopo la creazione del numero di accesso.</span><span class="sxs-lookup"><span data-stu-id="f8394-129">The SIP URI cannot be modified after the access number is created.</span></span> <span data-ttu-id="f8394-130">L'unico modo per modificare l'URI SIP consiste nell'eliminare e ricreare il numero di accesso.</span><span class="sxs-lookup"><span data-stu-id="f8394-130">The only way to change the SIP URI is to delete and recreate the access number.</span></span>
+        > <span data-ttu-id="69cd1-p107">Non è possibile riutilizzare lo stesso URI SIP per un altro numero di accesso per conferenze con accesso esterno. L'URI SIP non può essere modificato dopo che il numero di accesso è stato creato. L'unico modo per modificare l'URI SIP è quello di eliminare e ricreare il numero di accesso.</span><span class="sxs-lookup"><span data-stu-id="69cd1-p107">The same SIP URI cannot be reused by another dial-in conferencing access number. The SIP URI cannot be modified after the access number is created. The only way to change the SIP URI is to delete and recreate the access number.</span></span>
 
         
         </div>
     
-      - <span data-ttu-id="f8394-131">Nella casella di riepilogo a discesa fare clic sul dominio dell'applicazione operatore di conferenza che supporta questo numero di accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="f8394-131">In the drop-down list box, click the domain of the Conferencing Attendant application that supports this dial-in access number.</span></span>
+      - <span data-ttu-id="69cd1-131">Nella casella di riepilogo a discesa fare clic sul dominio dell'applicazione Operatore Conferenza che supporta il numero di accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="69cd1-131">In the drop-down list box, click the domain of the Conferencing Attendant application that supports this dial-in access number.</span></span>
 
-9.  <span data-ttu-id="f8394-132">In **pool**fare clic sul pool in cui è in esecuzione l'istanza di operatore conferenza che supporta questo numero di accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="f8394-132">In **Pool**, click the pool that is running the instance of Conferencing Attendant that supports this dial-in access number.</span></span>
+9.  <span data-ttu-id="69cd1-132">In **Pool** fare clic sul pool che esegue l'istanza di Operatore Conferenza che supporta il numero di accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="69cd1-132">In **Pool**, click the pool that is running the instance of Conferencing Attendant that supports this dial-in access number.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="f8394-133">Se è necessario modificare il pool dopo la creazione del numero di accesso, è necessario usare il cmdlet <STRONG>Move-CsApplicationEndpoint</STRONG> oppure eliminare e ricreare il numero di accesso.</span><span class="sxs-lookup"><span data-stu-id="f8394-133">If you need to change the pool after you create the access number, you must use the <STRONG>Move-CsApplicationEndpoint</STRONG> cmdlet or delete and recreate the access number.</span></span>
+    > <span data-ttu-id="69cd1-133">Se è necessario modificare il pool dopo avere creato il numero di accesso, utilizzare il cmdlet <STRONG>Move-CsApplicationEndpoint</STRONG> oppure eliminare e ricreare il numero di accesso.</span><span class="sxs-lookup"><span data-stu-id="69cd1-133">If you need to change the pool after you create the access number, you must use the <STRONG>Move-CsApplicationEndpoint</STRONG> cmdlet or delete and recreate the access number.</span></span>
 
     
     </div>
 
-10. <span data-ttu-id="f8394-134">In **lingua principale**fare clic sulla lingua in cui vengono riprodotti le richieste per questo numero di accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="f8394-134">In **Primary language**, click the language in which prompts are played for this dial-in access number.</span></span>
+10. <span data-ttu-id="69cd1-134">In **Lingua principale** fare clic sulla lingua in cui verranno riprodotte le richieste per il numero di accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="69cd1-134">In **Primary language**, click the language in which prompts are played for this dial-in access number.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="f8394-135">La lingua principale è la lingua che l'operatore di conferenza USA per rispondere alla chiamata.</span><span class="sxs-lookup"><span data-stu-id="f8394-135">The primary language is the language that the Conferencing Attendant uses to answer the call.</span></span> <span data-ttu-id="f8394-136">Le lingue supportate vengono visualizzate accanto a ogni numero di telefono di Access nella pagina Web delle impostazioni dei servizi di conferenza telefonica con accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="f8394-136">Supported languages are displayed alongside each access phone number on the Dial-in Conferencing Settings webpage.</span></span>
+    > <span data-ttu-id="69cd1-p108">La lingua principale è la lingua utilizzata da Operatore Conferenza per rispondere alla chiamata. Le lingue supportate vengono visualizzate insieme a ogni numero di telefono di accesso nella pagina Web Impostazioni conferenza telefonica con accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="69cd1-p108">The primary language is the language that the Conferencing Attendant uses to answer the call. Supported languages are displayed alongside each access phone number on the Dial-in Conferencing Settings webpage.</span></span>
 
     
     </div>
 
-11. <span data-ttu-id="f8394-137">Opzionale In **lingue secondarie (massimo quattro)** fare clic su **Aggiungi**, selezionare una o più lingue aggiuntive che si desidera supportare per i chiamanti per il numero di accesso esterno e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="f8394-137">(Optional) In **Secondary languages (maximum of four)**, click **Add**, select one or more additional languages that you want to support for callers to this dial-in access number, and then click **OK**.</span></span>
+11. <span data-ttu-id="69cd1-137">(Facoltativo) In **Lingue secondarie (massimo quattro)** fare clic su **Aggiungi**, selezionare una o più lingue aggiuntive che si desidera supportare per i chiamanti al numero di accesso esterno e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="69cd1-137">(Optional) In **Secondary languages (maximum of four)**, click **Add**, select one or more additional languages that you want to support for callers to this dial-in access number, and then click **OK**.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="f8394-138">È possibile scegliere fino a quattro lingue secondarie per ogni numero di accesso esterno.</span><span class="sxs-lookup"><span data-stu-id="f8394-138">You can choose up to four secondary languages for each dial-in access number.</span></span> <span data-ttu-id="f8394-139">Gli utenti possono selezionare una lingua secondaria prima di immettere l'ID conferenza quando effettuano la chiamata a una conferenza.</span><span class="sxs-lookup"><span data-stu-id="f8394-139">Users can select a secondary language before entering the conference ID when they dial in to a conference.</span></span>
+    > <span data-ttu-id="69cd1-p109">È possibile selezionare fino a quattro lingue secondarie per ogni numero di accesso esterno. Gli utenti possono selezionare una lingua secondaria prima di immettere l'ID conferenza quando chiamano per partecipare a una conferenza.</span><span class="sxs-lookup"><span data-stu-id="69cd1-p109">You can choose up to four secondary languages for each dial-in access number. Users can select a secondary language before entering the conference ID when they dial in to a conference.</span></span>
 
     
     </div>
 
-12. <span data-ttu-id="f8394-140">Per aggiungere un'area geografica per il numero di accesso esterno, fare clic su **Aggiungi**in **aree geografiche associate**, fare clic su una o più aree geografiche associate ai dial plan per questo numero di accesso esterno e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="f8394-140">To add a region for the dial-in access number, under **Associated regions**, click **Add**, click one or more regions that are associated with the dial plans for this dial-in access number, and then click **OK**.</span></span>
+12. <span data-ttu-id="69cd1-140">Per aggiungere un'area per il numero di accesso esterno, in **aree associate**fare clic su **Aggiungi**, fare clic su una o più aree associate ai dial plan per il numero di accesso esterno e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="69cd1-140">To add a region for the dial-in access number, under **Associated regions**, click **Add**, click one or more regions that are associated with the dial plans for this dial-in access number, and then click **OK**.</span></span>
 
-13. <span data-ttu-id="f8394-141">Per eliminare un'area dal numero di accesso esterno, in **aree geografiche associate**fare clic sull'area che si vuole eliminare e quindi fare clic su **Rimuovi**.</span><span class="sxs-lookup"><span data-stu-id="f8394-141">To delete a region from the dial-in access number, under **Associated regions**, click the region you want to delete, and then click **Remove**.</span></span>
+13. <span data-ttu-id="69cd1-141">Per eliminare un'area dal numero di accesso esterno, in **Aree associate** fare clic sull'area desiderata e quindi su **Rimuovi**.</span><span class="sxs-lookup"><span data-stu-id="69cd1-141">To delete a region from the dial-in access number, under **Associated regions**, click the region you want to delete, and then click **Remove**.</span></span>
 
-14. <span data-ttu-id="f8394-142">Fare clic su **Commit**.</span><span class="sxs-lookup"><span data-stu-id="f8394-142">Click **Commit**.</span></span>
+14. <span data-ttu-id="69cd1-142">Fare clic su **Commit**.</span><span class="sxs-lookup"><span data-stu-id="69cd1-142">Click **Commit**.</span></span>
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: report di confronto qualità multimediale'
+title: 'Lync Server 2013: rapporto di confronto qualità multimediale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185317
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6bcec69db6154aa346fc4545dc3b50fcfe0f2d6f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c45f2d238d2ffd8df058e31bfa50a51f26c1caf5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758764"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045148"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="media-quality-comparison-report-in-lync-server-2013"></a><span data-ttu-id="8b612-102">Report di confronto qualità multimediale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8b612-102">Media Quality Comparison Report in Lync Server 2013</span></span>
+# <a name="media-quality-comparison-report-in-lync-server-2013"></a><span data-ttu-id="0bf49-102">Rapporto di confronto qualità multimediale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0bf49-102">Media Quality Comparison Report in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41758764"
 
 <span> </span>
 
-<span data-ttu-id="8b612-103">_**Argomento Ultima modifica:** 2014-04-22_</span><span class="sxs-lookup"><span data-stu-id="8b612-103">_**Topic Last Modified:** 2014-04-22_</span></span>
+<span data-ttu-id="0bf49-103">_**Ultimo argomento modificato:** 2014-04-22_</span><span class="sxs-lookup"><span data-stu-id="0bf49-103">_**Topic Last Modified:** 2014-04-22_</span></span>
 
-<span data-ttu-id="8b612-104">Il report di confronto qualità multimediale consente di confrontare i valori della qualità delle chiamate per i diversi tipi di chiamate audio, ad esempio le chiamate effettuate tramite una rete wireless o le chiamate effettuate tramite una connessione cablata.</span><span class="sxs-lookup"><span data-stu-id="8b612-104">The Media Quality Comparison Report enables you to compare call quality values for different types of audio calls (for example, calls made over a wireless network vs. calls made across a wired connection).</span></span>
+<span data-ttu-id="0bf49-104">Il Rapporto di confronto qualità multimediale consente di confrontare i valori di qualità delle chiamate per diversi tipi di chiamate audio, ad esempio le chiamate effettuate su rete wireless rispetto alle chiamate effettuate su connessione cablata.</span><span class="sxs-lookup"><span data-stu-id="0bf49-104">The Media Quality Comparison Report enables you to compare call quality values for different types of audio calls (for example, calls made over a wireless network vs. calls made across a wired connection).</span></span>
 
 <div>
 
-## <a name="accessing-the-media-quality-comparison-report"></a><span data-ttu-id="8b612-105">Accesso al report di confronto qualità multimediale</span><span class="sxs-lookup"><span data-stu-id="8b612-105">Accessing the Media Quality Comparison Report</span></span>
+## <a name="accessing-the-media-quality-comparison-report"></a><span data-ttu-id="0bf49-105">Accesso al Rapporto di confronto qualità multimediale</span><span class="sxs-lookup"><span data-stu-id="0bf49-105">Accessing the Media Quality Comparison Report</span></span>
 
-<span data-ttu-id="8b612-106">È possibile accedere al report di confronto qualità multimediale dalla Home page dei report di monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="8b612-106">The Media Quality Comparison Report is accessed from the Monitoring Reports home page.</span></span>
+<span data-ttu-id="0bf49-106">È possibile accedere al Rapporto di confronto qualità multimediale dalla home page dei rapporti di monitoraggio.</span><span class="sxs-lookup"><span data-stu-id="0bf49-106">The Media Quality Comparison Report is accessed from the Monitoring Reports home page.</span></span>
 
 </div>
 
 <div>
 
-## <a name="filters"></a><span data-ttu-id="8b612-107">Filtri</span><span class="sxs-lookup"><span data-stu-id="8b612-107">Filters</span></span>
+## <a name="filters"></a><span data-ttu-id="0bf49-107">Filtri</span><span class="sxs-lookup"><span data-stu-id="0bf49-107">Filters</span></span>
 
-<span data-ttu-id="8b612-108">I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi.</span><span class="sxs-lookup"><span data-stu-id="8b612-108">Filters provide a way for you to return a more finely-targeted set of data or to view the returned data in different ways.</span></span> <span data-ttu-id="8b612-109">Nella tabella seguente sono elencati i filtri che è possibile usare con il report di confronto qualità multimediale.</span><span class="sxs-lookup"><span data-stu-id="8b612-109">The following table lists the filters that you can use with the Media Quality Comparison Report.</span></span>
+<span data-ttu-id="0bf49-p101">I filtri consentono di restituire un insieme di dati più circoscritto o di visualizzare in modi diversi i dati restituiti. Nella tabella riportata di seguito vengono elencati i filtri che è possibile utilizzare con il Rapporto di confronto qualità multimediale.</span><span class="sxs-lookup"><span data-stu-id="0bf49-p101">Filters provide a way for you to return a more finely-targeted set of data or to view the returned data in different ways. The following table lists the filters that you can use with the Media Quality Comparison Report.</span></span>
 
-### <a name="media-quality-comparison-report-filters"></a><span data-ttu-id="8b612-110">Filtri di report di confronto qualità multimediale</span><span class="sxs-lookup"><span data-stu-id="8b612-110">Media Quality Comparison Report Filters</span></span>
+### <a name="media-quality-comparison-report-filters"></a><span data-ttu-id="0bf49-110">Filtri del Rapporto di confronto qualità multimediale</span><span class="sxs-lookup"><span data-stu-id="0bf49-110">Media Quality Comparison Report Filters</span></span>
 
 <table>
 <colgroup>
@@ -62,78 +62,78 @@ ms.locfileid: "41758764"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="8b612-111">Nome</span><span class="sxs-lookup"><span data-stu-id="8b612-111">Name</span></span></th>
-<th><span data-ttu-id="8b612-112">Descrizione</span><span class="sxs-lookup"><span data-stu-id="8b612-112">Description</span></span></th>
+<th><span data-ttu-id="0bf49-111">Nome</span><span class="sxs-lookup"><span data-stu-id="0bf49-111">Name</span></span></th>
+<th><span data-ttu-id="0bf49-112">Descrizione</span><span class="sxs-lookup"><span data-stu-id="0bf49-112">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="8b612-113"><strong>Da</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-113"><strong>From</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-114">Data/ora di inizio per l'intervallo di tempo.</span><span class="sxs-lookup"><span data-stu-id="8b612-114">Start date/time for the time range.</span></span> <span data-ttu-id="8b612-115">Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:</span><span class="sxs-lookup"><span data-stu-id="8b612-115">To view data by hours, enter both the start date and time as follows:</span></span></p>
-<p><span data-ttu-id="8b612-116">7/7/2012 1:00 PM</span><span class="sxs-lookup"><span data-stu-id="8b612-116">7/7/2012 1:00 PM</span></span></p>
-<p><span data-ttu-id="8b612-117">Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato.</span><span class="sxs-lookup"><span data-stu-id="8b612-117">If you do not enter a start time, the report automatically begins at 12:00 AM on the specified day.</span></span> <span data-ttu-id="8b612-118">Per visualizzare i dati per giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="8b612-118">To view data by day, enter just the date:</span></span></p>
-<p><span data-ttu-id="8b612-119">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="8b612-119">7/7/2012</span></span></p>
-<p><span data-ttu-id="8b612-120">Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="8b612-120">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
-<p><span data-ttu-id="8b612-121">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="8b612-121">7/3/2012</span></span></p>
-<p><span data-ttu-id="8b612-122">Le settimane si eseguono sempre da domenica a sabato.</span><span class="sxs-lookup"><span data-stu-id="8b612-122">Weeks always run from Sunday through Saturday.</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-113"><strong>From</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-113"><strong>From</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-p102">Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:</span><span class="sxs-lookup"><span data-stu-id="0bf49-p102">Start date/time for the time range. To view data by hours, enter both the start date and time as follows:</span></span></p>
+<p><span data-ttu-id="0bf49-116">07/07/2012 13.00</span><span class="sxs-lookup"><span data-stu-id="0bf49-116">7/7/2012 1:00 PM</span></span></p>
+<p><span data-ttu-id="0bf49-p103">Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="0bf49-p103">If you do not enter a start time, the report automatically begins at 12:00 AM on the specified day. To view data by day, enter just the date:</span></span></p>
+<p><span data-ttu-id="0bf49-119">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="0bf49-119">7/7/2012</span></span></p>
+<p><span data-ttu-id="0bf49-120">Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="0bf49-120">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
+<p><span data-ttu-id="0bf49-121">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="0bf49-121">7/3/2012</span></span></p>
+<p><span data-ttu-id="0bf49-122">Le settimane vengono calcolate sempre dal lunedì alla domenica.</span><span class="sxs-lookup"><span data-stu-id="0bf49-122">Weeks always run from Sunday through Saturday.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8b612-123"><strong>A</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-123"><strong>To</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-124">Data/ora di fine per l'intervallo di tempo.</span><span class="sxs-lookup"><span data-stu-id="8b612-124">End date/time for the time range.</span></span> <span data-ttu-id="8b612-125">Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:</span><span class="sxs-lookup"><span data-stu-id="8b612-125">To view data by hours, enter both the end date and time as follows:</span></span></p>
-<p><span data-ttu-id="8b612-126">7/7/2012 1:00 PM</span><span class="sxs-lookup"><span data-stu-id="8b612-126">7/7/2012 1:00 PM</span></span></p>
-<p><span data-ttu-id="8b612-127">Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato.</span><span class="sxs-lookup"><span data-stu-id="8b612-127">If you do not enter an end time, the report automatically ends at 12:00 AM on the specified day.</span></span> <span data-ttu-id="8b612-128">Per visualizzare i dati per giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="8b612-128">To view data by day, enter just the date:</span></span></p>
-<p><span data-ttu-id="8b612-129">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="8b612-129">7/7/2012</span></span></p>
-<p><span data-ttu-id="8b612-130">Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="8b612-130">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
-<p><span data-ttu-id="8b612-131">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="8b612-131">7/3/2012</span></span></p>
-<p><span data-ttu-id="8b612-132">Le settimane si eseguono sempre da domenica a sabato.</span><span class="sxs-lookup"><span data-stu-id="8b612-132">Weeks always run from Sunday through Saturday.</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-123"><strong>To</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-123"><strong>To</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-p104">Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:</span><span class="sxs-lookup"><span data-stu-id="0bf49-p104">End date/time for the time range. To view data by hours, enter both the end date and time as follows:</span></span></p>
+<p><span data-ttu-id="0bf49-126">07/07/2012 13.00</span><span class="sxs-lookup"><span data-stu-id="0bf49-126">7/7/2012 1:00 PM</span></span></p>
+<p><span data-ttu-id="0bf49-p105">Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="0bf49-p105">If you do not enter an end time, the report automatically ends at 12:00 AM on the specified day. To view data by day, enter just the date:</span></span></p>
+<p><span data-ttu-id="0bf49-129">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="0bf49-129">7/7/2012</span></span></p>
+<p><span data-ttu-id="0bf49-130">Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="0bf49-130">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
+<p><span data-ttu-id="0bf49-131">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="0bf49-131">7/3/2012</span></span></p>
+<p><span data-ttu-id="0bf49-132">Le settimane vanno sempre dal lunedì alla domenica.</span><span class="sxs-lookup"><span data-stu-id="0bf49-132">Weeks always run from Sunday through Saturday.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8b612-133"><strong>Chiamate</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-133"><strong>Calls</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-134">Tipo di chiamata da usare come elemento di confronto principale.</span><span class="sxs-lookup"><span data-stu-id="8b612-134">Type of call to be used as the main comparison item.</span></span> <span data-ttu-id="8b612-135">I valori consentiti sono:</span><span class="sxs-lookup"><span data-stu-id="8b612-135">Allowed values are:</span></span></p>
+<td><p><span data-ttu-id="0bf49-133"><strong>Chiamate</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-133"><strong>Calls</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-p106">Tipo di chiamata da utilizzare come elemento principale del confronto. I valori consentiti sono:</span><span class="sxs-lookup"><span data-stu-id="0bf49-p106">Type of call to be used as the main comparison item. Allowed values are:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="8b612-136">Tutti</span><span class="sxs-lookup"><span data-stu-id="8b612-136">[All]</span></span></p></li>
-<li><p><span data-ttu-id="8b612-137">Esterno</span><span class="sxs-lookup"><span data-stu-id="8b612-137">External</span></span></p></li>
-<li><p><span data-ttu-id="8b612-138">Interno</span><span class="sxs-lookup"><span data-stu-id="8b612-138">Internal</span></span></p></li>
-<li><p><span data-ttu-id="8b612-139">VPN</span><span class="sxs-lookup"><span data-stu-id="8b612-139">VPN</span></span></p></li>
-<li><p><span data-ttu-id="8b612-140">Non VPN</span><span class="sxs-lookup"><span data-stu-id="8b612-140">Non-VPN</span></span></p></li>
-<li><p><span data-ttu-id="8b612-141">Cablata</span><span class="sxs-lookup"><span data-stu-id="8b612-141">Wired</span></span></p></li>
-<li><p><span data-ttu-id="8b612-142">Wireless</span><span class="sxs-lookup"><span data-stu-id="8b612-142">Wireless</span></span></p></li>
-<li><p><span data-ttu-id="8b612-143">Esterna e cablata</span><span class="sxs-lookup"><span data-stu-id="8b612-143">External and wired</span></span></p></li>
-<li><p><span data-ttu-id="8b612-144">Esterno e wireless</span><span class="sxs-lookup"><span data-stu-id="8b612-144">External and wireless</span></span></p></li>
-<li><p><span data-ttu-id="8b612-145">Esterna e VPN</span><span class="sxs-lookup"><span data-stu-id="8b612-145">External and VPN</span></span></p></li>
-<li><p><span data-ttu-id="8b612-146">Esterno e non VPN</span><span class="sxs-lookup"><span data-stu-id="8b612-146">External and non-VPN</span></span></p></li>
-<li><p><span data-ttu-id="8b612-147">Interni e cablati</span><span class="sxs-lookup"><span data-stu-id="8b612-147">Internal and wired</span></span></p></li>
-<li><p><span data-ttu-id="8b612-148">Interni e wireless</span><span class="sxs-lookup"><span data-stu-id="8b612-148">Internal and wireless</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-136">Tutti</span><span class="sxs-lookup"><span data-stu-id="0bf49-136">[All]</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-137">Esterna</span><span class="sxs-lookup"><span data-stu-id="0bf49-137">External</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-138">Interna</span><span class="sxs-lookup"><span data-stu-id="0bf49-138">Internal</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-139">VPN</span><span class="sxs-lookup"><span data-stu-id="0bf49-139">VPN</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-140">Non VPN</span><span class="sxs-lookup"><span data-stu-id="0bf49-140">Non-VPN</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-141">Cablata</span><span class="sxs-lookup"><span data-stu-id="0bf49-141">Wired</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-142">Wireless</span><span class="sxs-lookup"><span data-stu-id="0bf49-142">Wireless</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-143">Esterne e cablate</span><span class="sxs-lookup"><span data-stu-id="0bf49-143">External and wired</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-144">Esterne e wireless</span><span class="sxs-lookup"><span data-stu-id="0bf49-144">External and wireless</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-145">Esterne e VPN</span><span class="sxs-lookup"><span data-stu-id="0bf49-145">External and VPN</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-146">Esterne e non VPN</span><span class="sxs-lookup"><span data-stu-id="0bf49-146">External and non-VPN</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-147">Interne e cablate</span><span class="sxs-lookup"><span data-stu-id="0bf49-147">Internal and wired</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-148">Interne e wireless</span><span class="sxs-lookup"><span data-stu-id="0bf49-148">Internal and wireless</span></span></p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8b612-149"><strong>Confronto con le chiamate</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-149"><strong>Compare with calls</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-150">Tipo di chiamata da usare come elemento di confronto secondario.</span><span class="sxs-lookup"><span data-stu-id="8b612-150">Type of call to be used as the secondary comparison item.</span></span> <span data-ttu-id="8b612-151">I valori consentiti sono:</span><span class="sxs-lookup"><span data-stu-id="8b612-151">Allowed values are:</span></span></p>
+<td><p><span data-ttu-id="0bf49-149"><strong>Confronto con le chiamate</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-149"><strong>Compare with calls</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-p107">Tipo di chiamata da utilizzare come elemento secondario del confronto. I valori consentiti sono:</span><span class="sxs-lookup"><span data-stu-id="0bf49-p107">Type of call to be used as the secondary comparison item. Allowed values are:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="8b612-152">Tutti</span><span class="sxs-lookup"><span data-stu-id="8b612-152">[All]</span></span></p></li>
-<li><p><span data-ttu-id="8b612-153">Esterno</span><span class="sxs-lookup"><span data-stu-id="8b612-153">External</span></span></p></li>
-<li><p><span data-ttu-id="8b612-154">Interno</span><span class="sxs-lookup"><span data-stu-id="8b612-154">Internal</span></span></p></li>
-<li><p><span data-ttu-id="8b612-155">VPN</span><span class="sxs-lookup"><span data-stu-id="8b612-155">VPN</span></span></p></li>
-<li><p><span data-ttu-id="8b612-156">Non VPN</span><span class="sxs-lookup"><span data-stu-id="8b612-156">Non-VPN</span></span></p></li>
-<li><p><span data-ttu-id="8b612-157">Cablata</span><span class="sxs-lookup"><span data-stu-id="8b612-157">Wired</span></span></p></li>
-<li><p><span data-ttu-id="8b612-158">Wireless</span><span class="sxs-lookup"><span data-stu-id="8b612-158">Wireless</span></span></p></li>
-<li><p><span data-ttu-id="8b612-159">Esterna e cablata</span><span class="sxs-lookup"><span data-stu-id="8b612-159">External and wired</span></span></p></li>
-<li><p><span data-ttu-id="8b612-160">Esterno e wireless</span><span class="sxs-lookup"><span data-stu-id="8b612-160">External and wireless</span></span></p></li>
-<li><p><span data-ttu-id="8b612-161">Esterna e VPN</span><span class="sxs-lookup"><span data-stu-id="8b612-161">External and VPN</span></span></p></li>
-<li><p><span data-ttu-id="8b612-162">Esterno e non VPN</span><span class="sxs-lookup"><span data-stu-id="8b612-162">External and non-VPN</span></span></p></li>
-<li><p><span data-ttu-id="8b612-163">Interni e cablati</span><span class="sxs-lookup"><span data-stu-id="8b612-163">Internal and wired</span></span></p></li>
-<li><p><span data-ttu-id="8b612-164">Interni e wireless</span><span class="sxs-lookup"><span data-stu-id="8b612-164">Internal and wireless</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-152">Tutti</span><span class="sxs-lookup"><span data-stu-id="0bf49-152">[All]</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-153">Esterna</span><span class="sxs-lookup"><span data-stu-id="0bf49-153">External</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-154">Interna</span><span class="sxs-lookup"><span data-stu-id="0bf49-154">Internal</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-155">VPN</span><span class="sxs-lookup"><span data-stu-id="0bf49-155">VPN</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-156">Non VPN</span><span class="sxs-lookup"><span data-stu-id="0bf49-156">Non-VPN</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-157">Cablata</span><span class="sxs-lookup"><span data-stu-id="0bf49-157">Wired</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-158">Wireless</span><span class="sxs-lookup"><span data-stu-id="0bf49-158">Wireless</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-159">Esterne e cablate</span><span class="sxs-lookup"><span data-stu-id="0bf49-159">External and wired</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-160">Esterne e wireless</span><span class="sxs-lookup"><span data-stu-id="0bf49-160">External and wireless</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-161">Esterne e VPN</span><span class="sxs-lookup"><span data-stu-id="0bf49-161">External and VPN</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-162">Esterne e non VPN</span><span class="sxs-lookup"><span data-stu-id="0bf49-162">External and non-VPN</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-163">Interne e cablate</span><span class="sxs-lookup"><span data-stu-id="0bf49-163">Internal and wired</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-164">Interne e wireless</span><span class="sxs-lookup"><span data-stu-id="0bf49-164">Internal and wireless</span></span></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8b612-165"><strong>Intervallo</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-165"><strong>Interval</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-166">Intervallo di tempo.</span><span class="sxs-lookup"><span data-stu-id="8b612-166">Time interval.</span></span> <span data-ttu-id="8b612-167">Selezionare una delle opzioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="8b612-167">Select one of the following:</span></span></p>
+<td><p><span data-ttu-id="0bf49-165"><strong>Intervallo</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-165"><strong>Interval</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-p108">Selezionare uno dei seguenti:</span><span class="sxs-lookup"><span data-stu-id="0bf49-p108">Time interval. Select one of the following:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="8b612-168">Ogni ora (può essere visualizzato un massimo di 25 ore)</span><span class="sxs-lookup"><span data-stu-id="8b612-168">Hourly (a maximum of 25 hours can be displayed)</span></span></p></li>
-<li><p><span data-ttu-id="8b612-169">Giornaliera (è possibile visualizzare un massimo di 31 giorni)</span><span class="sxs-lookup"><span data-stu-id="8b612-169">Daily (a maximum of 31 days can be displayed)</span></span></p></li>
-<li><p><span data-ttu-id="8b612-170">Settimanale (può essere visualizzato un massimo di 12 settimane)</span><span class="sxs-lookup"><span data-stu-id="8b612-170">Weekly (a maximum of 12 weeks can be displayed)</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-168">Orario (è possibile visualizzare un massimo di 25 ore)</span><span class="sxs-lookup"><span data-stu-id="0bf49-168">Hourly (a maximum of 25 hours can be displayed)</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-169">Giornaliero (è possibile visualizzare un massimo di 31 giorni)</span><span class="sxs-lookup"><span data-stu-id="0bf49-169">Daily (a maximum of 31 days can be displayed)</span></span></p></li>
+<li><p><span data-ttu-id="0bf49-170">Settimanale (è possibile visualizzare un massimo di 12 settimane)</span><span class="sxs-lookup"><span data-stu-id="0bf49-170">Weekly (a maximum of 12 weeks can be displayed)</span></span></p></li>
 </ul>
-<p><span data-ttu-id="8b612-171">Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, viene visualizzato solo il numero massimo di valori (a partire dalla data di inizio).</span><span class="sxs-lookup"><span data-stu-id="8b612-171">If the start and end dates exceed the maximum number of values allowed for the selected interval, only the maximum number of values (starting from the start date) is displayed.</span></span> <span data-ttu-id="8b612-172">Se ad esempio si seleziona l'intervallo giornaliero con una data di inizio di 7/7/2012 e una data di fine 2/28/2012, i dati verranno visualizzati per i giorni 8/7/2012 12:00 da AM a 9/7/2012 12:00 AM, ovvero un totale di 31 giorni di dati.</span><span class="sxs-lookup"><span data-stu-id="8b612-172">For example, if you select the Daily interval with a start date of 7/7/2012 and an end date of 2/28/2012, data is displayed for the days 8/7/2012 12:00 AM to 9/7/2012 12:00 AM (that is, a total of 31 days' worth of data).</span></span></p></td>
+<p><span data-ttu-id="0bf49-p109">Se per le date di inizio e di fine si immette un numero di valori superiore al massimo consentito per l'intervallo selezionato, verrà visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo Giornaliero con la data di inizio 07.07.12 e la data di fine 28.02.12, verranno visualizzati i dati relativi ai giorni da 07.08.12 alle 00.00 a 07.09.12 alle 00.00, ovvero per un totale di 31 giorni.</span><span class="sxs-lookup"><span data-stu-id="0bf49-p109">If the start and end dates exceed the maximum number of values allowed for the selected interval, only the maximum number of values (starting from the start date) is displayed. For example, if you select the Daily interval with a start date of 7/7/2012 and an end date of 2/28/2012, data is displayed for the days 8/7/2012 12:00 AM to 9/7/2012 12:00 AM (that is, a total of 31 days' worth of data).</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -143,11 +143,11 @@ ms.locfileid: "41758764"
 
 <div>
 
-## <a name="metrics"></a><span data-ttu-id="8b612-173">Metriche</span><span class="sxs-lookup"><span data-stu-id="8b612-173">Metrics</span></span>
+## <a name="metrics"></a><span data-ttu-id="0bf49-173">Metriche</span><span class="sxs-lookup"><span data-stu-id="0bf49-173">Metrics</span></span>
 
-<span data-ttu-id="8b612-174">Nella tabella seguente sono elencate le informazioni fornite nel report di confronto qualità multimediale.</span><span class="sxs-lookup"><span data-stu-id="8b612-174">The following table lists the information provided in the Media Quality Comparison Report.</span></span>
+<span data-ttu-id="0bf49-174">Nella tabella seguente sono elencate le informazioni disponibili nel Rapporto di confronto qualità multimediale.</span><span class="sxs-lookup"><span data-stu-id="0bf49-174">The following table lists the information provided in the Media Quality Comparison Report.</span></span>
 
-### <a name="media-quality-comparison-report-metrics"></a><span data-ttu-id="8b612-175">Metriche del report di confronto qualità multimediale</span><span class="sxs-lookup"><span data-stu-id="8b612-175">Media Quality Comparison Report Metrics</span></span>
+### <a name="media-quality-comparison-report-metrics"></a><span data-ttu-id="0bf49-175">Metriche del Rapporto di confronto qualità multimediale</span><span class="sxs-lookup"><span data-stu-id="0bf49-175">Media Quality Comparison Report Metrics</span></span>
 
 <table>
 <colgroup>
@@ -157,58 +157,58 @@ ms.locfileid: "41758764"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="8b612-176">Nome</span><span class="sxs-lookup"><span data-stu-id="8b612-176">Name</span></span></th>
-<th><span data-ttu-id="8b612-177">Si può ordinare su questo elemento?</span><span class="sxs-lookup"><span data-stu-id="8b612-177">Can you sort on this item?</span></span></th>
-<th><span data-ttu-id="8b612-178">Descrizione</span><span class="sxs-lookup"><span data-stu-id="8b612-178">Description</span></span></th>
+<th><span data-ttu-id="0bf49-176">Nome</span><span class="sxs-lookup"><span data-stu-id="0bf49-176">Name</span></span></th>
+<th><span data-ttu-id="0bf49-177">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="0bf49-177">Can you sort on this item?</span></span></th>
+<th><span data-ttu-id="0bf49-178">Descrizione</span><span class="sxs-lookup"><span data-stu-id="0bf49-178">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="8b612-179"><strong>Volume chiamata</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-179"><strong>Call volume</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-180">No</span><span class="sxs-lookup"><span data-stu-id="8b612-180">No</span></span></p></td>
-<td><p><span data-ttu-id="8b612-181">Numero totale di chiamate.</span><span class="sxs-lookup"><span data-stu-id="8b612-181">Total number of calls.</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-179"><strong>Volume chiamata</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-179"><strong>Call volume</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-180">No</span><span class="sxs-lookup"><span data-stu-id="0bf49-180">No</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-181">Numero totale di chiamate</span><span class="sxs-lookup"><span data-stu-id="0bf49-181">Total number of calls.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8b612-182"><strong>Degradazione (MOS)</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-182"><strong>Degradation (MOS)</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-183">No</span><span class="sxs-lookup"><span data-stu-id="8b612-183">No</span></span></p></td>
-<td><p><span data-ttu-id="8b612-184">Importo medio della degradazione MOS (media Opinion Score) con esperienza durante una chiamata.</span><span class="sxs-lookup"><span data-stu-id="8b612-184">Average amount of MOS (mean opinion score) degradation experienced during a call.</span></span> <span data-ttu-id="8b612-185">I valori di degradazione possono variare da un minimo di 0,0 a un massimo di 5,0; un valore di 0,5 o meno rappresenta una degradazione accettabile.</span><span class="sxs-lookup"><span data-stu-id="8b612-185">Degradation values can range from a low of 0.0 to a high of 5.0; a value of 0.5 or less represents acceptable degradation.</span></span> <span data-ttu-id="8b612-186">Storicamente, i punteggi degli opinion media sono stati calcolati avendo gli utenti valutano la qualità di una chiamata su una scala da 1 a 5.</span><span class="sxs-lookup"><span data-stu-id="8b612-186">Historically, mean opinion scores were calculated by having users rate the quality of a call on a scale of 1-to-5.</span></span> <span data-ttu-id="8b612-187">Lync Server usa un set di algoritmi per prevedere in che modo gli utenti avrebbero valutato una chiamata.</span><span class="sxs-lookup"><span data-stu-id="8b612-187">Lync Server uses a set of algorithms to predict how users would have rated a call.</span></span></p>
-<p><span data-ttu-id="8b612-188">I valori di degradazione elevati possono essere causati dalla congestione; mancanza di larghezza di banda; congestione o interferenza wireless oppure un server multimediale o un endpoint di overload.</span><span class="sxs-lookup"><span data-stu-id="8b612-188">High degradation values can be caused by congestion; lack of bandwidth; wireless congestion or interference, or an overloaded media server or endpoint.</span></span> <span data-ttu-id="8b612-189">L'elevata degradazione genera un audio distorta o perso.</span><span class="sxs-lookup"><span data-stu-id="8b612-189">High degradation results in distorted or lost audio.</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-182"><strong>Degradazione (MOS)</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-182"><strong>Degradation (MOS)</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-183">No</span><span class="sxs-lookup"><span data-stu-id="0bf49-183">No</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-184">Quantità media di degradazione MOS (media Opinion Score) con esperienza durante una chiamata.</span><span class="sxs-lookup"><span data-stu-id="0bf49-184">Average amount of MOS (mean opinion score) degradation experienced during a call.</span></span> <span data-ttu-id="0bf49-185">I valori di degradazione possono variare da un minimo di 0,0 a un massimo di 5,0; un valore pari a 0,5 o meno rappresenta un calo accettabile.</span><span class="sxs-lookup"><span data-stu-id="0bf49-185">Degradation values can range from a low of 0.0 to a high of 5.0; a value of 0.5 or less represents acceptable degradation.</span></span> <span data-ttu-id="0bf49-186">Storicamente, i punteggi del parere medio sono stati calcolati con gli utenti che valutano la qualità di una chiamata su una scala da 1 a 5.</span><span class="sxs-lookup"><span data-stu-id="0bf49-186">Historically, mean opinion scores were calculated by having users rate the quality of a call on a scale of 1-to-5.</span></span> <span data-ttu-id="0bf49-187">Lync Server utilizza un set di algoritmi per stimare il modo in cui gli utenti avrebbero valutato una chiamata.</span><span class="sxs-lookup"><span data-stu-id="0bf49-187">Lync Server uses a set of algorithms to predict how users would have rated a call.</span></span></p>
+<p><span data-ttu-id="0bf49-p111">Valori di degradazione elevati possono essere causati da congestione, mancanza di larghezza di banda, interferenze o congestione della rete wireless o da un endpoint o un server di contenuti multimediali sovraccarico. Una degradazione elevata genera audio distorto o perdita di audio.</span><span class="sxs-lookup"><span data-stu-id="0bf49-p111">High degradation values can be caused by congestion; lack of bandwidth; wireless congestion or interference, or an overloaded media server or endpoint. High degradation results in distorted or lost audio.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8b612-190"><strong>Percentuale di chiamata scadente</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-190"><strong>Poor call percentage</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-191">No</span><span class="sxs-lookup"><span data-stu-id="8b612-191">No</span></span></p></td>
-<td><p><span data-ttu-id="8b612-192">Numero totale di chiamate classificate come scarse.</span><span class="sxs-lookup"><span data-stu-id="8b612-192">The total number of calls classified as poor.</span></span> <span data-ttu-id="8b612-193">Una chiamata scadente è una chiamata che almeno una delle metriche misurate ha superato il valore consentito, ad esempio una chiamata con un eccessivo jitter.</span><span class="sxs-lookup"><span data-stu-id="8b612-193">A poor call is any call which at least one of the measured metrics exceeded the allowed value (for example, a call that experienced excessive jitter).</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-190"><strong>Percentuale chiamate di livello insufficiente</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-190"><strong>Poor call percentage</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-191">No</span><span class="sxs-lookup"><span data-stu-id="0bf49-191">No</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-p112">Numero totale di chiamate classificate come di livello insufficiente. In una chiama di livello insufficiente almeno una delle metriche misurate supera il valore consentito, ad esempio viene rilevato un livello di instabilità eccessivo.</span><span class="sxs-lookup"><span data-stu-id="0bf49-p112">The total number of calls classified as poor. A poor call is any call which at least one of the measured metrics exceeded the allowed value (for example, a call that experienced excessive jitter).</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8b612-194"><strong>Andata e ritorno (MS)</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-194"><strong>Round trip (ms)</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-195">No</span><span class="sxs-lookup"><span data-stu-id="8b612-195">No</span></span></p></td>
-<td><p><span data-ttu-id="8b612-196">Importo medio (in millisecondi) richiesto per un pacchetto di protocollo di trasporto in tempo reale per spostarsi in un altro endpoint e quindi viceversa.</span><span class="sxs-lookup"><span data-stu-id="8b612-196">Average amount of (in milliseconds) required for a Real-Time Transport Protocol packet to travel to another endpoint and then back.</span></span> <span data-ttu-id="8b612-197">I tempi di andata e ritorno di 200 millisecondi sono considerati di qualità accettabile.</span><span class="sxs-lookup"><span data-stu-id="8b612-197">Round-trip times of 200 milliseconds or less are considered of acceptable quality.</span></span></p>
-<p><span data-ttu-id="8b612-198">I valori alti di andata e ritorno possono essere causati da routing delle chiamate internazionali; una configurazione errata di routing; o un server multimediale in overload.</span><span class="sxs-lookup"><span data-stu-id="8b612-198">High round-trip values can be caused by international call routing; a routing misconfiguration; or an overloaded media server.</span></span> <span data-ttu-id="8b612-199">Gli alti tempi di andata e ritorno si verificano in difficoltà con le conversazioni audio in tempo reale a due vie.</span><span class="sxs-lookup"><span data-stu-id="8b612-199">High round-trip times result in difficulties with two-way, real-time audio conversations.</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-194"><strong>Roundtrip (ms)</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-194"><strong>Round trip (ms)</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-195">No</span><span class="sxs-lookup"><span data-stu-id="0bf49-195">No</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-p113">Tempo medio di roundtrip (in millisecondi) necessario a un pacchetto RTP (Real-Time Transport Protocol) per raggiungere un altro endpoint e quindi tornare indietro. I roundtrip pari o inferiori a 200 millisecondi vengono considerati accettabili.</span><span class="sxs-lookup"><span data-stu-id="0bf49-p113">Average amount of (in milliseconds) required for a Real-Time Transport Protocol packet to travel to another endpoint and then back. Round-trip times of 200 milliseconds or less are considered of acceptable quality.</span></span></p>
+<p><span data-ttu-id="0bf49-p114">Valori alti di tempo di roundtrip possono essere dovuti a routing delle chiamate internazionali, errata configurazione del routing o sovraccarico del server dei contenuti multimediali con conseguenti difficoltà nelle conversazioni audio bidirezionali in tempo reale.</span><span class="sxs-lookup"><span data-stu-id="0bf49-p114">High round-trip values can be caused by international call routing; a routing misconfiguration; or an overloaded media server. High round-trip times result in difficulties with two-way, real-time audio conversations.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8b612-200"><strong>Perdita di pacchetti</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-200"><strong>Packet loss</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-201">No</span><span class="sxs-lookup"><span data-stu-id="8b612-201">No</span></span></p></td>
-<td><p><span data-ttu-id="8b612-202">Tasso medio di perdita di pacchetti RTP (Real-Time Transport Protocol).</span><span class="sxs-lookup"><span data-stu-id="8b612-202">Average rate of Real-Time Transport Protocol (RTP) packet loss.</span></span> <span data-ttu-id="8b612-203">La perdita di pacchetti si verifica quando i pacchetti RTP, un protocollo usato per la trasmissione di audio e video su Internet, non riescono a raggiungere la destinazione. I tassi di perdita elevati sono in genere causati dalla congestione; mancanza di larghezza di banda; congestione o interferenza wireless; o un server multimediale in overload.</span><span class="sxs-lookup"><span data-stu-id="8b612-203">(Packet loss occurs when RTP packets, a protocol used for transmitting audio and video across the Internet, failed to reach their destination.) High loss rates are generally caused by congestion; lack of bandwidth; wireless congestion or interference; or an overloaded media server.</span></span> <span data-ttu-id="8b612-204">La perdita di pacchetti in genere genera un audio distorta o perso.</span><span class="sxs-lookup"><span data-stu-id="8b612-204">Packet loss typically results in distorted or lost audio.</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-200"><strong>Perdita di pacchetti</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-200"><strong>Packet loss</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-201">No</span><span class="sxs-lookup"><span data-stu-id="0bf49-201">No</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-p115">Frequenza media di perdita di pacchetti RTP (Real-Time Transport Protocol). La perdita di pacchetti si verifica quando i pacchetti RTP, un protocollo utilizzato per la trasmissione di audio e video su Internet, non raggiungono la destinazione. Valori alti di perdita sono in genere dovuti a congestione, superamento della larghezza di banda disponibile, congestione/interferenze wireless o sovraccarico del server dei contenuti multimediali con conseguente audio distorto o perdita di audio.</span><span class="sxs-lookup"><span data-stu-id="0bf49-p115">Average rate of Real-Time Transport Protocol (RTP) packet loss. (Packet loss occurs when RTP packets, a protocol used for transmitting audio and video across the Internet, failed to reach their destination.) High loss rates are generally caused by congestion; lack of bandwidth; wireless congestion or interference; or an overloaded media server. Packet loss typically results in distorted or lost audio.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8b612-205"><strong>Jitter (MS)</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-205"><strong>Jitter (ms)</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-206">No</span><span class="sxs-lookup"><span data-stu-id="8b612-206">No</span></span></p></td>
-<td><p><span data-ttu-id="8b612-207">Jitter medio rilevato tra gli arrivi del pacchetto RTP.</span><span class="sxs-lookup"><span data-stu-id="8b612-207">Average jitter detected between RTP packet arrivals.</span></span> <span data-ttu-id="8b612-208">(Jitter è una misura della &quot;shakiness&quot; di una chiamata.) I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o perse.</span><span class="sxs-lookup"><span data-stu-id="8b612-208">(Jitter is a measure of the &quot;shakiness&quot; of a call.) High jitter values are typically caused by congestion or an overloaded media server, and result in distorted or lost audio.</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-205"><strong>Instabilità (ms)</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-205"><strong>Jitter (ms)</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-206">No</span><span class="sxs-lookup"><span data-stu-id="0bf49-206">No</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-207">Instabilità media rilevata tra gli arrivi di pacchetti RTP.</span><span class="sxs-lookup"><span data-stu-id="0bf49-207">Average jitter detected between RTP packet arrivals.</span></span> <span data-ttu-id="0bf49-208">(Jitter è una misura del &quot;shakiness&quot; di una chiamata). I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o persi.</span><span class="sxs-lookup"><span data-stu-id="0bf49-208">(Jitter is a measure of the &quot;shakiness&quot; of a call.) High jitter values are typically caused by congestion or an overloaded media server, and result in distorted or lost audio.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8b612-209"><strong>Rapporto nascosto del guaritore</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-209"><strong>Healer concealed ratio</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-210">No</span><span class="sxs-lookup"><span data-stu-id="8b612-210">No</span></span></p></td>
-<td><p><span data-ttu-id="8b612-211">Rapporto media tra campioni audio nascosti e il totale al numero totale di esempi.</span><span class="sxs-lookup"><span data-stu-id="8b612-211">Average ratio of concealed audio samples to the total to the total number of samples.</span></span> <span data-ttu-id="8b612-212">(Un esempio di audio nascosto è una tecnica usata per attenuare la transizione brusca che in genere viene causata da pacchetti di rete eliminati). I valori elevati indicano livelli significativi di occultamento delle perdite applicati a causa di perdita di pacchetti o jitter e generano audio distorte o perse.</span><span class="sxs-lookup"><span data-stu-id="8b612-212">(A concealed audio sample is a technique used to smooth out the abrupt transition that would usually be caused by dropped network packets.) High values indicate significant levels of loss concealment applied caused by packet loss or jitter, and results in distorted or lost audio.</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-209"><strong>Rapporto campioni nascosti utilità di ripristino</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-209"><strong>Healer concealed ratio</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-210">No</span><span class="sxs-lookup"><span data-stu-id="0bf49-210">No</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-p117">Rapporto medio tra i campioni audio nascosti e il numero totale di campioni. Un campione audio nascosto è una tecnica utilizzata per mitigare le transazioni improvvise generalmente causate dall'eliminazione di pacchetti di rete. Valori elevati indicano l'applicazione di livelli significativi di soppressione della perdita applicata dovuti a perdita di pacchetti o instabilità, con conseguente audio distorto o perdita di audio.</span><span class="sxs-lookup"><span data-stu-id="0bf49-p117">Average ratio of concealed audio samples to the total to the total number of samples. (A concealed audio sample is a technique used to smooth out the abrupt transition that would usually be caused by dropped network packets.) High values indicate significant levels of loss concealment applied caused by packet loss or jitter, and results in distorted or lost audio.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="8b612-213"><strong>Rapporto allungato guaritore</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-213"><strong>Healer stretched ratio</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-214">No</span><span class="sxs-lookup"><span data-stu-id="8b612-214">No</span></span></p></td>
-<td><p><span data-ttu-id="8b612-215">Rapporto medio tra campioni audio allungati e il totale al numero totale di esempi.</span><span class="sxs-lookup"><span data-stu-id="8b612-215">Average ratio of stretched audio samples to the total to the total number of samples.</span></span> <span data-ttu-id="8b612-216">(L'audio allungato è l'audio che è stato espanso per mantenere la qualità delle chiamate quando è stato rilevato un pacchetto di rete scartato). I valori alti indicano livelli significativi di stretching dei campioni causati da jitter e generano audio o distorte.</span><span class="sxs-lookup"><span data-stu-id="8b612-216">(Stretched audio is audio that has been expanded to help maintain call quality when a dropped network packet has been detected.) High values indicate significant levels of sample stretching caused by jitter, and result in audio sounding robotic or distorted.</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-213"><strong>Rapporto campioni estesi utilità di ripristino</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-213"><strong>Healer stretched ratio</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-214">No</span><span class="sxs-lookup"><span data-stu-id="0bf49-214">No</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-p118">Rapporto medio tra i campioni audio estesi e il numero totale di campioni. Con audio esteso si intende l'audio che è stato espanso per garantire la qualità delle chiamate quando viene rilevato un pacchetto di rete eliminato. Valori elevati indicano livelli significativi di estensione dei campioni dovuti a instabilità, con conseguente riproduzione di audio robotico o distorto.</span><span class="sxs-lookup"><span data-stu-id="0bf49-p118">Average ratio of stretched audio samples to the total to the total number of samples. (Stretched audio is audio that has been expanded to help maintain call quality when a dropped network packet has been detected.) High values indicate significant levels of sample stretching caused by jitter, and result in audio sounding robotic or distorted.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="8b612-217"><strong>Rapporto compresso del guaritore</strong></span><span class="sxs-lookup"><span data-stu-id="8b612-217"><strong>Healer compressed ratio</strong></span></span></p></td>
-<td><p><span data-ttu-id="8b612-218">No</span><span class="sxs-lookup"><span data-stu-id="8b612-218">No</span></span></p></td>
-<td><p><span data-ttu-id="8b612-219">Rapporto medio tra campioni audio compressi e il numero totale di esempi.</span><span class="sxs-lookup"><span data-stu-id="8b612-219">Average ratio of compressed audio samples to the total number of samples.</span></span> <span data-ttu-id="8b612-220">(L'audio compresso è un audio compresso che consente di mantenere la qualità delle chiamate quando è stato rilevato un pacchetto di rete scartato). I valori alti indicano livelli significativi di compressione dei campioni causati da jitter e generano un suono accelerato o distorta.</span><span class="sxs-lookup"><span data-stu-id="8b612-220">(Compressed audio is audio that has been compressed to help maintain call quality when a dropped network packet has been detected.) High values indicate significant levels of sample compression caused by jitter, and result in audio sounding accelerated or distorted.</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-217"><strong>Rapporto campioni compressi utilità di ripristino</strong></span><span class="sxs-lookup"><span data-stu-id="0bf49-217"><strong>Healer compressed ratio</strong></span></span></p></td>
+<td><p><span data-ttu-id="0bf49-218">No</span><span class="sxs-lookup"><span data-stu-id="0bf49-218">No</span></span></p></td>
+<td><p><span data-ttu-id="0bf49-p119">Rapporto medio tra i campioni audio compressi e il numero totale di campioni. L'audio compresso è audio che è stato compresso per mantenere la qualità della chiamata quando è stato rilevato un pacchetto di rete eliminato. Valori alti indicano livelli significativi di compressione dei campioni dovuti a instabilità con conseguente riproduzione di audio accelerato o distorto.</span><span class="sxs-lookup"><span data-stu-id="0bf49-p119">Average ratio of compressed audio samples to the total number of samples. (Compressed audio is audio that has been compressed to help maintain call quality when a dropped network packet has been detected.) High values indicate significant levels of sample compression caused by jitter, and result in audio sounding accelerated or distorted.</span></span></p></td>
 </tr>
 </tbody>
 </table>

@@ -12,20 +12,20 @@ ms:contentKeyID: 48185238
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f67fc8cfffc0b5dbecaf6da212b3a8e5414b18ef
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 453b4c63f58f6153092dae0259155dbfa72b5eca
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735236"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042273"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="file-sharing-high-availability-in-lync-server-2013"></a><span data-ttu-id="d0c56-102">Disponibilità elevata della condivisione di file in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d0c56-102">File sharing high availability in Lync Server 2013</span></span>
+# <a name="file-sharing-high-availability-in-lync-server-2013"></a><span data-ttu-id="ceaa9-102">Disponibilità elevata della condivisione di file in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ceaa9-102">File sharing high availability in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41735236"
 
 <span> </span>
 
-<span data-ttu-id="d0c56-103">_**Argomento Ultima modifica:** 2012-03-30_</span><span class="sxs-lookup"><span data-stu-id="d0c56-103">_**Topic Last Modified:** 2012-03-30_</span></span>
+<span data-ttu-id="ceaa9-103">_**Ultimo argomento modificato:** 2012-03-30_</span><span class="sxs-lookup"><span data-stu-id="ceaa9-103">_**Topic Last Modified:** 2012-03-30_</span></span>
 
-<span data-ttu-id="d0c56-104">Per garantire la disponibilità elevata per la condivisione di file di Lync Server all'interno di un singolo centro dati, è possibile usare il file System distribuito (DFS).</span><span class="sxs-lookup"><span data-stu-id="d0c56-104">To ensure high availability for Lync Server file sharing within a single data center, you can use the Distributed File System (DFS).</span></span> <span data-ttu-id="d0c56-105">DFS supporta il failover da un file server a un altro nello stesso centro dati.</span><span class="sxs-lookup"><span data-stu-id="d0c56-105">DFS supports failover from one file server to another within the same data center.</span></span> <span data-ttu-id="d0c56-106">Per una distribuzione su larga scala, è consigliabile usare i file server dedicati abbinati tramite DFS.</span><span class="sxs-lookup"><span data-stu-id="d0c56-106">For a large scale deployment, we recommend that you use dedicated file servers that are paired using DFS.</span></span>
+<span data-ttu-id="ceaa9-104">Per garantire la disponibilità elevata per la condivisione dei file di Lync Server in un unico Data Center, è possibile utilizzare il file System distribuito (DFS).</span><span class="sxs-lookup"><span data-stu-id="ceaa9-104">To ensure high availability for Lync Server file sharing within a single data center, you can use the Distributed File System (DFS).</span></span> <span data-ttu-id="ceaa9-105">DFS supporta il failover da un file server a un altro all'interno dello stesso data center.</span><span class="sxs-lookup"><span data-stu-id="ceaa9-105">DFS supports failover from one file server to another within the same data center.</span></span> <span data-ttu-id="ceaa9-106">Per una distribuzione su larga scala, è consigliabile utilizzare file server dedicati accoppiati mediante DFS.</span><span class="sxs-lookup"><span data-stu-id="ceaa9-106">For a large scale deployment, we recommend that you use dedicated file servers that are paired using DFS.</span></span>
 
-<span data-ttu-id="d0c56-107">A seconda delle dimensioni della rete e della quantità di flessibilità desiderata, è possibile usare una coppia di server per ospitare tutte le condivisioni di file in un sito oppure usare una coppia per ogni pool di front-end.</span><span class="sxs-lookup"><span data-stu-id="d0c56-107">Depending on your network's size, and the amount of resiliency you want, you can use one pair of servers to host all file shares in a site, or use one pair per Front End pool.</span></span>
+<span data-ttu-id="ceaa9-107">A seconda delle dimensioni della rete e del grado di resilienza desiderato, è possibile utilizzare una coppia di server per ospitare tutte le condivisioni file in un sito oppure utilizzare una coppia per ogni pool Front End.</span><span class="sxs-lookup"><span data-stu-id="ceaa9-107">Depending on your network's size, and the amount of resiliency you want, you can use one pair of servers to host all file shares in a site, or use one pair per Front End pool.</span></span>
 
-<span data-ttu-id="d0c56-108">DFS è un meccanismo di replica dei file di massimo sforzo, senza l'impegno per i tempi di recupero pubblicato (RTO) o RPO (Recovery Point Objective).</span><span class="sxs-lookup"><span data-stu-id="d0c56-108">DFS is a best effort file replication mechanism, with no published recovery time objective (RTO) or recovery point objective (RPO) commitment.</span></span> <span data-ttu-id="d0c56-109">Il failover tra i server DFS deve essere completato in modo rapido, ma il ritardo della replica dei dati può impedire agli utenti di continuare a lavorare in corso quando il failover si verifica.</span><span class="sxs-lookup"><span data-stu-id="d0c56-109">The failover between the DFS servers should be completed quickly, but data replication delay may prevent users from being able to continue work in progress when the failover happens.</span></span>
+<span data-ttu-id="ceaa9-p102">DFS è un meccanismo che esegue la replica nel miglior modo possibile in base alle condizioni esistenti, senza alcun impegno pubblicato relativamente al raggiungimento degli obiettivi in termini di tempo di ripristino (RTO, Recovery Time Objective) o di punto di ripristino (RPO, Recovery Point Objective). Il failover tra i server DFS dovrebbe avvenire rapidamente, ma il ritardo della replica dei dati può impedire agli utenti di proseguire con il lavoro che stavano svolgendo quando si verifica il failover.</span><span class="sxs-lookup"><span data-stu-id="ceaa9-p102">DFS is a best effort file replication mechanism, with no published recovery time objective (RTO) or recovery point objective (RPO) commitment. The failover between the DFS servers should be completed quickly, but data replication delay may prevent users from being able to continue work in progress when the failover happens.</span></span>
 
-<span data-ttu-id="d0c56-110">Se si usa DFS e archivio dati per la condivisione di file è fondamentale, è consigliabile eseguire il backup delle condivisioni, ad esempio ogni 4 o 8 ore.</span><span class="sxs-lookup"><span data-stu-id="d0c56-110">If you use DFS and data store on the fileshare is critical, you should back up the file shares frequently, such as every 4 to 8 hours.</span></span> <span data-ttu-id="d0c56-111">Quando si abbassa una condivisione file e la replica non è aggiornata, è possibile usare il backup per ripristinare il contenuto del server non riuscito con l'altro server associato al server che ora non è disponibile.</span><span class="sxs-lookup"><span data-stu-id="d0c56-111">When one file share goes down and replication is not up to date, you can use the backup to restore the content on the failed server to the other server that is paired with the server that is now unavailable.</span></span>
+<span data-ttu-id="ceaa9-p103">Se si utilizza DFS e l'archivio dati nella condivisione file è importante, è consigliabile eseguire frequentemente il backup delle condivisioni file, ad esempio ogni 4-8 ore. Quando una condivisione file non è più attiva e la replica non è aggiornata, è possibile utilizzare il backup per ripristinare il contenuto del server con problemi nell'altro server accoppiato al server attualmente non disponibile.</span><span class="sxs-lookup"><span data-stu-id="ceaa9-p103">If you use DFS and data store on the fileshare is critical, you should back up the file shares frequently, such as every 4 to 8 hours. When one file share goes down and replication is not up to date, you can use the backup to restore the content on the failed server to the other server that is paired with the server that is now unavailable.</span></span>
 
 </div>
 

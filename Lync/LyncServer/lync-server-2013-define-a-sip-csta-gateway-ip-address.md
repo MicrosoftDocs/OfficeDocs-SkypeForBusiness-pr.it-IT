@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Definire l'indirizzo IP di un gateway SIP/CSTA"
+title: 'Lync Server 2013: definire un indirizzo IP del gateway SIP/CSTA'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185073
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c50958f2c7c44045e25ff4ac9619f3ad73a5f302
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 60541799a66365275207ea998fa2d4dd218a7bc3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728516"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043648"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="define-a-sipcsta-gateway-ip-address-in-lync-server-2013"></a><span data-ttu-id="2a16e-102">Definire l'indirizzo IP di un gateway SIP/CSTA in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2a16e-102">Define a SIP/CSTA gateway IP address in Lync Server 2013</span></span>
+# <a name="define-a-sipcsta-gateway-ip-address-in-lync-server-2013"></a><span data-ttu-id="1540a-102">Definire un indirizzo IP del gateway SIP/CSTA in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1540a-102">Define a SIP/CSTA gateway IP address in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,41 +35,41 @@ ms.locfileid: "41728516"
 
 <span> </span>
 
-<span data-ttu-id="2a16e-103">_**Argomento Ultima modifica:** 2012-09-21_</span><span class="sxs-lookup"><span data-stu-id="2a16e-103">_**Topic Last Modified:** 2012-09-21_</span></span>
+<span data-ttu-id="1540a-103">_**Ultimo argomento modificato:** 2012-09-21_</span><span class="sxs-lookup"><span data-stu-id="1540a-103">_**Topic Last Modified:** 2012-09-21_</span></span>
 
-<span data-ttu-id="2a16e-104">Se Lync Server si connette al gateway SIP/CSTA distribuito per il controllo delle chiamate remote tramite una connessione TCP (Transmission Control Protocol), è necessario definire l'indirizzo IP del gateway in Generatore di topologia.</span><span class="sxs-lookup"><span data-stu-id="2a16e-104">If Lync Server will connect to the SIP/CSTA gateway that you deployed for remote call control by using a Transmission Control Protocol (TCP) connection, then you must define the IP address of the gateway in Topology Builder.</span></span> <span data-ttu-id="2a16e-105">Questo passaggio non è necessario per i gateway che supportano connessioni TLS (Transport Layer Security).</span><span class="sxs-lookup"><span data-stu-id="2a16e-105">This step is not necessary for gateways that support Transport Layer Security (TLS) connections.</span></span> <span data-ttu-id="2a16e-106">Per qualsiasi gateway che supporta connessioni TLS, è possibile ignorare questa procedura e continuare la distribuzione del controllo delle chiamate remote seguendo la procedura descritta in [abilitare gli utenti di Lync per il controllo delle chiamate remote in Lync Server 2013](lync-server-2013-enable-lync-users-for-remote-call-control.md).</span><span class="sxs-lookup"><span data-stu-id="2a16e-106">For any gateway that supports TLS connections, you can skip this procedure and continue deployment of remote call control by following the steps in [Enable Lync users for remote call control in Lync Server 2013](lync-server-2013-enable-lync-users-for-remote-call-control.md).</span></span>
+<span data-ttu-id="1540a-104">Se Lync Server si connetterà al gateway SIP/CSTA distribuito per il controllo delle chiamate remote tramite una connessione TCP (Transmission Control Protocol), sarà necessario definire l'indirizzo IP del gateway in Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="1540a-104">If Lync Server will connect to the SIP/CSTA gateway that you deployed for remote call control by using a Transmission Control Protocol (TCP) connection, then you must define the IP address of the gateway in Topology Builder.</span></span> <span data-ttu-id="1540a-105">Questa operazione non è necessaria per i gateway che supportano le connessioni TLS (Transport Layer Security).</span><span class="sxs-lookup"><span data-stu-id="1540a-105">This step is not necessary for gateways that support Transport Layer Security (TLS) connections.</span></span> <span data-ttu-id="1540a-106">Per tutti i gateway che supportano le connessioni TLS, è possibile ignorare questa procedura e continuare la distribuzione del controllo delle chiamate remote attenendosi alla procedura descritta in [Enable Lync users for Remote Call Control in Lync Server 2013](lync-server-2013-enable-lync-users-for-remote-call-control.md).</span><span class="sxs-lookup"><span data-stu-id="1540a-106">For any gateway that supports TLS connections, you can skip this procedure and continue deployment of remote call control by following the steps in [Enable Lync users for remote call control in Lync Server 2013](lync-server-2013-enable-lync-users-for-remote-call-control.md).</span></span>
 
 <div>
 
-## <a name="to-define-the-sipcsta-gateway-ip-address-by-using-topology-builder"></a><span data-ttu-id="2a16e-107">Per definire l'indirizzo IP del gateway SIP/CSTA tramite Generatore di topologie</span><span class="sxs-lookup"><span data-stu-id="2a16e-107">To define the SIP/CSTA gateway IP address by using Topology Builder</span></span>
+## <a name="to-define-the-sipcsta-gateway-ip-address-by-using-topology-builder"></a><span data-ttu-id="1540a-107">Per definire l'indirizzo IP di un gateway SIP/CSTA mediante Generatore di topologie</span><span class="sxs-lookup"><span data-stu-id="1540a-107">To define the SIP/CSTA gateway IP address by using Topology Builder</span></span>
 
-1.  <span data-ttu-id="2a16e-108">Accedere al computer in cui è installato Generatore di topologia come membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins.</span><span class="sxs-lookup"><span data-stu-id="2a16e-108">Log on to the computer where Topology Builder is installed as a member of the Domain Admins group and the RTCUniversalServerAdmins group.</span></span>
+1.  <span data-ttu-id="1540a-108">Accedere al computer in cui è installato Generatore di topologie come membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins.</span><span class="sxs-lookup"><span data-stu-id="1540a-108">Log on to the computer where Topology Builder is installed as a member of the Domain Admins group and the RTCUniversalServerAdmins group.</span></span>
 
-2.  <span data-ttu-id="2a16e-109">Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Generatore di topologia di Lync Server**.</span><span class="sxs-lookup"><span data-stu-id="2a16e-109">Start Topology Builder: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Topology Builder**.</span></span>
+2.  <span data-ttu-id="1540a-109">Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Generatore di topologie**.</span><span class="sxs-lookup"><span data-stu-id="1540a-109">Start Topology Builder: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Topology Builder**.</span></span>
 
-3.  <span data-ttu-id="2a16e-110">Scegliere l'opzione per scaricare una topologia esistente.</span><span class="sxs-lookup"><span data-stu-id="2a16e-110">Choose the option to download an existing topology.</span></span>
+3.  <span data-ttu-id="1540a-110">Scegliere l'opzione per scaricare una topologia esistente.</span><span class="sxs-lookup"><span data-stu-id="1540a-110">Choose the option to download an existing topology.</span></span>
 
-4.  <span data-ttu-id="2a16e-111">Espandere il nodo **Trusted Application Servers** .</span><span class="sxs-lookup"><span data-stu-id="2a16e-111">Expand the **Trusted application servers** node.</span></span>
+4.  <span data-ttu-id="1540a-111">Espandere il nodo **Server applicazioni attendibili**.</span><span class="sxs-lookup"><span data-stu-id="1540a-111">Expand the **Trusted application servers** node.</span></span>
 
-5.  <span data-ttu-id="2a16e-112">Fare clic con il pulsante destro del mouse sul pool di applicazioni attendibile creato, come descritto in [configurare una voce di applicazione attendibile per il controllo delle chiamate remote in Lync Server 2013](lync-server-2013-configure-a-trusted-application-entry-for-remote-call-control.md)e quindi fare clic su **modifica proprietà**.</span><span class="sxs-lookup"><span data-stu-id="2a16e-112">Right-click the trusted application pool that you created, as described in [Configure a trusted application entry for remote call control in Lync Server 2013](lync-server-2013-configure-a-trusted-application-entry-for-remote-call-control.md), and then click **Edit Properties**.</span></span>
+5.  <span data-ttu-id="1540a-112">Fare clic con il pulsante destro del mouse sul pool di applicazioni attendibili creato, come descritto in [configurare una voce di applicazione attendibile per il controllo delle chiamate remote in Lync Server 2013](lync-server-2013-configure-a-trusted-application-entry-for-remote-call-control.md), quindi fare clic su **modifica proprietà**.</span><span class="sxs-lookup"><span data-stu-id="1540a-112">Right-click the trusted application pool that you created, as described in [Configure a trusted application entry for remote call control in Lync Server 2013](lync-server-2013-configure-a-trusted-application-entry-for-remote-call-control.md), and then click **Edit Properties**.</span></span>
 
-6.  <span data-ttu-id="2a16e-113">Deselezionare la casella di controllo **Abilita replica dei dati di configurazione nel pool** .</span><span class="sxs-lookup"><span data-stu-id="2a16e-113">Clear the **Enable replication of configuration data to this pool** check box.</span></span>
+6.  <span data-ttu-id="1540a-113">Deselezionare la casella di controllo **Abilita la replica dei dati di configurazione nel pool**.</span><span class="sxs-lookup"><span data-stu-id="1540a-113">Clear the **Enable replication of configuration data to this pool** check box.</span></span>
 
-7.  <span data-ttu-id="2a16e-114">Fare clic su **limita l'utilizzo del servizio agli indirizzi IP selezionati**.</span><span class="sxs-lookup"><span data-stu-id="2a16e-114">Click **Limit service usage to selected IP addresses**.</span></span> <span data-ttu-id="2a16e-115">L'impostazione predefinita è **usare tutti gli indirizzi IP configurati**.</span><span class="sxs-lookup"><span data-stu-id="2a16e-115">The default setting is **Use all configured IP addresses**.</span></span>
+7.  <span data-ttu-id="1540a-p102">Fare clic su **Limita utilizzo servizio a indirizzi IP selezionati**. L'impostazione predefinita è **Usa tutti gli indirizzi IP configurati**.</span><span class="sxs-lookup"><span data-stu-id="1540a-p102">Click **Limit service usage to selected IP addresses**. The default setting is **Use all configured IP addresses**.</span></span>
 
-8.  <span data-ttu-id="2a16e-116">Nella casella di testo **indirizzo IP principale** immettere l'indirizzo IP del gateway SIP/CSTA.</span><span class="sxs-lookup"><span data-stu-id="2a16e-116">In the **Primary IP address** text box, enter the IP address of the SIP/CSTA gateway.</span></span>
+8.  <span data-ttu-id="1540a-116">Nella casella di testo **Indirizzo IP primario** immettere l'indirizzo IP del gateway SIP/CSTA.</span><span class="sxs-lookup"><span data-stu-id="1540a-116">In the **Primary IP address** text box, enter the IP address of the SIP/CSTA gateway.</span></span>
 
-9.  <span data-ttu-id="2a16e-117">Per aggiornare la topologia in Central Management store, nell'albero della console fare clic su **Lync Server**e quindi, nel riquadro **azioni** , fare clic su **pubblica**.</span><span class="sxs-lookup"><span data-stu-id="2a16e-117">To update the topology in the Central Management store, in the console tree, click **Lync Server**, and then, from the **Actions** pane, click **Publish**.</span></span>
+9.  <span data-ttu-id="1540a-117">Per aggiornare la topologia nell'archivio di gestione centrale, fare clic su **Lync Server** nell'albero della console e quindi su **Pubblica** nel riquadro **Azioni**.</span><span class="sxs-lookup"><span data-stu-id="1540a-117">To update the topology in the Central Management store, in the console tree, click **Lync Server**, and then, from the **Actions** pane, click **Publish**.</span></span>
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="2a16e-118">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="2a16e-118">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1540a-118">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="1540a-118">See Also</span></span>
 
 
-[<span data-ttu-id="2a16e-119">Configurare una route statica per il controllo delle chiamate remote in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2a16e-119">Configure a static route for remote call control in Lync Server 2013</span></span>](lync-server-2013-configure-a-static-route-for-remote-call-control.md)  
-[<span data-ttu-id="2a16e-120">Configurare una voce applicazione attendibile per il controllo delle chiamate remote in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2a16e-120">Configure a trusted application entry for remote call control in Lync Server 2013</span></span>](lync-server-2013-configure-a-trusted-application-entry-for-remote-call-control.md)  
+[<span data-ttu-id="1540a-119">Configurare una route statica per il controllo delle chiamate remote in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1540a-119">Configure a static route for remote call control in Lync Server 2013</span></span>](lync-server-2013-configure-a-static-route-for-remote-call-control.md)  
+[<span data-ttu-id="1540a-120">Configurare una voce di applicazione attendibile per il controllo delle chiamate remote in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1540a-120">Configure a trusted application entry for remote call control in Lync Server 2013</span></span>](lync-server-2013-configure-a-trusted-application-entry-for-remote-call-control.md)  
   
 
 </div>

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella Application'
+title: "Lync Server 2013: tabella dell'applicazione"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183757
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 649463f3fe543e17172ecf69daa5a380c2b5e774
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c6cc89733e9e3ce85737caa29e62e3c033211713
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737616"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037266"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="application-table-in-lync-server-2013"></a><span data-ttu-id="f8907-102">Tabella Application in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f8907-102">Application table in Lync Server 2013</span></span>
+# <a name="application-table-in-lync-server-2013"></a><span data-ttu-id="e2d7f-102">Tabella Application in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e2d7f-102">Application table in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41737616"
 
 <span> </span>
 
-<span data-ttu-id="f8907-103">_**Argomento Ultima modifica:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="f8907-103">_**Topic Last Modified:** 2012-09-28_</span></span>
+<span data-ttu-id="e2d7f-103">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="e2d7f-103">_**Topic Last Modified:** 2012-09-28_</span></span>
 
-<span data-ttu-id="f8907-104">Questa tabella contiene informazioni sui vari processi in Lync Server 2013 coinvolti in routing e connessioni.</span><span class="sxs-lookup"><span data-stu-id="f8907-104">This table stores information about the various processes within Lync Server 2013 involved in routing and connections.</span></span>
+<span data-ttu-id="e2d7f-104">In questa tabella vengono archiviate le informazioni sui vari processi all'interno di Lync Server 2013 coinvolti nel routing e nelle connessioni.</span><span class="sxs-lookup"><span data-stu-id="e2d7f-104">This table stores information about the various processes within Lync Server 2013 involved in routing and connections.</span></span>
 
 
 <table>
@@ -49,24 +49,24 @@ ms.locfileid: "41737616"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="f8907-105">Colonna</span><span class="sxs-lookup"><span data-stu-id="f8907-105">Column</span></span></th>
-<th><span data-ttu-id="f8907-106">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="f8907-106">Data Type</span></span></th>
-<th><span data-ttu-id="f8907-107">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="f8907-107">Key/Index</span></span></th>
-<th><span data-ttu-id="f8907-108">Dettagli</span><span class="sxs-lookup"><span data-stu-id="f8907-108">Details</span></span></th>
+<th><span data-ttu-id="e2d7f-105">Colonna</span><span class="sxs-lookup"><span data-stu-id="e2d7f-105">Column</span></span></th>
+<th><span data-ttu-id="e2d7f-106">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="e2d7f-106">Data Type</span></span></th>
+<th><span data-ttu-id="e2d7f-107">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="e2d7f-107">Key/Index</span></span></th>
+<th><span data-ttu-id="e2d7f-108">Dettagli</span><span class="sxs-lookup"><span data-stu-id="e2d7f-108">Details</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="f8907-109"><strong>ApplicationId</strong></span><span class="sxs-lookup"><span data-stu-id="f8907-109"><strong>ApplicationId</strong></span></span></p></td>
-<td><p><span data-ttu-id="f8907-110">int</span><span class="sxs-lookup"><span data-stu-id="f8907-110">int</span></span></p></td>
-<td><p><span data-ttu-id="f8907-111">Principale</span><span class="sxs-lookup"><span data-stu-id="f8907-111">Primary</span></span></p></td>
-<td><p><span data-ttu-id="f8907-112">Numero univoco che identifica questa applicazione.</span><span class="sxs-lookup"><span data-stu-id="f8907-112">Unique number identifying this application.</span></span></p></td>
+<td><p><span data-ttu-id="e2d7f-109"><strong>ApplicationId</strong></span><span class="sxs-lookup"><span data-stu-id="e2d7f-109"><strong>ApplicationId</strong></span></span></p></td>
+<td><p><span data-ttu-id="e2d7f-110">int</span><span class="sxs-lookup"><span data-stu-id="e2d7f-110">int</span></span></p></td>
+<td><p><span data-ttu-id="e2d7f-111">Principale</span><span class="sxs-lookup"><span data-stu-id="e2d7f-111">Primary</span></span></p></td>
+<td><p><span data-ttu-id="e2d7f-112">Numero univoco che identifica l'applicazione.</span><span class="sxs-lookup"><span data-stu-id="e2d7f-112">Unique number identifying this application.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="f8907-113"><strong>Nome</strong></span><span class="sxs-lookup"><span data-stu-id="f8907-113"><strong>Name</strong></span></span></p></td>
-<td><p><span data-ttu-id="f8907-114">nvarchar (256)</span><span class="sxs-lookup"><span data-stu-id="f8907-114">nvarchar(256)</span></span></p></td>
+<td><p><span data-ttu-id="e2d7f-113"><strong>Nome</strong></span><span class="sxs-lookup"><span data-stu-id="e2d7f-113"><strong>Name</strong></span></span></p></td>
+<td><p><span data-ttu-id="e2d7f-114">nvarchar (256)</span><span class="sxs-lookup"><span data-stu-id="e2d7f-114">nvarchar(256)</span></span></p></td>
 <td><p> </p></td>
-<td><p><span data-ttu-id="f8907-115">Nome del componente server.</span><span class="sxs-lookup"><span data-stu-id="f8907-115">Name of the server component.</span></span></p></td>
+<td><p><span data-ttu-id="e2d7f-115">Nome del componente del server.</span><span class="sxs-lookup"><span data-stu-id="e2d7f-115">Name of the server component.</span></span></p></td>
 </tr>
 </tbody>
 </table>

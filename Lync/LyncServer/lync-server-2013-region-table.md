@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella Region'
+title: 'Lync Server 2013: tabella Region'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183518
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 005722b28b6ea93d89873d45e7a9284f44643bde
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1099be5a6cc8d3fa0b40fa20cde23ebaa02d64c7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724426"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050798"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="region-table-in-lync-server-2013"></a><span data-ttu-id="059ea-102">Tabella Region in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="059ea-102">Region table in Lync Server 2013</span></span>
+# <a name="region-table-in-lync-server-2013"></a><span data-ttu-id="b69ec-102">Tabella Region in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b69ec-102">Region table in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41724426"
 
 <span> </span>
 
-<span data-ttu-id="059ea-103">_**Argomento Ultima modifica:** 2010-11-09_</span><span class="sxs-lookup"><span data-stu-id="059ea-103">_**Topic Last Modified:** 2010-11-09_</span></span>
+<span data-ttu-id="b69ec-103">_**Ultimo argomento modificato:** 2010-11-09_</span><span class="sxs-lookup"><span data-stu-id="b69ec-103">_**Topic Last Modified:** 2010-11-09_</span></span>
 
-<span data-ttu-id="059ea-104">La tabella Region è una tabella di supporto.</span><span class="sxs-lookup"><span data-stu-id="059ea-104">The Region table is a supporting table.</span></span> <span data-ttu-id="059ea-105">Ogni record rappresenta un paese/area geografica definito nell'impostazione di configurazione della rete.</span><span class="sxs-lookup"><span data-stu-id="059ea-105">Each record represents one country/region defined in network configuration setting.</span></span>
+<span data-ttu-id="b69ec-104">La tabella Region è una tabella di supporto.</span><span class="sxs-lookup"><span data-stu-id="b69ec-104">The Region table is a supporting table.</span></span> <span data-ttu-id="b69ec-105">Ogni record rappresenta un paese/area geografica definito nell'impostazione di configurazione di rete.</span><span class="sxs-lookup"><span data-stu-id="b69ec-105">Each record represents one country/region defined in network configuration setting.</span></span>
 
 
 <table>
@@ -49,24 +49,24 @@ ms.locfileid: "41724426"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="059ea-106"><strong>Colonna</strong></span><span class="sxs-lookup"><span data-stu-id="059ea-106"><strong>Column</strong></span></span></th>
-<th><span data-ttu-id="059ea-107"><strong>Tipo di dati</strong></span><span class="sxs-lookup"><span data-stu-id="059ea-107"><strong>Data Type</strong></span></span></th>
-<th><span data-ttu-id="059ea-108"><strong>Chiave/indice</strong></span><span class="sxs-lookup"><span data-stu-id="059ea-108"><strong>Key/Index</strong></span></span></th>
-<th><span data-ttu-id="059ea-109"><strong>Dettagli</strong></span><span class="sxs-lookup"><span data-stu-id="059ea-109"><strong>Details</strong></span></span></th>
+<th><span data-ttu-id="b69ec-106"><strong>Colonna</strong></span><span class="sxs-lookup"><span data-stu-id="b69ec-106"><strong>Column</strong></span></span></th>
+<th><span data-ttu-id="b69ec-107"><strong>Tipo di dati</strong></span><span class="sxs-lookup"><span data-stu-id="b69ec-107"><strong>Data Type</strong></span></span></th>
+<th><span data-ttu-id="b69ec-108"><strong>Chiave/indice</strong></span><span class="sxs-lookup"><span data-stu-id="b69ec-108"><strong>Key/Index</strong></span></span></th>
+<th><span data-ttu-id="b69ec-109"><strong>Dettagli</strong></span><span class="sxs-lookup"><span data-stu-id="b69ec-109"><strong>Details</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="059ea-110"><strong>RegionKey</strong></span><span class="sxs-lookup"><span data-stu-id="059ea-110"><strong>RegionKey</strong></span></span></p></td>
-<td><p><span data-ttu-id="059ea-111">int</span><span class="sxs-lookup"><span data-stu-id="059ea-111">int</span></span></p></td>
-<td><p><span data-ttu-id="059ea-112">Principale</span><span class="sxs-lookup"><span data-stu-id="059ea-112">Primary</span></span></p></td>
-<td><p><span data-ttu-id="059ea-113">Numero univoco che identifica il paese/area geografica.</span><span class="sxs-lookup"><span data-stu-id="059ea-113">Unique number identifying the country/region.</span></span></p></td>
+<td><p><span data-ttu-id="b69ec-110"><strong>RegionKey</strong></span><span class="sxs-lookup"><span data-stu-id="b69ec-110"><strong>RegionKey</strong></span></span></p></td>
+<td><p><span data-ttu-id="b69ec-111">int</span><span class="sxs-lookup"><span data-stu-id="b69ec-111">int</span></span></p></td>
+<td><p><span data-ttu-id="b69ec-112">Principale</span><span class="sxs-lookup"><span data-stu-id="b69ec-112">Primary</span></span></p></td>
+<td><p><span data-ttu-id="b69ec-113">Numero univoco che identifica il paese/area geografica.</span><span class="sxs-lookup"><span data-stu-id="b69ec-113">Unique number identifying the country/region.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="059ea-114"><strong>RegionName</strong></span><span class="sxs-lookup"><span data-stu-id="059ea-114"><strong>RegionName</strong></span></span></p></td>
-<td><p><span data-ttu-id="059ea-115">nvarchar (128)</span><span class="sxs-lookup"><span data-stu-id="059ea-115">nvarchar(128)</span></span></p></td>
-<td><p><span data-ttu-id="059ea-116">Univoci</span><span class="sxs-lookup"><span data-stu-id="059ea-116">Unique</span></span></p></td>
-<td><p><span data-ttu-id="059ea-117">Nome del paese/area geografica.</span><span class="sxs-lookup"><span data-stu-id="059ea-117">The name of the country/region.</span></span></p></td>
+<td><p><span data-ttu-id="b69ec-114"><strong>RegionName</strong></span><span class="sxs-lookup"><span data-stu-id="b69ec-114"><strong>RegionName</strong></span></span></p></td>
+<td><p><span data-ttu-id="b69ec-115">nvarchar (128)</span><span class="sxs-lookup"><span data-stu-id="b69ec-115">nvarchar(128)</span></span></p></td>
+<td><p><span data-ttu-id="b69ec-116">Univoco</span><span class="sxs-lookup"><span data-stu-id="b69ec-116">Unique</span></span></p></td>
+<td><p><span data-ttu-id="b69ec-117">Nome del paese/area geografica.</span><span class="sxs-lookup"><span data-stu-id="b69ec-117">The name of the country/region.</span></span></p></td>
 </tr>
 </tbody>
 </table>
