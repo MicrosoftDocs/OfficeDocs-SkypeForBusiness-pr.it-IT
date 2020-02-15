@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: sostituire l'XMLAdapter con un adattatore di conformità del server di chat persistente personalizzato"
+title: 'Lync Server 2013: sostituzione di XMLAdapter con una scheda di conformità del server Chat persistente personalizzata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49558152
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9235c57a055131049251d17b75f73a4370cc5f2c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5c6cd49ee2596627849b5b67147d6f7ef2a328e3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41746686"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050868"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="replacing-the-xmladapter-with-a-customized-persistent-chat-server-compliance-adapter-in-lync-server-2013"></a><span data-ttu-id="c283f-102">Sostituzione di XMLAdapter con un adattatore di conformità del server di chat persistente personalizzato in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c283f-102">Replacing the XmlAdapter with a customized Persistent Chat Server Compliance adapter in Lync Server 2013</span></span>
+# <a name="replacing-the-xmladapter-with-a-customized-persistent-chat-server-compliance-adapter-in-lync-server-2013"></a><span data-ttu-id="abf5e-102">Sostituzione di XMLAdapter con una scheda di conformità del server Chat persistente personalizzata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="abf5e-102">Replacing the XmlAdapter with a customized Persistent Chat Server Compliance adapter in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41746686"
 
 <span> </span>
 
-<span data-ttu-id="c283f-103">_**Argomento Ultima modifica:** 2012-11-01_</span><span class="sxs-lookup"><span data-stu-id="c283f-103">_**Topic Last Modified:** 2012-11-01_</span></span>
+<span data-ttu-id="abf5e-103">_**Ultimo argomento modificato:** 2012-11-01_</span><span class="sxs-lookup"><span data-stu-id="abf5e-103">_**Topic Last Modified:** 2012-11-01_</span></span>
 
-<span data-ttu-id="c283f-104">È possibile scrivere una scheda personalizzata invece di usare l'XmlAdapter installato con il server di chat persistente.</span><span class="sxs-lookup"><span data-stu-id="c283f-104">You can write a custom adapter instead of using the XmlAdapter that is installed with Persistent Chat Server.</span></span> <span data-ttu-id="c283f-105">A questo scopo, devi specificare un assembly .NET Framework che contiene una classe pubblica che implementa l'interfaccia **IComplianceAdapter** .</span><span class="sxs-lookup"><span data-stu-id="c283f-105">To accomplish this, you must provide a .NET Framework assembly that contains a public class that implements the **IComplianceAdapter** interface.</span></span> <span data-ttu-id="c283f-106">È necessario inserire questo assembly nella cartella di installazione del server di chat persistente di ogni server nel pool del server di chat persistente.</span><span class="sxs-lookup"><span data-stu-id="c283f-106">You must place this assembly in the Persistent Chat Server installation folder of each server in your Persistent Chat Server pool.</span></span> <span data-ttu-id="c283f-107">Uno dei server di conformità può specificare i dati di conformità alla scheda, ma i server di conformità non forniranno i dati di conformità duplicati a più istanze della scheda.</span><span class="sxs-lookup"><span data-stu-id="c283f-107">Any one of the Compliance servers can provide compliance data to your adapter, but the compliance servers will not provide duplicate compliance data to multiple instances of your adapter.</span></span>
+<span data-ttu-id="abf5e-104">È possibile scrivere un adattatore personalizzato anziché utilizzare XmlAdapter installato con il server Chat persistente.</span><span class="sxs-lookup"><span data-stu-id="abf5e-104">You can write a custom adapter instead of using the XmlAdapter that is installed with Persistent Chat Server.</span></span> <span data-ttu-id="abf5e-105">A tale scopo, è necessario fornire un assembly .NET Framework che contenga una classe pubblica che implementi l'interfaccia **IComplianceAdapter** .</span><span class="sxs-lookup"><span data-stu-id="abf5e-105">To accomplish this, you must provide a .NET Framework assembly that contains a public class that implements the **IComplianceAdapter** interface.</span></span> <span data-ttu-id="abf5e-106">È necessario inserire questo assembly nella cartella di installazione del server Chat persistente di ogni server nel pool di server Chat persistente.</span><span class="sxs-lookup"><span data-stu-id="abf5e-106">You must place this assembly in the Persistent Chat Server installation folder of each server in your Persistent Chat Server pool.</span></span> <span data-ttu-id="abf5e-107">Uno qualsiasi dei server di conformità è in grado di fornire i dati di conformità alla scheda, ma i server di conformità non forniranno i dati di conformità duplicati a più istanze della scheda.</span><span class="sxs-lookup"><span data-stu-id="abf5e-107">Any one of the Compliance servers can provide compliance data to your adapter, but the compliance servers will not provide duplicate compliance data to multiple instances of your adapter.</span></span>
 
 <div>
 
-## <a name="implementing-the-icomplianceadapter-interface"></a><span data-ttu-id="c283f-108">Implementazione dell'interfaccia IComplianceAdapter</span><span class="sxs-lookup"><span data-stu-id="c283f-108">Implementing the IComplianceAdapter interface</span></span>
+## <a name="implementing-the-icomplianceadapter-interface"></a><span data-ttu-id="abf5e-108">Implementazione dell'interfaccia IComplianceAdapter</span><span class="sxs-lookup"><span data-stu-id="abf5e-108">Implementing the IComplianceAdapter interface</span></span>
 
-<span data-ttu-id="c283f-109">L'interfaccia è definita nell'assembly Compliance. dll nello spazio dei `Microsoft.Rtc.Internal.Chat.Server.Compliance`nomi.</span><span class="sxs-lookup"><span data-stu-id="c283f-109">The interface is defined in the Compliance.dll assembly in the namespace `Microsoft.Rtc.Internal.Chat.Server.Compliance`.</span></span> <span data-ttu-id="c283f-110">L'interfaccia definisce due metodi che devono essere implementati dall'adapter personalizzato.</span><span class="sxs-lookup"><span data-stu-id="c283f-110">The interface defines two methods that your custom adapter must implement.</span></span>
+<span data-ttu-id="abf5e-109">L'interfaccia è definita nell'assembly Compliance. dll nello spazio dei `Microsoft.Rtc.Internal.Chat.Server.Compliance`nomi.</span><span class="sxs-lookup"><span data-stu-id="abf5e-109">The interface is defined in the Compliance.dll assembly in the namespace `Microsoft.Rtc.Internal.Chat.Server.Compliance`.</span></span> <span data-ttu-id="abf5e-110">L'interfaccia definisce due metodi che devono essere implementati dall'adattatore personalizzato.</span><span class="sxs-lookup"><span data-stu-id="abf5e-110">The interface defines two methods that your custom adapter must implement.</span></span>
 
     void SetConfig(AdapterConfig config)
 
-<span data-ttu-id="c283f-111">Il server di conformità della chat persistente chiamerà questo metodo quando l'adapter viene caricato per primo.</span><span class="sxs-lookup"><span data-stu-id="c283f-111">The Persistent Chat Compliance server will call this method when the adapter first loads.</span></span> <span data-ttu-id="c283f-112">`AdapterConfig` Contiene la configurazione della conformità della chat persistente pertinente per la scheda conformità.</span><span class="sxs-lookup"><span data-stu-id="c283f-112">The `AdapterConfig` contains the Persistent Chat compliance configuration that is relevant to the compliance adapter.</span></span>
+<span data-ttu-id="abf5e-111">Il server di conformità di Persistent Chat chiamerà questo metodo al primo caricamento dell'adapter.</span><span class="sxs-lookup"><span data-stu-id="abf5e-111">The Persistent Chat Compliance server will call this method when the adapter first loads.</span></span> <span data-ttu-id="abf5e-112">`AdapterConfig` Contiene la configurazione di conformità di Persistent Chat pertinente per la scheda di conformità.</span><span class="sxs-lookup"><span data-stu-id="abf5e-112">The `AdapterConfig` contains the Persistent Chat compliance configuration that is relevant to the compliance adapter.</span></span>
 
     void Translate(ConversationCollection conversations)
 
-<span data-ttu-id="c283f-113">Il server di conformità della chat persistente chiama questo metodo a intervalli periodici, purché siano presenti nuovi dati da tradurre.</span><span class="sxs-lookup"><span data-stu-id="c283f-113">The Persistent Chat Compliance server calls this method at periodic intervals as long as there is new data to translate.</span></span> <span data-ttu-id="c283f-114">Questo intervallo di tempo è uguale a `RunInterval` quello impostato nella configurazione della conformità della chat persistente.</span><span class="sxs-lookup"><span data-stu-id="c283f-114">This time interval is equal to the `RunInterval` as set in the Persistent Chat Compliance configuration.</span></span>
+<span data-ttu-id="abf5e-113">Il server di conformità di Persistent Chat chiama questo metodo a intervalli periodici finché sono presenti nuovi dati da tradurre.</span><span class="sxs-lookup"><span data-stu-id="abf5e-113">The Persistent Chat Compliance server calls this method at periodic intervals as long as there is new data to translate.</span></span> <span data-ttu-id="abf5e-114">Questo intervallo di tempo è uguale a `RunInterval` quello impostato nella configurazione di conformità di Persistent Chat.</span><span class="sxs-lookup"><span data-stu-id="abf5e-114">This time interval is equal to the `RunInterval` as set in the Persistent Chat Compliance configuration.</span></span>
 
-<span data-ttu-id="c283f-115">`ConversationCollection` Contiene le informazioni sulla conversazione raccolte dall'ultima volta che è stato chiamato questo metodo.</span><span class="sxs-lookup"><span data-stu-id="c283f-115">The `ConversationCollection` contains the conversation information that was collected from the last time this method was called.</span></span>
+<span data-ttu-id="abf5e-115">`ConversationCollection` Contiene le informazioni di conversazione raccolte dall'ultima volta che è stato chiamato il metodo.</span><span class="sxs-lookup"><span data-stu-id="abf5e-115">The `ConversationCollection` contains the conversation information that was collected from the last time this method was called.</span></span>
 
 </div>
 
