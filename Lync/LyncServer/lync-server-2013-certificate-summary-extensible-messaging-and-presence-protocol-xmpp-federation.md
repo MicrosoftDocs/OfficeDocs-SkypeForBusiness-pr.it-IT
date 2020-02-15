@@ -12,20 +12,20 @@ ms:contentKeyID: 49105661
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7af2c226397c5225fc26f6dbdf40d12a4bdb1ca0
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 13d2b80ed223f7779b406615806c1c00fd0fc860
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736626"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42031120"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="certificate-summary---extensible-messaging-and-presence-protocol-xmpp-federation-in-lync-server-2013"></a><span data-ttu-id="9e3fc-102">Riepilogo del certificato-federazione XMPP (Extensible Messaging and Presence Protocol) in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9e3fc-102">Certificate summary - Extensible messaging and presence protocol (XMPP) federation in Lync Server 2013</span></span>
+# <a name="certificate-summary---extensible-messaging-and-presence-protocol-xmpp-federation-in-lync-server-2013"></a><span data-ttu-id="cb04b-102">Riepilogo del certificato-federazione XMPP (Extensible Messaging and Presence Protocol) in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="cb04b-102">Certificate summary - Extensible messaging and presence protocol (XMPP) federation in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41736626"
 
 <span> </span>
 
-<span data-ttu-id="9e3fc-103">_**Argomento Ultima modifica:** 2012-12-23_</span><span class="sxs-lookup"><span data-stu-id="9e3fc-103">_**Topic Last Modified:** 2012-12-23_</span></span>
+<span data-ttu-id="cb04b-103">_**Ultimo argomento modificato:** 2012-12-23_</span><span class="sxs-lookup"><span data-stu-id="cb04b-103">_**Topic Last Modified:** 2012-12-23_</span></span>
 
-<span data-ttu-id="9e3fc-104">I requisiti di certificato per l'abilitazione e la creazione di comunicazioni con i partner del protocollo XMPP (Extensible Messaging and Presence Protocol) richiedono il record aggiuntivo dei domini XMPP.</span><span class="sxs-lookup"><span data-stu-id="9e3fc-104">Certificate requirements for enabling and establishing communications with extensible messaging and presence protocol (XMPP) partners require the additional record of your XMPP domains.</span></span> <span data-ttu-id="9e3fc-105">Il record incluso nel certificato come nome alternativo soggetto (SAN) sarà il dominio che può partecipare alle comunicazioni XMPP.</span><span class="sxs-lookup"><span data-stu-id="9e3fc-105">The record that is included on the certificate as a subject alternative name (SAN) will be the domain that can participate in XMPP communications.</span></span> <span data-ttu-id="9e3fc-106">Il dominio può essere il dominio a livello di radice (ad esempio contoso.com) se si vuole abilitare XMPP per l'intero dominio oppure i domini figlio selezionati, ad esempio corp.contoso.com, finance.contoso.com, se si Abilita XMPP per un sottoinsieme di utenti.</span><span class="sxs-lookup"><span data-stu-id="9e3fc-106">The domain can be the root-level domain (for example, contoso.com) if you want to enable XMPP for your entire domain, or can be selected child domains (for example, corp.contoso.com, finance.contoso.com) if you are enabling XMPP for a subset of users.</span></span>
+<span data-ttu-id="cb04b-p101">Tra i requisiti dei certificati per consentire e stabilire le comunicazioni con partner XMPP (Extensible Messaging and Presence Protocol) è previsto il record aggiuntivo dei domini XMPP. Il record incluso nel certificato come nome alternativo del soggetto (SAN) corrisponderà al dominio che può partecipare alle comunicazioni XMPP. Il dominio può essere a livello della radice (ad esempio, contoso.com) se si desidera abilitare XMPP per l'intero dominio oppure può corrispondere a domini figlio selezionati (ad esempio, corp.contoso.com, finance.contoso.com) se si desidera abilitare XMPP per un sottoinsieme di utenti.</span><span class="sxs-lookup"><span data-stu-id="cb04b-p101">Certificate requirements for enabling and establishing communications with extensible messaging and presence protocol (XMPP) partners require the additional record of your XMPP domains. The record that is included on the certificate as a subject alternative name (SAN) will be the domain that can participate in XMPP communications. The domain can be the root-level domain (for example, contoso.com) if you want to enable XMPP for your entire domain, or can be selected child domains (for example, corp.contoso.com, finance.contoso.com) if you are enabling XMPP for a subset of users.</span></span>
 
 <div>
 
-## <a name="certificate-summary-for-extensible-messaging-and-presence-protocol"></a><span data-ttu-id="9e3fc-107">Riepilogo del certificato per il protocollo di messaggistica e presenza estensibile</span><span class="sxs-lookup"><span data-stu-id="9e3fc-107">Certificate Summary for Extensible Messaging and Presence Protocol</span></span>
+## <a name="certificate-summary-for-extensible-messaging-and-presence-protocol"></a><span data-ttu-id="cb04b-107">Riepilogo certificati per XMPP (Extensible Messaging and Presence Protocol)</span><span class="sxs-lookup"><span data-stu-id="cb04b-107">Certificate Summary for Extensible Messaging and Presence Protocol</span></span>
 
 
 <table>
@@ -53,21 +53,21 @@ ms.locfileid: "41736626"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="9e3fc-108">Componente</span><span class="sxs-lookup"><span data-stu-id="9e3fc-108">Component</span></span></th>
-<th><span data-ttu-id="9e3fc-109">Nome oggetto</span><span class="sxs-lookup"><span data-stu-id="9e3fc-109">Subject name</span></span></th>
-<th><span data-ttu-id="9e3fc-110">Nomi alternativi oggetto (SAN)/Order</span><span class="sxs-lookup"><span data-stu-id="9e3fc-110">Subject alternative names (SAN)/Order</span></span></th>
-<th><span data-ttu-id="9e3fc-111">Commenti</span><span class="sxs-lookup"><span data-stu-id="9e3fc-111">Comments</span></span></th>
+<th><span data-ttu-id="cb04b-108">Componente</span><span class="sxs-lookup"><span data-stu-id="cb04b-108">Component</span></span></th>
+<th><span data-ttu-id="cb04b-109">Nome soggetto</span><span class="sxs-lookup"><span data-stu-id="cb04b-109">Subject name</span></span></th>
+<th><span data-ttu-id="cb04b-110">Ordine/voci nomi alternativi del soggetto (SAN)</span><span class="sxs-lookup"><span data-stu-id="cb04b-110">Subject alternative names (SAN)/Order</span></span></th>
+<th><span data-ttu-id="cb04b-111">Commenti</span><span class="sxs-lookup"><span data-stu-id="cb04b-111">Comments</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="9e3fc-112">Assegna a servizio Edge di Access di Edge Server o pool di Edge</span><span class="sxs-lookup"><span data-stu-id="9e3fc-112">Assign to Access Edge service of Edge Server or Edge pool</span></span></p></td>
-<td><p><span data-ttu-id="9e3fc-113">sip.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9e3fc-113">sip.contoso.com</span></span></p></td>
-<td><p><span data-ttu-id="9e3fc-114">webcon.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9e3fc-114">webcon.contoso.com</span></span></p>
-<p><span data-ttu-id="9e3fc-115">sip.contoso.com</span><span class="sxs-lookup"><span data-stu-id="9e3fc-115">sip.contoso.com</span></span></p>
-<p><span data-ttu-id="9e3fc-116">sip.fabrikam.com</span><span class="sxs-lookup"><span data-stu-id="9e3fc-116">sip.fabrikam.com</span></span></p>
-<p><span data-ttu-id="9e3fc-117">contoso.com</span><span class="sxs-lookup"><span data-stu-id="9e3fc-117">contoso.com</span></span></p></td>
-<td><p><span data-ttu-id="9e3fc-118">Le prime tre voci SAN sono le normali voci di SAN per un server perimetrale completo.</span><span class="sxs-lookup"><span data-stu-id="9e3fc-118">The first three SAN entries are the normal SAN entries for a full Edge Server.</span></span> <span data-ttu-id="9e3fc-119">Contoso.com è la voce necessaria per la Federazione con il partner XMPP a livello di dominio radice.</span><span class="sxs-lookup"><span data-stu-id="9e3fc-119">The contoso.com is the entry required for federation with the XMPP partner at the root domain level.</span></span> <span data-ttu-id="9e3fc-120">Questa voce consentirà XMPP per tutti i domini con il suffisso contoso.com.</span><span class="sxs-lookup"><span data-stu-id="9e3fc-120">This entry will allow XMPP for all domains with the suffix contoso.com.</span></span></p></td>
+<td><p><span data-ttu-id="cb04b-112">Assegnare al servizio Access Edge Server perimetrale o pool Edge</span><span class="sxs-lookup"><span data-stu-id="cb04b-112">Assign to Access Edge service of Edge Server or Edge pool</span></span></p></td>
+<td><p><span data-ttu-id="cb04b-113">sip.contoso.com</span><span class="sxs-lookup"><span data-stu-id="cb04b-113">sip.contoso.com</span></span></p></td>
+<td><p><span data-ttu-id="cb04b-114">webcon.contoso.com</span><span class="sxs-lookup"><span data-stu-id="cb04b-114">webcon.contoso.com</span></span></p>
+<p><span data-ttu-id="cb04b-115">sip.contoso.com</span><span class="sxs-lookup"><span data-stu-id="cb04b-115">sip.contoso.com</span></span></p>
+<p><span data-ttu-id="cb04b-116">sip.fabrikam.com</span><span class="sxs-lookup"><span data-stu-id="cb04b-116">sip.fabrikam.com</span></span></p>
+<p><span data-ttu-id="cb04b-117">contoso.com</span><span class="sxs-lookup"><span data-stu-id="cb04b-117">contoso.com</span></span></p></td>
+<td><p><span data-ttu-id="cb04b-118">Le prime tre voci di SAN sono le normali voci di SAN per un server perimetrale completo.</span><span class="sxs-lookup"><span data-stu-id="cb04b-118">The first three SAN entries are the normal SAN entries for a full Edge Server.</span></span> <span data-ttu-id="cb04b-119">La voce contoso.com è necessaria per la federazione con il partner XMPP a livello del dominio radice.</span><span class="sxs-lookup"><span data-stu-id="cb04b-119">The contoso.com is the entry required for federation with the XMPP partner at the root domain level.</span></span> <span data-ttu-id="cb04b-120">Questa voce consentirà XMPP per tutti i domini con il suffisso contoso.com.</span><span class="sxs-lookup"><span data-stu-id="cb04b-120">This entry will allow XMPP for all domains with the suffix contoso.com.</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -77,18 +77,18 @@ ms.locfileid: "41736626"
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="9e3fc-121">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="9e3fc-121">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cb04b-121">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="cb04b-121">See Also</span></span>
 
 
-[<span data-ttu-id="9e3fc-122">Esempio di configurazione XMPP in Lync Server 2013 - federazione di XMPP con Google Talk</span><span class="sxs-lookup"><span data-stu-id="9e3fc-122">Example XMPP configuration in Lync Server 2013 – XMPP federation with Google Talk</span></span>](lync-server-2013-example-xmpp-configuration-–-xmpp-federation-with-google-talk.md)  
+[<span data-ttu-id="cb04b-122">Esempio di configurazione XMPP in Lync Server 2013 – Federazione XMPP con Google Talk</span><span class="sxs-lookup"><span data-stu-id="cb04b-122">Example XMPP configuration in Lync Server 2013 – XMPP federation with Google Talk</span></span>](lync-server-2013-example-xmpp-configuration-–-xmpp-federation-with-google-talk.md)  
 
 
-[<span data-ttu-id="9e3fc-123">Pianificare i certificati dei server perimetrali in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9e3fc-123">Plan for Edge Server certificates in Lync Server 2013</span></span>](lync-server-2013-plan-for-edge-server-certificates.md)  
+[<span data-ttu-id="cb04b-123">Pianificare i certificati dei server perimetrali in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="cb04b-123">Plan for Edge Server certificates in Lync Server 2013</span></span>](lync-server-2013-plan-for-edge-server-certificates.md)  
 
 
-[<span data-ttu-id="9e3fc-124">Configurare i certificati perimetrali per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9e3fc-124">Set up Edge certificates for Lync Server 2013</span></span>](lync-server-2013-set-up-edge-certificates.md)  
-[<span data-ttu-id="9e3fc-125">Request-CsCertificate</span><span class="sxs-lookup"><span data-stu-id="9e3fc-125">Request-CsCertificate</span></span>](https://docs.microsoft.com/powershell/module/skype/Request-CsCertificate)  
-[<span data-ttu-id="9e3fc-126">Set-CsCertificate</span><span class="sxs-lookup"><span data-stu-id="9e3fc-126">Set-CsCertificate</span></span>](https://docs.microsoft.com/powershell/module/skype/Set-CsCertificate)  
+[<span data-ttu-id="cb04b-124">Configurare i certificati perimetrali per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="cb04b-124">Set up Edge certificates for Lync Server 2013</span></span>](lync-server-2013-set-up-edge-certificates.md)  
+[<span data-ttu-id="cb04b-125">Request-CsCertificate</span><span class="sxs-lookup"><span data-stu-id="cb04b-125">Request-CsCertificate</span></span>](https://docs.microsoft.com/powershell/module/skype/Request-CsCertificate)  
+[<span data-ttu-id="cb04b-126">Set-CsCertificate</span><span class="sxs-lookup"><span data-stu-id="cb04b-126">Set-CsCertificate</span></span>](https://docs.microsoft.com/powershell/module/skype/Set-CsCertificate)  
   
 
 </div>

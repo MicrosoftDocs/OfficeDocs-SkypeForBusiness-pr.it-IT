@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: creare criteri per la posizione'
+title: 'Lync Server 2013: creare criteri percorso'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185794
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 55c10244bb3a70f7218dc3967e7f4f134048024f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e7b815f533661fb553c7b9217f23b70f0027c559
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726316"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035782"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="create-location-policies-in-lync-server-2013"></a><span data-ttu-id="69c55-102">Creare criteri di posizione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="69c55-102">Create location policies in Lync Server 2013</span></span>
+# <a name="create-location-policies-in-lync-server-2013"></a><span data-ttu-id="d46cd-102">Creare criteri percorso in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d46cd-102">Create location policies in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41726316"
 
 <span> </span>
 
-<span data-ttu-id="69c55-103">_**Argomento Ultima modifica:** 2012-09-11_</span><span class="sxs-lookup"><span data-stu-id="69c55-103">_**Topic Last Modified:** 2012-09-11_</span></span>
+<span data-ttu-id="d46cd-103">_**Ultimo argomento modificato:** 2012-09-11_</span><span class="sxs-lookup"><span data-stu-id="d46cd-103">_**Topic Last Modified:** 2012-09-11_</span></span>
 
-<span data-ttu-id="69c55-104">Lync Server usa un criterio di posizione per abilitare i client Lync per il E9-1-1 durante la registrazione client.</span><span class="sxs-lookup"><span data-stu-id="69c55-104">Lync Server uses a location policy to enable Lync clients for E9-1-1 during client registration.</span></span> <span data-ttu-id="69c55-105">Un criterio di posizione contiene le impostazioni che definiscono il modo in cui verrà implementato E9-1-1.</span><span class="sxs-lookup"><span data-stu-id="69c55-105">A location policy contains the settings that define how E9-1-1 will be implemented.</span></span>
+<span data-ttu-id="d46cd-104">Lync Server utilizza un criterio percorso per abilitare i client Lync per il servizio E9-1-1 durante la registrazione client.</span><span class="sxs-lookup"><span data-stu-id="d46cd-104">Lync Server uses a location policy to enable Lync clients for E9-1-1 during client registration.</span></span> <span data-ttu-id="d46cd-105">I criteri percorso contengono le impostazioni che definiscono la modalità di implementazione di E9-1-1.</span><span class="sxs-lookup"><span data-stu-id="d46cd-105">A location policy contains the settings that define how E9-1-1 will be implemented.</span></span>
 
-<span data-ttu-id="69c55-106">È possibile modificare i criteri di posizione globale e creare nuovi criteri di posizione contrassegnati.</span><span class="sxs-lookup"><span data-stu-id="69c55-106">You can edit the global location policy and create new tagged location policies.</span></span> <span data-ttu-id="69c55-107">Un client ottiene un criterio globale quando non si trova all'interno di una subnet con un criterio di posizione associato o quando al client non è stato assegnato direttamente un criterio di posizione.</span><span class="sxs-lookup"><span data-stu-id="69c55-107">A client obtains a global policy when it is not located within a subnet with an associated location policy, or when the client has not been directly assigned a location policy.</span></span> <span data-ttu-id="69c55-108">I criteri contrassegnati vengono assegnati a subnet o utenti.</span><span class="sxs-lookup"><span data-stu-id="69c55-108">Tagged policies are assigned to subnets or users.</span></span>
+<span data-ttu-id="d46cd-p102">È possibile modificare i criteri percorso globali e creare nuovi criteri percorso contrassegnati. Un client ottiene criteri globali quando non si trova in una subnet con criteri percorso associati oppure quando non è stato assegnato direttamente a criteri percorso. I criteri contrassegnati vengono assegnati a subnet o a utenti.</span><span class="sxs-lookup"><span data-stu-id="d46cd-p102">You can edit the global location policy and create new tagged location policies. A client obtains a global policy when it is not located within a subnet with an associated location policy, or when the client has not been directly assigned a location policy. Tagged policies are assigned to subnets or users.</span></span>
 
-<span data-ttu-id="69c55-109">Per creare un criterio di posizione, è necessario usare un account che sia membro del gruppo RTCUniversalServerAdmins oppure sia un membro del ruolo amministrativo di CsVoiceAdministrator o disponga di autorizzazioni e diritti di amministratore equivalenti.</span><span class="sxs-lookup"><span data-stu-id="69c55-109">To create a location policy, you must use an account that is a member of the RTCUniversalServerAdmins group, or is a member of the CsVoiceAdministrator administrative role, or has equivalent administrator rights and permissions.</span></span>
+<span data-ttu-id="d46cd-109">Per creare criteri percorso, è necessario utilizzare un account membro del gruppo RTCUniversalServerAdmins o del ruolo amministrativo CsVoiceAdministrator oppure che disponga di equivalenti diritti e autorizzazioni di amministratore.</span><span class="sxs-lookup"><span data-stu-id="d46cd-109">To create a location policy, you must use an account that is a member of the RTCUniversalServerAdmins group, or is a member of the CsVoiceAdministrator administrative role, or has equivalent administrator rights and permissions.</span></span>
 
-<span data-ttu-id="69c55-110">Per una descrizione completa dei criteri di posizione, vedere [definizione dei criteri di posizione per Lync Server 2013](lync-server-2013-defining-the-location-policy.md).</span><span class="sxs-lookup"><span data-stu-id="69c55-110">For a complete description of Location policies, see [Defining the location policy for Lync Server 2013](lync-server-2013-defining-the-location-policy.md).</span></span> <span data-ttu-id="69c55-111">I cmdlet in questa procedura usano i criteri di posizione definiti con i valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="69c55-111">Cmdlets in this procedure use a location policy defined using the following values:</span></span>
+<span data-ttu-id="d46cd-110">Per una descrizione completa dei criteri percorso, vedere [define the location policy for Lync Server 2013](lync-server-2013-defining-the-location-policy.md).</span><span class="sxs-lookup"><span data-stu-id="d46cd-110">For a complete description of Location policies, see [Defining the location policy for Lync Server 2013](lync-server-2013-defining-the-location-policy.md).</span></span> <span data-ttu-id="d46cd-111">I cmdlet di questa procedura utilizzano criteri percorso definiti con i valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="d46cd-111">Cmdlets in this procedure use a location policy defined using the following values:</span></span>
 
 
 <table>
@@ -53,95 +53,95 @@ ms.locfileid: "41726316"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="69c55-112">Elemento</span><span class="sxs-lookup"><span data-stu-id="69c55-112">Element</span></span></th>
-<th><span data-ttu-id="69c55-113">Valore</span><span class="sxs-lookup"><span data-stu-id="69c55-113">Value</span></span></th>
+<th><span data-ttu-id="d46cd-112">Elemento</span><span class="sxs-lookup"><span data-stu-id="d46cd-112">Element</span></span></th>
+<th><span data-ttu-id="d46cd-113">Valore</span><span class="sxs-lookup"><span data-stu-id="d46cd-113">Value</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="69c55-114">EnhancedEmergencyServicesEnabled</span><span class="sxs-lookup"><span data-stu-id="69c55-114">EnhancedEmergencyServicesEnabled</span></span></p></td>
-<td><p><span data-ttu-id="69c55-115"><strong>True</strong></span><span class="sxs-lookup"><span data-stu-id="69c55-115"><strong>True</strong></span></span></p></td>
+<td><p><span data-ttu-id="d46cd-114">EnhancedEmergencyServicesEnabled</span><span class="sxs-lookup"><span data-stu-id="d46cd-114">EnhancedEmergencyServicesEnabled</span></span></p></td>
+<td><p><span data-ttu-id="d46cd-115"><strong>True</strong></span><span class="sxs-lookup"><span data-stu-id="d46cd-115"><strong>True</strong></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="69c55-116">LocationRequired</span><span class="sxs-lookup"><span data-stu-id="69c55-116">LocationRequired</span></span></p></td>
-<td><p><span data-ttu-id="69c55-117"><strong>Dichiarazione di non responsabilità</strong></span><span class="sxs-lookup"><span data-stu-id="69c55-117"><strong>Disclaimer</strong></span></span></p></td>
+<td><p><span data-ttu-id="d46cd-116">LocationRequired</span><span class="sxs-lookup"><span data-stu-id="d46cd-116">LocationRequired</span></span></p></td>
+<td><p><span data-ttu-id="d46cd-117"><strong>Dichiarazione di non responsabilità</strong></span><span class="sxs-lookup"><span data-stu-id="d46cd-117"><strong>Disclaimer</strong></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="69c55-118">EnhancedEmergencyServiceDisclaimer</span><span class="sxs-lookup"><span data-stu-id="69c55-118">EnhancedEmergencyServiceDisclaimer</span></span></p></td>
-<td><p><span data-ttu-id="69c55-119">I criteri aziendali richiedono l'impostazione di una posizione.</span><span class="sxs-lookup"><span data-stu-id="69c55-119">Your company policy requires you to set a location.</span></span> <span data-ttu-id="69c55-120">Se non si imposta una posizione, i servizi di emergenza non saranno in grado di individuare l'utente in caso di emergenza.</span><span class="sxs-lookup"><span data-stu-id="69c55-120">If you do not set a location, emergency services will not be able to locate you in an emergency.</span></span> <span data-ttu-id="69c55-121">Impostare una posizione.</span><span class="sxs-lookup"><span data-stu-id="69c55-121">Please set a location.</span></span></p></td>
+<td><p><span data-ttu-id="d46cd-118">EnhancedEmergencyServiceDisclaimer</span><span class="sxs-lookup"><span data-stu-id="d46cd-118">EnhancedEmergencyServiceDisclaimer</span></span></p></td>
+<td><p><span data-ttu-id="d46cd-p104">È necessario impostare un percorso per il criterio aziendale. Se non si imposta un percorso, in caso di emergenza non sarà possibile essere individuati dai servizi di emergenza. Impostare un percorso.</span><span class="sxs-lookup"><span data-stu-id="d46cd-p104">Your company policy requires you to set a location. If you do not set a location, emergency services will not be able to locate you in an emergency. Please set a location.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="69c55-122">UseLocationForE911Only</span><span class="sxs-lookup"><span data-stu-id="69c55-122">UseLocationForE911Only</span></span></p></td>
-<td><p><span data-ttu-id="69c55-123"><strong>False</strong></span><span class="sxs-lookup"><span data-stu-id="69c55-123"><strong>False</strong></span></span></p></td>
+<td><p><span data-ttu-id="d46cd-122">UseLocationForE911Only</span><span class="sxs-lookup"><span data-stu-id="d46cd-122">UseLocationForE911Only</span></span></p></td>
+<td><p><span data-ttu-id="d46cd-123"><strong>False</strong></span><span class="sxs-lookup"><span data-stu-id="d46cd-123"><strong>False</strong></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="69c55-124">PstnUsage</span><span class="sxs-lookup"><span data-stu-id="69c55-124">PstnUsage</span></span></p></td>
-<td><p><span data-ttu-id="69c55-125"><strong>EmergencyUsage</strong></span><span class="sxs-lookup"><span data-stu-id="69c55-125"><strong>EmergencyUsage</strong></span></span></p></td>
+<td><p><span data-ttu-id="d46cd-124">PstnUsage</span><span class="sxs-lookup"><span data-stu-id="d46cd-124">PstnUsage</span></span></p></td>
+<td><p><span data-ttu-id="d46cd-125"><strong>EmergencyUsage</strong></span><span class="sxs-lookup"><span data-stu-id="d46cd-125"><strong>EmergencyUsage</strong></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="69c55-126">EmergencyDialString</span><span class="sxs-lookup"><span data-stu-id="69c55-126">EmergencyDialString</span></span></p></td>
-<td><p><span data-ttu-id="69c55-127"><strong>911</strong></span><span class="sxs-lookup"><span data-stu-id="69c55-127"><strong>911</strong></span></span></p></td>
+<td><p><span data-ttu-id="d46cd-126">EmergencyDialString</span><span class="sxs-lookup"><span data-stu-id="d46cd-126">EmergencyDialString</span></span></p></td>
+<td><p><span data-ttu-id="d46cd-127"><strong>911</strong></span><span class="sxs-lookup"><span data-stu-id="d46cd-127"><strong>911</strong></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="69c55-128">EmergencyDialMask</span><span class="sxs-lookup"><span data-stu-id="69c55-128">EmergencyDialMask</span></span></p></td>
-<td><p><span data-ttu-id="69c55-129"><strong>112</strong></span><span class="sxs-lookup"><span data-stu-id="69c55-129"><strong>112</strong></span></span></p></td>
+<td><p><span data-ttu-id="d46cd-128">EmergencyDialMask</span><span class="sxs-lookup"><span data-stu-id="d46cd-128">EmergencyDialMask</span></span></p></td>
+<td><p><span data-ttu-id="d46cd-129"><strong>112</strong></span><span class="sxs-lookup"><span data-stu-id="d46cd-129"><strong>112</strong></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="69c55-130">NotificationUri</span><span class="sxs-lookup"><span data-stu-id="69c55-130">NotificationUri</span></span></p></td>
-<td><p><span data-ttu-id="69c55-131"><strong>sip:security@litwareinc.com</strong></span><span class="sxs-lookup"><span data-stu-id="69c55-131"><strong>sip:security@litwareinc.com</strong></span></span></p></td>
+<td><p><span data-ttu-id="d46cd-130">NotificationUri</span><span class="sxs-lookup"><span data-stu-id="d46cd-130">NotificationUri</span></span></p></td>
+<td><p><span data-ttu-id="d46cd-131"><strong>sip:security@litwareinc.com</strong></span><span class="sxs-lookup"><span data-stu-id="d46cd-131"><strong>sip:security@litwareinc.com</strong></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="69c55-132">ConferenceUri</span><span class="sxs-lookup"><span data-stu-id="69c55-132">ConferenceUri</span></span></p></td>
-<td><p><span data-ttu-id="69c55-133"><strong>sip:+14255550123@litwareinc.com</strong></span><span class="sxs-lookup"><span data-stu-id="69c55-133"><strong>sip:+14255550123@litwareinc.com</strong></span></span></p></td>
+<td><p><span data-ttu-id="d46cd-132">ConferenceUri</span><span class="sxs-lookup"><span data-stu-id="d46cd-132">ConferenceUri</span></span></p></td>
+<td><p><span data-ttu-id="d46cd-133"><strong>sip:+14255550123@litwareinc.com</strong></span><span class="sxs-lookup"><span data-stu-id="d46cd-133"><strong>sip:+14255550123@litwareinc.com</strong></span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="69c55-134">ConferenceMode</span><span class="sxs-lookup"><span data-stu-id="69c55-134">ConferenceMode</span></span></p></td>
-<td><p><span data-ttu-id="69c55-135"><strong>TwoWay</strong></span><span class="sxs-lookup"><span data-stu-id="69c55-135"><strong>twoway</strong></span></span></p></td>
+<td><p><span data-ttu-id="d46cd-134">ConferenceMode</span><span class="sxs-lookup"><span data-stu-id="d46cd-134">ConferenceMode</span></span></p></td>
+<td><p><span data-ttu-id="d46cd-135"><strong>TwoWay</strong></span><span class="sxs-lookup"><span data-stu-id="d46cd-135"><strong>twoway</strong></span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="69c55-136">LocationRefreshInterval</span><span class="sxs-lookup"><span data-stu-id="69c55-136">LocationRefreshInterval</span></span></p></td>
-<td><p><span data-ttu-id="69c55-137"><strong>2</strong></span><span class="sxs-lookup"><span data-stu-id="69c55-137"><strong>2</strong></span></span></p></td>
+<td><p><span data-ttu-id="d46cd-136">LocationRefreshInterval</span><span class="sxs-lookup"><span data-stu-id="d46cd-136">LocationRefreshInterval</span></span></p></td>
+<td><p><span data-ttu-id="d46cd-137"><strong>2</strong></span><span class="sxs-lookup"><span data-stu-id="d46cd-137"><strong>2</strong></span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="69c55-138">Per informazioni dettagliate sull'uso dei criteri di posizione, vedere la documentazione di Lync Server Management Shell per i cmdlet seguenti:</span><span class="sxs-lookup"><span data-stu-id="69c55-138">For details about working with location policies, see the Lync Server Management Shell documentation for the following cmdlets:</span></span>
+<span data-ttu-id="d46cd-138">Per informazioni dettagliate sull'utilizzo dei criteri percorso, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:</span><span class="sxs-lookup"><span data-stu-id="d46cd-138">For details about working with location policies, see the Lync Server Management Shell documentation for the following cmdlets:</span></span>
 
-  - <span data-ttu-id="69c55-139">New-CsLocationPolicy</span><span class="sxs-lookup"><span data-stu-id="69c55-139">New-CsLocationPolicy</span></span>
+  - <span data-ttu-id="d46cd-139">New-CsLocationPolicy</span><span class="sxs-lookup"><span data-stu-id="d46cd-139">New-CsLocationPolicy</span></span>
 
-  - <span data-ttu-id="69c55-140">Get-CsLocationPolicy</span><span class="sxs-lookup"><span data-stu-id="69c55-140">Get-CsLocationPolicy</span></span>
+  - <span data-ttu-id="d46cd-140">Get-CsLocationPolicy</span><span class="sxs-lookup"><span data-stu-id="d46cd-140">Get-CsLocationPolicy</span></span>
 
-  - <span data-ttu-id="69c55-141">Set-CsLocationPolicy</span><span class="sxs-lookup"><span data-stu-id="69c55-141">Set-CsLocationPolicy</span></span>
+  - <span data-ttu-id="d46cd-141">Set-CsLocationPolicy</span><span class="sxs-lookup"><span data-stu-id="d46cd-141">Set-CsLocationPolicy</span></span>
 
-  - <span data-ttu-id="69c55-142">Remove-CsLocationPolicy</span><span class="sxs-lookup"><span data-stu-id="69c55-142">Remove-CsLocationPolicy</span></span>
+  - <span data-ttu-id="d46cd-142">Remove-CsLocationPolicy</span><span class="sxs-lookup"><span data-stu-id="d46cd-142">Remove-CsLocationPolicy</span></span>
 
-  - <span data-ttu-id="69c55-143">Grant-CsLocationPolicy</span><span class="sxs-lookup"><span data-stu-id="69c55-143">Grant-CsLocationPolicy</span></span>
+  - <span data-ttu-id="d46cd-143">Grant-CsLocationPolicy</span><span class="sxs-lookup"><span data-stu-id="d46cd-143">Grant-CsLocationPolicy</span></span>
 
 <div>
 
-## <a name="to-create-location-policies"></a><span data-ttu-id="69c55-144">Per creare criteri di posizione</span><span class="sxs-lookup"><span data-stu-id="69c55-144">To create location policies</span></span>
+## <a name="to-create-location-policies"></a><span data-ttu-id="d46cd-144">Per creare criteri percorso</span><span class="sxs-lookup"><span data-stu-id="d46cd-144">To create location policies</span></span>
 
-1.  <span data-ttu-id="69c55-145">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="69c55-145">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
+1.  <span data-ttu-id="d46cd-145">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="d46cd-145">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="69c55-146">CsLocationPolicy non riesce se l'impostazione per <STRONG>PstnUsage</STRONG> non è già presente nell'elenco globale di PstnUsages.</span><span class="sxs-lookup"><span data-stu-id="69c55-146">CsLocationPolicy will fail if the setting for <STRONG>PstnUsage</STRONG> is not already in the Global list of PstnUsages.</span></span>
+    > <span data-ttu-id="d46cd-146">CsLocationPolicy non verrà eseguito correttamente se l'impostazione di <STRONG>PstnUsage</STRONG> non è già stata inserita nell'elenco Global di PstnUsages.</span><span class="sxs-lookup"><span data-stu-id="d46cd-146">CsLocationPolicy will fail if the setting for <STRONG>PstnUsage</STRONG> is not already in the Global list of PstnUsages.</span></span>
 
     
     </div>
 
-2.  <span data-ttu-id="69c55-147">Facoltativamente, eseguire il cmdlet seguente per modificare il criterio della posizione globale:</span><span class="sxs-lookup"><span data-stu-id="69c55-147">Optionally, run the following cmdlet to edit the global Location Policy:</span></span>
+2.  <span data-ttu-id="d46cd-147">Facoltativamente, eseguire il cmdlet seguente per modificare i criteri percorso globali:</span><span class="sxs-lookup"><span data-stu-id="d46cd-147">Optionally, run the following cmdlet to edit the global Location Policy:</span></span>
     
         Set-CsLocationPolicy -Identity Global -EnhancedEmergencyServicesEnabled $true -LocationRequired "disclaimer" -EnhancedEmergencyServiceDisclaimer "Your company policy requires you to set a location. If you do not set a location emergency services will not be able to locate you in an emergency. Please set a location." -PstnUsage "emergencyUsage" -EmergencyDialString "911" -ConferenceMode "twoway" -ConferenceUri "sip:+14255550123@litwareinc.com" -EmergencyDialMask "112" NotificationUri "sip:security@litwareinc.com" -UseLocationForE911Only $true -LocationRefreshInterval 2
 
-3.  <span data-ttu-id="69c55-148">Eseguire la procedura seguente per creare criteri di posizione contrassegnati.</span><span class="sxs-lookup"><span data-stu-id="69c55-148">Run the following to create a tagged Location Policy.</span></span>
+3.  <span data-ttu-id="d46cd-148">Eseguire il cmdlet seguente per creare criteri percorso contrassegnati.</span><span class="sxs-lookup"><span data-stu-id="d46cd-148">Run the following to create a tagged Location Policy.</span></span>
     
         New-CsLocationPolicy -Identity Tag:Redmond - EnhancedEmergencyServicesEnabled $true -LocationRequired "disclaimer" -EnhancedEmergencyServiceDisclaimer "Your company policy requires you to set a location. If you do not set a location emergency services will not be able to locate you in an emergency. Please set a location." -UseLocationForE911Only $false -PstnUsage "EmergencyUsage" -EmergencyDialString "911" -EmergencyDialMask "112" -NotificationUri "sip:security@litwareinc.com" -ConferenceUri "sip:+14255550123@litwareinc.com" -ConferenceMode "twoway" -LocationRefreshInterval 2
 
-4.  <span data-ttu-id="69c55-149">Eseguire il cmdlet seguente per applicare il criterio di posizione con tag creato nel passaggio 3 a un criterio utente.</span><span class="sxs-lookup"><span data-stu-id="69c55-149">Run the following cmdlet to apply the tagged Location Policy created in step 3 to a user policy.</span></span>
+4.  <span data-ttu-id="d46cd-149">Eseguire il cmdlet seguente per applicare i criteri percorso creati nel passaggio 3 ai criteri di un utente.</span><span class="sxs-lookup"><span data-stu-id="d46cd-149">Run the following cmdlet to apply the tagged Location Policy created in step 3 to a user policy.</span></span>
     
         (Get-CsUser | where { $_.Name -match "UserName" }) | Grant-CsLocationPolicy -PolicyName Redmond
 

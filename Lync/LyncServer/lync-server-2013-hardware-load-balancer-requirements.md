@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Requisiti relativi al servizio di bilanciamento del carico hardware'
+title: Requisiti per il bilanciamento del carico hardware di Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49287208
 ms.date: 05/11/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 85ed4195d80ecc755faea74ddedb790c9f41ebfb
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c89c600c822bc4e830bf60ed8131f747172018e2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41727906"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030319"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="hardware-load-balancer-requirements-for-lync-server-2013"></a><span data-ttu-id="bf60f-102">Requisiti relativi al servizio di bilanciamento del carico hardware per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="bf60f-102">Hardware load balancer requirements for Lync Server 2013</span></span>
+# <a name="hardware-load-balancer-requirements-for-lync-server-2013"></a><span data-ttu-id="ba45f-102">Requisiti per il bilanciamento del carico hardware per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ba45f-102">Hardware load balancer requirements for Lync Server 2013</span></span>
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41727906"
 
 <span> </span>
 
-<span data-ttu-id="bf60f-103">_**Argomento Ultima modifica:** 2015-05-11_</span><span class="sxs-lookup"><span data-stu-id="bf60f-103">_**Topic Last Modified:** 2015-05-11_</span></span>
+<span data-ttu-id="ba45f-103">_**Ultimo argomento modificato:** 2015-05-11_</span><span class="sxs-lookup"><span data-stu-id="ba45f-103">_**Topic Last Modified:** 2015-05-11_</span></span>
 
-<span data-ttu-id="bf60f-104">La topologia di Edge consolidato di Lync Server 2013 è ottimizzata per il bilanciamento del carico DNS per le nuove distribuzioni federative principalmente con altre organizzazioni che usano Lync Server.</span><span class="sxs-lookup"><span data-stu-id="bf60f-104">The Lync Server 2013 scaled consolidated Edge topology is optimized for DNS load balancing for new deployments federating primarily with other organizations using Lync Server.</span></span> <span data-ttu-id="bf60f-105">Se è necessaria una disponibilità elevata per uno degli scenari seguenti, è necessario usare un bilanciamento del carico hardware nei pool di Edge Server per gli elementi seguenti:</span><span class="sxs-lookup"><span data-stu-id="bf60f-105">If high availability is required for any of the following scenarios, a hardware load balancer must be used on Edge Server pools for the following:</span></span>
+<span data-ttu-id="ba45f-104">La topologia perimetrale consolidata di Lync Server 2013 è ottimizzata per il bilanciamento del carico DNS per le nuove distribuzioni che si riferiscono principalmente ad altre organizzazioni che utilizzano Lync Server.</span><span class="sxs-lookup"><span data-stu-id="ba45f-104">The Lync Server 2013 scaled consolidated Edge topology is optimized for DNS load balancing for new deployments federating primarily with other organizations using Lync Server.</span></span> <span data-ttu-id="ba45f-105">Se è richiesta la disponibilità elevata per uno degli scenari seguenti, sarà necessario utilizzare un dispositivo di bilanciamento del carico hardware nei pool di server perimetrali nei casi seguenti:</span><span class="sxs-lookup"><span data-stu-id="ba45f-105">If high availability is required for any of the following scenarios, a hardware load balancer must be used on Edge Server pools for the following:</span></span>
 
-  - <span data-ttu-id="bf60f-106">Federazione con organizzazioni che usano Office Communications Server 2007 R2 o Office Communications Server 2007</span><span class="sxs-lookup"><span data-stu-id="bf60f-106">Federation with organizations using Office Communications Server 2007 R2 or Office Communications Server 2007</span></span>
+  - <span data-ttu-id="ba45f-106">Federazione con organizzazioni che utilizzano Office Communications Server 2007 R2 o Office Communications Server 2007</span><span class="sxs-lookup"><span data-stu-id="ba45f-106">Federation with organizations using Office Communications Server 2007 R2 or Office Communications Server 2007</span></span>
 
-  - <span data-ttu-id="bf60f-107">Messaggistica unificata di Exchange per utenti remoti con messaggistica unificata di Exchange prima di Exchange 2010 con SP1</span><span class="sxs-lookup"><span data-stu-id="bf60f-107">Exchange UM for remote users using Exchange UM prior to Exchange 2010 with SP1</span></span>
+  - <span data-ttu-id="ba45f-107">Messaggistica unificata di Exchange per gli utenti remoti tramite messaggistica unificata di Exchange prima di Exchange 2010 con SP1</span><span class="sxs-lookup"><span data-stu-id="ba45f-107">Exchange UM for remote users using Exchange UM prior to Exchange 2010 with SP1</span></span>
 
-  - <span data-ttu-id="bf60f-108">Connettività agli utenti di messaggistica istantanea pubblica</span><span class="sxs-lookup"><span data-stu-id="bf60f-108">Connectivity to public IM users</span></span>
+  - <span data-ttu-id="ba45f-108">Connettività con utenti di messaggistica istantanea pubblica</span><span class="sxs-lookup"><span data-stu-id="ba45f-108">Connectivity to public IM users</span></span>
 
 <div>
 
 
 > [!IMPORTANT]  
-> <span data-ttu-id="bf60f-109">L'uso del bilanciamento del carico DNS su un'interfaccia e il bilanciamento del carico hardware dall'altro non è supportato.</span><span class="sxs-lookup"><span data-stu-id="bf60f-109">Using DNS load balancing on one interface and hardware load balancing on the other is not supported.</span></span> <span data-ttu-id="bf60f-110">È necessario usare il bilanciamento del carico hardware per entrambe le interfacce o il bilanciamento del carico DNS per entrambi.</span><span class="sxs-lookup"><span data-stu-id="bf60f-110">You must use hardware load balancing for both interfaces or DNS load balancing for both.</span></span>
+> <span data-ttu-id="ba45f-p102">Non è possibile usare il bilanciamento del carico DNS in un'interfaccia e il bilanciamento del carico hardware in un'altra. È necessario usare lo stesso tipo di bilanciamento del carico per entrambe le interfacce, in quanto non è supportata una combinazione dei due tipi.</span><span class="sxs-lookup"><span data-stu-id="ba45f-p102">Using DNS load balancing on one interface and hardware load balancing on the other is not supported. You must use hardware load balancing for both interfaces or DNS load balancing for both.</span></span>
 
 
 
@@ -59,7 +59,7 @@ ms.locfileid: "41727906"
 
 
 > [!NOTE]  
-> <span data-ttu-id="bf60f-111">Se si usa un sistema di bilanciamento del carico hardware, il servizio di bilanciamento del carico distribuito per le connessioni con la rete interna deve essere configurato per il bilanciamento del carico solo del traffico verso i server che esegue Access Edge e il servizio A/V Edge.</span><span class="sxs-lookup"><span data-stu-id="bf60f-111">If you are using a hardware load balancer, the load balancer deployed for connections with the internal network must be configured to load balance only the traffic to servers running the Access Edge service and the A/V Edge service.</span></span> <span data-ttu-id="bf60f-112">Non può caricare il bilanciamento del traffico verso il servizio Web Conferencing Edge interno o il servizio proxy XMPP interno.</span><span class="sxs-lookup"><span data-stu-id="bf60f-112">It cannot load balance the traffic to the internal Web Conferencing Edge service or the internal XMPP Proxy service.</span></span>
+> <span data-ttu-id="ba45f-p103">Se si usa un servizio di bilanciamento del carico hardware, il bilanciamento del carico distribuito per le connessioni con la rete interna deve essere configurato per bilanciare il carico solo del traffico verso i server che eseguono i servizi Access Edge e A/V Edge. Non è possibile bilanciare il carico del traffico verso il servizio Web Conferencing Edge interno o il servizio del proxy XMPP interno.</span><span class="sxs-lookup"><span data-stu-id="ba45f-p103">If you are using a hardware load balancer, the load balancer deployed for connections with the internal network must be configured to load balance only the traffic to servers running the Access Edge service and the A/V Edge service. It cannot load balance the traffic to the internal Web Conferencing Edge service or the internal XMPP Proxy service.</span></span>
 
 
 
@@ -69,99 +69,99 @@ ms.locfileid: "41727906"
 
 
 > [!NOTE]  
-> <span data-ttu-id="bf60f-113">La NAT DSR (Direct Server Return) non è supportata con Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="bf60f-113">The direct server return (DSR) NAT is not supported with Lync Server 2013.</span></span>
+> <span data-ttu-id="ba45f-113">Il protocollo DSR (Direct Server Return) NAT non è supportato con Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="ba45f-113">The direct server return (DSR) NAT is not supported with Lync Server 2013.</span></span>
 
 
 
 </div>
 
-<span data-ttu-id="bf60f-114">Per determinare se il dispositivo di bilanciamento del carico hardware supporta le funzionalità necessarie per Lync Server 2013, vedere "partner di bilanciamento del carico di Lync Server [http://go.microsoft.com/fwlink/p/?linkId=202452](http://go.microsoft.com/fwlink/p/?linkid=202452)2010".</span><span class="sxs-lookup"><span data-stu-id="bf60f-114">To determine whether your hardware load balancer supports the necessary features required by Lync Server 2013, see "Lync Server 2010 Load Balancer Partners" at [http://go.microsoft.com/fwlink/p/?linkId=202452](http://go.microsoft.com/fwlink/p/?linkid=202452).</span></span>
+<span data-ttu-id="ba45f-114">Per determinare se il dispositivo di bilanciamento del carico hardware supporta le funzionalità necessarie per Lync Server 2013, vedere la sezione relativa ai partner di bilanciamento del carico [http://go.microsoft.com/fwlink/p/?linkId=202452](http://go.microsoft.com/fwlink/p/?linkid=202452)di lync Server 2010 all'indirizzo.</span><span class="sxs-lookup"><span data-stu-id="ba45f-114">To determine whether your hardware load balancer supports the necessary features required by Lync Server 2013, see "Lync Server 2010 Load Balancer Partners" at [http://go.microsoft.com/fwlink/p/?linkId=202452](http://go.microsoft.com/fwlink/p/?linkid=202452).</span></span>
 
 <div>
 
-## <a name="hardware-load-balancer-requirements-for-edge-servers-running-the-av-edge-service"></a><span data-ttu-id="bf60f-115">Requisiti di bilanciamento del carico hardware per i server perimetrali che utilizzano il servizio A/V Edge</span><span class="sxs-lookup"><span data-stu-id="bf60f-115">Hardware Load Balancer Requirements for Edge Servers Running the A/V Edge Service</span></span>
+## <a name="hardware-load-balancer-requirements-for-edge-servers-running-the-av-edge-service"></a><span data-ttu-id="ba45f-115">Requisiti dei servizi di bilanciamento del carico hardware per i server perimetrali che eseguono il servizio A/V Edge</span><span class="sxs-lookup"><span data-stu-id="ba45f-115">Hardware Load Balancer Requirements for Edge Servers Running the A/V Edge Service</span></span>
 
-<span data-ttu-id="bf60f-116">Di seguito sono riportati i requisiti di bilanciamento del carico hardware per Edge Server che esegue il servizio A/V Edge:</span><span class="sxs-lookup"><span data-stu-id="bf60f-116">Following are the hardware load balancer requirements for Edge Servers running the A/V Edge service:</span></span>
+<span data-ttu-id="ba45f-116">Di seguito sono riportati i requisiti per il bilanciamento del carico hardware per i server perimetrali che eseguono il servizio A/V Edge:</span><span class="sxs-lookup"><span data-stu-id="ba45f-116">Following are the hardware load balancer requirements for Edge Servers running the A/V Edge service:</span></span>
 
-  - <span data-ttu-id="bf60f-117">Disattivare TCP nagling per le porte interne ed esterne 443.</span><span class="sxs-lookup"><span data-stu-id="bf60f-117">Turn off TCP nagling for both internal and external ports 443.</span></span> <span data-ttu-id="bf60f-118">Nagling è il processo di combinazione di diversi piccoli pacchetti in un singolo pacchetto più grande per una trasmissione più efficiente.</span><span class="sxs-lookup"><span data-stu-id="bf60f-118">Nagling is the process of combining several small packets into a single, larger packet for more efficient transmission.</span></span>
+  - <span data-ttu-id="ba45f-p104">Disattivare il nagling TCP per le porte 443 interne ed esterne. Per nagling si intende il processo di combinazione di più pacchetti di piccole dimensioni in un singolo pacchetto di dimensioni maggiori per una trasmissione più efficiente.</span><span class="sxs-lookup"><span data-stu-id="ba45f-p104">Turn off TCP nagling for both internal and external ports 443. Nagling is the process of combining several small packets into a single, larger packet for more efficient transmission.</span></span>
 
-  - <span data-ttu-id="bf60f-119">Disattivare TCP nagling per l'intervallo di porte esterne 50.000-59.999.</span><span class="sxs-lookup"><span data-stu-id="bf60f-119">Turn off TCP nagling for external port range 50,000 – 59,999.</span></span>
+  - <span data-ttu-id="ba45f-119">Disattivare il nagling TCP per l'intervallo di porte esterne compreso tra 50.000 e 59.999.</span><span class="sxs-lookup"><span data-stu-id="ba45f-119">Turn off TCP nagling for external port range 50,000 – 59,999.</span></span>
 
-  - <span data-ttu-id="bf60f-120">Non usare NAT sul firewall interno o esterno.</span><span class="sxs-lookup"><span data-stu-id="bf60f-120">Do not use NAT on the internal or external firewall.</span></span>
+  - <span data-ttu-id="ba45f-120">Non utilizzare NAT nel firewall interno o esterno.</span><span class="sxs-lookup"><span data-stu-id="ba45f-120">Do not use NAT on the internal or external firewall.</span></span>
 
-  - <span data-ttu-id="bf60f-121">L'interfaccia interna del bordo deve essere in una rete diversa rispetto all'interfaccia esterna del server perimetrale e il routing tra di essi deve essere disabilitato.</span><span class="sxs-lookup"><span data-stu-id="bf60f-121">The edge internal interface must be on a different network than the Edge Server external interface and routing between them must be disabled.</span></span>
+  - <span data-ttu-id="ba45f-121">L'interfaccia interna perimetrale deve trovarsi in una rete diversa rispetto all'interfaccia esterna del server perimetrale e il routing tra di esse deve essere disabilitato.</span><span class="sxs-lookup"><span data-stu-id="ba45f-121">The edge internal interface must be on a different network than the Edge Server external interface and routing between them must be disabled.</span></span>
 
-  - <span data-ttu-id="bf60f-122">L'interfaccia esterna dell'Edge Server che usa il servizio A/V Edge deve usare indirizzi IP instradabili pubblicamente e nessuna traduzione NAT o Port in uno degli indirizzi IP esterni di Edge.</span><span class="sxs-lookup"><span data-stu-id="bf60f-122">The external interface of the Edge Server running the A/V Edge Service must use publicly routable IP addresses and no NAT or port translation on any of the edge external IP addresses.</span></span>
+  - <span data-ttu-id="ba45f-122">L'interfaccia esterna del server perimetrale che esegue il servizio A/V Edge deve utilizzare gli indirizzi IP instradabili pubblicamente e non la conversione NAT o la porta su uno degli indirizzi IP esterni perimetrali.</span><span class="sxs-lookup"><span data-stu-id="ba45f-122">The external interface of the Edge Server running the A/V Edge Service must use publicly routable IP addresses and no NAT or port translation on any of the edge external IP addresses.</span></span>
 
 </div>
 
 <div>
 
-## <a name="hardware-load-balancer-requirements"></a><span data-ttu-id="bf60f-123">Requisiti di bilanciamento del carico hardware</span><span class="sxs-lookup"><span data-stu-id="bf60f-123">Hardware Load Balancer Requirements</span></span>
+## <a name="hardware-load-balancer-requirements"></a><span data-ttu-id="ba45f-123">Requisiti relativi al servizio di bilanciamento del carico hardware</span><span class="sxs-lookup"><span data-stu-id="ba45f-123">Hardware Load Balancer Requirements</span></span>
 
-<span data-ttu-id="bf60f-124">I requisiti di affinità basati su cookie sono notevolmente ridotti in Lync Server 2013 per i servizi Web.</span><span class="sxs-lookup"><span data-stu-id="bf60f-124">Cookie-based affinity requirements are greatly reduced in Lync Server 2013 for Web services.</span></span> <span data-ttu-id="bf60f-125">Se si distribuisce Lync Server 2013 e non vengono mantenuti i server front end o i pool Front-End di Lync Server 2010, non è necessaria la persistenza basata su cookie.</span><span class="sxs-lookup"><span data-stu-id="bf60f-125">If you are deploying Lync Server 2013 and will not retain any Lync Server 2010 Front End Servers or Front End pools, you do not need cookie-based persistence.</span></span> <span data-ttu-id="bf60f-126">Se tuttavia si mantengono temporaneamente o definitivamente tutti i server front-end di Lync Server 2010 o i pool Front-End, è comunque possibile usare la persistenza basata su cookie mentre viene distribuita e configurata per Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="bf60f-126">However, if you will temporarily or permanently retain any Lync Server 2010 Front End Servers or Front End pools, you still use cookie-based persistence as it is deployed and configured for Lync Server 2010.</span></span>
-
-<div>
-
-
-> [!NOTE]  
-> <span data-ttu-id="bf60f-127"><STRONG>Se si decide di usare l'affinità basata su cookie anche se la distribuzione non lo richiede</STRONG>, non c'è alcun impatto negativo.</span><span class="sxs-lookup"><span data-stu-id="bf60f-127"><STRONG>If you decide to use cookie-based affinity even though your deployment does not require it</STRONG>, there is no negative impact to doing so.</span></span>
-
-
-
-</div>
-
-<span data-ttu-id="bf60f-128">Per le distribuzioni che **non useranno** l'affinità basata su cookie:</span><span class="sxs-lookup"><span data-stu-id="bf60f-128">For deployments that **will not use** cookie-based affinity:</span></span>
-
-  - <span data-ttu-id="bf60f-129">Nella regola di pubblicazione del proxy inverso per la porta 4443 impostare **Inoltra intestazione host** su true.</span><span class="sxs-lookup"><span data-stu-id="bf60f-129">On the reverse proxy publishing rule for port 4443, set **Forward host header** to True.</span></span> <span data-ttu-id="bf60f-130">In questo modo verrà inoltrato l'URL originale.</span><span class="sxs-lookup"><span data-stu-id="bf60f-130">This will ensure that the original URL is forwarded.</span></span>
-
-<span data-ttu-id="bf60f-131">Per le distribuzioni **che** utilizzeranno l'affinità basata su cookie:</span><span class="sxs-lookup"><span data-stu-id="bf60f-131">For deployments that **will use** cookie-based affinity:</span></span>
-
-  - <span data-ttu-id="bf60f-132">Nella regola di pubblicazione del proxy inverso per la porta 4443 impostare **Inoltra intestazione host** su true.</span><span class="sxs-lookup"><span data-stu-id="bf60f-132">On the reverse proxy publishing rule for port 4443, set **Forward host header** to True.</span></span> <span data-ttu-id="bf60f-133">In questo modo verrà inoltrato l'URL originale.</span><span class="sxs-lookup"><span data-stu-id="bf60f-133">This will ensure that the original URL is forwarded.</span></span>
-
-  - <span data-ttu-id="bf60f-134">Il cookie di bilanciamento del carico hardware non deve essere contrassegnato httpOnly</span><span class="sxs-lookup"><span data-stu-id="bf60f-134">Hardware load balancer cookie MUST NOT be marked httpOnly</span></span>
-
-  - <span data-ttu-id="bf60f-135">Il cookie di bilanciamento del carico hardware non deve avere una data di scadenza</span><span class="sxs-lookup"><span data-stu-id="bf60f-135">Hardware load balancer cookie MUST NOT have an expiration time</span></span>
-
-  - <span data-ttu-id="bf60f-136">Il cookie di bilanciamento del carico hardware deve essere denominato **MS-WSMan** (questo è il valore previsto per i servizi Web e non può essere modificato)</span><span class="sxs-lookup"><span data-stu-id="bf60f-136">Hardware load balancer cookie MUST be named **MS-WSMAN** (This is the value that the Web services expect, and cannot be changed)</span></span>
-
-  - <span data-ttu-id="bf60f-137">Il cookie di bilanciamento del carico hardware deve essere impostato in tutte le risposte HTTP per cui la richiesta HTTP in arrivo non ha un cookie, indipendentemente dal fatto che una risposta HTTP precedente alla stessa connessione TCP abbia già ottenuto un cookie.</span><span class="sxs-lookup"><span data-stu-id="bf60f-137">Hardware load balancer cookie MUST be set in every HTTP response for which the incoming HTTP request did not have a cookie, regardless of whether a previous HTTP response on that same TCP connection had already obtained a cookie.</span></span> <span data-ttu-id="bf60f-138">Se il bilanciamento del carico ottimizza l'inserimento del cookie per eseguire una sola volta per ogni connessione TCP, non deve essere usata l'ottimizzazione.</span><span class="sxs-lookup"><span data-stu-id="bf60f-138">If the load balancer optimizes cookie insert to only occur once per TCP connection, that optimization MUST NOT be used</span></span>
+<span data-ttu-id="ba45f-124">I requisiti di affinità basati su cookie sono notevolmente ridotti in Lync Server 2013 per i servizi Web.</span><span class="sxs-lookup"><span data-stu-id="ba45f-124">Cookie-based affinity requirements are greatly reduced in Lync Server 2013 for Web services.</span></span> <span data-ttu-id="ba45f-125">Se si sta distribuendo Lync Server 2013 e non si conservano i server Lync Server 2010 front end o i pool Front End, non è necessaria la persistenza basata su cookie.</span><span class="sxs-lookup"><span data-stu-id="ba45f-125">If you are deploying Lync Server 2013 and will not retain any Lync Server 2010 Front End Servers or Front End pools, you do not need cookie-based persistence.</span></span> <span data-ttu-id="ba45f-126">Tuttavia, se si conservano temporaneamente o definitivamente i server front end o i pool Front-End di Lync Server 2010, è comunque possibile utilizzare la persistenza basata su cookie come è stata distribuita e configurata per Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="ba45f-126">However, if you will temporarily or permanently retain any Lync Server 2010 Front End Servers or Front End pools, you still use cookie-based persistence as it is deployed and configured for Lync Server 2010.</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="bf60f-139">Le tipiche configurazioni di bilanciamento del carico hardware usano l'affinità degli indirizzi di origine e la durata di una sessione TCP di 20 minuti, che va bene per i client Lync Server e Lync 2013, perché lo stato della sessione viene gestito tramite l'utilizzo del client e/o l'interazione tra applicazioni.</span><span class="sxs-lookup"><span data-stu-id="bf60f-139">Typical hardware load balancer configurations use source-address affinity and a 20 min. TCP session lifetime, which is fine for Lync Server and Lync 2013 clients because session state is maintained through client usage and/or and application interaction.</span></span>
+> <span data-ttu-id="ba45f-127"><STRONG>La decisione di usare l'affinità basata sui cookie anche se la distribuzione non la richiede</STRONG> non determina un impatto negativo.</span><span class="sxs-lookup"><span data-stu-id="ba45f-127"><STRONG>If you decide to use cookie-based affinity even though your deployment does not require it</STRONG>, there is no negative impact to doing so.</span></span>
 
 
 
 </div>
 
-<span data-ttu-id="bf60f-140">Se si distribuiscono dispositivi mobili, il dispositivo di bilanciamento del carico hardware deve essere in grado di bilanciare il carico delle singole richieste all'interno di una sessione TCP (in effetti, è necessario essere in grado di bilanciare il carico di una singola richiesta in base all'indirizzo IP di destinazione).</span><span class="sxs-lookup"><span data-stu-id="bf60f-140">If you are deploying mobile devices, your hardware load balancer must be able to load balance individual request within a TCP session (in effect, you must be able to load balance an individual request based on the target IP address).</span></span>
+<span data-ttu-id="ba45f-128">Per le distribuzioni in cui l'affinità basata sui cookie **non verrà usata**:</span><span class="sxs-lookup"><span data-stu-id="ba45f-128">For deployments that **will not use** cookie-based affinity:</span></span>
+
+  - <span data-ttu-id="ba45f-129">Nella regola di pubblicazione del proxy inverso per la porta 4443, impostare **forward host header** su true.</span><span class="sxs-lookup"><span data-stu-id="ba45f-129">On the reverse proxy publishing rule for port 4443, set **Forward host header** to True.</span></span> <span data-ttu-id="ba45f-130">In questo modo viene inoltrato l'URL originale.</span><span class="sxs-lookup"><span data-stu-id="ba45f-130">This will ensure that the original URL is forwarded.</span></span>
+
+<span data-ttu-id="ba45f-131">Per le distribuzioni in cui l'affinità basata sui cookie **verrà usata**:</span><span class="sxs-lookup"><span data-stu-id="ba45f-131">For deployments that **will use** cookie-based affinity:</span></span>
+
+  - <span data-ttu-id="ba45f-p107">Nella regola di pubblicazione del proxy inverso per la porta 4443, impostare **Forward host header** su True in modo da assicurarsi che l'URL originale venga inoltrato.</span><span class="sxs-lookup"><span data-stu-id="ba45f-p107">On the reverse proxy publishing rule for port 4443, set **Forward host header** to True. This will ensure that the original URL is forwarded.</span></span>
+
+  - <span data-ttu-id="ba45f-134">Il cookie del bilanciamento del carico hardware NON DEVE essere contrassegnato come httpOnly</span><span class="sxs-lookup"><span data-stu-id="ba45f-134">Hardware load balancer cookie MUST NOT be marked httpOnly</span></span>
+
+  - <span data-ttu-id="ba45f-135">Per il bilanciamento del carico hardware NON DEVE essere impostata una data di scadenza</span><span class="sxs-lookup"><span data-stu-id="ba45f-135">Hardware load balancer cookie MUST NOT have an expiration time</span></span>
+
+  - <span data-ttu-id="ba45f-136">Il cookie del bilanciamento del carico hardware DEVE essere denominato **MS-WSMAN** ovvero il valore, non modificabile, previsto dai servizi Web</span><span class="sxs-lookup"><span data-stu-id="ba45f-136">Hardware load balancer cookie MUST be named **MS-WSMAN** (This is the value that the Web services expect, and cannot be changed)</span></span>
+
+  - <span data-ttu-id="ba45f-p108">Il cookie del bilanciamento del carico hardware DEVE essere impostato in ogni risposta HTTP per la quale la richiesta HTTP in arrivo non presentava un cookie, indipendentemente dal fatto che una precedente risposta HTTP nella stessa connessione TCP abbia già ottenuto un cookie. Se il bilanciamento del carico ottimizza l'inserimento del cookie in modo che venga eseguito una sola volta per ogni connessione TCP, tale ottimizzazione NON DEVE essere usata</span><span class="sxs-lookup"><span data-stu-id="ba45f-p108">Hardware load balancer cookie MUST be set in every HTTP response for which the incoming HTTP request did not have a cookie, regardless of whether a previous HTTP response on that same TCP connection had already obtained a cookie. If the load balancer optimizes cookie insert to only occur once per TCP connection, that optimization MUST NOT be used</span></span>
+
+<div>
+
+
+> [!NOTE]  
+> <span data-ttu-id="ba45f-139">Le configurazioni tipiche del dispositivo di bilanciamento del carico hardware utilizzano l'affinità degli indirizzi di origine e la durata di una sessione di 20 min. TCP, che va bene per i client Lync Server e Lync 2013 perché lo stato della sessione viene mantenuto tramite l'utilizzo del client e/o l'interazione tra applicazioni.</span><span class="sxs-lookup"><span data-stu-id="ba45f-139">Typical hardware load balancer configurations use source-address affinity and a 20 min. TCP session lifetime, which is fine for Lync Server and Lync 2013 clients because session state is maintained through client usage and/or and application interaction.</span></span>
+
+
+
+</div>
+
+<span data-ttu-id="ba45f-140">Se si distribuiscono dispositivi mobili, il servizio di bilanciamento del carico hardware deve essere in grado di bilanciare il carico delle singole richieste in una sessione TCP (in effetti, è necessario essere in grado di bilanciare il carico di una singola richiesta in base all'indirizzo IP di destinazione).</span><span class="sxs-lookup"><span data-stu-id="ba45f-140">If you are deploying mobile devices, your hardware load balancer must be able to load balance individual request within a TCP session (in effect, you must be able to load balance an individual request based on the target IP address).</span></span>
 
 <div>
 
 
 > [!WARNING]  
-> <span data-ttu-id="bf60f-141">I servizi di bilanciamento del carico hardware F5 hanno una caratteristica denominata OneConnect che garantisce che ogni richiesta all'interno di una connessione TCP sia bilanciata individualmente.</span><span class="sxs-lookup"><span data-stu-id="bf60f-141">F5 hardware load balancers have a feature called OneConnect that ensures each request within a TCP connection is individually load balanced.</span></span> <span data-ttu-id="bf60f-142">Se si distribuiscono dispositivi mobili, verificare che il fornitore del dispositivo di bilanciamento del carico hardware supporti le stesse funzionalità.</span><span class="sxs-lookup"><span data-stu-id="bf60f-142">If you are deploying mobile devices, ensure your hardware load balancer vendor supports the same functionality.</span></span> <span data-ttu-id="bf60f-143">Le più recenti app per dispositivi mobili Apple iOS richiedono Transport Layer Security (TLS) versione 1,2.</span><span class="sxs-lookup"><span data-stu-id="bf60f-143">The latest Apple iOS mobile apps require Transport Layer Security (TLS) version 1.2.</span></span> <span data-ttu-id="bf60f-144">F5 offre impostazioni specifiche per questo.</span><span class="sxs-lookup"><span data-stu-id="bf60f-144">F5 provides specific settings for this.</span></span><BR><span data-ttu-id="bf60f-145">Per informazioni dettagliate sui dispositivi di bilanciamento del carico hardware di terze parti, vedere<A href="http://go.microsoft.com/fwlink/p/?linkid=230700">http://go.microsoft.com/fwlink/p/?linkId=230700</A></span><span class="sxs-lookup"><span data-stu-id="bf60f-145">For details on third party hardware load balancers, see <A href="http://go.microsoft.com/fwlink/p/?linkid=230700">http://go.microsoft.com/fwlink/p/?linkId=230700</A></span></span>
+> <span data-ttu-id="ba45f-p109">I servizi di bilanciamento del carico hardware F5 presentano una funzionalità chiamata OneConnect che garantisce che il bilanciamento del carico venga eseguito per ogni singola richiesta all'interno di una connessione TCP. Se si distribuiscono dispositivi mobili, verificare che il fornitore di servizi di bilanciamento del carico hardware supporti la stessa funzionalità. Le applicazioni per dispositivi mobili Apple iOS più recenti richiedono TLS (Transport Layer Security) versione 1.2. F5 offre impostazioni specifiche a questo scopo.</span><span class="sxs-lookup"><span data-stu-id="ba45f-p109">F5 hardware load balancers have a feature called OneConnect that ensures each request within a TCP connection is individually load balanced. If you are deploying mobile devices, ensure your hardware load balancer vendor supports the same functionality. The latest Apple iOS mobile apps require Transport Layer Security (TLS) version 1.2. F5 provides specific settings for this.</span></span><BR><span data-ttu-id="ba45f-145">Per informazioni dettagliate sui dispositivi di bilanciamento del carico hardware di terze parti, vedere<A href="http://go.microsoft.com/fwlink/p/?linkid=230700">http://go.microsoft.com/fwlink/p/?linkId=230700</A></span><span class="sxs-lookup"><span data-stu-id="ba45f-145">For details on third party hardware load balancers, see <A href="http://go.microsoft.com/fwlink/p/?linkid=230700">http://go.microsoft.com/fwlink/p/?linkId=230700</A></span></span>
 
 
 
 </div>
 
-<span data-ttu-id="bf60f-146">Di seguito sono riportati i requisiti di bilanciamento del carico hardware per i servizi Web Director e front end pool:</span><span class="sxs-lookup"><span data-stu-id="bf60f-146">Following are the hardware load balancer requirements for Director and Front End pool Web Services:</span></span>
+<span data-ttu-id="ba45f-146">Vengono riportati di seguito i requisiti dei servizi di bilanciamento del carico hardware per i servizi Web dei pool di server Director e Front End:</span><span class="sxs-lookup"><span data-stu-id="ba45f-146">Following are the hardware load balancer requirements for Director and Front End pool Web Services:</span></span>
 
-  - <span data-ttu-id="bf60f-147">Per i VIP dei servizi Web interni,\_imposta la persistenza degli indirizzi di origine (porta interna 80, 443) nel servizio di bilanciamento del carico hardware.</span><span class="sxs-lookup"><span data-stu-id="bf60f-147">For internal Web Services VIPs, set Source\_addr persistence (internal port 80, 443) on the hardware load balancer.</span></span> <span data-ttu-id="bf60f-148">Per Lync Server 2013, la\_persistenza degli indirizzi di origine indica che più connessioni provenienti da un singolo indirizzo IP vengono sempre inviate a un server per mantenere lo stato della sessione.</span><span class="sxs-lookup"><span data-stu-id="bf60f-148">For Lync Server 2013, Source\_addr persistence means that multiple connections coming from a single IP address are always sent to one server to maintain session state.</span></span>
+  - <span data-ttu-id="ba45f-147">Per i VIP dei servizi Web interni,\_impostare la persistenza dell'indirizzo di origine (porta interna 80, 443) nel dispositivo di bilanciamento del carico hardware.</span><span class="sxs-lookup"><span data-stu-id="ba45f-147">For internal Web Services VIPs, set Source\_addr persistence (internal port 80, 443) on the hardware load balancer.</span></span> <span data-ttu-id="ba45f-148">Per Lync Server 2013, la\_persistenza dell'addr di origine implica che più connessioni provenienti da un singolo indirizzo IP vengano sempre inviate a un solo server per mantenere lo stato della sessione.</span><span class="sxs-lookup"><span data-stu-id="ba45f-148">For Lync Server 2013, Source\_addr persistence means that multiple connections coming from a single IP address are always sent to one server to maintain session state.</span></span>
 
-  - <span data-ttu-id="bf60f-149">Usare il timeout di inattività TCP di 1800 secondi.</span><span class="sxs-lookup"><span data-stu-id="bf60f-149">Use TCP idle timeout of 1800 seconds.</span></span>
+  - <span data-ttu-id="ba45f-149">Impostare il timeout di inattività TCP su 1800 secondi.</span><span class="sxs-lookup"><span data-stu-id="ba45f-149">Use TCP idle timeout of 1800 seconds.</span></span>
 
-  - <span data-ttu-id="bf60f-150">Nel firewall tra il proxy inverso e il bilanciamento del carico hardware del pool hop successivo creare una regola per consentire HTTPS: traffico sulla porta 4443, dal proxy inverso al bilanciamento del carico hardware.</span><span class="sxs-lookup"><span data-stu-id="bf60f-150">On the firewall between the reverse proxy and the next hop pool’s hardware load balancer, create a rule to allow https: traffic on port 4443, from the reverse proxy to the hardware load balancer.</span></span> <span data-ttu-id="bf60f-151">Il bilanciamento del carico hardware deve essere configurato per l'ascolto sulle porte 80, 443 e 4443.</span><span class="sxs-lookup"><span data-stu-id="bf60f-151">The hardware load balancer must be configured to listen on ports 80, 443, and 4443.</span></span>
+  - <span data-ttu-id="ba45f-p111">Nel firewall tra il proxy inverso e il servizio di bilanciamento del carico hardware del pool di hop successivi, creare una regola per consentire il traffico HTTPS nella porta 4443, dal proxy inverso al servizio di bilanciamento del carico hardware. Il servizio di bilanciamento del carico hardware deve essere configurato per l'ascolto sulle porte 80, 443 e 4443.</span><span class="sxs-lookup"><span data-stu-id="ba45f-p111">On the firewall between the reverse proxy and the next hop pool’s hardware load balancer, create a rule to allow https: traffic on port 4443, from the reverse proxy to the hardware load balancer. The hardware load balancer must be configured to listen on ports 80, 443, and 4443.</span></span>
 
 <div>
 
 
 > [!IMPORTANT]  
-> <span data-ttu-id="bf60f-152">Per ulteriori informazioni sulla configurazione dell'utilità di bilanciamento del carico hardware, vedere la pagina relativa a <A href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Edge consolidato con bilanciamento del carico hardware in Lync Server 2013</A>.</span><span class="sxs-lookup"><span data-stu-id="bf60f-152">For further reading on configuration of the hardware load balancer, please review <A href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Port summary - Scaled consolidated edge with hardware load balancers in Lync Server 2013</A>.</span></span>
+> <span data-ttu-id="ba45f-152">Per ulteriori informazioni sulla configurazione del dispositivo di bilanciamento del carico hardware, leggere il <A href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">perimetro consolidato in scala di riepilogo delle porte con i dispositivi di bilanciamento del carico hardware in Lync Server 2013</A>.</span><span class="sxs-lookup"><span data-stu-id="ba45f-152">For further reading on configuration of the hardware load balancer, please review <A href="lync-server-2013-port-summary-scaled-consolidated-edge-with-hardware-load-balancers.md">Port summary - Scaled consolidated edge with hardware load balancers in Lync Server 2013</A>.</span></span>
 
 
 
@@ -171,7 +171,7 @@ ms.locfileid: "41727906"
 
 <div>
 
-## <a name="summary-of-hardware-load-balancer-affinity-requirements"></a><span data-ttu-id="bf60f-153">Riepilogo dei requisiti di affinità di bilanciamento del carico hardware</span><span class="sxs-lookup"><span data-stu-id="bf60f-153">Summary of Hardware Load Balancer Affinity Requirements</span></span>
+## <a name="summary-of-hardware-load-balancer-affinity-requirements"></a><span data-ttu-id="ba45f-153">Riepilogo dei requisiti per l'affinità del servizio di bilanciamento del carico hardware</span><span class="sxs-lookup"><span data-stu-id="ba45f-153">Summary of Hardware Load Balancer Affinity Requirements</span></span>
 
 
 <table>
@@ -182,29 +182,29 @@ ms.locfileid: "41727906"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="bf60f-154">Posizione client/utente</span><span class="sxs-lookup"><span data-stu-id="bf60f-154">Client/user location</span></span></th>
-<th><span data-ttu-id="bf60f-155">Requisiti di affinità FQDN servizi Web esterni</span><span class="sxs-lookup"><span data-stu-id="bf60f-155">External web services FQDN affinity requirements</span></span></th>
-<th><span data-ttu-id="bf60f-156">Requisiti di affinità FQDN servizi Web interni</span><span class="sxs-lookup"><span data-stu-id="bf60f-156">Internal web services FQDN affinity requirements</span></span></th>
+<th><span data-ttu-id="ba45f-154">Posizione client/utente</span><span class="sxs-lookup"><span data-stu-id="ba45f-154">Client/user location</span></span></th>
+<th><span data-ttu-id="ba45f-155">Requisiti per l'affinità FQDN dei servizi Web esterni</span><span class="sxs-lookup"><span data-stu-id="ba45f-155">External web services FQDN affinity requirements</span></span></th>
+<th><span data-ttu-id="ba45f-156">Requisiti per l'affinità FQDN dei servizi Web interni</span><span class="sxs-lookup"><span data-stu-id="ba45f-156">Internal web services FQDN affinity requirements</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="bf60f-157">Lync Web App (utenti interni ed esterni)</span><span class="sxs-lookup"><span data-stu-id="bf60f-157">Lync Web App (internal and external users)</span></span></p>
-<p><span data-ttu-id="bf60f-158">Dispositivo mobile (utenti interni ed esterni)</span><span class="sxs-lookup"><span data-stu-id="bf60f-158">Mobile device (internal and external users)</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-159">Nessuna affinità</span><span class="sxs-lookup"><span data-stu-id="bf60f-159">No affinity</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-160">Affinità indirizzo di origine</span><span class="sxs-lookup"><span data-stu-id="bf60f-160">Source address affinity</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-157">Lync Web App (utenti interni ed esterni)</span><span class="sxs-lookup"><span data-stu-id="ba45f-157">Lync Web App (internal and external users)</span></span></p>
+<p><span data-ttu-id="ba45f-158">Dispositivo mobile (utenti interni ed esterni)</span><span class="sxs-lookup"><span data-stu-id="ba45f-158">Mobile device (internal and external users)</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-159">Nessuna affinità</span><span class="sxs-lookup"><span data-stu-id="ba45f-159">No affinity</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-160">Affinità indirizzo di origine</span><span class="sxs-lookup"><span data-stu-id="ba45f-160">Source address affinity</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="bf60f-161">Lync Web App (solo utenti esterni)</span><span class="sxs-lookup"><span data-stu-id="bf60f-161">Lync Web App (external users only)</span></span></p>
-<p><span data-ttu-id="bf60f-162">Dispositivo mobile (utenti interni ed esterni)</span><span class="sxs-lookup"><span data-stu-id="bf60f-162">Mobile device (internal and external users)</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-163">Nessuna affinità</span><span class="sxs-lookup"><span data-stu-id="bf60f-163">No affinity</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-164">Affinità indirizzo di origine</span><span class="sxs-lookup"><span data-stu-id="bf60f-164">Source address affinity</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-161">Lync Web App (solo utenti esterni)</span><span class="sxs-lookup"><span data-stu-id="ba45f-161">Lync Web App (external users only)</span></span></p>
+<p><span data-ttu-id="ba45f-162">Dispositivo mobile (utenti interni ed esterni)</span><span class="sxs-lookup"><span data-stu-id="ba45f-162">Mobile device (internal and external users)</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-163">Nessuna affinità</span><span class="sxs-lookup"><span data-stu-id="ba45f-163">No affinity</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-164">Affinità indirizzo di origine</span><span class="sxs-lookup"><span data-stu-id="ba45f-164">Source address affinity</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="bf60f-165">Lync Web App (solo utenti interni)</span><span class="sxs-lookup"><span data-stu-id="bf60f-165">Lync Web App (internal users only)</span></span></p>
-<p><span data-ttu-id="bf60f-166">Dispositivo mobile (non distribuito)</span><span class="sxs-lookup"><span data-stu-id="bf60f-166">Mobile device (not deployed)</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-167">Nessuna affinità</span><span class="sxs-lookup"><span data-stu-id="bf60f-167">No affinity</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-168">Affinità indirizzo di origine</span><span class="sxs-lookup"><span data-stu-id="bf60f-168">Source address affinity</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-165">Lync Web App (solo per gli utenti interni)</span><span class="sxs-lookup"><span data-stu-id="ba45f-165">Lync Web App (internal users only)</span></span></p>
+<p><span data-ttu-id="ba45f-166">Dispositivo mobile (non distribuito)</span><span class="sxs-lookup"><span data-stu-id="ba45f-166">Mobile device (not deployed)</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-167">Nessuna affinità</span><span class="sxs-lookup"><span data-stu-id="ba45f-167">No affinity</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-168">Affinità indirizzo di origine</span><span class="sxs-lookup"><span data-stu-id="ba45f-168">Source address affinity</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -214,11 +214,11 @@ ms.locfileid: "41727906"
 
 <div>
 
-## <a name="port-monitoring-for-hardware-load-balancers"></a><span data-ttu-id="bf60f-169">Monitoraggio della porta per i dispositivi di bilanciamento del carico hardware</span><span class="sxs-lookup"><span data-stu-id="bf60f-169">Port Monitoring for Hardware Load Balancers</span></span>
+## <a name="port-monitoring-for-hardware-load-balancers"></a><span data-ttu-id="ba45f-169">Monitoraggio delle porte per i servizi di bilanciamento del carico hardware</span><span class="sxs-lookup"><span data-stu-id="ba45f-169">Port Monitoring for Hardware Load Balancers</span></span>
 
-<span data-ttu-id="bf60f-170">Puoi definire il monitoraggio della porta sui dispositivi di bilanciamento del carico hardware per determinare quando i servizi specifici non sono più disponibili a causa di problemi hardware o comunicazioni.</span><span class="sxs-lookup"><span data-stu-id="bf60f-170">You define port monitoring on the hardware load balancers to determine when specific services are no longer available due to hardware or communications failure.</span></span> <span data-ttu-id="bf60f-171">Ad esempio, se il servizio server front-end (RTCSRV) si arresta perché il server front-end o il pool Front-end non riesce, il monitoraggio di HLB dovrebbe interrompere anche la ricezione del traffico sui servizi Web.</span><span class="sxs-lookup"><span data-stu-id="bf60f-171">For example, if the Front End Server service (RTCSRV) stops because the Front End Server or Front End pool fails, the HLB monitoring should also stop receiving traffic on the Web Services.</span></span> <span data-ttu-id="bf60f-172">Puoi implementare il monitoraggio della porta in HLB per monitorare le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="bf60f-172">You implement port monitoring on the HLB to monitor the following:</span></span>
+<span data-ttu-id="ba45f-170">Il monitoraggio delle porte viene definito nei servizi di bilanciamento del carico hardware per stabilire quando determinati servizi non sono più disponibili a causa di un errore hardware o delle comunicazioni.</span><span class="sxs-lookup"><span data-stu-id="ba45f-170">You define port monitoring on the hardware load balancers to determine when specific services are no longer available due to hardware or communications failure.</span></span> <span data-ttu-id="ba45f-171">Ad esempio, se il servizio front end server (RTCSRV) si interrompe perché il front end server o il pool Front End ha esito negativo, il monitoraggio di HLB dovrebbe anche interrompere la ricezione del traffico sui servizi Web.</span><span class="sxs-lookup"><span data-stu-id="ba45f-171">For example, if the Front End Server service (RTCSRV) stops because the Front End Server or Front End pool fails, the HLB monitoring should also stop receiving traffic on the Web Services.</span></span> <span data-ttu-id="ba45f-172">Il monitoraggio delle porte viene implementato nel servizio HLB per monitorare quanto segue:</span><span class="sxs-lookup"><span data-stu-id="ba45f-172">You implement port monitoring on the HLB to monitor the following:</span></span>
 
-### <a name="front-end-server-user-pool--hlb-internal-interface"></a><span data-ttu-id="bf60f-173">Pool di utenti del server front-end-interfaccia interna di HLB</span><span class="sxs-lookup"><span data-stu-id="bf60f-173">Front End Server User Pool – HLB Internal Interface</span></span>
+### <a name="front-end-server-user-pool--hlb-internal-interface"></a><span data-ttu-id="ba45f-173">Pool di utenti front end server – interfaccia interna di HLB</span><span class="sxs-lookup"><span data-stu-id="ba45f-173">Front End Server User Pool – HLB Internal Interface</span></span>
 
 <table>
 <colgroup>
@@ -230,37 +230,37 @@ ms.locfileid: "41727906"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="bf60f-174">IP virtuale/porta</span><span class="sxs-lookup"><span data-stu-id="bf60f-174">Virtual IP/Port</span></span></th>
-<th><span data-ttu-id="bf60f-175">Porta nodi</span><span class="sxs-lookup"><span data-stu-id="bf60f-175">Node Port</span></span></th>
-<th><span data-ttu-id="bf60f-176">Nodo macchina/monitor</span><span class="sxs-lookup"><span data-stu-id="bf60f-176">Node Machine/Monitor</span></span></th>
-<th><span data-ttu-id="bf60f-177">Profilo di persistenza</span><span class="sxs-lookup"><span data-stu-id="bf60f-177">Persistence Profile</span></span></th>
-<th><span data-ttu-id="bf60f-178">Note</span><span class="sxs-lookup"><span data-stu-id="bf60f-178">Notes</span></span></th>
+<th><span data-ttu-id="ba45f-174">IP virtuale/Porta</span><span class="sxs-lookup"><span data-stu-id="ba45f-174">Virtual IP/Port</span></span></th>
+<th><span data-ttu-id="ba45f-175">Porta nodo</span><span class="sxs-lookup"><span data-stu-id="ba45f-175">Node Port</span></span></th>
+<th><span data-ttu-id="ba45f-176">Computer/Monitor nodo</span><span class="sxs-lookup"><span data-stu-id="ba45f-176">Node Machine/Monitor</span></span></th>
+<th><span data-ttu-id="ba45f-177">Profilo persistenza</span><span class="sxs-lookup"><span data-stu-id="ba45f-177">Persistence Profile</span></span></th>
+<th><span data-ttu-id="ba45f-178">Notes</span><span class="sxs-lookup"><span data-stu-id="ba45f-178">Notes</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="bf60f-179">&lt;Web&gt;pool-int_mco_443_vs</span><span class="sxs-lookup"><span data-stu-id="bf60f-179">&lt;pool&gt;web-int_mco_443_vs</span></span></p>
-<p><span data-ttu-id="bf60f-180">443</span><span class="sxs-lookup"><span data-stu-id="bf60f-180">443</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-181">443</span><span class="sxs-lookup"><span data-stu-id="bf60f-181">443</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-182">Front-end</span><span class="sxs-lookup"><span data-stu-id="bf60f-182">Front End</span></span></p>
-<p><span data-ttu-id="bf60f-183">5061</span><span class="sxs-lookup"><span data-stu-id="bf60f-183">5061</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-184">Fonte</span><span class="sxs-lookup"><span data-stu-id="bf60f-184">Source</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-185">HTTPS</span><span class="sxs-lookup"><span data-stu-id="bf60f-185">HTTPS</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-179">&lt;int_mco_443_vs&gt;del pool</span><span class="sxs-lookup"><span data-stu-id="ba45f-179">&lt;pool&gt;web-int_mco_443_vs</span></span></p>
+<p><span data-ttu-id="ba45f-180">443</span><span class="sxs-lookup"><span data-stu-id="ba45f-180">443</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-181">443</span><span class="sxs-lookup"><span data-stu-id="ba45f-181">443</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-182">Front End</span><span class="sxs-lookup"><span data-stu-id="ba45f-182">Front End</span></span></p>
+<p><span data-ttu-id="ba45f-183">5061</span><span class="sxs-lookup"><span data-stu-id="ba45f-183">5061</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-184">Origine</span><span class="sxs-lookup"><span data-stu-id="ba45f-184">Source</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-185">HTTPS</span><span class="sxs-lookup"><span data-stu-id="ba45f-185">HTTPS</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="bf60f-186">&lt;Web&gt;pool-int_mco_80_vs</span><span class="sxs-lookup"><span data-stu-id="bf60f-186">&lt;pool&gt;web-int_mco_80_vs</span></span></p>
-<p><span data-ttu-id="bf60f-187">80</span><span class="sxs-lookup"><span data-stu-id="bf60f-187">80</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-188">80</span><span class="sxs-lookup"><span data-stu-id="bf60f-188">80</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-189">Front-end</span><span class="sxs-lookup"><span data-stu-id="bf60f-189">Front End</span></span></p>
-<p><span data-ttu-id="bf60f-190">5061</span><span class="sxs-lookup"><span data-stu-id="bf60f-190">5061</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-191">Fonte</span><span class="sxs-lookup"><span data-stu-id="bf60f-191">Source</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-192">HTTP</span><span class="sxs-lookup"><span data-stu-id="bf60f-192">HTTP</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-186">&lt;int_mco_80_vs&gt;del pool</span><span class="sxs-lookup"><span data-stu-id="ba45f-186">&lt;pool&gt;web-int_mco_80_vs</span></span></p>
+<p><span data-ttu-id="ba45f-187">80</span><span class="sxs-lookup"><span data-stu-id="ba45f-187">80</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-188">80</span><span class="sxs-lookup"><span data-stu-id="ba45f-188">80</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-189">Front End</span><span class="sxs-lookup"><span data-stu-id="ba45f-189">Front End</span></span></p>
+<p><span data-ttu-id="ba45f-190">5061</span><span class="sxs-lookup"><span data-stu-id="ba45f-190">5061</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-191">Origine</span><span class="sxs-lookup"><span data-stu-id="ba45f-191">Source</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-192">HTTP</span><span class="sxs-lookup"><span data-stu-id="ba45f-192">HTTP</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="front-end-server-user-pool--hlb-external-interface"></a><span data-ttu-id="bf60f-193">Pool di utenti del server front-end-interfaccia esterna di HLB</span><span class="sxs-lookup"><span data-stu-id="bf60f-193">Front End Server User Pool – HLB External Interface</span></span>
+### <a name="front-end-server-user-pool--hlb-external-interface"></a><span data-ttu-id="ba45f-193">Pool di utenti front end server – interfaccia esterna di HLB</span><span class="sxs-lookup"><span data-stu-id="ba45f-193">Front End Server User Pool – HLB External Interface</span></span>
 
 <table>
 <colgroup>
@@ -272,31 +272,31 @@ ms.locfileid: "41727906"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="bf60f-194">IP virtuale/porta</span><span class="sxs-lookup"><span data-stu-id="bf60f-194">Virtual IP/Port</span></span></th>
-<th><span data-ttu-id="bf60f-195">Porta nodi</span><span class="sxs-lookup"><span data-stu-id="bf60f-195">Node Port</span></span></th>
-<th><span data-ttu-id="bf60f-196">Nodo macchina/monitor</span><span class="sxs-lookup"><span data-stu-id="bf60f-196">Node Machine/Monitor</span></span></th>
-<th><span data-ttu-id="bf60f-197">Profilo di persistenza</span><span class="sxs-lookup"><span data-stu-id="bf60f-197">Persistence Profile</span></span></th>
-<th><span data-ttu-id="bf60f-198">Note</span><span class="sxs-lookup"><span data-stu-id="bf60f-198">Notes</span></span></th>
+<th><span data-ttu-id="ba45f-194">IP virtuale/Porta</span><span class="sxs-lookup"><span data-stu-id="ba45f-194">Virtual IP/Port</span></span></th>
+<th><span data-ttu-id="ba45f-195">Porta nodo</span><span class="sxs-lookup"><span data-stu-id="ba45f-195">Node Port</span></span></th>
+<th><span data-ttu-id="ba45f-196">Computer/Monitor nodo</span><span class="sxs-lookup"><span data-stu-id="ba45f-196">Node Machine/Monitor</span></span></th>
+<th><span data-ttu-id="ba45f-197">Profilo persistenza</span><span class="sxs-lookup"><span data-stu-id="ba45f-197">Persistence Profile</span></span></th>
+<th><span data-ttu-id="ba45f-198">Notes</span><span class="sxs-lookup"><span data-stu-id="ba45f-198">Notes</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="bf60f-199">&lt;web_mco_443_vs&gt;del pool</span><span class="sxs-lookup"><span data-stu-id="bf60f-199">&lt;pool&gt;web_mco_443_vs</span></span></p>
-<p><span data-ttu-id="bf60f-200">443</span><span class="sxs-lookup"><span data-stu-id="bf60f-200">443</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-201">4443</span><span class="sxs-lookup"><span data-stu-id="bf60f-201">4443</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-202">Front-end</span><span class="sxs-lookup"><span data-stu-id="bf60f-202">Front End</span></span></p>
-<p><span data-ttu-id="bf60f-203">5061</span><span class="sxs-lookup"><span data-stu-id="bf60f-203">5061</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-204">Nessuno</span><span class="sxs-lookup"><span data-stu-id="bf60f-204">None</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-205">HTTPS</span><span class="sxs-lookup"><span data-stu-id="bf60f-205">HTTPS</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-199">&lt;web_mco_443_vs&gt;del pool</span><span class="sxs-lookup"><span data-stu-id="ba45f-199">&lt;pool&gt;web_mco_443_vs</span></span></p>
+<p><span data-ttu-id="ba45f-200">443</span><span class="sxs-lookup"><span data-stu-id="ba45f-200">443</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-201">4443</span><span class="sxs-lookup"><span data-stu-id="ba45f-201">4443</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-202">Front End</span><span class="sxs-lookup"><span data-stu-id="ba45f-202">Front End</span></span></p>
+<p><span data-ttu-id="ba45f-203">5061</span><span class="sxs-lookup"><span data-stu-id="ba45f-203">5061</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-204">Nessuno</span><span class="sxs-lookup"><span data-stu-id="ba45f-204">None</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-205">HTTPS</span><span class="sxs-lookup"><span data-stu-id="ba45f-205">HTTPS</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="bf60f-206">&lt;web_mco_80_vs&gt;del pool</span><span class="sxs-lookup"><span data-stu-id="bf60f-206">&lt;pool&gt;web_mco_80_vs</span></span></p>
-<p><span data-ttu-id="bf60f-207">80</span><span class="sxs-lookup"><span data-stu-id="bf60f-207">80</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-208">8080</span><span class="sxs-lookup"><span data-stu-id="bf60f-208">8080</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-209">Front-end</span><span class="sxs-lookup"><span data-stu-id="bf60f-209">Front End</span></span></p>
-<p><span data-ttu-id="bf60f-210">5061</span><span class="sxs-lookup"><span data-stu-id="bf60f-210">5061</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-211">Nessuno</span><span class="sxs-lookup"><span data-stu-id="bf60f-211">None</span></span></p></td>
-<td><p><span data-ttu-id="bf60f-212">HTTP</span><span class="sxs-lookup"><span data-stu-id="bf60f-212">HTTP</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-206">&lt;web_mco_80_vs&gt;del pool</span><span class="sxs-lookup"><span data-stu-id="ba45f-206">&lt;pool&gt;web_mco_80_vs</span></span></p>
+<p><span data-ttu-id="ba45f-207">80</span><span class="sxs-lookup"><span data-stu-id="ba45f-207">80</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-208">8080</span><span class="sxs-lookup"><span data-stu-id="ba45f-208">8080</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-209">Front End</span><span class="sxs-lookup"><span data-stu-id="ba45f-209">Front End</span></span></p>
+<p><span data-ttu-id="ba45f-210">5061</span><span class="sxs-lookup"><span data-stu-id="ba45f-210">5061</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-211">Nessuno</span><span class="sxs-lookup"><span data-stu-id="ba45f-211">None</span></span></p></td>
+<td><p><span data-ttu-id="ba45f-212">HTTP</span><span class="sxs-lookup"><span data-stu-id="ba45f-212">HTTP</span></span></p></td>
 </tr>
 </tbody>
 </table>

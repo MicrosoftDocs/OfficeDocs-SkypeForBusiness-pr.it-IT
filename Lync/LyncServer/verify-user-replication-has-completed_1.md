@@ -1,5 +1,5 @@
 ---
-title: Verificare il completamento della replica utente
+title: Verificare che la replica degli utenti sia stata completata
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183524
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bc6d8100a7bd0d348c3414da627584bae8697a1c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6433c1e88edf69b957047b9dc405df392e5ec104
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730776"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036194"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="verify-user-replication-has-completed"></a><span data-ttu-id="7aaae-102">Verificare il completamento della replica utente</span><span class="sxs-lookup"><span data-stu-id="7aaae-102">Verify user replication has completed</span></span>
+# <a name="verify-user-replication-has-completed"></a><span data-ttu-id="b6bb8-102">Verificare che la replica degli utenti sia stata completata</span><span class="sxs-lookup"><span data-stu-id="b6bb8-102">Verify user replication has completed</span></span>
 
 </div>
 
@@ -35,27 +35,27 @@ ms.locfileid: "41730776"
 
 <span> </span>
 
-<span data-ttu-id="7aaae-103">_**Argomento Ultima modifica:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="7aaae-103">_**Topic Last Modified:** 2012-09-28_</span></span>
+<span data-ttu-id="b6bb8-103">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="b6bb8-103">_**Topic Last Modified:** 2012-09-28_</span></span>
 
-<span data-ttu-id="7aaae-104">Quando si utilizza il cmdlet **Move-CsLegacyUser** , potrebbe verificarsi un errore a causa di informazioni utente tra servizi di dominio Active Directory e i database di Lync Server 2013 non sincronizzati perché la replica iniziale è incompleta.</span><span class="sxs-lookup"><span data-stu-id="7aaae-104">When running the **Move-CsLegacyUser** cmdlet, you may experience a failure due to user information between Active Directory Domain Services (AD DS) and the Lync Server 2013 databases being out of sync because the initial replication is incomplete.</span></span> <span data-ttu-id="7aaae-105">Il tempo necessario per il completamento della sincronizzazione iniziale di Lync Server 2013, dipende dal numero di controller di dominio ospitati nella foresta di Active Directory che ospita il pool di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="7aaae-105">The time it takes for the successful completion of the Lync Server 2013 User Replicator service's initial synchronization depends on the number of domain controllers that are hosted in the Active Directory forest that hosts the Lync Server 2013 pool.</span></span> <span data-ttu-id="7aaae-106">Il processo di sincronizzazione iniziale di Lync Server 2013 User Replicator Service viene eseguito quando il server front-end di Lync Server 2013 viene avviato per la prima volta.</span><span class="sxs-lookup"><span data-stu-id="7aaae-106">The Lync Server 2013 User Replicator service initial synchronization process occurs when the Lync Server 2013 Front End Server is started for the first time.</span></span> <span data-ttu-id="7aaae-107">Successivamente, la sincronizzazione si basa sull'intervallo User Replicator.</span><span class="sxs-lookup"><span data-stu-id="7aaae-107">After that, the synchronization is then based on the User Replicator interval.</span></span> <span data-ttu-id="7aaae-108">Completare la procedura seguente per verificare che la replica degli utenti sia stata completata prima di eseguire il cmdlet **Move-CsLegacyUser** .</span><span class="sxs-lookup"><span data-stu-id="7aaae-108">Complete the following steps to verify user replication has completed before running the **Move-CsLegacyUser** cmdlet.</span></span>
+<span data-ttu-id="b6bb8-104">Quando si esegue il cmdlet **Move-CsLegacyUser** , è possibile che si verifichi un errore a causa di informazioni utente tra servizi di dominio Active Directory (ad DS) e i database di Lync Server 2013 che non sono sincronizzati perché la replica iniziale è incompleta.</span><span class="sxs-lookup"><span data-stu-id="b6bb8-104">When running the **Move-CsLegacyUser** cmdlet, you may experience a failure due to user information between Active Directory Domain Services (AD DS) and the Lync Server 2013 databases being out of sync because the initial replication is incomplete.</span></span> <span data-ttu-id="b6bb8-105">Il tempo necessario per il corretto completamento della sincronizzazione iniziale del servizio Lync Server 2013 User Replicator dipende dal numero di controller di dominio ospitati nella foresta di Active Directory che ospita il pool di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="b6bb8-105">The time it takes for the successful completion of the Lync Server 2013 User Replicator service's initial synchronization depends on the number of domain controllers that are hosted in the Active Directory forest that hosts the Lync Server 2013 pool.</span></span> <span data-ttu-id="b6bb8-106">Il processo di sincronizzazione iniziale di Lync Server 2013 User Replicator viene eseguito quando il server Lync Server 2013 front end è stato avviato per la prima volta.</span><span class="sxs-lookup"><span data-stu-id="b6bb8-106">The Lync Server 2013 User Replicator service initial synchronization process occurs when the Lync Server 2013 Front End Server is started for the first time.</span></span> <span data-ttu-id="b6bb8-107">Successivamente la sincronizzazione viene basata sull'intervallo di User Replicator.</span><span class="sxs-lookup"><span data-stu-id="b6bb8-107">After that, the synchronization is then based on the User Replicator interval.</span></span> <span data-ttu-id="b6bb8-108">Eseguire la procedura seguente per verificare che la replica degli utenti sia completata prima di eseguire il cmdlet **Move-CsLegacyUser**.</span><span class="sxs-lookup"><span data-stu-id="b6bb8-108">Complete the following steps to verify user replication has completed before running the **Move-CsLegacyUser** cmdlet.</span></span>
 
 <div>
 
-## <a name="to-verify-that-user-replication-has-completed"></a><span data-ttu-id="7aaae-109">Per verificare che la replica dell'utente sia stata completata</span><span class="sxs-lookup"><span data-stu-id="7aaae-109">To verify that user replication has completed</span></span>
+## <a name="to-verify-that-user-replication-has-completed"></a><span data-ttu-id="b6bb8-109">Per verificare che la replica degli utenti sia stata completata</span><span class="sxs-lookup"><span data-stu-id="b6bb8-109">To verify that user replication has completed</span></span>
 
-1.  <span data-ttu-id="7aaae-110">Dal server front-end di Lync Server 2013 fare clic sul menu **Start** e quindi su **Esegui**.</span><span class="sxs-lookup"><span data-stu-id="7aaae-110">From the Lync Server 2013 Front End server, click the **Start** menu, and then click **Run**.</span></span>
+1.  <span data-ttu-id="b6bb8-110">Dal front end server Lync Server 2013 fare clic sul pulsante **Start** e quindi su **Esegui**.</span><span class="sxs-lookup"><span data-stu-id="b6bb8-110">From the Lync Server 2013 Front End server, click the **Start** menu, and then click **Run**.</span></span>
 
-2.  <span data-ttu-id="7aaae-111">Immettere **eventvwr. exe** e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="7aaae-111">Enter **eventvwr.exe** and then click **OK**.</span></span>
+2.  <span data-ttu-id="b6bb8-111">Digitare **eventvwr.exe** e fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="b6bb8-111">Enter **eventvwr.exe** and then click **OK**.</span></span>
 
-3.  <span data-ttu-id="7aaae-112">Nel Visualizzatore eventi fare clic su **registri applicazioni e servizi** per espanderlo e quindi selezionare Lync Server.</span><span class="sxs-lookup"><span data-stu-id="7aaae-112">In Event Viewer, click **Applications and Services logs** to expand it, and then select Lync Server.</span></span>
+3.  <span data-ttu-id="b6bb8-112">Nel Visualizzatore eventi fare clic su **Registri applicazioni e servizi** per espanderlo, quindi selezionare Lync Server</span><span class="sxs-lookup"><span data-stu-id="b6bb8-112">In Event Viewer, click **Applications and Services logs** to expand it, and then select Lync Server.</span></span>
 
-4.  <span data-ttu-id="7aaae-113">Nel riquadro **azioni** fare clic su **Filtra log corrente**.</span><span class="sxs-lookup"><span data-stu-id="7aaae-113">In the **Actions** pane click **Filter Current Log**.</span></span>
+4.  <span data-ttu-id="b6bb8-113">Nel riquadro **Azioni** fare clic su **Filtro registro corrente**.</span><span class="sxs-lookup"><span data-stu-id="b6bb8-113">In the **Actions** pane click **Filter Current Log**.</span></span>
 
-5.  <span data-ttu-id="7aaae-114">Nell'elenco **origini eventi** fare clic su **LS User Replicator**.</span><span class="sxs-lookup"><span data-stu-id="7aaae-114">From the **Event sources** list, click **LS User Replicator**.</span></span>
+5.  <span data-ttu-id="b6bb8-114">Nell'elenco **Origini eventi** fare clic su **LS User Replicator**.</span><span class="sxs-lookup"><span data-stu-id="b6bb8-114">From the **Event sources** list, click **LS User Replicator**.</span></span>
 
-6.  <span data-ttu-id="7aaae-115">In \*\* \<tutti gli ID\> evento\*\* immettere **30024** e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="7aaae-115">In **\<All Event IDs\>** enter **30024** and then click **OK**.</span></span>
+6.  <span data-ttu-id="b6bb8-115">In \*\* \<tutti gli ID\> evento\*\* immettere **30024** e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="b6bb8-115">In **\<All Event IDs\>** enter **30024** and then click **OK**.</span></span>
 
-7.  <span data-ttu-id="7aaae-116">Nell'elenco eventi filtrati, nella scheda **generale** , cercare una voce che indica che la replica degli utenti è stata completata correttamente.</span><span class="sxs-lookup"><span data-stu-id="7aaae-116">In the filtered events list, on the **General** tab, look for an entry that states user replication has completed successfully.</span></span>
+7.  <span data-ttu-id="b6bb8-116">Nella scheda **Generale** dell'elenco degli eventi filtrati cercare una voce in cui viene indicato che la replica utente è stata completata correttamente.</span><span class="sxs-lookup"><span data-stu-id="b6bb8-116">In the filtered events list, on the **General** tab, look for an entry that states user replication has completed successfully.</span></span>
 
 </div>
 

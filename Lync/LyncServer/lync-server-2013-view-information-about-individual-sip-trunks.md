@@ -12,20 +12,20 @@ ms:contentKeyID: 49733780
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f18b65d119b917d5ba48ef3e6805e4f70ea482ee
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3163bb6298bef570a68f2fcfd7dec66167549b21
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765647"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029727"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="view-information-about-individual-sip-trunks-in-lync-server-2013"></a><span data-ttu-id="94c30-102">Visualizzare informazioni sui singoli trunk SIP in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="94c30-102">View information about individual SIP trunks in Lync Server 2013</span></span>
+# <a name="view-information-about-individual-sip-trunks-in-lync-server-2013"></a><span data-ttu-id="b6ff0-102">Visualizzare informazioni sui singoli trunk SIP in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b6ff0-102">View information about individual SIP trunks in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41765647"
 
 <span> </span>
 
-<span data-ttu-id="94c30-103">_**Argomento Ultima modifica:** 2013-02-21_</span><span class="sxs-lookup"><span data-stu-id="94c30-103">_**Topic Last Modified:** 2013-02-21_</span></span>
+<span data-ttu-id="b6ff0-103">_**Ultimo argomento modificato:** 2013-02-21_</span><span class="sxs-lookup"><span data-stu-id="b6ff0-103">_**Topic Last Modified:** 2013-02-21_</span></span>
 
-<span data-ttu-id="94c30-104">I trunk SIP vengono usati per connettere la rete Voice over IP di Lync Server 2013 con la rete telefonica pubblica commutata.</span><span class="sxs-lookup"><span data-stu-id="94c30-104">SIP trunks are used to connect Lync Server 2013 Voice over IP phone network with the Public Switched Telephone Network.</span></span> <span data-ttu-id="94c30-105">Nella versione precedente del prodotto Trunks veniva usato per instradare le chiamate in uscita da un Mediation Server a un gateway PSTN e ogni gateway era limitato a un singolo trunk.</span><span class="sxs-lookup"><span data-stu-id="94c30-105">In previous version of the product, trunks were used to route outbound calls from a Mediation Server to a PSTN gateway and each gateway was limited to a single trunk.</span></span> <span data-ttu-id="94c30-106">Di conseguenza, un gateway PSTN e un trunk SIP erano essenzialmente identici.</span><span class="sxs-lookup"><span data-stu-id="94c30-106">As a result, a PSTN gateway and a SIP trunk were essentially identical.</span></span> <span data-ttu-id="94c30-107">Per gli amministratori, ciò significava che potevano visualizzare informazioni su un singolo trunk SIP semplicemente visualizzando le informazioni sul gateway PSTN associato.</span><span class="sxs-lookup"><span data-stu-id="94c30-107">For administrators, that meant they could view information about an individual SIP trunk simply by viewing information about the associated PSTN gateway.</span></span>
+<span data-ttu-id="b6ff0-104">I trunk SIP vengono utilizzati per connettere la rete telefonica di Lync Server 2013 Voice over IP con la rete telefonica pubblica commutata.</span><span class="sxs-lookup"><span data-stu-id="b6ff0-104">SIP trunks are used to connect Lync Server 2013 Voice over IP phone network with the Public Switched Telephone Network.</span></span> <span data-ttu-id="b6ff0-105">Nella versione precedente del prodotto i trunk vengono utilizzati per instradare le chiamate in uscita da un Mediation Server a un gateway PSTN e ogni gateway è limitato a un singolo trunk.</span><span class="sxs-lookup"><span data-stu-id="b6ff0-105">In previous version of the product, trunks were used to route outbound calls from a Mediation Server to a PSTN gateway and each gateway was limited to a single trunk.</span></span> <span data-ttu-id="b6ff0-106">Un gateway PSTN e un trunk SIP in questo caso pertanto sono essenzialmente identici.</span><span class="sxs-lookup"><span data-stu-id="b6ff0-106">As a result, a PSTN gateway and a SIP trunk were essentially identical.</span></span> <span data-ttu-id="b6ff0-107">Per gli amministratori, questo significa che possono visualizzare le informazioni relative a un trunk SIP semplicemente visualizzando le informazioni relative al gateway PSTN associato.</span><span class="sxs-lookup"><span data-stu-id="b6ff0-107">For administrators, that meant they could view information about an individual SIP trunk simply by viewing information about the associated PSTN gateway.</span></span>
 
-<span data-ttu-id="94c30-108">In Lync Server 2013, tuttavia, è ora possibile assegnare più trunk a un singolo gateway PSTN. Ciò significa che i gateway e i trunk non sono più uno e lo stesso.</span><span class="sxs-lookup"><span data-stu-id="94c30-108">In Lync Server 2013, however, multiple trunks can now be assigned to a single PSTN gateway; this means that gateways and trunks are no longer one and the same.</span></span> <span data-ttu-id="94c30-109">A sua volta, ciò significa che gli amministratori devono usare il nuovo cmdlet [Get-CsTrunk](https://docs.microsoft.com/powershell/module/skype/Get-CsTrunk) per visualizzare informazioni su un singolo trunk SIP.</span><span class="sxs-lookup"><span data-stu-id="94c30-109">In turn, that means that administrators must use the new [Get-CsTrunk](https://docs.microsoft.com/powershell/module/skype/Get-CsTrunk) cmdlet in order to view information about an individual SIP trunk.</span></span>
+<span data-ttu-id="b6ff0-108">In Lync Server 2013, tuttavia, è ora possibile assegnare più trunk a un singolo gateway PSTN. Questo significa che i gateway e i trunk non sono più uguali.</span><span class="sxs-lookup"><span data-stu-id="b6ff0-108">In Lync Server 2013, however, multiple trunks can now be assigned to a single PSTN gateway; this means that gateways and trunks are no longer one and the same.</span></span> <span data-ttu-id="b6ff0-109">Questo di conseguenza significa che gli amministratori devono utilizzare il nuovo cmdlet [Get-CsTrunk](https://docs.microsoft.com/powershell/module/skype/Get-CsTrunk) per visualizzare le informazioni relative a un singolo trunk SIP.</span><span class="sxs-lookup"><span data-stu-id="b6ff0-109">In turn, that means that administrators must use the new [Get-CsTrunk](https://docs.microsoft.com/powershell/module/skype/Get-CsTrunk) cmdlet in order to view information about an individual SIP trunk.</span></span>
 
-<span data-ttu-id="94c30-110">Il cmdlet Get-CsTrunk può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="94c30-110">The Get-CsTrunk cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="94c30-111">Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.</span><span class="sxs-lookup"><span data-stu-id="94c30-111">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
+<span data-ttu-id="b6ff0-110">Il cmdlet Get-CsTrunk può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="b6ff0-110">The Get-CsTrunk cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="b6ff0-111">Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.</span><span class="sxs-lookup"><span data-stu-id="b6ff0-111">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
 
 <div>
 
-## <a name="to-view-information-for-all-your-sip-trunks"></a><span data-ttu-id="94c30-112">Per visualizzare le informazioni per tutti i trunk SIP</span><span class="sxs-lookup"><span data-stu-id="94c30-112">To view information for all your SIP trunks</span></span>
+## <a name="to-view-information-for-all-your-sip-trunks"></a><span data-ttu-id="b6ff0-112">Per visualizzare informazioni su tutti i trunk SIP</span><span class="sxs-lookup"><span data-stu-id="b6ff0-112">To view information for all your SIP trunks</span></span>
 
-  - <span data-ttu-id="94c30-113">Il comando seguente restituisce informazioni su tutti i trunk SIP in uso nell'organizzazione:</span><span class="sxs-lookup"><span data-stu-id="94c30-113">The following command returns information about all the SIP trunks in use in your organization:</span></span>
+  - <span data-ttu-id="b6ff0-113">Il comando seguente restituisce informazioni su tutti i trunk SIP in uso nell'organizzazione:</span><span class="sxs-lookup"><span data-stu-id="b6ff0-113">The following command returns information about all the SIP trunks in use in your organization:</span></span>
     
         Get-CsTrunk
 
@@ -55,9 +55,9 @@ ms.locfileid: "41765647"
 
 <div>
 
-## <a name="to-view-information-for-a-specific-sip-trunk"></a><span data-ttu-id="94c30-114">Per visualizzare le informazioni relative a un trunk SIP specifico</span><span class="sxs-lookup"><span data-stu-id="94c30-114">To view information for a specific SIP trunk</span></span>
+## <a name="to-view-information-for-a-specific-sip-trunk"></a><span data-ttu-id="b6ff0-114">Per visualizzare le informazioni relative a uno specifico trunk SIP</span><span class="sxs-lookup"><span data-stu-id="b6ff0-114">To view information for a specific SIP trunk</span></span>
 
-  - <span data-ttu-id="94c30-115">Questo comando restituisce solo le informazioni per il trunk SIP con Identity PstnGateway: 192.168.0.240:</span><span class="sxs-lookup"><span data-stu-id="94c30-115">This command returns information only for the SIP trunk with the Identity PstnGateway:192.168.0.240:</span></span>
+  - <span data-ttu-id="b6ff0-115">Questo comando restituisce informazioni solo sul trunk SIP con l'identità (Identity) PstnGateway:192.168.0.240:</span><span class="sxs-lookup"><span data-stu-id="b6ff0-115">This command returns information only for the SIP trunk with the Identity PstnGateway:192.168.0.240:</span></span>
     
         Get-CsTrunk -Identity "PstnGateway:192.168.0.240"
 
@@ -65,9 +65,9 @@ ms.locfileid: "41765647"
 
 <div>
 
-## <a name="viewing-information-for-all-the-sip-trunks-assigned-to-a-pool"></a><span data-ttu-id="94c30-116">Visualizzazione di informazioni per tutti i trunk SIP assegnati a un pool</span><span class="sxs-lookup"><span data-stu-id="94c30-116">Viewing Information for All the SIP Trunks Assigned to a Pool</span></span>
+## <a name="viewing-information-for-all-the-sip-trunks-assigned-to-a-pool"></a><span data-ttu-id="b6ff0-116">Visualizzazione delle informazioni relative a tutti i trunk SIP assegnati a un pool</span><span class="sxs-lookup"><span data-stu-id="b6ff0-116">Viewing Information for All the SIP Trunks Assigned to a Pool</span></span>
 
-  - <span data-ttu-id="94c30-117">In questo esempio vengono restituite le informazioni per tutti i trunk SIP assegnati al pool atl-cs-001.litwareinc.com:</span><span class="sxs-lookup"><span data-stu-id="94c30-117">In this example, information is returned for all the SIP trunks assigned to the pool atl-cs-001.litwareinc.com:</span></span>
+  - <span data-ttu-id="b6ff0-117">In questo esempio vengono restituite le informazioni su tutti i trunk SIP assegnati al pool atl-cs-001.litwareinc.com:</span><span class="sxs-lookup"><span data-stu-id="b6ff0-117">In this example, information is returned for all the SIP trunks assigned to the pool atl-cs-001.litwareinc.com:</span></span>
     
         Get-CsTrunk -PoolFqdn "atl-cs-001.litwareinc.com"
 

@@ -12,20 +12,20 @@ ms:contentKeyID: 48185978
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ce76166c44f7b35781c6181ac37191bad784fa74
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5a6cd1ea107dee9a32d695bf51e7b6998542fc76
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742206"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030219"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="lync-server-management-shell-configuration-cmdlets-in-lync-server-2013"></a><span data-ttu-id="db541-102">Cmdlet di configurazione di Lync Server Management Shell in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="db541-102">Lync Server Management Shell configuration cmdlets in Lync Server 2013</span></span>
+# <a name="lync-server-management-shell-configuration-cmdlets-in-lync-server-2013"></a><span data-ttu-id="cbc1a-102">Cmdlet di configurazione di Lync Server Management Shell in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="cbc1a-102">Lync Server Management Shell configuration cmdlets in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,41 +35,41 @@ ms.locfileid: "41742206"
 
 <span> </span>
 
-<span data-ttu-id="db541-103">_**Argomento Ultima modifica:** 2012-03-21_</span><span class="sxs-lookup"><span data-stu-id="db541-103">_**Topic Last Modified:** 2012-03-21_</span></span>
+<span data-ttu-id="cbc1a-103">_**Ultimo argomento modificato:** 2012-03-21_</span><span class="sxs-lookup"><span data-stu-id="cbc1a-103">_**Topic Last Modified:** 2012-03-21_</span></span>
 
-<span data-ttu-id="db541-104">Lync Server Management Shell è un'implementazione della finestra di comando di Windows PowerShell con cmdlet specifici per la gestione di Microsoft Lync Server 2010 precaricato nell'ambiente.</span><span class="sxs-lookup"><span data-stu-id="db541-104">The Lync Server Management Shell is an implementation of the Windows PowerShell command window with cmdlets specific to managing Microsoft Lync Server 2010 pre-loaded in the environment.</span></span> <span data-ttu-id="db541-105">Questi cmdlet consentono di personalizzare l'ambiente.</span><span class="sxs-lookup"><span data-stu-id="db541-105">These cmdlets allow you to customize that environment.</span></span>
+<span data-ttu-id="cbc1a-104">Lync Server Management Shell è un'implementazione della finestra di comando di Windows PowerShell con cmdlet specifici per la gestione di Microsoft Lync Server 2010 precaricati nell'ambiente.</span><span class="sxs-lookup"><span data-stu-id="cbc1a-104">The Lync Server Management Shell is an implementation of the Windows PowerShell command window with cmdlets specific to managing Microsoft Lync Server 2010 pre-loaded in the environment.</span></span> <span data-ttu-id="cbc1a-105">Questi cmdlet consentono di personalizzare l'ambiente.</span><span class="sxs-lookup"><span data-stu-id="cbc1a-105">These cmdlets allow you to customize that environment.</span></span>
 
 <div>
 
-## <a name="lync-server-management-shell-configuration-cmdlets"></a><span data-ttu-id="db541-106">Cmdlet di configurazione di Lync Server Management Shell</span><span class="sxs-lookup"><span data-stu-id="db541-106">Lync Server Management Shell Configuration Cmdlets</span></span>
+## <a name="lync-server-management-shell-configuration-cmdlets"></a><span data-ttu-id="cbc1a-106">Cmdlet per la configurazione di Lync Server Management Shell</span><span class="sxs-lookup"><span data-stu-id="cbc1a-106">Lync Server Management Shell Configuration Cmdlets</span></span>
 
-<span data-ttu-id="db541-107">Usa questi cmdlet per impostare alcune proprietà personalizzate di Lync Server Management Shell.</span><span class="sxs-lookup"><span data-stu-id="db541-107">Use these cmdlets to set certain custom properties of the Lync Server Management Shell.</span></span>
-
-  - <span></span>  
-    <span data-ttu-id="db541-108">[Get-CsUICulture](https://technet.microsoft.com/en-us/library/Gg412900(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="db541-108">[Get-CsUICulture](https://technet.microsoft.com/en-us/library/Gg412900(v=OCS.15))</span></span>
+<span data-ttu-id="cbc1a-107">Utilizzare questi cmdlet per impostare determinate proprietà personalizzate di Lync Server Management Shell.</span><span class="sxs-lookup"><span data-stu-id="cbc1a-107">Use these cmdlets to set certain custom properties of the Lync Server Management Shell.</span></span>
 
   - <span></span>  
-    <span data-ttu-id="db541-109">[Set-CsUICulture](https://technet.microsoft.com/en-us/library/Gg398354(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="db541-109">[Set-CsUICulture](https://technet.microsoft.com/en-us/library/Gg398354(v=OCS.15))</span></span>
+    <span data-ttu-id="cbc1a-108">[Get-CsUICulture](https://technet.microsoft.com/library/Gg412900(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="cbc1a-108">[Get-CsUICulture](https://technet.microsoft.com/library/Gg412900(v=OCS.15))</span></span>
+
+  - <span></span>  
+    <span data-ttu-id="cbc1a-109">[Set-CsUICulture](https://technet.microsoft.com/library/Gg398354(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="cbc1a-109">[Set-CsUICulture](https://technet.microsoft.com/library/Gg398354(v=OCS.15))</span></span>
 
 <!-- end list -->
 
   - <span></span>  
-    <span data-ttu-id="db541-110">[Get-CsManagementConnection](https://technet.microsoft.com/en-us/library/Gg412849(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="db541-110">[Get-CsManagementConnection](https://technet.microsoft.com/en-us/library/Gg412849(v=OCS.15))</span></span>
+    <span data-ttu-id="cbc1a-110">[Get-CsManagementConnection](https://technet.microsoft.com/library/Gg412849(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="cbc1a-110">[Get-CsManagementConnection](https://technet.microsoft.com/library/Gg412849(v=OCS.15))</span></span>
 
   - <span></span>  
-    <span data-ttu-id="db541-111">[Remove-CsManagementConnection](https://technet.microsoft.com/en-us/library/Gg425803(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="db541-111">[Remove-CsManagementConnection](https://technet.microsoft.com/en-us/library/Gg425803(v=OCS.15))</span></span>
+    <span data-ttu-id="cbc1a-111">[Remove-CsManagementConnection](https://technet.microsoft.com/library/Gg425803(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="cbc1a-111">[Remove-CsManagementConnection](https://technet.microsoft.com/library/Gg425803(v=OCS.15))</span></span>
 
   - <span></span>  
-    <span data-ttu-id="db541-112">[Set-CsManagementConnection](https://technet.microsoft.com/en-us/library/Gg413045(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="db541-112">[Set-CsManagementConnection](https://technet.microsoft.com/en-us/library/Gg413045(v=OCS.15))</span></span>
+    <span data-ttu-id="cbc1a-112">[Set-CsManagementConnection](https://technet.microsoft.com/library/Gg413045(v=OCS.15))</span><span class="sxs-lookup"><span data-stu-id="cbc1a-112">[Set-CsManagementConnection](https://technet.microsoft.com/library/Gg413045(v=OCS.15))</span></span>
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="db541-113">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="db541-113">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="cbc1a-113">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="cbc1a-113">See Also</span></span>
 
 
-[<span data-ttu-id="db541-114">Blog di PowerShell per Lync Server</span><span class="sxs-lookup"><span data-stu-id="db541-114">Lync Server PowerShell Blog</span></span>](http://go.microsoft.com/fwlink/p/?linkid=203150)  
+[<span data-ttu-id="cbc1a-114">Blog di PowerShell per Lync Server</span><span class="sxs-lookup"><span data-stu-id="cbc1a-114">Lync Server PowerShell Blog</span></span>](http://go.microsoft.com/fwlink/p/?linkid=203150)  
   
 
 </div>

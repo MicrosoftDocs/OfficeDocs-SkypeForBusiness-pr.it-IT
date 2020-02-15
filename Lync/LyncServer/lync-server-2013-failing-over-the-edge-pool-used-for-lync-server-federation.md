@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Failover del pool di server perimetrali utilizzato per la federazione di Lync Server'
+title: 'Lync Server 2013: failover del pool di server perimetrali utilizzato per la Federazione di Lync'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733665
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f144def3d3a8df9cc63221342a85666eb3c28913
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f884f9e2ee822e99ebb17bd4b17717d1e147bf95
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765194"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030429"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="failing-over-the-edge-pool-used-for-lync-server-federation-in-lync-server-2013"></a><span data-ttu-id="28b4d-102">Failover del pool di server perimetrali utilizzato per la federazione di Lync Server in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="28b4d-102">Failing over the Edge pool used for Lync Server federation in Lync Server 2013</span></span>
+# <a name="failing-over-the-edge-pool-used-for-lync-server-federation-in-lync-server-2013"></a><span data-ttu-id="31eec-102">Failover del pool di server perimetrali utilizzato per la Federazione di Lync ServerAnalysis in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="31eec-102">Failing over the Edge pool used for Lync Server federation in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,42 +35,42 @@ ms.locfileid: "41765194"
 
 <span> </span>
 
-<span data-ttu-id="28b4d-103">_**Argomento Ultima modifica:** 2012-09-17_</span><span class="sxs-lookup"><span data-stu-id="28b4d-103">_**Topic Last Modified:** 2012-09-17_</span></span>
+<span data-ttu-id="31eec-103">_**Ultimo argomento modificato:** 2012-09-17_</span><span class="sxs-lookup"><span data-stu-id="31eec-103">_**Topic Last Modified:** 2012-09-17_</span></span>
 
-<span data-ttu-id="28b4d-104">Se il pool di Edge in cui è configurata la Federazione di Lync Server è configurato, è necessario cambiare la Federazione per usare un pool di bordi diverso per la Federazione.</span><span class="sxs-lookup"><span data-stu-id="28b4d-104">If the Edge pool where you have Lync Server federation configured goes down, you must change federation to use a different Edge pool for federation to work.</span></span>
+<span data-ttu-id="31eec-104">Se il pool di server perimetrali in cui è stato configurata la federazione di Lync Server diventa non disponibile, è necessario modificare la federazione in modo da utilizzare un pool di server perimetrali diverso, affinché la federazione funzioni.</span><span class="sxs-lookup"><span data-stu-id="31eec-104">If the Edge pool where you have Lync Server federation configured goes down, you must change federation to use a different Edge pool for federation to work.</span></span>
 
 <div>
 
-## <a name="failing-over-the-edge-pool-used-for-lync-server-federation"></a><span data-ttu-id="28b4d-105">Non superato il pool di Edge usato per la Federazione di Lync Server</span><span class="sxs-lookup"><span data-stu-id="28b4d-105">Failing Over the Edge Pool Used for Lync Server Federation</span></span>
+## <a name="failing-over-the-edge-pool-used-for-lync-server-federation"></a><span data-ttu-id="31eec-105">Failover del pool di server perimetrali utilizzato per la federazione di Lync Server</span><span class="sxs-lookup"><span data-stu-id="31eec-105">Failing Over the Edge Pool Used for Lync Server Federation</span></span>
 
-1.  <span data-ttu-id="28b4d-106">In un server front-end aprire Generatore di topologia.</span><span class="sxs-lookup"><span data-stu-id="28b4d-106">On a Front End server, open Topology Builder.</span></span> <span data-ttu-id="28b4d-107">Espandere **pool di bordi**e quindi fare clic con il pulsante destro del mouse sull'Edge Server o sul pool di Edge Server attualmente configurato per la Federazione.</span><span class="sxs-lookup"><span data-stu-id="28b4d-107">Expand **Edge pools**, then right click the Edge server or Edge server pool that is currently configured for Federation.</span></span> <span data-ttu-id="28b4d-108">Selezionare **modifica proprietà**.</span><span class="sxs-lookup"><span data-stu-id="28b4d-108">Select **Edit properties**.</span></span>
+1.  <span data-ttu-id="31eec-p101">In un Front End Server aprire Generatore di topologie. Espandere **Pool di server perimetrali** e quindi fare clic con il pulsante destro del mouse sul server perimetrale o sul pool di server perimetrali attualmente configurato per la federazione. Scegliere **Modifica proprietà**.</span><span class="sxs-lookup"><span data-stu-id="31eec-p101">On a Front End server, open Topology Builder. Expand **Edge pools**, then right click the Edge server or Edge server pool that is currently configured for Federation. Select **Edit properties**.</span></span>
 
-2.  <span data-ttu-id="28b4d-109">In **modifica proprietà** in **generale**deselezionare **Abilita federazione per questo pool di bordi (porta 5061)**.</span><span class="sxs-lookup"><span data-stu-id="28b4d-109">In **Edit Properties** under **General**, clear **Enable federation for this Edge pool (Port 5061)**.</span></span> <span data-ttu-id="28b4d-110">Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="28b4d-110">Click **OK**.</span></span>
+2.  <span data-ttu-id="31eec-p102">In **Modifica proprietà** in **Generale** deselezionare **Abilita federazione per pool di server perimetrali (porta 5061)**. Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="31eec-p102">In **Edit Properties** under **General**, clear **Enable federation for this Edge pool (Port 5061)**. Click **OK**.</span></span>
 
-3.  <span data-ttu-id="28b4d-111">Espandere **pool di bordi**e quindi fare clic con il pulsante destro del mouse sull'Edge Server o sul pool di Edge Server che si desidera utilizzare per la Federazione.</span><span class="sxs-lookup"><span data-stu-id="28b4d-111">Expand **Edge pools**, then right click the Edge server or Edge server pool that you now want to use for Federation.</span></span> <span data-ttu-id="28b4d-112">Selezionare **modifica proprietà**.</span><span class="sxs-lookup"><span data-stu-id="28b4d-112">Select **Edit properties**.</span></span>
+3.  <span data-ttu-id="31eec-p103">Espandere **Pool di server perimetrali** e quindi fare clic con il pulsante destro del mouse sul server perimetrale o sul pool di server perimetrali che si desidera utilizzare per la federazione. Scegliere **Modifica proprietà**</span><span class="sxs-lookup"><span data-stu-id="31eec-p103">Expand **Edge pools**, then right click the Edge server or Edge server pool that you now want to use for Federation. Select **Edit properties**.</span></span>
 
-4.  <span data-ttu-id="28b4d-113">In **modifica proprietà** in **generale**Selezionare **Abilita federazione per questo pool di bordi (porta 5061)**.</span><span class="sxs-lookup"><span data-stu-id="28b4d-113">In **Edit Properties** under **General**, select **Enable federation for this Edge pool (Port 5061)**.</span></span> <span data-ttu-id="28b4d-114">Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="28b4d-114">Click **OK**.</span></span>
+4.  <span data-ttu-id="31eec-p104">In **Modifica proprietà** in **Generale** selezionare **Abilita federazione per pool di server perimetrali (porta 5061)**. Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="31eec-p104">In **Edit Properties** under **General**, select **Enable federation for this Edge pool (Port 5061)**. Click **OK**.</span></span>
 
-5.  <span data-ttu-id="28b4d-115">Fare clic su **azione**, selezionare **topologia**, quindi **pubblica**.</span><span class="sxs-lookup"><span data-stu-id="28b4d-115">Click **Action**, select **Topology**, select **Publish**.</span></span> <span data-ttu-id="28b4d-116">Quando viene richiesto di **pubblicare la topologia**, fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="28b4d-116">When prompted on **Publish the topology**, click **Next**.</span></span> <span data-ttu-id="28b4d-117">Al termine della pubblicazione, fare clic su **fine**.</span><span class="sxs-lookup"><span data-stu-id="28b4d-117">When the Publish is finished, click **Finish**.</span></span>
+5.  <span data-ttu-id="31eec-p105">Fare clic su **Azione**, selezionare **Topologia** e **Pubblica**. Quando viene richiesto in **Pubblicare la topologia** fare clic su **Avanti**. Dopo il completamento della pubblicazione fare clic su **Fine**.</span><span class="sxs-lookup"><span data-stu-id="31eec-p105">Click **Action**, select **Topology**, select **Publish**. When prompted on **Publish the topology**, click **Next**. When the Publish is finished, click **Finish**.</span></span>
 
-6.  <span data-ttu-id="28b4d-118">Nell'Edge Server aprire la distribuzione guidata di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="28b4d-118">On the Edge server, open the Lync Server Deployment wizard.</span></span> <span data-ttu-id="28b4d-119">Fare clic su **Installa o aggiorna Lync Server System**, quindi fare clic su **Imposta o Rimuovi componenti di Lync Server**.</span><span class="sxs-lookup"><span data-stu-id="28b4d-119">Click **Install or Update Lync Server System**, then click **Setup or Remove Lync Server Components**.</span></span> <span data-ttu-id="28b4d-120">Fare di nuovo clic su **Esegui**.</span><span class="sxs-lookup"><span data-stu-id="28b4d-120">Click **Run Again**.</span></span>
+6.  <span data-ttu-id="31eec-p106">Nel server perimetrale aprire la Distribuzione guidata di Lync Server. Fare clic su **Installa o aggiorna il sistema Lync Server** e quindi su **Installazione o rimozione componenti di Lync Server**. Fare clic su **Riesegui**.</span><span class="sxs-lookup"><span data-stu-id="31eec-p106">On the Edge server, open the Lync Server Deployment wizard. Click **Install or Update Lync Server System**, then click **Setup or Remove Lync Server Components**. Click **Run Again**.</span></span>
 
-7.  <span data-ttu-id="28b4d-121">In configurazione componenti di Lync Server fare clic su **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="28b4d-121">At Setup Lync Server components, click **Next**.</span></span> <span data-ttu-id="28b4d-122">La schermata di riepilogo mostrerà le azioni Man mano che vengono eseguite.</span><span class="sxs-lookup"><span data-stu-id="28b4d-122">The summary screen will show actions as they are executed.</span></span> <span data-ttu-id="28b4d-123">Dopo aver completato la distribuzione, fare clic su **Visualizza log** per visualizzare i file di log disponibili.</span><span class="sxs-lookup"><span data-stu-id="28b4d-123">Once the deployment is done, click **View Log** to view available log files.</span></span> <span data-ttu-id="28b4d-124">Fare clic su **fine** per completare la distribuzione.</span><span class="sxs-lookup"><span data-stu-id="28b4d-124">Click **Finish** to complete the deployment.</span></span>
+7.  <span data-ttu-id="31eec-p107">In Installazione componenti di Lync Server fare clic su **Avanti**. Nella schermata di riepilogo verranno visualizzate le azioni in esecuzione. Al termine della distribuzione, fare clic su **Visualizza log** per visualizzare i file di log disponibili. Fare clic su **Fine** per completare la distribuzione.</span><span class="sxs-lookup"><span data-stu-id="31eec-p107">At Setup Lync Server components, click **Next**. The summary screen will show actions as they are executed. Once the deployment is done, click **View Log** to view available log files. Click **Finish** to complete the deployment.</span></span>
     
-    <span data-ttu-id="28b4d-125">Se il sito che contiene il pool di Edge non riuscito contiene server front-end ancora in corso, è necessario aggiornare il servizio servizi di conferenza Web e il servizio di conferenza telefonica a/V in questi pool di front-end per usare un pool di Edge in un sito remoto ancora in corso.</span><span class="sxs-lookup"><span data-stu-id="28b4d-125">If the site containing the failed Edge pool contains Front End Servers that are still running, you must update the Web Conferencing Service and A/V Conferencing Service on these Front End pools to use an Edge pool in a remote site that is still running.</span></span> <span data-ttu-id="28b4d-126">Per altre informazioni, vedere [modifica del pool di bordi associato a un pool Front-end in Lync Server 2013](lync-server-2013-changing-the-edge-pool-associated-with-a-front-end-pool.md).</span><span class="sxs-lookup"><span data-stu-id="28b4d-126">For more information, see [Changing the Edge pool associated with a Front End pool in Lync Server 2013](lync-server-2013-changing-the-edge-pool-associated-with-a-front-end-pool.md).</span></span>
+    <span data-ttu-id="31eec-125">Se il sito che contiene il pool di server perimetrali in errore contiene Front End Server ancora in esecuzione, è necessario aggiornare il servizio Web Conferencing e il servizio A/V Conferencing in questi pool Front End per l'utilizzo di un pool di server perimetrali in un sito remoto ancora funzionante.</span><span class="sxs-lookup"><span data-stu-id="31eec-125">If the site containing the failed Edge pool contains Front End Servers that are still running, you must update the Web Conferencing Service and A/V Conferencing Service on these Front End pools to use an Edge pool in a remote site that is still running.</span></span> <span data-ttu-id="31eec-126">Per ulteriori informazioni, vedere [Changing the Edge pool associato a un pool Front end in Lync Server 2013](lync-server-2013-changing-the-edge-pool-associated-with-a-front-end-pool.md).</span><span class="sxs-lookup"><span data-stu-id="31eec-126">For more information, see [Changing the Edge pool associated with a Front End pool in Lync Server 2013](lync-server-2013-changing-the-edge-pool-associated-with-a-front-end-pool.md).</span></span>
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="28b4d-127">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="28b4d-127">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="31eec-127">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="31eec-127">See Also</span></span>
 
 
-[<span data-ttu-id="28b4d-128">Failover del pool di server perimetrali utilizzato per la federazione di XMPP in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="28b4d-128">Failing over the Edge pool used for XMPP federation in Lync Server 2013</span></span>](lync-server-2013-failing-over-the-edge-pool-used-for-xmpp-federation.md)  
-[<span data-ttu-id="28b4d-129">Failback del pool di server perimetrali utilizzato per la federazione di Lync Server o di XMPP in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="28b4d-129">Failing back the Edge pool used for Lync Server federation or XMPP federation in Lync Server 2013</span></span>](lync-server-2013-failing-back-the-edge-pool-used-for-lync-server-federation-or-xmpp-federation.md)  
+[<span data-ttu-id="31eec-128">Failover del pool di server perimetrali utilizzato per la Federazione XMPP in Lync 2013</span><span class="sxs-lookup"><span data-stu-id="31eec-128">Failing over the Edge pool used for XMPP federation in Lync Server 2013</span></span>](lync-server-2013-failing-over-the-edge-pool-used-for-xmpp-federation.md)  
+[<span data-ttu-id="31eec-129">Failover del pool di server perimetrali utilizzato per la Federazione di Lync o la Federazione XMPP in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="31eec-129">Failing back the Edge pool used for Lync Server federation or XMPP federation in Lync Server 2013</span></span>](lync-server-2013-failing-back-the-edge-pool-used-for-lync-server-federation-or-xmpp-federation.md)  
 
 
-[<span data-ttu-id="28b4d-130">Ripristino di emergenza dei server perimetrali in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="28b4d-130">Edge Server disaster recovery in Lync Server 2013</span></span>](lync-server-2013-edge-server-disaster-recovery.md)  
+[<span data-ttu-id="31eec-130">Ripristino di emergenza del server perimetrale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="31eec-130">Edge Server disaster recovery in Lync Server 2013</span></span>](lync-server-2013-edge-server-disaster-recovery.md)  
   
 
 </div>

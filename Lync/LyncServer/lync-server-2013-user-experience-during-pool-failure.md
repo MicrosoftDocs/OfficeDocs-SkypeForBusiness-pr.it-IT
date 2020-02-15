@@ -12,20 +12,20 @@ ms:contentKeyID: 48185166
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2e6506ac67415ca19b33ee968d698d0ed574df8d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 98429875ce56371248552eddae9cb7db5e511529
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744596"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42033955"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="user-experience-during-pool-failure-in-lync-server-2013"></a><span data-ttu-id="792a6-102">Esperienza utente durante l'errore del pool in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="792a6-102">User experience during pool failure in Lync Server 2013</span></span>
+# <a name="user-experience-during-pool-failure-in-lync-server-2013"></a><span data-ttu-id="1e3ee-102">Esperienza utente durante un errore del pool in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1e3ee-102">User experience during pool failure in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,35 +35,35 @@ ms.locfileid: "41744596"
 
 <span> </span>
 
-<span data-ttu-id="792a6-103">_**Argomento Ultima modifica:** 2012-10-03_</span><span class="sxs-lookup"><span data-stu-id="792a6-103">_**Topic Last Modified:** 2012-10-03_</span></span>
+<span data-ttu-id="1e3ee-103">_**Ultimo argomento modificato:** 2012-10-03_</span><span class="sxs-lookup"><span data-stu-id="1e3ee-103">_**Topic Last Modified:** 2012-10-03_</span></span>
 
-<span data-ttu-id="792a6-104">Se non è possibile eseguire il failover di un pool, tutti gli utenti del pool interessato saranno costretti a disconnettersi e quindi a eseguire l'accesso al pool di backup.</span><span class="sxs-lookup"><span data-stu-id="792a6-104">If a pool is failed over, all users of the affected pool are forced to sign out and then sign into the backup pool.</span></span> <span data-ttu-id="792a6-105">Per un breve periodo gli utenti che accedono al pool di backup potrebbero essere in modalità resilienza.</span><span class="sxs-lookup"><span data-stu-id="792a6-105">For a brief period users who sign into the backup pool may be in resiliency mode.</span></span> <span data-ttu-id="792a6-106">In modalità resilienza gli utenti non sono in grado di eseguire attività che causerebbero una modifica persistente in Lync Server, ad esempio l'aggiunta di un contatto.</span><span class="sxs-lookup"><span data-stu-id="792a6-106">In Resiliency mode, users are unable to perform tasks that would cause a persistent change on Lync Server, such as adding a contact.</span></span> <span data-ttu-id="792a6-107">Al termine del failover, tutti gli utenti possono ottenere tutti i servizi dal pool di backup.</span><span class="sxs-lookup"><span data-stu-id="792a6-107">After the failover is complete, all users can get all services from the backup pool.</span></span>
+<span data-ttu-id="1e3ee-104">Se si verifica il il failover di un pool, tutti gli utenti del pool interessato sono obbligati a disconnettersi e quindi a connettersi al pool di backup.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-104">If a pool is failed over, all users of the affected pool are forced to sign out and then sign into the backup pool.</span></span> <span data-ttu-id="1e3ee-105">Per un breve periodo di tempo, gli utenti che si connettono al pool di backup possono trovarsi in modalità Resilienza.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-105">For a brief period users who sign into the backup pool may be in resiliency mode.</span></span> <span data-ttu-id="1e3ee-106">In modalità di resilienza, gli utenti non sono in grado di eseguire attività che causerebbero una modifica permanente su Lync Server, ad esempio l'aggiunta di un contatto.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-106">In Resiliency mode, users are unable to perform tasks that would cause a persistent change on Lync Server, such as adding a contact.</span></span> <span data-ttu-id="1e3ee-107">Al termine del failover, tutti gli utenti possono ottenere tutti i servizi dal pool di backup.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-107">After the failover is complete, all users can get all services from the backup pool.</span></span>
 
-<span data-ttu-id="792a6-108">Tutte le sessioni che un utente ha quando il pool non riesce vengono interrotte e l'utente deve ristabilire tali sessioni dopo il failover per continuare.</span><span class="sxs-lookup"><span data-stu-id="792a6-108">Any sessions a user has when the pool fails are disrupted, and the user must re-establish those sessions after failover to continue.</span></span>
+<span data-ttu-id="1e3ee-108">Tutte le sessioni in corso per l'utente al momento del failover del pool vengono interrotte e, per proseguire, l'utente deve ristabilirle dopo il failover.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-108">Any sessions a user has when the pool fails are disrupted, and the user must re-establish those sessions after failover to continue.</span></span>
 
-<span data-ttu-id="792a6-109">Gli utenti non vengono reospitati durante il failover o il failback.</span><span class="sxs-lookup"><span data-stu-id="792a6-109">Users are not rehomed during failover or failback.</span></span> <span data-ttu-id="792a6-110">Gli utenti ospitati in un pool che non riesce verranno temporaneamente serviti dal pool di backup.</span><span class="sxs-lookup"><span data-stu-id="792a6-110">Users who are homed on a pool that fails will be temporarily serviced by the backup pool.</span></span> <span data-ttu-id="792a6-111">Quando il pool Home viene ripristinato, l'amministratore può eseguire il failover di questi utenti per essere serviti dal proprio pool di Home originale.</span><span class="sxs-lookup"><span data-stu-id="792a6-111">When the home pool is restored, the administrator can fail back these users to be serviced by their original home pool.</span></span>
+<span data-ttu-id="1e3ee-p102">Gli utenti non vengono ricollocati durante il failover o il failback. Gli utenti che si trovano in un pool su cui si verifica un problema verranno infatti serviti temporaneamente dal pool di backup. Quando il pool principale viene ripristinato, l'amministratore può eseguire il failback di tali utenti in modo che vengano serviti di nuovo dal rispettivo pool principale originale.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-p102">Users are not rehomed during failover or failback. Users who are homed on a pool that fails will be temporarily serviced by the backup pool. When the home pool is restored, the administrator can fail back these users to be serviced by their original home pool.</span></span>
 
-<span data-ttu-id="792a6-112">Nota in Lync 2013 il database del server delle informazioni sulla posizione non viene replicato nel pool di backup.</span><span class="sxs-lookup"><span data-stu-id="792a6-112">Note in Lync 2013, the Location Information Server database is not replicated to the backup pool.</span></span> <span data-ttu-id="792a6-113">Per le procedure consigliate, l'amministratore deve eseguire regolarmente il backup del database LIS e usare la copia di backup più recente per ripristinare il database LIS nel pool di backup dopo il failover.</span><span class="sxs-lookup"><span data-stu-id="792a6-113">For best practice, the administrator should regularly back up the LIS database and use the latest backup copy to restore the LIS database in the backup pool after the failover.</span></span>
+<span data-ttu-id="1e3ee-112">Nota in Lync 2013, il database del server delle informazioni percorso non viene replicato nel pool di backup.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-112">Note in Lync 2013, the Location Information Server database is not replicated to the backup pool.</span></span> <span data-ttu-id="1e3ee-113">Come procedura consigliata, l'amministratore dovrebbe eseguire con regolarità il backup del database LIS e utilizzare la copia di backup più recente per ripristinare tale database nel pool di backup dopo il failover.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-113">For best practice, the administrator should regularly back up the LIS database and use the latest backup copy to restore the LIS database in the backup pool after the failover.</span></span>
 
 <div>
 
-## <a name="user-experience-during-failover"></a><span data-ttu-id="792a6-114">Esperienza utente durante il failover</span><span class="sxs-lookup"><span data-stu-id="792a6-114">User Experience During Failover</span></span>
+## <a name="user-experience-during-failover"></a><span data-ttu-id="1e3ee-114">Esperienza utente durante il failover</span><span class="sxs-lookup"><span data-stu-id="1e3ee-114">User Experience During Failover</span></span>
 
-<span data-ttu-id="792a6-115">Quando un utente si trova in un pool che non riesce, l'utente viene disconnesso. Qualsiasi sessione peer-to-peer a cui l'utente ha partecipato viene terminata, così come le conferenze organizzate dall'utente.</span><span class="sxs-lookup"><span data-stu-id="792a6-115">When a user is in a pool that fails, the user is logged out. Any peer-to-peer session the user was participating in is terminated, as are conferences organized by that user.</span></span> <span data-ttu-id="792a6-116">L'utente non può eseguire l'accesso finché non scade il timer di resilienza del registrar o l'amministratore avvia procedure di failover, a seconda di quale verrà prima.</span><span class="sxs-lookup"><span data-stu-id="792a6-116">The user cannot log back in until either the registrar resiliency timer expires or the administrator initiates failover procedures, whichever comes first.</span></span> <span data-ttu-id="792a6-117">Quando l'utente esegue il log-in, eseguirà l'accesso al pool di backup.</span><span class="sxs-lookup"><span data-stu-id="792a6-117">When the user logs back in, they will log in to the backup pool.</span></span> <span data-ttu-id="792a6-118">Se l'accesso è avvenuto prima del completamento del failover, sarà in modalità resilienza fino al completamento del failover.</span><span class="sxs-lookup"><span data-stu-id="792a6-118">If they log in before the failover has completed, they will be in Resiliency mode until failover is complete.</span></span> <span data-ttu-id="792a6-119">Solo allora l'utente può stabilire nuove sessioni o ristabilire le sessioni precedenti.</span><span class="sxs-lookup"><span data-stu-id="792a6-119">Only then the user is able to establish new sessions or re-establish previous sessions.</span></span>
+<span data-ttu-id="1e3ee-p104">Quando un utente si trova in un pool su cui si verifica un problema, viene disconnesso. Tutte le sessioni peer-to-peer a cui l'utente stava partecipando vengono terminate, così come le conferenze che ha organizzato. L'utente non può riconnettersi finché non scade il timer di resilienza della funzione di registrazione o finché l'amministratore non avvia le procedure di failover, a seconda di quale di questi eventi avviene per primo. Quando l'utente si riconnette, si riconnetterà al pool di backup. Se si connette prima che il failover sia stato completato, sarà in modalità Resilienza fino al completamento del failover. Solo a quel punto l'utente potrà stabilire nuove sessioni o ristabilire le sessioni precedenti.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-p104">When a user is in a pool that fails, the user is logged out. Any peer-to-peer session the user was participating in is terminated, as are conferences organized by that user. The user cannot log back in until either the registrar resiliency timer expires or the administrator initiates failover procedures, whichever comes first. When the user logs back in, they will log in to the backup pool. If they log in before the failover has completed, they will be in Resiliency mode until failover is complete. Only then the user is able to establish new sessions or re-establish previous sessions.</span></span>
 
 </div>
 
 <div>
 
-## <a name="user-experience-during-failback"></a><span data-ttu-id="792a6-120">Esperienza utente durante il failback</span><span class="sxs-lookup"><span data-stu-id="792a6-120">User Experience During Failback</span></span>
+## <a name="user-experience-during-failback"></a><span data-ttu-id="1e3ee-120">Esperienza utente durante il failback</span><span class="sxs-lookup"><span data-stu-id="1e3ee-120">User Experience During Failback</span></span>
 
-<span data-ttu-id="792a6-121">Il failback del pool può verificarsi mentre un utente interessato ha effettuato l'accesso al pool di backup e l'utente rimane connesso e sta lavorando durante il failback.</span><span class="sxs-lookup"><span data-stu-id="792a6-121">Pool failback can happen while an affected user is logged on to the backup pool, and the user remains logged on and working during the failback.</span></span> <span data-ttu-id="792a6-122">Tieni presente che il processo di failback richiede diversi minuti per il completamento.</span><span class="sxs-lookup"><span data-stu-id="792a6-122">Note that the failback process takes several minute to complete.</span></span><span data-ttu-id="792a6-123">Per riferimento, si prevede di richiedere fino a 60 minuti per un pool di utenti di 20.000.</span><span class="sxs-lookup"><span data-stu-id="792a6-123">  For reference, it is expected to take up to 60 minutes for a pool of 20,000 users.</span></span>
+<span data-ttu-id="1e3ee-p105">Il failback del pool può avvenire mentre un utente interessato è connesso al pool di backup. L'utente rimane connesso e operativo durante il failback. Tale processo viene completato nel giro di diversi minuti. Come riferimento, è previsto che il failback richieda fino a 60 minuti per un pool di 20.000 utenti.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-p105">Pool failback can happen while an affected user is logged on to the backup pool, and the user remains logged on and working during the failback. Note that the failback process takes several minute to complete.  For reference, it is expected to take up to 60 minutes for a pool of 20,000 users.</span></span>
 
-<span data-ttu-id="792a6-124">Nelle tabelle seguenti sono illustrati altri dettagli sul modo in cui un utente con un client Lync 2013 o un client di Microsoft Lync 2010 è interessato durante e dopo il failback e anche in che modo gli utenti di altri pool possono vedere e interagire con un utente in un pool di cui non è stato eseguito il failover.</span><span class="sxs-lookup"><span data-stu-id="792a6-124">The following tables show more details about how a user with a Lync 2013 client or a Microsoft Lync 2010 client is affected during and after failback, and also how users in other pools see and interact with a user in a pool who is being failed back.</span></span> <span data-ttu-id="792a6-125">Gli utenti con client Microsoft Office Communicator 2007 R2 non riescono ad accedere fino a quando il pool Front-end non viene completamente eseguito.</span><span class="sxs-lookup"><span data-stu-id="792a6-125">Users with Microsoft Office Communicator 2007 R2 clients cannot sign in until the Front End pool is completely failed back.)</span></span>
+<span data-ttu-id="1e3ee-124">Nelle tabelle riportate di seguito vengono illustrati ulteriori dettagli sul modo in cui un utente con un client Lync 2013 o un client Microsoft Lync 2010 viene influenzato durante e dopo il failback e in che modo gli utenti in altri pool visualizzano e interagiscono con un utente in un pool di cui non è stato eseguito il failover.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-124">The following tables show more details about how a user with a Lync 2013 client or a Microsoft Lync 2010 client is affected during and after failback, and also how users in other pools see and interact with a user in a pool who is being failed back.</span></span> <span data-ttu-id="1e3ee-125">Gli utenti che dispongono di client Microsoft Office Communicator 2007 R2 non possono accedere fino a quando non è stato completamente eseguito il failover del pool Front end.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-125">Users with Microsoft Office Communicator 2007 R2 clients cannot sign in until the Front End pool is completely failed back.)</span></span>
 
-<span data-ttu-id="792a6-126">Il termine *utente interessato* si riferisce a qualsiasi utente che non ha eseguito il failover dal pool Home e viene gestito dal pool di backup.</span><span class="sxs-lookup"><span data-stu-id="792a6-126">The term *affected user* refers to any user who was failed over from the home pool and is being serviced by the backup pool.</span></span> <span data-ttu-id="792a6-127">Per definizione, qualsiasi utente originariamente ospitato nel pool di backup non è un utente interessato.</span><span class="sxs-lookup"><span data-stu-id="792a6-127">By definition, any user originally homed on the backup pool is not an affected user.</span></span>
+<span data-ttu-id="1e3ee-p107">Con il termine *utente interessato* viene indicato qualsiasi utente di cui sia stato eseguito il failover dal pool principale e che venga servito dal pool di backup. Per definizione, gli utenti che si trovavano originariamente nel pool di backup non sono utenti interessati.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-p107">The term *affected user* refers to any user who was failed over from the home pool and is being serviced by the backup pool. By definition, any user originally homed on the backup pool is not an affected user.</span></span>
 
-### <a name="user-experience-for-an-affected-user-in-a-pool-in-failback"></a><span data-ttu-id="792a6-128">Esperienza utente per un utente interessato in un pool in failback</span><span class="sxs-lookup"><span data-stu-id="792a6-128">User Experience for an Affected User in a Pool in Failback</span></span>
+### <a name="user-experience-for-an-affected-user-in-a-pool-in-failback"></a><span data-ttu-id="1e3ee-128">Esperienza utente per un utente interessato in un pool in corso di failback</span><span class="sxs-lookup"><span data-stu-id="1e3ee-128">User Experience for an Affected User in a Pool in Failback</span></span>
 
 <table>
 <colgroup>
@@ -73,57 +73,57 @@ ms.locfileid: "41744596"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="792a6-129">Stato utente o attività</span><span class="sxs-lookup"><span data-stu-id="792a6-129">User state or task</span></span></th>
-<th><span data-ttu-id="792a6-130">Durante il failback</span><span class="sxs-lookup"><span data-stu-id="792a6-130">During failback</span></span></th>
-<th><span data-ttu-id="792a6-131">Dopo il completamento del failback</span><span class="sxs-lookup"><span data-stu-id="792a6-131">After failback completion</span></span></th>
+<th><span data-ttu-id="1e3ee-129">Stato o attività dell'utente</span><span class="sxs-lookup"><span data-stu-id="1e3ee-129">User state or task</span></span></th>
+<th><span data-ttu-id="1e3ee-130">Durante il failback</span><span class="sxs-lookup"><span data-stu-id="1e3ee-130">During failback</span></span></th>
+<th><span data-ttu-id="1e3ee-131">Dopo il completamento del failback</span><span class="sxs-lookup"><span data-stu-id="1e3ee-131">After failback completion</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="792a6-132">Stato utente dell'utente già connesso</span><span class="sxs-lookup"><span data-stu-id="792a6-132">User state of user already logged in</span></span></p></td>
-<td><p><span data-ttu-id="792a6-133">L'utente rimane connesso e collegato al pool di backup.</span><span class="sxs-lookup"><span data-stu-id="792a6-133">User stays signed in and connected to backup pool.</span></span> <span data-ttu-id="792a6-134">Ad un certo punto l'utente verrà disconnesso e si riaccederà al pool di Home originale, in modalità resilienza.</span><span class="sxs-lookup"><span data-stu-id="792a6-134">At some point user will be signed out and sign back in to the original home pool, in Resiliency mode.</span></span></p></td>
-<td><p><span data-ttu-id="792a6-135">L'utente rimane connesso e passa alla modalità normale.</span><span class="sxs-lookup"><span data-stu-id="792a6-135">User remains signed in and goes into regular mode.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-132">Utente già connesso</span><span class="sxs-lookup"><span data-stu-id="1e3ee-132">User state of user already logged in</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-p108">L'utente resta connesso al pool di backup. A un certo punto l'utente verrà disconnesso e riconnesso al pool principale originale, in modalità Resilienza.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-p108">User stays signed in and connected to backup pool. At some point user will be signed out and sign back in to the original home pool, in Resiliency mode.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-135">L'utente rimane connesso e passa alla modalità normale.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-135">User remains signed in and goes into regular mode.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="792a6-136">Registrazione di un nuovo utente</span><span class="sxs-lookup"><span data-stu-id="792a6-136">New user logging in</span></span></p></td>
-<td><p><span data-ttu-id="792a6-137">L'utente può accedere al pool Home in modalità resilienza.</span><span class="sxs-lookup"><span data-stu-id="792a6-137">User can sign in to the home pool in Resiliency mode.</span></span></p></td>
-<td><p><span data-ttu-id="792a6-138">L'utente può accedere al pool di Home originale in modalità normale.</span><span class="sxs-lookup"><span data-stu-id="792a6-138">User can sign in to the original home pool in regular mode.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-136">Nuova connessione dell'utente</span><span class="sxs-lookup"><span data-stu-id="1e3ee-136">New user logging in</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-137">L'utente può connettersi al pool principale in modalità Resilienza.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-137">User can sign in to the home pool in Resiliency mode.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-138">L'utente può connettersi al pool principale originale in modalità normale.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-138">User can sign in to the original home pool in regular mode.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="792a6-139">Conferenze in corso organizzate da un utente interessato</span><span class="sxs-lookup"><span data-stu-id="792a6-139">Ongoing conferences organized by affected user</span></span></p></td>
-<td><p><span data-ttu-id="792a6-140">Tutte le modalità di conferenza vengono terminate.</span><span class="sxs-lookup"><span data-stu-id="792a6-140">All modalities of conference are terminated.</span></span> <span data-ttu-id="792a6-141">Viene visualizzato il pulsante Riunisci, ma non è possibile partecipare alla riunione quando l'utente interessato è in modalità di resilienza.</span><span class="sxs-lookup"><span data-stu-id="792a6-141">Rejoin button will appear, but no users can rejoin while the affected user is in Resiliency mode.</span></span></p></td>
-<td><p><span data-ttu-id="792a6-142">Tutte le modalità funzionano ora.</span><span class="sxs-lookup"><span data-stu-id="792a6-142">All modalities now work.</span></span> <span data-ttu-id="792a6-143">Ogni partecipante deve fare clic per tornare a partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="792a6-143">Every participant needs to click to rejoin the conference.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-139">Conferenze in corso organizzate dall'utente interessato</span><span class="sxs-lookup"><span data-stu-id="1e3ee-139">Ongoing conferences organized by affected user</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-p109">Tutte le modalità di conferenza vengono terminate. Viene visualizzato il pulsante Torna a partecipare, ma nessun utente può ripartecipare alla conferenza mentre l'utente interessato è in modalità Resilienza.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-p109">All modalities of conference are terminated. Rejoin button will appear, but no users can rejoin while the affected user is in Resiliency mode.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-p110">Tutte le modalità ora funzionano. Tutti i partecipanti devono fare clic sul pulsante per tornare a partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-p110">All modalities now work. Every participant needs to click to rejoin the conference.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="792a6-144">Conferenze in corso organizzate da un utente non interessato</span><span class="sxs-lookup"><span data-stu-id="792a6-144">Ongoing conferences organized by unaffected user</span></span></p></td>
-<td><p><span data-ttu-id="792a6-145">La conferenza continua e l'utente interessato può rimanere nella conferenza.</span><span class="sxs-lookup"><span data-stu-id="792a6-145">Conference continues and affected user can stay in the conference.</span></span> <span data-ttu-id="792a6-146">L'utente interessato si limita a ciò che può fare in modalità resilienza.</span><span class="sxs-lookup"><span data-stu-id="792a6-146">Affected user is restricted to what he/she can do in Resiliency mode.</span></span></p></td>
-<td><p><span data-ttu-id="792a6-147">La conferenza continua e l'utente interessato può rimanere in conferenza e tutte le modalità funzionano dopo l'uscita dalla modalità resilienza.</span><span class="sxs-lookup"><span data-stu-id="792a6-147">Conference continues, and affected user can stay in the conference and all modalities work after user exits Resiliency mode.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-144">Conferenze in corso organizzate da un utente non interessato</span><span class="sxs-lookup"><span data-stu-id="1e3ee-144">Ongoing conferences organized by unaffected user</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-p111">La conferenza prosegue e l'utente interessato può continuare a parteciparvi, ma può eseguire esclusivamente le operazioni consentite in modalità Resilienza.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-p111">Conference continues and affected user can stay in the conference. Affected user is restricted to what he/she can do in Resiliency mode.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-147">La conferenza prosegue e l'utente interessato può continuare a parteciparvi. Tutte le modalità funzionano dopo che l'utente esce dalla modalità Resilienza.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-147">Conference continues, and affected user can stay in the conference and all modalities work after user exits Resiliency mode.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="792a6-148">Pianificazione o modifica delle riunioni pianificate, creazione di conferenze ad hoc</span><span class="sxs-lookup"><span data-stu-id="792a6-148">Scheduling or modifying scheduled meetings, creating ad-hoc conferences</span></span></p></td>
-<td><p><span data-ttu-id="792a6-149">Non è possibile mentre l'utente è in modalità di resilienza.</span><span class="sxs-lookup"><span data-stu-id="792a6-149">Not possible while user is in Resiliency mode.</span></span></p></td>
-<td><p><span data-ttu-id="792a6-150">Disponibile per tutte le modalità.</span><span class="sxs-lookup"><span data-stu-id="792a6-150">Available for all modalities.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-148">Pianificazione o modifica delle riunioni pianificate, creazione di conferenze ad hoc</span><span class="sxs-lookup"><span data-stu-id="1e3ee-148">Scheduling or modifying scheduled meetings, creating ad-hoc conferences</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-149">Attività impossibili mentre l'utente è in modalità Resilienza.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-149">Not possible while user is in Resiliency mode.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-150">Attività disponibili per tutte le modalità.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-150">Available for all modalities.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="792a6-151">Presenza visualizzata da altri utenti nello stesso pool</span><span class="sxs-lookup"><span data-stu-id="792a6-151">Presence as seen by other users in the same pool</span></span></p></td>
-<td><p><span data-ttu-id="792a6-152">Presenza sconosciuta mentre l'utente ha eseguito l'accesso al pool di backup durante la modalità resilienza.</span><span class="sxs-lookup"><span data-stu-id="792a6-152">Presence unknown while user is signed into backup pool during Resiliency mode.</span></span></p></td>
-<td><p><span data-ttu-id="792a6-153">Mostra lo stato dell'ultima presenza impostato dall'utente e le modifiche alla presenza verranno riflesse.</span><span class="sxs-lookup"><span data-stu-id="792a6-153">Shows the last presence state set by the user, and presence changes will now be reflected.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-151">Presenza come viene visualizzata da altri utenti dello stesso pool</span><span class="sxs-lookup"><span data-stu-id="1e3ee-151">Presence as seen by other users in the same pool</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-152">Presenza sconosciuta mentre l'utente è connesso al pool di backup in modalità Resilienza.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-152">Presence unknown while user is signed into backup pool during Resiliency mode.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-153">Viene visualizzato l'ultimo stato di presenza impostato dall'utente. Le eventuali variazioni di tale stato ora saranno visibili.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-153">Shows the last presence state set by the user, and presence changes will now be reflected.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="792a6-154">Disponibilità del servizio elenco contatti e Rubrica</span><span class="sxs-lookup"><span data-stu-id="792a6-154">Contacts list and Address Book Service availability</span></span></p></td>
-<td><p><span data-ttu-id="792a6-155">Non disponibile</span><span class="sxs-lookup"><span data-stu-id="792a6-155">Not available</span></span></p></td>
-<td><p><span data-ttu-id="792a6-156">Disponibili</span><span class="sxs-lookup"><span data-stu-id="792a6-156">Available</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-154">Disponibilità dell'Elenco contatti e del Servizio Rubrica</span><span class="sxs-lookup"><span data-stu-id="1e3ee-154">Contacts list and Address Book Service availability</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-155">Non disponibili</span><span class="sxs-lookup"><span data-stu-id="1e3ee-155">Not available</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-156">Disponibili</span><span class="sxs-lookup"><span data-stu-id="1e3ee-156">Available</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="792a6-157">Tutte le sessioni e le modalità peer-to-peer</span><span class="sxs-lookup"><span data-stu-id="792a6-157">All peer-to-peer sessions and modalities</span></span></p></td>
-<td><p><span data-ttu-id="792a6-158">Disponibili</span><span class="sxs-lookup"><span data-stu-id="792a6-158">Available</span></span></p></td>
-<td><p><span data-ttu-id="792a6-159">Disponibili</span><span class="sxs-lookup"><span data-stu-id="792a6-159">Available</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-157">Tutte le sessioni peer-to-peer e tutte le modalità</span><span class="sxs-lookup"><span data-stu-id="1e3ee-157">All peer-to-peer sessions and modalities</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-158">Disponibili</span><span class="sxs-lookup"><span data-stu-id="1e3ee-158">Available</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-159">Disponibili</span><span class="sxs-lookup"><span data-stu-id="1e3ee-159">Available</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="user-experience-for-a-user-homed-in-an-unaffected-pool-during-failback-of-another-pool"></a><span data-ttu-id="792a6-160">Esperienza utente per un utente ospitato in un pool non interessato durante il failback di un altro pool</span><span class="sxs-lookup"><span data-stu-id="792a6-160">User Experience for a User Homed in an Unaffected Pool During Failback of Another Pool</span></span>
+### <a name="user-experience-for-a-user-homed-in-an-unaffected-pool-during-failback-of-another-pool"></a><span data-ttu-id="1e3ee-160">Esperienza utente di un utente che si trova in un pool non interessato durante il failback di un altro pool</span><span class="sxs-lookup"><span data-stu-id="1e3ee-160">User Experience for a User Homed in an Unaffected Pool During Failback of Another Pool</span></span>
 
 <table>
 <colgroup>
@@ -133,31 +133,31 @@ ms.locfileid: "41744596"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="792a6-161">Attività utente</span><span class="sxs-lookup"><span data-stu-id="792a6-161">User task</span></span></th>
-<th><span data-ttu-id="792a6-162">Durante il failback</span><span class="sxs-lookup"><span data-stu-id="792a6-162">During failback</span></span></th>
-<th><span data-ttu-id="792a6-163">Dopo il completamento del failback</span><span class="sxs-lookup"><span data-stu-id="792a6-163">After failback completion</span></span></th>
+<th><span data-ttu-id="1e3ee-161">Attività dell'utente</span><span class="sxs-lookup"><span data-stu-id="1e3ee-161">User task</span></span></th>
+<th><span data-ttu-id="1e3ee-162">Durante il failback</span><span class="sxs-lookup"><span data-stu-id="1e3ee-162">During failback</span></span></th>
+<th><span data-ttu-id="1e3ee-163">Dopo il completamento del failback</span><span class="sxs-lookup"><span data-stu-id="1e3ee-163">After failback completion</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="792a6-164">Visualizzazione della presenza dell'utente interessato</span><span class="sxs-lookup"><span data-stu-id="792a6-164">Viewing presence of affected user</span></span></p></td>
-<td><p><span data-ttu-id="792a6-165">Mostra lo stato dell'ultima presenza impostato dall'utente interessato.</span><span class="sxs-lookup"><span data-stu-id="792a6-165">Shows the last presence state set by the affected user.</span></span></p></td>
-<td><p><span data-ttu-id="792a6-166">Uso.</span><span class="sxs-lookup"><span data-stu-id="792a6-166">Working.</span></span> <span data-ttu-id="792a6-167">Gli utenti inalterati vedono gli aggiornamenti apportati dagli utenti interessati.</span><span class="sxs-lookup"><span data-stu-id="792a6-167">Unaffected users see updates made by affected users.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-164">Visualizzazione della presenza dell'utente interessato</span><span class="sxs-lookup"><span data-stu-id="1e3ee-164">Viewing presence of affected user</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-165">Viene visualizzato l'ultimo stato di presenza impostato dall'utente interessato.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-165">Shows the last presence state set by the affected user.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-p112">Funzionante. Gli utenti non interessati vedono le modifiche apportate dagli utenti interessati.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-p112">Working. Unaffected users see updates made by affected users.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="792a6-168">Conferenze in corso organizzate da un utente interessato</span><span class="sxs-lookup"><span data-stu-id="792a6-168">Ongoing conferences organized by affected user</span></span></p></td>
-<td><p><span data-ttu-id="792a6-169">Tutte le modalità di conferenza vengono terminate.</span><span class="sxs-lookup"><span data-stu-id="792a6-169">All modalities of conference are terminated.</span></span></p></td>
-<td><p><span data-ttu-id="792a6-170">Tutte le modalità funzionano ora.</span><span class="sxs-lookup"><span data-stu-id="792a6-170">All modalities now work.</span></span> <span data-ttu-id="792a6-171">Ogni partecipante deve fare clic per tornare a partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="792a6-171">Every participant needs to click to rejoin the conference.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-168">Conferenze in corso organizzate dall'utente interessato</span><span class="sxs-lookup"><span data-stu-id="1e3ee-168">Ongoing conferences organized by affected user</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-169">Tutte le modalità di conferenza vengono terminate.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-169">All modalities of conference are terminated.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-p113">Tutte le modalità ora funzionano. Tutti i partecipanti devono fare clic sul pulsante per tornare a partecipare alla conferenza.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-p113">All modalities now work. Every participant needs to click to rejoin the conference.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="792a6-172">Conferenze in corso organizzate da un utente non interessato</span><span class="sxs-lookup"><span data-stu-id="792a6-172">Ongoing conferences organized by unaffected user</span></span></p></td>
-<td><p><span data-ttu-id="792a6-173">La conferenza continua e l'utente interessato può rimanere in conferenza e tutte le modalità funzionano.</span><span class="sxs-lookup"><span data-stu-id="792a6-173">Conference continues, and affected user can stay in the conference and all modalities work.</span></span></p></td>
-<td><p><span data-ttu-id="792a6-174">La conferenza continua e l'utente interessato può rimanere in conferenza e tutte le modalità funzionano.</span><span class="sxs-lookup"><span data-stu-id="792a6-174">Conference continues, and affected user can stay in the conference and all modalities work.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-172">Conferenze in corso organizzate da un utente non interessato</span><span class="sxs-lookup"><span data-stu-id="1e3ee-172">Ongoing conferences organized by unaffected user</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-173">La conferenza prosegue e l'utente interessato può continuare a parteciparvi. Tutte le modalità funzionano.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-173">Conference continues, and affected user can stay in the conference and all modalities work.</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-174">La conferenza prosegue e l'utente interessato può continuare a parteciparvi. Tutte le modalità funzionano.</span><span class="sxs-lookup"><span data-stu-id="1e3ee-174">Conference continues, and affected user can stay in the conference and all modalities work.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="792a6-175">Tutte le sessioni e le modalità peer-to-peer</span><span class="sxs-lookup"><span data-stu-id="792a6-175">All peer-to-peer sessions and modalities</span></span></p></td>
-<td><p><span data-ttu-id="792a6-176">Disponibili</span><span class="sxs-lookup"><span data-stu-id="792a6-176">Available</span></span></p></td>
-<td><p><span data-ttu-id="792a6-177">Disponibili</span><span class="sxs-lookup"><span data-stu-id="792a6-177">Available</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-175">Tutte le sessioni peer-to-peer e tutte le modalità</span><span class="sxs-lookup"><span data-stu-id="1e3ee-175">All peer-to-peer sessions and modalities</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-176">Disponibili</span><span class="sxs-lookup"><span data-stu-id="1e3ee-176">Available</span></span></p></td>
+<td><p><span data-ttu-id="1e3ee-177">Disponibili</span><span class="sxs-lookup"><span data-stu-id="1e3ee-177">Available</span></span></p></td>
 </tr>
 </tbody>
 </table>

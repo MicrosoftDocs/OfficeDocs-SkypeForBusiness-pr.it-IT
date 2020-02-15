@@ -1,5 +1,5 @@
 ---
-title: Impedire le sessioni per i servizi
+title: Impedisci sessioni per i servizi
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733642
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bf8fb96fef5a01f9b25ca954dd27d1bdfd1f7055
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d936a063d5ce634a50b4ba4567f51473bf363612
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41727326"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035852"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="prevent-sessions-for-services"></a><span data-ttu-id="f970e-102">Impedire le sessioni per i servizi</span><span class="sxs-lookup"><span data-stu-id="f970e-102">Prevent sessions for services</span></span>
+# <a name="prevent-sessions-for-services"></a><span data-ttu-id="7bb4a-102">Impedisci sessioni per i servizi</span><span class="sxs-lookup"><span data-stu-id="7bb4a-102">Prevent sessions for services</span></span>
 
 </div>
 
@@ -35,49 +35,49 @@ ms.locfileid: "41727326"
 
 <span> </span>
 
-<span data-ttu-id="f970e-103">_**Argomento Ultima modifica:** 2012-10-04_</span><span class="sxs-lookup"><span data-stu-id="f970e-103">_**Topic Last Modified:** 2012-10-04_</span></span>
+<span data-ttu-id="7bb4a-103">_**Ultimo argomento modificato:** 2012-10-04_</span><span class="sxs-lookup"><span data-stu-id="7bb4a-103">_**Topic Last Modified:** 2012-10-04_</span></span>
 
-<span data-ttu-id="f970e-104">È possibile usare il pannello di controllo di Microsoft Lync Server 2010 per impedire l'utilizzo di nuove sessioni per tutti i servizi Lync Server 2010 in uso in un computer specifico o per impedire nuove sessioni per un servizio specifico di Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="f970e-104">You can use Microsoft Lync Server 2010 Control Panel to prevent new sessions for all the Lync Server 2010 services running on a specific computer or to prevent new sessions for a specific Lync Server 2010 service.</span></span>
+<span data-ttu-id="7bb4a-104">È possibile utilizzare il pannello di controllo di Microsoft Lync Server 2010 per impedire nuove sessioni per tutti i servizi di Lync Server 2010 in esecuzione in un computer specifico o per impedire nuove sessioni per un servizio specifico di Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-104">You can use Microsoft Lync Server 2010 Control Panel to prevent new sessions for all the Lync Server 2010 services running on a specific computer or to prevent new sessions for a specific Lync Server 2010 service.</span></span>
 
 <div>
 
-## <a name="to-prevent-new-sessions-for-all-lync-server-services-on-a-computer"></a><span data-ttu-id="f970e-105">Per evitare nuove sessioni per tutti i servizi Lync Server in un computer</span><span class="sxs-lookup"><span data-stu-id="f970e-105">To prevent new sessions for all Lync Server services on a computer</span></span>
+## <a name="to-prevent-new-sessions-for-all-lync-server-services-on-a-computer"></a><span data-ttu-id="7bb4a-105">Per impedire nuove sessioni di tutti i servizi di Lync Server in un computer</span><span class="sxs-lookup"><span data-stu-id="7bb4a-105">To prevent new sessions for all Lync Server services on a computer</span></span>
 
-1.  <span data-ttu-id="f970e-106">Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer presente nella rete in cui è stato distribuito Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f970e-106">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or assigned to the CsServerAdministrator or CsAdministrator role, log on to any computer that is in the network in which you deployed Lync Server 2013.</span></span>
+1.  <span data-ttu-id="7bb4a-106">Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a un computer nella rete in cui è stato distribuito Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-106">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or assigned to the CsServerAdministrator or CsAdministrator role, log on to any computer that is in the network in which you deployed Lync Server 2013.</span></span>
 
-2.  <span data-ttu-id="f970e-107">Aprire il pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="f970e-107">Open Lync Server Control Panel.</span></span>
+2.  <span data-ttu-id="7bb4a-107">Aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-107">Open Lync Server Control Panel.</span></span>
 
-3.  <span data-ttu-id="f970e-108">Nella barra di spostamento sinistra fare clic su **topologia** e quindi su **stato**.</span><span class="sxs-lookup"><span data-stu-id="f970e-108">In the left navigation bar, click **Topology** and then click **Status**.</span></span>
+3.  <span data-ttu-id="7bb4a-108">Nella barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-108">In the left navigation bar, click **Topology** and then click **Status**.</span></span>
 
-4.  <span data-ttu-id="f970e-109">Nella pagina **stato** ordinare o cercare l'elenco in base alle esigenze per trovare il computer in cui sono in esecuzione i servizi per cui si vogliono impedire le nuove sessioni e quindi fare clic su di esso.</span><span class="sxs-lookup"><span data-stu-id="f970e-109">On the **Status** page, sort or search through the list as needed to find the computer that is running the services for which you want to prevent new sessions, and then click it.</span></span>
+4.  <span data-ttu-id="7bb4a-109">Nella pagina **Stato** ordinare l'elenco oppure cercare nell'elenco il computer in cui sono in esecuzione i servizi per cui si desidera impedire nuove sessioni, quindi fare clic su di esso.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-109">On the **Status** page, sort or search through the list as needed to find the computer that is running the services for which you want to prevent new sessions, and then click it.</span></span>
 
-5.  <span data-ttu-id="f970e-110">Fare clic su **azione**.</span><span class="sxs-lookup"><span data-stu-id="f970e-110">Click **Action**.</span></span>
+5.  <span data-ttu-id="7bb4a-110">Fare clic su **Azione**.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-110">Click **Action**.</span></span>
 
-6.  <span data-ttu-id="f970e-111">Fare clic su **Impedisci nuove sessioni per tutti i servizi**.</span><span class="sxs-lookup"><span data-stu-id="f970e-111">Click **Prevent new sessions for all services**.</span></span>
+6.  <span data-ttu-id="7bb4a-111">Fare clic su **Impedisci nuove sessioni per tutti i servizi**.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-111">Click **Prevent new sessions for all services**.</span></span>
 
 </div>
 
 <div>
 
-## <a name="to-prevent-new-sessions-for-a-specific-service"></a><span data-ttu-id="f970e-112">Per impedire nuove sessioni per un servizio specifico</span><span class="sxs-lookup"><span data-stu-id="f970e-112">To prevent new sessions for a specific service</span></span>
+## <a name="to-prevent-new-sessions-for-a-specific-service"></a><span data-ttu-id="7bb4a-112">Per impedire nuove sessioni per uno specifico servizio</span><span class="sxs-lookup"><span data-stu-id="7bb4a-112">To prevent new sessions for a specific service</span></span>
 
-1.  <span data-ttu-id="f970e-113">Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer presente nella rete in cui è stato distribuito Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f970e-113">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or assigned to the CsServerAdministrator or CsAdministrator role, log on to any computer that is in the network in which you deployed Lync Server 2013.</span></span>
+1.  <span data-ttu-id="7bb4a-113">Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a un computer nella rete in cui è stato distribuito Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-113">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or assigned to the CsServerAdministrator or CsAdministrator role, log on to any computer that is in the network in which you deployed Lync Server 2013.</span></span>
 
-2.  <span data-ttu-id="f970e-114">Aprire il pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="f970e-114">Open Lync Server Control Panel.</span></span>
+2.  <span data-ttu-id="7bb4a-114">Aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-114">Open Lync Server Control Panel.</span></span>
 
-3.  <span data-ttu-id="f970e-115">Nella barra di spostamento sinistra fare clic su **topologia** e quindi su **stato**.</span><span class="sxs-lookup"><span data-stu-id="f970e-115">In the left navigation bar, click **Topology** and then click **Status**.</span></span>
+3.  <span data-ttu-id="7bb4a-115">Nella barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-115">In the left navigation bar, click **Topology** and then click **Status**.</span></span>
 
-4.  <span data-ttu-id="f970e-116">Nella pagina **stato** ordinare o cercare l'elenco in base alle esigenze per trovare il computer in cui è in esecuzione il servizio che si vuole avviare o arrestare e quindi fare clic su di esso.</span><span class="sxs-lookup"><span data-stu-id="f970e-116">On the **Status** page, sort or search through the list as needed to find the computer that is running the service you want to start or stop, and then click it.</span></span>
+4.  <span data-ttu-id="7bb4a-116">Nella pagina **Stato** ordinare o scorrere l'elenco per trovare il computer in cui è in esecuzione il servizio che si desidera avviare o arrestare e quindi fare clic su di esso.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-116">On the **Status** page, sort or search through the list as needed to find the computer that is running the service you want to start or stop, and then click it.</span></span>
 
-5.  <span data-ttu-id="f970e-117">Fare clic su **Proprietà**.</span><span class="sxs-lookup"><span data-stu-id="f970e-117">Click **Properties**.</span></span>
+5.  <span data-ttu-id="7bb4a-117">Fare clic su **Proprietà**.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-117">Click **Properties**.</span></span>
 
-6.  <span data-ttu-id="f970e-118">Ordinare l'elenco dei servizi, se necessario, e fare clic sul servizio per cui si vogliono impedire le nuove sessioni.</span><span class="sxs-lookup"><span data-stu-id="f970e-118">Sort the list of services, if necessary, and click the service for which you want to prevent new sessions.</span></span>
+6.  <span data-ttu-id="7bb4a-118">Ordinare l'elenco dei servizi, se necessario, quindi fare clic sul servizio per cui si desidera impedire nuove sessioni.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-118">Sort the list of services, if necessary, and click the service for which you want to prevent new sessions.</span></span>
 
-7.  <span data-ttu-id="f970e-119">Fare clic su **azione**.</span><span class="sxs-lookup"><span data-stu-id="f970e-119">Click **Action**.</span></span>
+7.  <span data-ttu-id="7bb4a-119">Fare clic su **Azione**.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-119">Click **Action**.</span></span>
 
-8.  <span data-ttu-id="f970e-120">Fare clic su **Impedisci nuove sessioni per il servizio**.</span><span class="sxs-lookup"><span data-stu-id="f970e-120">Click **Prevent new sessions for service**.</span></span>
+8.  <span data-ttu-id="7bb4a-120">Fare clic su **Impedisci nuove sessioni per il servizio**.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-120">Click **Prevent new sessions for service**.</span></span>
 
-9.  <span data-ttu-id="f970e-121">Fare clic su **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="f970e-121">Click **Close**.</span></span>
+9.  <span data-ttu-id="7bb4a-121">Fare clic su **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="7bb4a-121">Click **Close**.</span></span>
 
 </div>
 

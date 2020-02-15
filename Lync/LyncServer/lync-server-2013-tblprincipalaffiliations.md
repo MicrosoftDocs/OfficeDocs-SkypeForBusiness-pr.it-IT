@@ -12,20 +12,20 @@ ms:contentKeyID: 48183993
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3976b98fddc96ad08f3de4413bf8f38ec3525496
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ee16c492a42cb98ff3b5f326bd6f43a57c4d3f56
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764152"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42034276"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="tblprincipalaffiliations-in-lync-server-2013"></a><span data-ttu-id="c18a1-102">tblPrincipalAffiliations in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c18a1-102">tblPrincipalAffiliations in Lync Server 2013</span></span>
+# <a name="tblprincipalaffiliations-in-lync-server-2013"></a><span data-ttu-id="bcb84-102">tblPrincipalAffiliations in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="bcb84-102">tblPrincipalAffiliations in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41764152"
 
 <span> </span>
 
-<span data-ttu-id="c18a1-103">_**Argomento Ultima modifica:** 2012-09-12_</span><span class="sxs-lookup"><span data-stu-id="c18a1-103">_**Topic Last Modified:** 2012-09-12_</span></span>
+<span data-ttu-id="bcb84-103">_**Ultimo argomento modificato:** 2012-09-12_</span><span class="sxs-lookup"><span data-stu-id="bcb84-103">_**Topic Last Modified:** 2012-09-12_</span></span>
 
-<span data-ttu-id="c18a1-104">tblPrincipalAffiliations contiene le principali affiliazioni che descrivono le appartenenze in posizioni, inclusi i gruppi di sicurezza dei servizi di dominio Active Directory, in contenitori di Active Directory in domini.</span><span class="sxs-lookup"><span data-stu-id="c18a1-104">tblPrincipalAffiliations contains the principal affiliations that describe memberships in locations, including Active Directory Domain Services security groups, in Active Directory containers, in domains.</span></span>
+<span data-ttu-id="bcb84-104">tblPrincipalAffiliations contiene le affiliazioni principali che descrivono le appartenenze nelle posizioni, inclusi i gruppi di sicurezza di servizi di dominio Active Directory, in contenitori di Active Directory, in domini.</span><span class="sxs-lookup"><span data-stu-id="bcb84-104">tblPrincipalAffiliations contains the principal affiliations that describe memberships in locations, including Active Directory Domain Services security groups, in Active Directory containers, in domains.</span></span>
 
-### <a name="columns"></a><span data-ttu-id="c18a1-105">Colonne</span><span class="sxs-lookup"><span data-stu-id="c18a1-105">Columns</span></span>
+### <a name="columns"></a><span data-ttu-id="bcb84-105">Colonne</span><span class="sxs-lookup"><span data-stu-id="bcb84-105">Columns</span></span>
 
 <table>
 <colgroup>
@@ -49,37 +49,37 @@ ms.locfileid: "41764152"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="c18a1-106">Colonna</span><span class="sxs-lookup"><span data-stu-id="c18a1-106">Column</span></span></th>
-<th><span data-ttu-id="c18a1-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="c18a1-107">Type</span></span></th>
-<th><span data-ttu-id="c18a1-108">Descrizione</span><span class="sxs-lookup"><span data-stu-id="c18a1-108">Description</span></span></th>
+<th><span data-ttu-id="bcb84-106">Colonna</span><span class="sxs-lookup"><span data-stu-id="bcb84-106">Column</span></span></th>
+<th><span data-ttu-id="bcb84-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="bcb84-107">Type</span></span></th>
+<th><span data-ttu-id="bcb84-108">Descrizione</span><span class="sxs-lookup"><span data-stu-id="bcb84-108">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="c18a1-109">principalID</span><span class="sxs-lookup"><span data-stu-id="c18a1-109">principalID</span></span></p></td>
-<td><p><span data-ttu-id="c18a1-110">int, not null</span><span class="sxs-lookup"><span data-stu-id="c18a1-110">int, not null</span></span></p></td>
-<td><p><span data-ttu-id="c18a1-111">ID dell'oggetto Principal affiliato.</span><span class="sxs-lookup"><span data-stu-id="c18a1-111">ID of the affiliated principal.</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-109">principalID</span><span class="sxs-lookup"><span data-stu-id="bcb84-109">principalID</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-110">int, not null</span><span class="sxs-lookup"><span data-stu-id="bcb84-110">int, not null</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-111">ID dell'entità affiliata.</span><span class="sxs-lookup"><span data-stu-id="bcb84-111">ID of the affiliated principal.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c18a1-112">affiliationID</span><span class="sxs-lookup"><span data-stu-id="c18a1-112">affiliationID</span></span></p></td>
-<td><p><span data-ttu-id="c18a1-113">int, not null</span><span class="sxs-lookup"><span data-stu-id="c18a1-113">int, not null</span></span></p></td>
-<td><p><span data-ttu-id="c18a1-114">ID dell'entità che rappresenta l'affiliazione.</span><span class="sxs-lookup"><span data-stu-id="c18a1-114">ID of the principal representing the affiliation.</span></span> <span data-ttu-id="c18a1-115">Ogni entità (ad eccezione di System-User-Types) ha anche una propria affiliazione.</span><span class="sxs-lookup"><span data-stu-id="c18a1-115">Each principal (except system-user-types) has a self-affiliation as well.</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-112">affiliationID</span><span class="sxs-lookup"><span data-stu-id="bcb84-112">affiliationID</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-113">int, not null</span><span class="sxs-lookup"><span data-stu-id="bcb84-113">int, not null</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-p101">ID dell'entità che rappresenta l'affiliazione. Ogni entità prevede anche un'auto-affiliazione (eccetto system-user-types).</span><span class="sxs-lookup"><span data-stu-id="bcb84-p101">ID of the principal representing the affiliation. Each principal (except system-user-types) has a self-affiliation as well.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="c18a1-116">Indice</span><span class="sxs-lookup"><span data-stu-id="c18a1-116">index</span></span></p></td>
-<td><p><span data-ttu-id="c18a1-117">int, not null</span><span class="sxs-lookup"><span data-stu-id="c18a1-117">int, not null</span></span></p></td>
-<td><p><span data-ttu-id="c18a1-118">Indice.</span><span class="sxs-lookup"><span data-stu-id="c18a1-118">Index.</span></span> <span data-ttu-id="c18a1-119">Il valore di self-Affiliations è-1 e per le altre affiliazioni aumenta sequenzialmente da 1 all'interno di ogni &lt;PrincipalId, affiliationId&gt; bucket.</span><span class="sxs-lookup"><span data-stu-id="c18a1-119">The value for self-affiliations is -1, and for the other affiliations it increases sequentially from 1 within each &lt;principalID, affiliationId&gt; bucket.</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-116">Indice</span><span class="sxs-lookup"><span data-stu-id="bcb84-116">index</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-117">int, not null</span><span class="sxs-lookup"><span data-stu-id="bcb84-117">int, not null</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-118">Indice.</span><span class="sxs-lookup"><span data-stu-id="bcb84-118">Index.</span></span> <span data-ttu-id="bcb84-119">Il valore per le self-affiliazioni è-1 e per le altre affiliazioni aumenta sequenzialmente da 1 all'interno di &lt;ogni PrincipalId,&gt; affiliationId bucket.</span><span class="sxs-lookup"><span data-stu-id="bcb84-119">The value for self-affiliations is -1, and for the other affiliations it increases sequentially from 1 within each &lt;principalID, affiliationId&gt; bucket.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c18a1-120">updatedBy</span><span class="sxs-lookup"><span data-stu-id="c18a1-120">updatedBy</span></span></p></td>
-<td><p><span data-ttu-id="c18a1-121">int, not null</span><span class="sxs-lookup"><span data-stu-id="c18a1-121">int, not null</span></span></p></td>
-<td><p><span data-ttu-id="c18a1-122">Principal che ha eseguito l'aggiornamento più recente.</span><span class="sxs-lookup"><span data-stu-id="c18a1-122">Principal that did the latest update.</span></span> <span data-ttu-id="c18a1-123">Si tratta in genere di 1, che indica la sincronizzazione di Active Directory.</span><span class="sxs-lookup"><span data-stu-id="c18a1-123">This is usually 1, which means Active Directory Sync.</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-120">updatedBy</span><span class="sxs-lookup"><span data-stu-id="bcb84-120">updatedBy</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-121">int, not null</span><span class="sxs-lookup"><span data-stu-id="bcb84-121">int, not null</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-p103">Entità che ha effettuato l'ultimo aggiornamento. Viene utilizzato in genere il valore 1, che indica la sincronizzazione di Active Directory.</span><span class="sxs-lookup"><span data-stu-id="bcb84-p103">Principal that did the latest update. This is usually 1, which means Active Directory Sync.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="keys"></a><span data-ttu-id="c18a1-124">Tasti</span><span class="sxs-lookup"><span data-stu-id="c18a1-124">Keys</span></span>
+### <a name="keys"></a><span data-ttu-id="bcb84-124">Chiavi</span><span class="sxs-lookup"><span data-stu-id="bcb84-124">Keys</span></span>
 
 <table>
 <colgroup>
@@ -88,22 +88,22 @@ ms.locfileid: "41764152"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="c18a1-125">Colonne</span><span class="sxs-lookup"><span data-stu-id="c18a1-125">Columns</span></span></th>
-<th><span data-ttu-id="c18a1-126">Descrizione</span><span class="sxs-lookup"><span data-stu-id="c18a1-126">Description</span></span></th>
+<th><span data-ttu-id="bcb84-125">Colonne</span><span class="sxs-lookup"><span data-stu-id="bcb84-125">Columns</span></span></th>
+<th><span data-ttu-id="bcb84-126">Descrizione</span><span class="sxs-lookup"><span data-stu-id="bcb84-126">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="c18a1-127">&lt;principalID, index, affiliationID&gt;</span><span class="sxs-lookup"><span data-stu-id="c18a1-127">&lt;principalID, index, affiliationID&gt;</span></span></p></td>
-<td><p><span data-ttu-id="c18a1-128">Chiave primaria.</span><span class="sxs-lookup"><span data-stu-id="c18a1-128">Primary key.</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-127">&lt;principalID, index, affiliationID&gt;</span><span class="sxs-lookup"><span data-stu-id="bcb84-127">&lt;principalID, index, affiliationID&gt;</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-128">Chiave primaria.</span><span class="sxs-lookup"><span data-stu-id="bcb84-128">Primary key.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c18a1-129">principalID</span><span class="sxs-lookup"><span data-stu-id="c18a1-129">principalID</span></span></p></td>
-<td><p><span data-ttu-id="c18a1-130">Chiave esterna con ricerca nella tabella tblPrincipal. prinID.</span><span class="sxs-lookup"><span data-stu-id="c18a1-130">Foreign key with lookup in tblPrincipal.prinID table.</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-129">principalID</span><span class="sxs-lookup"><span data-stu-id="bcb84-129">principalID</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-130">Chiave esterna con ricerca nella tabella tblPrincipal.prinID.</span><span class="sxs-lookup"><span data-stu-id="bcb84-130">Foreign key with lookup in tblPrincipal.prinID table.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="c18a1-131">affiliationID</span><span class="sxs-lookup"><span data-stu-id="c18a1-131">affiliationID</span></span></p></td>
-<td><p><span data-ttu-id="c18a1-132">Chiave esterna con ricerca nella tabella tblPrincipal. prinID.</span><span class="sxs-lookup"><span data-stu-id="c18a1-132">Foreign key with lookup in tblPrincipal.prinID table.</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-131">affiliationID</span><span class="sxs-lookup"><span data-stu-id="bcb84-131">affiliationID</span></span></p></td>
+<td><p><span data-ttu-id="bcb84-132">Chiave esterna con ricerca nella tabella tblPrincipal.prinID.</span><span class="sxs-lookup"><span data-stu-id="bcb84-132">Foreign key with lookup in tblPrincipal.prinID table.</span></span></p></td>
 </tr>
 </tbody>
 </table>

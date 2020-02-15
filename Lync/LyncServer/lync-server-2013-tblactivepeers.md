@@ -12,20 +12,20 @@ ms:contentKeyID: 48185176
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 29d7c5c806e7540cc742781ce364748c47c10b39
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ebde759bceaf682384284cffb6a2ec710050126c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764242"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42031200"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="tblactivepeers-in-lync-server-2013"></a><span data-ttu-id="38a84-102">tblActivePeers in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="38a84-102">tblActivePeers in Lync Server 2013</span></span>
+# <a name="tblactivepeers-in-lync-server-2013"></a><span data-ttu-id="8f65b-102">tblActivePeers in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8f65b-102">tblActivePeers in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41764242"
 
 <span> </span>
 
-<span data-ttu-id="38a84-103">_**Argomento Ultima modifica:** 2012-06-29_</span><span class="sxs-lookup"><span data-stu-id="38a84-103">_**Topic Last Modified:** 2012-06-29_</span></span>
+<span data-ttu-id="8f65b-103">_**Ultimo argomento modificato:** 2012-06-29_</span><span class="sxs-lookup"><span data-stu-id="8f65b-103">_**Topic Last Modified:** 2012-06-29_</span></span>
 
-<span data-ttu-id="38a84-104">tblActivePeers contiene le connessioni peer-to-peer correnti tra i servizi di chat.</span><span class="sxs-lookup"><span data-stu-id="38a84-104">tblActivePeers contains the current peer-to-peer connections between chat services.</span></span>
+<span data-ttu-id="8f65b-104">In tblActivePeers sono incluse le connessioni peer-to-peer correnti tra i servizi chat.</span><span class="sxs-lookup"><span data-stu-id="8f65b-104">tblActivePeers contains the current peer-to-peer connections between chat services.</span></span>
 
-### <a name="columns"></a><span data-ttu-id="38a84-105">Colonne</span><span class="sxs-lookup"><span data-stu-id="38a84-105">Columns</span></span>
+### <a name="columns"></a><span data-ttu-id="8f65b-105">Colonne</span><span class="sxs-lookup"><span data-stu-id="8f65b-105">Columns</span></span>
 
 <table>
 <colgroup>
@@ -49,27 +49,27 @@ ms.locfileid: "41764242"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="38a84-106">Colonna</span><span class="sxs-lookup"><span data-stu-id="38a84-106">Column</span></span></th>
-<th><span data-ttu-id="38a84-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="38a84-107">Type</span></span></th>
-<th><span data-ttu-id="38a84-108">Descrizione</span><span class="sxs-lookup"><span data-stu-id="38a84-108">Description</span></span></th>
+<th><span data-ttu-id="8f65b-106">Colonna</span><span class="sxs-lookup"><span data-stu-id="8f65b-106">Column</span></span></th>
+<th><span data-ttu-id="8f65b-107">Tipo</span><span class="sxs-lookup"><span data-stu-id="8f65b-107">Type</span></span></th>
+<th><span data-ttu-id="8f65b-108">Descrizione</span><span class="sxs-lookup"><span data-stu-id="8f65b-108">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="38a84-109">aplServerID</span><span class="sxs-lookup"><span data-stu-id="38a84-109">aplServerID</span></span></p></td>
-<td><p><span data-ttu-id="38a84-110">int, not null</span><span class="sxs-lookup"><span data-stu-id="38a84-110">int, not null</span></span></p></td>
-<td><p><span data-ttu-id="38a84-111">ID del server che ha pubblicato la voce.</span><span class="sxs-lookup"><span data-stu-id="38a84-111">ID of the server that posted the entry.</span></span></p></td>
+<td><p><span data-ttu-id="8f65b-109">aplServerID</span><span class="sxs-lookup"><span data-stu-id="8f65b-109">aplServerID</span></span></p></td>
+<td><p><span data-ttu-id="8f65b-110">int, not null</span><span class="sxs-lookup"><span data-stu-id="8f65b-110">int, not null</span></span></p></td>
+<td><p><span data-ttu-id="8f65b-111">ID del server che ha inviato la voce.</span><span class="sxs-lookup"><span data-stu-id="8f65b-111">ID of the server that posted the entry.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="38a84-112">aplPeerID</span><span class="sxs-lookup"><span data-stu-id="38a84-112">aplPeerID</span></span></p></td>
-<td><p><span data-ttu-id="38a84-113">int, not null</span><span class="sxs-lookup"><span data-stu-id="38a84-113">int, not null</span></span></p></td>
-<td><p><span data-ttu-id="38a84-114">ID del peer a cui è connesso il server di registrazione.</span><span class="sxs-lookup"><span data-stu-id="38a84-114">ID of the peer that the posting server is connected to.</span></span></p></td>
+<td><p><span data-ttu-id="8f65b-112">aplPeerID</span><span class="sxs-lookup"><span data-stu-id="8f65b-112">aplPeerID</span></span></p></td>
+<td><p><span data-ttu-id="8f65b-113">int, not null</span><span class="sxs-lookup"><span data-stu-id="8f65b-113">int, not null</span></span></p></td>
+<td><p><span data-ttu-id="8f65b-114">ID del peer a cui è connesso il server che esegue l'invio.</span><span class="sxs-lookup"><span data-stu-id="8f65b-114">ID of the peer that the posting server is connected to.</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="keys"></a><span data-ttu-id="38a84-115">Tasti</span><span class="sxs-lookup"><span data-stu-id="38a84-115">Keys</span></span>
+### <a name="keys"></a><span data-ttu-id="8f65b-115">Chiavi</span><span class="sxs-lookup"><span data-stu-id="8f65b-115">Keys</span></span>
 
 <table>
 <colgroup>
@@ -78,22 +78,22 @@ ms.locfileid: "41764242"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="38a84-116">Colonna</span><span class="sxs-lookup"><span data-stu-id="38a84-116">Column</span></span></th>
-<th><span data-ttu-id="38a84-117">Descrizione</span><span class="sxs-lookup"><span data-stu-id="38a84-117">Description</span></span></th>
+<th><span data-ttu-id="8f65b-116">Colonna</span><span class="sxs-lookup"><span data-stu-id="8f65b-116">Column</span></span></th>
+<th><span data-ttu-id="8f65b-117">Descrizione</span><span class="sxs-lookup"><span data-stu-id="8f65b-117">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="38a84-118">&lt;aplServerID, aplPeerID&gt;</span><span class="sxs-lookup"><span data-stu-id="38a84-118">&lt;aplServerID, aplPeerID&gt;</span></span></p></td>
-<td><p><span data-ttu-id="38a84-119">Chiave primaria.</span><span class="sxs-lookup"><span data-stu-id="38a84-119">Primary key.</span></span></p></td>
+<td><p><span data-ttu-id="8f65b-118">&lt;aplServerID, aplPeerID&gt;</span><span class="sxs-lookup"><span data-stu-id="8f65b-118">&lt;aplServerID, aplPeerID&gt;</span></span></p></td>
+<td><p><span data-ttu-id="8f65b-119">Chiave primaria.</span><span class="sxs-lookup"><span data-stu-id="8f65b-119">Primary key.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="38a84-120">aplServerID</span><span class="sxs-lookup"><span data-stu-id="38a84-120">aplServerID</span></span></p></td>
-<td><p><span data-ttu-id="38a84-121">Chiave esterna con ricerca nella tabella tblServerIdentity. serverID.</span><span class="sxs-lookup"><span data-stu-id="38a84-121">Foreign key with lookup in tblServerIdentity.serverID table.</span></span></p></td>
+<td><p><span data-ttu-id="8f65b-120">aplServerID</span><span class="sxs-lookup"><span data-stu-id="8f65b-120">aplServerID</span></span></p></td>
+<td><p><span data-ttu-id="8f65b-121">Chiave esterna con ricerca nella tabella tblServerIdentity.serverID.</span><span class="sxs-lookup"><span data-stu-id="8f65b-121">Foreign key with lookup in tblServerIdentity.serverID table.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="38a84-122">aplPeerID</span><span class="sxs-lookup"><span data-stu-id="38a84-122">aplPeerID</span></span></p></td>
-<td><p><span data-ttu-id="38a84-123">Chiave esterna con ricerca nella tabella tblServerIdentity. serverID.</span><span class="sxs-lookup"><span data-stu-id="38a84-123">Foreign key with lookup in tblServerIdentity.serverID table.</span></span></p></td>
+<td><p><span data-ttu-id="8f65b-122">aplPeerID</span><span class="sxs-lookup"><span data-stu-id="8f65b-122">aplPeerID</span></span></p></td>
+<td><p><span data-ttu-id="8f65b-123">Chiave esterna con ricerca nella tabella tblServerIdentity.serverID.</span><span class="sxs-lookup"><span data-stu-id="8f65b-123">Foreign key with lookup in tblServerIdentity.serverID table.</span></span></p></td>
 </tr>
 </tbody>
 </table>
