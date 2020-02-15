@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare una route statica per il controllo delle chiamate remote'
+title: 'Lync Server 2013: configurare una route statica per il controllo delle chiamate remote'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185855
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dfb825e51a9beec7010f9f46ed0fc649267897fd
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 535574a47a9ea77b5db20e45dcdcbb62fab2e4b9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756350"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048129"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41756350"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-22_
+_**Ultimo argomento modificato:** 2012-09-22_
 
-Il controllo delle chiamate remote richiede che ogni pool di Lync Server sia configurato con un percorso da tale pool al gateway SIP/CSTA che si connette al PBX (Private Branch Exchange). Questo percorso richiede che ogni pool disponga di una route statica per ogni gateway a cui il pool proxy riceverà i messaggi di controllo delle chiamate SIP associati alle chiamate al PBX. Se si configura una route statica globale per il controllo delle chiamate remote, ogni pool che non è configurato con una route statica a livello di pool utilizzerà la route statica globale.
+Il controllo delle chiamate remote richiede che ogni pool di Lync Server sia configurato con un percorso da tale pool al gateway SIP/CSTA che si connette al sistema PBX (Private Branch Exchange). Questo percorso richiede che ogni pool disponga di una route statica per ogni gateway che verrà utilizzato dal pool come proxy per i messaggi di controllo delle chiamate SIP associati alle chiamate al PBX. Se si configura una route statica globale per il controllo delle chiamate remote, ogni pool che non è configurato con una route statica a livello del pool utilizzerà la route statica globale.
 
 <div>
 
@@ -45,20 +45,20 @@ Il controllo delle chiamate remote richiede che ogni pool di Lync Server sia con
 
 1.  Accedere a un computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o di un ruolo di controllo di accesso basato sui ruoli a cui è stato assegnato il cmdlet **New-CsStaticRoute** .
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Per creare una route statica e inserirla nella variabile $TLSRoute o $TCPRoute, eseguire una delle operazioni seguenti:
+3.  Per creare una route statica e inserirla nella variabile $TLSRoute o $TCPRoute, effettuare una delle operazioni seguenti:
     
     <div class="">
     
 
     > [!TIP]  
-    > Per confrontare i domini figlio di un dominio, è possibile specificare un valore jolly nel parametro MatchUri. Ad esempio, <STRONG>*. contoso.NET</STRONG>. Tale valore corrisponde a qualsiasi dominio che termina con il suffisso <STRONG>contoso.NET</STRONG>.
+    > Per includere tutti i domini figlio di un dominio, è possibile specificare un valore con caratteri jolly nel parametro MatchUri, ad esempio <STRONG>*.contoso.net</STRONG>. Tale valore consente di includere qualsiasi dominio che termina con il suffisso <STRONG>contoso.net</STRONG>.
 
     
     </div>
     
-      - Per una connessione TLS (Transport Layer Security), digitare quanto segue al prompt dei comandi:
+      - Per una connessione TLS (Transport Layer Security), al prompt dei comandi digitare il comando seguente:
         
         ```powershell
         $TLSRoute = New-CsStaticRoute -TLSRoute -Destination <gateway FQDN> -Port <gateway SIP listening port> -UseDefaultCertificate $true -MatchUri <destination domain>
@@ -67,17 +67,17 @@ Il controllo delle chiamate remote richiede che ogni pool di Lync Server sia con
         ```powershell
         $TLSRoute = New-CsStaticRoute -TLSRoute -Destination rccgateway.contoso.net -Port 5065 -UseDefaultCertificate $true -MatchUri *.contoso.net
         ```
-        Se UseDefaultCertificate è impostato su false, devi specificare i parametri TLSCertIssuer e TLSCertSerialNumber. Questi parametri indicano il nome dell'autorità di certificazione (CA) che ha emesso il certificato usato nella route statica e il numero seriale di tale certificato TLS, rispettivamente. Per informazioni dettagliate su questi parametri, vedere la Guida di Lync Server Management Shell digitando quanto segue al prompt dei comandi:
+        Se UseDefaultCertificate è impostato su False, è necessario specificare i parametri TLSCertIssuer e TLSCertSerialNumber. Questi parametri indicano rispettivamente il nome dell'Autorità di certificazione che ha emesso il certificato utilizzato nella route statica e il numero di serie di tale certificato. Per informazioni dettagliate su questi parametri, vedere la Guida di Lync Server Management Shell digitando quanto segue al prompt dei comandi:
         ```powershell
         Get-Help New-CsStaticRoute -Full
         ```
-      - Per una connessione TCP (Transmission Control Protocol), digitare quanto segue al prompt dei comandi:
+      - Per una connessione TCP (Transmission Control Protocol), digitare il comando seguente al prompt dei comandi:
         
         <div class="">
         
 
         > [!NOTE]  
-        > Se si specifica un nome di dominio completo (FQDN), prima di tutto è necessario configurare un record DNS (Domain Name System).
+        > Se si specifica un nome di dominio completo (FQDN), è necessario configurare precedentemente un record DNS (Domain Name System) A.
 
         
         </div>
@@ -89,19 +89,19 @@ Il controllo delle chiamate remote richiede che ogni pool di Lync Server sia con
         ```powershell
         $TCPRoute = New-CsStaticRoute -TCPRoute -Destination 192.168.0.240 -Port 5065 -MatchUri *.contoso.net
         ```
-        Di seguito sono riportati i valori predefiniti per i parametri facoltativi per le route statiche:
+        Di seguito sono riportati i valori predefiniti per parametri facoltativi per route statiche:
         
-          - Enabled = true
+          - Enabled = True
         
-          - MatchOnlyPhoneUri = false
+          - MatchOnlyPhoneUri = False
         
-          - ReplaceHostInRequestUri = false
+          - ReplaceHostInRequestUri = False
         
-        Ti consigliamo vivamente di non modificare questi valori predefiniti. Se tuttavia è necessario modificare uno di questi parametri, vedere la Guida di Lync Server Management Shell digitando quanto segue al prompt dei comandi:
+        È consigliabile non modificare questi valori predefiniti. Tuttavia, se è necessario modificare uno qualsiasi di questi parametri, vedere la Guida di Lync Server Management Shell digitando quanto segue al prompt dei comandi:
         ```powershell
         Get-Help New-CsStaticRoute -Full
         ```
-4.  Per rendere persistente una route statica appena creata nell'archivio di gestione centrale, eseguire una delle operazioni seguenti, a seconda delle esigenze:
+4.  Per mantenere una route statica appena creata nell'archivio di gestione centrale, eseguire una delle operazioni seguenti, a seconda dei casi:
     
        ```powershell
         Set-CsStaticRoutingConfiguration -Route @{Add=$TLSRoute}
@@ -118,8 +118,8 @@ Il controllo delle chiamate remote richiede che ogni pool di Lync Server sia con
 ## <a name="see-also"></a>Vedere anche
 
 
-[Configurare una voce applicazione attendibile per il controllo delle chiamate remote in Lync Server 2013](lync-server-2013-configure-a-trusted-application-entry-for-remote-call-control.md)  
-[Definire l'indirizzo IP di un gateway SIP/CSTA in Lync Server 2013](lync-server-2013-define-a-sip-csta-gateway-ip-address.md)  
+[Configurare una voce di applicazione attendibile per il controllo delle chiamate remote in Lync Server 2013](lync-server-2013-configure-a-trusted-application-entry-for-remote-call-control.md)  
+[Definire un indirizzo IP del gateway SIP/CSTA in Lync Server 2013](lync-server-2013-define-a-sip-csta-gateway-ip-address.md)  
   
 
 </div>

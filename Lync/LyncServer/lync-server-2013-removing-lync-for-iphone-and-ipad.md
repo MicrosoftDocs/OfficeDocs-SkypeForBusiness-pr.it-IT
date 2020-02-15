@@ -12,16 +12,16 @@ ms:contentKeyID: 51541476
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ad62e9b901eef194fd0a5d9a0fc7182d943a3409
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 06fe80342f5772568458bc7dda26f7f15c9334d1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41746806"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050508"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41746806"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-19_
+_**Ultimo argomento modificato:** 2013-02-19_
 
-Per rimuovere Lync 2013 per iPhone o Microsoft Lync 2010 per iPad dal dispositivo, eseguire la procedura seguente:
+Per rimuovere Lync 2013 per iPhone o Microsoft Lync 2010 per iPad dal dispositivo, eseguire le operazioni seguenti:
 
-1.  Nella schermata iniziale del dispositivo mobile toccare e tenere premuta l'icona di Lync.
+1.  Nella schermata iniziale del dispositivo mobile, toccare e tenere premuto l'icona di Lync.
 
-2.  Quando i riquadri iniziano a tremare e viene visualizzata la **x** , toccare la **x** per eliminare l'applicazione.
+2.  Quando i riquadri cominciano a tremare e viene visualizzata la **x** , toccare **x** per eliminare l'applicazione.
 
 </div>
 

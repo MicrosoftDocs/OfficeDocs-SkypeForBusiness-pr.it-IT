@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: test dell'accesso all'archivio contatti unificato"
+title: "Lync Server 2013: verifica dell'accesso all'archivio contatti unificato"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 63969621
 ms.date: 05/16/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 47d5d216a1d7a389f20bf2c59f94baf54636d409
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ff28fa3ba945c49bee6e5474cb841886bb54d8a0
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41745406"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041983"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="testing-unified-contact-store-access-in-lync-server-2013"></a>Test dell'accesso all'archivio contatti unificato in Lync Server 2013
+# <a name="testing-unified-contact-store-access-in-lync-server-2013"></a>Verifica dell'accesso all'archivio contatti unificato in Lync Server 2013
 
 </div>
 
@@ -35,7 +35,7 @@ ms.locfileid: "41745406"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-05-15_
+_**Ultimo argomento modificato:** 2015-05-15_
 
 
 <table>
@@ -46,16 +46,16 @@ _**Argomento Ultima modifica:** 2015-05-15_
 <tbody>
 <tr class="odd">
 <td><p>Pianificazione della verifica</p></td>
-<td><p>Quotidiana</p></td>
+<td><p>Giornaliero</p></td>
 </tr>
 <tr class="even">
-<td><p>Strumento di test</p></td>
+<td><p>Strumento di testing</p></td>
 <td><p>Windows PowerShell</p></td>
 </tr>
 <tr class="odd">
 <td><p>Autorizzazioni necessarie</p></td>
-<td><p>Quando si esegue localmente tramite Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
-<p>Quando si esegue usando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga delle autorizzazioni per eseguire il cmdlet <strong>Test-CsUnifiedContactStore</strong> . Per visualizzare un elenco di tutti i ruoli RBAC che possono usare questo cmdlet, eseguire il comando seguente dal prompt di Windows PowerShell:</p>
+<td><p>Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
+<p>Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet <strong>Test-CsUnifiedContactStore</strong> . Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</p>
 <pre><code>Get-CsAdminRole | Where-Object {$_.Cmdlets -match &quot;Test-CsUnifiedContactStore&quot;}</code></pre></td>
 </tr>
 </tbody>
@@ -66,21 +66,21 @@ _**Argomento Ultima modifica:** 2015-05-15_
 
 ## <a name="description"></a>Descrizione
 
-L'archivio contatti unificato introdotto in Lync Server 2013 offre agli amministratori la possibilità di archiviare i contatti di un utente in Microsoft Exchange Server 2013 anziché in Lync Server. In questo modo l'utente deve accedere allo stesso set di contatti in Outlook Web Access oltre a Lync 2013. In alternativa, è possibile continuare a archiviare i contatti in Lync Server. In questo caso, gli utenti dovranno gestire due set distinti di contatti: uno da usare con Outlook e Outlook Web Access e uno da usare con Lync 2013.
+L'archivio contatti unificato introdotto in Lync Server 2013 fornisce agli amministratori la possibilità di archiviare i contatti di un utente in Microsoft Exchange Server 2013 anziché in Lync Server. In questo modo l'utente può accedere allo stesso gruppo di contatti in Outlook Web Access oltre che a Lync 2013. In alternativa, è possibile continuare a archiviare i contatti in Lync Server. In tal caso, gli utenti dovranno gestire due gruppi di contatti distinti: uno per l'utilizzo con Outlook e Outlook Web Access e uno per l'utilizzo con Lync 2013.
 
-È possibile determinare se i contatti di un utente sono stati spostati nell'archivio contatti unificato eseguendo il cmdlet **Test-CsUnifiedContactStore** . Il cmdlet **Test-CsUnifiedContactStore** prenderà l'account utente specificato, si collegherà all'archivio contatti unificato e tenterà di recuperare un contatto per l'utente. Se non è possibile recuperare contatti, il comando non riuscirà insieme al messaggio "non sono stati ricevuti contatti per l'utente. Verificare che i contatti siano presenti per l'utente. "
+È possibile determinare se i contatti di un utente sono stati spostati nell'archivio contatti unificato eseguendo il cmdlet **Test-CsUnifiedContactStore** . Il cmdlet **Test-CsUnifiedContactStore** prenderà l'account utente specificato, si connetterà all'archivio contatti unificato e tenterà di recuperare un contatto per l'utente. Se non è possibile recuperare i contatti, il comando avrà esito negativo insieme al messaggio "non sono stati ricevuti contatti per l'utente. Verificare che esistano contatti per l'utente".
 
-Si noti che il cmdlet **Test-CsUnifiedContactStore** non riesce se l'utente ha eseguito correttamente la migrazione nell'archivio contatti unificato, ma non ha contatti nell'elenco contatti. Per completare correttamente il cmdlet **Test-CsUnifiedContactStore** , l'utente specificato deve avere almeno un contatto.
+Si noti che il cmdlet **Test-CsUnifiedContactStore** avrà esito negativo se l'utente ha eseguito correttamente la migrazione nell'archivio contatti unificato, ma non ha contatti nell'elenco contatti. L'utente specificato deve disporre di almeno un contatto per il completamento corretto del cmdlet **Test-CsUnifiedContactStore** .
 
 </div>
 
 <div>
 
-## <a name="running-the-test"></a>Eseguire il test
+## <a name="running-the-test"></a>Esecuzione del test
 
-I comandi mostrati nell'esempio seguente determinano se i contatti per l'\\utente litwareinc kenmyer possono essere trovati nell'archivio contatti unificato. A questo scopo, il primo comando nell'esempio usa il cmdlet **Get-Credential** per creare un oggetto credenziali dell'interfaccia della riga di comando di Windows PowerShell per l'\\utente litwareinc kenmyer. Tieni presente che devi specificare la password per questo account per creare un oggetto credenziali valido e per verificare che il cmdlet **Test-CsUnifiedContactStore** possa eseguire il controllo.
+I comandi riportati nell'esempio seguente determinano se i contatti per l'utente\\litwareinc kenmyer possono essere trovati nell'archivio contatti unificato. A tale scopo, nel primo comando dell'esempio viene utilizzato il cmdlet **Get-Credential** per creare un oggetto Credentials dell'interfaccia della riga di comando di Windows PowerShell\\per l'utente litwareinc kenmyer. Tenere presente che è necessario fornire la password per l'account per creare un oggetto credentials valido e per assicurarsi che il cmdlet **Test-CsUnifiedContactStore** possa eseguire il controllo.
 
-Il secondo comando nell'esempio usa l'oggetto credentials fornito ($x) e l'indirizzo SIP dell'utente litwareinc\\kenmyer per determinare se i contatti sono disponibili nell'archivio contatti unificato.
+Il secondo comando dell'esempio utilizza l'oggetto credenziali fornito ($x) e l'indirizzo SIP dell'utente litwareinc\\kenmyer per determinare se i contatti possono essere trovati nell'archivio contatti unificato.
 
     $credential = Get-Credential "litwareinc\kenmyer"
     
@@ -90,13 +90,13 @@ Il secondo comando nell'esempio usa l'oggetto credentials fornito ($x) e l'indir
 
 <div>
 
-## <a name="determining-success-or-failure"></a>Determinare l'esito positivo o negativo
+## <a name="determining-success-or-failure"></a>Determinazione dell'esito positivo o negativo
 
-Se l'accesso all'archivio contatti è configurato correttamente, si riceverà un output simile al seguente, con la proprietà Result contrassegnata come **riuscita:**
+Se l'accesso all'archivio contatti è configurato in modo corretto, verrà visualizzato un output simile al seguente, con la proprietà Result contrassegnata come **operazione riuscita:**
 
-Nome di dominio completo di destinazione: atl-cs-001.litwareinc.com
+FQDN di destinazione: atl-cs-001.litwareinc.com
 
-Risultato: successo
+Risultato: esito positivo
 
 Latenza: 00:00:14.9862716
 
@@ -104,11 +104,11 @@ Messaggio di errore:
 
 Diagnosi
 
-Se l'accesso all'archivio contatti non è configurato correttamente, il risultato verrà visualizzato come **errore**e verranno registrate altre informazioni nelle proprietà errore e diagnosi:
+Se l'accesso all'archivio contatti non è configurato correttamente, il risultato verrà visualizzato come **errore**e verranno registrate informazioni aggiuntive nelle proprietà Error and Diagnostic:
 
-AVVISO: non è stato possibile leggere il numero di porta del registrar per l'elenco completo
+AVVISO: Impossibile leggere il numero di porta del servizio di registrazione per il dato completo
 
-nome di dominio (FQDN). Uso del numero di porta registrar predefinito. Eccezione
+nome di dominio (FQDN). Utilizzo del numero di porta di registrazione predefinito. Eccezione
 
 System. InvalidOperationException: nessun cluster corrispondente trovato nella topologia.
 
@@ -118,25 +118,25 @@ Microsoft. Rtc. Management. SyntheticTransactions. SipSyntheticTransaction. TryR
 
 eveRegistrarPortFromTopology (Int32& registrarPortNumber)
 
-Nome di dominio completo di destinazione: atl-cs-001.litwareinc.com
+FQDN di destinazione: atl-cs-001.litwareinc.com
 
 Risultato: errore
 
 Latenza: 00:00:00
 
-Messaggio di errore: 10060, il tentativo di connessione non è riuscito perché l'entità connessa
+Messaggio di errore: 10060, un tentativo di connessione non è riuscito perché la parte connessa
 
-non ha risposto correttamente dopo un periodo di tempo o
+non ha risposto correttamente dopo un determinato periodo di tempo oppure
 
 connessione stabilita non riuscita perché l'host connesso ha
 
-Impossibile rispondere 10.188.116.96:5061
+non è stato possibile rispondere 10.188.116.96:5061
 
-Eccezione interna: tentativo di connessione non riuscito perché il
+Eccezione interna: un tentativo di connessione non è riuscito perché il
 
 la parte connessa non ha risposto correttamente dopo un periodo di
 
-l'ora o la connessione stabilita non è riuscita perché l'host connesso
+Data/ora o connessione stabilita non riuscita perché host connesso
 
 non è riuscito a rispondere 10.188.116.96:5061
 
@@ -146,13 +146,13 @@ Diagnosi
 
 <div>
 
-## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non essere riuscito
+## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Ecco alcuni motivi comuni per cui **Test-CsUnifiedContactStore** potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui **Test-CsUnifiedContactStore** potrebbe non riuscire:
 
-  - È stato specificato un valore di parametro errato. Se usato, i parametri facoltativi devono essere configurati correttamente o il test avrà esito negativo. Rieseguire il comando senza i parametri facoltativi e verificare se l'operazione riesce.
+  - È stato specificato un valore di parametro non corretto. Se si utilizza questo parametro, i parametri facoltativi devono essere configurati correttamente o il test avrà esito negativo. Rieseguire il comando senza i parametri facoltativi e verificare se tale operazione ha esito positivo.
 
-  - Connettersi all'archivio contatti unificato non riuscito e il tentativo di recuperare un contatto per l'utente non è stato possibile. Potrebbero verificarsi problemi di connettività di rete.
+  - La connessione all'archivio contatti unificato ha avuto esito negativo e non è stato possibile eseguire il tentativo di recupero di un contatto per l'utente. Potrebbero verificarsi problemi di connettività di rete.
 
 </div>
 

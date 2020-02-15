@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Scalabilità'
+title: Scalabilità di Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183995
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e6ff4828bdfddbfca7734836fdfdbe24f0b90c4a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 130b1958b418aa2b09e572f137598487dc2c3401
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765014"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049868"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41765014"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-25_
+_**Ultimo argomento modificato:** 2012-06-25_
 
-Lync Server è disponibile in due edizioni, Enterprise Edition e Standard Edition. Le diverse edizioni sono destinate principalmente alle diverse dimensioni delle organizzazioni. Come illustrato nella tabella seguente, entrambe le edizioni supportano tutte le funzionalità in tutti i carichi di lavoro, ad eccezione della disponibilità elevata e del ripristino di emergenza.
+Lync Server è disponibile in due edizioni, Enterprise Edition e Standard Edition. Le diverse edizioni sono destinate principalmente a diverse dimensioni delle organizzazioni. Come illustrato nella tabella riportata di seguito, entrambe le edizioni supportano tutte le funzionalità in tutti i carichi di lavoro, ad eccezione della disponibilità elevata e del ripristino di emergenza.
 
 
 <table>
@@ -49,28 +49,28 @@ Lync Server è disponibile in due edizioni, Enterprise Edition e Standard Editio
 <thead>
 <tr class="header">
 <th>Funzionalità</th>
-<th>Supportato in Enterprise Edition?</th>
-<th>Supportato in Standard Edition</th>
+<th>Supporto in Enterprise Edition</th>
+<th>Supporto in Standard Edition</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Messaggistica istantanea (IM) e presenza</p></td>
+<td><p>Servizi di messaggistica istantanea e presenza</p></td>
 <td><p>Sì</p></td>
 <td><p>Sì</p></td>
 </tr>
 <tr class="even">
-<td><p>Servizi di conferenza</p></td>
+<td><p>Conferenza</p></td>
 <td><p>Sì</p></td>
 <td><p>Sì</p></td>
 </tr>
 <tr class="odd">
-<td><p>Servizi di conferenza A/V</p></td>
+<td><p>Servizi A/V conferencing</p></td>
 <td><p>Sì</p></td>
 <td><p>Sì</p></td>
 </tr>
 <tr class="even">
-<td><p>Chiamate in conferenza</p></td>
+<td><p>Conferenza telefonica con accesso esterno</p></td>
 <td><p>Sì</p></td>
 <td><p>Sì</p></td>
 </tr>
@@ -80,7 +80,7 @@ Lync Server è disponibile in due edizioni, Enterprise Edition e Standard Editio
 <td><p>Sì</p></td>
 </tr>
 <tr class="even">
-<td><p>La virtualizzazione</p></td>
+<td><p>Virtualizzazione</p></td>
 <td><p>Sì</p></td>
 <td><p>Sì</p></td>
 </tr>

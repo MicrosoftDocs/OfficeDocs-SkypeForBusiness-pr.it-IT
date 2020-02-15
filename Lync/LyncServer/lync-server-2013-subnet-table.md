@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella Subnet'
+title: 'Lync Server 2013: tabella subnet'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184544
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d107889b49ec16c51224b075a8fb7f7a7cec1b00
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ff03309ab4c71f2dfda9aac96223cde2cd6e000a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731736"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038678"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="subnet-table-in-lync-server-2013"></a>Tabella Subnet in Lync Server 2013
+# <a name="subnet-table-in-lync-server-2013"></a>Tabella subnet in Lync Server 2013
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41731736"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-02_
+_**Ultimo argomento modificato:** 2012-10-02_
 
-La tabella subnet è una tabella di supporto. Ogni record rappresenta una subnet definita nell'impostazione di configurazione della rete.
+La tabella Subnet è una tabella di supporto. Ogni record rappresenta una subnet definita nell'impostazione di configurazione di rete.
 
 
 <table>
@@ -59,8 +59,8 @@ La tabella subnet è una tabella di supporto. Ogni record rappresenta una subnet
 <tr class="odd">
 <td><p><strong>SubnetIP</strong></p></td>
 <td><p>int</p></td>
-<td><p>Primaria, straniera</p></td>
-<td><p>Rappresentazione Integer per l'IP della subnet.</p></td>
+<td><p>Primaria, esterna</p></td>
+<td><p>Rappresentazione in forma di numero intero dell'IP della subnet.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SubnetMask</strong></p></td>
@@ -71,8 +71,8 @@ La tabella subnet è una tabella di supporto. Ogni record rappresenta una subnet
 <tr class="odd">
 <td><p><strong>UserSiteKey</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>A cui si fa riferimento dalla <a href="lync-server-2013-usersite-table.md">tabella UserSite in Lync Server 2013</a>.</p></td>
+<td><p>Stranieri</p></td>
+<td><p>A cui viene fatto riferimento dalla <a href="lync-server-2013-usersite-table.md">tabella UserSite in Lync Server 2013</a>.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SubnetDescription</strong></p></td>

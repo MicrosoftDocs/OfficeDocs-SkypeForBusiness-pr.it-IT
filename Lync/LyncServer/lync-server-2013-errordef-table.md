@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella ErrorDef'
+title: 'Lync Server 2013: tabella ErrorDef'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184403
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 55a6ab9a8bf50639267824c8330701ee74cb3f5a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c490bc9b5058af75704ec3d10c3535581c56df2b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735436"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042093"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41735436"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-05-25_
+_**Ultimo argomento modificato:** 2012-05-25_
 
-La tabella ErrorDef archivia le informazioni su ogni tipo di errore che può verificarsi. Ogni record è un tipo di errore.
+Nella tabella ErrorDef vengono archiviate informazioni su ogni tipo di errore che può verificarsi. Ogni record è un tipo di errore.
 
 
 <table>
@@ -76,16 +76,16 @@ La tabella ErrorDef archivia le informazioni su ogni tipo di errore che può ver
 </tr>
 <tr class="even">
 <td><p><strong>CallTypeId</strong></p></td>
-<td><p>Int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Tipo di chiamata. Per altre informazioni, vedere la <a href="lync-server-2013-calltype-table.md">tabella CallType in Lync Server 2013</a> .</p></td>
+<td><p>Soglia</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Tipo di chiamata. Per ulteriori informazioni, vedere la <a href="lync-server-2013-calltype-table.md">tabella CallType in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>RequestType</strong></p></td>
 <td><p>varbinary (33)</p></td>
 <td><p> </p></td>
-<td><p>Tipo di richiesta non riuscita.</p>
-<p>Questi dati possono essere convertiti in formato testo usando la sintassi seguente:</p>
+<td><p>Tipo della richiesta non riuscita.</p>
+<p>Questi dati possono essere convertiti in formato testo utilizzando la sintassi seguente:</p>
 <p><code>cast(cast(RequestType as varbinary(max)) as varchar(max))</code></p></td>
 </tr>
 <tr class="even">
@@ -93,7 +93,7 @@ La tabella ErrorDef archivia le informazioni su ogni tipo di errore che può ver
 <td><p>varbinary (257)</p></td>
 <td><p> </p></td>
 <td><p>Tipo di contenuto della richiesta non riuscita.</p>
-<p>Questi dati possono essere convertiti in formato testo usando la sintassi seguente:</p>
+<p>Questi dati possono essere convertiti in formato testo utilizzando la sintassi seguente:</p>
 <p><code>cast(cast(ContentType as varbinary(max)) as varchar(max))</code></p></td>
 </tr>
 </tbody>

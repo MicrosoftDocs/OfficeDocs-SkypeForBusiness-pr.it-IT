@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Revisione del report di riepilogo'
+title: 'Lync Server 2013: Revisione del rapporto riepilogativo'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541459
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0fdcde0c82f2b1b157db13fe22ee5cb792a4c1c6
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bf9b53c295aa2616c5886ab9383f46e64c300a99
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732996"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051500"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="reviewing-the-summary-report-in-lync-server-2013"></a>Revisione del report di riepilogo in Lync Server 2013
+# <a name="reviewing-the-summary-report-in-lync-server-2013"></a>Revisione del rapporto riepilogativo in Lync Server 2013
 
 </div>
 
@@ -35,28 +35,28 @@ ms.locfileid: "41732996"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-Il report amministratore di Lync Server è il primo di quattro report importanti che documentano la progettazione in dettaglio. Le informazioni contenute in questo report e gli altri tre report associati sono un'ottima documentazione per i team di Information Technology:
+Il Rapporto amministratore Lync Server è il primo dei quattro rapporti importanti che documentano in dettaglio la progettazione. Le informazioni incluse in questo rapporto e negli altri tre rapporti associati costituiscono una documentazione significativa per i team IT:
 
 ![Rapporto di amministrazione riepilogativo generale](images/Gg558626.9c529ef7-cb1b-4ce1-a8bc-3ec79aba2377(OCS.15).jpg "Rapporto di amministrazione riepilogativo generale")
 
-  - Report certificati
+  - Rapporto certificati
 
-  - Report firewall
+  - Rapporto firewall
 
-  - Report DNS
+  - Rapporto DNS
 
-Il report riepilogativo elenca le informazioni generali sulla configurazione associate alla rete Edge. La posizione, il nome di dominio completo (FQDN) e l'indirizzo IP, il tipo di rete e i commenti specifici di un determinato ruolo sono documentati.
+Nel rapporto riepilogativo vengono elencate informazioni di configurazione generali associate alla rete perimetrale. La posizione, il nome di dominio completo (FQDN) e l'indirizzo IP, il tipo di rete e i commenti specifici di un determinato ruolo sono documentati.
 
-La finestra di progettazione e ogni team che distribuirà, gestirà e manterrà l'infrastruttura dovrebbe rivedere il rapporto di riepilogo per l'accuratezza e verificare che gli errori siano minimi.
+La finestra di progettazione e ogni team che distribuirà, gestirà e gestirà l'infrastruttura dovrebbe esaminare il rapporto riepilogativo per garantire la massima accuratezza e verificare che gli errori siano minimi.
 
 <div>
 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Esame dei rapporti amministratore in Lync Server 2013](lync-server-2013-reviewing-the-administrator-reports.md)  
+[Revisione dei rapporti dell'amministratore in Lync Server 2013](lync-server-2013-reviewing-the-administrator-reports.md)  
   
 
 </div>

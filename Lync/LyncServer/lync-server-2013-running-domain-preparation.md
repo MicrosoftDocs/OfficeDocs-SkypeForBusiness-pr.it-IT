@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Esecuzione della preparazione del dominio'
+title: 'Lync Server 2013: esecuzione della preparazione del dominio'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184847
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 408dea780b4136f86ffed30d199d1d0ee63d6821
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 960a3664bb7b629a9d66b375d072f826ed9e2738
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765064"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050768"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,53 +35,53 @@ ms.locfileid: "41765064"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-04-16_
+_**Ultimo argomento modificato:** 2013-04-16_
 
-È possibile usare i cmdlet setup o Lync Server Management Shell per preparare i domini. Il cmdlet che prepara un dominio è **Enable-CsAdDomain**.
+È possibile utilizzare i cmdlet setup o Lync Server Management Shell per preparare i domini. Il cmdlet che prepara un dominio è **Enable-CsAdDomain**.
 
-La preparazione del dominio è il passaggio finale della preparazione dei servizi di dominio Active Directory per Lync Server 2013.
+La preparazione del dominio è il passaggio finale nella preparazione di servizi di dominio Active Directory per Lync Server 2013.
 
 <div>
 
-## <a name="to-use-setup-to-prepare-domains"></a>Per usare la configurazione per preparare i domini
+## <a name="to-use-setup-to-prepare-domains"></a>Per utilizzare il programma di installazione per preparare i domini
 
-1.  Accedere a qualsiasi server del dominio come membro del gruppo Domain Admins.
+1.  Eseguire l'accesso a un server del dominio come membro del gruppo Domain Admins.
 
-2.  Nella cartella di installazione o nel supporto di Lync Server 2013 eseguire Setup. exe per avviare la distribuzione guidata di Lync Server.
+2.  Dalla cartella o dal supporto di installazione di Lync Server 2013, eseguire Setup. exe per avviare la distribuzione guidata di Lync Server.
 
 3.  Fare clic su **Prepara Active Directory** e quindi attendere che venga determinato lo stato della distribuzione.
 
 4.  Al **Passaggio 5: Preparazione del dominio corrente**, fare clic su **Esegui**.
 
-5.  Nella pagina **preparazione dominio** fare clic su **Avanti**.
+5.  Nella pagina **Prepara dominio** fare clic su **Avanti**.
 
-6.  Nella pagina **Esecuzione comandi in corso** cercare il messaggio **Stato attività: Completata** e quindi fare clic su **Visualizza registro**.
+6.  Nella pagina **Esecuzione comandi in corso** ricercare **Stato attività: Operazione completata** e quindi fare clic su **Visualizza registro**.
 
-7.  Nella colonna **azione** espandere **domain prep**, cercare un ** \<\> ** risultato di esecuzione di successo alla fine di ogni attività per verificare che la preparazione del dominio sia stata completata correttamente, chiudere il log e quindi fare clic su **fine**.
+7.  Nella colonna **azione** espandere **preparazione dominio**, ** \<\> cercare il risultato dell'esecuzione finale** alla fine di ogni attività per verificare che la preparazione del dominio sia stata completata correttamente, chiudere il registro e quindi fare clic su **fine**.
 
-8.  Attendere che la replica di Active Directory completi o forzi la replica a tutti i controller di dominio elencati nello snap-in siti e servizi di Active Directory per il controller di dominio radice della foresta.
+8.  Attendere che la replica di Active Directory venga completata o forzare la replica in tutti i controller di dominio elencati nello snap-in siti e servizi di Active Directory per il controller di dominio radice della foresta.
 
 </div>
 
 <div>
 
-## <a name="to-use-cmdlets-to-prepare-the-domain"></a>Per usare i cmdlet per preparare il dominio
+## <a name="to-use-cmdlets-to-prepare-the-domain"></a>Per utilizzare i cmdlet per preparare il dominio
 
-1.  Accedere a qualsiasi server del dominio come membro del gruppo Domain Admins.
+1.  Eseguire l'accesso a un server del dominio come membro del gruppo Domain Admins.
 
-2.  Installare i componenti di base di Lync Server nel modo seguente:
+2.  Installare i componenti di base di Lync Server come indicato di seguito:
     
-    1.  Nella cartella di installazione o nel supporto di Lync Server 2013 eseguire Setup. exe per avviare la distribuzione guidata di Lync Server.
+    1.  Dalla cartella o dal supporto di installazione di Lync Server 2013, eseguire Setup. exe per avviare la distribuzione guidata di Lync Server.
     
-    2.  Se viene richiesto di installare Microsoft Visual C++ ridistribuibile, fare clic su **Sì**.
+    2.  Se viene chiesto di installare Microsoft Visual C++ Redistributable, fare clic su **Sì**.
     
-    3.  Nella finestra di dialogo configurazione di Lync Server 2013 viene richiesto di installare i file di Lync Server. Scegliere il percorso predefinito o **passare** a una posizione a scelta e quindi fare clic su **Installa**.
+    3.  Nella finestra di dialogo installazione di Lync Server 2013 viene visualizzata una richiesta di installazione dei file di Lync Server. Scegliere il percorso predefinito o **Sfoglia** per selezionare il percorso desiderato e quindi fare clic su **Installa**.
     
-    4.  Nella pagina Contratto di licenza selezionare **Accetto i termini del contratto di licenza**e quindi fare clic su **OK**. Il programma di installazione installa i componenti principali di Lync Server 2013.
+    4.  Nella pagina Contratto di Licenza selezionare **Accetto i termini del Contratto di Licenza** e quindi fare clic su **OK**. Il programma di installazione installa i componenti di base di Lync Server 2013.
 
-3.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+3.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-4.  Eseguire
+4.  Eseguire: 
     
         Enable-CsAdDomain [-Domain <DomainFQDN>] 
     
@@ -89,9 +89,9 @@ La preparazione del dominio è il passaggio finale della preparazione dei serviz
     
         Enable-CsAdDomain -Domain domain1.contoso.net 
     
-    Se non specifichi il parametro Domain, il valore predefinito è il dominio locale.
+    Se non si specifica il parametro Domain, per impostazione predefinita verrà utilizzato il dominio locale.
 
-5.  Verificare che la preparazione del dominio sia stata eseguita correttamente. Eseguire
+5.  Verificare che la preparazione del dominio abbia avuto esito positivo. Eseguire: 
     
         Get-CsAdDomain [-Domain <Domain FQDN>] [-DomainController <Domain controller FQDN>] [-GlobalCatalog <Global catalog server FQDN>] [-GlobalSettingsDomainController <Domain controller FQDN where global settings are stored>] 
     
@@ -103,14 +103,14 @@ La preparazione del dominio è il passaggio finale della preparazione dei serviz
     
 
     > [!NOTE]  
-    > Il parametro GlobalSettingsDomainController consente di indicare dove sono archiviate le impostazioni globali. Se le impostazioni sono archiviate nel contenitore di sistema (tipico delle distribuzioni di aggiornamento che non hanno eseguito la migrazione delle impostazioni globali nel contenitore di configurazione), si definisce un controller di dominio nella radice della foresta di Active Directory. Se invece le impostazioni globali sono incluse nel contenitore Configuration, come avviene in genere con le distribuzioni nuove o di aggiornamento per cui è stata eseguita la migrazione delle impostazioni nel contenitore Configuration, definire un controller di dominio nella foresta. Se non specifichi questo parametro, il cmdlet presuppone che le impostazioni siano archiviate nel contenitore di configurazione e faccia riferimento a qualsiasi controller di dominio in&nbsp;Active Directory.
+    > Il parametro GlobalSettingsDomainController consente di indicare dove vengono archiviate le impostazioni globali. Se le impostazioni vengono archiviate nel contenitore di sistema (tipica delle distribuzioni di aggiornamento che non hanno eseguito la migrazione delle impostazioni globali nel contenitore di configurazione), è necessario definire un controller di dominio nella radice della foresta di Active Directory. Se invece le impostazioni globali sono incluse nel contenitore Configuration, come avviene in genere con le distribuzioni nuove o di aggiornamento per cui è stata eseguita la migrazione delle impostazioni nel contenitore Configuration, definire un controller di dominio nella foresta. Se non si specifica questo parametro, il cmdlet presuppone che le impostazioni siano archiviate nel contenitore di configurazione e si riferisca a qualsiasi controller&nbsp;di dominio in ad DS.
 
     
     </div>
     
-    Se non specifichi il parametro **Domain** , il valore predefinito è il dominio locale.
+    Se non si specifica il parametro **Domain** , il valore predefinito è il dominio locale.
     
-    Questo cmdlet restituisce il valore di **LC\_DOMAINSETTINGS\_stato\_pronto** se la preparazione del dominio è stata completata.
+    Questo cmdlet restituisce un valore di **stato\_\_LC\_DOMAINSETTINGS pronto** se la preparazione del dominio ha avuto esito positivo.
 
 </div>
 
@@ -119,7 +119,7 @@ La preparazione del dominio è il passaggio finale della preparazione dei serviz
 ## <a name="see-also"></a>Vedere anche
 
 
-[Utilizzo di cmdlet per ripristinare la preparazione del dominio per Lync Server 2013](lync-server-2013-using-cmdlets-to-reverse-domain-preparation.md)  
+[Utilizzo dei cmdlet per annullare la preparazione del dominio per Lync Server 2013](lync-server-2013-using-cmdlets-to-reverse-domain-preparation.md)  
 
 
 [Preparazione dei domini per Lync Server 2013](lync-server-2013-preparing-domains.md)  

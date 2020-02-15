@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: impostazioni di rete per le funzionalità vocali avanzate di Enterprise'
+title: 'Lync Server 2013: impostazioni di rete per le funzionalità di VoIP aziendale avanzate'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184632
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b1ce4983f7744158c9c9ff56cdfdde818fdc8e14
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f1d6b01009aac5fdaf3d69e24b4137897e70051b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765877"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049328"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="network-settings-for-the-advanced-enterprise-voice-features-in-lync-server-2013"></a>Impostazioni di rete per le funzionalità vocali avanzate di Enterprise in Lync Server 2013
+# <a name="network-settings-for-the-advanced-enterprise-voice-features-in-lync-server-2013"></a>Impostazioni di rete per le funzionalità di VoIP aziendale avanzate in Lync Server 2013
 
 </div>
 
@@ -35,43 +35,43 @@ ms.locfileid: "41765877"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-10_
+_**Ultimo argomento modificato:** 2012-10-10_
 
-Lync Server include tre funzionalità vocali avanzate per l'organizzazione: controllo di ammissione delle chiamate (CAC), servizi di emergenza (E9-1-1) e bypass multimediale. Queste funzionalità condividono determinati requisiti di configurazione per le aree di rete, i siti di rete e l'associazione di ogni subnet nella topologia di Lync Server con un sito di rete. Per informazioni dettagliate sulla pianificazione della distribuzione di queste funzionalità, vedere:
+Lync Server dispone di tre funzionalità di VoIP aziendale avanzate: controllo di ammissione di chiamata (CAC), servizi di emergenza (E9-1-1) e bypass multimediale. Tali caratteristiche condividono alcuni requisiti di configurazione per le aree di rete, i siti di rete e l'associazione di ogni subnet nella topologia di Lync Server con un sito di rete. Per informazioni dettagliate sulla pianificazione della distribuzione di queste caratteristiche, vedere:
 
-  - [Pianificazione del servizio Controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-planning-for-call-admission-control.md)
+  - [Pianificazione del controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-planning-for-call-admission-control.md)
 
   - [Pianificazione per i servizi di emergenza (E9-1-1) in Lync Server 2013](lync-server-2013-planning-for-emergency-services-e9-1-1.md)
 
   - [Pianificazione del bypass multimediale in Lync Server 2013](lync-server-2013-planning-for-media-bypass.md)
 
-Per informazioni dettagliate sulla distribuzione di ognuna di queste funzionalità, vedere [distribuzione di funzionalità vocali avanzate di Enterprise in Lync Server 2013](lync-server-2013-deploying-advanced-enterprise-voice-features.md) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate sulla distribuzione di ognuna di queste funzionalità, vedere [Deploying Advanced Enterprise Voice features in Lync Server 2013](lync-server-2013-deploying-advanced-enterprise-voice-features.md) nella documentazione relativa alla distribuzione.
 
-Questo argomento offre una panoramica dei requisiti di configurazione comuni a tutte e tre le funzionalità avanzate di VoIP aziendale.
+In questo argomento viene fornita una panoramica dei requisiti di configurazione comuni a tutte e tre le funzionalità di VoIP aziendale avanzate.
 
 <div>
 
 ## <a name="network-regions"></a>Aree di rete
 
-Un'area di rete è un hub di rete o backbone di rete usato solo nella configurazione del controllo di ammissione alle chiamate (CAC), E9-1-1 e bypass multimediale.
+Un'area di rete è un hub o un backbone di rete utilizzato solo nella configurazione dei servizi Controllo di ammissione di chiamata, E9-1-1 e Media Bypass.
 
 <div>
 
 
 > [!NOTE]  
-> Le aree di rete non corrispondono alle aree dei servizi di conferenza telefonica con accesso esterno di Lync Server, che sono necessarie per associare i numeri di Access per i servizi di conferenza telefonica con chiamata in ingresso con uno o più piani di dial Lync Server Per informazioni dettagliate sulle aree dei servizi di conferenza telefonica con accesso esterno, vedere Requisiti per i servizi di conferenza telefonica <A href="lync-server-2013-dial-in-conferencing-requirements.md">con accesso esterno in Lync Server 2013</A> nella documentazione relativa alla pianificazione.
+> Le aree di rete non corrispondono alle aree di conferenza telefonica con accesso esterno di Lync Server, che sono necessarie per associare i numeri delle conferenze telefoniche con chiamata in ingresso con uno o più dial plan di Lync Server. Per informazioni dettagliate sulle aree di conferenza telefonica con accesso esterno, vedere Servizi di <A href="lync-server-2013-dial-in-conferencing-requirements.md">conferenza telefonica con accesso esterno in Lync Server 2013</A> nella documentazione relativa alla pianificazione.
 
 
 
 </div>
 
-Il CAC richiede che ogni area di rete disponga di un sito centrale Lync Server associato, che gestisce il traffico multimediale all'interno dell'area geografica, ossia prende decisioni in base a criteri configurati, per quanto riguarda la possibilità di una sessione audio o video in tempo reale essere stabilito). I siti centrali di Lync Server non rappresentano posizioni geografiche, bensì gruppi logici di server configurati come pool o set di pool. Per informazioni dettagliate sui siti centrali, vedere [topologie di riferimento in Lync Server 2013](lync-server-2013-reference-topologies.md) nella documentazione relativa alla pianificazione. Vedere anche [topologie supportate in Lync Server 2013](lync-server-2013-supported-topologies.md) nella documentazione relativa alla supportabilità.
+CAC richiede che ogni area di rete disponga di un sito centrale Lync Server associato, in grado di gestire il traffico multimediale all'interno dell'area (ovvero di prendere decisioni basate sui criteri configurati, in merito alla possibilità o meno di una sessione audio o video in tempo reale essere stabilito). I siti centrali di Lync Server non rappresentano posizioni geografiche, ma piuttosto gruppi logici di server configurati come pool o come set di pool. Per informazioni dettagliate sui siti centrali, vedere [Reference Topologies in Lync Server 2013](lync-server-2013-reference-topologies.md) nella documentazione relativa alla pianificazione. Vedere anche [topologie supportate in Lync Server 2013](lync-server-2013-supported-topologies.md) nella documentazione relativa alla supportabilità.
 
-Per configurare un'area di rete, è possibile usare la scheda **aree** nella sezione **configurazione di rete** del pannello di controllo di Lync Server oppure eseguire i cmdlet **New-CsNetworkRegion** o **Set-CsNetworkRegion** Lync Server Management Shell. Per istruzioni, vedere [creare o modificare un'area di rete in Lync server 2013](lync-server-2013-create-or-modify-a-network-region.md) nella documentazione di distribuzione oppure fare riferimento alla documentazione di Lync Server Management Shell.
+Per configurare un'area di rete, è possibile utilizzare la scheda **aree** nella sezione **configurazione di rete** del pannello di controllo di Lync Server oppure eseguire i cmdlet **New-CsNetworkRegion** o **Set-CsNetworkRegion** di Lync Server Management Shell. Per istruzioni, vedere [creare o modificare un'area di rete in Lync server 2013](lync-server-2013-create-or-modify-a-network-region.md) nella documentazione relativa alla distribuzione o fare riferimento alla documentazione di Lync Server Management Shell.
 
-Le stesse definizioni di area di rete sono condivise da tutte e tre le funzionalità vocali avanzate di Enterprise. Se sono già state create aree di rete per una caratteristica, non è necessario creare nuove aree di rete per le altre funzionalità. Può tuttavia essere necessario modificare una definizione di area di rete esistente per applicare impostazioni specifiche delle caratteristiche. Ad esempio, se sono state create aree di rete per E9-1-1 (che non richiedono un sito centrale associato) e, in seguito, si distribuisce il controllo di ammissione di chiamata, è necessario modificare ogni definizione di area di rete per specificare un sito centrale.
+Le stesse definizioni di aree di rete sono condivise da tutte e tre le funzionalità di VoIP aziendale avanzate. Se sono già state create aree di rete per una caratteristica, non è necessario creare nuove aree di rete per le altre caratteristiche. Potrebbe tuttavia essere necessario modificare una definizione di area di rete esistente per applicare impostazioni specifiche della caratteristica. Se, ad esempio, sono state create aree di rete per il servizio E9-1-1 (che non richiede un sito centrale associato) e successivamente si distribuisce il servizio Controllo di ammissione di chiamata, è necessario modificare ognuna delle definizioni di area di rete per specificare un sito centrale.
 
-Per associare un sito centrale di Lync Server a un'area di rete, è necessario specificare il nome del sito centrale utilizzando la sezione **configurazione di rete** del pannello di controllo di Lync Server oppure eseguendo i cmdlet **New-CsNetworkRegion** o **Set-CsNetworkRegion** Lync Server Management Shell. Per istruzioni, vedere [creare o modificare un'area di rete in Lync server 2013](lync-server-2013-create-or-modify-a-network-region.md) nella documentazione di distribuzione oppure fare riferimento alla documentazione di Lync Server Management Shell.
+Per associare un sito centrale di Lync Server a un'area di rete, è necessario specificare il nome del sito centrale utilizzando la sezione **configurazione di rete** del pannello di controllo di Lync Server oppure eseguendo i cmdlet **New-CsNetworkRegion** o **Set-CsNetworkRegion** di Lync Server Management Shell. Per istruzioni, vedere [creare o modificare un'area di rete in Lync server 2013](lync-server-2013-create-or-modify-a-network-region.md) nella documentazione relativa alla distribuzione o fare riferimento alla documentazione di Lync Server Management Shell.
 
 </div>
 
@@ -79,19 +79,19 @@ Per associare un sito centrale di Lync Server a un'area di rete, è necessario s
 
 ## <a name="network-sites"></a>Siti di rete
 
-Un sito di rete rappresenta una posizione geografica, ad esempio una filiale, un ufficio regionale o una sede principale. Ogni sito di rete deve essere associato a una specifica area di rete.
+Un sito di rete rappresenta una posizione geografica, ad esempio una succursale, una filiale o la sede principale. Ogni sito di rete deve essere associato a un'area di rete specifica.
 
 <div>
 
 
 > [!NOTE]  
-> I siti di rete vengono usati solo dalle funzionalità vocali avanzate di Enterprise. Non corrispondono ai siti della filiale configurati nella topologia di Lync Server. Per informazioni dettagliate sui siti di succursale, vedere <A href="lync-server-2013-reference-topologies.md">topologie di riferimento in Lync Server 2013</A> nella documentazione relativa alla pianificazione. Vedere anche <A href="lync-server-2013-supported-topologies.md">topologie supportate in Lync Server 2013</A> nella documentazione relativa alla supportabilità.
+> I siti di rete vengono utilizzati solo dalle funzionalità avanzate di VoIP aziendale. Non sono gli stessi dei siti di succursale configurati nella topologia di Lync Server. Per informazioni dettagliate sui siti di succursale, vedere <A href="lync-server-2013-reference-topologies.md">Reference Topologies in Lync Server 2013</A> nella documentazione relativa alla pianificazione. Vedere anche <A href="lync-server-2013-supported-topologies.md">topologie supportate in Lync Server 2013</A> nella documentazione relativa alla supportabilità.
 
 
 
 </div>
 
-Per configurare un sito di rete e associarlo a un'area di rete, è possibile usare la sezione **configurazione di rete** del pannello di controllo di Lync Server oppure eseguire i cmdlet di Lync Server Management Shell **New-CsNetworkSite** o **Set-CsNetworkSite** . Per informazioni dettagliate, vedere [creare o modificare un sito di rete in Lync server 2013](lync-server-2013-create-or-modify-a-network-site.md) nella documentazione di distribuzione oppure fare riferimento alla documentazione di Lync Server Management Shell.
+Per configurare un sito di rete e associarlo a un'area di rete, è possibile utilizzare la sezione **configurazione di rete** del pannello di controllo di Lync Server oppure eseguire il cmdlet **New-CsNetworkSite** o **Set-CsNetworkSite** di Lync Server Management Shell. Per ulteriori informazioni, vedere [creare o modificare un sito di rete in Lync server 2013](lync-server-2013-create-or-modify-a-network-site.md) nella documentazione relativa alla distribuzione o fare riferimento alla documentazione di Lync Server Management Shell.
 
 </div>
 
@@ -99,15 +99,15 @@ Per configurare un sito di rete e associarlo a un'area di rete, è possibile usa
 
 ## <a name="identify-ip-subnets"></a>Identificare le subnet IP
 
-Per ogni sito di rete, è necessario collaborare con l'amministratore di rete per determinare le subnet IP assegnate a ogni sito di rete. Se l'amministratore di rete ha già organizzato le subnet IP nelle aree di rete e nei siti di rete, il lavoro è semplificato in modo significativo.
+Per ogni sito di rete sarà necessario collaborare con l'amministratore di rete per stabilire quali subnet IP sono assegnate a ogni sito di rete. Se l'amministratore di rete ha già organizzato le subnet IP in aree di rete e siti di rete, il lavoro risulterà notevolmente semplificato.
 
-Ad esempio, il sito di New York nell'area Nord America può essere assegnato alle subnet IP seguenti: 172.29.80.0/23, 157.57.216.0/25, 172.29.91.0/23, 172.29.81.0/24. Se Bob, che lavora di solito a Detroit, viaggia all'ufficio di New York per la formazione, accende il computer e si connette alla rete, il computer otterrà un indirizzo IP in uno dei quattro intervalli assegnati a New York, ad esempio 172.29.80.103.
+In questo esempio, al sito New York nell'area Nord America sono assegnate le subnet IP seguenti: 172.29.80.0/23, 157.57.216.0/25, 172.29.91.0/23, 172.29.81.0/24. Si supponga che Bob, che di solito lavora a Detroit, si sposti nell'ufficio di New York per un corso di formazione. Quando accende il suo computer e si connette alla rete, al computer verrà assegnato un indirizzo IP in uno dei quattro intervalli allocati a New York, ad esempio 172.29.80.103.
 
 <div>
 
 
 > [!WARNING]  
-> Le subnet IP specificate durante la configurazione di rete nel server devono corrispondere al formato fornito dai computer client per essere correttamente usati per il bypass multimediale. Un client Lync prende l'indirizzo IP locale e maschera l'indirizzo IP con la subnet mask associata. Quando si determina l'ID di bypass associato a ogni client, il registrar confronterà l'elenco delle subnet IP associate a ogni sito di rete rispetto alla subnet fornita dal client per una corrispondenza esatta. Per questo motivo, è importante che le subnet immesse durante la configurazione di rete sul server siano subnet effettive anziché sottoreti virtuali. Se si distribuisce il controllo di ammissione alle chiamate, ma non il bypass multimediale, il controllo di ammissione delle chiamate funzionerà correttamente anche se si configurano sottoreti virtuali.<BR>Ad esempio, se un client Lync accede a un computer con un indirizzo IP di 172.29.81.57 con una subnet mask IP 255.255.255.0, richiederà l'ID di bypass associato alla subnet 172.29.81.0. Se la subnet è definita come 172.29.0.0/16, anche se il client appartiene alla subnet virtuale, il registrar non considererà questa corrispondenza perché il registrar Cerca specificamente la subnet 172.29.81.0. Di conseguenza, è importante che l'amministratore immetta le subnet esattamente come fornite dai client Lync (che vengono provisionati con le subnet durante la configurazione di rete, sia in modo statico che tramite DHCP).
+> Le subnet IP specificate durante la configurazione della rete nel server devono corrispondere al formato specificato dai computer client per poter essere utilizzate correttamente per Media Bypass. Un client Lync prende l'indirizzo IP locale e maschera l'indirizzo IP con la subnet mask associata. Durante la determinazione dell'ID bypass associato a ogni client, tramite la funzione di registrazione viene confrontato l'elenco delle subnet IP associate a ogni sito di rete con la subnet fornita dal client per individuare una corrispondenza esatta. Per questo motivo, è importante che le subnet immesse durante la configurazione della rete nel server siano subnet effettive, anziché virtuali. Se si implementa il servizio Controllo di ammissione di chiamata ma non Media Bypass, il servizio Controllo di ammissione di chiamata funzionerà in modo corretto anche se si configurano subnet virtuali.<BR>Ad esempio, se un client Lync accede a un computer con un indirizzo IP di 172.29.81.57 con una subnet mask IP 255.255.255.0, richiederà l'ID di bypass associato alla subnet 172.29.81.0. Se la subnet è definita come 172.29.0.0/16, anche se il client appartiene alla subnet virtuale, la funzione di registrazione non la considererà una corrispondenza esatta perché cerca nello specifico la subnet 172.29.81.0. Pertanto, è importante che l'amministratore entri nelle subnet esattamente come indicato dai client Lync (che vengono provisionati con le subnet durante la configurazione di rete, sia in modo statico che tramite il protocollo DHCP (Dynamic Host Configuration Protocol).
 
 
 
@@ -117,11 +117,11 @@ Ad esempio, il sito di New York nell'area Nord America può essere assegnato all
 
 <div>
 
-## <a name="associating-subnets-with-network-sites"></a>Associazione di subnet con i siti di rete
+## <a name="associating-subnets-with-network-sites"></a>Associazione di subnet a siti di rete
 
-Ogni subnet nella rete aziendale deve essere associata a un sito di rete, ovvero ogni subnet deve essere associata a una posizione geografica. Questa associazione di subnet consente alle funzionalità vocali avanzate dell'organizzazione di individuare gli endpoint geograficamente. Ad esempio, l'individuazione degli endpoint consente a CAC di regolare il flusso di dati audio e video in tempo reale da e verso il sito di rete.
+Ogni subnet della rete aziendale deve essere associata a un sito di rete (ovvero ogni subnet deve essere associata a una posizione geografica). Questa associazione di subnet consente alle funzionalità di VoIP aziendale avanzate di individuare i punti finali in modo geografico. L'individuazione degli endpoint consente, ad esempio, al servizio Controllo di ammissione di chiamata di regolare il flusso di dati audio e video in tempo reale da e verso il sito di rete.
 
-Per associare subnet a siti di rete, è possibile usare la sezione **configurazione di rete** del pannello di controllo di Lync Server oppure usare Lync Server Management Shell. Per istruzioni, vedere [associare una subnet a un sito di rete in Lync server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md) nella documentazione di distribuzione oppure fare riferimento alla documentazione di Lync Server Management Shell.
+Per associare subnet a siti di rete, è possibile utilizzare la sezione **configurazione di rete** del pannello di controllo di Lync Server oppure è possibile utilizzare Lync Server Management Shell. Per istruzioni, vedere [associare una subnet a un sito di rete in Lync server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md) nella documentazione relativa alla distribuzione o fare riferimento alla documentazione di Lync Server Management Shell.
 
 </div>
 
@@ -130,7 +130,7 @@ Per associare subnet a siti di rete, è possibile usare la sezione **configurazi
 ## <a name="see-also"></a>Vedere anche
 
 
-[Pianificazione del servizio Controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-planning-for-call-admission-control.md)  
+[Pianificazione del controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-planning-for-call-admission-control.md)  
 [Pianificazione per i servizi di emergenza (E9-1-1) in Lync Server 2013](lync-server-2013-planning-for-emergency-services-e9-1-1.md)  
 [Pianificazione del bypass multimediale in Lync Server 2013](lync-server-2013-planning-for-media-bypass.md)  
   

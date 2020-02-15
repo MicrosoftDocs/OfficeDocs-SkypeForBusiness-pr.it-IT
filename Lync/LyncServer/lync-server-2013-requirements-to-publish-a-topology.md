@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Requisiti per la pubblicazione di una topologia'
+title: 'Lync Server 2013: requisiti per la pubblicazione di una topologia'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184688
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0f1422df35ebbe9f368dc8aa3d121caf740e7033
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7537d512bfdb8c004cfc05e142d908034f5b535e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41723786"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042393"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="requirements-to-publish-a-topology-in-lync-server-2013"></a>Requisiti per la pubblicazione di una topologia Lync Server 2013
+# <a name="requirements-to-publish-a-topology-in-lync-server-2013"></a>Requisiti per la pubblicazione di una topologia in Lync Server 2013
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41723786"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-Questo argomento descrive i requisiti di infrastruttura e software specifici per la pubblicazione di una topologia, sia tramite Generatore di topologia che con l'interfaccia della riga di comando di Lync Server 2013 Management Shell. Questi requisiti si aggiungono ai requisiti del sistema operativo, del software e delle autorizzazioni generali applicabili a tutti gli strumenti di amministrazione di Lync Server 2013. Verificare di soddisfare tutti i requisiti degli strumenti amministrativi prima di pubblicare una topologia.
+In questo argomento vengono descritti i requisiti dell'infrastruttura e del software specifici per la pubblicazione di una topologia, se si utilizza il generatore di topologie o l'interfaccia della riga di comando di Lync Server 2013 Management Shell. Questi requisiti si aggiungono ai requisiti del sistema operativo, del software e delle autorizzazioni generali applicabili a tutti gli strumenti di amministrazione di Lync Server 2013. Assicurarsi di soddisfare tutti i requisiti degli strumenti di amministrazione prima di pubblicare una topologia.
 
-  - È necessario eseguire Generatore di topologia in un computer associato allo stesso dominio o alla stessa foresta della distribuzione di Lync Server 2013 che si sta creando in modo che i passaggi di preparazione di Active Directory Domain Services siano già stati completati, consentendo di usare gli strumenti di amministrazione in tale computer per pubblicare correttamente la topologia.
+  - È necessario eseguire Generatore di topologie in un computer aggiunto allo stesso dominio o foresta della distribuzione di Lync Server 2013 che si sta creando, in modo che i passaggi di preparazione di servizi di dominio Active Directory siano già stati completati, consentendo di utilizzare gli strumenti di amministrazione in tale computer per pubblicare correttamente la topologia.
 
-  - I computer definiti nella topologia devono essere Uniti al dominio, ad eccezione di Edge Server e in Active Directory. Tuttavia, non è necessario che i computer siano online quando si pubblica la topologia.
+  - I computer definiti nella topologia devono appartenere al dominio, ad eccezione dei server perimetrali, nonché essere in Servizi di dominio Active Directory. Non è tuttavia necessario che i computer siano online quando si pubblica la topologia.
 
-  - La condivisione file per il pool deve essere creata e disponibile per gli utenti remoti.
+  - La condivisione file per il pool deve essere creata ed essere disponibile per gli utenti remoti.
 
-  - Per pubblicare un pool Front-end Enterprise Edition, il server di back-end basato su SQL Server deve essere unito al dominio in cui si distribuiscono i server, online e configurati con le regole del firewall appropriate per renderlo disponibile per gli utenti remoti. Per informazioni dettagliate su come specificare le eccezioni del firewall, vedere [informazioni sui requisiti del firewall per SQL Server con Lync server 2013](lync-server-2013-understanding-firewall-requirements-for-sql-server.md). Per altri dettagli sulla configurazione di SQL Server, vedere [configurare SQL Server per Lync server 2013](lync-server-2013-configure-sql-server-for-lync-server.md).
+  - Per pubblicare un pool Enterprise Edition front end, il server back-end basato su SQL Server deve essere aggiunto al dominio in cui si distribuiscono i server, online e configurati con le regole del firewall appropriate per renderlo disponibile per gli utenti remoti. Per informazioni dettagliate su come specificare le eccezioni del firewall, vedere [Understanding firewall requirements for SQL Server with Lync server 2013](lync-server-2013-understanding-firewall-requirements-for-sql-server.md). Per ulteriori informazioni sulla configurazione di SQL Server, vedere [Configure SQL Server for Lync server 2013](lync-server-2013-configure-sql-server-for-lync-server.md).
     
     <div>
     
 
     > [!NOTE]  
-    > Il server Standard Edition include un database collocato che accetterà la configurazione pubblicata. Prima di tutto, è necessario eseguire l'attività <STRONG>prepara prima configurazione server Standard Edition</STRONG> nella distribuzione guidata di Lync Server.
+    > Il server Standard Edition dispone di un database collocato che accetterà la configurazione pubblicata. È innanzitutto necessario eseguire l'attività <STRONG>preparazione del primo server Standard Edition</STRONG> nella distribuzione guidata di Lync Server.
 
     
     </div>
@@ -65,7 +65,7 @@ Questo argomento descrive i requisiti di infrastruttura e software specifici per
 [Delegare le autorizzazioni di installazione in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md)  
 
 
-[Requisiti software degli strumenti di amministrazione in Lync Server 2013](lync-server-2013-administrative-tools-software-requirements.md)  
+[Requisiti software per gli strumenti di amministrazione in Lync Server 2013](lync-server-2013-administrative-tools-software-requirements.md)  
 [Supporto del sistema operativo per server e strumenti in Lync Server 2013](lync-server-2013-server-and-tools-operating-system-support.md)  
 
 

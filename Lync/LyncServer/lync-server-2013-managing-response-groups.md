@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: gestire i gruppi di risposte'
+title: 'Lync Server 2013: gestione dei Response Group'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184222
 ms.date: 02/01/2018
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 210debb3c3879d6895b127b960139970bf73d020
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 59a9e05c828f78dc3d34321833c634f6bd437503
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756070"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043068"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="managing-response-groups-in-lync-server-2013"></a>Gestione dei gruppi di risposte in Lync Server 2013
+# <a name="managing-response-groups-in-lync-server-2013"></a>Gestione dei Response Group in Lync Server 2013
 
 </div>
 
@@ -35,27 +35,27 @@ ms.locfileid: "41756070"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2018-02-01_
+_**Ultimo argomento modificato:** 2018-02-01_
 
-I gruppi di risposta sono una caratteristica di gestione delle chiamate che consente di accodare le chiamate effettuate a un'area specifica, ad esempio un help desk, e quindi instradare le chiamate a un gruppo di persone designato, denominate *agenti*.
+I Response Group sono una funzionalità di gestione delle chiamate che consente di accodare le chiamate effettuate a un'area specifica, ad esempio un helpdesk, e quindi di instradarle a un gruppo designato di persone, note come *agenti*.
 
-Per gestire i gruppi di risposte, configurare i gruppi di agenti, le code e i flussi di lavoro, che definiscono cosa succede a una chiamata dal momento in cui viene inserita fino a quando un agente non risponde.
+Per gestire i Response Group, è possibile configurare i gruppi di agenti, le code e i flussi di lavoro, in modo da determinare cosa accade a una chiamata dal momento dell'effettuazione fino alla risposta di un agente.
 
 <div>
 
 
 > [!NOTE]  
-> Se si hanno più di 300 flussi di lavoro in un singolo pool nella distribuzione di Response Group, è preferibile usare i cmdlet di Lync Server Management Shell per creare i flussi di lavoro. Se si usa lo strumento di configurazione di Response Group per creare flussi di lavoro per un pool con più di 300 flussi di lavoro, la pagina Web richiede molto tempo per il caricamento. Il numero di agenti indirettamente associati ai flussi di lavoro tramite le code ha anche un effetto proporzionale sul caricamento della pagina.
+> Se si dispone di più di 300 flussi di lavoro in un singolo pool nella distribuzione di Response Group, è preferibile utilizzare i cmdlet di Lync Server Management Shell per creare i flussi di lavoro. Se si utilizza lo Strumento di configurazione dei Response Group per creare i flussi di lavoro per un pool che include più di 300 flussi di lavoro, il caricamento della pagina Web richiederà molto tempo. Il numero di agenti indirettamente associati ai flussi di lavoro tramite le code ha anche un effetto proporzionale sul caricamento della pagina.
 
 
 
 </div>
 
-Gli argomenti di questa sezione includono procedure dettagliate per le attività che è possibile eseguire per personalizzare e gestire l'applicazione Response Group nella distribuzione
+Negli argomenti di questa sezione vengono fornite procedure dettagliate per le attività che è possibile eseguire per personalizzare e gestire l'applicazione Response Group nella distribuzione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Gestione dei gruppi di agenti di Response Group in Lync Server 2013](lync-server-2013-managing-response-group-agent-groups.md)
 
@@ -63,11 +63,11 @@ Gli argomenti di questa sezione includono procedure dettagliate per le attività
 
   - [Gestione dei flussi di lavoro di Response Group in Lync Server 2013](lync-server-2013-managing-response-group-workflows.md)
 
-  - [Gestione delle impostazioni dei gruppi di risposte a livello di applicazione in Lync Server 2013](lync-server-2013-managing-application-level-response-group-settings.md)
+  - [Gestione delle impostazioni dei Response Group a livello di applicazione in Lync Server 2013](lync-server-2013-managing-application-level-response-group-settings.md)
 
-  - [Spostamento di gruppi di risposte in un nuovo pool in Lync Server 2013](lync-server-2013-moving-response-groups-to-a-new-pool.md)
+  - [Spostamento di Response Group in un nuovo pool in Lync Server 2013](lync-server-2013-moving-response-groups-to-a-new-pool.md)
 
-  - [Gestione dei Response Group in Lync Server 2013 durante una situazione di emergenza](lync-server-2013-managing-response-groups-during-a-disaster.md)
+  - [Gestione dei Response Group in Lync Server 2013 durante un'emergenza](lync-server-2013-managing-response-groups-during-a-disaster.md)
 
 </div>
 

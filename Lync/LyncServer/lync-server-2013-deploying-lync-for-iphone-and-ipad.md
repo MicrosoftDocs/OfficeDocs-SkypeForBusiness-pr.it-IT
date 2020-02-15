@@ -12,16 +12,16 @@ ms:contentKeyID: 51541511
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d3cf86aa601d17301b261ae8144c0b911672a0bd
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 888fdd0a34973d5b7c7b6063056c98d4426a2f1a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758030"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050468"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41758030"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-19_
+_**Ultimo argomento modificato:** 2013-02-19_
 
-Questa sezione descrive come distribuire Lync 2013 per iPhone e Lync 2013 per iPad per gli utenti di dispositivi mobili.
+In questa sezione viene descritto come distribuire Lync 2013 per iPhone e Lync 2013 per iPad per gli utenti mobili.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Installazione di Lync per iPhone e iPad in Lync Server 2013](lync-server-2013-installing-lync-for-iphone-and-ipad.md)
 

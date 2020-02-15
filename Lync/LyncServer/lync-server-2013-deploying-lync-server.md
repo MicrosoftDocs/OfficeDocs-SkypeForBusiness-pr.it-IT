@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Distribuzione di Lync Server'
+title: 'Lync Server 2013: distribuzione di Lync Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185197
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e7654b88d209e6a19571632ed773e891c50679e2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5eb5cc86eeaf6be3f32993cf4374148bab7e5f5f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733586"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050018"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41733586"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-18_
+_**Ultimo argomento modificato:** 2012-10-18_
 
-Il processo di distribuzione per Lync Server 2013 è determinato dalla topologia e dai componenti di Lync Server che si decide di installare, ad esempio se si vuole distribuire un pool Front end o un server Standard Edition. Gli argomenti di questa sezione consentono di determinare l'ambiente che si vuole distribuire e di guidarlo nel processo di distribuzione.
+Il processo di distribuzione per Lync Server 2013 è determinato dalla topologia e dai componenti di Lync Server che si decide di installare, incluso se si desidera distribuire un pool Front end o un server Standard Edition. Gli argomenti di questa sezione sono utili per determinare l'ambiente da distribuire e guidano nell'esecuzione dell'intero processo di distribuzione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Panoramica della distribuzione per Lync Server 2013](lync-server-2013-deployment-overview.md)
 
@@ -53,9 +53,9 @@ Il processo di distribuzione per Lync Server 2013 è determinato dalla topologia
 
   - [Finalizzazione e implementazione della progettazione della topologia in Lync Server 2013](lync-server-2013-finalizing-and-implementing-the-topology-design.md)
 
-  - [Configurazione di Front End Server e pool Front End per Lync Server 2013](lync-server-2013-setting-up-front-end-servers-and-front-end-pools.md)
+  - [Configurazione di front end server e pool Front end per Lync Server 2013](lync-server-2013-setting-up-front-end-servers-and-front-end-pools.md)
 
-  - [Distribuzione di Lync Server 2013 Standard Edition in un server Lync Server 2013 Enterprise esistente](lync-server-2013-deploying-lync-server-2013-standard-edition-into-an-existing-lync-server-2013-enterprise.md)
+  - [Distribuzione di Lync Server 2013 Standard Edition in un Lync Server 2013 Enterprise esistente](lync-server-2013-deploying-lync-server-2013-standard-edition-into-an-existing-lync-server-2013-enterprise.md)
 
   - [Aggiunta di ruoli del server in Lync Server 2013](lync-server-2013-adding-server-roles.md)
 

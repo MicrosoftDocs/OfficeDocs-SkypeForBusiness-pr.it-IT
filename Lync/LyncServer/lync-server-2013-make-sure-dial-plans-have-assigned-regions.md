@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Verificare che ai dial plan siano state assegnate aree'
+title: 'Lync Server 2013: accertarsi che i dial plan abbiano assegnato aree geografiche'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183937
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cd8790671157b823464a3b4b594ea8428a888f46
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f25ca766ab7292aeeba0d2e621eccff5a0c47fb8
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739606"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037566"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="make-sure-dial-plans-lync-server-2013-have-assigned-regions"></a>Assicurarsi che i dial plan di Lync Server 2013 abbiano assegnato aree geografiche
+# <a name="make-sure-dial-plans-lync-server-2013-have-assigned-regions"></a>Assicurarsi che i dial plan Lync Server 2013 abbiano assegnato aree geografiche
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41739606"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2010-11-02_
+_**Ultimo argomento modificato:** 2010-11-02_
 
-I dial plan usati per i servizi di conferenza telefonica con accesso esterno devono essere specificati nell' **area** dei servizi di conferenza telefonica con accesso esterno con il dial plan appropriato. Quando si configura un dial plan, si specifica l'area dei servizi di conferenza telefonica con accesso esterno che si applica a tale dial plan. Quando si crea il numero di accesso per la chiamata in ingresso, si selezionano le aree geografiche che associano il numero di accesso con i dial plan appropriati.
+Per i dial plan utilizzati per le conferenze telefoniche con accesso esterno deve essere specificata un'**Area per conferenze telefoniche con accesso esterno**, in modo che i numeri di accesso a tali conferenze vengano associati al dial plan appropriato. Quando si imposta un dial plan, si specifica l'area per conferenze telefoniche con accesso esterno applicabile. Quando quindi si crea il numero di accesso esterno, si selezionano le aree che associano il numero di accesso ai dial plan appropriati.
 
-Poiché è importante specificare un'area geografica per tutti i dial plan, è consigliabile usare questa procedura per verificare che tutti i dial plan abbiano aree geografiche. Questo passaggio è facoltativo.
+Poiché è importante specificare un'area per tutti i dial plan, è consigliabile utilizzare questa procedura per verificare che tutti i dial plan siano associati ad aree. Questo passaggio è facoltativo.
 
-Usa il cmdlet **Get-CsDialPlan** per verificare se l'area geografica è impostata per tutti i piani di conferenza telefonica con accesso esterno. Se l'area non è presente nei dial plan, è possibile usare il cmdlet **Set-CsDialPlan** per impostare l'area geografica. È anche possibile usare il pannello di controllo di Lync Server per aggiornare l'area nei dial plan esistenti. Per informazioni dettagliate sull'uso del pannello di controllo di Lync Server, vedere [modificare un dial plan in Lync server 2013](lync-server-2013-modify-a-dial-plan.md).
+Utilizzare il cmdlet **Get-CsDialPlan** per verificare se l'area è impostata per tutti i dial plan di conferenza telefonica con accesso esterno. Se l'area non è inclusa nei dial plan, è possibile utilizzare il cmdlet **Set-CsDialPlan** per impostarla. È inoltre possibile utilizzare il pannello di controllo di Lync Server per aggiornare l'area in dial plan esistenti. Per informazioni dettagliate sull'utilizzo del pannello di controllo di Lync Server, vedere [Modify a dial plan in Lync server 2013](lync-server-2013-modify-a-dial-plan.md).
 
 <div>
 
-## <a name="to-verify-whether-dial-plans-have-the-region-property-set"></a>Per verificare se i dial plan hanno la proprietà Region impostata
+## <a name="to-verify-whether-dial-plans-have-the-region-property-set"></a>Per verificare se nei dial plan è impostata la proprietà relativa all'area
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo **Cs-voiceadministrator**, **Cs-ServerAdministrator**o **CsAdministrator** .
+1.  Eseguire l'accesso al computer come membro del gruppo RTCUniversalServerAdmins oppure del ruolo **Cs-VoiceAdministrator**, **Cs-ServerAdministrator** o **CsAdministrator**.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Eseguire la procedura seguente al prompt dei comandi:
+3.  Al prompt dei comandi eseguire il comando seguente:
     
         Get-CsDialPlan [-Identity <Identifier of the dial plans to be retrieved>]
     
@@ -61,19 +61,19 @@ Usa il cmdlet **Get-CsDialPlan** per verificare se l'area geografica è impostat
     
     In questo esempio vengono restituiti tutti i dial plan configurati per l'organizzazione.
 
-4.  Esaminare i piani di chiamata restituiti per identificare gli elementi mancanti nell'area dei servizi di conferenza telefonica con accesso esterno. Per informazioni dettagliate, vedere la documentazione di Lync Server Management Shell.
+4.  Esaminare i dial plan restituiti per identificare eventualmente quelli che non includono l'area di conferenza telefonica con accesso esterno. Per informazioni dettagliate, vedere la documentazione relativa a Lync Server Management Shell.
 
 </div>
 
 <div>
 
-## <a name="to-set-the-region-property-for-a-dial-plan"></a>Per impostare la proprietà Region per un dial plan
+## <a name="to-set-the-region-property-for-a-dial-plan"></a>Per impostare la proprietà relativa all'area per un dial plan
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo **Cs-voiceadministrator**, **Cs-ServerAdministrator**o **CsAdministrator** .
+1.  Eseguire l'accesso al computer come membro del gruppo RTCUniversalServerAdmins oppure del ruolo **Cs-VoiceAdministrator**, **Cs-ServerAdministrator** o **CsAdministrator**.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Per gli eventuali dial plan mancanti dell'area di conferenza telefonica con accesso esterno, eseguire:
+3.  Per gli eventuali dial plan che non includono l'area di conferenza telefonica con accesso esterno, eseguire:
     
         Set-CsDialPlan [-Identity <Identity of the dial plan to be modified>] -DialinConferencingRegion "<new region>"
     
@@ -81,7 +81,7 @@ Usa il cmdlet **Get-CsDialPlan** per verificare se l'area geografica è impostat
     
         Set-CsDialPlan -Identity Redmond -DialinConferencingRegion "US West Coast"
     
-    In questo esempio, il dial plan con l'identità di Redmond viene modificato per impostare la proprietà DialinConferencingRegion su "US West Coast". Per informazioni dettagliate, vedere la documentazione di Lync Server Management Shell.
+    In questo esempio il dial plan con Identity Redmond viene modificato per impostare la proprietà DialinConferencingRegion su "US West Coast". Per informazioni dettagliate, vedere la documentazione relativa a Lync Server Management Shell.
 
 </div>
 

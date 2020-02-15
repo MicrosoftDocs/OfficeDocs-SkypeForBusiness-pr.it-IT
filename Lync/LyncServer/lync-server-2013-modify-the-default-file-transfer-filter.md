@@ -12,16 +12,16 @@ ms:contentKeyID: 48184584
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e8a0d9ade3fd750f5dc89526969bad7e39ad0f35
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ba3e0da5402ea93ce33e844a2f8b32d545d4811a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756890"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050028"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,43 +35,43 @@ ms.locfileid: "41756890"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Lync Server 2013 offre un filtro di trasferimento di file globale che blocca i tipi specifici di file durante le attività correlate ai file seguenti nella distribuzione di Lync Server 2013:
+Lync Server 2013 fornisce un filtro di trasferimento di file globale che consente di bloccare tipi specifici di file durante le attività correlate ai file seguenti all'interno della distribuzione di Lync Server 2013:
 
-  - Richieste di trasferimento di file durante le conversazioni di messaggistica istantanea
+  - Richieste di trasferimento file durante conversazioni di messaggistica istantanea
 
-  - Caricamento e download di file durante l'uso della funzionalità stampati nel client Office Live Meeting 2007
+  - Caricamenti e download di file tramite la caratteristica relativa agli stampati nel client Office Live Meeting 2007
 
   - Riproduzione multimediale durante le conferenze
 
-A seconda dei tipi di file che si desidera bloccare o consentire, è possibile usare il pannello di controllo di Lync Server per modificare il filtro globale. Per informazioni dettagliate sul filtro per il trasferimento di file, vedere [configurazione del trasferimento di file e filtro URL per la messaggistica istantanea in Lync Server 2013](lync-server-2013-configuring-file-transfer-and-url-filtering-for-instant-messaging-im.md).
+A seconda dei tipi di file che si desidera bloccare o consentire, è possibile utilizzare il pannello di controllo di Lync Server per modificare il filtro globale. Per informazioni dettagliate sul filtro per il trasferimento di file, vedere [Configuring file transfer and URL Filtering for Instant Messaging (im) in Lync Server 2013](lync-server-2013-configuring-file-transfer-and-url-filtering-for-instant-messaging-im.md).
 
 <div>
 
-## <a name="to-modify-the-default-file-transfer-filter"></a>Per modificare il filtro di trasferimento file predefinito
+## <a name="to-modify-the-default-file-transfer-filter"></a>Per modificare il filtro trasferimento file predefinito
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **messaggistica istantanea e presenza** e quindi su **filtro file**.
+3.  Sulla barra di spostamento sinistra fare clic su **Messaggistica istantanea e presenza** e quindi su **Filtro file**.
 
-4.  Nella pagina **filtro file** fare doppio clic sul filtro **globale** .
+4.  Nella pagina **Filtro file** fare doppio clic sul filtro **Globale**.
 
-5.  In **Modifica filtro file**selezionare la casella di controllo **Attiva filtro file** .
+5.  In **Modifica filtro file** selezionare la casella di controllo **Abilita filtro file**.
 
-6.  Nella casella di riepilogo a discesa **trasferimento file** fare clic su **blocca tutto** o **Blocca tipi di file specifici**.
+6.  Nella casella di riepilogo a discesa **Trasferimento di file** fare clic su **Blocca tutto** o su **Blocca tipi di file specifici**.
 
-7.  Se si è fatto clic su **blocca tutto**, passare al passaggio 9.
+7.  Se si è selezionato **Blocca tutto**, ignorare il passaggio 9.
 
-8.  Se si è fatto clic su **Blocca tipi di file specifici**, eseguire le operazioni seguenti:
+8.  Se si è selezionato **Blocca tipi di file specifici**, eseguire le operazioni seguenti:
     
-    1.  Fare clic su **Seleziona** per modificare l'elenco predefinito delle estensioni del tipo di file che si vuole bloccare.
+    1.  Fare clic su **Seleziona** per modificare l'elenco predefinito delle estensioni di file che si desidera bloccare.
     
-    2.  In **Seleziona tipo di file**selezionare i tipi di file che si desidera bloccare o consentire aggiungendo o rimuovendo le relative estensioni dalle categorie in **estensioni di tipi di file**.
+    2.  In **Seleziona estensioni di file** selezionare i tipi di file che si desidera bloccare o consentire aggiungendone o rimuovendone le estensioni nelle categorie in **Estensioni di file**.
     
-    3.  Se non si vede l'estensione per un tipo di file che si vuole bloccare, digitare l'estensione nella casella di testo in **Aggiungi estensioni di file all'elenco**e quindi fare clic su **Aggiungi**.
+    3.  Se un'estensione di file che si desidera bloccare non è visualizzata, digitarla nella casella di testo in **Aggiungi estensioni di file all'elenco** e quindi fare clic su **Aggiungi**.
     
     4.  Fare clic su **OK**.
 
@@ -84,9 +84,9 @@ A seconda dei tipi di file che si desidera bloccare o consentire, è possibile u
 ## <a name="see-also"></a>Vedere anche
 
 
-[Configurazione del filtro del trasferimento di file e degli URL per la messaggistica istantanea in Lync Server 2013](lync-server-2013-configuring-file-transfer-and-url-filtering-for-instant-messaging-im.md)  
-[Creare un nuovo filtro per il trasferimento di file in Lync Server 2013 per un sito specifico](lync-server-2013-create-a-new-file-transfer-filter-for-a-specific-site.md)  
-[Creare un nuovo filtro URL in Lync Server 2013 per gestire i collegamenti ipertestuali nelle conversazioni ISTANTANEe](lync-server-2013-create-a-new-url-filter-to-handle-hyperlinks-in-im-conversations.md)  
+[Configurazione del filtro per il trasferimento di file e degli URL per la messaggistica istantanea in Lync Server 2013](lync-server-2013-configuring-file-transfer-and-url-filtering-for-instant-messaging-im.md)  
+[Creare un nuovo filtro trasferimento file in Lync Server 2013 per un sito specifico](lync-server-2013-create-a-new-file-transfer-filter-for-a-specific-site.md)  
+[Creare un nuovo filtro URL in Lync Server 2013 per gestire i collegamenti ipertestuali nelle conversazioni di messaggistica istantanea](lync-server-2013-create-a-new-url-filter-to-handle-hyperlinks-in-im-conversations.md)  
 
 
 [Modificare il filtro URL predefinito in Lync Server 2013](lync-server-2013-modify-the-default-url-filter.md)  

@@ -12,20 +12,20 @@ ms:contentKeyID: 48184191
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3e2d5458ca3c14af74b71dd09c4f94f6936aa27c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 03d4e1c983ab06b2c1b80fb28730b91166542b83
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732568"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049388"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="schema-reference-for-lync-server-2013"></a>Riferimento allo schema per Lync Server 2013
+# <a name="schema-reference-for-lync-server-2013"></a>Informazioni di riferimento sullo schema per Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41732568"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-29_
+_**Ultimo argomento modificato:** 2012-06-29_
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Schema del database di registrazione dettagli chiamata (CDR) in Lync Server 2013](lync-server-2013-call-detail-recording-cdr-database-schema.md)
 
-  - [Schema del database della qualità percepita dagli utenti (QoE) in Lync Server 2013](lync-server-2013-quality-of-experience-qoe-database-schema.md)
+  - [Schema di database QoE (Quality of Experience) in Lync Server 2013](lync-server-2013-quality-of-experience-qoe-database-schema.md)
 
-  - [Schema del database di Chat persistente in Lync Server 2013](lync-server-2013-persistent-chat-database-schema.md)
+  - [Schema del database di chat persistente in Lync Server 2013](lync-server-2013-persistent-chat-database-schema.md)
 
-  - [Estensioni dello schema, classi e attributi di Active Directory utilizzati da Lync Server 2013](lync-server-2013-active-directory-schema-extensions-classes-and-attributes-used-by-lync-server.md)
+  - [Estensioni, classi e attributi dello schema di Active Directory utilizzati da Lync Server 2013](lync-server-2013-active-directory-schema-extensions-classes-and-attributes-used-by-lync-server.md)
 
 </div>
 

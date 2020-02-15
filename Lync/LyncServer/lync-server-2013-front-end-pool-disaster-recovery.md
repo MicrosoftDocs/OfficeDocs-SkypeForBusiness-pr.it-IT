@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Ripristino di emergenza del pool Front End'
+title: 'Lync Server 2013: ripristino di emergenza del pool Front End'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733593
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 751234b4f3a9a903612d8354abe26f6a2d960ead
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: baa2326a827959d7d21286152950e1025ad2f457
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739766"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038088"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="front-end-pool-disaster-recovery-in-lync-server-2013"></a>Ripristino di emergenza del pool Front End in Lync Server 2013
+# <a name="front-end-pool-disaster-recovery-in-lync-server-2013"></a>Ripristino di emergenza del pool Front end in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41739766"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-17_
+_**Ultimo argomento modificato:** 2012-09-17_
 
-Negli argomenti di questa sezione vengono illustrati i pool di front end per la disponibilità elevata e le capacità di ripristino di emergenza in Lync Server 2013.
+Negli argomenti di questa sezione vengono descritte le funzionalità di disponibilità elevata e ripristino di emergenza dei pool Front end in Lync Server 2013.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Pianificazione dell'abbinamento dei pool Front End in Lync Server 2013](lync-server-2013-planning-for-front-end-pool-pairing.md)
+  - [Pianificazione dell'abbinamento dei pool Front end in Lync Server 2013](lync-server-2013-planning-for-front-end-pool-pairing.md)
 
-  - [Esperienza utente durante l'errore del pool in Lync Server 2013](lync-server-2013-user-experience-during-pool-failure.md)
+  - [Esperienza utente durante un errore del pool in Lync Server 2013](lync-server-2013-user-experience-during-pool-failure.md)
 
   - [Disponibilità elevata del server back-end in Lync Server 2013](lync-server-2013-back-end-server-high-availability.md)
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 48184141
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 75d842772c8c0e02352eacf7f80711aa79c29461
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a4316e86d29013587b2302d18a840a4a1859f9ad
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731526"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42047989"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41731526"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-25_
+_**Ultimo argomento modificato:** 2012-06-25_
 
-tblPrincipalInvites contiene gli inviti per tutti gli utenti con provisioning per tutti i nodi con l'invito automatico attivato.
+In tblPrincipalInvites sono inclusi gli inviti per tutti gli utenti di cui è stato eseguito il provisioning per tutti i nodi con l'invito automatico attivato.
 
 ### <a name="columns"></a>Colonne
 
@@ -57,29 +57,29 @@ tblPrincipalInvites contiene gli inviti per tutti gli utenti con provisioning pe
 <tbody>
 <tr class="odd">
 <td><p>prinID</p></td>
-<td><p>int, not null</p></td>
-<td><p>ID entità.</p></td>
+<td><p>int, non null</p></td>
+<td><p>ID dell'entità.</p></td>
 </tr>
 <tr class="even">
 <td><p>invID</p></td>
 <td><p>int, not null</p></td>
-<td><p>Numero sequenziale univoco (per ID entità) generato dalla tabella tblLastInviteId.</p></td>
+<td><p>Numero sequenziale univoco (per ID dell'entità) generato da tblLastInviteId.</p></td>
 </tr>
 <tr class="odd">
 <td><p>nodeID</p></td>
 <td><p>int, not null</p></td>
-<td><p>ID nodo (solo chat room).</p></td>
+<td><p>ID del nodo (solo chat).</p></td>
 </tr>
 <tr class="even">
 <td><p>createdOn</p></td>
-<td><p>DateTime, not null</p></td>
-<td><p>Ora della creazione.</p></td>
+<td><p>datetime, not null</p></td>
+<td><p>Data e ora di creazione.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="keys"></a>Tasti
+### <a name="keys"></a>Chiavi
 
 <table>
 <colgroup>
@@ -99,11 +99,11 @@ tblPrincipalInvites contiene gli inviti per tutti gli utenti con provisioning pe
 </tr>
 <tr class="even">
 <td><p>prinID</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblPrincipal. prinID.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblPrincipal.prinID.</p></td>
 </tr>
 <tr class="odd">
 <td><p>nodeID</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblNode. nodeID.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblNode.nodeID.</p></td>
 </tr>
 </tbody>
 </table>

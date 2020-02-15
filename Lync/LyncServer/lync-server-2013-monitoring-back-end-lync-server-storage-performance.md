@@ -12,20 +12,20 @@ ms:contentKeyID: 63969619
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7c4d3741564cd0228213400d7ee1fbb7271c4ddd
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 760e66403fd1da2b5a45cf0db065dc201e1fd02a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756860"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051158"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="monitoring-back-end-lync-server-2013-storage-performance"></a>Monitoraggio delle prestazioni di archiviazione di back end Lync Server 2013
+# <a name="monitoring-back-end-lync-server-2013-storage-performance"></a>Monitoraggio delle prestazioni di archiviazione di back-end Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41756860"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-05-02_
+_**Ultimo argomento modificato:** 2014-05-02_
 
-I database back-end di Lync Server 2013 sono una parte molto importante della distribuzione di Lync Server 2013. È consigliabile monitorare costantemente i database e i rispettivi registri delle transazioni per verificare che il back-end di Lync Server 2013 sia in grado di eseguire in modo ottimale.
+I database back-end di Lync Server 2013 sono una parte molto importante della distribuzione di Lync Server 2013. È consigliabile monitorare costantemente i database e i rispettivi registri delle transazioni per garantire che il back-end di Lync Server 2013 sia in grado di eseguire in modo ottimale.
 
-La tabella seguente identifica i contatori delle prestazioni che devono essere monitorati per ottenere informazioni sulle prestazioni dello spazio di archiviazione. I valori della linea di base per questi contatori devono essere determinati prima (quando il sistema è al suo normale carico previsto) per comprendere le modifiche alle prestazioni quando il sistema viene sottolineato.
+Nella tabella seguente vengono identificati i contatori delle prestazioni che devono essere monitorati per ottenere informazioni sulle prestazioni di archiviazione. I valori di base per questi contatori devono essere determinati prima (quando il sistema è normale, il carico previsto) per comprendere le modifiche apportate alle prestazioni del sistema.
 
 ### <a name="performance-counters-to-be-monitored"></a>Contatori delle prestazioni da monitorare
 
@@ -51,7 +51,7 @@ La tabella seguente identifica i contatori delle prestazioni che devono essere m
 <thead>
 <tr class="header">
 <th>Contatore delle prestazioni</th>
-<th>Soglie della previsione</th>
+<th>Soglie di base</th>
 </tr>
 </thead>
 <tbody>
@@ -68,31 +68,31 @@ La tabella seguente identifica i contatori delle prestazioni che devono essere m
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Svuota log/sec (RTC)</p></td>
+<td><p>Vampate di log/sec (RTC)</p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Svuotamenti del log/sec (RTCDyn)</p></td>
+<td><p>Vampate di log/sec (RTCDyn)</p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Svuotamenti del log/sec (tempdb)</p></td>
+<td><p>Vampate di log/sec (tempdb)</p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Trasferimenti disco/sec (lettura + scrittura)-RTC DB</p></td>
+<td><p>Trasferimenti su disco/sec (lettura + scrittura)-RTC DB</p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Trasferimenti disco/sec-log RTC</p></td>
+<td><p>Trasferimenti disco/sec-RTC log</p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Trasferimenti disco/sec-RTCDyn DB</p></td>
+<td><p>Trasferimenti su disco/sec-RTCDyn DB</p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Trasferimenti disco/sec-log di RTCDyn</p></td>
+<td><p>Trasferimenti su disco/sec-RTCDyn log</p></td>
 <td></td>
 </tr>
 </tbody>

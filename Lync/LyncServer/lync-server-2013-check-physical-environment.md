@@ -12,16 +12,16 @@ ms:contentKeyID: 63969582
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8838e5d3dfd1e3590f7988102f187c49114fc233
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6d8838336fbea4f901b763b7ca034f42e957de33
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41734006"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043498"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41734006"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-04-30_
+_**Ultimo argomento modificato:** 2014-04-30_
 
-Prima di verificare le prestazioni, la disponibilità e la funzionalità della distribuzione di Lync Server 2013, è necessario controllare l'ambiente fisico. Ad esempio, potrebbe essere necessario abbassare la temperatura ambiente del server oppure sostituire un cavo di rete. Per ottenere risultati ottimali, eseguire i controlli ambientali fisici seguenti:
+Prima di verificare le prestazioni, la disponibilità e la funzionalità della distribuzione di Lync Server 2013, è necessario controllare l'ambiente fisico. Ad esempio, potrebbe essere necessario abbassare la temperatura ambiente del server o potrebbe essere necessario sostituire un cavo di rete. Per ottenere risultati ottimali, eseguire i seguenti controlli fisici sull'ambiente:
 
-  - **Misure di sicurezza fisica**   la protezione della sicurezza fisica, ad esempio blocchi, porte e sale con accesso limitato, deve essere protetta. Verificare che non siano presenti voci non autorizzate e forzate e segni di danni alle attrezzature.
+  - **Misure di sicurezza fisica**   è necessario proteggere la sicurezza fisica, ad esempio blocchi, porte e sale con accesso limitato. Controllare eventuali accessi forzati non autorizzati e segni di danni alle attrezzature.
 
-  - **Temperatura e umidità**   la temperatura elevata, il flusso d'aria scadente e l'umidità possono causare il surriscaldamento del componente hardware. Verificare la temperatura e l'umidità per garantire che i sistemi ambientali come il riscaldamento e l'aria condizionata possano mantenere condizioni e funzioni accettabili nelle specifiche del produttore hardware. Quando è stata installata una nuova apparecchiatura, verificare anche che il flusso d'aria sia da e verso i server sia senza ostacoli e soddisfi le specifiche del produttore.
+  - **Temperatura e umidità**   le temperature elevate, il flusso di aria scadente e l'umidità possono causare il surriscaldamento del componente hardware. Controllare la temperatura e l'umidità per contribuire a garantire che i sistemi ambientali come il riscaldamento e l'aria condizionata possano mantenere le condizioni e le funzioni accettabili all'interno delle specifiche del produttore dell'hardware. Quando sono state installate nuove apparecchiature, controllare anche che il flusso dell'aria sia da e verso i server sia senza ostacoli e soddisfi le specifiche del produttore.
 
-  - **Dispositivi e componenti**   l'organizzazione di Lync Server 2013 si basa su una rete fisica funzionante e un hardware correlato. Verificare che i router, gli interruttori, gli hub, i cavi fisici e i connettori siano operativi.
+  - **Dispositivi e componenti**   l'organizzazione di Lync Server 2013 si basa su una rete fisica funzionante e sull'hardware correlato. Verificare che i router, gli interruttori, gli hub, i cavi fisici e i connettori siano operativi.
 
-Le informazioni specifiche su come eseguire questi controlli dipendono molto dal sito di installazione e dall'hardware del server scelto. La prima volta che si esegue questo controllo, vedere la documentazione hardware e prendere nota dei parametri desiderati per riferimento futuro.
+Le specifiche su come eseguire questi controlli dipendono notevolmente dal sito di installazione e dall'hardware del server scelto. La prima volta che si esegue questa verifica, fare riferimento alla documentazione relativa all'hardware e prendere nota dei parametri desiderati per riferimento futuro.
 
-### <a name="desired-server-space-environment"></a>Ambiente di spazio server desiderato
+### <a name="desired-server-space-environment"></a>Ambiente server Space desiderato
 
 <table>
 <colgroup>
@@ -70,8 +70,8 @@ Le informazioni specifiche su come eseguire questi controlli dipendono molto dal
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Fronte alle facce del server</p></td>
-<td><p>Corridoio caldo/corridoio freddo</p></td>
+<td><p>Fronte delle facce del server</p></td>
+<td><p>Navata calda/navata fredda</p></td>
 </tr>
 <tr class="even">
 <td><p>Spazio di scarico senza ostacoli</p></td>

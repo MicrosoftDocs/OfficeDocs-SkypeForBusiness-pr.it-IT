@@ -1,5 +1,5 @@
 ---
-title: Assegnare criteri di accesso per gli utenti esterni
+title: Assegnare un criterio di accesso utente esterno
 ms.reviewer: ''
 ms:assetid: 736fcaad-9f95-4896-b767-e199d86a00a4
 ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398551(v=OCS.15)
@@ -14,68 +14,68 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Se un utente è stato abilitato per Skype for Business Server, è possibile configurare la federazione SIP, l'accesso remoto degli utenti e la connettività messaggistica istantanea pubblica nel pannello di controllo di Skype for Business Server applicando i criteri appropriati a utenti specifici.
-ms.openlocfilehash: b87eb377b23063dbcdfd9562a99533da230a8f30
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Se un utente è stato abilitato per Skype for Business Server, è possibile configurare la federazione SIP, l'accesso degli utenti remoti e la connettività per la messaggistica istantanea pubblica nel pannello di controllo di Skype for Business Server applicando i criteri corretti a utenti specifici.
+ms.openlocfilehash: c03eb957679877ec512b042e0db624adbb3e6f52
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41818327"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043678"
 ---
-# <a name="assign-an-external-user-access-policy-to-a-skype-for-business-enabled-user"></a>Assegnare un criterio di accesso degli utenti esterni a un utente abilitato per Skype for business
+# <a name="assign-an-external-user-access-policy-to-a-skype-for-business-enabled-user"></a>Assegnare un criterio di accesso utente esterno a un utente abilitato di Skype for business
 
-Se un utente è stato abilitato per Skype for Business Server, è possibile configurare la federazione SIP, l'accesso remoto degli utenti e la connettività messaggistica istantanea pubblica nel pannello di controllo di Skype for Business Server applicando i criteri appropriati a utenti specifici. Ad esempio, se hai creato un criterio per supportare l'accesso degli utenti remoti, devi applicarlo all'utente prima che l'utente possa connettersi a Skype for Business Server da una posizione remota e collaborare con utenti interni dalla posizione remota.
+Se un utente è stato abilitato per Skype for Business Server, è possibile configurare la federazione SIP, l'accesso degli utenti remoti e la connettività per la messaggistica istantanea pubblica nel pannello di controllo di Skype for Business Server applicando i criteri corretti a utenti specifici. Ad esempio, se è stato creato un criterio per supportare l'accesso degli utenti remoti, è necessario applicarlo all'utente prima che l'utente possa connettersi a Skype for Business Server da una postazione remota e collaborare con utenti interni dalla postazione remota.
 
 
 > [!NOTE]  
-> Per supportare l'accesso degli utenti esterni, è necessario abilitare il supporto per ogni tipo di accesso utente esterno che si vuole supportare e configurare i criteri appropriati e altre opzioni per controllarne l'utilizzo. Per informazioni dettagliate, vedere [gestione della Federazione e accesso esterno a Skype for Business Server](../managing-federation-and-external-access.md).
+> Per supportare l'accesso utente esterno, è necessario abilitare il supporto per ogni tipo di accesso utente esterno desiderato e configurare i criteri appropriati e altre opzioni per il controllo. Per informazioni dettagliate, vedere [Managing Federation and External Access to Skype for Business Server](../managing-federation-and-external-access.md).
 
 
-Usare la procedura descritta in questo argomento per applicare un criterio di accesso utente esterno creato in precedenza a uno o più account utente.
+Utilizzare la procedura contenuta in questo argomento per applicare criteri di accesso utente esterno creati in precedenza a uno o più account utente.
 
 
-## <a name="to-apply-an-external-user-policy-to-a-user-account"></a>Per applicare un criterio utente esterno a un account utente
+## <a name="to-apply-an-external-user-policy-to-a-user-account"></a>Per applicare criteri di accesso utente esterno a un account utente
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Skype for Business Server. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il pannello di controllo di Skype for Business Server. 
 
 3.  Nella barra di spostamento sinistra fare clic su **Utenti** e quindi cercare l'account utente da configurare.
 
-4.  Nella tabella in cui sono elencati i risultati della ricerca fare clic sull'account utente, su **Modifica** e quindi su **Mostra dettagli**.
+4.  Nella tabella in cui sono elencati i risultati di ricerca, fare clic sull'account utente, scegliere **Modifica** e quindi **Mostra dettagli**.
 
-5.  In **modifica utenti di Skype for Business Server** in **criteri di accesso esterno**Selezionare i criteri utente che si desidera applicare.
+5.  In **modifica utente di Skype for Business Server** in **criteri di accesso esterno**, selezionare i criteri utente che si desidera applicare.
      
 > [!NOTE]  
-> Le impostazioni di ** \<>automatico** applicano le impostazioni predefinite del server o dei criteri globali.
+> Le impostazioni del ** \<>automatico** applicano le impostazioni predefinite del server o dei criteri globali.
 
 
-## <a name="assigning-per-user-external-access-policies-by-using-windows-powershell-cmdlets"></a>Assegnazione di criteri di accesso esterno per utente tramite i cmdlet di Windows PowerShell
+## <a name="assigning-per-user-external-access-policies-by-using-windows-powershell-cmdlets"></a>Assegnazione dei criteri di accesso esterno per utente tramite i cmdlet di Windows PowerShell
 
-I criteri di accesso esterno per utente possono essere assegnati tramite Windows PowerShell e il cmdlet Grant-CsExternalAccessPolicy. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+I criteri di accesso esterno per utente possono essere assegnati utilizzando Windows PowerShell e il cmdlet Grant-CsExternalAccessPolicy. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
 
 ## <a name="to-assign-a-per-user-external-access-policy-to-a-single-user"></a>Per assegnare un criterio di accesso esterno per utente a un singolo utente
 
-  - Questo comando assegna il criterio di accesso esterno per utente RedmondExternalAccessPolicy all'utente Ken.
+  - Questo comando assegna il criterio di accesso esterno per utente RedmondExternalAccessPolicy all'utente Ken Myer.
     
         Grant-CsExternalAccessPolicy -Identity "Ken Myer" -PolicyName "RedmondExternalAccessPolicy"
 
 
-## <a name="to-assign-a-per-user-external-access-policy-to-multiple-users"></a>Per assegnare un criterio di accesso esterno per utente a più utenti
+## <a name="to-assign-a-per-user-external-access-policy-to-multiple-users"></a>Per assegnare criteri di accesso esterno per utente a più utenti
 
-  - Questo comando assegna il criterio di accesso esterno per utente USAExternalAccessPolicy a tutti gli utenti che hanno account nell'UO degli Stati Uniti in Active Directory. Per altre informazioni sul parametro OU usato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/Get-CsUser) .
+  - Questo comando assegna il criterio di accesso esterno per utente USAExternalAccessPolicy a tutti gli utenti che dispongono di account nell'unità organizzativa UnitedStates in Active Directory. Per ulteriori informazioni sul parametro OU utilizzato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser](https://docs.microsoft.com/powershell/module/skype/Get-CsUser) .
     
         Get-CsUser -OU "ou=UnitedStates,dc=litwareinc,dc=com" | Grant-CsExternalAccessPolicy -PolicyName "USAExternalAccessPolicy"
 
 
 ## <a name="to-unassign-a-per-user-external-access-policy"></a>Per annullare l'assegnazione di un criterio di accesso esterno per utente
 
-  - Questo comando Annulla l'assegnazione di qualsiasi criterio di accesso esterno per utente assegnato in precedenza a Ken. Dopo che il criterio per utente non è stato assegnato, Ken è gestito automaticamente tramite il criterio globale oppure, se disponibile, il criterio del sito locale. Un criterio di sito ha la precedenza sui criteri globali.
+  - Questo comando annulla l'assegnazione di tutti i criteri di accesso esterno per utente precedentemente assegnati a Ken Myer. Dopo l'annullamento del criterio per utente, Ken Myer sarà gestito automaticamente dal criterio globale oppure dall'eventuale criterio del sito locale, che ha la precedenza sul criterio globale.
     
         Grant-CsExternalAccessPolicy -Identity "Ken Myer" -PolicyName $Null
 
 
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Grant-CsExternalAccessPolicy](https://docs.microsoft.com/en-us/powershell/module/skype/Grant-CsExternalAccessPolicy) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Grant-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/Grant-CsExternalAccessPolicy) .
 
 

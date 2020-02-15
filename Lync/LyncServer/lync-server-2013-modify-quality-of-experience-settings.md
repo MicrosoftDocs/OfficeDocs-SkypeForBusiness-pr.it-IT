@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: modificare la qualità delle impostazioni dell'esperienza"
+title: 'Lync Server 2013: modificare le impostazioni di qualità delle esperienze'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184996
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a2cf4745f76fa4667d14c9da5ca2b4e5309767b3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1e24d3d0d3b17e5e7b58a6cd58806c3b5ba22e9e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41727536"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050678"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,37 +35,37 @@ ms.locfileid: "41727536"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-Per impostazione predefinita, i dati di qualità dell'esperienza (QoE) vengono eliminati dopo 60 giorni. Per mantenere i dati per un periodo di tempo più lungo o più breve, è possibile usare le impostazioni nella pagina di **dati qualità della prova** . Se si disattiva QoE, anche i dati acquisiti prima dell'abilitazione di QoE saranno soggetti all'eliminazione.
+Per impostazione predefinita, i dati relativi alla QoE (Quality of Experience) vengono eliminati dopo 60 giorni. È possibile utilizzare le impostazioni nella pagina **Dati QoE** per conservare i dati per un periodo superiore o inferiore. Se si disabilita la funzionalità QoE, verranno eliminati anche i dati acquisiti prima dell'abilitazione di questa funzionalità.
 
 <div>
 
 
 > [!NOTE]  
-> Devi configurare la registrazione dei dettagli delle chiamate (CDR) e QoE per mantenere i dati per lo stesso numero di giorni. Ogni chiamata nei report dettagli chiamata (CDRs), disponibile nella Home page dei report di monitoraggio, include informazioni CDR e QoE. Se la durata di eliminazione per CDR e QoE è diversa, alcune chiamate possono includere solo dati CDR, mentre altre possono includere solo dati QoE.
+> È consigliabile configurare la registrazione dettagli chiamata (CDR, Call Detail Recording) e QoE in modo che mantengano i dati per lo stesso numero di giorni. Ogni chiamata inclusa nei rapporti Dettagli chiamata, disponibili dalla home page dei rapporti di monitoraggio, include informazioni di registrazione dettagli chiamata e QoE. Se il periodo che precede l'eliminazione è diverso, alcune chiamate potrebbero includere solo dati di registrazione dettagli chiamata e altre solo dati QoE.
 
 
 
 </div>
 
-La procedura seguente descrive come configurare le impostazioni di eliminazione dei dati QoE.
+Nella procedura seguente viene descritto come configurare le impostazioni per l'eliminazione dei dati QoE.
 
 <div>
 
-## <a name="to-specify-retention-of-qoe-data-by-using-lync-server-control-panel"></a>Per specificare la conservazione dei dati QoE tramite il pannello di controllo di Lync Server
+## <a name="to-specify-retention-of-qoe-data-by-using-lync-server-control-panel"></a>Per specificare il mantenimento dei dati QoE utilizzando il pannello di controllo di Lync Server
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **monitoraggio e archiviazione**, quindi fare clic su **qualità dei dati dell'esperienza**.
+3.  Sulla barra di spostamento sinistra fare clic su **Monitoraggio e archiviazione** e quindi su **Dati QoE**.
 
-4.  Nella pagina **qualità di dati esperienza** fare clic sul sito appropriato nella tabella, fare clic su **modifica**e quindi su **Mostra dettagli**.
+4.  Nella pagina **Dati QoE** fare clic sul sito appropriato nella tabella, fare clic su **Modifica** e quindi su **Mostra dettagli**.
 
-5.  Per attivare l'eliminazione, selezionare **Abilita l'eliminazione di QoE**.
+5.  Per abilitare l'eliminazione, selezionare **Abilita eliminazione dei dati QoE**.
 
-6.  In **Mantieni QoE per la durata massima (giorni)** selezionare il numero massimo di giorni in cui devono essere conservati i dati QoE.
+6.  In **Mantieni dati QoE per durata massima (giorni)** selezionare il numero massimo di giorni per cui mantenere i dati QoE.
 
 7.  Fare clic su **Commit**.
 
@@ -73,15 +73,15 @@ La procedura seguente descrive come configurare le impostazioni di eliminazione 
 
 <div>
 
-## <a name="specifying-qoe-retention-by-using-windows-powershell-cmdlets"></a>Specifica della conservazione QoE usando i cmdlet di Windows PowerShell
+## <a name="specifying-qoe-retention-by-using-windows-powershell-cmdlets"></a>Impostazione della conservazione QoE tramite i cmdlet di Windows PowerShell
 
-È possibile creare impostazioni di conservazione QoE usando Windows PowerShell e il cmdlet **Set-CsQoEConfiguration** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile creare impostazioni di conservazione QoE utilizzando Windows PowerShell e il cmdlet **Set-CsQoEConfiguration** . È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
-## <a name="to-specify-qoe-retention-for-a-specific-location"></a>Per specificare la conservazione QoE per una posizione specifica
+## <a name="to-specify-qoe-retention-for-a-specific-location"></a>Per specificare il mantenimento dei dati QoE per una posizione specifica
 
-  - Questo comando consente l'eliminazione dei dati QoE per il sito Redmond e configura il sito per la gestione dei dati QoE per 20 giorni.
+  - Questo comando consente di abilitare l'eliminazione dei dati QoE per il sito Redmond e di configurare il sito per mantenere i dati QoE per 20 giorni.
     
         Set-CsQoeConfiguration -Identity "site:Redmond" -EnablePurging -KeepQoEDataForDays 20
 
@@ -89,15 +89,15 @@ La procedura seguente descrive come configurare le impostazioni di eliminazione 
 
 <div>
 
-## <a name="to-specify-qoe-retention-for-multiple-locations"></a>Per specificare la conservazione QoE per più posizioni
+## <a name="to-specify-qoe-retention-for-multiple-locations"></a>Per specificare il mantenimento dei dati QoE per più posizioni
 
-  - Questo comando configura la conservazione QoE per tutte le impostazioni di configurazione QoE in uso in un'organizzazione.
+  - Questo comando consente di configurare il mantenimento dei dati QoE per tutte le impostazioni di configurazione QoE in uso in un'organizzazione.
     
         Get-CsQoEConfiguration | Set-CsQoEConfiguration-EnablePurging -KeepQoEDataForDays 20 
 
 </div>
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsQoEConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsQoEConfiguration) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsQoEConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsQoEConfiguration) .
 
 </div>
 

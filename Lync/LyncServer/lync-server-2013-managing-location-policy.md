@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: gestione dei criteri di posizione'
+title: 'Lync Server 2013: gestione dei criteri percorso'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733663
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 229f5db57a4e61306dec541b402a545b8df0e77a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7addcd213fd351154ad2b3d55360cbdb6dad6286
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762114"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043098"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="managing-location-policy-in-lync-server-2013"></a>Gestione dei criteri di posizione in Lync Server 2013
+# <a name="managing-location-policy-in-lync-server-2013"></a>Gestione dei criteri percorso in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41762114"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-15_
+_**Ultimo argomento modificato:** 2012-10-15_
 
-Usare le procedure descritte in questa sezione per gestire i criteri di posizione di Lync Server 2013 dal gruppo **configurazione di rete** nel pannello di controllo di Lync Server.
+Utilizzare le procedure descritte in questa sezione per gestire i criteri di percorso di Lync Server 2013 dal gruppo di **configurazione di rete** nel pannello di controllo di Lync Server.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Visualizzazione delle informazioni sui criteri di posizione in Lync Server 2013](lync-server-2013-viewing-location-policy-information.md)
+  - [Visualizzazione delle informazioni sui criteri percorso in Lync Server 2013](lync-server-2013-viewing-location-policy-information.md)
 
-  - [Creazione o modifica di un criterio di posizione in Lync Server 2013](lync-server-2013-creating-or-modifying-a-location-policy.md)
+  - [Creazione o modifica di un criterio percorso in Lync Server 2013](lync-server-2013-creating-or-modifying-a-location-policy.md)
 
-  - [Eliminazione di un criterio di posizione in Lync Server 2013](lync-server-2013-deleting-a-location-policy.md)
+  - [Eliminazione di un criterio percorso in Lync Server 2013](lync-server-2013-deleting-a-location-policy.md)
 
 </div>
 
@@ -64,7 +64,7 @@ Usare le procedure descritte in questa sezione per gestire i criteri di posizion
 ## <a name="see-also"></a>Vedere anche
 
 
-[Definizione dei criteri di posizione per Lync Server 2013](lync-server-2013-defining-the-location-policy.md)  
+[Definizione dei criteri percorso per Lync Server 2013](lync-server-2013-defining-the-location-policy.md)  
   
 
 </div>

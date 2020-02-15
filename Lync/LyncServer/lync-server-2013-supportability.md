@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Supportabilità'
+title: Supportabilità di Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183916
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5c2829ff9869287a08532584e318362ba57e51d6
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 348cdf890574e80b5997dee4312ec1a4b6371566
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731756"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038598"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="supportability-for-lync-server-2013"></a>Supportabilità per Lync Server 2013
+# <a name="supportability-for-lync-server-2013"></a>Supporto per Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41731756"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-04-23_
+_**Ultimo argomento modificato:** 2012-04-23_
 
-Il software di comunicazione di Microsoft Lync Server 2013 supporta le topologie progettate per soddisfare le esigenze delle organizzazioni di piccole, medie o grandi dimensioni e che hanno requisiti diversi per prestazioni, elevata disponibilità e scalabilità.
+Il software di comunicazione Microsoft Lync Server 2013 supporta le topologie progettate per soddisfare le esigenze di organizzazioni di piccole, medie o grandi dimensioni e che presentano requisiti diversi per le prestazioni, la disponibilità elevata e la scalabilità.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Supporto di Active Directory in Lync Server 2013](lync-server-2013-active-directory-support.md)
 
   - [Topologie supportate in Lync Server 2013](lync-server-2013-supported-topologies.md)
 
-  - [Collocazione di server supportata in Lync Server 2013](lync-server-2013-supported-server-collocation.md)
+  - [Collocazione dei server supportata in Lync Server 2013](lync-server-2013-supported-server-collocation.md)
 
   - [Percorsi di migrazione supportati e scenari di coesistenza in Lync Server 2013](lync-server-2013-supported-migration-paths-and-coexistence-scenarios.md)
 
@@ -57,7 +57,7 @@ Il software di comunicazione di Microsoft Lync Server 2013 supporta le topologie
 
   - [Requisiti e supporto per i server aggiuntivi in Lync Server 2013](lync-server-2013-additional-server-support-and-requirements.md)
 
-  - [Supporto dell'infrastruttura e del software di dispositivi e client in Lync Server 2013](lync-server-2013-client-and-device-software-and-infrastructure-support.md)
+  - [Supporto dell'infrastruttura e del software client e del dispositivo in Lync Server 2013](lync-server-2013-client-and-device-software-and-infrastructure-support.md)
 
 </div>
 

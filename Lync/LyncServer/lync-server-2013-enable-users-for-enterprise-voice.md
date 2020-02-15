@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: consentire agli utenti di VoIP aziendale'
+title: 'Lync Server 2013: abilitare gli utenti per VoIP aziendale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185800
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0b851c8807e12456c600b2ca176b0fa5a834f0d5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c48f701f9396c43337e2723f0dc83a8eda8d96ee
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736016"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046689"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="enable-users-for-enterprise-voice-in-lync-server-2013"></a>Consentire agli utenti di VoIP aziendale in Lync Server 2013
+# <a name="enable-users-for-enterprise-voice-in-lync-server-2013"></a>Abilitare gli utenti per VoIP aziendale in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41736016"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Dopo aver installato i file per uno o più server di mediazione, configurare il routing delle chiamate in uscita e, facoltativamente, distribuire una o più funzionalità vocali avanzate per l'organizzazione, è possibile usare le procedure seguenti per consentire a un utente di effettuare chiamate tramite VoIP aziendale:
+Dopo aver installato i file per uno o più Mediation Server, configurare il routing delle chiamate in uscita e, facoltativamente, distribuire una o più funzionalità di VoIP aziendale avanzate, è possibile utilizzare le procedure seguenti per consentire a un utente di effettuare chiamate tramite VoIP aziendale:
 
 <div>
 
 
 > [!NOTE]  
-> Delle procedure seguenti, solo il primo può essere eseguito usando il pannello di controllo di Lync Server. Per le procedure rimanenti, è possibile usare solo Lync Server Management Shell.
+> Nelle procedure riportate di seguito, solo il primo può essere eseguito utilizzando il pannello di controllo di Lync Server. Per le procedure rimanenti, è possibile utilizzare solo Lync Server Management Shell.
 
 
 
@@ -51,63 +51,63 @@ Dopo aver installato i file per uno o più server di mediazione, configurare il 
 
   - Abilitare l'account utente per VoIP aziendale.
 
-  - Opzionale Assegnare l'account utente a un criterio vocale specifico per l'utente.
+  - (Facoltativo) Assegnare all'account utente criteri vocali specifici dell'utente.
 
-  - Opzionale Assegna l'account utente a un dial plan specifico per l'utente.
+  - (Facoltativo) Assegnare all'account utente un dial plan specifico dell'utente.
 
 <div>
 
 ## <a name="to-enable-a-user-account-for-enterprise-voice"></a>Per abilitare un account utente per VoIP aziendale
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **utenti**.
+3.  Sulla barra di spostamento sinistra fare clic su **Utenti**.
 
-4.  Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente che si vuole abilitare e quindi fare clic su **trova**.
+4.  Nella casella **Cerca utenti** digitare anche solo la prima parte del nome visualizzato, del nome, del cognome, del nome dell'account di Gestione account di protezione, dell'indirizzo SIP o dell'URI (Uniform Resource Identifier) di linea dell'account utente da abilitare e quindi fare clic su **Trova**.
 
 5.  Nella tabella fare clic sull'account utente che si desidera abilitare per VoIP aziendale.
 
-6.  Nel menu **modifica** fare clic su **Mostra dettagli**.
+6.  Scegliere **Mostra dettagli** dal menu **Modifica**.
 
-7.  Nella pagina **modifica utente di Lync Server** , in **telefonia**, fare clic su **VoIP aziendale**.
+7.  Nella pagina **Modifica utente Lync Server**, in **Telefonia**, fare clic su **VoIP aziendale**.
 
-8.  Fare clic su **URI linea**e quindi digitare un numero di telefono normalizzato univoco, ad esempio Tel: + 14255550200.
+8.  Fare clic su **URI linea** e quindi digitare un numero di telefono normalizzato univoco, ad esempio tel:+14255550200.
 
 9.  Fare clic su **Commit**.
 
-Per completare l'abilitazione di un utente per VoIP aziendale, assicurati che all'utente sia assegnato un criterio vocale e un dial plan, sia globale (assegnato per impostazione predefinita) che specifico per l'utente.
+Per completare l'abilitazione di un utente per VoIP aziendale, assicurarsi che all'utente sia assegnato un criterio vocale e un dial plan, indipendentemente dal fatto che sia globale (assegnato per impostazione predefinita) o specifico dell'utente.
 
-Per impostazione predefinita, a tutti gli utenti viene assegnato un criterio vocale globale e un dial plan. Se un criterio vocale o un dial plan esiste a livello di sito per il sito in cui si trova l'account utente, i criteri del sito verranno applicati automaticamente all'utente. Per applicare un criterio vocale per utente o un dial plan a un utente, è necessario eseguire i cmdlet **Grant-CsVoicePolicy** e **Grant-CsDialPlan** . Per informazioni dettagliate, vedere la documentazione di [Lync Server 2013 Management Shell](lync-server-2013-lync-server-management-shell.md) .
+Per impostazione predefinita, tutti gli utenti vengono assegnati a criteri vocali e dial plan globali. Se nel sito principale dell'utente esistono criteri vocali o un dial plan a livello di sito, i criteri del sito verranno applicati automaticamente all'utente. Per applicare criteri vocali o un dial plan per utente, è necessario eseguire i cmdlet **Grant-CsVoicePolicy** e **Grant-CsDialPlan**. Per informazioni dettagliate, vedere la documentazione di [Lync Server 2013 Management Shell](lync-server-2013-lync-server-management-shell.md) .
 
 </div>
 
 <div>
 
-## <a name="voice-policy-assignment"></a>Assegnazione dei criteri vocali
+## <a name="voice-policy-assignment"></a>Assegnazione di criteri vocali
 
-I criteri vocali globali e a livello di sito vengono assegnati automaticamente a tutti gli account utente abilitati per VoIP aziendale. È anche possibile creare criteri vocali applicabili a utenti o gruppi specifici. Questi criteri per utente devono essere assegnati in modo esplicito agli utenti o ai gruppi. Se si vuole usare il criterio vocale globale o del sito per tutti gli utenti abilitati per VoIP aziendale, è possibile ignorare questa sezione e continuare la sezione Assegnazione di dial plan più avanti in questo argomento.
+I criteri vocali globali e a livello di sito vengono assegnati automaticamente a tutti gli account utente abilitati per VoIP aziendale. È inoltre possibile creare criteri vocali applicabili a utenti o gruppi specifici. Questi criteri per utente devono essere assegnati esplicitamente agli utenti o ai gruppi. Se si desidera utilizzare il criterio vocale globale o del sito per tutti gli utenti abilitati per VoIP aziendale, è possibile ignorare questa sezione e continuare con la sezione Assegnazione dial plan più avanti in questo argomento.
 
 <div>
 
-## <a name="to-assign-a-user-specific-voice-policy"></a>Per assegnare un criterio vocale specifico per l'utente
+## <a name="to-assign-a-user-specific-voice-policy"></a>Per assegnare criteri vocali specifici dell'utente
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Per assegnare un criterio vocale utente esistente a un utente, eseguire le operazioni seguenti al prompt dei comandi:
+3.  Per assegnare un criterio vocale esistente a un utente, eseguire quanto segue al prompt dei comandi:
     
         Grant-CsVoicePolicy -Identity <UserIdParameter> -PolicyName <String>
     
-    Ad esempio:
+    Esempio:
     
         Grant-CsVoicePolicy -Identity "Bob Kelly" -PolicyName VoicePolicyJapan
     
-    In questo esempio l'utente con il nome visualizzato Bob Kelly viene assegnato il criterio vocale con il nome **VoicePolicyJapan**.
+    In questo esempio, all'utente con il nome visualizzato Bob Kelly viene assegnato il criterio vocale con il nome **VoicePolicyJapan**.
 
-Per informazioni dettagliate sull'assegnazione di un criterio vocale specifico per l'utente o sull'uso del cmdlet **Grant-CsVoicePolicy** , vedere la documentazione di [Lync Server 2013 Management Shell](lync-server-2013-lync-server-management-shell.md) .
+Per informazioni dettagliate sull'assegnazione di criteri vocali specifici dell'utente o sull'esecuzione del cmdlet **Grant-CsVoicePolicy** , vedere la documentazione di [Lync Server 2013 Management Shell](lync-server-2013-lync-server-management-shell.md) .
 
 </div>
 
@@ -119,17 +119,17 @@ Per informazioni dettagliate sull'assegnazione di un criterio vocale specifico p
 
 ## <a name="dial-plan-assignment"></a>Assegnazione di dial plan
 
-Per completare la configurazione dell'account utente per gli utenti di VoIP aziendale o per gli utenti di servizi di conferenza telefonica con accesso esterno, l'utente deve essere assegnato a un dial plan. Gli account utente useranno automaticamente il dial plan globale o, se disponibile, il dial plan a livello di sito, quando non si assegna esplicitamente un dial plan per utente esistente. Se si vuole usare il dial plan globale o del sito per tutti gli utenti abilitati per VoIP aziendale, è possibile ignorare questa sezione.
+Per completare la configurazione degli account per gli utenti di VoIP aziendale o per gli utenti delle conferenze telefoniche con accesso esterno, è necessario che all'utente sia assegnato un dial plan. Gli account utente utilizzeranno automaticamente il dial plan globale oppure, se disponibile, il dial plan a livello di sito se non si assegna esplicitamente un dial plan per utente. Se si desidera utilizzare il dial plan globale o del sito per tutti gli utenti abilitati per VoIP aziendale, è possibile ignorare questa sezione.
 
 <div>
 
 ## <a name="to-assign-a-dial-plan"></a>Per assegnare un dial plan
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Per assegnare un dial plan specifico per l'utente, eseguire la procedura seguente al prompt dei comandi:
+3.  Per assegnare un dial plan specifico dell'utente, al prompt dei comandi eseguire quanto segue:
     
         Grant-CsDialPlan -Identity <UserIdParameter> -PolicyName <String>
     
@@ -137,7 +137,7 @@ Per completare la configurazione dell'account utente per gli utenti di VoIP azie
     
         Grant-CsDialPlan -Identity "Bob Kelly" -PolicyName DialPlanJapan
     
-    In questo esempio l'utente con il nome visualizzato Bob Kelly viene assegnato al dial plan utente con il nome **DialPlanJapan**.
+    In questo esempio, all'utente con il nome visualizzato Bob Kelly viene assegnato il dial plan utente con il nome **DialPlanJapan**.
 
 Per informazioni dettagliate sull'assegnazione di un dial plan utente o sull'esecuzione del cmdlet **Grant-CsDialPlan** , vedere la documentazione di [Lync Server 2013 Management Shell](lync-server-2013-lync-server-management-shell.md) .
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: gestione delle chiamate a numeri non assegnati'
+title: 'Lync Server 2013: gestione delle chiamate ai numeri non assegnati'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49733772
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 571bddf8de62d7b22ac23a3b00de740030a2f7ca
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 154f32e22ccce5ae23a4e3dceb175072618cc289
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738786"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037516"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41738786"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Lync Server consente di configurare la gestione delle chiamate in arrivo quando il numero composto è valido per l'organizzazione, ma non viene assegnato a un utente o un telefono. È possibile usare l'applicazione di annuncio per trasferire queste chiamate a una destinazione predeterminata (numero di telefono, URI SIP o segreteria telefonica) oppure riprodurre un annuncio audio o entrambi. È anche possibile trasferire queste chiamate a un numero di telefono dell'operatore automatico di Exchange UM. La gestione delle chiamate a numeri non assegnati in uno di questi modi consente di evitare le situazioni in cui il chiamante effettua una chiamata errata e quindi sente un tono di occupato oppure il client SIP riceve un messaggio di errore.
+Lync Server consente di configurare la gestione delle chiamate in arrivo quando il numero composto è valido per l'organizzazione, ma non è assegnato a un utente o a un telefono. È possibile utilizzare l'applicazione annuncio per trasferire le chiamate a una destinazione predeterminata (numero di telefono, URI SIP o segreteria telefonica) oppure riprodurre un annuncio audio o entrambi. È inoltre possibile trasferire tali chiamate a un numero di telefono operatore automatico della messaggistica unificata di Exchange. La gestione delle chiamate a numeri non assegnati in uno di questi modi consente di evitare le situazioni in cui un chiamante compone un numero errato e sente un segnale di linea occupata oppure in cui il client SIP riceve un messaggio di errore.
 
-Questa sezione descrive come gestire gli intervalli di numeri non assegnati per gestire le chiamate a numeri di telefono non assegnati. La sezione descrive anche come gestire gli annunci durante il ripristino di emergenza se si vuole eseguire questa funzionalità durante un'interruzione.
+In questa sezione viene illustrato come gestire gli intervalli di numeri non assegnati per gestire le chiamate a numeri di telefono non assegnati. Nella sezione viene inoltre illustrato come gestire gli annunci durante un ripristino di emergenza se si desidera tale funzionalità durante un'interruzione del servizio.
 
 <div>
 
 
 > [!NOTE]  
-> L'uso della gestione numeri non assegnati durante un'interruzione è facoltativo.
+> L'utilizzo della gestione dei numeri non assegnati durante un'interruzione del servizio è facoltativo.
 
 
 
@@ -53,7 +53,7 @@ Questa sezione descrive come gestire gli intervalli di numeri non assegnati per 
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Creare un annuncio in Lync Server 2013](lync-server-2013-create-an-announcement.md)
 

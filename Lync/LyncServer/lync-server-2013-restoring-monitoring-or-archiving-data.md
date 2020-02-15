@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: ripristinare il monitoraggio o l'archiviazione dei dati"
+title: 'Lync Server 2013: ripristino dei dati di monitoraggio o archiviazione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541483
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9621fe3c1905dbd34fd3b4da39b2562c608d6355
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8840869e972f0c178360b0b50644d352b8db85df
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733166"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050418"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="restoring-monitoring-or-archiving-data-in-lync-server-2013"></a>Ripristinare il monitoraggio o l'archiviazione dei dati in Lync Server 2013
+# <a name="restoring-monitoring-or-archiving-data-in-lync-server-2013"></a>Ripristino dei dati di monitoraggio o archiviazione in Lync Server 2013
 
 </div>
 
@@ -35,51 +35,51 @@ ms.locfileid: "41733166"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-18_
+_**Ultimo argomento modificato:** 2013-02-18_
 
-Non è necessario ripristinare i dati di monitoraggio e archiviazione per ottenere l'accesso e l'uso di Lync Server dopo un errore. Tuttavia, se il monitoraggio e l'archiviazione dei dati è fondamentale per l'organizzazione, sarà necessario ripristinare i dati dopo la ricreazione dei database.
+Il ripristino dei dati di monitoraggio e archiviazione non è necessario per ottenere Lync Server attivo e in esecuzione dopo un errore. Tuttavia, se il monitoraggio e l'archiviazione dei dati sono fondamentali per l'organizzazione, sarà necessario ripristinare i dati dopo aver ricreato i database.
 
-La procedura seguente descrive come usare SQL Server Management Studio per ripristinare i dati di archiviazione o monitoraggio.
+Nella procedura seguente viene descritto come utilizzare SQL Server Management Studio per ripristinare i dati di archiviazione o di monitoraggio.
 
 <div>
 
-## <a name="to-restore-monitoring-or-archiving-data-from-a-backup-file"></a>Per ripristinare il monitoraggio o l'archiviazione dei dati da un file di backup
+## <a name="to-restore-monitoring-or-archiving-data-from-a-backup-file"></a>Per ripristinare i dati di monitoraggio o archiviazione da un file di backup
 
-1.  Accedere al server che si sta ripristinando come membro del gruppo Administrators nel computer locale o in un gruppo con diritti utente equivalenti.
+1.  Accedere al server che si sta ripristinando come membro del gruppo Administrators nel computer locale o di un gruppo con diritti utente equivalenti.
 
 2.  Aprire SQL Server Management Studio: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft SQL Server 2012** o **Microsoft SQL Server 2008 R2**e quindi fare clic su **SQL Server Management Studio**.
 
-3.  In **Connetti al server**connettersi all'istanza di SQL Server specificando almeno il nome del server e le informazioni di autenticazione.
+3.  In **Connetti al server**, connettersi all'istanza di SQL Server specificando almeno il nome del server e le informazioni di autenticazione.
 
 4.  In **Esplora oggetti**fare clic con il pulsante destro del mouse su **database**e quindi scegliere **Ripristina database**.
 
-5.  In **Seleziona una pagina**fare clic su **generale**e quindi in **database** selezionare il nome del database nel modo seguente:
+5.  In **Seleziona una pagina**, fare clic su **generale**e quindi in **database** selezionare il nome del database come indicato di seguito:
     
       - Per un database di archiviazione, selezionare **LcsLog**.
     
-      - Per un database di registrazione dei dettagli delle chiamate (CDR) selezionare **LcsCDR**.
+      - Per un database di registrazione dettagli chiamata, selezionare **LcsCDR**.
     
-      - Per un database di qualità dell'esperienza (QoE), selezionare **QoEMetrics**.
+      - Per un database QoE (Quality of Experience), selezionare **QoEMetrics**.
 
 6.  Fare clic su **da dispositivo**.
 
-7.  In **selezionare i set di backup da ripristinare**, fare clic sul file di backup e quindi su **Ripristina**.
+7.  In **selezionare i set di backup da ripristinare**, fare clic sul file di backup, quindi fare clic su **Ripristina**.
 
-8.  In **Seleziona una pagina**fare clic su **Opzioni**, verificare che il percorso del file di dati e il percorso del log si trovino nella cartella corretta e quindi fare clic su **OK**.
+8.  In **Seleziona una pagina**fare clic su **Opzioni**, verificare che il percorso del file di dati e il percorso del registro siano presenti nella cartella corretta e quindi fare clic su **OK**.
 
 </div>
 
 <div>
 
-## <a name="to-make-sure-that-access-control-lists-acls-are-correct"></a>Per verificare che gli elenchi di controllo di accesso (ACL) siano corretti
+## <a name="to-make-sure-that-access-control-lists-acls-are-correct"></a>Per assicurarsi che gli elenchi di controllo di accesso (ACL, Access Control List) siano corretti
 
-1.  Espandere **database**, espandere il database di archiviazione o monitoraggio, espandere **sicurezza**e quindi espandere **utenti**.
+1.  Espandere **database**, espandere il database di archiviazione o di monitoraggio, espandere **sicurezza**e quindi espandere **utenti**.
 
-2.  Verificare che il gruppo di domini RTCComponentUniversalServices esista come utente.
+2.  Verificare che il gruppo di dominio RTCComponentUniversalServices esista come utente.
 
-3.  Se RTCComponentUniversalServices non è presente in **utenti**, eseguire le operazioni seguenti:
+3.  Se RTCComponentUniversalServices non esiste in **utenti**, eseguire le operazioni seguenti:
     
-    1.  Fare clic con il pulsante destro del mouse su **utenti**e quindi scegliere **nuovo utente**.
+    1.  Fare clic con il pulsante destro del mouse su **Utenti** e quindi scegliere **Nuovo utente**.
     
     2.  In **nome account di accesso**Digitare il nome del gruppo mancante, RTCComponentUniversalServices.
     
@@ -89,7 +89,7 @@ La procedura seguente descrive come usare SQL Server Management Studio per ripri
     
 
     > [!NOTE]  
-    > Non è necessario riavviare il servizio archiviazione o monitoraggio.
+    > Non è necessario riavviare il servizio di archiviazione o di monitoraggio.
 
     
     </div>

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: spostamento degli utenti da Lync Online a Lync locale'
+title: 'Lync Server 2013: spostamento degli utenti da Lync Online a Lync in locale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 62258122
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bea1463660e420edbf296be3d47aaca6d8545feb
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5e390bfbd327bf8823b66a180ce17dcb54ad0349
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756700"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043868"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="moving-users-from-lync-online-to-lync-on-premises-in-lync-server-2013"></a>Spostamento di utenti da Lync Online a Lync locale in Lync Server 2013
+# <a name="moving-users-from-lync-online-to-lync-on-premises-in-lync-server-2013"></a>Spostamento di utenti da Lync Online a Lync in locale in Lync Server 2013
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41756700"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-05-08_
+_**Ultimo argomento modificato:** 2014-05-08_
 
-L'organizzazione ha distribuito Lync Online prima che venisse distribuito Lync Server locale? E ora si vuole trasferire gli account utente inizialmente abilitati per Lync in Lync Online alla distribuzione locale di Lync Server? Questa sezione può aiutarti.
+L'organizzazione ha distribuito Lync Online prima di distribuire Lync Server in locale? E ora si desidera spostare gli account utente originariamente abilitati per Lync in Lync Online per la distribuzione di Lync Server locale? In questa sezione è possibile eseguire questa operazione.
 
 <div>
 
 
 > [!NOTE]  
-> Questa sezione riguarda solo lo spostamento degli utenti inizialmente abilitati per Lync in Lync Online. Gli account utente che sono stati abilitati per la prima volta in Lync locale sono stati quindi spostati in Lync Online? In caso affermativo e si vuole riportarli in locale, il processo è semplice: <A href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">amministrazione degli utenti in una distribuzione ibrida di Lync Server 2013</A>.
+> In questa sezione viene utilizzato solo lo spostamento degli utenti originariamente abilitati per Lync in Lync Online. È possibile che gli account utente siano stati abilitati per la prima volta per Lync in locale, quindi spostati in Lync Online? In caso affermativo e si desidera spostarli di nuovo in locale, il processo è semplice: <A href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">amministrazione degli utenti in una distribuzione ibrida di Lync Server 2013</A>.
 
 
 
 </div>
 
-  - [Primi passaggi prima di iniziare la migrazione degli utenti da Lync Online a Lync locale in Lync Server 2013](lync-server-2013-first-steps-before-you-start-migrating-users-from-lync-online-to-lync-on-premises.md)
+  - [Primi passaggi prima di avviare la migrazione degli utenti da Lync Online a Lync locale in Lync Server 2013](lync-server-2013-first-steps-before-you-start-migrating-users-from-lync-online-to-lync-on-premises.md)
 
   - [Migrazione degli utenti di Lync Online a Lync locale in Lync Server 2013](lync-server-2013-migrating-lync-online-users-to-lync-on-premises.md)
 

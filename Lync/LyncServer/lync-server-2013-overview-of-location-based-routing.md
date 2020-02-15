@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Panoramica del routing basato sulla posizione'
+title: 'Lync Server 2013: Panoramica del routing in base alla posizione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51803941
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 07a7db57d506b892fd030efccfb304c7103e1e9f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7bc7320ffd8bb4d12483a882b588205d26e7e164
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755510"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051008"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-location-based-routing-in-lync-server-2013"></a>Panoramica del routing basato sulla posizione in Lync Server 2013
+# <a name="overview-of-location-based-routing-in-lync-server-2013"></a>Panoramica del routing in base alla posizione in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41755510"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-Il routing basato sulla posizione introduce un nuovo set di regole che modifica il routing delle chiamate PSTN nazionali e internazionali per evitare l'esclusione dei pedaggi. Il routing basato sulla posizione offre la flessibilità per l'ambito di queste regole per specifiche aree geografiche, gateway specifici o solo set di utenti specifici.
+Il routing in base alla posizione introduce un nuovo set di regole che consente di modificare il routing delle chiamate PSTN nazionali e internazionali per evitare il bypass a pedaggio. Il routing in base alla posizione offre la possibilità di applicare queste regole a aree specifiche, gateway specifici o solo a un insieme specifico di utenti.
 
-Gli scenari seguenti illustrano i tipi principali di restrizioni che il routing basato sulla posizione può applicare:
+Negli scenari seguenti vengono illustrati i principali tipi di restrizioni che il routing in base alla posizione può applicare:
 
-  - Le chiamate in uscita: il routing basato sulla posizione può applicare le chiamate in uscita a un gateway PSTN che si trova nella stessa area geografica in cui il chiamante deve impedire l'esclusione del pedaggio PSTN, impedendo le chiamate all'uscita da un gateway PSTN situato in un'area diversa come chiamante.
+  - Chiamate in uscita – il routing in base alla posizione può imporre le chiamate in uscita all'accesso da un gateway PSTN che si trova nella stessa regione in cui il chiamante deve impedire il bypass a pedaggio PSTN, impedendo le chiamate all'uscita da un gateway PSTN situato in un'area diversa come chiamante.
 
-  - Chiamate di ingresso: il routing basato sulla posizione può impedire alle chiamate PSTN in arrivo di squillare gli endpoint di Lync se il gateway PSTN che instrada la chiamata in arrivo non si trova nella stessa area dell'utente di Lync chiamato.
+  - Chiamate in ingresso – il routing in base alla posizione può impedire le chiamate PSTN in arrivo per suonare gli endpoint di Lync se il gateway PSTN che instrada la chiamata in arrivo non si trova nella stessa area dell'utente denominato Lync.
 
-  - Aree sconosciute: il routing basato sulla posizione limita le chiamate PSTN in ingresso e in uscita a e da utenti che si trovano in posizioni Indeterminate (ad esempio, gli utenti remoti che si connettono da Internet o si trovano in aree sconosciute).
+  - Aree sconosciute – il routing in base alla posizione limita le chiamate PSTN in ingresso e in uscita da e verso gli utenti che si trovano in posizioni Indeterminate (ad esempio, gli utenti remoti che si connettono da Internet o che si trovano in aree sconosciute).
 
-  - Aree internazionali: il routing basato sulla posizione impone il routing delle chiamate in uscita tramite gateway PSTN internazionali se non è possibile trovare un gateway locale nella posizione dell'utente.
+  - Regioni internazionali – il routing in base alla posizione impone il routing delle chiamate in uscita attraverso i gateway PSTN internazionali se non è possibile trovare un gateway locale per la posizione dell'utente.
 
 <div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Definire un gateway PSTN per un sito di succursale'
+title: 'Lync Server 2013: definire un gateway PSTN per un sito di succursale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184724
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e4445647e6ffcbfc2cfc137bd120d0aced6a9908
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3ae74ead7eb481a6551156fc0ce228c743fdf1b6
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728526"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043668"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,20 +35,20 @@ ms.locfileid: "41728526"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-Eseguire questa procedura nel sito centrale, che contiene almeno un pool Front-end o un server Standard Edition.
+Eseguire questa procedura nel sito centrale, che contiene almeno un pool Front end o un server Standard Edition.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Prima di eseguire la procedura, è necessario che siano presenti le condizioni seguenti: 
+> Prima di eseguire la procedura, è necessario che vengano soddisfatte le condizioni seguenti: 
 > <UL>
 > <LI>
-> <P>Il software di&nbsp;comunicazione di Lync Server 2013 deve essere configurato nel sito centrale.</P>
+> <P>Il software di&nbsp;comunicazione Lync Server 2013 deve essere configurato nel sito centrale.</P>
 > <LI>
-> <P>Mediation Server deve essere distribuito nel sito centrale.</P></LI></UL>
+> <P>Il Mediation Server deve essere distribuito nel sito centrale.</P></LI></UL>
 
 
 
@@ -58,23 +58,23 @@ Eseguire questa procedura nel sito centrale, che contiene almeno un pool Front-e
 
 ## <a name="to-define-a-pstn-gateway"></a>Per definire un gateway PSTN
 
-1.  Fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Microsoft Lync Server**e quindi su **Generatore di topologia di Lync Server**.
+1.  Fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server** e quindi **Generatore di topologie di Lync Server**.
 
-2.  Nell'albero della console espandere il sito centrale, espandere **siti di filiale**, espandere il nome del sito della filiale per la definizione di un gateway PSTN (Public Switched Telephone Network), quindi espandere i **componenti condivisi**.
+2.  Nell'albero della console espandere il sito centrale, espandere **Siti di succursale** e quindi espandere il nome del sito derivato per il quale si desidera definire un gateway PSTN. Espandere quindi **Componenti condivisi**.
 
-3.  Fare clic con il pulsante destro del mouse su **gateway PSTN**e quindi scegliere **nuovo gateway IP/PSTN**.
+3.  Fare clic con il pulsante destro del mouse su **Gateway PSTN** e quindi scegliere **Nuovo gateway IP/PSTN**.
 
-4.  Nella finestra di dialogo **Definisci nuovo gateway IP/PSTN** fare clic su **FQDN gateway o indirizzo IP**e quindi digitare il nome di dominio completo (FQDN) o l'indirizzo IP del gateway che si sta distribuendo nel sito della filiale.
+4.  Nella finestra di dialogo **Definisci nuovo gateway IP/PSTN** fare clic su **FQDN gateway o indirizzo IP** e quindi digitare il nome di dominio completo (FQDN) o l'indirizzo IP del gateway che si sta distribuendo nel sito derivato.
 
-5.  Fare clic su **porta di ascolto per gateway IP/PSTN**e quindi accettare i valori predefiniti.
+5.  Fare clic su **Porta di attesa per gateway IP/PSTN** e quindi accettare i valori predefiniti.
 
-6.  Nell'elenco **protocollo di trasporto SIP** fare clic sul protocollo di trasporto usato dal gateway e quindi fare clic su **OK**.
+6.  Nell'elenco **Protocollo trasporto SIP** fare clic sul protocollo di trasporto utilizzato dal gateway e quindi su **OK**.
     
     <div>
     
 
     > [!NOTE]  
-    > Per motivi di sicurezza, ti consigliamo vivamente di usare un gateway PSTN che supporta TLS (Transport Layer Security).
+    > Per motivi di sicurezza, è consigliabile utilizzare un gateway PSTN che supporti TLS (Transport Layer Security).
 
     
     </div>
@@ -89,7 +89,7 @@ Eseguire questa procedura nel sito centrale, che contiene almeno un pool Front-e
 
 </div>
 
-**Passaggio successivo** per la resilienza del sito di succursale: [configurazione degli utenti per la resilienza del sito di succursale in Lync Server 2013](lync-server-2013-configuring-users-for-branch-site-resiliency.md)
+**Passaggio successivo** per la resilienza dei siti di succursale: [configurazione degli utenti per la resilienza dei siti di succursale in Lync Server 2013](lync-server-2013-configuring-users-for-branch-site-resiliency.md)
 
 </div>
 

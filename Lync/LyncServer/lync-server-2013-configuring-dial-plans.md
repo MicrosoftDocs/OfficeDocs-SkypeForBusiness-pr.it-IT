@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurazione dei dial plan'
+title: 'Lync Server 2013: configurazione di dial plan'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185512
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b49bc53a02f9b3a5beb4458dcebaa9aa6398823a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bcd19d3f0ae11b38afd6d95fc443683963185075
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758130"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046409"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-dial-plans-in-lync-server-2013"></a>Configurazione dei dial plan in Lync Server 2013
+# <a name="configuring-dial-plans-in-lync-server-2013"></a>Configurazione di dial plan in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41758130"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-22_
+_**Ultimo argomento modificato:** 2013-02-22_
 
-Un dial plan di Lync Server 2013 è un set denominato di regole di normalizzazione che traduce i numeri di telefono per una posizione denominata, un singolo utente o un oggetto contatto per scopi di autorizzazione del telefono e routing delle chiamate.
+Un dial plan di Lync Server 2013 è un set denominato di regole di normalizzazione che convertono i numeri di telefono di una posizione denominata, di un singolo utente o di un oggetto contatto ai fini dell'autorizzazione del telefono e del routing delle chiamate.
 
 <div>
 
 
 > [!NOTE]  
-> Per informazioni dettagliate, vedere <A href="lync-server-2013-dial-plans-and-normalization-rules.md">dial plan e regole di normalizzazione in Lync Server 2013</A> nella documentazione relativa alla pianificazione.
+> Per informazioni dettagliate, vedere <A href="lync-server-2013-dial-plans-and-normalization-rules.md">dial plans and normalizzation Rules in Lync Server 2013</A> nella documentazione relativa alla pianificazione.
 
 
 
@@ -51,9 +51,9 @@ Un dial plan di Lync Server 2013 è un set denominato di regole di normalizzazio
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Visualizzare le informazioni di dial plan in Lync Server 2013](lync-server-2013-view-dial-plan-information.md)
+  - [Visualizzare le informazioni sul dial plan in Lync Server 2013](lync-server-2013-view-dial-plan-information.md)
 
   - [Creare un dial plan in Lync Server 2013](lync-server-2013-create-a-dial-plan.md)
 

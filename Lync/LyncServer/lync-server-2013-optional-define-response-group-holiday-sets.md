@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: (facoltativo) definire set di festività di Response Group'
+title: 'Lync Server 2013: (facoltativo) definire i set di festività di Response Group'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733657
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7e6751a5f5915e73d181efba40976640c65e0909
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 615b76657b8a7045c99d17f523aa73b0ee79a807
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755760"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051168"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="optional-define-response-group-holiday-sets-in-lync-server-2013"></a>Opzionale Definire set di festività di Response Group in Lync Server 2013
+# <a name="optional-define-response-group-holiday-sets-in-lync-server-2013"></a>Optional Definire i set di festività di Response Group in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41755760"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-02-07_
+_**Ultimo argomento modificato:** 2014-02-07_
 
-Le impostazioni per le festività definiscono i giorni in cui un Response Group viene chiuso per le aziende e specifica l'azione da eseguire in questi giorni. Un set di festività è la raccolta di festività che si applicano a un Response Group.
+Le impostazioni delle festività consentono di definire i giorni in cui il Response Group non è operativo e di specificare l'azione da effettuare in questi giorni. Un set di festività è la raccolta delle festività che si applicano a un Response Group.
 
 <div>
 
 
 > [!NOTE]  
-> Se un flusso di lavoro viene definito come flusso di lavoro gestito, a qualsiasi utente viene assegnato il ruolo CsResponseGroupManager può impostare e modificare le festività per i flussi di lavoro gestiti.
+> Se un flusso di lavoro è definito come flusso di lavoro gestito, tutti gli utenti con il ruolo CsResponseGroupManager possono impostare e modificare le festività per i flussi di lavoro che gestiscono.
 
 
 
@@ -53,19 +53,19 @@ Le impostazioni per le festività definiscono i giorni in cui un Response Group 
 
 ## <a name="to-create-a-holiday-set"></a>Per creare un set di festività
 
-1.  Accedere come membro del gruppo RTCUniversalServerAdmins o come membro di uno dei ruoli amministrativi predefiniti che supportano il gruppo di risposte.
+1.  Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Per ogni festività che si vuole definire, eseguire:
+3.  Per ogni festività che si desidera definire, eseguire:
     
         $x = New-CsRgsHoliday [-Name <holiday name>] -StartDate <starting date of holiday> -EndDate <ending date of holiday>
     
-    Per creare il set di festività che contiene le festività definite, eseguire:
+    Per creare l'insieme di festività che contiene le festività definite, eseguire:
     
         New-CsRgsHolidaySet -Parent <service where the workflow is hosted> -Name <unique name for holiday set> -HolidayList <one or more holidays to be included in the holiday set>
     
-    L'esempio seguente mostra un set di festività che include due festività:
+    Nell'esempio seguente viene illustrato un insieme di festività che include due festività:
     
         $a = New-CsRgsHoliday -Name "New Year's Day" -StartDate "1/1/2013 12:00 AM" -EndDate "1/1/2013 12:00 AM" 
         $b = New-CsRgsHoliday -Name "Independence Day" -StartDate "7/4/2013 12:00 AM" -EndDate "7/5/2013 12:00 AM" 
@@ -78,7 +78,7 @@ Le impostazioni per le festività definiscono i giorni in cui un Response Group 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Creare o modificare un flusso di lavoro di gruppo di ricerca in Lync Server 2013](lync-server-2013-create-or-modify-a-hunt-group-workflow.md)  
+[Creare o modificare un flusso di lavoro di un gruppo di risposta in Lync Server 2013](lync-server-2013-create-or-modify-a-hunt-group-workflow.md)  
 [Creare o modificare un flusso di lavoro interattivo in Lync Server 2013](lync-server-2013-create-or-modify-an-interactive-workflow.md)  
 
 

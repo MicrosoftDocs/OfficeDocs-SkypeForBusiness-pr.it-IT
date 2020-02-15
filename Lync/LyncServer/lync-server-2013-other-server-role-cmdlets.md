@@ -12,16 +12,16 @@ ms:contentKeyID: 48184801
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fa633bb9a1d5abcf34feb027b3fd364c5ad6b4cf
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 43a4c63851e45ea1763650d8e908427672bd7fbf
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755650"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42047340"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,25 +35,25 @@ ms.locfileid: "41755650"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-03-21_
+_**Ultimo argomento modificato:** 2012-03-21_
 
-Questi cmdlet consentono di gestire i ruoli del server "una tantum", ad esempio il server delle conferenze, che non rientrano nelle categorie di ruoli del server, ad esempio Edge Server o server della Rubrica.
+Questi cmdlet consentono di gestire ruoli server singoli (ad esempio il server per conferenze) che non rientrano nelle categorie dei ruoli server quali i server perimetrali o i server della Rubrica.
 
 <div>
 
-## <a name="other-server-role-and-cmdlets"></a>Altro ruolo e cmdlet del server
+## <a name="other-server-role-and-cmdlets"></a>Altri ruoli server e cmdlet
 
-Di seguito è riportato un elenco di cmdlet correlati direttamente alla gestione di altri ruoli e servizi del server:
+L'elenco seguente include i cmdlet direttamente correlati alla gestione di altri ruoli server e servizi:
 
-**Altri ruoli del server**
+**Altri ruoli server**
 
   - <span></span>  
-    [Set-CsConferenceServer](https://technet.microsoft.com/en-us/library/Gg398738(v=OCS.15))
+    [Set-CsConferenceServer](https://technet.microsoft.com/library/Gg398738(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Set-CsUserServer](https://technet.microsoft.com/en-us/library/Gg413026(v=OCS.15))
+    [Set-CsUserServer](https://technet.microsoft.com/library/Gg413026(v=OCS.15))
 
 </div>
 

@@ -12,20 +12,20 @@ ms:contentKeyID: 63369406
 ms.date: 11/12/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 937af764342def5e4d3923cfb82e771e31fe9aa8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1352b228a6c4292beba4b4ebb19b787111d1379b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730546"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037346"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="updates-for-lync-2013-client-and-lync-server-2013"></a>Aggiornamenti per client Lync 2013 e Lync Server 2013
+# <a name="updates-for-lync-2013-client-and-lync-server-2013"></a>Aggiornamenti per Lync 2013 client e Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41730546"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-11-12_
+_**Ultimo argomento modificato:** 2014-11-12_
 
-Per assicurarsi di avere la versione più recente del client Lync, vedere l'elenco di tutte le versioni di rilascio del client per Microsoft Lync 2013.
+Per assicurarsi di avere la versione più recente di Lync client, vedere questo elenco aggiornato di frequente di tutte le versioni client Release per Microsoft Lync 2013.
 
 <div>
 
-## <a name="determining-your-lync-desktop-client-version"></a>Determinazione della versione client desktop Lync
+## <a name="determining-your-lync-desktop-client-version"></a>Determinare la versione client di Lync desktop
 
-Per scoprire la versione del client desktop Lync in uso, aprire la finestra di dialogo **informazioni su Lync** facendo clic sull'icona Opzioni. Scegliere **Guida** dal menu **Opzioni** e quindi **informazioni su Microsoft Lync**. Il numero di versione client viene in genere visualizzato nella prima riga della finestra **di dialogo informazioni su Lync** .
+Per sapere quale versione di Lync desktop client si sta utilizzando, aprire la finestra di dialogo **informazioni su Lync** facendo clic sull'icona Opzioni. Scegliere **Guida** dal menu **Opzioni** e quindi **informazioni su Microsoft Lync**. Il numero di versione client viene in genere visualizzato nella prima riga della finestra **di dialogo informazioni su Lync** .
 
 </div>
 
@@ -51,9 +51,9 @@ Per scoprire la versione del client desktop Lync in uso, aprire la finestra di d
 
 ## <a name="lync-client-updates"></a>Aggiornamenti client di Lync
 
-Uno dei controlli più comuni da eseguire per la risoluzione dei problemi del client Lync consiste nel determinare se si esegue l'ultima versione del client Lync e se sono installate tutte le patch. La maggior parte dei problemi del client Lync che vengono segnalati viene risolta aggiornando la versione più recente o l'aggiornamento del prodotto. In questo modo, ti consigliamo vivamente di installare la versione più recente del client Lync, insieme agli aggiornamenti più recenti, prima di contattare il supporto tecnico Microsoft. Questo [articolo](https://docs.microsoft.com/SkypeForBusiness/sfb-client-updates#lync-2013-client-updates) consente di identificare il numero di versione corretto del rilascio.
+Uno dei controlli più comuni da eseguire per la risoluzione dei problemi relativi ai client di Lync consiste nel determinare se si sta eseguendo la versione più recente del client Lync e se sono state installate tutte le patch. La maggior parte dei problemi relativi ai client di Lync segnalati viene risolta eseguendo l'aggiornamento alla versione più recente o all'aggiornamento del prodotto. Pertanto, è consigliabile installare la versione più recente del client Lync, insieme agli aggiornamenti più recenti, prima di contattare il servizio supporto tecnico clienti Microsoft. In questo [articolo](https://docs.microsoft.com/SkypeForBusiness/sfb-client-updates#lync-2013-client-updates) viene illustrato come identificare il numero di versione finale corretto.
 
-Ogni aggiornamento per il client Lync ha il proprio numero di versione. Per determinare il numero di versione associato a un aggiornamento, è possibile esaminare l'articolo della Knowledge Base correlato nella tabella seguente.
+Ogni aggiornamento per il client Lync ha il proprio numero di versione. È possibile determinare il numero di versione associato a un aggiornamento esaminando l'articolo della Knowledge base collegato nella tabella seguente.
 
 </div>
 

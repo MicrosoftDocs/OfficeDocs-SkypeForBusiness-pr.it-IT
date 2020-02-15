@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: eliminazione delle subnet di rete'
+title: 'Lync Server 2013: eliminazione di subnet di rete'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733806
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0c87ca1cfd91344d8f8cbb0b320c70def47bf5ac
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 0a1a50930ccf5e834a51041a01b9860dbb8bf6f2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740966"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042780"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deleting-network-subnets-in-lync-server-2013"></a>Eliminazione delle subnet di rete in Lync Server 2013
+# <a name="deleting-network-subnets-in-lync-server-2013"></a>Eliminazione di subnet di rete in Lync Server 2013
 
 </div>
 
@@ -35,34 +35,34 @@ ms.locfileid: "41740966"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-Per eliminare una subnet, è possibile usare la procedura seguente. Dal pannello di controllo di Lync Server è possibile creare, modificare o eliminare una subnet di rete. Per informazioni dettagliate sulla creazione o la modifica delle subnet di rete, vedere [creare o modificare subnet di rete in Lync Server 2013](lync-server-2013-create-or-modify-network-subnets.md).
+È possibile utilizzare la procedura seguente per eliminare una subnet. Dal pannello di controllo di Lync Server, è possibile creare, modificare o eliminare una subnet di rete. Per informazioni dettagliate sulla creazione o la modifica di subnet di rete, vedere [creare o modificare le subnet di rete in Lync Server 2013](lync-server-2013-create-or-modify-network-subnets.md).
 
-Nella maggior parte delle distribuzioni di Microsoft Lync Server 2013 in cui viene implementato il controllo di ammissione di chiamata (CAC), in genere esiste un numero elevato di subnet. Per questo motivo, è spesso consigliabile configurare subnet da Lync Server Management Shell. Da lì è possibile chiamare **New-CsNetworkSubnet** in combinazione con il cmdlet di Windows PowerShell **Import-CSV**. Usando questi cmdlet insieme, è possibile leggere le impostazioni della subnet da un file con valori delimitati da virgole (CSV) e creare più subnet contemporaneamente. Per esempi su come creare subnet da un file CSV, vedere [New-CsNetworkSubnet](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkSubnet).
+Nella maggior parte delle distribuzioni di Microsoft Lync Server 2013 in cui è implementato il controllo di ammissione di chiamata (CAC), in genere vi sarà un numero elevato di subnet. Per questo motivo, è spesso preferibile configurare le subnet da Lync Server Management Shell. Da questa pagina è possibile chiamare **New-CsNetworkSubnet** in combinazione con il cmdlet **Import-CSV**di Windows PowerShell. Se si utilizzano questi cmdlet insieme, è possibile leggere le impostazioni della subnet da un file con valori delimitati da virgole (con estensione CSV) e creare più subnet contemporaneamente. Per esempi su come creare subnet da un file CSV, vedere [New-CsNetworkSubnet](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkSubnet).
 
 <div>
 
 ## <a name="to-delete-a-network-subnet"></a>Per eliminare una subnet di rete
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **Subnet**.
+3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Subnet**.
 
-4.  Nella pagina **subnet** fare clic sulla subnet che si desidera eliminare.
+4.  Nella pagina **Subnet** fare clic sulla subnet che si desidera eliminare.
     
     <div>
     
 
     > [!NOTE]  
-    > Puoi eliminare più di una subnet alla volta. A questo scopo, premere CTRL e selezionare più subnet tenendo premuto CTRL. In alternativa, per selezionare tutte le subnet, fare clic su <STRONG>Seleziona tutto</STRONG> dal menu <STRONG>modifica</STRONG> .
+    > È possibile eliminare più subnet contemporaneamente. A tale scopo, tenere premuto CTRL e selezionare le diverse subnet. In alternativa, per selezionare tutte le subnet, scegliere <STRONG>Seleziona tutto</STRONG> dal menu <STRONG>Modifica</STRONG>.
 
     
     </div>
 
-5.  Scegliere **Elimina**dal menu **modifica** .
+5.  Scegliere **Elimina** dal menu **Modifica**.
 
 6.  Fare clic su **OK**.
 
@@ -73,7 +73,7 @@ Nella maggior parte delle distribuzioni di Microsoft Lync Server 2013 in cui vie
 ## <a name="see-also"></a>Vedere anche
 
 
-[Creare o modificare subnet di rete in Lync Server 2013](lync-server-2013-create-or-modify-network-subnets.md)  
+[Creare o modificare le subnet di rete in Lync Server 2013](lync-server-2013-create-or-modify-network-subnets.md)  
   
 
 </div>

@@ -12,20 +12,20 @@ ms:contentKeyID: 48184302
 ms.date: 12/10/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: eba5a563612a395a7f252aecb5992a64d04b5221
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b60f2cb767dc37d06c2c55547b0bf8cfae366cc4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725166"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050568"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-lync-server-2013"></a>Pianificazione per Lync Server 2013
+# <a name="planning-for-lync-server-2013"></a>Planning for Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41725166"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-12-09_
+_**Ultimo argomento modificato:** 2014-12-09_
 
-Negli argomenti di questa sezione viene descritto come pianificare una distribuzione di Lync Server corretta.
+Negli argomenti di questa sezione viene descritto come pianificare una distribuzione di Lync Server con esito positivo.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Pianificazione per l'organizzazione per Lync Server 2013](lync-server-2013-planning-for-your-organization.md)
+  - [Pianificazione dell'organizzazione per Lync Server 2013](lync-server-2013-planning-for-your-organization.md)
 
   - [Determinazione dei requisiti dell'infrastruttura per Lync Server 2013](lync-server-2013-determining-your-infrastructure-requirements.md)
 
@@ -53,11 +53,11 @@ Negli argomenti di questa sezione viene descritto come pianificare una distribuz
 
   - [Pianificazione per la disponibilità elevata e il ripristino di emergenza in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md)
 
-  - [Pianificazione della gestibilità e della virtualizzazione in Lync Server 2013](lync-server-2013-planning-for-manageability-and-virtualization.md)
+  - [Pianificazione per la gestibilità e la virtualizzazione in Lync Server 2013](lync-server-2013-planning-for-manageability-and-virtualization.md)
 
-  - [Pianificazione di Front End Server, messaggistica istantanea e presenza in Lync Server 2013](lync-server-2013-planning-for-front-end-servers-instant-messaging-and-presence.md)
+  - [Pianificazione di front end server, messaggistica istantanea e presenza in Lync Server 2013](lync-server-2013-planning-for-front-end-servers-instant-messaging-and-presence.md)
 
-  - [Pianificazione dei servizi di conferenza in Lync Server 2013](lync-server-2013-planning-for-conferencing.md)
+  - [Pianificazione per le conferenze in Lync Server 2013](lync-server-2013-planning-for-conferencing.md)
 
   - [Pianificazione dell'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-planning-for-external-user-access.md)
 
@@ -71,11 +71,11 @@ Negli argomenti di questa sezione viene descritto come pianificare una distribuz
 
   - [Pianificazione dell'integrazione di Exchange Server con Lync Server 2013](lync-server-2013-planning-for-exchange-server-integration.md)
 
-  - [Pianificazione per client e dispositivi in Lync Server 2013](lync-server-2013-planning-for-clients-and-devices.md)
+  - [Pianificazione di client e dispositivi in Lync Server 2013](lync-server-2013-planning-for-clients-and-devices.md)
 
   - [Pianificazione del controllo delle chiamate remote in Lync Server 2013](lync-server-2013-planning-for-remote-call-control.md)
 
-  - [Pianificazione della versione per dispositivi mobili in Lync Server 2013](lync-server-2013-planning-for-mobility.md)
+  - [Pianificazione della funzionalità per dispositivi mobili in Lync Server 2013](lync-server-2013-planning-for-mobility.md)
 
   - [Pianificazione della sicurezza in Lync Server 2013](lync-server-2013-planning-for-security.md)
 

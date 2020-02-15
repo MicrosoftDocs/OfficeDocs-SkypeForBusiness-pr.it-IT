@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare la crittografia multimediale per i provider pubblici'
+title: 'Lync Server 2013: configurare la crittografia multimediale per i provider pubblici'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185036
 ms.date: 12/13/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6d4ab36d19726a6092f978a2ac2a119b248cd0f8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8f1775a845c10797d145c7ee1ad5def3af729f4f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758394"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038248"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41758394"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-12-12_
+_**Ultimo argomento modificato:** 2014-12-12_
 
-Se stai implementando una Federazione audio/video (A/V) con Windows Live Messenger, devi modificare due parametri: il livello di crittografia del server Lync e i criteri di EnablePublicCloudAccess. Per impostazione predefinita, il livello di crittografia è impostato su obbligatorio. È necessario modificare questa impostazione in supported. Se il criterio EnablePublicCloudAccess è impostato su false, deve essere impostato su **true**. Puoi eseguire questa operazione da Lync Server Management Shell.
+Se si sta implementando la Federazione audio/video (A/V) con Windows Live Messenger, sono disponibili due parametri che è necessario modificare: il livello di crittografia di Lync Server e i criteri di EnablePublicCloudAccess. Per impostazione predefinita, il livello di crittografia è impostato su RequireEncryption. È necessario impostarlo su SupportEncryption. Se il criterio EnablePublicCloudAccess è impostato su False, deve essere impostato su **True**. È possibile eseguire questa operazione da Lync Server Management Shell.
 
 <div>
 
-## <a name="configure-federation-for-windows-live"></a>Configurare la Federazione per Windows Live
+## <a name="configure-federation-for-windows-live"></a>Configurare la federazione per Windows Live
 
-1.  Avviare Lync Server Management Shell nel server front-end: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+1.  Avviare Lync Server Management Shell nel front end server: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi **Lync Server Management Shell**.
 
-2.  Dal prompt dei comandi digitare i comandi seguenti:
+2.  Al prompt dei comandi digitare i comandi seguenti:
     
        ```powershell
         Set-CsMediaConfiguration -EncryptionLevel SupportEncryption
@@ -59,7 +59,7 @@ Se stai implementando una Federazione audio/video (A/V) con Windows Live Messeng
     
 
     > [!NOTE]  
-    > Questo è il passaggio necessario perché Windows Live Messenger non supporta la crittografia di audio/video. Il comando imposta il criterio globale su un'impostazione di crittografia del supporto invece di richiedere la crittografia dei dati audio/video. I client che supportano la crittografia continueranno a usare la crittografia, ad esempio Lync 2013.
+    > Questo passaggio è necessario perché Windows Live Messenger non supporta la crittografia dei dati audio/video. Il comando configura il criterio globale su un'impostazione di crittografia supportata anziché di crittografia richiesta per tali dati. I client che supportano la crittografia utilizzeranno comunque la crittografia, ad esempio Lync 2013.
 
     
     </div>

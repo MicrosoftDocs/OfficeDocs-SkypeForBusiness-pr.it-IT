@@ -12,16 +12,16 @@ ms:contentKeyID: 63969618
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dd6e60749e35c9680300925f07e84d98d675884c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: abd6af0af5722d05d7439ac262ff36e62d2b12e1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730206"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043958"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,49 +35,49 @@ ms.locfileid: "41730206"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-08-18_
+_**Ultimo argomento modificato:** 2014-08-18_
 
-Le modifiche apportate all'ambiente IT sono inevitabili. Le modifiche includono nuove tecnologie, sistemi, applicazioni, hardware, strumenti, processi e modifiche dei ruoli e delle responsabilità. Un sistema di gestione delle modifiche efficace consente di apportare modifiche all'ambiente IT in modo rapido e con interruzioni minime del servizio. Un sistema di gestione delle modifiche riunisce i team coinvolti nella modifica di un sistema. Ad esempio, decidendo di sfruttare le app di Office Web Apps. Si tratta di un'applicazione di servizio Lync integrata che consente agli utenti di leggere e modificare documenti in un browser. L'implementazione di questo servizio, dopo aver effettuato la produzione, richiede il coinvolgimento di più team:
+Le modifiche apportate all'ambiente IT sono inevitabili. Le modifiche includono nuove tecnologie, sistemi, applicazioni, hardware, strumenti, processi e modifiche dei ruoli e delle responsabilità. Un sistema di gestione delle modifiche efficace consente di introdurre modifiche all'ambiente IT in modo rapido e con interruzioni minime del servizio. Un sistema di gestione delle modifiche riunisce i team coinvolti nella modifica di un sistema. Ad esempio, decidere di usufruire di Office Web Apps. Si tratta di un'applicazione di servizio Lync integrata che consente agli utenti di leggere e modificare documenti in un browser. L'implementazione di questo servizio, dopo aver effettuato la produzione, richiede la partecipazione di più team:
 
-  - **Test team**   questo team carica il test di Office Web Apps in un server di test, nel processo che fornisce informazioni sui modelli di utilizzo previsti e sulle prestazioni previste dei server di produzione.
+  - **Team di testing**   questo team carica i test di Office Web Apps in un server di testing, nel processo che fornisce informazioni sui modelli di utilizzo previsti e sulle prestazioni previste dei server di produzione.
 
-  - **Amministratori di Lync**   questo team determina la strategia di distribuzione e gli script per l'installazione in cui è stato possibile. Il team è responsabile per assicurarsi che la modifica venga distribuita nell'ambiente di produzione ed è responsabile dell'amministrazione in seguito. Il team deve comprendere l'effetto delle modifiche e incorporarle nelle procedure prima che le modifiche vengano inserite in produzione
+  - **Amministratori di Lync**   questo team determina la strategia di distribuzione e gli script dell'installazione in cui era possibile. Il team è responsabile del fatto che la modifica venga distribuita nell'ambiente di produzione ed è responsabile dell'amministrazione in seguito. Il team deve comprendere l'effetto delle modifiche e inserirle nelle procedure prima che le modifiche vengano inserite in produzione
 
-  - **Team di rete**   questo team è responsabile delle modifiche apportate alle regole del firewall che consentono l'accesso da Internet ai server di pool Lync interni. Il team è inoltre responsabile dell'uso degli amministratori di Lync per verificare che la larghezza di banda disponibile possa supportare il caricamento aggiuntivo.
+  - **Team di rete**   questo team è responsabile delle modifiche apportate alle regole del firewall che consentono l'accesso da Internet ai server del pool Lync interni. Il team è anche responsabile di collaborare con gli amministratori di Lync per garantire che la larghezza di banda disponibile sia in grado di supportare il carico aggiuntivo.
 
-  - **Team di sicurezza**   questo team valuta la sicurezza e minimizza i rischi. Il team di sicurezza deve rivedere le vulnerabilità note e garantire che i rischi per la sicurezza vengano minimizzati.
+  - **Team di sicurezza**   questo team valuta la sicurezza e riduce al minimo i rischi. Il team di sicurezza deve esaminare le vulnerabilità note e garantire che i rischi per la sicurezza vengano minimizzati.
 
-  - **Team di accettazione utente**   questo team è composto da utenti che vogliono testare il sistema e offrire feedback per migliorare.
+  - **Team di accettazione utente**   questo team è composto da utenti che sono disposti a testare il sistema e a offrire commenti e suggerimenti per i miglioramenti.
 
-Il processo di gestione delle modifiche definisce le responsabilità di ogni team e pianifica il lavoro da eseguire, incorporando i controlli e i test in cui sono necessari. I controlli di modifica variano a seconda della complessità e dell'effetto previsto di una modifica. Possono variare da approvazione automatica delle modifiche secondarie, per modificare le riunioni di revisione, a tutte le revisioni a livello di progetto. Per spiegarlo meglio, i gruppi di modifiche vengono discussi in questa sezione.
+Il processo di gestione delle modifiche definisce le responsabilità di ogni team e pianifica il lavoro da eseguire, includendo i controlli e i test in cui sono necessari. I controlli delle modifiche variano in base alla complessità e all'effetto atteso di una modifica. Possono variare dall'approvazione automatica delle modifiche di lieve entità, per modificare le riunioni di revisione, per visualizzare le recensioni complete a livello di progetto. Per spiegarlo meglio, i gruppi di modifiche sono descritti in questa sezione.
 
-  - **Modifiche**   principali le modifiche principali hanno un effetto globale sul sistema e potrebbero richiedere l'input di vari team. Un esempio di questa operazione è l'aggiornamento a Lync Server 2013. Le modifiche principali riguardano molti team e forse sistemi diversi. Il processo di gestione delle modifiche includerà probabilmente una o più riunioni di revisione delle modifiche per informare i team che saranno coinvolti nella modifica o essere interessati dalla modifica.
+  - **Modifiche principali le**   modifiche principali hanno un effetto globale sul sistema e possono richiedere input da vari team. Un esempio di questo è l'aggiornamento a Lync Server 2013. Le modifiche importanti riguardano molte squadre e sistemi diversi. Il processo di gestione delle modifiche probabilmente includerà una o più riunioni di revisione delle modifiche per informare i team che saranno coinvolti nella modifica o essere interessati dalla modifica.
 
-  - **Modifiche**   significative le modifiche significative richiedono risorse significative per pianificare, creare e implementare. I controlli di modifica appropriati devono essere introdotti per garantire che l'effetto della modifica venga compreso, che le procedure di distribuzione vengano testate e che i piani di rollback e di emergenza siano pronti. Un esempio di modifica significativa consiste nel distribuire un nuovo aggiornamento cumulativo.
+  - **Modifiche**   significative le modifiche significative richiedono risorse significative per la pianificazione, la creazione e l'implementazione. È opportuno introdurre controlli di modifica adeguati per garantire che l'effetto della modifica venga compreso, che vengano verificate le procedure di distribuzione e che i piani di ripristino e di emergenza siano pronti. Un esempio di modifica significativa consiste nella distribuzione di un nuovo aggiornamento cumulativo.
 
-  - **Modifiche**   minori le modifiche minime non influiscono in modo significativo sull'ambiente IT, ad esempio modificando determinati criteri di Lync tramite il pannello di controllo di Microsoft Lync Server 2013.
+  - **Modifiche secondarie**   le modifiche minime non influiscono in modo significativo sull'ambiente IT, ad esempio modificando alcuni criteri di Lync tramite il pannello di controllo di Microsoft Lync Server 2013.
 
-  - **Modifiche standard le**   modifiche standard vengono eseguite regolarmente e sono ben comprese e documentate. Il processo di gestione delle modifiche dovrebbe rivedere tutte le modifiche apportate alle procedure. Non dovrebbe essere necessario per le modifiche di routine come la creazione di un database del contenuto o l'aggiunta di un utente.
+  - **Modifiche standard le**   modifiche standard vengono eseguite regolarmente e sono ben comprese e documentate. Il processo di gestione delle modifiche dovrebbe esaminare tutte le modifiche apportate alle procedure. Non dovrebbe essere necessario per le modifiche di routine come la creazione di un database del contenuto o l'aggiunta di un utente.
 
-Il seguente esempio di gestione delle modifiche esamina il modo in cui i diversi team interagiscono e le azioni che vengono eseguite quando viene distribuito un nuovo Service Pack. Queste azioni vengono organizzate e gestite dal processo di gestione delle modifiche.
+Nell'esempio seguente di gestione delle modifiche viene esaminato il modo in cui i diversi team interagiscono e le azioni eseguite quando si distribuisce un nuovo Service Pack. Queste azioni vengono organizzate e gestite dal processo di gestione delle modifiche.
 
-  - **Sollevare una richiesta**   di modifica il team di sicurezza ha valutato il Service Pack più recente e ha confermato che risolve una possibile vulnerabilità nel sistema di produzione. Il team genera una richiesta di modifica per applicare il nuovo aggiornamento cumulativo a tutti i server che esegue Lync Server.
+  - **Sollevare una richiesta**   di modifica il team di sicurezza ha valutato il Service Pack più recente e ha confermato che risolve una possibile vulnerabilità nel sistema di produzione. Il team genera una richiesta di modifica per fare in modo che il nuovo aggiornamento cumulativo venga applicato a tutti i server che eseguono Lync Server.
 
-  - **Note sulla versione del Service Pack rivedere**   il team di amministrazione di Lync esamina le note sulla versione del Service Pack per identificare l'effetto sul sistema.
+  - **Note sulla versione del Service Pack esaminare**   il team di amministrazione di Lync esamina le note sulla versione del Service Pack per identificare l'effetto sul sistema.
 
-  - **Viene eseguita**   una serie di test di laboratorio il team di amministrazione di Lync deve eseguire gli aggiornamenti di test in un server in un ambiente di test per decidere se il Service Pack può essere applicato correttamente senza influire su nessuna delle applicazioni e dei sistemi server installati. Se sono presenti applicazioni di terze parti o create internamente che si interfacciano con Lync Server in un ambiente di produzione, queste devono essere anche testate. Questi test possono essere usati anche per stimare il tempo necessario per eseguire gli aggiornamenti.
+  - **Viene eseguita**   una serie di test di laboratorio il team di amministrazione di Lync deve eseguire gli aggiornamenti dei test su un server in un ambiente di testing per decidere se il Service Pack può essere applicato con esito positivo senza influire su nessuna delle applicazioni installate e sui sistemi server. Se sono presenti applicazioni di terze parti o create internamente che si interfacciano con Lync Server in un ambiente di produzione, queste devono essere testate anche. Questi test possono anche essere utilizzati per stimare il tempo necessario per l'esecuzione degli aggiornamenti.
 
-  - **Gli utenti vengono informati dell'interruzione**   del team di amministrazione di Lync, del team di comunicazioni o dell'help desk dell'utente informa tutti gli utenti interessati sul ciclo di manutenzione pianificato e per quanto tempo il servizio non sarà disponibile.
+  - **Gli utenti vengono informati dell'interruzione**   del team di amministrazione di Lync, del team di comunicazione o dell'help desk dell'utente per informare tutti gli utenti coinvolti sul ciclo di manutenzione pianificato e per quanto tempo il servizio non sarà disponibile.
 
-  - **Per eseguire il backup completo di Lync prima dell'aggiornamento**   , il team di amministrazione di Lync deve verificare che sia presente un backup valido che può essere usato per ripristinare lo stato del sistema originale se l'installazione del Service Pack non riesce. È consigliabile che il backup venga ripristinato in un server di standby per avere questo sistema prontamente disponibile in caso di problemi.
+  - **Prima dell'aggiornamento**   , il team di amministrazione di Lync deve verificare che sia presente un backup valido che può essere utilizzato per ripristinare lo stato del sistema originale se l'installazione del Service Pack ha esito negativo. È consigliabile ripristinare il backup su un server di standby in modo che il sistema sia prontamente disponibile in caso di problemi.
 
-  - **L'aggiornamento cumulativo viene distribuito**   il team di amministrazione di Lync esegue l'installazione durante il ciclo di manutenzione pianificato.
+  - **L'aggiornamento cumulativo è distribuito**   il team di amministrazione di Lync esegue l'installazione durante il ciclo di manutenzione pianificato.
 
 <div>
 
-## <a name="managing-the-timing-of-changes"></a>Gestione dell'intervallo delle modifiche
+## <a name="managing-the-timing-of-changes"></a>Gestione della tempistica delle modifiche
 
-È consigliabile implementare una procedura per la pianificazione delle modifiche per evitare interruzioni nelle sezioni sovrapposte del lavoro. Ad esempio, due team possono pianificare una modifica minore di un sistema. Un team può applicare un aggiornamento cumulativo in un pool mentre un altro team sta migrando gli utenti legacy in tale pool. Nessuno dei due team è influenzato dalle modifiche che l'altro team sta pianificando e ogni team potrebbe non conoscere necessariamente le modifiche che l'altro team sta pianificando. Se entrambe le modifiche si verificano contemporaneamente, potrebbero verificarsi problemi di implementazione delle modifiche. Inoltre, in caso di problemi dopo l'applicazione delle modifiche, ad esempio se la migrazione degli utenti non riesce, potrebbe essere difficile decidere quale modifica deve essere ripristinata. Devono essere configurati periodi di manutenzione regolari tra l'IT e la gestione per testare le modifiche e accettarle.
+È consigliabile implementare una procedura per la pianificazione delle modifiche per evitare interruzioni nelle sezioni sovrapposte del lavoro. Ad esempio, due team possono entrambi pianificare una modifica di minore entità in un sistema. Un team potrebbe applicare un aggiornamento cumulativo in un pool mentre un altro team sta migrando gli utenti legacy in quel pool. Nessuna squadra è intaccata dalle modifiche che l'altro team sta pianificando e ogni team potrebbe non essere necessariamente a conoscenza delle modifiche che l'altro team sta pianificando. Se entrambe le modifiche sono state eseguite contemporaneamente, potrebbero verificarsi problemi nell'implementazione delle modifiche. Inoltre, se si verificano problemi dopo l'applicazione delle modifiche, ad esempio se la migrazione degli utenti ha esito negativo, potrebbe essere difficile decidere quale modifica deve essere ripristinata. I periodi di manutenzione devono essere configurati tra l'IT e la gestione per testare le modifiche e accettarle.
 
 </div>
 

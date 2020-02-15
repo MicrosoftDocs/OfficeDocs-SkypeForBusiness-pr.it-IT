@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Progettare i flussi di chiamate del sistema IVR (Interactive Voice Response)'
+title: 'Lync Server 2013: flussi di chiamate di risposta vocale interattive'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185826
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dd53ac8d06ec336940abe53d7da1353faf4f9414
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ff6587c2dc70a638d1db670205fb5bfde452e499
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762524"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042153"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="design-interactive-voice-response-call-flows-in-lync-server-2013"></a>Progettare i flussi di chiamate del sistema IVR (Interactive Voice Response) in Lync Server 2013
+# <a name="design-interactive-voice-response-call-flows-in-lync-server-2013"></a>Progettare flussi di chiamate di risposta vocale interattivi in Lync Server 2013
 
 </div>
 
@@ -35,107 +35,107 @@ ms.locfileid: "41762524"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-25_
+_**Ultimo argomento modificato:** 2013-02-25_
 
-Puoi usare la risposta vocale interattiva (IVR) per ottenere informazioni dai chiamanti e indirizzare la chiamata alla coda appropriata. Le coppie domande e risposte determinano la coda da usare. A seconda della risposta del chiamante, il chiamante sente una domanda di completamento o viene instradato alla coda appropriata. Le domande IVR e le risposte del chiamante vengono fornite all'agente che risponde che accetta la chiamata, fornendo informazioni preziose all'agente.
+È possibile utilizzare Interactive Voice Response (IVR) per ottenere informazioni dai chiamanti e indirizzare la chiamata verso la coda appropriata. Coppie di domande e risposte stabiliscono la coda da utilizzare. A seconda della risposta, il chiamante ascolterà una domanda aggiuntiva oppure verrà instradato alla coda appropriata. Le domande del sistema IVR e le risposte del chiamante vengono fornite all'agente addetto alla risposta che accetta la chiamata, fornendo importanti informazioni all'agente.
 
 <div>
 
-## <a name="overview-of-ivr-features"></a>Panoramica delle funzionalità IVR
+## <a name="overview-of-ivr-features"></a>Panoramica delle funzionalità del sistema IVR
 
-L'applicazione Response Group offre funzionalità di riconoscimento vocale e di sintesi vocale in 26 lingue. È possibile immettere domande IVR usando un file di sintesi vocale o Wave (con estensione wav) o Windows Media Audio (con estensione WMA). I chiamanti possono rispondere usando le risposte DTMF (Voice o Dual-Tone Multifrequency).
+L'applicazione Response Group offre funzionalità di riconoscimento vocale e di sintesi vocale in 26 lingue. È possibile immettere domande IVR utilizzando la sintesi vocale oppure un file WAVE (WAV) o Windows Media Audio (WMA). I chiamanti possono rispondere tramite input vocale o multifrequenza (DTMF, Dual-Tone Multi-Frequency).
 
-I flussi di lavoro interattivi supportano fino a due livelli di domande, con ogni domanda che contiene fino a quattro possibili risposte. Il IVR chiede una domanda al chiamante e, a seconda della risposta del chiamante, instrada il chiamante in una coda o pone una seconda domanda. La seconda domanda può anche avere quattro risposte possibili. A seconda della risposta alla domanda di secondo livello, il chiamante viene indirizzato alla coda appropriata.
+I flussi di lavoro interattivi supportano fino a due livelli di domande, con ogni domanda che prevede fino a quattro possibili risposte. Il sistema IVR rivolge al chiamante una domanda e, in base alla risposta del chiamante, lo instrada verso una coda oppure pone una seconda domanda. Anche la seconda domanda prevede quattro possibili risposte. A seconda della risposta alla domanda di secondo livello, il chiamante verrà instradato alla coda appropriata.
 
 <div>
 
 
 > [!NOTE]  
-> Quando si progetta il flusso delle chiamate tramite Lync Server Management Shell, è possibile definire qualsiasi livello numerico di domande IVR e qualsiasi numero di risposte. Tuttavia, per l'usabilità del chiamante, ti consigliamo di non usare più di tre livelli di domande, con non più di cinque risposte ciascuna. Inoltre, se si progetta un flusso di chiamata con più di due livelli di domande con più di quattro risposte, non è possibile modificare il flusso delle chiamate usando il pannello di controllo di Lync Server 2013.
+> Quando si progettano flussi di chiamata utilizzando Lync Server Management Shell, è possibile definire i livelli di numero di domande IVR e qualsiasi numero di risposte. Tuttavia, per la facilità di utilizzo del chiamante, è consigliabile non utilizzare più di tre livelli di domande, con non più di cinque risposte per ognuno. Inoltre, se si progetta un flusso di chiamata con più di due livelli di domande con più di quattro risposte ciascuna, non è possibile modificare il flusso di chiamata utilizzando il pannello di controllo di Lync Server 2013.
 
 
 
 </div>
 
-Le domande IVR e le risposte del chiamante vengono fornite all'agente che risponde che accetta la chiamata.
+Le domande del sistema IVR e le risposte del chiamante vengono fornite all'agente addetto alla risposta quando accetta la chiamata.
 
 </div>
 
 <div>
 
-## <a name="working-with-speech-technologies"></a>Uso delle tecnologie per la sintesi vocale
+## <a name="working-with-speech-technologies"></a>Utilizzo di tecnologie vocali
 
-Le tecnologie vocali, ad esempio il riconoscimento vocale e la sintesi vocale, possono migliorare l'esperienza dei clienti e consentire agli utenti di accedere alle informazioni in modo più naturale ed efficace. Tuttavia, possono esserci casi in cui il testo specificato o la risposta vocale dell'utente non vengono riconosciuti correttamente dal motore vocale. Ad esempio, il simbolo\#"" viene tradotto dal motore di sintesi vocale come parola "numero". Questo problema può essere mitigato dalle operazioni seguenti:
+Le tecnologie vocali, quali il riconoscimento vocale e la sintesi vocale, consentono di ottimizzare l'esperienza utente e di accedere alle informazioni in modo più naturale ed efficace. Vi sono alcuni casi, tuttavia, in cui il testo specificato e/o la risposta vocale dell'utente non vengono riconosciuti correttamente dal motore di sintesi vocale. Ad esempio, il simbolo\#"" viene convertito dal motore di sintesi vocale come parola "Number". È possibile correggere questo problema nel modo seguente:
 
-  - Il motore vocale assegna al chiamante cinque tentativi per rispondere alla domanda. Se il chiamante risponde alla domanda in modo non corretto (ovvero la risposta non è una delle risposte specificate) o non fornisce una risposta, il chiamante riceverà un'altra opportunità per rispondere alla domanda. Il chiamante ha cinque tentativi per rispondere alla domanda prima di essere disconnessa. Puoi configurare il IVR per riprodurre un messaggio personalizzato dopo ogni errore del chiamante. La domanda viene ripetuta ogni volta.
+  - Il motore di sintesi vocale consente al chiamante quattro tentativi per rispondere alla domanda. Se il chiamante risponde in modo errato alla domanda, ovvero la risposta non è una di quelle specificate, oppure non fornisce alcuna risposta, ottiene un'altra possibilità di rispondere. Il chiamante ha a disposizione cinque tentativi per rispondere alla domanda prima di essere disconnesso. È possibile configurare il sistema IVR per riprodurre un messaggio personalizzato dopo ogni errore del chiamante. La domanda viene ripetuta ogni volta.
 
-  - Per ridurre al minimo la possibilità di interpretare il rumore ambientale dal motore vocale come risposta, usare risposte più lunghe. Ad esempio, le risposte dovrebbero avere più di una sillaba e dovrebbero sembrare molto diverse tra loro.
+  - Per ridurre la possibilità che il rumore ambientale venga interpretato come una risposta dal motore di sintesi vocale, utilizzare risposte più lunghe. Ad esempio, le risposte dovrebbero essere costituite da più di una sillaba e devono avere suoni diversi tra loro.
 
-  - Se le domande hanno risposte sia vocali che DTMF, configurare le risposte vocali con parole che rappresentano il concetto piuttosto che la risposta DTMF. Ad esempio, invece di usare "premi o pronuncia uno" USA "premi 1 o pronuncia fatturazione".
+  - Se le domande prevedono risposte vocali e DTMF, configurare le risposte vocali con parole che rappresentano il concetto anziché la risposta DTMF. Ad esempio, anziché "Premere o dire uno" utilizzare "Premere 1 o dire fatturazione".
 
-  - Dopo aver progettato il tuo IVR, chiama il flusso di lavoro, ascolta le richieste, Rispondi a ogni prompt usando la voce e verifica che i suoni IVR e si comportano come previsto. Puoi quindi modificare il IVR per risolvere eventuali problemi di interpretazione. Dopo l'esempio precedente, se è necessario fare riferimento alla \# chiave, è possibile riscrivere il prompt di IVR per usare il nome della chiave anziché il \# simbolo. Ad esempio, "per comunicare con le vendite, premi il tasto cancelletto".
-
-</div>
-
-<div>
-
-## <a name="ivr-design-examples"></a>Esempi di progettazione IVR
-
-Le sezioni seguenti contengono esempi di diversi scenari IVR e coppie domande e risposte.
-
-<div>
-
-## <a name="ivr-with-one-level-of-questions"></a>IVR con un livello di domande
-
-L'esempio seguente mostra un IVR che usa un livello di domande. Usa il riconoscimento vocale per rilevare la risposta del chiamante.
-
-**Domanda:** "Grazie per aver chiamato le risorse umane. Se si vuole parlare con il libro paga, dire libro paga. In caso contrario, dire HR. "
-
-  - L' **opzione 1 è selezionata:** Il chiamante viene indirizzato al team paghe.
-
-  - **Opzione 2 selezionata:** Il chiamante viene indirizzato al team risorse umane.
-
-La figura seguente mostra il flusso delle chiamate.
-
-**Flusso delle chiamate interattive a un livello**
-
-![Progettare flussi di chiamate tramite il sistema IVR (Interactive Voice Response)](images/Gg413020.4820a9f7-b5b0-4831-b972-baae0c015ec1(OCS.15).jpg "Progettare flussi di chiamate tramite il sistema IVR (Interactive Voice Response)")
+  - Dopo avere progettato il sistema IVR, chiamare il flusso di lavoro, ascoltare le richieste, fornire risposte vocali a ognuna delle richieste e verificare che il sistema funzioni nel modo previsto. È quindi possibile modificare il sistema IVR per correggere eventuali errori di interpretazione. Dopo l'esempio precedente, se è necessario fare riferimento alla \# chiave, è possibile riscrivere il prompt di IVR per utilizzare il nome della chiave anziché il \# simbolo. Ad esempio, "Per parlare con il reparto vendite, premere cancelletto".
 
 </div>
 
 <div>
 
-## <a name="ivr-with-two-levels-of-questions"></a>IVR con due livelli di domande
+## <a name="ivr-design-examples"></a>Esempi di progettazione del sistema IVR
 
-L'esempio seguente mostra un IVR che usa due livelli di domande. Consente ai chiamanti di rispondere usando l'input della tastiera vocale o DTMF.
+Nelle sezioni seguenti sono riportati gli esempi di diversi scenari IRV e coppie di domande/risposte.
 
-**Domanda:** "Grazie per aver chiamato l'help desk IT. Se si ha un problema di accesso alla rete, premere 1 o Say Network. Se si ha un problema con il software, premere 2 o dire software. Se si ha un problema hardware, premere 3 o dire hardware.
+<div>
 
-  - L' **opzione 1 è selezionata:** Il chiamante viene indirizzato al team di supporto della rete.
+## <a name="ivr-with-one-level-of-questions"></a>Sistema IVR con un livello di domande
 
-  - **Opzione 2 selezionata:** Al chiamante viene posta una domanda di follow-up:
+Nell'esempio seguente è illustrato un sistema IVR con un singolo livello di domande. Il sistema utilizza il riconoscimento vocale per rilevare la risposta del chiamante.
+
+**Domanda:** "Grazie per aver chiamato il reparto Risorse umane. Se desidera parlare con la sezione addetta alle retribuzioni, dica retribuzioni. Altrimenti, dica risorse umane".
+
+  - **Viene selezionata l'opzione 1:** il chiamante viene instradato alla sezione addetta alle retribuzioni.
+
+  - **Viene selezionata l'opzione 2:** il chiamante viene instradato al reparto Risorse umane.
+
+Nella figura seguente viene illustrato il flusso delle chiamate.
+
+**Flusso di chiamate interattivo a un livello**
+
+![Progettare flussi di chiamate tramite il respo Interactive Voice](images/Gg413020.4820a9f7-b5b0-4831-b972-baae0c015ec1(OCS.15).jpg "Progettare flussi di chiamate tramite il respo Interactive Voice")
+
+</div>
+
+<div>
+
+## <a name="ivr-with-two-levels-of-questions"></a>Sistema IVR con due livelli di domande
+
+Nell'esempio seguente viene illustrato un sistema IVR con due livelli di domande. Il sistema consente ai chiamanti di rispondere tramite input vocale o DTMF con tastiera.
+
+**Domanda:** "Grazie per aver chiamato il supporto tecnico del reparto IT. Se il problema riguarda l'accesso di rete, prema 1 o dica Rete. Se il problema riguarda il software, prema 2 o dica Software. Se riguarda l'hardware, prema 3 o dica Hardware."
+
+  - **Viene selezionata l'opzione 1:** il chiamante viene instradato al team del supporto di rete.
+
+  - **Viene selezionata l'opzione 2:** al chiamante viene formulata un'altra domanda.
     
-    **Domanda:** "Se si tratta di un problema di sistema operativo, premere 1 o dire sistema operativo. Se si tratta di un problema con un'applicazione interna, premere 2 o dire applicazione interna. In caso contrario, premere 3 o dire altro.
+    **Domanda:** "Se il problema riguarda il sistema operativo, prema 1 o dica Sistema operativo. Se riguarda un'applicazione interna, prema 2 o dica Applicazione interna. Altrimenti, prema 3 o dica Altro".
     
-      - L' **opzione 1 è selezionata:** Il chiamante viene indirizzato al team di supporto dei sistemi operativi.
+      - **Viene selezionata l'opzione 1:** il chiamante viene instradato al team del supporto del sistema operativo.
     
-      - **Opzione 2 selezionata:** Il chiamante viene indirizzato al team di supporto delle applicazioni interne.
+      - **Viene selezionata l'opzione 2:** il chiamante viene instradato al team del supporto delle applicazioni interne.
     
-      - **Opzione 3 selezionata:** Il chiamante viene indirizzato al team di supporto software.
+      - **Viene selezionata l'opzione 3:** il chiamante viene instradato al team del supporto software.
 
-  - **Opzione 3 selezionata:** Al chiamante viene posta una domanda di follow-up:
+  - **Viene selezionata l'opzione 3:** al chiamante viene formulata un'altra domanda.
     
-    **Domanda:** "Se si tratta di un problema di stampante, premere 1. In caso contrario, premere 2. "
+    **Domanda:** "Se il problema riguarda una stampante, prema 1. Altrimenti, prema 2".
     
-      - L' **opzione 1 è selezionata:** Il chiamante viene indirizzato al team di supporto della stampante.
+      - **Viene selezionata l'opzione 1:** il chiamante viene instradato al team del supporto delle stampanti.
     
-      - **Opzione 2 selezionata:** Il chiamante viene indirizzato al team di supporto hardware.
+      - **Viene selezionata l'opzione 2:** il chiamante viene instradato al team del supporto hardware.
 
-La figura seguente mostra il flusso delle chiamate.
+Nella figura seguente viene illustrato il flusso delle chiamate.
 
-**Flusso delle chiamate interattive a due livelli**
+**Flusso di chiamate interattivo a due livelli**
 
-![Progettare flussi di chiamate tramite il sistema IVR (Interactive Voice Response)](images/Gg413020.a5b62083-312d-4419-898b-d1a225a5379f(OCS.15).jpg "Progettare flussi di chiamate tramite il sistema IVR (Interactive Voice Response)")
+![Progettare flussi di chiamate tramite il respo Interactive Voice](images/Gg413020.a5b62083-312d-4419-898b-d1a225a5379f(OCS.15).jpg "Progettare flussi di chiamate tramite il respo Interactive Voice")
 
 </div>
 
@@ -145,19 +145,19 @@ La figura seguente mostra il flusso delle chiamate.
 
 ## <a name="best-practices"></a>Procedure consigliate
 
-Nell'elenco seguente vengono illustrate alcune procedure consigliate per la progettazione del dispositivo IVR:
+Nell'elenco seguente vengono descritte alcune procedure consigliate nella progettazione del sistema IVR:
 
-  - Consentire al chiamante di accedere rapidamente all'attività. Evitare di fornire troppe informazioni o lunghi messaggi di marketing nel sistema IVR.
+  - Consentire al chiamante di selezionare l'attività rapidamente. Evitare di includere troppe informazioni o messaggi di marketing lunghi nel sistema IVR.
 
-  - Se si vuole includere un messaggio lungo, valutare la possibilità di accodarlo alla prima domanda anziché al messaggio di benvenuto. I chiamanti possono ignorare il messaggio se fa parte della prima domanda rispondendo alla domanda, ma non possono ignorare il messaggio di benvenuto.
+  - Se si desidera includere un messaggio lungo, è consigliabile aggiungerlo alla fine della prima domanda anziché dopo il messaggio iniziale. I chiamanti possono ignorare il messaggio se fa parte della prima domanda rispondendo alla domanda, ma non possono ignorare il messaggio iniziale.
 
-  - Parla nella lingua del chiamante. Evitare la lingua stilata. Parla in modo naturale.
+  - Parlare nella lingua del chiamante. Evitare uno stile formale e parlare in modo naturale.
 
-  - Scrivere richieste efficienti ed efficaci. Rimuovere eventuali opzioni non necessarie. Strutturare le informazioni in modo che la risposta prevista del chiamante si trovi alla fine della frase. Ad esempio, "per parlare con il team di vendita, premere 1".
+  - Scrivere domande efficienti ed efficaci. Rimuovere le opzioni non necessarie. Strutturare le informazioni in modo tale che la risposta prevista del chiamante sia alla fine della frase. Ad esempio, "Per parlare con il team vendite, prema 1".
 
-  - Rendere le risposte vocali intuitive. Ad esempio, se specifichi sia il DTMF che le risposte vocali, USA qualcosa di simile a: "per parlare con il team di vendita, premi 1 o pronuncia vendite".
+  - Scegliere risposte vocali semplici. Ad esempio, se si specificano sia risposte DTMF che risposte vocali, utilizzare "Per parlare con il team vendite, prema 1 o dica vendite".
 
-  - Testare il IVR su un gruppo di utenti prima di distribuirlo nell'organizzazione.
+  - Testare il sistema IVR con un gruppo di utenti prima di distribuirlo nell'intera organizzazione.
 
 </div>
 

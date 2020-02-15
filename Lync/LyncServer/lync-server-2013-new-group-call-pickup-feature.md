@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: nuova funzionalità di raccolta delle chiamate di gruppo'
+title: 'Lync Server 2013: nuova funzionalità di prelievo delle chiamate di gruppo'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541478
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0e42884d3880fa1a31c96d9a25676b5ceecd8313
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 566ef914236cfde9cb00c28c667189ebb6d1556f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758638"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048467"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="new-group-call-pickup-feature-in-lync-server-2013"></a>Nuova caratteristica raccolta chiamate di gruppo in Lync Server 2013
+# <a name="new-group-call-pickup-feature-in-lync-server-2013"></a>Nuova funzionalità di prelievo delle chiamate di gruppo in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41758638"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-12_
+_**Ultimo argomento modificato:** 2013-02-12_
 
-Aggiornamenti cumulativi per Lync Server 2013: febbraio 2013 introduce il pick-up delle chiamate di gruppo come nuova funzionalità VoIP aziendale. Con il ritiro delle chiamate di gruppo è possibile assegnare utenti ai gruppi in modo che altri utenti possano rispondere alle chiamate in arrivo agli utenti che si trovano nel gruppo dal proprio telefono.
+Aggiornamenti cumulativi per Lync Server 2013: febbraio 2013 introduce il prelievo delle chiamate di gruppo come nuova funzionalità VoIP aziendale. Con il prelievo delle chiamate di gruppo, è possibile assegnare gli utenti ai gruppi in modo che altri utenti possano rispondere alle chiamate in arrivo agli utenti che si trovano nel gruppo dai propri telefoni.
 
-Il ritiro delle chiamate di gruppo si basa sull'applicazione Call Park. Per il ritiro delle chiamate di gruppo, come per Call Park, è possibile impostare un intervallo di numeri virtuali da usare come numeri di gruppo. Un utente compone il numero di gruppo per prendere una chiamata che squilla per un altro utente che si trova nel gruppo.
+Il prelievo delle chiamate di gruppo si basa sull'applicazione Parcheggio di chiamata. Per il prelievo delle chiamate di gruppo, come per il parcheggio di chiamata, è necessario impostare un intervallo di numeri virtuali da utilizzare come numeri di gruppo. Un utente compone il numero del gruppo per prendere una chiamata che squilla per un altro utente che si trova nel gruppo.
 
 <div>
 

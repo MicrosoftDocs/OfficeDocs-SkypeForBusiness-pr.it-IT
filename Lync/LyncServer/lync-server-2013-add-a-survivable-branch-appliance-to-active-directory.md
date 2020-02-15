@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Aggiungere un Survivable Branch Appliance ad Active Directory'
+title: 'Lync Server 2013: aggiungere un Survivable Branch Appliance ad Active Directory'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183938
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8712dcb5b68522a8b770aac63c5a37a1a70a669a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: da38ead0e1d27ef1024d8aac2ea030d2815e6cad
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735066"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037848"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41735066"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-23_
+_**Ultimo argomento modificato:** 2012-09-23_
 
-Se si prevede di distribuire un Survivable Branch Appliance, è necessario aggiungere il Survivable Branch Appliance a servizi di dominio Active Directory. Eseguire questa procedura nel sito centrale.
+Se si prevede di distribuire un Survivable Branch Appliance, è necessario aggiungere il Survivable Branch Appliance ai servizi di dominio Active Directory. Eseguire questa procedura nel sito centrale.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Eseguire questa procedura solo se si sta distribuendo un Survivable Branch Appliance. Non eseguire questa operazione se si sta distribuendo un Survivable Branch Server.
+> Eseguire questa procedura solo se si sta distribuendo un Survivable Branch Appliance. Non eseguirlo se si sta distribuendo un Survivable Branch Server.
 
 
 
@@ -51,15 +51,15 @@ Se si prevede di distribuire un Survivable Branch Appliance, è necessario aggiu
 
 <div>
 
-## <a name="to-add-an-survivable-branch-appliance-to-active-directory-domain-services"></a>Per aggiungere un Survivable Branch Appliance a servizi di dominio Active Directory
+## <a name="to-add-an-survivable-branch-appliance-to-active-directory-domain-services"></a>Per aggiungere un Survivable Branch Appliance a Servizi di dominio Active Directory
 
-1.  Accedere a un server membro come membro del gruppo amministratori aziendali.
+1.  Eseguire l'accesso a un server membro come membro del gruppo Enterprise Admins.
 
-2.  Fare clic sul pulsante **Start**, scegliere **strumenti di amministrazione**e quindi fare clic su **utenti e computer di Active Directory**.
+2.  Fare clic sul pulsante **Start**, scegliere **Strumenti di amministrazione** e quindi **Utenti e computer di Active Directory**.
 
-3.  Nel menu **azioni** fare clic su **nuovo** e quindi su **computer**.
+3.  Scegliere **Nuovo** dal menu **Azioni** e quindi fare clic su **Computer**.
 
-4.  Nella finestra di dialogo **nuovo oggetto-computer** Digitare un nome per l'oggetto computer Survivable Branch Appliance, ad esempio BranchOffice1, e quindi fare clic su **Cambia**.
+4.  Nella finestra di dialogo **nuovo oggetto-computer** Digitare un nome per l'oggetto computer Survivable Branch Appliance (ad esempio, BranchOffice1), quindi fare clic su **Cambia**.
 
 5.  Nella finestra di dialogo **Seleziona utente o gruppo** aggiungere il gruppo RTCUniversalSBATechnicians e quindi fare clic su **OK**.
     
@@ -67,32 +67,32 @@ Se si prevede di distribuire un Survivable Branch Appliance, è necessario aggiu
     
 
     > [!NOTE]  
-    > Un membro del gruppo RTCUniversalSBATechnicians nel sito della filiale aggiungerà questo dispositivo al dominio in un secondo momento.
+    > Un membro del gruppo RTCUniversalSBATechnicians nel sito di succursale aggiungerà successivamente questo dispositivo al dominio.
 
     
     </div>
 
 6.  Fare clic su **OK** per salvare l'oggetto computer Survivable Branch Appliance.
 
-7.  Fare clic sul pulsante **Start**, scegliere **strumenti di amministrazione**e quindi fare clic su **Modifica ADSI**.
+7.  Fare clic sul pulsante **Start**, scegliere **Strumenti di amministrazione** e quindi **ADSI Edit**.
 
-8.  In **Modifica ADSI**fare clic con il pulsante destro del mouse sull'oggetto computer creato nei passaggi precedenti e quindi scegliere **Proprietà**.
+8.  In **ADSI Edit** fare clic con il pulsante destro del mouse sull'oggetto computer creato nei passaggi precedenti e quindi scegliere **Properties**.
 
-9.  Nell'elenco attributo fare clic su **servicePrincipalName**e quindi su **modifica**.
+9.  Nell'elenco degli attributi fare clic su **servicePrincipalName** e quindi su **Edit**.
 
-10. Nel campo **valore da aggiungere** \<digitare FQDN\> host/SBA in cui \<l'FQDN di\> SBA è il nome di dominio completo (FQDN) dell'appliance Survivable Branch. Ad esempio, digita **host/BranchOffice1. contoso. com**.
+10. Nel campo **valore da aggiungere** \<digitare FQDN\> host/SBA dove \<FQDN\> SBA è il nome di dominio completo (FQDN) del Survivable Branch Appliance. Digitare ad esempio **HOST/BranchOffice1.contoso.com**.
 
-11. Fare clic su **OK** per salvare l'impostazione dell'attributo **servicePrincipalName** e quindi fare clic su **OK** per salvare le proprietà dell'oggetto computer.
+11. Fare clic su **OK** per salvare l'impostazione dell'attributo **servicePrincipalName** e quindi su **OK** per salvare le proprietà dell'oggetto computer.
 
-12. In **utenti e computer di Active Directory**fare clic con il pulsante destro del mouse su **utenti**, scegliere **nuovo**e quindi fare clic su **utente**.
+12. In **Utenti e computer di Active Directory** fare clic con il pulsante destro del mouse su **Utenti**, scegliere **Nuovo** e quindi fare clic su **Utente**.
 
-13. Immettere le informazioni nella procedura guidata per creare un account utente di dominio per un tecnico Survivable Branch Appliance.
+13. Immettere le informazioni nella procedura guidata per creare un account utente di dominio per un Survivable Branch Appliance tecnico.
 
-14. In **utenti e computer di Active Directory**fare clic su **utenti**, fare clic con il pulsante destro del mouse sull'oggetto utente e quindi scegliere **Aggiungi a un gruppo**.
+14. In **Utenti e computer di Active Directory** fare clic su **Utenti**, fare clic con il pulsante destro del mouse sull'oggetto utente e quindi scegliere **Aggiungi a un gruppo**.
 
-15. In **immettere i nomi degli oggetti da selezionare**digitare **RTCUniversalSBATechnicians**e quindi fare clic su **OK**.
+15. In **Immettere i nomi degli oggetti da selezionare** digitare **RTCUniversalSBATechnicians** e quindi fare clic su **OK**.
 
-16. Ripetere i passaggi 12-15 per ogni tecnico del sito filiale.
+16. Ripetere i passaggi 12-15 per ogni tecnico del sito di succursale.
 
 **Passaggio successivo**: [aggiungere siti di succursale alla topologia in Lync Server 2013](lync-server-2013-add-branch-sites-to-your-topology.md)
 

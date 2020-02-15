@@ -12,16 +12,16 @@ ms:contentKeyID: 48185510
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1fcd6cb462bd64f6fdcdbae93cfb733de0639898
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 164c6e1541869a2976f283443f2fae9246f28007
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731916"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038858"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41731916"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-28_
+_**Ultimo argomento modificato:** 2012-09-28_
 
-SIPResponseMetaDataTable contiene un elenco di codici di risposta SIP e la classificazione e la definizione di ognuno di questi codici. Questi codici vengono generati in risposta agli eventi che interessano i dispositivi SIP e le sessioni di comunicazione SIP; ad esempio, il codice di risposta 403 viene generato quando un dispositivo SIP effettua una richiesta, ma il server rifiuta di onorare la richiesta.
+Nella tabella SIPResponseMetaDataTable è contenuto un elenco di codici di risposta SIP con la classificazione e la definizione di ogni codice. Questi codici vengono generati in risposta a eventi che influiscono sui dispositivi SIP e sulle sessioni di comunicazioni SIP. Il codice di risposta 403 ad esempio viene generato quando un dispositivo SIP invia una richiesta, che però non viene soddisfatta dal server.
 
 Questa tabella è stata introdotta in Microsoft Lync Server 2013.
 
@@ -68,22 +68,22 @@ Questa tabella è stata introdotta in Microsoft Lync Server 2013.
 <td><p><strong>Classe</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Classificazione generale per il codice di risposta. Le classificazioni includono:</p>
+<td><p>Classifica generale del codice di risposta. Sono incluse le classifiche seguenti:</p>
 <ul>
-<li><p>1-risposte informative</p></li>
-<li><p>2-risposte di successo</p></li>
-<li><p>3-risposte di Reindirizzamento</p></li>
-<li><p>4-risposte di errore client</p></li>
-<li><p>5--risposte di errore del server</p></li>
-<li><p>6-risposta di errore globale</p></li>
+<li><p>1: risposte informali</p></li>
+<li><p>2: risposte con esito positivo</p></li>
+<li><p>3: risposte di reindirizzamento</p></li>
+<li><p>4: risposte di errore client</p></li>
+<li><p>5-risposte di errore del server</p></li>
+<li><p>6: risposta di errore globale</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Descrizione</strong></p></td>
 <td><p>nvarchar (256)</p></td>
 <td></td>
-<td><p>Descrizione del codice di risposta SIP. Ad esempio, il codice di risposta 181 ha la seguente descrizione:</p>
-<p>Chiamata inoltrata</p></td>
+<td><p>Descrizione del codice di risposta SIP. Il codice di risposta 181 ad esempio è associato alla descrizione seguente:</p>
+<p>Call Is Being Forwarded</p></td>
 </tr>
 </tbody>
 </table>

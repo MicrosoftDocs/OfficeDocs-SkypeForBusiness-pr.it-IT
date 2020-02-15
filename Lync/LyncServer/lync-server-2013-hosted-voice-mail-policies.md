@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Criteri di segreteria telefonica ospitata'
+title: 'Lync Server 2013: criteri di segreteria telefonica ospitata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185506
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 811f975868dad7bc0fcf6d5a2867ca2f3b81cd59
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 01e844e62934a697b12afa76d2e9c9405a30a4a4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738976"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043178"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,37 +35,37 @@ ms.locfileid: "41738976"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-Un criterio di segreteria *telefonica ospitata* fornisce informazioni all'applicazione di routing di Lync Server 2013 ExUM su dove instradare le chiamate per gli utenti le cui cassette postali si trovano in un servizio di Exchange ospitata.
-
-<div>
-
-
-> [!NOTE]  
-> I criteri di segreteria telefonica ospitati sono obbligatori solo per l'integrazione di Lync Server 2013 con messaggistica unificata ospitata. Non sono necessarie per l'integrazione con la messaggistica unificata di Exchange locale.
-
-
-
-</div>
-
-<div>
-
-## <a name="hosted-voice-mail-policy-scope"></a>Ambito dei criteri di segreteria telefonica ospitata
-
-L'ambito dei criteri di segreteria telefonica ospitata determina il livello gerarchico a cui si applicano i criteri. È possibile configurare i criteri di segreteria telefonica ospitata con i livelli di ambito seguenti:
-
-  - Il criterio *globale* può potenzialmente interessare tutti gli utenti della distribuzione di Lync Server 2013. Se un utente è abilitato per l'accesso alla messaggistica unificata di Exchange ospitata e non è stato assegnato un criterio per utente e se al sito dell'utente non è stato assegnato un criterio per il sito, viene applicato il criterio globale. Il criterio globale viene installato con Lync Server 2013. È possibile modificarla in base alle proprie esigenze, ma non è possibile rinominarla o eliminarla.
-
-  - I criteri del *sito* possono influire su tutti gli utenti ospitati nel sito per cui sono definiti i criteri. Se un utente è configurato per l'accesso alla messaggistica unificata di Exchange ospitata e non è stato assegnato un criterio per utente, verranno applicati i criteri del sito.
-
-  - Un criterio *per utente* può interessare solo singoli utenti o gruppi. Per applicare un criterio per utente, è necessario assegnare esplicitamente il criterio a singoli utenti, gruppi e oggetti contatto.
+Un *criterio di segreteria telefonica ospitata* fornisce informazioni all'applicazione di routing di Lync Server 2013 ExUM in cui instradare le chiamate per gli utenti le cui cassette postali si trovano in un servizio di Exchange ospitato.
 
 <div>
 
 
 > [!NOTE]  
-> Nella maggior parte dei casi è necessario un solo criterio di segreteria telefonica ospitata. È spesso possibile modificare il criterio globale in base alle proprie esigenze. Se si distribuiscono più criteri per la segreteria telefonica ospitata, tutti questi criteri hanno un ambito per utente.
+> I criteri di segreteria telefonica ospitata sono necessari solo per l'integrazione di Lync Server 2013 con messaggistica unificata di Exchange ospitata Non sono necessari per l'integrazione con la messaggistica unificata di Exchange locale.
+
+
+
+</div>
+
+<div>
+
+## <a name="hosted-voice-mail-policy-scope"></a>Ambito del criterio di segreteria telefonica ospitata
+
+L'ambito dei criteri di segreteria telefonica ospitata determina il livello gerarchico a cui si applica il criterio. È possibile configurare i criteri di segreteria telefonica ospitata con i livelli di ambito seguenti:
+
+  - Il criterio *globale* può potenzialmente influire su tutti gli utenti nella distribuzione di Lync Server 2013. Se un utente è abilitato per l'accesso alla messaggistica unificata di Exchange ospitata e non è stato assegnato un criterio per utente, e se non è stato assegnato un criterio sito al sito dell'utente, viene applicato il criterio globale. Il criterio globale viene installato con Lync Server 2013. È possibile modificarli in base a specifiche esigenze, ma non è possibile rinominarli né eliminarli.
+
+  - Un criterio *sito* può influire su tutti gli utenti ospitati nel sito per cui è definito il criterio. Se un utente è configurato per l'accesso alla messaggistica unificata di Exchange ospitata e non è stato assegnato un criterio per utente, viene applicato il criterio sito.
+
+  - Un criterio *per utente* può influire solo su singoli utenti o gruppi. Per applicare un criterio per utente, è necessario assegnare esplicitamente il criterio a singoli utenti, gruppi e oggetti contatto.
+
+<div>
+
+
+> [!NOTE]  
+> Nella maggior parte dei casi, è necessario un solo criterio di segreteria telefonica ospitata. Spesso è possibile modificare il criterio globale per soddisfare tutte le esigenze. Se si distribuiscono più criteri di segreteria telefonica ospitata, tutti i criteri di questo tipo hanno ambito per utente.
 
 
 
@@ -75,34 +75,34 @@ L'ambito dei criteri di segreteria telefonica ospitata determina il livello gera
 
 <div>
 
-## <a name="hosted-voice-mail-policy-attributes"></a>Attributi dei criteri di segreteria telefonica ospitata
+## <a name="hosted-voice-mail-policy-attributes"></a>Attributi del criterio di segreteria telefonica ospitata
 
-Un criterio per la segreteria telefonica definisce due attributi che l'applicazione di routing di Lync Server 2013 ExUM viene inserita nell'URI della richiesta di un messaggio di invito inviato all'implementazione della messaggistica unificata di Exchange ospitata:
+Un criterio di segreteria telefonica definisce due attributi che l'applicazione di routing di Lync Server 2013 ExUM inserisce nell'URI della richiesta di un messaggio di invito inviato all'implementazione di messaggistica unificata di Exchange ospitata:
 
-  - **Destinazione:** Il nome di dominio completo (FQDN) del servizio di messaggistica unificata di Exchange ospitata. Questo valore viene usato dal server perimetrale locale di Lync Server per scopi di routing.
+  - **Destinazione:** Il nome di dominio completo (FQDN) del servizio di messaggistica unificata di Exchange ospitata. Questo valore viene utilizzato dal server perimetrale di Lync Server locale per scopi di routing.
     
     <div>
     
 
     > [!NOTE]  
-    > Il nome di dominio completo per Exchange Online è exap.um.outlook.com.
+    > Per Exchange Online, l'FQDN è exap.um.outlook.com.
 
     
     </div>
 
-  - **Organizzazione:** Il nome di dominio completo del tenant nel servizio di messaggistica unificata di Exchange ospitata per le cassette postali degli utenti di Lync Server 2013. Un criterio per la segreteria telefonica può contenere più organizzazioni. Se nel criterio è inclusa più di un'organizzazione, questo attributo deve essere un elenco delimitato da virgole dei tenant di Exchange Server che ospitano le cassette postali degli utenti di Lync Server 2013.
+  - **Organizzazione:** Il nome di dominio completo del tenant nel servizio di messaggistica unificata di Exchange ospitato che ospita le cassette postali degli utenti di Lync Server 2013. Un criterio di segreteria telefonica può contenere più organizzazioni. Se nel criterio è inclusa più di un'organizzazione, questo attributo deve essere un elenco separato da virgole dei tenant del server Exchange che ospita le cassette postali degli utenti di Lync Server 2013.
 
 <div>
 
 
 > [!NOTE]  
-> L'amministratore del tenant del servizio di messaggistica unificata di Exchange ospitata fornirà i valori necessari per le impostazioni dell'attributo di destinazione e organizzazione. Per configurare i criteri, è necessario eseguire il cmdlet New-CsHostedVoicemailPolicy o usare il cmdlet Set-CsHostedVoicemailPolicy per modificarne uno esistente, ad esempio il criterio globale.
+> L'amministratore tenant del servizio di messaggistica unificata di Exchange ospitato fornirà i valori necessari per le impostazioni degli attributi di destinazione e dell'organizzazione. Per configurare i criteri, è necessario eseguire il cmdlet New-CsHostedVoicemailPolicy o utilizzare il cmdlet Set-CsHostedVoicemailPolicy per modificarne uno esistente, ad esempio il criterio globale.
 
 
 
 </div>
 
-Per informazioni dettagliate sulla gestione dei criteri di segreteria telefonica ospitata, vedere la documentazione di Lync Server Management Shell per i cmdlet seguenti:
+Per informazioni dettagliate sulla gestione dei criteri di segreteria telefonica ospitata, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:
 
   - New-CsHostedVoicemailPolicy
 
@@ -114,11 +114,11 @@ Per informazioni dettagliate sulla gestione dei criteri di segreteria telefonica
 
 <div>
 
-## <a name="per-user-voice-mail-policy-assignment"></a>Assegnazione dei criteri per la segreteria telefonica per utente
+## <a name="per-user-voice-mail-policy-assignment"></a>Assegnazione dei criteri di segreteria telefonica per utente
 
-Se i criteri per la segreteria telefonica ospitata sono definiti con ambito per utente, è necessario assegnarlo esplicitamente. Puoi eseguire il cmdlet Grant-CsHostedVoicemailPolicy per assegnare i criteri a singoli utenti o gruppi.
+Se il criterio di segreteria telefonica ospitata è definito con ambito per utente, è necessario assegnarlo in modo esplicito. È possibile eseguire il cmdlet Grant-CsHostedVoicemailPolicy per assegnare il criterio a singoli utenti o gruppi.
 
-Per informazioni dettagliate sull'assegnazione o la rimozione di un criterio di segreteria telefonica ospitata per utente, vedere la documentazione di Lync Server Management Shell per i cmdlet seguenti:
+Per informazioni dettagliate sull'assegnazione o la rimozione di criteri di segreteria telefonica ospitata per utente, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:
 
   - Grant-CsHostedVoicemailPolicy
 

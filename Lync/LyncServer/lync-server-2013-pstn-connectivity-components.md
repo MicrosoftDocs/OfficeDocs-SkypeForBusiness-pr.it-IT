@@ -12,16 +12,16 @@ ms:contentKeyID: 48184408
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 63b5534b817477ea42dbefd5244c974fc70881f9
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b307e88bbf85b43a6997d46c5a822684e0421752
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724766"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043448"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41724766"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-04_
+_**Ultimo argomento modificato:** 2012-10-04_
 
-Una soluzione VoIP di livello aziendale deve prevedere le chiamate da e verso la rete PSTN (Public Switched Telephone Network) senza alcun calo di qualità del servizio (QoS). Inoltre, gli utenti non devono essere consapevoli della tecnologia sottostante quando effettuano e ricevono chiamate. Dal punto di vista dell'utente, una chiamata tra l'infrastruttura VoIP aziendale e la rete PSTN dovrebbe sembrare solo un'altra sessione SIP.
+Una soluzione VoIP di livello aziendale deve essere in grado di garantire le chiamate da e verso la rete PSTN (Public Switched Telephone Network) senza alcun decadimento della qualità del servizio (QoS). Gli utenti non devono inoltre preoccuparsi della tecnologia sottostante quando effettuano e ricevono chiamate. Dal punto di vista dell'utente, una chiamata tra l'infrastruttura VoIP aziendale e la rete PSTN deve risultare del tutto analoga a qualsiasi altra sessione SIP.
 
-Per le connessioni PSTN, è possibile distribuire un trunk SIP o un gateway PSTN (con un PBX, noto anche come collegamento SIP diretto o senza PBX).
+Per le connessioni PSTN, è possibile distribuire un trunk SIP o un gateway PSTN (con un sistema PBX, noto anche come collegamento SIP diretto o senza PBX).
 
 <div>
 
 ## <a name="sip-trunking"></a>Trunking SIP
 
-In alternativa all'uso di gateway PSTN, è possibile connettere la soluzione VoIP aziendale alla rete PSTN usando il trunking SIP. Il trunking SIP consente gli scenari seguenti:
+Come alternativa all'utilizzo di gateway PSTN, è possibile connettere la soluzione VoIP aziendale alla rete PSTN tramite trunking SIP. Il trunking SIP consente gli scenari seguenti:
 
-  - Un utente aziendale all'interno o all'esterno del firewall aziendale può effettuare una chiamata locale o interurbana specificata da un numero conforme E. 164 che viene terminato sulla rete PSTN come servizio del provider di servizi corrispondente.
+  - Un utente aziendale interno o esterno al firewall aziendale può effettuare una chiamata locale o interurbana tramite un numero compatibile con E.164, che viene terminata nella rete PSTN come servizio del provider di servizi corrispondente.
 
-  - Qualsiasi abbonato PSTN può contattare un utente aziendale all'interno o all'esterno del firewall aziendale componendo un numero DID (Direct inwarded Dialing) associato all'utente aziendale.
+  - Qualsiasi sottoscrittore PSTN può contattare un utente aziendale interno o esterno al firewall aziendale componendo un numero DID (Direct Inward Dialing) associato a tale utente.
 
-L'uso di questa soluzione di distribuzione richiede un provider di servizi di trunking SIP.
+Per l'utilizzo di questa soluzione di distribuzione è necessario un provider di servizi di trunking SIP.
 
 </div>
 
@@ -59,37 +59,37 @@ L'uso di questa soluzione di distribuzione richiede un provider di servizi di tr
 
 ## <a name="pstn-gateways"></a>Gateway PSTN
 
-I gateway PSTN sono dispositivi di terze parti che traducono segnali e elementi multimediali tra l'infrastruttura VoIP aziendale e una rete PSTN o PBX. I gateway PSTN collaborano con il Mediation Server per presentare una chiamata PSTN o PBX a un client VoIP aziendale. Il Mediation Server presenta anche le chiamate dei client VoIP aziendale al gateway PSTN per il routing alla rete PSTN o PBX. Per un elenco dei partner che collaborano con Microsoft per la fornitura di dispositivi compatibili con Lync Server, vedere il sito Web Microsoft Unified Communications [http://go.microsoft.com/fwlink/p/?linkId=202836](http://go.microsoft.com/fwlink/p/?linkid=202836)Partners.
+I gateway PSTN sono dispositivi di terze parti che convertono i segnali e i contenuti multimediali tra l'infrastruttura VoIP aziendale e una rete PSTN o un PBX. I gateway PSTN operano con Mediation Server per presentare una chiamata PSTN o PBX a un client VoIP aziendale. Mediation Server presenta inoltre le chiamate da client VoIP aziendale al gateway PSTN per il routing alla rete PSTN o al PBX. Per un elenco dei partner che collaborano con Microsoft per fornire dispositivi che funzionano con Lync Server, vedere il sito Web Microsoft Unified Communications Partners [http://go.microsoft.com/fwlink/p/?linkId=202836](http://go.microsoft.com/fwlink/p/?linkid=202836)all'indirizzo.
 
 </div>
 
 <div>
 
-## <a name="private-branch-exchanges"></a>Scambi di branch privati
+## <a name="private-branch-exchanges"></a>Centralini
 
-Se si dispone di un'infrastruttura vocale esistente che usa un PBX (Private Branch Exchange), è possibile usare il PBX con Lync Server Enterprise Voice.
+Se si dispone di un'infrastruttura vocale esistente che utilizza un sistema PBX (Private Branch Exchange), è possibile utilizzare il PBX con Lync Server VoIP aziendale.
 
-Gli scenari di integrazione Voice-PBX supportati di Enterprise sono i seguenti:
+Gli scenari di integrazione tra VoIP aziendale e PBX supportati sono i seguenti:
 
-  - IP-PBX che supporta il bypass multimediale, con un Mediation Server.
+  - IP-PBX che supporta Media Bypass, con un server Mediation Server.
 
   - IP-PBX che richiede un gateway PSTN autonomo.
 
-  - PBX TDM (Time Division Multiplexing) con un gateway PSTN autonomo.
+  - PBX TDM (Time Division Multiplexing), con un gateway PSTN autonomo.
 
 <div>
 
 
 > [!NOTE]  
-> Il bypass multimediale non si interagisce con ogni gateway PSTN, IP-PBX e SBC. Microsoft ha testato un set di gateway PSTN e SBCs con partner certificati e ha eseguito alcuni test con Cisco IP-PBX. Il bypass multimediale è supportato solo con i prodotti e le versioni elencati in Unified Communications Open Interoperability Program-Lync Server <A href="http://go.microsoft.com/fwlink/p/?linkid=214406">http://go.microsoft.com/fwlink/p/?linkId=214406</A>at.
+> Media Bypass non funziona con tutti i gateway PSTN, i sistemi IP-PBX e i servizi SBC. Microsoft ha testato una serie di gateway PSTN e SBCs con partner certificati e ha eseguito alcuni test con i sistemi IP-PBX Cisco. Il bypass multimediale è supportato solo con i prodotti e le versioni elencati in Unified Communications Open Interoperability Program – Lync Server <A href="http://go.microsoft.com/fwlink/p/?linkid=214406">http://go.microsoft.com/fwlink/p/?linkId=214406</A>at.
 
 
 
 </div>
 
-Per informazioni dettagliate sui partner che offrono soluzioni VoIP aziendale, vedere il sito Web Microsoft Unified Communications Partners [http://go.microsoft.com/fwlink/p/?linkId=202836](http://go.microsoft.com/fwlink/p/?linkid=202836).
+Per informazioni dettagliate sui partner che offrono soluzioni VoIP aziendale, vedere il sito Web Microsoft Unified Communications Partners [http://go.microsoft.com/fwlink/p/?linkId=202836](http://go.microsoft.com/fwlink/p/?linkid=202836)all'indirizzo.
 
-Per informazioni dettagliate sui partner che offrono soluzioni hardware VoIP aziendale, inclusi i gateway PSTN, vedere il sito Web [http://go.microsoft.com/fwlink/p/?linkId=202836](http://go.microsoft.com/fwlink/p/?linkid=202836)Microsoft Unified Communications Partners.
+Per informazioni dettagliate sui partner che offrono soluzioni hardware VoIP aziendale, tra cui i gateway PSTN, vedere il sito Web [http://go.microsoft.com/fwlink/p/?linkId=202836](http://go.microsoft.com/fwlink/p/?linkid=202836)Microsoft Unified Communications Partners.
 
 </div>
 

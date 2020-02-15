@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurazione del supporto per riunioni di grandi dimensioni'
+title: 'Lync Server 2013: impostazione del supporto per riunioni di grandi dimensioni'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184763
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0e8331c28d5bd06e6a3f7d9dab2fba7db334cd00
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8970d616d78cbfdafa591b58f123918cd20e0040
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764562"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42040405"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="setting-up-support-for-large-meetings-in-lync-server-2013"></a>Configurazione del supporto per riunioni di grandi dimensioni in Lync Server 2013
+# <a name="setting-up-support-for-large-meetings-in-lync-server-2013"></a>Configurazione del supporto per le riunioni di grandi dimensioni in Lync Server 2013
 
 </div>
 
@@ -35,33 +35,33 @@ ms.locfileid: "41764562"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-05-12_
+_**Ultimo argomento modificato:** 2014-05-12_
 
-Il supporto di riunioni di grandi dimensioni per gli utenti fino a 1000 richiede la creazione di una topologia appropriata, la riunione dei prerequisiti hardware e software e la configurazione appropriata dell'ambiente.
+Il supporto di un gran numero di riunioni fino a 1000 utenti richiede la creazione di una topologia appropriata, il rispetto di prerequisiti hardware e software e la configurazione idonea dell'ambiente.
 
 <div>
 
-## <a name="topology-requirements"></a>Requisiti di topologia
+## <a name="topology-requirements"></a>Requisiti della topologia
 
-Una singola riunione di grandi dimensioni richiede almeno un server front-end e un server back-end. Tuttavia, per ottenere una disponibilità elevata, è consigliabile un pool di due front end server con server back-end con mirroring.
+Una singola riunione di grandi dimensioni richiede almeno un front end server e un server back-end. Tuttavia, per garantire una disponibilità elevata, è consigliabile disporre di un pool di due front end server con server back-end con mirroring.
 
-L'utente che ospita le riunioni di grandi dimensioni deve avere il proprio account utente ospitato in questo pool. Tuttavia, non è consigliabile ospitare altri account utente in questo pool. Usalo invece solo per le riunioni di grandi dimensioni. La procedura consigliata consiste nel creare un account utente speciale in questo pool da usare solo per ospitare riunioni di grandi dimensioni. Dato che l'impostazione di grande riunione è ottimizzata per le prestazioni, l'uso di un utente normale può avere problemi come l'incapacità di promuovere una sessione P2P a una riunione quando è coinvolto un endpoint PSTN.
+L'account dell'utente che ospita le riunioni di grandi dimensioni deve trovarsi in questo pool. Non è tuttavia consigliabile ospitare altri account utente in questo pool. Usarlo invece solo per le riunioni di grandi dimensioni. È preferibile creare un account utente speciale in questo pool da usare solo per ospitare riunioni di grandi dimensioni. Poiché l'impostazione di una riunione di grandi dimensioni è ottimizzata per le prestazioni, utilizzarla come utente normale potrebbe avere problemi come l'impossibilità di promuovere una sessione P2P a una riunione quando è coinvolto un endpoint PSTN.
 
-La gestione di un pool con esattamente due server front-end richiede alcune considerazioni particolari. Per altre informazioni, vedere [topologie e componenti per i server front-end, la messaggistica istantanea e la presenza in Lync server 2013](lync-server-2013-topologies-and-components-for-front-end-servers-instant-messaging-and-presence.md).
+La gestione di un pool con esattamente due server Front End richiede alcune considerazioni speciali. Per ulteriori informazioni, vedere [topologie e componenti per Front End Server, messaggistica istantanea e presenza in Lync server 2013](lync-server-2013-topologies-and-components-for-front-end-servers-instant-messaging-and-presence.md).
 
-Inoltre, se si vuole specificare facoltativamente il backup e il failover del ripristino di emergenza per il pool usato per riunioni di grandi dimensioni, è possibile associarlo a un pool di dati in un altro Data Center. Per informazioni dettagliate, vedere [pianificazione per l'elevata disponibilità e il ripristino di emergenza in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md).
+Inoltre, se si desidera fornire facoltativamente il backup e il failover del ripristino di emergenza per il pool utilizzato per le riunioni di grandi dimensioni, è possibile associarlo a un pool di dati di installazione analogo, in un data center diverso. Per informazioni dettagliate, vedere [Planning for High Availability and Disaster Recovery in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md).
 
-![Configurazione di pool per riunioni di grandi dimensioni](images/JJ205074.ee00e1c0-c3b2-464d-aa89-a1e877cd034d(OCS.15).jpg "Configurazione di pool per riunioni di grandi dimensioni")
+![Configurazione del pool di riunioni di grandi dimensioni](images/JJ205074.ee00e1c0-c3b2-464d-aa89-a1e877cd034d(OCS.15).jpg "Configurazione del pool di riunioni di grandi dimensioni")
 
-Altre note sulla topologia includono:
+Note aggiuntive sulla topologia:
 
-  - È necessaria una condivisione file per archiviare il contenuto della riunione e, se il server di archiviazione è distribuito e abilitato, per l'archiviazione dei file di archiviazione. La condivisione file può essere dedicata al pool o può essere la stessa condivisione di file usata da un altro pool nel sito in cui è distribuito il pool. Per informazioni dettagliate sulla configurazione della condivisione file, vedere [configurare l'archiviazione dei file per Lync Server 2013](lync-server-2013-configure-dfs-file-storage.md).
+  - È necessaria una condivisione file per l'archiviazione del contenuto delle riunioni e, se il server di archiviazione è distribuito e abilitato, per l'archiviazione dei file di archiviazione. La condivisione di file può essere dedicata al pool oppure corrispondere a quella usata da un altro pool nello stesso sito di distribuzione. Per informazioni dettagliate sulla configurazione della condivisione file, vedere [Configure file storage for Lync Server 2013](lync-server-2013-configure-dfs-file-storage.md).
 
-  - È necessario un server Office Web Apps per abilitare la funzionalità presentazione di PowerPoint in riunioni di grandi dimensioni. Il server Office Web Apps può essere dedicato al grande pool di riunioni oppure può essere lo stesso server di Office Web Apps usato da altri pool nel sito in cui è distribuito il pool dedicato.
+  - È necessario un server Office Web Apps per abilitare la funzionalità di presentazione di PowerPoint nelle riunioni di grandi dimensioni. Il server Office Web Apps può essere dedicato al pool di riunioni di grandi dimensioni oppure può essere lo stesso server Office Web Apps utilizzato da altri pool nel sito in cui è distribuito il pool dedicato.
 
-  - Il bilanciamento del carico dei server front-end richiede il bilanciamento del carico hardware per il traffico HTTP, ad esempio il download del contenuto della riunione. Il bilanciamento del carico DNS è consigliato per il traffico SIP. Per informazioni dettagliate, vedere [requisiti di bilanciamento del carico per Lync Server 2013](lync-server-2013-load-balancing-requirements.md).
+  - Il bilanciamento del carico dei Front End Server richiede il bilanciamento del carico hardware per il traffico HTTP (ad esempio, il download del contenuto della riunione). Per il traffico SIP è consigliato il bilanciamento del carico DNS. Per informazioni dettagliate, vedere [requisiti per il bilanciamento del carico per Lync Server 2013](lync-server-2013-load-balancing-requirements.md).
 
-  - Se si vuole usare il server di monitoraggio per il pool di grandi riunioni dedicato, è consigliabile usare il server di monitoraggio e il relativo database condivisi in tutti i pool di server front-end della distribuzione di Lync Server.
+  - Se si desidera utilizzare il Monitoring Server per il pool di riunioni di grandi dimensioni dedicato, è consigliabile utilizzare il Monitoring Server e il relativo database condiviso in tutti i pool Front End Server della distribuzione di Lync Server.
 
 </div>
 
@@ -69,17 +69,17 @@ Altre note sulla topologia includono:
 
 ## <a name="hardware-and-software-requirements"></a>Requisiti hardware e software
 
-I requisiti hardware per i server in un pool di grandi riunioni dedicato sono gli stessi per gli altri server di Lync Server 2013. Per informazioni dettagliate sui requisiti hardware, vedere "[piattaforme hardware server per Lync server 2013](lync-server-2013-server-hardware-platforms.md).
+I requisiti hardware per i server in un pool di riunioni di grandi dimensioni dedicato sono uguali a quelli degli altri server Lync Server 2013. Per informazioni dettagliate sui requisiti hardware, vedere "[piattaforme hardware server per Lync server 2013](lync-server-2013-server-hardware-platforms.md).
 
-I server in un pool di grandi riunioni dedicato devono soddisfare tutti i requisiti software di Lync Server 2013. Per informazioni dettagliate sui requisiti software, vedere la documentazione seguente:
+I server in un pool di riunioni di grandi dimensioni dedicato devono soddisfare tutti i requisiti software di Lync Server 2013. Per informazioni dettagliate sui requisiti software, vedere la documentazione seguente:
 
   - [Supporto del sistema operativo per server e strumenti in Lync Server 2013](lync-server-2013-server-and-tools-operating-system-support.md)
 
-  - [Supporto per il software di database in Lync Server 2013](lync-server-2013-database-software-support.md)
+  - [Supporto software per database in Lync Server 2013](lync-server-2013-database-software-support.md)
 
   - [Requisiti software aggiuntivi per Lync Server 2013](lync-server-2013-additional-software-requirements.md)
 
-Inoltre, sia Lync Server 2013 che tutti i client Lync Server 2013 devono avere gli aggiornamenti più recenti.
+Inoltre, sia Lync Server 2013 sia tutti i client di Lync Server 2013 devono avere gli aggiornamenti più recenti.
 
 </div>
 
@@ -87,45 +87,45 @@ Inoltre, sia Lync Server 2013 che tutti i client Lync Server 2013 devono avere g
 
 ## <a name="configuration-requirements"></a>Requisiti di configurazione
 
-È consigliabile creare un nuovo criterio di conferenza in modo specifico per riunioni di grandi dimensioni e quindi assegnare i criteri per i servizi di conferenza agli utenti residenti nel pool di grandi riunioni dedicato. Configurare i criteri di conferenza con le impostazioni seguenti:
+È consigliabile creare un nuovo criteri di conferenza specifico per le riunioni di grandi dimensioni e quindi assegnare il criterio di conferenza agli utenti ospitati in un pool dedicato a riunioni di grandi dimensioni. Configurare il criterio per conferenze con le impostazioni seguenti:
 
-  - Impostare l'opzione **MaxMeetingSize** su **1000**. (Il valore predefinito è **250**).
+  - Impostare l'opzione **MaxMeetingSize** su **1000**. Il valore predefinito è **250**.
 
-  - Imposta l'opzione **AllowLargeMeetings** su **true**.
+  - Impostare l'opzione **AllowLargeMeetings** su **True**.
 
   - Impostare l'opzione **EnableAppDesktopSharing** su **None**.
 
-  - Imposta l'opzione **AllowUserToScheduleMeetingsWithAppSharing** su **false**.
+  - Impostare l'opzione **AllowUserToScheduleMeetingsWithAppSharing** su **False**.
 
-  - Imposta l'opzione **AllowSharedNotes** su **false**.
+  - Impostare l'opzione **AllowSharedNotes** su **False**.
 
-  - Imposta l'opzione **AllowAnnotations** su **false**.
+  - Impostare l'opzione **AllowAnnotations** su **False**.
 
-  - Imposta l'opzione **DisablePowerPointAnnotations** su **true**.
+  - Impostare l'opzione **DisablePowerPointAnnotations** su **True**.
 
-  - Imposta l'opzione **AllowMultiview** su **false**.
+  - Impostare l'opzione **AllowMultiview** su **False**.
 
-  - Imposta l'opzione **EnableMultiviewJoin** su **false**.
+  - Impostare l'opzione **EnableMultiviewJoin** su **False**.
 
 <div>
 
 
 > [!NOTE]  
-> Il supporto per le riunioni di grandi dimensioni dell'utente di 1000 in Lync Server 2013 richiede l'impostazione di <STRONG>AllowLargeMeetings</STRONG> nei criteri di conferenza per l'utilità di pianificazione della riunione per essere impostata su true. Quando questa impostazione è impostata su true, l'esperienza di Lync sarà ottimizzata per riunioni extra di grandi dimensioni quando gli utenti partecipano a tale riunione. In particolare, in una riunione di grandi dimensioni, Lync non visualizzerà l'iniziale o l'aggiornamento dell'elenco dei partecipanti a una riunione completa, ovvero un collo di bottiglia delle prestazioni sia per il client che per Lync Server 2013. Lync visualizzerà invece solo le informazioni sull'utente e l'elenco di relatori della riunione. Lync mostrerà ancora correttamente il numero totale di partecipanti disponibili nelle riunioni di grandi dimensioni.
+> Il supporto per le riunioni di grandi dimensioni dell'utente 1000 in Lync Server 2013 richiede che l'impostazione <STRONG>AllowLargeMeetings</STRONG> nei criteri di conferenza per l'utilità di pianificazione riunione sia impostata su true. Quando questa impostazione è impostata su true, l'esperienza di Lync sarà ottimizzata per riunioni di grandi dimensioni quando gli utenti partecipano a tale riunione. In particolare, in una riunione di grandi dimensioni, Lync non mostrerà l'iniziale o l'aggiornamento dell'elenco dei partecipanti alla riunione completo, che è un collo di bottiglia delle prestazioni sia per il client che per Lync Server 2013. Lync, invece, visualizzerà solo le informazioni sull'utente e l'elenco dei relatori della riunione. Lync continuerà a visualizzare correttamente il numero totale di partecipanti disponibili nelle riunioni di grandi dimensioni.
 
 
 
 </div>
 
-Fatta eccezione per le **dimensioni massime della riunione** , tutte le altre impostazioni dei criteri di conferenza specificate in questo articolo sono necessarie per disabilitare le funzionalità di conferenza che non sono necessarie in riunioni di grandi dimensioni.
+Ad eccezione dell'impostazione **Dimensione massima riunione**, tutti gli altri criteri di conferenza specificati qui sono necessari per disabilitare le funzionalità di conferenza non necessarie in riunioni di grandi dimensioni.
 
-Inoltre, è necessario configurare il pool di grandi riunioni dedicato in modo che ogni utente di Lync Server 2013 ospitato nel pool e responsabile della gestione della pianificazione della riunione disponga delle autorizzazioni appropriate. Per eseguire questa operazione, eseguire le operazioni seguenti:
+Inoltre, è necessario configurare il pool di riunioni di grandi dimensioni dedicato in modo che ogni utente di Lync Server 2013 che è ospitato nel pool e responsabile della gestione della pianificazione delle riunioni disponga delle autorizzazioni appropriate. A tale scopo, procedere come segue:
 
-  - Impostare l'opzione **designa come relatore** su **nessuno**. In genere, uno o pochi utenti di tutti i partecipanti a una riunione di grandi dimensioni sono relatori, quindi i partecipanti non devono essere ammessi automaticamente alle riunioni di grandi dimensioni come relatori. Al contrario, i relatori devono essere designati in modo esplicito al momento della riunione o essere promossi esplicitamente durante la riunione di grandi dimensioni.
+  - Impostare l'opzione **Designa come relatore** a **Nessuno**. In genere, uno o pochi altri utenti tra tutti i partecipanti a una riunione di grandi dimensioni sono relatori, pertanto i partecipanti non devono essere automaticamente ammessi a riunioni di grandi dimensioni come relatori. I relatori dovrebbero invece essere designati in modo esplicito al momento di pianificare la riunione oppure durante la riunione stessa.
 
-  - Verificare che la casella **di controllo tipo di conferenza assegnata per impostazione predefinita** non sia selezionata. Questa impostazione controlla se il componente aggiuntivo riunione online per Lync 2013 Pianifica sempre le conferenze con la conferenza assegnata dell'organizzatore, in modo che le riunioni pianificate abbiano lo stesso URL di join e le informazioni audio. Negli scenari di collaborazione in piccoli gruppi, il tipo di conferenza assegnata funziona bene perché ognuno ha una propria conferenza assegnata individualmente e l'URL di join costante e le informazioni audio contribuiscono a facilitare l'Unione delle riunioni. Nello scenario della riunione di grandi dimensioni, tuttavia, il personale di supporto per le riunioni di grandi dimensioni pianifica le riunioni di grandi dimensioni con un singolo set di credenziali utente e quindi fornisce URL di join e informazioni audio ai richiedenti della riunione. In questo caso, l'uso di un URL diverso per partecipare a una riunione funziona meglio.
+  - Accertarsi che la casella di controllo **Tipo di conferenza assegnato per impostazione predefinita** non sia selezionata. Questa impostazione consente di controllare se il componente aggiuntivo per riunioni online per Lync 2013 Pianifica sempre le conferenze utilizzando la conferenza assegnata dall'organizzatore, il che significa che le riunioni pianificate hanno lo stesso URL di join e le informazioni audio. In scenari di collaborazione di piccoli gruppi, l'assegnazione di un tipo di conferenza funziona bene perché ognuno dispone di una conferenza individuale assegnata e l'URL di accesso e le informazioni audio consentono di agevolare un più rapido accesso alla riunione. Tuttavia, in scenari con riunioni di grandi dimensioni, il personale di queste ultime pianifica le riunioni più grandi con un singolo set di credenziali utente, e quindi offre URL di accesso e informazioni sull'audio al richiedente il meeting. In questo caso, l'uso di un URL diverso per accedere a ogni riunione funziona bene.
 
-  - Verificare che la casella **di controllo Ammetti gli utenti anonimi per impostazione predefinita** non sia selezionata, a meno che non sia obbligatoria. Questa impostazione ha effetto sul tipo di accesso alle riunioni predefinito programmato dal componente aggiuntivo riunione online per Lync 2013 quando non si usa una conferenza assegnata. L'opzione appropriata per questa impostazione dipende dalle esigenze dell'organizzazione. Se la maggior parte delle riunioni di grandi dimensioni per l'organizzazione è riunioni interne, non selezionare questa opzione. Se la maggior parte delle riunioni di grandi dimensioni richiede che gli utenti esterni possano partecipare, selezionare questa opzione.
+  - Accettarsi che la casella di controllo **Consenti utenti anonimi per impostazione predefinita** non è selezionata a meno che non sia necessario. Questa impostazione influisce sul tipo di accesso alle riunioni predefinito programmato dal componente aggiuntivo per riunioni online per Lync 2013 quando non si utilizza una conferenza assegnata. L'opzione appropriata per questa impostazione dipende dalle esigenze dell'organizzazione. Se la maggior parte delle riunioni di grandi dimensioni nell'organizzazione è interna, non selezionare questa opzione. Se per la maggior parte delle riunioni di grandi dimensioni è prevista la partecipazione di  utenti esterni, selezionare questa opzione.
 
 </div>
 

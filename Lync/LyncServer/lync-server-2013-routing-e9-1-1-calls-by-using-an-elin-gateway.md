@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Routing delle chiamate di emergenza tramite un gateway ELIN'
+title: 'Lync Server 2013: routing delle chiamate al servizio E9-1-1 tramite un gateway ELIN'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184221
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 97c921a0b31438103ba74dcc64925e5b2069a8e8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: befa9ad077780eb57d4690790673fc0a5452af60
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732848"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037316"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="routing-e9-1-1-calls-by-using-an-elin-gateway-in-lync-server-2013"></a>Routing delle chiamate di emergenza tramite un gateway ELIN in Lync Server 2013
+# <a name="routing-e9-1-1-calls-by-using-an-elin-gateway-in-lync-server-2013"></a>Routing delle chiamate al servizio E9-1-1 tramite un gateway ELIN in Lync Server 2013
 
 </div>
 
@@ -35,45 +35,45 @@ ms.locfileid: "41732848"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-05_
+_**Ultimo argomento modificato:** 2013-02-05_
 
-Alcuni partner del programma Unified Communications Open Interoperability offrono i gateway con funzionalità di sicurezza per le chiamate di emergenza qualificati (ELIN), che possono fungere da alternativa a una connessione trunk SIP a un provider di servizi E9-1-1 qualificato. I gateway ELIN supportano la connettività (CAMA) ISDN o centralizzata per l'accounting automatico dei messaggi con servizi E9-1-1 basati su PSTN (Public Switched Telephone Network). Per informazioni dettagliate sui partner che includono gateway ELIN e collegamenti alla propria documentazione, vedere [http://go.microsoft.com/fwlink/p/?LinkId=248425](http://go.microsoft.com/fwlink/p/?linkid=248425).
+Alcuni partner del programma Unified Communications Open Interoperability offrono gateway ELIN (Emergency Location Identification Number) qualificati, che rappresentano un'alternativa a una connessione trunk SIP a un provider di servizi E9-1-1 qualificato. I gateway ELIN supportano la connettività ISDN o CAMA (Centralized Automatic Message Accounting) ai servizi E9-1-1 basati su PSTN (Public Switched Telephone Network). Per informazioni dettagliate sui partner che forniscono gateway ELIN e collegamenti alla relativa documentazione, vedere [http://go.microsoft.com/fwlink/p/?LinkId=248425](http://go.microsoft.com/fwlink/p/?linkid=248425).
 
-Analogamente alle connessioni trunk SIP ai provider di servizi E9-1-1, i gateway ELIN supportano anche i mezzi per il routing di una chiamata di emergenza al punto di risposta di sicurezza pubblica più appropriato del chiamante (PSAP), ma questi gateway usano un ELIN come identificatore della posizione. Si definiscono gli ELIN per ogni posizione di risposta all'emergenza nell'organizzazione (per informazioni dettagliate, vedere [gestione delle posizioni per i gateway ELIN in Lync Server 2013](lync-server-2013-managing-locations-for-elin-gateways.md)).
+Analogamente alle connessioni trunk SIP ai provider di servizi E9-1-1, i gateway ELIN offrono anche i mezzi per instradare una chiamata di emergenza al punto di risposta di sicurezza pubblica più appropriato del chiamante (PSAP), ma questi gateway utilizzano un ELIN come identificatore di percorso. È possibile definire i numeri ELIN per ogni posizione di risposta di emergenza nell'organizzazione (per informazioni dettagliate, vedere [Managing locations for Elin Gateways in Lync Server 2013](lync-server-2013-managing-locations-for-elin-gateways.md)).
 
-Quando si usa un gateway ELIN per le chiamate di emergenza, si usa la stessa infrastruttura E9-1-1 di Lync Server che si usa per una connessione trunk SIP. Il database del servizio informazioni sulla posizione fornisce la posizione al client Lync Server e il criterio della posizione Abilita la caratteristica e definisce il routing. Con un gateway ELIN, tuttavia, è necessario aggiungere il contrassegno ELINs al database del servizio informazioni sulla posizione e fare in modo che il gestore PSTN li carichi nel database ALI (Automatic Location Identification).
+Quando si utilizza un gateway ELIN per le chiamate di emergenza, è possibile utilizzare la stessa infrastruttura E9-1-1 di Lync Server che si desidera utilizzare per una connessione trunk SIP. Il database del servizio informazioni percorso fornisce il percorso al client di Lync Server e il criterio percorso consente di abilitare la caratteristica e di definire il routing. Con un gateway ELIN, tuttavia, è necessario aggiungere i numeri ELIN al database del servizio informazioni percorso e fare in modo che il gestore PSTN li carichi nel database ALI (Automatic Location Identification).
 
-Quando un client Lync ottiene la propria posizione dal servizio informazioni sulla posizione, la posizione include il valore ELIN. Durante una chiamata di emergenza, il ELIN è incluso nella posizione inviata al gateway ELIN. Il gateway ELIN identifica la chiamata come chiamata di emergenza e scambia il numero della parte chiamante con ELIN. Il gateway ELIN instrada quindi la chiamata alla rete PSTN con il numero di chiamata ELIN. Il provider E9-1-1 PSTN cerca il numero ELIN nel database ALI, un database complementare per il database stradario (Master Street Address Guide). La rete PSTN invia quindi la chiamata al PSAP più appropriato in base alla ricerca di ALI e PSAP invia i primi soccorritori alla posizione del chiamante in base alla ricerca di ALI. Il numero chiamante viene memorizzato nella cache del gateway ELIN per un periodo di tempo predefinito per i callback. Durante un callback, il PSAP raggiunge il gateway ELIN, che scambia il numero ELIN per il num DID (Direct Interior Dialing) del chiamante.
+Quando un client Lync ottiene la propria posizione dal servizio informazioni percorso, il percorso include il valore ELIN. Durante la chiamata di emergenza, il numero ELIN viene incluso nella posizione inviata al gateway ELIN. Il gateway ELIN identifica la chiamata come chiamata di emergenza e scambia il numero del chiamante con il numero ELIN. La chiamata viene quindi instradata dal gateway ELIN a PSTN con il numero ELIN indicato come numero chiamante. Il provider di servizi E9-1-1 PSTN cerca il numero ELIN nel database ALI, che è un database complementare a quello dello stradario generale. La chiamata viene quindi inviata tramite PSTN al centro di raccolta delle chiamate di emergenza (PSAP, Public Safety Answering Point) più appropriato, in base alla ricerca nel database ALI e il centro di raccolta delle chiamate di emergenza invia i soccorsi alla posizione del chiamante in base alla ricerca nel database ALI. Il numero chiamante viene memorizzato nella cache nel gateway ELIN per un periodo di tempo predefinito per le richiamate. Durante la richiamata, il centro di raccolta delle chiamate di emergenza raggiunge il gateway ELIN, che scambia il numero ELIN con il numero DID (Direct Inward Dialing) del chiamante.
 
-I gateway ELIN supportano le chiamate di emergenza solo dall'interno della rete dell'organizzazione. Non supportano le chiamate di emergenza effettuate dall'esterno della rete.
+I gateway ELIN supportano chiamate di emergenza solo dall'interno della rete dell'organizzazione. Non sono supportate chiamate di emergenza effettuate dall'esterno della rete.
 
 <div>
 
 
 > [!NOTE]  
-> Per informazioni dettagliate sull'uso di una connessione trunk SIP per le chiamate di emergenza, vedere <A href="lync-server-2013-routing-e9-1-1-calls-by-using-a-sip-trunk.md">routing di chiamate E9-1-1 tramite trunk SIP in Lync Server 2013</A>.
+> Per informazioni dettagliate sull'utilizzo di una connessione trunk SIP per le chiamate di emergenza, vedere routing delle chiamate al servizio <A href="lync-server-2013-routing-e9-1-1-calls-by-using-a-sip-trunk.md">E9-1-1 tramite un trunk SIP in Lync Server 2013</A>.
 
 
 
 </div>
 
-Il diagramma seguente mostra il modo in cui una chiamata di emergenza viene instradata da Lync Server a PSAP quando si usa un gateway ELIN.
+Nel diagramma seguente viene illustrato in che modo viene instradata una chiamata di emergenza da Lync Server a PSAP quando si utilizza un gateway ELIN.
 
 **Routing delle chiamate E9-1-1 con un gateway ELIN**
 
 ![ea68f88a-0fc4-43d4-9660-79a7e8936df1](images/JJ204919.ea68f88a-0fc4-43d4-9660-79a7e8936df1(OCS.15).jpg "ea68f88a-0fc4-43d4-9660-79a7e8936df1")
 
-1.  Un invito SIP contenente la posizione, il numero di callback del chiamante e l'URL di notifica (facoltativo) e il numero di callback della conferenza vengono instradati a Lync Server.
+1.  Un SIP INVITE contenente la posizione, il numero di callback del chiamante e l'URL di notifica (facoltativo) e il numero di richiamata della conferenza sono instradati a Lync Server.
 
-2.  Lync Server corrisponde al numero di emergenza e quindi instrada la chiamata (in base al valore di **utilizzo PSTN** definito nel criterio di posizione applicabile) a un Mediation Server e da lì a un gateway ELIN.
+2.  Lync Server corrisponde al numero di emergenza e quindi instrada la chiamata (in base al valore di **utilizzo PSTN** definito nei criteri di percorso applicabili) a un Mediation Server e da qui a un gateway ELIN.
 
-3.  Il gateway ELIN instrada la chiamata su un trunk ISDN o CAMA verso la rete PSTN.
+3.  Il gateway ELIN instrada la chiamata su un trunk ISDN o CAMA alla rete PSTN.
 
-4.  La PSTN identifica la chiamata come chiamata di emergenza e la instrada a un router selettivo E9-1-1 nella rete. Il router selettivo E9-1-1 Cerca il numero del chiamante nel database ALI per ottenere la posizione geografica. Il router selettivo E9-1-1 Invia la chiamata al PSAP più appropriato in base alle informazioni sulla posizione recuperate dal database ALI.
+4.  La rete PSTN identifica quindi la chiamata come chiamata di emergenza e la instrada a un router selettivo E9-1-1 nella rete. Tale router selettivo E9-1-1 cerca il numero del chiamante nel database ALI per ottenere la posizione geografica. Il router selettivo E9-1-1 invia la chiamata al punto PSAP più appropriato in base alle informazioni sulla posizione recuperate dal database ALI.
 
-5.  Se sono stati configurati i criteri di posizione per le notifiche, uno o più agenti di sicurezza dell'organizzazione riceveranno un messaggio istantaneo speciale di notifica di emergenza Lync. Questo messaggio compare sempre nella schermata degli addetti alla sicurezza e contiene il nome, il numero di telefono, l'ora e la posizione del chiamante, che consente al personale di sicurezza di rispondere rapidamente al chiamante di emergenza usando un messaggio istantaneo o una voce.
+5.  Se i criteri percorso sono stati configurati per le notifiche, uno o più agenti di sicurezza dell'organizzazione ricevono un messaggio istantaneo speciale di notifica di emergenza di Lync. Questo messaggio viene sempre visualizzato nelle schermate degli addetti alla sicurezza e contiene il nome, il numero di telefono, l'ora e il percorso del chiamante, consentendo al personale di sicurezza di rispondere rapidamente al chiamante di emergenza utilizzando un messaggio istantaneo o una voce.
 
-6.  Se la chiamata viene interrotta prematuramente, PSAP usa il ELIN per contattare direttamente il chiamante. Il gateway ELIN scambia il ELIN per il chiamante.
+6.  Se la chiamata viene interrotta prematuramente, il centro di raccolta delle chiamate di emergenza utilizza il numero ELIN per contattare direttamente il chiamante. Il gateway ELIN scambia i numero ELIN con il numero DID del chiamante.
 
 </div>
 

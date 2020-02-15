@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Preparazione dell'infrastruttura e dei sistemi"
+title: "Lync Server 2013: preparazione dell'infrastruttura e dei sistemi"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183458
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3fc49f5e246e69f600506d990ace7362d9666f1c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 34de50135ff04c7db1b3eda2b65bdebb4ef10273
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747306"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043968"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,41 +35,41 @@ ms.locfileid: "41747306"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-La distribuzione di Lync Server 2013 richiede l'uso di generatore di topologia per definire e pubblicare la struttura della topologia. Per identificare i componenti necessari per la topologia, è possibile usare generatore di topologia per creare e salvare una struttura di topologia. Prima di pubblicare la topologia in Generatore di topologie, eseguire le operazioni seguenti:
+La distribuzione di Lync Server 2013 richiede l'utilizzo di generatore di topologie per definire e pubblicare la progettazione della topologia. Per identificare i componenti necessari per la topologia, è possibile utilizzare Generatore di topologie per creare e salvare una progettazione della topologia. Prima di pubblicare la topologia nel Generatore di topologie, eseguire le operazioni seguenti:
 
-  - Acquisire e installare l'hardware per ogni componente nella progettazione della topologia creata e salvata con generatore di topologia, inclusi tutti i computer necessari (server che eseguono Lync Server 2013, server di database, server che eseguono Internet Information Services ( IIS) e invertire i server proxy, come appropriato), le schede di rete, i dispositivi di bilanciamento del carico hardware e gli strumenti di archiviazione, ad esempio i file server. Per informazioni dettagliate su come definire una topologia che specifichi i componenti necessari per la distribuzione, vedere [definizione e configurazione della topologia in Lync Server 2013](lync-server-2013-defining-and-configuring-the-topology.md). Per informazioni dettagliate sui requisiti hardware per i server, vedere [hardware supportato per Lync server 2013](lync-server-2013-supported-hardware.md) nella documentazione relativa alla supportabilità.
+  - Acquisire e installare l'hardware per ogni componente nella progettazione della topologia creata e salvata tramite Generatore di topologie, inclusi tutti i computer necessari (server che eseguono Lync Server 2013, server di database, server che eseguono Internet Information Services ( IIS) e server proxy inversi, in base alle esigenze), schede di rete, dispositivi di bilanciamento del carico hardware e periferiche di archiviazione, ad esempio file server. Per informazioni dettagliate su come definire una topologia che specifichi i componenti necessari per la distribuzione, vedere [define and Configuring the topologie in Lync Server 2013](lync-server-2013-defining-and-configuring-the-topology.md). Per informazioni dettagliate sui requisiti hardware per i server, vedere [hardware supportato per Lync Server 2013](lync-server-2013-supported-hardware.md) nella documentazione relativa alla supportabilità.
 
-  - Verificare che l'infrastruttura di rete soddisfi i requisiti. Per informazioni dettagliate, vedere [requisiti per l'infrastruttura di rete per Lync Server 2013](lync-server-2013-network-infrastructure-requirements.md) nella documentazione relativa alla pianificazione.
+  - Verificare che l'infrastruttura di rete soddisfi i requisiti. Per informazioni dettagliate, vedere [Network Infrastructure requirements for Lync Server 2013](lync-server-2013-network-infrastructure-requirements.md) nella documentazione relativa alla pianificazione.
 
-  - Configurare servizi di dominio Active Directory. Per pubblicare e abilitare la topologia, è necessario che i server interni siano rappresentati da account di computer in servizi di dominio Active Directory. Questa operazione viene eseguita unendo i computer a servizi di dominio Active Directory. Per informazioni dettagliate sulla preparazione di servizi di [dominio Active Directory per Lync Server 2013](lync-server-2013-preparing-active-directory-domain-services.md).
+  - Configurare servizi di dominio Active Directory. Per pubblicare e abilitare la topologia, è necessario che i server interni siano rappresentati da account computer in Servizi di dominio Active Directory. A tale scopo, i computer vengono aggiunti a Servizi di dominio Active Directory. Per informazioni dettagliate sulla preparazione di servizi di [dominio Active Directory per Lync Server 2013](lync-server-2013-preparing-active-directory-domain-services.md).
 
-  - Creare una condivisione file. I server Standard Edition possono ospitare la condivisione file per il file richiesto, mentre in una distribuzione aziendale la condivisione file non può essere ospitata nel server front-end. Le autorizzazioni e le appartenenze ai gruppi necessarie per la distribuzione e l'impostazione dell'elenco di controllo di accesso (ACL) nella cartella e della condivisione devono essere impostate correttamente per il completamento corretto di generatore di topologie. Devi verificare che la persona che ha eseguito Generatore di topologia disponga delle autorizzazioni e delle appartenenze ai gruppi seguenti:
+  - Creare una condivisione file. I server Standard Edition possono ospitare la condivisione file per il file richiesto, mentre in una distribuzione Enterprise la condivisione file non può essere ospitata sul server Front End. Le autorizzazioni e le appartenenze ai gruppi necessarie per la distribuzione e l'impostazione dell'elenco di controllo di accesso nella cartella e nella condivisione devono essere impostate in modo adeguato per l'esecuzione corretta del Generatore di topologie. È necessario assicurarsi che la persona che esegue Generatore di topologie disponga delle autorizzazioni e delle appartenenze ai gruppi seguenti:
     
-      - Membro degli amministratori locali
+      - Membro del gruppo Administrators locale
     
-      - Membro degli utenti del dominio
+      - Membro del gruppo Domain Users
     
-      - Controllo completo sulla condivisione e la cartella di file Store
+      - Controllo completo sulla condivisione e sulla cartella dell'archivio file
 
-  - Per Enterprise Edition, installare e configurare SQL Server. Per il completamento dell'installazione di SQL Server, il server basato su SQL Server deve essere online e la persona che pubblica la topologia è un amministratore locale di SQL Server e deve essere un membro del gruppo sysadmin di SQL Server nell'istanza di SQL Server.
+  - Per Enterprise Edition, installare e configurare SQL Server. Per la corretta installazione di SQL Server è necessario che il server basato su SQL Server sia online e che la persona che pubblica la topologia sia un amministratore locale sul server SQL e membro del gruppo sysadmin di SQL Server sull'istanza di SQL Server.
 
-Dopo aver completato tutte le attività di preparazione descritte in questo argomento, ma prima di pubblicare la topologia è necessario eseguire anche le altre attività di preparazione, tra cui l'installazione dei sistemi operativi Windows e altro software prerequisito, la configurazione IIS e configurazione di DNS. Per informazioni dettagliate su queste attività, vedere [requisiti di sistema per i server che utilizzano Lync server 2013](lync-server-2013-system-requirements-for-servers-running-lync-server-2013.md), [configurare IIS per Lync Server 2013](lync-server-2013-configure-iis.md)e [preparare l'infrastruttura e i sistemi per Lync Server 2013](lync-server-2013-preparing-the-infrastructure-and-systems.md). È inoltre necessario acquisire familiarità con i client e i requisiti client. Per informazioni dettagliate, vedere [distribuzione di client e dispositivi in Lync Server 2013](lync-server-2013-deploying-clients-and-devices.md).
+Dopo aver completato tutte le attività di preparazione descritte in questo argomento, ma prima di pubblicare la topologia, è necessario eseguire anche le altre attività di preparazione, tra cui l'installazione dei sistemi operativi Windows e degli altri prerequisiti software, l'installazione di IIS e la configurazione di DNS. Per informazioni dettagliate su queste attività, vedere [requisiti di sistema per i server che eseguono Lync server 2013](lync-server-2013-system-requirements-for-servers-running-lync-server-2013.md), [Configure IIS for Lync Server 2013](lync-server-2013-configure-iis.md)e [preparazione dell'infrastruttura e dei sistemi per Lync Server 2013](lync-server-2013-preparing-the-infrastructure-and-systems.md). È inoltre opportuno acquisire familiarità con i client e i relativi requisiti. Per informazioni dettagliate, vedere [Deploying clients and Devices in Lync Server 2013](lync-server-2013-deploying-clients-and-devices.md).
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Configurazione hardware per Lync Server 2013](lync-server-2013-hardware-setup.md)
+  - [Installazione hardware per Lync Server 2013](lync-server-2013-hardware-setup.md)
 
-  - [Installazione del software per Lync Server 2013](lync-server-2013-software-setup.md)
+  - [Configurazione del software per Lync Server 2013](lync-server-2013-software-setup.md)
 
   - [Preparazione di Servizi di dominio Active Directory per Lync Server 2013](lync-server-2013-preparing-active-directory-domain-services.md)
 
   - [Configurare SQL Server per Lync Server 2013](lync-server-2013-configure-sql-server-for-lync-server.md)
 
-  - [Configurare record DNS in Lync Server 2013 per un pool Front End o un server Standard Edition](lync-server-2013-configure-dns-records-for-a-front-end-pool-or-standard-edition-server.md)
+  - [Configurare i record DNS in Lync Server 2013 per un pool Front end o un server Standard Edition](lync-server-2013-configure-dns-records-for-a-front-end-pool-or-standard-edition-server.md)
 
   - [Installare gli strumenti di amministrazione di Lync Server 2013](lync-server-2013-install-lync-server-administrative-tools.md)
 

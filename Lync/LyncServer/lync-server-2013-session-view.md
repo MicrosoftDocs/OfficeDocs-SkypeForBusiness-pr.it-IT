@@ -12,16 +12,16 @@ ms:contentKeyID: 49733641
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6a153899fd484da861088a8e7672a69707e46a59
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7d20d748f9c9754efab768a702f1272bc70d889e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764814"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051298"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41764814"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-03_
+_**Ultimo argomento modificato:** 2012-10-03_
 
-La visualizzazione sessione archivia le informazioni sulle sessioni che hanno record nel database. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
+Nella visualizzazione Session sono archiviate informazioni sulle sessioni per le quali sono presenti record nel database. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
 
 
 <table>
@@ -56,23 +56,23 @@ La visualizzazione sessione archivia le informazioni sulle sessioni che hanno re
 <tbody>
 <tr class="odd">
 <td><p>ConferenceDateTime</p></td>
-<td><p>DateTime</p></td>
-<td><p>A cui si fa riferimento dalla Tabella MediaLine.</p></td>
+<td><p>datetime</p></td>
+<td><p>Riferimento dalla tabella MediaLine.</p></td>
 </tr>
 <tr class="even">
 <td><p>ConferenceURI</p></td>
 <td><p>nvarchar (450)</p></td>
-<td><p>URI conferenza se si tratta di una conferenza o di DialogID se si tratta di una sessione peer-to-peer.</p></td>
+<td><p>URI conferenza nel caso di una conferenza oppure DialogID nel caso di una sessione peer-to-peer.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Correlazione</p></td>
-<td><p>varchar (max)</p></td>
+<td><p>Correlation</p></td>
+<td><p>varchar (massimo)</p></td>
 <td><p>ID correlazione della sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p>DialogCategory</p></td>
 <td><p>po'</p></td>
-<td><p>Categoria finestra di dialogo; 0 è il server di Lync per mediazione server; 1 è Mediation Server per la gamba del gateway PSTN.</p></td>
+<td><p>Categoria della finestra di dialogo; 0 è Lync Server to Mediation Server Leg; 1 è Mediation Server per la gamba del gateway PSTN.</p></td>
 </tr>
 <tr class="odd">
 <td><p>MediationServerBypassFlag</p></td>
@@ -82,38 +82,38 @@ La visualizzazione sessione archivia le informazioni sulle sessioni che hanno re
 <tr class="even">
 <td><p>MediaBypassWarningFlag</p></td>
 <td><p>int</p></td>
-<td><p>Questo campo, se presente, indica perché una chiamata non è stata ignorata anche se gli ID di bypass corrispondono. Per Lync Server, viene definito un solo valore:</p>
-<p>0x0001-ID esclusione sconosciuta per la scheda di rete predefinita</p></td>
+<td><p>Questo campo, se presente, indica il motivo per cui una chiamata non è stata ignorata anche in caso di corrispondenza degli ID bypass. Per Lync Server, viene definito un solo valore:</p>
+<p>0x0001 - ID bypass sconosciuto per la scheda di rete predefinita</p></td>
 </tr>
 <tr class="odd">
 <td><p>StartTime</p></td>
-<td><p>DateTime</p></td>
-<td><p>Chiama ora di inizio.</p></td>
+<td><p>datetime</p></td>
+<td><p>Ora di inizio della chiamata.</p></td>
 </tr>
 <tr class="even">
 <td><p>EndTime</p></td>
-<td><p>DateTime</p></td>
-<td><p>Ora di fine chiamata.</p></td>
+<td><p>datetime</p></td>
+<td><p>Ora di fine della chiamata.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CallerPool</p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>FQDN del pool chiamante.</p></td>
+<td><p>FQDN del pool del chiamante.</p></td>
 </tr>
 <tr class="even">
 <td><p>CalleePool</p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>Nome di dominio completo del pool di chiamate.</p></td>
+<td><p>FQDN del pool del destinatario chiamata.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CallerPAI</p></td>
 <td><p>nvarchar (450)</p></td>
-<td><p>URI di identità p-asserito dal chiamante.</p></td>
+<td><p>URI P-Asserted-Identity del chiamante.</p></td>
 </tr>
 <tr class="even">
 <td><p>CalleePAI</p></td>
 <td><p>nvarchar (450)</p></td>
-<td><p>URI di identità p-Asserted del chiamato.</p></td>
+<td><p>URI P-Asserted-Identity del destinatario chiamata.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CallerEndpoint</p></td>
@@ -123,12 +123,12 @@ La visualizzazione sessione archivia le informazioni sulle sessioni che hanno re
 <tr class="even">
 <td><p>CalleeEndpoint</p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>Nome dell'endpoint del chiamante.</p></td>
+<td><p>Nome dell'endpoint del destinatario chiamata.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CallerUserAgent</p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>Stringa agente utente del chiamante.</p></td>
+<td><p>Stringa dell'agente utente del chiamante.</p></td>
 </tr>
 <tr class="even">
 <td><p>CallerUserAgentType</p></td>
@@ -143,17 +143,17 @@ La visualizzazione sessione archivia le informazioni sulle sessioni che hanno re
 <tr class="even">
 <td><p>CalleeUserAgent</p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>Stringa agente utente del chiamato.</p></td>
+<td><p>Stringa dell'agente utente del destinatario della chiamata.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CalleeUserAgentType</p></td>
 <td><p>smallint</p></td>
-<td><p>Tipo di agente utente per il chiamato. Per informazioni dettagliate, vedere la <a href="lync-server-2013-useragent-table.md">tabella UserAgent in Lync Server 2013</a> .</p></td>
+<td><p>Tipo dell'agente utente per il destinatario chiamata. Per informazioni dettagliate, vedere la <a href="lync-server-2013-useragent-table.md">tabella UserAgent in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p>CalleeUserAgentCategory</p></td>
 <td><p>nvarchar (64)</p></td>
-<td><p>Categoria agente utente per il chiamato. Per informazioni dettagliate, vedere la <a href="lync-server-2013-useragentdef-table-qoe.md">Tabella UserAgentDef (QoE) in Lync Server 2013</a> .</p></td>
+<td><p>Categoria dell'agente utente per il destinatario chiamata. Per informazioni dettagliate, vedere la <a href="lync-server-2013-useragentdef-table-qoe.md">Tabella UserAgentDef (QoE) in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p>CallerURI</p></td>
@@ -163,7 +163,7 @@ La visualizzazione sessione archivia le informazioni sulle sessioni che hanno re
 <tr class="even">
 <td><p>CalleeURI</p></td>
 <td><p>nvarchar (450)</p></td>
-<td><p>URI del chiamato.</p></td>
+<td><p>URI del destinatario della chiamata.</p></td>
 </tr>
 <tr class="odd">
 <td><p>CallPrioirty</p></td>

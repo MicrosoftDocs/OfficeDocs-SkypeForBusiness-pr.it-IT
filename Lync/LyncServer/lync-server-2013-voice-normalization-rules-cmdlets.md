@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: cmdlet regole di normalizzazione vocale'
+title: 'Lync Server 2013: cmdlet per le regole di normalizzazione vocale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184758
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d0ea2374d334a617d7824a073e62f557e6ca9916
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1ce93f84f977630ec4b0764b67ce4622c9b81f53
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757190"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041536"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="voice-normalization-rules-cmdlets-in-lync-server-2013"></a>Cmdlet delle regole di normalizzazione vocale in Lync Server 2013
+# <a name="voice-normalization-rules-cmdlets-in-lync-server-2013"></a>Cmdlet per le regole di normalizzazione vocale in Lync Server 2013
 
 </div>
 
@@ -35,37 +35,37 @@ ms.locfileid: "41757190"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-20_
+_**Ultimo argomento modificato:** 2012-06-20_
 
-Le regole di normalizzazione vocale vengono usate per convertire un requisito di selezione telefonica, ad esempio la chiamata a 9 per accedere a una linea esterna, al formato numero di telefono E. 164 usato da Microsoft Lync Server 2013.
+Le regole di normalizzazione vocale vengono utilizzate per convertire un requisito di composizione telefonica (ad esempio, comporre 9 per accedere a una linea esterna) al formato di numero di telefono E. 164 utilizzato da Microsoft Lync Server 2013.
 
 <div>
 
-## <a name="voice-normalization-rules-cmdlets"></a>Cmdlet regole di normalizzazione vocale
+## <a name="voice-normalization-rules-cmdlets"></a>Cmdlet per le regole di normalizzazione vocali
 
-I cmdlet seguenti possono essere usati per gestire le regole di normalizzazione vocale.
+I cmdlet seguenti possono essere utilizzati per la gestione delle regole di normalizzazione vocali.
 
-**Regole di normalizzazione vocale**
-
-  - <span></span>  
-    [Get-CsVoiceNormalizationRule](https://technet.microsoft.com/en-us/library/Gg398393(v=OCS.15))
+**Regole di normalizzazione vocali**
 
   - <span></span>  
-    [New-CsVoiceNormalizationRule](https://technet.microsoft.com/en-us/library/Gg398240(v=OCS.15))
+    [Get-CsVoiceNormalizationRule](https://technet.microsoft.com/library/Gg398393(v=OCS.15))
 
   - <span></span>  
-    [Remove-CsVoiceNormalizationRule](https://technet.microsoft.com/en-us/library/Gg398501(v=OCS.15))
+    [New-CsVoiceNormalizationRule](https://technet.microsoft.com/library/Gg398240(v=OCS.15))
 
   - <span></span>  
-    [Set-CsVoiceNormalizationRule](https://technet.microsoft.com/en-us/library/Gg398491(v=OCS.15))
+    [Remove-CsVoiceNormalizationRule](https://technet.microsoft.com/library/Gg398501(v=OCS.15))
 
   - <span></span>  
-    [Test-CsVoiceNormalizationRule](https://technet.microsoft.com/en-us/library/Gg399003(v=OCS.15))
+    [Set-CsVoiceNormalizationRule](https://technet.microsoft.com/library/Gg398491(v=OCS.15))
+
+  - <span></span>  
+    [Test-CsVoiceNormalizationRule](https://technet.microsoft.com/library/Gg399003(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [New-CsVoiceRegex](https://technet.microsoft.com/en-us/library/Gg412751(v=OCS.15))
+    [New-CsVoiceRegex](https://technet.microsoft.com/library/Gg412751(v=OCS.15))
 
 </div>
 
@@ -74,7 +74,7 @@ I cmdlet seguenti possono essere usati per gestire le regole di normalizzazione 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Cmdlet Enterprise Voice in Lync Server 2013](lync-server-2013-enterprise-voice-cmdlets.md)  
+[Cmdlet di VoIP aziendale in Lync Server 2013](lync-server-2013-enterprise-voice-cmdlets.md)  
 
 
 [Blog di PowerShell per Lync Server](http://go.microsoft.com/fwlink/p/?linkid=203150)  

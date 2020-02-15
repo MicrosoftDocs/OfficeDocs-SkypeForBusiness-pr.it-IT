@@ -12,16 +12,16 @@ ms:contentKeyID: 48184261
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 27826948f9206c6053b166d901145ed6785a0189
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: dfa0d3ed6b83d610ee4d92c76487f2dbfb50f89e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755490"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050928"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,53 +35,53 @@ ms.locfileid: "41755490"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-05_
+_**Ultimo argomento modificato:** 2012-09-05_
 
-In Microsoft Lync Server 2013 viene usato il monitoraggio per raccogliere le informazioni sull'utilizzo e i dati di qualità dell'esperienza (QoE) sulle sessioni di comunicazione coinvolte dagli utenti. Una sessione è un termine generico che copre la connessione di un utente a:
+In Microsoft Lync Server 2013, il monitoraggio viene utilizzato per raccogliere informazioni sull'utilizzo e i dati QoE (Quality of Experience) sulle sessioni di comunicazione coinvolte dagli utenti. Il termine sessione è un termine generico riferito alla connessione di un utente a:
 
   - Conferenza
 
-  - Modalità di conferenza (ad esempio condivisione audio/video o applicazioni)
+  - Una modalità di conferenza, ad esempio audio/video o di condivisione delle applicazioni
 
-  - Un altro utente tramite una conversazione peer-to-peer, ad esempio la messaggistica istantanea o una chiamata audio
+  - Un altro utente tramite una conversazione peer-to-peer come la messaggistica istantanea o una chiamata audio
 
 <div>
 
 
 > [!NOTE]  
-> Lync Server 2013 tiene traccia delle informazioni relative a ogni sessione: chi ha chiamato chi; quali endpoint sono stati usati nella sessione; durata della sessione Qual è stata la qualità percepita della sessione; E così via. Tuttavia, Lync Server non registra e archivia la chiamata effettiva stessa. Che include anche le sessioni di messaggistica istantanea: Sebbene Lync Server registri informazioni sulle sessioni di messaggistica istantanea, non mantiene un record di ogni messaggio istantaneo inviato durante la sessione.
+> Lync Server 2013 tiene conto delle informazioni su ogni sessione: chi ha chiamato chi; quali endpoint sono stati utilizzati nella sessione; durata della sessione. Qual è la qualità percepita della sessione; E così via. Tuttavia, Lync Server non registra e archivia la chiamata vera e propria. Che include anche le sessioni di messaggistica istantanea: anche se Lync Server registra informazioni sulle sessioni di messaggistica istantanea, non gestisce un record di ogni messaggio istantaneo inviato durante la sessione.
 
 
 
 </div>
 
-Le informazioni dettagliate sulle chiamate raccolte da Lync Server possono essere usate per qualsiasi numero di usi, tra cui:
+Le informazioni dettagliate sulle chiamate raccolte da Lync Server possono essere utilizzate per qualsiasi numero di utilizzi, tra cui:
 
-  - **Return on Investment (ROI)**. Gli amministratori possono confrontare i dati di utilizzo raccolti da Monitoring Server in base a dati simili raccolti per il sistema di telefonia precedente per mostrare il risparmio dei costi e giustificare la distribuzione di Lync Server.
+  - **Rendimento dell'investimento (ROI)**. Gli amministratori possono confrontare i dati di utilizzo raccolti da Monitoring Server a dati simili raccolti per il sistema di telefonia precedente per poter mostrare risparmi sui costi e contribuire a giustificare la distribuzione di Lync Server.
 
-  - **Gestione inventario dispositivi**. Le informazioni sulla gestione degli asset consentono agli amministratori di identificare i vecchi dispositivi ancora in uso che devono essere sostituiti, nonché di identificare i dispositivi costosi che non sembrano essere sempre usati.
+  - **Gestione dell'inventario dei dispositivi**. Le informazioni di gestione delle risorse consentono agli amministratori di individuare i dispositivi obsoleti ancora in uso che devono essere sostituiti, nonché identificare i dispositivi costosi che risultano inutilizzati.
 
-  - Help desk. La risoluzione dei problemi dei dati consente agli ingegneri del supporto di determinare il motivo per cui la chiamata di un utente non è riuscita e di farlo senza dover raccogliere log lato server o client. Queste informazioni possono essere facilmente accessibili e comprese dal personale di supporto che non ha una profonda conoscenza tecnica di Microsoft Lync 2013 e Lync Server 2013.
+  - Supporto tecnico. I dati sulla risoluzione dei problemi consentono ai tecnici dei servizi di supporto di stabilire le cause di una chiamata non riuscita, senza dover raccogliere log sul lato server o client. Tali informazioni possono essere facilmente accessibili e intese da personale di supporto che non dispone di una conoscenza approfondita tecnica di Microsoft Lync 2013 e Lync Server 2013.
 
-  - **Risoluzione dei problemi di sistema**. Consente agli amministratori di rilevare problemi importanti che potrebbero impedire agli utenti finali di eseguire attività di base, ad esempio partecipare a una conferenza, stabilire una chiamata o inviare un messaggio istantaneo.
+  - **Risoluzione dei problemi di sistema**. Gli amministratori hanno la possibilità di rilevare i principali problemi che possono impedire agli utenti finali di eseguire attività di base come partecipare a una conferenza, eseguire una chiamata o inviare un messaggio istantaneo.
 
-Oltre a queste informazioni di base sulle chiamate, il server di monitoraggio offre anche un meccanismo che consente agli endpoint SIP (ad esempio Lync 2013) di fornire informazioni di risoluzione dei problemi a cui il server non avrebbe altrimenti accesso:
+Oltre a queste informazioni sulla chiamata di base, il Monitoring Server fornisce anche un meccanismo che consente agli endpoint SIP (come Lync 2013) di fornire informazioni sulla risoluzione dei problemi a cui il server non avrebbe altrimenti accesso:
 
-  - **Metriche multimediali che incidono sulla qualità**. Queste metriche trattano la trasmissione effettiva della chiamata stessa; in altre cose, essi includono una sorta di log di viaggio durante i viaggi di chiamata attraverso la rete. Queste metriche (che includono elementi come perdita di pacchetti, jitter e tempi di andata e ritorno) offrono informazioni su ciò che è accaduto alla chiamata dal momento in cui ha lasciato l'endpoint fino al momento in cui è arrivato all'endpoint dell'altra persona.
+  - **Metriche che influiscono sulla qualità**. Queste metriche riguardano l'effettiva trasmissione della chiamata, ovvero offrono una sorta di registro di viaggio del percorso della chiamata in rete. Queste metriche, che includono dati come perdita di pacchetti, instabilità e tempi di round trip, offrono informazioni su cosa accade per la chiamata dal momento in cui lascia l'endpoint di partenza al momento in cui raggiunge l'endpoint di destinazione.
 
-  - **Problemi segnalati all'utente finale**. Queste metriche includono notifiche di qualità scadente che Lync 2013 presenta agli utenti finali nei casi in cui siano troppo lontani da un microfono, che parli troppo dolcemente, che abbiano una connessione di rete scadente o che abbiano una qualità scadente perché un altro programma nel computer è utilizzo delle risorse disponibili.
+  - **Problemi segnalati all'utente finale**. Queste metriche includono notifiche di qualità scadente che Lync 2013 presenta agli utenti finali nei casi in cui sono troppo lontani da un microfono, parlando troppo piano, hanno una connessione di rete scadente o stanno vivendo una qualità scadente perché un altro programma del computer è utilizzo delle risorse disponibili.
 
-  - **Informazioni sull'ambiente**. Queste metriche denominano fattori di qualità come il tipo di microfono e gli altoparlanti usati, se l'utente è connesso tramite una connessione VPN e se l'utente si trova in una connessione wireless.
+  - **Informazioni sull'ambiente**. Queste metriche offrono dati dettagliati su aspetti che influiscono sulla qualità delle chiamate, come il tipo di microfono e altoparlanti in uso, se l'utente è connesso tramite VPN e se l'utente sta utilizzando una connessione wireless.
 
-Alla fine di ogni chiamata, gli endpoint conformi a SIP trasmettono automaticamente queste informazioni al server front-end che facilita la chiamata. Non è necessario eseguire alcuna operazione per ottenere gli endpoint per trasmettere tali informazioni; Questo comportamento è incorporato nel protocollo SIP. Tuttavia, se si vogliono raccogliere e archiviare tali informazioni, è necessario installare e abilitare il monitoraggio. Se si installa e si Abilita il monitoraggio, le informazioni sulle chiamate vengono raccolte dagli agenti in uso nel server front-end e inoltrate a una coppia di database di SQL Server.
+Al termine di ogni chiamata, gli endpoint conformi a SIP trasmettono automaticamente queste informazioni al Front End Server che ha inoltrato la chiamata. Non è necessario eseguire alcuna operazione per fare in modo che gli endpoint trasmettano tali informazioni, perché questo comportamento è incorporato nel protocollo SIP. Se si desidera raccogliere e archiviare tali informazioni, tuttavia, è necessario installare e abilitare il monitoraggio. In questo modo, le informazioni sulle chiamate vengono raccolte dagli agenti in esecuzione nel Front End Server e inoltrate a una coppia di database di SQL Server.
 
-Si noti che il processo di installazione e configurazione del monitoraggio è stato semplificato in Lync Server 2013. Nelle versioni precedenti del software il monitoraggio richiedeva un ruolo di server di monitoraggio distinto, che in genere significava un computer separato da accantonare per l'uso come server di monitoraggio. In Lync Server 2013, tuttavia, il ruolo del server di monitoraggio è stato eliminato. Il servizio di monitoraggio, sotto forma di "agenti di raccolta dati unificati", è invece stato collocato in tutti i server front-end. Questo ha almeno due vantaggi principali. Collocazione del servizio di monitoraggio:
+Si noti che il processo di installazione e configurazione del monitoraggio è stato semplificato in Lync Server 2013. Nelle versioni precedenti del software, il monitoraggio richiedeva un ruolo di Monitoring Server separato, che in genere indicava un computer separato accantonato per l'utilizzo come Monitoring Server. In Lync Server 2013, tuttavia, il ruolo Monitoring Server è stato eliminato. Al contrario, il servizio di monitoraggio, sotto forma di "agenti di raccolta dati unificati", è stato collocato in tutti i Front End Server. Sono presenti almeno due vantaggi principali. Collocazione del servizio di monitoraggio:
 
-  - Riduce il numero di ruoli del server necessari per l'implementazione di Lync Server 2013. Il decremento del ruolo del server di monitoraggio consente inoltre di ridurre i costi eliminando la necessità di gestire server dedicati per il monitoraggio.
+  - Consente di ridurre il numero di ruoli del server necessari per l'implementazione di Lync Server 2013. La rimozione del ruolo Monitoring Server contribuisce anche a ridurre i costi, eliminando la necessità di gestire server dedicati per il monitoraggio.
 
-  - Riduce la complessità della configurazione e dell'amministrazione di Lync Server 2013. Collocando i servizi di monitoraggio in ogni server front-end non è più necessario installare, configurare e gestire il ruolo del server di monitoraggio.
+  - Riduce la complessità dell'installazione e dell'amministrazione di Lync Server 2013. La collocazione dei servizi di monitoraggio in ogni Front End Server significa che non è più necessario installare, configurare e gestire il ruolo Monitoring Server.
 
-Per altre informazioni, vedere l'argomento [distribuzione di monitoraggio in Lync server 2013](lync-server-2013-deploying-monitoring.md) nella Guida alla distribuzione di lync Server 2013 2013.
+Per ulteriori informazioni, vedere l'argomento [Deploying Monitoring in Lync server 2013](lync-server-2013-deploying-monitoring.md) nella Guida alla distribuzione di lync Server 2013 2013.
 
 </div>
 

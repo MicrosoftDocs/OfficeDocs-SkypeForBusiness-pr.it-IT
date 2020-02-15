@@ -12,20 +12,20 @@ ms:contentKeyID: 63969574
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7932e4cb7a7a9d74b945dcd60c2a1211ca5af694
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b67831b6dbcd7dae12f9b19dd71f2512a8807189
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733956"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043488"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="check-trunk-configuration-against-a-phone-number-in-lync-server-2013"></a>Verificare la configurazione del trunk in base a un numero di telefono in Lync Server 2013
+# <a name="check-trunk-configuration-against-a-phone-number-in-lync-server-2013"></a>Controllare la configurazione del trunk in base a un numero di telefono in Lync Server 2013
 
 </div>
 
@@ -35,7 +35,7 @@ ms.locfileid: "41733956"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-05-20_
+_**Ultimo argomento modificato:** 2014-05-20_
 
 
 <table>
@@ -49,13 +49,13 @@ _**Argomento Ultima modifica:** 2014-05-20_
 <td><p>Mensile</p></td>
 </tr>
 <tr class="even">
-<td><p>Strumento di test</p></td>
+<td><p>Strumento di testing</p></td>
 <td><p>Windows PowerShell</p></td>
 </tr>
 <tr class="odd">
 <td><p>Autorizzazioni necessarie</p></td>
-<td><p>Quando si esegue localmente tramite Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
-<p>Quando si esegue usando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga delle autorizzazioni per eseguire il cmdlet Test-CsTrunkConfiguration. Per visualizzare un elenco di tutti i ruoli RBAC che possono usare questo cmdlet, eseguire il comando seguente dal prompt di Windows PowerShell:</p>
+<td><p>Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
+<p>Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet Test-CsTrunkConfiguration. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</p>
 <p><code>Get-CsAdminRole | Where-Object {$_.Cmdlets -match &quot;Test-CsTrunkConfiguration&quot;}</code></p></td>
 </tr>
 </tbody>
@@ -66,43 +66,43 @@ _**Argomento Ultima modifica:** 2014-05-20_
 
 ## <a name="description"></a>Descrizione
 
-Trunk SIP connettere la rete VoIP aziendale interna di Lync Server a una delle opzioni seguenti:
+Trunk SIP connettere la rete VoIP aziendale interna di Lync Server a una delle seguenti operazioni:
 
-  - Rete PSTN (Public Switched Telephone Network).
+  - La rete PSTN (Public Switched Telephone Network).
 
-  - IP-PBX (Public Branch Exchange).
+  - Un PBX (IP-Public Branch Exchange).
 
   - Un session border controller (SBC).
 
-Il cmdlet Test-CsTrunkConfiguration verifica che un numero di telefono (come composto da un utente) possa essere convertito nella rete e. 164 e instradato su un trunk SIP specificato.
+Il cmdlet Test-CsTrunkConfiguration verifica che il numero di telefono (come composto da un utente) possa essere convertito nella rete e. 164 e instradato su un trunk SIP specificato.
 
 </div>
 
 <div>
 
-## <a name="running-the-test"></a>Eseguire il test
+## <a name="running-the-test"></a>Esecuzione del test
 
-Per eseguire il cmdlet Test-CsTrunkConfiguration, è necessario prima di tutto utilizzare il cmdlet Get-CsTrunkConfiguration per recuperare un'istanza delle impostazioni di configurazione del trunk SIP. Questa istanza viene quindi inviata tramite pipe a Test-CsTrunkConfiguration:
+Per eseguire il cmdlet Test-CsTrunkConfiguration, è innanzitutto necessario utilizzare il cmdlet Get-CsTrunkConfiguration per recuperare un'istanza delle impostazioni di configurazione del trunk SIP. l'istanza viene quindi inviata tramite pipe a Test-CsTrunkConfiguration:
 
 `Get-CsTrunkConfiguration -Identity "Global" | Test-CsTrunkConfiguration -DialedNumber "12065551219"`
 
-L'uso di Test-CsTrunkConfiguration senza prima eseguire Get-CsTrunkConfiguration non funziona. Ad esempio, questo comando avrà esito negativo senza restituire i dati:
+L'esecuzione di Test-CsTrunkConfiguration senza prima esecuzione di Get-CsTrunkConfiguration non funzionerà. Ad esempio, questo comando avrà esito negativo senza restituire alcun dato:
 
 `Test-CsTrunkConfiguration -DialedNumber "12065551219" -TrunkConfiguration "Global"`
 
-Se si hanno più raccolte di impostazioni di configurazione trunk SIP, è possibile usare un comando simile al seguente per testare contemporaneamente ogni raccolta con lo stesso numero di telefono:
+Se si dispone di più raccolte di impostazioni di configurazione del trunk SIP, è possibile utilizzare un comando simile al seguente per testare contemporaneamente ogni raccolta con lo stesso numero di telefono:
 
 `Get-CsTrunkConfiguration | Test-CsTrunkConfiguration -DialedNumber "12065551219"`
 
-Per altre informazioni, vedere la documentazione della Guida relativa al cmdlet Test-CsTrunkConfiguration.
+Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmdlet Test-CsTrunkConfiguration.
 
 </div>
 
 <div>
 
-## <a name="determining-success-or-failure"></a>Determinare l'esito positivo o negativo
+## <a name="determining-success-or-failure"></a>Determinazione dell'esito positivo o negativo
 
-Se Test-CsTrunkConfiguration può effettuare una chiamata al numero composto, il numero di telefono tradotto (nel formato E. 164) e la regola usata per tradurre il numero di telefono verranno visualizzati sullo schermo:
+Se Test-CsTrunkConfiguration può effettuare una chiamata al numero composto, il numero di telefono convertito (nel formato E. 164) e la regola utilizzata per tradurre il numero di telefono verranno entrambi visualizzati sullo schermo:
 
 TranslatedNumber MatchingRule
 
@@ -110,7 +110,7 @@ TranslatedNumber MatchingRule
 
 \+12065551219 globale/Redmond
 
-Se il test ha esito negativo, Test-CsTrunkConfiguration restituirà valori di proprietà vuoti:
+Se il test ha esito negativo, Test-CsTrunkConfiguration restituirà i valori della proprietà Empty:
 
 TranslatedNumber MatchingRule
 
@@ -120,15 +120,15 @@ TranslatedNumber MatchingRule
 
 <div>
 
-## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non essere riuscito
+## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Se Test-CsTrunkConfiguration non restituisce una corrispondenza che in genere indica che le impostazioni di configurazione del trunk test non hanno una regola di traduzione del numero di chiamata in uscita in grado di convertire il numero composto nel formato E. 164. Per recuperare le regole di traduzione assegnate a una raccolta di impostazioni di configurazione trunk, è possibile usare una sintassi simile alla seguente:
+Se Test-CsTrunkConfiguration non restituisce una corrispondenza che in genere indica che le impostazioni di configurazione del trunk in fase di test non dispongono di una regola di conversione dei numeri di chiamata in uscita in grado di convertire il numero composto nel formato E. 164. Per recuperare le regole di conversione assegnate a una raccolta di impostazioni di configurazione del trunk, è possibile utilizzare una sintassi simile alla seguente:
 
 `Get-CsTrunkConfiguration -Identity "global" | Select-Object -ExpandProperty OutboundTranslationRulesList`
 
-Che restituisce informazioni simili a queste per ogni regola di traduzione:
+Che restituisce informazioni simili a queste per ogni regola di conversione:
 
-Descrizione: numeri di telefono senza codice paese o prefisso.
+Descrizione: numeri di telefono senza codice di paese o indicativo di località.
 
 Motivo: ^\\+ (\\d\*) $
 
@@ -136,7 +136,7 @@ Motivo: ^\\+ (\\d\*) $
 
 Nome: NoAreaCode
 
-A questo punto, controlla il valore della proprietà pattern (che è una stringa di [espressione regolare](http://go.microsoft.com/fwlink/?linkid=400464) ) per verificare se una delle regole di traduzione è configurata per gestire il numero composto. In caso contrario, sarà necessario modificare una delle regole esistenti (Set-CsOutboundTranslationRule) oppure usare il cmdlet New-CsOutboundTranslationRule per aggiungere una nuova regola alla raccolta.
+A questo punto, è possibile controllare il valore della proprietà pattern (ovvero una stringa di [espressione regolare](http://go.microsoft.com/fwlink/?linkid=400464) ) per verificare se una o più regole di conversione sono configurate per gestire il numero composto. In caso contrario, è necessario modificare una delle regole esistenti (Set-CsOutboundTranslationRule) oppure utilizzare il cmdlet New-CsOutboundTranslationRule per aggiungere una nuova regola all'insieme.
 
 </div>
 

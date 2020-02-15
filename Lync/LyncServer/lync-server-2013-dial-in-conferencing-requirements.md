@@ -1,5 +1,5 @@
 ---
-title: Requisiti per i servizi di conferenza telefonica con accesso esterno di Lync Server 2013
+title: Requisiti per le conferenze telefoniche con accesso esterno di Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184969
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0c54e162aeda43730dea471732124023588e9041
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b80ab9db6b565530db211db8aa47e2e00cbd9cf2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762284"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044718"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="dial-in-conferencing-requirements-in-lync-server-2013"></a>Requisiti per i servizi di conferenza telefonica con accesso esterno in Lync Server 2013
+# <a name="dial-in-conferencing-requirements-in-lync-server-2013"></a>Requisiti per le conferenze telefoniche con accesso esterno in Lync Server 2013
 
 </div>
 
@@ -35,37 +35,37 @@ ms.locfileid: "41762284"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-30_
+_**Ultimo argomento modificato:** 2012-09-30_
 
-Prima di avviare il processo di distribuzione di Lync Server 2013 è necessario pianificare le operazioni seguenti:
+Prima di avviare il processo di distribuzione di Lync Server 2013, è necessario pianificare le operazioni seguenti:
 
-  - La configurazione da usare per la connessione alla rete PSTN (Public Switched Telephone Network)
+  - La configurazione da utilizzare per la connessione alla rete PSTN (Public Switched Telephone Network)
 
-  - Strategia per l'assegnazione di aree per i servizi di conferenza telefonica con accesso esterno ai numeri di telefono
+  - La strategia per l'assegnazione delle aree di conferenza telefonica con accesso esterno ai numeri di chiamata in ingresso
 
-  - Strategia per la creazione di directory conferenza
+  - La strategia per la creazione di directory conferenze
 
 <div>
 
 ## <a name="planning-for-dial-in-pstn-connectivity"></a>Pianificazione della connettività PSTN con accesso esterno
 
-I servizi di conferenza telefonica con accesso esterno richiedono almeno un Mediation Server e almeno un gateway PSTN.
+Le conferenze telefoniche con accesso esterno richiedono almeno un Mediation Server e almeno un gateway PSTN.
 
-È possibile distribuire un Mediation Server in un sito centrale o in un sito di succursale. In un sito centrale è possibile collocare un Mediation Server in un pool Front-end o in un server Standard Edition oppure distribuirlo in un server o un pool autonomo. In un sito di succursale è possibile distribuire un Mediation Server in un server autonomo o come componente di Survivable Branch Appliance.
+È possibile distribuire un Mediation Server in un sito centrale o in un sito di succursale. In un sito centrale è possibile collocare un Mediation Server in un pool Front end o in un server Standard Edition oppure è possibile distribuirlo in un server autonomo o in un pool. In un sito di succursale è possibile distribuire un Mediation Server in un server autonomo o come componente del Survivable Branch Appliance.
 
-È possibile distribuire un gateway PSTN in un sito centrale o in un sito di succursale. In un sito di succursale il gateway PSTN può essere autonomo o un componente dell'appliance Survivable Branch.
+È possibile distribuire un gateway PSTN in un sito centrale o in un sito di succursale. In un sito di succursale, il gateway PSTN può essere autonomo o come componente del Survivable Branch Appliance.
 
 <div>
 
 
 > [!NOTE]  
-> I servizi di conferenza telefonica con accesso esterno non usano il bypass multimediale perché un/V Conferencing Server non supporta il bypass multimediale.
+> Le conferenze telefoniche con accesso esterno non utilizzano il bypass multimediale perché A/V Conferencing Server non supporta il bypass multimediale.
 
 
 
 </div>
 
-Per informazioni dettagliate sulla pianificazione della configurazione per Mediation Server e gateway PSTN per i servizi di conferenza telefonica con accesso esterno, vedere [componenti e topologie per Mediation Server in Lync server 2013](lync-server-2013-components-and-topologies-for-mediation-server.md) nella documentazione relativa alla pianificazione.
+Per informazioni dettagliate sulla pianificazione della configurazione per il Mediation Server e i gateway PSTN per le conferenze telefoniche con accesso esterno, vedere [componenti e topologie per Mediation Server in Lync server 2013](lync-server-2013-components-and-topologies-for-mediation-server.md) nella documentazione relativa alla pianificazione.
 
 </div>
 
@@ -73,43 +73,43 @@ Per informazioni dettagliate sulla pianificazione della configurazione per Media
 
 <div>
 
-## <a name="planning-for-dial-in-conferencing-regions"></a>Pianificazione per le aree di conferenza telefonica con accesso esterno
+## <a name="planning-for-dial-in-conferencing-regions"></a>Pianificazione delle aree di conferenza telefonica con accesso esterno
 
-Durante la configurazione della chiamata in ingresso, è possibile creare piani di chiamata e numeri di accesso per i servizi di conferenza telefonica I dial plan sono insiemi di regole di normalizzazione che specificano il numero e il modello di cifre in un numero di telefono e traducono il numero di telefono nel formato standard E. 164 per il routing delle chiamate. I numeri di accesso per i servizi di conferenza telefonica con chiamata in ingresso sono i numeri che partecipano a una conferenza.
+Durante la configurazione della chiamata in ingresso, è possibile creare numeri di accesso esterno e dial plan. I dial plan sono insiemi di regole di normalizzazione che specificano il numero e il modello di cifre di un numero di telefono e traducono il numero di telefono nel formato E. 164 standard per il routing delle chiamate. Le conferenze telefoniche con accesso esterno sono i numeri che i partecipanti chiamano per partecipare a una conferenza.
 
-Tutte le conferenze telefoniche con accesso esterno devono essere associate ad almeno un dial plan. Le aree dei servizi di conferenza telefonica con accesso esterno associano un numero di telefono per i servizi di conferenza telefonica con dial plan. Quando si configura un dial plan, si specifica l'area dei servizi di conferenza telefonica con accesso esterno che si applica al dial plan. Quando si crea il numero di accesso per la chiamata in ingresso, si selezionano le aree geografiche che associano il numero di accesso con i dial plan appropriati.
+Ogni numero di accesso per le conferenze telefoniche in ingresso deve essere associato ad almeno un dial plan. Le aree di conferenza telefonica con accesso esterno associano un numero di telefono per le conferenze telefoniche con dial plan. Quando si configura un dial plan, è necessario specificare l'area di conferenza telefonica con accesso esterno che si applica al dial plan. Quando si crea il numero di accesso esterno, si selezionano le aree geografiche che associano il numero di accesso ai dial plan corretti.
 
-Quando si crea un dial plan, si specifica l'ambito del dial plan: ambito utente, ambito del pool o ambito del sito. A ogni utente viene assegnato il dial plan dall'ambito più ristretto che si applica all'utente. Ad esempio, a un utente viene assegnato un dial plan a livello di utente, se si applica. Se non si applica un dial plan a livello di utente, all'utente viene assegnato un dial plan a livello di pool. Se non si applica un dial plan a livello di pool, all'utente viene assegnato un dial plan a livello di sito. Se non si applica un dial plan a livello di sito, all'utente viene assegnato il dial plan globale.
+Quando si crea un dial plan, è necessario specificare l'ambito del dial plan: ambito utente, ambito del pool o ambito del sito. A ogni utente viene assegnato il dial plan dall'ambito più stretto applicato all'utente. Ad esempio, a un utente viene assegnato un dial plan a livello di utente, se si applica. Se non si applica un dial plan a livello di utente, all'utente viene assegnato un dial plan a livello di pool. Se non si applica un dial plan a livello di pool, all'utente viene assegnato un dial plan a livello di sito. Se non si applica un dial plan a livello di sito, all'utente viene assegnato il dial plan globale.
 
-Prima di configurare i dial plan, è importante pianificare il nome e l'uso delle aree geografiche. Le considerazioni seguenti si applicano alle aree dei servizi di conferenza telefonica con accesso esterno:
+Prima di configurare i dial plan, è importante pianificare la modalità di denominazione e l'utilizzo delle aree geografiche. Le considerazioni seguenti sono valide per le aree di conferenza telefonica con accesso esterno:
 
-  - In genere un'area geografica è associata a un ufficio o a un gruppo di uffici.
+  - Una regione è in genere un'area geografica associata a un ufficio o a un gruppo di uffici.
 
-  - Le lingue sono associate ai numeri di accesso per la chiamata in ingresso. Se si supportano aree geografiche con più lingue, è necessario decidere come definire le aree per il supporto di più lingue. Ad esempio, è possibile definire più aree in base a una combinazione di geografia e lingua oppure definire una singola area geografica in base alla geografia e avere un numero di accesso esterno diverso per ogni lingua.
+  - Le lingue sono associate ai numeri di accesso esterno. Se si supportano aree geografiche con più lingue, è necessario decidere in che modo si desidera definire le aree per il supporto di più lingue. Ad esempio, è possibile definire più aree in base a una combinazione di geografia e lingua oppure definire una singola area geografica in base alla geografia e disporre di un numero di accesso esterno diverso per ogni lingua.
 
-  - Quando un utente pianifica una riunione, per impostazione predefinita la riunione usa l'area specificata dal dial plan dell'utente.
+  - Quando un utente pianifica una riunione, per impostazione predefinita la riunione utilizza l'area specificata dal dial plan dell'utente.
 
-  - Per impostazione predefinita, tutti i numeri di accesso per le connessioni in ingresso per l'area geografica sono inclusi nell'invito alla riunione.
+  - Per impostazione predefinita, tutti i numeri di accesso esterno per l'area sono inclusi nell'invito alla riunione.
 
-  - È importante assegnare un nome alle aree geografiche in modo che siano chiaramente riconoscibili. L'utente può usare i nomi delle aree geografiche per modificare l'area geografica di una riunione in modo da includere nell'invito diversi numeri di accesso. Quando gli utenti usano Outlook per pianificare una riunione, l'utente usa il componente aggiuntivo riunione online per Lync 2013 per modificare l'area geografica.
+  - È importante assegnare un nome alle aree geografiche in modo che siano chiaramente riconoscibili. L'utente può utilizzare i nomi delle aree geografiche per modificare l'area di una riunione in modo che i numeri di accesso diversi siano inclusi nell'invito. Quando gli utenti utilizzano Outlook per pianificare una riunione, l'utente utilizza il componente aggiuntivo per riunioni online per Lync 2013 per modificare l'area geografica.
 
-  - Le aree geografiche devono essere progettate in modo che tutti gli invitati che desiderano connettersi a una conferenza possano visualizzare un numero di accesso locale nell'invito alla conferenza.
+  - Le aree geografiche devono essere progettate in modo che qualsiasi invitato che desidera comporre una conferenza possa visualizzare un numero di accesso locale nell'invito alla conferenza.
 
-  - È possibile configurare l'ordine in cui i numeri di accesso all'interno di un'area vengono visualizzati nella pagina delle impostazioni di conferenza telefonica con accesso esterno (e, di conseguenza, nell'ordine in cui vengono visualizzati nell'invito alla conferenza) usando i cmdlet di Lync Server Management Shell.
+  - È possibile configurare l'ordine in cui i numeri di accesso all'interno di un'area vengono visualizzati nella pagina Impostazioni conferenza telefonica con chiamata in ingresso (e, di conseguenza, nell'ordine in cui vengono visualizzati nell'invito alla conferenza) utilizzando i cmdlet di Lync Server Management Shell.
 
-  - Qualsiasi utente da qualsiasi luogo può chiamare un numero di accesso esterno per partecipare a una conferenza.
+  - Qualsiasi utente da qualsiasi percorso può chiamare qualsiasi numero di accesso esterno per partecipare a una conferenza.
 
 </div>
 
 <div>
 
-## <a name="planning-for-conference-directories"></a>Pianificazione per le directory conferenza
+## <a name="planning-for-conference-directories"></a>Pianificazione delle directory conferenze
 
-Le directory conferenza mantengono un mapping tra l'ID riunione alfanumerico usato da un partecipante per partecipare a una conferenza quando si usa Lync 2013 e l'ID conferenza solo numerico usato da un partecipante di conferenza telefonica con accesso esterno per partecipare alla conferenza. Il formato dell'ID conferenza è il seguente:
+Le directory conferenze mantengono un mapping tra l'ID riunione alfanumerico utilizzato da un partecipante per partecipare a una conferenza quando si utilizza Lync 2013 e l'ID conferenza solo numerico utilizzato da un partecipante di conferenze telefoniche con accesso esterno per partecipare alla conferenza. Il formato dell'ID conferenza è il seguente:
 
     <housekeeping digit (1 digit)><conference directory (usually 1-2 digits)><conference number (variable number of digits><check digit (1 digit)>
 
-La creazione di più directory conferenza garantirà che gli ID conferenza rimarranno invariati finché non verrà creata una quantità significativa di conferenze. In un'organizzazione con un numero tipico di conferenze per ogni utente, è consigliabile creare una directory conferenza per ogni utenti di 999 nel pool. Uso di questa guida di riferimento gli ID conferenza possono in genere essere mantenuti piccoli. Tuttavia, una volta che il numero di directory conferenza (tra i pool) supera 9, il numero dell'ID conferenza crescerà per supportare altre conferenze.
+La creazione di più directory conferenze garantirà che gli ID conferenza rimarranno invariati fino a quando non verrà creata una quantità significativa di conferenze. In un'organizzazione che dispone di un numero tipico di conferenze per utente, si consiglia di creare una directory conferenze per ogni 999 utenti nel pool. Utilizzo di questa guida di riferimento gli ID conferenza possono generalmente essere mantenuti piccoli. Tuttavia, una volta che il numero di directory conferenze (tra i pool) è superiore a 9, il numero dell'ID conferenza aumenterà per supportare altre conferenze.
 
 </div>
 

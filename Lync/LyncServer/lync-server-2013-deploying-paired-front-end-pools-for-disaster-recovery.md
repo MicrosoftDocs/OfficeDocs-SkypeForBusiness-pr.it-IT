@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Distribuzione di pool Front End abbinati per il ripristino di emergenza'
+title: 'Lync Server 2013: distribuzione di pool Front End abbinati per il ripristino di emergenza'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183727
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d264128a7fef38fd220d2527772d6065dca7c964
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a18b92dde9b6ca48ffe8912f216331c39ef9cc9d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740916"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043438"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,45 +35,45 @@ ms.locfileid: "41740916"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-È possibile distribuire facilmente la topologia di ripristino di emergenza di pool Front-End associati usando generatore di topologie.
+È possibile distribuire facilmente la topologia di ripristino di emergenza dei pool Front End associati utilizzando Generatore di topologie.
 
 <div>
 
-## <a name="to-deploy-a-pair-of-front-end-pools"></a>Per distribuire una coppia di pool Front-End
+## <a name="to-deploy-a-pair-of-front-end-pools"></a>Per distribuire una coppia di pool Front End
 
-1.  Se i pool sono nuovi e non ancora definiti, usare generatore di topologie per creare i pool.
+1.  Se i pool sono nuovi e non ancora definiti, utilizzare Generatore di topologie per creare i pool.
 
 2.  In Generatore di topologie fare clic con il pulsante destro del mouse su uno dei due pool e quindi scegliere **modifica proprietà**.
 
-3.  Fare clic su **resilienza** nel riquadro sinistro e quindi selezionare **pool di backup associato** nel riquadro destro.
+3.  Fare clic su **Resilienza** nel riquadro a sinistra e selezionare **Pool di backup associato** nel riquadro a destra.
 
-4.  Nella casella sotto il **pool di backup associato**selezionare il pool che si vuole associare al pool. Solo i pool esistenti che non sono già associati a un altro pool saranno disponibili per la selezione.
+4.  Nella casella sotto **Pool di backup associato** selezionare il pool da accoppiare a questo pool. Sarà possibile selezionare solo pool esistenti che non sono già accoppiati con un altro pool.
     
     ![36080581-db76-497D-bf9e-f02b39574d0e](images/JJ204773.36080581-db76-497d-bf9e-f02b39574d0e(OCS.15).png "36080581-db76-497D-bf9e-f02b39574d0e")  
 
-5.  Selezionare **failover automatico e failback per la voce**e quindi fare clic su **OK**.
+5.  Selezionare **Failover e failback automatico per VoIP** e quindi fare clic su **OK**.
     
-    Quando si visualizzano i dettagli su questo pool, il pool associato ora viene visualizzato nel riquadro destro in **resilienza**.
+    Quando vengono visualizzati i dettagli su questo pool, il pool associato apparirà nel riquadro a destra sotto **Resilienza**.
 
-6.  USA generatore di topologia per pubblicare la topologia.
+6.  Utilizzare Generatore di topologie per pubblicare la topologia.
 
-7.  Se i due pool non sono stati ancora distribuiti, distribuirli ora e la configurazione verrà completata. È possibile ignorare i due passaggi finali descritti in questa procedura.
+7.  Se i due pool non sono stati ancora distribuiti, distribuirli ora in modo da completare la configurazione. È possibile ignorare i due passaggi finali di questa procedura.
     
-    Se tuttavia i pool sono già stati distribuiti prima di definire la relazione associata, è necessario completare i due passaggi finali seguenti.
+    Tuttavia, se i pool erano già distribuiti prima che venisse definita la relazione accoppiata, è necessario completare i due passaggi finali che seguono.
 
-8.  In tutti i server front-end in entrambi i pool eseguire le operazioni seguenti:
+8.  Su ogni Front End Server in entrambi i pool eseguire:
     ```console
     <system drive>\Program Files\Microsoft Lync Server 2013\Deployment\Bootstrapper.exe 
     ```
-    In questo modo vengono configurati altri servizi necessari per il corretto funzionamento delle associazioni di backup.
+    Consente di configurare altri servizi necessari per il corretto funzionamento dell'accoppiamento di backup.
 
-9.  Da un prompt dei comandi di Lync Server Management Shell eseguire le operazioni seguenti:
+9.  Da un prompt dei comandi di Lync Server Management Shell, eseguire le operazioni seguenti:
     ```powershell
     Start-CsWindowsService -Name LYNCBACKUP
     ```
-10. Costringere i dati dell'utente e della conferenza di entrambi i pool a essere sincronizzati tra loro, con i cmdlet seguenti:
+10. Forzare la sincronizzazione dei dati utente e di conferenza di entrambi i pool specificando i cmdlet seguenti:
     
        ```powershell
         Invoke-CsBackupServiceSync -PoolFqdn <Pool1 FQDN>
@@ -83,7 +83,7 @@ _**Argomento Ultima modifica:** 2013-02-21_
         Invoke-CsBackupServiceSync -PoolFqdn <Pool2 FQDN>
        ```
     
-    La sincronizzazione dei dati può richiedere del tempo. Puoi usare i cmdlet seguenti per verificare lo stato. Verificare che lo stato in entrambe le direzioni sia in stato stabile.
+    La sincronizzazione dei dati potrebbe richiedere alcuni minuti. Per controllare lo stato è possibile usare i cmdlet seguenti. Assicurarsi che lo stato di entrambe le direzioni sia in stato stazionario.
     
        ```powershell
         Get-CsBackupServiceStatus -PoolFqdn <Pool1 FQDN>
@@ -97,7 +97,7 @@ _**Argomento Ultima modifica:** 2013-02-21_
 
 
 > [!NOTE]  
-> L'opzione <STRONG>failover automatico e il failback per la voce</STRONG> e gli intervalli di tempo associati in Generatore di topologia si applicano solo alle caratteristiche di resilienza vocale introdotte in Lync Server 2010. La selezione di questa opzione non implica che il failover del pool illustrato in questo documento sia automatico. Il failover del pool e il failback richiedono sempre che un amministratore richiami manualmente rispettivamente i cmdlet failover e failback.
+> L'opzione <STRONG>failover automatico e failback per la voce</STRONG> e gli intervalli di tempo associati in Generatore di topologie si applicano solo alle funzionalità di resilienza vocale introdotte in Lync Server 2010. La selezione di questa opzione non implica che il failover del pool descritto in questo documento sia automatico. Il failover e il failback del pool richiedono sempre che un amministratore richiami manualmente i cmdlet di failover e di failback, rispettivamente.
 
 
 

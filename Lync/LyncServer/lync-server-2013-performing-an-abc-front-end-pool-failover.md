@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: esecuzione di un failover del pool Front End di ABC'
+title: 'Lync Server 2013: esecuzione di un failover del pool Front End ABC'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541489
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 155d8224b80e614ac8609c007a16072e9d3a5c60
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9fd0be7bbde714a380473dc8b470437a9fee4cdc
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755276"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050318"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="performing-an-abc-front-end-pool-failover-in-lync-server-2013"></a>Esecuzione di un failover del pool di front end ABC in Lync Server 2013
+# <a name="performing-an-abc-front-end-pool-failover-in-lync-server-2013"></a>Esecuzione di un failover del pool ABC front end in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41755276"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-I due argomenti in questa sezione descrivono la procedura per l'esecuzione di un failover del pool ABC in Lync Server 2013, in cui sono associati i pool di front end di Lync Server A e B e il pool A diventa irrecuperabile. Usando questa procedura, viene creato un nuovo pool C front-end con un nuovo nome di dominio completo (FQDN). Il pool C è costituito dalle informazioni del pool A non riuscito. La procedura include inoltre l'associazione tra pool B e C.
+Nei due argomenti di questa sezione viene descritta la procedura per l'esecuzione di un failover del pool ABC in Lync Server 2013, in cui sono associati pool di Lync Server front end A e B e il pool A diventa irrecuperabile. Tramite questa procedura, è possibile creare un nuovo pool Front End C con un nuovo nome di dominio completo (FQDN). Il pool C è costruito dalle informazioni del pool A. La procedura include anche la combinazione di pool B e C.
 
   - [Prerequisiti di backup per il failover del pool ABC in Lync Server 2013](lync-server-2013-backup-prerequisites-for-abc-pool-failover.md)
 
-  - [Procedura di failover del pool ABC front-end in Lync Server 2013](lync-server-2013-front-end-pool-abc-failover-procedure.md)
+  - [Procedura di failover del pool ABC front end in Lync Server 2013](lync-server-2013-front-end-pool-abc-failover-procedure.md)
 
 </div>
 

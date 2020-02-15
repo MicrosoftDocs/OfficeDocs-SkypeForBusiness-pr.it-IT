@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Distribuzione dell'archivio contatti unificato"
+title: "Lync Server 2013: distribuzione dell'archivio contatti unificato"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184373
 ms.date: 06/06/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d224ec7a9c452c45f9f3471403301460a2a31cc8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d0e8fe5aaac47ce98cfae1376e83cdea89a4a1af
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740796"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043338"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41740796"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-06-06_
+_**Ultimo argomento modificato:** 2016-06-06_
 
-L'abilitazione dell'archivio contatti unificato in Lync Server 2013 non richiede le impostazioni della topologia. L'abilitazione dell'archivio contatti unificato per gli utenti richiede le seguenti operazioni:
+L'abilitazione dell'archivio contatti unificato in Lync Server 2013 non richiede impostazioni di topologia. I requisiti per l'abilitazione dell'archivio contatti unificato per gli utenti sono i seguenti:
 
-  - Il criterio archivio contatti unificato è abilitato (il valore predefinito è abilitato).
+  - I criteri dell'archivio contatto unificati sono abilitati (abilitati per impostazione predefinita).
 
-  - Gli utenti accedono a Lync 2013 almeno una volta.
+  - Gli utenti accedono con Lync 2013 almeno una volta.
 
-Dopo la migrazione dei contatti di un utente, che avviene automaticamente quando un utente accede con Lync 2013, l'utente può accedere e gestire i contatti di Lync da Lync 2013, Outlook 2013 o Outlook Web Access. Non è necessario che l'utente abbia effettuato l'accesso a Lync per gestire i propri contatti da Outlook o Outlook Web Access.
+Dopo la migrazione dei contatti di un utente, che si verifica automaticamente quando un utente esegue l'accesso con Lync 2013, l'utente può accedere e gestire i propri contatti di Lync da Lync 2013, Outlook 2013 o Outlook Web Access. Non è necessario che l'utente sia connesso a Lync per gestire i propri contatti da Outlook o Outlook Web Access.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Se un utente accede da Lync 2010 dopo la migrazione, i contatti e i gruppi sono disponibili e aggiornati, ma l'utente non può gestire (ovvero aggiungere, eliminare, trasferire, contrassegnare, UNTAG o modificare) i contatti.
+> Se un utente esegue l'accesso da Lync 2010 dopo la migrazione, i contatti e i gruppi sono disponibili e aggiornati, ma l'utente non è in grado di gestire (ovvero, aggiungere, eliminare, spostare, contrassegnare, UNTAG o modificare) tali contatti.
 
 
 
@@ -57,7 +57,7 @@ Dopo la migrazione dei contatti di un utente, che avviene automaticamente quando
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Abilitare gli utenti per l'archivio contatti unificato in Lync Server 2013](lync-server-2013-enable-users-for-unified-contact-store.md)
 

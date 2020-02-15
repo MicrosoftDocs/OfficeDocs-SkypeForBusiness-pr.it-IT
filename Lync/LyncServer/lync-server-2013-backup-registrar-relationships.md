@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Eseguire il backup delle relazioni di registrazione'
+title: Lync Server 2013 relazioni di registrazione di backup
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184631
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 44111dbdec945e525b1ef54d910e1cf7f3b5a5d0
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c2b7dbf410aaf5ab6bedd322d018abab76a8324e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730346"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041175"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="backup-registrar-relationships-in-lync-server-2013"></a>Eseguire il backup delle relazioni di registrazione in Lync Server 2013
+# <a name="backup-registrar-relationships-in-lync-server-2013"></a>Relazioni di registrazione di backup in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41730346"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-28_
+_**Ultimo argomento modificato:** 2012-06-28_
 
-Oltre a fornire un'abilità di ripristino di emergenza, due pool associati fungono da registrar di backup. In Lync Server 2013 le relazioni di registrazione del backup tra i pool Front-End sono sempre 1:1 e reciproche. Questo significa che se P1 è il backup per P2, P2 deve essere il backup per P1 e non può essere il backup per qualsiasi altro pool Front-end. Si tratta di una modifica da Lync Server 2010, in cui le relazioni di backup del pool Front-end possono essere diverse rispetto a una.
+Oltre ad offrire funzioni di ripristino di emergenza, due pool accoppiati funzionano come registrar di backup l'uno per l'altro. In Lync Server 2013, le relazioni di registrazione di backup tra pool Front End sono sempre 1:1 e reciproche. Pertanto, se il P1 è il backup del P2, il P2 sarà il backup del P1, e nessuno dei due potrà essere il backup di un altro pool Front End. Si tratta di una modifica da Lync Server 2010, in cui le relazioni di backup del pool Front end potrebbero essere numerose.
 
-Anche se le relazioni di backup tra due pool Front-end devono essere di 1:1 e simmetriche, ogni pool Front-end può essere comunque anche il registrar per qualsiasi numero di appliance Survivable Branch, proprio come in Lync Server 2010.
+Anche se le relazioni di backup tra due pool Front end devono essere 1:1 e simmetriche, ogni pool Front end può essere sempre anche il servizio di registrazione di backup per un numero qualsiasi di Survivable Branch Appliance, come in Lync Server 2010.
 
-Si noti che Lync Server 2013 non estende il supporto per il ripristino di emergenza agli utenti ospitati in un Survivable Branch Appliance. Se un pool Front-end che funge da backup per un appliance Survivable Branch si abbassa, gli utenti che hanno effettuato l'accesso a Survivable Branch Appliance vengono rientrati in modalità di resilienza anche dopo che gli utenti ospitati nel pool Front-end non vengono eseguiti nel pool Front-end.
+Si noti che Lync Server 2013 non estende il supporto per il ripristino di emergenza agli utenti ospitati in un Survivable Branch Appliance. Se un pool Front end che funge da backup per un Survivable Branch Appliance diminuisce, gli utenti che hanno effettuato l'accesso a Survivable Branch Appliance rientrano in modalità di resilienza anche dopo che gli utenti ospitati nel pool Front end non sono riusciti a eseguire il backup nel pool Front end.
 
 </div>
 

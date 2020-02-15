@@ -12,16 +12,16 @@ ms:contentKeyID: 48185170
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2035fff89437c10732c704eee47c145b45d9db96
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 784e229ee16bfee0e9e828f1df7f06a98e898eb4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765857"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043858"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41765857"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-02_
+_**Ultimo argomento modificato:** 2012-10-02_
 
-La tabella NetworkConnectionDetail esegue il mapping dei tipi di connessione di rete agli identificatori di connessione di rete usati in un altro punto del database Quality of Experience. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
+Nella tabella NetworkConnectionDetail i tipi di connessione di rete sono mappati agli identificatori di connessione di rete utilizzati in altre posizioni nel database della qualità percepita dagli utenti (QoE). Questa tabella è stata introdotta in Microsoft Lync Server 2013.
 
 
 <table>
@@ -60,17 +60,17 @@ La tabella NetworkConnectionDetail esegue il mapping dei tipi di connessione di 
 <td><p><strong>NetworkConnectionDetailKey</strong></p></td>
 <td><p>tinyint</p></td>
 <td><p>Principale</p></td>
-<td><p>Identificatore univoco per il tipo di connessione di rete.</p></td>
+<td><p>Identificatore univoco del tipo di connessione di rete.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>NetworkConnectionDetail</strong></p></td>
 <td><p>varchar (256)</p></td>
-<td><p>Univoci</p></td>
+<td><p>Univoco</p></td>
 <td><p>Tipo di connessione di rete che corrisponde a NetworkConnectionDetailKey. I valori consentiti sono:</p>
 <ol>
-<li><p>0--Wired</p></li>
-<li><p>1--WiFi</p></li>
-<li><p>2--Ethernet</p></li>
+<li><p>0 - Cablata</p></li>
+<li><p>1 - Wi-Fi</p></li>
+<li><p>2 - Ethernet</p></li>
 </ol></td>
 </tr>
 </tbody>

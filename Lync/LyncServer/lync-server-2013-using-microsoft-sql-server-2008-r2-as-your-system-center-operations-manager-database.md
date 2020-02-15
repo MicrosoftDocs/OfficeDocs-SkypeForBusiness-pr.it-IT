@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: uso di Microsoft SQL Server 2008 R2 come database di Operations Manager di System Center'
+title: 'Lync Server 2013: utilizzo di Microsoft SQL Server 2008 R2 come database di System Center Operations Manager'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733555
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 27516e7ca6c3fb70a01b7c1d245054d515ae351b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6ad7854043eb85db7b5d260d57beed26746160f5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044308"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="using-microsoft-sql-server-2008-r2-as-your-system-center-operations-manager-database-for-lync-server-2013"></a>Uso di Microsoft SQL Server 2008 R2 come database di Operations Manager di System Center per Lync Server 2013
+# <a name="using-microsoft-sql-server-2008-r2-as-your-system-center-operations-manager-database-for-lync-server-2013"></a>Utilizzo di Microsoft SQL Server 2008 R2 come database di System Center Operations Manager per Lync Server 2013
 
 </div>
 
@@ -35,87 +35,87 @@ ms.locfileid: "41744056"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-07-29_
+_**Ultimo argomento modificato:** 2013-07-29_
 
-Per usare SQL Server 2008 R2 come database back-end, completare la procedura descritta in questo argomento.
+Per utilizzare SQL Server 2008 R2 come database back-end, completare la procedura descritta in questo argomento.
 
 <div>
 
 ## <a name="configuring-sql-server-2008-r2-and-sql-server-reporting-services"></a>Configurazione di SQL Server 2008 R2 e SQL Server Reporting Services
 
-Prima di iniziare l'installazione di System Center Operations Manager, è necessario apportare due modifiche a SQL Server 2008 R2 e alla configurazione di SQL Server Reporting Services. Queste modifiche sono necessarie solo se si usa SQL Server 2008 R2 come database di Operations Manager. Eseguire innanzitutto le operazioni seguenti nel computer che ospita il database di Operations Manager:
+Prima di iniziare a installare System Center Operations Manager, è necessario apportare due modifiche alla configurazione di SQL Server 2008 R2 e SQL Server Reporting Services. Queste modifiche sono necessarie solo se si utilizza SQL Server 2008 R2 come database di Operations Manager. In primo luogo, eseguire le operazioni seguenti nel computer che ospiterà il database di Operations Manager:
 
-1.  Fare clic sul pulsante **Start** e quindi su **Esegui**.
+1.  Fare clic sul pulsante **Start**, quindi scegliere **Esegui**.
 
 2.  Nella finestra di dialogo **Esegui** Digitare **C:\\Program Files\\Microsoft SQL Server\\ MSRS10\_50. ARCHINST\\Reporting Services\\ReportServer** e quindi premere INVIO.
 
-3.  Nella cartella **ReportServer** aprire il file **RSReportServer. config** nel blocco note o in qualsiasi altro editor di testo.
+3.  Nella cartella **ReportServer** aprire il file **rsreportserver.config** nel Blocco note o in un altro editor di testo.
 
-4.  Accanto all'inizio del file verrà visualizzata una serie di nodi "Aggiungi chiave". Trovare la voce che inizia ** \<Add Key = "SecureConnectionLevel"** e impostare il valore su **0**:
+4.  Quasi all'inizio del file è presente una serie di nodi "Add Key". Individuare la voce che inizia ** \<con l'aggiunta di Key = "SecureConnectionLevel"** e impostare il valore su **0**:
     
         <Add Key="SecureConnectionLevel" Value="0"/>
 
-5.  Salvare il file **RSReportServer. config** e quindi chiudere l'editor di testo.
+5.  Salvare il file **rsreportserver.config** e chiudere l'editor di testo.
 
-Dopo l'aggiornamento del file di configurazione del server di report, è necessario assegnare il certificato corretto a SQL Server Reporting Services. per farlo:
+Dopo avere aggiornato il file di configurazione del server di report, è necessario assegnare il certificato corretto a SQL Server Reporting Services. A questo scopo:
 
-1.  Fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft SQL Server 2008 R2**, fare clic su **strumenti di configurazione**e quindi su **Gestione configurazione di Reporting Services**.
+1.  Fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft SQL Server 2008 R2**, **strumenti di configurazione**e quindi fare clic su **Gestione configurazione Reporting Services**.
 
-2.  Nella finestra di dialogo **connessione configurazione Reporting Services** verificare che il nome del server sia visualizzato nella casella **nome server** . Selezionare l'istanza di SQL Server che ospiterà il database di Operations Manager, ad esempio **ARCHINST**, nell'elenco a discesa **istanza del server di report** e quindi fare clic su **Connetti**.
+2.  Nella finestra di dialogo **Connessione configurazione Reporting Services** verificare che nella casella **Nome server** sia presente il nome del server. Selezionare l'istanza di SQL Server che ospiterà il database di Operations Manager (ad esempio, **ARCHINST**) dall'elenco a discesa **istanza del server di report** e quindi fare clic su **Connetti**.
 
-3.  In Gestione configurazione di Reporting Services fare clic su **URL servizio Web**.
+3.  In Gestione configurazione Reporting Services fare clic su **URL servizio Web**.
 
-4.  Nella pagina **URL servizio Web** selezionare il certificato da usare per Reporting Services dall'elenco a discesa **certificati SSL** e quindi fare clic su **applica**. Dopo alcuni secondi verrà visualizzata una coppia di URL elencati in **URL servizio Web**ReportServer.
+4.  Nella pagina **URL servizio Web** selezionare il certificato da utilizzare per l'istanza di Reporting Services nell'elenco a discesa **Certificato SSL**, quindi fare clic su **Applica**. Dopo alcuni secondi comparirà una coppia di URL in **URL servizio Web ReportServer**.
 
-5.  Fare clic su entrambi gli URL per verificare che sia possibile accedere a SQL Server Reporting Services.
+5.  Fare clic su entrambi gli URL per verificare di poter accedere a SQL Server Reporting Services.
 
-6.  Chiudere Gestione configurazione di Reporting Services.
+6.  Chiudere Gestione configurazione Reporting Services.
 
 </div>
 
 <div>
 
-## <a name="creating-a-system-center-operations-manager-database-for-use-with-sql-server-2008-r2"></a>Creazione di un database di System Center Operations Manager da usare con SQL Server 2008 R2
+## <a name="creating-a-system-center-operations-manager-database-for-use-with-sql-server-2008-r2"></a>Creazione di un database System Center Operations Manager per l'utilizzo con SQL Server 2008 R2
 
-Se si vuole configurare System Center Operations Manager per l'uso di un database di SQL Server 2008 R2, sarà necessario "manualmente" creare il database di Operations Manager nel computer in cui è installato SQL Server 2008 R2. Di nuovo, questi passaggi non sono necessari se si usa SQL Server 2005 o SQL Server 2008 come database back-end.
+Se si desidera configurare System Center Operations Manager per l'utilizzo di un database di SQL Server 2008 R2, è necessario creare manualmente il database di Operations Manager nel computer in cui è in esecuzione SQL Server 2008 R2. (Di nuovo, questi passaggi non sono necessari se si utilizza SQL Server 2005 o SQL Server 2008 come database back-end).
 
 Per creare manualmente un database di Operations Manager, eseguire le operazioni seguenti:
 
-1.  Nel supporto di configurazione di System Center Operations Manager 2007 R2, nella cartella\\SupportTools amd64, fare doppio clic su **DBCreateWizard. exe**.
+1.  Nel supporto di installazione di System Center Operations Manager 2007 R2, nella cartella\\SupportTools amd64 fare doppio clic su **DBCreateWizard. exe**.
 
-2.  Nella schermata **Introduzione alla configurazione** guidata database della configurazione guidata database fare clic su **Avanti**.
+2.  Nella pagina iniziale della **Configurazione guidata database** fare clic su **Avanti**.
 
-3.  Nella pagina **informazioni database** uscire da tutte le impostazioni e quindi fare clic su **Avanti**
+3.  Nella pagina **Informazioni database** lasciare invariate tutte le impostazioni e fare clic su **Avanti**
 
-4.  Nella pagina **Configurazione gruppo di gestione** Digitare un nome per il gruppo di gestione, ad esempio **il monitoraggio di Lync Server**, nella casella **nome gruppo** di gestione e quindi fare clic su **Avanti**.
+4.  Nella pagina **Configurazione gruppo di gestione** Digitare un nome per il gruppo di gestione, ad esempio **il monitoraggio di Lync Server**, nella casella **nome gruppo di gestione** e quindi fare clic su **Avanti**.
 
-5.  Nella pagina **report di errore di Operations Manager** fare clic su **Avanti**.
+5.  Nella pagina **Segnalazioni errori di Operations Manager** fare clic su **Avanti**.
 
-6.  Nella pagina di **Riepilogo** fare clic su **fine**.
+6.  Nella pagina **Riepilogo** fare clic su **Fine**.
 
 </div>
 
 <div>
 
-## <a name="creating-a-system-center-operations-manager-data-warehouse-for-use-with-sql-server-2008-r2"></a>Creazione di un data warehouse di System Center Operations Manager da usare con SQL Server 2008 R2
+## <a name="creating-a-system-center-operations-manager-data-warehouse-for-use-with-sql-server-2008-r2"></a>Creazione di un data warehouse di System Center Operations Manager per l'utilizzo con SQL Server 2008 R2
 
-Microsoft Lync Server 2013 viene fornito con tre nuovi report di Operations Manager di System Center:
+Microsoft Lync Server 2013 viene fornito con tre nuovi report di System Center Operations Manager:
 
-  - **Report disponibilità scenario finale**   questo report descrive in dettaglio la disponibilità/uptime dei servizi principali di Lync Server, ad esempio registrazione o presenza.
+  - **End to end scenario availability report**   questo rapporto descrive in dettaglio la disponibilità/tempo di uptime per i servizi chiave di Lync Server, ad esempio la registrazione o la presenza.
 
-  - **Report capacità con**   le informazioni sui contatori delle prestazioni, questo report Mostra le tendenze per i componenti di sistema, ad esempio la disponibilità della memoria e l'uso del processore
+  - **Rapporto capacità utilizzando**   le informazioni sui contatori delle prestazioni, in questo report vengono visualizzate le tendenze per i componenti di sistema, ad esempio la disponibilità della memoria e l'utilizzo
 
-  - **Report componente questo**   report elenca i generatori di avvisi principali raggruppati in base al componente Lync Server.
+  - **Report componente in**   questo report sono elencati i generatori di avvisi principali raggruppati in base al componente Lync Server.
 
-Per usare questi nuovi report, è necessario installare un data warehouse di System Center Operations Manager. Un data warehouse consente l'archiviazione a lungo termine dei dati delle operazioni. Per usare un data warehouse con SQL Server 2008 R2, è necessario eseguire la procedura seguente nel computer che ospita il database di SQL Server:
+Per utilizzare questi nuovi rapporti, è necessario installare un data warehouse di System Center Operations Manager. (Un data warehouse fornisce l'archiviazione a lungo termine dei dati delle operazioni). Per utilizzare un data warehouse con SQL Server 2008 R2, è necessario eseguire i passaggi seguenti nel computer che ospita il database di SQL Server:
 
-1.  Nel supporto di configurazione di System Center Operations Manager, nella cartella\\Setup\\SupportTools amd64, fare doppio clic su **DBCreateWizard. exe**.
+1.  Nel supporto di installazione di System Center Operations Manager, nella cartella\\Setup\\SupportTools amd64 fare doppio clic su **DBCreateWizard. exe**.
 
-2.  Nella schermata **Introduzione alla configurazione** guidata database della configurazione guidata database fare clic su **Avanti**.
+2.  Nella pagina iniziale della **Configurazione guidata database** fare clic su **Avanti**.
 
-3.  Nella pagina **informazioni database** selezionare **database warehouse dei dati di Operations Manager** dall'elenco a discesa **tipo di database** e quindi fare clic su **Avanti**.
+3.  Nella pagina **Informazioni database** selezionare **Database data warehouse di Operations Manager** nell'elenco a discesa **Tipo database**, quindi fare clic su **Avanti**.
 
-4.  Nella pagina di **Riepilogo** fare clic su **fine**.
+4.  Nella pagina **Riepilogo** fare clic su **Fine**.
 
 </div>
 
@@ -123,41 +123,41 @@ Per usare questi nuovi report, è necessario installare un data warehouse di Sys
 
 ## <a name="installing-the-system-center-operations-manager-console"></a>Installazione della console di System Center Operations Manager
 
-La console di Operations Manager è lo strumento principale usato per gestire System Center Operations Manager. Prima di installare la console di Operations Manager, verificare di avere installato una versione supportata di SQL Server insieme a SQL Server Reporting Services. Si consiglia inoltre di eseguire Gestione configurazione di Reporting Services di SQL Server per verificare che il servizio Reporting sia stato installato e configurato correttamente.
+La console di Operations Manager è lo strumento principale utilizzato per gestire System Center Operations Manager. Prima di installare la console di Operations Manager, verificare di aver installato una versione supportata di SQL Server insieme a SQL Server Reporting Services. È inoltre consigliabile eseguire Gestione configurazione Reporting Services di SQL Server per verificare che Reporting Service sia installato e configurato correttamente.
 
 Per installare la console di System Center Operations Manager:
 
-1.  Nel supporto di configurazione di System Center Operations Manager fare doppio clic su **SetupOM. exe**.
+1.  Nel supporto di installazione di System Center Operations Manager fare doppio clic su **SetupOM. exe**.
 
-2.  Nella configurazione di System Center Operations Manager 2007 R2 fare clic su **Controlla prerequisiti**.
+2.  Nel programma di installazione di System Center Operations Manager 2007 R2 fare clic su **Controlla prerequisiti**.
 
-3.  Nel Visualizzatore prerequisiti di System Center Operations Manager selezionare i componenti di System Center da installare: (**Server**; **Console**; e **PowerShell**), quindi fare clic su **Controlla**. Verificare che non siano stati segnalati problemi di blocco e quindi fare clic su **Chiudi**. Se è stato segnalato un problema di blocco, correggere il problema e quindi fare clic su **Verifica** per eseguire di nuovo il test dei prerequisiti.
+3.  Nel Visualizzatore prerequisiti di System Center Operations Manager selezionare i componenti di System Center da installare: (**Server**; **Console**; e **PowerShell**), quindi fare clic su **Controlla**. Verificare che non siano stati riscontrati problemi gravi e quindi fare clic su **Chiudi**. Se viene segnalato un problema grave, correggerlo e fare clic su **Controlla** per ripetere il test dei prerequisiti.
 
-4.  In configurazione di System Center Operations Manager fare clic su **Installa Operations Manager**.
+4.  Nel programma di installazione di System Center Operations Manager fare clic su **Installa Operations Manager**.
 
-5.  Nella configurazione guidata di System Center Operations Manager, nella pagina **Introduzione alla configurazione guidata di System Center Operations Manager** , fare clic su **Avanti**.
+5.  Nell'installazione guidata di System Center Operations Manager, nella pagina **installazione guidata di System Center Operations Manager** fare clic su **Avanti**.
 
-6.  Nella pagina **contratto di licenza con l'utente finale** selezionare **Accetto i termini del contratto di licenza** e quindi fare clic su **Avanti**.
+6.  Nella pagina **Contratto di licenza con l'utente finale** selezionare **Accetto i termini del Contratto di licenza** e fare clic su **Avanti**.
 
-7.  Nella pagina di **registrazione del prodotto** Digitare il proprio nome nella casella **nome utente** e nome dell'organizzazione nella casella **organizzazione** . Digitare il codice Product Key di System Center Operations Manager nella casella **immettere il codice CD di 25 cifre** e quindi fare clic su **Avanti**.
+7.  Nella pagina **Registrazione prodotto** digitare il proprio nome nella casella **Nome utente** e il nome dell'organizzazione nella casella **Organizzazione**. Digitare il codice Product Key di System Center Operations Manager nella casella **immettere il codice CD di 25 cifre** e quindi fare clic su **Avanti**.
 
-8.  Nella pagina **configurazione personalizzata** selezionare le opzioni di System Center da installare e quindi fare clic su **Avanti**. È consigliabile selezionare **server di gestione**, **interfacce utente**e **console Web** per l'installazione. Il **database** non deve essere selezionato e non deve essere installato.
+8.  Nella pagina **Installazione personalizzata** selezionare le opzioni di System Center da installare, quindi fare clic su **Avanti**. È consigliabile selezionare **Server di gestione**, **Interfacce utente** e **Console Web** per l'installazione, ma non selezionare e installare **Database**.
 
-9.  Nella pagina dell' **istanza del server di database SC** verificare che nella casella **Server System Center database** sia visualizzato il nome del computer in cui sono installati i database di Operations Manager. Fare clic su **Avanti**.
+9.  Nella pagina dell' **istanza del server database SC** verificare che il nome del computer in cui sono installati i database di Operations Manager sia visualizzato nella casella **server database System Center** . Fare clic su **Avanti**.
 
-10. Nella pagina **account azione del server di gestione** selezionare **dominio o account del computer locale** e quindi immettere i valori appropriati nelle caselle **account utente**, **password**e **dominio o computer locale** . Fare clic su **Avanti**.
+10. Nella pagina **Account azione server di gestione** selezionare **Dominio o account computer locale** e immettere i valori appropriati nelle caselle **Account utente**, **Password** e **Dominio o computer locale**. Fare clic su **Avanti**.
 
-11. Nella pagina **account del servizio SDK e configurazione** selezionare **dominio o account del computer locale** e quindi immettere i valori appropriati nelle caselle **account utente**, **password**e **dominio o computer locale** . Fare clic su **Avanti**.
+11. Nella pagina **SDK e account servizio di configurazione** selezionare **Dominio o account computer locale** e immettere i valori appropriati nelle caselle **Account utente**, **Password** e **Dominio o computer locale**. Fare clic su **Avanti**.
 
-12. Nella pagina **report di errore di Operations Manager** fare clic su **Avanti**.
+12. Nella pagina **Segnalazioni errori di Operations Manager** fare clic su **Avanti**.
 
-13. Nella pagina del **programma Analisi utilizzo software** fare clic su **Avanti**.
+13. Nella pagina **Analisi utilizzo software** fare clic su **Avanti**.
 
-14. Nella pagina **pronto per l'installazione del programma** fare clic su **Installa**.
+14. Nella pagina **Installazione del programma** fare clic su **Avanti**.
 
-15. Nella pagina **completamento della configurazione di System Center Operations Manager** deselezionare la **chiave di crittografia backup** e **avviare le caselle** di controllo della console e quindi fare clic su **fine**.
+15. Nella pagina finale dell'**Installazione di System Center Operations Manager** deselezionare le caselle di controllo **Backup chiave di crittografia** e **Avvia console**, quindi fare clic su **Fine**.
 
-16. Nella configurazione di System Center Operations Manager fare clic su **Esci**.
+16. Nel programma di installazione di System Center Operations Manager fare clic su **Esci**.
 
 </div>
 
@@ -165,11 +165,11 @@ Per installare la console di System Center Operations Manager:
 
 ## <a name="installing-system-center-reporting-services"></a>Installazione di System Center Reporting Services
 
-Dopo l'installazione e la configurazione della console di System Center Operations Manager, è necessario installare System Center Reporting Services. Se si usa SQL Server 2008 R2 come database back-end di Operations Manager, ciò significa che è necessario prima apportare una modifica temporanea al gruppo di sicurezza associato a SQL Server Reporting Services. Se si usa SQL Server 2008 R2, è necessario eseguire le operazioni seguenti:
+Dopo aver installato e configurato la console di System Center Operations Manager, è necessario installare System Center Reporting Services. Se si utilizza SQL Server 2008 R2 come database back-end di Operations Manager, significa che è innanzitutto necessario apportare una modifica temporanea al gruppo di sicurezza associato a SQL Server Reporting Services. Se si utilizza SQL Server 2008 R2, è necessario eseguire le operazioni seguenti:
 
-1.  Fare clic sul pulsante **Start**, scegliere **strumenti di amministrazione**e quindi fare clic su **Gestione server**.
+1.  Fare clic su **Start**, scegliere **Strumenti di amministrazione**, quindi **Server Manager**.
 
-2.  In Server Manager espandere **configurazione**, espandere **utenti e gruppi locali**e quindi fare clic su **gruppi**.
+2.  In Server Manager espandere **Configurazione** e **Utenti e gruppi locali**, quindi fare clic su **Gruppi**.
 
 3.  Individuare il gruppo seguente, in cui ATL-SC-001 rappresenta il nome del computer e ARCHINST rappresenta l'istanza di SQL Server per il database System Center: **SQLServerReportServerUser $ ATL-SC-001 $\_MSRS10 50. ARCHINST**.
 
@@ -177,53 +177,53 @@ Dopo l'installazione e la configurazione della console di System Center Operatio
 
 5.  Chiudere Server Manager.
 
-A questo punto si è pronti per installare System Center Reporting Services. Procedi come segue.
+A questo punto è possibile installare System Center Reporting Services. Procedere nel modo seguente:
 
-1.  Nel supporto di configurazione di System Center Operations Manager 2007 R2 fare doppio clic su **SetupOM. exe**.
+1.  Nel supporto di installazione di System Center Operations Manager 2007 R2 fare doppio clic su **SetupOM. exe**.
 
-2.  Nella configurazione di System Center Operations Manager 2007 R2 fare clic su **Installa report di Operations Manager**.
+2.  In System Center Operations Manager 2007 R2 Setup fare clic su **Install Operations Manager Reporting**.
 
-3.  Nella pagina Configurazione guidata report di Operations Manager 2007 R2, nella pagina **installazione report di Operations Manager** , fare clic su **Avanti**.
+3.  Nell'installazione guidata di Reporting System Center Operations Manager 2007 R2, nella pagina **installazione report di Operations Manager** fare clic su **Avanti**.
 
-4.  Nella pagina **contratto di licenza con l'utente finale** selezionare **Accetto i termini del contratto di licenza** e quindi fare clic su **Avanti**.
+4.  Nella pagina **Contratto di licenza con l'utente finale** selezionare **Accetto i termini del Contratto di licenza** e fare clic su **Avanti**.
 
-5.  Nella pagina di **registrazione del prodotto** verificare che il nome e il nome dell'organizzazione vengano visualizzati nelle caselle **nome utente** e **organizzazione** e quindi fare clic su **Avanti**.
+5.  Nella pagina **Registrazione prodotto** verificare che nelle caselle **Nome utente** e **Organizzazione** siano presenti il proprio nome e il nome dell'organizzazione, quindi fare clic su **Avanti**.
 
-6.  Nella pagina **configurazione personalizzata** fare clic su **server di report** e selezionare **questo componente e tutti i componenti dipendenti verranno installati nell'unità disco locale**. Fare clic su **data warehouse** e selezionare **questo componente non sarà disponibile**e quindi fare clic su **Avanti**.
+6.  Nella pagina **Installazione personalizzata** fare clic su **Server di report** e selezionare **Il componente e tutti i componenti secondari verranno installati sul disco rigido locale**. Fare clic su **Data warehouse** e selezionare **Il componente non sarà disponibile**, quindi fare clic su **Avanti**.
 
-7.  Nella pagina **Connetti alla pagina server di gestione radice** Digitare il nome del server di gestione radice di Operations Manager nella casella **Server** di gestione radice e quindi fare clic su **Avanti**.
+7.  Nella pagina **Connetti al server di gestione principale** digitare il nome del server di gestione principale di Operations Manager nella casella **Server di gestione principale** e fare clic su **Avanti**.
 
-8.  Nella pagina **Connect to the Operations Manager data warehouse** Digitare l'istanza di SQL Server in cui si trova il data warehouse nella casella **istanza di SQL Server** . Se il data warehouse si trova nell'istanza predefinita, digitare semplicemente il nome del server, ad esempio: ATL-SQL-001. Verificare che il nome del database **OperationsManagerDW** sia visualizzato nella casella **nome** e che la porta **1433** venga visualizzata nella casella **porta di SQL Server** . Fare clic su **Avanti**.
+8.  Nella pagina **Connetti al data warehouse Operations Manager**, nella casella **Istanza di SQL Server**, digitare l'istanza di SQL Server in cui si trova il data warehouse (se il data warehouse si trova nell'istanza predefinita, è sufficiente digitare il nome del server, ad esempio atl-sql-001). Verificare che nella casella **Nome** sia riportato il nome **OperationsManagerDW** e che nella casella **Porta SQL Server** sia presente **1433**. Fare clic su **Avanti**.
 
-9.  Nella pagina **istanza di Reporting di SQL Server** selezionare il server di report di SQL Server nell'elenco a discesa **immettere il server di SQL Server Reporting Services** e quindi fare clic su **Avanti**.
+9.  Nella pagina **Istanza di SQL Server Reporting Services** selezionare il server di report di SQL Server nell'elenco a discesa **Immettere il server SQL Server Reporting Services** e fare clic su **Avanti**.
 
-10. Nella pagina **account di scrittura data warehouse** immettere il nome e la password dell'utente a cui assegnare inizialmente le autorizzazioni di scrittura per il data warehouse nelle caselle **account utente** e **password** . Selezionare il dominio dell'utente nell'elenco a discesa **Domain** e quindi fare clic su **Avanti**.
+10. Nella pagina **Account scrittura data warehouse**, nelle caselle **Account utente** e **Password** immettere il nome e la password dell'utente a cui assegnare inizialmente le autorizzazioni di scrittura per il data warehouse. Selezionare il dominio dell'utente nell'elenco a discesa **Dominio** e fare clic su **Avanti**.
 
-11. Nella pagina **account Reader dati** immettere il nome e la password dell'account utente da usare quando SQL Reporting Services esegue una query nel data warehouse nelle caselle **account utente** e **password** . Selezionare il dominio dell'account dall'elenco a discesa **Domain** e quindi fare clic su **Avanti**.
+11. Nella pagina **Account lettore dati**, nelle caselle **Account utente** e **Password** immettere il nome utente e la password dell'account utente da utilizzare per le query di SQL Reporting Services sul data warehouse. Selezionare il dominio dell'account nell'elenco a discesa **Dominio** e fare clic su **Avanti**.
 
-12. Nella pagina **report dati operativi** fare clic su **Avanti**.
+12. Nella pagina **Rapporti dati operativi** fare clic su **Avanti**.
 
-13. Nella pagina **Microsoft Update** fare clic su **Avanti**.
+13. Nella pagina **Microsoft Update**fare clic su **Avanti**.
 
-14. Nella pagina **pronto per l'installazione del programma** fare clic su **Installa**.
+14. Nella pagina **Installazione del programma** fare clic su **Avanti**.
 
-15. Nella pagina **completamento della configurazione guidata componenti di report di Operations Manager** fare clic su **fine**.
+15. Nella pagina **Completamento dell'installazione guidata componenti di report di Operations Manager** fare clic su **Fine**.
 
-16. Nella configurazione di System Center Operations Manager 2007 R2 fare clic su **Esci**.
+16. In System Center Operations Manager 2007 R2 Setup fare clic su **Esci**.
 
-Dopo aver installato System Center Reporting, usare la procedura seguente per reimpostare il nome del gruppo di sicurezza associato ai report di SQL Server. Anche in questo caso, questa procedura è obbligatoria solo se si usa SQL Server:
+Dopo aver installato i report di System Center, utilizzare la procedura seguente per reimpostare il nome del gruppo di sicurezza associato ai report di SQL Server. Questa procedura è di nuovo obbligatoria solo se si utilizza SQL Server:
 
-1.  Fare clic sul pulsante **Start**, scegliere **strumenti di amministrazione**e quindi fare clic su **Gestione server**.
+1.  Fare clic su **Start**, scegliere **Strumenti di amministrazione**, quindi **Server Manager**.
 
-2.  In Server Manager espandere **configurazione**, espandere **utenti e gruppi locali**e quindi fare clic su **gruppi**.
+2.  In Server Manager espandere **Configurazione** e **Utenti e gruppi locali**, quindi fare clic su **Gruppi**.
 
 3.  Individuare il gruppo seguente, in cui ATL-SC-001 rappresenta il nome del computer e ARCHINST rappresenta l'istanza di SQL Server per i database di archiviazione e monitoraggio: **SQLServerReportServerUser $ ATL-SC-001 $ MSRS10. ARCHINST**.
 
-4.  Fare clic con il pulsante destro del mouse sul gruppo e quindi scegliere **Rinomina**. Rinominare il gruppo aggiungendo ** \_50** alla fine del nome del gruppo, a destra prima del nome dell'istanza di SQL Server. Ad esempio: **SQLServerReportServerUser $ ATL-SC-001 $ MSRS10\_50. ARCHINST**.
+4.  Fare clic con il pulsante destro del mouse sul gruppo e quindi scegliere **Rinomina**. Rinominare il gruppo aggiungendo ** \_50** alla fine del nome del gruppo, subito prima del nome dell'istanza di SQL Server. Ad esempio: **SQLServerReportServerUser $ ATL-SC-001 $ MSRS10\_50. ARCHINST**.
 
 5.  Chiudere Server Manager.
 
-Se la console operativa di System Center è aperta, sarà necessario chiudere l'applicazione e quindi riavviarla. Se non si esegue questa operazione, la scheda **report** non verrà visualizzata nell'interfaccia utente della console operatore. Tieni presente che, dopo aver riavviato la prima volta la console operativa, potrebbero essere necessari alcuni minuti prima che tutti i report di monitoraggio vengano visualizzati nella scheda **report** .
+Se la Console operatore di System Center è aperta, è necessario chiudere l'applicazione e riavviarla, altrimenti la scheda **Report** non comparirà nell'interfaccia utente della Console operatore. Tenere presente che, dopo il primo riavvio della Console operatore, è possibile che siano necessari alcuni minuti perché vengano visualizzati tutti i report di monitoraggio nella scheda **Report**.
 
 </div>
 

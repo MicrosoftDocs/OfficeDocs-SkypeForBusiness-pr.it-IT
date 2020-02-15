@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Nuove funzionalità dell'applicazione Response Group"
+title: "Lync Server 2013: nuove funzionalità dell'applicazione Response Group"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184196
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bddf1f670ef2a0a246100564962b2f69db741186
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f98261aaf40413c52598465338c9c198aca435f9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755900"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048310"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,27 +35,27 @@ ms.locfileid: "41755900"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-29_
+_**Ultimo argomento modificato:** 2012-10-29_
 
-Con l'applicazione Response Group è possibile instradare e accodare le chiamate in arrivo a persone designate per scopi speciali, come il servizio clienti, un help desk interno o il supporto telefonico generale per un reparto.
+Con l'applicazione Response Group, è possibile instradare e accodare le chiamate in arrivo per persone designate a svolgere compiti particolari come il servizio clienti, l'helpdesk interno o il supporto telefonico generico per un reparto.
 
-Le caratteristiche dell'applicazione di Response Group seguenti sono nuove in Lync Server 2013:
+Le seguenti funzionalità dell'applicazione Response Group sono nuove in Lync Server 2013:
 
-  - **Ruolo di Manager**
+  - **Ruolo Responsabile**
     
-    Lync Server 2013 introduce un nuovo ruolo di Response Group Manager. Ora ci sono due ruoli di gestione per i gruppi di risposta: Response Group Manager e Response Group Administrator. Mentre gli amministratori di Response Group possono ancora configurare qualsiasi elemento per qualsiasi gruppo di risposte, i responsabili possono configurare solo determinati elementi, solo per i gruppi di risposta di cui sono proprietari.
+    Lync Server 2013 introduce un nuovo ruolo di Manager di Response Group. Sono disponibili due ruoli di gestione per i Response Group: il responsabile del gruppo di risposta e l'amministratore di Response Group. Mentre gli amministratori di Response Group possono ancora configurare qualsiasi elemento per qualsiasi Response Group, i manager possono configurare solo determinati elementi, solo per i gruppi di risposta di cui sono proprietari.
     
-    Questo miglioramento del modello di amministrazione beneficia della scalabilità dei gruppi di risposta, in particolare per gli scenari di distribuzione di grandi dimensioni.
+    Questo miglioramento del modello di amministrazione va a vantaggio della scalabilità dei Response Group, soprattutto negli scenari di distribuzioni di grandi dimensioni.
 
   - **Disponibilità elevata**
     
-    Il supporto per la disponibilità elevata per l'applicazione Response Group, sotto forma di mirroring di SQL Server, è abilitato come parte della configurazione e della distribuzione generali della disponibilità elevata per Lync Server 2013. Se si configura per l'elevata disponibilità e si perde la connettività al server back-end principale, la funzionalità Response Group non viene modificata sfruttando il server back-end con mirroring.
+    Il supporto per la disponibilità elevata per l'applicazione Response Group, sotto forma di mirroring di SQL Server, è abilitato nell'ambito della configurazione complessiva e della distribuzione della disponibilità elevata per Lync Server 2013. Se la configurazione prevede la disponibilità elevata e si perde la connettività al server back-end primario, il funzionamento di Response Group non ne risente, grazie all'intervento del server back-end mirror.
     
-    Il supporto per il mirroring di SQL Server per l'applicazione Response Group non può essere abilitato o configurato individualmente all'esterno della configurazione di disponibilità elevata di Lync Server 2013.
+    Il supporto per il mirroring di SQL Server per l'applicazione Response Group non può essere abilitato o configurato singolarmente all'esterno della configurazione complessiva di Lync Server 2013 a disponibilità elevata.
 
   - **Ripristino d'emergenza**
     
-    Il supporto per il ripristino di emergenza per l'applicazione Response Group viene abilitato come parte della configurazione e della distribuzione dei pool di front end associati, che fanno parte della configurazione complessiva di Disaster Recovery di Lync Server 2013. Inoltre, i cmdlet di importazione ed esportazione di Response Group supportano il processo di failover per il pool di backup e il processo di failback nel pool principale o in un nuovo pool. Se si verifica un'interruzione nel pool principale, è possibile che i gruppi di risposta non vengano eseguiti nel pool di backup e quindi non vengano riportati nel pool principale o in un nuovo pool al termine dell'interruzione.
+    Il supporto per il ripristino di emergenza per l'applicazione Response Group è abilitato nell'ambito della configurazione e della distribuzione dei pool Front End abbinati, che fanno parte della configurazione complessiva del ripristino di emergenza di Lync Server 2013. Inoltre, i cmdlet di importazione ed esportazione di Response Group supportano il processo di failover al pool di backup e il processo di failback al pool primario o a un nuovo pool. Se si verifica un'interruzione del pool primario, per i Response Group è possibile eseguire il failover al pool di backup e quindi, al termine dell'interruzione, il failback al pool primario o a un nuovo pool.
 
 <div id="sectionSection0" class="section">
 

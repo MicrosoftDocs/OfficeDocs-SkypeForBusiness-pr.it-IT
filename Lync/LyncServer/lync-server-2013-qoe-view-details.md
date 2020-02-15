@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: informazioni sulla visualizzazione QoE'
+title: 'Lync Server 2013: informazioni sulla visualizzazione dei dati QoE'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49733677
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d47fb90b7ffb9eb0cb7fcd1631a0f00ca249276a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c5195067fcd02db0be6dd1838af44f5ed51ddb6a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724606"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045768"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41724606"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-03_
+_**Ultimo argomento modificato:** 2012-10-03_
 
-Le visualizzazioni coprono gli scenari più comuni per la restituzione dei dati dal database SQL QoE. Si tratta di visualizzazioni consigliate usate per creare report personalizzati anziché accedere direttamente alle tabelle del database. Questo perché le visualizzazioni hanno più probabilità di mantenere la compatibilità con le versioni precedenti.
+Le viste disponibili soddisfano gli scenari più comuni per la restituzione di dati dal database di SQL Server QoE. È consigliabile utilizzare le viste per la creazione di report personalizzati, anziché accedere direttamente alle tabelle del database, perché è più probabile che le viste rimangano compatibili con le versioni precedenti anche nelle versioni future.
 
 
 <table>
@@ -47,7 +47,7 @@ Le visualizzazioni coprono gli scenari più comuni per la restituzione dei dati 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome visualizzazione</th>
+<th>Nome della vista</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -58,7 +58,7 @@ Le visualizzazioni coprono gli scenari più comuni per la restituzione dei dati 
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-medialine-view.md">Visualizzazione MediaLine in Lync Server 2013</a></p></td>
-<td><p>Archivia informazioni su ogni riga multimediale nel database. Una sessione audio in genere contiene una linea media audio. Una sessione audio e video (A/V) in genere contiene una linea media audio e una linea media video; Tuttavia, la sessione può contenere due linee multimediali video se viene usato un dispositivo per i servizi di conferenza o se viene usata la visualizzazione raccolta.</p></td>
+<td><p>Archivia informazioni su ogni linea multimediale nel database. Una sessione audio in genere contiene una linea multimediale audio. Una sessione audio e video (A/V) in genere contiene una linea multimediale audio e una video; la sessione, tuttavia, contiene due linee multimediali video se si utilizza un dispositivo per conferenze o la visualizzazione Raccolta.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-networkconfigurationsettings-view.md">Visualizzazione NetworkConfigurationSettings in Lync Server 2013</a></p></td>
@@ -66,11 +66,11 @@ Le visualizzazioni coprono gli scenari più comuni per la restituzione dei dati 
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-session-view.md">Visualizzazione sessione in Lync Server 2013</a></p></td>
-<td><p>Archivia informazioni sulle sessioni che hanno record nel database.</p></td>
+<td><p>Archivia informazioni sulle sessioni con record nel database.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-useragent-view.md">Visualizzazione UserAgent in Lync Server 2013</a></p></td>
-<td><p>Archivia informazioni sugli agenti utente coinvolti nelle sessioni che hanno record nel database.</p></td>
+<td><p>Archivia informazioni sugli agenti utenti coinvolti nelle sessioni con record nel database.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-videostreamdetail-view.md">Visualizzazione VideoStreamDetail in Lync Server 2013</a></p></td>

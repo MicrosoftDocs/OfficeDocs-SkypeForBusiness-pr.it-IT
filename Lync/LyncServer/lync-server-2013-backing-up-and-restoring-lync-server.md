@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: eseguire il backup e il ripristino di Lync Server'
+title: 'Lync Server 2013: backup e ripristino di Lync Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 51541443
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 43a96f47bfe9d28fdbc37eea0ae62ef6cd763098
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d65d06ac9c72e776eee51b9b3dff6c6db3a59031
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740146"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044448"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41740146"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-In questa sezione sono disponibili le procedure consigliate per eseguire il backup dei dati di Lync Server 2013 e per ripristinarlo in caso di errore. Queste procedure consigliate si applicano alle situazioni seguenti:
+In questa sezione sono disponibili le procedure consigliate per il backup dei dati di Lync Server 2013 e per il ripristino in caso di errore. Queste procedure consigliate sono valide per le situazioni seguenti:
 
-  - Un intero pool di Lync Server di qualsiasi tipo (front end server, Edge Server, Mediation Server, Persistent Chat Server o Director) o un singolo server in uno di questi pool.
+  - Un intero pool di Lync Server di qualsiasi tipo (front end server, server perimetrale, Mediation Server, server Chat persistente o Director) oppure un singolo server in uno di questi pool.
 
   - Server di gestione centrale
 
@@ -47,27 +47,27 @@ In questa sezione sono disponibili le procedure consigliate per eseguire il back
 
   - Server back-end Enterprise Edition
 
-  - Un archivio di file
+  - Archivio file
 
   - Database di archiviazione, database di monitoraggio o database di chat persistente
 
-Questa sezione non include informazioni sul ripristino di un intero sito o per lo sviluppo di un sito standby. Per informazioni dettagliate sullo sviluppo di una soluzione di ripristino di emergenza con pool Front-End associati, vedere [pianificazione per la disponibilità elevata e il ripristino di emergenza in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md). Questo è il metodo consigliato per pianificare il ripristino di emergenza.
+In questa sezione non sono incluse informazioni relative al ripristino di un intero sito o allo sviluppo di un sito di standby. Per informazioni dettagliate sullo sviluppo di una soluzione di ripristino di emergenza con pool Front End abbinati, vedere [Planning for High Availability and Disaster Recovery in Lync Server 2013](lync-server-2013-planning-for-high-availability-and-disaster-recovery.md). Si tratta del metodo consigliato per la pianificazione del ripristino di emergenza.
 
-Se sono stati distribuiti pool Front-End associati, se uno di questi pool non riesce e diventa irrecuperabile, è possibile ripristinare questo pool con un nuovo nome di dominio completo (FQDN) dal pool associato. Per informazioni dettagliate sui passaggi per eseguire questo ripristino, vedere [mancanza di un pool in Lync Server 2013](lync-server-2013-failing-over-a-pool.md). Inoltre, se in seguito si vuole ricreare un pool non riuscito e non recuperabile che faceva parte di una coppia front-end, è possibile usare la procedura descritta in [esecuzione di un failover del pool di front end ABC in Lync Server 2013](lync-server-2013-performing-an-abc-front-end-pool-failover.md).
+Se i pool Front End associati sono stati distribuiti, se uno di questi pool ha esito negativo e diventa irrecuperabile, è possibile ripristinare il pool con un nuovo nome di dominio completo (FQDN) dal pool associato. Per informazioni dettagliate sulla procedura per eseguire questo ripristino, vedere [failover di un pool in Lync Server 2013](lync-server-2013-failing-over-a-pool.md). Inoltre, se si desidera ricreare un pool non riuscito e irrecuperabile che faceva parte di una coppia front end, è possibile utilizzare la procedura descritta in [esecuzione di un failover del pool ABC front end in Lync Server 2013](lync-server-2013-performing-an-abc-front-end-pool-failover.md).
 
-La metodologia descritta in questo documento comporta considerazioni particolari durante la fase di pianificazione. Per informazioni dettagliate, vedere [creazione di un piano di backup e ripristino per Lync Server 2013](lync-server-2013-establishing-a-backup-and-restoration-plan.md).
+La metodologia descritta in questo documento implica considerazioni speciali durante la fase di pianificazione. Per informazioni dettagliate, vedere [establishing a backup and Restoration Plan for Lync Server 2013](lync-server-2013-establishing-a-backup-and-restoration-plan.md).
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Preparazione per il backup e il ripristino di Lync Server 2013](lync-server-2013-preparing-for-lync-server-backup-and-restoration.md)
 
   - [Backup dei dati e delle impostazioni in Lync Server 2013](lync-server-2013-backing-up-data-and-settings.md)
 
-  - [Ripristino di dati e impostazioni in Lync Server 2013](lync-server-2013-restoring-data-and-settings.md)
+  - [Ripristino dei dati e delle impostazioni in Lync Server 2013](lync-server-2013-restoring-data-and-settings.md)
 
-  - [Fogli di lavoro di backup e ripristino per Lync Server 2013](lync-server-2013-backup-and-restoration-worksheets.md)
+  - [Fogli di lavoro per il backup e il ripristino di Lync Server 2013](lync-server-2013-backup-and-restoration-worksheets.md)
 
 </div>
 

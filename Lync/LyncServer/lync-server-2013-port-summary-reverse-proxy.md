@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Riepilogo delle porte - proxy inverso'
+title: 'Lync Server 2013: riepilogo delle porte-proxy inverso'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184251
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f2944cde932413f00b5a4dcb75cd4a37bd5b3a3a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 203acca41c3e759bb05787c2bc23fd0ac773355f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747596"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043188"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="port-summary---reverse-proxy-in-lync-server-2013"></a>Riepilogo delle porte - proxy inverso in Lync Server 2013
+# <a name="port-summary---reverse-proxy-in-lync-server-2013"></a>Riepilogo delle porte-proxy inverso in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41747596"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-15_
+_**Ultimo argomento modificato:** 2013-02-15_
 
-Il proxy inverso ha requisiti minimi per il firewall e la porta/protocollo.
+Per il proxy inverso sono previsti requisiti minimi per il firewall, la porta e il protocollo.
 
-  - I requisiti del firewall esterno sono HTTPS/TCP/443 e l'opzione HTTP/TCP/80 facoltativa. HTTPS viene usato per le comunicazioni sicure SSL e TLS tramite il proxy inverso. HTTP viene usato se si sceglie di consentire l'accesso al servizio di individuazione automatica quando si modificano i certificati potrebbe risultare difficile o non giustificato il costo.
+  - I requisiti del firewall esterno sono HTTPS/TCP/443 e il protocollo HTTP/TCP/80 facoltativo. HTTPS viene utilizzato per le comunicazioni protette SSL e TLS tramite il proxy inverso. HTTP viene utilizzato se si sceglie di consentire l'accesso al servizio di individuazione automatica quando si modificano i certificati potrebbe risultare difficile o non giustificato il costo.
 
-  - I client si aspettano di contattare il server Office Web Apps in HTTPS. Il server Office Web Apps prevede la comunicazione da client interni in HTTPS/TCP/443. La configurazione consigliata consiste nel consentire HTTPS/TCP/443 dal proxy inverso al server Office Web Apps.
+  - I client prevedono di contattare il server Office Web Apps su HTTPS. Il server Office Web Apps prevede la comunicazione da client interni su HTTPS/TCP/443. La configurazione consigliata consiste nel consentire HTTPS/TCP/443 dal proxy inverso al server Office Web Apps.
 
-  - La porta 8080 viene usata per indirizzare il traffico dall'interfaccia interna del proxy inverso al server front-end, all'IP virtuale del pool Front-End (VIP) o al VIP del pool di Director o Director facoltativi. La porta TCP 8080 è necessaria per i dispositivi mobili che utilizzano Lync per individuare il servizio di individuazione automatica in situazioni in cui la modifica del certificato della regola di pubblicazione del servizio Web esterno è indesiderata (ad esempio, se si ha un numero elevato di domini SIP). Se si sceglie di acquisire nuovi certificati con le voci SAN necessarie, la porta TCP 8080 non è necessaria ed è facoltativa.
+  - La porta 8080 viene utilizzata per instradare il traffico dall'interfaccia interna del proxy inverso al front end server, all'IP virtuale del pool Front End (VIP) o al VIP del pool di Director o Director facoltativo. La porta TCP 8080 è obbligatoria per i dispositivi mobili che eseguono Lync per individuare il servizio di individuazione automatica in situazioni in cui la modifica del certificato della regola di pubblicazione dei servizi Web esterni è indesiderata (ad esempio, se si dispone di un numero elevato di domini SIP). Se si sceglie di acquisire nuovi certificati con le voci SAN necessarie, la porta TCP 8080 non è necessaria ed è facoltativa.
 
-  - La porta 4443 viene usata per il traffico dall'interfaccia interna del proxy inverso al server front-end, all'IP virtuale del pool Front End (VIP) o al pool di Director o Director facoltativo VIP
+  - La porta 4443 viene utilizzata per il traffico dall'interfaccia interna del proxy inverso al front end server, all'IP virtuale del pool Front End (VIP) o al VIP del pool di Director o Director facoltativo
     
     ![13142405-d5c9-45b7-a8b7-a8c89f09c97c](images/JJ204932.13142405-d5c9-45b7-a8b7-a8c89f09c97c(OCS.15).jpg "13142405-d5c9-45b7-a8b7-a8c89f09c97c")  
     
@@ -53,14 +53,14 @@ Il proxy inverso ha requisiti minimi per il firewall e la porta/protocollo.
     
 
     > [!WARNING]  
-    > Non confondere 4443 su TCP dal proxy inverso alla distribuzione interna per la porta 4443 tramite il traffico TCP dal server Standard Edition o dal pool Front-end che gestisce il ruolo di Central Management store.
+    > Non confondere l'4443 su TCP dal proxy inverso alla distribuzione interna per la porta 4443 su traffico TCP dal server Standard Edition o dal pool Front end che gestisce il ruolo dell'archivio di gestione centrale.
 
     
     </div>
 
 <div>
 
-## <a name="port-and-protocol-details"></a>Dettagli sulla porta e sul protocollo
+## <a name="port-and-protocol-details"></a>Informazioni dettagliate sulle porte e sui protocolli
 
 ### <a name="firewall-details-for-reverse-proxy-server-external-interface"></a>Dettagli del firewall per il server proxy inverso: interfaccia esterna
 
@@ -76,7 +76,7 @@ Il proxy inverso ha requisiti minimi per il firewall e la porta/protocollo.
 <th>Protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Note</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
@@ -84,14 +84,14 @@ Il proxy inverso ha requisiti minimi per il firewall e la porta/protocollo.
 <td><p>HTTP/TCP/80</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Listener proxy inverso</p></td>
-<td><p>Opzionale Reindirizzamento a HTTPS se l'utente immette http://&lt;publishedSiteFQDN.&gt;</p>
-<p>Obbligatorio anche se si usa Office Web Apps per le conferenze e il servizio di individuazione automatica per i dispositivi mobili che esegue Lync in situazioni in cui l'organizzazione non vuole modificare il certificato della regola di pubblicazione del servizio Web esterno.</p></td>
+<td><p>Optional Reindirizzamento a HTTPS se l'utente immette http://&lt;publishedSiteFQDN.&gt;</p>
+<p>Necessario anche se si utilizza Office Web Apps per le conferenze e il servizio di individuazione automatica per i dispositivi mobili che eseguono Lync in situazioni in cui l'organizzazione non desidera modificare il certificato della regola di pubblicazione dei servizi Web esterni.</p></td>
 </tr>
 <tr class="even">
 <td><p>HTTPS/TCP/443</p></td>
 <td><p>Qualsiasi</p></td>
 <td><p>Listener proxy inverso</p></td>
-<td><p>Download rubrica, servizio query Web Rubrica, individuazione automatica, aggiornamenti client, contenuto riunione, aggiornamenti dispositivi, espansione di gruppo, Office Web Apps per conferenze, servizi di conferenza telefonica con accesso esterno e riunioni.</p></td>
+<td><p>Download della Rubrica, servizio query Web della Rubrica, individuazione automatica, aggiornamenti dei client, contenuto delle riunioni, aggiornamenti dei dispositivi, espansione di gruppi, Office Web Apps per le conferenze, conferenze telefoniche con accesso esterno e riunioni.</p></td>
 </tr>
 </tbody>
 </table>
@@ -111,26 +111,26 @@ Il proxy inverso ha requisiti minimi per il firewall e la porta/protocollo.
 <th>Protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Note</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>HTTP/TCP/8080</p></td>
-<td><p>Interfaccia proxy inverso interno</p></td>
-<td><p>Server front-end, pool Front-End, Director, pool di Director</p></td>
-<td><p>Obbligatorio se si usa il servizio di individuazione automatica per i dispositivi mobili che esegue Lync in situazioni in cui l'organizzazione non vuole modificare il certificato della regola di pubblicazione del servizio Web esterno.</p>
-<p>Il traffico inviato alla porta 80 nell'interfaccia esterna del proxy inverso viene reindirizzato a un pool sulla porta 8080 dall'interfaccia interna del proxy inverso in modo che i servizi Web del pool possano distinguerlo dal traffico Web interno.</p></td>
+<td><p>Interfaccia interna del proxy inverso</p></td>
+<td><p>Front End Server, pool Front End, Director, pool di Director</p></td>
+<td><p>Obbligatorio se si utilizza il servizio di individuazione automatica per i dispositivi mobili che eseguono Lync in situazioni in cui l'organizzazione non desidera modificare il certificato della regola di pubblicazione dei servizi Web esterni.</p>
+<p>Il traffico inviato alla porta 80 nell'interfaccia esterna del proxy inverso viene reindirizzato a un pool sulla porta 8080 dall'interfaccia interna del proxy inverso, in modo che il pool di servizi Web possa distinguerlo dal traffico della rete interna.</p></td>
 </tr>
 <tr class="even">
 <td><p>HTTPS/TCP/4443</p></td>
-<td><p>Interfaccia proxy inverso interno</p></td>
-<td><p>Server front-end, pool Front-End, Director, pool di Director</p></td>
-<td><p>Il traffico inviato alla porta 443 nell'interfaccia esterna del proxy inverso viene reindirizzato a un pool sulla porta 4443 dall'interfaccia interna del proxy inverso in modo che i servizi Web del pool possano distinguerlo dal traffico Web interno.</p></td>
+<td><p>Interfaccia interna del proxy inverso</p></td>
+<td><p>Front End Server, pool Front End, Director, pool di Director</p></td>
+<td><p>Il traffico inviato alla porta 443 nell'interfaccia esterna del proxy inverso viene reindirizzato a un pool sulla porta 4443 dall'interfaccia interna del proxy inverso, in modo che i servizi Web del pool possano distinguerlo dal traffico Web interno.</p></td>
 </tr>
 <tr class="odd">
 <td><p>HTTPS/TCP/443</p></td>
-<td><p>Interfaccia proxy inverso interno</p></td>
+<td><p>Interfaccia interna del proxy inverso</p></td>
 <td><p>Office Web Apps per le conferenze</p></td>
 <td></td>
 </tr>

@@ -12,16 +12,16 @@ ms:contentKeyID: 48183346
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 65c94513a3578f8608da555cdd0b3e2273b8a7da
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 915a5d0a2c5c4a5f38063b56dc133d2558aa65ac
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762534"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042173"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41762534"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-28_
+_**Ultimo argomento modificato:** 2012-09-28_
 
-La tabella DeRegisterType è una tabella statica in cui è archiviato l'elenco dei possibili tipi di deregistri degli utenti, ad esempio "client avviato", "Registrazione scaduta" o "client smesso di rispondere".
+La tabella DeRegisterType è una tabella statica in cui è archiviato l'elenco dei possibili tipi di deregistri degli utenti, ad esempio ' client avviato ',' Registrazione scaduta ' oppure ' client interrotto la risposta '.
 
 
 <table>
@@ -68,13 +68,13 @@ La tabella DeRegisterType è una tabella statica in cui è archiviato l'elenco d
 <td></td>
 <td><p>Valori consentiti:</p>
 <ul>
-<li><p>0--sconosciuto</p></li>
-<li><p>1--annullamento della registrazione avviata dal client</p></li>
-<li><p>2--Registrazione scaduta</p></li>
-<li><p>3-il cliente si è schiantato</p></li>
-<li><p>4--attributi utente modificati</p></li>
+<li><p>0 - Sconosciuto</p></li>
+<li><p>1-annullamento della registrazione avviata dal client</p></li>
+<li><p>2-Registrazione scaduta</p></li>
+<li><p>3 – il client si è bloccato</p></li>
+<li><p>4-attributi degli utenti modificati</p></li>
 <li><p>5-modifica del registrar preferito</p></li>
-<li><p>6--client legacy in modalità Survival</p></li>
+<li><p>6-client legacy in modalità sopravvivenza</p></li>
 </ul></td>
 </tr>
 </tbody>

@@ -12,16 +12,16 @@ ms:contentKeyID: 51803996
 ms.date: 12/12/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 42a2579360fbb4af8d6f3c491f5a56c380b593d0
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1c456deb3b3cb72df0bd6e8ac2dd70e926bb0769
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724246"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42047959"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,20 +35,20 @@ ms.locfileid: "41724246"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-20_
+_**Ultimo argomento modificato:** 2013-02-20_
 
-Ogni volta che vengono caricati nuovi aggiornamenti per dispositivi nel sistema, viene creata una regola di aggiornamento del dispositivo corrispondente. Per impostazione predefinita, le nuove regole di aggiornamento dei dispositivi vengono assegnate allo stato in sospeso. Ciò significa che le regole possono essere scaricate e installate nei dispositivi di test, ma non nei dispositivi di produzione, che consente di testare gli aggiornamenti prima di renderli disponibili per gli utenti. In base ai test, è possibile accettare e distribuire o rifiutare ed eliminare l'aggiornamento. Quando si rifiuta un aggiornamento, l'aggiornamento del dispositivo viene dissociato dalla regola di aggiornamento del dispositivo.
+Ogni volta che sul sistema vengono caricati degli aggiornamenti dei dispositivi, viene creata una corrispondente regola di aggiornamento dei dispositivi. Per impostazione predefinita, queste nuove regole di aggiornamento dei dispositivi vengono assegnate allo stato in sospeso. Questo significa che le regole possono essere scaricate e installate nei dispositivi di test, ma non nei dispositivi di produzione, che consentono di testare gli aggiornamenti prima di renderli disponibili agli utenti. In base ai test, è possibile accettare e distribuire o rifiutare ed eliminare l'aggiornamento. Quando si rifiuta un aggiornamento, l'aggiornamento del dispositivo è disassociato dalla regola di aggiornamento dei dispositivi.
 
 <div>
 
 
-I file di aggiornamento dei dispositivi non più associati a un dispositivo possono essere rimossi tramite Windows PowerShell e il cmdlet **Clear-CsDeviceUpdateFile** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.
+I file di aggiornamento dei dispositivi che non sono più associati a un dispositivo possono essere rimossi utilizzando Windows PowerShell e il cmdlet **Clear-CsDeviceUpdateFile** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.
 
 <div>
 
 
 > [!NOTE]  
-> Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft <A href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</A>Lync Server 2010 con Remote PowerShell" at.
+> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync <A href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</A>Server 2010 using Remote PowerShell" at.
 
 
 
@@ -57,13 +57,13 @@ I file di aggiornamento dei dispositivi non più associati a un dispositivo poss
 <div>
 
 
-  - Ad esempio, il comando seguente rimuove le regole di aggiornamento dei dispositivi nel server Web atl-cs-001.litwareinc.com che non sono più associate a un dispositivo:
+  - Ad esempio, il comando seguente rimuove tutte le regole di aggiornamento dei dispositivi sul server Web atl-cs-001.litwareinc.com che non sono più associate a un dispositivo:
     
         Clear-CsDeviceUpdateFile -Identity "service:WebServer:atl-cs-001.litwareinc.com"
 
 </div>
 
-Per informazioni dettagliate, vedere l'argomento della Guida relativo al cmdlet [Clear-CsDeviceUpdateFile](https://docs.microsoft.com/powershell/module/skype/Clear-CsDeviceUpdateFile) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Clear-CsDeviceUpdateFile](https://docs.microsoft.com/powershell/module/skype/Clear-CsDeviceUpdateFile) .
 
 </div>
 

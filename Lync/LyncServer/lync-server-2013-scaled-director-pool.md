@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pool di server Director con scalabilità implementata'
+title: 'Lync Server 2013: pool di Director con scalabilità orizzontale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184055
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 93c3147f9397db444e816dea433fbe5478c8e87a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8a2ddb19bab0ab47d1afe0014e06aad6189259b4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764984"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049678"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="scaled-director-pool-in-lync-server-2013"></a>Pool di server Director con scalabilità implementata in Lync Server 2013
+# <a name="scaled-director-pool-in-lync-server-2013"></a>Pool di server Director in scala in Lync 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41764984"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-08_
+_**Ultimo argomento modificato:** 2012-09-08_
 
-Il Director può essere distribuito in una singola configurazione di Director o come pool di Director. Questa sezione definisce una topologia e una configurazione per due topologie di Director in pool. Se si prevede di distribuire un singolo Director, vedere l'argomento [Single Director in Lync Server 2013](lync-server-2013-single-director.md) per la pianificazione delle considerazioni relative alla topologia.
+Il Director può essere distribuito in una singola configurazione del Director o come pool di server Director. In questa sezione vengono definite una topologia e una configurazione per due topologie del Director in pool. Se si sta pianificando la distribuzione di un singolo Director, vedere l'argomento [Single Director in Lync Server 2013](lync-server-2013-single-director.md) per la pianificazione di considerazioni sulla topologia.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Pool di server Director con scalabilità implementata - bilanciamento del carico DNS e bilanciamento del carico hardware in Lync Server 2013](lync-server-2013-scaled-director-pool-dns-load-balancing-and-hardware-load-balancer.md)
+  - [Pool di server Director con scalabilità orizzontale-bilanciamento del carico DNS e bilanciamento del carico hardware in Lync 2013](lync-server-2013-scaled-director-pool-dns-load-balancing-and-hardware-load-balancer.md)
 
-  - [Pool di server Director con scalabilità implementata, servizio di bilanciamento del carico hardware in Lync Server 2013](lync-server-2013-scaled-director-pool-hardware-load-balancer.md)
+  - [Pool di server Director con scalabilità orizzontale-bilanciamento del carico hardware in Lync 2013](lync-server-2013-scaled-director-pool-hardware-load-balancer.md)
 
 </div>
 

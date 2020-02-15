@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: report elenco chiamate'
+title: 'Lync Server 2013: rapporto elenco chiamate'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184921
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ce2954f848d448676aea2931cda4dffa8ddc0c5d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 53b462644e2334f428b8cd9a46c0ca07472f6ee2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743006"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044478"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="call-list-report-in-lync-server-2013"></a>Report elenco chiamate in Lync Server 2013
+# <a name="call-list-report-in-lync-server-2013"></a>Rapporto elenco chiamate in Lync Server 2013
 
 </div>
 
@@ -35,55 +35,55 @@ ms.locfileid: "41743006"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-Il report elenco chiamate offre metriche di qualità delle esperienze (QoE) per le singole chiamate effettuate e ricevute nell'organizzazione. Tieni presente che le metriche effettive segnalate dipendono dalla modalità di accesso al report elenco chiamate. Ad esempio, se si apre il report dal [report dispositivo in Lync Server 2013](lync-server-2013-device-report.md), verranno visualizzate le metriche, come le metriche seguenti, che vengono anche segnalate nel report del dispositivo:
+Il rapporto Elenco chiamate offre metriche QoE (Quality of Experience) per le singole chiamate effettuate e ricevute nell'organizzazione. Tenere presente che le metriche effettive riportate dipendono dalla modalità di accesso al rapporto Elenco chiamate. Ad esempio, se si apre il report del rapporto [dispositivo in Lync Server 2013](lync-server-2013-device-report.md), vengono visualizzate le metriche, quali le metriche seguenti, che sono state segnalate anche nel rapporto dispositivo:
 
   - Microfono del chiamante
 
   - Altoparlante del chiamante
 
-  - Microfono del destinatario
+  - Microfono del chiamato
 
-  - Altoparlante del destinatario
+  - Altoparlante del chiamato
 
-  - Rapporto tra il tempo di cambio vocale
+  - Rapporto di tempo commutazione vocale
 
-Tuttavia, se si apre il report elenco chiamate dal [report posizione in Lync Server 2013](lync-server-2013-location-report.md), non verrà visualizzata alcuna di queste metriche. vedrai invece le metriche come queste:
+Tuttavia, se si apre il rapporto elenco chiamate dal [rapporto percorso in Lync Server 2013](lync-server-2013-location-report.md), non verrà visualizzata alcuna di queste metriche. si vedranno invece metriche come queste:
 
-  - Andata e ritorno (MS)
+  - Roundtrip (ms)
 
   - Degradazione (MOS)
 
   - Perdita di pacchetti
 
-  - Jitter (MS)
+  - Instabilità (ms)
 
-Queste sono le metriche segnalate nel report posizione. Tuttavia, dal report elenco chiamate è sempre possibile fare clic sulla metrica Dettagli per specificare le informazioni QoE complete per qualsiasi chiamata.
+Si tratta delle metriche riportate nel Rapporto percorsi. Tuttavia, nel rapporto Elenco chiamate è sempre possibile fare clic sulla metrica Dettagli per ottenere informazioni di QoE complete per qualsiasi chiamata.
 
 <div>
 
-## <a name="accessing-the-call-list-report"></a>Accesso al report elenco chiamate
+## <a name="accessing-the-call-list-report"></a>Accesso al rapporto Elenco chiamate
 
-È possibile accedere al report elenco chiamate da uno dei report seguenti:
+Il rapporto Elenco chiamate è accessibile da qualsiasi dei rapporti seguenti:
 
-  - [Report posizione in Lync Server 2013](lync-server-2013-location-report.md) (facendo clic sul volume delle chiamate o sulla metrica della percentuale di chiamata scadente)
+  - Il [rapporto percorso in Lync Server 2013](lync-server-2013-location-report.md) (facendo clic sulla metrica volume chiamata o percentuale di chiamate insufficienti)
 
-  - Il [report del dispositivo in Lync Server 2013](lync-server-2013-device-report.md) (facendo clic sul volume delle chiamate o sulla metrica della percentuale di chiamata scadente)
+  - Il [rapporto del dispositivo in Lync Server 2013](lync-server-2013-device-report.md) (facendo clic sulla metrica volume chiamata o percentuale di chiamate insufficienti)
 
-  - [Report di riepilogo sulla qualità multimediale in Lync Server 2013](lync-server-2013-media-quality-summary-report.md) (facendo clic sul volume delle chiamate o sulla metrica della percentuale di chiamata scadente)
+  - Il [rapporto riepilogativo sulla qualità multimediale in Lync Server 2013](lync-server-2013-media-quality-summary-report.md) (facendo clic sulla metrica volume chiamata o percentuale di chiamate insufficienti)
 
-  - [Report sulle prestazioni del server in Lync server 2013](lync-server-2013-server-performance-report.md) (facendo clic sul volume delle chiamate o sulla metrica della percentuale di chiamata scadente)
+  - Il [rapporto prestazioni server in Lync server 2013](lync-server-2013-server-performance-report.md) (facendo clic sulla metrica volume chiamata o percentuale di chiamate insufficienti)
 
-Dall'interno del report elenco chiamate è possibile accedere al [report dettagli chiamata in Lync Server 2013](lync-server-2013-call-detail-report.md) facendo clic sulla metrica dettaglio.
+Dall'interno del rapporto elenco chiamate è possibile accedere al [rapporto dettagli chiamata in Lync Server 2013](lync-server-2013-call-detail-report.md) facendo clic sulla metrica Dettagli.
 
 </div>
 
 <div>
 
-## <a name="making-the-best-use-of-the-call-list-report"></a>Sfruttare al meglio il report elenco chiamate
+## <a name="making-the-best-use-of-the-call-list-report"></a>Uso ottimale del rapporto Elenco chiamate
 
-Se non si ricordano le metriche del rapporto elenco chiamate (ad esempio il tempo di cambio di rapporto vocale), tenere il mouse sopra l'etichetta metrica; verrà visualizzata una descrizione comando che consente di visualizzare brevemente la metrica.
+Se non si è certi del tipo di misurazioni offerte dalle metriche del rapporto Elenco chiamate (ad esempio il rapporto di tempo di commutazione vocale), tenere il puntatore del mouse sull'etichetta per visualizzare una descrizione comandi con informazioni sintetiche sulla metrica in questione.
 
 </div>
 
@@ -91,7 +91,7 @@ Se non si ricordano le metriche del rapporto elenco chiamate (ad esempio il temp
 
 ## <a name="filters"></a>Filtri
 
-Nessuno. Non è possibile filtrare il report elenco chiamate.
+Nessuno. Non è possibile filtrare il rapporto Elenco chiamate.
 
 </div>
 
@@ -99,9 +99,9 @@ Nessuno. Non è possibile filtrare il report elenco chiamate.
 
 ## <a name="metrics"></a>Metriche
 
-Nella tabella seguente sono elencate le informazioni fornite nel report elenco chiamate per ogni chiamata.
+La tabella seguente elenca le informazioni disponibili nel rapporto Elenco chiamate per ogni chiamata.
 
-### <a name="call-list-report-metrics"></a>Metriche rapporto elenco chiamate
+### <a name="call-list-report-metrics"></a>Metriche del rapporto Elenco chiamate
 
 <table>
 <colgroup>
@@ -112,7 +112,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel report elenco c
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Si può ordinare su questo elemento?</th>
+<th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -120,81 +120,81 @@ Nella tabella seguente sono elencate le informazioni fornite nel report elenco c
 <tr class="odd">
 <td><p><strong>Dettagli</strong></p></td>
 <td><p>No</p></td>
-<td><p>Quando si fa clic su questo elemento, nel report vengono visualizzate altre informazioni sulla chiamata.</p></td>
+<td><p>Facendo clic su questo elemento è possibile visualizzare ulteriori informazioni sulla chiamata.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Chiamante</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Indirizzo SIP della persona che ha avviato la chiamata.</p></td>
+<td><p>Indirizzo SIP dell'utente che ha avviato la chiamata.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Chiamato</strong></p></td>
+<td><p><strong>Destinatario chiamata</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Indirizzo SIP della persona che è stata chiamata.</p></td>
+<td><p>Indirizzo SIP dell'utente chiamato.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Ora di inizio</strong></p></td>
+<td><p><strong>Ora inizio</strong></p></td>
 <td><p>Sì</p></td>
 <td><p>Data e ora di inizio della chiamata.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Ora di fine</strong></p></td>
+<td><p><strong>Ora fine</strong></p></td>
 <td><p>Sì</p></td>
 <td><p>Data e ora di fine della chiamata.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Agente utente chiamante</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Software usato dall'endpoint della persona che ha avviato la chiamata.</p></td>
+<td><p>Software utilizzato dall'endpoint dell'utente che ha avviato la chiamata.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Agente utente chiamato</strong></p></td>
+<td><p><strong>Agente utente destinatario chiamata</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Software usato dall'endpoint della persona chiamata.</p></td>
+<td><p>Software utilizzato dall'endpoint dell'utente che è stato chiamato.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Andata e ritorno (MS)</strong></p></td>
+<td><p><strong>Roundtrip (ms)</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Importo medio (in millisecondi) richiesto per un pacchetto RTP (Real-Time Transport Protocol) per spostarsi in un altro endpoint e quindi viceversa. I tempi di andata e ritorno di 100 millisecondi sono considerati di qualità accettabile.</p>
-<p>I valori alti di andata e ritorno possono essere causati da routing delle chiamate internazionali, da una configurazione errata del routing o da un server multimediale di overload. Gli alti tempi di andata e ritorno si verificano in difficoltà con le conversazioni audio in tempo reale a due vie.</p></td>
+<td><p>Tempo medio di roundtrip (in millisecondi) richiesto per il viaggio di andata e ritorno di un pacchetto RTP (Real-Time Transport Protocol) verso e da un altro endpoint. I roundtrip che non superano i 100 millisecondi vengono considerati accettabili.</p>
+<p>Valori di roundtrip elevati possono essere causati dal routing di chiamate internazionali, da una configurazione errata del routing o da un server di contenuti multimediali sovraccarico. Tempi di roundtrip elevati generano difficoltà nelle conversazioni audio in tempo reale bidirezionali.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Degradazione (MOS)</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Valore medio della degradazione media del Punteggio di opinione (MOS) sperimentato durante una chiamata. I valori di degradazione possono variare da un minimo di 0,0 a un massimo di 5,0. Un valore di 0,5 o meno rappresenta una degradazione accettabile. Storicamente, i punteggi delle opzioni medie sono stati calcolati avendo gli utenti valutano la qualità di una chiamata in una scala da 1 a 5. In Lync Server Lync Server usa un set di algoritmi per prevedere in che modo gli utenti avrebbero valutato una chiamata.</p>
-<p>I valori di degradazione elevati possono essere causati dalla congestione, dalla mancanza di larghezza di banda, dalla congestione wireless o dall'interferenza o da un server multimediale o un endpoint di overload. L'elevata degradazione genera un audio distorta o perso.</p></td>
+<td><p>Valore medio di degradazione MOS (Mean Opinion Score) osservata durante una chiamata. I valori di degradazione possono essere compresi tra un minimo di 0 e un massimo di 5. Il valore 0,5 o inferiore rappresenta una degradazione accettabile. In passato, i valori MOS venivano calcolati chiedendo agli utenti di valutare la qualità di una chiamata su una scala da 1 a 5. In Lync Server, Lync Server utilizza un set di algoritmi per stimare il modo in cui gli utenti avrebbero valutato una chiamata.</p>
+<p>Valori di degradazione elevati possono essere causati da congestione, mancanza di larghezza di banda, interferenze o congestione della rete wireless o da un endpoint o un server di contenuti multimediali sovraccarico. Una degradazione elevata genera audio distorto o perdita di audio.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Perdita di pacchetti</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Tasso medio di perdita di pacchetti RTP. La perdita di pacchetti si verifica quando i pacchetti RTP, un protocollo usato per la trasmissione di audio e video su Internet, non riescono a raggiungere la destinazione. I tassi di perdita elevati sono in genere causati dalla congestione, dalla mancanza di larghezza di banda, dalla congestione wireless o dall'interferenza o da un server multimediale sovraccaricato. La perdita di pacchetti in genere genera un audio distorta o perso.</p></td>
+<td><p>Frequenza media di perdita di pacchetti RTP. La perdita di pacchetti si verifica quando i pacchetti RTP, ovvero un protocollo utilizzato per la trasmissione audio e video su Internet, non riescono a raggiungere la destinazione. Frequenze di perdita elevate sono in genere causate da congestione, mancanza di larghezza di banda, interferenze o congestione della rete wireless o da un server di contenuti multimediali sovraccarico. La perdita di pacchetti di solito genera audio distorto o perdita di audio.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Jitter</strong></p></td>
+<td><p><strong>Instabilità</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Jitter medio rilevato tra gli arrivi del pacchetto RTP. (Jitter è una misura della &quot;shakiness&quot; di una chiamata.) I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o perse.</p></td>
+<td><p>Instabilità media rilevata tra gli arrivi di pacchetti RTP. (Jitter è una misura del &quot;shakiness&quot; di una chiamata). I valori di jitter elevato sono in genere causati dalla congestione o da un server multimediale di overload e generano audio distorte o persi.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Rapporto nascosto del guaritore</strong></p></td>
+<td><p><strong>Rapporto campioni nascosti utilità di ripristino</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Rapporto media tra campioni audio nascosti e il totale al numero totale di esempi. (Un esempio di audio nascosto è una tecnica usata per attenuare la transizione brusca che in genere viene causata da pacchetti di rete eliminati). I valori elevati indicano livelli significativi di occultamento delle perdite applicati a causa di perdita di pacchetti o jitter e generano audio distorte o perse.</p></td>
+<td><p>Rapporto medio tra i campioni audio nascosti e il numero totale di campioni. Un campione audio nascosto è una tecnica utilizzata per mitigare le transazioni improvvise generalmente causate dall'eliminazione di pacchetti di rete. Valori elevati indicano l'applicazione di livelli significativi di soppressione della perdita applicata dovuti a perdita di pacchetti o instabilità, con conseguente audio distorto o perdita di audio.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Rapporto allungato guaritore</strong></p></td>
+<td><p><strong>Rapporto campioni estesi utilità di ripristino</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Rapporto medio tra campioni audio allungati e il totale al numero totale di esempi. (L'audio allungato è l'audio che è stato espanso per mantenere la qualità delle chiamate quando è stato rilevato un pacchetto di rete scartato). I valori alti indicano livelli significativi di stretching dei campioni causati da jitter e generano audio o distorte.</p></td>
+<td><p>Rapporto medio tra i campioni audio estesi e il numero totale di campioni. Con audio esteso si intende l'audio che è stato espanso per garantire la qualità delle chiamate quando viene rilevato un pacchetto di rete eliminato. Valori elevati indicano livelli significativi di estensione dei campioni dovuti a instabilità, con conseguente riproduzione di audio robotico o distorto.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Rapporto compresso del guaritore</strong></p></td>
+<td><p><strong>Rapporto campioni compressi utilità di ripristino</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Rapporto medio tra campioni audio compressi e il numero totale di esempi. (L'audio compresso è un audio compresso che consente di mantenere la qualità delle chiamate quando è stato rilevato un pacchetto di rete scartato). I valori alti indicano livelli significativi di compressione dei campioni causati da jitter e generano un suono accelerato o distorta.</p></td>
+<td><p>Rapporto medio tra i campioni audio compressi e il numero totale di campioni. I campioni audio vengono compressi per mantenere la qualità della chiamata quando è stato rilevato un pacchetto di rete eliminato. Valori alti indicano livelli significativi di compressione dei campioni dovuti a instabilità con conseguente riproduzione di audio accelerato o distorto.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Connettività</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Tipo di collegamento di comunicazione wireless. In genere, questa è una delle opzioni seguenti:</p>
+<td><p>Tipo di collegamento di comunicazione wireless. In genere è uno dei seguenti:</p>
 <ul>
-<li><p>Inoltro</p></li>
+<li><p>Relè</p></li>
 <li><p>Diretto</p></li>
 </ul></td>
 </tr>

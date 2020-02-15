@@ -12,16 +12,16 @@ ms:contentKeyID: 48184187
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1cf99fecc57f680c7da751beae1e50eab55e0dc1
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2543f587ad4e545f55a6cb643531cb941ad26622
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41734826"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42040995"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41734826"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-Dopo aver aggiunto l'archiviazione alla topologia e aver pubblicato la nuova topologia, è necessario configurare le opzioni per l'implementazione iniziale dell'archiviazione nella distribuzione e quindi configurare uno o più criteri di archiviazione per consentire l'archiviazione per la distribuzione e, Facoltativamente, per siti e utenti specifici. Per eseguire questa operazione, è possibile usare il pannello di controllo di Lync Server 2013.
+Dopo aver aggiunto la funzionalità di archiviazione alla topologia e aver pubblicato la nuova topologia, è necessario configurare le opzioni relative alla modalità di implementazione iniziale dell'archiviazione nella distribuzione, e quindi configurare uno o più criteri di archiviazione per abilitare l'archiviazione per la distribuzione stessa e, facoltativamente, per siti e utenti specifici. Per eseguire questa operazione, è possibile utilizzare il pannello di controllo di Lync Server 2013.
 
 <div>
 
 
 > [!NOTE]  
-> Dopo la distribuzione, è possibile modificare le impostazioni di archiviazione per disabilitare o abilitare l'archiviazione. Per informazioni dettagliate su come implementare il supporto dell'archiviazione per la gestione giornaliera o per soddisfare i nuovi requisiti dell'organizzazione dopo la distribuzione, vedere <A href="lync-server-2013-managing-archiving.md">gestione dell'archiviazione di Lync Server 2013</A> nella documentazione Operations.
+> Dopo la distribuzione è possibile modificare le impostazioni di archiviazione per abilitare o disabilitare l'archiviazione stessa. Per informazioni dettagliate su come implementare il supporto di archiviazione per la gestione quotidiana o per soddisfare i nuovi requisiti nell'organizzazione dopo la distribuzione, vedere <A href="lync-server-2013-managing-archiving.md">Managing Lync Server 2013 Archiving</A> nella documentazione relativa alle operazioni.
 
 
 
@@ -51,13 +51,13 @@ Dopo aver aggiunto l'archiviazione alla topologia e aver pubblicato la nuova top
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Configurazione delle opzioni di archiviazione in Lync Server 2013](lync-server-2013-configuring-archiving-options.md)
 
-  - [Configurazione e assegnazione di criteri di archiviazione in Lync Server 2013](lync-server-2013-configuring-and-assigning-archiving-policies.md)
+  - [Configurazione e assegnazione dei criteri di archiviazione in Lync Server 2013](lync-server-2013-configuring-and-assigning-archiving-policies.md)
 
-  - [Abilitare o disabilitare l'invio di una dichiarazione di non responsabilità relativa all'archiviazione ai partner federati in Lync Server 2013](lync-server-2013-enable-or-disable-sending-an-archiving-disclaimer-to-federated-partners.md)
+  - [Abilitare o disabilitare l'invio di una dichiarazione di non responsabilità per l'archiviazione ai partner federati in Lync Server 2013](lync-server-2013-enable-or-disable-sending-an-archiving-disclaimer-to-federated-partners.md)
 
 </div>
 

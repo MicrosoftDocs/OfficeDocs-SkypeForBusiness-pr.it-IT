@@ -12,16 +12,16 @@ ms:contentKeyID: 48185402
 ms.date: 04/06/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1001cce83d9b23125b177725c77715bd19a00e03
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c748a79fe118c9b1d233a7a276bd8298a0e1c3e4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724996"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050288"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41724996"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-04-06_
+_**Ultimo argomento modificato:** 2016-04-06_
 
-Questa sezione riepiloga le porte e i protocolli usati dai server, i bilanciatori di carico e i client in una distribuzione di Lync Server.
+In questa sezione vengono riepilogate le porte e i protocolli utilizzati dai server, dai bilanciamento del carico e dai client in una distribuzione di Lync Server.
 
 <div>
 
 
 > [!IMPORTANT]  
-> I client di Lync e Communicator quando sono coinvolti in una comunicazione uno-a-uno, vengono spesso definiti peer-to-peer. Tecnicamente, i due client comunicano in una conversazione uno-a-uno, con l'unità di controllo multipunto di messaggistica istantanea (IMMCU) al centro. IMMCU è un componente del server front-end. L'immissione di IMMCU nel flusso di lavoro di comunicazione richiesto consente la registrazione dei dettagli delle chiamate e altre caratteristiche abilitate dal server front-end. La comunicazione è da una porta di origine dinamica nel client alla porta del server front-end TLS/TCP/5061 (presupponendo l'uso della sicurezza del livello di trasporto consigliato). In base alla progettazione, la comunicazione peer-to-peer (così come la messaggistica istantanea a più parti) è possibile solo quando Lync Server e IMMCU è attivo e disponibile.
+> I client Lync e Communicator quando sono coinvolti in una comunicazione One to One, vengono spesso definiti peer-to-peer. Tecnicamente, i due client stanno comunicando in una conversazione One to One, con la Central Messaging Multipoint Control Unit (IMMCU) al centro. IMMCU è un componente di front end server. L'inserimento di IMMCU nel flusso di lavoro di comunicazione necessario consente di abilitare la registrazione dettagli chiamata e altre caratteristiche abilitate dal front end server. La comunicazione è da una porta di origine dinamica sul client alla porta del server front-end TLS/TCP/5061 (presupponendo l'utilizzo della sicurezza del layer di trasporto consigliato). In base alla progettazione, la comunicazione peer-to-peer (così come la messaggistica istantanea a più parti) è possibile solo quando Lync Server e IMMCU sono attivi e disponibili.
 
 
 
@@ -51,23 +51,23 @@ Questa sezione riepiloga le porte e i protocolli usati dai server, i bilanciator
 
 <div>
 
-## <a name="port-and-protocol-details"></a>Dettagli sulla porta e sul protocollo
+## <a name="port-and-protocol-details"></a>Informazioni dettagliate sulle porte e sui protocolli
 
 <div>
 
 
 > [!NOTE]  
-> Windows Firewall deve essere in corso prima di avviare i servizi Lync Server in un server, perché in questo caso Lync Server apre le porte necessarie nel firewall.
+> È necessario che Windows Firewall sia in esecuzione prima di avviare i servizi di Lync Server in un server, perché in questo caso Lync Server apre le porte necessarie nel firewall.
 
 
 
 </div>
 
-Per informazioni dettagliate sulla configurazione del firewall per i componenti perimetrali, vedere [determinare i requisiti per il firewall e la porta a/V esterni per Lync Server 2013](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md).
+Per informazioni dettagliate sulla configurazione del firewall per i componenti perimetrali, vedere [Determine External A/V firewall and Port requirements for Lync Server 2013](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md).
 
-La tabella seguente elenca le porte che devono essere aperte in ogni ruolo del server interno.
+Nella tabella seguente sono elencate le porte che è necessario aprire per ogni ruolo server interno.
 
-### <a name="required-server-ports-by-server-role"></a>Porte del server obbligatorie (per ruolo del server)
+### <a name="required-server-ports-by-server-role"></a>Porte server richieste (per ruolo server)
 
 <table>
 <colgroup>
@@ -79,377 +79,377 @@ La tabella seguente elenca le porte che devono essere aperte in ogni ruolo del s
 </colgroup>
 <thead>
 <tr class="header">
-<th>Ruolo del server</th>
+<th>Ruolo server</th>
 <th>Nome servizio</th>
 <th>Porta</th>
-<th>Protocollo</th>
-<th>Note</th>
+<th>Protocol</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>Tutti i server</p></td>
-<td><p>Browser SQL</p></td>
+<td><p>SQL Browser</p></td>
 <td><p>1434</p></td>
 <td><p>UDP</p></td>
-<td><p>Browser SQL per la copia replicata locale del database di Central Management store.</p></td>
+<td><p>Browser SQL per la copia locale replicata del database dell'archivio di gestione centrale.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
+<td><p>Front End Server</p></td>
 <td><p>Servizio front-end di Lync Server</p></td>
 <td><p>5060</p></td>
 <td><p>TCP</p></td>
-<td><p>È possibile usare facoltativamente i server standard e i server front-end per le route statiche a servizi attendibili, ad esempio i server di controllo delle chiamate remote.</p></td>
+<td><p>Utilizzata facoltativamente dai server Standard Edition e dai Front End Server per le route statiche ai servizi trusted, ad esempio i server di controllo delle chiamate remote.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
+<td><p>Front End Server</p></td>
 <td><p>Servizio front-end di Lync Server</p></td>
 <td><p>5061</p></td>
 <td><p>TCP (TLS)</p></td>
-<td><p>Usato dai server standard e dai pool Front-end per tutte le comunicazioni SIP interne tra server (MTLS), per le comunicazioni SIP tra server e client (TLS) e per le comunicazioni SIP tra server front-end e Mediation Server (MTLS). Usato anche per le comunicazioni con il server di monitoraggio.</p></td>
+<td><p>Utilizzata dai server Standard Edition e dai pool Front End per tutte le comunicazioni SIP interne tra i server (MTLS), per le comunicazioni SIP tra Server e Client (TLS), per le comunicazioni SIP tra Front End Server e Mediation Server (MTLS), nonché per le comunicazioni con Monitoring Server.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
+<td><p>Front End Server</p></td>
 <td><p>Servizio front-end di Lync Server</p></td>
 <td><p>444</p></td>
 <td><p>HTTPS</p>
 <p>TCP</p></td>
-<td><p>Usato per la comunicazione HTTPS tra lo stato attiva (il componente Lync Server che gestisce lo stato conferenza) e i singoli server.</p>
-<p>Questa porta viene usata anche per la comunicazione TCP tra gli elettrodomestici Survivable Branch e i server front-end.</p></td>
+<td><p>Utilizzato per la comunicazione HTTPS tra lo stato attivo (il componente Lync Server che gestisce lo stato delle conferenze) e i singoli server.</p>
+<p>Questa porta viene utilizzata anche per le comunicazioni TCP tra Survivable Branch Appliances e front end server.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
+<td><p>Front End Server</p></td>
 <td><p>Servizio front-end di Lync Server</p></td>
 <td><p>135</p></td>
-<td><p>DCOM e chiamata di procedura remota (RPC)</p></td>
-<td><p>Usato per operazioni basate su DCOM come lo spostamento di utenti, la sincronizzazione di User Replicator e la sincronizzazione della Rubrica.</p></td>
+<td><p>DCOM e RPC (Remote Procedure Call)</p></td>
+<td><p>Utilizzata per le operazioni basate su DCOM quali spostamento utenti, sincronizzazione User Replicator e sincronizzazione rubrica.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
-<td><p>Servizio di conferenza telefonica di messaggistica istantanea di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Lync Server IM Service Conferencing</p></td>
 <td><p>5062</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per le richieste SIP in arrivo per le conferenze di messaggistica istantanea.</p></td>
+<td><p>Utilizzata per le richieste SIP in arrivo per le conferenze di messaggistica istantanea (IM).</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
-<td><p>Servizio di conferenza Web di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Servizio Web Conferencing di Lync Server</p></td>
 <td><p>8057</p></td>
 <td><p>TCP (TLS)</p></td>
-<td><p>Usato per ascoltare le connessioni PSOM (Persistent Shared Object Model) dal client.</p></td>
+<td><p>Utilizzata per attendere le connessioni PSOM (Persistent Shared Object Model) dal client.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
-<td><p>Servizio compatibilità con Lync Server Web Conferencing</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Lync Server Web Conferencing Compatibility Service</p></td>
 <td><p>8058</p></td>
 <td><p>TCP (TLS)</p></td>
-<td><p>Consente di ascoltare le connessioni PSOM (Persistent Shared Object Model) dal client Live Meeting e dalle versioni precedenti di Lync Server.</p></td>
+<td><p>Utilizzato per l'attesa per le connessioni PSOM (Persistent Shared Object Model) dal client Live Meeting e le versioni precedenti di Lync Server.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
-<td><p>Servizio di conferenza audio/video di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Lync Server audio/video Conferencing Service</p></td>
 <td><p>5063</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per le richieste SIP in arrivo per le conferenze audio/video (A/V).</p></td>
+<td><p>Utilizzata per le richieste SIP in arrivo per Audio/Video (A/V) Conferencing.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
-<td><p>Servizio di conferenza audio/video di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Lync Server audio/video Conferencing Service</p></td>
 <td><p>57501-65535</p></td>
 <td><p>TCP/UDP</p></td>
-<td><p>Intervallo di porte multimediali usato per i servizi di conferenza video.</p></td>
+<td><p>Intervallo di porte di attesa multimediali utilizzato per le conferenze video.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
-<td><p>Servizio compatibilità Web di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Lync Server Web Compatibility Service</p></td>
 <td><p>80</p></td>
 <td><p>HTTP</p></td>
-<td><p>Usato per la comunicazione dai server front-end agli FQDN della Web farm (gli URL usati da IIS Web Components) quando non viene usato HTTPS.</p></td>
+<td><p>Utilizzata per le comunicazioni dai Front End Server ai nomi di dominio completi della Web farm (gli URL utilizzati dai componenti Web IIS) quando non si utilizzano protocolli HTTPS.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
-<td><p>Servizio compatibilità Web di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Lync Server Web Compatibility Service</p></td>
 <td><p>443</p></td>
 <td><p>HTTPS</p></td>
-<td><p>Usato per la comunicazione dai server front-end agli FQDN della Web farm (gli URL usati da IIS Web Components).</p></td>
+<td><p>Utilizzata per le comunicazioni dai Front End Server ai nomi di dominio completi della Web farm (gli URL utilizzati dai componenti Web IIS).</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
-<td><p>Servizio compatibilità Web di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Lync Server Web Compatibility Service</p></td>
 <td><p>8080</p></td>
 <td><p>TCP e HTTP</p></td>
-<td><p>Usato dai componenti Web per l'accesso esterno.</p></td>
+<td><p>Utilizzato dai componenti Web per l'accesso esterno.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
-<td><p>Componente server Web</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Componente del server Web</p></td>
 <td><p>4443</p></td>
 <td><p>HTTPS</p></td>
-<td><p>HTTPS (da proxy inverso) e le comunicazioni inter-pool HTTPS front-end per l'accesso all'individuazione automatica.</p></td>
+<td><p>HTTPS (da proxy inverso) e comunicazioni inter-pool HTTPS front-end per l'accesso all'individuazione automatica.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
-<td><p>Componente server Web</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Componente del server Web</p></td>
 <td><p>8060</p></td>
 <td><p>TCP (MTLS)</p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
-<td><p>Componente server Web</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Componente del server Web</p></td>
 <td><p>8061</p></td>
 <td><p>TCP (MTLS)</p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
-<td><p>Componente servizi mobili</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Componente dei servizi per dispositivi mobili</p></td>
 <td><p>5086</p></td>
 <td><p>TCP (MTLS)</p></td>
-<td><p>Porta SIP usata dai processi interni dei servizi mobili</p></td>
+<td><p>Porta SIP utilizzata dai processi interni dei servizi per dispositivi mobili</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
-<td><p>Componente servizi mobili</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Componente dei servizi per dispositivi mobili</p></td>
 <td><p>5087</p></td>
 <td><p>TCP (MTLS)</p></td>
-<td><p>Porta SIP usata dai processi interni dei servizi mobili</p></td>
+<td><p>Porta SIP utilizzata dai processi interni dei servizi per dispositivi mobili</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
-<td><p>Componente servizi mobili</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Componente dei servizi per dispositivi mobili</p></td>
 <td><p>443</p></td>
 <td><p>HTTPS</p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
-<td><p>Servizio Assistente conferenza di Lync Server (servizi di conferenza telefonica con accesso esterno)</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Servizio Operatore Conferenza di Lync Server (servizi di conferenza telefonica con accesso esterno)</p></td>
 <td><p>5064</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per le richieste SIP in arrivo per i servizi di conferenza telefonica con accesso esterno.</p></td>
+<td><p>Utilizzata per le richieste SIP in arrivo per le conferenze telefoniche con accesso esterno.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
-<td><p>Servizio Assistente conferenza di Lync Server (servizi di conferenza telefonica con accesso esterno)</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Servizio Operatore Conferenza di Lync Server (servizi di conferenza telefonica con accesso esterno)</p></td>
 <td><p>5072</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per le richieste SIP in arrivo per l'operatore (servizi di conferenza telefonica con accesso esterno).</p></td>
+<td><p>Utilizzato per le richieste SIP in arrivo per Attendant (servizi di conferenza telefonica con accesso esterno).</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end che eseguono anche un Mediation Server collocato</p></td>
-<td><p>Servizio di mediazione Lync Server</p></td>
+<td><p>Front End Server che eseguono anche un Mediation Server collocato</p></td>
+<td><p>Lync Server Mediation Service</p></td>
 <td><p>5070</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato dal Mediation Server per le richieste in arrivo dal server front-end al Mediation Server.</p></td>
+<td><p>Utilizzata dal Mediation Server per le richieste in arrivo dal Front End Server al Mediation Server.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end che eseguono anche un Mediation Server collocato</p></td>
-<td><p>Servizio di mediazione Lync Server</p></td>
+<td><p>Front End Server che eseguono anche un Mediation Server collocato</p></td>
+<td><p>Lync Server Mediation Service</p></td>
 <td><p>5067</p></td>
 <td><p>TCP (TLS)</p></td>
-<td><p>Usato per le richieste SIP in arrivo dal gateway PSTN al Mediation Server.</p></td>
+<td><p>Utilizzata per le richieste SIP in arrivo dal gateway PSTN al Mediation Server.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end che eseguono anche un Mediation Server collocato</p></td>
-<td><p>Servizio di mediazione Lync Server</p></td>
+<td><p>Front End Server che eseguono anche un Mediation Server collocato</p></td>
+<td><p>Lync Server Mediation Service</p></td>
 <td><p>5068</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per le richieste SIP in arrivo dal gateway PSTN al Mediation Server.</p></td>
+<td><p>Utilizzata per le richieste SIP in arrivo dal gateway PSTN al Mediation Server.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end che eseguono anche un Mediation Server collocato</p></td>
-<td><p>Servizio di mediazione Lync Server</p></td>
+<td><p>Front End Server che eseguono anche un Mediation Server collocato</p></td>
+<td><p>Lync Server Mediation Service</p></td>
 <td><p>5081</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per le richieste SIP in uscita dal server Mediation al gateway PSTN.</p></td>
+<td><p>Utilizzata per le richieste SIP in uscita dal Mediation Server al gateway PSTN.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end che eseguono anche un Mediation Server collocato</p></td>
-<td><p>Servizio di mediazione Lync Server</p></td>
+<td><p>Front End Server che eseguono anche un Mediation Server collocato</p></td>
+<td><p>Lync Server Mediation Service</p></td>
 <td><p>5082</p></td>
 <td><p>TCP (TLS)</p></td>
-<td><p>Usato per le richieste SIP in uscita dal server Mediation al gateway PSTN.</p></td>
+<td><p>Utilizzata per le richieste SIP in uscita dal Mediation Server al gateway PSTN.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
+<td><p>Front End Server</p></td>
 <td><p>Servizio di condivisione applicazioni di Lync Server</p></td>
 <td><p>5065</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per le richieste di ascolto SIP in arrivo per la condivisione delle applicazioni.</p></td>
+<td><p>Utilizzata per le richieste di attesa SIP in arrivo per la condivisione delle applicazioni.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
+<td><p>Front End Server</p></td>
 <td><p>Servizio di condivisione applicazioni di Lync Server</p></td>
 <td><p>49152-65535</p></td>
 <td><p>TCP</p></td>
-<td><p>Intervallo di porte multimediali usato per la condivisione delle applicazioni.</p></td>
+<td><p>Intervallo di porte di attesa multimediali per la condivisione delle applicazioni.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
-<td><p>Servizio di annuncio di servizi di conferenza di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Servizio annuncio di Lync Server Conferencing</p></td>
 <td><p>5073</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per le richieste SIP in arrivo per il servizio di annuncio di conferenza di Lync Server (ovvero per i servizi di conferenza telefonica con accesso esterno).</p></td>
+<td><p>Utilizzato per le richieste SIP in arrivo per il servizio annuncio di Lync Server Conferencing, ovvero per le conferenze telefoniche con accesso esterno.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
-<td><p>Servizio di parcheggio delle chiamate di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Servizio Parcheggio di chiamata Lync Server</p></td>
 <td><p>5075</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per le richieste SIP in arrivo per l'applicazione Call Park.</p></td>
+<td><p>Utilizzata per le richieste SIP in arrivo per l'applicazione Parcheggio di chiamata.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
-<td><p>Servizio test audio di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Servizio di test audio di Lync Server</p></td>
 <td><p>5076</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per le richieste SIP in arrivo per il servizio di test audio.</p></td>
+<td><p>Utilizzata per le richieste SIP in arrivo per il servizio Test audio.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
+<td><p>Front End Server</p></td>
 <td><p>Non applicabile</p></td>
 <td><p>5066</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per il gateway avanzato 9-1-1 (E9-1-1) in uscita.</p></td>
+<td><p>Utilizzata per il gateway Enhanced 9-1-1 (E9-1-1) in uscita.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
-<td><p>Servizio Response Group di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Servizio Response Group Lync Server</p></td>
 <td><p>5071</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per le richieste SIP in arrivo per l'applicazione Response Group.</p></td>
+<td><p>Utilizzata per le richieste SIP in arrivo per l'applicazione Response Group.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
-<td><p>Servizio Response Group di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Servizio Response Group Lync Server</p></td>
 <td><p>8404</p></td>
 <td><p>TCP (MTLS)</p></td>
-<td><p>Usato per le richieste SIP in arrivo per l'applicazione Response Group.</p></td>
+<td><p>Utilizzata per le richieste SIP in arrivo per l'applicazione Response Group.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end</p></td>
-<td><p>Servizio criteri di larghezza di banda di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Servizio criteri larghezza di banda di Lync Server</p></td>
 <td><p>5080</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per il controllo dell'ammissione tramite chiamata tramite il servizio criteri di larghezza di banda per il traffico a/V Edge TURN.</p></td>
+<td><p>Utilizzata per il controllo di ammissione di chiamata eseguito dal servizio criteri larghezza di banda per il traffico A/V Edge TURN.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front-end</p></td>
-<td><p>Servizio criteri di larghezza di banda di Lync Server</p></td>
+<td><p>Front End Server</p></td>
+<td><p>Servizio criteri larghezza di banda di Lync Server</p></td>
 <td><p>448</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per il controllo dell'ammissione tramite chiamata dal servizio criteri di larghezza di banda di Lync Server.</p></td>
+<td><p>Utilizzato per il controllo di ammissione di chiamata dal servizio criteri larghezza di banda di Lync Server.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Server front-end in cui risiede l'Central Management store</p></td>
-<td><p>Servizio agente Master Replicator di Lync Server</p></td>
+<td><p>Server front end in cui si trova l'archivio di gestione centrale</p></td>
+<td><p>Servizio Agente di replica master di Lync Server</p></td>
 <td><p>445</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per spingere i dati di configurazione dall'Central Management store ai server che usano Lync Server.</p></td>
+<td><p>Utilizzato per inviare i dati di configurazione dall'archivio di gestione centrale ai server che eseguono Lync Server.</p></td>
 </tr>
 <tr class="even">
 <td><p>Tutti i server</p></td>
-<td><p>Browser SQL</p></td>
+<td><p>SQL Browser</p></td>
 <td><p>1434</p></td>
 <td><p>UDP</p></td>
-<td><p>Browser SQL per la copia replicata locale dei dati di Central Management store nell'istanza di SQL Server locale</p></td>
+<td><p>SQL browser per la copia locale replicata dei dati dell'archivio di gestione centrale nell'istanza locale di SQL Server</p></td>
 </tr>
 <tr class="odd">
 <td><p>Tutti i server interni</p></td>
 <td><p>Vari</p></td>
 <td><p>49152-57500</p></td>
 <td><p>TCP/UDP</p></td>
-<td><p>Intervallo di porte multimediali usato per i servizi di audioconferenza in tutti i server interni. Usato da tutti i server che interrompono l'audio: Front End Server (per il servizio di conferenza telefonica di Lync Server, servizio di annuncio di Lync Server e servizi di conferenza audio/video di Lync Server) e Mediation Server.</p></td>
+<td><p>Intervallo di porte multimediali utilizzato per le conferenze audio su tutti i server interni. Utilizzato da tutti i server che terminano audio: Front End Server (per il servizio Operatore Conferenza di Lync Server, Lync Server Conferencing Service annuncio e Lync Server audio/video Conferencing Server) e Mediation.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server di Office Web Apps</p></td>
+<td><p>Server Office Web Apps</p></td>
 <td></td>
 <td><p>443</p></td>
 <td></td>
-<td><p>Usato da Lync Server 2013 per connettersi al server di Office Web Apps.</p></td>
+<td><p>Utilizzato da Lync Server 2013 per la connessione al server Office Web Apps.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Consiglio</p></td>
+<td><p>Amministrazione</p></td>
 <td><p>Servizio front-end di Lync Server</p></td>
 <td><p>5060</p></td>
 <td><p>TCP</p></td>
-<td><p>Facoltativamente usato per le route statiche a servizi attendibili, ad esempio i server di controllo delle chiamate remote.</p></td>
+<td><p>Utilizzata facoltativamente per le route statiche ai servizi trusted, come i server di controllo delle chiamate remote.</p></td>
 </tr>
 <tr class="even">
-<td><p>Consiglio</p></td>
+<td><p>Amministrazione</p></td>
 <td><p>Servizio front-end di Lync Server</p></td>
 <td><p>444</p></td>
 <td><p>HTTPS</p>
 <p>TCP</p></td>
-<td><p>Comunicazioni tra server tra front-end e Director. Inoltre, la pubblicazione del certificato client (per i server front-end) o la convalida se il certificato client è già stato pubblicato.</p></td>
+<td><p>Comunicazioni interne ai server tra Front End e Director. È inoltre possibile pubblicare il certificato client (nei Front End Server) o convalidare se il certificato client è già stato pubblicato.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Consiglio</p></td>
-<td><p>Servizio compatibilità Web di Lync Server</p></td>
+<td><p>Amministrazione</p></td>
+<td><p>Lync Server Web Compatibility Service</p></td>
 <td><p>80</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per la comunicazione iniziale da Directors agli FQDN della Web farm (gli URL usati da IIS Web Components). In funzionamento normale si passa al traffico HTTPS usando la porta 443 e il protocollo TCP.</p></td>
+<td><p>Utilizzata per le comunicazioni iniziali dai Director ai nomi di dominio completo (FQDN) della Web farm (gli URL utilizzati dai componenti Web IIS). Durante il normale funzionamento, viene effettuato il passaggio al traffico HTTPS mediante la porta 443 e il tipo di protocollo TCP.</p></td>
 </tr>
 <tr class="even">
-<td><p>Consiglio</p></td>
-<td><p>Servizio compatibilità Web di Lync Server</p></td>
+<td><p>Amministrazione</p></td>
+<td><p>Lync Server Web Compatibility Service</p></td>
 <td><p>443</p></td>
 <td><p>HTTPS</p></td>
-<td><p>Usato per la comunicazione da Directors agli FQDN della Web farm (gli URL usati da IIS Web Components).</p></td>
+<td><p>Utilizzata per le comunicazioni dai Director ai nomi di dominio completi (FQDN) della Web farm (gli URL utilizzati dai componenti Web IIS).</p></td>
 </tr>
 <tr class="odd">
-<td><p>Consiglio</p></td>
+<td><p>Amministrazione</p></td>
 <td><p>Servizio front-end di Lync Server</p></td>
 <td><p>5061</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per le comunicazioni interne tra i server e per le connessioni client.</p></td>
+<td><p>Utilizzata per le comunicazioni interne tra i server e per le connessioni client.</p></td>
 </tr>
 <tr class="even">
 <td><p>Mediation Server</p></td>
-<td><p>Servizio di mediazione Lync Server</p></td>
+<td><p>Lync Server Mediation Service</p></td>
 <td><p>5070</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato dal Mediation Server per le richieste in arrivo dal server front-end.</p></td>
+<td><p>Utilizzata dal Mediation Server per le richieste in arrivo dal Front End Server.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Mediation Server</p></td>
-<td><p>Servizio di mediazione Lync Server</p></td>
+<td><p>Lync Server Mediation Service</p></td>
 <td><p>5067</p></td>
 <td><p>TCP (TLS)</p></td>
-<td><p>Usato per le richieste SIP in arrivo dal gateway PSTN.</p></td>
+<td><p>Utilizzata per le richieste SIP in arrivo dal gateway PSTN.</p></td>
 </tr>
 <tr class="even">
 <td><p>Mediation Server</p></td>
-<td><p>Servizio di mediazione Lync Server</p></td>
+<td><p>Lync Server Mediation Service</p></td>
 <td><p>5068</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per le richieste SIP in arrivo dal gateway PSTN.</p></td>
+<td><p>Utilizzata per le richieste SIP in arrivo dal gateway PSTN.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Mediation Server</p></td>
-<td><p>Servizio di mediazione Lync Server</p></td>
+<td><p>Lync Server Mediation Service</p></td>
 <td><p>5070</p></td>
 <td><p>TCP (MTLS)</p></td>
-<td><p>Usato per le richieste SIP provenienti dai server front-end.</p></td>
+<td><p>Utilizzata per le richieste SIP dai Front End Server.</p></td>
 </tr>
 <tr class="even">
-<td><p>Server front end di chat persistente</p></td>
+<td><p>Front End Server della chat persistente</p></td>
 <td><p>SIP chat persistente</p></td>
 <td><p>5041</p></td>
 <td><p>TCP (MTLS)</p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p>Server front end di chat persistente</p></td>
+<td><p>Front End Server della chat persistente</p></td>
 <td><p>Chat persistente Windows Communication Foundation (WCF)</p></td>
 <td><p>881</p></td>
 <td><p>TCP (TLS) e TCP (MTLS)</p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p>Server front end di chat persistente</p></td>
-<td><p>Servizio di trasferimento file Chat persistente</p></td>
+<td><p>Front End Server della chat persistente</p></td>
+<td><p>Servizio di trasferimento file di chat persistente</p></td>
 <td><p>443</p></td>
 <td><p>TCP (TLS)</p></td>
 <td></td>
@@ -462,15 +462,15 @@ La tabella seguente elenca le porte che devono essere aperte in ogni ruolo del s
 
 
 > [!NOTE]  
-> Alcuni scenari di controllo delle chiamate remote richiedono una connessione TCP tra il server front-end o il Director e il PBX. Anche se Lync Server non usa più la porta TCP 5060, durante la distribuzione del controllo delle chiamate remote si crea una configurazione del server attendibile, che associa il nome di dominio completo del server RCC line alla porta TCP che il server front end o il direttore utilizzerà per la connessione al sistema PBX. Per informazioni dettagliate, vedere il cmdlet <STRONG>CsTrustedApplicationComputer</STRONG> nella documentazione di Lync Server Management Shell.
+> Alcuni scenari di controllo delle chiamate remote richiedono una connessione TCP tra il Front End Server o Director e il sistema PBX. Anche se Lync Server non utilizza più la porta TCP 5060, durante la distribuzione del controllo delle chiamate remote viene creata una configurazione del server attendibile, che associa il nome di dominio completo del server RCC line alla porta TCP che verrà utilizzata dal front end server o dal Director per la connessione al sistema PBX. Per informazioni dettagliate, vedere il cmdlet <STRONG>CsTrustedApplicationComputer</STRONG> nella documentazione di Lync Server Management Shell.
 
 
 
 </div>
 
-Per i pool che usano solo il bilanciamento del carico hardware (non il bilanciamento del carico DNS), la tabella seguente mostra le porte che devono aprire i dispositivi di bilanciamento del carico hardware.
+Per i pool che utilizzano solo il servizio di bilanciamento del carico hardware (non il servizio di bilanciamento del carico DNS), la tabella che segue mostra le porte che devono aprire i servizi di bilanciamento del carico hardware.
 
-### <a name="hardware-load-balancer-ports-if-using-only-hardware-load-balancing"></a>Porte di bilanciamento del carico hardware se si usa solo il bilanciamento del carico hardware
+### <a name="hardware-load-balancer-ports-if-using-only-hardware-load-balancing"></a>Porte del servizio di bilanciamento del carico hardware se si utilizza solo questo servizio di bilanciamento
 
 <table>
 <colgroup>
@@ -480,79 +480,79 @@ Per i pool che usano solo il bilanciamento del carico hardware (non il bilanciam
 </colgroup>
 <thead>
 <tr class="header">
-<th>Bilanciamento del carico</th>
+<th>Servizio di bilanciamento del carico</th>
 <th>Porta</th>
-<th>Protocollo</th>
+<th>Protocol</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>5061</p></td>
 <td><p>TCP (TLS)</p></td>
 </tr>
 <tr class="even">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>444</p></td>
 <td><p>HTTPS</p></td>
 </tr>
 <tr class="odd">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>135</p></td>
-<td><p>DCOM e chiamata di procedura remota (RPC)</p></td>
+<td><p>DCOM ed RPC (Remote Procedure Call)</p></td>
 </tr>
 <tr class="even">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>80</p></td>
 <td><p>HTTP</p></td>
 </tr>
 <tr class="odd">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>8080</p></td>
-<td><p>TCP-client e recupero di dispositivi del certificato radice dal server front-end-client e dispositivi autenticati da NTLM</p></td>
+<td><p>TCP - Recupero tramite client e dispositivi del certificato radice da Front End Server; client e dispositivi autenticati mediante NTLM</p></td>
 </tr>
 <tr class="even">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>443</p></td>
 <td><p>HTTPS</p></td>
 </tr>
 <tr class="odd">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>4443</p></td>
 <td><p>HTTPS (da proxy inverso)</p></td>
 </tr>
 <tr class="even">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>5072</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="odd">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>5073</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="even">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>5075</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="odd">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>5076</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="even">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>5071</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="odd">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>5080</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="even">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>448</p></td>
 <td><p>TCP</p></td>
 </tr>
@@ -567,22 +567,22 @@ Per i pool che usano solo il bilanciamento del carico hardware (non il bilanciam
 <td><p>TCP</p></td>
 </tr>
 <tr class="odd">
-<td><p>Direttore di bilanciamento del carico</p></td>
+<td><p>Servizio di bilanciamento del carico Director</p></td>
 <td><p>443</p></td>
 <td><p>HTTPS</p></td>
 </tr>
 <tr class="even">
-<td><p>Direttore di bilanciamento del carico</p></td>
+<td><p>Servizio di bilanciamento del carico Director</p></td>
 <td><p>444</p></td>
 <td><p>HTTPS</p></td>
 </tr>
 <tr class="odd">
-<td><p>Direttore di bilanciamento del carico</p></td>
+<td><p>Servizio di bilanciamento del carico Director</p></td>
 <td><p>5061</p></td>
 <td><p>TCP</p></td>
 </tr>
 <tr class="even">
-<td><p>Direttore di bilanciamento del carico</p></td>
+<td><p>Servizio di bilanciamento del carico Director</p></td>
 <td><p>4443</p></td>
 <td><p>HTTPS (da proxy inverso)</p></td>
 </tr>
@@ -590,9 +590,9 @@ Per i pool che usano solo il bilanciamento del carico hardware (non il bilanciam
 </table>
 
 
-I pool di front end e i pool di direttori che usano il bilanciamento del carico DNS devono essere distribuiti anche da un dispositivo di bilanciamento del carico hardware. La tabella seguente mostra le porte che devono essere aperte in questi dispositivi di bilanciamento del carico hardware.
+È necessario che anche nei pool Front End e server Director che utilizzano il servizio di bilanciamento del carico DNS sia distribuito un servizio di bilanciamento del carico hardware. Nella tabella che segue sono indicate le porte che è necessario aprire in questi servizi di bilanciamento del carico hardware.
 
-### <a name="hardware-load-balancer-ports-if-using-dns-load-balancing"></a>Porte di bilanciamento del carico hardware se si usa il bilanciamento del carico DNS
+### <a name="hardware-load-balancer-ports-if-using-dns-load-balancing"></a>Porte del servizio di bilanciamento del carico hardware se si utilizza il servizio di bilanciamento del carico DNS
 
 <table>
 <colgroup>
@@ -602,34 +602,34 @@ I pool di front end e i pool di direttori che usano il bilanciamento del carico 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Bilanciamento del carico</th>
+<th>Servizio di bilanciamento del carico</th>
 <th>Porta</th>
-<th>Protocollo</th>
+<th>Protocol</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>80</p></td>
 <td><p>HTTP</p></td>
 </tr>
 <tr class="even">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>443</p></td>
 <td><p>HTTPS</p></td>
 </tr>
 <tr class="odd">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>8080</p></td>
-<td><p>TCP-client e recupero di dispositivi del certificato radice dal server front-end-client e dispositivi autenticati da NTLM</p></td>
+<td><p>TCP - Recupero tramite client e dispositivi del certificato radice da Front End Server; client e dispositivi autenticati mediante NTLM</p></td>
 </tr>
 <tr class="even">
-<td><p>Bilanciamento del carico del server front-end</p></td>
+<td><p>Servizio di bilanciamento del carico Front End Server</p></td>
 <td><p>4443</p></td>
 <td><p>HTTPS (da proxy inverso)</p></td>
 </tr>
 <tr class="odd">
-<td><p>Direttore di bilanciamento del carico</p></td>
+<td><p>Servizio di bilanciamento del carico Director</p></td>
 <td><p>443</p></td>
 <td><p>HTTPS</p></td>
 </tr>
@@ -639,7 +639,7 @@ I pool di front end e i pool di direttori che usano il bilanciamento del carico 
 <td> </td>
 </tr>
 <tr class="odd">
-<td><p>Direttore di bilanciamento del carico</p></td>
+<td><p>Servizio di bilanciamento del carico Director</p></td>
 <td><p>4443</p></td>
 <td><p>HTTPS (da proxy inverso)</p></td>
 </tr>
@@ -660,8 +660,8 @@ I pool di front end e i pool di direttori che usano il bilanciamento del carico 
 <tr class="header">
 <th>Componente</th>
 <th>Porta</th>
-<th>Protocollo</th>
-<th>Note</th>
+<th>Protocol</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
@@ -669,61 +669,61 @@ I pool di front end e i pool di direttori che usano il bilanciamento del carico 
 <td><p>Client</p></td>
 <td><p>67/68</p></td>
 <td><p>DHCP</p></td>
-<td><p>Usato da Lync Server per trovare il nome di dominio completo del registrar, ovvero se DNS SRV non riesce e le impostazioni manuali non sono configurate.</p></td>
+<td><p>Utilizzato da Lync Server per individuare il nome di dominio completo del registrar, ovvero se DNS SRV ha esito negativo e le impostazioni manuali non sono configurate.</p></td>
 </tr>
 <tr class="even">
 <td><p>Client</p></td>
 <td><p>443</p></td>
 <td><p>TCP (TLS)</p></td>
-<td><p>Usato per il traffico SIP da client a server per l'accesso degli utenti esterni.</p></td>
+<td><p>Utilizzata per il traffico SIP da client a server per l'accesso utente esterno.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Client</p></td>
 <td><p>443</p></td>
 <td><p>TCP (PSOM/TLS)</p></td>
-<td><p>Usato per l'accesso degli utenti esterni alle sessioni di conferenza Web.</p></td>
+<td><p>Utilizzata per l'accesso utente esterno alle sessioni di Web Conferencing.</p></td>
 </tr>
 <tr class="even">
 <td><p>Client</p></td>
 <td><p>443</p></td>
 <td><p>TCP (STUN/MSTURN)</p></td>
-<td><p>Usato per l'accesso degli utenti esterni alle sessioni A/V e agli elementi multimediali (TCP)</p></td>
+<td><p>Utilizzata per l'accesso utente esterno alle sessioni A/V e ai supporti multimediali (TCP)</p></td>
 </tr>
 <tr class="odd">
 <td><p>Client</p></td>
 <td><p>3478</p></td>
 <td><p>UDP (STUN/MSTURN)</p></td>
-<td><p>Usato per l'accesso degli utenti esterni alle sessioni A/V e agli elementi multimediali (UDP)</p></td>
+<td><p>Utilizzato per l'accesso degli utenti esterni alle sessioni A/V e ai supporti (UDP)</p></td>
 </tr>
 <tr class="even">
 <td><p>Client</p></td>
 <td><p>5061</p></td>
 <td><p>TCP (MTLS)</p></td>
-<td><p>Usato per il traffico SIP da client a server per l'accesso degli utenti esterni.</p></td>
+<td><p>Utilizzata per il traffico SIP da client a server per l'accesso utente esterno.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Client</p></td>
 <td><p>6891-6901</p></td>
 <td><p>TCP</p></td>
-<td><p>Usato per il trasferimento di file tra client Lync e client precedenti (client di Microsoft Office Communications Server 2007 R2, Microsoft Office Communications Server 2007 e Live Communications Server 2005).</p></td>
+<td><p>Utilizzato per il trasferimento di file tra client Lync e client precedenti (client di Microsoft Office Communications Server 2007 R2, Microsoft Office Communications Server 2007 e Live Communications Server 2005).</p></td>
 </tr>
 <tr class="even">
 <td><p>Client</p></td>
 <td><p>1024-65535 *</p></td>
 <td><p>TCP/UDP</p></td>
-<td><p>Intervallo di porte audio (minimo 20 porte necessarie)</p></td>
+<td><p>Intervallo di porte audio (almeno 20 porte richieste)</p></td>
 </tr>
 <tr class="odd">
 <td><p>Client</p></td>
 <td><p>1024-65535 *</p></td>
 <td><p>TCP/UDP</p></td>
-<td><p>Intervallo di porte video (è necessario un minimo di 20 porte).</p></td>
+<td><p>Intervallo di porte video (almeno 20 porte richieste).</p></td>
 </tr>
 <tr class="even">
 <td><p>Client</p></td>
 <td><p>1024-65535 *</p></td>
 <td><p>TCP</p></td>
-<td><p>Trasferimento di file peer-to-peer (per il trasferimento di file di conferenza, i client usano PSOM).</p></td>
+<td><p>Trasferimento file peer-to-peer (per il trasferimento dei file del servizio di conferenza, i client utilizzano PSOM).</p></td>
 </tr>
 <tr class="odd">
 <td><p>Client</p></td>
@@ -732,29 +732,29 @@ I pool di front end e i pool di direttori che usano il bilanciamento del carico 
 <td><p>Condivisione applicazioni.</p></td>
 </tr>
 <tr class="even">
-<td><p>Telefono per area comune Aastra 6721ip</p>
+<td><p>Telefono di area comune Aastra 6721ip</p>
 <p>Telefono da tavolo Aastra 6725ip</p>
-<p>Telefono IP HP 4110 (telefono area comune)</p>
+<p>Telefono IP HP 4110 (telefono di area comune)</p>
 <p>Telefono IP HP 4120 (telefono da tavolo)</p>
-<p>Telefono per area comune IP di Polycom CX500</p>
+<p>Telefono di area comune IP Polycom CX500</p>
 <p>Telefono da tavolo IP Polycom CX600</p>
 <p>Telefono da tavolo IP Polycom CX700</p>
-<p>Telefono per conferenze IP di Polycom CX3000</p></td>
+<p>Telefono IP per conferenze Polycom CX3000</p></td>
 <td><p>67/68</p></td>
 <td><p>DHCP</p></td>
-<td><p>Usato dai dispositivi elencati per trovare il certificato di Lync Server, il nome di dominio completo e il nome di dominio completo del registrar.</p></td>
+<td><p>Utilizzato dai dispositivi elencati per individuare il certificato di Lync Server, il nome di dominio completo e il nome di dominio completo del servizio di registrazione.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-**\*** Per configurare porte specifiche per questi tipi di elementi multimediali, usare il cmdlet CsConferencingConfiguration (ClientMediaPortRangeEnabled, ClientMediaPort e ClientMediaPortRange Parameters).
+**\*** Per configurare porte specifiche per questi tipi di supporti, utilizzare il cmdlet CsConferencingConfiguration (parametri ClientMediaPortRangeEnabled, ClientMediaPort e ClientMediaPortRange).
 
 <div>
 
 
 > [!NOTE]  
-> I programmi set per i client Lync creano automaticamente le eccezioni del firewall di sistema operativo necessarie nel computer client.
+> I programmi set per i client di Lync creano automaticamente le eccezioni del firewall del sistema operativo necessarie sul computer client.
 
 
 
@@ -764,7 +764,7 @@ I pool di front end e i pool di direttori che usano il bilanciamento del carico 
 
 
 > [!NOTE]  
-> Le porte usate per l'accesso degli utenti esterni sono necessarie per qualsiasi scenario in cui il client deve attraversare il firewall dell'organizzazione, ad esempio le comunicazioni esterne o le riunioni ospitate da altre organizzazioni.
+> Le porte utilizzate per l'accesso utente esterno sono richieste per tutti gli scenari in cui il client deve attraversare il firewall dell'organizzazione, ad esempio per qualsiasi comunicazione o riunione esterna ospitata da altre organizzazioni.
 
 
 

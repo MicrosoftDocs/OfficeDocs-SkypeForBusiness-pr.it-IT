@@ -12,16 +12,16 @@ ms:contentKeyID: 51541509
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a493fed33fff897ea2cccc2a89c0d55c5b8a8097
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 080f27b1e01f86d23fd5fd7bf6fdb9e9a05c0742
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726126"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045268"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41726126"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-Lo strumento di pianificazione di Microsoft Lync Server 2013 è progettato per l'esportazione in Microsoft Excel e Microsoft Visio. Anche se queste applicazioni non sono necessarie per il funzionamento dello strumento di pianificazione, aggiungono un valore significativo alla distribuzione e alla documentazione del progetto.
+Microsoft Lync Server 2013, strumento di pianificazione è progettato per l'esportazione in Microsoft Excel e Microsoft Visio. Anche se queste applicazioni non sono necessarie per il funzionamento dello strumento di pianificazione, aggiungono un valore significativo alla distribuzione e alla documentazione del progetto.
 
 <div>
 
@@ -47,21 +47,21 @@ Lo strumento di pianificazione di Microsoft Lync Server 2013 è progettato per l
 
 ## <a name="microsoft-excel"></a>Microsoft Excel
 
-L'esportazione della progettazione in Microsoft Excel consente di creare un report che visualizza sette schede nel foglio di calcolo:
+L'esportazione del progetto in Microsoft Excel consente di creare un report in cui vengono visualizzate sette schede nel foglio di calcolo:
 
-  - Riepilogo: Visualizza le informazioni sulla configurazione del sito, inclusi il conteggio degli utenti, le impostazioni della capacità e le informazioni sul profilo del server.
+  - Riepilogo: consente di visualizzare informazioni sulla configurazione del sito, inclusi il numero di utenti, le impostazioni di capacità e le informazioni sui profili del server.
 
-  - Profilo hardware: Visualizza un report sulle configurazioni hardware consigliate per i server specificati nella topologia, tra cui CPU, memoria, disco e interfaccia di rete. Sono incluse anche la quantità e le specifiche consigliate per i componenti server. Ogni server viene inoltre definito dal sito per ottenere una rappresentazione completa dei requisiti del server per sito.
+  - Profilo hardware – Visualizza un rapporto delle configurazioni hardware consigliate per i server specificati nella topologia, inclusi disco, CPU, memoria, e interfaccia di rete. Sono incluse anche la quantità e le specifiche consigliate per i componenti del server. Ogni server è inoltre definito dal sito per fornire una rappresentazione completa dei requisiti del server in base al sito.
 
-  - Requisiti per le porte: Visualizza un report di tutte le porte abilitate e l'associazione a Domain Name System Load Balancing (DNS LB) e hardware load balancers (HLB). È consigliabile usare questo report per pianificare le configurazioni firewall e DNS LB e HLB.
+  - Requisiti per le porte: consente di visualizzare un report di tutte le porte abilitate e l'associazione al bilanciamento del carico del sistema DNS (Domain Name System) e ai sistemi di bilanciamento del carico hardware (HLB). È consigliabile utilizzare questo report per pianificare le configurazioni di firewall e di LB e di HLB di DNS.
 
-  - Report di riepilogo: Visualizza il riepilogo generale delle impostazioni necessarie per configurare la rete Edge Server.
+  - Report riepilogativo – Visualizza il riepilogo generale delle impostazioni necessarie per configurare la rete del server perimetrale.
 
-  - Report certificati: Visualizza il nome dell'oggetto e i nomi alternativi oggetto necessari per i certificati necessari per l'uso dei server perimetrali.
+  - Report certificati – Visualizza il nome del soggetto e i nomi alternativi del soggetto necessari per i certificati necessari per ottenere i server perimetrali in esecuzione.
 
-  - Report firewall: Visualizza le porte di origine e di destinazione e gli indirizzi IP per le interfacce esterne ed interne.
+  - Report firewall – Visualizza le porte di origine e di destinazione e gli indirizzi IP per le interfacce sia esterne che interne.
 
-  - Report DNS: Visualizza il nome di dominio completo (FQDN) e gli indirizzi IP/VIP necessari per ogni voce DNS creata.
+  - Report DNS: consente di visualizzare gli indirizzi FQDN (Fully Qualified Domain Name) e IP/VIP necessari per ogni voce DNS creata.
 
 </div>
 
@@ -69,23 +69,23 @@ L'esportazione della progettazione in Microsoft Excel consente di creare un repo
 
 ## <a name="microsoft-visio"></a>Microsoft Visio
 
-L'esportazione della progettazione in Microsoft Visio crea un diagramma da usare per la documentazione della topologia e dell'infrastruttura configurate. Il diagramma importato può essere modificato e ridisposto per soddisfare le esigenze della documentazione. Il diagramma di Visio tipico includerà:
+L'esportazione del progetto in Microsoft Visio consente di creare un diagramma da usare per la documentazione della topologia e dell'infrastruttura configurate. Il diagramma importato può essere modificato e riorganizzato in base alle specifiche esigenze per la documentazione. Il diagramma di Visio tipico includerà:
 
 <div>
 
 
 > [!NOTE]  
-> Se la struttura è abbastanza grande da richiedere più di tre server front-end, verrà creata una pagina aggiuntiva per il pool Front-End, i server front-end, il computer in cui sono in esecuzione SQL Server, gli indirizzi IP e i nomi di dominio completi.
+> Se il progetto è sufficientemente grande da richiedere più di tre Front End Server, verrà creata una pagina aggiuntiva per il pool Front End, i Front End Server, il computer che esegue SQL Server, gli indirizzi IP e i nomi FQDN.
 
 
 
 </div>
 
-  - Topologia globale-diagramma dei siti di Lync Server 2013 configurati.
+  - Topologia globale – diagramma dei siti di Lync Server 2013 configurati.
 
-  - Scheda nome sito: Visualizza la topologia di configurazione del sito con Edge Server, firewall, PSTN (Public Switched Telephone Network) con gateway e la distribuzione del server interno. La distribuzione interna è costituita da server e pool configurati, inclusi i pool Front-End, i server basati su SQL Server, i servizi di dominio Active Directory, i direttori, i server di messaggistica unificata di Exchange, i server cassette postali di Exchange, i server di Office Web Apps Mediation Server e server di chat permanenti.
+  - Scheda nome sito – Visualizza la topologia di configurazione del sito con server perimetrale, firewall, rete PSTN (Public Switched Telephone Network) con gateway e la distribuzione interna del server. La distribuzione interna è costituita da server e pool configurati, inclusi i pool Front End, i server basati su SQL Server, i servizi di dominio Active Directory, i direttori, i server di messaggistica unificata di Exchange, i server cassette postali di Exchange, i server Office Web Apps Mediation Server e server Chat persistente.
 
-  - Diagramma di rete perimetrale: diagramma che descrive la configurazione del server perimetrale con gli indirizzi IP associati e i nomi di dominio completi. Sono inclusi anche il bilanciamento del carico DNS e i dispositivi di bilanciamento del carico hardware. Vengono inoltre visualizzati i direttori e il server front-end o il pool Front-End, con il DNS LB o HLB associato e l'indirizzo IP assegnato (lo strumento di pianificazione supporta sia gli indirizzi IPv4 che IPv6) e il nome di dominio completo.
+  - Diagramma di rete perimetrale – diagramma che illustra la configurazione del server perimetrale con gli indirizzi IP e gli FQDN associati. Sono inoltre inclusi il bilanciamento del carico DNS e i dispositivi di bilanciamento del carico hardware. Vengono inoltre visualizzati i direttori e il front end server o il pool Front End, con DNS LB o HLB associato e l'indirizzo IP assegnato (lo strumento di pianificazione supporta sia gli indirizzi IPv4 che IPv6) e il nome di dominio completo.
 
 </div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 48184845
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cbdd1fa1fbb5bd7a396e17f478326a9e4dd700f8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fb693f79470e7d68a1aaf662c9ab82b8bafa5c39
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730106"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037256"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41730106"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2010-10-18_
+_**Ultimo argomento modificato:** 2010-10-18_
 
-Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) create dalla preparazione del dominio nella radice del dominio. Tutte le voci ACE vengono ereditate se non diversamente specificato.
+Nella tabella riportata di seguito vengono elencate le voci di controllo di accesso create durante la preparazione del dominio nella radice del dominio. Se non diversamente specificato, tutte le voci di controllo di accesso vengono ereditate.
 
 <div id="sectionSection0" class="section">
 
-### <a name="aces-added-to-domain-root"></a>Voci ACE aggiunte alla radice del dominio
+### <a name="aces-added-to-domain-root"></a>Voci di controllo di accesso aggiunte alla radice del dominio
 
 <table style="width:100%;">
 <colgroup>
@@ -55,16 +55,16 @@ Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) creat
 <thead>
 <tr class="header">
 <th>ACE</th>
-<th>RTCUniversal-UserReadOnly-gruppo</th>
-<th>RTCUniversal-ServerReadOnly-gruppo</th>
+<th>RTCUniversal-UserReadOnly-Group</th>
+<th>RTCUniversal-ServerReadOnly-Group</th>
 <th>RTCUniversal-UserAdmins</th>
-<th>RTCHSUniversal-servizi</th>
+<th>RTCHSUniversal-Services</th>
 <th>Utenti autenticati</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Contenitore di lettura (non ereditato)</p></td>
+<td><p>Read Container (not inherited)</p></td>
 <td><p><strong>Sì</strong></p></td>
 <td><p><strong>Sì</strong></p></td>
 <td><p>No</p></td>
@@ -72,7 +72,7 @@ Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) creat
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>Leggere l'utente di PropertySet user-account-Restrictions</p></td>
+<td><p>Read User PropertySet User-Account-Restrictions</p></td>
 <td><p><strong>Sì</strong></p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
@@ -80,7 +80,7 @@ Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) creat
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
-<td><p>Leggere l'utente PropertySet Personal-Information</p></td>
+<td><p>Read User PropertySet Personal-Information</p></td>
 <td><p><strong>Sì</strong></p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
@@ -88,7 +88,7 @@ Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) creat
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>Leggere l'utente PropertySet generale-informazioni</p></td>
+<td><p>Read User PropertySet General-Information</p></td>
 <td><p><strong>Sì</strong></p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
@@ -96,7 +96,7 @@ Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) creat
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
-<td><p>Leggere l'utente PropertySet Public-Information</p></td>
+<td><p>Read User PropertySet Public-Information</p></td>
 <td><p><strong>Sì</strong></p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
@@ -104,7 +104,7 @@ Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) creat
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>Leggi utente PropertySet RTCUserSearchProperty-set</p></td>
+<td><p>Read User PropertySet RTCUserSearchProperty-Set</p></td>
 <td><p><strong>Sì</strong></p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
@@ -112,7 +112,7 @@ Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) creat
 <td><p><strong>Sì</strong></p></td>
 </tr>
 <tr class="odd">
-<td><p>Leggere l'utente PropertySet RTCPropertySet</p></td>
+<td><p>Read User PropertySet RTCPropertySet</p></td>
 <td><p><strong>Sì</strong></p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
@@ -120,7 +120,7 @@ Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) creat
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>Scrivere gli indirizzi proxy della proprietà utente</p></td>
+<td><p>Write User Property Proxy-Addresses</p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
 <td><p><strong>Sì</strong></p></td>
@@ -128,7 +128,7 @@ Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) creat
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
-<td><p>Scrivere l'utente PropertySet RTCUserSearchProperty-set</p></td>
+<td><p>Write User PropertySet RTCUserSearchProperty-Set</p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
 <td><p><strong>Sì</strong></p></td>
@@ -136,7 +136,7 @@ Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) creat
 <td><p>No</p></td>
 </tr>
 <tr class="even">
-<td><p>Scrivere l'utente PropertySet RTCPropertySet</p></td>
+<td><p>Write User PropertySet RTCPropertySet</p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
 <td><p><strong>Sì</strong></p></td>
@@ -144,7 +144,7 @@ Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) creat
 <td><p>No</p></td>
 </tr>
 <tr class="odd">
-<td><p>Leggere PropertySet DS-replica-Get-modifiche di tutti gli oggetti di Active Directory</p></td>
+<td><p>Read PropertySet DS-Replication-Get-Changes of all Active Directory objects</p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
@@ -155,9 +155,9 @@ Nella tabella seguente sono elencate le voci di controllo di accesso (ACE) creat
 </table>
 
 
-Nella tabella seguente sono elencate le voci ACE create dalla preparazione del dominio nei tre contenitori predefiniti: utenti, computer e controller di dominio. Tutte le voci ACE vengono ereditate se non diversamente specificato.
+Nella tabella seguente vengono elencate le voci di controllo di accesso create durante la preparazione del dominio nei tre contenitori predefiniti, ovvero Utenti, Computer e Controller di dominio. Se non diversamente specificato, tutte le voci di controllo di accesso vengono ereditate.
 
-### <a name="aces-added-to-built-in-containers"></a>Voci ACE aggiunte ai contenitori predefiniti
+### <a name="aces-added-to-built-in-containers"></a>Voci di controllo di accesso aggiunte ai contenitori predefiniti
 
 <table>
 <colgroup>
@@ -168,13 +168,13 @@ Nella tabella seguente sono elencate le voci ACE create dalla preparazione del d
 <thead>
 <tr class="header">
 <th>ACE</th>
-<th>RTCUniversal-UserReadOnly-gruppo</th>
-<th>RTCUniversal-ServerReadOnly-gruppo</th>
+<th>RTCUniversal-UserReadOnly-Group</th>
+<th>RTCUniversal-ServerReadOnly-Group</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Contenitore di lettura (non ereditato)</p></td>
+<td><p>Read Container (non ereditata)</p></td>
 <td><p><strong>Sì</strong></p></td>
 <td><p><strong>Sì</strong></p></td>
 </tr>

@@ -12,16 +12,16 @@ ms:contentKeyID: 51541485
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 37a6b5694d8eaa9467fafa8923bb97423fd6e33f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b9b609a9867b9ca0e6a01f0ced38445ae55c7367
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730356"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041195"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,32 +35,32 @@ ms.locfileid: "41730356"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-03-26_
+_**Ultimo argomento modificato:** 2013-03-26_
 
-Per ottenere il massimo vantaggio dall'uso della procedura di failover del pool ABC, è necessario eseguire alcuni backup prima che si verifichino le calamità e il failover:
+Per ottenere il massimo vantaggio dall'utilizzo della procedura di failover del pool ABC, è necessario eseguire alcuni backup prima che si verifichino le operazioni di emergenza e failover:
 
-  - È necessario eseguire regolarmente il backup dei dati di configurazione LIS (Location Information Service) dal pool A usando il cmdlet **Export-CsLISConfiguration** .
+  - È necessario eseguire regolarmente il backup dei dati di configurazione LIS (Location Information Service) dal pool A utilizzando il cmdlet **Export-CsLISConfiguration** .
     
         Export-csLisConfiguration -FileName <C:\LISExportPrimary.zip>
 
-  - È necessario eseguire regolarmente il backup dei dati di configurazione del gruppo di risposte nel pool A usando il cmdlet **Export-CsRgsConfiguration** .
+  - È necessario eseguire regolarmente il backup dei dati di configurazione di Response Group nel pool A utilizzando il cmdlet **Export-CsRgsConfiguration** .
     
         Export-CsRgsConfiguration -Source "service:ApplicationServer:<Pool A FQDN>" -FileName "C:\RgsExportPrimary.zip"
     
-    In generale, ti consigliamo di eseguire backup giornalieri, ma se hai un volume elevato di modifiche, potresti voler pianificare backup più frequenti. La quantità di informazioni che è possibile perdere in caso di emergenza dipende dalla frequenza dei backup, nonché dalla frequenza e dal volume delle modifiche.
+    In generale, è consigliabile eseguire backup giornalieri, ma in presenza di un volume elevato di modifiche è possibile pianificare backup più frequenti. La quantità di informazioni che possono essere perse in caso di emergenza dipende dalla frequenza dei backup, nonché dalla frequenza e dal volume delle modifiche.
     
-    L'applicazione Response Group può archiviare solo un set di impostazioni a livello di applicazione per ogni pool. È possibile accedere a queste impostazioni tramite i cmdlet **Get-CsRgsConfiguration** . Le impostazioni includono la configurazione predefinita per la musica in blocco, il file audio predefinito per la musica in attesa, il periodo di tolleranza per la chiamata dell'agente e la configurazione del contesto delle chiamate. Queste impostazioni possono essere trasferite da un pool a un altro tramite il cmdlet **Import-CsRgsConfiguration** usando il parametro **ReplaceExistingSettings** , ma questa operazione eseguirà l'override di tutte le impostazioni a livello di applicazione nel pool di destinazione.
+    L'applicazione Response Group è in grado di archiviare solo un set di impostazioni a livello di applicazione per ogni pool. È possibile accedere a queste impostazioni tramite i cmdlet **Get-CsRgsConfiguration** . Le impostazioni includono la configurazione predefinita per la musica in attesa, il file audio predefinito per la musica in attesa, il periodo di tolleranza Ring-back dell'agente e la configurazione del contesto di chiamata. Queste impostazioni possono essere trasferite da un pool all'altro tramite il cmdlet **Import-CsRgsConfiguration** utilizzando il parametro **ReplaceExistingSettings** , ma questa operazione sostituirà tutte le impostazioni a livello di applicazione nel pool di destinazione.
     
     <div>
     
 
     > [!TIP]  
-    > In un percorso distinto mantenere una copia di backup di tutti i file audio originali usati per configurare l'applicazione Response Group, ovvero eventuali registrazioni o file musicali in blocco.
+    > In un percorso separato, conservare una copia di backup di tutti i file audio originali che sono stati utilizzati per configurare l'applicazione Response Group, ovvero eventuali registrazioni o file musicali in attesa.
 
     
     </div>
     
-    Se sono presenti file personalizzati per la musica in attesa caricati per il parcheggio delle chiamate in un pool, è consigliabile conservarne una copia in un'altra posizione. Non è possibile eseguire il backup di questi file come parte del processo di ripristino di emergenza di Lync Server 2013 e andranno perduti se i file caricati nel pool sono danneggiati, danneggiati o eliminati.
+    Se si dispone di file musicali personalizzati che sono stati caricati per il parcheggio di chiamata in un pool, è consigliabile conservarne una copia in un'altra posizione. Questi file non vengono sottoposti a backup come parte del processo di ripristino di emergenza di Lync Server 2013 e verranno persi se i file caricati nel pool sono danneggiati, danneggiati o eliminati.
     
         Xcopy  <Source: Pool A CPS File Store Path>  <Destination>
         Example: Xcopy  "<Pool A File Store Path>\LyncFileStore\coX-ApplicationServer-X\AppServerFiles\CPS\"  "<Destination:  Backup location 1>"
@@ -69,17 +69,17 @@ Per ottenere il massimo vantaggio dall'uso della procedura di failover del pool 
     
 
     > [!NOTE]  
-    > L'applicazione per il parcheggio delle chiamate può archiviare solo un set di impostazioni e un file audio in blocco musicale personalizzato per ogni pool. È possibile accedere a queste impostazioni tramite il cmdlet <STRONG>Get-CsCpsConfiguration</STRONG> . Poiché il meccanismo di ripristino di emergenza per il parcheggio delle chiamate si basa sull'applicazione Call Park del pool di backup, le impostazioni del pool principale non vengono supportate o mantenute se si verifica un disastro. Se il pool principale viene perso, queste impostazioni non possono essere recuperate e quando viene distribuito un nuovo pool per sostituire il pool principale, le impostazioni del parcheggio delle chiamate e qualsiasi file audio personalizzato per la musica in attesa devono essere riconfigurati.
+    > L'applicazione Parcheggio di chiamata può archiviare un solo set di impostazioni e un file audio personalizzato per il pool. È possibile accedere a queste impostazioni tramite il cmdlet <STRONG>Get-CsCpsConfiguration</STRONG> . Poiché il meccanismo di ripristino di emergenza per il parcheggio di chiamata si basa sull'applicazione Parcheggio di chiamata del pool di backup, le impostazioni del pool primario non vengono sottoposte a backup o conservate se si verifica un evento di emergenza. Se il pool primario è perduto, queste impostazioni non possono essere ripristinate e quando viene distribuito un nuovo pool per sostituire il pool primario, è necessario riconfigurare le impostazioni del parcheggio di chiamata e qualsiasi file audio di musica in attesa personalizzato.
 
     
     </div>
 
-  - Se si configurano gli annunci come parte della caratteristica voce numero non assegnati, è consigliabile conservare in un'altra posizione una copia di un file audio originale usato durante la configurazione iniziale. In caso contrario, è possibile ottenere una copia dei file audio configurati nell'archivio file del server o del pool in cui sono stati importati i file audio. Non è possibile eseguire il backup di questi file come parte del processo di ripristino di emergenza di Lync Server 2013 e andranno perduti se i file caricati nel pool sono danneggiati, danneggiati o eliminati. Per copiare tutti i file audio usati per configurare la caratteristica vocale numero non assegnato dall'archivio file di un server o di un pool, usare:
+  - Se si configurano annunci come parte della funzionalità per i numeri non assegnati, è consigliabile mantenere in un'altra posizione una copia di qualsiasi file audio originale utilizzato durante la configurazione iniziale. In caso contrario, è possibile ottenere una copia dei file audio configurati nell'archivio file del server o del pool in cui sono stati importati i file audio. Questi file non vengono sottoposti a backup come parte del processo di ripristino di emergenza di Lync Server 2013 e verranno persi se i file caricati nel pool sono danneggiati, danneggiati o eliminati. Per copiare tutti i file audio utilizzati per configurare la funzionalità vocale numeri non assegnati dall'archivio file di un server o di un pool, utilizzare:
     
         Use: Xcopy  <Source: Pool A Announcement Service File Store Path>  <Destination>
         Example Usage:  Xcopy  "<Pool A File Store Path>\X-ApplicationServer-X\AppServerFiles\RGS\AS"  "<Destination: Backup location>"
 
-  - Se si hanno il monitoraggio e l'archiviazione di database in un pool, è consigliabile usare gli strumenti di gestione di SQL Server per eseguirne il backup. Nella procedura di failover ABC i database di monitoraggio e archiviazione non vengono mantenuti se installati nel pool A, perché non è possibile eseguire il backup di questi database tramite il servizio di backup di Lync Server.
+  - Se si dispone di database di monitoraggio e archiviazione in un pool, è consigliabile utilizzare gli strumenti di gestione di SQL Server per eseguirne il backup. Nella procedura di failover ABC, i database di monitoraggio e archiviazione non vengono conservati se sono collocati nel pool A, perché non è stato eseguito il backup di questi database tramite il servizio di backup di Lync Server.
 
 </div>
 

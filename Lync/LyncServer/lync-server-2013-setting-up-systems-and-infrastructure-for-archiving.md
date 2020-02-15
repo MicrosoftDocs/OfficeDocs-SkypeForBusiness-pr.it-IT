@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: configurazione di sistemi e infrastrutture per l'archiviazione"
+title: "Lync Server 2013: configurazione dei sistemi e dell'infrastruttura per l'archiviazione"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183797
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 980b64dacbe623241aedfb3312156f5599c43bab
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c3f5dde3c3fa54bd920bfd17055cdc759f50bc0a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764552"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42040322"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="setting-up-systems-and-infrastructure-for-archiving-in-lync-server-2013"></a>Configurazione di sistemi e infrastrutture per l'archiviazione in Lync Server 2013
+# <a name="setting-up-systems-and-infrastructure-for-archiving-in-lync-server-2013"></a>Configurazione dei sistemi e dell'infrastruttura per l'archiviazione in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41764552"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-23_
+_**Ultimo argomento modificato:** 2012-06-23_
 
-Prima di distribuire l'archiviazione, è necessario distribuire l'hardware e il software appropriati per supportare l'archiviazione e verificare che l'infrastruttura supporti la distribuzione di archiviazione.
+Prima di distribuire l'archiviazione, è necessario distribuire l'hardware e il software appropriati per il supporto dell'archiviazione e verificare che l'infrastruttura in uso supporti la distribuzione di Archiviazione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Configurazione di piattaforme di sistema per l'archiviazione in Lync Server 2013](lync-server-2013-setting-up-system-platforms-for-archiving.md)
+  - [Configurazione delle piattaforme di sistema per l'archiviazione in Lync Server 2013](lync-server-2013-setting-up-system-platforms-for-archiving.md)
 
   - [Configurazione dell'infrastruttura per l'archiviazione in Lync Server 2013](lync-server-2013-setting-up-the-infrastructure-for-archiving.md)
 

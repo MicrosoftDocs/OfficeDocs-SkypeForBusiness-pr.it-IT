@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: test della configurazione del database'
+title: 'Lync Server 2013: verifica della configurazione del database'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 63969606
 ms.date: 07/07/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6fcf6679481d4f35a457eb72960a8ae999b004d3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 45781238f7fb8aa461e050f2e8f0cbf04e45a950
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41745826"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038178"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41745826"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-07-07_
+_**Ultimo argomento modificato:** 2016-07-07_
 
 
 <table>
@@ -46,16 +46,16 @@ _**Argomento Ultima modifica:** 2016-07-07_
 <tbody>
 <tr class="odd">
 <td><p>Pianificazione della verifica</p></td>
-<td><p>Quotidiana</p></td>
+<td><p>Giornaliero</p></td>
 </tr>
 <tr class="even">
-<td><p>Strumento di test</p></td>
+<td><p>Strumento di testing</p></td>
 <td><p>Windows PowerShell</p></td>
 </tr>
 <tr class="odd">
 <td><p>Autorizzazioni necessarie</p></td>
-<td><p>Quando si esegue localmente tramite Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins e devono avere i privilegi di amministratore in SQL Server.</p>
-<p>Quando si esegue usando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga delle autorizzazioni per eseguire il cmdlet <strong>Test-CsDatabase</strong> . Per visualizzare un elenco di tutti i ruoli RBAC che possono usare questo cmdlet, eseguire il comando seguente dal prompt di Windows PowerShell:</p>
+<td><p>Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins ed è necessario disporre di privilegi di amministratore su SQL Server.</p>
+<p>Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet <strong>Test-CsDatabase</strong> . Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</p>
 <pre><code>Get-CsAdminRole | Where-Object {$_.Cmdlets -match &quot;Test-CsDatabase&quot;}</code></pre></td>
 </tr>
 </tbody>
@@ -66,27 +66,27 @@ _**Argomento Ultima modifica:** 2016-07-07_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet **Test-CsDatabase** verifica la connettività a uno o più database di Lync Server 2013. Quando viene eseguito, il cmdlet **Test-CsDatabase** legge la topologia di Lync Server, cerca di connettersi a database rilevanti e quindi riporta l'esito positivo o negativo di ogni tentativo. Se è possibile effettuare una connessione, il cmdlet riporta anche le informazioni relative al nome del database, alle informazioni sulla versione di SQL Server e alla posizione dei database mirror installati.
+Il cmdlet **Test-CsDatabase** consente di verificare la connettività a uno o più database di Lync Server 2013. Quando viene eseguito, il cmdlet **Test-CsDatabase** legge la topologia di Lync Server, tenta di connettersi a database rilevanti e quindi segnala nuovamente l'esito positivo o negativo di ogni tentativo. Se è possibile effettuare una connessione, il cmdlet riporterà inoltre informazioni quali il nome del database, la versione di SQL Server e il percorso di eventuali database mirror installati.
 
 </div>
 
 <div>
 
-## <a name="running-the-test"></a>Eseguire il test
+## <a name="running-the-test"></a>Esecuzione del test
 
-Il comando mostrato nell'esempio 1 verifica la configurazione del database di gestione centrale.
+Il comando riportato nell'esempio 1 verifica la configurazione del database di gestione centrale.
 
     Test-CsDatabase -CentralManagementDatabase
 
-L'esempio 2 verifica tutti i database di Lync Server installati nel computer atl-sql-001.litwareinc.com.
+Nell'esempio 2 vengono verificati tutti i database di Lync Server installati nel computer atl-sql-001.litwareinc.com.
 
     Test-CsDatabase -ConfiguredDatabases -SqlServerFqdn "atl-sql-001.litwareinc.com"
 
-Nell'esempio 3 la verifica viene eseguita solo per il database di archiviazione installato nel computer atl-sql-001.litwareinc.com. Tieni presente che il parametro SQLINSTANCENAME è incluso per specificare l'istanza di SQL Server (ARCHINST) in cui si trova il database di archiviazione.
+Nell'esempio 3 la verifica viene eseguita solo per il database di archiviazione installato nel computer atl-sql-001.litwareinc.com. Si noti che viene incluso il parametro SqlInstanceName per specificare l'istanza di SQL Server (Archinst) in cui si trova il database di archiviazione.
 
     Test-CsDatabase -DatabaseType "Archiving" -SqlServerFqdn "atl-sql-001.litwareinc.com" -SqlInstanceName "archinst"
 
-Il comando mostrato nell'esempio 4 Verifica i database installati nel computer locale.
+Il comando riportato nell'esempio 4 verifica i database installati nel computer locale.
 
     Test-CsDatabase -LocalService
 
@@ -94,7 +94,7 @@ Il comando mostrato nell'esempio 4 Verifica i database installati nel computer l
 
 <div>
 
-## <a name="determining-success-or-failure"></a>Determinare l'esito positivo o negativo
+## <a name="determining-success-or-failure"></a>Determinazione dell'esito positivo o negativo
 
 Se la connettività del database è configurata correttamente, si riceverà un output simile al seguente, con la proprietà succeed contrassegnata come **true**:
 
@@ -108,7 +108,7 @@ MirrorSqlInstanceName :
 
 DatabaseName: XDS
 
-Origine dati
+DataSource
 
 SqlServerVersion
 
@@ -116,7 +116,7 @@ ExpectedVersion : 10.13.2
 
 InstalledVersion :
 
-Successo: vero
+Esito positivo: true
 
 SqlServerFqdn: atl-sql-001.litwareinc.com
 
@@ -128,7 +128,7 @@ MirrorSqlInstanceName :
 
 DatabaseName: LIS
 
-Origine dati
+DataSource
 
 SqlServerVersion
 
@@ -136,9 +136,9 @@ ExpectedVersion: 3.1.1
 
 InstalledVersion :
 
-Successo: vero
+Esito positivo: true
 
-Se il database è configurato correttamente ma ancora disponibile, il campo successo verrà visualizzato come **falso**e verranno forniti avvisi e informazioni aggiuntive:
+Se il database è configurato correttamente, ma è ancora disponibile, il campo esito positivo verrà visualizzato come **falso**e verranno forniti avvisi e informazioni aggiuntive:
 
 SqlServerFqdn: atl-sql-001.litwareinc.com
 
@@ -150,7 +150,7 @@ MirrorSqlInstanceName :
 
 DatabaseName: XDS
 
-Origine dati
+DataSource
 
 SqlServerVersion
 
@@ -158,7 +158,7 @@ ExpectedVersion : 10.13.2
 
 InstalledVersion :
 
-Operazione riuscita: false
+Esito positivo: false
 
 SqlServerFqdn: atl-cs-001.litwareinc.com
 
@@ -170,7 +170,7 @@ MirrorSqlInstanceName :
 
 DatabaseName: LIS
 
-Origine dati
+DataSource
 
 SqlServerVersion
 
@@ -178,17 +178,17 @@ ExpectedVersion: 3.1.1
 
 InstalledVersion :
 
-Operazione riuscita: false
+Esito positivo: false
 
-AVVISO: Test-CsDatabase ha rilevato errori. Consultare il file di log per un
+AVVISO: Test-CsDatabase ha rilevato errori. Consultare il file di registro per un
 
-analisi dettagliata e per assicurarsi che tutti gli errori (2) e gli avvisi (0) siano risolti
+analisi dettagliata e per assicurarsi che tutti gli errori (2) e gli avvisi (0) siano indirizzati
 
 prima di continuare.
 
-AVVISO: i risultati dettagliati possono essere trovati in
+AVVISO: i risultati dettagliati sono disponibili all'indirizzo
 
-"C:\\utenti\\che\\testano\\AppData\\\\locale\\Temp 2 Test-CsDatabase-b18d488a-8044-4679-bbf2-
+"C:\\utenti\\che\\eseguono\\il\\testing AppData Local temp\\2\\Test-CsDatabase-b18d488a-8044-4679-bbf2-
 
 04d593cce8e6. html ".
 
@@ -196,13 +196,13 @@ AVVISO: i risultati dettagliati possono essere trovati in
 
 <div>
 
-## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non essere riuscito
+## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Ecco alcuni motivi comuni per cui **Test-CsDatabase** potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui **Test-CsDatabase** potrebbe non riuscire:
 
-  - È stato specificato un valore di parametro errato. Se usato, i parametri facoltativi devono essere configurati correttamente o il test avrà esito negativo. Rieseguire il comando senza i parametri facoltativi e verificare se l'operazione riesce.
+  - È stato specificato un valore di parametro non corretto. Se si utilizza questo parametro, i parametri facoltativi devono essere configurati correttamente o il test avrà esito negativo. Rieseguire il comando senza i parametri facoltativi e verificare se tale operazione ha esito positivo.
 
-  - Questo comando non riuscirà se il database non è configurato correttamente o non è stato ancora distribuito.
+  - Questo comando avrà esito negativo se il database non è stato configurato correttamente o non è stato ancora distribuito.
 
 </div>
 

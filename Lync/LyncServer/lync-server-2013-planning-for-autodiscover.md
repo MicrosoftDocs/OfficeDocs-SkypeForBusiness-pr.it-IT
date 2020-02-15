@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: pianificazione per l'individuazione automatica"
+title: "Lync Server 2013: pianificazione dell'individuazione automatica"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541474
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 709b27059e1908a45b4b473f5380215bbd499d27
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fd0b470908849b47c499287123d194b8868e3147
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725526"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037236"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-autodiscover-in-lync-server-2013"></a>Pianificazione per l'individuazione automatica in Lync Server 2013
+# <a name="planning-for-autodiscover-in-lync-server-2013"></a>Pianificazione dell'individuazione automatica in Lync Server 2013
 
 </div>
 
@@ -35,29 +35,29 @@ ms.locfileid: "41725526"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-16_
+_**Ultimo argomento modificato:** 2013-02-16_
 
-L'individuazione automatica è stata introdotta per Lync Server nell'aggiornamento cumulativo per Lync Server 2010: novembre 2011. Lo scopo principale di questa implementazione iniziale di individuazione automatica consiste nel creare un mezzo per Lync mobile per individuare il servizio di mobilità (MCX). Il servizio di individuazione automatica in Lync Server 2013 è ora un servizio usato da tutti i client per individuare i servizi server e utente. Il servizio di individuazione automatica di Microsoft Lync Server 2013 viene eseguito su direttori e server front-end.
+L'individuazione automatica è stata introdotta per Lync Server nell'aggiornamento cumulativo per Lync Server 2010: novembre 2011. Lo scopo principale di questa implementazione iniziale dell'individuazione automatica è stato quello di fornire un mezzo per Lync mobile per individuare il servizio per dispositivi mobili (MCX). Il servizio di individuazione automatica in Lync Server 2013 è ora un servizio utilizzato da tutti i client per individuare i servizi server e utente. Il servizio di individuazione automatica di Microsoft Lync Server 2013 viene eseguito su Director e front end server.
 
 <div>
 
 
 > [!TIP]  
-> Per una maggiore comprensione tecnica dell'individuazione automatica e delle comunicazioni ai client, vedere informazioni sull' <A href="lync-server-2013-understanding-autodiscover.md">individuazione automatica in Lync Server 2013</A>.<BR>La mobilità è ancora uno scenario distinto e i servizi di mobilità richiedono comunque una pianificazione speciale. Per ulteriori informazioni, vedere <A href="lync-server-2013-planning-for-mobility.md">pianificazione della mobilità in Lync Server 2013</A>.
+> Per informazioni più tecniche sull'individuazione automatica e su ciò che viene comunicato ai client, vedere <A href="lync-server-2013-understanding-autodiscover.md">Understanding Autodiscover in Lync Server 2013</A>.<BR>La mobilità è ancora uno scenario distinto e i servizi per dispositivi mobili richiedono comunque una pianificazione speciale. Per ulteriori informazioni, vedere <A href="lync-server-2013-planning-for-mobility.md">Planning for Mobility in Lync Server 2013</A>.
 
 
 
 </div>
 
-Quando l'individuazione automatica è stata introdotta in Lync Server 2010, sono stati compromessi da eseguire per implementare un servizio che richiedeva potenziali modifiche al certificato alle distribuzioni del server esistenti. L'individuazione automatica può essere usata tramite la porta TCP 443 per HTTPS o tramite la porta TCP 80 per HTTP. Se è stata presa la decisione di usare HTTPS, i certificati su proxy inverso, direttori e server front-end devono essere ristampati per contenere i record necessari `lyncdiscover.<domain>` e `lyncdiscoverinternal.<domain>` DNS. Se si decide di usare HTTP, la ristampa dei certificati può essere evitata usando i record CNAME DNS (o alias) per usare i nomi esistenti nei certificati. L'uso di HTTP significava che le comunicazioni iniziali non erano crittografate.
+Quando la funzione di individuazione automatica è stata introdotta in Lync Server 2010, sono stati necessari compromessi per implementare un servizio che richiedeva potenziali modifiche del certificato alle distribuzioni esistenti del server. L'individuazione automatica può essere utilizzata su porta TCP 443 per HTTPS o su porta TCP 80 per HTTP. Se è stata presa la decisione di utilizzare HTTPS, i certificati su proxy inversi, direttori e front end server devono essere riemessi per soddisfare i record DNS e `lyncdiscover.<domain>` `lyncdiscoverinternal.<domain>` necessari. Se si decide di utilizzare il protocollo HTTP, la ristampa dei certificati potrebbe essere evitata utilizzando record CNAME DNS (o alias) per l'utilizzo dei nomi esistenti nei certificati. L'utilizzo di HTTP significa che le comunicazioni iniziali non sono state crittografate.
 
-Poiché Lync Server 2013 usa l'individuazione automatica per tutti i client, lo scenario principale è l'uso esclusivo di HTTPS e la creazione di certificati con lyncdiscover. \<dominio\> come parte della configurazione di proxy inverso, direttori e server front-end. Se si implementa l'individuazione automatica in una distribuzione aggiornata da Lync Server 2010, è consigliabile usare HTTP per evitare di riemettere certificati. Le linee guida per entrambi gli scenari sono disponibili nelle sezioni seguenti.
+Poiché Lync Server 2013 utilizza l'individuazione automatica per tutti i client, lo scenario principale consiste nell'utilizzare solo HTTPS e creare certificati con lyncdiscover. \<dominio\> come parte della configurazione dei proxy inversi, direttori e front end server. Se si sta implementando l'individuazione automatica in una distribuzione aggiornata da Lync Server 2010, è consigliabile utilizzare HTTP per evitare di riemettere certificati. Le linee guida per entrambi gli scenari sono disponibili nelle sezioni seguenti.
 
 <div>
 
 
 > [!IMPORTANT]  
-> L'elenco di nomi alternativi oggetto nei certificati usati dalla regola di pubblicazione dei servizi Web esterni deve contenere un <EM>lyncdiscover.&lt; SipDomain&gt; </EM> voce per ogni dominio SIP all'interno dell'organizzazione. Per informazioni dettagliate sulle voci di nome alternative oggetto necessarie per direttori, server front-end e reverse proxy, vedere <A href="lync-server-2013-certificate-summary-autodiscover.md">Riepilogo dei certificati-individuazione automatica in Lync Server 2013</A>.
+> L'elenco dei nomi alternativi del soggetto nei certificati utilizzati dalla regola di pubblicazione dei servizi Web esterni deve contenere un <EM>lyncdiscover.&lt; voce&gt; SipDomain</EM> per ogni dominio SIP all'interno dell'organizzazione. Per informazioni dettagliate sulle voci dei nomi alternativi del soggetto necessarie per i direttori, i Front End Server e i proxy inversi, vedere <A href="lync-server-2013-certificate-summary-autodiscover.md">Certificate Summary-Autodiscover in Lync Server 2013</A>.
 
 
 
@@ -65,15 +65,15 @@ Poiché Lync Server 2013 usa l'individuazione automatica per tutti i client, lo 
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Riepilogo del certificato-individuazione automatica in Lync Server 2013](lync-server-2013-certificate-summary-autodiscover.md)
 
-  - [Riepilogo della porta-individuazione automatica in Lync Server 2013](lync-server-2013-port-summary-autodiscover.md)
+  - [Riepilogo delle porte-individuazione automatica in Lync Server 2013](lync-server-2013-port-summary-autodiscover.md)
 
   - [Riepilogo DNS-individuazione automatica in Lync Server 2013](lync-server-2013-dns-summary-autodiscover.md)
 
-  - [Hybrid e Split-Domain-individuazione automatica in Lync Server 2013](lync-server-2013-hybrid-and-split-domain-autodiscover.md)
+  - [Ambiente ibrido e Split-Domain-individuazione automatica in Lync Server 2013](lync-server-2013-hybrid-and-split-domain-autodiscover.md)
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Eseguire, concedere, ottenere, rimuovere o impostare criteri di Chat persistente'
+title: 'Lync Server 2013: eseguire, concedere, ottenere, rimuovere o impostare criteri di chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183857
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e48f07207387a27701041f3decc36417b4cb30b8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: dd269b21d8ef0031bd199b68bd7cc670b0335106
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732866"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037306"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="run-grant-get-remove-or-set-persistent-chat-policy-in-lync-server-2013"></a>Eseguire, concedere, ottenere, rimuovere o impostare criteri di Chat persistente in Lync Server 2013
+# <a name="run-grant-get-remove-or-set-persistent-chat-policy-in-lync-server-2013"></a>Eseguire, concedere, ottenere, rimuovere o impostare criteri di chat persistente in Lync Server 2013
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41732866"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-Per creare un nuovo criterio per la chat persistente
+Per creare un nuovo criterio di chat persistente
 
     New-CsPersistentChatPolicy -Identity <XdsIdentity> [-Enable <Switch Parameter>] [-Confirm <Switch Parameter>] [-Force <Switch Parameter>] [-WhatIf <Switch Parameter>] [-InMemory <Switch Parameter>]
 
-Per concedere criteri per la chat persistente
+Per concedere criteri di chat persistente
 
     Grant-CsPersistentChatPolicy -Identity <UserIdParameter> -PolicyName <String> [-Confirm <Switch Parameter>] [-WhatIf <Switch Parameter>]
 
-Per ottenere criteri di chat persistente
+Per ottenere i criteri di chat persistente
 
     Get-CsPersistentChatPolicy [-Identity <XdsIdentity>] [-Filter <String>] [-LocalStore <Switch Parameter>]
 
-Per rimuovere i criteri per la chat persistente
+Per rimuovere i criteri di Persistent Chat
 
     Remove-CsPersistentChatPolicy -Identity <XdsIdentity> [-Confirm <Switch Parameter>] [-Force <Switch Parameter>] [-WhatIf <Switch Parameter>]
 
-Per impostare i criteri per la chat persistente
+Per impostare i criteri di Persistent Chat
 
     Set-CsPersistentChatPolicy [-Identity <XdsIdentity>] [-Instance < PSObject>]
 

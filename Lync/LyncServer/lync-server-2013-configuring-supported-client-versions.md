@@ -12,20 +12,20 @@ ms:contentKeyID: 48185137
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9a262cab2145013d83cdae573d98b5db17e0e890
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 326a428003a7836adef588942765909b753124ce
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41734776"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42040965"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-supported-client-versions-in-lync-server-2013"></a>Configurazione di versioni client supportate in Lync Server 2013
+# <a name="configuring-supported-client-versions-in-lync-server-2013"></a>Configurazione delle versioni client supportate in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41734776"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-12-14_
+_**Ultimo argomento modificato:** 2012-12-14_
 
-In Lync Server 2013 è possibile configurare i criteri di versione client per specificare le versioni dei client supportate nell'ambiente. Inoltre, puoi usare la configurazione della versione client globale per specificare un'azione predefinita per i client che non hanno già un criterio di versione definito e, pertanto, non sono esplicitamente supportati o limitati.
+In Lync Server 2013, è possibile configurare i criteri versione client per specificare le versioni dei client supportati nell'ambiente in uso. È inoltre possibile utilizzare la configurazione della versione client globale per specificare un'azione predefinita per i client che non dispongono già di criteri di versione definiti e che pertanto non sono esplicitamente supportati o esclusi.
 
-È anche possibile usare i criteri di versione client per gestire gli aggiornamenti del client. Quando si impostano criteri di versione client e si usano le opzioni **Consenti e aggiorna** e **blocca e aggiorna**, i client riceveranno il software aggiornato dal servizio Windows Server Update (se si usa questo servizio) o da Microsoft Update.
+È inoltre possibile utilizzare i criteri di versione client per gestire gli aggiornamenti client. Quando si impostano i criteri di versione client e si utilizzano le opzioni **Consenti e aggiorna** e **Blocca e aggiorna**, i client riceveranno il software aggiornato da Windows Server Update Service, se si utilizza tale servizio, o da Microsoft Update.
 
 <div>
 
 ## <a name="client-version-policy-settings"></a>Impostazioni dei criteri di versione client
 
-I criteri di versione client predefiniti richiedono che tutti i client eseguano Lync. Se i client nell'ambiente sono in esecuzione versioni precedenti di Communicator, potrebbe essere necessario riconfigurare le regole della versione client per impedire che i client e i dispositivi vengano bloccati o aggiornati in modo imprevisto durante la connessione a Lync Server 2013. È possibile modificare la regola predefinita oppure aggiungere una regola più alta nell'elenco dei criteri di versione client per eseguire l'override della regola predefinita. Inoltre, come vengono rilasciati gli aggiornamenti cumulativi (CUs), è necessario configurare i criteri di versione client per richiedere gli aggiornamenti più recenti. Per informazioni dettagliate, vedere [specificare le applicazioni client che è possibile usare per accedere a Lync Server 2013](lync-server-2013-specifying-the-client-applications-that-can-be-used-to-log-on-to-lync-server-2013.md) nella documentazione Operations.
+I criteri di versione client predefiniti richiedono che tutti i client eseguano Lync. Se i client nell'ambiente eseguono versioni precedenti di Communicator, potrebbe essere necessario riconfigurare le regole di versione client per impedire che i client e i dispositivi vengano bloccati o aggiornati in modo imprevisto durante la connessione a Lync Server 2013. È possibile modificare la regola predefinita oppure aggiungere una regola più in alto nell'elenco Criteri versione client per ignorare la regola predefinita. Inoltre, con il rilascio di aggiornamenti cumulativi (UC), è necessario configurare i criteri di versione client per richiedere gli aggiornamenti più recenti. Per ulteriori informazioni, vedere [impostazione delle applicazioni client che è possibile utilizzare per accedere a Lync Server 2013](lync-server-2013-specifying-the-client-applications-that-can-be-used-to-log-on-to-lync-server-2013.md) nella documentazione relativa alle operazioni.
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: report QoE'
+title: 'Lync Server 2013: rapporti QoE'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 63969601
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9eead17e9cd08267f941d80cb25460f4d456d896
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 958c67b1b10b25e44805d2582ffe2e9fab575568
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724596"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045788"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,59 +35,59 @@ ms.locfileid: "41724596"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-05-01_
+_**Ultimo argomento modificato:** 2014-05-01_
 
 <div>
 
-## <a name="qoe-summarytrend-reports"></a>Riepilogo QoE/report di tendenza
+## <a name="qoe-summarytrend-reports"></a>Riepilogo QoE/rapporti di tendenza
 
-I report di riepilogo/tendenze QoE sono utili per trovare i tempi di utilizzo del giorno e per esaminare la qualità dei contenuti multimediali in questi periodi per assicurare che le risorse di rete dell'organizzazione siano sufficienti. L'organizzazione può anche usare i numerosi filtri disponibili nel report per isolare i numeri di prestazioni per determinati percorsi, tipi di client e dispositivi e server.
+I report di riepilogo/tendenze QoE sono utili per individuare i tempi di utilizzo massimi del giorno ed esaminare la qualità multimediale in quei periodi per garantire che le risorse di rete dell'organizzazione siano sufficienti. L'organizzazione può anche utilizzare i numerosi filtri disponibili nel report per isolare i numeri di prestazioni per determinati percorsi, tipi di client e dispositivi e server.
 
-I report di riepilogo/tendenza QoE sono costituiti da:
+I rapporti di riepilogo/trend QoE sono costituiti da:
 
-  - Riepilogo/report di riassunto UC-to-UC
+  - Report di riepilogo/trend da UC a UC
 
-  - Riepilogo PSTN/rapporto tendenza
+  - Riepilogo PSTN/rapporto trend
 
-  - Riepilogo delle conferenze/rapporto sulle tendenze
+  - Riepilogo conferenze/Rapporto tendenze
 
 </div>
 
 <div>
 
-## <a name="qoe-performance-reports"></a>Report prestazioni QoE
+## <a name="qoe-performance-reports"></a>Rapporti sulle prestazioni QoE
 
-I report sulle prestazioni QoE includono dettagli sui tre report che si concentrano sulle prestazioni QoE di Mediation Server, A/V Conferencing Servers e location endpoint.
+I report sulle prestazioni QoE forniscono informazioni dettagliate sui tre rapporti che si concentrano sulle prestazioni QoE di Mediation Server, A/V Conferencing Server e endpoint locations.
 
 </div>
 
 <div>
 
-## <a name="mediation-server-performance-report"></a>Report prestazioni Mediation Server
+## <a name="mediation-server-performance-report"></a>Rapporto prestazioni Mediation Server
 
-Il report prestazioni Mediation Server elenca le metriche conseguite da una o più mediazioni durante il periodo di tempo specificato. Le metriche per la gamba del server comunicazioni unificate (UC)-mediazione e il segmento Mediation Server-to-gateway di ogni chiamata vengono segnalate separatamente. Usare questo report per confrontare il volume e le prestazioni dei vari server di mediazione dell'organizzazione.
+Il rapporto prestazioni Mediation Server elenca le metriche ottenute da una o più mediazione durante il periodo di tempo specificato. Le metriche per la gamba del server Unified Communications (UC)-to-Mediation e la gamba Mediation Server-to-gateway di ogni chiamata vengono segnalate separatamente. Utilizzare questo report per confrontare il volume e le prestazioni dei diversi Mediation Server dell'organizzazione.
 
-Per ogni Mediation Server (e per ogni gamba di chiamata), nel report vengono visualizzati i seguenti elementi:
+Per ogni Mediation Server (e per ogni gamba di chiamata), il report Visualizza gli elementi seguenti:
 
   - Numero di chiamate
 
-  - Perdita pacchetti
+  - Perdita di pacchetti
 
   - Tempo di andata e ritorno
 
-  - Jitter
+  - Instabilità
 
-  - Punteggio di opinione media conversazione (MOS)
+  - Punteggio di opinione medio di conversazione (MOS)
 
   - Invio di MOS
 
-  - MOS in ascolto
+  - MOS di attesa
 
   - MOS di rete
 
-  - Degradazione MOS Network
+  - Degradazione MOS di rete
 
-  - Ritorno Echo
+  - Return Echo
 
   - Livello di segnale
 
@@ -95,31 +95,31 @@ Per ogni Mediation Server (e per ogni gamba di chiamata), nel report vengono vis
 
 <div>
 
-## <a name="av-conferencing-server-performance-report"></a>Report prestazioni di un/V Conferencing Server
+## <a name="av-conferencing-server-performance-report"></a>Report sulle prestazioni di A/V Conferencing Server
 
-Il report prestazioni A/V Conferencing Server fornisce elenchi di metriche conseguiti da uno o più server di conferenza A/V durante il periodo di tempo specificato. Questo report può essere usato per confrontare il volume e le prestazioni dei vari server di conferenza A/V dell'organizzazione. L'organizzazione può anche isolare il report in modo da mostrare solo l'esperienza per specifici tipi di client, ad esempio client Lync o client PSTN.
+Il rapporto prestazioni A/V Conferencing Server fornisce gli elenchi di metriche ottenute da uno o più server A/V Conferencing durante il periodo di tempo specificato. Questo report può essere utilizzato per confrontare il volume e le prestazioni dei diversi server A/V Conferencing dell'organizzazione. L'organizzazione può anche isolare il report in modo da mostrare solo l'esperienza per specifici tipi di client, ad esempio client di Lync o client PSTN.
 
-Per ogni server A/V Conferencing, il report Visualizza le operazioni seguenti:
+Per ogni server A/V Conferencing, il report Visualizza gli elementi seguenti:
 
   - Numero di conferenze
 
-  - Perdita pacchetti
+  - Perdita di pacchetti
 
   - Tempo di andata e ritorno
 
-  - Jitter
+  - Instabilità
 
-  - Punteggio di opinione media conversazione (MOS)
+  - Punteggio di opinione medio di conversazione (MOS)
 
   - Invio di MOS
 
-  - MOS in ascolto
+  - MOS di attesa
 
   - MOS di rete
 
-  - Degradazione MOS Network
+  - Degradazione MOS di rete
 
-  - Ritorno Echo
+  - Return Echo
 
   - Livello di segnale
 
@@ -127,25 +127,25 @@ Per ogni server A/V Conferencing, il report Visualizza le operazioni seguenti:
 
 <div>
 
-## <a name="location-based-performance-report"></a>Report prestazioni basato sulla posizione
+## <a name="location-based-performance-report"></a>Report sulle prestazioni basato sulla posizione
 
-Il report prestazioni basato sulla posizione fornisce un elenco di percorsi di rete e per ogni posizione viene visualizzato il numero di chiamate in ogni intervallo di qualità predeterminato. L'obiettivo di questo report è quello di comprendere la qualità dei contenuti multimediali della maggior parte delle chiamate telefoniche dell'organizzazione per varie posizioni, in modo da poter identificare le posizioni poco performanti e vedere i diversi gradi di qualità dei contenuti multimediali nell'organizzazione posizioni diverse.
+Il report sulle prestazioni basato sulla posizione fornisce un elenco di percorsi di rete e per ogni percorso viene visualizzato il numero di chiamate in ogni intervallo di qualità predeterminato. L'obiettivo di questo report è quello di fornire informazioni sulla qualità multimediale della maggior parte delle chiamate telefoniche dell'organizzazione per diverse posizioni in modo da poter identificare le posizioni poco performative e vedere i diversi gradi di qualità multimediale nell'organizzazione. posizioni diverse.
 
-Quando si Visualizza il report, vengono visualizzate diverse tabelle di metriche, ovvero una tabella per ogni metrica a cui l'organizzazione decide di segnalare. Per questo report è possibile scegliere tra le metriche seguenti:
+Quando si Visualizza il report, vengono visualizzate diverse tabelle di metriche, ovvero una tabella per ogni metrica a cui l'organizzazione decide di riferire. Per questo report è possibile scegliere tra le metriche seguenti:
 
-  - Punteggio di opinione media conversazione (MOS)
+  - Punteggio di opinione medio di conversazione (MOS)
 
   - MOS di rete
 
-  - Degradazione MOS Network
+  - Degradazione MOS di rete
 
   - Invio di MOS
 
-  - MOS in ascolto
+  - MOS di attesa
 
-  - Perdita pacchetti
+  - Perdita di pacchetti
 
-  - Jitter
+  - Instabilità
 
   - Latenza
 

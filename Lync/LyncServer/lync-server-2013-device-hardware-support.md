@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Supporto di dispositivi hardware'
+title: Supporto hardware per dispositivi di Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185222
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ea720eda982ab20333e56de268085a706ab2cdc7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e0b4b0f24523044169ae3274ae4d0ff16ae9ff67
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762434"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044988"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="device-hardware-support-in-lync-server-2013"></a>Supporto di dispositivi hardware in Lync Server 2013
+# <a name="device-hardware-support-in-lync-server-2013"></a>Supporto hardware per dispositivi in Lync Server 2013
 
 </div>
 
@@ -35,31 +35,31 @@ ms.locfileid: "41762434"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-12-14_
+_**Ultimo argomento modificato:** 2012-12-14_
 
-Le configurazioni hardware specifiche devono essere posizionate prima di distribuire telefoni IP e dispositivi analogici.
+Prima di distribuire telefoni IP e dispositivi analogici, è necessario implementare configurazioni hardware specifiche.
 
-I telefoni IP con Lync Phone Edition supportano il protocollo di rilevamento dei collegamenti layer-Media Endpoint Discovery (LLDP-MED) e Power over Ethernet (PoE).Per sfruttare LLDP-MED, lo switch deve supportare IEEE 802.1 AB e ANSI/TIA-1057. Per trarre vantaggio da PoE, lo switch deve supportare PoE 802.3 AF o 802.3 at.
+Telefoni IP che eseguono Lync Phone Edition Support Link Layer Discovery Protocol-Media Endpoint Discovery (LLDP-MED) e Power over Ethernet (PoE).Per poter utilizzare LLDP-MED, il commutatore deve supportare IEEE802.1AB e ANSI/TIA-1057. Per poter utilizzare PoE, il commutatore deve supportare PoE802.3AF o 802.3at.
 
-Per abilitare LLDP-MED, l'amministratore deve abilitare LLDP usando la finestra switch console e impostando il criterio di rete LLDP-MED con l'ID VLAN vocale corretto.
+Per abilitare LLDP-MED, l'amministratore deve abilitare LLDP tramite la finestra della console del commutatore e impostare i criteri di rete LLDP-MED con l'ID VLAN voce corretto.
 
-Inoltre, se la distribuzione include dispositivi analogici, è necessario configurare il gateway analogico per l'uso di Lync Server e il gateway deve essere uno dei seguenti:
+Inoltre, se la distribuzione include dispositivi analogici, è necessario configurare il gateway analogico per l'utilizzo di Lync Server e il gateway deve essere uno dei seguenti:
 
-  - Un adattatore telefonico analogico (ATA)
+  - Un adattatore telefonico analogico (ATA, Analog Telephone Adapter)
 
-  - Gateway analogico PSTN
+  - Un gateway analogico PSTN
 
   - Un Survivable Branch Appliance che include un gateway analogico PSTN
 
-  - Un Survivable Branch Appliance che include un gateway PSTN che comunica con un ATA
+  - Un Survivable Branch Appliance che include un gateway PSTN che comunica con un adattatore telefonico analogico
 
-Per informazioni su come configurare un gateway analogico, vedere la pagina relativa alla pianificazione [http://go.microsoft.com/fwlink/p/?LinkId=268537](http://go.microsoft.com/fwlink/p/?linkid=268537) della distribuzione di dispositivi analogici nella raccolta TechNet di Lync Server 2010. I dispositivi analogici funzionano allo stesso modo in Lync Server 2013 come in Lync Server 2010.
+Per informazioni su come configurare un gateway analogico, vedere la sezione relativa alla pianificazione [http://go.microsoft.com/fwlink/p/?LinkId=268537](http://go.microsoft.com/fwlink/p/?linkid=268537) della distribuzione di dispositivi analogici nella libreria TechNet di Lync Server 2010. I dispositivi analogici funzionano nello stesso modo in Lync Server 2013 come in Lync Server 2010.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Puoi configurare lo switch per 9-1-1 avanzato (E9-1-1), se lo switch supporta questo.
+> È possibile configurare il commutatore per Enhanced 9-1-1 (E9-1-1), se supportato dal commutatore.
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: impostare il PIN di conferenza telefonica con accesso esterno di un utente'
+title: 'Lync Server 2013: impostare il PIN per le conferenze telefoniche con accesso esterno di un utente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183970
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ab97b3efe350ef82527262103e9b00104990245a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c344a848050d53027c094ad549f0285fbae09489
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764692"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046579"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41764692"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-06-10_
+_**Ultimo argomento modificato:** 2014-06-10_
 
-Per partecipare a una conferenza telefonica con accesso esterno come utente autenticato, un utente di Lync Server 2013 con le credenziali di Active Directory Domain Services (AD DS) richiede un PIN (Personal Identification Number). Se un utente dimentica il PIN per i servizi di conferenza telefonica con accesso esterno o non ha impostato il PIN tramite Lync Server, è possibile impostare il PIN dell'utente dal pannello di controllo di Lync Server. È possibile generare automaticamente il PIN o crearne uno manualmente.
+Per partecipare a una conferenza telefonica con accesso esterno come utente autenticato, un utente di Lync Server 2013 con le credenziali di servizi di dominio Active Directory richiede un codice PIN (Personal Identification Number). Se un utente dimentica il PIN per le conferenze telefoniche con accesso esterno o non ha impostato il PIN utilizzando Lync Server, è possibile impostare il PIN dell'utente dal pannello di controllo di Lync Server. È possibile generare automaticamente il PIN o crearne uno manualmente.
 
 <div>
 
 
 > [!NOTE]  
-> Le caratteristiche specifiche del PIN, ad esempio la lunghezza minima, possono essere configurate come criteri. Oltre al criterio globale, è possibile configurare un criterio PIN per singoli siti o utenti. Per informazioni dettagliate sulla configurazione di un criterio PIN, vedere <A href="lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md">configurare le regole pin (Personal Identification Number) di conferenza telefonica con accesso esterno in Lync Server 2013</A>.
+> Le caratteristiche specifiche del PIN, ad esempio la lunghezza minima, possono essere configurate come criterio. Oltre al criterio globale, è possibile configurare un criterio PIN per singoli siti o utenti. Per informazioni dettagliate sulla configurazione di un criterio PIN, vedere <A href="lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md">Configure Dial-in Conferencing Personal Identification Number (pin) Rules in Lync Server 2013</A>.
 
 
 
@@ -53,63 +53,63 @@ Per partecipare a una conferenza telefonica con accesso esterno come utente aute
 
 ## <a name="to-set-a-users-pin"></a>Per impostare il PIN di un utente
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **utenti**.
+3.  Sulla barra di spostamento sinistra fare clic su **Utenti**.
 
-4.  Usare uno dei metodi seguenti per individuare un utente:
+4.  Utilizzare uno dei metodi seguenti per individuare un utente:
     
-      - Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di gestione account di sicurezza (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente e quindi fare clic su **trova**.
+      - Nella casella **Cerca utenti** digitare per intero nome visualizzato, nome, cognome, nome account SAM (Security Accounts Manager), indirizzo SIP o URI linea dell'account utente desiderato, oppure digitare la prima parte di questi e quindi fare clic su **Trova**.
     
-      - Se si ha una query salvata, fare clic sull'icona **Apri query** , usare la finestra di dialogo **Apri** per recuperare la query (un file con estensione USF) e quindi fare clic su **trova**.
+      - Se è disponibile una query salvata, fare clic sull'icona **Apri query**, recuperare la query (file con estensione usf) mediante la finestra di dialogo **Apri** e quindi fare clic su **Trova**.
 
-5.  Opzionale Specificare altri criteri di ricerca per restringere i risultati:
+5.  (Facoltativo) Specificare ulteriori criteri di ricerca per limitare i risultati:
     
     1.  Fare clic su **Aggiungi filtro**.
     
-    2.  Immettere la proprietà User digitando o facendo clic sulla freccia nell'elenco a discesa per selezionare la proprietà.
+    2.  Immettere una proprietà utente digitandola o selezionandola dall'elenco a discesa dopo aver fatto clic sulla freccia.
     
-    3.  Nell'elenco **a discesa uguale a** fare clic sull'operatore, ad esempio **uguale** a o diverso **da**.
+    3.  Nell'elenco a discesa **Uguale a** fare clic sull'operatore, ad esempio **Uguale a** o **Diverso da**.
     
-    4.  A seconda della proprietà utente selezionata, immettere i criteri da usare per filtrare i risultati della ricerca digitando o facendo clic sulla freccia nell'elenco a discesa.
+    4.  A seconda della proprietà utente selezionata, immettere i criteri che si desidera utilizzare per filtrare i risultati della ricerca digitandoli oppure facendo clic sulla freccia nell'elenco a discesa.
         
         <div>
         
 
         > [!TIP]  
-        > Per aggiungere altre clausole di ricerca alla query, fare clic su <STRONG>Aggiungi filtro</STRONG>.
+        > Per aggiungere ulteriori clausole di ricerca alla query, fare clic su <STRONG>Aggiungi filtro</STRONG>.
 
         
         </div>
     
-    5.  Fare clic su **trova**.
+    5.  Fare clic su **Trova**.
     
     <div>
     
 
     > [!NOTE]  
-    > Se il PIN è bloccato, è necessario sbloccare il PIN prima di poterlo impostare. Per sbloccare il PIN, fare clic sull'utente, fare clic su <STRONG>azione</STRONG>e quindi su <STRONG>Sblocca PIN</STRONG>.
+    > Se il PIN è bloccato, è necessario sbloccarlo per poterlo impostare. Per sbloccare il PIN, fare clic sull'utente, su <STRONG>Azione</STRONG> e quindi su <STRONG>Sblocca PIN</STRONG>.
 
     
     </div>
 
-6.  Fare clic su un utente nei risultati della ricerca, fare clic su **azione**e quindi su **Imposta PIN**.
+6.  Fare clic su un utente nei risultati della ricerca, su **Azione** e quindi su **Imposta PIN**.
 
 7.  Nella finestra di dialogo **Imposta PIN** eseguire una delle operazioni seguenti:
     
       - Per consentire a Lync Server 2013 di generare il PIN dell'utente, selezionare **genera automaticamente un PIN valido** (impostazione predefinita).
     
-      - Per creare un PIN personalizzato, fare clic su **immettere manualmente un PIN specifico**, fare clic sulla casella di testo e quindi digitare un pin che soddisfi i requisiti del PIN specificati nelle impostazioni dei criteri PIN.
+      - Per creare un PIN personalizzato, fare clic su **Immetti manualmente un PIN specifico**, fare clic sulla casella di testo e quindi digitare un PIN che soddisfi i requisiti PIN specificati nelle impostazioni del criterio PIN.
 
 8.  Fare clic su **OK**.
 
-9.  In **Imposta PIN**eseguire una delle operazioni seguenti:
+9.  In **Imposta PIN** eseguire una delle operazioni seguenti:
     
-      - Selezionare la casella di controllo **Mostra PIN** per visualizzare il PIN e quindi copiare il PIN e comunicarlo all'utente usando il metodo preferito dell'organizzazione.
+      - Selezionare la casella di controllo **Mostra PIN** per visualizzare il PIN e quindi copiare il PIN e comunicarlo all'utente utilizzando il metodo preferito dell'organizzazione.
     
-      - Fare clic su **Apri l'applicazione di posta elettronica per inviare il nuovo PIN all'utente** per inviare il PIN tramite posta elettronica. Se Microsoft Office Outlook è il client di posta elettronica, il PIN viene copiato automaticamente in un nuovo messaggio di posta elettronica. Se si usa un altro client di posta elettronica, selezionare la casella di controllo **Mostra PIN** per visualizzare il PIN e quindi copiarlo nel messaggio di posta elettronica.
+      - Fare clic su **Apri applicazione di posta elettronica per inviare il nuovo PIN all'utente** per inviare il PIN per posta elettronica. Se si utilizza Microsoft Office Outlook come client di posta elettronica, il PIN verrà copiato automaticamente in un nuovo messaggio di posta elettronica. Se invece si utilizza un altro client di posta elettronica, selezionare la casella di controllo **Mostra PIN** per visualizzare il PIN e quindi copiarlo nel messaggio di posta elettronica.
 
 10. Fare clic su **Chiudi**.
 
@@ -119,13 +119,13 @@ Per partecipare a una conferenza telefonica con accesso esterno come utente aute
 
 ## <a name="assigning-a-user-pin-by-using-windows-powershell-cmdlets"></a>Assegnazione di un PIN utente tramite i cmdlet di Windows PowerShell
 
-Puoi assegnare i numeri di PIN anche usando il cmdlet Set-CsClientPin. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile assegnare i numeri di PIN anche utilizzando il cmdlet Set-CsClientPin. È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
-## <a name="to-auto-assign-a-pin-number-to-a-user"></a>Per assegnare automaticamente un numero PIN a un utente
+## <a name="to-auto-assign-a-pin-number-to-a-user"></a>Per assegnare automaticamente un numero di PIN a un utente
 
-  - Con il comando seguente viene assegnato un numero PIN all'utente Ken. Dato che il parametro PIN non è incluso, Lync Server genera automaticamente e assegna il numero di PIN.
+  - Il comando seguente assegna un numero PIN all'utente Ken Myer. Poiché il parametro PIN non è incluso, Lync Server genererà e assegnerà automaticamente il numero di PIN.
     
         Set-CsClientPin -Identity "Ken Myer" 
 
@@ -133,15 +133,15 @@ Puoi assegnare i numeri di PIN anche usando il cmdlet Set-CsClientPin. Questo cm
 
 <div>
 
-## <a name="to-assign-a-specific-pin-number-to-a-user"></a>Per assegnare un numero PIN specifico a un utente
+## <a name="to-assign-a-specific-pin-number-to-a-user"></a>Per assegnare un numero di PIN specifico a un utente
 
-  - Questo comando usa il parametro PIN per assegnare il PIN numero 121989 all'utente Ken.
+  - Questo comando usa il parametro Pin per assegnare il numero PIN 121989 all'utente Ken Myer.
     
         Set-CsClientPin -Identity "Ken Myer" -Pin 121989
 
 </div>
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsClientPin](https://docs.microsoft.com/powershell/module/skype/Set-CsClientPin) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsClientPin](https://docs.microsoft.com/powershell/module/skype/Set-CsClientPin) .
 
 </div>
 
@@ -150,10 +150,10 @@ Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-C
 ## <a name="see-also"></a>Vedere anche
 
 
-[Numero di accesso esterno](https://technet.microsoft.com/en-us/library/gg133674\(v=ocs.15\))  
+[Numero di accesso esterno](https://technet.microsoft.com/library/gg133674\(v=ocs.15\))  
 
 
-[Configurare le regole PIN (Personal Identification Number) per le conferenze telefoniche con accesso esterno in Lync Server 2013](lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md)  
+[Configurare le regole del PIN (Personal Identification Number) per le conferenze telefoniche con accesso esterno in Lync Server 2013](lync-server-2013-configure-dial-in-conferencing-personal-identification-number-pin-rules.md)  
   
 
 </div>

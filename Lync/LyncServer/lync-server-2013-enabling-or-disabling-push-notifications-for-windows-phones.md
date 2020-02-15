@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: abilitare o disabilitare le notifiche push per i telefoni Windows'
+title: 'Lync Server 2013: attivazione o disattivazione delle notifiche push per i telefoni Windows'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49733767
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d1b4c8f1f86fa1456230ad4695de0f5b8c56d406
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 01a30a7e0effbcd9d80f30bccf68edb9804641f4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735632"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048119"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41735632"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-Le notifiche push, in forma di badge, icone o avvisi, possono essere inviate a un Windows Phone anche quando l'applicazione per dispositivi mobili è inattiva. Le notifiche push notificano a un utente gli eventi, ad esempio un invito ISTANTANEo o un messaggio di posta elettronica nuovo o perso. È possibile abilitare o disabilitare le notifiche push per i dispositivi Windows Phone usando il pannello di controllo di Lync Server 2013 o Lync Server 2013 Management Shell.
+Le notifiche push, sotto forma di badge, icone o avvisi, possono essere inviate a un Windows Phone anche quando l'applicazione per dispositivi mobili non è attiva. Le notifiche push consentono di notificare a un utente eventi quali inviti di messaggistica immediata nuovi o senza risposta e i messaggi vocali. È possibile abilitare o disabilitare le notifiche push per i dispositivi Windows Phone utilizzando il pannello di controllo di Lync Server 2013 o Lync Server 2013 Management Shell.
 
 <div>
 
 ## <a name="to-enable-push-notifications-for-windows-phone-by-using-lync-server-control-panel"></a>Per abilitare le notifiche push per Windows Phone tramite il pannello di controllo di Lync Server
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **client**e quindi sul pulsante di spostamento della **configurazione della notifica push** .
+3.  Nella barra di navigazione sinistra fare clic su **Client** e quindi fare clic sul pulsante **Configurazione notifiche Push**.
 
-4.  Nella pagina di **configurazione della notifica push** fare clic sul sito che si vuole modificare, fare clic sul menu **modifica** e quindi fare clic su **Mostra dettagli**.
+4.  Nella pagina **Configurazione notifiche push** fare clic sul sito che si desidera modificare, fare clic sul menu **modifica** e quindi su **Mostra dettagli**.
 
-5.  Fare clic sulla casella di controllo **Attiva notifiche push Microsoft** .
+5.  Fare clic sulla casella di controllo **Abilita notifiche push di Microsoft** .
 
 6.  Fare clic su **Commit**.
 
@@ -61,15 +61,15 @@ Le notifiche push, in forma di badge, icone o avvisi, possono essere inviate a u
 
 ## <a name="to-disable-push-notifications-for-windows-phone-by-using-lync-server-control-panel"></a>Per disabilitare le notifiche push per Windows Phone tramite il pannello di controllo di Lync Server
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **client**e quindi sul pulsante di spostamento della **configurazione della notifica push** .
+3.  Nella barra di navigazione sinistra fare clic su **Client** e quindi fare clic sul pulsante **Configurazione notifiche Push**.
 
-4.  Nella pagina di **configurazione della notifica push** fare clic sul sito che si vuole modificare, fare clic sul menu **modifica** e quindi fare clic su **Mostra dettagli**.
+4.  Nella pagina **Configurazione notifiche push** fare clic sul sito che si desidera modificare, fare clic sul menu **modifica** e quindi su **Mostra dettagli**.
 
-5.  Deselezionare la casella di controllo **Abilita notifiche push Microsoft** .
+5.  Deseleziona la casella di controllo **Abilita notifiche push di Microsoft** .
 
 6.  Fare clic su **Commit**.
 
@@ -79,13 +79,13 @@ Le notifiche push, in forma di badge, icone o avvisi, possono essere inviate a u
 
 ## <a name="enabling-or-disabling-push-notifications-for-windows-phone-by-using-windows-powershell-cmdlets"></a>Abilitazione o disabilitazione delle notifiche push per Windows Phone tramite i cmdlet di Windows PowerShell
 
-Puoi abilitare o disabilitare le notifiche push per Windows Phone usando il cmdlet **Set-CsPushNotificationConfiguration** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+Per abilitare o disabilitare le notifiche push per Windows Phone, è possibile utilizzare il cmdlet **Set-CsPushNotificationConfiguration** . È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
 ## <a name="to-enable-push-notifications-for-windows-phone"></a>Per abilitare le notifiche push per Windows Phone
 
-  - Per abilitare le notifiche push per Windows Phone, imposta il valore della proprietà EnableMicrosoftPushNotificationService su true ($True). Ad esempio:
+  - Per abilitare le notifiche push per Windows Phone impostare il valore della proprietà EnableMicrosoftPushNotificationService su true ($True). Ad esempio:
     
         Set-CsPushNotificationConfiguration -Identity "site:Redmond" -EnableMicrosoftPushNotificationService $True
 
@@ -95,13 +95,13 @@ Puoi abilitare o disabilitare le notifiche push per Windows Phone usando il cmdl
 
 ## <a name="to-disable-push-notifications-for-windows-phone"></a>Per disabilitare le notifiche push per Windows Phone
 
-  - Per disabilitare le notifiche push per Windows Phone, imposta il valore della proprietà EnableMicrosoftPushNotificationService su false ($False). Ad esempio:
+  - Per disabilitare le notifiche push per Windows Phone impostare il valore della proprietà EnableMicrosoftPushNotificationService su false ($False). Ad esempio:
     
         Set-CsPushNotificationConfiguration -Identity "site:Redmond" -EnableMicrosoftPushNotificationService $False
 
 </div>
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsPushNotificationConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsPushNotificationConfiguration) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsPushNotificationConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsPushNotificationConfiguration).
 
 </div>
 

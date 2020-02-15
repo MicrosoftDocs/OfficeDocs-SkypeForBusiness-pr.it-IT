@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Funzionalità non supportate dal routing in base alla posizione'
+title: 'Lync Server 2013: funzionalità non supportate dal routing in base alla posizione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 51803982
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 967b5b7388ce60eafd46791c226bf1a3edbe0c2b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 99e28778a8bd299d5ead25220f19b27927a63d44
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743186"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044198"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,29 +35,29 @@ ms.locfileid: "41743186"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-03-12_
+_**Ultimo argomento modificato:** 2014-03-12_
 
-Il routing basato sulla posizione non si applica ai tipi di interazioni seguenti. Il routing basato sulla posizione non viene applicato quando gli endpoint di Lync interagiscono con endpoint PSTN usando queste funzionalità.
+Il routing in base alla posizione non si applica ai tipi di interazioni seguenti. Il routing in base alla posizione non viene applicato quando gli endpoint di Lync interagiscono con gli endpoint PSTN utilizzando queste funzionalità.
 
   - Accesso esterno PSTN alle conferenze
 
-  - Chiamate PSTN in arrivo e in uscita tramite Response Group
+  - Chiamate PSTN in ingresso e in uscita tramite Response Group
 
-  - Parcheggio di chiamata o recupero di chiamate PSTN tramite Call Park
+  - Parcheggio di chiamata o recupero delle chiamate PSTN tramite il parcheggio di chiamata
 
   - Chiamate PSTN in arrivo per il servizio annunci
 
   - Chiamate PSTN in arrivo recuperate tramite raccolta chiamate di gruppo
 
-Per applicare regole di routing basate sul percorso ai tipi di interazioni nell'elenco seguente, è necessario abilitare il routing basato sulla posizione per i servizi di conferenza:
+Per applicare le regole di routing basate sul percorso ai tipi di interazioni nell'elenco seguente, è necessario abilitare il routing in base alla posizione per le conferenze:
 
-  - Chiamata PSTN dalle conferenze
+  - Accesso esterno PSTN dalle conferenze
 
-  - Escalation dalle conversazioni audio peer-to-peer alle conferenze che coinvolgono endpoint PSTN
+  - Escalation dalle conversazioni audio peer-to-peer ai servizi di conferenza che coinvolgono endpoint PSTN
 
   - Trasferimenti consultivi che coinvolgono endpoint PSTN
 
-Per abilitare il routing basato sulla posizione per i servizi di conferenza, vedere [routing basato sulla posizione per i servizi di conferenza in Lync Server 2013](lync-server-2013-location-based-routing-for-conferencing.md).
+Per abilitare il routing in base alla posizione per le conferenze, vedere [routing in base alla posizione per le conferenze in Lync Server 2013](lync-server-2013-location-based-routing-for-conferencing.md).
 
 <div>
 

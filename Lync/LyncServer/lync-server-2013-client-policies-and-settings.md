@@ -12,16 +12,16 @@ ms:contentKeyID: 48185330
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fc306e97c3325ce4cfc11110665bd2f23781cf89
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 72708219dcb6df3b0a0185cb9c59bcbd84c5c19a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742896"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044428"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41742896"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-18_
+_**Ultimo argomento modificato:** 2012-06-18_
 
-Questo argomento offre una panoramica delle impostazioni e dei criteri relativi al client che è possibile configurare in Lync Server 2013. Lync Server 2013 include gli strumenti seguenti per la gestione e la configurazione dei client:
+In questo argomento viene fornita una panoramica delle impostazioni e dei criteri relativi al client che è possibile configurare in Lync Server 2013. Lync Server 2013 include gli strumenti seguenti per la gestione e la configurazione dei client:
 
-  - **Pannello di controllo di Lync Server 2013**   un'interfaccia utente grafica basata sul Web per la gestione e la configurazione di server, utenti, client e dispositivi.
+  - **Pannello di controllo di Lync Server 2013**   interfaccia utente grafica basata sul Web per la gestione e la configurazione di server, utenti, client e dispositivi.
 
-  - **Lync Server Management Shell**   interfaccia di gestione con un ricco set di cmdlet di interfaccia della riga di comando di Windows PowerShell e un certo numero di script predefiniti.
+  - **Lync Server Management Shell**   interfaccia di gestione con un set completo di cmdlet dell'interfaccia della riga di comando di Windows PowerShell e una serie di script predefiniti.
 
-  - **Criteri di gruppo di Lync 2013**     un set di criteri che è possibile configurare per i client tramite il modello amministrativo di criteri di gruppo di Office. È necessario configurare determinati criteri di avvio dei client prima di distribuire i client di Lync 2013. Altre impostazioni facoltative di Lync 2010 continuano ad essere rispettate in Lync 2013.
+  - **Criteri di gruppo di Lync 2013**     un insieme di criteri che è possibile configurare per i client utilizzando il modello amministrativo di criteri di gruppo di Office. Alcuni criteri di avvio del client devono essere configurati prima di distribuire i client Lync 2013. Altre impostazioni opzionali di Lync 2010 continuano a essere onorate in Lync 2013.
 
-Questa sezione descrive le modifiche apportate alle impostazioni correlate al client in Lync Server 2013.
+In questa sezione vengono descritte le modifiche apportate alle impostazioni relative al client in Lync Server 2013.
 
 <div>
 

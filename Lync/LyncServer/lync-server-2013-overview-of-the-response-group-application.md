@@ -12,16 +12,16 @@ ms:contentKeyID: 48184453
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2b01181296a42f786a4739b5ec59d775212baaf5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d63f13442588a84039fee6e1147a9c29e821e14a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755420"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046099"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41755420"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-11_
+_**Ultimo argomento modificato:** 2012-09-11_
 
-Quando un chiamante chiama un gruppo di risposte, la chiamata viene instradata a un agente in base a un gruppo di risposta o alle domande del chiamante per rispondere alla risposta vocale interattiva (IVR). L'applicazione Response Group USA i metodi di routing dei gruppi di risposta standard per instradare la chiamata al successivo agente disponibile. I metodi di routing delle chiamate includono il routing seriale, più lungo-inattivo, parallelo, rotondo Robin e supervisore (ovvero tutti gli agenti vengono chiamati contemporaneamente per ogni chiamata in arrivo, indipendentemente dalla presenza corrente). Se non sono disponibili agenti, la chiamata viene mantenuta in una coda finché non è disponibile un agente. Mentre si è in coda, il chiamante sente la musica finché un agente disponibile non accetta la chiamata. Se la coda è piena o se la chiamata viene interrotta durante la coda, il chiamante potrebbe udire un messaggio e quindi essere disconnesso o trasferito in una destinazione diversa. Quando un agente accetta la chiamata, il chiamante potrebbe non essere in grado di visualizzare l'identità dell'agente, a seconda del modo in cui l'amministratore configura il gruppo di risposte. Gli agenti possono essere formali, quindi devono accedere al gruppo prima di poter accettare le chiamate instradate al gruppo o informale, il che significa che non accedono al gruppo per accettare le chiamate.
+Quando un chiamante chiama un Response Group, viene eseguito il routing della chiamata a un agente in base a un gruppo di risposta o alle risposte del chiamante alle domande di un sistema IVR (Interactive Voice Response). L'applicazione Response Group utilizza metodi di routing di Response Group standard per instradare la chiamata al successivo agente disponibile. I metodi di routing delle chiamate includono routing seriale, verso l'agente inattivo più a lungo, round robin e il nuovo routing operatore, in cui vengono chiamati tutti gli agenti contemporaneamente per ogni chiamata in arrivo, indipendentemente dalla loro effettiva presenza. Se non è disponibile alcun agente, la chiamata viene mantenuta in una coda fino a quando non è disponibile un agente. Mentre la chiamata è nella coda, il chiamante ascolta un brano musicale fino a quando un agente disponibile non accetta la chiamata. Se la coda è piena o si verifica il timeout della chiamata mentre questa è in coda, il chiamante potrebbe ascoltare un messaggio e quindi venire disconnesso o trasferito a una destinazione diversa. Quando un agente accetta la chiamata, il chiamante può o meno visualizzare l'identità dell'agente, a seconda del modo in cui l'amministratore ha configurato Response Group. Gli agenti possono essere agenti formali, ovvero devono accedere al gruppo prima di poter accettare le chiamate di cui viene eseguito il routing al gruppo, oppure agenti informali, ovvero non accedono al gruppo né si disconnettono per accettare le chiamate.
 
 <div>
 
 
 > [!NOTE]  
-> Solo gli utenti locali possono essere agenti. Se un agente viene spostato da locale a online, le chiamate di Response Group non verranno indirizzate a tale agente.
+> Solo gli utenti che si trovano in locale possono essere agenti. Se un agente viene spostato da in locale a online, le chiamate del Response Group non gli verranno instradate.
 
 
 
@@ -53,17 +53,17 @@ Quando un chiamante chiama un gruppo di risposte, la chiamata viene instradata a
 
 
 > [!NOTE]  
-> L'applicazione Response Group usa un servizio interno, denominato match making, per accodare le chiamate e trovare gli agenti disponibili. Ogni computer che esegue l'applicazione Response Group esegue il servizio di creazione delle corrispondenze, ma solo un servizio per il pool di Lync Server è attivo alla volta, mentre gli altri sono passivi. Se il servizio di corrispondenza attiva diventa non disponibile durante un'interruzione non pianificata, uno dei servizi di corrispondenza passiva diventa attivo. L'applicazione Response Group fa del suo meglio per assicurarsi che il routing delle chiamate e l'accodamento continuino senza interruzioni. Tuttavia, quando si verifica una transizione del servizio di corrispondenza, le chiamate in fase di trasferimento vengono perse. Ad esempio, se la transizione è dovuta al fatto che il server front-end si abbassa, vengono perse anche le chiamate attualmente gestite dal servizio Active match making del server front-end.
+> L'applicazione Response Group utilizza un servizio interno, denominato match making, per accodare le chiamate e trovare gli agenti disponibili. Ogni computer che esegue l'applicazione Response Group esegue il servizio di corrispondenza, ma è attivo un solo servizio di corrispondenza per ogni pool di Lync Server alla volta: le altre sono passive. Se il servizio di ricerca corrispondenze diventa non disponibile durante un guasto non pianificato, viene attivato uno dei servizi di ricerca corrispondenze passivi. L'applicazione Response Group consente di fare in modo che il routing delle chiamate e l'accodamento continuino senza interruzioni. Quando si verifica una transizione a un servizio di ricerca corrispondenze, tutte le chiamate in trasferimento durante la transizione vengono perdute. Ad esempio, se la transizione è dovuta alla fine del server front-end, vengono perse anche tutte le chiamate attualmente gestite dal servizio di corrispondenza attivo in quel front end server.
 
 
 
 </div>
 
-In Lync Server 2013 sono disponibili due ruoli di gestione per la gestione dei gruppi di risposta: Response Group Manager e Response Group Administrator. Gli amministratori del gruppo di risposte possono gestire qualsiasi aspetto di un gruppo di risposte. I responsabili dei gruppi di risposte possono gestire solo determinati aspetti e solo per i gruppi di risposta di cui sono proprietari. Il nuovo ruolo di gestione può contribuire a ridurre i costi amministrativi, perché è possibile delegare responsabilità limitate per gruppi di risposta specifici a qualsiasi utente abilitato per VoIP aziendale.
+In Lync Server 2013, sono disponibili due ruoli di gestione per la gestione dei Response Group, ovvero il responsabile del gruppo di risposta e l'amministratore di Response Group. Gli amministratori di Response Group possono gestire qualsiasi aspetto di qualsiasi Response Group. I responsabili dei Response Group possono gestire solo alcuni aspetti e solo per i Response Group di cui sono proprietari. Il nuovo ruolo di gestione può contribuire a ridurre i costi amministrativi, in quanto è possibile delegare responsabilità limitate per gruppi di risposta specifici a qualsiasi utente abilitato per VoIP aziendale.
 
-Per supportare il nuovo ruolo di Manager, l'applicazione di Response Group di Lync Server 2013 introduce un **tipo di flusso di lavoro** gestito o non gestito. La tabella seguente descrive i gruppi di risposta gestiti e non Managed.
+Per ospitare il nuovo ruolo di gestione, Lync Server 2013 Response Group Application introduce un **tipo di flusso di lavoro** gestito o non gestito. Nella tabella riportata di seguito vengono descritti i Response Group gestiti e non gestiti.
 
-### <a name="managed-and-unmanaged-response-groups"></a>Gruppi di risposte gestite e non gestiti
+### <a name="managed-and-unmanaged-response-groups"></a>Response Group gestiti e non gestiti
 
 <table>
 <colgroup>
@@ -72,35 +72,35 @@ Per supportare il nuovo ruolo di Manager, l'applicazione di Response Group di Ly
 </colgroup>
 <thead>
 <tr class="header">
-<th>Tipo di gruppo di risposta</th>
+<th>Tipo di Response Group</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Non gestite</p></td>
+<td><p>Gestito</p></td>
 <td><ul>
-<li><p>I gruppi di risposte non gestiti non hanno gestori assegnati. Solo l'amministratore del gruppo di risposte può configurare questi gruppi di risposta.</p></li>
-<li><p>Più gruppi di risposte non gestiti possono condividere una coda o un gruppo di agenti.</p></li>
-<li><p>Quando si esegue la migrazione dei gruppi di risposte da una versione precedente a Lync Server 2013, il tipo viene impostato su non gestito.</p></li>
+<li><p>Ai Response Group non gestiti non è assegnato alcun Gestore. Solo l'amministratore del gruppo di risposta può configurare questi Response Group.</p></li>
+<li><p>Response group multipli non gestiti possono condividere una coda o gruppo di agenti.</p></li>
+<li><p>Quando si esegue la migrazione dei Response Group da una versione precedente a Lync Server 2013, il tipo è impostato su non gestito.</p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>Gestito</p></td>
+<td><p>Gestiti</p></td>
 <td><ul>
-<li><p>Gli amministratori del gruppo di risposte possono configurare qualsiasi aspetto dei gruppi di risposta gestiti.</p></li>
-<li><p>I responsabili del gruppo di risposte non possono visualizzare o modificare i gruppi di risposta che non sono assegnati esplicitamente.</p></li>
-<li><p>I responsabili del gruppo di risposte possono configurare solo alcune impostazioni per i gruppi di risposta assegnati esplicitamente.</p></li>
-<li><p>I gruppi di risposta gestiti non possono condividere le code o i gruppi di agenti con qualsiasi altro gruppo di risposte, gestito o non gestito.</p></li>
+<li><p>Gli amministratori di Response Group possono configurare qualsiasi aspetto dei gruppi di risposta gestiti.</p></li>
+<li><p>I responsabili dei Response Group non sono in grado di visualizzare o modificare gruppi di risposta non assegnati in modo esplicito.</p></li>
+<li><p>I responsabili dei Response Group possono configurare solo alcune impostazioni per i Response Group a loro assegnati in modo esplicito.</p></li>
+<li><p>I Response group gestiti non possono condividere code o gruppi di agenti con altri Response group gestiti o non gestiti.</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
 
-La tabella seguente descrive le azioni che i responsabili dei gruppi di risposta possono e non possono eseguire per i gruppi di risposte assegnati.
+Nella tabella seguente vengono descritte le azioni che possono essere eseguite dai responsabili dei Response Group e che non è possibile eseguire per i Response Group a loro assegnati.
 
-### <a name="response-group-manager-capabilities"></a>Funzionalità di gestione gruppi di risposte
+### <a name="response-group-manager-capabilities"></a>Capacità del manager del Response group
 
 <table>
 <colgroup>
@@ -110,9 +110,9 @@ La tabella seguente descrive le azioni che i responsabili dei gruppi di risposta
 </colgroup>
 <thead>
 <tr class="header">
-<th>Può configurare:</th>
-<th>Può creare, eliminare o configurare:</th>
-<th>Non</th>
+<th>Possono configurare:</th>
+<th>Possono creare, eliminare o configurare:</th>
+<th>Possibile</th>
 </tr>
 </thead>
 <tbody>
@@ -120,29 +120,29 @@ La tabella seguente descrive le azioni che i responsabili dei gruppi di risposta
 <td><ul>
 <li><p>Agenti</p></li>
 <li><p>Messaggio di benvenuto</p></li>
-<li><p>Nome del gruppo di risposte</p></li>
+<li><p>Nome del gruppo di risposta</p></li>
 <li><p>Descrizione</p></li>
-<li><p>Numero di visualizzazione</p></li>
-<li><p>Orari di ufficio</p></li>
-<li><p>Musica in attesa</p></li>
+<li><p>Numero visualizzato</p></li>
+<li><p>Ore lavorative</p></li>
+<li><p>Musica di attesa</p></li>
 <li><p>Stato (attivo/inattivo)</p></li>
-<li><p>Cercare flussi di lavoro di gruppo o flussi di lavoro IVR (Interactive Voice Response)</p></li>
+<li><p>Workflow del gruppo di risposta o Interactive voice response (IVR)</p></li>
 </ul></td>
 <td><ul>
-<li><p>Gruppi di agenti</p></li>
+<li><p>Gestione di gruppi di agenti</p></li>
 <li><p>Code</p></li>
-<li><p>Set di festività</p></li>
+<li><p>Insiemi di festività</p></li>
 </ul></td>
 <td><ul>
-<li><p>Creare o eliminare qualsiasi tipo di flusso di lavoro</p></li>
-<li><p>Modificare le impostazioni del gruppo di risposte di base, ad esempio: <strong>URI SIP</strong>, <strong>numero di telefono</strong>o <strong>tipo di flusso di lavoro</strong>.</p></li>
+<li><p>Creare o eliminare qualsiasi tipo di workflow</p></li>
+<li><p>Modificare le impostazioni fondamentali dei Response Group, quali: <strong>URI SIP</strong>, <strong>Numero di telefono</strong> o <strong>Tipo di workflow</strong>.</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
 
-I responsabili del gruppo di risposte possono usare gli strumenti seguenti per gestire i gruppi di risposta designati.
+I responsabili dei Response Group possono utilizzare gli strumenti seguenti per gestire i Response Group designati.
 
   - Pannello di controllo di Lync Server
     
@@ -150,7 +150,7 @@ I responsabili del gruppo di risposte possono usare gli strumenti seguenti per g
     
 
     > [!NOTE]  
-    > I responsabili dei gruppi di risposte possono gestire solo le impostazioni di Response Group con questo strumento. Le altre impostazioni di Lync Server non sono disponibili per i responsabili.
+    > I responsabili dei Response Group possono gestire solo le impostazioni di Response Group con questo strumento. Altre impostazioni di Lync Server non sono disponibili per i responsabili.
 
     
     </div>
@@ -159,9 +159,9 @@ I responsabili del gruppo di risposte possono usare gli strumenti seguenti per g
 
   - Lync Server Management Shell
 
-Il gruppo di risposte si adatta bene agli ambienti dipartimentali o gruppi di lavoro (per informazioni dettagliate, vedere [pianificazione della capacità per il gruppo di risposte in Lync Server 2013](lync-server-2013-capacity-planning-for-response-group.md)) e può essere distribuito in installazioni di telefonia completamente nuove. Supporta le chiamate in arrivo dalla distribuzione VoIP aziendale e dalla rete di vettori locali. Gli agenti possono usare Lync 2013, Lync 2010, Lync 2010 Attendant o Lync Phone Edition per eseguire le chiamate instradate.
+La scala dei Response Group è adatta agli ambienti dipartimentali o gruppi di lavoro (per informazioni dettagliate, vedere [Capacity Planning for Response Group in Lync Server 2013](lync-server-2013-capacity-planning-for-response-group.md)) e può essere distribuita in installazioni di telefonia completamente nuove. Supporta le chiamate in arrivo dalla distribuzione di VoIP aziendale e dalla rete di vettori locali. Gli agenti possono utilizzare Lync 2013, Lync 2010, Lync 2010 Attendant o Lync Phone Edition per eseguire le chiamate instradate a tali operatori.
 
-L'applicazione Response Group è un componente di Enterprise Voice. Quando si distribuisce VoIP aziendale, l'applicazione Response Group viene installata e attivata automaticamente.
+L'applicazione Response Group è un componente di VoIP aziendale. Quando si distribuisce VoIP aziendale, l'applicazione Response Group viene installata e attivata automaticamente.
 
 </div>
 

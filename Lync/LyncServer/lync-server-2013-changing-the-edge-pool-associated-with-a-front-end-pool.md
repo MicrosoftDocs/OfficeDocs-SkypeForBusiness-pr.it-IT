@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Modifica del pool di server perimetrali associato a un pool Front End'
+title: 'Lync Server 2013: modifica del pool di Edge associato a un pool Front End'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733613
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 736ed552a51182102310f4e10eb28472b251eb22
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b7ad6ee6e40edb76d4ef5d7d53524f89e44a2aee
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729896"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043518"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="changing-the-edge-pool-associated-with-a-front-end-pool-in-lync-server-2013"></a>Modifica del pool di server perimetrali associato a un pool Front End in Lync Server 2013
+# <a name="changing-the-edge-pool-associated-with-a-front-end-pool-in-lync-server-2013"></a>Modifica del pool di server perimetrali associato a un pool Front end in Lync 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41729896"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-Se un pool di bordi scende ma il pool Front-end nello stesso sito è ancora in corso, è necessario impostare il pool Front-end in modo da usare un pool di Edge in un sito diverso fino a quando non viene ripristinato il pool di Edge non riuscito.
+Se si verifica un'interruzione di un pool di server perimetrali di un sito, ma il pool Front End dello stesso sito è ancora in esecuzione, sarà necessario impostare il pool Front End in modo che venga utilizzato un pool di server perimetrali di un altro sito fino a quando il pool di server perimetrali non viene ripristinato.
 
 <div>
 
-## <a name="changing-the-edge-pool-associated-with-a-front-end-pool"></a>Modifica del pool di bordi associato a un pool Front-End
+## <a name="changing-the-edge-pool-associated-with-a-front-end-pool"></a>Modifica del pool di server perimetrali associato a un pool Front End
 
-1.  In Generatore di topologie passare al nome del pool Front-end che è necessario modificare.
+1.  Nel Generatore di topologie individuare il nome del pool Front End che si vuole modificare.
 
-2.  Fare clic con il pulsante destro del mouse sul pool e quindi scegliere **modifica proprietà**.
+2.  Fare clic con il pulsante destro del mouse sul pool e scegliere **Modifica proprietà**.
 
-3.  Nella sezione **associazioni** , in **associa Edge pool (per i componenti multimediali)**, usare la casella di controllo a discesa per selezionare il pool di bordi a cui si vuole associare questo pool Front-end.
+3.  Nella sezione **Associazioni**, in **Associa pool di server perimetrali (per componenti multimediali)**, usare la casella di riepilogo a discesa per selezionare il pool di server perimetrali a cui si vuole associare il pool Front End.
 
 4.  Fare clic su **OK**.
 
@@ -58,7 +58,7 @@ Se un pool di bordi scende ma il pool Front-end nello stesso sito è ancora in c
 ## <a name="see-also"></a>Vedere anche
 
 
-[Ripristino di emergenza dei server perimetrali in Lync Server 2013](lync-server-2013-edge-server-disaster-recovery.md)  
+[Ripristino di emergenza del server perimetrale in Lync Server 2013](lync-server-2013-edge-server-disaster-recovery.md)  
   
 
 </div>

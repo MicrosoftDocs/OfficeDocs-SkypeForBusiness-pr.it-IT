@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pianificazione dei servizi di conferenza'
+title: 'Lync Server 2013: pianificazione per le conferenze'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184937
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 53b7813a197dd7cc3116540c605d7efbdb22a04b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e1197dd61ea6ed871b851061d86c8653de32ddc5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725436"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42036988"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="planning-for-conferencing-in-lync-server-2013"></a>Pianificazione dei servizi di conferenza in Lync Server 2013
+# <a name="planning-for-conferencing-in-lync-server-2013"></a>Pianificazione per le conferenze in Lync Server 2013
 
 </div>
 
@@ -35,42 +35,42 @@ ms.locfileid: "41725436"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-01-29_
+_**Ultimo argomento modificato:** 2013-01-29_
 
 Lync Server 2013 offre una vasta gamma di funzionalità di conferenza:
 
-  - Web Conferencing, che include la collaborazione tra documenti, condivisione applicazioni e condivisione desktop. Lync Server 2013 usa Office Web Apps e il server Office Web Apps per gestire la condivisione e il rendering delle presentazioni di PowerPoint. Per informazioni dettagliate sull'installazione e la configurazione del server Office Web Apps, vedere [configurazione dell'integrazione con Office Web Apps Server e Lync server 2013](lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md).
+  - Web Conferencing, che include collaborazione su documenti, condivisione di applicazioni e condivisione del desktop. Lync Server 2013 utilizza Office Web Apps e il server Office Web Apps per gestire la condivisione e il rendering delle presentazioni di PowerPoint. Per informazioni dettagliate sull'installazione e sulla configurazione del server Office Web Apps, vedere [configurazione dell'integrazione con Office Web Apps Server e Lync server 2013](lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md).
 
-  - Servizi di conferenza audio/video (A/V), che consente agli utenti di avere conferenze audio o video in tempo reale senza la necessità di un servizio esterno, ad esempio Microsoft Live Meeting Service o un bridge audio di terze parti.
+  - A/V Conferencing, che consente agli utenti di partecipare a conferenze audio o video in tempo reale senza dover utilizzare servizi esterni, come il servizio Microsoft Live Meeting o un ponte audio di terze parti
 
-  - Servizi di conferenza telefonica con accesso esterno, che consente agli utenti di partecipare alla parte audio di una conferenza di Lync Server 2013 utilizzando un telefono PSTN (Public Switched Telephone Network) senza richiedere un provider di audioconferenza di terze parti.
+  - Conferenza telefonica con accesso esterno, che consente agli utenti di partecipare alla parte audio di una conferenza di Lync Server 2013 utilizzando un telefono PSTN senza dover utilizzare un provider di servizi di audioconferenza di terze parti.
 
-  - Servizi di conferenza di messaggistica istantanea, in cui più di due parti comunicano in una singola sessione di messaggistica istantanea. Per informazioni dettagliate sui servizi di conferenza di messaggistica istantanea, vedere [pianificazione dei server front-end, della messaggistica immediata e della presenza in Lync server 2013](lync-server-2013-planning-for-front-end-servers-instant-messaging-and-presence.md).
+  - IM Conferencing, per conferenza in cui più di due utenti comunicano in una singola sessione di messaggistica istantanea. Per informazioni dettagliate sulle conferenze di messaggistica istantanea, vedere [pianificazione di front end server, messaggistica istantanea e presenza in Lync Server 2013](lync-server-2013-planning-for-front-end-servers-instant-messaging-and-presence.md).
 
-Lync Server 2013 supporta sia le conferenze pianificate che le conferenze estemporanee.
+Lync Server 2013 supporta sia le conferenze pianificate sia le conferenze estemporanee.
 
-Quando si distribuisce Lync Server 2013, Front End Server, è possibile scegliere se distribuire anche le funzionalità di conferenza Web, conferenze A/V e servizi di conferenza telefonica con accesso esterno. Le funzionalità di conferenza di messaggistica istantanea vengono sempre distribuite automaticamente insieme alle funzionalità di conversazione di messaggistica istantanea nei server front end di Lync Server 2013.
+Quando si distribuisce Lync Server 2013, Front End Server, è possibile scegliere se distribuire anche le funzionalità di conferenza Web, A/V Conferencing e di conferenza telefonica con accesso esterno. Le funzionalità di conferenza di messaggistica istantanea vengono sempre distribuite automaticamente insieme alle funzionalità di conversazione di messaggistica istantanea nei server front end di Lync Server 2013.
 
 <div>
 
 
 > [!NOTE]  
-> Se la distribuzione include riunioni organizzate con client di Office Communicator 2007 R2 (inclusa la console Live Meeting o il componente aggiuntivo conferenza per Microsoft Office Outlook), le riunioni avranno le seguenti limitazioni dopo la migrazione a Lync Server 2013: 
+> Se la distribuzione include riunioni organizzate utilizzando client Office Communicator 2007 R2 (inclusa la console di Live Meeting o il componente aggiuntivo per conferenze per Microsoft Office Outlook), le riunioni avranno le limitazioni seguenti dopo la migrazione a Lync Server 2013: 
 > <UL>
 > <LI>
-> <P>Gli utenti della riunione non saranno in grado di usare le caratteristiche di collaborazione dei dati, tra cui la collaborazione tra documenti, la condivisione delle applicazioni e la condivisione del desktop.</P>
+> <P>Gli utenti della riunione non saranno in grado di utilizzare le funzionalità di collaborazione dati, tra cui la collaborazione dei documenti, la condivisione di applicazioni e la condivisione del desktop.</P>
 > <LI>
-> <P>I problemi di stabilità possono verificarsi perché i client di Office Communicator 2007 R2 non sono supportati con Lync Server 2013.</P></LI></UL>Per evitare questi problemi, ripianificare le riunioni organizzate con i client Office Communicator 2007 R2 con Outlook 2010 o Outlook 2013 usando il componente aggiuntivo riunione online per Lync 2010 o il componente aggiuntivo riunione online per Lync 2013.
+> <P>Possono verificarsi problemi di stabilità poiché i client di Office Communicator 2007 R2 non sono supportati con Lync Server 2013.</P></LI></UL>Per evitare questi problemi, ripianificare le riunioni organizzate utilizzando client di Office Communicator 2007 R2 con Outlook 2010 o Outlook 2013 utilizzando il componente aggiuntivo per riunioni online per Lync 2010 o il componente aggiuntivo per riunioni online per Lync 2013.
 
 
 
 </div>
 
-Le sezioni seguenti descrivono le informazioni necessarie per distribuire i vari tipi di funzionalità di conferenza, inclusi il processo di pianificazione, i componenti, i requisiti hardware e software e il processo di distribuzione.
+Nelle sezioni che seguono vengono illustrati gli elementi necessari alla distribuzione dei vari tipi di funzionalità per conferenze, compresi il processo di pianificazione, i componenti, i requisiti hardware e software e il processo di distribuzione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Panoramica delle conferenze in Lync Server 2013](lync-server-2013-overview-of-conferencing.md)
 
@@ -82,7 +82,7 @@ Le sezioni seguenti descrivono le informazioni necessarie per distribuire i vari
 
   - [Elenco di controllo di distribuzione per le conferenze in Lync Server 2013](lync-server-2013-deployment-checklist-for-conferencing.md)
 
-  - [Supporto per le riunioni di grandi dimensioni in Lync Server 2013](lync-server-2013-support-for-large-meetings.md)
+  - [Supporto per riunioni di grandi dimensioni in Lync Server 2013](lync-server-2013-support-for-large-meetings.md)
 
 </div>
 

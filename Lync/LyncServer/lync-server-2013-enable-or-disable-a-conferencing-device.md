@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: abilitare o disabilitare un dispositivo per i servizi di conferenza'
+title: 'Lync Server 2013: attivazione o disattivazione di un dispositivo per conferenze'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51803981
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3a4a0f582f57d4e096001d508d3983facdded74c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3eb79f77bd6e99d36b1a6c9c9feb67f697e40f1d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736226"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042583"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="enable-or-disable-a-conferencing-device-in-lync-server-2013"></a>Abilitare o disabilitare un dispositivo per conferenze in Lync Server 2013
+# <a name="enable-or-disable-a-conferencing-device-in-lync-server-2013"></a>Abilitazione o disabilitazione di un dispositivo per conferenze in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41736226"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-20_
+_**Ultimo argomento modificato:** 2013-02-20_
 
-Abilita e Disabilita un dispositivo per conferenze usando il cmdlet **Enable-CsMeetingRoom** e il cmdlet **Disable-CsMeetingRoom** . Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.
+Abilitare e disabilitare un dispositivo per conferenze utilizzando il cmdlet **Enable-CsMeetingRoom** e il cmdlet **Disable-CsMeetingRoom** . Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.
 
 <div>
 
 
 > [!NOTE]  
-> Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft <A href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</A>Lync Server 2010 con Remote PowerShell" at.
+> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync <A href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</A>Server 2010 using Remote PowerShell" at.
 
 
 
@@ -54,9 +54,9 @@ Abilita e Disabilita un dispositivo per conferenze usando il cmdlet **Enable-CsM
 
 <div>
 
-## <a name="enabling-a-conferencing-device"></a>Abilitazione di un dispositivo di conferenza
+## <a name="enabling-a-conferencing-device"></a>Abilitazione di un dispositivo per conferenze
 
-  - Per abilitare un dispositivo per i servizi di conferenza, usare il cmdlet **Enable-CsMeetingRoom** . Quando si Abilita un dispositivo per i servizi di conferenza, è necessario includere l'identità di un dispositivo di conferenza, b) il pool di registrar in cui verrà assegnato l'account della sala e c) l'indirizzo SIP da assegnare all'account.
+  - Per abilitare un dispositivo per i servizi di conferenza, utilizzare il cmdlet **Enable-CsMeetingRoom** . Quando si Abilita un dispositivo per i servizi di conferenza, è necessario includere un'identità del dispositivo per i servizi di conferenza, b) il pool di registrazione in cui verrà ospitato l'account della sala e c) l'indirizzo SIP da assegnare a quell'account.
     
         Enable-CsMeetingRoom -Identity "Redmond Conferencing device" -RegistrarPool "atl-cs-001.litwareinc.com" -SipAddress "sip:RedmondMeetingRoom@litwareinc.com"
 
@@ -64,15 +64,15 @@ Abilita e Disabilita un dispositivo per conferenze usando il cmdlet **Enable-CsM
 
 <div>
 
-## <a name="disabling-a-conferencing-device"></a>Disabilitazione di un dispositivo per i servizi di conferenza
+## <a name="disabling-a-conferencing-device"></a>Disabilitazione di un dispositivo per conferenze
 
-  - Per disabilitare un dispositivo per i servizi di conferenza, usare il cmdlet **Disable-CsMeetingRoom** . Assicurarsi di specificare l'identità del dispositivo di conferenza da disabilitare:
+  - Per disabilitare un dispositivo per conferenze, utilizzare il cmdlet **Disable-CsMeetingRoom** . Assicurarsi di specificare l'identità del dispositivo per i servizi di conferenza da disabilitare:
     
         Disable-CsMeetingRoom -Identity "sip:RedmondMeetingRoom@litwareinc.com"
 
 </div>
 
-Per informazioni dettagliate, vedere gli argomenti della Guida relativi al cmdlet [Enable-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Enable-CsMeetingRoom) e al cmdlet [Disable-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Disable-CsMeetingRoom) .
+Per informazioni dettagliate, vedere gli argomenti della Guida per il cmdlet [Enable-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Enable-CsMeetingRoom) e il cmdlet [Disable-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Disable-CsMeetingRoom) .
 
 </div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 48184924
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 84c70cae521deebecf30e7c8ec6505b18e9842fa
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9d5cc3106ffaabd6aee985c225f6cc13fdd5fbb6
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755500"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050938"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,37 +35,37 @@ ms.locfileid: "41755500"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-Il bypass multimediale è utile quando si vuole ridurre al minimo il numero di server di mediazione distribuiti. In genere, un pool di Mediation Server verrà distribuito in un sito centrale e controllerà i gateway nei siti di succursale. L'abilitazione del bypass multimediale consente alle chiamate PSTN (Public Switched Telephone Network) dei client in siti di succursale di scorrere direttamente attraverso i gateway in questi siti. Le route delle chiamate in uscita di Lync Server 2013 e i criteri VoIP aziendale devono essere configurati correttamente in modo che le chiamate PSTN da client in un sito di succursale vengano indirizzate al gateway appropriato.
+La funzionalità bypass multimediale è utile se si desidera ridurre il numero dei Mediation Server distribuiti. Un pool Mediation Server viene in genere distribuito in un sito centrale e controlla i gateway nei siti di succursale. Abilitando il bypass multimediale, gli elementi multimediali per chiamate PSTN da client dei siti di succursale possono attraversare direttamente i gateway di tali siti. Lync Server 2013 le route delle chiamate in uscita e i criteri VoIP aziendale devono essere adeguatamente configurati in modo che le chiamate PSTN dai client in un sito di succursale vengano instradate al gateway appropriato.
 
-Le reti Wi-Fi in genere avvertono più perdita di pacchetti rispetto alle reti cablate. Il ripristino da questa perdita di pacchetti non è in genere un elemento che può essere ospitato da gateway. Per questo motivo, ti consigliamo di valutare la qualità di una rete Wi-Fi prima di determinare se l'esclusione deve essere abilitata per una subnet wireless. C'è un compromesso nella riduzione della latenza rispetto al recupero dalla perdita di pacchetti da considerare anche. RTAudio, un codec disponibile per le chiamate che non ignorano il Mediation Server, è più adatto per la gestione della perdita di pacchetti.
+Nelle reti Wi-Fi in genere si verificano più perdite di pacchetti rispetto alle reti cablate. Il recupero da queste perdite di pacchetti non può solitamente essere supportato dai gateway. Pertanto, è consigliabile valutare la qualità di una rete Wi-Fi prima di stabilire se abilitare il bypass per una subnet wireless. È inoltre necessario valutare il compromesso tra la riduzione della latenza e la perdita di pacchetti. RTAudio, un codec non disponibile per le chiamate che non aggirano il Mediation Server, è più indicato per la gestione della perdita di pacchetti.
 
-Una volta posizionata la struttura VoIP aziendale, la pianificazione per il bypass multimediale è semplice.
+Dopo l'implementazione della struttura di VoIP aziendale, la pianificazione del bypass multimediale è semplice.
 
-  - Se si ha una topologia centralizzata senza collegamenti WAN a siti di succursale, è possibile abilitare il bypass multimediale globale, perché il controllo ottimizzato non è necessario.
+  - Se si dispone di una topologia centralizzata senza collegamenti WAN ai siti di succursale, è possibile abilitare un bypass multimediale globale, perché non è necessario un controllo capillare.
 
-  - Se si dispone di una topologia distribuita costituita da una o più aree di rete e dai siti di filiale affiliati, determinare le operazioni seguenti:
+  - Se si dispone di una topologia distribuita costituita da una o più aree di rete e relativi siti di succursale affiliati, verificare quanto segue:
     
       - Se i peer di Mediation Server sono in grado di supportare le funzionalità necessarie per il bypass multimediale.
     
-      - I siti di ogni area di rete sono ben connessi.
+      - Quali siti in ogni area di rete sono ben connessi.
     
-      - Quale combinazione di bypass multimediale e controllo di ammissione di chiamata è appropriata per la rete.
+      - Quale combinazione di bypass multimediale e controllo di ammissione di chiamata è appropriato per la rete.
 
-Quando si Abilita il bypass multimediale, viene generato automaticamente un ID di bypass univoco per un'area di rete e per tutti i siti di rete senza vincoli di larghezza di banda all'interno dell'area geografica. I siti con vincoli di larghezza di banda nell'area geografica e i siti connessi all'area geografica con collegamenti WAN con vincoli di larghezza di banda sono assegnati ad ognuno un ID di bypass univoco.
+Quando si abilita il bypass multimediale, viene generato automaticamente un ID bypass univoco per un'area della rete e per tutti i siti della rete senza vincoli di larghezza di banda nell'ambito di tale area. Ai siti con vincoli di larghezza di banda nell'ambito dell'area e ai siti connessi a tale area tramite collegamenti WAN con vincoli di larghezza di banda vengono assegnati ID di bypass univoci specifici.
 
-Quando un utente effettua una chiamata alla rete PSTN, il Mediation Server confronta l'ID di bypass della subnet client con l'ID di bypass della subnet del gateway. Se i due ID di bypass corrispondono, per la chiamata viene usato il bypass multimediale. Se gli ID di bypass non corrispondono, il supporto per la chiamata deve fluire attraverso il Mediation Server.
+Quando un utente effettua una chiamata alla rete PSTN, Mediation Server confronta l'ID di bypass della subnet client con l'ID di bypass della subnet del gateway. Se i due ID combaciano, per la chiamata viene utilizzato il bypass multimediale. Se gli ID di bypass non corrispondono, il supporto per la chiamata deve fluire tramite Mediation Server.
 
-Quando un utente riceve una chiamata dalla rete PSTN, il client dell'utente confronta il proprio ID di esclusione con quello del gateway PSTN. Se i due ID di bypass corrispondono, il flusso multimediale passa direttamente dal gateway al client, bypassando il Mediation Server.
+Quando un utente riceve una chiamata dalla rete PSTN, il client dell'utente confronta il proprio ID bypass a quello del gateway PSTN. Se i due ID di bypass corrispondono, i flussi multimediali passano direttamente dal gateway al client, ignorando il Mediation Server.
 
-Solo i client e i dispositivi Lync 2010 o superiore supportano le interazioni media bypass con un Mediation Server.
+Solo i client e i dispositivi Lync 2010 o superiori supportano le interazioni di bypass multimediale con un Mediation Server.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Oltre a consentire il bypass multimediale a livello globale, è necessario abilitare individualmente il bypass multimediale in ogni trunk PSTN. Se il bypass è abilitato globalmente, ma non è abilitato per un trunk PSTN specifico, il bypass multimediale non verrà richiamato per le chiamate che coinvolgono il trunk PSTN. Inoltre, quando il bypass multimediale è impostato per l' <STRONG>uso di informazioni sul sito e sull'area geografica</STRONG>, è necessario associare tutte le subnet instradabili ai siti in cui si trovano. Se sono presenti subnet instradabili all'interno di un sito per cui il bypass non è desiderato, queste subnet devono essere raggruppate all'interno di un nuovo sito prima di abilitare il bypass multimediale. In questo modo si assicurerà che alle subnet non instradabili sia assegnato un ID di bypass diverso.
+> Oltre che a livello globale, il bypass multimediale deve essere abilitato singolarmente in ogni trunk PSTN. Se il bypass viene abilitato globalmente ma non per un determinato trunk PSTN, non verrà richiamato per le chiamate che coinvolgono questo trunk PSTN. Inoltre, se il bypass multimediale è impostato per l'utilizzo delle informazioni del sito e dell'area geografica,<STRONG></STRONG> è necessario associare tutte le subnet instradabili ai siti in cui si trovano. Se in un sito sono presenti subnet instradabili per cui non si desidera il bypass, sarà necessario raggruppare queste subnet in un nuovo sito prima di abilitare il bypass multimediale. In questo modo, le subnet non instradabili verranno assegnate a un ID bypass diverso.
 
 
 

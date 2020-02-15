@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: sicurezza dei dati per l'abbinamento dei pool Front End"
+title: "Lync Server 2013: protezione dei dati per l'abbinamento del pool Front End"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733865
 ms.date: 10/07/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: efe51da622107183d3dbf2897a9e2a708acd78dd
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5157f78606a4577cf638857a4bc6719f2e1a42d9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739756"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038068"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="front-end-pool-pairing-data-security-in-lync-server-2013"></a>Sicurezza dei dati per l'abbinamento dei pool Front End in Lync Server 2013
+# <a name="front-end-pool-pairing-data-security-in-lync-server-2013"></a>Sicurezza dei dati per l'abbinamento del pool Front end in Lync Server 2013
 
 </div>
 
@@ -35,39 +35,39 @@ ms.locfileid: "41739756"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-10-07_
+_**Ultimo argomento modificato:** 2014-10-07_
 
-Il servizio di backup è un meccanismo di replica dei dati introdotto in Lync Server 2013 che trasferisce i dati degli utenti e il contenuto delle conferenze tra due pool di front end associati in due centri dati per scopi di ripristino di emergenza. I dati degli utenti contengono URI SIP degli utenti, nonché elenchi di contatti e impostazioni. Il contenuto della conferenza include gli upload di Microsoft PowerPoint 2010 e le lavagne usate nelle conferenze. Dal pool di origine, i dati utente e il contenuto della conferenza vengono esportati dall'archivio locale, compressi, trasferiti nel pool di destinazione, dove vengono decompressi e importati nello spazio di archiviazione locale. Il servizio di backup presuppone che il collegamento delle comunicazioni tra i due centri dati si trovi all'interno della rete aziendale protetta da Internet. Non crittografa i dati trasferiti tra i due centri dati, né è incapsulato nativamente in un protocollo sicuro, ad esempio HTTPS. Di conseguenza, è possibile l'attacco man-in-the-Middle da parte di personale interno della rete aziendale.
+Il servizio di backup è un meccanismo di replica dei dati introdotto in Lync Server 2013 che trasferisce i dati degli utenti e il contenuto delle conferenze tra due pool Front End abbinati in modo continuo tra due centri dati per scopi di ripristino di emergenza. I dati utente contengono gli URI SIP nonché gli elenchi contatti e le impostazioni. Il contenuto delle conferenze include i caricamenti di Microsoft PowerPoint 2010, nonché le lavagne utilizzate nelle conferenze. Dal pool di origine, i dati utente e i contenuti delle conferenze vengono esportati dall'archiviazione locale, compressi e trasferiti nel pool di destinazione, dove vengono decompressi e importati nell'archiviazione locale. Il Servizio di backup presume che i collegamenti di comunicazione tra i due data center si trovino all'interno di una rete aziendale protetta da Internet. I dati trasferiti tra i due data center non vengono crittografati, né è previsto l'incapsulamento nativo all'interno di un protocollo di sicurezza, quale HTTPS. Pertanto resta possibile un attacco man-in-the-middle compiuto da personale interno alla rete aziendale.
 
 <div>
 
 ## <a name="evaluating-security-risks"></a>Valutazione dei rischi per la sicurezza
 
-Qualsiasi organizzazione che distribuisce Lync Server 2013 in più centri dati e usa la funzionalità di ripristino di emergenza deve garantire che il traffico tra i dati sia protetto dalla propria Intranet aziendale. Le aziende che preoccupano la protezione dagli attacchi interni devono garantire i collegamenti di comunicazione tra i centri dati.
+Qualsiasi organizzazione che distribuisce Lync Server 2013 su più data center e utilizza la funzionalità di ripristino di emergenza deve garantire che il traffico tra i Data Center sia protetto dalla propria Intranet aziendale. Le aziende che intendono cautelarsi dal rischio di un attacco interno, devono proteggere i collegamenti di comunicazione tra i data center.
 
-Il presupposto che i Data Center di un'azienda siano protetti dietro l'Intranet aziendale è standard. Ci sono molti altri tipi di dati sensibili aziendali trasferiti tra questi Data Center. L'infrastruttura IT dell'organizzazione ha un rischio grave se questi collegamenti al centro dati incrociati non sono protetti.
+In genere, si suppone che i data center di un'azienda siano protetti nella Intranet aziendale. Molti altri tipi di dati aziendali riservati vengono trasferiti tra questi data center. L'infrastruttura IT dell'azienda è esposta a seri pericoli se i collegamenti tra data center non sono protetti.
 
-Mentre il rischio di attacchi man-in-the-Middle all'interno della rete aziendale esiste, è relativamente contenuto rispetto a esporre il traffico a Internet. In particolare, i dati utente esposti dal servizio di backup, ad esempio URI SIP, sono in genere disponibili per tutti i dipendenti della società tramite altri mezzi, ad esempio la Rubrica globale di Exchange o un altro software di directory. Lo stato attivo deve quindi essere la protezione della WAN tra i due centri dati quando viene usato il servizio di backup per copiare i dati tra i due pool associati.
+Sebbene in un'azienda esista il pericolo di attacchi man-in-the-middle, è relativamente contenuto se paragonato al rischio di esporre il traffico in Internet. In particolare, i dati utente esposti dal Servizio di backup (ad esempio gli URI SIP) sono generalmente disponibili a tutti gli utenti dell'azienda con altri mezzi, quali la Rubrica globale di Exchange o altri software di directory. Quando viene utilizzato il Servizio backup per copiare dati tra due pool abbinati, è pertanto necessario concentrarsi sulla protezione della WAN tra i due data center.
 
 </div>
 
 <div>
 
-## <a name="mitigating-security-risks"></a>Attenuazione dei rischi per la sicurezza
+## <a name="mitigating-security-risks"></a>Contenere i rischi per la sicurezza
 
-Esistono diversi modi per migliorare la protezione della sicurezza per il traffico dei servizi di backup, che va dalla restrizione dell'accesso ai Data Center per garantire il trasporto WAN tra i due centri dati. Nella maggior parte dei casi, le aziende che distribuiscono Lync Server 2013 potrebbero già disporre dell'infrastruttura di sicurezza necessaria. Per le aziende che cercano indicazioni, Microsoft offre una soluzione come esempio di creazione di un'infrastruttura IT sicura. Ciò non implica tuttavia che sia l'unica soluzione, né implichi che sia la soluzione preferita per Lync Server. È consigliabile che i clienti aziendali scelgano la soluzione più adatta alle proprie esigenze specifiche, in base all'infrastruttura e ai requisiti di sicurezza IT. L'esempio di soluzione Microsoft usa IPSec e criteri di gruppo per l'isolamento del server e del dominio. Per informazioni dettagliate, [http://go.microsoft.com/fwlink/p/?LinkId=268544](http://go.microsoft.com/fwlink/p/?linkid=268544)vedere. Per domande e commenti, contattare secwish@microsoft.com.
+Esistono diversi modi per migliorare la protezione della sicurezza per il traffico dei servizi di backup, che varia da limitare l'accesso ai Data Center per garantire il trasporto WAN tra i due data center. Nella maggior parte dei casi, le aziende che distribuiscono Lync Server 2013 potrebbe già disporre dell'infrastruttura di sicurezza necessaria. Per le aziende alla ricerca di linee guida, Microsoft fornisce una soluzione come esempio di come creare un'infrastruttura IT sicura. Tuttavia, ciò non implica che sia l'unica soluzione, né implica che sia la soluzione preferita per Lync Server. Si consiglia ai clienti aziendali di scegliere la soluzione adatta alle proprie esigenze specifiche, in base all'infrastruttura e ai requisiti di sicurezza IT. Nell'esempio di soluzione Microsoft vengono impiegati IPSec e criteri di gruppo per l'isolamento del server e del dominio. Per informazioni dettagliate, [http://go.microsoft.com/fwlink/p/?LinkId=268544](http://go.microsoft.com/fwlink/p/?linkid=268544)vedere. Per domande e commenti, contattare secwish@microsoft.com.
 
-Un'altra possibile soluzione consiste nell'usare IPSec solo per proteggere i dati inviati dal servizio di backup stesso. Se si sceglie questo metodo, è necessario configurare le regole IPSec per il protocollo SMB per i server seguenti, dove pool A e pool B sono due pool Front-End associati.
+Un'altra possibile soluzione consiste nell'utilizzare IPSec solo per garantire la protezione dei dati inviati dal servizio di backup stesso. Se si sceglie questo metodo, è necessario configurare le regole IPSec per il protocollo SMB per i server seguenti, in cui il pool A e il pool B sono due pool Front End abbinati.
 
-  - Servizio SMB (TCP/445) da ogni server front-end del pool a all'archivio di file usato dal pool B.
+  - Il servizio SMB (TCP/445) di ogni front end server del pool A nell'archivio file utilizzato dal pool B.
 
-  - Il servizio SMB (TCP/445) di ogni server front-end nel pool B nell'archivio file usato dal pool A.
+  - Il servizio SMB (TCP/445) da ogni Front End Server nel pool B all'archivio file utilizzato dal pool A.
 
 <div>
 
 
 > [!WARNING]  
-> IPsec non è concepito come sostituzione per la sicurezza a livello di applicazione, ad esempio SSL/TLS. Un vantaggio dell'uso di IPsec è che può assicurare la sicurezza del traffico di rete per le applicazioni esistenti senza doverle cambiare. Le aziende che vogliono garantire semplicemente il trasporto tra i due centri dati devono consultare i rispettivi fornitori di hardware per la rete in merito alle modalità di configurazione delle connessioni WAN sicure tramite l'equipaggiamento del fornitore.
+> IPsec non è destinato a essere sostituito per la sicurezza a livello di applicazione, ad esempio SSL/TLS. Un vantaggio dell'utilizzo di IPsec è che può garantire la sicurezza del traffico di rete per le applicazioni esistenti senza dover cambiare. Le aziende che desiderano garantire solo il trasporto tra i due data center devono consultare i rispettivi fornitori di hardware di rete in merito alle modalità di configurazione delle connessioni WAN sicure tramite l'equipaggiamento del fornitore.
 
 
 

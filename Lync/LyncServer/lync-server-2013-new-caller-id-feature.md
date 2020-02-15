@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Nuova funzionalità ID chiamante'
+title: 'Lync Server 2013: nuova funzionalità ID chiamante'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49733562
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7e62a74342e7501810edda4d0f46ff36aa80d76f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f168f0779da1ba1d2b3bd6549135234f2cec563e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765797"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050108"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41765797"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-05_
+_**Ultimo argomento modificato:** 2012-10-05_
 
-Lync Server 2013 offre all'amministratore la flessibilità necessaria per modificare il formato del numero di telefono della parte chiamante. Questa caratteristica di presentazione dell'ID chiamante consente all'amministratore di modificare il numero di telefono della parte chiamante in un formato di chiamata compreso dal peer trunk, se necessario. Ad esempio, è possibile scrivere una regola di traduzione per rimuovere + 44 dall'inizio di una stringa di chiamata e sostituirla con 0144.
+Lync Server 2013 fornisce all'amministratore la possibilità di modificare il formato del numero di telefono della parte chiamante. Grazie a questa funzionalità di presentazione dell'ID chiamante un amministratore può modificare il numero di telefono del chiamante in un formato di composizione che il peer trunk è in grado di interpretare, se necessario. Ad esempio, è possibile scrivere una regola di conversione per rimuovere il prefisso del Regno Unito +44 dall'inizio di una stringa da comporre e sostituirlo con 0144.
 
-Ora, con Lync Server 2013, sia il numero di telefono del chiamante che il numero di telefono del destinatario possono essere tradotti in formati diversi, se necessario. Questa flessibilità consente a Lync Server 2013 di fungere da traduttrice di trunk tra diversi sistemi di telefonia.
+A questo punto, con Lync Server 2013, sia il numero di telefono del chiamante che il numero di telefono del destinatario della chiamata possono essere convertiti in formati diversi, in base alle esigenze. Questa flessibilità rende possibile che Lync Server 2013 funga da traduttrice trunk tra diversi sistemi di telefonia.
 
 <div>
 

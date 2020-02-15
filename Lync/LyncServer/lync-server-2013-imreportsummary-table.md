@@ -12,16 +12,16 @@ ms:contentKeyID: 48183673
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a7a6be73d31892b5a0d5a3a5b10ad136f92afbf5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 287fc0ceff26a5940d717b4efa1ef2c525acb0f1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763820"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038688"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41763820"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-08-20_
+_**Ultimo argomento modificato:** 2012-08-20_
 
-IMReportSummaryTable fornisce un report globale sulle sessioni di messaggistica istantanea svolte in un'organizzazione. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
+La tabella IMReportSummaryTable offre un rapporto complessivo sulle sessioni di messaggistica istantanea eseguite in un'organizzazione. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
 
 
 <table>
@@ -58,13 +58,13 @@ IMReportSummaryTable fornisce un report globale sulle sessioni di messaggistica 
 <tbody>
 <tr class="odd">
 <td><p><strong>StartTime</strong></p></td>
-<td><p>DateTime</p></td>
+<td><p>datetime</p></td>
 <td><p>Principale</p></td>
 <td><p>Data e ora di inizio della sessione di messaggistica istantanea.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>TimePeriod</strong></p></td>
-<td><p>carattere (1)</p></td>
+<td><p>char (1)</p></td>
 <td><p>Principale</p></td>
 <td></td>
 </tr>
@@ -78,7 +78,7 @@ IMReportSummaryTable fornisce un report globale sulle sessioni di messaggistica 
 <td><p><strong>AuthType</strong></p></td>
 <td><p>int</p></td>
 <td><p>Principale</p></td>
-<td><p>Priorità, ad esempio urgente o non urgente, della chiamata. Le informazioni prioritarie sono archiviate nella <a href="lync-server-2013-callpriorities-table.md">Tabella CallPriorities in Lync Server 2013</a>.</p></td>
+<td><p>Priorità della chiamata, ad esempio urgente o non urgente. Le informazioni sulla priorità sono archiviate nella <a href="lync-server-2013-callpriorities-table.md">Tabella CallPriorities in Lync Server 2013</a>.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SessionCount</strong></p></td>

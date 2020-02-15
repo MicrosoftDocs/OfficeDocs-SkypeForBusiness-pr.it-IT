@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: verificare i certificati server di Lync Server 2013'
+title: 'Lync Server 2013: verificare i certificati del server Lync Server 2013'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 63969620
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: af0a80df18a4fc6e27200d1ac04476fcea798b9b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ebdbfdc4ed0f88d78fc78037a3522c73bd220270
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733996"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043508"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="check-lync-server-2013-server-certificates"></a>Verificare i certificati server di Lync Server 2013
+# <a name="check-lync-server-2013-server-certificates"></a>Controllare i certificati del server Lync Server 2013
 
 </div>
 
@@ -35,7 +35,7 @@ ms.locfileid: "41733996"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-11-01_
+_**Ultimo argomento modificato:** 2014-11-01_
 
 
 <table>
@@ -49,13 +49,13 @@ _**Argomento Ultima modifica:** 2014-11-01_
 <td><p>Mensile</p></td>
 </tr>
 <tr class="even">
-<td><p>Strumento di test</p></td>
+<td><p>Strumento di testing</p></td>
 <td><p>Windows PowerShell</p></td>
 </tr>
 <tr class="odd">
 <td><p>Autorizzazioni necessarie</p></td>
-<td><p>Quando si esegue localmente tramite Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
-<p>Quando si esegue usando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga delle autorizzazioni per eseguire il cmdlet Get-CsCertificate. Per visualizzare un elenco di tutti i ruoli RBAC che possono usare questo cmdlet, eseguire il comando seguente dal prompt di Windows PowerShell:</p>
+<td><p>Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
+<p>Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet Get-CsCertificate. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</p>
 <p><code>Get-CsAdminRole | Where-Object {$_.Cmdlets -match &quot;Get-CsCertificate&quot;}</code></p></td>
 </tr>
 </tbody>
@@ -66,27 +66,27 @@ _**Argomento Ultima modifica:** 2014-11-01_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet Get-CsCertificate consente di recuperare informazioni su ognuno dei certificati di Lync Server. Questo è particolarmente importante perché i certificati hanno una data di scadenza predefinita. Ad esempio, i certificati emessi in privato scadono in genere dopo 12 mesi. Se uno dei certificati di Lync Server scade, si perderà la funzionalità associata finché il certificato non viene rinnovato o sostituito.
+Il cmdlet Get-CsCertificate consente di recuperare le informazioni su ognuno dei certificati di Lync Server. Questo è particolarmente importante perché i certificati hanno una data di scadenza incorporata. Ad esempio, i certificati rilasciati in privato scadono in genere dopo 12 mesi. Se uno dei certificati di Lync Server scade, si perderà la funzionalità di accompagnamento fino a quando il certificato non verrà rinnovato o sostituito.
 
 </div>
 
 <div>
 
-## <a name="running-the-test"></a>Eseguire il test
+## <a name="running-the-test"></a>Esecuzione del test
 
-Per restituire informazioni su ognuno dei certificati di Lync Server è sufficiente eseguire il comando seguente:
+Per restituire informazioni su ognuno dei certificati di Lync Server, eseguire il comando seguente:
 
 `Get-CsCertificate`
 
-In alternativa, è possibile filtrare le informazioni sul certificato restituito in base alla data di scadenza. Ad esempio, questo comando limita i dati restituiti ai certificati che scadono (non può essere usato dopo) il 1 giugno 2014:
+In alternativa, è possibile filtrare le informazioni sul certificato restituito in base alla data di scadenza. Ad esempio, questo comando consente di limitare i dati restituiti ai certificati che scadono (non possono essere utilizzati dopo) il 1 ° giugno 2014:
 
 `Get-CsCertificate | Where-Object {$_.NotAfter -lt "6/1/2014"}`
 
-Per altre informazioni, vedere la documentazione della Guida relativa al cmdlet Get-CsCertificate.
+Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmdlet Get-CsCertificate.
 
-Tieni presente che, anche se il cmdlet Test-CsCertificateConfiguration esiste, non è molto utile per gli amministratori. Il cmdlet viene invece usato principalmente dalla creazione guidata certificato. Anche se il cmdlet funziona, le informazioni restituite sono di valore minimo, come illustrato nell'esempio di output seguente:
+Si noti che, anche se il cmdlet Test-CsCertificateConfiguration esiste, non è molto utile per gli amministratori. (Invece, il cmdlet viene utilizzato principalmente dalla configurazione guidata certificati). Anche se il cmdlet funziona, le informazioni restituite sono di valore minimo, come illustrato nell'esempio di output seguente:
 
-Uso di identificazione personale
+Utilizzo di identificazione personale
 
 \---------- ---
 
@@ -98,15 +98,15 @@ A9D51A2911C74FABFF7F2A8A994B20857D399107 predefinito
 
 ## <a name="reviewing-the-output"></a>Revisione dell'output
 
-Il cmdlet Get-CsCertificate restituisce informazioni simili a quelle seguenti per ogni certificato di Lync Server:
+Il cmdlet Get-CsCertificate restituisce informazioni simili alle seguenti per ognuno dei certificati di Lync Server:
 
-Emittente: CN = FabrikamCA
+Autorità emittente: CN = FabrikamCA
 
 NotAfter: 12/28/2015 3:35:41 PM
 
 NotBefore: 1/2/2014 12:49:37 PM
 
-NumeroSerie: 611BB01200000000000C
+SerialNumber: 611BB01200000000000C
 
 Oggetto: CN = LYNC-SE.fabrikam.com
 
@@ -116,35 +116,35 @@ meet.fabrikam.com, admin.fabrikam.com...}
 
 Identificazione personale: A9D51A2911C74FABFF7F2A8A994B20857D399107
 
-USA: impostazione predefinita
+Utilizzo: impostazione predefinita
 
-Di norma, i principali problemi che coinvolgono i certificati di Lync Server coinvolgono date e ore, ad esempio quando i certificati hanno effetto (NotBefore) o quando scadono (NotAfter). Poiché queste date e ore sono così importanti, è consigliabile limitare i dati restituiti alle informazioni, ad esempio l'uso del certificato, il numero di serie del certificato e la data di scadenza del certificato. è quindi possibile rivedere rapidamente tutti i certificati e quando scadono. Per restituire solo queste informazioni, usare il comando insieme alle opzioni come illustrato:
+Come regola generale, i principali problemi relativi ai certificati di Lync Server coinvolgono date e ore, ad esempio quando i certificati hanno effetto (NotBefore) o quando scadono (NotAfter). Poiché queste date e ore sono importanti, è possibile limitare i dati restituiti a informazioni quali l'utilizzo del certificato, il numero di serie del certificato e la data di scadenza del certificato. sarà quindi possibile esaminare rapidamente tutti i certificati e quando scadranno. Per restituire solo tali informazioni, utilizzare il comando insieme alle opzioni come illustrato di:
 
 `Get-CsCertificate | Select-Object Use, SerialNumber, NotAfter | Sort-Object NotAfter`
 
-Questo comando restituisce i dati simili a quelli seguenti, con i certificati ordinati in ordine alla data di scadenza:
+Questo comando restituisce i dati simili al seguente, con i certificati ordinati in base alla data di scadenza:
 
-Usare NumeroSerie NotAfter
+Utilizzo di SerialNumber NotAfter
 
 \--- ------------ --------
 
-Impostazione predefinita 611BB01200000000000C 12/28/2015 3:35:41 PM
+Default 611BB01200000000000C 12/28/2015 3:35:41 PM
 
 WebServicesInteral 32980AA20BBB20000191 02/15/2016 2:16:12 PM
 
-WebServicesExternal 0451B012003872651A0C 02/20/2016 7:11:58
+WebServicesExternal 0451B012003872651A0C 02/20/2016 7:11:58 AM
 
-Se si hanno problemi di certificato, è consigliabile rivedere il AlternativeNames configurato per un certificato. A prima vista, questo sembra essere un problema. Per impostazione predefinita, a seconda delle dimensioni della finestra della console, Get-CsCertificate potrebbe non essere in grado di visualizzare tutti i nomi:
+Se si verificano problemi relativi ai certificati, è possibile esaminare la AlternativeNames configurata per un certificato. A prima vista, che sembra essere un problema. Per impostazione predefinita, e a seconda delle dimensioni della finestra della console, Get-CsCertificate potrebbe non essere in grado di visualizzare tutti i nomi:
 
 AlternativeNames: {sip.fabrikam.com, LYNC.fabrikam.com,
 
-meet.fabrikam.com, amministratore. Fabrika...}
+meet.fabrikam.com, admin. Fabrika...}
 
-Per visualizzare tutti i nomi alternativi assegnati a un certificato, usare un comando simile al seguente:
+Per visualizzare tutti i nomi alternativi assegnati a un certificato, utilizzare un comando simile al seguente:
 
 `Get-CsCertificate | Where-Object {$_.SerialNumber -eq "611BB01200000000000C"} | Select-Object -ExpandProperty AlternativeNames`
 
-Che dovrebbe mostrare tutti i nomi alternativi nel certificato:
+Che dovrebbe mostrare tutti i nomi alternativi del certificato:
 
 sip.fabrikam.com
 

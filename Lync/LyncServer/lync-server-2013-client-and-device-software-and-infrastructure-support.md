@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Supporto dell'infrastruttura e del software di dispositivi e client"
+title: "Lync Server 2013: supporto dell'infrastruttura e del software per client e dispositivi"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184265
 ms.date: 08/27/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1a741d4696d883d9a29dc0117be28ea82f474cff
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 55095e968e898445e42ceebed73f95ee9fb128d9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729866"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043848"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="client-and-device-software-and-infrastructure-support-in-lync-server-2013"></a>Supporto dell'infrastruttura e del software di dispositivi e client in Lync Server 2013
+# <a name="client-and-device-software-and-infrastructure-support-in-lync-server-2013"></a>Supporto dell'infrastruttura e del software client e del dispositivo in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41729866"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-08-27_
+_**Ultimo argomento modificato:** 2014-08-27_
 
-Il supporto software per client e dispositivi di una distribuzione di Lync Server 2013 include i sistemi operativi supportati, il software di infrastruttura e altri software aggiuntivi necessari per supportare le funzionalità client e dispositivo.
+Il supporto software per i client e i dispositivi di una distribuzione di Lync Server 2013 include i sistemi operativi supportati, il software dell'infrastruttura e altri software aggiuntivi necessari per supportare le funzionalità di client e dispositivi.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - <span></span>  
     [Supporto del software client Lync in Lync Server 2013](lync-server-2013-lync-client-software-support.md)
@@ -50,18 +50,18 @@ Il supporto software per client e dispositivi di una distribuzione di Lync Serve
     [Supporto per la connettività di messaggistica istantanea pubblica in Lync Server 2013](lync-server-2013-support-for-public-instant-messenger-connectivity.md)
 
   - <span></span>  
-    [Come vengono visualizzate le foto degli utenti in Lync](how-user-photos-are-displayed-in-lync.md)
+    [Modalità di visualizzazione delle foto degli utenti in Lync](how-user-photos-are-displayed-in-lync.md)
 
 <div>
 
 
 > [!NOTE]  
-> Lync Phone Edition funziona allo stesso modo con Lync Server 2013 come avviene con Lync Server 2010. Per informazioni dettagliate sul supporto software per i dispositivi, vedere gli argomenti seguenti nella raccolta TechNet di Lync Server 2010: 
+> Lync Phone Edition è compatibile con Lync Server 2013 come avviene con Lync Server 2010. Per informazioni dettagliate sul supporto software per i dispositivi, vedere gli argomenti seguenti nella libreria TechNet di Lync Server 2010: 
 > <UL>
 > <LI>
 > <P>Componenti di Lync Server 2010 necessari per i dispositivi in<A class=uri href="http://go.microsoft.com/fwlink/p/?linkid=256488">http://go.microsoft.com/fwlink/p/?linkid=256488</A></P>
 > <LI>
-> <P>Supporto per sistemi e infrastrutture per dispositivi<A class=uri href="http://go.microsoft.com/fwlink/p/?linkid=256489">http://go.microsoft.com/fwlink/p/?linkid=256489</A></P></LI></UL>
+> <P>Supporto dell'infrastruttura e del sistema di dispositivi<A class=uri href="http://go.microsoft.com/fwlink/p/?linkid=256489">http://go.microsoft.com/fwlink/p/?linkid=256489</A></P></LI></UL>
 
 
 

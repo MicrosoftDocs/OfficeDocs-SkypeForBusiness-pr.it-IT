@@ -12,16 +12,16 @@ ms:contentKeyID: 51541433
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0dcb1d84392cf9f56f2996281eb53e798690ba1e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c226e3b677965db03ba4d5fcc3c3dadb37192548
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763298"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049418"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41763298"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-24_
+_**Ultimo argomento modificato:** 2013-02-24_
 
-Lo strumento per lo stress e le prestazioni di Lync Server 2013 (LyncPerfTool. exe) contiene molti contatori che è possibile usare per capire cosa sta facendo il client e se si verificano problemi.
+Lo strumento Lync Server 2013 stress and performance (LyncPerfTool. exe) dispone di numerosi contatori che è possibile utilizzare per capire cosa sta facendo il client e se si verificano problemi.
 
 <div>
 
 ## <a name="client-counters"></a>Contatori client
 
-Ogni istanza di LyncPerfTool. exe in uso ha un'istanza distinta dei contatori. Ogni istanza è denominata dall'ID processo.
+Ogni istanza di LyncPerfTool. exe in esecuzione dispone di un'istanza distinta dei contatori. Ogni istanza è denominata dal relativo ID di processo.
 
-Se i client sono sovraccaricati, è possibile che si verifichino problemi. Per evitare questi problemi, eseguire le operazioni seguenti:
+Se i client sono sovraccarichi, è possibile che si verifichino problemi. Per evitare questi problemi, eseguire le operazioni seguenti:
 
-1.  Monitorare la CPU e l'utilizzo della memoria nei computer client. Se la CPU è sempre superiore a 90%, ridurre il numero di utenti.
+1.  Monitorare la CPU e l'utilizzo della memoria nei computer client. Se la CPU è costantemente al di sopra del 90%, ridurre il numero di utenti.
 
-2.  Se l'impronta di memoria è elevata, è possibile che si verificano problemi se il file di pagina non è abbastanza grande. Verificare che la carica di conferma non colpisca il limite nel computer. Se si stanno esaurendo i limiti di memoria, valutare la possibilità di aumentare le dimensioni del file di pagina o ridurre il numero di utenti
+2.  Se l'ingombro della memoria è elevato, è possibile che si verifichino problemi se il file di paging non è abbastanza grande. Verificare che la carica di commit non colpisca il limite del computer. Se si esegue in limiti di memoria, è consigliabile aumentare le dimensioni del file di paging o ridurre il numero di utenti
 
-Le tabelle seguenti elencano i contatori delle prestazioni LyncPerfTool chiave.
+Nelle tabelle riportate di seguito sono elencati i contatori delle prestazioni principali di LyncPerfTool.
 
 **Informazioni generali**
 
@@ -69,8 +69,8 @@ Le tabelle seguenti elencano i contatori delle prestazioni LyncPerfTool chiave.
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Tempo trascorso in minuti</p></td>
-<td><p>Tempo trascorso da quando il processo è stato avviato.</p></td>
+<td><p>Tempo impiegato in minuti</p></td>
+<td><p>Tempo trascorso dopo l'avvio del processo.</p></td>
 </tr>
 <tr class="even">
 <td><p>Endpoint attivi</p></td>
@@ -78,15 +78,15 @@ Le tabelle seguenti elencano i contatori delle prestazioni LyncPerfTool chiave.
 </tr>
 <tr class="odd">
 <td><p>Accessi non riusciti</p></td>
-<td><p>Numero totale di errori di accesso di endpoint.</p></td>
+<td><p>Numero totale di errori di accesso endpoint.</p></td>
 </tr>
 <tr class="even">
 <td><p>Tentativi di accesso</p></td>
-<td><p>Numero totale di tentativi di accesso di endpoint.</p></td>
+<td><p>Numero totale di tentativi di accesso all'endpoint.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Endpoint disconnessi</p></td>
-<td><p>Numero totale di endpoint disconnessi.</p></td>
+<td><p>Numero totale di endpoint che sono stati disconnessi.</p></td>
 </tr>
 <tr class="even">
 <td></td>
@@ -113,15 +113,15 @@ Le tabelle seguenti elencano i contatori delle prestazioni LyncPerfTool chiave.
 <tbody>
 <tr class="odd">
 <td><p>Chiamate di sepresenza</p></td>
-<td><p>Numero totale di tentativi di modifica della presenza. Per i diversi tipi di modifiche alla presenza, Vedi il contatore delle prestazioni chiamate sepresenza (tipo presenza).</p></td>
+<td><p>Numero totale di tentativi di modifica della presenza. Per i diversi tipi di modifiche alla presenza, vedere il contatore delle prestazioni chiamate di tipo sepresence (Presence Type).</p></td>
 </tr>
 <tr class="even">
-<td><p>Risposte di NNN per sepresenza</p></td>
+<td><p>Risposte di NNN per la presenza</p></td>
 <td><p>Numero totale di codici di risposta nnn ricevuti dal server.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Chiamate GetPresence</p></td>
-<td><p>Numero totale di tentativi di richiesta di presenza Get.</p></td>
+<td><p>Numero totale di tentativi di richiesta di presenza per ottenere.</p></td>
 </tr>
 <tr class="even">
 <td><p>Risposte di NNN per GetPresence</p></td>
@@ -133,7 +133,7 @@ Le tabelle seguenti elencano i contatori delle prestazioni LyncPerfTool chiave.
 
 **Informazioni sul servizio Rubrica**
 
-Questa categoria include i contatori usati per monitorare i download di file in ABS e le richieste di servizio query Web della Rubrica.
+In questa categoria sono inclusi i contatori utilizzati per monitorare i download di file in ABS (Address Book Service) e le richieste del servizio query Web della Rubrica.
 
 
 <table>
@@ -149,34 +149,34 @@ Questa categoria include i contatori usati per monitorare i download di file in 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Download di file in ABS Full/Delta tentato</p></td>
+<td><p>Download di file in ABS Full/Delta tentati</p></td>
 <td><p>Numero totale di richieste di download di file completi o Delta tentate.</p></td>
 </tr>
 <tr class="even">
-<td><p>Download di file completi/Delta di ABS riuscito</p></td>
+<td><p>Download di file completi/Delta in ABS con esito positivo</p></td>
 <td><p>Numero totale di richieste di download di file completi o Delta tentate.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Contatori correlati al servizio query Web di Rubrica</p></td>
-<td><p>Contatori correlati per il download del file della Rubrica.</p></td>
+<td><p>Contatori correlati al servizio query Web della Rubrica</p></td>
+<td><p>Contatori relativi al download di file della Rubrica.</p></td>
 </tr>
 <tr class="even">
-<td><p>Chiamate in ABS WS tentate</p></td>
-<td><p>Numero totale di richieste di servizio query Web per la Rubrica.</p></td>
+<td><p>Tentativi di WS ABS</p></td>
+<td><p>Numero totale di richieste del servizio query Web della rubrica tentate.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Chiamate in ABS WS succeeded</p></td>
-<td><p>Numero totale di richieste di servizio query Web per la rubrica che hanno restituito un codice di risposta riuscito.</p></td>
+<td><p>Chiamate in ABS WS con esito positivo</p></td>
+<td><p>Numero totale di richieste del servizio di query Web della rubrica che hanno restituito un codice di risposta corretto.</p></td>
 </tr>
 <tr class="even">
 <td><p>Chiamate in ABS WS non riuscite</p></td>
-<td><p>Numero totale di richieste di servizio query Web per la rubrica che hanno restituito un codice di risposta di errore.</p></td>
+<td><p>Numero totale di richieste del servizio di query Web della rubrica che hanno restituito un codice di risposta di errore.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-**Informazioni sulla lista di distribuzione (DL)**
+**Informazioni sulle liste di distribuzione (DL)**
 
 
 <table>
@@ -192,24 +192,24 @@ Questa categoria include i contatori usati per monitorare i download di file in 
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Chiamate tentativo</p></td>
-<td><p>Numero totale di richieste di servizio Web di espansione della lista di distribuzione (DLX) tentato.</p></td>
+<td><p>Tentativi di chiamata</p></td>
+<td><p>Numero totale di richieste del servizio Web di espansione della lista di distribuzione (DLX) tentate.</p></td>
 </tr>
 <tr class="even">
-<td><p>Chiamate succeeded</p></td>
-<td><p>Numero totale di richieste di servizio Web DLX che hanno restituito un codice di risposta riuscito.</p></td>
+<td><p>Chiamate con esito positivo</p></td>
+<td><p>Numero totale di richieste del servizio Web DLX che hanno restituito un codice di risposta corretto.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Chiamate non riuscite</p></td>
-<td><p>Numero totale di richieste di servizio Web DLX che hanno restituito un codice di risposta di errore.</p></td>
+<td><p>Numero totale di richieste del servizio Web DLX che hanno restituito un codice di risposta di errore.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-**Informazioni di base su VoIP**
+**Informazioni di base sul VoIP**
 
-I contatori delle prestazioni elencati sotto i numeri di report per tutte le chiamate VoIP (Voice over IP), incluse le chiamate a Mediation Server, A/V Conferencing Server, Edge Server, Response Group Application e Conference Auto Attendant, quando questi scenari sono abilitati.
+I contatori delle prestazioni elencati di seguito numeri di rapporto per tutte le chiamate VoIP (Voice over IP), incluse le chiamate a Mediation Server, A/V Conferencing Server, Edge Server, Response Group Application e Conference Auto Attendant, quando questi scenari sono abilitati.
 
 
 <table>
@@ -226,37 +226,37 @@ I contatori delle prestazioni elencati sotto i numeri di report per tutte le chi
 <tbody>
 <tr class="odd">
 <td><p>Chiamate attive</p></td>
-<td><p>Numero totale di chiamate vocali in arrivo/in uscita attualmente in corso.</p></td>
+<td><p>Numero totale di chiamate vocali in ingresso/in uscita attualmente in corso.</p></td>
 </tr>
 <tr class="even">
 <td><p>Chiamate terminate</p></td>
-<td><p>Numero totale di chiamate vocali in arrivo/in uscita già terminate.</p></td>
+<td><p>Numero totale di chiamate vocali in ingresso/in uscita già terminate.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Chiamate rifiutate</p></td>
-<td><p>Numero totale di chiamate vocali in arrivo rifiutate.</p></td>
+<td><p>Il numero totale di chiamate vocali in ingresso è stato rifiutato.</p></td>
 </tr>
 <tr class="even">
 <td><p>Tentativi di chiamata in arrivo/in uscita</p></td>
-<td><p>Numero totale di chiamate vocali in arrivo/in uscita tentate.</p></td>
+<td><p>Numero totale di chiamate vocali in ingresso/in uscita tentate.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Chiamate in arrivo/in uscita stabilite</p></td>
-<td><p>Numero totale di chiamate vocali in arrivo/in uscita stabilite.</p></td>
+<td><p>Chiamate in ingresso/in uscita stabilite</p></td>
+<td><p>Numero totale di chiamate vocali in ingresso/in uscita stabilite.</p></td>
 </tr>
 <tr class="even">
-<td><p>Chiamate di NNN ricevute</p></td>
+<td><p>Chiamate NNN ricevute</p></td>
 <td><p>Numero totale di codici di risposta nnn ricevuti dal server.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Frequenza di abbonamento VoIP (%)</p></td>
+<td><p>Velocità di passaggio VoIP (%)</p></td>
 <td><p>Total calls established/Total calls Tented.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-**Informazioni sulle chiamate di servizio Response Group**
+**Informazioni sulle chiamate di servizio di Response Group**
 
 
 <table>
@@ -276,14 +276,14 @@ I contatori delle prestazioni elencati sotto i numeri di report per tutte le chi
 <td><p>Numero totale di chiamate attive all'applicazione Response Group.</p></td>
 </tr>
 <tr class="even">
-<td><p>Chiamate tentativo</p></td>
+<td><p>Tentativi di chiamata</p></td>
 <td><p>Numero totale di chiamate tentate.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-**Informazioni sulle chiamate di messaggistica istantanea (IM)**
+**Informazioni sulle chiamate di messaggistica immediata**
 
 
 <table>
@@ -304,14 +304,14 @@ I contatori delle prestazioni elencati sotto i numeri di report per tutte le chi
 </tr>
 <tr class="even">
 <td><p>Chiamate terminate</p></td>
-<td><p>Numero totale di chiamate di messaggistica istantanea in arrivo/in uscita già terminate.</p></td>
+<td><p>Numero totale di chiamate di messaggistica istantanea in ingresso/in uscita già terminate.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Chiamate di NNN ricevute</p></td>
+<td><p>Chiamate NNN ricevute</p></td>
 <td><p>Numero totale di codici di risposta nnn ricevuti dal server.</p></td>
 </tr>
 <tr class="even">
-<td><p>Messaggi ISTANTANEi ricevuti/inviati</p></td>
+<td><p>Messaggi di messaggistica istantanea ricevuti/inviati</p></td>
 <td><p>Numero totale di messaggi ricevuti o inviati per tutte le sessioni.</p></td>
 </tr>
 <tr class="odd">
@@ -319,7 +319,7 @@ I contatori delle prestazioni elencati sotto i numeri di report per tutte le chi
 <td><p>Numero totale di chiamate di messaggistica istantanea in arrivo/in uscita tentate.</p></td>
 </tr>
 <tr class="even">
-<td><p>Chiamate in arrivo/in uscita stabilite</p></td>
+<td><p>Chiamate in ingresso/in uscita stabilite</p></td>
 <td><p>Numero totale di chiamate di messaggi istantanei in arrivo/in uscita stabilite.</p></td>
 </tr>
 </tbody>
@@ -343,23 +343,23 @@ I contatori delle prestazioni elencati sotto i numeri di report per tutte le chi
 <tbody>
 <tr class="odd">
 <td><p>Chiamate attive</p></td>
-<td><p>Numero totale di chiamate di condivisione delle applicazioni in entrata e in uscita.</p></td>
+<td><p>Numero totale di chiamate di condivisione delle applicazioni in arrivo/in uscita.</p></td>
 </tr>
 <tr class="even">
 <td><p>Chiamate terminate</p></td>
-<td><p>Numero totale di chiamate di condivisione delle applicazioni in arrivo/in uscita già terminate.</p></td>
+<td><p>Numero totale di chiamate di condivisione applicazioni in ingresso/in uscita già terminate.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Chiamate di NNN ricevute</p></td>
+<td><p>Chiamate NNN ricevute</p></td>
 <td><p>Numero totale di codici di risposta nnn ricevuti dal server.</p></td>
 </tr>
 <tr class="even">
 <td><p>Tentativi di chiamata in arrivo/in uscita</p></td>
-<td><p>Numero totale di chiamate di condivisione delle applicazioni in arrivo/in uscita tentate.</p></td>
+<td><p>Numero totale di chiamate di condivisione applicazioni in ingresso/in uscita tentate.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Chiamate in arrivo/in uscita stabilite</p></td>
-<td><p>Numero totale di chiamate di condivisione delle applicazioni in arrivo/in uscita stabilite.</p></td>
+<td><p>Chiamate in ingresso/in uscita stabilite</p></td>
+<td><p>Numero totale di chiamate di condivisione delle applicazioni in ingresso/in uscita stabilite.</p></td>
 </tr>
 <tr class="even">
 <td></td>
@@ -386,19 +386,19 @@ I contatori delle prestazioni elencati sotto i numeri di report per tutte le chi
 <tbody>
 <tr class="odd">
 <td><p>Chiamate attive</p></td>
-<td><p>Numero totale di chiamate PSTN (Public Switched Telephone Network) in arrivo/in uscita attualmente in corso.</p></td>
+<td><p>Numero totale di chiamate PSTN (Public Switched Telephone Network) in ingresso/in uscita attualmente in corso.</p></td>
 </tr>
 <tr class="even">
 <td><p>Chiamate terminate</p></td>
-<td><p>Numero totale di chiamate PSTN in arrivo/in uscita già terminate.</p></td>
+<td><p>Numero totale di chiamate PSTN in ingresso/in uscita già terminate.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Tentativi di chiamata in arrivo/in uscita</p></td>
-<td><p>Numero totale di chiamate PSTN in arrivo/in uscita tentate.</p></td>
+<td><p>Numero totale di chiamate PSTN in ingresso/in uscita tentate.</p></td>
 </tr>
 <tr class="even">
-<td><p>Chiamate in arrivo/in uscita stabilite</p></td>
-<td><p>Numero totale di chiamate PSTN in arrivo/in uscita stabilite.</p></td>
+<td><p>Chiamate in ingresso/in uscita stabilite</p></td>
+<td><p>Numero totale di chiamate PSTN in ingresso/in uscita stabilite.</p></td>
 </tr>
 </tbody>
 </table>
@@ -420,24 +420,24 @@ I contatori delle prestazioni elencati sotto i numeri di report per tutte le chi
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Conferenze di messaggistica istantanea attiva</p></td>
-<td><p>Numero totale di conferenze di messaggistica istantanea in corso.</p></td>
+<td><p>Conferenze di messaggistica istantanea attive</p></td>
+<td><p>Numero totale di conferenze di messaggistica istantanea in continuo.</p></td>
 </tr>
 <tr class="even">
 <td><p>Conferenze audio/video attive</p></td>
-<td><p>Numero totale di conferenze audio/video (A/V) in corso.</p></td>
+<td><p>Numero totale di conferenze audio/video (A/V) in uscita.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Conferenze per la condivisione di applicazioni attive</p></td>
-<td><p>Numero totale di conferenze di condivisione applicazioni in corso.</p></td>
+<td><p>Conferenze di condivisione applicazioni attive</p></td>
+<td><p>Numero totale di conferenze di condivisione applicazioni in uscita.</p></td>
 </tr>
 <tr class="even">
 <td><p>Numero di partecipanti</p></td>
-<td><p>Numero totale di partecipanti attualmente connessi alle conferenze.</p></td>
+<td><p>Numero totale di partecipanti attualmente connessi a conferenze.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Errore di programmazione conferenze</p></td>
-<td><p>Numero totale di errori durante il tentativo di pianificare una conferenza.</p></td>
+<td><p>Errore della pianificazione delle conferenze</p></td>
+<td><p>Numero totale di errori durante il tentativo di pianificazione di una conferenza.</p></td>
 </tr>
 <tr class="even">
 <td><p>Partecipare a una conferenza non riuscita</p></td>
@@ -463,11 +463,11 @@ I contatori delle prestazioni elencati sotto i numeri di report per tutte le chi
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Numero totale di join IMMCU riusciti</p></td>
+<td><p>Numero totale di join IMMCU con esito positivo</p></td>
 <td><p>Numero totale di conferenze di messaggistica istantanea Unite.</p></td>
 </tr>
 <tr class="even">
-<td><p>Numero totale di join DMCU riusciti</p></td>
+<td><p>Numero totale di join DMCU con esito positivo</p></td>
 <td><p>Numero totale di conferenze A/V Unite.</p></td>
 </tr>
 </tbody>

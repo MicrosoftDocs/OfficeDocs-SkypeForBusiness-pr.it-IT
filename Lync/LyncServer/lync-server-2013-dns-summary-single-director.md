@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Riepilogo di DNS - singolo server Director'
+title: 'Lync Server 2013: Riepilogo DNS-singolo server Director'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184568
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 71fb3052de36a92afb4ed9076820f7fcb2b54997
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 44bcd52c2e7d13ef57e96e4ae5dc8841a58bc3d9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757580"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043788"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="dns-summary---single-director-in-lync-server-2013"></a>Riepilogo di DNS - singolo server Director in Lync Server 2013
+# <a name="dns-summary---single-director-in-lync-server-2013"></a>Riepilogo DNS-singolo Director in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41757580"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-20_
+_**Ultimo argomento modificato:** 2012-10-20_
 
-La tabella seguente contiene un riepilogo dei record DNS necessari per supportare il singolo Director. Il ruolo del Director richiede record DNS simili al server front-end. Il numero di record necessari viene riflesso nei nomi alternativi del soggetto necessari per il certificato Director. Diverso dal server front-end, il Director non ospita gli account utente o ospita i servizi di mobilità.
+La tabella seguente contiene un riepilogo dei record DNS necessari per il supporto del singolo Director. Il ruolo del Director richiede record DNS simili a quelli del front end server. Il numero di record necessari viene riflesso nei nomi alternativi del soggetto richiesti per il certificato del server Director. Diverso dal front end server, il Director non ospita gli account utente o ospita i servizi per dispositivi mobili.
 
-### <a name="dns-records-required-for-the-director"></a>Record DNS necessari per il Director
+### <a name="dns-records-required-for-the-director"></a>Record DNS necessari per il server Director
 
 <table>
 <colgroup>
@@ -51,9 +51,9 @@ La tabella seguente contiene un riepilogo dei record DNS necessari per supportar
 <thead>
 <tr class="header">
 <th>Posizione/tipo/porta</th>
-<th>Record FQDN/DNS</th>
+<th>FQDN/Record DNS</th>
 <th>Indirizzo IP/FQDN</th>
-<th>Mapping a/commenti</th>
+<th>Mapping a/Commenti</th>
 </tr>
 </thead>
 <tbody>
@@ -61,31 +61,31 @@ La tabella seguente contiene un riepilogo dei record DNS necessari per supportar
 <td><p>DNS interno/A</p></td>
 <td><p>dir01.contoso.net</p></td>
 <td><p>Director</p></td>
-<td><p>Record host Director usato per la replica e il server al server</p></td>
+<td><p>Record host Director utilizzato per la replica e il server in server</p></td>
 </tr>
 <tr class="even">
 <td><p>DNS interno/A</p></td>
 <td><p>sip.contoso.com</p></td>
 <td><p>Director</p></td>
-<td><p>SIP (Session Initiation Protocol) in ingresso dall'interfaccia Edge interna del server perimetrale</p></td>
+<td><p>SIP (Session Initiation Protocol) in ingresso dall'interfaccia perimetrale interna del server perimetrale</p></td>
 </tr>
 <tr class="odd">
 <td><p>DNS interno/A</p></td>
 <td><p>dialin.contoso.com</p></td>
 <td><p>Director</p></td>
-<td><p>Servizi Web di dialin pubblicati da proxy inverso</p></td>
+<td><p>Servizi Web Accesso esterno pubblicati da proxy inverso</p></td>
 </tr>
 <tr class="even">
 <td><p>DNS interno/A</p></td>
 <td><p>meet.contoso.com</p></td>
 <td><p>Director</p></td>
-<td><p>Servizi Web pubblicati su Meet proxy inverso</p></td>
+<td><p>Servizi Web Accesso Riunione pubblicati da proxy inverso</p></td>
 </tr>
 <tr class="odd">
 <td><p>DNS interno/A</p></td>
 <td><p>webdirexternal.contoso.com</p></td>
 <td><p>Director</p></td>
-<td><p>Pubblicato e definito dai servizi Web esterni per i Web Ticket proxy inverso per il direttore</p></td>
+<td><p>Pubblicati e definiti dai servizi Web esterni per il proxy inverso per il server Director</p></td>
 </tr>
 </tbody>
 </table>

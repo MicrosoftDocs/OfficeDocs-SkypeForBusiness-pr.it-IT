@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: visualizzare i numeri di accesso per le conferenze telefoniche con chiamata in ingresso'
+title: 'Lync Server 2013: visualizzare i numeri di accesso per le conferenze telefoniche in ingresso'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733628
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7e86127c2a945bcd9154df0456545f5783fd1a34
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 851ac4d48a5242355baa1f25499dcaf26e8ef099
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731086"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043738"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="view-dial-in-conferencing-access-numbers-in-lync-server-2013"></a>Visualizzare i numeri di accesso per i servizi di conferenza telefonica con chiamata in Lync Server 2013
+# <a name="view-dial-in-conferencing-access-numbers-in-lync-server-2013"></a>Visualizzare i numeri di accesso per le conferenze telefoniche in ingresso in Lync Server 2013
 
 </div>
 
@@ -35,41 +35,41 @@ ms.locfileid: "41731086"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-Nel pannello di controllo di Lync Server 2013 fornisci i numeri di accesso esterno agli utenti in modo che possano partecipare a una riunione esternamente.
+Nel pannello di controllo di Lync Server 2013, è possibile specificare i numeri di accesso esterno per gli utenti in modo che possano partecipare a una riunione esternamente.
 
 <div>
 
-## <a name="to-view-dial-in-access-numbers"></a>Per visualizzare i numeri di accesso per la chiamata in ingresso
+## <a name="to-view-dial-in-access-numbers"></a>Per visualizzare i numeri di accesso esterno
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su servizi di conferenza e quindi su **numero di accesso** **esterno** .
+3.  Nella barra di spostamento sinistra fare clic su **Servizi di conferenza** e quindi fare clic su **Numero di accesso esterno**.
 
-4.  Nella pagina **numero di accesso** esterno, fare clic sul numero di accesso che si vuole visualizzare.
+4.  Nella pagina **Numero di accesso esterno** fare clic sul numero di accesso che si desidera visualizzare.
 
-5.  In **modifica**selezionare la **visualizzazione dettagli..** . casella di controllo.
+5.  In **Modifica** selezionare la casella di controllo **Mostra dettagli**.
 
 </div>
 
 <div>
 
-## <a name="viewing-dial-in-conferencing-access-numbers-by-using-windows-powershell-cmdlets"></a>Visualizzazione dei numeri di accesso ai servizi di conferenza telefonica con chiamata in ingresso con i cmdlet di Windows PowerShell
+## <a name="viewing-dial-in-conferencing-access-numbers-by-using-windows-powershell-cmdlets"></a>Visualizzazione dei numeri di accesso per le conferenze telefoniche in ingresso tramite i cmdlet di Windows PowerShell
 
-I numeri di accesso per i servizi di conferenza telefonica con chiamata in ingresso possono essere visualizzati usando Windows PowerShell e il cmdlet Get-CsDialInConferencingAccessNumber. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile visualizzare i numeri di accesso per i servizi di conferenza telefonica tramite Windows PowerShell e il cmdlet Get-CsDialInConferencingAccessNumber. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
-## <a name="to-view-dial-in-conferencing-access-numbers"></a>Per visualizzare i numeri di accesso per i servizi di conferenza telefonica
+## <a name="to-view-dial-in-conferencing-access-numbers"></a>Per visualizzare i numeri di accesso per le conferenze telefoniche.
 
-  - Per visualizzare informazioni su tutti i numeri di accesso per i servizi di conferenza telefonica con chiamata in ingresso, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
+  - Per visualizzare informazioni su tutti i numeri di accesso per le conferenze telefoniche in ingresso, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
     
         Get-CsDialInConferencingAccessNumber
     
-    Questo restituirà informazioni simili alla seguente:
+    Verranno restituite informazioni simili alle seguenti:
     
         Identity           : CN={20ca8dc8-5ff8-41f4-b5bb-22ba9972ae2e},
                              CN=Application Contacts,CN=RTCService=Services,
@@ -86,7 +86,7 @@ I numeri di accesso per i servizi di conferenza telefonica con chiamata in ingre
 
 </div>
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsDialInConferencingAccessNumber](https://docs.microsoft.com/powershell/module/skype/Get-CsDialInConferencingAccessNumber) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsDialInConferencingAccessNumber](https://docs.microsoft.com/powershell/module/skype/Get-CsDialInConferencingAccessNumber) .
 
 </div>
 

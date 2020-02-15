@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Avviare server perimetrali'
+title: 'Lync Server 2013: avviare server perimetrali'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185963
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a2488e81c0512e8698337209161558b2789cd2f8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 948529b62e9752010b9b4ad808f681dd1797f2d9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764422"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038798"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41764422"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-01-16_
+_**Ultimo argomento modificato:** 2012-01-16_
 
-Dopo aver completato la configurazione di Edge Server e di bilanciamento del carico, è necessario avviare i servizi in ogni Edge Server.
+Al termine della configurazione dei server perimetrali e dei servizi di bilanciamento del carico, è necessario avviare i servizi in ogni server perimetrale.
 
 <div>
 
 ## <a name="to-start-the-services"></a>Per avviare i servizi
 
-1.  In ogni Edge Server, nella distribuzione guidata, accanto a **passaggio 4: avviare i servizi**, fare clic su **Esegui**.
+1.  In ogni server perimetrale nella Distribuzione guidata fare clic su **Esegui** accanto a **Passaggio 4: Avvia servizi**.
 
-2.  Nella pagina **avvia Lync Server 15 Services** esaminare l'elenco dei servizi e quindi fare clic su **Avanti** per avviare i servizi.
+2.  Nella pagina **Avvia servizi di Lync Server 15** esaminare l'elenco dei servizi, quindi fare clic su **Avanti** per avviarli.
 
-3.  Dopo l'avvio dei servizi, fare clic su **fine** per chiudere la procedura guidata.
+3.  Dopo aver avviato i servizi, fare clic su **Fine** per chiudere la procedura guidata.
 
-4.  In **passaggio 4: avviare i servizi**, fare clic su **stato servizi (facoltativo)**.
+4.  In **Passaggio 4: Avvia servizi** fare clic su **Stato servizio (facoltativo)**.
 
-5.  In **Servizi** Microsoft Management Console (MMC) nel server verificare che tutti i servizi di Lync Server 2013 siano in uso.
+5.  In Microsoft Management Console (MMC) **Servizi** nel server verificare che tutti i servizi di Lync Server 2013 siano in esecuzione.
 
 </div>
 

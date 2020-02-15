@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Impostazione degli utenti autorizzati a inserire messaggi in una chat room auditorium'
+title: 'Lync Server 2013: impostazione degli utenti autorizzati a inserire messaggi in una chat room Auditorium'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48705999
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 528b7ec0bc92d3281e599f6313a554c4eee0e8b2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 882e5941afdbdfb046142d38d47a458a5eb75c5c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764522"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42039254"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="setting-who-can-post-messages-in-an-auditorium-chat-room-in-lync-server-2013"></a>Impostazione degli utenti autorizzati a inserire messaggi in una chat room auditorium in Lync Server 2013
+# <a name="setting-who-can-post-messages-in-an-auditorium-chat-room-in-lync-server-2013"></a>Impostazione degli utenti autorizzati a inserire messaggi in una chat room di un auditorium in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41764522"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-06_
+_**Ultimo argomento modificato:** 2012-10-06_
 
-In una chat room di un auditorium solo gli utenti a cui è stato concesso il ruolo di relatore possono pubblicare messaggi. Tutti gli altri membri possono leggere solo i messaggi. I relatori in una chat room di un auditorium devono essere membri della chat room.
+Solo gli utenti a cui è stato concesso il ruolo di relatore possono inserire messaggi in una chat room di tipo auditorium. Tutti gli altri membri possono solo leggere i messaggi. I relatori di una chat room di tipo auditorium devono essere membri della chat.
 
-Per informazioni dettagliate sull'uso dell'interfaccia della riga di comando di Windows PowerShell per la gestione delle chat room dell'Auditorium, vedere [gestire le sale](manage-rooms.md) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate sull'utilizzo dell'interfaccia della riga di comando di Windows PowerShell per la gestione delle chat room di Auditorium, vedere [Manage Rooms](manage-rooms.md) nella documentazione relativa alla distribuzione.
 
-Anche se gli amministratori delle chat room permanenti e i responsabili delle chat room possono gestire le impostazioni della chat room, non possono pubblicare in una chat room a meno che non siano **relatori**.
+Anche se gli amministratori della chat room e i responsabili della chat room possono gestire le impostazioni delle chat room, non possono postare in una chat room Auditorium a meno che non siano **relatori**.
 
 </div>
 

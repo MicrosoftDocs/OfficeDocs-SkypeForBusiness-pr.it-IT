@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: configurare l'infrastruttura per l'archiviazione"
+title: "Lync Server 2013: impostazione dell'infrastruttura per l'archiviazione"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185494
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ccd2dd65eca2229632c8811d1d57e52976778650
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: aee20ccc6ecee75bc5eb9291a50dc26f39cafaa0
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42039779"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41732056"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-I requisiti di infrastruttura per l'archiviazione sono gli stessi della distribuzione di Lync Server, ad eccezione dello spazio di archiviazione. Non è necessaria alcuna configurazione di infrastruttura aggiuntiva, ad eccezione della configurazione dello spazio di archiviazione tramite lo spazio di archiviazione di Exchange 2013, l'archiviazione dei database o entrambi. Per informazioni dettagliate sui requisiti di infrastruttura per Lync Server 2013, vedere [determinazione dei requisiti di infrastruttura per Lync server 2013](lync-server-2013-determining-your-infrastructure-requirements.md) nella documentazione di pianificazione e [preparazione dell'infrastruttura e sistemi per Lync Server 2013](lync-server-2013-preparing-the-infrastructure-and-systems.md) nella documentazione relativa alla distribuzione. Per informazioni dettagliate sui requisiti di archiviazione per l'archiviazione, vedere [requisiti tecnici per l'archiviazione in Lync server 2013](lync-server-2013-technical-requirements-for-archiving.md) nella documentazione relativa alla pianificazione, [configurazione di piattaforme di sistema per l'archiviazione in Lync Server 2013](lync-server-2013-setting-up-system-platforms-for-archiving.md) nella documentazione di distribuzione e configurazione dello spazio di archiviazione [per l'archiviazione in Lync Server 2013](lync-server-2013-setting-up-storage-for-archiving.md) nella documentazione relativa alla distribuzione.
+I requisiti dell'infrastruttura per l'archiviazione sono uguali a quelli per la distribuzione di Lync Server, tranne che per l'archiviazione. Non è necessaria alcuna configurazione dell'infrastruttura aggiuntiva, fatta eccezione per la configurazione dell'archiviazione tramite l'archiviazione di Exchange 2013, i database di archiviazione o entrambi. Per informazioni dettagliate sui requisiti dell'infrastruttura per Lync Server 2013, vedere [determinare i requisiti dell'infrastruttura per Lync server 2013](lync-server-2013-determining-your-infrastructure-requirements.md) nella documentazione relativa alla pianificazione e [preparare l'infrastruttura e i sistemi per Lync Server 2013](lync-server-2013-preparing-the-infrastructure-and-systems.md) nella documentazione relativa alla distribuzione. Per informazioni dettagliate sui requisiti di archiviazione per l'archiviazione, vedere [requisiti tecnici per l'archiviazione in Lync server 2013](lync-server-2013-technical-requirements-for-archiving.md) nella documentazione relativa alla pianificazione, [configurazione delle piattaforme di sistema per l'archiviazione in Lync Server 2013](lync-server-2013-setting-up-system-platforms-for-archiving.md) nella documentazione relativa alla distribuzione e [configurazione dell'archiviazione per l'archiviazione in Lync Server 2013](lync-server-2013-setting-up-storage-for-archiving.md) nella documentazione relativa alla distribuzione.
 
 </div>
 

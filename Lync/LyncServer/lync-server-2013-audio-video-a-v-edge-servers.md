@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: server Edge audio/video (A/V)'
+title: 'Lync Server 2013: server perimetrali audio/video (A/V)'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733785
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c99cc3522c13ece937c6e2a0ba06f995431e08d8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1262ee1a2db12569538f499731de53a9da133c98
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722646"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044738"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="audiovideo-av-edge-servers-in-lync-server-2013"></a>Audio/video (A/V) Edge Server in Lync Server 2013
+# <a name="audiovideo-av-edge-servers-in-lync-server-2013"></a>Audio/video (A/V) server perimetrali in Lync Server 2013
 
 </div>
 
@@ -35,29 +35,29 @@ ms.locfileid: "41722646"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Il servizio A/V Edge consente agli utenti interni (utenti che hanno effettuato l'accesso alla rete organizzativa) di condividere audio e video con utenti esterni (utenti che non hanno eseguito l'accesso alla rete organizzativa). Oltre all'audio e al video, l'A/V Edge service offre anche il supporto per la condivisione desktop e il trasferimento di file.
+Il servizio A/V Edge consente agli utenti interni, ovvero agli utenti connessi alla rete dell'organizzazione, di condividere audio e video con utenti esterni, che non sono connessi alla rete dell'organizzazione. Oltre ad audio e video, il servizio A/V Edge inoltre offre il supporto per attività come la condivisione del desktop e il trasferimento di file.
 
-Il servizio A/V Edge viene gestito principalmente tramite la configurazione A/V Edge; Queste impostazioni consentono di gestire la quantità massima di larghezza di banda da allocare per ogni porta e per utente e di specificare il periodo di tempo in cui può essere usato un token di autenticazione prima che il token debba essere rinnovato. Le impostazioni di configurazione di Edge a/V possono essere applicate ai siti o ai singoli server a/V Edge. Per determinare quale raccolta di impostazioni avrà la priorità, usare la guida seguente:
+Il servizio A/V Edge viene principalmente gestito mediante la configurazione A/V Edge. Queste impostazioni consentono di gestire la quantità massima di larghezza di banda da allocare per porta e per utente e di specificare per quanto tempo può essere utilizzato un token di autenticazione prima che debba essere rinnovato. Le impostazioni di configurazione A/V Edge possono essere applicate ai siti o ai singoli A/V Edge Server. Quando si determina la raccolta di impostazioni che avrà la priorità, utilizzare come riferimento le informazioni seguenti:
 
-  - Le impostazioni configurate nell'ambito del servizio, ovvero su un singolo server, hanno la priorità su tutto.
+  - Le impostazioni configurate nell'ambito del servizio, ovvero in un singolo server, hanno la priorità su tutto.
 
-  - Le impostazioni configurate nell'ambito del sito hanno la priorità sulle impostazioni configurate nell'ambito globale. Tuttavia, le impostazioni dell'ambito del servizio sostituiranno anche le impostazioni dell'ambito del sito.
+  - Le impostazioni configurate nell'ambito del sito hanno la priorità su quelle configurate nell'ambito globale. Le impostazioni nell'ambito del servizio avranno tuttavia la precedenza sulle impostazioni nell'ambito del sito.
 
-  - Le impostazioni dell'ambito globale verranno usate solo se non sono state configurate impostazioni di servizio nel singolo server e se non sono presenti impostazioni del sito per il sito in cui si trova il server.
+  - Le impostazioni nell'ambito globale verranno utilizzate solo se non vi sono impostazioni di servizio configurate nel singolo server e se non vi sono impostazioni per il sito in cui si trova tale server.
 
-Il servizio A/V Edge può essere gestito solo tramite Lync Server PowerShell e i cmdlet CsAVEdgeConfiguration.
+Il servizio A/V Edge può essere gestito solo utilizzando Lync Server PowerShell e i cmdlet di CsAVEdgeConfiguration.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Restituire le informazioni di configurazione A/V Edge Server in Lync Server 2013](lync-server-2013-return-a-v-edge-server-configuration-information.md)
+  - [Restituire le informazioni di configurazione di A/V Edge Server in Lync Server 2013](lync-server-2013-return-a-v-edge-server-configuration-information.md)
 
-  - [Creare o modificare una raccolta di impostazioni di configurazione di un/V Edge Server in Lync Server 2013](lync-server-2013-create-or-modify-a-collection-of-a-v-edge-server-configuration-settings.md)
+  - [Creare o modificare una raccolta di impostazioni di configurazione di A/V Edge Server in Lync Server 2013](lync-server-2013-create-or-modify-a-collection-of-a-v-edge-server-configuration-settings.md)
 
-  - [Eliminare una raccolta esistente di impostazioni di configurazione di un/V Edge Server in Lync Server 2013](lync-server-2013-delete-an-existing-collection-of-a-v-edge-server-configuration-settings.md)
+  - [Eliminare una raccolta esistente di impostazioni di configurazione di A/V Edge Server in Lync Server 2013](lync-server-2013-delete-an-existing-collection-of-a-v-edge-server-configuration-settings.md)
 
 </div>
 

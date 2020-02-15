@@ -12,16 +12,16 @@ ms:contentKeyID: 63969579
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fb2be0880e0ea819e66d552e8b178c81bff101a3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1af7503571a3a715dafc852485b8b55b64ba22f8
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757220"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041953"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41757220"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-05-01_
+_**Ultimo argomento modificato:** 2014-05-01_
 
-Per ogni pool aziendale e il pool di ogni server Standard Edition, è possibile visualizzare informazioni sullo stato del pool e lo stato di altri componenti usati dal pool tramite il pannello di controllo di Lync Server 2013. È consigliabile implementare System Center Operations Manager 2012 con il pannello di controllo di Lync Server per aiutare gli amministratori a visualizzare l'integrità dei pool nel loro ambiente.
+Per ogni pool Enterprise e il pool di ogni server Standard Edition, è possibile visualizzare le informazioni sullo stato del pool e lo stato di altri componenti utilizzati dal pool tramite il pannello di controllo di Lync Server 2013. È consigliabile implementare System Center Operations Manager 2012 con il pannello di controllo di Lync Server per consentire agli amministratori di visualizzare l'integrità dei pool all'interno del proprio ambiente.
 
 <div>
 
-## <a name="view-pools"></a>Visualizzare i pool
+## <a name="view-pools"></a>Visualizza pool
 
-1.  Tramite il pannello di controllo di Lync Server aprire il pannello di controllo di Lync Server.
+1.  Tramite il pannello di controllo di Lync Server, aprire il pannello di controllo di Lync Server.
 
-2.  Fare clic su topologia e selezionare lo stato di tutti i server della topologia.
+2.  Fare clic su topologia e controllare lo stato di tutti i server della topologia.
 
 </div>
 

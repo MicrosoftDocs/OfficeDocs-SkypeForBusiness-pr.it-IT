@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: report di riepilogo conferenza PSTN'
+title: 'Lync Server 2013: rapporto riepilogativo conferenze PSTN'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184764
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f8cd36f651a84b25f7e8163a8cfc40aff5162f90
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: aa902b9e4d53bf0ebbedf835296a371437860095
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724796"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043458"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="pstn-conference-summary-report-in-lync-server-2013"></a>Report di riepilogo conferenza PSTN in Lync Server 2013
+# <a name="pstn-conference-summary-report-in-lync-server-2013"></a>Report riepilogativo conferenze PSTN in Lync Server 2013
 
 </div>
 
@@ -35,31 +35,31 @@ ms.locfileid: "41724796"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-22_
+_**Ultimo argomento modificato:** 2012-10-22_
 
-In Microsoft Lync Server 2013 una conferenza PSTN è una conferenza in cui almeno un partecipante compone la parte audio tramite un telefono PSTN (Public Switched Telephone Network). (Un telefono PSTN è un "telefono fisso", un cellulare o un altro telefono che non fa uso di Voice over IP.) Anche se si fa riferimento a conferenze PSTN nei report di monitoraggio, queste conferenze sono forse più comunemente note come conferenze telefoniche con accesso esterno.
+In Microsoft Lync Server 2013, una conferenza PSTN è una conferenza in cui almeno un partecipante compone la parte audio tramite un telefono PSTN (Public Switched Telephone Network). (Un telefono PSTN è una "rete fissa", un telefono cellulare o qualsiasi altro telefono che non utilizza il Voice over IP). Anche se denominate conferenze PSTN nei rapporti di monitoraggio, queste conferenze sono forse più comunemente note come conferenze telefoniche con accesso esterno.
 
-Il report Riepilogo conferenza PSTN contiene informazioni su tutte le conferenze PSTN svolte nell'organizzazione, ovvero tutte le conferenze con almeno un utente con accesso esterno. Il report include informazioni sul numero totale di conferenze PSTN, il numero totale di persone che hanno partecipato a tali conferenze e, forse, più importante, il numero totale di utenti con accesso esterno (la metrica totale dei partecipanti PSTN).
+Il Rapporto riepilogativo conferenze PSTN offre informazioni su tutte le conferenze PSTN tenutesi nell'organizzazione, ovvero tutte le conferenze con almeno un utente in accesso esterno. Il rapporto include informazioni sul numero totale di conferenze PSTN, il numero totale di utenti che vi hanno preso parte e (probabilmente il dato più importante) il numero totale di utenti con accesso esterno (metrica Totale partecipanti PSTN).
 
 <div>
 
-## <a name="accessing-the-pstn-conference-summary-report"></a>Accesso al report di riepilogo conferenza PSTN
+## <a name="accessing-the-pstn-conference-summary-report"></a>Accesso al Rapporto riepilogativo conferenze PSTN
 
-Il report Riepilogo conferenza PSTN può essere accessibile solo dalla Home page dei report di monitoraggio. Questo report non è collegato ad altri report. Tieni presente che non puoi recuperare informazioni dettagliate sulle chiamate per una conferenza PSTN, in parte perché i singoli endpoint sono responsabili dell'invio di queste informazioni. I telefoni PSTN non sono in grado di tenere traccia o inviare informazioni dettagliate sulle chiamate.
+Il Rapporto riepilogativo conferenze PSTN è accessibile solo dalla home page Rapporti di monitoraggio. Questo rapporto non è collegato ad altri rapporti. Tenere presente che non è possibile recuperare informazioni dettagliate sulle chiamate per una conferenza PSTN, in parte perché i singoli endpoint sono responsabili dell'invio di tali informazioni. I telefoni PSTN non sono in grado di registrare o inviare informazioni dettagliate sulle chiamate.
 
 </div>
 
 <div>
 
-## <a name="making-the-best-use-of-the-pstn-conference-summary-report"></a>Uso ottimale del report di riepilogo conferenza PSTN
+## <a name="making-the-best-use-of-the-pstn-conference-summary-report"></a>Uso ottimale del Rapporto riepilogativo conferenze PSTN
 
-Per determinare la percentuale di tutte le conferenze che includono utenti con accesso esterno, confrontare il valore della metrica totale conferenze PSTN con la metrica totale conferenze disponibile [nel report di riepilogo conferenza in Lync Server 2013](lync-server-2013-conference-summary-report.md).
+Per determinare la percentuale di tutte le conferenze che includono gli utenti con accesso esterno, confrontare il valore della metrica totale conferenze PSTN con le metriche delle conferenze totali trovate [nel rapporto riepilogativo conferenze in Lync Server 2013](lync-server-2013-conference-summary-report.md).
 
-Se non si vedono tutte le conferenze PSTN che si potrebbero prevedere, tenere presente che la possibilità di organizzare una conferenza che consente agli utenti di accesso esterno dipende dal criterio di conferenza assegnato a un utente: se pochissimi utenti sono autorizzati a tenere premuto PS Conferenze TN si vedranno ovviamente pochissime conferenze PSTN. È possibile verificare rapidamente quale dei criteri di conferenza (se presenti) consente agli utenti di pianificare conferenze PSTN eseguendo il comando seguente da Lync Server Management Shell:
+Se non è disponibile il dato previsto sul numero di conferenze PSTN, tenere presente che la capacità di organizzare una conferenza che consenta gli utenti con accesso esterno dipende dai criteri di conferenza assegnati a un utente: se a un numero estremamente esiguo di utenti è consentito tenere conferenze PSTN di conseguenza vi saranno poche conferenze PSTN. È possibile verificare rapidamente gli eventuali criteri di conferenza che consentono agli utenti di pianificare conferenze PSTN eseguendo il comando seguente dalla shell di gestione di Lync Server:
 
     Get-CsConferencingPolicy | Select-Object Identity, EnableDialInConferencing
 
-Che restituirà dati simili a questi:
+Il comando restituisce dati analoghi a questi:
 
     Identity                                EnableDialInConferencing
     --------                                ------------------------
@@ -69,7 +69,7 @@ Che restituirà dati simili a questi:
     Tag:RedmondDialInUsers                                      True
     Tag:DublinDialInUsers                                       True
 
-Che restituirà dati simili a questi:
+Il comando restituisce dati analoghi a questi:
 
 </div>
 
@@ -77,11 +77,11 @@ Che restituirà dati simili a questi:
 
 ## <a name="filters"></a>Filtri
 
-I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi. Ad esempio, il report Riepilogo conferenza PSTN consente di scegliere la modalità di raggruppamento dei dati. In questo caso, le conferenze vengono raggruppate per ora, giorno, settimana o mese.
+I filtri consentono di ottenere un set di dati più specifico o di visualizzare in modo diverso i dati restituiti. Ad esempio, il rapporto riepilogativo conferenze PSTN consente di scegliere la modalità di raggruppamento dei dati. In questo caso le conferenze sono raggruppabili per ora, giorno, settimana o mese.
 
-Nella tabella seguente sono elencati i filtri che è possibile usare con il report di riepilogo conferenza PSTN.
+Nella tabella seguente sono elencati i filtri applicabili al Rapporto riepilogativo conferenze PSTN.
 
-### <a name="pstn-conference-summary-report-filters"></a>Filtri report Riepilogo conferenza PSTN
+### <a name="pstn-conference-summary-report-filters"></a>Filtri del Rapporto riepilogativo conferenze PSTN
 
 <table>
 <colgroup>
@@ -96,35 +96,35 @@ Nella tabella seguente sono elencati i filtri che è possibile usare con il repo
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Da</strong></p></td>
-<td><p>Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:</p>
-<p>7/7/2012 1:00 PM</p>
-<p>Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:</p>
+<td><p><strong>From</strong></p></td>
+<td><p>Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:</p>
+<p>07/07/2012 13.00</p>
+<p>Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/7/2012</p>
-<p>Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</p>
+<p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane si eseguono sempre da domenica a sabato.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>A</strong></p></td>
-<td><p>Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:</p>
-<p>7/7/2012 1:00 PM</p>
-<p>Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:</p>
+<td><p><strong>To</strong></p></td>
+<td><p>Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:</p>
+<p>07/07/2012 13.00</p>
+<p>Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/7/2012</p>
-<p>Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</p>
+<p>Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</p>
 <p>7/3/2012</p>
-<p>Le settimane si eseguono sempre da domenica a sabato.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Intervallo</strong></p></td>
-<td><p>Intervallo di tempo. Selezionare una delle opzioni seguenti:</p>
+<td><p>Selezionare uno dei seguenti:</p>
 <ul>
-<li><p>Ogni ora (può essere visualizzato un massimo di 25 ore)</p></li>
-<li><p>Giornaliera (è possibile visualizzare un massimo di 31 giorni)</p></li>
-<li><p>Settimanale (può essere visualizzato un massimo di 12 settimane)</p></li>
-<li><p>Mensile (può essere visualizzato un massimo di 12 mesi)</p></li>
+<li><p>Orario (è possibile visualizzare un massimo di 25 ore)</p></li>
+<li><p>Giornaliero (è possibile visualizzare un massimo di 31 giorni)</p></li>
+<li><p>Settimanale (è possibile visualizzare un massimo di 12 settimane)</p></li>
+<li><p>Mensile (è possibile visualizzare un massimo di 12 mesi)</p></li>
 </ul>
-<p>Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, viene visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo giornaliero con una data di inizio di 7/7/2012 e una data di fine 2/28/2012, i dati verranno visualizzati per i giorni 8/7/2012 12:00 da AM a 9/7/2012 12:00 AM, ovvero un totale di 31 giorni di dati.</p></td>
+<p>Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Se ad esempio si seleziona l'intervallo giornaliero con data di inizio 07/07/2012 e data di fine 28/02/2012, verranno visualizzati i dati per i giorni da 07/08/2012 ore 00.00 a 07/09/2012 ore 00:00 (per un totale di 31 giorni).</p></td>
 </tr>
 </tbody>
 </table>
@@ -136,9 +136,9 @@ Nella tabella seguente sono elencati i filtri che è possibile usare con il repo
 
 ## <a name="metrics"></a>Metriche
 
-Nella tabella seguente sono elencate le informazioni nel report di riepilogo conferenza PSTN.
+La tabella seguente elenca le informazioni disponibili nel Rapporto riepilogativo conferenze PSTN.
 
-### <a name="pstn-conference-summary-report-metrics"></a>Metriche report Riepilogo conferenza PSTN
+### <a name="pstn-conference-summary-report-metrics"></a>Metriche del Rapporto riepilogativo conferenze PSTN
 
 <table>
 <colgroup>
@@ -149,53 +149,53 @@ Nella tabella seguente sono elencate le informazioni nel report di riepilogo con
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Si può ordinare su questo elemento?</th>
+<th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Oraria</strong></p>
-<p><strong>Quotidiana</strong></p>
+<td><p><strong>Orario</strong></p>
+<p><strong>Giornaliero</strong></p>
 <p><strong>Settimanale</strong></p>
 <p><strong>Mensile</strong></p></td>
 <td><p>No</p></td>
-<td><p>Indica l'intervallo di tempo selezionato. Se applicabile, è possibile fare clic su un intervallo di tempo specifico per visualizzare informazioni dettagliate per l'intervallo. Se ad esempio si usa l'intervallo giornaliero e si fa clic su 7/7/2012, viene visualizzata una ripartizione oraria dell'attività di registrazione utente per tale data.</p></td>
+<td><p>Indica l'intervallo di tempo selezionato. Ove applicabile, è possibile fare clic su un determinato intervallo di tempo per visualizzare informazioni dettagliate relative a tale intervallo. Se ad esempio si sta utilizzando l'intervallo giornaliero e si fa clic su 07/07/2012, verranno visualizzate le attività di registrazione degli utenti per tale data, suddivise per ore.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Totale conferenze PSTN</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di conferenze che hanno consentito l'accesso tramite chiamata in ingresso.</p></td>
+<td><p>Numero totale di conferenze telefoniche con accesso esterno.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Totale partecipanti</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di persone che hanno partecipato a conferenze che hanno consentito l'accesso tramite chiamata in ingresso.</p></td>
+<td><p>Numero totale di persone che hanno partecipato a conferenze telefoniche con accesso esterno.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Totale minuti di conferenza A/V</strong></p></td>
+<td><p><strong>Totale minuti di conferenza audio/video</strong></p></td>
 <td><p>No</p></td>
-<td><p>Quantità totale di tempo per le conferenze audio/visive.</p></td>
+<td><p>Durata totale delle conferenze audio/video.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Totale minuti partecipanti alla conferenza A/V</strong></p></td>
+<td><p><strong>Totale minuti partecipante di conferenza audio/video</strong></p></td>
 <td><p>No</p></td>
-<td><p>Quantità totale di tempo dei partecipanti audio/visivi. Ad esempio, se un partecipante ha trascorso cinque minuti in una conferenza A/V e un altro partecipante ha trascorso tre minuti nella stessa conferenza, il tempo totale per i partecipanti alla conferenza A/V sarebbe di otto minuti.</p></td>
+<td><p>Totale minuti di partecipazione a conferenze audio/video. Ad esempio, se un partecipante ha trascorso cinque minuti in una conferenza audio/video e un altro partecipante ha trascorso tre minuti nella stessa conferenza, il totale sarà otto minuti.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Totale partecipanti PSTN</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di utenti che hanno eseguito la chiamata a conferenze che hanno consentito l'accesso tramite chiamata in ingresso.</p></td>
+<td><p>Numero totale di utenti che si sono connessi a conferenze telefoniche con accesso esterno.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Minuti totali dei partecipanti PSTN</strong></p></td>
+<td><p><strong>Totale minuti partecipante PSTN</strong></p></td>
 <td><p>No</p></td>
-<td><p>Importo totale del tempo di conferenza trascorso dagli utenti con accesso esterno. Ad esempio, se un partecipante con accesso esterno ha trascorso cinque minuti in una conferenza e un altro partecipante ha trascorso tre minuti nella stessa conferenza, il tempo totale dei partecipanti PSTN sarebbe di otto minuti.</p></td>
+<td><p>Tempo totale trascorso in conferenza da utenti connessi tramite chiamata in ingresso. Ad esempio, se un partecipante connesso tramite chiamata in ingresso ha trascorso cinque minuti in una conferenza e un altro partecipante ha trascorso tre minuti nella stessa conferenza, il totale sarà otto minuti.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Organizzatori di conferenze univoci</strong></p></td>
+<td><p><strong>Organizzatori conferenza univoci</strong></p></td>
 <td><p>No</p></td>
-<td><p>Numero totale di utenti che hanno organizzato almeno una conferenza che consentiva l'accesso esterno. Gli utenti che hanno organizzato più di una conferenza vengono conteggiati come un unico organizzatore, proprio come gli utenti che hanno organizzato una singola conferenza.</p></td>
+<td><p>Numero totale di utenti che hanno organizzato almeno una conferenza telefonica con accesso esterno. Gli utenti che hanno organizzato più conferenze vengono considerati come un organizzatore unico, come gli utenti che hanno organizzato una sola conferenza.</p></td>
 </tr>
 </tbody>
 </table>

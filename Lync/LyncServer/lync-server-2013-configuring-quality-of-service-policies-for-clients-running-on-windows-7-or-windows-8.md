@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurare i criteri di qualità dei servizi per i client in uso in Windows 7 o Windows 8'
+title: 'Lync Server 2013: configurazione dei criteri di qualità del servizio per i client in esecuzione in Windows 7 o Windows 8'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185785
 ms.date: 03/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bc06f5079fc6876c85324af67bd22be12f85a3c9
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 05835b74f12d5e2d28036b100fd84f207a64e67c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763510"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046089"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-quality-of-service-policies-in-lync-server-2013-for-clients-running-on-windows-7-or-windows-8"></a>Configurazione di criteri di qualità dei servizi in Lync Server 2013 per i client in uso in Windows 7 o Windows 8
+# <a name="configuring-quality-of-service-policies-in-lync-server-2013-for-clients-running-on-windows-7-or-windows-8"></a>Configurazione dei criteri di qualità del servizio in Lync Server 2013 per i client in esecuzione in Windows 7 o Windows 8
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41763510"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-03-29_
+_**Ultimo argomento modificato:** 2016-03-29_
 
-Oltre a specificare gli intervalli di porte per l'uso da parte dei client Lync, devi anche creare criteri di qualità distinti per i servizi che verranno applicati ai computer client. I criteri di qualità dei servizi creati per le conferenze, le applicazioni e i server di mediazione non devono essere applicati ai computer client. Queste informazioni si applicano solo ai computer che eseguono il client Lync 2013 e Windows 7 o Windows 8.
+Oltre a specificare gli intervalli di porte per l'utilizzo da parte dei client di Lync, è inoltre necessario creare criteri di qualità del servizio distinti che verranno applicati ai computer client. I criteri di qualità dei servizi creati per le conferenze, l'applicazione e i Mediation Server non devono essere applicati ai computer client. Queste informazioni si applicano solo ai computer che eseguono il client Lync 2013 e Windows 7 o Windows 8.
 
-Nell'esempio seguente viene usato questo set di intervalli di porte per creare un criterio audio e un criterio video:
+Nell'esempio seguente viene utilizzato questo set di intervalli di porte per creare un criterio audio e un criterio video:
 
 
 <table>
@@ -51,8 +51,8 @@ Nell'esempio seguente viene usato questo set di intervalli di porte per creare u
 <thead>
 <tr class="header">
 <th>Tipo di traffico client</th>
-<th>Inizio porta</th>
-<th>Intervallo di porte</th>
+<th>Inizio intervallo porte</th>
+<th>Intervallo porte</th>
 </tr>
 </thead>
 <tbody>
@@ -80,97 +80,97 @@ Nell'esempio seguente viene usato questo set di intervalli di porte per creare u
 </table>
 
 
-Per creare un criterio di qualità dei servizi audio per i computer Windows 7 o Windows 8, prima di tutto accedere a un computer in cui è stata installata la gestione di criteri di gruppo. Aprire Gestione criteri di gruppo (fare clic sul pulsante **Start**, scegliere **strumenti di amministrazione**e quindi fare clic su **Gestione criteri di gruppo**) e quindi completare la procedura seguente:
+Per creare un criterio audio di qualità del servizio per i computer Windows 7 o Windows 8, accedere innanzitutto a un computer in cui è stata installata la gestione criteri di gruppo. Aprire Gestione Criteri di gruppo (fare clic su **Start**, scegliere **Strumenti di amministrazione** e fare clic su **Gestione Criteri di gruppo**) e quindi eseguire la procedura seguente:
 
-1.  In Gestione criteri di gruppo individuare il contenitore in cui deve essere creato il nuovo criterio. Ad esempio, se tutti i computer client si trovano in un'unità organizzativa denominata clients, il nuovo criterio deve essere creato nell'unità organizzativa client.
+1.  In Gestione Criteri di gruppo individuare il contenitore in cui creare il nuovo criterio. Se ad esempio tutti i computer client appartengono a un'unità organizzativa denominata Client, il nuovo criterio dovrà essere creato in tale unità organizzativa Client.
 
-2.  Fare clic con il pulsante destro del mouse sul contenitore appropriato e quindi scegliere **Crea un GPO in questo dominio e collegarlo qui**.
+2.  Fare clic con il pulsante destro del mouse sul contenitore appropriato e scegliere **Crea un oggetto Criteri di gruppo in questo dominio e crea qui un collegamento**.
 
-3.  Nella finestra di dialogo **nuovo GPO** Digitare un nome per il nuovo oggetto Criteri di gruppo nella casella **nome** , ad esempio **audio Lync**, e quindi fare clic su **OK**.
+3.  Nella finestra di dialogo **Nuovo oggetto Criteri di gruppo** digitare il nome da assegnare al nuovo oggetto Criteri di gruppo nella casella **Nome** (ad esempio, **Lync Audio**) e quindi fare clic su **OK**.
 
-4.  Fare clic con il pulsante destro del mouse sul criterio appena creato e quindi scegliere **modifica**.
+4.  Fare clic con il pulsante destro del mouse sul nuovo criterio e quindi su **Modifica**.
 
-5.  In Editor gestione criteri di gruppo espandere **Configurazione computer**, espandere **criteri**, espandere **impostazioni di Windows**, fare clic con il pulsante destro del mouse su **QoS basata su criteri**e quindi scegliere **Crea nuovo criterio**.
+5.  In Editor Gestione Criteri di gruppo espandere **Configurazione computer**, **Criteri** e **Impostazioni di Windows**, fare clic con il pulsante destro del mouse su **QoS basata su criteri** e quindi scegliere **Crea nuovo criterio**.
 
-6.  Nella pagina di apertura della finestra di dialogo **QoS basata sui criteri** Digitare un nome per il nuovo criterio, ad esempio **audio Lync**, nella casella **nome** . Selezionare **Specifica valore DSCP** e impostare il valore su **46**. Lascia **specificare la frequenza di accelerazione in uscita** deselezionata e quindi fare clic su **Avanti**.
+6.  Nella finestra di dialogo **QoS basata su criteri** della pagina di apertura digitare un nome per il nuovo criterio (ad esempio, **Lync Audio**) nella casella **Nome**. Selezionare **Specifica valore DSCP** e impostare il valore su **46**. Lasciare **Specifica velocità in uscita** non selezionato e quindi fare clic su **Avanti**.
 
-7. Nella pagina successiva selezionare **solo le applicazioni con il nome eseguibile** e immettere il nome **Lync. exe**e quindi fare clic su **Avanti**. Questa impostazione indica al criterio di assegnare la priorità solo al traffico corrispondente dal client Lync.
+7. Nella pagina successiva selezionare **solo le applicazioni con il nome del file eseguibile** e immettere il nome **Lync. exe**e quindi fare clic su **Avanti**. Questa impostazione indica al criterio di assegnare una priorità solo al traffico corrispondente proveniente dal client Lync.
 
-8.  Nella terza pagina verificare che sia selezionato l'indirizzo IP di **origine** e **qualsiasi indirizzo IP di destinazione** e quindi fare clic su **Avanti**. Queste due impostazioni assicurano che i pacchetti vengano gestiti indipendentemente da quale computer (indirizzo IP) ha inviato i pacchetti e quale computer (indirizzo IP) riceverà tali pacchetti.
+8.  Nella terza pagina verificare che **Qualsiasi indirizzo IP di origine** e **Qualsiasi indirizzo IP di destinazione** siano entrambi selezionati e quindi fare clic su **Avanti**. Queste due impostazioni assicurano che i pacchetti vengano gestiti indipendentemente dal computer (indirizzo IP) che li invia e dal computer (indirizzo IP) che li riceve.
 
-9.  Nella pagina quattro selezionare **TCP e UDP** dal pulsante **Seleziona il protocollo questo criterio di QoS si applica all'elenco a** discesa. TCP (Transmission Control Protocol) e UDP (User Datagram Protocol) sono i due protocolli di rete usati più comunemente da Lync Server e dalle sue applicazioni client.
+9.  Nella quarta pagina selezionare **TCP e UDP** dall'elenco a discesa **Seleziona il protocollo a cui si applica questo criterio QoS**. TCP (Transmission Control Protocol) e UDP (User Datagram Protocol) sono i due protocolli di rete più comunemente utilizzati da Lync Server e dalle sue applicazioni client.
 
-10. Sotto l'intestazione **specificare il numero della porta di origine**, selezionare **dalla porta o dall'intervallo di origine**. Nella casella di testo associata digitare l'intervallo di porte riservato per le trasmissioni audio. Ad esempio, se hai riservato le porte 50020 tramite le porte 50039 per il traffico audio, immetti l'intervallo di porte usando questo formato: **50020:50039**. Fare clic su **fine**.
+10. Sotto l'intestazione **Specifica il numero della porta di origine** selezionare **Da questo numero di porta o intervallo di porte di origine**. Nella casella di testo abbinata digitare l'intervallo di porte riservato alle trasmissioni audio. Se ad esempio è stato riservato al traffico audio l'intervallo di porte compreso tra la 50020 e la 50039, immettere l'intervallo di porte utilizzando questo formato: **50020:50039**. Fare clic su **Fine**.
 
-Dopo aver creato i criteri QoS per l'audio, è necessario creare un secondo criterio per il video. Per creare un criterio per il video, seguire la stessa procedura di base seguita durante la creazione dei criteri audio, eseguendo queste sostituzioni:
+Dopo aver creato il criterio QoS per l'audio, è necessario creare un secondo criterio per il video. Per creare un criterio per il video, seguire la stessa procedura base osservata per creare il criterio audio, apportandovi le modifiche seguenti:
 
-  - Usare un nome di criterio diverso (e univoco), ad esempio **Lync video**.
+  - Utilizzare un nome criterio diverso e univoco (ad esempio, **Lync Video**).
 
-  - Impostare il valore DSCP su **34** anziché su 46. Come indicato in precedenza, non è necessario usare il valore DSCP 34; devi semplicemente assegnare un valore DSCP diverso rispetto a quello usato per l'audio.
+  - Impostare il valore DSCP su **34** anziché su 46. Come accennato, non è necessario utilizzare il valore DSCP 34, bensì è sufficiente utilizzare un valore diverso da quello specificato per l'audio.
 
-  - Usa l'intervallo di porte configurato in precedenza per il traffico video. Ad esempio, se sono state riservate le porte da 58000 a 58019 per il video, impostare l'intervallo di porte su questo: **58000:58019**.
+  - Utilizzare l'intervallo di porte precedentemente configurato per il traffico video. Se ad esempio al video sono state riservate le porte da 58000 a 58019, impostare l'intervallo di porte in questo modo: **58000:58019**.
 
-Se si decide di creare un criterio per la gestione del traffico di condivisione delle applicazioni, eseguire queste sostituzioni:
+Se si decide di creare un criterio per la gestione del traffico della condivisione applicazioni, effettuare queste sostituzioni:
 
-  - Usare un nome di criterio diverso (e univoco), ad esempio la **condivisione delle applicazioni di Lync Server**.
+  - Utilizzare un nome criterio diverso e univoco (ad esempio, **Condivisione applicazioni Lync Server**).
 
-  - Impostare il valore DSCP su **24** anziché su 46. (Anche in questo caso, il valore non deve essere 24; è semplicemente diverso dai valori DSCP usati per l'audio e per il video.)
+  - Impostare il valore DSCP su **24** anziché su 46. Di nuovo, non è rilevante che questo valore sia 24, bensì è sufficiente che sia diverso dai valori utilizzati per l'audio e per il video.
 
-  - Usa l'intervallo di porte configurato in precedenza per il traffico video. Ad esempio, se si hanno le porte riservate da 42000 a 42019 per la condivisione delle applicazioni, impostare l'intervallo di porte su questo: **42000:42019**.
+  - Utilizzare l'intervallo di porte precedentemente configurato per il traffico video. Se ad esempio alla condivisione delle applicazioni sono state riservate le porte da 42000 a 42019, impostare l'intervallo di porte in questo modo: **42000:42019**.
 
 Per un criterio di trasferimento file:
 
-  - Usare un nome di criterio diverso (e univoco), ad esempio i **trasferimenti di file di Lync Server**.
+  - Utilizzare un nome criterio diverso e univoco (ad esempio, **Trasferimenti file di Lync Server**).
 
-  - Imposta il valore DSCP su **14**. (Anche in questo caso, il valore non deve essere 14, ma è semplicemente un codice DSCP univoco).
+  - Impostare il valore DSCP su **14**. Di nuovo, non è rilevante che questo valore sia 14, bensì è sufficiente che sia un codice DSCP univoco.
 
-  - Usa l'intervallo di porte configurato in precedenza per l'applicazione. Ad esempio, se si hanno le porte riservate da 42020 a 42039 per la condivisione delle applicazioni, impostare l'intervallo di porte su questo: **42020:42039**.
+  - Utilizzare l'intervallo di porte configurata in precedenza per l'applicazione. Se ad esempio alla condivisione delle applicazioni sono state riservate le porte da 42020 a 42039, impostare l'intervallo di porte in questo modo: **42020:42039**.
 
-I nuovi criteri creati non avranno effetto finché i criteri di gruppo non saranno stati aggiornati nei computer client. Anche se i criteri di gruppo vengono periodicamente aggiornati autonomamente, è possibile forzare l'aggiornamento immediato eseguendo il comando seguente in ogni computer in cui è necessario aggiornare i criteri di gruppo:
+I nuovi criteri creati non saranno effettivi finché Criteri di gruppo non verrà aggiornato nei computer client. Benché Criteri di gruppo venga aggiornato automaticamente a intervalli regolari, è possibile effettuare un aggiornamento immediato eseguendo il comando seguente in ogni computer in cui è necessario aggiornare Criteri di gruppo:
 
     Gpudate.exe /force
 
-Questo comando può essere eseguito da qualsiasi finestra di comando in esecuzione in credenziali di amministratore. Per eseguire una finestra di comando in credenziali di amministratore, fare clic su **Start**, fare clic con il pulsante destro del mouse su **prompt dei comandi**e quindi scegliere **Esegui come amministratore**.
+Questo comando può essere eseguito da qualsiasi finestra dei comandi eseguita con credenziali di amministratore. Per eseguire una finestra dei comandi con credenziali di amministratore, fare clic sul pulsante **Start**, fare clic con il pulsante destro del mouse su **Prompt dei comandi** e quindi scegliere **Esegui come amministratore**.
 
-Tieni presente che questi criteri devono essere mirati verso i computer client. Non devono essere applicati ai server che eseguono Lync Server.
+Tenere presente che questi criteri devono essere indirizzati verso i computer client. Non devono essere applicati ai server che eseguono Lync Server.
 
-Per assicurarti che i pacchetti di rete siano contrassegnati con il valore DSCP appropriato, devi anche creare una nuova voce del registro di sistema in ogni computer completando la procedura seguente:
+Per assicurare che i pacchetti di rete siano contrassegnati con il valore DSCP appropriato, è consigliabile creare una nuova voce del Registro di sistema su ogni computer completando la procedura seguente:
 
-1.  Fare clic sul pulsante **Start** e quindi su **Esegui**.
+1.  Fare clic sul pulsante **Start**, quindi scegliere **Esegui**.
 
-2.  Nella finestra di dialogo **Esegui** Digitare **Regedit** e quindi premere INVIO.
+2.  Nella finestra di dialogo **Esegui** digitare **regedit** e quindi premere INVIO.
 
 3.  Nell'editor del registro di sistema **espandere\_HKEY\_computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi**e quindi espandere **Tcpip**.
 
-4.  Fare clic con il pulsante destro del mouse su **Tcpip**, scegliere **nuovo**e quindi fare clic su **chiave**. Dopo la creazione della nuova chiave del registro di sistema, digitare **QoS** e quindi premere INVIO per rinominare la chiave.
+4.  Fare clic con il pulsante destro **Tcpip**, scegliere **Nuovo** e quindi fare clic su **Chiave**. Dopo aver creato la nuova chiave del Registro di sistema, digitare **QoS** e quindi premere INVIO per rinominare la chiave.
 
-5.  Fare clic con il pulsante destro del mouse su **QoS**, scegliere **nuovo**e quindi fare clic su **valore stringa**. Dopo la creazione del nuovo valore del registro di sistema, digitare non **usare NLA** e quindi premere INVIO per rinominare il valore.
+5.  Fare clic con il pulsante destro del mouse su **QoS**, scegliere **Nuovo** e quindi **Valore stringa**. Dopo aver creato il nuovo valore del Registro di sistema, digitare **Do not use NLA** e quindi premere INVIO per rinominare il valore.
 
-6.  Fare doppio clic su non **usare NLA**. Nella finestra di dialogo **Modifica stringa** Digitare **1** nella casella **dati valore** e quindi fare clic su **OK**.
+6.  Fare doppio clic su **Do not use NLA**. Nella finestra di dialogo **Modifica stringa** digitare **1** nella casella **Dati valore** e quindi fare clic su **OK**.
 
-7.  Chiudere l'editor del registro di sistema e riavviare il computer.
+7.  Chiudere l'editor del Registro di sistema e quindi riavviare il computer.
 
 <div>
 
-## <a name="configuring-quality-of-service-on-computers-with-multiple-network-adapters"></a>Configurazione della qualità del servizio nei computer con più schede di rete
+## <a name="configuring-quality-of-service-on-computers-with-multiple-network-adapters"></a>Configurazione della qualità del servizio in computer con più schede di rete
 
-Se si dispone di un computer in cui sono presenti più schede di rete, è possibile che si verifichino occasionalmente problemi in cui i valori DSCP sono visualizzati come 0x00 invece del valore configurato. Ciò si verifica in genere nei computer in cui una o più schede di rete non sono in grado di accedere al dominio Active Directory, ad esempio se questi adapter vengono usati per una rete privata. In casi come questo, i valori DSCP verranno contrassegnati per gli adapter che possono accedere al dominio, ma non verranno contrassegnati per gli adapter che non possono accedere al dominio.
+Se si dispone di un computer dotato di più schede di rete può verificarsi talvolta un problema per il quale i DSCP risultano avere valore 0x00 anziché il valore configurato. Questo solitamente si verifica nei computer in cui una o più schede di rete non sono in grado di accedere al dominio di Active Directory, come avviene ad esempio nel caso delle schede utilizzate per una rete privata. In questi casi i valori DSCP verranno assegnati alle schede che possono accedere al dominio, ma non alle altre.
 
-Se si vuole contrassegnare i valori DSCP per tutte le schede di rete in un computer, inclusi gli adapter che non hanno accesso al dominio, è necessario aggiungere e configurare un valore per il registro di sistema. Questa operazione può essere eseguita completando la procedura seguente:
+Se si desidera che i valori DSCP vengano assegnati a tutte le schede di rete di un computer, comprese quelle che non hanno accesso al dominio, sarà necessario aggiungere un valore al Registro di sistema e configurarlo. A tale scopo, è possibile eseguire la procedura seguente.
 
-1.  Fare clic sul pulsante **Start** e quindi su **Esegui**.
+1.  Fare clic sul pulsante **Start** e quindi scegliere **Esegui**.
 
-2.  Nella finestra di dialogo **Esegui** Digitare **Regedit** e quindi premere INVIO.
+2.  Nella finestra di dialogo **Esegui** digitare **regedit** e quindi premere INVIO.
 
 3.  Nell'editor del registro di sistema **espandere\_HKEY\_computer locale**, espandere **System**, espandere **CurrentControlSet**, espandere **Servizi**e quindi espandere **Tcpip**.
 
-4.  Se non viene visualizzata una chiave del registro di sistema con l'etichetta **QoS** , fare clic con il pulsante destro del mouse su **Tcpip**, scegliere **nuovo**e quindi fare clic su **chiave**. Dopo aver creato la nuova chiave, digitare **QoS** e quindi premere INVIO per rinominare la chiave.
+4.  Se non è presente una chiave del Registro di sistema denominata **QoS**, fare clic con il pulsante destro del mouse su **Tcpip**, scegliere **Nuovo** e quindi fare clic su **Chiave**. Dopo aver creato la nuova chiave, digitare **QoS** e quindi premere INVIO per rinominare la chiave.
 
-5.  Fare clic con il pulsante destro del mouse su **QoS**, scegliere **nuovo**e quindi fare clic su **valore stringa**. Dopo la creazione del nuovo valore del registro di sistema, digitare non **usare NLA** e quindi premere INVIO per rinominare il valore.
+5.  Fare clic con il pulsante destro del mouse su **QoS**, scegliere **Nuovo** e quindi **Valore stringa**. Dopo aver creato il nuovo valore del Registro di sistema, digitare **Do not use NLA** e quindi premere INVIO per rinominare il valore.
 
-6.  Fare doppio clic su non **usare NLA**. Nella finestra di dialogo **Modifica stringa** Digitare **1** nella casella **dati valore** e quindi fare clic su **OK**.
+6.  Fare doppio clic su **Do not use NLA**. Nella finestra di dialogo **Modifica stringa** digitare **1** nella casella **Dati valore** e quindi fare clic su **OK**.
 
-Dopo aver creato e configurato il nuovo valore del registro di sistema, sarà necessario riavviare il computer in modo che le modifiche abbiano effetto.
+Dopo aver creato e configurato il nuovo valore del Registro di sistema, sarà necessario riavviare il computer per rendere effettive le modifiche.
 
 </div>
 

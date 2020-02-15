@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: topologie per telefoni IP'
+title: 'Lync Server 2013: topologie per i telefoni IP'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183662
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e05a56d30167f2e20a383cde9fcfaaa70418e650
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 69761715846cd65a44fe34c9c8465101e9ceb681
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41745206"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045448"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="topologies-for-ip-phones-in-lync-server-2013"></a>Topologie per telefoni IP in Lync Server 2013
+# <a name="topologies-for-ip-phones-in-lync-server-2013"></a>Topologie per i telefoni IP in Lync Server 2013
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41745206"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-21_
+_**Ultimo argomento modificato:** 2012-06-21_
 
-Questa sezione offre una panoramica del processo di connettività e spiega le differenze tra il modo in cui un telefono IP si connette in una rete interna ed esterna.
+In questa sezione viene fornita una panoramica del processo di connettività e vengono illustrate le differenze tra la modalità di connessione di un telefono IP in una rete interna e in una rete esterna.
 
 <div>
 
 
 > [!NOTE]  
-> Lync Server offre il supporto per i telefoni IP seguenti: il telefono per l'area comune Aastra 6721ip, il telefono da tavolo Aastra 6725ip, il telefono IP HP 4110 (telefono per l'area comune), il telefono IP HP 4120 (telefono da tavolo), il telefono da tavolo IP di Polycom CX600, il telefono da tavolo IP di Polycom CX700 Polycom IP telefono per area comune e telefono per conferenze IP di Polycom CX3000. Di questi telefoni, tutti tranne il Polycom CX700 può eseguire Lync Phone Edition.
+> Lync Server fornisce il supporto per i seguenti telefoni IP: Aastra 6721ip common area Phone, Aastra 6725ip Desk Phone, HP 4110 IP Phone (Common area Phone), HP 4120 IP Phone (Desk Phone), Polycom CX600 IP Desk Phone, Polycom CX700 IP Desk Phone, Polycom CX500 IP telefono di area comune e telefono di conferenza IP di Polycom CX3000. Di tali telefoni, tutti gli utenti di Polycom CX700 possono eseguire Lync Phone Edition.
 
 
 
 </div>
 
-Il diagramma seguente descrive tutti i componenti coinvolti nella connettività dei dispositivi nell'ambiente aziendale.
+Nel diagramma seguente vengono descritti tutti i componenti coinvolti nella connettività di un dispositivo nell'ambiente aziendale.
 
 **Topologia interna**
 
@@ -59,13 +59,13 @@ Il diagramma seguente descrive tutti i componenti coinvolti nella connettività 
 
 
 > [!NOTE]  
-> La figura precedente è una rappresentazione logica, non una panoramica fisica. Ad esempio, Active Directory Domain Services (AD DS) si trova raramente nello stesso computer dei componenti di Lync Server. L'archivio utenti può essere posizionato sul server back-end o sui server di archiviazione e monitoraggio. Lync Server Management Shell, Web Server e Update Services fanno parte del ruolo del server front-end.
+> La figura precedente è una rappresentazione logica e non una panoramica fisica. Ad esempio, Active Directory Domain Services (AD DS) si trova raramente nello stesso computer di qualsiasi componente di Lync Server. L'archivio utente può essere contenuto nel server back-end, nel server di archiviazione o nel Monitoring Server. Lync Server Management Shell, il server Web e i servizi di aggiornamento fanno parte del ruolo del server front-end.
 
 
 
 </div>
 
-Il diagramma seguente offre una panoramica dei componenti coinvolti quando il dispositivo si trova all'esterno della rete aziendale.
+Nel diagramma seguente viene fornita una panoramica dei componenti coinvolti quando il dispositivo si trova all'esterno della rete aziendale.
 
 **Topologia esterna**
 
@@ -75,7 +75,7 @@ Il diagramma seguente offre una panoramica dei componenti coinvolti quando il di
 
 
 > [!NOTE]  
-> Il servizio Web Update del dispositivo fornisce un sito Web esterno e interno, ma solo quello esterno è illustrato qui.<BR>La posizione del registrar e l'URL del servizio Web di aggiornamento dei dispositivi per l'organizzazione devono essere pubblicati in DNS se è necessario abilitare l'accesso esterno. Inoltre, il server perimetrale deve essere distribuito e configurato correttamente per consentire le comunicazioni esterne dal dispositivo all'ambiente aziendale e viceversa. Questa operazione viene omessa dal diagramma precedente perché la distribuzione di Edge non è specifica della connettività dei dispositivi.
+> Il Servizio Web aggiornamento dispositivi offre un sito Web esterno e uno interno, ma in questo diagramma viene illustrato solo quello esterno.<BR>La posizione della funzione di registrazione e l'URL del Servizio Web aggiornamento dispositivi dell'organizzazione devono essere pubblicati in DNS se deve essere abilitato l'accesso esterno. Il server perimetrale inoltre deve essere distribuito e configurato correttamente per consentire le comunicazioni esterne dal dispositivo all'ambiente aziendale e viceversa. Questo viene omesso nel diagramma precedente perché la distribuzione di server perimetrali non è specifica della connettività di un dispositivo.
 
 
 

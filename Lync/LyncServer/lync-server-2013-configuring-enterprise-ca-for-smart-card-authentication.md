@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: configurazione della CA aziendale per l'autenticazione tramite smart card"
+title: "Lync Server 2013: Configuring Enterprise CA per l'autenticazione con smart card"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 54973692
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 44df62031e679c641b4c7dbe6b5c205e1ae899e8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a49fb76019fbb3bc3356fed5de7a67b0e3a10350
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728966"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046379"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-enterprise-ca-for-smart-card-authentication-in-lync-server-2013"></a>Configurazione della CA aziendale per l'autenticazione tramite smart card in Lync Server 2013
+# <a name="configuring-enterprise-ca-for-smart-card-authentication-in-lync-server-2013"></a>Configurazione di CA dell'organizzazione per l'autenticazione con smart card in Lync Server 2013
 
 </div>
 
@@ -35,31 +35,31 @@ ms.locfileid: "41728966"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-07-03_
+_**Ultimo argomento modificato:** 2013-07-03_
 
-La sezione seguente descrive come configurare un'autorità di certificazione (CA) aziendale per supportare l'autenticazione tramite smart card. Per informazioni su come installare una CA radice aziendale, vedere installare un'autorità di [http://go.microsoft.com/fwlink/p/?LinkID=313364](http://go.microsoft.com/fwlink/p/?linkid=313364)certificazione radice aziendale.
+Nella sezione seguente viene descritto come configurare un'autorità di certificazione (CA) radice dell'organizzazione per il supporto dell'autenticazione con smart card. Per informazioni su come installare una CA radice dell'organizzazione, vedere Install a Enterprise Root Certification Authority [http://go.microsoft.com/fwlink/p/?LinkID=313364](http://go.microsoft.com/fwlink/p/?linkid=313364)at.
 
 <div>
 
-## <a name="configuring-an-enterprise-root-certificate-authority-to-support-smart-card-authentication"></a>Configurazione di un'autorità di certificazione radice aziendale per supportare l'autenticazione tramite smart card
+## <a name="configuring-an-enterprise-root-certificate-authority-to-support-smart-card-authentication"></a>Configurazione di un'autorità di certificazione radice dell'organizzazione per il supporto dell'autenticazione con smart card
 
-La procedura seguente descrive come configurare una CA radice aziendale per supportare l'autenticazione tramite smart card:
+Nella procedura seguente viene descritto come configurare una CA radice dell'organizzazione per il supporto dell'autenticazione con smart card:
 
-1.  Accedere al computer della CA aziendale usando un account di amministratore di dominio.
+1.  Accedere al computer della CA dell'organizzazione utilizzando un account di amministratore di dominio.
 
-2.  Avviare System Manager e verificare che sia installato il ruolo di registrazione Web Authority Certificate.
+2.  Avviare System Manager e verificare che sia installato il ruolo di registrazione Web dell'autorità di certificazione.
 
-3.  Nel menu **strumenti di amministrazione** aprire la console di gestione **autorità di certificazione** .
+3.  Dal menu **strumenti di amministrazione** , aprire la console di gestione **autorità di certificazione** .
 
 4.  Nel riquadro di spostamento espandere **autorità di certificazione**.
 
-5.  Fare clic con il pulsante destro del mouse sui **modelli di certificato**, scegliere **nuovo**e quindi **modello certificato da emettere**.
+5.  Fare clic con il pulsante destro del mouse su **modelli di certificato**, selezionare **nuovo**e quindi selezionare **modello di certificato da emettere**.
 
-6.  Selezionare **agente di registrazione**, **utente smartcard**e accesso tramite **smartcard**.
+6.  Selezionare **l'agente di registrazione, l'** **utente smartcard**e l' **accesso smartcard**.
 
 7.  Fare clic su **OK**.
 
-8.  Fare clic con il pulsante destro sul **modello di certificato**.
+8.  Fare clic con il pulsante destro su **modelli di certificato**.
 
 9.  Selezionare **Gestisci**.
 
@@ -67,13 +67,13 @@ La procedura seguente descrive come configurare una CA radice aziendale per supp
 
 11. Fare clic sulla scheda **sicurezza** .
 
-12. Modificare le autorizzazioni nel modo seguente:
+12. Modificare le autorizzazioni come indicato di seguito:
     
-      - Aggiungere singoli account di annunci utente con autorizzazioni di lettura/registrazione (Consenti) oppure
+      - Aggiungere singoli account di Active Directory con autorizzazioni di lettura/registrazione (Consenti) oppure
     
       - Aggiungere un gruppo di sicurezza contenente gli utenti di smart card con autorizzazioni di lettura/registrazione (Consenti) oppure
     
-      - Aggiungere il gruppo Domain Users con le autorizzazioni di lettura/registrazione (Consenti)
+      - Aggiungere il gruppo Domain Users con autorizzazioni di lettura/registrazione (Consenti)
 
 </div>
 

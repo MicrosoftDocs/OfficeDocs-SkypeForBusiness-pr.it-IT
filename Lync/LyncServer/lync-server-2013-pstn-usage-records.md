@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Record utilizzo PSTN'
+title: 'Lync Server 2013: record di utilizzo PSTN'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185188
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5909494b4e4b6901964a7642481302ca221fe086
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 60700070c5426d4df4d1957367ccfd743a5ba44b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724676"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042033"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="pstn-usage-records-in-lync-server-2013"></a>Record utilizzo PSTN in Lync Server 2013
+# <a name="pstn-usage-records-in-lync-server-2013"></a>Record di utilizzo PSTN in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41724676"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-23_
+_**Ultimo argomento modificato:** 2012-09-23_
 
-La pianificazione dei record di utilizzo PSTN consiste principalmente nell'elencare tutte le autorizzazioni di chiamata attualmente in vigore nell'organizzazione, dall'amministratore delegato a lavoratori temporanei, consulenti e personale contingente. Questo processo offre anche l'opportunità di riesaminare le autorizzazioni di chiamata esistenti e di modificarle. È possibile creare record di utilizzo PSTN solo per le autorizzazioni di chiamata applicabili agli utenti di VoIP aziendale previsti, ma una soluzione migliore a lungo raggio può essere quella di creare record di utilizzo PSTN per tutte le autorizzazioni di chiamata, indipendentemente dal fatto che alcuni potrebbero non essere attualmente si applicano al gruppo di utenti che deve essere abilitato per VoIP aziendale. Se le autorizzazioni di chiamata cambiano o vengono aggiunti nuovi utenti con autorizzazioni di chiamata diverse, saranno già stati creati i record di utilizzo PSTN necessari.
+La pianificazione dei record utilizzo PSTN consiste principalmente nell'elencare tutte le autorizzazioni per le chiamate attualmente in vigore nell'organizzazione, dal CEO fino ai dipendenti a tempo determinato, ai consulenti e al personale contingente. Questo processo offre anche la possibilità di riesaminare le autorizzazioni esistenti per le chiamate e modificarle. È possibile creare record utilizzo PSTN solo per le autorizzazioni per le chiamate applicabili agli utenti previsti di VoIP aziendale, ma potrebbe essere una soluzione a lungo termine più efficace creare record utilizzo PSTN per tutte le autorizzazioni per le chiamate, anche se alcune potrebbero non essere al momento applicabili al gruppo di utenti da abilitare per VoIP aziendale. In questo modo, se le autorizzazioni per le chiamate subiscono modifiche o vengono aggiunti nuovi utenti con autorizzazioni diverse per le chiamate, saranno già stati creati i record utilizzo PSTN necessari.
 
-La tabella seguente mostra una tipica tabella di utilizzo PSTN.
+Nella tabella seguente viene illustrata una tipica tabella di record di utilizzo PSTN:
 
 ### <a name="pstn-usage-records"></a>Record utilizzo PSTN
 
@@ -50,21 +50,21 @@ La tabella seguente mostra una tipica tabella di utilizzo PSTN.
 </colgroup>
 <thead>
 <tr class="header">
-<th>Attributo Phone</th>
+<th>Attributo telefono</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Locale</p></td>
+<td><p>Local</p></td>
 <td><p>Chiamate locali</p></td>
 </tr>
 <tr class="even">
-<td><p>Lunga distanza</p></td>
+<td><p>Long-Distance</p></td>
 <td><p>Chiamate interurbane</p></td>
 </tr>
 <tr class="odd">
-<td><p>Internazionale</p></td>
+<td><p>Internazionali</p></td>
 <td><p>Chiamate internazionali</p></td>
 </tr>
 <tr class="even">
@@ -73,11 +73,11 @@ La tabella seguente mostra una tipica tabella di utilizzo PSTN.
 </tr>
 <tr class="odd">
 <td><p>Redmond</p></td>
-<td><p>Dipendenti a tempo pieno Redmond</p></td>
+<td><p>Dipendenti a tempo pieno di Redmond</p></td>
 </tr>
 <tr class="even">
 <td><p>RedmondTemps</p></td>
-<td><p>Dipendenti temporanei Redmond</p></td>
+<td><p>Dipendenti a tempo determinato di Redmond</p></td>
 </tr>
 <tr class="odd">
 <td><p>Zurigo</p></td>
@@ -87,13 +87,13 @@ La tabella seguente mostra una tipica tabella di utilizzo PSTN.
 </table>
 
 
-Da solo, i record di utilizzo PSTN non eseguono alcuna operazione. Affinché funzioni, è necessario associarle con le operazioni seguenti:
+I record di utilizzo PSTN non svolgono di per sé alcuna funzione. Per utilizzarli, è necessario associarli agli elementi seguenti:
 
   - Criteri vocali, assegnati agli utenti.
 
   - Route, assegnate ai numeri di telefono.
 
-Per informazioni dettagliate sui criteri vocali e le route, vedere [criteri vocali in Lync server 2013](lync-server-2013-voice-policies.md) e [route vocali in Lync Server 2013](lync-server-2013-voice-routes.md). Per informazioni dettagliate su come crearle e configurarle, vedere [configurazione delle route vocali per le chiamate in uscita in Lync Server 2013](lync-server-2013-configuring-voice-routes-for-outbound-calls.md).
+Per informazioni dettagliate sui criteri vocali e le route, vedere [Voice Policies in Lync server 2013](lync-server-2013-voice-policies.md) e [Voice routes in Lync Server 2013](lync-server-2013-voice-routes.md). Per informazioni dettagliate su come crearli e configurarli, vedere [configurazione delle route vocali per le chiamate in uscita in Lync Server 2013](lync-server-2013-configuring-voice-routes-for-outbound-calls.md).
 
 </div>
 

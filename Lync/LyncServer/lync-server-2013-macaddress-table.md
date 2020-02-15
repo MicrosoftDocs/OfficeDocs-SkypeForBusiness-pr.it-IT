@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella MacAddress'
+title: 'Lync Server 2013: tabella MacAddress'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184963
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b9bf888e7e04f60fc8c1e06e4ef4ab4e9d9e0f3d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f855b09e0174c9688aa122f97736e86ed7f2fdf9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765314"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037586"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41765314"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-02_
+_**Ultimo argomento modificato:** 2012-10-02_
 
-La tabella MacAddress è una tabella di supporto. Ogni record rappresenta una sola origine.
+La tabella MacAddress è una tabella di supporto. Ogni record rappresenta un'origine.
 
 
 <table>
@@ -60,13 +60,13 @@ La tabella MacAddress è una tabella di supporto. Ogni record rappresenta una so
 <td><p><strong>MacAddressKey</strong></p></td>
 <td><p>int</p></td>
 <td><p>Principale</p></td>
-<td><p>Numero univoco che identifica l'indirizzo Mac.</p></td>
+<td><p>Numero univoco che identifica l'indirizzo MAC.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>MacAddress</strong></p></td>
 <td><p>varchar (256)</p></td>
-<td><p>Univoci</p></td>
-<td><p>Stringa dell'indirizzo Mac.</p></td>
+<td><p>Univoco</p></td>
+<td><p>Stringa dell'indirizzo MAC.</p></td>
 </tr>
 </tbody>
 </table>

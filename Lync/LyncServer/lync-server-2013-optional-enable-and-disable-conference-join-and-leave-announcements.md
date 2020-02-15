@@ -1,5 +1,5 @@
 ---
-title: (Facoltativo) Abilitare e disabilitare gli annunci di partecipazione e abbandono delle conferenze
+title: Optional Abilitare e disabilitare gli annunci di partecipazione alla conferenza e di uscita
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185403
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8b8e75a0d2ed81a515540f2a8a1811998a85d44c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6b18dadbb4b7dc5a35f8688c46f2836b46cb55a5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755750"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051148"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="optional-enable-and-disable-conference-join-and-leave-announcements-in-lync-server-2013"></a>(Facoltativo) Abilitare e disabilitare gli annunci di partecipazione e abbandono delle conferenze in Lync Server 2013
+# <a name="optional-enable-and-disable-conference-join-and-leave-announcements-in-lync-server-2013"></a>Optional Abilitare e disabilitare gli annunci di partecipazione alla conferenza e di uscita in Lync Server 2013
 
 </div>
 
@@ -35,38 +35,38 @@ ms.locfileid: "41755750"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-30_
+_**Ultimo argomento modificato:** 2012-09-30_
 
-Quando gli utenti con accesso esterno entrano o lasciano una conferenza, l'applicazione di annunci per conferenze può annunciare l'entrata o l'uscita suonando un tono o pronunciando i loro nomi. È possibile modificare la modalità di funzionamento degli annunci eseguendo i cmdlet. Questo passaggio è facoltativo.
+Quando gli utenti con accesso esterno si uniscono o lasciano una conferenza, l'applicazione annuncio per le conferenze può annunciare la propria entrata o uscita suonando un tono o pronunciando i propri nomi. Il funzionamento degli annunci può essere modificato eseguendo i cmdlet. Questo passaggio è facoltativo.
 
 <div>
 
-## <a name="to-modify-the-conference-join-and-leave-announcement-behavior"></a>Per modificare il comportamento dell'annuncio per la conferenza e il permesso
+## <a name="to-modify-the-conference-join-and-leave-announcement-behavior"></a>Per modificare il comportamento di partecipazione a una conferenza o di abbandono della stessa
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo **Cs-ServerAdministrator** o **CsAdministrator** .
+1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo **Cs-ServerAdministrator** o **CsAdministrator**.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Eseguire la procedura seguente al prompt dei comandi:
+3.  Eseguire il comando seguente al prompt:
     
         Get-CsDialinConferencingConfiguration
     
-    Questo cmdlet recupera informazioni sul fatto che i partecipanti debbano registrare il loro nome quando partecipano a una conferenza e come risponde Lync Server quando i partecipanti partecipano o lasciano una conferenza telefonica con accesso esterno.
+    Questo cmdlet recupera le informazioni sul fatto che i partecipanti devono registrare il proprio nome quando partecipano a una conferenza e in che modo Lync Server risponde quando i partecipanti si uniscono o lasciano una conferenza telefonica con accesso esterno.
 
-4.  Eseguire la procedura seguente al prompt dei comandi:
+4.  Eseguire il comando seguente al prompt:
     
         Set-CsDialinConferencingConfiguration -Identity <identity of dial-in conferencing settings to be modified>
         [-EnableNameRecording <$true | $false>]
         [-EntryExitAnnouncementsEnabledByDefault <$true | $false>]
         [-EntryExitAnnouncementsType <UseNames | ToneOnly]
     
-    **EnableNameRecording**   determina se i partecipanti anonimi vengono invitati a registrare il loro nome prima di accedere alla conferenza. Il valore predefinito è "$true", che indica che ai partecipanti anonimi viene richiesto di indicare il loro nome quando partecipano a una conferenza. I partecipanti autenticati non registrano il proprio nome perché viene usato il nome visualizzato.
+    **EnableNameRecording**   determina se ai partecipanti anonimi viene richiesto di registrare il proprio nome prima di accedere alla conferenza. Il valore predefinito è "$true" e indica che ai partecipanti anonimi viene richiesto di specificare il proprio nome durante l'accesso a una conferenza. I partecipanti autenticati non registrano il proprio nome perché viene utilizzato il nome visualizzato.
     
-    **EntryExitAnnouncementsEnabledByDefault**   indica se gli annunci sono attivati o disattivati per impostazione predefinita. Il valore predefinito è "$false", che indica che per impostazione predefinita non ci sono annunci quando i partecipanti partecipano o lasciano una conferenza. L'organizzatore della riunione può eseguire l'override di questa impostazione durante la pianificazione di una riunione.
+    **EntryExitAnnouncementsEnabledByDefault**   indica se gli annunci sono attivati o disattivati per impostazione predefinita. Il valore predefinito è "$false" e indica che per impostazione predefinita non vengono visualizzati annunci quando gli utenti partecipano a una conferenza o la abbandonano. L'organizzatore della riunione può sostituire questa impostazione durante la pianificazione della riunione.
     
-    **EntryExitAnnouncementsType**   indica l'azione eseguita ogni volta che un partecipante partecipa o esce da una conferenza per cui sono abilitati gli annunci. Il valore predefinito è "UseNames", che indica che è presente un annuncio simile al seguente: "Ken si è unito alla conferenza" quando gli annunci sono attivati.
+    **EntryExitAnnouncementsType**   indica l'azione intrapresa ogni volta che un partecipante si unisce o lascia una conferenza per la quale gli annunci sono abilitati. Il valore predefinito è "UseNames" e indica la visualizzazione di un annuncio simile al seguente: "Davide Garghentini si è unito alla conferenza" quando gli annunci sono attivati.
     
-    Queste impostazioni possono essere configurate nell'ambito globale o nell'ambito del sito. Le impostazioni configurate nell'ambito del sito hanno la precedenza sulle impostazioni configurate nell'ambito globale.
+    È possibile configurare queste impostazioni a livello globale o di sito. Le impostazioni configurate a livello di sito hanno la precedenza su quelle configurate a livello globale.
     
     Ad esempio:
     
@@ -75,7 +75,7 @@ Quando gli utenti con accesso esterno entrano o lasciano una conferenza, l'appli
         -EntryExitAnnouncementsEnabledByDefault $true
         -EntryExitAnnouncementsType ToneOnly
     
-    In questo esempio le impostazioni vengono configurate nell'ambito del sito per Redmond. Gli annunci sono attivati, ma ai partecipanti non viene chiesto di pronunciare il loro nome quando partecipano a una conferenza. Viene riprodotto un tono quando i partecipanti entrano o lasciano una conferenza.
+    In questo esempio le impostazioni vengono configurate al livello del sito di Redmond. Gli annunci sono attivati ma ai partecipanti non viene richiesto di specificare il proprio nome durante l'accesso a una conferenza. Quando i partecipanti accedono a una conferenza o la abbandonano viene riprodotto un segnale acustico.
 
 </div>
 

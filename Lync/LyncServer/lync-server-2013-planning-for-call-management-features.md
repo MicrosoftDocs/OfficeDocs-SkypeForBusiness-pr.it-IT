@@ -12,16 +12,16 @@ ms:contentKeyID: 48184298
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 206974500bd27c0cbecd902f9e87daf9a435c6dd
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3bc3e644955a59515334a30fdf974db6c90d3f33
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41754626"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037124"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,32 +35,32 @@ ms.locfileid: "41754626"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-12-17_
+_**Ultimo argomento modificato:** 2012-12-17_
 
-Le caratteristiche di gestione delle chiamate vocali aziendali controllano la modalità di routing delle chiamate in arrivo e la risposta. Lync Server 2013 offre le funzionalità di gestione delle chiamate seguenti:
+Le funzionalità di gestione delle chiamate di VoIP aziendale controllano la modalità di routing e di risposta per le chiamate in arrivo. Lync Server 2013 fornisce le seguenti funzionalità di gestione delle chiamate:
 
-  - **Call Park**: consente agli utenti vocali di parcheggiare temporaneamente una chiamata e quindi di raccoglierla dallo stesso o da un altro telefono.
+  - **Parcheggio di chiamata**: consente agli utenti dei servizi vocali di parcheggiare temporaneamente una chiamata e quindi rispondere in seguito dallo stesso telefono o un altro.
 
-  - **Pick**-up di gruppo: consente agli utenti di rispondere alle chiamate che squillano per gli altri utenti vocali assegnati ai gruppi di raccolta chiamate.
+  - **Prelievo di gruppo**: consente agli utenti di rispondere alle chiamate che squillano per gli altri utenti vocali assegnati ai gruppi di prelievo di chiamata.
     
     <div>
     
 
     > [!NOTE]  
-    > Il pick-up di gruppo è nuovo con gli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013.
+    > Il prelievo dei gruppi è nuovo con gli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013.
 
     
     </div>
 
-  - **Response Group**: instrada le chiamate in arrivo a gruppi di agenti usando le domande e le risposte di Hunt Groups o IVR (Interactive Voice Response).
+  - **Response Group**: instrada le chiamate in arrivo a gruppi di agenti utilizzando gruppi di risposta o domande e risposte IVR (Interactive Voice Response).
 
   - **Annuncio:**    riproduce un messaggio per le chiamate effettuate a un numero non assegnato o instrada la chiamata altrove o entrambe.
 
-Se si prevede di distribuire VoIP aziendale, è possibile scegliere di implementare una o tutte queste funzionalità di gestione delle chiamate.
+Se si prevede di distribuire VoIP aziendale, è possibile scegliere di implementare una qualsiasi o tutte le funzionalità di gestione delle chiamate seguenti.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Pianificazione del parcheggio di chiamata in Lync Server 2013](lync-server-2013-planning-for-call-park.md)
 

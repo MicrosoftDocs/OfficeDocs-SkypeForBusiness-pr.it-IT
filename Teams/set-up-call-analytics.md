@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Reporting
 description: Configurare e usare le analisi delle chiamate per identificare e risolvere i problemi di qualità delle chiamate di Skype for business e Microsoft teams.
-ms.openlocfilehash: fe46ee580554969d26395b26117649ab8ada2ea0
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 347725e77806f94e44b4c8d160736ceb23265f11
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029407"
 ---
 # <a name="set-up-call-analytics"></a>Configurare l'analisi delle chiamate
 
@@ -74,7 +74,7 @@ Gli specialisti del supporto delle comunicazioni gestiscono i problemi di qualit
  ### <a name="set-up-permissions-by-assigning-admin-roles"></a>Configurare le autorizzazioni assegnando ruoli di amministratore
 <a name="BKMK_SetUpTier"> </a>
 
-Per informazioni su come assegnare ruoli amministrativi in Azure Active Directory, vedere [visualizzare e assegnare ruoli in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
+Per informazioni su come assegnare ruoli amministrativi in Azure Active Directory, vedere [visualizzare e assegnare ruoli in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal).
 
 ## <a name="upload-a-tsv-or-csv-file-to-add-building-site-and-tenant-information"></a>Caricare un file con estensione TSV o CSV per aggiungere informazioni su edifici, siti e tenant
 <a name="BKMK_UploadFiles"> </a>
@@ -92,7 +92,7 @@ Se si sta creando il file TSV o CSV da zero, vedere formato di [file di dati ten
 ## <a name="related-topics"></a>Argomenti correlati
 <a name="BKMK_UploadFiles"> </a>
 
-[Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+[Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
 [Analisi delle chiamate e Dashboard Qualità della chiamata](difference-between-call-analytics-and-call-quality-dashboard.md)
 

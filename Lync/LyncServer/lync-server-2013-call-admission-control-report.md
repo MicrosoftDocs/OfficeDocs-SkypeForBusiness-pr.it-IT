@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: report di controllo ammissione chiamata'
+title: 'Lync Server 2013: rapporto di controllo di ammissione di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185933
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ff036a27149db4360a938fe2ce9d63c2718f4d94
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ba5b643adf6a8208285aeba66304ddd1657afdfa
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730286"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045408"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="call-admission-control-report-in-lync-server-2013"></a>Report controllo ammissione chiamata in Lync Server 2013
+# <a name="call-admission-control-report-in-lync-server-2013"></a>Report di controllo di ammissione di chiamata in Lync Server 2013
 
 </div>
 
@@ -35,31 +35,31 @@ ms.locfileid: "41730286"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-29_
+_**Ultimo argomento modificato:** 2012-06-29_
 
-Il report controllo ammissione chiamata fornisce informazioni sulle sessioni peer-to-peer e di conferenza che sono state svolte in restrizioni impostate in posizione tramite il controllo di ammissione delle chiamate. Il controllo di ammissione delle chiamate, introdotto in Microsoft Lync Server 2010, consente agli amministratori di consentire alle sessioni di comunicazione (o non consentire) in base ai vincoli di larghezza di banda. Ad esempio, gli amministratori possono creare criteri che impongono un limite alla quantità di larghezza di banda disponibile per le chiamate vocali e video. Se è stato raggiunto il limite di larghezza di banda, non è possibile inserire nuove chiamate vocali o videochiamate finché una delle chiamate correnti non è terminata e ha liberato le risorse di rete necessarie.
+Il Rapporto controllo di ammissione di chiamata fornisce informazioni sulle sessioni peer-to-peer e di conferenza sottoposte alle limitazioni imposte dal servizio Controllo di ammissione di chiamata. Il controllo di ammissione di chiamata, introdotto in Microsoft Lync Server 2010, consente agli amministratori di consentire (o non consentire) sessioni di comunicazione basate su vincoli di larghezza di banda. Gli amministratori possono ad esempio creare criteri che limitano la larghezza di banda disponibile per le chiamate vocali e video. Se il limite di larghezza di banda viene raggiunto, non è possibile avviare ulteriori chiamate vocali o video se prima non termina una delle chiamate in corso liberando le risorse di rete necessarie.
 
 <div>
 
-## <a name="accessing-the-call-admission-control-report"></a>Accesso al report di controllo ammissione chiamata
+## <a name="accessing-the-call-admission-control-report"></a>Accesso al Rapporto controllo di ammissione di chiamata
 
-Il report controllo ammissione chiamata si accede dalla Home page dei report di monitoraggio. Nel report controllo ammissione chiamata è possibile eseguire il drill-down per uno dei report seguenti:
+È possibile accedere al Rapporto controllo di ammissione di chiamata dalla home page di Relazioni monitoraggio. Dal Rapporto controllo di ammissione di chiamata è possibile eseguire il drill-down nei report seguenti:
 
-  - Report Dettagli conferenza: per accedere a questo report, fare clic sulla metrica dettagli di una sessione di conferenza.
+  - Rapporto Dettagli conferenza - Per accedere a questo rapporto, fare clic sulla metrica Dettagli in una sessione di conferenza.
 
-  - Report Dettagli sessione peer-to-peer: per accedere a questo report, fare clic sulla metrica Dettagli per una sessione peer-to-peer.
+  - Rapporto Dettagli sessione peer-to-peer - Per accedere a questo rapporto, fare clic sulla metrica Dettagli in una sessione peer-to-peer.
 
 </div>
 
 <div>
 
-## <a name="making-the-best-use-of-the-call-admission-control-report"></a>Uso ottimale del report di controllo dell'ammissione alle chiamate
+## <a name="making-the-best-use-of-the-call-admission-control-report"></a>Utilizzare al meglio il Rapporto controllo di ammissione di chiamata
 
-Per ottenere un elenco delle chiamate non riuscite a causa della larghezza di banda insufficiente, selezionare chiamate rifiutate a causa del controllo di ammissione di chiamata nell'elenco a discesa categoria chiamata. La maggior parte delle chiamate restituite avrà probabilmente un ID di diagnostica pari a 5:
+Per visualizzare un elenco delle chiamate non riuscite per larghezza di banda insufficiente, selezionare Chiamate rifiutate a causa del controllo di ammissione di chiamata dall'elenco a discesa Categoria chiamata. La maggior parte delle chiamate restituite avrà probabilmente l'ID diagnostica 5:
 
-Larghezza di banda insufficiente per stabilire una sessione. Provare a eseguire la reinstradazione PSTN.
+Larghezza di banda insufficiente per stabilire la sessione. Tentare il reindirizzamento PSTN.
 
-Ciò indica che le limitazioni del controllo di ammissione alle chiamate impedivano che la chiamata venisse eseguita nella rete VoIP.
+Questo indica che le limitazioni imposte dal servizio Controllo di ammissione di chiamata hanno impedito l'esecuzione della chiamata nella rete VoIP.
 
 </div>
 
@@ -67,11 +67,11 @@ Ciò indica che le limitazioni del controllo di ammissione alle chiamate impediv
 
 ## <a name="filters"></a>Filtri
 
-I filtri consentono di restituire un set di dati più mirato o di visualizzare i dati restituiti in modi diversi. Ad esempio, il report controllo ammissione chiamata consente di filtrare le chiamate dall'utente che ha avviato la chiamata o dall'utente che è stato chiamato. È anche possibile scegliere la modalità di raggruppamento dei dati. In questo caso, le chiamate vengono raggruppate per ora, giorno, settimana o mese.
+I filtri consentono di ottenere un set di dati più specifico o di visualizzare in modo diverso i dati restituiti. Ad esempio, il Rapporto controllo di ammissione di chiamata consente di filtrare le chiamate in base all'utente che le ha avviate o all'utente chiamato. È inoltre possibile scegliere la modalità di raggruppamento dei dati. In questo caso le chiamate sono raggruppabili per ora, giorno, settimana o mese.
 
-Nella tabella seguente sono elencati i filtri che è possibile usare con il report controllo ammissione chiamata.
+Nella tabella seguente sono elencati i filtri applicabili al Rapporto controllo di ammissione di chiamata.
 
-### <a name="call-admission-control-report-filters"></a>Filtri dei report di controllo ammissione chiamata
+### <a name="call-admission-control-report-filters"></a>Filtri del Rapporto controllo di ammissione di chiamata
 
 <table>
 <colgroup>
@@ -86,32 +86,32 @@ Nella tabella seguente sono elencati i filtri che è possibile usare con il repo
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Da</strong></p></td>
-<td><p>Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di inizio come indicato di seguito:</p>
-<p>7/17/12012 1:00 PM</p>
-<p>Se non si immette un'ora di inizio, il report inizia automaticamente da 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:</p>
+<td><p><strong>From</strong></p></td>
+<td><p>Data/ora di inizio dell'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come indicato di seguito:</p>
+<p>17/07/2012 13.00</p>
+<p>Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/17/12012</p>
-<p>Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</p>
+<p>Per visualizzare i dati in base alla settimana o al mese, immettere una data che rientra nella settimana o nel mese in base a cui deve essere effettuata la visualizzazione. Non è necessario immettere il primo giorno della settimana o del mese:</p>
 <p>7/13/2012</p>
-<p>Le settimane si eseguono sempre da domenica a sabato.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>A</strong></p></td>
-<td><p>Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base alle ore, immettere la data e l'ora di fine come indicato di seguito:</p>
-<p>7/17/12012 1:00 PM</p>
-<p>Se non si immette un'ora di fine, il report termina automaticamente a 12:00 AM nel giorno specificato. Per visualizzare i dati per giorno, immettere solo la data:</p>
+<td><p><strong>To</strong></p></td>
+<td><p>Data/ora di fine dell'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come indicato di seguito:</p>
+<p>17/07/2012 13.00</p>
+<p>Se non si specifica l'ora di fine, il rapporto termina automaticamente alla mezzanotte del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</p>
 <p>7/17/12012</p>
-<p>Per visualizzare la settimana o il mese, immettere una data che rientri in qualsiasi punto della settimana o del mese che si vuole visualizzare (non è necessario immettere il primo giorno della settimana o del mese):</p>
+<p>Per visualizzare i dati in base alla settimana o al mese, immettere una data che rientra nella settimana o nel mese in base a cui deve essere effettuata la visualizzazione. Non è necessario immettere il primo giorno della settimana o del mese:</p>
 <p>7/13/2012</p>
-<p>Le settimane si eseguono sempre da domenica a sabato.</p></td>
+<p>Le settimane vanno sempre dal lunedì alla domenica.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Pool</strong></p></td>
-<td><p>Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool o fare clic su <strong>[tutti]</strong> per visualizzare i dati per tutti i pool. Questo elenco a discesa viene compilato automaticamente in base ai record nel database.</p></td>
+<td><p>Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool o fare clic su <strong>[Tutti]</strong> per visualizzare dati per tutti i pool. Questo elenco a discesa viene popolato automaticamente in base ai record del database.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Tipo di attività</strong></p></td>
-<td><p>Tipo di attività. Selezionare una delle attività seguenti:</p>
+<td><p>Selezionare una delle attività seguenti:</p>
 <ul>
 <li><p>Tutti</p></li>
 <li><p>Peer-to-peer</p></li>
@@ -120,10 +120,10 @@ Nella tabella seguente sono elencati i filtri che è possibile usare con il repo
 </tr>
 <tr class="odd">
 <td><p><strong>Categoria chiamata</strong></p></td>
-<td><p>Indica il motivo per cui è stato usato CAC per la chiamata. Selezionare una delle opzioni seguenti:</p>
+<td><p>Indica il motivo per cui è stato utilizzato il controllo di ammissione chiamata. Selezionare una delle opzioni seguenti:</p>
 <ul>
 <li><p>Tutti</p></li>
-<li><p>Chiamata rifiutata a causa del controllo di ammissione di chiamata</p></li>
+<li><p>Chiamate rifiutate a causa del controllo di ammissione di chiamata</p></li>
 <li><p>Chiamate reinstradate tramite PSTN a causa del controllo di ammissione di chiamata</p></li>
 </ul></td>
 </tr>
@@ -137,7 +137,7 @@ Nella tabella seguente sono elencati i filtri che è possibile usare con il repo
 
 ## <a name="metrics-for-peer-to-peer-sessions"></a>Metriche per le sessioni peer-to-peer
 
-La tabella seguente elenca le informazioni fornite nel report di controllo dell'ammissione delle chiamate per le sessioni peer-to-peer, ovvero le sessioni che coinvolgono solo due partecipanti.
+Nella tabella seguente sono elencate le informazioni riportate nel Rapporto controllo di ammissione di chiamata per le sessioni peer-to-peer, ovvero che coinvolgono solo due partecipanti.
 
 ### <a name="metrics-for-peer-to-peer-sessions"></a>Metriche per le sessioni peer-to-peer
 
@@ -150,50 +150,50 @@ La tabella seguente elenca le informazioni fornite nel report di controllo dell'
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Si può ordinare su questo elemento?</th>
+<th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Dettaglio</strong></p></td>
+<td><p><strong>Dettagli</strong></p></td>
 <td><p>No</p></td>
-<td><p>Quando si fa clic su questo elemento, il report Mostra un report Dettagli sessione peer-to-peer per la sessione specificata.</p></td>
+<td><p>Se si fa clic su questa opzione, nel rapporto viene visualizzato un rapporto dettagliato sulla sessione peer-to-peer specificata.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Dall'utente</strong></p></td>
+<td><p><strong>Da utente</strong></p></td>
 <td><p>Sì</p></td>
 <td><p>Indirizzo SIP dell'utente che ha avviato la sessione.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>All'utente</strong></p></td>
+<td><p><strong>A utente</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Indirizzo SIP dell'utente invitato a partecipare alla sessione.</p></td>
+<td><p>Indirizzo SIP dell'utente che è stato invitato a partecipare alla sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Modalità</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Modalità di comunicazione (ad esempio audio e video) usate durante la sessione.</p></td>
+<td><p>Modalità di comunicazione, ad esempio audio e video, utilizzate durante la sessione.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Invitare il tempo</strong></p></td>
+<td><p><strong>Ora invito</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Data e ora in cui l'invito alla sessione iniziale è stato inviato all'utente da.</p></td>
+<td><p>Date e ora in cui è stato inviato l'invito iniziale alla sessione alla persona indicata in Da utente.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Tempo di risposta</strong></p></td>
+<td><p><strong>Ora risposta</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Data e ora in cui è stata ricevuta l'accettazione dell'invito.</p></td>
+<td><p>Data e ora in cui è stata ricevuta l'informazione che l'invito è stato accettato.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Ora di fine</strong></p></td>
+<td><p><strong>Ora fine</strong></p></td>
 <td><p>Sì</p></td>
 <td><p>Data e ora di fine della sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ID diagnostica</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Identificatore univoco (in forma di intestazione MS-Diagnostics) allegato a un messaggio SIP che spesso fornisce informazioni utili per la risoluzione di errori. Le intestazioni di diagnostica sono facoltative (è possibile avere sessioni SIP che non includono queste intestazioni) e gli ID di diagnostica vengono riportati solo per le sessioni con problemi di qualche tipo.</p></td>
+<td><p>Identificatore univoco nel formato di un'intestazione ms-diagnostics associato a un messaggio SIP in cui spesso vengono fornite informazioni utili per la risoluzione dei problemi. Le intestazioni di diagnostica sono facoltative (è possibile che in alcune sessioni SIP non siano incluse queste intestazioni) e gli ID diagnostica sono spesso indicati solo per sessioni in cui si sono verificati problemi di un determinato tipo.</p></td>
 </tr>
 </tbody>
 </table>
@@ -205,7 +205,7 @@ La tabella seguente elenca le informazioni fornite nel report di controllo dell'
 
 ## <a name="metrics-for-conferencing-sessions"></a>Metriche per le sessioni di conferenza
 
-Nella tabella seguente sono elencate le informazioni fornite nel report di controllo dell'ammissione alle chiamate per le sessioni di conferenza, ovvero le sessioni che coinvolgono tre o più partecipanti.
+Nella tabella seguente sono elencate le informazioni riportate nel Rapporto di controllo di ammissione di chiamata per le sessioni di conferenza, ovvero che coinvolgono almeno tre partecipanti.
 
 ### <a name="metrics-for-conferencing-sessions"></a>Metriche per le sessioni di conferenza
 
@@ -218,7 +218,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel report di contr
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Si può ordinare su questo elemento?</th>
+<th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -226,7 +226,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel report di contr
 <tr class="odd">
 <td><p><strong>URI conferenza</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Identificatore univoco per la conferenza. Quando si fa clic su questo elemento, il report Mostra i singoli partecipanti alla conferenza.</p></td>
+<td><p>Identificatore univoco della conferenza. Se si fa clic su questa opzione, nel rapporto vengono visualizzati i singoli partecipanti alla conferenza.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Organizzatore</strong></p></td>
@@ -236,15 +236,15 @@ Nella tabella seguente sono elencate le informazioni fornite nel report di contr
 <tr class="odd">
 <td><p><strong>Pool</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Server perimetrale usato nella conferenza.</p></td>
+<td><p>Server perimetrale utilizzato nella conferenza.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Ora di inizio</strong></p></td>
+<td><p><strong>Ora inizio</strong></p></td>
 <td><p>Sì</p></td>
-<td><p>Data e ora in cui è stata avviata la conferenza.</p></td>
+<td><p>Data e ora di inizio della conferenza.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Ora di fine</strong></p></td>
+<td><p><strong>Ora fine</strong></p></td>
 <td><p>Sì</p></td>
 <td><p>Data e ora di fine della conferenza.</p></td>
 </tr>
@@ -256,11 +256,11 @@ Nella tabella seguente sono elencate le informazioni fornite nel report di contr
 
 <div>
 
-## <a name="metrics-for-individual-conference-participants"></a>Metriche per singoli partecipanti alla conferenza
+## <a name="metrics-for-individual-conference-participants"></a>Metriche per i singoli partecipanti alla conferenza
 
-Nella tabella seguente sono elencate le informazioni fornite nel report di controllo dell'ammissione delle chiamate per singoli partecipanti alla conferenza.
+Nella tabella seguente sono elencate le informazioni riportate nel Rapporto di controllo di ammissione di chiamata per i singoli partecipanti alla conferenza.
 
-### <a name="metrics-for-individual-conference-participants"></a>Metriche per singoli partecipanti alla conferenza
+### <a name="metrics-for-individual-conference-participants"></a>Metriche per i singoli partecipanti alla conferenza
 
 <table>
 <colgroup>
@@ -271,7 +271,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel report di contr
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Si può ordinare su questo elemento?</th>
+<th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -279,7 +279,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel report di contr
 <tr class="odd">
 <td><p><strong>Ruolo</strong></p></td>
 <td><p>No</p></td>
-<td><p>Ruolo (ad esempio, relatore) riprodotto dal partecipante alla conferenza.</p></td>
+<td><p>Ruolo, ad esempio Relatore, ricoperto dal partecipante alla conferenza.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Partecipante</strong></p></td>
@@ -289,27 +289,27 @@ Nella tabella seguente sono elencate le informazioni fornite nel report di contr
 <tr class="odd">
 <td><p><strong>Connettività</strong></p></td>
 <td><p>No</p></td>
-<td><p>Connettività di rete (in genere da interno o da esterno) per il partecipante.</p></td>
+<td><p>Connettività di rete, solitamente Dall'interno o Dall'esterno, per il partecipante.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Modalità</strong></p></td>
 <td><p>No</p></td>
-<td><p>Tipo di conferenza (ad esempio, A/V Conferencing).</p></td>
+<td><p>Tipo di conferenza, ad esempio audio/video.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Tempo di partecipazione</strong></p></td>
+<td><p><strong>Ora partecipazione</strong></p></td>
 <td><p>No</p></td>
-<td><p>Data e ora in cui il partecipante ha partecipato alla conferenza.</p></td>
+<td><p>Data e ora in cui il partecipante si è unito alla conferenza.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Ora di uscita</strong></p></td>
+<td><p><strong>Ora uscita</strong></p></td>
 <td><p>No</p></td>
-<td><p>Data e ora in cui il partecipante ha lasciato la conferenza.</p></td>
+<td><p>Data e ora in cui il partecipante è uscito dalla conferenza.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ID diagnostica</strong></p></td>
 <td><p>No</p></td>
-<td><p>Identificatore univoco (in forma di intestazione MS-Diagnostics) allegato a un messaggio SIP che spesso fornisce informazioni utili per la risoluzione di errori. Le intestazioni di diagnostica sono facoltative (è possibile avere sessioni SIP che non includono queste intestazioni) e gli ID di diagnostica vengono riportati solo per le sessioni con problemi di qualche tipo.</p></td>
+<td><p>Identificatore univoco nel formato di un'intestazione ms-diagnostics associato a un messaggio SIP in cui spesso vengono fornite informazioni utili per la risoluzione dei problemi. Le intestazioni di diagnostica sono facoltative (è possibile che in alcune sessioni SIP non siano incluse queste intestazioni) e gli ID diagnostica sono spesso indicati solo per sessioni in cui si sono verificati problemi di un determinato tipo.</p></td>
 </tr>
 </tbody>
 </table>

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: modificare le opzioni di archiviazione del database'
+title: 'Lync Server 2013: modifica delle opzioni del database di archiviazione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183879
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 198e2abff6118197167f0f017ace22fc2ad76381
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9797aa794574180727549b7191a48a085aeb6d59
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743486"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043528"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="changing-archiving-database-options-in-lync-server-2013"></a>Modifica delle opzioni di archiviazione del database in Lync Server 2013
+# <a name="changing-archiving-database-options-in-lync-server-2013"></a>Modifica delle opzioni del database di archiviazione in Lync Server 2013
 
 </div>
 
@@ -35,86 +35,86 @@ ms.locfileid: "41743486"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Se si distribuisce l'archiviazione con l'archiviazione di SQL Server per l'archiviazione dello spazio di archiviazione per tutti gli utenti, è possibile apportare le modifiche seguenti dello spazio di archiviazione del database:
+Se si distribuisce l'archiviazione utilizzando l'archiviazione di SQL Server per l'archiviazione di un utente, è possibile apportare le modifiche apportate ai database seguenti:
 
-  - Usare un database SQL Server diverso per l'archiviazione dello spazio di archiviazione. Questo include il database di archiviazione principale e qualsiasi database usato per il mirroring di SQL Server.
+  - Utilizzare un database di SQL Server diverso per l'archiviazione. Sono inclusi il database di archiviazione principale e qualsiasi database utilizzato per il mirroring di SQL Server.
 
-  - Passare all'integrazione di Microsoft Exchange per archiviare i dati e i file di archiviazione nei server di Exchange 2013. Se tutti gli utenti sono ospitati nei server di Exchange 2013 e si vuole usare lo spazio di archiviazione di Microsoft Exchange per tutti gli utenti della distribuzione, è consigliabile rimuovere i database di SQL Server Store dalla topologia.
+  - Passare all'integrazione di Microsoft Exchange per archiviare i dati di archiviazione e i file sui server Exchange 2013. Se tutti gli utenti sono ospitati nei server Exchange 2013 e si desidera utilizzare lo spazio di archiviazione di Microsoft Exchange per tutti gli utenti nella distribuzione, è necessario rimuovere i database dell'archivio SQL Server dalla topologia.
 
-Per apportare una di queste modifiche, è necessario eseguire Generatore di topologie, apportare le modifiche e quindi pubblicare di nuovo la topologia. Per eseguire questa operazione, è possibile usare generatore di topologie. Non specificare l' **archiviazione di SQL Server Store** o abilitare le informazioni di **mirroring di SQL Server Store** , a meno che non siano presenti utenti di Lync non residenti nei server di Exchange 2013.
+Per apportare una o più di queste modifiche, è necessario eseguire Generatore di topologie, apportare le modifiche e quindi ripubblicare la topologia. Per eseguire questa operazione, è possibile utilizzare Generatore di topologie. Non specificare l' **Archivio SQL Server di archiviazione** o abilitare le informazioni sul **mirroring dell'archivio SQL Server** , a meno che non siano presenti utenti di Lync che non sono ospitati nei server Exchange 2013.
 
 <div>
 
-## <a name="to-change-your-archiving-database-option"></a>Per cambiare l'opzione del database di archiviazione
+## <a name="to-change-your-archiving-database-option"></a>Per modificare l'opzione del database di archiviazione
 
-1.  In un computer che esegue Lync Server 2013 o in cui sono installati gli strumenti di amministrazione di Lync Server, accedere utilizzando un account membro del gruppo utenti locali o un account con diritti utente equivalenti.
+1.  In un computer in cui è in esecuzione Lync Server 2013 o in cui sono installati gli strumenti di amministrazione di Lync Server, eseguire l'accesso utilizzando un account membro del gruppo utenti locali (o un account con diritti utente equivalenti).
     
     <div>
     
 
     > [!NOTE]  
-    > Puoi definire una topologia usando un account che è un membro del gruppo utenti locali, ma per pubblicare una topologia, necessaria per aggiungere un componente alla topologia. è necessario usare un account che sia un membro del gruppo <STRONG>Domain Admins</STRONG> e del gruppo <STRONG>RTCUniversalServerAdmins</STRONG> e che disponga delle autorizzazioni di controllo completo (ovvero, lettura, scrittura e modifica) nella condivisione di file in uso per l'archivio di file di Lync Server 2013, in modo che il generatore di topologia possa configurare gli elenchi di controllo di accesso discrezionale necessari ( DACL) o un account con diritti equivalenti.
+    > È possibile definire una topologia utilizzando un account membro del gruppo Users locale, ma per pubblicare una topologia, che è necessaria per aggiungere un componente alla topologia, è necessario utilizzare un account che sia membro del gruppo <STRONG>Domain Admins</STRONG> e del gruppo <STRONG>RTCUniversalServerAdmins</STRONG> e che disponga di autorizzazioni di controllo completo (ovvero lettura, scrittura e modifica) nella condivisione file utilizzata per l'archivio file di Lync Server 2013 (ovvero in modo che il generatore di topologie possa configurare gli elenchi di controllo di accesso discrezionale necessari ( DACL) oppure un account con diritti equivalenti.
 
     
     </div>
 
 2.  Avviare Generatore di topologie.
 
-3.  Nell'albero della console passare al pool Front-end in cui è stata distribuita l'archiviazione e quindi fare clic sul nome del pool Front-end in cui si vogliono modificare le opzioni del database.
+3.  Nell'albero della console accedere al pool Front End in cui è stata distribuita Archiviazione e fare clic sul nome del pool Front End in cui si vuole modificare le opzioni di database.
 
-4.  Nel menu **azione** fare clic su **modifica proprietà**.
+4.  Nel menu **Azione** fare clic su **Modifica proprietà**.
 
-5.  Nella finestra di dialogo **modifica proprietà** fare clic su **generale**.
+5.  Nella finestra di dialogo **Modifica proprietà** fare clic su **Generale**.
 
-6.  Scorrere verso il basso fino all' **archiviazione**.
+6.  Scorrere verso il basso fino ad **Archiviazione**.
 
-7.  In **archiviazione**eseguire le operazioni seguenti:
+7.  In **Archiviazione** seguire questa procedura:
     
-      - Per passare a un altro archivio di SQL Server esistente, nella casella di riepilogo a discesa, in **archiviazione SQL Server Store**, eseguire le operazioni seguenti:
+      - Per passare a un archivio SQL Server esistente diverso, nella casella di riepilogo a discesa in **Archivio SQL Server archiviazione** seguire la procedura seguente:
         
-          - Per usare un archivio di SQL Server esistente, nella casella di riepilogo a discesa fare clic sul nome dell'archivio di SQL Server che si vuole usare.
+          - Per usare un archivio SQL Server esistente, nella casella di riepilogo a discesa fare clic sul nome dell'archivio SQL Server che si vuole usare.
         
-          - Per specificare un nuovo archivio di SQL Server, fare clic su **nuovo**e quindi nella finestra di dialogo **Definisci nuovo archivio SQL Server** eseguire le operazioni seguenti:
+          - Per specificare un nuovo archivio SQL Server, fare clic su **Nuovo**, quindi nella finestra di dialogo **Definire un nuovo archivio SQL Server** seguire questa procedura:
             
-              - Per usare un archivio di SQL Server esistente, nella casella di riepilogo a discesa fare clic sul nome dell'archivio di SQL Server che si vuole usare.
+              - Per usare un archivio SQL Server esistente, nella casella di riepilogo a discesa fare clic sul nome dell'archivio SQL Server che si vuole usare.
             
-              - Per specificare un nuovo archivio di SQL Server, fare clic su **nuovo**e quindi nella finestra di dialogo **Definisci nuovo archivio SQL Server** eseguire le operazioni seguenti:
+              - Per specificare un nuovo archivio SQL Server, fare clic su **nuovo**e quindi nella finestra di dialogo **Definisci nuovo archivio SQL Server** eseguire le operazioni seguenti:
                 
-                  - In **FQDN di SQL Server**specificare il nome di dominio completo del server in cui si vuole creare il nuovo archivio di SQL Server.
+                  - In **FQDN SQL Server**specificare il nome di dominio completo del server in cui si desidera creare il nuovo archivio SQL Server.
                 
-                  - Fare clic su **istanza predefinita** per usare l'istanza predefinita oppure, per specificare un'istanza diversa, fare clic su **istanza denominata**e quindi specificare l'istanza che si vuole usare.
+                  - Fare clic su **Istanza predefinita** per usare l'istanza predefinita oppure su **Istanza denominata** per specificare un'istanza diversa, quindi specificare l'istanza che si vuole usare.
                 
-                  - Se l'istanza di SQL Server specificata si trova in una relazione speculare, selezionare la casella **di controllo questa istanza SQL è in relazione di mirroring** e quindi, in **numero di porta speculare**, specificare il numero di porta.
+                  - Se l'istanza di SQL Server specificata è in una relazione di mirroring, selezionare la casella **di controllo questa istanza di SQL è in relazione di mirroring** e quindi, in **numero di porta dello specchio**, specificare il numero di porta.
     
-      - Per aggiungere SQL Server Store per il mirroring o passare a un altro archivio di SQL Server esistente per il mirroring di SQL Server Store, selezionare **Abilita mirroring di SQL Server Store**e quindi eseguire le operazioni seguenti:
+      - Per aggiungere l'archivio SQL Server per il mirroring o passare a un archivio SQL Server esistente diverso per il mirroring dell'archivio SQL Server, selezionare **Abilita mirroring dell'archivio SQL Server**, quindi procedere come segue:
         
-          - Per usare un archivio di SQL Server esistente per il mirroring, nella casella di riepilogo a discesa **archiviazione di SQL Server dell'archivio** , fare clic sul nome dell'archivio di SQL Server che si vuole usare per il mirroring.
+          - Per utilizzare un archivio SQL Server esistente per il mirroring, nella casella di riepilogo a discesa **mirror archivio SQL Server archiviazione** fare clic sul nome dell'archivio SQL Server che si desidera utilizzare per il mirroring.
         
-          - Per specificare un nuovo archivio di SQL Server per il mirroring, fare clic su **nuovo**e quindi nella finestra di dialogo **Definisci nuovo archivio di SQL Server** eseguire una delle operazioni seguenti:
+          - Per specificare un nuovo archivio SQL Server per il mirroring, fare clic su **nuovo**e quindi nella finestra di dialogo **Definisci nuovo archivio SQL Server** eseguire una delle operazioni seguenti:
             
-            1.  In **FQDN di SQL Server**specificare il nome di dominio completo di SQL Server in cui si vuole creare il nuovo archivio di SQL Server.
+            1.  In **FQDN SQL Server**specificare il nome di dominio completo di SQL Server in cui si desidera creare il nuovo archivio SQL Server.
             
-            2.  Fare clic su **istanza predefinita** per usare l'istanza predefinita oppure, per specificare un'istanza diversa, fare clic su **istanza denominata**e quindi specificare l'istanza che si vuole usare.
+            2.  Fare clic su **Istanza predefinita** per usare l'istanza predefinita oppure su **Istanza denominata** per specificare un'istanza diversa, quindi specificare l'istanza che si vuole usare.
             
-            3.  Se l'istanza di SQL Server specificata si trova in una relazione speculare, selezionare la casella **di controllo questa istanza SQL è in relazione di mirroring** e quindi, in **numero di porta speculare**, specificare il numero di porta.
+            3.  Se l'istanza di SQL Server specificata è in una relazione di mirroring, selezionare la casella **di controllo questa istanza di SQL è in relazione di mirroring** e quindi, in **numero di porta dello specchio**, specificare il numero di porta.
         
-          - Se si Abilita il mirroring di SQL Server e si vuole aggiungere o modificare un witness di mirroring di SQL Server (una terza istanza di SQL Server separata in grado di rilevare l'integrità delle istanze di SQL Server e mirror principali), selezionare la casella di controllo **USA mirroring di SQL Server per abilitare il failover automatico** e quindi eseguire una delle operazioni seguenti:
+          - Se si Abilita il mirroring di SQL Server e si desidera aggiungere o modificare un controllo del mirroring di SQL Server (una terza istanza di SQL Server separata in grado di rilevare l'integrità del server SQL Server primario e delle istanze di mirroring), selezionare la casella utilizza verifica del **mirroring di SQL Server per abilitare il failover automatico** e quindi eseguire una delle operazioni seguenti:
             
-            1.  In **FQDN di SQL Server**specificare il nome di dominio completo del server in cui si vuole creare il nuovo witness di mirroring di SQL Server.
+            1.  In **FQDN SQL Server**specificare il nome di dominio completo del server in cui si desidera creare il nuovo controllo del mirroring di SQL Server.
             
-            2.  Fare clic su **istanza predefinita** per usare l'istanza predefinita oppure, per specificare un'istanza diversa, fare clic su **istanza denominata**e quindi specificare l'istanza che si vuole usare per il witness di mirroring.
+            2.  Fare clic su **Istanza predefinita** per usare l'istanza predefinita oppure su **Istanza denominata** per specificare un'istanza diversa, quindi specificare l'istanza che si vuole usare per il controllo di mirroring.
             
-            3.  Se l'istanza di SQL Server specificata si trova in una relazione speculare, selezionare la casella **di controllo questa istanza SQL è in relazione di mirroring** e quindi, in **numero di porta speculare**, specificare il numero di porta.
+            3.  Se l'istanza di SQL Server specificata è in una relazione di mirroring, selezionare la casella **di controllo questa istanza di SQL è in relazione di mirroring** e quindi, in **numero di porta dello specchio**, specificare il numero di porta.
     
-      - Per passare all'integrazione di Microsoft Exchange per archiviare i dati e i file di archiviazione nei server di Exchange 2013 (se tutti gli utenti della distribuzione sono ospitati nei server di Exchange 2013), eliminare tutte le informazioni per l'archiviazione dei database.
+      - Per passare all'integrazione di Microsoft Exchange per archiviare i dati di archiviazione e i file sui server Exchange 2013 (se tutti gli utenti della distribuzione sono ospitati nei server Exchange 2013), eliminare tutte le informazioni per i database di archiviazione.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > Se gli utenti di Lync non sono ospitati nei server di Exchange 2013, non eliminare le informazioni di SQL Server Store.
+    > Se si dispone di utenti Lync che non sono ospitati nei server Exchange 2013, non eliminare le informazioni sull'archivio SQL Server.
 
     
     </div>
@@ -125,7 +125,7 @@ Per apportare una di queste modifiche, è necessario eseguire Generatore di topo
     
 
     > [!IMPORTANT]  
-    > Le modifiche apportate in Generatore di topologie non hanno effetto finché non viene pubblicata la nuova topologia. Per informazioni dettagliate, vedere <A href="lync-server-2013-publishing-the-updated-topology-to-add-archiving-databases.md">pubblicazione della topologia aggiornata per l'aggiunta di database di archiviazione in Lync Server 2013</A> nella documentazione relativa alla distribuzione.
+    > Le modifiche apportate in Generatore di topologie non sono effettive finché non si pubblica la nuova topologia. Per ulteriori informazioni, vedere <A href="lync-server-2013-publishing-the-updated-topology-to-add-archiving-databases.md">Publishing the updated topologie to Add Archiving Databases in Lync Server 2013</A> nella documentazione relativa alla distribuzione.
 
     
     </div>

@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c8cf33a5ac4c498e6d6996f6096fbf9599b5ad2e
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 1a62bc73e7dc2496a9fedc94ad7fc38f2ebecd65
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837716"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42030770"
 ---
 # <a name="create-your-first-teams-in-microsoft-teams"></a>Creare i primi team in Microsoft Teams
 
@@ -32,11 +32,11 @@ Il modo migliore per guidare l'adozione dei team consiste nell'usare il prodotto
 
 | Nome del team | Nomi di canale proposti |
 | --------- | ---------------------- |
-| Informazioni su Teams | Generale</br> Dire Ciao</br> Come si fa?</br>Commenti e suggerimenti </br> Idee per i team futuri </br> Supporto |
+| Informazioni su Teams | Generale</br> Presentazioni</br> Come si fa?</br>Feedback </br> Idee per i team futuri </br> Supporto |
 | Implementazione di Microsoft Teams | Generale <br/> Consapevolezza e adozione <br/> Impegno aziendale <br/> Programma Early Adopter <br/> Feedback e approfondimenti <br/> Sicurezza e conformità <br/> Strategia e pianificazione <br/> Integrità e problemi relativi ai servizi <br/> Formazione <br/> Chat di Watercooler |
 | Campioni di teamwork | Generale <br/> Procedure consigliate, formazione e procedura <br/> Angolo campione <br/> Feedback e supporto tecnico <br/> Lead di programma <br/> Hub sociale |
 
-In Microsoft teams, la [raccolta schede](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/tabs/tabs-overview) consente di accedere a tutte le app di Office 365 e di terze parti attivate dall'amministratore. Per ottenere il massimo valore dal prodotto, è consigliabile bloccare le risorse chiave come schede in ognuno dei canali appropriati. Vedere l'esempio seguente.
+In Microsoft teams, la [raccolta schede](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview) consente di accedere a tutte le app di Office 365 e di terze parti attivate dall'amministratore. Per ottenere il massimo valore dal prodotto, è consigliabile bloccare le risorse chiave come schede in ognuno dei canali appropriati. Vedere l'esempio seguente.
 
 ![Screenshot che mostra le schede predefinite e personalizzate](media/teams-adoption-tab-example.png)
 
@@ -50,7 +50,7 @@ Nei team iniziali consigliamo di aggiungere gli elementi seguenti per una facile
 | Impegno aziendale | Wiki-guida per l'impegno<br/>Modulo: richiesta di consultazione di Teams<br/>Elenco-richieste di impegno |
 |Early adopters | Community di feedback aggiunti <br/> OneNote per domande frequenti e temi comuni |
 | Feedback e creazione di report | Report sull'utilizzo di Office 365 aggiunto (solo per gli amministratori di Office 365) |
-| Sicurezza e conformità | Microsoft Trust Portal <br/> [Documentazione sulla sicurezza e conformità](https://docs.microsoft.com/en-us/office365/securitycompliance/index)<br/> [Roadmap](https://docs.microsoft.com/office365/securitycompliance/security-roadmap) |
+| Sicurezza e conformità | Microsoft Trust Portal <br/> [Documentazione sulla sicurezza e conformità](https://docs.microsoft.com/office365/securitycompliance/index)<br/> [Roadmap](https://docs.microsoft.com/office365/securitycompliance/security-roadmap) |
 | Strategia e pianificazione | Collaborazione North Star PowerPoint <br/> Piano di progetto adoption Service |
 | Formazione | Portale di formazione per l'apprendimento personalizzato <br/> [Formazione su teams online](https://aka.ms/TeamsTraining) |
 | **Campioni di teamwork**|  |

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: modificare le impostazioni di configurazione del registrar esistenti'
+title: 'Lync Server 2013: modificare le impostazioni di configurazione di registrazione esistenti'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185095
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5fe12f85f7ea8501f478d570612ad52cd350fdca
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6d7297ed0df352090f08b90475778f1bde788c8e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737148"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049578"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="modify-existing-registrar-configuration-settings-in-lync-server-2013"></a>Modificare le impostazioni di configurazione del registrar esistenti in Lync Server 2013
+# <a name="modify-existing-registrar-configuration-settings-in-lync-server-2013"></a>Modificare le impostazioni di configurazione di registrazione esistenti in Lync Server 2013
 
 </div>
 
@@ -35,41 +35,41 @@ ms.locfileid: "41737148"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-È possibile usare il registrar per configurare i protocolli di autenticazione del server proxy. Per informazioni sui protocolli disponibili, vedere [creare impostazioni di configurazione del registrar in Lync Server 2013](lync-server-2013-create-registrar-configuration-settings.md).
+È possibile utilizzare la funzione di registrazione per configurare i protocolli di autenticazione dei server proxy. Per informazioni sui protocolli disponibili, vedere [creare le impostazioni di configurazione di registrazione in Lync Server 2013](lync-server-2013-create-registrar-configuration-settings.md).
 
 <div>
 
 
 > [!NOTE]  
-> È consigliabile abilitare sia Kerberos che NTLM quando un server supporta l'autenticazione sia per i client remoti che per quelli aziendali. Il server perimetrale e i server interni comunicano per garantire che solo l'autenticazione NTLM venga offerta ai client remoti. Se in questi server è abilitato solo Kerberos, non è possibile eseguire l'autenticazione degli utenti remoti. Se gli utenti aziendali eseguono l'autenticazione anche sul server, viene usato Kerberos.
+> Se un server supporta l'autenticazione sia per client remoti che per client aziendali, è consigliabile abilitare sia Kerberos che NTLM. Il server perimetrale e i server interni sono in comunicazione per garantire che ai client remoti sia fornita solo l'autenticazione NTLM. Se in questi server è abilitato solo Kerberos, non sono in grado di autenticare gli utenti remoti. Se attraverso questi server avviene anche l'autenticazione degli utenti aziendali, viene utilizzato Kerberos.
 
 
 
 </div>
 
-Seguire questa procedura per modificare un registrar esistente.
+Per modificare una funzione di registrazione esistente, seguire la procedura seguente.
 
 <div>
 
-## <a name="to-modify-existing-registrar-configuration-settings"></a>Per modificare le impostazioni di configurazione del registrar esistenti
+## <a name="to-modify-existing-registrar-configuration-settings"></a>Per modificare le impostazioni di configurazione di registrazione esistenti
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer presente nella rete in cui è stato distribuito Lync Server 2013.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a un computer nella rete in cui è stato distribuito Lync Server 2013.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **sicurezza** e quindi su **registrar**.
+3.  Sulla barra di spostamento sinistra fare clic su **Sicurezza** e quindi su **Funzione di registrazione**.
 
-4.  Nella pagina **registrar** fare clic su un servizio, fare clic su **modifica**e quindi su **Mostra dettagli**.
+4.  Nella pagina **Funzione di registrazione** fare clic su un servizio, fare clic su **Modifica** e quindi su **Mostra dettagli**.
 
-5.  In **modifica registrar**selezionare una o più delle opzioni seguenti in base alle funzionalità dei client e al supporto nell'ambiente:
+5.  In **Modifica impostazione funzione di registrazione** selezionare una o più delle opzioni seguenti in base alle capacità dei client e al supporto nell'ambiente:
     
-      - **Abilitare l'autenticazione Kerberos per consentire** ai server del pool di emettere problemi con l'autenticazione Kerberos.
+      - **Abilita autenticazione Kerberos** perché i server del pool emettano richieste utilizzando l'autenticazione Kerberos.
     
-      - **Abilitare l'autenticazione NTLM per consentire** ai server del pool di emettere problemi con NTLM.
+      - **Abilita autenticazione NTLM** per fare in modo che tutti i server del pool emettano richieste utilizzando l'autenticazione NTLM.
     
-      - **Abilitare l'autenticazione del certificato** affinché i server del pool rilasciano certificati ai client.
+      - **Abilita autenticazione certificato** per fare in modo che i server nel pool emettano i certificati per i client.
 
 6.  Fare clic su **Commit**.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: trasferire un dispositivo per i servizi di conferenza in un nuovo pool di registrazione'
+title: 'Lync Server 2013: spostare un dispositivo per conferenze in un nuovo pool di registrazione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51803934
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 69afbc1dbb33f43f8ed6a1f056f7d4a610b110c4
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ebeb81c97e92cc305c3f1bec78f6c59aeb62d978
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756750"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42047360"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="move-a-conferencing-device-to-a-new-registrar-pool-in-lync-server-2013"></a>Trasferire un dispositivo di conferenza in un nuovo pool di registrar in Lync Server 2013
+# <a name="move-a-conferencing-device-to-a-new-registrar-pool-in-lync-server-2013"></a>Spostare un dispositivo per conferenze in un nuovo pool di registrazione in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41756750"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-20_
+_**Ultimo argomento modificato:** 2013-02-20_
 
-È possibile trasferire un dispositivo di conferenza da un pool di registrar a un altro usando il cmdlet **Move-CsMeetingRoom** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.
+Spostare un dispositivo per conferenze da un pool di registrazione a un altro utilizzando il cmdlet **Move-CsMeetingRoom** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.
 
 <div>
 
 
 > [!NOTE]  
-> Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft <A href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</A>Lync Server 2010 con Remote PowerShell" at.
+> Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync <A href="http://go.microsoft.com/fwlink/p/?linkid=255876">http://go.microsoft.com/fwlink/p/?linkId=255876</A>Server 2010 using Remote PowerShell" at.
 
 
 
@@ -54,15 +54,15 @@ _**Argomento Ultima modifica:** 2013-02-20_
 
 <div>
 
-## <a name="moving-a-conferencing-device-to-a-new-registrar-pool"></a>Spostamento di un dispositivo di conferenza in un nuovo pool di registrazione
+## <a name="moving-a-conferencing-device-to-a-new-registrar-pool"></a>Spostamento di un dispositivo per conferenze in un nuovo pool di registrazione
 
-  - Per spostare un dispositivo per i servizi di conferenza, è necessario specificare l'identità della sala da spostare e quindi impostare il parametro di destinazione sul nome di dominio completo (FQDN) del pool di registrar in cui verrà spostato il dispositivo. Ad esempio:
+  - Per spostare un dispositivo per conferenze, è necessario specificare l'identità della sala da spostare e quindi impostare il parametro target sul nome di dominio completo (FQDN) del pool di registrazione in cui verrà spostato il dispositivo. Ad esempio:
     
         Move-CsMeetingRoom -Target "atl-cs-001.litwareinc.com" -Identity "Room 14"
 
 </div>
 
-Per informazioni dettagliate, vedere l'argomento della Guida relativo al cmdlet [Move-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Move-CsMeetingRoom) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Move-CsMeetingRoom](https://docs.microsoft.com/powershell/module/skype/Move-CsMeetingRoom) .
 
 </div>
 

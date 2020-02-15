@@ -1,5 +1,5 @@
 ---
-title: Riepilogo della porta-Federazione XMPP (Extensible Messaging and Presence Protocol)
+title: Riepilogo delle porte-Federazione di protocollo XMPP (Extensible Messaging and Presence Protocol)
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49105658
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0a18129fce98b3bb9bc613f4fc752daadfb6c5ce
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 24bbe3d8e38c5226efa81a55f072f8216791b6a4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747616"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038408"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="port-summary---extensible-messaging-and-presence-protocol-xmpp-federation-in-lync-server-2013"></a>Riepilogo della porta-Federazione XMPP (Extensible Messaging and Presence Protocol) in Lync Server 2013
+# <a name="port-summary---extensible-messaging-and-presence-protocol-xmpp-federation-in-lync-server-2013"></a>Riepilogo delle porte-Federazione di protocollo XMPP (Extensible Messaging and Presence Protocol) in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41747616"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-20_
+_**Ultimo argomento modificato:** 2012-10-20_
 
-Le porte e i protocolli definiti per il proxy XMPP (Extensible Messaging and Presence Protocol) distribuiti nel server perimetrale consentono le comunicazioni dal partner federato XMPP al server perimetrale e consente inoltre la comunicazione da un server perimetrale alla XMPP partner federato. Una regola viene definita anche nel firewall rivolto internamente dal server front-end o dal pool Front-end al server perimetrale o al pool Edge.
+Le porte e i protocolli definiti per il proxy XMPP (Extensible Messaging and Presence Protocol) distribuiti nel server perimetrale consentono la comunicazione dal partner federato XMPP al server perimetrale e consentono anche la comunicazione dal server perimetrale al sistema XMPP. partner federato. Una regola viene definita anche nel firewall con accesso interno dal front end server o dal pool Front end al server perimetrale o al pool di Edge.
 
 <div>
 
-## <a name="firewall-summary-for-extensible-messaging-and-presence-protocol"></a>Riepilogo del firewall per il protocollo di messaggistica e presenza estensibile
+## <a name="firewall-summary-for-extensible-messaging-and-presence-protocol"></a>Riepilogo firewall per XMPP (Extensible Messaging and Presence Protocol)
 
 
 <table>
@@ -63,20 +63,20 @@ Le porte e i protocolli definiti per il proxy XMPP (Extensible Messaging and Pre
 <tr class="odd">
 <td><p>XMPP/TCP/5269</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Indirizzo IP dell'interfaccia del servizio Edge di Access</p></td>
-<td><p>Porta di comunicazione standard da server a server per XMPP. Consente la comunicazione al proxy XMPP di Edge Server da partner XMPP federati</p></td>
+<td><p>Indirizzo IP dell'interfaccia del servizio Access Edge</p></td>
+<td><p>Porta di comunicazione standard da server a server per XMPP. Consente la comunicazione con il proxy XMPP del server perimetrale da partner federati XMPP</p></td>
 </tr>
 <tr class="even">
 <td><p>XMPP/TCP/5269</p></td>
-<td><p>Indirizzo IP dell'interfaccia del servizio Edge di Access</p></td>
+<td><p>Indirizzo IP dell'interfaccia del servizio Access Edge</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>Porta di comunicazione standard da server a server per XMPP. Consente la comunicazione dal proxy XMPP di Edge Server ai partner XMPP federati</p></td>
+<td><p>Porta di comunicazione standard da server a server per XMPP. Consente la comunicazione dal proxy XMPP del server perimetrale ai partner XMPP federati</p></td>
 </tr>
 <tr class="odd">
 <td><p>XMPP/MTLS/23456</p></td>
 <td><p>Qualsiasi</p></td>
-<td><p>IP dell'interfaccia server perimetrale interno</p></td>
-<td><p>Traffico XMPP interno dal gateway XMPP nel server front-end o nel pool Front end al server perimetrale</p></td>
+<td><p>IP dell'interfaccia del server perimetrale interno</p></td>
+<td><p>Traffico XMPP interno dal gateway XMPP nel front end server o nel pool Front end al server perimetrale</p></td>
 </tr>
 </tbody>
 </table>
@@ -89,10 +89,10 @@ Le porte e i protocolli definiti per il proxy XMPP (Extensible Messaging and Pre
 ## <a name="see-also"></a>Vedere anche
 
 
-[Esempio di configurazione XMPP in Lync Server 2013 - federazione di XMPP con Google Talk](lync-server-2013-example-xmpp-configuration-–-xmpp-federation-with-google-talk.md)  
+[Esempio di configurazione XMPP in Lync Server 2013 – Federazione XMPP con Google Talk](lync-server-2013-example-xmpp-configuration-–-xmpp-federation-with-google-talk.md)  
 
 
-[Gestire i partner federati XMPP per l'organizzazione in Lync Server 2013](lync-server-2013-manage-xmpp-federated-partners-for-your-organization.md)  
+[Gestire i partner federati XMPP in Lync Server 2013](lync-server-2013-manage-xmpp-federated-partners-for-your-organization.md)  
   
 
 </div>

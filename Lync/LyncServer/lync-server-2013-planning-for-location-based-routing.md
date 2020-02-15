@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pianificazione del routing in base alla posizione'
+title: 'Lync Server 2013: pianificazione del routing in base alla posizione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 51803979
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 34a2dc25aa80e45d7e24f3a91a18b2dd83a4d554
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 307b4d696fdf4348649eb9363d252c7f1d0f8d12
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41751906"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42047979"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41751906"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-07-31_
+_**Ultimo argomento modificato:** 2013-07-31_
 
 Le informazioni contenute in questo argomento riguardano gli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013.
 
-Il routing basato sulla posizione consente di limitare il routing delle chiamate tra endpoint VoIP e endpoint PSTN in base alla posizione delle parti nella chiamata. Il routing basato sulla posizione fa parte dell'infrastruttura VoIP aziendale di Lync Server 2013. Il routing basato sulla posizione è una caratteristica di gestione delle chiamate che controlla il modo in cui le chiamate vengono instradate da Lync Server 2013 CU1. Applica le regole di autorizzazione delle chiamate per indicare se le chiamate possono essere instradate a endpoint PBX o PSTN in base alla posizione geografica del chiamante di Lync.
+Il routing in base alla posizione rende possibile limitare il routing delle chiamate tra endpoint VoIP e endpoint PSTN in base alla posizione delle parti nella chiamata. Il routing in base alla posizione è parte dell'infrastruttura di VoIP aziendale di Lync Server 2013. Il routing in base alla posizione è una funzionalità di gestione delle chiamate che controlla il modo in cui vengono instradate da Lync Server 2013 CU1. Applica le regole di autorizzazione delle chiamate per stabilire se le chiamate possono essere instradate a endpoint PBX o PSTN in base alla posizione geografica del chiamante di Lync.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Panoramica del routing basato sulla posizione in Lync Server 2013](lync-server-2013-overview-of-location-based-routing.md)
+  - [Panoramica del routing in base alla posizione in Lync Server 2013](lync-server-2013-overview-of-location-based-routing.md)
 
   - [Linee guida per il routing in base alla posizione in Lync Server 2013](lync-server-2013-guidance-for-location-based-routing.md)
 
@@ -59,7 +59,7 @@ Il routing basato sulla posizione consente di limitare il routing delle chiamate
 
   - [Processo di distribuzione per il routing in base alla posizione in Lync Server 2013](lync-server-2013-deployment-process-for-location-based-routing.md)
 
-  - [Routing basato sulla posizione per i servizi di conferenza in Lync Server 2013](lync-server-2013-location-based-routing-for-conferencing.md)
+  - [Routing in base alla posizione per le conferenze in Lync Server 2013](lync-server-2013-location-based-routing-for-conferencing.md)
 
 </div>
 

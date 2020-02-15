@@ -12,20 +12,20 @@ ms:contentKeyID: 54973684
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b6298f7aa6a500a71c0b3732dd2f3d180e7192d3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bb8fe9fb9bcca80e7e84f19bdc484dc693b1ee68
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733646"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045748"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-windows-8-for-using-virtual-smart-cards-with-lync-server-2013"></a>Configurazione di Windows 8 per l'uso di smart card virtuali con Lync Server 2013
+# <a name="configuring-windows-8-for-using-virtual-smart-cards-with-lync-server-2013"></a>Configurazione di Windows 8 per l'utilizzo di smart card virtuali con Lync Server 2013
 
 </div>
 
@@ -35,42 +35,42 @@ ms.locfileid: "41733646"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-07-03_
+_**Ultimo argomento modificato:** 2013-07-03_
 
-Un fattore da tenere in considerazione quando si distribuisce l'autenticazione a due fattori e la tecnologia Smart Card è il costo di implementazione. Windows 8 offre una serie di nuove funzionalità di sicurezza e una delle nuove caratteristiche più interessanti è il supporto per le smart card virtuali.
+Uno dei fattori da considerare quando si distribuisce l'autenticazione a due fattori e la tecnologia Smart Card è il costo dell'implementazione. Windows 8 fornisce una serie di nuove funzionalità di sicurezza e una delle nuove funzionalità più interessanti è il supporto per le smart card virtuali.
 
-Per i computer dotati di un chip TPM (Trusted Platform Module) che soddisfa la specifica versione 1,2, le organizzazioni possono ora ottenere i vantaggi dell'accesso tramite smart card senza apportare ulteriori investimenti nell'hardware. Per altre informazioni, vedere uso di smart card virtuali con Windows 8 [http://go.microsoft.com/fwlink/p/?LinkId=313365](http://go.microsoft.com/fwlink/p/?linkid=313365)at.
+Per i computer dotati di un chip TPM (Trusted Platform Module) che soddisfa la specifica versione 1,2, le organizzazioni possono ora ottenere i vantaggi dell'accesso tramite smart card senza effettuare ulteriori investimenti nell'hardware. Per ulteriori informazioni, vedere Using Virtual Smart Cards with Windows 8 [http://go.microsoft.com/fwlink/p/?LinkId=313365](http://go.microsoft.com/fwlink/p/?linkid=313365)at.
 
 <div>
 
 ## <a name="to-configure-windows-8-for-virtual-smart-cards"></a>Per configurare Windows 8 per smart card virtuali
 
-1.  Accedere al computer con Windows 8 usando le credenziali di un utente abilitato per Lync.
+1.  Eseguire l'accesso al computer con Windows 8 utilizzando le credenziali di un utente abilitato per Lync.
 
-2.  Nella schermata Start di Windows 8 Posizionare il cursore nell'angolo in basso a destra dello schermo.
+2.  Nella schermata Start di Windows 8, spostare il cursore nell'angolo in basso a destra dello schermo.
 
-3.  Selezionare l'opzione di **ricerca** e quindi cercare **prompt dei comandi**.
+3.  Selezionare l'opzione di **ricerca** e quindi cercare il **prompt dei comandi**.
 
-4.  Fare clic con il pulsante destro del mouse sul **prompt dei comandi**e quindi scegliere **Esegui come amministratore**.
+4.  Fare clic con il pulsante destro del mouse su **prompt dei comandi**e quindi scegliere **Esegui come amministratore**.
 
-5.  Aprire la console di gestione TPM (Trusted Platform Module) eseguendo il comando seguente:
+5.  Aprire la console di gestione TPM (Trusted Platform Module) eseguendo il comando riportato di seguito:
     
         Tpm.msc
 
-6.  Nella console di gestione TPM verificare che la versione specifica del TPM sia di almeno 1,2
+6.  Dalla console di gestione TPM, verificare che la versione specifica TPM sia almeno 1,2
     
     <div>
     
 
     > [!NOTE]  
-    > Se viene visualizzata una finestra di dialogo che indica che non è possibile trovare un modulo TPM (compatible Trust Platform Module), verificare che il computer disponga di un modulo TPM compatibile e che sia abilitato nel BIOS di sistema.
+    > Se viene visualizzata una finestra di dialogo in cui viene indicato che non è possibile trovare un modulo TPM (Trusted Trust Platform Module), verificare che il computer disponga di un modulo TPM compatibile e che sia abilitato nel BIOS del sistema.
 
     
     </div>
 
 7.  Chiudere la console di gestione TPM
 
-8.  Dal prompt dei comandi creare una nuova smart card virtuale usando il comando seguente:
+8.  Al prompt dei comandi creare una nuova smart card virtuale utilizzando il comando seguente:
     
         TpmVscMgr create /name MyVSC /pin default /adminkey random /generate
     
@@ -78,18 +78,18 @@ Per i computer dotati di un chip TPM (Trusted Platform Module) che soddisfa la s
     
 
     > [!NOTE]  
-    > Per specificare un valore PIN personalizzato durante la creazione della smart card virtuale, usare invece il prompt di/pin.
+    > Per fornire un valore PIN personalizzato quando si crea la smart card virtuale, utilizzare invece il prompt di/pin.
 
     
     </div>
 
-9.  Dal prompt dei comandi aprire la console di gestione computer eseguendo il comando seguente:
+9.  Al prompt dei comandi, aprire la console di gestione computer eseguendo il comando riportato di seguito:
     
         CompMgmt.msc
 
-10. Nella console di gestione computer selezionare **Gestione dispositivi**.
+10. Nella console Gestione computer selezionare **Gestione dispositivi**.
 
-11. Espandi **lettori di smart card**.
+11. Espandere **lettori di smart card**.
 
 12. Verificare che il nuovo lettore di smart card virtuale sia stato creato correttamente.
 

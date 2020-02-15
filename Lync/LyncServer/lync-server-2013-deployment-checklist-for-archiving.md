@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Elenco di controllo di distribuzione per l'archiviazione"
+title: "Lync Server 2013: elenco di controllo di distribuzione per l'archiviazione"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184516
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e55e2471a71c985861c35c4ec2e07582dbfa0f23
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 275556e6be613d2dfe23cf245e75c725286e0c02
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740756"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043308"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,27 +35,27 @@ ms.locfileid: "41740756"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-18_
+_**Ultimo argomento modificato:** 2012-10-18_
 
-L'archiviazione viene installata automaticamente in ogni server front-end nella distribuzione di Lync Server 2013, ma è comunque necessario configurarla prima di poterla usare. I passaggi necessari per configurarla, come riepilogati in questa sezione, costituiscono la distribuzione dell'archiviazione.
+L'archiviazione viene automaticamente installata su ogni Front End Server nella distribuzione di Lync Server 2013, ma è comunque necessario configurarla prima di poterla utilizzare. I passaggi necessari per la configurazione, riepilogati in questa sezione, costituiscono la distribuzione dell'archiviazione.
 
 <div>
 
 ## <a name="deployment-sequence"></a>Sequenza di distribuzione
 
-La modalità di configurazione dell'archiviazione dipende dall'opzione di archiviazione scelta:
+La modalità di configurazione dell'archiviazione dipende dall'opzione di archiviazione che si seleziona:
 
-  - Se si usa l'integrazione di Microsoft Exchange per tutti gli utenti della distribuzione, non è necessario configurare i criteri di archiviazione di Lync Server 2013 per gli utenti. Configurare invece i criteri di blocco sul posto di Exchange per supportare l'archiviazione per gli utenti ospitati in Exchange 2013, con le cassette postali inserite sul posto. Per informazioni dettagliate sulla configurazione di questi criteri, vedere la documentazione del prodotto Exchange 2013.
+  - Se si utilizza l'integrazione di Microsoft Exchange per tutti gli utenti nella distribuzione, non è necessario configurare i criteri di archiviazione di Lync Server 2013 per gli utenti. Al contrario, configurare i criteri di conservazione sul posto di Exchange per supportare l'archiviazione per gli utenti ospitati in Exchange 2013, con le cassette postali inserite sul posto. Per informazioni dettagliate sulla configurazione di questi criteri, vedere la documentazione del prodotto Exchange 2013.
 
-  - Se non si usa l'integrazione di Microsoft Exchange per tutti gli utenti della distribuzione, è necessario aggiungere i database di archiviazione di Lync Server (database di SQL Server) alla topologia e quindi pubblicarlo, nonché configurare i criteri e le impostazioni per gli utenti, prima di poter archiviare i dati per tali utenti. È possibile distribuire i database di archiviazione contemporaneamente alla distribuzione della topologia iniziale o dopo avere distribuito almeno un pool di front-end o un server Standard Edition. Questo documento descrive come distribuire i database di archiviazione aggiungendoli a una distribuzione esistente.
+  - Se non si utilizza l'integrazione di Microsoft Exchange per tutti gli utenti nella distribuzione, è necessario aggiungere i database di archiviazione di Lync Server (database di SQL Server) alla topologia e quindi pubblicarli, nonché configurare i criteri e le impostazioni per gli utenti, prima di poter Archivia i dati per tali utenti. È possibile distribuire i database di archiviazione mentre si distribuisce la topologia iniziale o dopo avere distribuito almeno un pool Front End o un server Standard Edition. In questo documento viene illustrato come distribuire database di archiviazione aggiungendoli a una distribuzione esistente.
 
-Se si Abilita l'archiviazione in un pool Front-end o in un server Standard Edition, è consigliabile abilitarlo per tutti gli altri pool Front end e i server Standard Edition nella distribuzione. Il motivo è che gli utenti le cui comunicazioni devono essere archiviati possono essere invitati a una conversazione di messaggistica istantanea di gruppo o a riunioni ospitate in un pool diverso. Se l'archiviazione non è abilitata nel pool in cui è ospitata la conversazione o la riunione, la sessione completa potrebbe non essere archiviata. In questi casi, è ancora possibile archiviare messaggi istantanei con utenti abilitati all'archiviazione, ma non per i file di contenuto di conferenza e gli eventi di conferenza o di uscita.
+Se si abilita l'archiviazione in un pool Front End o in un server Standard Edition, sarà necessario abilitarla per tutti gli altri pool Front End e server Standard Edition nella distribuzione. Questo è dovuto al fatto che gli utenti di cui devono essere archiviate le comunicazioni possono essere invitati a una conversazione di messaggistica istantanea di gruppo oppure a riunioni ospitate in un altro pool. Se l'archiviazione non è abilitata nel pool in cui viene ospitata la conversazione o la riunione, potrebbe non essere possibile archiviare l'intera sessione. In questi casi, è possibile archiviare la messaggistica istantanea con utenti abilitati per l'archiviazione, ma non per file di contenuto delle conferenze e eventi di accesso o abbandono della conferenza.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Se l'archiviazione è fondamentale per i motivi di conformità dell'organizzazione, assicurarsi di distribuire l'archiviazione, configurare i criteri e altre opzioni a livello appropriato e abilitarla per tutti gli utenti appropriati prima di abilitare gli utenti per Lync Server 2013.
+> Se l'archiviazione è critica nell'organizzazione per motivi di conformità, assicurarsi di distribuire l'archiviazione, configurare i criteri e altre opzioni al livello appropriato e abilitarla per tutti gli utenti idonei, prima di abilitare tali utenti per Lync Server 2013.
 
 
 
@@ -67,7 +67,7 @@ Se si Abilita l'archiviazione in un pool Front-end o in un server Standard Editi
 
 ## <a name="archiving-deployment-process"></a>Processo di distribuzione dell'archiviazione
 
-La tabella seguente offre una panoramica dei passaggi necessari per distribuire l'archiviazione in una topologia esistente.
+Nella tabella seguente viene fornita una panoramica dei passaggi da eseguire per distribuire l'archiviazione in una topologia esistente.
 
 
 <table>
@@ -81,51 +81,51 @@ La tabella seguente offre una panoramica dei passaggi necessari per distribuire 
 <tr class="header">
 <th>Fase</th>
 <th>Passaggi</th>
-<th>Ruoli e appartenenze ai gruppi</th>
+<th>Ruoli e gruppi a cui è necessario appartenere</th>
 <th>Documentazione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Installare hardware e software prerequisiti</strong></p></td>
+<td><p><strong>Installare l'hardware e il software prerequisiti</strong></p></td>
 <td><ul>
-<li><p>Per usare l'integrazione di Microsoft Exchange (usando Exchange 2013 per l'archiviazione dello spazio di archiviazione per alcuni o tutti gli utenti), è necessaria una distribuzione di Exchange 2013 esistente.</p></li>
-<li><p>Per usare database di archiviazione distinti (tramite database di SQL Server) per l'archiviazione dello spazio di archiviazione per alcuni o tutti gli utenti, SQL Server nel server in cui verranno archiviati i dati di archiviazione.</p></li>
+<li><p>Per utilizzare l'integrazione di Microsoft Exchange (utilizzando Exchange 2013 per l'archiviazione di alcuni o tutti gli utenti), è necessaria una distribuzione di Exchange 2013 esistente.</p></li>
+<li><p>Per utilizzare database di archiviazione separati (utilizzando database SQL Server) per l'archiviazione di alcuni o tutti gli utenti, è necessario SQL Server sul server che memorizzerà i dati di archiviazione.</p></li>
 </ul>
 <div>
 
 > [!NOTE]  
-> L'archiviazione viene eseguita nei server front-end di un pool Enterprise e di server Standard Edition. Non ha requisiti hardware o software aggiuntivi oltre a ciò che è necessario per installare tali server.
+> L'archiviazione è eseguita sui server Front End di un pool Enterprise e server Standard Edition. Non esistono ulteriori requisiti di hardware o software oltre a quelli necessari per l'installazione di questi server.
 
 
 </div></td>
-<td><p>Utente del dominio che è un membro del gruppo Administrators locale.</p></td>
+<td><p>Utente del dominio membro del gruppo Administrators locale</p></td>
 <td><p><a href="lync-server-2013-supported-hardware.md">Hardware supportato per Lync Server 2013</a> nella documentazione relativa alla supportabilità.</p>
-<p><a href="lync-server-2013-server-software-and-infrastructure-support.md">Supporto di software e infrastrutture server in Lync server 2013</a> nella documentazione relativa alla supportabilità.</p>
+<p><a href="lync-server-2013-server-software-and-infrastructure-support.md">Supporto dell'infrastruttura e del software server in Lync server 2013</a> nella documentazione relativa alla supportabilità.</p>
 <p><a href="lync-server-2013-technical-requirements-for-archiving.md">Requisiti tecnici per l'archiviazione in Lync Server 2013</a> nella documentazione relativa alla pianificazione.</p>
-<p><a href="lync-server-2013-setting-up-systems-and-infrastructure-for-archiving.md">Configurazione di sistemi e infrastrutture per l'archiviazione in Lync Server 2013</a> nella documentazione relativa alla distribuzione.</p>
-<p><a href="lync-server-2013-exchange-and-sharepoint-integration-support.md">Supporto di Exchange Server e integrazione di SharePoint in Lync server 2013</a> nella documentazione relativa alla supportabilità.</p></td>
+<p><a href="lync-server-2013-setting-up-systems-and-infrastructure-for-archiving.md">Configurazione dei sistemi e dell'infrastruttura per l'archiviazione in Lync Server 2013</a> nella documentazione relativa alla distribuzione.</p>
+<p><a href="lync-server-2013-exchange-and-sharepoint-integration-support.md">Supporto per l'integrazione di Exchange Server e SharePoint in Lync server 2013</a> nella documentazione relativa alla supportabilità.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Creare la topologia interna appropriata per supportare l'archiviazione (solo se non si usa l'integrazione di Microsoft Exchange per tutti gli utenti della distribuzione)</strong></p></td>
-<td><p>Eseguire Generatore di topologia per aggiungere i database di archiviazione di Lync Server 2013 (database di SQL Server) alla topologia e quindi pubblicare la topologia.</p></td>
-<td><p>Per definire una topologia per incorporare i database di archiviazione, un account membro del gruppo utenti locali.</p>
-<p>Per pubblicare la topologia, un account che sia un membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins e che disponga delle autorizzazioni controllo completo (lettura/scrittura/modifica) nella condivisione file da usare per l'archivio di file di Lync Server 2013 (in modo che il generatore di topologia possa configurare gli elenchi DACL necessari).</p></td>
-<td><p><a href="lync-server-2013-adding-archiving-databases-to-an-existing-lync-server-2013-deployment.md">Aggiunta di database di archiviazione a una distribuzione di Lync Server 2013 esistente</a> nella documentazione relativa alla distribuzione.</p></td>
+<td><p><strong>Creare la topologia interna appropriata per supportare l'archiviazione (solo se non si utilizza l'integrazione di Microsoft Exchange per tutti gli utenti nella distribuzione)</strong></p></td>
+<td><p>Eseguire Generatore di topologie per aggiungere database di archiviazione di Lync Server 2013 (database di SQL Server) alla topologia e quindi pubblicare la topologia.</p></td>
+<td><p>Per definire una topologia che incorpori database di archiviazione, un account membro del gruppo Users locale.</p>
+<p>Per pubblicare la topologia, un account che sia membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins e che disponga di autorizzazioni di controllo completo (lettura/scrittura/modifica) sulla condivisione file da utilizzare per l'archivio file di Lync Server 2013 (in modo che il generatore di topologie possa configurare gli elenchi DACL necessari).</p></td>
+<td><p><a href="lync-server-2013-adding-archiving-databases-to-an-existing-lync-server-2013-deployment.md">Aggiunta dei database di archiviazione a una distribuzione di Lync Server 2013 esistente</a> nella documentazione relativa alla distribuzione.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Configurare l'autenticazione da server a server (solo se si usa l'integrazione di Microsoft Exchange)</strong></p></td>
-<td><p>Configurare i server per consentire l'autenticazione tra Lync Server 2013 ed Exchange 2013. È consigliabile eseguire <strong>test-CsExchangeStorageConnectivity testuser_sipUri-dumpster della cartella</strong> per convalidare la connettività di archiviazione dell'archiviazione di Exchange prima di abilitare l'archiviazione.</p></td>
-<td><p>Un account con le autorizzazioni appropriate per la gestione dei certificati nei server.</p></td>
-<td><p><a href="lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md">Gestione dell'autenticazione server-Server (OAuth) e delle applicazioni partner in Lync server 2013</a> nella documentazione relativa alla distribuzione o nella documentazione delle operazioni.</p></td>
+<td><p><strong>Configurare l'autenticazione da server a server (solo se si utilizza l'integrazione di Microsoft Exchange)</strong></p></td>
+<td><p>Configurare i server per l'abilitazione dell'autenticazione tra Lync Server 2013 ed Exchange 2013. Per convalidare la connettività dello spazio di archiviazione di Exchange prima di abilitare l'archiviazione, è consigliabile eseguire il <strong>dumpster test-CsExchangeStorageConnectivity testuser_sipUri – Folder</strong> .</p></td>
+<td><p>Un account con le autorizzazioni appropriate per la gestione dei certificati sul server.</p></td>
+<td><p><a href="lync-server-2013-managing-server-to-server-authentication-oauth-and-partner-applications.md">Gestione dell'autenticazione da server a server (OAuth) e delle applicazioni partner in Lync server 2013</a> nella documentazione relativa alla distribuzione o nella documentazione relativa alle operazioni.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Configurare i criteri di archiviazione e le configurazioni</strong></p></td>
-<td><p>Configurare l'archiviazione, ad esempio se usare l'integrazione di Microsoft Exchange, i criteri globali e tutti i criteri per i siti e gli utenti (quando non si usa l'integrazione di Microsoft Exchange per tutti gli archivi dati) e le opzioni di archiviazione specifiche, come la modalità critica e i dati esportare ed eliminare.</p>
-<p>Se si usa l'integrazione di Microsoft Exchange, configurare i criteri di blocco sul posto di Exchange in base alle esigenze.</p></td>
-<td><p>Gruppo RTCUniversalServerAdmins (solo Windows PowerShell) o assegna agli utenti il ruolo CSArchivingAdministrator o CSAdministrator.</p></td>
+<td><p><strong>Configurare i criteri e le configurazioni per l'archiviazione</strong></p></td>
+<td><p>Configurare l'archiviazione, se si desidera utilizzare l'integrazione di Microsoft Exchange, il criterio globale e tutti i criteri di sito e utente (quando non si utilizza l'integrazione di Microsoft Exchange per tutti gli archivi dati) e le opzioni di archiviazione specifiche, ad esempio la modalità critica e i dati esportazione ed eliminazione.</p>
+<p>Se si utilizza l'integrazione di Microsoft Exchange, configurare i criteri di archiviazione sul posto di Exchange in base alle esigenze.</p></td>
+<td><p>Gruppo RTCUniversalServerAdmins (solo Windows PowerShell) oppure assegnare gli utenti al ruolo CSArchivingAdministrator o CSAdministrator</p></td>
 <td><p><a href="lync-server-2013-configuring-support-for-archiving.md">Configurazione del supporto per l'archiviazione in Lync Server 2013</a> nella documentazione relativa alla distribuzione.</p>
-<p>Documentazione del prodotto Exchange (se si usa l'integrazione di Microsoft Exchange).</p></td>
+<p>Documentazione del prodotto Exchange (se si utilizza l'integrazione di Microsoft Exchange).</p></td>
 </tr>
 </tbody>
 </table>
@@ -135,15 +135,15 @@ La tabella seguente offre una panoramica dei passaggi necessari per distribuire 
 
 <div>
 
-## <a name="deploying-lync-server-and-microsoft-exchange-in-different-forests"></a>Distribuzione di Lync Server e Microsoft Exchange in foreste diverse
+## <a name="deploying-lync-server-and-microsoft-exchange-in-different-forests"></a>Distribuzione di Lync Server e di Microsoft Exchange in foreste diverse
 
-Se Microsoft Exchange Server non è distribuito nella stessa foresta di Lync Server, è necessario verificare che gli attributi di Exchange Active Directory seguenti siano sincronizzati con la foresta in cui è distribuito Lync Server:
+Se Microsoft Exchange Server non è distribuito nella stessa foresta di Lync Server, è necessario verificare che i seguenti attributi di Active Directory di Exchange siano sincronizzati con la foresta in cui è distribuito Lync Server:
 
 1.  msExchUserHoldPolicies
 
 2.  proxyAddresses
 
-Questo è un attributo multivalore. Quando si sincronizza questo attributo, è necessario unire i valori, non sostituirli per evitare che i valori esistenti vengano persi.
+Si tratta di un attributo a valore multiplo. Quando si sincronizza questo attributo, è necessario unire i valori, e non sostituirli, per evitare che i valori esistenti vengano persi.
 
 </div>
 

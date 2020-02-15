@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Aggiornamento-CsAddressBook per la gestione della Rubrica'
+title: 'Lync Server 2013: Update-CsAddressBook per la gestione della Rubrica'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183428
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f03fe225b2eae508870220e278d7bfc3373dad22
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ffc956465d4ebc1da95289897a7eb81b0f8f8e68
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744786"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041943"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41744786"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Utenti che possono eseguire questo cmdlet: per impostazione predefinita, i membri dei gruppi seguenti sono autorizzati a eseguire localmente il cmdlet Update-CsAddressBook: RTCUniversalUserAdmins, RTCUniversalServerAdmins. Per restituire un elenco di tutti i ruoli di controllo di accesso basati sul ruolo (RBAC) a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati manualmente), eseguire il comando seguente dal prompt di Windows PowerShell:
+Chi può eseguire questo cmdlet: per impostazione predefinita, sono autorizzati a eseguire localmente il cmdlet Update-CsAddressBook i membri dei gruppi seguenti: RTCUniversalUserAdmins, RTCUniversalServerAdmins. Per restituire un elenco di tutti i ruoli di Controllo dell'accesso basato sui ruoli (RBAC) a cui tale cmdlet è stato assegnato, inclusi i ruoli RBAC personalizzati creati personalmente, al prompt di Windows PowerShell eseguire il comando seguente:
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Update-CsAddressBook"}
 
-Il cmdlet Update-CsAddressBook sostituisce il comando **ABServer. exe – syncNow** da Office Communications Server. Lo scopo del cmdlet è quello di avviare immediatamente una sincronizzazione anziché aspettare l'ora pianificata. Il primo comando di esempio aggiorna tutte le rubriche dell'organizzazione. Il secondo aggiorna solo la rubrica associata al server definito.
+Il cmdlet Update-CsAddressBook sostituisce il comando **abserver.exe –syncNow** di Office Communications Server. Lo scopo del cmdlet è quello di avviare immediatamente una sincronizzazione anziché attendere l'intervallo di tempo pianificato. Il primo comando di esempio aggiorna tutte le rubriche dell'organizzazione. Il secondo aggiorna solo la rubrica associata al server definito.
 
 <div>
 
 
 > [!NOTE]  
-> In Lync Server 2013 Lync Server User Replicator rileverà le modifiche da Active Directory e aggiornerà il database degli utenti di Lync Server in base a un intervallo configurato. Lync Server User Replicator propagherà rapidamente le modifiche al database di RTCab senza che l'amministratore debba eseguire Update-CSAddressBook. Gli amministratori dovranno eseguire solo Update-CSAddressBook se è abilitato il download di file della Rubrica.
+> In Lync Server 2013, Lync Server User Replicator rileverà le modifiche da Active Directory e aggiornerà il database degli utenti di Lync Server in base a un intervallo configurato. Lync Server User Replicator propagherà rapidamente le modifiche apportate al database di RTCab senza che l'amministratore debba eseguire Update-CSAddressBook. Gli amministratori devono solo eseguire Update-CSAddressBook se il download dei file della Rubrica è abilitato.
 
 
 

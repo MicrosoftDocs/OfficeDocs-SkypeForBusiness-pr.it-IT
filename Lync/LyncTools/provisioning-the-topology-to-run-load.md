@@ -12,16 +12,16 @@ ms:contentKeyID: 51541424
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bf4c296068e2bd0deea9470dd84d8fd0c0c9d451
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6a913dc678b2f5e929ad22e09e1d8350f667ce39
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763600"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038288"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41763600"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-04_
+_**Ultimo argomento modificato:** 2013-02-04_
 
 <div>
 
@@ -43,33 +43,33 @@ _**Argomento Ultima modifica:** 2013-02-04_
 
 A seconda delle impostazioni e della configurazione esistenti di Lync Server 2013, potrebbe essere necessario apportare le modifiche seguenti nell'ambiente:
 
-1.  Impostare i criteri di esecuzione di Windows PowerShell su senza restrizioni. Per controllare le impostazioni dei criteri di esecuzione, aprire Lync Server Management Shell ed eseguire il comando seguente:
+1.  Impostare il criterio di esecuzione di Windows PowerShell su Unrestricted. Per controllare le impostazioni dei criteri di esecuzione, aprire Lync Server Management Shell ed eseguire il comando riportato di seguito:
 
     ``` powershell
         Get-ExecutionPolicy
     ```        
 
-    Se il comando non restituisce il valore senza restrizioni, eseguire questo comando:
+    Se il comando non restituisce il valore Unrestricted, eseguire il comando seguente:
 
     ``` powershell
         Set-ExecutionPolicy -Unrestricted
     ```
 
-2.  Per configurare in modo efficace Lync Server 2013, sarà necessario:
+2.  Per configurare in modo efficace Lync Server 2013, è necessario eseguire le operazioni seguenti:
     
-      - Acquisire familiarità con la topologia di Lync Server 2013, ad esempio nomi di computer, istanze del servizio, nomi di siti e criteri.
+      - Acquisire familiarità con la topologia di Lync Server 2013, ad esempio i nomi di computer, le istanze di servizio, i nomi dei siti e i criteri.
     
-      - Assegna alcuni degli utenti creati a gruppi, ad esempio gruppi di risposta alla ricerca di Response Group, come URI SIP.
+      - Assegnare alcuni degli utenti che sono stati creati ai gruppi, ad esempio i gruppi di risposta di Response Group, come gli URI SIP.
 
-3.  Per eseguire lo script dalla riga di comando, è possibile usare:
+3.  Per eseguire lo script dalla riga di comando, è possibile utilizzare:
 
     ``` powershell
         Powershell.exe -file <path to the file>
     ```
     
-4.  In genere, dopo l'esecuzione di uno degli script in questo pacchetto, le tracce risultanti dello script verranno archiviate in un file nello stesso percorso da cui è stato richiamato lo \<script,\>denominato scriptname $h $ m $ s. txt. Ad esempio, eseguire ArchivingPolicy. ps1 alle 12:15 P.M. genererà un file di log, ad esempio ArchivingPolicy121500. txt.
+4.  In genere, dopo l'esecuzione di uno degli script in questo pacchetto, le tracce risultanti dallo script verranno archiviate in un file nello stesso percorso da cui è stato richiamato lo \<script,\>denominato scriptname $h $ m $ s. txt. Ad esempio, l'esecuzione di ArchivingPolicy. ps1 alle 12:15 P.M. genererà un file di registro, ad esempio ArchivingPolicy121500. txt.
 
-5.  Si noti infine che, anche se sono stati forniti esempi per configurare il server, è necessario modificare o eliminare la configurazione dopo aver completato l'uso del carico.
+5.  Si noti infine che, sebbene siano stati forniti esempi per la configurazione del server, è necessario modificare o eliminare la configurazione dopo aver completato l'esecuzione del carico.
 
 </div>
 

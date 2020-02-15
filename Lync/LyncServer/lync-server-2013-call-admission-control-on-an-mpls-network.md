@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: controllo di ammissione di chiamata in una rete MPLS'
+title: 'Lync Server 2013: controllo di ammissione di chiamata su una rete MPLS'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183387
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 23ff730e64b7c7a63e277e73fa082f6d9d4e1ca3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8da29eb8825154f3e149d56b6bd9e4c4e7452652
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742376"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043998"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="call-admission-control-on-an-mpls-network-with-lync-server-2013"></a>Controllo di ammissione alle chiamate in una rete MPLS con Lync Server 2013
+# <a name="call-admission-control-on-an-mpls-network-with-lync-server-2013"></a>Controllo di ammissione di chiamata su una rete MPLS con Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41742376"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-22_
+_**Ultimo argomento modificato:** 2012-09-22_
 
-In una rete di commutazione di etichette Multiprotocol (MPLS), tutti i siti sono connessi da una mesh completa. Ossia, tutti i siti sono connessi direttamente alla backbone MPLS del provider di servizi Internet e ogni sito è il provisioning della larghezza di banda da usare in un collegamento WAN al cloud MPLS. Non esiste un hub di rete o un sito centrale per controllare il routing IP. La figura seguente mostra una rete semplice basata sulla tecnologia MPLS.
+In una rete MPLS (Multiprotocol Label Switching) tutti i siti sono connessi tramite full mesh, ovvero tutti i siti sono connessi direttamente alla dorsale MPLS del provider di servizi Internet e a ogni sito viene assegnata una larghezza di banda da utilizzare nel cloud MPLS attraverso un collegamento WAN. Non è presente alcun hub di rete o sito centrale per controllare il routing IP. Nella figura seguente viene illustrata una rete semplice basata sulla tecnologia MPLS.
 
-**Esempio di rete MPLS**
+**Rete MPLS di esempio**
 
-![Controllo di ammissione di chiamata con MPLS](images/Gg398168.54602e6e-ec11-4dae-936d-b01acda8a179(OCS.15).jpg "Controllo di ammissione di chiamata con MPLS")
+![CAC con MPLS](images/Gg398168.54602e6e-ec11-4dae-936d-b01acda8a179(OCS.15).jpg "CAC con MPLS")
 
-Per distribuire il controllo di ammissione di chiamata (CAC) in una rete MPLS, è possibile creare un'area di rete per rappresentare il cloud MPLS e creare un sito di rete per rappresentare ogni sito satellite MPLS. Nella figura seguente viene illustrato il modo in cui i siti della rete e della rete devono essere configurati per rappresentare la rete MPLS di esempio nella figura precedente. I limiti generali della larghezza di banda e i limiti della sessione di larghezza di banda si basano sulla capacità del collegamento WAN da ogni sito di rete all'area di rete che rappresenta il cloud MPLS.
+Per distribuire il controllo di ammissione di chiamata in una rete MPLS, è necessario creare un'area di rete che rappresenti il cloud MPLS e un sito di rete che rappresenti ogni sito satellite MPLS. Nella figura seguente viene illustrato come è consigliabile configurare l'area di rete e i siti di rete per rappresentare la rete MPLS di esempio della figura precedente. I limiti di larghezza di banda totali e quelli di sessione sono quindi basati sulla capacità del collegamento WAN che va da ogni sito di rete all'area di rete che rappresenta il cloud MPLS.
 
-**Area geografica e siti di rete per una rete MPLS**
+**Area di rete e siti di rete per una rete MPLS**
 
-![Diagramma del controllo di ammissione di chiamata con MPLS](images/Gg398168.f8f76283-5c0c-4133-8a78-3fbbfd016dc4(OCS.15).jpg "Diagramma del controllo di ammissione di chiamata con MPLS")
+![Controllo di ammissione di chiamata (CAC) con diagramma MPLS](images/Gg398168.f8f76283-5c0c-4133-8a78-3fbbfd016dc4(OCS.15).jpg "Controllo di ammissione di chiamata (CAC) con diagramma MPLS")
 
 </div>
 

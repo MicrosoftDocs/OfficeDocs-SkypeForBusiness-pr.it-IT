@@ -12,16 +12,16 @@ ms:contentKeyID: 51541519
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a0ecc58dc2683cd07b83a8c57385593961c3e985
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bff6ad3eec632aaf6f076e0df92d7b8df3ac67e0
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41723456"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051510"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41723456"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-Se un server Standard Edition che non ospita il Central Management store non riesce, seguire le procedure descritte in questa sezione. Se l'archivio di gestione centrale non riesce, vedere [ripristino del server che ospita l'archivio di gestione centrale in Lync server 2013](lync-server-2013-restoring-the-server-hosting-the-central-management-store.md).
+Se si verifica un errore in un server Standard Edition che non ospita l'archivio di gestione centrale, seguire le procedure illustrate in questa sezione. Se l'archivio di gestione centrale ha esito negativo, vedere [ripristino del server che ospita l'archivio di gestione centrale in Lync server 2013](lync-server-2013-restoring-the-server-hosting-the-central-management-store.md).
 
 <div>
 
 
 > [!TIP]  
-> Prima di iniziare il ripristino, è consigliabile prendere una copia dell'immagine del sistema. È possibile usare questa immagine come punto di rollback, in caso di problemi durante il ripristino. Potrebbe essere necessario prendere la copia dell'immagine dopo l'installazione del sistema operativo e di SQL Server e ripristinare o registrare di nuovo i certificati.
+> Prima di iniziare il ripristino, è consigliabile prendere una copia dell'immagine del sistema. È possibile utilizzare questa immagine come punto di rollback, in caso di problemi durante il ripristino. È possibile acquisire la copia dell'immagine dopo l'installazione del sistema operativo e di SQL Server e ripristinare o registrare di nuovo i certificati.
 
 
 
@@ -53,55 +53,55 @@ Se un server Standard Edition che non ospita il Central Management store non rie
 
 ## <a name="to-restore-a-standard-edition-server"></a>Per ripristinare un server Standard Edition
 
-1.  Iniziare con un nuovo server pulito o con lo stesso nome di dominio completo (FQDN) del computer non riuscito, installare il sistema operativo e quindi ripristinare o registrare nuovamente i certificati.
+1.  Iniziare con un server pulito o nuovo che abbia lo stesso nome di dominio completo (FQDN) del computer in cui si è verificato l'errore, installare il sistema operativo e quindi ripristinare o registrare nuovamente i certificati.
     
     <div>
     
 
     > [!NOTE]  
-    > Per eseguire questo passaggio, seguire le procedure di distribuzione del server dell'organizzazione.
+    > Seguire le procedure di distribuzione dei server dell'organizzazione per eseguire questa operazione.
 
     
     </div>
 
-2.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins e del gruppo Administrators locale, accedere al server che si sta ripristinando.
+2.  Da un account utente membro del gruppo RTCUniversalServerAdmins e del gruppo Administrators locale, accedere al server che si sta ripristinando.
 
-3.  Ripristinare l'archivio file copiando l'archivio di file appropriato da $Backup nella posizione dell'archivio di file nel server e condividere la cartella.
+3.  Ripristinare l'archivio file copiando l'archivio file appropriato da $Backup al percorso dell'archivio file nel server e condividere la cartella.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > Il percorso e il nome file dell'archivio file ripristinato devono essere esattamente gli stessi dell'archivio di file di cui è stato eseguito il backup in modo che i componenti che usano i file possano accedervi.
+    > Il percorso e il nome del file dell'archivio file ripristinato devono essere identici a quelli dell'archivio file di cui è stato eseguito il backup in modo che i componenti che utilizzano i file possano accedervi.
 
     
     </div>
 
 4.  Eseguire Generatore di topologie:
     
-    1.  Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Generatore di topologia di Lync Server**.
+    1.  Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Generatore di topologie**.
     
-    2.  Fare clic su **Scarica topologia dalla distribuzione esistente**e quindi fare clic su **OK**.
+    2.  Fare clic su **Scarica topologia dalla distribuzione esistente** e quindi su **OK**.
     
     3.  Selezionare la topologia e quindi fare clic su **Salva**. Fare clic su **Sì** per confermare la selezione.
 
-5.  Passare alla cartella di installazione o al supporto di Lync Server, quindi avviare la distribuzione guidata di Lync Server \\in\\Setup\\amd64 Setup. exe. Usare la distribuzione guidata di Lync Server per eseguire le operazioni seguenti:
+5.  Passare alla cartella o al supporto di installazione di Lync Server e quindi avviare la distribuzione guidata di Lync Server \\in\\Setup\\amd64 Setup. exe. Utilizzare la distribuzione guidata di Lync Server per eseguire le operazioni seguenti:
     
-    1.  Eseguire il **passaggio 1: installare l'archivio configurazione locale** per installare i file di configurazione locali.
+    1.  Eseguire **Passaggio 1: Installazione dell'archivio di configurazione locale** per installare i file della configurazione locale.
     
-    2.  Eseguire il **passaggio 2: configurare o rimuovere i componenti di Lync Server** per installare i ruoli di Lync Server Server.
+    2.  Eseguire il **passaggio 2: installazione o rimozione dei componenti di Lync Server** per installare i ruoli del server Lync Server.
     
-    3.  Eseguire il **passaggio 3: richiedere, installare o assegnare certificati** per assegnare i certificati.
+    3.  Eseguire **Passaggio 3: Richiesta, installazione o assegnazione dei certificati** per assegnare i certificati.
     
-    4.  Eseguire il **passaggio 4: avviare i servizi** per avviare i servizi nel server.
+    4.  Eseguire **Passaggio 4: Avvio servizi** per avviare i servizi nel server.
     
-    Per informazioni dettagliate sull'eseguire la distribuzione guidata, vedere la documentazione relativa alla distribuzione per il ruolo del server che si sta ripristinando.
+    Per informazioni dettagliate sull'esecuzione della Distribuzione guidata, vedere nella documentazione relativa alla distribuzione le informazioni sul ruolo del server che si desidera ripristinare.
 
-6.  Ripristinare i dati degli utenti eseguendo le operazioni seguenti:
+6.  Ripristinare i dati utente eseguendo le operazioni seguenti:
     
-    1.  Copiare ExportedUserData. zip da $Backup\\ a una directory locale.
+    1.  Copiare ExportedUserData. zip da $Backup\\ in una directory locale.
     
-    2.  Prima di ripristinare i dati utente, è necessario arrestare i servizi Lync. A tale scopo, digitare:
+    2.  Prima di ripristinare i dati degli utenti, è necessario arrestare i servizi Lync. A tale scopo, digitare:
         
             Stop-CsWindowsService
     
@@ -113,17 +113,17 @@ Se un server Standard Edition che non ospita il Central Management store non rie
         
             Import-CsUserData -PoolFqdn "atl0cs-001.litwareinc.com" -FileName "C:\Logs\ExportedUserDatal.zip"
     
-    4.  Riavviare i servizi Lync digitando:
+    4.  Riavviare i servizi di Lync digitando:
         
             Start-CsWindowsService
 
-7.  Se il gruppo di risposte è stato distribuito in questo server Standard Edition, ripristinare i dati di configurazione di Response Group. Per informazioni dettagliate, vedere [ripristino delle impostazioni dei gruppi di risposte in Lync Server 2013](lync-server-2013-restoring-response-group-settings.md).
+7.  Se è stato distribuito Response Group su questo server Standard Edition, ripristinare i dati di configurazione di Response Group. Per informazioni dettagliate, vedere [Restoring Response Group Settings in Lync Server 2013](lync-server-2013-restoring-response-group-settings.md).
 
-8.  Se è stata distribuita la chat persistente in questo server Standard Edition, ripristinare il database della chat persistente (MGC. MDF).
+8.  Se è stata distribuita la chat persistente in questo server Standard Edition, ripristinare il database di Persistent Chat (MGC. MDF).
     
-    Se è stato usato backup di SQL Server per eseguire il backup del database della chat persistente, usare le procedure di ripristino di SQL Server per ripristinarlo.
+    Se è stato utilizzato SQL Server backup per eseguire il backup del database di chat persistente, utilizzare le procedure di ripristino di SQL Server per ripristinarlo.
     
-    Se è stato usato il cmdlet Export-CsPersistentChatData per eseguire il backup, usare Import-CsPersistentChatData per ripristinarlo.
+    Se è stato utilizzato il cmdlet Export-CsPersistentChatData per eseguirne il backup, utilizzare Import-CsPersistentChatData per ripristinarlo.
 
 </div>
 

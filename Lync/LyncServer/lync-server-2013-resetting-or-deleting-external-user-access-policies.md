@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Reimpostazione o eliminazione dei criteri di accesso esterno degli utenti'
+title: 'Lync Server 2013: reimpostazione o eliminazione di criteri di accesso utente esterno'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184300
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 38b4ebc83a96c2bc7da2b71a8a817f949e745d21
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 37583937a1cc1c17fac55ac5185a4cd793b7f5bb
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41723726"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049628"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="resetting-or-deleting-external-user-access-policies-in-lync-server-2013"></a>Reimpostazione o eliminazione dei criteri di accesso esterno degli utenti in Lync Server 2013
+# <a name="resetting-or-deleting-external-user-access-policies-in-lync-server-2013"></a>Reimpostazione o eliminazione di criteri di accesso utente esterno in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41723726"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-08_
+_**Ultimo argomento modificato:** 2012-09-08_
 
-Se sono stati creati o configurati criteri di accesso degli utenti esterni che non si vuole più usare, è possibile eseguire le operazioni seguenti:
+Se sono stati creati o configurati criteri di accesso per gli utenti esterni che non si desidera più utilizzare, è possibile eseguire le operazioni seguenti:
 
-  - Eliminare qualsiasi criterio di sito o utente creato.
+  - Eliminare gli eventuali criteri a livello di sito o utente creati.
 
-  - Reimpostare il criterio globale sulle impostazioni predefinite. Le impostazioni dei criteri globali predefinite negano l'accesso degli utenti esterni. Non è possibile eliminare il criterio globale.
+  - Ripristinare le impostazioni predefinite per i criteri globali che negano qualsiasi tipo di accesso agli utenti esterni. I criteri globali non possono essere eliminati.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Eliminare criteri di sito o utente per l'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-delete-a-site-or-user-policy-for-external-user-access.md)
 

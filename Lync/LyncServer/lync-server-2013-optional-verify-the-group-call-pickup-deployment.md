@@ -12,20 +12,20 @@ ms:contentKeyID: 51541493
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 91c449a0bafc4067b3315b659d981f7a57a023bb
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5cdf1e75f950ebf155bfd21c68b860f48af8e978
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755670"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045538"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="optional-verify-the-group-call-pickup-deployment-in-lync-server-2013"></a>Opzionale Verificare la distribuzione del ritiro delle chiamate di gruppo in Lync Server 2013
+# <a name="optional-verify-the-group-call-pickup-deployment-in-lync-server-2013"></a>Optional Verificare la distribuzione del prelievo delle chiamate di gruppo in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41755670"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-01-30_
+_**Ultimo argomento modificato:** 2013-01-30_
 
-Dopo aver abilitato il ritiro delle chiamate di gruppo per gli utenti, verificare che la configurazione funzioni come previsto. Verificare quanto segue:
+Dopo aver abilitato il prelievo delle chiamate di gruppo per gli utenti, verificare che la configurazione funzioni come previsto. Verificare almeno quanto segue:
 
-  - Chiama un utente abilitato per il ritiro delle chiamate di gruppo e Chiedi a un altro utente di recuperare la chiamata. L'altro utente può essere nello stesso gruppo, in un gruppo diverso o non ha abilitato il pick-up delle chiamate di gruppo.
+  - Chiamare un utente abilitato per il prelievo delle chiamate di gruppo e richiedere a un altro utente di recuperare la chiamata. L'altro utente può trovarsi nello stesso gruppo, in un gruppo diverso o non è abilitato per il prelievo delle chiamate di gruppo.
 
-  - Chiama un utente abilitato per il ritiro delle chiamate di gruppo e non rispondere alla chiamata.
+  - Chiamare un utente abilitato per il prelievo delle chiamate di gruppo e non rispondere alla chiamata.
 
 </div>
 

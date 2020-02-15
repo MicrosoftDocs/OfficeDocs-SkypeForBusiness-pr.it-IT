@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Ospitare utenti in Survivable Branch Appliance o Survivable Branch Server'
+title: 'Lync Server 2013: Home Users on a Survivable Branch Appliance o server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185926
 ms.date: 12/11/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0c6cca9528e884807f6180d8c99b143eb0041211
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c6efd5991260ffeec3c6279857625eadfe34eca4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739136"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42047454"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="home-users-on-a-survivable-branch-appliance-or-server-in-lync-server-2013"></a>Ospitare utenti in Survivable Branch Appliance o Survivable Branch Server in Lync Server 2013
+# <a name="home-users-on-a-survivable-branch-appliance-or-server-in-lync-server-2013"></a>Utenti domestici in un Survivable Branch Appliance o server in Lync Server 2013
 
 </div>
 
@@ -35,29 +35,29 @@ ms.locfileid: "41739136"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-12-10_
+_**Ultimo argomento modificato:** 2014-12-10_
 
-Il processo di homing degli utenti in un Survivable Branch Appliance o in un Survivable Branch Server è simile al processo di homing degli utenti in un pool Front-end. Eseguire la procedura Survivable Branch Appliance o Survivable Branch Server nel sito centrale.
+Il processo di homing degli utenti in un Survivable Branch Appliance o Survivable Branch Server è simile al processo di homing degli utenti in un pool Front end. Eseguire la procedura Survivable Branch Appliance o Survivable Branch Server nel sito centrale.
 
 <div>
 
-## <a name="to-home-users-on-survivable-branch-appliance-or-survivable-branch-server"></a>Per gli utenti privati su Survivable Branch Appliance o Survivable Branch Server
+## <a name="to-home-users-on-survivable-branch-appliance-or-survivable-branch-server"></a>Per gli utenti privati di Survivable Branch Appliance o Survivable Branch Server
 
-1.  Prima di spostare gli utenti nel Survivable Branch Server o Survivable Branch Server, aprire Lync Server Management Shell e quindi eseguire tutte le operazioni seguenti:
+1.  Prima di spostare gli utenti nel Survivable Branch Server o nel Survivable Branch Server, aprire Lync Server Management Shell e quindi eseguire tutte le operazioni seguenti:
     
-      - Eseguire il cmdlet **Test-CsPstnOutboundCall** per verificare che il Survivable Branch Server sia in esecuzione e che sia configurata la connettività PSTN (Public Switched Telephone Network). Se è necessario modificare le proprietà del gateway PSTN, usare il cmdlet **Set-CsPstnGateway**.
+      - Eseguire il cmdlet **Test-CsPstnOutboundCall** per verificare che il Survivable Branch Server sia in esecuzione e che sia configurata la connettività PSTN (Public Switched Telephone Network). Se è necessario modificare le proprietà del gateway PSTN, utilizzare il cmdlet **Set-CsPstnGateway**.
     
-      - Eseguire il cmdlet **Get-CsVoicePolicy** per verificare che gli utenti che verranno ospitati nel Survivable Branch Server dispongano dei criteri di routing VoIP appropriati. Se è necessario modificare i criteri VoIP, usare il cmdlet **Set-CsVoicePolicy**.
+      - Eseguire il cmdlet **Get-CsVoicePolicy** per verificare che gli utenti che verranno ospitati nel Survivable Branch Server dispongano del criterio di routing VoIP appropriato. Se è necessario modificare il criterio VoIP, utilizzare il cmdlet **Set-CsVoicePolicy**.
     
-      - Eseguire il cmdlet **Get-CsVoicemailReroutingConfiguration** per verificare che le impostazioni di reinstradamento della segreteria telefonica siano configurate. Se è necessario modificare le impostazioni di reinstradamento della segreteria telefonica, usare il cmdlet **Set-CsVoicemailReroutingConfiguration**.
+      - Eseguire il cmdlet **Get-CsVoicemailReroutingConfiguration** per verificare che le impostazioni di reinstradamento della segreteria telefonica siano configurate. Se è necessario modificare le impostazioni di reinstradamento della segreteria telefonica, utilizzare il cmdlet **Set-CsVoicemailReroutingConfiguration**.
 
-2.  In Lync Server Management Shell eseguire il cmdlet **Move-CsUser** per trasferire utenti privati.
+2.  In Lync Server Management Shell, eseguire il cmdlet **Move-CsUser** per spostare gli utenti privati.
 
 <div>
 
 
 > [!NOTE]  
-> È anche possibile usare il pannello di controllo di Lync Server per verificare i prerequisiti e gli utenti privati.
+> È inoltre possibile utilizzare il pannello di controllo di Lync Server per verificare i prerequisiti e gli utenti privati.
 
 
 
@@ -67,7 +67,7 @@ Il processo di homing degli utenti in un Survivable Branch Appliance o in un Sur
 
 
 > [!NOTE]  
-> Gli utenti ospitati in un dispositivo Survivable Branch di Lync Server non riescono a creare nuove chat room o a visualizzare la scheda della sala per le camere esistenti.
+> Gli utenti ospitati in un Survivable Branch Appliance di Lync Server non sono in grado di creare nuove chat room o di visualizzare la scheda sala per le sale esistenti.
 
 
 

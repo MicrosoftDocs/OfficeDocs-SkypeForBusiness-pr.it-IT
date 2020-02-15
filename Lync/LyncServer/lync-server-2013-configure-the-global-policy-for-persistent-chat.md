@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare i criteri globali per Chat persistente'
+title: 'Lync Server 2013: configurare i criteri globali per la chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184323
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 49fb5f329851436e503a9e3e42e144353b70017f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4131bca64c8faab6f1b616a02994fbccd9b435dc
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722598"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043218"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-the-global-policy-for-persistent-chat-in-lync-server-2013"></a>Configurare i criteri globali per Chat persistente in Lync Server 2013
+# <a name="configure-the-global-policy-for-persistent-chat-in-lync-server-2013"></a>Configurare il criterio globale per la chat persistente in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41722598"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-06_
+_**Ultimo argomento modificato:** 2012-10-06_
 
-È possibile usare i criteri globali predefiniti per abilitare le impostazioni della chat persistente per tutti gli utenti della distribuzione. È anche possibile specificare criteri aggiuntivi per i siti e gli utenti per controllare se la chat persistente è abilitata o disabilitata per utenti e siti specifici.
+È possibile utilizzare il criterio globale predefinito per abilitare le impostazioni di chat persistente per tutti gli utenti della distribuzione. È inoltre possibile specificare criteri aggiuntivi per i siti e gli utenti per controllare se la chat persistente è abilitata o disabilitata per utenti e siti specifici.
 
-Non è possibile eliminare il criterio globale. Se si tenta di eliminarlo, la configurazione viene reimpostata sui valori predefiniti.
+Non è possibile eliminare i criteri globali. Se si tenta l'eliminazione, la configurazione viene reimpostata sui valori predefiniti.
 
 <div>
 
 
 > [!NOTE]  
-> Per configurare e usare il server di chat persistente, è necessario prima di tutto usare generatore di topologia per aggiungere il supporto del server di chat persistente alla topologia e quindi pubblicare la topologia. Per informazioni dettagliate, vedere <A href="lync-server-2013-adding-persistent-chat-server-to-your-deployment.md">aggiunta di un server di chat persistente alla distribuzione in Lync Server 2013</A> nella documentazione relativa alla distribuzione.<BR>Per configurare le impostazioni di configurazione del server di chat persistente, vedere <A href="lync-server-2013-configure-persistent-chat-server-options-globally-or-for-persistent-chat-server-pool.md">configurare le opzioni del server di chat permanenti globalmente o per il pool di server di chat persistente in Lync server 2013</A> nella documentazione relativa alla distribuzione
+> Per configurare e utilizzare il server Chat persistente, è necessario innanzitutto utilizzare Generatore di topologie per aggiungere il supporto del server Chat persistente alla topologia e quindi pubblicare la topologia. Per ulteriori informazioni, vedere <A href="lync-server-2013-adding-persistent-chat-server-to-your-deployment.md">aggiunta del server Chat persistente alla distribuzione in Lync Server 2013</A> nella documentazione relativa alla distribuzione.<BR>Per configurare le impostazioni di configurazione del server Chat persistente, vedere <A href="lync-server-2013-configure-persistent-chat-server-options-globally-or-for-persistent-chat-server-pool.md">configurare le opzioni del server Chat persistente a livello globale o per il pool di server Chat persistente in Lync server 2013</A> nella documentazione relativa alla distribuzione.
 
 
 
@@ -53,32 +53,32 @@ Non è possibile eliminare il criterio globale. Se si tenta di eliminarlo, la co
 
 <div>
 
-## <a name="to-configure-the-global-policy-for-persistent-chat"></a>Per configurare il criterio globale per la chat persistente
+## <a name="to-configure-the-global-policy-for-persistent-chat"></a>Per configurare i criteri globali per la chat persistente
 
-1.  Da un account utente assegnato al ruolo CsPersistentChatAdministrator, CsAdministrator o CsUserAdministrator, eseguire l'accesso a qualsiasi computer nella distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsPersistentChatAdministrator, CsAdministrator o CsUserAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Nel menu **Start** selezionare il pannello di controllo di Lync Server o aprire una finestra del browser e quindi immettere l'URL dell'amministratore. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md) nella documentazione Operations.
+2.  Dal menu **Start** selezionare il pannello di controllo di Lync Server o aprire una finestra del browser e quindi immettere l'URL di amministratore. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md) nella documentazione relativa alle operazioni.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > È anche possibile usare i cmdlet di Windows PowerShell. Per informazioni dettagliate, vedere <A href="configuring-persistent-chat-server-by-using-windows-powershell-cmdlets.md">configurazione del server di chat persistente con i cmdlet di Windows PowerShell</A> nella documentazione di distribuzione.
+    > È inoltre possibile utilizzare i cmdlet di Windows PowerShell. Per informazioni dettagliate, vedere <A href="configuring-persistent-chat-server-by-using-windows-powershell-cmdlets.md">Configuring Persistent Chat Server by using Windows PowerShell cmdlets</A> in Deployment documentation.
 
     
     </div>
 
-3.  Nel pannello di controllo di Lync Server fare clic su **chat persistente**e quindi su **criteri di chat permanenti**.
+3.  Nel pannello di controllo di Lync Server, fare clic su **Persistent Chat**e quindi su **criteri di chat persistente**.
 
-4.  Fare clic su **Globale** nell'elenco dei criteri, fare clic su **Modifica** e quindi su **Mostra dettagli**.
+4.  Fare clic su **Globale** nell'elenco di criteri, fare clic su **Modifica** e quindi su **Mostra dettagli**.
 
-5.  In **Modifica Criteri Chat persistente- Globale** eseguire le operazioni seguenti:
+5.  In **Modifica Criteri Persistent Chat - Globale** eseguire le operazioni seguenti:
     
-      - In **Nome** specificare un nuovo nome per i criteri globali, se non si desidera utilizzare il nome predefinito Globale.
+      - In **Nome** specificare un nuovo nome per i criteri globali, se non si desidera usare il nome predefinito Globale.
     
-      - In **Descrizione**specificare i dettagli relativi al criterio utente (ad esempio, criteri globali per centralSiteName).
+      - In **Descrizione**fornire informazioni dettagliate sugli elementi del criterio utente, ad esempio criteri globali per NomeSitoCentrale ".
     
-      - Per controllare la chat persistente per tutti i siti e gli utenti non controllati in modo specifico tramite criteri del sito o criteri utente, selezionare o deselezionare la casella di controllo **Abilita Chat persistente** .
+      - Per controllare la chat persistente per tutti i siti e gli utenti non controllati in modo specifico tramite criteri utente o di sito, selezionare o deselezionare la casella di controllo **Abilita Chat persistente** .
 
 6.  Fare clic su **Commit**.
 

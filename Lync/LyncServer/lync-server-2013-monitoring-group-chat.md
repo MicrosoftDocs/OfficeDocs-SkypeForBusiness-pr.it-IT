@@ -12,20 +12,20 @@ ms:contentKeyID: 63969648
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fa350924503f430ec0494cc5e1eb17f7878084a1
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: cb82eedd9d9578aeb4120136c1896267cde35392
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756850"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051138"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="monitoring-group-chat-in-lync-server-2013"></a>Monitoraggio della chat di gruppo in Lync Server 2013
+# <a name="monitoring-group-chat-in-lync-server-2013"></a>Monitoraggio chat di gruppo in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41756850"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-08-04_
+_**Ultimo argomento modificato:** 2014-08-04_
 
-Ti consigliamo vivamente di eseguire il [programma di installazione dell'aggiornamento cumulativo](http://support.microsoft.com/kb/968802) più recente disponibile nell'area download Microsoft per migliorare le prestazioni.
+È consigliabile eseguire il [programma di installazione degli aggiornamenti cumulativi del server](http://support.microsoft.com/kb/968802) più recente disponibile nell'area download Microsoft per migliorare le prestazioni.
 
-Supponendo che l'aggiornamento cumulativo sia stato eseguito più tardi, usare la tabella di test di stress seguente per la metrica per capire se i server di chat di gruppo sono in uso in condizioni ottimali.
+Presupponendo che si esegua l'aggiornamento cumulativo più recente, utilizzare la tabella di test di stress seguente per valutare se i server di chat di gruppo sono in esecuzione in condizioni di integrità ottimali.
 
-### <a name="test-environment-and-user-model"></a>Ambiente di test e modello utente
+### <a name="test-environment-and-user-model"></a>Ambiente di testing e modello utente
 
 <table>
 <colgroup>
@@ -54,64 +54,64 @@ Supponendo che l'aggiornamento cumulativo sia stato eseguito più tardi, usare l
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Tre server di chat di gruppo in un pool di chat di gruppo, ognuno con 8 GB di memoria e 8 processori.</p></td>
+<td><p>Tre server chat di gruppo in un pool di chat di gruppo, ognuno con 8 GB di memoria e 8 processori.</p></td>
 </tr>
 <tr class="even">
-<td><p>Due front ends di Lync Server 2013 in Enterprise Edition.</p></td>
+<td><p>Due front-end di Lync Server 2013 in Enterprise Edition.</p></td>
 </tr>
 <tr class="odd">
-<td><p>60.000 utenti simultanei in tre server di chat di gruppo.</p></td>
+<td><p>60.000 utenti simultanei su tre server chat di gruppo.</p></td>
 </tr>
 <tr class="even">
 <td><p>25.000 canali ospitati dal pool di chat di gruppo.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Dimensioni canale:</p>
+<td><p>Dimensione canale:</p>
 <ul>
-<li><p>Dimensioni canale piccolo: 30</p></li>
-<li><p>Dimensioni canale medio: 150</p></li>
-<li><p>Dimensioni canale grande: 2500</p></li>
+<li><p>Dimensione canale piccolo: 30</p></li>
+<li><p>Dimensione canale medio: 150</p></li>
+<li><p>Dimensione canale di grandi dimensioni: 2500</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p>Conteggio canali:</p>
 <ul>
-<li><p>Numero di canali piccoli: 24.000</p></li>
-<li><p>Numero medio canali 800</p></li>
-<li><p>Canali numero grande 24</p></li>
+<li><p>Canali di piccole dimensioni: 24.000</p></li>
+<li><p>Numero medio di canali 800</p></li>
+<li><p>Numero di canali di grandi dimensioni 24</p></li>
 <li><p>Totale canali 24.824</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p>Invitare i canali:</p>
 <ul>
-<li><p>La metà dei canali sono stati invitare canali</p></li>
+<li><p>La metà dei canali sono stati invitare i canali</p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p>Numero di canali che un utente si unisce:</p>
+<td><p>Numero di canali che un utente unisce:</p>
 <ul>
-<li><p>Dimensioni minime: 12</p></li>
+<li><p>Piccolo: 12</p></li>
 <li><p>Media: 2</p></li>
-<li><p>Dimensioni: 1</p></li>
+<li><p>Grande: 1</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p>Tasso di partecipazione:</p>
 <ul>
-<li><p>10 totale/secondo, 3.33/secondo per server</p></li>
+<li><p>10 totale/secondo, 3,33/secondo per server</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p>Velocità di logout:</p>
 <ul>
-<li><p>10 totale/secondo, 3.33/secondo per server</p></li>
+<li><p>10 totale/secondo, 3,33/secondo per server</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Tariffa chat:</p>
+<td><p>Velocità chat:</p>
 <ul>
-<li><p>20 totali/secondi, 6.66/secondo per server</p></li>
+<li><p>20 totale/secondo, 6.66/secondo per server</p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -122,7 +122,7 @@ Supponendo che l'aggiornamento cumulativo sia stato eseguito più tardi, usare l
 
 
 > [!IMPORTANT]  
-> I numeri di contatore delle prestazioni seguenti possono variare in caso di utilizzo di specifiche hardware o profili utente diversi.
+> I numeri di contatore delle prestazioni seguenti variano probabilmente quando si utilizzano specifiche hardware o profili utente diversi.
 
 
 
@@ -138,7 +138,7 @@ Supponendo che l'aggiornamento cumulativo sia stato eseguito più tardi, usare l
 <thead>
 <tr class="header">
 <th>Contatore delle prestazioni</th>
-<th>Le soglie</th>
+<th>Soglie</th>
 </tr>
 </thead>
 <tbody>

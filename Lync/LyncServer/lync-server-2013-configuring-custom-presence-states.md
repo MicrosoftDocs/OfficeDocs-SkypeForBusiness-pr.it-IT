@@ -12,16 +12,16 @@ ms:contentKeyID: 48185534
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c69f7a5b32b4ad0dd31f8be118aa2f2173ff3e22
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 75e2e47af4951e98f21ea6b26572d39b5eebcb8d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758196"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046479"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,31 +35,31 @@ ms.locfileid: "41758196"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-01-10_
+_**Ultimo argomento modificato:** 2013-01-10_
 
-Per definire gli Stati di presenza personalizzati in Lync 2013, creare un file di configurazione della presenza personalizzata XML e quindi specificarne la posizione usando i cmdlet di Lync Server Management Shell **New-CsClientPolicy** o **Set-CsClientPolicy** con il parametro CustomStateURL.
+Per definire stati di presenza personalizzati in Lync 2013, creare un file di configurazione della presenza personalizzato XML e quindi specificarne il percorso utilizzando i cmdlet **New-CsClientPolicy** o **Set-CsClientPolicy** di Lync Server Management Shell con il parametro CustomStateURL.
 
-I file di configurazione hanno le proprietà seguenti:
+Le proprietà dei file di configurazione sono le seguenti:
 
-  - Gli Stati di presenza personalizzati possono essere configurati con gli indicatori di presenza disponibile, occupato e non disturbare.
+  - Gli stati di presenza personalizzati possono essere configurati con gli indicatori di presenza Disponibile, Non disponibile e Non disturbare.
 
-  - L'attributo Availability determina l'indicatore di presenza associato al testo dello stato personalizzato. Nell'esempio più avanti in questo argomento, il testo di stato che lavora da casa viene visualizzato a destra dell'indicatore di presenza verde (disponibile).
+  - L'attributo di disponibilità determina quale indicatore di presenza è associato al testo dello stato personalizzato. Nell'esempio più avanti in questo argomento, il testo di stato che funziona da Home viene visualizzato a destra dell'indicatore di presenza verde (disponibile).
 
-  - La lunghezza massima del testo di stato è di 64 caratteri.
+  - Il testo di stato può essere composto al massimo da 64 caratteri.
 
-  - È possibile aggiungere un massimo di quattro stati di presenza personalizzati.
+  - È possibile aggiungere al massimo quattro stati di presenza personalizzati.
 
-  - Il parametro CustomStateURL specifica la posizione del file di configurazione. In Lync 2013 la modalità di protezione elevata SIP è abilitata per impostazione predefinita, quindi sarà necessario archiviare il file di configurazione della presenza personalizzato in un server Web con HTTPS abilitato. In caso contrario, i client Lync 2013 non saranno in grado di connettersi. Ad esempio, un indirizzo valido sarebbe `https://lspool.corp.contoso.com/ClientConfigFolder/CustomPresence.xml`.
+  - Il parametro CustomStateURL consente di specificare il percorso del file di configurazione. In Lync 2013, la modalità di protezione elevata SIP è abilitata per impostazione predefinita, pertanto sarà necessario archiviare il file di configurazione della presenza personalizzata in un server Web in cui è abilitato HTTPS. In caso contrario, i client Lync 2013 non saranno in grado di connettersi. Ad esempio, un indirizzo valido sarebbe `https://lspool.corp.contoso.com/ClientConfigFolder/CustomPresence.xml`.
 
 <div>
 
 
 > [!NOTE]  
-> Anche se non è consigliabile in un ambiente di produzione, è possibile testare un file di configurazione che si trova in una condivisione di file non HTTPS usando l'impostazione del registro di sistema EnableSIPHighSecurityMode per disabilitare la modalità di protezione elevata SIP nel client. Puoi quindi usare l'impostazione del registro di sistema CustomStateURL per specificare una posizione non HTTPS per il file di configurazione. Si noti che Lync 2013 rispetta le impostazioni del registro di sistema di Lync 2010, ma l'hive del registro di sistema è stato aggiornato. È necessario creare le impostazioni del registro di sistema nel modo seguente: 
+> Anche se non è consigliato in un ambiente di produzione, è possibile testare un file di configurazione che si trova in una condivisione file non HTTPS utilizzando l'impostazione del registro di sistema EnableSIPHighSecurityMode per disabilitare la modalità di sicurezza SIP sul client. È quindi possibile utilizzare l'impostazione del registro di sistema CustomStateURL per specificare un percorso non HTTPS per il file di configurazione. Si noti che Lync 2013 rispetta le impostazioni del registro di sistema di Lync 2010, ma l'hive del registro di sistema è stato aggiornato. È necessario creare le impostazioni del registro di sistema nel modo seguente: 
 > <UL>
 > <LI>
 > <P>HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Office\15.0\Lync\EnableSIPHighSecurityMode</P>
-> <P>Digitare: DWORD</P>
+> <P>Tipo: DWORD</P>
 > <P>Dati valore: 0</P>
 > <LI>
 > <P>HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Office\15.0\Lync\CustomStateURL</P>
@@ -70,13 +70,13 @@ I file di configurazione hanno le proprietà seguenti:
 
 </div>
 
-Localizza lo stato di presenza personalizzato specificando uno o più schemi di ID impostazioni locali (LCID) nel file di configurazione XML. L'esempio più avanti in questo argomento Mostra la localizzazione in inglese-Stati Uniti (1033), Norvegese-Bokmål (1044), francese-Francia (1036) e turco (1055). Per un elenco di LCID, vedere ID impostazioni locali assegnati da Microsoft at <http://go.microsoft.com/fwlink/p/?linkid=157331>.
+Localizzare lo stato di presenza personalizzato specificando uno o più schemi di ID impostazioni locali (LCID) nel file di configurazione XML. Nell'esempio riportato più avanti in questo argomento è illustrata la localizzazione in Inglese - Stati Uniti (1033), Norvegese - Bokmål (1044), Francese - Francia (1036) e Turco (1055). Per un elenco di LCID, vedere ID delle impostazioni locali assegnati da Microsoft all' <http://go.microsoft.com/fwlink/p/?linkid=157331>indirizzo.
 
 <div>
 
 ## <a name="to-add-custom-presence-states-to-lync-2013"></a>Per aggiungere stati di presenza personalizzati a Lync 2013
 
-1.  Creare un file di configurazione XML che usa il formato dell'esempio seguente:
+1.  Creare un file di configurazione XML nel formato dell'esempio seguente:
     
         <?xml version="1.0"?>
         <customStates xmlns="http://schemas.microsoft.com/09/2009/communicator/customStates">
@@ -99,16 +99,16 @@ Localizza lo stato di presenza personalizzato specificando uno o più schemi di 
           </customState>
         </customStates>
 
-2.  Salvare il file di configurazione XML in un server Web con HTTPS abilitato. In questo esempio, il file è denominato Presence. XML e salvato nella posizione https://lspool.corp.contoso.com/ClientConfigFolder/CustomPresence.xml.
+2.  Salvare il file di configurazione XML in un server Web con HTTPS abilitato. In questo esempio il file è denominato Presence. XML e salvato nel percorso https://lspool.corp.contoso.com/ClientConfigFolder/CustomPresence.xml.
 
-3.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+3.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-4.  In Lync Server Management Shell definire la posizione del file di configurazione XML usando un comando simile al seguente:
+4.  In Lync Server Management Shell, definire il percorso del file di configurazione XML utilizzando un comando simile al seguente:
     
         New-CsClientPolicy -Identity ContosoCustomStates 
         -CustomStateURL "https://lspool.corp.contoso.com/ClientConfigFolder/CustomPresence.xml"
 
-5.  Usare il cmdlet **Grant-CsClientPolicy** per assegnare il nuovo criterio agli utenti.
+5.  Utilizzare il cmdlet **Grant-CsClientPolicy** per assegnare questo nuovo criterio agli utenti.
 
 Per informazioni dettagliate, vedere [New-CsClientPolicy](https://docs.microsoft.com/powershell/module/skype/New-CsClientPolicy) e [Grant-CsClientPolicy](https://docs.microsoft.com/powershell/module/skype/Grant-CsClientPolicy) nella documentazione di Lync Server Management Shell.
 
@@ -120,7 +120,7 @@ Per informazioni dettagliate, vedere [New-CsClientPolicy](https://docs.microsoft
 > <LI>
 > <P>Per impostazione predefinita, Lync Server&nbsp;2013 aggiorna i criteri e le impostazioni del client ogni tre ore.</P>
 > <LI>
-> <P>Se si vuole continuare a usare le impostazioni dei criteri di gruppo dalle versioni precedenti, ad esempio CustomStateURL, Lync 2013 riconoscerà le impostazioni se si trovano nel nuovo hive del registro dei criteri (HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Office\15.0\Lync). Tuttavia, i criteri client basati sul server hanno la precedenza.</P></LI></UL>
+> <P>Se si desidera continuare a utilizzare le impostazioni di criteri di gruppo dalle versioni precedenti, ad esempio CustomStateURL, Lync 2013 riconoscerà le impostazioni se si trovano nel nuovo hive del registro di sistema di criteri (HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Office\15.0\Lync). Tuttavia, i criteri dei client basati su server hanno la precedenza.</P></LI></UL>
 
 
 

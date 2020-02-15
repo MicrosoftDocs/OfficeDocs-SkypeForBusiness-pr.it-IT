@@ -1,5 +1,5 @@
 ---
-title: Elenco di controllo della distribuzione di Lync Server 2013 per i servizi di conferenza A/V
+title: Elenco di controllo di distribuzione di Lync Server 2013 per A/V Conferencing
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733684
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 736719475d77f67932b350e1684b4af26ca2fbd6
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5a0c48d78c33c652f7a28e277600fa957cb6fd1f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740786"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043328"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deployment-checklist-for-av-conferencing-in-lync-server-2013"></a>Elenco di controllo della distribuzione per i servizi di conferenza A/V in Lync Server 2013
+# <a name="deployment-checklist-for-av-conferencing-in-lync-server-2013"></a>Elenco di controllo per la distribuzione di A/V Conferencing in Lync Server 2013
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41740786"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-30_
+_**Ultimo argomento modificato:** 2012-09-30_
 
-Come per la distribuzione degli altri componenti di Lync Server 2013, la distribuzione di servizi di conferenza A/V richiede l'uso di generatore di topologie per creare e pubblicare una topologia che incorpora servizi di conferenza.
+Come per la distribuzione degli altri componenti di Lync Server 2013, la distribuzione di A/V Conferencing richiede l'utilizzo di generatore di topologie per creare e pubblicare una topologia che incorpora servizi di conferenza.
 
 <div>
 
 ## <a name="deployment-sequence"></a>Sequenza di distribuzione
 
-È possibile distribuire i servizi di conferenza contemporaneamente alla distribuzione della topologia iniziale o dopo avere distribuito almeno un pool di front-end o un server Standard Edition.
+È possibile distribuire le conferenze nello stesso momento in cui si distribuisce la topologia iniziale o dopo aver distribuito almeno un pool Front end o un server Standard Edition.
 
 </div>
 
 <div>
 
-## <a name="conferencing-deployment-process"></a>Processo di distribuzione delle conferenze
+## <a name="conferencing-deployment-process"></a>Processo di distribuzione delle funzioni di conferenza
 
-La tabella seguente offre una panoramica dei passaggi necessari per distribuire i servizi di conferenza in una topologia esistente.
+Nella tabella seguente viene fornita una panoramica dei passaggi da eseguire per distribuire il supporto per la conferenza in una topologia esistente.
 
 
 <table>
@@ -65,39 +65,39 @@ La tabella seguente offre una panoramica dei passaggi necessari per distribuire 
 <tr class="header">
 <th>Fase</th>
 <th>Passaggi</th>
-<th>Ruoli e appartenenze ai gruppi</th>
+<th>Ruoli e gruppi a cui è necessario appartenere</th>
 <th>Documentazione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Installare hardware e software prerequisiti</strong></p></td>
-<td><p>I servizi di conferenza vengono eseguiti nei server front-end di un pool Front-end e di server Standard Edition. Non ha requisiti hardware o software aggiuntivi oltre a ciò che è necessario per installare tali server.</p>
+<td><p><strong>Installare l'hardware e il software prerequisiti</strong></p></td>
+<td><p>I servizi di conferenza vengono eseguiti nei front end server di un pool Front end e di server Standard Edition. Non esistono ulteriori requisiti di hardware o software oltre a quelli necessari per l'installazione di questi server.</p>
 <div>
 
 > [!NOTE]  
-> Lync Server 2013 usa Office Web Apps e il server Office Web Apps per gestire la condivisione e il rendering delle presentazioni di PowerPoint. Per informazioni dettagliate sull'installazione e la configurazione del server Office Web Apps, vedere <A href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">configurazione dell'integrazione con Office Web Apps Server e Lync server 2013</A>.
+> Lync Server 2013 utilizza Office Web Apps e il server Office Web Apps per gestire la condivisione e il rendering delle presentazioni di PowerPoint. Per informazioni dettagliate sull'installazione e sulla configurazione del server Office Web Apps, vedere <A href="lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013.md">configurazione dell'integrazione con Office Web Apps Server e Lync server 2013</A>.
 
 
 </div></td>
-<td><p>Utente del dominio che è membro del gruppo Administrators locale</p></td>
+<td><p>Utente del dominio membro del gruppo Administrators locale</p></td>
 <td><p><a href="lync-server-2013-supported-hardware.md">Hardware supportato per Lync Server 2013</a> nella documentazione relativa alla supportabilità</p>
-<p><a href="lync-server-2013-server-software-and-infrastructure-support.md">Supporto di software e infrastrutture server in Lync server 2013</a> nella documentazione relativa al supporto tecnico</p>
-<p><a href="lync-server-2013-determining-your-system-requirements.md">Determinare i requisiti di sistema per Lync Server 2013</a> nella documentazione relativa alla pianificazione.</p>
+<p><a href="lync-server-2013-server-software-and-infrastructure-support.md">Supporto dell'infrastruttura e del software server in Lync server 2013</a> nella documentazione relativa alla supportabilità</p>
+<p><a href="lync-server-2013-determining-your-system-requirements.md">Determinazione dei requisiti di sistema per Lync Server 2013</a> nella documentazione relativa alla pianificazione.</p>
 <p><a href="lync-server-2013-technical-requirements-for-archiving.md">Requisiti tecnici per l'archiviazione in Lync Server 2013</a> nella documentazione relativa alla pianificazione.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Creare la topologia interna appropriata per supportare i servizi di conferenza</strong></p></td>
+<td><p><strong>Creare la topologia interna appropriata per supportare le funzioni di conferenza</strong></p></td>
 <td><p>Eseguire Generatore di topologie per aggiungere servizi di conferenza alla topologia e quindi pubblicare la topologia.</p></td>
-<td><p>Per definire una topologia, un account membro del gruppo utenti locali</p>
-<p>Per pubblicare la topologia, un account che sia un membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins e che disponga delle autorizzazioni controllo completo (lettura/scrittura/modifica) nella condivisione file da usare per l'archivio di file di Lync Server 2013 (in modo che il generatore di topologia possa configurare gli elenchi DACL necessari)</p></td>
-<td><p><a href="lync-server-2013-define-and-configure-a-topology-in-topology-builder.md">Definire e configurare una topologia in Generatore di topologia per Lync Server 2013</a> nella documentazione relativa alla distribuzione.</p></td>
+<td><p>Per definire una topologia, un account membro del gruppo Users locale</p>
+<p>Per pubblicare la topologia, un account che sia membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins e che disponga di autorizzazioni di controllo completo (lettura/scrittura/modifica) sulla condivisione file da utilizzare per l'archivio file di Lync Server 2013 (in modo che il generatore di topologie possa configurare gli elenchi DACL necessari)</p></td>
+<td><p><a href="lync-server-2013-define-and-configure-a-topology-in-topology-builder.md">Definire e configurare una topologia in Generatore di topologie per Lync Server 2013</a> nella documentazione relativa alla distribuzione.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Configurare i criteri di conferenza e il supporto</strong></p></td>
-<td><p>Usare il pannello di controllo di Lync Server 2013 o Lync Server Management Shell per configurare le impostazioni di conferenza.</p></td>
-<td><p>Gruppo RTCUniversalServerAdmins (solo Windows PowerShell) oppure assegna gli utenti al ruolo [] o CSAdministrator</p></td>
-<td><p><a href="lync-server-2013-conferencing-policies.md">Criteri di conferenza in Lync Server 2013</a> nella documentazione Operations.</p></td>
+<td><p><strong>Configurare i criteri e il supporto per le funzioni di conferenza</strong></p></td>
+<td><p>Utilizzare il pannello di controllo di Lync Server 2013 o Lync Server Management Shell per configurare le impostazioni di conferenza.</p></td>
+<td><p>Gruppo RTCUniversalServerAdmins (solo Windows PowerShell) oppure assegnare gli utenti al ruolo [] o CSAdministrator</p></td>
+<td><p><a href="lync-server-2013-conferencing-policies.md">Criteri di conferenza in Lync Server 2013</a> nella documentazione relativa alle operazioni.</p></td>
 </tr>
 </tbody>
 </table>

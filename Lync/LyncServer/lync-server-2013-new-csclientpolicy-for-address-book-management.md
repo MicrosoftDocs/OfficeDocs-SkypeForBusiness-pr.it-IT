@@ -12,16 +12,16 @@ ms:contentKeyID: 48185771
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3f68f6cfa2fde4d1e5a2bc58a36478a60060dd5e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f84ef03f782263ed9f82b1667418c907087f5d5c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765757"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051394"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41765757"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Utenti che possono eseguire questo cmdlet: per impostazione predefinita, i membri dei gruppi seguenti sono autorizzati a eseguire il cmdlet New-CsClientPolicy: RTCUniversalServerAdmins. Per restituire un elenco di tutti i ruoli di controllo di accesso basati sul ruolo (RBAC) a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati manualmente), eseguire il comando seguente dal prompt di Windows PowerShell:
+Utenti autorizzati a eseguire questo cmdlet: per impostazione predefinita, i membri dei gruppi seguenti sono autorizzati a eseguire localmente il cmdlet New-CsClientPolicy: RTCUniversalServerAdmins. Per restituire un elenco di tutti i ruoli di controllo dell'accesso basato su ruoli (RBAC) a cui è stato assegnato questo cmdlet, inclusi quelli creati dall'utente stesso, eseguire il comando seguente dal prompt di Windows PowerShell:
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "New-CsClientPolicy"}
 
-Il cmdlet New-CsClientPolicy definisce un numero elevato di impostazioni per il provisioning dei client per le funzionalità disponibili in Lync Server 2013. Per il servizio Rubrica, il parametro AddressBookAvailability è di interesse. Questo parametro, che ha un impatto diretto sulle opzioni disponibili per i client, ha tre possibili opzioni:
+Il cmdlet New-CsClientPolicy definisce un numero elevato di impostazioni per il provisioning dei client per le funzionalità disponibili in Lync Server 2013. Per il servizio Rubrica, il parametro AddressBookAvailability è interessante. Questo parametro, che incide direttamente sulle opzioni disponibili per i client, ha tre opzioni possibili:
 
   - WebSearchAndFileDownload
 
@@ -49,7 +49,7 @@ Il cmdlet New-CsClientPolicy definisce un numero elevato di impostazioni per il 
 
   - FileDownloadOnly
 
-Quando definito, determina il modo in cui la Rubrica viene accessibile dai client. Se si definisce questo parametro, è necessario definire una delle opzioni. Se non si modifica questa impostazione, il valore predefinito di WebSearchAndFileDownload rimane attivo.
+Se definito, questo parametro determina la modalità di accesso dei client alla Rubrica. Insieme al parametro è necessario definire una delle opzioni. Se questa impostazione non viene modificata, rimarrà effettiva l'impostazione predefinita WebSearchAndFileDownload.
 
 Ad esempio:
 

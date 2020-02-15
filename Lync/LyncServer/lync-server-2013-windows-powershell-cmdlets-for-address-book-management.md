@@ -12,20 +12,20 @@ ms:contentKeyID: 48184512
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5ec10f3e3d3d58a790ddc60fd1af1d1b09765685
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5b294d2d27c9c092854e2556d863a76a77569932
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41727466"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041185"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="windows-powershell-cmdlets-for-address-book-services-in-lync-server-2013"></a>Cmdlet di Windows PowerShell per i servizi Rubrica in Lync Server 2013
+# <a name="windows-powershell-cmdlets-for-address-book-services-in-lync-server-2013"></a>Cmdlet di Windows PowerShell per i servizi della Rubrica in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41727466"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Lync Server offre diversi cmdlet di interfaccia della riga di comando di Windows PowerShell per gestire e configurare il servizio Rubrica. Alcuni di questi cmdlet sono sostituzioni per i comandi di ABServer. exe usati nelle versioni precedenti di Office Communications Server. Negli argomenti seguenti sono disponibili i cmdlet usati per impostare, creare e recuperare informazioni sul servizio Rubrica, la configurazione e le informazioni sui servizi Web che il servizio Rubrica usa quando i client recuperano il servizio Rubrica file e impostazioni.
+Lync Server fornisce una serie di cmdlet dell'interfaccia della riga di comando di Windows PowerShell per la gestione e la configurazione del servizio Rubrica. Alcuni di questi cmdlet sono sostituzioni dei comandi di ABServer. exe utilizzati nelle versioni precedenti di Office Communications Server. Negli argomenti seguenti sono indicati i cmdlet utilizzati per impostare, creare e recuperare informazioni sul Servizio Rubrica e la configurazione e le informazioni sui servizi Web utilizzati dal Servizio Rubrica quando i client recuperano i file e le impostazioni del Servizio Rubrica stesso.
 
 Tutti questi cmdlet vengono emessi tramite Lync Server Management Shell disponibile negli strumenti di Lync Server in un server o una workstation in cui sono stati installati gli strumenti di amministrazione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [New-CsAddressBookConfiguration per la gestione della Rubrica in Lync Server 2013](lync-server-2013-New-CsAddressBookConfiguration-for-address-book-management.md)
 

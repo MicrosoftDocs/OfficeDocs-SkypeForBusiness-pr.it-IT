@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurazione degli annunci per i numeri non assegnati'
+title: 'Lync Server 2013: configurazione degli annunci per i numeri non assegnati'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184035
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 52d7e8ad1aa4fcfe3db9aabee61e317810707194
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6442ed90050df22df77c41773619bedb5ee3ff72
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726526"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048350"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,27 +35,27 @@ ms.locfileid: "41726526"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-11_
+_**Ultimo argomento modificato:** 2012-09-11_
 
-L'applicazione di annuncio è una caratteristica di VoIP aziendale che consente di configurare le chiamate alle estensioni non assegnate (estensioni valide per l'organizzazione, ma non assegnate a una persona o a un telefono). Ad esempio, puoi configurare le chiamate a numeri non assegnati per riprodurre un messaggio o per essere trasferito a una destinazione diversa o entrambe.
+L'applicazione annuncio è una funzionalità VoIP aziendale che consente di configurare le chiamate alle estensioni non assegnate (estensioni valide per la propria organizzazione, ma non vengono assegnate a una persona o a un telefono). È ad esempio possibile configurare le chiamate a numeri non assegnati in modo che venga riprodotto un messaggio, in modo che vengano trasferite a un'altra destinazione oppure in modo che vengano eseguite entrambe queste azioni.
 
-L'applicazione annuncio viene installata come caratteristica dell'applicazione Response Group nel server front-end o Standard Edition quando si distribuisce VoIP aziendale. È necessario configurare gli annunci caricando i file audio o configurando la sintesi vocale (TTS) e configurando la tabella dei numeri non assegnati.
+L'applicazione annuncio viene installata come caratteristica dell'applicazione Response Group nel server front end server o Standard Edition quando si distribuisce VoIP aziendale. È necessario configurare gli annunci caricando i file audio oppure configurando la sintesi vocale e la tabella dei numeri non assegnati.
 
-Questa sezione illustra la configurazione degli annunci di Lync Server. Si presuppone che siano già state lette le sezioni di pianificazione correlate agli annunci e che sia stato distribuito un server Enterprise Edition o un server Standard Edition con VoIP aziendale.
+In questa sezione viene illustrata la configurazione degli annunci di Lync Server. Si presuppone che siano già state lette le sezioni di pianificazione relative agli annunci e che sia stato distribuito un server Enterprise Edition o un server Standard Edition con VoIP aziendale.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Prerequisiti e ruoli per la configurazione degli annunci in Lync Server 2013](lync-server-2013-announcement-configuration-prerequisites-and-roles.md)
 
-  - [Processo di distribuzione per l'applicazione di annuncio in Lync Server 2013](lync-server-2013-deployment-process-for-the-announcement-application.md)
+  - [Processo di distribuzione per l'applicazione annuncio in Lync Server 2013](lync-server-2013-deployment-process-for-the-announcement-application.md)
 
   - [Creare un annuncio in Lync Server 2013](lync-server-2013-create-an-announcement.md)
 
   - [Configurare la tabella dei numeri non assegnati in Lync Server 2013](lync-server-2013-configure-the-unassigned-number-table.md)
 
-  - [Opzionale Verificare la distribuzione degli annunci in Lync Server 2013](lync-server-2013-optional-verify-announcement-deployment.md)
+  - [Optional Verificare la distribuzione degli annunci in Lync Server 2013](lync-server-2013-optional-verify-announcement-deployment.md)
 
 </div>
 

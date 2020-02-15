@@ -12,16 +12,16 @@ ms:contentKeyID: 48183578
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a04a798a69279ebef6c4917938ead2fd88a49805
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b0478bec0d78b56061cf68d9efabe5e78a60bad4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037838"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,29 +35,29 @@ ms.locfileid: "41735056"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-02_
+_**Ultimo argomento modificato:** 2012-11-02_
 
-Dopo l'abilitazione di un account utente in utenti e computer di Active Directory, è possibile usare il pannello di controllo di Lync Server per creare e abilitare nuovi account utente di Lync Server 2013 aggiungendo un utente di Active Directory a Lync Server.
+Dopo aver abilitato un account utente in utenti e computer di Active Directory, è possibile utilizzare il pannello di controllo di Lync Server per creare e abilitare nuovi account utente di Lync Server 2013 aggiungendo un utente di Active Directory a Lync Server.
 
 <div>
 
 ## <a name="to-add-and-enable-a-new-lync-server-user"></a>Per aggiungere e abilitare un nuovo utente di Lync Server
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **utenti**.
+3.  Nella barra di spostamento sinistra fare clic su **Utenti**.
 
 4.  Fare clic su **Abilita utenti**.
 
-5.  Nella finestra di dialogo **nuovo utente di Lync Server** fare clic su **Aggiungi**.
+5.  Nella finestra di dialogo **Nuovo utente di Lync Server** fare clic su **Aggiungi**.
 
-6.  Nella casella **Cerca utenti** digitare tutto o la prima parte del nome, il nome visualizzato, il nome, il cognome, il nome dell'account SAM (Security Accounts Manager), l'indirizzo di posta elettronica, il nome dell'entità utente (UPN) o il numero di telefono dell'account utente di Active Directory desiderato e quindi fare clic su **trova**.
+6.  Nella casella **Ricerca utenti** digitare il nome intero o parziale, il nome visualizzato, il nome, il cognome, il nome account del sistema degli account di sicurezza (SAM), l'indirizzo di posta elettronica, il nome dell'entità utente o il numero di telefono dell'account utente di Active Directory desiderato e quindi fare clic su **Trova**.
 
-7.  Nella tabella selezionare l'account che si vuole aggiungere a Lync Server e quindi fare clic su **OK**.
+7.  Nella tabella selezionare l'account che si desidera aggiungere a Lync Server e quindi fare clic su **OK**.
 
-8.  Assegnare l'utente a un pool, specificare eventuali dettagli aggiuntivi e assegnare i criteri all'utente desiderato e quindi fare clic su **Abilita**.
+8.  Assegnare l'utente a un pool, specificare eventuali dettagli aggiuntivi, assegnare i criteri all'utente desiderato e quindi fare clic su **Abilita**.
 
 </div>
 
@@ -66,7 +66,7 @@ Dopo l'abilitazione di un account utente in utenti e computer di Active Director
 ## <a name="see-also"></a>Vedere anche
 
 
-[Disabilitare o riattivare l'account utente per Lync Server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md)  
+[Disabilitare o riabilitare l'account utente per Lync Server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md)  
 [Rimuovere un account utente da Lync Server 2013](lync-server-2013-remove-a-user-account-from-lync-server.md)  
 
 

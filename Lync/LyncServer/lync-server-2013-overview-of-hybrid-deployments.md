@@ -12,16 +12,16 @@ ms:contentKeyID: 48185845
 ms.date: 05/25/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7e7acc66fa3393785497160cd327b1918c27d85b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4c87e727db8538f92d77d3c125e21c96053317ae
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755540"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044638"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41755540"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-05-25_
+_**Ultimo argomento modificato:** 2016-05-25_
 
-Una distribuzione ibrida di Lync Server è una distribuzione in cui gli utenti di un dominio, ad esempio contoso.com, vengono divisi tra l'uso di Lync Server locale e Microsoft Lync Online. Alcuni utenti del dominio sono ospitati nel server Lync locale e alcuni utenti si trovano in Skype for business online.
+Una distribuzione ibrida di Lync Server è una distribuzione in cui gli utenti di un dominio, ad esempio contoso.com, vengono divisi tra l'utilizzo di Lync Server in locale e Microsoft Lync Online. Alcuni utenti del dominio sono ospitati nel Lync Server locale e alcuni utenti sono ospitati in Skype for business online.
 
-È possibile configurare la distribuzione locale di Lync per Hybrid con Skype for business online e usare la sincronizzazione di Active Directory per sincronizzare gli utenti locali e online. È anche possibile configurare distribuzioni ibride per l'integrazione con Exchange locale e SharePoint o con le applicazioni di Microsoft Office 365, tra cui Exchange Online e SharePoint Online.
+È possibile configurare la distribuzione Lync locale per l'ambiente ibrido con Skype for business online e utilizzare la sincronizzazione di Active Directory per sincronizzare gli utenti locali e online. È inoltre possibile configurare le distribuzioni ibride per l'integrazione con Exchange locale e SharePoint o con le applicazioni di Microsoft Office 365, tra cui Exchange Online e SharePoint Online.
 
-Questa sezione illustra la distribuzione delle applicazioni necessarie per una distribuzione ibrida di Lync Server e quindi la configurazione della distribuzione per la gestione degli utenti tra Lync Server locale e Skype for business online.
+In questa sezione viene illustrata la distribuzione delle applicazioni necessarie per una distribuzione ibrida di Lync Server e quindi la configurazione della distribuzione per la gestione degli utenti tra Lync Server locale e Skype for business online.
 
-Per informazioni sulla configurazione della distribuzione locale di Lync Server per l'ibrido con Skype for business online, vedere gli argomenti seguenti:
+Per informazioni sulla configurazione della distribuzione di Lync Server locale per l'ambiente ibrido con Skype for business online, vedere i seguenti argomenti:
 
-  - [Pianificazione di distribuzioni ibride di Lync Server 2013](lync-server-2013-planning-for-hybrid-deployments.md)
+  - [Pianificazione delle distribuzioni ibride di Lync Server 2013](lync-server-2013-planning-for-hybrid-deployments.md)
 
-  - [Configurazione di distribuzioni ibride per Lync Server 2013](lync-server-2013-configuring-hybrid-deployments.md)
+  - [Configurazione delle distribuzioni ibride di Lync Server 2013](lync-server-2013-configuring-hybrid-deployments.md)
 
-Per altre informazioni su Skype for business online, vedere [Lync Online](http://go.microsoft.com/fwlink/p/?linkid=282396).
+Per ulteriori informazioni su Skype for business online, vedere [Lync Online](http://go.microsoft.com/fwlink/p/?linkid=282396).
 
 </div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 49733825
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8fd25da49e8a3b6ad7838ff27a4472e711b97421
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1a7e62fbf56d270c6d2d0c65415dc28dd30e4449
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756410"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046669"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41756410"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-La Visualizzazione ClientVersions archivia le informazioni sui diversi tipi e versioni di client che hanno partecipato alle sessioni registrate nel database. Ogni record della visualizzazione rappresenta una versione client. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
+La Visualizzazione ClientVersions archivia le informazioni sui diversi tipi di client e le versioni che hanno partecipato alle sessioni registrate nel database. Ogni record nella visualizzazione rappresenta una versione client. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
 
 <div>
 
@@ -67,7 +67,7 @@ La Visualizzazione ClientVersions archivia le informazioni sui diversi tipi e ve
 <tr class="odd">
 <td><p><strong>VersionId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Numero univoco che identifica questo tipo di client e la versione.</p></td>
+<td><p>Numero univoco che identifica il tipo di client e la versione.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Versione</strong></p></td>
@@ -75,14 +75,14 @@ La Visualizzazione ClientVersions archivia le informazioni sui diversi tipi e ve
 <td><p>Rappresenta l'agente utente.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>TipoClient</strong></p></td>
+<td><p><strong>ClientType</strong></p></td>
 <td><p>int</p></td>
 <td><p>Tipo di client.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ClientCategory</strong></p></td>
 <td><p>nvarchar (64)</p></td>
-<td><p>Categoria a cui appartiene il client. Ad esempio, il client Conferencing_Attendant_1 .0 appartiene alla ClientCategory CAA.</p></td>
+<td><p>Categoria a cui appartiene il client. Ad esempio, il client Conferencing_Attendant_1 .0 appartiene a ClientCategory CAA.</p></td>
 </tr>
 </tbody>
 </table>

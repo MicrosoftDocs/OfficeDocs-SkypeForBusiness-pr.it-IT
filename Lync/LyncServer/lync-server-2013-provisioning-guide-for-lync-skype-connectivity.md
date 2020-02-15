@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Guida al provisioning della connettività Lync-Skype'
+title: 'Lync Server 2013: Guida per il provisioning della connettività Lync-Skype'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 57793363
 ms.date: 11/26/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f94da566e4322f9b8d1d039441c561f5ed60f6c2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e8f6e1b9262e0e7ed0f9060f3e509924aee9ba62
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747216"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050298"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,30 +35,30 @@ ms.locfileid: "41747216"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-11-26_
+_**Ultimo argomento modificato:** 2014-11-26_
 
-Lync Server 2013 supporta la connettività con Skype, grazie alla quale gli utenti di Lync 2013 possono aggiungere contatti Skype usando l'account Microsoft (MSA) dell'utente Skype. È anche possibile aggiungere utenti Lync all'elenco contatti dei client Skype. In base ai criteri impostati a livello amministrativo in Lync Server, gli utenti Lync e Skype saranno in grado di comunicare tramite messaggistica istantanea, verificare la rispettiva presenza e avviare chiamate audio e video. La connettività Lync-Skype è anche una funzionalità di Lync Online e può essere abilitata per gli utenti di Lync Online tramite l'interfaccia di amministrazione di Lync nel portale di Office 365.
+Lync Server 2013 supporta la connettività con Skype. Questa connettività consente agli utenti di Lync 2013 di aggiungere contatti Skype utilizzando l'account Microsoft dell'utente Skype (MSA). I client Skype possono inoltre aggiungere utenti di Lync all'elenco dei contatti. In base ai criteri configurati amministrativamente in Lync Server, gli utenti di Lync e Skype saranno in grado di comunicare utilizzando la messaggistica istantanea, vedere reciprocamente la presenza e avviare chiamate audio e video. La connettività Lync-Skype è anche una funzionalità di Lync Online e può essere abilitata per i clienti di Lync Online dall'interfaccia di amministrazione di Lync all'interno del portale di Office 365.
 
 <div>
 
 > [!IMPORTANT]  
-> Se Lync Server è già configurato per la connessione con Windows Messenger tramite connettività per messaggistica istantanea pubblica (PIC, Public Instant Messaging Connectivity), la distribuzione è già configurata per la connettività Lync-Skype. L'unica modifica che potrebbe essere necessaria è la ridenominazione della voce PIC di Messenger esistente in Skype. Per dettagli, vedere Configurare l'impostazione per Lync del provider PIC di Skype, più avanti in questa guida.
+> Se Lync Server è già configurato per la connessione con Windows Messenger tramite la connettività di messaggistica istantanea pubblica (PIC), la distribuzione è già configurata per la connettività Lync-Skype. L'unica modifica che è possibile prendere in considerazione è quella di rinominare la voce del PIC Messenger esistente come Skype. Per ulteriori informazioni, vedere Configure the Skype PIC provider setting for Lync più avanti in questa guida.
 
 </div>
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Nota sulla connettività di Lync-Skype in Lync Server 2013 per i clienti di Lync Online](lync-server-2013-note-about-lync-skype-connectivity-for-lync-on.md)
+  - [Note sulla connettività Lync-Skype in Lync Server 2013 per i clienti di Lync Online](lync-server-2013-note-about-lync-skype-connectivity-for-lync-on.md)
 
   - [Accesso al sito di provisioning di connettività per messaggistica istantanea pubblica di Lync Server da Lync Server 2013](lync-server-2013-accessing-the-lync-server-public-im-connectivity-provisioning-site.md)
 
   - [Abilitazione della connettività Lync-Skype in Lync Server 2013](lync-server-2013-enabling-lync-skype-connectivity.md)
 
-  - [Uso della connettività Lync-Skype in Lync Server 2013 come utente finale](lync-server-2013-using-lync-skype-connectivity-as-an-end-user.md)
+  - [Utilizzo della connettività Lync-Skype in Lync Server 2013 come utente finale](lync-server-2013-using-lync-skype-connectivity-as-an-end-user.md)
 
-  - [Domande frequenti: provisioning della connettività Lync Server 2013 per Skype](lync-server-2013-frequently-asked-questions-provisioning-lync-server-for-skype-connectivity.md)
+  - [Domande frequenti: provisioning di Lync Server 2013 per la connettività Skype](lync-server-2013-frequently-asked-questions-provisioning-lync-server-for-skype-connectivity.md)
 
 </div>
 

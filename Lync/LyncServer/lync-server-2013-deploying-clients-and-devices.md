@@ -12,16 +12,16 @@ ms:contentKeyID: 48185915
 ms.date: 04/03/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 20a28df76c87df01ab39e3c3113c3c4beaa09347
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7e405ef520af5533f89475eeaf53d2fd35eaad87
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729446"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049358"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41729446"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-04-03_
+_**Ultimo argomento modificato:** 2015-04-03_
 
 In questa sezione vengono illustrate le procedure per la distribuzione di client e dispositivi di Lync Server 2013.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Distribuzione di client Lync in Lync Server 2013](lync-server-2013-deploying-lync-clients.md)
 
-  - [Configurare l'esperienza client con Skype for Business](configure-the-skype-for-business-client-in-lync-server-2013.md)
+  - [Configurare l'esperienza client con Skype for business](configure-the-skype-for-business-client-in-lync-server-2013.md)
 
   - [Distribuzione del plug-in VDI di Lync in Lync Server 2013](lync-server-2013-deploying-the-lync-vdi-plug-in.md)
 
@@ -55,7 +55,7 @@ In questa sezione vengono illustrate le procedure per la distribuzione di client
 
   - [Distribuzione di client mobili in Lync Server 2013](lync-server-2013-deploying-mobile-clients.md)
 
-  - [Distribuzione dell'app Lync di Windows Store in Lync Server 2013](lync-server-2013-deploying-lync-windows-store-app.md)
+  - [Distribuzione di Lync Windows Store app in Lync Server 2013](lync-server-2013-deploying-lync-windows-store-app.md)
 
  </div>
 

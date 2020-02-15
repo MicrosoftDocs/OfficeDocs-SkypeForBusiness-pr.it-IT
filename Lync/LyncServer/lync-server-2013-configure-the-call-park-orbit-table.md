@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare la tabella di codici orbit del parcheggio di chiamata'
+title: 'Lync Server 2013: configurare la tabella di orbit del parcheggio di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185666
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 417fb90feb9f12f8c2776518fa8fefffae7ff003
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: dbeb465bd9ac4e62a51ab562238db9a6c0828f99
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739996"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043238"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-the-call-park-orbit-table-in-lync-server-2013"></a>Configurare la tabella di codici orbit del parcheggio di chiamata in Lync Server 2013
+# <a name="configure-the-call-park-orbit-table-in-lync-server-2013"></a>Configurare la tabella di orbit del parcheggio di chiamata in Lync Server 2013
 
 </div>
 
@@ -35,27 +35,27 @@ ms.locfileid: "41739996"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-10_
+_**Ultimo argomento modificato:** 2012-09-10_
 
-Call Park USA orbite per le chiamate di parcheggio. Prima che gli utenti possano parcheggiare e recuperare le chiamate, è necessario configurare la tabella Orbit di Call Park. Devi specificare gli intervalli di numeri di interno (orbite) che l'organizzazione riserva alle chiamate di parcheggio e definire il routing per tali intervalli specificando il pool di parcheggio di chiamata che gestisce ogni intervallo. Quando definisci intervalli orbitali, l'obiettivo è quello di avere orbite sufficienti in modo che una qualsiasi orbita non venga riutilizzata troppo rapidamente, ma non così tante orbite che limiti il numero di estensioni disponibili per gli utenti o altri servizi. È possibile creare più intervalli di orbita del parcheggio di chiamata per ogni pool di Lync Server in cui è distribuita l'applicazione Parcheggio di chiamata. Ogni intervallo di Orbit di Call Park deve avere un nome univoco globale e un set di estensioni univoco.
+Il parcheggio di chiamata utilizza le orbite per le chiamate. Prima che gli utenti possano parcheggiare e recuperare le chiamate, è necessario configurare la tabella di orbit del parcheggio di chiamata. È necessario specificare gli intervalli di numeri di interno (orbite) che l'organizzazione prenoterà per le chiamate al parcheggio e definire il routing per tali intervalli specificando il pool di parcheggio di chiamata che gestisce ogni intervallo. Quando si definiscono gli intervalli di codici orbit, l'obiettivo è quello di disporre di un numero sufficiente di codici orbit tale da evitare che uno stesso codice orbit venga riutilizzato troppo rapidamente, ma senza eccedere limitando il numero di interni disponibili per gli utenti o altri servizi. È possibile creare più intervalli di orbit del parcheggio di chiamata per ogni pool di Lync Server in cui è distribuita l'applicazione Parcheggio di chiamata. Ogni intervallo di orbit del parcheggio di chiamata deve disporre di un nome univoco globale e di un insieme univoco di estensioni.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Un intervallo orbit include in genere 100 o meno orbite. Ogni intervallo può essere molto più grande, purché sia più piccolo del massimo di 10.000 orbite per intervallo e si hanno meno di 50.000 orbite per ogni pool. Se un intervallo è troppo piccolo, le orbite vengono riutilizzate più rapidamente.
+> Un intervallo di codici orbit include in genere al massimo 100 codici orbit. Ogni intervallo può essere più grande, purché sia più piccolo del massimo di 10.000 codici orbit per intervallo e ogni pool includa meno di 50.000 codici orbit. Se un intervallo è troppo piccolo, i codici orbit vengono riutilizzati più rapidamente.
 
 
 
 </div>
 
-Usare blocchi di estensioni virtuali (estensioni che non hanno un utente o un telefono assegnato) per gli intervalli di Orbit.
+Utilizzare blocchi di estensioni virtuali, ovvero a cui non sono assegnati utenti o telefoni, per gli intervalli di codici orbit.
 
 <div>
 
 
 > [!NOTE]  
-> L'assegnazione di numeri DID (Direct Inward Dialing) come numeri di orbita nella tabella Orbit di parcheggio delle chiamate non è supportata.
+> L'assegnazione dei numeri DID (Direct Inward Dialing) ai numeri orbitali nella tabella orbit del parcheggio di chiamata non è supportata.
 
 
 
@@ -63,9 +63,9 @@ Usare blocchi di estensioni virtuali (estensioni che non hanno un utente o un te
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-[Creare o modificare un intervallo orbit di Call Park in Lync Server 2013](lync-server-2013-create-or-modify-a-call-park-orbit-range.md)
+[Creare o modificare un intervallo di codici orbit del parcheggio di chiamata in Lync Server 2013](lync-server-2013-create-or-modify-a-call-park-orbit-range.md)
 
 </div>
 

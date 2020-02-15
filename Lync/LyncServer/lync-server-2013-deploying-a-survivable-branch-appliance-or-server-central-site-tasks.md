@@ -1,5 +1,5 @@
 ---
-title: Distribuzione di Survivable Branch Appliance o Survivable Branch Server - Attività presso il sito centrale
+title: Distribuzione di un Survivable Branch Appliance o di un'attività del sito server centrale
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183422
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a9aa6d38ec873652feae6ef6a374ee5b771520b1
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4756da7db87504e8b8c700cea1abb171b594543e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729626"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42047550"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deploying-a-survivable-branch-appliance-or-server-with-lync-server-2013---central-site-tasks"></a>Distribuzione di Survivable Branch Appliance o Survivable Branch Server con Lync Server 2013 - Attività presso il sito centrale
+# <a name="deploying-a-survivable-branch-appliance-or-server-with-lync-server-2013---central-site-tasks"></a>Distribuzione di un Survivable Branch Appliance o server con Lync Server 2013-attività del sito centrale
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41729626"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-18_
+_**Ultimo argomento modificato:** 2012-10-18_
 
-Completare le attività in questa sezione nel sito centrale. Se si sta distribuendo un Survivable Branch Server, ignorare la prima attività.
+Le attività indicate in questa sezione devono essere eseguite presso il sito centrale. Se si sta distribuendo un Survivable Branch Server, ignorare la prima attività.
 
 <div>
 
 
 > [!IMPORTANT]
-> Prima di eseguire le attività in questa sezione, è necessario che siano presenti le condizioni seguenti: 
+> Prima di eseguire le attività descritte in questa sezione, è necessario soddisfare le condizioni seguenti: 
 > <UL>
 > <LI>
-> <P>Lync Server deve essere configurato nel sito centrale.</P>
+> <P>È necessario configurare Lync Server nel sito centrale.</P>
 > <LI>
-> <P>Il tecnico dell'installazione presso il sito della filiale deve essere aggiunto al gruppo RTCUniversalSBATechnicians.</P></LI></UL>Inoltre, è consigliabile eseguire le operazioni seguenti:
+> <P>Al gruppo RTCUniversalSBATechnicians deve essere aggiunto un tecnico addetto all'installazione presso il sito di succursale.</P></LI></UL>È inoltre consigliabile eseguire le operazioni seguenti:
 > <UL>
 > <LI>
-> <P>Distribuire un server DHCP in ogni sito di filiale per consentire ai client di ottenere indirizzi IP.</P>
+> <P>Distribuire un server DHCP in ogni sito di succursale per consentire ai client di ottenere gli indirizzi IP.</P>
 > <LI>
-> <P>In alternativa alla distribuzione di un server DHCP in ogni sito di succursale, abilitare il protocollo DHCP di Lync Server nel Survivable Branch Appliance o Survivable Branch Server usando il cmdlet <STRONG>Set-CsRegistrarConfiguration-EnableDHCPServer $True</STRONG>di Lync Server Management Shell. Per informazioni dettagliate, vedere la sezione "requisiti hardware e software" dei <A href="lync-server-2013-branch-site-resiliency-requirements.md">requisiti di resilienza del sito filiale per Lync Server 2013</A> nella documentazione relativa alla pianificazione.</P></LI></UL>
+> <P>In alternativa alla distribuzione di un server DHCP in ogni sito di succursale, abilitare Lync Server DHCP nel Survivable Branch Appliance o Survivable Branch Server utilizzando il cmdlet <STRONG>Set-CsRegistrarConfiguration – EnableDHCPServer $True</STRONG>di Lync Server Management Shell. Per informazioni dettagliate, vedere la sezione "requisiti hardware e software" <A href="lync-server-2013-branch-site-resiliency-requirements.md">per i requisiti di resilienza dei siti di succursale per Lync Server 2013</A> nella documentazione relativa alla pianificazione.</P></LI></UL>
 
 
 
@@ -61,13 +61,13 @@ Completare le attività in questa sezione nel sito centrale. Se si sta distribue
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Aggiungere un Survivable Branch Appliance ad Active Directory in Lync Server 2013](lync-server-2013-add-a-survivable-branch-appliance-to-active-directory.md)
 
   - [Aggiungere siti di succursale alla topologia in Lync Server 2013](lync-server-2013-add-branch-sites-to-your-topology.md)
 
-  - [Definire un Survivable Branch Appliance o un Survivable Branch Server in Lync Server 2013](lync-server-2013-define-a-survivable-branch-appliance-or-server.md)
+  - [Definire un Survivable Branch Appliance o un server di succursale in Lync Server 2013](lync-server-2013-define-a-survivable-branch-appliance-or-server.md)
 
 </div>
 

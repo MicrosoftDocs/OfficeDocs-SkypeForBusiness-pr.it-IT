@@ -12,16 +12,16 @@ ms:contentKeyID: 63969636
 ms.date: 05/06/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0b5a251853efe20cc867f78f4f932e2c43efd22c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 341901ce6d467818e6aac433f7d8ca4dca37adef
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756830"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048049"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41756830"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-05-06_
+_**Ultimo argomento modificato:** 2015-05-06_
 
 Lync Server Management Pack (MP) è la soluzione di monitoraggio scelta per il monitoraggio di qualsiasi distribuzione di Lync Server.
 
-L'MP implementa il registro eventi tradizionale e la strumentazione basata su contatori delle prestazioni e consente di disporre di una nuova strumentazione disponibile in Lync Server, ad esempio eventi di coppia (errore/successo) per diversi indicatori di integrità chiave e implementa completamente le\* nuove transazioni sintetiche (cmdlet di Windows PowerShell per test-CS).
+MP implementa il registro eventi tradizionale e la strumentazione basata su contatori delle prestazioni e consente la strumentazione appena disponibile in Lync Server, ad esempio gli eventi di coppia (esito negativo/esito positivo) per diversi indicatori di integrità chiave e implementa anche\* completamente le nuove transazioni sintetiche (cmdlet di Windows PowerShell di test-CS).
 
-È possibile trovare il Management Pack di Lync Server 2013 e la relativa documentazione [http://go.microsoft.com/fwlink/p/?LinkId=400468](http://go.microsoft.com/fwlink/p/?linkid=400468)relativa. Questa operazione è consigliata se si esegue System Center Operations Manager 2012.
+È possibile trovare il Lync Server 2013 Management Pack e la relativa documentazione relativa [http://go.microsoft.com/fwlink/p/?LinkId=400468](http://go.microsoft.com/fwlink/p/?linkid=400468)all'indirizzo. Questa opzione è consigliata se si esegue System Center Operations Manager 2012.
 
 </div>
 

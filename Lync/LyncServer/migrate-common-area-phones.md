@@ -1,5 +1,5 @@
 ---
-title: Eseguire la migrazione dei telefoni di aree comuni
+title: Migrare i telefoni delle aree comuni
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733604
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cba32f8aa95b870190280aebd94d51bdbeec0f2b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c7abaa29d2383f80a6f822eaa5d524197996500b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762954"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42047824"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="migrate-common-area-phones"></a>Eseguire la migrazione dei telefoni di aree comuni
+# <a name="migrate-common-area-phones"></a>Migrare i telefoni delle aree comuni
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41762954"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-29_
+_**Ultimo argomento modificato:** 2012-09-29_
 
-I telefoni per l'area comune sono i telefoni IP che più spesso si trovano in un'area di lavoro condivisa o in uno spazio comune, ad esempio una sala d'attesa, una cucina o una fabbrica. I telefoni per l'area comune non devono essere connessi a un computer per ottenere la funzionalità UC di Lync Server. Dopo la migrazione di una distribuzione di Lync Server 2010 a Lync Server 2013, è anche necessario eseguire la migrazione degli oggetti contatto associati al telefono dell'area comune legacy. Usando Lync Server Management Shell si recupereranno prima tutti gli oggetti contatto associati ai telefoni delle aree comuni di Lync Server 2010 e quindi li sposteremo nel pool di Lync Server 2013.
+I telefoni delle aree comuni sono telefoni IP che molto spesso risiedono in un'area di lavoro condivisa o area comune, ad esempio una sala di attesa, una cucina o un reparto produzione. Non è necessario che i telefoni delle aree comuni siano connessi a un computer per fornire la funzionalità UC di Lync Server. Dopo aver eseguito la migrazione di una distribuzione di Lync Server 2010 a Lync Server 2013, è necessario eseguire la migrazione anche degli oggetti contatto associati al telefono delle aree comuni legacy. Utilizzando Lync Server Management Shell, è necessario recuperare tutti gli oggetti contatto associati ai telefoni delle aree comuni di Lync Server 2010 e quindi spostare tali oggetti nel pool di Lync Server 2013.
 
-**Eseguire la migrazione dei telefoni di aree comuni**
+**Migrare i telefoni delle aree comuni**
 
-1.  Dal server front-end di Lync Server 2013 aprire Lync Server Management Shell.
+1.  Dal front end server Lync Server 2013 aprire Lync Server Management Shell.
 
-2.  Nella riga di comando digitare quanto segue:
+2.  Dalla riga di comando digitare quanto segue:
     
         Get-CsCommonAreaPhone -Filter {RegistrarPool -eq "pool01.contoso.net"} | Move-CsCommonAreaPhone -Target pool02.contoso.net
 
-3.  Per verificare che tutti gli oggetti contatto siano stati spostati nel pool di Lync Server 2013, in Lync Server Management Shell digitare quanto segue:
+3.  Per verificare che tutti gli oggetti contatto siano stati spostati nel pool di Lync Server 2013, dal tipo Lync Server Management Shell, eseguire le operazioni seguenti:
     
         Get-CsCommonAreaPhone -Filter {RegistrarPool -eq "pool02.contoso.net"}
     

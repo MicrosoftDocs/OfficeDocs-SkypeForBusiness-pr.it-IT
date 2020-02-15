@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Aggiunta dei domini di utenti e gruppi di utenti alla categoria della chat room'
+title: 'Lync Server 2013: aggiunta di domini di utenti e gruppi utente alla categoria della chat room'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48706013
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4f9fbbc7ad4fd5279cea1116607193817078a04e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 505702a656fd838fa9ba23b65487ff57963abb30
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738146"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038548"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="adding-domains-of-users-and-user-groups-to-the-room-category-in-lync-server-2013"></a>Aggiunta dei domini di utenti e gruppi di utenti alla categoria della chat room in Lync Server 2013
+# <a name="adding-domains-of-users-and-user-groups-to-the-room-category-in-lync-server-2013"></a>Aggiunta di domini di utenti e gruppi utente alla categoria della chat room in Lync Server 2013
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41738146"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-02-07_
+_**Ultimo argomento modificato:** 2014-02-07_
 
-Per aggiungere gruppi di utenti di grandi dimensioni a una chat room, vedere [configurare le categorie in Lync Server 2013](lync-server-2013-configure-categories.md) e [gestire le categorie](manage-categories.md) nella documentazione relativa alla distribuzione. Ad esempio, questo comando aggiunge tutti gli utenti dell'unità organizzativa NorthAmericaUsers in Active Directory alla chat room di NorthAmerica:
+Per aggiungere gruppi di utenti di grandi dimensioni a una chat room, vedere [Configure Categories in Lync Server 2013](lync-server-2013-configure-categories.md) e [Manage Categories](manage-categories.md) nella documentazione relativa alla distribuzione. Ad esempio, questo comando aggiunge tutti gli utenti dall'unità organizzativa NorthAmericaUsers in Active Directory alla chat room di NorthAmerica:
 
     Set-CsPersistentChatRoom -PersistentChatPoolFqdn "atl-cs-001.litwareinc.com\NorthAmerica" -Members @{Add="OU=NorthAmericaUsers,DC=litwareinc,DC=com"}
 

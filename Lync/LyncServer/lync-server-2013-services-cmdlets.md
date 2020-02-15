@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: cmdlet di servizi'
+title: 'Lync Server 2013: cmdlet per i servizi'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184673
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d71336440b4816942ca24782683f17c24e889b1c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a9c0fb2cff1bf77017c26a61f3181b5b018d0b5f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764824"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048977"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="services-cmdlets-in-lync-server-2013"></a>Cmdlet di servizi in Lync Server 2013
+# <a name="services-cmdlets-in-lync-server-2013"></a>Cmdlet per i servizi in Lync Server 2013
 
 </div>
 
@@ -35,31 +35,31 @@ ms.locfileid: "41764824"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-20_
+_**Ultimo argomento modificato:** 2012-06-20_
 
-I cmdlet Role e Services del server forniti con Microsoft Lync Server 2013 consentono di restituire informazioni sui vari componenti installati come parte della distribuzione di Lync Server 2013. Questi cmdlet semplificano inoltre l'interruzione e l'avvio dei servizi di Lync Server.
+I cmdlet per il ruolo del server e i servizi forniti con Microsoft Lync Server 2013 consentono di restituire informazioni sui vari componenti installati nell'ambito della distribuzione di Lync Server 2013. Inoltre, questi cmdlet semplificano l'interruzione e l'avvio dei servizi di Lync Server.
 
 <div>
 
-## <a name="services-cmdlets"></a>Cmdlet di servizi
+## <a name="services-cmdlets"></a>Cmdlet per i servizi
 
-Di seguito è riportato un elenco di cmdlet correlati direttamente alla gestione dei servizi:
+Di seguito è riportato un elenco di cmdlet direttamente correlati alla gestione dei servizi:
 
 **Servizi**
 
   - <span></span>  
-    [Get-CsService](https://technet.microsoft.com/en-us/library/Gg413038(v=OCS.15))
+    [Get-CsService](https://technet.microsoft.com/library/Gg413038(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Get-CsWindowsService](https://technet.microsoft.com/en-us/library/Gg398803(v=OCS.15))
+    [Get-CsWindowsService](https://technet.microsoft.com/library/Gg398803(v=OCS.15))
 
   - <span></span>  
-    [Start-CsWindowsService](https://technet.microsoft.com/en-us/library/Gg398561(v=OCS.15))
+    [Start-CsWindowsService](https://technet.microsoft.com/library/Gg398561(v=OCS.15))
 
   - <span></span>  
-    [Stop-CsWindowsService](https://technet.microsoft.com/en-us/library/Gg398426(v=OCS.15))
+    [Stop-CsWindowsService](https://technet.microsoft.com/library/Gg398426(v=OCS.15))
 
 </div>
 

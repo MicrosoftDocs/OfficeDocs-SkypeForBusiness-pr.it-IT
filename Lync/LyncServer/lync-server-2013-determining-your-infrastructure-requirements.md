@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Determinazione dei requisiti dell'infrastruttura"
+title: "Lync Server 2013: determinazione dei requisiti dell'infrastruttura"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185780
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d9a90b1e2b79532273b9035bc6614aa5bdd2ff96
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d5446972b10bd761cb5958dbfc2a3762698e4311
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762464"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049318"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41762464"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-10_
+_**Ultimo argomento modificato:** 2012-09-10_
 
-È necessario identificare e comprendere i requisiti di infrastruttura per la distribuzione, in modo da poter pianificare come soddisfare questi requisiti prima di distribuire Lync Server.
+È necessario identificare e comprendere i requisiti dell'infrastruttura per la distribuzione, in modo da poter pianificare il modo in cui soddisfare tali requisiti prima di distribuire Lync Server.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Determinazione dei requisiti di sistema per Lync Server 2013](lync-server-2013-determining-your-system-requirements.md)
 
@@ -49,7 +49,7 @@ _**Argomento Ultima modifica:** 2012-09-10_
 
   - [Requisiti dell'infrastruttura dei certificati per Lync Server 2013](lync-server-2013-certificate-infrastructure-requirements.md)
 
-  - [Requisiti relativi a IIS (Internet Information Services) in Lync Server 2013](lync-server-2013-internet-information-services-iis-requirements.md)
+  - [Requisiti di Internet Information Services (IIS) in Lync Server 2013](lync-server-2013-internet-information-services-iis-requirements.md)
 
 </div>
 

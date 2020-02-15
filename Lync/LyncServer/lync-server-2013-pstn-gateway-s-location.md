@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Posizione del gateway PSTN'
+title: 'Lync Server 2013: posizione del gateway PSTN'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 51803940
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b5d15589f37b18015f91e3717e19415d5ade6b6c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b3ff0e3ea426a8f3aa053b057b616148a42ad409
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724746"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042063"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41724746"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-03-09_
+_**Ultimo argomento modificato:** 2013-03-09_
 
-Le chiamate instradate tramite gateway e PBX PSTN potrebbero richiedere restrizioni di routing basate sulla posizione a seconda della posizione di tali sistemi. Il routing basato sulla posizione può essere abilitato alla granularità per ogni trunk base.
+Le chiamate instradate tramite gateway PSTN e PBX possono richiedere restrizioni di routing basate sulla posizione a seconda della posizione di tali sistemi. Il routing in base alla posizione può essere abilitato alla granularità per ogni base trunk.
 
-Il routing basato sulla posizione introduce il set di regole seguente quando è abilitato su un trunk:
+Il routing in base alla posizione introduce il set di regole seguente quando è abilitato su un trunk:
 
-  - Quando il routing basato sulla posizione è abilitato per ogni trunk, le regole definite in tale trunk verranno applicate solo alle chiamate instradate tramite il trunk.
+  - Quando il routing in base alla posizione è abilitato per ogni trunk, le regole definite su tale trunk verranno applicate solo alle chiamate instradate attraverso il trunk.
 
-  - Per impedire l'esclusione dei pedaggi PSTN in cui le chiamate provengono da un sito di rete diverso da quello del sito di rete in cui si trova il gateway PSTN, il routing basato sulla posizione introduce l'associazione di un sito di rete a un trunk specifico. Questo definisce il sito di rete che consente alle chiamate di essere indirizzate a un trunk specifico.
+  - Per evitare che i pedaggi PSTN vengano ignorati in cui le chiamate provengono da un sito di rete diverso da quello del sito di rete in cui si trova il gateway PSTN, il routing basato sulla posizione introduce l'associazione di un sito di rete a un trunk specificato. In questo modo viene definito il sito di rete che consente di instradare le chiamate a un determinato trunk.
 
-Trunks può essere abilitato per il routing basato sulla posizione in due modi:
+I trunk possono essere abilitati per il routing in base alla posizione in due modi:
 
-  - Il trunk viene definito per un gateway PSTN che egresses chiama alla rete PSTN. Le chiamate in arrivo instradate da un trunk di questo tipo verranno instradate solo agli endpoint situati nello stesso sito di rete del trunk.
+  - Il trunk è definito per un gateway PSTN che egresses le chiamate alla rete PSTN. Le chiamate in arrivo instradate da un trunk di questo tipo verranno instradate solo agli endpoint situati all'interno dello stesso sito di rete del trunk.
 
-  - Il trunk viene definito per un peer di Mediation Server che non consente l'uscita delle chiamate agli utenti di servizi e PSTN con telefoni legacy in posizioni statiche (ad esempio telefoni PBX). Per questa particolare configurazione, tutte le chiamate in arrivo instradate da un trunk di questo tipo verranno considerate come originarie dello stesso sito di rete del trunk. Le chiamate degli utenti PBX avranno la stessa applicazione di routing basata sulla posizione degli utenti di Lync che si trovano nello stesso sito di rete del trunk. Se due sistemi PBX situati in siti di rete separati sono connessi tramite Lync Server, il routing basato sulla posizione consentirà il routing da un endpoint PBX in un sito di rete a un altro endpoint PBX nell'altro sito di rete. Questo scenario non verrà bloccato dal routing basato sulla posizione. Oltre a questo scenario e in modo simile a quello di un utente di Lync nella stessa posizione, gli endpoint connessi a un peer di Mediation Server con questa configurazione saranno in grado di effettuare o ricevere chiamate da e verso altri peer di Mediation Server che non instradano le chiamate alla rete PSTN (i. e. endpoint connesso a un PBX diverso indipendentemente dal sito di rete a cui è associato il peer di Mediation Server. Tutte le chiamate in ingresso, le chiamate in uscita, i trasferimenti di chiamata e i forward di chiamata che coinvolgono endpoint PSTN saranno soggetti al routing basato sulla posizione per usare solo gateway PSTN definiti come locali a tale peer di Mediation Server.
+  - Il trunk è definito per un peer di Mediation Server che non consente di uscire dalle chiamate agli utenti di servizi PSTN e con i telefoni legacy in posizioni statiche (ovvero telefoni PBX). Per questa configurazione specifica, tutte le chiamate in arrivo instradate da un trunk di questo tipo verranno considerate come originate dallo stesso sito di rete del trunk. Le chiamate provenienti da utenti PBX avranno la stessa applicazione di routing in base alla posizione degli utenti di Lync che si trovano nello stesso sito di rete del trunk. Se due sistemi PBX situati in siti di rete separati sono connessi tramite Lync Server, il routing in base alla posizione consentirà di eseguire il routing da un endpoint PBX in un sito di rete a un altro endpoint PBX nell'altro sito di rete. Questo scenario non verrà bloccato dal routing in base alla posizione. Oltre a questo scenario e in modo analogo a quello di un utente Lync nello stesso percorso, gli endpoint connessi a un peer di Mediation Server con questa configurazione saranno in grado di effettuare o ricevere chiamate verso e da altri peer di Mediation Server che non instradano le chiamate alla rete PSTN (i. e. un endpoint connesso a un altro sistema PBX) indipendentemente dal sito di rete a cui è associato il peer Mediation Server. Tutte le chiamate in ingresso, le chiamate in uscita, i trasferimenti di chiamata e gli inoltri di chiamata che coinvolgono endpoint PSTN sono soggetti al routing basato sulla posizione per l'utilizzo di solo gateway PSTN definiti come locali per tale peer di Mediation Server.
 
 <div>
 

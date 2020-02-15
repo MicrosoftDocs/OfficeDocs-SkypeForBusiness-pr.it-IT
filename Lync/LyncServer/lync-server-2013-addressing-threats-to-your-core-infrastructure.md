@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: affrontare le minacce per l'infrastruttura di base"
+title: "Lync Server 2013: indirizzamento delle minacce all'infrastruttura di base"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 60918604
 ms.date: 08/01/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1ca8675fea59c34ba5bf40269387e328f357fe88
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4f6c221b55cd8af2b4217b5aa1f287ae79b19d01
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737986"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038438"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="addressing-threats-to-your-core-infrastructure-for-lync-server-2013"></a>Affrontare le minacce per l'infrastruttura di base per Lync Server 2013
+# <a name="addressing-threats-to-your-core-infrastructure-for-lync-server-2013"></a>Indirizzare le minacce all'infrastruttura di base per Lync Server 2013
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41737986"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-08-01_
+_**Ultimo argomento modificato:** 2016-08-01_
 
-Oltre a seguire le procedure consigliate per la distribuzione di Microsoft Lync Server 2013, è possibile garantire la sicurezza rivedendo, capendo e affrontando le eventuali esigenze in aree specifiche della distribuzione.
+Oltre a seguire le procedure consigliate per la distribuzione di Microsoft Lync Server 2013, è possibile garantire la sicurezza rivedendo, capendo e affrontando qualsiasi esigenza in aree specifiche della distribuzione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Procedure consigliate per l'infrastruttura di base in Lync Server 2013](lync-server-2013-best-practices-for-your-core-infrastructure.md)
 
-  - [Protezione avanzata e sicurezza di server e applicazioni per Lync Server 2013](lync-server-2013-hardening-and-protecting-servers-and-applications.md)
+  - [Indurimento e protezione di server e applicazioni per Lync Server 2013](lync-server-2013-hardening-and-protecting-servers-and-applications.md)
 
-  - [Esclusioni dall'analisi antivirus per Lync Server 2013](lync-server-2013-antivirus-scanning-exclusions.md)
+  - [Esclusioni di analisi antivirus per Lync Server 2013](lync-server-2013-antivirus-scanning-exclusions.md)
 
-  - [Protezione dei dati in transito – database di archiviazione, monitoraggio, server di conformità per chat di gruppo in Lync Server 2013](lync-server-2013-protecting-data-in-transit-–-archiving-monitoring-group-chat-compliance-server-databases.md)
+  - [Protezione dei dati in transito-archiviazione, monitoraggio, database del server di conformità di Group Chat in Lync Server 2013](lync-server-2013-protecting-data-in-transit-–-archiving-monitoring-group-chat-compliance-server-databases.md)
 
   - [Riduzione della messaggistica istantanea indesiderata per Lync Server 2013](lync-server-2013-reducing-unsolicited-im.md)
 

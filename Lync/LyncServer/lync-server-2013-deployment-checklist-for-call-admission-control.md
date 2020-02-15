@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Elenco di controllo di distribuzione per il controllo di ammissione di chiamata'
+title: 'Lync Server 2013: checklist di distribuzione per il controllo di ammissione di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184621
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0bf88529734530e70c4d0536d5337395ff0742d2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d68f13c636b24729db989f25da7055333968cbbd
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740746"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043278"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deployment-checklist-for-call-admission-control-in-lync-server-2013"></a>Elenco di controllo di distribuzione per il controllo di ammissione di chiamata in Lync Server 2013
+# <a name="deployment-checklist-for-call-admission-control-in-lync-server-2013"></a>Checklist di distribuzione per il controllo di ammissione di chiamata in Lync Server 2013
 
 </div>
 
@@ -35,29 +35,29 @@ ms.locfileid: "41740746"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-08_
+_**Ultimo argomento modificato:** 2012-10-08_
 
-Per pianificare efficacemente il controllo di ammissione alle chiamate (CAC), è necessario tenere presente quanto segue:
+Per una pianificazione efficace del servizio Controllo di ammissione di chiamata è necessario prendere in considerazione quanto segue:
 
-  - Prerequisiti per la distribuzione di CAC.
+  - Prerequisiti per la distribuzione del servizio Controllo di ammissione di chiamata
 
-  - Informazioni necessarie per le decisioni di configurazione e CAC che è necessario apportare prima della distribuzione.
+  - Informazioni necessarie per il servizio Controllo di ammissione di chiamata e decisioni che devono essere prese prima di iniziare la distribuzione
 
 <div>
 
-## <a name="deployment-prerequisites-for-call-admission-control"></a>Prerequisiti di distribuzione per il controllo di ammissione di chiamata
+## <a name="deployment-prerequisites-for-call-admission-control"></a>Prerequisiti per la distribuzione del servizio Controllo di ammissione di chiamata
 
-Prima di distribuire il controllo di ammissione di chiamata, è necessario che siano già stati distribuiti i server interni di Lync Server 2013, incluso un pool Front-end o un server Standard Edition.
+Prima di distribuire il controllo di ammissione di chiamata, è necessario che siano già stati distribuiti i server interni di Lync Server 2013, tra cui un pool Front end o un server Standard Edition.
 
 </div>
 
 <div>
 
-## <a name="information-requirements-for-call-admission-control"></a>Requisiti di informazioni per il controllo dell'ammissione alle chiamate
+## <a name="information-requirements-for-call-admission-control"></a>Informazioni necessarie per il servizio Controllo di ammissione di chiamata
 
-Nella tabella seguente vengono riepilogate le informazioni necessarie per la distribuzione del controllo di ammissione alle chiamate.
+Nella tabella seguente sono riepilogate le informazioni necessarie per la distribuzione del servizio Controllo di ammissione di chiamata.
 
-### <a name="information-requirements-for-call-admission-control-deployment"></a>Requisiti di informazioni per la distribuzione del controllo di ammissione alle chiamate
+### <a name="information-requirements-for-call-admission-control-deployment"></a>Informazioni necessarie per la distribuzione del servizio Controllo di ammissione di chiamata
 
 <table>
 <colgroup>
@@ -74,19 +74,19 @@ Nella tabella seguente vengono riepilogate le informazioni necessarie per la dis
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Funzionalità di Lync Server richieste dall'organizzazione</p></td>
+<td><p>Funzionalità di Lync Server necessarie per l'organizzazione</p></td>
 <td><ul>
-<li><p>Funzionalità supportate dall'organizzazione</p></li>
-<li><p>Funzionalità da abilitare per singoli utenti</p></li>
+<li><p>Funzionalità da supportare nell'organizzazione</p></li>
+<li><p>Funzionalità da abilitare per i singoli utenti</p></li>
 </ul></td>
-<td><p><a href="lync-server-2013-defining-your-requirements-for-call-admission-control.md">Definizione dei requisiti dell'organizzazione per il controllo di ammissione di chiamata in Lync Server 2013</a></p></td>
+<td><p><a href="lync-server-2013-defining-your-requirements-for-call-admission-control.md">Definizione dei requisiti per il controllo di ammissione di chiamata in Lync Server 2013</a></p></td>
 </tr>
 <tr class="even">
 <td><p>Topologie e componenti da distribuire</p></td>
 <td><ul>
-<li><p>I componenti correlati a CAC vengono automaticamente installati come parte di Lync Server 2013</p></li>
+<li><p>I componenti correlati a CAC vengono installati automaticamente come parte di Lync Server 2013</p></li>
 </ul></td>
-<td><p><a href="lync-server-2013-defining-your-requirements-for-call-admission-control.md">Definizione dei requisiti dell'organizzazione per il controllo di ammissione di chiamata in Lync Server 2013</a></p></td>
+<td><p><a href="lync-server-2013-defining-your-requirements-for-call-admission-control.md">Definizione dei requisiti per il controllo di ammissione di chiamata in Lync Server 2013</a></p></td>
 </tr>
 <tr class="odd">
 <td><p>Requisiti di sistema</p></td>
@@ -98,17 +98,17 @@ Nella tabella seguente vengono riepilogate le informazioni necessarie per la dis
 <td><p><a href="lync-server-2013-determining-your-system-requirements.md">Determinazione dei requisiti di sistema per Lync Server 2013</a></p></td>
 </tr>
 <tr class="even">
-<td><p>Requisiti per l'infrastruttura</p></td>
+<td><p>Requisiti dell'infrastruttura</p></td>
 <td><ul>
-<li><p>Non sono necessari requisiti specifici per l'infrastruttura per CAC</p></li>
+<li><p>Per il Controllo di ammissione di chiamata non esistono requisiti dell'infrastruttura specifici</p></li>
 </ul></td>
 <td><p><a href="lync-server-2013-infrastructure-requirements-for-call-admission-control.md">Requisiti dell'infrastruttura per il controllo di ammissione di chiamata in Lync Server 2013</a></p></td>
 </tr>
 <tr class="odd">
-<td><p>Requisiti di interfaccia di rete</p></td>
+<td><p>Requisiti dell'interfaccia di rete</p></td>
 <td><ul>
-<li><p>Informazioni sulle interfacce interne ed esterne</p></li>
-<li><p>Informazioni di routing (incluse le informazioni sul Blog di <a href="http://go.microsoft.com/fwlink/p/?linkid=203149">http://go.microsoft.com/fwlink/p/?LinkId=203149</a>NextHop at, canale di risposta del cliente del team di Microsoft Lync Server)</p></li>
+<li><p>Informazioni sull'interfaccia interna ed esterna</p></li>
+<li><p>Informazioni sul routing (incluse le informazioni sul Blog di <a href="http://go.microsoft.com/fwlink/p/?linkid=203149">http://go.microsoft.com/fwlink/p/?LinkId=203149</a>NextHop nel canale di risposta dei clienti del team di Microsoft Lync Server)</p></li>
 </ul></td>
 <td><p><a href="lync-server-2013-deploying-external-user-access.md">Distribuzione dell'accesso degli utenti esterni in Lync Server 2013</a></p></td>
 </tr>
@@ -127,8 +127,8 @@ Nella tabella seguente vengono riepilogate le informazioni necessarie per la dis
 <td><p>Processo di distribuzione</p></td>
 <td><ul>
 <li><p>Prerequisiti</p></li>
-<li><p>Requisiti per le informazioni</p></li>
-<li><p>Processi e procedure</p></li>
+<li><p>Informazioni necessarie</p></li>
+<li><p>Processo e procedure</p></li>
 </ul></td>
 <td><p><a href="lync-server-2013-configure-call-admission-control.md">Configurare il controllo di ammissione di chiamata in Lync Server 2013</a></p></td>
 </tr>

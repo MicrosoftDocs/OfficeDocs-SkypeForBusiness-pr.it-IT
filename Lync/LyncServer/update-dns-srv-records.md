@@ -12,16 +12,16 @@ ms:contentKeyID: 49733739
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e00093859a6e252c019183617b4548dfc00218a6
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ef1440740e8fc25f5873dcb7bbdf5e8db953f6cf
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738622"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049938"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,35 +35,35 @@ ms.locfileid: "41738622"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-29_
+_**Ultimo argomento modificato:** 2012-09-29_
 
-Per completare correttamente questa procedura, è necessario avere effettuato l'accesso al server o al dominio come membro del gruppo Domain Admins o di un membro del gruppo DnsAdmins.
+Per eseguire correttamente questa procedura, è necessario connettersi al server o al dominio come membro del gruppo Domain Admins o DnsAdmins.
 
-Questo argomento descrive come aggiornare i record DNS (Domain Name System) dopo la migrazione a Lync Server 2013. Dopo che tutti gli utenti sono stati spostati in Lync Server 2013, ma prima che il pool o il Director legacy Lync Server 2010 venga disattivati, è necessario aggiornare i record SRV DNS nel DNS interno per ogni dominio SIP. Questa procedura presuppone che il DNS interno disponga di aree per i domini utente SIP.
+In questo argomento viene descritto come aggiornare i record DNS (Domain Name System) dopo la migrazione a Lync Server 2013. Dopo che tutti gli utenti sono stati spostati in Lync Server 2013, ma prima di rimuovere il pool o il Director di Lync Server 2010 legacy, è necessario aggiornare i record SRV DNS nel DNS interno per ogni dominio SIP. Per questa procedura si presuppone che nel sistema DNS interno siano disponibili aree per i domini utente SIP.
 
-**Per configurare un record SRV DNS**
+**Per configurare un record DNS SRV**
 
-1.  Nel server DNS fare clic sul pulsante **Start**, scegliere **strumenti di amministrazione**e quindi fare clic su **DNS**.
+1.  Nel server DNS fare clic sul pulsante **Start**, scegliere **Strumenti di amministrazione** e quindi **DNS**.
 
-2.  Nell'albero della console per il dominio SIP espandere **aree di ricerca in avanti**, espandere il dominio SIP in cui è installato Lync Server 2013 e passare all'impostazione ** \_TCP** .
+2.  Nell'albero della console per il dominio SIP espandere **zone di ricerca diretta**, espandere il dominio SIP in cui è installato Lync Server 2013 e passare all'impostazione ** \_TCP** .
 
 3.  Nel riquadro destro fare clic con il pulsante destro del mouse su ** \_sipinternaltls** e scegliere **proprietà**.
 
-4.  In **host che offre questo servizio**aggiornare il nome di dominio completo dell'host per posizionare il puntatore sul pool di Lync Server 2013.
+4.  In **host che offre questo servizio**aggiornare il nome di dominio completo host in modo che punti al pool di Lync Server 2013.
 
 5.  Fare clic su **OK**.
 
-**Per verificare che il nome di dominio completo del pool Front-end o del server Standard Edition possa essere risolto**
+**Per verificare che il nome di domino completo del pool Front End o del server Standard Edition possa essere risolto**
 
 1.  Accedere a un computer client nel dominio.
 
-2.  Fare clic sul pulsante **Start**e quindi su **Esegui**.
+2.  Fare clic sul pulsante **Start** e quindi scegliere **Esegui**.
 
-3.  Nella casella **Apri** Digitare **cmd**e quindi fare clic su **OK**.
+3.  Nella casella **Apri** digitare **cmd** e quindi fare clic su **OK**.
 
-4.  Al prompt dei comandi digitare il nome di dominio completo **nslookup** \<del pool\> di \<front end o il nome di\>dominio completo del server Standard Edition, quindi premere INVIO.
+4.  Al prompt dei comandi digitare FQDN **nslookup** \<del pool\> front end o \<FQDN del server\>Standard Edition e quindi premere INVIO.
 
-5.  Verificare di ricevere una risposta che venga risolta nell'indirizzo IP appropriato per il nome di dominio completo.
+5.  Verificare di ricevere una risposta che si risolve nell'indirizzo IP appropriato per il nome FQDN.
 
 </div>
 

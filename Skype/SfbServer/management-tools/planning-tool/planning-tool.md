@@ -1,5 +1,5 @@
 ---
-title: Progettazione della topologia per Lync Server 2013 mediante lo strumento di pianificazione
+title: Strumento di pianificazione di Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -13,49 +13,49 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 2a352f62-c5cb-4ef1-9aa9-7f0c1ab47455
-description: Istruzioni sull'uso dello strumento di pianificazione di Skype for Business Server 2015.
-ms.openlocfilehash: a1125224405cf739e4afab045dab8360a18756d5
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Informazioni sull'utilizzo dello strumento di pianificazione di Skype for Business Server 2015.
+ms.openlocfilehash: 8eec7865b74640cf6dfe4f5a5122f4c7091cc5ae
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816305"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050098"
 ---
-# <a name="skype-for-business-server-2015-planning-tool"></a>Progettazione della topologia per Lync Server 2013 mediante lo strumento di pianificazione
+# <a name="skype-for-business-server-2015-planning-tool"></a>Strumento di pianificazione di Skype for Business Server 2015
  
-Istruzioni sull'uso dello strumento di pianificazione di Skype for Business Server 2015.
+Informazioni sull'utilizzo dello strumento di pianificazione di Skype for Business Server 2015.
   
-Lo strumento di pianificazione di Skype for Business Server 2015 è uno strumento basato su una procedura guidata, con un'intervista che pone domande sulla topologia di Skype for Business Server 2015 che si sta progettando. Lo strumento di pianificazione usa le informazioni fornite, insieme alle procedure consigliate per la progettazione e la capacità della topologia, per presentare una topologia consigliata in base alle risposte fornite. È possibile scaricare lo strumento di pianificazione dallo [strumento di pianificazione di Skype for Business Server 2015](https://go.microsoft.com/fwlink/p/?LinkID=282725).
+Lo strumento di pianificazione di Skype for Business Server 2015 è uno strumento basato su una procedura guidata, che richiede domande sulla topologia di Skype for Business Server 2015 che si sta progettando. Lo strumento di pianificazione utilizza le informazioni fornite, unitamente alle procedure consigliate per la progettazione e la capacità della topologia, per presentare una topologia consigliata in base alle risposte fornite. È possibile scaricare lo strumento di pianificazione dallo [strumento di pianificazione di Skype for Business Server 2015](https://go.microsoft.com/fwlink/p/?LinkID=282725).
   
-In definitiva, l'obiettivo dello strumento di pianificazione è quello di semplificare la complessità potenziale della progettazione di una topologia completa di Skype for Business Server 2015. Lo strumento fornisce anche riferimenti contestuali alla documentazione relativa alla pianificazione e alla distribuzione all'interno dello strumento, a condizione che sia disponibile una connessione Internet per la connessione al sito Web Microsoft.
+Infine, l'obiettivo dello strumento di pianificazione è quello di facilitare la complessità potenziale della progettazione di una topologia completa di Skype for Business Server 2015. Lo strumento fornisce anche riferimenti contestuali alla documentazione relativa alla pianificazione e alla distribuzione all'interno dello strumento, a condizione che sia disponibile una connessione Internet per la connessione al sito Web Microsoft.
   
-Dopo la personalizzazione della topologia con gli indirizzi TCP/IP dell'infrastruttura e i nomi di dominio completi (FQDN), lo strumento di pianificazione rende disponibile una serie di report che includono la denominazione DNS (Domain Name System), le regole del firewall, i certificati e altro ancora. 
+Dopo aver personalizzato la topologia con gli indirizzi TCP/IP e i nomi di dominio completi (FQDN) dell'infrastruttura, lo strumento di pianificazione rende disponibili una serie di report che comprendono la denominazione DNS (Domain Name System), le regole del firewall, i certificati e altro ancora. 
   
-L'uso di questo strumento è il primo passo per pianificare l'implementazione. Il passaggio successivo consiste nell'inserire le informazioni specifiche del sito nella [calcolatrice della capacità di Skype for Business server 2015](https://www.microsoft.com/en-us/download/details.aspx?id=51196), modificarla in base alle esigenze e quindi usare lo [strumento di stress e prestazioni di Skype for Business Server 2015](https://www.microsoft.com/en-us/download/details.aspx?id=50367) per simulare e verificare che l'implementazione servirà alle proprie necessità.
+L'utilizzo di questo strumento è il primo passaggio per la pianificazione dell'implementazione. Il passaggio successivo consiste nel inserire le informazioni specifiche del sito nel calcolatore di [capacità di Skype for Business server 2015](https://www.microsoft.com/download/details.aspx?id=51196), modificarle in base alle esigenze e quindi utilizzare lo [strumento di gestione di stress e prestazioni di Skype for Business Server 2015](https://www.microsoft.com/download/details.aspx?id=50367) per simulare e verificare che l'implementazione sia in grado di soddisfare le proprie necessità.
   
-Lo strumento di pianificazione offre anche la possibilità di esportare informazioni in due formati:
+Lo strumento di pianificazione consente inoltre di esportare le informazioni in due formati:
   
-- Microsoft Excel (foglio di calcolo XML)
+- Microsoft Excel (foglio di calcolo con estensione XML)
     
 - Microsoft Visio (. vdx)
     
-Gli argomenti seguenti introducono e dettagliano lo strumento di pianificazione.
+Negli argomenti seguenti vengono introdotti e dettagliati lo strumento di pianificazione.
   
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Installazione di software facoltativo in Lync Server 2013](install.md)
+- [Installare lo strumento di pianificazione in Skype for Business Server 2015](install.md)
     
 - [Software facoltativo](install.md#Optional_Software)
     
-- [Spostamento all'interno dello strumento di pianificazione in Lync Server 2013](navigate.md)
+- [Accedere allo strumento di pianificazione in Skype for Business Server 2015](navigate.md)
     
-- [Creare la progettazione della topologia iniziale per Lync Server 2013](create-the-initial-design.md)
+- [Creare la progettazione della topologia iniziale per Skype for Business Server 2015](create-the-initial-design.md)
     
 - [Modificare la topologia in Skype for Business Server 2015](edit-the-topology.md)
     
-- [Modificare il diagramma di configurazione della rete](edit-the-topology.md#Edit_Network_diagram)
+- [Modificare il diagramma di configurazione di rete](edit-the-topology.md#Edit_Network_diagram)
     
-- [Esaminare i report dell'amministratore in Skype for Business Server 2015](review-the-administrator-reports.md)
+- [Esaminare i rapporti dell'amministratore in Skype for Business Server 2015](review-the-administrator-reports.md)
     
 ## <a name="see-also"></a>Vedere anche
 

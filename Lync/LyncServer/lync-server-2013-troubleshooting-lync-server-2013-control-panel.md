@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: risoluzione dei problemi relativi al pannello di controllo di Lync Server 2013'
+title: 'Lync Server 2013: risoluzione dei problemi del pannello di controllo di Lync Server 2013'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184145
 ms.date: 07/28/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ff82a1e63a064d0053fc77614d6a9b5fa818c23e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 87ad05798dab0f324a44a4c41807e8acb6105927
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41745016"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038078"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="troubleshooting-lync-server-2013-control-panel"></a>Risoluzione dei problemi relativi al pannello di controllo di Lync Server 2013
+# <a name="troubleshooting-lync-server-2013-control-panel"></a>Risoluzione dei problemi relativi al Pannello di controllo di Lync Server 2013
 
 </div>
 
@@ -35,37 +35,37 @@ ms.locfileid: "41745016"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-07-28_
+_**Ultimo argomento modificato:** 2016-07-28_
 
-Questo argomento fornisce informazioni e procedure che consentono di risolvere i problemi di accesso al pannello di controllo di Lync Server 2013.
+In questo argomento vengono fornite informazioni e procedure che consentono di risolvere i problemi relativi all'accesso al pannello di controllo di Lync Server 2013.
 
 <div>
 
-## <a name="internet-browser-requirements"></a>Requisiti per i browser Internet
+## <a name="internet-browser-requirements"></a>Requisiti per il browser Internet
 
-Il pannello di controllo di Lync Server richiede che il plug-in del browser di Microsoft Silverlight sia installato versione 4.0.50524.0 o ultima versione. Se Silverlight non è installato o se è installata una versione precedente, seguire le istruzioni del messaggio per installare la versione richiesta.
+Per il pannello di controllo di Lync Server è necessario che sia installato il plug-in del browser Microsoft Silverlight 4.0.50524.0 o versione più recente. Se Silverlight non è installato o se è installata una versione precedente, seguire le istruzioni riportate nel messaggio per installare la versione desiderata.
 
 <div>
 
 
 > [!NOTE]  
-> Altri requisiti software per il pannello di controllo di Lync Server riguardano il sistema operativo in cui è possibile installare il pannello di controllo di Lync Server e tutti gli altri strumenti di amministrazione di Lync Server 2013. Per informazioni dettagliate, vedere <A href="lync-server-2013-server-and-tools-operating-system-support.md">supporto dei sistemi operativi server e strumenti in Lync server 2013</A> nella documentazione relativa al supporto tecnico.
+> Altri requisiti software per il pannello di controllo di Lync Server sono relativi al sistema operativo in cui è possibile installare il pannello di controllo di Lync Server e tutti gli altri strumenti di amministrazione di Lync Server 2013. Per informazioni dettagliate, vedere <A href="lync-server-2013-server-and-tools-operating-system-support.md">Server and Tools Operating System Support in Lync server 2013</A> nella documentazione relativa alla supportabilità.
 
 
 
 </div>
 
-Se il browser Internet blocca l'installazione di Silverlight a causa di considerazioni sulla sicurezza, aggiungere l'URL (Uniform Resource Locator) che apre il pannello di controllo di Lync Server all'elenco dei siti attendibili. Nelle impostazioni di sicurezza di Internet Explorer verificare che i **controlli ActiveX e i plug-** in siano impostati su **Enabled**. Per informazioni dettagliate, [http://go.microsoft.com/fwlink/p/?linkId=214060](http://go.microsoft.com/fwlink/p/?linkid=214060)vedere. Verificare inoltre che il browser sia configurato per l'uso di SSL 3,0.
+Se il browser Internet blocca l'installazione di Silverlight a causa di considerazioni sulla sicurezza, aggiungere l'URL (Uniform Resource Locator) che apre il pannello di controllo di Lync Server all'elenco dei siti attendibili. Nelle impostazioni di sicurezza di Internet Explorer assicurarsi che l'opzione **Esegui controlli ActiveX e plug-in** sia impostata su **Attivato**. Per informazioni dettagliate, [http://go.microsoft.com/fwlink/p/?linkId=214060](http://go.microsoft.com/fwlink/p/?linkid=214060)vedere. Assicurarsi inoltre che il browser sia configurato per l'utilizzo di SSL 3.0.
 
-Se il browser Internet è configurato per l'uso di un server proxy, verificare che il browser sia configurato per ignorare il server proxy per i siti che vengono rilevati automaticamente come siti interni. In alternativa, aggiungere l'indirizzo all'elenco delle eccezioni del browser nelle impostazioni di configurazione del server proxy.
+Se il browser Internet è configurato per l'utilizzo di un server proxy, verificare che il browser sia configurato per il bypass del server proxy per i siti rilevati automaticamente come siti interni. In alternativa aggiungere l'indirizzo all'elenco delle eccezioni del browser nelle impostazioni di configurazione del server proxy.
 
 </div>
 
 <div>
 
-## <a name="dns-record-and-certificate-requirements-for-the-administrative-access-url"></a>Requisiti per i record DNS e i certificati per l'URL di accesso amministrativo
+## <a name="dns-record-and-certificate-requirements-for-the-administrative-access-url"></a>Requisiti per record DNS e certificati per l'URL di accesso amministrativo
 
-Se è stato configurato un semplice URL per accedere al pannello di controllo di Lync Server, è anche stato configurato il record di risorse DNS (Domain Name System) (A) statico e il certificato necessario per l'uso di tale URL di accesso amministrativo. Se si modifica l'URL di base in qualsiasi momento, assicurarsi che la modifica venga applicata al record DNS appropriato e al certificato e che si esegua *Enable-CsComputer* su ogni Director e front end server per registrare la modifica. Per informazioni dettagliate, vedere gli argomenti seguenti nella documentazione relativa alla pianificazione:
+Se è stato configurato un URL semplice per accedere al pannello di controllo di Lync Server, è necessario configurare anche il record di risorse host DNS (A) e il certificato necessari per l'utilizzo di tale URL di accesso amministrativo. Se si modifica l'URL di base in qualsiasi momento, verificare che la modifica venga riflessa nel record e nel certificato DNS appropriato e che venga eseguito il metodo *Enable-CsComputer* in ogni Director e front end server per registrare la modifica. Per informazioni dettagliate, vedere gli argomenti seguenti nella documentazione relativa alla pianificazione:
 
   - [Pianificazione degli URL semplici in Lync Server 2013](lync-server-2013-planning-for-simple-urls.md)
 
@@ -73,37 +73,37 @@ Se è stato configurato un semplice URL per accedere al pannello di controllo di
 
   - [Requisiti dei certificati per i server interni in Lync Server 2013](lync-server-2013-certificate-requirements-for-internal-servers.md)
 
-Per le procedure dettagliate per la configurazione dell'URL di accesso amministrativo, vedere [modificare o configurare URL semplici in Lync Server 2013](lync-server-2013-edit-or-configure-simple-urls.md) nella documentazione relativa alla distribuzione.
+Per le procedure dettagliate per la configurazione dell'URL di accesso amministrativo, vedere [Edit or Configure Simple URLs in Lync Server 2013](lync-server-2013-edit-or-configure-simple-urls.md) nella documentazione relativa alla distribuzione.
 
 </div>
 
 <div>
 
-## <a name="internet-information-services-iis-requirements"></a>Requisiti di Internet Information Services (IIS)
+## <a name="internet-information-services-iis-requirements"></a>Requisiti relativi a IIS (Internet Information Services)
 
-Il pannello di controllo di Lync Server è uno dei componenti di Lync Server 2013 che richiedono Internet Information Services (IIS). In particolare, assicurati che il reindirizzamento HTTP e le caratteristiche di autenticazione di Windows siano abilitati e che il servizio pubblicazione sul Web (W3SVC) sia in uso.
+Il pannello di controllo di Lync Server è uno dei componenti di Lync Server 2013 che richiede Internet Information Services (IIS). In particolare, assicurarsi che siano abilitate le funzionalità di reindirizzamento HTTP e di autenticazione di Windows e che sia in esecuzione il servizio Pubblicazione sul Web (W3SVC).
 
 <div>
 
-## <a name="world-wide-publishing-service-windows-service-dependency"></a>Dipendenza del servizio di pubblicazione in tutto il mondo (servizio Windows)
+## <a name="world-wide-publishing-service-windows-service-dependency"></a>Dipendenze per il servizio Pubblicazione sul Web di Windows
 
-Quando il servizio pubblicazione sul Web viene interrotto, non è possibile accedere al pannello di controllo di Lync Server. Puoi riavviare il servizio usando Microsoft Management Console (MMC) di Windows Services.
+Quando il servizio pubblicazione sul Web viene interrotto, non è possibile accedere al pannello di controllo di Lync Server. È possibile riavviare il servizio tramite la console MMC (Microsoft Management Console) Servizi di Windows.
 
-**Per avviare il servizio pubblicazione sul Web**
+**Per avviare il servizio Pubblicazione sul Web**
 
 1.  Accedere al computer in cui è installato il servizio pubblicazione sul Web come parte di Internet Information Services (IIS).
 
-2.  Fare clic sul pulsante **Start**, scegliere **strumenti di amministrazione**e quindi fare clic su **Servizi**.
+2.  Fare clic sul pulsante **Start**, scegliere **Strumenti di amministrazione** e quindi **Servizi**.
 
-3.  Fare clic con il pulsante destro del mouse su **World Wide Web Publishing Service**e quindi scegliere **Start**.
+3.  Fare clic con il pulsante destro del mouse su **Servizio Pubblicazione sul Web** e quindi fare clic su **Avvia**.
 
 </div>
 
 <div>
 
-## <a name="application-pool-mode"></a>Modalità pool di applicazioni
+## <a name="application-pool-mode"></a>Modalità del pool di applicazioni
 
-Configurare IIS in modo che il pool di applicazioni di CsManagementAppPool usi l'account del servizio di rete come identità del modello di processo.
+Configurare IIS in modo che il pool di applicazioni CsManagementAppPool utilizzi l'account Servizio di rete come identità del modello di elaborazione.
 
 </div>
 
@@ -113,9 +113,9 @@ Configurare IIS in modo che il pool di applicazioni di CsManagementAppPool usi l
 
 ## <a name="user-rights-and-permissions"></a>Diritti utente e autorizzazioni
 
-È necessario accedere al pannello di controllo di Lync Server usando un account di dominio membro del gruppo CsAdministrator o usando un account a cui sono stati delegati i diritti e le autorizzazioni degli utenti. Non è possibile accedere al pannello di controllo di Lync Server usando un account del computer locale. Per informazioni dettagliate sulla delega delle attività amministrative tramite il controllo di accesso basato sui ruoli (RBAC), vedere [pianificazione del controllo di accesso basato sui ruoli in Lync Server 2013](lync-server-2013-planning-for-role-based-access-control.md) nella documentazione relativa alla pianificazione.
+Per accedere al pannello di controllo di Lync Server, è necessario utilizzare un account di dominio membro del gruppo CsAdministrator oppure un account a cui sono stati delegati diritti utente e autorizzazioni. Non è possibile accedere al pannello di controllo di Lync Server utilizzando un account del computer locale. Per informazioni dettagliate sulla delega delle attività amministrative tramite il controllo di accesso basato sui ruoli (RBAC), vedere [Planning for Role-Based Access Control in Lync Server 2013](lync-server-2013-planning-for-role-based-access-control.md) nella documentazione relativa alla pianificazione.
 
-Se si usa un URL semplice per accedere al pannello di controllo di Lync Server, verificare che i server Web vengano aggiunti ai gruppi RTCUniversalServerAdmins e RTCUniversalUserAdmins.
+Se si utilizza un URL semplice per accedere al pannello di controllo di Lync Server, assicurarsi che i server Web siano stati aggiunti ai gruppi RTCUniversalServerAdmins e RTCUniversalUserAdmins.
 
 </div>
 

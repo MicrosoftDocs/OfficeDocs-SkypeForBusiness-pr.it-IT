@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: VoIP aziendale'
+title: Lync Server 2013 VoIP aziendale
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185404
 ms.date: 04/08/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e62224a7187c54222364045d0ac7b1aa70bccb9c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d8f0aef4d3f2323bcfcd99f42b265ea02b6126b2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735416"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042123"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,77 +35,77 @@ ms.locfileid: "41735416"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-04-08_
+_**Ultimo argomento modificato:** 2015-04-08_
 
-Con Enterprise Voice, Lync Server offre una funzionalità VoIP (Voice over Internet Protocol) autonoma che consente di migliorare o sostituire sistemi PBX (Private Branch Exchange) tradizionali. Gli utenti di Enterprise Voice possono chiamare i colleghi della rete VoIP o del PBX dell'organizzazione e possono chiamare i numeri di telefono tradizionali all'esterno dell'organizzazione. La soluzione VoIP aziendale include funzionalità di chiamata comuni, ad esempio risposta, inoltrare, trasferire, tenere, deviare, rilasciare e parcheggiare e la chiamata di 9-1-1 (E9-1-1) avanzata (E9-1-1 è disponibile solo negli Stati Uniti). Enterprise Voice supporta inoltre una vasta gamma di dispositivi IP e USB correnti e meno recenti.
+Con VoIP aziendale, Lync Server offre una voce autonoma che offre un protocollo Voice over Internet Protocol per migliorare o sostituire i sistemi PBX (Private Branch Exchange) tradizionali. Gli utenti di VoIP aziendale possono chiamare i colleghi sulla rete VoIP o sul sistema PBX dell'organizzazione, nonché numeri di telefono tradizionali all'esterno dell'organizzazione. La soluzione VoIP aziendale include funzionalità di chiamata comuni quali la risposta, l'inoltro, il trasferimento, la conservazione, la deviazione, la liberazione e il parco e la chiamata avanzata 9-1-1 (E9-1-1) (il servizio E9-1-1 è disponibile solo negli Stati Uniti). VoIP aziendale supporta anche una vasta gamma di dispositivi IP e USB correnti e meno recenti.
 
 <div>
 
-## <a name="placing-and-receiving-calls"></a>Immissione e ricezione di chiamate
+## <a name="placing-and-receiving-calls"></a>Effettuare e ricevere chiamate
 
-L'uso di Lync consente agli utenti di effettuare chiamate digitando un nome o un numero di telefono sulla tastiera oppure usando una tastierina telefonica visualizzata sullo schermo. Gli utenti possono anche avviare chiamate direttamente dall'elenco contatti. È anche possibile distribuire i dispositivi Lync Phone Edition, che sono dispositivi IP autonomi forniti da Microsoft partner.
+Utilizzando Lync, gli utenti possono effettuare chiamate digitando un nome o un numero di telefono sulla propria tastiera oppure utilizzando un tastierino numerico visualizzato sullo schermo. Gli utenti possono anche avviare le chiamate direttamente dall'elenco dei contatti. È inoltre possibile distribuire i dispositivi Lync Phone Edition, che sono dispositivi telefonici IP autonomi forniti da Microsoft Partners.
 
-Gli utenti possono avere più dispositivi telefonici registrati con Lync Server e possono passare facilmente tra di essi.
+Gli utenti possono disporre di più dispositivi telefonici registrati con Lync Server e possono passare facilmente tra di essi.
 
-Gli utenti vengono avvisati delle chiamate in arrivo su tutti i loro dispositivi contemporaneamente, con suonerie personalizzabili su dispositivi telefonici IP e una notifica simile a un messaggio istantaneo nel PC.
+Vengono avvisati in caso di chiamate in arrivo su tutti i dispositivi contemporaneamente, mediante suonerie personalizzabili sui dispositivi telefonici IP e una notifica simile a un messaggio istantaneo sul PC.
 
-Gli utenti possono anche impostare un singolo numero di telefono che si connette al telefono da tavolo, al PC e al cellulare, in modo che possano essere raggiunti ovunque si trovino.
+Gli utenti possono inoltre impostare un singolo numero di telefono che si connette al telefono da tavolo, al PC e al cellulare, in modo da essere raggiungibili in qualsiasi luogo.
 
 </div>
 
 <div>
 
-## <a name="basic-call-features"></a>Funzionalità di base delle chiamate
+## <a name="basic-call-features"></a>Funzionalità di chiamata di base
 
-Durante una chiamata, un utente può rispondere alle chiamate in arrivo aggiuntive o avviare le chiamate in uscita e la chiamata attiva esistente viene inserita automaticamente in attesa. Le chiamate possono essere trasferite da un utente a un altro, direttamente o dopo che il primo utente parla in privato con il secondo utente. Gli utenti possono anche trasferire le chiamate a un altro dispositivo; ad esempio, potrebbero trasferire una chiamata attiva al proprio telefono cellulare mentre camminano fuori dalla porta del loro ufficio.
-
-</div>
-
-<div>
-
-## <a name="richer-communications"></a>Comunicazioni più avanzate
-
-Quando si parla a un altro utente con Lync, gli utenti possono aggiungere facilmente testo, video o condivisione desktop alla chiamata. La caratteristica do-not-disturb è integrata con le impostazioni di presenza in Lync.
-
-Con la messaggistica UNIFICAta di Exchange, Lync e Lync Server si integrano con Microsoft Exchange Server 2013 e Microsoft Outlook 2013. Gli utenti possono vedere se sono presenti nuovi messaggi vocali nella finestra di Lync e nella posta elettronica. Durante la posta elettronica, è possibile fare clic per riprodurre l'audio della segreteria telefonica in un messaggio di posta elettronica o visualizzare una trascrizione del messaggio della segreteria telefonica.
+Durante una chiamata, un utente può rispondere ad altre chiamate in arrivo o avviare chiamate in uscita mentre la chiamata attiva esistente viene automaticamente messa in attesa. Le chiamate possono essere trasferite da un utente all'altro, direttamente o dopo che il primo utente ha parlato in privato con il secondo. Gli utenti possono inoltre trasferire le chiamate a un altro dispositivo, ad esempio possono trasferire una chiamata attiva al loro cellulare mentre varcano la porta del proprio ufficio.
 
 </div>
 
 <div>
 
-## <a name="advanced-calling-features"></a>Funzionalità per le chiamate avanzate
+## <a name="richer-communications"></a>Comunicazioni più complete
 
-Enterprise Voice include diverse funzionalità di chiamata avanzate, ad esempio la delega delle chiamate di Lync, le chiamate di Team, il pick-up delle chiamate di gruppo e i gruppi di risposta.
+Quando si parla a un altro utente con Lync, gli utenti possono aggiungere facilmente testo, video o condivisione del desktop alla chiamata. La funzionalità do-not-disturb è integrata con le impostazioni di presenza in Lync.
 
-La delega delle chiamate di Lync consente agli utenti di delegare la gestione delle chiamate a uno o più assistenti, passando alle **impostazioni di inoltro delle chiamate delle** **Opzioni** \> **degli strumenti** \> . Il delegato può eseguire più attività di chiamata per conto dell'utente, incluse le chiamate di selezione, l'immissione di chiamate e l'avvio di conferenze.
+Con la messaggistica unificata di Exchange (UM), Lync e Lync Server si integrano con Microsoft Exchange Server 2013 e Microsoft Outlook 2013. Gli utenti possono vedere se dispongono di una nuova segreteria telefonica sia nella finestra di Lync sia nella posta elettronica. Mentre è aperto il programma di posta elettronica, possono fare clic per riprodurre l'audio della segreteria telefonica in un messaggio di posta elettronica o visualizzare una trascrizione del messaggio della segreteria telefonica.
+
+</div>
+
+<div>
+
+## <a name="advanced-calling-features"></a>Funzionalità di chiamata avanzate
+
+VoIP aziendale include anche diverse funzionalità di chiamata avanzate, ad esempio la delega delle chiamate di Lync, la chiamata di Team, il prelievo di chiamate di gruppo e i Response Group.
+
+La delega delle chiamate di Lync consente agli utenti di delegare la gestione delle chiamate a uno o più assistenti, accedendo alle impostazioni delle **Opzioni** \> di **inoltro delle chiamate** **degli strumenti** \> . Consente inoltre di eseguire più attività di chiamata per conto dell'utente, ad esempio la selezione delle chiamate, l'esecuzione di chiamate e l'avvio delle conferenze.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Potrebbe essere alla ricerca di un'altra caratteristica denominata in modo simile, delegazione del calendario Lync. Non richiede la funzionalità VoIP aziendale e consente agli utenti di pianificare riunioni di Lync Online da Outlook. Se sei qui per cercare queste informazioni, ti consigliamo di verificare <A href="https://docs.microsoft.com/powershell/module/skype/Set-CsClientPolicy">Set-CsClientPolicy</A> per informazioni su come abilitare la sincronizzazione dei delegati di Exchange.
+> È possibile cercare un'altra caratteristica denominata in modo simile, la delega del calendario di Lync. Non richiede la funzionalità VoIP aziendale e consente agli utenti di pianificare riunioni di Lync Online da Outlook. Se si è venuti a trovare le informazioni, è consigliabile consultare <A href="https://docs.microsoft.com/powershell/module/skype/Set-CsClientPolicy">Set-CsClientPolicy</A> per informazioni sull'abilitazione della sincronizzazione dei delegati di Exchange.
 
 
 
 </div>
 
-La chiamata in team consente a un utente di avere chiamate in arrivo squillare simultaneamente i telefoni dei membri del team in modo che tutti gli utenti possano rispondere alla chiamata.
+Il team Calling consente a un utente di effettuare chiamate in entrata contemporaneamente squillare i telefoni dei compagni di squadra in modo che tutti i membri del team possano rispondere alla chiamata.
 
-Raccolta di chiamate di gruppo, una nuova funzionalità degli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013, consente agli utenti di rispondere alle chiamate in arrivo ai propri colleghi dal proprio telefono. Il ritiro delle chiamate di gruppo è diverso da quello delle chiamate in team principalmente in quanto una chiamata in arrivo squilla solo presso il telefono del destinatario previsto, ma qualsiasi altro utente può scegliere di rispondere chiamando un numero del gruppo di selezione chiamata.
+Prelievo delle chiamate di gruppo, una nuova caratteristica negli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013, consente agli utenti di rispondere alle chiamate in arrivo ai propri colleghi tramite i propri telefoni. Il prelievo delle chiamate di gruppo è diverso dalla chiamata del team principalmente in quanto una chiamata in arrivo squilla solo nel telefono del destinatario previsto, ma qualsiasi altro utente può scegliere di rispondere componendo un numero di gruppo di prelievo di chiamata.
 
-I gruppi di risposta possono essere configurati per l'accodamento e il routing intelligente delle chiamate agli agenti designati. Gli usi comuni includono helpdesk IT, hotline risorse umane e altri centri di contatto interni.
+I Response Group possono essere impostati per l'accodamento e il routing intelligente delle chiamate agli agenti designati. Gli usi comuni includono l'helpdesk IT, le hotline delle risorse umane e altri centri di contatto interni.
 
 </div>
 
 <div>
 
-## <a name="enterprise-voice-administration"></a>Amministrazione di VoIP aziendale
+## <a name="enterprise-voice-administration"></a>Amministrazione VoIP aziendale
 
-Lync Server usa standard e interfacce pubblicate per interagire con l'infrastruttura esistente. Supporta sia le opzioni di gateway che SIP, ad esempio il trunking SIP, per l'interconnessione ai sistemi IP PBX e le reti PSTN, in modo da poter eseguire la migrazione degli utenti a Enterprise Voice nel tempo, riducendo al minimo le interruzioni. Lync Server supporta codec tradizionali come G. 711, G. 722 e G. 723.1 per l'interoperabilità con le tradizionali soluzioni VoIP.
+Lync Server utilizza gli standard e le interfacce pubblicate per interagire con l'infrastruttura esistente. Supporta sia le opzioni gateway che SIP, ad esempio il trunking SIP, per l'interconnessione con i sistemi IP PBX e le reti PSTN, in modo da consentire la migrazione graduale degli utenti a VoIP aziendale, riducendo al tempo stesso le interruzioni. Lync Server supporta codec tradizionali quali G. 711, G. 722 e G. 723.1 per l'interoperabilità con le soluzioni VoIP tradizionali.
 
-Con il controllo di ammissione alle chiamate (CAC), gli amministratori possono impostare limiti per la quantità di traffico vocale e video di Lync Server eseguito sui collegamenti di rete vincolati e specificare l'azione da eseguire se una nuova chiamata supera il limite. Le azioni possono includere il routing in base a un percorso alternativo o rifiutare la chiamata.
+Con il controllo di ammissione di chiamata (CAC), gli amministratori possono impostare limiti per la quantità di traffico vocale e video di Lync Server eseguito sui collegamenti di rete vincolati e specificare l'azione da eseguire se una nuova chiamata supera il limite. Le azioni possono includere il routing con un percorso alternativo o il rifiuto della chiamata.
 
-Lync Server funziona con gli elettrodomestici Survivable di terze parti per ottenere servizi di chiamata locali e la connessione a PSTN presso le filiali, in caso di errore WAN nel sito centrale.
+Lync Server è compatibile con Survivable Branch Appliance di terze parti per fornire servizi di chiamata locali e la connessione alla rete PSTN nelle succursali, in caso di errore WAN nel sito centrale.
 
 </div>
 

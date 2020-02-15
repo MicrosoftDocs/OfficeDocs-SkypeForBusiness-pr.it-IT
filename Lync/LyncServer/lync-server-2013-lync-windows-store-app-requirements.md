@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: requisiti dell'app Lync di Windows Store"
+title: 'Lync Server 2013: requisiti delle app di Windows Store per Lync'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 50120200
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9cc1ab2b397111cef1040592f29a11d55e5f1f64
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 48804305d58be57e824b1ac93f22c2a998d070ce
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765324"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037596"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="lync-windows-store-app-requirements-for-lync-server-2013"></a>Requisiti dell'app Lync di Windows Store per Lync Server 2013
+# <a name="lync-windows-store-app-requirements-for-lync-server-2013"></a>Requisiti delle app di Windows Store di Lync per Lync Server 2013
 
 </div>
 
@@ -35,40 +35,40 @@ ms.locfileid: "41765324"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-12-03_
+_**Ultimo argomento modificato:** 2013-12-03_
 
-Le organizzazioni con una distribuzione locale di Lync Server devono soddisfare i requisiti seguenti per supportare l'app Lync di Windows Store.
+Le organizzazioni che dispongono di una distribuzione locale di Lync Server devono soddisfare i requisiti seguenti per supportare l'app Windows Store di Lync.
 
 <div>
 
 
 > [!NOTE]  
-> Per Lync Server 2010, eseguire l'aggiornamento cumulativo per Lync Server 2010:2012 febbraio (disponibile su <A class=uri href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2670352"> http://go.microsoft.com/fwlink/?linkid=3052&amp; kbid = 2670352</A>) o versione successiva in tutti i server. Per consentire agli utenti di partecipare a riunioni, eseguire l'aggiornamento cumulativo per Lync Server 2010: ottobre 2012 (disponibile all'indirizzo <A class=uri href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2737915"> http://go.microsoft.com/fwlink/?linkid=3052&amp; kbid = 2737915</A>) nei server.
+> Per Lync Server 2010, eseguire l'aggiornamento cumulativo per Lync Server 2010: febbraio 2012 (disponibile all'indirizzo <A class=uri href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2670352"> http://go.microsoft.com/fwlink/?linkid=3052&amp; kbid = 2670352</A>) o versioni successive su tutti i server. Per consentire agli utenti di partecipare alle riunioni, eseguire l'aggiornamento cumulativo per Lync Server 2010: ottobre 2012 (disponibile all'indirizzo <A class=uri href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2737915"> http://go.microsoft.com/fwlink/?linkid=3052&amp; kbid = 2737915</A>) nei server.
 
 
 
 </div>
 
-  - Abilitare l'individuazione automatica, Lync Web App e i servizi di ticket web nel server.
+  - Abilitare l'individuazione automatica, Lync Web App e i servizi ticket web sul server.
 
-  - Abilitare l'autenticazione dei certificati nel server front-end o nel pool Front-end. Il processo di registrazione dell'utente nel server front-end o nel pool Front-end viene spesso indicato come registrar. Per informazioni dettagliate, vedere [creare impostazioni di configurazione del registrar in Lync Server 2013](lync-server-2013-create-registrar-configuration-settings.md).
+  - Abilitare l'autenticazione dei certificati nel front end server o nel pool Front end. Il processo di registrazione degli utenti nel front end server o nel pool Front End è spesso definito come registrar. Per ulteriori informazioni, vedere [creazione di impostazioni di configurazione di registrazione in Lync Server 2013](lync-server-2013-create-registrar-configuration-settings.md).
 
-  - Pubblicare i record di risorse DNS alias (CNAME) per il servizio di individuazione automatica.
+  - Pubblicare i record delle risorse di alias DNS (CNAME) per il servizio di individuazione automatica.
 
-  - Non è più necessario verificare che il punto di distribuzione dell'elenco di revoche di certificati (CRL) del certificato rilasciato a Lync Server punti a una risorsa HTTP invece che a una risorsa LDAP. Verificare tuttavia che i computer client abbiano installato gli aggiornamenti più recenti di Windows.
+  - Non è più necessario verificare che il punto di distribuzione dell'elenco di revoche di certificati (CRL, Certificate Revocation List) per il certificato emesso in Lync Server punti a una risorsa HTTP invece che a una risorsa LDAP. Assicurarsi tuttavia che i computer client dispongano degli aggiornamenti di Windows più recenti.
 
-  - Configurare i proxy HTTP nell'organizzazione per consentire il traffico HTTP correlato a Lync Server.Se necessario, aggiungere eccezioni per i servizi di individuazione automatica, Lync Web App e webticket.
+  - Configurare i proxy HTTP nell'organizzazione per consentire il traffico HTTP relativo a Lync Server.Aggiungere eccezioni per i servizi di individuazione automatica, Lync Web App e webticket, se necessario.
 
-  - Nei client installare Windows 8,1 e la versione più recente dell'app Lync di Windows Store per risolvere un problema di accesso che si verifica in genere quando si usano più domini, ad esempio quando l'URI SIP è **usera@domainZ.com** ma il server perimetrale è **SIP.domainX.com**.
+  - Nei client, installare Windows 8,1 e la versione più recente di Lync Windows Store app per correggere un problema di accesso che si verifica generalmente quando si utilizzano più domini (ad esempio, quando l'URI SIP è **usera@domainZ.com** ma il server perimetrale è **SIP.domainX.com**).
 
-Se l'organizzazione sottoscrive Lync Online o Office 365 e si usa il proprio nome di dominio, è necessario eseguire alcuni passaggi aggiuntivi per configurare la rete per l'individuazione automatica dei server Lync. I requisiti di configurazione della rete sono gli stessi per l'app Lync di Windows Store e Lync nei dispositivi mobili. Seguire le istruzioni "configurare la rete" nell'articolo wiki di Office 365 "configurare i dispositivi mobili Lync" disponibile all'indirizzo [http://go.microsoft.com/fwlink/?LinkId=271822](http://go.microsoft.com/fwlink/?linkid=271822).
+Se l'organizzazione sottoscrive Lync Online o Office 365 e si utilizza il proprio nome di dominio, è necessario eseguire alcuni passaggi aggiuntivi per configurare la rete per l'individuazione automatica dei server Lync. I requisiti di configurazione della rete sono gli stessi per l'app Lync Windows Store e Lync su dispositivi mobili. Seguire le istruzioni "configurare la rete" nell'articolo wiki di Office 365 "set up Lync Mobile Devices", disponibile all' [http://go.microsoft.com/fwlink/?LinkId=271822](http://go.microsoft.com/fwlink/?linkid=271822)indirizzo.
 
 <div>
 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Distribuzione dell'app Lync di Windows Store in Lync Server 2013](lync-server-2013-deploying-lync-windows-store-app.md)  
+[Distribuzione di Lync Windows Store app in Lync Server 2013](lync-server-2013-deploying-lync-windows-store-app.md)  
   
 
 </div>

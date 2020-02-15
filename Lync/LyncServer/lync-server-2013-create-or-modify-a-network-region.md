@@ -12,16 +12,16 @@ ms:contentKeyID: 48185281
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 75011a28567da8a6e386c42f272ee1510b8ceddc
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 0a7052109e5fe6bb7bc96a25a7ef443b9e22a07c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722565"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046049"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41722565"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-19_
+_**Ultimo argomento modificato:** 2012-10-19_
 
-Le *aree di rete* sono gli hub di rete o le backbone usati nella configurazione del controllo di ammissione alle chiamate, E9-1-1 e bypass multimediale. Usare le procedure seguenti per creare o modificare aree di rete. Se ad esempio sono già state create aree di rete per una sola funzionalità vocale, non è necessario creare nuove aree di rete. altre funzionalità vocali avanzate di Enterprise useranno le stesse aree di rete. Può tuttavia essere necessario modificare una definizione di area di rete esistente per applicare impostazioni specifiche delle caratteristiche. Ad esempio, se sono state create aree di rete per E9-1-1 (che non richiedono un sito centrale associato) e quindi si distribuisce il controllo di ammissione delle chiamate, è necessario modificare le definizioni dell'area di rete per specificare un sito centrale. Per informazioni dettagliate, vedere [configurare le aree di rete per CAC in Lync Server 2013](lync-server-2013-configure-network-regions-for-cac.md).
+Le *aree di rete* sono gli hub di rete o gli backbone utilizzati nella configurazione del controllo di ammissione di chiamata, E9-1-1 e bypass multimediale. Utilizzare le procedure seguenti per creare o modificare le aree di rete. Ad esempio, se sono già state create aree di rete per una caratteristica vocale, non è necessario creare nuove aree di rete. altre funzionalità di VoIP aziendale avanzate utilizzeranno le stesse aree di rete. Potrebbe tuttavia essere necessario modificare una definizione di area di rete esistente per applicare impostazioni specifiche della caratteristica. Ad esempio, se sono state create aree di rete per il servizio E9-1-1 (che non richiede un sito centrale associato) e quindi si distribuisce il controllo di ammissione di chiamata, è necessario modificare le definizioni delle aree di rete per specificare un sito centrale. Per ulteriori informazioni, vedere [Configure Network Regions for CAC in Lync Server 2013](lync-server-2013-configure-network-regions-for-cac.md).
 
 <div>
 
 
 > [!NOTE]  
-> Tutti i requisiti specifici delle caratteristiche per le definizioni di area di rete sono documentati negli argomenti relativi alla distribuzione della funzionalità.
+> Tutti i requisiti specifici per particolari funzionalità per le definizioni delle aree di rete sono documentati negli argomenti relativi alla distribuzione per la funzionalità.
 
 
 
 </div>
 
-Per informazioni dettagliate sull'uso delle aree di rete, vedere la documentazione di Lync Server Management Shell per i cmdlet seguenti:
+Per informazioni dettagliate sull'utilizzo delle aree di rete, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:
 
   - [New-CsNetworkRegion](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkRegion)
 
@@ -63,15 +63,15 @@ Per informazioni dettagliate sull'uso delle aree di rete, vedere la documentazio
 
 ## <a name="create-a-network-region"></a>Creare un'area di rete
 
-Creare un'area di rete che può essere usata tramite il controllo di ammissione alle chiamate, E9-1-1 o bypass multimediale.
+Creare un'area di rete utilizzabile dal controllo di ammissione di chiamata, E9-1-1 o il bypass multimediale.
 
 <div>
 
-## <a name="to-create-a-network-region-using-lync-server-management-shell"></a>Per creare un'area di rete con Lync Server Management Shell
+## <a name="to-create-a-network-region-using-lync-server-management-shell"></a>Per creare un'area di rete utilizzando Lync Server Management Shell
 
-1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-2.  Eseguire il cmdlet New-CsNetworkRegion per creare aree di rete:
+2.  Eseguire il cmdlet New-CsNetworkRegion per creare le aree di rete:
     
         New-CsNetworkRegion -Identity <String> -CentralSite <String>
     
@@ -79,33 +79,33 @@ Creare un'area di rete che può essere usata tramite il controllo di ammissione 
     
         New-CsNetworkRegion -Identity NorthAmerica -CentralSite CHICAGO -Description "All North America Locations"
     
-    In questo esempio è stata creata un'area di rete denominata "NorthAmerica" associata a un sito centrale con ID sito di CHICAGO.
+    Con questo esempio viene creata un'area di rete denominata “NorthAmerica” associata a un sito centrale con ID di sito CHICAGO.
 
-3.  Per completare la creazione di aree di rete per la topologia, ripetere il passaggio 2 con le impostazioni per ogni area di rete.
+3.  Per completare la creazione delle aree di rete per la topologia, ripetere il passaggio 2 con le impostazioni per ogni area di rete.
 
 </div>
 
 <div>
 
-## <a name="to-create-a-network-region-using-lync-server-control-panel"></a>Per creare un'area di rete tramite il pannello di controllo di Lync Server
+## <a name="to-create-a-network-region-using-lync-server-control-panel"></a>Per creare un'area di rete utilizzando il pannello di controllo di Lync Server
 
-1.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+1.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-2.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**.
+2.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete**.
 
-3.  Fare clic su **area geografica**.
+3.  Fare clic su **Area**.
 
-4.  Fare clic su **nuovo**.
+4.  Fare clic su **Nuovo**.
 
-5.  Nella pagina **nuova area** fare clic su **nome** e quindi digitare un nome per l'area di rete.
+5.  Nella pagina **Nuova area** fare clic su **Nome** e quindi digitare un nome per l'area di rete.
 
-6.  Fare clic su **sito centrale**e quindi su un sito centrale nell'elenco.
+6.  Fare clic su **Sito centrale** e quindi fare clic su un sito centrale nell'elenco.
 
-7.  Facoltativamente, fare clic su **Descrizione**e quindi digitare altre informazioni per descrivere questo sito di rete.
+7.  Facoltativamente, fare clic su **Descrizione** e quindi digitare ulteriori informazioni per descrivere il sito di rete.
 
 8.  Fare clic su **Commit**.
 
-9.  Per completare la creazione di aree di rete per la topologia, ripetere i passaggi da 4 a 8 con le impostazioni per altre aree geografiche.
+9.  Per completare la creazione delle aree di rete per la topologia, ripetere i passaggi da 4 a 8 con le impostazioni per le altre aree.
 
 </div>
 
@@ -115,13 +115,13 @@ Creare un'area di rete che può essere usata tramite il controllo di ammissione 
 
 ## <a name="modify-a-network-region"></a>Modificare un'area di rete
 
-Modificare le impostazioni di un'area geografica esistente per adattare le modifiche alle informazioni relative alle aree di base o alle modifiche necessarie per una nuova funzionalità.
+È possibile modificare le impostazioni per un'area di rete esistente per adattarle a modifiche delle informazioni di base sull'area o a modifiche rese necessarie da una nuova funzionalità.
 
 <div>
 
-## <a name="to-modify-a-network-region-using-lync-server-management-shell"></a>Per modificare un'area di rete tramite Lync Server Management Shell
+## <a name="to-modify-a-network-region-using-lync-server-management-shell"></a>Per modificare un'area di rete utilizzando Lync Server Management Shell
 
-1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
 2.  Eseguire il cmdlet Set-CsNetworkRegion per modificare un'area di rete esistente:
     
@@ -131,31 +131,31 @@ Modificare le impostazioni di un'area geografica esistente per adattare le modif
     
         Set-CsNetworkRegion -Identity NorthAmerica -CentralSite CHICAGO -Description "North American Region"
     
-    In questo esempio è stata modificata un'area di rete esistente denominata "NorthAmerica" (creata usando le procedure descritte più indietro in questo argomento) modificando la descrizione. Se esiste una descrizione per l'area "NorthAmerica", questo comando lo sovrascrive con questo valore; Se non è stata impostata alcuna descrizione, questo comando lo imposta.
+    Con questo esempio si modifica un'area di rete esistente denominata “NorthAmerica” (creata con le procedure descritte in precedenza in questo argomento) modificandone la descrizione. Se per l'area “NorthAmerica” esiste già una descrizione, questo comando la sostituisce con il valore specificato. Se non è mai stata impostata una descrizione, con questo comando viene aggiunta.
 
-3.  Per modificare altre aree di rete, ripetere il passaggio 2 con le impostazioni per altre aree geografiche.
+3.  Per modificare altre aree di rete, ripetere il passaggio 2 con le impostazioni per le altre aree.
 
 </div>
 
 <div>
 
-## <a name="to-modify-a-network-region-using-lync-server-control-panel"></a>Per modificare un'area di rete tramite il pannello di controllo di Lync Server
+## <a name="to-modify-a-network-region-using-lync-server-control-panel"></a>Per modificare un'area di rete utilizzando il pannello di controllo di Lync Server
 
-1.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+1.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-2.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete**.
+2.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete**.
 
-3.  Fare clic sul pulsante di spostamento dell' **area geografica** .
+3.  Fare clic sul pulsante di spostamento **Area**.
 
-4.  Nella tabella fare clic sull'area di rete che si vuole modificare.
+4.  Nella tabella fare clic sull'area di rete che si desidera modificare.
 
-5.  Fare clic su **modifica**e quindi su **Mostra dettagli.**
+5.  Fare clic su **Modifica** e quindi su **Mostra dettagli**.
 
-6.  Nella pagina **Edit Region** modificare i valori delle impostazioni dell'area di rete in base alle esigenze.
+6.  Nella pagina **Modifica area** modificare i valori per le impostazioni dell'area di rete in base alle esigenze.
 
 7.  Fare clic su **Commit**.
 
-8.  Per completare la modifica delle aree di rete, ripetere i passaggi da 4 a 7 con le impostazioni per altre aree geografiche.
+8.  Per completare la modifica delle aree di rete, ripetere i passaggi da 4 a 7 con le impostazioni per le altre aree.
 
 </div>
 

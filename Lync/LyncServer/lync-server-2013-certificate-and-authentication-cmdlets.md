@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: cmdlet di certificati e di autenticazione'
+title: "Lync Server 2013: cmdlet per il certificato e l'autenticazione"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185711
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d70fdd821dd80752875bab5d8981eed2347a0e14
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 873ab07ecb532851e42116dd6691c8c5ad723d7c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736810"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037336"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="certificate-and-authentication-cmdlets-in-lync-server-2013"></a>Cmdlet di certificato e autenticazione in Lync Server 2013
+# <a name="certificate-and-authentication-cmdlets-in-lync-server-2013"></a>Cmdlet per il certificato e l'autenticazione in Lync Server 2013
 
 </div>
 
@@ -35,133 +35,133 @@ ms.locfileid: "41736810"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-04_
+_**Ultimo argomento modificato:** 2012-10-04_
 
-I cmdlet certificato e autenticazione coprono una vasta gamma di attività, inclusa la gestione dei certificati server e client. la gestione dei PIN utente (numeri di identificazione personali); e la gestione sia dei domini SIP che degli account Kerberos usati con Internet Information Services.
+I cmdlet di certificati e autenticazione prevedono una vasta gamma di attività, incluse la gestione di certificati server e client, la gestione dei PIN degli utenti e la gestione sia dei domini SIP che degli account Kerberos utilizzati con Internet Information Services.
 
 <div>
 
-## <a name="certificate-and-authentication-cmdlets"></a>Cmdlet di certificati e di autenticazione
+## <a name="certificate-and-authentication-cmdlets"></a>Cmdlet per i certificati e l'autenticazione
 
-Di seguito è riportato un elenco di cmdlet correlati direttamente alla gestione dei certificati e dell'autenticazione:
+Di seguito è riportato un elenco di cmdlet direttamente correlati alla gestione di certificati e autenticazione:
 
 **Certificati e autenticazione**
 
   - <span></span>  
-    [Get-CsCertificate](https://technet.microsoft.com/en-us/library/Gg398227(v=OCS.15))
+    [Get-CsCertificate](https://technet.microsoft.com/library/Gg398227(v=OCS.15))
 
   - <span></span>  
-    [Import-CsCertificate](https://technet.microsoft.com/en-us/library/Gg398688(v=OCS.15))
+    [Import-CsCertificate](https://technet.microsoft.com/library/Gg398688(v=OCS.15))
 
   - <span></span>  
-    [Remove-CsCertificate](https://technet.microsoft.com/en-us/library/Gg412895(v=OCS.15))
+    [Remove-CsCertificate](https://technet.microsoft.com/library/Gg412895(v=OCS.15))
 
   - <span></span>  
-    [Request-CsCertificate](https://technet.microsoft.com/en-us/library/Gg425723(v=OCS.15))
+    [Request-CsCertificate](https://technet.microsoft.com/library/Gg425723(v=OCS.15))
 
   - <span></span>  
-    [Set-CsCertificate](https://technet.microsoft.com/en-us/library/Gg398518(v=OCS.15))
+    [Set-CsCertificate](https://technet.microsoft.com/library/Gg398518(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Test-CsCertificateConfiguration](https://technet.microsoft.com/en-us/library/Gg398647(v=OCS.15))
+    [Test-CsCertificateConfiguration](https://technet.microsoft.com/library/Gg398647(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Get-CsClientCertificate](https://technet.microsoft.com/en-us/library/Gg398143(v=OCS.15))
+    [Get-CsClientCertificate](https://technet.microsoft.com/library/Gg398143(v=OCS.15))
 
   - <span></span>  
-    [Revoke-CsClientCertificate](https://technet.microsoft.com/en-us/library/Gg425748(v=OCS.15))
+    [Revoke-CsClientCertificate](https://technet.microsoft.com/library/Gg425748(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Blocco-CsClientPin](https://technet.microsoft.com/en-us/library/Gg398650(v=OCS.15))
+    [Lock-CsClientPin](https://technet.microsoft.com/library/Gg398650(v=OCS.15))
 
   - <span></span>  
-    [Set-CsClientPin](https://technet.microsoft.com/en-us/library/Gg398929(v=OCS.15))
+    [Set-CsClientPin](https://technet.microsoft.com/library/Gg398929(v=OCS.15))
 
   - <span></span>  
-    [Unlock-CsClientPin](unhttps://technet.microsoft.com/en-us/library/Gg398650(v=OCS.15))
+    [Unlock-CsClientPin](unhttps://technet.microsoft.com/library/Gg398650(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Get-CsClientPinInfo](https://technet.microsoft.com/en-us/library/Gg425947(v=OCS.15))
+    [Get-CsClientPinInfo](https://technet.microsoft.com/library/Gg425947(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [New-CsKerberosAccount](https://technet.microsoft.com/en-us/library/Gg398485(v=OCS.15))
+    [New-CsKerberosAccount](https://technet.microsoft.com/library/Gg398485(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Get-CsKerberosAccountAssignment](https://technet.microsoft.com/en-us/library/Gg398526(v=OCS.15))
+    [Get-CsKerberosAccountAssignment](https://technet.microsoft.com/library/Gg398526(v=OCS.15))
 
   - <span></span>  
-    [New-CsKerberosAccountAssignment](https://technet.microsoft.com/en-us/library/Gg398074(v=OCS.15))
+    [New-CsKerberosAccountAssignment](https://technet.microsoft.com/library/Gg398074(v=OCS.15))
 
   - <span></span>  
-    [Remove-CsKerberosAccountAssignment](https://technet.microsoft.com/en-us/library/Gg413052(v=OCS.15))
+    [Remove-CsKerberosAccountAssignment](https://technet.microsoft.com/library/Gg413052(v=OCS.15))
 
   - <span></span>  
-    [Set-CsKerberosAccountAssignment](https://technet.microsoft.com/en-us/library/Gg398232(v=OCS.15))
+    [Set-CsKerberosAccountAssignment](https://technet.microsoft.com/library/Gg398232(v=OCS.15))
 
   - <span></span>  
-    [Test-CsKerberosAccountAssignment](https://technet.microsoft.com/en-us/library/Gg425938(v=OCS.15))
+    [Test-CsKerberosAccountAssignment](https://technet.microsoft.com/library/Gg425938(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Set-CsKerberosAccountPassword](https://technet.microsoft.com/en-us/library/Gg398659(v=OCS.15))
+    [Set-CsKerberosAccountPassword](https://technet.microsoft.com/library/Gg398659(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Get-CsPinPolicy](https://technet.microsoft.com/en-us/library/Gg398262(v=OCS.15))
+    [Get-CsPinPolicy](https://technet.microsoft.com/library/Gg398262(v=OCS.15))
 
   - <span></span>  
-    [Grant-CsPinPolicy](https://technet.microsoft.com/en-us/library/Gg398871(v=OCS.15))
+    [Grant-CsPinPolicy](https://technet.microsoft.com/library/Gg398871(v=OCS.15))
 
   - <span></span>  
-    [New-CsPinPolicy](https://technet.microsoft.com/en-us/library/Gg398935(v=OCS.15))
+    [New-CsPinPolicy](https://technet.microsoft.com/library/Gg398935(v=OCS.15))
 
   - <span></span>  
-    [Remove-CsPinPolicy](https://technet.microsoft.com/en-us/library/Gg398431(v=OCS.15))
+    [Remove-CsPinPolicy](https://technet.microsoft.com/library/Gg398431(v=OCS.15))
 
   - <span></span>  
-    [Set-CsPinPolicy](https://technet.microsoft.com/en-us/library/Gg412997(v=OCS.15))
+    [Set-CsPinPolicy](https://technet.microsoft.com/library/Gg412997(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Get-CsProxyConfiguration](https://technet.microsoft.com/en-us/library/Gg399011(v=OCS.15))
+    [Get-CsProxyConfiguration](https://technet.microsoft.com/library/Gg399011(v=OCS.15))
 
   - <span></span>  
-    [New-CsProxyConfiguration](https://technet.microsoft.com/en-us/library/Gg398335(v=OCS.15))
+    [New-CsProxyConfiguration](https://technet.microsoft.com/library/Gg398335(v=OCS.15))
 
   - <span></span>  
-    [Remove-CsProxyConfiguration](https://technet.microsoft.com/en-us/library/Gg398553(v=OCS.15))
+    [Remove-CsProxyConfiguration](https://technet.microsoft.com/library/Gg398553(v=OCS.15))
 
   - <span></span>  
-    [Set-CsProxyConfiguration](https://technet.microsoft.com/en-us/library/Gg425796(v=OCS.15))
+    [Set-CsProxyConfiguration](https://technet.microsoft.com/library/Gg425796(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Get-CsSipDomain](https://technet.microsoft.com/en-us/library/Gg398701(v=OCS.15))
+    [Get-CsSipDomain](https://technet.microsoft.com/library/Gg398701(v=OCS.15))
 
   - <span></span>  
-    [New-CsSipDomain](https://technet.microsoft.com/en-us/library/Gg425857(v=OCS.15))
+    [New-CsSipDomain](https://technet.microsoft.com/library/Gg425857(v=OCS.15))
 
   - <span></span>  
-    [Remove-CsSipDomain](https://technet.microsoft.com/en-us/library/Gg398865(v=OCS.15))
+    [Remove-CsSipDomain](https://technet.microsoft.com/library/Gg398865(v=OCS.15))
 
   - <span></span>  
-    [Set-CsSipDomain](https://technet.microsoft.com/en-us/library/Gg412949(v=OCS.15))
+    [Set-CsSipDomain](https://technet.microsoft.com/library/Gg412949(v=OCS.15))
 
 </div>
 

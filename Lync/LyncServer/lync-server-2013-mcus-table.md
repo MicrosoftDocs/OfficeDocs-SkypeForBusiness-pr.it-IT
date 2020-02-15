@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella Mcus'
+title: 'Lync Server 2013: tabella MCU'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183674
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 522c7babbda63c550679dab1eb8eb03114417169
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6b82d01c96f22aabb797bdcf04820cfb944ccb7e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737176"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045308"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="mcus-table-in-lync-server-2013"></a>Tabella Mcus in Lync Server 2013
+# <a name="mcus-table-in-lync-server-2013"></a>Tabella MCU in Lync Server 2013
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41737176"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-28_
+_**Ultimo argomento modificato:** 2012-09-28_
 
-La tabella MCU è una tabella di supporto. Ogni record archivia le informazioni su un servizio di conferenza. Questi possono includere il servizio di conferenza di messaggistica istantanea e il servizio di conferenza telefonica (che vengono eseguiti come processi nei server front-end) e il servizio di Web Conferencing e il servizio di conferenza telefonica A/V.
+La tabella MCU è una tabella di supporto. Ogni record archivia le informazioni su un servizio di conferenza. Tali servizi possono includere il servizio di conferenza di messaggistica istantanea e il servizio di telefonia (che viene eseguito come processi nei server front-end) e il servizio Web Conferencing e il servizio A/V Conferencing.
 
 
 <table>
@@ -60,7 +60,7 @@ La tabella MCU è una tabella di supporto. Ogni record archivia le informazioni 
 <td><p><strong>McuId</strong></p></td>
 <td><p>int</p></td>
 <td><p>Principale</p></td>
-<td><p>Numero univoco che identifica questo server di conferenza.</p></td>
+<td><p>Numero univoco che identifica il server per conferenze.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>McuUri</strong></p></td>
@@ -71,8 +71,8 @@ La tabella MCU è una tabella di supporto. Ogni record archivia le informazioni 
 <tr class="odd">
 <td><p><strong>McuTypeId</strong></p></td>
 <td><p>inyint</p></td>
-<td><p> Esterna</p></td>
-<td><p>Tipo di server di conferenza, ad esempio conf: chat (per IMs) o conf: audio-video. Per altre informazioni, vedere la <a href="lync-server-2013-uritypes-table.md">tabella UriTypes in Lync Server 2013</a> .</p></td>
+<td><p> Stranieri</p></td>
+<td><p>Tipo di Server Conferencing, ad esempio conf: chat (per IMs) o conf: audio-video. Per ulteriori informazioni, vedere la <a href="lync-server-2013-uritypes-table.md">tabella UriTypes in Lync Server 2013</a> .</p></td>
 </tr>
 </tbody>
 </table>

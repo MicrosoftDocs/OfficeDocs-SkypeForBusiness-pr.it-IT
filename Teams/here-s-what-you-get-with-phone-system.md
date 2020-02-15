@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare il sistema telefonico Microsoft per l'azienda. "
-ms.openlocfilehash: ec41a7ac88c6c7c1a99c7c547b45ef1b95c25cc8
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: b1ba96143c62b829ef9461c1429a83a8b3cfe51e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836318"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045168"
 ---
 # <a name="heres-what-you-get-with-phone-system-in-office-365"></a>Ecco cosa offre il Sistema telefonico in Office 365
 
@@ -56,13 +56,13 @@ Il sistema telefonico offre le caratteristiche seguenti. Se non diversamente spe
 |[ID chiamante](how-can-caller-id-be-used-in-your-organization.md)  <br/> |Le chiamate dall'interno della società visualizzano un ID chiamante dettagliato che estrae le informazioni dalla directory aziendale, mostrando l'ID immagine e il titolo del lavoro anziché solo un numero di telefono. Per le chiamate da numeri di telefono esterni, viene visualizzato l'ID chiamante fornito dal provider di servizi telefonici. Se i numeri di telefono esterni sono numeri secondari nella directory aziendale, verranno visualizzate le informazioni della directory aziendale.  <br/> |
 |Commutazione di dispositivo  <br/> |Consente agli utenti di effettuare una chiamata o una riunione su un altro dispositivo HID connesso a teams; ad esempio, passando dagli altoparlanti del PC a un auricolare.   <br/> |
 |Routing delle chiamate basato sulla presenza <br/> |Controlla le comunicazioni in ingresso con la presenza, consentendo all'utente di bloccare tutte le comunicazioni in arrivo eccetto quelle indicate in modo specifico.  <br/> |
-|[Tastiera del telefono integrata](https://support.office.com/en-us/article/use-the-dial-pad-in-teams-27bc60b5-74c0-4e9c-808b-da4db9514d89) <br/> | Consente agli utenti di effettuare una chiamata per nome o per numero in qualsiasi punto della barra di ricerca e nella tastiera del telefono, velocizzando il processo di esecuzione delle chiamate in uscita. <br/> |
+|[Tastiera del telefono integrata](https://support.office.com/article/use-the-dial-pad-in-teams-27bc60b5-74c0-4e9c-808b-da4db9514d89) <br/> | Consente agli utenti di effettuare una chiamata per nome o per numero in qualsiasi punto della barra di ricerca e nella tastiera del telefono, velocizzando il processo di esecuzione delle chiamate in uscita. <br/> |
 |Chiamate federate  <br/> |Consente agli utenti di connettersi, comunicare e collaborare in modo sicuro con gli utenti di tenant federati.  <br/> |
 |[Effettuare e ricevere una videochiamata](https://support.office.com/article/abf62493-670f-4b0d-b2cf-fe03b49caf42) <br/> | Se l'account dell'utente è abilitato per le videochiamate, l'utente può effettuare chiamate video faccia a faccia con i propri contatti. Tutto ciò che serve è una fotocamera, gli altoparlanti del computer e il microfono. Gli utenti possono anche usare un auricolare se il computer in uso non ha un dispositivo audio incorporato.<br/> |
 |[Segreteria telefonica cloud](set-up-phone-system-voicemail.md) <br/> | Quando un utente riceve un messaggio vocale, viene recapitato alla cassetta postale di Exchange come messaggio di posta elettronica con la segreteria telefonica come allegato. Gli utenti possono ascoltare i loro messaggi nel telefono desktop certificato e in tutti i team o le applicazioni Skype for business. Il supporto per la trascrizione segreteria telefonica è stato aggiunto a partire da marzo 2017 ed è attivato per impostazione predefinita per tutte le organizzazioni e gli utenti.   <br/> |
 |[Impostazioni utente di cloud Voicemail](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f?ui=en-US&rs=en-US&ad=US) <br/> | Consente agli utenti di configurare le impostazioni del client per i saluti della segreteria telefonica, le regole di risposta alle chiamate e la lingua di saluto, inclusi i saluti fuori sede.   |
 |[Suoneria secondaria](https://support.office.com/article/Manage-your-call-settings-in-Teams-456cb611-3477-496f-b31a-6ab752a7595f) <br/> | Gli utenti che dispongono di più dispositivi altoparlante collegati al PC possono scegliere di impostare un dispositivo secondario su cui squillare oltre al relativo altoparlante predefinito. Ad esempio, un utente con un auricolare collegato al PC e agli altoparlanti da tavolo può scegliere di far squillare sia l'auricolare che gli altoparlanti da tavolo quando viene inserita una chiamata, in modo da non perdere una chiamata.  |
-|[Avvisi Ring distintivi](https://support.office.com/en-us/article/Manage-your-call-settings-in-Teams-456cb611-3477-496f-b31a-6ab752a7595f) (solo Teams)<br/> |Consente agli utenti di scegliere le suonerie separate per le chiamate normali, le chiamate inoltrate e le chiamate Delegate in modo che possano distinguere il tipo di chiamata.  <br/> |
+|[Avvisi Ring distintivi](https://support.office.com/article/Manage-your-call-settings-in-Teams-456cb611-3477-496f-b31a-6ab752a7595f) (solo Teams)<br/> |Consente agli utenti di scegliere le suonerie separate per le chiamate normali, le chiamate inoltrate e le chiamate Delegate in modo che possano distinguere il tipo di chiamata.  <br/> |
 |[Modalità di linea condivisa](shared-line-appearance.md) <br/> | Consente agli utenti di condividere la propria linea telefonica in modo che un altro utente possa effettuare e ricevere chiamate per proprio conto.|
 |[Occupato su occupato](teams-calling-policy.md) (solo Teams) <br/> | Un criterio di chiamata che consente di configurare il modo in cui vengono gestite le chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata in attesa. Il chiamante sentirà un segnale di occupato quando il chiamato è già sul telefono. Il chiamato riceve una notifica di chiamata senza risposta ma non è in grado di rispondere alle chiamate in arrivo. Questa caratteristica è disabilitata per impostazione predefinita, ma può essere attivata dall'amministratore del tenant. |
 |[Blocco delle chiamate](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f?ui=en-US&rs=en-US&ad=US) <br/> | Consente agli utenti di aggiungere numeri di telefono PSTN a un elenco bloccato in modo che la chiamata successiva da tale numero venga bloccata dall'utente.|

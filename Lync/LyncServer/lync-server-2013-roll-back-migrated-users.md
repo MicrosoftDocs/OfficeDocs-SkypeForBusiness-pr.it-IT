@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Eseguire il rollback degli utenti migrati'
+title: 'Lync Server 2013: eseguire il rollback degli utenti migrati'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185286
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5e8b8c53f835bbbaa363a91ef547dd1d301c8976
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7398e69e5a02924025d63fc48096244d67c49aeb
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732906"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051470"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,20 +35,20 @@ ms.locfileid: "41732906"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-07_
+_**Ultimo argomento modificato:** 2012-10-07_
 
-Se è necessario eseguire il rollback della funzionalità archivio contatti unificato, ripristinare i contatti solo se l'utente viene spostato di nuovo in Exchange 2010 o Lync Server 2010. Per eseguire il rollback, disabilitare il criterio per l'utente e quindi il cmdlet **Invoke-CsUcsRollback** . Solo l'uso di **Invoke-CsUcsRollback** da solo non è sufficiente per garantire un rollback permanente, perché la migrazione dell'archivio contatti unificato verrà avviata di nuovo se il criterio non è disabilitato. Se ad esempio viene eseguito il rollback di un utente perché Exchange 2013 viene eseguito il rollback in Exchange 2010 e la cassetta postale dell'utente viene spostata in Exchange 2013, la migrazione dell'archivio contatti unificato verrà avviata di nuovo sette giorni dopo il rollback, purché l'archivio contatti unificato è ancora abilitato per l'utente nei criteri servizi utente.
+Se è necessario eseguire il rollback della caratteristica archivio contatti unificato, eseguire il rollback dei contatti solo se l'utente viene spostato di nuovo in Exchange 2010 o Lync Server 2010. Per eseguire il rollback, disabilitare il criterio per l'utente e quindi eseguire il cmdlet **Invoke-CsUcsRollback**. La sola esecuzione di **Invoke-CsUcsRollback** non è sufficiente ad assicurare un rollback permanente, in quanto la migrazione dell'archivio contatti unificato verrà avviata di nuovo se il criterio non viene disabilitato. Ad esempio, se un utente viene eseguito il rollback perché Exchange 2013 viene eseguito il rollback a Exchange 2010 e quindi la cassetta postale dell'utente viene spostata in Exchange 2013, la migrazione dell'archivio contatti unificato verrà avviata di nuovo sette giorni dopo il rollback, purché l'archivio contatti unificato è ancora abilitato per l'utente nei criteri servizi utente.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Il cmdlet <STRONG>Move-CsUser</STRONG> esegue automaticamente il rollback dell'archivio contatti dell'utente da Exchange 2013 a Lync Server 2013 nelle situazioni seguenti: 
+> Il cmdlet <STRONG>Move-CsUser</STRONG> esegue automaticamente il rollback dell'archivio contatti dell'utente da Exchange 2013 a Lync Server 2013 nei casi seguenti: 
 > <UL>
 > <LI>
 > <P>Quando gli utenti vengono spostati da Lync Server 2013 a Lync Server 2010.</P>
 > <LI>
-> <P>Quando gli utenti vengono migrati, ad esempio quando un utente viene spostato da Lync Online a Lync Server 2013 locale o viceversa.</P></LI></UL>
+> <P>Quando gli utenti eseguono la migrazione di spazi incrociati, ad esempio quando un utente viene spostato da Lync Online a Lync Server 2013 in locale o viceversa.</P></LI></UL>
 
 
 
@@ -58,12 +58,12 @@ Se è necessario eseguire il rollback della funzionalità archivio contatti unif
 
 
 > [!IMPORTANT]  
-> L'importazione di dati dell'archivio contatti unificati da un database di backup può causare il danneggiamento dei dati dell'archivio contatti unificati se la modalità archivio contatti unificata è cambiata tra l'esportazione e l'importazione. Ad esempio: 
+> L'importazione dei dati dell'archivio contatti unificato da un database di backup può danneggiare i dati dell'archivio e degli utenti se la modalità dell'archivio stesso è cambiata tra l'esportazione e l'importazione. Ad esempio: 
 > <UL>
 > <LI>
-> <P>Se si esportano elenchi di contatti prima che i contatti degli utenti vengano migrati a Exchange 2013 e quindi, dopo la migrazione, importino gli stessi dati, i dati dell'archivio contatti unificato e gli elenchi di contatti saranno danneggiati.</P>
+> <P>Se si esportano gli elenchi di contatti prima della migrazione dei contatti degli utenti a Exchange 2013 e successivamente, dopo la migrazione, vengono importati gli stessi dati, i dati degli archivi dei contatti unificati e gli elenchi di contatti verranno danneggiati.</P>
 > <LI>
-> <P>Se si esporta UserData dopo la migrazione degli utenti a Exchange 2013, eseguire il rollback della migrazione e quindi, per qualche motivo, importare i dati dopo la migrazione, i dati dell'archivio contatti unificati e gli elenchi di contatti saranno danneggiati.</P></LI></UL>
+> <P>Se si esporta UserData dopo aver eseguito la migrazione degli utenti a Exchange 2013, eseguire il rollback della migrazione e quindi, per qualche motivo, i dati vengono importati dopo la migrazione, i dati dell'archivio contatti unificato e gli elenchi di contatti verranno danneggiati.</P></LI></UL>
 
 
 
@@ -73,21 +73,21 @@ Se è necessario eseguire il rollback della funzionalità archivio contatti unif
 
 
 > [!IMPORTANT]  
-> Prima di trasferire una cassetta postale di Exchange da Exchange 2013 a Exchange 2010, l'amministratore di Exchange deve verificare che l'amministratore di Lync Server abbia prima eseguito il rollback dei contatti utente di Lync Server da Exchange 2013 a Lync Server. Per ripristinare i contatti degli archivi di contatti unificati in Lync Server, vedere procedura "per ripristinare i contatti dell'archivio contatti unificati da Exchange 2013 a Lync Server 2013" più avanti in questa sezione.
+> Prima di spostare una cassetta postale di Exchange da Exchange 2013 a Exchange 2010, l'amministratore di Exchange deve verificare che l'amministratore di Lync Server abbia prima eseguito il rollback dei contatti utente di Lync Server da Exchange 2013 a Lync Server. Per eseguire il rollback dei contatti dell'archivio contatti unificato in Lync Server, vedere la procedura "per eseguire il rollback degli archivi di contatti unificati da Exchange 2013 a Lync Server 2013" più avanti in questa sezione.
 
 
 
 </div>
 
-La procedura seguente descrive come eseguire il rollback dei contatti utente. Se si usa il cmdlet **Move-CsUser** per spostare gli utenti tra lync Server 2013 e lync Server 2010, è possibile ignorare questi passaggi perché il cmdlet **Move-CsUser** esegue automaticamente il rollback dell'archivio contatti di unifed quando sposta gli utenti da Lync Server 2013 a Lync Server 2010. **Move-CsUser** non Disabilita i criteri archivio contatti unificati, quindi la migrazione all'archivio contatti unificato si ripresenta se l'utente viene spostato di nuovo in Lync Server 2013.
+Nella procedura seguente viene illustrato come eseguire il rollback dei contatti degli utenti. Se si utilizza il cmdlet **Move-CsUser** per spostare gli utenti tra lync Server 2013 e lync Server 2010, è possibile ignorare questi passaggi perché il cmdlet **Move-CsUser** esegue automaticamente il rollback dell'archivio contatti di unifed quando sposta gli utenti da Lync Server 2013 a Lync Server 2010. **Move-CsUser** non disattiva il criterio dell'archivio contatti unificato, quindi la migrazione all'archivio contatti unificato si ripeterà se l'utente viene spostato di nuovo su Lync Server 2013.
 
 <div>
 
-## <a name="to-roll-back-user-contacts-from-lync-server-2013-to-lync-server-2010"></a>Per ripristinare i contatti utente da Lync Server 2013 a Lync Server 2010
+## <a name="to-roll-back-user-contacts-from-lync-server-2013-to-lync-server-2010"></a>Per eseguire il rollback dei contatti utente da Lync Server 2013 a Lync Server 2010
 
-1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-2.  Disabilitare l'archivio contatti unificato per consentire agli utenti di eseguire il rollback in modo che non vengano rimigrati dopo il rollback. Eseguire questo passaggio solo se si vuole verificare che gli utenti non vengano rimigrati in futuro. Per disabilitare l'archivio contatti unificato per singoli utenti, nella riga di comando digitare:
+2.  Disabilitare l'archivio contatti unificato per gli utenti di cui è necessario eseguire il rollback in modo che, dopo il rollback, non ne venga ripetuta la migrazione. Eseguire questo passaggio solo se si desidera essere certi che gli utenti non vengano ritrasferiti in futuro. Per disabilitare l'archivio contatti unificato per i singoli utenti, nella riga di comando digitare quanto segue:
     
         Set-CsUserServicesPolicy -Identity "<policy name>" -UcsAllowed $False
     
@@ -101,12 +101,12 @@ La procedura seguente descrive come eseguire il rollback dei contatti utente. Se
     
 
     > [!IMPORTANT]  
-    > Se questo passaggio viene omesso, l'elenco contatti verrà perso.
+    > Se si ignora questo passaggio, l'elenco contatti andrà perso.
 
     
     </div>
 
-4.  Eseguire il rollback degli utenti specificati. Nella riga di comando digitare:
+4.  Eseguire il rollback degli utenti specificati. Nella riga di comando digitare quanto segue:
     
         Invoke-CsUcsRollback -Identity "<user display name>"
     
@@ -118,7 +118,7 @@ La procedura seguente descrive come eseguire il rollback dei contatti utente. Se
     
 
     > [!IMPORTANT]  
-    > Non è consigliabile usare l'opzione – Force per forzare il rollback. Se si usa questa opzione, i contatti degli utenti andranno perduti.
+    > Non è consigliabile utilizzare l'opzione –Force per forzare il rollback. Se si utilizza tale opzione, i contatti degli utenti andranno persi.
 
     
     </div>
@@ -127,11 +127,11 @@ La procedura seguente descrive come eseguire il rollback dei contatti utente. Se
 
 <div>
 
-## <a name="to-roll-back-unified-contact-store-contacts-from-exchange-2013-to-lync-server-2013"></a>Per eseguire il rollback dei contatti dell'archivio contatti unificati da Exchange 2013 a Lync Server 2013
+## <a name="to-roll-back-unified-contact-store-contacts-from-exchange-2013-to-lync-server-2013"></a>Per eseguire il rollback dei contatti dell'archivio contatti unificato da Exchange 2013 a Lync Server 2013
 
-1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-2.  Disabilitare l'archivio contatti unificato per consentire agli utenti di eseguire il rollback in modo che non vengano rimigrati dopo il rollback. Per disabilitare l'archivio contatti unificato per singoli utenti, nella riga di comando digitare:
+2.  Disabilitare l'archivio contatti unificato per gli utenti di cui è necessario eseguire il rollback in modo che, dopo il rollback, non ne venga ripetuta la migrazione. Per disabilitare l'archivio contatti unificato per i singoli utenti, nella riga di comando digitare quanto segue:
     
         Set-CsUserServicesPolicy -Identity "<policy name>" -UcsAllowed $False
     
@@ -139,7 +139,7 @@ La procedura seguente descrive come eseguire il rollback dei contatti utente. Se
     
         Set-CsUserServicesPolicy -Identity "UCS Enabled Users" -UcsAllowed $False
 
-3.  Eseguire il rollback degli utenti specificati. Nella riga di comando digitare:
+3.  Eseguire il rollback degli utenti specificati. Nella riga di comando digitare quanto segue:
     
         Invoke-CsUcsRollback -Identity "<user display name>"
     
@@ -151,7 +151,7 @@ La procedura seguente descrive come eseguire il rollback dei contatti utente. Se
     
 
     > [!IMPORTANT]  
-    > Prima di tutto, è necessario eseguire il rollback dell'utente di Lync Server e quindi la cassetta postale di Exchange 2013. L'amministratore di Exchange viene bloccato dal rollback di Exchange fino al completamento del ripristino di Lync Server. Non è consigliabile usare l'opzione – Force per forzare il rollback. Se si usa questa opzione, i contatti degli utenti andranno perduti.
+    > È necessario innanzitutto eseguire il rollback dell'utente di Lync Server e quindi spostare la cassetta postale di Exchange 2013. L'amministratore di Exchange è bloccato dal rollback di Exchange fino al completamento del ripristino di Lync Server. Non è consigliabile utilizzare l'opzione –Force per forzare il rollback. Se si utilizza tale opzione, i contatti degli utenti andranno persi.
 
     
     </div>

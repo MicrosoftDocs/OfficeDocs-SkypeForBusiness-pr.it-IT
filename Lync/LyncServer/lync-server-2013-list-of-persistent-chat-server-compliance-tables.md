@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Elenco delle tabelle di conformità del server Chat persistente'
+title: 'Lync Server 2013: elenco delle tabelle di conformità del server Chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48706007
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3c4f6e9622e839e2f1fd719b8e2d7ba95286247e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fab78f554c94e11c808eeb28929d6b4511c3a695
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765414"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046129"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41765414"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-06_
+_**Ultimo argomento modificato:** 2012-10-06_
 
-Lo schema del database di conformità della chat persistente è costituito dalle tabelle seguenti.
+Lo schema del database di conformità di Persistent Chat è costituito dalle tabelle seguenti.
 
 <div>
 
-## <a name="list-of-persistent-chat-server-compliance-tables"></a>Elenco delle tabelle di conformità Persistent Chat Server
+## <a name="list-of-persistent-chat-server-compliance-tables"></a>Elenco delle tabelle di conformità del server chat persistente
 
 
 <table>
@@ -51,28 +51,28 @@ Lo schema del database di conformità della chat persistente è costituito dalle
 </colgroup>
 <thead>
 <tr class="header">
-<th>Tabella</th>
+<th>tavolo</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tblcompliancedata.md">tblComplianceData in Lync Server 2013</a></p></td>
-<td><p>Contiene gli eventi di conformità che non sono stati ancora elaborati dalla scheda configurata.</p>
-<p>Questa tabella include eventi relativi alla chat persistente, ad esempio messaggi di chat e download di file. (Gli eventi dei partecipanti vengono registrati dalla tabella tblComplianceParticipant).</p>
-<p>I server che hanno elaborato gli eventi in questa tabella sono elencati nella tabella tblComplianceFanout.</p></td>
+<td><p>Include gli eventi di conformità ancora non elaborati da tutti gli adattatori configurati.</p>
+<p>In questa tabella sono inclusi gli eventi relativi a chat persistente, ad esempio i messaggi di chat e i download di file. Gli eventi dei partecipanti vengono registrati dalla tabella ComplianceParticipant.</p>
+<p>I server che hanno elaborato gli eventi in questa tabella sono elencati nella tabella ComplianceFanout.</p></td>
 </tr>
 <tr class="even">
-<td><p><a href="lync-server-2013-tblcompliancefanout.md">tblComplianceFanout in Lync Server 2013</a></p></td>
-<td><p>Contiene i server che hanno elaborato un evento di conformità. Questa tabella è strettamente associata alla tabella tblComplianceData.</p></td>
+<td><p><a href="lync-server-2013-tblcompliancefanout.md">ComplianceFanout in Lync Server 2013</a></p></td>
+<td><p>Include i server che hanno elaborato un evento di conformità. È strettamente associata alla tabella ComplianceData.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-tblcomplianceparticipant.md">tblComplianceParticipant in Lync Server 2013</a></p></td>
-<td><p>Contiene partecipanti correnti per servizio di chat e per server. Viene mantenuto in base agli eventi di conformità di join e part ricevuti dal servizio chat persistente.</p></td>
+<td><p>Include i partecipanti correnti per servizio chat e per server. Viene mantenuto in base agli eventi di conformità di join e parti ricevuti dal servizio chat persistente.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-tblcompliancestate.md">tblComplianceState in Lync Server 2013</a></p></td>
-<td><p>Contiene informazioni sullo stato di conformità a livello di pool.</p></td>
+<td><p>Contiene informazioni relative allo stato di conformità a livello di pool.</p></td>
 </tr>
 </tbody>
 </table>

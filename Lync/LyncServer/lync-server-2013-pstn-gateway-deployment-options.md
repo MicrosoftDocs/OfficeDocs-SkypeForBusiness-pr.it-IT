@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Opzioni di distribuzione di gateway PSTN'
+title: 'Lync Server 2013: opzioni di distribuzione del gateway PSTN'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185445
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5b2f3cd153a6dc8d101f44a3f087f0ccedfa9bf7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7e4d8f35ecf2b384ad51482547b22baad63fcf31
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747186"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042083"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,49 +35,49 @@ ms.locfileid: "41747186"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
 <div>
 
 ## <a name="pstn-gateways"></a>Gateway PSTN
 
-I gateway PSTN (Public Switched Telephone Network) sono componenti hardware di terze parti che traducono segnalazioni e elementi multimediali tra l'infrastruttura VoIP aziendale e la rete PSTN, direttamente o tramite connessione ai trunk SIP. In entrambe le topologie il gateway termina la rete PSTN. Il gateway è isolato nella relativa subnet ed è connesso alla rete aziendale tramite il server Mediation.
+I gateway PSTN (Public Switched Telephone Network) sono componenti hardware di terze parti che convertono i segnali e i dati multimediali tra l'infrastruttura VoIP aziendale e la rete PSTN direttamente o mediante connessione a trunk SIP. In entrambe le topologie il gateway termina la rete PSTN. Il gateway è isolato nella propria subnet ed è connesso alla rete aziendale tramite il Mediation Server.
 
-Un'organizzazione con più siti in genere distribuisce uno o più gateway in ogni sito. I siti di succursale possono connettersi alla rete PSTN tramite un gateway o tramite un Survivable Branch Appliance, che combina gateway e server in una singola casella. Se i siti di succursale usano un gateway, è necessario che il registrar e Mediation Server sia obbligatorio nel sito, a meno che il collegamento WAN non sia resiliente. Uno o più server di mediazione, che sono collocati nei server front-end, possono instradare le chiamate per uno o più gateway in ogni sito. È consigliabile che il registrar, il Mediation Server e il gateway richiesto nel sito vengano distribuiti come Survivable Branch Appliance.
+Un'organizzazione con più siti in genere distribuisce uno o più gateway in ogni sito. I siti di succursale possono connettersi alla rete PSTN tramite un gateway o tramite un Survivable Branch Appliance, che combina gateway e server in una singola casella. Se i siti di succursale utilizzano un gateway, è necessario che il servizio di registrazione e Mediation Server siano necessari nel sito, a meno che il collegamento WAN non sia resiliente. Uno o più Mediation Server, che sono collocati nei Front End Server, possono instradare le chiamate per uno o più gateway in ogni sito. È consigliabile che il servizio di registrazione, il Mediation Server e il gateway richiesti nel sito siano distribuiti come Survivable Branch Appliance.
 
-La determinazione del numero, delle dimensioni e della posizione dei gateway PSTN è forse la decisione più importante e costosa che è necessario apportare quando si pianifica l'infrastruttura VoIP aziendale.
+Determinare il numero, le dimensioni e la posizione dei gateway PSTN è forse la decisione più importante e costosa che è necessario apportare quando si pianifica l'infrastruttura VoIP aziendale.
 
-Ecco le principali domande da prendere in considerazione. Tieni presente che le risposte a queste domande sono tutte interdipendenti
+Di seguito sono riportate le principali domande da prendere in considerazione. Tenere presente che le risposte a queste domande sono tutte interdipendenti
 
-  - Quanti gateway PSTN sono necessari? La risposta dipende dal numero di utenti, dal numero previsto di chiamate simultanee (carico di traffico) e dal numero di siti (ogni sito ne ha bisogno).
+  - Quanti gateway PSTN sono necessari? La risposta dipende dal numero di utenti, dal numero previsto di chiamate simultanee (carico del traffico) e dal numero di siti (ogni sito ne ha bisogno).
 
-  - Quali sono le dimensioni dei gateway? La risposta dipende dal numero di utenti nel sito e dal carico di traffico.
+  - Quali dimensioni devono essere i gateway? La risposta dipende dal numero di utenti nel sito e dal carico di traffico.
 
   - Dove devono essere ubicati i gateway? La risposta dipende in parte dalla topologia e in parte dalla distribuzione geografica dell'organizzazione.
 
-Dovresti anche prendere in considerazione le opzioni della topologia del gateway (per informazioni dettagliate, Vedi topologie del gateway più avanti in questo argomento).
+È inoltre consigliabile prendere in considerazione le opzioni di topologia del gateway (per informazioni dettagliate, vedere Topologie del gateway più avanti in questo argomento).
 
 <div>
 
-## <a name="mn-trunk-support"></a>Supporto di M:N trunk
+## <a name="mn-trunk-support"></a>Supporto dei trunk M:N
 
-I Mediation Server possono instradare le chiamate attraverso più gateway, Session Border Controller (SBCs) forniti da provider di servizi di telefonia Internet o una combinazione dei due. Inoltre, più server di mediazione nel pool possono interagire con più gateway. La route logica definita tra un Mediation Server e un gateway viene chiamata *trunk*. Quando un utente interno inserisce una chiamata PSTN, la logica di routing in uscita nel pool Front-End sceglie quale trunk per instradare oltre tutte le possibili combinazioni che potrebbero essere disponibili per il routing di quella particolare chiamata. Con il bilanciamento del carico DNS, se una chiamata non riesce a raggiungere un gateway a causa di un problema con un determinato Mediation Server nel pool, la chiamata verrà riprovata in un server di mediazione alternativo nel pool.
+I Mediation Server possono instradare le chiamate tramite più gateway, Session Border Controller (SBCs) forniti da provider di servizi di telefonia Internet o una combinazione di due. Inoltre, più Mediation Server nel pool è in grado di interagire con più gateway. La route logica definita tra un Mediation Server e un gateway è denominata *trunk*. Quando un utente interno inserisce una chiamata PSTN, la logica di routing in uscita nel pool Front End sceglie il trunk da instradare oltre tutte le combinazioni possibili che potrebbero essere disponibili per il routing di quella chiamata specifica. Con il bilanciamento del carico DNS, se una chiamata non riesce a raggiungere un gateway a causa di un problema con un determinato Mediation Server nel pool, la chiamata verrà ritentata in un Mediation server alternativo nel pool.
 
-Per informazioni dettagliate sulla pianificazione di più gateway, vedere [Trunk M:N in Lync Server 2013](lync-server-2013-m-n-trunk.md).
+Per informazioni dettagliate sulla pianificazione di più gateway, vedere [M:N trunk in Lync Server 2013](lync-server-2013-m-n-trunk.md).
 
-Per informazioni dettagliate sugli altri miglioramenti del routing in uscita, vedere [route vocali in Lync Server 2013](lync-server-2013-voice-routes.md).
+Per informazioni dettagliate sull'altro miglioramento del routing in uscita, vedere [Voice routes in Lync Server 2013](lync-server-2013-voice-routes.md).
 
 </div>
 
 <div>
 
-## <a name="gateway-topologies"></a>Topologie del gateway
+## <a name="gateway-topologies"></a>Topologie di gateway
 
-Quando si considerano le domande fondamentali della distribuzione di gateway, eseguire le operazioni seguenti:
+Se si considerano le questioni fondamentali della distribuzione di gateway, eseguire la procedura seguente:
 
-1.  Contare i siti in cui si vuole specificare la connettività PSTN tramite VoIP aziendale.
+1.  Contare i siti in cui si desidera fornire la connettività PSTN tramite VoIP aziendale.
 
-2.  Stimare il traffico in ogni sito (numero di utenti e numero medio di chiamate per ora per utente).
+2.  Stimare il traffico in ogni sito (numero di utenti e numero medio di chiamate all'ora per utente).
 
 3.  Distribuire uno o più gateway in ogni sito per gestire il traffico previsto.
 
@@ -85,17 +85,17 @@ La topologia del gateway distribuito risultante è illustrata nella figura segue
 
 **Topologia del gateway distribuito**
 
-![Diagramma della topologia con gateway distribuiti](images/Gg398899.f0f65a0b-a462-491a-878b-4d4bf0a96f6d(OCS.15).jpg "Diagramma della topologia con gateway distribuiti")
+![Diagramma della topologia di gateway distribuiti](images/Gg398899.f0f65a0b-a462-491a-878b-4d4bf0a96f6d(OCS.15).jpg "Diagramma della topologia di gateway distribuiti")
 
-Con questa topologia, le chiamate tra i dipendenti di ogni sito e tra i siti sono tutte instradate sulla Intranet. Le chiamate a PSTN vengono instradate tramite la rete IP aziendale verso i gateway più vicini alla posizione dei numeri di destinazione. Ma cosa succede se l'organizzazione supporta decine o centinaia o anche migliaia di siti distribuiti in uno o più continenti, come fanno molti istituti finanziari e altre imprese di grandi dimensioni? In questi casi, la distribuzione di un gateway separato in ogni sito non è pratica.
+Con questa topologia, le chiamate tra i lavoratori di ogni sito e tra i siti vengono instradate all'interno della rete Intranet. Le chiamate alla rete PSTN vengono instradate tramite la Network IP dell'organizzazione ai gateway più vicini alla posizione dei numeri di destinazione. Ma cosa succede se l'organizzazione supporta decine o centinaia o addirittura migliaia di siti distribuiti in uno o più continenti, come fanno molte istituzioni finanziarie e altre imprese di grandi dimensioni? In questi casi, la distribuzione di un gateway separato in ogni sito non è pratico.
 
-Per risolvere questo problema, molte aziende di grandi dimensioni preferiscono distribuire uno o più siti centrali di telefonia di grandi dimensioni, come illustrato nella figura seguente.
+Per risolvere questo problema, molte società di grandi dimensioni preferiscono distribuire uno o più siti centrali di telefonia di grandi dimensioni, come illustrato nella figura seguente.
 
 **Topologia del sito centrale di telefonia**
 
-![Diagramma della topologia con gateway di data center](images/Gg398899.927f4808-bf74-405a-be20-2cd9cd87af6d(OCS.15).jpg "Diagramma della topologia con gateway di data center")
+![Topologia del gateway Data Center](images/Gg398899.927f4808-bf74-405a-be20-2cd9cd87af6d(OCS.15).jpg "Topologia del gateway Data Center")
 
-In questa topologia, diversi gateway di grandi dimensioni sufficienti per supportare il caricamento previsto dell'utente vengono distribuiti in ogni sito centrale. Tutte le chiamate agli utenti dell'organizzazione vengono inoltrate dal provider di servizi telefonici della società a un sito centrale. La logica di routing nel sito centrale determina se la chiamata deve essere instradata tramite Intranet o PSTN.
+In questa topologia, numerosi gateway di grandi dimensioni sufficienti per ospitare il carico utente previsto vengono distribuiti in ogni sito centrale. Tutte le chiamate agli utenti nell'organizzazione vengono inoltrate dal provider di servizi telefonici della società a un sito centrale. La logica di routing nel sito centrale determina se la chiamata deve essere instradata attraverso la rete Intranet o la rete PSTN.
 
 </div>
 
@@ -103,27 +103,27 @@ In questa topologia, diversi gateway di grandi dimensioni sufficienti per suppor
 
 ## <a name="gateway-location"></a>Posizione del gateway
 
-La posizione del gateway può anche determinare i tipi di gateway scelti e il modo in cui vengono configurati. Esistono decine di protocolli PSTN, nessuno dei quali è uno standard mondiale. Se tutti i gateway si trovano in un singolo paese/area geografica, questo non è un problema, ma se si individuano i gateway in più paesi/aree geografiche, ognuno deve essere configurato in base agli standard PSTN di tale paese/area geografica. Inoltre, i gateway certificati per l'operazione, ad esempio Canada, potrebbero non essere certificati in India, Brasile o Unione europea.
+Il percorso del gateway può anche determinare i tipi di gateway scelti e il modo in cui vengono configurati. Sono disponibili dozzine di protocolli PSTN, nessuno dei quali è uno standard mondiale. Se tutti i gateway sono situati in un singolo paese/area geografica, non si tratta di un problema, ma se si individuano i gateway in diversi paesi/aree geografiche, è necessario configurarli in base agli standard PSTN di quel paese/area geografica. Inoltre, i gateway certificati per l'operazione, ad esempio il Canada, potrebbero non essere certificati in India, Brasile o nell'Unione europea.
 
 </div>
 
 <div>
 
-## <a name="gateway-size-and-number"></a>Dimensioni e numero del gateway
+## <a name="gateway-size-and-number"></a>Dimensione e numero del gateway
 
-Gateway PSTN che la maggior parte delle organizzazioni valuterà la distribuzione di intervalli di dimensioni da 2 a fino a un massimo di 960 porte. (Ci sono anche gateway più grandi, ma questi sono usati principalmente dai provider di servizi telefonici). Per valutare il numero di porte richieste dall'organizzazione, usare le linee guida seguenti:
+I gateway PSTN che la maggior parte delle organizzazioni valuterà la distribuzione di un intervallo di dimensioni da 2 a fino a 960 porte. (Esistono anche gateway più grandi, ma questi sono utilizzati principalmente dai provider di servizi di telefonia). Quando si valuta il numero di porte richieste dall'organizzazione, utilizzare le linee guida seguenti:
 
-  - Le organizzazioni con utilizzo della telefonia leggera (una chiamata PSTN per utente per ora) devono allocare una sola porta per ogni 15 utenti. Se ad esempio sono presenti 20 utenti, sarà necessario un gateway con due porte.
+  - Le organizzazioni con utilizzo di telefonia chiaro (una chiamata PSTN per utente all'ora) devono allocare una porta per ogni 15 utenti. Ad esempio, se si dispone di 20 utenti, sarà necessario un gateway con due porte.
 
-  - Le organizzazioni con un utilizzo moderato della telefonia (due chiamate PSTN per utente per ora) devono allocare una sola porta per ogni 10 utenti. Ad esempio, se si hanno 100 utenti, è necessario un totale di 10 porte allocate tra uno o più gateway.
+  - Le organizzazioni con un utilizzo di telefonia moderato (due chiamate PSTN per utente all'ora) devono allocare una porta per ogni 10 utenti. Ad esempio, se si dispone di 100 utenti, sarà necessario un totale di 10 porte allocate tra uno o più gateway.
 
-  - Le organizzazioni con uso di telefonia pesante (tre o più chiamate PSTN per utente per ora) devono allocare una porta per ogni cinque utenti. Ad esempio, se si hanno 47.000 utenti, sarà necessario un totale di 9.400 porte allocate tra almeno 10 gateway di grandi dimensioni.
+  - Le organizzazioni con un utilizzo pesante della telefonia (tre o più chiamate PSTN per utente all'ora) devono allocare una porta per ogni cinque utenti. Ad esempio, se si dispone di 47.000 utenti, sarà necessario un totale di 9.400 porte allocate tra almeno 10 gateway di grandi dimensioni.
 
-  - Le porte aggiuntive possono essere acquisite Man mano che aumenta il numero di utenti o la quantità di traffico nell'organizzazione.
+  - È possibile acquisire ulteriori porte quando aumenta il numero di utenti o la quantità di traffico nell'organizzazione.
 
-Per qualsiasi numero di utenti che è necessario supportare, è possibile scegliere di distribuire meno, gateway più grandi o quelli più piccoli. Di norma, è consigliabile un minimo di due gateway per un'organizzazione per mantenere la disponibilità se un gateway non riesce.
+Per un determinato numero di utenti che è necessario supportare, è possibile scegliere di distribuire meno, gateway più grandi o più piccoli. Come regola generale, è consigliabile un minimo di due gateway per un'organizzazione per mantenere la disponibilità se un gateway ha esito negativo.
 
-Ogni gateway PSTN distribuito deve avere almeno un Mediation Server corrispondente.
+Ogni gateway PSTN distribuito deve disporre di almeno un Mediation Server corrispondente.
 
 </div>
 

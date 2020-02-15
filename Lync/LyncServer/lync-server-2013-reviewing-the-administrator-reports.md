@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Esame dei rapporti amministratore'
+title: "Lync Server 2013: revisione dei rapporti dell'amministratore"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541450
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ad04e03571f228fd83339dbc1c36be07d32f0962
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ffa9418b0b4ed2d9571a409faaad6948c9bbf01f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733026"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050338"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="reviewing-the-administrator-reports-in-lync-server-2013"></a>Esame dei rapporti amministratore in Lync Server 2013
+# <a name="reviewing-the-administrator-reports-in-lync-server-2013"></a>Revisione dei rapporti dell'amministratore in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41733026"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-I report dell'amministratore sono informazioni dettagliate per la distribuzione e le operazioni. I report vengono generati in base alle selezioni contrassegnate nei **siti di progettazione**. La finestra di progettazione può aggiungere ulteriore valore ai report dell'amministratore modificando i diagrammi di rete e definendo gli indirizzi IP completi e i nomi di dominio completo (FQDN) per server, pool e servizi di bilanciamento del carico.
+Nei rapporti di amministrazione sono incluse informazioni dettagliate per la distribuzione e le operazioni. I report vengono generati in base alle selezioni contrassegnate in **siti di progettazione**. Il progettista può dare valore aggiunto ai rapporti modificando i diagrammi di rete e definendo gli indirizzi IP completi e i nomi di dominio completi (FQDN) dei server, dei pool e dei servizi di bilanciamento del carico.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Revisione del report di riepilogo in Lync Server 2013](lync-server-2013-reviewing-the-summary-report.md)
+  - [Revisione del rapporto riepilogativo in Lync Server 2013](lync-server-2013-reviewing-the-summary-report.md)
 
-  - [Revisione del report sui certificati in Lync Server 2013](lync-server-2013-reviewing-the-certificates-report.md)
+  - [Revisione del rapporto sui certificati in Lync Server 2013](lync-server-2013-reviewing-the-certificates-report.md)
 
-  - [Revisione del report del firewall in Lync Server 2013](lync-server-2013-reviewing-the-firewall-report.md)
+  - [Revisione del rapporto del firewall in Lync Server 2013](lync-server-2013-reviewing-the-firewall-report.md)
 
   - [Revisione del report DNS in Lync Server 2013](lync-server-2013-reviewing-the-dns-report.md)
 

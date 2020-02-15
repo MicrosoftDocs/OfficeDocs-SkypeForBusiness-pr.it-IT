@@ -12,16 +12,16 @@ ms:contentKeyID: 63969573
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0d4a4c4194ad730a64b167aaaf33151c8a7684e8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3bbfd7e4375d8b2fa5834ba4f11ac5aedd48dfc9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41745366"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037426"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41745366"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-11-01_
+_**Ultimo argomento modificato:** 2014-11-01_
 
 
 <table>
@@ -46,16 +46,16 @@ _**Argomento Ultima modifica:** 2014-11-01_
 <tbody>
 <tr class="odd">
 <td><p>Pianificazione della verifica</p></td>
-<td><p>Quotidiana</p></td>
+<td><p>Giornaliero</p></td>
 </tr>
 <tr class="even">
-<td><p>Strumento di test</p></td>
+<td><p>Strumento di testing</p></td>
 <td><p>Windows PowerShell</p></td>
 </tr>
 <tr class="odd">
 <td><p>Autorizzazioni necessarie</p></td>
-<td><p>Quando si esegue localmente tramite Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
-<p>Quando si esegue usando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga delle autorizzazioni per eseguire il cmdlet <strong>test-CsExUMConnectivity</strong> . Per visualizzare un elenco di tutti i ruoli RBAC che possono usare questo cmdlet, eseguire il comando seguente dal prompt di Windows PowerShell:</p>
+<td><p>Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
+<p>Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet <strong>test-CsExUMConnectivity</strong> . Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</p>
 <pre><code>Get-CsAdminRole | Where-Object {$_.Cmdlets -match &quot;Test-CsExUMConnectivity&quot;}</code></pre></td>
 </tr>
 </tbody>
@@ -66,26 +66,26 @@ _**Argomento Ultima modifica:** 2014-11-01_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet **test-CsExUMConnectivity** verifica che l'utente specificato possa connettersi al servizio di messaggistica unificata di Microsoft Exchange Server 2013. Tieni presente che questo cmdlet verifica che sia possibile effettuare una connessione al servizio. Il servizio non viene testato. Per testare il servizio di messaggistica unificata eseguendo un cmdlet di transazione sintetica che lascia effettivamente un messaggio di segreteria telefonica nella cassetta postale di un utente, usare il cmdlet test-CsExUMVoiceMail.
+Il cmdlet **test-CsExUMConnectivity** verifica che l'utente specificato sia in grado di connettersi al servizio di messaggistica unificata di Microsoft Exchange Server 2013. Si noti che questo cmdlet verifica solo che sia possibile effettuare una connessione al servizio. Il servizio non viene testato. Per verificare il servizio di messaggistica unificata (eseguendo un cmdlet di transazione sintetica che lascia un messaggio in segreteria telefonica nella cassetta postale di un utente), utilizzare il cmdlet Test-CsExUMVoiceMail.
 
 </div>
 
 <div>
 
-## <a name="running-the-test"></a>Eseguire il test
+## <a name="running-the-test"></a>Esecuzione del test
 
-L'esempio seguente verifica la connettività di messaggistica unificata di Exchange per il pool atl-cs-001.litwareinc.com. Questo comando funzionerà solo se gli utenti di test sono stati definiti per il pool atl-cs-001.litwareinc.com. Se necessario, il comando determinerà se il primo utente di test può connettersi alla messaggistica unificata. Se gli utenti di test non sono stati configurati per il pool, il comando avrà esito negativo.
+Nell'esempio seguente viene verificata la connettività di messaggistica unificata di Exchange per il pool atl-cs-001.litwareinc.com. Questo comando funzionerà solo se gli utenti di test sono stati definiti per il pool atl-cs-001.litwareinc.com. Se necessario, il comando determinerà se il primo utente di test può connettersi alla messaggistica unificata. Se gli utenti di test non sono stati configurati per il pool, il comando avrà esito negativo.
 
     Test-CsExUMConnectivity -TargetFqdn "atl-cs-001.litwareinc.com" 
 
-I comandi illustrati nell'esempio seguente verificano la connettività di messaggistica unificata di Exchange\\per l'utente litwareinc kenmyer. A questo scopo, il primo comando nell'esempio usa il cmdlet **Get-Credential** per creare un oggetto credenziali dell'interfaccia della riga di comando di Windows PowerShell per l'\\utente litwareinc kenmyer. Tieni presente che devi specificare la password per questo account per creare un oggetto credenziali valido e per verificare che il cmdlet **test-CsExUMConnectivity** possa eseguire il controllo.
+I comandi riportati nell'esempio seguente testano la connettività di messaggistica unificata di Exchange per\\l'utente litwareinc kenmyer. A tale scopo, nel primo comando dell'esempio viene utilizzato il cmdlet **Get-Credential** per creare un oggetto Credentials dell'interfaccia della riga di comando di Windows PowerShell\\per l'utente litwareinc kenmyer. Tenere presente che è necessario fornire la password per l'account per creare un oggetto credentials valido e per assicurarsi che il cmdlet **test-CsExUMConnectivity** possa eseguire il controllo.
 
-Il secondo comando nell'esempio usa l'oggetto credentials fornito ($x) e l'indirizzo SIP dell'utente litwareinc\\kenmyer per determinare se l'utente può connettersi alla messaggistica unificata di Exchange.
+Il secondo comando dell'esempio utilizza l'oggetto credenziali fornito ($x) e l'indirizzo SIP dell'utente litwareinc\\kenmyer per determinare se l'utente può connettersi alla messaggistica unificata di Exchange.
 
     $credential = Get-Credential "litwareinc\kenmyer" 
     Test-CsExUMConnectivity -TargetFqdn "atl-cs-001.litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-Il comando mostrato nell'esempio seguente è una variante del comando appena visualizzato. In questo caso, il parametro OutLoggerVariable è incluso per generare un log dettagliato di ogni passaggio eseguito dal **test-CsExUMConnectivity** cmdletand l'esito positivo o negativo di ognuno di questi passaggi. A questo scopo, il parametro OutLoggerVariable viene aggiunto insieme al valore di parametro ExumText; che causa l'archiviazione di informazioni dettagliate sulla registrazione in una variabile denominata $ExumTest. Nel comando finale dell'esempio viene usato il metodo ToXML () per convertire le informazioni del log in formato XML. I dati XML vengono quindi scritti in un file denominato C:\\logs\\ExumTest. XML usando il cmdlet out-file.
+Il comando riportato nell'esempio seguente è una variante del comando appena mostrato. In questo caso, il parametro OutLoggerVariable è incluso per generare un registro dettagliato di ogni passaggio effettuato dal **test-CsExUMConnectivity** cmdletand l'esito positivo o negativo di ognuno di questi passaggi. A tale scopo, il parametro OutLoggerVariable viene aggiunto insieme al valore del parametro ExumText; che determina l'archiviazione di informazioni dettagliate sulla registrazione in una variabile denominata $ExumTest. Nel comando finale dell'esempio viene utilizzato il metodo ToXML () per convertire le informazioni del registro in formato XML. I dati XML vengono quindi scritti in un file denominato C:\\logs\\ExumTest. XML utilizzando il cmdlet out-file.
 
     $credential = Get-Credential "litwareinc\kenmyer" 
     Test-CsExUMConnectivity -TargetFqdn "atl-cs-001.litwareinc.com" -UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential -OutLoggerVariable ExumTest 
@@ -95,13 +95,13 @@ Il comando mostrato nell'esempio seguente è una variante del comando appena vis
 
 <div>
 
-## <a name="determining-success-or-failure"></a>Determinare l'esito positivo o negativo
+## <a name="determining-success-or-failure"></a>Determinazione dell'esito positivo o negativo
 
-Se l'integrazione di Exchange è configurata correttamente, si riceverà un output simile al seguente, con la proprietà Result contrassegnata come **riuscita**:
+Se l'integrazione di Exchange è configurata correttamente, si riceverà un output simile al seguente, con la proprietà Result contrassegnata come **operazione riuscita**:
 
-Nome di dominio completo di destinazione: atl-cs-001.litwareinc.com
+FQDN di destinazione: atl-cs-001.litwareinc.com
 
-Risultato: successo
+Risultato: esito positivo
 
 Latenza: 00:00:00
 
@@ -109,27 +109,27 @@ Messaggio di errore:
 
 Diagnosi
 
-Se l'utente specificato non può ricevere notifiche, il risultato verrà visualizzato come **errore**e le informazioni aggiuntive verranno registrate nelle proprietà Error e diagnosi:
+Se l'utente specificato non è in grado di ricevere notifiche, il risultato verrà visualizzato come **errore**e verranno registrate informazioni aggiuntive nelle proprietà Error and Diagnostic:
 
-Nome di dominio completo di destinazione: atl-cs-001.litwareinc.com
+FQDN di destinazione: atl-cs-001.litwareinc.com
 
 Risultato: errore
 
 Latenza: 00:00:00
 
-Messaggio di errore: 10060, il tentativo di connessione non è riuscito perché l'entità connessa
+Messaggio di errore: 10060, un tentativo di connessione non è riuscito perché la parte connessa
 
-non ha risposto correttamente dopo un periodo di tempo o
+non ha risposto correttamente dopo un determinato periodo di tempo oppure
 
 connessione stabilita non riuscita perché l'host connesso ha
 
-Impossibile rispondere 10.188.116.96:5061
+non è stato possibile rispondere 10.188.116.96:5061
 
-Eccezione interna: tentativo di connessione non riuscito perché il
+Eccezione interna: un tentativo di connessione non è riuscito perché il
 
 la parte connessa non ha risposto correttamente dopo un periodo di
 
-l'ora o la connessione stabilita non è riuscita perché l'host connesso
+Data/ora o connessione stabilita non riuscita perché host connesso
 
 non è riuscito a rispondere 10.188.116.96:5061
 
@@ -139,15 +139,15 @@ Diagnosi
 
 <div>
 
-## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non essere riuscito
+## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Ecco alcuni motivi comuni per cui **test-CsExUMConnectivity** potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui **test-CsExUMConnectivity** potrebbe non riuscire:
 
-  - È stato specificato un valore di parametro errato. Se usato, i parametri facoltativi devono essere configurati correttamente o il test avrà esito negativo. Rieseguire il comando senza i parametri facoltativi e verificare se l'operazione riesce.
+  - È stato specificato un valore di parametro non corretto. Se si utilizza questo parametro, i parametri facoltativi devono essere configurati correttamente o il test avrà esito negativo. Rieseguire il comando senza i parametri facoltativi e verificare se tale operazione ha esito positivo.
 
-  - Questo comando non riuscirà se il server di Exchange non è configurato correttamente o non è stato ancora distribuito.
+  - Questo comando avrà esito negativo se il server di Exchange non è configurato correttamente o non è stato ancora distribuito.
 
-  - Questo comando non riuscirà se il server di Exchange non è raggiungibile tramite la rete.
+  - Questo comando avrà esito negativo se il server di Exchange non è raggiungibile tramite la rete.
 
 </div>
 

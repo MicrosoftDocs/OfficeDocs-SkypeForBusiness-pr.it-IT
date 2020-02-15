@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Installazione del server Chat persistente'
+title: 'Lync Server 2013: installazione del server Chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184216
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 73bca2a47c65b4654ffdc94eeab2ef3dc3924e92
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 28c1a068df21883a80e447d3407e023f3eb7de9c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726016"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045258"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41726016"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-L'installazione del server di chat persistente è integrata nella configurazione di Lync Server 2013 e usa lo stesso programma di avvio automatico usato da Lync Server 2013 per l'installazione. Per istruzioni sull'installazione, vedere [distribuzione di Lync Server 2013](lync-server-2013-deploying-lync-server.md) nella documentazione relativa alla distribuzione.
+L'installazione del server Chat persistente è integrata nell'installazione di Lync Server 2013 e utilizza lo stesso programma di avvio automatico utilizzato da Lync Server 2013 per l'installazione. Per le istruzioni di installazione, vedere [Deploying Lync Server 2013](lync-server-2013-deploying-lync-server.md) Nella documentazione relativa alla distribuzione.
 
 </div>
 

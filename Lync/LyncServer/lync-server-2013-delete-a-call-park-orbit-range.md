@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: eliminare un intervallo di Orbit di Call Park'
+title: 'Lync Server 2013: eliminare un intervallo di orbit del parcheggio di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184713
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 934559f1b67c1325684ee5b477be18ed112224df
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: caabdfd258bf6f1cc2e30eeed0ac2cdd56f7502e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726216"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037656"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="delete-a-call-park-orbit-range-in-lync-server-2013"></a>Eliminare un intervallo di Orbit di Call Park in Lync Server 2013
+# <a name="delete-a-call-park-orbit-range-in-lync-server-2013"></a>Eliminare un intervallo di codici orbit del parcheggio di chiamata in Lync Server 2013
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41726216"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-20_
+_**Ultimo argomento modificato:** 2013-02-20_
 
-Usare una delle procedure seguenti per eliminare un intervallo di orbit del parcheggio di chiamata.
+Per eliminare un intervallo di codici orbit del parcheggio di chiamata, utilizzare una delle procedure seguenti.
 
 <div>
 
-## <a name="to-use-lync-server-control-panel-to-delete-a-call-park-orbit-range"></a>Per usare il pannello di controllo di Lync Server per eliminare un intervallo di Orbit di Call Park
+## <a name="to-use-lync-server-control-panel-to-delete-a-call-park-orbit-range"></a>Per utilizzare il pannello di controllo di Lync Server per eliminare un intervallo di codici orbit del parcheggio di chiamata
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **caratteristiche vocali** e quindi su **Call Park**.
+3.  Sulla barra di spostamento sinistra fare clic su **Funzionalità vocali** e quindi su **Parcheggio di chiamata**.
 
-4.  Nel campo di ricerca della pagina **Call Park** digitare tutto o parte del nome dell'intervallo di Orbit che si desidera eliminare.
+4.  Nella pagina **Parcheggio di chiamata**, nel campo di ricerca, digitare il nome, o parte di esso, dell'intervallo di codici orbit che si desidera eliminare.
 
-5.  Nell'elenco di orbite risultante fare clic sull'orbita, fare clic su **modifica**e quindi su **Elimina**.
+5.  Nell'elenco di codici orbit fare clic sui codici orbit, fare clic su **Modifica** e quindi su **Elimina**.
 
 6.  Fare clic su **OK**.
 
@@ -59,13 +59,13 @@ Usare una delle procedure seguenti per eliminare un intervallo di orbit del parc
 
 <div>
 
-## <a name="to-use-windows-powershell-to-delete-a-call-park-orbit-range"></a>Per usare Windows PowerShell per eliminare un intervallo di Orbit di Call Park
+## <a name="to-use-windows-powershell-to-delete-a-call-park-orbit-range"></a>Per utilizzare Windows PowerShell per eliminare un intervallo di codici orbit del parcheggio di chiamata
 
-1.  Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in autorizzazioni di [configurazione delegate in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in [delegate Setup Permissions in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Nella riga di comando digitare:
+3.  Nella riga di comando digitare il comando seguente:
     
         Remove-CsCallParkOrbit -Identity "<orbit range name>" 
     
@@ -89,7 +89,7 @@ Usare una delle procedure seguenti per eliminare un intervallo di orbit del parc
 ## <a name="see-also"></a>Vedere anche
 
 
-[Creare o modificare un intervallo orbit di Call Park in Lync Server 2013](lync-server-2013-create-or-modify-a-call-park-orbit-range.md)  
+[Creare o modificare un intervallo di codici orbit del parcheggio di chiamata in Lync Server 2013](lync-server-2013-create-or-modify-a-call-park-orbit-range.md)  
 
 
 [Remove-CsCallParkOrbit](https://docs.microsoft.com/powershell/module/skype/Remove-CsCallParkOrbit)  

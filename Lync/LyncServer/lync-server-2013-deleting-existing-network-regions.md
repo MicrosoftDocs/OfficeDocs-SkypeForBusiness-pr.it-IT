@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: eliminazione delle aree di rete esistenti'
+title: 'Lync Server 2013: eliminazione di aree di rete esistenti'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733815
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 57af552f82dfb3ca30943fd68c348cd5315b969b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 664eea747c9cea637b86377760f30c59bb21e7e7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763044"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042918"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deleting-existing-network-regions-in-lync-server-2013"></a>Eliminazione delle aree di rete esistenti in Lync Server 2013
+# <a name="deleting-existing-network-regions-in-lync-server-2013"></a>Eliminazione di aree di rete esistenti in Lync Server 2013
 
 </div>
 
@@ -35,32 +35,32 @@ ms.locfileid: "41763044"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-Un'area geografica di rete interconnette varie parti di una rete in più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito centro dati in cui è in uso il servizio criteri di larghezza di banda di controllo delle chiamate (CAC). È possibile usare il pannello di controllo di Lync Server per configurare le aree di rete. Le aree di rete includono impostazioni che determinano se i percorsi alternativi tramite Internet sono consentiti per le connessioni audio e video. Dal pannello di controllo di Lync Server è possibile creare, modificare o eliminare un'area geografica di rete. Usare questo argomento per eliminare le aree di rete esistenti. Per informazioni dettagliate sulla creazione o la modifica di aree di rete esistenti, vedere [creazione o modifica di aree di rete in Lync Server 2013](lync-server-2013-creating-or-modifying-network-regions.md).
+Un'area di rete interconnette diverse parti di una rete dislocate su più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito del data center in cui è in esecuzione il servizio dei criteri di larghezza di banda del controllo di ammissione di chiamata. È possibile utilizzare il pannello di controllo di Lync Server per configurare le aree di rete. Queste includono impostazioni che determinano se consentire percorsi alternativi Internet per le connessioni audio e video. Dal pannello di controllo di Lync Server, è possibile creare, modificare o eliminare un'area di rete. Utilizzare questo argomento per eliminare le aree di rete esistenti. Per informazioni dettagliate sulla creazione o la modifica delle aree di rete esistenti, vedere [creazione o modifica di aree di rete in Lync Server 2013](lync-server-2013-creating-or-modifying-network-regions.md).
 
 <div>
 
 ## <a name="to-delete-a-network-region"></a>Per eliminare un'area di rete
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **area geografica**.
+3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Area**.
 
-4.  Nella pagina **area** fare clic sull'area che si desidera eliminare.
+4.  Nella pagina **Area** fare clic sull'area che si desidera eliminare.
     
     <div>
     
 
     > [!NOTE]  
-    > Puoi eliminare più di un'area alla volta. A tale scopo, premere CTRL e selezionare più aree mentre si tiene premuto il tasto CTRL. In alternativa, per selezionare tutte le aree geografiche, fare clic su <STRONG>Seleziona tutto</STRONG> dal menu <STRONG>modifica</STRONG> .
+    > È possibile eliminare più aree contemporaneamente. A tale scopo, premere CTRL e selezionare più aree tenendo premuto CTRL. Per selezionare tutte le aree, scegliere <STRONG>Seleziona tutto</STRONG> dal menu <STRONG>Modifica</STRONG>.
 
     
     </div>
 
-5.  Scegliere **Elimina**dal menu **modifica** .
+5.  Scegliere **Elimina** dal menu **Modifica**.
 
 6.  Fare clic su **OK**.
     
@@ -68,7 +68,7 @@ Un'area geografica di rete interconnette varie parti di una rete in più aree ge
     
 
     > [!WARNING]  
-    > Un'area di rete non può essere rimossa se associata a un sito di rete. Se si tenta di rimuovere un'area associata a un sito, viene visualizzato un messaggio di errore. Per verificare se un'area è associata a qualsiasi sito, selezionare l'area geografica e quindi fare clic su <STRONG>Mostra dettagli</STRONG> dal menu <STRONG>modifica</STRONG> .
+    > Non è possibile rimuovere un'area di rete se è associata a un sito di rete. Se si tenta di rimuovere un'area associata a un sito, verrà visualizzato un messaggio di errore. Per scoprire se un'area è associata a siti, selezionare l'area e quindi scegliere <STRONG>Mostra dettagli</STRONG> dal menu <STRONG>Modifica</STRONG>.
 
     
     </div>

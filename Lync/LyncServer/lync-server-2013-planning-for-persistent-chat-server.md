@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pianificazione del server Chat persistente'
+title: 'Lync Server 2013: pianificazione del server Chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184190
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 363008c910c53f5b1b951bf57ba8663b4d4d970d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: cf28684443b93dbd6d3d1d769ca545177f6cfa0f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41750506"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049978"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,25 +35,25 @@ ms.locfileid: "41750506"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-11_
+_**Ultimo argomento modificato:** 2012-10-11_
 
-È possibile usare Lync Server 2013, il server di chat persistente per consentire a più utenti di partecipare a conversazioni in cui pubblicare e accedere a contenuto su argomenti specifici, inclusi testo, collegamenti e file. Anche se gli utenti possono comunicare in tempo reale durante una sessione, il contenuto di ogni sessione è persistente, il che significa che continuerà a essere disponibile dopo la fine di una sessione.
+È possibile utilizzare Lync Server 2013, il server Chat persistente per consentire a più utenti di partecipare a conversazioni in cui post e accesso al contenuto su argomenti specifici, inclusi testo, collegamenti e file. Nonostante gli utenti possano comunicare in tempo reale durante una sessione, il contenuto di ogni sessione può essere salvato in modo permanente e quindi restare disponibile anche al termine di una sessione.
 
-In questa sezione vengono illustrate le considerazioni sulla pianificazione in un Lync Server 2013, la distribuzione del server di chat persistente, inclusi i requisiti per la definizione, l'identificazione di componenti e le topologie supportate e le raccomandazioni
+In questa sezione vengono descritte le considerazioni sulla pianificazione in una distribuzione di server Chat persistente di Lync Server 2013, inclusi i requisiti per la definizione, l'identificazione dei componenti e le topologie supportate e suggerimenti per la distribuzione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Panoramica del server Chat persistente in Lync Server 2013](lync-server-2013-overview-of-persistent-chat-server.md)
 
-  - [Funzionamento del server di chat persistente in Lync Server 2013](lync-server-2013-how-persistent-chat-server-works.md)
+  - [Funzionamento del server Chat persistente in Lync Server 2013](lync-server-2013-how-persistent-chat-server-works.md)
 
   - [Definizione dei requisiti dell'organizzazione per il server Chat persistente in Lync Server 2013](lync-server-2013-defining-your-requirements-for-persistent-chat-server.md)
 
-  - [Componenti e topologie per il server di chat persistente in Lync Server 2013](lync-server-2013-components-and-topologies-for-persistent-chat-server.md)
+  - [Componenti e topologie per il server Chat persistente in Lync Server 2013](lync-server-2013-components-and-topologies-for-persistent-chat-server.md)
 
-  - [Requisiti tecnici per il server di chat persistente in Lync Server 2013](lync-server-2013-technical-requirements-for-persistent-chat-server.md)
+  - [Requisiti tecnici per il server Chat persistente in Lync Server 2013](lync-server-2013-technical-requirements-for-persistent-chat-server.md)
 
   - [Configurazione dei sistemi e dell'infrastruttura per il server Chat persistente in Lync Server 2013](lync-server-2013-setting-up-systems-and-infrastructure-for-persistent-chat-server.md)
 

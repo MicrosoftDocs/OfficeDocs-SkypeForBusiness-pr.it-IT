@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurazione di Response Group'
+title: 'Lync Server 2013: configurazione di Response Group'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185359
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b94bc731ac00a4ff774930f506282b6aef16cbaa
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: eda955072f42989e6323ea6422d8b25736cf8c32
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739266"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041065"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41739266"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-30_
+_**Ultimo argomento modificato:** 2012-10-30_
 
-Response Group è una funzionalità VoIP aziendale che instrada e accoda le chiamate in arrivo a gruppi di persone, detti *agenti*, ad esempio un help desk o un servizio di assistenza clienti.
+Response Group è una funzionalità di VoIP aziendale che consente di instradare e accodare le chiamate in arrivo a gruppi di utenti, denominati *agenti*, ad esempio un helpdesk o un desk del servizio clienti.
 
-I componenti necessari per il gruppo di risposte sono installati e abilitati automaticamente nel server front-end o Standard Edition quando si distribuisce VoIP aziendale. Per rendere disponibile un gruppo di risposte agli utenti, è necessario configurare i gruppi di agenti, le code e quindi i flussi di lavoro. Inoltre, un amministratore del gruppo di risposte può delegare la configurazione di un flusso di lavoro esistente a un responsabile del gruppo di risposte, che può quindi modificare e riconfigurare il flusso di lavoro e i gruppi e le code dell'agente associato.
+I componenti necessari per Response Group vengono installati e abilitati automaticamente nel server Standard Edition o Front End Server quando si distribuisce VoIP aziendale. Per rendere Response Group disponibile agli utenti, è necessario configurare i gruppi di agenti, quindi le code e quindi i flussi di lavoro. Inoltre, un amministratore di Response Group può delegare la configurazione di un flusso di lavoro esistente a un responsabile del gruppo di risposta, che può quindi modificare e riconfigurare il flusso di lavoro e i gruppi di agenti e le code associati.
 
-Questa sezione illustra la configurazione del gruppo di risposte di Lync Server 2013. Si presuppone che siano già state lette le sezioni di pianificazione correlate al gruppo di risposte e che sia stato distribuito un server Enterprise Edition o un server Standard Edition con VoIP aziendale.
+In questa sezione viene illustrata la configurazione del Response Group di Lync Server 2013. Si presuppone che siano già state lette le sezioni di pianificazione relative al Response Group e che sia stato distribuito un server Enterprise Edition o un server Standard Edition con VoIP aziendale.
 
 <div>
 
 
 > [!TIP]  
-> Per informazioni dettagliate sulla creazione di un gruppo di risposte tramite Lync Server Management Shell, incluso uno script di esempio, vedere "creazione del primo gruppo di risposte tramite Lync Server <A href="http://go.microsoft.com/fwlink/p/?linkid=204108">http://go.microsoft.com/fwlink/p/?linkId=204108</A>Management Shell".
+> Per informazioni dettagliate sulla creazione di un Response Group mediante Lync Server Management Shell, incluso uno script di esempio, vedere la sezione relativa alla creazione del primo Response Group utilizzando Lync <A href="http://go.microsoft.com/fwlink/p/?linkid=204108">http://go.microsoft.com/fwlink/p/?linkId=204108</A>Server Management Shell all'indirizzo.
 
 
 
@@ -55,25 +55,25 @@ Questa sezione illustra la configurazione del gruppo di risposte di Lync Server 
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Autorizzazioni e prerequisiti per la configurazione di Response Group in Lync Server 2013](lync-server-2013-response-group-configuration-permissions-and-prerequisites.md)
 
-  - [Processo di distribuzione per il gruppo di risposte in Lync Server 2013](lync-server-2013-deployment-process-for-response-group.md)
+  - [Processo di distribuzione per Response Group in Lync Server 2013](lync-server-2013-deployment-process-for-response-group.md)
 
   - [Panoramica degli scenari di creazione del flusso di lavoro in Lync Server 2013](lync-server-2013-overview-of-workflow-creation-scenarios.md)
 
-  - [Creare gruppi di agenti per Response Group in Lync Server 2013](lync-server-2013-create-response-group-agent-groups.md)
+  - [Creare gruppi di agenti di Response Group Lync Server 2013](lync-server-2013-create-response-group-agent-groups.md)
 
   - [Creare code di Response Group in Lync Server 2013](lync-server-2013-create-response-group-queues.md)
 
-  - [Opzionale Definire le ore lavorative per il gruppo di risposte in Lync Server 2013](lync-server-2013-optional-define-response-group-business-hours.md)
+  - [Optional Definire l'orario di ufficio di Response Group in Lync Server 2013](lync-server-2013-optional-define-response-group-business-hours.md)
 
-  - [Opzionale Definire set di festività di Response Group in Lync Server 2013](lync-server-2013-optional-define-response-group-holiday-sets.md)
+  - [Optional Definire i set di festività di Response Group in Lync Server 2013](lync-server-2013-optional-define-response-group-holiday-sets.md)
 
-  - [Creare flussi di lavoro per Response Group in Lync Server 2013](lync-server-2013-create-response-group-workflows.md)
+  - [Creare flussi di lavoro di Response Group in Lync Server 2013](lync-server-2013-create-response-group-workflows.md)
 
-  - [Opzionale Verificare la distribuzione di Response Group in Lync Server 2013](lync-server-2013-optional-verify-response-group-deployment.md)
+  - [Optional Verificare la distribuzione di Response Group in Lync Server 2013](lync-server-2013-optional-verify-response-group-deployment.md)
 
 </div>
 

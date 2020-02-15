@@ -12,16 +12,16 @@ ms:contentKeyID: 48183543
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3bac2433702a90624e3ee4fb865bfb70b6d07d16
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 97b161ab9dce464bdab96432ed909ed48b7df19d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757170"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048300"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41757170"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-06_
+_**Ultimo argomento modificato:** 2012-10-06_
 
-Per creare una nuova categoria di server di chat persistente
+Per creare una nuova categoria del server Chat persistente
 
     New-CsPersistentChatCategory -Name Foo -PersistentChatPoolFqdn client.contoso1b118d91-b4c4-4b2f-b842-b451417ec2c6.com [other parameters]
 
@@ -45,18 +45,18 @@ Per creare una nuova categoria di server di chat persistente
 
 
 > [!IMPORTANT]  
-> PersistentChatPoolFqdn è necessario solo se è presente più di un pool di server di chat persistente.
+> PersistentChatPoolFqdn è necessario solo se è presente più di un pool di server Chat persistente.
 
 
 
 </div>
 
-Per apportare modifiche alla categoria del server di chat persistente esistente
+Per apportare modifiche alla categoria del server Chat persistente esistente
 
     Set-CsPersistentChatCategory -Identity testCat -AllowedMembers @{Add="sip:user1@contoso.com", "CN=container,DC=contoso,DC=com"}  -DeniedMembers @{Add="sip:user2@contoso.com"}
     Set-CsPersistentChatCategory -Identity testCat -Creators @{Add="sip:user1@contoso.com"}
 
-Windows PowerShell: AllowedMembers, DeniedMembers e Creators possono essere impostati contemporaneamente. I creatori devono essere il sottoinsieme di AllowedMembers meno DeniedMembers. Puoi anche impostare le proprietà di una categoria contemporaneamente a membri e creatori.
+Windows PowerShell: AllowedMembers, DeniedMembers e Creator possono essere impostati contemporaneamente. Creators sarà il sottoinsieme di AllowedMembers meno DeniedMembers. È inoltre possibile impostare le proprietà di una categoria contemporaneamente ai membri e agli autori.
 
 <div>
 
@@ -70,7 +70,7 @@ Per ottenere una categoria
 
     Get-CsPersistentChatCategory -Identity <String>
 
-o
+oppure
 
     Get-CsPersistentChatCategory -PersistentChatPoolFqdn <String>
 
@@ -78,7 +78,7 @@ Per impostare una categoria
 
     Set-CsPersistentChatCategory -Instance <CategoryObject> [-WhatIf] [-Confirm] [<CommonParameters>]
 
-o
+oppure
 
     Set-CsPersistentChatCategory [-Identity] <string> [-Name <string>] [-Description <string>] [-Invitations <bool>] [-FileUpload <bool>] [-ChatHistory <bool>] [-AllowedMembers <PSListModifier[string]>] [-DeniedMembers <PSListModifier[string]>] [-Creators <PSListModifier[string]>] [-WhatIf] [-Confirm]  [<CommonParameters>]
 
@@ -86,7 +86,7 @@ Per rimuovere una categoria
 
     Remove-CsPersistentChatCategory -Instance <CategoryObject> [-Force <Switch Parameter>] [-Confirm <Switch Parameter>]
 
-o
+oppure
 
     Remove-CsPersistentChatCategory -Identity <String> [-Force <Switch Parameter>] [-Confirm <Switch Parameter>]
 

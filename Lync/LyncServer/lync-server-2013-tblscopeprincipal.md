@@ -12,16 +12,16 @@ ms:contentKeyID: 48184009
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 72c6f15b2f0a219871436fe4451984abfddc947a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ab3faccea0ba914ca17c9aefcd0ea112e5b58a96
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764076"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037476"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41764076"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
 tblScopePrincipal contiene gli ambiti assegnati ai nodi.
 
@@ -58,28 +58,28 @@ tblScopePrincipal contiene gli ambiti assegnati ai nodi.
 <tr class="odd">
 <td><p>scopeNodeID</p></td>
 <td><p>int, not null</p></td>
-<td><p>ID nodo a cui si applica l'ambito.</p></td>
+<td><p>ID di nodo a cui si applica l'ambito.</p></td>
 </tr>
 <tr class="even">
 <td><p>scopePrinID</p></td>
-<td><p>int, not null</p></td>
+<td><p>int, non null</p></td>
 <td><p>ID entità.</p></td>
 </tr>
 <tr class="odd">
 <td><p>scopeIsDenied</p></td>
 <td><p>bit, not null</p></td>
-<td><p>True se il tipo di ambito è Deny; False se Consenti.</p></td>
+<td><p>True se il tipo di ambito è Deny; False se è Allow.</p></td>
 </tr>
 <tr class="even">
 <td><p>scopeUpdatedBy</p></td>
 <td><p>int, not null</p></td>
-<td><p>ID dell'entità che ha aggiornato l'ultima voce.</p></td>
+<td><p>ID dell'ultima entità che ha aggiornato questa voce.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="keys"></a>Tasti
+### <a name="keys"></a>Chiavi
 
 <table>
 <colgroup>
@@ -99,11 +99,11 @@ tblScopePrincipal contiene gli ambiti assegnati ai nodi.
 </tr>
 <tr class="even">
 <td><p>scopeNodeID</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblNode. nodeID.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblNode.nodeID.</p></td>
 </tr>
 <tr class="odd">
 <td><p>scopePrinID</p></td>
-<td><p>Chiave esterna con ricerca nella tabella tblPrincipal. prinID.</p></td>
+<td><p>Chiave esterna con ricerca nella tabella tblPrincipal.prinID.</p></td>
 </tr>
 </tbody>
 </table>

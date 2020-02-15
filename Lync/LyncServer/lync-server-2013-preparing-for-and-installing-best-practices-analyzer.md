@@ -12,16 +12,16 @@ ms:contentKeyID: 48184149
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8f5992b45d8930bac880f66422d10ddbd4b94f18
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6c97657b42ec4ea26f5300b1d28215d0360b63cf
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747416"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042423"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41747416"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-11-07_
+_**Ultimo argomento modificato:** 2013-11-07_
 
-Per eseguire le attività descritte in questo argomento, è necessario avere effettuato l'accesso come membro del gruppo Administrators.
+Per eseguire le attività descritte in questo argomento è necessario accedere con un account membro del gruppo Administrators.
 
 <div>
 
 ## <a name="system-requirements-for-best-practices-analyzer-installation"></a>Requisiti di sistema per l'installazione di Best Practices Analyzer
 
-Per eseguire Lync Server 2013, Best Practices Analyzer per analizzare l'ambiente, è necessario che il computer esegua una versione a 64 bit di uno dei sistemi operativi seguenti:
+Per eseguire Lync Server 2013, Best Practices Analyzer per analizzare l'ambiente in uso, è necessario che il computer esegua un'edizione a 64 bit di uno dei sistemi operativi seguenti:
 
-  - Windows Server 2008 R2 con il sistema operativo standard Service Pack 1 (SP1)
+  - Sistema operativo Windows Server 2008 R2 con Service Pack 1 (SP1) standard
 
   - Sistema operativo Windows Server 2008 R2 con SP1 Enterprise
 
@@ -53,7 +53,7 @@ Per eseguire Lync Server 2013, Best Practices Analyzer per analizzare l'ambiente
 
   - Sistema operativo Windows Server 2012 Datacenter
 
-  - Sistema operativo standard di Windows Server 2012
+  - Sistema operativo Windows Server 2012 standard
 
   - Sistema operativo Windows Server 2012 Enterprise
 
@@ -67,25 +67,25 @@ Per eseguire Lync Server 2013, Best Practices Analyzer per analizzare l'ambiente
 
   - Sistema operativo Windows 7
 
-Il computer deve eseguire anche le operazioni seguenti:
+Nel computer deve inoltre essere in esecuzione il software seguente:
 
-  - Microsoft .NET Framework 4,5. Per Lync Server 2013 è necessario installare manualmente l'edizione a 64 bit di Microsoft .NET Framework 4,5 nel server prima di installare Lync Server 2013.
+  - Microsoft .NET Framework 4.5. Per Lync Server 2013, è necessario installare manualmente l'edizione a 64 bit di Microsoft .NET Framework 4,5 sul server prima di installare Lync Server 2013.
 
-  - Lync Server 2013, componenti principali.
+  - Lync Server 2013, componenti di base.
 
-  - Pacchetto compatibilità con le versioni precedenti di WMI. Per informazioni dettagliate, vedere [installare il pacchetto compatibilità con le versioni precedenti di WMI](install-wmi-backward-compatibility-package.md) nella documentazione relativa alla migrazione.
+  - Pacchetto di compatibilità con le versioni precedenti di Strumentazione gestione Windows (WMI). Per ulteriori informazioni, vedere Installare il pacchetto di compatibilità con le [versioni precedenti di WMI](install-wmi-backward-compatibility-package.md) nella documentazione relativa alla migrazione.
 
-  - Windows PowerShell 3,0. Per informazioni dettagliate, vedere [installazione di Windows PowerShell 3,0 per Lync Server 2013](lync-server-2013-installing-windows-powershell-3-0.md) nella documentazione relativa alla distribuzione.
+  - Windows PowerShell 3.0. Per ulteriori informazioni, vedere [Installing Windows PowerShell 3,0 for Lync Server 2013](lync-server-2013-installing-windows-powershell-3-0.md) nella documentazione relativa alla distribuzione.
 
-È possibile installare Best Practices Analyzer nei computer con un sistema operativo supportato che non esegue Lync Server 2013, componenti principali o un pacchetto di compatibilità con le versioni precedenti di WMI, ma è possibile usare le procedure consigliate in questi computer solo per visualizzare i report e non per eseguire le analisi.
+È possibile installare Best Practices Analyzer nei computer con un sistema operativo supportato che non esegue Lync Server 2013, componenti di base o un pacchetto di compatibilità con le versioni precedenti di WMI, ma è possibile utilizzare Best Practices Analyzer nei computer solo per visualizzare i report, non per eseguire le analisi.
 
 </div>
 
 <div>
 
-## <a name="choosing-a-computer-for-installation"></a>Scelta di un computer per l'installazione
+## <a name="choosing-a-computer-for-installation"></a>Scelta del computer per l'installazione
 
-È consigliabile installare Lync Server 2013, Best Practices Analyzer in un computer dedicato a Lync Server 2013 Management. È possibile installare lo strumento in un server che utilizza Lync Server 2013 o un computer amministrativo che gestisce gli strumenti di amministrazione di Lync Server 2013. Se si installa lo strumento in un server che esegue Lync Server, è consigliabile usare lo strumento per analizzare solo il server.
+È consigliabile installare Lync Server 2013, Best Practices Analyzer su un computer dedicato alla gestione di Lync Server 2013. È possibile installare lo strumento su un server che esegue Lync Server 2013 o un computer amministrativo che esegue gli strumenti di amministrazione di Lync Server 2013. Se si installa lo strumento su un server che esegue Lync Server, è consigliabile utilizzare lo strumento per analizzare solo quel server.
 
 </div>
 
@@ -93,9 +93,9 @@ Il computer deve eseguire anche le operazioni seguenti:
 
 ## <a name="installing-best-practices-analyzer"></a>Installazione di Best Practices Analyzer
 
-È possibile scaricare l'analizzatore delle procedure consigliate per Lync [http://go.microsoft.com/fwlink/p/?linkId=266539](http://go.microsoft.com/fwlink/p/?linkid=266539)Server 2013.
+È possibile scaricare l'Analizzatore procedure consigliate per Lync Server [http://go.microsoft.com/fwlink/p/?linkId=266539](http://go.microsoft.com/fwlink/p/?linkid=266539)2013 all'indirizzo.
 
-Per installare Best Practices Analyzer, avviare il file di Microsoft Installer RtcBPA. msi nel computer in cui si vuole installare lo strumento e quindi seguire le istruzioni visualizzate. Il percorso predefinito per l'installazione dei file di \<programma è\>\\System Drive\\Program Files Lync\\Server 2013 BPA.
+Per installare Best Practices Analyzer, avviare il file di Microsoft Installer RtcBPA.msi nel computer in cui si vuole installare lo strumento e quindi seguire le istruzioni sullo schermo. La posizione predefinita per l'installazione dei file di \<programma è\>\\file\\di programma dell'unità\\di sistema Lync Server 2013 BPA.
 
 </div>
 

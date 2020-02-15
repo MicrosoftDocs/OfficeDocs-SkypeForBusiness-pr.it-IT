@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Nuove funzionalità di integrazione di Exchange Server'
+title: 'Lync Server 2013: nuove funzionalità di integrazione di Exchange Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185431
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a4e515b668bd91cc04752dffb034569cd8aa7abf
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: aa3a7ffd1d9b69170c942b3402f156ff1cd5a86d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762984"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042353"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,22 +35,22 @@ ms.locfileid: "41762984"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-24_
+_**Ultimo argomento modificato:** 2012-09-24_
 
-Lync Server 2013 supporta le nuove funzionalità quando è distribuito insieme a Microsoft Exchange Server 2013, come descritto nell'elenco seguente. Per ognuna di queste funzionalità, è necessario distribuire sia Lync Server 2013 che Exchange 2013.
+Lync Server 2013 supporta nuove funzionalità quando viene distribuita insieme a Microsoft Exchange Server 2013, come descritto nell'elenco seguente. Affinché ognuna di queste caratteristiche funzioni, è necessario distribuire sia Lync Server 2013 che Exchange 2013.
 
-  - È possibile usare un **archivio contatti unificato**, in cui l'elenco contatti di Lync è archiviato in Exchange 2013 ed è possibile gestire l'archivio contatti in Lync 2013, Outlook 2013 e Outlook Web App.
+  - È possibile utilizzare un **archivio contatti unificato**in cui l'elenco dei contatti di Lync è archiviato in Exchange 2013 ed è possibile gestire l'archivio contatti in Lync 2013, Outlook 2013 e Outlook Web App.
 
-  - È possibile usare **foto ad alta risoluzione** per i contatti. Le foto con un massimo di 648x648 pixel sono archiviate in Exchange 2013 e messe a disposizione dei client, inclusi Lync 2013, Outlook 2013, Microsoft Lync Web App e Outlook Web App.
+  - È possibile utilizzare le **foto ad alta risoluzione** per i contatti. Le foto con un massimo di 648x648 pixel sono archiviate in Exchange 2013 e rese disponibili per i client, tra cui Lync 2013, Outlook 2013, Microsoft Lync Web App e Outlook Web App.
 
-  - È possibile abilitare l' **integrazione dell'archiviazione Lync**, che integra l'archiviazione di lync Server 2013 nella funzionalità di blocco sul posto di Exchange 2013, per gli utenti ospitati in Exchange 2013, che consente un'esperienza comune per gli amministratori intorno alla conformità e eDiscovery.
+  - È possibile abilitare l' **integrazione dell'archiviazione Lync**, che integra l'archiviazione di lync Server 2013 nella funzionalità di conservazione sul posto di Exchange 2013, per gli utenti ospitati in Exchange 2013, che consente agli amministratori di eseguire un'esperienza comune per la conformità e eDiscovery.
 
 <div>
 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Pianificazione e distribuzione di un archivio contatti unificato in Lync Server 2013](lync-server-2013-planning-and-deploying-unified-contact-store.md)  
+[Pianificazione e distribuzione dell'archivio contatti unificato in Lync Server 2013](lync-server-2013-planning-and-deploying-unified-contact-store.md)  
 [Funzionamento dell'archiviazione in Lync Server 2013](lync-server-2013-how-archiving-works.md)  
   
 

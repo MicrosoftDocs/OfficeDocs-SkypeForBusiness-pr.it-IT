@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella MediaList'
+title: 'Lync Server 2013: tabella multimediale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183579
 ms.date: 07/12/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b92c8a0a6957eed00cf4e25f60ce2e0ff24d1fd2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6fe16e903a1dfbc958336dca68903ca80770995d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762994"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42039490"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="medialist-table-in-lync-server-2013"></a>Tabella MediaList in Lync Server 2013
+# <a name="medialist-table-in-lync-server-2013"></a>Tabella media in Lync Server 2013
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41762994"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-07-12_
+_**Ultimo argomento modificato:** 2016-07-12_
 
-La tabella degli elementi multimediali è una tabella statica in cui è archiviato l'elenco di vari tipi di elementi multimediali.
+La tabella MediaList è una tabella statica in cui è archiviato l'elenco di diversi tipi di elementi multimediali.
 
 
 <table>
@@ -63,25 +63,25 @@ La tabella degli elementi multimediali è una tabella statica in cui è archivia
 <td><p>Valori: 1-7</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Contenuti multimediali</strong></p></td>
+<td><p><strong>Media</strong></p></td>
 <td><p>nvarchar (256)</p></td>
 <td></td>
-<td><p>Mapping statico di valori MediaID e media:</p>
+<td><p>Mapping statico dei valori di MediaID e media:</p>
 <ul>
 <li><p>1-MESSAGGISTICA ISTANTANEA</p></li>
-<li><p>2-trasferimento di file</p></li>
-<li><p>3-assistenza remota</p></li>
-<li><p>4-condivisione delle applicazioni</p></li>
-<li><p>5-audio</p></li>
-<li><p>6-video</p></li>
-<li><p>7-invito all'app</p></li>
+<li><p>2 -- Trasferimento di file</p></li>
+<li><p>3 -- Assistenza remota</p></li>
+<li><p>4 -- Condivisione applicazioni</p></li>
+<li><p>5 – audio</p></li>
+<li><p>6 – video</p></li>
+<li><p>7 -- Invito applicazione</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
 
-Se si sta provando a determinare il tipo di modalità per i valori in LcsCDR. SessionDetailsView. MediaTypes, è necessario usare il frammento di join seguente:
+Se si sta tentando di determinare il tipo di modalità per i valori in LcsCDR. SessionDetailsView. MediaTypes, è necessario utilizzare il seguente frammento di join:
 
     LEFT JOIN on Media.MediaId = MediaList.MediaId
 

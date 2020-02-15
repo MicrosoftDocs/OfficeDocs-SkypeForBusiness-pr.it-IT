@@ -1,5 +1,5 @@
 ---
-title: Requisiti di bilanciamento del carico di Lync Server 2013
+title: Requisiti per il bilanciamento del carico di Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184697
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8081ba60d826f0f765533abdb6c0f548045a7fa8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bb74e5a6272f752da7cf31be3379d217447f3397
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765384"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046799"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="load-balancing-requirements-for-lync-server-2013"></a>Requisiti di bilanciamento del carico per Lync Server 2013
+# <a name="load-balancing-requirements-for-lync-server-2013"></a>Requisiti per il bilanciamento del carico per Lync Server 2013
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41765384"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-05_
+_**Ultimo argomento modificato:** 2012-10-05_
 
-Se sono presenti pool di front-end, pool di Director o pool di Edge Server, è necessario distribuire il bilanciamento del carico per questi pool. Il bilanciamento del carico distribuisce il traffico tra i server in un pool.
+Se si dispone di pool Front End, pool di Director o pool di server perimetrali, è necessario distribuire il bilanciamento del carico per questi pool. Il bilanciamento del carico consente di distribuire il traffico tra i server in un pool.
 
-Lync Server 2013 supporta due tipi di soluzioni di bilanciamento del carico per il traffico da client a server: bilanciamento del carico DNS (Domain Name System) e bilanciamento del carico hardware. Il bilanciamento del carico DNS offre diversi vantaggi, tra cui l'amministrazione più semplice, la risoluzione dei problemi più efficiente e la possibilità di isolare gran parte del traffico di Lync Server da qualsiasi potenziale problema di bilanciamento del carico hardware.
+Lync Server 2013 supporta due tipi di soluzioni di bilanciamento del carico per il traffico da client a server: bilanciamento del carico DNS (Domain Name System) e bilanciamento del carico hardware. Il bilanciamento del carico DNS offre diversi vantaggi, tra cui l'amministrazione più semplice, la risoluzione dei problemi più efficiente e la possibilità di isolare gran parte del traffico di Lync Server da eventuali problemi di bilanciamento del carico hardware.
 
-Decidere quale soluzione di bilanciamento del carico è appropriata per ogni pool della distribuzione, tenendo presenti le restrizioni seguenti:
+Per stabilire quale soluzione di bilanciamento del carico è appropriata per ogni pool nella distribuzione, tenere presenti le restrizioni seguenti:
 
-  - L'interfaccia perimetrale interna e l'interfaccia perimetrale esterna devono usare lo stesso tipo di bilanciamento del carico. Non è possibile usare il bilanciamento del carico DNS su un'interfaccia e un bilanciamento del carico hardware dall'altro.
+  - Per l'interfaccia perimetrale interna e per quella esterna è necessario utilizzare lo stesso tipo di bilanciamento del carico. Non è possibile utilizzare il bilanciamento del carico DNS in un'interfaccia e il bilanciamento del carico hardware nell'altra.
 
-  - Alcuni tipi di traffico richiedono un bilanciamento del carico hardware. Ad esempio, il traffico HTTP richiede un bilanciamento del carico hardware invece del bilanciamento del carico DNS. Il bilanciamento del carico DNS non funziona con il traffico Web da client a server.
+  - Alcuni tipi di traffico richiedono un servizio di bilanciamento del carico hardware. Il traffico HTTP richiede, ad esempio, un servizio di bilanciamento del carico hardware anziché il bilanciamento del carico DNS. Il bilanciamento del carico DNS non funziona con il traffico Web da client a server.
 
-Per altre informazioni sulla scelta di una soluzione di bilanciamento del carico hardware, vedere [requisiti di bilanciamento del carico hardware per Lync Server 2013](lync-server-2013-hardware-load-balancer-requirements.md).
+Per ulteriori informazioni sulla scelta di una soluzione di bilanciamento del carico hardware, vedere [requisiti hardware del dispositivo di bilanciamento del carico per Lync Server 2013](lync-server-2013-hardware-load-balancer-requirements.md).
 
-Se si sceglie di usare il bilanciamento del carico DNS per un pool, ma occorre comunque implementare il bilanciamento del carico hardware per il traffico, ad esempio il traffico HTTP, l'amministrazione dei dispositivi di bilanciamento del carico hardware è notevolmente semplificata. Ad esempio, la configurazione del servizio di bilanciamento del carico hardware sarà più semplice perché gestirà solo il traffico HTTP e HTTPS, mentre tutti gli altri protocolli verranno gestiti dal bilanciamento del carico DNS. Per informazioni dettagliate, vedere [bilanciamento del carico DNS in Lync Server 2013](lync-server-2013-dns-load-balancing.md).
+Se si sceglie di utilizzare il bilanciamento del carico DNS per un pool, ma è comunque necessario implementare servizi di bilanciamento del carico hardware per il traffico, ad esempio il traffico HTTP, l'amministrazione dei servizi di bilanciamento del carico hardware risulta notevolmente semplificata. Ad esempio, la configurazione del servizio di bilanciamento del carico hardware sarà più semplice poiché gestirà solo il traffico HTTP e HTTPS, mentre tutti gli altri protocolli verranno gestiti dal bilanciamento del carico DNS. Per ulteriori informazioni, vedere [bilanciamento del carico DNS in Lync Server 2013](lync-server-2013-dns-load-balancing.md).
 
-Per il traffico da server a server, Lync Server 2013 usa il bilanciamento del carico che supporta la topologia. I server leggono la topologia pubblicata in Central Management store per ottenere i nomi di dominio completi dei server nella topologia e distribuiscono automaticamente il traffico tra i server. Gli amministratori non devono configurare o gestire questo tipo di bilanciamento del carico.
+Per il traffico da server a server, Lync Server 2013 utilizza il bilanciamento del carico in grado di riconoscere la topologia. I server leggono la topologia pubblicata nell'archivio di gestione centrale per ottenere i nomi di dominio completi dei server nella topologia e distribuiscono automaticamente il traffico tra i server. Gli amministratori non devono configurare o gestire questo tipo di bilanciamento del carico.
 
-Se si usa il bilanciamento del carico DNS ed è necessario bloccare il traffico verso un computer specifico, non è sufficiente rimuovere semplicemente le voci di indirizzo IP dall'FQDN del pool. È necessario rimuovere anche la voce DNS per il computer.
+Se si utilizza il bilanciamento del carico DNS ed è necessario bloccare il traffico verso un computer specifico, non è sufficiente rimuovere solo le voci degli indirizzi IP dal nome di dominio completo del pool. È necessario rimuovere anche la voce DNS per il computer.
 
 </div>
 

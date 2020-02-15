@@ -12,16 +12,16 @@ ms:contentKeyID: 48185093
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9e4a0c1acf9f605fc927d7006ff50b1f4470c68d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d01c84e3f640abb536e923624af7fe7b13bb3dfe
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763120"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048867"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41763120"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-È possibile eliminare una configurazione del sito o della configurazione del pool. La configurazione globale non può essere rimossa. Se elimini la configurazione globale, viene reimpostata automaticamente sui valori predefiniti. Per informazioni dettagliate sull'implementazione delle configurazioni di archiviazione, incluse le opzioni che è possibile specificare e la gerarchia delle configurazioni di archiviazione, vedere funzionamento dell' [archiviazione in Lync Server 2013](lync-server-2013-how-archiving-works.md) nella documentazione relativa alla pianificazione, alla documentazione di distribuzione o alla documentazione operativa.
+È possibile eliminare la configurazione di un sito o la configurazione di un pool. La configurazione globale non può essere rimossa. Se si elimina la configurazione globale, viene reimpostata automaticamente sui valori predefiniti. Per informazioni dettagliate sulla modalità di implementazione delle configurazioni di archiviazione, incluse le opzioni che è possibile specificare e la gerarchia delle configurazioni di archiviazione, vedere [How Archiving Works in Lync Server 2013](lync-server-2013-how-archiving-works.md) nella documentazione relativa alla pianificazione, alla distribuzione o alla documentazione relativa alle operazioni.
 
 <div>
 
-## <a name="to-delete-a-site-or-pool-configuration-for-archiving"></a>Per eliminare una configurazione del sito o del pool per l'archiviazione
+## <a name="to-delete-a-site-or-pool-configuration-for-archiving"></a>Per eliminare la configurazione di un sito o di un pool per l'archiviazione
 
-1.  Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **monitoraggio e archiviazione**e quindi su **Configurazione archiviazione**.
+3.  Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Configurazione archiviazione**.
 
-4.  Nell'elenco delle configurazioni di archiviazione fare clic sulla configurazione del sito o del pool che si desidera eliminare, fare clic su **modifica**e quindi su **Elimina**.
+4.  Nell'elenco delle configurazioni di archiviazione fare clic sulla configurazione di sito o di pool che si desidera eliminare, fare clic su **Modifica** e quindi su **Elimina**.
 
 5.  Fare clic su **Commit**.
 
@@ -59,13 +59,13 @@ _**Argomento Ultima modifica:** 2013-02-23_
 
 ## <a name="removing-archiving-configuration-settings-by-using-windows-powershell-cmdlets"></a>Rimozione delle impostazioni di configurazione dell'archiviazione tramite i cmdlet di Windows PowerShell
 
-Le impostazioni di configurazione dell'archiviazione possono essere eliminate tramite Windows PowerShell e il cmdlet **Remove-CsArchivingConfiguration** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile eliminare le impostazioni di configurazione dell'archiviazione utilizzando Windows PowerShell e il cmdlet **Remove-CsArchivingConfiguration** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
-## <a name="to-remove-a-specified-collection-of-archiving-configuration-settings"></a>Per rimuovere una raccolta specificata di impostazioni di configurazione dell'archiviazione
+## <a name="to-remove-a-specified-collection-of-archiving-configuration-settings"></a>Per rimuovere una raccolta specificata di impostazioni di configurazione di archiviazione
 
-  - Il comando seguente rimuove le impostazioni di configurazione dell'archiviazione applicate al sito Redmond:
+  - Il comando seguente rimuove le impostazioni della configurazione di archiviazione applicate al sito Redmond:
     
         Remove-CsArchivingConfiguration -Identity "site:Redmond"
 
@@ -73,9 +73,9 @@ Le impostazioni di configurazione dell'archiviazione possono essere eliminate tr
 
 <div>
 
-## <a name="to-remove-all-the-archiving-configuration-settings-applied-to-the-site-scope"></a>Per rimuovere tutte le impostazioni di configurazione dell'archiviazione applicate all'ambito del sito
+## <a name="to-remove-all-the-archiving-configuration-settings-applied-to-the-site-scope"></a>Per rimuovere tutte le impostazioni di configurazione di archiviazione applicate all'ambito del sito
 
-  - Questo comando rimuove tutte le impostazioni di configurazione dell'archiviazione applicate all'ambito del servizio:
+  - Questo comando rimuove tutte le impostazioni della configurazione di archiviazione applicate all'ambito del servizio:
     
         Get-CsArchivingConfiguration -Filter "site:*" | Remove-CsArchivingConfiguration
 
@@ -83,15 +83,15 @@ Le impostazioni di configurazione dell'archiviazione possono essere eliminate tr
 
 <div>
 
-## <a name="to-remove-archiving-configuration-settings-based-on-a-specified-property-value"></a>Per rimuovere le impostazioni di configurazione dell'archiviazione in base a un valore di proprietà specificato
+## <a name="to-remove-archiving-configuration-settings-based-on-a-specified-property-value"></a>Per rimuovere le impostazioni di configurazione dell'archiviazione in base a un valore della proprietà specificato
 
-  - Questo comando rimuove tutte le impostazioni di configurazione dell'archiviazione in cui è stato disabilitato l'archiviazione di Exchange:
+  - Questo comando rimuove tutte le impostazioni della configurazione di archiviazione in cui l'archiviazione di Exchange è stata disabilitata:
     
         Get-CsArchivingConfiguration | Where-Object {$_.EnableExchangeArchiving -eq $False} | Remove-CsArchivingConfiguration
 
 </div>
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsArchivingConfiguration](https://docs.microsoft.com/powershell/module/skype/Remove-CsArchivingConfiguration) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsArchivingConfiguration](https://docs.microsoft.com/powershell/module/skype/Remove-CsArchivingConfiguration) .
 
 </div>
 

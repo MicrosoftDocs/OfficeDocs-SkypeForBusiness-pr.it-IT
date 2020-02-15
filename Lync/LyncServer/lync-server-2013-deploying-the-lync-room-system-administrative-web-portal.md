@@ -12,16 +12,16 @@ ms:contentKeyID: 56737621
 ms.date: 05/04/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d7f62a5c7fde401452744abba5f4b6dfec175da2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 945532f4f0514263ed0d72e00ac5224aa6d7120b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740806"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043368"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41740806"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-05-04_
+_**Ultimo argomento modificato:** 2015-05-04_
 
-Il portale Web amministrativo di Microsoft Lync Server 2013 Lync room System (LRS) è un portale Web che le organizzazioni possono usare per gestire le sale riunioni di Lync room System. Gli amministratori possono usare il portale Web amministrativo di LRS per monitorare la salute di LRS, ad esempio monitorando i dispositivi audio/video connessi. Con questo portale, gli amministratori possono raccogliere informazioni di diagnostica in remoto per monitorare l'integrità della sala riunioni.
+Il portale Web amministrativo di Microsoft Lync Server 2013 Lync room System (LRS) è un portale Web che può essere utilizzato dalle organizzazioni per gestire le sale conferenze di Lync room System. Gli amministratori possono utilizzare il portale Web amministrativo di LRS per monitorare l'integrità di LRS, ad esempio monitorando i dispositivi audio/video connessi. Con questo portale, gli amministratori possono raccogliere informazioni diagnostiche in remoto per monitorare l'integrità della sala riunioni.
 
-Il portale Web amministrativo di LRS è distribuito in ogni server front end di Lync. Questa guida fornisce istruzioni per gli amministratori su come installare e configurare il portale Web amministrativo di LRS. È destinato agli amministratori che hanno conoscenza dell'amministrazione di Lync Server e che hanno diritti di amministratore per la modifica della topologia di Lync Server.
+Il portale Web amministrativo di LRS è distribuito in tutti i Front End Server Lync. In questa guida vengono fornite istruzioni per gli amministratori su come installare e configurare il portale Web amministrativo di LRS. È destinato agli amministratori che dispongono della conoscenza dell'amministrazione di Lync Server e che dispongono di diritti utente di amministratore per modificare la topologia di Lync Server.
 
-Dopo che il portale Web amministrativo di LRS è stato distribuito sul server, gli amministratori possono controllare lo stato di tutte le sale di LRS accedendo al sito dal proprio computer o laptop.
+Dopo la distribuzione del portale Web amministrativo di LRS nel server, gli amministratori possono controllare lo stato di tutte le sale di LRS accedendo al sito dal proprio computer o laptop.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Quando si installa il portale Web amministrativo di LRS in una distribuzione di Microsoft Lync Server 2013, è consigliabile usare il <A href="http://go.microsoft.com/fwlink/p/?linkid=544806">portale Web amministrativo di Microsoft Lync room System per Lync server 2013</A>.<BR>Una nuova versione del portale Web amministrativo di LRS è disponibile per Skype for Business Server 2015, ma non è consigliabile installare la versione a meno che non sia stato distribuito Skype for Business Server 2015. Scaricare il <A href="http://go.microsoft.com/fwlink/?linkid=544807">portale Web amministrativo di Microsoft Lync room System per Skype for Business Server 2015</A>.
+> Quando si installa il portale Web di amministrazione di LRS in una distribuzione di Microsoft Lync Server 2013, è necessario utilizzare il <A href="http://go.microsoft.com/fwlink/p/?linkid=544806">portale Web amministrativo di Microsoft Lync room per Lync Server 2013</A>.<BR>È disponibile una nuova versione del portale Web amministrativo di LRS per Skype for Business Server 2015, ma non è necessario installare tale versione a meno che non sia stato distribuito Skype for Business Server 2015. Scaricare il <A href="http://go.microsoft.com/fwlink/?linkid=544807">portale Web amministrativo di Microsoft Lync room System per Skype for Business Server 2015</A>.
 
 
 
@@ -55,13 +55,13 @@ Dopo che il portale Web amministrativo di LRS è stato distribuito sul server, g
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-[Configurazione dell'ambiente di Lync Server 2013 per il portale Web di amministrazione di Lync Room System](lync-server-2013-configuring-your-environment-for-the-lync-room-system-administrative-web-portal.md)
+[Configurazione dell'ambiente Lync Server 2013 per il portale Web amministrativo di Lync room System](lync-server-2013-configuring-your-environment-for-the-lync-room-system-administrative-web-portal.md)
 
 [Installazione del portale Web amministrativo di Lync room System in Lync Server 2013](lync-server-2013-installing-the-lync-room-system-administrative-web-portal.md)
 
-[Uso del portale Web amministrativo di Lync Room System in Lync Server 2013](lync-server-2013-using-the-lync-room-system-administrative-web-portal.md)
+[Utilizzo del portale Web amministrativo di Lync room System in Lync Server 2013](lync-server-2013-using-the-lync-room-system-administrative-web-portal.md)
 
 </div>
 
@@ -70,7 +70,7 @@ Dopo che il portale Web amministrativo di LRS è stato distribuito sul server, g
 ## <a name="see-also"></a>Vedere anche
 
 
-[Distribuzione dei servizi di conferenza in Lync Server 2013](lync-server-2013-deploying-conferencing.md)  
+[Distribuzione di servizi di conferenza in Lync Server 2013](lync-server-2013-deploying-conferencing.md)  
   
 
 </div>

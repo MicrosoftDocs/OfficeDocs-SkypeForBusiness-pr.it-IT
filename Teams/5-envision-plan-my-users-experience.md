@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d156761d8ebc39822d6ccf2fc28ed6c380c4e117
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 77a325fbe8cacb3b2760f5b3034dee0e16695278
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825184"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42021597"
 ---
 # <a name="plan-my-users-experience"></a>Pianificare l'esperienza degli utenti
 
@@ -108,7 +108,7 @@ Un esercizio di mapping da persona a dispositivo deve essere completato come par
 Dopo aver selezionato i dispositivi, includerli nel piano di test pilota per la convalida finale. È necessario sfruttare i sondaggi durante il progetto pilota per raccogliere feedback per verificare che la strategia del dispositivo sia ottimale.
 
 > [!NOTE]
-> In questo momento, ti consigliamo di usare i dispositivi audio certificati tramite il programma di certificazione Skype for business. Per trovare i dispositivi certificati in questo programma, vedere i dispositivi [Microsoft teams](https://products.office.com/en-us/microsoft-teams/across-devices/devices) e i [dispositivi audio e video USB](https://docs.microsoft.com/SkypeForBusiness/certification/devices-usb-devices).
+> In questo momento, ti consigliamo di usare i dispositivi audio certificati tramite il programma di certificazione Skype for business. Per trovare i dispositivi certificati in questo programma, vedere i dispositivi [Microsoft teams](https://products.office.com/microsoft-teams/across-devices/devices) e i [dispositivi audio e video USB](https://docs.microsoft.com/SkypeForBusiness/certification/devices-usb-devices).
 
 
 

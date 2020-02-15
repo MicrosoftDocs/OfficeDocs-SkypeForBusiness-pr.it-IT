@@ -12,16 +12,16 @@ ms:contentKeyID: 63969655
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4fb1d0af8a5191c7e0af1ffe3319c426c116b586
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 0b40479bc11fc1f46062423d63876b33d9c179aa
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41745466"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048607"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41745466"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-06-05_
+_**Ultimo argomento modificato:** 2014-06-05_
 
 
 <table>
@@ -46,16 +46,16 @@ _**Argomento Ultima modifica:** 2014-06-05_
 <tbody>
 <tr class="odd">
 <td><p>Pianificazione della verifica</p></td>
-<td><p>Quotidiana</p></td>
+<td><p>Giornaliero</p></td>
 </tr>
 <tr class="even">
-<td><p>Strumento di test</p></td>
+<td><p>Strumento di testing</p></td>
 <td><p>Windows PowerShell</p></td>
 </tr>
 <tr class="odd">
 <td><p>Autorizzazioni necessarie</p></td>
-<td><p>Quando si esegue localmente tramite Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
-<p>Quando si esegue usando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga delle autorizzazioni per eseguire il cmdlet Test-CsRegistration. Per visualizzare un elenco di tutti i ruoli RBAC che possono usare questo cmdlet, eseguire il comando seguente dal prompt di Windows PowerShell:</p>
+<td><p>Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</p>
+<p>Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet Test-CsRegistration. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</p>
 <pre><code>Get-CsAdminRole | Where-Object {$_.Cmdlets -match &quot;Test-CsRegistration&quot;}</code></pre></td>
 </tr>
 </tbody>
@@ -66,36 +66,36 @@ _**Argomento Ultima modifica:** 2014-06-05_
 
 ## <a name="description"></a>Descrizione
 
-Il cmdlet Test-CsRegistration consente di verificare che gli utenti dell'organizzazione possano accedere a Lync Server. Quando si esegue Test-CsRegistration, il cmdlet tenta di accedere a un utente di test a Lync Server e quindi, se riesce, disconnette l'utente di test dal sistema. Tutto questo avviene senza alcuna interazione con l'utente e senza influenzare gli utenti effettivi. Supponiamo ad esempio che l'account di test sip:kenmyer@litwareinc.com corrisponda a un utente reale che ha un vero account di Lync Server. In questo caso, il test verrà condotto senza interruzioni per il vero Ken. Quando l'account di test di Ken si disconnette dal sistema, Ken si connette alla persona che rimarrà connesso.
+Il cmdlet Test-CsRegistration consente di verificare che gli utenti dell'organizzazione possano accedere a Lync Server. Quando si esegue Test-CsRegistration, il cmdlet tenta di eseguire l'accesso a un utente di test a Lync Server e quindi, se ha esito positivo, disconnette l'utente di test dal sistema. Tutta la procedura viene eseguita senza alcuna interazione da parte degli utenti e senza che questi vengano coinvolti. Si supponga, ad esempio, che l'account di test sip:kenmyer@litwareinc.com corrisponda a un utente reale che dispone di un account Lync Server reale. In questo caso, il test verrà eseguito senza coinvolgere il vero Ken Myer. Quando l'account di test di Ken è disconnesso dal sistema, Ken è la persona che continuerà a essere connessa.
 
 </div>
 
 <div>
 
-## <a name="running-the-test"></a>Eseguire il test
+## <a name="running-the-test"></a>Esecuzione del test
 
-Il cmdlet Test-CsRegistration può essere eseguito usando un account di test preconfigurato (vedere Configurazione degli account di test per l'esecuzione di test Lync Server) o l'account di qualsiasi utente abilitato per Lync Server. Per eseguire questo controllo usando un account di test, devi solo specificare il nome di dominio completo del pool di registrazione di Lync Server testato. Ad esempio:
+È possibile eseguire il cmdlet Test-CsRegistration utilizzando un account di test preconfigurato (vedere Configurazione degli account di prova per l'esecuzione di test di Lync Server) oppure l'account di qualsiasi utente abilitato per Lync Server. Per eseguire questo controllo utilizzando un account di prova, è necessario specificare il nome di dominio completo del pool di registrazione di Lync Server in fase di test. Ad esempio:
 
     Test-CsRegistration -TargetFqdn "atl-cs-001.litwareinc.com"
 
-Per eseguire questo controllo usando un account utente effettivo, è necessario prima di tutto creare un oggetto credenziali di Windows PowerShell contenente il nome dell'account e la password. Devi quindi includere l'oggetto credenziali e l'indirizzo SIP assegnato all'account quando chiami Test-CsRegistration:
+Per eseguire questo controllo utilizzando un account utente effettivo, è necessario innanzitutto creare un oggetto credenziali di Windows PowerShell contenente il nome e la password dell'account. È quindi necessario includere l'oggetto credentials e l'indirizzo SIP assegnato all'account quando si chiama Test-CsRegistration:
 
     $credential = Get-Credential "litwareinc\kenmyer"
     Test-CsRegistration -TargetFqdn "atl-cs-001.litwareinc.com"-UserSipAddress "sip:kenmyer@litwareinc.com" -UserCredential $credential
 
-Per altre informazioni, vedere la documentazione della Guida relativa al cmdlet [Test-CsRegistration](https://docs.microsoft.com/powershell/module/skype/Test-CsRegistration) .
+Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmdlet [Test-CsRegistration](https://docs.microsoft.com/powershell/module/skype/Test-CsRegistration) .
 
 </div>
 
 <div>
 
-## <a name="determining-success-or-failure"></a>Determinare l'esito positivo o negativo
+## <a name="determining-success-or-failure"></a>Determinazione dell'esito positivo o negativo
 
-Se l'utente specificato può accedere a (e quindi disconnettersi da) Lync Server, si riceverà un output simile a quello con la proprietà Result contrassegnata come **riuscita:**
+Se l'utente specificato può accedere a (e quindi disconnettersi da) Lync Server, verrà visualizzato un output simile al seguente con la proprietà Result contrassegnata come **operazione riuscita:**
 
 TargetFqdn: atl-cs-001.litwareinc.com
 
-Risultato: successo
+Risultato: esito positivo
 
 Latenza: 00:00:06.8630376
 
@@ -103,7 +103,7 @@ Errore
 
 Diagnosi
 
-Se l'utente specificato non riesce ad accedere o disconnettersi, il risultato verrà visualizzato come errore e verranno registrate altre informazioni nelle proprietà errore e diagnosi:
+Se l'utente specificato non è in grado di accedere o disconnettersi, il risultato verrà visualizzato come errore e verranno registrate informazioni aggiuntive nelle proprietà Error and Diagnostic:
 
 TargetFqdn: atl-cs-001.litwareinc.com
 
@@ -113,45 +113,45 @@ Latenza: 00:00:00
 
 Errore: 404, non trovato
 
-Diagnosi: ErrorCode = 1003, source = atl-cs-001. litwareinc. com, Reason = l'utente non
+Diagnosi: ErrorCode = 1003, source = atl-cs-001. litwareinc. com, Reason = utente
 
 non esiste
 
 Microsoft. Rtc. signaling. DiagnosticHeader
 
-Ad esempio, l'output precedente indica che il test non è riuscito perché non è stato possibile trovare l'utente specificato. È possibile determinare se un indirizzo SIP è valido (e se l'utente ha assegnato l'indirizzo SIP abilitato per Lync Server) eseguendo questo comando:
+Ad esempio, l'output precedente dichiara che il test ha avuto esito negativo perché l'utente specificato non è stato trovato. È possibile determinare se un indirizzo SIP è valido (e se l'utente assegnato l'indirizzo SIP è abilitato per Lync Server) eseguendo il comando seguente:
 
     Get-CsUser "sip:kenmyer@litwareinc.com"
 
-Se Test-CsRegistration non riesce, potrebbe essere necessario rieseguire il test, questa volta includendo il parametro Verbose:
+Se Test-CsRegistration ha esito negativo, potrebbe essere necessario eseguire nuovamente il test, che include il parametro Verbose:
 
     Test-CsRegistration -UserSipAddress "sip:kenmyer@litwareinc.com" -TargetFqdn "atl-cs-001.litwareinc.com" -Verbose
 
-Quando viene incluso il parametro Verbose, Test-CsRegistration restituirà un account dettagliato di ogni azione provata quando ha verificato la capacità dell'utente specificato di accedere a Lync Server. Ad esempio:
+Quando viene incluso il parametro Verbose, Test-CsRegistration restituirà un account dettagliato di ogni azione che ha provato quando ha verificato la capacità dell'utente specificato di accedere a Lync Server. Ad esempio:
 
-VERBOse: è stata avviata l'attività "Register".
+VERBOse: attività di registrazione avviata.
 
 Invio della richiesta di registrazione:
 
 FQDN di destinazione = atl-cs-011.litwareinc.com
 
-Indirizzo SIP utente = sip:kenmyer@litwareinc.com
+Indirizzo SIP dell'utente = sip:kenmyer@litwareinc.com
 
-Porta registrar = 5061.
+Porta di registrazione = 5061.
 
-È selezionato il tipo di autenticazione "attendibile".
+Il tipo di autenticazione ' attendibile ' è selezionato.
 
-Eccezione ' l'endpoint non è in grado di eseguire la registrazione. Vedi l'errore per il motivo specifico che si è verificato durante l'esecuzione del flusso di lavoro Microsoft. Rtc. SyntheticTransactions. Workflow. STRegistrerWorkflow.
+Eccezione ' l'endpoint non è in grado di effettuare la registrazione. Per un motivo specifico si è verificato l'errore durante l'esecuzione del flusso di lavoro Microsoft. Rtc. SyntheticTransactions. Workflow. STRegistrerWorkflow.
 
-Stack di chiamate di eccezione: at Microsoft. Rtc. signaling. SipAsyncResult'1. ThrowIfFailed ()
+Stack di chiamate di eccezione: in Microsoft. Rtc. signaling. SipAsyncResult'1. ThrowIfFailed ()
 
 </div>
 
 <div>
 
-## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non essere riuscito
+## <a name="reasons-why-the-test-might-have-failed"></a>Motivi per cui il test potrebbe non avere avuto esito positivo
 
-Ecco alcuni motivi comuni per cui Test-CsRegistration potrebbe non riuscire:
+Di seguito sono riportate alcune ragioni comuni per cui Test-CsRegistration potrebbe non riuscire:
 
   - È stato specificato un account utente non corretto. È possibile verificare che esista un account utente eseguendo un comando simile al seguente:
     
@@ -163,7 +163,7 @@ Ecco alcuni motivi comuni per cui Test-CsRegistration potrebbe non riuscire:
     
     Se la proprietà Enabled è impostata su false, significa che l'utente non è attualmente abilitato per Lync Server.
 
-  - È stato specificato un pool di registrar errato. Puoi restituire gli FQDN dei pool di registrar usando questo comando:
+  - È stato specificato un pool di registrazione non corretto. È possibile restituire i nomi FQDN dei pool di registrazione utilizzando il comando seguente:
     
         Get-CsService -Registrar | Select-Object PoolFqdn
 

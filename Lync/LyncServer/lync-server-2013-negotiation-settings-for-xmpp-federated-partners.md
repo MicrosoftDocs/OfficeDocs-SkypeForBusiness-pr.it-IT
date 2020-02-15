@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Impostazioni di negoziazione per i partner federati XMPP'
+title: 'Lync Server 2013: impostazioni di negoziazione per i partner federati XMPP'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48679567
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 995ee34d0a2dcf28ca6aa4f8158d0e08d1533191
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c190e4a45a70bd527aa8fc6323a671d481f04872
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765937"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42039098"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41765937"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-21_
+_**Ultimo argomento modificato:** 2012-10-21_
 
-Le impostazioni per i tipi di negoziazione nella configurazione di un partner XMPP hanno un'ampia varietà di combinazioni possibili. Non tutte le combinazioni sono valide. La tabella dettagliata in questo argomento definirà le impostazioni valide e non valide. Le configurazioni comuni sono presentate nella prima tabella, la seconda tabella che descrive tutte le combinazioni possibili. Tieni presente che non puoi avere un protocollo SASL ( *Simple Authentication and Security Layer* ) **a meno che non** sia disponibile anche *Transport Layer Security* (TLS). SASL viene inviato in formato non crittografato e non deve mai essere trasmesso a meno che non sia protetto da un altro mezzo, ad esempio TLS.
+Le impostazioni per i tipi di negoziazione nella configurazione di un Partner XMPP offrono un'ampia gamma di possibili combinazioni. Non tutte le combinazioni sono valide. Nella tabella illustrata in questo argomento vengono elencate le impostazioni valide e quelle non valide. Le configurazioni più comuni sono presentate nella prima tabella, mentre la seconda tabella contiene tutte le possibili combinazioni. Si noti che non è possibile disporre *di Simple Authentication and Security Layer* (SASL), **a meno che non** sia disponibile anche TLS ( *Transport Layer Security* ). SASL viene inviato in un formato non crittografato (leggibile) e non dovrebbe mai essere trasmesso se non viene protetto in altro modo, ad esempio con TLS.
 
-### <a name="common-xmpp-federation-negotiation-methods"></a>Metodi di negoziazione federativi comuni XMPP
+### <a name="common-xmpp-federation-negotiation-methods"></a>Metodi comuni di negoziazione per la federazione XMPP
 
 <table>
 <colgroup>
@@ -53,9 +53,9 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un partner XM
 <tr class="header">
 <th>TLS (Transport Layer Security)</th>
 <th>SASL (Simple Authentication and Security Layer)</th>
-<th>Autenticazione richiamata</th>
-<th>Metodo di autenticazione previsto (s)</th>
-<th>Note</th>
+<th>Autenticazione dialback</th>
+<th>Metodi di autenticazione previsti</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
@@ -64,34 +64,34 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un partner XM
 <td><p>Obbligatorio</p></td>
 <td><p>False</p></td>
 <td><p>SASL su TLS</p></td>
-<td><p>TLS e SASL necessari aiutano a garantire che il flusso di messaggi SASL sia sicuro. Richiamata non è disponibile e non può essere usato per un metodo di fallback se il partner federato XMPP non ha impostato TLS su obbligatorio o facoltativo.</p></td>
+<td><p>L'obbligatorietà di TLS e SASL aiuta ad assicurare la protezione del flusso di messaggi SASL. Il dialback non è disponibile e non può essere utilizzato come metodo di fallback se il partner federato XMPP non ha impostato TLS su obbligatorio o facoltativo.</p></td>
 </tr>
 <tr class="even">
 <td><p>Obbligatorio</p></td>
 <td><p>Facoltativo</p></td>
 <td><p>True</p></td>
-<td><p>SASL su TLS, TLS richiamata, TCP richiamata</p></td>
-<td><p>Richiedendo TLS, se è usato il partner federato XMPP che ha impostato SASL su SASL facoltativo o richiesto. Se SASL non è disponibile, verrà usato richiamata su TLS.</p></td>
+<td><p>SASL su TLS, dialback TLS, dialback TCP</p></td>
+<td><p>Impostando TLS come obbligatorio, se il partner federato XMPP ha impostato SASL su facoltativo o su obbligatorio, viene utilizzato SASL. Se SASL non è disponibile, verrà utilizzato il dialback su TLS.</p></td>
 </tr>
 <tr class="odd">
 <td><p>Facoltativo</p></td>
 <td><p>Facoltativo</p></td>
 <td><p>True</p></td>
-<td><p>SASL su TLS, TLS richiamata, TCP richiamata</p></td>
-<td><p>Sebbene sia molto flessibile nei metodi di negoziazione offerti, queste impostazioni si basano sulle impostazioni del partner federativo XMPP. Se il partner ha TLS facoltativo o obbligatorio, ma SASL non è supportato, TLS richiamata sarà disponibile. Se il partner ha impostato TLS e SASL su facoltativo o obbligatorio, viene usata la selezione ottimale di TLS su SASL.</p></td>
+<td><p>SASL su TLS, dialback TLS, dialback TCP</p></td>
+<td><p>Molto flessibili nel metodo di negoziazione offerto, queste impostazioni si avvalgono delle impostazioni dei partner della federazione XMPP. Se TLS è facoltativo o obbligatorio per il partner ma SASL non è supportato, sarà disponibile il dialback TLS. Se TLS e SASL sono impostati su facoltativo o obbligatorio per il partner, viene utilizzata la selezione ottimale di TLS su SASL.</p></td>
 </tr>
 <tr class="even">
 <td><p>Non supportato</p></td>
-<td><p>Non supportato</p></td>
+<td><p>Non supportata</p></td>
 <td><p>True</p></td>
-<td><p>TCP richiamata</p></td>
-<td><p>In molti casi, TCP richiamata è l'unica soluzione possibile. Meno auspicabile rispetto ad altre opzioni, offre un certo livello di attendibilità.</p></td>
+<td><p>Dialback TCP</p></td>
+<td><p>In molti casi il dialback TCP è l'unica soluzione possibile. Meno desiderabile di altre opzioni, offre comunque un buon grado di attendibilità.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="xmpp-federation-negotiation-methods-matrix---complete"></a>Matrice del metodo di negoziazione della Federazione XMPP-completamento
+### <a name="xmpp-federation-negotiation-methods-matrix---complete"></a>Matrice dei metodi di negoziazione per la federazione XMPP - Completa
 
 <table>
 <colgroup>
@@ -105,9 +105,9 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un partner XM
 <tr class="header">
 <th>TLS (Transport Layer Security)</th>
 <th>SASL (Simple Authentication and Security Layer)</th>
-<th>Autenticazione richiamata</th>
+<th>Autenticazione dialback</th>
 <th>Metodo di autenticazione previsto</th>
-<th>Note, avvisi o errori per la configurazione non valida</th>
+<th>Note, avvisi o errori di configurazione non valida</th>
 </tr>
 </thead>
 <tbody>
@@ -119,7 +119,7 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un partner XM
 <td><div>
 
 > [!WARNING]  
-> Richiamata non funzionerà se sono necessari sia SASL che TLS.
+> Se SASL e TSL sono entrambi obbligatori, il dialback non verrà utilizzato.
 
 
 </div></td>
@@ -135,11 +135,11 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un partner XM
 <td><p>Facoltativo</p></td>
 <td><p>Obbligatorio</p></td>
 <td><p>True</p></td>
-<td><p>SASL su TLS, TLS richiamata, TCP richiamata</p></td>
+<td><p>SASL su TLS, dialback TLS, dialback TCP</p></td>
 <td><div>
 
 > [!WARNING]  
-> SASL richiede TLS. La possibilità di consentire a TLS di essere facoltativa può comportare una negoziazione non riuscita.
+> SASL richiede TLS. Impostando TLS come facoltativo, potrebbero verificarsi errori di negoziazione delle sessioni.
 
 
 </div></td>
@@ -152,39 +152,39 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un partner XM
 <td><div>
 
 > [!WARNING]  
-> SASL richiede TLS. La possibilità di consentire a TLS di essere facoltativa può comportare una negoziazione non riuscita.
+> SASL richiede TLS. Impostando TLS come facoltativo, potrebbero verificarsi errori di negoziazione delle sessioni.
 
 
 </div></td>
 </tr>
 <tr class="odd">
-<td><p>Non supportato</p></td>
+<td><p>Non supportata</p></td>
 <td><p>Obbligatorio</p></td>
 <td><p>True</p></td>
-<td><p>TCP richiamata</p></td>
+<td><p>Dialback TCP</p></td>
 <td><div>
 
 > [!WARNING]  
-> SASL richiede TLS. La possibilità di consentire a TLS di essere facoltativa può comportare una negoziazione non riuscita.
+> SASL richiede TLS. Impostando TLS come facoltativo, potrebbero verificarsi errori di negoziazione delle sessioni.
 
 
 </div></td>
 </tr>
 <tr class="even">
-<td><p>Non supportato</p></td>
+<td><p>Non supportata</p></td>
 <td><p>Obbligatorio</p></td>
 <td><p>False</p></td>
 <td><div>
 
 > [!WARNING]  
-> Configurazione non valida
+> Configurazione non valida.
 
 
 </div></td>
 <td><div>
 
 > [!WARNING]  
-> Poiché SASL richiede TLS e TLS non è disponibile, SASL/TLS non riesce. TCP richiamata è impostato su false e non può essere usato.
+> Poiché SASL richiede TLS, ma TLS non è disponibile, SASL/TLS ha esito negativo. Il dialback TCP è impostato su false e non può essere utilizzato.
 
 
 </div></td>
@@ -193,7 +193,7 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un partner XM
 <td><p>Obbligatorio</p></td>
 <td><p>Facoltativo</p></td>
 <td><p>True</p></td>
-<td><p>SASL su TLS, TLS richiamata</p></td>
+<td><p>SASL su TLS, dialback TLS</p></td>
 <td></td>
 </tr>
 <tr class="even">
@@ -207,11 +207,11 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un partner XM
 <td><p>Facoltativo</p></td>
 <td><p>Facoltativo</p></td>
 <td><p>True</p></td>
-<td><p>SASL su TLS, TLS richiamata, TCP richiamata</p></td>
+<td><p>SASL su TLS, dialback TLS, dialback TCP</p></td>
 <td><div>
 
 > [!WARNING]  
-> SASL richiede TLS. La possibilità di consentire a TLS di essere facoltativa può comportare una negoziazione non riuscita.
+> SASL richiede TLS. Impostando TLS come facoltativo, potrebbero verificarsi errori di negoziazione delle sessioni.
 
 
 </div></td>
@@ -224,99 +224,99 @@ Le impostazioni per i tipi di negoziazione nella configurazione di un partner XM
 <td><div>
 
 > [!WARNING]  
-> SASL richiede TLS. La possibilità di consentire a TLS di essere facoltativa può comportare una negoziazione non riuscita.
+> SASL richiede TLS. Impostando TLS come facoltativo, potrebbero verificarsi errori di negoziazione delle sessioni.
 
 
 </div></td>
 </tr>
 <tr class="odd">
-<td><p>Non supportato</p></td>
+<td><p>Non supportata</p></td>
 <td><p>Facoltativo</p></td>
 <td><p>True</p></td>
-<td><p>TCP richiamata</p></td>
+<td><p>Dialback TCP</p></td>
 <td><div>
 
 > [!WARNING]  
-> SASL richiede TLS. La possibilità di consentire a TLS di essere facoltativa può comportare una negoziazione non riuscita.
+> SASL richiede TLS. Impostando TLS come facoltativo, potrebbero verificarsi errori di negoziazione delle sessioni.
 
 
 </div></td>
 </tr>
 <tr class="even">
-<td><p>Non supportato</p></td>
+<td><p>Non supportata</p></td>
 <td><p>Facoltativo</p></td>
 <td><p>False</p></td>
 <td><div>
 
 > [!WARNING]  
-> Configurazione non valida
+> Configurazione non valida.
 
 
 </div></td>
 <td><div>
 
 > [!WARNING]  
-> SASL richiede TLS. La possibilità di consentire a TLS di essere facoltativa può comportare una negoziazione non riuscita.
+> SASL richiede TLS. Impostando TLS come facoltativo, potrebbero verificarsi errori di negoziazione delle sessioni.
 
 
 </div></td>
 </tr>
 <tr class="odd">
 <td><p>Obbligatorio</p></td>
-<td><p>Non supportato</p></td>
+<td><p>Non supportata</p></td>
 <td><p>True</p></td>
-<td><p>TLS richiamata</p></td>
-<td><p>La configurazione consente la richiamata TLS.</p></td>
+<td><p>Dialback TLS</p></td>
+<td><p>La configurazione consente il dialback TLS.</p></td>
 </tr>
 <tr class="even">
 <td><p>Obbligatorio</p></td>
 <td><p>Non supportato</p></td>
 <td><p>False</p></td>
-<td><p>Configurazione non valida</p></td>
+<td><p>Configurazione non valida.</p></td>
 <td><div>
 
 > [!WARNING]  
-> La funzionalità SASL o richiamata deve essere abilitata.
+> È necessario abilitare SASL o Dialback.
 
 
 </div></td>
 </tr>
 <tr class="odd">
 <td><p>Facoltativo</p></td>
-<td><p>Non supportato</p></td>
+<td><p>Non supportata</p></td>
 <td><p>True</p></td>
-<td><p>TLS richiamata, TCP richiamata</p></td>
-<td><p>In base alle scelte di negoziazione dell'altro punto finale, verranno accettate le richiamata TCP o TLS.</p></td>
+<td><p>Dialback TLS, dialback TCP</p></td>
+<td><p>Basato sulle scelte di negoziazione dell'altro endpoint, il dialback TCP o TLS verrà accettato.</p></td>
 </tr>
 <tr class="even">
 <td><p>Facoltativo</p></td>
 <td><p>Non supportato</p></td>
 <td><p>False</p></td>
-<td><p>Configurazione non valida</p></td>
+<td><p>Configurazione non valida.</p></td>
 <td><div>
 
 > [!WARNING]  
-> La funzionalità SASL o richiamata deve essere abilitata.
+> È necessario abilitare SASL o Dialback.
 
 
 </div></td>
 </tr>
 <tr class="odd">
-<td><p>Non supportato</p></td>
-<td><p>Non supportato</p></td>
+<td><p>Non supportata</p></td>
+<td><p>Non supportata</p></td>
 <td><p>True</p></td>
-<td><p>TCP richiamata</p></td>
-<td><p>TCP richiamata è l'unico metodo di negoziazione disponibile</p></td>
+<td><p>Dialback TCP</p></td>
+<td><p>Il dialback TCP è l'unico metodo di negoziazione disponibile</p></td>
 </tr>
 <tr class="even">
 <td><p>Non supportato</p></td>
 <td><p>Non supportato</p></td>
 <td><p>False</p></td>
-<td><p>Configurazione non valida</p></td>
+<td><p>Configurazione non valida.</p></td>
 <td><div>
 
 > [!WARNING]  
-> La funzionalità SASL o richiamata deve essere abilitata.
+> È necessario abilitare SASL o Dialback.
 
 
 </div></td>

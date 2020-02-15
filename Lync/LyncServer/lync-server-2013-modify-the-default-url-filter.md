@@ -12,16 +12,16 @@ ms:contentKeyID: 48184653
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 975824faa6a567992001ae10cafec61ef2ea1370
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 15511ea6b48697cddfebc40c671880a14a545557
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41766017"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051318"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,26 +35,26 @@ ms.locfileid: "41766017"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-26_
+_**Ultimo argomento modificato:** 2012-06-26_
 
-Usando il filtro messaggistica istantanea, Lync Server 2013 fornisce un filtro URL globale che blocca gli URL specifici contenuti nelle conversazioni ISTANTANEe tra gli utenti durante la distribuzione di Lync Server 2013. Tramite il pannello di controllo di Lync Server è possibile eseguire le operazioni seguenti:
+Utilizzando il filtro messaggistica istantanea, Lync Server 2013 fornisce un filtro URL globale che blocca gli URL specifici contenuti nelle conversazioni di messaggistica istantanea tra gli utenti durante la distribuzione di Lync Server 2013. Se si utilizza il pannello di controllo di Lync Server, è possibile eseguire le operazioni seguenti:
 
-  - Bloccare tutti o un sottoinsieme di URL nelle conversazioni istantanee dei messaggi.
+  - Bloccare tutti gli URL, o un sottoinsieme di essi, nelle conversazioni istantanee.
 
-  - Consenti tutti gli URL. Come opzione, puoi creare un avviso che viene inserito all'inizio di ogni messaggio istantaneo che contiene un URL.
+  - Consentire a tutti gli URL. È anche possibile creare un avviso che viene inserito all'inizio di ogni messaggio istantaneo contenente un URL.
 
-  - Consenti URL specifici e Includi un avviso con ogni messaggio istantaneo che contiene un URL.
+  - Consentire URL specifici e includere un avviso in ogni messaggio istantaneo contenente un URL.
 
-Inoltre, puoi scegliere di bloccare gli URL che contengono tipi di file specifici o bloccare solo gli URL Internet consentendo agli URL che si trovano all'interno dell'area Intranet locale del server, ovvero gli URL Intranet, di passare attraverso il server. Per informazioni dettagliate sul filtro degli URL, vedere [configurazione del filtro per il trasferimento di file e degli URL per la messaggistica istantanea in Lync Server 2013](lync-server-2013-configuring-file-transfer-and-url-filtering-for-instant-messaging-im.md).
+È inoltre possibile scegliere di bloccare gli URL contenenti tipi di file specifici oppure di bloccare solo gli URL Internet consentendo il passaggio attraverso il server degli URL interni all'area Intranet locale del server (URL Intranet). Per informazioni dettagliate sul filtro degli URL, vedere [Configuring file transfer and URL Filtering for Instant Messaging (im) in Lync Server 2013](lync-server-2013-configuring-file-transfer-and-url-filtering-for-instant-messaging-im.md).
 
 <div>
 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Configurazione del filtro del trasferimento di file e degli URL per la messaggistica istantanea in Lync Server 2013](lync-server-2013-configuring-file-transfer-and-url-filtering-for-instant-messaging-im.md)  
-[Creare un nuovo filtro per il trasferimento di file in Lync Server 2013 per un sito specifico](lync-server-2013-create-a-new-file-transfer-filter-for-a-specific-site.md)  
-[Creare un nuovo filtro URL in Lync Server 2013 per gestire i collegamenti ipertestuali nelle conversazioni ISTANTANEe](lync-server-2013-create-a-new-url-filter-to-handle-hyperlinks-in-im-conversations.md)  
+[Configurazione del filtro per il trasferimento di file e degli URL per la messaggistica istantanea in Lync Server 2013](lync-server-2013-configuring-file-transfer-and-url-filtering-for-instant-messaging-im.md)  
+[Creare un nuovo filtro trasferimento file in Lync Server 2013 per un sito specifico](lync-server-2013-create-a-new-file-transfer-filter-for-a-specific-site.md)  
+[Creare un nuovo filtro URL in Lync Server 2013 per gestire i collegamenti ipertestuali nelle conversazioni di messaggistica istantanea](lync-server-2013-create-a-new-url-filter-to-handle-hyperlinks-in-im-conversations.md)  
 [Modificare il filtro di trasferimento file predefinito in Lync Server 2013](lync-server-2013-modify-the-default-file-transfer-filter.md)  
   
 

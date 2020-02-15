@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Utilizzo di cmdlet per ripristinare la preparazione del dominio'
+title: 'Lync Server 2013: utilizzo dei cmdlet per annullare la preparazione del dominio'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183227
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d72c135e7daccd677f8e42ea93a2aace8d7cafb8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1c280cdcaa9d06b9ce7eee02cb043ecba0a9deb8
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744196"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041255"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="using-cmdlets-to-reverse-domain-preparation-for-lync-server-2013"></a>Utilizzo di cmdlet per ripristinare la preparazione del dominio per Lync Server 2013
+# <a name="using-cmdlets-to-reverse-domain-preparation-for-lync-server-2013"></a>Utilizzo dei cmdlet per annullare la preparazione del dominio per Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41744196"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-29_
+_**Ultimo argomento modificato:** 2012-10-29_
 
-Usa il cmdlet **Disable-CsAdDomain** per invertire il passaggio di preparazione del dominio.
+Utilizzare il cmdlet **Disable-CsAdDomain** per annullare il passaggio di preparazione di un dominio.
 
 <div>
 
-## <a name="to-use-cmdlets-to-reverse-domain-preparation"></a>Per usare i cmdlet per invertire la preparazione del dominio
+## <a name="to-use-cmdlets-to-reverse-domain-preparation"></a>Per utilizzare i cmdlet per annullare la preparazione di un dominio
 
-1.  Accedere a qualsiasi server del dominio come membro del gruppo Domain Admins.
+1.  Eseguire l'accesso a qualsiasi server del dominio come membri del gruppo Domain Admins.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Eseguire
+3.  Eseguire: 
     
         Disable-CsAdDomain [-Domain <Fqdn>] [-DomainController <Fqdn>] [-Force <SwitchParameter>] 
         [-GlobalCatalog <Fqdn>] [-GlobalSettingsDomainController <Fqdn>] 
@@ -56,13 +56,13 @@ Usa il cmdlet **Disable-CsAdDomain** per invertire il passaggio di preparazione 
     
         Disable-CsAdDomain -Domain domain1.contoso.net -GlobalSettingsDomainController dc01.domain1.contoso.net -Force
     
-    Se il parametro Force è presente, viene eseguito il rollback della preparazione del dominio, anche se vengono attivati uno o più server front-end o un/V Conferencing Servers nel dominio. Se il parametro Force non è presente, il rollback della preparazione del dominio viene terminato se i server front-end o i server di conferenza a/V nel dominio vengono attivati.
+    Se il parametro Force è presente, viene eseguito il rollback della preparazione del dominio, anche se uno o più server front end o A/V Conferencing Server nel dominio vengono attivati. Se il parametro Force non è presente, il rollback della preparazione del dominio viene interrotto se i server front end o i server a/V Conferencing nel dominio vengono attivati.
     
     <div>
     
 
     > [!NOTE]  
-    > Il parametro GlobalSettingsDomainController consente di indicare dove sono archiviate le impostazioni globali. Se le impostazioni sono archiviate nel contenitore di sistema (tipico delle distribuzioni di aggiornamento che non hanno eseguito la migrazione dell'impostazione globale al contenitore di configurazione), si definisce un controller di dominio nella radice della foresta di Active Directory. Se invece le impostazioni globali sono incluse nel contenitore Configuration, come avviene in genere con le distribuzioni nuove o di aggiornamento per cui è stata eseguita la migrazione delle impostazioni nel contenitore Configuration, definire un controller di dominio nella foresta. Se non specifichi questo parametro, il cmdlet presuppone che le impostazioni siano archiviate nel contenitore di configurazione e faccia riferimento a qualsiasi controller di dominio in&nbsp;Active Directory.
+    > Il parametro GlobalSettingsDomainController consente di indicare dove vengono archiviate le impostazioni globali. Se le impostazioni sono archiviate nel contenitore System, come avviene in genere con le distribuzioni di aggiornamento per cui non è stata eseguita la migrazione dell'impostazione globale nel contenitore Configuration, definire un controller di dominio nella radice della foresta di Active Directory. Se invece le impostazioni globali sono incluse nel contenitore Configuration, come avviene in genere con le distribuzioni nuove o di aggiornamento per cui è stata eseguita la migrazione delle impostazioni nel contenitore Configuration, definire un controller di dominio nella foresta. Se non si specifica questo parametro, il cmdlet presuppone che le impostazioni siano archiviate nel contenitore di configurazione e si riferisca a qualsiasi controller&nbsp;di dominio in ad DS.
 
     
     </div>

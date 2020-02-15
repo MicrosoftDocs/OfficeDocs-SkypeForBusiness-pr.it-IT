@@ -12,16 +12,16 @@ ms:contentKeyID: 48185091
 ms.date: 04/11/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b1cbce99116159d119eaa604b7000764913b3cbe
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 96a0df07a44392857f4384a1285245229874cdaa
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738176"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038608"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,45 +35,45 @@ ms.locfileid: "41738176"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-04-11_
+_**Ultimo argomento modificato:** 2016-04-11_
 
-È possibile aggiungere comandi personalizzati ai menu di Lync 2013 e passare l'URI (Uniform Resource Identifier) SIP dell'utente corrente e i contatti selezionati all'applicazione avviata dal comando personalizzato.
+È possibile aggiungere comandi personalizzati ai menu di Lync 2013 e passare l'URI (Uniform Resource Identifier) SIP dell'utente corrente e i contatti selezionati all'applicazione che viene avviata dal comando personalizzato.
 
-I comandi personalizzati aggiunti possono essere visualizzati in uno o più dei menu seguenti:
+È possibile visualizzare i comandi personalizzati aggiunti all'interno di uno o più dei menu seguenti:
 
-  - Menu strumenti nella barra dei menu della finestra principale di Lync
+  - Menu Strumenti, sulla barra dei menu della finestra principale di Lync
 
-  - Menu di scelta rapida per i contatti nell'elenco contatti
+  - Menu di scelta rapida per i contatti nell'elenco Contatti
 
-  - Menu altre opzioni nella finestra di conversazione
+  - Il menu altre opzioni, nella finestra di conversazione
 
-  - Menu di scelta rapida per gli utenti elencati nell'elenco dei partecipanti della finestra di conversazione
+  - Menu di scelta rapida per gli utenti elencati nell'elenco dei partecipanti della finestra Conversazione
 
-  - Menu opzioni in una scheda contatto
+  - Menu Opzioni in una scheda contatto
 
-Puoi definire comandi personalizzati per due tipi di applicazioni, ovvero applicazioni che eseguono una delle operazioni seguenti:
+È possibile definire comandi personalizzati per due tipi di applicazioni, ovvero per le applicazioni con una delle caratteristiche seguenti:
 
-  - Si applicano solo all'utente corrente e vengono avviati nel computer locale.
+  - Si applicano solo all'utente corrente e vengono avviate nel computer locale.
 
-  - Coinvolgere altri utenti, ad esempio un programma di collaborazione online, e deve essere avviato nel computer di ogni utente.
+  - Coinvolgono altri utenti, come avviene con i programmi di collaborazione online, e devono essere avviate nel computer di ogni utente.
 
-Il comando personalizzato può essere richiamato nei modi seguenti:
+È possibile richiamare il comando personalizzato nei modi seguenti:
 
   - Selezionare uno o più utenti e quindi scegliere il comando personalizzato.
 
-  - Avviare una conversazione con due o più parti e quindi scegliere il comando personalizzato.
+  - Avviare una conversazione con due o più partecipanti e quindi scegliere il comando personalizzato.
 
 <div>
 
 ## <a name="to-add-a-custom-command"></a>Per aggiungere un comando personalizzato
 
-Usare le impostazioni del registro di sistema nella tabella seguente per aggiungere un comando ai menu. Queste voci vengono inserite nel registro di sistema in una delle posizioni seguenti:
+Utilizzare le impostazioni del registro di sistema nella tabella seguente per aggiungere un comando ai menu. Tali voci vengono inserite nel registro di sistema in una delle posizioni seguenti:
 
-  - Per il sistema operativo a\_32\_bit\\:\\HKEY\\Local\\computer\\software\\Microsoft\\Office 15,0 Lync SessionManager app
+  - Per il sistema operativo a\_32bit\_:\\HKEY\\Local\\Machine\\software\\Microsoft\\Office\\15,0 Lync SessionManager Apps
 
-  - Per il sistema operativo 64bit\_:\_HKEY\\LOCAL\\Machine\\software\\Wow6432Node\\Microsoft\\Office\\15,0\\Lync SessionManager Apps
+  - Per il sistema operativo a\_64bit\_:\\HKEY\\Local\\Machine\\software\\Wow6432Node\\Microsoft\\Office\\15,0 Lync SessionManager Apps
 
-### <a name="custom-command-registry-entries"></a>Voci del registro di sistema dei comandi personalizzati
+### <a name="custom-command-registry-entries"></a>Voci del Registro di sistema dei comandi personalizzati
 
 <table>
 <colgroup>
@@ -92,12 +92,12 @@ Usare le impostazioni del registro di sistema nella tabella seguente per aggiung
 <tr class="odd">
 <td><p>Nome</p></td>
 <td><p>REG_SZ</p></td>
-<td><p>Nome dell'applicazione come viene visualizzato nel menu.</p></td>
+<td><p>Nome dell'applicazione visualizzato nel menu.</p></td>
 </tr>
 <tr class="even">
 <td><p>ApplicationType</p></td>
 <td><p>DWORD</p></td>
-<td><p>0 = eseguibile (impostazione predefinita)</p>
+<td><p>0 = Eseguibile (impostazione predefinita)</p>
 <div>
 
 > [!NOTE]  
@@ -105,7 +105,7 @@ Usare le impostazioni del registro di sistema nella tabella seguente per aggiung
 
 
 </div>
-<p>1 = protocollo</p></td>
+<p>1 = Protocollo</p></td>
 </tr>
 <tr class="odd">
 <td><p>ApplicationInstallPath</p></td>
@@ -114,7 +114,7 @@ Usare le impostazioni del registro di sistema nella tabella seguente per aggiung
 <div>
 
 > [!NOTE]  
-> Deve essere specificato se ApplicationType è 0 (eseguibile).
+> Deve essere specificato se ApplicationType è 0 (Eseguibile).
 
 
 </div></td>
@@ -122,14 +122,14 @@ Usare le impostazioni del registro di sistema nella tabella seguente per aggiung
 <tr class="even">
 <td><p>Percorso</p></td>
 <td><p>REG_SZ</p></td>
-<td><p>Percorso completo da avviare insieme a tutti i parametri, inclusi i parametri predefiniti% <em>User-ID%</em> e <em>% Contact-ID</em>%.</p></td>
+<td><p>Percorso completo di avvio con eventuali parametri, compresi i parametri predefiniti<em>%user-id%</em> e <em>%contact-id%</em>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>SessionType</p></td>
 <td><p>DWORD</p></td>
-<td><p>0 = sessione locale. L'applicazione viene avviata nel computer locale.</p>
-<p>1 = sessione a due parti (impostazione predefinita). Lync 2013 avvia l'applicazione localmente e quindi invia una notifica desktop per l'altro utente. L'altro utente fa clic sulla notifica per avviare l'applicazione nel computer in uso.</p>
-<p>2 = sessione in più parti. Lync 2013 avvia l'applicazione localmente e quindi invia notifiche desktop agli altri utenti. L'altro utente fa clic sulla notifica per avviare l'applicazione specificata nel computer in uso.</p></td>
+<td><p>0 = Sessione locale. L'applicazione viene avviata nel computer locale.</p>
+<p>1 = Sessione tra due parti (impostazione predefinita). Lync 2013 avvia l'applicazione localmente e quindi invia una notifica desktop all'altro utente. L'altro utente fa clic sulla notifica per avviare l'applicazione nel computer in uso.</p>
+<p>2 = Sessione tra più parti. Lync 2013 avvia l'applicazione localmente e quindi invia notifiche desktop agli altri utenti. L'altro utente fa clic sulla notifica per avviare l'applicazione specificata nel computer in uso.</p></td>
 </tr>
 <tr class="even">
 <td><p>ExtensibleMenu</p></td>
@@ -140,13 +140,13 @@ Usare le impostazioni del registro di sistema nella tabella seguente per aggiung
 <p>ConversationWindowActions</p>
 <p>ConversationWindowRightClick</p>
 <p>ContactCardMenu</p>
-<p>Se ExtensibleMenu non è definito, vengono usati i valori predefiniti di MainWindowRightClick e ConversationWindowActions.</p></td>
+<p>Se ExtensibleMenu non è definito, vengono utilizzati i valori predefiniti MainWindowRightClick e ConversationWindowActions.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Ad esempio, l'editor del registro di sistema seguente (. REG) Mostra i risultati dell'aggiunta di una voce di menu di Contoso Sales Contact Manager al menu azioni nella finestra di conversazione:
+Ad esempio, nel file dell'editor del Registro di sistema (con estensione REG) seguente sono illustrati i risultati dell'aggiunta della voce di menu Contoso Sales Contact Manager al menu Azioni nella finestra Conversazione:
 
     Windows Registry Editor Version 5.00
     [HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Office\15.0\Lync\SessionManager\Apps\{1F9F07C6-7E0B-462B-AAD7-98C6DBEA8F69}]
@@ -164,15 +164,15 @@ Ad esempio, l'editor del registro di sistema seguente (. REG) Mostra i risultati
 
 ## <a name="to-access-a-custom-command"></a>Per accedere a un comando personalizzato
 
-Per accedere a un comando personalizzato dopo l'aggiunta, eseguire una delle operazioni seguenti, a seconda dei valori di ExtensibleMenu definiti:
+Per accedere a un comando personalizzato dopo che è stato aggiunto, eseguire una delle operazioni seguenti, a seconda dei valori di ExtensibleMenu definiti:
 
-  - **MainWindowActions**   nella finestra principale di Lync, fare clic su **strumenti**e quindi su comando personalizzato.
+  - **MainWindowActions**   nella finestra principale di Lync, fare clic su **strumenti**, quindi fare clic sul comando personalizzato.
 
   - **MainWindowRightClick**   nella finestra principale di Lync, fare clic con il pulsante destro del mouse su un contatto e quindi scegliere il comando personalizzato.
 
-  - **ConversationWindowActions**   nella finestra di conversazione, fare clic sull'icona **altre opzioni** e quindi fare clic sul comando personalizzato.
+  - **ConversationWindowActions**   nella finestra conversazione, fare clic sull'icona **altre opzioni** , quindi fare clic sul comando personalizzato.
 
-  - **ConversationWindowRightClick**   nella finestra di conversazione fare clic con il pulsante destro del mouse su un nome di contatto e quindi scegliere il comando personalizzato.
+  - **ConversationWindowRightClick**   nella finestra conversazione, fare clic con il pulsante destro del mouse su un nome di contatto e quindi scegliere il comando personalizzato.
 
 </div>
 

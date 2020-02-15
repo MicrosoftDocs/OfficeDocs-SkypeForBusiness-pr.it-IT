@@ -12,16 +12,16 @@ ms:contentKeyID: 48183601
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 340c27b3e874ea3d9f55aac2b415bd1a440aab9d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fbf29b02af831f82050e9a032a35f0fa57c1eb1e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755470"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046249"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41755470"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-05_
+_**Ultimo argomento modificato:** 2012-10-05_
 
-La distribuzione del trunking SIP può essere un grande passo verso la semplificazione delle telecomunicazioni dell'organizzazione e la preparazione di miglioramenti aggiornati alle comunicazioni in tempo reale. Uno dei vantaggi principali del trunking SIP è che puoi consolidare le connessioni dell'organizzazione con la rete PSTN (Public Switched Telephone Network) in un sito centrale, in contrapposizione al suo predecessore, il trunking di Time Division Multiplexing (TDM), che in genere richiede un trunk separato da ogni sito di succursale.
+La distribuzione del trunking SIP può costituire un importante passo verso la semplificazione delle telecomunicazioni nella propria organizzazione e per prepararsi agli ultimi aggiornamenti relativi alle comunicazioni in tempo reale. Uno dei principali vantaggi del trunking SIP è rappresentato dalla possibilità di consolidare le connessioni dell'organizzazione alla rete PSTN (public switched telephone network) presso un sito centrale, mentre il relativo predecessore, il trunking TDM (time division multiplexing) in genere richiede un trunk separato per ogni sito derivato.
 
 <div>
 
 ## <a name="sip-trunking-in-lync-server"></a>Trunking SIP in Lync Server
 
-Le funzionalità di trunking SIP di Lync Server 2013 consentono le operazioni seguenti:
+Le funzionalità di trunking SIP di Lync Server 2013 consentono di:
 
-  - Un utente aziendale, sia all'interno che all'esterno del firewall aziendale, può effettuare una chiamata locale o una chiamata a lunga distanza specificata da un numero conforme E. 164 che viene terminato sulla rete PSTN come servizio del provider di servizi corrispondente.
+  - Un utente Enterprise all'interno o all'esterno del firewall aziendale può effettuare una chiamata locale o interurbana specificata da un numero compatibile con E.164 che viene terminata sulla rete PSTN come servizio del provider di servizi corrispondente.
 
-  - Qualsiasi abbonato PSTN può contattare un utente aziendale all'interno o all'esterno del firewall aziendale componendo un numero DID (Direct Interior Dialing) associato all'utente aziendale.
+  - Qualsiasi sottoscrittore PSTN può contattare un utente Enterprise all'interno o all'esterno del firewall aziendale componendo un numero DID (Direct Inward Dialing) associato all'utente Enterprise.
 
 </div>
 
@@ -55,19 +55,19 @@ Le funzionalità di trunking SIP di Lync Server 2013 consentono le operazioni se
 
 ## <a name="cost-savings"></a>Risparmi sui costi
 
-Il risparmio di costi associato al trunking SIP può essere sostanziale:
+I risparmi sui costi associati al trunking SIP possono essere significativi:
 
-  - Le chiamate interurbane in genere costano molto meno attraverso un trunk SIP.
+  - Le chiamate interurbane in genere sono molto meno costose tramite un trunk SIP.
 
-  - È possibile tagliare i costi di gestibilità e ridurre la complessità della distribuzione.
+  - È possibile tagliare i costi di gestione e ridurre la complessità della distribuzione.
 
-  - Le tariffe BRI (Basic Rate Interface) e PRI (Primary Rate Interface) possono essere eliminate se si connette un trunk SIP direttamente al proprio ITSP a costi decisamente più bassi. In TDM trunking i provider di servizi caricano le chiamate al minuto. Il costo del trunking SIP può essere basato sull'utilizzo della larghezza di banda, che è possibile acquistare in incrementi più piccoli e più economici. Il costo effettivo dipende dal modello di servizio della ITSP scelta.
+  - Le tariffe BRI (Basic Rate Interface) e PRI (Primary Rate Interface) possono essere eliminate se si connette un trunk SIP direttamente al provider di servizi di telefonia Internet (ITSP) con un costo significativamente inferiore. Nel trunking TDM i provider di servizi applicano alle chiamate una tariffa al minuto. Il costo del trunking SIP può basarsi sull'utilizzo della larghezza di banda, che può essere acquistato con incrementi inferiori, più economici. Il costo effettivo dipende dal modello di servizio dell'ITSP scelto.
 
 <div>
 
-## <a name="sip-trunking-vs-hosting-a-pstn-gateway-or-ip-pbx"></a>Trunking SIP e hosting di un gateway PSTN o IP-PBX
+## <a name="sip-trunking-vs-hosting-a-pstn-gateway-or-ip-pbx"></a>Confronto tra trunking SIP e hosting di un gateway PSTN o di un sistema IP-PBX
 
-Poiché i trunk SIP si connettono direttamente al provider di servizi, è possibile eliminare i gateway PSTN e i costi e la complessità della gestione. L'uso di un trunk SIP può determinare un notevole risparmio di costi tramite la riduzione della manutenzione e dell'amministrazione.
+Poiché i trunk SIP si connettono direttamente al provider di servizi, è possibile eliminare i gateway PSTN con relativa complessità e con i costi di gestione a essi associati. L'utilizzo di un trunk SIP può determinare significativi risparmi sui costi grazie a una riduzione delle attività di manutenzione e amministrazione.
 
 </div>
 
@@ -75,19 +75,19 @@ Poiché i trunk SIP si connettono direttamente al provider di servizi, è possib
 
 <div>
 
-## <a name="expanded-voip-services"></a>Servizi VoIP espansi
+## <a name="expanded-voip-services"></a>Servizi VoIP estesi
 
-Le funzionalità vocali sono spesso la motivazione principale per la distribuzione del trunking SIP, ma il supporto vocale è solo il primo passaggio. Con il trunking SIP è possibile estendere le funzionalità VoIP e consentire a Lync Server 2013 di offrire un set di servizi più completo. Ad esempio:
+Le funzionalità vocali sono spesso la motivazione principale per la distribuzione del trunking SIP, ma il supporto vocale è solo il primo passaggio. Con il trunking SIP, è possibile estendere le funzionalità VoIP e consentire a Lync Server 2013 di fornire un set di servizi più completo. Ad esempio:
 
-  - Il rilevamento della presenza avanzata per i dispositivi che non esegue Lync Server 2013 può offrire una migliore integrazione con i telefoni cellulari, consentendo di verificare quando un utente si trova in una chiamata telefonica mobile.
+  - Il rilevamento della presenza avanzata per i dispositivi che non eseguono Lync Server 2013 è in grado di offrire una migliore integrazione con i telefoni cellulari, consentendo di vedere quando un utente è su una chiamata di telefonia mobile.
 
-  - La chiamata di emergenza E9-1-1 consente alle autorità che rispondono alle chiamate di 911 di determinare la posizione del chiamante dal proprio numero di telefono.
+  - La funzionalità per le chiamate di emergenza E9-1-1 consente alle autorità che rispondono a tali chiamate di determinare il luogo da cui proviene la chiamata dal numero di telefono.
 
 <div>
 
 
 > [!NOTE]  
-> Contattare l'ITSP per un elenco dei servizi supportati e che possono essere abilitati per l'organizzazione.
+> Contattare il provider di servizi Internet per un elenco dei servizi supportati e che possono essere abilitati per la propria organizzazione.
 
 
 

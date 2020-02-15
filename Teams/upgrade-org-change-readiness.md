@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e3f569cfc225c1933b978e9a0a7d9e9bf95be783
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 6d7d0b1cf23b94f33c66218eaacdfdeda5aaab19
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837133"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048597"
 ---
 ![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione degli utenti](media/upgrade-banner-user-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione degli utenti")
 
@@ -107,7 +107,7 @@ Per ottenere il massimo dai team, Costruisci una strategia di lavoro di gruppo c
 | | |
 |---|---|
 | ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punto decisionale|<ul><li>Quali sono gli scenari di lavoro di gruppo di Relatable per velocizzare l'adozione di team e facilitare l'aggiornamento da Skype for business?</li></ul> |
-| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>USA gli esempi seguenti per creare scenari di Teaming personalizzati. Documentarli nella [cartella di lavoro aggiornamento](https://aka.ms/upgradesuccesskit).</li><li>Per altri scenari ed esempi, vedere la [raccolta produttività](https://www.microsoft.com/en-us/microsoft-365/success/)</li></ul>|
+| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>USA gli esempi seguenti per creare scenari di Teaming personalizzati. Documentarli nella [cartella di lavoro aggiornamento](https://aka.ms/upgradesuccesskit).</li><li>Per altri scenari ed esempi, vedere la [raccolta produttività](https://www.microsoft.com/microsoft-365/success/)</li></ul>|
 
 ### <a name="examples"></a>Esempi
 

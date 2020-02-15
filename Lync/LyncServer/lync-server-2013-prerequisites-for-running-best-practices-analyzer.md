@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: prerequisiti per l'uso di Best Practices Analyzer"
+title: "Lync Server 2013: prerequisiti per l'esecuzione di Best Practices Analyzer"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183283
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9a720a9bc1245146d816fe3c42bbf8e24020a134
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e0795e29fb52171af32ecbde62a6ecddcfa00931
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747256"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050328"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="prerequisites-for-running-best-practices-analyzer-in-lync-server-2013"></a>Prerequisiti per l'uso di Best Practices Analyzer in Lync Server 2013
+# <a name="prerequisites-for-running-best-practices-analyzer-in-lync-server-2013"></a>Prerequisiti per l'esecuzione di Best Practices Analyzer in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41747256"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-25_
+_**Ultimo argomento modificato:** 2012-06-25_
 
-È possibile usare Best Practices Analyzer per analizzare l'ambiente di Lync Server 2013 per problemi e creare report e per visualizzare i risultati di una scansione corrente o precedente. Prima di eseguire l'analisi delle procedure consigliate per analizzare l'ambiente, è necessario verificare che l'account che si prevede di usare per eseguire l'analisi disponga dei diritti e delle autorizzazioni necessari e che tutti i prerequisiti di installazione siano stati soddisfatti.
+È possibile utilizzare Best Practices Analyzer per analizzare l'ambiente di Lync Server 2013 per problemi e creare report e per visualizzare i risultati di un'analisi corrente o precedente. Prima di eseguire Best Practices Analyzer per l'analisi dell'ambiente è necessario verificare che l'account che si intende usare per eseguire l'analisi disponga dei diritti e delle autorizzazioni richieste e che tutti i prerequisiti di installazione siano stati soddisfatti.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Requisiti per i diritti utente e le appartenenze ai gruppi per Best Practices Analyzer in Lync Server 2013](lync-server-2013-group-memberships-and-user-rights-requirements-for-best-practices-analyzer.md)
+  - [Appartenenze a gruppi e requisiti per i diritti utente per Best Practices Analyzer in Lync Server 2013](lync-server-2013-group-memberships-and-user-rights-requirements-for-best-practices-analyzer.md)
 
-  - [Requisiti per l'uso di Best Practices Analyzer in Lync Server 2013](lync-server-2013-requirements-for-running-best-practices-analyzer.md)
+  - [Requisiti per l'esecuzione di Best Practices Analyzer in Lync Server 2013](lync-server-2013-requirements-for-running-best-practices-analyzer.md)
 
 </div>
 

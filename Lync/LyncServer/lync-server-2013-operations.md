@@ -12,16 +12,16 @@ ms:contentKeyID: 48184155
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 27e99c56ae8c7699b3e19f18ef057b194539b75e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c0726a1c7893a2411ed1fc1ad8981349b8cc9add
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755780"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051338"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41755780"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-01-26_
+_**Ultimo argomento modificato:** 2015-01-26_
 
-Gli argomenti di questa sezione illustrano come usare gli strumenti di gestione per configurare e gestire la distribuzione di Lync Server 2013.
+Negli argomenti di questa sezione viene illustrato come utilizzare gli strumenti di gestione per configurare e gestire la distribuzione di Lync Server 2013.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Operations Guide for Lync Server 2013](lync-server-2013-operations-guide.md)
+  - [Guida alle operazioni per Lync Server 2013](lync-server-2013-operations-guide.md)
 
   - [Strumenti di amministrazione di Lync Server 2013](lync-server-2013-lync-server-administrative-tools.md)
 
@@ -65,7 +65,7 @@ Gli argomenti di questa sezione illustrano come usare gli strumenti di gestione 
 
   - [Gestione di dispositivi, telefoni e applicazioni client in Lync Server 2013](lync-server-2013-managing-devices-phones-and-client-applications.md)
 
-  - [Gestione della federazione e dell'accesso esterno a Lync Server 2013](lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md)
+  - [Gestione della Federazione e dell'accesso esterno a Lync Server 2013](lync-server-2013-managing-federation-and-external-access-to-lync-server-2013.md)
 
   - [Gestione dell'archiviazione in Lync Server 2013](lync-server-2013-managing-archiving.md)
 
@@ -73,9 +73,9 @@ Gli argomenti di questa sezione illustrano come usare gli strumenti di gestione 
 
   - [Gestione dell'infrastruttura di rete di Lync Server 2013](lync-server-2013-managing-the-lync-server-2013-network-infrastructure.md)
 
-  - [Gestione dei servizi di emergenza avanzati e del servizio di posizione in Lync Server 2013](lync-server-2013-managing-enhanced-9-1-1-and-the-location-service.md)
+  - [Managing Enhanced 9-1-1 e The location Service in Lync Server 2013](lync-server-2013-managing-enhanced-9-1-1-and-the-location-service.md)
 
-  - [Gestione di servizi e ruoli server di Lync Server 2013](lync-server-2013-managing-lync-server-services-and-server-roles.md)
+  - [Gestione di servizi e ruoli del server di Lync Server 2013](lync-server-2013-managing-lync-server-services-and-server-roles.md)
 
   - [Gestione delle applicazioni in Lync Server 2013](lync-server-2013-managing-applications.md)
 
@@ -83,11 +83,11 @@ Gli argomenti di questa sezione illustrano come usare gli strumenti di gestione 
 
   - [Backup e ripristino di Lync Server 2013](lync-server-2013-backing-up-and-restoring-lync-server.md)
 
-  - [Configurazione di monitoraggio e integrità in Lync Server 2013](lync-server-2013-monitoring-and-health-configuration.md)
+  - [Configurazione del monitoraggio e dell'integrità in Lync Server 2013](lync-server-2013-monitoring-and-health-configuration.md)
 
   - [Lync Server 2013 Management Shell](lync-server-2013-lync-server-management-shell.md)
 
-  - [Analizzatore delle procedure consigliate di Lync Server 2013](lync-server-2013-lync-server-best-practices-analyzer.md)
+  - [Best Practices Analyzer di Lync Server 2013](lync-server-2013-lync-server-best-practices-analyzer.md)
 
 </div>
 
@@ -97,7 +97,7 @@ Gli argomenti di questa sezione illustrano come usare gli strumenti di gestione 
 
 
 [Distribuzione di Lync Server 2013](lync-server-2013-deployment.md)  
-[Pianificazione per Lync Server 2013](lync-server-2013-planning.md)  
+[Planning for Lync Server 2013](lync-server-2013-planning.md)  
   
 
 </div>

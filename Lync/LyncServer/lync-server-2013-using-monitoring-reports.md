@@ -12,20 +12,20 @@ ms:contentKeyID: 48184480
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5662ba6df2f270355a3c7f7532c3283cc033d73d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c37cd0f96ea0dd8e3fa63a851c3c93caf5988c7d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744066"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044278"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="using-monitoring-reports-in-lync-server-2013"></a>Uso di report di monitoraggio in Lync Server 2013
+# <a name="using-monitoring-reports-in-lync-server-2013"></a>Utilizzo di report di monitoraggio in Lync Server 2013
 
 </div>
 
@@ -35,51 +35,51 @@ ms.locfileid: "41744066"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-21_
+_**Ultimo argomento modificato:** 2012-10-21_
 
-Lync Server 2013 include un set di report standard pubblicati da Microsoft SQL Server Reporting Service. Questi report, accessibili tramite un Web browser, consentono l'utilizzo, le informazioni di diagnostica delle chiamate e le informazioni sulla qualità dei contenuti multimediali, tutte basate sui record di registrazione dei dettagli delle chiamate (CDR) e la qualità dell'esperienza (QoE) archiviati nei database CDR e QoE.
+Lync Server 2013 include un insieme di report standard pubblicati da Microsoft SQL Server Reporting Services. Questi rapporti, cui è possibile accedere utilizzando un browser, contengono informazioni sull'utilizzo, di diagnostica della chiamate e sulla qualità multimediale, tutte basate su record di registrazione dettagli chiamata e QoE (Quality of Experience) archiviati nei database CDR e QoE.
 
-Per usare questi report, è necessario installare i report di monitoraggio in un computer in cui è in corso un'istanza di SQL Server.
+Per utilizzare questi rapporti, è necessario installare i report di monitoraggio in un computer che esegue un'istanza di SQL Server.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [L'uso del dashboard di monitoraggio in Lync Server 2013](lync-server-2013-using-the-monitoring-dashboard.md)   offre agli amministratori una rapida panoramica dell'integrità del sistema e dell'uso del sistema.
+  - [L'utilizzo del dashboard di monitoraggio in Lync Server 2013](lync-server-2013-using-the-monitoring-dashboard.md)   fornisce agli amministratori una breve panoramica dell'integrità del sistema e dell'utilizzo del sistema.
 
-  - [I report sull'utilizzo del sistema in Lync Server 2013](lync-server-2013-system-usage-reports.md)   offrono informazioni sull'uso del sistema in base ai dati CDR raccolti da Lync Server.
+  - [I report sull'utilizzo del sistema in Lync Server 2013](lync-server-2013-system-usage-reports.md)   offrono informazioni sull'utilizzo del sistema in base ai dati di registrazione dettagli chiamata raccolti da Lync Server.
 
-  - [I report di diagnostica delle chiamate (per utente) in Lync Server 2013](lync-server-2013-call-diagnostic-reports-per-user.md)   offrono informazioni per utente sulle sessioni peer-to-peer e conferenze non riuscite.
+  - [Rapporti di diagnostica chiamate (per utente) in Lync Server 2013](lync-server-2013-call-diagnostic-reports-per-user.md)   fornisce informazioni per utente sulle sessioni peer-to-peer e di conferenza non riuscite.
 
-  - [I report di diagnostica delle chiamate in Lync Server 2013](lync-server-2013-call-diagnostic-reports.md)   offrono informazioni di riepilogo e dati di diagnostica per sessioni peer-to-peer e conferenze non riuscite.
+  - [Rapporti di diagnostica delle chiamate in Lync Server 2013](lync-server-2013-call-diagnostic-reports.md)   fornisce informazioni di riepilogo e dati di diagnostica per le sessioni peer-to-peer e di conferenza non riuscite.
 
-  - [Report di diagnostica di qualità multimediale in Lync Server 2013](lync-server-2013-media-quality-diagnostic-reports.md)   fornisce informazioni sulla qualità delle chiamate, nonché informazioni di diagnostica e risoluzione dei problemi per le chiamate non riuscite.
+  - [Rapporti di diagnostica qualità multimediale in Lync Server 2013](lync-server-2013-media-quality-diagnostic-reports.md)   fornisce informazioni sulla qualità delle chiamate e informazioni di diagnostica e risoluzione dei problemi per le telefonate non riuscite.
 
 </div>
 
 <div>
 
-## <a name="locating-records"></a>Individuazione di record
+## <a name="locating-records"></a>Individuazione dei record
 
-I report di monitoraggio mostrano solo un numero limitato di record sullo schermo in qualsiasi momento. Il numero effettivo di record visualizzati in uno schermo varia a seconda del report. Per visualizzare i record che non sono attualmente visualizzati sullo schermo, è possibile usare il controllo avanti e indietro standard (disponibile nella barra degli strumenti di ogni report) che consente di eseguire la pagina dei dati. È anche possibile passare rapidamente alla prima pagina o all'ultima pagina del set di dati.
+I rapporti di monitoraggio mostrano solo un numero limitato di record sullo schermo per volta. Il numero effettivo di record visualizzati sullo schermo varia a seconda del rapporto. Per visualizzare i record non mostrati sullo schermo, è possibile utilizzare il controllo Avanti o Indietro standard, disponibile sulla barra degli strumenti di ogni rapporto, che consente di scorrere i dati. È inoltre possibile passare rapidamente alla prima pagina o all'ultima pagina del set di dati.
 
-Oltre a usare i controlli avanti e indietro, è anche possibile passare a una pagina qualsiasi del DataSet digitando semplicemente il numero di pagina nella casella **pagina corrente** e quindi premere INVIO.
+Oltre a utilizzare i controlli Avanti e Indietro, è possibile passare a qualsiasi pagina nel set di dati semplicemente digitando il numero di pagina nella casella **Pagina corrente** e quindi premendo INVIO.
 
-Oltre a fornire la possibilità di paginare i dati, ogni report include anche la limitata capacità di trovare record. Per trovare i record in base a un valore specifico, digitare tale valore nella casella **trova** e quindi fare clic su **trova**. Il report inizia la ricerca nei dati e si arresta nella prima istanza del valore immesso nella casella **trova** . Per trovare il record successivo che soddisfa i criteri di ricerca, fare clic su **Avanti**.
+Oltre a consentire di scorrere i dati, ogni rapporto include anche caratteristiche limitate per trovare i record. Per trovare record in base a un valore specificato, digitare il valore nella casella **Trova** e quindi fare clic su **Trova**. Viene avviata la ricerca nei dati del rapporto e viene arrestata alla prima istanza del valore immesso nella casella **Trova**. Per trovare il record successivo che soddisfa i criteri di ricerca, fare clic su **Avanti**.
 
-Come indicato, i report di monitoraggio contengono solo le funzioni di ricerca più basilari. Ad esempio, non è possibile specificare il campo in cui deve essere trovato il valore. Il meccanismo di ricerca cerca automaticamente i valori corrispondenti in tutti i campi di ogni record. Non è possibile usare i caratteri jolly nelle ricerche e tutte le ricerche cercano valori parziali. Ciò significa che se si cerca 111 la ricerca restituisce il valore 111 insieme ai valori 11100, 811, 3112, 611A5B e tutti gli altri campi che includono il valore 111 in un punto qualsiasi all'interno di tale campo.
+Come accennato, i rapporti di monitoraggio offrono solo funzioni di ricerca di base. Non è ad esempio possibile specificare il campo in cui deve essere presente il valore. Il meccanismo di ricerca esegue automaticamente la ricerca di valori corrispondenti in ogni campo di ogni record. Non è possibile utilizzare caratteri jolly nelle ricerche e in tutte le ricerche vengono cercati i valori parziali. Di conseguenza, se si cerca 111, non verrà trovato solo il valore 111, ma anche i valori 11100, 811, 3112, 611A5B e tutti gli altri campi che includono il valore 111 in qualsiasi posizione.
 
-Ogni report è configurato per visualizzare un set predefinito di record. Per impostazione predefinita, ad esempio, il report di registrazione dell'utente Mostra le attività di registrazione degli utenti per la settimana passata. In alcuni casi, potrebbe verificarsi un report che restituisce nessun record. In questo caso, significa che non sono state registrate registrazioni utente nell'ultima settimana. Se viene visualizzato il messaggio "nessun risultato corrisponde ai filtri dei report", provare a modificare i valori di filtro (ad esempio, cambiare il periodo di tempo dell'ultimo mese anziché la settimana precedente) e rieseguire la query. Per informazioni dettagliate, vedere la sezione "filtro dei dati" più avanti in questo argomento.
+Ogni rapporto è configurato per visualizzare un insieme predefinito di record. Ad esempio, per impostazione predefinita, in Rapporto registrazione utenti vengono visualizzate le attività di registrazione degli utenti per l'ultima settimana. In alcuni casi, ciò può produrre un rapporto che non restituisce alcun record. In questo caso, significa che nell'ultima settimana non è stata effettuata alcuna registrazione di utenti. Se viene visualizzato il messaggio "Nessun risultato corrisponde ai filtri del rapporto", provare a modificare i valori del filtro, ad esempio modificando il periodo di tempo dall'ultima settimana all'ultimo mese, e quindi eseguire di nuovo la query. Per informazioni dettagliate, vedere la sezione "Applicazione di filtri ai dati" più avanti in questo argomento.
 
 </div>
 
 <div>
 
-## <a name="filtering-data"></a>Filtrare i dati
+## <a name="filtering-data"></a>Applicazione di filtri ai dati
 
-Ci saranno probabilmente momenti in cui si vuole esaminare solo un sottoinsieme di record. Ad esempio, solo le sessioni peer-to-peer invece di sessioni peer-to-peer e conferenze. Allo stesso modo, ci saranno momenti in cui è necessario ridurre il numero di record restituiti. Per impostazione predefinita, un report può visualizzare solo i primi record di 1.000 in un set di dati. Per risolvere questi problemi, la maggior parte dei report include una serie di opzioni di filtro. Ad esempio, se si vogliono visualizzare solo i record per l'intervallo di tempo compreso tra il 1 ° gennaio 2011 e il 15 gennaio 2011, è possibile immettere il 1 ° gennaio 2011 nella casella **da** e il 15 gennaio 2011 nella casella **a** . Se si fa clic su **Visualizza report**, i dati restituiti saranno limitati alle attività che hanno avuto luogo tra il 1 ° gennaio 2011 e il 15 gennaio 2011.
+In alcuni casi può essere utile cercare solo un sottoinsieme di record, ad esempio solo le sessioni peer-to-peer anziché le sessioni peer-to-peer e di conferenza. Analogamente, in altri casi sarà necessario ridurre il numero di record restituiti. Per impostazione predefinita, un rapporto può visualizzare solo i primi 1.000 record in un set di dati. Per risolvere questi problemi, la maggior parte dei rapporti include un certo numero di opzioni di filtro. Se, ad esempio, si desidera visualizzare solo i record per il periodo di tempo compreso tra l'1 gennaio 2011 e il 15 gennaio 2011, è possibile immettere 1 gennaio 2011 nella casella **Da** e 15 gennaio 2011 nella casella **A**. Se quindi si fa clic su **Visualizza rapporto**, i dati restituiti saranno limitati alle attività avvenute dall'1 gennaio 2011 al 15 gennaio 2011.
 
-I filtri disponibili variano a seconda del report che si sta visualizzando. Per informazioni dettagliate su un report specifico, vedere l'argomento della Guida relativo al report.
+I filtri disponibili dipendono dal rapporto visualizzato. Per informazioni dettagliate su un rapporto specifico, vedere l'argomento della Guida relativo al rapporto desiderato.
 
 </div>
 
@@ -87,11 +87,11 @@ I filtri disponibili variano a seconda del report che si sta visualizzando. Per 
 
 ## <a name="exporting-data"></a>Esportazione di dati
 
-I report di monitoraggio includono almeno due modi diversi per esportare i dati inclusi in un report. È possibile usare l'opzione **Esporta** nella barra degli strumenti visualizzata nella parte superiore di ogni report. Per usare questa opzione, selezionare il formato di esportazione desiderato nell'elenco a discesa **selezionare un formato** . I formati seguenti sono disponibili:
+I rapporti di monitoraggio consentono di esportare i dati inclusi in un rapporto in almeno due modi diversi. È possibile utilizzare l'opzione **Esporta** sulla barra degli strumenti visualizzata nella parte superiore di ogni rapporto. Per utilizzare questa opzione, selezionare innanzitutto il formato di esportazione desiderato nell'elenco a discesa **Selezionare un formato**. Sono disponibili i formati seguenti:
 
-  - File XML con i dati del report
+  - File XML con dati del rapporto
 
-  - CSV (delimitato da virgola)
+  - CSV (delimitato da virgole)
 
   - File Acrobat (PDF)
 
@@ -103,9 +103,9 @@ I report di monitoraggio includono almeno due modi diversi per esportare i dati 
 
   - Word
 
-Dopo aver selezionato un formato, fare clic su **Esporta**. Quando viene visualizzata la finestra di dialogo **Download file** , fare clic su **Salva**. Nella finestra di dialogo **Salva con** nome selezionare una cartella di destinazione e quindi fare clic su **Salva**.
+Dopo aver selezionato un formato, fare clic su **Esporta**. Quando viene visualizzata la finestra di dialogo **Download file**, fare clic su **Salva**. Nella finestra di dialogo **Salva con nome** selezionare una cartella di destinazione, immettere un nome di file e quindi fare clic su **Salva**.
 
-Se è installato Microsoft OneNote, è anche possibile copiare i dati del report in OneNote. A questo scopo, fai clic con il **pulsante destro del mouse sulla barra** degli strumenti. Nella finestra di dialogo **Seleziona posizione in OneNote** selezionare la sezione in OneNote in cui si vogliono copiare i dati e quindi fare clic su **OK**.
+Se nel computer è installato Microsoft OneNote, è anche possibile copiare i dati del rapporto in OneNote. A tale scopo, fare clic con il pulsante destro del mouse sul pulsante **Visualizza rapporto** sulla barra degli strumenti. Nella finestra di dialogo **Seleziona percorso in OneNote** selezionare la sezione di OneNote in cui si desidera copiare i dati e quindi fare clic su **OK**.
 
 </div>
 

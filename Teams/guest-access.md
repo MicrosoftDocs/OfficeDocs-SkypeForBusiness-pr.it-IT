@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 010dd452bc727a3d5ccfe33b981d9bdafd953f73
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: a8a27d5085130810a56ff5592d61df03f08b8980
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41833246"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42013009"
 ---
 <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 ======================================
@@ -84,5 +84,5 @@ Per un elenco completo delle funzionalità di un utente guest in Teams, vedere l
 ## <a name="more-information"></a>Altre informazioni
 
 [Contattare il supporto di Office 365 per le aziende - Guida per gli amministratori](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)  
-[Accesso guest ai Gruppi di Office 365](https://support.office.com/en-us/article/guest-access-in-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6?ui=en-US&rs=en-US&ad=US#bkmk_usepowershell&PickTab=FAQ) 
+[Accesso guest ai Gruppi di Office 365](https://support.office.com/article/guest-access-in-office-365-groups-bfc7a840-868f-4fd6-a390-f347bf51aff6?ui=en-US&rs=en-US&ad=US#bkmk_usepowershell&PickTab=FAQ) 
   

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurazione di server perimetrali'
+title: 'Lync Server 2013: configurazione dei server perimetrali'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183354
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7621d8d8cfb22e774bd13f767c37e49321d3e0a7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a3702038781010ce56887ba39c89d09c23bffdbd
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764622"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037606"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="setting-up-edge-servers-in-lync-server-2013"></a>Configurazione di server perimetrali in Lync Server 2013
+# <a name="setting-up-edge-servers-in-lync-server-2013"></a>Configurazione dei server perimetrali in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41764622"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-08_
+_**Ultimo argomento modificato:** 2012-09-08_
 
-Le attività principali necessarie per configurare Edge Server sono le stesse per l'installazione di un singolo Edge Server o di un pool di Edge Server con bilanciamento del carico, ad eccezione del fatto che un pool di server Edge con bilanciamento del carico hardware richiede la distribuzione dei servizi di bilanciamento del carico e passaggi aggiuntivi per replica della configurazione su più Edge Server.
+Le attività principali da eseguire per impostare gli Edge Server sono uguali a quelle necessarie per installare un singolo Edge Server o un pool Edge Server con bilanciamento del carico, con l'eccezione che un pool Edge Server con bilanciamento del carico hardware richiede la distribuzione dei servizi di bilanciamento del carico e l'esecuzione di ulteriori passaggi per replicare l'impostazione in più Edge Server.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Configurare le interfacce di rete per i server perimetrali in Lync Server 2013](lync-server-2013-set-up-network-interfaces-for-edge-servers.md)
 
@@ -55,7 +55,7 @@ Le attività principali necessarie per configurare Edge Server sono le stesse pe
 
   - [Avviare server perimetrali in Lync Server 2013](lync-server-2013-start-edge-servers.md)
 
-  - [Configurare server proxy inversi per Lync Server 2013](lync-server-2013-setting-up-reverse-proxy-servers.md)
+  - [Configurazione dei server proxy inversi per Lync Server 2013](lync-server-2013-setting-up-reverse-proxy-servers.md)
 
 </div>
 

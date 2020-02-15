@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: visualizzazione delle informazioni sulla route dell'area di rete"
+title: 'Lync Server 2013: visualizzazione delle informazioni sulle route delle aree di rete'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733611
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c8299bd598edf18b7ed7f06088e4bfbbcebab354
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d6acf4fbc1766adbe2c2a14a28cfbeef16f199b7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757370"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046179"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="viewing-network-region-route-information-in-lync-server-2013"></a>Visualizzazione delle informazioni sulla route dell'area di rete in Lync Server 2013
+# <a name="viewing-network-region-route-information-in-lync-server-2013"></a>Visualizzazione delle informazioni sulle route delle aree di rete in Lync Server 2013
 
 </div>
 
@@ -35,50 +35,50 @@ ms.locfileid: "41757370"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-Ogni area geografica in una configurazione di controllo di ammissione chiamata (CAC) deve avere un modo per accedere a tutte le altre aree geografiche. Mentre i collegamenti con le aree geografiche impostano limitazioni della larghezza di banda sulle connessioni tra regioni e rappresentano anche i collegamenti fisici, una route determina il percorso collegato che verrà attraversato dalla connessione da un'area a un'altra. Usare le procedure seguenti per visualizzare le route dell'area di rete esistenti nel pannello di controllo di Lync Server 2013 o in Lync Server 2013 Management Shell. Per informazioni dettagliate sulla creazione o la modifica di route di area di rete, vedere [creazione o modifica di route dell'area di rete in Lync Server 2013](lync-server-2013-creating-or-modifying-network-region-routes.md).
+Ogni area di una configurazione di controllo di ammissione di chiamata deve in qualche modo poter accedere a tutte le altre aree. Mentre i collegamenti area impostano limitazioni della larghezza di banda nelle connessioni tra aree e rappresentano anche i collegamenti fisici, una route determina il percorso collegato che verrà attraversato dalla connessione per passare da un'area all'altra. Utilizzare le procedure seguenti per visualizzare le route delle aree di rete esistenti in Lync Server 2013 Control Panel o Lync Server 2013 Management Shell. Per informazioni dettagliate sulla creazione o la modifica delle route delle aree di rete, vedere [creazione o modifica di route delle aree di rete in Lync Server 2013](lync-server-2013-creating-or-modifying-network-region-routes.md).
 
 <div>
 
-## <a name="to-view-network-region-route-information-in-lync-server-control-panel"></a>Per visualizzare le informazioni sulla route dell'area di rete nel pannello di controllo di Lync Server
+## <a name="to-view-network-region-route-information-in-lync-server-control-panel"></a>Per visualizzare le informazioni sulle route delle aree di rete nel pannello di controllo di Lync Server
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **area geografica**.
+3.  Nella barra di spostamento sinistra fare clic su **Configurazione di rete**, quindi su **Route area**.
 
-4.  Nella pagina **route dell'area geografica** fare clic sulla route dell'area geografica che si desidera visualizzare.
+4.  Nella pagina **Route area** fare clic sulla route area che si vuole visualizzare.
     
     <div>
     
 
     > [!NOTE]  
-    > È possibile visualizzare una sola route geografica alla volta.
+    > È possibile visualizzare una sola route area per volta.
 
     
     </div>
 
-5.  Nel menu **modifica** fare clic su **Mostra dettagli**.
+5.  Scegliere **Mostra dettagli** dal menu **Modifica**.
 
 </div>
 
 <div>
 
-## <a name="viewing-network-region-route-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni sulla route dell'area di rete tramite i cmdlet di Windows PowerShell
+## <a name="viewing-network-region-route-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni sulle route delle aree di rete tramite i cmdlet di Windows PowerShell
 
-Le informazioni sulla route dell'area di rete possono essere visualizzate usando Windows PowerShell e il cmdlet Get-CsNetworkInterRegionRoute. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile visualizzare le informazioni sulle route delle aree di rete utilizzando Windows PowerShell e il cmdlet Get-CsNetworkInterRegionRoute. Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
-## <a name="to-view-network-region-route-information"></a>Per visualizzare le informazioni sulla route dell'area di rete
+## <a name="to-view-network-region-route-information"></a>Per visualizzare le informazioni sulle route delle aree di rete
 
-  - Per visualizzare informazioni su tutte le route dell'area di rete, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
+  - Per visualizzare informazioni su tutte le route delle aree di rete, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
     
         Get-CsNetworkInterRegionRoute
     
-    Questo restituirà informazioni simili alla seguente:
+    Verranno restituite informazioni simili alle seguenti:
     
         Identity                  : TransAmericaRoute
         NetworkRegionLinks        : {NorthwestToNortheast}
@@ -88,7 +88,7 @@ Le informazioni sulla route dell'area di rete possono essere visualizzate usando
 
 </div>
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsNetworkInterRegionRoute](https://docs.microsoft.com/powershell/module/skype/Get-CsNetworkInterRegionRoute) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-CsNetworkInterRegionRoute](https://docs.microsoft.com/powershell/module/skype/Get-CsNetworkInterRegionRoute).
 
 </div>
 
@@ -97,8 +97,8 @@ Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Get-C
 ## <a name="see-also"></a>Vedere anche
 
 
-[Creazione o modifica di route dell'area di rete in Lync Server 2013](lync-server-2013-creating-or-modifying-network-region-routes.md)  
-[Eliminazione di route di area di rete esistenti in Lync Server 2013](lync-server-2013-deleting-existing-network-region-routes.md)  
+[Creazione o modifica delle route delle aree di rete in Lync Server 2013](lync-server-2013-creating-or-modifying-network-region-routes.md)  
+[Eliminazione delle route delle aree di rete esistenti in Lync Server 2013](lync-server-2013-deleting-existing-network-region-routes.md)  
   
 
 </div>

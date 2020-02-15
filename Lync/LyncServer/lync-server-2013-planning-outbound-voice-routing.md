@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pianificazione del routing vocale in uscita'
+title: 'Lync Server 2013: pianificazione del routing vocale in uscita'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183835
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9d33fbe8d15b78bed9dd651cd7facf35a8249f64
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1fbcb976ed4f3d1464b6b956ef60dc1d00bd6907
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747666"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050578"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41747666"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-Il routing delle chiamate in uscita si applica alle chiamate destinate a un gateway PSTN (Public Switched Telephone Network), trunk o PBX (Private Branch Exchange). Quando un utente effettua una chiamata, il server normalizza il numero di telefono in formato E. 164, se necessario, e tenta di associarlo a un URI SIP. Se il server non riesce a eseguire la corrispondenza, applica la logica di routing delle chiamate in uscita in base alla stringa di chiamata fornita. La logica viene definita configurando le impostazioni del server descritte nella tabella seguente.
+Il routing delle chiamate in uscita viene applicato alle chiamate destinate a un gateway PSTN (Public Switched Telephone Network), al trunk o a un PBX (Private Branch Exchange). Quando un utente effettua una chiamata, il server normalizza il numero di telefono convertendolo nel formato E.164, se necessario, e tenta di associarlo a un URI SIP. Se il server non riesce a trovare una corrispondenza, applica la logica di routing delle chiamate in uscita in base alla stringa di composizione fornita. È possibile definire tale logica configurando le impostazioni del server descritte nella tabella seguente.
 
-### <a name="lync-server-outbound-call-routing-settings"></a>Impostazioni di routing delle chiamate in uscita di Lync Server
+### <a name="lync-server-outbound-call-routing-settings"></a>Impostazioni del server di routing delle chiamate in uscita Lync Server
 
 <table>
 <colgroup>
@@ -54,24 +54,24 @@ Il routing delle chiamate in uscita si applica alle chiamate destinate a un gate
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Dial Plan</p></td>
-<td><p>Un dial plan è un set denominato di regole di normalizzazione che converte i numeri di telefono per una posizione denominata, un singolo utente o un oggetto contatto in un unico formato standard (E. 164) per scopi di autorizzazione del telefono e routing delle chiamate.</p></td>
+<td><p>Dial plan</p></td>
+<td><p>Per dial plan si intende un set denominato di regole di normalizzazione che consente di convertire i numeri di telefono relativi a una località, a un utente o a un oggetto contatto specifico in un unico formato standard (E.164) ai fini dell'autorizzazione del telefono e del routing della chiamata.</p></td>
 </tr>
 <tr class="even">
 <td><p>Regola di normalizzazione</p></td>
-<td><p>Le regole di normalizzazione definiscono il modo in cui i numeri di telefono espressi in diversi formati devono essere instradati per ogni posizione, utente o oggetto contatto specificato. La stessa stringa di chiamata può essere interpretata e tradotta in modo diverso, a seconda della posizione in cui è stata chiamata e della persona o dell'oggetto contatto che effettua la chiamata. Un set di regole di normalizzazione associato a una determinata posizione costituisce un dial plan.</p></td>
+<td><p>Le regole di normalizzazione definiscono come devono essere instradati numeri di telefono espressi in formati diversi per ogni località, utente oppure oggetto contatto specificato. La stessa stringa di composizione può essere interpretata e convertita in modo diverso a seconda della località da cui viene composta e della persona o dell'oggetto contatto che effettua la chiamata. Un insieme di regole di normalizzazione associate a una determinata località costituisce un dial plan.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Criteri vocali</p></td>
-<td><p>Un criterio vocale associa uno o più record di utilizzo PSTN a un utente o a un gruppo di utenti. Un criterio vocale offre anche un elenco delle funzionalità di chiamata che è possibile abilitare o disabilitare.</p></td>
+<td><p>Criterio vocale</p></td>
+<td><p>Un criterio vocale associa uno o più record di utilizzo PSTN a un utente o a un gruppo di utenti. Un criterio vocale fornisce inoltre un elenco di funzionalità di chiamata che è possibile abilitare o disabilitare.</p></td>
 </tr>
 <tr class="even">
-<td><p>Record utilizzo PSTN</p></td>
-<td><p>Un record di utilizzo PSTN specifica una classe di chiamata, ad esempio Internal, local o Long Distance, che può essere eseguita da vari utenti o gruppi di utenti in un'organizzazione.</p></td>
+<td><p>Record di utilizzo PSTN</p></td>
+<td><p>Un record di utilizzo PSTN specifica un tipo di chiamata (ad esempio interna, locale o interurbana) che può essere effettuata da diversi utenti o gruppi di utenti di un'organizzazione.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Route chiamata</p></td>
-<td><p>Una route di chiamata associa i numeri di telefono di destinazione con tronchi particolari e record di utilizzo PSTN. Un gateway PSTN è considerato un trunk.</p></td>
+<td><p>Route di chiamata</p></td>
+<td><p>Una route di chiamata associa i numeri di telefono di destinazione a trunk e record di utilizzo PSTN specifici. Un gateway PSTN viene considerato un trunk.</p></td>
 </tr>
 </tbody>
 </table>
@@ -79,9 +79,9 @@ Il routing delle chiamate in uscita si applica alle chiamate destinate a un gate
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-Questa sezione contiene linee guida per la configurazione delle impostazioni del server di routing delle chiamate in uscita seguenti:
+In questa sezione vengono fornite le linee guida per la configurazione delle impostazioni seguenti del server di routing delle chiamate in uscita:
 
   - <span></span>  
     [Dial plan e regole di normalizzazione in Lync Server 2013](lync-server-2013-dial-plans-and-normalization-rules.md)
@@ -90,7 +90,7 @@ Questa sezione contiene linee guida per la configurazione delle impostazioni del
     [Criteri vocali in Lync Server 2013](lync-server-2013-voice-policies.md)
 
   - <span></span>  
-    [Record utilizzo PSTN in Lync Server 2013](lync-server-2013-pstn-usage-records.md)
+    [Record di utilizzo PSTN in Lync Server 2013](lync-server-2013-pstn-usage-records.md)
 
   - <span></span>  
     [Route vocali in Lync Server 2013](lync-server-2013-voice-routes.md)

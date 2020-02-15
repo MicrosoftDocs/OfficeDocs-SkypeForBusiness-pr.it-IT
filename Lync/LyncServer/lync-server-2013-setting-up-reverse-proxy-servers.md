@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurare server proxy inversi'
+title: 'Lync Server 2013: configurazione dei server proxy inversi'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183225
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fbc6e0aee918d08f47c6df88f91493cd62ae6a3b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6cd5b57c29a622b7c0f051b00bb0ef30e265743e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764582"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42040835"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="setting-up-reverse-proxy-servers-for-lync-server-2013"></a>Configurare server proxy inversi per Lync Server 2013
+# <a name="setting-up-reverse-proxy-servers-for-lync-server-2013"></a>Configurazione dei server proxy inversi per Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41764582"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-05-08_
+_**Ultimo argomento modificato:** 2014-05-08_
 
-Per le distribuzioni di Microsoft Lync Server 2013 Edge Server, è necessario un proxy inverso HTTPS nella rete perimetrale per i client esterni per accedere ai servizi Web di Lync Server 2013 (detti *Web Components* in Office Communications Server) sul Director e sul pool di Home dell'utente. Di seguito sono elencate alcune delle caratteristiche che richiedono l'accesso esterno tramite proxy inverso:
+Per le distribuzioni di Microsoft Lync Server 2013 Edge Server, è necessario un proxy inverso HTTPS nella rete perimetrale per i client esterni per accedere ai servizi Web di Lync Server 2013 (denominati *componenti Web* in Office Communications Server) nel Director e nel pool Home dell'utente. Di seguito sono riportate alcune funzionalità che richiedono l'accesso esterno tramite un proxy inverso:
 
-  - Consentire agli utenti esterni di scaricare il contenuto della riunione per le riunioni.
+  - Consentire agli utenti esterni di scaricare il contenuto delle riunioni.
 
   - Consentire agli utenti esterni di espandere i gruppi di distribuzione.
 
@@ -47,33 +47,33 @@ Per le distribuzioni di Microsoft Lync Server 2013 Edge Server, è necessario un
 
   - Accesso al client Lync Web App.
 
-  - Accedere alla pagina Web delle impostazioni di conferenza telefonica con accesso esterno.
+  - Accedere alla pagina Web Impostazioni conferenza telefonica con accesso esterno.
 
-  - Abilitazione di dispositivi esterni per la connessione al servizio Web Update per dispositivi e per ottenere gli aggiornamenti.
+  - Consentire ai dispositivi esterni di connettersi al servizio Web di aggiornamento dispositivi e ottenere gli aggiornamenti.
 
-  - Consentendo alle applicazioni mobili di individuare e utilizzare automaticamente gli URL di mobilità (MCX) da Internet.
+  - Consentire alle applicazioni mobili di individuare e utilizzare automaticamente gli URL mobili (MCX) da Internet.
 
-  - Abilitare il client Lync 2013, l'app Lync di Windows Store e il client per dispositivi mobili Lync 2013 per individuare gli URL di individuazione di Lync (individuazione automatica) e usare Unified Communications Web API (UCWA).
+  - Abilitazione del client Lync 2013, dell'app Lync Windows Store e del client per dispositivi mobili Lync 2013 per individuare gli URL di individuazione delle scoperte (individuazione automatica) di Lync e utilizzare Unified Communications Web API (UCWA).
 
-È consigliabile configurare il proxy inverso HTTP per pubblicare tutti i servizi Web in tutti i pool. Pubblicazione di https://ExternalFQDN\* /pubblica tutte le directory virtuali di IIS per un pool. È necessaria una regola di pubblicazione per ogni server Standard Edition, pool Front-end o pool di Director o Director nell'organizzazione.
+È consigliabile configurare il proxy inverso HTTP per la pubblicazione di tutti i servizi Web in tutti i pool. Publishing https://ExternalFQDN\* /pubblica tutte le directory virtuali di IIS per un pool. È necessaria una regola di pubblicazione per ogni server Standard Edition, pool Front End, Director o pool di server Director presente nell'organizzazione.
 
-Inoltre, devi pubblicare gli URL semplici. Se l'organizzazione ha un pool di Director o Director, il proxy inverso HTTP ascolta le richieste HTTP/HTTPS per gli URL semplici e li delega alla directory virtuale dei servizi Web esterni nel pool di Director o Director. Se non è stato distribuito un Director, è necessario designare un pool per gestire le richieste per gli URL semplici. Se non si tratta del pool di Home dell'utente, verranno reindirizzati ai servizi Web nel pool Home dell'utente. Gli URL semplici possono essere gestiti da una regola di pubblicazione Web dedicata oppure aggiungerli ai nomi pubblici della regola di pubblicazione Web per il Director. Devi anche pubblicare l'URL del servizio di individuazione automatica esterna.
+È inoltre necessario pubblicare gli URL semplici. Se l'organizzazione dispone di un Director o di un pool di server Director, il proxy inverso HTTP resterà in attesa delle richieste HTTP/HTTPS relative agli URL semplici e le invierà tramite proxy alla directory virtuale dei servizi Web esterni nel Director o nel pool di server Director. Se non è stato distribuito un Director, sarà necessario designare un pool per la gestione delle richieste dirette agli URL semplici. Se non si tratta del pool principale dell'utente, le richieste verranno reindirizzate ai servizi Web in tale pool principale. Gli URL semplici possono essere gestiti da una regola di pubblicazione Web dedicata oppure è possibile aggiungerli ai nomi pubblici della regola di pubblicazione Web per il Director. È inoltre necessario pubblicare l'URL del servizio di individuazione automatica esterno.
 
-È possibile usare Microsoft Forefront Threat Management Gateway 2010, Microsoft Internet Security and Acceleration (ISA) Server 2006 SP1 o Internet Information Server 7,0, 7,5 o 8,0 con Application Request Routing (IIS ARR) come proxy inverso. La procedura dettagliata in questa sezione descrive come configurare Forefront Threat Management Gateway 2010 e la procedura per la configurazione di ISA Server 2006 è quasi identica. Vengono fornite indicazioni anche per IIS ARR. Se si usa un proxy inverso diverso, consultare la documentazione relativa al prodotto e mappare i requisiti definiti in questa sezione alle caratteristiche associate in altri proxy inversi.
+È possibile utilizzare Microsoft Forefront Threat Management Gateway 2010, Microsoft Internet Security and Acceleration (ISA) Server 2006 SP1 o Internet Information Server 7,0, 7,5 o 8,0 con Application Request Routing (IIS ARR) come proxy inverso. Nei passaggi dettagliati di questa sezione viene descritto come configurare Forefront Threat Management Gateway 2010, in quanto i passaggi per configurare ISA Server 2006 sono praticamente identici. Vengono inoltre fornite indicazioni per IIS ARR. Se si utilizza un proxy inverso diverso, consultare la documentazione relativa a tale prodotto e mappare i requisiti definiti qui alle caratteristiche associate in altri proxy inversi.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Internet Information Server Application Request Routing (IIS ARR) è un'opzione completamente testata e supportata per l'implementazione di un proxy inverso per Lync Server 2010 e Lync Server 2013. In novembre 2012, Microsoft ha cessato le vendite di licenze di ForeFront Threat Management Gateway 2010 o TMG. TMG è ancora un prodotto completamente supportato ed è ancora disponibile per la vendita sugli elettrodomestici venduti da terze parti. Inoltre, molti dispositivi di bilanciamento del carico hardware e firewall di terze parti garantiscono il supporto del proxy inverso. Per i dispositivi di bilanciamento del carico hardware e i firewall che includono funzionalità proxy inversa, consultare il fornitore per istruzioni specifiche su come configurare il proprio prodotto per consentire il supporto del proxy inverso per Lync Server. È anche possibile visualizzare le terze parti che hanno inviato la documentazione per il proprio prodotto a Microsoft. Il supporto viene fornito dalla terza parte per la soluzione. Per visualizzare le terze parti attive nella fornitura di soluzioni, vedere <A href="http://go.microsoft.com/fwlink/?linkid=268730">infrastruttura qualificata per Microsoft Lync</A>.
+> Internet Information Server Application Request Routing (IIS ARR) è un'opzione completamente testata e supportata per l'implementazione di un proxy inverso per Lync Server 2010 e Lync Server 2013. Nel novembre 2012, Microsoft ha interrotto la vendita delle licenze di ForeFront Threat Management Gateway 2010 o TMG. La TMG è ancora un prodotto pienamente supportato ed è ancora disponibile per la vendita su elettrodomestici venduti da terze parti. Inoltre, molti dispositivi di bilanciamento del carico hardware di terze parti e firewall forniscono supporto per il proxy inverso. Per i servizi di bilanciamento del carico hardware e firewall che forniscono funzionalità di proxy inverso, consultare il fornitore per istruzioni specifiche su come configurare il proprio prodotto per fornire il supporto per il proxy inverso per Lync Server. È inoltre possibile visualizzare terze parti che hanno inviato documentazione per il proprio prodotto a Microsoft. Il supporto tecnico viene fornito da terze parti per la propria soluzione. Per visualizzare terze parti attive nella fornitura di soluzioni, vedere <A href="http://go.microsoft.com/fwlink/?linkid=268730">Infrastructure qualified for Microsoft Lync</A>.
 
 
 
 </div>
 
-Gli argomenti e le procedure seguenti usano Forefront Threat Management Gateway 2010 e IIS ARR come base per le procedure di distribuzione e configurazione.
+Negli argomenti e nelle procedure seguenti viene utilizzato Forefront Threat Management Gateway 2010 e IIS ARR come base per le procedure di distribuzione e configurazione.
 
-  - [Configurare i nomi di dominio completi (FQDN) delle Web farm per Lync Server 2013](lync-server-2013-configure-web-farm-fqdns.md)
+  - [Configurare i nomi di dominio completi della Web farm per Lync Server 2013](lync-server-2013-configure-web-farm-fqdns.md)
 
   - [Configurare le schede di rete in Lync Server 2013](lync-server-2013-configure-network-adapters.md)
 
@@ -81,46 +81,46 @@ Gli argomenti e le procedure seguenti usano Forefront Threat Management Gateway 
 
   - [Configurare le regole di pubblicazione Web per un singolo pool interno in Lync Server 2013](lync-server-2013-configure-web-publishing-rules-for-a-single-internal-pool.md)
 
-  - [Verificare o configurare l'autenticazione e la certificazione nelle directory virtuali IIS in Lync Server 2013](lync-server-2013-verify-or-configure-authentication-and-certification-on-iis-virtual-directories.md)
+  - [Verificare o configurare l'autenticazione e la certificazione nelle directory virtuali di IIS in Lync Server 2013](lync-server-2013-verify-or-configure-authentication-and-certification-on-iis-virtual-directories.md)
 
-  - [Creare record DNS per server proxy inversi in Lync Server 2013](lync-server-2013-create-dns-records-for-reverse-proxy-servers.md)
+  - [Creare record DNS per i server proxy inversi in Lync Server 2013](lync-server-2013-create-dns-records-for-reverse-proxy-servers.md)
 
   - [Verificare l'accesso tramite il proxy inverso in Lync Server 2013](lync-server-2013-verify-access-through-your-reverse-proxy.md)
 
 <div>
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Operazioni preliminari
 
-Per distribuire correttamente Forefront Threat Management Gateway 2010 come proxy inverso, è necessario installare e configurare un server usando i prerequisiti e i requisiti hardware definiti nella documentazione di Forefront Threat Management Gateway 2010. Vedere l'argomento seguente impostato per configurare correttamente l'hardware e per installare Forefront Threat Management Gateway 2010 sul server prima di procedere.
+Per una distribuzione corretta di Forefront Threat Management Gateway 2010 come proxy inverso, è necessario impostare e configurare un server, utilizzando i prerequisiti e i requisiti hardware definiti nella documentazione di Forefront Threat Management Gateway 2010. Vedere l'argomento seguente impostato per configurare correttamente l'hardware e per installare Forefront Threat Management Gateway 2010 sul server prima di continuare.
 
   - <span></span>  
     [Forefront Threat Management Gateway (TMG) 2010](http://go.microsoft.com/fwlink/?linkid=291292)
 
   - <span></span>  
-    [Raccomandazioni hardware di Forefront TMG 2010](http://go.microsoft.com/fwlink/?linkid=291293)
+    [Consigli sull'hardware di Forefront TMG 2010](http://go.microsoft.com/fwlink/?linkid=291293)
 
 Per distribuire correttamente IIS ARR come proxy inverso, esaminare gli argomenti seguenti per configurare l'hardware e il software prerequisito.
 
   - <span></span>  
-    Per installare IIS in Windows Server 2008 o Windows Server 2008 R2, vedere [installazione di IIS 7 in Windows server 2008 o Windows server 2008 R2](http://go.microsoft.com/fwlink/?linkid=291296)
+    Per installare IIS su Windows Server 2008 o Windows Server 2008 R2, vedere [Installing IIS 7 on Windows server 2008 o Windows server 2008 R2](http://go.microsoft.com/fwlink/?linkid=291296)
 
   - <span></span>  
-    Per installare IIS in Windows Server 2012, vedere [installazione di IIS 8 in Windows server 2012](http://go.microsoft.com/fwlink/?linkid=291297)
+    Per installare IIS su Windows Server 2012, vedere [installazione di IIS 8 su Windows server 2012](http://go.microsoft.com/fwlink/?linkid=291297)
 
   - <span></span>  
-    Per installare IIS in Windows Server 2012 R2, vedere [installazione di iis 8,5 in Windows server 2012 R2](http://go.microsoft.com/fwlink/?linkid=330687)
+    Per installare IIS su Windows Server 2012 R2, vedere [installazione di iis 8,5 su Windows server 2012 R2](http://go.microsoft.com/fwlink/?linkid=330687)
 
   - <span></span>  
-    Per scaricare l'estensione di routing della richiesta di applicazione per IIS, seguire le istruzioni alla [richiesta di applicazione routing v 2.5 download](http://go.microsoft.com/fwlink/?linkid=291298)
+    Per scaricare l'estensione di routing delle richieste di applicazioni per IIS, seguire le istruzioni sul [download di Application Request Routing v 2.5](http://go.microsoft.com/fwlink/?linkid=291298)
 
   - <span></span>  
-    Per installare ARR, per le istruzioni su [Install Application Request Routing versione 2](http://go.microsoft.com/fwlink/?linkid=291299)
+    Per installare ARR, per le istruzioni riportate in [Install Application Request Routing versione 2](http://go.microsoft.com/fwlink/?linkid=291299)
     
     <div>
     
 
     > [!NOTE]  
-    > Le istruzioni attualmente pubblicate sono per ARR 2,0. Per l'installazione dell'estensione, non c'è differenza tra le due versioni.
+    > Le istruzioni attualmente pubblicate sono per ARR 2,0. Per l'installazione dell'estensione, non esiste alcuna differenza tra le due versioni.
 
     
     </div>

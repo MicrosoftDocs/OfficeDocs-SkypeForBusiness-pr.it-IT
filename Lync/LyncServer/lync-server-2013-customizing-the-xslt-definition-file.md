@@ -12,16 +12,16 @@ ms:contentKeyID: 49557733
 ms.date: 09/11/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bf2ab41ed1d9a57f3a3ad5e55e78f46055fc8e87
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7652e2bd31f27c711724e67f67aac29d33038606
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728706"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041075"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,29 +35,29 @@ ms.locfileid: "41728706"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-09-11_
+_**Ultimo argomento modificato:** 2014-09-11_
 
-Il servizio di conformità registra e archivia i dati relativi a ogni conversazione di Lync Server 2013 e persistente del server di chat, anche quando un partecipante:
+Il servizio di conformità registra e archivia i dati relativi a ogni conversazione del server di chat persistente di Lync Server 2013, anche quando un partecipante:
 
-  - Si unisce a una chat room persistente
+  - Aggiunge una chat room persistente
 
   - Lascia una chat room
 
-  - Pubblica un messaggio
+  - Invia un messaggio
 
-  - Cronologia chat visualizzazioni
+  - Visualizza la cronologia della chat
 
   - Carica un file
 
-  - Download di un file
+  - Scarica un file
 
-I dati vengono recapitati come XML, che è possibile trasformare nel formato più adatto alla propria organizzazione, usando un file di definizione XSLT. Questo argomento descrive il file XML creato dal servizio conformità. Vengono inoltre forniti esempi di file di definizione e di output XSLT.
+I dati vengono recapitati in formato XML, trasformabile nel formato più adatto all'organizzazione tramite il file di definizione XSLT. Questo argomento descrive il file XML creato dal servizio di conformità. Sono inoltre disponibili esempi dei file di definizione XSLT e dei file di output.
 
 <div>
 
 ## <a name="output-format"></a>Formato di output
 
-L'output del servizio di conformità è categorizzato per conversazione (l'elemento di conversazione) e quindi per messaggio (elemento Messages), come illustrato nell'esempio di codice seguente.
+L'output del servizio di conformità è categorizzato in base alla conversazione (elemento Conversation) e quindi in base al messaggio (elemento Messages), come mostrato nel codice di esempio seguente.
 
     <?xml version="1.0" encoding="utf-8" ?> 
     <Conversations xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
@@ -72,23 +72,23 @@ L'output del servizio di conformità è categorizzato per conversazione (l'eleme
       </Conversation>
     </Conversations>
 
-Un elemento Conversation contiene quattro elementi (Channel, FirstMessage, StartTimeUTC e EndTimeUTC). L'elemento Channel contiene l'URI (Uniform Resource Identifier) della chat room e l'elemento FirstMessage descrive il primo messaggio nell'elemento Messages. Gli elementi StartTimeUTC e EndTimeUTC consentono gli orari di inizio e di fine della conversazione, come illustrato nell'esempio di codice seguente.
+Un elemento Conversation contiene quattro elementi (Channel, FirstMessage, StartTimeUTC e EndTimeUTC). L'elemento Channel contiene l'URI (Uniform Resource Identifier) della chat room e l'elemento FirstMessage descrive il primo messaggio nell'elemento Messages. Gli elementi StartTimeUTC e EndTimeUTC specificano le ore di inizio e fine per la conversazione, come illustrato nell'esempio di codice seguente.
 
     <<FirstMessage type="JOIN" content="" id="0">
           <Sender UserName="TestUser kazuto" id="10" email="kazuto@litwareinc.com" internal="true" uri="kazuto@litwareinc.com" /> 
           <DateTimeUTC since1970="1212610540953" string="2008-06-04T20:15:40.9535482Z" long="633482073409535482" /> 
     </FirstMessage>
 
-Un elemento Message contiene due elementi (sender e DateTimeUTC) e tre attributi (Type, Content e ID). L'elemento sender rappresenta l'utente che invia il messaggio e l'elemento DateTimeUTC rappresenta quando si verifica un evento, come illustrato nell'esempio di codice seguente.
+Un elemento Messages contiene due elementi (Sender e DateTimeUTC) e tre attributi (Type, Content e ID). L'elemento Sender rappresenta l'utente che invia il messaggio, mentre l'elemento DateTimeUTC indica la data e ora in cui si verifica un evento, come illustrato nell'esempio di codice seguente.
 
     <Message type="JOIN" content="" id="0">
       <Sender UserName="TestUser kazuto" id="10" email="kazuto@litwareinc.com" internal="true" uri="kazuto@litwareinc.com" /> 
       <DateTimeUTC since1970="1206211842612" string="2008-03-22T18:50:42.6127374Z" long="633418086426127374" /> 
     </Message>
 
-La tabella seguente descrive il tipo di attributi del messaggio, il contenuto e l'ID.
+Nella tabella seguente vengono descritti gli attributi del messaggio Type, Content e ID.
 
-### <a name="messages-element-attributes"></a>Attributi degli elementi messages
+### <a name="messages-element-attributes"></a>Attributi dell'elemento Messages
 
 <table>
 <colgroup>
@@ -106,26 +106,26 @@ La tabella seguente descrive il tipo di attributi del messaggio, il contenuto e 
 <tbody>
 <tr class="odd">
 <td><p>Tipo</p></td>
-<td><p>Specifica il tipo di messaggio. I tipi di messaggio sono descritti nella tabella tipi di messaggi degli elementi del messaggio.</p></td>
+<td><p>Specifica il tipo di messaggio. I tipi di messaggio sono descritti nella tabella Tipi di messaggio dell'elemento Messages.</p></td>
 <td><p>Obbligatorio</p></td>
 </tr>
 <tr class="even">
 <td><p>Contenuto</p></td>
-<td><p>Contiene il contenuto del messaggio. I messaggi con un tipo di join o parte non usano questo attributo.</p></td>
+<td><p>Contenuto del messaggio. Questo attributo non è utilizzato per i messaggi con Type Join o Part.</p></td>
 <td><p>Facoltativo</p></td>
 </tr>
 <tr class="odd">
 <td><p>ID</p></td>
-<td><p>Specifica l'ID univoco del contenuto. Questo attributo viene usato solo con i messaggi con un tipo di chat.</p></td>
+<td><p>Specifica l'ID univoco del contenuto. Questo attributo è utilizzato solo con i messaggi con Type Chat.</p></td>
 <td><p>Facoltativo</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Ogni elemento sender contiene cinque attributi: il nome utente, l'ID, la posta elettronica, l'interno e l'URI. Questi attributi sono descritti nella tabella seguente.
+Ogni elemento Sender contiene cinque attributi, ovvero Username, ID, Email, Internal e Uri. Questi attributi sono descritti nella tabella seguente.
 
-### <a name="sender-element-attributes"></a>Attributi degli elementi mittente
+### <a name="sender-element-attributes"></a>Attributi dell'elemento Sender
 
 <table>
 <colgroup>
@@ -142,7 +142,7 @@ Ogni elemento sender contiene cinque attributi: il nome utente, l'ID, la posta e
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Username</p></td>
+<td><p>Nome utente</p></td>
 <td><p>Nome del mittente.</p></td>
 <td><p>Facoltativo</p></td>
 </tr>
@@ -157,8 +157,8 @@ Ogni elemento sender contiene cinque attributi: il nome utente, l'ID, la posta e
 <td><p>Facoltativo</p></td>
 </tr>
 <tr class="even">
-<td><p>Interno</p></td>
-<td><p>Determina se l'utente è un utente interno o un utente federato. Se il valore è impostato su true, l'utente è Internal.</p></td>
+<td><p>Interna</p></td>
+<td><p>Determina se l'utente è interno o federato. Se il valore è impostato su true, l'utente è interno.</p></td>
 <td><p>Facoltativo</p></td>
 </tr>
 <tr class="odd">
@@ -170,9 +170,9 @@ Ogni elemento sender contiene cinque attributi: il nome utente, l'ID, la posta e
 </table>
 
 
-La tabella seguente descrive i tipi di messaggio che l'elemento Message può contenere. Vengono inoltre illustrati gli esempi di utilizzo di ogni elemento.
+Nella tabella seguente vengono descritti i tipi di messaggio che può contenere l'elemento Messages. Sono inoltre disponibili esempi di utilizzo per ogni elemento.
 
-### <a name="message-element-message-types"></a>Tipi di messaggio di elementi messaggio
+### <a name="message-element-message-types"></a>Tipi di messaggio dell'elemento Messages
 
 <table>
 <colgroup>
@@ -189,8 +189,8 @@ La tabella seguente descrive i tipi di messaggio che l'elemento Message può con
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Partecipare a</p></td>
-<td><p>Un utente partecipa a una chat room.</p></td>
+<td><p>Partecipa</p></td>
+<td><p>Un utente si unisce a una chat room.</p></td>
 <td><pre><code>&lt;Message type=&quot;JOIN&quot; content=&quot;&quot; id=&quot;0&quot;&gt;
   &lt;Sender UserName=&quot;TestUser kazuto&quot; id=&quot;10&quot; email=&quot;kazuto@litwareinc.com&quot; internal=&quot;true&quot; uri=&quot;kazuto@litwareinc.com&quot; /&gt; 
   &lt;DateTimeUTC since1970=&quot;1206211842612&quot; string=&quot;2008-03-22T18:50:42.6127374Z&quot; long=&quot;633418086426127374&quot; /&gt; 
@@ -213,15 +213,15 @@ La tabella seguente descrive i tipi di messaggio che l'elemento Message può con
 &lt;/Message&gt;</code></pre></td>
 </tr>
 <tr class="even">
-<td><p>Backchat</p></td>
-<td><p>Un utente richiede contenuto dalla cronologia chat.</p></td>
+<td><p>Dialogo della chat</p></td>
+<td><p>Un utente richiede contenuto dalla cronologia della chat.</p></td>
 <td><pre><code>&lt;Message type=&quot;BACKCHAT&quot; content=&quot;backchatcontent&quot; id=&quot;0&quot;&gt;
   &lt;Sender UserName=&quot;TestUser kazuto&quot; id=&quot;10&quot; email=&quot;kazuto@litwareinc.com&quot; internal=&quot;true&quot; uri=&quot;kazuto@litwareinc.com&quot; /&gt; 
   &lt;DateTimeUTC since1970=&quot;1206034385284&quot; string=&quot;2008-03-20T17:33:05.2841594Z&quot; long=&quot;633416311852841594&quot; /&gt; 
 &lt;/Message&gt;</code></pre></td>
 </tr>
 <tr class="odd">
-<td><p>Caricamento di file</p></td>
+<td><p>File upload</p></td>
 <td><p>Un utente carica un file.</p></td>
 <td><pre><code>&lt;Message type=&quot;FILEUPLOAD&quot; content=&quot;0988239a-bb66-4616-90a4-b07771a2097c.txt&quot; id=&quot;0&quot;&gt;
   &lt;Sender UserName=&quot;TestUser kazuto&quot; id=&quot;10&quot; email=&quot;kazuto@litwareinc.com&quot; internal=&quot;true&quot; uri=&quot;kazuto@litwareinc.com&quot; /&gt; 
@@ -229,7 +229,7 @@ La tabella seguente descrive i tipi di messaggio che l'elemento Message può con
 &lt;/Message&gt;</code></pre></td>
 </tr>
 <tr class="even">
-<td><p>Download di file</p></td>
+<td><p>File download</p></td>
 <td><p>Un utente scarica un file.</p></td>
 <td><pre><code>&lt;Message type=&quot;FILEDOWNLOAD&quot; content=&quot;006074ca-24f0-4b35-8bd8-98006a2d1aa8.txt&quot; id=&quot;0&quot;&gt;
   &lt;Sender UserName=&quot;kazuto@litwareinc.com&quot; id=&quot;10&quot; email=&quot;&quot; internal=&quot;true&quot; uri=&quot;kazuto@litwareinc.com&quot; /&gt; 
@@ -242,9 +242,9 @@ La tabella seguente descrive i tipi di messaggio che l'elemento Message può con
 
 <div>
 
-## <a name="default-persistent-chat-output-xsd-and-example-xsl-transform"></a>XSD di output della chat persistente predefinito e la trasformazione XSL di esempio
+## <a name="default-persistent-chat-output-xsd-and-example-xsl-transform"></a>XSD di output predefinito di chat persistente e trasformazione XSL di esempio
 
-L'esempio di codice seguente contiene l'output predefinito del server di conformità.
+L'esempio di codice seguente contiene l'output predefinito dal server di conformità.
 
     <?xml version="1.0" encoding="utf-8"?>
     <xs:schema id="Conversations"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">

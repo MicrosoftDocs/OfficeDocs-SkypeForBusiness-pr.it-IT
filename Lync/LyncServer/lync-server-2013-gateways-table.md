@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella Gateways'
+title: 'Lync Server 2013: tabella Gateways'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185034
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a5ee7296b93b3a9e1d7900b3ddde5c1b850c3580
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3a03222cd628466e7d88e8f36adafbf5207f0ef0
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739626"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037998"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41739626"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2010-11-05_
+_**Ultimo argomento modificato:** 2010-11-05_
 
-La tabella Gateways è una tabella di supporto. Ogni record archivia le informazioni relative a un gateway coinvolto in chiamate PSTN (Public Switched Telephone Network) con record nel database.
+La tabella Gateways è una tabella di supporto. Ogni record archivia le informazioni su un gateway coinvolto nelle chiamate PSTN (Public Switched Telephone Network) che dispongono di record nel database.
 
 
 <table>
@@ -60,7 +60,7 @@ La tabella Gateways è una tabella di supporto. Ogni record archivia le informaz
 <td><p><strong>GatewayId</strong></p></td>
 <td><p>int</p></td>
 <td><p>Principale</p></td>
-<td><p>Numero univoco che identifica questo gateway.</p></td>
+<td><p>Numero univoco che identifica il gateway.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Gateway</strong></p></td>

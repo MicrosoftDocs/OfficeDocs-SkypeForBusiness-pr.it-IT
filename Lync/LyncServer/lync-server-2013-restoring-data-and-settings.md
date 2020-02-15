@@ -12,20 +12,20 @@ ms:contentKeyID: 51541503
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d2a5cf57672126f47089b22d4a5d74381fc46e6e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e5b8575ee1362b240df0bfc0a1a1a6b27afde268
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733186"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050428"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="restoring-data-and-settings-in-lync-server-2013"></a>Ripristino di dati e impostazioni in Lync Server 2013
+# <a name="restoring-data-and-settings-in-lync-server-2013"></a>Ripristino dei dati e delle impostazioni in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41733186"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-17_
+_**Ultimo argomento modificato:** 2013-02-17_
 
-Se è stata implementata una topologia di ripristino di emergenza con pool associati e uno di questi pool di front-end è diminuito ed è necessario ripristinare rapidamente il servizio agli utenti, vedere [mancanza di un pool in Lync Server 2013](lync-server-2013-failing-over-a-pool.md). In caso contrario, usare le informazioni degli argomenti seguenti, insieme ai fogli di lavoro nei fogli di lavoro di [backup e ripristino per Lync server 2013](lync-server-2013-backup-and-restoration-worksheets.md), per ripristinare Lync Server dopo un errore o un'interruzione.
+Se è stata implementata una topologia di ripristino di emergenza con pool associati e uno di questi pool Front End è diminuito ed è necessario ripristinare rapidamente il servizio agli utenti, vedere [failover di un pool in Lync Server 2013](lync-server-2013-failing-over-a-pool.md). In caso contrario, utilizzare le informazioni contenute negli argomenti seguenti, insieme ai fogli di lavoro nei fogli di lavoro di [backup e ripristino per Lync server 2013](lync-server-2013-backup-and-restoration-worksheets.md), per ripristinare Lync Server dopo un errore o un'interruzione.
 
 <div>
 
 
 > [!NOTE]  
-> Per ridurre i tempi di inattività e le potenziali perdite di dati, eseguire le procedure di ripristino descritte in questo documento solo se le procedure di risoluzione dei problemi non sono efficaci per identificare e correggere il problema. Durante la risoluzione dei problemi, provare a ridurre al minimo l'impatto su altri server e componenti mentre si arrestano e si riavviano i server.
+> Per ridurre i tempi di inattività e la perdita di dati, eseguire le procedure di ripristino descritte in questo documento solo se le procedure per la risoluzione dei problemi non sono efficaci per identificare e correggere il problema. Durante la risoluzione dei problemi, provare a ridurre al minimo l'impatto su altri server e componenti durante l'arresto e il riavvio del server.
 
 
 
@@ -51,7 +51,7 @@ Se è stata implementata una topologia di ripristino di emergenza con pool assoc
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Preparazione per il ripristino di Lync Server 2013](lync-server-2013-preparing-to-restore-lync-server.md)
 
@@ -61,17 +61,17 @@ Se è stata implementata una topologia di ripristino di emergenza con pool assoc
 
   - [Ripristino di un server back-end Enterprise Edition in Lync Server 2013](lync-server-2013-restoring-an-enterprise-edition-back-end-server.md)
 
-  - [Ripristino di un server membro di Enterprise Edition in Lync Server 2013](lync-server-2013-restoring-an-enterprise-edition-member-server.md)
+  - [Ripristino di un server membro Enterprise Edition in Lync Server 2013](lync-server-2013-restoring-an-enterprise-edition-member-server.md)
 
   - [Ripristino di un pool di Lync Server in Lync Server 2013](lync-server-2013-restoring-a-lync-server-pool.md)
 
-  - [Esecuzione di un failover del pool di front end ABC in Lync Server 2013](lync-server-2013-performing-an-abc-front-end-pool-failover.md)
+  - [Esecuzione di un failover del pool ABC front end in Lync Server 2013](lync-server-2013-performing-an-abc-front-end-pool-failover.md)
 
-  - [Ripristino di un archivio di file in Lync Server 2013](lync-server-2013-restoring-a-file-store.md)
+  - [Ripristino di un archivio file in Lync Server 2013](lync-server-2013-restoring-a-file-store.md)
 
-  - [Ripristinare il monitoraggio o l'archiviazione dei dati in Lync Server 2013](lync-server-2013-restoring-monitoring-or-archiving-data.md)
+  - [Ripristino dei dati di monitoraggio o archiviazione in Lync Server 2013](lync-server-2013-restoring-monitoring-or-archiving-data.md)
 
-  - [Ripristino dei dati della chat persistente in Lync Server 2013](lync-server-2013-restoring-persistent-chat-data.md)
+  - [Ripristino dei dati di chat persistente in Lync Server 2013](lync-server-2013-restoring-persistent-chat-data.md)
 
 </div>
 

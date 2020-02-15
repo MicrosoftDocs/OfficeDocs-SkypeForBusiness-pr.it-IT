@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Collocazione dei server in una distribuzione server Standard Edition'
+title: Collocazione del server Lync Server 2013 in una distribuzione di server Standard Edition
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183314
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6fa25655fd9bdd2551e10d1fbbf0de617b89be64
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 428f666ade00d2f809f25cb7eb9ef1525d7f835c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764884"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048677"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="server-collocation-in-a-standard-edition-server-deployment-for-lync-server-2013"></a>Collocazione dei server in una distribuzione server Standard Edition per Lync Server 2013
+# <a name="server-collocation-in-a-standard-edition-server-deployment-for-lync-server-2013"></a>Collocazione dei server in una distribuzione di server Standard Edition per Lync Server 2013
 
 </div>
 
@@ -35,7 +35,7 @@ ms.locfileid: "41764884"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-01-20_
+_**Ultimo argomento modificato:** 2013-01-20_
 
 In questa sezione vengono descritti i ruoli del server, i database e le condivisioni di file che è possibile collocare in una distribuzione di Lync Server 2013 Standard Edition Server.
 
@@ -43,19 +43,19 @@ In questa sezione vengono descritti i ruoli del server, i database e le condivis
 
 ## <a name="server-roles"></a>Ruoli del server
 
-In Lync Server 2013, il servizio di conferenza A/V, il servizio di mediazione, il monitoraggio e l'archiviazione sono collocati nel server Standard Edition, ma è necessaria una configurazione aggiuntiva per abilitarli. È possibile scegliere di distribuire il servizio di mediazione in server distinti.
+In Lync Server 2013, il servizio A/V Conferencing, il servizio Mediation, il monitoraggio e l'archiviazione sono collocati nel server Standard Edition, ma è necessaria una configurazione aggiuntiva per abilitarli. È possibile scegliere di distribuire il servizio Mediation su server distinti.
 
 È possibile collocare un server applicazioni attendibile con un server Standard Edition.
 
-I ruoli del server seguenti devono essere distribuiti in un computer separato:
+I ruoli del server seguenti devono essere ognuno distribuito in un computer distinto:
 
   - Director
 
-  - Edge Server
+  - Server perimetrale
 
-  - Mediation Server (se non è collocato con il server Standard Edition)
+  - Mediation Server (se non collocato con il server Standard Edition)
 
-  - Server Office Web Apps
+  - server Office Web Apps
 
 </div>
 
@@ -63,7 +63,7 @@ I ruoli del server seguenti devono essere distribuiti in un computer separato:
 
 ## <a name="databases"></a>Database
 
-Per impostazione predefinita, il database back-end di SQL Server Express è collocato nel server Standard Edition. Non è possibile spostarlo in un computer separato. Con un'unica eccezione, non è possibile collocare altri database nel server Standard Edition. Se si sceglie di distribuire il server di chat persistente in un server Standard Edition, è possibile collocare il database di chat persistente e il database di conformità della chat persistente nello stesso server Standard Edition.
+Per impostazione predefinita, il database back-end di SQL Server Express è collocato nel server Standard Edition. Non è possibile spostarlo in un computer separato. Con un'eccezione, non è possibile collocare altri database nel server Standard Edition. Se si sceglie di distribuire il server Chat persistente in un server Standard Edition, è possibile collocare il database di chat persistente e il database di conformità di Persistent Chat nello stesso server Standard Edition.
 
 È possibile collocare ognuno dei database seguenti in un singolo server di database:
 
@@ -71,21 +71,21 @@ Per impostazione predefinita, il database back-end di SQL Server Express è coll
 
   - Database di archiviazione
 
-  - Database back-end per un pool di front-end Enterprise Edition
+  - Un database back-end per un pool Enterprise Edition front end
 
-È possibile collocare tutti o uno o tutti questi database in una singola istanza di SQL oppure usare istanze SQL separate per ognuna di esse, con le limitazioni seguenti:
+È possibile collocare uno o più o tutti questi database in una singola istanza di SQL oppure utilizzare istanze SQL separate per ognuna, con le limitazioni seguenti:
 
-  - Ogni istanza di SQL può contenere solo un database back-end (per un pool di front-end di Enterprise Edition), un singolo database di monitoraggio, un singolo database di archiviazione, un singolo database di chat persistente e un singolo database di conformità della chat persistente.
+  - Ogni istanza SQL può contenere un singolo database back-end (per un pool Enterprise Edition front end), un singolo database di monitoraggio, un singolo database di archiviazione, un singolo database di chat persistente e un singolo database di conformità di Persistent Chat.
 
-  - Il server di database non supporta più di un pool Front-end Enterprise Edition, un server che ha eseguito l'archiviazione, un monitoraggio in esecuzione del server, un singolo database di chat persistente e un database di conformità della chat persistente, ma può supportare uno di essi. indipendentemente dal fatto che i database utilizzino la stessa istanza di SQL Server o le istanze separate di SQL Server.
+  - Il server di database non è in grado di supportare più di un pool Enterprise Edition front end, un server che esegue l'archiviazione, un server che esegue il monitoraggio, un singolo database di chat persistente e un database di conformità di chat persistente, ma può supportarne uno. indipendentemente dal fatto che i database utilizzino la stessa istanza di SQL Server o le istanze separate di SQL Server.
 
-È possibile collocare una condivisione di file con i database, come descritto più avanti in questa sezione.
+È possibile collocare una condivisione file con i database, come descritto più avanti in questa sezione.
 
 <div>
 
 
 > [!NOTE]  
-> In Lync Server 2013 è possibile integrare il monitoraggio e l'archiviazione dello spazio di archiviazione con Exchange 2013 storage per alcuni o tutti gli utenti della distribuzione. Non è possibile distribuire tutti i server che utilizzano Lync Server o componenti nello stesso server dell'archivio di Exchange.
+> In Lync Server 2013, è possibile integrare l'archiviazione di monitoraggio e archiviazione con Exchange 2013 storage per alcuni o tutti gli utenti nella distribuzione. Non è possibile distribuire i server che eseguono Lync Server o i componenti negli stessi server dell'archivio di Exchange.
 
 
 
@@ -95,7 +95,7 @@ Per impostazione predefinita, il database back-end di SQL Server Express è coll
 
 
 > [!IMPORTANT]  
-> Anche se è supportata la collocazione dei database, è possibile che le dimensioni dei database crescano rapidamente. Ad esempio, se si considera la collocazione del database di archiviazione con altri database, tenere presente che, se si archiviano i messaggi di più utenti, lo spazio su disco necessario per il database di archiviazione può diventare molto grande. Per questo motivo, non è consigliabile collocare più database, in particolare il database di archiviazione, il database di chat persistente e il database di conformità della chat persistente con il database back-end di un pool aziendale.
+> Sebbene la collocazione dei database sia supportata, la dimensione dei database può aumentare rapidamente. Ad esempio, se si intende collocare il database di archiviazione con altri database, è opportuno tenere presente che l'archiviazione dei messaggi di più utenti può comportare un notevole aumento dello spazio su disco richiesto dal database di archiviazione. Per questo motivo, non è consigliabile collocare più database, in particolare il database di archiviazione, il database di chat persistente e il database di conformità di Persistent Chat con il database back-end di un pool Enterprise.
 
 
 
@@ -107,9 +107,9 @@ Per impostazione predefinita, il database back-end di SQL Server Express è coll
 
 ## <a name="file-shares"></a>Condivisioni file
 
-La condivisione file può essere un server separato o può essere collocata nello stesso server di una o tutte le operazioni seguenti:
+La condivisione file può essere un server separato o essere collocata nello stesso server utilizzato da uno, più o tutti gli elementi seguenti:
 
-  - Server di database, incluso il server back-end di un pool Front-end Enterprise Edition
+  - Server di database, inclusi il server back-end di un pool Enterprise Edition Front End
 
   - Database di archiviazione
 
@@ -117,15 +117,15 @@ La condivisione file può essere un server separato o può essere collocata nell
 
   - Database di chat persistente
 
-  - Database di conformità della chat persistente
+  - Database di conformità di Persistent Chat
 
-È possibile usare una singola condivisione di file per più pool Front-End, server Standard Edition (tutti nello stesso sito).
+Una singola condivisione file può essere utilizzata per più pool Front End e server Standard Edition, tutti nello stesso sito.
 
 <div>
 
 
 > [!NOTE]  
-> In Lync Server 2013 il monitoraggio e l'archiviazione usano la condivisione file di Lync Server come server Standard Edition.
+> In Lync Server 2013, il monitoraggio e l'archiviazione utilizzano la condivisione file di Lync Server come server Standard Edition.
 
 
 
@@ -137,9 +137,9 @@ La condivisione file può essere un server separato o può essere collocata nell
 
 ## <a name="other-components"></a>Altri componenti
 
-Non è possibile collocare un server proxy inverso, che non è un componente Lync Server 2013, ma è necessario nella distribuzione se si vuole supportare la condivisione di contenuto Web per gli utenti federati con qualsiasi ruolo del server Lync Server 2013. Puoi tuttavia implementare il supporto del proxy inverso per una distribuzione di Lync Server 2013 configurando il supporto di un server proxy inverso esistente nell'organizzazione usato per altre applicazioni.
+Non è possibile collocare un server proxy inverso, che non è un componente di Lync Server 2013, ma che è necessario nella distribuzione se si desidera supportare la condivisione di contenuto Web per gli utenti federati con qualsiasi ruolo del server Lync Server 2013. È tuttavia possibile implementare il supporto del proxy inverso per una distribuzione di Lync Server 2013 configurando il supporto su un server proxy inverso esistente nell'organizzazione utilizzato per altre applicazioni.
 
-Non è possibile collocare un componente di messaggistica unificata di Exchange o un componente SharePoint con qualsiasi ruolo di Lync Server 2013.
+Non è possibile collocare alcun componente di messaggistica unificata di Exchange o componente di SharePoint con un ruolo Lync Server 2013.
 
 </div>
 

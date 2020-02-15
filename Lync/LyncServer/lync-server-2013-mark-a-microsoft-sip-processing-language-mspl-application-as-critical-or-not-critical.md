@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: contrassegnare un'applicazione MSPL (Microsoft SIP Processing Language) come critica o non critica"
+title: "Lync Server 2013: contrassegnare un'applicazione Microsoft SIP Processing Language (MSPL) come critica o non critica"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185622
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 54d8b0858145930e0a2144ade55934b39394dcaf
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a50dea89feb7e72c5076e58a38136d24b1b34499
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757950"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045418"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="mark-a-microsoft-sip-processing-language-mspl-application-as-critical-or-not-critical-in-lync-server-2013"></a>Contrassegnare un'applicazione MSPL (Microsoft SIP Processing Language) come critica o non critica in Lync Server 2013
+# <a name="mark-a-microsoft-sip-processing-language-mspl-application-as-critical-or-not-critical-in-lync-server-2013"></a>Contrassegnare un'applicazione Microsoft SIP Processing Language (MSPL) come critica o non critica in Lync Server 2013
 
 </div>
 
@@ -35,29 +35,29 @@ ms.locfileid: "41757950"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Le applicazioni server MSPL (Microsoft SIP Processing Language) sono applicazioni solo script che usano il linguaggio di scripting MSPL invece dell'API Microsoft Lync 2010. Alcune applicazioni server MSPL sono specificate come critiche. Se uno script è critico, lo script deve iniziare durante l'avvio del sistema per consentire l'avvio di Lync Server 2013. Se lo script non riesce mentre Lync Server è in esecuzione, il server non si arresta, ma smette di inviare il traffico allo script e scrive gli errori nel log eventi.
+Le applicazioni server MSPL (Microsoft SIP Processing Language) sono applicazioni solo script che utilizzano il linguaggio di scripting di MSPL anziché l'API Microsoft Lync 2010. Alcune applicazioni server MSPL sono specificate come di importanza critica. Se uno script è critico, è necessario che lo script venga avviato durante l'avvio del sistema in modo che Lync Server 2013 inizi. Se lo script ha esito negativo durante l'esecuzione di Lync Server, il server non viene arrestato, ma interrompe l'invio del traffico allo script e scrive gli errori nel registro eventi.
 
-È possibile usare il pannello di controllo di Lync Server per contrassegnare le applicazioni server MSPL (Microsoft SIP Processing Language) come critiche o deselezionarle.
+È possibile utilizzare il pannello di controllo di Lync Server per contrassegnare le applicazioni server MSPL (Microsoft SIP Processing Language) come critiche o non contrassegnate.
 
-Non tutti gli script supportano questa opzione. Ad esempio, lo script DefaultRouting è contrassegnato come critico e questa opzione non può essere modificata per DefaultRouting.
+Non tutti gli script supportano questa opzione. Ad esempio, lo script DefaultRouting è contrassegnato come critico e non è possibile modificare questa opzione per DefaultRouting.
 
 <div>
 
-## <a name="to-mark-or-unmark-an-mspl-server-application-as-critical"></a>Per contrassegnare o decontrassegnare un'applicazione server MSPL come critica
+## <a name="to-mark-or-unmark-an-mspl-server-application-as-critical"></a>Per contrassegnare un'applicazione server MSPL come critica o rimuovere il contrassegno
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer presente nella rete in cui è stato distribuito Lync Server 2013.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a un computer nella rete in cui è stato distribuito Lync Server 2013.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Nella barra di spostamento sinistra fare clic su **topologia** e quindi su **applicazione server**.
+3.  Sulla barra di spostamento sinistra fare clic su **Topologia** e quindi su **Applicazione server**.
 
-4.  Nella pagina **applicazione server** fare clic su un'intestazione di colonna per ordinare le applicazioni, se necessario, e quindi fare clic sull'applicazione server che si desidera modificare.
+4.  Nella pagina **Applicazione server** fare clic su un'intestazione di colonna per ordinare le applicazioni, se necessario, quindi fare clic sul'applicazione server che si desidera modificare.
 
-5.  Fare clic su **azione**.
+5.  Fare clic su **Azione**.
 
-6.  Fare clic su **Segna come critico** o **deselezionare come critica** , ovvero se lo script supporta questa opzione.
+6.  Fare clic su **Seleziona come critica** o su **Deseleziona come critica** (ossia, se lo script supporta questa opzione).
 
 </div>
 

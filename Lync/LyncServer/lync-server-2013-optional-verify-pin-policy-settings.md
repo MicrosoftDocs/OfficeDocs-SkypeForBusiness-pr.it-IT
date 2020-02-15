@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: (Facoltativo) Verificare le impostazioni dei criteri per il PIN'
+title: 'Lync Server 2013: (facoltativo) verificare le impostazioni del criterio PIN'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185415
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d0932eb97ee276368ee7b4479d17100b00af29d6
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: cccae79c64205ece3256851a19e54dce8582f9fe
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755690"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051068"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="optional-verify-pin-policy-settings-in-lync-server-2013"></a>(Facoltativo) Verificare le impostazioni dei criteri per il PIN in Lync Server 2013
+# <a name="optional-verify-pin-policy-settings-in-lync-server-2013"></a>Optional Verificare le impostazioni del criterio PIN in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41755690"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-20_
+_**Ultimo argomento modificato:** 2012-06-20_
 
-Gli utenti di Lync Server 2013 che hanno credenziali di servizi di dominio Active Directory possono immettere un PIN per partecipare a conferenze telefoniche con accesso esterno come utenti autenticati. Un criterio PIN definisce le regole per il funzionamento dei pin di conferenza telefonica con accesso esterno.
+Gli utenti di Lync Server 2013 che dispongono di credenziali di servizi di dominio Active Directory possono immettere un PIN (Personal Identification Number) per partecipare a conferenze telefoniche con accesso esterno come utenti autenticati. I criteri PIN definiscono le regole per il funzionamento dei PIN delle conferenze telefoniche con accesso esterno.
 
-Quando si distribuiscono i servizi di conferenza telefonica con accesso esterno, è necessario verificare che il criterio PIN globale predefinito soddisfi le proprie esigenze. Se è necessario apportare modifiche, è possibile modificare i criteri globali predefiniti oppure creare un nuovo criterio PIN. È possibile creare criteri PIN che si applicano a un sito specifico, a un utente specifico o a un gruppo specifico di utenti.
+Quando si distribuisce una conferenza telefonica con accesso esterno, è necessario verificare che i criteri predefiniti globali per i PIN soddisfino i propri requisiti. Se è necessario apportare modifiche, è possibile modificare i criteri globali predefiniti o creare un nuovo criterio PIN. È inoltre possibile creare criteri per il PIN applicabili a un sito, un utente o un gruppo di utenti specifico.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Modifica delle impostazioni predefinite dei PIN per le conferenze telefoniche con accesso esterno in Lync Server 2013](lync-server-2013-modify-the-default-dial-in-conferencing-pin-settings.md)
+  - [Modificare le impostazioni predefinite dei PIN per le conferenze telefoniche con accesso esterno in Lync Server 2013](lync-server-2013-modify-the-default-dial-in-conferencing-pin-settings.md)
 
-  - [Creare o modificare le impostazioni del PIN di conferenza telefonica con accesso esterno in Lync Server 2013 per un sito o un gruppo di utenti](lync-server-2013-create-or-modify-dial-in-conferencing-pin-settings-for-a-site-or-group-of-users.md)
+  - [Creare o modificare le impostazioni del PIN per le conferenze telefoniche con accesso esterno in Lync Server 2013 per un sito o un gruppo di utenti](lync-server-2013-create-or-modify-dial-in-conferencing-pin-settings-for-a-site-or-group-of-users.md)
 
 </div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 48185578
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 19211c786c288326d5769824524f5571e5df2f00
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 107803caba66c19ec852d4c077e69aec5f7cf5ca
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763420"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043468"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41763420"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-02-07_
+_**Ultimo argomento modificato:** 2014-02-07_
 
-Dopo aver installato i file dell'agente del centro di sistema, è necessario configurare il nodo Watcher. I passaggi da eseguire per configurare un nodo Watcher variano a seconda che il computer del nodo Watcher si trovi all'interno della rete perimetrale o all'esterno della rete perimetrale.
+Dopo aver installato i file dell'agente System Center, è necessario configurare il nodo Watcher stesso. I passaggi da eseguire per configurare un nodo Watcher variano a seconda che il computer del nodo Watcher si trovi all'interno della rete perimetrale o all'esterno della rete perimetrale.
 
-Quando si configura un nodo Watcher, è necessario scegliere anche il tipo di metodo di autenticazione che deve essere impiegato da tale nodo. Lync Server 2013 consente di scegliere uno dei due metodi di autenticazione: Trusted Server o Authentication Credential. Le differenze tra questi due metodi sono descritte nella tabella seguente:
+Quando si configura un nodo Watcher, è necessario scegliere anche il tipo di metodo di autenticazione da utilizzare per tale nodo. Lync Server 2013 consente di scegliere uno dei due metodi di autenticazione: Trusted Server o Authentication Credential. Nella tabella seguente vengono descritte le differenze tra i due metodi seguenti:
 
 
 <table>
@@ -52,21 +52,21 @@ Quando si configura un nodo Watcher, è necessario scegliere anche il tipo di me
 <tr class="header">
 <th>Configurazione</th>
 <th>Descrizione</th>
-<th>Percorsi supportati</th>
+<th>Posizioni supportate</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>Server attendibile</p></td>
-<td><p>Usa un certificato per rappresentare un server interno e ignorare i problemi di autenticazione.</p>
+<td><p>Utilizza un certificato per rappresentare un server interno e ignorare i problemi di autenticazione.</p>
 <p>Questa operazione è utile per gli amministratori che preferiscono gestire un singolo certificato anziché molte password utente in ogni nodo Watcher.</p></td>
 <td><p>All'interno dell'organizzazione.</p>
-<p>Tieni presente che, con questo metodo, il nodo Watcher deve essere nello stesso dominio dei pool da monitorare. Se il nodo Watcher e i pool monitorati si trovano in domini diversi, usare invece l'autenticazione delle credenziali.</p></td>
+<p>Si noti che, con questo metodo, il nodo Watcher deve trovarsi nello stesso dominio dei pool monitorati. Se il nodo Watcher e i pool monitorati sono in domini diversi, utilizzare invece l'autenticazione delle credenziali.</p></td>
 </tr>
 <tr class="even">
 <td><p>Autenticazione delle credenziali</p></td>
-<td><p>Archivia i nomi utente e le password in modo sicuro in Gestione credenziali di Windows in ogni nodo Watcher.</p>
-<p>Questa modalità richiede una maggiore gestione delle password, ma è l'unica opzione per i nodi Watcher situati all'esterno dell'organizzazione. Questi nodi Watcher non possono essere trattati come endpoint attendibili per l'autenticazione.</p></td>
+<td><p>Archivia i nomi utente e le password in modo sicuro in Gestione credenziali di Windows su ogni nodo Watcher.</p>
+<p>Questa modalità richiede una maggiore gestione delle password, ma è l'unica opzione per i nodi Watcher situati all'esterno dell'organizzazione. Questi nodi Watcher non possono essere considerati come endpoint attendibili per l'autenticazione.</p></td>
 <td><p>All'esterno dell'organizzazione.</p>
 <p>All'interno dell'organizzazione.</p></td>
 </tr>
@@ -74,7 +74,7 @@ Quando si configura un nodo Watcher, è necessario scegliere anche il tipo di me
 </table>
 
 
-Dovresti anche verificare che il firewall abbia regole in ingresso sia per MonitoringHost. exe che per PowerShell. exe. Se questi processi sono bloccati dal firewall, le transazioni sintetiche non riusciranno con un errore di 504 (timeout del server).
+È inoltre necessario verificare che il firewall disponga di regole in ingresso per MonitoringHost. exe e PowerShell. exe. Se questi processi vengono bloccati dal firewall, le transazioni sintetiche avranno esito negativo con un errore di 504 (timeout del server).
 
 </div>
 

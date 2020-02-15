@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Esecuzione della preparazione della foresta'
+title: 'Lync Server 2013: esecuzione della preparazione della foresta'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184991
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 129926afe17f946a2ea32d7c67fdea89fab32a54
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e9cb09b04ca42c032f042ed7970452f70982e016
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732817"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051680"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,62 +35,62 @@ ms.locfileid: "41732817"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-29_
+_**Ultimo argomento modificato:** 2012-10-29_
 
-È possibile usare i cmdlet setup o Lync Server Management Shell per preparare la foresta. Il cmdlet che prepara la foresta è **Enable-CsAdForest**.
+È possibile utilizzare i cmdlet setup o Lync Server Management Shell per preparare la foresta. Il cmdlet che prepara la foresta è **Enable-CsAdForest**.
 
 Dopo aver preparato la foresta, è necessario verificare che le impostazioni globali siano state replicate prima di eseguire la preparazione del dominio.
 
 <div>
 
-## <a name="to-use-setup-to-prepare-the-forest"></a>Per usare la configurazione per preparare la foresta
+## <a name="to-use-setup-to-prepare-the-forest"></a>Per utilizzare il programma di installazione per preparare la foresta
 
-1.  Accedere a un computer collegato a un dominio come membro del gruppo amministratori aziendali per il dominio radice della foresta.
+1.  Accedere a un computer aggiunto a un dominio come membro del gruppo Enterprise Admins per il dominio radice della foresta.
 
-2.  Nella cartella di installazione o nel supporto di Lync Server 2013 eseguire Setup. exe per avviare la distribuzione guidata.
+2.  Dalla cartella o dal supporto di installazione di Lync Server 2013, eseguire Setup. exe per avviare la distribuzione guidata.
 
 3.  Fare clic su **Prepara Active Directory** e quindi attendere che venga determinato lo stato della distribuzione.
 
 4.  Al **passaggio 3: preparare la foresta corrente**, fare clic su **Esegui**.
 
-5.  Nella pagina **Preparazione foresta** fare clic su **Avanti**.
+5.  Nella pagina **Prepara foresta** fare clic su **Avanti**.
     
     <div>
     
 
     > [!NOTE]  
-    > La preparazione della foresta consente di scegliere dove posizionare i gruppi universali per Lync Server 2013. Scegliere una posizione conforme ai requisiti dell'organizzazione.
+    > La preparazione della foresta consente di scegliere dove collocare i gruppi universali per Lync Server 2013. Selezionare una posizione coerente con i requisiti dell'organizzazione.
 
     
     </div>
 
 6.  Nella pagina **Esecuzione comandi in corso** ricercare **Stato attività: Operazione completata** e quindi fare clic su **Visualizza registro**.
 
-7.  Nella colonna **Action** espandere **Forest Prep**cercare un ** \<\> ** risultato di esecuzione di successo alla fine di ogni attività per verificare che la preparazione della foresta sia stata completata correttamente, chiudere il log e quindi fare clic su **fine**.
+7.  Nella colonna **azione** espandere **Preparazione foresta**, ** \<\> cercare il risultato dell'esecuzione finale** alla fine di ogni attività per verificare che la preparazione della foresta sia stata completata correttamente, chiudere il registro e quindi fare clic su **fine**.
 
-8.  Attendere il completamento della replica di Active Directory oppure forzare la replica a tutti i controller di dominio elencati nello snap-in **siti e servizi di Active Directory** per il controller di dominio radice della foresta, prima di eseguire la preparazione del dominio. Forzare la replica tra i controller di dominio in tutti i siti di Active Directory per provocare la replica nei siti in pochi minuti.
+8.  Attendere il completamento della replica di Active Directory oppure forzare la replica in tutti i controller di dominio elencati nello snap-in **Siti e servizi di Active Directory** per il controller di dominio della radice della foresta prima di eseguire la preparazione del dominio. Forzare la replica tra i controller di dominio in tutti i siti di Active Directory perché la replica all'interno dei siti venga eseguita entro pochi minuti.
 
 </div>
 
 <div>
 
-## <a name="to-use-cmdlets-to-prepare-the-forest"></a>Per usare i cmdlet per preparare la foresta
+## <a name="to-use-cmdlets-to-prepare-the-forest"></a>Per utilizzare i cmdlet per la preparazione della foresta
 
-1.  Accedere a un computer collegato a un dominio come membro del gruppo Domain Admins nel dominio radice della foresta.
+1.  Accedere a un computer che fa parte di un dominio come membro del gruppo Domain Admins nel dominio radice della foresta.
 
-2.  Installare i componenti di base di Lync Server nel modo seguente:
+2.  Installare i componenti di base di Lync Server come indicato di seguito:
     
-    1.  Nella cartella di installazione o nel supporto di Lync Server 2013 eseguire Setup. exe per avviare la distribuzione guidata di Lync Server.
+    1.  Dalla cartella o dal supporto di installazione di Lync Server 2013, eseguire Setup. exe per avviare la distribuzione guidata di Lync Server.
     
-    2.  Se viene richiesto di installare Microsoft Visual C++ ridistribuibile, fare clic su **Sì**.
+    2.  Se viene chiesto di installare Microsoft Visual C++ Redistributable, fare clic su **Sì**.
     
-    3.  Nella finestra di dialogo configurazione di Lync Server 2013 viene richiesto di installare i file di Lync Server. Scegliere il percorso predefinito o **passare** a una posizione a scelta e quindi fare clic su **Installa**.
+    3.  Nella finestra di dialogo installazione di Lync Server 2013 viene visualizzata una richiesta di installazione dei file di Lync Server. Scegliere il percorso predefinito o **Sfoglia** per selezionare il percorso desiderato e quindi fare clic su **Installa**.
     
-    4.  Nella pagina Contratto di licenza selezionare **Accetto i termini del contratto di licenza**e quindi fare clic su **OK**. Il programma di installazione installa i componenti principali di Lync Server 2013.
+    4.  Nella pagina Contratto di Licenza selezionare **Accetto i termini del Contratto di Licenza** e quindi fare clic su **OK**. Il programma di installazione installa i componenti di base di Lync Server 2013.
 
-3.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+3.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-4.  Eseguire
+4.  Eseguire: 
     
         Enable-CsAdForest [-GroupDomain <FQDN of the domain in which to create the universal groups>]
     
@@ -98,15 +98,15 @@ Dopo aver preparato la foresta, è necessario verificare che le impostazioni glo
     
         Enable-CsAdForest -GroupDomain domain1.contoso.com 
     
-    Se non specifichi il parametro GroupDomain, il valore predefinito è il dominio locale. Se i gruppi universali sono stati creati in precedenza in un dominio che non è il dominio predefinito, è necessario specificare in modo esplicito il parametro GroupDomain.
+    Se non si specifica il parametro GroupDomain, il valore predefinito è il dominio locale. Se i gruppi universali sono stati creati in precedenza in un dominio che non è quello predefinito, è necessario specificare il parametro GroupDomain in modo esplicito.
 
-5.  Attendere il completamento della replica di Active Directory oppure forzare la replica a tutti i controller di dominio elencati nello snap-in **siti e servizi di Active Directory** per il controller di dominio radice della foresta, prima di eseguire la preparazione del dominio.
+5.  Attendere il completamento della replica di Active Directory oppure forzare la replica in tutti i controller di dominio elencati nello snap-in **Siti e servizi di Active Directory** per il controller del dominio radice della foresta, prima di eseguire la preparazione del dominio.
 
-6.  Verificare che la preparazione della foresta sia riuscita. Eseguire
+6.  Verificare che la preparazione della foresta abbia avuto esito positivo. Eseguire: 
     
         Get-CsAdForest 
     
-    Questo cmdlet restituisce il valore di **LC\_FORESTSETTINGS\_stato\_pronto** se la preparazione della foresta è riuscita.
+    Questo cmdlet restituisce un valore di **stato\_\_LC\_FORESTSETTINGS pronto** se la preparazione della foresta ha avuto esito positivo.
 
 </div>
 

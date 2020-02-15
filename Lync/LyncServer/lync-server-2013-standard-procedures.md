@@ -12,16 +12,16 @@ ms:contentKeyID: 63969581
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5160e67d13b7ff3ea1502c093a0ed010d176568f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e59c3c4a1b76b7f3549f53721e29aa1e34085334
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731866"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038818"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41731866"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-08-18_
+_**Ultimo argomento modificato:** 2014-08-18_
 
-Diverse risorse consentono di definire le procedure standard necessarie per l'organizzazione e come eseguirle. Poiché ogni organizzazione è univoca, potrebbe essere necessario personalizzare e adattare queste risorse in base alle esigenze quotidiane. Le procedure operative standard cambiano e la documentazione deve essere rivista occasionalmente. Man mano che vengono apportate modifiche, il processo di gestione delle modifiche, come definito nelle funzioni di gestione dei servizi del framework operativo Microsoft, dovrebbe identificare il modo in cui ogni modifica rischia di influenzare il modo in cui vengono eseguite le attività amministrative. Usare la funzione di gestione delle modifiche per aggiornare e controllare la documentazione procedurale. È consigliabile separare le attività operative in carichi di lavoro gestibili, in cui le attività vengono eseguite su base giornaliera, settimanale, mensile e necessaria. Le attività quotidiane consentiranno di concentrare gli sforzi sugli aspetti molto importanti per il funzionamento di un sistema e le attività mensili consentiranno di concentrarsi maggiormente sull'integrità di un sistema a lungo termine. Le attività che devono essere eseguite possono essere separate nelle categorie seguenti:
+Numerose risorse consentono di definire quali procedure standard sono necessarie nell'organizzazione e come eseguirle. Poiché ogni organizzazione è univoca, potrebbe essere necessario personalizzare e adattare queste risorse per soddisfare i requisiti giornalieri. Le procedure operative standard cambiano e la documentazione deve essere riveduta occasionalmente. Come vengono apportate le modifiche, il processo di gestione delle modifiche, come definito nelle funzioni di gestione dei servizi del framework operativo Microsoft, deve identificare in che modo è probabile che ogni modifica influisca su come e quando vengono eseguite le attività amministrative. Utilizzare la funzione Change Management per aggiornare e controllare la documentazione procedurale. È consigliabile separare le attività operative in carichi di lavoro gestibili, in cui le attività vengono eseguite giornalmente, settimanalmente, mensilmente e come necessario. Le attività quotidiane concentreranno gli sforzi sugli aspetti molto importanti per il funzionamento di un sistema e le attività mensili si concentreranno maggiormente sul garantire l'integrità a lungo termine di un sistema. Le attività che devono essere eseguite possono essere separate nelle categorie seguenti:
 
   - [Attività quotidiane in Lync Server 2013](lync-server-2013-daily-tasks.md)
 
@@ -47,9 +47,9 @@ Diverse risorse consentono di definire le procedure standard necessarie per l'or
 
   - [Attività necessarie in Lync Server 2013](lync-server-2013-as-needed-tasks.md)
 
-Quando si prepara la documentazione per la gestione delle operazioni, usare gli elenchi di controllo per assicurarsi che le attività necessarie vengano eseguite all'ora appropriata. Per informazioni dettagliate su come preparare gli elenchi di controllo delle operazioni, vedere gli elenchi di controllo di esempio situati negli elenchi di controllo delle operazioni.
+Quando si prepara la documentazione per la gestione delle operazioni, utilizzare gli elenchi di controllo per garantire che le attività necessarie vengano eseguite al momento opportuno. Per informazioni dettagliate su come preparare gli elenchi di controllo delle operazioni, vedere gli elenchi di controllo di esempio che si trovano negli elenchi di controllo delle operazioni.
 
-Spesso la gestione delle modifiche assume la posizione di completamento dell'amministrazione di sistema. Se un'attività è coperta da una procedura standard, fa parte della funzione di amministrazione del sistema. Se non è disponibile una procedura standard per un'attività, è necessario gestirla utilizzando la funzione di gestione delle modifiche.
+Capita spesso che la gestione delle modifiche inizi dove finisce l'amministrazione dei sistemi. Se un'attività è illustrata da una procedura standard, fa parte della funzione di amministrazione dei sistemi. Se non è presente alcuna procedura standard per un'attività, è necessario gestirla utilizzando la funzione Change Management.
 
 <div>
 
@@ -57,7 +57,7 @@ Spesso la gestione delle modifiche assume la posizione di completamento dell'amm
 
 
 [Elenco di controllo delle attività quotidiane](lync-server-2013-operations-checklists.md)  
-[Elenco di controllo attività settimanale](lync-server-2013-operations-checklists.md)  
+[Elenco di controllo delle attività settimanali](lync-server-2013-operations-checklists.md)  
 [Elenco di controllo delle attività mensili](lync-server-2013-operations-checklists.md)  
   
 

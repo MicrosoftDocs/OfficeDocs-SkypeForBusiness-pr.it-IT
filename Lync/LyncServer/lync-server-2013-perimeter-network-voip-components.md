@@ -12,16 +12,16 @@ ms:contentKeyID: 48184514
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cb8e14228bb927f857aa5e9801f579653eb35fd2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3e3318f6579e3dd9924c0b5d3bfec941dcc4e916
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755256"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044608"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41755256"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-I chiamanti esterni che usano client di comunicazioni unificate per chiamate singole o conferenze si basano su Edge Server per la comunicazione vocale con i colleghi.
+I chiamanti esterni che utilizzano client per le comunicazioni unificate per le chiamate individuali o congressuali si basano sul server perimetrale per la comunicazione vocale con i collaboratori.
 
-In un server perimetrale, il servizio Access Edge offre una segnalazione SIP per le chiamate degli utenti di Lync che si trovano al di fuori del firewall dell'organizzazione. L'A/V Edge Services consente l'attraversamento multimediale di NAT e firewall. Un chiamante che usa un client Unified Communications (UC) all'esterno del firewall aziendale si basa sul servizio A/V Edge sia per le singole che per le conferenze telefoniche.
+In un server perimetrale, il servizio Access Edge fornisce la segnalazione SIP per le chiamate provenienti da utenti di Lync che si trovano all'esterno del firewall dell'organizzazione. Il servizio A/V Edge consente l'attraversamento del contenuto multimediale in NAT e nei firewall. Un chiamante che utilizza un client per le comunicazioni unificate dall'esterno del firewall aziendale utilizza il servizio A/V Edge per singole chiamate e conferenze telefoniche.
 
-Il servizio di autenticazione A/V è collocato e fornisce servizi di autenticazione per il servizio A/V Edge. Gli utenti esterni che tentano di connettersi al servizio a/V Edge richiedono un token di autenticazione fornito dal servizio di autenticazione A/V prima che le chiamate possano passare.
+Il servizio di autenticazione A/V si trova nella stessa posizione del servizio A/V Edge e offre servizi di autenticazione per questo servizio. Gli utenti esterni che tentano di connettersi al servizio A/V Edge devono disporre di un token di autenticazione fornito dal servizio di autenticazione A/V prima di poter effettuare le proprie chiamate.
 
 </div>
 

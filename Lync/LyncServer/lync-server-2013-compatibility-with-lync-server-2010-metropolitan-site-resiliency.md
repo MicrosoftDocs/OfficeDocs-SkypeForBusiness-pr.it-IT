@@ -1,5 +1,5 @@
 ---
-title: Compatibilità di Lync Server 2013 con la resilienza di siti metropolitani di Lync Server 2010
+title: Compatibilità di Lync Server 2013 con la resilienza del sito metropolitano di Lync Server 2010
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183526
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 395ec568ebafea5c7a06e19340ff5ad10158ffb3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2f432941773b72d18c22adc87779341996771399
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742746"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045608"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="lync-server-2010-metropolitan-site-resiliency"></a>Resilienza di siti metropolitani di Lync Server 2010
+# <a name="lync-server-2010-metropolitan-site-resiliency"></a>Resilienza del sito metropolitano di Lync Server 2010
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41742746"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-03-19_
+_**Ultimo argomento modificato:** 2014-03-19_
 
-La soluzione di resilienza del sito metropolitano supportata per Lync Server 2010 non è supportata per Lync Server 2013. Questa soluzione implicava un unico pool Front-end tra due centri dati della stessa area metropolitana.
+La soluzione di resilienza del sito metropolitano supportata per Lync Server 2010 non è supportata per Lync Server 2013. Tale soluzione prevedeva l'estensione di un singolo pool Front End tra due data center situati nella stessa area metropolitana.
 
-La soluzione di resilienza del sito metropolitano è stata progettata per il ripristino dalla perdita di un data center completo. Quando si estende il pool in due centri dati, in genere si colloca la metà delle estremità anteriori in un centro dati e l'altra metà nel secondo Data Center. Se si perde un intero centro dati, è stato perso metà dei server front-end. Ciò può causare problemi con il nuovo modello di sistema distribuito per i pool Front-end in Lync Server 2013. Per altre informazioni, vedere [topologie e componenti per i server front-end, la messaggistica istantanea e la presenza in Lync server 2013](lync-server-2013-topologies-and-components-for-front-end-servers-instant-messaging-and-presence.md).
+La soluzione di resilienza del sito metropolitano è stata progettata per il ripristino dalla perdita di un datacenter completo. Quando si estende il pool tra due datacenter, in genere si colloca la metà dei front-end in un centro dati e l'altra metà nel secondo centro dati. In caso di perdita di un intero centro dati, la metà dei server front end è stata persa. Ciò può causare problemi con il nuovo modello di sistema distribuito per i pool Front end in Lync Server 2013. Per ulteriori informazioni, vedere [topologie e componenti per Front End Server, messaggistica istantanea e presenza in Lync server 2013](lync-server-2013-topologies-and-components-for-front-end-servers-instant-messaging-and-presence.md).
 
 </div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 49733637
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: aa234a4420c1bec54cd673eb59d254e07deab8f8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9b5a3176067d7ec9927165bd13b6b1a34dfb00d9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41766057"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42039459"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41766057"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-In Lync Server 2013 i criteri di conferenza definiscono l'esperienza di pianificazione e partecipazione degli utenti e le impostazioni per le riunioni nella pagina di configurazione della riunione definiscono le operazioni seguenti:
+In Lync Server 2013, i criteri di conferenza definiscono la pianificazione e la partecipazione degli utenti, mentre le impostazioni di join delle riunioni nella pagina di configurazione della riunione definiscono quanto segue:
 
-  - Se gli utenti che effettuano la chiamata dalla rete PSTN (Public Switched Telephone Network) accedono alla sala di attesa
+  - Se gli utenti con accesso esterno dalla rete PSTN (Public Switched Telephone Network) devono transitare per la sala di attesa
 
-  - Chi può essere un relatore
+  - Chi può svolgere il ruolo di relatore
 
-  - Se il tipo di conferenza è assegnato per impostazione predefinita
+  - Se il tipo di conferenza viene assegnato per impostazione predefinita
 
   - Se gli utenti anonimi (non autenticati) sono ammessi per impostazione predefinita
 
-Gli argomenti in questa sezione illustrano come configurare le impostazioni di partecipazione alle riunioni.
+Negli argomenti di questa sezione viene descritto come configurare le impostazioni di partecipazione alle riunioni.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Visualizzare le impostazioni di configurazione delle riunioni in Lync Server 2013](lync-server-2013-view-meeting-configuration-settings.md)
 

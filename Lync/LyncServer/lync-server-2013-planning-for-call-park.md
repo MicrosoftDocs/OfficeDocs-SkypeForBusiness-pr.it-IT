@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pianificazione del parcheggio di chiamata'
+title: 'Lync Server 2013: pianificazione del parcheggio di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185727
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 068c574cc21a3f81d91491da521911aa56c5ce83
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 0f42d4b61302b17d8d6247d7a9a1dcc5dbe6b218
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41754386"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037038"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41754386"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-07_
+_**Ultimo argomento modificato:** 2012-09-07_
 
-L'applicazione Lync Server Call Park consente agli utenti di VoIP aziendale di mettere una chiamata in attesa e quindi recuperarla in seguito da qualsiasi telefono. L'utente che ha parcheggiato la chiamata può chiamare il numero dell'orbita fornito da Call Park per recuperare la chiamata parcheggiata o usare un meccanismo esterno, ad esempio la messaggistica istantanea o un sistema di paging, per chiedere a qualcun altro di recuperare la chiamata. Questa sezione include informazioni sulla pianificazione specifiche di Call Park.
+L'applicazione del parcheggio di chiamata di Lync Server rende possibile per gli utenti di VoIP aziendale di mettere in attesa una chiamata e quindi recuperarla in un secondo momento da qualsiasi telefono. Per recuperare la chiamata parcheggiata, il parcheggiatore può comporre il codice orbit fornito dall'applicazione oppure utilizzare un meccanismo esterno, ad esempio un sistema di messaggistica istantanea o di cercapersone, per richiedere a un altro utente di recuperare la chiamata. In questa sezione sono incluse informazioni sulla pianificazione specifiche del parcheggio di chiamata.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Panoramica di Call Park in Lync Server 2013](lync-server-2013-overview-of-call-park.md)
+  - [Panoramica del parcheggio di chiamata in Lync Server 2013](lync-server-2013-overview-of-call-park.md)
 
   - [Componenti utilizzati dal parcheggio di chiamata in Lync Server 2013](lync-server-2013-components-used-by-call-park.md)
 
@@ -53,7 +53,7 @@ L'applicazione Lync Server Call Park consente agli utenti di VoIP aziendale di m
 
   - [Pianificazione della capacità per il parcheggio di chiamata in Lync Server 2013](lync-server-2013-capacity-planning-for-call-park.md)
 
-  - [Processo di distribuzione per Call Park in Lync Server 2013](lync-server-2013-deployment-process-for-call-park.md)
+  - [Processo di distribuzione per il parcheggio di chiamata in Lync Server 2013](lync-server-2013-deployment-process-for-call-park.md)
 
 </div>
 

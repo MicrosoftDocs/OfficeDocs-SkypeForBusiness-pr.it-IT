@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pianificazione del controllo di accesso basato sui ruoli'
+title: 'Lync Server 2013: pianificazione del controllo di accesso basato sui ruoli'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183962
 ms.date: 01/28/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b89e4bdc075783d33bebcfb85398b1b627e1bf1c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fb7a359620c7e93565c0d4ef49c813ff0966989c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41750476"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046629"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41750476"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-01-27_
+_**Ultimo argomento modificato:** 2015-01-27_
 
-Per consentire di delegare le attività amministrative mantenendo standard elevati per la sicurezza, Lync Server 2013 offre il controllo di accesso basato sui ruoli (RBAC). Con RBAC, il privilegio amministrativo viene concesso assegnando agli utenti ruoli amministrativi. Lync Server 2013 include un set completo di ruoli amministrativi predefiniti e consente inoltre di creare nuovi ruoli e specificare un elenco personalizzato di cmdlet per ogni nuovo ruolo. È inoltre possibile aggiungere script di cmdlet alle attività consentite sia dei ruoli predefiniti che di quelli RBAC.
+Per consentire di delegare le attività amministrative mantenendo gli standard elevati per la sicurezza, Lync Server 2013 offre il controllo di accesso basato sui ruoli (RBAC). Grazie a questa funzionalità, il privilegio amministrativo viene concesso assegnando gli utenti a ruoli amministrativi. Lync Server 2013 include un set completo di ruoli amministrativi incorporati e consente inoltre di creare nuovi ruoli e di specificare un elenco personalizzato di cmdlet per ogni nuovo ruolo. Rende inoltre possibile l'aggiunta di script di cmdlet alle attività consentite sia dei ruoli RBAC predefiniti che di quelli personalizzati.
 
 <div>
 
-## <a name="better-server-security-and-centralization"></a>Migliorare la sicurezza e la centralizzazione del server
+## <a name="better-server-security-and-centralization"></a>Migliore sicurezza dei server e centralizzazione
 
-Con RBAC, Access e Authorization si basano proprio sul ruolo del server Lync dell'utente. In questo modo, è possibile usare la procedura di sicurezza "privilegi minimi", concedendo solo agli amministratori e agli utenti i diritti necessari per il lavoro.
+Con RBAC, l'accesso e l'autorizzazione si basano proprio sul ruolo Lync Server di un utente. In questo modo si dispone di un più ampio margine per applicare il metodo di sicurezza basato sul principio dei privilegi minimi, che concede agli amministratori e agli utenti solo i diritti necessari per le attività che devono svolgere.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Le restrizioni RBAC funzionano solo per gli amministratori che lavorano in remoto, usando il pannello di controllo di Lync Server o Lync Server Management Shell. Un utente che si siede in un server su cui è in uso Lync Server non è limitato da RBAC. Di conseguenza, la sicurezza fisica del server Lync è importante per preservare le restrizioni RBAC.
+> Le restrizioni RBAC funzionano solo per gli amministratori che operano in remoto, utilizzando il pannello di controllo di Lync Server o Lync Server Management Shell. Un utente che si trova in un server su cui è in esecuzione Lync Server non è limitato da RBAC. Pertanto, la sicurezza fisica del server Lync è importante per preservare le restrizioni RBAC.
 
 
 
@@ -61,9 +61,9 @@ Con RBAC, Access e Authorization si basano proprio sul ruolo del server Lync del
 
 ## <a name="roles-and-scope"></a>Ruoli e ambito
 
-In RBAC viene abilitato un *ruolo* per l'uso di un elenco di cmdlet, progettato per essere utile per un determinato tipo di amministratore o tecnico. Un *ambito* è il set di oggetti su cui possono operare i cmdlet definiti in un ruolo. Gli oggetti a cui viene applicato l'ambito possono essere account utente (raggruppati per unità organizzativa) o server (raggruppati per sito).
+Nel controllo di accesso basato sui ruoli un *ruolo* è abilitato all'uso di un elenco di cmdlet, progettati in modo da essere utilizzati da un determinato tipo di amministratore o tecnico. Un *ambito* è un insieme di oggetti sui cui possono operare i cmdlet definiti in un ruolo. Gli oggetti su cui ha effetto l'ambito possono essere account utente (raggruppati per unità organizzativa) o server (raggruppati per sito).
 
-La tabella seguente elenca i ruoli predefiniti in Lync Server e offre una panoramica generale dei tipi di attività che ognuno può eseguire. La quarta colonna Mostra il ruolo di Microsoft Exchange Server simile per ogni ruolo di Lync Server, se disponibile.
+Nella tabella seguente sono elencati i ruoli predefiniti in Lync Server e viene fornita una panoramica generale dei tipi di attività che possono essere eseguite. La quarta colonna Visualizza il ruolo di Microsoft Exchange Server analogo per ogni ruolo di Lync Server, se disponibile.
 
 ### <a name="predefined-administrative-roles"></a>Ruoli amministrativi predefiniti
 
@@ -91,81 +91,81 @@ La tabella seguente elenca i ruoli predefiniti in Lync Server e offre una panora
 </tr>
 <tr class="even">
 <td><p>CsUserAdministrator</p></td>
-<td><p>Può abilitare e disabilitare gli utenti per Lync Server, trasferire gli utenti e assegnare i criteri esistenti agli utenti. Non è possibile modificare i criteri.</p></td>
+<td><p>Consente di abilitare e disabilitare gli utenti per Lync Server, spostare gli utenti e assegnare criteri esistenti agli utenti. Non può modificare i criteri.</p></td>
 <td><p>CSUserAdministrator</p></td>
-<td><p>Destinatari della posta elettronica</p></td>
+<td><p>Mail Recipients</p></td>
 </tr>
 <tr class="odd">
 <td><p>CsVoiceAdministrator</p></td>
-<td><p>Può creare, configurare e gestire le impostazioni e i criteri relativi alla voce.</p></td>
+<td><p>Può creare, configurare e gestire le impostazioni e i criteri vocali.</p></td>
 <td><p>CSVoiceAdministrator</p></td>
 <td><p>Non applicabile</p></td>
 </tr>
 <tr class="even">
 <td><p>CsServerAdministrator</p></td>
-<td><p>Può gestire, monitorare e risolvere i problemi di server e servizi. Può impedire le nuove connessioni ai server, arrestare e avviare i servizi e applicare gli aggiornamenti software. Non è possibile apportare modifiche con l'impatto della configurazione globale.</p></td>
+<td><p>Può gestire e monitorare server e servizi, nonché risolvere i relativi errori. Può impedire nuove connessioni ai server, arrestare e avviare servizi e applicare aggiornamenti software. Non può apportare modifiche con impatto sulla configurazione globale.</p></td>
 <td><p>CSServerAdministrator</p></td>
-<td><p>Gestione server</p></td>
+<td><p>Server Management</p></td>
 </tr>
 <tr class="odd">
 <td><p>CsViewOnlyAdministrator</p></td>
-<td><p>Può visualizzare la distribuzione, incluse le informazioni sull'utente e sul server, per monitorare l'integrità della distribuzione.</p></td>
+<td><p>Può visualizzare la distribuzione, incluse le informazioni su utenti e server, in modo da monitorare l'integrità della distribuzione.</p></td>
 <td><p>CSViewOnlyAdministrator</p></td>
-<td><p>Gestione dell'organizzazione di sola visualizzazione</p></td>
+<td><p>Gestione organizzazione in sola visualizzazione</p></td>
 </tr>
 <tr class="even">
 <td><p>CsHelpDesk</p></td>
-<td><p>Può visualizzare la distribuzione, incluse le proprietà e i criteri dell'utente. Può eseguire attività specifiche per la risoluzione dei problemi. Non è possibile modificare le proprietà o i criteri degli utenti, la configurazione del server o i servizi.</p></td>
+<td><p>Può visualizzare la distribuzione, tra cui le proprietà e i criteri utente, e può eseguire specifiche attività di risoluzione dei problemi. Non può modificare le proprietà o i criteri utente, la configurazione dei server o i servizi.</p></td>
 <td><p>CSHelpDesk</p></td>
-<td><p>Help desk</p></td>
+<td><p>HelpDesk</p></td>
 </tr>
 <tr class="odd">
 <td><p>CsArchivingAdministrator</p></td>
 <td><p>Può modificare la configurazione e i criteri di archiviazione.</p></td>
 <td><p>CSArchivingAdministrator</p></td>
-<td><p>Gestione della conservazione, blocco legale</p></td>
+<td><p>Gestione conservazione, Conservazione legale</p></td>
 </tr>
 <tr class="even">
 <td><p>CsResponseGroupAdministrator</p></td>
-<td><p>Può gestire la configurazione dell'applicazione Response Group all'interno di un sito.</p></td>
+<td><p>Può gestire la configurazione dell'applicazione Response Group in un sito.</p></td>
 <td><p>CSResponseGroupAdministrator</p></td>
 <td><p>Non applicabile</p></td>
 </tr>
 <tr class="odd">
 <td><p>CsLocationAdministrator</p></td>
-<td><p>Livello di diritti più basso per la gestione avanzata di 9-1-1 (E9-1-1), tra cui la creazione di percorsi E9-1-1 e gli identificatori di rete e l'associazione tra loro. Questo ruolo viene sempre assegnato con un ambito globale.</p></td>
+<td><p>Livello minimo di diritti per la gestione di Enhanced 9-1-1 (E9-1-1), incluse la creazione di posizioni E9-1-1 e di identificatori di rete e l'associazione tra questi elementi. Questo ruolo viene sempre assegnato con un ambito globale.</p></td>
 <td><p>CSLocationAdministrator</p></td>
 <td><p>Non applicabile</p></td>
 </tr>
 <tr class="even">
 <td><p>CsResponseGroupManager</p></td>
-<td><p>Può gestire gruppi di risposta specifici.</p></td>
+<td><p>Può gestire Response Group specifici.</p></td>
 <td><p>CSResponseGroupManager</p></td>
 <td><p>Non applicabile</p></td>
 </tr>
 <tr class="odd">
-<td><p>CsPersistentChatAdministrator</p></td>
-<td><p>Può gestire la funzionalità chat persistente e le chat room persistenti specifiche.</p></td>
-<td><p>CSPersistentChatAdministrator</p></td>
+<td><p>Ruolo CsPersistentChatAdministrator</p></td>
+<td><p>Può gestire la funzionalità di chat persistente e specifiche chat Persistent Chat.</p></td>
+<td><p>Ruolo CsPersistentChatAdministrator</p></td>
 <td><p>Non applicabile</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Tutti i ruoli predefiniti spediti in Lync Server hanno un ambito globale. Per seguire le procedure per i privilegi minimi, non è consigliabile assegnare utenti ai ruoli con ambito globale se si vuole amministrare solo un set limitato di server o utenti. A questo scopo, puoi creare ruoli basati su un ruolo esistente, ma con un ambito più limitato.
+Tutti i ruoli predefiniti spediti in Lync Server hanno un ambito globale. Per applicare il principio dei privilegi minimi, è consigliabile non assegnare utenti a ruoli con ambito globale se amministreranno solo un insieme limitato di server o utenti. A tale scopo, è possibile creare ruoli basati su ruoli esistenti, ma con un ambito molto più limitato.
 
 <div>
 
 ## <a name="creating-a-scoped-role"></a>Creazione di un ruolo con ambito
 
-Quando si crea un ruolo con un ambito limitato (un ruolo con ambito), si specifica l'ambito, insieme al ruolo esistente su cui è basato e al gruppo Active Directory a cui assegnare il ruolo. Il gruppo di Active Directory specificato deve essere già creato. Il cmdlet seguente è un esempio di creazione di un ruolo che ha i privilegi di uno dei ruoli amministrativi predefiniti, ma con un ambito limitato. Viene creato un nuovo ruolo denominato `Site01 Server Administrators`. Il ruolo ha le capacità del ruolo di CsServerAdministrator predefinito, ma solo per i server presenti nel sito di Site01. Affinché questo cmdlet funzioni, il sito di Site01 deve essere già definito e un gruppo di sicurezza universale denominato `Site01 Server Administrators` deve esistere già.
+Quando si crea un ruolo con ambito limitato, ovvero un ruolo con ambito, si specifica l'ambito insieme al ruolo esistente sui cui si basa e al gruppo Active Directory a cui assegnare il ruolo. Il gruppo Active Directory specificato deve essere già creato. Il cmdlet seguente è un esempio di creazione di un ruolo che dispone dei privilegi di uno dei ruoli amministrativi, ma con ambito limitato. Viene creato un nuovo ruolo denominato `Site01 Server Administrators`. Il nuovo ruolo ha le capacità del ruolo CsServerAdministrator predefinito, ma solo per i server del sito Site01. Per il funzionamento di questo cmdlet, è necessario che il sito Site01 sia già stato definito e che sia `Site01 Server Administrators` già presente un gruppo di sicurezza universale denominato.
 
     New-CsAdminRole -Identity "Site01 Server Administrators" -Template CsServerAdministrator -ConfigScopes "site:Site01"
 
-Dopo l'esecuzione di questo cmdlet, tutti gli utenti membri del `Site01 Server Administrators` gruppo avranno i privilegi di amministratore del server per i server in Site01. Inoltre, gli eventuali utenti aggiunti in seguito a questo gruppo di sicurezza universale acquisiscono anche i privilegi di questo ruolo. Tieni presente che viene chiamato `Site01 Server Administrators`sia il ruolo stesso che il gruppo di sicurezza universale a cui viene assegnato.
+Dopo l'esecuzione di questo cmdlet, tutti gli utenti membri del `Site01 Server Administrators` gruppo disporranno dei privilegi di amministratore del server per i server di Site01. Inoltre, tutti gli utenti che successivamente sono stati aggiunti a questo gruppo di protezione universale ottengono anche i privilegi di questo ruolo. Si noti che sia il ruolo stesso che il gruppo di sicurezza universale a cui viene assegnato sono `Site01 Server Administrators`chiamati.
 
-L'esempio seguente limita l'ambito utente anziché l'ambito server. Crea un `Sales Users Administrator` ruolo per amministrare gli account utente nell'unità organizzativa Sales. Il gruppo di sicurezza universale SalesUsersAdministrator deve essere già creato per il funzionamento del cmdlet.
+Nell'esempio seguente si applicano limiti all'ambito utente anziché all'ambito server. Consente di creare `Sales Users Administrator` un ruolo per amministrare gli account utente nell'unità organizzativa Sales. Per il funzionamento del cmdlet, è necessario che il gruppo di sicurezza universale di SalesUsersAdministrator sia già stato creato.
 
     New-CsAdminRole -Identity "Sales Users Administrator " -Template CsUserAdministrator -UserScopes "OU:OU=Sales, OU=Lync Tenants, DC=Domain, DC=com"
 
@@ -175,21 +175,21 @@ L'esempio seguente limita l'ambito utente anziché l'ambito server. Crea un `Sal
 
 ## <a name="creating-a-new-role"></a>Creazione di un nuovo ruolo
 
-Per creare un ruolo che abbia accesso a un set di cmdlet non in uno dei ruoli predefiniti oppure a un set di script o moduli, è possibile iniziare a usare uno dei ruoli predefiniti come modello. Tieni presente che gli script e i moduli che i ruoli possono eseguire devono essere archiviati nei percorsi seguenti:
+Per creare un ruolo che disponga di accesso a un insieme di cmdlet non inclusi in uno dei ruoli predefiniti oppure a un insieme di script o moduli, usare di nuovo uno dei ruoli predefiniti come modello. Si noti che gli script e i moduli che i ruoli sono in grado di eseguire devono essere memorizzati nei percorsi seguenti:
 
-  - Percorso modulo di Lync, che è per impostazione predefinita C\\: programmi\\file comuni\\Microsoft Lync Server 2013\\modules\\Lync
+  - Il percorso del modulo di Lync, che per impostazione predefinita\\è C\\: Program\\files Common Files Microsoft\\Lync\\Server 2013 Modules Lync
 
-  - Il percorso di script utente, che è per impostazione predefinita\\C:\\programmi file\\comuni di Microsoft Lync\\Server 2013 AdminScripts
+  - Il percorso dello script utente, che per impostazione predefinita è\\C:\\Program Files\\Common Files Microsoft Lync\\Server 2013 AdminScripts
 
-Per creare un nuovo ruolo, puoi usare il cmdlet **New-CsAdminRole** . Prima di eseguire **New-CsAdminRole**, è necessario prima di tutto creare il gruppo di sicurezza universale sottostante che verrà associato a questo ruolo.
+Per creare un nuovo ruolo, utilizzare il cmdlet **New-CsAdminRole**. Prima di eseguire **New-CsAdminRole**, è innanzitutto necessario creare il gruppo di protezione universale sottostante che verrà associato a questo ruolo.
 
-I cmdlet seguenti fungono da esempio di creazione di un nuovo ruolo. Crea un nuovo tipo di ruolo denominato `MyHelpDeskScriptRole`. Il nuovo ruolo ha le capacità del ruolo CsHelpDesk predefinito e può inoltre eseguire le funzioni in uno script denominato "TestScript".
+I cmdlet seguenti possono essere usati come esempio di creazione di un nuovo ruolo. Si crea un nuovo tipo di ruolo `MyHelpDeskScriptRole`denominato. Il nuovo ruolo ha le capacità del ruolo CsHelpDesk predefinito e può anche eseguire le funzioni in uno script denominato "testscript".
 
     New-CsAdminRole -Identity "MyHelpDeskScriptRole" -Template CsHelpDesk -ScriptModules @{Add="testScript.ps1"}
 
-Per il funzionamento di questo cmdlet, è necessario aver creato prima il gruppo di sicurezza universale MyHelpDeskScriptRole.
+Affinché questo cmdlet funzioni, è necessario che sia stato creato per la prima volta il gruppo di protezione universale MyHelpDeskScriptRole.
 
-Dopo l'esecuzione di questo cmdlet, è possibile assegnare gli utenti direttamente a questo ruolo (nel qual caso hanno ambito globale) oppure creare un ruolo con ambito basato su questo ruolo, come spiegato in creare un ruolo con ambito, in precedenza in questo documento.
+Dopo aver eseguito il cmdlet, è possibile assegnare gli utenti direttamente a questo ruolo (in tal caso avranno ambito globale) o creare un ruolo con ambito basato su questo ruolo, come spiegato nella sezione precedente del presente documento, intitolata Creazione di un ruolo con ambito.
 
 </div>
 
@@ -197,15 +197,15 @@ Dopo l'esecuzione di questo cmdlet, è possibile assegnare gli utenti direttamen
 
 ## <a name="assigning-roles-to-users"></a>Assegnazione di ruoli agli utenti
 
-Ogni ruolo di Lync Server è associato a un gruppo di sicurezza universale di Active Directory sottostante. Gli utenti aggiunti al gruppo sottostante acquisiscono le capacità di tale ruolo.
+Ogni ruolo di Lync Server è associato a un gruppo di protezione universale di Active Directory sottostante. Tutti gli utenti che vengono aggiunti al gruppo sottostante acquisiscono le capacità di tale ruolo.
 
-Gli esempi nelle sezioni precedenti hanno creato un nuovo ruolo e assegnato un gruppo di sicurezza universale esistente al nuovo ruolo. Per assegnare un ruolo esistente a uno o più utenti, aggiungere gli utenti al gruppo associato al ruolo. È possibile aggiungere entrambi i singoli utenti e i gruppi di sicurezza universale a questi gruppi.
+Negli esempi nelle sezioni precedenti è stato creato un nuovo ruolo e assegnato un gruppo di sicurezza universale esistente al nuovo ruolo. Per assegnare un ruolo esistente a uno o più utenti, aggiungere gli utenti desiderati al gruppo associato al ruolo. È possibile aggiungere entrambi i singoli utenti e i gruppi di protezione universale a questi gruppi.
 
-Ad esempio, il ruolo **CsAdministrator** viene concesso automaticamente al gruppo **amministratori** di sicurezza universale di CS in Active Directory. Questo gruppo di sicurezza universale viene creato in Active Directory quando si distribuisce Lync Server. Per concedere a un utente o a un gruppo questo privilegio, è possibile aggiungerli semplicemente al gruppo **amministratori di CS** .
+Ad esempio, il ruolo **CsAdministrator** viene concesso automaticamente al gruppo di protezione universale **Administrators di CS** in Active Directory. Questo gruppo di sicurezza universale viene creato in Active Directory quando si distribuisce Lync Server. Per concedere questo privilegio a un utente o a un gruppo, è sufficiente aggiungerlo al gruppo **CS Administrators**.
 
-A un utente possono essere assegnati più ruoli RBAC per essere aggiunti ai gruppi di Active Directory sottostanti che corrispondono a ogni ruolo.
+È possibile assegnare a un utente più ruoli di controllo di accesso basato sui ruoli aggiungendo l'utente ai gruppi Active Directory sottostanti che corrispondono a ogni ruolo.
 
-Tieni presente che quando crei un ruolo, gli utenti che vengono aggiunti in seguito al gruppo Active Directory sottostante acquisiscono le capacità di tale ruolo.
+Si noti che quando si crea un ruolo, gli utenti che vengono aggiunti successivamente al gruppo Active Directory sottostante acquisiscono le capacità di tale ruolo.
 
 </div>
 
@@ -213,9 +213,9 @@ Tieni presente che quando crei un ruolo, gli utenti che vengono aggiunti in segu
 
 ## <a name="modifying-the-abilities-of-a-role"></a>Modifica delle capacità di un ruolo
 
-È possibile modificare l'elenco di cmdlet e script che possono essere eseguiti da un ruolo. È possibile modificare sia i cmdlet che gli script che i ruoli personalizzati possono eseguire, ma è possibile modificare solo gli script per i ruoli predefiniti. Ogni cmdlet digitato può aggiungere, rimuovere o sostituire cmdlet o script.
+È possibile modificare l'elenco di cmdlet e script che un ruolo può eseguire, nonché modificare sia i cmdlet che gli script che i ruoli personalizzati possono eseguire, ma solo gli script dei ruoli predefiniti. Ogni cmdlet digitato può aggiungere, rimuovere o sostituire cmdlet o script.
 
-Per modificare un ruolo, usare il cmdlet **Set-CsAdminRole** . Il cmdlet seguente consente di rimuovere uno script dal ruolo.
+Per modificare un ruolo, usare il cmdlet **Set-CsAdminRole**. Il cmdlet seguente consente di rimuovere uno script dal ruolo.
 
     Set-CsAdminRole -Identity "MyHelpDeskScriptRole" -ScriptModules @{Remove="testScript.ps1"}
 
@@ -225,11 +225,11 @@ Per modificare un ruolo, usare il cmdlet **Set-CsAdminRole** . Il cmdlet seguent
 
 <div>
 
-## <a name="planning-for-rbac"></a>Pianificazione per RBAC
+## <a name="planning-for-rbac"></a>Pianificazione del controllo di accesso basato sui ruoli
 
-Per ogni persona a cui deve essere assegnato qualsiasi tipo di diritti amministrativi per la distribuzione di Lync Server, valutare le attività che devono eseguire, quindi assegnarle ai ruoli con i privilegi minimi e l'ambito necessari per il lavoro. Se necessario, puoi usare il cmdlet **Set-CsAdminRole** per creare un nuovo ruolo con solo i cmdlet necessari per le attività di questa persona.
+Per ogni persona a cui deve essere assegnato qualsiasi tipo di diritti amministrativi per la distribuzione di Lync Server, prendere in considerazione le attività da eseguire, quindi assegnarle ai ruoli con i privilegi minimi e l'ambito necessari per il proprio lavoro. Se necessario, è possibile utilizzare il cmdlet **Set-CsAdminRole** per creare un nuovo ruolo con i soli cmdlet richiesti per le attività di questo utente.
 
-Gli utenti che hanno il ruolo CsAdministrator possono creare tutti i tipi di ruoli, inclusi i ruoli basati su CsAdministrator, e assegnarli agli utenti. La procedura consigliata consiste nell'assegnare il ruolo CsAdministrator a un set molto piccolo di utenti attendibili.
+Gli utenti con ruolo CsAdministrator possono creare tutti i tipi di ruoli, inclusi quelli basati su CsAdministrator, e assegnare utenti a tali ruoli. La procedura consigliata prevede l'assegnazione del ruolo CsAdministrator a un insieme limitato di utenti trusted.
 
 </div>
 

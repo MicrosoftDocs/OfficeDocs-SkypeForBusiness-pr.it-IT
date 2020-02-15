@@ -12,20 +12,20 @@ ms:contentKeyID: 49733747
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 405d44f9128ef4c8120a6a8389f8d566b6880b2a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: dd73e1356e42aca8dc4159143287371dd66f0688
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735206"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037968"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-av-conferencing-in-lync-server-2013"></a>Panoramica delle conferenze A/V in Lync Server 2013
+# <a name="overview-of-av-conferencing-in-lync-server-2013"></a>Panoramica di A/V Conferencing in Lync Server 2013
 
 </div>
 
@@ -35,29 +35,29 @@ ms.locfileid: "41735206"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-13_
+_**Ultimo argomento modificato:** 2012-10-13_
 
-A/V Conferencing consente le comunicazioni audio e video in tempo reale tra gli utenti. Quando si distribuiscono i servizi di conferenza, è possibile scegliere di abilitare e usare servizi di conferenza Web e conferenze A/V o solo servizi di conferenza Web.
+A/V Conferencing consente di abilitare le comunicazioni audio e video in tempo reale tra gli utenti. Quando si distribuisce il servizio di conferenza, è possibile scegliere di abilitare e utilizzare sia le conferenze Web che le conferenze audio/video oppure solo le conferenze Web.
 
-Per pianificare i servizi di conferenza A/V, è necessario comprendere la larghezza di banda della rete necessaria per il tipo di supporto per i servizi di conferenza richiesto dall'organizzazione. Questo potrebbe includere l'audio, il video e il video panoramico.
+Per la pianificazione delle conferenze audio/video è necessario conoscere i requisiti di larghezza di banda di rete dei vari tipi di supporti per le conferenze richiesti dall'organizzazione. Questo potrebbe includere audio, video e video panoramici.
 
-Prima di abilitare gli utenti per le conferenze A/V, assicurati che la rete possa gestire il carico risultante. Senza una sufficiente larghezza di banda della rete, l'esperienza utente potrebbe essere gravemente degradata. Puoi usare il controllo di ammissione chiamata (CAC) per gestire la larghezza di banda della rete usata da servizi di conferenza A/V. Questa operazione è importante per le reti con restrizioni, ad esempio i collegamenti a larghezza di banda limitati tra siti centrali e succursali. Per informazioni dettagliate, vedere [Panoramica del controllo di ammissione alle chiamate in Lync Server 2013](lync-server-2013-overview-of-call-admission-control.md). Per informazioni dettagliate sui requisiti di larghezza di banda multimediali, vedere [requisiti di larghezza di banda della rete per il traffico multimediale in Lync Server 2013](lync-server-2013-network-bandwidth-requirements-for-media-traffic.md).
+Prima di abilitare gli utenti per il servizio A/V Conferencing, verificare che la rete sia in grado di gestire il carico risultante. Senza larghezza di banda di rete sufficiente, l'esperienza utente può essere gravemente degradata. È possibile utilizzare il controllo di ammissione di chiamata per gestire la larghezza di banda di rete utilizzata da A/V Conferencing. Questo è importante per le reti limitate, ad esempio collegamenti a larghezza di banda limitate tra i siti centrali e di succursale. Per ulteriori informazioni, vedere [Panoramica del controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-overview-of-call-admission-control.md). Per informazioni dettagliate sui requisiti di larghezza di banda multimediale, vedere [requisiti di larghezza di banda di rete per il traffico multimediale in Lync Server 2013](lync-server-2013-network-bandwidth-requirements-for-media-traffic.md).
 
-Se si distribuiscono i servizi di audioconferenza nella rete, gli utenti avranno bisogno di dispositivi audio come auricolari per partecipare a una conferenza audio. Se si distribuiscono videoconferenze, è necessario distribuire dispositivi video, ad esempio webcam per gli utenti. Ti consigliamo di usare i dispositivi Unified Communications (UC) certificati da Microsoft per tutti i tipi di dispositivi, per garantire un'esperienza utente ottimale. Per informazioni dettagliate sui dispositivi certificati UC, vedere "telefoni e dispositivi per Lync" all' [http://go.microsoft.com/fwlink/p/?LinkId=263861](http://go.microsoft.com/fwlink/p/?linkid=263861)indirizzo. Per i dispositivi audio o video, la distribuzione di dispositivi e la formazione degli utenti sono passaggi importanti da considerare e pianificare.
+Se si distribuiscono audioconferenza in rete, gli utenti avranno bisogno di dispositivi audio come gli auricolari per partecipare a una conferenza audio. Se si distribuiscono video Conferencing, è necessario distribuire dispositivi video, ad esempio webcams per gli utenti. È consigliabile utilizzare i dispositivi Unified Communications (UC) certificati da Microsoft per tutti i tipi di dispositivi, per garantire un'esperienza utente ottimale. Per informazioni dettagliate sui dispositivi certificati per le comunicazioni unificate, vedere "telefoni e dispositivi [http://go.microsoft.com/fwlink/p/?LinkId=263861](http://go.microsoft.com/fwlink/p/?linkid=263861)per Lync" all'indirizzo. Per i dispositivi audio o video, la distribuzione dei dispositivi e la formazione degli utenti sono passaggi importanti da considerare e pianificare.
 
-Le sezioni seguenti descrivono le funzionalità per le conferenze audio e video, incluse le informazioni sulla gestione della larghezza di banda e la selezione dei client appropriati.
+Nelle sezioni seguenti vengono descritte le funzionalità per le conferenze audio e video, incluse le informazioni sulla gestione della larghezza di banda e la selezione dei client adatti.
 
 <div>
 
-## <a name="audio-conferencing-features"></a>Funzionalità di conferenza audio
+## <a name="audio-conferencing-features"></a>Funzionalità di audioconferenza
 
-Lync Server 2013 offre diverse funzionalità che possono essere usate per configurare l'esperienza di audioconferenza per l'utente, inclusi i seguenti:
+Lync Server 2013 offre diverse funzionalità che è possibile utilizzare per configurare l'esperienza di audioconferenza per l'utente, incluse le operazioni seguenti:
 
-  - **Disattivazione del pubblico**   il relatore può usare questa impostazione per disattivare l'audio di tutti i partecipanti alla conferenza e inserire la conferenza in uno stato in cui non è possibile riattivare gli utenti.
+  - **Disattivazione**   del gruppo il relatore può utilizzare questa impostazione per disattivare l'audio di tutti i partecipanti alla conferenza e inserire la conferenza in uno stato in cui non è possibile riattivare gli utenti.
 
-  - **Annunci di entrata/uscita per conferenze**   se sono stati abilitati i servizi di conferenza telefonica con accesso esterno, i relatori possono usare questa impostazione per attivare o disattivare gli annunci di entrata e uscita per ridurre al minimo le distrazioni mentre è in corso una conferenza.
+  - **Annunci di entrata/uscita**   per le conferenze se sono state abilitate le conferenze telefoniche con accesso esterno, i relatori possono utilizzare questa impostazione per attivare o disattivare gli annunci di entrata e uscita per ridurre al minimo le distrazioni mentre è in corso una conferenza.
 
-  - **L'aggiunta di un utente tramite la chiamata di**   relatori e partecipanti a cui è stata assegnata l'autorizzazione può aggiungere numeri PSTN alle conferenze e effettuare la chiamata in uscita per i numeri.
+  - **L'aggiunta di un utente tramite la composizione di**   relatori e partecipanti a cui è stata assegnata l'autorizzazione, può aggiungere numeri PSTN alle conferenze e fare in modo che la conferenza venga disattivata in questi numeri.
 
 </div>
 
@@ -65,17 +65,17 @@ Lync Server 2013 offre diverse funzionalità che possono essere usate per config
 
 ## <a name="video-conferencing-features"></a>Funzionalità di conferenza video
 
-Lync Server 2013 offre diverse funzionalità che è possibile usare per configurare l'esperienza di videoconferenza per l'utente, inclusi i seguenti:
+Lync Server 2013 offre diverse funzionalità che è possibile utilizzare per configurare l'esperienza di videoconferenza per l'utente, incluse le operazioni seguenti:
 
-  - **Visualizzazione raccolta in**   videoconferenze con più di due persone, gli utenti vedranno automaticamente tutti i partecipanti alla conferenza. Se la conferenza include più di cinque partecipanti, il video dei partecipanti più attivi viene visualizzato nella riga superiore e viene visualizzata solo la foto per gli altri partecipanti. Il video a più parti è attivato per impostazione predefinita. Per informazioni dettagliate sulla configurazione o disattivazione di un video con più parti, vedere [configurazione della larghezza di banda video in Lync Server 2013](lync-server-2013-configuring-video-bandwidth.md).
+  - **Visualizzazione raccolta nelle**   conferenze video con più di due persone, gli utenti visualizzano automaticamente tutti i partecipanti alla conferenza. Se la conferenza ha più di cinque partecipanti, il video dei partecipanti più attivi viene visualizzato nella riga superiore e viene visualizzata solo la foto per gli altri partecipanti. Il video a più parti è attivato per impostazione predefinita. Per informazioni dettagliate sulla configurazione o la disattivazione del video in più parti, vedere [Configuring video bandwidth in Lync Server 2013](lync-server-2013-configuring-video-bandwidth.md).
 
-  - **Video panoramico**   se un dispositivo di videoconferenza RoundTable è installato nella sala conferenze, questa caratteristica offre una visualizzazione completa di 360 gradi della sala riunioni. La striscia video panoramica è disponibile solo con i dispositivi RoundTable.
+  - **Video panoramico**   se un dispositivo per conferenze video RoundTable è installato nella sala conferenze, questa funzionalità fornisce una visualizzazione completa di 360 gradi della sala riunioni. La striscia panoramica video è disponibile solo con i dispositivi RoundTable.
 
-  - **Relatore solo**   i presentatori della modalità video possono configurare la riunione in modo che venga visualizzato solo il video del relatore. In questo modo si evitano le distrazioni nelle riunioni di grandi dimensioni quando sono disponibili più flussi video e si bloccano in origini diverse. Questa modalità si applica anche ai video acquisiti e forniti dai dispositivi RoundTable.
+  - **Relatore solo**   i presentatori della modalità video possono configurare la riunione in modo che venga visualizzato solo il video del relatore. In questo modo si evitano le distrazioni nelle riunioni di grandi dimensioni quando sono disponibili più flussi video e si bloccano su origini diverse. Questa modalità si applica anche ai video acquisiti e forniti dai dispositivi RoundTable.
 
-  - ****   Gli utenti di video HD possono provare risoluzioni fino a 1080p HD in chiamate in due parti e conferenze multiparte.
+  - ****   Gli utenti di video HD possono sperimentare risoluzioni fino a 1080p HD in chiamate a due parti e conferenze con più partecipanti.
 
-  - ****   I relatori dei riflettori video possono configurare la riunione in modo che solo il video di un partecipante selezionato che è un'origine video sia visibile dagli altri partecipanti alla conferenza. Questa modalità si applica anche ai video acquisiti e forniti dai dispositivi RoundTable per il video panoramico.
+  - ****   I relatori video Spotlight possono configurare la riunione in modo che solo il video di un partecipante selezionato che sia un'origine video venga visualizzato dagli altri partecipanti alla conferenza. Questa modalità si applica anche ai video acquisiti e forniti dai dispositivi RoundTable per il video panoramico.
 
 </div>
 

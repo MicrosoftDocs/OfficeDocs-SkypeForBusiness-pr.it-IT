@@ -12,16 +12,16 @@ ms:contentKeyID: 48184948
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9d13ca1a28fd28a6d280ddf3a18e57e09376e668
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4a2f8e9bea40532486d75e76887e35b496df8631
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765957"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42039129"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,25 +35,25 @@ ms.locfileid: "41765957"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-La funzionalità Lync Server 2013 supporta più associazioni tra gateway e Mediation Server. Queste associazioni vengono effettuate definendo un trunk, che è un'associazione logica tra un pool di Mediation Server e un gateway PSTN (Public Switched Telephone Network), Session Border Controller (SBC) o IP-PBX. Usare il generatore di topologie per associare i gateway ai server di mediazione (ovvero Trunks).
+La funzionalità di Lync Server 2013 supporta più associazioni tra gateway e Mediation Server. Queste associazioni vengono eseguite definendo un trunk, che è un'associazione logica tra un pool di Mediation Server e un gateway PSTN (Public Switched Telephone Network), Session Border Controller (SBC) o IP-PBX. Utilizzare il generatore di topologie per associare i gateway a Mediation Server (ovvero Trunks).
 
-  - Per assegnare o rimuovere un trunk in Lync Server 2013, è prima di tutto necessario definire un trunk in Generatore di topologie. Un trunk è costituito dall'associazione seguente: Mediation Server Fully Qualified Domain Name (FQDN), la porta di ascolto di Mediation Server, il nome di dominio completo del gateway e la porta di ascolto del gateway.
+  - Per assegnare o rimuovere un trunk in Lync Server 2013, è innanzitutto necessario definire un trunk in Generatore di topologie. Un trunk è costituito dai seguenti elementi: Mediation Server Fully Qualified Domain Name (FQDN), la porta di attesa Mediation Server, il nome di dominio completo del gateway e la porta di attesa del gateway.
 
-  - Per configurare più Trunks, è possibile creare più associazioni tra lo stesso gateway e il Mediation Server. In questo modo è disponibile un'ulteriore resilienza dell'infrastruttura VoIP aziendale, che risulta particolarmente utile negli scenari di interoperabilità del PBX (Private Branch Exchange).
+  - Per configurare più trunk, è possibile creare più associazioni tra lo stesso gateway e il Mediation Server. Questo fornisce ulteriore resilienza all'infrastruttura VoIP aziendale, che è particolarmente utile in scenari di interoperabilità PBX (Private Branch Exchange).
 
-Quando viene definito un trunk, deve essere associato a una route. Per associare un trunk a una route, è possibile definire un nome semplice per il trunk in Generatore di topologia. Questo nome semplice viene usato come nome del trunk nel pannello di controllo di Lync Server, dove Trunks può essere associato alle route. Il nome trunk semplice viene usato come nome del gateway da Lync Server Management Shell.
+Dopo essere stato definito, il trunk deve essere associato a una route. Per associare un trunk a una route, è possibile definire un nome semplice per il trunk in Generatore di topologie. Questo nome semplice viene utilizzato come nome del trunk nel pannello di controllo di Lync Server, dove Trunks può essere associato a route. Il nome del trunk semplice viene utilizzato come nome del gateway da Lync Server Management Shell.
 
     New-CsVoiceRoute -Identity <RouteId> -NumberPattern <String> -PstnUsages @{add="<UsageString>"} -PstnGatewayList @{add="<TrunkSimpleName>"}
 
-L'amministratore deve selezionare un trunk predefinito associato a un Mediation Server. In Generatore di topologie fare clic con il pulsante destro del mouse sul server di mediazione associato e quindi scegliere **Proprietà**. Specificare il gateway predefinito per il Mediation Server.
+L'amministratore deve selezionare un trunk predefinito associato a un Mediation Server. Dal generatore di topologie fare clic con il pulsante destro del mouse sul Mediation Server associato e quindi scegliere **Proprietà**. Specificare il gateway predefinito per il Mediation Server.
 
-Il diagramma seguente illustra i trunk più definiti per ogni Mediation Server e gateway.
+Nel diagramma seguente vengono illustrati i trunk multipli definiti per ogni Mediation Server e gateway.
 
-**Routing Trunk M-N**
+**Routing con trunk M-N**
 
-![Assegnazioni di più trunk.](images/JJ205127.c61cd9a7-d8d9-4e02-83b9-ab62519a48c4(OCS.15).jpg "Assegnazioni di più trunk.")
+![Più assegnazioni di trunk.](images/JJ205127.c61cd9a7-d8d9-4e02-83b9-ab62519a48c4(OCS.15).jpg "Più assegnazioni di trunk.")
 
 </div>
 

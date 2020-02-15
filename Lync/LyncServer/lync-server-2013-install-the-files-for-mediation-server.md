@@ -12,16 +12,16 @@ ms:contentKeyID: 48185772
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c84d5fc2c863e0e56af275a4bee084652742eeac
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7549d5efad333038dd6633c0c74192b3293933ea
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763680"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046943"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41763680"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-08-06_
+_**Ultimo argomento modificato:** 2012-08-06_
 
-Per completare correttamente questa procedura, è necessario avere effettuato l'accesso al server, almeno come amministratore locale e un utente di dominio con appartenenza almeno al gruppo RTCUniversalReadOnlyAdmins.
+Per eseguire questa procedura, è necessario accedere al server almeno come amministratore locale e come utente di dominio appartenente almeno al gruppo RTCUniversalReadOnlyAdmin.
 
-Seguire i passaggi descritti in questo argomento per eseguire la distribuzione guidata di Lync Server 2013 per installare i file per Mediation Server in un computer aggiunto a un pool di Mediation Server quando è stato usato generatore di topologie per definire e pubblicare il pool. Durante l'installazione di file Mediation Server è anche possibile installare e assegnare il certificato richiesto da ogni computer in un pool di Mediation Server.
+Utilizzare la procedura descritta in questo argomento per eseguire la distribuzione guidata di Lync Server 2013 per installare i file per Mediation Server in un computer aggiunto a un pool di Mediation Server quando è stato utilizzato il generatore di topologie per definire e pubblicare il pool. Quando si installano i file Mediation Server, è inoltre necessario installare e assegnare il certificato richiesto da ogni computer in un pool di Mediation Server.
 
-In questo sito, se sono già stati distribuiti server di mediazione collocati nei pool Front-end o in un server Standard Edition, è possibile ignorare questo argomento e, invece, continuare a [configurare Trunks in Lync server 2013](lync-server-2013-configuring-trunks.md).
+In questo sito, se sono già stati distribuiti i Mediation Server collocati nei pool Front end o nel server Standard Edition, è possibile ignorare questo argomento e, invece, continuare con la [configurazione dei trunk in Lync server 2013](lync-server-2013-configuring-trunks.md).
 
 <div>
 
 
 > [!NOTE]  
-> Questo argomento presuppone che sia già stato definito e pubblicato un pool di Mediation Server autonomo come descritto in <A href="lync-server-2013-define-a-mediation-server-in-topology-builder.md">definire un Mediation Server in Generatore di topologia in Lync server 2013</A> e <A href="lync-server-2013-publish-the-topology.md">pubblicare la topologia in Lync Server 2013</A> nella documentazione di distribuzione. e verificare che i computer nel pool di Mediation server soddisfino i prerequisiti descritti in <A href="lync-server-2013-software-prerequisites-for-enterprise-voice.md">prerequisiti software per enterprise Voice in Lync Server 2013</A> e <A href="lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md">prerequisiti per la sicurezza e la configurazione per le aziende Voce in Lync Server 2013</A>.
+> In questo argomento si presuppone che sia già stato definito e pubblicato un pool di Mediation Server autonomo, come descritto in <A href="lync-server-2013-define-a-mediation-server-in-topology-builder.md">define a Mediation Server in Generatore di topologie in Lync server 2013</A> e <A href="lync-server-2013-publish-the-topology.md">pubblicare la topologia in Lync Server 2013</A> nella documentazione relativa alla distribuzione. e di aver verificato che i computer nel pool di Mediation server soddisfino i prerequisiti descritti nei prerequisiti <A href="lync-server-2013-software-prerequisites-for-enterprise-voice.md">software per voip aziendale in Lync Server 2013</A> e <A href="lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md">prerequisiti per la sicurezza e la configurazione per l'organizzazione Voce in Lync Server 2013</A>.
 
 
 
@@ -55,35 +55,35 @@ In questo sito, se sono già stati distribuiti server di mediazione collocati ne
 
 <div>
 
-## <a name="to-install-the-files-for-a-stand-alone-mediation-server-pool"></a>Per installare i file per un pool di Mediation Server autonomo
+## <a name="to-install-the-files-for-a-stand-alone-mediation-server-pool"></a>Per installare i file per un pool Mediation Server autonomo
 
-1.  Dal supporto di installazione fare clic con il \<pulsante destro\>del mouse su installazione media**\\Setup. exe\\amd64\\**e quindi scegliere **Esegui come amministratore**.
+1.  Dal supporto di installazione, fare clic con \<il pulsante\>destro del mouse su installazione media**\\Setup\\amd64\\Setup. exe**e quindi fare clic su **Esegui come amministratore**.
 
-2.  Nella pagina **posizione di installazione** fare clic su **OK**.
+2.  Nella pagina **Percorso di installazione** fare clic su **OK**.
 
-3.  Nella pagina **contratto di licenza con l'utente finale** fare clic su **Accetto**e quindi fare clic su **OK**. (Obbligatorio per continuare).
+3.  Nella pagina **Contratto di licenza con l'utente finale** fare clic su **Accetto** e quindi su **OK**. Questa operazione è obbligatoria per proseguire.
 
-4.  Nella pagina **distribuzione guidata di Lync server 2010** fare clic su **Installa o aggiorna Lync Server System**.
+4.  Nella pagina **Distribuzione guidata di Lync Server 2010** fare clic su **Installa o aggiorna il sistema Lync Server**.
 
-5.  Accanto al **passaggio 1: installare l'archivio configurazione locale**, fare clic su **Esegui**e quindi seguire le istruzioni visualizzate.
+5.  Accanto a **Passaggio 1: Installazione dell'archivio di configurazione locale** fare clic su **Esegui** e quindi seguire le istruzioni visualizzate sullo schermo.
 
-6.  Nella pagina **Configura replica locale della pagina Central Management store** accettare il recupero predefinito **direttamente dall'Central Management store**e quindi fare clic su **Avanti**.
+6.  Nella pagina **Configura la replica locale dell'archivio di gestione centrale** accettare l'impostazione predefinita **Recupera direttamente dall'archivio di gestione centrale** e quindi fare clic su **Avanti**.
 
-7.  Nella pagina **esecuzione dei comandi** , quando lo stato dell'attività viene visualizzato come **completato**, fare clic su **fine**.
+7.  Nella pagina **Esecuzione comandi in corso**, quando lo stato dell'attività risulta completato,**** fare clic su **Fine**.
 
-8.  Accanto al **passaggio 2: configurare o rimuovere i componenti di Lync Server**, fare clic su **Esegui**e quindi su **Avanti**.
+8.  Accanto a **Passaggio 2: Installazione o rimozione componenti di Lync Server** fare clic su **Esegui** e quindi su **Avanti**.
 
-9.  Nella pagina **esecuzione dei comandi** , quando lo stato dell'attività viene visualizzato come **completato**, fare clic su **fine**.
+9.  Nella pagina **Esecuzione comandi in corso**, quando lo stato dell'attività risulta completato,**** fare clic su **Fine**.
 
-10. Accanto al **passaggio 3: richiedere, installare o assegnare certificati**, fare clic su **Esegui**. Seguire le istruzioni visualizzate per accettare le impostazioni predefinite. Il Mediation Server richiede un certificato e quindi verrà eseguito due volte il **passaggio 3** : una volta per emettere il certificato richiesto e ancora una volta per assegnarlo.
+10. Accanto a **Passaggio 3: Richiesta, installazione o assegnazione dei certificati** fare clic su **Esegui**. Seguire le istruzioni visualizzate sullo schermo, accettando le impostazioni predefinite. Il Mediation Server richiede un certificato, quindi il **Passaggio 3** verrà eseguito due volte, una per emettere il certificato necessario e l'altra per assegnarlo.
 
-11. Quando il certificato è stato emesso e assegnato correttamente, accanto al **passaggio 4: avviare i servizi**, fare clic su **Esegui**e quindi seguire le istruzioni visualizzate.
+11. Dopo che il certificato è stato emesso e assegnato correttamente, accanto **Passaggio 4: Avvia servizi** fare clic su **Esegui** e quindi seguire le istruzioni visualizzate sullo schermo.
 
-12. Quando il **passaggio 4** è stato completato correttamente, riavviare il server e accedere al server come membro del gruppo DomainAdmins.
+12. Al termine del **Passaggio 4**, riavviare il server e accedere come membro del gruppo DomainAdmins.
 
-13. Nel computer in cui è in uso il pannello di controllo di Lync Server verificare nella pagina **topologia** del pannello di controllo di Lync Server che lo stato del servizio di Mediation Server viene visualizzato come segno di spunta verde. Se invece viene visualizzata una X rossa, selezionare il Mediation Server. Nel menu **azione** fare clic su **Avvia tutti i servizi**.
+13. Nel computer in cui è in esecuzione il pannello di controllo di Lync Server, verificare nella pagina **topologia** del pannello di controllo di Lync Server che lo stato del servizio del Mediation Server sia visualizzato come segno di spunta verde. Se invece appare una X rossa, selezionare il Mediation Server. Scegliere **Avvia tutti i servizi** dal menu **Azione**.
 
-Se sono stati aggiunti più computer al pool di Mediation Server, eseguire i passaggi descritti in questa procedura in tutti gli altri computer del pool di Mediation Server. Se non è necessario installare file per Mediation Server per altri computer, seguire le procedure descritte in configurazione di [Trunks in Lync Server 2013](lync-server-2013-configuring-trunks.md) per configurare le impostazioni per la connessione trunk tra questo pool di Mediation Server (o tutti i Mediation Server di un sito) e il relativo peer.
+Se è stato aggiunto più di un computer al pool di Mediation Server, eseguire i passaggi descritti in questa procedura in tutti gli altri computer del pool di Mediation Server. Se non è necessario installare i file per Mediation Server per altri computer, seguire le procedure illustrate in [Configuring Trunks in Lync server 2013](lync-server-2013-configuring-trunks.md) per configurare le impostazioni per la connessione trunk tra il pool di Mediation Server (o tutti i Mediation Server in un sito) e il relativo peer.
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurare il database della posizione'
+title: 'Lync Server 2013: configurare il database delle posizioni'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184704
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b2b15f0c679e9380a1f1a624f00f6c19384878fd
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f79587526172c7ccade1b74574b20657d1a82300
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41739976"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043208"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configure-the-location-database-in-lync-server-2013"></a>Configurare il database della posizione in Lync Server 2013
+# <a name="configure-the-location-database-in-lync-server-2013"></a>Configurare il database delle posizioni in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41739976"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-17_
+_**Ultimo argomento modificato:** 2012-09-17_
 
-Per consentire ai client di rilevare automaticamente la propria posizione all'interno di una rete, è prima di tutto necessario configurare il database della posizione. Se non si configura un database di posizione e la **posizione richiesta** nel criterio della posizione è impostata su **Sì** o su dichiarazione di non **responsabilità**, all'utente verrà richiesto di immettere manualmente una posizione.
+Per consentire ai client di individuare automaticamente la propria posizione in una rete, è necessario innanzitutto configurare il database delle posizioni. Se non si configura un database delle posizioni e l'opzione **Posizione necessaria** nei criteri percorso è impostata su **Sì** o su **Dichiarazione di non responsabilità**, verrà chiesto all'utente di immettere manualmente una posizione.
 
-Per configurare il database della posizione, verranno eseguite le attività seguenti:
+Per configurare un database delle posizioni, eseguire le operazioni seguenti:
 
-1.  Popolare il database con un mapping degli elementi di rete alle posizioni. Se si usa un gateway ELIN (Emergency Location Identification Number), è necessario includere il numero ELIN nel \<campo\> CompanyName.
+1.  Popolare il database con il mapping degli elementi di rete ai percorsi. Se si utilizza un gateway ELIN (Emergency Location Identification Number), è necessario includere il numero ELIN nel \<campo\> CompanyName.
 
-2.  Convalidare gli indirizzi rispetto alla guida di indirizzo Master Street (stradario) gestita dal provider di servizi E9-1-1.
+2.  Convalidare gli indirizzi in base allo stradario generale gestito dal provider di servizi di emergenza.
 
 3.  Pubblicare il database aggiornato.
 
@@ -51,7 +51,7 @@ Per configurare il database della posizione, verranno eseguite le attività segu
 
 
 > [!NOTE]  
-> In alternativa, è possibile definire un database di origine della posizione secondario che può essere usato nella posizione del database delle posizioni. Per informazioni dettagliate, vedere <A href="lync-server-2013-configure-a-secondary-location-information-service.md">configurare un servizio informazioni sulla posizione secondaria in Lync Server 2013</A>.
+> In alternativa, è possibile definire un database di origine delle posizioni secondario che può essere utilizzato al posto del database delle posizioni. Per informazioni dettagliate, vedere <A href="lync-server-2013-configure-a-secondary-location-information-service.md">Configure a Secondary Location Information Service in Lync Server 2013</A>.
 
 
 
@@ -59,13 +59,13 @@ Per configurare il database della posizione, verranno eseguite le attività segu
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Compilare il database della posizione in Lync Server 2013](lync-server-2013-populate-the-location-database.md)
+  - [Popolare il database delle posizioni in Lync Server 2013](lync-server-2013-populate-the-location-database.md)
 
   - [Convalidare gli indirizzi in Lync Server 2013](lync-server-2013-validate-addresses.md)
 
-  - [Pubblicare il database della posizione da Lync Server 2013](lync-server-2013-publish-the-location-database.md)
+  - [Pubblicare il database delle posizioni da Lync Server 2013](lync-server-2013-publish-the-location-database.md)
 
 </div>
 

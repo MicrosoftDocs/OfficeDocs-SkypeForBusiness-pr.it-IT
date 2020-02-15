@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: abilitare o disabilitare il ritiro delle chiamate di gruppo per gli utenti'
+title: 'Lync Server 2013: attivazione o disattivazione del prelievo delle chiamate di gruppo per gli utenti'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541480
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3bec90c71a10c0064f7c2b9bb95bce1dfe6afa54
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 46bc1bb958fae23f4e8c66587d358004e7b6cf3d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736026"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42040145"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="enable-or-disable-group-call-pickup-for-users-in-lync-server-2013"></a>Abilitare o disabilitare il ritiro delle chiamate di gruppo per gli utenti in Lync Server 2013
+# <a name="enable-or-disable-group-call-pickup-for-users-in-lync-server-2013"></a>Abilitazione o disabilitazione del prelievo delle chiamate di gruppo per gli utenti in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41736026"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-22_
+_**Ultimo argomento modificato:** 2013-02-22_
 
-Quando viene aggiunto un intervallo di prelievo delle chiamate di gruppo alla tabella Orbit di Call Park, è possibile abilitare e disabilitare il ritiro delle chiamate di gruppo per l'utente, se necessario. Questa sezione descrive come usare lo strumento SEFAUtil Resource Kit per abilitare e disabilitare il ritiro delle chiamate di gruppo per gli utenti.
+Quando un intervallo di prelievo di chiamata di gruppo viene aggiunto alla tabella di orbit del parcheggio di chiamata, è possibile abilitare e disabilitare il prelievo delle chiamate di gruppo per l'utente in base alle esigenze. In questa sezione viene descritto come utilizzare lo strumento Resource Kit di SEFAUtil per abilitare e disabilitare il prelievo delle chiamate di gruppo per gli utenti.
 
 <div>
 
 
 > [!NOTE]  
-> Il parametro SEFAUtil,/enablegrouppickup, consente il prelievo delle chiamate di gruppo e assegna il numero di gruppo.
+> Il parametro SEFAUtil,/enablegrouppickup, consente di abilitare il prelievo delle chiamate di gruppo e di assegnare il numero di gruppo.
 
 
 
@@ -51,11 +51,11 @@ Quando viene aggiunto un intervallo di prelievo delle chiamate di gruppo alla ta
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Abilitare il ritiro delle chiamate di gruppo per gli utenti in Lync Server 2013](lync-server-2013-enable-group-call-pickup-for-users.md)
+  - [Abilitare il prelievo delle chiamate di gruppo per gli utenti in Lync Server 2013](lync-server-2013-enable-group-call-pickup-for-users.md)
 
-  - [Disabilitare il ritiro delle chiamate di gruppo per gli utenti in Lync Server 2013](lync-server-2013-disable-group-call-pickup-for-users.md)
+  - [Disabilitare il prelievo delle chiamate di gruppo per gli utenti in Lync Server 2013](lync-server-2013-disable-group-call-pickup-for-users.md)
 
 </div>
 

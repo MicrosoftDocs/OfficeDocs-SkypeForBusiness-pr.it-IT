@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8c700ed6fb4f95f3cc9a4ecfc6d66c7791aabb74
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 20fd9372c34fd189868aa32882115bee3f6c6f8f
+ms.sourcegitcommit: 346b58b5d5ea0d2ec68891275628dfde32c074fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41833236"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41977528"
 ---
 <a name="what-the-guest-experience-is-like"></a>Com'è l'esperienza guest
 =================================
@@ -56,6 +56,7 @@ Nella tabella seguente vengono confrontate le funzionalità teams disponibili pe
 |Individuare e partecipare a un team pubblico  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
 |Visualizzazione organigramma  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
 |Usare la traduzione in linea  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
+|Diventare proprietario del team  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
    
 La tabella seguente mostra le funzionalità di chiamata e riunione disponibili per gli ospiti, rispetto ad altri tipi di utenti.
 

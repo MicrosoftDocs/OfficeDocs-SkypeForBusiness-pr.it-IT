@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurazione del log shipping di SQL Server per il database primario del server chat persistente'
+title: 'Lync Server 2013: configurazione del log shipping di SQL Server per il database primario del server Chat persistente'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183337
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ae44d410ef165cdd4f77b877afcfb9349dd0ec00
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4da247e50975ecbed5e64a6e4bebc31d531218b3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764572"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42040805"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="setting-up-sql-server-log-shipping-in-lync-server-2013-for-the-persistent-chat-server-primary-database"></a>Configurazione del log shipping di SQL Server in Lync Server 2013 per il database primario del server chat persistente
+# <a name="setting-up-sql-server-log-shipping-in-lync-server-2013-for-the-persistent-chat-server-primary-database"></a>Configurazione del log shipping di SQL Server in Lync Server 2013 per il database primario del server Chat persistente
 
 </div>
 
@@ -35,60 +35,60 @@ ms.locfileid: "41764572"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-12_
+_**Ultimo argomento modificato:** 2012-11-12_
 
-In SQL Server Management Studio connettersi all'istanza del database di log shipping secondario del server di chat persistente e verificare che SQL Server Agent sia in uso.
+Se si utilizza SQL Server Management Studio, connettersi all'istanza del database secondario di log shipping del server di chat persistente e verificare che SQL Server Agent sia in esecuzione.
 
-Con SQL Server Management Studio connesso all'istanza del database primario della chat persistente, eseguire la procedura seguente:
+Se si utilizza SQL Server Management Studio connesso all'istanza del database primario di Persistent Chat, eseguire le operazioni seguenti:
 
-1.  Verificare che l'agente SQL Server sia in uso.
+1.  Verificare che SQL Server Agent sia in esecuzione.
 
-2.  Fare clic con il pulsante destro del mouse sul database di MGC e quindi scegliere **Proprietà**.
+2.  Fare clic con il pulsante destro del mouse sul database mgc e quindi scegliere **Proprietà**.
 
-3.  In **selezionare una pagina**fare clic su **distribuzione log transazioni**.
+3.  In **Seleziona una pagina**fare clic su **log shipping delle transazioni**.
 
-4.  Selezionare la casella **di controllo Abilita come database primario in una configurazione di distribuzione del log** .
+4.  Selezionare la casella **di controllo Abilita come database primario in una configurazione per il log shipping** .
 
-5.  In **backup del log delle transazioni**fare clic su **impostazioni di backup**.
+5.  In **backup dei log delle transazioni**fare clic su **impostazioni di backup**.
 
 6.  Nella casella **percorso di rete della cartella di backup** Digitare il percorso di rete della condivisione creata per la cartella di backup del log delle transazioni.
 
-7.  Se la cartella di backup si trova nel server principale, digitare il percorso locale della cartella di backup nella casella **se la cartella di backup si trova nel server principale, digitare un percorso locale alla cartella (esempio: c:\\backup)** . Se la cartella di backup non si trova nel server principale, è possibile lasciarla vuota.
+7.  Se la cartella di backup si trova sul server primario, digitare il percorso locale della cartella di backup nella casella **se la cartella di backup si trova sul server primario, digitare un percorso locale per la cartella (ad esempio: c\\: backup)** . Se la cartella di backup non è presente nel server primario, è possibile lasciare vuota questa casella.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > Se l'account del servizio SQL Server nel server primario viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server principale e specificare un percorso locale per la cartella.
+    > Se l'account di servizio di SQL Server nel server primario viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server primario e specificare un percorso locale per tale cartella.
 
     
     </div>
 
-8.  Configurare i **file di eliminazione più vecchi e di** **avviso se non si verifica alcun backup all'interno** dei parametri.
+8.  Configurare i **file di eliminazione precedenti e di** **avviso se nessun backup viene eseguito all'interno** dei parametri.
 
-9.  Esaminare la pianificazione del backup elencata nella casella **pianificazione** in **processo di backup**. Per personalizzare la pianificazione per l'installazione, fare clic su **pianificazione**e regolare la pianificazione di SQL Server Agent in modo obbligatorio.
+9.  Esaminare la pianificazione di backup elencata nella casella **pianificazione** in **processo di backup**. Per personalizzare la pianificazione per l'installazione, fare clic su **pianificazione**e modificare la pianificazione di SQL Server Agent in base alle esigenze.
 
-10. In **compressione**selezionare **Usa l'impostazione predefinita del server**e quindi fare clic su **OK**.
+10. In **compressione**selezionare **utilizza l'impostazione predefinita del server**e quindi fare clic su **OK**.
 
-11. In **istanze server secondarie e database**fare clic su **Aggiungi**.
+11. In **istanze e database secondari del server**, fare clic su **Aggiungi**.
 
-12. Fare clic su **Connetti** e Connetti all'istanza di SQL Server configurata come server secondario.
+12. Fare clic su **Connetti** e connettersi all'istanza di SQL Server configurata come server secondario.
 
-13. Nella casella **database secondario** selezionare il database **MGC** dall'elenco.
+13. Nella casella **database secondario** selezionare il database di **MGC** dall'elenco.
 
-14. Nella scheda **Inizializza database secondario** scegliere l'opzione **Sì, generare un backup completo del database principale e ripristinarlo nel database secondario (e creare il database secondario se non esiste)**.
+14. Nella scheda **Inizializza database secondario** selezionare l'opzione **Sì, generare un backup completo del database primario e ripristinarlo nel database secondario (e creare il database secondario se non esiste)**.
 
-15. Nella casella **cartella di destinazione per i file copiati** della scheda **copia file** Digitare il percorso della cartella in cui devono essere copiati i backup dei log delle transazioni. Questa cartella si trova spesso nel server secondario.
+15. Nella casella **cartella di destinazione per i file copiati** della scheda **copia file** Digitare il percorso della cartella in cui devono essere copiati i backup dei registri delle transazioni. Questa cartella si trova spesso nel server secondario.
 
-16. Nota la pianificazione della copia elencata nella casella **pianificazione** in **copia processo**. Per personalizzare la pianificazione per l'installazione, fare clic su **pianificazione**e regolare la pianificazione di SQL Server Agent in modo obbligatorio. Questa programmazione deve essere approssimativamente uguale alla programmazione di backup.
+16. Tenere presente la pianificazione della copia elencata nella casella **pianificazione** in **copia processo**. Per personalizzare la pianificazione per l'installazione, fare clic su **pianificazione**e modificare la pianificazione di SQL Server Agent in base alle esigenze. Questa pianificazione deve essere approssimativamente uguale alla pianificazione del backup.
 
-17. Nella scheda **Ripristina** , in **stato del database durante il ripristino dei backup**, scegliere l'opzione **Nessuna modalità di recupero** .
+17. Nella scheda **Ripristina** , in **stato di database durante il ripristino dei backup**, scegliere l'opzione **modalità No Recovery** .
 
-18. In **delay Restoring backups almeno:** selezionare **0 minuti**.
+18. In **delay Restoring backups almeno:**, selezionare **0 minuti**.
 
 19. Scegliere una soglia di avviso in **avviso se non si verifica alcun ripristino all'interno**.
 
-20. Esaminare la pianificazione di ripristino elencata nella casella **pianificazione** in **Ripristina processo**. Per personalizzare la pianificazione per l'installazione, fare clic su **pianificazione**, regolare la pianificazione di SQL Server Agent come richiesto e fare clic su **OK**. Questa programmazione deve essere approssimativamente uguale alla programmazione di backup.
+20. Esaminare la pianificazione di ripristino elencata nella casella **pianificazione** in **Ripristina processo**. Per personalizzare la pianificazione dell'installazione, fare clic su **pianificazione**, modificare la pianificazione di SQL Server Agent in base alle esigenze e quindi fare clic su **OK**. Questa pianificazione deve essere approssimativamente uguale alla pianificazione del backup.
 
 21. Nella finestra di dialogo **Proprietà database** fare clic su **OK** per avviare il processo di configurazione.
 

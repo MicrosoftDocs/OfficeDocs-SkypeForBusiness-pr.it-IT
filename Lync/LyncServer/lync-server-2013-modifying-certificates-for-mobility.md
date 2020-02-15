@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Modifica dei certificati per i dispositivi mobili'
+title: 'Lync Server 2013: modifica dei certificati per i dispositivi mobili'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184120
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 150dc8c7b4021e1e2c7ccab6ccc71823c01c388e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 54b42ba288c89f8735d3f7d13dee9a1944efe82b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756870"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048747"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,41 +35,41 @@ ms.locfileid: "41756870"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-06-20_
+_**Ultimo argomento modificato:** 2014-06-20_
 
-Per supportare connessioni sicure tra l'ambiente Lync e i client mobili, i certificati SSL (Secure Socket Layer) per il pool di Director, il pool Front end e il proxy inverso devono essere aggiornati con un altro nome alternativo soggetto ( SAN). Per altre informazioni sui requisiti di certificato per la mobilità, vedere la sezione requisiti dei certificati nei [requisiti tecnici per la mobilità in Lync Server 2013](lync-server-2013-technical-requirements-for-mobility.md), ma in pratica è necessario ottenere nuovi certificati dall'autorità di certificazione con le altre voci di San incluse e quindi aggiungere questi certificati usando i passaggi di questo articolo.
+Per supportare connessioni sicure tra l'ambiente Lync e i client mobili, i certificati SSL (Secure Socket Layer) per il pool di server Director, il pool Front end e il proxy inverso devono essere aggiornati con qualche altro nome alternativo del soggetto ( SAN). Se è necessario estrarre ulteriori informazioni sui requisiti dei certificati per i dispositivi mobili, vedere la sezione requisiti dei certificati in [requisiti tecnici per i dispositivi mobili in Lync Server 2013](lync-server-2013-technical-requirements-for-mobility.md), ma in pratica è necessario ottenere nuovi certificati dall'autorità di certificazione con le voci di San aggiuntive incluse e quindi aggiungere tali certificati utilizzando i passaggi di questo articolo.
 
-Naturalmente, prima di iniziare, in genere è consigliabile conoscere i nomi alternativi del soggetto che i certificati hanno già. Se non si è sicuri di cosa è già stato configurato, è possibile scoprirlo in molti modi. Mentre l'opzione è disponibile per eseguire il comando **Get-CsCertificate** e altri comandi di PowerShell per visualizzare queste informazioni, (che percorriamo di seguito) per impostazione predefinita, i dati verranno troncati, quindi potrebbe non essere possibile visualizzare tutte le proprietà necessarie. Per ottenere una buona occhiata al certificato e a tutte le sue proprietà, è possibile passare a Microsoft Management Console (MMC) e caricare lo snap-in certificati (che si può anche seguire) oppure è sufficiente archiviare la distribuzione guidata di Lync Server.
+Naturalmente, prima di iniziare, è consigliabile sapere quali nomi alternativi del soggetto sono già presenti nei certificati. Se non si è sicuri di cosa è già stato configurato, è possibile scoprirlo in molti modi. Mentre l'opzione è disponibile per l'esecuzione dei comandi **Get-CsCertificate** e di altri PowerShell per visualizzare queste informazioni, (che è possibile esaminare in basso) per impostazione predefinita, i dati verranno troncati, pertanto potrebbe non essere possibile visualizzare tutte le proprietà necessarie. Per ottenere un buon aspetto del certificato e di tutte le relative proprietà, è possibile accedere a Microsoft Management Console (MMC) e caricare lo snap-in certificati (che è anche possibile esaminare in basso) oppure è sufficiente archiviare la distribuzione guidata di Lync Server.
 
-Come indicato in precedenza, la procedura seguente consente di eseguire l'aggiornamento dei certificati tramite Lync Server Management Shell e MMC. Se si è interessati all'uso della procedura guidata certificati nella distribuzione guidata di Lync Server, è possibile selezionare la casella di controllo [Configura i certificati per il Director in Lync server 2013](lync-server-2013-configure-certificates-for-the-director.md) per il pool di Director o Director, se ne è stato configurato uno (non è possibile). Per il server front-end o per il pool Front-End, è consigliabile vedere [configurare i certificati per i server in Lync server 2013](lync-server-2013-configure-certificates-for-servers.md).
+Come indicato in questo esempio, la procedura seguente consente di eseguire l'aggiornamento dei certificati mediante Lync Server Management Shell e MMC. Se si è interessati all'utilizzo della procedura guidata di certificazione nella distribuzione guidata di Lync Server, è possibile controllare la [configurazione dei certificati per il Director in Lync server 2013](lync-server-2013-configure-certificates-for-the-director.md) out per il Director o il pool di Director, se ne è stata configurata una (potrebbe non essere possibile). Per il front end server o il pool Front End, è necessario vedere [Configure Certificates for Servers in Lync server 2013](lync-server-2013-configure-certificates-for-servers.md).
 
-Un'ultima cosa da ricordare è che potresti avere un singolo certificato predefinito nell'ambiente Lync Server 2013 oppure puoi avere certificati distinti per impostazione predefinita (che è tutto tranne i servizi Web), WebServicesExternal e WebServicesInternal. Qualunque sia la configurazione, questi passaggi dovrebbero essere utili.
+Un'ultima cosa da tenere in considerazione consiste nel fatto che è possibile disporre di un singolo certificato predefinito nell'ambiente Lync Server 2013 oppure che si disponga di certificati distinti per il valore predefinito (ovvero tutto tranne che per i servizi Web), WebServicesExternal e WebServicesInternal. Qualunque sia la configurazione, questi passaggi dovrebbero risultare utili.
 
 <div>
 
-## <a name="to-update-certificates-with-new-subject-alternative-names-using-the-lync-server-management-shell"></a>Per aggiornare i certificati con i nuovi nomi alternativi del soggetto tramite Lync Server Management Shell
+## <a name="to-update-certificates-with-new-subject-alternative-names-using-the-lync-server-management-shell"></a>Per aggiornare i certificati con i nuovi nomi alternativi del soggetto mediante Lync Server Management Shell
 
-1.  È necessario accedere al server Lync Server 2013 usando un account che disponga dei diritti e delle autorizzazioni di amministratore locale. Inoltre, se si sta usando la richiesta di PowerShell **-CsCertificate** nei passaggi 12 e oltre, l'account deve avere diritti per l'autorità di certificazione (CA) specificata.
+1.  È necessario eseguire l'accesso al server Lync Server 2013 utilizzando un account che disponga dei diritti e delle autorizzazioni di amministratore locale. Inoltre, se si esegue la richiesta di PowerShell **-CsCertificate** nei passaggi 12 e oltre, l'account deve disporre dei diritti per l'autorità di certificazione (CA) specificata.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Per poter assegnare un certificato aggiornato, è necessario verificare quali certificati sono stati assegnati al server e per quale tipo di utilizzo. Nella riga di comando digitare:
+3.  Prima di poter assegnare un certificato aggiornato, è necessario scoprire quali certificati sono stati assegnati al server e per quale tipo di utilizzo. Nella riga di comando digitare il comando seguente:
     
         Get-CsCertificate
 
-4.  Esaminare l'output del passaggio precedente per verificare se un singolo certificato è stato assegnato per più usi o se è stato assegnato un certificato diverso per ogni utilizzo. Cerca nel parametro Use per scoprire in che modo viene usato un certificato. Confrontare il parametro identificazione personale per i certificati visualizzati per verificare se lo stesso certificato ha più usi. Tieni d'occhio il parametro identificazione personale.
+4.  Esaminare l'output del passaggio precedente per verificare se è stato assegnato un singolo certificato per più utilizzi o se è stato assegnato un certificato diverso per ogni utilizzo. Esaminare il parametro Use per individuare il modo in cui viene utilizzato un certificato. Confrontare il parametro identificazione personale per i certificati visualizzati per vedere se lo stesso certificato dispone di più utilizzi. Tenere d'occhio il parametro identificazione personale.
 
-5.  Aggiornare il certificato. Nella riga di comando digitare:
+5.  Aggiornare il certificato. Nella riga di comando digitare il comando seguente:
     
         Set-CsCertificate -Type <type of certificate as displayed in the Use parameter> -Thumbprint <unique identifier>
     
-    Ad esempio, se il cmdlet **Get-CsCertificate** Visualizza un certificato con l'uso di default, un altro con l'uso di WebServicesInternal e un altro con l'uso di WebServicesExternal e tutti avevano lo stesso valore di identificazione personale, nella riga di comando devi digitare:
+    Ad esempio, se il cmdlet **Get-CsCertificate** ha visualizzato un certificato con l'utilizzo di default, un altro con un utilizzo di WebServicesInternal e un altro con un utilizzo di WebServicesExternal e tutti avevano lo stesso valore di identificazione personale, nella riga di comando digitare quanto segue:
     
         Set-CsCertificate -Type Default,WebServicesInternal,WebServicesExternal -Thumbprint <Certificate Thumbprint>
     
     **Importante:**
     
-    Se per ogni uso viene assegnato un certificato distinto (in modo che il valore di identificazione personale selezionato in precedenza sia diverso per ogni certificato), è fondamentale **non** eseguire il cmdlet **Set-CsCertificate** con più tipi, come nell'esempio precedente. In questo caso, eseguire il cmdlet **Set-CsCertificate** separatamente per ogni utilizzo. Ad esempio:
+    Se per ogni utilizzo viene assegnato un certificato distinto, in modo che il valore di identificazione personale controllato in alto sia diverso per ogni certificato, è importante che **non** venga eseguito il cmdlet **Set-CsCertificate** con più tipi, come nell'esempio precedente. In questo caso, eseguire il cmdlet **Set-CsCertificate** separatamente per ogni utilizzo. Ad esempio:
     
         Set-CsCertificate -Type Default -Thumbprint <Certificate Thumbprint>
         Set-CsCertificate -Type WebServicesInternal -Thumbprint <Certificate Thumbprint>
@@ -77,37 +77,37 @@ Un'ultima cosa da ricordare è che potresti avere un singolo certificato predefi
 
 6.  Per visualizzare il certificato (o i certificati), fare clic sul pulsante **Start**, scegliere **Esegui...**. Digitare MMC per aprire Microsoft Management Console.
 
-7.  Nel menu MMC selezionare **file**, selezionare **Aggiungi/Rimuovi snap-in...**, selezionare certificati. Fare clic su **Aggiungi**. Quando richiesto, selezionare **account computer**e quindi fare clic su **Avanti**.
+7.  Scegliere **file**dal menu MMC, selezionare **Aggiungi/Rimuovi snap-in...**, selezionare certificati. Fare clic su **Aggiungi**. Quando richiesto, selezionare **account computer**e quindi fare clic su **Avanti**.
 
-8.  Se si tratta del server in cui si trova il certificato, selezionare **computer locale**. Se il certificato si trova in un altro computer, è necessario selezionare **un altro computer**, quindi è possibile digitare il nome di dominio completo del computer oppure fare clic su **Sfoglia** in **immettere il nome dell'oggetto da selezionare**e digitare il nome del computer. Fare clic su **Controlla nomi**. Quando il nome del computer viene risolto, sarà sottolineato. Fare clic su **OK**e quindi su **fine**. Fare clic su **OK** per confermare la selezione e chiudere la finestra di dialogo **Aggiungi o Rimuovi snap-** in.
+8.  Se si tratta del server in cui si trova il certificato, selezionare **computer locale**. Se il certificato è posizionato in un altro computer, è necessario selezionare **un altro computer**, quindi è possibile digitare il nome di dominio completo del computer oppure fare clic su **Sfoglia** in **immettere il nome dell'oggetto da selezionare**e digitare il nome del computer. Fare clic su **Controlla nomi**. Quando il nome del computer viene risolto, verrà sottolineato. Fare clic su **OK**, quindi su **fine**. Fare clic su **OK** per eseguire il commit della selezione e chiudere la finestra di dialogo **Aggiungi o Rimuovi snap-** in.
 
 9.  Per visualizzare le proprietà del certificato, espandere **certificati**, espandere **personale**e selezionare **certificati**. Selezionare il certificato da visualizzare, fare clic con il pulsante destro del mouse sul certificato e scegliere **Apri**.
 
-10. Nella visualizzazione **certificato** selezionare **Dettagli**. Da qui è possibile selezionare il nome del soggetto del certificato selezionando **oggetto** e il nome del soggetto assegnato e le proprietà associate verranno visualizzate.
+10. Nella visualizzazione **certificato** selezionare **Dettagli**. Da qui, è possibile selezionare il nome del soggetto del certificato selezionando **oggetto** e vengono visualizzati il nome del soggetto assegnato e le proprietà associate.
 
-11. Per visualizzare i nomi alternativi oggetto assegnati, selezionare **nome alternativo soggetto**. Vengono visualizzati tutti i nomi alternativi assegnati al soggetto. I nomi alternativi oggetto trovati qui sono di tipo **DNS Name** per impostazione predefinita. Dovrebbero essere visualizzati i membri seguenti (che dovrebbero essere tutti nomi di dominio completi rappresentati nei record host DNS (A o, se IPv6 AAAA):
+11. Per visualizzare i nomi alternativi del soggetto assegnati, selezionare **nome alternativo soggetto**. Vengono visualizzati tutti i nomi alternativi del soggetto assegnati. Per impostazione predefinita, i nomi alternativi del soggetto trovati qui sono di tipo **DNS Name** . Verranno visualizzati i membri seguenti (tutti i nomi di dominio completi rappresentati nei record host DNS (A o, se IPv6 AAAA):
     
-      - Nome del pool per il pool o nome del server singolo se non si tratta di un pool
+      - Nome del pool per il pool o il nome del server singolo se non si tratta di un pool
     
       - Nome del server a cui è assegnato il certificato
     
-      - Record URL semplici, in genere incontra e componi
+      - Simple URL Records, in genere Meet e dialin
     
-      - Servizi Web Internal e Web Services External names (ad esempio, webpool01.contoso.net, webpool01.contoso.com), in base alle scelte effettuate in Generatore di topologia e alle selezioni di servizi Web sovrascritte.
+      - Servizi Web interni e nomi esterni dei servizi Web (ad esempio, webpool01.contoso.net, webpool01.contoso.com), in base alle scelte effettuate in Generatore di topologie e le selezioni dei servizi Web in corso.
     
-      - Se è già stata assegnata, Lyncdiscover. \<SipDomain\> e lyncdiscoverinternal. \<record\> di SipDomain.
+      - Se è già stato assegnato, il lyncdiscover. \<SipDomain\> e lyncdiscoverinternal. \<record\> di SipDomain.
     
-    L'ultimo elemento è quello che ti interessa di più: se c'è una voce di SAN Lyncdiscover e lyncdiscoverinternal.
+    L'ultimo elemento è quello che più ti interessa: se c'è una voce di Lyncdiscover e lyncdiscoverinternal SAN.
     
-    Ripetere questi passaggi se si hanno più certificati da controllare. Dopo aver ottenuto queste informazioni, è possibile chiudere la visualizzazione certificato e la console MMC.
+    Ripetere questi passaggi se si dispone di più certificati da controllare. Dopo aver apportato queste informazioni, è possibile chiudere la visualizzazione certificati e MMC.
 
-12. Se non è presente un nome alternativo dell'oggetto del servizio di individuazione automatica e si usa un singolo certificato predefinito per i tipi default, WebServicesInternal e WebServiceExternal, eseguire le operazioni seguenti:
+12. Se non è presente un nome alternativo del soggetto del servizio di individuazione automatica e si utilizza un singolo certificato predefinito per i tipi default, WebServicesInternal e WebServiceExternal, eseguire le operazioni seguenti:
     
-      - Al prompt della riga di comando di Lync Server Management Shell digitare:
+      - Al prompt dei comandi della riga di comando di Lync Server Management Shell digitare quanto segue:
         
             Request-CsCertificate -New -Type Default,WebServicesInternal,WebServicesExternal -Ca dc\myca -AllSipDomain -verbose
         
-        Se si hanno molti domini SIP, non è possibile usare il nuovo parametro AllSipDomain. Devi invece usare il parametro DomainName. Quando si usa il parametro DomainName, è necessario definire il nome di dominio completo per i record LyncdiscoverInternal e lyncdiscover. Ad esempio:
+        Se si dispone di molti domini SIP, non è possibile utilizzare il nuovo parametro AllSipDomain. Al contrario, è necessario utilizzare il parametro DomainName. Quando si utilizza il parametro DomainName, è necessario definire il nome di dominio completo per i record LyncdiscoverInternal e lyncdiscover. Ad esempio:
         
             Request-CsCertificate -New -Type Default,WebServicesInternal,WebServicesExternal -Ca dc\myca -DomainName "LyncdiscoverInternal.contoso.com, LyncdiscoverInternal.contoso.net" -verbose
     
@@ -117,21 +117,21 @@ Un'ultima cosa da ricordare è che potresti avere un singolo certificato predefi
         
         Dove "identificazione personale" è l'identificazione digitale visualizzata per il certificato appena emesso.
 
-13. Per una SAN automatica interna mancante quando si usano certificati distinti per default, WebServicesInternal e WebServicesExternal, eseguire le operazioni seguenti:
+13. Per una rete SAN di individuazione automatica mancante quando si utilizzano certificati distinti per default, WebServicesInternal e WebServicesExternal, eseguire le operazioni seguenti:
     
-      - Al prompt della riga di comando di Lync Server Management Shell digitare:
+      - Al prompt dei comandi della riga di comando di Lync Server Management Shell digitare quanto segue:
         
             Request-CsCertificate -New -Type WebServicesInternal -Ca dc\myca -AllSipDomain -verbose
         
-        Se si hanno molti domini SIP, non è possibile usare il nuovo parametro AllSipDomain. Devi invece usare il parametro DomainName. Quando usi il parametro DomainName, devi usare un prefisso appropriato per l'FQDN del dominio SIP. Ad esempio:
+        Se si dispone di molti domini SIP, non è possibile utilizzare il nuovo parametro AllSipDomain. Al contrario, è necessario utilizzare il parametro DomainName. Quando si utilizza il parametro DomainName, è necessario utilizzare un prefisso appropriato per il nome FQDN del dominio SIP. Ad esempio:
         
             Request-CsCertificate -New -Type WebServicesInternal -Ca dc\myca -DomainName "LyncdiscoverInternal.contoso.com, LyncdiscoverInternal.contoso.net" -verbose
     
-      - Per un nome alternativo dell'oggetto individuazione automatica esterno mancante, nella riga di comando digitare:
+      - Per un nome alternativo del soggetto di individuazione automatica esterno mancante, nella riga di comando digitare quanto segue:
         
             Request-CsCertificate -New -Type WebServicesExternal -Ca dc\myca -AllSipDomain -verbose
         
-        Se si hanno molti domini SIP, non è possibile usare il nuovo parametro AllSipDomain. Devi invece usare il parametro DomainName. Quando usi il parametro DomainName, devi usare un prefisso appropriato per l'FQDN del dominio SIP. Ad esempio:
+        Se si dispone di molti domini SIP, non è possibile utilizzare il nuovo parametro AllSipDomain. Al contrario, è necessario utilizzare il parametro DomainName. Quando si utilizza il parametro DomainName, è necessario utilizzare un prefisso appropriato per il nome FQDN del dominio SIP. Ad esempio:
         
             Request-CsCertificate -New -Type WebServicesExternal -Ca dc\myca -DomainName "Lyncdiscover.contoso.com, Lyncdiscover.contoso.net" -verbose
     
@@ -147,7 +147,7 @@ Un'ultima cosa da ricordare è che potresti avere un singolo certificato predefi
     
 
     > [!NOTE]  
-    > Solo per notare che i passaggi 12 e 13 devono essere eseguiti solo se l'account che li esegue può accedere all'autorità di certificazione con le autorizzazioni appropriate. Se non si riesce ad accedere con un account che contiene tali autorizzazioni o se si usa un'autorità di certificazione pubblica o remota per i certificati, è necessario richiederli tramite la distribuzione guidata di Lync Server, che è stata toccata nella parte superiore della articolo.
+    > Solo per tenere presente che i passaggi 12 e 13 devono essere eseguiti solo se l'account che esegue tali operazioni ha accesso all'autorità di certificazione con le autorizzazioni appropriate. Se non si è in grado di eseguire l'accesso con un account che dispone di tali autorizzazioni o se si utilizza un'autorità di certificazione pubblica o remota per i certificati, è necessario richiederli tramite la distribuzione guidata di Lync Server, che è stata toccata nella parte superiore della articolo.
 
     
     </div>

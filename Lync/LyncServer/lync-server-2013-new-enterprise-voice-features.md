@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Nuove funzionalità di VoIP aziendale'
+title: 'Lync Server 2013: nuove funzionalità di VoIP aziendale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185591
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 92c1c264b9ffa5459962b2b6e915ea0fef2cf775
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 14f3f2429183e76a120fed1ef7437f18bdb8639f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757510"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042363"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41757510"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-05-01_
+_**Ultimo argomento modificato:** 2013-05-01_
 
 Lync Server 2013 introduce diverse nuove funzionalità di routing e gestione delle chiamate che migliorano VoIP aziendale.
 
-Lync Server 2013 supporta più Trunks tra Mediation Server e gateway. Un *trunk* è un'associazione logica tra un numero di porta e un Mediation Server con un numero di porta e un gateway. Questo significa che un Mediation Server può avere più Trunks per diversi gateway e un gateway può avere più Trunks per i diversi server di mediazione. Il routing intertrunk consente a Lync Server 2013 di interconnettere un IP-PBX a un gateway PSTN (Public Switched Telephone Network) o di interconnettere più sistemi IP-PBX. Lync Server 2013 funge da colla (ovvero l'interconnessione) tra diversi sistemi di telefonia.
+Lync Server 2013 supporta più trunk tra Mediation Server e gateway. Un *trunk* è un'associazione logica tra un numero di porta e un Mediation Server con un numero di porta e un gateway. Questo significa che un Mediation Server può disporre di più trunk per diversi gateway e che un gateway può disporre di più trunk per i Mediation Server diversi. Il routing tra trunk rende possibile per Lync Server 2013 interconnettere un IP-PBX a un gateway PSTN (Public Switched Telephone Network) o per interconnettere più sistemi IP-PBX. Lync Server 2013 funge da colla (ovvero l'interconnessione) tra diversi sistemi di telefonia.
 
-Microsoft Lync Server 2013 apporta miglioramenti nelle aree di inoltro di chiamata, squillo simultaneo, gestione della segreteria telefonica e presentazione dell'ID chiamante. Queste caratteristiche arricchiscono l'esperienza di chiamata vocale aziendale.
+Microsoft Lync Server 2013 apporta miglioramenti nelle aree di inoltro di chiamata, squillo simultaneo, gestione della segreteria telefonica e presentazione dell'ID chiamante. Queste funzionalità arricchiscono l'esperienza di chiamata VoIP aziendale.
 
-Lync Server 2013 introduce i nuovi miglioramenti seguenti in Enterprise Voice:
+Lync Server 2013 introduce i nuovi miglioramenti seguenti in VoIP aziendale:
 
-  - [Nuove funzionalità per le chiamate in Lync Server 2013](lync-server-2013-new-call-features.md)
+  - [Nuove funzionalità di chiamata in Lync Server 2013](lync-server-2013-new-call-features.md)
 
   - [Nuova funzionalità ID chiamante in Lync Server 2013](lync-server-2013-new-caller-id-feature.md)
 
@@ -53,7 +53,7 @@ Lync Server 2013 introduce i nuovi miglioramenti seguenti in Enterprise Voice:
 
   - [Nuova funzionalità trunk in Lync Server 2013](lync-server-2013-new-trunk-feature.md)
 
-  - [Nuova funzionalità di routing tra trunk in Lync Server 2013](lync-server-2013-new-intertrunk-feature.md)
+  - [Nuova funzionalità di intertrunk in Lync Server 2013](lync-server-2013-new-intertrunk-feature.md)
 
   - [Nuove funzionalità di gestione delle chiamate in Lync Server 2013](lync-server-2013-new-call-management-features.md)
 

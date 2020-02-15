@@ -12,16 +12,16 @@ ms:contentKeyID: 48184649
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5d12b904cbb679b66579c7c669ba46e0d732034b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4ea7a68d77acd7bbaf3de43fce38c0e85c02dad4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737976"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037276"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41737976"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-02-05_
+_**Ultimo argomento modificato:** 2014-02-05_
 
-Come parte della distribuzione di Lync Server, Enterprise Edition o Standard Edition Server, il servizio Rubrica viene installato per impostazione predefinita. Il database usato dal servizio Rubrica-RTCab-viene creato in SQL Server (per Enterprise Edition, questo è il server SQL back-end; per il server Standard Edition, il server SQL collocato).
+Come parte della distribuzione di Lync Server, Enterprise Edition o il server Standard Edition, il servizio Rubrica è installato per impostazione predefinita. Il database utilizzato dal servizio Rubrica – RTCab – viene creato in SQL Server (per Enterprise Edition, questo è il server SQL back-end, per il server Standard Edition, il server SQL collocato).
 
 <div>
 
 
 > [!NOTE]  
-> Per informazioni sull'uso di <STRONG>ADSI Edit</STRONG> per modificare gli attributi degli oggetti dei servizi di dominio Active Directory, vedere <A href="http://go.microsoft.com/fwlink/?linkid=330427">Modifica ADSI</A>. Per informazioni su uno strumento nel Resource Kit specifico per il servizio Rubrica, vedere strumenti del <A href="http://go.microsoft.com/fwlink/?linkid=330429">Resource Kit di Microsoft Lync Server 2013</A>.
+> Per informazioni sull'utilizzo di <STRONG>ADSI Edit</STRONG> per modificare gli attributi degli oggetti di servizi di dominio Active Directory, vedere <A href="http://go.microsoft.com/fwlink/?linkid=330427">ADSI Edit</A>. Per informazioni su uno strumento nel Resource Kit specifico per il servizio Rubrica, vedere <A href="http://go.microsoft.com/fwlink/?linkid=330429">Microsoft Lync Server 2013 Resource Kit Tools</A>.
 
 
 
@@ -51,23 +51,23 @@ Come parte della distribuzione di Lync Server, Enterprise Edition o Standard Edi
 
 <div>
 
-## <a name="address-book-server-phone-number-normalization"></a>Normalizzazione numero di telefono del server rubrica
+## <a name="address-book-server-phone-number-normalization"></a>Normalizzazione dei numeri di telefono del server della Rubrica
 
-Lync Server richiede numeri di telefono RFC 3966/E. 164 standardizzati. Per usare numeri di telefono non strutturati o formattati in modo incoerente, Lync Server si basa sul server della Rubrica per preelaborare i numeri di telefono prima che vengano consegnati alle regole di normalizzazione. Quando viene usato un numero di telefono dalla Rubrica e viene applicata la regola di normalizzazione, i client, ad esempio Lync Phone Edition e Lync mobile, possono usare questi numeri normalizzati.
+Lync Server richiede numeri di telefono RFC 3966/E. 164 standardizzati. Per utilizzare numeri di telefono non strutturati o formattati in modo incoerente, Lync Server si basa sul server della Rubrica per preelaborare i numeri di telefono prima di essere trasportati alle regole di normalizzazione. Quando viene utilizzato un numero di telefono dalla Rubrica e viene applicata la regola di normalizzazione, i client, ad esempio Lync Phone Edition e Lync mobile, possono utilizzare questi numeri normalizzati.
 
-Le regole di normalizzazione usate nelle versioni precedenti potrebbero non funzionare correttamente senza alcune modifiche. Poiché gli spazi vuoti e i caratteri non obbligatori vengono rimossi prima delle regole di normalizzazione, se l'espressione Regex Cerca specificamente un trattino o un altro carattere rimosso, la regola di normalizzazione potrebbe non riuscire. È necessario rivedere le regole di normalizzazione per verificare che non siano alla ricerca di questi caratteri non obbligatori oppure che la regola non venga eseguita correttamente e che il carattere non sia presente in cui la regola lo prevede.
+Le regole di normalizzazione utilizzate nelle versioni precedenti potrebbero non funzionare correttamente senza alcune modifiche. Poiché gli spazi vuoti e i caratteri non obbligatori vengono rimossi prima delle regole di normalizzazione, se l'espressione regex cerca in modo specifico un trattino o un altro carattere che è stato rimosso, la regola di normalizzazione potrebbe non riuscire. È opportuno esaminare le regole di normalizzazione per garantire che non cerchino questi caratteri non obbligatori o che un errore della regola non impedisca la continuazione nel caso in cui il carattere non sia presente dove previsto dalla regola stessa.
 
 </div>
 
 <div>
 
-## <a name="user-replicator-and-address-book-server"></a>Server di replica utenti e Rubrica
+## <a name="user-replicator-and-address-book-server"></a>User Replicator e server della Rubrica
 
-Il server rubrica usa i dati forniti da User Replicator per aggiornare le informazioni ottenute inizialmente dall'elenco indirizzi globale (GAL). User Replicator scrive gli attributi dei servizi di dominio Active Directory per ogni utente, contatto e gruppo nella tabella AbUserEntry del database e il server della rubrica sincronizza i dati utente del database in file nell'archivio file della Rubrica e nel database della rubrica RTCab. Lo schema per la tabella AbUserEntry usa due colonne, **UserGuid** e **UserData**. **UserGuid** è la colonna index e contiene il GUID a 16 byte dell'oggetto Active Directory. **UserData** è una colonna di immagini che contiene tutti gli attributi di servizi di dominio Active Directory menzionati in precedenza per il contatto.
+Il server della Rubrica utilizza i dati forniti da User Replicator per aggiornare le informazioni ottenute inizialmente dall'elenco indirizzi globale. User Replicator scrive gli attributi dei servizi di dominio Active Directory per ogni utente, contatto e gruppo nella tabella AbUserEntry del database e il server della rubrica sincronizza i dati degli utenti dal database in file nell'archivio file del server della Rubrica e nel database della rubrica RTCab. Lo schema per la tabella AbUserEntry prevede l'utilizzo di due colonne, **UserGuid** e **UserData**. **UserGuid** è la colonna di indice e contiene il GUID a 16 byte dell'oggetto Active Directory. **UserData** è una colonna di tipo immagine che contiene tutti gli attributi di servizi di dominio Active Directory descritti in precedenza per il contatto.
 
-User Replicator determina gli attributi di Active Directory da scrivere leggendo una tabella di configurazione situata nella stessa istanza basata su SQL Server della tabella AbUserEntry. La tabella AbAttribute contiene tre colonne, **ID**, **Name**, **Flags**e **Enable**. La tabella viene creata durante la configurazione del database. Se la tabella AbAttribute è vuota, User Replicator ignora la logica di elaborazione della tabella AbUserEntry. Gli attributi del server della Rubrica sono dinamici e vengono recuperati dalla tabella AbAttribute, che inizialmente viene scritta dal server della Rubrica quando il server della Rubrica viene attivato.
+User Replicator determina quali attributi di Active Directory scrivere leggendo una tabella di configurazione che si trova nella stessa istanza basata su SQL Server della tabella AbUserEntry. La tabella AbAttribute contiene tre colonne, **ID**, **Name**, **Flags** e **Enable**. La tabella viene creata durante l'impostazione del database. Se la tabella AbAttribute è vuota,User Replicator ignora la logica di elaborazione della tabella AbUserEntry. Gli attributi del server della Rubrica sono dinamici e vengono recuperati dalla tabella AbAttribute, che viene inizialmente scritta dal server della Rubrica quando questo viene attivato.
 
-L'attivazione del server rubrica viene popolata dalla tabella AbAttribute con i valori visualizzati nella tabella seguente.
+L'attivazione del server rubrica inserisce nella tabella AbAttribute i valori riportati nella tabella seguente.
 
 
 <table>
@@ -80,63 +80,63 @@ L'attivazione del server rubrica viene popolata dalla tabella AbAttribute con i 
 <tr class="header">
 <th>ID</th>
 <th>Nome</th>
-<th>Flag</th>
+<th>Bandiere</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>1</p></td>
+<td><p>1 </p></td>
 <td><p>givenName</p></td>
 <td><p>0x01400000</p></td>
 </tr>
 <tr class="even">
-<td><p>2</p></td>
+<td><p>2 </p></td>
 <td><p>Sn</p></td>
 <td><p>0x02400000</p></td>
 </tr>
 <tr class="odd">
-<td><p>3</p></td>
+<td><p>3 </p></td>
 <td><p>displayName</p></td>
 <td><p>0x03420000</p></td>
 </tr>
 <tr class="even">
-<td><p>4</p></td>
+<td><p>4 </p></td>
 <td><p>Titolo</p></td>
 <td><p>0x04000000</p></td>
 </tr>
 <tr class="odd">
-<td><p>5</p></td>
+<td><p>5 </p></td>
 <td><p>mailNickname</p></td>
 <td><p>0x05400000</p></td>
 </tr>
 <tr class="even">
-<td><p>6</p></td>
-<td><p>Società</p></td>
+<td><p>6 </p></td>
+<td><p>Company</p></td>
 <td><p>0x06000000</p></td>
 </tr>
 <tr class="odd">
-<td><p>7</p></td>
+<td><p>7 </p></td>
 <td><p>physicalDeliveryOfficeName</p></td>
 <td><p>0x07000000</p></td>
 </tr>
 <tr class="even">
-<td><p>8</p></td>
+<td><p>8 </p></td>
 <td><p>msRTCSIP-PrimaryUserAddress</p></td>
 <td><p>0x08520C00</p></td>
 </tr>
 <tr class="odd">
-<td><p>9</p></td>
+<td><p>9 </p></td>
 <td><p>telephoneNumber</p></td>
 <td><p>0x09022800</p></td>
 </tr>
 <tr class="even">
-<td><p>10</p></td>
+<td><p>10 </p></td>
 <td><p>homePhone</p></td>
 <td><p>0x0A302800</p></td>
 </tr>
 <tr class="odd">
-<td><p>11</p></td>
-<td><p>Dispositivi mobili</p></td>
+<td><p>11 </p></td>
+<td><p>Cellulare</p></td>
 <td><p>0x0B622800</p></td>
 </tr>
 <tr class="even">
@@ -150,27 +150,27 @@ L'attivazione del server rubrica viene popolata dalla tabella AbAttribute con i 
 <td><p>0x0D302000</p></td>
 </tr>
 <tr class="even">
-<td><p>14</p></td>
+<td><p>14 </p></td>
 <td><p>Posta</p></td>
 <td><p>0x0E500000</p></td>
 </tr>
 <tr class="odd">
-<td><p>15</p></td>
+<td><p>15 </p></td>
 <td><p>groupType</p></td>
 <td><p>0x0F010800</p></td>
 </tr>
 <tr class="even">
-<td><p>16</p></td>
-<td><p>Dipartimento</p></td>
+<td><p>16 </p></td>
+<td><p>Reparto</p></td>
 <td><p>0x10000000</p></td>
 </tr>
 <tr class="odd">
-<td><p>17</p></td>
+<td><p>17 </p></td>
 <td><p>Descrizione</p></td>
 <td><p>0x11000100</p></td>
 </tr>
 <tr class="even">
-<td><p>18</p></td>
+<td><p>18 </p></td>
 <td><p>Manager</p></td>
 <td><p>0x12040001</p></td>
 </tr>
@@ -193,7 +193,7 @@ L'attivazione del server rubrica viene popolata dalla tabella AbAttribute con i 
 </table>
 
 
-I numeri nella colonna **ID** devono essere univoci e non devono mai essere riutilizzati. Inoltre, il mantenimento dei valori ID in 256 consente di risparmiare spazio nei file di output scritti dal server rubrica. Tuttavia, il valore ID massimo è 65535. La colonna **Name** corrisponde al nome dell'attributo Active Directory che User Replicator deve inserire nella tabella AbUserEntry per ogni contatto. Il valore nella colonna **Flags** viene usato per definire il tipo di attributo. I seguenti tipi di attributi del server della Rubrica sono riconosciuti da User Replicator, indicato dal byte basso del valore nella colonna **Contrassegni** .
+I numeri nella colonna **ID** devono essere univoci e non devono mai essere riutilizzati. Inoltre, mantenendo i valori ID inferiori a 256, si risparmia spazio nei file di output scritti dal server della Rubrica. Tuttavia, il valore ID massimo è 65535. La colonna **Name** corrisponde al nome di attributo di Active Directory che User Replicator deve inserire nella tabella AbUserEntry per ogni contatto. Il valore nella colonna **Flags** è utilizzato per definire il tipo di attributo. I tipi seguenti di attributi del server della Rubrica sono riconosciuti da User Replicator, indicati dal bit basso del valore nella colonna **Flags**.
 
 
 <table>
@@ -210,19 +210,19 @@ I numeri nella colonna **ID** devono essere univoci e non devono mai essere riut
 <tbody>
 <tr class="odd">
 <td><p>0x0</p></td>
-<td><p>Un attributo String. User Replicator converte questo tipo in UTF-8 prima di archiviarlo nella tabella AbUserEntry.</p></td>
+<td><p>Attributo stringa. Questo tipo viene convertito da User Replicator in formato UTF-8 prima dell'archiviazione nella tabella AbUserEntry.</p></td>
 </tr>
 <tr class="even">
 <td><p>0x1</p></td>
-<td><p>Un attributo binario. User Replicator archivia questo contenuto nel BLOB senza alcuna conversione.</p></td>
+<td><p>Attributo binario. Viene archiviato da User Replicator nell'oggetto blob senza alcuna conversione.</p></td>
 </tr>
 <tr class="odd">
 <td><p>0x2</p></td>
-<td><p>Un attributo String, ma è incluso solo se il valore dell'attributo inizia &quot;con Tel&quot;:. Questo vale principalmente per gli attributi di stringa multivalore, in particolare <strong>proxyAddresses</strong>. In questo caso, il server della Rubrica è interessato solo alle voci di <strong>proxyAddresses</strong> che &quot;iniziano con&quot;Tel:. Pertanto, nell'interesse del salvataggio dello spazio, User Replicator archivia solo le voci che iniziano con &quot;Tel:&quot;.</p></td>
+<td><p>Un attributo stringa, ma è incluso solo se il valore dell'attributo inizia &quot;con Tel&quot;:. È utilizzato principalmente per attributi stringa multivalore, in particolare <strong>proxyAddresses</strong>. In questo caso, il server della Rubrica è interessato solo alle voci di <strong>proxyAddresses</strong> che &quot;iniziano con&quot;Tel:. Pertanto, nell'interesse di risparmiare spazio, User Replicator archivia solo le voci che iniziano con &quot;Tel:.&quot;</p></td>
 </tr>
 <tr class="even">
 <td><p>0x3</p></td>
-<td><p>Un attributo stringa booleano, che se TRUE fa in modo che User Replicator non includa questo contatto nella tabella AbUserEntry. Se FALSE, fa sì che User Replicator includa gli attributi per il contatto nella tabella AbUserEntry, ma non l'attributo specifico con questo contrassegno. Si tratta di un altro tipo di caso speciale principalmente per l'attributo <strong>msExchHideFromAddressLists</strong> .</p></td>
+<td><p>Attributo stringa booleano. Se l'impostazione è TRUE, il contatto non viene incluso da User Replicator nella tabella AbUserEntry. Se l'impostazione è FALSE, gli attributi per il contatto vengono inclusi da User Replicator nella tabella AbUserEntry, ad eccezione dell'attributo specifico con questo flag. Si tratta di un altro tipo di caso speciale utilizzato principalmente per l'attributo <strong>msExchHideFromAddressLists</strong>.</p></td>
 </tr>
 <tr class="odd">
 <td><p>0x4</p></td>
@@ -230,55 +230,55 @@ I numeri nella colonna **ID** devono essere univoci e non devono mai essere riut
 </tr>
 <tr class="even">
 <td><p>0x5</p></td>
-<td><p>Un attributo String, ma è incluso solo se il valore dell'attributo inizia con &quot;Tel:&quot; o &quot;SMTP:&quot; e include il &quot; @ &quot; simbolo.</p></td>
+<td><p>Un attributo stringa, ma è incluso solo se il valore dell'attributo inizia con &quot;Tel:&quot; o &quot;SMTP:&quot; e include il &quot; @ &quot; simbolo.</p></td>
 </tr>
 <tr class="odd">
 <td><p>0x100</p></td>
-<td><p>Se impostato, si tratta di un attributo multivalore che può essere visualizzato più volte per ogni contatto.</p></td>
+<td><p>Se impostato, si tratta di un attributo multivalore che può essere presente più volte per ogni contatto.</p></td>
 </tr>
 <tr class="even">
 <td><p>0x400</p></td>
-<td><p>Se impostato, identifica l'attributo del nome dell'account utente di posta elettronica per un contatto. Il server della rubrica usa questo contrassegno per identificare il valore di attributo da visualizzare nella voce del log eventi di normalizzazione del telefono.</p></td>
+<td><p>Se impostato, identifica l'attributo del nome account utente di posta elettronica per un contatto. Questo flag viene utilizzato dal server della Rubrica per identificare il valore di attributo da visualizzare nella voce del registro eventi di normalizzazione del telefono.</p></td>
 </tr>
 <tr class="odd">
 <td><p>0x800</p></td>
-<td><p>Se impostato, identifica un attributo obbligatorio per un contatto. Il server rubrica include un utente nella tabella AbUserEntry solo se è presente un valore per questo attributo in Active Directory. Se è presente più di un attributo obbligatorio, è necessario che solo uno di essi abbia un valore per includere l'utente nella tabella AbUserEntry.</p></td>
+<td><p>Se impostato, identifica un attributo obbligatorio per un contatto. Il server della Rubrica include un utente nella tabella AbUserEntry solo se è presente un valore per questo attributo in Active Directory. Se sono presenti più attributi obbligatori, è necessario che solo uno di essi disponga di un valore per includere l'utente nella tabella AbUserEntry.</p></td>
 </tr>
 <tr class="even">
 <td><p>0x1000</p></td>
-<td><p>Se impostato, il server della rubrica normalizza sempre il valore di questo attributo.</p></td>
+<td><p>Se impostato, il valore di questo attributo viene sempre normalizzato dal server della Rubrica.</p></td>
 </tr>
 <tr class="odd">
 <td><p>0x2000</p></td>
-<td><p>Se impostato, il server della rubrica usa il numero normalizzato di <strong>proxyAddresses</strong>, se l'impostazione di <strong>USENORMALIZATIONRULES</strong> CMS è falsa; in caso contrario, si comporta come quando il bit del contrassegno è 0x1000.</p></td>
+<td><p>Se impostato, il server della Rubrica utilizza il numero normalizzato di <strong>proxyAddresses</strong>, se l'impostazione CMS di <strong>UseNormalizationRules</strong> è FALSE; in caso contrario, il comportamento corrisponde a quello che si verifica quando il bit di flag è 0x1000.</p></td>
 </tr>
 <tr class="even">
 <td><p>0x4000</p></td>
-<td><p>Se impostato, il server rubrica non include oggetti nella tabella AbUserEntry con questo valore per l'attributo specificato. Se ad esempio l'attributo <strong>msRTCSIP-PrimaryUserAddress</strong> è impostato su un bit di flag, i contatti che hanno questo attributo non vengono scritti nel database.</p></td>
+<td><p>Se impostato, il server della Rubrica non include nella tabella AbUserEntry oggetti con questo valore per l'attributo specificato. Se, ad esempio, per l'attributo <strong>msRTCSIP-PrimaryUserAddress</strong> è impostato questo bit di flag, i contatti con questo attributo non vengono scritti nel database.</p></td>
 </tr>
 <tr class="odd">
 <td><p>0x8000</p></td>
-<td><p>Se impostato, il server rubrica non include oggetti nella tabella AbUserEntry che non hanno questo valore per l'attributo specificato. Se entrambi i bit del flag 0x4000 e 0x8000 sono impostati su un oggetto, l'attributo con il valore del bit di flag impostato su 0x4000 ha la precedenza e l'oggetto viene escluso dalla tabella AbUserEntry.</p></td>
+<td><p>Se impostato, il server della Rubrica non include nella tabella AbUserEntry oggetti che non hanno questo valore per l'attributo specificato. Se entrambi i bit di flag 0x4000 e 0x8000 sono impostati in un oggetto, l'attributo con il valore del bit di flag impostato su 0x4000 ha la precedenza e l'oggetto viene escluso dalla tabella AbUserEntry.</p></td>
 </tr>
 <tr class="even">
 <td><p>0x10000</p></td>
-<td><p>Se impostato, rappresenta un oggetto Group. User Replicator usa questo bit di flag per includere i contatti con l'attributo <strong>GroupType</strong> la cui presenza indica un gruppo, ad esempio una lista di distribuzione o un gruppo di sicurezza.</p></td>
+<td><p>Se impostato, rappresenta un oggetto gruppo. Questo bit di flag viene utilizzato da User Replicator per includere i contatti con l'attributo <strong>groupType</strong>, la cui presenza indica un gruppo (ad esempio, una lista di distribuzione o un gruppo di sicurezza).</p></td>
 </tr>
 <tr class="odd">
 <td><p>0x20000</p></td>
-<td><p>Se impostato, User Replicator usa questo bit di flag per includere questo attributo nei file del server della rubrica specifica del dispositivo, ovvero i file con estensione. DAB.</p></td>
+<td><p>Se impostato, questo bit di flag viene utilizzato da User Replicator per includere questo attributo nei file del server della Rubrica specifici del dispositivo, ovvero file con estensione dabs.</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Nelle versioni precedenti di Lync Server, quando si applica una modifica a Active Directory, è necessario che l'amministratore esegua **Update-CSUserDatabase** e **Update-CSAddressBook** i cmdlet di Windows PowerShell per mantenere immediatamente la modifica al database utente di Lync Server e al database di RTCab. In Lync Server 2013 Lync Server User Replicator rileverà le modifiche da Active Directory e aggiornerà il database degli utenti di Lync Server in base a un intervallo configurato. Lync Server User Replicator propagherà rapidamente le modifiche al database di RTCab senza che l'amministratore debba eseguire Update-CSAddressBook. Se la query Web della Rubrica è abilitata, le modifiche verranno applicate ai risultati della ricerca da parte dei client Lync. Gli amministratori dovranno eseguire solo Update-CSAddressBook se è abilitato il download di file della Rubrica.
+Nelle versioni precedenti di Lync Server, quando si applicava una modifica ad Active Directory, l'amministratore sarebbe stato tenuto a eseguire i cmdlet **Update-CSUserDatabase** e **Update-CSAddressBook** di Windows PowerShell per rendere permanenti le modifiche apportate al database utente di Lync Server e al database di RTCab. In Lync Server 2013, Lync Server User Replicator rileverà le modifiche da Active Directory e aggiornerà il database degli utenti di Lync Server in base a un intervallo configurato. Lync Server User Replicator propagherà rapidamente le modifiche apportate al database di RTCab senza che l'amministratore debba eseguire Update-CSAddressBook. Se la query Web della Rubrica è abilitata, le modifiche verranno applicate ai risultati della ricerca da parte dei client Lync. Gli amministratori devono solo eseguire Update-CSAddressBook se il download dei file della Rubrica è abilitato.
 
 <div>
 
 
 > [!NOTE]  
-> Per impostazione predefinita, Lync Server User Replicator viene eseguito automaticamente ogni 5 minuti. Puoi configurare questo intervallo usando set-CSUserReplicatorConfiguration-ReplicationCycleInterval &lt; &gt;.
+> Per impostazione predefinita, Lync Server User Replicator viene eseguito automaticamente ogni 5 minuti. È possibile configurare questo intervallo utilizzando set-CSUserReplicatorConfiguration-ReplicationCycleInterval &lt; &gt;.
 
 
 
@@ -288,23 +288,23 @@ Nelle versioni precedenti di Lync Server, quando si applica una modifica a Activ
 
 <div>
 
-## <a name="filtering-the-address-book"></a>Filtrare la Rubrica
+## <a name="filtering-the-address-book"></a>Filtro della Rubrica
 
-Gli utenti che popolano i file del server della rubrica possono essere controllati in base a determinati attributi di servizi di dominio Active Directory elencati nella tabella AbAttribute. Un attributo di questo tipo usato per filtrare è l'attributo **msExchangeHideFromAddressBook** . Questo è un attributo utente aggiunto dallo schema di Exchange. Se il valore di questo attributo è TRUE, Exchange Server usa questo attributo per nascondere il contatto dall'elenco indirizzi globale di Outlook. Allo stesso modo, se il valore di questo attributo è TRUE, User Replicator non include l'utente nella tabella AbUserEntry e l'utente non sarà presente nei file del server della Rubrica.
+Gli utenti inseriti nei file del server della rubrica possono essere controllati in base a determinati attributi di servizi di dominio Active Directory elencati nella tabella AbAttribute. Uno di questi attributi utilizzato per il filtro è **msExchangeHideFromAddressBook **. Si tratta di un attributo utente aggiunto dallo schema di Exchange. Se il valore di questo attributo è TRUE, questo attributo viene utilizzato da Exchange Server per nascondere il contatto dall'elenco indirizzi globale di Outlook. Analogamente, se il valore di questo attributo è TRUE, tale utente non viene incluso da User Replicator nella tabella AbUserEntry e l'utente non sarà presente nei file del server della Rubrica.
 
-Puoi usare alcuni bit di flag per definire un filtro da usare negli attributi del server della Rubrica. Ad esempio, la presenza di alcuni bit di flag può identificare un attributo come attributo include o come attributo Exclude. User Replicator filtra i contatti che contengono un attributo Exclude e filtra i Contains che non contengono un attributo include.
+È possibile utilizzare alcuni bit di flag per definire un filtro da utilizzare per gli attributi del server della Rubrica. La presenza di alcuni bit di flag consente, ad esempio, di identificare un attributo come attributo di inclusione o di esclusione. User Replicator consente di escludere tramite filtro i contatti che contengono un attributo di esclusione e quelli che non contengono un attributo di inclusione.
 
 <div>
 
 
 > [!WARNING]  
-> Per altre informazioni su come filtrare la Rubrica, vedere <A href="https://technet.microsoft.com/en-us/library/gg415643(v=ocs.15)">cmdlet del server rubrica in Lync server 2013</A>e filtrare la <A href="http://go.microsoft.com/fwlink/?linkid=330430">rubrica di Lync 2013</A>
+> Per ulteriori informazioni sul filtraggio della Rubrica, vedere <A href="https://technet.microsoft.com/library/gg415643(v=ocs.15)">cmdlet del server della Rubrica in Lync server 2013</A>e <A href="http://go.microsoft.com/fwlink/?linkid=330430">filtrare la rubrica di Lync 2013</A>
 
 
 
 </div>
 
-Attualmente esistono tre filtri diversi. Nella tabella seguente sono elencati questi filtri.
+Attualmente, sono disponibili tre diversi filtri, elencati nella tabella seguente.
 
 
 <table>
@@ -321,15 +321,15 @@ Attualmente esistono tre filtri diversi. Nella tabella seguente sono elencati qu
 <tbody>
 <tr class="odd">
 <td><p>0x800</p></td>
-<td><p>Se impostato, identifica un attributo obbligatorio per un contatto. User Replicator usa questo bit di flag per filtrare i contatti che non contengono almeno un attributo obbligatorio. OuPathId è un attributo obbligatorio, che è sempre impostato. Quindi deve essere impostato almeno uno degli altri attributi obbligatori. In caso contrario, il contatto (ovvero, con il valore dell'attributo obbligatorio OuPathId) non verrà ancora scritto nel database. Se ad esempio <strong>telephoneNumber</strong> e <strong>HomePhone</strong> sono definiti come attributi obbligatori, nel database verranno scritti solo i contatti che hanno almeno uno di questi attributi.</p></td>
+<td><p>Se impostato, identifica un attributo obbligatorio per un contatto. Questo bit di flag viene utilizzato da User Replicator per escludere tramite filtro i contatti che non includono almeno un attributo obbligatorio. OuPathId è un attributo obbligatorio, che è sempre impostato. È pertanto necessario che sia impostato almeno un altro degli attributi obbligatori. In caso contrario, il contatto (ovvero con il valore dell'attributo obbligatorio OuPathId) non sarà scritto nel database. Se, ad esempio, <strong>telephoneNumber</strong> e <strong>homePhone</strong> sono definiti come attributi obbligatori, solo i contatti che dispongono di almeno uno di questi attributi vengono scritti nel database.</p></td>
 </tr>
 <tr class="even">
 <td><p>0x4000</p></td>
-<td><p>Se impostato, identifica un attributo Exclude. User Replicator usa questo bit di flag per filtrare i contatti che contengono questo attributo. Ad esempio, se <strong>msRTCSIP-PrimaryUserAddress</strong> è definito come attributo Exclude, i contatti che hanno questo attributo non vengono scritti nel database.</p></td>
+<td><p>Se impostato, identifica un attributo di esclusione. Questo bit di flag viene utilizzato da User Replicator per escludere tramite filtro i contatti che contengono questo attributo. Se, ad esempio, <strong>msRTCSIP-PrimaryUserAddress</strong> è definito come attributo di esclusione, i contatti che dispongono di questo attributo non vengono scritti nel database.</p></td>
 </tr>
 <tr class="odd">
 <td><p>0x8000</p></td>
-<td><p>Se impostato, identifica un attributo include. User Replicator usa questo bit di flag per filtrare i contatti che non contengono questo attributo. Ad esempio, se <strong>msRTCSIP-PrimaryUserAddress</strong> è definito come attributo include, nel database verranno scritti solo i contatti con questo attributo.</p></td>
+<td><p>Se impostato, identifica un attributo di inclusione. Questo bit di flag viene utilizzato da User Replicator per escludere tramite filtro i contatti che non contengono questo attributo. Se, ad esempio, <strong>msRTCSIP-PrimaryUserAddress</strong> è definito come attributo di inclusione, solo i contatti che dispongono di questo attributo vengono scritti nel database.</p></td>
 </tr>
 </tbody>
 </table>
@@ -339,23 +339,23 @@ Attualmente esistono tre filtri diversi. Nella tabella seguente sono elencati qu
 
 
 > [!NOTE]  
-> Se sono impostati entrambi i bit di flag 0x4000 (Exclude Attribute) e 0x8000 (include Attribute), il bit 0x4000 esegue l'override del bit 0x8000 e il contatto viene escluso.
+> Se vengono impostati entrambi i bit di flag, 0x4000 (attributo di esclusione) e 0x8000 (attributo di inclusione), il bit 0x4000 ha la precedenza su 0x8000 e il contatto viene escluso.
 
 
 
 </div>
 
-Anche se è possibile filtrare la Rubrica per includere solo determinati utenti, la limitazione delle voci non limita la possibilità di altri utenti di contattare gli utenti filtrati o di vederne lo stato presenza. Gli utenti possono sempre trovare, inviare manualmente messaggi istantanei o avviare manualmente le chiamate agli utenti non presenti nella rubrica immettendo il nome di accesso completo di un utente. Inoltre, le informazioni di contatto per un utente possono essere trovate anche in Outlook.
+Sebbene sia possibile filtrare la Rubrica per includere solo determinati utenti, la limitazione delle voci non implica una limitazione della possibilità da parte di altri utenti di contattare gli utenti esclusi tramite filtro o di visualizzare il loro stato presenza. Gli utenti possono sempre trovare gli utenti non inclusi nella Rubrica, inviare loro manualmente messaggi istantanei o avviare manualmente chiamate verso tali utenti, immettendo il nome di accesso completo dell'utente. Le informazioni sul contatto per un utente sono inoltre disponibili anche in Outlook.
 
-Pur avendo i record di contatto completo nei file della Rubrica, è possibile usare Lync Server per avviare la posta elettronica, il telefono o le chiamate vocali aziendali (ovvero, se Enterprise Voice è abilitato sul server) con utenti non configurati per l'avvio della sessione Protocol (SIP), alcune organizzazioni preferiscono includere solo gli utenti abilitati per SIP nelle voci del server rubrica. È possibile filtrare la Rubrica per includere solo gli utenti abilitati per SIP deselezionando il bit 0x800 nella colonna **Flags** degli attributi obbligatori seguenti: **mailNickname**, **telephoneNumber**, **HomePhone**e **mobile**. È anche possibile filtrare la Rubrica per includere solo gli utenti abilitati per SIP impostando 0x8000 (attributo include) nella colonna **Flags** dell'attributo **msRTCSIP-PrimaryUserAddress** . Questo consente inoltre di escludere gli account di servizio dai file della Rubrica.
+Anche se i record dei contatti completi nei file della rubrica consentono di utilizzare Lync Server per avviare messaggi di posta elettronica, telefonici o VoIP aziendale (ovvero se VoIP aziendale è abilitato sul server) con gli utenti non configurati per l'avvio della sessione Protocol (SIP), alcune organizzazioni preferiscono includere solo gli utenti abilitati per SIP nelle voci del server della Rubrica. È possibile filtrare la Rubrica per includere solo gli utenti abilitati per SIP cancellando il bit 0x800 nella colonna **Flags** per gli attributi obbligatori seguenti: **mailNickname**, **telephoneNumber**, **homePhone** e **mobile**. È inoltre possibile filtrare la Rubrica per includere solo utenti abilitati per SIP impostando 0x8000 (attributo di inclusione) nella colonna **Flags** dell'attributo **msRTCSIP-PrimaryUserAddress**. In questo modo vengono inoltre esclusi gli account del servizio dai file della Rubrica.
 
-Dopo aver modificato la tabella AbAttribute, è possibile aggiornare i dati nella tabella AbUserEntry eseguendo il comando **Update-CsUserDatabase** cmdlet. Dopo il completamento della replica UR, è possibile aggiornare il file nell'archivio file della rubrica eseguendo manualmente il comando **UpdateCsAddressBook** cmdlet.
+Dopo aver modificato la tabella AbAttribute, è possibile aggiornare i dati nella tabella AbUserEntry eseguendo il cmdlet **Update-CsUserDatabase**. Al termine della replica di User Replicator, è possibile aggiornare il file dell'archivio file del server della Rubrica eseguendo manualmente il cmdlet **UpdateCsAddressBook**.
 
 <div>
 
 
 > [!NOTE]  
-> Il server front-end in cui è posizionato il server della Rubrica non è configurabile in termini amministrativi. Una viene scelta durante la distribuzione, in genere il primo server front-end distribuito. In caso di errore, il servizio Rubrica verrà spostato in un altro server front-end e non richiede alcuna attenzione amministrativa.
+> Il front end server che il server della Rubrica è posizionato non è configurabile amministrativamente. Uno viene scelto durante la distribuzione, in genere il primo front end server distribuito. In caso di errore, il servizio Rubrica verrà spostato in un altro front end server e non richiede alcuna attenzione amministrativa.
 
 
 
@@ -365,7 +365,7 @@ Dopo aver modificato la tabella AbAttribute, è possibile aggiornare i dati nell
 
 
 > [!IMPORTANT]  
-> Se l'infrastruttura è stata consolidata o modificata in altro modo da una distribuzione a più foreste o da una distribuzione padre/figlio, ad esempio il consolidamento dell'infrastruttura prima di passare a Lync Server, è possibile che il download del servizio Rubrica e la query Web della Rubrica non siano disponibili per alcuni utenti. Quando si trova in una distribuzione con più domini o insiemi di foreste, l'attributo <STRONG>msRTCSIP-OriginatorSID</STRONG> viene popolato negli oggetti utente che presentano il problema. L'attributo <STRONG>msRTCSIP-OriginatorSID</STRONG> deve essere impostato su null per questi oggetti per risolvere il problema.
+> Se l'infrastruttura è stata consolidata o modificata in altro modo da una distribuzione a più foreste o da una distribuzione padre/figlio, ad esempio il consolidamento dell'infrastruttura prima di passare a Lync Server, potrebbe essere possibile che il download del servizio Rubrica e la query Web della Rubrica non siano in grado di soddisfare alcuni utenti. In una distribuzione con più domini o foreste, l'attributo <STRONG>MsRTCSIP-OriginatorSid</STRONG> viene popolato negli oggetti utente in cui si presenta il problema. Per risolvere il problema, l'attributo <STRONG>MsRTCSIP-OriginatorSid</STRONG> deve essere impostato su NULL in questi oggetti.
 
 
 

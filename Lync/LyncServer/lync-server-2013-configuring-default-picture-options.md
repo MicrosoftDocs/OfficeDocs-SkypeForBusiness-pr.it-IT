@@ -12,20 +12,20 @@ ms:contentKeyID: 56280893
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e551d069da9a3afb7a884c28096dd97ab3702539
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 912bf3c2c30474755fbefd7399f110ae898fc104
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758150"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046429"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="configuring-default-picture-options-in-lync-server-2013"></a>Configurazione delle opzioni per le immagini predefinite in Lync Server 2013
+# <a name="configuring-default-picture-options-in-lync-server-2013"></a>Configurazione delle opzioni predefinite per le immagini in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41758150"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-03-22_
+_**Ultimo argomento modificato:** 2013-03-22_
 
-Per impostazione predefinita, le immagini degli utenti vengono visualizzate automaticamente. Se gli utenti desiderano nascondere le proprie immagini, possono selezionare l'opzione **Nascondi immagine personale** nel client Lync. Tuttavia, questa impostazione viene ignorata da altre applicazioni di Office.
+Per impostazione predefinita, le immagini degli utenti vengono visualizzate automaticamente. Se gli utenti desiderano nascondere le proprie immagini, è possibile selezionare l'opzione **Nascondi immagine** nel client Lync. Tuttavia, questa impostazione viene ignorata da altre applicazioni di Office.
 
-Se la possibilità di visualizzare immagini anche quando è disattivata dall'utente è un problema, è possibile modificare le impostazioni di visualizzazione dell'immagine di Lync a livello globale o per un sito o un servizio in modo che le immagini degli utenti non vengano visualizzate per impostazione predefinita. Usa il cmdlet Lync Server Management Shell seguente in modo che le immagini dell'utente non vengano visualizzate, a meno che non selezioni esplicitamente l'opzione **Mostra immagine personale** nel client:
+Se la possibilità di visualizzare immagini anche quando è disattivata dall'utente è un problema, è possibile modificare le impostazioni di visualizzazione delle immagini di Lync globalmente o per un sito o un servizio in modo che le immagini degli utenti non vengano visualizzate per impostazione predefinita. Utilizzare il seguente cmdlet di Lync Server Management Shell in modo che le immagini dell'utente non vengano visualizzate, a meno che non vengano esplicitamente selezionate l'opzione **Mostra immagine personale** nel client:
 
     Set-CsPrivacyConfiguration -DisplayPublishedPhotoDefault $False
 
-Per altre informazioni su questo cmdlet, vedere [Set-CsPrivacyConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsPrivacyConfiguration) nella documentazione di Lync Server Management Shell.
+Per ulteriori informazioni su questo cmdlet, vedere [Set-CsPrivacyConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsPrivacyConfiguration) nella documentazione di Lync Server Management Shell.
 
 </div>
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 48183855
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: baf29af4b9d1f2b026271b84cb54436e8f4b233f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 280202a83828757c3caca20c21795453ad4f133f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41740056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049168"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41740056"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-28_
+_**Ultimo argomento modificato:** 2012-09-28_
 
-La tabella ConferenceJoinTimeThresholds contiene i limiti di classificazione usati dal report di riepilogo dell'ora di partecipazione alla conferenza. Il report Riepilogo temporale per la conferenza di partecipazione riepiloga il tempo necessario per consentire agli utenti di partecipare a una conferenza con successo. questi valori temporali vengono segnalati sia come media che in una delle categorie seguenti:
+La tabella ConferenceJoinTimeThresholds include i limiti di classificazione utilizzati dal rapporto riepilogativo Tempo di partecipazione alla conferenza. Questo rapporto riepiloga la quantità di tempo richiesto agli utenti per partecipare a una conferenza. I valori temporali vengono riportati come media e in una delle categorie seguenti:
 
   - Meno di 2 secondi.
 
-  - Tra 2 secondi e 5 secondi.
+  - Tra 2 e 5 secondi.
 
-  - Tra 5 secondi e 10 secondi.
+  - Tra 5 e 10 secondi.
 
   - Più di 10 secondi.
 
-La tabella ConferenceJoinTimeThresholds contiene i valori di classificazione 2 secondi, 5 secondi e 10 secondi.
+La tabella ConferenceJoinTimeThresholds include i valori di classificazione 2 secondi, 5 secondi e 10 secondi.
 
 Questa tabella è stata introdotta in Microsoft Lync Server 2013.
 
@@ -72,7 +72,7 @@ Questa tabella è stata introdotta in Microsoft Lync Server 2013.
 <td><p><strong>ThresholdId</strong></p></td>
 <td><p>int</p></td>
 <td><p>Principale</p></td>
-<td><p>Identificatore univoco per la classificazione.</p></td>
+<td><p>Identificatore univoco della classificazione.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ThresholdValue:</strong></p></td>
@@ -80,9 +80,9 @@ Questa tabella è stata introdotta in Microsoft Lync Server 2013.
 <td></td>
 <td><p>Limite superiore per la classificazione. I valori consentiti sono:</p>
 <ol>
-<li><p>2</p></li>
-<li><p>5</p></li>
-<li><p>10</p></li>
+<li><p>2 </p></li>
+<li><p>5 </p></li>
+<li><p>10 </p></li>
 </ol></td>
 </tr>
 </tbody>

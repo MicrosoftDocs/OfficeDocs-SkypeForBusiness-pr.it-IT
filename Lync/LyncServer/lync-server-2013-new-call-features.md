@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Nuove funzionalità per le chiamate'
+title: 'Lync Server 2013: nuove funzionalità di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733854
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dad938bf47292b74b451cefb32b0c5345d03e284
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 47482eade227c55091fd5d3ca0f7b5d58123fa91
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765827"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049998"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="new-call-features-in-lync-server-2013"></a>Nuove funzionalità per le chiamate in Lync Server 2013
+# <a name="new-call-features-in-lync-server-2013"></a>Nuove funzionalità di chiamata in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41765827"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-10_
+_**Ultimo argomento modificato:** 2012-10-10_
 
-Lync Server 2013 offre una gamma di opzioni di configurazione molto più ampia per l'inoltro di chiamata e lo squillo simultaneo. Ad esempio, se un'organizzazione non vuole che le chiamate in arrivo vengano inoltrate esternamente alla rete PSTN (Public Switched Telephone Network), un amministratore può applicare un criterio vocale speciale per distribuire questa restrizione.
+Lync Server 2013 offre un'ampia gamma di opzioni di configurazione per l'inoltro di chiamata e lo squillo simultaneo. Se ad esempio un'organizzazione desidera che le chiamate in arrivo non vengano inoltrate all'esterno nella rete PSTN (Public Switched Telephone Network), un amministratore può imporre questa restrizione mediante l'applicazione di un criterio vocale specifico.
 
-Inoltre, i delegati possono ora configurare la chiamata simultanea ai loro dispositivi mobili per le chiamate in arrivo ai loro manager. In questo modo i delegati offrono maggiore flessibilità, consentendo loro di rispondere alle chiamate per conto del loro Manager senza essere collegati a un telefono da tavolo.
+Inoltre, i delegati possono ora impostare lo squillo simultaneo sui propri dispositivi mobili per le chiamate in arrivo indirizzate ai propri responsabili. Questo offre ai delegati maggiore flessibilità, consentendo loro di rispondere alle chiamate per conto dei propri responsabili senza essere vincolati a un telefono da tavolo.
 
 <div>
 

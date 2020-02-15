@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Revisione del report certificati'
+title: 'Lync Server 2013: Revisione del rapporto sui certificati'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541477
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 410e9e99fccae7378b5260c9aa3a2281a3004cd5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 26a01f778e855fc5934b524c5bf4a5829a2ca31e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733036"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051560"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="reviewing-the-certificates-report-in-lync-server-2013"></a>Revisione del report sui certificati in Lync Server 2013
+# <a name="reviewing-the-certificates-report-in-lync-server-2013"></a>Revisione del rapporto sui certificati in Lync Server 2013
 
 </div>
 
@@ -35,24 +35,24 @@ ms.locfileid: "41733036"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-Il report certificati contiene tutti i certificati necessari nella distribuzione di Lync Server 2013 consigliata. Lo strumento di pianificazione rappresenta i nomi di oggetto e i nomi alternativi oggetto immessi. Il testo predefinito lasciato inedito può rappresentare una potenziale sfida per il team responsabile per richiedere e rilasciare i certificati. Le informazioni sui certificati contengono anche informazioni sulla posizione in cui il certificato può in genere essere emesso. Se l'infrastruttura non ha un'infrastruttura a chiave pubblica (PKI) interna, tutti i certificati possono essere richiesti tramite un provider di certificati pubblici. Gli utilizzi delle chiavi estese (EKU) e i campi assegna ai nel report sono molto utili per capire qual è lo scopo e la posizione per ogni certificato.
+Il rapporto certificati contiene tutti i certificati necessari nella distribuzione di Lync Server 2013 consigliata. Lo strumento di pianificazione rappresenta i nomi soggetto e i nomi alternativi del soggetto immessi. Il testo predefinito che viene lasciato inedito potrebbe rappresentare una possibile sfida per il team responsabile della richiesta e dell'emissione dei certificati. Nelle informazioni sui certificati sono inoltre incluse informazioni sull'origine da cui in genere viene emesso il certificato. Se l'infrastruttura non dispone di un'infrastruttura a chiave pubblica (PKI), tutti i certificati possono essere richiesti tramite un provider di certificati pubblico. I campi relativi agli utilizzi chiave avanzati e alla destinazione del rapporto sono molto utili per comprendere lo scopo e il percorso di ogni certificato.
 
-![Rapporto di amministrazione certificati](images/Gg558651.63a29335-d9e4-41ae-97ec-3c9d9fd30d8a(OCS.15).jpg "Rapporto di amministrazione certificati")
+![Rapporto di amministrazione dei certificati](images/Gg558651.63a29335-d9e4-41ae-97ec-3c9d9fd30d8a(OCS.15).jpg "Rapporto di amministrazione dei certificati")
 
-Esaminare con attenzione e assicurarsi di comprendere l'uso e lo scopo di ogni certificato nella distribuzione. In caso di domande su cosa fa un certificato, determinare il server o il servizio a cui si sta parlando. I certificati in Lync Server 2013 vengono usati per due scopi principali:
+Esaminare attentamente e assicurarsi di comprendere l'utilizzo e lo scopo di ogni certificato nella distribuzione. Se si verifica un problema relativo a un certificato, determinare il server o il servizio a cui si sta parlando. I certificati in Lync Server 2013 vengono utilizzati per due scopi principali:
 
-  - MTLS (Mutual Transport Layer Security): i computer coinvolti nella comunicazione presentano ognuno un certificato che ne dimostra l'identità a un altro computer. Questa operazione è nota come autenticazione server. La comunicazione non può iniziare finché ogni computer non considera attendibile l'identità dell'altro computer.
+  - Mutual Transport Layer Security (MTLS) – i computer coinvolti nella comunicazione presentano ciascuno un certificato che dimostra la propria identità a un altro computer. Questa operazione è nota come autenticazione del server. La comunicazione non può iniziare finché ogni computer non considera attendibile l'identità dell'altro computer.
 
-  - Crittografia: la crittografia (Secure Sockets Layer o SSL e Transport Layer Security o TLS) è un mezzo essenziale per proteggere le comunicazioni, garantire la privacy e creare un sistema di comunicazione e collaborazione attendibile.
+  - Crittografia: la crittografia (Secure Sockets Layer, o SSL e Transport Layer Security, o TLS) è uno strumento fondamentale per la protezione delle comunicazioni, per assicurare la privacy e per creare un sistema di comunicazioni e collaborazione attendibile.
 
 <div>
 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Esame dei rapporti amministratore in Lync Server 2013](lync-server-2013-reviewing-the-administrator-reports.md)  
+[Revisione dei rapporti dell'amministratore in Lync Server 2013](lync-server-2013-reviewing-the-administrator-reports.md)  
   
 
 </div>

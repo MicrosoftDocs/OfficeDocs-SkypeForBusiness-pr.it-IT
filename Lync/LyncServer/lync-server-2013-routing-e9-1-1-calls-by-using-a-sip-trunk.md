@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Routing delle chiamate di emergenza tramite un trunk SIP'
+title: 'Lync Server 2013: routing delle chiamate al servizio E9-1-1 tramite un trunk SIP'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183492
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 918aaf97b1567f012a2b41de7128db23aa383acb
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f45bd91eade0de6f290fd87e52effb25c669999a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732855"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037326"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="routing-e9-1-1-calls-by-using-a-sip-trunk-in-lync-server-2013"></a>Routing delle chiamate di emergenza tramite un trunk SIP in Lync Server 2013
+# <a name="routing-e9-1-1-calls-by-using-a-sip-trunk-in-lync-server-2013"></a>Routing delle chiamate al servizio E9-1-1 tramite un trunk SIP in Lync Server 2013
 
 </div>
 
@@ -35,29 +35,29 @@ ms.locfileid: "41732855"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-29_
+_**Ultimo argomento modificato:** 2012-09-29_
 
-L'uso di un trunk SIP per connettersi a un provider di servizi E9-1-1 qualificato è un modo in cui è possibile distribuire E9-1-1. Per informazioni dettagliate sull'uso di un gateway ELIN per la connessione a un provider di servizi E9-1-1 Basato su PSTN (Public Switched Telephone Network), vedere [routing delle chiamate di E9-1-1 tramite un gateway ELIN in Lync Server 2013](lync-server-2013-routing-e9-1-1-calls-by-using-an-elin-gateway.md).
+L'utilizzo di un trunk SIP per la connessione a un provider di servizi E9-1-1 qualificato rappresenta un metodo per la distribuzione del servizio E9-1-1. Per informazioni dettagliate sull'utilizzo di un gateway ELIN per la connessione a un provider di servizi E9-1-1 Basato su rete PSTN (Public Switched Telephone Network), vedere [routing di chiamate E9-1-1 tramite un gateway ELIN in Lync Server 2013](lync-server-2013-routing-e9-1-1-calls-by-using-an-elin-gateway.md).
 
-Il diagramma seguente mostra il modo in cui una chiamata di emergenza viene instradata da Lync Server al punto di PSAP (Public Safety Answering Point) quando si usa un trunk SIP e un provider di servizi E9-1-1 qualificato.
+Nel diagramma seguente viene illustrato in che modo viene instradata una chiamata di emergenza da Lync Server al punto di risposta di sicurezza pubblica (PSAP) quando si utilizza un trunk SIP e un provider di servizi E9-1-1 qualificato.
 
-**Routing di chiamate E9-1-1 tramite trunk SIP**
+**Routing delle chiamate al servizio E9-1-1 tramite un trunk SIP**
 
 ![Routing delle chiamate di emergenza da Lync Server a PSAP](images/JJ204701.0637a9d4-2ca7-438a-8ed0-19090a4b992d(OCS.15).jpg "Routing delle chiamate di emergenza da Lync Server a PSAP")
 
-Quando una chiamata di emergenza viene inserita da un client Lync Server compatibile:
+Quando viene effettuata una chiamata di emergenza da un client Lync Server compatibile:
 
 1.  Un invito SIP che contiene la posizione, il numero di callback del chiamante e l'URL di notifica (facoltativo) e il numero di callback di conferenza vengono instradati a Lync Server.
 
-2.  Lync Server corrisponde al numero di emergenza e instrada la chiamata (in base al valore di **utilizzo PSTN** definito nel criterio di posizione applicabile) a un Mediation Server e da lì, tramite un trunk SIP al provider di servizi E9-1-1.
+2.  Lync Server corrisponde al numero di emergenza e instrada la chiamata (in base al valore di **utilizzo PSTN** definito nei criteri di percorso applicabili) a un Mediation Server e, da qui, tramite un trunk SIP al provider di servizi E9-1-1.
 
-3.  Il provider di servizi E9-1-1 instrada la chiamata di emergenza alla PSAP corretta in base alla posizione fornita con la chiamata. Quando il client include un percorso di risposta di emergenza convalidato con la chiamata di emergenza, il provider instrada automaticamente la chiamata al PSAP appropriato. Se la posizione è stata immessa manualmente dall'utente, il centro risposte per le chiamate di emergenza (ECRC) verifica verbalmente la precisione della posizione con il chiamante prima di instradare la chiamata di emergenza al PSAP.
+3.  Il provider di servizi E9-1-1 instrada la chiamata di emergenza al centro di raccolta delle chiamate di emergenza (PSAP, Public Safety Answering Point) appropriato in base alle informazioni sulla posizione fornite nella chiamata. Quando il client include nella chiamata di emergenza una posizione ERL (Emergency Response Location) convalidata, la chiamata viene instradata automaticamente dal provider al centro di raccolta delle chiamate di emergenza appropriato. Se la posizione è stata immessa manualmente dall'utente, il centro ECRC (Emergency Call Response Center) verifica innanzitutto verbalmente l'accuratezza della posizione con il chiamante prima di instradare la chiamata al centro di raccolta delle chiamate di emergenza.
 
-4.  Se sono stati configurati i criteri di posizione per le notifiche, uno o più agenti di sicurezza dell'organizzazione riceveranno un messaggio istantaneo speciale di notifica di emergenza Lync. Questo messaggio compare sempre nella schermata degli addetti alla sicurezza e contiene il nome, il numero di telefono, l'ora e la posizione del chiamante, che consente al personale di sicurezza di rispondere rapidamente al chiamante di emergenza usando un messaggio istantaneo o una voce.
+4.  Se i criteri percorso sono stati configurati per le notifiche, uno o più agenti di sicurezza dell'organizzazione ricevono un messaggio istantaneo speciale di notifica di emergenza di Lync. Questo messaggio viene sempre visualizzato nelle schermate degli addetti alla sicurezza e contiene il nome, il numero di telefono, l'ora e il percorso del chiamante, consentendo al personale di sicurezza di rispondere rapidamente al chiamante di emergenza utilizzando un messaggio istantaneo o una voce.
 
-5.  Se sono stati configurati i criteri di posizione per le conferenze ed è supportato dal provider di servizi E9-1-1, è possibile partecipare a una conferenza di sicurezza interna alla chiamata con audio unidirezionale o audio bidirezionale.
+5.  Se sono stati configurati criteri di percorso per il servizio di conferenza e il provider di servizi E9-1-1 lo supporta, un desk di sicurezza interno viene invitato a partecipare in conferenza alla chiamata con audio unidirezionale o bidirezionale.
 
-6.  Se la chiamata viene interrotta prematuramente, PSAP usa il numero di callback per contattare direttamente il chiamante.
+6.  Se la chiamata viene interrotta prematuramente, il centro di raccolta delle chiamate di emergenza utilizza il numero di richiamata per contattare direttamente il chiamante.
 
 </div>
 

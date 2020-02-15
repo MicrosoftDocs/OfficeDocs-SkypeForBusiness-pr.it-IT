@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Funzionalità della messaggistica unificata integrata'
+title: 'Lync Server 2013: caratteristiche della messaggistica unificata integrata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183353
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 69726c614df344c76b06cf68e4d844c0514af7dd
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: c70df997e0ed42f77451287cccbae23ae93d14e6
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765144"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042790"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41765144"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-Lync Server 2013, Enterprise Voice usa l'infrastruttura di messaggistica UNIFICAta di Exchange per fornire le risposte alle chiamate, le notifiche delle chiamate, l'accesso vocale (inclusi i messaggi vocali) e i servizi di operatore automatico.
+Lync Server 2013, VoIP aziendale utilizza l'infrastruttura di messaggistica unificata di Exchange per fornire il risponditore automatico, la notifica di chiamata, l'accesso vocale (incluso il sistema di caselle vocali) e i servizi di operatori automatici.
 
 <div>
 
-## <a name="call-answering"></a>Segreteria telefonica
+## <a name="call-answering"></a>Risponditore automatico
 
-La segreteria telefonica è la ricezione di messaggi vocali per conto degli utenti le cui chiamate non rispondono o sono occupate. Include la riproduzione di un saluto personale, la registrazione di un messaggio e l'invio del messaggio in coda per il recapito alla cassetta postale dell'utente, archiviato nel server cassette postali di Exchange.
+Risponditore automatico è la ricezione di messaggi vocali per conto di utenti le cui chiamate non rispondono o sono occupate. Include la riproduzione del messaggio di saluto personale, la registrazione di un messaggio e l'invio di messaggi da inserire in coda per il recapito alla cassetta postale dell'utente, che viene memorizzata nel server cassette postali di Exchange.
 
-Se un chiamante lascia un messaggio, il messaggio viene instradato alla posta in arrivo dell'utente. Se un chiamante sceglie di non uscire da un messaggio, nella cassetta postale dell'utente viene archiviata una notifica di chiamata senza risposta. Gli utenti possono quindi accedere alla posta in arrivo usando il client di messaggistica e collaborazione di Microsoft Outlook, Outlook Web Access, la tecnologia Exchange ActiveSync o Outlook Voice Access. L'oggetto e la priorità delle chiamate possono essere visualizzati in modo simile a quello del messaggio di posta elettronica.
+Se un chiamante lascia un messaggio, il messaggio viene instradato alla cartella posta in arrivo dell'utente. Se un chiamante sceglie di non lasciare un messaggio, una notifica di chiamata senza risposta viene archiviata nella cassetta postale dell'utente. Gli utenti possono quindi accedere alla posta in arrivo utilizzando il client di messaggistica e collaborazione di Microsoft Outlook, Outlook Web Access, la tecnologia Exchange ActiveSync o Outlook Voice Access. L'oggetto e la priorità delle chiamate possono essere visualizzati in modo analogo a quello del messaggio di posta elettronica.
 
 </div>
 
@@ -53,7 +53,7 @@ Se un chiamante lascia un messaggio, il messaggio viene instradato alla posta in
 
 ## <a name="outlook-voice-access"></a>Outlook Voice Access
 
-Outlook Voice Access consente a un utente di VoIP aziendale di accedere non solo alla segreteria telefonica, ma anche alla posta in arrivo di Exchange, inclusi posta elettronica, calendario e contatti da un'interfaccia di telefonia. Il numero di accesso del Sottoscrittore viene assegnato dall'amministratore della messaggistica unificata di Exchange.
+Outlook Voice Access consente a un utente di VoIP aziendale di accedere non solo alla segreteria telefonica, ma anche alla posta in arrivo di Exchange, tra cui posta elettronica, calendario e contatti provenienti da un'interfaccia di telefonia. Il numero di accesso sottoscrittore è assegnato da un amministratore di messaggistica unificata di Exchange.
 
 </div>
 
@@ -61,7 +61,7 @@ Outlook Voice Access consente a un utente di VoIP aziendale di accedere non solo
 
 ## <a name="auto-attendant"></a>Operatore automatico
 
-Operatore automatico è una funzionalità di messaggistica unificata di Exchange che può essere usata per configurare un numero di telefono che gli utenti esterni possono chiamare per raggiungere i rappresentanti della società. In particolare, fornisce una serie di richieste vocali che assistono un chiamante esterno nell'esplorazione di un sistema di menu. L'elenco delle opzioni disponibili è configurato nel server Messaggistica unificata di Exchange dall'amministratore di messaggistica unificata
+Operatore automatico è una funzionalità di messaggistica unificata di Exchange che può essere utilizzata per configurare un numero di telefono che gli utenti esterni possono comporre per raggiungere i rappresentanti della società. In particolare, fornisce una serie di istruzioni vocali che assistono un chiamante esterno nell'esplorazione di un sistema di menu. L'elenco delle opzioni disponibili è configurato sul server Messaggistica unificata di Exchange dall'amministratore di messaggistica unificata di Exchange.
 
 </div>
 
@@ -69,7 +69,7 @@ Operatore automatico è una funzionalità di messaggistica unificata di Exchange
 
 ## <a name="fax-services"></a>Servizi fax
 
-La messaggistica unificata di Exchange include le caratteristiche fax, che consentono agli utenti di ricevere i fax in arrivo nelle cassette postali di Exchange. Per informazioni dettagliate, vedere la pagina relativa alla messaggistica unificata nella documentazione su [http://go.microsoft.com/fwlink/p/?linkId=135652](http://go.microsoft.com/fwlink/p/?linkid=135652)Microsoft Exchange Server.
+La messaggistica unificata di Exchange include funzionalità fax, che consentono agli utenti di ricevere fax in arrivo nelle cassette postali di Exchange. Per informazioni dettagliate, vedere la sezione relativa alla messaggistica unificata nella documentazione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=135652](http://go.microsoft.com/fwlink/p/?linkid=135652)Exchange Server all'indirizzo.
 
 <div>
 

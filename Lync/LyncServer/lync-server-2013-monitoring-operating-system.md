@@ -12,16 +12,16 @@ ms:contentKeyID: 63969617
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 42ac03f61fca5717d279d39e703a8ffa97e8c2cf
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a5bd837bab2ca4323dd0fb2f4d29b31d653d37c8
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756790"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42047698"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,31 +35,31 @@ ms.locfileid: "41756790"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2015-01-26_
+_**Ultimo argomento modificato:** 2015-01-26_
 
-È necessario monitorare le prestazioni di tutti i server e i componenti di Lync Server 2013. Uno dei componenti più importanti, naturalmente, è il sistema operativo stesso. Lync Server 2013 supporta le edizioni x64 di:
+È necessario monitorare le prestazioni di tutti i server e i componenti del Lync Server 2013. Ovviamente, uno dei componenti più importanti è il sistema operativo stesso. Lync Server 2013 supporta le edizioni x64 di:
 
-  - Windows Server 2008 R2
+  - Windows Server 2008 R2
 
   - Windows Server 2012 e Windows Server 2012 R2
 
-Il modo più trasparente per monitorare un sistema operativo consiste nell'usare il Management Pack del sistema operativo Windows Server. Fornisce le nozioni fondamentali per il monitoraggio, ad esempio prestazioni, integrità e disponibilità per i computer che eseguono Windows Server 2012, Windows Server 2012 R2 e Windows Server 2008 R2.
+Il modo più trasparente per monitorare un sistema operativo consiste nell'utilizzare il Management Pack del sistema operativo Windows Server. Sono disponibili le nozioni fondamentali di monitoraggio, quali prestazioni, integrità e disponibilità per i computer che eseguono Windows Server 2012, Windows Server 2012 R2 e Windows Server 2008 R2.
 
-Individuando, avvisando e rispondendo automaticamente agli eventi importanti e agli indicatori di prestazioni, questi Management Pack riducono i tempi di risoluzione per i problemi e aumentano la disponibilità complessiva e le prestazioni dei sistemi che esegue Windows Server sistemi operativi.
+Rilevando, avvertendo e rispondendo automaticamente a eventi importanti e indicatori di prestazioni, questi Management Pack riducono i tempi di risoluzione dei problemi e aumentano la disponibilità complessiva e le prestazioni di sistemi che eseguono Windows Server sistemi operativi.
 
-Oltre a rilevanti Windows Server Management Pack per System Center Operations Manager, è possibile usare gli strumenti e le risorse di sistema seguenti per monitorare l'integrità del sistema operativo (a seconda della versione del sistema operativo).
+Oltre ai Management Pack di Windows Server rilevanti per System Center Operations Manager, è possibile utilizzare le risorse e gli strumenti di sistema seguenti per monitorare l'integrità del sistema operativo, a seconda della versione del sistema operativo.
 
 <div>
 
-## <a name="windows-server2008r2"></a>Windows Server 2008 R2
+## <a name="windows-server2008r2"></a>Windows Server 2008 R2
 
-Windows Server 2008 R2 include le caratteristiche e gli strumenti aggiuntivi seguenti per aiutare gli amministratori con il monitoraggio e la gestione dei sistemi operativi di base:
+Windows Server 2008 R2 include le funzionalità e gli strumenti aggiuntivi seguenti che consentono agli amministratori di eseguire il monitoraggio e la gestione di base del sistema operativo:
 
-  - **Monitoraggio risorse** è uno strumento avanzato che consente di comprendere in modo approfondito l'utilizzo delle risorse di sistema da parte dei processi e dei servizi. Oltre a effettuare il monitoraggio dell'utilizzo delle risorse in tempo reale, Monitoraggio risorse consente di analizzare i processi che non rispondono, identificare le applicazioni che utilizzano file e controllare processi e servizi.
+  - **Monitor risorse di Windows** è uno strumento potente per comprendere le modalità di utilizzo delle risorse di sistema da parte dei processi e dei servizi. Oltre a monitorare l'utilizzo delle risorse in tempo reale, un monitor delle risorse consente di analizzare i processi non rispondenti, identificare le applicazioni che utilizzano i file e controllare i processi e i servizi.
 
-  - **Componente di analisi dell'affidabilità** è un agente incorporato che fornisce informazioni dettagliate sull'esperienza relative all'utilizzo del sistema e all'affidabilità. Queste informazioni vengono esposte tramite un'interfaccia di Strumentazione gestione Windows (WMI), rendendole disponibili per l'utilizzo da parte di sistemi per lettori portatili. L'esposizione del Componente di analisi dell'affidabilità tramite un'interfaccia WMI consente agli sviluppatori di monitorare e analizzare le applicazioni, aumentando affidabilità e prestazioni.
+  - Il **componente di analisi dell'affidabilità** è un agente in-box che fornisce informazioni dettagliate sull'utilizzo e l'affidabilità del sistema. Queste informazioni vengono esposte tramite un'interfaccia WMI per renderlo disponibile per il consumo da parte dei sistemi di lettori portatili. Esponendo il componente di analisi dell'affidabilità tramite un'interfaccia WMI, gli sviluppatori possono monitorare e analizzare le applicazioni, aumentando l'affidabilità e le prestazioni.
 
-  - **Windows Server 2008 R2** usa il componente di analisi di affidabilità predefinito per calcolare un indice di affidabilità, che fornisce informazioni sull'uso e la stabilità complessive del sistema nel tempo. The Reliability Analysis Component also keeps track of any important changes to the system that are likely to influence stability, such as Windows updates and application installations.
+  - **Windows Server 2008 R2** utilizza il componente di analisi dell'affidabilità incorporato per calcolare un indice di affidabilità, in cui vengono fornite informazioni sull'utilizzo e sulla stabilità generali del sistema nel tempo. Il componente di analisi dell'affidabilità tiene anche conto di eventuali modifiche importanti al sistema che potrebbero influire sulla stabilità, ad esempio gli aggiornamenti di Windows e le installazioni di applicazioni.
 
 </div>
 
@@ -67,33 +67,33 @@ Windows Server 2008 R2 include le caratteristiche e gli strumenti aggiuntivi seg
 
 ## <a name="windows-server2008-windows-reliability-and-performance-monitor"></a>Monitoraggio affidabilità e prestazioni di Windows Server 2008
 
-Le funzionalità Monitoraggio affidabilità e Monitoraggio prestazioni di Windows costituiscono uno snap-in MMC (Microsoft Management Console) nel quale sono combinate le funzionalità di strumenti autonomi precedenti, tra cui Avvisi e registri di prestazioni, Server Performance Advisor (SPA) e Monitor di sistema. Lo snap-in è provvisto di un'interfaccia grafica per la personalizzazione di insiemi di dati sulle prestazioni e di sessioni di traccia degli eventi.
+Monitoraggio affidabilità e prestazioni di Windows è uno snap-in MMC che combina la funzionalità dei precedenti strumenti autonomi, tra cui registri delle prestazioni e avvisi, Server Performance Advisor e monitor di sistema. Offre un'interfaccia grafica per la personalizzazione della raccolta di dati di prestazioni e delle sessioni di traccia degli eventi.
 
-È inoltre incluso Monitoraggio affidabilità, uno snap-in MMC che consente di tenere traccia delle modifiche apportate al sistema e di confrontarle con le variazioni in termini di stabilità del sistema in una visualizzazione grafica delle relative relazioni.
+Include inoltre il monitoraggio dell'affidabilità, uno snap-in MMC che consente di tenere traccia delle modifiche apportate al sistema e le confronta con le modifiche apportate alla stabilità del sistema e fornisce una visualizzazione grafica della relazione.
 
 </div>
 
 <div>
 
-## <a name="windows-reliability-and-performance-monitor"></a>Monitoraggio affidabilità e Monitoraggio prestazioni di Windows
+## <a name="windows-reliability-and-performance-monitor"></a>Monitoraggio affidabilità e prestazioni di Windows
 
-L'affidabilità e il monitoraggio delle prestazioni di Windows combinano le funzionalità di alcuni ex strumenti autonomi come i registri delle prestazioni e gli avvisi, oltre a un monitor di sistema e a un Server Performance Advisor, ma offre anche alcune nuove caratteristiche di Windows Server 2008 e Windows Server 2008 R2, ad esempio il seguente:
+Mentre Monitoraggio affidabilità e prestazioni di Windows combinano le funzionalità di alcuni strumenti precedenti, come i registri di prestazioni e gli avvisi, e il monitor di sistema e il Server Performance Advisor, fornisce anche alcune nuove funzionalità a Windows Server 2008 e Windows Server 2008 R2, ad esempio:
 
-  - Insiemi agenti di raccolta dati
+  - Insiemi di agenti di raccolta dati
 
   - Visualizzazione risorse
 
   - Monitoraggio affidabilità
 
-  - Creazioni guidate e modelli per la creazione di registri
+  - Procedure guidate e modelli per la creazione di registri
 
-**Insieme agenti di raccolta dati** raggruppa gli agenti di raccolta dati in elementi riutilizzabili per l'utilizzo in scenari diversi di monitoraggio delle prestazioni. Dopo l'archiviazione di un gruppo di agenti di raccolta dati come Insieme agenti di raccolta dati, è possibile eseguire operazioni come ad esempio la pianificazione sull'intero insieme modificando una sola proprietà. Sono inclusi anche modelli di insieme agenti di raccolta dati che consentono agli amministratori di sistema di cominciare a raccogliere immediatamente i dati delle prestazioni specifici di un ruolo di server o di uno scenario di monitoraggio.
+Set di agenti di **raccolta dati** raggruppa i collezionisti di dati in elementi riutilizzabili per l'utilizzo con diversi scenari di monitoraggio delle prestazioni. Dopo che un gruppo di collezionisti di dati è archiviato come set di agenti di raccolta dati, le operazioni come la pianificazione possono essere applicate a tutto il set tramite una singola modifica della proprietà. Monitoraggio affidabilità e prestazioni di Windows include modelli set di agenti di raccolta dati predefiniti che consentono agli amministratori di sistema di raccogliere immediatamente dati sulle prestazioni specifici di un ruolo del server o di uno scenario di monitoraggio.
 
-La pagina iniziale di Monitoraggio affidabilità e Monitoraggio prestazioni di Windows è la nuova schermata di ** Visualizzazione risorse** che offre una panoramica grafica in tempo reale dell'utilizzo della CPU, del disco, della rete e della memoria. Espandendo ognuno di questi elementi monitorati, gli amministratori di sistema possono identificare quali processi vengono utilizzati dalle singole risorse. Nelle versioni precedenti di Windows, i dati in tempo reale specifici di un processo sono disponibili soltanto in modo limitato in Gestione attività.
+La Home page di monitoraggio affidabilità e prestazioni di Windows è la nuova schermata di **visualizzazione delle risorse** , che fornisce una panoramica grafica in tempo reale di utilizzo della CPU, del disco, della rete e della memoria. Espandendo ognuno di questi elementi monitorati, gli amministratori di sistema possono identificare i processi che utilizzano le risorse. Nelle versioni precedenti di Windows, in tempo reale, i dati specifici dei processi erano disponibili solo in formato limitato in Task Manager.
 
-In **Monitoraggio affidabilità** viene calcolato un indice di stabilità del sistema che indica se eventuali problemi imprevisti hanno ridotto l'affidabilità del sistema. In un grafico dell'indice di stabilità del sistema nel tempo vengono identificate rapidamente le date in cui i problemi hanno iniziato a verificarsi. Nel relativo Rapporto stabilità sistema vengono riportati i dettagli per risolvere la causa principale della riduzione dell'affidabilità. La visualizzazione delle modifiche del sistema, ad esempio l'installazione o la rimozione delle applicazioni, gli aggiornamenti al sistema operativo oppure l'aggiunta o la modifica di driver, affiancata agli errori, ad esempio gli errori delle applicazioni, gli arresti anomali del sistema operativo o gli errori hardware, consente di sviluppare rapidamente una strategia per risolvere i problemi.
+**Monitor di affidabilità** calcola un indice di stabilità del sistema che indica se i problemi imprevisti riducono l'affidabilità del sistema. Un grafico dell'indice di stabilità nel tempo identifica rapidamente le date in cui si sono verificati problemi. Il rapporto di stabilità del sistema associato fornisce informazioni dettagliate per la risoluzione dei problemi relativi alla causa di un'affidabilità ridotta. Visualizzando le modifiche apportate al sistema (installazione o rimozione di applicazioni, aggiornamenti per il sistema operativo o addizione o modifica dei driver) affiancati da errori (errori di applicazioni, arresti anomali del sistema operativo o errori hardware), una strategia per la risoluzione dei problemi può essere sviluppata rapidamente.
 
-È possibile ora aggiungere contatori ai file di registro e pianificarne l'avvio, l'interruzione e la durata tramite un'**interfaccia della creazione guidata**. È inoltre possibile salvare questa configurazione come modello per la raccolta dello stesso registro su computer successivi senza ripetere la selezione dell'agente di raccolta dati e pianificare i processi. In Monitoraggio affidabilità e Monitoraggio prestazioni di Windows sono state incorporate le funzionalità Avvisi e registri di prestazioni per l'utilizzo con qualsiasi insieme agenti di raccolta dati.
+L'aggiunta di contatori ai file di registro e la pianificazione dell'avvio, dell'interruzione e della durata possono ora essere eseguite tramite un' **interfaccia della procedura guidata**. Inoltre, il salvataggio di questa configurazione come modello consente agli amministratori di sistema di raccogliere lo stesso registro su altri computer senza ripetere la selezione e i processi di pianificazione dell'agente di raccolta dati. Le funzionalità di avvisi e registri delle prestazioni sono state integrate in Monitoraggio affidabilità e prestazioni di Windows per l'utilizzo con qualsiasi insieme agenti di raccolta dati.
 
 </div>
 

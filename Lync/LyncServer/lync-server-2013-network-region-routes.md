@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: route dell'area di rete"
+title: 'Lync Server 2013: Route delle aree di rete'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733608
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e84c2b0114393a0d9234e18af8af7c8c98f3d8b5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 83db08d7e0630a74ae5c4366afb3b18ed9d7e567
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765897"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049108"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="network-region-routes-in-lync-server-2013"></a>Route dell'area di rete in Lync Server 2013
+# <a name="network-region-routes-in-lync-server-2013"></a>Route delle aree di rete in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41765897"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-Una *route dell'area di rete* definisce la route tra una coppia di aree della rete. Ogni coppia di aree della rete nella distribuzione del controllo di ammissione alle chiamate richiede una route dell'area di rete. In questo modo ogni area di rete della distribuzione consente di accedere a tutte le altre aree geografiche. Usare le procedure descritte in questa sezione per visualizzare, creare, modificare o eliminare le route dell'area di rete.
+Una *route area di rete* definisce la route tra una coppia di aree di rete. Ogni coppia di aree di rete nella distribuzione del servizio Controllo di ammissione di chiamata richiede una route di questo tipo. 	In tal modo ogni area di rete della distribuzione può accedere a tutte le altre aree. Usare le procedure descritte in questa sezione per visualizzare, creare, modificare o eliminare le route aree di rete.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Creazione o modifica di aree di rete in Lync Server 2013](lync-server-2013-creating-or-modifying-network-regions.md)
 
-  - [Visualizzazione delle informazioni sulla route dell'area di rete in Lync Server 2013](lync-server-2013-viewing-network-region-route-information.md)
+  - [Visualizzazione delle informazioni sulle route delle aree di rete in Lync Server 2013](lync-server-2013-viewing-network-region-route-information.md)
 
-  - [Eliminazione di route di area di rete esistenti in Lync Server 2013](lync-server-2013-deleting-existing-network-region-routes.md)
+  - [Eliminazione delle route delle aree di rete esistenti in Lync Server 2013](lync-server-2013-deleting-existing-network-region-routes.md)
 
 </div>
 
@@ -55,7 +55,7 @@ Una *route dell'area di rete* definisce la route tra una coppia di aree della re
 
 ## <a name="reference"></a>Riferimenti
 
-[Distribuzione di funzionalità vocali avanzate di Enterprise in Lync Server 2013](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
+[Distribuzione di funzionalità di VoIP aziendale avanzate in Lync Server 2013](lync-server-2013-deploying-advanced-enterprise-voice-features.md)
 
 </div>
 

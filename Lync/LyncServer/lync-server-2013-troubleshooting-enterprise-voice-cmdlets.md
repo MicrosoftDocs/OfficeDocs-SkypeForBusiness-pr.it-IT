@@ -12,16 +12,16 @@ ms:contentKeyID: 48183697
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 499da8c727237a581af55e56aec3517a7a427e44
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 8ef88ac7a55480df050719fa1a85a056df8a02ea
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41745036"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046509"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,68 +35,68 @@ ms.locfileid: "41745036"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-20_
+_**Ultimo argomento modificato:** 2012-06-20_
 
-La configurazione di VoIP aziendale nell'ambito dell'implementazione di Microsoft Lync Server 2013 prevede la creazione di route, criteri e regole che devono collaborare per garantire il completamento delle chiamate in entrata e in uscita come previsto. Lync Server Management Shell include cmdlet che possono essere usati per testare connessioni e percorsi e per risolvere i problemi che possono verificarsi durante l'implementazione.
+La configurazione di VoIP aziendale come parte dell'implementazione di Microsoft Lync Server 2013 prevede la creazione di route, criteri e regole che devono collaborare tutti per garantire che le chiamate in arrivo e in uscita vengano completate come previsto. Lync Server Management Shell include cmdlet che possono essere utilizzati per testare le connessioni e i percorsi e per risolvere i problemi che possono verificarsi durante l'implementazione.
 
 <div>
 
-## <a name="troubleshooting-enterprise-voice-cmdlets"></a>Risoluzione dei problemi relativi ai cmdlet di VoIP aziendale
+## <a name="troubleshooting-enterprise-voice-cmdlets"></a>Cmdlet per la risoluzione dei problemi relativi a VoIP aziendale
 
-I cmdlet seguenti possono essere usati per testare e risolvere i problemi relativi alle connessioni VoIP aziendali.
+È possibile utilizzare i cmdlet seguenti per testare le connessioni VoIP aziendale e risolvere i relativi problemi.
 
-**Risoluzione dei problemi relativi ai cmdlet di VoIP aziendale**
-
-  - <span></span>  
-    [Get-CsVoiceConfiguration](https://technet.microsoft.com/en-us/library/Gg398815(v=OCS.15))
+**Cmdlet per la risoluzione dei problemi relativi a VoIP aziendale**
 
   - <span></span>  
-    [Remove-CsVoiceConfiguration](https://technet.microsoft.com/en-us/library/Gg398804(v=OCS.15))
+    [Get-CsVoiceConfiguration](https://technet.microsoft.com/library/Gg398815(v=OCS.15))
 
   - <span></span>  
-    [Set-CsVoiceConfiguration](https://technet.microsoft.com/en-us/library/Gg398967(v=OCS.15))
+    [Remove-CsVoiceConfiguration](https://technet.microsoft.com/library/Gg398804(v=OCS.15))
+
+  - <span></span>  
+    [Set-CsVoiceConfiguration](https://technet.microsoft.com/library/Gg398967(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Get-CsVoiceTestConfiguration](https://technet.microsoft.com/en-us/library/Gg412957(v=OCS.15))
+    [Get-CsVoiceTestConfiguration](https://technet.microsoft.com/library/Gg412957(v=OCS.15))
 
   - <span></span>  
-    [New-CsVoiceTestConfiguration](https://technet.microsoft.com/en-us/library/Gg398961(v=OCS.15))
+    [New-CsVoiceTestConfiguration](https://technet.microsoft.com/library/Gg398961(v=OCS.15))
 
   - <span></span>  
-    [Remove-CsVoiceTestConfiguration](https://technet.microsoft.com/en-us/library/Gg412813(v=OCS.15))
+    [Remove-CsVoiceTestConfiguration](https://technet.microsoft.com/library/Gg412813(v=OCS.15))
 
   - <span></span>  
-    [Set-CsVoiceTestConfiguration](https://technet.microsoft.com/en-us/library/Gg398614(v=OCS.15))
+    [Set-CsVoiceTestConfiguration](https://technet.microsoft.com/library/Gg398614(v=OCS.15))
 
   - <span></span>  
-    [Test-CsVoiceTestConfiguration](https://technet.microsoft.com/en-us/library/Gg398260(v=OCS.15))
+    [Test-CsVoiceTestConfiguration](https://technet.microsoft.com/library/Gg398260(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Test-CsDialPlan](https://technet.microsoft.com/en-us/library/Gg399024(v=OCS.15))
+    [Test-CsDialPlan](https://technet.microsoft.com/library/Gg399024(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Test-CsVoiceNormalizationRule](https://technet.microsoft.com/en-us/library/Gg399003(v=OCS.15))
+    [Test-CsVoiceNormalizationRule](https://technet.microsoft.com/library/Gg399003(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Test-CsVoicePolicy](https://technet.microsoft.com/en-us/library/Gg398310(v=OCS.15))
+    [Test-CsVoicePolicy](https://technet.microsoft.com/library/Gg398310(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Test-CsVoiceRoute](https://technet.microsoft.com/en-us/library/Gg425873(v=OCS.15))
+    [Test-CsVoiceRoute](https://technet.microsoft.com/library/Gg425873(v=OCS.15))
 
 <!-- end list -->
 
   - <span></span>  
-    [Test-CsVoiceUser](https://technet.microsoft.com/en-us/library/Gg413013(v=OCS.15))
+    [Test-CsVoiceUser](https://technet.microsoft.com/library/Gg413013(v=OCS.15))
 
 </div>
 
@@ -105,7 +105,7 @@ I cmdlet seguenti possono essere usati per testare e risolvere i problemi relati
 ## <a name="see-also"></a>Vedere anche
 
 
-[Cmdlet Enterprise Voice in Lync Server 2013](lync-server-2013-enterprise-voice-cmdlets.md)  
+[Cmdlet di VoIP aziendale in Lync Server 2013](lync-server-2013-enterprise-voice-cmdlets.md)  
 
 
 [Blog di PowerShell per Lync Server](http://go.microsoft.com/fwlink/p/?linkid=203150)  

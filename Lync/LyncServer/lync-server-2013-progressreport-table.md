@@ -12,16 +12,16 @@ ms:contentKeyID: 48183847
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2e1cb7c8e764097af96981220ee74d481b379341
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1aae907981e04d8966bb7eac4229232056d1004e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724816"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049648"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41724816"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-28_
+_**Ultimo argomento modificato:** 2012-09-28_
 
-I report sullo stato di avanzamento si basano sui dati caricati dal client nel database dopo il completamento di una chiamata o di una sessione. I report sullo stato di avanzamento verranno scritti solo per le chiamate e le sessioni che Lync Server 2013 determina può essere utile per scopi diagnostici.
+I rapporti sullo stato sono basati sui dati caricati dal client nel database al termine di una chiamata o di una sessione. Tali rapporti sullo stato verranno scritti solo per le chiamate e le sessioni ritenute utili da Lync Server 2013 a fini diagnostici.
 
-I campi ErrorTime, ErrorReportSeq e ProgressReportSeq non si riferiscono necessariamente agli errori, ma ai messaggi che indicano lo stato delle chiamate o dei messaggi.
+I campi ErrorTime, ErrorReportSeq e ProgressReportSeq non fanno riferimento necessariamente a errori, bensì a messaggi in cui viene indicato lo stato delle chiamate o dei messaggi.
 
 
 <table>
@@ -60,67 +60,67 @@ I campi ErrorTime, ErrorReportSeq e ProgressReportSeq non si riferiscono necessa
 <tbody>
 <tr class="odd">
 <td><p><strong>ErrorTime</strong></p></td>
-<td><p>DateTime</p></td>
-<td><p>Primaria, straniera</p></td>
-<td><p>Data e ora del report sugli errori di stato che contiene il report sullo stato di avanzamento. Per altre informazioni, vedere la <a href="lync-server-2013-errorreport-table.md">Tabella ErrorReport in Lync Server 2013</a> .</p></td>
+<td><p>datetime</p></td>
+<td><p>Primaria, esterna</p></td>
+<td><p>Data e ora della segnalazione degli errori di stato inclusa nel rapporto sullo stato. Per ulteriori informazioni, vedere la <a href="lync-server-2013-errorreport-table.md">Tabella ErrorReport in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ErrorId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Primaria, straniera</p></td>
-<td><p>Numero ID usato in combinazione con ErrorTime, ProgressReportSeq per identificare in modo univoco un report di stato. Per altre informazioni, vedere la <a href="lync-server-2013-errorreport-table.md">Tabella ErrorReport in Lync Server 2013</a> .</p></td>
+<td><p>Primaria, esterna</p></td>
+<td><p>Numero ID utilizzato insieme a ErrorTime e ProgressReportSeq per identificare in modo univoco un rapporto sullo stato. Per ulteriori informazioni, vedere la <a href="lync-server-2013-errorreport-table.md">Tabella ErrorReport in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ErrorReportSeq</strong></p></td>
 <td><p>int</p></td>
-<td><p>Primaria, straniera</p></td>
-<td><p>Numero ID che identifica il report degli errori. ErrorReporSeq viene usato in combinazione con ErrorTime per identificare in modo univoco una segnalazione di errori. Per altre informazioni, vedere la <a href="lync-server-2013-errorreport-table.md">Tabella ErrorReport in Lync Server 2013</a> .</p>
+<td><p>Primaria/o, esterna/o</p></td>
+<td><p>Numero ID che identifica la segnalazione errori. ErrorReporSeq viene utilizzato insieme a ErrorTime per identificare in modo univoco un rapporto di errore. Per ulteriori informazioni, vedere la <a href="lync-server-2013-errorreport-table.md">Tabella ErrorReport in Lync Server 2013</a></p>
 <p>Questo campo è stato introdotto in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ProgressReportSeq</strong></p></td>
 <td><p>int</p></td>
 <td><p>Principale</p></td>
-<td><p>Numero ID per identificare il rapporto di stato. Usato in combinazione con ErrorTime e ErrorReportSeq per identificare in modo univoco un report di stato.</p></td>
+<td><p>Numero ID per identificare il rapporto sullo stato. Utilizzato insieme a ErrorTime ed ErrorReportSeq per identificare in modo univoco un rapporto sullo stato.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MsDiagId</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>ID di diagnostica del report sullo stato di avanzamento.</p>
+<td><p>ID diagnostica del rapporto sullo stato.</p>
 <p>Questo campo è stato introdotto in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SourceId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Server che ha inviato il report degli errori (se il report è stato inviato da un componente server). Per altre informazioni, vedere la <a href="lync-server-2013-servers-table.md">tabella server in Lync server 2013</a> . Questo campo è stato introdotto in Microsoft Lync Server 2013.</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Server che ha inviato la segnalazione errori (se il rapporto è stato inviato da un componente server). Per ulteriori informazioni, vedere la <a href="lync-server-2013-servers-table.md">tabella Servers in Lync server 2013</a> . Questo campo è stato introdotto in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ApplicationId</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Processo del server Lync in cui si trova il report. Per altre informazioni, vedere la tabella delle applicazioni.</p></td>
+<td><p>Processo di Lync Server a cui fa riferimento il rapporto. Per ulteriori informazioni, vedere la tabella Application.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Dettaglio</strong></p></td>
-<td><p>image</p></td>
+<td><p><strong>Dettagli</strong></p></td>
+<td><p>immagine</p></td>
 <td></td>
-<td><p>Dettagli del report sullo stato di avanzamento, archiviati in formato binario per risparmiare spazio. Questi dati possono essere convertiti in formato testo usando la sintassi seguente:</p>
-<p>Cast (cast (dettaglio come varbinary (max)) come varchar (max))</p></td>
+<td><p>Dettagli del rapporto sullo stato archiviati in formato binario per non occupare troppo spazio. I dati possono essere convertiti in formato testo utilizzando la sintassi seguente:</p>
+<p>cast(cast(Detail as varbinary(max)) as varchar(max))</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>TelemetryId</strong></p></td>
 <td><p>uniqueIdentifier</p></td>
 <td></td>
-<td><p>Identificatore univoco che correla le informazioni sull'ora di join per i diversi componenti coinvolti in una conferenza.</p>
+<td><p>Identificatore univoco che correla informazioni relative al tempo di partecipazione per i diversi componenti coinvolti in una conferenza.</p>
 <p>Questo campo è stato introdotto in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SessionSetupTime</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Ora (in millisecondi) per un componente specifico per partecipare a una conferenza.</p>
+<td><p>Tempo (in millisecondi) necessario per un componente specifico per partecipare a una conferenza.</p>
 <p>Questo campo è stato introdotto in Microsoft Lync Server 2013.</p></td>
 </tr>
 </tbody>

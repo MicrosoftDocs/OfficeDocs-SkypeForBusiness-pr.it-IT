@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella Server'
+title: 'Lync Server 2013: tabella server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184890
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c1d0cdb5733e6fc6e21d1dcda1fff6214332de6b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b1a400387d88637fc45bcd3342ebbadb2bec6edf
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732416"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049118"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="server-table-in-lync-server-2013"></a>Tabella Server in Lync Server 2013
+# <a name="server-table-in-lync-server-2013"></a>Tabella server in Lync Server 2013
 
 </div>
 
@@ -35,7 +35,7 @@ ms.locfileid: "41732416"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-02_
+_**Ultimo argomento modificato:** 2012-10-02_
 
 La tabella server è una tabella di supporto. Ogni record rappresenta un server.
 
@@ -71,7 +71,7 @@ La tabella server è una tabella di supporto. Ogni record rappresenta un server.
 <tr class="odd">
 <td><p><strong>ServerType</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
+<td><p>Stranieri</p></td>
 <td><p>1: Mediation Server</p>
 <p>2: a/V Conferencing Server16394: A/V Edge service32769: gateway</p></td>
 </tr>
@@ -83,7 +83,7 @@ La tabella server è una tabella di supporto. Ogni record rappresenta un server.
 </tr>
 <tr class="odd">
 <td><p><strong>NextUpdateTS</strong></p></td>
-<td><p>DateTime</p></td>
+<td><p>datetime</p></td>
 <td></td>
 <td><p>Solo per uso interno.</p></td>
 </tr>

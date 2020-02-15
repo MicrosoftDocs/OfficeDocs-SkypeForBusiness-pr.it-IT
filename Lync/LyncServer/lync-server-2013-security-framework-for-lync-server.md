@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Security Framework per Lync Server'
+title: 'Lync Server 2013: Framework di sicurezza per Lync Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 59893866
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1a2b58d34c1ed1f899e0daac8c1bb0132b1a22d7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9910b4c481ea474425cae51d7fac88a217d52e1d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764904"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048877"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,35 +35,35 @@ ms.locfileid: "41764904"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-11-08_
+_**Ultimo argomento modificato:** 2013-11-08_
 
-Questa sezione offre una panoramica degli elementi fondamentali che costituiscono il Framework di sicurezza per Microsoft Lync Server 2013. È essenziale comprendere il modo in cui questi elementi collaborano per prendere decisioni informate sulla protezione della specifica distribuzione di Lync Server 2013.
+In questa sezione viene fornita una panoramica degli elementi fondamentali che formano il Framework di sicurezza per Microsoft Lync Server 2013. Comprendere il modo in cui questi elementi interagiscono è essenziale per prendere decisioni informate sulla protezione di una specifica distribuzione di Lync Server 2013.
 
-Questi elementi sono i seguenti:
+Gli elementi sono i seguenti:
 
-  - Active Directory Domain Services (AD DS) offre un unico repository back-end attendibile per gli account utente e le risorse di rete.
+  - Servizi di dominio Active Directory (AD-DS) fornisce un singolo archivio back-end attendibile per gli account utente e le risorse di rete.
 
-  - Controllo di accesso basato sui ruoli (RBAC) consente di delegare le attività amministrative mantenendo standard elevati per la sicurezza.
+  - Il controllo di accesso basato sui ruoli (RBAC) consente di delegare le attività amministrative mantenendo standard elevati per la sicurezza.
 
-  - Infrastruttura a chiave pubblica (PKI) USA i certificati emessi da autorità di certificazione (CAs) attendibili per autenticare i server e garantire l'integrità dei dati.
+  - L'infrastruttura a chiave pubblica (PKI) utilizza i certificati emessi da autorità di certificazione (CAs) attendibili per autenticare i server e garantire l'integrità dei dati.
 
-  - Transport Layer Security (TLS), HTTPS su SSL (HTTPS) e TLS reciproche (MTLS) abilitano l'autenticazione dell'endpoint e la crittografia della messaggistica istantanea (IM). I flussi audio, video e di condivisione delle applicazioni Point-to-Point vengono crittografati usando il protocollo SRTP (Secure Real-Time Transport Protocol).
+  - Transport Layer Security (TLS), HTTPS su SSL (HTTPS) e Mutual TLS (MTLS) consentono l'autenticazione degli endpoint e la crittografia della messaggistica istantanea. I flussi di condivisione di audio, video e applicazioni punto a punto sono crittografati mediante Secure Real-Time Transport Protocol (SRTP).
 
-  - Protocolli standard del settore per l'autenticazione dell'utente, ove possibile.
+  - Protocolli standard di settore per l'autenticazione degli utenti, laddove possibile.
 
-  - Windows PowerShell offre funzionalità di sicurezza abilitate per impostazione predefinita in modo che gli utenti non possano eseguire facilmente o inconsapevolmente gli script.
+  - Windows PowerShell fornisce funzionalità di sicurezza abilitate per impostazione predefinita, in modo che gli utenti non possano eseguire facilmente o involontariamente script.
 
-Questi elementi di sicurezza fondamentali collaborano per definire gli utenti, i server, le connessioni e le operazioni attendibili per garantire una base sicura per Lync Server 2013.
+Questi elementi di sicurezza fondamentali interagiscono per definire utenti, server, connessioni e operazioni attendibili per garantire una base sicura per Lync Server 2013.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
 Negli argomenti di questa sezione viene descritto il funzionamento di ognuno di questi elementi fondamentali per migliorare la sicurezza dell'infrastruttura di Lync Server.
 
   - [Servizi di dominio Active Directory per Lync Server 2013](lync-server-2013-active-directory-domain-services-for-lync-server.md)
 
-  - [Controllo di accesso basato sui ruoli (RBAC) per Lync Server 2013](lync-server-2013-role-based-access-control-rbac.md)
+  - [Controllo dell'accesso basato sui ruoli (RBAC) per Lync Server 2013](lync-server-2013-role-based-access-control-rbac.md)
 
   - [Infrastruttura a chiave pubblica per Lync Server 2013](lync-server-2013-public-key-infrastructure.md)
 

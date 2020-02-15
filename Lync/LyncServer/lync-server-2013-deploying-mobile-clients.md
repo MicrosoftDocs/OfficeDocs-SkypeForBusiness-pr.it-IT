@@ -12,16 +12,16 @@ ms:contentKeyID: 48185854
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8b4b3d0e47172af35464cbd95e56a762f3d590fa
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4cd27963546b45425d6ddd134ce716b475f3dd1b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757630"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050608"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,20 +35,20 @@ ms.locfileid: "41757630"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-19_
+_**Ultimo argomento modificato:** 2013-02-19_
 
-Le app Lync 2013 per i client mobili includono la messaggistica istantanea, la presenza avanzata e la telefonia per gli utenti dell'organizzazione che si connettono da uno smartphone o da un telefono che esegue un'edizione professionale di Windows Mobile. È possibile indicare agli utenti di installare Lync 2013 indirizzando l'app Marketplace per il proprio cellulare.
+Le app Lync 2013 per i client mobili offrono la messaggistica istantanea, la presenza avanzata e la telefonia per gli utenti dell'organizzazione che si connettono da uno smartphone o da un telefono che esegue un'edizione professionale di Windows Mobile. È possibile indicare agli utenti di installare Lync 2013 indirizzando il sistema all'app Marketplace per il cellulare.
 
 <div>
 
 
 > [!NOTE]  
-> Lync Server 2013 supporta anche Lync 2010 per i client mobili. Per informazioni dettagliate, vedere gli articoli seguenti nella raccolta di Lync Server 2010 TechNet: 
+> Lync Server 2013 supporta anche Lync 2010 per i client mobili. Per informazioni dettagliate, vedere gli articoli seguenti nella libreria TechNet di Lync Server 2010: 
 > <UL>
 > <LI>
-> <P>"Pianificazione per i client mobili" <A href="http://go.microsoft.com/fwlink/p/?linkid=235955">http://go.microsoft.com/fwlink/p/?LinkID=235955</A>.</P>
+> <P>"Pianificazione per i client mobili" <A href="http://go.microsoft.com/fwlink/p/?linkid=235955">http://go.microsoft.com/fwlink/p/?LinkID=235955</A>all'indirizzo.</P>
 > <LI>
-> <P>"Distribuzione di <A href="http://go.microsoft.com/fwlink/p/?linkid=236068">http://go.microsoft.com/fwlink/p/?LinkID=236068</A>client mobili".</P></LI></UL>
+> <P>"Distribuzione di client mobili" <A href="http://go.microsoft.com/fwlink/p/?linkid=236068">http://go.microsoft.com/fwlink/p/?LinkID=236068</A>all'indirizzo.</P></LI></UL>
 
 
 
@@ -56,7 +56,7 @@ Le app Lync 2013 per i client mobili includono la messaggistica istantanea, la p
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Distribuzione di Lync per Windows Phone in Lync Server 2013](lync-server-2013-deploying-lync-for-windows-phone.md)
 

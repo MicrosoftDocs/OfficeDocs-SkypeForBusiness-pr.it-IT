@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: gestire riunioni di grandi dimensioni'
+title: 'Lync Server 2013: gestione di riunioni di grandi dimensioni'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185146
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: eb8a83edc6dc049d5c333a2c1b4bec19f60afd45
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 451bc37811f0c591ad067bf57432ac70fec7edb2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729266"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043108"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41729266"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-Dopo aver configurato un pool dedicato per conferenze di grandi dimensioni, è possibile eseguire le operazioni necessarie per garantire che le riunioni di grandi dimensioni ospitate nel pool offrano la migliore esperienza utente. Gli argomenti in questa sezione includono informazioni dettagliate su come organizzare e gestire riunioni di grandi dimensioni.
+Dopo aver impostato un pool dedicato per le conferenze di grandi dimensioni, è possibile eseguire alcune operazioni per garantire un'esperienza utente ottimale per le riunioni di queste dimensioni ospitate nel pool. Negli argomenti di questa sezione viene illustrato come organizzare e gestire le riunioni di grandi dimensioni.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Organizzatori di riunioni dedicati in Lync Server 2013](lync-server-2013-dedicated-meeting-organizers.md)
 
-  - [Separare il calendario di grandi riunioni in Lync Server 2013](lync-server-2013-separate-large-meeting-calendar.md)
+  - [Calendario di riunioni di grandi dimensioni separato in Lync Server 2013](lync-server-2013-separate-large-meeting-calendar.md)
 
   - [Processo di pianificazione delle riunioni di grandi dimensioni in Lync Server 2013](lync-server-2013-large-meeting-scheduling-process.md)
 
-  - [Dettagli della pianificazione per le riunioni in Lync Server 2013](lync-server-2013-scheduling-details-for-meetings.md)
+  - [Dettagli sulla pianificazione delle riunioni in Lync Server 2013](lync-server-2013-scheduling-details-for-meetings.md)
 
-  - [Eseguire riunioni di grandi dimensioni in Lync Server 2013](lync-server-2013-running-large-meetings.md)
+  - [Esecuzione di riunioni di grandi dimensioni in Lync Server 2013](lync-server-2013-running-large-meetings.md)
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: chiamata presentazione ID'
+title: 'Lync Server 2013: presentazione ID denominata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733826
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8dc22438a688239618fc7a73cf3aa30ec614568d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 84bddaba994d5e0907200902deb8c818cca4199c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742946"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044248"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="called-id-presentation-in-lync-server-2013"></a>Presentazione ID chiamata in Lync Server 2013
+# <a name="called-id-presentation-in-lync-server-2013"></a>Presentazione ID denominata in Lync Server 2013
 
 </div>
 
@@ -35,31 +35,31 @@ ms.locfileid: "41742946"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-Con Lync Server 2010, il numero di telefono della festa chiamata (ovvero il numero di telefono chiamato) può essere tradotto dal formato E. 164 al formato di chiamata locale richiesto dal peer trunk, ovvero il gateway associato, il PBX (Private Branch Exchange) o il trunk SIP. A tale scopo, è necessario definire una o più regole di traduzione per tradurre l'URI della richiesta prima di instradarlo al peer trunk.
+Con Lync Server 2010, il numero di telefono della parte chiamata, ovvero il numero di telefono chiamato, può essere convertito dal formato E. 164 al formato di composizione locale richiesto dal peer trunk, ovvero il gateway associato, il PBX (Private Branch Exchange) o il trunk SIP. A tale scopo, è necessario definire una o più regole per la conversione dell'URI di richiesta prima del routing al peer trunk.
 
 <div>
 
 
 > [!IMPORTANT]  
-> La possibilità di associare una o più regole di traduzione a una configurazione trunk VoIP aziendale è destinata a essere usata come <EM>alternativa</EM> alla configurazione delle regole di traduzione nel trunk peer. Non associare regole di traduzione a una configurazione trunk VoIP aziendale se sono state configurate regole di traduzione nel peer trunk perché le due regole potrebbero essere in conflitto.
+> La possibilità di associare una o più regole di conversione a una configurazione trunk VoIP aziendale è destinata a essere utilizzata come <EM>alternativa</EM> alla configurazione delle regole di conversione nel peer trunk. Non associare regole di conversione a una configurazione trunk VoIP aziendale se sono state configurate regole di conversione nel peer trunk perché le due regole potrebbero essere in conflitto.
 
 
 
 </div>
 
-Puoi usare uno dei metodi seguenti per creare o modificare una regola di traduzione:
+È possibile utilizzare uno dei metodi seguenti per creare e modificare una regola di conversione:
 
-  - Usare lo strumento **Costruisci una regola di traduzione** per specificare i valori per le cifre iniziali, la lunghezza, le cifre da rimuovere e le cifre da aggiungere e quindi consentire al pannello di controllo di Lync Server di generare automaticamente il modello corrispondente e la regola di traduzione.
+  - Utilizzare lo strumento **Crea regola di conversione** per specificare i valori per le cifre iniziali, la lunghezza, le cifre da rimuovere e le cifre da aggiungere, quindi lasciare che il pannello di controllo di Lync Server generi il corrispondente modello e la regola di conversione corrispondenti.
 
-  - Scrivere manualmente le espressioni regolari per definire il modello e la regola di traduzione corrispondenti.
+  - Scrivere manualmente espressioni regolari per definire il formato di corrispondenza e la regola di conversione.
 
 <div>
 
 
 > [!NOTE]  
-> Per informazioni su come scrivere espressioni regolari, vedere "espressioni regolari di .NET Framework" <A href="http://go.microsoft.com/fwlink/p/?linkid=140927">http://go.microsoft.com/fwlink/p/?linkId=140927</A>.
+> Per informazioni su come scrivere espressioni regolari, vedere la sezione relativa alle espressioni regolari di .NET <A href="http://go.microsoft.com/fwlink/p/?linkid=140927">http://go.microsoft.com/fwlink/p/?linkId=140927</A>Framework all'indirizzo.
 
 
 
@@ -67,11 +67,11 @@ Puoi usare uno dei metodi seguenti per creare o modificare una regola di traduzi
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Creare o modificare una regola di traduzione usando lo strumento crea una regola di traduzione in Lync Server 2013](lync-server-2013-create-or-modify-a-translation-rule-by-using-the-build-a-translation-rule-tool.md)
+  - [Creare o modificare una regola di conversione utilizzando lo strumento Crea regola di conversione in Lync Server 2013](lync-server-2013-create-or-modify-a-translation-rule-by-using-the-build-a-translation-rule-tool.md)
 
-  - [Creare o modificare manualmente una regola di traduzione in Lync Server 2013](lync-server-2013-create-or-modify-a-translation-rule-manually.md)
+  - [Creare o modificare manualmente una regola di conversione in Lync Server 2013](lync-server-2013-create-or-modify-a-translation-rule-manually.md)
 
 </div>
 

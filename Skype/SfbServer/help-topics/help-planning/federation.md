@@ -15,24 +15,24 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 63ea8a5e-a040-4892-9440-0fdbeef66fc0
-description: I server perimetrali possono essere configurati per consentire agli utenti interni e esterni di accedere ai contatti presso organizzazioni o servizi partner.
-ms.openlocfilehash: d3f2157fd418938c5df888d4fdc1ddb743ac163e
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: I server perimetrali possono essere configurati in modo da consentire agli utenti interni ed esterni di accedere ai contatti in organizzazioni o servizi partner.
+ms.openlocfilehash: a5af6c614e06539bc363982cbd329a40e641fd97
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41821458"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038158"
 ---
 # <a name="federation-planning-tool"></a>Federazione (strumento di pianificazione)
  
-I server perimetrali possono essere configurati per consentire agli utenti interni e esterni di accedere ai contatti presso organizzazioni o servizi partner.
+I server perimetrali possono essere configurati in modo da consentire agli utenti interni ed esterni di accedere ai contatti in organizzazioni o servizi partner.
   
- La Federazione funziona come per Microsoft Lync 2013. Per altre informazioni sulla preparazione dell'ambiente per la Federazione, vedere gli argomenti seguenti:
+ La Federazione funziona come ha fatto per Microsoft Lync 2013. Per ulteriori informazioni sulla preparazione dell'ambiente per la Federazione, vedere i seguenti argomenti:
   
-- [Pianificazione per Lync Server 2013 e Office Communications Server Federation](https://technet.microsoft.com/en-us/library/jj205335%28v=ocs.15%29.aspx)
+- [Planning for Lync Server 2013 e Office Communications Server Federation](https://technet.microsoft.com/library/jj205335%28v=ocs.15%29.aspx)
     
-- [Pianificazione della connettività di messaggistica istantanea pubblica in Lync Server 2013](https://technet.microsoft.com/en-us/library/jj205349%28v=ocs.15%29.aspx)
+- [Pianificazione della connettività per la messaggistica istantanea pubblica in Lync Server 2013](https://technet.microsoft.com/library/jj205349%28v=ocs.15%29.aspx)
     
-- [Pianificazione della Federazione XMPP (Extensible Messaging and Presence Protocol) in Lync Server 2013](https://technet.microsoft.com/en-us/library/jj205107%28v=ocs.15%29.aspx)
+- [Pianificazione della Federazione XMPP (Extensible Messaging and Presence Protocol) in Lync Server 2013](https://technet.microsoft.com/library/jj205107%28v=ocs.15%29.aspx)
     
 

@@ -12,16 +12,16 @@ ms:contentKeyID: 49105656
 ms.date: 03/09/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c927836377a0c7c14054073a9cf17ce638662450
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 90b7b6f9639a43a1eb16623fe0ea174b6e932ab5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757570"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042767"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,29 +35,29 @@ ms.locfileid: "41757570"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2017-03-09_
+_**Ultimo argomento modificato:** 2017-03-09_
 
-I record DNS (Domain Name System) necessari per la definizione di una federazione con Office Communications Server o i partner di Lync Server sono determinati dalla decisione di consentire l'individuazione automatica di DNS del dominio da parte di altri partner prospettici. Se pubblichi il \_sipfederationtls. \_TCP. * \<Nome\> di dominio SIP* Record SRV, qualsiasi altro dominio federato SIP sarà in grado di "individuare" la Federazione. È possibile controllare quali domini federati possono comunicare con l'utente usando le impostazioni consente domini e domini bloccati nel pannello di controllo di Lync Server o impostando la configurazione dei domini consentiti o bloccati tramite Lync Server Management Shell e i cmdlet di PowerShell **Get**, **set**, **New**, **Remove-CsAllowedDomain** e **-CsBlockedDomain** . Per altre informazioni su come configurare le impostazioni di tesi e l'uso dei cmdlet di PowerShell, vedere **argomenti correlati** alla fine di questo argomento.
+I record DNS (Domain Name System) necessari per la definizione di una federazione con Office Communications Server o Lync Server Partners sono determinati dalla decisione di consentire all'individuazione automatica dei DNS del dominio da parte di altri partner prospettici. Se si pubblica il \_sipfederationtls. \_TCP. * \<Nome\> di dominio SIP* Record SRV, qualsiasi altro dominio federato SIP sarà in grado di "individuare" la Federazione. È possibile controllare i domini federati in grado di comunicare con l'utente utilizzando le impostazioni Consenti domini e domini bloccati nel pannello di controllo di Lync Server o impostando la configurazione dei domini consentiti o bloccati utilizzando Lync Server Management Shell e i cmdlet **Get**, **set**, **New**, **Remove-CsAllowedDomain** e **-CsBlockedDomain** PowerShell. Per ulteriori informazioni su come configurare queste impostazioni e l'utilizzo dei cmdlet di PowerShell, vedere **argomenti correlati** alla fine di questo argomento.
 
-La tabella di riepilogo DNS Records descrive le voci necessarie per una federazione aperta o individuabile. Se non si vuole implementare l'individuazione della \_Federazione, è possibile decidere di non configurare sipfederationtls. \_TCP. Record del *nome\> di dominio SIP. \<*
+La tabella di riepilogo dei record DNS indica le voci obbligatorie per una federazione aperta o individuabile. Se non si desidera implementare l'individuazione della Federazione, è possibile decidere di non configurare il \_sipfederationtls. \_TCP. Record del *nome\> di dominio SIP. \<*
 
 <div>
 
 
 > [!IMPORTANT]
-> Esistono scenari specifici in cui è necessario avere la _sipfederationtls. _tcp. <EM> &lt;Nome&gt; di dominio SIP</EM> Record SRV, ma non si vuole avere una Federazione individuabile. Una di queste istanze è la posizione in cui è stata distribuita la mobilità per gli utenti. Il dispositivo di compensazione delle notifiche push (centro PNCH) è un tipo speciale di Federazione usato per i client di Microsoft Lync Mobile su Apple iPhone o iPad usando il client mobile Lync 2010 o Windows Phone usando i client mobili Lync 2010 mobile o Lync 2013. Il _sipfederationtls. _tcp. <EM> &lt;Nome&gt; di dominio SIP</EM> Il record SRV viene usato in caso di mobilità e notifica push. Per attenuare il problema e controllare la propria individuabilità, deselezionare l'opzione <STRONG>Abilita individuazione dominio partner</STRONG> per disattivare l'individuazione.
+> Esistono scenari specifici in cui è necessario disporre del _sipfederationtls. _tcp. <EM> &lt;Nome&gt; di dominio SIP</EM> Record SRV, ma non si desidera disporre di una Federazione individuabile. Un'istanza di questo tipo è la posizione in cui è stata distribuita la mobilità per gli utenti. La funzionalità di compensazione delle notifiche push per dispositivi mobili (centro PNCH) è un tipo speciale di Federazione utilizzato per i client Microsoft Lync Mobile su Apple iPhone o iPad utilizzando il client Lync 2010 mobile o Windows Phone utilizzando i client mobili Lync 2010 mobile o Lync 2013. Il _sipfederationtls. _tcp. <EM> &lt;Nome&gt; di dominio SIP</EM> Il record SRV viene utilizzato in caso di mobilità e di notifica push. Per attenuare il problema e controllare la propria individuabilità, annullare l'impostazione <STRONG>Abilita individuazione dominio partner</STRONG> per disattivare l'individuazione.
 
 
 
 </div>
 
-Per configurare il protocollo XMPP (Extensible Messaging and Presence Protocol) per la distribuzione, è possibile creare due record DNS (Domain Name System) in un server DNS esterno che risolverà i record nel servizio Edge di Access del server perimetrale o del pool di Edge.
+Per configurare il protocollo XMPP (Extensible Messaging and Presence Protocol) per la distribuzione, è necessario creare due record DNS (Domain Name System) in un server DNS esterno che consente di risolvere i record per il servizio Access Edge del server perimetrale o del pool di Edge.
 
-Quando si configura Domain Name System (DNS) per la connettività di messaggistica istantanea pubblica, si verificherà che la configurazione che supporta gli utenti esterni supporta la connettività di messaggistica istantanea pubblica. Se è già stato configurato il server perimetrale o il pool di Edge, è necessario disporre dei record DNS necessari per supportare la connettività di messaggistica istantanea pubblica.
+Quando si configura il DNS (Domain Name System) per la connettività di messaggistica istantanea pubblica, si noterà che la configurazione che supporta gli utenti esterni supporterà la connettività per la messaggistica istantanea pubblica. Se è già stato configurato un server perimetrale o un pool di Edge, è necessario disporre dei record DNS necessari per supportare la connettività per la messaggistica istantanea pubblica.
 
 <div>
 
-## <a name="dns-summary---sip-federation-including-public-instant-messaging-connectivity"></a>Riepilogo DNS-federazione SIP inclusa la connettività di messaggistica istantanea pubblica
+## <a name="dns-summary---sip-federation-including-public-instant-messaging-connectivity"></a>Riepilogo DNS-federazione SIP inclusa la connettività per la messaggistica istantanea pubblica
 
 
 <table>
@@ -71,8 +71,8 @@ Quando si configura Domain Name System (DNS) per la connettività di messaggisti
 <tr class="header">
 <th>Posizione/tipo/porta</th>
 <th>FQDN</th>
-<th>Indirizzo IP/record host FQDN</th>
-<th>Mapping a/commenti</th>
+<th>Indirizzo IP/FQDN record host</th>
+<th>Mapping a/Commenti</th>
 </tr>
 </thead>
 <tbody>
@@ -80,12 +80,12 @@ Quando si configura Domain Name System (DNS) per la connettività di messaggisti
 <td><p>DNS esterno/SRV/5061</p></td>
 <td><p>_sipfederationtls. _tcp. contoso. com</p></td>
 <td><p>sip.contoso.com</p></td>
-<td><p>Interfaccia esterna di Access Edge service necessaria per l'individuazione automatica del DNS della Federazione ad altri potenziali partner federativi ed è nota come "domini SIP consentiti" (chiamata federazione avanzata nelle versioni precedenti). Ripetere la procedura necessaria per tutti i domini SIP con gli utenti abilitati a Lync</p>
+<td><p>Interfaccia esterna del servizio Access Edge necessario per l'individuazione automatica dei DNS della Federazione verso altri potenziali partner di federazione ed è nota come "domini SIP consentiti" (chiamata federazione avanzata nelle versioni precedenti). Ripetere il necessario per tutti i domini SIP con gli utenti abilitati per Lync</p>
 
 
 
 > [!IMPORTANT]
-> Questo record SRV è necessario per la mobilità e la camera di compensazione delle notifiche push. Nei casi in cui è presente più di un dominio SIP, creare e pubblicare un record SRV per ogni dominio che avrà client di Lync mobile. Il servizio di notifica push e il servizio di notifica push Apple potrebbero non funzionare come previsto se non è presente un record SRV esplicito per ogni dominio SIP supportato dalla distribuzione.
+> Questo record SRV è necessario per la mobilità e PNCH. Nei casi in cui esiste più di un dominio SIP, creare e pubblicare un record SRV per ogni dominio che avrà client mobili di Lync. Il servizio di notifica push e il servizio di notifica push di Apple potrebbero non funzionare come previsto se non è presente un record SRV esplicito per ogni dominio SIP supportato dalla distribuzione.
 
 </td>
 </tr>
@@ -111,8 +111,8 @@ Quando si configura Domain Name System (DNS) per la connettività di messaggisti
 <tr class="header">
 <th>Posizione/tipo/porta</th>
 <th>FQDN</th>
-<th>Indirizzo IP/record host FQDN</th>
-<th>Mapping a/commenti</th>
+<th>Indirizzo IP/FQDN record host</th>
+<th>Mapping a/Commenti</th>
 </tr>
 </thead>
 <tbody>
@@ -120,13 +120,13 @@ Quando si configura Domain Name System (DNS) per la connettività di messaggisti
 <td><p>DNS esterno/SRV/5269</p></td>
 <td><p>_xmpp-server. _tcp. contoso. com</p></td>
 <td><p>xmpp.contoso.com</p></td>
-<td><p>Interfaccia esterna proxy XMPP nel pool di servizi o Edge di Access. Ripetere l'impostazione necessaria per tutti i domini SIP interni con gli utenti abilitati a Lync in cui è consentito il contatto con i contatti XMPP tramite la configurazione dei criteri di accesso esterno tramite un criterio globale, il criterio del sito in cui si trova l'utente o i criteri degli utenti applicati alla Utenti abilitati per Lync. Un dominio XMPP consentito deve essere configurato anche nei criteri dei partner federati XMPP. Vedere gli argomenti in <strong>vedere anche</strong> per ulteriori dettagli</p></td>
+<td><p>Interfaccia esterna del proxy XMPP nel servizio Access Edge o nel pool di server perimetrali. Ripetere quanto necessario per tutti i domini SIP interni con gli utenti abilitati per Lync, in cui è consentito il contatto con i contatti XMPP tramite la configurazione del criterio di accesso esterno tramite un criterio globale, il criterio del sito in cui si trova l'utente o il criterio utente applicato all' Utente abilitato per Lync. Un dominio XMPP consentito deve inoltre essere configurato nel criterio dei partner XMPP federati. Per informazioni dettagliate, vedere gli argomenti in <strong>Vedere anche</strong></p></td>
 </tr>
 <tr class="even">
 <td><p>DNS esterno/A</p></td>
-<td><p>xmpp.contoso.com (ad esempio)</p></td>
-<td><p>Indirizzo IP del servizio Access Edge nell'Edge Server o nel pool di Edge che ospita il proxy XMPP</p></td>
-<td><p>Punta al servizio di Access Edge o al pool di Edge che ospita il servizio proxy XMPP. In genere, il record SRV creato punterà al record host (A o AAAA)</p></td>
+<td><p>xmpp.contoso.com (esempio)</p></td>
+<td><p>Indirizzo IP del servizio Access Edge nel server perimetrale o nel pool perimetrale che ospita il proxy XMPP</p></td>
+<td><p>Punta al servizio Access Edge o al pool di server perimetrali che ospita il servizio proxy XMPP. Il record SRV creato punterà a questo record host (A o AAAA).</p></td>
 </tr>
 </tbody>
 </table>
@@ -139,13 +139,13 @@ Quando si configura Domain Name System (DNS) per la connettività di messaggisti
 ## <a name="see-also"></a>Vedere anche
 
 
-[Configurazione della federazione di XMPP in Lync Server 2013](lync-server-2013-setting-up-xmpp-federation.md)  
+[Configurazione della Federazione XMPP in Lync Server 2013](lync-server-2013-setting-up-xmpp-federation.md)  
 [Configurazione delle notifiche push in Lync Server 2013](lync-server-2013-configuring-for-push-notifications.md)  
-[Abilitare o disabilitare l'individuazione dei partner della federazione in Lync Server 2013](lync-server-2013-enable-or-disable-discovery-of-federation-partners.md)  
+[Abilitare o disabilitare l'individuazione dei partner federativi in Lync Server 2013](lync-server-2013-enable-or-disable-discovery-of-federation-partners.md)  
 
 
 [Scenari per l'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-scenarios-for-external-user-access.md)  
-[Determinare i requisiti di DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md)  
+[Determinare i requisiti DNS per Lync Server 2013](lync-server-2013-determine-dns-requirements.md)  
 
 
 [Gestire i domini federati SIP per l'organizzazione in Lync Server 2013](lync-server-2013-manage-sip-federated-domains-for-your-organization.md)  

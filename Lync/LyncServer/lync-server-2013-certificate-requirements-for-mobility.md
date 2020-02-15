@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Requisiti dei certificati per i dispositivi mobili'
+title: 'Lync Server 2013: requisiti dei certificati per i dispositivi mobili'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185251
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 680eaf205959b67d8fef93ff56d379ae8cd293bf
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bbf7dd0f3ce9868fbeac5c757fce5371ad77fba4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736776"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038418"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,31 +35,31 @@ ms.locfileid: "41736776"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-24_
+_**Ultimo argomento modificato:** 2012-06-24_
 
-Se si distribuisce la caratteristica mobilità e si supporta l'individuazione automatica per i client mobili, è necessario includere alcune voci alternative per i nomi dei soggetti in certificati per supportare connessioni sicure dai client mobili.
+Se si distribuisce la funzionalità di mobilità e si supporta l'individuazione automatica per i client mobili, è necessario includere determinate voci di nomi alternativi soggetto nei certificati per supportare le connessioni sicure dai client mobili.
 
-È necessario includere voci di nome alternative per l'individuazione automatica nei certificati seguenti:
+È necessario includere voci di nomi alternativi soggetto per l'individuazione automatica nei certificati seguenti:
 
-  - Pool di Director
+  - Pool Director
 
   - Pool Front End
 
   - Proxy inverso
 
-In questa sezione vengono illustrate le voci di nome alternative oggetto necessarie per i certificati per l'individuazione automatica.
+In questa sezione vengono descritte le voci di nomi alternativi soggetto richieste nei certificati per l'individuazione automatica.
 
 <div>
 
 
 > [!NOTE]  
-> La riemissione di certificati tramite un'autorità di certificazione interna è in genere un processo semplice, ma l'aggiunta di più voci di nomi alternativi soggetto ai certificati pubblici usati dal proxy inverso può essere costosa. Se si hanno molti domini SIP, rendendo l'aggiunta di nomi alternativi oggetto molto costosi, è possibile configurare il proxy inverso per l'uso di HTTP per la richiesta di servizio di individuazione automatica iniziale, invece di usare HTTPS (la configurazione predefinita). Per informazioni dettagliate, vedere <A href="lync-server-2013-technical-requirements-for-mobility.md">requisiti tecnici per la mobilità in Lync Server 2013</A>.
+> La riemissione di certificati tramite un'autorità di certificazione interna è in genere un processo semplice, ma l'aggiunta di più voci di nomi alternativi soggetto ai certificati pubblici utilizzati dal proxy inverso può essere un compito oneroso. Se esistono molti domini SIP, nel qual caso l'aggiunta di nomi alternativi soggetto è particolarmente onerosa, è possibile configurare il proxy inverso per l'utilizzo di HTTP per la richiesta iniziale del servizio di individuazione automatica, anziché HTTPS come da configurazione predefinita. Per informazioni dettagliate, vedere <A href="lync-server-2013-technical-requirements-for-mobility.md">requisiti tecnici per i dispositivi mobili in Lync Server 2013</A>.
 
 
 
 </div>
 
-### <a name="director-pool-certificate-requirements"></a>Requisiti dei certificati del pool di Director
+### <a name="director-pool-certificate-requirements"></a>Requisiti relativi ai certificati per il pool di server Director
 
 <table>
 <colgroup>
@@ -69,16 +69,16 @@ In questa sezione vengono illustrate le voci di nome alternative oggetto necessa
 <thead>
 <tr class="header">
 <th>Descrizione</th>
-<th>Voce alternativa nome oggetto</th>
+<th>Voce nome alternativo soggetto</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>URL del servizio di individuazione automatica interno</p></td>
+<td><p>URL interno del servizio di individuazione automatica</p></td>
 <td><p>SAN = LyncdiscoverInternal. &lt;SipDomain&gt;</p></td>
 </tr>
 <tr class="even">
-<td><p>URL del servizio di individuazione automatica esterna</p></td>
+<td><p>URL esterno del servizio di individuazione automatica</p></td>
 <td><p>SAN = lyncdiscover. &lt;SipDomain&gt;</p></td>
 </tr>
 </tbody>
@@ -89,13 +89,13 @@ In questa sezione vengono illustrate le voci di nome alternative oggetto necessa
 
 
 > [!NOTE]  
-> In alternativa, è possibile usare SAN = *. &lt;SipDomain&gt;
+> In alternativa, è possibile utilizzare SAN = *. &lt;SipDomain&gt;
 
 
 
 </div>
 
-### <a name="front-end-pool-certificate-requirements"></a>Requisiti del certificato del pool Front-End
+### <a name="front-end-pool-certificate-requirements"></a>Requisiti relativi ai certificati per il pool Front End
 
 <table>
 <colgroup>
@@ -105,16 +105,16 @@ In questa sezione vengono illustrate le voci di nome alternative oggetto necessa
 <thead>
 <tr class="header">
 <th>Descrizione</th>
-<th>Voce alternativa nome oggetto</th>
+<th>Voce nome alternativo soggetto</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>URL del servizio di individuazione automatica interno</p></td>
+<td><p>URL interno del servizio di individuazione automatica</p></td>
 <td><p>SAN = LyncdiscoverInternal. &lt;SipDomain&gt;</p></td>
 </tr>
 <tr class="even">
-<td><p>URL del servizio di individuazione automatica esterna</p></td>
+<td><p>URL esterno del servizio di individuazione automatica</p></td>
 <td><p>SAN = lyncdiscover. &lt;SipDomain&gt;</p></td>
 </tr>
 </tbody>
@@ -125,13 +125,13 @@ In questa sezione vengono illustrate le voci di nome alternative oggetto necessa
 
 
 > [!NOTE]  
-> In alternativa, è possibile usare SAN = *. &lt;SipDomain&gt;
+> In alternativa, è possibile utilizzare SAN = *. &lt;SipDomain&gt;
 
 
 
 </div>
 
-### <a name="reverse-proxy-public-ca-certificate-requirements"></a>Requisiti dei certificati reverse proxy (public CA)
+### <a name="reverse-proxy-public-ca-certificate-requirements"></a>Requisiti relativi ai certificati del proxy inverso (CA pubblica)
 
 <table>
 <colgroup>
@@ -141,12 +141,12 @@ In questa sezione vengono illustrate le voci di nome alternative oggetto necessa
 <thead>
 <tr class="header">
 <th>Descrizione</th>
-<th>Voce alternativa nome oggetto</th>
+<th>Voce nome alternativo soggetto</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>URL del servizio di individuazione automatica esterna</p></td>
+<td><p>URL esterno del servizio di individuazione automatica</p></td>
 <td><p>SAN = lyncdiscover. &lt;SipDomain&gt;</p></td>
 </tr>
 </tbody>
@@ -157,7 +157,7 @@ In questa sezione vengono illustrate le voci di nome alternative oggetto necessa
 
 
 > [!NOTE]  
-> Questa SAN viene assegnata al certificato assegnato al listener SSL nel proxy inverso.
+> Questo nome alternativo del soggetto viene assegnato al certificato assegnato al listener SSL nel proxy inverso.
 
 
 
@@ -167,7 +167,7 @@ In questa sezione vengono illustrate le voci di nome alternative oggetto necessa
 
 
 > [!NOTE]  
-> Il listener del proxy inverso avrà nomi alternativi soggetti per gli URL dei servizi Web esterni, ad esempio SAN = lyncwebextpool01. contoso. com e dirwebexternal.contoso.com, se è stato distribuito il Director facoltativo.
+> Il listener del proxy inverso avrà nomi alternativi del soggetto per gli URL dei servizi Web esterni (ad esempio, SAN = lyncwebextpool01. contoso. com e dirwebexternal.contoso.com se è stato distribuito il server Director facoltativo).
 
 
 

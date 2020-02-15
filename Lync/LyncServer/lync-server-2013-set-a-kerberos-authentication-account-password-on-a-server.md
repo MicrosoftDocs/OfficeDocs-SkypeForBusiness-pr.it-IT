@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Impostare la password di un account di autenticazione Kerberos in un server'
+title: "Lync Server 2013: impostare una password dell'account di autenticazione Kerberos in un server"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184787
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 97130b93052c0e14e1e4b4863be8ceea6118db05
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9799be0fda2b1a3c5b7765774b1f9e3199cc61f3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764702"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051660"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="set-a-kerberos-authentication-account-password-on-a-server-in-lync-server-2013"></a>Impostare la password di un account di autenticazione Kerberos in un server in Lync Server 2013
+# <a name="set-a-kerberos-authentication-account-password-on-a-server-in-lync-server-2013"></a>Impostare la password di un account di autenticazione Kerberos in un server di Lync Server 2013
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41764702"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-01-16_
+_**Ultimo argomento modificato:** 2012-01-16_
 
-Per completare correttamente questa procedura, è necessario avere effettuato l'accesso come utente membro del gruppo RTCUniversalServerAdmins.
+Per eseguire correttamente questa procedura è necessario accedere come utente membro del gruppo RTCUniversalServerAdmins.
 
-È necessario configurare una password nell'account Kerberos per ogni sito che dispone di server front-end, server Standard Edition e direttori. È possibile configurare la password eseguendo il cmdlet **Set-CsKerberosAccountPassword** di Windows PowerShell in un server del sito, ad esempio un server front-end. Per ogni sito, è necessario eseguire il cmdlet **Set-CsKerberosAccountPassword** . Il cmdlet configura Internet Information Services (IIS) per il servizio servizi Web e quindi imposta la password nell'account del computer in servizi di dominio Active Directory. Un metodo alternativo, in base al parametro usato con il cmdlet, configura IIS su un server durante l'uso di un altro server configurato come origine della password dell'account Kerberos.
+È necessario impostare una password sull'account Kerberos per ogni sito che dispone di Front End Server, server Standard Edition e Director. È possibile impostare la password eseguendo il cmdlet **Set-CsKerberosAccountPassword** di Windows PowerShell in un server del sito, ad esempio un front end server. Per ogni sito, è necessario eseguire il cmdlet **Set-CsKerberosAccountPassword** . Il cmdlet configura Internet Information Services (IIS) per il servizio servizi Web e quindi imposta la password per l'account del computer in servizi di dominio Active Directory. Un metodo alternativo, basato sul parametro utilizzato con il cmdlet, consente di configurare IIS in un unico server utilizzando un altro server configurato come origine per la password dell'account Kerberos.
 
-Quando si usa il cmdlet **Set-CsKerberosAccountPassword** per impostare una password, Kerberos imposta la password su una stringa generata in modo casuale. Questo cmdlet Contatta tutte le istanze di IIS in tutti i siti centrali di Lync Server 2013 a cui è assegnato l'account.
+Quando si usa il cmdlet **Set-CsKerberosAccountPassword** per impostare una password, Kerberos imposta la password su una stringa generata in modo casuale. Questo cmdlet consente di contattare tutte le istanze di IIS in tutti i siti centrali di Lync Server 2013 a cui è assegnato questo account.
 
 <div>
 
 ## <a name="to-set-a-password-for-a-kerberos-authentication-account"></a>Per impostare una password per un account di autenticazione Kerberos
 
-1.  Accedere a qualsiasi computer di dominio con Lync Server Management Shell installato come membro del gruppo RTCUniversalServerAdmins.
+1.  Accedere a qualsiasi computer del dominio in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
 3.  Nella riga di comando eseguire i due comandi seguenti:
     
@@ -63,7 +63,7 @@ Quando si usa il cmdlet **Set-CsKerberosAccountPassword** per impostare una pass
     
 
     > [!NOTE]  
-    > Devi specificare il parametro UserAccount usando il formato dominio\utente. Il formato User@Domain. Extension non è supportato per fare riferimento agli oggetti computer creati per scopi di autenticazione Kerberos.
+    > È necessario specificare il parametro UserAccount nel formato Dominio\Utente. Il formato Utente@Dominio.estensione non è supportato per fare riferimento a oggetti computer creati ai fini dell'autenticazione Kerberos.
 
     
     </div>

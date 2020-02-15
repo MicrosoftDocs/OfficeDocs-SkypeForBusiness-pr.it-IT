@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e3a8d3d41d974e78a708fdf91ee6aac13beb6b7b
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 2f2c5cb45c82696ec5b365dc8e887cbaa9abce13
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825064"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046499"
 ---
 # <a name="cloud-video-interop-for-microsoft-teams"></a>Interoperabilità cloud video per Microsoft Teams
 
@@ -83,7 +83,7 @@ Il partner scelto per la distribuzione CVI fornirà un documento di distribuzion
 
 ### <a name="provision"></a>Disposizione  
 
-Durante la fase di fornitura, le licenze verranno assegnate agli utenti appropriati in base alla guida alla configurazione dei partner. Dovrai anche passare attraverso il processo di consenso di Azure per fornire al partner l'accesso all'ambiente teams. Per altre informazioni sul processo di consenso di Azure è possibile trovare qui:https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent 
+Durante la fase di fornitura, le licenze verranno assegnate agli utenti appropriati in base alla guida alla configurazione dei partner. Dovrai anche passare attraverso il processo di consenso di Azure per fornire al partner l'accesso all'ambiente teams. Per altre informazioni sul processo di consenso di Azure è possibile trovare qui:https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent 
 
 ### <a name="schedule"></a>Pianificare
 

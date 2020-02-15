@@ -12,16 +12,16 @@ ms:contentKeyID: 48185009
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 02dd4f71b3bc9d53fcbd65f4e143fec550c6a528
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4d7fdbbca81ecd0dd42a9b5198f266b9a63d793e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736466"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42043148"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41736466"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Lync Server consente di configurare le chiamate in arrivo ai numeri di telefono validi per l'organizzazione, ma non a un utente o a un telefono. Per configurare la gestione di tali chiamate, è necessario configurare una tabella numeri non assegnati. È possibile usare la tabella per instradare le chiamate a un'applicazione di annuncio o a un server Messaggistica unificata di Exchange.
+Lync Server consente di configurare cosa accade alle chiamate in arrivo ai numeri di telefono validi per l'organizzazione, ma non vengono assegnati a un utente o a un telefono. Per configurare la gestione di tali chiamate, è possibile impostare una tabella dei numeri non assegnati. È possibile utilizzare la tabella per instradare le chiamate a un'applicazione annuncio o a un server Messaggistica unificata di Exchange.
 
 La configurazione della tabella dei numeri non assegnati dipende dall'utilizzo previsto di questa. È possibile configurare la tabella con tutti gli interni validi dell'organizzazione, solo con gli interni non assegnati o con una combinazione di numeri di entrambi i tipi. La tabella dei numeri non assegnati può includere sia numeri assegnati che numeri non assegnati ma viene chiamata solo se un chiamante compone un numero non assegnato. Se nella tabella dei numeri non assegnati si inseriscono tutti gli interni validi, è possibile specificare l'azione da eseguire quando un utente lascia l'organizzazione, senza alcuna necessità di riconfigurare la tabella. Se nella tabella si inseriscono interni non assegnati, è possibile personalizzare l'azione da eseguire per numeri specifici. Se ad esempio si modifica l'interno del servizio di assistenza clienti, è possibile inserire il vecchio numero nella tabella e assegnarlo a un annuncio in cui viene indicato il nuovo numero.
 
@@ -45,7 +45,7 @@ La configurazione della tabella dei numeri non assegnati dipende dall'utilizzo p
 
 
 > [!IMPORTANT]  
-> Prima di configurare la tabella dei numeri non assegnati, è necessario avere già uno o più annunci definiti o un operatore automatico di messaggistica unificata di Exchange configurato. Per informazioni dettagliate sulla creazione di annunci, vedere <A href="lync-server-2013-create-an-announcement.md">creare un annuncio in Lync Server 2013</A>. Per verificare se sono state configurate le impostazioni della messaggistica unificata di Exchange, eseguire il cmdlet <STRONG>Get-CsExUmContact</STRONG> . Per informazioni dettagliate, vedere <A href="https://docs.microsoft.com/powershell/module/skype/Get-CsExUmContact">Get-CsExUmContact</A>.
+> Prima di configurare la tabella dei numeri non assegnati, è necessario che siano già stati definiti uno o più annunci oppure che sia stato configurato un operatore automatico di messaggistica unificata di Exchange. Per informazioni dettagliate sulla creazione di annunci, vedere <A href="lync-server-2013-create-an-announcement.md">creare un annuncio in Lync Server 2013</A>. Per sapere se sono state configurate le impostazioni di messaggistica unificata di Exchange, eseguire il cmdlet <STRONG>Get-CsExUmContact</STRONG> . Per informazioni dettagliate, <A href="https://docs.microsoft.com/powershell/module/skype/Get-CsExUmContact">Get-CsExUmContact</A>.
 
 
 
@@ -53,7 +53,7 @@ La configurazione della tabella dei numeri non assegnati dipende dall'utilizzo p
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Creare o modificare un intervallo di numeri non assegnati in Lync Server 2013](lync-server-2013-create-or-modify-an-unassigned-number-range.md)
 

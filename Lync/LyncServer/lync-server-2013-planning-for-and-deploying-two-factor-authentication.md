@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: pianificare e distribuire l'autenticazione a due fattori"
+title: "Lync Server 2013: pianificazione e distribuzione dell'autenticazione a due fattori"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 54973686
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4a7aa10719a357100ce38da6616ef6c79d6a4a10
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 50238b10bf5667b51d4b3998ee995283ebdb4fc3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755146"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045458"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,19 +35,19 @@ ms.locfileid: "41755146"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-07-11_
+_**Ultimo argomento modificato:** 2013-07-11_
 
-L'autenticazione a due fattori consente di migliorare la sicurezza richiedendo agli utenti di soddisfare due criteri di autenticazione: una combinazione nome utente/password e un token o un certificato. Questo è anche noto come "qualcosa che hai, qualcosa che conosci". Un esempio tipico di autenticazione a due fattori con un certificato è l'uso di smart card. Una smart card contiene un certificato associato all'account utente e può essere convalidato in base alle informazioni sull'utente e sul certificato archiviate in un server. Confrontando le informazioni utente (nome utente e password) con il certificato fornito, il server convalida le credenziali e autentica l'utente.
+L'autenticazione a due fattori garantisce una maggiore sicurezza richiedendo agli utenti di rispettare due criteri di autenticazione: una combinazione di nome utente/password e un token o un certificato. Questo è conosciuto anche come "qualcosa che hai, qualcosa che conosci". Un esempio tipico di autenticazione a due fattori con un certificato è l'utilizzo delle smart card. Una smart card contiene un certificato associato all'account utente e può essere convalidato in base alle informazioni sugli utenti e sui certificati archiviati in un server. Confrontando le informazioni utente (nome utente e password) per il certificato fornito, il server convalida le credenziali e autentica l'utente.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
 [Pianificazione dell'autenticazione a due fattori in Lync Server 2013](lync-server-2013-planning-for-two-factor-authentication.md)
 
 [Configurazione dell'autenticazione a due fattori in Lync Server 2013](lync-server-2013-configuring-two-factor-authentication.md)
 
-[Uso dell'autenticazione a due fattori con Lync client e Lync Server 2013](lync-server-2013-using-two-factor-authentication-with-lync-client.md)
+[Utilizzo dell'autenticazione a due fattori con Lync client e Lync Server 2013](lync-server-2013-using-two-factor-authentication-with-lync-client.md)
 
 </div>
 

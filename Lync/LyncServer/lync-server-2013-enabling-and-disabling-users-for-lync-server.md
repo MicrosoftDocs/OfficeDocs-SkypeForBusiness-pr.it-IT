@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: abilitare e disabilitare gli utenti per Lync Server'
+title: 'Lync Server 2013: abilitazione e disabilitazione degli utenti per Lync Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49733698
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: da4624a682899befa4ff8d780c0d9a6d6646279c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 02a66ead4e88b6a8460ab728fecbd3f21be03141
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735856"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046329"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41735856"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-È possibile abilitare, disabilitare temporaneamente o rimuovere utenti di Active Directory da Lync Server 2013.
+È possibile abilitare, disabilitare temporaneamente o rimuovere gli utenti di Active Directory da Lync Server 2013.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Aggiungere e abilitare l'account utente per Lync Server 2013](lync-server-2013-add-and-enable-user-account-for-lync-server.md)
 
-  - [Disabilitare o riattivare l'account utente per Lync Server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md)
+  - [Disabilitare o riabilitare l'account utente per Lync Server 2013](lync-server-2013-disable-or-re-enable-user-account-for-lync-server.md)
 
   - [Rimuovere un account utente da Lync Server 2013](lync-server-2013-remove-a-user-account-from-lync-server.md)
 

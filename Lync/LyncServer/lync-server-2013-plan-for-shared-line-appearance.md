@@ -12,20 +12,20 @@ ms:contentKeyID: 72522136
 ms.date: 03/21/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 755bff84b8902e346135139d1c8c5b26c55605c1
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fdb4f8ad407950f8d3180d030ede03a1e93cf0b3
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755166"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050598"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="plan-for-shared-line-appearance-in-lync-server-2013"></a>Pianificare l'aspetto della linea condivisa in Lync Server 2013
+# <a name="plan-for-shared-line-appearance-in-lync-server-2013"></a>Pianificare l'aspetto delle linee condivise in Lync Server 2013
 
 </div>
 
@@ -35,43 +35,43 @@ ms.locfileid: "41755166"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-03-21_
+_**Ultimo argomento modificato:** 2016-03-21_
 
-Leggere questo argomento per informazioni su come pianificare l'aspetto della linea condivisa (SLA) in Lync Server 2013, aggiornamento cumulativo aprile 2016.
+Leggere questo argomento per informazioni su come effettuare la pianificazione di SLA (Shared Line Appearance) in Lync Server 2013, aggiornamento cumulativo aprile 2016.
 
-L'aspetto delle linee condivise è una funzionalità di Lync Server 2013, aggiornamento cumulativo aprile 2016 per la gestione di più chiamate su un numero specifico denominato numero condiviso. SLA può configurare un utente di Lync abilitato per VoIP aziendale come numero condiviso con più linee per rispondere a più chiamate. Le chiamate non vengono effettivamente ricevute sul numero condiviso, ma vengono inoltrate agli utenti che agiscono come delegati per il numero condiviso. Uno qualsiasi dei delegati può prendere la chiamata mentre il resto dei delegati riceve una notifica al telefono su chi ha ricevuto la chiamata e quale linea si è occupata di conseguenza. Sia il numero di righe che i delegati sono configurabili per un numero condiviso in SLA. Inoltre, le opzioni avanzate, ad esempio BusyOption (cosa succede in una situazione in cui tutte le linee sono occupate) e MissedCallOption (il caso in cui nessuno dei delegati prende una chiamata), possono essere configurate anche per un numero condiviso.
+L'aspetto delle linee condivise è una funzionalità di Lync Server 2013, aggiornamento cumulativo di aprile 2016 per la gestione di più chiamate su un numero specifico denominato numero condiviso. SLA è in grado di configurare qualsiasi utente Lync abilitato per VoIP aziendale come numero condiviso con più righe per rispondere a più chiamate. Le chiamate non vengono effettivamente ricevute sul numero condiviso, ma vengono inoltrate agli utenti che agiscono come delegati per il numero condiviso. Uno qualsiasi dei delegati può prendere la chiamata mentre il resto dei delegati riceve una notifica sul telefono di chi ha ricevuto la chiamata e quale linea si è occupata di conseguenza. Sia il numero di righe che i delegati sono configurabili per un numero condiviso in SLA. Inoltre, le opzioni avanzate, come BusyOption (cosa succede in una situazione in cui tutte le linee sono occupate) e MissedCallOption (il caso in cui nessuno dei delegati prelevare una chiamata), possono essere configurate anche per un numero condiviso.
 
-SLA è supportato solo nei dispositivi telefonici seguenti (non è supportato per i client Lync su computer, telefoni cellulari o altri dispositivi):
+SLA è supportato solo sui seguenti dispositivi telefonici (non è supportato per i client Lync su computer, telefoni cellulari o altri dispositivi):
 
-  - Polycom VVX300 con aggiornamento firmware 5.4.1
+  - Polycom VVX300 with Firmware Update 5.4.1
 
-  - Polycom VVX400 con aggiornamento firmware 5.4.1
+  - Polycom VVX400 with Firmware Update 5.4.1
 
-  - Polycom VVX500 con aggiornamento firmware 5.4.1
+  - Polycom VVX500 with Firmware Update 5.4.1
 
-  - Polycom VVX600 con aggiornamento firmware 5.4.1
+  - Polycom VVX600 with Firmware Update 5.4.1
 
 SLA è una nuova funzionalità di Lync Server 2013, aggiornamento cumulativo aprile 2016.
 
-Per informazioni sulla distribuzione di SLA, vedere [distribuire l'aspetto delle linee condivise in Lync Server 2013](lync-server-2013-deploy-shared-line-appearance.md).
+Per informazioni sulla distribuzione di SLA, vedere [deploy Shared Line Appearance in Lync Server 2013](lync-server-2013-deploy-shared-line-appearance.md).
 
 <div>
 
-## <a name="feature-list"></a>Elenco delle caratteristiche
+## <a name="feature-list"></a>Elenco funzionalità
 
-La configurazione di un gruppo di SLA consente la seguente procedura:
+La configurazione di un gruppo di SLA consente di abilitare le seguenti operazioni:
 
   - Tutti i delegati del gruppo possono rispondere alle chiamate in ingresso allo stesso numero condiviso. Le chiamate possono essere basate su PSTN o SIP.
 
-  - I delegati possono tenere e ritirare le chiamate.
+  - I delegati possono conservare e raccogliere le chiamate.
 
-  - I delegati possono trasferire le chiamate a un numero esterno al gruppo SLA.
+  - I delegati possono trasferire le chiamate a un numero esterno al gruppo di SLA.
 
   - I delegati possono vedere quante chiamate sono attualmente sul numero condiviso e visualizzare lo stato di ognuna di queste chiamate.
 
-  - Puoi configurare un numero massimo di chiamate simultanee per il numero condiviso. È anche possibile impostare la modalità di gestione delle chiamate aggiuntive dopo il raggiungimento del massimo. Le chiamate in eccesso possono essere rifiutate con un segnale di occupato, inoltrato a un numero alternativo oppure inoltrato alla segreteria telefonica.
+  - È possibile configurare un numero massimo di chiamate simultanee per il numero condiviso. È inoltre possibile impostare il modo in cui si desidera che vengano gestite altre chiamate dopo che è stato raggiunto il limite massimo. Le chiamate in eccesso possono essere rifiutate con un segnale di occupato, inoltrate a un numero alternativo o inoltrate alla segreteria telefonica.
 
-  - È possibile configurare la modalità di gestione delle chiamate perse (le chiamate non vengono raccolte dopo un determinato periodo di tempo). Se si Abilita la segreteria telefonica per l'identità del gruppo, le chiamate perse vengono automaticamente inoltrate alla segreteria telefonica. Se non si dispone della segreteria telefonica abilitata per l'identità del gruppo (numero condiviso), è possibile scegliere di rifiutare le chiamate perse con un segnale di occupato, inoltrato a un numero alternativo o disconnesso.
+  - È possibile configurare la modalità di gestione delle chiamate senza risposta (chiamate non ritirate dopo un determinato periodo di tempo). Se si Abilita la segreteria telefonica per l'identità del gruppo, le chiamate perse passano automaticamente alla segreteria telefonica. Se non si dispone della segreteria telefonica abilitata per l'identità del gruppo (numero condiviso), è possibile scegliere se le chiamate perse devono essere rifiutate con un segnale di occupato, inoltrato a un numero alternativo o disconnesso.
 
 </div>
 

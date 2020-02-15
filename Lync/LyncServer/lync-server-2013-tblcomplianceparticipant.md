@@ -12,16 +12,16 @@ ms:contentKeyID: 48184262
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 484948a01c82dc8ca256e3e50e484c94a9b81de4
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: a4d5a0024c273dbef8fee16f1fb4b3372692ab4f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731556"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049238"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41731556"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-12_
+_**Ultimo argomento modificato:** 2012-09-12_
 
-tblComplianceParticipant contiene i partecipanti correnti per canale e per server.
+In tblComplianceParticipant sono inclusi i partecipanti correnti per canale e per server.
 
 ### <a name="columns"></a>Colonne
 
@@ -63,33 +63,33 @@ tblComplianceParticipant contiene i partecipanti correnti per canale e per serve
 <tr class="even">
 <td><p>userId</p></td>
 <td><p>int, not null</p></td>
-<td><p>ID principale del partecipante (corrispondente alla tabella tblPrincipal. prinID).</p></td>
+<td><p>ID dell'entità del partecipante (corrispondente alla tabella tblPrincipal.prinID).</p></td>
 </tr>
 <tr class="odd">
 <td><p>joinedAt</p></td>
-<td><p>bigint e non null</p></td>
-<td><p>Indicatore di data e ora dell'evento Joining.</p></td>
+<td><p>bigint, not null</p></td>
+<td><p>Timestamp dell'evento di partecipazione.</p></td>
 </tr>
 <tr class="even">
 <td><p>partedAt</p></td>
 <td><p>bigint</p></td>
-<td><p>Null se i partecipanti sono ancora Uniti. L'indicatore di data e ora del canale che lascia l'evento se non è null.</p>
-<p>Queste voci vengono infine rimosse quando tutti i traduttori elaborano l'evento.</p></td>
+<td><p>Null se il partecipante sta ancora partecipando. Timestamp dell'evento di uscita dal canale, se not null.</p>
+<p>Queste voci vengono rimosse alle fine quando tutti i convertitori hanno elaborato l'evento.</p></td>
 </tr>
 <tr class="odd">
 <td><p>userUri</p></td>
 <td><p>nvarchar (255), not null</p></td>
-<td><p>URI utente.</p></td>
+<td><p>URI dell'utente.</p></td>
 </tr>
 <tr class="even">
 <td><p>serverID</p></td>
 <td><p>int</p></td>
-<td><p>Identità del server (come nella tabella tblServerIdentity. serverID).</p></td>
+<td><p>Identità del server (come nella tabella tblServerIdentity.serverID).</p></td>
 </tr>
 <tr class="odd">
 <td><p>sessionId</p></td>
 <td><p>bigint</p></td>
-<td><p>Sessione del server. Si tratta di un numero casuale generato ogni volta che viene avviato un servizio chat. Viene usato per distinguere le sessioni allo scopo di identificare i partecipanti orfani.</p></td>
+<td><p>Sessione del server. Numero casuale generato a ogni avvio di un servizio chat, utilizzato per distinguere le sessioni allo scopo di identificare i partecipanti orfani.</p></td>
 </tr>
 </tbody>
 </table>

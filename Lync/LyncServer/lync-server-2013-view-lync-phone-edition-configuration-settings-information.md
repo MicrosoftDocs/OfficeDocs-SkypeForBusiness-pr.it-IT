@@ -12,16 +12,16 @@ ms:contentKeyID: 49733564
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a58450b1d69ce757f40194d179606f332e152d7d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 509bc25e6466e4e6f90271645b2a3a8ff271bd84
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765637"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050958"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,21 +35,21 @@ ms.locfileid: "41765637"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-È possibile visualizzare le informazioni di configurazione sui dispositivi in cui è in uso Lync Phone Edition. Le informazioni sono organizzate in raccolte. Quando si installa Lync Server, si ottiene una raccolta di impostazioni di Lync Phone Edition che si applicano a tutti i dispositivi in cui è in uso Lync Phone Edition nella distribuzione. È anche possibile creare nuove raccolte di impostazioni per un sito specifico. Le impostazioni del sito hanno la precedenza sulle impostazioni globali. Ogni raccolta di impostazioni è costituita da un nome, l'ambito (globale o del sito), l'impostazione di sicurezza SIP, il livello di registrazione, il livello di qualità del servizio (QoS) vocale, l'impostazione di blocco telefonico e i dettagli del blocco telefonico, ovvero la lunghezza minima dell'identificazione personale di sblocco numero (PIN) e ora prima che il telefono si blocchi.
+È possibile visualizzare le informazioni di configurazione relative ai dispositivi che eseguono Lync Phone Edition. Le informazioni sono organizzate in raccolte. Quando si installa Lync Server, è possibile ottenere una raccolta di impostazioni di Lync Phone Edition che si applicano a tutti i dispositivi che eseguono Lync Phone Edition nella distribuzione. È anche possibile creare nuove raccolte di impostazioni per uno specifico sito. Le impostazioni del sito hanno la precedenza sulle impostazioni globali. In ogni raccolta di impostazioni sono disponibili nome, ambito (globale o sito), impostazione per la sicurezza SIP, livello di registrazione, livello di qualità vocale del servizio (QoS), impostazione per il blocco telefono e dettagli sul blocco telefono, ovvero la lunghezza minima del PIN di sblocco e l'intervallo di tempo prima che il telefono si blocchi.
 
 <div>
 
-## <a name="to-view-configuration-information-about-devices-running-lync-phone-edition"></a>Per visualizzare le informazioni di configurazione sui dispositivi in cui è in uso Lync Phone Edition
+## <a name="to-view-configuration-information-about-devices-running-lync-phone-edition"></a>Per visualizzare le informazioni di configurazione sui dispositivi che eseguono Lync Phone Edition
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **client**e quindi sul pulsante di spostamento della **configurazione del dispositivo** .
+3.  Nella barra di spostamento sinistra fare clic su **Client**, quindi sul pulsante di spostamento **Configurazione dispositivo**.
 
-4.  Nella pagina **Configurazione dispositivo** fare clic sulla raccolta di impostazioni di cui si vogliono visualizzare le informazioni. Nella pagina principale sono elencati il nome, l'ambito, l'impostazione di sicurezza SIP, il livello di qualità vocale e l'impostazione di blocco telefonico. Per visualizzare i dettagli del livello di registrazione e del blocco telefonico, fare clic sul menu **modifica** e quindi su **Mostra dettagli**.
+4.  Nella pagina **Configurazione dispositivo** fare clic sulla raccolta di impostazioni di cui si desidera visualizzare le informazioni. Il nome, l'ambito, l'impostazione di sicurezza SIP, il livello di qualità vocale e l'impostazione di blocco telefono sono elencate nella pagina principale. Per visualizzare il livello di registrazione e i dettagli del blocco telefono, fare clic sul menu **Modifica**, quindi su **Mostra dettagli**.
 
 </div>
 
@@ -57,7 +57,7 @@ _**Argomento Ultima modifica:** 2013-02-23_
 
 ## <a name="viewing-lync-phone-edition-configuration-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni di configurazione di Lync Phone Edition tramite i cmdlet di Windows PowerShell
 
-Per visualizzare le impostazioni di configurazione di Lync Phone Edition, è possibile usare Lync Server Management Shell e il cmdlet **Get-CsUCPhoneConfiguration** . Puoi eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È possibile visualizzare le impostazioni di configurazione di Lync Phone Edition utilizzando Lync Server Management Shell e il cmdlet **Get-CsUCPhoneConfiguration** . È possibile eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
@@ -67,7 +67,7 @@ Per visualizzare le impostazioni di configurazione di Lync Phone Edition, è pos
     
         Get-CsUCPhoneConfiguration
     
-    Il comando restituisce informazioni simili a quelle seguenti:
+    Verranno restituite informazioni simili alle seguenti
     
         Identity             : Global
         CalendarPollInterval : 00:03:00
@@ -93,7 +93,7 @@ Per informazioni dettagliate, vedere [Get-CsUCPhoneConfiguration](https://docs.m
 [Creare o modificare una raccolta di impostazioni di configurazione di Lync Phone Edition in Lync Server 2013](lync-server-2013-create-or-modify-a-collection-of-lync-phone-edition-configuration-settings.md)  
 [Eliminare una raccolta esistente di impostazioni di configurazione di Lync Phone Edition in Lync Server 2013](lync-server-2013-delete-an-existing-collection-of-lync-phone-edition-configuration-settings.md)  
 [Configurare le impostazioni di sicurezza per Lync Phone Edition in Lync Server 2013](lync-server-2013-configure-security-settings-for-lync-phone-edition.md)  
-[Applicare il blocco telefonico in Lync Server 2013](lync-server-2013-enforce-phone-locking.md)  
+[Applicare il blocco del telefono in Lync Server 2013](lync-server-2013-enforce-phone-locking.md)  
   
 
 </div>

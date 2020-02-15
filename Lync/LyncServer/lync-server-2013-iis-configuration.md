@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurazione di IIS'
+title: 'Lync Server 2013: configurazione di IIS'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185169
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0cb8fe023d872ff19e29beb329488304048895b2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 65d9d4f61fabdca7a3f9cb4808efe952ec7ce3b2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729326"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037878"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41729326"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-02-17_
+_**Ultimo argomento modificato:** 2014-02-17_
 
-Per completare correttamente questa procedura, è necessario avere effettuato l'accesso al server come amministratore locale e un utente di dominio.
+Per eseguire questa procedura, è necessario aver eseguito l'accesso al server almeno come amministratore locale e utente di dominio.
 
-Prima di configurare e installare il front end server per Lync Server 2013, Standard Edition o il primo server front-end in un pool, è possibile installare e configurare il ruolo del server e i servizi Web per Internet Information Services (IIS).
+Prima di configurare e installare il front end server per Lync Server 2013, Standard Edition o il primo front end server in un pool, è necessario installare e configurare il ruolo del server e i servizi Web per Internet Information Services (IIS).
 
 <div class=" ">
 
 
 > [!IMPORTANT]  
-> Se l'organizzazione richiede l'individuazione di IIS e tutti i servizi Web in un'unità diversa da quella dell'unità di sistema, è possibile modificare il percorso della posizione di installazione per i file di Lync Server 2013 nella finestra di dialogo Imposta durante l'installazione iniziale di Lync Server 2013 Strumenti di amministrazione. Gli strumenti di amministrazione vengono installati prima dell'installazione di IIS. Se si installano i file di configurazione in questo percorso, incluso OCSCore. msi, anche il resto dei file di Lync Server 2013 verrà distribuito nell'unità. Per Dtails, vedere <A href="lync-server-2013-install-lync-server-administrative-tools.md">installare gli strumenti di amministrazione di Lync Server 2013</A>. Per informazioni dettagliate su come rilocare il INETPUB distribuito da Windows Server Manager durante l'installazione di <A href="http://go.microsoft.com/fwlink/p/?linkid=216888">http://go.microsoft.com/fwlink/p/?linkId=216888</A>IIS, vedere.
+> Se l'organizzazione richiede l'individuazione di IIS e di tutti i servizi Web in un'unità diversa dall'unità di sistema, è possibile modificare il percorso di installazione dei file di Lync Server 2013 nella finestra di dialogo Imposta quando si installa inizialmente Lync Server 2013. Strumenti di amministrazione. È possibile installare gli strumenti di amministrazione prima di installare IIS. Se si installano i file di installazione in questo percorso, incluso OCSCore. msi, anche gli altri file di Lync Server 2013 verranno distribuiti nell'unità. Per Dtails, vedere <A href="lync-server-2013-install-lync-server-administrative-tools.md">installare gli strumenti di amministrazione di Lync Server 2013</A>. Per informazioni dettagliate su come spostare il INETPUB distribuito da Windows Server Manager durante l'installazione di IIS, <A href="http://go.microsoft.com/fwlink/p/?linkid=216888">http://go.microsoft.com/fwlink/p/?linkId=216888</A>vedere.
 
 
 
 </div>
 
-La tabella seguente indica i servizi ruolo di IIS 7,5 necessari.
+Nella tabella seguente sono indicati i servizi di ruolo IIS 7,5 necessari.
 
 ### <a name="iis-75-role-services"></a>Servizi ruolo di IIS 7,5
 
@@ -62,7 +62,7 @@ La tabella seguente indica i servizi ruolo di IIS 7,5 necessari.
 </colgroup>
 <thead>
 <tr class="header">
-<th>Titolo del ruolo</th>
+<th>Intestazione ruolo</th>
 <th>Servizio ruolo</th>
 </tr>
 </thead>
@@ -80,20 +80,20 @@ La tabella seguente indica i servizi ruolo di IIS 7,5 necessari.
 <td><p>Errori HTTP</p></td>
 </tr>
 <tr class="even">
-<td><p>Sviluppo di applicazioni</p></td>
+<td><p>Sviluppo applicazioni</p></td>
 <td><p>ASP.NET</p>
 <p>Windows Server 2012 richiede anche ASP. NET 4.5</p></td>
 </tr>
 <tr class="odd">
-<td><p>Sviluppo di applicazioni</p></td>
-<td><p>Estensibilità .NET</p></td>
+<td><p>Sviluppo applicazioni</p></td>
+<td><p>Estendibilità .NET</p></td>
 </tr>
 <tr class="even">
-<td><p>Sviluppo di applicazioni</p></td>
+<td><p>Sviluppo applicazioni</p></td>
 <td><p>Estensioni ISAPI (Internet Server API)</p></td>
 </tr>
 <tr class="odd">
-<td><p>Sviluppo di applicazioni</p></td>
+<td><p>Sviluppo applicazioni</p></td>
 <td><p>Filtri ISAPI</p></td>
 </tr>
 <tr class="even">
@@ -106,7 +106,7 @@ La tabella seguente indica i servizi ruolo di IIS 7,5 necessari.
 </tr>
 <tr class="even">
 <td><p>Integrità e diagnostica</p></td>
-<td><p>Traccia</p></td>
+<td><p>Analisi della</p></td>
 </tr>
 <tr class="odd">
 <td><p>Sicurezza</p></td>
@@ -118,30 +118,30 @@ La tabella seguente indica i servizi ruolo di IIS 7,5 necessari.
 </tr>
 <tr class="odd">
 <td><p>Sicurezza</p></td>
-<td><p>Autenticazione del mapping dei certificati client</p></td>
+<td><p>Autenticazione mapping certificati client</p></td>
 </tr>
 <tr class="even">
 <td><p>Sicurezza</p></td>
-<td><p>Filtro delle richieste</p></td>
+<td><p>Filtro richieste</p></td>
 </tr>
 <tr class="odd">
 <td><p>Prestazioni</p></td>
-<td><p>Compressione del contenuto statico</p>
+<td><p>Compressione contenuto statico</p>
 <p>Compressione del contenuto dinamico</p></td>
 </tr>
 <tr class="even">
 <td><p>Strumenti di gestione</p></td>
-<td><p>Console di gestione di IIS</p></td>
+<td><p>Console di gestione IIS</p></td>
 </tr>
 <tr class="odd">
 <td><p>Strumenti di gestione</p></td>
-<td><p>Script e strumenti di gestione di IIS</p></td>
+<td><p>Strumenti e script di gestione IIS</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Nel sistema operativo Windows Server 2008 R2 SP1 x64 è possibile usare Windows PowerShell 2,0. È prima di tutto necessario importare il modulo ServerManager e quindi installare il ruolo e i servizi ruolo di IIS 7,5.
+Nel sistema operativo Windows Server 2008 R2 SP1 x64, è possibile utilizzare Windows PowerShell 2,0. È prima necessario importare il modulo ServerManager e quindi installare il ruolo e i servizi ruolo di IIS 7.5.
 
    ```PowerShell
     Import-Module ServerManager
@@ -155,13 +155,13 @@ Nel sistema operativo Windows Server 2008 R2 SP1 x64 è possibile usare Windows 
 
 
 > [!NOTE]  
-> Per impostazione predefinita, l'autenticazione anonima viene installata con il ruolo del server IIS. È possibile gestire l'autenticazione anonima dopo l'installazione di IIS. Per informazioni dettagliate, vedere "abilitare l'autenticazione anonima (IIS 7 <A href="http://go.microsoft.com/fwlink/p/?linkid=203935">http://go.microsoft.com/fwlink/p/?linkId=203935</A>)" all'indirizzo.
+> L'autenticazione anonima viene installata per impostazione predefinita con il ruolo del server IIS. È possibile gestire l'autenticazione anonima dopo l'installazione di IIS. Per informazioni dettagliate, vedere la sezione relativa all'abilitazione dell'autenticazione anonima (IIS 7) all'indirizzo <A href="http://go.microsoft.com/fwlink/p/?linkid=203935">http://go.microsoft.com/fwlink/p/?linkId=203935</A>.
 
 
 
 </div>
 
-La tabella seguente indica i servizi ruolo di IIS 8,0 e IIS 8,5 necessari per Windows Server 2012 e Windows Server 2012 R2.
+Nella tabella seguente sono indicati i servizi di ruolo IIS 8,0 e IIS 8,5 necessari per Windows Server 2012 e Windows Server 2012 R2.
 
 <div class=" ">
 
@@ -173,7 +173,7 @@ La tabella seguente indica i servizi ruolo di IIS 8,0 e IIS 8,5 necessari per Wi
 
 </div>
 
-### <a name="iis-80-and-iis-85-role-services"></a>Servizi ruolo di IIS 8,0 e IIS 8,5
+### <a name="iis-80-and-iis-85-role-services"></a>Servizi ruolo IIS 8,0 e IIS 8,5
 
 <table>
 <colgroup>
@@ -182,13 +182,13 @@ La tabella seguente indica i servizi ruolo di IIS 8,0 e IIS 8,5 necessari per Wi
 </colgroup>
 <thead>
 <tr class="header">
-<th>Titolo del ruolo</th>
+<th>Intestazione ruolo</th>
 <th>Servizio ruolo</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Server Web (IIS)</p></td>
+<td><p>Web Server (IIS)</p></td>
 <td><p>Server Web</p></td>
 </tr>
 <tr class="even">
@@ -197,7 +197,7 @@ La tabella seguente indica i servizi ruolo di IIS 8,0 e IIS 8,5 necessari per Wi
 </tr>
 <tr class="odd">
 <td><p>Caratteristiche HTTP comuni</p></td>
-<td><p>Esplorazione della directory</p></td>
+<td><p>Esplorazione directory</p></td>
 </tr>
 <tr class="even">
 <td><p>Caratteristiche HTTP comuni</p></td>
@@ -221,15 +221,15 @@ La tabella seguente indica i servizi ruolo di IIS 8,0 e IIS 8,5 necessari per Wi
 </tr>
 <tr class="odd">
 <td><p>Integrità e diagnostica</p></td>
-<td><p>Richiedi monitor</p></td>
+<td><p>Monitor richieste</p></td>
 </tr>
 <tr class="even">
 <td><p>Integrità e diagnostica</p></td>
-<td><p>Traccia</p></td>
+<td><p>Analisi della</p></td>
 </tr>
 <tr class="odd">
 <td><p>Sicurezza</p></td>
-<td><p>Filtro delle richieste</p></td>
+<td><p>Filtro richieste</p></td>
 </tr>
 <tr class="even">
 <td><p>Sicurezza</p></td>
@@ -237,7 +237,7 @@ La tabella seguente indica i servizi ruolo di IIS 8,0 e IIS 8,5 necessari per Wi
 </tr>
 <tr class="odd">
 <td><p>Sicurezza</p></td>
-<td><p>Autenticazione del mapping dei certificati client</p></td>
+<td><p>Autenticazione mapping certificati client</p></td>
 </tr>
 <tr class="even">
 <td><p>Sicurezza</p></td>
@@ -269,11 +269,11 @@ La tabella seguente indica i servizi ruolo di IIS 8,0 e IIS 8,5 necessari per Wi
 </tr>
 <tr class="odd">
 <td><p>Sviluppo di applicazioni</p></td>
-<td><p>Lato server include</p></td>
+<td><p>Inclusioni sul lato server</p></td>
 </tr>
 <tr class="even">
 <td><p>Strumenti di gestione</p></td>
-<td><p>Console di gestione di IIS</p></td>
+<td><p>Console di gestione IIS</p></td>
 </tr>
 <tr class="odd">
 <td><p>Strumenti di gestione</p></td>
@@ -281,7 +281,7 @@ La tabella seguente indica i servizi ruolo di IIS 8,0 e IIS 8,5 necessari per Wi
 </tr>
 <tr class="even">
 <td><p>Strumenti di gestione</p></td>
-<td><p>Script e strumenti di gestione di IIS</p></td>
+<td><p>Strumenti e script di gestione IIS</p></td>
 </tr>
 <tr class="odd">
 <td><p>Caratteristiche di .NET 3,5 Framework</p></td>
@@ -301,15 +301,15 @@ La tabella seguente indica i servizi ruolo di IIS 8,0 e IIS 8,5 necessari per Wi
 </tr>
 <tr class="odd">
 <td><p>Caratteristiche di .NET 4,5 Framework</p></td>
-<td><p>Condivisione della porta TCP</p></td>
+<td><p>Condivisione delle porte TCP</p></td>
 </tr>
 <tr class="even">
-<td><p>Servizio trasferimento intelligente in background</p></td>
+<td><p>Servizio di trasferimento intelligente in background</p></td>
 <td><p>Estensioni del server IIS</p></td>
 </tr>
 <tr class="odd">
-<td><p>Servizi a penna e grafia</p></td>
-<td><p>Servizi a penna e grafia</p></td>
+<td><p>Servizi di riconoscimento della grafia</p></td>
+<td><p>Servizi di riconoscimento della grafia</p></td>
 </tr>
 <tr class="even">
 <td><p>Media Foundation</p></td>
@@ -317,7 +317,7 @@ La tabella seguente indica i servizi ruolo di IIS 8,0 e IIS 8,5 necessari per Wi
 </tr>
 <tr class="odd">
 <td><p>Interfacce utente e infrastruttura</p></td>
-<td><p>Strumenti e infrastrutture di gestione grafica</p></td>
+<td><p>Strumenti e infrastruttura di gestione grafica</p></td>
 </tr>
 <tr class="even">
 <td><p>Interfacce utente e infrastruttura</p></td>
@@ -332,18 +332,18 @@ La tabella seguente indica i servizi ruolo di IIS 8,0 e IIS 8,5 necessari per Wi
 <td><p>Windows Identity Foundation 3,5</p></td>
 </tr>
 <tr class="odd">
-<td><p>Servizio di attivazione processo Windows</p></td>
+<td><p>Servizio di attivazione del processo di Windows</p></td>
 <td><p>Modello di processo</p></td>
 </tr>
 <tr class="even">
-<td><p>Servizio di attivazione processo Windows</p></td>
+<td><p>Servizio di attivazione del processo di Windows</p></td>
 <td><p>API di configurazione</p></td>
 </tr>
 </tbody>
 </table>
 
 
-In Windows Server 2012 e Windows Server 2012 R2 è possibile usare Windows PowerShell 3,0 per installare i requisiti di IIS. Usando il modulo ServerManager in Windows PowerShell 3,0, digitare:
+In Windows Server 2012 e Windows Server 2012 R2, è possibile utilizzare Windows PowerShell 3,0 per installare i requisiti di IIS. Se si utilizza il modulo ServerManager in Windows PowerShell 3,0, digitare quanto segue:
 
    ```PowerShell
     Import-Module ServerManager
@@ -357,7 +357,7 @@ In Windows Server 2012 e Windows Server 2012 R2 è possibile usare Windows Power
 
 
 > [!IMPORTANT]  
-> Nuovo con Windows Server 2012 è il parametro – source che definisce la posizione in cui è possibile trovare il file multimediale di origine di Windows Server 2012. Il contenuto multimediale può essere definito come unità DVD (ad esempio, D:\Sources\Sxs) o in una condivisione di rete che i file multimediali sono stati copiati (ad esempio \\, fileserver\windows2012\sources\Sxs).
+> Nuovo con Windows Server 2012 è il parametro – source che definisce la posizione in cui è possibile trovare il file multimediale di origine di Windows Server 2012. Il supporto può essere definito come un'unità DVD (ad esempio, D:\Sources\Sxs) o in una condivisione di rete che i file multimediali sono stati copiati (ad esempio \\, fileserver\windows2012\sources\Sxs).
 
 
 
@@ -368,7 +368,7 @@ In Windows Server 2012 e Windows Server 2012 R2 è possibile usare Windows Power
 ## <a name="see-also"></a>Vedere anche
 
 
-[Requisiti di IIS per pool Front End e server Standard Edition in Lync Server 2013](lync-server-2013-iis-requirements-for-front-end-pools-and-standard-edition-servers.md)  
+[Requisiti di IIS per pool Front end e server Standard Edition in Lync Server 2013](lync-server-2013-iis-requirements-for-front-end-pools-and-standard-edition-servers.md)  
   
 
 </div>

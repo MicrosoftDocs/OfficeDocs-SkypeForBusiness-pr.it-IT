@@ -12,16 +12,16 @@ ms:contentKeyID: 49733548
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 28ebdc40c4747d0ec2c3f97a3d39d07b9366e39a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 688086f559c5b5f21891ce87f9ea1f5256280a34
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724576"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045738"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41724576"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-La qualità dell'esperienza (QoE) registra i dati numerici che indicano la qualità del supporto e le informazioni sui partecipanti, i nomi di dispositivo, i driver, gli indirizzi IP e i tipi di endpoint coinvolti in chiamate e sessioni. Quando si installa Lync Server 2013, viene installata anche una raccolta predefinita di impostazioni di configurazione globali per QoE. Usare gli argomenti di questa sezione per configurare le impostazioni QoE.
+La qualità percepita dagli utenti (QoE, Quality of Experience) registra dati numerici che indicano la qualità multimediale e le informazioni sui partecipanti, i nomi di dispositivi, i driver, gli indirizzi IP e i tipi di endpoint coinvolti nelle chiamate e nelle sessioni. Quando si installa Lync Server 2013, verrà installata anche una raccolta predefinita di impostazioni di configurazione globali per QoE. Utilizzare gli argomenti in questa sezione per configurare le impostazioni QoE.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Creare impostazioni di configurazione della qualità delle esperienze in Lync Server 2013](lync-server-2013-create-quality-of-experience-configuration-settings.md)
+  - [Creare le impostazioni di configurazione per la qualità delle esperienze in Lync Server 2013](lync-server-2013-create-quality-of-experience-configuration-settings.md)
 
   - [Abilitare la qualità dell'esperienza in Lync Server 2013](lync-server-2013-enable-quality-of-experience.md)
 
   - [Modificare le impostazioni di qualità delle esperienze in Lync Server 2013](lync-server-2013-modify-quality-of-experience-settings.md)
 
-  - [Eliminare le impostazioni di configurazione della qualità delle esperienze in Lync Server 2013](lync-server-2013-delete-quality-of-experience-configuration-settings.md)
+  - [Eliminare le impostazioni di configurazione per la qualità delle esperienze in Lync Server 2013](lync-server-2013-delete-quality-of-experience-configuration-settings.md)
 
-  - [Eliminazione manuale della registrazione dei dettagli delle chiamate e della qualità del database dell'esperienza in Lync Server 2013](lync-server-2013-manually-purging-the-call-detail-recording-and-quality-of-experience-databases.md)
+  - [Eliminazione manuale dei database di registrazione dettagli chiamata e qualità dei dati di utilizzo in Lync Server 2013](lync-server-2013-manually-purging-the-call-detail-recording-and-quality-of-experience-databases.md)
 
 </div>
 
@@ -60,7 +60,7 @@ La qualità dell'esperienza (QoE) registra i dati numerici che indicano la quali
 ## <a name="see-also"></a>Vedere anche
 
 
-[Configurazione della registrazione dei dettagli delle chiamate e della qualità delle impostazioni dell'esperienza in Lync Server 2013](lync-server-2013-configuring-call-detail-recording-and-quality-of-experience-settings.md)  
+[Configurazione delle impostazioni di registrazione dettagli chiamata e qualità delle esperienze in Lync Server 2013](lync-server-2013-configuring-call-detail-recording-and-quality-of-experience-settings.md)  
   
 
 </div>

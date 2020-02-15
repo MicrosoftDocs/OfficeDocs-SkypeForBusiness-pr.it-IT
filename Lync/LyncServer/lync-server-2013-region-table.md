@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella Region'
+title: 'Lync Server 2013: tabella Region'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183518
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 005722b28b6ea93d89873d45e7a9284f44643bde
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1099be5a6cc8d3fa0b40fa20cde23ebaa02d64c7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41724426"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050798"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41724426"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2010-11-09_
+_**Ultimo argomento modificato:** 2010-11-09_
 
-La tabella Region è una tabella di supporto. Ogni record rappresenta un paese/area geografica definito nell'impostazione di configurazione della rete.
+La tabella Region è una tabella di supporto. Ogni record rappresenta un paese/area geografica definito nell'impostazione di configurazione di rete.
 
 
 <table>
@@ -65,7 +65,7 @@ La tabella Region è una tabella di supporto. Ogni record rappresenta un paese/a
 <tr class="even">
 <td><p><strong>RegionName</strong></p></td>
 <td><p>nvarchar (128)</p></td>
-<td><p>Univoci</p></td>
+<td><p>Univoco</p></td>
 <td><p>Nome del paese/area geografica.</p></td>
 </tr>
 </tbody>

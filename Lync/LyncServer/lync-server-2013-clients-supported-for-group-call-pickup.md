@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: client supportati per il ritiro delle chiamate di gruppo'
+title: 'Lync Server 2013: client supportati per il prelievo di chiamate di gruppo'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 51541527
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b924741e6dc733f167368f88faa24e6d56b362e5
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 723877737bd358ab4b364191c4e799bcc73eddc8
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756450"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044188"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41756450"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-12_
+_**Ultimo argomento modificato:** 2013-02-12_
 
-Uno dei client seguenti può essere usato per rispondere alle chiamate ai membri del pick-up delle chiamate di gruppo:
+È possibile utilizzare uno dei seguenti client per rispondere alle chiamate ai membri di prelievo delle chiamate di gruppo:
 
   - Lync 2013
 
@@ -49,15 +49,15 @@ Uno dei client seguenti può essere usato per rispondere alle chiamate ai membri
 
 
 > [!NOTE]  
-> Gli utenti possono usare uno di questi client per rispondere alle chiamate ai membri del pick-up delle chiamate di gruppo, ma gli utenti devono essere ospitati in un pool di Lync Server 2013 con aggiornamenti cumulativi per Lync Server 2013: febbraio 2013.
+> Gli utenti possono utilizzare uno di questi client per rispondere alle chiamate ai membri di prelievo delle chiamate di gruppo, ma gli utenti devono essere ospitati in un pool di Lync Server 2013 con aggiornamenti cumulativi per Lync Server 2013: febbraio 2013.
 
 
 
 </div>
 
-Negli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013, i client e i dispositivi seguenti non sono supportati per la raccolta di chiamate ai membri del ritiro delle chiamate di gruppo:
+Negli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013, i client e i dispositivi seguenti non sono supportati per la raccolta delle chiamate ai membri di prelievo delle chiamate di gruppo:
 
-  - Lync mobile
+  - Lync Mobile
 
   - App Lync per Windows 8 e Windows RT
 

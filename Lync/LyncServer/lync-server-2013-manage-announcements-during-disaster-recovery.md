@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Gestire gli annunci durante il ripristino di emergenza'
+title: 'Lync Server 2013: gestire gli annunci durante il ripristino di emergenza'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 49733807
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dfc987ea579bef4e2b02c8da210efe9a707c5900
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6058974b8473bc2c6db91abaaeb1550647ba592d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733426"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037536"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41733426"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-Lync Server 2013 supporta gli annunci per le chiamate a numeri non assegnati durante le interruzioni. Il ripristino della funzionalità di annuncio durante un'interruzione è facoltativo. Se si sceglie di ripristinare gli annunci durante un'interruzione, è necessario ricreare la configurazione dell'annuncio nel pool di backup. Questa sezione descrive le operazioni da eseguire se si sceglie di ripristinare gli annunci durante il ripristino di emergenza.
+Lync Server 2013 supporta gli annunci per le chiamate ai numeri non assegnati durante le interruzioni. Il ripristino della funzionalità degli annunci durante un'interruzione dei servizi è facoltativo. Se si sceglie di ripristinare gli annunci durante un'interruzione dei servizi, è necessario ricreare la configurazione degli annunci nel pool di backup. In questa sezione vengono descritte le operazioni da eseguire se si sceglie di ripristinare gli annunci durante il ripristino di emergenza.
 
-Questa sezione si applica agli intervalli di numeri non assegnati che usano l'applicazione annuncio. Questa sezione non si applica agli intervalli di numeri non assegnati che usano l'operatore automatico di messaggistica UNIFICAta di Exchange.
+Questa sezione si applica agli intervalli di numeri non assegnati in cui viene utilizzata l'applicazione annuncio. Questa sezione non si applica agli intervalli di numeri non assegnati che utilizzano l'operatore automatico di messaggistica unificata di Exchange.
 
 <div>
 
-## <a name="before-an-outage"></a>Prima di un'interruzione
+## <a name="before-an-outage"></a>Prima di un'interruzione dei servizi
 
-Indipendentemente dal fatto che si scelga di usare gli annunci durante le interruzioni, è consigliabile eseguire backup distinti di tutti i file audio personalizzati configurati per l'applicazione di annuncio. Non viene eseguito il backup degli annunci personalizzati come parte del processo di ripristino di emergenza di Lync Server. Se non si accettano backup separati dei file e i file caricati nel server o nel pool sono danneggiati, danneggiati o eliminati, i file andranno perduti.
+Indipendentemente dal fatto che si decida di utilizzare gli annunci durante le interruzioni, è consigliabile eseguire backup separati dei file audio personalizzati configurati per l'applicazione annuncio. Gli annunci personalizzati non vengono sottoposti a backup come parte del processo di ripristino di emergenza di Lync Server. I file andranno perduti se non si eseguono backup separati e le copie caricate nel server o nel pool vengono danneggiate o cancellate.
 
-Se non si dispone di copie di backup di file audio personalizzati e i file audio originali non sono più disponibili, è possibile trovare i file audio configurati per un'applicazione di annuncio cercando nell'archivio file del server o del pool in cui si trovavano originariamente importato i file. È possibile copiare tutti i file audio configurati per l'applicazione di annuncio dall'archivio file.
+Se non si dispone di copie di backup dei file audio personalizzati e i file audio originali non sono più disponibili, è possibile trovare i file audio configurati per un'applicazione annuncio cercando nell'archivio file il server o il pool in cui si trovava originariamente importati i file. È possibile copiare tutti i file audio configurati per l'applicazione annuncio dall'archivio file.
 
 **Per copiare i file audio dall'archivio file**
 
-1.  Nella riga di comando eseguire:
+1.  Nella riga di comando digitare il comando seguente:
     
         Xcopy <Source: Pool Announcement Service File Store path> <Destination>
     
@@ -59,57 +59,57 @@ Se non si dispone di copie di backup di file audio personalizzati e i file audio
     
         Xcopy "<Pool File Store Path>\X-ApplicationServer-X\AppServerFiles\RGS\AS" "<Destination: Backup location>"
     
-    Dove X-ApplicationServer-X si riferisce all'ID servizio del server applicazioni del pool, ad esempio 1-ApplicationServer-1 ")
+    Dove X-ApplicationServer-X indica l'ID servizio del server applicazioni del pool, ad esempio 1-ApplicationServer-1.
 
 
 </div>
 
 <div>
 
-## <a name="during-an-outage"></a>Durante un'interruzione
+## <a name="during-an-outage"></a>Durante un'interruzione dei servizi
 
-Per usare l'applicazione di annuncio durante un'interruzione, è necessario ricreare la configurazione dell'annuncio nel pool di backup eseguendo le attività descritte in questa sezione.
-
-<div>
-
-
-> [!NOTE]  
-> È consigliabile eseguire queste attività dopo aver eseguito il failover nel pool di backup, perché non appena si esegue il passaggio 2, il pool di backup assume la proprietà degli intervalli di numeri non assegnati.
-
-
-
-</div>
+Per utilizzare l'applicazione annuncio durante un'interruzione, è necessario ricreare la configurazione degli annunci nel pool di backup eseguendo le attività descritte in questa sezione.
 
 <div>
 
 
 > [!NOTE]  
-> Questi passaggi non sono necessari per gli intervalli di numeri che usano un numero di telefono dell'operatore automatico di Exchange UM.
+> È consigliabile eseguire queste attività dopo il failover al pool di backup, poiché nel momento in cui si esegue il passaggio 2, il pool di backup assume la proprietà degli intervalli di numeri non assegnati.
 
 
 
 </div>
 
-**Per ricreare la configurazione dell'annuncio nel pool di backup**
+<div>
 
-1.  Per ricreare gli annunci distribuiti nel pool principale nel pool di backup, eseguire le operazioni seguenti:
+
+> [!NOTE]  
+> Queste operazioni non sono necessarie per gli intervalli di numeri in cui viene utilizzato un numero di telefono di Operatore automatico di Messaggistica unificata di Exchange.
+
+
+
+</div>
+
+**Per ricreare la configurazione degli annunci nel pool di backup**
+
+1.  Eseguire le operazioni seguenti per ricreare nel pool di backup gli annunci distribuiti nel pool principale:
     
-    1.  Importare i file audio usati nel pool principale nel pool di backup usando il cmdlet **Import-CsAnnouncementFile** e specificando il pool di backup per il parametro Parent.
+    1.  Importare nel pool di backup i file audio utilizzati nel pool principale utilizzando il cmdlet **Import-CsAnnouncementFile** e specificando il pool di backup per il parametro Parent.
     
-    2.  Ricreare ogni annuncio usando il cmdlet **New-CsAnnouncement** e specificando il pool di backup per il parametro Parent.
+    2.  Ricreare ogni annuncio utilizzando il cmdlet **New-CsAnnouncement** e specificando il pool di backup per il parametro Parent.
     
     <div>
     
 
     > [!NOTE]  
-    > Per informazioni dettagliate sull'uso di questi parametri per creare annunci nel pool di backup, vedere <A href="lync-server-2013-create-an-announcement.md">creare un annuncio in Lync Server 2013</A>.
+    > Per informazioni dettagliate sull'utilizzo di questi parametri per creare annunci nel pool di backup, vedere <A href="lync-server-2013-create-an-announcement.md">creare un annuncio in Lync Server 2013</A>.
 
     
     </div>
 
-2.  Dopo che tutti gli annunci vengono ricreati nel pool di backup, reindirizza tutti gli intervalli di numeri non assegnati che usano gli annunci nel pool principale per gli annunci ricreati nel pool di backup.
+2.  Dopo aver ricreato tutti gli annunci nel pool di backup, reindirizzare agli annunci ricreati nel pool di backup tutti gli intervalli di numeri non assegnati in cui vengono utilizzati gli annunci nel pool principale.
     
-    Per ogni intervallo di numeri non assegnati che usa un annuncio nel pool principale, eseguire le operazioni seguenti:
+    Eseguire il comando seguente per ogni intervallo di numeri non assegnati in cui viene utilizzato un annuncio nel pool principale:
     
         Set-CsUnassignedNumber -Identity "<name of number range>" -AnnouncementService "<FQDN of backup pool>" -AnnouncementName "<announcement name in backup pool>"
 
@@ -117,15 +117,15 @@ Per usare l'applicazione di annuncio durante un'interruzione, è necessario ricr
 
 <div>
 
-## <a name="after-the-outage"></a>Dopo l'interruzione
+## <a name="after-the-outage"></a>Dopo l'interruzione dei servizi
 
-Quando il pool primario diventa disponibile, è necessario reindirizzare gli intervalli di numeri non assegnati modificati per l'interruzione di nuovo nel pool principale.
+Quando diventa disponibile il pool principale, è necessario reindirizzare gli intervalli di numeri non assegnati modificati per l'interruzione dei servizi di nuovo al pool principale.
 
 <div>
 
 
 > [!NOTE]  
-> Questi passaggi non sono necessari per gli intervalli di numeri che usano un numero di telefono dell'operatore automatico di Exchange UM.
+> Queste operazioni non sono necessarie per gli intervalli di numeri in cui viene utilizzato un numero di telefono di Operatore automatico di Messaggistica unificata di Exchange.
 
 
 
@@ -133,13 +133,13 @@ Quando il pool primario diventa disponibile, è necessario reindirizzare gli int
 
 **Per ripristinare gli annunci nel pool principale**
 
-1.  Se si dovesse ricompilare il pool principale durante il ripristino, è necessario ricreare gli annunci nel pool principale importando i file audio e creando annunci, proprio come nel pool di backup, ad eccezione del fatto che si specifica il pool principale per l'elemento padre parametro. Per informazioni dettagliate, vedere "durante un'interruzione" più indietro in questo argomento.
+1.  Se è stato necessario rigenerare il pool principale durante il ripristino, sarà necessario ricreare gli annunci nel pool principale importando i file audio e creando gli annunci, esattamente come per il pool di backup ma specificando in questo caso il pool principale per il parametro Parent. Per informazioni dettagliate, vedere la sezione "Durante un'interruzione dei servizi" più indietro in questo argomento.
 
-2.  Per ogni intervallo di numeri non assegnati modificato per l'interruzione, eseguire le operazioni seguenti:
+2.  Eseguire il comando seguente per ogni intervallo di numeri non assegnati modificato per l'interruzione dei servizi:
     
         Set-CsUnassignedNumber [-Identity "<name of number range>"] -AnnouncementService "<FQDN of primary pool>" -AnnouncementName "<announcement name in primary pool>"
 
-3.  Facoltativamente, rimuovere gli annunci ricreati nel pool di backup. Ottenere un elenco di annunci per l'applicazione di annuncio del pool di backup. Nella riga di comando eseguire:
+3.  Facoltativamente, rimuovere gli annunci ricreati nel pool di backup. Ottenere un elenco di annunci per l'applicazione annuncio del pool di backup. Nella riga di comando digitare il comando seguente:
     
         Get-CsAnnouncement -Identity "<Service:service ID>"
     
@@ -147,7 +147,7 @@ Quando il pool primario diventa disponibile, è necessario reindirizzare gli int
     
         Get-CsAnnouncement -Identity "ApplicationServer:redmond.contoso.com
     
-    Nell'elenco risultante individuare gli annunci che si desidera rimuovere e copiare i GUID. Per ogni annuncio che si vuole rimuovere, eseguire:
+    Nell'elenco ottenuto individuare gli annunci che si desidera rimuovere e copiare i GUID. Eseguire il comando seguente per ogni annuncio che si desidera rimuovere:
     
         Remove-CsAnnouncement -Identity "<Service:service ID/guid>"
     

@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Pianificazione per l'organizzazione"
+title: "Lync Server 2013: pianificazione per l'organizzazione"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185940
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 80eda087b78fa5733f3ac58d758a7187c1061c91
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b0d2d9aa7bed75c4ae8667adca435175adfd138d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725176"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050588"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="organization-planning-for-lync-server-2013"></a>Pianificazione per l'organizzazione per Lync Server 2013
+# <a name="organization-planning-for-lync-server-2013"></a>Pianificazione dell'organizzazione per Lync Server 2013
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "41725176"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-24_
+_**Ultimo argomento modificato:** 2012-09-24_
 
-Gli argomenti di questa sezione consentono di iniziare a pianificare la distribuzione di Lync Server.
+Negli argomenti di questa sezione viene fornita una guida per iniziare a pianificare la distribuzione di Lync Server.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - Per [decidere come distribuire Lync server 2013](lync-server-2013-deciding-how-to-deploy-microsoft-lync.md) sono disponibili linee guida per la scelta tra questi scenari di distribuzione di base per Lync Server 2013.
+  - Se [si decide come distribuire Lync server 2013,](lync-server-2013-deciding-how-to-deploy-microsoft-lync.md) vengono fornite linee guida per la scelta tra gli scenari di distribuzione di base per lync Server 2013.
 
-  - [L'inizio del processo di pianificazione per Lync Server 2013](lync-server-2013-beginning-the-planning-process.md) consente di comprendere come iniziare a pianificare una distribuzione locale e come funziona la documentazione della pianificazione con il generatore di topologie.
+  - [L'avvio del processo di pianificazione per Lync Server 2013](lync-server-2013-beginning-the-planning-process.md) consente di comprendere come iniziare a pianificare una distribuzione locale e come la documentazione relativa alla pianificazione è compatibile con il generatore di topologie.
 
-  - [Nozioni di base sulla topologia prima della pianificazione per Lync server 2013](lync-server-2013-topology-basics-you-must-know-before-planning.md) vengono descritte le nozioni di base sulle topologie di Lync Server, inclusi i siti, i pool di server e le topologie che supportano la disponibilità elevata e il ripristino di emergenza.
+  - [Nozioni di base sulla topologia che è necessario conoscere prima di pianificare Lync server 2013](lync-server-2013-topology-basics-you-must-know-before-planning.md) vengono descritte le nozioni di base delle topologie di Lync Server, inclusi siti, pool di server e topologie che supportano la disponibilità elevata e il ripristino di emergenza.
 
-  - [Le decisioni di pianificazione iniziali per Lync server 2013](lync-server-2013-initial-planning-decisions.md) consentono di rispondere alle domande che devono essere necessarie per decidere quali carichi di lavoro e funzionalità di Lync Server distribuire.
+  - [Le decisioni di pianificazione iniziali per Lync server 2013](lync-server-2013-initial-planning-decisions.md) consentono di risolvere i problemi che è necessario rispondere per decidere quali carichi di lavoro e caratteristiche di Lync Server distribuire.
 
-  - I [client per Lync Server 2013](lync-server-2013-clients.md) vengono descritti i diversi tipi di software client che è possibile distribuire agli utenti dell'organizzazione, inclusi il software client installato nel computer, i client basati sul Web e i dispositivi mobili.
+  - [I client per Lync Server 2013](lync-server-2013-clients.md) vengono descritti i diversi tipi di software client che è possibile distribuire agli utenti dell'organizzazione, inclusi il software client installato nel computer, i client basati sul Web e i dispositivi mobili.
 
-  - Le [topologie di riferimento in Lync Server 2013](lync-server-2013-reference-topologies.md) mostrano tre topologie di esempio che illustrano una buona progettazione della topologia in tre tipi di organizzazione tipici e spiegano il ragionamento che sta dietro a molte delle decisioni di progettazione di tali topologie.
+  - Le [topologie di riferimento in Lync Server 2013](lync-server-2013-reference-topologies.md) mostrano tre topologie di esempio che illustrano una buona progettazione della topologia in tre tipi di organizzazione tipici e spiegano il ragionamento alla base di molte decisioni di progettazione delle topologie.
 
 </div>
 

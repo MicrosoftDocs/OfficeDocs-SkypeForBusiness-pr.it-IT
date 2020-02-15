@@ -12,16 +12,16 @@ ms:contentKeyID: 63969612
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6eaab70f2f6d651d6446aaa4a569277494b7a9ee
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e978e28ea2c9d64a842c40237f1e5943c30d0a41
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738741"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051610"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41738741"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-05-20_
+_**Ultimo argomento modificato:** 2014-05-20_
 
-Le configurazioni generali di Edge Server devono essere esaminate in base ai dati nel database di gestione della configurazione, per garantire che tutte le modifiche siano state documentate in base alle procedure di controllo delle modifiche definite.
+Le configurazioni del server perimetrale generale devono essere esaminate in base ai dati del database di gestione della configurazione, per garantire che tutte le modifiche siano state documentate in base alle procedure di controllo delle modifiche definite.
 
-Altri controlli potrebbero includere quelli descritti nelle sezioni seguenti:
+Ulteriori controlli possono includere quelli descritti nelle sezioni seguenti:
 
 <div>
 
@@ -47,7 +47,7 @@ Altri controlli potrebbero includere quelli descritti nelle sezioni seguenti:
 
 Verificare gli elenchi URI SIP "Consenti" e "blocca" per i domini federati, per determinare se gli spazi dei nomi elencati sono ancora validi.
 
-Puoi usare Windows PowerShell per visualizzare gli elenchi consentiti e bloccati. Per esaminare i domini nell'elenco dei domini consentiti, eseguire il comando di Windows PowerShell seguente:
+È possibile utilizzare Windows PowerShell per visualizzare gli elenchi consentiti e bloccati. Per esaminare i domini nell'elenco dei domini consentiti, eseguire il comando di Windows PowerShell seguente:
 
 `Get-CsAllowedDomain`
 
@@ -65,21 +65,21 @@ MarkForMonitoring: false
 
 Commento
 
-Per esaminare i domini nell'elenco dei domini bloccati, usare questo comando:
+Per esaminare i domini nell'elenco dei domini bloccati, utilizzare questo comando:
 
 `Get-CsBlockedDomain`
 
-A sua volta, riceverai informazioni come questa per ogni dominio bloccato:
+A sua volta, verranno ricevute informazioni come questa per ogni dominio bloccato:
 
 Identità: tailspintoys.com
 
 Dominio: tailspintoys.com
 
-Windows PowerShell consente inoltre di verificare che sia possibile connettersi ai domini nell'elenco dei domini consentiti. Questo comando, ad esempio, verifica la connessione tra il server perimetrale (TargetFqdn) e il dominio federato contoso.com:
+Windows PowerShell consente inoltre di verificare che sia possibile connettersi ai domini nell'elenco dei domini consentiti. Ad esempio, questo comando consente di verificare la connessione tra il server perimetrale (TargetFqdn) e il dominio federato contoso.com:
 
 `Test-CsFederatedPartner -TargetFqdn "atl-edge-001.litwareinc.com" -Domain "contoso.com"`
 
-Questo comando verifica la connessione tra l'Edge Server e tutti i domini trovati nell'elenco dei domini consentiti:
+Questo comando consente di verificare la connessione tra il server perimetrale e tutti i domini trovati nell'elenco dei domini consentiti:
 
 `Get-CsAllowedDomain | ForEach-Object {Test-CsFederatedPartner -TargetFqdn "atl-edge-001.litwareinc.com" -Domain $_.Domain}`
 
@@ -87,9 +87,9 @@ Questo comando verifica la connessione tra l'Edge Server e tutti i domini trovat
 
 <div>
 
-## <a name="verify-multiple-edge-servers-are-identical"></a>Verificare che più Edge Server siano identici
+## <a name="verify-multiple-edge-servers-are-identical"></a>Verificare che più server perimetrali siano identici
 
-Se sono distribuiti più Edge Server in un array di bilanciamento del carico, è consigliabile verificare che tutti i server perimetrali della matrice siano configurati allo stesso modo.
+Se in un array con bilanciamento del carico sono distribuiti più server perimetrali, è consigliabile verificare che tutti i server perimetrali della matrice siano configurati nello stesso modo.
 
 È possibile visualizzare le impostazioni per i server perimetrali nel riquadro dei dettagli dell'estensione Lync Server 2013 per lo snap-in Gestione computer.
 

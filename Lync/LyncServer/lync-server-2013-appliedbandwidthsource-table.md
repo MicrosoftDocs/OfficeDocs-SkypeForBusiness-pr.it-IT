@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella AppliedBandwidthSource'
+title: 'Lync Server 2013: tabella AppliedBandwidthSource'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183638
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6978802893b2c4af4f4d4199c3e35452200d8d4a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3fcbcad9c69731d2a39d990f2342b7427f98fb74
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41737606"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042283"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41737606"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-02_
+_**Ultimo argomento modificato:** 2012-10-02_
 
-La tabella AppliedBandwidthSource è una tabella di supporto. Ogni record rappresenta una sola origine.
+La tabella AppliedBandwidthSource è una tabella di supporto. Ogni record rappresenta un'origine.
 
 
 <table>
@@ -65,8 +65,8 @@ La tabella AppliedBandwidthSource è una tabella di supporto. Ogni record rappre
 <tr class="even">
 <td><p><strong>AppliedBandwidthSource</strong></p></td>
 <td><p>varchar (256)</p></td>
-<td><p>Univoci</p></td>
-<td><p>Questa è l'origine del limite di larghezza di banda imposto. Descrive la posizione in cui proviene il limite di larghezza di banda, ad esempio "Policy Server", "TURN server" o "modality".</p></td>
+<td><p>Univoco</p></td>
+<td><p>Origine del limite della larghezza di banda imposto. Descrive l'origine del limite della larghezza di banda, ad esempio "Policy Server", "TURN Server" o "Modality".</p></td>
 </tr>
 </tbody>
 </table>

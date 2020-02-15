@@ -1,5 +1,5 @@
 ---
-title: Organizzazioni GOV, EDU e no-profit
+title: GOV, EDU e organizzazioni senza scopo di lucro
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,14 +19,14 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Informazioni sulle licenze per i componenti aggiuntivi e le funzionalità per i piani di organizzazione GOV, EDU e no-profit. '
-ms.openlocfilehash: 9d33cbb7367a1608b0ff7c9fdd05447a98edba8b
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 8544d685fffa1a4ab4f53a83e0651bd898e3c845
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826684"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029387"
 ---
-# <a name="gov-edu-and-non-profit-organizations"></a>Organizzazioni GOV, EDU e no-profit
+# <a name="gov-edu-and-non-profit-organizations"></a>GOV, EDU e organizzazioni senza scopo di lucro
 
 La maggior parte delle caratteristiche dei team è disponibile per le organizzazioni governative degli Stati Uniti, istruzione e organizzazione no profit. Per informazioni dettagliate, vedere la tabella seguente.
 
@@ -36,4 +36,4 @@ La maggior parte delle caratteristiche dei team è disponibile per le organizzaz
 |Sistema telefonico Office 365  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Piano chiamante di Office 365  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
    
-Consultare questo post del blog:[Funzionalità avanzate di Office 365 ora disponibili per i clienti U.S. Government Community Cloud.](https://www.microsoft.com/en-us/microsoft-365/blog/2017/01/17/advanced-office-365-capabilities-now-available-to-u-s-government-community-customers/)
+Consultare questo post del blog:[Funzionalità avanzate di Office 365 ora disponibili per i clienti U.S. Government Community Cloud.](https://www.microsoft.com/microsoft-365/blog/2017/01/17/advanced-office-365-capabilities-now-available-to-u-s-government-community-customers/)

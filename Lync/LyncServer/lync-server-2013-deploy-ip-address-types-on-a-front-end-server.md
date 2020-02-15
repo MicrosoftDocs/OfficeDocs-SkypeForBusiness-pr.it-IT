@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Distribuire i tipi di indirizzi IP in un Front End Server'
+title: 'Lync Server 2013: distribuire i tipi di indirizzi IP in un front end server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185193
 ms.date: 07/28/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f70ff3098f11cbb3d3b04602dca9c12a4998a367
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 84fae6ceef3bbc9d49bbc3afcb4236c4f8ba8bfb
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763328"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049748"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deploy-ip-address-types-on-a-front-end-server-for-lync-server-2013"></a>Distribuire i tipi di indirizzi IP in un Front End Server per Lync Server 2013
+# <a name="deploy-ip-address-types-on-a-front-end-server-for-lync-server-2013"></a>Distribuire i tipi di indirizzi IP in un front end server per Lync Server 2013
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41763328"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-07-28_
+_**Ultimo argomento modificato:** 2016-07-28_
 
-Usando generatore di topologie, eseguire i passaggi descritti nella procedura seguente per distribuire i tipi di indirizzo IP in un server front-end.
+Utilizzando Generatore di topologie, eseguire i passaggi descritti nella procedura seguente per distribuire i tipi di indirizzi IP in un front end server.
 
 <div>
 
-## <a name="to-deploy-ip-address-types-on-a-front-end-server"></a>Per distribuire i tipi di indirizzo IP in un server front-end
+## <a name="to-deploy-ip-address-types-on-a-front-end-server"></a>Per distribuire i tipi di indirizzi IP in un Front End Server
 
-1.  In **pool Enterprise Edition front-end**fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi scegliere **modifica proprietà**. In alternativa, selezionare il server e quindi fare clic su **modifica proprietà** dal menu **azione** .
+1.  In **Pool Enterprise Edition Front End** fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi scegliere **Modifica proprietà**. In alternativa, selezionare il server e quindi scegliere **Modifica proprietà** dal menu **Azione**.
 
-2.  Nella finestra di dialogo **modifica proprietà** selezionare il tipo di indirizzo IP che si vuole configurare. Per una configurazione a doppio stack, selezionare **Abilita IPv4** e **Abilita IPv6**, come illustrato nella figura seguente.
+2.  Nella finestra di dialogo **Modifica proprietà** selezionare il tipo di indirizzo IP che si desidera configurare. Per una configurazione con dual stack, selezionare **Abilita IPv4** e **Abilita IPv6**, come illustrato nella figura seguente.
     
-    **Finestra di dialogo Modifica proprietà per il pool del server front-end**
+    **Finestra di dialogo Modifica proprietà per il pool Front End Server**
     
-    ![Finestra di dialogo Modifica proprietà del server Front End](images/JJ205191.737a9d71-c0bc-4a54-9608-9e028dacc814(OCS.15).png "Finestra di dialogo Modifica proprietà del server Front End")
+    ![Finestra di dialogo Modifica proprietà di front end server](images/JJ205191.737a9d71-c0bc-4a54-9608-9e028dacc814(OCS.15).png "Finestra di dialogo Modifica proprietà di front end server")
     
-      - **Usare tutti gli indirizzi IP configurati**. Selezionare questa opzione se si vuole consentire l'uso di qualsiasi indirizzo IP definito nel computer.
+      - **Usa tutti gli indirizzi IP configurati**. Selezionare questa opzione se si desidera consentire l'utilizzo di qualsiasi indirizzo IP definito nel computer.
         
         <div>
         
@@ -62,11 +62,11 @@ Usando generatore di topologie, eseguire i passaggi descritti nella procedura se
         
         </div>
     
-      - **Limitare l'utilizzo del servizio agli indirizzi IP selezionati**. Selezionare questa opzione per specificare un indirizzo specifico da usare nel nuovo server. Se si seleziona questa opzione, è necessario immettere un valore per l' **indirizzo IP principale**.
+      - **Limita utilizzo servizio a indirizzi IP selezionati**. Selezionare questa opzione per specificare un determinato indirizzo da utilizzare nel nuovo server. Se si seleziona questa opzione, sarà necessario immettere un valore per **Indirizzo IP primario**.
     
-      - **Indirizzo IP principale**. Immettere un indirizzo IP che il server userà per tutte le comunicazioni eccetto PSTN (Public Switched Telephone Network). L'indirizzo IP immesso deve corrispondere al formato del tipo di indirizzo di selezione.
+      - **Indirizzo IP primario**. Immettere un indirizzo IP che verrà utilizzato dal server per tutte le comunicazioni, tranne quelle su rete PSTN (Public Switched Telephone Network). L'indirizzo IP immesso deve corrispondere al formato del tipo di indirizzo selezionato.
     
-      - **Indirizzo IP PSTN**. L'installazione di altre schede di interfaccia di rete (NIC) per supportare la configurazione degli indirizzi IP PSTN per Lync Server 2013 non è supportata nei ruoli di Mediation Server collocati. Per altre informazioni sulle configurazioni di NIC supportate per Lync Server 2013, vedere [piattaforme hardware del server per Lync server 2013](lync-server-2013-server-hardware-platforms.md).
+      - **Indirizzo IP PSTN**. L'installazione di altre schede di interfaccia di rete (NIC) per supportare la configurazione degli indirizzi IP PSTN per Lync Server 2013 non è supportata nei ruoli Mediation Server collocati. Per ulteriori informazioni sulle configurazioni NIC supportate per Lync Server 2013, vedere [server hardware Platforms for Lync server 2013](lync-server-2013-server-hardware-platforms.md).
 
 </div>
 

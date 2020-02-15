@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Client supportati per Response Group'
+title: 'Lync Server 2013: client supportati per Response Group'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184705
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e1fa7728e0ebee1d12d4cf57fdc7aaaf0abfe410
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2082f3d41f3907f4b2a1d541b2c2000becd91c89
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756440"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044168"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41756440"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-03-28_
+_**Ultimo argomento modificato:** 2014-03-28_
 
 L'applicazione Response Group supporta i client seguenti:
 
@@ -43,9 +43,9 @@ L'applicazione Response Group supporta i client seguenti:
 
   - Client desktop Lync 2010
 
-  - Assistente di Lync 2010
+  - Lync 2010 Attendant
 
-  - Assistente di Office Communications Server 2007 R2
+  - Office Communications Server 2007 R2 Attendant
 
   - Lync Phone Edition
 
@@ -53,21 +53,21 @@ L'applicazione Response Group supporta i client seguenti:
 
 
 > [!NOTE]  
-> L'applicazione Response Group non è supportata nei client di Lync mobile.
+> L'applicazione Response Group non è supportata nei client mobili di Lync.
 
 
 
 </div>
 
-Per informazioni dettagliate sulle nuove caratteristiche, vedere [nuove funzionalità delle applicazioni di Response Group in Lync Server 2013](lync-server-2013-new-response-group-application-features.md) nella documentazione introduttiva.
+Per informazioni dettagliate sulle nuove funzionalità, vedere [nuove funzionalità dell'applicazione Response Group in Lync Server 2013](lync-server-2013-new-response-group-application-features.md) nella documentazione introduttiva.
 
-Il client specifico che puoi usare dipende dal tipo di utente di Response Group che sei:
+Il client specifico che è possibile utilizzare dipende dal tipo di utente di Response Group che si è:
 
-  - I **chiamanti** possono chiamare un Response Group usando uno dei client elencati in precedenza e usando un telefono standard sulla rete PSTN (Public Switched Telephone Network).
+  - **Chiamanti**: possono chiamare un Response Group utilizzando uno qualsiasi dei client elencati in precedenza e utilizzando un telefono standard nella rete PSTN (Public Switched Telephone Network).
 
-  - Gli **agenti informali** (gli agenti che non accedono ai loro gruppi per accettare le chiamate) possono accettare le chiamate tramite Attendant, Lync o Lync Phone Edition. Gli agenti informali vengono automaticamente connessi ai loro gruppi quando accedono a Lync Server 2013 tramite uno di questi client.
+  - Gli **agenti informali** (gli agenti che non effettuano l'accesso e i loro gruppi per accettare le chiamate) possono accettare le chiamate tramite Attendant, Lync o Lync Phone Edition. Gli agenti informali vengono automaticamente firmati nei rispettivi gruppi quando eseguono l'accesso a Lync Server 2013 mediante uno di questi client.
 
-  - Gli **agenti formali** (gli agenti che devono eseguire l'accesso e disconnettersi da gruppi per accettare le chiamate) possono accettare le chiamate usando Lync 2013 e accedendo alla console agente dalla voce di menu oppure usando Attendant e accedendo alla console agente direttamente da Internet Explorer.
+  - Gli **agenti formali** (gli agenti che devono accedere e uscire dai propri gruppi per accettare le chiamate) possono accettare le chiamate utilizzando Lync 2013 e accedendo alla console dell'agente dalla voce di menu oppure utilizzando Attendant e accedendo alla console dell'agente direttamente da Internet Explorer.
 
 </div>
 

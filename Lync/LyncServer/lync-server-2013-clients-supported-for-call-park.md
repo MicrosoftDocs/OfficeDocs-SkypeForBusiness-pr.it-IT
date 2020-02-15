@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Client supportati per il parcheggio di chiamata'
+title: 'Lync Server 2013: client supportati per il parcheggio di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185320
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 52304a0241425a3b88c7f9419afa57f3d768fbb0
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ee3916e74a68121b027061429bacb44e2dafacdb
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756460"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044218"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,33 +35,33 @@ ms.locfileid: "41756460"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-13_
+_**Ultimo argomento modificato:** 2012-09-13_
 
-Questa sezione identifica i client che possono essere usati per parcheggiare le chiamate e i client che possono essere usati per recuperare le chiamate parcheggiate.
+In questa sezione vengono identificati i client che possono essere utilizzati per parcheggiare le chiamate e per recuperare le chiamate parcheggiate.
 
 <div>
 
-## <a name="clients-supported-for-parking-calls"></a>Client supportati per le chiamate di parcheggio
+## <a name="clients-supported-for-parking-calls"></a>Client supportati per parcheggiare le chiamate
 
-Le chiamate da qualsiasi IP, PBX (Private Branch Exchange), PSTN (Public Switched Telephone Network) o cellulare possono essere parcheggiate.
+È possibile parcheggiare chiamate da qualsiasi telefono IP, PBX (Private Branch Exchange), PSTN (Public Switched Telephone Network) o cellulare.
 
 <div>
 
 
 > [!NOTE]  
-> Solo le chiamate audio possono essere parcheggiate. I messaggi istantanei e le conferenze non possono essere parcheggiati.
+> Solo le chiamate audio possono essere parcheggiate. Questa funzionalità non è disponibile per messaggi istantanei e conferenze.
 
 
 
 </div>
 
-I client seguenti possono usare Call Park per parcheggiare le chiamate:
+I client seguenti possono utilizzare il parcheggio di chiamata per parcheggiare le chiamate:
 
   - Lync 2013
 
   - Lync 2010
 
-  - Assistente di Lync 2010
+  - Lync 2010 Attendant
 
   - Lync Phone Edition
 
@@ -69,7 +69,7 @@ I client seguenti possono usare Call Park per parcheggiare le chiamate:
 
 
 > [!NOTE]  
-> I telefoni cellulari non possono usare Call Park per parcheggiare le chiamate.
+> I telefoni cellulari non possono utilizzare il parcheggio di chiamata per parcheggiare le chiamate.
 
 
 
@@ -81,23 +81,23 @@ I client seguenti possono usare Call Park per parcheggiare le chiamate:
 
 ## <a name="clients-supported-for-retrieving-calls"></a>Client supportati per il recupero delle chiamate
 
-Gli intervalli di Orbit sono configurati come blocchi di estensioni virtuali (estensioni senza un utente o un telefono assegnato). Quando si configurano le orbite come estensioni virtuali, i telefoni cellulari e i telefoni PSTN non possono recuperare chiamate parcheggiate.
+Gli intervalli di codici orbit sono configurati come blocchi di estensioni virtuali, ovvero estensioni a cui non sono assegnati utenti o telefoni. Quando si configurano i codici orbit come estensioni virtuali, i telefoni cellulari e i telefoni PSTN non supportano il recupero delle chiamate parcheggiate.
 
-Gli utenti federati non possono recuperare chiamate parcheggiate.
+Gli utenti federati non possono recuperare le chiamate parcheggiate.
 
-I client seguenti possono recuperare le chiamate parcheggiate su Call Park:
+I client seguenti possono recuperare le chiamate parcheggiate su parcheggio di chiamata:
 
   - Lync 2013
 
   - Lync 2010
 
-  - Assistente di Lync 2010
+  - Lync 2010 Attendant
 
   - Lync Phone Edition
 
-  - Telefoni di area comune IP
+  - Telefono IP di area comune
 
-  - Telefoni non IP connessi all'infrastruttura di Lync Server 2013, inclusi i telefoni delle aree comuni e i telefoni PBX (Private Branch Exchange)
+  - Telefoni non IP che sono connessi all'infrastruttura di Lync Server 2013, inclusi i telefoni delle aree comuni e i telefoni PBX (Private Branch Exchange)
 
 </div>
 

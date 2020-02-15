@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Pool di server Director con scalabilità implementata, servizio di bilanciamento del carico hardware'
+title: 'Lync Server 2013: pool di Director in scala-bilanciamento del carico hardware'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185585
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f3fc699a5d0904b3ed308928e5edec612b3af03c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 63d690c224556953086128b8d7fc52f2d72f6b06
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732656"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049658"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="scaled-director-pool---hardware-load-balancer-in-lync-server-2013"></a>Pool di server Director con scalabilità implementata, servizio di bilanciamento del carico hardware in Lync Server 2013
+# <a name="scaled-director-pool---hardware-load-balancer-in-lync-server-2013"></a>Pool di server Director con scalabilità orizzontale-bilanciamento del carico hardware in Lync 2013
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "41732656"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-08_
+_**Ultimo argomento modificato:** 2012-09-08_
 
-Un pool di Director in scala, in cui sono distribuiti più direttori per gestire capacità aggiuntive e per assicurare una disponibilità elevata, richiede il bilanciamento del carico per distribuire le comunicazioni client e server a tutti i membri del pool. Un amministratore ospita i servizi Web in modo molto simile a un pool Front-end. Il bilanciamento del carico hardware è necessario per i servizi Web.
+Un pool di server Director con scalabilità orizzontale, in cui sono distribuiti più Director per gestire la capacità aggiuntiva e fornire disponibilità elevata, richiede il bilanciamento del carico per la distribuzione della comunicazione tra client e servizi per tutti i membri del pool. Un amministratore ospita i servizi Web molto simile a un pool Front end. Per i servizi Web è richiesto il bilanciamento del carico hardware.
 
-Gli argomenti seguenti descrivono le considerazioni sulla pianificazione per la distribuzione di un pool di Director tramite bilanciamento del carico hardware. Se si intende usare il bilanciamento del carico hardware e il bilanciamento del carico DNS per il pool di Director, vedere l'argomento [pool Director in scala-bilanciamento del carico DNS e bilanciamento del carico hardware in Lync Server 2013](lync-server-2013-scaled-director-pool-dns-load-balancing-and-hardware-load-balancer.md) che descrive i requisiti di pianificazione per la topologia.
+Negli argomenti seguenti vengono illustrate le considerazioni relative alla pianificazione per la distribuzione di un pool di server Director tramite bilanciamento del carico hardware. Se si intende utilizzare il bilanciamento del carico hardware e il bilanciamento del carico DNS per il pool di server Director, vedere l'argomento relativo al pool di server [Director-bilanciamento del carico DNS e bilanciamento del carico hardware in Lync Server 2013](lync-server-2013-scaled-director-pool-dns-load-balancing-and-hardware-load-balancer.md) che descrive i requisiti di pianificazione per la topologia.
 
 ![cfa892b9-5b24-4245-b5bd-c5da21984eeb](images/JJ205316.cfa892b9-5b24-4245-b5bd-c5da21984eeb(OCS.15).jpg "cfa892b9-5b24-4245-b5bd-c5da21984eeb")
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Riepilogo dei certificati - pool di server Director con scalabilità implementata, servizio di bilanciamento del carico hardware in Lync Server 2013](lync-server-2013-certificate-summary-scaled-director-pool-hardware-load-balancer.md)
+  - [Riepilogo del certificato-pool di server Director con scalabilità orizzontale, bilanciamento del carico hardware in Lync 2013](lync-server-2013-certificate-summary-scaled-director-pool-hardware-load-balancer.md)
 
-  - [Riepilogo delle porte - pool di server Director con scalabilità implementata, servizio di bilanciamento del carico hardware in Lync Server 2013](lync-server-2013-port-summary-scaled-director-pool-hardware-load-balancer.md)
+  - [Riepilogo delle porte-pool di server Director con scalabilità orizzontale, bilanciamento del carico hardware in Lync 2013](lync-server-2013-port-summary-scaled-director-pool-hardware-load-balancer.md)
 
-  - [Riepilogo di DNS - pool di server Director con scalabilità implementata, servizio di bilanciamento del carico in Lync Server 2013](lync-server-2013-dns-summary-scaled-director-pool-hardware-load-balancer.md)
+  - [Pool di server Director con scalabilità verticale di riepilogo DNS, bilanciamento del carico hardware in Lync 2013](lync-server-2013-dns-summary-scaled-director-pool-hardware-load-balancer.md)
 
 </div>
 

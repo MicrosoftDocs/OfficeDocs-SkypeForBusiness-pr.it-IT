@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: personalizzazione del componente aggiuntivo riunione online'
+title: 'Lync Server 2013: personalizzazione del componente aggiuntivo per riunioni online'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183424
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f2a9fb05c3f1777722d1a6f7aaa49f1bb00baeff
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 94624d4c301d6715b1435ab26132668a8d7efd93
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728746"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048517"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="customizing-the-online-meeting-add-in-in-lync-server-2013"></a>Personalizzazione del componente aggiuntivo riunione online in Lync Server 2013
+# <a name="customizing-the-online-meeting-add-in-in-lync-server-2013"></a>Personalizzazione del componente aggiuntivo per riunioni online in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41728746"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-28_
+_**Ultimo argomento modificato:** 2012-06-28_
 
-Il componente aggiuntivo riunione online per Lync 2013 supporta la gestione delle riunioni dall'interno del client di messaggistica e collaborazione di Outlook. È possibile personalizzare il comportamento del componente aggiuntivo in diversi modi. Tra queste sono disponibili le nuove opzioni per l'aggiunta di loghi e testo al corpo degli inviti alle riunioni online.
+Il componente aggiuntivo per riunioni online per Lync 2013 supporta la gestione delle riunioni dall'interno del client di messaggistica e collaborazione di Outlook. È possibile personalizzare il comportamento del componente aggiuntivo in diversi modi. Sono ad esempio presenti nuove opzioni per l'aggiunta di logo e testo nel corpo delle convocazioni di riunione online.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Aggiornamento dell'elenco di abilitazione di Outlook in Lync Server 2013](lync-server-2013-updating-the-outlook-enable-list.md)
 

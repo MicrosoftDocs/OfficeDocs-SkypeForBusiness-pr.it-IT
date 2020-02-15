@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Inizio del processo di pianificazione'
+title: 'Lync Server 2013: inizio del processo di pianificazione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185618
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a9da1c5535f190a6f57aa76b78a04845d4a073e2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: dd0a83042415cd2cf919d0fd66fe5309a4cae9e9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41741726"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041165"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,31 +35,31 @@ ms.locfileid: "41741726"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-24_
+_**Ultimo argomento modificato:** 2012-09-24_
 
-Durante la pianificazione di una distribuzione di Unified Communications locale può sembrare intimidatorio, Lync Server offre due strumenti utili per aiutarti:
+Durante la pianificazione di una distribuzione di Unified Communications locale può sembrare intimidatorio, Lync Server fornisce due strumenti utili per:
 
-  - **Lo strumento di pianificazione** è una procedura guidata che presenta una serie di domande sull'organizzazione, le caratteristiche di Lync Server che si desidera abilitare e le esigenze di pianificazione della capacità. Crea quindi una topologia di distribuzione consigliata in base alle risposte e produce un diagramma di Microsoft Visio della distribuzione.
+  - **Lo strumento di pianificazione** è una procedura guidata che presenta una serie di domande relative all'organizzazione, alle funzionalità di Lync Server che si desidera abilitare e alle esigenze di pianificazione della capacità. Viene quindi creata una topologia di distribuzione consigliata in base alle risposte fornite e viene generato un diagramma di Microsoft Visio della distribuzione.
 
-  - **Generatore di topologia** è un componente di installazione di Lync Server. Si usa generatore di topologie per creare, modificare e pubblicare la topologia pianificata. Convalida anche la topologia prima di iniziare le installazioni del server. Quando si installa Lync Server nei singoli server, i server leggono la topologia pubblicata come parte del processo di installazione e il programma di installazione distribuisce il server come indicato nella topologia.
+  - **Generatore di topologie** è un componente di installazione di Lync Server. Per creare, modificare e pubblicare la topologia pianificata, è possibile utilizzare Generatore di topologie. Convalida inoltre la topologia prima di iniziare le installazioni del server. Quando si installa Lync Server nei singoli server, i server leggono la topologia pubblicata come parte del processo di installazione e il server viene distribuito come indicato nella topologia.
 
 <div>
 
 ## <a name="lync-server-planning-tool"></a>Strumento di pianificazione di Lync Server
 
-Lo strumento di pianificazione prende le risposte alle domande nello strumento e genera una topologia basata sulle linee guida e le procedure consigliate di Lync Server. Offre anche diverse visualizzazioni di una distribuzione in base alle risposte. Mostra sia una visualizzazione globale di tutti i siti, sia i siti centrali che i siti di succursale, nonché visualizzazioni dettagliate che mostrano i server e altri componenti di ogni sito.
+Lo strumento di pianificazione accetta le risposte alle domande nello strumento e genera una topologia basata sulle linee guida e le procedure consigliate di Lync Server. Fornisce inoltre diverse visualizzazioni di una distribuzione in base alle risposte fornite. Mostra una visualizzazione globale dei siti, ossia con siti centrali e siti di succursale, e visualizzazioni dettagliate dei server e di altri componenti in ogni sito.
 
-L'uso dello strumento di pianificazione non consente di eseguire il commit di una specifica distribuzione o di avviare processi. In realtà, l'esecuzione dello strumento di pianificazione anche prima di avere un piano fisso in mente può essere un modo molto istruttivo per comprendere i tipi di domande che è necessario considerare nel processo di pianificazione.
+L'esecuzione dello strumento di pianificazione non consente di eseguire una distribuzione specifica o di avviare eventuali processi. In effetti, l'esecuzione dello strumento di pianificazione anche prima di avere un piano aziendale in mente può essere un modo molto istruttivo per comprendere i tipi di domande che è necessario considerare nel processo di pianificazione.
 
-Puoi eseguire lo strumento di pianificazione più volte, rispondendo alle domande in modo diverso e confrontando i risultati. Se si ha un progetto di cui si è soddisfatti per la maggior parte, ma è necessario apportare modifiche, è possibile tornare allo strumento di pianificazione, caricare la struttura e apportare le modifiche. È necessario circa 15 minuti per completare lo strumento di pianificazione una sola volta.
+È possibile eseguire lo strumento di pianificazione più volte, rispondere a domande in modo diverso e confrontare i risultati. Se si dispone di un progetto di cui si è soddisfatti per la maggior parte ma che è necessario apportare modifiche, è possibile tornare allo strumento di pianificazione, caricare la struttura e apportare le modifiche. Il completamento dello strumento di pianificazione richiede circa 15 minuti.
 
-Dopo aver soddisfatto, è possibile usare lo strumento pianificazione per creare un diagramma della distribuzione pianificata. Puoi usare questo diagramma durante la creazione della distribuzione in Generatore di topologie.
+Una volta soddisfatti, è possibile utilizzare lo strumento di pianificazione per creare un diagramma della distribuzione pianificata. È possibile utilizzare questo diagramma durante la creazione della distribuzione in Generatore di topologie.
 
 <div>
 
 
 > [!NOTE]  
-> Lo strumento di pianificazione incluso in questo rilascio di Lync Server 2013 è una versione prerelease. Tieni presente che i numeri di pianificazione della capacità nello strumento di pianificazione sono preliminari e non sono supportati per la versione finale.
+> Lo strumento di pianificazione incluso con questa versione di Lync Server 2013 è una versione definitiva. Si noti che i numeri relativi alla pianificazione della capacità nello strumento di pianificazione sono preliminari e non sono supportati per la versione finale.
 
 
 
@@ -69,37 +69,37 @@ Dopo aver soddisfatto, è possibile usare lo strumento pianificazione per creare
 
 <div>
 
-## <a name="lync-server-topology-builder"></a>Generatore di topologia di Lync Server
+## <a name="lync-server-topology-builder"></a>Generatore di topologie di Lync Server
 
-Dopo aver deciso il piano di distribuzione, è possibile usare generatore di topologia per iniziare la distribuzione. Al termine, puoi usare generatore di topologia per convalidare la topologia e quindi, se passa, puoi pubblicare la topologia. Quando si pubblica la topologia, Lync Server inserisce la topologia in Central Management store, che viene creata in questo momento, se non esiste già. Quando si installa Lync Server in ogni server della distribuzione, il server legge la topologia da Central Management store e si installa per adattarsi al proprio ruolo nella distribuzione.
+Dopo aver deciso il piano di distribuzione, è possibile utilizzare Generatore di topologie per iniziare la distribuzione. Al termine, è possibile utilizzare il generatore di topologie per convalidare la topologia e quindi, se la si passa, si può pubblicare la topologia. Quando si pubblica la topologia, Lync Server inserisce la topologia nell'archivio di gestione centrale, che viene creata in questo momento, se non esiste già. Quando si installa Lync Server in ogni server della distribuzione, il server legge la topologia dall'archivio di gestione centrale e si installa per adattarsi al proprio ruolo nella distribuzione.
 
-In alternativa, se si ha familiarità con Lync Server e si ha bisogno di indicazioni meno prescrittivi, è possibile ignorare lo strumento di pianificazione e usare le procedure guidate in Generatore di topologia per la progettazione iniziale della distribuzione e anche per la procedura di convalida e pubblicazione.
+In alternativa, se si ha familiarità con Lync Server e si ha bisogno di linee guida meno prescrittivo, è possibile ignorare lo strumento di pianificazione e utilizzare le procedure guidate in Generatore di topologie per la progettazione iniziale della distribuzione e anche per la procedura di convalida e pubblicazione.
 
-L'uso di generatore di topologia per pianificare e pubblicare una topologia è un passaggio obbligatorio. Non è possibile ignorare il generatore di topologie e installare Lync Server singolarmente nei server della distribuzione. Ogni server deve leggere la topologia da una topologia convalidata e pubblicata nell'Central Management store.
+L'utilizzo di generatore di topologie per la pianificazione e la pubblicazione di una topologia è un passaggio obbligatorio. Non è possibile ignorare il generatore di topologie e installare Lync Server singolarmente sui server della distribuzione. Ogni server deve leggere la topologia da una topologia pubblicata convalidata nell'archivio di gestione centrale.
 
 </div>
 
 <div>
 
-## <a name="high-level-planning-process"></a>Processo di pianificazione ad alto livello
+## <a name="high-level-planning-process"></a>Processo generale di pianificazione
 
-Per pianificare la distribuzione di Lync Server è consigliabile seguire la procedura generale seguente per l'uso della documentazione e dello strumento di pianificazione.
+Per pianificare la distribuzione di Lync Server, è consigliabile eseguire la procedura generale seguente per l'utilizzo sia della documentazione sia dello strumento di pianificazione.
 
-1.  Se si ha familiarità con le versioni precedenti di Lync Server, leggere le [nuove caratteristiche di Lync server 2013](lync-server-2013-new-features.md) per familiarizzare con le nuove caratteristiche e i requisiti di lync Server 2013.
+1.  Se si ha familiarità con le versioni precedenti di Lync Server, leggere le [nuove funzionalità in Lync server 2013](lync-server-2013-new-features.md) per acquisire familiarità con le nuove funzionalità e i requisiti di lync Server 2013.
 
-2.  Leggere gli altri argomenti in questa sezione della documentazione: [nozioni di base sulla topologia che è necessario conoscere prima di pianificare Lync server 2013](lync-server-2013-topology-basics-you-must-know-before-planning.md), [fare riferimento a topologie in Lync Server 2013](lync-server-2013-reference-topologies.md), [decisioni di pianificazione iniziali per Lync Server 2013](lync-server-2013-initial-planning-decisions.md)e [client per Lync Server 2013](lync-server-2013-clients.md). Prendere nota delle decisioni di pianificazione rappresentate nelle [topologie di riferimento in Lync Server 2013](lync-server-2013-reference-topologies.md).
+2.  Leggere gli altri argomenti in questa sezione della documentazione: [nozioni di base sulla topologia che è necessario conoscere prima di pianificare Lync server 2013](lync-server-2013-topology-basics-you-must-know-before-planning.md), le [topologie di riferimento in Lync Server 2013](lync-server-2013-reference-topologies.md), [le decisioni di pianificazione iniziali per Lync Server 2013](lync-server-2013-initial-planning-decisions.md)e [i client per Lync Server 2013](lync-server-2013-clients.md). Prendere nota delle decisioni di pianificazione rappresentate nelle [topologie di riferimento in Lync Server 2013](lync-server-2013-reference-topologies.md).
 
-3.  Ora che si ha familiarità con le caratteristiche di Lync Server e i tipi di domande a cui rispondere, eseguire lo strumento di pianificazione e visualizzare la topologia risultante e i relativi dettagli. Verificare che la topologia corrisponda ai requisiti univoci per l'organizzazione.
+3.  Dopo aver acquisito familiarità con le funzionalità di Lync Server e i tipi di domande che devono essere risolte, eseguire lo strumento di pianificazione e visualizzare la topologia risultante e i relativi dettagli. Assicurarsi che la topologia sia adatta ai requisiti specifici dell'organizzazione.
 
-4.  Se sono presenti particolari carichi di lavoro o funzionalità di cui si è interessati o che è necessario conoscere, leggere le sezioni appropriate della [pianificazione per Lync Server 2013](lync-server-2013-planning.md).
+4.  Se sono presenti particolari carichi di lavoro o funzionalità che sono interessati o che è necessario conoscere, leggere le sezioni appropriate di [pianificazione per Lync Server 2013](lync-server-2013-planning.md).
 
-5.  Eseguire di nuovo lo strumento di pianificazione. È possibile iniziare con la distribuzione creata al passaggio 3 e modificare i risultati oppure ricominciare dall'inizio.
+5.  Eseguire di nuovo lo strumento di pianificazione. È possibile iniziare con la distribuzione creata nel passaggio 3 e modificare i risultati oppure ricominciare daccapo.
     
-    Se necessario, eseguire la terza volta lo strumento di pianificazione e ripetere finché non si soddisfa l'output.
+    Se necessario, eseguire lo strumento di pianificazione una terza volta e ripetere fino a quando non si è soddisfatti dell'output.
 
-6.  Dopo aver finalizzato il piano della topologia, usare lo strumento pianificazione per creare e stampare un diagramma di Visio della topologia. È possibile usare questa stampa mentre si lavora con generatore di topologie per immettere la topologia.
+6.  Dopo aver completato il piano di topologia, utilizzare lo strumento di pianificazione per creare e stampare un diagramma di Visio della topologia. È possibile utilizzare questa stampa durante l'utilizzo di generatore di topologie per immettere la topologia.
 
-7.  Prima di iniziare la distribuzione, leggere [determinare i requisiti di sistema per Lync server 2013](lync-server-2013-determining-your-system-requirements.md) e [determinare i requisiti di infrastruttura per Lync Server 2013](lync-server-2013-determining-your-infrastructure-requirements.md) per familiarizzare con i prerequisiti e l'infrastruttura necessaria per Lync Server. Assicurarsi inoltre di aver letto tutte le sezioni della [pianificazione per Lync Server 2013](lync-server-2013-planning.md) che si applicano ai carichi di lavoro e alle caratteristiche che si prevede di distribuire.
+7.  Prima di iniziare la distribuzione, leggere [determinare i requisiti di sistema per Lync server 2013](lync-server-2013-determining-your-system-requirements.md) e [determinare i requisiti dell'infrastruttura per Lync Server 2013](lync-server-2013-determining-your-infrastructure-requirements.md) per acquisire familiarità con i prerequisiti e l'infrastruttura necessaria per Lync Server. È inoltre necessario leggere tutte le sezioni di [pianificazione per Lync Server 2013](lync-server-2013-planning.md) che si applicano ai carichi di lavoro e alle caratteristiche che si intende distribuire.
 
 </div>
 

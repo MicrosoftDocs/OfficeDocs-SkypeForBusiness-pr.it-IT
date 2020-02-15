@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Creare o modificare manualmente una regola di normalizzazione'
+title: 'Lync Server 2013: creare o modificare manualmente una regola di normalizzazione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185943
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2cf7693eb4a8bac814c81ef69b9f158edb3684f3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 305369719631361e0e8f8d9e9d12101fbdbfb1e5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722417"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045929"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,43 +35,43 @@ ms.locfileid: "41722417"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-22_
+_**Ultimo argomento modificato:** 2012-09-22_
 
-Se si vuole creare o modificare manualmente una regola di normalizzazione, eseguire i passaggi seguenti. Se si vuole creare o modificare una regola di normalizzazione usando la creazione di una regola di normalizzazione nel pannello di controllo di Lync Server, vedere [creare o modificare una regola di normalizzazione tramite Build una regola di normalizzazione in Lync Server 2013](lync-server-2013-create-or-modify-a-normalization-rule-by-using-build-a-normalization-rule.md).
+Se si desidera creare o modificare manualmente una regola di normalizzazione, eseguire la procedura seguente. Se si desidera creare o modificare una regola di normalizzazione utilizzando crea una regola di normalizzazione nel pannello di controllo di Lync Server, vedere [creare o modificare una regola di normalizzazione utilizzando crea una regola di normalizzazione in Lync server 2013](lync-server-2013-create-or-modify-a-normalization-rule-by-using-build-a-normalization-rule.md).
 
 <div>
 
 ## <a name="to-define-a-normalization-rule-manually"></a>Per definire manualmente una regola di normalizzazione
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Opzionale Seguire i passaggi descritti in [creare un dial plan in Lync server 2013](lync-server-2013-create-a-dial-plan.md) o [modificare un dial plan in Lync Server 2013](lync-server-2013-modify-a-dial-plan.md).
+3.  Optional Seguire la procedura illustrata in [creare un dial plan in Lync server 2013](lync-server-2013-create-a-dial-plan.md) o [modificare un dial plan in Lync Server 2013](lync-server-2013-modify-a-dial-plan.md).
 
-4.  Nella **nuova regola di normalizzazione** o **Modifica regola di normalizzazione**digitare un nome che descriva il criterio di numerazione normalizzato in **nome** , ad esempio denominare la regola di normalizzazione **5DigitExtension**.
+4.  In **nuova regola di normalizzazione** o **Modifica regola di normalizzazione**digitare un nome che descriva il tipo di numero normalizzato in **nome** (ad esempio, denominare la regola di normalizzazione **5DigitExtension**).
 
-5.  Opzionale In campo **Descrizione** Digitare una descrizione della regola di normalizzazione, ad esempio "converte le estensioni a 5 cifre".
+5.  Optional In campo **Descrizione** Digitare una descrizione della regola di normalizzazione (ad esempio, "converte le estensioni a 5 cifre").
 
 6.  In **genera una regola di normalizzazione**fare clic su **modifica**.
 
-7.  Immettere le opzioni seguenti nell' **espressione regolare di tipo**:
+7.  Immettere quanto segue in **Digita espressione regolare**:
     
-      - In **corrispondenza di questo modello**specificare il motivo che si vuole usare per corrispondere al numero di telefono chiamato.
+      - In **corrispondenza di questo modello**specificare il modello che si desidera utilizzare per la corrispondenza con il numero di telefono composto.
     
-      - Nella **regola di traduzione**specificare un motivo per il formato dei numeri di telefono E. 164 tradotti.
+      - In **regola di conversione**specificare un modello per il formato dei numeri di telefono E. 164 tradotti.
     
-    Ad esempio, se si digita **^ (\\d{7}) $** in **corrispondenza di questo modello** e **+ 1425 $1** nella **regola di traduzione**, la regola Normalizza 5550100 in + 14255550100.
+    Ad esempio, se si immette **^ (\\d{7}) $** in **corrispondenza di questo modello** e **+ 1425 $1** in **regola di conversione**, la regola Normalizza 5550100 in + 14255550100.
 
-8.  Opzionale Se la regola di normalizzazione genera un numero di telefono interno all'organizzazione, selezionare **estensione interna**.
+8.  (Facoltativo) Se la regola di normalizzazione restituisce un numero di telefono interno all'organizzazione, selezionare **Estensione interna**.
 
-9.  Opzionale Immettere un numero per testare la regola di normalizzazione e quindi fare clic su **Vai**. I risultati del test vengono visualizzati in **immettere un numero da testare**.
+9.  Optional Immettere un numero per testare la regola di normalizzazione e quindi fare clic su **Vai**. I risultati del test vengono visualizzati in **Immetti numero di telefono da testare**.
     
     <div>
     
 
     > [!NOTE]  
-    > È possibile salvare una regola di normalizzazione che non supera ancora il test e quindi riconfigurarla in un secondo momento. Per informazioni dettagliate, vedere <A href="lync-server-2013-test-voice-routing.md">eseguire il test del routing vocale in Lync Server 2013</A>.
+    > È possibile salvare una regola di normalizzazione che non passa ancora il test e quindi riconfigurarla successivamente. Per ulteriori informazioni, vedere <A href="lync-server-2013-test-voice-routing.md">test Voice routing in Lync Server 2013</A>.
 
     
     </div>
@@ -80,13 +80,13 @@ Se si vuole creare o modificare manualmente una regola di normalizzazione, esegu
 
 11. Fare clic su **OK** per salvare il dial plan.
 
-12. Nella pagina **dial plan** fare clic su **commit**e quindi su **Commit all**.
+12. Nella pagina **Dial plan** fare clic su **Commit** e quindi su **Salva tutto**.
     
     <div>
     
 
     > [!NOTE]  
-    > Ogni volta che si crea o si modifica una regola di normalizzazione, è necessario eseguire il comando <STRONG>commit tutti</STRONG> per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">pubblicare le modifiche in sospeso nella configurazione del routing vocale in Lync Server 2013</A> nella documentazione Operations.
+    > Ogni volta che si crea o si modifica una regola di normalizzazione, è necessario eseguire il comando <STRONG>Salva tutto</STRONG> per pubblicare la modifica apportata alla configurazione. Per ulteriori informazioni, vedere <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">pubblicare le modifiche in sospeso alla configurazione del routing vocale in Lync Server 2013</A> nella documentazione relativa alle operazioni.
 
     
     </div>
@@ -98,10 +98,10 @@ Se si vuole creare o modificare manualmente una regola di normalizzazione, esegu
 ## <a name="see-also"></a>Vedere anche
 
 
-[Creare o modificare una regola di normalizzazione tramite Build una regola di normalizzazione in Lync Server 2013](lync-server-2013-create-or-modify-a-normalization-rule-by-using-build-a-normalization-rule.md)  
+[Creare o modificare una regola di normalizzazione utilizzando crea una regola di normalizzazione in Lync Server 2013](lync-server-2013-create-or-modify-a-normalization-rule-by-using-build-a-normalization-rule.md)  
 [Creare un dial plan in Lync Server 2013](lync-server-2013-create-a-dial-plan.md)  
 [Modificare un dial plan in Lync Server 2013](lync-server-2013-modify-a-dial-plan.md)  
-[Pubblicare le modifiche in sospeso nella configurazione di routing vocale in Lync Server 2013](lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md)  
+[Pubblicare le modifiche in sospeso alla configurazione del routing vocale in Lync Server 2013](lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md)  
 
 
 [Testare il routing vocale in Lync Server 2013](lync-server-2013-test-voice-routing.md)  

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: uso di config. XML per eseguire attività di installazione'
+title: 'Lync Server 2013: utilizzo del file config. XML per eseguire le attività di installazione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183332
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5b6e037f2c69e963e8ca5963a71dabe80f9c75fd
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2adadafcbb5338f47aa13d25b3dfd39386935b30
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744176"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044328"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="using-configxml-to-perform-installation-tasks-in-lync-server-2013"></a>Uso di config. XML per eseguire attività di installazione in Lync Server 2013
+# <a name="using-configxml-to-perform-installation-tasks-in-lync-server-2013"></a>Utilizzo di config. XML per eseguire le attività di installazione in Lync Server 2013
 
 </div>
 
@@ -35,29 +35,29 @@ ms.locfileid: "41744176"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-02_
+_**Ultimo argomento modificato:** 2012-10-02_
 
-Anche se lo strumento di personalizzazione di Office (OCT) è lo strumento principale per l'installazione di personalizzazione, gli amministratori possono usare il file config. XML per specificare altre istruzioni per l'installazione che non sono disponibili in ottobre. Le personalizzazioni seguenti possono essere eseguite solo usando il file config. XML:
+Anche se lo strumento di personalizzazione di Office è lo strumento principale per l'installazione della personalizzazione, gli amministratori possono utilizzare il file config. XML per specificare ulteriori istruzioni di installazione che non sono disponibili nel set di strumenti. È possibile eseguire le personalizzazioni seguenti solo mediante il file Config.xml:
 
-  - Specificare il percorso del punto di installazione della rete.
+  - Specificare il percorso del punto di installazione di rete.
 
   - Selezionare i prodotti da installare.
 
-  - Configurare la registrazione e la posizione del file di personalizzazione della configurazione e degli aggiornamenti software.
+  - Configurare la registrazione e il percorso del file di personalizzazione dell'installazione e degli aggiornamenti software.
 
-  - Specificare le opzioni di installazione, ad esempio nome utente.
+  - Specificare le opzioni di installazione, ad esempio il nome utente.
 
-  - Copiare l'origine di installazione locale (LIS) nel computer dell'utente senza installare Office.
+  - Copiare l'origine di installazione locale nel computer dell'utente senza installare Office.
 
   - Aggiungere o rimuovere lingue dall'installazione.
 
-È consigliabile usare il file config. XML per configurare l'installazione invisibile di Lync 2013.
+È consigliabile utilizzare il file config. XML per configurare l'installazione invisibile all'utente di Lync 2013.
 
-Per impostazione predefinita, il file config. xml archiviato nella cartella principale del prodotto, ad esempio \\Product. WW) indirizza la configurazione per l'installazione di tale prodotto. Ad esempio, il file config. XML nella cartella seguente installa Lync 2013:
+Per impostazione predefinita, il file config. XML memorizzato nella cartella di base del prodotto, \\ad esempio Product. WW) indirizza il programma di installazione per l'installazione del prodotto. Ad esempio, il file config. XML nella cartella seguente consente di installare Lync 2013:
 
-  - \\\\condivisione\\\\del server\\Lync15 Lync. \\WW config. XML
+  - \\\\condivisione\\\\server Lync15\\Lync. WW \\config. XML
 
-Gli elementi config. XML usati più comunemente per l'installazione di Lync 2013 sono elencati nella tabella seguente.
+Nella tabella seguente sono elencati gli elementi config. XML più comunemente utilizzati per l'installazione di Lync 2013.
 
 ### <a name="configxml-elements"></a>Elementi config. XML
 
@@ -79,7 +79,7 @@ Gli elementi config. XML usati più comunemente per l'installazione di Lync 2013
 </tr>
 <tr class="even">
 <td><p>OptionState</p></td>
-<td><p>Specifica il modo in cui vengono gestite le caratteristiche specifiche del prodotto durante l'installazione. Usare gli attributi seguenti per impedire l'installazione di servizi di integrazione applicativa, che includono componenti condivisi che interferiscono con Outlook 2010:</p>
+<td><p>Specifica come vengono gestite caratteristiche specifiche del prodotto durante l'installazione. Utilizzare gli attributi seguenti per impedire l'installazione di servizi di integrazione applicativa, che include componenti condivisi che interferiscono con Outlook 2010:</p>
 <ul>
 <li><p>ID =&quot;LOBiMain&quot;</p></li>
 <li><p>Stato =&quot;assente&quot;</p></li>
@@ -87,41 +87,41 @@ Gli elementi config. XML usati più comunemente per l'installazione di Lync 2013
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p>Visualizzare</p></td>
-<td><p>Il livello di interfaccia utente visualizzato per l'installazione per l'utente. Gli attributi tipici includono i seguenti:</p>
+<td><p>Schermo</p></td>
+<td><p>Livello di interfaccia utente visualizzato all'utente dal programma di installazione. Tra gli attributi tipici sono inclusi i seguenti:</p>
 <ul>
-<li><p>CompletionNotice =&quot;Sì&quot; | &quot;No&quot;(impostazione predefinita)</p></li>
-<li><p>AcceptEula =&quot;Sì&quot; | &quot;No&quot;(impostazione predefinita)</p></li>
+<li><p>CompletionNotice =&quot;Yes&quot; | &quot;No&quot;(impostazione predefinita)</p></li>
+<li><p>AcceptEula =&quot;Yes&quot; | &quot;No&quot;(impostazione predefinita)</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p>Registrazione</p></td>
-<td><p>Opzioni per il tipo di registrazione eseguito dall'installazione. Gli attributi tipici includono i seguenti:</p>
+<td><p>Opzioni per il tipo di registrazione eseguita dal programma di installazione. Tra gli attributi tipici sono inclusi i seguenti:</p>
 <ul>
-<li><p>Digitare =&quot;off&quot; | &quot;standard&quot;(impostazione predefinita) | &quot;Verbose&quot;</p></li>
-<li><p>Template = "nomefile. txt" (il nome del file di log)</p></li>
+<li><p>Type =&quot;off&quot; | &quot;standard&quot;(impostazione predefinita) | &quot;Verbose&quot;</p></li>
+<li><p>Template = "nomefile. txt" (il nome del file di registro)</p></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td><p>Impostazione</p></td>
-<td><p>Specifica i valori per le proprietà di Windows Installer. Gli attributi tipici includono i seguenti:</p>
+<td><p>Specifica i valori per le proprietà di Windows Installer. Tra gli attributi tipici sono inclusi i seguenti:</p>
 <ul>
-<li><p>Impostazione di ID&quot;=&quot; Name (nome della proprietà di Windows Installer)</p></li>
-<li><p>Valore =&quot;valore&quot; (il valore da assegnare alla proprietà)</p></li>
+<li><p>Impostazione ID =&quot;Name&quot; (il nome della proprietà di Windows Installer)</p></li>
+<li><p>Valore =&quot;valore&quot; (valore da assegnare alla proprietà)</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p>DistributionPoint</p></td>
-<td><p>Percorso completo del punto di installazione di rete da cui eseguire l'installazione. Include l'attributo location:</p>
+<td><p>Percorso completo del punto di installazione di rete da cui deve essere eseguita l'installazione Include l'attributo location:</p>
 <ul>
-<li><p>Location = "Path"</p></li>
+<li><p>Location = "percorso"</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
 
-L'esempio seguente mostra un file config. XML per una tipica installazione silenziosa di Lync 2013.
+Nell'esempio seguente viene illustrato un file config. XML per una tipica installazione invisibile all'utente di Lync 2013.
 
     <Configuration Product="Lync">
       <OptionState Id="LOBiMain" State="Absent" Children="Force" />
@@ -131,21 +131,21 @@ L'esempio seguente mostra un file config. XML per una tipica installazione silen
       <DistributionPoint Location="\\server\share\Lync15" />
     </Configuration>
 
-Informazioni dettagliate sull'uso del file config. XML per eseguire attività di installazione e manutenzione di Office sono <http://go.microsoft.com/fwlink/p/?linkid=267514>disponibili all'indirizzo.
+Informazioni dettagliate sull'utilizzo del file config. XML per eseguire le attività di installazione e manutenzione di Office <http://go.microsoft.com/fwlink/p/?linkid=267514>sono disponibili all'indirizzo.
 
 <div>
 
 ## <a name="to-customize-the-configxml-file"></a>Per personalizzare il file config. XML
 
-1.  Aprire il file config. XML usando uno strumento di editor di testo, ad esempio Blocco note.
+1.  Aprire il file config. XML utilizzando uno strumento di editor di testo, ad esempio il blocco note.
 
 2.  Individuare le righe che contengono gli elementi che si desidera modificare.
 
-3.  Modificare la voce dell'elemento con le opzioni Silent che si desidera utilizzare. Assicurati di rimuovere i delimitatori di commento, "\<\!--" e "--\>". Ad esempio, usare la sintassi seguente:
+3.  Modificare la voce dell'elemento con le opzioni Silent che si desidera utilizzare. Assicurarsi di rimuovere i delimitatori dei commenti, "\<\!--" e "--\>". Utilizzare ad esempio la sintassi seguente:
     
         < DistributionPoint Location="\\server\share\Lync15" />
 
-4.  Salvare il file config. XML.
+4.  Salvare il file Config.xml.
 
 </div>
 

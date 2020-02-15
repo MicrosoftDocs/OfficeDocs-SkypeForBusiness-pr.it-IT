@@ -12,20 +12,20 @@ ms:contentKeyID: 51541473
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 64bc766cf970e95ad03be65c490882dd3471955b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1557640fa021faf7313af834eb06f94f1c7432a2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051480"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="restoring-response-group-settings-in-lync-server-2013"></a>Ripristinare le impostazioni del gruppo di risposte in Lync Server 2013
+# <a name="restoring-response-group-settings-in-lync-server-2013"></a>Ripristino delle impostazioni di Response Group in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41733056"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-18_
+_**Ultimo argomento modificato:** 2013-02-18_
 
-Se è stata distribuita l'applicazione Response Group ed è necessario ripristinare un server back-end o un server Standard Edition, è anche necessario ripristinare le impostazioni di configurazione del Response Group.
+Se è stata distribuita l'applicazione Response Group ed è necessario ripristinare un server di back-end o uno Standard Edition, è necessario ripristinare anche le impostazioni di configurazione di Response Group.
 
 <div>
 
 ## <a name="to-restore-response-group-configuration-settings"></a>Per ripristinare le impostazioni di configurazione di Response Group
 
-1.  Nella riga di comando digitare:
+1.  Nella riga di comando digitare il comando seguente:
     
         Import-CsRgsConfiguration -Destination "service:ApplicationServer:<pool FQDN>" -OverwriteOwner -FileName "<path and file name of the backed up file at $Backup>"
     

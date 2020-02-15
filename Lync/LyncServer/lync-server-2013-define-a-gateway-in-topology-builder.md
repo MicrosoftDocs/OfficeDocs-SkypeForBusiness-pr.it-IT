@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: definire un gateway in Generatore di topologia'
+title: 'Lync Server 2013: definire un gateway in Generatore di topologie'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184036
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 18f257648ba24930eaab0d314e34178ffd67a0c2
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 23286d5bb6cd8b1a1b695776258ad5e131743b8d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41733656"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044078"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="define-a-gateway-in-topology-builder-in-lync-server-2013"></a>Definire un gateway in Generatore di topologia in Lync Server 2013
+# <a name="define-a-gateway-in-topology-builder-in-lync-server-2013"></a>Definire un gateway in Generatore di topologie in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41733656"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-04_
+_**Ultimo argomento modificato:** 2012-10-04_
 
-Seguire questa procedura per usare generatore di topologia per definire un *peer* con cui è possibile associare un Mediation Server per consentire la connettività alla rete PSTN (Public Switched Telephone Network) per gli utenti abilitati per VoIP aziendale. Un peer per il Mediation Server può essere un gateway PSTN, un IP-PBX o un SBC (Session Border Controller) per un provider di servizi di telefonia Internet (ITSP) a cui ci si connette configurando un trunk SIP.
+Eseguire la procedura seguente per utilizzare il generatore di topologie per definire un *peer* con cui è possibile associare un Mediation Server per fornire la connettività alla rete PSTN (Public Switched Telephone Network) per gli utenti abilitati per VoIP aziendale. Un peer per il Mediation Server può essere un gateway PSTN, un IP-PBX o un session border controller (SBC) per un provider di servizi di telefonia Internet (ITSP) a cui si effettua la connessione configurando un trunk SIP.
 
 <div>
 
 
 > [!NOTE]  
-> Questo argomento presuppone che sia stato configurato almeno un pool Front-End interno o un server Standard Edition in almeno un sito centrale con un Mediation Server collocato o autonomo, come descritto in <A href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">definire e configurare un pool Front-end o un server Standard Edition in Lync server 2013</A> e <A href="lync-server-2013-publish-the-topology.md">pubblicare la topologia in Lync Server 2013</A> nella documentazione relativa alla distribuzione. Questo argomento presuppone inoltre che l'infrastruttura soddisfi i prerequisiti descritti in <A href="lync-server-2013-software-prerequisites-for-enterprise-voice.md">prerequisiti software per VoIP aziendale in Lync server 2013</A> e <A href="lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md">prerequisiti per la sicurezza e la configurazione di VoIP aziendale in Lync Server 2013</A>.
+> In questo argomento si presuppone che sia stato configurato almeno un pool Front End interno o un server Standard Edition in almeno un sito centrale con un Mediation Server collocato o autonomo, come descritto in <A href="lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server.md">define and Configure a front end pool or Standard Edition server in Lync server 2013</A> e <A href="lync-server-2013-publish-the-topology.md">pubblicare la topologia in Lync Server 2013</A> nella documentazione relativa alla distribuzione. In questo argomento si presuppone inoltre che sia stata verificata la conformità dell'infrastruttura ai prerequisiti descritti nei prerequisiti <A href="lync-server-2013-software-prerequisites-for-enterprise-voice.md">software per VoIP aziendale in Lync server 2013</A> e <A href="lync-server-2013-security-and-configuration-prerequisites-for-enterprise-voice.md">ai prerequisiti di configurazione e sicurezza per VoIP aziendale in Lync Server 2013</A>.
 
 
 
@@ -53,13 +53,13 @@ Seguire questa procedura per usare generatore di topologia per definire un *peer
 
 ## <a name="to-define-a-peer-for-the-mediation-server"></a>Per definire un peer per il Mediation Server
 
-1.  Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Generatore di topologia di Lync Server**.
+1.  Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Generatore di topologie**.
 
-2.  In Lync Server 2013, il nome del sito, i componenti condivisi, fare clic con il pulsante destro del mouse sul nodo **gateway PSTN** e quindi scegliere **nuovo gateway PSTN**.
+2.  In Lync Server 2013, nome del sito, componenti condivisi fare clic con il pulsante destro del mouse sul nodo **gateway PSTN** e quindi scegliere **nuovo gateway PSTN**.
     
     ![d898c3c1-8798-4b74-8f02-b994ef3db4c1](images/Gg425945.d898c3c1-8798-4b74-8f02-b994ef3db4c1(OCS.15).png "d898c3c1-8798-4b74-8f02-b994ef3db4c1")
 
-3.  In **Definisci nuovo gateway IP/PSTN**Digitare il nome di dominio completo (FQDN) o l'indirizzo IP del peer e fare clic su **Avanti**.
+3.  Nella finestra **Definisci nuovo gateway IP/PSTN** digitare il nome di dominio completo (FQDN) o l'indirizzo IP del peer e quindi fare clic su **Avanti**.
     
     ![8017ba5e-41bc-48d4-97d9-fd306cd322b8](images/Gg425945.8017ba5e-41bc-48d4-97d9-fd306cd322b8(OCS.15).png "8017ba5e-41bc-48d4-97d9-fd306cd322b8")
     
@@ -72,59 +72,59 @@ Seguire questa procedura per usare generatore di topologia per definire un *peer
     
     </div>
 
-4.  Definire la modalità di ascolto (IPv4 o IPv6) dell'indirizzo IP del nuovo gateway PSTN e fare clic su **Avanti**.
+4.  Definire la modalità di attesa (IPv4 o IPv6) dell'indirizzo IP del nuovo gateway PSTN e quindi fare clic su **Avanti**.
     
     ![c7fc0d12-adc8-45a7-aca1-b376e1d2fcec](images/Gg425945.c7fc0d12-adc8-45a7-aca1-b376e1d2fcec(OCS.15).png "c7fc0d12-adc8-45a7-aca1-b376e1d2fcec")
 
 5.  Definire un *trunk radice* per il gateway PSTN. Un trunk è una connessione logica tra un Mediation Server e un gateway identificato in modo univoco dalla tupla.
     
-    {Nome completo di Mediation Server, porta di attesa di Mediation Server (TLS o TCP): IP gateway e FQDN, porta di ascolto del gateway}
+    {FQDN Mediation Server, porta di attesa Mediation Server (TLS o TCP): IP e FQDN del gateway, porta di attesa del gateway}
     
       - Quando si definisce un gateway PSTN in Generatore di topologie, è necessario definire un trunk radice per aggiungere correttamente il gateway PSTN alla topologia.
     
-      - Il trunk radice non può essere rimosso finché non viene rimosso il gateway PSTN associato.
+      - Il trunk radice non può essere rimosso se non si rimuove prima il gateway PSTN associato.
     
     ![3b030757-eb35-4616-bb6b-74ee67507e3d](images/Gg425945.3b030757-eb35-4616-bb6b-74ee67507e3d(OCS.15).png "3b030757-eb35-4616-bb6b-74ee67507e3d")
 
-6.  In **porta di ascolto per gateway IP/PSTN**Digitare la porta di attesa che il gateway, il PBX o il SBC utilizzerà per i messaggi SIP provenienti dal server di mediazione che verranno associati al trunk radice del gateway PSTN. Per impostazione predefinita, le porte sono 5066 per TCP (Transmission Control Protocol) e 5067 per Transport Layer Security (TLS) in un gateway PSTN, un PBX o un SBC. In un Survivable Branch Appliance in un sito di succursale, le porte predefinite sono 5081 per TCP e 5082 per TLS.
+6.  In **porta di attesa per gateway IP/PSTN**Digitare la porta di attesa che il gateway, il sistema PBX o l'SBC utilizzerà per i messaggi SIP provenienti dal Mediation Server che verranno associati al trunk radice del gateway PSTN. Per impostazione predefinita, vengono utilizzate la porta 5066 per TCP (Transmission Control Protocol) e la porta 5067 per TLS (Transport Layer Security) in un gateway PSTN, un PBX o un sistema SBC. In un Survivable Branch Appliance in un sito di succursale, le porte predefinite sono 5081 per TCP e 5082 per TLS.
 
-7.  In **protocollo di trasporto SIP**fare clic sul tipo di trasporto usato dal peer e quindi fare clic su **OK**.
+7.  In **Protocollo trasporto SIP** fare clic sul tipo di trasporto utilizzato dal peer e quindi su **OK**.
     
     <div>
     
 
     > [!NOTE]  
-    > Per motivi di sicurezza, ti consigliamo vivamente di distribuire un peer al Mediation Server che può usare TLS.
+    > Per motivi di sicurezza, è consigliabile distribuire un peer al Mediation Server in grado di utilizzare TLS.
 
     
     </div>
 
 8.  In **Mediation Server associato**selezionare il pool di Mediation Server da associare al trunk radice di questo gateway PSTN.
 
-9.  In **porta Mediation Server associata**Digitare la porta di ascolto che il server di mediazione userà per i messaggi SIP dal gateway.
+9.  In **porta Mediation Server associato**Digitare la porta di attesa che verrà utilizzata dal Mediation Server per i messaggi SIP provenienti dal gateway.
     
     <div>
     
 
     > [!NOTE]  
-    > Con il supporto di più trunk in Lync Server 2013, è possibile definire più porte di segnalazione SIP nel server Mediation da usare per la comunicazione con più gateway PSTN. Quando si definisce un trunk, la <STRONG>porta del server di mediazione associata</STRONG> deve essere compresa nell'intervallo delle porte in attesa per il rispettivo protocollo consentito dal server Mediation. Questo intervallo di porte è definito in Lync Server 2013 e nei pool di mediazione. Fare clic con il pulsante destro del mouse sul pool di Mediation Server di interesse e scegliere <STRONG>modifica proprietà</STRONG>. Specificare l'intervallo di porte nel campo <STRONG>porte in attesa</STRONG> .
+    > Con il supporto di più trunk in Lync Server 2013, è possibile definire più porte di segnalazione SIP sul Mediation Server da utilizzare per la comunicazione con più gateway PSTN. Quando si definisce un trunk, la <STRONG>porta del Mediation Server associata</STRONG> deve trovarsi all'interno dell'intervallo delle porte di attesa per il rispettivo protocollo consentito dal Mediation Server. Questo intervallo di porte è definito in Lync Server 2013 e Mediation pool. Fare clic con il pulsante destro del mouse sul pool di Mediation Server di interesse e scegliere <STRONG>modifica proprietà</STRONG>. Specificare l'intervallo di porte nel campo <STRONG>Porte di attesa</STRONG>.
 
     
     </div>
 
-10. Fare clic su **fine**.
+10. Fare clic su **Fine**.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Prima di completare questo passaggio, assicurarsi che il peer definito sia in uso e usare il nome di dominio completo o l'indirizzo IP specificato.
+> Prima di completare questo passaggio, verificare che il peer definito sia in esecuzione e utilizzi l'FQDN o l'indirizzo IP specificato.
 
 
 
 </div>
 
-Per aggiungere quindi il peer alla topologia, seguire le procedure descritte in [pubblicare la topologia in Lync Server 2013](lync-server-2013-publish-the-topology.md) nella documentazione relativa alla distribuzione. È necessario pubblicare la topologia ogni volta che si usa generatore di topologia per compilare o modificare la topologia, in modo che i dati possano essere usati per installare i file per i server che esegue Lync Server.
+Successivamente, per aggiungere il peer alla topologia, seguire le procedure illustrate in [pubblicare la topologia in Lync Server 2013](lync-server-2013-publish-the-topology.md) nella documentazione relativa alla distribuzione. È necessario pubblicare la topologia ogni volta che si utilizza Generatore di topologie per creare o modificare la topologia, in modo che i dati possano essere utilizzati per installare i file per i server che eseguono Lync Server.
 
 </div>
 
@@ -133,7 +133,7 @@ Per aggiungere quindi il peer alla topologia, seguire le procedure descritte in 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Modificare un trunk in Generatore di topologia in Lync Server 2013](lync-server-2013-modify-a-trunk-in-topology-builder.md)  
+[Modificare un trunk in Generatore di topologie in Lync Server 2013](lync-server-2013-modify-a-trunk-in-topology-builder.md)  
   
 
 </div>

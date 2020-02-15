@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Impostare i certificati per l'interfaccia perimetrale interna"
+title: "Lync Server 2013: impostare i certificati per l'interfaccia perimetrale interna"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184949
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ea6e462bdc629308493799c857ecb6b2434dc268
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7ff176545b84be3b4477894650c1d379df0a6be1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732266"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046489"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="set-up-certificates-for-the-internal-edge-interface-in-lync-server-2013"></a>Impostare i certificati per l'interfaccia perimetrale interna in Lync Server 2013
+# <a name="set-up-certificates-for-the-internal-edge-interface-in-lync-server-2013"></a>Configurare i certificati per l'interfaccia perimetrale interna in Lync Server 2013
 
 </div>
 
@@ -35,43 +35,43 @@ ms.locfileid: "41732266"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-11-07_
+_**Ultimo argomento modificato:** 2013-11-07_
 
 <div>
 
 
 > [!IMPORTANT]  
-> Quando si esegue la creazione guidata certificato, verificare di avere effettuato l'accesso con un account membro di un gruppo a cui sono state assegnate le autorizzazioni appropriate per il tipo di modello di certificato che verrà usato. Per impostazione predefinita, una richiesta di certificato di Lync Server 2013 utilizzerà il modello di certificato del server Web. Se si usa un account che è un membro del gruppo RTCUniversalServerAdmins per richiedere un certificato con questo modello, verificare che al gruppo siano state assegnate le autorizzazioni di registrazione necessarie per l'uso di tale modello.
+> Quando si esegue la Configurazione guidata certificati, verificare di aver eseguito l'accesso con un account membro di un gruppo a cui sono state assegnate le autorizzazioni appropriate per il tipo di modello di certificato che verrà utilizzato. Per impostazione predefinita, una richiesta di certificato di Lync Server 2013 utilizzerà il modello di certificato del server Web. Se per la richiesta di un certificato con questo modello si utilizza un account membro del gruppo RTCUniversalServerAdmins, verificare che al gruppo siano state assegnate le autorizzazioni di registrazione necessarie per l'utilizzo del modello.
 
 
 
 </div>
 
-È necessario un singolo certificato nell'interfaccia interna di ogni server perimetrale. I certificati per l'interfaccia interna possono essere emessi da un'autorità di certificazione (CA) aziendale interna o da una CA pubblica. Se l'organizzazione ha una CA interna distribuita, è possibile salvarla a spese dell'uso di certificati pubblici usando la CA interna per emettere il certificato per l'interfaccia interna. Per creare questi certificati, è possibile usare una CA interna di Windows Server 2008 o una CA Windows Server 2008 R2.
+Per l'interfaccia interna di ogni server perimetrale è necessario un unico certificato. I certificati per l'interfaccia interna possono essere emessi da un'Autorità di certificazione (CA) globale (enterprise) interna o da una CA pubblica. Se nell'organizzazione è distribuita una CA interna, è possibile emettere il certificato per l'interfaccia interna utilizzando la CA interna, evitando la spesa legata all'utilizzo di certificati pubblici. Per la creazione dei certificati è possibile utilizzare una CA interna Windows Server 2008 o Windows Server 2008 R2.
 
-Per informazioni dettagliate su questo e altri requisiti per i certificati, vedere [requisiti di certificato per l'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-certificate-requirements-for-external-user-access.md).
+Per informazioni dettagliate su questo e altri requisiti per i certificati, vedere [requisiti dei certificati per l'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-certificate-requirements-for-external-user-access.md).
 
-Per configurare i certificati sull'interfaccia Edge interna di un sito, usare le procedure descritte in questa sezione per eseguire le operazioni seguenti:
+Per impostare i certificati per l'interfaccia perimetrale interna presso un sito, le procedure descritte in questa sezione consentono di eseguire le attività seguenti:
 
-1.  Scaricare la catena di certificazione CA per l'interfaccia interna di ogni server perimetrale.
+1.  Scaricare la catena di certificazione CA per l'interfaccia interna in ogni server perimetrale.
 
 2.  Importare la catena di certificazione CA per l'interfaccia interna in ogni server perimetrale.
 
-3.  Creare la richiesta di certificato per l'interfaccia interna, in un server perimetrale, denominata First Edge Server.
+3.  Creare la richiesta di certificato per l'interfaccia interna in un unico server perimetrale, denominato primo server perimetrale.
 
 4.  Importare il certificato per l'interfaccia interna nel primo server perimetrale.
 
-5.  Importare il certificato sugli altri server perimetrali di questo sito (o distribuiti dietro questo bilanciamento del carico).
+5.  Importare il certificato negli altri server perimetrali presenti nel sito o distribuiti e controllati dal servizio di bilanciamento del carico.
 
 6.  Assegnare il certificato per l'interfaccia interna di ogni server perimetrale.
 
-Se si hanno più siti con Edge Server, ossia una topologia a più siti, o Set distinti di server perimetrali distribuiti con diversi tipi di bilanciamento del carico, è necessario seguire questi passaggi per ogni sito con Edge Server e per ogni set di Edge Server distribuiti dietro un diverso bilanciamento del carico.
+Se sono presenti più siti con server perimetrali, ovvero se è disponibile una topologia perimetrale con più siti, oppure insiemi distinti di server perimetrali distribuiti e controllati da servizi di bilanciamento del carico diversi, è necessario completare questi passaggi separatamente per ogni sito in cui sono presenti server perimetrali e per ogni insieme di server perimetrali distribuito e controllato da un servizio di bilanciamento del carico diverso.
 
 <div>
 
 
 > [!NOTE]  
-> La procedura per le procedure in questa sezione si basa sull'uso di una&nbsp;CA di windows Server 2008&nbsp;,&nbsp;di una CA, di Windows Server 2008 R2, di Windows Server 2012 CA o di Windows Server 2012 R2 per creare un certificato per ogni server perimetrale. Per istruzioni dettagliate per qualsiasi altra autorità di certificazione, consultare la documentazione relativa a tale CA. Per impostazione predefinita, tutti gli utenti autenticati dispongono dei diritti utente appropriati per richiedere certificati.<BR>Le procedure descritte in questa sezione si basano sulla creazione di richieste di certificato nell'Edge Server come parte del processo di distribuzione di Edge Server. È possibile creare richieste di certificato con il server front-end. Puoi eseguire questa operazione per completare la richiesta di certificato all'inizio del processo di pianificazione e distribuzione, prima di iniziare la distribuzione degli Edge Server. A questo scopo, devi assicurarti che il certificato richiesto sia definito con una chiave privata esportabile.<BR>Le procedure descritte in questa sezione descrivono l'uso di un file con estensione CER e p7b per il certificato. Se si usa un tipo di file diverso, modificare le procedure in base alle esigenze.
+> I passaggi per le procedure descritte in questa sezione si basano sull'utilizzo&nbsp;di un certificato di windows&nbsp;server&nbsp;2008 CA, di Windows Server 2008 r2 CA, di Windows Server 2012 CA o di Windows Server 2012 R2 per la creazione di certificati per ogni server perimetrale. Per istruzioni dettagliate per altre CA, consultare la documentazione della CA specifica. Per impostazione predefinita, tutti gli utenti autenticati dispongono dei diritti appropriati per richiedere certificati.<BR>Per le procedure descritte in questa sezione, si presuppone che la creazione delle richieste di certificati nel server perimetrale avvenga nel corso del processo di distribuzione del server perimetrale stesso. È possibile creare richieste di certificati utilizzando il Front End Server per completare la richiesta del certificato in una fase iniziale del processo di pianificazione e distribuzione, prima di cominciare la distribuzione dei server perimetrali. A tale scopo, è necessario che il certificato richiesto sia definito con una chiave privata esportabile.<BR>Nelle procedure di questa sezione è descritto l'utilizzo di un file con estensione cer e con estensione p7b come certificato. Se si utilizza un tipo di file diverso, modificare le procedure di conseguenza.
 
 
 
@@ -79,11 +79,11 @@ Se si hanno più siti con Edge Server, ossia una topologia a più siti, o Set di
 
 <div>
 
-## <a name="to-download-the-ca-certification-chain-for-the-internal-interface-using-certsrv-web-site"></a>Per scaricare la catena di certificazione CA per l'interfaccia interna tramite il sito Web di certsrv
+## <a name="to-download-the-ca-certification-chain-for-the-internal-interface-using-certsrv-web-site"></a>Per scaricare la catena di certificazione CA per l'interfaccia interna tramite il sito Web certsrv
 
 1.  Accedere a un server Lync Server 2013 nella rete interna, ovvero non nel server perimetrale, come membro del gruppo **Administrators** .
 
-2.  Eseguire il comando seguente al prompt dei comandi facendo clic sul pulsante **Start**, scegliendo **Esegui**e digitando quanto segue:
+2.  Eseguire il comando che segue. A tale scopo, fare clic sul pulsante **Start**, scegliere **Esegui** e quindi al prompt dei comandi digitare quanto segue:
     
         https://<name of your Issuing CA Server>/certsrv
     
@@ -95,24 +95,24 @@ Se si hanno più siti con Edge Server, ossia una topologia a più siti, o Set di
     
 
     > [!NOTE]  
-    > Se si usa una CA di Windows Server 2008 o Windows Server 2008 R2 Enterprise, è necessario usare HTTPS e non http.
+    > Se si utilizza una CA globale (enterprise) Windows Server 2008 o Windows Server 2008 R2, è necessario digitare https anziché http.
 
     
     </div>
 
-3.  Nella pagina Web certsrv della CA emittente, in **selezionare un'attività**, fare clic su **Scarica un certificato CA, una catena di certificati o un CRL**.
+3.  Nella pagina Web certsrv della CA emittente, in **Selezionare un'attività**, fare clic su **Scarica un certificato CA, la catena di certificati o un CRL**.
 
-4.  In **scaricare un certificato CA, una catena di certificati o un CRL**fare clic su **Scarica catena di certificati CA**.
+4.  In **Scarica un certificato CA, la catena di certificati o un CRL** fare clic su **Esegui download catena di certificati CA**.
 
-5.  Nella finestra di dialogo **Download file** fare clic su **Salva**.
+5.  Nella finestra di dialogo **Download del file** fare clic su **Salva**.
 
-6.  Salvare il file con estensione p7b nell'unità disco rigido del server e quindi copiarlo in una cartella in ogni server perimetrale.
+6.  Salvare il file con estensione p7b nell'unità disco rigido del server e quindi copiarlo in una cartella di ogni server perimetrale.
     
     <div>
     
 
     > [!NOTE]  
-    > Il file con estensione p7b contiene tutti i certificati presenti nel percorso di certificazione. Per visualizzare il percorso di certificazione, aprire il certificato del server e fare clic sul percorso di certificazione.
+    > Il file con estensione p7b contiene tutti i certificati inclusi nel percorso di certificazione. Per visualizzare il percorso di certificazione, aprire il certificato server e fare clic sul percorso di certificazione.
 
     
     </div>
@@ -123,45 +123,45 @@ Se si hanno più siti con Edge Server, ossia una topologia a più siti, o Set di
 
 ## <a name="to-export-the-ca-certification-chain-for-the-internal-interface-using-mmc"></a>Per esportare la catena di certificazione CA per l'interfaccia interna tramite MMC
 
-1.  È possibile esportare il certificato radice della CA da qualsiasi computer unito a un dominio usando Microsoft Management Console (MMC). Fare clic sul pulsante **Start**, scegliere **Esegui**e quindi digitare **MMC**.
+1.  È possibile esportare il certificato radice della CA da qualsiasi computer aggiunto a un dominio utilizzando Microsoft Management Console (MMC). A tale scopo, fare clic sul pulsante **Start**, scegliere **Esegui** e quindi digitare **MMC**.
 
-2.  Nella console MMC fare clic su **file**, quindi su **Aggiungi/Rimuovi**.
+2.  Nella console MMC fare clic su **File** e quindi su **Aggiungi/Rimuovi**.
 
-3.  Nell'elenco **Aggiungi o Rimuovi snap-** in selezionare **certificati**, quindi fare clic su **Aggiungi**. Quando richiesto, selezionare **account computer**. Nella finestra di dialogo **Seleziona computer** selezionare **computer locale**. Fare clic su **fine**. Fare clic su **OK**.
+3.  Nell'elenco della finestra di dialogo **Aggiungi o rimuovi snap-in** selezionare **Certificati** e quindi fare clic su **Aggiungi**. Quando richiesto, selezionare **Account del computer**. Nella finestra di dialogo **Selezione computer** selezionare **Computer locale**. Fare clic su **Fine**. Fare clic su **OK**.
 
-4.  Espandere **certificati (computer locale)**. Espandere **autorità di certificazione radice attendibili**, selezionare **certificati**.
+4.  Espandere **Certificati (computer locale)**. Espandere **Autorità di certificazione radice attendibili** e selezionare **Certificati**.
 
-5.  Fare clic sul certificato radice emesso dalla CA. Fare clic con il pulsante destro del mouse sul certificato, selezionare **tutte le attività**, quindi **Esporta**. Verrà aperta l' **esportazione guidata certificati** .
+5.  Fare clic sul certificato radice emesso dalla CA. Fare clic con il pulsante destro del mouse sul certificato, scegliere **Tutte le attività** e quindi **Esporta**. Verrà aperta l'**Esportazione guidata certificati**.
 
-6.  Nell' **esportazione guidata certificati**fare clic su **Avanti**.
+6.  Nell'**Esportazione guidata certificati** fare clic su **Avanti**.
 
-7.  Nella finestra di dialogo **Esporta formato file** selezionare un formato da esportare. È consigliabile la **sintassi del messaggio crittografico standard: \#i certificati PKCS 7 (. P7B)**. Se si seleziona la **sintassi del messaggio crittografico standard, \#ovvero i certificati PKCS 7 (. P7B)** selezionare la casella di controllo **Includi tutti i certificati nel percorso di certificazione, se possibile** , per esportare la catena di certificati, incluso il certificato della CA radice e gli eventuali certificati intermedi della CA. Fare clic su **Avanti**.
+7.  Nella finestra di dialogo **Formato file di esportazione** selezionare un formato per l'esportazione. È consigliabile utilizzare la **sintassi del messaggio crittografico standard \#– i certificati PKCS 7 (. P7B)**. Se si seleziona la **sintassi del messaggio crittografico standard – \#PKCS 7 Certificates (. P7B)**, selezionare la casella di controllo **Includi tutti i certificati nel percorso di certificazione, se possibile** , per esportare la catena di certificati, incluso il certificato della CA radice e tutti i certificati di CA intermedi. Fare clic su **Avanti**.
 
-8.  Nella finestra **di dialogo file da esportare** nella voce nome file digitare un percorso e un nome file (l'estensione predefinita è p7b) per il certificato esportato. Facoltativamente, fare clic su **Sfoglia**, individuare una directory in cui inserire il certificato esportato e specificare un nome per il certificato esportato. Fai clic su **Salva**. Fare clic su **Avanti**.
+8.  Nella finestra di dialogo **File da esportare** digitare nell'apposito campo un percorso e un nome file (l'estensione predefinita è p7b) per il certificato esportato. Facoltativamente fare clic su **Sfoglia**, individuare una directory in cui inserire il certificato esportato e specificare un nome per tale certificato. Fare clic su **Salva**. Fare clic su **Avanti**.
 
-9.  Esaminare il riepilogo delle azioni e fare clic su **fine** per completare l'esportazione del certificato. Fare clic su **OK** per confermare l'esportazione riuscita.
+9.  Esaminare il riepilogo delle azioni e fare clic su **Fine** per completare l'esportazione del certificato. Fare clic su **OK** per confermare l'avvenuta esecuzione dell'esportazione.
 
 </div>
 
 <div>
 
-## <a name="to-import-the-ca-certification-chain-for-the-internal-interface"></a>Per importare la catena di certificazione CA per l'interfaccia interna
+## <a name="to-import-the-ca-certification-chain-for-the-internal-interface"></a>Per importare la catena di certificazione della CA per l'interfaccia interna
 
-1.  In ogni server perimetrale aprire Microsoft Management Console (MMC) facendo clic sul pulsante **Start**, scegliendo **Esegui**, digitando **MMC** nella casella **Apri** e quindi facendo clic su **OK**.
+1.  In ogni server perimetrale fare clic sul pulsante **Start**, scegliere **Esegui**, digitare **mmc** nella casella **Apri** e quindi fare clic su **OK** per aprire Microsoft Management Console (MMC).
 
-2.  Nel menu **file** fare clic su **Aggiungi/Rimuovi snap-in**e quindi fare clic su **Aggiungi**.
+2.  Scegliere **Aggiungi/Rimuovi snap-in** dal menu **File** e quindi fare clic su **Aggiungi**.
 
-3.  Nella casella **Add standalone snap-** in fare clic su **certificati**e quindi fare clic su **Aggiungi**.
+3.  Nella casella **Aggiungi snap-in autonomo** fare clic su **Certificati** e quindi su **Aggiungi**.
 
-4.  Nella finestra di dialogo di **snap-in certificato** fare clic su **account computer**e quindi su **Avanti**.
+4.  Nella finestra di dialogo **Snap-in certificati** fare clic su **Account del computer** e quindi su **Avanti**.
 
-5.  Nella finestra di dialogo **Seleziona computer** verificare che la casella di controllo computer **locale: (il computer in cui è in uso questa console)** sia selezionata e quindi fare clic su **fine**.
+5.  Nella finestra di dialogo **Seleziona computer** assicurarsi che la casella di controllo **Computer locale (il computer su cui è in esecuzione questa console)** sia selezionata e quindi fare clic su **Fine**.
 
-6.  Fare clic su **Chiudi**e quindi su **OK**.
+6.  Fare clic su **Chiudi** e quindi su **OK**.
 
-7.  Nell'albero della console espandere **certificati (computer locale)**, fare clic con il pulsante destro del mouse su **autorità di certificazione radice attendibili**, scegliere **tutte le attività**e quindi fare clic su **Importa**.
+7.  Nell'albero della console espandere **Certificati (computer locale)**, fare clic con il pulsante destro del mouse su **Autorità di certificazione radice disponibile nell'elenco locale**, scegliere **Tutte le attività** e quindi **Importa**.
 
-8.  Nella procedura guidata, in **file da importare**, specificare il nome del file del certificato, ovvero il nome specificato quando è stata scaricata la catena di certificazione CA per l'interfaccia interna nella procedura precedente.
+8.  In **File da importare** all'interno della procedura guidata specificare il nome del file del certificato, ovvero il nome specificato al momento del download della catena di certificazione CA per l'interfaccia interna nella procedura precedente.
 
 9.  Ripetere questa procedura in ogni server perimetrale.
 
@@ -171,67 +171,67 @@ Se si hanno più siti con Edge Server, ossia una topologia a più siti, o Set di
 
 ## <a name="to-create-the-certificate-request-for-the-internal-interface"></a>Per creare la richiesta di certificato per l'interfaccia interna
 
-1.  In uno dei server perimetrali avviare la distribuzione guidata e, accanto al **passaggio 3: richiedere, installare o assegnare certificati**, fare clic su **Esegui**.
+1.  In uno dei server perimetrali avviare la Distribuzione guidata e accanto a **Passaggio 3: Richiesta, installazione o assegnazione dei certificati** fare clic su **Esegui**.
     
     <div>
     
 
     > [!NOTE]  
-    > Se si hanno più Edge Server in una posizione in un pool, è possibile eseguire la procedura guidata certificato in uno dei server perimetrali.<BR>Dopo aver eseguito il passaggio 3 la prima volta, il pulsante viene modificato di <STRONG>nuovo in esecuzione</STRONG>e un segno di spunta verde che indica che il completamento dell'attività non viene visualizzato finché tutti i certificati di richiesta non sono stati richiesti, installati e assegnati.
+    > Se in una stessa posizione sono presenti più server perimetrali in pool, è possibile eseguire la Configurazione guidata certificati in uno qualsiasi del server perimetrali.<BR>Dopo la prima esecuzione del passaggio 3, il pulsante viene modificato in <STRONG>Riesegui</STRONG>. Il segno di spunta di colore verde che indica il completamento dell'attività viene visualizzato solo dopo la richiesta, l'installazione e l'assegnazione di tutti i certificati.
 
     
     </div>
 
-2.  Nella pagina **attività certificato disponibili** fare clic su **Crea una nuova richiesta di certificato**.
+2.  Nella pagina **Attività certificato disponibili** fare clic su **Crea una nuova richiesta di certificato**.
 
-3.  Nella pagina **richiesta certificato** fare clic su **Avanti**.
+3.  Nella pagina **Richiesta di certificato** fare clic su **Avanti**.
 
-4.  Nella pagina **richieste immediate o posticipate** fare clic su **prepara la richiesta ora, ma inviarla**in un secondo momento.
+4.  Nella pagina **Richieste immediate o ritardate** fare clic su **Prepara la richiesta per l'invio posticipato**.
 
-5.  Nella pagina **file di richiesta certificato** Digitare il percorso completo e il nome del file a cui deve essere salvata la richiesta, ad esempio **c:\\CERT\_Internal\_Edge. cer**.
+5.  Nella pagina **file richiesta di certificato** Digitare il percorso completo e il nome del file in cui si desidera salvare la richiesta, ad esempio **c\\: CERT\_Internal\_Edge. cer**.
 
-6.  Nella pagina **Specifica modello di certificato alternativo** , per usare un modello diverso da quello predefinito del modello webserver, selezionare la casella di controllo **Usa il modello di certificato alternativo per l'autorità di certificazione selezionata** .
+6.  Nella pagina **Specifica modello di certificato alternativo** per utilizzare un modello diverso dal modello WebServer predefinito selezionare la casella di controllo **Utilizza modello di certificato alternativo per l'autorità di certificazione selezionata**.
 
-7.  Nella pagina **impostazioni di sicurezza e nome** eseguire le operazioni seguenti:
+7.  Nella pagina **Impostazioni nome e sicurezza** eseguire le operazioni seguenti:
     
-      - In **nome descrittivo**Digitare un nome visualizzato per il certificato, ad esempio bordo interno.
+      - In **Nome descrittivo** digitare il nome da visualizzare per il certificato, ad esempio Server perimetrale interno.
     
-      - In **bit length**specificare la lunghezza in bit (in genere, il valore predefinito è **2048**).
+      - In **Lunghezza bit** specificare la lunghezza in bit (di solito, l'impostazione predefinita **2048**).
         
         <div>
         
 
         > [!NOTE]  
-        > Le lunghezze di bit più alte offrono maggiore sicurezza, ma hanno un impatto negativo sulla velocità.
+        > Una lunghezza in bit più alta offre maggiore sicurezza, ma influisce negativamente sulla velocità.
 
         
         </div>
     
-      - Se il certificato deve essere esportabile, selezionare la casella di controllo **contrassegna la chiave privata del certificato come esportabile** .
+      - Se è necessario che il certificato sia esportabile, selezionare la casella di controllo **Contrassegna come esportabile la chiave di certificato privata**.
 
-8.  Nella pagina **informazioni organizzazione** Digitare il nome dell'organizzazione e dell'unità organizzativa (ad esempio, divisione o reparto).
+8.  Nella pagina **Informazioni sull'organizzazione** digitare il nome per l'organizzazione e l'unità organizzativa, ad esempio una divisione o un reparto.
 
-9.  Nella pagina **informazioni geografiche** specificare le informazioni sulla posizione.
+9.  Nella pagina **Dati geografici** specificare le informazioni sulla posizione.
 
-10. Nella pagina **nome oggetto/nomi oggetto alternativo** vengono visualizzate le informazioni che verranno inserite automaticamente dalla procedura guidata.
+10. Nella pagina **Nome soggetto / Nomi soggetto alternativi** sono visualizzate le informazioni che verranno inserite automaticamente mediante la procedura guidata.
 
-11. Nella pagina **Configura altri nomi alternativi oggetto** specificare eventuali altri nomi alternativi per gli argomenti necessari.
+11. Nella pagina **Configura nomi soggetto alternativi aggiuntivi** specificare eventuali nomi soggetto alternativi aggiuntivi richiesti.
 
-12. Nella pagina **Riepilogo richieste** verificare le informazioni sul certificato che verranno usate per generare la richiesta.
+12. Nella pagina **Riepilogo richiesta** rivedere le informazioni relative al certificato che verranno utilizzate per la generazione della richiesta.
 
-13. Dopo aver completato i comandi, eseguire le operazioni seguenti:
+13. Dopo il completamento dell'esecuzione dei comandi eseguire le operazioni seguenti:
     
-      - Per visualizzare il log per la richiesta di certificato, fare clic su **Visualizza log**.
+      - Per visualizzare il registro della richiesta di certificato, fare clic su **Visualizza registro**.
     
-      - Per completare la richiesta di certificato, fare clic su **Avanti**.
+      - Per completare la richiesta del certificato, fare clic su **Avanti**.
 
-14. Nella pagina **file di richiesta certificato** eseguire le operazioni seguenti:
+14. Nella pagina **File richiesta di certificato** eseguire le operazioni seguenti:
     
-      - Per visualizzare il file della richiesta di firma del certificato (CSR) generato, fare clic su **Visualizza**.
+      - Per visualizzare il file di richiesta di firma del certificato (CSR) generato, fare clic su **Visualizza**.
     
-      - Per chiudere la procedura guidata, fare clic su **fine**.
+      - Per chiudere la procedura guidata, fare clic su **Fine**.
 
-15. Inviare il file alla CA (tramite posta elettronica o altro metodo supportato dall'organizzazione per la CA aziendale) e, quando si riceve il file di risposta, copiare il nuovo certificato nel computer in modo che sia disponibile per l'importazione.
+15. Inviare il file alla CA, tramite posta elettronica o un altro metodo supportato dall'organizzazione per la CA globale (enterprise). Alla ricezione del file di risposta copiare il nuovo certificato nel computer in modo che sia disponibile per l'importazione.
 
 </div>
 
@@ -239,106 +239,106 @@ Se si hanno più siti con Edge Server, ossia una topologia a più siti, o Set di
 
 ## <a name="to-import-the-certificate-for-the-internal-interface"></a>Per importare il certificato per l'interfaccia interna
 
-1.  Accedere all'Edge Server in cui è stata creata la richiesta di certificato come membro del gruppo Administrators locale.
+1.  Accedere al server perimetrale in cui è stata creata la richiesta di certificato con un account membro del gruppo Administrators locale.
 
-2.  Nella distribuzione guidata, accanto a **passaggio 3: richiedere, installare o assegnare certificati**, fare di nuovo clic su **Esegui**.
+2.  Nella Distribuzione guidata, accanto a **Passaggio 3: Richiesta, installazione o assegnazione dei certificati**, fare clic su **Riesegui**.
     
-    Dopo aver eseguito il passaggio 3 la prima volta, il pulsante viene modificato di **nuovo in esecuzione**, ma un segno di spunta verde (che indica il completamento dell'attività) non viene visualizzato finché non sono stati richiesti, installati e assegnati tutti i certificati.
+    Dopo la prima esecuzione del passaggio 3, il pulsante viene modificato in **Riesegui**. Il segno di spunta di colore verde che indica il completamento dell'attività viene visualizzato solo dopo la richiesta l'installazione e l'assegnazione di tutti i certificati.
 
-3.  Nella pagina **attività certificato disponibili** fare clic su **Importa un certificato da a. File di P7b, pfx o CER**.
+3.  Nella pagina **Attività certificato disponibili** fare clic su **Importa un certificato da un file con estensione P7b, pfx o cer**.
 
-4.  Nella pagina **Importa certificato** Digitare il percorso completo e il nome file del certificato richiesto e ricevuto per l'interfaccia interna di questo Edge Server (oppure fare clic su **Sfoglia** per individuare e selezionare il file).
+4.  Nella pagina **Importa certificato** digitare il percorso completo e il nome del file del certificato richiesto e ricevuto per il server perimetrale. In alternativa, fare clic su **Sfoglia** per individuare e selezionare il file.
 
-5.  Se si importano certificati per altri membri del pool un certificato contenente una chiave privata, selezionare il **file di certificato contiene la casella di controllo chiave privata di certificato** e specificare la password.
+5.  Se si desidera importare certificati per altri membri del pool e un certificato contiene una chiave privata, selezionare la casella di controllo **Il file di certificato contiene una chiave di certificato privata** e specificare la password.
 
 </div>
 
 <div>
 
-## <a name="to-export-the-certificate-with-the-private-key-for-edge-servers-in-a-pool"></a>Per esportare il certificato con la chiave privata per Edge Server in un pool
+## <a name="to-export-the-certificate-with-the-private-key-for-edge-servers-in-a-pool"></a>Per esportare il certificato con la chiave privata per i server perimetrali in un pool
 
-1.  Accedere come membro del gruppo Administrators allo stesso Edge Server in cui è stato importato il certificato.
+1.  Accedere come membro del gruppo Administrators allo stesso server perimetrale in cui è stato importato il certificato.
 
-2.  Fare clic sul pulsante **Start**, scegliere **Esegui**e digitare **MMC**.
+2.  Fare clic sul pulsante **Start**, scegliere **Esegui** e digitare **MMC**.
 
-3.  Nella console MMC fare clic su **file**, fare clic su **Aggiungi/Rimuovi snap-in**.
+3.  Nella console MMC scegliere **Aggiungi/Rimuovi snap-in** dal menu **File**.
 
-4.  Nella pagina Aggiungi o Rimuovi snap-in fare clic su **certificati**, fare clic su **Aggiungi**.
+4.  Nella pagina Aggiungi/Rimuovi snap-in fare clic su **Certificati** e su **Aggiungi**.
 
-5.  Nella finestra di dialogo snap-in certificati selezionare **account computer**. Fare clic su **Avanti**. In Seleziona computer selezionare **computer locale: (il computer in cui è in uso la console)**. Fare clic su **fine**. Fare clic su **OK** per completare la configurazione della console MMC.
+5.  Nella finestra di dialogo dello snap-in Certificati selezionare **Account del computer**. Fare clic su **Avanti**. In Seleziona computer selezionare **Computer locale (il computer in cui viene eseguita questa console)**. Fare clic su **Fine**. Fare clic su **OK** per completare la configurazione della console MMC console.
 
-6.  Fare doppio clic su **certificati (computer locale)** per espandere gli archivi di certificati. Fare doppio clic su **personale**, quindi fare doppio clic su **certificati**.
+6.  Fare doppio clic su **Certificati (computer locale)** per espandere gli archivi certificati. Fare doppio clic su **Personale** e quindi su **Certificati**.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > Se non ci sono certificati nell'archivio personale certificati per il computer locale, non esiste alcuna chiave privata associata al certificato importato. Esaminare la procedura di richiesta e importazione. Se il problema persiste, contattare l'amministratore o il provider dell'autorità di certificazione.
+    > Se nell'archivio personale dei certificati non sono presenti certificati per il computer locale, al certificato importato non è associata alcuna chiave privata. Rivedere i passaggi della richiesta e dell'impostazione. Se il problema persiste, rivolgersi all'amministratore o al provider dell'autorità di certificazione.
 
     
     </div>
 
-7.  Nell'archivio personale certificati per il computer locale fare clic con il pulsante destro del mouse sul certificato che si sta esportando. Fare clic su **tutte le attività**, fare clic su **Esporta**.
+7.  Nell'archivio personale dei certificati per il computer locale fare clic con il pulsante destro del mouse sul certificato che si desidera esportare. Scegliere **Tutte le attività** e quindi fare clic su **Esporta**.
 
-8.  Nell'esportazione guidata certificati fare clic su **Avanti**. Selezionare **Sì, esportare la chiave privata**. Fare clic su **Avanti**.
+8.  Nell'Esportazione guidata certificati fare clic su **Avanti**. Selezionare **Sì, esporta la chiave privata**. Fare clic su **Avanti**.
     
     <div>
     
 
     > [!NOTE]  
-    > Se la selezione <STRONG>Sì, Esporta la chiave privata</STRONG> non è disponibile, la chiave privata associata al certificato non è stata contrassegnata per l'esportazione. Sarà necessario richiedere di nuovo il certificato, assicurandosi che il certificato sia contrassegnato per consentire l'esportazione della chiave privata prima di poter continuare con l'esportazione. Contattare l'amministratore o il provider dell'autorità di certificazione.
+    > Se l'opzione <STRONG>Sì, esporta la chiave privata</STRONG> non è disponibile, la chiave privata associata al certificato non è stata contrassegnata per l'esportazione. Per continuare l'esportazione, è necessario ripetere la richiesta di certificato, verificando che il certificato stesso sia contrassegnato per l'esportazione della chiave privata. Rivolgersi all'amministratore o al provider dell'autorità di certificazione.
 
     
     </div>
 
-9.  Nella finestra di dialogo Esporta formati di file selezionare **Personal Information Exchange-\#PKCS 12 (. PFX)** e quindi selezionare le opzioni seguenti:
+9.  Nella finestra di dialogo formati file di esportazione selezionare **scambio di informazioni personali\#-PKCS 12 (. PFX)** e quindi selezionare le opzioni seguenti:
     
-      - Includere tutti i certificati nel percorso di certificazione, se possibile
+      - Se possibile, includi tutti i certificati nel percorso certificazione
     
-      - Esportare tutte le proprietà estese
+      - Esporta tutte le proprietà estese
         
         <div>
         
 
         > [!WARNING]  
-        > Quando si esporta il certificato da un server perimetrale, non selezionare <STRONG>Elimina la chiave privata se l'esportazione ha esito positivo</STRONG>. Se si seleziona questa opzione, è necessario importare il certificato e la chiave privata in questo server perimetrale.
+        > Quando si esporta un certificato da un server perimetrale, non selezionare <STRONG>Elimina la chiave privata se l'esportazione ha esito positivo</STRONG>. In caso contrario, è necessario importare nel server perimetrale il certificato e la chiave privata.
 
         
         </div>
     
     Fare clic su **Avanti** per continuare.
 
-10. Se si vuole assegnare una password per proteggere la chiave privata, digitare una password per la chiave privata. Immettere di nuovo la password per confermare. Fare clic su **Avanti**.
+10. Se si desidera assegnare una password per proteggere la chiave privata, digitare una password per la chiave privata. Reimmettere la password per conferma. Fare clic su **Avanti**.
 
-11. Digitare un percorso e un nome di file per il certificato esportato, usando un'estensione di file PFX. Il percorso deve essere accessibile a tutti gli altri Edge Server nel pool o disponibile per il trasporto tramite supporti rimovibili, ad esempio un'unità flash USB. Fare clic su **Avanti**.
+11. Digitare un percorso e un nome di file per il certificato esportato Assegnare al file l'estensione pfx. Il percorso deve essere accessibile per tutti gli altri server perimetrali del pool o disponibile per il trasporto mediante supporto rimovibile, ad esempio un'unità flash USB. Fare clic su **Avanti**.
 
-12. Esaminare il riepilogo nella finestra di dialogo completamento dell'esportazione guidata certificati. Fare clic su **fine**.
+12. Esaminare il riepilogo nella finestra di dialogo Completamento dell'Esportazione guidata certificati. Fare clic su **Fine**.
 
-13. Fare clic su **OK** nella finestra di dialogo Esporta riuscita.
+13. Fare clic su **OK** nella finestra di dialogo di conclusione dell'esportazione.
 
-14. Importare il file di certificato esportato negli altri Edge Server seguendo la procedura descritta in [configurare i certificati per l'interfaccia esterna di Edge per le procedure di Lync Server 2013](lync-server-2013-set-up-certificates-for-the-external-edge-interface.md) .
+14. Importare il file del certificato esportato negli altri server perimetrali seguendo i passaggi descritti nella procedura di [configurazione dei certificati per l'interfaccia perimetrale esterna per le procedure di Lync Server 2013](lync-server-2013-set-up-certificates-for-the-external-edge-interface.md) .
 
 </div>
 
 <div>
 
-## <a name="to-assign-the-internal-certificate-on-the-edge-servers"></a>Per assegnare il certificato interno agli Edge Server
+## <a name="to-assign-the-internal-certificate-on-the-edge-servers"></a>Per assegnare il certificato interno nei server perimetrali
 
-1.  In ogni server perimetrale, nella distribuzione guidata, accanto a **passaggio 3: richiedere, installare o assegnare certificati**, fare di **nuovo**clic su Esegui.
+1.  In ogni server perimetrale, nella Distribuzione guidata, accanto a **Passaggio 3: Richiesta, installazione o assegnazione dei certificati**, fare clic su **Riesegui**.
 
-2.  Nella pagina **attività certificato disponibili** fare clic su **assegna un certificato esistente**.
+2.  Nella pagina **Attività certificato disponibili** fare clic su **Assegna un certificato esistente**.
 
-3.  Nella pagina **assegnazione certificato** selezionare **bordo interno** nell'elenco.
+3.  Nella pagina **Assegnazione certificato** selezionare **Edge Server interno** nell'elenco.
 
-4.  Nella pagina **archivio certificati** selezionare il certificato importato per il bordo interno (nella procedura precedente).
+4.  Nella pagina **Archivio certificati** selezionare il certificato importato con la procedura precedente per il server perimetrale.
 
-5.  Nella pagina **Riepilogo assegnazione certificati** verificare le impostazioni e quindi fare clic su **Avanti** per assegnare i certificati.
+5.  Nella pagina **Riepilogo assegnazione certificato** rivedere le impostazioni e quindi fare clic su **Avanti** per assegnare i certificati.
 
-6.  Nella pagina Completamento procedura guidata fare clic su **fine**.
+6.  Nella pagina finale della procedura guidata fare clic su **Fine**.
 
-7.  Dopo aver usato questa procedura per assegnare il certificato del bordo interno, aprire lo snap-in certificato in ogni server, espandere **certificati (computer locale)**, espandere **personale**, fare clic su **certificati**e quindi verificare nel riquadro dei dettagli l'elenco del certificato perimetrale interno.
+7.  Dopo aver assegnato il certificato del server perimetrale interno mediante questa procedura, aprire lo snap-in Certificati in ogni server, espandere **Certificati (computer locale)**, espandere **Personale**, fare clic su **Certificati** e quindi verificare che il certificato del server perimetrale interno sia presente nel riquadro dei dettagli.
 
-8.  Se la distribuzione include più Edge Server, ripetere questa procedura per ogni server perimetrale.
+8.  Se la distribuzione include più server perimetrali, ripetere la procedura per ognuno di essi.
 
 </div>
 

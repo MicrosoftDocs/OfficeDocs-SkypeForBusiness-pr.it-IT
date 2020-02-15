@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Eliminazione di un messaggio o dei messaggi obsoleti'
+title: 'Lync Server 2013: eliminazione di un messaggio o eliminazione di messaggi obsoleti'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48706000
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d8040d52690628b6085727d6a1fdac9288b94d5e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 5fb0c960140ebe7474ac7b4b5322f7b42d611af5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763238"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048957"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deleting-a-message-or-purging-obsolete-messages-in-lync-server-2013"></a>Eliminazione di un messaggio o dei messaggi obsoleti in Lync Server 2013
+# <a name="deleting-a-message-or-purging-obsolete-messages-in-lync-server-2013"></a>Eliminazione di un messaggio o eliminazione di messaggi obsoleti in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41763238"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-02-05_
+_**Ultimo argomento modificato:** 2014-02-05_
 
-Un amministratore della chat persistente può eliminare un messaggio da una chat room persistente (e, facoltativamente, può sostituirlo con un altro messaggio). Gli amministratori possono anche eliminare i messaggi obsoleti come parte della manutenzione continua, per ridurre al minimo la crescita del database. Questo comando di Windows PowerShell, ad esempio, rimuove tutti i messaggi della chat room di room ITChatRoom inviati dall'utente kenmyer@litwareinc.com:
+Un amministratore di chat persistente può eliminare un messaggio da una chat room persistente (e, facoltativamente, può sostituirlo con un altro messaggio). Gli amministratori possono inoltre eliminare i messaggi durante le operazioni di manutenzione in modo da ridurre l'aumento delle dimensioni del database. Ad esempio, il comando di Windows PowerShell rimuove tutti i messaggi dalla chat room di room ITChatRoom che sono stati pubblicati dall'utente kenmyer@litwareinc.com:
 
     Remove-CsPersistentChatMessage -Identity "atl-persistentchat-001.litwareinc.com\ITChatRoom" -UserUri "sip:kenmyer@litwareinc.com"
 
-Questo esempio sostituisce i messaggi rimossi con la nota che il messaggio non è più disponibile:
+In questo esempio vengono sostituiti tutti i messaggi rimossi con la nota che il messaggio non è più disponibile:
 
     Remove-CsPersistentChatMessage -Identity "atl-persistentchat-001.litwareinc.com\ITChatRoom" -UserUri "sip:kenmyer@litwareinc.com" -ReplaceMessage "This message is no longer available."
 
-Per altre informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsPersistentChatMessage](https://docs.microsoft.com/powershell/module/skype/Remove-CsPersistentChatMessage) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsPersistentChatMessage](https://docs.microsoft.com/powershell/module/skype/Remove-CsPersistentChatMessage) .
 
 </div>
 

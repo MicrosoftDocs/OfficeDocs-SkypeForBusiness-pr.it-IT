@@ -12,16 +12,16 @@ ms:contentKeyID: 48183730
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 429c68ad96d4738b835f549a5f355e6c133ead74
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4609f588eec8d68ec163abd8a15a44f5f88a7620
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728536"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044088"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41728536"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-Per ridurre al minimo il traffico di comunicazioni in tempo reale nel pool di grandi riunioni, non è consigliabile ospitare gli utenti che accedono regolarmente tramite client Lync e partecipano a messaggistica istantanea, presenza, conferenza e sessioni vocali. È invece consigliabile eseguire una delle operazioni seguenti:
+Per ridurre al minimo il traffico delle comunicazioni in tempo reale nel pool delle riunioni di grandi dimensioni, è sconsigliabile ospitare utenti che eseguono regolarmente l'accesso usando client Lync e partecipano a sessioni di messaggistica istantanea, presenza, conferenza e vocali. È invece consigliabile eseguire una delle operazioni seguenti:
 
-  - Creare uno o più account utente dedicati solo per la pianificazione di riunioni di grandi dimensioni o
+  - Creare uno o più account utente dedicati solo per la pianificazione delle riunioni di grandi dimensioni, oppure
 
-  - Home gli account utente del personale responsabile per la pianificazione di riunioni di grandi dimensioni in un pool di grandi riunioni.
+  - Ospitare gli account utente del responsabile dello staff per la pianificazione delle riunioni di grandi dimensioni su un pool di riunioni di grandi dimensioni.
 
-In entrambi i casi, gli account utente ospitati nel pool di grandi riunioni non devono essere usati per accedere regolarmente a Lync, se non per pianificare le riunioni.
+In entrambi i casi, è consigliabile evitare di usare gli account utente ospitati nel pool di riunioni di grandi dimensioni per accedere regolarmente a Lync, tranne che per pianificare le riunioni.
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Requisiti relativi a IIS (Internet Information Services)'
+title: 'Lync Server 2013: requisiti di Internet Information Services (IIS)'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184128
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3f4b51ac4996e2556ced3ad91e15a6cc58a1623c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9a086713c4c4c1ea5752c7e1b46ce46e48a0ea42
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725806"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42040945"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="internet-information-services-iis-requirements-in-lync-server-2013"></a>Requisiti relativi a IIS (Internet Information Services) in Lync Server 2013
+# <a name="internet-information-services-iis-requirements-in-lync-server-2013"></a>Requisiti di Internet Information Services (IIS) in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41725806"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-19_
+_**Ultimo argomento modificato:** 2012-06-19_
 
-Diversi componenti di Lync Server 2013 richiedono Internet Information Services (IIS). In questo argomento vengono illustrate le caratteristiche specifiche di IIS necessarie per supportare Lync Server. Gli argomenti in questa sezione descrivono i requisiti di componenti specifici per IIS.
+Diversi componenti di Lync Server 2013 richiedono Internet Information Services (IIS). In questo argomento vengono descritte le caratteristiche di IIS specifiche necessarie per il supporto di Lync Server. Negli argomenti di questa sezione vengono descritti i requisiti per i componenti specifici di IIS.
 
-Quando il ruolo del server Web (IIS) è abilitato in Windows Server 2008, per impostazione predefinita vengono installati vari servizi di ruolo. La tabella seguente descrive i servizi ruolo aggiuntivi che devono essere installati quando il ruolo del server Web (IIS) è abilitato in Windows Server 2008.
+Quando il ruolo server Web (IIS) è abilitato su Windows Server 2008, per impostazione predefinita vengono installati vari servizi ruolo. Nella tabella seguente vengono descritti i servizi ruolo aggiuntivi che devono essere installati quando il ruolo server Web (IIS) è abilitato su Windows Server 2008.
 
 
 <table>
@@ -64,7 +64,7 @@ Quando il ruolo del server Web (IIS) è abilitato in Windows Server 2008, per im
 </tr>
 <tr class="odd">
 <td><p>Sviluppo di applicazioni</p></td>
-<td><p>Estensibilità .NET</p></td>
+<td><p>Estendibilità .NET</p></td>
 </tr>
 <tr class="even">
 <td><p>Sviluppo di applicazioni</p></td>
@@ -80,7 +80,7 @@ Quando il ruolo del server Web (IIS) è abilitato in Windows Server 2008, per im
 </tr>
 <tr class="odd">
 <td><p>Integrità e diagnostica</p></td>
-<td><p>Traccia</p></td>
+<td><p>Analisi della</p></td>
 </tr>
 <tr class="even">
 <td><p>Sicurezza</p></td>
@@ -92,11 +92,11 @@ Quando il ruolo del server Web (IIS) è abilitato in Windows Server 2008, per im
 </tr>
 <tr class="even">
 <td><p>Strumenti di gestione</p></td>
-<td><p>Script e strumenti di gestione di IIS</p></td>
+<td><p>Strumenti e script di gestione IIS</p></td>
 </tr>
 <tr class="odd">
 <td><p>Strumenti di gestione</p></td>
-<td><p>Compatibilità di gestione di IIS 6</p></td>
+<td><p>Compatibilità gestione IIS 6</p></td>
 </tr>
 </tbody>
 </table>
@@ -112,7 +112,7 @@ Quando il ruolo del server Web (IIS) è abilitato in Windows Server 2008, per im
 </thead>
 <tbody>
 <tr class="odd">
-<td>Se si usa IIS 7,0 in un sistema operativo Windows Server 2008, il programma di installazione di Lync Server disabilita l'autenticazione in modalità kernel in IIS.</td>
+<td>Se si utilizza IIS 7,0 in un sistema operativo Windows Server 2008, il programma di installazione di Lync Server disattiva l'autenticazione in modalità kernel in IIS.</td>
 </tr>
 </tbody>
 </table>
@@ -122,9 +122,9 @@ Quando il ruolo del server Web (IIS) è abilitato in Windows Server 2008, per im
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Requisiti di IIS per pool Front End e server Standard Edition in Lync Server 2013](lync-server-2013-iis-requirements-for-front-end-pools-and-standard-edition-servers.md)
+  - [Requisiti di IIS per pool Front end e server Standard Edition in Lync Server 2013](lync-server-2013-iis-requirements-for-front-end-pools-and-standard-edition-servers.md)
 
 </div>
 

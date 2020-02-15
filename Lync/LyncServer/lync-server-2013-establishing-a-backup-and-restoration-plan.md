@@ -12,16 +12,16 @@ ms:contentKeyID: 51541499
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cee1c4571dafa4e513f42613de13205ecec9de42
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bbe142d697fc3d95772fb2d4ca758b8550054a8e
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735258"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042523"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,7 +35,7 @@ ms.locfileid: "41735258"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-17_
+_**Ultimo argomento modificato:** 2013-02-17_
 
 La creazione di un piano di backup e ripristino prevede i passaggi seguenti:
 
@@ -43,39 +43,39 @@ La creazione di un piano di backup e ripristino prevede i passaggi seguenti:
 
   - Implementazione del piano.
 
-  - Manutenzione del piano.
+  - Gestione del piano.
 
 <div>
 
 ## <a name="developing-a-backup-and-restoration-plan"></a>Sviluppo di un piano di backup e ripristino
 
-Dopo aver sviluppato la strategia di backup e ripristino per Lync Server, è possibile usarla per documentare un piano di backup e ripristino dettagliato. Il piano deve trasmettere chiaramente le priorità e i requisiti per il backup dei dati e delle impostazioni. È possibile usare le informazioni disponibili per [stabilire una strategia di backup e ripristino per Lync server 2013](lync-server-2013-establishing-a-backup-and-restoration-strategy.md) e i fogli di lavoro in fogli di lavoro di [backup e ripristino per Lync Server 2013](lync-server-2013-backup-and-restoration-worksheets.md) per facilitare la documentazione della propria strategia. Il piano deve inoltre contenere criteri per decidere quando e come ripristinare il servizio.
+Dopo aver sviluppato la strategia di backup e ripristino per Lync Server, utilizzarla per documentare un piano di backup e ripristino dettagliato. Il piano deve comunicare chiaramente le priorità e i requisiti per il backup di dati e impostazioni. È possibile utilizzare le informazioni contenute nella [creazione di una strategia di backup e ripristino per Lync server 2013](lync-server-2013-establishing-a-backup-and-restoration-strategy.md) e fogli di lavoro in fogli di lavoro di [backup e ripristino per Lync Server 2013](lync-server-2013-backup-and-restoration-worksheets.md) per facilitare la documentazione della propria strategia. Il piano deve inoltre contenere criteri in base ai quali stabilire quando e come ripristinare il servizio.
 
-Man mano che sviluppi il piano, devi prendere in considerazione e tenere conto di quanto segue:
+Quando si sviluppa il piano, è necessario prendere in considerazione e tenere conto di quanto segue:
 
-  - Come ripristinare i server nel nuovo hardware.
+  - La modalità di recupero dei server nel nuovo hardware.
 
-  - Come si recupereranno i servizi che richiedono un'azione da parte di più aree o reparti aziendali.
+  - La modalità di recupero dei servizi per i quali è necessario l'intervento di più aree aziendali o reparti.
 
-  - Come è possibile acquisire rapidamente i server di riserva.
+  - La modalità di acquisizione rapida di server di riserva.
 
-  - Il tempo necessario per il ripristino usando la strategia. Considera i requisiti dell'organizzazione per l'obiettivo del tempo di recupero (RTO).
+  - Il tempo necessario per il ripristino secondo la strategia in questione Considerare i requisiti dell'organizzazione per l'obiettivo del tempo di ripristino (RTO).
 
-Modificare le procedure di backup e ripristino in questo argomento, aggiungendo ed eliminando le procedure appropriate per riflettere i server e i componenti della distribuzione. È anche possibile aggiungere dettagli appropriati, ad esempio la pianificazione del backup, alle procedure appropriate per verificare che le informazioni non vengano trascurate.
+Modificare le procedure di backup e ripristino in questo argomento, aggiungendo ed eliminando le procedure appropriate, in modo da riflettere i server e i componenti della distribuzione. È inoltre possibile aggiungere informazioni appropriate, ad esempio la pianificazione di backup, alle procedure appropriate per assicurarsi che le informazioni non vengano trascurate.
 
 <div>
 
 
 > [!NOTE]  
-> È buona norma creare script per il maggior numero possibile di passaggi, per garantire la qualità e la riproducibilità delle procedure.
+> È consigliabile creare script per il maggior numero possibile di passaggi, per garantire la qualità e la riproducibilità delle procedure.
 
 
 
 </div>
 
-Nel piano specificare chi è responsabile della revisione del piano, che è responsabile del test e della convalida di eventuali nuove procedure o strumenti e che deve approvare le eventuali modifiche apportate al piano e alle procedure correlate.
+Nel piano specificare chi è responsabile della revisione del piano, che è responsabile del testing e della convalida di qualsiasi nuova procedura o strumento e che deve approvare le modifiche apportate al piano e alle relative procedure.
 
-Per assicurarti che il piano di backup e ripristino soddisfi pienamente tutti gli obiettivi e le priorità stabiliti, Ottieni l'approvazione dei responsabili decisionali e delle decisioni tecniche aziendali appropriate prima di implementare il piano.
+Per assicurarsi che il piano di backup e ripristino soddisfi pienamente tutti gli obiettivi e le priorità stabiliti, ottenere l'approvazione dei responsabili decisionali e delle decisioni tecniche aziendali appropriate nell'organizzazione prima di implementare il piano.
 
 </div>
 
@@ -85,9 +85,9 @@ Per assicurarti che il piano di backup e ripristino soddisfi pienamente tutti gl
 
 L'implementazione di un piano di backup e ripristino richiede i passaggi seguenti:
 
-  - Testare e convalidare il piano.
+  - Test e convalida del piano.
 
-  - Comunicare il piano.
+  - Comunicazione del piano.
 
   - Convalida delle operazioni di backup e ripristino.
 
@@ -95,23 +95,23 @@ L'implementazione di un piano di backup e ripristino richiede i passaggi seguent
 
 ## <a name="testing-and-validating-the-plan"></a>Test e convalida del piano
 
-Le procedure descritte in questo articolo sono state testate e convalidate in un ambiente lab. Per assicurarsi che queste o altre procedure funzionino nell'ambiente, è consigliabile testare e convalidare ogni procedura da implementare. Completare i test e la convalida prima di inviare il piano per l'approvazione finale.
+Le procedure descritte in questo articolo sono state testate e convalidate in un ambiente lab. Per assicurarsi che queste o altre procedure funzionino nell'ambiente in uso, è consigliabile testare e convalidare ogni procedura che si intende implementare. Completare i test e la convalida prima di inviare il piano per l'approvazione finale.
 
 </div>
 
 <div>
 
-## <a name="communicating-the-plan"></a>Comunicare il piano
+## <a name="communicating-the-plan"></a>Comunicazione del piano
 
-Il piano di backup e ripristino deve descrivere chiaramente chi implementa le procedure e le istruzioni dettagliate per l'esecuzione delle procedure. È necessario assicurarsi che tutti i responsabili di qualsiasi aspetto del backup e del ripristino comprendano il piano, il modo in cui devono essere implementati e il loro ruolo. Include tutti i requisiti di implementazione per i seguenti:
+Il piano di backup e ripristino deve descrivere chiaramente chi implementa le procedure e le istruzioni dettagliate per l'esecuzione delle procedure. È necessario assicurarsi che tutti i responsabili di qualsiasi aspetto del backup e del ripristino comprendano il piano, il modo in cui deve essere implementato e il relativo ruolo. Sono inclusi tutti i requisiti di implementazione per gli elementi seguenti:
 
-  - Backup di pool e server.
+  - Backup del pool e del server.
 
   - Ripristino del servizio.
 
 **Backup di pool e server**
 
-Il piano di backup e ripristino deve includere tutte le informazioni necessarie per completare le procedure di backup su base continuativa. Le informazioni principali da comunicare ai membri del team responsabili includono le seguenti:
+Nel piano di backup e ripristino devono essere disponibili tutte le informazioni necessarie per l'esecuzione delle procedure di backup con regolarità costante. Le informazioni principali da comunicare ai membri del team dei responsabili sono le seguenti:
 
   - Team o Person (specificato come singolo o ruolo) responsabile del backup di ogni server.
 
@@ -119,25 +119,25 @@ Il piano di backup e ripristino deve includere tutte le informazioni necessarie 
 
   - Percorsi di backup per ogni tipo di dati (impostazioni, database e condivisioni di file).
 
-  - Procedure di backup da usare, inclusi gli strumenti necessari per completare ogni procedura.
+  - Procedure di backup da utilizzare, compresi gli strumenti necessari per il completamento di ogni procedura.
 
-  - Informazioni necessarie per completare i backup, come descritto in fogli di lavoro di [backup e ripristino per Lync Server 2013](lync-server-2013-backup-and-restoration-worksheets.md).
+  - Informazioni necessarie per completare i backup, come indicato nei [fogli di lavoro per il backup e il ripristino di Lync Server 2013](lync-server-2013-backup-and-restoration-worksheets.md).
 
-  - Metodi di convalida da usare per verificare che i dati e le impostazioni siano opportunamente sostenuti e disponibili per il ripristino, che può includere controlli periodici e ripristini di test.
+  - Metodi di convalida da utilizzare per garantire che i dati e le impostazioni siano adeguatamente sottoposti a backup e disponibili per il ripristino, che possono includere controlli periodici e ripristini dei test.
 
 **Ripristino del servizio**
 
-Il piano di backup e ripristino deve includere tutte le informazioni necessarie per il ripristino del servizio, nel caso in cui uno o più server verifichino una perdita che rende il servizio non disponibile. Le informazioni principali da comunicare ai membri del team responsabili includono le seguenti:
+Il piano di backup e ripristino deve includere tutte le informazioni necessarie per il ripristino del servizio, nel caso in cui uno o più server verifichino una perdita che rende il servizio non disponibile. Le informazioni principali da comunicare ai membri del team dei responsabili sono le seguenti:
 
-  - Team o Person (specificato come un singolo o un ruolo) responsabile per determinare quando è necessario il ripristino del servizio e le procedure da usare per ripristinare il servizio e anche il team o la persona responsabile dell'implementazione delle procedure per ogni scenario di ripristino.
+  - Team o persona (individuo o ruolo) responsabile di determinare quando è necessario il ripristino del servizio e le procedure da utilizzare per il ripristino, nonché il team o la persona responsabile dell'implementazione delle procedure per ogni scenario di ripristino.
 
-  - Criteri per determinare quali procedure di ripristino sono più appropriate per una specifica situazione.
+  - Criteri per stabilire le procedure di ripristino più appropriate per una situazione specifica.
 
-  - Stime temporali per il ripristino dell'obiettivo del tempo di servizio e di ripristino (RTO) in ogni scenario di ripristino.
+  - Stime temporali per il ripristino dell'obiettivo del tempo di ripristino e del servizio (RTO) in ogni scenario di ripristino.
 
-  - Procedure di ripristino da usare, inclusi gli strumenti necessari per completare ogni procedura.
+  - Procedure di ripristino da seguire e strumenti necessari per l'esecuzione di ogni procedura.
 
-  - Informazioni necessarie per ripristinare dati e impostazioni. I fogli di lavoro sono disponibili in fogli di lavoro di [backup e ripristino per Lync Server 2013](lync-server-2013-backup-and-restoration-worksheets.md).
+  - Informazioni necessarie per il ripristino di dati e impostazioni. I fogli di lavoro vengono forniti nei fogli di lavoro [per il backup e il ripristino di Lync Server 2013](lync-server-2013-backup-and-restoration-worksheets.md).
 
 </div>
 
@@ -145,17 +145,17 @@ Il piano di backup e ripristino deve includere tutte le informazioni necessarie 
 
 ## <a name="validating-backup-and-restoration-operations"></a>Convalida delle operazioni di backup e ripristino
 
-Dopo aver completato gli sforzi iniziali di backup nell'ambiente di produzione e a intervalli specificati, come descritto nel piano di backup e ripristino, è necessario verificare quanto segue:
+Dopo aver eseguito le operazioni di backup iniziali nell'ambiente di produzione a intervalli specifici, secondo quanto indicato nel piano di backup e ripristino, è necessario verificare che:
 
-  - I backup si verificano come richiesto.
+  - Il backup venga eseguito come richiesto.
 
-  - I dati e le impostazioni di cui è stato eseguito il backup sono accessibili.
+  - I dati e le impostazioni di backup sono accessibili.
 
-  - Le procedure di ripristino possono essere eseguite entro gli orari di recupero degli obiettivi temporali (RTO) specificati nel piano di backup e ripristino e i risultati soddisfano tutti i requisiti aziendali.
+  - Le procedure di ripristino possono essere eseguite entro gli orari degli obiettivi del tempo di ripristino (RTO) specificati nel piano di backup e ripristino e i risultati soddisfano tutti i requisiti aziendali.
 
-  - I fogli di lavoro di backup sono stati completati e verificati e archiviati in una posizione sicura. Questi fogli di lavoro sono disponibili in fogli di lavoro di [backup e ripristino per Lync Server 2013](lync-server-2013-backup-and-restoration-worksheets.md).
+  - I fogli di lavoro di backup siano stati compilati, verificati e archiviati in un luogo sicuro. Questi fogli di lavoro sono disponibili nei fogli di lavoro di [backup e ripristino per Lync Server 2013](lync-server-2013-backup-and-restoration-worksheets.md).
 
-  - Le procedure di ripristino sono state testate e verificate per funzionare come previsto, come specificato nel piano di backup e ripristino.
+  - Il funzionamento delle procedure di ripristino sia stato sottoposto a test e verificato come previsto, in base a quanto specificato nel piano di backup e ripristino.
 
 </div>
 
@@ -163,9 +163,9 @@ Dopo aver completato gli sforzi iniziali di backup nell'ambiente di produzione e
 
 <div>
 
-## <a name="maintaining-the-backup-and-restoration-plan"></a>Manutenzione del piano di backup e ripristino
+## <a name="maintaining-the-backup-and-restoration-plan"></a>Gestione del piano di backup e ripristino
 
-Una topologia di Lync Server è un ambiente dinamico che viene modificato con l'organizzazione. Rivalutare il piano di backup e ripristino Man mano che l'organizzazione cambia e rivederla periodicamente per verificare che continui a soddisfare le esigenze della propria azienda.
+Una topologia di Lync Server è un ambiente dinamico che cambia con l'organizzazione. Rivalutare il piano di backup e ripristino come cambia l'organizzazione e rivederlo periodicamente per assicurarsi che continui a soddisfare le esigenze della propria azienda.
 
 </div>
 

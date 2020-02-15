@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Supporto per l'integrazione di messaggistica unificata di Exchange ospitata"
+title: Supporto di Lync Server 2013 per l'integrazione della messaggistica unificata di Exchange ospitata
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185376
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 24139ad5294bf908a85b797300397fa8b2ac9140
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e0625d983f05e5b9b22bf5086d0689c117b2ecda
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764382"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038648"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="support-for-hosted-exchange-um-integration-in-lync-server-2013"></a>Supporto per l'integrazione di messaggistica unificata di Exchange ospitata in Lync Server 2013
+# <a name="support-for-hosted-exchange-um-integration-in-lync-server-2013"></a>Supporto per l'integrazione della messaggistica unificata di Exchange ospitata in Lync Server 2013
 
 </div>
 
@@ -35,30 +35,30 @@ ms.locfileid: "41764382"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-L'applicazione di routing ExUM di Lync Server 2013 supporta l'integrazione con la messaggistica unificata di Exchange in un ambiente locale, in cui Lync Server 2013 e la messaggistica unificata di Exchange sono installati localmente all'interno dell'organizzazione o con la messaggistica unificata di Exchange ospitata da un provider di servizi, come illustrato nel diagramma seguente.
+L'applicazione di routing di Lync Server 2013 ExUM supporta l'integrazione con la messaggistica unificata di Exchange in un ambiente locale, in cui Lync Server 2013 e la messaggistica unificata di Exchange sono entrambi installati localmente all'interno dell'organizzazione o con la messaggistica unificata di Exchange ospitata da un provider di servizi, come illustrato nel diagramma seguente.
 
-![Distribuzione della messaggistica unificata di Exchange con Lync Server in locale](images/Gg398821.d6498eb9-87ee-40f3-8ecd-852f91546590(OCS.15).jpg "Distribuzione della messaggistica unificata di Exchange con Lync Server in locale")
+![Distribuzione della messaggistica unificata di Exchange in locale di Lync Server](images/Gg398821.d6498eb9-87ee-40f3-8ecd-852f91546590(OCS.15).jpg "Distribuzione della messaggistica unificata di Exchange in locale di Lync Server")
 
 Sono supportate le modalità seguenti:
 
-  - **Modalità**   locale Lync Server 2013 e messaggistica unificata di Exchange sono entrambi distribuiti su server locali all'interno dell'organizzazione.
+  - **La modalità**   locale Lync Server 2013 e la messaggistica unificata di Exchange sono entrambi distribuiti nei server locali all'interno dell'organizzazione.
 
-  - **Modalità cross-locale**   Lync Server 2013 è distribuito nei server locali all'interno dell'organizzazione e la messaggistica unificata di Exchange è ospitata in una struttura del provider di servizi online, ad esempio un Data Center di Microsoft Exchange Online.
+  - **Modalità cross-premise**   Lync Server 2013 è distribuito nei server locali all'interno dell'organizzazione e la messaggistica unificata di Exchange è ospitata nella struttura di un provider di servizi online, ad esempio un Data Center di Microsoft Exchange Online.
 
-  - **Modalità mista**   la distribuzione di Lync Server 2013 include alcune cassette postali utente in server locali che utilizzano Microsoft Exchange Server all'interno dell'organizzazione e alcune cassette postali ospitate in un centro dati del servizio Exchange ospitato.
+  - **Modalità mista**   la distribuzione di Lync Server 2013 dispone di alcune cassette postali utente nei server locali che eseguono Microsoft Exchange Server all'interno dell'azienda e di alcune cassette postali ospitate in un data center del servizio di Exchange ospitato.
     
     <div>
     
 
     > [!NOTE]  
-    > La modalità mista può essere usata come soluzione transitoria durante la valutazione e la migrazione graduale degli utenti alla messaggistica unificata di Exchange ospitata o come soluzione permanente se si sceglie di conservare i servizi di messaggistica unificata di Exchange in locale dopo la migrazione di altri utenti.
+    > La modalità mista può essere utilizzata come soluzione di transizione durante la valutazione e la migrazione graduale degli utenti alla messaggistica unificata di Exchange ospitata o come soluzione permanente se si decide di mantenere i servizi di messaggistica unificata di Exchange in locale dopo la migrazione di altri utenti.
 
     
     </div>
 
-Per integrare Lync Server 2013 con UM ospitata di Exchange, è necessario configurare uno *spazio di indirizzi SIP condiviso* (detto anche *dominio diviso*). In questa configurazione, sia Lync Server 2013 che il provider di servizi di messaggistica unificata di Exchange ospitati di terze parti possono accedere allo stesso spazio di indirizzi del dominio SIP. Per informazioni dettagliate, vedere [architettura di integrazione della messaggistica unificata di Exchange ospitata in Lync Server 2013](lync-server-2013-hosted-exchange-um-integration-architecture.md) nella documentazione relativa alla pianificazione.
+Per integrare Lync Server 2013 con messaggistica unificata di Exchange ospitata, è necessario configurare uno *spazio di indirizzi SIP condiviso* (denominato anche *dominio diviso*). In questa configurazione, sia Lync Server 2013 che il provider di servizi di messaggistica unificata di Exchange ospitati di terze parti possono accedere allo stesso spazio di indirizzi del dominio SIP. Per informazioni dettagliate, vedere [Hosted Exchange UM Integration Architecture in Lync Server 2013](lync-server-2013-hosted-exchange-um-integration-architecture.md) nella documentazione relativa alla pianificazione.
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Scenari per il server Director'
+title: 'Lync Server 2013: scenari per il Director'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185419
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ac7c5a262f5323f28ff089766cab1f4d65e30757
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 23b05a44e139c59dcb0656c2339d67a0e529e59a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732617"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038188"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="scenarios-for-the-director-in-lync-server-2013"></a>Scenari per il server Director in Lync Server 2013
+# <a name="scenarios-for-the-director-in-lync-server-2013"></a>Scenari per il Director in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41732617"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-22_
+_**Ultimo argomento modificato:** 2012-10-22_
 
-Un amministratore è un server che esegue Microsoft Lync Server 2013 Communications software in grado di autenticare le richieste degli utenti, ma non gli account utente. Il Director ospita inoltre servizi Web simili a front end server e autentica le richieste di ticket web e offre altri servizi.
+Un Director è un server che esegue Microsoft Lync Server 2013 Communications software in grado di autenticare le richieste degli utenti, ma non gli account utente. Il Director ospita anche servizi Web simili al front end server e autentica le richieste di ticket web e fornisce altri servizi.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Se si distribuiscono gli amministratori, è necessario pubblicare i servizi Web Director esternamente tramite il proxy inverso e i servizi Web del server front-end. Gli argomenti seguenti descrivono il processo di pianificazione per le topologie di Director possibili.
+> Se si distribuiscono i direttori, è necessario pubblicare i servizi Web Director esternamente tramite il proxy inverso e i servizi Web del front end server. Negli argomenti seguenti viene descritto il processo di pianificazione per le topologie di Director possibili.
 
 
 
@@ -51,17 +51,17 @@ Un amministratore è un server che esegue Microsoft Lync Server 2013 Communicati
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Panoramica del server Director in Lync Server 2013](lync-server-2013-overview-of-the-director.md)
+  - [Panoramica del Director in Lync Server 2013](lync-server-2013-overview-of-the-director.md)
 
-  - [Componenti richiesti per il server Director in Lync Server 2013](lync-server-2013-components-required-for-the-director.md)
+  - [Componenti necessari per il Director in Lync Server 2013](lync-server-2013-components-required-for-the-director.md)
 
-  - [Requisiti hardware e software per il server Director in Lync Server 2013](lync-server-2013-hardware-and-software-requirements-for-the-director.md)
+  - [Requisiti hardware e software per il Director in Lync Server 2013](lync-server-2013-hardware-and-software-requirements-for-the-director.md)
 
-  - [Singolo server Director in Lync Server 2013](lync-server-2013-single-director.md)
+  - [Single Director in Lync Server 2013](lync-server-2013-single-director.md)
 
-  - [Pool di server Director con scalabilità implementata in Lync Server 2013](lync-server-2013-scaled-director-pool.md)
+  - [Pool di server Director in scala in Lync 2013](lync-server-2013-scaled-director-pool.md)
 
 </div>
 

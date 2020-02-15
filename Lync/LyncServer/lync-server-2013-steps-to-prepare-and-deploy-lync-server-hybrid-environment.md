@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Passaggi per la preparazione e la distribuzione di un ambiente ibrido di Lync Server'
+title: 'Lync Server 2013: passaggi per la preparazione e la distribuzione di un ambiente ibrido di Lync Server'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185060
 ms.date: 12/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6ebcce8d0021789a409c8f41b5f635d82284b7bc
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 3326db7ce62279c4295bc13ec262a5a553ca5e62
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764392"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038698"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="steps-to-prepare-and-deploy-lync-server-2013-hybrid-environment"></a>Passaggi per la preparazione e la distribuzione di un ambiente ibrido di Lync Server 2013
+# <a name="steps-to-prepare-and-deploy-lync-server-2013-hybrid-environment"></a>Passaggi per la preparazione e la distribuzione dell'ambiente ibrido di Lync Server 2013
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41764392"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2016-12-08_
+_**Ultimo argomento modificato:** 2016-12-08_
 
-La tabella seguente elenca i passaggi necessari per preparare l'ambiente per una distribuzione ibrida con Skype for business online e Microsoft Office 365.
+Nella tabella seguente sono elencati i passaggi necessari per preparare l'ambiente per una distribuzione ibrida con Skype for business online e Microsoft Office 365.
 
 
 <table>
@@ -48,7 +48,7 @@ La tabella seguente elenca i passaggi necessari per preparare l'ambiente per una
 </colgroup>
 <thead>
 <tr class="header">
-<th>Completato?</th>
+<th>Operazione completata?</th>
 <th>Passaggio</th>
 <th>Descrizione</th>
 </tr>
@@ -56,57 +56,57 @@ La tabella seguente elenca i passaggi necessari per preparare l'ambiente per una
 <tbody>
 <tr class="odd">
 <td></td>
-<td><p>Creare un account del tenant per Office 365 e abilitare Lync Online</p></td>
+<td><p>Creare un account tenant per Office 365 e abilitare Lync Online</p></td>
 <td><p>Informazioni su Office 365 e Lync online in <a href="https://go.microsoft.com/fwlink/p/?linkid=254980">office 365</a>.</p>
-<p>Per verificare che l'ambiente sia pronto per Office 365, vedere requisiti di <a href="https://go.microsoft.com/fwlink/p/?linkid=401408">sistema</a>.</p>
-<p>Per informazioni dettagliate sulla configurazione di Office 365, vedere <a href="https://go.microsoft.com/fwlink/p/?linkid=254982">Introduzione a office 365</a> e <a href="http://go.microsoft.com/fwlink/p/?linkid=254979">configurazione di Office 365</a>.</p></td>
+<p>Per assicurarsi che l'ambiente sia pronto per Office 365, vedere i <a href="https://go.microsoft.com/fwlink/p/?linkid=401408">requisiti di sistema</a>.</p>
+<p>Per informazioni dettagliate sulla configurazione di Office 365, vedere <a href="https://go.microsoft.com/fwlink/p/?linkid=254982">Guida introduttiva a office 365</a> e <a href="http://go.microsoft.com/fwlink/p/?linkid=254979">configurazione di Office 365</a>.</p></td>
 </tr>
 <tr class="even">
 <td></td>
 <td><p>Aggiungere il dominio e verificare la proprietà</p></td>
-<td><p>Il dominio viene talvolta indicato anche come dominio di <em>vanità</em>. È necessario aggiungere il dominio al tenant di Office 365 e seguire la procedura per convalidare il dominio con Office 365. Questo per verificare di essere il proprietario del dominio.</p>
+<td><p>Il dominio è talvolta denominato anche <em>dominio Vanity</em>. È necessario aggiungere il dominio al tenant di Office 365, quindi seguire la procedura per convalidare il dominio con Office 365. In questo modo si conferma che si è il proprietario del dominio.</p>
 <p>Per aggiungere il dominio al tenant di Office 365, seguire la procedura descritta in <a href="https://go.microsoft.com/fwlink/p/?linkid=254983">aggiungere il proprio dominio a office 365</a>.</p>
-<p>Completare tutti i passaggi di ogni sezione dell'argomento, inclusi &quot;i record DNS di modifica per i servizi di Office 365.&quot;</p></td>
+<p>Completare tutti i passaggi di ogni sezione dell'argomento, tra cui &quot;la modifica dei record DNS per i servizi di Office 365.&quot;</p></td>
 </tr>
 <tr class="odd">
 <td></td>
-<td><p>Verificare la disponibilità dell'ambiente</p></td>
-<td><p>È possibile usare la configurazione guidata di Office 365 per distribuire Office 365. Per altre informazioni, vedere <a href="https://go.microsoft.com/fwlink/p/?linkid=254985">usare Setup Assistant per determinare la conformità di Office 365</a>.</p>
-<p>Per informazioni dettagliate sull'uso dello strumento e sulla distribuzione di Office 365, vedere <a href="https://go.microsoft.com/fwlink/p/?linkid=257337">Guida alla distribuzione di office 365</a>.</p></td>
+<td><p>Verificare la conformità dell'ambiente</p></td>
+<td><p>È possibile utilizzare l'assistente per l'installazione di Office 365 per la distribuzione di Office 365. Per ulteriori informazioni, vedere <a href="https://go.microsoft.com/fwlink/p/?linkid=254985">utilizzo di Setup Assistant per determinare la conformità di Office 365</a>.</p>
+<p>Per informazioni dettagliate sull'utilizzo dello strumento e sulla distribuzione di Office 365, vedere <a href="https://go.microsoft.com/fwlink/p/?linkid=257337">Guida alla distribuzione di office 365</a>.</p></td>
 </tr>
 <tr class="even">
 <td></td>
-<td><p>Preparare la sincronizzazione di Active Directory</p></td>
-<td><p>La sincronizzazione di Active Directory consente di mantenere costantemente sincronizzata la Active Directory locale con Office 365. In questo modo è possibile creare versioni sincronizzate di ogni account utente e gruppo e consente inoltre la sincronizzazione dell'elenco indirizzi globale (GAL) dall'ambiente Microsoft Exchange Server locale a Microsoft Exchange Online.</p>
+<td><p>Preparare la sincronizzazione con Active Directory</p></td>
+<td><p>La sincronizzazione di Active Directory mantiene continuamente sincronizzata la propria Active Directory locale con Office 365. In questo modo è possibile creare versioni sincronizzate di ogni account utente e gruppo, nonché abilitare la sincronizzazione dell'elenco indirizzi globale (GAL) dall'ambiente Microsoft Exchange Server locale a Microsoft Exchange Online.</p>
 <div>
 
 > [!IMPORTANT]  
-> È necessario sincronizzare gli account degli annunci per tutti gli utenti di Lync dell'organizzazione tra le distribuzioni locale e online di Lync, anche se gli utenti non vengono spostati in Lync Online. Se non si sincronizzano tutti gli utenti, la comunicazione tra gli utenti locali e online dell'organizzazione potrebbe non funzionare come previsto.
+> È necessario sincronizzare gli account di Active Directory per tutti gli utenti di Lync nell'organizzazione tra le distribuzioni di Lync locali e online, anche se gli utenti non vengono spostati in Lync Online. Se non si sincronizzano tutti gli utenti, la comunicazione tra gli utenti locali e quelli online nell'organizzazione potrebbe non funzionare come previsto.
 
 
 </div>
-<p>Per preparare l'ambiente per la sincronizzazione di Active Directory, seguire i passaggi descritti in <a href="https://go.microsoft.com/fwlink/p/?linkid=254988">Roadmap della sincronizzazione della directory</a>, inclusa la configurazione di Single Sign-on.</p></td>
+<p>Per preparare l'ambiente per la sincronizzazione di Active Directory, eseguire i passaggi descritti in <a href="https://go.microsoft.com/fwlink/p/?linkid=254988">Roadmap della sincronizzazione della directory</a>, inclusa la configurazione di Single Sign-on.</p></td>
 </tr>
 <tr class="odd">
 <td></td>
-<td><p>Creare certificati per Active Directory Federation Services (ADFS)</p></td>
-<td><p>Sarà necessario creare i certificati usati per la Federazione delle identità con Office 365. Per altre informazioni, vedere la sezione "certificati del server federativo" del piano per e distribuire ADFS per l'uso con l'argomento Single Sign-on in <a href="https://go.microsoft.com/fwlink/p/?linkid=285376">elenco di controllo: usare ADFS per implementare e gestire Single Sign-on</a>.</p></td>
+<td><p>Creare certificati per Active Directory Federation Services (AD FS)</p></td>
+<td><p>Sarà necessario creare i certificati utilizzati per la Federazione delle identità con Office 365. Per ulteriori informazioni, vedere la sezione "certificati del server federativo" dell'argomento piano per e deploy AD FS per l'utilizzo con Single Sign-on in <a href="https://go.microsoft.com/fwlink/p/?linkid=285376">elenco di controllo: utilizzare ADFS per implementare e gestire l'accesso Single Sign-on</a>.</p></td>
 </tr>
 <tr class="even">
 <td></td>
 <td><p>Assegnare certificati per ADFS</p></td>
-<td><p>Dopo aver creato i certificati usati per la Federazione delle identità con Office 365, è necessario installarli e assegnarli.</p></td>
+<td><p>Dopo aver creato i certificati utilizzati per la Federazione delle identità con Office 365, è necessario installarli e assegnarli.</p></td>
 </tr>
 <tr class="odd">
 <td></td>
-<td><p>Trasferire gli utenti pilota in Skype for business online</p></td>
+<td><p>Spostare gli utenti pilota in Skype for business online</p></td>
 <td><p>Dopo aver completato la procedura per preparare e configurare l'ambiente per Skype for business online, è possibile iniziare a spostare gli utenti pilota in Lync Online.</p>
-<p>Vedere <a href="lync-server-2013-move-users-to-lync-online.md">trasferire utenti a Lync online in Lync Server 2013</a>.</p></td>
+<p>Vedere <a href="lync-server-2013-move-users-to-lync-online.md">Move users to Lync online in Lync Server 2013</a>.</p></td>
 </tr>
 <tr class="even">
 <td></td>
 <td><p>Amministrazione degli utenti in una distribuzione ibrida</p></td>
-<td><p>Per informazioni dettagliate sull'amministrazione degli utenti in una distribuzione ibrida, vedere <a href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">amministrazione degli utenti in una distribuzione ibrida di Lync Server 2013</a>.</p></td>
+<td><p>Per informazioni dettagliate su come amministrare gli utenti in una distribuzione ibrida, vedere <a href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">amministrazione degli utenti in una distribuzione ibrida di Lync Server 2013</a>.</p></td>
 </tr>
 </tbody>
 </table>

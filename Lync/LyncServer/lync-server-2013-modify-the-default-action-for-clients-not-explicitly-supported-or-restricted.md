@@ -1,5 +1,5 @@
 ---
-title: Modificare l'azione predefinita per i client non esplicitamente supportati o limitati
+title: Modificare l'azione predefinita per i client non supportati in modo esplicito o con restrizioni
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184137
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0262bface172c965d12fc276bc08882cac8348ff
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 63ff08d05c9c8c18b7f81f22b04e2168a14f1a8c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756910"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050688"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="modify-the-default-action-for-clients-not-explicitly-supported-or-restricted-in-lync-server-2013"></a>Modificare l'azione predefinita per i client non esplicitamente supportati o limitati in Lync Server 2013
+# <a name="modify-the-default-action-for-clients-not-explicitly-supported-or-restricted-in-lync-server-2013"></a>Modificare l'azione predefinita per i client non supportati in modo esplicito o con restrizioni in Lync Server 2013
 
 </div>
 
@@ -35,33 +35,33 @@ ms.locfileid: "41756910"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-23_
+_**Ultimo argomento modificato:** 2013-02-23_
 
-Oltre a specificare la versione dei client che si vuole supportare nell'ambiente Lync Server 2013, è anche possibile specificare un'azione predefinita per i client che non hanno già un criterio di versione definito. Ciò consente di limitare le versioni client usate nell'ambiente Lync Server, che consentono di controllare i costi associati al supporto di più versioni client.
+Oltre a specificare la versione dei client che si desidera supportare nell'ambiente Lync Server 2013, è anche possibile specificare un'azione predefinita per i client che non dispongono già di un criterio di versione definito. In questo modo è possibile limitare le versioni client utilizzate nell'ambiente Lync Server, che consentono di controllare i costi associati al supporto di più versioni client.
 
 <div>
 
-## <a name="to-modify-the-default-action-for-clients-not-explicitly-supported-or-restricted"></a>Per modificare l'azione predefinita per i client non esplicitamente supportati o limitati
+## <a name="to-modify-the-default-action-for-clients-not-explicitly-supported-or-restricted"></a>Per modificare l'azione predefinita per i client non supportati in modo esplicito o con restrizioni
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **client**e quindi su **Configurazione versione client**.
+3.  Sulla barra spostamento sinistra fare clic su **Client** e quindi su **Configurazione versione client**.
 
-4.  Nella pagina **Configurazione versione client** fare doppio clic sulla configurazione **globale** nell'elenco.
+4.  Nella pagina **Configurazione versione client** fare doppio clic sulla configurazione **Globale** nell'elenco.
 
-5.  Nella finestra di dialogo **modifica configurazione versione client** verificare che sia selezionata la casella di **controllo Enable Version Control** e quindi, in **azione predefinita**, selezionare una delle opzioni seguenti:
+5.  Nella finestra di dialogo **Modifica Configurazione versione client** verificare che la casella di controllo **Abilita controllo versione** sia selezionata e quindi selezionare una delle opzioni seguenti in **Azione predefinita**:
     
-      - **Consenti**   consente al client di accedere se la versione client non corrisponde a un filtro nell'elenco dei **criteri di versione client** .
+      - **Allow**   consente al client di eseguire l'accesso se la versione client non corrisponde ad alcun filtro nell'elenco dei **criteri versione client** .
     
-      - **Il blocco**   impedisce che il client acceda se la versione client non corrisponde a un filtro nell'elenco dei **criteri di versione client** .
+      - **Blocca**   impedisce l'accesso del client se la versione client non corrisponde ad alcun filtro nell'elenco dei **criteri versione client** .
     
-      - **Il blocco con URL**   impedisce che il client acceda se la versione client non corrisponde a un filtro nell'elenco dei **criteri di versione client** e include un messaggio di errore contenente un URL in cui è possibile scaricare un nuovo client.
+      - **Blocca con URL**   impedisce al client di eseguire l'accesso se la versione client non corrisponde ad alcun filtro nell'elenco dei **criteri versione client** e include un messaggio di errore contenente un URL in cui è possibile scaricare un client più recente.
     
-      - **Consenti con URL**   consente al client di accedere se la versione client non corrisponde a un filtro nell'elenco dei **criteri di versione client** e di includere un messaggio di errore contenente un URL in cui è possibile scaricare un nuovo client.
+      - **Consenti con URL**   consente al client di eseguire l'accesso se la versione client non corrisponde ad alcun filtro nell'elenco dei **criteri versione client** e include un messaggio di errore contenente un URL in cui è possibile scaricare un client più recente.
 
-6.  Se si è selezionato **blocca con URL**, digitare l'URL di download del client da includere nel messaggio di errore nella casella **URL** .
+6.  Se si seleziona **Blocca con URL**, digitare l'URL per il download del client da includere nel messaggio di errore nella casella **URL**.
 
 7.  Fare clic su **Commit**.
 
@@ -69,23 +69,23 @@ Oltre a specificare la versione dei client che si vuole supportare nell'ambiente
 
 <div>
 
-## <a name="to-disable-client-version-control"></a>Per disabilitare il controllo della versione client
+## <a name="to-disable-client-version-control"></a>Per disabilitare il controllo delle versioni client
 
-  - Per disabilitare il controllo della versione per consentire l'accesso a tutti i client indipendentemente dalla versione del client, deselezionare la casella di controllo **Enable Version Control** e quindi fare clic su **commit**.
+  - Per disabilitare il controllo delle versioni in modo da consentire l'accesso a tutti i client indipendentemente dalla versione del client, deselezionare la casella di controllo **Abilita controllo versione** e quindi fare clic su **Commit**.
 
 </div>
 
 <div>
 
-## <a name="modifying-the-default-action-by-using-windows-powershell-cmdlets"></a>Modifica dell'azione predefinita con i cmdlet di Windows PowerShell
+## <a name="modifying-the-default-action-by-using-windows-powershell-cmdlets"></a>Modifica dell'azione predefinita tramite i cmdlet di Windows PowerShell
 
-L'azione predefinita da eseguire quando gli utenti provano a eseguire l'accesso usando client non esplicitamente supportati o limitati da criteri di versione client possono essere gestiti usando l'interfaccia della riga di comando di Windows PowerShell e il cmdlet **Set-CsClientVersionPolicy** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+L'azione predefinita da eseguire quando gli utenti tentano di accedere utilizzando client non esplicitamente supportati o limitati da un criterio di versione client possono essere gestiti utilizzando l'interfaccia della riga di comando di Windows PowerShell e il cmdlet **Set-CsClientVersionPolicy** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
 ## <a name="to-configure-the-default-action-to-block-access"></a>Per configurare l'azione predefinita per bloccare l'accesso
 
-  - Il comando seguente imposta l'azione predefinita per il blocco di sito Redmond. In questo modo si bloccherà la registrazione per qualsiasi client per cui non esiste alcuna regola di configurazione della versione client.
+  - Il comando seguente imposta l'azione predefinita per il blocco del sito Redmond. La registrazione è bloccata per i client per i quali non esiste una regola di configurazione della versione.
     
         Set-CsClientVersionConfiguration -Identity "site:Redmond" -DefaultAction Block
 
@@ -95,13 +95,13 @@ L'azione predefinita da eseguire quando gli utenti provano a eseguire l'accesso 
 
 ## <a name="to-configure-the-default-action-to-allow-access"></a>Per configurare l'azione predefinita per consentire l'accesso
 
-  - In questo esempio l'azione predefinita per il sito Redmond è impostata su Consenti. Ciò consentirà la registrazione per qualsiasi client per cui non esiste alcuna regola di configurazione della versione client.
+  - In questo esempio l'azione predefinita per il blocco del sito Redmond è Allow. La registrazione è consentita per i client per i quali non esiste una regola di configurazione della versione.
     
         Set-CsClientVersionConfiguration -Identity "site:Redmond" -DefaultAction Allow
 
 </div>
 
-Per informazioni dettagliate, vedere l'argomento della Guida relativo al cmdlet [Set-CsClientVersionPolicy](https://technet.microsoft.com/en-us/library/Gg398876(v=OCS.15)) .
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsClientVersionPolicy](https://technet.microsoft.com/library/Gg398876(v=OCS.15)) .
 
 </div>
 

@@ -19,12 +19,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: Informazioni sulle licenze gratuite degli utenti virtuali.
-ms.openlocfilehash: 0b580a396dedfab81ab207fa0b1d6fee5caa705b
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 5b31c9edaf42508e59000257a33b9ddeba4c6fb5
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826514"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029357"
 ---
 # <a name="phone-systemvirtual-user-license"></a>Sistema telefonico-licenza utente virtuale 
 
@@ -67,7 +67,7 @@ Contoso dovrebbe valutare la possibilità di riprogettare l'operatore automatico
 Se si decide di cambiare la licenza per l'account delle risorse da una licenza di sistema telefonico a un sistema telefonico-licenza utente virtuale: 
 
 1. Ottenere il nuovo sistema telefonico-licenza utente virtuale. 
-2. Seguire i passaggi collegati nell'interfaccia di amministrazione di Microsoft 365 per [trasferire gli utenti a un altro abbonamento](https://docs.microsoft.com/en-us/office365/admin/subscriptions-and-billing/assign-licenses-to-users?redirectSourcePath=%252farticle%252f997596b5-4173-4627-b915-36abac6786dc&view=o365-worldwide#move-users-to-a-different-subscription). 
+2. Seguire i passaggi collegati nell'interfaccia di amministrazione di Microsoft 365 per [trasferire gli utenti a un altro abbonamento](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?redirectSourcePath=%252farticle%252f997596b5-4173-4627-b915-36abac6786dc&view=o365-worldwide#move-users-to-a-different-subscription). 
 
 > [!WARNING]
 > Rimuovere sempre una licenza per il sistema telefonico completo e assegnare il sistema telefonico-licenza per gli utenti virtuali nella stessa attività di licenza. Se si rimuove la vecchia licenza, si salvano le modifiche dell'account, si aggiunge la nuova licenza e quindi si salvano di nuovo le impostazioni dell'account, l'account delle risorse potrebbe non funzionare più come previsto. In questo caso, è consigliabile creare un nuovo account delle risorse per il sistema telefonico-licenza utente virtuale e rimuovere l'account delle risorse interrotte. 

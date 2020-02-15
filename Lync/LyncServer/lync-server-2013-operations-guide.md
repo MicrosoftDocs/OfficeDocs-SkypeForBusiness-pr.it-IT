@@ -12,20 +12,20 @@ ms:contentKeyID: 63969658
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 21b4f3e0a9beaae9419b11bf7353319b3b3ad2b0
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6d797f638121f09eacc9b1472feed0a0b84e2a74
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755790"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049528"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="operations-guide-for-lync-server-2013"></a>Operations Guide for Lync Server 2013
+# <a name="operations-guide-for-lync-server-2013"></a>Guida alle operazioni per Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41755790"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-08-18_
+_**Ultimo argomento modificato:** 2014-08-18_
 
-Questo documento descrive i processi operativi, le attività e gli strumenti necessari per gestire un ambiente software di comunicazione di Microsoft Lync Server 2013. Spiega come gestire Lync Server 2013 in base al modello MOF (Microsoft Operations Framework) e consente di progettare un ambiente di gestione operativa efficiente, che include l'implementazione di pianificazioni, processi e procedure per mantenere un ambiente di lavoro efficiente.
+In questo documento vengono descritti i processi operativi, le attività e gli strumenti necessari per la gestione di un ambiente software di comunicazione Microsoft Lync Server 2013. In questo articolo viene spiegato come gestire Lync Server 2013 in base al modello Microsoft Operations Framework (MOF) e viene illustrato come creare un ambiente di gestione operativo efficiente, che prevede l'implementazione di pianificazioni, processi e procedure per mantenere un ambiente di lavoro efficiente.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
 Sono incluse le sezioni seguenti:
 
@@ -63,7 +63,7 @@ Sono incluse le sezioni seguenti:
 
   - [Risoluzione dei problemi e indicatori di integrità chiave in Lync Server 2013](lync-server-2013-troubleshooting-and-key-health-indicators.md)
 
-Si presuppone che la distribuzione di Microsoft Lync Server 2013 sia stata completata. In caso contrario, vedere il contenuto della pianificazione e della distribuzione per Microsoft Lync Server 2013 prima di continuare.
+Si presuppone che la distribuzione di Microsoft Lync Server 2013 sia stata completata. In caso contrario, fare riferimento al contenuto per la pianificazione e la distribuzione di Microsoft Lync Server 2013 prima di continuare.
 
 </div>
 
@@ -72,8 +72,8 @@ Si presuppone che la distribuzione di Microsoft Lync Server 2013 sia stata compl
 ## <a name="see-also"></a>Vedere anche
 
 
-[Introduzione a Lync Server 2013](lync-server-2013-getting-started.md)  
-[Pianificazione per Lync Server 2013](lync-server-2013-planning.md)  
+[Guida introduttiva a Lync Server 2013](lync-server-2013-getting-started.md)  
+[Planning for Lync Server 2013](lync-server-2013-planning.md)  
 [Distribuzione di Lync Server 2013](lync-server-2013-deployment.md)  
 [Lync Server 2013 Management Shell](lync-server-2013-lync-server-management-shell.md)  
   

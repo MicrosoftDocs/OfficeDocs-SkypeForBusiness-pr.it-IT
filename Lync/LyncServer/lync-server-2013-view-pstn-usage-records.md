@@ -12,16 +12,16 @@ ms:contentKeyID: 48184361
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b2551c8bbc40429d7e5bc4af45cae862991381a8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 84ba8e2091a88238caee188f3542b76f652129c4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756680"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038038"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,27 +35,27 @@ ms.locfileid: "41756680"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-22_
+_**Ultimo argomento modificato:** 2013-02-22_
 
-Un record di utilizzo PSTN (Public Switched Telephone Network) specifica una classe di chiamata, ad esempio Internal, local o Long Distance, che può essere eseguita da vari utenti o gruppi di utenti di un'organizzazione. Per informazioni dettagliate, vedere [record sull'utilizzo PSTN in Lync Server 2013](lync-server-2013-pstn-usage-records.md) nella documentazione relativa alla pianificazione.
+Un record di utilizzo PSTN (Public Switched Telephone Network) specifica una classe di chiamata (ad esempio, interna, locale o interurbana) che può essere effettuata da diversi utenti o gruppi di utenti di un'organizzazione. Per informazioni dettagliate, vedere [PSTN Usage Records in Lync Server 2013](lync-server-2013-pstn-usage-records.md) nella documentazione relativa alla pianificazione.
 
 <div>
 
 ## <a name="to-view-a-pstn-usage-record-by-using-lync-server-control-panel"></a>Per visualizzare un record di utilizzo PSTN tramite il pannello di controllo di Lync Server
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **routing vocale** e quindi su **utilizzo PSTN**.
+3.  Sulla barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Utilizzo PSTN**.
 
-4.  Nella pagina **uso PSTN** evidenziare il record di utilizzo PSTN che si vuole visualizzare, fare clic su **modifica** e quindi su **Mostra dettagli**.
+4.  Nella pagina **Utilizzo PSTN** evidenziare i record di utilizzo PSTN che si desidera visualizzare, fare clic su **Modifica** e quindi su **Mostra dettagli**.
     
     <div>
     
 
     > [!NOTE]  
-    > Una pagina di sola lettura del record di utilizzo PSTN selezionato Mostra le route associate e i criteri vocali associati.
+    > In una pagina di sola lettura per il record di utilizzo PSTN selezionato vengono visualizzati le route e i criteri vocali associati.
 
     
     </div>
@@ -66,17 +66,17 @@ Un record di utilizzo PSTN (Public Switched Telephone Network) specifica una cla
 
 ## <a name="viewing-pstn-usage-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni sull'utilizzo PSTN tramite i cmdlet di Windows PowerShell
 
-È anche possibile visualizzare gli usi PSTN tramite Windows PowerShell e il cmdlet **Get-CsPstnUsage** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'uso di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo sul Blog di Lync Server di Windows PowerShell "Guida introduttiva: gestione di Microsoft [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Lync Server 2010 con Remote PowerShell" at.
+È inoltre possibile visualizzare gli utilizzi PSTN utilizzando Windows PowerShell e il cmdlet **Get-CsPstnUsage** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 
 ## <a name="to-view-pstn-usage-information-by-using-windows-powershell-cmdlets"></a>Per visualizzare le informazioni sull'utilizzo PSTN tramite i cmdlet di Windows PowerShell
 
-  - Per visualizzare informazioni su tutti gli usi PSTN, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
+  - Per visualizzare informazioni su tutti gli utilizzi PSTN, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
     
         Get-CsPstnUsage
     
-    Questo comando restituisce informazioni simili a quelle seguenti:
+    Il comando restituisce informazioni simili a quelle riportate di seguito:
     
         Identity : Global
         Usage    : {Internal, Local, Long Distance}

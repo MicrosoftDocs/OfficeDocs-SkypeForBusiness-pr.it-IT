@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Importare test case di routing vocale'
+title: 'Lync Server 2013: importare test case di routing vocale'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184325
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 013860ea52773f4109c56bd71d37a9f4b8938225
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 742bb5d8e8f29edf0397c9bb9fa12592087ea517
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763840"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038718"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,33 +35,33 @@ ms.locfileid: "41763840"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-21_
+_**Ultimo argomento modificato:** 2013-02-21_
 
-I casi di test consentono di testare le route vocali nell'organizzazione: si definiscono elementi come il numero da chiamare e il dial plan e il criterio vocale da utilizzare e Lync Server 2013 può quindi verificare che, in base a tali condizioni, il numero fornito possa essere succes sfully essere indirizzato alla rete PSTN.
+I test case consentono di testare le route vocali nell'organizzazione: è possibile definire elementi quali il numero da comporre e il dial plan e i criteri vocali da utilizzare e Lync Server 2013 può quindi verificare che, date queste condizioni, il numero fornito possa essere succes sfully essere instradato alla rete PSTN.
 
-I casi di test, che possono essere creati tramite il pannello di controllo di Lync Server, vengono in genere salvati solo nel server in cui è stato originariamente creato ed eseguito il caso. Tuttavia, questi test case possono essere esportati come file XML (con estensione vtest) e quindi importati in altri server. In questo modo è possibile eseguire gli stessi test in computer diversi situati in punti diversi della topologia.
+I test case, che possono essere creati utilizzando il pannello di controllo di Lync Server, vengono in genere salvati solo sul server in cui è stato creato ed eseguito originariamente il caso. È comunque possibile esportarli come file XML (con estensione vtest) per poi importarli in altri server. Ciò consente di eseguire gli stessi test in computer diversi in punti diversi della topologia.
 
 <div>
 
 ## <a name="to-import-a-voice-routing-test-case"></a>Per importare un test case di routing vocale
 
-1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo di CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegare le autorizzazioni di configurazione in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
+1.  Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [delegate Setup Permissions in Lync Server 2013](lync-server-2013-delegate-setup-permissions.md).
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **routing vocale**.
+3.  Sulla barra di spostamento sinistra fare clic su **Routing vocale**.
 
-4.  Nel menu **azioni** fare clic su **Importa test case**.
+4.  Scegliere **Importa test case** dal menu **Azioni**.
 
-5.  Individuare il file del test case (con estensione vtest) che si vuole importare e quindi fare clic su **Apri**.
+5.  Trovare il file del test case che si desidera importare (con estensione vtest) e quindi fare clic su **Apri**.
 
-6.  Fare clic su **commit**e quindi su **Commit all**.
+6.  Fare clic su **Commit** e quindi su **Salva tutto**.
     
     <div>
     
 
     > [!NOTE]  
-    > Ogni volta che si importa un file con estensione vtest, è necessario eseguire il comando <STRONG>Commit all</STRONG> per pubblicare il test case. Per informazioni dettagliate, vedere <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">pubblicare le modifiche in sospeso nella configurazione del routing vocale in Lync Server 2013</A> nella documentazione Operations.
+    > Tutte le volte che si importa un file vtest, è necessario utilizzare il comando <STRONG>Salva tutto</STRONG> per pubblicare il test case. Per ulteriori informazioni, vedere <A href="lync-server-2013-publish-pending-changes-to-the-voice-routing-configuration.md">pubblicare le modifiche in sospeso alla configurazione del routing vocale in Lync Server 2013</A> nella documentazione relativa alle operazioni.
 
     
     </div>

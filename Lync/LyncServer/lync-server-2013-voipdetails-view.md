@@ -12,16 +12,16 @@ ms:contentKeyID: 49733561
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: db65da0af7c34d1121e97436af47750186706b68
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 4222ad7251c17501b1d9edec8cbdd8bafc015773
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41758548"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038528"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41758548"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-18_
+_**Ultimo argomento modificato:** 2012-10-18_
 
-La visualizzazione VoIPDetails archivia le informazioni sulle sessioni peer-to-peer, in cui almeno un utente è un utente VoIP. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
+Nella visualizzazione VoIPDetails vengono archiviate le informazioni sulle sessioni peer-to-peer, che contengono almeno un utente VoIP. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
 
 <div>
 
@@ -70,49 +70,49 @@ La visualizzazione VoIPDetails archivia le informazioni sulle sessioni peer-to-p
 <td><p>URI telefono dell'utente che ha avviato la sessione.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Telefono</strong></p></td>
+<td><p><strong>Tophone</strong></p></td>
 <td><p>nvarchar (450)</p></td>
 <td><p>URI telefono dell'utente che ha partecipato alla sessione.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DisconnectedByUri</strong></p></td>
 <td><p>nvarchar (450)</p></td>
-<td><p>URI dell'utente che ha scollegato la sessione.</p></td>
+<td><p>URI dell'utente che ha interrotto la sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DisconnectedByUriType</strong></p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>Tipo di URI dell'utente che ha scollegato la sessione. Per altre informazioni, vedere la <a href="lync-server-2013-uritypes-table.md">tabella UriTypes in Lync Server 2013</a> .</p></td>
+<td><p>Tipo di URI dell'utente che ha interrotto la sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-uritypes-table.md">tabella UriTypes in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>DisconnectedByTenant</strong></p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>Tenant dell'utente che ha scollegato la sessione.</p></td>
+<td><p>Tenant dell'utente che ha interrotto la sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DisconnectedByPhone</strong></p></td>
 <td><p>nvarchar (450)</p></td>
-<td><p>URI telefono dell'utente che ha scollegato la sessione.</p></td>
+<td><p>URI telefono dell'utente che ha interrotto la sessione.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>FromMediationServer</strong></p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>Mediation Server usato dall'utente che ha avviato la sessione.</p></td>
+<td><p>Mediation Server utilizzato dall'utente che ha avviato la sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ToMediationServer</strong></p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>Mediation Server usato dall'utente che ha partecipato alla sessione.</p></td>
+<td><p>Mediation Server utilizzato dall'utente che ha partecipato alla sessione.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>FromGateway</strong></p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>Gateway usato dall'utente che ha avviato la sessione.</p></td>
+<td><p>Gateway utilizzato dall'utente che ha avviato la sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Togateway</strong></p></td>
 <td><p>nvarchar (256)</p></td>
-<td><p>Gateway usato dall'utente che ha partecipato alla sessione.</p></td>
+<td><p>Gateway utilizzato dall'utente che ha partecipato alla sessione.</p></td>
 </tr>
 </tbody>
 </table>

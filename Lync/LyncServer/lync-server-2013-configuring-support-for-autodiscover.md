@@ -12,16 +12,16 @@ ms:contentKeyID: 51541463
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 779929d270fa4ae2f8eec59a954c2273ff61b44f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 79511202ddc9e413e313d12f881e7079f088c473
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41734807"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046069"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,27 +35,27 @@ ms.locfileid: "41734807"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-01-21_
+_**Ultimo argomento modificato:** 2013-01-21_
 
-Il **servizio di individuazione automatica** servizi Web di Lync Server è stato pubblicato per la prima volta nell'aggiornamento cumulativo di lync Server 2010: novembre 2011. Questo aggiornamento è stato accompagnato dalla versione iniziale dei client di Lync mobile. Il servizio di individuazione automatica ha esposto i servizi di mobilità, noti come servizio MCX.
+Il **servizio di individuazione automatica** dei servizi Web di Lync Server è stato introdotto per la prima volta nell'aggiornamento cumulativo di lync Server 2010: novembre 2011. Questo aggiornamento è stato accompagnato dalla versione iniziale dei client di Lync mobile. Il servizio di individuazione automatica ha esposto i servizi per dispositivi mobili, noto come servizio di MCX.
 
-Il servizio di individuazione automatica funge da singola posizione per tutti i client per richiedere informazioni su quali servizi e funzionalità sono disponibili e su come contattare i Sevices tramite un nome di dominio completo o un riferimento per il localizzatore di risorse Web Uniform. L'individuazione automatica espone un certo numero di funzionalità e ogni client effettuerà richieste in base alle caratteristiche che il client può usare. Ad esempio, un client Lync 2013 Desktop utilizzerà autodiscvoer per determinare i servizi Web esterni, ma non userà i servizi di mobilità (MCX). Per definire e abilitare correttamente i client per l'uso delle funzionalità disponibili, gli scenari che consentono a un client di trovare e usare efficacemente le voci di individuazione automatica devono essere definiti. Per usare autodoscover, la distribuzione richiede che un proxy inverso pubblichi i servizi Web di Lync Server, che i record DNS siano configurati per risolvere le query DNS per il servizio di individuazione automatica di Lync Server e i servizi Web di Lync Server e che i servizi di certificazione sono configurati correttamente per lo scenario specifico.
+Il servizio di individuazione automatica funge da singola posizione per tutti i client per richiedere informazioni su quali servizi e funzionalità sono disponibili e su come contattare i sevizi, in base a un nome di dominio completo o a un riferimento a un Uniform Resource Locator del Web. L'individuazione automatica espone numerose funzionalità e ogni client eseguirà le richieste in base alle caratteristiche che il client può utilizzare. Ad esempio, un client Lync 2013 Desktop utilizzerà autodiscvoer per determinare i servizi Web esterni, ma non utilizzerà i servizi per dispositivi mobili (MCX). Per definire correttamente e consentire ai client di utilizzare le funzionalità disponibili, è necessario definire gli scenari che consentono a un client di trovare e utilizzare in modo efficace le voci di individuazione automatica. Per utilizzare autodoscover, la distribuzione richiede che un proxy inverso pubblichi i servizi Web di Lync Server, che i record DNS siano configurati per la risoluzione delle query DNS per il servizio di individuazione automatica di Lync Server e per i servizi Web di Lync Server e che i servizi certificati sono configurati correttamente per lo scenario specifico.
 
 <div>
 
 
 > [!TIP]  
-> Per informazioni tecniche sugli elementi di una richiesta/risposta di individuazione automatica, vedere informazioni sull' <A href="lync-server-2013-understanding-autodiscover.md">individuazione automatica in Lync Server 2013</A>.
+> Per informazioni tecniche su cosa fare gli elementi all'interno della richiesta/risposta di individuazione automatica, vedere <A href="lync-server-2013-understanding-autodiscover.md">Understanding Autodiscover in Lync Server 2013</A>.
 
 
 
 </div>
 
-Le informazioni e le tabelle seguenti definiscono, per scenario, le configurazioni (se presenti) che è necessario implementare per consentire l'uso completo ed efficace del servizio di individuazione automatica. Le informazioni contenute negli argomenti seguenti sono specifiche di Microsoft Lync Server 2013. Per informazioni su come pianificare la mobilità per Lync Server 2010, vedere [http://go.microsoft.com/fwlink/?LinkId=275113](http://go.microsoft.com/fwlink/?linkid=275113). Per distribuire la mobilità per Lync Server 2010, vedere[http://go.microsoft.com/fwlink/?LinkId=275114](http://go.microsoft.com/fwlink/?linkid=275114)
+Le seguenti informazioni e tabelle definiscono, per ogni scenario, quali configurazioni (se presenti) è necessario implementare per fornire l'utilizzo completo ed efficace del servizio di individuazione automatica. Le informazioni contenute negli argomenti seguenti sono specifiche di Microsoft Lync Server 2013. Se si cercano indicazioni su come pianificare la mobilità per Lync Server 2010, vedere [http://go.microsoft.com/fwlink/?LinkId=275113](http://go.microsoft.com/fwlink/?linkid=275113). Per distribuire la mobilità per Lync Server 2010, vedere[http://go.microsoft.com/fwlink/?LinkId=275114](http://go.microsoft.com/fwlink/?linkid=275114)
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Configurazione del DNS per l'individuazione automatica in Lync Server 2013](lync-server-2013-configuring-dns-for-autodiscover.md)
 
@@ -63,7 +63,7 @@ Le informazioni e le tabelle seguenti definiscono, per scenario, le configurazio
 
   - [Configurazione di un proxy inverso per l'individuazione automatica in Lync Server 2013](lync-server-2013-configuring-a-reverse-proxy-for-autodiscover.md)
 
-  - [Configurazione dell'individuazione automatica in Lync Server 2013 per distribuzioni ibride](lync-server-2013-configuring-autodiscover-for-hybrid-deployments.md)
+  - [Configurazione dell'individuazione automatica in Lync Server 2013 per le distribuzioni ibride](lync-server-2013-configuring-autodiscover-for-hybrid-deployments.md)
 
 </div>
 

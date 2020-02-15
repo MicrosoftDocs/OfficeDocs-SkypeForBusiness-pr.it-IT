@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Routing tra trunk'
+title: 'Lync Server 2013: routing tra trunk'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185442
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: eaa41fe229e9246506fd92eb9f48767994997e4e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 23aab6df352b162f7f389ef56fb2300f01654edb
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725676"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042323"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,25 +35,25 @@ ms.locfileid: "41725676"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-20_
+_**Ultimo argomento modificato:** 2012-10-20_
 
-Lync Server 2013 può connettere un IP-PBX a un gateway PSTN (Public Switched Telephone Network) in modo che le chiamate da un telefono PBX possano essere indirizzate alla rete PSTN e le chiamate PSTN in arrivo possano essere indirizzate a un telefono PBX (Private Branch Exchange). Analogamente, Lync Server 2013 può interconnettere due o più sistemi IP-PBX in modo che le chiamate possano essere inserite e ricevute tra i telefoni PBX dei diversi sistemi IP-PBX.
+Lync Server 2013 può interconnettere un IP-PBX a un gateway PSTN (Public Switched Telephone Network) in modo che le chiamate provenienti da un telefono PBX possano essere instradate alla rete PSTN e che le chiamate PSTN in arrivo possano essere instradate a un telefono PBX (Private Branch Exchange). Analogamente, Lync Server 2013 può interconnettere due o più sistemi IP-PBX in modo che le chiamate possano essere inserite e ricevute tra i telefoni PBX dei diversi sistemi IP-PBX.
 
-Questa caratteristica di routing intertrunk può essere configurata usando il cmdlet Lync Server Management Shell, **Set-CsTrunkConfiguration**, con il nuovo parametro PstnUsages. Questo parametro specifica il set di record di utilizzo PSTN da usare. Un trunk usa questo uso PSTN per determinare una route e per instradare tutte le chiamate in arrivo di conseguenza.
+Questa funzionalità di routing intertrunk può essere configurata utilizzando il cmdlet di Lync Server Management Shell, **Set-CsTrunkConfiguration**, con il nuovo parametro PstnUsages. Questo parametro specifica l'insieme di record di utilizzo PSTN da applicare. Un trunk si basa su questo utilizzo PSTN per determinare una route e per instradare tutte le chiamate in arrivo di conseguenza.
 
     Set-CsTrunkConfiguration -Identity <TrunkId> -PstnUsages @{add="<UsageString>"}
 
-Il diagramma seguente illustra Lync Server 2013 che fornisce l'interconnettività tra un gateway PSTN e un IP-PBX.
+Nel diagramma seguente viene illustrato Lync Server 2013 che fornisce l'interconnettività tra un gateway PSTN e un IP-PBX.
 
-**Routing intertrunk tra gateway e IP PBX**
+**Routing tra trunk tra gateway e IP-PBX**
 
-![Diagramma delle connessioni tra Lync Server e gateway PSTN/IP-PBX](images/JJ721940.cc3858ca-2ee3-4d51-8a51-db078366b50b(OCS.15).jpg "Diagramma delle connessioni tra Lync Server e gateway PSTN/IP-PBX")
+![Lync Server che connette il diagramma gateway PSTN/IP-PBX](images/JJ721940.cc3858ca-2ee3-4d51-8a51-db078366b50b(OCS.15).jpg "Lync Server che connette il diagramma gateway PSTN/IP-PBX")
 
-Il diagramma seguente illustra Lync Server 2013 che interconnette due sistemi IP-PBX.
+Nel diagramma seguente viene illustrato Lync Server 2013 che interconnette due sistemi IP-PBX.
 
-**Routing intertrunk tra due IP PBX**
+**Routing tra trunk tra due sistemi IP-PBX**
 
-![Diagramma delle interconnessioni tra Lync Server e sistemi IP-PAX](images/JJ721940.6ba18ec9-df70-498a-9cf7-7fc41e5ec432(OCS.15).jpg "Diagramma delle interconnessioni tra Lync Server e sistemi IP-PAX")
+![Diagramma dei sistemi IP-PAX per la connessione di Lync Server](images/JJ721940.6ba18ec9-df70-498a-9cf7-7fc41e5ec432(OCS.15).jpg "Diagramma dei sistemi IP-PAX per la connessione di Lync Server")
 
 </div>
 

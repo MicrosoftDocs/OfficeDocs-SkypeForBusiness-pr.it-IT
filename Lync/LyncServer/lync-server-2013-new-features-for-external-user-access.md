@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Nuove funzionalità per l'accesso utente esterno"
+title: "Lync Server 2013: nuove funzionalità per l'accesso degli utenti esterni"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184884
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d8c27df6befdba620407b3b1fd4fe537b8da831d
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e85c9e83a6dde06c7c091241bea903a3ddd1d813
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41723976"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42042343"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="new-features-for-external-user-access-in-lync-server-2013"></a>Nuove funzionalità per l'accesso utente esterno in Lync Server 2013
+# <a name="new-features-for-external-user-access-in-lync-server-2013"></a>Nuove funzionalità per l'accesso degli utenti esterni in Lync Server 2013
 
 </div>
 
@@ -35,44 +35,44 @@ ms.locfileid: "41723976"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-17_
+_**Ultimo argomento modificato:** 2012-10-17_
 
-Lync Server 2013 introduce nuove funzionalità che estendono le caratteristiche e i metodi di comunicazione per gli utenti. Inoltre, Lync Server 2013 introduce le modifiche ai servizi esistenti per integrare meglio ed estendere i servizi disponibili per l'organizzazione. Di seguito è riportato un riepilogo delle modifiche che possono influenzare la pianificazione e la distribuzione dei servizi di Lync Server 2013 Edge Server.
+Lync Server 2013 introduce nuove funzionalità che estendono le funzionalità e i metodi di comunicazione per gli utenti. Inoltre, Lync Server 2013 introduce modifiche ai servizi esistenti per migliorare l'integrazione e l'estensione dei servizi disponibili per l'organizzazione. Di seguito è riportato un riepilogo delle modifiche che possono influire sulla pianificazione e la distribuzione dei servizi server perimetrali di Lync Server 2013.
 
-  - **Supporto per l'indirizzamento**   IPv6 Lync Server 2013 supporta l'indirizzamento IPv6 per tutti i servizi Edge Server. Se sono stati forniti indirizzi IPv6 per le interfacce tramite la configurazione in Windows Server, è possibile usare gli indirizzi IPv6 nella configurazione del server perimetrale tramite la configurazione degli indirizzi IP in Generatore di topologie.
+  - **Supporto per l'indirizzamento**   IPv6 Lync Server 2013 supporta l'indirizzamento IPv6 per tutti i servizi server perimetrali. Se sono stati forniti indirizzi IPv6 per le interfacce tramite la configurazione in Windows Server, è possibile utilizzare gli indirizzi IPv6 nella configurazione del server perimetrale tramite la configurazione degli indirizzi IP in Generatore di topologie.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > L'uso degli indirizzi IPv6 in Lync Server 2013 dipende dal supporto di IPv6 nei router e nei firewall distribuiti dall'organizzazione, oltre che dal supporto per il provider di servizi Internet.
+    > L'utilizzo degli indirizzi IPv6 in Lync Server 2013 dipende dal supporto di IPv6 nei router e nei firewall distribuiti dall'organizzazione, nonché dal supporto tramite il provider di servizi Internet.
 
     
     </div>
 
-  - **Il protocollo XMPP (Extensible Messaging and Presence Protocol)**   Lync Server 2013 introduce un proxy XMPP completamente integrato (distribuito sugli Edge Server) e un gateway XMPP distribuito nei server front-end. Puoi distribuire la Federazione XMPP come componente facoltativo. L'aggiunta e la configurazione del proxy XMPP e del gateway XMPP consentirà agli utenti di Microsoft Lync 2013 di aggiungere contatti da partner basati su XMPP per la messaggistica istantanea e la presenza.
+  - **Il protocollo XMPP (Extensible Messaging and Presence Protocol)**   Lync Server 2013 introduce un proxy XMPP completamente integrato (distribuito sui server perimetrali) e un gateway XMPP distribuito nei server front end. È possibile distribuire la federazione XMPP come componente facoltativo. L'aggiunta e la configurazione del proxy XMPP e del gateway XMPP consentiranno agli utenti di Microsoft Lync 2013 di aggiungere contatti da partner basati su XMPP per la messaggistica istantanea e la presenza.
     
     <div>
     
 
     > [!NOTE]  
-    > Attualmente, i servizi XMPP in Lync Server 2013 consentono solo la messaggistica istantanea e la presenza tra i client Lync e i contatti basati su XMPP.
+    > Attualmente, i servizi XMPP in Lync Server 2013 forniscono solo la messaggistica istantanea e la presenza tra i client Lync e i contatti basati su XMPP.
 
     
     </div>
 
-  - **Servizi di mobilità per i client**   mobili introdotti in un aggiornamento del cliente per Lync Server 2010, i servizi di mobilità in Lync Server 2013 consentono ai client di Microsoft Lync Mobile su telefoni cellulari e tablet che usano i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia per eseguire attività come l'invio e la ricezione di messaggi istantanei, la visualizzazione di contatti e la presenza della visualizzazione. I dispositivi mobili supportano inoltre alcune funzionalità VoIP aziendale, ad esempio fare clic per partecipare a una conferenza, chiamare tramite lavoro, raggiungere un numero singolo, la segreteria telefonica e la notifica delle chiamate perse.
+  - **Servizi di mobilità per i client**   mobili introdotti in un aggiornamento del cliente per Lync Server 2010, i servizi per dispositivi mobili in Lync Server 2013 consentono ai client Microsoft Lync Mobile su telefoni cellulari e tablet che utilizzano i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza. Inoltre, i dispositivi mobili supportano alcune funzionalità di VoIP aziendale, ad esempio la partecipazione con un clic, Chiamata tramite ufficio, numero unico, segreteria telefonica e notifica delle chiamate senza risposta.
     
     <div>
     
 
     > [!NOTE]  
-    > I servizi di mobilità usano il proxy inverso e i servizi pubblicati distribuiti nei server front-end. Per Edge Server non sono necessarie modifiche.
+    > I servizi di mobilità utilizzano il proxy inverso e i servizi pubblicati distribuiti nel Front End Server. Non sono necessarie modifiche per i server perimetrali.
 
     
     </div>
 
-  - **Gli amministratori sono un ruolo**   facoltativo il ruolo del server Director nella topologia di Lync Server 2013 non è cambiato. Ospita ancora servizi Web, pre-autentica le richieste degli utenti in arrivo e indirizza gli utenti esterni al proprio pool Home. La modifica del Director da un ruolo consigliato a un ruolo facoltativo non diminuisce il valore del Director, ma enfatizza la riduzione del numero di server e di altri requisiti hardware, ad esempio i requisiti di bilanciamento del carico hardware per il Director, senza caratteristiche e funzionalità compromesse. Poiché i server front-end possono eseguire lo stesso processo del Director senza alcun impatto sui servizi forniti, è possibile facoltativamente distribuire direttori se si sceglie di. È possibile escludere in modo sicuro il Director con la certezza che i server front-end forniranno gli stessi servizi nella propria posizione.
+  - **I direttori sono un ruolo**   facoltativo il ruolo del server Director nella topologia di Lync Server 2013 non è stato modificato. Continua a ospitare i servizi Web, esegue la preautenticazione delle richieste utente in arrivo e indirizza gli utenti esterni al pool principale. La modifica del Director da un ruolo consigliato a un ruolo facoltativo non diminuisce il valore del Director, ma enfatizza la riduzione del numero di server e altri requisiti hardware (ad esempio, i dispositivi di bilanciamento del carico hardware per il Director) senza caratteristiche e funzionalità compromettenti. Poiché i Front End Server possono eseguire lo stesso processo del Director senza alcun impatto sui servizi forniti, è possibile distribuire direttori se lo si sceglie. È possibile escludere in modo sicuro il Director con la sicurezza che i Front End Server forniranno gli stessi servizi al proprio posto.
 
 <div>
 

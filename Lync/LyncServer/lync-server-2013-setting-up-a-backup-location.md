@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: configurazione di un percorso di backup'
+title: 'Lync Server 2013: impostazione di un percorso di backup'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 51541440
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 723bcbc2aeaae5264645d824a9b10a939b6770ab
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e5b47a866b4ce1a731d282c78e09c1afb3c91af7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764632"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046599"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41764632"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-17_
+_**Ultimo argomento modificato:** 2013-02-17_
 
-Prima di eseguire il primo backup di Lync Server, configurare l'hardware e il software necessari per archiviare e gestire i backup. È necessario ottenere l'accesso ai contenuti multimediali e al contenuto, se necessario, e garantire la connettività di rete tra ogni server di cui eseguire il backup e il supporto di backup. Gli elementi multimediali e la posizione usati devono essere definiti nella strategia di backup e ripristino. La posizione che si usa per i backup regolari può essere locale o remota, ma deve essere sicura e deve essere accessibile sia per il backup che per il ripristino. È consigliabile usare una posizione remota per proteggersi da un evento catastrofico nel sito principale.
+Prima di eseguire il primo backup di Lync Server, configurare l'hardware e il software necessari per l'archiviazione e la gestione dei backup. È necessario ottenere l'accesso ai supporti e al contenuto appropriati e garantire la connettività di rete tra i singoli server da sottoporre a backup e il supporto di backup. Il supporto e la posizione utilizzati devono essere definiti nella strategia di backup e ripristino. La posizione utilizzata per i backup regolari può essere locale o remota, ma deve essere sicura e deve essere accessibile sia per il backup che per il ripristino. È consigliabile utilizzare una posizione remota per proteggersi da un evento catastrofico nel sito principale.
 
-Dopo aver configurato e testato i singoli componenti, verificare l'accessibilità ai backup di ogni server.
+Dopo aver impostato e testato i singoli componenti, verificare l'accessibilità ai backup da ogni server.
 
 </div>
 

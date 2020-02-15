@@ -12,16 +12,16 @@ ms:contentKeyID: 48183684
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ec12aa5e579aed30e61c7cd34eab444e807c628f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 811f69e8286e341b7769a58d03c42d0a43e63075
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725256"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049908"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41725256"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-21_
+_**Ultimo argomento modificato:** 2012-09-21_
 
-Una soluzione VoIP di livello aziendale deve prevedere le chiamate da e verso la rete PSTN (Public Switched Telephone Network) senza alcun calo di qualità del servizio (QoS). Gli utenti che dispongono e ricevono chiamate non devono essere a conoscenza della tecnologia sottostante: dal punto di vista dell'utente, una chiamata tra l'infrastruttura VoIP aziendale e la rete PSTN dovrebbe sembrare solo un'altra telefonata.
+Una soluzione VoIP di livello aziendale deve essere in grado di garantire le chiamate da e verso la rete PSTN (Public Switched Telephone Network) senza alcun decadimento della qualità del servizio (QoS). Gli utenti che effettuano e ricevono chiamate non devono essere a conoscenza della tecnologia sottostante: dal punto di vista dell'utente, una chiamata tra l'infrastruttura VoIP aziendale e la rete PSTN dovrebbe sembrare solo un'altra telefonata.
 
-Lync Server 2013 offre connettività PSTN affidabile e scalabile usando le opzioni seguenti:
+Lync Server 2013 fornisce connettività PSTN affidabile e scalabile utilizzando le opzioni seguenti:
 
-  - **Trunk SIP** in un provider di servizi di telefonia Internet (ITSP)
+  - **Trunk SIP** con un provider di servizi di telefonia Internet (ITSP)
 
-  - **Connessioni SIP dirette** a un gateway PSTN
+  - **Connessioni SIP dirette** con un gateway PSTN
 
-  - **Connessioni SIP dirette** a un PBX
+  - **Connessioni SIP dirette** con un PBX
 
-A seconda delle dimensioni, della copertura geografica e dell'infrastruttura vocale esistente, un'organizzazione può usare una, due o anche tutte e tre le opzioni in varie posizioni.
+A seconda delle dimensioni, della copertura geografica e dell'infrastruttura vocale esistente, un'azienda può usare una, due o addirittura tutte e tre le opzioni in ubicazioni diverse.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Trunking SIP in Lync Server 2013](lync-server-2013-sip-trunking.md)
 
@@ -59,7 +59,7 @@ A seconda delle dimensioni, della copertura geografica e dell'infrastruttura voc
 
   - [Trunk M:N in Lync Server 2013](lync-server-2013-m-n-trunk.md)
 
-  - [Regole di traduzione in Lync Server 2013](lync-server-2013-translation-rules.md)
+  - [Regole di conversione in Lync Server 2013](lync-server-2013-translation-rules.md)
 
   - [Pianificazione del routing vocale in uscita in Lync Server 2013](lync-server-2013-planning-outbound-voice-routing.md)
 

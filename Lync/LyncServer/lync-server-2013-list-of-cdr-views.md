@@ -12,20 +12,20 @@ ms:contentKeyID: 49733598
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2fe2620175c2a706bfb2c48fe7fb380d5fae4c09
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bb29608b7048e1896a731a64ee644213f513ebaf
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765424"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048557"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="list-of-cdr-views-in-lync-server-2013"></a>Elenco di visualizzazioni CDR in Lync Server 2013
+# <a name="list-of-cdr-views-in-lync-server-2013"></a>Elenco delle visualizzazioni CDR in Lync Server 2013
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "41765424"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-01_
+_**Ultimo argomento modificato:** 2012-10-01_
 
-Le visualizzazioni consentono di accedere in modo semplice alle informazioni sugli scenari più comuni usati per la restituzione dei dati dal database CDR. È consigliabile usare le visualizzazioni per creare report personalizzati invece di usare le tabelle di database CDR effettive. Questo perché le visualizzazioni del database hanno più probabilità di mantenere la compatibilità con le versioni precedenti di Lync Server.
+Le visualizzazioni consentono di accedere facilmente alle informazioni sugli scenari più comuni usati per restituire dati dal database CDR. È consigliabile utilizzare le visualizzazioni per la creazione di report personalizzati anziché utilizzare le tabelle di database CDR effettive. Ciò è dovuto al fatto che le visualizzazioni di database hanno maggiori probabilità di mantenere la compatibilità con le versioni precedenti di Lync Server.
 
 
 <table>
@@ -54,19 +54,19 @@ Le visualizzazioni consentono di accedere in modo semplice alle informazioni sug
 <tbody>
 <tr class="odd">
 <td><p><a href="lync-server-2013-clientversions-view.md">Visualizzazione ClientVersions in Lync Server 2013</a></p></td>
-<td><p>Restituisce informazioni sul software/i dispositivi client usati in una sessione di comunicazione.</p></td>
+<td><p>Restituisce informazioni sul software/dispositivi client usati in una sessione di comunicazione.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-conferencemessagecount-view.md">Visualizzazione ConferenceMessageCount in Lync Server 2013</a></p></td>
-<td><p>Restituisce informazioni sul numero di messaggi inviati dagli utenti in una conferenza.</p></td>
+<td><p>Restituisce informazioni sul numero di messaggi inviati dagli utenti durante una conferenza.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-conferences-view.md">Visualizzazione conferenze in Lync Server 2013</a></p></td>
-<td><p>Restituisce le informazioni sulla conferenza, tra cui ora di inizio, ora di fine e organizzatore di conferenze.</p></td>
+<td><p>Restituisce informazioni sulla conferenza, inclusa l'ora di inizio e di fine, e sull'organizzatore della conferenza.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-conferencesessiondetails-view.md">Visualizzazione ConferenceSessionDetails in Lync Server 2013</a></p></td>
-<td><p>Restituisce i dettagli della sessione per tutte le sessioni di conferenza, inclusi l'ora di inizio e di fine, gli ID utente, i codici di risposta e gli ID diagnostici.</p></td>
+<td><p>Restituisce dettagli su tutte le sessioni di conferenza, tra cui ora di inizio e di fine, ID utente, codici di risposta e ID diagnostica.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-conferenceuris-view.md">Visualizzazione ConferenceUris in Lync Server 2013</a></p></td>
@@ -78,43 +78,43 @@ Le visualizzazioni consentono di accedere in modo semplice alle informazioni sug
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-filetransfers-view.md">Visualizzazione FileTransfers in Lync Server 2013</a></p></td>
-<td><p>Restituisce informazioni sulle sessioni di trasferimento di file, incluso il nome del file e se il trasferimento è stato accettato, rifiutato o annullato.</p></td>
+<td><p>Restituisce informazioni sulle sessioni di trasferimento file, incluso il nome file, e indica se il trasferimento è stato accettato, rifiutato o annullato.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-focusjoinsandleaves-view.md">Visualizzazione FocusJoinsAndLeaves in Lync Server 2013</a></p></td>
-<td><p>Restituisce informazioni sulle attività di conferenza di partecipazione e uscita.</p></td>
+<td><p>Restituisce informazioni sulle attività di partecipazione alla conferenza e di abbandono della stessa.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-mcujoinsandleaves-view.md">Visualizzazione McuJoinsAndLeaves in Lync Server 2013</a></p></td>
-<td><p>Restituisce le informazioni combinate sulle attività di partecipazione a conferenze e uscite (ogni conferenza di partecipazione viene associata al congedo di conferenza corrispondente).</p></td>
+<td><p>Restituisce informazioni combinate sulle attività di partecipazione alla conferenza e di abbandono della stessa (ogni partecipazione a una conferenza è accoppiata al corrispondente abbandono della conferenza).</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-mcus-view.md">Visualizzazione MCU in Lync Server 2013</a></p></td>
-<td><p>Restituisce informazioni sui server di conferenza.</p></td>
+<td><p>Restituisce informazioni sui server per conferenze.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-media-view.md">Visualizzazione multimediale in Lync Server 2013</a></p></td>
-<td><p>Restituisce informazioni sui tipi di elementi multimediali usati nelle sessioni di comunicazione peer-to-peer.</p></td>
+<td><p>Restituisce informazioni sui tipi di supporti usati nelle sessioni di comunicazione peer-to-peer.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-progressreport-view.md">Visualizzazione ProgressReport in Lync Server 2013</a></p></td>
 <td><p>Restituisce informazioni sulle sessioni completate.</p></td>
 </tr>
 <tr class="odd">
-<td><p><a href="lync-server-2013-registration-view.md">Visualizzazione di registrazione in Lync Server 2013</a></p></td>
+<td><p><a href="lync-server-2013-registration-view.md">Visualizzazione registrazione in Lync Server 2013</a></p></td>
 <td><p>Restituisce informazioni sulle registrazioni con Lync Server.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-sessiondetails-view.md">Visualizzazione SessionDetails in Lync Server 2013</a></p></td>
-<td><p>Restituisce informazioni sulle sessioni peer-to-peer, incluse le chiamate VoIP-VoIP, le sessioni di messaggistica istantanea a due parti o altre sessioni di comunicazione peer-to-peer.</p></td>
+<td><p>Restituisce informazioni sulle sessioni peer-to-peer, incluse le chiamate telefoniche VoIP-VoIP, le sessioni di messaggistica istantanea a due parti o altre sessioni di comunicazione peer-to-peer.</p></td>
 </tr>
 <tr class="odd">
 <td><p><a href="lync-server-2013-user-view.md">Visualizzazione utente in Lync Server 2013</a></p></td>
-<td><p>Restituisce informazioni sugli utenti che hanno partecipato a sessioni di comunicazione.</p></td>
+<td><p>Restituisce informazioni sugli utenti che hanno partecipato alle sessioni di comunicazione.</p></td>
 </tr>
 <tr class="even">
 <td><p><a href="lync-server-2013-voipdetails-view.md">Visualizzazione VoIPDetails in Lync Server 2013</a></p></td>
-<td><p>Restituisce informazioni per le sessioni peer-to-peer che coinvolgono almeno un utente VoIP (Voice over IO).</p></td>
+<td><p>Restituisce informazioni per le sessioni peer-to-peer che coinvolgono almeno un utente VoIP (Voice over IP).</p></td>
 </tr>
 </tbody>
 </table>

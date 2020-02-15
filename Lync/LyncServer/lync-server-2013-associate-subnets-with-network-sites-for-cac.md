@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: associare subnet a siti di rete per CAC'
+title: 'Lync Server 2013: associare subnet a siti di rete per il servizio di controllo di ammissione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185017
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bf447b2e34ff4f274ebcab9d36e40b65bedab7dd
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e431998ebb3836564dc73c7dc5a4d6b496653df1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41722776"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044798"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="associate-subnets-with-network-sites-for-cac-in-lync-server-2013"></a>Associare subnet a siti di rete per CAC in Lync Server 2013
+# <a name="associate-subnets-with-network-sites-for-cac-in-lync-server-2013"></a>Associare subnet a siti di rete per il servizio di controllo di ammissione in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41722776"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-20_
+_**Ultimo argomento modificato:** 2012-10-20_
 
-Ogni subnet della rete deve essere associata a un sito di rete specifico. Il motivo è che le informazioni sulla subnet vengono usate per determinare il sito di rete in cui si trova un endpoint. Quando sono note le posizioni di entrambe le parti di una sessione, il controllo di ammissione di chiamata (CAC) può determinare se è disponibile una larghezza di banda sufficiente per stabilire una chiamata.
+Ogni subnet della rete deve essere associata a un sito di rete specifico, poiché le informazioni della subnet vengono utilizzate per determinare il sito di rete in cui è posizionato un endpoint. Quando sono note le posizioni di entrambe le parti di una sessione, il controllo di ammissione di chiamata (CAC) può determinare se la larghezza di banda è sufficiente per effettuare una chiamata.
 
-Il controllo di ammissione alle chiamate non ha particolari requisiti per l'associazione delle subnet con i siti di rete. Per creare un'associazione tra le subnet e i siti di rete della topologia, seguire le procedure descritte in [associare una subnet a un sito di rete in Lync Server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md). Per visualizzare i siti di rete (e le rispettive subnet) nella topologia di rete di esempio per il controllo dell'ammissione alle chiamate, vedere [esempio: raccolta dei requisiti per il controllo di ammissione delle chiamate in Lync Server 2013](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md) nella documentazione relativa alla pianificazione.
+Il controllo di ammissione di chiamata non presenta requisiti particolari per l'associazione di subnet a siti di rete. Per creare un'associazione tra le subnet e i siti di rete nella topologia, seguire le procedure illustrate in [associare una subnet a un sito di rete in Lync Server 2013](lync-server-2013-associate-a-subnet-with-a-network-site.md). Per visualizzare i siti di rete e le rispettive subnet, nella topologia di rete di esempio per il controllo di ammissione di chiamata, vedere [esempio: raccolta dei requisiti per il controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-example-of-gathering-your-requirements-for-call-admission-control.md) nella documentazione relativa alla pianificazione.
 
 </div>
 

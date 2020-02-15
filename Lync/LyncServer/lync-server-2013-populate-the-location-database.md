@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: popolare il database della posizione'
+title: 'Lync Server 2013: popolare il database delle posizioni'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185939
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a93cee85afec1e3943af692d598d0d02ab678d58
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d7b443e257ee45c15974ba96a50b8217113ac942
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41747646"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048340"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="populate-the-location-database-in-lync-server-2013"></a>Compilare il database della posizione in Lync Server 2013
+# <a name="populate-the-location-database-in-lync-server-2013"></a>Popolare il database delle posizioni in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41747646"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-17_
+_**Ultimo argomento modificato:** 2012-09-17_
 
-Per individuare automaticamente i client all'interno di una rete, è prima di tutto necessario popolare il database della posizione con una rete *wiremap*, che mappa gli elementi di rete agli indirizzi civici (ovvero via). Puoi usare subnet, punti di accesso wireless, switch e porte per definire il wiremap.
+Per individuare automaticamente i client all'interno di una rete, è necessario innanzitutto popolare il database delle posizioni con una rete *wiremap*, che mappa gli elementi di rete a indirizzi civici, ovvero via. È possibile utilizzare le subnet, i punti di accesso wireless, gli interruttori e le porte per definire il wiremap.
 
-È possibile aggiungere gli indirizzi al database della posizione singolarmente o in blocco usando un file CSV contenente i formati di colonna descritti nella tabella seguente.
+È possibile aggiungere gli indirizzi al database delle posizioni singolarmente o in blocco utilizzando un file CSV contenente i formati di colonna descritti nella tabella seguente.
 
-Se si usa un gateway ELIN (Emergency Location Identification Number), includere il numero ELIN nel campo **CompanyName** per ogni posizione. È possibile includere più ELIN per ogni posizione, separate da un punto e virgola.
+Se si utilizza un gateway ELIN (Emergency Location Identification Number), includere il numero ELIN nel campo **CompanyName** per ogni percorso. È possibile includere più numeri ELIN per ogni percorso, ognuno separato da un punto e virgola.
 
 
 <table>
@@ -51,7 +51,7 @@ Se si usa un gateway ELIN (Emergency Location Identification Number), includere 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Elemento Network</th>
+<th>Elemento di rete</th>
 <th>Colonne obbligatorie</th>
 </tr>
 </thead>
@@ -59,30 +59,30 @@ Se si usa un gateway ELIN (Emergency Location Identification Number), includere 
 <tr class="odd">
 <td><p><strong>Punto di accesso wireless</strong></p></td>
 <td><p>&lt;BSSID&gt;,&lt;Description&gt;,&lt;location&gt;,&lt;CompanyName&gt;,&lt;HouseNumber&gt;,&lt;HouseNumberSuffix&gt;,&lt;Predirectional&gt;,...</p>
-<p>... &lt;StreetName&gt;,&lt;StreetSuffix&gt;,&lt;Postdirectional&gt;,&lt;città&gt;,&lt;stato&gt;,&lt;Cap&gt;,&lt;paese&gt;</p></td>
+<p>... &lt;StreetName&gt;,&lt;StreetSuffix&gt;,&lt;Postdirectional&gt;,&lt;città&gt;,&lt;stato&gt;,&lt;PostalCode&gt;,&lt;paese&gt;</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Subnet</strong></p></td>
-<td><p>&lt;Subnet&gt;,&lt;Descrizione&gt;,&lt;posizione&gt;,&lt;CompanyName&gt;,&lt;HouseNumber&gt;,&lt;HouseNumberSuffix&gt;,&lt;&gt;,... predirezionali</p>
-<p>... &lt;StreetName&gt;,&lt;StreetSuffix&gt;,&lt;Postdirectional&gt;,&lt;città&gt;,&lt;stato&gt;,&lt;Cap&gt;,&lt;paese&gt;</p></td>
+<td><p>&lt;Subnet&gt;,&lt;Descrizione&gt;,&lt;posizione&gt;,&lt;CompanyName&gt;,&lt;HouseNumber&gt;,&lt;HouseNumberSuffix&gt;,&lt;Predirectional&gt;,...</p>
+<p>... &lt;StreetName&gt;,&lt;StreetSuffix&gt;,&lt;Postdirectional&gt;,&lt;città&gt;,&lt;stato&gt;,&lt;PostalCode&gt;,&lt;paese&gt;</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Porta</strong></p></td>
+<td><p><strong>Port</strong></p></td>
 <td><p>&lt;ChassisID&gt;,&lt;PortIDSubType&gt;,&lt;PortID&gt;,&lt;Description&gt;,&lt;location&gt;,&lt;CompanyName&gt;,&lt;HouseNumber&gt;,&lt;HouseNumberSuffix&gt;,...</p>
-<p>... &lt;Predirectional&gt;,&lt;StreetName&gt;,&lt;StreetSuffix&gt;,&lt;Postdirectional&gt;,&lt;City&gt;,&lt;state&gt;,&lt;PostalCode&gt;,&lt;Country&gt;</p></td>
+<p>... &lt;Predirectional&gt;,&lt;vianame&gt;,&lt;StreetSuffix&gt;,&lt;Postdirectional&gt;,&lt;City&gt;,&lt;state&gt;,&lt;PostalCode&gt;,&lt;Country&gt;</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Interruttore</strong></p></td>
+<td><p><strong>Switch</strong></p></td>
 <td><p>&lt;ChassisID&gt;,&lt;Description&gt;,&lt;location&gt;,&lt;CompanyName&gt;,&lt;HouseNumber&gt;,&lt;HouseNumberSuffix&gt;,&lt;Predirectional&gt;,...</p>
-<p>... &lt;StreetName&gt;,&lt;StreetSuffix&gt;,&lt;Postdirectional&gt;,&lt;città&gt;,&lt;stato&gt;,&lt;Cap&gt;,&lt;paese&gt;</p></td>
+<p>... &lt;StreetName&gt;,&lt;StreetSuffix&gt;,&lt;Postdirectional&gt;,&lt;città&gt;,&lt;stato&gt;,&lt;PostalCode&gt;,&lt;paese&gt;</p></td>
 </tr>
 </tbody>
 </table>
 
 
-Se non si popola il database della posizione e la **posizione richiesta** nei criteri di posizione è impostata su **Sì** o su **dichiarazione**di non responsabilità, il client chiederà all'utente di immettere manualmente una posizione.
+Se il database delle posizioni non viene popolato e il **percorso necessario** nei criteri percorso è impostato su **Sì** o su **dichiarazione**di non responsabilità, il client chiederà all'utente di immettere manualmente una posizione.
 
-Per informazioni dettagliate sulla compilazione del database della posizione, vedere la documentazione di Lync Server Management Shell per i cmdlet seguenti:
+Per informazioni dettagliate sul popolamento del database delle posizioni, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:
 
   - **Get-CsLisSubnet**
 
@@ -110,46 +110,46 @@ Per informazioni dettagliate sulla compilazione del database della posizione, ve
 
 <div>
 
-## <a name="to-add-network-elements-to-the-location-database"></a>Per aggiungere elementi di rete al database della posizione
+## <a name="to-add-network-elements-to-the-location-database"></a>Per aggiungere elementi di rete al database delle posizioni
 
-1.  Eseguire il cmdlet seguente per aggiungere una posizione subnet al database della posizione.
+1.  Eseguire il cmdlet seguente per aggiungere una posizione subnet al database delle posizioni.
     
         Set-CsLisSubnet -Subnet 157.56.66.0 -Description "Subnet 1" -Location Location1 -CompanyName "Litware" -HouseNumber 1234 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Redmond -State WA -PostalCode 99123 -Country US
     
-    Per i gateway ELIN, inserire il nome ELIN nel campo CompanyName. Puoi includere più di un ELIN. Ad esempio:
+    Per i gateway ELIN, inserire il ELIN nel campo CompanyName. È possibile includere più di un ELIN. Ad esempio:
     
         Set-CsLisSubnet -Subnet 157.56.66.0 -Description "Subnet 1" -Location Location1 -CompanyName 425-555-0100; 425-555-0200; 425-555-0300 -HouseNumber 1234 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Redmond -State WA -PostalCode 99123 -Country US
     
-    In alternativa, è possibile eseguire i cmdlet seguenti e usare un file denominato "Subnets. csv" per l'aggiornamento in blocco dei percorsi della subnet.
+    In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "Subnets. csv" per aggiornare in blocco le posizioni della subnet.
     
         $g = Import-Csv subnets.csv
         $g | Set-CsLisSubnet
 
-2.  Eseguire il cmdlet seguente per aggiungere posizioni wireless al database della posizione.
+2.  Eseguire il cmdlet seguente per aggiungere percorsi wireless al database delle posizioni.
     
         Set-CsLisWirelessAccessPoint -BSSID 0A-23-CD-16-AA-2E -Description "Wireless1" -Location Location2 -CompanyName "Litware" -HouseNumber 2345 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Bellevue -State WA -PostalCode 99234 -Country US
     
-    In alternativa, è possibile eseguire i cmdlet seguenti e usare un file denominato "WAP. csv" per aggiornare i percorsi wireless in blocco.
+    In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "WAP. csv" per aggiornare in blocco le posizioni wireless.
     
         $g = Import-Csv waps.csv
         $g | Set-CsLisWirelessAccessPoint
 
-3.  Eseguire il cmdlet seguente per aggiungere posizioni di cambio al database della posizione.
+3.  Eseguire il cmdlet seguente per aggiungere le posizioni dei commutatori al database delle località.
     
         Set-CsLisSwitch-ChassisID 0B-23-CD-16-AA-BB -Description "Switch1" -Location Location1 -CompanyName "Litware" -HouseNumber 1234 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Redmond -State WA -PostalCode 99123 -Country US
     
-    In alternativa, è possibile eseguire i cmdlet seguenti e usare un file denominato "switchs. csv" per le posizioni degli switch di aggiornamento in blocco.
+    In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "switches. csv" per aggiornare in blocco le posizioni degli switch.
     
         $g = Import-Csv switches.csv
         $g | Set-CsLisSwitch
 
-4.  Eseguire il cmdlet seguente per aggiungere posizioni della porta al database della posizione
+4.  Eseguire il cmdlet seguente per aggiungere posizioni delle porte al database della posizione
     
         Set-CsLisPort -ChassisID 0C-23-CD-16-AA-CC -PortID 0A-abcd -Description "Port1" -Location Location2 -CompanyName "Litware" -HouseNumber 2345 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Bellevue -State WA -PostalCode 99234 -Country US
     
-    Il valore predefinito per PortIDSubType è LocallyAssigned. È anche possibile impostarla su InterfaceAlias o su interfaccia utente
+    Il valore predefinito per PortIDSubType è LocallyAssigned. È anche possibile impostarla su InterfaceAlias o su InterfaceName
     
-    In alternativa, è possibile eseguire i cmdlet seguenti e usare un file denominato "Ports. csv" per l'aggiornamento in blocco delle posizioni della porta.
+    In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "Ports. csv" per l'aggiornamento in blocco delle posizioni delle porte.
     
         $g = Import-Csv ports.csv
         $g | Set-CsLisPort

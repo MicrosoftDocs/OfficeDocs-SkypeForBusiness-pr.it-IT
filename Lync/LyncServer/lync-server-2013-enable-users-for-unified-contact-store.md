@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Abilitare gli utenti per l'archivio contatti unificato"
+title: "Lync Server 2013: abilitare gli utenti per l'archivio contatti unificato"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184599
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3df3cbd4d71a1decc3607263f2e98b159dc29b2e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b99fd96b16d19305ea5bb63ea9f84096ef6117c7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735866"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046649"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,23 +35,23 @@ ms.locfileid: "41735866"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-07_
+_**Ultimo argomento modificato:** 2012-10-07_
 
-Quando si distribuisce Lync Server 2013 e si pubblica la topologia, per impostazione predefinita l'archivio contatti unificato è abilitato per tutti gli utenti. Non è necessario eseguire altre azioni per abilitare l'archiviazione di contatti unificati dopo la distribuzione di Lync Server 2013. Tuttavia, puoi usare il cmdlet **Set-CsUserServicesPolicy** per personalizzare gli utenti che dispongono di un archivio contatti unificato disponibile. Puoi abilitare questa funzionalità a livello globale, per sito, per tenant o per singoli o gruppi di persone.
+Quando si distribuisce Lync Server 2013 e si pubblica la topologia, l'archivio contatti unificato è abilitato per tutti gli utenti per impostazione predefinita. Non è necessario eseguire ulteriori operazioni per abilitare l'archivio contatti unificato dopo la distribuzione di Lync Server 2013. Tuttavia, è possibile utilizzare il cmdlet **Set-CsUserServicesPolicy** per decidere a quali utenti rendere l'archivio unificato per i contatti disponibile. È possibile abilitare questa caratteristica a livello globale, di sito, tenant, o per utenti singoli o gruppi di utenti.
 
 <div>
 
-## <a name="to-enable-users-for-unified-contact-store"></a>Per abilitare gli utenti per l'archivio contatti unificato
+## <a name="to-enable-users-for-unified-contact-store"></a>Per abilitare gli utenti all'archivio unificato contatti
 
-1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
 2.  Eseguire una delle operazioni seguenti:
     
-      - Per abilitare l'archivio contatti unificato a livello globale per tutti gli utenti di Lync Server, nella riga di comando digitare:
+      - Per abilitare l'archivio contatti unificato a livello globale per tutti gli utenti di Lync Server, nella riga di comando digitare quanto segue:
         
             Set-CsUserServicesPolicy -Identity global -UcsAllowed $True
     
-      - Per abilitare l'archivio contatti unificato per gli utenti di un sito specifico, nella riga di comando digitare:
+      - Per abilitare l'archivio unificato per i contatti a livello globale per gli utenti di un sito specifico, digitare quanto segue nella riga di comando:
         
             New-CsUserServicesPolicy -Identity site:<site name> -UcsAllowed $True
         
@@ -59,7 +59,7 @@ Quando si distribuisce Lync Server 2013 e si pubblica la topologia, per impostaz
         
             New-CsUserServicesPolicy -Identity site:Redmond -UcsAllowed $True
     
-      - Per abilitare l'archivio contatti unificato dal tenant, nella riga di comando digitare:
+      - Per abilitare l'archivio unificato per tenant, digitare quanto segue nella riga di comando:
         
             Set-CsUserServicesPolicy -Tenant <tenantId> -UcsAllowed $True
         
@@ -67,7 +67,7 @@ Quando si distribuisce Lync Server 2013 e si pubblica la topologia, per impostaz
         
             Set-CsUserServicesPolicy -Tenant "38aad667-af54-4397-aaa7-e94c79ec2308" -UcsAllowed $True
     
-      - Per abilitare l'archivio contatti unificato per utenti specifici, nella riga di comando digitare:
+      - Per abilitare l'archivio unificato per utente specifico, digitare quanto segue nella riga di comando:
         
             New-CsUserServicesPolicy -Identity "<policy name>" -UcsAllowed $True
             Grant-CsUserServicesPolicy -Identity "<user display name>" -PolicyName <"policy name">
@@ -76,7 +76,7 @@ Quando si distribuisce Lync Server 2013 e si pubblica la topologia, per impostaz
         
 
         > [!NOTE]  
-        > È anche possibile usare l'alias utente o l'URI SIP anziché il nome visualizzato dell'utente.
+        > Al posto del nome visualizzato dell'utente, è inoltre possibile utilizzare alias utente o URI SIP.
 
         
         </div>
@@ -90,7 +90,7 @@ Quando si distribuisce Lync Server 2013 e si pubblica la topologia, per impostaz
         
 
         > [!NOTE]  
-        > Nell'esempio precedente il primo comando crea un nuovo criterio per utente denominato <EM>UCS abilitato agli utenti</EM> con il flag UcsAllowed impostato su true. Il secondo comando assegna i criteri all'utente con il nome visualizzato Ken di riferimento, il che significa che Ken è ora abilitato per l'archivio contatti unificato.
+        > Nell'esempio precedente, il primo comando crea un nuovo criterio per utente chiamato <EM>UCS Enabled Users</EM>, con il contrassegno UcsAllowed impostato su True. Il secondo comando assegna il criterio all'utente con nome visualizzato Ken Myer, e pertanto Ken Myer è ora abilitato all'archivio unificato per i contatti.
 
         
         </div>

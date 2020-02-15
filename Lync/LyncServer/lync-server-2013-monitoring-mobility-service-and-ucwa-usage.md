@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: monitoraggio del servizio di mobilità e uso di UCWA'
+title: 'Lync Server 2013: monitoraggio del servizio per dispositivi mobili e utilizzo di UCWA'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184683
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d4968c1a3b3dc30bdab2a3c19fd8e930da6122cb
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6e8fbdd2e411f3613519278f807caed334955810
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756810"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048009"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="monitoring-mobility-service-and-ucwa-usage-in-lync-server-2013"></a>Monitoraggio del servizio di mobilità e uso di UCWA in Lync Server 2013
+# <a name="monitoring-mobility-service-and-ucwa-usage-in-lync-server-2013"></a>Monitoraggio del servizio per dispositivi mobili e utilizzo di UCWA in Lync Server 2013
 
 </div>
 
@@ -35,53 +35,53 @@ ms.locfileid: "41756810"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-14_
+_**Ultimo argomento modificato:** 2013-02-14_
 
-In modo continuo, dovresti monitorare la CPU e la memoria usata dal servizio di mobilità di Lync Server (MCX) e dall'API Web Unified Communications (UCWA). Per monitorare l'uso, è possibile usare quanto segue:
+Per una base continuativa, è consigliabile monitorare la CPU e la memoria utilizzata da Lync Server Mobility Service (MCX) e Unified Communications Web API (UCWA). Per monitorare l'utilizzo, è possibile utilizzare gli elementi seguenti:
 
 **Per Unified Communications Web API (UCWA):**
 
-  - Processo di lavoro di **LyncUcwa** in Gestione Internet Information Services (IIS). Nel riquadro **processi di lavoro** esaminare le colonne **CPU%** e **private bytes (KB)** (memoria).
+  - Il processo di lavoro di **LyncUcwa** in Gestione Internet Information Services (IIS). Nel riquadro **Processi di lavoro** analizzare le colonne **% CPU** e **Byte privati (KB)** (memoria).
 
-  - Contatori delle prestazioni della **CPU** e del **processore** .
+  - Contatori delle prestazioni relativi a **CPU** e **Processore**.
 
-Per la maggior parte delle distribuzioni, l'uso della CPU UCWA deve essere inferiore al 15% in media. L'utilizzo della memoria deve rientrare nei limiti descritti in [monitoraggio dei limiti della capacità di memoria del server in Lync server 2013](lync-server-2013-monitoring-for-server-memory-capacity-limits.md).
+Per la maggior parte delle distribuzioni, l'utilizzo della CPU UCWA dovrebbe essere inferiore al 15% in media. L'utilizzo della memoria deve rientrare nei limiti descritti in [monitoraggio dei limiti di capacità della memoria del server in Lync server 2013](lync-server-2013-monitoring-for-server-memory-capacity-limits.md).
 
-Oltre ai contatori di utilizzo della CPU e della memoria, è possibile usare i contatori delle prestazioni seguenti per determinare quando un server è in overload con le richieste:
+Oltre ai contatori di utilizzo della CPU e della memoria, è possibile utilizzare i contatori delle prestazioni seguenti per determinare quando un server è sottoposto a overload con richieste:
 
-  - **Ls: Web-limitazione e autenticazione\\Web-totale delle richieste di elaborazione**, che indica il numero di richieste Web in sospeso nel server. Quando questo contatore raggiunge 10.000, le richieste successive avranno esito negativo, con il messaggio di errore "503-servizio non disponibile".
+  - **Ls: Web – limitazione e autenticazione\\Web – richieste totali nell'elaborazione**, che indica il numero di richieste Web in sospeso sul server. Quando questo contatore raggiunge 10.000, le richieste successive avranno esito negativo, con il messaggio di errore "503-servizio non disponibile".
 
-  - **Le\\richieste di ASP.NET in coda** (devono essere sempre pari a zero).
+  - **Le\\richieste di ASP.NET in coda** (devono sempre essere pari a zero).
 
 <div>
 
 
 > [!NOTE]  
-> Se si soddisfano o superano questi valori, è necessario rivedere e ricalcolare la pianificazione della capacità per il dimensionamento corretto della CPU, il numero di core e la memoria per i computer che ospitano i servizi Web.
+> Se si soddisfano o superano questi valori, è consigliabile rivisitare e ricalcolare la pianificazione della capacità per il corretto dimensionamento della CPU, il numero di core e la memoria dei computer che ospitano i servizi Web.
 
 
 
 </div>
 
-**Per il servizio mobilità (MCX):**
+**Per il servizio per dispositivi mobili (MCX):**
 
-  - Processi di lavoro di **CSIntMcxAppPool** e **CSExtMcxAppPool** in Gestione Internet Information Services (IIS). Nel riquadro **processi di lavoro** esaminare le colonne **CPU%** e **private bytes (KB)** (memoria).
+  - I processi di lavoro di **CSIntMcxAppPool** e **CSExtMcxAppPool** in Gestione Internet Information Services (IIS). Nel riquadro **Processi di lavoro** analizzare le colonne **% CPU** e **Byte privati (KB)** (memoria).
 
-  - Contatori delle prestazioni della **CPU** e del **processore** .
+  - Contatori delle prestazioni relativi a **CPU** e **Processore**.
 
-Per la maggior parte delle distribuzioni, l'uso della CPU del servizio di mobilità deve essere inferiore al 15%, in media. L'utilizzo della memoria deve rientrare nei limiti descritti in [monitoraggio dei limiti della capacità di memoria del server in Lync server 2013](lync-server-2013-monitoring-for-server-memory-capacity-limits.md).
+Per la maggior parte delle distribuzioni, l'utilizzo della CPU del servizio per dispositivi mobili deve essere inferiore al 15%, in media. L'utilizzo della memoria deve rientrare nei limiti descritti in [monitoraggio dei limiti di capacità della memoria del server in Lync server 2013](lync-server-2013-monitoring-for-server-memory-capacity-limits.md).
 
-Oltre ai contatori di utilizzo della CPU e della memoria, è possibile usare i seguenti contatori delle prestazioni di ASP.NET per determinare quando un server è in overload con le richieste:
+Oltre ai contatori di utilizzo della CPU e della memoria, è possibile utilizzare il contatori delle prestazioni ASP.NET seguenti per determinare quando un server è sovraccarico di richieste:
 
-  - **ASP.NET v 2.0.50727\\richiede Current**, che indica il numero di richieste Web in sospeso nel server. Quando questo contatore raggiunge 5.000, le richieste successive avranno esito negativo con il messaggio di errore "503-servizio non disponibile".
+  - **ASP.NET v 2.0.50727\\richiede la versione corrente**, che indica il numero di richieste Web in sospeso sul server. Quando questo contatore raggiunge 5.000, le richieste successive avranno esito negativo con il messaggio di errore "503-servizio non disponibile".
 
-  - **Le\\richieste di ASP.NET in coda** (devono essere sempre pari a zero).
+  - **Le\\richieste di ASP.NET in coda** (devono sempre essere pari a zero).
 
 <div>
 
 
 > [!NOTE]  
-> Se si soddisfano o superano questi valori, è necessario rivedere e ricalcolare la pianificazione della capacità per il dimensionamento corretto della CPU, del numero di core e della memoria per i computer che ospitano i servizi Web.
+> Se si soddisfano o superano questi valori, è consigliabile rivisitare e ricalcolare la pianificazione della capacità per il corretto dimensionamento della CPU, del numero di core e della memoria per i computer che ospitano i servizi Web.
 
 
 
@@ -92,7 +92,7 @@ Oltre ai contatori di utilizzo della CPU e della memoria, è possibile usare i s
 ## <a name="see-also"></a>Vedere anche
 
 
-[Monitoraggio dei limiti della capacità di memoria del server in Lync Server 2013](lync-server-2013-monitoring-for-server-memory-capacity-limits.md)  
+[Monitoraggio dei limiti di capacità della memoria del server in Lync Server 2013](lync-server-2013-monitoring-for-server-memory-capacity-limits.md)  
   
 
 </div>

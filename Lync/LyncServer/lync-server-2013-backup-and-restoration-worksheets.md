@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: fogli di lavoro di backup e ripristino'
+title: 'Lync Server 2013: fogli di lavoro per il backup e il ripristino'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541460
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 390d6289daf8075c873e90319642f0e74b61d835
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7f767a2c94e797ab43e3b5ace6b553b05bafd81f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730366"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041225"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="backup-and-restoration-worksheets-for-lync-server-2013"></a>Fogli di lavoro di backup e ripristino per Lync Server 2013
+# <a name="backup-and-restoration-worksheets-for-lync-server-2013"></a>Fogli di lavoro per il backup e il ripristino di Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41730366"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-18_
+_**Ultimo argomento modificato:** 2013-02-18_
 
-Il piano di backup e ripristino per l'organizzazione deve contenere informazioni dettagliate su come e quando eseguire il backup di dati e impostazioni. È possibile usare i fogli di lavoro presentati in questo articolo per documentare queste informazioni per la distribuzione specifica e per i requisiti di backup e ripristino dell'organizzazione.
+Il piano di backup e ripristino per l'organizzazione deve contenere informazioni dettagliate su come e quando si esegue il backup dei dati e delle impostazioni. È possibile utilizzare i fogli di lavoro presentati in questo articolo per documentare queste informazioni per la distribuzione specifica e per i requisiti di backup e ripristino dell'organizzazione.
 
-Usare i fogli di lavoro seguenti per registrare le informazioni necessarie per eseguire il backup e il ripristino di database, archivio file e informazioni sulle impostazioni per un pool di Lync Server o un server Standard Edition. Conservare una o più copie di questi fogli di lavoro in una posizione sicura in modo che siano facilmente accessibili se è necessario ripristinare Lync Server.
+Utilizzare i fogli di lavoro seguenti per registrare le informazioni necessarie per il backup e il ripristino di database, archivio file e informazioni sulle impostazioni di un pool di Lync Server o di un server Standard Edition. Mantenere una o più copie di questi fogli di lavoro in una posizione sicura in modo che siano facilmente accessibili se è necessario ripristinare Lync Server.
 
 <div>
 
 
 > [!NOTE]  
-> I fogli di lavoro in questa sezione coprono solo le informazioni necessarie per ripristinare i dati e le impostazioni dei database e server di Lync Server. Se è necessario documentare altre informazioni di ripristino, ad esempio le informazioni per la reinstallazione di sistemi operativi e altro software, usare i piani di distribuzione dell'organizzazione e i piani di backup e ripristino per rispondere a tali requisiti.
+> Nei fogli di lavoro di questa sezione vengono riportate solo le informazioni necessarie per ripristinare i dati e le impostazioni dei database e server di Lync Server. Se è necessario documentare altre informazioni di ripristino, ad esempio le informazioni per la reinstallazione di sistemi operativi e altro software, utilizzare i piani di distribuzione dell'organizzazione e i piani di backup e ripristino per soddisfare tali requisiti.
 
 
 
@@ -53,9 +53,9 @@ Usare i fogli di lavoro seguenti per registrare le informazioni necessarie per e
 
 <div>
 
-## <a name="database-backup-and-restoration-worksheet"></a>Foglio di lavoro backup e ripristino di database
+## <a name="database-backup-and-restoration-worksheet"></a>Foglio di lavoro per il backup e il ripristino del database
 
-Usare la tabella seguente per registrare le informazioni necessarie per eseguire il backup e ripristinare i database di Lync Server.
+Utilizzare la tabella seguente per registrare le informazioni necessarie per eseguire il backup e il ripristino dei database di Lync Server.
 
 ### <a name="database-information-for-backup-and-restoration"></a>Informazioni sul database per il backup e il ripristino
 
@@ -77,7 +77,7 @@ Usare la tabella seguente per registrare le informazioni necessarie per eseguire
 <th>Strumento di backup del database</th>
 <th>Set di backup</th>
 <th>Destinazione di backup</th>
-<th>Note</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
@@ -93,7 +93,7 @@ Usare la tabella seguente per registrare le informazioni necessarie per eseguire
 <td><p>                    </p></td>
 </tr>
 <tr class="even">
-<td><p>Database di LcsLog (nome predefinito) in archiviazione del server di database</p></td>
+<td><p>LcsLog (nome predefinito) database sul server di database di archiviazione</p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p>Strumento di gestione di SQL Server</p></td>
@@ -103,7 +103,7 @@ Usare la tabella seguente per registrare le informazioni necessarie per eseguire
 <td><p> </p></td>
 </tr>
 <tr class="odd">
-<td><p>Database di LcsCdr per il monitoraggio del server di database per record dettagli chiamata (CDRs)</p></td>
+<td><p>Database di LcsCdr per il monitoraggio del server di database per i record dettagli chiamata (CDRs)</p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p>Strumento di gestione di SQL Server</p></td>
@@ -113,7 +113,7 @@ Usare la tabella seguente per registrare le informazioni necessarie per eseguire
 <td><p> </p></td>
 </tr>
 <tr class="even">
-<td><p>Database di QoEMetrics sul server di database di monitoraggio per i dati di qualità dell'esperienza (QoE)</p></td>
+<td><p>Database di QoEMetrics per il monitoraggio del server di database per i dati QoE (Quality of Experience)</p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p>Strumento di gestione di SQL Server</p></td>
@@ -136,15 +136,15 @@ Usare la tabella seguente per registrare le informazioni necessarie per eseguire
 </table>
 
 
-Non è necessario alcun backup o ripristino dei database seguenti:
+Non è necessario eseguire il backup o il ripristino dei database seguenti:
 
   - RTCDyn. I dati utente temporanei in questo database non sono necessari per il ripristino del servizio.
 
-  - RTCAb. Il database della Rubrica viene ricreato automaticamente dall'elenco indirizzi globale (GAL) in servizi di dominio Active Directory.
+  - RTCAb. Il database della Rubrica viene automaticamente ricreato dall'elenco indirizzi globale (GAL, Global Address List) in servizi di dominio Active Directory.
 
-  - Rgsdyn. I dati del servizio Response Group temporaneo in questo database non sono necessari per il ripristino del servizio.
+  - Rgsdyn. I dati del servizio Response Group transienti in questo database non sono necessari per il ripristino del servizio.
 
-  - Cpsdyn. Le informazioni dinamiche per l'applicazione per il parcheggio delle chiamate non sono necessarie per il ripristino del servizio.
+  - Cpsdyn. Le informazioni dinamiche per l'applicazione Parcheggio di chiamata non sono necessarie per il ripristino del servizio.
 
   - MgcComp. Il database di conformità per la chat persistente non è necessario per il ripristino del servizio.
 
@@ -152,11 +152,11 @@ Non è necessario alcun backup o ripristino dei database seguenti:
 
 <div>
 
-## <a name="file-store-backup-and-restoration-worksheet"></a>Foglio di lavoro backup e ripristino del file Store
+## <a name="file-store-backup-and-restoration-worksheet"></a>Foglio di lavoro per il backup e il ripristino dell'archivio file
 
-Usare la tabella seguente per registrare le informazioni necessarie per eseguire il backup e ripristinare gli archivi di file. Gli archivi di file contengono dati, ad esempio i metadati del contenuto della riunione, i registri di conformità delle riunioni, i registri di aggiornamento per gli aggiornamenti dei dispositivi e i file audio per il Response Group, il parcheggio delle chiamate e le applicazioni
+Utilizzare la tabella seguente per registrare le informazioni necessarie per eseguire il backup e il ripristino degli archivi di file. Gli archivi file contengono dati quali i metadati del contenuto della riunione, i registri di conformità delle riunioni, i registri di aggiornamento per gli aggiornamenti dei dispositivi e i file audio per il Response Group, il parcheggio di chiamata e le applicazioni di annuncio.
 
-### <a name="file-store-information-for-backup-and-restoration"></a>Informazioni sull'archiviazione dei file per il backup e il ripristino
+### <a name="file-store-information-for-backup-and-restoration"></a>Informazioni sull'archivio file per il backup e il ripristino
 
 <table style="width:100%;">
 <colgroup>
@@ -173,10 +173,10 @@ Usare la tabella seguente per registrare le informazioni necessarie per eseguire
 <th>Contenuto</th>
 <th>Nome server (FQDN)</th>
 <th>Pianificazione del backup</th>
-<th>Strumento backup file System</th>
+<th>Strumento di backup del file System</th>
 <th>Condivisione file di cui eseguire il backup *</th>
 <th>Destinazione di backup</th>
-<th>Note</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
@@ -185,9 +185,9 @@ Usare la tabella seguente per registrare le informazioni necessarie per eseguire
 <td></td>
 <td></td>
 <td><p>Strumento di backup standard, ad esempio Robocopy</p></td>
-<td><p>In file server per Enterprise Edition. In Standard Edition per impostazione predefinita, per la distribuzione di Standard Edition. In genere, una per ogni sito.</p></td>
+<td><p>Su file server per Enterprise Edition. In Standard Edition per impostazione predefinita, per la distribuzione di Standard Edition. In genere, una per ogni sito.</p></td>
 <td></td>
-<td><p>Non è necessario eseguire il backup dei file denominati <strong>meeting. Active</strong> . Questi file sono in uso e sono bloccati durante una riunione.</p></td>
+<td><p>Non eseguire il backup dei file denominati <strong>Meeting.Active</strong>. Questi file sono in uso e sono bloccati durante una riunione.</p></td>
 </tr>
 </tbody>
 </table>
@@ -197,9 +197,9 @@ Usare la tabella seguente per registrare le informazioni necessarie per eseguire
 
 <div>
 
-## <a name="settings-backup-and-restoration-worksheet"></a>Foglio di lavoro backup e ripristino delle impostazioni
+## <a name="settings-backup-and-restoration-worksheet"></a>Foglio di lavoro per il backup e il ripristino delle impostazioni
 
-Usare la tabella seguente per registrare le informazioni necessarie per eseguire il backup e il ripristino delle impostazioni.
+Utilizzare la tabella seguente per registrare le informazioni necessarie per il backup e il ripristino delle impostazioni.
 
 ### <a name="settings-information-for-backup-and-restoration"></a>Informazioni sulle impostazioni per il backup e il ripristino
 
@@ -219,14 +219,14 @@ Usare la tabella seguente per registrare le informazioni necessarie per eseguire
 <th>Nome server (FQDN)</th>
 <th>Pianificazione del backup</th>
 <th>Strumento di backup</th>
-<th>Nome file di configurazione (con estensione XML)</th>
+<th>Nome del file di configurazione (con estensione XML)</th>
 <th>Percorso di backup</th>
-<th>Note</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Database XDS in Central Management store per la configurazione della topologia (globale)</p></td>
+<td><p>Database di XDS nell'archivio di gestione centrale per la configurazione della topologia (globale)</p></td>
 <td><p>                    </p></td>
 <td><p>                    </p></td>
 <td><p>Cmdlet <strong>Export-CsConfiguration</strong></p></td>
@@ -235,7 +235,7 @@ Usare la tabella seguente per registrare le informazioni necessarie per eseguire
 <td><p>                   </p></td>
 </tr>
 <tr class="even">
-<td><p>Database LIS in Central Management store per le informazioni sulla posizione di E9-1-1 (globale)</p></td>
+<td><p>Database LIS nell'archivio di gestione centrale per le informazioni sulla posizione di E9-1-1 (globale)</p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p>Cmdlet <strong>Export-CsLisConfiguration</strong></p></td>
@@ -244,7 +244,7 @@ Usare la tabella seguente per registrare le informazioni necessarie per eseguire
 <td><p>                    </p></td>
 </tr>
 <tr class="odd">
-<td><p>Database di RgsConfig nel server back-end per la configurazione del gruppo di risposte (pool)</p></td>
+<td><p>Database di RgsConfig nel server back-end per la configurazione di Response Group (pool)</p></td>
 <td><p> </p></td>
 <td><p> </p></td>
 <td><p>Cmdlet <strong>Export-CsRgsConfiguration</strong></p></td>

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: progettazione della topologia tramite lo strumento pianificazione'
+title: 'Lync Server 2013: progettazione della topologia mediante lo strumento di pianificazione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541454
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 590bfae33e12cca2e2305eab9d842f0e2f105838
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bca2871acdaf67e318e7e402d78f34748de4b722
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41762504"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051520"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="designing-the-topology-for-lync-server-2013-by-using-the-planning-tool"></a>Progettazione della topologia di Lync Server 2013 tramite lo strumento pianificazione
+# <a name="designing-the-topology-for-lync-server-2013-by-using-the-planning-tool"></a>Progettazione della topologia per Lync Server 2013 mediante lo strumento di pianificazione
 
 </div>
 
@@ -35,35 +35,35 @@ ms.locfileid: "41762504"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-03-04_
+_**Ultimo argomento modificato:** 2013-03-04_
 
-Microsoft Lync Server 2013, strumento di pianificazione è uno strumento basato su una procedura guidata, con un'intervista che pone domande sulla topologia di Lync Server 2013 che si sta progettando. Lo strumento di pianificazione usa le informazioni fornite, insieme alle procedure consigliate per la progettazione e la capacità della topologia, per presentare una topologia consigliata in base alle risposte fornite. È possibile scaricare lo strumento di pianificazione dall'area download Microsoft ([http://go.microsoft.com/fwlink/?LinkID=282725](http://go.microsoft.com/fwlink/?linkid=282725)).
+Microsoft Lync Server 2013, Planning Tool è uno strumento basato su procedure guidate, che consente di fare domande sulla topologia di Lync Server 2013 che si sta progettando. Lo strumento di pianificazione utilizza le informazioni fornite, unitamente alle procedure consigliate per la progettazione e la capacità della topologia, per presentare una topologia consigliata in base alle risposte fornite. È possibile scaricare lo strumento di pianificazione dall'area download Microsoft ([http://go.microsoft.com/fwlink/?LinkID=282725](http://go.microsoft.com/fwlink/?linkid=282725)).
 
-In definitiva, l'obiettivo dello strumento di pianificazione è quello di semplificare la complessità della progettazione di una topologia completa di Lync Server 2013. Lo strumento fornisce inoltre riferimenti contestuali alla documentazione relativa alla pianificazione e alla distribuzione all'interno dello strumento, a condizione che sia disponibile una connessione Internet per la connessione al sito Web Microsoft TechNet.
+Infine, l'obiettivo dello strumento di pianificazione è facilitare la complessità potenziale della progettazione di una topologia Lync Server 2013 completa. All'interno di questo strumento vengono forniti inoltre riferimenti contestuali alla documentazione relativa alla pianificazione e alla distribuzione, purché sia disponibile una connessione Internet per l'accesso ai siti Web di Microsoft TechNet.
 
-Dopo la personalizzazione della topologia con gli indirizzi TCP/IP dell'infrastruttura e i nomi di dominio completi (FQDN), lo strumento di pianificazione rende disponibile una serie di report che includono la denominazione DNS (Domain Name System), le regole del firewall, i certificati e altro ancora.
+Dopo aver personalizzato la topologia con gli indirizzi TCP/IP e i nomi di dominio completi (FQDN) dell'infrastruttura, lo strumento di pianificazione rende disponibili una serie di report che comprendono la denominazione DNS (Domain Name System), le regole del firewall, i certificati e altro ancora.
 
-Lo strumento di pianificazione offre anche la possibilità di esportare informazioni in due formati:
+Lo strumento di pianificazione consente inoltre di esportare le informazioni in due formati:
 
   - Microsoft Excel
 
   - Microsoft Visio
 
-Gli argomenti seguenti introducono e dettagliano lo strumento di pianificazione.
+Negli argomenti seguenti vengono introdotti e dettagliati lo strumento di pianificazione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Installazione dello strumento di pianificazione in Lync Server 2013](lync-server-2013-installing-the-planning-tool.md)
 
   - [Installazione di software facoltativo in Lync Server 2013](lync-server-2013-installing-optional-software.md)
 
-  - [Spostamento nello strumento di pianificazione in Lync Server 2013](lync-server-2013-navigating-the-planning-tool.md)
+  - [Esplorazione dello strumento di pianificazione in Lync Server 2013](lync-server-2013-navigating-the-planning-tool.md)
 
-  - [Creare la struttura della topologia iniziale per Lync Server 2013](lync-server-2013-create-the-initial-topology-design.md)
+  - [Creare la progettazione della topologia iniziale per Lync Server 2013](lync-server-2013-create-the-initial-topology-design.md)
 
-  - [Esame dei rapporti amministratore in Lync Server 2013](lync-server-2013-reviewing-the-administrator-reports.md)
+  - [Revisione dei rapporti dell'amministratore in Lync Server 2013](lync-server-2013-reviewing-the-administrator-reports.md)
 
 </div>
 
@@ -73,7 +73,7 @@ Gli argomenti seguenti introducono e dettagliano lo strumento di pianificazione.
 
 
 [Distribuzione di Lync Server 2013](lync-server-2013-deploying-lync-server.md)  
-[Pianificazione di Front End Server, messaggistica istantanea e presenza in Lync Server 2013](lync-server-2013-planning-for-front-end-servers-instant-messaging-and-presence.md)  
+[Pianificazione di front end server, messaggistica istantanea e presenza in Lync Server 2013](lync-server-2013-planning-for-front-end-servers-instant-messaging-and-presence.md)  
   
 
 </div>

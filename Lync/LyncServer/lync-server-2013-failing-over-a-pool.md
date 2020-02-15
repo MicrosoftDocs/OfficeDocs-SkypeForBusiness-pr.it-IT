@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Failover di un pool'
+title: 'Lync Server 2013: failover di un pool'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183432
 ms.date: 10/10/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ea66ae4a224d78e40a9fdb9de867d4738a5e3714
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7de00de8361ac8bc5827fd76ea2486ae790a66d4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756140"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048019"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,103 +35,103 @@ ms.locfileid: "41756140"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-10-10_
+_**Ultimo argomento modificato:** 2014-10-10_
 
-Se un singolo pool Front-end non è riuscito e non è più necessario, eseguire la procedura seguente. In questa procedura, Datacenter1 contiene pool1 e pool1 non è riuscito. Non si riesce più a Pool2 situato in Datacenter2.
+Se si verifica un errore in un singolo pool Front End ed è necessario eseguirne il failover, utilizzare la procedura indicata di seguito. In questa procedura, Datacenter1 contiene Pool1 e l'errore si è verificato in Pool1. Viene eseguito il failover su Pool2 situato in Datacenter2.
 
-La maggior parte del lavoro per il failover del pool comporta l'assenza di errori sopra l'Central Management store, se necessario. Questo è importante perché l'archivio di gestione centrale deve essere funzionale quando gli utenti del pool non riescono più.
+La maggior parte del lavoro per il failover del pool comporta l'failover dell'archivio di gestione centrale, se necessario. Questo è importante perché l'archivio di gestione centrale deve essere funzionale quando gli utenti del pool non sono più in grado di eseguire l'operazione.
 
-Inoltre, se un pool Front-end non riesce ma il pool di Edge in tale sito è ancora in corso, è necessario sapere se il pool di Edge usa il pool non riuscito come pool di hop successivo. In caso affermativo, è necessario modificare il pool di bordi per usare un pool Front-end diverso prima di non superare il pool Front-end non riuscito. La modalità di modifica dell'impostazione hop successiva varia a seconda che il bordo usi un pool nello stesso sito del pool di bordi o in un altro sito.
+Inoltre, se si verifica un errore in un pool Front End ma il pool di server perimetrali presso il sito è ancora in esecuzione, è necessario sapere se quest'ultimo pool utilizza quello in cui si è verificato l'errore come pool hop successivo. In caso affermativo, è necessario impostare il pool di server perimetrali in modo da utilizzare un pool Front End diverso prima del failover del pool Front End in errore. La modifica dell'impostazione relativa all'hop successivo varia a seconda che sia utilizzato un pool che si trova nello stesso sito o in un sito diverso.
 
-**Per impostare un pool di bordi per l'uso di un pool di hop successivo nello stesso sito**
+**Per impostare un pool di server perimetrali per l'utilizzo di un pool hop successivo nello stesso sito**
 
-1.  Aprire Generatore di topologia, fare clic con il pulsante destro del mouse sul pool di bordi che deve essere modificato e quindi scegliere **modifica proprietà**.
+1.  Aprire Generatore di topologie, fare clic con il pulsante destro del mouse sul pool di server perimetrali che deve essere modificato e scegliere **modifica proprietà**.
 
-2.  Fare clic su **hop successivo**. Nell'elenco **hop successivo:** selezionare il pool che ora fungerà da pool hop successivo.
+2.  Fare clic su **Hop successivo**. Nell'elenco **Pool hop successivo** selezionare il pool da utilizzare come pool hop successivo.
 
-3.  Fare clic su **OK**e quindi pubblicare le modifiche.
+3.  Fare clic su **OK**, quindi pubblicare le modifiche.
 
-**Per impostare un pool di bordi per l'uso di un pool di hop successivo in un altro sito**
+**Per impostare un pool di server perimetrali per l'utilizzo di un pool hop successivo in un sito diverso**
 
 1.  Aprire una finestra di Lync Server Management Shell e digitare il cmdlet seguente:
     
         Set-CsEdgeServer -Identity EdgeServer:<Edge Server pool FQDN> -Registrar Registrar:<NextHopPoolFQDN>
 
-**Per eseguire il failover di un pool in un caso di emergenza**
+**Per eseguire il failover di un pool in caso di emergenza**
 
-1.  Individuare il pool che ospita il server di gestione centralizzato digitando il cmdlet seguente in un server front-end in Pool2:
+1.  Individuare il pool che ospita il server di gestione centrale digitando il cmdlet seguente in un front end server in Pool2:
     
         Invoke-CsManagementServerFailover -Whatif
     
-    I risultati di questo cmdlet mostrano quale pool ospita attualmente il server di gestione centrale. Nel resto della procedura questo pool è noto come pool di CMS\_.
+    I risultati di questo cmdlet mostrano quale pool ospita attualmente il server di gestione centrale. Nella parte restante di questa procedura, questo pool è noto come\_pool CMS.
 
-2.  Usare generatore di topologie per trovare la versione di Lync Server in esecuzione\_nel pool di CMS. Se è in uso Lync Server 2013, usare il cmdlet seguente per trovare il pool di backup del pool 1.
+2.  Utilizzare Generatore di topologie per individuare la versione di Lync Server in esecuzione\_nel pool CMS. Se è in esecuzione Lync Server 2013, utilizzare il cmdlet seguente per individuare il pool di backup del pool 1.
     
         Get-CsPoolBackupRelationship -PoolFQDN <CMS_Pool FQDN>
     
-    Consentire al\_pool di backup di essere il pool di backup.
+    \_Fare in modo che il pool di backup sia il pool di backup.
 
-3.  Controllare lo stato di Central Management Store con il cmdlet seguente:
+3.  Controllare lo stato dell'archivio di gestione centrale con il cmdlet seguente:
     
         Get-CsManagementStoreReplicationStatus -CentralManagementStoreStatus 
     
-    Questo cmdlet deve indicare che sia ActiveMasterFQDN che ActiveFileTransferAgents puntano al nome FQDN del pool\_di CMS. Se sono vuoti, il server di gestione centrale non è disponibile ed è necessario riuscire.
+    Questo cmdlet deve mostrare che sia ActiveMasterFQDN che ActiveFileTransferAgents puntano al nome di dominio completo\_del pool CMS. Se sono vuoti, il server di gestione centrale non è disponibile ed è necessario eseguirne il failover.
 
-4.  Se l'archivio di gestione centrale non è disponibile o se l'archivio di gestione centrale è in esecuzione in pool1, ovvero il pool non è riuscito, è necessario eseguire il failover del server di gestione centralizzato prima di non riuscire nel pool. Se è necessario eseguire il failover del server di gestione centrale ospitato in un pool in cui è in esecuzione Lync Server 2013, usare il cmdlet nel passaggio 5 di questa procedura. Se è necessario eseguire il failover del server di gestione centrale ospitato in un pool in cui è in esecuzione Lync Server 2010, usare il cmdlet nel passaggio 6 di questa procedura. Se non è necessario eseguire il failover del server di gestione centrale, passare al passaggio 7 di questa procedura.
+4.  Se l'archivio di gestione centrale non è disponibile o se l'archivio di gestione centrale è in esecuzione su Pool1, ovvero il pool che ha avuto esito negativo, è necessario eseguire il failover del server di gestione centrale prima che venga eseguito il failover del pool. Se è necessario eseguire il failover del server di gestione centrale ospitato in un pool che esegue Lync Server 2013, utilizzare il cmdlet nel passaggio 5 di questa procedura. Se è necessario eseguire il failover del server di gestione centrale ospitato in un pool che esegue Lync Server 2010, utilizzare il cmdlet nel passaggio 6 di questa procedura. Se non è necessario eseguire il failover del server di gestione centrale, passare al passaggio 7 di questa procedura.
 
-5.  Per eseguire il failover dell'Central Management store in un pool in cui è in esecuzione Lync Server 2013, procedere come segue:
+5.  Per eseguire il failover dell'archivio di gestione centrale in un pool che esegue Lync Server 2013, eseguire le operazioni seguenti:
     
-      - Prima di tutto, controlla che il server back\_-end nel pool di backup esegua l'istanza principale di Central Management Store digitando quanto segue:
+      - Verificare innanzitutto quale server back-end del pool\_di backup esegue l'istanza principale dell'archivio di gestione centrale digitando quanto segue:
         
             Get-CsDatabaseMirrorState -DatabaseType Centralmgmt -PoolFqdn <Backup_Pool Fqdn>
     
-      - Se il server di back-end principale\_nel pool di backup è l'entità, digitare:
+      - Se il server back-end principale del\_pool di backup è il principale, digitare quanto segue:
         
             Invoke-CSManagementServerFailover -BackupSQLServerFqdn <Backup_Pool Primary BackEnd Server FQDN> -BackupSQLInstanceName <Backup_Pool Primary SQL Instance Name>
         
-        Se il server mirror back-end nel\_pool di backup è l'entità, digitare:
+        Se il server back-end mirror del\_pool di backup è il principale, digitare quanto segue:
         
             Invoke-CSManagementServerFailover -MirrorSQLServerFqdn <Backup_Pool Mirror BackEnd Server FQDN> -MirrorSQLInstanceName <Backup_Pool Mirror SQL Instance Name>
     
-      - Verificare che il failover di Central Management Server sia completo. Digitare quanto segue:
+      - Verificare che il failover del server di gestione centrale sia stato completato. Digitare quanto segue:
         
             Get-CsManagementStoreReplicationStatus -CentralManagementStoreStatus 
         
-        Verificare che sia ActiveMasterFQDN che ActiveFileTransferAgents indichino il nome di dominio completo\_del pool di backup.
+        Verificare che sia ActiveMasterFQDN che ActiveFileTransferAgents puntino al nome di dominio completo\_del pool di backup.
     
-      - Infine, controlla lo stato della replica per tutti i server front-end digitando quanto segue:
+      - Infine, controllare lo stato della replica per tutti i Front End Server digitando quanto segue:
         
             Get-CsManagementStoreReplicationStatus 
         
-        Verificare che tutte le repliche abbiano il valore true.
+        Verificare che il valore di tutte le repliche sia True.
         
-        Passare al passaggio 7 in questa procedura.
+        Passare al passaggio 7 di questa procedura.
 
-6.  Installare il Central Management store nel server back-end del pool\_di backup.
+6.  Installare l'archivio di gestione centrale nel server back-end del\_pool di backup.
     
-      - Eseguire prima di tutto il comando seguente:
+      - Prima di tutto, eseguire il comando seguente:
         
         ```PowerShell 
         Install-CsDatabase -CentralManagementDatabase -Clean -SqlServerFqdn <Backup_Pool Back End Server FQDN> -SqlInstanceName rtc  
         ```
     
-      - Eseguire il comando successivo in uno dei server front-end del pool\_di backup per forzare lo stato di trasferimento di Central Management store:
+      - Per forzare lo spostamento dell'archivio di gestione centrale, eseguire il\_comando successivo in uno dei front end server del pool di backup:
         
             Move-CsManagementServer -ConfigurationFileName c:\CsConfigurationFile.zip -LisConfigurationFileName c:\CsLisConfigurationFile.zip -Force 
     
-      - Convalidare lo stato di trasferimento è completo:
+      - Verificare che lo spostamento sia stato completato:
         
             Get-CsManagementStoreReplicationStatus -CentralManagementStoreStatus 
         
-        Verificare che sia ActiveMasterFQDN che ActiveFileTransferAgents indichino il nome di dominio completo\_del pool di backup.
+        Verificare che sia ActiveMasterFQDN che ActiveFileTransferAgents puntino al nome di dominio completo\_del pool di backup.
     
-      - Controllare lo stato della replica per tutti i server front-end digitando quanto segue:
+      - Controllare lo stato della replica per tutti i Front End Server digitando quanto segue:
         
             Get-CsManagementStoreReplicationStatus 
         
-        Verificare che tutte le repliche abbiano il valore true.
+        Verificare che il valore di tutte le repliche sia True.
     
-      - Installare il servizio Central Management Server nel resto dei server front-end nel pool di\_backup. A tale scopo, eseguire il comando seguente in tutti i server front-end, ad eccezione di quello usato per forzare lo stato precedente della procedura:
+      - Installare il servizio server di gestione centrale nel resto dei front end server nel pool di\_backup. A tale scopo, eseguire il comando riportato di seguito in tutti i Front End Server, tranne quello utilizzato per forzare lo spostamento dell'archivio di gestione centrale in precedenza in questa procedura:
         
             Bootstrapper /Setup 
 
@@ -139,9 +139,9 @@ Inoltre, se un pool Front-end non riesce ma il pool di Edge in tale sito è anco
     
         Invoke-CsPoolFailover -PoolFQDN <Pool1 FQDN> -DisasterMode -Verbose
     
-    Poiché la procedura adottata nelle parti precedenti di questa procedura per verificare lo stato dell'archivio di gestione centrale non è universale, è comunque possibile che il cmdlet non riesca perché l'archivio di gestione centrale non è ancora completamente riuscito. In questo caso, è necessario correggere l'Central Management store in base ai messaggi di errore visualizzati e quindi eseguire di nuovo questo cmdlet.
+    Poiché le operazioni eseguite nelle parti precedenti di questa procedura per verificare lo stato dell'archivio di gestione centrale non sono universali, è comunque possibile che questo cmdlet non venga eseguito correttamente perché l'archivio di gestione centrale non è ancora completamente superato. In questo caso, è necessario correggere l'archivio di gestione centrale in base ai messaggi di errore visualizzati e quindi eseguire di nuovo questo cmdlet.
     
-    Se viene visualizzato il messaggio di errore seguente, è necessario modificare il pool di Edge in questo sito per usare un pool diverso come hop successivo prima di non superare il pool. Per informazioni dettagliate, vedere le procedure all'inizio di questo argomento.
+    Se viene visualizzato il seguente messaggio di errore, è necessario impostare il pool di server perimetrali di questo sito in modo che utilizzi un pool diverso come hop successivo prima di eseguire il failover del pool. Per informazioni dettagliate, vedere la procedura all'inizio di questo argomento.
     
         Invoke-CsPoolFailOver : This Front-end pool "pool1.contoso.com" is specified in
         topology as the next hop for the Edge server. Failing over this pool may cause External

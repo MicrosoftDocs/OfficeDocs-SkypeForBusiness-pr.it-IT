@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Tabella ConferenceSessionDetails'
+title: 'Lync Server 2013: tabella ConferenceSessionDetails'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184925
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 61da586f3ecaf215b3bb636a80141ba8aaa19f18
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6c88cb167f334bc27148b16deafb0e7759105955
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41741596"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42040905"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41741596"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-28_
+_**Ultimo argomento modificato:** 2012-09-28_
 
-Ogni record rappresenta una sessione di conferenza, che può essere la sessione con lo stato attiva o la sessione con uno specifico server di conferenza.
+Ogni record rappresenta una sessione di conferenza, che può indicare la sessione con Focus o la sessione con un server per conferenze specifico.
 
 
 <table>
@@ -59,105 +59,105 @@ Ogni record rappresenta una sessione di conferenza, che può essere la sessione 
 <tr class="odd">
 <td><p><strong>SessionIdTime</strong></p></td>
 <td><p>DateTime</p></td>
-<td><p>Primaria, straniera</p></td>
-<td><p>Ora della richiesta di sessione; usato in combinazione con <strong>SessionIdSeq</strong> per identificare in modo univoco una sessione di conferenza. Per altre informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella finestre di dialogo in Lync Server 2013</a> .</p></td>
+<td><p>Primaria, esterna</p></td>
+<td><p>Ora della richiesta di sessione; utilizzato insieme a <strong>SessionIdSeq</strong> per identificare in modo univoco una sessione di conferenza. Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>SessionIdSeq</strong></p></td>
 <td><p>int</p></td>
-<td><p>Primaria, straniera</p></td>
-<td><p>Numero ID per identificare la sessione. Usato in combinazione con <strong>SessionIdTime</strong> per identificare in modo univoco una sessione di conferenza. Per altre informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella finestre di dialogo in Lync Server 2013</a> . *</p></td>
+<td><p>Primario, esterno</p></td>
+<td><p>ID identificativo della sessione. Utilizzato insieme a <strong>SessionIdTime</strong> per identificare in modo univoco una sessione di conferenza. Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> . *</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ConferenceUriId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>URI della conferenza dello stato di attivazione relativo a questa sessione. Per altre informazioni, vedere la <a href="lync-server-2013-conferenceuris-table.md">tabella ConferenceUris in Lync Server 2013</a> . Questo URI è un URI di conferenza basato sullo stato.</p></td>
+<td><p>Stranieri</p></td>
+<td><p>URI di conferenza Focus associato alla sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-conferenceuris-table.md">tabella ConferenceUris in Lync Server 2013</a> . Si tratta di un URI di conferenza basata su Focus.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ConfInstance</strong></p></td>
 <td><p>uniqueIdentifier</p></td>
 <td></td>
-<td><p>Identificatore che distingue tra le istanze delle conferenze periodiche. Ogni istanza di conferenza ricorrente ha lo stesso ConferenceURI, ma un valore ConfInstance diverso.</p>
+<td><p>Identificare che distingue le istanze di conferenze ricorrenti. Ogni conferenza ricorrente presenta lo stesso valore di ConferenceURI ma un valore diverso di ConfInstance.</p>
 <p>Questo campo è stato introdotto in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>McuConferenceUriId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>URI conferenza del server delle conferenze correlato a questa sessione. Per altre informazioni, vedere la <a href="lync-server-2013-conferenceuris-table.md">tabella ConferenceUris in Lync Server 2013</a> . Questo URI è l'URI per conferenze basato su server di conferenza. Per le sessioni di conferenza dello stato di attivazione, questa colonna sarà null.</p></td>
+<td><p>Stranieri</p></td>
+<td><p>URI di conferenza del server per conferenze associato alla sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-conferenceuris-table.md">tabella ConferenceUris in Lync Server 2013</a> . Si tratta di un URI di conferenza basata su server di conferenza. Per le sessioni di conferenza Focus, questa colonna sarà null.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>UserId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>ID di un utente nella sessione di conferenza. Per altre informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella utenti in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>ID di un utente nella sessione di conferenza. Per ulteriori informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella users in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>UserEndpointId</strong></p></td>
 <td><p>uniqueidentifier</p></td>
 <td></td>
-<td><p>GUID per identificare l'istanza di endpoint. Ad esempio, se un utente accede a computer diversi con lo stesso account, ogni computer avrà un ID endpoint diverso.</p></td>
+<td><p>GUID per l'identificazione dell'istanza dell'endpoint. Ad esempio, se un utente accede a due computer con lo stesso account, ogni computer disporrà di un ID endpoint diverso.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>OnBehalfOfId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Indica l'ID dell'utente di chi è il chiamante per conto. Per altre informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella utenti in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Indica l'ID dell'utente per conto del quale il chiamante esegue la chiamata. Per ulteriori informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella users in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ReferredById</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>ID dell'utente con cui si fa riferimento alla chiamata. Per altre informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella utenti in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>ID dell'utente da quale proviene la chiamata. Per ulteriori informazioni, vedere la <a href="lync-server-2013-users-table.md">tabella users in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>UserClientVersionId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Versione client usata dall'utente della conferenza. Per altre informazioni, vedere la <a href="lync-server-2013-clientversions-table.md">Tabella ClientVersions in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Versione del client utilizzata dall'utente della conferenza. Per ulteriori informazioni, vedere la <a href="lync-server-2013-clientversions-table.md">Tabella ClientVersions in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ConfClientVersionId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Versione client usata dal server conferenza. Per altre informazioni, vedere la <a href="lync-server-2013-clientversions-table.md">Tabella ClientVersions in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Versione del client utilizzata dal server per conferenze. Per ulteriori informazioni, vedere la <a href="lync-server-2013-clientversions-table.md">Tabella ClientVersions in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ReplaceDialogIdTime</strong></p></td>
-<td><p>DateTime</p></td>
-<td><p>Esterna</p></td>
-<td><p>Numero ID per identificare la finestra di dialogo che è stata sostituita dalla sessione corrente. Per altre informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella finestre di dialogo in Lync Server 2013</a> .</p></td>
+<td><p>datetime</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Numero ID per l'identificazione della finestra di dialogo sostituita dalla sessione corrente. Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ReplaceDialogIdSeq</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Numero ID per identificare la sessione. Usato in combinazione con <strong>ReplacesDialogIdTime</strong> per identificare in modo univoco una sessione sostituita da questa sessione. Per altre informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella finestre di dialogo in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Numero ID per l'identificazione della sessione. Valore utilizzato in combinazione con <strong>ReplacesDialogIdTime</strong> per identificare in modo univoco una sessione sostituita da questa sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-dialogs-table.md">tabella Dialogs in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>IsStartedByConfServer</strong></p></td>
 <td><p>po'</p></td>
 <td></td>
-<td><p>Indica se la sessione è stata avviata dal server dei servizi di conferenza.</p></td>
+<td><p>Indica se la sessione è stata avviata dal server per conferenze.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>IsEndedByConfServer</strong></p></td>
 <td><p>po'</p></td>
 <td></td>
-<td><p>Indica se la sessione è terminata dal server dei servizi di conferenza.</p></td>
+<td><p>Indica se la sessione è stata terminata dal server per conferenze.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>IsUserInternal</strong></p></td>
 <td><p>po'</p></td>
 <td></td>
-<td><p>Se l'utente ha effettuato l'accesso da Internal o not.</p></td>
+<td><p>Indica se l'utente è connesso dall'interno o meno.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>ResponseCode</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Codice di risposta SIP (Session Initiation Protocol) all'invito alla sessione. Questo campo viene in genere popolato da dati generati dal messaggio di invito iniziale nella sessione. Se non è presente alcun messaggio di invito, il campo viene popolato con la data e l'ora del primo messaggio SIP pertinente (BYE, CANCEL, MESSAGE o INFO).</p></td>
+<td><p>Codice di risposta SIP (Session Initiation Protocol) all'invito alla sessione. Questo campo viene in genere popolato con i dati generati dal messaggio INVITE iniziale nella sessione. Se non sono presenti messaggi INVITE, il campo viene popolato con data e ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>DiagnosticId</strong></p></td>
@@ -168,87 +168,87 @@ Ogni record rappresenta una sessione di conferenza, che può essere la sessione 
 <tr class="odd">
 <td><p><strong>ServerId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>ID del server front-end usato per questa sessione. Per altre informazioni, vedere la <a href="lync-server-2013-servers-table.md">tabella server in Lync server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>ID del Front End Server utilizzato per questa sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-servers-table.md">tabella Servers in Lync server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>PoolId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>ID del pool in cui è stata acquisita la sessione. Per altre informazioni, vedere la <a href="lync-server-2013-pools-table.md">Tabella Pools in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>ID del pool in cui è stata acquisita la sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-pools-table.md">Tabella Pools in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>MediationServerId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Server di mediazione che la chiamata sta usando. Per altre informazioni, vedere la <a href="lync-server-2013-mediationservers-table.md">Tabella MediationServers in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Mediation Server utilizzato dalla chiamata. Per ulteriori informazioni, vedere la <a href="lync-server-2013-mediationservers-table.md">Tabella MediationServers in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>GatewayId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Il gateway che la chiamata sta usando. Per altre informazioni, vedere la <a href="lync-server-2013-gateways-table.md">tabella gateway in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Gateway utilizzato dalla chiamata. Per ulteriori informazioni, vedere la <a href="lync-server-2013-gateways-table.md">tabella gateway in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>EdgeServerId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Server perimetrale usato dalla chiamata. Per altre informazioni, vedere la <a href="lync-server-2013-edgeservers-table.md">tabella EdgeServers in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Server perimetrale utilizzato dalla chiamata. Per ulteriori informazioni, vedere la <a href="lync-server-2013-edgeservers-table.md">tabella EdgeServers in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ContentTypeId</strong></p></td>
 <td><p>int</p></td>
-<td><p>Esterna</p></td>
-<td><p>Tipo di contenuto usato nella sessione. Per altre informazioni, vedere la <a href="lync-server-2013-contenttypes-table.md">tabella ContentTypes in Lync Server 2013</a> .</p></td>
+<td><p>Stranieri</p></td>
+<td><p>Tipo di contenuto utilizzato nella sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-contenttypes-table.md">tabella ContentTypes in Lync Server 2013</a> .</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>InviteTime</strong></p></td>
-<td><p>DateTime</p></td>
+<td><p>datetime</p></td>
 <td></td>
-<td><p>L'ora della prima richiesta di invito. Questo campo viene in genere popolato da dati generati dal messaggio di invito iniziale nella sessione. Se non è presente alcun messaggio di invito, il campo viene popolato con la data e l'ora del primo messaggio SIP pertinente (BYE, CANCEL, MESSAGE o INFO).</p></td>
+<td><p>Ora della prima richiesta INVITE. Questo campo viene in genere popolato con i dati generati dal messaggio INVITE iniziale nella sessione. Se non sono presenti messaggi INVITE, il campo viene popolato con data e ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO).</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ResponseTime</strong></p></td>
-<td><p>DateTime</p></td>
+<td><p>datetime</p></td>
 <td></td>
-<td><p>Ora della prima risposta SIP. Questo campo viene in genere popolato da dati generati dal messaggio di invito iniziale nella sessione. Se non è presente alcun messaggio di invito, il campo viene popolato con la data e l'ora del primo messaggio SIP pertinente (BYE, CANCEL, MESSAGE o INFO).</p></td>
+<td><p>Ora della prima risposta SIP. Questo campo viene in genere popolato con i dati generati dal messaggio INVITE iniziale nella sessione. Se non sono presenti messaggi INVITE, il campo viene popolato con data e ora del primo messaggio SIP rilevante (BYE, CANCEL, MESSAGE o INFO).</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>SessionEndTime</strong></p></td>
-<td><p>DateTime</p></td>
+<td><p>datetime</p></td>
 <td></td>
 <td><p>Ora di fine della sessione.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>UriTypeId</strong></p></td>
 <td><p>tinyint</p></td>
-<td><p>Esterna</p></td>
-<td><p>Contiene il valore di tipo URI MCU della <a href="lync-server-2013-uritypes-table.md">tabella UriTypes in Lync Server 2013</a>. Questo campo viene usato per migliorare le prestazioni delle query.</p>
+<td><p>Stranieri</p></td>
+<td><p>Contiene il valore del tipo di URI MCU dalla <a href="lync-server-2013-uritypes-table.md">tabella UriTypes in Lync Server 2013</a>. Questo campo è usato per migliorare le prestazioni di query.</p>
 <p>Questo campo è stato introdotto in Microsoft Lync Server 2013.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>UserFlag</strong></p></td>
 <td><p>smallint</p></td>
 <td></td>
-<td><p>Set di bit che indica gli attributi utente. Sono elencate le definizioni di attributo seguenti:</p>
+<td><p>Set di bit che indica gli attributi dell'utente. Sono incluse le definizioni di attributo seguenti:</p>
 <ul>
-<li><p>Integrazione con il telefono da tavolo-1</p></li>
+<li><p>Integrato con telefono da tavolo  - 1</p></li>
 </ul></td>
 </tr>
 <tr class="even">
 <td><p><strong>CallFlag</strong></p></td>
 <td><p>smallint</p></td>
 <td></td>
-<td><p>Set di bit che indica gli attributi di chiamata. Sono elencate le definizioni di attributo seguenti:</p>
+<td><p>Set di bit che indica gli attributi della chiamata. Sono incluse le definizioni di attributo seguenti:</p>
 <ul>
-<li><p>Riprova sessione-1</p></li>
+<li><p>Sessione ripetuta  - 1</p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
 
-\*Per la maggior parte delle sessioni, SessionIdSeq avrà il valore 1. Se più sessioni iniziano esattamente nello stesso momento, il SessionIdSeq per uno sarà 1, per un altro sarà 2 e così via.
+\*Per la maggior parte delle sessioni, SessionIdSeq avrà il valore 1. Se più sessioni iniziano esattamente alla stessa ora, il valore SessionIdSeq per una sarà 1, per l'altra sarà 2 e così via.
 
 </div>
 

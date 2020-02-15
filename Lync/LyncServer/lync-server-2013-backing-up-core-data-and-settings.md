@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: backup dei dati e delle impostazioni di base'
+title: 'Lync Server 2013: backup dei dati di base e delle impostazioni'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51541452
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4185c02bc85077b0f68ca76d83fd48203e0e5fd9
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 0a6614a06ea4e5370dd944940d35a690853c171b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41727916"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42045078"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="backing-up-core-data-and-settings-in-lync-server-2013"></a>Backup dei dati e delle impostazioni di base in Lync Server 2013
+# <a name="backing-up-core-data-and-settings-in-lync-server-2013"></a>Backup dei dati di base e delle impostazioni in Lync Server 2013
 
 </div>
 
@@ -35,33 +35,33 @@ ms.locfileid: "41727916"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-04-23_
+_**Ultimo argomento modificato:** 2014-04-23_
 
-Le procedure seguenti usano i cmdlet di Lync Server Management Shell per creare file di backup per le impostazioni e i dati per i servizi principali. Per informazioni dettagliate sugli strumenti usati in questa sezione, inclusi i casi in cui si trovano, vedere [requisiti di backup e ripristino in Lync Server 2013: strumenti e autorizzazioni](lync-server-2013-backup-and-restoration-requirements-tools-and-permissions.md). Per informazioni dettagliate su come eseguire il backup dei dati di archiviazione e monitoraggio, vedere [backup di archiviazione e monitoraggio di database in Lync Server 2013](lync-server-2013-backing-up-archiving-and-monitoring-databases.md).
+Nelle procedure seguenti vengono utilizzati i cmdlet di Lync Server Management Shell per creare file di backup per le impostazioni e i dati per i servizi di base. Per informazioni dettagliate sugli strumenti utilizzati in questa sezione, incluso il percorso in cui si trovano, vedere [backup and Restoration requirements in Lync Server 2013: Tools and Permissions](lync-server-2013-backup-and-restoration-requirements-tools-and-permissions.md). Per informazioni dettagliate sul backup dei dati di archiviazione e di monitoraggio, vedere [backing up Archiving and Monitoring Databases in Lync Server 2013](lync-server-2013-backing-up-archiving-and-monitoring-databases.md).
 
 <div>
 
 
 > [!NOTE]  
-> Il passaggio in questa sezione per eseguire il backup di Central Management Store include le impostazioni e la configurazione per l'archiviazione e il monitoraggio.
+> Il passaggio in questa sezione per eseguire il backup dell'archivio di gestione centrale include le impostazioni e la configurazione per l'archiviazione e il monitoraggio.
 
 
 
 </div>
 
-È possibile eseguire i cmdlet descritti in questa sezione localmente o in remoto.
+È possibile eseguire i cmdlet descritti in questa sezione localmente o da postazione remota.
 
 <div>
 
-## <a name="to-back-up-core-data-and-settings"></a>Per eseguire il backup dei dati e delle impostazioni principali
+## <a name="to-back-up-core-data-and-settings"></a>Per eseguire il backup dei dati e delle impostazioni di base
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins, accedere a qualsiasi computer della distribuzione interna.
+1.  Eseguire l'accesso a un computer della distribuzione interna utilizzando un account utente membro del gruppo RTCUniversalServerAdmins.
 
-2.  Per archiviare i backup creati nei passaggi seguenti, creare una nuova cartella condivisa e aggiornare il percorso a cui fa riferimento **$backup** alla nuova cartella condivisa.
+2.  Per archiviare i backup creati nei passaggi seguenti, creare una nuova cartella condivisa e aggiornare il percorso utilizzato come riferimento da **$Backup** sostituendolo con la nuova cartella condivisa.
 
-3.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+3.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-4.  Eseguire il backup del file di configurazione di Central Management store. Nella riga di comando digitare quanto segue:
+4.  Eseguire il backup del file di configurazione dell'archivio di gestione centrale. Nella riga di comando digitare quanto segue:
     
         Export-CsConfiguration -FileName <path and file name for backup>
     
@@ -73,14 +73,14 @@ Le procedure seguenti usano i cmdlet di Lync Server Management Shell per creare 
     
 
     > [!NOTE]  
-    > Questo passaggio Esporta la topologia, i criteri e le impostazioni di configurazione di Lync Server in un file. Nessun altro passaggio è necessario per eseguire il backup dei dati della topologia.
+    > In questo passaggio vengono esportate in un file la topologia, i criteri e le impostazioni di configurazione di Lync Server. Non sono richieste altre operazioni per il backup dei dati della topologia.
 
     
     </div>
 
-5.  Copiare il file di configurazione dell'archivio di gestione centralizzato di cui\\è stato eseguito il backup in $backup.
+5.  Copiare il file di configurazione dell'archivio di gestione centrale di cui è\\stato eseguito il backup in $backup.
 
-6.  Eseguire il backup dei dati del servizio informazioni sulla posizione. Nella riga di comando digitare quanto segue:
+6.  Eseguire il backup dei dati del servizio Informazioni percorso. Nella riga di comando digitare il comando seguente:
     
         Export-CsLisConfiguration -FileName <path and file name for backup>
     
@@ -88,9 +88,9 @@ Le procedure seguenti usano i cmdlet di Lync Server Management Shell per creare 
     
         Export-CsLisConfiguration -FileName "C:\E911Config.zip"
 
-7.  Copiare il file di configurazione del servizio informazioni posizione di cui è stato\\eseguito il backup in $backup.
+7.  Copiare il file di configurazione del servizio informazioni percorso di cui è stato\\eseguito il backup in $backup.
 
-8.  Eseguire il backup dei dati degli utenti in tutti i database back-end di un pool Front-end e di ogni server Standard Edition. Nella riga di comando digitare quanto segue:
+8.  Eseguire il backup dei dati degli utenti su ogni database back-end di un pool Front end e di ogni server Standard Edition. Nella riga di comando digitare quanto segue:
     
         Export-CsUserData -PoolFQDN <Fqdn> -FileName <String>
     
@@ -98,11 +98,11 @@ Le procedure seguenti usano i cmdlet di Lync Server Management Shell per creare 
     
         Export-CsUserData -PoolFQDN "atl-cs-001.litwareinc.com" -FileName "C:\Logs\ExportedUserData.zip"
 
-9.  Copiare il file utente di cui è stato eseguito\\il backup in $backup.
+9.  Copiare il file dell'utente di cui è stato\\eseguito il backup in $backup.
 
-10. In tutti i pool che esegue l'applicazione Response Group, eseguire il backup della configurazione del gruppo di risposte. Effettuare le seguenti operazioni:
+10. In ogni pool che esegue l'applicazione Response Group eseguire il backup della configurazione di Response Group. Eseguire le operazioni seguenti:
     
-    1.  Nella riga di comando digitare:
+    1.  Nella riga di comando digitare il comando seguente:
         
             Export-CsRgsConfiguration -Source "service:ApplicationServer:<pool FQDN>" -FileName <path and file name for backup>
         
@@ -110,7 +110,7 @@ Le procedure seguenti usano i cmdlet di Lync Server Management Shell per creare 
         
             Export-CsRgsConfiguration -Source ApplicationServer:pool01.contoso.com -FileName C:\RgsConfiguration.zip
 
-11. Copiare il file di configurazione del gruppo di risposta di cui\\è stato eseguito il backup in $backup.
+11. Copiare il file di configurazione di Response Group di cui è\\stato eseguito il backup su $backup.
 
 </div>
 

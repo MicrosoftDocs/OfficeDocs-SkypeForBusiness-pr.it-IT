@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Configurare firewall e porte per l'accesso degli utenti esterni"
+title: "Lync Server 2013: configurare firewall e porte per l'accesso degli utenti esterni"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185430
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b10ad0826e0b15ff42b47dc6c732b2b60500f8b3
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 514c93cff5d3050ae94d1057b57fb703e92696ba
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726586"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037706"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41726586"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-05-21_
+_**Ultimo argomento modificato:** 2012-05-21_
 
-Per configurare i firewall e le porte, è necessario configurarli per i server Edge, i server proxy inverso e gli eventuali dispositivi di bilanciamento del carico hardware (per una distribuzione in scala che non usa il bilanciamento del carico DNS). Questa sezione contiene informazioni su firewall e requisiti di porta per tutti i componenti Edge Server e la configurazione delle porte del firewall per Edge Server. Per informazioni dettagliate sulla configurazione delle porte per i server proxy inverso, vedere [configurazione di server proxy inverso per Lync Server 2013](lync-server-2013-setting-up-reverse-proxy-servers.md). Se si sta distribuendo una topologia a bordo scalato e si usa il bilanciamento del carico hardware anziché il bilanciamento del carico DNS, vedere [ridimensionare il bordo consolidato con i dispositivi di bilanciamento del carico hardware in Lync Server 2013](lync-server-2013-scaled-consolidated-edge-with-hardware-load-balancers.md) nella documentazione relativa alla pianificazione per informazioni dettagliate sulla configurazione delle porte per i dispositivi di bilanciamento del carico hardware.
+Per configurare firewall e porte, è necessario configurarli per i server perimetrali, i server proxy inversi e possibilmente i dispositivi di bilanciamento del carico hardware (per una distribuzione con scalabilità implementata in cui non viene utilizzato il bilanciamento del carico DNS). In questa sezione vengono fornite informazioni sui requisiti di firewall e porte per tutti i componenti dei server perimetrali e sulla configurazione delle porte di firewall per i server perimetrali. Per informazioni dettagliate sulla configurazione delle porte per i server proxy inversi, vedere [Setting up reverse proxy servers for Lync Server 2013](lync-server-2013-setting-up-reverse-proxy-servers.md). Se si distribuisce una topologia con scalabilità orizzontale e si utilizza il bilanciamento del carico hardware anziché il bilanciamento del carico DNS, vedere [scala consolidato Edge con dispositivi di bilanciamento del carico hardware in Lync Server 2013](lync-server-2013-scaled-consolidated-edge-with-hardware-load-balancers.md) nella documentazione relativa alla pianificazione per informazioni dettagliate sulla configurazione delle porte per i dispositivi di bilanciamento del carico hardware.
 
 <div>
 

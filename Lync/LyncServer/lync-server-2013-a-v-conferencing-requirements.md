@@ -1,5 +1,5 @@
 ---
-title: Requisiti di conferenza di Lync Server 2013 A/V
+title: Requisiti per i servizi di conferenza A/V di Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733883
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6c9c9d9c272a0646395a907976056e460cf8fd84
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 05424f079d729ad7f6e8b995ee64dfcde8d73d70
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41730488"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037958"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="av-conferencing-requirements-in-lync-server-2013"></a>Requisiti di conferenza a/V in Lync Server 2013
+# <a name="av-conferencing-requirements-in-lync-server-2013"></a>Requisiti di a/V Conferencing in Lync Server 2013
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "41730488"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-30_
+_**Ultimo argomento modificato:** 2012-09-30_
 
-I requisiti di infrastruttura di Lync Server 2013 per i servizi di conferenza sono gli stessi della distribuzione di Lync Server 2013. Per informazioni dettagliate, vedere [determinazione dei requisiti di infrastruttura per Lync Server 2013](lync-server-2013-determining-your-infrastructure-requirements.md) nella documentazione relativa alla pianificazione.
+I requisiti dell'infrastruttura di Lync Server 2013 per le conferenze sono uguali a quelli per la distribuzione di Lync Server 2013. Per informazioni dettagliate, vedere [Determining Your Infrastructure requirements for Lync Server 2013](lync-server-2013-determining-your-infrastructure-requirements.md) nella documentazione relativa alla pianificazione.
 
-È importante avere la larghezza di banda media necessaria per gestire il traffico multimediale generato dalle conferenze. Per informazioni dettagliate che è possibile usare per calcolare la larghezza di banda necessaria, vedere [requisiti di larghezza di banda di rete per il traffico multimediale in Lync Server 2013](lync-server-2013-network-bandwidth-requirements-for-media-traffic.md). Per informazioni dettagliate su come limitare la larghezza di banda, vedere [creazione o modifica di profili dei criteri di larghezza di banda in Lync Server 2013](lync-server-2013-creating-or-modifying-bandwidth-policy-profiles.md). Per informazioni dettagliate sui requisiti per l'infrastruttura, vedere [requisiti per l'infrastruttura di rete per Lync Server 2013](lync-server-2013-network-infrastructure-requirements.md).
+È importante disporre della larghezza di banda multimediale necessaria per gestire il traffico multimediale generato dalle conferenze. Per informazioni dettagliate che è possibile utilizzare per calcolare la larghezza di banda necessaria, vedere [requisiti della larghezza di banda di rete per il traffico multimediale in Lync Server 2013](lync-server-2013-network-bandwidth-requirements-for-media-traffic.md). Per informazioni dettagliate sulla limitazione della larghezza di banda, vedere [creazione o modifica di profili di criteri di larghezza di banda in Lync Server 2013](lync-server-2013-creating-or-modifying-bandwidth-policy-profiles.md). Per informazioni dettagliate sui requisiti dell'infrastruttura, vedere [Network Infrastructure requirements for Lync Server 2013](lync-server-2013-network-infrastructure-requirements.md).
 
-Per usare le funzionalità di conferenza, Lync Server 2013 richiede che alcune porte siano aperte. Per informazioni dettagliate sui requisiti della porta, vedere [porte e protocolli per i server interni in Lync server 2013](lync-server-2013-ports-and-protocols-for-internal-servers.md). Per informazioni dettagliate sulla configurazione delle porte, vedere [configurazione degli intervalli di porte in Lync Server 2013 per le conferenze, le applicazioni e i server di mediazione](lync-server-2013-configuring-port-ranges-for-your-conferencing-application-and-mediation-servers.md).
+Per poter utilizzare le funzionalità di conferenza, Lync Server 2013 richiede che alcune porte siano aperte. Per informazioni dettagliate sui requisiti delle porte, vedere [porte e protocolli per i server interni in Lync server 2013](lync-server-2013-ports-and-protocols-for-internal-servers.md). Per informazioni dettagliate sulla configurazione delle porte, vedere [Configuring Port Ranges in Lync server 2013 per i servizi di conferenza, applicazione e Mediation Server](lync-server-2013-configuring-port-ranges-for-your-conferencing-application-and-mediation-servers.md).
 
 <div>
 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Panoramica delle conferenze A/V in Lync Server 2013](lync-server-2013-a-v-conferencing-overview.md)  
-[Elenco di controllo della distribuzione per i servizi di conferenza A/V in Lync Server 2013](lync-server-2013-deployment-checklist-for-a-v-conferencing.md)  
+[Panoramica di A/V Conferencing in Lync Server 2013](lync-server-2013-a-v-conferencing-overview.md)  
+[Elenco di controllo per la distribuzione di A/V Conferencing in Lync Server 2013](lync-server-2013-deployment-checklist-for-a-v-conferencing.md)  
   
 
 </div>

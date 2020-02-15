@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: eliminare le route esistenti nell'area di rete"
+title: 'Lync Server 2013: eliminazione delle route delle aree di rete esistenti'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733669
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e9f9ba7c20aff0bba3101edc9b04f3704314cfc8
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 030980ca18e21915f514435a8682ec8ddcf78286
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763054"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048657"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deleting-existing-network-region-routes-in-lync-server-2013"></a>Eliminazione di route di area di rete esistenti in Lync Server 2013
+# <a name="deleting-existing-network-region-routes-in-lync-server-2013"></a>Eliminazione delle route delle aree di rete esistenti in Lync Server 2013
 
 </div>
 
@@ -35,32 +35,32 @@ ms.locfileid: "41763054"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-Ogni area geografica in una configurazione di controllo di ammissione chiamata (CAC) deve avere un modo per accedere a tutte le altre aree geografiche. Mentre i collegamenti con le aree geografiche impostano limitazioni della larghezza di banda sulle connessioni tra regioni e rappresentano anche i collegamenti fisici, una route determina il percorso collegato che verrà attraversato dalla connessione da un'area a un'altra. È possibile usare il pannello di controllo di Lync Server per configurare le route dell'area di rete. Dal pannello di controllo di Lync Server è possibile creare, modificare o eliminare una route dell'area di rete. Usare questo argomento per eliminare le route esistenti nell'area di rete. Per informazioni dettagliate sulla creazione o la modifica di route di area di rete, vedere [creazione o modifica di route dell'area di rete in Lync Server 2013](lync-server-2013-creating-or-modifying-network-region-routes.md).
+Ogni area di una configurazione di controllo di ammissione di chiamata deve in qualche modo poter accedere a tutte le altre aree. Mentre i collegamenti area impostano limitazioni della larghezza di banda nelle connessioni tra aree e rappresentano anche i collegamenti fisici, una route determina il percorso collegato che verrà attraversato dalla connessione per passare da un'area all'altra. È possibile utilizzare il pannello di controllo di Lync Server per configurare le route delle aree di rete. Dal pannello di controllo di Lync Server, è possibile creare, modificare o eliminare una route area di rete. Utilizzare questo argomento per informazioni su come eliminare le route area di rete. Per informazioni dettagliate sulla creazione o la modifica delle route delle aree di rete, vedere [creazione o modifica di route delle aree di rete in Lync Server 2013](lync-server-2013-creating-or-modifying-network-region-routes.md).
 
 <div>
 
-## <a name="to-delete-a-network-region-route"></a>Per eliminare una route dell'area di rete
+## <a name="to-delete-a-network-region-route"></a>Per eliminare una route area di rete
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su **area geografica**.
+3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Route area**.
 
-4.  Nella pagina **route dell'area geografica** fare clic sulla route di area che si desidera eliminare.
+4.  Nella pagina **Route area** fare clic sulla route area che si desidera eliminare.
     
     <div>
     
 
     > [!NOTE]  
-    > Puoi eliminare più di una route della regione alla volta. Per eseguire questa operazione, premere CTRL e selezionare più percorsi per le aree geografiche mentre si tiene premuto il tasto CTRL. In alternativa, per selezionare tutte le route dell'area geografica, fare clic su <STRONG>Seleziona tutto</STRONG> dal menu <STRONG>modifica</STRONG> .
+    > È possibile eliminare più di una route area per volta. A tale scopo, selezionare più route area tenendo premuto CTRL oppure, per selezionare tutte le route area, scegliere <STRONG>Seleziona tutto</STRONG> dal menu <STRONG>Modifica</STRONG>.
 
     
     </div>
 
-5.  Scegliere **Elimina**dal menu **modifica** .
+5.  Scegliere **Elimina** dal menu **Modifica**.
 
 6.  Fare clic su **OK**.
 
@@ -71,10 +71,10 @@ Ogni area geografica in una configurazione di controllo di ammissione chiamata (
 ## <a name="see-also"></a>Vedere anche
 
 
-[Creazione o modifica di route dell'area di rete in Lync Server 2013](lync-server-2013-creating-or-modifying-network-region-routes.md)  
+[Creazione o modifica delle route delle aree di rete in Lync Server 2013](lync-server-2013-creating-or-modifying-network-region-routes.md)  
 
 
-[Configurare una route di un'area di rete](https://technet.microsoft.com/en-us/library/gg133706\(v=ocs.15\))  
+[Configurare una route area tra reti](https://technet.microsoft.com/library/gg133706\(v=ocs.15\))  
 
 
 [New-CsNetworkInterRegionRoute](https://docs.microsoft.com/powershell/module/skype/New-CsNetworkInterRegionRoute)  

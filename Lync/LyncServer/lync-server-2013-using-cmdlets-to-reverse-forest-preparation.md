@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Utilizzo dei cmdlet per annullare la preparazione della foresta'
+title: 'Lync Server 2013: utilizzo dei cmdlet per annullare la preparazione della foresta'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185822
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2b893eb79cb19856572e90bd449b315f0ade803c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 0dbc7e4001299ef2d722896518291cc2afff001b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41744186"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044338"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41744186"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-06-19_
+_**Ultimo argomento modificato:** 2013-06-19_
 
-Usa il cmdlet **Disable-CsAdForest** per invertire il passaggio di preparazione della foresta.
+Utilizzare il cmdlet **Disable-CsAdForest** per annullare il passaggio di preparazione della foresta.
 
 <div>
 
@@ -51,13 +51,13 @@ Usa il cmdlet **Disable-CsAdForest** per invertire il passaggio di preparazione 
 
 <div>
 
-## <a name="to-use-cmdlets-to-reverse-forest-preparation"></a>Per usare i cmdlet per invertire la preparazione della foresta
+## <a name="to-use-cmdlets-to-reverse-forest-preparation"></a>Per utilizzare cmdlet per annullare la preparazione della foresta
 
-1.  Accedere a un computer collegato a un dominio come membro del gruppo Domain Admins nel dominio radice della foresta.
+1.  Accedere a un computer che fa parte di un dominio come membro del gruppo Domain Admins nel dominio radice della foresta.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Eseguire
+3.  Eseguire: 
     
         Disable-CsAdForest [-Force] [-GroupDomain <FQDN of the domain in which universal groups were created>]
     
@@ -65,9 +65,9 @@ Usa il cmdlet **Disable-CsAdForest** per invertire il passaggio di preparazione 
     
         Disable-CsAdForest -Force -GroupDomain contoso.net
     
-    Il parametro Force specifica se forzare l'esecuzione dell'attività. Se questo parametro non è presente, il comando non verrà eseguito se anche un dominio nella foresta è ancora pronto per Lync Server 2013. Se il parametro Force viene specificato, l'azione continuerà indipendentemente dallo stato di altri domini nella foresta.
+    Il parametro Force specifica se forzare l'esecuzione dell'attività. Se questo parametro non è presente, il comando non verrà eseguito se anche un dominio della foresta è ancora pronto per Lync Server 2013. Se viene specificato il parametro Force, l'azione continuerà indipendentemente dallo stato degli altri domini nella foresta.
     
-    Se non specifichi il parametro GroupDomain, il valore predefinito è il dominio locale.
+    Se non si specifica il parametro GroupDomain, il valore predefinito è il dominio locale.
 
 </div>
 

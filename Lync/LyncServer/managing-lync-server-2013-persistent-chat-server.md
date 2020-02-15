@@ -12,16 +12,16 @@ ms:contentKeyID: 48184672
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 067e24a7e1534e355e39f80b6a3fda90e059be14
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: bdbf0c6e28cfefa46eb55a66446bf5e3adec3e36
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41757150"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051248"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,43 +35,43 @@ ms.locfileid: "41757150"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-11_
+_**Ultimo argomento modificato:** 2012-10-11_
 
-È possibile usare Lync Server 2013, il server di chat persistente per consentire a più utenti di partecipare a conversazioni in cui pubblicare e accedere a contenuto su argomenti specifici, inclusi testo, collegamenti e file. Anche se gli utenti possono comunicare in tempo reale durante una sessione, il contenuto di ogni sessione è persistente, il che significa che continuerà a essere disponibile dopo la fine di una sessione.
+È possibile utilizzare Lync Server 2013, il server Chat persistente per consentire a più utenti di partecipare a conversazioni in cui post e accesso al contenuto su argomenti specifici, inclusi testo, collegamenti e file. Sebbene gli utenti possano comunicare in tempo reale durante una sessione, il contenuto di ogni sessione può essere salvato in modo permanente e quindi restare disponibile anche al termine di una sessione.
 
-Il contenuto delle chat room persistenti è costituito principalmente da brevi messaggi di testo, anche se può includere più messaggi, denominati *racconti*e anche collegamenti ipertestuali, emoticon e documenti caricati.
+Il contenuto delle chat room permanenti è costituito principalmente da brevi messaggi di testo, anche se può includere messaggi più lunghi, riferiti a *storie*e anche collegamenti ipertestuali, emoticon e documenti caricati.
 
 <div>
 
 
 > [!NOTE]  
-> Il caricamento e il download di file non sono supportati dal client Lync 2013; Tuttavia, è ancora supportato da Lync Server 2013, il server di chat persistente. Il client di chat di gruppo legacy può inserire e visualizzare i file, ma se si accede alla stessa chat room tramite il client Lync 2013, non sarà possibile accedere ai file.
+> Il caricamento e il download dei file non sono supportati dal client Lync 2013. Tuttavia, è ancora supportato da Lync Server 2013, il server Chat persistente. Il client di chat di gruppo legacy può inserire e visualizzare i file, ma se si accede alla stessa chat tramite il client Lync 2013, non sarà possibile accedere ai file.
 
 
 
 </div>
 
-L'accesso a una chat room è controllato da un elenco di appartenenza. L'intera cronologia delle chat room è disponibile per tutti i membri per la revisione cronologica o per la ricerca full-text. Per informazioni dettagliate sull'uso del client di chat persistente, vedere [pianificazione per i client in Lync server 2013](lync-server-2013-planning-for-clients.md) nella documentazione di pianificazione e [distribuzione di client e dispositivi in Lync Server 2013](lync-server-2013-deploying-clients-and-devices.md) nella documentazione relativa alla distribuzione.
+L'accesso a una chat è controllato da un elenco di appartenenze. L'intera cronologia della chat è disponibile per tutti i membri per un esame cronologico o una ricerca globale. Per informazioni dettagliate sull'utilizzo del client di chat persistente, vedere [Planning for clients in Lync server 2013](lync-server-2013-planning-for-clients.md) nella documentazione relativa alla pianificazione e [distribuzione di client e dispositivi in Lync Server 2013](lync-server-2013-deploying-clients-and-devices.md) nella documentazione relativa alla distribuzione.
 
-Quando si configura il server di chat persistente per l'organizzazione, è necessario specificare la configurazione iniziale durante la distribuzione. In alcuni casi, tuttavia, può essere necessario cambiare la modalità di implementazione del supporto del server di chat persistente. Ad esempio, potrebbe essere necessario configurare il supporto e i controlli del server di chat persistente in modo diverso per un team o un gruppo specifico all'interno dell'organizzazione. Questa sezione fornisce informazioni e procedure utili per personalizzare la distribuzione del server di chat persistente. Per informazioni dettagliate sulle caratteristiche e le funzionalità che è possibile configurare per il server di chat persistente, vedere [definizione dei requisiti dell'organizzazione per il server di chat persistente in Lync server 2013](lync-server-2013-defining-your-requirements-for-persistent-chat-server.md) nella documentazione relativa alla pianificazione e funzionamento del [server di chat persistente in Lync Server 2013](lync-server-2013-how-persistent-chat-server-works.md) nella documentazione di pianificazione, nella documentazione di distribuzione o nelle operazioni. Per informazioni dettagliate sulla distribuzione di server di chat persistente per Lync Server 2013, vedere Distribuzione di un [server di chat persistente in Lync server 2013](lync-server-2013-deploying-persistent-chat-server.md) nella documentazione relativa alla distribuzione.
+Quando si configura il server Chat persistente per l'organizzazione, è necessario specificare la configurazione iniziale durante la distribuzione. Tuttavia, è possibile che si verifichino momenti in cui si desidera modificare la modalità di implementazione del supporto del server Chat persistente. Ad esempio, potrebbe essere necessario configurare il supporto e i controlli del server Chat persistente in modo diverso per un team o un gruppo specifico all'interno dell'organizzazione. In questa sezione vengono fornite informazioni e procedure che consentono di personalizzare la distribuzione del server Chat persistente. Per informazioni dettagliate sulle caratteristiche e le funzionalità che è possibile configurare per il server Chat persistente, vedere [definizione dei requisiti dell'organizzazione per il server Chat persistente in Lync server 2013](lync-server-2013-defining-your-requirements-for-persistent-chat-server.md) nella documentazione relativa alla pianificazione e [modalità di funzionamento del server Chat persistente in Lync Server 2013](lync-server-2013-how-persistent-chat-server-works.md) nella documentazione relativa alla pianificazione, alla distribuzione o alle operazioni. Per informazioni dettagliate sulla distribuzione del server Chat persistente per Lync Server 2013, vedere [Deploying Persistent Chat Server in Lync server 2013](lync-server-2013-deploying-persistent-chat-server.md) nella documentazione relativa alla distribuzione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Funzionamento del server di chat persistente in Lync Server 2013](lync-server-2013-how-persistent-chat-server-works.md)
+  - [Funzionamento del server Chat persistente in Lync Server 2013](lync-server-2013-how-persistent-chat-server-works.md)
 
   - [Utilizzo di categorie per l'amministrazione del server Chat persistente](using-categories-to-administer-persistent-chat-server.md)
 
-  - [Informazioni sull'appartenenza alla chat persistente](understanding-persistent-chat-membership.md)
+  - [Informazioni sull'appartenenza di chat persistente](understanding-persistent-chat-membership.md)
 
   - [Procedure consigliate per il server Chat persistente](persistent-chat-server-best-practices.md)
 
   - [Gestione di categorie, chat room e componenti aggiuntivi in Lync Server 2013](lync-server-2013-managing-categories-rooms-and-add-ins.md)
 
-  - [Gestione dell'accesso utente a Chat persistente in Lync Server 2013](lync-server-2013-managing-persistent-chat-user-access.md)
+  - [Gestione dell'accesso degli utenti di chat persistente in Lync Server 2013](lync-server-2013-managing-persistent-chat-user-access.md)
 
-  - [Utilizzo e gestione del sistema Chat persistente in Lync Server 2013](lync-server-2013-operating-and-maintaining-the-persistent-chat-system.md)
+  - [Utilizzo e gestione del sistema di chat persistente in Lync Server 2013](lync-server-2013-operating-and-maintaining-the-persistent-chat-system.md)
 
 </div>
 

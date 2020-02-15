@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: report elenco errori'
+title: 'Lync Server 2013: rapporto Elenco errori'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185194
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 370008a5b33cc7eb45802fb02bdd9a873184ed5a
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: f9cd8d15e81a54085624fab2dc751759d8196c48
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765164"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041045"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="failure-list-report-in-lync-server-2013"></a>Report elenco errori in Lync Server 2013
+# <a name="failure-list-report-in-lync-server-2013"></a>Rapporto Elenco errori in Lync Server 2013
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "41765164"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-07-02_
+_**Ultimo argomento modificato:** 2012-07-02_
 
-Il report elenco errori contiene informazioni sui singoli partecipanti che hanno partecipato a una sessione peer-to-peer o conferenza non riuscita. Queste informazioni includono l'URI dell'utente che ha riscontrato il problema, nonché il codice di risposta SIP e l'ID di diagnostica associati all'errore.
+Nel Rapporto Elenco errori vengono fornite informazioni sui singoli partecipanti che hanno preso parte a una sessione di conferenza o peer-to-peer in cui si sono verificati problemi. Tali informazioni includono l'URI dell'utente che ha riscontrato il problema, nonché il codice di risposta SIP e l'ID diagnostica associati all'errore.
 
 <div>
 
-## <a name="accessing-the-failure-list-report"></a>Accesso al report elenco errori
+## <a name="accessing-the-failure-list-report"></a>Accesso al Rapporto Elenco errori
 
-Per accedere al report elenco errori, fare clic su una delle metriche seguenti nel [report distribuzione errori in Lync Server 2013](lync-server-2013-failure-distribution-report.md):
+È possibile accedere al rapporto Elenco errori facendo clic su una delle metriche seguenti nel [rapporto distribuzione errori in Lync Server 2013](lync-server-2013-failure-distribution-report.md):
 
-  - Principali motivi diagnostici (sessioni)
+  - Motivi diagnostica principali (sessioni)
 
-  - Modalità top (sessioni)
+  - Modalità principali (sessioni)
 
   - Pool principali (sessioni)
 
@@ -55,30 +55,30 @@ Per accedere al report elenco errori, fare clic su una delle metriche seguenti n
 
   - Componenti principali (sessioni)
 
-  - Inizio da utenti (sessioni)
+  - Utenti di origine principali (sessioni)
 
-  - Inizio per gli utenti (sessioni)
+  - Utenti di destinazione principali (sessioni)
 
-  - Inizio da agenti utente (sessioni)
+  - Agenti utenti di origine principali (sessioni)
 
-Nel report elenco errori è possibile accedere al [report Dettagli sessione peer-to-peer in Lync Server 2013](lync-server-2013-peer-to-peer-session-detail-report.md) facendo clic sulla metrica di dettaglio della sessione per una sessione peer-to-peer. È anche possibile accedere al report Dettagli conferenza facendo clic sulla metrica conferenza per una conferenza.
+Dal rapporto Elenco errori è possibile accedere al [rapporto Dettagli sessione peer-to-peer in Lync Server 2013](lync-server-2013-peer-to-peer-session-detail-report.md) facendo clic sulla metrica Dettagli sessione per una sessione peer-to-peer. È inoltre possibile accedere al Rapporto Dettagli conferenza facendo clic sulla metrica Conferenza per una conferenza.
 
 </div>
 
 <div>
 
-## <a name="making-the-best-use-of-the-failure-list-report"></a>Sfruttare al meglio il report elenco errori
+## <a name="making-the-best-use-of-the-failure-list-report"></a>Utilizzo ottimale del Rapporto Elenco errori
 
-Nel report elenco errori è possibile visualizzare una descrizione per ogni codice di risposta o ogni ID di diagnostica semplicemente tenendo premuto il mouse su tale valore. Ad esempio, se si tiene premuto il mouse sull'ID di diagnostica 7025, in una descrizione comandi verranno visualizzati i seguenti elementi:
+Nel Rapporto Elenco errori è possibile visualizzare una descrizione di ogni codice di risposta o di ogni ID diagnostica semplicemente posizionando il puntatore del mouse sul valore desiderato. Se ad esempio si posiziona il puntatore del mouse su Diagnostic ID 7025, in una descrizione comando verrà visualizzato quanto segue:
 
-Errore del server interno che crea elementi multimediali per l'utente.
+Internal server error creating media for user.
 
-È importante notare che il report elenco errori non offre un modo semplice per recuperare direttamente un elenco di tutti gli utenti che hanno partecipato ad almeno una sessione non riuscita, né offre un modo per determinare gli utenti più spesso coinvolti in un errore sessione. Per prima cosa, il report elenco errori non ha funzionalità di filtro. Tuttavia, se si esportano i dati e quindi lo si converte in un file con valori delimitati da virgole, è possibile usare Windows PowerShell per trovare le risposte a domande come quelle. Supponiamo ad esempio di salvare i dati in un. File CSV denominato C:\\errore\\\_di dati List. csv. In base ai dati salvati nel file, questo comando elenca tutti gli utenti che hanno partecipato ad almeno una sessione non riuscita:
+È importante notare che il Rapporto Elenco errori non consente di recuperare direttamente un elenco di tutti gli utenti che hanno partecipato ad almeno una sessione con problemi, né consente di determinare quali utenti hanno partecipato più spesso a una sessione con problemi. Per una cosa, il rapporto Elenco errori non dispone di funzionalità di filtro. Tuttavia, se i dati vengono esportati e quindi convertiti in un file con valori delimitati da virgole, è possibile utilizzare Windows PowerShell per trovare le risposte a domande come quelle. Si supponga, ad esempio, di salvare i dati in un. File CSV denominato C:\\data\\Failure\_List. csv. In base ai dati salvati in tale file, questo comando elencherà tutti gli utenti che hanno partecipato ad almeno una sessione con problemi:
 
     $failures = Import-Csv -Path " C:\Data\Failure_List.csv"
     $failure |Sort-Object "From user" | Select-Object "From user" -Unique
 
-Questo comando restituirà un elenco simile al seguente:
+Tale comando restituirà un elenco simile al seguente:
 
     From user
     ----
@@ -88,12 +88,12 @@ Questo comando restituirà un elenco simile al seguente:
     David.Ahs@litwareinc.com
     Ken.Myer@litwareinc.com
 
-Questi due comandi segnalano il numero totale di sessioni non riuscite in cui ogni utente è coinvolto:
+Questi due comandi restituiscono il numero totale di sessioni con problemi a cui ha partecipato ogni utente:
 
     $failures = Import-Csv -Path "C:\Data\Failure_List.csv"
     $failures | Group-Object "From user" | Select-Object Count, Name | Sort-Object -Property Count -Descending
 
-Che restituirà dati simili a questi:
+Verranno restituiti dati simili ai seguenti:
 
     Count    Name
      -----    ----
@@ -109,7 +109,7 @@ Che restituirà dati simili a questi:
 
 ## <a name="filters"></a>Filtri
 
-Nessuno. Non è possibile filtrare il report elenco errori.
+Nessuno. Non è possibile filtrare il Rapporto elenco errori.
 
 </div>
 
@@ -117,9 +117,9 @@ Nessuno. Non è possibile filtrare il report elenco errori.
 
 ## <a name="metrics"></a>Metriche
 
-Nella tabella seguente sono elencate le informazioni fornite nel report elenco errori per ogni chiamata non riuscita.
+Nella tabella seguente sono elencate le informazioni disponibili nel Rapporto elenco errori per ogni chiamata non riuscita.
 
-### <a name="failure-list-report-metrics"></a>Metriche rapporto Elenco errori
+### <a name="failure-list-report-metrics"></a>Metriche del Rapporto elenco errori
 
 <table>
 <colgroup>
@@ -130,50 +130,50 @@ Nella tabella seguente sono elencate le informazioni fornite nel report elenco e
 <thead>
 <tr class="header">
 <th>Nome</th>
-<th>Si può ordinare su questo elemento?</th>
+<th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><strong>Tempo segnalato</strong></p></td>
+<td><p><strong>Ora rapporto</strong></p></td>
 <td><p>No</p></td>
-<td><p>Data e ora in cui il report è stato registrato.</p></td>
+<td><p>Data e ora di registrazione del rapporto.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Richiesta</strong></p></td>
 <td><p>No</p></td>
-<td><p>Tipo di richiesta SIP non riuscito. Ad esempio, invita o BYE.</p></td>
+<td><p>Tipo di richiesta SIP non riuscita. Ad esempio, INVITE o BYE.</p></td>
 </tr>
 <tr class="odd">
 <td><p><strong>Codice di risposta</strong></p></td>
 <td><p>No</p></td>
-<td><p>Codice di risposta SIP inviato quando la conferenza non è riuscita.</p></td>
+<td><p>Codice di risposta SIP inviato per la conferenza non riuscita.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>ID diagnostica</strong></p></td>
 <td><p>No</p></td>
-<td><p>Identificatore univoco (in forma di intestazione MS-Diagnostics) allegato a un messaggio SIP che spesso fornisce informazioni utili per la risoluzione di errori.</p></td>
+<td><p>Identificatore univoco (in forma di intestazione ms-diagnostics) associato a un messaggio SIP che spesso fornisce informazioni utili per la risoluzione dei problemi e degli errori.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Tempo di costo di partecipazione (MS)</strong></p></td>
+<td><p><strong>Tempo costo partecipazione (ms)</strong></p></td>
 <td><p>No</p></td>
-<td><p>Intervallo di tempo (in millisecondi) necessario affinché l'utente partecipi alla conferenza.</p></td>
+<td><p>Intervallo di tempo, in millisecondi, necessario all'utente per partecipare alla conferenza.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>Dall'utente</strong></p></td>
+<td><p><strong>Da utente</strong></p></td>
 <td><p>No</p></td>
 <td><p>Indirizzo SIP dell'utente che ha avviato la chiamata.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>Dall'agente utente</strong></p></td>
+<td><p><strong>Da agente utente</strong></p></td>
 <td><p>No</p></td>
-<td><p>Software usato dall'endpoint dell'utente che ha avviato la chiamata.</p></td>
+<td><p>Software utilizzato dall'endpoint dell'utente che ha avviato la chiamata.</p></td>
 </tr>
 <tr class="even">
-<td><p><strong>All'utente</strong></p></td>
+<td><p><strong>A utente</strong></p></td>
 <td><p>No</p></td>
-<td><p>Indirizzo SIP dell'utente che veniva chiamato.</p></td>
+<td><p>Indirizzo SIP dell'utente chiamato.</p></td>
 </tr>
 </tbody>
 </table>

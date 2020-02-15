@@ -12,16 +12,16 @@ ms:contentKeyID: 48183275
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 31ddf598fcf33b4f4841f9e3a9e857fd57ea608c
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2be19538e065a1f9a25dd58da93b2752a27333e9
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41743216"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044228"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41743216"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-28_
+_**Ultimo argomento modificato:** 2012-09-28_
 
-La tabella CallPriorities è una tabella statica in cui è archiviato l'elenco delle possibili priorità di chiamata, ad esempio "emergenza", "urgente" o "normale".
+La tabella CallPriorities è una tabella statica in cui è archiviato l'elenco delle possibili priorità delle chiamate, ad esempio 'emergency' (di emergenza), 'urgent' (urgente) o 'normal' (normale).
 
 
 <table>
@@ -63,16 +63,16 @@ La tabella CallPriorities è una tabella statica in cui è archiviato l'elenco d
 <td></td>
 </tr>
 <tr class="even">
-<td><p><strong>Priorità</strong></p></td>
+<td><p><strong>Priorità </strong></p></td>
 <td><p>nvarchar (256)</p></td>
 <td></td>
 <td><p>Valori consentiti:</p>
 <ul>
-<li><p>0-sconosciuto</p></li>
-<li><p>1-non urgente</p></li>
-<li><p>2-normale</p></li>
-<li><p>3-urgente</p></li>
-<li><p>4-emergenza</p></li>
+<li><p>0 - Sconosciuto</p></li>
+<li><p>1 - Non urgente</p></li>
+<li><p>2 - Normale</p></li>
+<li><p>3 - Urgente</p></li>
+<li><p>4 - Emergenza</p></li>
 </ul></td>
 </tr>
 </tbody>

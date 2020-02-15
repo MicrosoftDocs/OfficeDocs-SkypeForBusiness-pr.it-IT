@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Raccolta dati'
+title: 'Lync Server 2013: raccolta dati'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185722
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e7c3d066aff26e06c003a31a58b4771d67f54f34
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 025e31ada5ff08b27591ebf27aade875494c1614
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41728646"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044158"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,29 +35,29 @@ ms.locfileid: "41728646"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-08_
+_**Ultimo argomento modificato:** 2012-09-08_
 
-Nel software di comunicazione di Microsoft Lync Server 2013 è possibile eseguire Microsoft Lync Server 2013, strumento di pianificazione senza documentare gli indirizzi IP esistenti e quelli previsti e i nomi di dominio completi (FQDN) del server perimetrale, ma è molto più difficile da eseguire senza causare errori di configurazione. Ad esempio, se è necessaria una coesistenza per un periodo di tempo, un errore comune consiste nel riutilizzare gli FQDN da una distribuzione di Edge esistente per la distribuzione di Edge di Lync Server 2013. Se gli indirizzi IP e i nomi di dominio completi esistenti e proposti sono stati scritti in un foglio di calcolo, una tabella o un'altra maschera visiva, è possibile evitare problemi di configurazione durante l'installazione.
+In Microsoft Lync Server 2013 Communications Software, è possibile eseguire Microsoft Lync Server 2013, strumento di pianificazione senza documentare gli indirizzi IP e i nomi di dominio completi (FQDN) esistenti e proposti, ma è molto più difficile da eseguire. senza causare errori di configurazione. Ad esempio, se la coesistenza è necessaria per un determinato periodo di tempo, un errore comune consiste nel riutilizzare gli FQDN da una distribuzione perimetrale esistente per la distribuzione di Lync Server 2013 Edge. Prendendo nota degli indirizzi IP esistenti e proposti e degli FQDN in un foglio di calcolo, in una tabella oppure in un altro tipo di modulo grafico, si evitano problemi di configurazione durante l'installazione.
 
 <div>
 
 
 > [!WARNING]  
-> Se sono state usate versioni precedenti dello strumento di pianificazione, è possibile che sia stato usato lo strumento per creare la topologia e il documento della topologia esportato per l'uso in Generatore di topologia per pubblicare la topologia. La possibilità di esportare la topologia è stata rimossa dallo strumento pianificazione. L'uso di una versione precedente dello strumento di pianificazione per creare un documento di topologia per Lync Server 2013 è fortemente sconsigliato e produrrà risultati imprevisti.
+> Se sono state utilizzate versioni precedenti dello strumento di pianificazione, è possibile che sia stato utilizzato lo strumento per creare la topologia e il documento della topologia esportato per l'utilizzo in Generatore di topologie per pubblicare la topologia. La possibilità di esportare la topologia è stata rimossa dallo strumento di pianificazione. L'utilizzo di una versione precedente dello strumento di pianificazione per creare un documento di topologia per Lync Server 2013 è fortemente sconsigliato e produrrà risultati imprevisti.
 
 
 
 </div>
 
-Di conseguenza, l'approccio consigliato consiste nell'usare il modello di raccolta dati seguente, che corrisponde alla topologia di Edge, per raccogliere i vari indirizzi IP e FQDN che è necessario immettere nello strumento di pianificazione. Documentando la configurazione corrente e proposta, è possibile inserire i valori nel contesto appropriato per l'ambiente di produzione. È quindi necessario pensare a come configurare la coesistenza e le funzionalità, ad esempio URL semplici, condivisioni di file e bilanciamento del carico.
+Pertanto, l'approccio consigliato consiste nell'utilizzare il modello di raccolta dati seguente, che corrisponde alla topologia perimetrale, per raccogliere i vari FQDN e gli indirizzi IP che dovranno essere immessi nello strumento di pianificazione. Documentando la configurazione corrente e quella proposta, è possibile inserire i valori nel contesto corretto per l'ambiente di produzione. Si è inoltre costretti a valutare come configurare la coesistenza e funzionalità come URL semplici, condivisioni file e bilanciamento del carico.
 
-Per distribuire correttamente Microsoft Lync Server 2013, è necessario comprendere l'interazione e l'affidabilità dei singoli componenti. Raccogliendo i dati dall'infrastruttura di rete e del server esistente e applicando le indicazioni per la pianificazione in queste sezioni, è possibile integrare i componenti del server Edge di Lync Server 2013 nell'infrastruttura.
+Per distribuire correttamente Microsoft Lync Server 2013, è necessario comprendere l'interazione e l'affidamento sui singoli componenti. Raccogliendo i dati dall'infrastruttura di rete e del server esistente e applicando le indicazioni relative alla pianificazione in queste sezioni, è possibile integrare i componenti del server perimetrale di Lync Server 2013 nell'infrastruttura.
 
-Introdotta nella [scelta di una topologia in Lync Server 2013](lync-server-2013-choosing-a-topology.md), esistono tre architetture principali con due varianti, per un totale di cinque possibili scenari di distribuzione. Uno di questi scenari sarà il punto di partenza per la raccolta di dati. Gli indirizzi IP, i nomi dei server e i nomi di dominio sono esempi che coincidono con i diagrammi di certificato, firewall e DNS corrispondenti che illustrano in dettaglio le informazioni necessarie per una soluzione di pianificazione completa. I diagrammi e il riempimento del certificato richiesto, i valori DNS e firewall sono particolarmente importanti nelle comunicazioni cross-team in cui la gestione dell'autorità di certificazione, la configurazione del firewall e il DNS vengono gestiti da team diversi dal team che pianificare la distribuzione. I diagrammi contengono informazioni sui componenti necessari che possono essere usati per comunicare questi requisiti per la collaborazione tra team.
+Introdotta nella [scelta di una topologia in Lync Server 2013](lync-server-2013-choosing-a-topology.md), esistono tre architetture principali con due varianti, per un totale di cinque possibili scenari di distribuzione. Uno di questi scenari rappresenterà il punto di partenza per la raccolta dei dati. Gli indirizzi IP, i nomi dei server e i nomi di dominio sono esempi che coincidono con il certificato, il firewall e i diagrammi DNS corrispondenti che descrivono in dettaglio le informazioni richieste per una soluzione di pianificazione completa. I diagrammi e la compilazione dei valori richiesti per certificato, DNS e firewall sono particolarmente importanti per le comunicazioni tra team, nei casi in cui la gestione dell'Autorità di certificazione, della configurazione del firewall e del sistema DNS è responsabilità di team diversi dal team che si occupa della pianificazione della distribuzione. I diagrammi offrono informazioni sui componenti necessari che è possibile utilizzare per la comunicazione dei requisiti nell'ottica della collaborazione tra team.
 
-I diagrammi forniti sono intenzionalmente generici, ma consentono la raccolta di tutti i dati pertinenti che sarebbero necessari per la comunicazione dei requisiti in uno scenario cross team in cui networking, firewall, creazione e gestione di certificati, server la distribuzione e la gestione del server vengono gestite da gruppi diversi. I dettagli necessari per la configurazione di reti, firewall, porte e protocolli, certificati e server sono inestimabili quando è in corso la distribuzione di Lync Server.
+I diagrammi forniti sono intenzionalmente generali, ma consentono la raccolta di dati pertinenti che sarebbero necessari per la comunicazione dei requisiti in uno scenario di collaborazione tra team, nel quale la rete, i firewall, la creazione e la gestione dei certificati, la distribuzione dei server e la gestione dei server sono affidati a gruppi diversi. La disponibilità dei dettagli necessari per la configurazione di rete, firewall, porte e protocolli, certificati e server risulta inestimabile quando è in corso la distribuzione di Lync Server.
 
-**Edge Server e pool Edge**
+**Server perimetrale e pool perimetrale**
 
 ![7624717a-ce99-4ae8-a929-2c4d74a2e47d](images/Gg399008.7624717a-ce99-4ae8-a929-2c4d74a2e47d(OCS.15).jpg "7624717a-ce99-4ae8-a929-2c4d74a2e47d")
 
@@ -65,7 +65,7 @@ I diagrammi forniti sono intenzionalmente generici, ma consentono la raccolta di
 
 ![cf63fc50-2d11-4334-afc8-2d664ba1b6bb](images/Gg399008.cf63fc50-2d11-4334-afc8-2d664ba1b6bb(OCS.15).jpg "cf63fc50-2d11-4334-afc8-2d664ba1b6bb")
 
-**Pool di Director o Director**
+**Director o pool di server Director**
 
 ![56ba29ff-1309-4d5d-bf5c-35372169e947](images/Gg399008.56ba29ff-1309-4d5d-bf5c-35372169e947(OCS.15).jpg "56ba29ff-1309-4d5d-bf5c-35372169e947")
 

@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Panoramica dell'applicazione di annunci"
+title: "Lync Server 2013: Panoramica dell'applicazione annuncio"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48183689
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a4c1b9210fcb0734b305a30d27c77b4e81257909
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 83e711eb408d0819c818157f85fbb0ff81930da7
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41755460"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046229"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-the-announcement-application-in-lync-server-2013"></a>Panoramica dell'applicazione di annuncio in Lync Server 2013
+# <a name="overview-of-the-announcement-application-in-lync-server-2013"></a>Panoramica dell'applicazione annuncio in Lync Server 2013
 
 </div>
 
@@ -35,13 +35,13 @@ ms.locfileid: "41755460"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-13_
+_**Ultimo argomento modificato:** 2012-09-13_
 
-Quando si distribuisce l'applicazione di annuncio, è necessario configurare una tabella dei numeri non assegnati che determina l'azione da eseguire quando un utente compone un numero non assegnato. La tabella numero non assegnati contiene gli intervalli di numeri di telefono validi per l'organizzazione e specifica l'applicazione di un annuncio che gestisce ogni intervallo. Quando un chiamante compone un numero di telefono valido per l'organizzazione ma non viene assegnato a nessuno, Lync Server cerca il numero nella tabella di routing dei numeri non assegnati, identifica l'intervallo in cui il numero rientra e instrada la chiamata all'annuncio. applicazione specificata per tale intervallo. L'applicazione di annuncio risponde alla chiamata e riproduce un messaggio audio (se è stato configurato per farlo) e quindi disconnette la chiamata o la trasferisce a una destinazione predeterminata, ad esempio a un operatore. Puoi usare i cmdlet di Lync Server Management Shell per configurare più messaggi audio o per trasferire destinazioni.
+Quando si distribuisce l'applicazione annuncio, è necessario configurare una tabella dei numeri non assegnati che determina l'azione da eseguire quando un utente compone un numero non assegnato. La tabella numeri non assegnati contiene gli intervalli di numeri di telefono validi per l'organizzazione e specifica quale applicazione di annuncio gestisce ogni intervallo. Quando un chiamante compone un numero di telefono valido per l'organizzazione ma non è assegnato a nessuno, Lync Server cerca il numero nella tabella di routing dei numeri non assegnati, identifica l'intervallo in cui si trova il numero e instrada la chiamata all'annuncio. applicazione specificata per tale intervallo. L'applicazione Annuncio risponde alla chiamata e riproduce un messaggio audio (se è stata configurata per farlo) e quindi disconnette la chiamata o la trasferisce in una destinazione predeterminata, ad esempio a un operatore. È possibile utilizzare i cmdlet di Lync Server Management Shell per configurare più messaggi audio o per trasferire le destinazioni.
 
-La configurazione della tabella dei numeri non assegnati dipende dall'utilizzo previsto di questa. Se si hanno numeri specifici che non sono più in uso e si vogliono riprodurre i messaggi personalizzati per ogni numero, è possibile immettere i numeri specifici nella tabella dei numeri non assegnati. Se ad esempio è stato modificato il numero per il servizio di assistenza clienti, è possibile immettere il vecchio numero di servizio clienti e associarlo a un annuncio che fornisce il nuovo numero. Se si vuole riprodurre un messaggio generale a chiunque chiami un numero non assegnato, ad esempio per i dipendenti che hanno lasciato l'organizzazione, è possibile immettere gli intervalli per tutte le estensioni valide dell'organizzazione. La tabella numeri non assegnati viene richiamata ogni volta che il chiamante compone un numero che non è attualmente assegnato.
+Il modo in cui configurare la tabella dei numeri non assegnati dipende da come si desidera usarla. Se si dispone di numeri specifici non più in uso e si desidera riprodurre messaggi personalizzati per ogni numero, è possibile immettere tali numeri specifici nella tabella dei numeri non assegnati. Se, ad esempio, è stato modificato il numero del Service Desk clienti, è possibile immettere il vecchio numero del servizio clienti e associarlo a un annuncio che fornisce il nuovo numero. Se si desidera riprodurre un messaggio generale a chiunque chiami un numero non assegnato, ad esempio per dipendenti che non lavorano più nell'organizzazione, è possibile immettere intervalli per tutti gli interni validi dell'organizzazione. La tabella dei numeri non assegnati viene richiamata ogni volta che il chiamante compone un numero attualmente non assegnato.
 
-In Lync Server 2013 l'applicazione annuncio viene installata automaticamente con l'applicazione Response Group. Le applicazioni per l'annuncio e il gruppo di risposta sono componenti standard di una distribuzione di VoIP aziendale: quando si distribuisce VoIP aziendale, entrambe le applicazioni vengono distribuite automaticamente.
+In Lync Server 2013, l'applicazione annuncio viene automaticamente installata con l'applicazione Response Group. Le applicazioni annuncio e Response Group sono componenti standard di una distribuzione di VoIP aziendale: quando si distribuisce VoIP aziendale, entrambe le applicazioni vengono distribuite automaticamente.
 
 </div>
 

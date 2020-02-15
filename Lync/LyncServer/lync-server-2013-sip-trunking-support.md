@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Supporto per il trunking SIP'
+title: Supporto per il trunking SIP di Lync Server 2013
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185714
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 58108df8795aaae8d431b320125d34d14ee3a275
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2fd2bd6d66b8b4f040e654f2412f86027071f9ac
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41731946"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42039046"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,49 +35,49 @@ ms.locfileid: "41731946"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-03_
+_**Ultimo argomento modificato:** 2012-10-03_
 
-Se si prevede di usare VoIP aziendale con il trunking SIP, è necessario distribuire un Mediation Server e verificare che altri componenti e infrastrutture soddisfino i requisiti di supporto appropriati per il modello di distribuzione. Per informazioni dettagliate su come determinare se implementare il trunking SIP, vedere [Panoramica del trunking SIP in Lync Server 2013](lync-server-2013-overview-of-sip-trunking.md) nella documentazione relativa alla pianificazione.
+Se si prevede di utilizzare VoIP aziendale con trunking SIP, è necessario distribuire un Mediation Server e verificare che altre infrastrutture e componenti soddisfino i requisiti di supporto adatti al modello di distribuzione. Per informazioni dettagliate sulla determinazione dell'implementazione del trunking SIP, vedere [Overview of SIP trunking in Lync Server 2013](lync-server-2013-overview-of-sip-trunking.md) nella documentazione relativa alla pianificazione.
 
-È possibile usare il programma Microsoft Unified Communications Open Interoperability per l'infrastruttura per la telefonia aziendale per trovare i gateway PSTN (Public Switched Telephone Network) qualificati, i PBX IP e i servizi di trunking SIP, inclusa la telefonia IP qualificata provider di servizi. Per informazioni dettagliate, vedere il sito Web Microsoft Unified Communications Open Interoperability Program all' [http://go.microsoft.com/fwlink/p/?LinkId=203309](http://go.microsoft.com/fwlink/p/?linkid=203309)indirizzo.
+È possibile utilizzare il programma Microsoft Unified Communications Open Interoperability Program for Enterprise telefonia Infrastructure per trovare i gateway PSTN (Public Switched Telephone Network), i sistemi IP-PBX e i servizi di trunking SIP, inclusa la telefonia IP qualificata provider di servizi. Per ulteriori informazioni, vedere il sito Web Microsoft Unified Communications Open Interoperability Program all' [http://go.microsoft.com/fwlink/p/?LinkId=203309](http://go.microsoft.com/fwlink/p/?linkid=203309)indirizzo.
 
 <div>
 
 ## <a name="mediation-server-support"></a>Supporto di Mediation Server
 
-Per implementare il trunking SIP, è necessario instradare la connessione tramite un Mediation Server, che funge da proxy per le sessioni di comunicazione tra client Lync Server 2013 e il provider di servizi. Il Mediation Server decodifica il traffico multimediale da client e server e lo codifica di nuovo prima di inviarlo al provider di servizi. La ricodifica è necessaria perché i trunk SIP non supportano alcuni codec usati, come la negoziazione in Real time audio (RTA) o il protocollo ICE (Interactive Connectivity Establishment) per l'attraversamento del firewall.
+Per implementare il trunking SIP, è necessario instradare la connessione tramite un Mediation Server, che funge da proxy per le sessioni di comunicazione tra i client di Lync Server 2013 e il provider di servizi. Il Mediation Server decodifica il traffico multimediale proveniente da client e server e lo ricodifica prima di inviarlo al provider di servizi. La ricodifica è necessaria perché i trunk SIP non supportano alcuni codec utilizzati, ad esempio la negoziazione di protocollo di accesso interattivi (RTA) o Interactive Connectivity Establishment (ICE) per l'attraversamento del firewall.
 
-Ogni Mediation Server può avere due schede di rete, che offrono un'interfaccia di rete interna e esterna. L'interfaccia esterna viene comunemente chiamata interfaccia gateway perché, tradizionalmente, è stata usata per la connessione a un gateway PSTN o a un IP-PBX. Per implementare un trunk SIP, Connetti l'interfaccia esterna a un SBC (Session Border Controller) in un provider di servizi.
+Ogni Mediation Server può includere due schede di rete, che forniscono un'interfaccia di rete interna e una esterna. L'interfaccia esterna è comunemente chiamata interfaccia gateway perché, tradizionalmente, è stata utilizzata per la connessione a un gateway PSTN o a un IP-PBX. Per implementare un trunk SIP, connettere l'interfaccia esterna a un SBC (Session Border Controller) presso un provider di servizi.
 
 </div>
 
 <div>
 
-## <a name="centralized-vs-distributed-sip-trunking"></a>Trunking SIP distribuito o centralizzato
+## <a name="centralized-vs-distributed-sip-trunking"></a>Trunking SIP centralizzato o distribuito
 
-*Centralizzato* Il trunking SIP instrada tutto il traffico VoIP (Voice over Internet Protocol), incluso il traffico del sito di succursale, tramite il Data Center. Il modello di distribuzione centralizzato è semplice, conveniente ed è in genere l'approccio preferito per l'implementazione di trunk SIP con Lync Server 2013.
+*Centralizzata* Il trunking SIP instrada tutto il traffico VoIP (Voice over Internet Protocol), incluso il traffico del sito di succursale, tramite il Data Center. Il modello di distribuzione centralizzato è semplice, redditizio ed è in genere l'approccio preferito per l'implementazione dei trunk SIP con Lync Server 2013.
 
-A seconda dei modelli di utilizzo all'interno dell'organizzazione, potrebbe non essere necessario instradare tutti gli utenti tramite il trunk SIP centralizzato. Per analizzare le proprie esigenze, rispondere alle domande seguenti:
+A seconda dei modelli di utilizzo adottati dall'organizzazione, è possibile decidere di non instradare tutti gli utente attraverso il trunk SIP centralizzato. Per analizzare le specifiche esigenze, rispondere alle domande seguenti:
 
-  - Quant'è grande ogni sito? Quanti utenti?
+  - Quanto è grande ogni sito? Quanti utenti?
 
   - Quali numeri DID (Direct Inward Dialing) in ogni sito ricevono la maggior parte delle telefonate?
 
-*Distribuiti* Trunking SIP è un modello di distribuzione in cui è possibile implementare un trunk SIP locale in uno o più siti di succursale. Il traffico VoIP viene quindi instradato dal sito della filiale direttamente al proprio provider di servizi, senza passare al Data Center.
+Il trunking SIP *distribuito* è un modello di distribuzione in cui si implementa un trunk SIP locale in uno o più siti di succursale. Il traffico VoIP viene quindi instradato dal sito di succursale direttamente al provider di servizi, senza passare per il data center.
 
-Il trunking SIP distribuito è obbligatorio solo nei casi seguenti:
+Il trunking SIP distribuito è necessario solo nei casi seguenti:
 
-  - Il sito della filiale richiede una connettività telefonica superstite, ad esempio se la rete WAN viene rimandata. Se il ramo ha bisogno di ridondanza e failover, il provider di servizi addebiterà di più e la configurazione richiederà più tempo. Questa operazione deve essere analizzata per ogni sito di succursale. Alcune delle branche potrebbero richiedere ridondanza e failover, mentre altre potrebbero non essere disponibili.
+  - Il sito di succursale richiede la connettività del telefono superstite (ad esempio, se la rete WAN va verso il basso). Se il Branch ha bisogno di ridondanza e failover, il provider di servizi addebiterà di più e la configurazione richiederà più tempo. Questo dovrebbe essere analizzato per ogni sito di succursale. Alcuni dei rami potrebbero richiedere ridondanza e failover, mentre altri potrebbero non essere disponibili.
 
-  - Il sito e il centro dati della filiale si trovano in paesi/aree geografiche diverse. Per motivi di compatibilità e legali, è necessario almeno un trunk SIP per paese/area geografica.
+  - Il sito di succursale e il data center si trovano in paesi o aree geografiche diverse. Per motivi legali e di compatibilità, è necessario almeno un trunk SIP per ogni paese o area geografica.
 
-Decidere se distribuire il trunking SIP centralizzato o distribuito richiede un'analisi costi/benefici. In alcuni casi, può essere vantaggioso optare per la modalità di distribuzione distribuita, anche se non è obbligatoria. In una distribuzione completamente centralizzata, tutto il traffico del sito della filiale viene instradato su collegamenti WAN. Invece di pagare la larghezza di banda necessaria per il collegamento WAN, è consigliabile usare il trunking SIP distribuito.
+Se si decide di distribuire il trunking SIP centralizzato o distribuito, è necessaria un'analisi costi/benefici. In alcuni casi, può essere vantaggioso optare per la modalità di distribuzione distribuita, anche se non è obbligatorio. In una distribuzione completamente centralizzata, tutto il traffico dei siti di succursale viene instradato su collegamenti WAN. Per non incorrere nei costi della larghezza di banda necessaria per i collegamenti WAN, può essere preferibile utilizzare il trunking SIP distribuito.
 
 <div>
 
 
 > [!NOTE]  
-> Per informazioni dettagliate sul motivo e sulla modalità di utilizzo del trunking SIP distribuito, vedere <A href="lync-server-2013-branch-site-sip-trunking.md">trunking SIP del sito di succursale in Lync Server 2013</A> nella documentazione relativa alla pianificazione.
+> Per informazioni dettagliate sul perché e su come utilizzare il trunking SIP distribuito, vedere <A href="lync-server-2013-branch-site-sip-trunking.md">branching SIP trunking site in Lync Server 2013</A> nella documentazione relativa alla pianificazione.
 
 
 
@@ -87,27 +87,27 @@ Decidere se distribuire il trunking SIP centralizzato o distribuito richiede un'
 
 <div>
 
-## <a name="supported-sip-trunking-connection-types"></a>Tipi di connessione di trunking SIP supportati
+## <a name="supported-sip-trunking-connection-types"></a>Tipi di connessione supportati per il trunking SIP
 
 Lync Server 2013 supporta i tipi di connessione seguenti per il trunking SIP:
 
-  - Il cambio di etichetta Multiprotocol (MPLS) è una rete privata che indirizza e trasporta i dati da un nodo di rete a quello successivo. La larghezza di banda in una rete MPLS viene condivisa con altri abbonati e a ogni pacchetto di dati viene assegnata un'etichetta per distinguere i dati di un utente da un altro. Questo tipo di connessione non richiede VPN. Un potenziale svantaggio è che il traffico IP eccessivo può interferire con l'operazione VoIP, a meno che non venga data priorità al traffico VoIP.
+  - MPLS (Multiprotocol Label Switching) è una rete privata che indirizza e trasferisce i dati da un nodo di rete al successivo. La larghezza di banda di una rete MPLS è condivisa con altri sottoscrittori e a ogni pacchetto di dati viene assegnata un'etichetta per distinguere i dati di un sottoscrittore da quelli di un altro. Questo tipo di connessione non richiede VPN. Un potenziale svantaggio è che il traffico IP eccessivo può interferire con l'operazione VoIP a meno che non abbai priorità.
 
-  - Una connessione privata senza altro traffico è in genere il tipo di connessione più affidabile e sicuro, ad esempio una connessione in fibra ottica affittata o una linea T1. Questo tipo di connessione offre la maggiore capacità di trasporto delle chiamate, ma in genere è la più costosa. La VPN non è obbligatoria. Le connessioni private sono appropriate per le organizzazioni con elevati volumi di chiamate o requisiti di sicurezza e disponibilità severi.
+  - Una connessione privata senza altro traffico è in genere il tipo più affidabile e sicuro, ad esempio una connessione in fibra ottica dedicata, o linea T1. Questo tipo di connessione offre la massima capacità per il trasferimento delle chiamate, ma è in genere la più costosa. Non è richiesta una VPN. Le connessioni private sono appropriate per organizzazioni con volumi di chiamate elevate o requisiti rigorosi di sicurezza e disponibilità.
 
-  - Internet pubblico è il tipo di connessione meno costoso, ma anche il meno affidabile e quello con la più bassa capacità di trasporto delle chiamate. Il provider di servizi di telefonia Internet (ITSP) può aiutare a proteggere questo tipo di connessione trunk SIP se supporta TLS (Transport Layer Security) e SRTP (Secure Real-Time Transport Protocol) per crittografare il traffico di segnalazione e multimediale. Se non è possibile configurare una connessione trunk SIP tramite Internet per l'uso di TLS e SRTP, è consigliabile usare un tunnel VPN per garantire una connessione più sicura. Contattare il ITSP per determinare se fornisce il supporto per TLS con SRTP.
+  - La rete Internet pubblica è il tipo di connessione meno costosa, ma anche la meno affidabile e quella con la capacità minore di trasferimento di chiamate. Il provider di servizi di telefonia Internet (ITSP) consente di proteggere questo tipo di connessione trunk SIP se supporta TLS (Transport Layer Security) e SRTP (Secure Real-Time Transport Protocol) per crittografare la segnalazione e il traffico multimediale. Se non è possibile configurare una connessione di trunk SIP tramite Internet per l'utilizzo di TLS e SRTP, è consigliabile utilizzare un tunnel VPN per una maggiore sicurezza. Contattare l'ITSP per verificare se fornisce il supporto per TLS con SRTP.
 
 <div>
 
 ## <a name="selecting-a-connection-type"></a>Selezione di un tipo di connessione
 
-Il tipo di connessione di trunking SIP più appropriato per l'azienda dipende dalle esigenze e dal budget.
+Il tipo di connessione per il trunking SIP più appropriato per la propria azienda dipende dalle diverse esigenze e dal budget a disposizione.
 
-  - Per un'azienda di medie dimensioni o più grande, una rete MPLS fornisce in genere il valore più elevato. Può specificare la larghezza di banda necessaria a una tariffa più economica rispetto a una rete privata specializzata.
+  - Per un'azienda di medie o grandi dimensioni, una rete MPLS fornisce generalmente la maggior parte dei valori. È in grado di fornire la larghezza di banda necessaria a un tasso più conveniente rispetto a una rete privata specializzata.
 
-  - Le grandi imprese possono richiedere una connessione a fibre ottiche o T1 private.
+  - Per le grandi aziende può essere necessaria una connessione in fibra ottica privata o T1.
 
-  - Per una piccola impresa o un sito di succursale con un volume di chiamate basso, il trunking SIP tramite Internet può essere la scelta migliore. Questo tipo di connessione non è tuttavia consigliato per i siti di medie dimensioni o più grandi.
+  - Per una piccola azienda o un sito di succursale con volume di chiamata basso, il trunking SIP tramite Internet potrebbe essere la scelta migliore. Tuttavia, questo tipo di connessione non è consigliato per siti di medie o grandi dimensioni.
 
 </div>
 
@@ -115,13 +115,13 @@ Il tipo di connessione di trunking SIP più appropriato per l'azienda dipende da
 
 <div>
 
-## <a name="codec-support"></a>Supporto per codec
+## <a name="codec-support"></a>Codec supportati
 
 Il proxy del provider di servizi deve supportare i codec seguenti:
 
-  - G. 711 a-Law (usato principalmente al di fuori del Nord America)
+  - G.711 a-law (utilizzato prevalentemente all'esterno del Nord America)
 
-  - G. 711 µ-Law (usato in Nord America)
+  - G.711 µ-law (utilizzato in Nord America)
 
 </div>
 

@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Abilitare gli utenti per la segreteria telefonica ospitata'
+title: 'Lync Server 2013: abilitare gli utenti per la segreteria telefonica ospitata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185919
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8e0ce9ee4da6ee0a36e5e5f0028371aab8af523f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e7287f31a4dc0e43b0108ce666e9c65f51f75f2d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41736002"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046659"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41736002"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-24_
+_**Ultimo argomento modificato:** 2012-09-24_
 
 Seguire la procedura per abilitare gli utenti di Lync Server 2013 per la segreteria telefonica in un servizio di messaggistica unificata di Exchange ospitata.
 
-Per informazioni dettagliate, vedere [gestione degli utenti di Exchange ospitata in Lync Server 2013](lync-server-2013-hosted-exchange-user-management.md) nella documentazione relativa alla pianificazione.
+Per ulteriori informazioni, vedere [gestione degli utenti di Exchange ospitati in Lync Server 2013](lync-server-2013-hosted-exchange-user-management.md) nella documentazione relativa alla pianificazione.
 
 Per informazioni dettagliate sul cmdlet [Set-CsUser](https://docs.microsoft.com/powershell/module/skype/Set-CsUser) , vedere la documentazione di Lync Server Management Shell.
 
@@ -47,7 +47,7 @@ Per informazioni dettagliate sul cmdlet [Set-CsUser](https://docs.microsoft.com/
 
 
 > [!IMPORTANT]  
-> Prima che un utente di Lync Server 2013 possa essere abilitato per la segreteria telefonica ospitata, è necessario distribuire un criterio di segreteria telefonica ospitata che si applica al proprio account utente. Per informazioni dettagliate, vedere Criteri per la segreteria <A href="lync-server-2013-hosted-voice-mail-policies.md">telefonica ospitati in Lync Server 2013</A>.
+> Prima che un utente di Lync Server 2013 possa essere abilitato per la segreteria telefonica ospitata, è necessario distribuire un criterio di segreteria telefonica ospitata che si applica al proprio account utente. Per ulteriori informazioni, vedere <A href="lync-server-2013-hosted-voice-mail-policies.md">criteri di segreteria telefonica ospitata in Lync Server 2013</A>.
 
 
 
@@ -57,7 +57,7 @@ Per informazioni dettagliate sul cmdlet [Set-CsUser](https://docs.microsoft.com/
 
 ## <a name="to-enable-users-for-hosted-voice-mail"></a>Per abilitare gli utenti per la segreteria telefonica ospitata
 
-1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+1.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
 2.  Eseguire il cmdlet Set-CsUser per configurare l'account utente per la segreteria telefonica ospitata. Ad esempio, eseguire:
     
@@ -65,23 +65,23 @@ Per informazioni dettagliate sul cmdlet [Set-CsUser](https://docs.microsoft.com/
     
     Nell'esempio precedente vengono impostati i parametri seguenti:
     
-      - **HostedVoiceMail** consente alle chiamate di segreteria telefonica di un utente di essere indirizzate alla messaggistica unificata di Exchange ospitata. Segnala inoltre a Microsoft Lync 2013 di illuminare l'indicatore "chiama la segreteria telefonica".
+      - **HostedVoiceMail** consente di instradare le chiamate di posta vocale di un utente alla messaggistica unificata di Exchange ospitata. Segnala inoltre Microsoft Lync 2013 per accendere l'indicatore "segreteria telefonica chiamata".
     
-      - **Identity** specifica l'account utente da modificare. Il valore Identity può essere specificato usando uno dei formati seguenti:
+      - **Identity** specifica l'account utente da modificare. Il valore di Identity può essere specificato utilizzando uno dei formati seguenti:
         
           - Indirizzo SIP dell'utente
         
-          - L'utente di Active Directory-Principal-Name dell'utente
+          - Nome dell'entità utente di Active Directory
         
-          - Nome di accesso al\\dominio dell'utente (ad esempio,\\contoso kenmyer)
+          - Nome di accesso del\\dominio dell'utente (ad esempio,\\contoso kenmyer)
         
-          - Il nome visualizzato dei servizi di dominio Active Directory dell'utente, ad esempio Ken. Se si usa il nome visualizzato come valore di identità, è possibile usare il carattere jolly\*asterisco (). Ad esempio, l'identità "\* Smith" restituisce tutti gli utenti che hanno un nome visualizzato che termina con il valore stringa "Smith".
+          - Nome visualizzato dei servizi di dominio Active Directory dell'utente, ad esempio Davide Garghentini. Se si utilizza il nome visualizzato come valore Identity, è possibile utilizzare il carattere jolly asterisco\*(). Ad esempio, il parametro Identity\* "Smith" restituisce tutti gli utenti che dispongono di un nome visualizzato che termina con il valore stringa "Smith".
         
         <div>
         
 
         > [!NOTE]  
-        > Il nome dell'account SAM di Active Directory dell'utente non può essere usato come valore di identità perché il nome dell'account SAM non è necessariamente univoco nella foresta.
+        > Il nome account SAM di Active Directory dell'utente non può essere utilizzato come valore di Identity perché non è necessariamente univoco nella foresta.
 
         
         </div>

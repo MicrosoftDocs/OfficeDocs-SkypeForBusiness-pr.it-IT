@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: riepilogo della porta-connettività di messaggistica istantanea pubblica'
+title: 'Lync Server 2013: riepilogo delle porte-connettività per la messaggistica istantanea pubblica'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49105663
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 16430849221631d9b540f5ee51b0a07758a38b05
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 87a51e2030c17e7ed228a75b474b168a74924cb2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41725056"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42038378"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="port-summary---public-instant-messaging-connectivity-in-lync-server-2013"></a>Riepilogo della porta-connettività di messaggistica istantanea pubblica in Lync Server 2013
+# <a name="port-summary---public-instant-messaging-connectivity-in-lync-server-2013"></a>Riepilogo delle porte-connettività per la messaggistica istantanea pubblica in Lync Server 2013
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "41725056"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-02-16_
+_**Ultimo argomento modificato:** 2013-02-16_
 
-Per configurare il firewall per le porte e i protocolli necessari per supportare la connettività di messaggistica istantanea pubblica, prima di tutto si noti che SIP/MTLS/TCP 5061 è bidirezionale per tenere conto della capacità dei contatti nel provider di messaggistica istantanea pubblica di contattare i client Lync o di Lync per contattare i contatti di messaggistica istantanea pubblica.
+Per configurare il firewall per le porte e i protocolli necessari per supportare la connettività di messaggistica istantanea pubblica, è necessario tenere presente che SIP/MTLS/TCP 5061 è bidirezionale per tenere conto della capacità dei contatti nel provider di messaggistica istantanea pubblica di contattare i client Lync o di contattare i contatti di messaggistica istantanea pubblica.
 
-Windows Live Messenger può partecipare alle comunicazioni audio/video con i client Lync. Questo account per la porta del firewall e la configurazione di protocollo molto simili che in genere sono presenti nel firewall per supportare i client Lync come utenti esterni.
+Windows Live Messenger è in grado di partecipare alle comunicazioni audio/video con i client Lync. Questo account per la porta del firewall molto simile e la configurazione del protocollo che in genere si dispone sul firewall per supportare i client Lync come utenti esterni.
 
 <div>
 
 
 > [!IMPORTANT]  
-> Più che mai, Lync è uno strumento efficace per la connessione tra le organizzazioni e gli utenti di tutto il mondo. La Federazione con Windows Live Messenger non richiede licenze aggiuntive per utenti e dispositivi oltre la licenza CAL (Client Access License) di Lync standard. La Federazione Skype verrà aggiunta a questo elenco, consentendo agli utenti di Lync di raggiungere centinaia di milioni di persone con messaggistica istantanea e voce.<BR>La Federazione con i contatti client di Messenger finirà ufficialmente il 15 marzo 2013, ad eccezione della Cina continentale. Skype diventerà il client federativo per gli utenti federati che in precedenza usavano Messenger.
+> Più che mai, Lync è uno strumento potente per la connessione tra le organizzazioni e gli utenti di tutto il mondo. La Federazione con Windows Live Messenger non richiede licenze aggiuntive per utenti e dispositivi oltre la licenza CAL (Client Access License) di Lync standard. La Federazione Skype verrà aggiunta a questo elenco, consentendo agli utenti di Lync di raggiungere centinaia di milioni di persone con messaggistica istantanea e vocale.<BR>La Federazione con i contatti client di Messenger finirà ufficialmente il 15 marzo 2013, tranne che per la Cina continentale. Skype diventerà il client federativo per gli utenti federati che in precedenza utilizzavano Messenger.
 
 
 
@@ -53,7 +53,7 @@ Windows Live Messenger può partecipare alle comunicazioni audio/video con i cli
 
 <div>
 
-## <a name="firewall-summary--public-instant-messaging-connectivity"></a>Riepilogo firewall-connettività di messaggistica istantanea pubblica
+## <a name="firewall-summary--public-instant-messaging-connectivity"></a>Riepilogo firewall - connettività per messaggistica istantanea pubblica
 
 
 <table>
@@ -68,45 +68,45 @@ Windows Live Messenger può partecipare alle comunicazioni audio/video con i cli
 <th>Ruolo/protocollo/TCP o UDP/porta</th>
 <th>Indirizzo IP di origine</th>
 <th>Indirizzo IP di destinazione</th>
-<th>Note</th>
+<th>Notes</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Access/SIP (MTLS)/TCP/5061</p></td>
-<td><p>Partner di connettività per messaggistica istantanea pubblica</p></td>
-<td><p>Interfaccia di Access Server Edge</p></td>
-<td><p>Per la connettività di messaggistica istantanea federata e federati che usano SIP.</p></td>
+<td><p>Accesso/SIP (MTLS)/TCP/5061</p></td>
+<td><p>Partner per la connettività per messaggistica istantanea pubblica</p></td>
+<td><p>Interfaccia di accesso ai server perimetrali</p></td>
+<td><p>Per la connettività di messaggistica istantanea pubblica e federata che utilizzano SIP.</p></td>
 </tr>
 <tr class="even">
-<td><p>Access/SIP (MTLS)/TCP/5061</p></td>
-<td><p>Interfaccia di Access Server Edge</p></td>
-<td><p>Partner di connettività per messaggistica istantanea pubblica</p></td>
-<td><p>Per la connettività di messaggistica istantanea federata e federati che usano SIP.</p></td>
+<td><p>Accesso/SIP (MTLS)/TCP/5061</p></td>
+<td><p>Interfaccia di accesso ai server perimetrali</p></td>
+<td><p>Partner per la connettività per messaggistica istantanea pubblica</p></td>
+<td><p>Per la connettività di messaggistica istantanea pubblica e federata che utilizzano SIP.</p></td>
 </tr>
 <tr class="odd">
-<td><p>Access/SIP (TLS)/TCP/443</p></td>
+<td><p>Accesso/SIP (TLS)/TCP/443</p></td>
 <td><p>Client</p></td>
-<td><p>Interfaccia di Access Server Edge</p></td>
+<td><p>Interfaccia di accesso ai server perimetrali</p></td>
 <td><p>Traffico SIP da client a server per l'accesso degli utenti esterni.</p></td>
 </tr>
 <tr class="even">
 <td><p>A/V/RTP/TCP/50000-59.999</p></td>
-<td><p>Interfaccia di Access Server Edge</p></td>
-<td><p>Client di Messenger Live</p></td>
-<td><p>Usato per sessioni A/V con Windows Live Messenger se è configurata la connettività di messaggistica istantanea pubblica.</p></td>
+<td><p>Interfaccia di accesso ai server perimetrali</p></td>
+<td><p>Client Live Messenger</p></td>
+<td><p>Utilizzato per le sessioni A/V con Windows Live Messenger se è configurata la connettività per messaggistica istantanea pubblica.</p></td>
 </tr>
 <tr class="odd">
 <td><p>A/V/STUN, MSTURN/UDP/3478</p></td>
-<td><p>Interfaccia di Access Server Edge</p></td>
-<td><p>Client di Messenger Live</p></td>
-<td><p>Obbligatorio per la connettività di messaggistica istantanea pubblica con Windows Live Messenger.</p></td>
+<td><p>Interfaccia di accesso ai server perimetrali</p></td>
+<td><p>Client Live Messenger</p></td>
+<td><p>Necessario per la connettività di messaggistica istantanea pubblica con Windows Live Messenger.</p></td>
 </tr>
 <tr class="even">
 <td><p>A/V/STUN, MSTURN/UDP/3478</p></td>
-<td><p>Client di Messenger Live</p></td>
-<td><p>Interfaccia di Access Server Edge</p></td>
-<td><p>Obbligatorio per la connettività di messaggistica istantanea pubblica con Windows Live Messenger.</p></td>
+<td><p>Client Live Messenger</p></td>
+<td><p>Interfaccia di accesso ai server perimetrali</p></td>
+<td><p>Necessario per la connettività di messaggistica istantanea pubblica con Windows Live Messenger.</p></td>
 </tr>
 </tbody>
 </table>

@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: eliminazione di collegamenti all'area di rete"
+title: 'Lync Server 2013: eliminazione di collegamenti tra aree di rete'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 49733712
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 158537f2473beba686daa51c5384a45f01432320
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 2b189054d1333e6eb0f9754a9405718607f48ec2
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41763024"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046389"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="deleting-network-region-links-in-lync-server-2013"></a>Eliminazione di collegamenti all'area di rete in Lync Server 2013
+# <a name="deleting-network-region-links-in-lync-server-2013"></a>Eliminazione di collegamenti delle aree di rete in Lync Server 2013
 
 </div>
 
@@ -35,32 +35,32 @@ ms.locfileid: "41763024"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-11-01_
+_**Ultimo argomento modificato:** 2012-11-01_
 
-È possibile configurare i collegamenti tra due aree di rete nell'ambito del controllo di ammissione di chiamata (CAC). Le aree all'interno di una rete sono collegate tramite connettività WAN (Physical Wide Area Network). È possibile usare il pannello di controllo di Lync Server per eliminare un collegamento esistente tra due aree di rete. Per informazioni dettagliate su come creare o modificare il collegamento all'area di rete, vedere [configurazione dei collegamenti all'area di rete in Lync Server 2013](lync-server-2013-configuring-network-region-links.md)
+È possibile configurare i collegamenti tra due aree di rete nell'ambito del servizio Controllo di ammissione di chiamata. Le aree di una rete sono collegate mediante una connettività WAN fisica. È possibile utilizzare il pannello di controllo di Lync Server per eliminare un collegamento esistente tra due aree di rete. Per informazioni dettagliate sulla creazione o la modifica di un collegamento area di rete, vedere [Configuring Network Region Links in Lync Server 2013](lync-server-2013-configuring-network-region-links.md)
 
 <div>
 
-## <a name="to-delete-a-network-region-link"></a>Per eliminare un collegamento all'area di rete
+## <a name="to-delete-a-network-region-link"></a>Per eliminare un collegamento area di rete
 
-1.  Da un account utente che è un membro del gruppo RTCUniversalServerAdmins (o ha diritti utente equivalenti) o viene assegnato al ruolo CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **configurazione di rete** e quindi su collegamento all' **area geografica**.
+3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Collegamento area**.
 
-4.  Nella pagina **collegamento all'area geografica** fare clic sul collegamento all'area che si desidera eliminare.
+4.  Nella pagina **Collegamento area** fare clic sul collegamento area che si desidera eliminare.
     
     <div>
     
 
     > [!NOTE]  
-    > Puoi eliminare più di un collegamento all'area geografica alla volta. Per eseguire questa operazione, premere CTRL e selezionare più collegamenti all'area geografica tenendo premuto CTRL. In alternativa, per selezionare tutti i collegamenti all'area geografica, fare clic su <STRONG>Seleziona tutto</STRONG> dal menu <STRONG>modifica</STRONG> .
+    > È possibile eliminare più collegamenti aree contemporaneamente. A tale scopo, premere CTRL e selezionare più collegamenti aree tenendo premuto CTRL. Per selezionare tutti i collegamenti aree, scegliere <STRONG>Seleziona tutto</STRONG> dal menu <STRONG>Modifica</STRONG>.
 
     
     </div>
 
-5.  Scegliere **Elimina**dal menu **modifica** .
+5.  Scegliere **Elimina** dal menu **Modifica**.
 
 6.  Fare clic su **OK**.
 
@@ -71,7 +71,7 @@ _**Argomento Ultima modifica:** 2012-11-01_
 ## <a name="see-also"></a>Vedere anche
 
 
-[Configurazione di collegamenti all'area di rete in Lync Server 2013](lync-server-2013-configuring-network-region-links.md)  
+[Configurazione di collegamenti tra aree di rete in Lync Server 2013](lync-server-2013-configuring-network-region-links.md)  
   
 
 </div>

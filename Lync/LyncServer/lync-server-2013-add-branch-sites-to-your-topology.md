@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Aggiungere siti di succursale alla topologia'
+title: 'Lync Server 2013: aggiungere siti di succursale alla topologia'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48185216
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2df1871956b33b3781128e2b62af13bdd875d10b
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9b03a612ba94733d52600af1db775e1bb0ef9b26
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735046"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037828"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,45 +35,45 @@ ms.locfileid: "41735046"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-05_
+_**Ultimo argomento modificato:** 2012-10-05_
 
-I siti di succursale rappresentano le filiali fisiche connesse agli uffici principali tramite un collegamento WAN. Per aggiungere un sito di succursale alla topologia di Lync, eseguire questa procedura nel sito centrale.
+I siti di succursale rappresentano le succursali fisiche connesse alle sedi principali tramite un collegamento WAN. Per aggiungere un sito di succursale alla topologia di Lync, eseguire questa procedura nel sito centrale.
 
 <div>
 
 ## <a name="to-add-branch-sites-to-your-topology"></a>Per aggiungere siti di succursale alla topologia
 
-1.  Fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Microsoft Lync Server**e quindi su **Generatore di topologia di Lync Server**.
+1.  Fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server** e quindi **Generatore di topologie di Lync Server**.
 
-2.  Nell'albero della console espandere il sito centrale, fare clic con il pulsante destro del mouse su **siti di succursale**e quindi scegliere **nuovo sito filiale**.
+2.  Nell'albero della console espandere il sito centrale, fare clic con il pulsante destro del mouse su **Siti di succursale** e quindi scegliere **Nuovo sito di succursale**.
 
-3.  Nella finestra di dialogo **Definisci nuovo sito succursale** fare clic su **nome**e quindi digitare il nome del sito della filiale.
+3.  Nella finestra di dialogo **Definisci nuovo sito di succursale** fare clic su **Nome** e quindi digitare il nome del sito di succursale.
 
-4.  Opzionale Fare clic su **Descrizione**e quindi digitare una descrizione significativa per il sito della filiale.
+4.  (Facoltativo) Fare clic su **Descrizione** e quindi digitare una descrizione significativa del sito di succursale.
 
 5.  Fare clic su **Avanti**.
 
-6.  Opzionale Nella finestra di dialogo **Definisci nuovo sito della filiale** eseguire una delle operazioni seguenti:
+6.  (Facoltativo) Nella successiva finestra di dialogo **Definisci nuovo sito di succursale** eseguire una delle operazioni seguenti:
     
-      - Fare clic su **città**e quindi digitare il nome della città in cui si trova il sito della filiale.
+      - Fare clic su **Città** e quindi digitare il nome della città in cui si trova il sito di succursale.
     
-      - Fare clic su **stato/area geografica**e quindi digitare il nome dello stato o dell'area geografica in cui si trova il sito della filiale.
+      - Fare clic su **Paese** e quindi digitare il nome del paese in cui si trova il sito di succursale.
     
-      - Fare clic su **codice paese**e quindi digitare il codice di chiamata a due cifre per il paese/area geografica in cui si trova il sito della filiale.
+      - Fare clic su **Codice paese** e quindi digitare il codice di chiamata in due cifre per il paese/area geografica in cui si trova il sito di succursale.
 
-7.  Fare clic su **Avanti**e quindi eseguire una delle operazioni seguenti:
+7.  Fare clic su **Avanti** e quindi eseguire una delle operazioni seguenti:
     
-      - Se si usa un Survivable Branch Appliance o un server in questo sito, verificare che la casella di controllo **Apri la nuova procedura guidata per** la procedura guidata sia selezionata, fare clic su **fine**e quindi seguire le istruzioni della procedura guidata visualizzata. Per informazioni sugli elementi della procedura guidata, vedere [definire un Survivable Branch Appliance o un server in Lync server 2013](lync-server-2013-define-a-survivable-branch-appliance-or-server.md).
+      - Se si utilizza un Survivable Branch Appliance o server in questo sito, accertarsi che la casella di controllo **Apri la procedura guidata nuovo Survivable Wizard al termine della procedura guidata** sia selezionata, fare clic su **fine**e quindi seguire le istruzioni nella procedura guidata che verrà aperta. Per informazioni sugli elementi della procedura guidata, vedere [define a Survivable Branch Appliance or server in Lync server 2013](lync-server-2013-define-a-survivable-branch-appliance-or-server.md).
     
-      - Se non si usa un Survivable Branch Appliance o un server in questo sito, deselezionare la casella di controllo **Apri la nuova procedura guidata per** la procedura guidata e quindi fare clic su **fine**.
+      - Se nel sito non si utilizza un Survivable Branch Appliance o un Survivable Branch Server, deselezionare la casella di controllo **Aprire la procedura guidata Nuovo Survivable Branch Appliance al termine di questa procedura guidata** e quindi fare clic su **Fine**.
 
-8.  Ripetere i passaggi precedenti per ogni sito della filiale che si vuole aggiungere alla topologia.
+8.  Ripetere i passaggi precedenti per ogni sito di succursale che si desidera aggiungere alla topologia.
 
 **Passaggio successivo:**
 
-Per gli elettrodomestici o i server Survivable Branch: [definire un Survivable Branch Appliance o un server in Lync server 2013](lync-server-2013-define-a-survivable-branch-appliance-or-server.md)
+Per i server o gli appliance Survivable Branch: [definire un Survivable Branch Appliance o un server in Lync server 2013](lync-server-2013-define-a-survivable-branch-appliance-or-server.md)
 
-Per la connettività PSTN non resiliente: [definire un gateway PSTN per un sito di succursale in Lync server 2013](lync-server-2013-define-a-pstn-gateway-for-a-branch-site.md), [configurare un trunk con il bypass multimediale in Lync Server 2013](lync-server-2013-configure-a-trunk-with-media-bypass.md)o [configurare un trunk senza bypass multimediale in Lync Server 2013](lync-server-2013-configure-a-trunk-without-media-bypass.md)
+Per la connettività PSTN non resiliente: [definire un gateway PSTN per un sito di succursale in Lync server 2013](lync-server-2013-define-a-pstn-gateway-for-a-branch-site.md), [configurare un trunk con bypass multimediale in Lync Server 2013](lync-server-2013-configure-a-trunk-with-media-bypass.md)o [configurare un trunk senza bypass multimediale in Lync Server 2013](lync-server-2013-configure-a-trunk-without-media-bypass.md)
 
 </div>
 

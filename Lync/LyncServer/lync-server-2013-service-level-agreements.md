@@ -12,16 +12,16 @@ ms:contentKeyID: 63969580
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f8c4b827cf2b82eb315ec166bcabb2452e7d8bdc
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: e96edf9fe2fefb54e608ee6840cfb2717c92d136
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732387"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42048997"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,17 +35,17 @@ ms.locfileid: "41732387"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2014-08-18_
+_**Ultimo argomento modificato:** 2014-08-18_
 
-Lo SLA è un documento che definisce i servizi che il cliente si aspetta da te. La complessità e il contenuto di questo documento dipende in gran parte dal fatto che i clienti siano interni (all'interno dell'ambiente) o esterni.
+Il contratto di servizio è un documento che definisce i servizi che il cliente si aspetta da un utente. La complessità e il contenuto di questo documento dipendono in gran parte dal fatto che i clienti siano interni (all'interno dell'ambiente) o esterni.
 
 <div>
 
 ## <a name="external-customers"></a>Clienti esterni
 
-Se il cliente è esterno, lo SLA può essere incluso in un contratto legale con incentivi finanziari e penalità per prestazioni che rientrano o all'esterno di livelli di servizio definiti. La definizione di questi livelli di servizio deve essere parte della negoziazione complessiva del contratto.
+Se il cliente è esterno, l'SLA può essere incluso in un contratto legale con incentivi finanziari e penalità per le prestazioni che cadono all'interno o all'esterno di livelli di servizio definiti. La definizione di questi livelli di servizio deve essere inclusa nella negoziazione generale del contratto.
 
-Come per tutti i contratti, è importante che entrambe le parti capiscano le aspettative. Lo SLA definisce queste aspettative. Il contenuto del documento deve cambiare raramente e solo a causa delle negoziazioni con il cliente.
+Come per tutti i contratti, è importante che entrambe le parti comprendano le aspettative. Il contratto di servizio di SLA definisce queste aspettative. Il contenuto del documento deve essere modificato raramente e solo a causa di trattative con il cliente.
 
 </div>
 
@@ -53,7 +53,7 @@ Come per tutti i contratti, è importante che entrambe le parti capiscano le asp
 
 ## <a name="internal-customers"></a>Clienti interni
 
-Se il cliente è interno, potrebbe essere comunque necessario definire i servizi previsti per i team operativi e i sistemi IT. Lo SLA può essere creato dal personale operativo e inteso come un set di obiettivi per la disponibilità dei servizi IT all'interno dell'organizzazione. In alternativa, i livelli di prestazioni possono essere impostati dalla gestione e usati come benchmark per valutare le prestazioni del personale.
+Se il cliente è interno, è possibile che si desideri ancora definire i servizi previsti per i team operativi e i sistemi IT. Il servizio SLA può essere creato dal personale operativo e intesa come un insieme di obiettivi per la disponibilità dei servizi IT all'interno dell'organizzazione. In alternativa, i livelli di prestazioni possono essere impostati dalla gestione e utilizzati come benchmark quando si valutano le prestazioni del personale.
 
 </div>
 
@@ -63,11 +63,11 @@ Se il cliente è interno, potrebbe essere comunque necessario definire i servizi
 
 Gli SLA includono sezioni che definiscono i criteri di livelli minimi di disponibilità, supporto e capacità.
 
-  - **Disponibilità**   definire le ore e i sistemi operativi in cui saranno disponibili i siti e altri servizi Lync. Qualsiasi manutenzione di routine che influisce sulla disponibilità del servizio deve essere definita. Definire fattori esterni che influiscono sul servizio, ad esempio la perdita di connettività Internet.
+  - **Disponibilità**   definire le ore e i sistemi operativi in cui saranno disponibili i siti e gli altri servizi Lync. Qualsiasi manutenzione di routine che influisce sulla disponibilità del servizio deve essere definita. Definire fattori esterni che influiscono sul servizio, ad esempio la perdita di connettività Internet.
 
-  - **Supporto**   definire le ore in cui il supporto per un sistema sarà disponibile. Specificare i metodi per i clienti per contattare il personale di supporto, la modalità di raggruppamento degli incidenti e il tempo di destinazione per rispondere e risolvere l'incidente. Definire la frequenza e il contenuto del feedback per il cliente.
+  - **Supporto**   definire le ore in cui il supporto di un sistema sarà disponibile. Specificare i metodi per i clienti per contattare il personale di supporto, la modalità di raggruppamento degli incidenti e il tempo di destinazione per la risposta e la risoluzione dell'evento. Definire la frequenza e il contenuto dei commenti e suggerimenti per il cliente.
 
-  - **Capacità**   definire la dimensione massima abilitata dei siti Lync e la procedura da eseguire se il limite viene superato. Definire il tempo massimo consentito per eseguire attività standard, ad esempio l'ora in cui recuperare un documento da una raccolta documenti. Definire il numero massimo di utenti per pool Lync e accettare un processo per aumentare la capacità se vengono aggiunti altri utenti.
+  - **Capacità**   definire le dimensioni massime abilitate dei siti di Lync e i passaggi da eseguire se viene superato il limite. Definire il tempo massimo consentito per eseguire attività standard, ad esempio il tempo necessario per recuperare un documento da una raccolta documenti. Definire il numero massimo di utenti per pool Lync e accettare un processo per aumentare la capacità se sono stati aggiunti più utenti.
 
 </div>
 

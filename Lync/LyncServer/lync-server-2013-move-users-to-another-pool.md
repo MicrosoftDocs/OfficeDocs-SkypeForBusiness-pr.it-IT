@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: trasferire gli utenti in un altro pool'
+title: 'Lync Server 2013: spostare gli utenti in un altro pool'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48185879
 ms.date: 02/09/2018
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7dffa2e7651e056d9dc14b1e261134783d0fd193
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 1feda518b1a15ce5b4622659b9e5df45044bcefa
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756740"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42050358"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="move-users-to-another-pool-in-lync-server-2013"></a>Trasferire utenti in un altro pool in Lync Server 2013
+# <a name="move-users-to-another-pool-in-lync-server-2013"></a>Spostare gli utenti in un altro pool in Lync Server 2013
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "41756740"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2018-02-09_
+_**Ultimo argomento modificato:** 2018-02-09_
 
-È possibile usare il pannello di controllo di Lync Server per assegnare gli utenti a un server o un pool specifico.
+È possibile utilizzare il pannello di controllo di Lync Server per assegnare gli utenti a un server o un pool specifico.
 
 <div>
 
 
 > [!TIP]  
-> Lo spostamento di tutti gli utenti esistenti da un pool di origine che utilizza Lync Server 2010 o versioni precedenti in un pool di destinazione di Lync Server 2013 in un ambiente di Active Directory complesso può causare una replica di Active Directory più lenta. Per evitare questo problema, è possibile usare i filtri di ricerca per trasferire gli utenti da pool che esegue Lync Server 2010 o versioni precedenti separatamente oppure è possibile usare Lync Server Management Shell per trasferire gli utenti con i cmdlet. Inoltre, la funzionalità di filtro funziona con gli utenti di Lync Server 2013.
+> Lo spostamento di tutti gli utenti esistenti da un pool di origine che esegue Lync Server 2010 o versione precedente in un pool di destinazione di Lync Server 2013 in un ambiente di Active Directory complesso potrebbe provocare una replica di Active Directory più lenta. Per evitare questo, è possibile utilizzare i filtri di ricerca per spostare gli utenti da pool che eseguono Lync Server 2010 o versioni precedenti separatamente oppure è possibile utilizzare Lync Server Management Shell per spostare gli utenti con i cmdlet. Inoltre, la funzionalità del filtro è compatibile con gli utenti di Lync Server 2013.
 
 
 
@@ -51,23 +51,23 @@ _**Argomento Ultima modifica:** 2018-02-09_
 
 <div>
 
-## <a name="to-move-selected-users-to-a-different-server-or-pool"></a>Per trasferire gli utenti selezionati in un altro server o pool
+## <a name="to-move-selected-users-to-a-different-server-or-pool"></a>Per spostare un gruppo selezionato di utenti in un server o un pool diverso
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **utenti**.
+3.  Nella barra di spostamento sinistra fare clic su **Utenti**.
 
-4.  Nella casella **Cerca utenti** digitare tutto o la prima parte del nome visualizzato, nome, cognome, nome account di Security Accounts Manager (Sam), indirizzo SIP o URI (Uniform Resource Identifier) linea dell'account utente desiderato, quindi fare clic su **trova**.
+4.  Nella casella **Cerca utenti** digitare anche solo la prima parte del nome visualizzato, nome, cognome, nome dell'account Gestione account di protezione, indirizzo SIP o URI (Uniform Resource Identifier (URI) di linea dell'account utente desiderato e quindi fare clic su **Trova**.
 
-5.  Nella tabella selezionare un utente o utenti specifici nell'elenco.
+5.  Nell'elenco della tabella selezionare uno o più utenti specifici.
 
-6.  Nel menu **azione** fare clic su **Trasferisci utenti selezionati in pool**.
+6.  Scegliere **Sposta utenti selezionati nel pool** dal menu **Azione**.
 
-7.  In **Move users**selezionare il pool in cui si vuole trasferire gli utenti nel **pool di registrar di destinazione**.
+7.  In **Sposta utenti** selezionare il pool in cui spostare gli utenti in **Pool di registrazione di destinazione**.
 
-8.  Opzionale Se il server o il pool di destinazione non è disponibile, selezionare la casella di controllo **forza** .
+8.  (Facoltativo) Se il server o il pool di destinazione non è disponibile, selezionare la casella di controllo **Forza**.
     
     <div>
     
@@ -82,21 +82,21 @@ _**Argomento Ultima modifica:** 2018-02-09_
 
 <div>
 
-## <a name="to-move-all-users-from-one-server-or-pool-to-a-different-server-or-pool"></a>Per trasferire tutti gli utenti da un server o da un pool a un altro server o pool
+## <a name="to-move-all-users-from-one-server-or-pool-to-a-different-server-or-pool"></a>Per spostare tutti gli utenti da un server o un pool a un server o un pool diverso
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **utenti**.
+3.  Sulla barra di spostamento sinistra fare clic su **Utenti**.
 
-4.  Nel menu **azione** fare clic su **Trasferisci tutti gli utenti in pool**.
+4.  Scegliere **Sposta tutti gli utenti nel pool** dal menu **Azione**.
 
-5.  In **Move users**selezionare il pool che contiene gli account utente che si desidera trasferire nel **pool di registrazione di origine**.
+5.  In **Sposta utenti** selezionare in **Pool di registrazione di origine** il pool contenente gli account utente che si desidera spostare.
 
-6.  Nel **pool di registrar di destinazione**selezionare il pool a cui si vuole trasferire gli utenti.
+6.  In **Pool di registrazione di destinazione** selezionare il pool in cui spostare gli utenti.
 
-7.  Opzionale Se il server o il pool di destinazione non è disponibile, selezionare la casella di controllo **forza** .
+7.  (Facoltativo) Se il server o pool di destinazione non è disponibile, selezionare la casella di controllo **Forza**.
     
     <div>
     
@@ -111,34 +111,34 @@ _**Argomento Ultima modifica:** 2018-02-09_
 
 <div>
 
-## <a name="to-move-users-from-one-pool-to-a-different-pool-by-using-a-filter"></a>Per trasferire gli utenti da un pool a un altro tramite un filtro
+## <a name="to-move-users-from-one-pool-to-a-different-pool-by-using-a-filter"></a>Per spostare gli utenti da un pool a un altro mediante un filtro
 
-1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer della distribuzione interna.
+1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile usare per avviare il pannello di controllo di Lync Server, vedere [aprire gli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).
 
-3.  Sulla barra di spostamento sinistra fare clic su **utenti**.
+3.  Sulla barra di spostamento sinistra fare clic su **Utenti**.
 
 4.  In **ricerca utente**fare clic su **Cerca**e quindi su **Aggiungi filtro**.
 
-5.  Nel criterio di ricerca selezionare **pool di registrazione**, selezionare **uguale a**, selezionare **FQDN corrente del pool**e quindi fare clic su **trova**.
+5.  Nei criteri di ricerca selezionare **Pool di registrazione**, **Uguale a**, **FQDN pool** e quindi fare clic su **Trova**.
 
-6.  Nel menu **azione** fare clic su **Trasferisci tutti gli utenti in pool**.
+6.  Scegliere **Sposta tutti gli utenti nel pool** dal menu **Azione**.
     
     <div>
     
 
     > [!NOTE]  
-    > Quando si applica un filtro a un set di utenti esistente, l'opzione <STRONG>trasferisce tutti gli utenti al pool</STRONG> si trova nel contesto del sottoinsieme filtrato degli utenti, non di <STRONG><EM>tutti</EM></STRONG> gli utenti possibili.
+    > Quando un filtro viene applicato a un set di utenti esistente, l'opzione <STRONG>Sposta tutti gli utenti nel pool</STRONG> si trova nel contesto del sottoinsieme filtrato di utenti, non di <STRONG><EM>tutti</EM></STRONG> gli utenti possibili.
 
     
     </div>
 
-7.  In **Move users**selezionare il pool che contiene gli account utente che si desidera trasferire nel **pool di registrazione di origine**.
+7.  In **Sposta utenti** selezionare il pool contenente gli account utente da spostare in **Pool di registrazione di origine**.
 
-8.  Nel **pool di registrar di destinazione**selezionare il pool in cui si desidera trasferire gli utenti.
+8.  In **Pool di registrazione di destinazione** selezionare il pool in cui spostare gli utenti.
 
-9.  Opzionale Se il server o il pool di destinazione non è disponibile, selezionare la casella di controllo **forza** .
+9.  (Facoltativo) Se il server o il pool di destinazione non è disponibile, selezionare la casella di controllo **Forza**.
     
     <div>
     
@@ -153,27 +153,27 @@ _**Argomento Ultima modifica:** 2018-02-09_
 
 <div>
 
-## <a name="to-move-users-from-one-pool-to-another-using-windows-powershell-cmdlets"></a>Per trasferire gli utenti da un pool a un altro usando i cmdlet di Windows PowerShell
+## <a name="to-move-users-from-one-pool-to-another-using-windows-powershell-cmdlets"></a>Per spostare gli utenti da un pool a un altro utilizzando i cmdlet di Windows PowerShell
 
-1.  A seconda del modo in cui vengono eseguiti i comandi di Windows PowerShell, ovvero localmente o in remoto, è necessario accedere come membro dei ruoli amministrativi corretti di Lync Server 2013, come indicato di seguito:
+1.  A seconda di come vengono eseguiti i comandi di Windows PowerShell, ovvero localmente o in remoto, è necessario eseguire l'accesso come membri dei ruoli amministrativi di Lync Server 2013 corretti come indicato di seguito:
     
-    1.  Se si esegue i comandi nel computer locale, ad esempio si accede direttamente a un server front-end, accedere al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in [autorizzazioni di configurazione delegate in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
+    1.  Se si eseguono i comandi nel computer locale, ad esempio si esegue l'accesso direttamente a un front end server, eseguire l'accesso al computer in cui è installato Lync Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in [delegate Setup Permissions in Lync server 2013](lync-server-2013-delegate-setup-permissions.md).
     
-    2.  Se si eseguono i comandi in remoto in un altro computer, ad esempio si accede al computer e si eseguono i comandi in remoto in un server front-end Standard Edition: da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator ruolo, accedere a qualsiasi computer della distribuzione interna.
+    2.  Se si eseguono i comandi in remoto in un altro computer (ad esempio, si accede al computer e si eseguono i comandi in remoto in un front end server Standard Edition): da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator ruolo, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Lync Server Management Shell**.
+2.  Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.
 
-3.  Per trasferire singoli utenti, usare il cmdlet Move-CsUser come indicato di seguito:
+3.  Per spostare singoli utenti, utilizzare il cmdlet Move-CsUser come indicato di seguito:
     
         Move-CsUser -Identity "Pilar Ackerman" -Target "pool01.contoso.net"
     
-    Dove l'utente deve spostarsi è l'utente Pilar Ackerman e l'utente verrà spostato dal proprio pool di Home attualmente assegnato al pool pool01.contoso.net
+    Dove l'utente da spostare si chiama Luisa Cazzaniga e verrà spostato dal pool principale assegnato al pool pool01.contoso.net
 
-4.  Per trasferire un numero elevato di utenti, usare i filtri con il cmdlet **Get-CsUser** e passare il set di utenti risultante a **Move-CsUser**:
+4.  Per spostare un numero elevato di utenti, utilizzare i filtri con il cmdlet **Get-CsUser** e passare il set di utenti risultanti a **Move-CsUser**:
     
         Get-CsUser -Filter {RegistrarPool -eq "CurrentPoolFqdn"} | Move-CsUser -Target "TargetPoolFQDN"
     
-    I comandi combinati di **Get-CsUser** e **Move-CsUser** possono risultare in questo:
+    La combinazione dei comandi di **Get-CsUser** e **Move-CsUser** può generare questo risultato:
     
         Get-CsUser -Filter {RegistrarPool -eq "pool02.contoso.net"} | Move-CsUser -Target "pool01.contoso.net"
 
@@ -184,7 +184,7 @@ _**Argomento Ultima modifica:** 2018-02-09_
 ## <a name="see-also"></a>Vedere anche
 
 
-[Modifica delle proprietà dell'account utente in Lync Server 2013](lync-server-2013-modifying-user-account-properties.md)  
+[Modifica delle proprietà degli account utente in Lync Server 2013](lync-server-2013-modifying-user-account-properties.md)  
   
 
 </div>

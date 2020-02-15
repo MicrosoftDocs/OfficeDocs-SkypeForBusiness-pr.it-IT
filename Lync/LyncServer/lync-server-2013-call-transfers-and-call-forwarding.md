@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Trasferimento e inoltro di chiamata'
+title: 'Lync Server 2013: trasferimenti di chiamata e inoltro di chiamata'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 51803962
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 512deaf8af03f112e35443c25e46685c42a2f2e6
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 46b16ad2faac58a5999b803c75d02e01da0da2dd
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41742956"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42044298"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="call-transfers-and-call-forwarding-in-lync-server-2013"></a>Trasferimento e inoltro di chiamata in Lync Server 2013
+# <a name="call-transfers-and-call-forwarding-in-lync-server-2013"></a>Trasferimenti di chiamata e inoltro di chiamata in Lync Server 2013
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "41742956"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-03-09_
+_**Ultimo argomento modificato:** 2013-03-09_
 
-Quando si tratta di un endpoint PSTN, il routing basato sulla posizione analizza la posizione dell'endpoint di Calle e dell'endpoint in cui verrà trasferita o inoltrata la chiamata (ovvero destinazione di trasferimento/inoltro). Il routing basato sulla posizione determina se la chiamata deve essere trasferita o inoltrata a seconda della posizione di entrambi gli endpoint.
+Quando viene coinvolto un endpoint PSTN, il routing in base alla posizione analizza la posizione dell'endpoint di Calle e dell'endpoint in cui verrà trasferita o inoltrata la chiamata (ovvero la destinazione di trasferimento/inoltro). Il routing in base alla posizione determina se la chiamata deve essere trasferita o inoltrata a seconda della posizione di entrambi gli endpoint.
 
-La tabella seguente illustra lo scenario di un utente di Lync in una chiamata con un endpoint PSTN e l'utente di Lync trasferisce la chiamata a un altro utente di Lync. A seconda della posizione del sito di rete dell'endpoint del cessionario, il routing basato sulla posizione influenza il routing del trasferimento delle chiamate o inoltra.
+Nella tabella seguente viene illustrato lo scenario di un utente Lync in una chiamata con un endpoint PSTN e l'utente di Lync trasferisce la chiamata a un altro utente di Lync. A seconda della posizione del sito di rete dell'endpoint del cessionario, il routing in base alla posizione influisce sul routing del trasferimento delle chiamate o su Inoltra.
 
 ### <a name="initiating-call-transfer-or-forward"></a>Avvio del trasferimento delle chiamate o dell'inoltro
 
@@ -52,29 +52,29 @@ La tabella seguente illustra lo scenario di un utente di Lync in una chiamata co
 </colgroup>
 <thead>
 <tr class="header">
-<th>Utente che avvia il trasferimento/inoltro delle chiamate</th>
+<th>Utente che avvia il trasferimento di chiamata/inoltra</th>
 <th>L'endpoint di destinazione si trova nello stesso sito di rete dell'utente che avvia il trasferimento delle chiamate o inoltra</th>
-<th>L'endpoint di destinazione è in un sito di rete diverso come utente che avvia il trasferimento delle chiamate o inoltra</th>
-<th>Endpoint di destinazione in un sito di rete o un sito di rete sconosciuto non abilitato per il routing basato sulla posizione</th>
+<th>L'endpoint di destinazione si trova in un sito di rete diverso come utente che avvia il trasferimento delle chiamate o inoltra</th>
+<th>L'endpoint di destinazione è in sito di rete sconosciuto o sito di rete non abilitato per il routing in base alla posizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Utenti di Lync</p></td>
+<td><p>Utente di Lync</p></td>
 <td><p>Inoltro di chiamata o trasferimento consentito</p></td>
-<td><p>La chiamata inoltra o transfer non è consentita</p></td>
-<td><p>La chiamata inoltra o transfer non è consentita</p></td>
+<td><p>Non è consentito l'inoltro di chiamata o il trasferimento</p></td>
+<td><p>Non è consentito l'inoltro di chiamata o il trasferimento</p></td>
 </tr>
 </tbody>
 </table>
 
   
 
-Ad esempio, un utente di Lync in una chiamata con un endpoint PSTN trasferisce la chiamata a un altro utente di Lync che si trova nello stesso sito di rete. In questo caso, il trasferimento della chiamata è consentito.
+Ad esempio, un utente di Lync in una chiamata con un endpoint PSTN trasferisce la chiamata a un altro utente Lync che si trova nello stesso sito di rete. In questo caso, il trasferimento di chiamata è consentito.
 
-La tabella seguente illustra lo scenario di un utente di Lync in una chiamata con un altro utente di Lync e uno degli utenti trasferisce la chiamata a un endpoint PSTN. A seconda della posizione dell'utente a cui viene trasferita la chiamata, la tabella descrive in che modo il routing basato sulla posizione influenza la chiamata.
+Nella tabella seguente viene illustrato lo scenario di un utente Lync in una chiamata con un altro utente Lync e uno degli utenti trasferisce la chiamata a un endpoint PSTN. A seconda della posizione dell'utente in cui viene trasferita la chiamata, la tabella descrive in che modo il routing basato sulla posizione influenza la chiamata.
 
-### <a name="call-transfer-or-forward-to-pstn-endpoint"></a>Trasferimento delle chiamate o inoltro all'endpoint PSTN
+### <a name="call-transfer-or-forward-to-pstn-endpoint"></a>Trasferimento di chiamata o inoltra all'endpoint PSTN
 
 <table>
 <colgroup>
@@ -85,24 +85,24 @@ La tabella seguente illustra lo scenario di un utente di Lync in una chiamata co
 </colgroup>
 <thead>
 <tr class="header">
-<th>Destinazione dell'endpoint trasferimento/inoltro chiamate</th>
+<th>Destinazione endpoint trasferimento/inoltro di chiamata</th>
 <th>Utenti di Lync nello stesso sito di rete</th>
 <th>Utenti di Lync in siti di rete diversi</th>
-<th>Uno o entrambi gli utenti di Lync in un sito di rete o un sito di rete sconosciuto non è abilitato per il routing basato sulla posizione</th>
+<th>Uno o entrambi gli utenti Lync nel sito di rete o sito di rete sconosciuto non sono abilitati per il routing in base alla posizione</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td><p>Endpoint PSTN</p></td>
-<td><p>Inoltro di chiamata o trasferimento consentito dal criterio di routing vocale del sito dell'utente trasferito</p></td>
-<td><p>Inoltro di chiamata o trasferimento consentito dal criterio di routing vocale del sito dell'utente trasferito</p></td>
-<td><p>Inoltro di chiamata o trasferimento consentito dal criterio vocale dell'utente trasferito solo tramite Trunks non abilitato per il routing basato sulla posizione</p></td>
+<td><p>Chiamata inoltra o trasferimento consentito dal criterio di routing vocale del sito dell'utente trasferito</p></td>
+<td><p>Chiamata inoltra o trasferimento consentito dal criterio di routing vocale del sito dell'utente trasferito</p></td>
+<td><p>Chiamata inoltrata o trasferimento consentita dal criterio vocale dell'utente trasferito solo tramite trunk non abilitato per il routing in base alla posizione</p></td>
 </tr>
 </tbody>
 </table>
 
   
-Ad esempio, un utente di Lync in una chiamata con un altro utente Lync che si trova nello stesso sito di rete trasferisce la chiamata a un endpoint PSTN e il trasferimento delle chiamate è consentita.
+Ad esempio, un utente di Lync in una chiamata con un altro utente Lync che si trova nello stesso sito di rete trasferisce la chiamata a un endpoint PSTN e il trasferimento di chiamata è consentito.
 
 <div>
 

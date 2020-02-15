@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Gestione dell'archiviazione"
+title: "Lync Server 2013: gestione dell'archiviazione"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48184003
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b3bb7ecac5204fc42b44e919dbbab8e9b720acc7
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 16c9b901575e844954b9dd3454c4ecc7c86e7c3b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41738866"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037216"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,13 +35,13 @@ ms.locfileid: "41738866"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-10_
+_**Ultimo argomento modificato:** 2012-10-10_
 
-Quando si distribuisce l'archiviazione per l'organizzazione, è necessario specificare la configurazione iniziale durante la distribuzione. In alcuni casi, tuttavia, può essere necessario modificare la modalità di implementazione del supporto dell'archiviazione per la gestione giornaliera o per soddisfare i nuovi requisiti dell'organizzazione. Ad esempio, potrebbe essere necessario configurare il supporto dell'archiviazione in modo diverso per un sito, un pool o un utente specifico all'interno dell'organizzazione. Per gli utenti residenti in Lync Server 2013, è possibile creare e personalizzare i criteri di archiviazione e le configurazioni. Se si usa l'integrazione di Microsoft Exchange, è anche necessario configurare le impostazioni di Exchange 2013. Questa sezione fornisce informazioni e procedure per consentire di apportare modifiche alla distribuzione di archiviazione.
+Quando si distribuisce Archiviazione per un'organizzazione, si specifica la configurazione iniziale durante la distribuzione. Esistono tuttavia situazioni in cui si desidera cambiare la modalità di implementazione del supporto di archiviazione per la gestione giornaliera o per soddisfare nuovi requisiti aziendali. Può ad esempio essere necessario configurare il supporto di archiviazione in modo diverso per siti, pool o utenti specifici dell'organizzazione. Per gli utenti ospitati in Lync Server 2013, è necessario creare e personalizzare i criteri e le configurazioni di archiviazione. Se si utilizza l'integrazione di Microsoft Exchange, è inoltre necessario configurare le impostazioni di Exchange 2013. In questa sezione vengono riportate le informazioni e le procedure necessarie per apportare modifiche alla distribuzione di Archiviazione.
 
 <div>
 
-## <a name="in-this-section"></a>Contenuto della sezione
+## <a name="in-this-section"></a>Argomenti della sezione
 
   - [Funzionamento dell'archiviazione in Lync Server 2013](lync-server-2013-how-archiving-works.md)
 
@@ -49,7 +49,7 @@ Quando si distribuisce l'archiviazione per l'organizzazione, è necessario speci
 
   - [Gestione delle opzioni di configurazione dell'archiviazione in Lync Server 2013 per l'organizzazione, i siti e i pool](lync-server-2013-managing-archiving-configuration-options-for-your-organization-sites-and-pools.md)
 
-  - [Modifica delle opzioni di archiviazione del database in Lync Server 2013](lync-server-2013-changing-archiving-database-options.md)
+  - [Modifica delle opzioni del database di archiviazione in Lync Server 2013](lync-server-2013-changing-archiving-database-options.md)
 
   - [Esportazione di dati archiviati da Lync Server 2013](lync-server-2013-exporting-archived-data.md)
 

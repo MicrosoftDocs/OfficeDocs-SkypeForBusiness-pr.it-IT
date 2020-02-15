@@ -12,16 +12,16 @@ ms:contentKeyID: 48184176
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 857db525a61f478073d72a011d86ab34eff36d71
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7e05344d7b97d4bcb0c093058b7642ca8d9b8676
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756420"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42046679"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,9 +35,9 @@ ms.locfileid: "41756420"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-09-28_
+_**Ultimo argomento modificato:** 2012-09-28_
 
-La Tabella ClientVersions è una tabella di supporto in cui è archiviato un elenco dei vari tipi di client e versioni che hanno partecipato alle sessioni registrate nel database. Ogni record nella tabella rappresenta una versione client.
+La tabella ClientVersions è una tabella di supporto in cui è archiviato un elenco dei diversi tipi di client e delle versioni che hanno partecipato alle sessioni registrate nel database. Ogni record della tabella rappresenta una versione client.
 
 
 <table>
@@ -60,19 +60,19 @@ La Tabella ClientVersions è una tabella di supporto in cui è archiviato un ele
 <td><p><strong>VersionId</strong></p></td>
 <td><p><strong>int</strong></p></td>
 <td><p>Principale</p></td>
-<td><p>Numero univoco che identifica questo tipo di client e la versione.</p></td>
+<td><p>Numero univoco che identifica il tipo di client e la versione.</p></td>
 </tr>
 <tr class="even">
 <td><p><strong>Versione</strong></p></td>
 <td><p><strong>nvarchar (256)</strong></p></td>
 <td></td>
-<td><p>Nome versione.</p></td>
+<td><p>Nome della versione.</p></td>
 </tr>
 <tr class="odd">
-<td><p><strong>TipoClient</strong></p></td>
+<td><p><strong>ClientType</strong></p></td>
 <td><p>int</p></td>
 <td></td>
-<td><p>Specifica il tipo di client usato nella sessione. Per altre informazioni, vedere la <a href="lync-server-2013-useragentdef-table.md">Tabella UserAgentDef in Lync Server 2013</a> .</p>
+<td><p>Specifica il tipo di client usato nella sessione. Per ulteriori informazioni, vedere la <a href="lync-server-2013-useragentdef-table.md">Tabella UserAgentDef in Lync Server 2013</a> .</p>
 <p>Questo campo è stato introdotto in Microsoft Lync Server 2013.</p></td>
 </tr>
 </tbody>

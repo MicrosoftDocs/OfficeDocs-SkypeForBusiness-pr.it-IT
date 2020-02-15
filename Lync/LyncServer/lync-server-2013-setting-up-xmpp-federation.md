@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Configurazione della federazione di XMPP'
+title: 'Lync Server 2013: configurazione della Federazione XMPP'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,20 +12,20 @@ ms:contentKeyID: 48184270
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fd61aded33d37e4a1f5f58e9050f3cd62794f9b6
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: b6cbe8db6b432f8e837e110875881e86adab9c51
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41732046"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42039264"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="setting-up-xmpp-federation-in-lync-server-2013"></a>Configurazione della federazione di XMPP in Lync Server 2013
+# <a name="setting-up-xmpp-federation-in-lync-server-2013"></a>Configurazione della Federazione XMPP in Lync Server 2013
 
 </div>
 
@@ -35,81 +35,81 @@ ms.locfileid: "41732046"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-12-03_
+_**Ultimo argomento modificato:** 2012-12-03_
 
-Per distribuire il proxy XMPP nell'Edge Server, è necessario configurare l'Edge Server per la Federazione XMPP. A questo scopo, eseguire la procedura seguente.
+Per distribuire il proxy XMPP nel server perimetrale, è necessario configurare il server perimetrale per la federazione XMPP. A tale scopo, eseguire le operazioni seguenti.
 
 <div>
 
-## <a name="setting-up-xmpp-federation"></a>Configurazione della Federazione XMPP
+## <a name="setting-up-xmpp-federation"></a>Configurazione della federazione XMPP
 
-1.  Accedere al computer in cui è installata la distribuzione guidata di Lync Server come membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins.
+1.  Accedere al computer in cui è installata la Distribuzione guidata di Lync Server come membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins.
 
-2.  Nel server front-end aprire la distribuzione guidata di Lync Server. Fare clic su Installa o aggiorna Lync Server System, quindi fare clic su Imposta o Rimuovi componenti di Lync Server. Fare di nuovo clic su Esegui.
+2.  Nel Front End Server aprire la Distribuzione guidata di Lync Server. Fare clic su Installa o aggiorna il sistema Lync Server e quindi su Installazione o rimozione componenti di Lync Server. Fare clic su Riesegui.
 
-3.  In configurazione componenti di Lync Server fare clic su Avanti. La schermata di riepilogo mostrerà le azioni Man mano che vengono eseguite. Dopo aver completato la distribuzione, fare clic su Visualizza log per visualizzare i file di log disponibili. Fare clic su fine per completare la distribuzione.
+3.  In Installazione componenti di Lync Server fare clic su Avanti. Nella schermata di riepilogo sono mostrate le azioni che vengono eseguite. Al termine della distribuzione, fare clic su Visualizza log per visualizzare i file di log disponibili. Fare clic su Fine per completare la distribuzione.
 
-4.  Nell'Edge Server aprire la distribuzione guidata di Lync Server. Fare clic su Installa o aggiorna Lync Server System, quindi fare clic su Imposta o Rimuovi componenti di Lync Server. Fare di nuovo clic su Esegui.
+4.  Nel server perimetrale aprire la Distribuzione guidata di Lync Server. Fare clic su Installa o aggiorna il sistema Lync Server e quindi su Installazione o rimozione componenti di Lync Server. Fare clic su Riesegui.
 
-5.  In configurazione componenti di Lync Server fare clic su Avanti. La schermata di riepilogo mostrerà le azioni Man mano che vengono eseguite. Dopo aver completato la distribuzione, fare clic su Visualizza log per visualizzare i file di log disponibili. Fare clic su fine per completare la distribuzione.
+5.  In Installazione componenti di Lync Server fare clic su Avanti. Nella schermata di riepilogo verranno visualizzate le azioni in esecuzione. Al termine della distribuzione, fare clic su Visualizza log per visualizzare i file di log disponibili. Fare clic su Fine per completare la distribuzione.
 
-6.  Nel server perimetro, nella distribuzione guidata, accanto a passaggio 3: richiedere, installare o assegnare certificati, fare di nuovo clic su Esegui.
+6.  Nel server perimetrale, nella Distribuzione guidata fare clic su Riesegui accanto a Passaggio 3: Richiesta, installazione o assegnazione dei certificati.
     
     <div class=" ">
     
 
     > [!TIP]  
-    > Se si distribuisce il server perimetrale per la prima volta, verrà visualizzato di nuovo Esegui anziché Esegui.
+    > Se si tratta della prima distribuzione del server perimetrale, verrà visualizzato il comando Esegui anziché Riesegui.
 
     
     </div>
 
-7.  Nella pagina attività certificato disponibili fare clic su Crea una nuova richiesta di certificato.
+7.  Nella pagina Attività certificato disponibili fare clic su Crea una nuova richiesta di certificato.
 
-8.  Nella pagina richiesta certificato fare clic su certificato bordo esterno.
+8.  Nella pagina richiesta di certificato fare clic su Certificato perimetro esterno.
 
-9.  Nella pagina richiesta posticipata o immediata selezionare la casella di controllo prepara la richiesta ora, ma inviarla in seguito.
+9.  Nella pagina Richiesta posticipata o immediata selezionare la casella di controllo Prepara la richiesta per l'invio posticipato.
 
-10. Nella pagina file di richiesta certificato digitare il percorso completo e il nome file del file in cui deve essere salvata la richiesta, ad esempio c:\\CERT\_exernal\_Edge. cer.
+10. Nella pagina file richiesta di certificato digitare il percorso completo e il nome del file in cui deve essere salvata la richiesta (ad esempio, c:\\CERT\_esterni\_Edge. cer).
 
-11. Nella pagina specifica modello di certificato alternativo, per usare un modello diverso da quello predefinito del modello webserver, selezionare la casella di controllo Usa il modello di certificato alternativo per l'autorità di certificazione selezionata.
+11. Nella pagina Specifica modello di certificato alternativo selezionare la casella di controllo Utilizza modello di certificato alternativo per l'autorità di certificazione selezionata, per utilizzare un modello diverso dal modello Web Server predefinito.
 
-12. Nella pagina impostazioni di sicurezza e nome eseguire le operazioni seguenti:
+12. Nella pagina Impostazioni nome e sicurezza eseguire le operazioni seguenti:
     
-    1.  In nome descrittivo digitare un nome visualizzato per il certificato
+    1.  In Nome descrittivo digitare un nome visualizzato per il certificato.
     
-    2.  In bit length specificare la lunghezza in bit (in genere, il valore predefinito di 2048)
+    2.  In Lunghezza bit specificare la lunghezza in bit (di solito, l'impostazione predefinita 2048).
     
-    3.  Verificare che la casella di controllo contrassegna la chiave privata del certificato come esportabile sia selezionata
+    3.  Verificare che la casella di controllo Contrassegna come esportabile la chiave di certificato privata sia selezionata.
 
-13. Nella pagina informazioni organizzazione digitare il nome dell'organizzazione e dell'unità organizzativa, ad esempio divisione o reparto.
+13. Nella pagina Informazioni sull'organizzazione digitare il nome per l'organizzazione e l'unità organizzativa, ad esempio una divisione o un reparto.
 
-14. Nella pagina informazioni geografiche specificare le informazioni sulla posizione
+14. Nella pagina Dati geografici specificare le informazioni sulla località.
 
-15. Nella pagina nome oggetto/nomi oggetto alternativo vengono visualizzate le informazioni che verranno inserite automaticamente dalla procedura guidata. Se sono necessari altri nomi alternativi per l'oggetto, è necessario specificarli nei due passaggi successivi
+15. Nella pagina Nome soggetto/Nomi soggetto alternativi verranno visualizzate le informazioni compilate automaticamente dalla procedura guidata. Se sono necessari ulteriori nomi alternativi soggetto, specificarli nei prossimi due passaggi.
 
-16. Nell'impostazione del dominio SIP nella pagina nome alternativo oggetto (SANs) selezionare la casella di controllo Domain per aggiungere un SIP. \<SipDomain\> voce nell'elenco nomi alternativi oggetto.
+16. Nella pagina Impostazione dominio SIP su nomi soggetto alternativi (San) selezionare la casella di controllo Domain per aggiungere un SIP. \<voce\> SipDomain all'elenco dei nomi alternativi del soggetto.
 
-17. Nella pagina Configura altri nomi alternativi oggetto specificare eventuali altri nomi alternativi per gli argomenti necessari
+17. Nella pagina Configura nomi alternativi soggetto aggiuntivi specificare eventuali nomi alternativi soggetto aggiuntivi richiesti.
     
     <div class=" ">
     
 
     > [!TIP]  
-    > Se il proxy XMPP è installato, per impostazione predefinita il nome di dominio, ad esempio contoso.com, viene popolato nelle voci SAN. Se sono necessarie altre voci, aggiungerle in questo passaggio.
+    > Se è installato il proxy XMPP, per impostazione predefinita il nome di dominio (ad esempio contoso.com) viene compilato nelle voci SAN. Se sono necessarie ulteriori voci, aggiungerle in questo passaggio.
 
     
     </div>
 
-18. Nella pagina Riepilogo richieste verificare le informazioni sul certificato da usare per generare la richiesta.
+18. Nella pagina Riepilogo richiesta esaminare le informazioni sul certificato da utilizzare per generare la richiesta.
 
-19. Dopo che i comandi hanno terminato l'uso, è possibile visualizzare il log oppure fare clic su Avanti per continuare.
+19. Al termine dell'esecuzione dei comandi è possibile fare clic su Visualizza log o su Avanti per continuare.
 
-20. Nella pagina file di richiesta di certificato è possibile visualizzare il file della richiesta di firma del certificato (CSR) generato facendo clic su Visualizza o Esci dalla creazione guidata certificato facendo clic su fine.
+20. Nella pagina File richiesta di certificato è possibile visualizzare il file di richiesta di firma del certificato (CSR) generato facendo clic su Visualizza oppure è possibile fare clic su Fine per uscire dalla Configurazione guidata certificati.
 
-21. Copiare il file di richiesta e inviarlo all'autorità di certificazione pubblica.
+21. Copiare il file di richiesta e inviarlo all'Autorità di certificazione (CA) pubblica.
 
-22. Dopo la ricezione, l'importazione e l'assegnazione del certificato pubblico, è necessario arrestare e riavviare i servizi Edge Server. A tale scopo, digitare la console di gestione di Lync Server:
+22. Dopo aver ricevuto, importato e assegnato il certificato pubblico, è necessario arrestare e riavviare i servizi del server perimetrale. A tale scopo, digitare quanto segue nella console di gestione di Lync Server:
     
        ```PowerShell
         Stop-CsWindowsService
@@ -119,18 +119,18 @@ Per distribuire il proxy XMPP nell'Edge Server, è necessario configurare l'Edge
         Start-CsWindowsService
        ```
 
-23. Per configurare il DNS per la Federazione XMPP, è possibile aggiungere il record SRV seguente al\_DNS esterno: XMPP-server. \_TCP. \<nome\> di dominio il record SRV verrà risolto nell'FQDN di Access Edge del server Edge, con un valore di porta 5269. Inoltre, configuri un record host "A" (ad esempio xmpp.contoso.com) che punta all'indirizzo IP di Access Edge Server.
+23. Per configurare DNS per la Federazione XMPP, è necessario aggiungere il record SRV seguente al DNS\_esterno: XMPP-server. \_TCP. \<nome\> di dominio il record SRV verrà risolto nell'FQDN del server perimetrale di Access Edge, con un valore di porta pari a 5269. È inoltre necessario configurare un record host 'A' (ad esempio, xmpp.contoso.com) che punta all'indirizzo IP del server Access Edge.
     
     <div class=" ">
     
 
     > [!IMPORTANT]  
-    > Se si hanno pool di bordi in più siti, è consigliabile aggiungere più record SRV per la Federazione XMPP. Aggiungere un record SRV per ogni pool di Edge nell'organizzazione e assegnare a ognuno di questi record SRV una priorità diversa. Quando tutti i pool di bordi sono in esecuzione, le richieste XMPP verranno gestite dal pool di Edge con la prima priorità, ma se tale pool di Edge scende, non dovrai aggiungere un nuovo record SRV per recuperare le funzionalità federative XMPP.
+    > Se esistono pool di server perimetrali in più siti, è consigliabile aggiungere più record SRV per la federazione XMPP. Aggiungere un record SRV per ogni pool di server perimetrali nell'organizzazione e assegnare una diversa priorità a ognuno di questi record SRV. Quando tutti i pool di server perimetrali sono in esecuzione, le richieste XMPP verranno tutte gestite dal pool di server perimetrali prioritario, ma se tale pool di server perimetrali diventa inattivo sarà necessario aggiungere un nuovo record SRV per ripristinare la funzionalità di federazione XMPP.
 
     
     </div>
 
-24. Configurare un nuovo criterio di accesso esterno per abilitare tutti gli utenti aprendo Lync Server Management Shell sul front-end e digitando:
+24. Configurare nuovi criteri di accesso esterno per abilitare tutti gli utenti. A tale scopo, aprire Lync Server Management Shell nel Front End Server e digitare:
     
        ```PowerShell
         New-CsExternalAccessPolicy -Identity <name of policy to create.  If site scope, prepend with 'site:'> -EnableFederationAcces $true -EnablePublicCloudAccess $true
@@ -154,7 +154,7 @@ Per distribuire il proxy XMPP nell'Edge Server, è necessario configurare l'Edge
         Set-CsExternalAccessPolicy -Identity FedPic -EnableXmppAccess $true
        ```
 
-25. Nell'Edge Server in cui è distribuito il proxy XMPP aprire un prompt dei comandi o un'interfaccia della riga di comando™ di Windows PowerShell e digitare quanto segue:
+25. Nel server perimetrale in cui è distribuito il proxy XMPP, aprire un prompt dei comandi o un'interfaccia della riga di comando di Windows PowerShell™ e digitare quanto segue:
     
        ```PowerShell
         Netstat -ano | findstr 5269
@@ -164,52 +164,52 @@ Per distribuire il proxy XMPP nell'Edge Server, è necessario configurare l'Edge
         Netstat -ano | findstr 23456
        ```
     
-    Il comando **netstat-ano** è un comando di statistiche di rete, i parametri **-richiesta ano** che netstat Visualizza tutte le connessioni e le porte in ascolto, l'indirizzo e le porte vengono visualizzati in forma numerica e l'ID processo proprietario è associato a ogni connessione. Il carattere **|** definisce una pipe per il comando successivo, **findstr**o trova stringa. Il numero 5269 e 23456 passato a findstr come parametro indica a findstr di cercare l'output di netstat per le stringhe 5269 e 23456. Se XMPP è configurato correttamente, il risultato dei comandi deve comportare connessioni in ascolto e stabilite, sia nelle interfacce esterne (porta 5269) che in quelle interne (porta 23456) del server perimetrale.
+    Il comando **netstat –ano** è un comando per le statistiche di rete, i parametri **–ano** richiedono che il comando netstat visualizzi tutte le connessioni e le porte di attesa, che l'indirizzo e le porte vengano visualizzati in forma numerica e che l'ID del processo proprietario venga associato a ogni connessione. Il carattere **|** definisce una pipe al comando successivo, **findstr**o trova stringa. Il numero 5269 e 23456 passato a findstr come parametro indica a findstr di eseguire la ricerca nell'output di netstat per le stringhe 5269 e 23456. Se XMPP è configurato correttamente, il risultato dei comandi dovrebbe generare connessioni di attesa e stabilite, sia nelle interfacce esterne (porta 5269) sia in quelle interne (porta 23456) del server perimetrale.
     
-    Se i comandi non restituiscono porte stabilite o in ascolto in 5269 e 23456, eseguire le operazioni seguenti:
+    Se i comandi non restituiscono porte attivate o in attesa per 5269 e 23456, controllare quanto segue:
 
 </div>
 
 <div>
 
-## <a name="troubleshooting-xmpp-federation"></a>Risoluzione dei problemi relativi alla Federazione XMPP
+## <a name="troubleshooting-xmpp-federation"></a>Risoluzione dei problemi relativi alla federazione XMPP
 
-1.  Per determinare se il proxy XMPP è in uso, eseguire le operazioni seguenti:
+1.  Per stabilire se il proxy XMPP è in esecuzione, eseguire le operazioni seguenti:
 
-2.  Accedere all'Edge Server che sta usando il servizio proxy XMPP come membro del gruppo dell'amministratore locale.
+2.  Accedere al server perimetrale che esegue il servizio proxy XMPP con un account membro del gruppo degli amministratori locali.
 
-3.  Fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **strumenti di amministrazione**e quindi **Servizi**
+3.  Fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Strumenti di amministrazione** e quindi **Servizi**.
 
-4.  In servizi individuare il proxy del gateway di traduzione XMPP di Lync Server. Il servizio deve essere nello stato **Started** . Se non è stata avviata, fare clic sull'icona **Start** sulla barra degli strumenti. L'icona viene visualizzata come freccia verde e rivolta verso destra.
+4.  In Servizi individuare il servizio Lync Server XMPP Translating Gateway Proxy. Questo servizio dovrebbe essere in stato **Avviato**. In caso contrario, fare clic sull'icona **Avvia** sulla barra degli strumenti. L'icona ha la forma di una freccia verde rivolta a destra.
 
-5.  Verificare che il servizio sia stato modificato in **iniziato**. Se è stata avviata correttamente, chiudere i **Servizi** e continuare.
+5.  Verificare che lo stato del servizio sia diventato **Avviato**. Se l'avvio è stato completato correttamente, chiudere **Servizi** e continuare.
     
-    Se il servizio non è stato avviato correttamente, da strumenti di amministrazione aprire il Visualizzatore eventi e fare riferimento agli errori e agli avvisi presenti nella parte **Lync Server** in **registri applicazioni e servizi**.
+    Se il servizio non è stato avviato, da Strumenti di amministrazione aprire Visualizzatore eventi e controllare gli errori e gli avvisi nella parte **Lync Server** in **Registri applicazioni e servizi**.
 
-6.  Una volta che il servizio **gateway di traduzione XMPP di Lync Server** è in uso, ripetere il controllo dei comandi netstat usati in precedenza. Se non si vedono sessioni consolidate o in ascolto, verificare e verificare che la **Route federativo XMPP** sia configurata correttamente in Generatore di topologie
+6.  Quando il sevizio **Lync Server XMPP Translating Gateway** è in esecuzione, ricontrollare i comandi netstat utilizzati in precedenza. Se non si vedono sessioni consolidate o in attesa, controllare e verificare che la **Route di federazione XMPP** sia configurata correttamente in Generatore di topologie
 
-7.  Accedere al computer in cui è installato Generatore di topologia come membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins.
+7.  Accedere al computer in cui è installato Generatore di topologie come membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins.
 
-8.  Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, **Microsoft Lync Server 2013**e quindi fare clic su **Generatore di topologia di Lync Server**.
+8.  Avviare Generatore di topologie: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Generatore di topologie**.
 
-9.  In Generatore di topologie selezionare il sito per la route della Federazione XMPP e la revisione per verificare che l' **assegnazione della route Federation del sito** per la **Federazione XMPP** indichi il server perimetrale o il pool di Edge come assegnazione della route Federation XMPP selezionata.
+9.  In Generatore di topologie selezionare il sito per la route di federazione XMPP e la revisione per confermare che l' **assegnazione della route di Federazione del sito** per la **Federazione XMPP** indichi il server perimetrale o il pool di Edge come assegnazione della route di federazione XMPP selezionata.
     
-    Se l'assegnazione della route non è corretta o non è impostata, fare clic con il pulsante destro del mouse sul sito, scegliere **modifica proprietà**. Selezionare la casella di controllo Federazione XMPP e quindi selezionare il server Edge o il pool di Edge corretto.
+    Se l'assegnazione della route non è corretta o non è impostata, fare clic con il pulsante destro del mouse sul sito e scegliere **Modifica proprietà**. Selezionare la casella di controllo Federazione XMPP e quindi selezionare il server perimetrale o il pool di Edge corretti.
 
-10. Pubblicare la topologia. Per informazioni dettagliate, vedere [pubblicare la topologia in Lync Server 2013](lync-server-2013-publish-your-topology.md)
+10. Pubblicare la topologia. Per ulteriori informazioni, vedere [pubblicare la topologia in Lync Server 2013](lync-server-2013-publish-your-topology.md)
     
     <div class=" ">
     
 
     > [!TIP]  
-    > Sebbene non sia richiesto e in genere non necessario, è possibile che sia necessario riavviare gli Edge Server
+    > Sebbene non sia richiesto e in genere non necessario, è possibile che sia necessario riavviare i server perimetrali
 
     
     </div>
 
-11. Usando il processo netstat usato in precedenza, verificare che il server perimetrale sia ora in ascolto o abbia stabilito sessioni sulla porta 5269 e la porta 23456.
+11. Se si utilizza il processo netstat utilizzato in precedenza, verificare che il server perimetrale sia in attesa o che abbia stabilito sessioni sulla porta 5269 e sulla porta 23456.
 
-12. Se non si vedono ancora le sessioni previste, controllare il Visualizzatore eventi per eventuali cause di contributo per il problema di comunicazione.
+12. Se ancora non vengono visualizzate le sessioni previste, controllare nel Visualizzatore eventi per individuare le possibili cause del problema di comunicazione.
 
 </div>
 
@@ -218,10 +218,10 @@ Per distribuire il proxy XMPP nell'Edge Server, è necessario configurare l'Edge
 ## <a name="see-also"></a>Vedere anche
 
 
-[Esempio di configurazione XMPP in Lync Server 2013 - federazione di XMPP con Google Talk](lync-server-2013-example-xmpp-configuration-–-xmpp-federation-with-google-talk.md)  
+[Esempio di configurazione XMPP in Lync Server 2013 – Federazione XMPP con Google Talk](lync-server-2013-example-xmpp-configuration-–-xmpp-federation-with-google-talk.md)  
 
 
-[Gestire i partner federati XMPP per l'organizzazione in Lync Server 2013](lync-server-2013-manage-xmpp-federated-partners-for-your-organization.md)  
+[Gestire i partner federati XMPP in Lync Server 2013](lync-server-2013-manage-xmpp-federated-partners-for-your-organization.md)  
   
 
 </div>

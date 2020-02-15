@@ -12,16 +12,16 @@ ms:contentKeyID: 48184198
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f5f10ba311ce5d626348e4b1837f73768cc2c4ac
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 68087115e303cbe964c0b3f8ae52318074ce4382
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41729876"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42037246"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,11 +35,11 @@ ms.locfileid: "41729876"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-06-06_
+_**Ultimo argomento modificato:** 2012-06-06_
 
-Il provider di servizi E9-1-1 instrada le chiamate di emergenza provenienti da Lync Server al corretto PSAP (Public Safety Answering Point) in base alle informazioni sulla posizione contenute nella chiamata.
+Il provider di servizi E9-1-1 instrada le chiamate di emergenza provenienti da Lync Server al punto di risposta di sicurezza pubblico corretto (PSAP) in base alle informazioni sulla posizione contenute all'interno della chiamata.
 
-Per supportare E9-1-1 come parte di una distribuzione di Lync Server, è necessario ottenere il servizio di routing E9-1-1 da un provider di servizi E9-1-1 di Lync Open Interoperability. Scegliere il provider più adatto ai requisiti dell'organizzazione.
+Per supportare E9-1-1 nell'ambito di una distribuzione di Lync Server, è necessario ottenere il servizio di routing E9-1-1 da un provider di servizi E9-1-1 qualificato di Lync Open Interoperability Program. Scegliere il provider più adatto ai requisiti specifici dell'organizzazione.
 
 </div>
 

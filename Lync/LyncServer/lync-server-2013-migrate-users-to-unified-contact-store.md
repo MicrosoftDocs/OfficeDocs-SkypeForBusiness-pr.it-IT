@@ -1,5 +1,5 @@
 ---
-title: "Lync Server 2013: Eseguire la migrazione degli utenti nell'archivio contatti unificato"
+title: "Lync Server 2013: eseguire la migrazione degli utenti nell'archivio contatti unificato"
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 48183600
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5a57ea93af90176009fff43ed4dcca9f1880a658
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6d170fa183e045203398725a7b7ec4bdd4c38203
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41766047"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42039323"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,31 +35,31 @@ ms.locfileid: "41766047"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2012-10-15_
+_**Ultimo argomento modificato:** 2012-10-15_
 
-I contatti di un utente vengono automaticamente migrati nel server di Exchange 2013 quando l'utente:
+I contatti di un utente vengono migrati automaticamente al server Exchange 2013 quando l'utente:
 
-  - È stato assegnato un criterio servizi utente con UcsAllowed impostato su true.
+  - All'utente sono stati assegnati servizi utente per cui UcsAllowed è impostato su True.
 
-  - È stato effettuato il provisioning con una cassetta postale di Exchange 2013 e ha eseguito l'accesso alla cassetta postale almeno una volta.
+  - È stato effettuato il provisioning con una cassetta postale di Exchange 2013 e ha eseguito l'accesso almeno una volta alla cassetta postale.
 
-  - Accede utilizzando un client RTF di Lync 2013.
+  - Esegue l'accesso utilizzando un rich client Lync 2013.
 
-Se l'utente esegue l'accesso con un client Lync 2010 o versioni precedenti oppure se l'utente non è connesso a un server di Exchange 2013, il criterio servizi utente viene ignorato e i contatti dell'utente restano in Lync Server.
+Se l'utente esegue l'accesso con un client Lync 2010 o versioni precedenti o se l'utente non è connesso a un server Exchange 2013, i criteri di servizi utente vengono ignorati e i contatti dell'utente restano in Lync Server.
 
-Puoi determinare se i contatti di un utente sono stati migrati usando uno dei metodi seguenti:
+È possibile stabilire se i contatti di un utente sono stati migrati usando uno dei metodi seguenti:
 
-  - Selezionare la chiave del registro di sistema seguente nel computer client:
+  - Verificare la chiave del Registro di sistema seguente nel computer client:
     
-    HKEY\_software\_\\dell'\\utente corrente\\Microsoft\\Office\\15,0\\\<UCS SIP\>\\dell'URL di Lync
+    HKEY\_software\_\\utente\\corrente Microsoft\\Office\\15,0\\Lync\\\<SIP URL\>\\UCS
     
-    Se i contatti dell'utente sono archiviati in Exchange 2013, questa chiave contiene un valore di InUCSMode con il valore 2165.
+    Se i contatti dell'utente sono archiviati in Exchange 2013, questa chiave contiene un valore di InUCSMode con un valore pari a 2165.
 
-  - Eseguire il cmdlet **Test-CsUnifiedContactStore** . Nella riga di comando di Lync Server Management Shell digitare:
+  - Eseguire il cmdlet **Test-CsUnifiedContactStore**. Nella riga di comando di Lync Server Management Shell digitare quanto segue:
     
         Test-CsUnifiedContactStore -UserSipAddress "sip:kenmyer@litwareinc.com" -TargetFqdn "atl-cs-001.litwareinc.com"
     
-    Se **Test-CsUnifiedContactStore** ha esito positivo, i contatti dell'utente sono stati migrati in archivio contatti unificato.
+    Se **Test-CsUnifiedContactStore** ha esito positivo, i contatti dell'utente sono stati migrati nell'archivio contatti unificato.
 
 </div>
 

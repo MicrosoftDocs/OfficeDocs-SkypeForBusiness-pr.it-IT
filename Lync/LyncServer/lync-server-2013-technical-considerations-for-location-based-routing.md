@@ -1,5 +1,5 @@
 ---
-title: 'Lync Server 2013: Considerazioni tecniche per il routing in base alla posizione'
+title: 'Lync Server 2013: considerazioni tecniche per il routing in base alla posizione'
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -12,16 +12,16 @@ ms:contentKeyID: 51803936
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 978590484cbb6bd3c23fac26422c186847662e49
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: fcdebdccd0584d31b27120709212be674e8d3c2a
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41764046"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049268"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/en-us/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
@@ -35,15 +35,15 @@ ms.locfileid: "41764046"
 
 <span> </span>
 
-_**Argomento Ultima modifica:** 2013-03-09_
+_**Ultimo argomento modificato:** 2013-03-09_
 
-Quando si pianifica il routing basato sulla posizione, è consigliabile considerare l'impatto sugli scenari seguenti.
+Durante la pianificazione del routing in base alla posizione, è opportuno considerare l'impatto sui seguenti scenari.
 
 <div>
 
 ## <a name="disaster-recovery"></a>Ripristino di emergenza
 
-Durante un failover dal pool principale a un pool di backup e quando si ripristinano le normali operazioni nel pool principale, il routing basato sulla posizione rimane imposto in qualsiasi momento durante una procedura di emergenza e ripristino.
+Durante un failover dal pool primario a un pool di backup e durante il ripristino di normali operazioni al pool primario, il routing basato sulla posizione rimane applicato sempre durante una procedura di ripristino e di emergenza.
 
 </div>
 
@@ -51,7 +51,7 @@ Durante un failover dal pool principale a un pool di backup e quando si ripristi
 
 ## <a name="survivable-branch-appliance"></a>Survivable Branch Appliance
 
-La configurazione del routing basato sulla posizione ha un impatto sulla pianificazione della distribuzione dei gateway associati agli elettrodomestici Survivable Branch. Il gateway associato alla SBA deve trovarsi nello stesso sito di rete dell'appliance Survivable Branch; in caso contrario, gli utenti residenti nell'appliance Survivable Branch non saranno autorizzati a inserire chiamate in uscita se è configurato il routing basato sulla posizione. Quando la connessione WAN tra l'appliance Survivable Branch e il sito centrale è in calo, le restrizioni di routing basate sulla posizione restano applicate.
+La configurazione del routing in base alla posizione ha un impatto sulla pianificazione del percorso in cui vengono distribuiti i gateway associati ai Survivable Branch Appliance. Il gateway associato all'ASB deve trovarsi nello stesso sito di rete del Survivable Branch Appliance. in caso contrario, gli utenti ospitati nel Survivable Branch Appliance non saranno autorizzati a inserire le chiamate in uscita se è configurato il routing basato sulla posizione. Quando la connessione WAN tra il Survivable Branch Appliance e il sito centrale è inattiva, le restrizioni di routing basate sul percorso rimangono applicate.
 
 </div>
 
