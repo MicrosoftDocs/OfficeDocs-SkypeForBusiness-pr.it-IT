@@ -139,7 +139,7 @@ Nella tabella seguente sono riportati i filtri che è possibile utilizzare con i
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -201,7 +201,7 @@ Nella tabella seguente vengono riportate le informazioni fornite nel rapporto re
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

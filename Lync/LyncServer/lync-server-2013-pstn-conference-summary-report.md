@@ -90,7 +90,7 @@ Nella tabella seguente sono elencati i filtri applicabili al Rapporto riepilogat
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -148,7 +148,7 @@ La tabella seguente elenca le informazioni disponibili nel Rapporto riepilogativ
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

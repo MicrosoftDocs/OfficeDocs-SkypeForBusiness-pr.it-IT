@@ -117,7 +117,7 @@ I filtri consentono di ottenere un set di dati più specifico o di visualizzare 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Descrizione</th>
 </tr>
 </thead>

@@ -120,7 +120,7 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -195,7 +195,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -238,7 +238,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -281,7 +281,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -324,7 +324,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -367,7 +367,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel rapporto distri
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -410,7 +410,7 @@ Nella tabella seguente vengono elencate le informazioni fornite nel Rapporto dis
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -452,7 +452,7 @@ Nella tabella seguente vengono elencate le informazioni fornite nel Rapporto dis
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -495,7 +495,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

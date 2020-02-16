@@ -68,7 +68,7 @@ Nella tabella che segue sono elencati i filtri applicabili al Rapporto percorsi.
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -141,7 +141,7 @@ Nella tabella che segue sono elencate le informazioni fornite nel Rapporto perco
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

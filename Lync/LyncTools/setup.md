@@ -1,5 +1,5 @@
 ---
-title: Installazione
+title: Configurazione
 ms.reviewer: ''
 ms.author: kenwith
 author: kenwith
@@ -25,7 +25,7 @@ ms.locfileid: "42038258"
 
 <div data-asp="http://msdn2.microsoft.com/asp">
 
-# <a name="setup"></a>Installazione
+# <a name="setup"></a>Configurazione
 
 </div>
 

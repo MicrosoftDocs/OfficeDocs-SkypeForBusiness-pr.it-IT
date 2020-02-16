@@ -196,7 +196,7 @@ Nella tabella seguente viene illustrata la configurazione trunk di quattro trunk
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>EnableLocationRestriction</th>
 <th>NetworkSiteID</th>
 </tr>

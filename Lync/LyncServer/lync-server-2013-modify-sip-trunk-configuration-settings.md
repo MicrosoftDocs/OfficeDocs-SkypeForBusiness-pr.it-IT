@@ -65,7 +65,7 @@ Quando si modificano le impostazioni di configurazione del trunk SIP utilizzando
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Nome</p></td>
+<td><p>Name</p></td>
 <td><p>Identità</p></td>
 <td><p>Identificatore univoco della raccolta. È una proprietà di sola lettura; non è possibile modificare l'identitià di una raccolta di impostazioni di configurazione per il trunk.</p></td>
 </tr>

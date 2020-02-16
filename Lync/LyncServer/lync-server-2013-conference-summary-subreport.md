@@ -54,7 +54,7 @@ I filtri consentono di restituire un set di dati più appropriato, nonché visua
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -105,7 +105,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel sottoreport rie
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
