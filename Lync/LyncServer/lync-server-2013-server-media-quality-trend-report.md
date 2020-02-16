@@ -76,7 +76,7 @@ I filtri consentono di restituire un insieme di dati più circoscritto o di visu
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -176,7 +176,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel Rapporto te
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
