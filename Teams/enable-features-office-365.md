@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5eb6fa4a4b8aabcc84f70d6ce33c89fe0d84df98
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 87c78839c0c6998464ed362dc8a3c2e4798a2321
+ms.sourcegitcommit: 561b9bab7d6f5a621436bc85ea28ea14657e7868
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41834956"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42035238"
 ---
 # <a name="manage-microsoft-teams-settings-for-your-organization"></a>Gestire le impostazioni di Microsoft Teams per l'organizzazione
 
@@ -60,6 +60,10 @@ Nelle **Impostazioni di Teams** è possibile configurare le funzionalità per i 
 #### <a name="notifications-and-feeds"></a>Notifiche e feed
 
 Qui è possibile controllare se i feed suggeriti vengono visualizzati nel feed attività dell'utente in Teams. Per altre informazioni sul feed attività, vedere [Esplorare il feed Attività in Teams](https://support.office.com/article/explore-the-activity-feed-in-teams-91c635a1-644a-4c60-9c98-233db3e13a56).
+
+#### <a name="tagging"></a>Aggiunta di tag
+
+I tag consentono agli utenti di comunicare con un sottoinsieme di persone in un team. I tag possono essere aggiunti a uno o più membri del team. Dopo l'aggiunta di un tag, questo può essere usato all'interno di @menzioni da qualsiasi persona del team in un post del canale per comunicare solo con le persone a cui è assegnato il tag. Usare queste impostazioni per controllare chi può aggiungere tag e il modo in cui i tag vengono usati nell'organizzazione. Per altre informazioni, vedere [Gestire i tag in Teams](manage-tags.md).
 
 #### <a name="email-integration"></a>Integrazione di e-mail
 
@@ -109,7 +113,7 @@ La modalità di coesistenza scelta determina l'instradamento  delle chiamate e d
 
 #### <a name="app-preferences"></a>Preferenze app
 
-Qui è possibile scegliere l'app che gli utenti useranno per partecipare alle riunioni di Skype for Business (Skype for Business o [App Riunioni Skype](https://support.office.com/it-IT/article/What-is-Skype-Meetings-App-Skype-for-Business-Web-App-1FF3D412-718A-4982-8FF2-A4992608CDB5)). Questa impostazione non dipende dall'impostazione della modalità di coesistenza.
+Qui è possibile scegliere l'app che gli utenti useranno per partecipare alle riunioni di Skype for Business (Skype for Business o [App Riunioni Skype](https://support.office.com/article/What-is-Skype-Meetings-App-Skype-for-Business-Web-App-1FF3D412-718A-4982-8FF2-A4992608CDB5)). Questa impostazione non dipende dall'impostazione della modalità di coesistenza.
 
 
 #### <a name="network-planner"></a>Network Planner
@@ -121,7 +125,7 @@ Network Planner consente di determinare e organizzare i requisiti di rete per la
 
 ## <a name="how-can-i-tell-which-features-are-available"></a>Come si fa a determinare quali funzionalità sono disponibili?
 
-Per informazioni sulle nuove funzionalità di Teams, vedere la [Roadmap di Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap?rtc=1&filters=Microsoft%20Teams). Per altre informazioni sulle funzionalità nuove e imminenti, vedere la pagina [Novità](https://support.office.com/en-us/article/what-s-new-in-microsoft-teams-d7092a6d-c896-424c-b362-a472d5f105de?ui=en-US&rs=en-US&ad=US) di Teams e il [blog di Microsoft Teams nella Tech Community](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/What-s-new-in-Teams-Microsoft-Ignite-Edition/ba-p/252531). 
+Per informazioni sulle nuove funzionalità di Teams, vedere la [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?rtc=1&filters=Microsoft%20Teams). Per altre informazioni sulle funzionalità nuove e imminenti, vedere la pagina [Novità](https://support.office.com/article/what-s-new-in-microsoft-teams-d7092a6d-c896-424c-b362-a472d5f105de?ui=en-US&rs=en-US&ad=US) di Teams e il [blog di Microsoft Teams nella Tech Community](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/What-s-new-in-Teams-Microsoft-Ignite-Edition/ba-p/252531). 
 
 ## <a name="more-information"></a>Altre informazioni
 
