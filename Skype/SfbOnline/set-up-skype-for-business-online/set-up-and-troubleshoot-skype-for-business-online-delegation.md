@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: Questo articolo spiega come configurare e risolvere i problemi di delega di Skype for business online. In questo articolo vengono fornite indicazioni per suggerimenti per la configurazione, procedure consigliate e procedure per la risoluzione dei problemi.
-ms.openlocfilehash: fac2b68deec94825d57fd06b436d00feaa924a5c
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 6774fe36760e6a9c53808f33f7a842d5460e0f4c
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41706481"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42010799"
 ---
 # <a name="set-up-and-troubleshoot-skype-for-business-online-delegation"></a>Configurare le deleghe e risolvere i problemi relativi alle deleghe in Skype for Business online
 
@@ -140,7 +140,7 @@ Se il programma di installazione ha esito positivo, il delegato deve vedere l' *
   
 - La creazione di un gruppo di sicurezza e l'aggiunta delle autorizzazioni di delega per il gruppo di sicurezza non sono supportate.
     
-- MAPI non è disponibile. Vedere [errore "MAPI non disponibile" nel client di Skype for Business 2016](https://support.microsoft.com/en-us/help/3147130).
+- MAPI non è disponibile. Vedere [errore "MAPI non disponibile" nel client di Skype for Business 2016](https://support.microsoft.com/help/3147130).
     
 - La cassetta postale di Exchange Online non è accessibile tramite il client Skype for business. In questo caso, Esegui il [test di connettività di Outlook](https://testconnectivity.microsoft.com/) per verificare che venga superato.
     

@@ -23,12 +23,12 @@ ms.custom:
 - ms.lync.lac.UsersGeneralOptions
 - ms.lync.lac.UsersLyncToPhoneMoreInfo
 description: 'Informazioni su come modificare le impostazioni di Skype for business per singoli utenti, ad esempio: conferenze audio e video, registrazione di chiamate e riunioni. '
-ms.openlocfilehash: d6054db4bfdd8b161dca427237a10d70ba558fcb
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+ms.openlocfilehash: 756de9829194139f39c7618e0c8bbd74f3418264
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41769689"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42010889"
 ---
 # <a name="admins-configure-skype-for-business-settings-for-individual-users"></a>Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti
 
@@ -43,7 +43,7 @@ Per consentire (o bloccare) tutti gli utenti dell'azienda di comunicare con pers
 ## <a name="configure-general-settings-for-one-user"></a>Configurare le impostazioni generali per un utente
 <a name="__toc325019204"> </a>
 
-Per eseguire questa procedura, è necessario disporre [delle autorizzazioni di amministratore](https://support.office.com/en-us/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) .
+Per eseguire questa procedura, è necessario disporre [delle autorizzazioni di amministratore](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) .
 
 ![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
   
@@ -67,7 +67,7 @@ Per eseguire questa procedura, è necessario disporre [delle autorizzazioni di a
 |:-----|:-----|
 |Audio e video HD  <br/> |Consentire a questa persona di registrare riunioni audio, riunioni audio e video o non consentire loro di programmare riunioni (nessuna).  <br/> |
 |Registrare conversazioni e riunioni  <br/> |Scegliere ciò che questa persona può registrare.  <br/> Questa opzione non è disponibile con Skype for Business Basic.  <br/> |
-|Per la conformità, disattivare le funzionalità non archiviate  <br/> | Scegliere questa opzione se si è legalmente tenuti a conservare le informazioni archiviate elettronicamente. <br/>  Se si seleziona questa opzione, vengono disattivate le funzionalità non acquisite quando si dispone di un [blocco sul posto](https://technet.microsoft.com/en-us/library/ff637980%28v=exchg.150%29.aspx) nell'interfaccia di amministrazione di Exchange. Vengono disattivate le caratteristiche seguenti: <br/>  Trasferimento di file tramite messaggistica istantanea <br/>  Pagine condivise di OneNote <br/>  Annotazioni di PowerPoint <br/> |
+|Per la conformità, disattivare le funzionalità non archiviate  <br/> | Scegliere questa opzione se si è legalmente tenuti a conservare le informazioni archiviate elettronicamente. <br/>  Se si seleziona questa opzione, vengono disattivate le funzionalità non acquisite quando si dispone di un [blocco sul posto](https://technet.microsoft.com/library/ff637980%28v=exchg.150%29.aspx) nell'interfaccia di amministrazione di Exchange. Vengono disattivate le caratteristiche seguenti: <br/>  Trasferimento di file tramite messaggistica istantanea <br/>  Pagine condivise di OneNote <br/>  Annotazioni di PowerPoint <br/> |
    
 Per configurare queste impostazioni in blocco, usare PowerShell. Vedere [configurare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
   

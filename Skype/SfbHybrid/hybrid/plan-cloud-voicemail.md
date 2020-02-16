@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: In questo articolo vengono illustrati i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione del servizio Microsoft Cloud Voicemail. Per informazioni sulla configurazione del messaggio vocale cloud, vedere Configuring cloud Voicemail.
-ms.openlocfilehash: 11b6704a532a3e522792c2234d199e891799c2ac
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 82d9473e35b5c10fd2c50b783a89df64aed62cbe
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765697"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42006021"
 ---
 # <a name="plan-cloud-voicemail-service-for-on-premises-users"></a>Pianificare il servizio di segreteria cloud per gli utenti locali
 
@@ -46,7 +46,7 @@ Con il messaggio vocale cloud, le attività di amministrazione sono notevolmente
 - Non è necessario configurare il ruolo di messaggistica unificata di Exchange.
 - Le attività di installazione per la segreteria telefonica cloud sono più semplici.
 - Gli aggiornamenti alla funzionalità della segreteria telefonica vengono recapitati direttamente nel cloud, per consentire agli utenti di accedere sempre alle funzionalità più recenti e agli aggiornamenti con meno dipendenza dagli aggiornamenti cumulativi (CUs).
-- Si dispone dello stesso set di controlli per le cassette postali locali e di Exchange Online. Per ulteriori informazioni su questi controlli, vedere [configurare la segreteria telefonica del sistema telefonico](https://support.office.com/en-us/article/Set-up-Phone-System-voicemail-Admin-help-9c590873-b014-4df3-9e27-1bb97322a79d?ui=en-US&rs=en-US&ad=US).
+- Si dispone dello stesso set di controlli per le cassette postali locali e di Exchange Online. Per ulteriori informazioni su questi controlli, vedere [configurare la segreteria telefonica del sistema telefonico](https://support.office.com/article/Set-up-Phone-System-voicemail-Admin-help-9c590873-b014-4df3-9e27-1bb97322a79d?ui=en-US&rs=en-US&ad=US).
 
 Nel diagramma seguente viene illustrata la segreteria telefonica cloud in una distribuzione ibrida:
 

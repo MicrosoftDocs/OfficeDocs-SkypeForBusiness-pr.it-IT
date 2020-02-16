@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Istruzioni per la configurazione di Azure AD Connect in un ambiente ibrido.
-ms.openlocfilehash: 3060ef443fd2ee57157c2590441c5fe04b1d8739
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 7ae6fb7d3df6d955437a51224637264033bfa662
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726936"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41982991"
 ---
 # <a name="configure-azure-ad-connect-for-teams-and-skype-for-business"></a>Configurare Azure AD Connect per i team e Skype for business
  
@@ -34,12 +34,12 @@ Le organizzazioni che dispongono di Skype for Business Server (o Lync Server) in
 
 ## <a name="background-information"></a>Informazioni complementari
 
-Azure Active Directory Connect mantiene la sincronizzazione continuativa di Active Directory locale con Office 365.  La directory locale rimane l'origine autorevole dell'identità e le modifiche apportate dall'ambiente locale vengono sincronizzate in Azure AD. Per ulteriori informazioni, vedere [sincronizzazione di Azure ad Connect](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-whatis).  Anche se non si sta spostando tutti gli utenti da locale al cloud, tutti gli utenti che utilizzano Team, Skype for business locale o Skype for business online devono essere sincronizzati da locale ad Azure ad per garantire la comunicazione tra gli utenti locali e online. *Gli utenti dell'organizzazione saranno rappresentati sia nelle directory locali che in quelle online.*
+Azure Active Directory Connect mantiene la sincronizzazione continuativa di Active Directory locale con Office 365.  La directory locale rimane l'origine autorevole dell'identità e le modifiche apportate dall'ambiente locale vengono sincronizzate in Azure AD. Per ulteriori informazioni, vedere [sincronizzazione di Azure ad Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis).  Anche se non si sta spostando tutti gli utenti da locale al cloud, tutti gli utenti che utilizzano Team, Skype for business locale o Skype for business online devono essere sincronizzati da locale ad Azure ad per garantire la comunicazione tra gli utenti locali e online. *Gli utenti dell'organizzazione saranno rappresentati sia nelle directory locali che in quelle online.*
 
 
 ## <a name="configuring-azure-ad-when-you-have-skype-for-business-server"></a>Configurazione di Azure AD quando si dispone di Skype for Business Server 
 
-Se si dispone di una foresta di Active Directory locale o di più foreste, è possibile utilizzare Azure AD Connect in una vasta gamma di topologie supportate, come descritto in [topologie di Azure ad Connect](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-topologies).  Dal punto di vista di Skype for Business Server, esistono tre varianti principali: 
+Se si dispone di una foresta di Active Directory locale o di più foreste, è possibile utilizzare Azure AD Connect in una vasta gamma di topologie supportate, come descritto in [topologie di Azure ad Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies).  Dal punto di vista di Skype for Business Server, esistono tre varianti principali: 
 
 1. Una singola foresta, che contiene identità utente autorevoli e ospita Skype for Business Server. 
 
@@ -66,7 +66,7 @@ Questo scenario è spesso definito come topologia di foresta di risorse. Le iden
 
 ### <a name="multiple-skype-for-business-server-deployments-in-multiple-forests"></a>Più distribuzioni di Skype for Business Server in più foreste 
 
-In questo scenario, sono presenti più foreste, ognuna delle quali contiene Skype for Business Server, e un singolo tenant di Office 365.  Ogni foresta che contiene Skype for Business Server può essere sincronizzata in Azure AD per il tenant che utilizza AAD Connect. Al massimo, solo una foresta può essere configurata per l'ambiente ibrido di Skype for business in un determinato momento. Prima di abilitare l'ambiente ibrido in una foresta, tutti i domini SIP di tutte le altre foreste devono essere disattivati utilizzando [Disable-csonlineSipDomain](https://docs.microsoft.com/en-us/powershell/module/skype/disable-csonlinesipdomain). Per ulteriori informazioni su come consolidare un ambiente di questo tipo in Office 365, vedere [cloud Consolidation for teams e Skype for business](cloud-consolidation.md).
+In questo scenario, sono presenti più foreste, ognuna delle quali contiene Skype for Business Server, e un singolo tenant di Office 365.  Ogni foresta che contiene Skype for Business Server può essere sincronizzata in Azure AD per il tenant che utilizza AAD Connect. Al massimo, solo una foresta può essere configurata per l'ambiente ibrido di Skype for business in un determinato momento. Prima di abilitare l'ambiente ibrido in una foresta, tutti i domini SIP di tutte le altre foreste devono essere disattivati utilizzando [Disable-csonlineSipDomain](https://docs.microsoft.com/powershell/module/skype/disable-csonlinesipdomain). Per ulteriori informazioni su come consolidare un ambiente di questo tipo in Office 365, vedere [cloud Consolidation for teams e Skype for business](cloud-consolidation.md).
 
 ## <a name="general-requirements"></a>Requisiti generali 
 
@@ -74,7 +74,7 @@ Sia i team che i servizi Skype for business online richiedono che gli attributi 
 
  Se le identità degli utenti esistono tra più foreste, Azure AD Connect deve eseguire l'Unione. Dopo aver seguito queste linee guida, Azure AD Connect sincronizza automaticamente gli attributi corretti, purché non vengano modificati i connettori o le regole di sincronizzazione in Azure AD Connect. 
   
-Se non si esegue la sincronizzazione da tutte le foreste che contengono identità utente e la distribuzione di Skype for Business Server, è necessario verificare che gli attributi Identity e Skype for business siano stati correttamente inseriti in Azure AD per qualsiasi utente che utilizza teams o Skype per le aziende (sia in locale che online)--che probabilmente richiederà una sincronizzazione della directory locale. Per ulteriori informazioni, vedere [sincronizzazione di Azure ad Connect: attributi sincronizzati con Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized).
+Se non si esegue la sincronizzazione da tutte le foreste che contengono identità utente e la distribuzione di Skype for Business Server, è necessario verificare che gli attributi Identity e Skype for business siano stati correttamente inseriti in Azure AD per qualsiasi utente che utilizza teams o Skype per le aziende (sia in locale che online)--che probabilmente richiederà una sincronizzazione della directory locale. Per ulteriori informazioni, vedere [sincronizzazione di Azure ad Connect: attributi sincronizzati con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized).
 
 In questi scenari, è responsabilità del cliente garantire la corretta configurazione per la compilazione degli attributi in Azure AD. Tenere presente quanto segue: 
 
@@ -84,10 +84,10 @@ In questi scenari, è responsabilità del cliente garantire la corretta configur
 
 ## <a name="related-information"></a>Informazioni correlate
 
-- [Che cos'è l'identità ibrida](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-hybrid-identity?toc=%2Fen-us%2Fazure%2Factive-directory%2Fhybrid%2FTOC.json&bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json)
+- [Che cos'è l'identità ibrida](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-hybrid-identity?toc=%2Fen-us%2Fazure%2Factive-directory%2Fhybrid%2FTOC.json&bc=%2Fen-us%2Fazure%2Fbread%2Ftoc.json)
 
-- [Sincronizzazione di Azure AD Connect: comprendere e personalizzare la sincronizzazione](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sync-whatis)
+- [Sincronizzazione di Azure AD Connect: comprendere e personalizzare la sincronizzazione](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-sync-whatis)
 
-- [Topologie per Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/plan-connect-topologies)
+- [Topologie per Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-topologies)
 
-- [Sincronizzazione di Azure AD Connect: attributi sincronizzati con Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized)
+- [Sincronizzazione di Azure AD Connect: attributi sincronizzati con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized)

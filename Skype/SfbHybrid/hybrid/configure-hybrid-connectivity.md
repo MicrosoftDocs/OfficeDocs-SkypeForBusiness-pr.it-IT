@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Istruzioni per l'implementazione della connettività ibrida tra Skype for Business Server e Skype for business online.
-ms.openlocfilehash: 0f7494388508aca689a1b019babf2f14a06d3f65
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 54029297cb17da79d706f62ecdf9109747f9ce20
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726806"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008618"
 ---
 # <a name="configure-hybrid-connectivity-between-skype-for-business-server-and-office-365"></a>Configurare la connettività ibrida tra Skype for Business Server e Office 365
 
@@ -34,8 +34,8 @@ Nella tabella seguente sono elencate le attività necessarie per configurare la 
   
 |Passaggio|Descrizione|
 |:-----|:-----|
-|Creare un account tenant per Office 365   <br/> |Informazioni su Office 365 in [office 365](https://go.microsoft.com/fwlink/p/?LinkId=254980).  <br/> Per assicurarsi che l'ambiente sia pronto per Office 365, vedere i [requisiti di sistema](https://products.office.com/en-US/office-system-requirements).  <br/> Per informazioni dettagliate sulla configurazione di Office 365, vedere [Guida introduttiva a office 365](https://go.microsoft.com/fwlink/p/?LinkId=254982).  <br/> |
-|Aggiungere il dominio al tenant di Office 365 e verificare la proprietà  <br/> | È necessario aggiungere il dominio al tenant di Office 365, quindi seguire la procedura per convalidare il dominio con Office 365. In questo modo si conferma che si è il proprietario del dominio. <br/> Per aggiungere il dominio al tenant di Office 365, attenersi alla procedura descritta in [aggiungere un dominio a Office 365](https://support.office.com/en-us/article/add-a-domain-to-office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611?ui=en-US&rs=en-US&ad=US).  <br/> |
+|Creare un account tenant per Office 365   <br/> |Informazioni su Office 365 in [office 365](https://go.microsoft.com/fwlink/p/?LinkId=254980).  <br/> Per assicurarsi che l'ambiente sia pronto per Office 365, vedere i [requisiti di sistema](https://products.office.com/office-system-requirements).  <br/> Per informazioni dettagliate sulla configurazione di Office 365, vedere [Guida introduttiva a office 365](https://go.microsoft.com/fwlink/p/?LinkId=254982).  <br/> |
+|Aggiungere il dominio al tenant di Office 365 e verificare la proprietà  <br/> | È necessario aggiungere il dominio al tenant di Office 365, quindi seguire la procedura per convalidare il dominio con Office 365. In questo modo si conferma che si è il proprietario del dominio. <br/> Per aggiungere il dominio al tenant di Office 365, attenersi alla procedura descritta in [aggiungere un dominio a Office 365](https://support.office.com/article/add-a-domain-to-office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611?ui=en-US&rs=en-US&ad=US).  <br/> |
 |Configurare la sincronizzazione di Active Directory  <br/> |La sincronizzazione di Active Directory mantiene continuamente sincronizzata la propria Active Directory locale con Office 365. In questo modo è possibile creare versioni sincronizzate di ogni account utente e gruppo.  <br/> <br> **Importante:** È necessario sincronizzare gli account di Active Directory per tutti gli utenti di Skype for business nell'organizzazione tra le distribuzioni locali e online, anche se gli utenti non vengono spostati in un team o in Skype for business online. Se non si sincronizzano tutti gli utenti, la comunicazione tra gli utenti locali e quelli online nell'organizzazione potrebbe non funzionare come previsto. Per ulteriori informazioni, vedere [Configure Azure ad Connect for Hybrid environments](configure-azure-ad-connect.md).         |
 | Configurare l'ambiente ibrido di Skype for business | Questa procedura prevede tre passaggi di base: <br><br> 1. configurare l'ambiente locale per la Federazione con Office 365. <br> 2. configurare l'ambiente locale in modo che consideri attendibile Office 365 e che sia abilitato lo spazio degli indirizzi SIP condiviso con Office 365.<br> 3. abilitare lo spazio degli indirizzi SIP condiviso nel tenant di Office 365. <br><br> Inoltre, se si dispone di Exchange locale, è possibile che si desideri configurare OAuth tra gli ambienti Exchange locale e Skype for business online. <br> <br>Per ulteriori informazioni, vedere [Configure Skype for business Hybrid](configure-federation-with-skype-for-business-online.md).
 |Spostare gli utenti pilota  <br/> |Dopo aver completato la procedura per preparare e configurare l'ambiente per i team o Skype for business online, è possibile avviare lo spostamento degli utenti pilota nel tenant online di Office 365. Per ulteriori informazioni, vedere [spostare gli utenti da locale a Skype for business online](move-users-from-on-premises-to-skype-for-business-online.md) e [spostare gli utenti da locale a teams](move-users-from-on-premises-to-Teams.md).  <br/> |

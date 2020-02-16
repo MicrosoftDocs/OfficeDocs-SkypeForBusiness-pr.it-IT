@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Licensing
 description: Il piano 1 di Skype for business online è stato ritirato. Tuttavia, se si ha un abbonamento corrente a Skype for business online Plan 1, questa modifica non verrà applicata immediatamente. Quando si è pronti per il passaggio a un nuovo piano, ora o durante il rinnovo, è possibile scegliere tra tre opzioni.
-ms.openlocfilehash: d0d553946ddbde84ede48b715332e66aea75dac4
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 1b6642ccea185136c21e6064a8af9f271491c1f4
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41692661"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029087"
 ---
 # <a name="skype-for-business-online-plan-1-retirement"></a>Ritiro di Skype for Business online (Piano 1) 
 
@@ -38,7 +38,7 @@ Quando si è pronti per passare a un nuovo piano, ora o durante il rinnovo, è p
 
 ## <a name="switching-to-office-365-f1"></a>Passaggio a Office 365 F1
 
-Questa opzione è ideale se vuoi sfruttare le funzionalità aggiuntive che Office 365 F1 ha da offrire. Per saperne di più e ottenere informazioni sui prezzi, vedere [Office 365 F1](https://products.office.com/en-us/business/office-365-f1).
+Questa opzione è ideale se vuoi sfruttare le funzionalità aggiuntive che Office 365 F1 ha da offrire. Per saperne di più e ottenere informazioni sui prezzi, vedere [Office 365 F1](https://products.office.com/business/office-365-f1).
 
 
 ### <a name="how-to-switch"></a>Come cambiare 

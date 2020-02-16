@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - SMB
 description: Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, è necessario abilitarlo. A questo scopo, devi sapere come usare Windows PowerShell. Se non si conosce Windows PowerShell, è consigliabile assumere un partner Microsoft per eseguire questo passaggio.
-ms.openlocfilehash: 6ad681972bb62fa1790290a90d4281fe4ccd8571
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 1b06f327fa59ec8e90c9b014db8a252ca7b40579
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41692631"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42010609"
 ---
 # <a name="enable-skype-meeting-broadcast"></a>Abilitare Skype Meeting Broadcast
 
@@ -86,7 +86,7 @@ Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, 
     > [!TIP]
     > Dopo aver apportato la modifica, il portale di Skype meeting broadcast può richiedere fino a un'ora. 
   
-10. Gli utenti possono ora tenere riunioni broadcast con altri utenti nella tua azienda. Per iniziare, posizionare il puntatore su [Skype meeting broadcast?](https://support.office.com/en-us/article/c472c76b-21f1-4e4b-ab58-329a6c33757d)
+10. Gli utenti possono ora tenere riunioni broadcast con altri utenti nella tua azienda. Per iniziare, posizionare il puntatore su [Skype meeting broadcast?](https://support.office.com/article/c472c76b-21f1-4e4b-ab58-329a6c33757d)
     
 ## <a name="configure-your-network-to-broadcast-meetings-with-external-attendees"></a>Configurare la rete per la trasmissione di riunioni con partecipanti esterni
 

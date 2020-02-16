@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Il servizio di migrazione delle riunioni (MMS) è un servizio che viene eseguito in background e aggiorna automaticamente le riunioni di Skype for business e Microsoft teams per gli utenti. MMS è progettato per eliminare la necessità per gli utenti di eseguire lo strumento di migrazione delle riunioni per aggiornare le riunioni di Skype for business e Microsoft teams.
-ms.openlocfilehash: 805bc7703024d4c6143ee909e715fa36deaa8e3c
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 5ce6f2ab5954ba0c076e9a4db432da3e93a75db1
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41680353"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42010979"
 ---
 # <a name="using-the-meeting-migration-service-mms"></a>Uso del servizio di migrazione delle riunioni (MMS)
 
@@ -47,7 +47,7 @@ Per impostazione predefinita, MMS viene attivato automaticamente in ognuno di qu
 - La cassetta postale dell'utente è ospitata in Exchange locale.
 - L'utente viene migrato dal cloud a Skype for Business Server locale.
 
-In questi casi, gli utenti finali possono usare lo [strumento di migrazione delle riunioni](https://www.microsoft.com/en-us/download/details.aspx?id=51659) per eseguire la migrazione delle proprie riunioni.
+In questi casi, gli utenti finali possono usare lo [strumento di migrazione delle riunioni](https://www.microsoft.com/download/details.aspx?id=51659) per eseguire la migrazione delle proprie riunioni.
 
 ## <a name="how-mms-works"></a>Funzionamento di MMS
 

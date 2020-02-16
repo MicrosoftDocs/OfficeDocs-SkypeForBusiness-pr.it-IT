@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: 'Scopri le cause più comuni per Skype di errori di accesso Business online e il lavoro e risolvere questi problemi. '
-ms.openlocfilehash: 3315dec928ec019dc8f970171d2eb44693cdf909
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 6014c8af8a3fd39ad3a79d80f7abfbddeaa4340b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41692771"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42010759"
 ---
 # <a name="troubleshooting-skype-for-business-online-sign-in-errors-for-administrators"></a>Risoluzione dei problemi di accesso a Skype for Business online (amministratori)
 
@@ -195,7 +195,7 @@ Per risolvere il problema, eseguire le operazioni seguenti:
 
 1. Aggiornare l'attributo **msRTCSIP-UserEnabled** per tutti gli utenti interessati, impostandolo su **TRUE**.
 
-2. Eseguire nuovamente lo Strumento di sincronizzazione della directory dei Microsoft Online Services. Per informazioni dettagliate, vedere [AIntegrate locale directory con Azure Active Directory](https://technet.microsoft.com/it-IT/library/hh967642.aspx).
+2. Eseguire nuovamente lo Strumento di sincronizzazione della directory dei Microsoft Online Services. Per informazioni dettagliate, vedere [AIntegrate locale directory con Azure Active Directory](https://technet.microsoft.com/library/hh967642.aspx).
 
 Per risolvere i problemi di accesso a Skype for Business online problemi, è bene iniziare eliminando le cause più comuni dei problemi di accesso. Se necessario, è possibile seguire una procedura di risoluzione specifica in base al tipo di errore. Se non è ancora possibile accedere, raccogliere nuove informazioni e chiedere ulteriore assistenza.
 ## <a name="use-the-microsoft-support-troubleshooting-guide"></a>Usare la guida alla risoluzione dei problemi del supporto tecnico Microsoft

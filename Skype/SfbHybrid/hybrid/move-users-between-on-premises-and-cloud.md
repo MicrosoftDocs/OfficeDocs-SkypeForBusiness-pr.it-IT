@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: "Riepilogo: in una distribuzione locale di Skype for Business Server abilitato per l'ibrido, è possibile spostare gli utenti tra l'ambiente locale e il cloud (se Microsoft teams o Skype for business online).."
-ms.openlocfilehash: 0f0a29ab88f17c80227e6dc6968be85457dc799e
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 721352e1aa13cce8a9c03aa71c73f11e8c0d2452
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726766"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "42008608"
 ---
 # <a name="move-users-between-on-premises-and-cloud"></a>Spostare gli utenti tra l'ambiente locale e il cloud
 
@@ -100,4 +100,4 @@ I criteri (ad esempio, per controllare il comportamento di messaggistica, riunio
 
 [Pianificare il routing diretto](/microsoftteams/direct-routing-plan)
 
-[Move-CsUser](https://docs.microsoft.com/en-us/powershell/module/skype/move-csuser)
+[Move-CsUser](https://docs.microsoft.com/powershell/module/skype/move-csuser)

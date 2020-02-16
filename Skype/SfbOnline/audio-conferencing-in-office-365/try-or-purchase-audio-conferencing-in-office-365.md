@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Vedi come provare o acquistare le licenze di Audioconferenza (conferenze PSTN) per Office 365 per configurare le conferenze telefoniche a cui gli utenti possono connettersi. '
-ms.openlocfilehash: 5a2c797b1e31dd98d09ee8773396f599f070c3c2
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: d2ae202cbed7c59876ea04c9d3a5760d6495898d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41680333"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42010959"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-office-365-for-skype-for-business-online"></a>Provare o acquistare Audioconferenza in Office 365 per Skype for Business Online
 
@@ -38,7 +38,7 @@ Sometimes people in your organization will need to use a phone to call in to a m
 
 You only need to set up audio conferencing for people who plan to schedule or lead meetings. Meeting attendees who call in to the meeting don't need any licenses assigned to them and don't need other setup.
 
-Per informazioni sui prezzi, consulta [Prezzi per Audioconferenza](https://products.office.com/en-us/skype-for-business/audio-conferencing#Requirements).
+Per informazioni sui prezzi, consulta [Prezzi per Audioconferenza](https://products.office.com/skype-for-business/audio-conferencing#Requirements).
 
 ## <a name="step-1-buy-and-assign-audio-conferencing-licenses"></a>Passaggio 1: acquistare e assegnare licenze per i servizi di audioconferenza
 

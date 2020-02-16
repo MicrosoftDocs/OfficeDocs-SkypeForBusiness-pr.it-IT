@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: Nelle sezioni seguenti vengono fornite indicazioni su come configurare un ambiente con più foreste in un modello di foresta di risorse e utenti per fornire le funzionalità di Skype for business in uno scenario ibrido.
-ms.openlocfilehash: f018699040fc202cbe827a2b8b05bd1f4371e190
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 33945b245009a221d709e13d587f435aa4c054d8
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726946"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41983041"
 ---
 # <a name="deploy-a-resource-forest-topology"></a>Distribuzione di una topologia a foresta di risorse
  
@@ -48,7 +48,7 @@ Gli utenti di Skype for business ospitati in locale possono disporre di Exchange
   
 ## <a name="configure-forest-trusts"></a>Configurare le relazioni di trust tra foreste
 
-In una topologia a foresta di risorse, le foreste di risorse che ospitano Skype for Business Server devono considerare attendibile ogni foresta di account che contiene gli account degli utenti che lo potranno accedere. Se si dispone di più foreste di utenti, per abilitare l'autenticazione tra foreste è importante che il routing dei suffissi del nome sia abilitato per ognuno di questi trust tra foreste. Per istruzioni, vedere [Managing Forest Trusts](https://technet.microsoft.com/en-us/library/cc772440.aspx). Se Exchange Server è stato distribuito in un'altra foresta e fornisce funzionalità per gli utenti di Skype for business, la foresta che ospita Exchange deve considerare attendibile la foresta che ospita Skype for Business Server. Ad esempio, se Exchange è stato distribuito nella foresta account, significa che in questa configurazione è necessaria una relazione di trust bidirezionale tra gli account e le foreste di Skype for business.
+In una topologia a foresta di risorse, le foreste di risorse che ospitano Skype for Business Server devono considerare attendibile ogni foresta di account che contiene gli account degli utenti che lo potranno accedere. Se si dispone di più foreste di utenti, per abilitare l'autenticazione tra foreste è importante che il routing dei suffissi del nome sia abilitato per ognuno di questi trust tra foreste. Per istruzioni, vedere [Managing Forest Trusts](https://technet.microsoft.com/library/cc772440.aspx). Se Exchange Server è stato distribuito in un'altra foresta e fornisce funzionalità per gli utenti di Skype for business, la foresta che ospita Exchange deve considerare attendibile la foresta che ospita Skype for Business Server. Ad esempio, se Exchange è stato distribuito nella foresta account, significa che in questa configurazione è necessaria una relazione di trust bidirezionale tra gli account e le foreste di Skype for business.
   
 ## <a name="synchronize-accounts-into-the-forest-hosting-skype-for-business"></a>Sincronizzare gli account nella foresta che ospita Skype for business
 
@@ -140,6 +140,6 @@ Seguire le procedure consigliate per la configurazione dell'ambiente ibrido di S
   
 ## <a name="configure-hybrid-connectivity-for-exchange-server"></a>Configurare la connettività ibrida per Exchange Server
 
-Se necessario, seguire le procedure consigliate per la configurazione dell'ambiente ibrido di Exchange. Per ulteriori informazioni, vedere [distribuzioni ibride di Exchange Server](https://docs.microsoft.com/en-us/exchange/exchange-hybrid). 
+Se necessario, seguire le procedure consigliate per la configurazione dell'ambiente ibrido di Exchange. Per ulteriori informazioni, vedere [distribuzioni ibride di Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid). 
   
 

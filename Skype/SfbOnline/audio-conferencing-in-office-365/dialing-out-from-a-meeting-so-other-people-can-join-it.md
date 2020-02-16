@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Informazioni su requisiti e sul modo in cui gli organizzatori delle riunioni possono effettua una chiamata a utenti che utilizzano Skype for Business.
-ms.openlocfilehash: 392c868763c071e534daf8488baf751269792773
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: e69fa266b9e10091f0936baee45c140ba198661f
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41695691"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41982821"
 ---
 # <a name="dialing-out-from-a-skype-for-business-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione Skype for business in modo che gli altri utenti possano accedervi
 
@@ -64,4 +64,4 @@ Dial-out is only available to some countries/regions. Per l'elenco completo, ved
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Installare Skype for Business](https://support.office.com/en-us/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
+[Installare Skype for Business](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)

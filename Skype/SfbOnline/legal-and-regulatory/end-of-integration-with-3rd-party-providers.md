@@ -20,12 +20,12 @@ ms.custom:
 - Legal
 hideEdit: true
 description: Il 31 luglio 2021, il programma fine del ciclo di vita si concluderà per l'integrazione di Skype for business con i provider di servizi di audioconferenza di terze parti (ACP di terze parti).
-ms.openlocfilehash: b9bd1640d615babab29a073aeeee2b1beb92fc02
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 7ea6068d8715bd0df9e80041d70b8baf37abaf1b
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41706691"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "41985031"
 ---
 # <a name="end-of-life-program-for-the-integration-of-skype-for-business-with-third-party-audio-conferencing-providers"></a>Programma per la fine del ciclo di vita per l'integrazione di Skype for business con provider di servizi di audioconferenza di terze parti 
 
@@ -47,7 +47,7 @@ Come parte dell'annuncio dell'inizio del programma di fine del ciclo di vita, le
 
 Per prepararsi a questa modifica, invitiamo le organizzazioni interessate a comunicare agli utenti abilitati questo aggiornamento pianificato prima del 31 luglio 2021. 
 
-Dopo il 31 luglio 2021, gli utenti possono continuare a usare Skype for business senza interruzioni delle riunioni online. Tuttavia, le organizzazioni dovranno abilitare gli utenti per i servizi di audioconferenza forniti da Microsoft se richiedono servizi di audioconferenza con accesso esterno con Skype for business o Microsoft teams. Per altre informazioni su servizi [di audioconferenza Microsoft, vedere audioconferenza](https://products.office.com/en-us/skype-for-business/audio-conferencing). 
+Dopo il 31 luglio 2021, gli utenti possono continuare a usare Skype for business senza interruzioni delle riunioni online. Tuttavia, le organizzazioni dovranno abilitare gli utenti per i servizi di audioconferenza forniti da Microsoft se richiedono servizi di audioconferenza con accesso esterno con Skype for business o Microsoft teams. Per altre informazioni su servizi [di audioconferenza Microsoft, vedere audioconferenza](https://products.office.com/skype-for-business/audio-conferencing). 
 
 A seconda dello stato finale desiderato di un'organizzazione, è possibile seguire tre percorsi:
 

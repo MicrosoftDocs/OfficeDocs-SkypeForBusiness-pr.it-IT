@@ -20,12 +20,12 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 description: Scaricare, installare e usare Windows PowerShell 5.1 per creare una sessione remota di PowerShell che si connette a Skype for Business online.
-ms.openlocfilehash: 227023d5c86b99a66ecdbdabd3b2973d0383a534
-ms.sourcegitcommit: ac922addbc1422b5c41273a2e03196efb2ed7770
+ms.openlocfilehash: 64d1ed1b3e3031f5186a09289ab6e1d9088840cf
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41831153"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42029097"
 ---
 # <a name="download-and-install-windows-powershell-51"></a>Scaricare e installare Windows PowerShell 5.1
 
@@ -49,7 +49,7 @@ Per determinare la versione di Microsoft PowerShell in uso, eseguire la procedur
     4.0
     </pre>
 
-    Se il numero di versione indicato è 5.1, l'applicazione in esecuzione è Windows PowerShell 5.1. Se il numero di versione indicato non è 5.1, è necessario installare Windows PowerShell 5.1. È possibile scaricare Windows Management Framework 5.1, che include Windows PowerShell 5.1, dall'[Area download Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=54616).
+    Se il numero di versione indicato è 5.1, l'applicazione in esecuzione è Windows PowerShell 5.1. Se il numero di versione indicato non è 5.1, è necessario installare Windows PowerShell 5.1. È possibile scaricare Windows Management Framework 5.1, che include Windows PowerShell 5.1, dall'[Area download Microsoft](https://www.microsoft.com/download/details.aspx?id=54616).
   
 Dopo aver verificato che Windows PowerShell 5.1 è installato, è necessario verificare che PowerShell sia configurato per l'esecuzione di script remoti. Per farlo, avvia PowerShell come amministratore. Su Windows 7, Windows Server 2008 R2, Windows Server 2012 o Windows Server 2012 R2, procedi come segue.
   

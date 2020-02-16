@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - PowerShell
 description: Troubleshoot creating a remote PowerShell session to connect to Skype for Business Online, including Import-Module, concurrent shell, Live ID, and permission errors.
-ms.openlocfilehash: 873139f279114910bb802bc023ade35c0f84f7d1
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: f3de8d67079aaf4afeffdc63588f6806413383fc
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41706271"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42010689"
 ---
 # <a name="diagnose-connection-problems-with-the-skype-for-business-online-connector"></a>Diagnosi dei problemi di connessione con il connettore di Skype for Business Online
 
@@ -69,7 +69,7 @@ Il Modulo del connettore di Skype for Business Online può essere eseguito solo 
   
   - **Errore**: *Import-Module: la versione di PowerShell caricata è "2,0". Modulo ' d:\\programmi file\\comuni\\Microsoft Lync Server 2013\\modules\\LyncOnlineConnector\\LyncOnlineConnector. psd1' richiede una versione di PowerShell minima di ' 3,0' da eseguire. Verificare l'installazione di PowerShell e riprovare.*
 
-- **Risoluzione**: l'unico modo per risolvere il problema è installare Windows PowerShell 3,0, disponibile nell'area download Microsoft [https://www.microsoft.com/en-us/download/details.aspx?id=34595](https://www.microsoft.com/en-us/download/details.aspx?id=34595).
+- **Risoluzione**: l'unico modo per risolvere il problema è installare Windows PowerShell 3,0, disponibile nell'area download Microsoft [https://www.microsoft.com/download/details.aspx?id=34595](https://www.microsoft.com/download/details.aspx?id=34595).
   
 ## <a name="failed-to-connect-to-live-id-server"></a>Connessione al server Live ID non riuscita
 <a name="BKMKFailedConnect"> </a>
@@ -98,7 +98,7 @@ Uno dei prerequisiti per l'uso di PowerShell per la gestione di Skype for Busine
 
 - **Errore**: *Get-CsWebTicket: non è possibile caricare il modulo Live ID. Verificare che sia installata la versione corretta di assistente per l'accesso a Live ID.*
 
-- **Risoluzione**: l'assistente per l'accesso ai Microsoft Online Services è disponibile nell'area download Microsoft all' [Assistente per l'accesso ai Microsoft Online Services per professionisti IT-RTW](https://www.microsoft.com/en-us/download/details.aspx?id=28177)
+- **Risoluzione**: l'assistente per l'accesso ai Microsoft Online Services è disponibile nell'area download Microsoft all' [Assistente per l'accesso ai Microsoft Online Services per professionisti IT-RTW](https://www.microsoft.com/download/details.aspx?id=28177)
 
 ## <a name="logon-failed-for-the-user"></a>Accesso non riuscito per l'utente
 <a name="BKMKLogonFailed"> </a>
