@@ -76,7 +76,7 @@ Nella tabella seguente vengono descritte le voci del registro di sistema necessa
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Nome</p></td>
+<td><p>Name</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Il nome dell'applicazione per i menu di Lync 2013.</p></td>
 </tr>
@@ -205,7 +205,7 @@ Le impostazioni per l'aggiunta di comandi per l'avvio di un'applicazione di coll
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Nome</p></td>
+<td><p>Name</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Nome dell'applicazione visualizzato nel menu.</p></td>
 </tr>

@@ -77,7 +77,7 @@ La tabella seguente elenca le informazioni disponibili nel Rapporto di diagnosti
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

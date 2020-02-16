@@ -79,7 +79,7 @@ L'attivazione del server rubrica inserisce nella tabella AbAttribute i valori ri
 <thead>
 <tr class="header">
 <th>ID</th>
-<th>Nome</th>
+<th>Name</th>
 <th>Bandiere</th>
 </tr>
 </thead>

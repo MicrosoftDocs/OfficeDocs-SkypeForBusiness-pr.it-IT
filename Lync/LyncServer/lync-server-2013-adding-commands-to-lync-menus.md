@@ -90,7 +90,7 @@ Utilizzare le impostazioni del registro di sistema nella tabella seguente per ag
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Nome</p></td>
+<td><p>Name</p></td>
 <td><p>REG_SZ</p></td>
 <td><p>Nome dell'applicazione visualizzato nel menu.</p></td>
 </tr>

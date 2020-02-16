@@ -132,7 +132,7 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -195,7 +195,7 @@ Nella tabella seguente vengono elencate le informazioni fornite nel Rapporto di 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

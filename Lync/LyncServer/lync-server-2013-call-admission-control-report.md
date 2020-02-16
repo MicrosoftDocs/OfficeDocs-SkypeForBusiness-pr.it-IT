@@ -80,7 +80,7 @@ Nella tabella seguente sono elencati i filtri applicabili al Rapporto controllo 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -149,7 +149,7 @@ Nella tabella seguente sono elencate le informazioni riportate nel Rapporto cont
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -217,7 +217,7 @@ Nella tabella seguente sono elencate le informazioni riportate nel Rapporto di c
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -270,7 +270,7 @@ Nella tabella seguente sono elencate le informazioni riportate nel Rapporto di c
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

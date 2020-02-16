@@ -96,7 +96,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel rapporto De
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -195,7 +195,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel rapporto De
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
@@ -238,7 +238,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel rapporto De
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>
