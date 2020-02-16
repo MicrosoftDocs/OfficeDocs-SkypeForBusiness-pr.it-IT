@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come usare il dashboard integrità per monitorare la connessione tra il controller di bordo della sessione e il routing diretto.
-ms.openlocfilehash: a1644eb94cc18bf149a5e866aae0faf4b41d1d67
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: a89377c798295267b1e75f3ffa6efc19b8c4c37d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836076"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42051802"
 ---
 # <a name="health-dashboard-for-direct-routing"></a>Dashboard integrità per il routing diretto
 
@@ -102,7 +102,7 @@ La visualizzazione dettagliata mostra i seguenti parametri aggiuntivi:
 
 - **Chiamata simultanea**: Mostra il numero di chiamate simultanee gestite da SBC. Queste informazioni sono utili per stimare il numero di canali simultanei necessari e vedere la tendenza. È possibile scorrere i dati in base al numero di giorni e alla direzione delle chiamate (in ingresso/in uscita/tutti i flussi).
 
-- **Parametri di rete** : tutti i parametri di rete vengono misurati dall'interfaccia di routing diretto al controller di bordo della sessione. Per informazioni sui valori consigliati, vedere [preparare la rete dell'organizzazione per Microsoft teams](https://docs.microsoft.com/en-us/microsoftteams/prepare-network)e esaminare i valori consigliati di Microsoft Edge per il cliente.
+- **Parametri di rete** : tutti i parametri di rete vengono misurati dall'interfaccia di routing diretto al controller di bordo della sessione. Per informazioni sui valori consigliati, vedere [preparare la rete dell'organizzazione per Microsoft teams](https://docs.microsoft.com/microsoftteams/prepare-network)e esaminare i valori consigliati di Microsoft Edge per il cliente.
 
    - Jitter: è la misura di millisecondi di variazione nel tempo di ritardo di propagazione della rete calcolato tra due endpoint usando RTCP (il protocollo di controllo RTP).
 

@@ -21,16 +21,16 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: In questa appendice sono riportati i passaggi dettagliati per l'aggiornamento di AAD Connect per includere più foreste nell'ambito del consolidamento del cloud per i team e per Skype for business.
-ms.openlocfilehash: 3d3d72c14957f0ed8932d95fcd2dbe9ec9c1e37e
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: a61a45c8a492afd761f8cc6b1020b591851645b8
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41696061"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42049098"
 ---
 # <a name="update-aad-connect-to-include-more-than-one-forest"></a>Update AAD Connect per includere più di una foresta
 
-Azure AD Connect supporta la [sincronizzazione da più foreste](https://docs.microsoft.com/en-us/azure/active-directory/connect/active-directory-aadconnect-topologies). Tuttavia, supporta solo un'istanza di Azure AD Connect syncing to AAD. Pertanto, nei casi in cui Azure AD è già installato in una foresta, è necessario aggiornare l'istanza esistente di AAD Connect per eseguire la sincronizzazione dalla foresta aggiuntiva.
+Azure AD Connect supporta la [sincronizzazione da più foreste](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-topologies). Tuttavia, supporta solo un'istanza di Azure AD Connect syncing to AAD. Pertanto, nei casi in cui Azure AD è già installato in una foresta, è necessario aggiornare l'istanza esistente di AAD Connect per eseguire la sincronizzazione dalla foresta aggiuntiva.
 
  - Se tutte le identità sono rappresentate solo una volta in entrambe le foreste (ovvero se non sono stati apportati contatti abilitati alla posta elettronica), è possibile rieseguire la procedura guidata per la connessione di AAD, scegliere "Personalizza opzioni di sincronizzazione" e quindi nella pagina **Connetti le directory** immettere il nome della foresta aggiuntiva e creds.<br><br>
  ![Pagina Connetti le directory](../media/cloud-consolidation-connect-your-directories.png)

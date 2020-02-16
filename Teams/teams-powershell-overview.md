@@ -15,12 +15,12 @@ f1.keywords:
 description: Informazioni su come usare i controlli di PowerShell per la gestione di Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5b211493bb5b0bfa3dea1abfc0c9b59eadcb4206
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: c5eaf04a0244e35e7d9f7deb7d8afb135b3acb2c
+ms.sourcegitcommit: c8d16d5e61d66d7b5e7391a800978b920612ea4d
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/15/2020
-ms.locfileid: "42035358"
+ms.locfileid: "42052523"
 ---
 # <a name="teams-powershell-overview"></a>Panoramica di PowerShell Teams
 
@@ -79,7 +79,7 @@ Quando è stata rilasciata la versione generalmente disponibile del modulo di Po
 
 ## <a name="managing-policies-via-powershell"></a>Gestione dei criteri tramite PowerShell
 
-I cmdlet per la gestione dei criteri si trovano nel [modulo cmdlet di Skype for business](https://www.microsoft.com/download/details.aspx?id=39366).
+Usare i cmdlet nel [modulo cmdlet di Skype for business](https://www.microsoft.com/download/details.aspx?id=39366) per gestire i criteri per singoli utenti.
 
 > [!NOTE]
 > I cmdlet saranno disponibili nella sessione di PowerShell quando ci si connette a Skype for business online. Per altre informazioni, vedere [gestire Skype for business online con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell). 

@@ -13,12 +13,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Istruzioni per l'implementazione della segreteria telefonica basata su cloud per gli utenti ospitati in Skype for Business Server.
-ms.openlocfilehash: f99286d4a3495d0214c46d28b105ad9076d238b2
-ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+ms.openlocfilehash: 8fab0cf237137d87a8b7e49be65232dc0595de6d
+ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41888535"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42041245"
 ---
 # <a name="configure-cloud-voicemail-service-for-on-premises-users"></a>Configurare il servizio di segreteria cloud per gli utenti locali
 
@@ -86,7 +86,7 @@ Set-CsHostedVoicemailPolicy -Identity Global -Description "Global Cloud Voicemai
 
     Il nome dell'organizzazione è anche il nome di dominio predefinito in Office 365.
 
-- **Tenant** viene utilizzato per identificare il tenant in Office 365. Per ulteriori informazioni, vedere [trovare l'ID tenant di Office 365](https://support.office.com/en-us/article/find-your-office-365-tenant-id-6891b561-a52d-4ade-9f39-b492285e2c9b).
+- **Tenant** viene utilizzato per identificare il tenant in Office 365. Per ulteriori informazioni, vedere [trovare l'ID tenant di Office 365](https://support.office.com/article/find-your-office-365-tenant-id-6891b561-a52d-4ade-9f39-b492285e2c9b).
 
 Per assicurarsi che un criterio di segreteria telefonica ospitata sia stato creato correttamente, eseguire il seguente comando:
 
