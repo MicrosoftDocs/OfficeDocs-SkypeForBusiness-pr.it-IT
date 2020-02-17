@@ -17,18 +17,20 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: ''
-ms.openlocfilehash: 53c17cdd3a1b6726e0219147e4dadd1cba7b25ff
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 0f846029002529d221b079140cf7de8ae618f26c
+ms.sourcegitcommit: f3d4f4aabe31c5516507dfacbbd61cf0ae362d46
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827934"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42089739"
 ---
 # <a name="transfer-phone-numbers-to-microsoft-teams"></a>Trasferire i numeri di telefono in Microsoft Teams
 
+[!INCLUDE [preview-feature](../includes/preview-feature.md)]
+
 Usare la conversione guidata nell'interfaccia di amministrazione di Microsoft teams per trasferire i numeri di telefono dal provider di servizi corrente in teams. Dopo aver convertito i numeri di telefono in teams, Microsoft diventerà il proprio provider di servizi e gli verrà addebitato il numero di telefono.
 
-Prima di iniziare, ti consigliamo di rivedere le informazioni in [un ordine di trasferimento?](port-order-overview.md). Se si hanno numeri di servizio per i Bridge di conferenza telefonica con accesso esterno, gli operatori automatici o altri numeri di servizio, i numeri verdi 999 o i numeri di telefono degli utenti (abbonati) che è necessario trasferire in teams, vedere [gestire i numeri di telefono dell'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per scaricare i moduli corretti e inviarli a noi.
+Prima di iniziare, è consigliabile rivedere le informazioni in [un ordine di trasferimento?](port-order-overview.md) Se si hanno numeri di servizio per i Bridge di conferenza telefonica con accesso esterno, gli operatori automatici o altri numeri di servizio, i numeri verdi 999 o i numeri di telefono degli utenti (abbonati) che è necessario trasferire in teams, vedere [gestire i numeri di telefono dell'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per scaricare i moduli corretti e inviarli a noi.
 
   > [!NOTE]
   > Elaboriamo gli ordini di trasferimento per trasferire i numeri di telefono solo nei giorni lavorativi degli Stati Uniti e non in festività pubbliche o nei fine settimana.
@@ -36,7 +38,7 @@ Prima di iniziare, ti consigliamo di rivedere le informazioni in [un ordine di t
 ## <a name="create-a-port-order-and-transfer-your-phone-numbers-to-teams"></a>Creare un ordine di trasferimento e trasferire i numeri di telefono in teams
 
 > [!NOTE]
-> Se il paese o l'area geografica non è elencata nella procedura guidata di conversione nell'interfaccia di amministrazione di Microsoft teams, è possibile [inviare manualmente un ordine di trasferimento](manually-submit-port-order.md).
+> **Attualmente, è possibile usare questa procedura guidata per ottenere numeri di telefono per il Regno Unito e il Canada**. Per ottenere i numeri di telefono per altri paesi e aree geografiche, è possibile [inviare manualmente un ordine di trasferimento](manually-submit-port-order.md). Per ottenere il modulo necessario per inviare manualmente un ordine di trasferimento, selezionare il paese o l'area geografica nell'elenco a discesa in [gestire i numeri di telefono per l'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a**numeri di telefono** **vocale** > . Fare clic su **numeri**e quindi su **porta** per avviare la procedura guidata.
 2. Esaminare **le informazioni nella pagina inizia** e quindi quando si è pronti, fare clic su **Avanti**.
@@ -87,7 +89,7 @@ Prima di iniziare, ti consigliamo di rivedere le informazioni in [un ordine di t
 
 Quando riceviamo l'ordine di trasferimento, riceverai un messaggio di posta elettronica che verifica la tua richiesta. La tua richiesta viene selezionata e aggiornata giornalmente e verrai avvisato dello stato di avanzamento e dello stato nella posta elettronica. Se la richiesta viene rifiutata, verrà richiesto di aprire un ticket di supporto.
 
-Per visualizzare lo stato dell'ordine di trasferimento, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai a >**ordini di porta** **vocale** > e quindi fai clic su **cronologia**ordini. Ogni stato dell'ordine di porta è elencato nella colonna **stato** . Per altre informazioni, vedere [Qual è lo stato degli ordini di trasferimento?](port-order-status.md).
+Per visualizzare lo stato dell'ordine di trasferimento, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai a >**ordini di porta** **vocale** > e quindi fai clic su **cronologia**ordini. Ogni stato dell'ordine di porta è elencato nella colonna **stato** . Per altre informazioni, vedere [Qual è lo stato degli ordini di trasferimento?](port-order-status.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare i telefoni per l'area comune per atri, aree di ricezione e sale conferenze "
-ms.openlocfilehash: dff06d43e196b999d06c9fa78e7d66ad7a162998
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 5997137420a9cac0517f67a81c7dedc7b779b715
+ms.sourcegitcommit: f3d4f4aabe31c5516507dfacbbd61cf0ae362d46
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838036"
+ms.lasthandoff: 02/15/2020
+ms.locfileid: "42089729"
 ---
 # <a name="set-up-the-common-area-phone-license-for-microsoft-teams"></a>Configurare la licenza telefonica per l'area comune per Microsoft Teams
 > [!NOTE]
@@ -50,7 +50,10 @@ Prima di tutto, è necessario acquistare una licenza per un telefono con area co
 4. Espandere **abbonamenti a componenti aggiuntivi** e quindi fare clic per acquistare un piano per le chiamate. Scegli **Piano di chiamata domestico** o **Piano di chiamata nazionale e internazionale**.
 
 > [!NOTE]
-> Non hai bisogno di una licenza per il sistema telefonico. È inclusa con la licenza per il Telefono di area comune.
+> Se si usa il routing diretto di Microsoft Phone System, non è necessaria una licenza per il piano di chiamata.
+
+> [!NOTE]
+> Non è necessario aggiungere una licenza per il sistema telefonico. È inclusa con la licenza per il Telefono di area comune.
 
 Per altre informazioni sulle licenze, vedere [licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 
@@ -89,6 +92,9 @@ La licenza telefonica per l'area comune supporta:
 6. Assegnare le licenze all'utente. Nella stessa pagina, fai clic per espandere **Licenze di prodotto**. Attivare il telefono per l'area comune e selezionare un **piano per chiamate nazionali** o un **piano per chiamate nazionali e internazionali**. 
 
     ![Schermata che mostra l'assegnazione delle licenze](media/set-up-common-area-phone-image2.png)
+
+> [!NOTE]
+> Se si usa il routing diretto di Microsoft Phone System, non è necessario assegnare una licenza per il piano di chiamata.
 
 Per altre informazioni, vedere [aggiungere un utente](https://docs.microsoft.com/office365/admin/add-users/add-users?redirectSourcePath=%252farticle%252f1970f7d6-03b5-442f-b385-5880b9c256ec&view=o365-worldwide).
 
