@@ -12,20 +12,20 @@ ms:contentKeyID: 48184292
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c7168c1e32bd4ceb1466678d08a3d7ca9e6dc69e
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 31c0cbd7355b5ac51908a9a7eba2ae0e6b6680ed
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42045498"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42139127"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="preparing-for-installation-of-servers-in-the-perimeter-network-for-lync-server-2013"></a><span data-ttu-id="e18af-102">Preparazione per l'installazione dei server nella rete perimetrale per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e18af-102">Preparing for installation of servers in the perimeter network for Lync Server 2013</span></span>
+# <a name="preparing-for-installation-of-servers-in-the-perimeter-network-for-lync-server-2013"></a><span data-ttu-id="8a19c-102">Preparazione per l'installazione dei server nella rete perimetrale per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8a19c-102">Preparing for installation of servers in the perimeter network for Lync Server 2013</span></span>
 
 </div>
 
@@ -35,35 +35,35 @@ ms.locfileid: "42045498"
 
 <span> </span>
 
-<span data-ttu-id="e18af-103">_**Ultimo argomento modificato:** 2012-09-08_</span><span class="sxs-lookup"><span data-stu-id="e18af-103">_**Topic Last Modified:** 2012-09-08_</span></span>
+<span data-ttu-id="8a19c-103">_**Ultimo argomento modificato:** 2012-09-08_</span><span class="sxs-lookup"><span data-stu-id="8a19c-103">_**Topic Last Modified:** 2012-09-08_</span></span>
 
-<span data-ttu-id="e18af-104">Prima di installare i componenti Edge Server, è necessario verificare che i computer che si sta configurando soddisfino i requisiti di sistema ed eseguire altri passaggi prerequisiti necessari per la distribuzione dei componenti Edge Server.</span><span class="sxs-lookup"><span data-stu-id="e18af-104">Before you set up Edge Server components, you need to ensure that computers that you are setting up meet system requirements and complete other prerequisite steps required for deployment of Edge Server components.</span></span>
+<span data-ttu-id="8a19c-104">Prima di installare i componenti Edge Server, è necessario verificare che i computer che si sta configurando soddisfino i requisiti di sistema ed eseguire altri passaggi prerequisiti necessari per la distribuzione dei componenti Edge Server.</span><span class="sxs-lookup"><span data-stu-id="8a19c-104">Before you set up Edge Server components, you need to ensure that computers that you are setting up meet system requirements and complete other prerequisite steps required for deployment of Edge Server components.</span></span>
 
-<span data-ttu-id="e18af-105">Prima di iniziare, esaminare le informazioni dettagliate negli argomenti seguenti della documentazione relativa alla pianificazione per l'architettura di riferimento che si desidera distribuire:</span><span class="sxs-lookup"><span data-stu-id="e18af-105">Before you begin, review the details in the following topics in the Planning documentation for the reference architecture that you want to deploy:</span></span>
+<span data-ttu-id="8a19c-105">Prima di iniziare, esaminare le informazioni dettagliate negli argomenti seguenti della documentazione relativa alla pianificazione per l'architettura di riferimento che si desidera distribuire:</span><span class="sxs-lookup"><span data-stu-id="8a19c-105">Before you begin, review the details in the following topics in the Planning documentation for the reference architecture that you want to deploy:</span></span>
 
-  - [<span data-ttu-id="e18af-106">Singolo server perimetrale consolidato con indirizzi IP privati e NAT in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e18af-106">Single consolidated edge with private IP addresses and NAT in Lync Server 2013</span></span>](lync-server-2013-single-consolidated-edge-with-private-ip-addresses-and-nat.md)
+  - [<span data-ttu-id="8a19c-106">Singolo server perimetrale consolidato con indirizzi IP privati e NAT in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8a19c-106">Single consolidated edge with private IP addresses and NAT in Lync Server 2013</span></span>](lync-server-2013-single-consolidated-edge-with-private-ip-addresses-and-nat.md)
 
-  - [<span data-ttu-id="e18af-107">Perimetro consolidato singolo con indirizzi IP pubblici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e18af-107">Single consolidated edge with public IP addresses in Lync Server 2013</span></span>](lync-server-2013-single-consolidated-edge-with-public-ip-addresses.md)
+  - [<span data-ttu-id="8a19c-107">Perimetro consolidato singolo con indirizzi IP pubblici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8a19c-107">Single consolidated edge with public IP addresses in Lync Server 2013</span></span>](lync-server-2013-single-consolidated-edge-with-public-ip-addresses.md)
 
-  - [<span data-ttu-id="e18af-108">Perimetro consolidato in scala, bilanciamento del carico DNS con indirizzi IP privati tramite NAT in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e18af-108">Scaled consolidated edge, DNS load balancing with private IP addresses using NAT in Lync Server 2013</span></span>](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-private-ip-addresses-using-nat.md)
+  - [<span data-ttu-id="8a19c-108">Perimetro consolidato in scala, bilanciamento del carico DNS con indirizzi IP privati tramite NAT in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8a19c-108">Scaled consolidated edge, DNS load balancing with private IP addresses using NAT in Lync Server 2013</span></span>](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-private-ip-addresses-using-nat.md)
 
-  - [<span data-ttu-id="e18af-109">Perimetro consolidato in scala, bilanciamento del carico DNS con indirizzi IP pubblici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e18af-109">Scaled consolidated edge, DNS load balancing with public IP addresses in Lync Server 2013</span></span>](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses.md)
+  - [<span data-ttu-id="8a19c-109">Perimetro consolidato in scala, bilanciamento del carico DNS con indirizzi IP pubblici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8a19c-109">Scaled consolidated edge, DNS load balancing with public IP addresses in Lync Server 2013</span></span>](lync-server-2013-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses.md)
 
-  - [<span data-ttu-id="e18af-110">Perimetro consolidato in scala con i dispositivi di bilanciamento del carico hardware in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e18af-110">Scaled consolidated edge with hardware load balancers in Lync Server 2013</span></span>](lync-server-2013-scaled-consolidated-edge-with-hardware-load-balancers.md)
+  - [<span data-ttu-id="8a19c-110">Perimetro consolidato in scala con i dispositivi di bilanciamento del carico hardware in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8a19c-110">Scaled consolidated edge with hardware load balancers in Lync Server 2013</span></span>](lync-server-2013-scaled-consolidated-edge-with-hardware-load-balancers.md)
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="e18af-111">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="e18af-111">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="8a19c-111">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="8a19c-111">In This Section</span></span>
 
-  - [<span data-ttu-id="e18af-112">Configurare DNS per il supporto Edge in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e18af-112">Configure DNS for edge support in Lync Server 2013</span></span>](lync-server-2013-configure-dns-for-edge-support.md)
+  - [<span data-ttu-id="8a19c-112">Configurare DNS per il supporto Edge in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8a19c-112">Configure DNS for edge support in Lync Server 2013</span></span>](lync-server-2013-configure-dns-for-edge-support.md)
 
-  - [<span data-ttu-id="e18af-113">Configurare i dispositivi di bilanciamento del carico hardware per le topologie perimetrali in scala in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e18af-113">Set up hardware load balancers for scaled edge topologies in Lync Server 2013</span></span>](lync-server-2013-set-up-hardware-load-balancers-for-scaled-edge-topologies.md)
+  - [<span data-ttu-id="8a19c-113">Configurare i dispositivi di bilanciamento del carico hardware per le topologie perimetrali in scala in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8a19c-113">Set up hardware load balancers for scaled edge topologies in Lync Server 2013</span></span>](lync-server-2013-set-up-hardware-load-balancers-for-scaled-edge-topologies.md)
 
-  - [<span data-ttu-id="e18af-114">Configurare firewall e porte per l'accesso degli utenti esterni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e18af-114">Configure firewalls and ports for external user access in Lync Server 2013</span></span>](lync-server-2013-configure-firewalls-and-ports-for-external-user-access.md)
+  - [<span data-ttu-id="8a19c-114">Configurare firewall e porte per l'accesso degli utenti esterni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8a19c-114">Configure firewalls and ports for external user access in Lync Server 2013</span></span>](lync-server-2013-configure-firewalls-and-ports-for-external-user-access.md)
 
-  - [<span data-ttu-id="e18af-115">Determinare i requisiti di porte e firewall A/V esterni per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e18af-115">Determine external A/V firewall and port requirements for Lync Server 2013</span></span>](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md)
+  - [<span data-ttu-id="8a19c-115">Determinare i requisiti di porte e firewall A/V esterni per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8a19c-115">Determine external A/V firewall and port requirements for Lync Server 2013</span></span>](lync-server-2013-determine-external-a-v-firewall-and-port-requirements.md)
 
-  - [<span data-ttu-id="e18af-116">Richiedere i certificati per i componenti perimetrali in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e18af-116">Request certificates for edge components in Lync Server 2013</span></span>](lync-server-2013-request-certificates-for-edge-components.md)
+  - [<span data-ttu-id="8a19c-116">Richiedere i certificati per i componenti perimetrali in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8a19c-116">Request certificates for edge components in Lync Server 2013</span></span>](lync-server-2013-request-certificates-for-edge-components.md)
 
 </div>
 

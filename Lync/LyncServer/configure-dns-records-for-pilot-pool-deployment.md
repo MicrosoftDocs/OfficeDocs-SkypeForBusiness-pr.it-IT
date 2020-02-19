@@ -13,20 +13,20 @@ ms:contentKeyID: 49733855
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8d3b1f4b507887bc046cefddae9c924f0de1916b
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 549aa706700d7f2163e9149d8dd29311141968e0
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41999121"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42136403"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-dns-records-for-pilot-pool-deployment"></a><span data-ttu-id="dd405-102">Configurare i record DNS per la distribuzione del pool pilota</span><span class="sxs-lookup"><span data-stu-id="dd405-102">Configure DNS records for pilot pool deployment</span></span>
+# <a name="configure-dns-records-for-pilot-pool-deployment"></a><span data-ttu-id="44429-102">Configurare i record DNS per la distribuzione del pool pilota</span><span class="sxs-lookup"><span data-stu-id="44429-102">Configure DNS records for pilot pool deployment</span></span>
 
 </div>
 
@@ -36,25 +36,25 @@ ms.locfileid: "41999121"
 
 <span> </span>
 
-<span data-ttu-id="dd405-103">_**Ultimo argomento modificato:** 2012-09-29_</span><span class="sxs-lookup"><span data-stu-id="dd405-103">_**Topic Last Modified:** 2012-09-29_</span></span>
+<span data-ttu-id="44429-103">_**Ultimo argomento modificato:** 2012-09-29_</span><span class="sxs-lookup"><span data-stu-id="44429-103">_**Topic Last Modified:** 2012-09-29_</span></span>
 
-<span data-ttu-id="dd405-104">Prima di distribuire il pool pilota di Lync Server 2013, è necessario aggiornare le voci dell'host DNS A per il pool pilota.</span><span class="sxs-lookup"><span data-stu-id="dd405-104">Prior to deploying the Lync Server 2013 pilot pool, you must update the DNS Host A entries for the pilot pool.</span></span> <span data-ttu-id="dd405-105">Per eseguire correttamente questa procedura, è necessario connettersi al server o al dominio come membro del gruppo Domain Admins o DnsAdmins.</span><span class="sxs-lookup"><span data-stu-id="dd405-105">To successfully complete this procedure, you should be logged on to the server or domain as a member of the Domain Admins group or a member of the DnsAdmins group.</span></span>
+<span data-ttu-id="44429-104">Prima di distribuire il pool pilota di Lync Server 2013, è necessario aggiornare le voci dell'host DNS A per il pool pilota.</span><span class="sxs-lookup"><span data-stu-id="44429-104">Prior to deploying the Lync Server 2013 pilot pool, you must update the DNS Host A entries for the pilot pool.</span></span> <span data-ttu-id="44429-105">Per eseguire correttamente questa procedura, è necessario connettersi al server o al dominio come membro del gruppo Domain Admins o DnsAdmins.</span><span class="sxs-lookup"><span data-stu-id="44429-105">To successfully complete this procedure, you should be logged on to the server or domain as a member of the Domain Admins group or a member of the DnsAdmins group.</span></span>
 
-<span data-ttu-id="dd405-106">**Per configurare i record A dell'host DNS**</span><span class="sxs-lookup"><span data-stu-id="dd405-106">**To configure DNS Host A records**</span></span>
+<span data-ttu-id="44429-106">**Per configurare i record A dell'host DNS**</span><span class="sxs-lookup"><span data-stu-id="44429-106">**To configure DNS Host A records**</span></span>
 
-1.  <span data-ttu-id="dd405-107">Nel server DNS (Domain Name System) fare clic sul pulsante **Start**, scegliere **Strumenti di amministrazione** e quindi **DNS**.</span><span class="sxs-lookup"><span data-stu-id="dd405-107">On the Domain Name System (DNS) server, click **Start**, click **Administrative Tools**, and then click **DNS**.</span></span>
+1.  <span data-ttu-id="44429-107">Nel server DNS (Domain Name System) fare clic sul pulsante **Start**, scegliere **Strumenti di amministrazione** e quindi **DNS**.</span><span class="sxs-lookup"><span data-stu-id="44429-107">On the Domain Name System (DNS) server, click **Start**, click **Administrative Tools**, and then click **DNS**.</span></span>
 
-2.  <span data-ttu-id="dd405-108">Nell'albero della console per il dominio espandere **zone di ricerca diretta**e quindi fare clic con il pulsante destro del mouse sul dominio in cui verrà installato Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="dd405-108">In the console tree for your domain, expand **Forward Lookup Zones**, and then right-click the domain in which Lync Server 2013 will be installed.</span></span>
+2.  <span data-ttu-id="44429-108">Nell'albero della console per il dominio espandere **zone di ricerca diretta**e quindi fare clic con il pulsante destro del mouse sul dominio in cui verrà installato Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="44429-108">In the console tree for your domain, expand **Forward Lookup Zones**, and then right-click the domain in which Lync Server 2013 will be installed.</span></span>
 
-3.  <span data-ttu-id="dd405-109">Scegliere **Nuovo host (A o AAAA)**.</span><span class="sxs-lookup"><span data-stu-id="dd405-109">Click **New Host (A or AAAA)**.</span></span>
+3.  <span data-ttu-id="44429-109">Scegliere **Nuovo host (A o AAAA)**.</span><span class="sxs-lookup"><span data-stu-id="44429-109">Click **New Host (A or AAAA)**.</span></span>
 
-4.  <span data-ttu-id="dd405-110">Fare clic su **nome**, digitare il nome host per il pool di Lync Server 2013 (il nome di dominio viene assunto dall'area in cui è definito il record e non è necessario immetterlo come parte del record a).</span><span class="sxs-lookup"><span data-stu-id="dd405-110">Click **Name**, type the host name for the Lync Server 2013 pool (the domain name is assumed from the zone that the record is defined in and does not need to be entered as part of the A record).</span></span>
+4.  <span data-ttu-id="44429-110">Fare clic su **nome**, digitare il nome host per il pool di Lync Server 2013 (il nome di dominio viene assunto dall'area in cui è definito il record e non è necessario immetterlo come parte del record a).</span><span class="sxs-lookup"><span data-stu-id="44429-110">Click **Name**, type the host name for the Lync Server 2013 pool (the domain name is assumed from the zone that the record is defined in and does not need to be entered as part of the A record).</span></span>
 
-5.  <span data-ttu-id="dd405-111">Fare clic su **indirizzo IP**, digitare l'indirizzo IP per il pool Front end.</span><span class="sxs-lookup"><span data-stu-id="dd405-111">Click **IP Address**, type the IP address for the Front End pool.</span></span>
+5.  <span data-ttu-id="44429-111">Fare clic su **indirizzo IP**, digitare l'indirizzo IP per il pool Front end.</span><span class="sxs-lookup"><span data-stu-id="44429-111">Click **IP Address**, type the IP address for the Front End pool.</span></span>
 
-6.  <span data-ttu-id="dd405-112">Fare clic su **Aggiungi host** e quindi su **OK**.</span><span class="sxs-lookup"><span data-stu-id="dd405-112">Click **Add Host**, and then click **OK**.</span></span>
+6.  <span data-ttu-id="44429-112">Fare clic su **Aggiungi host** e quindi su **OK**.</span><span class="sxs-lookup"><span data-stu-id="44429-112">Click **Add Host**, and then click **OK**.</span></span>
 
-7.  <span data-ttu-id="dd405-113">Al termine, scegliere **Fine**.</span><span class="sxs-lookup"><span data-stu-id="dd405-113">When you are finished, click **Done**.</span></span>
+7.  <span data-ttu-id="44429-113">Al termine, scegliere **Fine**.</span><span class="sxs-lookup"><span data-stu-id="44429-113">When you are finished, click **Done**.</span></span>
 
 </div>
 

@@ -13,20 +13,20 @@ ms:contentKeyID: 49733624
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8266097035a284c966ad62672515cb2a64444339
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 73fccbc093365565fdc4062715b517e62eed3e7e
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42006642"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42136073"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configure-scom-monitoring"></a><span data-ttu-id="1f218-102">Configurare il monitoraggio di SCOM</span><span class="sxs-lookup"><span data-stu-id="1f218-102">Configure SCOM monitoring</span></span>
+# <a name="configure-scom-monitoring"></a><span data-ttu-id="86f38-102">Configurare il monitoraggio di SCOM</span><span class="sxs-lookup"><span data-stu-id="86f38-102">Configure SCOM monitoring</span></span>
 
 </div>
 
@@ -36,29 +36,29 @@ ms.locfileid: "42006642"
 
 <span> </span>
 
-<span data-ttu-id="1f218-103">_**Ultimo argomento modificato:** 2012-10-04_</span><span class="sxs-lookup"><span data-stu-id="1f218-103">_**Topic Last Modified:** 2012-10-04_</span></span>
+<span data-ttu-id="86f38-103">_**Ultimo argomento modificato:** 2012-10-04_</span><span class="sxs-lookup"><span data-stu-id="86f38-103">_**Topic Last Modified:** 2012-10-04_</span></span>
 
-<span data-ttu-id="1f218-104">Dopo aver eseguito la migrazione a Microsoft Lync Server 2013, è necessario completare alcune attività per configurare Lync Server 2013 in modo che funzioni con System Center Operations Manager.</span><span class="sxs-lookup"><span data-stu-id="1f218-104">After migrating to Microsoft Lync Server 2013, you must complete a few tasks to configure Lync Server 2013 to work with System Center Operations Manager.</span></span>
+<span data-ttu-id="86f38-104">Dopo aver eseguito la migrazione a Microsoft Lync Server 2013, è necessario completare alcune attività per configurare Lync Server 2013 in modo che funzioni con System Center Operations Manager.</span><span class="sxs-lookup"><span data-stu-id="86f38-104">After migrating to Microsoft Lync Server 2013, you must complete a few tasks to configure Lync Server 2013 to work with System Center Operations Manager.</span></span>
 
-  - <span data-ttu-id="1f218-105">Applicare gli aggiornamenti di Lync Server 2010 a un server scelto per gestire la logica di individuazione centrale.</span><span class="sxs-lookup"><span data-stu-id="1f218-105">Apply Lync Server 2010 updates to a server elected to manage the central discovery logic.</span></span>
+  - <span data-ttu-id="86f38-105">Applicare gli aggiornamenti di Lync Server 2010 a un server scelto per gestire la logica di individuazione centrale.</span><span class="sxs-lookup"><span data-stu-id="86f38-105">Apply Lync Server 2010 updates to a server elected to manage the central discovery logic.</span></span>
 
-  - <span data-ttu-id="1f218-106">Aggiornare la chiave del Registro di sistema del server candidato all'individuazione centrale.</span><span class="sxs-lookup"><span data-stu-id="1f218-106">Update the central discovery candidate server registry key.</span></span>
+  - <span data-ttu-id="86f38-106">Aggiornare la chiave del Registro di sistema del server candidato all'individuazione centrale.</span><span class="sxs-lookup"><span data-stu-id="86f38-106">Update the central discovery candidate server registry key.</span></span>
 
-  - <span data-ttu-id="1f218-107">Configurare il server di gestione di System Center Operations Manager principale per eseguire l'override del nodo di individuazione centrale candidato.</span><span class="sxs-lookup"><span data-stu-id="1f218-107">Configure your primary System Center Operations Manager management server to override the candidate central discovery node.</span></span>
+  - <span data-ttu-id="86f38-107">Configurare il server di gestione di System Center Operations Manager principale per eseguire l'override del nodo di individuazione centrale candidato.</span><span class="sxs-lookup"><span data-stu-id="86f38-107">Configure your primary System Center Operations Manager management server to override the candidate central discovery node.</span></span>
 
-<span data-ttu-id="1f218-108">Di seguito sono riportate le istruzioni per l'esecuzione di ognuna di tali attività.</span><span class="sxs-lookup"><span data-stu-id="1f218-108">Instructions for carrying out each of these tasks are provided below.</span></span>
+<span data-ttu-id="86f38-108">Di seguito sono riportate le istruzioni per l'esecuzione di ognuna di tali attività.</span><span class="sxs-lookup"><span data-stu-id="86f38-108">Instructions for carrying out each of these tasks are provided below.</span></span>
 
-<span data-ttu-id="1f218-109">**Applicare gli aggiornamenti di Lync Server 2010 a un server scelto per gestire la logica di individuazione centrale.**</span><span class="sxs-lookup"><span data-stu-id="1f218-109">**Apply Lync Server 2010 updates to a server elected to manage the central discovery logic.**</span></span>
+<span data-ttu-id="86f38-109">**Applicare gli aggiornamenti di Lync Server 2010 a un server scelto per gestire la logica di individuazione centrale.**</span><span class="sxs-lookup"><span data-stu-id="86f38-109">**Apply Lync Server 2010 updates to a server elected to manage the central discovery logic.**</span></span>
 
-1.  <span data-ttu-id="1f218-110">Scegliere un server in cui siano installati i file dell'agente System Center Operations Manager e che sia configurato come nodo di individuazione candidato.</span><span class="sxs-lookup"><span data-stu-id="1f218-110">Elect a server that has the System Center Operations Manager agent files installed and is configured as a candidate discovery node.</span></span>
+1.  <span data-ttu-id="86f38-110">Scegliere un server in cui siano installati i file dell'agente System Center Operations Manager e che sia configurato come nodo di individuazione candidato.</span><span class="sxs-lookup"><span data-stu-id="86f38-110">Elect a server that has the System Center Operations Manager agent files installed and is configured as a candidate discovery node.</span></span>
 
-2.  <span data-ttu-id="1f218-111">Applicare gli aggiornamenti di Lync Server 2010 a questo server.</span><span class="sxs-lookup"><span data-stu-id="1f218-111">Apply Lync Server 2010 updates to this server.</span></span> <span data-ttu-id="1f218-112">Per ulteriori informazioni, vedere l'argomento [Apply Lync Server 2010 Updates](apply-lync-server-2010-updates.md).</span><span class="sxs-lookup"><span data-stu-id="1f218-112">See the topic [Apply Lync Server 2010 updates](apply-lync-server-2010-updates.md).</span></span>
+2.  <span data-ttu-id="86f38-111">Applicare gli aggiornamenti di Lync Server 2010 a questo server.</span><span class="sxs-lookup"><span data-stu-id="86f38-111">Apply Lync Server 2010 updates to this server.</span></span> <span data-ttu-id="86f38-112">Per ulteriori informazioni, vedere l'argomento [Apply Lync Server 2010 Updates](apply-lync-server-2010-updates.md).</span><span class="sxs-lookup"><span data-stu-id="86f38-112">See the topic [Apply Lync Server 2010 updates](apply-lync-server-2010-updates.md).</span></span>
 
-<span data-ttu-id="1f218-113">**Aggiornare la chiave del Registro di sistema del server candidato all'individuazione centrale.**</span><span class="sxs-lookup"><span data-stu-id="1f218-113">**Update the central discovery candidate server registry key.**</span></span>
+<span data-ttu-id="86f38-113">**Aggiornare la chiave del Registro di sistema del server candidato all'individuazione centrale.**</span><span class="sxs-lookup"><span data-stu-id="86f38-113">**Update the central discovery candidate server registry key.**</span></span>
 
-1.  <span data-ttu-id="1f218-114">Nel server scelto per gestire la logica di individuazione centrale aprire una finestra di comando di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="1f218-114">On the server elected to manage the central discovery logic, open a Windows PowerShell command window.</span></span>
+1.  <span data-ttu-id="86f38-114">Nel server scelto per gestire la logica di individuazione centrale aprire una finestra di comando di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="86f38-114">On the server elected to manage the central discovery logic, open a Windows PowerShell command window.</span></span>
 
-2.  <span data-ttu-id="1f218-115">Digitare quanto segue alla riga di comando:</span><span class="sxs-lookup"><span data-stu-id="1f218-115">At the command line, type the following:</span></span>
+2.  <span data-ttu-id="86f38-115">Digitare quanto segue alla riga di comando:</span><span class="sxs-lookup"><span data-stu-id="86f38-115">At the command line, type the following:</span></span>
     
        ```PowerShell
         New-Item -Path "HKLM:\Software\Microsoft\Real-Time Communications\Health"
@@ -72,22 +72,22 @@ ms.locfileid: "42006642"
     
 
     > [!NOTE]  
-    > <span data-ttu-id="1f218-p102">Quando si modifica il Registro di sistema, è possibile che si verifichi un errore dovuto alla mancata riuscita del comando se la chiave del Registro di sistema già esiste. In tal caso, è possibile ignorare l'errore.</span><span class="sxs-lookup"><span data-stu-id="1f218-p102">Whenever you edit the registry, you may experience an error that the command failed if the registry key already exists. If you experience this, you can safely ignore the error.</span></span>
+    > <span data-ttu-id="86f38-p102">Quando si modifica il Registro di sistema, è possibile che si verifichi un errore dovuto alla mancata riuscita del comando se la chiave del Registro di sistema già esiste. In tal caso, è possibile ignorare l'errore.</span><span class="sxs-lookup"><span data-stu-id="86f38-p102">Whenever you edit the registry, you may experience an error that the command failed if the registry key already exists. If you experience this, you can safely ignore the error.</span></span>
 
     
     </div>
 
-<span data-ttu-id="1f218-118">**Configurare il server di gestione di System Center Operations Manager principale per sostituire il nodo Watcher di individuazione centrale candidato.**</span><span class="sxs-lookup"><span data-stu-id="1f218-118">**Configure your primary System Center Operations Manager management server to override the candidate central discovery watcher node.**</span></span>
+<span data-ttu-id="86f38-118">**Configurare il server di gestione di System Center Operations Manager principale per sostituire il nodo Watcher di individuazione centrale candidato.**</span><span class="sxs-lookup"><span data-stu-id="86f38-118">**Configure your primary System Center Operations Manager management server to override the candidate central discovery watcher node.**</span></span>
 
-1.  <span data-ttu-id="1f218-119">In un computer in cui è stata installata la console System Center Operations Manager espandere **Oggetti Management Pack** e selezionare **Individuazioni oggetti**.</span><span class="sxs-lookup"><span data-stu-id="1f218-119">On a computer where the System Center Operations Manager console has been installed, expand **Management Pack Objects** and then select **Object Discoveries**.</span></span>
+1.  <span data-ttu-id="86f38-119">In un computer in cui è stata installata la console System Center Operations Manager espandere **Oggetti Management Pack** e selezionare **Individuazioni oggetti**.</span><span class="sxs-lookup"><span data-stu-id="86f38-119">On a computer where the System Center Operations Manager console has been installed, expand **Management Pack Objects** and then select **Object Discoveries**.</span></span>
 
-2.  <span data-ttu-id="1f218-120">Fare clic su **Cambia ambito**</span><span class="sxs-lookup"><span data-stu-id="1f218-120">Click **Change Scope...**</span></span>
+2.  <span data-ttu-id="86f38-120">Fare clic su **Cambia ambito**</span><span class="sxs-lookup"><span data-stu-id="86f38-120">Click **Change Scope...**</span></span>
 
-3.  <span data-ttu-id="1f218-121">Nella pagina **Crea ambito oggetti Management Pack** selezionare **Candidato individuazione LS**.</span><span class="sxs-lookup"><span data-stu-id="1f218-121">From the **Scope Management Pack Objects** page, select **LS Discovery Candidate**.</span></span>
+3.  <span data-ttu-id="86f38-121">Nella pagina **Crea ambito oggetti Management Pack** selezionare **Candidato individuazione LS**.</span><span class="sxs-lookup"><span data-stu-id="86f38-121">From the **Scope Management Pack Objects** page, select **LS Discovery Candidate**.</span></span>
 
-4.  <span data-ttu-id="1f218-122">Sostituire il **Valore effettivo candidato individuazione LS** con il nome del server candidato scelto nella procedura precedente.</span><span class="sxs-lookup"><span data-stu-id="1f218-122">Override the **LS Discovery Candidate Effective Value** to the name of the candidate server elected in the earlier procedure.</span></span>
+4.  <span data-ttu-id="86f38-122">Sostituire il **Valore effettivo candidato individuazione LS** con il nome del server candidato scelto nella procedura precedente.</span><span class="sxs-lookup"><span data-stu-id="86f38-122">Override the **LS Discovery Candidate Effective Value** to the name of the candidate server elected in the earlier procedure.</span></span>
 
-<span data-ttu-id="1f218-123">Infine, per finalizzare le modifiche, riavviare il servizio di integrità nel server di gestione radice di System Center Operations Manager.</span><span class="sxs-lookup"><span data-stu-id="1f218-123">Lastly, to finalize your changes, restart the health service on the System Center Operations Manager Root Management Server.</span></span>
+<span data-ttu-id="86f38-123">Infine, per finalizzare le modifiche, riavviare il servizio di integrità nel server di gestione radice di System Center Operations Manager.</span><span class="sxs-lookup"><span data-stu-id="86f38-123">Lastly, to finalize your changes, restart the health service on the System Center Operations Manager Root Management Server.</span></span>
 
 </div>
 

@@ -12,20 +12,20 @@ ms:contentKeyID: 48183483
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: edacf70cf4a8b899857864c400fa92f78bb0d94b
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: c167dc4f81053d5b9dde547f2f1e6e3d9d1a0fe7
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42049518"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42140119"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deploying-branch-sites-in-lync-server-2013"></a><span data-ttu-id="12ac6-102">Distribuzione di siti di succursale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="12ac6-102">Deploying branch sites in Lync Server 2013</span></span>
+# <a name="deploying-branch-sites-in-lync-server-2013"></a><span data-ttu-id="e708b-102">Distribuzione di siti di succursale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e708b-102">Deploying branch sites in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,31 +35,31 @@ ms.locfileid: "42049518"
 
 <span> </span>
 
-<span data-ttu-id="12ac6-103">_**Ultimo argomento modificato:** 2012-09-21_</span><span class="sxs-lookup"><span data-stu-id="12ac6-103">_**Topic Last Modified:** 2012-09-21_</span></span>
+<span data-ttu-id="e708b-103">_**Ultimo argomento modificato:** 2012-09-21_</span><span class="sxs-lookup"><span data-stu-id="e708b-103">_**Topic Last Modified:** 2012-09-21_</span></span>
 
-<span data-ttu-id="12ac6-104">Gli utenti del sito di succursale ottengono la maggior parte delle funzionalità di Lync Server 2013 dal server nel sito centrale a cui è associato il sito di succursale.</span><span class="sxs-lookup"><span data-stu-id="12ac6-104">Branch site users get most of their Lync Server 2013 functionality from the server at the central site that the branch site is associated with.</span></span> <span data-ttu-id="12ac6-105">Ogni sito di succursale è associato esattamente a un sito centrale.</span><span class="sxs-lookup"><span data-stu-id="12ac6-105">Each branch site is associated with exactly one central site.</span></span> <span data-ttu-id="12ac6-106">Per garantire le chiamate alla e dalla rete PSTN (Public Switched Telephone Network), un sito di succursale può includere uno o più elementi seguenti:</span><span class="sxs-lookup"><span data-stu-id="12ac6-106">To provide calls to and from the public switched telephone network (PSTN), a branch site might contain any of the following:</span></span>
+<span data-ttu-id="e708b-104">Gli utenti del sito di succursale ottengono la maggior parte delle funzionalità di Lync Server 2013 dal server nel sito centrale a cui è associato il sito di succursale.</span><span class="sxs-lookup"><span data-stu-id="e708b-104">Branch site users get most of their Lync Server 2013 functionality from the server at the central site that the branch site is associated with.</span></span> <span data-ttu-id="e708b-105">Ogni sito di succursale è associato esattamente a un sito centrale.</span><span class="sxs-lookup"><span data-stu-id="e708b-105">Each branch site is associated with exactly one central site.</span></span> <span data-ttu-id="e708b-106">Per garantire le chiamate alla e dalla rete PSTN (Public Switched Telephone Network), un sito di succursale può includere uno o più elementi seguenti:</span><span class="sxs-lookup"><span data-stu-id="e708b-106">To provide calls to and from the public switched telephone network (PSTN), a branch site might contain any of the following:</span></span>
 
-  - <span data-ttu-id="12ac6-107">Un gateway PSTN ed eventualmente un Mediation Server</span><span class="sxs-lookup"><span data-stu-id="12ac6-107">A PSTN gateway and possibly a Meditation Server</span></span>
+  - <span data-ttu-id="e708b-107">Un gateway PSTN ed eventualmente un Mediation Server</span><span class="sxs-lookup"><span data-stu-id="e708b-107">A PSTN gateway and possibly a Meditation Server</span></span>
 
-  - <span data-ttu-id="12ac6-108">Un trunk SIP</span><span class="sxs-lookup"><span data-stu-id="12ac6-108">A SIP trunk</span></span>
+  - <span data-ttu-id="e708b-108">Un trunk SIP</span><span class="sxs-lookup"><span data-stu-id="e708b-108">A SIP trunk</span></span>
 
-  - <span data-ttu-id="12ac6-109">Un'infrastruttura vocale esistente con un centralino (PBX)</span><span class="sxs-lookup"><span data-stu-id="12ac6-109">An existing voice infrastructure with a private branch exchange (PBX)</span></span>
+  - <span data-ttu-id="e708b-109">Un'infrastruttura vocale esistente con un centralino (PBX)</span><span class="sxs-lookup"><span data-stu-id="e708b-109">An existing voice infrastructure with a private branch exchange (PBX)</span></span>
 
-  - <span data-ttu-id="12ac6-110">Un Survivable Branch Appliance</span><span class="sxs-lookup"><span data-stu-id="12ac6-110">A Survivable Branch Appliance</span></span>
+  - <span data-ttu-id="e708b-110">Un Survivable Branch Appliance</span><span class="sxs-lookup"><span data-stu-id="e708b-110">A Survivable Branch Appliance</span></span>
 
-  - <span data-ttu-id="12ac6-111">Survivable Branch Server</span><span class="sxs-lookup"><span data-stu-id="12ac6-111">A Survivable Branch Server</span></span>
+  - <span data-ttu-id="e708b-111">Survivable Branch Server</span><span class="sxs-lookup"><span data-stu-id="e708b-111">A Survivable Branch Server</span></span>
 
-<span data-ttu-id="12ac6-112">I siti di succursale con un Survivable Branch Appliance o un Survivable Branch Server sono più resistenti in periodi di problemi di rete o di siti centrali di aree estese rispetto a quelli di succursale senza una di queste soluzioni.</span><span class="sxs-lookup"><span data-stu-id="12ac6-112">Branch sites with a Survivable Branch Appliance or a Survivable Branch Server are more resilient in times of wide-area network or central site failures than branch sites without one of these solutions.</span></span> <span data-ttu-id="12ac6-113">Ad esempio, in un sito in cui è presente un Survivable Branch Appliance o un Survivable Branch Server distribuito, gli utenti possono comunque effettuare e ricevere chiamate PSTN se la rete che connette il sito di succursale al sito centrale è inattivo.</span><span class="sxs-lookup"><span data-stu-id="12ac6-113">For example, in a site with a Survivable Branch Appliance or a Survivable Branch Server deployed, users can still make and receive PSTN calls if the network connecting the branch site to the central site is down.</span></span> <span data-ttu-id="12ac6-114">Un altro modo per ottenere la resilienza dei siti di succursale consiste nell'utilizzare un gateway PSTN o un trunk SIP con una distribuzione di Lync Server su vasta scala nel sito di succursale.</span><span class="sxs-lookup"><span data-stu-id="12ac6-114">Another way to achieve branch-site resiliency is by using a PSTN gateway or a SIP trunk with a full-scale Lync Server deployment at the branch site.</span></span>
+<span data-ttu-id="e708b-112">I siti di succursale con un Survivable Branch Appliance o un Survivable Branch Server sono più resistenti in periodi di problemi di rete o di siti centrali di aree estese rispetto a quelli di succursale senza una di queste soluzioni.</span><span class="sxs-lookup"><span data-stu-id="e708b-112">Branch sites with a Survivable Branch Appliance or a Survivable Branch Server are more resilient in times of wide-area network or central site failures than branch sites without one of these solutions.</span></span> <span data-ttu-id="e708b-113">Ad esempio, in un sito in cui è presente un Survivable Branch Appliance o un Survivable Branch Server distribuito, gli utenti possono comunque effettuare e ricevere chiamate PSTN se la rete che connette il sito di succursale al sito centrale è inattivo.</span><span class="sxs-lookup"><span data-stu-id="e708b-113">For example, in a site with a Survivable Branch Appliance or a Survivable Branch Server deployed, users can still make and receive PSTN calls if the network connecting the branch site to the central site is down.</span></span> <span data-ttu-id="e708b-114">Un altro modo per ottenere la resilienza dei siti di succursale consiste nell'utilizzare un gateway PSTN o un trunk SIP con una distribuzione di Lync Server su vasta scala nel sito di succursale.</span><span class="sxs-lookup"><span data-stu-id="e708b-114">Another way to achieve branch-site resiliency is by using a PSTN gateway or a SIP trunk with a full-scale Lync Server deployment at the branch site.</span></span>
 
-<span data-ttu-id="12ac6-115">Per informazioni dettagliate sulla distribuzione dei siti di succursale per l'organizzazione, inclusi i prerequisiti e altre considerazioni relative alla pianificazione, vedere [Planning for PSTN Connectivity in Lync server 2013](lync-server-2013-planning-for-pstn-connectivity.md) e [Planning for Branch-site Voice Resilienzy in Lync Server 2013](lync-server-2013-planning-for-branch-site-voice-resiliency.md) nella documentazione relativa alla pianificazione.</span><span class="sxs-lookup"><span data-stu-id="12ac6-115">For details about which branch site deployment is right for your organization, including prerequisites and other planning considerations, see [Planning for PSTN connectivity in Lync Server 2013](lync-server-2013-planning-for-pstn-connectivity.md) and [Planning for branch-site voice resiliency in Lync Server 2013](lync-server-2013-planning-for-branch-site-voice-resiliency.md) in the Planning documentation.</span></span>
+<span data-ttu-id="e708b-115">Per informazioni dettagliate sulla distribuzione dei siti di succursale per l'organizzazione, inclusi i prerequisiti e altre considerazioni relative alla pianificazione, vedere [Planning for PSTN Connectivity in Lync server 2013](lync-server-2013-planning-for-pstn-connectivity.md) e [Planning for Branch-site Voice Resilienzy in Lync Server 2013](lync-server-2013-planning-for-branch-site-voice-resiliency.md) nella documentazione relativa alla pianificazione.</span><span class="sxs-lookup"><span data-stu-id="e708b-115">For details about which branch site deployment is right for your organization, including prerequisites and other planning considerations, see [Planning for PSTN connectivity in Lync Server 2013](lync-server-2013-planning-for-pstn-connectivity.md) and [Planning for branch-site voice resiliency in Lync Server 2013](lync-server-2013-planning-for-branch-site-voice-resiliency.md) in the Planning documentation.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="12ac6-116">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="12ac6-116">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="e708b-116">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="e708b-116">In This Section</span></span>
 
-  - [<span data-ttu-id="12ac6-117">Fornitura di connettività PSTN in un sito di succursale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="12ac6-117">Providing PSTN connectivity at a branch site in Lync Server 2013</span></span>](lync-server-2013-providing-pstn-connectivity-at-a-branch-site.md)
+  - [<span data-ttu-id="e708b-117">Fornitura di connettività PSTN in un sito di succursale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e708b-117">Providing PSTN connectivity at a branch site in Lync Server 2013</span></span>](lync-server-2013-providing-pstn-connectivity-at-a-branch-site.md)
 
-  - [<span data-ttu-id="12ac6-118">Distribuzione di un Survivable Branch Appliance o server con Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="12ac6-118">Deploying a Survivable Branch Appliance or Server with Lync Server 2013</span></span>](lync-server-2013-deploying-a-survivable-branch-appliance-or-server.md)
+  - [<span data-ttu-id="e708b-118">Distribuzione di un Survivable Branch Appliance o server con Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e708b-118">Deploying a Survivable Branch Appliance or Server with Lync Server 2013</span></span>](lync-server-2013-deploying-a-survivable-branch-appliance-or-server.md)
 
 </div>
 

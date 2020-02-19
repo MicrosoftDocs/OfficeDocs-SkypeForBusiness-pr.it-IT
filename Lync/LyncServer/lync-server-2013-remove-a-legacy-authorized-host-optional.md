@@ -12,20 +12,20 @@ ms:contentKeyID: 48183252
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 277e977ae17d79c5c961586d40c9a30e4332b45a
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 075d7acecdff50c7cec7e14f6c645ba43484828e
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42048717"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42138807"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="remove-a-legacy-authorized-host-in-lync-server-2013-optional"></a><span data-ttu-id="715e2-102">Rimuovere un host autorizzato legacy in Lync Server 2013 (facoltativo)</span><span class="sxs-lookup"><span data-stu-id="715e2-102">Remove a legacy authorized host in Lync Server 2013 (optional)</span></span>
+# <a name="remove-a-legacy-authorized-host-in-lync-server-2013-optional"></a><span data-ttu-id="ce494-102">Rimuovere un host autorizzato legacy in Lync Server 2013 (facoltativo)</span><span class="sxs-lookup"><span data-stu-id="ce494-102">Remove a legacy authorized host in Lync Server 2013 (optional)</span></span>
 
 </div>
 
@@ -35,16 +35,16 @@ ms.locfileid: "42048717"
 
 <span> </span>
 
-<span data-ttu-id="715e2-103">_**Ultimo argomento modificato:** 2012-09-05_</span><span class="sxs-lookup"><span data-stu-id="715e2-103">_**Topic Last Modified:** 2012-09-05_</span></span>
+<span data-ttu-id="ce494-103">_**Ultimo argomento modificato:** 2012-09-05_</span><span class="sxs-lookup"><span data-stu-id="ce494-103">_**Topic Last Modified:** 2012-09-05_</span></span>
 
-<span data-ttu-id="715e2-104">Quando si esegue la migrazione del controllo delle chiamate remote a una distribuzione di Lync Server, è necessario rimuovere le voci host autorizzate legacy (note come *voci di applicazioni attendibili* in Lync Server) per qualsiasi gateway SIP/CSTA nella distribuzione legacy.</span><span class="sxs-lookup"><span data-stu-id="715e2-104">When you migrate remote call control to a Lync Server deployment, you must remove legacy authorized host entries (known as *trusted application entries* in Lync Server) for any SIP/CSTA gateways in your legacy deployment.</span></span> <span data-ttu-id="715e2-105">È necessario servirsi degli strumenti di amministrazione per rimuovere le voci host autorizzato rispettivamente dalle distribuzioni dell'uno o dell'altro tipo.</span><span class="sxs-lookup"><span data-stu-id="715e2-105">You must use the administrative tools to remove authorized host entries from those deployments, respectively.</span></span>
+<span data-ttu-id="ce494-104">Quando si esegue la migrazione del controllo delle chiamate remote a una distribuzione di Lync Server, è necessario rimuovere le voci host autorizzate legacy (note come *voci di applicazioni attendibili* in Lync Server) per qualsiasi gateway SIP/CSTA nella distribuzione legacy.</span><span class="sxs-lookup"><span data-stu-id="ce494-104">When you migrate remote call control to a Lync Server deployment, you must remove legacy authorized host entries (known as *trusted application entries* in Lync Server) for any SIP/CSTA gateways in your legacy deployment.</span></span> <span data-ttu-id="ce494-105">È necessario servirsi degli strumenti di amministrazione per rimuovere le voci host autorizzato rispettivamente dalle distribuzioni dell'uno o dell'altro tipo.</span><span class="sxs-lookup"><span data-stu-id="ce494-105">You must use the administrative tools to remove authorized host entries from those deployments, respectively.</span></span>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="715e2-106">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="715e2-106">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ce494-106">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="ce494-106">See Also</span></span>
 
 
-[<span data-ttu-id="715e2-107">Configurare una voce di applicazione attendibile per il controllo delle chiamate remote in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="715e2-107">Configure a trusted application entry for remote call control in Lync Server 2013</span></span>](lync-server-2013-configure-a-trusted-application-entry-for-remote-call-control.md)  
+[<span data-ttu-id="ce494-107">Configurare una voce di applicazione attendibile per il controllo delle chiamate remote in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ce494-107">Configure a trusted application entry for remote call control in Lync Server 2013</span></span>](lync-server-2013-configure-a-trusted-application-entry-for-remote-call-control.md)  
   
 
 </div>
