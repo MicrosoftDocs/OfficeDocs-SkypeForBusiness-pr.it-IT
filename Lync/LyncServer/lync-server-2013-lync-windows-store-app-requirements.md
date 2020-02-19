@@ -12,18 +12,18 @@ ms:contentKeyID: 50120200
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 48804305d58be57e824b1ac93f22c2a998d070ce
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 84e4c7c9f4fb07d737b4f384faa5559a69c2392c
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42037596"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42137685"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="lync-windows-store-app-requirements-for-lync-server-2013"></a>Requisiti delle app di Windows Store di Lync per Lync Server 2013
 
@@ -43,7 +43,7 @@ Le organizzazioni che dispongono di una distribuzione locale di Lync Server devo
 
 
 > [!NOTE]  
-> Per Lync Server 2010, eseguire l'aggiornamento cumulativo per Lync Server 2010: febbraio 2012 (disponibile all'indirizzo <A class=uri href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2670352"> http://go.microsoft.com/fwlink/?linkid=3052&amp; kbid = 2670352</A>) o versioni successive su tutti i server. Per consentire agli utenti di partecipare alle riunioni, eseguire l'aggiornamento cumulativo per Lync Server 2010: ottobre 2012 (disponibile all'indirizzo <A class=uri href="http://go.microsoft.com/fwlink/?linkid=3052%26kbid=2737915"> http://go.microsoft.com/fwlink/?linkid=3052&amp; kbid = 2737915</A>) nei server.
+> Per Lync Server 2010, eseguire l'aggiornamento cumulativo per Lync Server 2010: febbraio 2012 (disponibile all'indirizzo <A class=uri href="https://go.microsoft.com/fwlink/?linkid=3052%26kbid=2670352"> https://go.microsoft.com/fwlink/?linkid=3052&amp; kbid = 2670352</A>) o versioni successive su tutti i server. Per consentire agli utenti di partecipare alle riunioni, eseguire l'aggiornamento cumulativo per Lync Server 2010: ottobre 2012 (disponibile all'indirizzo <A class=uri href="https://go.microsoft.com/fwlink/?linkid=3052%26kbid=2737915"> https://go.microsoft.com/fwlink/?linkid=3052&amp; kbid = 2737915</A>) nei server.
 
 
 
@@ -61,7 +61,7 @@ Le organizzazioni che dispongono di una distribuzione locale di Lync Server devo
 
   - Nei client, installare Windows 8,1 e la versione più recente di Lync Windows Store app per correggere un problema di accesso che si verifica generalmente quando si utilizzano più domini (ad esempio, quando l'URI SIP è **usera@domainZ.com** ma il server perimetrale è **SIP.domainX.com**).
 
-Se l'organizzazione sottoscrive Lync Online o Office 365 e si utilizza il proprio nome di dominio, è necessario eseguire alcuni passaggi aggiuntivi per configurare la rete per l'individuazione automatica dei server Lync. I requisiti di configurazione della rete sono gli stessi per l'app Lync Windows Store e Lync su dispositivi mobili. Seguire le istruzioni "configurare la rete" nell'articolo wiki di Office 365 "set up Lync Mobile Devices", disponibile all' [http://go.microsoft.com/fwlink/?LinkId=271822](http://go.microsoft.com/fwlink/?linkid=271822)indirizzo.
+Se l'organizzazione sottoscrive Lync Online o Office 365 e si utilizza il proprio nome di dominio, è necessario eseguire alcuni passaggi aggiuntivi per configurare la rete per l'individuazione automatica dei server Lync. I requisiti di configurazione della rete sono gli stessi per l'app Lync Windows Store e Lync su dispositivi mobili. Seguire le istruzioni "configurare la rete" nell'articolo wiki di Office 365 "set up Lync Mobile Devices", disponibile all' [https://go.microsoft.com/fwlink/?LinkId=271822](https://go.microsoft.com/fwlink/?linkid=271822)indirizzo.
 
 <div>
 

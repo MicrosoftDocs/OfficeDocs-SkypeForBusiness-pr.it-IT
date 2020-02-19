@@ -12,18 +12,18 @@ ms:contentKeyID: 48184145
 ms.date: 07/28/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 87ad05798dab0f324a44a4c41807e8acb6105927
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 07e670dc0871490e513023d3276ad80126be173b
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42038078"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42141049"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="troubleshooting-lync-server-2013-control-panel"></a>Risoluzione dei problemi relativi al Pannello di controllo di Lync Server 2013
 
@@ -55,7 +55,7 @@ Per il pannello di controllo di Lync Server è necessario che sia installato il 
 
 </div>
 
-Se il browser Internet blocca l'installazione di Silverlight a causa di considerazioni sulla sicurezza, aggiungere l'URL (Uniform Resource Locator) che apre il pannello di controllo di Lync Server all'elenco dei siti attendibili. Nelle impostazioni di sicurezza di Internet Explorer assicurarsi che l'opzione **Esegui controlli ActiveX e plug-in** sia impostata su **Attivato**. Per informazioni dettagliate, [http://go.microsoft.com/fwlink/p/?linkId=214060](http://go.microsoft.com/fwlink/p/?linkid=214060)vedere. Assicurarsi inoltre che il browser sia configurato per l'utilizzo di SSL 3.0.
+Se il browser Internet blocca l'installazione di Silverlight a causa di considerazioni sulla sicurezza, aggiungere l'URL (Uniform Resource Locator) che apre il pannello di controllo di Lync Server all'elenco dei siti attendibili. Nelle impostazioni di sicurezza di Internet Explorer assicurarsi che l'opzione **Esegui controlli ActiveX e plug-in** sia impostata su **Attivato**. Per informazioni dettagliate, [https://go.microsoft.com/fwlink/p/?linkId=214060](https://go.microsoft.com/fwlink/p/?linkid=214060)vedere. Assicurarsi inoltre che il browser sia configurato per l'utilizzo di SSL 3.0.
 
 Se il browser Internet è configurato per l'utilizzo di un server proxy, verificare che il browser sia configurato per il bypass del server proxy per i siti rilevati automaticamente come siti interni. In alternativa aggiungere l'indirizzo all'elenco delle eccezioni del browser nelle impostazioni di configurazione del server proxy.
 

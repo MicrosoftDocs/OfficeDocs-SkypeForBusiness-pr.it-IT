@@ -13,18 +13,18 @@ ms:contentKeyID: 65227958
 ms.date: 09/18/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5bd70d0f37dbed8a38994af6dc806556380484b5
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 4a78e229b54ec165897d920d8f04db49451eac9b
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42006612"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42136043"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="configure-the-client-experience-with-skype-for-business"></a>Configurare l'esperienza client con Skype for business
 
@@ -38,9 +38,9 @@ ms.locfileid: "42006612"
 
 _**Ultimo argomento modificato:** 2015-09-17_
 
-**Riepilogo:** In questo argomento viene descritto come configurare l'esperienza client per gli utenti di client Skype for business in un ambiente Lync Server 2013. È possibile configurare l'esperienza client solo se è in esecuzione Lync Server 2013 con l'aggiornamento cumulativo di dicembre 2014 (5.0.8308.857) o versioni successive. Per informazioni sull'aggiornamento di Lync Server 2013, vedere [Updates for Lync server 2013](http://go.microsoft.com/fwlink/p/?linkid=532651).
+**Riepilogo:** In questo argomento viene descritto come configurare l'esperienza client per gli utenti di client Skype for business in un ambiente Lync Server 2013. È possibile configurare l'esperienza client solo se è in esecuzione Lync Server 2013 con l'aggiornamento cumulativo di dicembre 2014 (5.0.8308.857) o versioni successive. Per informazioni sull'aggiornamento di Lync Server 2013, vedere [Updates for Lync server 2013](https://go.microsoft.com/fwlink/p/?linkid=532651).
 
-Skype for business offre una nuova esperienza utente basata sull'esperienza del prodotto consumer Skype. Oltre a tutte le funzionalità di Lync, Skype for business offre nuove funzionalità con controlli semplificati e icone note. Per informazioni dettagliate sulla nuova esperienza client, vedere [Lync è ora Skype for Business--vedere What ' s New](http://go.microsoft.com/fwlink/?linkid=529022).
+Skype for business offre una nuova esperienza utente basata sull'esperienza del prodotto consumer Skype. Oltre a tutte le funzionalità di Lync, Skype for business offre nuove funzionalità con controlli semplificati e icone note. Per informazioni dettagliate sulla nuova esperienza client, vedere [Lync è ora Skype for Business--vedere What ' s New](https://go.microsoft.com/fwlink/?linkid=529022).
 
 Lync Server 2013 supporta la nuova esperienza client Skype for business e l'esperienza client Lync. In qualità di amministratore, è possibile scegliere l'esperienza client preferita per gli utenti. Ad esempio, è possibile distribuire l'esperienza client di Lync fino a quando gli utenti dell'organizzazione non sono completamente formati nella nuova esperienza Skype for business. In alternativa, se non sono stati ancora aggiornati tutti gli utenti a Skype for Business Server 2015, è possibile che tutti gli utenti abbiano la stessa esperienza client finché non vengono aggiornati tutti al nuovo server.
 
@@ -263,9 +263,9 @@ La tabella successiva Visualizza l'esperienza client quando l'amministratore cam
 
 Le versioni delle patch necessarie per gestire la configurazione del client Skype for business sono le seguenti:
 
-  - Lync Server 2010-February 2015 Cumulative Update (4.0.7577.710) per Lync Server 2010. Per informazioni, vedere [Updates for Lync Server 2010](http://go.microsoft.com/fwlink/p/?linkid=532771)
+  - Lync Server 2010-February 2015 Cumulative Update (4.0.7577.710) per Lync Server 2010. Per informazioni, vedere [Updates for Lync Server 2010](https://go.microsoft.com/fwlink/p/?linkid=532771)
 
-  - Lync Server 2013-dicembre 2014 Cumulative Update (5.0.8308.857) per Lync Server 2013. Per informazioni, vedere [Updates for Lync Server 2013](http://go.microsoft.com/fwlink/p/?linkid=532772).
+  - Lync Server 2013-dicembre 2014 Cumulative Update (5.0.8308.857) per Lync Server 2013. Per informazioni, vedere [Updates for Lync Server 2013](https://go.microsoft.com/fwlink/p/?linkid=532772).
 
 </div>
 
@@ -281,7 +281,7 @@ Nella procedura seguente viene descritto come modificare il registro di sistema 
 
 1.  Avviare la **console di gestione di criteri di gruppo**.
     
-    Per informazioni su come utilizzare la console Gestione criteri di gruppo, vedere [Group Policy Management Console](http://go.microsoft.com/fwlink/?linkid=532759).
+    Per informazioni su come utilizzare la console Gestione criteri di gruppo, vedere [Group Policy Management Console](https://go.microsoft.com/fwlink/?linkid=532759).
 
 2.  Fare clic con il pulsante destro del mouse sul nodo **oggetti Criteri di gruppo** e scegliere **nuovo** dal menu.
 

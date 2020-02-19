@@ -12,18 +12,18 @@ ms:contentKeyID: 56280894
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ce5ece90e8db4240eaef00f39a827e6779663dcc
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 0caac7e07d83658fd1b39192a6d9792ae6b17c0e
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42006362"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42137225"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="using-the-capacity-planning-calculator-for-lync-server-2013"></a>Utilizzo del calcolatore di pianificazione della capacità per Lync Server 2013
 
@@ -37,13 +37,13 @@ ms.locfileid: "42006362"
 
 _**Ultimo argomento modificato:** 2013-11-21_
 
-Microsoft® Lync™ Server 2013 Capacity Planning Calculator è disponibile per il download <http://www.microsoft.com/download/details.aspx?id=36828>all'indirizzo. È stato creato per facilitare la determinazione dei requisiti del server in base al numero di utenti e alle modalità di comunicazione abilitate nell'organizzazione. Immettere il profilo dell'organizzazione e la calcolatrice fornisce consigli utili per la pianificazione della topologia.
+Microsoft® Lync™ Server 2013 Capacity Planning Calculator è disponibile per il download <https://www.microsoft.com/download/details.aspx?id=36828>all'indirizzo. È stato creato per facilitare la determinazione dei requisiti del server in base al numero di utenti e alle modalità di comunicazione abilitate nell'organizzazione. Immettere il profilo dell'organizzazione e la calcolatrice fornisce consigli utili per la pianificazione della topologia.
 
-I suggerimenti creati dalla calcolatrice sono solo a scopo di pianificazione. È necessaria una simulazione di carico effettiva per garantire che Lync Server 2013 sia adeguatamente provisioning. Per eseguire il test di stress con un carico simulato, utilizzare lo strumento di analisi [dello stress e delle prestazioni di Lync Server 2013](http://go.microsoft.com/fwlink/?linkid=282724).
+I suggerimenti creati dalla calcolatrice sono solo a scopo di pianificazione. È necessaria una simulazione di carico effettiva per garantire che Lync Server 2013 sia adeguatamente provisioning. Per eseguire il test di stress con un carico simulato, utilizzare lo strumento di analisi [dello stress e delle prestazioni di Lync Server 2013](https://go.microsoft.com/fwlink/?linkid=282724).
 
 Dopo aver determinato il profilo utente e le modalità che si desidera abilitare per gli utenti, è opportuno utilizzare la calcolatrice per pianificare il numero di server, la memoria e la larghezza di banda necessaria. Questa versione della calcolatrice non fornisce indicazioni per I requisiti di I/O su disco.
 
-Questo calcolatore è complementare a [Microsoft Lync Server](http://go.microsoft.com/fwlink/?linkid=282725) e [Microsoft Lync Server](lync-server-2013-planning.md). Utilizzare la calcolatrice dopo aver esaminato la guida e aver creato una topologia consigliata tramite lo strumento di pianificazione.
+Questo calcolatore è complementare a [Microsoft Lync Server](https://go.microsoft.com/fwlink/?linkid=282725) e [Microsoft Lync Server](lync-server-2013-planning.md). Utilizzare la calcolatrice dopo aver esaminato la guida e aver creato una topologia consigliata tramite lo strumento di pianificazione.
 
 Se si dispone di informazioni accurate e dettagliate sul profilo utente specifico, è possibile trarre vantaggio dalla calcolatrice. Ad esempio, la percentuale di utenti abilitati per la voce, le chiamate medie per utente all'ora, la durata delle chiamate e la percentuale di utenti simultanei nelle conferenze possono fare una differenza enorme nei requisiti del server. L'accuratezza dei suggerimenti creati dalla calcolatrice dipende dall'accuratezza delle informazioni fornite.
 

@@ -12,18 +12,18 @@ ms:contentKeyID: 49733747
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dd73e1356e42aca8dc4159143287371dd66f0688
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 4d77d39cfa1483db9251d038f876f8e91428ae23
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42037968"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42135673"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="overview-of-av-conferencing-in-lync-server-2013"></a>Panoramica di A/V Conferencing in Lync Server 2013
 
@@ -43,7 +43,7 @@ Per la pianificazione delle conferenze audio/video è necessario conoscere i req
 
 Prima di abilitare gli utenti per il servizio A/V Conferencing, verificare che la rete sia in grado di gestire il carico risultante. Senza larghezza di banda di rete sufficiente, l'esperienza utente può essere gravemente degradata. È possibile utilizzare il controllo di ammissione di chiamata per gestire la larghezza di banda di rete utilizzata da A/V Conferencing. Questo è importante per le reti limitate, ad esempio collegamenti a larghezza di banda limitate tra i siti centrali e di succursale. Per ulteriori informazioni, vedere [Panoramica del controllo di ammissione di chiamata in Lync Server 2013](lync-server-2013-overview-of-call-admission-control.md). Per informazioni dettagliate sui requisiti di larghezza di banda multimediale, vedere [requisiti di larghezza di banda di rete per il traffico multimediale in Lync Server 2013](lync-server-2013-network-bandwidth-requirements-for-media-traffic.md).
 
-Se si distribuiscono audioconferenza in rete, gli utenti avranno bisogno di dispositivi audio come gli auricolari per partecipare a una conferenza audio. Se si distribuiscono video Conferencing, è necessario distribuire dispositivi video, ad esempio webcams per gli utenti. È consigliabile utilizzare i dispositivi Unified Communications (UC) certificati da Microsoft per tutti i tipi di dispositivi, per garantire un'esperienza utente ottimale. Per informazioni dettagliate sui dispositivi certificati per le comunicazioni unificate, vedere "telefoni e dispositivi [http://go.microsoft.com/fwlink/p/?LinkId=263861](http://go.microsoft.com/fwlink/p/?linkid=263861)per Lync" all'indirizzo. Per i dispositivi audio o video, la distribuzione dei dispositivi e la formazione degli utenti sono passaggi importanti da considerare e pianificare.
+Se si distribuiscono audioconferenza in rete, gli utenti avranno bisogno di dispositivi audio come gli auricolari per partecipare a una conferenza audio. Se si distribuiscono video Conferencing, è necessario distribuire dispositivi video, ad esempio webcams per gli utenti. È consigliabile utilizzare i dispositivi Unified Communications (UC) certificati da Microsoft per tutti i tipi di dispositivi, per garantire un'esperienza utente ottimale. Per informazioni dettagliate sui dispositivi certificati per le comunicazioni unificate, vedere "telefoni e dispositivi [https://go.microsoft.com/fwlink/p/?LinkId=263861](https://go.microsoft.com/fwlink/p/?linkid=263861)per Lync" all'indirizzo. Per i dispositivi audio o video, la distribuzione dei dispositivi e la formazione degli utenti sono passaggi importanti da considerare e pianificare.
 
 Nelle sezioni seguenti vengono descritte le funzionalità per le conferenze audio e video, incluse le informazioni sulla gestione della larghezza di banda e la selezione dei client adatti.
 

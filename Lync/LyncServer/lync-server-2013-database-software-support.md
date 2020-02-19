@@ -12,18 +12,18 @@ ms:contentKeyID: 48185517
 ms.date: 12/02/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: da1ffd79ccfb652c0f853cb027577d477a14d33e
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: f8134c9ab0fe6cd481116c8a3d17636b04c980e5
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42044128"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42138307"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="database-software-support-in-lync-server-2013"></a>Supporto software per database in Lync Server 2013
 
@@ -120,7 +120,7 @@ Il supporto per il clustering di SQL è per una configurazione attiva/passiva. P
 
 Per ulteriori informazioni sul mirroring SQL, vedere [back end server high availability in Lync server 2013](lync-server-2013-back-end-server-high-availability.md). Per informazioni dettagliate su come distribuire il clustering SQL, vedere [Configure SQL Server clustering for Lync server 2013](lync-server-2013-configure-sql-server-clustering.md).
 
-Per ulteriori informazioni e procedure consigliate per il clustering di failover in SQL Server <http://technet.microsoft.com/library/hh231721.aspx>2012, vedere. Per il clustering di failover in SQL Server 2008 <http://technet.microsoft.com/library/ms189134(v=sql.105).aspx>, vedere.
+Per ulteriori informazioni e procedure consigliate per il clustering di failover in SQL Server <https://technet.microsoft.com/library/hh231721.aspx>2012, vedere. Per il clustering di failover in SQL Server 2008 <https://technet.microsoft.com/library/ms189134(v=sql.105).aspx>, vedere.
 
 </div>
 

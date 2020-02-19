@@ -12,18 +12,18 @@ ms:contentKeyID: 48184957
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: aacaa402b325fbefe13d70dea4f3e74af1d896cb
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: db24139be4c80b66cc03ff20d2155a00681111dc
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42007545"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42138657"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="using-setup-command-line-options-in-lync-server-2013"></a>Utilizzo delle opzioni della riga di comando del programma di installazione in Lync Server 2013
 
@@ -83,7 +83,7 @@ La riga di comando di Setup.exe di Office riconosce le opzioni descritte nella t
 </table>
 
 
-Per informazioni dettagliate sull'utilizzo delle opzioni della riga di comando del <http://go.microsoft.com/fwlink/p/?linkid=267515>programma di installazione, vedere.
+Per informazioni dettagliate sull'utilizzo delle opzioni della riga di comando del <https://go.microsoft.com/fwlink/p/?linkid=267515>programma di installazione, vedere.
 
 </div>
 

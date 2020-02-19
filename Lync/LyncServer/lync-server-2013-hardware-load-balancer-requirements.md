@@ -12,18 +12,18 @@ ms:contentKeyID: 49287208
 ms.date: 05/11/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c89c600c822bc4e830bf60ed8131f747172018e2
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: d54ad738824b2ccaa4daf7f67758a970c24cee6a
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42030319"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42138027"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="hardware-load-balancer-requirements-for-lync-server-2013"></a>Requisiti per il bilanciamento del carico hardware per Lync Server 2013
 
@@ -75,7 +75,7 @@ La topologia perimetrale consolidata di Lync Server 2013 è ottimizzata per il b
 
 </div>
 
-Per determinare se il dispositivo di bilanciamento del carico hardware supporta le funzionalità necessarie per Lync Server 2013, vedere la sezione relativa ai partner di bilanciamento del carico [http://go.microsoft.com/fwlink/p/?linkId=202452](http://go.microsoft.com/fwlink/p/?linkid=202452)di lync Server 2010 all'indirizzo.
+Per determinare se il dispositivo di bilanciamento del carico hardware supporta le funzionalità necessarie per Lync Server 2013, vedere la sezione relativa ai partner di bilanciamento del carico [https://go.microsoft.com/fwlink/p/?linkId=202452](https://go.microsoft.com/fwlink/p/?linkid=202452)di lync Server 2010 all'indirizzo.
 
 <div>
 
@@ -143,7 +143,7 @@ Se si distribuiscono dispositivi mobili, il servizio di bilanciamento del carico
 
 
 > [!WARNING]  
-> I servizi di bilanciamento del carico hardware F5 presentano una funzionalità chiamata OneConnect che garantisce che il bilanciamento del carico venga eseguito per ogni singola richiesta all'interno di una connessione TCP. Se si distribuiscono dispositivi mobili, verificare che il fornitore di servizi di bilanciamento del carico hardware supporti la stessa funzionalità. Le applicazioni per dispositivi mobili Apple iOS più recenti richiedono TLS (Transport Layer Security) versione 1.2. F5 offre impostazioni specifiche a questo scopo.<BR>Per informazioni dettagliate sui dispositivi di bilanciamento del carico hardware di terze parti, vedere<A href="http://go.microsoft.com/fwlink/p/?linkid=230700">http://go.microsoft.com/fwlink/p/?linkId=230700</A>
+> I servizi di bilanciamento del carico hardware F5 presentano una funzionalità chiamata OneConnect che garantisce che il bilanciamento del carico venga eseguito per ogni singola richiesta all'interno di una connessione TCP. Se si distribuiscono dispositivi mobili, verificare che il fornitore di servizi di bilanciamento del carico hardware supporti la stessa funzionalità. Le applicazioni per dispositivi mobili Apple iOS più recenti richiedono TLS (Transport Layer Security) versione 1.2. F5 offre impostazioni specifiche a questo scopo.<BR>Per informazioni dettagliate sui dispositivi di bilanciamento del carico hardware di terze parti, vedere<A href="https://go.microsoft.com/fwlink/p/?linkid=230700">https://go.microsoft.com/fwlink/p/?linkId=230700</A>
 
 
 

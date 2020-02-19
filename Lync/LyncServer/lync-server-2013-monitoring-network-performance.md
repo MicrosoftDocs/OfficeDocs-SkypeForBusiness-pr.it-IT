@@ -12,18 +12,18 @@ ms:contentKeyID: 63969647
 ms.date: 04/27/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8524499737ae1e52a36a80fbc636f005b687a6a0
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: aafea72c7e30644f8a882f1cf556c665e1e285ad
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42047969"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42140179"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="monitoring-network-performance-in-lync-server-2013"></a>Monitoraggio delle prestazioni di rete in Lync Server 2013
 
@@ -73,7 +73,7 @@ System Center Operations Manager fornisce la gestione dei servizi end-to-end fac
 
 Per ulteriori informazioni, vedere:
 
-[Microsoft System Center Operations Manager](http://go.microsoft.com/fwlink/p/?linkid=243651)
+[Microsoft System Center Operations Manager](https://go.microsoft.com/fwlink/p/?linkid=243651)
 
 [Soluzioni per Microsoft System Center Operations Manager](http://www.emc.com/collateral/software/data-sheet/h6135-server-manager-ds.pdf)
 
@@ -85,7 +85,7 @@ Per ulteriori informazioni, vedere:
 
 HP Network **Management Center (precedentemente noto come HP OpenView)**   [HP Network Management Center](http://www8.hp.com/us/en/software-solutions/network-management/index.html?%26zn=bto%26cp=1-11-15-119_4000_100__) fornisce la gestione integrata dei guasti e delle prestazioni per migliorare la disponibilità e le prestazioni della rete. Network Management Center fa parte della soluzione HP di gestione della rete automatizzata che unifica la gestione dei guasti, delle prestazioni, della configurazione e delle modifiche.
 
-**Cisco Network Management and Automation Products**   for the Enterprise, Cisco dispone di diversi prodotti di gestione, tra cui la soluzione di gestione LAN di CiscoWorks e il modulo di analisi di rete Cisco, per migliorare l'efficienza operativa e ridurre i tempi di inattività della rete. Per ulteriori informazioni su questi prodotti, vedere il sito Web Cisco all' [http://www.cisco.com/en/US/products/sw/netmgtsw/index.html](http://www.cisco.com/en/us/products/sw/netmgtsw/index.html)indirizzo.
+**Cisco Network Management and Automation Products**   for the Enterprise, Cisco dispone di diversi prodotti di gestione, tra cui la soluzione di gestione LAN di CiscoWorks e il modulo di analisi di rete Cisco, per migliorare l'efficienza operativa e ridurre i tempi di inattività della rete. Per ulteriori informazioni su questi prodotti, vedere il sito Web Cisco all' [https://www.cisco.com/en/US/products/sw/netmgtsw/index.html](https://www.cisco.com/en/us/products/sw/netmgtsw/index.html)indirizzo.
 
 Simple Network Management Protocol (SNMP) Simple Network Management Protocol (SNMP) è uno standard di gestione della rete che definisce una strategia per la gestione delle reti TCP/IP. SNMP consente di acquisire informazioni sulla configurazione e sullo stato della rete e di inviare le informazioni a un computer designato per il monitoraggio degli eventi. Questo protocollo di gestione della rete basato su standard utilizza un'architettura distribuita che include gli elementi seguenti:
 
@@ -127,7 +127,7 @@ System Center Operations Manager 2012 consente agli amministratori di visualizza
 
 Raccoglie, Visualizza, analizza l'utilizzo delle risorse in un server e misura il traffico di rete. Network Monitor esegue esclusivamente il monitoraggio delle attività di rete. Tramite l'acquisizione e l'analisi dei dati di rete e l'utilizzo di tali dati con i registri delle prestazioni, è possibile determinare l'utilizzo della rete, identificare i problemi di rete e prevedere le future esigenze di rete.
 
-Per ulteriori informazioni su Network Monitor 3,4 e per sapere come installare e configurare Network Monitor e acquisire e analizzare i dati, vedere la sessione seguente: Network Monitor 3,3 Overview. Esaminare inoltre il [Blog di Network Monitor](http://blogs.technet.com/b/netmon/).
+Per ulteriori informazioni su Network Monitor 3,4 e per sapere come installare e configurare Network Monitor e acquisire e analizzare i dati, vedere la sessione seguente: Network Monitor 3,3 Overview. Esaminare inoltre il [Blog di Network Monitor](https://blogs.technet.com/b/netmon/).
 
 </div>
 

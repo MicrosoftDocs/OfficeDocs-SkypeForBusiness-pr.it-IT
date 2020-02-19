@@ -12,18 +12,18 @@ ms:contentKeyID: 50675353
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4213008c20181f7525c7cf62eb316820abe66f3f
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 7e376525d2e00a6b2c98674855ccb314984364a1
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42007195"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42136844"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="view-client-version-configuration-settings-in-lync-server-2013"></a>Visualizzare le impostazioni di configurazione della versione client in Lync Server 2013
 
@@ -67,7 +67,7 @@ Le impostazioni di configurazione della versione client vengono utilizzate per a
 
 ## <a name="viewing-client-version-configuration-settings-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle impostazioni di configurazione della versione client tramite i cmdlet di Windows PowerShell
 
-È possibile visualizzare le impostazioni di configurazione della versione client utilizzando il cmdlet **Get-CsClientVersionConfiguration** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+È possibile visualizzare le impostazioni di configurazione della versione client utilizzando il cmdlet **Get-CsClientVersionConfiguration** . Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 

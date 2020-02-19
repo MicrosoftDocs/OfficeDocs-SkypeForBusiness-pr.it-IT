@@ -12,18 +12,18 @@ ms:contentKeyID: 49733746
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c485293fe747a16cc9c2b392d053137105306da4
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 7802a3c69d895f87fbcf1553a1d2e737bf2d8f30
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42049708"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42140069"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="overview-of-the-centralized-logging-service-in-lync-server-2013"></a>Panoramica del servizio di registrazione centralizzato in Lync Server 2013
 
@@ -61,7 +61,7 @@ ClsAgent mantiene un file di indice di tutti i file CACHE che si trova nel compu
 
 </div>
 
-I file di log risultanti possono essere letti e analizzati mediante diversi strumenti, tra cui **Snooper.exe** e qualsiasi strumento in grado di leggere file di testo, come **Notepad.exe**. Snooper. exe fa parte degli strumenti di debug di Lync Server 2013 ed è disponibile come download Web da [http://go.microsoft.com/fwlink/?LinkId=285257](http://go.microsoft.com/fwlink/?linkid=285257).
+I file di log risultanti possono essere letti e analizzati mediante diversi strumenti, tra cui **Snooper.exe** e qualsiasi strumento in grado di leggere file di testo, come **Notepad.exe**. Snooper. exe fa parte degli strumenti di debug di Lync Server 2013 ed è disponibile come download Web da [https://go.microsoft.com/fwlink/?LinkId=285257](https://go.microsoft.com/fwlink/?linkid=285257).
 
 Come OCSLogger, il servizio di registrazione centralizzato dispone di diversi componenti su cui eseguire la traccia e fornisce le opzioni per selezionare i\_flag, ad\_esempio TF Component e TF diag. Il servizio di registrazione centralizzato conserva anche le opzioni del livello di registrazione di OCSLogger.
 

@@ -13,18 +13,18 @@ ms:contentKeyID: 49733729
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 24c5c530b51b24b23f266786cd763994c4798d1b
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 542ee4d581d4df26a528a14fda5de792c2a2ad09
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41999191"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42136122"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="configure-clients-for-migration"></a>Configurare i client per la migrazione
 
@@ -48,13 +48,13 @@ Questo argomento contiene le procedure consigliate per la distribuzione del clie
     
       - [Applicare gli aggiornamenti di Office Communications Server 2007 R2](apply-office-communications-server-2007-r2-updates.md)
     
-      - [Descrizione del pacchetto di aggiornamento cumulativo per Communicator 2007 R2](http://go.microsoft.com/fwlink/p/?linkid=335808)
+      - [Descrizione del pacchetto di aggiornamento cumulativo per Communicator 2007 R2](https://go.microsoft.com/fwlink/p/?linkid=335808)
     
-      - [Acquisizione degli aggiornamenti software per i dispositivi](http://go.microsoft.com/fwlink/?linkid=335809)
+      - [Acquisizione degli aggiornamenti software per i dispositivi](https://go.microsoft.com/fwlink/?linkid=335809)
 
 2.  In Office Communications Server 2007 R2, utilizzare il filtro delle versioni client per consentire l'accesso solo ai client di Office Communications Server 2007 R2 con gli aggiornamenti più recenti installati.
 
-3.  In Office Communications Server 2007 R2, utilizzare il filtro delle versioni client per bloccare i client di Lync Server 2013 dall'accesso. Attenersi alla procedura descritta in **Configuring Client Version Filtering** [http://go.microsoft.com/fwlink/p/?linkId=202488](http://go.microsoft.com/fwlink/p/?linkid=202488) to per aggiungere i filtri di versione elencati nella tabella seguente. Per ogni filtro di versione assegnare l'azione **Blocca**.
+3.  In Office Communications Server 2007 R2, utilizzare il filtro delle versioni client per bloccare i client di Lync Server 2013 dall'accesso. Attenersi alla procedura descritta in **Configuring Client Version Filtering** [https://go.microsoft.com/fwlink/p/?linkId=202488](https://go.microsoft.com/fwlink/p/?linkid=202488) to per aggiungere i filtri di versione elencati nella tabella seguente. Per ogni filtro di versione assegnare l'azione **Blocca**.
     
     
     <table>

@@ -12,18 +12,18 @@ ms:contentKeyID: 49733853
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c92f88d35e573f0914698db28ddcf1fa54967f97
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 686d7d5d65af28127ad95b2911962d707887029a
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42049858"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42139087"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="prerequisites-for-integrating-microsoft-lync-server-2013-and-microsoft-exchange-server-2013"></a>Prerequisiti per l'integrazione di Microsoft Lync Server 2013 e Microsoft Exchange Server 2013
 
@@ -37,9 +37,9 @@ ms.locfileid: "42049858"
 
 _**Ultimo argomento modificato:** 2014-04-22_
 
-Prima di poter integrare Microsoft Lync Server 2013 e Microsoft Exchange Server 2013, è necessario assicurarsi che tutti i passaggi preliminari siano stati completati. Come si può immaginare, l'integrazione non può essere eseguita finché sia Exchange 2013 che Lync Server 2013 sono completamente installati e in esecuzione. Per informazioni dettagliate sull'installazione di Exchange, vedere la documentazione relativa alla pianificazione e [http://go.microsoft.com/fwlink/p/?LinkId=268539](http://go.microsoft.com/fwlink/p/?linkid=268539)alla distribuzione di Exchange 2013 all'indirizzo. Per informazioni dettagliate sull'installazione di Lync Server 2013, vedere la documentazione relativa alla [http://go.microsoft.com/fwlink/p/?LinkId=254806](http://go.microsoft.com/fwlink/p/?linkid=254806)pianificazione e alla distribuzione all'indirizzo.
+Prima di poter integrare Microsoft Lync Server 2013 e Microsoft Exchange Server 2013, è necessario assicurarsi che tutti i passaggi preliminari siano stati completati. Come si può immaginare, l'integrazione non può essere eseguita finché sia Exchange 2013 che Lync Server 2013 sono completamente installati e in esecuzione. Per informazioni dettagliate sull'installazione di Exchange, vedere la documentazione relativa alla pianificazione e [https://go.microsoft.com/fwlink/p/?LinkId=268539](https://go.microsoft.com/fwlink/p/?linkid=268539)alla distribuzione di Exchange 2013 all'indirizzo. Per informazioni dettagliate sull'installazione di Lync Server 2013, vedere la documentazione relativa alla [https://go.microsoft.com/fwlink/p/?LinkId=254806](https://go.microsoft.com/fwlink/p/?linkid=254806)pianificazione e alla distribuzione all'indirizzo.
 
-Dopo l'esecuzione dei server, è necessario assegnare certificati di autenticazione da server a server a Lync Server 2013 ed Exchange 2013; questi certificati consentono a Lync Server e Exchange di scambiare informazioni e comunicare tra loro. Quando si installa Exchange 2013, viene creato un certificato autofirmato con il nome del certificato di autenticazione di Microsoft Exchange Server. Questo certificato, che può essere trovato nell'archivio certificati del computer locale, deve essere utilizzato per l'autenticazione da server a server in Exchange 2013. Per informazioni dettagliate sull'assegnazione dei certificati in Exchange 2013, vedere la sezione "configurare il flusso di posta [http://go.microsoft.com/fwlink/p/?LinkId=268540](http://go.microsoft.com/fwlink/p/?linkid=268540)e l'accesso client" all'indirizzo.
+Dopo l'esecuzione dei server, è necessario assegnare certificati di autenticazione da server a server a Lync Server 2013 ed Exchange 2013; questi certificati consentono a Lync Server e Exchange di scambiare informazioni e comunicare tra loro. Quando si installa Exchange 2013, viene creato un certificato autofirmato con il nome del certificato di autenticazione di Microsoft Exchange Server. Questo certificato, che può essere trovato nell'archivio certificati del computer locale, deve essere utilizzato per l'autenticazione da server a server in Exchange 2013. Per informazioni dettagliate sull'assegnazione dei certificati in Exchange 2013, vedere la sezione "configurare il flusso di posta [https://go.microsoft.com/fwlink/p/?LinkId=268540](https://go.microsoft.com/fwlink/p/?linkid=268540)e l'accesso client" all'indirizzo.
 
 Per Lync Server 2013 è possibile utilizzare un certificato di Lync Server esistente come certificato di autenticazione da server a server. ad esempio, il certificato predefinito può essere utilizzato anche come certificato di OAuthTokenIssuer. Lync Server 2013 consente di utilizzare qualsiasi certificato del server Web come certificato per l'autenticazione da server a server purché:
 
@@ -73,7 +73,7 @@ Per assegnare l'URI di individuazione automatica, è possibile eseguire un coman
 
     Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri "https://autodiscover.litwareinc.com/autodiscover/autodiscover.xml"
 
-Per informazioni dettagliate sul servizio di individuazione automatica, vedere la sezione "informazioni sul servizio di [http://go.microsoft.com/fwlink/p/?LinkId=268542](http://go.microsoft.com/fwlink/p/?linkid=268542)individuazione automatica" all'indirizzo.
+Per informazioni dettagliate sul servizio di individuazione automatica, vedere la sezione "informazioni sul servizio di [https://go.microsoft.com/fwlink/p/?LinkId=268542](https://go.microsoft.com/fwlink/p/?linkid=268542)individuazione automatica" all'indirizzo.
 
 Dopo che il servizio di individuazione automatica è stato configurato, è necessario modificare le impostazioni di configurazione di Lync server OAuth. in questo modo, Lync Server è in grado di individuare il servizio di individuazione automatica. Per modificare le impostazioni di configurazione OAuth in Lync Server 2013, eseguire il comando riportato di seguito dall'interno di Lync Server Management Shell. Quando si esegue questo comando, accertarsi di specificare l'URI per il servizio di individuazione automatica in esecuzione nel server Exchange e di utilizzare **autodiscover. svc** in modo che punti alla posizione del servizio invece di **autodiscover. XML** (che punta al file XML utilizzato dal servizio):
 

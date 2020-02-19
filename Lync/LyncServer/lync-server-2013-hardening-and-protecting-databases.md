@@ -12,18 +12,18 @@ ms:contentKeyID: 62625490
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6e1ef045253f6733ea3356baa6254a6c90926762
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: f222e92da686792a48ccceeaf1686d96f0406e50
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42006212"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42140259"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="hardening-and-protecting-the-databases-of-lync-server-2013"></a>Indurimento e protezione dei database di Lync Server 2013
 
@@ -80,7 +80,7 @@ In qualsiasi server Lync Server 2013 eccetto il server Standard Edition, l'istan
 
 </div>
 
-Per informazioni dettagliate sulle configurazioni personalizzate e sull'indurimento dei database di SQL Server, vedere l'articolo del Blog di NextHop "utilizzo di Lync Server 2010 con una configurazione [http://go.microsoft.com/fwlink/p/?LinkId=214008](http://go.microsoft.com/fwlink/p/?linkid=214008)di rete di SQL Server personalizzata" all'indirizzo.
+Per informazioni dettagliate sulle configurazioni personalizzate e sull'indurimento dei database di SQL Server, vedere l'articolo del Blog di NextHop "utilizzo di Lync Server 2010 con una configurazione [https://go.microsoft.com/fwlink/p/?LinkId=214008](https://go.microsoft.com/fwlink/p/?linkid=214008)di rete di SQL Server personalizzata" all'indirizzo.
 
 <div>
 

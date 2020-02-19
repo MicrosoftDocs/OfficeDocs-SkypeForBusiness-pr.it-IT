@@ -12,18 +12,18 @@ ms:contentKeyID: 48184606
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0404590ab5b3208de989093df7ede55a3aee2f54
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: f55ec3444348b2717721dcad890a4712cd8b9a3b
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42038228"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42138197"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="deployment-guidelines-for-mediation-server-in-lync-server-2013"></a>Linee guida per la distribuzione di Mediation Server in Lync Server 2013
 
@@ -73,7 +73,7 @@ I server Mediation Server nel sito centrale possono essere utilizzati per instra
 
 
 > [!NOTE]  
-> Il bypass multimediale non interagisce con ogni gateway PSTN, ogni IP-PBX e ogni SBC. Microsoft ha testato una serie di gateway PSTN e SBCs con partner certificati e ha eseguito alcuni test con i sistemi IP-PBX Cisco. Il bypass multimediale è supportato solo con i prodotti e le versioni elencati in Unified Communications Open Interoperability Program – Lync Server <A href="http://go.microsoft.com/fwlink/p/?linkid=268730">http://go.microsoft.com/fwlink/p/?LinkId=268730</A>at.
+> Il bypass multimediale non interagisce con ogni gateway PSTN, ogni IP-PBX e ogni SBC. Microsoft ha testato una serie di gateway PSTN e SBCs con partner certificati e ha eseguito alcuni test con i sistemi IP-PBX Cisco. Il bypass multimediale è supportato solo con i prodotti e le versioni elencati in Unified Communications Open Interoperability Program – Lync Server <A href="https://go.microsoft.com/fwlink/p/?linkid=268730">https://go.microsoft.com/fwlink/p/?LinkId=268730</A>at.
 
 
 
@@ -89,7 +89,7 @@ Infine, se nel sito centrale è presente un sistema PBX TDM o se il sistema IP-P
 
 
 > [!NOTE]  
-> Per migliorare le prestazioni dei supporti di Mediation Server autonomo, è necessario abilitare il formato RSS (Receive-Side Scaling) nelle schede di rete su questi server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere la sezione relativa ai miglioramenti della scala di ricezione in Windows <A href="http://go.microsoft.com/fwlink/p/?linkid=268731">http://go.microsoft.com/fwlink/p/?LinkId=268731</A>server all'indirizzo. Per informazioni dettagliate su come abilitare RSS, vedere la documentazione relativa alla scheda di rete.
+> Per migliorare le prestazioni dei supporti di Mediation Server autonomo, è necessario abilitare il formato RSS (Receive-Side Scaling) nelle schede di rete su questi server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere la sezione relativa ai miglioramenti della scala di ricezione in Windows <A href="https://go.microsoft.com/fwlink/p/?linkid=268731">https://go.microsoft.com/fwlink/p/?LinkId=268731</A>server all'indirizzo. Per informazioni dettagliate su come abilitare RSS, vedere la documentazione relativa alla scheda di rete.
 
 
 

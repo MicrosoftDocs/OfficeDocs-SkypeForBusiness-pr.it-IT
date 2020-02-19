@@ -12,18 +12,18 @@ ms:contentKeyID: 48184681
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1be763250edf7222b900aef88665b3e360e8125c
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: e8e4e325ba766967292c24f2a3b62ec233a73ec5
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42006222"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42140269"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="guidelines-for-integrating-on-premises-unified-messaging-and-lync-server-2013"></a>Linee guida per l'integrazione della messaggistica unificata locale e di Lync Server 2013
 
@@ -115,13 +115,13 @@ Nell'esempio 1 i server di messaggistica unificata di Exchange 1 e 2 sono abilit
 
 Nell'esempio 2, in condizioni operative standard, i server di messaggistica unificata di Exchange 1 e 2 sono abilitati nel data center di Tukwila e i server di messaggistica unificata di Exchange 3 e 4 sono abilitati nel data center di Dublino. Tutti e quattro i server sono inclusi nel dial plan URI SIP degli utenti Tukwila, tuttavia, i server 3 e 4 sono disabilitati. In caso di interruzione della messaggistica unificata di Exchange a Tukwila, ad esempio, i server 1 e 2 di messaggistica unificata di Exchange devono essere disabilitati e i server 3 e 4 di messaggistica unificata di Exchange devono essere abilitati in modo che il traffico di messaggistica unificata di Exchange di Tukwila venga instradato ai server di Dublino.
 
-Per informazioni dettagliate su come abilitare o disabilitare la messaggistica unificata in Exchange 2013, vedere la sezione relativa alla messaggistica unificata di Exchange [http://go.microsoft.com/fwlink/p/?LinkId=265372](http://go.microsoft.com/fwlink/p/?linkid=265372)2013 con Lync Server all'indirizzo.
+Per informazioni dettagliate su come abilitare o disabilitare la messaggistica unificata in Exchange 2013, vedere la sezione relativa alla messaggistica unificata di Exchange [https://go.microsoft.com/fwlink/p/?LinkId=265372](https://go.microsoft.com/fwlink/p/?linkid=265372)2013 con Lync Server all'indirizzo.
 
 Per informazioni dettagliate su come abilitare o disabilitare la messaggistica unificata in Microsoft Exchange Server 2010, vedere:
 
-  - "Abilita messaggistica unificata su Exchange 2010" all' [http://go.microsoft.com/fwlink/p/?LinkId=204418](http://go.microsoft.com/fwlink/p/?linkid=204418)indirizzo.
+  - "Abilita messaggistica unificata su Exchange 2010" all' [https://go.microsoft.com/fwlink/p/?LinkId=204418](https://go.microsoft.com/fwlink/p/?linkid=204418)indirizzo.
 
-  - "Disabilitare la messaggistica unificata su Exchange 2010" [http://go.microsoft.com/fwlink/p/?LinkId=204416](http://go.microsoft.com/fwlink/p/?linkid=204416)all'indirizzo.
+  - "Disabilitare la messaggistica unificata su Exchange 2010" [https://go.microsoft.com/fwlink/p/?LinkId=204416](https://go.microsoft.com/fwlink/p/?linkid=204416)all'indirizzo.
 
 </div>
 

@@ -12,18 +12,18 @@ ms:contentKeyID: 48183332
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2adadafcbb5338f47aa13d25b3dfd39386935b30
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 7b6b06b270157bc1aa2387662229dbff3eb8f4d5
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42044328"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42138717"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="using-configxml-to-perform-installation-tasks-in-lync-server-2013"></a>Utilizzo di config. XML per eseguire le attività di installazione in Lync Server 2013
 
@@ -131,7 +131,7 @@ Nell'esempio seguente viene illustrato un file config. XML per una tipica instal
       <DistributionPoint Location="\\server\share\Lync15" />
     </Configuration>
 
-Informazioni dettagliate sull'utilizzo del file config. XML per eseguire le attività di installazione e manutenzione di Office <http://go.microsoft.com/fwlink/p/?linkid=267514>sono disponibili all'indirizzo.
+Informazioni dettagliate sull'utilizzo del file config. XML per eseguire le attività di installazione e manutenzione di Office <https://go.microsoft.com/fwlink/p/?linkid=267514>sono disponibili all'indirizzo.
 
 <div>
 

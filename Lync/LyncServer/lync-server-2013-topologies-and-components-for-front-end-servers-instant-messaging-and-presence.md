@@ -12,18 +12,18 @@ ms:contentKeyID: 48185763
 ms.date: 10/24/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7e8e53116879e194bca7d0ea4066bc5f10de38f7
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: e2865d1a4169491751643e7b16601a5ed3efcded
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029447"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42141162"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="topologies-and-components-for-front-end-servers-instant-messaging-and-presence-in-lync-server-2013"></a>Topologie e componenti per Front End Server, messaggistica istantanea e presenza in Lync Server 2013
 
@@ -91,28 +91,28 @@ La prima volta che si avvia un nuovo pool Front End, è essenziale che il 85% de
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>2 </p></td>
-<td><p>1 </p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
 </tr>
 <tr class="even">
-<td><p>3 </p></td>
-<td><p>3 </p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
 </tr>
 <tr class="odd">
-<td><p>4 </p></td>
-<td><p>3 </p></td>
+<td><p>4</p></td>
+<td><p>3</p></td>
 </tr>
 <tr class="even">
-<td><p>5 </p></td>
-<td><p>4 </p></td>
+<td><p>5</p></td>
+<td><p>4</p></td>
 </tr>
 <tr class="odd">
 <td><p>6 </p></td>
-<td><p>5 </p></td>
+<td><p>5</p></td>
 </tr>
 <tr class="even">
 <td><p>7 </p></td>
-<td><p>5 </p></td>
+<td><p>5</p></td>
 </tr>
 <tr class="odd">
 <td><p>8 </p></td>
@@ -144,7 +144,7 @@ Ogni volta che viene avviato il pool, 85% dei server devono essere avviati (come
 
 
 > [!NOTE]  
-> Poiché Lync Server utilizza il database SQL primario come server di controllo, se si arresta il database primario e si passa alla copia del mirror e si arresta un numero sufficiente di front end server in modo che non sia sufficiente eseguire in base alla tabella precedente, l'intero pool passerà. Per ulteriori informazioni, vedere <A href="http://go.microsoft.com/fwlink/?linkid=393672">database mirroring witness</A>.
+> Poiché Lync Server utilizza il database SQL primario come server di controllo, se si arresta il database primario e si passa alla copia del mirror e si arresta un numero sufficiente di front end server in modo che non sia sufficiente eseguire in base alla tabella precedente, l'intero pool passerà. Per ulteriori informazioni, vedere <A href="https://go.microsoft.com/fwlink/?linkid=393672">database mirroring witness</A>.
 
 
 
@@ -172,8 +172,8 @@ Affinché un pool Front end funzioni a tutti, non può essere in perdita di quor
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>2 </p></td>
-<td><p>1 </p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
 </tr>
 <tr class="even">
 <td><p>3-4</p></td>

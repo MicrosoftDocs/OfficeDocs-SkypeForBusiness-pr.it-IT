@@ -12,18 +12,18 @@ ms:contentKeyID: 48184946
 ms.date: 08/15/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fb679f8bf0fae046bea0177daab22203bbf9aef1
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 3a1bfa1b472ee2375c609a9410ba76d2eefad918
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42028537"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42140329"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="configure-federation-of-lync-server-2013-with-lync-online"></a>Configurare la Federazione di Lync Server 2013 con Lync Online
 
@@ -71,7 +71,7 @@ Per configurare uno spazio di indirizzi SIP condiviso, stabilire una sessione re
 ```powershell
 Set-CsTenantFederationConfiguration -SharedSipAddressSpace $true
 ```
-Per creare una sessione remota di PowerShell con Skype for business online, è necessario prima di tutto installare il modulo Skype for business online per Windows PowerShell, che è possibile ottenere [http://go.microsoft.com/fwlink/p/?LinkId=391911](http://go.microsoft.com/fwlink/p/?linkid=391911)qui:.
+Per creare una sessione remota di PowerShell con Skype for business online, è necessario prima di tutto installare il modulo Skype for business online per Windows PowerShell, che è possibile ottenere [https://go.microsoft.com/fwlink/p/?LinkId=391911](https://go.microsoft.com/fwlink/p/?linkid=391911)qui:.
 
 Dopo aver installato il modulo, è possibile stabilire una sessione remota con i cmdlet seguenti:
 

@@ -12,18 +12,18 @@ ms:contentKeyID: 63969642
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d02d9ed669cf9404b1bf8d07db32c9d331769ec9
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 8c31d39ae7537fc53fc4e72c8b1c57863b2ba189
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42041115"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42140609"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="best-practices-for-lync-server-2013-environments"></a>Procedure consigliate per gli ambienti di Lync Server 2013
 
@@ -39,7 +39,7 @@ _**Ultimo argomento modificato:** 2014-08-04_
 
 I seguenti principi generali devono essere applicati alle operazioni in continuo del sistema:
 
-  - **Understand and utilize MOF**   MOF è una raccolta di procedure consigliate, principi e modelli che forniscono alle organizzazioni informazioni tecniche sulla gestione delle risorse IT, ad esempio le operazioni quotidiane di Lync Server 2013. Le seguenti linee guida MOF consentono di raggiungere l'affidabilità, la disponibilità, la supportabilità e la gestibilità del sistema di produzione mission-critical per i prodotti Microsoft. Per ulteriori informazioni, vedere [Microsoft Operations Framework 4,0](http://go.microsoft.com/fwlink/p/?linkid=40939).
+  - **Understand and utilize MOF**   MOF è una raccolta di procedure consigliate, principi e modelli che forniscono alle organizzazioni informazioni tecniche sulla gestione delle risorse IT, ad esempio le operazioni quotidiane di Lync Server 2013. Le seguenti linee guida MOF consentono di raggiungere l'affidabilità, la disponibilità, la supportabilità e la gestibilità del sistema di produzione mission-critical per i prodotti Microsoft. Per ulteriori informazioni, vedere [Microsoft Operations Framework 4,0](https://go.microsoft.com/fwlink/p/?linkid=40939).
 
   - **Informazioni sulle procedure consigliate per Lync Server 2013**   si consiglia di implementare una procedura pratica e collaudata per la gestione di Lync Server 2013. L'utilizzo di metodi sperimentati, testati e documentati per la gestione delle operazioni può essere più efficace rispetto allo sviluppo di metodi personalizzati.
 
@@ -104,7 +104,7 @@ Esaminare gli argomenti seguenti relativi alle operazioni di sistema prima di pr
 ## <a name="see-also"></a>Vedere anche
 
 
-[Microsoft Operations Framework 4,0](http://go.microsoft.com/fwlink/p/?linkid=40939)  
+[Microsoft Operations Framework 4,0](https://go.microsoft.com/fwlink/p/?linkid=40939)  
   
 
 </div>
