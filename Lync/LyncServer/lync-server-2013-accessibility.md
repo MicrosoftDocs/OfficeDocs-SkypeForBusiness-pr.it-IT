@@ -12,18 +12,18 @@ ms:contentKeyID: 48183681
 ms.date: 01/15/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ddaf4d5c8d85adfd7d69955df20ab6018966845b
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: e86fbe2c8ac007f81743bd5a5be105421767089e
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42037888"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42135643"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="accessibility-in-lync-server-2013"></a>Accessibilità in Lync Server 2013
 
@@ -49,7 +49,7 @@ Le caratteristiche seguenti di Lync Server 2013 contribuiscono a renderlo più a
 
   - Testo alternativo per le figure
 
-Inoltre, alcune funzionalità di accessibilità e strumenti di Windows possono avvantaggiare gli utenti con disabilità di Lync Server. Le modifiche alle dimensioni e al colore di Windows PowerShell offrono opzioni di accessibilità quando si utilizza Lync Server Management Shell. Per informazioni dettagliate sulle opzioni di accessibilità di Windows PowerShell, vedere "accessibilità in Windows PowerShell 2,0" [http://go.microsoft.com/fwlink/p/?linkId=98964](http://go.microsoft.com/fwlink/p/?linkid=98964)nella libreria TechNet all'indirizzo.
+Inoltre, alcune funzionalità di accessibilità e strumenti di Windows possono avvantaggiare gli utenti con disabilità di Lync Server. Le modifiche alle dimensioni e al colore di Windows PowerShell offrono opzioni di accessibilità quando si utilizza Lync Server Management Shell. Per informazioni dettagliate sulle opzioni di accessibilità di Windows PowerShell, vedere "accessibilità in Windows PowerShell 2,0" [https://go.microsoft.com/fwlink/p/?linkId=98964](https://go.microsoft.com/fwlink/p/?linkid=98964)nella libreria TechNet all'indirizzo.
 
 </div>
 
@@ -156,7 +156,7 @@ Nelle sezioni seguenti vengono fornite informazioni sulle caratteristiche, i pro
 
 
 > [!NOTE]  
-> Le informazioni contenute in questa sezione sono applicabili solo agli utenti che hanno ottenuto le licenze dei prodotti Microsoft negli Stati Uniti. Se il prodotto è stato ottenuto al di fuori degli Stati Uniti, è possibile utilizzare la scheda informazioni sussidiaria fornita con il pacchetto software o visitare il sito Web <A href="http://go.microsoft.com/fwlink/p/?linkid=18139">http://go.microsoft.com/fwlink/p/?linkId=18139</A> Microsoft Accessibility all'indirizzo per un elenco di numeri di telefono e indirizzi per i servizi di supporto tecnico Microsoft. È possibile contattare la propria filiale per sapere se il tipo di prodotti e servizi descritti in questa sezione è disponibile nella propria area. Ulteriori informazioni sulle funzionalità di accessibilità incluse nei prodotti Microsoft sono disponibili nel sito Web sui prodotti Microsoft dedicato all'accessibilità.
+> Le informazioni contenute in questa sezione sono applicabili solo agli utenti che hanno ottenuto le licenze dei prodotti Microsoft negli Stati Uniti. Se il prodotto è stato ottenuto al di fuori degli Stati Uniti, è possibile utilizzare la scheda informazioni sussidiaria fornita con il pacchetto software o visitare il sito Web <A href="https://go.microsoft.com/fwlink/p/?linkid=18139">https://go.microsoft.com/fwlink/p/?linkId=18139</A> Microsoft Accessibility all'indirizzo per un elenco di numeri di telefono e indirizzi per i servizi di supporto tecnico Microsoft. È possibile contattare la propria filiale per sapere se il tipo di prodotti e servizi descritti in questa sezione è disponibile nella propria area. Ulteriori informazioni sulle funzionalità di accessibilità incluse nei prodotti Microsoft sono disponibili nel sito Web sui prodotti Microsoft dedicato all'accessibilità.
 
 
 
@@ -166,13 +166,13 @@ Nelle sezioni seguenti vengono fornite informazioni sulle caratteristiche, i pro
 
 ## <a name="accessibility-features-of-windows"></a>Funzionalità di accessibilità di Windows
 
-Il sistema operativo Windows contiene molte funzionalità di accesso facilitato incorporate utili per le persone che hanno difficoltà a digitare o a utilizzare il mouse, per persone non vedenti o con ipovisione o con problemi più o meno gravi di udito. Le funzionalità vengono configurate durante l'installazione. Per informazioni dettagliate su queste funzionalità, vedere Guida di Windows o Microsoft [http://go.microsoft.com/fwlink/p/?linkId=18139](http://go.microsoft.com/fwlink/p/?linkid=18139)Accessibility at.
+Il sistema operativo Windows contiene molte funzionalità di accesso facilitato incorporate utili per le persone che hanno difficoltà a digitare o a utilizzare il mouse, per persone non vedenti o con ipovisione o con problemi più o meno gravi di udito. Le funzionalità vengono configurate durante l'installazione. Per informazioni dettagliate su queste funzionalità, vedere Guida di Windows o Microsoft [https://go.microsoft.com/fwlink/p/?linkId=18139](https://go.microsoft.com/fwlink/p/?linkid=18139)Accessibility at.
 
   - **Tutorial gratuiti Microsoft**   offre una serie di esercitazioni dettagliate che consentono di modificare le opzioni e le impostazioni di accessibilità nel computer. Tali informazioni sono presentate in formato side-by-side in modo che l'utente possa imparare a usare il mouse, la tastiera o una combinazione di entrambi i dispositivi.
     
-    Per informazioni sulle esercitazioni dettagliate per i prodotti Microsoft, vedere Microsoft Accessibility at [http://go.microsoft.com/fwlink/p/?linkId=18139](http://go.microsoft.com/fwlink/p/?linkid=18139).
+    Per informazioni sulle esercitazioni dettagliate per i prodotti Microsoft, vedere Microsoft Accessibility at [https://go.microsoft.com/fwlink/p/?linkId=18139](https://go.microsoft.com/fwlink/p/?linkid=18139).
 
-  - **Prodotti di Assistive Technology per Windows**   è disponibile un'ampia gamma di prodotti di Assistive Technology per semplificare l'utilizzo dei computer per le persone con disabilità. È possibile eseguire una ricerca in un catalogo di prodotti tecnologici di Assistive Technology che vengono eseguiti su Windows [http://go.microsoft.com/fwlink/p/?linkId=18139](http://go.microsoft.com/fwlink/p/?linkid=18139)nel sito Web Microsoft Accessibility all'indirizzo.
+  - **Prodotti di Assistive Technology per Windows**   è disponibile un'ampia gamma di prodotti di Assistive Technology per semplificare l'utilizzo dei computer per le persone con disabilità. È possibile eseguire una ricerca in un catalogo di prodotti tecnologici di Assistive Technology che vengono eseguiti su Windows [https://go.microsoft.com/fwlink/p/?linkId=18139](https://go.microsoft.com/fwlink/p/?linkid=18139)nel sito Web Microsoft Accessibility all'indirizzo.
     
     Se si usa la tecnologia per l'accesso facilitato, ricordarsi di contattare il fornitore di tale tecnologia prima di aggiornare il software o l'hardware per verificare l'eventualità di problemi di compatibilità.
 
@@ -182,7 +182,7 @@ Il sistema operativo Windows contiene molte funzionalità di accesso facilitato 
 
 ## <a name="documentation-in-alternative-formats"></a>Documentazione in formati alternativi
 
-In caso di difficoltà nella lettura o nella gestione dei materiali stampati, è possibile ottenere la documentazione relativa a diversi prodotti Microsoft in formati più accessibili. È possibile ottenere un indice di documentazione del prodotto accessibile sul sito Web Microsoft Accessibility [http://go.microsoft.com/fwlink/p/?linkId=18139](http://go.microsoft.com/fwlink/p/?linkid=18139)all'indirizzo.
+In caso di difficoltà nella lettura o nella gestione dei materiali stampati, è possibile ottenere la documentazione relativa a diversi prodotti Microsoft in formati più accessibili. È possibile ottenere un indice di documentazione del prodotto accessibile sul sito Web Microsoft Accessibility [https://go.microsoft.com/fwlink/p/?linkId=18139](https://go.microsoft.com/fwlink/p/?linkid=18139)all'indirizzo.
 
 Inoltre, è possibile ottenere ulteriori pubblicazioni Microsoft dalla registrazione per i ciechi & dislessico, Inc\&(RFB D). RFB\&D distribuisce questi documenti ai membri idonei registrati del proprio servizio di distribuzione. Per informazioni sulla disponibilità della documentazione relativa ai prodotti Microsoft e sui libri di Microsoft Press,\&contattare RFB D.
 
@@ -211,7 +211,7 @@ Inoltre, è possibile ottenere ulteriori pubblicazioni Microsoft dalla registraz
 
 Microsoft desidera fornire la migliore esperienza possibile per tutti i clienti, tra cui le persone con disabilità. Se si ha bisogno di assistenza, contattare il team di supporto per l'accessibilità, che è addestrato per aiutare le persone con disabilità telefonicamente o tramite posta elettronica.
 
-[Contattare il servizio di risposta alla disabilità](http://support.microsoft.com/gp/contact-microsoft-accessibility)
+[Contattare il servizio di risposta alla disabilità](https://support.microsoft.com/gp/contact-microsoft-accessibility)
 
 Linea telefonica diretta: 1-800-936-5900
 
@@ -233,7 +233,7 @@ Gli utenti audiolesi o con problemi di udito possono usufruire di accesso comple
 
   - Per l'assistenza tecnica negli Stati Uniti, contattare il Servizio supporto tecnico Microsoft al numero (800) 892-5234 dalle ore 6.00 alle 18.00 ora del Pacifico, dal lunedì al venerdì, festività escluse. In Canada comporre il numero (905) 568-9641 dalle ore 8.00 alle 20.00 fuso orientale, dal lunedì al venerdì, festività escluse.
 
-I servizi di supporto Microsoft sono soggetti ai prezzi, ai termini e alle condizioni validi al momento in cui il servizio viene usato. Per informazioni dettagliate, vedere supporto tecnico [http://go.microsoft.com/fwlink/p/?linkId=18142](http://go.microsoft.com/fwlink/p/?linkid=18142)Microsoft all'indirizzo.
+I servizi di supporto Microsoft sono soggetti ai prezzi, ai termini e alle condizioni validi al momento in cui il servizio viene usato. Per informazioni dettagliate, vedere supporto tecnico [https://go.microsoft.com/fwlink/p/?linkId=18142](https://go.microsoft.com/fwlink/p/?linkid=18142)Microsoft all'indirizzo.
 
 </div>
 
@@ -243,7 +243,7 @@ I servizi di supporto Microsoft sono soggetti ai prezzi, ai termini e alle condi
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-Per informazioni dettagliate su come la tecnologia accessibile per i computer contribuisca a migliorare la vita delle persone con disabilità, [http://go.microsoft.com/fwlink/p/?linkId=18139](http://go.microsoft.com/fwlink/p/?linkid=18139)vedere Microsoft Accessibility at.
+Per informazioni dettagliate su come la tecnologia accessibile per i computer contribuisca a migliorare la vita delle persone con disabilità, [https://go.microsoft.com/fwlink/p/?linkId=18139](https://go.microsoft.com/fwlink/p/?linkid=18139)vedere Microsoft Accessibility at.
 
 </div>
 

@@ -12,18 +12,18 @@ ms:contentKeyID: 49733716
 ms.date: 09/25/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f02f87e0cc7adc9cdfbd5e7ba1a9b7a4a6b736ee
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: f450f5627fb79bd54a3b2a743a13a3cdfced82d5
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42008228"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42129639"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="network-bandwidth-requirements-for-media-traffic-in-lync-server-2013"></a>Requisiti di larghezza di banda di rete per il traffico multimediale in Lync Server 2013
 
@@ -265,7 +265,7 @@ Oltre che per il traffico RTP (Real-time Transport Protocol) per il contenuto mu
 <tbody>
 <tr class="odd">
 <td><p>Audio</p></td>
-<td><p>5 </p></td>
+<td><p>5</p></td>
 </tr>
 <tr class="even">
 <td><p>Video (solo H.264 o RTVideo inviati/ricevuti)</p></td>

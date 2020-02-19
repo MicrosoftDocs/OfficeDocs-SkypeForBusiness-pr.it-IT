@@ -12,12 +12,12 @@ ms:contentKeyID: 48185868
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3668e21836fd3ecee0740493c8b9bd631227583a
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 77b84c4550d44a09e786d09d093e64cbc1901d91
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029267"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42134462"
 ---
 # <a name="assign-a-per-user-client-version-policy-in-lync-server-2013"></a>Assegnare criteri di versione client per utente in Lync Server 2013
 
@@ -92,7 +92,7 @@ Per informazioni dettagliate sulla creazione di criteri di versione client per u
 
 ## <a name="assigning-a-per-user-client-version-policy-by-using-windows-powershell-cmdlets"></a>Assegnazione di un criterio di versione client per utente tramite i cmdlet di Windows PowerShell
 
-È possibile assegnare un criterio di versione client per utente utilizzando il cmdlet Grant-CsClientVersionPolicy. È possibile eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+È possibile assegnare un criterio di versione client per utente utilizzando il cmdlet Grant-CsClientVersionPolicy. È possibile eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 ## <a name="to-assign-a-per-user-client-version-policy-to-a-single-user"></a>Per assegnare un criterio di versione client per utente a un unico utente
 

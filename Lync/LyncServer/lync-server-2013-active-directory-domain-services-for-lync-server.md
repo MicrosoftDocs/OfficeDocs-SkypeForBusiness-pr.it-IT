@@ -12,18 +12,18 @@ ms:contentKeyID: 59893871
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1b53b878d7f41a5eb83eb67d98fc69d68709a603
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: f05832a3390101aad7acb1c9d25f532288ca020a
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42008578"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42135593"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="active-directory-domain-services-for-lync-server-2013"></a>Servizi di dominio Active Directory per Lync Server 2013
 
@@ -71,7 +71,7 @@ Per informazioni dettagliate, vedere [Active Directory Infrastructure requiremen
 
 
 > [!NOTE]  
-> È consigliabile distribuire le impostazioni globali nel contenitore della configurazione anziché nel contenitore di sistema. Ciò non consente miglioramenti della sicurezza, ma può consentire miglioramenti della scalabilità per alcune topologie di Servizi di dominio Active Directory. Se si esegue la migrazione da Microsoft Office Communications Server 2007 ed è stato utilizzato il contenitore di sistema ma si intende utilizzare il contenitore di configurazione, è necessario spostare le impostazioni nel contenitore di sistema prima di eseguire qualsiasi preparazione all'aggiornamento. Per eseguire la migrazione delle impostazioni del contenitore di sistema nel contenitore di configurazione, vedere Office Communications Server 2007 Global <A href="http://go.microsoft.com/fwlink/p/?linkid=145236">http://go.microsoft.com/fwlink/p/?LinkId=145236</A>Settings Migration Tool at.
+> È consigliabile distribuire le impostazioni globali nel contenitore della configurazione anziché nel contenitore di sistema. Ciò non consente miglioramenti della sicurezza, ma può consentire miglioramenti della scalabilità per alcune topologie di Servizi di dominio Active Directory. Se si esegue la migrazione da Microsoft Office Communications Server 2007 ed è stato utilizzato il contenitore di sistema ma si intende utilizzare il contenitore di configurazione, è necessario spostare le impostazioni nel contenitore di sistema prima di eseguire qualsiasi preparazione all'aggiornamento. Per eseguire la migrazione delle impostazioni del contenitore di sistema nel contenitore di configurazione, vedere Office Communications Server 2007 Global <A href="https://go.microsoft.com/fwlink/p/?linkid=145236">https://go.microsoft.com/fwlink/p/?LinkId=145236</A>Settings Migration Tool at.
 
 
 
@@ -219,7 +219,7 @@ Inoltre, per consentire alle distribuzioni di Microsoft Office Communications Se
 </table>
 
 
-Per supportare i server attendibili delle versioni precedenti, è necessario eseguire lo strumento Analizzatore procedure consigliate. Per informazioni dettagliate sull'esecuzione dell'Analizzatore procedure consigliate, vedere [http://go.microsoft.com/fwlink/p/?LinkId=330633](http://go.microsoft.com/fwlink/p/?linkid=330633).
+Per supportare i server attendibili delle versioni precedenti, è necessario eseguire lo strumento Analizzatore procedure consigliate. Per informazioni dettagliate sull'esecuzione dell'Analizzatore procedure consigliate, vedere [https://go.microsoft.com/fwlink/p/?LinkId=330633](https://go.microsoft.com/fwlink/p/?linkid=330633).
 
 </div>
 

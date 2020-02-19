@@ -12,18 +12,18 @@ ms:contentKeyID: 49733733
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ab2b7026ca49f8e12a5f8b67aa0780996feaebe1
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 664091baee67d0ddf953d8a114370fdb875eef29
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42036486"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42135543"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="capacity-planning-for-lync-server-2013-using-the-user-models"></a>Pianificazione della capacità per Lync Server 2013 con i modelli utente
 
@@ -220,7 +220,7 @@ Nella tabella seguente viene illustrata la larghezza di banda media per la messa
 
 
 > [!NOTE]  
-> Per migliorare le prestazioni multimediali delle funzionalità di A/V Conferencing e Mediation Server in base ai server front end, è necessario abilitare il riversamento sul lato ricezione (RSS) nelle schede di rete nei Front End Server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere "miglioramenti della scalabilità dei ricevimenti in Windows Server 2008 <A href="http://go.microsoft.com/fwlink/p/?linkid=268731">http://go.microsoft.com/fwlink/p/?linkId=268731</A>" all'indirizzo. Per informazioni dettagliate su come abilitare RSS, vedere la documentazione relativa alla scheda di rete.
+> Per migliorare le prestazioni multimediali delle funzionalità di A/V Conferencing e Mediation Server in base ai server front end, è necessario abilitare il riversamento sul lato ricezione (RSS) nelle schede di rete nei Front End Server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere "miglioramenti della scalabilità dei ricevimenti in Windows Server 2008 <A href="https://go.microsoft.com/fwlink/p/?linkid=268731">https://go.microsoft.com/fwlink/p/?linkId=268731</A>" all'indirizzo. Per informazioni dettagliate su come abilitare RSS, vedere la documentazione relativa alla scheda di rete.
 
 
 
@@ -266,7 +266,7 @@ Quando si calcola il numero di utenti per i server perimetrali, includere gli ut
 
 
 > [!NOTE]  
-> Per migliorare le prestazioni del servizio A/V Conferencing Edge nei server perimetrali è opportuno abilitare Receive-Side Scaling (RSS) nelle schede di rete dei server perimetrali. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere "miglioramenti della scalabilità dei ricevimenti in Windows Server 2008 <A href="http://go.microsoft.com/fwlink/p/?linkid=268731">http://go.microsoft.com/fwlink/p/?linkId=268731</A>" all'indirizzo. Per informazioni dettagliate su come abilitare RSS, vedere la documentazione relativa alla scheda di rete.
+> Per migliorare le prestazioni del servizio A/V Conferencing Edge nei server perimetrali è opportuno abilitare Receive-Side Scaling (RSS) nelle schede di rete dei server perimetrali. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere "miglioramenti della scalabilità dei ricevimenti in Windows Server 2008 <A href="https://go.microsoft.com/fwlink/p/?linkid=268731">https://go.microsoft.com/fwlink/p/?linkId=268731</A>" all'indirizzo. Per informazioni dettagliate su come abilitare RSS, vedere la documentazione relativa alla scheda di rete.
 
 
 
@@ -396,7 +396,7 @@ Tutte le tabelle seguenti presumono l'utilizzo come riepilogato nei [modelli ute
 
 
 > [!NOTE]  
-> Per migliorare le prestazioni del Mediation Server, è necessario abilitare il formato RSS (Receive-Side Scaling) nelle schede di rete dei Mediation Server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere "miglioramenti della scalabilità dei ricevimenti in Windows Server 2008 <A href="http://go.microsoft.com/fwlink/p/?linkid=268731">http://go.microsoft.com/fwlink/p/?linkId=268731</A>" all'indirizzo. Per informazioni dettagliate su come abilitare RSS, vedere la documentazione relativa alla scheda di rete.
+> Per migliorare le prestazioni del Mediation Server, è necessario abilitare il formato RSS (Receive-Side Scaling) nelle schede di rete dei Mediation Server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere "miglioramenti della scalabilità dei ricevimenti in Windows Server 2008 <A href="https://go.microsoft.com/fwlink/p/?linkid=268731">https://go.microsoft.com/fwlink/p/?linkId=268731</A>" all'indirizzo. Per informazioni dettagliate su come abilitare RSS, vedere la documentazione relativa alla scheda di rete.
 
 
 
@@ -495,18 +495,18 @@ Microsoft ha utilizzato l'hardware nella tabella seguente per il server di datab
 </tr>
 <tr class="odd">
 <td><p>File di registro del database CDR</p></td>
-<td><p>1 </p></td>
-<td><p>2 </p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
 </tr>
 <tr class="even">
 <td><p>File di registro del database QoE</p></td>
-<td><p>1 </p></td>
-<td><p>2 </p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
 </tr>
 <tr class="odd">
 <td><p>File di registro del database di archiviazione</p></td>
-<td><p>1 </p></td>
-<td><p>2 </p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
 </tr>
 </tbody>
 </table>

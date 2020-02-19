@@ -12,18 +12,18 @@ ms:contentKeyID: 48185288
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bf8c632fa5858eaf35464e9885e65343bc699e54
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 3e09284d78ead2e8cd4249c2dc54159284ddad43
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42043808"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42127649"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="new-archiving-features-in-lync-server-2013"></a>Nuove funzionalità di archiviazione in Lync Server 2013
 
@@ -49,7 +49,7 @@ Inoltre, l'archiviazione in Lync Server 2013 fornisce nuove funzionalità che mi
 
   - **Collocazione dell'archiviazione nei Front End Server.**    Lync Server 2013 non dispone di un ruolo del server di archiviazione distinto. L'archiviazione infatti è una funzionalità facoltativa, disponibile in tutti i Front End Server di una distribuzione Enterprise Edition e nei server Standard Edition, che può essere implementata e configurata per un pool o un sito.
 
-  - **Integrazione di Microsoft Exchange.**    Quando si distribuisce l'archiviazione, è possibile integrare l'archiviazione dei dati per l'archiviazione con l'archivio di Exchange 2013 esistente per tutti gli utenti che si trovano in Exchange 2013 e che le cassette postali vengono conservate sul posto, pertanto non è necessario distribuire database di SQL Server distinti per archiviare i dati di Lync. Se non si dispone di una distribuzione di Exchange 2013 o se si preferisce non integrarlo o se sono presenti utenti di Lync 2013 che non sono ospitati in Exchange 2013 con le proprie cassette postali in blocco sul posto, è possibile distribuire database di archiviazione separati utilizzando SQL Server per stor e dati archiviati da Lync Communications. È possibile utilizzare l'integrazione di Microsoft Exchange e i database di archiviazione di Lync Server 2013 se si desidera utilizzare l'integrazione di Microsoft Exchange per alcuni ma non tutti gli utenti nella distribuzione. Per informazioni dettagliate sull'archiviazione sul posto, vedere "blocco sul posto" all'indirizzo [http://go.microsoft.com/fwlink/p/?LinkId=267500](http://go.microsoft.com/fwlink/p/?linkid=267500).
+  - **Integrazione di Microsoft Exchange.**    Quando si distribuisce l'archiviazione, è possibile integrare l'archiviazione dei dati per l'archiviazione con l'archivio di Exchange 2013 esistente per tutti gli utenti che si trovano in Exchange 2013 e che le cassette postali vengono conservate sul posto, pertanto non è necessario distribuire database di SQL Server distinti per archiviare i dati di Lync. Se non si dispone di una distribuzione di Exchange 2013 o se si preferisce non integrarlo o se sono presenti utenti di Lync 2013 che non sono ospitati in Exchange 2013 con le proprie cassette postali in blocco sul posto, è possibile distribuire database di archiviazione separati utilizzando SQL Server per stor e dati archiviati da Lync Communications. È possibile utilizzare l'integrazione di Microsoft Exchange e i database di archiviazione di Lync Server 2013 se si desidera utilizzare l'integrazione di Microsoft Exchange per alcuni ma non tutti gli utenti nella distribuzione. Per informazioni dettagliate sull'archiviazione sul posto, vedere "blocco sul posto" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=267500](https://go.microsoft.com/fwlink/p/?linkid=267500).
 
   - **Mirroring dell'archivio SQL.**    Quando si distribuisce l'archiviazione, è possibile abilitare il mirroring del database di SQL Server per il database di archiviazione.
 

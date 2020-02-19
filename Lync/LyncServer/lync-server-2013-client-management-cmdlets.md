@@ -12,18 +12,18 @@ ms:contentKeyID: 48183261
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fa957a6c0c8e995a6e1cff8b0ec1df38ec732c6d
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: b4639a3e51ca3674cdb521f49ef607f6a50f81fd
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42044438"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42134062"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="client-management-cmdlets-in-lync-server-2013"></a>Cmdlet per la gestione dei client in Lync Server 2013
 
@@ -43,7 +43,7 @@ La gestione client consiste principalmente nel determinare quali applicazioni cl
 
 
 > [!NOTE]
-> Per ulteriori informazioni sui cmdlet, vedere il Blog di Windows&nbsp;PowerShell di Lync Server <A href="http://go.microsoft.com/fwlink/p/?linkid=263432">http://go.microsoft.com/fwlink/p/?linkId=263432</A>all'indirizzo. Il contenuto di ogni blog e il relativo URL sono soggetti a modifica senza preavviso.
+> Per ulteriori informazioni sui cmdlet, vedere il Blog di Windows&nbsp;PowerShell di Lync Server <A href="https://go.microsoft.com/fwlink/p/?linkid=263432">https://go.microsoft.com/fwlink/p/?linkId=263432</A>all'indirizzo. Il contenuto di ogni blog e il relativo URL sono soggetti a modifica senza preavviso.
 
 
 

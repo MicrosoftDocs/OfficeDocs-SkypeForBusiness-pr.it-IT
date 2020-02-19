@@ -12,18 +12,18 @@ ms:contentKeyID: 48184031
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3827bf913c4108c1105376a6f178598a2fb45a06
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 457702a4b237493beb8ca5dfe1e2d7ce9b3d2654
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41996651"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42135533"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="configuring-client-bootstrapping-policies-in-lync-server-2013"></a>Configurazione dei criteri di avvio automatico dei client in Lync Server 2013
 
@@ -37,7 +37,7 @@ ms.locfileid: "41996651"
 
 _**Ultimo argomento modificato:** 2013-02-21_
 
-La console Gestione criteri di gruppo e l'Editor oggetti Criteri di gruppo sono strumenti che è possibile utilizzare per gestire i criteri di gruppo. Con il modello amministrativo di criteri di gruppo di Office sono inclusi i modelli amministrativi di Lync 2013. ADMX (ADMX) e ADML (ADML), che contengono le impostazioni dei criteri basati sul Registro di sistema che vengono configurate per gli oggetti Criteri di gruppo nel dominio. I file ADML sono complementi specifici della lingua per i file ADMX. Ogni file ADMX e ADML contiene le impostazioni dei criteri per una singola applicazione di Office. Per ulteriori informazioni, vedere "file dei modelli amministrativi di Office 2013 (ADMX, ADML)" nella documentazione di Office <http://go.microsoft.com/fwlink/p/?linkid=267516>2013 all'indirizzo.
+La console Gestione criteri di gruppo e l'Editor oggetti Criteri di gruppo sono strumenti che è possibile utilizzare per gestire i criteri di gruppo. Con il modello amministrativo di criteri di gruppo di Office sono inclusi i modelli amministrativi di Lync 2013. ADMX (ADMX) e ADML (ADML), che contengono le impostazioni dei criteri basati sul Registro di sistema che vengono configurate per gli oggetti Criteri di gruppo nel dominio. I file ADML sono complementi specifici della lingua per i file ADMX. Ogni file ADMX e ADML contiene le impostazioni dei criteri per una singola applicazione di Office. Per ulteriori informazioni, vedere "file dei modelli amministrativi di Office 2013 (ADMX, ADML)" nella documentazione di Office <https://go.microsoft.com/fwlink/p/?linkid=267516>2013 all'indirizzo.
 
 Per Lync 2013, sono disponibili diversi criteri di avvio del client che è consigliabile configurare prima che gli utenti eseguano l'accesso al server per la prima volta. Ad esempio, i server e la modalità di sicurezza predefiniti che il client deve utilizzare fino al completamento dell'accesso. È possibile utilizzare criteri di gruppo per definire queste impostazioni nei registri dei computer degli utenti prima di accedere e iniziare a ricevere le impostazioni di provisioning in banda dal server. Nella tabella seguente sono elencate le impostazioni di criteri di gruppo disponibili per Lync 2013.
 
@@ -155,19 +155,19 @@ I criteri configurati nel server hanno la priorità sulle impostazioni di Criter
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>1 </p></td>
+<td><p>1</p></td>
 <td><p>Lync Server 2013 provisioning in-band</p></td>
 </tr>
 <tr class="even">
-<td><p>2 </p></td>
+<td><p>2</p></td>
 <td><p>HKEY_LOCAL_MACHINE \SOFTWARE\Policies\Microsoft\Office\15.0\Lync</p></td>
 </tr>
 <tr class="odd">
-<td><p>3 </p></td>
+<td><p>3</p></td>
 <td><p>HKEY_CURRENT_USER \SOFTWARE\Policies\Microsoft\Office\15.0\Lync</p></td>
 </tr>
 <tr class="even">
-<td><p>4 </p></td>
+<td><p>4</p></td>
 <td><p>La finestra di dialogo Lync-Opzioni in Lync 2013</p></td>
 </tr>
 </tbody>

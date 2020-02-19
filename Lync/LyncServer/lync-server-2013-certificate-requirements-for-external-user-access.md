@@ -12,18 +12,18 @@ ms:contentKeyID: 48185503
 ms.date: 03/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7000456629a91742350b9866dc9e1441c18eee57
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 0561c2d6b36090a9499abf360373cf0468cdbda8
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42030870"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42135272"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="certificate-requirements-for-external-user-access-in-lync-server-2013"></a>Requisiti dei certificati per l'accesso degli utenti esterni in Lync Server 2013
 
@@ -41,7 +41,7 @@ Il software di comunicazione Microsoft Lync Server 2013 supporta l'utilizzo di u
 
 Di seguito sono riportati i requisiti dei certificati pubblici utilizzati per le interfacce esterne dell'Access Edge Server e del Web Conferencing Edge Server, nonché per il servizio di autenticazione A/V:
 
-  - Il certificato deve essere emesso da una CA pubblica approvata che supporta il nome alternativo del soggetto. Per informazioni dettagliate, vedere l'articolo 929395 della Microsoft Knowledge Base "partner di certificati per comunicazioni unificate per Exchange Server e per Communications [http://go.microsoft.com/fwlink/p/?linkId=202834](http://go.microsoft.com/fwlink/p/?linkid=202834)server" all'indirizzo.
+  - Il certificato deve essere emesso da una CA pubblica approvata che supporta il nome alternativo del soggetto. Per informazioni dettagliate, vedere l'articolo 929395 della Microsoft Knowledge Base "partner di certificati per comunicazioni unificate per Exchange Server e per Communications [https://go.microsoft.com/fwlink/p/?linkId=202834](https://go.microsoft.com/fwlink/p/?linkid=202834)server" all'indirizzo.
 
   - Se il certificato verrà utilizzato in un pool di server perimetrali, deve essere creato come esportabile, con lo stesso certificato utilizzato in ogni server perimetrale del pool. Il requisito della chiave privata esportabile è previsto per il servizio di autenticazione A/V, che deve utilizzare la stessa chiave privata in tutti i server perimetrali del pool.
 

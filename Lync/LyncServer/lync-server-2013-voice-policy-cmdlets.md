@@ -12,18 +12,18 @@ ms:contentKeyID: 48184800
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6e47225ae9effb4adfb4e312769a79d5f8b59f53
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 5574ecbbd6671f6effbc9be56a5e973c6f0080a5
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42030469"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42120229"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="voice-policy-cmdlets-in-lync-server-2013"></a>Cmdlet per i criteri vocali in Lync Server 2013
 
@@ -103,7 +103,7 @@ I cmdlet seguenti possono essere utilizzati per gestire i criteri vocali e i dia
 [Cmdlet di VoIP aziendale in Lync Server 2013](lync-server-2013-enterprise-voice-cmdlets.md)  
 
 
-[Blog di PowerShell per Lync Server](http://go.microsoft.com/fwlink/p/?linkid=203150)  
+[Blog di PowerShell per Lync Server](https://go.microsoft.com/fwlink/p/?linkid=203150)  
   
 
 </div>

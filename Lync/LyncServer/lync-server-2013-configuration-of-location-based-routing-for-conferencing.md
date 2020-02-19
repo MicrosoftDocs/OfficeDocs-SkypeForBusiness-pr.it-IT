@@ -12,18 +12,18 @@ ms:contentKeyID: 56335088
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a959addbcd98e04d336ba380676399dbff2f586b
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 237799a84d0230bf55737779921dd66b23c27130
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42040785"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42133991"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="configuration-of-location-based-routing-for-conferencing-in-lync-server-2013"></a>Configurazione del routing in base alla posizione per le conferenze in Lync Server 2013
 
@@ -63,11 +63,11 @@ Ad esempio, se l'applicazione "UdcAgent" ha un valore di priorità pari a "2", l
 
 Dopo aver individuato il valore di priorità corretto per l'applicazione di conferenza di routing basata sulla posizione, digitare il seguente cmdlet per ogni pool Front-end o server Standard Edition in cui gli utenti di Home sono abilitati per il routing basato sulla posizione:
 
-New-CsServerApplication-Identity Service: Registrar\<: FQDN\>pool/LBRouting- \<priorità applicazione\> prioritaria-abilitato $true-Critical $true-Urihttp://www.microsoft.com/LCS/LBRouting
+New-CsServerApplication-Identity Service: Registrar\<: FQDN\>pool/LBRouting- \<priorità applicazione\> prioritaria-abilitato $true-Critical $true-Urihttps://www.microsoft.com/LCS/LBRouting
 
 Ad esempio:
 
-New-CsServerApplication-Identity Service Registrar:LS2013CU2LBRPool. contoso. com/LBRouting-Priority 3-Enabled $true-Critical $true-Urihttp://www.microsoft.com/LCS/LBRouting
+New-CsServerApplication-Identity Service Registrar:LS2013CU2LBRPool. contoso. com/LBRouting-Priority 3-Enabled $true-Critical $true-Urihttps://www.microsoft.com/LCS/LBRouting
 
 Dopo aver utilizzato questo cmdlet, riavviare tutti i Front End Server nel pool o nei server Standard Edition in cui è stata abilitata l'applicazione per le conferenze di routing in base alla posizione.
 

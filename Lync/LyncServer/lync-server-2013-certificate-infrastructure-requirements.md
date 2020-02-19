@@ -12,18 +12,18 @@ ms:contentKeyID: 48183219
 ms.date: 06/23/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8b64f06d9ca879236c0842554c1779fb7bbc1cbe
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 3dd1aa5bdde1c94e3d0558be14c67cf62ec8142a
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42038458"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42135292"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="certificate-infrastructure-requirements-for-lync-server-2013"></a>Requisiti dell'infrastruttura dei certificati per Lync Server 2013
 
@@ -59,7 +59,7 @@ Per Lync Server, si applicano i requisiti comuni seguenti:
 
   - Tutti i certificati del server devono contenere un punto di distribuzione CRL (CDP).
 
-  - Tutti i certificati devono essere firmati utilizzando un algoritmo di firma supportato dal sistema operativo. Lync Server 2013 supporta la famiglia di dimensioni del digest SHA-1 e SHA-2 (224, 256, 384 e 512 bit) e soddisfa o supera i requisiti del sistema operativo. Per il supporto del sistema operativo [http://go.microsoft.com/fwlink/?LinkId=287002](http://go.microsoft.com/fwlink/?linkid=287002), vedere.
+  - Tutti i certificati devono essere firmati utilizzando un algoritmo di firma supportato dal sistema operativo. Lync Server 2013 supporta la famiglia di dimensioni del digest SHA-1 e SHA-2 (224, 256, 384 e 512 bit) e soddisfa o supera i requisiti del sistema operativo. Per il supporto del sistema operativo [https://go.microsoft.com/fwlink/?LinkId=287002](https://go.microsoft.com/fwlink/?linkid=287002), vedere.
     
     <div>
     
