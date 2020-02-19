@@ -12,20 +12,20 @@ ms:contentKeyID: 49733574
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 175f7d9cd5417f350dd08873aa748c56d829d86d
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: ac7ebd5c1c0340b8cbe406901290903f411fe11e
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42007044"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42134672"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="delete-an-existing-collection-of-lync-phone-edition-configuration-settings-in-lync-server-2013"></a><span data-ttu-id="260f2-102">Eliminare una raccolta esistente di impostazioni di configurazione di Lync Phone Edition in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="260f2-102">Delete an existing collection of Lync Phone Edition configuration settings in Lync Server 2013</span></span>
+# <a name="delete-an-existing-collection-of-lync-phone-edition-configuration-settings-in-lync-server-2013"></a><span data-ttu-id="b001d-102">Eliminare una raccolta esistente di impostazioni di configurazione di Lync Phone Edition in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b001d-102">Delete an existing collection of Lync Phone Edition configuration settings in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,15 +35,15 @@ ms.locfileid: "42007044"
 
 <span> </span>
 
-<span data-ttu-id="260f2-103">_**Ultimo argomento modificato:** 2013-02-23_</span><span class="sxs-lookup"><span data-stu-id="260f2-103">_**Topic Last Modified:** 2013-02-23_</span></span>
+<span data-ttu-id="b001d-103">_**Ultimo argomento modificato:** 2013-02-23_</span><span class="sxs-lookup"><span data-stu-id="b001d-103">_**Topic Last Modified:** 2013-02-23_</span></span>
 
-<span data-ttu-id="260f2-104">Se non si desidera più utilizzare una raccolta di impostazioni per i dispositivi che eseguono Lync Phone Edition, eliminarlo.</span><span class="sxs-lookup"><span data-stu-id="260f2-104">If you no longer want to use a collection of settings for devices running Lync Phone Edition, delete it.</span></span> <span data-ttu-id="260f2-105">Se si elimina una raccolta per un sito, le impostazioni globali saranno applicabili ai telefoni in quel sito.</span><span class="sxs-lookup"><span data-stu-id="260f2-105">If you delete a collection for a site, the global settings will apply to the phones in that site.</span></span> <span data-ttu-id="260f2-106">Non è possibile eliminare la raccolta globale.</span><span class="sxs-lookup"><span data-stu-id="260f2-106">You cannot delete the global collection.</span></span>
+<span data-ttu-id="b001d-104">Se non si desidera più utilizzare una raccolta di impostazioni per i dispositivi che eseguono Lync Phone Edition, eliminarlo.</span><span class="sxs-lookup"><span data-stu-id="b001d-104">If you no longer want to use a collection of settings for devices running Lync Phone Edition, delete it.</span></span> <span data-ttu-id="b001d-105">Se si elimina una raccolta per un sito, le impostazioni globali saranno applicabili ai telefoni in quel sito.</span><span class="sxs-lookup"><span data-stu-id="b001d-105">If you delete a collection for a site, the global settings will apply to the phones in that site.</span></span> <span data-ttu-id="b001d-106">Non è possibile eliminare la raccolta globale.</span><span class="sxs-lookup"><span data-stu-id="b001d-106">You cannot delete the global collection.</span></span>
 
 <div>
 
 
 > [!NOTE]
-> <span data-ttu-id="260f2-107">Invece di eliminare una raccolta, è possibile modificare alcune delle impostazioni.</span><span class="sxs-lookup"><span data-stu-id="260f2-107">Instead of deleting a collection, you might just want to change some of the settings.</span></span> <span data-ttu-id="260f2-108">Per informazioni dettagliate su come eseguire questa operazione, vedere <A href="lync-server-2013-create-or-modify-a-collection-of-lync-phone-edition-configuration-settings.md">creare o modificare una raccolta di impostazioni di configurazione di Lync Phone Edition in Lync Server 2013</A>.</span><span class="sxs-lookup"><span data-stu-id="260f2-108">For details about how to do so, see <A href="lync-server-2013-create-or-modify-a-collection-of-lync-phone-edition-configuration-settings.md">Create or modify a collection of Lync Phone Edition configuration settings in Lync Server 2013</A>.</span></span>
+> <span data-ttu-id="b001d-107">Invece di eliminare una raccolta, è possibile modificare alcune delle impostazioni.</span><span class="sxs-lookup"><span data-stu-id="b001d-107">Instead of deleting a collection, you might just want to change some of the settings.</span></span> <span data-ttu-id="b001d-108">Per informazioni dettagliate su come eseguire questa operazione, vedere <A href="lync-server-2013-create-or-modify-a-collection-of-lync-phone-edition-configuration-settings.md">creare o modificare una raccolta di impostazioni di configurazione di Lync Phone Edition in Lync Server 2013</A>.</span><span class="sxs-lookup"><span data-stu-id="b001d-108">For details about how to do so, see <A href="lync-server-2013-create-or-modify-a-collection-of-lync-phone-edition-configuration-settings.md">Create or modify a collection of Lync Phone Edition configuration settings in Lync Server 2013</A>.</span></span>
 
 
 
@@ -51,40 +51,40 @@ ms.locfileid: "42007044"
 
 <div>
 
-## <a name="to-delete-a-collection-of-lync-phone-edition-configuration-settings"></a><span data-ttu-id="260f2-109">Per eliminare una raccolta di impostazioni di configurazione di Lync Phone Edition</span><span class="sxs-lookup"><span data-stu-id="260f2-109">To delete a collection of Lync Phone Edition configuration settings</span></span>
+## <a name="to-delete-a-collection-of-lync-phone-edition-configuration-settings"></a><span data-ttu-id="b001d-109">Per eliminare una raccolta di impostazioni di configurazione di Lync Phone Edition</span><span class="sxs-lookup"><span data-stu-id="b001d-109">To delete a collection of Lync Phone Edition configuration settings</span></span>
 
-1.  <span data-ttu-id="260f2-110">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="260f2-110">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+1.  <span data-ttu-id="b001d-110">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="b001d-110">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
 
-2.  <span data-ttu-id="260f2-111">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="260f2-111">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="260f2-112">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="260f2-112">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="b001d-111">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="b001d-111">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="b001d-112">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="b001d-112">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="260f2-113">Nella barra di spostamento sinistra fare clic su **Client**, quindi fare clic sul pulsante di navigazione **Configurazione dispositivo**.</span><span class="sxs-lookup"><span data-stu-id="260f2-113">In the left navigation bar, click **Clients**, and then click the **Device Configuration** navigation button.</span></span>
+3.  <span data-ttu-id="b001d-113">Nella barra di spostamento sinistra fare clic su **Client**, quindi fare clic sul pulsante di navigazione **Configurazione dispositivo**.</span><span class="sxs-lookup"><span data-stu-id="b001d-113">In the left navigation bar, click **Clients**, and then click the **Device Configuration** navigation button.</span></span>
 
-4.  <span data-ttu-id="260f2-114">Nella pagina **Configurazione dispositivo** fare clic sulla raccolta che si desidera eliminare, quindi scegliere il menu **Modifica** e quindi **Elimina**.</span><span class="sxs-lookup"><span data-stu-id="260f2-114">On the **Device Configuration** page, click the collection you want to delete, click the **Edit** menu, and then click **Delete**.</span></span>
+4.  <span data-ttu-id="b001d-114">Nella pagina **Configurazione dispositivo** fare clic sulla raccolta che si desidera eliminare, quindi scegliere il menu **Modifica** e quindi **Elimina**.</span><span class="sxs-lookup"><span data-stu-id="b001d-114">On the **Device Configuration** page, click the collection you want to delete, click the **Edit** menu, and then click **Delete**.</span></span>
     
     <div>
     
 
     > [!NOTE]
-    > <span data-ttu-id="260f2-p104">Se si elimina la raccolta globale, vengono ripristinate le impostazioni predefinite. La raccolta viene mantenuta.</span><span class="sxs-lookup"><span data-stu-id="260f2-p104">If you delete the global collection, the settings just revert to the default settings. The collection does not go away.</span></span>
+    > <span data-ttu-id="b001d-p104">Se si elimina la raccolta globale, vengono ripristinate le impostazioni predefinite. La raccolta viene mantenuta.</span><span class="sxs-lookup"><span data-stu-id="b001d-p104">If you delete the global collection, the settings just revert to the default settings. The collection does not go away.</span></span>
 
     
     </div>
 
-5.  <span data-ttu-id="260f2-117">Nella finestra di conferma fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="260f2-117">In the confirmation box, click **OK**.</span></span>
+5.  <span data-ttu-id="b001d-117">Nella finestra di conferma fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="b001d-117">In the confirmation box, click **OK**.</span></span>
 
 </div>
 
 <div>
 
-## <a name="removing-lync-phone-edition-configuration-settings-by-using-windows-powershell-cmdlets"></a><span data-ttu-id="260f2-118">Rimozione delle impostazioni di configurazione di Lync Phone Edition tramite i cmdlet di Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="260f2-118">Removing Lync Phone Edition Configuration Settings by Using Windows PowerShell Cmdlets</span></span>
+## <a name="removing-lync-phone-edition-configuration-settings-by-using-windows-powershell-cmdlets"></a><span data-ttu-id="b001d-118">Rimozione delle impostazioni di configurazione di Lync Phone Edition tramite i cmdlet di Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="b001d-118">Removing Lync Phone Edition Configuration Settings by Using Windows PowerShell Cmdlets</span></span>
 
-<span data-ttu-id="260f2-119">È possibile eliminare le impostazioni di configurazione di Lync Phone Edition utilizzando Windows PowerShell e il cmdlet **Remove-CsUCConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="260f2-119">You can delete Lync Phone Edition configuration settings by using Windows PowerShell and the **Remove-CsUCConfiguration** cmdlet.</span></span> <span data-ttu-id="260f2-120">È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="260f2-120">You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="260f2-121">Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.</span><span class="sxs-lookup"><span data-stu-id="260f2-121">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
+<span data-ttu-id="b001d-119">È possibile eliminare le impostazioni di configurazione di Lync Phone Edition utilizzando Windows PowerShell e il cmdlet **Remove-CsUCConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="b001d-119">You can delete Lync Phone Edition configuration settings by using Windows PowerShell and the **Remove-CsUCConfiguration** cmdlet.</span></span> <span data-ttu-id="b001d-120">È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="b001d-120">You can run this cmdlet either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="b001d-121">Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.</span><span class="sxs-lookup"><span data-stu-id="b001d-121">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
 
 <div>
 
-## <a name="to-remove-a-specified-collection-of-lync-phone-edition-configuration-settings"></a><span data-ttu-id="260f2-122">Per rimuovere una raccolta specificata di impostazioni di configurazione di Lync Phone Edition</span><span class="sxs-lookup"><span data-stu-id="260f2-122">To remove a specified collection of Lync Phone Edition configuration settings</span></span>
+## <a name="to-remove-a-specified-collection-of-lync-phone-edition-configuration-settings"></a><span data-ttu-id="b001d-122">Per rimuovere una raccolta specificata di impostazioni di configurazione di Lync Phone Edition</span><span class="sxs-lookup"><span data-stu-id="b001d-122">To remove a specified collection of Lync Phone Edition configuration settings</span></span>
 
-  - <span data-ttu-id="260f2-123">Questo comando elimina le impostazioni di configurazione dei telefoni UC applicate al sito di Redmond:</span><span class="sxs-lookup"><span data-stu-id="260f2-123">This command deletes the UC phone configuration settings applied to the Redmond site:</span></span>
+  - <span data-ttu-id="b001d-123">Questo comando elimina le impostazioni di configurazione dei telefoni UC applicate al sito di Redmond:</span><span class="sxs-lookup"><span data-stu-id="b001d-123">This command deletes the UC phone configuration settings applied to the Redmond site:</span></span>
     
         Remove-CsUCPhoneConfiguration -Identity "site:Redmond"
 
@@ -92,9 +92,9 @@ ms.locfileid: "42007044"
 
 <div>
 
-## <a name="to-remove-all-of-the-lync-phone-edition-configuration-settings-applied-to-the-site-scope"></a><span data-ttu-id="260f2-124">Per rimuovere tutte le impostazioni di configurazione di Lync Phone Edition applicate all'ambito del sito</span><span class="sxs-lookup"><span data-stu-id="260f2-124">To remove all of the Lync Phone Edition configuration settings applied to the site scope</span></span>
+## <a name="to-remove-all-of-the-lync-phone-edition-configuration-settings-applied-to-the-site-scope"></a><span data-ttu-id="b001d-124">Per rimuovere tutte le impostazioni di configurazione di Lync Phone Edition applicate all'ambito del sito</span><span class="sxs-lookup"><span data-stu-id="b001d-124">To remove all of the Lync Phone Edition configuration settings applied to the site scope</span></span>
 
-  - <span data-ttu-id="260f2-125">Questo comando rimuove tutte le impostazioni di configurazione dei telefoni UC applicate all'ambito del servizio:</span><span class="sxs-lookup"><span data-stu-id="260f2-125">This command removes all the UC phone configuration settings applied to the service scope:</span></span>
+  - <span data-ttu-id="b001d-125">Questo comando rimuove tutte le impostazioni di configurazione dei telefoni UC applicate all'ambito del servizio:</span><span class="sxs-lookup"><span data-stu-id="b001d-125">This command removes all the UC phone configuration settings applied to the service scope:</span></span>
     
         Get-CsUCPhoneConfiguration -Filter "site:*" | Remove-CsUCPhoneConfiguration
 
@@ -102,15 +102,15 @@ ms.locfileid: "42007044"
 
 <div>
 
-## <a name="to-remove-all-of-the-lync-phone-edition-configuration-settings-where-phone-locking-is-disabled"></a><span data-ttu-id="260f2-126">Per rimuovere tutte le impostazioni di configurazione di Lync Phone Edition in cui il blocco del telefono è disabilitato</span><span class="sxs-lookup"><span data-stu-id="260f2-126">To remove all of the Lync Phone Edition configuration settings where phone locking is disabled</span></span>
+## <a name="to-remove-all-of-the-lync-phone-edition-configuration-settings-where-phone-locking-is-disabled"></a><span data-ttu-id="b001d-126">Per rimuovere tutte le impostazioni di configurazione di Lync Phone Edition in cui il blocco del telefono è disabilitato</span><span class="sxs-lookup"><span data-stu-id="b001d-126">To remove all of the Lync Phone Edition configuration settings where phone locking is disabled</span></span>
 
-  - <span data-ttu-id="260f2-127">Questo comando elimina le raccolte di impostazioni di configurazione dei telefoni UC in cui il blocco del telefono è stato disabilitato:</span><span class="sxs-lookup"><span data-stu-id="260f2-127">This command deletes any collection of UC phone configuration settings where phone locking has been disabled:</span></span>
+  - <span data-ttu-id="b001d-127">Questo comando elimina le raccolte di impostazioni di configurazione dei telefoni UC in cui il blocco del telefono è stato disabilitato:</span><span class="sxs-lookup"><span data-stu-id="b001d-127">This command deletes any collection of UC phone configuration settings where phone locking has been disabled:</span></span>
     
         Get-CsUCPhoneConfiguration | Where-Object {$_.EnforcePhoneLock -eq $False} | Remove-CsUCPhoneConfiguration
 
 </div>
 
-<span data-ttu-id="260f2-128">Per informazioni dettagliate, vedere [Remove-CsUCPhoneConfiguration](https://technet.microsoft.com/library/Gg398249(v=OCS.15)).</span><span class="sxs-lookup"><span data-stu-id="260f2-128">For details, see [Remove-CsUCPhoneConfiguration](https://technet.microsoft.com/library/Gg398249(v=OCS.15)).</span></span>
+<span data-ttu-id="b001d-128">Per informazioni dettagliate, vedere [Remove-CsUCPhoneConfiguration](https://technet.microsoft.com/library/Gg398249(v=OCS.15)).</span><span class="sxs-lookup"><span data-stu-id="b001d-128">For details, see [Remove-CsUCPhoneConfiguration](https://technet.microsoft.com/library/Gg398249(v=OCS.15)).</span></span>
 
 </div>
 

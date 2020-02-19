@@ -12,20 +12,20 @@ ms:contentKeyID: 49733655
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0cf9e589cf239cd7c0e61090dc65995ef71357d0
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 2dbafd3d2316ddc14f9f1925507a05ef365c34f2
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42044288"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42135022"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="call-admission-control-for-sites-in-lync-server-2013"></a><span data-ttu-id="62323-102">Controllo di ammissione di chiamata per i siti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="62323-102">Call admission control for sites in Lync Server 2013</span></span>
+# <a name="call-admission-control-for-sites-in-lync-server-2013"></a><span data-ttu-id="c8311-102">Controllo di ammissione di chiamata per i siti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c8311-102">Call admission control for sites in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,27 +35,27 @@ ms.locfileid: "42044288"
 
 <span> </span>
 
-<span data-ttu-id="62323-103">_**Ultimo argomento modificato:** 2013-02-21_</span><span class="sxs-lookup"><span data-stu-id="62323-103">_**Topic Last Modified:** 2013-02-21_</span></span>
+<span data-ttu-id="c8311-103">_**Ultimo argomento modificato:** 2013-02-21_</span><span class="sxs-lookup"><span data-stu-id="c8311-103">_**Topic Last Modified:** 2013-02-21_</span></span>
 
-<span data-ttu-id="62323-p101">I siti di rete sono gli uffici o le postazioni in ogni area di rete delle distribuzioni del servizio Controllo di ammissione di chiamata (CAC, Call Admission Control), del servizio per chiamate di emergenza E9-1-1 e di bypass multimediale. Usare le procedure illustrate in questa sezione per configurare il servizio CAC per i siti di rete.</span><span class="sxs-lookup"><span data-stu-id="62323-p101">Network sites are the offices or locations within each network region of call admission control (CAC), E9-1-1, and media bypass deployments. Use the procedures in this section to configure call admission control for network sites.</span></span>
+<span data-ttu-id="c8311-p101">I siti di rete sono gli uffici o le postazioni in ogni area di rete delle distribuzioni del servizio Controllo di ammissione di chiamata (CAC, Call Admission Control), del servizio per chiamate di emergenza E9-1-1 e di bypass multimediale. Usare le procedure illustrate in questa sezione per configurare il servizio CAC per i siti di rete.</span><span class="sxs-lookup"><span data-stu-id="c8311-p101">Network sites are the offices or locations within each network region of call admission control (CAC), E9-1-1, and media bypass deployments. Use the procedures in this section to configure call admission control for network sites.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="62323-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="62323-106">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="c8311-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="c8311-106">In This Section</span></span>
 
-  - [<span data-ttu-id="62323-107">Visualizzazione delle informazioni sui siti di rete in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="62323-107">Viewing network site information in Lync Server 2013</span></span>](lync-server-2013-viewing-network-site-information.md)
+  - [<span data-ttu-id="c8311-107">Visualizzazione delle informazioni sui siti di rete in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c8311-107">Viewing network site information in Lync Server 2013</span></span>](lync-server-2013-viewing-network-site-information.md)
 
-  - [<span data-ttu-id="62323-108">Creazione o modifica di siti di rete in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="62323-108">Creating or modifying network sites in Lync Server 2013</span></span>](lync-server-2013-creating-or-modifying-network-sites.md)
+  - [<span data-ttu-id="c8311-108">Creazione o modifica di siti di rete in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c8311-108">Creating or modifying network sites in Lync Server 2013</span></span>](lync-server-2013-creating-or-modifying-network-sites.md)
 
-  - [<span data-ttu-id="62323-109">Eliminazione di un sito di rete esistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="62323-109">Deleting an existing network site in Lync Server 2013</span></span>](lync-server-2013-deleting-an-existing-network-site.md)
+  - [<span data-ttu-id="c8311-109">Eliminazione di un sito di rete esistente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c8311-109">Deleting an existing network site in Lync Server 2013</span></span>](lync-server-2013-deleting-an-existing-network-site.md)
 
 </div>
 
 <div>
 
-## <a name="related-sections"></a><span data-ttu-id="62323-110">Sezioni correlate</span><span class="sxs-lookup"><span data-stu-id="62323-110">Related Sections</span></span>
+## <a name="related-sections"></a><span data-ttu-id="c8311-110">Sezioni correlate</span><span class="sxs-lookup"><span data-stu-id="c8311-110">Related Sections</span></span>
 
-[<span data-ttu-id="62323-111">Pianificazione del controllo di ammissione di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="62323-111">Planning for call admission control in Lync Server 2013</span></span>](lync-server-2013-planning-for-call-admission-control.md)
+[<span data-ttu-id="c8311-111">Pianificazione del controllo di ammissione di chiamata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c8311-111">Planning for call admission control in Lync Server 2013</span></span>](lync-server-2013-planning-for-call-admission-control.md)
 
 </div>
 

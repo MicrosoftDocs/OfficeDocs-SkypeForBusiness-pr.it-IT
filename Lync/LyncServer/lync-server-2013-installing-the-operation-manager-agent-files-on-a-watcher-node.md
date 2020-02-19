@@ -12,20 +12,20 @@ ms:contentKeyID: 48183901
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a4a6ab24a655a96c00f019e6a0d4239d33424d7a
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 108d2be5ecf322b4386dda7c10789cd690c0bcfb
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42046769"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42118909"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="installing-the-operation-manager-agent-files-on-a-watcher-node-in-lync-server-2013"></a><span data-ttu-id="705c7-102">Installazione dei file dell'agente Operation Manager in un nodo Watcher in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="705c7-102">Installing the Operation Manager agent files on a watcher node in Lync Server 2013</span></span>
+# <a name="installing-the-operation-manager-agent-files-on-a-watcher-node-in-lync-server-2013"></a><span data-ttu-id="5e9bf-102">Installazione dei file dell'agente Operation Manager in un nodo Watcher in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5e9bf-102">Installing the Operation Manager agent files on a watcher node in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "42046769"
 
 <span> </span>
 
-<span data-ttu-id="705c7-103">_**Ultimo argomento modificato:** 2012-10-20_</span><span class="sxs-lookup"><span data-stu-id="705c7-103">_**Topic Last Modified:** 2012-10-20_</span></span>
+<span data-ttu-id="5e9bf-103">_**Ultimo argomento modificato:** 2012-10-20_</span><span class="sxs-lookup"><span data-stu-id="5e9bf-103">_**Topic Last Modified:** 2012-10-20_</span></span>
 
-<span data-ttu-id="705c7-104">Analogamente alla configurazione di un server Lync per segnalare gli avvisi dei componenti, un nodo di monitoraggio di Lync Server 2013 richiede l'installazione dei file dell'agente System Center Operations Manager.</span><span class="sxs-lookup"><span data-stu-id="705c7-104">Similar to setting up a Lync Server to report component alerts, a Lync Server 2013 watcher node requires System Center Operations Manager agent files to be installed.</span></span> <span data-ttu-id="705c7-105">In questo modo sarà possibile eseguire transazioni sintetiche e attivare la segnalazione degli avvisi nel server di gestione principale di System Center Operations Manager.</span><span class="sxs-lookup"><span data-stu-id="705c7-105">This will enable the synthetic transactions to be run and for alerts to be reported to the System Center Operations Manager Root Management Server.</span></span>
+<span data-ttu-id="5e9bf-104">Analogamente alla configurazione di un server Lync per segnalare gli avvisi dei componenti, un nodo di monitoraggio di Lync Server 2013 richiede l'installazione dei file dell'agente System Center Operations Manager.</span><span class="sxs-lookup"><span data-stu-id="5e9bf-104">Similar to setting up a Lync Server to report component alerts, a Lync Server 2013 watcher node requires System Center Operations Manager agent files to be installed.</span></span> <span data-ttu-id="5e9bf-105">In questo modo sarà possibile eseguire transazioni sintetiche e attivare la segnalazione degli avvisi nel server di gestione principale di System Center Operations Manager.</span><span class="sxs-lookup"><span data-stu-id="5e9bf-105">This will enable the synthetic transactions to be run and for alerts to be reported to the System Center Operations Manager Root Management Server.</span></span>
 
-<span data-ttu-id="705c7-106">Per installare i file agente, seguire le stesse procedure elencate nelle sezioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="705c7-106">To install the agent files, follow the same procedures listed in the following sections:</span></span>
+<span data-ttu-id="5e9bf-106">Per installare i file agente, seguire le stesse procedure elencate nelle sezioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="5e9bf-106">To install the agent files, follow the same procedures listed in the following sections:</span></span>
 
-1.  [<span data-ttu-id="705c7-107">Installazione di un certificato in un nodo Watcher che si trova all'esterno della rete perimetrale di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="705c7-107">Installing a certificate on a watcher node located outside the perimeter network of Lync Server 2013</span></span>](lync-server-2013-installing-a-certificate-on-a-watcher-node-located-outside-the-perimeter-network.md)
+1.  [<span data-ttu-id="5e9bf-107">Installazione di un certificato in un nodo Watcher che si trova all'esterno della rete perimetrale di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5e9bf-107">Installing a certificate on a watcher node located outside the perimeter network of Lync Server 2013</span></span>](lync-server-2013-installing-a-certificate-on-a-watcher-node-located-outside-the-perimeter-network.md)
 
-2.  [<span data-ttu-id="705c7-108">Installazione dei file dell'agente Operation Manager in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="705c7-108">Installing the Operation Manager agent files in Lync Server 2013</span></span>](lync-server-2013-installing-the-operation-manager-agent-files.md)
+2.  [<span data-ttu-id="5e9bf-108">Installazione dei file dell'agente Operation Manager in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5e9bf-108">Installing the Operation Manager agent files in Lync Server 2013</span></span>](lync-server-2013-installing-the-operation-manager-agent-files.md)
 
-3.  [<span data-ttu-id="705c7-109">Configurazione del computer Lync Server 2013 per la partecipazione all'individuazione di System Center</span><span class="sxs-lookup"><span data-stu-id="705c7-109">Configuring the Lync Server 2013 computer to participate in System Center discovery</span></span>](lync-server-2013-configuring-the-lync-server-computer-to-participate-in-system-center-discovery.md)
+3.  [<span data-ttu-id="5e9bf-109">Configurazione del computer Lync Server 2013 per la partecipazione all'individuazione di System Center</span><span class="sxs-lookup"><span data-stu-id="5e9bf-109">Configuring the Lync Server 2013 computer to participate in System Center discovery</span></span>](lync-server-2013-configuring-the-lync-server-computer-to-participate-in-system-center-discovery.md)
 
 </div>
 

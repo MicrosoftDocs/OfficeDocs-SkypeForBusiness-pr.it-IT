@@ -12,20 +12,20 @@ ms:contentKeyID: 49733826
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 84bddaba994d5e0907200902deb8c818cca4199c
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 8b4ad6f728f01f0cf9ef1aac6ed57ad22c7ff345
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42044248"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42134832"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="called-id-presentation-in-lync-server-2013"></a><span data-ttu-id="a862f-102">Presentazione ID denominata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a862f-102">Called ID presentation in Lync Server 2013</span></span>
+# <a name="called-id-presentation-in-lync-server-2013"></a><span data-ttu-id="1106d-102">Presentazione ID denominata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1106d-102">Called ID presentation in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,31 +35,31 @@ ms.locfileid: "42044248"
 
 <span> </span>
 
-<span data-ttu-id="a862f-103">_**Ultimo argomento modificato:** 2012-09-21_</span><span class="sxs-lookup"><span data-stu-id="a862f-103">_**Topic Last Modified:** 2012-09-21_</span></span>
+<span data-ttu-id="1106d-103">_**Ultimo argomento modificato:** 2012-09-21_</span><span class="sxs-lookup"><span data-stu-id="1106d-103">_**Topic Last Modified:** 2012-09-21_</span></span>
 
-<span data-ttu-id="a862f-104">Con Lync Server 2010, il numero di telefono della parte chiamata, ovvero il numero di telefono chiamato, può essere convertito dal formato E. 164 al formato di composizione locale richiesto dal peer trunk, ovvero il gateway associato, il PBX (Private Branch Exchange) o il trunk SIP.</span><span class="sxs-lookup"><span data-stu-id="a862f-104">With Lync Server 2010, the called party’s phone number (that is, the phone number called) can be translated from E.164 format to the local dialing format that is required by the trunk peer (that is, the associated gateway, private branch exchange (PBX), or SIP trunk).</span></span> <span data-ttu-id="a862f-105">A tale scopo, è necessario definire una o più regole per la conversione dell'URI di richiesta prima del routing al peer trunk.</span><span class="sxs-lookup"><span data-stu-id="a862f-105">To do this, you must define one or more translation rules to translate the Request URI before routing it to the trunk peer.</span></span>
+<span data-ttu-id="1106d-104">Con Lync Server 2010, il numero di telefono della parte chiamata, ovvero il numero di telefono chiamato, può essere convertito dal formato E. 164 al formato di composizione locale richiesto dal peer trunk, ovvero il gateway associato, il PBX (Private Branch Exchange) o il trunk SIP.</span><span class="sxs-lookup"><span data-stu-id="1106d-104">With Lync Server 2010, the called party’s phone number (that is, the phone number called) can be translated from E.164 format to the local dialing format that is required by the trunk peer (that is, the associated gateway, private branch exchange (PBX), or SIP trunk).</span></span> <span data-ttu-id="1106d-105">A tale scopo, è necessario definire una o più regole per la conversione dell'URI di richiesta prima del routing al peer trunk.</span><span class="sxs-lookup"><span data-stu-id="1106d-105">To do this, you must define one or more translation rules to translate the Request URI before routing it to the trunk peer.</span></span>
 
 <div>
 
 
 > [!IMPORTANT]  
-> <span data-ttu-id="a862f-106">La possibilità di associare una o più regole di conversione a una configurazione trunk VoIP aziendale è destinata a essere utilizzata come <EM>alternativa</EM> alla configurazione delle regole di conversione nel peer trunk.</span><span class="sxs-lookup"><span data-stu-id="a862f-106">The ability to associate one or more translation rules with an Enterprise Voice trunk configuration is intended to be used as an <EM>alternative</EM> to configuring translation rules on the trunk peer.</span></span> <span data-ttu-id="a862f-107">Non associare regole di conversione a una configurazione trunk VoIP aziendale se sono state configurate regole di conversione nel peer trunk perché le due regole potrebbero essere in conflitto.</span><span class="sxs-lookup"><span data-stu-id="a862f-107">Do not associate translation rules with an Enterprise Voice trunk configuration if you have configured translation rules on the trunk peer because the two rules might conflict.</span></span>
+> <span data-ttu-id="1106d-106">La possibilità di associare una o più regole di conversione a una configurazione trunk VoIP aziendale è destinata a essere utilizzata come <EM>alternativa</EM> alla configurazione delle regole di conversione nel peer trunk.</span><span class="sxs-lookup"><span data-stu-id="1106d-106">The ability to associate one or more translation rules with an Enterprise Voice trunk configuration is intended to be used as an <EM>alternative</EM> to configuring translation rules on the trunk peer.</span></span> <span data-ttu-id="1106d-107">Non associare regole di conversione a una configurazione trunk VoIP aziendale se sono state configurate regole di conversione nel peer trunk perché le due regole potrebbero essere in conflitto.</span><span class="sxs-lookup"><span data-stu-id="1106d-107">Do not associate translation rules with an Enterprise Voice trunk configuration if you have configured translation rules on the trunk peer because the two rules might conflict.</span></span>
 
 
 
 </div>
 
-<span data-ttu-id="a862f-108">È possibile utilizzare uno dei metodi seguenti per creare e modificare una regola di conversione:</span><span class="sxs-lookup"><span data-stu-id="a862f-108">You can use either of the following methods to create or modify a translation rule:</span></span>
+<span data-ttu-id="1106d-108">È possibile utilizzare uno dei metodi seguenti per creare e modificare una regola di conversione:</span><span class="sxs-lookup"><span data-stu-id="1106d-108">You can use either of the following methods to create or modify a translation rule:</span></span>
 
-  - <span data-ttu-id="a862f-109">Utilizzare lo strumento **Crea regola di conversione** per specificare i valori per le cifre iniziali, la lunghezza, le cifre da rimuovere e le cifre da aggiungere, quindi lasciare che il pannello di controllo di Lync Server generi il corrispondente modello e la regola di conversione corrispondenti.</span><span class="sxs-lookup"><span data-stu-id="a862f-109">Use the **Build a Translation Rule** tool to specify values for the starting digits, length, digits to remove and digits to add, and then let Lync Server Control Panel generate the corresponding matching pattern and translation rule for you.</span></span>
+  - <span data-ttu-id="1106d-109">Utilizzare lo strumento **Crea regola di conversione** per specificare i valori per le cifre iniziali, la lunghezza, le cifre da rimuovere e le cifre da aggiungere, quindi lasciare che il pannello di controllo di Lync Server generi il corrispondente modello e la regola di conversione corrispondenti.</span><span class="sxs-lookup"><span data-stu-id="1106d-109">Use the **Build a Translation Rule** tool to specify values for the starting digits, length, digits to remove and digits to add, and then let Lync Server Control Panel generate the corresponding matching pattern and translation rule for you.</span></span>
 
-  - <span data-ttu-id="a862f-110">Scrivere manualmente espressioni regolari per definire il formato di corrispondenza e la regola di conversione.</span><span class="sxs-lookup"><span data-stu-id="a862f-110">Write regular expressions manually to define the matching pattern and translation rule.</span></span>
+  - <span data-ttu-id="1106d-110">Scrivere manualmente espressioni regolari per definire il formato di corrispondenza e la regola di conversione.</span><span class="sxs-lookup"><span data-stu-id="1106d-110">Write regular expressions manually to define the matching pattern and translation rule.</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="a862f-111">Per informazioni su come scrivere espressioni regolari, vedere la sezione relativa alle espressioni regolari di .NET <A href="http://go.microsoft.com/fwlink/p/?linkid=140927">http://go.microsoft.com/fwlink/p/?linkId=140927</A>Framework all'indirizzo.</span><span class="sxs-lookup"><span data-stu-id="a862f-111">For information about how to write regular expressions, see ".NET Framework Regular Expressions" at <A href="http://go.microsoft.com/fwlink/p/?linkid=140927">http://go.microsoft.com/fwlink/p/?linkId=140927</A>.</span></span>
+> <span data-ttu-id="1106d-111">Per informazioni su come scrivere espressioni regolari, vedere la sezione relativa alle espressioni regolari di .NET <A href="https://go.microsoft.com/fwlink/p/?linkid=140927">https://go.microsoft.com/fwlink/p/?linkId=140927</A>Framework all'indirizzo.</span><span class="sxs-lookup"><span data-stu-id="1106d-111">For information about how to write regular expressions, see ".NET Framework Regular Expressions" at <A href="https://go.microsoft.com/fwlink/p/?linkid=140927">https://go.microsoft.com/fwlink/p/?linkId=140927</A>.</span></span>
 
 
 
@@ -67,20 +67,20 @@ ms.locfileid: "42044248"
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="a862f-112">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="a862f-112">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="1106d-112">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="1106d-112">In This Section</span></span>
 
-  - [<span data-ttu-id="a862f-113">Creare o modificare una regola di conversione utilizzando lo strumento Crea regola di conversione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a862f-113">Create or modify a translation rule by using the Build a Translation Rule tool in Lync Server 2013</span></span>](lync-server-2013-create-or-modify-a-translation-rule-by-using-the-build-a-translation-rule-tool.md)
+  - [<span data-ttu-id="1106d-113">Creare o modificare una regola di conversione utilizzando lo strumento Crea regola di conversione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1106d-113">Create or modify a translation rule by using the Build a Translation Rule tool in Lync Server 2013</span></span>](lync-server-2013-create-or-modify-a-translation-rule-by-using-the-build-a-translation-rule-tool.md)
 
-  - [<span data-ttu-id="a862f-114">Creare o modificare manualmente una regola di conversione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a862f-114">Create or modify a translation rule manually in Lync Server 2013</span></span>](lync-server-2013-create-or-modify-a-translation-rule-manually.md)
+  - [<span data-ttu-id="1106d-114">Creare o modificare manualmente una regola di conversione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1106d-114">Create or modify a translation rule manually in Lync Server 2013</span></span>](lync-server-2013-create-or-modify-a-translation-rule-manually.md)
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="a862f-115">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="a862f-115">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1106d-115">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="1106d-115">See Also</span></span>
 
 
-[<span data-ttu-id="a862f-116">Presentazione dell'ID chiamante in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a862f-116">Caller ID presentation in Lync Server 2013</span></span>](lync-server-2013-caller-id-presentation.md)  
+[<span data-ttu-id="1106d-116">Presentazione dell'ID chiamante in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1106d-116">Caller ID presentation in Lync Server 2013</span></span>](lync-server-2013-caller-id-presentation.md)  
   
 
 </div>

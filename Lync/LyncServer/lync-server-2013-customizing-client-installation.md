@@ -12,20 +12,20 @@ ms:contentKeyID: 48184254
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b8302ca11a39dd823a5167924628a090c2de4632
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 246d21ee5052e29b451b119bf9468defc6b07ce3
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42047495"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42135473"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="customizing-client-installation-in-lync-server-2013"></a><span data-ttu-id="be29f-102">Personalizzazione dell'installazione client in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="be29f-102">Customizing client installation in Lync Server 2013</span></span>
+# <a name="customizing-client-installation-in-lync-server-2013"></a><span data-ttu-id="509dc-102">Personalizzazione dell'installazione client in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="509dc-102">Customizing client installation in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "42047495"
 
 <span> </span>
 
-<span data-ttu-id="be29f-103">_**Ultimo argomento modificato:** 2012-10-03_</span><span class="sxs-lookup"><span data-stu-id="be29f-103">_**Topic Last Modified:** 2012-10-03_</span></span>
+<span data-ttu-id="509dc-103">_**Ultimo argomento modificato:** 2012-10-03_</span><span class="sxs-lookup"><span data-stu-id="509dc-103">_**Topic Last Modified:** 2012-10-03_</span></span>
 
-<span data-ttu-id="be29f-104">Gli amministratori dell'organizzazione possono personalizzare l'installazione di Office 2013 basato su Windows Installer (con estensione msi) utilizzando i metodi illustrati in questa sezione.</span><span class="sxs-lookup"><span data-stu-id="be29f-104">Enterprise administrators can customize the Office 2013 Windows Installer-based (.msi) installation by using the methods discussed in this section.</span></span> <span data-ttu-id="be29f-105">Poiché nessun singolo strumento fornisce tutte le opzioni di personalizzazione, è probabile che venga utilizzata una combinazione di questi metodi nella distribuzione di Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="be29f-105">Because no single tool provides all customization options, you’ll likely use a combination of these methods in your Lync 2013 deployment.</span></span> <span data-ttu-id="be29f-106">È possibile che vengano utilizzati come minimo gli strumenti descritti nelle sezioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="be29f-106">At a minimum, you might use the tools described in the following sections:</span></span>
+<span data-ttu-id="509dc-104">Gli amministratori dell'organizzazione possono personalizzare l'installazione di Office 2013 basato su Windows Installer (con estensione msi) utilizzando i metodi illustrati in questa sezione.</span><span class="sxs-lookup"><span data-stu-id="509dc-104">Enterprise administrators can customize the Office 2013 Windows Installer-based (.msi) installation by using the methods discussed in this section.</span></span> <span data-ttu-id="509dc-105">Poiché nessun singolo strumento fornisce tutte le opzioni di personalizzazione, è probabile che venga utilizzata una combinazione di questi metodi nella distribuzione di Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="509dc-105">Because no single tool provides all customization options, you’ll likely use a combination of these methods in your Lync 2013 deployment.</span></span> <span data-ttu-id="509dc-106">È possibile che vengano utilizzati come minimo gli strumenti descritti nelle sezioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="509dc-106">At a minimum, you might use the tools described in the following sections:</span></span>
 
-  - <span data-ttu-id="be29f-107">[Utilizzo dello strumento di personalizzazione di Office in Lync Server 2013](lync-server-2013-using-the-office-customization-tool-oct.md) per personalizzare le opzioni di installazione e le funzionalità di Lync e di altre applicazioni di Office.</span><span class="sxs-lookup"><span data-stu-id="be29f-107">[Using the Office Customization Tool (OCT) in Lync Server 2013](lync-server-2013-using-the-office-customization-tool-oct.md) to customize setup options and features for Lync and other Office programs.</span></span>
+  - <span data-ttu-id="509dc-107">[Utilizzo dello strumento di personalizzazione di Office in Lync Server 2013](lync-server-2013-using-the-office-customization-tool-oct.md) per personalizzare le opzioni di installazione e le funzionalità di Lync e di altre applicazioni di Office.</span><span class="sxs-lookup"><span data-stu-id="509dc-107">[Using the Office Customization Tool (OCT) in Lync Server 2013](lync-server-2013-using-the-office-customization-tool-oct.md) to customize setup options and features for Lync and other Office programs.</span></span>
 
-  - <span data-ttu-id="be29f-108">[Utilizzo di config. XML per eseguire le attività di installazione in Lync Server 2013](lync-server-2013-using-config-xml-to-perform-installation-tasks.md) per specificare il percorso del punto di installazione di rete ed eseguire l'installazione invisibile all'utente.</span><span class="sxs-lookup"><span data-stu-id="be29f-108">[Using Config.xml to perform installation tasks in Lync Server 2013](lync-server-2013-using-config-xml-to-perform-installation-tasks.md) to specify the path of the network installation point and perform silent installation.</span></span>
+  - <span data-ttu-id="509dc-108">[Utilizzo di config. XML per eseguire le attività di installazione in Lync Server 2013](lync-server-2013-using-config-xml-to-perform-installation-tasks.md) per specificare il percorso del punto di installazione di rete ed eseguire l'installazione invisibile all'utente.</span><span class="sxs-lookup"><span data-stu-id="509dc-108">[Using Config.xml to perform installation tasks in Lync Server 2013](lync-server-2013-using-config-xml-to-perform-installation-tasks.md) to specify the path of the network installation point and perform silent installation.</span></span>
 
-  - <span data-ttu-id="be29f-109">[Utilizzo delle opzioni della riga di comando del programma di installazione in Lync Server 2013](lync-server-2013-using-setup-command-line-options.md) per specificare il file config. XML da utilizzare durante l'installazione.</span><span class="sxs-lookup"><span data-stu-id="be29f-109">[Using Setup command-line options in Lync Server 2013](lync-server-2013-using-setup-command-line-options.md) to specify the Config.xml file to use during installation.</span></span>
+  - <span data-ttu-id="509dc-109">[Utilizzo delle opzioni della riga di comando del programma di installazione in Lync Server 2013](lync-server-2013-using-setup-command-line-options.md) per specificare il file config. XML da utilizzare durante l'installazione.</span><span class="sxs-lookup"><span data-stu-id="509dc-109">[Using Setup command-line options in Lync Server 2013](lync-server-2013-using-setup-command-line-options.md) to specify the Config.xml file to use during installation.</span></span>
 
-  - <span data-ttu-id="be29f-110">[Configurazione dei criteri di avvio del client in Lync Server 2013](lync-server-2013-configuring-client-bootstrapping-policies.md) mediante lo snap-in MMC Editor oggetti Criteri di gruppo.</span><span class="sxs-lookup"><span data-stu-id="be29f-110">[Configuring client bootstrapping policies in Lync Server 2013](lync-server-2013-configuring-client-bootstrapping-policies.md) by using the Group Policy Object Editor MMC snap-in.</span></span>
+  - <span data-ttu-id="509dc-110">[Configurazione dei criteri di avvio del client in Lync Server 2013](lync-server-2013-configuring-client-bootstrapping-policies.md) mediante lo snap-in MMC Editor oggetti Criteri di gruppo.</span><span class="sxs-lookup"><span data-stu-id="509dc-110">[Configuring client bootstrapping policies in Lync Server 2013](lync-server-2013-configuring-client-bootstrapping-policies.md) by using the Group Policy Object Editor MMC snap-in.</span></span>
 
-<span data-ttu-id="be29f-p102">È probabile che risulti necessario configurare altre opzioni durante la distribuzione della famiglia di prodotti Office. Negli argomenti in questa sezione viene offerta una panoramica di questi strumenti di personalizzazione e vengono presentate alcune considerazioni specifiche per Lync. Sono inclusi collegamenti alle informazioni dettagliate della Guida di Office per ogni strumento.</span><span class="sxs-lookup"><span data-stu-id="be29f-p102">There will probably be other options you’ll want to configure as you deploy the Office suite of products. The topics in this section give an overview of these customization tools and discuss Lync-specific considerations. Included are links to detailed Office help for each tool.</span></span>
+<span data-ttu-id="509dc-p102">È probabile che risulti necessario configurare altre opzioni durante la distribuzione della famiglia di prodotti Office. Negli argomenti in questa sezione viene offerta una panoramica di questi strumenti di personalizzazione e vengono presentate alcune considerazioni specifiche per Lync. Sono inclusi collegamenti alle informazioni dettagliate della Guida di Office per ogni strumento.</span><span class="sxs-lookup"><span data-stu-id="509dc-p102">There will probably be other options you’ll want to configure as you deploy the Office suite of products. The topics in this section give an overview of these customization tools and discuss Lync-specific considerations. Included are links to detailed Office help for each tool.</span></span>
 
 </div>
 

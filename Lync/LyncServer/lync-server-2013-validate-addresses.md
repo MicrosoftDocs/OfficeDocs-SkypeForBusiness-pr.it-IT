@@ -12,20 +12,20 @@ ms:contentKeyID: 48185108
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 75eeabe640c9d66c897d59f4e06bb485a482ed04
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 4054af0ec8adbe219b2cc8dd33aac4fe52cf5ead
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42007445"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42121609"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="validate-addresses-in-lync-server-2013"></a><span data-ttu-id="d4741-102">Convalidare gli indirizzi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d4741-102">Validate addresses in Lync Server 2013</span></span>
+# <a name="validate-addresses-in-lync-server-2013"></a><span data-ttu-id="26559-102">Convalidare gli indirizzi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="26559-102">Validate addresses in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,40 +35,40 @@ ms.locfileid: "42007445"
 
 <span> </span>
 
-<span data-ttu-id="d4741-103">_**Ultimo argomento modificato:** 2012-09-17_</span><span class="sxs-lookup"><span data-stu-id="d4741-103">_**Topic Last Modified:** 2012-09-17_</span></span>
+<span data-ttu-id="26559-103">_**Ultimo argomento modificato:** 2012-09-17_</span><span class="sxs-lookup"><span data-stu-id="26559-103">_**Topic Last Modified:** 2012-09-17_</span></span>
 
-<span data-ttu-id="d4741-104">Prima di pubblicare il database delle posizioni, è necessario convalidare le nuove posizioni in base allo stradario generale gestito dal provider dei servizi di emergenza del trunk SIP o della rete PSTN (Public Switched Telephone Network) .</span><span class="sxs-lookup"><span data-stu-id="d4741-104">Before publishing the location database, you must validate new locations against the Master Street Address Guide (MSAG) that is maintained by your SIP trunk or public switched telephone network (PSTN) E9-1-1 service provider.</span></span>
+<span data-ttu-id="26559-104">Prima di pubblicare il database delle posizioni, è necessario convalidare le nuove posizioni in base allo stradario generale gestito dal provider dei servizi di emergenza del trunk SIP o della rete PSTN (Public Switched Telephone Network) .</span><span class="sxs-lookup"><span data-stu-id="26559-104">Before publishing the location database, you must validate new locations against the Master Street Address Guide (MSAG) that is maintained by your SIP trunk or public switched telephone network (PSTN) E9-1-1 service provider.</span></span>
 
-<span data-ttu-id="d4741-105">Per informazioni dettagliate sui provider di servizi E9-1-1 trunk SIP, vedere [scelta di un provider di servizi E9-1-1 per Lync Server 2013](lync-server-2013-choosing-an-e9-1-1-service-provider.md).</span><span class="sxs-lookup"><span data-stu-id="d4741-105">For details about SIP trunk E9-1-1 service providers, see [Choosing an E9-1-1 service provider for Lync Server 2013](lync-server-2013-choosing-an-e9-1-1-service-provider.md).</span></span>
+<span data-ttu-id="26559-105">Per informazioni dettagliate sui provider di servizi E9-1-1 trunk SIP, vedere [scelta di un provider di servizi E9-1-1 per Lync Server 2013](lync-server-2013-choosing-an-e9-1-1-service-provider.md).</span><span class="sxs-lookup"><span data-stu-id="26559-105">For details about SIP trunk E9-1-1 service providers, see [Choosing an E9-1-1 service provider for Lync Server 2013](lync-server-2013-choosing-an-e9-1-1-service-provider.md).</span></span>
 
-<span data-ttu-id="d4741-106">Per informazioni dettagliate sulla convalida degli indirizzi, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:</span><span class="sxs-lookup"><span data-stu-id="d4741-106">For details about validating addresses, see the Lync Server Management Shell documentation for the following cmdlets:</span></span>
+<span data-ttu-id="26559-106">Per informazioni dettagliate sulla convalida degli indirizzi, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:</span><span class="sxs-lookup"><span data-stu-id="26559-106">For details about validating addresses, see the Lync Server Management Shell documentation for the following cmdlets:</span></span>
 
-  - <span data-ttu-id="d4741-107">**Get-CsLisServiceProvider**</span><span class="sxs-lookup"><span data-stu-id="d4741-107">**Get-CsLisServiceProvider**</span></span>
+  - <span data-ttu-id="26559-107">**Get-CsLisServiceProvider**</span><span class="sxs-lookup"><span data-stu-id="26559-107">**Get-CsLisServiceProvider**</span></span>
 
-  - <span data-ttu-id="d4741-108">**Set-CsLisServiceProvider**</span><span class="sxs-lookup"><span data-stu-id="d4741-108">**Set-CsLisServiceProvider**</span></span>
+  - <span data-ttu-id="26559-108">**Set-CsLisServiceProvider**</span><span class="sxs-lookup"><span data-stu-id="26559-108">**Set-CsLisServiceProvider**</span></span>
 
-  - <span data-ttu-id="d4741-109">**Remove-CsLisServiceProvider**</span><span class="sxs-lookup"><span data-stu-id="d4741-109">**Remove-CsLisServiceProvider**</span></span>
+  - <span data-ttu-id="26559-109">**Remove-CsLisServiceProvider**</span><span class="sxs-lookup"><span data-stu-id="26559-109">**Remove-CsLisServiceProvider**</span></span>
 
-  - <span data-ttu-id="d4741-110">**Get-CsLisCivicAddress**</span><span class="sxs-lookup"><span data-stu-id="d4741-110">**Get-CsLisCivicAddress**</span></span>
+  - <span data-ttu-id="26559-110">**Get-CsLisCivicAddress**</span><span class="sxs-lookup"><span data-stu-id="26559-110">**Get-CsLisCivicAddress**</span></span>
 
-  - <span data-ttu-id="d4741-111">**Test-CsLisCivicAddress**</span><span class="sxs-lookup"><span data-stu-id="d4741-111">**Test-CsLisCivicAddress**</span></span>
+  - <span data-ttu-id="26559-111">**Test-CsLisCivicAddress**</span><span class="sxs-lookup"><span data-stu-id="26559-111">**Test-CsLisCivicAddress**</span></span>
 
 <div>
 
-## <a name="to-validate-addresses-located-in-the-location-database"></a><span data-ttu-id="d4741-112">Per convalidare gli indirizzi presenti nel database delle posizioni</span><span class="sxs-lookup"><span data-stu-id="d4741-112">To validate addresses located in the location database</span></span>
+## <a name="to-validate-addresses-located-in-the-location-database"></a><span data-ttu-id="26559-112">Per convalidare gli indirizzi presenti nel database delle posizioni</span><span class="sxs-lookup"><span data-stu-id="26559-112">To validate addresses located in the location database</span></span>
 
-1.  <span data-ttu-id="d4741-113">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="d4741-113">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
+1.  <span data-ttu-id="26559-113">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="26559-113">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
 
-2.  <span data-ttu-id="d4741-114">Eseguire i seguenti cmdlet per configurare la connessione del provider dei servizi di emergenza.</span><span class="sxs-lookup"><span data-stu-id="d4741-114">Run the following cmdlets to configure the emergency service provider connection.</span></span>
+2.  <span data-ttu-id="26559-114">Eseguire i seguenti cmdlet per configurare la connessione del provider dei servizi di emergenza.</span><span class="sxs-lookup"><span data-stu-id="26559-114">Run the following cmdlets to configure the emergency service provider connection.</span></span>
     
         $pwd = Read-Host -AsSecureString <password>
         Set-CsLisServiceProvider -ServiceProviderName Provider1 -ValidationServiceUrl <URL provided by provider> -CertFileName <location of certificate provided by provider> -Password $pwd
 
-3.  <span data-ttu-id="d4741-115">Per convalidare gli indirizzi nel database delle posizioni, eseguire il cmdlet seguente.</span><span class="sxs-lookup"><span data-stu-id="d4741-115">Run the following cmdlet to validate the addresses in the location database.</span></span>
+3.  <span data-ttu-id="26559-115">Per convalidare gli indirizzi nel database delle posizioni, eseguire il cmdlet seguente.</span><span class="sxs-lookup"><span data-stu-id="26559-115">Run the following cmdlet to validate the addresses in the location database.</span></span>
     
         Get-CsLisCivicAddress | Test-CsLisCivicAddress -UpdateValidationStatus
     
-    <span data-ttu-id="d4741-116">Per convalidare indirizzi singoli, è inoltre possibile utilizzare il cmdlet **Test-CsLisCivicAddress**.</span><span class="sxs-lookup"><span data-stu-id="d4741-116">You can also use the **Test-CsLisCivicAddress** cmdlet to validate individual addresses.</span></span>
+    <span data-ttu-id="26559-116">Per convalidare indirizzi singoli, è inoltre possibile utilizzare il cmdlet **Test-CsLisCivicAddress**.</span><span class="sxs-lookup"><span data-stu-id="26559-116">You can also use the **Test-CsLisCivicAddress** cmdlet to validate individual addresses.</span></span>
 
 </div>
 

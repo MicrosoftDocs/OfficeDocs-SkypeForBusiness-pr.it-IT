@@ -12,20 +12,20 @@ ms:contentKeyID: 48183461
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 631a8ecbe6304b39824f2f65dab908dc63d0067c
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 9c77e70f23ac831485c259aff9ba6c5cd8139041
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42028827"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42134021"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="overview-of-conferencing-scalability-in-lync-server-2013"></a><span data-ttu-id="92377-102">Panoramica della scalabilità delle conferenze in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="92377-102">Overview of conferencing scalability in Lync Server 2013</span></span>
+# <a name="overview-of-conferencing-scalability-in-lync-server-2013"></a><span data-ttu-id="5470b-102">Panoramica della scalabilità delle conferenze in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5470b-102">Overview of conferencing scalability in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "42028827"
 
 <span> </span>
 
-<span data-ttu-id="92377-103">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="92377-103">_**Topic Last Modified:** 2012-10-01_</span></span>
+<span data-ttu-id="5470b-103">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="5470b-103">_**Topic Last Modified:** 2012-10-01_</span></span>
 
-<span data-ttu-id="92377-104">La dimensione massima di una conferenza ospitata in Lync Server 2013 in un pool condiviso, ovvero un pool che ospita tutti i carichi di lavoro di Lync Server 2013, tra cui la messaggistica istantanea e la presenza, le conferenze e la VoIP aziendale, è di 250 utenti.</span><span class="sxs-lookup"><span data-stu-id="92377-104">The maximum size of a conference hosted on Lync Server 2013 in a shared pool (that is, a pool that hosts all Lync Server 2013 workloads including instant messaging (IM) and presence, conferencing, and Enterprise Voice) is 250 users.</span></span>
+<span data-ttu-id="5470b-104">La dimensione massima di una conferenza ospitata in Lync Server 2013 in un pool condiviso, ovvero un pool che ospita tutti i carichi di lavoro di Lync Server 2013, tra cui la messaggistica istantanea e la presenza, le conferenze e la VoIP aziendale, è di 250 utenti.</span><span class="sxs-lookup"><span data-stu-id="5470b-104">The maximum size of a conference hosted on Lync Server 2013 in a shared pool (that is, a pool that hosts all Lync Server 2013 workloads including instant messaging (IM) and presence, conferencing, and Enterprise Voice) is 250 users.</span></span>
 
-<span data-ttu-id="92377-105">Prima di illustrare l'utilizzo di Lync Server per il supporto di riunioni di grandi dimensioni, esaminare la metodologia di testing della scalabilità utilizzata e il modo in cui viene determinato il modello di 250 per il testing del pool condiviso.</span><span class="sxs-lookup"><span data-stu-id="92377-105">Before we discuss using Lync Server to support larger meetings, let’s look at the scalability testing methodology we use and how we determine the 250-user model for shared pool testing.</span></span>
+<span data-ttu-id="5470b-105">Prima di illustrare l'utilizzo di Lync Server per il supporto di riunioni di grandi dimensioni, esaminare la metodologia di testing della scalabilità utilizzata e il modo in cui viene determinato il modello di 250 per il testing del pool condiviso.</span><span class="sxs-lookup"><span data-stu-id="5470b-105">Before we discuss using Lync Server to support larger meetings, let’s look at the scalability testing methodology we use and how we determine the 250-user model for shared pool testing.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="92377-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="92377-106">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="5470b-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="5470b-106">In This Section</span></span>
 
-  - [<span data-ttu-id="92377-107">Test della scalabilità in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="92377-107">Scalability testing in Lync Server 2013</span></span>](lync-server-2013-scalability-testing.md)
+  - [<span data-ttu-id="5470b-107">Test della scalabilità in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5470b-107">Scalability testing in Lync Server 2013</span></span>](lync-server-2013-scalability-testing.md)
 
-  - [<span data-ttu-id="92377-108">Il modello utente per le conferenze in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="92377-108">The conferencing user model in Lync Server 2013</span></span>](lync-server-2013-conferencing-user-model.md)
+  - [<span data-ttu-id="5470b-108">Il modello utente per le conferenze in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5470b-108">The conferencing user model in Lync Server 2013</span></span>](lync-server-2013-conferencing-user-model.md)
 
-  - [<span data-ttu-id="92377-109">Distribuzione del carico per le conferenze in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="92377-109">Conferencing load distribution in Lync Server 2013</span></span>](lync-server-2013-conferencing-load-distribution.md)
+  - [<span data-ttu-id="5470b-109">Distribuzione del carico per le conferenze in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5470b-109">Conferencing load distribution in Lync Server 2013</span></span>](lync-server-2013-conferencing-load-distribution.md)
 
 </div>
 

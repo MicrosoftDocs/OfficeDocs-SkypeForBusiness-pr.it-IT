@@ -12,20 +12,20 @@ ms:contentKeyID: 48184556
 ms.date: 12/09/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 89260bb2e854087ec1167ff0fd8039c58ac99300
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 35af8eebec97f6237f19aee2551aff51ad0ca390
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029317"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42134512"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="appsharingmetricsthreshold-table-in-lync-server-2013"></a><span data-ttu-id="84ccf-102">Tabella AppSharingMetricsThreshold in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="84ccf-102">AppSharingMetricsThreshold table in Lync Server 2013</span></span>
+# <a name="appsharingmetricsthreshold-table-in-lync-server-2013"></a><span data-ttu-id="f65fc-102">Tabella AppSharingMetricsThreshold in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="f65fc-102">AppSharingMetricsThreshold table in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "42029317"
 
 <span> </span>
 
-<span data-ttu-id="84ccf-103">_**Ultimo argomento modificato:** 2015-12-08_</span><span class="sxs-lookup"><span data-stu-id="84ccf-103">_**Topic Last Modified:** 2015-12-08_</span></span>
+<span data-ttu-id="f65fc-103">_**Ultimo argomento modificato:** 2015-12-08_</span><span class="sxs-lookup"><span data-stu-id="f65fc-103">_**Topic Last Modified:** 2015-12-08_</span></span>
 
-<span data-ttu-id="84ccf-p101">La tabella AppSharingMetricsThreshold contiene i valori ottimali e accettabili delle metriche QoE utilizzate con la condivisione delle applicazioni. Questi valori soglia sono utilizzati per determinare se l'esperienza di condivisione deve essere classificata come insufficiente.</span><span class="sxs-lookup"><span data-stu-id="84ccf-p101">The AppSharingMetricsThreshold table contains optimal and acceptable values for the Quality of Experience metrics used with application sharing. These thresholds are used to determine if the application sharing experience should be classified as poor.</span></span>
+<span data-ttu-id="f65fc-p101">La tabella AppSharingMetricsThreshold contiene i valori ottimali e accettabili delle metriche QoE utilizzate con la condivisione delle applicazioni. Questi valori soglia sono utilizzati per determinare se l'esperienza di condivisione deve essere classificata come insufficiente.</span><span class="sxs-lookup"><span data-stu-id="f65fc-p101">The AppSharingMetricsThreshold table contains optimal and acceptable values for the Quality of Experience metrics used with application sharing. These thresholds are used to determine if the application sharing experience should be classified as poor.</span></span>
 
-<span data-ttu-id="84ccf-106">Questa tabella è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="84ccf-106">This table was introduced in Microsoft Lync Server 2013.</span></span>
+<span data-ttu-id="f65fc-106">Questa tabella è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f65fc-106">This table was introduced in Microsoft Lync Server 2013.</span></span>
 
 
 <table>
@@ -51,108 +51,108 @@ ms.locfileid: "42029317"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="84ccf-107"><strong>Colonna</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-107"><strong>Column</strong></span></span></th>
-<th><span data-ttu-id="84ccf-108"><strong>Tipo di dati</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-108"><strong>Data Type</strong></span></span></th>
-<th><span data-ttu-id="84ccf-109"><strong>Chiave/indice</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-109"><strong>Key/Index</strong></span></span></th>
-<th><span data-ttu-id="84ccf-110"><strong>Dettagli</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-110"><strong>Details</strong></span></span></th>
+<th><span data-ttu-id="f65fc-107"><strong>Colonna</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-107"><strong>Column</strong></span></span></th>
+<th><span data-ttu-id="f65fc-108"><strong>Tipo di dati</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-108"><strong>Data Type</strong></span></span></th>
+<th><span data-ttu-id="f65fc-109"><strong>Chiave/indice</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-109"><strong>Key/Index</strong></span></span></th>
+<th><span data-ttu-id="f65fc-110"><strong>Dettagli</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-110"><strong>Details</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="84ccf-111"><strong>CallType</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-111"><strong>CallType</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-112">int</span><span class="sxs-lookup"><span data-stu-id="84ccf-112">int</span></span></p></td>
-<td><p><span data-ttu-id="84ccf-113">Principale</span><span class="sxs-lookup"><span data-stu-id="84ccf-113">Primary</span></span></p></td>
-<td><p><span data-ttu-id="84ccf-114">Tipo di chiamata effettuata.</span><span class="sxs-lookup"><span data-stu-id="84ccf-114">Type of call that was placed.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-111"><strong>CallType</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-111"><strong>CallType</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-112">int</span><span class="sxs-lookup"><span data-stu-id="f65fc-112">int</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-113">Principale</span><span class="sxs-lookup"><span data-stu-id="f65fc-113">Primary</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-114">Tipo di chiamata effettuata.</span><span class="sxs-lookup"><span data-stu-id="f65fc-114">Type of call that was placed.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="84ccf-115"><strong>AppliedBandwidthLimitOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-115"><strong>AppliedBandwidthLimitOptimal</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-116">int</span><span class="sxs-lookup"><span data-stu-id="84ccf-116">int</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-115"><strong>AppliedBandwidthLimitOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-115"><strong>AppliedBandwidthLimitOptimal</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-116">int</span><span class="sxs-lookup"><span data-stu-id="f65fc-116">int</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-p102">Limitazione ottimale della larghezza di banda per la condivisione delle applicazioni. Il valore predefinito è 1000000.</span><span class="sxs-lookup"><span data-stu-id="84ccf-p102">Optimal bandwidth limitation for application sharing. The default value is 1000000.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-p102">Limitazione ottimale della larghezza di banda per la condivisione delle applicazioni. Il valore predefinito è 1000000.</span><span class="sxs-lookup"><span data-stu-id="f65fc-p102">Optimal bandwidth limitation for application sharing. The default value is 1000000.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="84ccf-119"><strong>AppliedBandwidthLimitAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-119"><strong>AppliedBandwidthLimitAcceptable</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-120">int</span><span class="sxs-lookup"><span data-stu-id="84ccf-120">int</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-119"><strong>AppliedBandwidthLimitAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-119"><strong>AppliedBandwidthLimitAcceptable</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-120">int</span><span class="sxs-lookup"><span data-stu-id="f65fc-120">int</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-p103">Limitazione accettabile della larghezza di banda per la condivisione delle applicazioni. Il valore predefinito è 500000.</span><span class="sxs-lookup"><span data-stu-id="84ccf-p103">Acceptable bandwidth limitation for application sharing. The default value is 500000.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-p103">Limitazione accettabile della larghezza di banda per la condivisione delle applicazioni. Il valore predefinito è 500000.</span><span class="sxs-lookup"><span data-stu-id="f65fc-p103">Acceptable bandwidth limitation for application sharing. The default value is 500000.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="84ccf-123"><strong>SpoiledTilePercentTotalOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-123"><strong>SpoiledTilePercentTotalOptimal</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-124">Decimal (5, 2)</span><span class="sxs-lookup"><span data-stu-id="84ccf-124">decimal(5,2)</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-123"><strong>SpoiledTilePercentTotalOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-123"><strong>SpoiledTilePercentTotalOptimal</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-124">Decimal (5, 2)</span><span class="sxs-lookup"><span data-stu-id="f65fc-124">decimal(5,2)</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-p104">Tasso percentuale ottimale delle sezioni “danneggiate” per la classificazione della qualità di una condivisione delle applicazioni. Questo valore rappresenta la percentuale di contenuto del condivisore che non ha raggiunto il visualizzatore. Il contenuto potrebbe essere scartato (o danneggiato) rispettivamente quando il condivisore scarta le sezioni dall'origine grafica o ASMCU scarica le sezioni dal condivisore. Il valore predefinito è 11 percento.</span><span class="sxs-lookup"><span data-stu-id="84ccf-p104">Optimal percentage rate for “spoiled” tiles for classifying an Application Sharing quality. This value is the percentage of the content from the sharer that did not reach the viewer. Content may be discarded (or spoiled) when the sharer discards tiles from the graphics source or the ASMCU tiles discards tiles from Sharer respectively. The default value is 11 percent.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-p104">Tasso percentuale ottimale delle sezioni “danneggiate” per la classificazione della qualità di una condivisione delle applicazioni. Questo valore rappresenta la percentuale di contenuto del condivisore che non ha raggiunto il visualizzatore. Il contenuto potrebbe essere scartato (o danneggiato) rispettivamente quando il condivisore scarta le sezioni dall'origine grafica o ASMCU scarica le sezioni dal condivisore. Il valore predefinito è 11 percento.</span><span class="sxs-lookup"><span data-stu-id="f65fc-p104">Optimal percentage rate for “spoiled” tiles for classifying an Application Sharing quality. This value is the percentage of the content from the sharer that did not reach the viewer. Content may be discarded (or spoiled) when the sharer discards tiles from the graphics source or the ASMCU tiles discards tiles from Sharer respectively. The default value is 11 percent.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="84ccf-129"><strong>SpoiledTilePercentTotalAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-129"><strong>SpoiledTilePercentTotalAcceptable</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-130">Decimal (5, 2)</span><span class="sxs-lookup"><span data-stu-id="84ccf-130">decimal(5,2)</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-129"><strong>SpoiledTilePercentTotalAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-129"><strong>SpoiledTilePercentTotalAcceptable</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-130">Decimal (5, 2)</span><span class="sxs-lookup"><span data-stu-id="f65fc-130">decimal(5,2)</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-p105">Tasso percentuale accettabile delle sezioni “danneggiate” per la classificazione della qualità di una condivisione delle applicazioni. Questo valore rappresenta la percentuale di contenuto del condivisore che non ha raggiunto il visualizzatore. Il contenuto potrebbe essere scartato (o danneggiato) rispettivamente quando il condivisore scarta le sezioni dall'origine grafica o ASMCU scarica le sezioni dal condivisore. Il valore predefinito è 36 percento.</span><span class="sxs-lookup"><span data-stu-id="84ccf-p105">cceptable percentage rate for “spoiled” tiles for classifying an Application Sharing quality. This value is the percentage of the content from the sharer that did not reach the viewer. Content may be discarded (or spoiled) when the sharer discards tiles from the graphics source or the ASMCU tiles discards tiles from Sharer respectively. The default value is 36 percent.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-p105">Tasso percentuale accettabile delle sezioni “danneggiate” per la classificazione della qualità di una condivisione delle applicazioni. Questo valore rappresenta la percentuale di contenuto del condivisore che non ha raggiunto il visualizzatore. Il contenuto potrebbe essere scartato (o danneggiato) rispettivamente quando il condivisore scarta le sezioni dall'origine grafica o ASMCU scarica le sezioni dal condivisore. Il valore predefinito è 36 percento.</span><span class="sxs-lookup"><span data-stu-id="f65fc-p105">cceptable percentage rate for “spoiled” tiles for classifying an Application Sharing quality. This value is the percentage of the content from the sharer that did not reach the viewer. Content may be discarded (or spoiled) when the sharer discards tiles from the graphics source or the ASMCU tiles discards tiles from Sharer respectively. The default value is 36 percent.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="84ccf-135"><strong>JitterInterArrivalOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-135"><strong>JitterInterArrivalOptimal</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-136">int</span><span class="sxs-lookup"><span data-stu-id="84ccf-136">int</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-135"><strong>JitterInterArrivalOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-135"><strong>JitterInterArrivalOptimal</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-136">int</span><span class="sxs-lookup"><span data-stu-id="f65fc-136">int</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-137">Questa colonna non viene utilizzata in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="84ccf-137">This column is not used in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-137">Questa colonna non viene utilizzata in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f65fc-137">This column is not used in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="84ccf-138"><strong>JitterInterArrivalAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-138"><strong>JitterInterArrivalAcceptable</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-139">int</span><span class="sxs-lookup"><span data-stu-id="84ccf-139">int</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-138"><strong>JitterInterArrivalAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-138"><strong>JitterInterArrivalAcceptable</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-139">int</span><span class="sxs-lookup"><span data-stu-id="f65fc-139">int</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-140">Questa colonna non viene utilizzata in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="84ccf-140">This column is not used in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-140">Questa colonna non viene utilizzata in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f65fc-140">This column is not used in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="84ccf-141"><strong>RelativeOneWayBurstDensityOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-141"><strong>RelativeOneWayBurstDensityOptimal</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-142">galleggiante</span><span class="sxs-lookup"><span data-stu-id="84ccf-142">float</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-141"><strong>RelativeOneWayBurstDensityOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-141"><strong>RelativeOneWayBurstDensityOptimal</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-142">galleggiante</span><span class="sxs-lookup"><span data-stu-id="f65fc-142">float</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-143">Questa colonna non viene utilizzata in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="84ccf-143">This column is not used in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-143">Questa colonna non viene utilizzata in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f65fc-143">This column is not used in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="84ccf-144"><strong>RelativeOneWayBurstDensityAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-144"><strong>RelativeOneWayBurstDensityAcceptable</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-145">galleggiante</span><span class="sxs-lookup"><span data-stu-id="84ccf-145">float</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-144"><strong>RelativeOneWayBurstDensityAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-144"><strong>RelativeOneWayBurstDensityAcceptable</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-145">galleggiante</span><span class="sxs-lookup"><span data-stu-id="f65fc-145">float</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-146">Questa colonna non viene utilizzata in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="84ccf-146">This column is not used in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-146">Questa colonna non viene utilizzata in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f65fc-146">This column is not used in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="84ccf-147"><strong>RDPTileProcessingLatencyBurstDensityOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-147"><strong>RDPTileProcessingLatencyBurstDensityOptimal</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-148">galleggiante</span><span class="sxs-lookup"><span data-stu-id="84ccf-148">float</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-147"><strong>RDPTileProcessingLatencyBurstDensityOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-147"><strong>RDPTileProcessingLatencyBurstDensityOptimal</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-148">galleggiante</span><span class="sxs-lookup"><span data-stu-id="f65fc-148">float</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-149">Questa colonna non viene utilizzata in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="84ccf-149">This column is not used in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-149">Questa colonna non viene utilizzata in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f65fc-149">This column is not used in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="84ccf-150"><strong>RDPTileProcessingLatencyBurstDensityAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-150"><strong>RDPTileProcessingLatencyBurstDensityAcceptable</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-151">galleggiante</span><span class="sxs-lookup"><span data-stu-id="84ccf-151">float</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-150"><strong>RDPTileProcessingLatencyBurstDensityAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-150"><strong>RDPTileProcessingLatencyBurstDensityAcceptable</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-151">galleggiante</span><span class="sxs-lookup"><span data-stu-id="f65fc-151">float</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-152">Questa colonna non viene utilizzata in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="84ccf-152">This column is not used in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-152">Questa colonna non viene utilizzata in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f65fc-152">This column is not used in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="84ccf-153"><strong>RelativeOneWayAverageOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-153"><strong>RelativeOneWayAverageOptimal</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-154">galleggiante</span><span class="sxs-lookup"><span data-stu-id="84ccf-154">float</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-153"><strong>RelativeOneWayAverageOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-153"><strong>RelativeOneWayAverageOptimal</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-154">galleggiante</span><span class="sxs-lookup"><span data-stu-id="f65fc-154">float</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-p106">Valore ottimale per il ritardo unidirezionale relativo tra i due endpoint multimediali coinvolti nella condivisione delle applicazioni. È una misura della latenza a hop singolo. Il valore predefinito è 1,0 secondi.</span><span class="sxs-lookup"><span data-stu-id="84ccf-p106">Optimal value for the relative one-way delay between the two media endpoints involved in the application sharing. This is a single-hop latency measure. The default value is 1.0 seconds.</span></span></p>
-<p><span data-ttu-id="84ccf-158">La colonna è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="84ccf-158">The column was introduced in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-p106">Valore ottimale per il ritardo unidirezionale relativo tra i due endpoint multimediali coinvolti nella condivisione delle applicazioni. È una misura della latenza a hop singolo. Il valore predefinito è 1,0 secondi.</span><span class="sxs-lookup"><span data-stu-id="f65fc-p106">Optimal value for the relative one-way delay between the two media endpoints involved in the application sharing. This is a single-hop latency measure. The default value is 1.0 seconds.</span></span></p>
+<p><span data-ttu-id="f65fc-158">La colonna è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f65fc-158">The column was introduced in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="84ccf-159"><strong>RelativeOneWayAverageAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-159"><strong>RelativeOneWayAverageAcceptable</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-160">galleggiante</span><span class="sxs-lookup"><span data-stu-id="84ccf-160">float</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-159"><strong>RelativeOneWayAverageAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-159"><strong>RelativeOneWayAverageAcceptable</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-160">galleggiante</span><span class="sxs-lookup"><span data-stu-id="f65fc-160">float</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-p107">Valore ottimale per il ritardo unidirezionale relativo tra i due endpoint multimediali coinvolti nella condivisione delle applicazioni. È una misura della latenza a hop singolo. Il valore predefinito è 1,75 secondi.</span><span class="sxs-lookup"><span data-stu-id="84ccf-p107">Optimal value for the relative one-way delay between the two media endpoints involved in the application sharing. This is a single-hop latency measure. The default value is 1.75 seconds.</span></span></p>
-<p><span data-ttu-id="84ccf-164">La colonna è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="84ccf-164">The column was introduced in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-p107">Valore ottimale per il ritardo unidirezionale relativo tra i due endpoint multimediali coinvolti nella condivisione delle applicazioni. È una misura della latenza a hop singolo. Il valore predefinito è 1,75 secondi.</span><span class="sxs-lookup"><span data-stu-id="f65fc-p107">Optimal value for the relative one-way delay between the two media endpoints involved in the application sharing. This is a single-hop latency measure. The default value is 1.75 seconds.</span></span></p>
+<p><span data-ttu-id="f65fc-164">La colonna è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f65fc-164">The column was introduced in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="84ccf-165"><strong>RDPTileProcessingLatencyAverageOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-165"><strong>RDPTileProcessingLatencyAverageOptimal</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-166">galleggiante</span><span class="sxs-lookup"><span data-stu-id="84ccf-166">float</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-165"><strong>RDPTileProcessingLatencyAverageOptimal</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-165"><strong>RDPTileProcessingLatencyAverageOptimal</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-166">galleggiante</span><span class="sxs-lookup"><span data-stu-id="f65fc-166">float</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-167">Latenza ottimale di elaborazione delle sezioni RDP nel server per conferenze di Condivisione applicazioni per tutta la durata della sessione di visualizzazione.</span><span class="sxs-lookup"><span data-stu-id="84ccf-167">Optimal value of the average RDP tile processing latency in the AS Conferencing Server over the duration of the viewing session.</span></span> <span data-ttu-id="84ccf-168">Latenza è la differenza di tempo tra quando la cornice iniziale è codificata sul server (condivisore o MCU a seconda dello scenario) e lo stesso frame iniziale viene decodificato nel visualizzatore.</span><span class="sxs-lookup"><span data-stu-id="84ccf-168">Latency is the time difference between when the Start Frame is encoded on the server (sharer or MCU depending on the scenario) and the same Start Frame is decoded on the viewer.</span></span></p>
-<p><span data-ttu-id="84ccf-p109">Una media elevata è sintomo di un ritardo superiore nell'esperienza di visualizzazione. In un server per conferenze sovraccarico possono verificarsi ritardi medi superiori. Il valore predefinito è 200 ms.</span><span class="sxs-lookup"><span data-stu-id="84ccf-p109">A high average reflects a longer delay in the viewing experience. An overloaded conferencing server may experience higher average delays. The default value is 200ms.</span></span></p>
-<p><span data-ttu-id="84ccf-172">La colonna è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="84ccf-172">The column was introduced in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-167">Latenza ottimale di elaborazione delle sezioni RDP nel server per conferenze di Condivisione applicazioni per tutta la durata della sessione di visualizzazione.</span><span class="sxs-lookup"><span data-stu-id="f65fc-167">Optimal value of the average RDP tile processing latency in the AS Conferencing Server over the duration of the viewing session.</span></span> <span data-ttu-id="f65fc-168">Latenza è la differenza di tempo tra quando la cornice iniziale è codificata sul server (condivisore o MCU a seconda dello scenario) e lo stesso frame iniziale viene decodificato nel visualizzatore.</span><span class="sxs-lookup"><span data-stu-id="f65fc-168">Latency is the time difference between when the Start Frame is encoded on the server (sharer or MCU depending on the scenario) and the same Start Frame is decoded on the viewer.</span></span></p>
+<p><span data-ttu-id="f65fc-p109">Una media elevata è sintomo di un ritardo superiore nell'esperienza di visualizzazione. In un server per conferenze sovraccarico possono verificarsi ritardi medi superiori. Il valore predefinito è 200 ms.</span><span class="sxs-lookup"><span data-stu-id="f65fc-p109">A high average reflects a longer delay in the viewing experience. An overloaded conferencing server may experience higher average delays. The default value is 200ms.</span></span></p>
+<p><span data-ttu-id="f65fc-172">La colonna è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f65fc-172">The column was introduced in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="84ccf-173"><strong>RDPTileProcessingLatencyAverageAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="84ccf-173"><strong>RDPTileProcessingLatencyAverageAcceptable</strong></span></span></p></td>
-<td><p><span data-ttu-id="84ccf-174">galleggiante</span><span class="sxs-lookup"><span data-stu-id="84ccf-174">float</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-173"><strong>RDPTileProcessingLatencyAverageAcceptable</strong></span><span class="sxs-lookup"><span data-stu-id="f65fc-173"><strong>RDPTileProcessingLatencyAverageAcceptable</strong></span></span></p></td>
+<td><p><span data-ttu-id="f65fc-174">galleggiante</span><span class="sxs-lookup"><span data-stu-id="f65fc-174">float</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="84ccf-175">Latenza accettabile di elaborazione delle sezioni RDP nel server per conferenze di Condivisione applicazioni per tutta la durata della sessione di visualizzazione.</span><span class="sxs-lookup"><span data-stu-id="84ccf-175">Acceptable value of the average RDP tile processing latency in the AS Conferencing Server over the duration of the viewing session.</span></span> <span data-ttu-id="84ccf-176">Latenza è la differenza di tempo tra quando la cornice iniziale è codificata sul server (condivisore o MCU a seconda dello scenario) e lo stesso frame iniziale viene decodificato nel visualizzatore.</span><span class="sxs-lookup"><span data-stu-id="84ccf-176">Latency is the time difference between when the Start Frame is encoded on the server (sharer or MCU depending on the scenario) and the same Start Frame is decoded on the viewer.</span></span></p>
-<p><span data-ttu-id="84ccf-p111">Una media elevata è sintomo di un ritardo superiore nell'esperienza di visualizzazione. In un server per conferenze sovraccarico possono verificarsi ritardi medi superiori. Il valore predefinito è 200 ms.</span><span class="sxs-lookup"><span data-stu-id="84ccf-p111">A high average reflects a longer delay in the viewing experience. An overloaded conferencing server may experience higher average delays. The default value is 200ms.</span></span></p>
-<p><span data-ttu-id="84ccf-180">La colonna è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="84ccf-180">The column was introduced in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="f65fc-175">Latenza accettabile di elaborazione delle sezioni RDP nel server per conferenze di Condivisione applicazioni per tutta la durata della sessione di visualizzazione.</span><span class="sxs-lookup"><span data-stu-id="f65fc-175">Acceptable value of the average RDP tile processing latency in the AS Conferencing Server over the duration of the viewing session.</span></span> <span data-ttu-id="f65fc-176">Latenza è la differenza di tempo tra quando la cornice iniziale è codificata sul server (condivisore o MCU a seconda dello scenario) e lo stesso frame iniziale viene decodificato nel visualizzatore.</span><span class="sxs-lookup"><span data-stu-id="f65fc-176">Latency is the time difference between when the Start Frame is encoded on the server (sharer or MCU depending on the scenario) and the same Start Frame is decoded on the viewer.</span></span></p>
+<p><span data-ttu-id="f65fc-p111">Una media elevata è sintomo di un ritardo superiore nell'esperienza di visualizzazione. In un server per conferenze sovraccarico possono verificarsi ritardi medi superiori. Il valore predefinito è 200 ms.</span><span class="sxs-lookup"><span data-stu-id="f65fc-p111">A high average reflects a longer delay in the viewing experience. An overloaded conferencing server may experience higher average delays. The default value is 200ms.</span></span></p>
+<p><span data-ttu-id="f65fc-180">La colonna è stata introdotta in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="f65fc-180">The column was introduced in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 </tbody>
 </table>
