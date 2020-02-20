@@ -12,20 +12,20 @@ ms:contentKeyID: 48185270
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5df155ed00bb6d6f5ad4ab1867bcf3bb533a9e4e
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 279970c24d22c06da07a28a8828d855d94343da9
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42006111"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42142592"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="sql-server-mirroring-in-lync-server-2013"></a><span data-ttu-id="c4f75-102">Mirroring di SQL Server in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c4f75-102">SQL Server mirroring in Lync Server 2013</span></span>
+# <a name="sql-server-mirroring-in-lync-server-2013"></a><span data-ttu-id="56388-102">Mirroring di SQL Server in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="56388-102">SQL Server mirroring in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "42006111"
 
 <span> </span>
 
-<span data-ttu-id="c4f75-103">_**Ultimo argomento modificato:** 2012-09-29_</span><span class="sxs-lookup"><span data-stu-id="c4f75-103">_**Topic Last Modified:** 2012-09-29_</span></span>
+<span data-ttu-id="56388-103">_**Ultimo argomento modificato:** 2012-09-29_</span><span class="sxs-lookup"><span data-stu-id="56388-103">_**Topic Last Modified:** 2012-09-29_</span></span>
 
-<span data-ttu-id="c4f75-104">Stabilire la sessione di mirroring di SQL Server tra il database principale di chat persistente e il relativo mirror.</span><span class="sxs-lookup"><span data-stu-id="c4f75-104">Establish the SQL Server mirroring session between the primary Persistent Chat database and its mirror.</span></span> <span data-ttu-id="c4f75-105">Per informazioni su come distribuire il mirroring di SQL Server, vedere [Deploying SQL mirroring per la disponibilità elevata del server back-end in Lync server 2013](lync-server-2013-deploying-sql-mirroring-for-back-end-server-high-availability.md).</span><span class="sxs-lookup"><span data-stu-id="c4f75-105">For information about how to deploy SQL Server mirroring, see [Deploying SQL mirroring for Back End Server high availability in Lync Server 2013](lync-server-2013-deploying-sql-mirroring-for-back-end-server-high-availability.md).</span></span>
+<span data-ttu-id="56388-104">Stabilire la sessione di mirroring di SQL Server tra il database principale di chat persistente e il relativo mirror.</span><span class="sxs-lookup"><span data-stu-id="56388-104">Establish the SQL Server mirroring session between the primary Persistent Chat database and its mirror.</span></span> <span data-ttu-id="56388-105">Per informazioni su come distribuire il mirroring di SQL Server, vedere [Deploying SQL mirroring per la disponibilità elevata del server back-end in Lync server 2013](lync-server-2013-deploying-sql-mirroring-for-back-end-server-high-availability.md).</span><span class="sxs-lookup"><span data-stu-id="56388-105">For information about how to deploy SQL Server mirroring, see [Deploying SQL mirroring for Back End Server high availability in Lync Server 2013](lync-server-2013-deploying-sql-mirroring-for-back-end-server-high-availability.md).</span></span>
 
 </div>
 

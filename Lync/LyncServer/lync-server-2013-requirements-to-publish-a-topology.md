@@ -12,20 +12,20 @@ ms:contentKeyID: 48184688
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7537d512bfdb8c004cfc05e142d908034f5b535e
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 5dac78de6d6cf0f86f0411b8085e6f8172b0f2f9
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42042393"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42144873"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="requirements-to-publish-a-topology-in-lync-server-2013"></a><span data-ttu-id="cbbd9-102">Requisiti per la pubblicazione di una topologia in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="cbbd9-102">Requirements to publish a topology in Lync Server 2013</span></span>
+# <a name="requirements-to-publish-a-topology-in-lync-server-2013"></a><span data-ttu-id="ceb0d-102">Requisiti per la pubblicazione di una topologia in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ceb0d-102">Requirements to publish a topology in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,41 +35,41 @@ ms.locfileid: "42042393"
 
 <span> </span>
 
-<span data-ttu-id="cbbd9-103">_**Ultimo argomento modificato:** 2013-02-21_</span><span class="sxs-lookup"><span data-stu-id="cbbd9-103">_**Topic Last Modified:** 2013-02-21_</span></span>
+<span data-ttu-id="ceb0d-103">_**Ultimo argomento modificato:** 2013-02-21_</span><span class="sxs-lookup"><span data-stu-id="ceb0d-103">_**Topic Last Modified:** 2013-02-21_</span></span>
 
-<span data-ttu-id="cbbd9-104">In questo argomento vengono descritti i requisiti dell'infrastruttura e del software specifici per la pubblicazione di una topologia, se si utilizza il generatore di topologie o l'interfaccia della riga di comando di Lync Server 2013 Management Shell.</span><span class="sxs-lookup"><span data-stu-id="cbbd9-104">This topic describes the infrastructure and software requirements that are specific to publishing a topology, whether by using Topology Builder or the Lync Server 2013 Management Shell command-line interface.</span></span> <span data-ttu-id="cbbd9-105">Questi requisiti si aggiungono ai requisiti del sistema operativo, del software e delle autorizzazioni generali applicabili a tutti gli strumenti di amministrazione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="cbbd9-105">These requirements are in addition to the general operating system, software, and permissions requirements applicable to all Lync Server 2013 administrative tools.</span></span> <span data-ttu-id="cbbd9-106">Assicurarsi di soddisfare tutti i requisiti degli strumenti di amministrazione prima di pubblicare una topologia.</span><span class="sxs-lookup"><span data-stu-id="cbbd9-106">Make sure that you satisfy all administrative tools requirements before you publish a topology.</span></span>
+<span data-ttu-id="ceb0d-104">In questo argomento vengono descritti i requisiti dell'infrastruttura e del software specifici per la pubblicazione di una topologia, se si utilizza il generatore di topologie o l'interfaccia della riga di comando di Lync Server 2013 Management Shell.</span><span class="sxs-lookup"><span data-stu-id="ceb0d-104">This topic describes the infrastructure and software requirements that are specific to publishing a topology, whether by using Topology Builder or the Lync Server 2013 Management Shell command-line interface.</span></span> <span data-ttu-id="ceb0d-105">Questi requisiti si aggiungono ai requisiti del sistema operativo, del software e delle autorizzazioni generali applicabili a tutti gli strumenti di amministrazione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="ceb0d-105">These requirements are in addition to the general operating system, software, and permissions requirements applicable to all Lync Server 2013 administrative tools.</span></span> <span data-ttu-id="ceb0d-106">Assicurarsi di soddisfare tutti i requisiti degli strumenti di amministrazione prima di pubblicare una topologia.</span><span class="sxs-lookup"><span data-stu-id="ceb0d-106">Make sure that you satisfy all administrative tools requirements before you publish a topology.</span></span>
 
-  - <span data-ttu-id="cbbd9-107">È necessario eseguire Generatore di topologie in un computer aggiunto allo stesso dominio o foresta della distribuzione di Lync Server 2013 che si sta creando, in modo che i passaggi di preparazione di servizi di dominio Active Directory siano già stati completati, consentendo di utilizzare gli strumenti di amministrazione in tale computer per pubblicare correttamente la topologia.</span><span class="sxs-lookup"><span data-stu-id="cbbd9-107">You must run Topology Builder on a computer that is joined to the same domain or forest of the Lync Server 2013 deployment you are creating so that Active Directory Domain Services preparation steps are already completed, enabling you to use the administrative tools on that computer to successfully publish your topology.</span></span>
+  - <span data-ttu-id="ceb0d-107">È necessario eseguire Generatore di topologie in un computer aggiunto allo stesso dominio o foresta della distribuzione di Lync Server 2013 che si sta creando, in modo che i passaggi di preparazione di servizi di dominio Active Directory siano già stati completati, consentendo di utilizzare gli strumenti di amministrazione in tale computer per pubblicare correttamente la topologia.</span><span class="sxs-lookup"><span data-stu-id="ceb0d-107">You must run Topology Builder on a computer that is joined to the same domain or forest of the Lync Server 2013 deployment you are creating so that Active Directory Domain Services preparation steps are already completed, enabling you to use the administrative tools on that computer to successfully publish your topology.</span></span>
 
-  - <span data-ttu-id="cbbd9-p102">I computer definiti nella topologia devono appartenere al dominio, ad eccezione dei server perimetrali, nonché essere in Servizi di dominio Active Directory. Non è tuttavia necessario che i computer siano online quando si pubblica la topologia.</span><span class="sxs-lookup"><span data-stu-id="cbbd9-p102">The computers defined in the topology must be joined to the domain, except for Edge Servers, and in AD DS. However, the computers do not need to be online when you publish the topology.</span></span>
+  - <span data-ttu-id="ceb0d-p102">I computer definiti nella topologia devono appartenere al dominio, ad eccezione dei server perimetrali, nonché essere in Servizi di dominio Active Directory. Non è tuttavia necessario che i computer siano online quando si pubblica la topologia.</span><span class="sxs-lookup"><span data-stu-id="ceb0d-p102">The computers defined in the topology must be joined to the domain, except for Edge Servers, and in AD DS. However, the computers do not need to be online when you publish the topology.</span></span>
 
-  - <span data-ttu-id="cbbd9-110">La condivisione file per il pool deve essere creata ed essere disponibile per gli utenti remoti.</span><span class="sxs-lookup"><span data-stu-id="cbbd9-110">The file share for the pool must be created and available to remote users.</span></span>
+  - <span data-ttu-id="ceb0d-110">La condivisione file per il pool deve essere creata ed essere disponibile per gli utenti remoti.</span><span class="sxs-lookup"><span data-stu-id="ceb0d-110">The file share for the pool must be created and available to remote users.</span></span>
 
-  - <span data-ttu-id="cbbd9-111">Per pubblicare un pool Enterprise Edition front end, il server back-end basato su SQL Server deve essere aggiunto al dominio in cui si distribuiscono i server, online e configurati con le regole del firewall appropriate per renderlo disponibile per gli utenti remoti.</span><span class="sxs-lookup"><span data-stu-id="cbbd9-111">In order to publish an Enterprise Edition Front End pool, the SQL Server-based Back End Server must be joined to the domain in which you are deploying the servers, online, and configured with the appropriate firewall rules to make it available to remote users.</span></span> <span data-ttu-id="cbbd9-112">Per informazioni dettagliate su come specificare le eccezioni del firewall, vedere [Understanding firewall requirements for SQL Server with Lync server 2013](lync-server-2013-understanding-firewall-requirements-for-sql-server.md).</span><span class="sxs-lookup"><span data-stu-id="cbbd9-112">For details about specifying firewall exceptions, see [Understanding firewall requirements for SQL Server with Lync Server 2013](lync-server-2013-understanding-firewall-requirements-for-sql-server.md).</span></span> <span data-ttu-id="cbbd9-113">Per ulteriori informazioni sulla configurazione di SQL Server, vedere [Configure SQL Server for Lync server 2013](lync-server-2013-configure-sql-server-for-lync-server.md).</span><span class="sxs-lookup"><span data-stu-id="cbbd9-113">For other details about configuring SQL Server, see [Configure SQL Server for Lync Server 2013](lync-server-2013-configure-sql-server-for-lync-server.md).</span></span>
+  - <span data-ttu-id="ceb0d-111">Per pubblicare un pool Enterprise Edition front end, il server back-end basato su SQL Server deve essere aggiunto al dominio in cui si distribuiscono i server, online e configurati con le regole del firewall appropriate per renderlo disponibile per gli utenti remoti.</span><span class="sxs-lookup"><span data-stu-id="ceb0d-111">In order to publish an Enterprise Edition Front End pool, the SQL Server-based Back End Server must be joined to the domain in which you are deploying the servers, online, and configured with the appropriate firewall rules to make it available to remote users.</span></span> <span data-ttu-id="ceb0d-112">Per informazioni dettagliate su come specificare le eccezioni del firewall, vedere [Understanding firewall requirements for SQL Server with Lync server 2013](lync-server-2013-understanding-firewall-requirements-for-sql-server.md).</span><span class="sxs-lookup"><span data-stu-id="ceb0d-112">For details about specifying firewall exceptions, see [Understanding firewall requirements for SQL Server with Lync Server 2013](lync-server-2013-understanding-firewall-requirements-for-sql-server.md).</span></span> <span data-ttu-id="ceb0d-113">Per ulteriori informazioni sulla configurazione di SQL Server, vedere [Configure SQL Server for Lync server 2013](lync-server-2013-configure-sql-server-for-lync-server.md).</span><span class="sxs-lookup"><span data-stu-id="ceb0d-113">For other details about configuring SQL Server, see [Configure SQL Server for Lync Server 2013](lync-server-2013-configure-sql-server-for-lync-server.md).</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="cbbd9-114">Il server Standard Edition dispone di un database collocato che accetterà la configurazione pubblicata.</span><span class="sxs-lookup"><span data-stu-id="cbbd9-114">Standard Edition server has a collocated database that will accept the published configuration.</span></span> <span data-ttu-id="cbbd9-115">È innanzitutto necessario eseguire l'attività <STRONG>preparazione del primo server Standard Edition</STRONG> nella distribuzione guidata di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="cbbd9-115">You must first run the <STRONG>Prepare first Standard Edition server</STRONG> setup task in the Lync Server Deployment Wizard.</span></span>
+    > <span data-ttu-id="ceb0d-114">Il server Standard Edition dispone di un database collocato che accetterà la configurazione pubblicata.</span><span class="sxs-lookup"><span data-stu-id="ceb0d-114">Standard Edition server has a collocated database that will accept the published configuration.</span></span> <span data-ttu-id="ceb0d-115">È innanzitutto necessario eseguire l'attività <STRONG>preparazione del primo server Standard Edition</STRONG> nella distribuzione guidata di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="ceb0d-115">You must first run the <STRONG>Prepare first Standard Edition server</STRONG> setup task in the Lync Server Deployment Wizard.</span></span>
 
     
     </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="cbbd9-116">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="cbbd9-116">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ceb0d-116">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="ceb0d-116">See Also</span></span>
 
 
-[<span data-ttu-id="cbbd9-117">Pubblicare la topologia in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="cbbd9-117">Publish the topology in Lync Server 2013</span></span>](lync-server-2013-publish-the-topology.md)  
-[<span data-ttu-id="cbbd9-118">Delegare le autorizzazioni di installazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="cbbd9-118">Delegate setup permissions in Lync Server 2013</span></span>](lync-server-2013-delegate-setup-permissions.md)  
+[<span data-ttu-id="ceb0d-117">Pubblicare la topologia in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ceb0d-117">Publish the topology in Lync Server 2013</span></span>](lync-server-2013-publish-the-topology.md)  
+[<span data-ttu-id="ceb0d-118">Delegare le autorizzazioni di installazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ceb0d-118">Delegate setup permissions in Lync Server 2013</span></span>](lync-server-2013-delegate-setup-permissions.md)  
 
 
-[<span data-ttu-id="cbbd9-119">Requisiti software per gli strumenti di amministrazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="cbbd9-119">Administrative tools software requirements in Lync Server 2013</span></span>](lync-server-2013-administrative-tools-software-requirements.md)  
-[<span data-ttu-id="cbbd9-120">Supporto del sistema operativo per server e strumenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="cbbd9-120">Server and tools operating system support in Lync Server 2013</span></span>](lync-server-2013-server-and-tools-operating-system-support.md)  
+[<span data-ttu-id="ceb0d-119">Requisiti software per gli strumenti di amministrazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ceb0d-119">Administrative tools software requirements in Lync Server 2013</span></span>](lync-server-2013-administrative-tools-software-requirements.md)  
+[<span data-ttu-id="ceb0d-120">Supporto del sistema operativo per server e strumenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ceb0d-120">Server and tools operating system support in Lync Server 2013</span></span>](lync-server-2013-server-and-tools-operating-system-support.md)  
 
 
-[<span data-ttu-id="cbbd9-121">Autorizzazioni e diritti di amministratore necessari per l'installazione e l'amministrazione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="cbbd9-121">Administrator rights and permissions required for setup and administration of Lync Server 2013</span></span>](lync-server-2013-administrator-rights-and-permissions-required-for-setup-and-administration.md)  
+[<span data-ttu-id="ceb0d-121">Autorizzazioni e diritti di amministratore necessari per l'installazione e l'amministrazione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="ceb0d-121">Administrator rights and permissions required for setup and administration of Lync Server 2013</span></span>](lync-server-2013-administrator-rights-and-permissions-required-for-setup-and-administration.md)  
   
 
 </div>

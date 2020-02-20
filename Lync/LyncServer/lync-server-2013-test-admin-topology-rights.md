@@ -12,20 +12,20 @@ ms:contentKeyID: 63969575
 ms.date: 12/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f351708871df03a04eeb04318e2ea881b3306484
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 5aaeef1799ee2e35746f659ce451160854a25d89
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42006081"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42141742"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="test-admin-topology-rights-in-lync-server-2013"></a><span data-ttu-id="2901f-102">Testare i diritti relativi alla topologia di amministratore in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2901f-102">Test admin topology rights in Lync Server 2013</span></span>
+# <a name="test-admin-topology-rights-in-lync-server-2013"></a><span data-ttu-id="96cd4-102">Testare i diritti relativi alla topologia di amministratore in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="96cd4-102">Test admin topology rights in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,7 +35,7 @@ ms.locfileid: "42006081"
 
 <span> </span>
 
-<span data-ttu-id="2901f-103">_**Ultimo argomento modificato:** 2016-12-08_</span><span class="sxs-lookup"><span data-stu-id="2901f-103">_**Topic Last Modified:** 2016-12-08_</span></span>
+<span data-ttu-id="96cd4-103">_**Ultimo argomento modificato:** 2016-12-08_</span><span class="sxs-lookup"><span data-stu-id="96cd4-103">_**Topic Last Modified:** 2016-12-08_</span></span>
 
 
 <table>
@@ -45,17 +45,17 @@ ms.locfileid: "42006081"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="2901f-104">Pianificazione della verifica</span><span class="sxs-lookup"><span data-stu-id="2901f-104">Verification schedule</span></span></p></td>
-<td><p><span data-ttu-id="2901f-105">Dopo la distribuzione iniziale di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="2901f-105">After initial Lync Server deployment.</span></span> <span data-ttu-id="2901f-106">Se necessario, se si verificano problemi relativi alle autorizzazioni.</span><span class="sxs-lookup"><span data-stu-id="2901f-106">As needed if permission-related issues arise.</span></span></p></td>
+<td><p><span data-ttu-id="96cd4-104">Pianificazione della verifica</span><span class="sxs-lookup"><span data-stu-id="96cd4-104">Verification schedule</span></span></p></td>
+<td><p><span data-ttu-id="96cd4-105">Dopo la distribuzione iniziale di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="96cd4-105">After initial Lync Server deployment.</span></span> <span data-ttu-id="96cd4-106">Se necessario, se si verificano problemi relativi alle autorizzazioni.</span><span class="sxs-lookup"><span data-stu-id="96cd4-106">As needed if permission-related issues arise.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="2901f-107">Strumento di testing</span><span class="sxs-lookup"><span data-stu-id="2901f-107">Testing tool</span></span></p></td>
-<td><p><span data-ttu-id="2901f-108">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="2901f-108">Windows PowerShell</span></span></p></td>
+<td><p><span data-ttu-id="96cd4-107">Strumento di testing</span><span class="sxs-lookup"><span data-stu-id="96cd4-107">Testing tool</span></span></p></td>
+<td><p><span data-ttu-id="96cd4-108">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="96cd4-108">Windows PowerShell</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="2901f-109">Autorizzazioni necessarie</span><span class="sxs-lookup"><span data-stu-id="2901f-109">Permissions required</span></span></p></td>
-<td><p><span data-ttu-id="2901f-110">Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</span><span class="sxs-lookup"><span data-stu-id="2901f-110">When run locally using the Lync Server Management Shell, users must be members of the RTCUniversalServerAdmins security group.</span></span></p>
-<p><span data-ttu-id="2901f-111">Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet Test-CsSetupPermission.</span><span class="sxs-lookup"><span data-stu-id="2901f-111">When run using a remote instance of Windows PowerShell, users must be assigned an RBAC role that has permission to run the Test-CsSetupPermission cmdlet.</span></span> <span data-ttu-id="2901f-112">Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="2901f-112">To see a list of all RBAC roles that can use this cmdlet, run the following command from the Windows PowerShell prompt:</span></span></p>
+<td><p><span data-ttu-id="96cd4-109">Autorizzazioni necessarie</span><span class="sxs-lookup"><span data-stu-id="96cd4-109">Permissions required</span></span></p></td>
+<td><p><span data-ttu-id="96cd4-110">Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</span><span class="sxs-lookup"><span data-stu-id="96cd4-110">When run locally using the Lync Server Management Shell, users must be members of the RTCUniversalServerAdmins security group.</span></span></p>
+<p><span data-ttu-id="96cd4-111">Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet Test-CsSetupPermission.</span><span class="sxs-lookup"><span data-stu-id="96cd4-111">When run using a remote instance of Windows PowerShell, users must be assigned an RBAC role that has permission to run the Test-CsSetupPermission cmdlet.</span></span> <span data-ttu-id="96cd4-112">Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="96cd4-112">To see a list of all RBAC roles that can use this cmdlet, run the following command from the Windows PowerShell prompt:</span></span></p>
 <pre><code>Get-CsAdminRole | Where-Object {$_.Cmdlets -match &quot;Test-CsSetupPermission&quot;}</code></pre></td>
 </tr>
 </tbody>
@@ -64,17 +64,17 @@ ms.locfileid: "42006081"
 
 <div>
 
-## <a name="description"></a><span data-ttu-id="2901f-113">Descrizione</span><span class="sxs-lookup"><span data-stu-id="2901f-113">Description</span></span>
+## <a name="description"></a><span data-ttu-id="96cd4-113">Descrizione</span><span class="sxs-lookup"><span data-stu-id="96cd4-113">Description</span></span>
 
-<span data-ttu-id="2901f-114">Per impostazione predefinita, solo gli amministratori di dominio possono abilitare una topologia di Lync Server e apportare modifiche importanti all'infrastruttura di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="2901f-114">By default, only domain administrators can enable a Lync Server topology and make large changes to the Lync Server infrastructure.</span></span> <span data-ttu-id="2901f-115">Non si tratta di un problema a condizione che gli amministratori di dominio e gli amministratori di Lync Server siano identici. In molte organizzazioni gli amministratori di Lync Server non contengono diritti amministrativi per l'intero dominio.</span><span class="sxs-lookup"><span data-stu-id="2901f-115">This won't be a problem as long as your domain administrators and your Lync Server administrators are one and the same.In many organizations Lync Server administrators do not hold administrative rights to the whole domain.</span></span> <span data-ttu-id="2901f-116">Per impostazione predefinita, questo significa che tali amministratori (definiti come membri del gruppo RTCUniversalServerAdmins) non possono apportare modifiche alla topologia di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="2901f-116">By default, that means that these administrators (defined as members of the RTCUniversalServerAdmins group) can't make Lync Server topology changes.</span></span> <span data-ttu-id="2901f-117">Per concedere ai membri del gruppo RTCUniversalServerAdmins il diritto di apportare modifiche alla topologia, è necessario assegnare le autorizzazioni di Active Directory necessarie utilizzando il cmdlet [Grant-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Grant-CsSetupPermission) .</span><span class="sxs-lookup"><span data-stu-id="2901f-117">To give members of the RTCUniversalServerAdmins group the right to make topology changes, you must assign the required Active Directory permissions by using the [Grant-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Grant-CsSetupPermission) cmdlet.</span></span>
+<span data-ttu-id="96cd4-114">Per impostazione predefinita, solo gli amministratori di dominio possono abilitare una topologia di Lync Server e apportare modifiche importanti all'infrastruttura di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="96cd4-114">By default, only domain administrators can enable a Lync Server topology and make large changes to the Lync Server infrastructure.</span></span> <span data-ttu-id="96cd4-115">Non si tratta di un problema a condizione che gli amministratori di dominio e gli amministratori di Lync Server siano identici. In molte organizzazioni gli amministratori di Lync Server non contengono diritti amministrativi per l'intero dominio.</span><span class="sxs-lookup"><span data-stu-id="96cd4-115">This won't be a problem as long as your domain administrators and your Lync Server administrators are one and the same.In many organizations Lync Server administrators do not hold administrative rights to the whole domain.</span></span> <span data-ttu-id="96cd4-116">Per impostazione predefinita, questo significa che tali amministratori (definiti come membri del gruppo RTCUniversalServerAdmins) non possono apportare modifiche alla topologia di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="96cd4-116">By default, that means that these administrators (defined as members of the RTCUniversalServerAdmins group) can't make Lync Server topology changes.</span></span> <span data-ttu-id="96cd4-117">Per concedere ai membri del gruppo RTCUniversalServerAdmins il diritto di apportare modifiche alla topologia, è necessario assegnare le autorizzazioni di Active Directory necessarie utilizzando il cmdlet [Grant-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Grant-CsSetupPermission) .</span><span class="sxs-lookup"><span data-stu-id="96cd4-117">To give members of the RTCUniversalServerAdmins group the right to make topology changes, you must assign the required Active Directory permissions by using the [Grant-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Grant-CsSetupPermission) cmdlet.</span></span>
 
-<span data-ttu-id="2901f-118">Il cmdlet Test-CsSetupPermission verifica che le autorizzazioni necessarie per l'installazione di Lync Server o di uno dei relativi componenti siano configurate nel contenitore di Active Directory specificato.</span><span class="sxs-lookup"><span data-stu-id="2901f-118">The Test-CsSetupPermission cmdlet verifies that the required permissions that are needed to install Lync Server or one of its components are configured on the specified Active Directory container.</span></span> <span data-ttu-id="2901f-119">Se le autorizzazioni non sono assegnate, è possibile eseguire il cmdlet Grant-CsSetupPermission per assegnare ai membri del gruppo RTCUniversalServerAdmins il diritto di installare e abilitare Lync Server.</span><span class="sxs-lookup"><span data-stu-id="2901f-119">If the permissions are not assigned, you can then run the Grant-CsSetupPermission cmdlet to give members of the RTCUniversalServerAdmins group the right to install and enable Lync Server.</span></span>
+<span data-ttu-id="96cd4-118">Il cmdlet Test-CsSetupPermission verifica che le autorizzazioni necessarie per l'installazione di Lync Server o di uno dei relativi componenti siano configurate nel contenitore di Active Directory specificato.</span><span class="sxs-lookup"><span data-stu-id="96cd4-118">The Test-CsSetupPermission cmdlet verifies that the required permissions that are needed to install Lync Server or one of its components are configured on the specified Active Directory container.</span></span> <span data-ttu-id="96cd4-119">Se le autorizzazioni non sono assegnate, è possibile eseguire il cmdlet Grant-CsSetupPermission per assegnare ai membri del gruppo RTCUniversalServerAdmins il diritto di installare e abilitare Lync Server.</span><span class="sxs-lookup"><span data-stu-id="96cd4-119">If the permissions are not assigned, you can then run the Grant-CsSetupPermission cmdlet to give members of the RTCUniversalServerAdmins group the right to install and enable Lync Server.</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="2901f-120">Per un elenco dettagliato delle autorizzazioni assegnate da Grant-CsSetupPermission, vedere il post di Blog <A href="https://blogs.technet.com/b/jenstr/archive/2011/02/07/grant-cssetuppermission-and-grant-csoupermission.aspx">Grant-CsSetupPermission e Grant-CsOUPermission</A>.</span><span class="sxs-lookup"><span data-stu-id="2901f-120">For a detailed list of permissions assigned by Grant-CsSetupPermission, see the blog post <A href="https://blogs.technet.com/b/jenstr/archive/2011/02/07/grant-cssetuppermission-and-grant-csoupermission.aspx">Grant-CsSetupPermission and Grant-CsOUPermission</A>.</span></span>
+> <span data-ttu-id="96cd4-120">Per un elenco dettagliato delle autorizzazioni assegnate da Grant-CsSetupPermission, vedere il post di Blog <A href="https://blogs.technet.com/b/jenstr/archive/2011/02/07/grant-cssetuppermission-and-grant-csoupermission.aspx">Grant-CsSetupPermission e Grant-CsOUPermission</A>.</span><span class="sxs-lookup"><span data-stu-id="96cd4-120">For a detailed list of permissions assigned by Grant-CsSetupPermission, see the blog post <A href="https://blogs.technet.com/b/jenstr/archive/2011/02/07/grant-cssetuppermission-and-grant-csoupermission.aspx">Grant-CsSetupPermission and Grant-CsOUPermission</A>.</span></span>
 
 
 
@@ -84,47 +84,47 @@ ms.locfileid: "42006081"
 
 <div>
 
-## <a name="running-the-test"></a><span data-ttu-id="2901f-121">Esecuzione del test</span><span class="sxs-lookup"><span data-stu-id="2901f-121">Running the test</span></span>
+## <a name="running-the-test"></a><span data-ttu-id="96cd4-121">Esecuzione del test</span><span class="sxs-lookup"><span data-stu-id="96cd4-121">Running the test</span></span>
 
-<span data-ttu-id="2901f-122">Per determinare se le autorizzazioni di installazione sono assegnate a un contenitore di Active Directory, chiamare il cmdlet Test-CsSetupPermission.</span><span class="sxs-lookup"><span data-stu-id="2901f-122">To determine whether setup permissions are assigned for an Active Directory container, call the Test-CsSetupPermission cmdlet.</span></span> <span data-ttu-id="2901f-123">Specificare il nome distinto del contenitore da controllare.</span><span class="sxs-lookup"><span data-stu-id="2901f-123">Specify the distinguished name of the container to be checked.</span></span> <span data-ttu-id="2901f-124">Ad esempio, questo comando consente di verificare le autorizzazioni di installazione sul contenitore ou = CsServers, DC = litwareinc, DC = com:</span><span class="sxs-lookup"><span data-stu-id="2901f-124">For example, this command verifies setup permissions on the container ou=CsServers,dc=litwareinc,dc=com:</span></span>
+<span data-ttu-id="96cd4-122">Per determinare se le autorizzazioni di installazione sono assegnate a un contenitore di Active Directory, chiamare il cmdlet Test-CsSetupPermission.</span><span class="sxs-lookup"><span data-stu-id="96cd4-122">To determine whether setup permissions are assigned for an Active Directory container, call the Test-CsSetupPermission cmdlet.</span></span> <span data-ttu-id="96cd4-123">Specificare il nome distinto del contenitore da controllare.</span><span class="sxs-lookup"><span data-stu-id="96cd4-123">Specify the distinguished name of the container to be checked.</span></span> <span data-ttu-id="96cd4-124">Ad esempio, questo comando consente di verificare le autorizzazioni di installazione sul contenitore ou = CsServers, DC = litwareinc, DC = com:</span><span class="sxs-lookup"><span data-stu-id="96cd4-124">For example, this command verifies setup permissions on the container ou=CsServers,dc=litwareinc,dc=com:</span></span>
 
     Test-CsSetupPermission -ComputerOU "ou=CsServers,dc=litwareinc,dc=com"
 
-<span data-ttu-id="2901f-125">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Test-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Test-CsSetupPermission) .</span><span class="sxs-lookup"><span data-stu-id="2901f-125">For more information, see the help topic for the [Test-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Test-CsSetupPermission) cmdlet.</span></span>
+<span data-ttu-id="96cd4-125">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Test-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Test-CsSetupPermission) .</span><span class="sxs-lookup"><span data-stu-id="96cd4-125">For more information, see the help topic for the [Test-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Test-CsSetupPermission) cmdlet.</span></span>
 
 </div>
 
 <div>
 
-## <a name="determining-success-or-failure"></a><span data-ttu-id="2901f-126">Determinazione dell'esito positivo o negativo</span><span class="sxs-lookup"><span data-stu-id="2901f-126">Determining success or failure</span></span>
+## <a name="determining-success-or-failure"></a><span data-ttu-id="96cd4-126">Determinazione dell'esito positivo o negativo</span><span class="sxs-lookup"><span data-stu-id="96cd4-126">Determining success or failure</span></span>
 
-<span data-ttu-id="2901f-127">Se Test-CsSetupPermission determina che le autorizzazioni necessarie sono già state impostate su un contenitore di Active Directory, il cmdlet restituirà il valore true:</span><span class="sxs-lookup"><span data-stu-id="2901f-127">If Test-CsSetupPermission determines that the required permissions have already been set on an Active Directory container then the cmdlet will return the value True:</span></span>
+<span data-ttu-id="96cd4-127">Se Test-CsSetupPermission determina che le autorizzazioni necessarie sono già state impostate su un contenitore di Active Directory, il cmdlet restituirà il valore true:</span><span class="sxs-lookup"><span data-stu-id="96cd4-127">If Test-CsSetupPermission determines that the required permissions have already been set on an Active Directory container then the cmdlet will return the value True:</span></span>
 
-<span data-ttu-id="2901f-128">True</span><span class="sxs-lookup"><span data-stu-id="2901f-128">True</span></span>
+<span data-ttu-id="96cd4-128">True</span><span class="sxs-lookup"><span data-stu-id="96cd4-128">True</span></span>
 
-<span data-ttu-id="2901f-129">Se le autorizzazioni non sono impostate, Test-CsSetupPermission restituirà il valore false.</span><span class="sxs-lookup"><span data-stu-id="2901f-129">If permissions are not set, Test-CsSetupPermission will return the value False.</span></span> <span data-ttu-id="2901f-130">Si noti che questo valore verrà in genere racchiuso in molti messaggi di avviso.</span><span class="sxs-lookup"><span data-stu-id="2901f-130">Note that this value will typically be enclosed in many warning messages.</span></span> <span data-ttu-id="2901f-131">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="2901f-131">For example:</span></span>
+<span data-ttu-id="96cd4-129">Se le autorizzazioni non sono impostate, Test-CsSetupPermission restituirà il valore false.</span><span class="sxs-lookup"><span data-stu-id="96cd4-129">If permissions are not set, Test-CsSetupPermission will return the value False.</span></span> <span data-ttu-id="96cd4-130">Si noti che questo valore verrà in genere racchiuso in molti messaggi di avviso.</span><span class="sxs-lookup"><span data-stu-id="96cd4-130">Note that this value will typically be enclosed in many warning messages.</span></span> <span data-ttu-id="96cd4-131">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="96cd4-131">For example:</span></span>
 
-<span data-ttu-id="2901f-132">AVVISO: voce di controllo di accesso (ACE) atl-cs\\-001 RTCUniversalServerAdmins; Consentire ExtendedRight; Nessuno Nessuno 1131f6aa-9c07-11d1-f79f-00c04fc2dcd2</span><span class="sxs-lookup"><span data-stu-id="2901f-132">WARNING: Access control entry (ACE) atl-cs-001\\RTCUniversalServerAdmins; Allow; ExtendedRight; None; None; 1131f6aa-9c07-11d1-f79f-00c04fc2dcd2</span></span>
+<span data-ttu-id="96cd4-132">AVVISO: voce di controllo di accesso (ACE) atl-cs\\-001 RTCUniversalServerAdmins; Consentire ExtendedRight; Nessuno Nessuno 1131f6aa-9c07-11d1-f79f-00c04fc2dcd2</span><span class="sxs-lookup"><span data-stu-id="96cd4-132">WARNING: Access control entry (ACE) atl-cs-001\\RTCUniversalServerAdmins; Allow; ExtendedRight; None; None; 1131f6aa-9c07-11d1-f79f-00c04fc2dcd2</span></span>
 
-<span data-ttu-id="2901f-133">AVVISO: le voci di controllo di accesso (ACE) dell'oggetto "CN = Computers, DC = litwareinc, DC = com" non sono pronte.</span><span class="sxs-lookup"><span data-stu-id="2901f-133">WARNING: The access control entries (ACEs) on the object "CN=Computers,DC=litwareinc,DC=com" are not ready.</span></span>
+<span data-ttu-id="96cd4-133">AVVISO: le voci di controllo di accesso (ACE) dell'oggetto "CN = Computers, DC = litwareinc, DC = com" non sono pronte.</span><span class="sxs-lookup"><span data-stu-id="96cd4-133">WARNING: The access control entries (ACEs) on the object "CN=Computers,DC=litwareinc,DC=com" are not ready.</span></span>
 
-<span data-ttu-id="2901f-134">False</span><span class="sxs-lookup"><span data-stu-id="2901f-134">False</span></span>
+<span data-ttu-id="96cd4-134">False</span><span class="sxs-lookup"><span data-stu-id="96cd4-134">False</span></span>
 
-<span data-ttu-id="2901f-135">AVVISO: l'elaborazione di "Test-CsSetupPermission" è stata completata con gli avvisi.</span><span class="sxs-lookup"><span data-stu-id="2901f-135">WARNING: "Test-CsSetupPermission" processing has completed with warnings.</span></span> <span data-ttu-id="2901f-136">gli avvisi "2" sono stati registrati durante la fase di esecuzione.</span><span class="sxs-lookup"><span data-stu-id="2901f-136">"2" warnings were recorded during this run.</span></span>
+<span data-ttu-id="96cd4-135">AVVISO: l'elaborazione di "Test-CsSetupPermission" è stata completata con gli avvisi.</span><span class="sxs-lookup"><span data-stu-id="96cd4-135">WARNING: "Test-CsSetupPermission" processing has completed with warnings.</span></span> <span data-ttu-id="96cd4-136">gli avvisi "2" sono stati registrati durante la fase di esecuzione.</span><span class="sxs-lookup"><span data-stu-id="96cd4-136">"2" warnings were recorded during this run.</span></span>
 
-<span data-ttu-id="2901f-137">AVVISO: i risultati dettagliati sono disponibili in "C\\:\\Users\\admin\\\\AppData\\local Temp Test-CsSetupPermission-1da99ba6-Abe2-45e4-8b16-dfd244763118. html".</span><span class="sxs-lookup"><span data-stu-id="2901f-137">WARNING: Detailed results can be found at "C:\\Users\\Admin\\AppData\\Local\\Temp\\Test-CsSetupPermission-1da99ba6-abe2-45e4-8b16-dfd244763118.html".</span></span>
+<span data-ttu-id="96cd4-137">AVVISO: i risultati dettagliati sono disponibili in "C\\:\\Users\\admin\\\\AppData\\local Temp Test-CsSetupPermission-1da99ba6-Abe2-45e4-8b16-dfd244763118. html".</span><span class="sxs-lookup"><span data-stu-id="96cd4-137">WARNING: Detailed results can be found at "C:\\Users\\Admin\\AppData\\Local\\Temp\\Test-CsSetupPermission-1da99ba6-abe2-45e4-8b16-dfd244763118.html".</span></span>
 
 </div>
 
 <div>
 
-## <a name="reasons-why-the-test-might-have-failed"></a><span data-ttu-id="2901f-138">Motivi per cui il test potrebbe non avere avuto esito positivo</span><span class="sxs-lookup"><span data-stu-id="2901f-138">Reasons why the test might have failed</span></span>
+## <a name="reasons-why-the-test-might-have-failed"></a><span data-ttu-id="96cd4-138">Motivi per cui il test potrebbe non avere avuto esito positivo</span><span class="sxs-lookup"><span data-stu-id="96cd4-138">Reasons why the test might have failed</span></span>
 
-<span data-ttu-id="2901f-139">Sebbene esistano eccezioni rare, se Test-CsSetupPermission ha esito negativo che in genere significa che le autorizzazioni di installazione non sono assegnate per il contenitore di Active Directory specificato.</span><span class="sxs-lookup"><span data-stu-id="2901f-139">Although there are rare exceptions, if Test-CsSetupPermission fails that typically means that setup permissions are not assigned for the specified Active Directory container.</span></span> <span data-ttu-id="2901f-140">Tali autorizzazioni possono essere assegnate utilizzando il cmdlet Grant-CsSetupPermission.</span><span class="sxs-lookup"><span data-stu-id="2901f-140">Those permissions can be assigned by using the Grant-CsSetupPermission cmdlet.</span></span> <span data-ttu-id="2901f-141">Ad esempio, questo comando concede le autorizzazioni di installazione al contenitore computer nel dominio litwareinc.com:</span><span class="sxs-lookup"><span data-stu-id="2901f-141">For example, this command grants setup permissions to the Computers container in the domain litwareinc.com:</span></span>
+<span data-ttu-id="96cd4-139">Sebbene esistano eccezioni rare, se Test-CsSetupPermission ha esito negativo che in genere significa che le autorizzazioni di installazione non sono assegnate per il contenitore di Active Directory specificato.</span><span class="sxs-lookup"><span data-stu-id="96cd4-139">Although there are rare exceptions, if Test-CsSetupPermission fails that typically means that setup permissions are not assigned for the specified Active Directory container.</span></span> <span data-ttu-id="96cd4-140">Tali autorizzazioni possono essere assegnate utilizzando il cmdlet Grant-CsSetupPermission.</span><span class="sxs-lookup"><span data-stu-id="96cd4-140">Those permissions can be assigned by using the Grant-CsSetupPermission cmdlet.</span></span> <span data-ttu-id="96cd4-141">Ad esempio, questo comando concede le autorizzazioni di installazione al contenitore computer nel dominio litwareinc.com:</span><span class="sxs-lookup"><span data-stu-id="96cd4-141">For example, this command grants setup permissions to the Computers container in the domain litwareinc.com:</span></span>
 
     Grant-CsSetupPermission -ComputerOU "cn=Computers,dc=litwareinc,dc=com"
 
-<span data-ttu-id="2901f-142">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Test-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Test-CsSetupPermission) .</span><span class="sxs-lookup"><span data-stu-id="2901f-142">For more information, see the help topic for the [Test-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Test-CsSetupPermission) cmdlet.</span></span>
+<span data-ttu-id="96cd4-142">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Test-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Test-CsSetupPermission) .</span><span class="sxs-lookup"><span data-stu-id="96cd4-142">For more information, see the help topic for the [Test-CsSetupPermission](https://docs.microsoft.com/powershell/module/skype/Test-CsSetupPermission) cmdlet.</span></span>
 
 </div>
 
