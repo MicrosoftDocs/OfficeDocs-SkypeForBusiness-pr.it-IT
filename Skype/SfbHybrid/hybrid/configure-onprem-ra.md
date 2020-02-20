@@ -1,7 +1,7 @@
 ---
 title: Configurare un account delle risorse in Skype for Business Server 2019
-ms.author: jambirk
-author: jambirk
+ms.author: crowe
+author: CarolynRowe
 manager: serdars
 ms.reviewer: wasseemh
 ms.audience: ITPro
@@ -13,12 +13,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Configurare un account delle risorse per Skype for Business Server 2019.
-ms.openlocfilehash: e16f75063cfbe794ff0257cb9cccdf44065a5448
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 9acd9df1d9c5372915ea51ff1b3b94e1f89c3311
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726776"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42113259"
 ---
 # <a name="configure-resource-accounts"></a>Configurare gli account delle risorse
 
@@ -113,7 +113,7 @@ L'account della risorsa avrà bisogno di un numero di telefono assegnato se verr
 7. Creare l'operatore automatico del sistema telefonico o la coda di chiamata. Visualizzare uno tra:
 
    - [Configurare un operatore automatico cloud](/MicrosoftTeams/create-a-phone-system-auto-attendant)
-   - [Creare una coda di chiamata cloud](/MicrosoftTeams/create-a-phone-system-call-queue)  
+   - [Creare una coda delle chiamate nel cloud](/MicrosoftTeams/create-a-phone-system-call-queue)  
 
 8. Associare l'account delle risorse all'operatore automatico del sistema telefonico o alla coda di chiamata scelta in precedenza.
 
@@ -145,7 +145,7 @@ Accedere al server front end di Skype for business ed eseguire i cmdlet di Power
 
 3. Creare l'operatore automatico del sistema telefonico o la coda di chiamata. Visualizzare uno tra:
    - [Configurare un operatore automatico cloud](/MicrosoftTeams/create-a-phone-system-auto-attendant)
-   - [Creare una coda di chiamata cloud](/MicrosoftTeams/create-a-phone-system-call-queue)  
+   - [Creare una coda delle chiamate nel cloud](/MicrosoftTeams/create-a-phone-system-call-queue)  
 4. Associare l'account delle risorse e l'operatore automatico del sistema telefonico o la coda di chiamata scelta in precedenza.
 
 Un esempio di implementazione di Small Business è disponibile in [Small Business example-configurare un operatore automatico](/microsoftteams/tutorial-org-aa) e un [esempio di Small Business-impostare una coda di chiamata](/SkypeForBusiness/what-is-phone-system-in-office-365/tutorial-cq).
@@ -193,7 +193,7 @@ La migrazione dalla messaggistica unificata di Exchange al sistema telefonico ri
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creare una coda di chiamata cloud](/MicrosoftTeams/create-a-phone-system-call-queue)
+[Creare una coda delle chiamate nel cloud](/MicrosoftTeams/create-a-phone-system-call-queue)
 
 [Che cosa sono gli operatori automatici cloud?](/MicrosoftTeams/what-are-phone-system-auto-attendants)
 

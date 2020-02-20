@@ -1,7 +1,7 @@
 ---
 title: Interfaccia DSTU2 dell'app pazienti e integrazione di EHR
-author: jambirk
-ms.author: jambirk
+author: dstrome
+ms.author: dstrome
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: anach
 description: Integrazione dell'app EHR di Microsoft teams patients
-ms.openlocfilehash: d7acea1002d80a397469d242cfbbb1adfba07a24
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 10a6b21e583b5fdd3e70857c4cfc5e7e21a7e988
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827804"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42153818"
 ---
 # <a name="dstu2-interface-specification"></a>Specifica dell'interfaccia DSTU2
 
@@ -54,7 +54,7 @@ Tutte le risorse FHIR seguenti devono essere accessibili tramite riferimento dir
    1. Modalità
    2. Interazione
    3. Risorsa: digitare
-   4. Sicurezza: [estensione per gli URI OAuth](http://hl7.org/fhir/extension-oauth-uris.html)
+   4. Sicurezza: [estensione per gli URI OAuth](https://hl7.org/fhir/extension-oauth-uris.html)
 2. FhirVersion (il nostro codice richiede questo per capire a quale versione dobbiamo eseguire il pivot mentre sosteniamo più versioni).
 
 Per [https://www.hl7.org/fhir/dstu2/conformance.html](https://www.hl7.org/fhir/dstu2/conformance.html) altre informazioni su questo set di campi, vedere.
@@ -82,7 +82,7 @@ Oltre ai campi Argonaut, per una grande esperienza utente l'app patients legge a
     Response: {"resourceType": "patient", "ID": "<patient-ID>",.
       .
       .
-      "nome": [{"use": "Official", "prefix": ["Mr"], "Family": ["Chau"], "given": ["Hugh"]}], "Identifier": [{"use": "ufficiale", "tipo": {"codifica": [{"System":http://hl7.org/fhir/v2/0203"" "," codice ":" Mr "}]}," valore ":" 1234567 "}]," sesso ":" maschio "," DataNascita ":" 1957-06-05 "," careProvider ": [{" display ":" Jane Doe "}],}
+      "nome": [{"use": "Official", "prefix": ["Mr"], "Family": ["Chau"], "given": ["Hugh"]}], "Identifier": [{"use": "ufficiale", "tipo": {"codifica": [{"System":https://hl7.org/fhir/v2/0203"" "," codice ":" Mr "}]}," valore ":" 1234567 "}]," sesso ":" maschio "," DataNascita ":" 1957-06-05 "," careProvider ": [{" display ":" Jane Doe "}],}
 
 * * *
 

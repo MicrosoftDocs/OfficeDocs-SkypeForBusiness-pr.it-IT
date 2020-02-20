@@ -1,7 +1,7 @@
 ---
 title: Delega messaggi
-author: jambirk
-ms.author: jambirk
+author: dstrome
+ms.author: dstrome
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: acolonna
 description: Un utente può impostare in modo esplicito un altro utente come delegato nel messaggio di stato.
-ms.openlocfilehash: ec1f590cad4ada605b4a487d982b3a2459ecb5f2
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: e76181ff69f2d4e6ed75183bdb5fbdda695d05e4
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827784"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42153808"
 ---
 # <a name="message-delegation"></a>Delega messaggi
 

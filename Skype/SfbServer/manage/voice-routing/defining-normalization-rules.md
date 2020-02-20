@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Le regole di normalizzazione di Skype for Business Server utilizzano le espressioni regolari di .NET Framework per tradurre i numeri di telefono composti in formato E. 164; in altre parole, le regole di normalizzazione assumono il numero di telefono composto da un utente e convertono tale numero nel formato utilizzato internamente da Skype for Business Server. A ogni dial plan deve essere assegnata una o più regole di normalizzazione.
-ms.openlocfilehash: 42ec43a08d1c155f61869bdfebf07e94ac040e56
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 2fd7f59bcebcfe676a03ce5a6a897336551ddbad
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42028847"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42151216"
 ---
 # <a name="defining-normalization-rules-in-skype-for-business-server"></a>Definizione delle regole di normalizzazione in Skype for Business Server
 
@@ -24,7 +24,7 @@ Le regole di normalizzazione di Skype for Business Server utilizzano le espressi
 
 Per informazioni dettagliate sulle regole di normalizzazione, vedere [dial plan e regole di normalizzazione](https://technet.microsoft.com/library/gg413082(v=ocs.15).aspx).
 
-Per informazioni dettagliate su come scrivere espressioni regolari, vedere [espressioni regolari di .NET Framework](http://go.microsoft.com/fwlink/p/?linkId=140927).
+Per informazioni dettagliate su come scrivere espressioni regolari, vedere [espressioni regolari di .NET Framework](https://go.microsoft.com/fwlink/p/?linkId=140927).
 
 È possibile utilizzare uno dei metodi seguenti per definire o modificare una regola di normalizzazione:
 - [Utilizzare lo strumento **Crea regola di normalizzazione** ](#create-or-modify-a-normalization-rule-by-using-build-a-normalization-rule) per specificare i valori per le cifre iniziali, la lunghezza, le cifre da rimuovere e le cifre da aggiungere, quindi lasciare che il pannello di controllo di Skype for Business Server generi il corrispondente modello di corrispondenza e la regola di conversione.

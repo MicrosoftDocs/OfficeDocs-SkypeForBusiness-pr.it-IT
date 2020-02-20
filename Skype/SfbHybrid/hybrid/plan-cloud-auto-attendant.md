@@ -1,7 +1,7 @@
 ---
 title: Pianificare un operatore automatico cloud
-ms.author: jambirk
-author: jambirk
+ms.author: crowe
+author: CarolynRowe
 manager: serdars
 ms.reviewer: wasseemh
 audience: ITPro
@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Panoramica sull'utilizzo di un operatore automatico cloud con Skype for Business Server 2019
-ms.openlocfilehash: f7a3799df083d1404a2d635ee38403cc2653b9ea
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 2cb4c54e4c70e9187e44c5de3cb70fac85be30a6
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42037818"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42150477"
 ---
 # <a name="plan-cloud-auto-attendants"></a>Pianificare gli operatori automatici del cloud
 

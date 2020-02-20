@@ -1,8 +1,8 @@
 ---
 title: Gestire Skype for Business Server 2019 utilizzando SCOM Management Pack
 ms.reviewer: ''
-ms.author: jambirk
-author: jambirk
+ms.author: v-lanac
+author: LanaChin
 manager: serdars
 ms.date: 10/26/2018
 audience: ITPro
@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: "Riepilogo: informazioni su come configurare l'infrastruttura di Skype for Business Server 2019 per l'utilizzo con System Center Operations Manager."
-ms.openlocfilehash: ac8b9a99794ee12be5d6ac31b0361f46730a8e21
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 54c9f3dadb73df45ddc21cfc40ff83711032a4c2
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42006041"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42150543"
 ---
 # <a name="manage-skype-for-business-server-2019-using-scom-management-pack"></a>Gestire Skype for Business Server 2019 utilizzando SCOM Management Pack
  
@@ -126,11 +126,11 @@ I Management Pack di Skype for Business Server 2019 offrono una maggiore copertu
 
 ||||
 |:-----|:-----|:-----|
-|1   <br/> |Registrazione (accesso utente)  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
-|2   <br/> |Servizio Rubrica (download di file)  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
-|3   <br/> |Address Book Web Query  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
-|4   <br/> |Presenza  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
-|5   <br/> |Archivio unico dei contatti  <br/> |Disponibile Lync Server 2013 e oltre  <br/> |
+|1  <br/> |Registrazione (accesso utente)  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
+|2  <br/> |Servizio Rubrica (download di file)  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
+|3  <br/> |Address Book Web Query  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
+|4  <br/> |Presenza  <br/> |Disponibile Lync Server 2010 e oltre  <br/> |
+|5  <br/> |Archivio unico dei contatti  <br/> |Disponibile Lync Server 2013 e oltre  <br/> |
    
 **Transazioni sintetiche supportate per i servizi peer-to-peer**
 

@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 description: In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di Microsoft teams.
-ms.openlocfilehash: ace96ae0cc8094c1daa7d74f76790e6316ee9411
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: fc83efc2b3b72be532d29b2698370c655a1da9ac
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825804"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42155088"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
@@ -248,7 +248,7 @@ Introdotti in questo aggiornamento:
 
 Introdotti in questo aggiornamento:
 
-- Supporto per l'hardware Dock della [serie MSR Polycom](http://www.polycom.com/hd-video-conferencing/microsoft-video/msr-series.mdl)
+- Supporto per l'hardware Dock della [serie MSR Polycom](https://www.polycom.com/hd-video-conferencing/microsoft-video/msr-series.mdl)
 - Supporto per [Logitech Brio](https://www.logitech.com/product/brio)
 - Risolve un problema in cui le visualizzazioni (console e front-of-room) non riescono ad accedere alla modalità sospensione quando non ci sono attività nella sala
 
@@ -258,7 +258,7 @@ Introdotti in questo aggiornamento:
 
 - Viene eseguito su un tablet Surface Pro (2017) 
 - Supporta l'aggiornamento di Windows 10 Enterprise Creator (lingua inglese, Build 1703)
-- Supporto per l'hardware Dock di [Crestron Sr](http://www.crestron.com/products/line/sr-for-skype-for-business-room-system)
+- Supporto per l'hardware Dock di [Crestron Sr](https://www.crestron.com/products/line/sr-for-skype-for-business-room-system)
 - Supporto OEM per i controlli ambiente (Crestron)
 
 La versione a 64 bit di Windows 10 Enterprise Anniversary Edition (lingua inglese, versione 1607) non è più supportata da Microsoft teams Rooms Release 3.0.12.0 (Update 3).

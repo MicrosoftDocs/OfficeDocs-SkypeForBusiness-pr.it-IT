@@ -1,7 +1,7 @@
 ---
 title: Panoramica dell'app Pazienti
-author: jambirk
-ms.author: jambirk
+author: dstrome
+ms.author: dstrome
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: anach
 description: Integrazione dell'app EHR di Microsoft teams patients
-ms.openlocfilehash: 8d5723f90fe56c2af342f1cfd76e3ab9bde04c60
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 27149ad8466eec9bd3c1f73293f82a877dc1a722
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827654"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42147719"
 ---
 # <a name="integrating-electronic-healthcare-records-into-microsoft-teams"></a>Integrare cartelle cliniche elettroniche in Microsoft Teams
 
@@ -79,7 +79,7 @@ Il servizio per l'autenticazione del servizio deve essere eseguito tramite il [f
     {"resourceType": "CapabilityStatement",.
         .
         .
-        "Rest": [{"Mode": "Server", "Security": {"extension": [{"extension": [{"URL": "token", "valueUri": "https://login.contoso.com/145f4184-1b0b-41c7-ba24-b3c1291bfda1/oauth2/token"}, {"URL": "Autorizzo", "valueUri":https://login.contoso.com/145f4184-1b0b-41c7-ba24-b3c1291bfda1/oauth2/authorize""}], "URL":http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris""}], "Service": [{"coding": [{"System":http://hl7.org/fhir/ValueSet/restful-security-service"" "," "," codice ":" OAuth "}]}]},.
+        "Rest": [{"Mode": "Server", "Security": {"extension": [{"extension": [{"URL": "token", "valueUri": "https://login.contoso.com/145f4184-1b0b-41c7-ba24-b3c1291bfda1/oauth2/token"}, {"URL": "Autorizzo", "valueUri":https://login.contoso.com/145f4184-1b0b-41c7-ba24-b3c1291bfda1/oauth2/authorize""}], "URL":http://fhir-registry.smarthealthit.org/StructureDefinition/oauth-uris""}], "Service": [{"coding": [{"System":https://hl7.org/fhir/ValueSet/restful-security-service"" "," "," codice ":" OAuth "}]}]},.
                 .
                 .
             } ] }

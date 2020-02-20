@@ -1,7 +1,7 @@
 ---
 title: Interfaccia STU3 dell'app pazienti e integrazione di EHR
-author: jambirk
-ms.author: jambirk
+author: dstrome
+ms.author: dstrome
 manager: serdars
 audience: ITPro
 ms.topic: article
@@ -17,12 +17,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: anach
 description: Integrazione dell'app EHR di Microsoft teams patients
-ms.openlocfilehash: 6c7638436f35a1e460c176964dfc63624985b12e
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: d718f3d3772a08ecfa57e418a4f4fc2e22fe7172
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827634"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42147699"
 ---
 # <a name="stu3-interface-specification"></a>Specifica dell'interfaccia STU3
 
@@ -52,7 +52,7 @@ Questi sono i campi obbligatori minimi:
    1. Modalità
    2. Interazione
    3. Risorsa: digitare
-   4. Sicurezza: [estensione per gli URI OAuth](http://hl7.org/fhir/extension-oauth-uris.html)
+   4. Sicurezza: [estensione per gli URI OAuth](https://hl7.org/fhir/extension-oauth-uris.html)
 2. FhirVersion (il nostro codice richiede questo per capire a quale versione dobbiamo eseguire il pivot.)
 
 Per [https://www.hl7.org/fhir/stu3/capabilitystatement.html](https://www.hl7.org/fhir/stu3/capabilitystatement.html) altre informazioni su questo set di campi, vedere.
@@ -96,18 +96,18 @@ Vedere l'esempio seguente della chiamata:
 
     Richiesta: POST <Fhir-Server>/patient/_search richiedere il corpo: given = Ruth&Family = black
     
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "meta": {"lastUpdated": "2019-01-14T23:44:45.052 + 00:00"}, "tipo": "searchset", "Total": 1, "link": [{"relation": "self", "URL": <Fhir-server>/patient/_search "}]," entry ": [{" fullUrl ": <Fhir-server>/patient/<patient-ID>", "risorsa": {"resourceType": "patient", "ID": "<patient-ID>", "meta": {"VersionId": "1", "lastUpdated": "2017-10-18T18:32:37.000 + 00:00"}, "Text": {"status": "generated", "div": "<div>\n        <p>Ruth Black</p>\n      </div>"}," identificatore ": [{" USA ":" usuale "," tipo ": {" codifica ": [{" System ":http://hl7.org/fhir/v2/0203" "," codice ":" Mr "," display ":" numero di record medico "," userSelected ": false}]," testo ":" numero di record medico "}," sistemahttp://hospital.smarthealthit.org":" "," valore ":" 1234567 "}]," attivo ": vero", "nome": [{"USA": "ufficiale", "famiglia": "nero", "assegnato": ["Ruth", "C".
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "meta": {"lastUpdated": "2019-01-14T23:44:45.052 + 00:00"}, "tipo": "searchset", "Total": 1, "link": [{"relation": "self", "URL": <Fhir-server>/patient/_search "}]," entry ": [{" fullUrl ": <Fhir-server>/patient/<patient-ID>", "risorsa": {"resourceType": "patient", "ID": "<patient-ID>", "meta": {"VersionId": "1", "lastUpdated": "2017-10-18T18:32:37.000 + 00:00"}, "Text": {"status": "generated", "div": "<div>\n        <p>Ruth Black</p>\n      </div>"}," identificatore ": [{" USA ":" usuale "," tipo ": {" codifica ": [{" System ":https://hl7.org/fhir/v2/0203" "," codice ":" Mr "," display ":" numero di record medico "," userSelected ": false}]," testo ":" numero di record medico "}," sistemahttp://hospital.smarthealthit.org":" "," valore ":" 1234567 "}]," attivo ": vero", "nome": [{"USA": "ufficiale", "famiglia": "nero", "assegnato": ["Ruth", "C".
     ]}], "Telecom": [{"System": "telefono", "valore": "800-599-2739", "use": "Home"}, {"System": "Phone", "value": "800-808-7785", "use": "mobile"}, {"System": "mail", "value": "ruth.black@example.com"}], "gender": "femmina", "DataNascita": "1951-08-23", "indirizzo": [{"use": "Home", "line": ["26 South RdApt 22"], "City": "Sapulpa", "stato": "OK", "postalCode": "74066", "paese": "USA"}]}, "ricerca": {"modalità": "Confronta"}}]}
 
 * * *
 
     Richiesta: ottenere <Fhir-Server>/patient/<ID paziente>
     
-    Response: {"resourceType": "patient", "ID": "<patient-ID>", "identificatore": [{"use": "usual", "Type": {"coding": [{"System": "http://hl7.org/fhir/v2/0203", "code": "Mr",}], "Text": "numero di record medico"}, "valore": "1234567"}], "nome": [{"use": "ufficiale", "famiglia": "Adams", "assegnato": ["Daniele", "X". ]}], "sesso": "maschio", "DataNascita": "1925-12-23",}
+    Response: {"resourceType": "patient", "ID": "<patient-ID>", "identificatore": [{"use": "usual", "Type": {"coding": [{"System": "https://hl7.org/fhir/v2/0203", "code": "Mr",}], "Text": "numero di record medico"}, "valore": "1234567"}], "nome": [{"use": "ufficiale", "famiglia": "Adams", "assegnato": ["Daniele", "X". ]}], "sesso": "maschio", "DataNascita": "1925-12-23",}
 
 * * *
 
-Per [http://hl7.org/fhir/stu3/patient.html](http://hl7.org/fhir/stu3/patient.html) altre informazioni su questo set di campi, vedere.
+Per [https://hl7.org/fhir/stu3/patient.html](https://hl7.org/fhir/stu3/patient.html) altre informazioni su questo set di campi, vedere.
 
 ## <a name="observation"></a>Osservazione
 
@@ -134,7 +134,7 @@ Fare riferimento a questo esempio di chiamata:
 
     Richiesta: ottenere <Fhir-Server>/Observation? patient =<patient-ID>&Category = Vital-Signs
     
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "totale": 20, "voce": [{"risorsa": {"resourceType": "osservazione", "ID": "<Resource-ID>", "Category": [{"coding": [{"System": "http://hl7.org/fhir/observation-category", "codice" codice ": {" coding ": [{" System ":"http://loinc.org"," code ":" 8867-4 "," display ":" heart_rate "}]}," effectiveDateTime ":" 2009-04-08T00:00:00-06:00 "," valueQuantity ": {" valore ": 72,0," Unit ":" {Beats}/min "," System ":"http://unitsofmeasure.org",}}},.
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "totale": 20, "voce": [{"risorsa": {"resourceType": "osservazione", "ID": "<Resource-ID>", "Category": [{"coding": [{"System": "https://hl7.org/fhir/observation-category", "codice" codice ": {" coding ": [{" System ":"http://loinc.org"," code ":" 8867-4 "," display ":" heart_rate "}]}," effectiveDateTime ":" 2009-04-08T00:00:00-06:00 "," valueQuantity ": {" valore ": 72,0," Unit ":" {Beats}/min "," System ":"http://unitsofmeasure.org",}}},.
         .
         .
       ] }
@@ -171,11 +171,11 @@ Vedere l'esempio seguente di questa chiamata:
       ] }
 
 * * *
-Per [http://hl7.org/fhir/stu3/condition.html](http://hl7.org/fhir/stu3/condition.html) altre informazioni su questo set di campi, vedere.
+Per [https://hl7.org/fhir/stu3/condition.html](https://hl7.org/fhir/stu3/condition.html) altre informazioni su questo set di campi, vedere.
 
 ## <a name="encounter"></a>Verificarsi
 
-Questi sono i campi obbligatori minimi, che sono un sottoinsieme del [profilo di confronto degli Stati Uniti](http://hl7.org/fhir/us/core/2018Jan/StructureDefinition-us-core-encounter.html) "must have".
+Questi sono i campi obbligatori minimi, che sono un sottoinsieme del [profilo di confronto degli Stati Uniti](https://hl7.org/fhir/us/core/2018Jan/StructureDefinition-us-core-encounter.html) "must have".
 
 1. Stato
 2. Digitare [0]. Codifica [0]. Visualizzare
@@ -193,7 +193,7 @@ Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
 L'obiettivo è quello di riuscire a recuperare l'ultima posizione nota del paziente. Ogni incontro fa riferimento a una risorsa posizione. Il riferimento deve includere anche il campo di visualizzazione della posizione.
 
-Per [http://hl7.org/fhir/stu3/encounter.html](http://hl7.org/fhir/stu3/encounter.html) altre informazioni su questo set di campi, vedere.
+Per [https://hl7.org/fhir/stu3/encounter.html](https://hl7.org/fhir/stu3/encounter.html) altre informazioni su questo set di campi, vedere.
 
 ## <a name="allergyintolerance"></a>AllergyIntolerance
 
@@ -225,7 +225,7 @@ Vedere l'esempio seguente della chiamata:
 
 * * *
 
-Per [http://hl7.org/fhir/stu3/allergyintolerance.html](http://hl7.org/fhir/stu3/allergyintolerance.html) altre informazioni su questo set di campi, vedere.
+Per [https://hl7.org/fhir/stu3/allergyintolerance.html](https://hl7.org/fhir/stu3/allergyintolerance.html) altre informazioni su questo set di campi, vedere.
 
 ## <a name="medication-request"></a>Richiesta di farmaci
 
@@ -262,4 +262,4 @@ Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
 1. Patient = \<id paziente>
 
-Per [http://hl7.org/fhir/stu3/coverage.html](https://www.hl7.org/fhir/medicationrequest.html) altre informazioni su questo set di campi, vedere.
+Per [https://hl7.org/fhir/stu3/coverage.html](https://www.hl7.org/fhir/medicationrequest.html) altre informazioni su questo set di campi, vedere.
