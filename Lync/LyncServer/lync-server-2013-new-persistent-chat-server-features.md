@@ -12,18 +12,18 @@ ms:contentKeyID: 48185341
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5257490dc63e1626c0cdb6dcf7e6ce1f17e75cd1
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 6c5ad73d11ae629ec0848539b2f4bac2bc81a43e
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42048320"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42153578"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="new-persistent-chat-server-features-in-lync-server-2013"></a>Nuove funzionalità del server Chat persistente in Lync Server 2013
 
@@ -53,7 +53,7 @@ Lync Server 2013, il server Chat persistente consente di partecipare a conversaz
 
 Lync Server 2013, il server Chat persistente non è disponibile in Microsoft Office 365. In questo momento, è disponibile solo per i clienti di Lync 2013 locali.
 
-In Lync 2013, la funzionalità chat persistente è integrata nel client Lync 2013. Di conseguenza, gli utenti possono accedere a messaggistica istantanea/presenza, audio/video, conferenze e chat persistente tutti nel client Lync 2013. Per ulteriori informazioni sul client Lync 2013, vedere <http://go.microsoft.com/fwlink/p/?linkid=270877>.
+In Lync 2013, la funzionalità chat persistente è integrata nel client Lync 2013. Di conseguenza, gli utenti possono accedere a messaggistica istantanea/presenza, audio/video, conferenze e chat persistente tutti nel client Lync 2013. Per ulteriori informazioni sul client Lync 2013, vedere <https://go.microsoft.com/fwlink/p/?linkid=270877>.
 
 In questo argomento vengono descritte le modifiche apportate alla caratteristica tra la nuova versione di Lync Server 2013, il server Chat persistente e la versione precedente (Microsoft Lync Server 2010, Group Chat), tra cui:
 
@@ -67,7 +67,7 @@ In questo argomento vengono descritte le modifiche apportate alla caratteristica
 
 Per ulteriori informazioni sulla versione più recente del server Chat persistente, vedere gli argomenti seguenti:
 
-  - La guida per la chat <http://go.microsoft.com/fwlink/p/?linkid=270945> persistente in cui viene fornito un elenco dettagliato delle funzionalità di chat persistente, il loro funzionamento e come utilizzarle durante l'esecuzione del server Chat persistente.
+  - La guida per la chat <https://go.microsoft.com/fwlink/p/?linkid=270945> persistente in cui viene fornito un elenco dettagliato delle funzionalità di chat persistente, il loro funzionamento e come utilizzarle durante l'esecuzione del server Chat persistente.
 
   - La [pianificazione del server Chat persistente in Lync server 2013](lync-server-2013-planning-for-persistent-chat-server.md) nella documentazione relativa alla pianificazione [distribuzione del server Chat persistente in Lync Server 2013](lync-server-2013-deploying-persistent-chat-server.md) nella documentazione relativa alla distribuzione, [migrazione da Lync Server 2010, Group chat o Office Communications Server 2007 R2 group chat a Lync Server 2013, Persistent Chat Server](migration-from-lync-server-2010-group-chat-or-office-communications-server-2007-r2-group-chat-to-lync-server-2013-persistent-chat-server.md) nella documentazione relativa alla migrazione e [gestione di Lync Server 2013, Persistent Chat Server](managing-lync-server-2013-persistent-chat-server.md) nella documentazione relativa alle operazioni, che forniscono tutte le istruzioni per la configurazione Server Chat persistente.
 

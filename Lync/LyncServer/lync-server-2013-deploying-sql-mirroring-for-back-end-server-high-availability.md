@@ -12,18 +12,18 @@ ms:contentKeyID: 48184451
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0202b41c5da45513ccd4e08aa2ed054c3d20acbe
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 582de419e2c92ce5d158cb979147db5a94715322
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42043728"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42153968"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="deploying-sql-mirroring-for-back-end-server-high-availability-in-lync-server-2013"></a>Distribuzione del mirroring di SQL per la disponibilità elevata del server back-end in Lync Server 2013
 
@@ -37,7 +37,7 @@ ms.locfileid: "42043728"
 
 _**Ultimo argomento modificato:** 2014-01-08_
 
-Per distribuire il mirroring SQL, i server devono eseguire almeno SQL Server 2008 R2. Questa versione deve essere eseguita da tutti i server coinvolti: il server primario, mirror, e di controllo. Per informazioni dettagliate, [http://go.microsoft.com/fwlink/p/?linkid=3052\&kbid=2083921](http://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2083921)vedere.
+Per distribuire il mirroring SQL, i server devono eseguire almeno SQL Server 2008 R2. Questa versione deve essere eseguita da tutti i server coinvolti: il server primario, mirror, e di controllo. Per informazioni dettagliate, [https://go.microsoft.com/fwlink/p/?linkid=3052\&kbid=2083921](https://go.microsoft.com/fwlink/p/?linkid=3052%26kbid=2083921)vedere.
 
 In generale, la configurazione del mirroring SQL tra due server di back-end con un server di controllo richiede che:
 
@@ -47,19 +47,19 @@ In generale, la configurazione del mirroring SQL tra due server di back-end con 
 
   - Il server primario e mirror abbiano la stessa edizione di SQL Server. Il server di controllo può avere un'edizione diversa.
 
-Per le procedure consigliate SQL in termini di supporto per le versioni di SQL per un ruolo di controllo, vedere "database mirroring witness" in [http://go.microsoft.com/fwlink/p/?LinkId=247345](http://go.microsoft.com/fwlink/p/?linkid=247345)MSDN Library all'indirizzo.
+Per le procedure consigliate SQL in termini di supporto per le versioni di SQL per un ruolo di controllo, vedere "database mirroring witness" in [https://go.microsoft.com/fwlink/p/?LinkId=247345](https://go.microsoft.com/fwlink/p/?linkid=247345)MSDN Library all'indirizzo.
 
 È possibile utilizzare Generatore di topologie per distribuire il mirroring SQL. È possibile selezionare un'opzione in Generatore di topologie per il mirroring dei database e il generatore di topologie configura il mirroring, inclusa la configurazione di un controllo, se si desidera, quando si pubblica la topologia. Il server di controllo viene rimosso o configurato contemporaneamente alla rimozione o configurazione del mirror. Non esiste un comando separato che consente di distribuire o rimuovere unicamente un server di controllo.
 
-Per configurare il mirroring del server, è prima necessario configurare correttamente le autorizzazioni del database SQL. Per informazioni dettagliate, vedere "configurare gli account di accesso per il mirroring del database o i gruppi di disponibilità AlwaysOn [http://go.microsoft.com/fwlink/p/?LinkId=268454](http://go.microsoft.com/fwlink/p/?linkid=268454)(SQL Server)" all'indirizzo.
+Per configurare il mirroring del server, è prima necessario configurare correttamente le autorizzazioni del database SQL. Per informazioni dettagliate, vedere "configurare gli account di accesso per il mirroring del database o i gruppi di disponibilità AlwaysOn [https://go.microsoft.com/fwlink/p/?LinkId=268454](https://go.microsoft.com/fwlink/p/?linkid=268454)(SQL Server)" all'indirizzo.
 
 Con il mirroring SQL, la modalità di recupero del database è impostata sempre su **Completa**. Ciò significa che è necessario monitorare le dimensioni del log delle transizioni ed eseguire regolarmente il backup dei log più grandi, per evitare che la memoria del disco dei server di back-end si riempia. La frequenza dei backup dei log delle transizioni dipende dal tasso di crescita dei log, che a sua volta dipende dalle transazioni del database relative alle attività degli utenti nel pool Front End. Per pianificare correttamente, è consigliabile determinare il tasso di crescita stimato del log delle transazioni per il carico di lavoro della distribuzione di Lync. I seguenti articoli contengono informazioni aggiuntive sul backup SQL e la gestione dei log:
 
-  - Modelli di ripristino di database: "modelli di ripristino (SQL Server)" all'indirizzo[http://go.microsoft.com/fwlink/p/?LinkId=268446](http://go.microsoft.com/fwlink/p/?linkid=268446)
+  - Modelli di ripristino di database: "modelli di ripristino (SQL Server)" all'indirizzo[https://go.microsoft.com/fwlink/p/?LinkId=268446](https://go.microsoft.com/fwlink/p/?linkid=268446)
 
-  - Panoramica del backup: "Panoramica del backup (SQL Server)" all'indirizzo[http://go.microsoft.com/fwlink/p/?LinkId=268449](http://go.microsoft.com/fwlink/p/?linkid=268449)
+  - Panoramica del backup: "Panoramica del backup (SQL Server)" all'indirizzo[https://go.microsoft.com/fwlink/p/?LinkId=268449](https://go.microsoft.com/fwlink/p/?linkid=268449)
 
-  - Log delle transazioni di backup: "eseguire il backup di un log delle transazioni (SQL Server)" all'indirizzo[http://go.microsoft.com/fwlink/p/?LinkId=268452](http://go.microsoft.com/fwlink/p/?linkid=268452)
+  - Log delle transazioni di backup: "eseguire il backup di un log delle transazioni (SQL Server)" all'indirizzo[https://go.microsoft.com/fwlink/p/?LinkId=268452](https://go.microsoft.com/fwlink/p/?linkid=268452)
 
 Nel mirroring SQL è possibile configurare la topologia per il mirroring al momento della creazione dei pool, o in seguito.
 
@@ -151,9 +151,9 @@ Quando si configura il mirroring SQL, è necessario tenere a mente alcuni punti:
 
   - Le porte già allocate ad altre applicazioni sullo stesso server, comprese quelle allocate ad altre istanze di SQL, non devono essere utilizzate per le nuove istanze di SQL installate. Pertanto, se si ha più di una istanza SQL installata sullo stesso server, queste devono utilizzare porte differenti per il mirroring. Per ulteriori dettagli, vedere:
     
-      - "Specificare un indirizzo di rete del server (mirroring del database)" in MSDN Library all'[http://go.microsoft.com/fwlink/p/?LinkId=247346](http://go.microsoft.com/fwlink/p/?linkid=247346)
+      - "Specificare un indirizzo di rete del server (mirroring del database)" in MSDN Library all'[https://go.microsoft.com/fwlink/p/?LinkId=247346](https://go.microsoft.com/fwlink/p/?linkid=247346)
     
-      - "Endpoint del mirroring del database (SQL Server)" all'indirizzo[http://go.microsoft.com/fwlink/p/?LinkId=247347](http://go.microsoft.com/fwlink/p/?linkid=247347)
+      - "Endpoint del mirroring del database (SQL Server)" all'indirizzo[https://go.microsoft.com/fwlink/p/?LinkId=247347](https://go.microsoft.com/fwlink/p/?linkid=247347)
 
 </div>
 
@@ -321,7 +321,7 @@ Utilizzare questa procedura se è necessario rimuovere il controllo da una confi
     
     Tuttavia, non seguire questo passaggio e non digitare `Uninstall-CsMirrorDatabase` come che disinstalli l'intera configurazione del mirroring.
 
-4.  Per rimuovere solo il controllo dalla configurazione di SQL Server, seguire le istruzioni riportate in "rimuovere il controllo da una sessione di mirroring del database ( [http://go.microsoft.com/fwlink/p/?LinkId=268456](http://go.microsoft.com/fwlink/p/?linkid=268456)SQL Server)" all'indirizzo.
+4.  Per rimuovere solo il controllo dalla configurazione di SQL Server, seguire le istruzioni riportate in "rimuovere il controllo da una sessione di mirroring del database ( [https://go.microsoft.com/fwlink/p/?LinkId=268456](https://go.microsoft.com/fwlink/p/?linkid=268456)SQL Server)" all'indirizzo.
 
 </div>
 

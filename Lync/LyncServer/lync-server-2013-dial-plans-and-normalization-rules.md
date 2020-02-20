@@ -12,18 +12,18 @@ ms:contentKeyID: 48185960
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4adcd2cd6bebfb0797427d15819399c9b2b9f86d
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 3e9f42d2467a77e35eb9f5a158967357534e86da
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42036756"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42153858"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="dial-plans-and-normalization-rules-in-lync-server-2013"></a>Dial plan e regole di normalizzazione in Lync Server 2013
 
@@ -175,7 +175,7 @@ Di seguito sono riportati alcuni campi numerici che può essere necessario inclu
 
 Le regole di normalizzazione utilizzano le espressioni regolari di .NET Framework per specificare formati di corrispondenza numerica che il server utilizza per convertire le stringhe di composizione nel formato E.164 allo scopo di eseguire la ricerca inversa dei numeri. Per creare le regole di normalizzazione nel pannello di controllo di Lync Server, immettere manualmente le espressioni oppure immettendo le cifre iniziali e la lunghezza delle stringhe di composizione e lasciando che il pannello di controllo di Lync Server generi la corrispondente espressione regolare per l'utente. In ogni caso, al termine è possibile immettere un numero di test per verificare che la regola di normalizzazione funzioni come previsto.
 
-Per informazioni dettagliate sull'utilizzo di espressioni regolari di .NET Framework, vedere la sezione relativa alle [http://go.microsoft.com/fwlink/p/?linkId=140927](http://go.microsoft.com/fwlink/p/?linkid=140927)espressioni regolari di .NET Framework all'indirizzo.
+Per informazioni dettagliate sull'utilizzo di espressioni regolari di .NET Framework, vedere la sezione relativa alle [https://go.microsoft.com/fwlink/p/?linkId=140927](https://go.microsoft.com/fwlink/p/?linkid=140927)espressioni regolari di .NET Framework all'indirizzo.
 
 </div>
 
