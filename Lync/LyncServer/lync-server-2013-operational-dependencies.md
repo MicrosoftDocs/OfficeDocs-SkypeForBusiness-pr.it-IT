@@ -12,20 +12,20 @@ ms:contentKeyID: 63969597
 ms.date: 05/16/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 861d927053e05c395c39118910032df41566b32e
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 9901d664f667dce2e669b9f20e040b6b2b7ff1a1
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42034076"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42153476"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="operational-dependencies-in-lync-server-2013"></a><span data-ttu-id="697e1-102">Dipendenze operative in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="697e1-102">Operational dependencies in Lync Server 2013</span></span>
+# <a name="operational-dependencies-in-lync-server-2013"></a><span data-ttu-id="9a45a-102">Dipendenze operative in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9a45a-102">Operational dependencies in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "42034076"
 
 <span> </span>
 
-<span data-ttu-id="697e1-103">_**Ultimo argomento modificato:** 2015-05-15_</span><span class="sxs-lookup"><span data-stu-id="697e1-103">_**Topic Last Modified:** 2015-05-15_</span></span>
+<span data-ttu-id="9a45a-103">_**Ultimo argomento modificato:** 2015-05-15_</span><span class="sxs-lookup"><span data-stu-id="9a45a-103">_**Topic Last Modified:** 2015-05-15_</span></span>
 
-<span data-ttu-id="697e1-104">L'architettura di riferimento descritta in questo documento consentirà di disporre di una distribuzione di Lync Server 2013 che non solo si adatta ai requisiti dell'organizzazione, ma è stata architettata secondo le procedure consigliate di Microsoft.</span><span class="sxs-lookup"><span data-stu-id="697e1-104">The Reference Architecture discussed in this document will help ensure that you have a Lync Server 2013 deployment that not only scales to the organization’s requirements but is architected as per Microsoft best practices.</span></span> <span data-ttu-id="697e1-105">È possibile che l'implementazione di Lync Server 2013 sia un servizio dinamico e, come qualsiasi altro servizio nell'organizzazione, richiede ancora il monitoraggio e la gestione proattiva per mantenere elevato il livello di disponibilità del servizio e la qualità del servizio per l'azienda.</span><span class="sxs-lookup"><span data-stu-id="697e1-105">Be that as it may the Lync Server 2013 implementation is a dynamic service and like any other service in the enterprise still requires monitoring and proactive management to maintain high level of service availability and service quality to the business.</span></span>
+<span data-ttu-id="9a45a-104">L'architettura di riferimento descritta in questo documento consentirà di disporre di una distribuzione di Lync Server 2013 che non solo si adatta ai requisiti dell'organizzazione, ma è stata architettata secondo le procedure consigliate di Microsoft.</span><span class="sxs-lookup"><span data-stu-id="9a45a-104">The Reference Architecture discussed in this document will help ensure that you have a Lync Server 2013 deployment that not only scales to the organization’s requirements but is architected as per Microsoft best practices.</span></span> <span data-ttu-id="9a45a-105">È possibile che l'implementazione di Lync Server 2013 sia un servizio dinamico e, come qualsiasi altro servizio nell'organizzazione, richiede ancora il monitoraggio e la gestione proattiva per mantenere elevato il livello di disponibilità del servizio e la qualità del servizio per l'azienda.</span><span class="sxs-lookup"><span data-stu-id="9a45a-105">Be that as it may the Lync Server 2013 implementation is a dynamic service and like any other service in the enterprise still requires monitoring and proactive management to maintain high level of service availability and service quality to the business.</span></span>
 
-<span data-ttu-id="697e1-106">Dato che Lync Server 2013 diventa profondamente radicato nell'attività quotidiana dell'organizzazione, è importante che il servizio sia gestito da una gestione accurata e tangibile del livello di servizio.</span><span class="sxs-lookup"><span data-stu-id="697e1-106">As Lync Server 2013 becomes deeply ingrained in the organization’s everyday business it is important that the service be managed by accurate and tangible service level management.</span></span> <span data-ttu-id="697e1-107">L'architettura di sistema di Lync può diventare complessa e molto integrata e per mantenere una gestione dei livelli di servizio efficace e stabilire SLA per Lync Server 2013 diventa fondamentale comprendere le dipendenze del sistema su altre piattaforme e server.</span><span class="sxs-lookup"><span data-stu-id="697e1-107">The Lync system architecture can become complex and very integrated and in order to maintain effective service level management and establish SLAs for Lync Server 2013 it becomes critical to understand the system’s dependencies on other platforms and servers.</span></span> <span data-ttu-id="697e1-108">Altrettanto importante è tenere presente che i servizi aziendali, ad esempio le applicazioni integrate vocali e UC, diventano dipendenti da Lync.</span><span class="sxs-lookup"><span data-stu-id="697e1-108">Equally important is to note which business services, such as voice and UC integrated applications, become dependent on Lync.</span></span>
+<span data-ttu-id="9a45a-106">Dato che Lync Server 2013 diventa profondamente radicato nell'attività quotidiana dell'organizzazione, è importante che il servizio sia gestito da una gestione accurata e tangibile del livello di servizio.</span><span class="sxs-lookup"><span data-stu-id="9a45a-106">As Lync Server 2013 becomes deeply ingrained in the organization’s everyday business it is important that the service be managed by accurate and tangible service level management.</span></span> <span data-ttu-id="9a45a-107">L'architettura di sistema di Lync può diventare complessa e molto integrata e per mantenere una gestione dei livelli di servizio efficace e stabilire SLA per Lync Server 2013 diventa fondamentale comprendere le dipendenze del sistema su altre piattaforme e server.</span><span class="sxs-lookup"><span data-stu-id="9a45a-107">The Lync system architecture can become complex and very integrated and in order to maintain effective service level management and establish SLAs for Lync Server 2013 it becomes critical to understand the system’s dependencies on other platforms and servers.</span></span> <span data-ttu-id="9a45a-108">Altrettanto importante è tenere presente che i servizi aziendali, ad esempio le applicazioni integrate vocali e UC, diventano dipendenti da Lync.</span><span class="sxs-lookup"><span data-stu-id="9a45a-108">Equally important is to note which business services, such as voice and UC integrated applications, become dependent on Lync.</span></span>
 
-<span data-ttu-id="697e1-109">Lync Server 2013 deve essere stabilito notando tutte le dipendenze suddette.</span><span class="sxs-lookup"><span data-stu-id="697e1-109">Lync Server 2013 must be established noting all the said dependencies.</span></span> <span data-ttu-id="697e1-110">La mappa dei servizi consentirà di formulare un SLA tra Lync e il relativo servizio dipendente e di fornire un punto di partenza per la negoziazione del contratto di servizio.</span><span class="sxs-lookup"><span data-stu-id="697e1-110">The service map will allow you to formulate a SLA between Lync and its dependent service and provide a starting place for SLA negotiation.</span></span>
+<span data-ttu-id="9a45a-109">Lync Server 2013 deve essere stabilito notando tutte le dipendenze suddette.</span><span class="sxs-lookup"><span data-stu-id="9a45a-109">Lync Server 2013 must be established noting all the said dependencies.</span></span> <span data-ttu-id="9a45a-110">La mappa dei servizi consentirà di formulare un SLA tra Lync e il relativo servizio dipendente e di fornire un punto di partenza per la negoziazione del contratto di servizio.</span><span class="sxs-lookup"><span data-stu-id="9a45a-110">The service map will allow you to formulate a SLA between Lync and its dependent service and provide a starting place for SLA negotiation.</span></span>
 
-<span data-ttu-id="697e1-111">Nella tabella seguente sono elencati i servizi di dipendenza tipici per un'infrastruttura di Lync.</span><span class="sxs-lookup"><span data-stu-id="697e1-111">The following table lists the typical dependency services for a Lync infrastructure.</span></span> <span data-ttu-id="697e1-112">Ognuna di queste tecnologie deve disporre di un monitoraggio proattivo.</span><span class="sxs-lookup"><span data-stu-id="697e1-112">Each of these technologies should have its own proactive monitoring.</span></span>
+<span data-ttu-id="9a45a-111">Nella tabella seguente sono elencati i servizi di dipendenza tipici per un'infrastruttura di Lync.</span><span class="sxs-lookup"><span data-stu-id="9a45a-111">The following table lists the typical dependency services for a Lync infrastructure.</span></span> <span data-ttu-id="9a45a-112">Ognuna di queste tecnologie deve disporre di un monitoraggio proattivo.</span><span class="sxs-lookup"><span data-stu-id="9a45a-112">Each of these technologies should have its own proactive monitoring.</span></span>
 
-### <a name="typical-dependency-services"></a><span data-ttu-id="697e1-113">Servizi di dipendenza tipici</span><span class="sxs-lookup"><span data-stu-id="697e1-113">Typical dependency services</span></span>
+### <a name="typical-dependency-services"></a><span data-ttu-id="9a45a-113">Servizi di dipendenza tipici</span><span class="sxs-lookup"><span data-stu-id="9a45a-113">Typical dependency services</span></span>
 
 <table>
 <colgroup>
@@ -54,72 +54,72 @@ ms.locfileid: "42034076"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="697e1-114">Servizio di dipendenza</span><span class="sxs-lookup"><span data-stu-id="697e1-114">Dependency Service</span></span></th>
+<th><span data-ttu-id="9a45a-114">Servizio di dipendenza</span><span class="sxs-lookup"><span data-stu-id="9a45a-114">Dependency Service</span></span></th>
 <th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-115">Sistemi operativi</span><span class="sxs-lookup"><span data-stu-id="697e1-115">Operating systems</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-115">Sistemi operativi</span><span class="sxs-lookup"><span data-stu-id="9a45a-115">Operating systems</span></span></p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="697e1-116">Hardware del server</span><span class="sxs-lookup"><span data-stu-id="697e1-116">Server Hardware</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-116">Hardware del server</span><span class="sxs-lookup"><span data-stu-id="9a45a-116">Server Hardware</span></span></p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-117">Active Directory</span><span class="sxs-lookup"><span data-stu-id="697e1-117">Active Directory</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-117">Active Directory</span><span class="sxs-lookup"><span data-stu-id="9a45a-117">Active Directory</span></span></p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="697e1-118">Infrastruttura a chiave pubblica</span><span class="sxs-lookup"><span data-stu-id="697e1-118">Public Key Infrastructure</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-118">Infrastruttura a chiave pubblica</span><span class="sxs-lookup"><span data-stu-id="9a45a-118">Public Key Infrastructure</span></span></p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-119">Domain Naming Service</span><span class="sxs-lookup"><span data-stu-id="697e1-119">Domain Naming Service</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-119">Domain Naming Service</span><span class="sxs-lookup"><span data-stu-id="9a45a-119">Domain Naming Service</span></span></p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="697e1-120">Servizi di database</span><span class="sxs-lookup"><span data-stu-id="697e1-120">Database Services</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-120">Servizi di database</span><span class="sxs-lookup"><span data-stu-id="9a45a-120">Database Services</span></span></p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-121">Servizi di archiviazione</span><span class="sxs-lookup"><span data-stu-id="697e1-121">Storage Services</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-121">Servizi di archiviazione</span><span class="sxs-lookup"><span data-stu-id="9a45a-121">Storage Services</span></span></p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="697e1-122">Gestione del sistema – monitoraggio e distribuzione</span><span class="sxs-lookup"><span data-stu-id="697e1-122">System Management – Monitoring and distribution</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-122">Gestione del sistema – monitoraggio e distribuzione</span><span class="sxs-lookup"><span data-stu-id="9a45a-122">System Management – Monitoring and distribution</span></span></p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-123">Servizi di sicurezza-antivirus</span><span class="sxs-lookup"><span data-stu-id="697e1-123">Security Services - Antivirus</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-123">Servizi di sicurezza-antivirus</span><span class="sxs-lookup"><span data-stu-id="9a45a-123">Security Services - Antivirus</span></span></p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="697e1-124">Infrastruttura di rete-Internet</span><span class="sxs-lookup"><span data-stu-id="697e1-124">Network Infrastructure - Internet</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-124">Infrastruttura di rete-Internet</span><span class="sxs-lookup"><span data-stu-id="9a45a-124">Network Infrastructure - Internet</span></span></p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-125">Infrastruttura di rete – interno (LAN/WAN)</span><span class="sxs-lookup"><span data-stu-id="697e1-125">Network Infrastructure – Internal (LAN/WAN)</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-125">Infrastruttura di rete – interno (LAN/WAN)</span><span class="sxs-lookup"><span data-stu-id="9a45a-125">Network Infrastructure – Internal (LAN/WAN)</span></span></p></td>
 <td></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="697e1-126">Infrastruttura di telefonia-IP-PBX e gateway</span><span class="sxs-lookup"><span data-stu-id="697e1-126">Telephony Infrastructure – IP-PBX and Gateways</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-126">Infrastruttura di telefonia-IP-PBX e gateway</span><span class="sxs-lookup"><span data-stu-id="9a45a-126">Telephony Infrastructure – IP-PBX and Gateways</span></span></p></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-127">Servizi cloud</span><span class="sxs-lookup"><span data-stu-id="697e1-127">Cloud Services</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-127">Servizi cloud</span><span class="sxs-lookup"><span data-stu-id="9a45a-127">Cloud Services</span></span></p></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="697e1-128">Si presuppone che l'organizzazione sia operativamente matura nell'esercizio delle funzioni di base di gestione del livello di servizio, ad esempio la gestione delle modifiche, degli incidenti e delle rilasci come prescritto dal MOF.</span><span class="sxs-lookup"><span data-stu-id="697e1-128">It is assumed that the organization is operationally mature in exercising basic service level management functions such as change, incident and release management as prescribed by the MOF.</span></span> <span data-ttu-id="697e1-129">La soluzione Lync deve essere adottata da queste funzioni ed essere soggetta agli stessi processi di gestione operativi.</span><span class="sxs-lookup"><span data-stu-id="697e1-129">The Lync solution should be adopted by these functions and become subject to the same operational management processes.</span></span>
+<span data-ttu-id="9a45a-128">Si presuppone che l'organizzazione sia operativamente matura nell'esercizio delle funzioni di base di gestione del livello di servizio, ad esempio la gestione delle modifiche, degli incidenti e delle rilasci come prescritto dal MOF.</span><span class="sxs-lookup"><span data-stu-id="9a45a-128">It is assumed that the organization is operationally mature in exercising basic service level management functions such as change, incident and release management as prescribed by the MOF.</span></span> <span data-ttu-id="9a45a-129">La soluzione Lync deve essere adottata da queste funzioni ed essere soggetta agli stessi processi di gestione operativi.</span><span class="sxs-lookup"><span data-stu-id="9a45a-129">The Lync solution should be adopted by these functions and become subject to the same operational management processes.</span></span>
 
-<span data-ttu-id="697e1-130">Basandosi sulle informazioni ottenute in alto, ora si ha una maggiore comprensione di ciò che può influire sul servizio Lync nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="697e1-130">Building on the information obtained above we now have a greater understanding of what can impact the Lync service in the enterprise.</span></span> <span data-ttu-id="697e1-131">Per garantire la disponibilità e la qualità dei servizi di Lync Server 2013, è necessario che gli strumenti di monitoraggio seguenti accompagnino la distribuzione dell'architettura di riferimento:</span><span class="sxs-lookup"><span data-stu-id="697e1-131">To help ensure Lync Server 2013 service availability and quality, the following monitoring tools must accompany the reference architecture deployment:</span></span>
+<span data-ttu-id="9a45a-130">Basandosi sulle informazioni ottenute in alto, ora si ha una maggiore comprensione di ciò che può influire sul servizio Lync nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="9a45a-130">Building on the information obtained above we now have a greater understanding of what can impact the Lync service in the enterprise.</span></span> <span data-ttu-id="9a45a-131">Per garantire la disponibilità e la qualità dei servizi di Lync Server 2013, è necessario che gli strumenti di monitoraggio seguenti accompagnino la distribuzione dell'architettura di riferimento:</span><span class="sxs-lookup"><span data-stu-id="9a45a-131">To help ensure Lync Server 2013 service availability and quality, the following monitoring tools must accompany the reference architecture deployment:</span></span>
 
-### <a name="monitoring-tools"></a><span data-ttu-id="697e1-132">Strumenti di monitoraggio</span><span class="sxs-lookup"><span data-stu-id="697e1-132">Monitoring tools</span></span>
+### <a name="monitoring-tools"></a><span data-ttu-id="9a45a-132">Strumenti di monitoraggio</span><span class="sxs-lookup"><span data-stu-id="9a45a-132">Monitoring tools</span></span>
 
 <table>
 <colgroup>
@@ -129,97 +129,97 @@ ms.locfileid: "42034076"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="697e1-133">Componente</span><span class="sxs-lookup"><span data-stu-id="697e1-133">Component</span></span></th>
-<th><span data-ttu-id="697e1-134">Descrizione</span><span class="sxs-lookup"><span data-stu-id="697e1-134">Description</span></span></th>
-<th><span data-ttu-id="697e1-135">Sito applicabile</span><span class="sxs-lookup"><span data-stu-id="697e1-135">Applicable Site</span></span></th>
+<th><span data-ttu-id="9a45a-133">Componente</span><span class="sxs-lookup"><span data-stu-id="9a45a-133">Component</span></span></th>
+<th><span data-ttu-id="9a45a-134">Descrizione</span><span class="sxs-lookup"><span data-stu-id="9a45a-134">Description</span></span></th>
+<th><span data-ttu-id="9a45a-135">Sito applicabile</span><span class="sxs-lookup"><span data-stu-id="9a45a-135">Applicable Site</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-136">Server di monitoraggio di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="697e1-136">Lync Server 2013 Monitoring Server</span></span></p></td>
-<td><p><span data-ttu-id="697e1-137">Distribuire almeno un ruolo del server di monitoraggio di Lync Server 2013 per sito centrale e configurare il pacchetto di report su qualità di esperienza (QoE).</span><span class="sxs-lookup"><span data-stu-id="697e1-137">Deploy at least one Lync Server 2013 Monitoring Server role per Central site and configure Quality of Experience (QoE) Reporting Pack.</span></span></p>
-<p><span data-ttu-id="697e1-138">Per ulteriori informazioni, vedere la documentazione relativa alla distribuzione di Lync Server 2013:</span><span class="sxs-lookup"><span data-stu-id="697e1-138">Refer to the Lync Server 2013 Deployment documentation for further details:</span></span></p>
-<p><span data-ttu-id="697e1-139"><a href="lync-server-2013-deploying-monitoring.md">Distribuzione del monitoraggio in Lync Server 2013</a></span><span class="sxs-lookup"><span data-stu-id="697e1-139"><a href="lync-server-2013-deploying-monitoring.md">Deploying monitoring in Lync Server 2013</a></span></span></p></td>
-<td><p><span data-ttu-id="697e1-140">Siti centrali</span><span class="sxs-lookup"><span data-stu-id="697e1-140">Central sites</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-136">Server di monitoraggio di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9a45a-136">Lync Server 2013 Monitoring Server</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-137">Distribuire almeno un ruolo del server di monitoraggio di Lync Server 2013 per sito centrale e configurare il pacchetto di report su qualità di esperienza (QoE).</span><span class="sxs-lookup"><span data-stu-id="9a45a-137">Deploy at least one Lync Server 2013 Monitoring Server role per Central site and configure Quality of Experience (QoE) Reporting Pack.</span></span></p>
+<p><span data-ttu-id="9a45a-138">Per ulteriori informazioni, vedere la documentazione relativa alla distribuzione di Lync Server 2013:</span><span class="sxs-lookup"><span data-stu-id="9a45a-138">Refer to the Lync Server 2013 Deployment documentation for further details:</span></span></p>
+<p><span data-ttu-id="9a45a-139"><a href="lync-server-2013-deploying-monitoring.md">Distribuzione del monitoraggio in Lync Server 2013</a></span><span class="sxs-lookup"><span data-stu-id="9a45a-139"><a href="lync-server-2013-deploying-monitoring.md">Deploying monitoring in Lync Server 2013</a></span></span></p></td>
+<td><p><span data-ttu-id="9a45a-140">Siti centrali</span><span class="sxs-lookup"><span data-stu-id="9a45a-140">Central sites</span></span></p></td>
 </tr>
 <tr class="even">
 <td></td>
-<td><p><span data-ttu-id="697e1-141">Legare ogni pool all'istanza più vicina del ruolo Monitoring Server.</span><span class="sxs-lookup"><span data-stu-id="697e1-141">Tether each pool to its nearest instance of the Monitoring Server role.</span></span></p></td>
-<td><p><span data-ttu-id="697e1-142">Siti centrali</span><span class="sxs-lookup"><span data-stu-id="697e1-142">Central sites</span></span></p>
-<p><span data-ttu-id="697e1-143">Siti di succursale</span><span class="sxs-lookup"><span data-stu-id="697e1-143">Branch sites</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-141">Legare ogni pool all'istanza più vicina del ruolo Monitoring Server.</span><span class="sxs-lookup"><span data-stu-id="9a45a-141">Tether each pool to its nearest instance of the Monitoring Server role.</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-142">Siti centrali</span><span class="sxs-lookup"><span data-stu-id="9a45a-142">Central sites</span></span></p>
+<p><span data-ttu-id="9a45a-143">Siti di succursale</span><span class="sxs-lookup"><span data-stu-id="9a45a-143">Branch sites</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-144">System Center Operations Manager 2012</span><span class="sxs-lookup"><span data-stu-id="697e1-144">System Center Operations Manager 2012</span></span></p></td>
-<td><p><span data-ttu-id="697e1-145">System Center Operations Manager 2012 con Microsoft Lync Server 2013 Management Pack (MP) importato.</span><span class="sxs-lookup"><span data-stu-id="697e1-145">System Center Operations Manager 2012 with the Microsoft Lync Server 2013 Management Pack (MP) imported.</span></span></p>
-<p><span data-ttu-id="697e1-146">Il Management Pack implementa il registro eventi tradizionale e la strumentazione basata sui contatori delle prestazioni viene utilizzata e abilitando la strumentazione appena disponibile in Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="697e1-146">The Management Pack implements traditional Event Log and Performance counter based instrumentation is utilized as well as enabling newly available instrumentation in Lync Server 2013.</span></span></p></td>
-<td><p><span data-ttu-id="697e1-147">Siti centrali</span><span class="sxs-lookup"><span data-stu-id="697e1-147">Central sites</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-144">System Center Operations Manager 2012</span><span class="sxs-lookup"><span data-stu-id="9a45a-144">System Center Operations Manager 2012</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-145">System Center Operations Manager 2012 con Microsoft Lync Server 2013 Management Pack (MP) importato.</span><span class="sxs-lookup"><span data-stu-id="9a45a-145">System Center Operations Manager 2012 with the Microsoft Lync Server 2013 Management Pack (MP) imported.</span></span></p>
+<p><span data-ttu-id="9a45a-146">Il Management Pack implementa il registro eventi tradizionale e la strumentazione basata sui contatori delle prestazioni viene utilizzata e abilitando la strumentazione appena disponibile in Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="9a45a-146">The Management Pack implements traditional Event Log and Performance counter based instrumentation is utilized as well as enabling newly available instrumentation in Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-147">Siti centrali</span><span class="sxs-lookup"><span data-stu-id="9a45a-147">Central sites</span></span></p></td>
 </tr>
 <tr class="even">
 <td></td>
-<td><p><span data-ttu-id="697e1-148">Assicurarsi che l'individuazione centrale per l'individuazione di ruoli e componenti che devono essere monitorati sia completata automaticamente in base a uno script di individuazione centrale che legge il documento della topologia pubblicato nel database di gestione centrale.</span><span class="sxs-lookup"><span data-stu-id="697e1-148">Make sure that Central Discovery to discovery of roles and components that need to be monitored are automatically completed based on a central discovery script that reads the topology document published in Central Management Database.</span></span></p></td>
-<td><p><span data-ttu-id="697e1-149">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="697e1-149">Central Site</span></span></p>
-<p><span data-ttu-id="697e1-150">Sito di succursale</span><span class="sxs-lookup"><span data-stu-id="697e1-150">Branch Site</span></span></p>
-<p><span data-ttu-id="697e1-151">Sito perimetrale</span><span class="sxs-lookup"><span data-stu-id="697e1-151">Edge Site</span></span></p></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td><p><span data-ttu-id="697e1-152">Distribuire gli agenti di System Centre Operations Manager 2007 a tutti i server distribuiti che eseguono Lync Server.</span><span class="sxs-lookup"><span data-stu-id="697e1-152">Deploy System Centre Operations Manager 2007 agents to all deployed servers running Lync Server.</span></span></p></td>
-<td><p><span data-ttu-id="697e1-153">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="697e1-153">Central Site</span></span></p>
-<p><span data-ttu-id="697e1-154">Sito di succursale</span><span class="sxs-lookup"><span data-stu-id="697e1-154">Branch Site</span></span></p>
-<p><span data-ttu-id="697e1-155">Sito perimetrale</span><span class="sxs-lookup"><span data-stu-id="697e1-155">Edge Site</span></span></p></td>
-</tr>
-<tr class="even">
-<td></td>
-<td><p><span data-ttu-id="697e1-156">Verificare che gli avvisi con priorità siano configurati per la notifica:</span><span class="sxs-lookup"><span data-stu-id="697e1-156">Make sure Prioritized Alerts are configured for notification:</span></span></p>
-<p><span data-ttu-id="697e1-157">Avvisi con priorità alta</span><span class="sxs-lookup"><span data-stu-id="697e1-157">High Priority Alerts</span></span></p>
-<p><span data-ttu-id="697e1-158">Avvisi di priorità media</span><span class="sxs-lookup"><span data-stu-id="697e1-158">Medium Priority Alerts</span></span></p>
-<p><span data-ttu-id="697e1-159">Altri avvisi.</span><span class="sxs-lookup"><span data-stu-id="697e1-159">Other Alerts.</span></span></p></td>
-<td><p><span data-ttu-id="697e1-160">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="697e1-160">Central Site</span></span></p>
-<p><span data-ttu-id="697e1-161">Sito di succursale</span><span class="sxs-lookup"><span data-stu-id="697e1-161">Branch Site</span></span></p>
-<p><span data-ttu-id="697e1-162">Sito perimetrale</span><span class="sxs-lookup"><span data-stu-id="697e1-162">Edge Site</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-148">Assicurarsi che l'individuazione centrale per l'individuazione di ruoli e componenti che devono essere monitorati sia completata automaticamente in base a uno script di individuazione centrale che legge il documento della topologia pubblicato nel database di gestione centrale.</span><span class="sxs-lookup"><span data-stu-id="9a45a-148">Make sure that Central Discovery to discovery of roles and components that need to be monitored are automatically completed based on a central discovery script that reads the topology document published in Central Management Database.</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-149">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="9a45a-149">Central Site</span></span></p>
+<p><span data-ttu-id="9a45a-150">Sito di succursale</span><span class="sxs-lookup"><span data-stu-id="9a45a-150">Branch Site</span></span></p>
+<p><span data-ttu-id="9a45a-151">Sito perimetrale</span><span class="sxs-lookup"><span data-stu-id="9a45a-151">Edge Site</span></span></p></td>
 </tr>
 <tr class="odd">
 <td></td>
-<td><p><span data-ttu-id="697e1-163">Configurare il monitoraggio delle porte per la distribuzione.</span><span class="sxs-lookup"><span data-stu-id="697e1-163">Configure Port monitoring for your deployment.</span></span></p></td>
-<td><p><span data-ttu-id="697e1-164">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="697e1-164">Central Site</span></span></p>
-<p><span data-ttu-id="697e1-165">Sito di succursale</span><span class="sxs-lookup"><span data-stu-id="697e1-165">Branch Site</span></span></p>
-<p><span data-ttu-id="697e1-166">Sito perimetrale</span><span class="sxs-lookup"><span data-stu-id="697e1-166">Edge Site</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-152">Distribuire gli agenti di System Centre Operations Manager 2007 a tutti i server distribuiti che eseguono Lync Server.</span><span class="sxs-lookup"><span data-stu-id="9a45a-152">Deploy System Centre Operations Manager 2007 agents to all deployed servers running Lync Server.</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-153">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="9a45a-153">Central Site</span></span></p>
+<p><span data-ttu-id="9a45a-154">Sito di succursale</span><span class="sxs-lookup"><span data-stu-id="9a45a-154">Branch Site</span></span></p>
+<p><span data-ttu-id="9a45a-155">Sito perimetrale</span><span class="sxs-lookup"><span data-stu-id="9a45a-155">Edge Site</span></span></p></td>
 </tr>
 <tr class="even">
 <td></td>
-<td><p><span data-ttu-id="697e1-167">Configurare il monitoraggio degli URL per la distribuzione</span><span class="sxs-lookup"><span data-stu-id="697e1-167">Configure URL monitoring for your deployment</span></span></p></td>
-<td><p><span data-ttu-id="697e1-168">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="697e1-168">Central Site</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-156">Verificare che gli avvisi con priorità siano configurati per la notifica:</span><span class="sxs-lookup"><span data-stu-id="9a45a-156">Make sure Prioritized Alerts are configured for notification:</span></span></p>
+<p><span data-ttu-id="9a45a-157">Avvisi con priorità alta</span><span class="sxs-lookup"><span data-stu-id="9a45a-157">High Priority Alerts</span></span></p>
+<p><span data-ttu-id="9a45a-158">Avvisi di priorità media</span><span class="sxs-lookup"><span data-stu-id="9a45a-158">Medium Priority Alerts</span></span></p>
+<p><span data-ttu-id="9a45a-159">Altri avvisi.</span><span class="sxs-lookup"><span data-stu-id="9a45a-159">Other Alerts.</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-160">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="9a45a-160">Central Site</span></span></p>
+<p><span data-ttu-id="9a45a-161">Sito di succursale</span><span class="sxs-lookup"><span data-stu-id="9a45a-161">Branch Site</span></span></p>
+<p><span data-ttu-id="9a45a-162">Sito perimetrale</span><span class="sxs-lookup"><span data-stu-id="9a45a-162">Edge Site</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-169">Integrazione di Lync e System Center Operations Manager</span><span class="sxs-lookup"><span data-stu-id="697e1-169">Lync and System Center Operations Manager integration</span></span></p></td>
-<td><p><span data-ttu-id="697e1-170">Distribuire l'affidabilità delle chiamate e la qualità multimediale MonitoringCall affidabilità e monitoraggio della qualità multimediale utilizzare il computer Monitoring Server come nodo Watcher per monitorare l'affidabilità delle chiamate e la qualità multimediale di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="697e1-170">Deploy Call Reliability and Media Quality MonitoringCall reliability and media quality monitoring use the Monitoring Server computer as their watcher node to monitor call reliability and media quality of Lync Server.</span></span> <span data-ttu-id="697e1-171">Entrambe queste funzionalità eseguono una query sui database del Monitoring Server per eseguire l'analisi.</span><span class="sxs-lookup"><span data-stu-id="697e1-171">Both of these features query the Monitoring Server databases to do analysis.</span></span></p></td>
-<td><p><span data-ttu-id="697e1-172">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="697e1-172">Central Site</span></span></p>
-<p><span data-ttu-id="697e1-173">Sito di succursale</span><span class="sxs-lookup"><span data-stu-id="697e1-173">Branch Site</span></span></p></td>
+<td></td>
+<td><p><span data-ttu-id="9a45a-163">Configurare il monitoraggio delle porte per la distribuzione.</span><span class="sxs-lookup"><span data-stu-id="9a45a-163">Configure Port monitoring for your deployment.</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-164">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="9a45a-164">Central Site</span></span></p>
+<p><span data-ttu-id="9a45a-165">Sito di succursale</span><span class="sxs-lookup"><span data-stu-id="9a45a-165">Branch Site</span></span></p>
+<p><span data-ttu-id="9a45a-166">Sito perimetrale</span><span class="sxs-lookup"><span data-stu-id="9a45a-166">Edge Site</span></span></p></td>
 </tr>
 <tr class="even">
 <td></td>
-<td><p><span data-ttu-id="697e1-174">Verificare che le soglie di avviso per la qualità multimediale siano configurate correttamente.</span><span class="sxs-lookup"><span data-stu-id="697e1-174">Ensure Media Quality warning thresholds are accurately configured.</span></span> <span data-ttu-id="697e1-175">Nella tabella seguente vengono indicati i punteggi massimi di opinione della rete media per codec.</span><span class="sxs-lookup"><span data-stu-id="697e1-175">The following table indicates the maximum Network Mean Opinion Scores by Codec.</span></span> <span data-ttu-id="697e1-176">In produzione questi punteggi devono essere monitorati per un periodo stabilito e devono essere stabilite soglie accettabili in base ai punteggi di NMOS specifici dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="697e1-176">In production these scores should be monitored for a set period and acceptable thresholds must be established based on the organization specific NMOS scores.</span></span></p></td>
-<td><p><span data-ttu-id="697e1-177">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="697e1-177">Central Site</span></span></p>
-<p><span data-ttu-id="697e1-178">Sito di succursale</span><span class="sxs-lookup"><span data-stu-id="697e1-178">Branch Site</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-167">Configurare il monitoraggio degli URL per la distribuzione</span><span class="sxs-lookup"><span data-stu-id="9a45a-167">Configure URL monitoring for your deployment</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-168">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="9a45a-168">Central Site</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-179">Analizzatore delle transazioni sintetiche di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="697e1-179">Lync Server 2013 Synthetic Transaction Watcher</span></span></p></td>
-<td><p><span data-ttu-id="697e1-180">Distribuire un server Lync dedicato come Watcher delle transazioni sintetiche.</span><span class="sxs-lookup"><span data-stu-id="697e1-180">Deploy a dedicated Lync Server to be a synthetic transaction watcher.</span></span></p>
-<p><span data-ttu-id="697e1-181">Le transazioni sintetiche sono cmdlet di Lync Server 2013 di Windows PowerShell che vengono attivati automaticamente dal Management Pack su un intervallo predefinito.</span><span class="sxs-lookup"><span data-stu-id="697e1-181">Synthetic transactions are Lync Server 2013 Windows PowerShell cmdlets that are automatically triggered by the management pack on a predefined interval.</span></span> <span data-ttu-id="697e1-182">Queste operazioni vengono eseguite in un nodo di monitoraggio delle transazioni sintetico che è un server designato dall'amministratore responsabile dell'individuazione e dell'esecuzione dei token di servizio per ogni pool.</span><span class="sxs-lookup"><span data-stu-id="697e1-182">These are executed on a synthetic transaction watcher node which is an administrator designated server responsible for discovery and execution of STs for each pool.</span></span></p>
-<p><span data-ttu-id="697e1-183">Non è consigliabile utilizzare un server Microsoft Lync Server 2013 esistente come nodo di Watcher delle transazioni sintetiche.</span><span class="sxs-lookup"><span data-stu-id="697e1-183">We do not recommend that you use an existing Microsoft Lync Server 2013 server as a synthetic transaction watcher node.</span></span> <span data-ttu-id="697e1-184">Ciò è dovuto ai requisiti di utilizzo della CPU e della memoria elevati per l'esecuzione delle STs.</span><span class="sxs-lookup"><span data-stu-id="697e1-184">This is due to the high CPU/memory usage requirements for running STs.</span></span> <span data-ttu-id="697e1-185">Utilizzare un nuovo computer server (o un server virtuale) per il nodo Watcher delle transazioni sintetiche.</span><span class="sxs-lookup"><span data-stu-id="697e1-185">Use a new server computer (or a virtual server) for the synthetic transaction watcher node.</span></span></p></td>
-<td><p><span data-ttu-id="697e1-186">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="697e1-186">Central Site</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-169">Integrazione di Lync e System Center Operations Manager</span><span class="sxs-lookup"><span data-stu-id="9a45a-169">Lync and System Center Operations Manager integration</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-170">Distribuire l'affidabilità delle chiamate e la qualità multimediale MonitoringCall affidabilità e monitoraggio della qualità multimediale utilizzare il computer Monitoring Server come nodo Watcher per monitorare l'affidabilità delle chiamate e la qualità multimediale di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="9a45a-170">Deploy Call Reliability and Media Quality MonitoringCall reliability and media quality monitoring use the Monitoring Server computer as their watcher node to monitor call reliability and media quality of Lync Server.</span></span> <span data-ttu-id="9a45a-171">Entrambe queste funzionalità eseguono una query sui database del Monitoring Server per eseguire l'analisi.</span><span class="sxs-lookup"><span data-stu-id="9a45a-171">Both of these features query the Monitoring Server databases to do analysis.</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-172">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="9a45a-172">Central Site</span></span></p>
+<p><span data-ttu-id="9a45a-173">Sito di succursale</span><span class="sxs-lookup"><span data-stu-id="9a45a-173">Branch Site</span></span></p></td>
 </tr>
 <tr class="even">
 <td></td>
-<td><p><span data-ttu-id="697e1-187">Nodo di Watcher per la distribuzione di transazioni sintetiche.</span><span class="sxs-lookup"><span data-stu-id="697e1-187">Deploying synthetic transactions watcher node.</span></span></p>
-<p><span data-ttu-id="697e1-188">Fare riferimento al documento MonitoringCS_withSCOM. docx dalla documentazione di UCTAP Connect.</span><span class="sxs-lookup"><span data-stu-id="697e1-188">Refer to the MonitoringCS_withSCOM.docx document from UCTAP connect documentation.</span></span></p></td>
-<td><p><span data-ttu-id="697e1-189">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="697e1-189">Central Site</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-174">Verificare che le soglie di avviso per la qualità multimediale siano configurate correttamente.</span><span class="sxs-lookup"><span data-stu-id="9a45a-174">Ensure Media Quality warning thresholds are accurately configured.</span></span> <span data-ttu-id="9a45a-175">Nella tabella seguente vengono indicati i punteggi massimi di opinione della rete media per codec.</span><span class="sxs-lookup"><span data-stu-id="9a45a-175">The following table indicates the maximum Network Mean Opinion Scores by Codec.</span></span> <span data-ttu-id="9a45a-176">In produzione questi punteggi devono essere monitorati per un periodo stabilito e devono essere stabilite soglie accettabili in base ai punteggi di NMOS specifici dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="9a45a-176">In production these scores should be monitored for a set period and acceptable thresholds must be established based on the organization specific NMOS scores.</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-177">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="9a45a-177">Central Site</span></span></p>
+<p><span data-ttu-id="9a45a-178">Sito di succursale</span><span class="sxs-lookup"><span data-stu-id="9a45a-178">Branch Site</span></span></p></td>
+</tr>
+<tr class="odd">
+<td><p><span data-ttu-id="9a45a-179">Analizzatore delle transazioni sintetiche di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9a45a-179">Lync Server 2013 Synthetic Transaction Watcher</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-180">Distribuire un server Lync dedicato come Watcher delle transazioni sintetiche.</span><span class="sxs-lookup"><span data-stu-id="9a45a-180">Deploy a dedicated Lync Server to be a synthetic transaction watcher.</span></span></p>
+<p><span data-ttu-id="9a45a-181">Le transazioni sintetiche sono cmdlet di Lync Server 2013 di Windows PowerShell che vengono attivati automaticamente dal Management Pack su un intervallo predefinito.</span><span class="sxs-lookup"><span data-stu-id="9a45a-181">Synthetic transactions are Lync Server 2013 Windows PowerShell cmdlets that are automatically triggered by the management pack on a predefined interval.</span></span> <span data-ttu-id="9a45a-182">Queste operazioni vengono eseguite in un nodo di monitoraggio delle transazioni sintetico che è un server designato dall'amministratore responsabile dell'individuazione e dell'esecuzione dei token di servizio per ogni pool.</span><span class="sxs-lookup"><span data-stu-id="9a45a-182">These are executed on a synthetic transaction watcher node which is an administrator designated server responsible for discovery and execution of STs for each pool.</span></span></p>
+<p><span data-ttu-id="9a45a-183">Non è consigliabile utilizzare un server Microsoft Lync Server 2013 esistente come nodo di Watcher delle transazioni sintetiche.</span><span class="sxs-lookup"><span data-stu-id="9a45a-183">We do not recommend that you use an existing Microsoft Lync Server 2013 server as a synthetic transaction watcher node.</span></span> <span data-ttu-id="9a45a-184">Ciò è dovuto ai requisiti di utilizzo della CPU e della memoria elevati per l'esecuzione delle STs.</span><span class="sxs-lookup"><span data-stu-id="9a45a-184">This is due to the high CPU/memory usage requirements for running STs.</span></span> <span data-ttu-id="9a45a-185">Utilizzare un nuovo computer server (o un server virtuale) per il nodo Watcher delle transazioni sintetiche.</span><span class="sxs-lookup"><span data-stu-id="9a45a-185">Use a new server computer (or a virtual server) for the synthetic transaction watcher node.</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-186">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="9a45a-186">Central Site</span></span></p></td>
+</tr>
+<tr class="even">
+<td></td>
+<td><p><span data-ttu-id="9a45a-187">Nodo di Watcher per la distribuzione di transazioni sintetiche.</span><span class="sxs-lookup"><span data-stu-id="9a45a-187">Deploying synthetic transactions watcher node.</span></span></p>
+<p><span data-ttu-id="9a45a-188">Fare riferimento al documento MonitoringCS_withSCOM. docx dalla documentazione di UCTAP Connect.</span><span class="sxs-lookup"><span data-stu-id="9a45a-188">Refer to the MonitoringCS_withSCOM.docx document from UCTAP connect documentation.</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-189">Sito centrale</span><span class="sxs-lookup"><span data-stu-id="9a45a-189">Central Site</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-### <a name="maximum-network-mos-scores-per-codec"></a><span data-ttu-id="697e1-190">Massimi punteggi MOS di rete per codec</span><span class="sxs-lookup"><span data-stu-id="697e1-190">Maximum Network MOS scores per codec</span></span>
+### <a name="maximum-network-mos-scores-per-codec"></a><span data-ttu-id="9a45a-190">Massimi punteggi MOS di rete per codec</span><span class="sxs-lookup"><span data-stu-id="9a45a-190">Maximum Network MOS scores per codec</span></span>
 
 <table>
 <colgroup>
@@ -229,42 +229,42 @@ ms.locfileid: "42034076"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="697e1-191">Scenario</span><span class="sxs-lookup"><span data-stu-id="697e1-191">Scenario</span></span></th>
-<th><span data-ttu-id="697e1-192">Codec</span><span class="sxs-lookup"><span data-stu-id="697e1-192">Codec</span></span></th>
-<th><span data-ttu-id="697e1-193">Max NMOS</span><span class="sxs-lookup"><span data-stu-id="697e1-193">Max NMOS</span></span></th>
+<th><span data-ttu-id="9a45a-191">Scenario</span><span class="sxs-lookup"><span data-stu-id="9a45a-191">Scenario</span></span></th>
+<th><span data-ttu-id="9a45a-192">Codec</span><span class="sxs-lookup"><span data-stu-id="9a45a-192">Codec</span></span></th>
+<th><span data-ttu-id="9a45a-193">Max NMOS</span><span class="sxs-lookup"><span data-stu-id="9a45a-193">Max NMOS</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-194">Chiamata UC-UC</span><span class="sxs-lookup"><span data-stu-id="697e1-194">UC-UC call</span></span></p></td>
-<td><p><span data-ttu-id="697e1-195">RTAudio WB</span><span class="sxs-lookup"><span data-stu-id="697e1-195">RTAudio WB</span></span></p></td>
-<td><p><span data-ttu-id="697e1-196">4.10</span><span class="sxs-lookup"><span data-stu-id="697e1-196">4.10</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-194">Chiamata UC-UC</span><span class="sxs-lookup"><span data-stu-id="9a45a-194">UC-UC call</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-195">RTAudio WB</span><span class="sxs-lookup"><span data-stu-id="9a45a-195">RTAudio WB</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-196">4.10</span><span class="sxs-lookup"><span data-stu-id="9a45a-196">4.10</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="697e1-197">Chiamata UC-UC</span><span class="sxs-lookup"><span data-stu-id="697e1-197">UC-UC call</span></span></p></td>
-<td><p><span data-ttu-id="697e1-198">RTAudio NB</span><span class="sxs-lookup"><span data-stu-id="697e1-198">RTAudio NB</span></span></p></td>
-<td><p><span data-ttu-id="697e1-199">2,95</span><span class="sxs-lookup"><span data-stu-id="697e1-199">2.95</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-197">Chiamata UC-UC</span><span class="sxs-lookup"><span data-stu-id="9a45a-197">UC-UC call</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-198">RTAudio NB</span><span class="sxs-lookup"><span data-stu-id="9a45a-198">RTAudio NB</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-199">2,95</span><span class="sxs-lookup"><span data-stu-id="9a45a-199">2.95</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-200">Conferenza telefonica</span><span class="sxs-lookup"><span data-stu-id="697e1-200">Conference call</span></span></p></td>
-<td><p><span data-ttu-id="697e1-201">Sirena</span><span class="sxs-lookup"><span data-stu-id="697e1-201">Siren</span></span></p></td>
-<td><p><span data-ttu-id="697e1-202">3,72</span><span class="sxs-lookup"><span data-stu-id="697e1-202">3.72</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-200">Conferenza telefonica</span><span class="sxs-lookup"><span data-stu-id="9a45a-200">Conference call</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-201">Sirena</span><span class="sxs-lookup"><span data-stu-id="9a45a-201">Siren</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-202">3,72</span><span class="sxs-lookup"><span data-stu-id="9a45a-202">3.72</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="697e1-203">Chiamata UC-PSTN</span><span class="sxs-lookup"><span data-stu-id="697e1-203">UC-PSTN call</span></span></p></td>
-<td><p><span data-ttu-id="697e1-204">RTAudio NB</span><span class="sxs-lookup"><span data-stu-id="697e1-204">RTAudio NB</span></span></p></td>
-<td><p><span data-ttu-id="697e1-205">2,95</span><span class="sxs-lookup"><span data-stu-id="697e1-205">2.95</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-203">Chiamata UC-PSTN</span><span class="sxs-lookup"><span data-stu-id="9a45a-203">UC-PSTN call</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-204">RTAudio NB</span><span class="sxs-lookup"><span data-stu-id="9a45a-204">RTAudio NB</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-205">2,95</span><span class="sxs-lookup"><span data-stu-id="9a45a-205">2.95</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="697e1-206">Chiamata UC-PSTN</span><span class="sxs-lookup"><span data-stu-id="697e1-206">UC-PSTN call</span></span></p></td>
-<td><p><span data-ttu-id="697e1-207">G-711</span><span class="sxs-lookup"><span data-stu-id="697e1-207">G-711</span></span></p></td>
-<td><p><span data-ttu-id="697e1-208">3,61</span><span class="sxs-lookup"><span data-stu-id="697e1-208">3.61</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-206">Chiamata UC-PSTN</span><span class="sxs-lookup"><span data-stu-id="9a45a-206">UC-PSTN call</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-207">G-711</span><span class="sxs-lookup"><span data-stu-id="9a45a-207">G-711</span></span></p></td>
+<td><p><span data-ttu-id="9a45a-208">3,61</span><span class="sxs-lookup"><span data-stu-id="9a45a-208">3.61</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="697e1-209">Al di sopra delle attività di monitoraggio pro-attive precedenti, le attività di manutenzione devono essere eseguite per i siti centrali, perimetrali e di succursale su base giornaliera, settimanale e mensile ricorrenti, come definito nella Guida alle operazioni di Lync RA.</span><span class="sxs-lookup"><span data-stu-id="697e1-209">Over and above the previous pro-active monitoring activities, maintenance tasks should be executed for Central, Edge and Branch sites on a recurring daily, weekly and monthly basis as defined in the Lync RA Operations Guide.</span></span>
+<span data-ttu-id="9a45a-209">Al di sopra delle attività di monitoraggio pro-attive precedenti, le attività di manutenzione devono essere eseguite per i siti centrali, perimetrali e di succursale su base giornaliera, settimanale e mensile ricorrenti, come definito nella Guida alle operazioni di Lync RA.</span><span class="sxs-lookup"><span data-stu-id="9a45a-209">Over and above the previous pro-active monitoring activities, maintenance tasks should be executed for Central, Edge and Branch sites on a recurring daily, weekly and monthly basis as defined in the Lync RA Operations Guide.</span></span>
 
 </div>
 

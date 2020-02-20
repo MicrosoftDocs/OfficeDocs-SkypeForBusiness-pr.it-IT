@@ -12,20 +12,20 @@ ms:contentKeyID: 48183941
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 133d0bccb919e537998878306b3bbf85d77bd0cb
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 3c5fbe9298a3a4157dfc62a31d7a429079ac1853
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42037646"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42153376"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="optional-verify-dial-in-conferencing-in-lync-server-2013"></a><span data-ttu-id="c25ff-102">Optional Verificare le conferenze telefoniche con accesso esterno in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c25ff-102">(Optional) Verify dial-in conferencing in Lync Server 2013</span></span>
+# <a name="optional-verify-dial-in-conferencing-in-lync-server-2013"></a><span data-ttu-id="e33ef-102">Optional Verificare le conferenze telefoniche con accesso esterno in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e33ef-102">(Optional) Verify dial-in conferencing in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,32 +35,32 @@ ms.locfileid: "42037646"
 
 <span> </span>
 
-<span data-ttu-id="c25ff-103">_**Ultimo argomento modificato:** 2011-01-21_</span><span class="sxs-lookup"><span data-stu-id="c25ff-103">_**Topic Last Modified:** 2011-01-21_</span></span>
+<span data-ttu-id="e33ef-103">_**Ultimo argomento modificato:** 2011-01-21_</span><span class="sxs-lookup"><span data-stu-id="e33ef-103">_**Topic Last Modified:** 2011-01-21_</span></span>
 
-<span data-ttu-id="c25ff-104">Per verificare che la pagina Web Impostazioni conferenza telefonica con accesso esterno e i numeri di accesso esterno funzionino correttamente, è necessario eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="c25ff-104">To verify that the Dial-in Conferencing Settings webpage and the dial-in access numbers work correctly, you need to do the following:</span></span>
+<span data-ttu-id="e33ef-104">Per verificare che la pagina Web Impostazioni conferenza telefonica con accesso esterno e i numeri di accesso esterno funzionino correttamente, è necessario eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="e33ef-104">To verify that the Dial-in Conferencing Settings webpage and the dial-in access numbers work correctly, you need to do the following:</span></span>
 
-  - <span data-ttu-id="c25ff-105">Testare la pagina Web Impostazioni conferenza telefonica con accesso esterno eseguendo l'accesso all'URL semplice.</span><span class="sxs-lookup"><span data-stu-id="c25ff-105">Test the Dial-in Conferencing Settings webpage by signing in to the simple URL.</span></span>
+  - <span data-ttu-id="e33ef-105">Testare la pagina Web Impostazioni conferenza telefonica con accesso esterno eseguendo l'accesso all'URL semplice.</span><span class="sxs-lookup"><span data-stu-id="e33ef-105">Test the Dial-in Conferencing Settings webpage by signing in to the simple URL.</span></span>
 
-  - <span data-ttu-id="c25ff-p101">Verificare che i numeri di accesso funzionino correttamente per un pool specifico eseguendo lo script riportato più avanti in questo argomento. Questo script simula le chiamate ai numeri di accesso. Per utilizzare lo script, sono necessari l'indirizzo SIP e le credenziali di un client per comunicazioni unificate ospitato nel pool specifico.</span><span class="sxs-lookup"><span data-stu-id="c25ff-p101">Test that access numbers work correctly for a specific pool by running the script later in this topic. This script simulates calls to access numbers. You need the SIP address and credentials of one unified communications (UC) client that is hosted on the specific pool to use this script.</span></span>
+  - <span data-ttu-id="e33ef-p101">Verificare che i numeri di accesso funzionino correttamente per un pool specifico eseguendo lo script riportato più avanti in questo argomento. Questo script simula le chiamate ai numeri di accesso. Per utilizzare lo script, sono necessari l'indirizzo SIP e le credenziali di un client per comunicazioni unificate ospitato nel pool specifico.</span><span class="sxs-lookup"><span data-stu-id="e33ef-p101">Test that access numbers work correctly for a specific pool by running the script later in this topic. This script simulates calls to access numbers. You need the SIP address and credentials of one unified communications (UC) client that is hosted on the specific pool to use this script.</span></span>
 
-<span data-ttu-id="c25ff-109">Questo passaggio è facoltativo.</span><span class="sxs-lookup"><span data-stu-id="c25ff-109">This step is optional.</span></span>
+<span data-ttu-id="e33ef-109">Questo passaggio è facoltativo.</span><span class="sxs-lookup"><span data-stu-id="e33ef-109">This step is optional.</span></span>
 
 <div>
 
-## <a name="to-test-access-numbers-for-a-specific-pool"></a><span data-ttu-id="c25ff-110">Per testare i numeri di accesso per un pool specifico</span><span class="sxs-lookup"><span data-stu-id="c25ff-110">To test access numbers for a specific pool</span></span>
+## <a name="to-test-access-numbers-for-a-specific-pool"></a><span data-ttu-id="e33ef-110">Per testare i numeri di accesso per un pool specifico</span><span class="sxs-lookup"><span data-stu-id="e33ef-110">To test access numbers for a specific pool</span></span>
 
-1.  <span data-ttu-id="c25ff-111">Eseguire l'accesso al computer come membro del gruppo RTCUniversalServerAdmins oppure del ruolo **Cs-ServerAdministrator** o **CsAdministrator**.</span><span class="sxs-lookup"><span data-stu-id="c25ff-111">Log on to the computer as a member of the RTCUniversalServerAdmins group, or as a member of the **Cs-ServerAdministrator** or **CsAdministrator** role.</span></span>
+1.  <span data-ttu-id="e33ef-111">Eseguire l'accesso al computer come membro del gruppo RTCUniversalServerAdmins oppure del ruolo **Cs-ServerAdministrator** o **CsAdministrator**.</span><span class="sxs-lookup"><span data-stu-id="e33ef-111">Log on to the computer as a member of the RTCUniversalServerAdmins group, or as a member of the **Cs-ServerAdministrator** or **CsAdministrator** role.</span></span>
 
-2.  <span data-ttu-id="c25ff-112">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="c25ff-112">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
+2.  <span data-ttu-id="e33ef-112">Avviare Lync Server Management Shell: fare clic sul pulsante **Start**, scegliere **Tutti i programmi**, **Microsoft Lync Server 2013** e quindi **Lync Server Management Shell**.</span><span class="sxs-lookup"><span data-stu-id="e33ef-112">Start the Lync Server Management Shell: Click **Start**, click **All Programs**, click **Microsoft Lync Server 2013**, and then click **Lync Server Management Shell**.</span></span>
 
-3.  <span data-ttu-id="c25ff-113">Al prompt dei comandi eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="c25ff-113">Run the following at the command prompt:</span></span>
+3.  <span data-ttu-id="e33ef-113">Al prompt dei comandi eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="e33ef-113">Run the following at the command prompt:</span></span>
     
         $credentials = Get-Credential
            User name:  testuser1@contoso.com
            Password:   ********
         Test-CsDialInConferencing -UserSipAddress sip:testuser1@contoso.com -UserCredential $credentials -TargetFqdn <serverName>.<domainName>.com -Verbose
     
-    <span data-ttu-id="c25ff-p102">Nel rapporto risultante viene mostrato l'esito positivo o negativo, insieme a specifiche informazioni di diagnostica. Il flag –Verbose consente di ottenere informazioni più dettagliate su quanti numeri di accesso sono stati trovati con le relative informazioni.</span><span class="sxs-lookup"><span data-stu-id="c25ff-p102">The resulting report shows either Success or Failure, along with specific diagnostic information. The –Verbose flag provides more detailed information about how many access numbers were found and details about them.</span></span>
+    <span data-ttu-id="e33ef-p102">Nel rapporto risultante viene mostrato l'esito positivo o negativo, insieme a specifiche informazioni di diagnostica. Il flag –Verbose consente di ottenere informazioni più dettagliate su quanti numeri di accesso sono stati trovati con le relative informazioni.</span><span class="sxs-lookup"><span data-stu-id="e33ef-p102">The resulting report shows either Success or Failure, along with specific diagnostic information. The –Verbose flag provides more detailed information about how many access numbers were found and details about them.</span></span>
 
 </div>
 

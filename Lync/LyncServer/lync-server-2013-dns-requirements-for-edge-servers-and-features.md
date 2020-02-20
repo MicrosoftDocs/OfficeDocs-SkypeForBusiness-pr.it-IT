@@ -12,20 +12,20 @@ ms:contentKeyID: 49733846
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dd9c14de1b25125e94a3019b4e3dcdbd192cbb13
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: a3de2c3404a581d7cabb544a89eed43d3c4572a6
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42049308"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42153838"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="dns-requirements-for-edge-servers-and-features-in-lync-server-2013"></a><span data-ttu-id="e6d46-102">Requisiti DNS per i server perimetrali e le funzionalità in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e6d46-102">DNS requirements for Edge Servers and features in Lync Server 2013</span></span>
+# <a name="dns-requirements-for-edge-servers-and-features-in-lync-server-2013"></a><span data-ttu-id="358dc-102">Requisiti DNS per i server perimetrali e le funzionalità in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="358dc-102">DNS requirements for Edge Servers and features in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,29 +35,29 @@ ms.locfileid: "42049308"
 
 <span> </span>
 
-<span data-ttu-id="e6d46-103">_**Ultimo argomento modificato:** 2014-04-08_</span><span class="sxs-lookup"><span data-stu-id="e6d46-103">_**Topic Last Modified:** 2014-04-08_</span></span>
+<span data-ttu-id="358dc-103">_**Ultimo argomento modificato:** 2014-04-08_</span><span class="sxs-lookup"><span data-stu-id="358dc-103">_**Topic Last Modified:** 2014-04-08_</span></span>
 
-<span data-ttu-id="e6d46-104">I server perimetrali di Lync Server 2013, i pool perimetrali e i proxy inversi presentano requisiti specifici per i record DNS (Domain Name System).</span><span class="sxs-lookup"><span data-stu-id="e6d46-104">Lync Server 2013 Edge Servers, Edge pools, and reverse proxies have specific requirements for Domain Name System (DNS) records.</span></span> <span data-ttu-id="e6d46-105">In Lync Server 2013 quando IPv4 e IPv6 sono in uso, è necessario pianificare entrambi i record host A e AAAA.</span><span class="sxs-lookup"><span data-stu-id="e6d46-105">In Lync Server 2013 when IPv4 and IPv6 are in use, you must plan for both host A and AAAA records.</span></span>
+<span data-ttu-id="358dc-104">I server perimetrali di Lync Server 2013, i pool perimetrali e i proxy inversi presentano requisiti specifici per i record DNS (Domain Name System).</span><span class="sxs-lookup"><span data-stu-id="358dc-104">Lync Server 2013 Edge Servers, Edge pools, and reverse proxies have specific requirements for Domain Name System (DNS) records.</span></span> <span data-ttu-id="358dc-105">In Lync Server 2013 quando IPv4 e IPv6 sono in uso, è necessario pianificare entrambi i record host A e AAAA.</span><span class="sxs-lookup"><span data-stu-id="358dc-105">In Lync Server 2013 when IPv4 and IPv6 are in use, you must plan for both host A and AAAA records.</span></span>
 
-<span data-ttu-id="e6d46-106">Negli argomenti elencati di seguito viene illustrato l'utilizzo dei record DNS per la pianificazione della distribuzione:</span><span class="sxs-lookup"><span data-stu-id="e6d46-106">The topics listed below define the use of DNS records for your deployment planning:</span></span>
+<span data-ttu-id="358dc-106">Negli argomenti elencati di seguito viene illustrato l'utilizzo dei record DNS per la pianificazione della distribuzione:</span><span class="sxs-lookup"><span data-stu-id="358dc-106">The topics listed below define the use of DNS records for your deployment planning:</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="e6d46-107">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="e6d46-107">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="358dc-107">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="358dc-107">In This Section</span></span>
 
-  - [<span data-ttu-id="e6d46-108">Riepilogo DNS-singolo server perimetrale consolidato con indirizzi IP privati tramite NAT in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e6d46-108">DNS summary - Single consolidated edge with private IP addresses using NAT in Lync Server 2013</span></span>](lync-server-2013-dns-summary-single-consolidated-edge-with-private-ip-addresses-using-nat.md)
+  - [<span data-ttu-id="358dc-108">Riepilogo DNS-singolo server perimetrale consolidato con indirizzi IP privati tramite NAT in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="358dc-108">DNS summary - Single consolidated edge with private IP addresses using NAT in Lync Server 2013</span></span>](lync-server-2013-dns-summary-single-consolidated-edge-with-private-ip-addresses-using-nat.md)
 
-  - [<span data-ttu-id="e6d46-109">Riepilogo DNS-singolo server perimetrale consolidato con indirizzi IP pubblici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e6d46-109">DNS summary - Single consolidated edge with public IP addresses in Lync Server 2013</span></span>](lync-server-2013-dns-summary-single-consolidated-edge-with-public-ip-addresses.md)
+  - [<span data-ttu-id="358dc-109">Riepilogo DNS-singolo server perimetrale consolidato con indirizzi IP pubblici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="358dc-109">DNS summary - Single consolidated edge with public IP addresses in Lync Server 2013</span></span>](lync-server-2013-dns-summary-single-consolidated-edge-with-public-ip-addresses.md)
 
-  - [<span data-ttu-id="e6d46-110">Server perimetrale consolidato in scala di riepilogo DNS, bilanciamento del carico DNS con indirizzi IP privati tramite NAT in Lync 2013</span><span class="sxs-lookup"><span data-stu-id="e6d46-110">DNS summary - Scaled consolidated edge, DNS load balancing with private IP addresses using NAT in Lync Server 2013</span></span>](lync-server-2013-dns-summary-scaled-consolidated-edge-dns-load-balancing-with-private-ip-addresses-using-nat.md)
+  - [<span data-ttu-id="358dc-110">Server perimetrale consolidato in scala di riepilogo DNS, bilanciamento del carico DNS con indirizzi IP privati tramite NAT in Lync 2013</span><span class="sxs-lookup"><span data-stu-id="358dc-110">DNS summary - Scaled consolidated edge, DNS load balancing with private IP addresses using NAT in Lync Server 2013</span></span>](lync-server-2013-dns-summary-scaled-consolidated-edge-dns-load-balancing-with-private-ip-addresses-using-nat.md)
 
-  - [<span data-ttu-id="e6d46-111">Server perimetrale consolidato in scala di riepilogo DNS, bilanciamento del carico DNS con indirizzi IP pubblici in Lync 2013</span><span class="sxs-lookup"><span data-stu-id="e6d46-111">DNS summary - Scaled consolidated edge, DNS load balancing with public IP addresses in Lync Server 2013</span></span>](lync-server-2013-dns-summary-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses.md)
+  - [<span data-ttu-id="358dc-111">Server perimetrale consolidato in scala di riepilogo DNS, bilanciamento del carico DNS con indirizzi IP pubblici in Lync 2013</span><span class="sxs-lookup"><span data-stu-id="358dc-111">DNS summary - Scaled consolidated edge, DNS load balancing with public IP addresses in Lync Server 2013</span></span>](lync-server-2013-dns-summary-scaled-consolidated-edge-dns-load-balancing-with-public-ip-addresses.md)
 
-  - [<span data-ttu-id="e6d46-112">Server di sintesi DNS-Edge consolidato in scala con i dispositivi di bilanciamento del carico hardware in Lync 2013</span><span class="sxs-lookup"><span data-stu-id="e6d46-112">DNS summary - Scaled consolidated edge with hardware load balancers in Lync Server 2013</span></span>](lync-server-2013-dns-summary-scaled-consolidated-edge-with-hardware-load-balancers.md)
+  - [<span data-ttu-id="358dc-112">Server di sintesi DNS-Edge consolidato in scala con i dispositivi di bilanciamento del carico hardware in Lync 2013</span><span class="sxs-lookup"><span data-stu-id="358dc-112">DNS summary - Scaled consolidated edge with hardware load balancers in Lync Server 2013</span></span>](lync-server-2013-dns-summary-scaled-consolidated-edge-with-hardware-load-balancers.md)
 
-  - [<span data-ttu-id="e6d46-113">Riepilogo DNS-proxy inverso in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e6d46-113">DNS summary - Reverse proxy in Lync Server 2013</span></span>](lync-server-2013-dns-summary-reverse-proxy.md)
+  - [<span data-ttu-id="358dc-113">Riepilogo DNS-proxy inverso in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="358dc-113">DNS summary - Reverse proxy in Lync Server 2013</span></span>](lync-server-2013-dns-summary-reverse-proxy.md)
 
-  - [<span data-ttu-id="e6d46-114">Riepilogo DNS-SIP, Federazione XMPP e messaggistica istantanea pubblica in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e6d46-114">DNS summary - SIP, XMPP federation, and public instant messaging in Lync Server 2013</span></span>](lync-server-2013-dns-summary-sip-xmpp-federation-and-public-instant-messaging.md)
+  - [<span data-ttu-id="358dc-114">Riepilogo DNS-SIP, Federazione XMPP e messaggistica istantanea pubblica in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="358dc-114">DNS summary - SIP, XMPP federation, and public instant messaging in Lync Server 2013</span></span>](lync-server-2013-dns-summary-sip-xmpp-federation-and-public-instant-messaging.md)
 
 </div>
 

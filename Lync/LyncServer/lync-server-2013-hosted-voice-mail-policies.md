@@ -12,20 +12,20 @@ ms:contentKeyID: 48185506
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 01e844e62934a697b12afa76d2e9c9405a30a4a4
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 16570331d0d7e154388c51ecb11be591bf3bbd05
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42043178"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42154908"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="hosted-voice-mail-policies-in-lync-server-2013"></a><span data-ttu-id="a68e4-102">Criteri di segreteria telefonica ospitata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="a68e4-102">Hosted voice mail policies in Lync Server 2013</span></span>
+# <a name="hosted-voice-mail-policies-in-lync-server-2013"></a><span data-ttu-id="26f7f-102">Criteri di segreteria telefonica ospitata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="26f7f-102">Hosted voice mail policies in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,37 +35,37 @@ ms.locfileid: "42043178"
 
 <span> </span>
 
-<span data-ttu-id="a68e4-103">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="a68e4-103">_**Topic Last Modified:** 2012-10-01_</span></span>
+<span data-ttu-id="26f7f-103">_**Ultimo argomento modificato:** 2012-10-01_</span><span class="sxs-lookup"><span data-stu-id="26f7f-103">_**Topic Last Modified:** 2012-10-01_</span></span>
 
-<span data-ttu-id="a68e4-104">Un *criterio di segreteria telefonica ospitata* fornisce informazioni all'applicazione di routing di Lync Server 2013 ExUM in cui instradare le chiamate per gli utenti le cui cassette postali si trovano in un servizio di Exchange ospitato.</span><span class="sxs-lookup"><span data-stu-id="a68e4-104">A *hosted voice mail policy* provides information to the Lync Server 2013 ExUM Routing application about where to route calls for users whose mailboxes are located on a hosted Exchange service.</span></span>
-
-<div>
-
-
-> [!NOTE]  
-> <span data-ttu-id="a68e4-105">I criteri di segreteria telefonica ospitata sono necessari solo per l'integrazione di Lync Server 2013 con messaggistica unificata di Exchange ospitata</span><span class="sxs-lookup"><span data-stu-id="a68e4-105">Hosted voice mail policies are required only for Lync Server 2013 integration with hosted Exchange UM.</span></span> <span data-ttu-id="a68e4-106">Non sono necessari per l'integrazione con la messaggistica unificata di Exchange locale.</span><span class="sxs-lookup"><span data-stu-id="a68e4-106">They are not needed for integration with on-premises Exchange UM.</span></span>
-
-
-
-</div>
-
-<div>
-
-## <a name="hosted-voice-mail-policy-scope"></a><span data-ttu-id="a68e4-107">Ambito del criterio di segreteria telefonica ospitata</span><span class="sxs-lookup"><span data-stu-id="a68e4-107">Hosted Voice Mail Policy Scope</span></span>
-
-<span data-ttu-id="a68e4-108">L'ambito dei criteri di segreteria telefonica ospitata determina il livello gerarchico a cui si applica il criterio.</span><span class="sxs-lookup"><span data-stu-id="a68e4-108">Hosted voice mail policy scope determines the hierarchical level at which the policy applies.</span></span> <span data-ttu-id="a68e4-109">È possibile configurare i criteri di segreteria telefonica ospitata con i livelli di ambito seguenti:</span><span class="sxs-lookup"><span data-stu-id="a68e4-109">You can configure hosted voice mail policies with the following scope levels:</span></span>
-
-  - <span data-ttu-id="a68e4-110">Il criterio *globale* può potenzialmente influire su tutti gli utenti nella distribuzione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="a68e4-110">The *global* policy can potentially affect all users in the Lync Server 2013 deployment.</span></span> <span data-ttu-id="a68e4-111">Se un utente è abilitato per l'accesso alla messaggistica unificata di Exchange ospitata e non è stato assegnato un criterio per utente, e se non è stato assegnato un criterio sito al sito dell'utente, viene applicato il criterio globale.</span><span class="sxs-lookup"><span data-stu-id="a68e4-111">If a user is enabled for hosted Exchange UM access and has not been assigned a per-user policy, and if a site policy has not been assigned to the user’s site, the global policy applies.</span></span> <span data-ttu-id="a68e4-112">Il criterio globale viene installato con Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="a68e4-112">The global policy is installed with Lync Server 2013.</span></span> <span data-ttu-id="a68e4-113">È possibile modificarli in base a specifiche esigenze, ma non è possibile rinominarli né eliminarli.</span><span class="sxs-lookup"><span data-stu-id="a68e4-113">You can modify it to meet your needs, but you cannot rename or delete it.</span></span>
-
-  - <span data-ttu-id="a68e4-114">Un criterio *sito* può influire su tutti gli utenti ospitati nel sito per cui è definito il criterio.</span><span class="sxs-lookup"><span data-stu-id="a68e4-114">A *site* policy can affect all users that are homed on the site for which the policy is defined.</span></span> <span data-ttu-id="a68e4-115">Se un utente è configurato per l'accesso alla messaggistica unificata di Exchange ospitata e non è stato assegnato un criterio per utente, viene applicato il criterio sito.</span><span class="sxs-lookup"><span data-stu-id="a68e4-115">If a user is configured for hosted Exchange UM access and has not been assigned a per-user policy, the site policy applies.</span></span>
-
-  - <span data-ttu-id="a68e4-116">Un criterio *per utente* può influire solo su singoli utenti o gruppi.</span><span class="sxs-lookup"><span data-stu-id="a68e4-116">A *per-user* policy can affect only individual users or groups.</span></span> <span data-ttu-id="a68e4-117">Per applicare un criterio per utente, è necessario assegnare esplicitamente il criterio a singoli utenti, gruppi e oggetti contatto.</span><span class="sxs-lookup"><span data-stu-id="a68e4-117">To enforce a per-user policy, you must explicitly assign the policy to individual users, groups, and contact objects.</span></span>
+<span data-ttu-id="26f7f-104">Un *criterio di segreteria telefonica ospitata* fornisce informazioni all'applicazione di routing di Lync Server 2013 ExUM in cui instradare le chiamate per gli utenti le cui cassette postali si trovano in un servizio di Exchange ospitato.</span><span class="sxs-lookup"><span data-stu-id="26f7f-104">A *hosted voice mail policy* provides information to the Lync Server 2013 ExUM Routing application about where to route calls for users whose mailboxes are located on a hosted Exchange service.</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="a68e4-118">Nella maggior parte dei casi, è necessario un solo criterio di segreteria telefonica ospitata.</span><span class="sxs-lookup"><span data-stu-id="a68e4-118">In most cases, only one hosted voice mail policy is required.</span></span> <span data-ttu-id="a68e4-119">Spesso è possibile modificare il criterio globale per soddisfare tutte le esigenze.</span><span class="sxs-lookup"><span data-stu-id="a68e4-119">You can often modify the global policy to meet all your needs.</span></span> <span data-ttu-id="a68e4-120">Se si distribuiscono più criteri di segreteria telefonica ospitata, tutti i criteri di questo tipo hanno ambito per utente.</span><span class="sxs-lookup"><span data-stu-id="a68e4-120">If you deploy multiple hosted voice mail policies, all such policies have per-user scope.</span></span>
+> <span data-ttu-id="26f7f-105">I criteri di segreteria telefonica ospitata sono necessari solo per l'integrazione di Lync Server 2013 con messaggistica unificata di Exchange ospitata</span><span class="sxs-lookup"><span data-stu-id="26f7f-105">Hosted voice mail policies are required only for Lync Server 2013 integration with hosted Exchange UM.</span></span> <span data-ttu-id="26f7f-106">Non sono necessari per l'integrazione con la messaggistica unificata di Exchange locale.</span><span class="sxs-lookup"><span data-stu-id="26f7f-106">They are not needed for integration with on-premises Exchange UM.</span></span>
+
+
+
+</div>
+
+<div>
+
+## <a name="hosted-voice-mail-policy-scope"></a><span data-ttu-id="26f7f-107">Ambito del criterio di segreteria telefonica ospitata</span><span class="sxs-lookup"><span data-stu-id="26f7f-107">Hosted Voice Mail Policy Scope</span></span>
+
+<span data-ttu-id="26f7f-108">L'ambito dei criteri di segreteria telefonica ospitata determina il livello gerarchico a cui si applica il criterio.</span><span class="sxs-lookup"><span data-stu-id="26f7f-108">Hosted voice mail policy scope determines the hierarchical level at which the policy applies.</span></span> <span data-ttu-id="26f7f-109">È possibile configurare i criteri di segreteria telefonica ospitata con i livelli di ambito seguenti:</span><span class="sxs-lookup"><span data-stu-id="26f7f-109">You can configure hosted voice mail policies with the following scope levels:</span></span>
+
+  - <span data-ttu-id="26f7f-110">Il criterio *globale* può potenzialmente influire su tutti gli utenti nella distribuzione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="26f7f-110">The *global* policy can potentially affect all users in the Lync Server 2013 deployment.</span></span> <span data-ttu-id="26f7f-111">Se un utente è abilitato per l'accesso alla messaggistica unificata di Exchange ospitata e non è stato assegnato un criterio per utente, e se non è stato assegnato un criterio sito al sito dell'utente, viene applicato il criterio globale.</span><span class="sxs-lookup"><span data-stu-id="26f7f-111">If a user is enabled for hosted Exchange UM access and has not been assigned a per-user policy, and if a site policy has not been assigned to the user’s site, the global policy applies.</span></span> <span data-ttu-id="26f7f-112">Il criterio globale viene installato con Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="26f7f-112">The global policy is installed with Lync Server 2013.</span></span> <span data-ttu-id="26f7f-113">È possibile modificarli in base a specifiche esigenze, ma non è possibile rinominarli né eliminarli.</span><span class="sxs-lookup"><span data-stu-id="26f7f-113">You can modify it to meet your needs, but you cannot rename or delete it.</span></span>
+
+  - <span data-ttu-id="26f7f-114">Un criterio *sito* può influire su tutti gli utenti ospitati nel sito per cui è definito il criterio.</span><span class="sxs-lookup"><span data-stu-id="26f7f-114">A *site* policy can affect all users that are homed on the site for which the policy is defined.</span></span> <span data-ttu-id="26f7f-115">Se un utente è configurato per l'accesso alla messaggistica unificata di Exchange ospitata e non è stato assegnato un criterio per utente, viene applicato il criterio sito.</span><span class="sxs-lookup"><span data-stu-id="26f7f-115">If a user is configured for hosted Exchange UM access and has not been assigned a per-user policy, the site policy applies.</span></span>
+
+  - <span data-ttu-id="26f7f-116">Un criterio *per utente* può influire solo su singoli utenti o gruppi.</span><span class="sxs-lookup"><span data-stu-id="26f7f-116">A *per-user* policy can affect only individual users or groups.</span></span> <span data-ttu-id="26f7f-117">Per applicare un criterio per utente, è necessario assegnare esplicitamente il criterio a singoli utenti, gruppi e oggetti contatto.</span><span class="sxs-lookup"><span data-stu-id="26f7f-117">To enforce a per-user policy, you must explicitly assign the policy to individual users, groups, and contact objects.</span></span>
+
+<div>
+
+
+> [!NOTE]  
+> <span data-ttu-id="26f7f-118">Nella maggior parte dei casi, è necessario un solo criterio di segreteria telefonica ospitata.</span><span class="sxs-lookup"><span data-stu-id="26f7f-118">In most cases, only one hosted voice mail policy is required.</span></span> <span data-ttu-id="26f7f-119">Spesso è possibile modificare il criterio globale per soddisfare tutte le esigenze.</span><span class="sxs-lookup"><span data-stu-id="26f7f-119">You can often modify the global policy to meet all your needs.</span></span> <span data-ttu-id="26f7f-120">Se si distribuiscono più criteri di segreteria telefonica ospitata, tutti i criteri di questo tipo hanno ambito per utente.</span><span class="sxs-lookup"><span data-stu-id="26f7f-120">If you deploy multiple hosted voice mail policies, all such policies have per-user scope.</span></span>
 
 
 
@@ -75,54 +75,54 @@ ms.locfileid: "42043178"
 
 <div>
 
-## <a name="hosted-voice-mail-policy-attributes"></a><span data-ttu-id="a68e4-121">Attributi del criterio di segreteria telefonica ospitata</span><span class="sxs-lookup"><span data-stu-id="a68e4-121">Hosted Voice Mail Policy Attributes</span></span>
+## <a name="hosted-voice-mail-policy-attributes"></a><span data-ttu-id="26f7f-121">Attributi del criterio di segreteria telefonica ospitata</span><span class="sxs-lookup"><span data-stu-id="26f7f-121">Hosted Voice Mail Policy Attributes</span></span>
 
-<span data-ttu-id="a68e4-122">Un criterio di segreteria telefonica definisce due attributi che l'applicazione di routing di Lync Server 2013 ExUM inserisce nell'URI della richiesta di un messaggio di invito inviato all'implementazione di messaggistica unificata di Exchange ospitata:</span><span class="sxs-lookup"><span data-stu-id="a68e4-122">A voice mail policy defines two attributes that the Lync Server 2013 ExUM Routing application inserts in the request URI of an INVITE message that is sent to the hosted Exchange UM implementation:</span></span>
+<span data-ttu-id="26f7f-122">Un criterio di segreteria telefonica definisce due attributi che l'applicazione di routing di Lync Server 2013 ExUM inserisce nell'URI della richiesta di un messaggio di invito inviato all'implementazione di messaggistica unificata di Exchange ospitata:</span><span class="sxs-lookup"><span data-stu-id="26f7f-122">A voice mail policy defines two attributes that the Lync Server 2013 ExUM Routing application inserts in the request URI of an INVITE message that is sent to the hosted Exchange UM implementation:</span></span>
 
-  - <span data-ttu-id="a68e4-123">**Destinazione:** Il nome di dominio completo (FQDN) del servizio di messaggistica unificata di Exchange ospitata.</span><span class="sxs-lookup"><span data-stu-id="a68e4-123">**Destination:** The fully qualified domain name (FQDN) of the hosted Exchange UM service.</span></span> <span data-ttu-id="a68e4-124">Questo valore viene utilizzato dal server perimetrale di Lync Server locale per scopi di routing.</span><span class="sxs-lookup"><span data-stu-id="a68e4-124">This value is used by the on-premises Lync Server Edge Server for routing purposes.</span></span>
+  - <span data-ttu-id="26f7f-123">**Destinazione:** Il nome di dominio completo (FQDN) del servizio di messaggistica unificata di Exchange ospitata.</span><span class="sxs-lookup"><span data-stu-id="26f7f-123">**Destination:** The fully qualified domain name (FQDN) of the hosted Exchange UM service.</span></span> <span data-ttu-id="26f7f-124">Questo valore viene utilizzato dal server perimetrale di Lync Server locale per scopi di routing.</span><span class="sxs-lookup"><span data-stu-id="26f7f-124">This value is used by the on-premises Lync Server Edge Server for routing purposes.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="a68e4-125">Per Exchange Online, l'FQDN è exap.um.outlook.com.</span><span class="sxs-lookup"><span data-stu-id="a68e4-125">The FQDN for Exchange Online is exap.um.outlook.com.</span></span>
+    > <span data-ttu-id="26f7f-125">Per Exchange Online, l'FQDN è exap.um.outlook.com.</span><span class="sxs-lookup"><span data-stu-id="26f7f-125">The FQDN for Exchange Online is exap.um.outlook.com.</span></span>
 
     
     </div>
 
-  - <span data-ttu-id="a68e4-126">**Organizzazione:** Il nome di dominio completo del tenant nel servizio di messaggistica unificata di Exchange ospitato che ospita le cassette postali degli utenti di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="a68e4-126">**Organization:** The FQDN of the tenant on the hosted Exchange UM service that homes your Lync Server 2013 users’ mailboxes.</span></span> <span data-ttu-id="a68e4-127">Un criterio di segreteria telefonica può contenere più organizzazioni.</span><span class="sxs-lookup"><span data-stu-id="a68e4-127">A voice mail policy can contain multiple organizations.</span></span> <span data-ttu-id="a68e4-128">Se nel criterio è inclusa più di un'organizzazione, questo attributo deve essere un elenco separato da virgole dei tenant del server Exchange che ospita le cassette postali degli utenti di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="a68e4-128">If more than one organization is included in the policy, this attribute must be a comma-separated list of the Exchange Server tenants that home your Lync Server 2013 user mailboxes.</span></span>
+  - <span data-ttu-id="26f7f-126">**Organizzazione:** Il nome di dominio completo del tenant nel servizio di messaggistica unificata di Exchange ospitato che ospita le cassette postali degli utenti di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="26f7f-126">**Organization:** The FQDN of the tenant on the hosted Exchange UM service that homes your Lync Server 2013 users’ mailboxes.</span></span> <span data-ttu-id="26f7f-127">Un criterio di segreteria telefonica può contenere più organizzazioni.</span><span class="sxs-lookup"><span data-stu-id="26f7f-127">A voice mail policy can contain multiple organizations.</span></span> <span data-ttu-id="26f7f-128">Se nel criterio è inclusa più di un'organizzazione, questo attributo deve essere un elenco separato da virgole dei tenant del server Exchange che ospita le cassette postali degli utenti di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="26f7f-128">If more than one organization is included in the policy, this attribute must be a comma-separated list of the Exchange Server tenants that home your Lync Server 2013 user mailboxes.</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="a68e4-129">L'amministratore tenant del servizio di messaggistica unificata di Exchange ospitato fornirà i valori necessari per le impostazioni degli attributi di destinazione e dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="a68e4-129">The tenant administrator of your hosted Exchange UM service will provide the necessary values for your Destination and Organization attribute settings.</span></span> <span data-ttu-id="a68e4-130">Per configurare i criteri, è necessario eseguire il cmdlet New-CsHostedVoicemailPolicy o utilizzare il cmdlet Set-CsHostedVoicemailPolicy per modificarne uno esistente, ad esempio il criterio globale.</span><span class="sxs-lookup"><span data-stu-id="a68e4-130">To configure your policy, you must run the New-CsHostedVoicemailPolicy cmdlet or use the Set-CsHostedVoicemailPolicy cmdlet to modify one that exists (for example, the global policy).</span></span>
+> <span data-ttu-id="26f7f-129">L'amministratore tenant del servizio di messaggistica unificata di Exchange ospitato fornirà i valori necessari per le impostazioni degli attributi di destinazione e dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="26f7f-129">The tenant administrator of your hosted Exchange UM service will provide the necessary values for your Destination and Organization attribute settings.</span></span> <span data-ttu-id="26f7f-130">Per configurare i criteri, è necessario eseguire il cmdlet New-CsHostedVoicemailPolicy o utilizzare il cmdlet Set-CsHostedVoicemailPolicy per modificarne uno esistente, ad esempio il criterio globale.</span><span class="sxs-lookup"><span data-stu-id="26f7f-130">To configure your policy, you must run the New-CsHostedVoicemailPolicy cmdlet or use the Set-CsHostedVoicemailPolicy cmdlet to modify one that exists (for example, the global policy).</span></span>
 
 
 
 </div>
 
-<span data-ttu-id="a68e4-131">Per informazioni dettagliate sulla gestione dei criteri di segreteria telefonica ospitata, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:</span><span class="sxs-lookup"><span data-stu-id="a68e4-131">For details about managing hosted voice mail policies, see the Lync Server Management Shell documentation for the following cmdlets:</span></span>
+<span data-ttu-id="26f7f-131">Per informazioni dettagliate sulla gestione dei criteri di segreteria telefonica ospitata, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:</span><span class="sxs-lookup"><span data-stu-id="26f7f-131">For details about managing hosted voice mail policies, see the Lync Server Management Shell documentation for the following cmdlets:</span></span>
 
-  - <span data-ttu-id="a68e4-132">New-CsHostedVoicemailPolicy</span><span class="sxs-lookup"><span data-stu-id="a68e4-132">New-CsHostedVoicemailPolicy</span></span>
+  - <span data-ttu-id="26f7f-132">New-CsHostedVoicemailPolicy</span><span class="sxs-lookup"><span data-stu-id="26f7f-132">New-CsHostedVoicemailPolicy</span></span>
 
-  - <span data-ttu-id="a68e4-133">Set-CsHostedVoicemailPolicy</span><span class="sxs-lookup"><span data-stu-id="a68e4-133">Set-CsHostedVoicemailPolicy</span></span>
+  - <span data-ttu-id="26f7f-133">Set-CsHostedVoicemailPolicy</span><span class="sxs-lookup"><span data-stu-id="26f7f-133">Set-CsHostedVoicemailPolicy</span></span>
 
-  - <span data-ttu-id="a68e4-134">Get-CsHostedVoicemailPolicy</span><span class="sxs-lookup"><span data-stu-id="a68e4-134">Get-CsHostedVoicemailPolicy</span></span>
+  - <span data-ttu-id="26f7f-134">Get-CsHostedVoicemailPolicy</span><span class="sxs-lookup"><span data-stu-id="26f7f-134">Get-CsHostedVoicemailPolicy</span></span>
 
 </div>
 
 <div>
 
-## <a name="per-user-voice-mail-policy-assignment"></a><span data-ttu-id="a68e4-135">Assegnazione dei criteri di segreteria telefonica per utente</span><span class="sxs-lookup"><span data-stu-id="a68e4-135">Per-User Voice Mail Policy Assignment</span></span>
+## <a name="per-user-voice-mail-policy-assignment"></a><span data-ttu-id="26f7f-135">Assegnazione dei criteri di segreteria telefonica per utente</span><span class="sxs-lookup"><span data-stu-id="26f7f-135">Per-User Voice Mail Policy Assignment</span></span>
 
-<span data-ttu-id="a68e4-136">Se il criterio di segreteria telefonica ospitata è definito con ambito per utente, è necessario assegnarlo in modo esplicito.</span><span class="sxs-lookup"><span data-stu-id="a68e4-136">If your hosted voice mail policy is defined with per-user scope, you must explicitly assign it.</span></span> <span data-ttu-id="a68e4-137">È possibile eseguire il cmdlet Grant-CsHostedVoicemailPolicy per assegnare il criterio a singoli utenti o gruppi.</span><span class="sxs-lookup"><span data-stu-id="a68e4-137">You can run the Grant-CsHostedVoicemailPolicy cmdlet to assign the policy to individual users or groups.</span></span>
+<span data-ttu-id="26f7f-136">Se il criterio di segreteria telefonica ospitata è definito con ambito per utente, è necessario assegnarlo in modo esplicito.</span><span class="sxs-lookup"><span data-stu-id="26f7f-136">If your hosted voice mail policy is defined with per-user scope, you must explicitly assign it.</span></span> <span data-ttu-id="26f7f-137">È possibile eseguire il cmdlet Grant-CsHostedVoicemailPolicy per assegnare il criterio a singoli utenti o gruppi.</span><span class="sxs-lookup"><span data-stu-id="26f7f-137">You can run the Grant-CsHostedVoicemailPolicy cmdlet to assign the policy to individual users or groups.</span></span>
 
-<span data-ttu-id="a68e4-138">Per informazioni dettagliate sull'assegnazione o la rimozione di criteri di segreteria telefonica ospitata per utente, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:</span><span class="sxs-lookup"><span data-stu-id="a68e4-138">For details about assigning or removing a per-user hosted voice mail policy, see the Lync Server Management Shell documentation for the following cmdlets:</span></span>
+<span data-ttu-id="26f7f-138">Per informazioni dettagliate sull'assegnazione o la rimozione di criteri di segreteria telefonica ospitata per utente, vedere la documentazione di Lync Server Management Shell relativa ai cmdlet seguenti:</span><span class="sxs-lookup"><span data-stu-id="26f7f-138">For details about assigning or removing a per-user hosted voice mail policy, see the Lync Server Management Shell documentation for the following cmdlets:</span></span>
 
-  - <span data-ttu-id="a68e4-139">Grant-CsHostedVoicemailPolicy</span><span class="sxs-lookup"><span data-stu-id="a68e4-139">Grant-CsHostedVoicemailPolicy</span></span>
+  - <span data-ttu-id="26f7f-139">Grant-CsHostedVoicemailPolicy</span><span class="sxs-lookup"><span data-stu-id="26f7f-139">Grant-CsHostedVoicemailPolicy</span></span>
 
-  - <span data-ttu-id="a68e4-140">Remove-CsHostedVoicemailPolicy</span><span class="sxs-lookup"><span data-stu-id="a68e4-140">Remove-CsHostedVoicemailPolicy</span></span>
+  - <span data-ttu-id="26f7f-140">Remove-CsHostedVoicemailPolicy</span><span class="sxs-lookup"><span data-stu-id="26f7f-140">Remove-CsHostedVoicemailPolicy</span></span>
 
 </div>
 
