@@ -12,18 +12,18 @@ ms:contentKeyID: 48184649
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4ea7a68d77acd7bbaf3de43fce38c0e85c02dad4
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 45dbc2c71cf34515f8f6176e4f579e6683ad319e
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42037276"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42146259"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="administering-the-address-book-service-in-lync-server-2013"></a>Amministrazione del servizio Rubrica in Lync Server 2013
 
@@ -43,7 +43,7 @@ Come parte della distribuzione di Lync Server, Enterprise Edition o il server St
 
 
 > [!NOTE]  
-> Per informazioni sull'utilizzo di <STRONG>ADSI Edit</STRONG> per modificare gli attributi degli oggetti di servizi di dominio Active Directory, vedere <A href="http://go.microsoft.com/fwlink/?linkid=330427">ADSI Edit</A>. Per informazioni su uno strumento nel Resource Kit specifico per il servizio Rubrica, vedere <A href="http://go.microsoft.com/fwlink/?linkid=330429">Microsoft Lync Server 2013 Resource Kit Tools</A>.
+> Per informazioni sull'utilizzo di <STRONG>ADSI Edit</STRONG> per modificare gli attributi degli oggetti di servizi di dominio Active Directory, vedere <A href="https://go.microsoft.com/fwlink/?linkid=330427">ADSI Edit</A>. Per informazioni su uno strumento nel Resource Kit specifico per il servizio Rubrica, vedere <A href="https://go.microsoft.com/fwlink/?linkid=330429">Microsoft Lync Server 2013 Resource Kit Tools</A>.
 
 
 
@@ -85,27 +85,27 @@ L'attivazione del server rubrica inserisce nella tabella AbAttribute i valori ri
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>1 </p></td>
+<td><p>1</p></td>
 <td><p>givenName</p></td>
 <td><p>0x01400000</p></td>
 </tr>
 <tr class="even">
-<td><p>2 </p></td>
+<td><p>2</p></td>
 <td><p>Sn</p></td>
 <td><p>0x02400000</p></td>
 </tr>
 <tr class="odd">
-<td><p>3 </p></td>
+<td><p>3</p></td>
 <td><p>displayName</p></td>
 <td><p>0x03420000</p></td>
 </tr>
 <tr class="even">
-<td><p>4 </p></td>
+<td><p>4</p></td>
 <td><p>Titolo</p></td>
 <td><p>0x04000000</p></td>
 </tr>
 <tr class="odd">
-<td><p>5 </p></td>
+<td><p>5</p></td>
 <td><p>mailNickname</p></td>
 <td><p>0x05400000</p></td>
 </tr>
@@ -298,7 +298,7 @@ Gli utenti inseriti nei file del server della rubrica possono essere controllati
 
 
 > [!WARNING]  
-> Per ulteriori informazioni sul filtraggio della Rubrica, vedere <A href="https://technet.microsoft.com/library/gg415643(v=ocs.15)">cmdlet del server della Rubrica in Lync server 2013</A>e <A href="http://go.microsoft.com/fwlink/?linkid=330430">filtrare la rubrica di Lync 2013</A>
+> Per ulteriori informazioni sul filtraggio della Rubrica, vedere <A href="https://technet.microsoft.com/library/gg415643(v=ocs.15)">cmdlet del server della Rubrica in Lync server 2013</A>e <A href="https://go.microsoft.com/fwlink/?linkid=330430">filtrare la rubrica di Lync 2013</A>
 
 
 

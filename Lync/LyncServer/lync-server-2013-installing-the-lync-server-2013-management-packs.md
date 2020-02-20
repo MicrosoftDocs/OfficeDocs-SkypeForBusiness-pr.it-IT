@@ -12,18 +12,18 @@ ms:contentKeyID: 48185233
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2324d166ab43153cf37b71500da438e6db6b4b4f
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 1a0a51d263628e4a2bb7d7ac08f7a4c8d1580420
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029517"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42144963"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="installing-the-lync-server-2013-management-packs"></a>Installazione dei Management Pack di Lync Server 2013
 
@@ -45,7 +45,7 @@ Da solo, System Center Operations Manager è in grado di monitorare solo una pic
     
 
     > [!NOTE]  
-    > Per ulteriori informazioni sulla configurazione della notifica di Operations Manager, vedere Configuring Notification in <A class=uri href="http://go.microsoft.com/fwlink/p/?linkid=268785">http://go.microsoft.com/fwlink/p/?linkid=268785</A>the TechNet Library at.
+    > Per ulteriori informazioni sulla configurazione della notifica di Operations Manager, vedere Configuring Notification in <A class=uri href="https://go.microsoft.com/fwlink/p/?linkid=268785">https://go.microsoft.com/fwlink/p/?linkid=268785</A>the TechNet Library at.
 
     
     </div>

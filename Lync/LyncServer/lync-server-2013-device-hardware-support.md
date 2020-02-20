@@ -12,18 +12,18 @@ ms:contentKeyID: 48185222
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e0b4b0f24523044169ae3274ae4d0ff16ae9ff67
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: b5b2d730181426d5b23463816d13a6f3b0e502b0
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42044988"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42146919"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="device-hardware-support-in-lync-server-2013"></a>Supporto hardware per dispositivi in Lync Server 2013
 
@@ -53,7 +53,7 @@ Inoltre, se la distribuzione include dispositivi analogici, è necessario config
 
   - Un Survivable Branch Appliance che include un gateway PSTN che comunica con un adattatore telefonico analogico
 
-Per informazioni su come configurare un gateway analogico, vedere la sezione relativa alla pianificazione [http://go.microsoft.com/fwlink/p/?LinkId=268537](http://go.microsoft.com/fwlink/p/?linkid=268537) della distribuzione di dispositivi analogici nella libreria TechNet di Lync Server 2010. I dispositivi analogici funzionano nello stesso modo in Lync Server 2013 come in Lync Server 2010.
+Per informazioni su come configurare un gateway analogico, vedere la sezione relativa alla pianificazione [https://go.microsoft.com/fwlink/p/?LinkId=268537](https://go.microsoft.com/fwlink/p/?linkid=268537) della distribuzione di dispositivi analogici nella libreria TechNet di Lync Server 2010. I dispositivi analogici funzionano nello stesso modo in Lync Server 2013 come in Lync Server 2010.
 
 <div>
 

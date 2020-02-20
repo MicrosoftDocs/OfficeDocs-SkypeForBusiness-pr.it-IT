@@ -12,18 +12,18 @@ ms:contentKeyID: 48185060
 ms.date: 12/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3326db7ce62279c4295bc13ec262a5a553ca5e62
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 24a6d816f2f50c36694317f442cc79d06f077ef0
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42038698"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42142502"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="steps-to-prepare-and-deploy-lync-server-2013-hybrid-environment"></a>Passaggi per la preparazione e la distribuzione dell'ambiente ibrido di Lync Server 2013
 
@@ -59,7 +59,7 @@ Nella tabella seguente sono elencati i passaggi necessari per preparare l'ambien
 <td><p>Creare un account tenant per Office 365 e abilitare Lync Online</p></td>
 <td><p>Informazioni su Office 365 e Lync online in <a href="https://go.microsoft.com/fwlink/p/?linkid=254980">office 365</a>.</p>
 <p>Per assicurarsi che l'ambiente sia pronto per Office 365, vedere i <a href="https://go.microsoft.com/fwlink/p/?linkid=401408">requisiti di sistema</a>.</p>
-<p>Per informazioni dettagliate sulla configurazione di Office 365, vedere <a href="https://go.microsoft.com/fwlink/p/?linkid=254982">Guida introduttiva a office 365</a> e <a href="http://go.microsoft.com/fwlink/p/?linkid=254979">configurazione di Office 365</a>.</p></td>
+<p>Per informazioni dettagliate sulla configurazione di Office 365, vedere <a href="https://go.microsoft.com/fwlink/p/?linkid=254982">Guida introduttiva a office 365</a> e <a href="https://go.microsoft.com/fwlink/p/?linkid=254979">configurazione di Office 365</a>.</p></td>
 </tr>
 <tr class="even">
 <td></td>

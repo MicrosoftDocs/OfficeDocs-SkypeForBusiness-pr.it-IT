@@ -12,18 +12,18 @@ ms:contentKeyID: 48183391
 ms.date: 10/02/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 199191b8e87ba7f46956ff92fcda7239ff27dc5c
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: c6eb9a3db2f9b3a14726fb7ffbec05b96b15ec81
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029847"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42142442"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="supported-active-directory-topologies-in-lync-server-2013"></a>Topologie di Active Directory supportate in Lync Server 2013
 
@@ -159,7 +159,7 @@ Nella figura seguente viene illustrata la topologia con foresta delle risorse.
 
 In questa topologia, una o più foreste si trovano in locale e sono dedicate all'hosting degli account utente di Active Directory. La foresta di risorse si trova fuori sede ed è gestita da un provider di hosting di terze parti. La foresta di risorse contiene solo la distribuzione di Lync Server e una replica sincronizzata degli account utente dalla foresta degli account utente locali. Non contiene account utente abilitati per l'accesso. Exchange è distribuito in una foresta di account utente locale integrata insieme a Exchange Online (ibrido) oppure i servizi di posta elettronica per gli account utente locali sono forniti esclusivamente da Exchange Online.
 
-La foresta di risorse funge da ambiente di servizi condivisi per le foreste di Active Directory locali in cui risiedono gli oggetti utente. Le foreste degli account utente dispongono di una relazione di trust a livello di foresta unidirezionale con la foresta di risorse. Quando si distribuisce Lync Server in questo tipo di topologia, è possibile creare un oggetto utente disabilitato nella foresta di risorse per ogni account utente nelle foreste di utenti. Un prodotto di sincronizzazione della directory, come MIIS, Microsoft Forefront Identity Manager (FIM) 2010 o Microsoft Identity Lifecycle Manager (ILM) 2007 Feature Pack 1 (FP1), gestisce il ciclo di vita degli account utente. Quando un nuovo account utente viene creato in una delle foreste degli utenti o un account utente viene eliminato da una foresta, il prodotto di sincronizzazione della directory sincronizza la rappresentazione dell'utente corrispondente nella foresta delle risorse. Per ulteriori informazioni sulla configurazione di una distribuzione a più foreste, vedere [Deploying Lync in a multi-Forest Architecture (Partner Hosted Lync with Exchange Hybrid)](http://go.microsoft.com/fwlink/p/?linkid=513216).
+La foresta di risorse funge da ambiente di servizi condivisi per le foreste di Active Directory locali in cui risiedono gli oggetti utente. Le foreste degli account utente dispongono di una relazione di trust a livello di foresta unidirezionale con la foresta di risorse. Quando si distribuisce Lync Server in questo tipo di topologia, è possibile creare un oggetto utente disabilitato nella foresta di risorse per ogni account utente nelle foreste di utenti. Un prodotto di sincronizzazione della directory, come MIIS, Microsoft Forefront Identity Manager (FIM) 2010 o Microsoft Identity Lifecycle Manager (ILM) 2007 Feature Pack 1 (FP1), gestisce il ciclo di vita degli account utente. Quando un nuovo account utente viene creato in una delle foreste degli utenti o un account utente viene eliminato da una foresta, il prodotto di sincronizzazione della directory sincronizza la rappresentazione dell'utente corrispondente nella foresta delle risorse. Per ulteriori informazioni sulla configurazione di una distribuzione a più foreste, vedere [Deploying Lync in a multi-Forest Architecture (Partner Hosted Lync with Exchange Hybrid)](https://go.microsoft.com/fwlink/p/?linkid=513216).
 
 </div>
 

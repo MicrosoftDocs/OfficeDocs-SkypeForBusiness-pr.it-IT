@@ -12,18 +12,18 @@ ms:contentKeyID: 48184758
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1ce93f84f977630ec4b0764b67ce4622c9b81f53
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: ac5b0775753d0c7957ab2f8be59a50f1538084c8
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42041536"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42145204"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="voice-normalization-rules-cmdlets-in-lync-server-2013"></a>Cmdlet per le regole di normalizzazione vocale in Lync Server 2013
 
@@ -77,7 +77,7 @@ I cmdlet seguenti possono essere utilizzati per la gestione delle regole di norm
 [Cmdlet di VoIP aziendale in Lync Server 2013](lync-server-2013-enterprise-voice-cmdlets.md)  
 
 
-[Blog di PowerShell per Lync Server](http://go.microsoft.com/fwlink/p/?linkid=203150)  
+[Blog di PowerShell per Lync Server](https://go.microsoft.com/fwlink/p/?linkid=203150)  
   
 
 </div>

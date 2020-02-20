@@ -12,18 +12,18 @@ ms:contentKeyID: 48184882
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 1b4769e068ff079a8a5ad55177870ac9fe8e932c
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 7073ad8b4268aa76a409cd7e52f35402cca932c7
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029827"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42142422"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="supported-devices-in-lync-server-2013"></a>Dispositivi supportati in Lync Server 2013
 
@@ -49,7 +49,7 @@ Lync Server supporta tutti i telefoni elencati nella tabella seguente. Si noti c
 
 </div>
 
-Per informazioni dettagliate sulle tabelle di confronto su tutti i dispositivi ottimizzati per l'utilizzo con Lync, vedere "telefoni e dispositivi qualificati per <http://go.microsoft.com/fwlink/p/?linkid=208938>Microsoft Lync" all'indirizzo. Le tabelle di confronto dei telefoni in questo sito Web includono informazioni sui prezzi e specifiche tecniche.
+Per informazioni dettagliate sulle tabelle di confronto su tutti i dispositivi ottimizzati per l'utilizzo con Lync, vedere "telefoni e dispositivi qualificati per <https://go.microsoft.com/fwlink/p/?linkid=208938>Microsoft Lync" all'indirizzo. Le tabelle di confronto dei telefoni in questo sito Web includono informazioni sui prezzi e specifiche tecniche.
 
 
 <table>
@@ -89,32 +89,32 @@ Per informazioni dettagliate sulle tabelle di confronto su tutti i dispositivi o
 <tr class="odd">
 <td><p>telefono da tavolo Polycom CX300</p></td>
 <td></td>
-<td><p><a href="http://support.polycom.com/polycomservice/support/us/support/voice/cx/communicator_cx300.html">CX300</a> sul sito Web Polycom</p></td>
+<td><p><a href="https://support.polycom.com/polycomservice/support/us/support/voice/cx/communicator_cx300.html">CX300</a> sul sito Web Polycom</p></td>
 </tr>
 <tr class="even">
 <td><p>Telefono di area comune IP Polycom CX500</p></td>
 <td><p>X</p></td>
-<td><p><a href="http://support.polycom.com/polycomservice/support/us/support/voice/cx/communicator_cx500.html">CX500</a> sul sito Web Polycom</p></td>
+<td><p><a href="https://support.polycom.com/polycomservice/support/us/support/voice/cx/communicator_cx500.html">CX500</a> sul sito Web Polycom</p></td>
 </tr>
 <tr class="odd">
 <td><p>Telefono da tavolo IP Polycom CX600</p></td>
 <td><p>X</p></td>
-<td><p><a href="http://support.polycom.com/polycomservice/support/us/support/voice/cx/communicator_cx600.html">CX600</a> sul sito Web Polycom</p></td>
+<td><p><a href="https://support.polycom.com/polycomservice/support/us/support/voice/cx/communicator_cx600.html">CX600</a> sul sito Web Polycom</p></td>
 </tr>
 <tr class="even">
 <td><p>telefono IP da tavolo Polycom CX700</p></td>
 <td></td>
-<td><p><a href="http://support.polycom.com/polycomservice/support/us/support/voice/cx/communicator_cx700.html">CX700</a> sul sito Web Polycom</p></td>
+<td><p><a href="https://support.polycom.com/polycomservice/support/us/support/voice/cx/communicator_cx700.html">CX700</a> sul sito Web Polycom</p></td>
 </tr>
 <tr class="odd">
 <td><p>Telefono IP per conferenze Polycom CX3000</p></td>
 <td><p>X</p></td>
-<td><p><a href="http://support.polycom.com/polycomservice/support/us/support/voice/cx/cx3000.html">CX3000</a> sul sito Web Polycom</p></td>
+<td><p><a href="https://support.polycom.com/polycomservice/support/us/support/voice/cx/cx3000.html">CX3000</a> sul sito Web Polycom</p></td>
 </tr>
 <tr class="even">
 <td><p>dispositivo per conferenze Polycom CX5000 USB</p></td>
 <td></td>
-<td><p><a href="http://support.polycom.com/polycomservice/support/us/support/voice/cx/cx5000.html">CX5000</a> sul sito Web Polycom</p></td>
+<td><p><a href="https://support.polycom.com/polycomservice/support/us/support/voice/cx/cx5000.html">CX5000</a> sul sito Web Polycom</p></td>
 </tr>
 </tbody>
 </table>
@@ -124,7 +124,7 @@ Per informazioni dettagliate sulle tabelle di confronto su tutti i dispositivi o
 
 
 > [!NOTE]  
-> È disponibile anche il supporto per dispositivi analogici. Per informazioni dettagliate, vedere <A href="http://go.microsoft.com/fwlink/p/?linkid=257502">pianificazione della distribuzione di dispositivi analogici</A> nella libreria TechNet di Lync Server 2010. (Lync Phone Edition è compatibile con Lync Server 2013 e Lync Server 2010).
+> È disponibile anche il supporto per dispositivi analogici. Per informazioni dettagliate, vedere <A href="https://go.microsoft.com/fwlink/p/?linkid=257502">pianificazione della distribuzione di dispositivi analogici</A> nella libreria TechNet di Lync Server 2010. (Lync Phone Edition è compatibile con Lync Server 2013 e Lync Server 2010).
 
 
 

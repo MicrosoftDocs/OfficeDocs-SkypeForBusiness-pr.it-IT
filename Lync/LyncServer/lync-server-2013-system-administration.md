@@ -12,18 +12,18 @@ ms:contentKeyID: 63969577
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 61285a73ba7fd3689842f15967286c4393b8e927
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 5e910da744bf88b485fc693c02544ad8a7093ead
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42030790"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42142282"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="system-administration-in-lync-server-2013"></a>Amministrazione di sistema in Lync Server 2013
 
@@ -75,7 +75,7 @@ Nel diagramma seguente viene illustrato il processo di risoluzione dei problemi 
 
 Gli strumenti di Service Desk consentono al personale di registrare, classificare e assegnare una priorità ai nuovi problemi. Gli strumenti forniranno quindi i processi del flusso di lavoro per gestire la richiesta di servizio di problema tramite indagini e diagnosi, spesso da più di un team di supporto. Gli strumenti, che forniscono spesso report sui tempi di risoluzione e le tendenze storiche, possono includere anche un database della Knowledge base, che può essere utilizzato per eseguire ricerche nei problemi precedenti.
 
-La Microsoft Knowledge base è un utile record di problemi di supporto che sono stati rilevati da Microsoft. Per ulteriori informazioni, vedere il sito Web del supporto<http://go.microsoft.com/fwlink/?linkid=14898>tecnico Microsoft ().
+La Microsoft Knowledge base è un utile record di problemi di supporto che sono stati rilevati da Microsoft. Per ulteriori informazioni, vedere il sito Web del supporto<https://go.microsoft.com/fwlink/?linkid=14898>tecnico Microsoft ().
 
 Il software di terze parti in genere richiede la personalizzazione in base alle esigenze dell'organizzazione, ad esempio l'organizzazione di Team, i requisiti per la creazione di report e le misure richieste dal contratto di servizio.
 

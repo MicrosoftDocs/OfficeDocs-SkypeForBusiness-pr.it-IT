@@ -12,18 +12,18 @@ ms:contentKeyID: 48183343
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5e3993c2259d42bfa632394cb3c9acaf70f26cdc
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 12a6e5d94cef7c9f25bb1c4091a981603f66da82
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42035298"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42145935"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="configure-policies-to-control-public-user-access-in-lync-server-2013"></a>Configurazione di criteri per il controllo dell'accesso degli utenti pubblici in Lync Server 2013
 
@@ -37,7 +37,7 @@ ms.locfileid: "42035298"
 
 _**Ultimo argomento modificato:** 2013-10-07_
 
-La connettività di messaggistica istantanea pubblica consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider di servizi di messaggistica istantanea pubblica, tra cui la\!rete Windows Live di servizi Internet, Yahoo e AOL. È possibile configurare uno o più criteri di accesso utente esterno per controllare se gli utenti pubblici possono collaborare con gli utenti interni di Lync Server. La connettività per la messaggistica istantanea pubblica è una funzionalità aggiunta che si basa sulla configurazione della distribuzione e degli utenti. Dipende anche dal provisioning del servizio nel provider di messaggistica istantanea pubblico. Per informazioni su come eseguire il provisioning della distribuzione per l'utilizzo dei provider pubblici, vedere la guida sulla guida al provisioning della connettività per la messaggistica istantanea pubblica per Microsoft Lync Server, Office Communications Server e Live Communications Server:[http://go.microsoft.com/fwlink/?LinkId=269821](http://go.microsoft.com/fwlink/?linkid=269821)
+La connettività di messaggistica istantanea pubblica consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider di servizi di messaggistica istantanea pubblica, tra cui la\!rete Windows Live di servizi Internet, Yahoo e AOL. È possibile configurare uno o più criteri di accesso utente esterno per controllare se gli utenti pubblici possono collaborare con gli utenti interni di Lync Server. La connettività per la messaggistica istantanea pubblica è una funzionalità aggiunta che si basa sulla configurazione della distribuzione e degli utenti. Dipende anche dal provisioning del servizio nel provider di messaggistica istantanea pubblico. Per informazioni su come eseguire il provisioning della distribuzione per l'utilizzo dei provider pubblici, vedere la guida sulla guida al provisioning della connettività per la messaggistica istantanea pubblica per Microsoft Lync Server, Office Communications Server e Live Communications Server:[https://go.microsoft.com/fwlink/?LinkId=269821](https://go.microsoft.com/fwlink/?linkid=269821)
 
 <div>
 
@@ -55,7 +55,7 @@ La connettività di messaggistica istantanea pubblica consente agli utenti dell'
 
 </div>
 
-Per accedere al sito di provisioning di connettività per messaggistica istantanea pubblica di Microsoft Lync Server, utilizzare il seguente collegamento:[http://go.microsoft.com/fwlink/p/?linkId=212638](http://go.microsoft.com/fwlink/p/?linkid=212638)
+Per accedere al sito di provisioning di connettività per messaggistica istantanea pubblica di Microsoft Lync Server, utilizzare il seguente collegamento:[https://go.microsoft.com/fwlink/p/?linkId=212638](https://go.microsoft.com/fwlink/p/?linkid=212638)
 
 Per controllare l'accesso degli utenti pubblici, è possibile configurare i criteri a livello globale, di sito e di utente. Per informazioni dettagliate sui tipi di criteri che è possibile configurare, vedere [configurazione del supporto per l'accesso degli utenti esterni in Lync Server 2013](lync-server-2013-configuring-support-for-external-user-access.md) nella documentazione relativa alla distribuzione o nella documentazione relativa alla pianificazione. Le impostazioni criteri di Lync Server applicate a un determinato livello di criteri possono sostituire le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri di Lync Server è la seguente: i criteri utente (maggiore influenza) sostituiscono i criteri sito e i criteri sito sostituiscono i criteri globali (minore influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto.
 

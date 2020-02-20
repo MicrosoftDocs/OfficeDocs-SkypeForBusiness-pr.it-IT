@@ -12,18 +12,18 @@ ms:contentKeyID: 49733649
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 44de5139d3ad8f38c5177a18260045fda7abdeea
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 0aa52a844a0ed1bff9ca2c9d2f7e5fc70a6a2e95
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42035308"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42145405"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="integrating-microsoft-lync-server-2013-and-microsoft-outlook-web-app-2013"></a>Integrazione di Microsoft Lync Server 2013 e Microsoft Outlook Web App 2013
 
@@ -41,11 +41,11 @@ Oltre all'integrazione con Microsoft Outlook 2013, Microsoft Lync Server 2013 pu
 
 HKEY\_Local\_Machine\\System\\CurrentControlSet\\Services\\MSExchange OWA\\InstantMessaging\\ImplementationDLLPath
 
-Il ImplementationDLLPath deve puntare al percorso della cartella per il file Microsoft. Rtc. Internal. UCWEB. dll. In caso contrario, o se il valore del registro di sistema non esiste, è necessario scaricare e installare il programma di installazione di UCMA runtime dall'area download Microsoft <http://www.microsoft.com/download/details.aspx?id=34992>all'indirizzo. Le informazioni su come installare il runtime di UCMA sono disponibili nella stessa pagina Web.
+Il ImplementationDLLPath deve puntare al percorso della cartella per il file Microsoft. Rtc. Internal. UCWEB. dll. In caso contrario, o se il valore del registro di sistema non esiste, è necessario scaricare e installare il programma di installazione di UCMA runtime dall'area download Microsoft <https://www.microsoft.com/download/details.aspx?id=34992>all'indirizzo. Le informazioni su come installare il runtime di UCMA sono disponibili nella stessa pagina Web.
 
 **Compatibilità con le versioni precedenti**
 
-Lync Server 2013 può essere integrato con le versioni di Microsoft Exchange Server 2010 di messaggistica unificata e Outlook Web App. Per ulteriori informazioni, vedere l'articolo Deploying on-premises Exchange Messaggistica unificata per fornire Lync [http://technet.microsoft.com/library/gg398768.aspx](lync-server-2013-deploying-on-premises-exchange-um-to-provide-lync-server-2013-voice-mail.md)Server 2010 segreteria telefonica. Se si integra con Exchange 2010, non si disporranno di funzionalità specifiche di Lync Server, come l'archivio contatti unificato e l'archiviazione Lync-to-Exchange.
+Lync Server 2013 può essere integrato con le versioni di Microsoft Exchange Server 2010 di messaggistica unificata e Outlook Web App. Per ulteriori informazioni, vedere l'articolo Deploying on-premises Exchange Messaggistica unificata per fornire Lync [https://technet.microsoft.com/library/gg398768.aspx](lync-server-2013-deploying-on-premises-exchange-um-to-provide-lync-server-2013-voice-mail.md)Server 2010 segreteria telefonica. Se si integra con Exchange 2010, non si disporranno di funzionalità specifiche di Lync Server, come l'archivio contatti unificato e l'archiviazione Lync-to-Exchange.
 
 Microsoft Lync 2013 può essere utilizzato anche in combinazione con Exchange 2010 e Outlook 2010. Ancora una volta, tuttavia, le nuove funzionalità come l'archivio contatti unificato e le foto ad alta risoluzione non saranno disponibili per gli utenti di Lync 2013. Queste nuove funzionalità richiedono sia Lync Server 2013 sia Exchange 2013.
 

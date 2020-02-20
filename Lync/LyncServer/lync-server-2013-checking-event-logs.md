@@ -12,18 +12,18 @@ ms:contentKeyID: 63969602
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a15fb690dc213dbe22377b988f82dd59d6eb8a03
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 41c49839b01b531c1cd4c9a5eb4cff5fb6a155f4
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42045668"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42145965"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="checking-event-logs-in-lync-server-2013"></a>Controllo dei registri eventi in Lync Server 2013
 
@@ -37,7 +37,7 @@ ms.locfileid: "42045668"
 
 _**Ultimo argomento modificato:** 2014-08-06_
 
-È possibile utilizzare il [Visualizzatore eventi di Windows](http://go.microsoft.com/fwlink/p/?linkid=314067) per visualizzare i registri eventi e ottenere informazioni sugli errori relativi ai servizi, sui problemi di replica in servizi di dominio Active Directory e sugli avvisi relativi alle risorse di sistema, ad esempio la memoria virtuale e lo spazio su disco. Il Visualizzatore eventi è incluso in Windows Server 2008 e 2012.
+È possibile utilizzare il [Visualizzatore eventi di Windows](https://go.microsoft.com/fwlink/p/?linkid=314067) per visualizzare i registri eventi e ottenere informazioni sugli errori relativi ai servizi, sui problemi di replica in servizi di dominio Active Directory e sugli avvisi relativi alle risorse di sistema, ad esempio la memoria virtuale e lo spazio su disco. Il Visualizzatore eventi è incluso in Windows Server 2008 e 2012.
 
 Nello strumento di registrazione di Lync Server 2013, quando si termina la sessione di debug, fare clic su **Analizza file di registro** per visualizzare i file di registro utilizzando lo strumento Snooper.
 
@@ -93,16 +93,16 @@ Il Management Pack fornisce le caratteristiche seguenti:
 
 Per ulteriori informazioni su Lync Server 2013 Management Pack, fare riferimento a [monitoraggio di Lync server 2013 con System Center Operations Manager](lync-server-2013-monitoring-lync-server-with-system-center-operations-manager.md).
 
-**Comb**   eventi lo strumento pettini eventi raccoglie eventi specifici dai registri eventi di più computer in una posizione centrale. Consente di segnalare solo gli ID eventi o le origini eventi specificate. Per ulteriori informazioni su pettine eventi, vedere il sito Web [Account Lockout and Management Tools](http://go.microsoft.com/fwlink/?linkid=35607) .
+**Comb**   eventi lo strumento pettini eventi raccoglie eventi specifici dai registri eventi di più computer in una posizione centrale. Consente di segnalare solo gli ID eventi o le origini eventi specificate. Per ulteriori informazioni su pettine eventi, vedere il sito Web [Account Lockout and Management Tools](https://go.microsoft.com/fwlink/?linkid=35607) .
 
-**Trigger di evento**   in Windows Server 2012 è possibile "collegare un'attività a questo evento" all'interno del Visualizzatore eventi di Windows, in cui un amministratore può eseguire un programma, inviare un messaggio di posta elettronica o visualizzare un messaggio sullo schermo. Per ulteriori informazioni su questa funzionalità, vedere l'argomento Windows Server 2008 R2 [eseguire un'attività in risposta a un determinato evento](http://technet.microsoft.com/library/cc748900.aspx). È inoltre possibile utilizzare gli strumenti della riga di comando, ad esempio ' EventTrigger. exe ', per creare e query registri eventi e associare programmi con eventi registrati specifici. Utilizzando eventtriggers. exe, è possibile creare trigger di evento che eseguono programmi quando si verificano eventi specifici.
+**Trigger di evento**   in Windows Server 2012 è possibile "collegare un'attività a questo evento" all'interno del Visualizzatore eventi di Windows, in cui un amministratore può eseguire un programma, inviare un messaggio di posta elettronica o visualizzare un messaggio sullo schermo. Per ulteriori informazioni su questa funzionalità, vedere l'argomento Windows Server 2008 R2 [eseguire un'attività in risposta a un determinato evento](https://technet.microsoft.com/library/cc748900.aspx). È inoltre possibile utilizzare gli strumenti della riga di comando, ad esempio ' EventTrigger. exe ', per creare e query registri eventi e associare programmi con eventi registrati specifici. Utilizzando eventtriggers. exe, è possibile creare trigger di evento che eseguono programmi quando si verificano eventi specifici.
 
 <div>
 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Visualizzatore eventi di Windows](http://go.microsoft.com/fwlink/p/?linkid=314067)  
+[Visualizzatore eventi di Windows](https://go.microsoft.com/fwlink/p/?linkid=314067)  
   
 
 </div>

@@ -12,18 +12,18 @@ ms:contentKeyID: 48184085
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 830d9d48e68142cf32f14d428fb48e3ab20afaca
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 9c380cb67e1e156bef616f81ce0c42f699b472d8
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42047281"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42144943"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="request-and-configure-a-certificate-for-your-reverse-http-proxy-in-lync-server-2013"></a>Richiedere e configurare un certificato per il proxy inverso HTTP in Lync Server 2013
 
@@ -156,7 +156,7 @@ Per generare una richiesta di firma del certificato nel computer in cui verrà a
 
 **Creazione di una richiesta di firma del certificato**
 
-1.  Aprire Microsoft Management Console (MMC) e aggiungere lo snap-in certificati e selezionare **computer**, quindi espandere **personale**. Per informazioni dettagliate su come creare una console di certificati in Microsoft Management Console (MMC), vedere [http://go.microsoft.com/fwlink/?LinkId=282616](http://go.microsoft.com/fwlink/?linkid=282616).
+1.  Aprire Microsoft Management Console (MMC) e aggiungere lo snap-in certificati e selezionare **computer**, quindi espandere **personale**. Per informazioni dettagliate su come creare una console di certificati in Microsoft Management Console (MMC), vedere [https://go.microsoft.com/fwlink/?LinkId=282616](https://go.microsoft.com/fwlink/?linkid=282616).
 
 2.  Fare clic con il pulsante destro del mouse su **certificati**, scegliere **tutte le attività**, fare clic su **operazioni avanzate**, su **Crea richiesta personalizzata**.
 
@@ -217,7 +217,7 @@ Per generare una richiesta di firma del certificato nel computer in cui verrà a
     
 
     > [!IMPORTANT]
-    > Microsoft ha identificato le CA pubbliche che soddisfano i requisiti per le comunicazioni unificate. Un elenco viene mantenuto nell'articolo della Knowledge Base seguente. <A href="http://go.microsoft.com/fwlink/?linkid=282625">http://go.microsoft.com/fwlink/?LinkId=282625</A>
+    > Microsoft ha identificato le CA pubbliche che soddisfano i requisiti per le comunicazioni unificate. Un elenco viene mantenuto nell'articolo della Knowledge Base seguente. <A href="https://go.microsoft.com/fwlink/?linkid=282625">https://go.microsoft.com/fwlink/?LinkId=282625</A>
 
     
     </div>

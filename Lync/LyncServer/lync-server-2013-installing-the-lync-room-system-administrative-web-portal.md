@@ -12,18 +12,18 @@ ms:contentKeyID: 56737622
 ms.date: 04/09/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6af0f52b940e9bcfb78048ef3a2c60f09d265073
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 24757a87279f64dd903ed4fdfb26169b606f899c
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42045238"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42146759"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="installing-the-lync-room-system-administrative-web-portal-in-lync-server-2013"></a>Installazione del portale Web amministrativo di Lync room System in Lync Server 2013
 
@@ -37,7 +37,7 @@ ms.locfileid: "42045238"
 
 _**Ultimo argomento modificato:** 2015-04-09_
 
-È possibile scaricare il portale Web amministrativo Microsoft Lync room System dall'area download Microsoft all'indirizzo [http://go.microsoft.com/fwlink/p/?LinkId=324044](http://go.microsoft.com/fwlink/p/?linkid=324044).
+È possibile scaricare il portale Web amministrativo Microsoft Lync room System dall'area download Microsoft all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=324044](https://go.microsoft.com/fwlink/p/?linkid=324044).
 
 Per installare il portale Web amministrativo di Lync room System, attenersi alla seguente procedura.
 
@@ -82,7 +82,7 @@ Per verificare l'installazione del portale Web amministrativo di Lync room Syste
     
     https://\<Fe-server\>/LRS
     
-    Per accedere alla pagina, è necessario aggiungere i record DNS come descritto nella sezione "record DNS necessari per l'accesso automatico dei client" all'indirizzo [http://go.microsoft.com/fwlink/p/?LinkId=318056](http://go.microsoft.com/fwlink/p/?linkid=318056).
+    Per accedere alla pagina, è necessario aggiungere i record DNS come descritto nella sezione "record DNS necessari per l'accesso automatico dei client" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=318056](https://go.microsoft.com/fwlink/p/?linkid=318056).
 
 </div>
 

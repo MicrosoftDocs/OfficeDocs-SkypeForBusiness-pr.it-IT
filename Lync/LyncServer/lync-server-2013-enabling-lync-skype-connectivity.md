@@ -12,18 +12,18 @@ ms:contentKeyID: 57793361
 ms.date: 12/16/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d2b950b8ff778ee48014dc951d89baafab59510c
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 4bb14153739c5f29e88044eae89a1322b046a0a1
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42048219"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42146439"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="enabling-lync-skype-connectivity-in-lync-server-2013"></a>Abilitazione della connettività Lync-Skype in Lync Server 2013
 
@@ -87,9 +87,9 @@ Utilizzando Lync Server Management Shell, un amministratore deve configurare il 
 
 </div>
 
-1.  Per configurare la Federazione e il PIC, vedere "abilitare o disabilitare la Federazione e la connettività [http://go.microsoft.com/fwlink/p/?LinkId=306063](http://go.microsoft.com/fwlink/p/?linkid=306063)per la messaggistica istantanea pubblica" all'indirizzo.
+1.  Per configurare la Federazione e il PIC, vedere "abilitare o disabilitare la Federazione e la connettività [https://go.microsoft.com/fwlink/p/?LinkId=306063](https://go.microsoft.com/fwlink/p/?linkid=306063)per la messaggistica istantanea pubblica" all'indirizzo.
 
-2.  Per configurare almeno un criterio per il supporto dell'accesso degli utenti federati, vedere la sezione relativa alla configurazione di criteri per [http://go.microsoft.com/fwlink/p/?LinkId=306064](http://go.microsoft.com/fwlink/p/?linkid=306064)il controllo dell'accesso degli utenti pubblici all'indirizzo.
+2.  Per configurare almeno un criterio per il supporto dell'accesso degli utenti federati, vedere la sezione relativa alla configurazione di criteri per [https://go.microsoft.com/fwlink/p/?LinkId=306064](https://go.microsoft.com/fwlink/p/?linkid=306064)il controllo dell'accesso degli utenti pubblici all'indirizzo.
 
 **Per modificare un provider di Messenger o Skype PIC esistente e configurarlo per Skype**
 
@@ -123,7 +123,7 @@ Utilizzando Lync Server Management Shell, un amministratore deve configurare il 
     
     ![Aggiungere contatti Skype](images/Dn440170.df0e6ed9-2374-4dfa-a815-87281989487c(OCS.15).jpg "Aggiungere contatti Skype")
 
-4.  Per informazioni dettagliate sulla modifica dei provider ospitati, vedere "creare o modificare provider federati SIP ospitati" all'indirizzo [http://go.microsoft.com/fwlink/p/?LinkId=306065](http://go.microsoft.com/fwlink/p/?linkid=306065).
+4.  Per informazioni dettagliate sulla modifica dei provider ospitati, vedere "creare o modificare provider federati SIP ospitati" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=306065](https://go.microsoft.com/fwlink/p/?linkid=306065).
 
 Vengono completate le attività amministrative che devono essere eseguite sul server. È ora configurato per la connettività Lync-Skype.
 

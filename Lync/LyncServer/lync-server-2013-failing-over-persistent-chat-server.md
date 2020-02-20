@@ -12,18 +12,18 @@ ms:contentKeyID: 48183726
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a0d5ac758c1e4c87fd5559da1c2a9cf388dc8834
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 91c4d5092fc12ac374b57872b7cda2d6f88d9e33
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42043818"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42145845"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="failing-over-persistent-chat-server-in-lync-server-2013"></a>Failover del server Chat persistente in Lync Server 2013
 
@@ -69,7 +69,7 @@ Non è stato eseguito il failover del database di conformità di Persistent Chat
 
 2.  Copiare i file di backup non copiati dalla condivisione di backup nella cartella di destinazione della copia del server di backup.
 
-3.  Applicare i backup dei log delle transazioni non applicati in sequenza al database secondario. Per informazioni dettagliate, vedere "How to: Apply a Transaction log backup (Transact-SQL)" http://go.microsoft.com/fwlink/p/?linkid=247428at.
+3.  Applicare i backup dei log delle transazioni non applicati in sequenza al database secondario. Per informazioni dettagliate, vedere "How to: Apply a Transaction log backup (Transact-SQL)" https://go.microsoft.com/fwlink/p/?linkid=247428at.
 
 4.  Connettere il database mgc di backup. Usando la finestra di query aperta al passaggio 1b, eseguire le operazioni seguenti:
     
