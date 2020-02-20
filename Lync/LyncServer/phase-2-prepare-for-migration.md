@@ -12,20 +12,20 @@ ms:contentKeyID: 48185920
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: febd806e55e8e2d6234818ec45eefb33cc3ef708
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: da16f66ca7a50345a810f1afce187b00e3436c5c
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42034326"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42148545"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="phase-2-prepare-for-migration"></a><span data-ttu-id="5c825-102">Fase 2: preparazione per la migrazione</span><span class="sxs-lookup"><span data-stu-id="5c825-102">Phase 2: Prepare for migration</span></span>
+# <a name="phase-2-prepare-for-migration"></a><span data-ttu-id="c221a-102">Fase 2: preparazione per la migrazione</span><span class="sxs-lookup"><span data-stu-id="c221a-102">Phase 2: Prepare for migration</span></span>
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "42034326"
 
 <span> </span>
 
-<span data-ttu-id="5c825-103">_**Ultimo argomento modificato:** 2012-09-17_</span><span class="sxs-lookup"><span data-stu-id="5c825-103">_**Topic Last Modified:** 2012-09-17_</span></span>
+<span data-ttu-id="c221a-103">_**Ultimo argomento modificato:** 2012-09-17_</span><span class="sxs-lookup"><span data-stu-id="c221a-103">_**Topic Last Modified:** 2012-09-17_</span></span>
 
-<span data-ttu-id="5c825-104">Prima di iniziare la migrazione a Lync Server 2013 da Lync Server 2010, seguire la procedura descritta in questa sezione.</span><span class="sxs-lookup"><span data-stu-id="5c825-104">Before you begin your migration to Lync Server 2013 from Lync Server 2010, follow the steps described in this section.</span></span>
+<span data-ttu-id="c221a-104">Prima di iniziare la migrazione a Lync Server 2013 da Lync Server 2010, seguire la procedura descritta in questa sezione.</span><span class="sxs-lookup"><span data-stu-id="c221a-104">Before you begin your migration to Lync Server 2013 from Lync Server 2010, follow the steps described in this section.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="5c825-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="5c825-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="c221a-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="c221a-105">In This Section</span></span>
 
-  - [<span data-ttu-id="5c825-106">Applicare gli aggiornamenti di Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="5c825-106">Apply Lync Server 2010 updates</span></span>](apply-lync-server-2010-updates.md)
+  - [<span data-ttu-id="c221a-106">Applicare gli aggiornamenti di Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="c221a-106">Apply Lync Server 2010 updates</span></span>](apply-lync-server-2010-updates.md)
 
-  - [<span data-ttu-id="5c825-107">Configurare i record DNS per la distribuzione del pool pilota</span><span class="sxs-lookup"><span data-stu-id="5c825-107">Configure DNS records for pilot pool deployment</span></span>](configure-dns-records-for-pilot-pool-deployment.md)
+  - [<span data-ttu-id="c221a-107">Configurare i record DNS per la distribuzione del pool pilota</span><span class="sxs-lookup"><span data-stu-id="c221a-107">Configure DNS records for pilot pool deployment</span></span>](configure-dns-records-for-pilot-pool-deployment.md)
 
-  - [<span data-ttu-id="5c825-108">Eseguire Best Practices Analyzer</span><span class="sxs-lookup"><span data-stu-id="5c825-108">Run Best Practices Analyzer</span></span>](run-best-practices-analyzer.md)
+  - [<span data-ttu-id="c221a-108">Eseguire Best Practices Analyzer</span><span class="sxs-lookup"><span data-stu-id="c221a-108">Run Best Practices Analyzer</span></span>](run-best-practices-analyzer.md)
 
-  - [<span data-ttu-id="5c825-109">Eseguire il backup di sistemi e dati</span><span class="sxs-lookup"><span data-stu-id="5c825-109">Back up systems and data</span></span>](back-up-systems-and-data.md)
+  - [<span data-ttu-id="c221a-109">Eseguire il backup di sistemi e dati</span><span class="sxs-lookup"><span data-stu-id="c221a-109">Back up systems and data</span></span>](back-up-systems-and-data.md)
 
-  - [<span data-ttu-id="5c825-110">Configurare i client per la migrazione</span><span class="sxs-lookup"><span data-stu-id="5c825-110">Configure clients for migration</span></span>](configure-clients-for-migration.md)
+  - [<span data-ttu-id="c221a-110">Configurare i client per la migrazione</span><span class="sxs-lookup"><span data-stu-id="c221a-110">Configure clients for migration</span></span>](configure-clients-for-migration.md)
 
-  - [<span data-ttu-id="5c825-111">Verificare l'ambiente Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="5c825-111">Verify Lync Server 2010 environment</span></span>](verify-lync-server-2010-environment.md)
+  - [<span data-ttu-id="c221a-111">Verificare l'ambiente Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="c221a-111">Verify Lync Server 2010 environment</span></span>](verify-lync-server-2010-environment.md)
 
 </div>
 

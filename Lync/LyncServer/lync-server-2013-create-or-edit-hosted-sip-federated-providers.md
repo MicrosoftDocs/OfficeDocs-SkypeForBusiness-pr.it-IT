@@ -12,20 +12,20 @@ ms:contentKeyID: 48679556
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 68e87e5a6a59c2e14705d8a89578a0408c39b8e6
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 8be79e53b0215cdfabd89e9d66f7c9e417ba40e9
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42035742"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42151958"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-edit-hosted-sip-federated-providers-lync-server-2013"></a><span data-ttu-id="6bc09-102">Creare o modificare provider federati SIP ospitati Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="6bc09-102">Create or edit hosted SIP federated providers Lync Server 2013</span></span>
+# <a name="create-or-edit-hosted-sip-federated-providers-lync-server-2013"></a><span data-ttu-id="8e587-102">Creare o modificare provider federati SIP ospitati Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8e587-102">Create or edit hosted SIP federated providers Lync Server 2013</span></span>
 
 </div>
 
@@ -35,51 +35,51 @@ ms.locfileid: "42035742"
 
 <span> </span>
 
-<span data-ttu-id="6bc09-103">_**Ultimo argomento modificato:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="6bc09-103">_**Topic Last Modified:** 2012-10-19_</span></span>
+<span data-ttu-id="8e587-103">_**Ultimo argomento modificato:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="8e587-103">_**Topic Last Modified:** 2012-10-19_</span></span>
 
-<span data-ttu-id="6bc09-104">La connettività di messaggistica istantanea (IM) del provider hosted consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti da provider ospitati, tra cui Microsoft Office 365 e Lync Online.</span><span class="sxs-lookup"><span data-stu-id="6bc09-104">Hosted provider instant messaging (IM) connectivity enables users in your organization to use IM to communicate with users of IM services provided by hosted providers, including the Microsoft Office 365 and Lync Online.</span></span>
+<span data-ttu-id="8e587-104">La connettività di messaggistica istantanea (IM) del provider hosted consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti da provider ospitati, tra cui Microsoft Office 365 e Lync Online.</span><span class="sxs-lookup"><span data-stu-id="8e587-104">Hosted provider instant messaging (IM) connectivity enables users in your organization to use IM to communicate with users of IM services provided by hosted providers, including the Microsoft Office 365 and Lync Online.</span></span>
 
-<span data-ttu-id="6bc09-105">Ogni provider ospitato è configurato con il nome di dominio completo del server perimetrale del provider e il livello di verifica predefinito **Consenti agli utenti di comunicare solo con le persone incluse nell'elenco Contatti che usano questo provider**.</span><span class="sxs-lookup"><span data-stu-id="6bc09-105">Each hosted provider is configured with the provider’s Edge server fully qualified domain name, and the default verification level **Allow users to communicate only with people on their Contacts list who use this provider**.</span></span>
+<span data-ttu-id="8e587-105">Ogni provider ospitato è configurato con il nome di dominio completo del server perimetrale del provider e il livello di verifica predefinito **Consenti agli utenti di comunicare solo con le persone incluse nell'elenco Contatti che usano questo provider**.</span><span class="sxs-lookup"><span data-stu-id="8e587-105">Each hosted provider is configured with the provider’s Edge server fully qualified domain name, and the default verification level **Allow users to communicate only with people on their Contacts list who use this provider**.</span></span>
 
-<span data-ttu-id="6bc09-106">Per creare o modificare provider gestiti, eseguire la procedura seguente:</span><span class="sxs-lookup"><span data-stu-id="6bc09-106">Use the following procedure to create or edit Hosted providers:</span></span>
+<span data-ttu-id="8e587-106">Per creare o modificare provider gestiti, eseguire la procedura seguente:</span><span class="sxs-lookup"><span data-stu-id="8e587-106">Use the following procedure to create or edit Hosted providers:</span></span>
 
 <div>
 
-## <a name="to-create-or-edit-hosted-providers"></a><span data-ttu-id="6bc09-107">Per creare o modificare provider gestiti</span><span class="sxs-lookup"><span data-stu-id="6bc09-107">To create or edit hosted providers</span></span>
+## <a name="to-create-or-edit-hosted-providers"></a><span data-ttu-id="8e587-107">Per creare o modificare provider gestiti</span><span class="sxs-lookup"><span data-stu-id="8e587-107">To create or edit hosted providers</span></span>
 
-1.  <span data-ttu-id="6bc09-108">Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="6bc09-108">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or is assigned to the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+1.  <span data-ttu-id="8e587-108">Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="8e587-108">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or is assigned to the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
 
-2.  <span data-ttu-id="6bc09-109">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="6bc09-109">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="6bc09-110">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="6bc09-110">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="8e587-109">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="8e587-109">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="8e587-110">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="8e587-110">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="6bc09-111">Nella barra di spostamento sinistra fare clic su **Federazione e accesso esterno** e quindi su **Provider federati SIP**.</span><span class="sxs-lookup"><span data-stu-id="6bc09-111">In the left navigation bar, click **Federation and External Access**, and then click **SIP Federated Providers**.</span></span>
+3.  <span data-ttu-id="8e587-111">Nella barra di spostamento sinistra fare clic su **Federazione e accesso esterno** e quindi su **Provider federati SIP**.</span><span class="sxs-lookup"><span data-stu-id="8e587-111">In the left navigation bar, click **Federation and External Access**, and then click **SIP Federated Providers**.</span></span>
 
-4.  <span data-ttu-id="6bc09-112">Se è necessario creare un nuovo provider ospitato fare clic su **Nuovo** e quindi su **Provider ospitato**.</span><span class="sxs-lookup"><span data-stu-id="6bc09-112">If you need to create a new Hosted provider, click **New** and then click **Hosted provider**.</span></span>
+4.  <span data-ttu-id="8e587-112">Se è necessario creare un nuovo provider ospitato fare clic su **Nuovo** e quindi su **Provider ospitato**.</span><span class="sxs-lookup"><span data-stu-id="8e587-112">If you need to create a new Hosted provider, click **New** and then click **Hosted provider**.</span></span>
 
-5.  <span data-ttu-id="6bc09-113">Se è necessario modificare una voce nell'elenco di provider ospitati, selezionare un provider ospitato, fare clic su **Modifica** e quindi su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="6bc09-113">If you need to edit an entry from the list of Hosted providers, select a hosted provider, click **Edit**, then click **Show details**.</span></span>
+5.  <span data-ttu-id="8e587-113">Se è necessario modificare una voce nell'elenco di provider ospitati, selezionare un provider ospitato, fare clic su **Modifica** e quindi su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="8e587-113">If you need to edit an entry from the list of Hosted providers, select a hosted provider, click **Edit**, then click **Show details**.</span></span>
 
-6.  <span data-ttu-id="6bc09-114">Nella pagina **Modifica provider federato SIP** è possibile immettere o modificare le seguenti impostazioni:</span><span class="sxs-lookup"><span data-stu-id="6bc09-114">On the **Edit SIP Federated Provider** page, you can type or edit the following settings:</span></span>
+6.  <span data-ttu-id="8e587-114">Nella pagina **Modifica provider federato SIP** è possibile immettere o modificare le seguenti impostazioni:</span><span class="sxs-lookup"><span data-stu-id="8e587-114">On the **Edit SIP Federated Provider** page, you can type or edit the following settings:</span></span>
     
-      - <span data-ttu-id="6bc09-115">**Abilitare le comunicazioni con questo provider**   selezionando questa impostazione, viene abilitata la comunicazione con gli utenti del provider.</span><span class="sxs-lookup"><span data-stu-id="6bc09-115">**Enable communications with this provider**   Selecting this setting enables communications with this provider’s users.</span></span>
+      - <span data-ttu-id="8e587-115">**Abilitare le comunicazioni con questo provider**   selezionando questa impostazione, viene abilitata la comunicazione con gli utenti del provider.</span><span class="sxs-lookup"><span data-stu-id="8e587-115">**Enable communications with this provider**   Selecting this setting enables communications with this provider’s users.</span></span>
     
-      - <span data-ttu-id="6bc09-116">**Nome provider:**   una proprietà obbligatoria, digitare il nome del provider come verrà riflesso nell'elenco dei provider federati SIP.</span><span class="sxs-lookup"><span data-stu-id="6bc09-116">**Provider name:**   A required property, type the name of the provider as it will be reflected in the listing of SIP Federated Providers.</span></span>
+      - <span data-ttu-id="8e587-116">**Nome provider:**   una proprietà obbligatoria, digitare il nome del provider come verrà riflesso nell'elenco dei provider federati SIP.</span><span class="sxs-lookup"><span data-stu-id="8e587-116">**Provider name:**   A required property, type the name of the provider as it will be reflected in the listing of SIP Federated Providers.</span></span>
     
-      - <span data-ttu-id="6bc09-117">**Servizio Access Edge (FQDN):**   una proprietà obbligatoria, digitare il nome di dominio completo del servizio Access Edge del provider ospitato che si sta configurando.</span><span class="sxs-lookup"><span data-stu-id="6bc09-117">**Access Edge service (FQDN):**   A required property, type the fully qualified domain name of the Access Edge service of the hosted provider that you are configuring.</span></span> <span data-ttu-id="6bc09-118">Queste informazioni devono essere fornite dal provider ospitato e devono essere modificate solo se il provider ospitato apporta una modifica al nome di dominio completo del servizio Access Edge nel provider ospitato.</span><span class="sxs-lookup"><span data-stu-id="6bc09-118">This information should be provided by the hosted provider, and should only be changed if the hosted provider makes a change to the FQDN of the Access Edge service at the hosted provider.</span></span>
+      - <span data-ttu-id="8e587-117">**Servizio Access Edge (FQDN):**   una proprietà obbligatoria, digitare il nome di dominio completo del servizio Access Edge del provider ospitato che si sta configurando.</span><span class="sxs-lookup"><span data-stu-id="8e587-117">**Access Edge service (FQDN):**   A required property, type the fully qualified domain name of the Access Edge service of the hosted provider that you are configuring.</span></span> <span data-ttu-id="8e587-118">Queste informazioni devono essere fornite dal provider ospitato e devono essere modificate solo se il provider ospitato apporta una modifica al nome di dominio completo del servizio Access Edge nel provider ospitato.</span><span class="sxs-lookup"><span data-stu-id="8e587-118">This information should be provided by the hosted provider, and should only be changed if the hosted provider makes a change to the FQDN of the Access Edge service at the hosted provider.</span></span>
     
-      - <span data-ttu-id="6bc09-119">**Livello di verifica predefinito:**   l'impostazione predefinita, **Consenti agli utenti di comunicare con persone presenti nell'elenco contatti che usano questo provider** limiterà la comunicazione ai contatti accettati e che si trovano nell'elenco dei contatti.</span><span class="sxs-lookup"><span data-stu-id="6bc09-119">**Default verification level:**   The default setting, **Allow users to communicate with people on their Contacts list who use this provider** will limit communication to contacts that you have accepted and are in your contact list.</span></span>
+      - <span data-ttu-id="8e587-119">**Livello di verifica predefinito:**   l'impostazione predefinita, **Consenti agli utenti di comunicare con persone presenti nell'elenco contatti che usano questo provider** limiterà la comunicazione ai contatti accettati e che si trovano nell'elenco dei contatti.</span><span class="sxs-lookup"><span data-stu-id="8e587-119">**Default verification level:**   The default setting, **Allow users to communicate with people on their Contacts list who use this provider** will limit communication to contacts that you have accepted and are in your contact list.</span></span>
         
-        <span data-ttu-id="6bc09-p103">Se si seleziona **Consenti agli utenti di comunicare con chiunque usi questo provider**, viene rimossa la limitazione che prevede che sia stato ricevuto e accettato un invito di contatto. Questa impostazione non limita gli utenti dai quali è possibile essere contattati dalla rete del provider ospitato.</span><span class="sxs-lookup"><span data-stu-id="6bc09-p103">Selecting **Allow users to communicate with everyone using this provider** removes the restriction that you must have received and accepted a contact invite. This setting does not limit who can contact you from the hosted provider’s network.</span></span>
+        <span data-ttu-id="8e587-p103">Se si seleziona **Consenti agli utenti di comunicare con chiunque usi questo provider**, viene rimossa la limitazione che prevede che sia stato ricevuto e accettato un invito di contatto. Questa impostazione non limita gli utenti dai quali è possibile essere contattati dalla rete del provider ospitato.</span><span class="sxs-lookup"><span data-stu-id="8e587-p103">Selecting **Allow users to communicate with everyone using this provider** removes the restriction that you must have received and accepted a contact invite. This setting does not limit who can contact you from the hosted provider’s network.</span></span>
 
-7.  <span data-ttu-id="6bc09-122">Terminata la configurazione delle impostazioni, fare clic su **Commit** per salvare oppure su **Annulla** per annullare le modifiche.</span><span class="sxs-lookup"><span data-stu-id="6bc09-122">When you are done configuring the settings, click **Commit** to save, or click **Cancel** to discard your changes.</span></span>
+7.  <span data-ttu-id="8e587-122">Terminata la configurazione delle impostazioni, fare clic su **Commit** per salvare oppure su **Annulla** per annullare le modifiche.</span><span class="sxs-lookup"><span data-stu-id="8e587-122">When you are done configuring the settings, click **Commit** to save, or click **Cancel** to discard your changes.</span></span>
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="6bc09-123">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="6bc09-123">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8e587-123">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="8e587-123">See Also</span></span>
 
 
-[<span data-ttu-id="6bc09-124">Configurazione di criteri per il controllo dell'accesso degli utenti pubblici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="6bc09-124">Configure policies to control public user access in Lync Server 2013</span></span>](lync-server-2013-configure-policies-to-control-public-user-access.md)  
-[<span data-ttu-id="6bc09-125">Abilitare o disabilitare la Federazione e la connettività per la messaggistica istantanea pubblica in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="6bc09-125">Enable or disable federation and public IM connectivity in Lync Server 2013</span></span>](lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md)  
+[<span data-ttu-id="8e587-124">Configurazione di criteri per il controllo dell'accesso degli utenti pubblici in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8e587-124">Configure policies to control public user access in Lync Server 2013</span></span>](lync-server-2013-configure-policies-to-control-public-user-access.md)  
+[<span data-ttu-id="8e587-125">Abilitare o disabilitare la Federazione e la connettività per la messaggistica istantanea pubblica in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8e587-125">Enable or disable federation and public IM connectivity in Lync Server 2013</span></span>](lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md)  
   
 
 </div>

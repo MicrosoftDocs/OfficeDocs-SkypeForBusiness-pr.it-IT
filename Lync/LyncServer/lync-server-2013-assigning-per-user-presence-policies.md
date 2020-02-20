@@ -12,20 +12,20 @@ ms:contentKeyID: 48185955
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 618ab1b18f92d19f65084d321b71219cc0fafb06
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: c4ae464e37c7d4061c9a7311d7df427b7a66db1c
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42030029"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42149225"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="assigning-per-user-presence-policies-in-lync-server-2013"></a><span data-ttu-id="46ccb-102">Assegnazione di criteri di presenza per utente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="46ccb-102">Assigning per-user presence policies in Lync Server 2013</span></span>
+# <a name="assigning-per-user-presence-policies-in-lync-server-2013"></a><span data-ttu-id="476f4-102">Assegnazione di criteri di presenza per utente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="476f4-102">Assigning per-user presence policies in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "42030029"
 
 <span> </span>
 
-<span data-ttu-id="46ccb-103">_**Ultimo argomento modificato:** 2012-10-11_</span><span class="sxs-lookup"><span data-stu-id="46ccb-103">_**Topic Last Modified:** 2012-10-11_</span></span>
+<span data-ttu-id="476f4-103">_**Ultimo argomento modificato:** 2012-10-11_</span><span class="sxs-lookup"><span data-stu-id="476f4-103">_**Topic Last Modified:** 2012-10-11_</span></span>
 
-<span data-ttu-id="46ccb-104">Per criteri di presenza si intende un insieme di limiti e restrizioni che influiscono sulla presenza.</span><span class="sxs-lookup"><span data-stu-id="46ccb-104">A presence policy is a set of limits and restrictions that affect presence.</span></span> <span data-ttu-id="46ccb-105">Nella tabella seguente vengono descritte le impostazioni dei criteri di presenza disponibili in Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="46ccb-105">The following table describes the presence policy settings available in Lync Server 2013.</span></span>
+<span data-ttu-id="476f4-104">Per criteri di presenza si intende un insieme di limiti e restrizioni che influiscono sulla presenza.</span><span class="sxs-lookup"><span data-stu-id="476f4-104">A presence policy is a set of limits and restrictions that affect presence.</span></span> <span data-ttu-id="476f4-105">Nella tabella seguente vengono descritte le impostazioni dei criteri di presenza disponibili in Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="476f4-105">The following table describes the presence policy settings available in Lync Server 2013.</span></span>
 
-### <a name="presence-policy-settings"></a><span data-ttu-id="46ccb-106">Impostazioni dei criteri di presenza</span><span class="sxs-lookup"><span data-stu-id="46ccb-106">Presence Policy Settings</span></span>
+### <a name="presence-policy-settings"></a><span data-ttu-id="476f4-106">Impostazioni dei criteri di presenza</span><span class="sxs-lookup"><span data-stu-id="476f4-106">Presence Policy Settings</span></span>
 
 <table>
 <colgroup>
@@ -51,44 +51,44 @@ ms.locfileid: "42030029"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="46ccb-107">Nome XML</span><span class="sxs-lookup"><span data-stu-id="46ccb-107">XML name</span></span></th>
-<th><span data-ttu-id="46ccb-108">Nome visualizzato</span><span class="sxs-lookup"><span data-stu-id="46ccb-108">Display name</span></span></th>
-<th><span data-ttu-id="46ccb-109">Descrizione</span><span class="sxs-lookup"><span data-stu-id="46ccb-109">Description</span></span></th>
-<th><span data-ttu-id="46ccb-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="46ccb-110">Type</span></span></th>
-<th><span data-ttu-id="46ccb-111">Valore</span><span class="sxs-lookup"><span data-stu-id="46ccb-111">Value</span></span></th>
+<th><span data-ttu-id="476f4-107">Nome XML</span><span class="sxs-lookup"><span data-stu-id="476f4-107">XML name</span></span></th>
+<th><span data-ttu-id="476f4-108">Nome visualizzato</span><span class="sxs-lookup"><span data-stu-id="476f4-108">Display name</span></span></th>
+<th><span data-ttu-id="476f4-109">Descrizione</span><span class="sxs-lookup"><span data-stu-id="476f4-109">Description</span></span></th>
+<th><span data-ttu-id="476f4-110">Tipo</span><span class="sxs-lookup"><span data-stu-id="476f4-110">Type</span></span></th>
+<th><span data-ttu-id="476f4-111">Valore</span><span class="sxs-lookup"><span data-stu-id="476f4-111">Value</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="46ccb-112">CategorySubscriptions</span><span class="sxs-lookup"><span data-stu-id="46ccb-112">CategorySubscriptions</span></span></p></td>
-<td><p><span data-ttu-id="46ccb-113">Numero massimo di sottoscrizioni di categoria dei sottoscrittori</span><span class="sxs-lookup"><span data-stu-id="46ccb-113">Maximum Number of Subscriber Category Subscriptions</span></span></p></td>
-<td><p><span data-ttu-id="46ccb-p102">Limita il numero di sottoscrizioni di categoria dei sottoscrittori. Ad esempio, quando Communicator sottoscrive la presenza di un utente, ottiene una sottoscrizione di categoria per ogni categoria scheda contatto, dati del calendario, note, servizi e stato.</span><span class="sxs-lookup"><span data-stu-id="46ccb-p102">Limits the number of subscriber category subscriptions. For example, when Communicator subscribes to a user’s presence, it obtains a category subscription for each of the contact card, calendar data, notes, services, and state categories.</span></span></p>
-<p><span data-ttu-id="46ccb-116">Un valore 0 indica che l'utente o l'oggetto contatto non può essere sottoscritto da altri.</span><span class="sxs-lookup"><span data-stu-id="46ccb-116">A setting of 0 means that the user or contact object cannot be subscribed to by others.</span></span></p>
+<td><p><span data-ttu-id="476f4-112">CategorySubscriptions</span><span class="sxs-lookup"><span data-stu-id="476f4-112">CategorySubscriptions</span></span></p></td>
+<td><p><span data-ttu-id="476f4-113">Numero massimo di sottoscrizioni di categoria dei sottoscrittori</span><span class="sxs-lookup"><span data-stu-id="476f4-113">Maximum Number of Subscriber Category Subscriptions</span></span></p></td>
+<td><p><span data-ttu-id="476f4-p102">Limita il numero di sottoscrizioni di categoria dei sottoscrittori. Ad esempio, quando Communicator sottoscrive la presenza di un utente, ottiene una sottoscrizione di categoria per ogni categoria scheda contatto, dati del calendario, note, servizi e stato.</span><span class="sxs-lookup"><span data-stu-id="476f4-p102">Limits the number of subscriber category subscriptions. For example, when Communicator subscribes to a user’s presence, it obtains a category subscription for each of the contact card, calendar data, notes, services, and state categories.</span></span></p>
+<p><span data-ttu-id="476f4-116">Un valore 0 indica che l'utente o l'oggetto contatto non può essere sottoscritto da altri.</span><span class="sxs-lookup"><span data-stu-id="476f4-116">A setting of 0 means that the user or contact object cannot be subscribed to by others.</span></span></p>
 <div>
 
 > [!NOTE]  
-> <span data-ttu-id="46ccb-117">Questa impostazione può avere un impatto notevole sulle prestazioni se è impostata su un valore elevato e l'utente medio presenta un numero elevato di utenti che sottoscrivono la sua presenza.</span><span class="sxs-lookup"><span data-stu-id="46ccb-117">This setting can have a significant impact on performance if it is set to a high number, and the average user has a large number of users subscribing to his or her presence.</span></span>
+> <span data-ttu-id="476f4-117">Questa impostazione può avere un impatto notevole sulle prestazioni se è impostata su un valore elevato e l'utente medio presenta un numero elevato di utenti che sottoscrivono la sua presenza.</span><span class="sxs-lookup"><span data-stu-id="476f4-117">This setting can have a significant impact on performance if it is set to a high number, and the average user has a large number of users subscribing to his or her presence.</span></span>
 
 
 </div></td>
-<td><p><span data-ttu-id="46ccb-118">Numero intero</span><span class="sxs-lookup"><span data-stu-id="46ccb-118">Integer</span></span></p></td>
-<td><p><span data-ttu-id="46ccb-119">0-3000</span><span class="sxs-lookup"><span data-stu-id="46ccb-119">0-3000</span></span></p></td>
+<td><p><span data-ttu-id="476f4-118">Numero intero</span><span class="sxs-lookup"><span data-stu-id="476f4-118">Integer</span></span></p></td>
+<td><p><span data-ttu-id="476f4-119">0-3000</span><span class="sxs-lookup"><span data-stu-id="476f4-119">0-3000</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="46ccb-120">PromptedSubscribers</span><span class="sxs-lookup"><span data-stu-id="46ccb-120">PromptedSubscribers</span></span></p></td>
-<td><p><span data-ttu-id="46ccb-121">Numero massimo di avvisi di sottoscrizione presenza in coda</span><span class="sxs-lookup"><span data-stu-id="46ccb-121">Maximum Number of Queued Presence Subscription Alerts</span></span></p></td>
-<td><p><span data-ttu-id="46ccb-p103">Limita il numero di voci nella tabella dei sottoscrittori richiedenti che possono essere accodati per un dato utente. Ad esempio, quando l'utente A sottoscrive la presenza dell'utente B, l'utente B riceve una richiesta che indica che l'utente A ha sottoscritto l'utente B e viene creata una richiesta di accettazione nella tabella dei sottoscrittori richiedenti dell'utente B. Dopo che l'utente B accetta la sottoscrizione, la richiesta di accettazione viene rimossa dalla tabella dei sottoscrittori richiedenti dell'utente B.</span><span class="sxs-lookup"><span data-stu-id="46ccb-p103">Limits the number of entries in the prompted subscribers table. This setting determines the maximum number of prompts that can be queued for a given user. For example, when user A subscribes to user B’s presence, user B receives a prompt that user A is now subscribed to user B, and an acknowledgement prompt is created in user B’s prompted subscribers table. After user B accepts, or acknowledges, the subscription, the acknowledgement prompt is removed from user B’s prompted subscribers table.</span></span></p>
-<p><span data-ttu-id="46ccb-126">Un valore 0 indica che all'utente non viene inviata alcuna richiesta quando qualcuno sottoscrive la sua presenza.</span><span class="sxs-lookup"><span data-stu-id="46ccb-126">A setting of 0 means that the user is not prompted when someone subscribes to his or her presence.</span></span></p></td>
-<td><p><span data-ttu-id="46ccb-127">Numero intero o token</span><span class="sxs-lookup"><span data-stu-id="46ccb-127">Integer or Token</span></span></p></td>
-<td><p><span data-ttu-id="46ccb-128">0-500</span><span class="sxs-lookup"><span data-stu-id="46ccb-128">0-500</span></span></p></td>
+<td><p><span data-ttu-id="476f4-120">PromptedSubscribers</span><span class="sxs-lookup"><span data-stu-id="476f4-120">PromptedSubscribers</span></span></p></td>
+<td><p><span data-ttu-id="476f4-121">Numero massimo di avvisi di sottoscrizione presenza in coda</span><span class="sxs-lookup"><span data-stu-id="476f4-121">Maximum Number of Queued Presence Subscription Alerts</span></span></p></td>
+<td><p><span data-ttu-id="476f4-p103">Limita il numero di voci nella tabella dei sottoscrittori richiedenti che possono essere accodati per un dato utente. Ad esempio, quando l'utente A sottoscrive la presenza dell'utente B, l'utente B riceve una richiesta che indica che l'utente A ha sottoscritto l'utente B e viene creata una richiesta di accettazione nella tabella dei sottoscrittori richiedenti dell'utente B. Dopo che l'utente B accetta la sottoscrizione, la richiesta di accettazione viene rimossa dalla tabella dei sottoscrittori richiedenti dell'utente B.</span><span class="sxs-lookup"><span data-stu-id="476f4-p103">Limits the number of entries in the prompted subscribers table. This setting determines the maximum number of prompts that can be queued for a given user. For example, when user A subscribes to user B’s presence, user B receives a prompt that user A is now subscribed to user B, and an acknowledgement prompt is created in user B’s prompted subscribers table. After user B accepts, or acknowledges, the subscription, the acknowledgement prompt is removed from user B’s prompted subscribers table.</span></span></p>
+<p><span data-ttu-id="476f4-126">Un valore 0 indica che all'utente non viene inviata alcuna richiesta quando qualcuno sottoscrive la sua presenza.</span><span class="sxs-lookup"><span data-stu-id="476f4-126">A setting of 0 means that the user is not prompted when someone subscribes to his or her presence.</span></span></p></td>
+<td><p><span data-ttu-id="476f4-127">Numero intero o token</span><span class="sxs-lookup"><span data-stu-id="476f4-127">Integer or Token</span></span></p></td>
+<td><p><span data-ttu-id="476f4-128">0-500</span><span class="sxs-lookup"><span data-stu-id="476f4-128">0-500</span></span></p></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="46ccb-129">Per impostazione predefinita, i **criteri** e il servizio predefiniti: i criteri di presenza **media** vengono installati quando si distribuisce Lync Server.</span><span class="sxs-lookup"><span data-stu-id="46ccb-129">By default, the **Default Policy** and **Service: Medium** presence policies are installed when you deploy Lync Server.</span></span> <span data-ttu-id="46ccb-130">Nella tabella seguente sono descritte le impostazioni specifiche dei due criteri di presenza.</span><span class="sxs-lookup"><span data-stu-id="46ccb-130">The following table describes the specific settings of the two presence policies.</span></span>
+<span data-ttu-id="476f4-129">Per impostazione predefinita, i **criteri** e il servizio predefiniti: i criteri di presenza **media** vengono installati quando si distribuisce Lync Server.</span><span class="sxs-lookup"><span data-stu-id="476f4-129">By default, the **Default Policy** and **Service: Medium** presence policies are installed when you deploy Lync Server.</span></span> <span data-ttu-id="476f4-130">Nella tabella seguente sono descritte le impostazioni specifiche dei due criteri di presenza.</span><span class="sxs-lookup"><span data-stu-id="476f4-130">The following table describes the specific settings of the two presence policies.</span></span>
 
-### <a name="presence-policies"></a><span data-ttu-id="46ccb-131">Criterio di presenza</span><span class="sxs-lookup"><span data-stu-id="46ccb-131">Presence Policies</span></span>
+### <a name="presence-policies"></a><span data-ttu-id="476f4-131">Criterio di presenza</span><span class="sxs-lookup"><span data-stu-id="476f4-131">Presence Policies</span></span>
 
 <table>
 <colgroup>
@@ -99,24 +99,24 @@ ms.locfileid: "42030029"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="46ccb-132">Nome criterio</span><span class="sxs-lookup"><span data-stu-id="46ccb-132">Policy name</span></span></th>
-<th><span data-ttu-id="46ccb-133">Descrizione</span><span class="sxs-lookup"><span data-stu-id="46ccb-133">Description</span></span></th>
-<th><span data-ttu-id="46ccb-134">CategorySubscriptions</span><span class="sxs-lookup"><span data-stu-id="46ccb-134">CategorySubscriptions</span></span></th>
-<th><span data-ttu-id="46ccb-135">PromptedSubscribers</span><span class="sxs-lookup"><span data-stu-id="46ccb-135">PromptedSubscribers</span></span></th>
+<th><span data-ttu-id="476f4-132">Nome criterio</span><span class="sxs-lookup"><span data-stu-id="476f4-132">Policy name</span></span></th>
+<th><span data-ttu-id="476f4-133">Descrizione</span><span class="sxs-lookup"><span data-stu-id="476f4-133">Description</span></span></th>
+<th><span data-ttu-id="476f4-134">CategorySubscriptions</span><span class="sxs-lookup"><span data-stu-id="476f4-134">CategorySubscriptions</span></span></th>
+<th><span data-ttu-id="476f4-135">PromptedSubscribers</span><span class="sxs-lookup"><span data-stu-id="476f4-135">PromptedSubscribers</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="46ccb-136">Criterio predefinito</span><span class="sxs-lookup"><span data-stu-id="46ccb-136">Default Policy</span></span></p></td>
-<td><p><span data-ttu-id="46ccb-p105">Criterio per gli utenti tipici. Si tratta del criterio di presenza predefinito.</span><span class="sxs-lookup"><span data-stu-id="46ccb-p105">Policy for typical users. This is the default presence policy.</span></span></p></td>
-<td><p><span data-ttu-id="46ccb-139">1000</span><span class="sxs-lookup"><span data-stu-id="46ccb-139">1000</span></span></p></td>
-<td><p><span data-ttu-id="46ccb-140">200</span><span class="sxs-lookup"><span data-stu-id="46ccb-140">200</span></span></p></td>
+<td><p><span data-ttu-id="476f4-136">Criterio predefinito</span><span class="sxs-lookup"><span data-stu-id="476f4-136">Default Policy</span></span></p></td>
+<td><p><span data-ttu-id="476f4-p105">Criterio per gli utenti tipici. Si tratta del criterio di presenza predefinito.</span><span class="sxs-lookup"><span data-stu-id="476f4-p105">Policy for typical users. This is the default presence policy.</span></span></p></td>
+<td><p><span data-ttu-id="476f4-139">1000</span><span class="sxs-lookup"><span data-stu-id="476f4-139">1000</span></span></p></td>
+<td><p><span data-ttu-id="476f4-140">200</span><span class="sxs-lookup"><span data-stu-id="476f4-140">200</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="46ccb-141">Servizio: Medio</span><span class="sxs-lookup"><span data-stu-id="46ccb-141">Service: Medium</span></span></p></td>
-<td><p><span data-ttu-id="46ccb-142">Criterio per le applicazioni che richiedono più utenti che sottoscrivano la presenza dell'oggetto.</span><span class="sxs-lookup"><span data-stu-id="46ccb-142">Policy for applications that require more users to subscribe to the object’s presence.</span></span></p></td>
-<td><p><span data-ttu-id="46ccb-143">1000</span><span class="sxs-lookup"><span data-stu-id="46ccb-143">1000</span></span></p></td>
-<td><p><span data-ttu-id="46ccb-144">0</span><span class="sxs-lookup"><span data-stu-id="46ccb-144">0</span></span></p></td>
+<td><p><span data-ttu-id="476f4-141">Servizio: Medio</span><span class="sxs-lookup"><span data-stu-id="476f4-141">Service: Medium</span></span></p></td>
+<td><p><span data-ttu-id="476f4-142">Criterio per le applicazioni che richiedono più utenti che sottoscrivano la presenza dell'oggetto.</span><span class="sxs-lookup"><span data-stu-id="476f4-142">Policy for applications that require more users to subscribe to the object’s presence.</span></span></p></td>
+<td><p><span data-ttu-id="476f4-143">1000</span><span class="sxs-lookup"><span data-stu-id="476f4-143">1000</span></span></p></td>
+<td><p><span data-ttu-id="476f4-144">0</span><span class="sxs-lookup"><span data-stu-id="476f4-144">0</span></span></p></td>
 </tr>
 </tbody>
 </table>

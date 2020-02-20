@@ -12,20 +12,20 @@ ms:contentKeyID: 48183544
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 145b5855f4576e68517e4bd837671000fb4a97e3
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 975964fa51711e633dbd191f7a9f3388ee29d0c7
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42037068"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42152208"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="reference-topologies-in-lync-server-2013"></a><span data-ttu-id="80580-102">Topologie di riferimento in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="80580-102">Reference topologies in Lync Server 2013</span></span>
+# <a name="reference-topologies-in-lync-server-2013"></a><span data-ttu-id="9ada5-102">Topologie di riferimento in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9ada5-102">Reference topologies in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "42037068"
 
 <span> </span>
 
-<span data-ttu-id="80580-103">_**Ultimo argomento modificato:** 2012-05-21_</span><span class="sxs-lookup"><span data-stu-id="80580-103">_**Topic Last Modified:** 2012-05-21_</span></span>
+<span data-ttu-id="9ada5-103">_**Ultimo argomento modificato:** 2012-05-21_</span><span class="sxs-lookup"><span data-stu-id="9ada5-103">_**Topic Last Modified:** 2012-05-21_</span></span>
 
-<span data-ttu-id="80580-104">La topologia di Lync Server ideale dipende dalle dimensioni dell'organizzazione, dai carichi di lavoro che si desidera distribuire e dalle preferenze per la disponibilità elevata rispetto al costo degli investimenti.</span><span class="sxs-lookup"><span data-stu-id="80580-104">The ideal Lync Server topology depends on your organization’s size, the workloads you want to deploy, and your preferences for high availability versus cost of investment.</span></span>
+<span data-ttu-id="9ada5-104">La topologia di Lync Server ideale dipende dalle dimensioni dell'organizzazione, dai carichi di lavoro che si desidera distribuire e dalle preferenze per la disponibilità elevata rispetto al costo degli investimenti.</span><span class="sxs-lookup"><span data-stu-id="9ada5-104">The ideal Lync Server topology depends on your organization’s size, the workloads you want to deploy, and your preferences for high availability versus cost of investment.</span></span>
 
-<span data-ttu-id="80580-105">Negli argomenti seguenti vengono illustrate tre topologie di riferimento, incluse le considerazioni che determinano molte delle decisioni alla base dei requisiti di ogni topologia.</span><span class="sxs-lookup"><span data-stu-id="80580-105">The following topics outline three reference topologies, including the reasoning behind many of the decisions that drive the requirements for each topology.</span></span>
+<span data-ttu-id="9ada5-105">Negli argomenti seguenti vengono illustrate tre topologie di riferimento, incluse le considerazioni che determinano molte delle decisioni alla base dei requisiti di ogni topologia.</span><span class="sxs-lookup"><span data-stu-id="9ada5-105">The following topics outline three reference topologies, including the reasoning behind many of the decisions that drive the requirements for each topology.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="80580-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="80580-106">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="9ada5-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="9ada5-106">In This Section</span></span>
 
-  - [<span data-ttu-id="80580-107">Topologia di riferimento per Lync Server 2013 in organizzazioni di piccole dimensioni</span><span class="sxs-lookup"><span data-stu-id="80580-107">Reference topology for Lync Server 2013 in small organizations</span></span>](lync-server-2013-reference-topology-for-small-organizations.md)
+  - [<span data-ttu-id="9ada5-107">Topologia di riferimento per Lync Server 2013 in organizzazioni di piccole dimensioni</span><span class="sxs-lookup"><span data-stu-id="9ada5-107">Reference topology for Lync Server 2013 in small organizations</span></span>](lync-server-2013-reference-topology-for-small-organizations.md)
 
-  - [<span data-ttu-id="80580-108">Topologia di riferimento per Lync Server 2013 in organizzazioni di medie dimensioni</span><span class="sxs-lookup"><span data-stu-id="80580-108">Reference topology for Lync Server 2013 in medium-size organizations</span></span>](lync-server-2013-reference-topology-for-medium-size-organizations.md)
+  - [<span data-ttu-id="9ada5-108">Topologia di riferimento per Lync Server 2013 in organizzazioni di medie dimensioni</span><span class="sxs-lookup"><span data-stu-id="9ada5-108">Reference topology for Lync Server 2013 in medium-size organizations</span></span>](lync-server-2013-reference-topology-for-medium-size-organizations.md)
 
-  - [<span data-ttu-id="80580-109">Topologia di riferimento per Lync Server 2013 in organizzazioni di grandi dimensioni con più data center</span><span class="sxs-lookup"><span data-stu-id="80580-109">Reference topology for Lync Server 2013 in large organizations with multiple data centers</span></span>](lync-server-2013-reference-topology-for-large-organizations-with-multiple-data-centers.md)
+  - [<span data-ttu-id="9ada5-109">Topologia di riferimento per Lync Server 2013 in organizzazioni di grandi dimensioni con più data center</span><span class="sxs-lookup"><span data-stu-id="9ada5-109">Reference topology for Lync Server 2013 in large organizations with multiple data centers</span></span>](lync-server-2013-reference-topology-for-large-organizations-with-multiple-data-centers.md)
 
 </div>
 

@@ -12,20 +12,20 @@ ms:contentKeyID: 48183283
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e0795e29fb52171af32ecbde62a6ecddcfa00931
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: e514d3d82f33ffd3401db738f36274c589cf6fae
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42050328"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42152360"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="prerequisites-for-running-best-practices-analyzer-in-lync-server-2013"></a><span data-ttu-id="c0237-102">Prerequisiti per l'esecuzione di Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c0237-102">Prerequisites for running Best Practices Analyzer in Lync Server 2013</span></span>
+# <a name="prerequisites-for-running-best-practices-analyzer-in-lync-server-2013"></a><span data-ttu-id="d234d-102">Prerequisiti per l'esecuzione di Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d234d-102">Prerequisites for running Best Practices Analyzer in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "42050328"
 
 <span> </span>
 
-<span data-ttu-id="c0237-103">_**Ultimo argomento modificato:** 2012-06-25_</span><span class="sxs-lookup"><span data-stu-id="c0237-103">_**Topic Last Modified:** 2012-06-25_</span></span>
+<span data-ttu-id="d234d-103">_**Ultimo argomento modificato:** 2012-06-25_</span><span class="sxs-lookup"><span data-stu-id="d234d-103">_**Topic Last Modified:** 2012-06-25_</span></span>
 
-<span data-ttu-id="c0237-104">È possibile utilizzare Best Practices Analyzer per analizzare l'ambiente di Lync Server 2013 per problemi e creare report e per visualizzare i risultati di un'analisi corrente o precedente.</span><span class="sxs-lookup"><span data-stu-id="c0237-104">You can use Best Practices Analyzer to scan your Lync Server 2013 environment for issues and create reports, and to view results of a current or previous scan.</span></span> <span data-ttu-id="c0237-105">Prima di eseguire Best Practices Analyzer per l'analisi dell'ambiente è necessario verificare che l'account che si intende usare per eseguire l'analisi disponga dei diritti e delle autorizzazioni richieste e che tutti i prerequisiti di installazione siano stati soddisfatti.</span><span class="sxs-lookup"><span data-stu-id="c0237-105">Prior to running Best Practices Analyzer to scan your environment, you need to verify that the account that you plan to use to run the scan has the required rights and permissions and that all installation prerequisites have been met.</span></span>
+<span data-ttu-id="d234d-104">È possibile utilizzare Best Practices Analyzer per analizzare l'ambiente di Lync Server 2013 per problemi e creare report e per visualizzare i risultati di un'analisi corrente o precedente.</span><span class="sxs-lookup"><span data-stu-id="d234d-104">You can use Best Practices Analyzer to scan your Lync Server 2013 environment for issues and create reports, and to view results of a current or previous scan.</span></span> <span data-ttu-id="d234d-105">Prima di eseguire Best Practices Analyzer per l'analisi dell'ambiente è necessario verificare che l'account che si intende usare per eseguire l'analisi disponga dei diritti e delle autorizzazioni richieste e che tutti i prerequisiti di installazione siano stati soddisfatti.</span><span class="sxs-lookup"><span data-stu-id="d234d-105">Prior to running Best Practices Analyzer to scan your environment, you need to verify that the account that you plan to use to run the scan has the required rights and permissions and that all installation prerequisites have been met.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="c0237-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="c0237-106">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="d234d-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="d234d-106">In This Section</span></span>
 
-  - [<span data-ttu-id="c0237-107">Appartenenze a gruppi e requisiti per i diritti utente per Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c0237-107">Group memberships and user rights requirements for Best Practices Analyzer in Lync Server 2013</span></span>](lync-server-2013-group-memberships-and-user-rights-requirements-for-best-practices-analyzer.md)
+  - [<span data-ttu-id="d234d-107">Appartenenze a gruppi e requisiti per i diritti utente per Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d234d-107">Group memberships and user rights requirements for Best Practices Analyzer in Lync Server 2013</span></span>](lync-server-2013-group-memberships-and-user-rights-requirements-for-best-practices-analyzer.md)
 
-  - [<span data-ttu-id="c0237-108">Requisiti per l'esecuzione di Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c0237-108">Requirements for running Best Practices Analyzer in Lync Server 2013</span></span>](lync-server-2013-requirements-for-running-best-practices-analyzer.md)
+  - [<span data-ttu-id="d234d-108">Requisiti per l'esecuzione di Best Practices Analyzer in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="d234d-108">Requirements for running Best Practices Analyzer in Lync Server 2013</span></span>](lync-server-2013-requirements-for-running-best-practices-analyzer.md)
 
 </div>
 

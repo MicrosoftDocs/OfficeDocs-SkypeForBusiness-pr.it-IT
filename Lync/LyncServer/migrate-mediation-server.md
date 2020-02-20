@@ -12,20 +12,20 @@ ms:contentKeyID: 48185117
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 581ce96b0c0a6ad0e4edd68eddbfacb160bf13f1
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: d7786ecfd72ac32de74c9947f0effa1fad0c9603
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42045858"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42148885"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="migrate-mediation-server"></a><span data-ttu-id="1bbc0-102">Eseguire la migrazione di Mediation Server</span><span class="sxs-lookup"><span data-stu-id="1bbc0-102">Migrate Mediation Server</span></span>
+# <a name="migrate-mediation-server"></a><span data-ttu-id="5f9f2-102">Eseguire la migrazione di Mediation Server</span><span class="sxs-lookup"><span data-stu-id="5f9f2-102">Migrate Mediation Server</span></span>
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "42045858"
 
 <span> </span>
 
-<span data-ttu-id="1bbc0-103">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="1bbc0-103">_**Topic Last Modified:** 2012-09-28_</span></span>
+<span data-ttu-id="5f9f2-103">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="5f9f2-103">_**Topic Last Modified:** 2012-09-28_</span></span>
 
-<span data-ttu-id="1bbc0-104">Il Mediation Server viene unito alla topologia pilota di Lync Server 2013 quando si esegue la procedura guidata di Unione.</span><span class="sxs-lookup"><span data-stu-id="1bbc0-104">Your Mediation Server is merged into your Lync Server 2013 pilot topology when you run the Merge wizard.</span></span> <span data-ttu-id="1bbc0-105">È tuttavia possibile configurare Lync Server 2013 Mediation Server, dopo la migrazione di tutti gli utenti, perché un pool di Office Communications Server 2007 R2 non è in grado di comunicare con un server di mediazione Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="1bbc0-105">You configure the Lync Server 2013 Mediation Server, however, after all users are migrated because an Office Communications Server 2007 R2 pool cannot communicate with a Lync Server 2013 Mediation Server.</span></span> <span data-ttu-id="1bbc0-106">Durante la migrazione affiancata, il pool di Lync Server 2013 comunica con il Mediation Server di Office Communications Server 2007 R2.</span><span class="sxs-lookup"><span data-stu-id="1bbc0-106">During the side-by-side migration, the Lync Server 2013 pool communicates with the Office Communications Server 2007 R2 Mediation Server.</span></span>
+<span data-ttu-id="5f9f2-104">Il Mediation Server viene unito alla topologia pilota di Lync Server 2013 quando si esegue la procedura guidata di Unione.</span><span class="sxs-lookup"><span data-stu-id="5f9f2-104">Your Mediation Server is merged into your Lync Server 2013 pilot topology when you run the Merge wizard.</span></span> <span data-ttu-id="5f9f2-105">È tuttavia possibile configurare Lync Server 2013 Mediation Server, dopo la migrazione di tutti gli utenti, perché un pool di Office Communications Server 2007 R2 non è in grado di comunicare con un server di mediazione Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="5f9f2-105">You configure the Lync Server 2013 Mediation Server, however, after all users are migrated because an Office Communications Server 2007 R2 pool cannot communicate with a Lync Server 2013 Mediation Server.</span></span> <span data-ttu-id="5f9f2-106">Durante la migrazione affiancata, il pool di Lync Server 2013 comunica con il Mediation Server di Office Communications Server 2007 R2.</span><span class="sxs-lookup"><span data-stu-id="5f9f2-106">During the side-by-side migration, the Lync Server 2013 pool communicates with the Office Communications Server 2007 R2 Mediation Server.</span></span>
 
-<span data-ttu-id="1bbc0-107">Quando si configura Lync Server 2013 Mediation Server, è inoltre necessario aggiornare o sostituire i gateway di Office Communications Server 2007 R2.</span><span class="sxs-lookup"><span data-stu-id="1bbc0-107">When you configure your Lync Server 2013 Mediation Server, you must also upgrade or replace your Office Communications Server 2007 R2 gateways.</span></span> <span data-ttu-id="1bbc0-108">I gateway di Office Communications Server 2007 R2 non supportano Lync Server 2013 Mediation Server.</span><span class="sxs-lookup"><span data-stu-id="1bbc0-108">Office Communications Server 2007 R2 gateways do not support Lync Server 2013 Mediation Server.</span></span> <span data-ttu-id="1bbc0-109">È necessario distribuire i gateway certificati per Lync Server 2013 e associarli a Lync Server 2013 Mediation Server.</span><span class="sxs-lookup"><span data-stu-id="1bbc0-109">You need to deploy gateways that are certified for Lync Server 2013 and associate them with the Lync Server 2013 Mediation Server.</span></span> <span data-ttu-id="1bbc0-110">Questo passaggio è necessario prima di poter rimuovere completamente la distribuzione di Office Communications Server 2007 R2.</span><span class="sxs-lookup"><span data-stu-id="1bbc0-110">This step is required before you can completely decommission your Office Communications Server 2007 R2 deployment.</span></span>
+<span data-ttu-id="5f9f2-107">Quando si configura Lync Server 2013 Mediation Server, è inoltre necessario aggiornare o sostituire i gateway di Office Communications Server 2007 R2.</span><span class="sxs-lookup"><span data-stu-id="5f9f2-107">When you configure your Lync Server 2013 Mediation Server, you must also upgrade or replace your Office Communications Server 2007 R2 gateways.</span></span> <span data-ttu-id="5f9f2-108">I gateway di Office Communications Server 2007 R2 non supportano Lync Server 2013 Mediation Server.</span><span class="sxs-lookup"><span data-stu-id="5f9f2-108">Office Communications Server 2007 R2 gateways do not support Lync Server 2013 Mediation Server.</span></span> <span data-ttu-id="5f9f2-109">È necessario distribuire i gateway certificati per Lync Server 2013 e associarli a Lync Server 2013 Mediation Server.</span><span class="sxs-lookup"><span data-stu-id="5f9f2-109">You need to deploy gateways that are certified for Lync Server 2013 and associate them with the Lync Server 2013 Mediation Server.</span></span> <span data-ttu-id="5f9f2-110">Questo passaggio è necessario prima di poter rimuovere completamente la distribuzione di Office Communications Server 2007 R2.</span><span class="sxs-lookup"><span data-stu-id="5f9f2-110">This step is required before you can completely decommission your Office Communications Server 2007 R2 deployment.</span></span>
 
-<span data-ttu-id="1bbc0-111">Negli argomenti di questa sezione vengono descritte le attività di configurazione che è necessario eseguire dopo aver completato la migrazione di Lync Server 2013 Mediation Server.</span><span class="sxs-lookup"><span data-stu-id="1bbc0-111">The topics in this section describe configuration tasks that you need to perform after you have completed your migration of Lync Server 2013 Mediation Server.</span></span> <span data-ttu-id="1bbc0-112">L'esecuzione della transizione dal Mediation Server collocato a un Mediation Server autonomo è un'attività facoltativa.</span><span class="sxs-lookup"><span data-stu-id="1bbc0-112">Transitioning the collocated Mediation Server to a stand-alone Mediation Server is an optional task.</span></span>
+<span data-ttu-id="5f9f2-111">Negli argomenti di questa sezione vengono descritte le attività di configurazione che è necessario eseguire dopo aver completato la migrazione di Lync Server 2013 Mediation Server.</span><span class="sxs-lookup"><span data-stu-id="5f9f2-111">The topics in this section describe configuration tasks that you need to perform after you have completed your migration of Lync Server 2013 Mediation Server.</span></span> <span data-ttu-id="5f9f2-112">L'esecuzione della transizione dal Mediation Server collocato a un Mediation Server autonomo è un'attività facoltativa.</span><span class="sxs-lookup"><span data-stu-id="5f9f2-112">Transitioning the collocated Mediation Server to a stand-alone Mediation Server is an optional task.</span></span>
 
-  - [<span data-ttu-id="1bbc0-113">Configurare Mediation Server</span><span class="sxs-lookup"><span data-stu-id="1bbc0-113">Configure Mediation Server</span></span>](configure-mediation-server.md)
+  - [<span data-ttu-id="5f9f2-113">Configurare Mediation Server</span><span class="sxs-lookup"><span data-stu-id="5f9f2-113">Configure Mediation Server</span></span>](configure-mediation-server.md)
 
-  - [<span data-ttu-id="1bbc0-114">Modificare le route vocali per l'utilizzo del nuovo Lync Server 2013 Mediation Server</span><span class="sxs-lookup"><span data-stu-id="1bbc0-114">Change voice routes to use the new Lync Server 2013 Mediation Server</span></span>](change-voice-routes-to-use-the-new-lync-server-2013-mediation-server.md)
+  - [<span data-ttu-id="5f9f2-114">Modificare le route vocali per l'utilizzo del nuovo Lync Server 2013 Mediation Server</span><span class="sxs-lookup"><span data-stu-id="5f9f2-114">Change voice routes to use the new Lync Server 2013 Mediation Server</span></span>](change-voice-routes-to-use-the-new-lync-server-2013-mediation-server.md)
 
-  - [<span data-ttu-id="1bbc0-115">Eseguire la transizione di un Mediation Server collocato a un Mediation Server autonomo (facoltativo)</span><span class="sxs-lookup"><span data-stu-id="1bbc0-115">Transition a collocated Mediation Server to a stand-alone Mediation Server (optional)</span></span>](transition-a-collocated-mediation-server-to-a-stand-alone-mediation-server-optional.md)
+  - [<span data-ttu-id="5f9f2-115">Eseguire la transizione di un Mediation Server collocato a un Mediation Server autonomo (facoltativo)</span><span class="sxs-lookup"><span data-stu-id="5f9f2-115">Transition a collocated Mediation Server to a stand-alone Mediation Server (optional)</span></span>](transition-a-collocated-mediation-server-to-a-stand-alone-mediation-server-optional.md)
 
 </div>
 
