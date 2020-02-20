@@ -12,18 +12,18 @@ ms:contentKeyID: 56472032
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 984e7d7e287e9177fff5798c9cb20ab476591f46
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 0cb7db93813bdc7ed06398ce73d00f51ce5a60fe
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42035198"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42147649"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="configure-sql-server-clustering-for-lync-server-2013"></a>Configurare il clustering di SQL Server per Lync Server 2013
 
@@ -39,7 +39,7 @@ _**Ultimo argomento modificato:** 2014-01-10_
 
 Microsoft Lync Server 2013 supporta il clustering per SQL Server 2012 e SQL Server 2008 R2. Per informazioni dettagliate su ciò che è supportato, vedere [database software support in Lync Server 2013](lync-server-2013-database-software-support.md).
 
-È necessario impostare e configurare il cluster di SQL Server prima di installare e distribuire Enterprise Edition Front End Server e database back-end. Per le procedure consigliate e le istruzioni di installazione per il clustering di failover <http://technet.microsoft.com/library/hh231721.aspx>in SQL Server 2012, vedere. Per il clustering di failover in SQL Server 2008 <http://technet.microsoft.com/library/ms189134(v=sql.105).aspx>, vedere.
+È necessario impostare e configurare il cluster di SQL Server prima di installare e distribuire Enterprise Edition Front End Server e database back-end. Per le procedure consigliate e le istruzioni di installazione per il clustering di failover <https://technet.microsoft.com/library/hh231721.aspx>in SQL Server 2012, vedere. Per il clustering di failover in SQL Server 2008 <https://technet.microsoft.com/library/ms189134(v=sql.105).aspx>, vedere.
 
 Quando si installa SQL Server, è consigliabile installare SQL Server Management Studio per gestire i percorsi dei file di database e di registro. SQL Server Management Studio viene installato come componente facoltativo quando si installa SQL Server.
 

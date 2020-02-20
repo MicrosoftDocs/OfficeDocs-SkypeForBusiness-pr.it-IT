@@ -12,18 +12,18 @@ ms:contentKeyID: 61071242
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cd53ac85ec544af58c1f94f7397a030f6b10fdb2
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 876a4de1357786e2d5089fdc632002107a6c7cc2
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029207"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42150735"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="best-practices-for-your-core-infrastructure-in-lync-server-2013"></a>Procedure consigliate per l'infrastruttura di base in Lync Server 2013
 
@@ -41,7 +41,7 @@ _**Ultimo argomento modificato:** 2014-01-27_
 
 Per proteggere i server della distribuzione di Lync Server 2013 da un danno accidentale o intenzionale che potrebbe causare tempi di inattività, prendere le seguenti precauzioni:
 
-  - Installare con regolarità gli aggiornamenti della sicurezza nei server. Sottoscrivendo il servizio Microsoft Security Notification Service, è possibile ricevere una notifica immediata ogni volta che vengono pubblicati bollettini sulla sicurezza per i prodotti Microsoft. Per effettuare la sottoscrizione, visitare il sito Web Microsoft Technical Security [http://go.microsoft.com/fwlink/p/?LinkId=145202](http://go.microsoft.com/fwlink/p/?linkid=145202)Notifications all'indirizzo.
+  - Installare con regolarità gli aggiornamenti della sicurezza nei server. Sottoscrivendo il servizio Microsoft Security Notification Service, è possibile ricevere una notifica immediata ogni volta che vengono pubblicati bollettini sulla sicurezza per i prodotti Microsoft. Per effettuare la sottoscrizione, visitare il sito Web Microsoft Technical Security [https://go.microsoft.com/fwlink/p/?LinkId=145202](https://go.microsoft.com/fwlink/p/?linkid=145202)Notifications all'indirizzo.
 
   - Verificare che i diritti di accesso siano configurati correttamente.
 

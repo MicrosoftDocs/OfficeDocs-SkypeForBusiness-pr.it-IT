@@ -12,18 +12,18 @@ ms:contentKeyID: 51541531
 ms.date: 09/21/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4f9a3627930f65740fdd00596ddde24cde4dabc3
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 57d7ddc97fcd3f9cbed0d5d490135be3fecbecfe
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42044908"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42149626"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="mobile-client-comparison-tables-for-lync-server-2013"></a>Tabelle di confronto dei client per dispositivi mobili per Lync Server 2013
 
@@ -67,11 +67,11 @@ In queste tabelle sono indicate le caratteristiche disponibili per gli utenti di
 > <LI>
 > <P>Per informazioni sulle tabelle di confronto dei client per dispositivi mobili per Skype for business? Vedere <A href="https://technet.microsoft.com/library/dn951412.aspx">tabelle di confronto dei client per dispositivi mobili per Skype for business</A>.</P>
 > <LI>
-> <P>Per le risorse e la Guida in linea per gli utenti finali, vedere <A href="http://go.microsoft.com/fwlink/?linkid=286237">Microsoft Lync 2013 for Mobile Clients</A>.</P>
+> <P>Per le risorse e la Guida in linea per gli utenti finali, vedere <A href="https://go.microsoft.com/fwlink/?linkid=286237">Microsoft Lync 2013 for Mobile Clients</A>.</P>
 > <LI>
 > <P>Per confrontare le funzionalità disponibili in altri client Lync 2013, vedere <A href="lync-server-2013-desktop-client-comparison-tables.md">tabelle di confronto dei client per Lync Server 2013</A>.</P>
 > <LI>
-> <P>Lync Server 2013 supporta anche le app per dispositivi mobili Lync 2010. Per ulteriori informazioni, vedere <A href="http://go.microsoft.com/fwlink/p/?linkid=234777">tabelle di confronto dei client per dispositivi mobili</A> nella documentazione di Lync Server 2010.</P></LI></UL>
+> <P>Lync Server 2013 supporta anche le app per dispositivi mobili Lync 2010. Per ulteriori informazioni, vedere <A href="https://go.microsoft.com/fwlink/p/?linkid=234777">tabelle di confronto dei client per dispositivi mobili</A> nella documentazione di Lync Server 2010.</P></LI></UL>
 
 
 

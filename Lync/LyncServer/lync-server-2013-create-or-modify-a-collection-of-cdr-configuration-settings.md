@@ -12,18 +12,18 @@ ms:contentKeyID: 49733812
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 234225364c8701432271c2cf5a48c9bb6d403103
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 6ddb442a2b919650706329b4acaf21311b096b4a
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42035632"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42151908"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="create-or-modify-a-collection-of-cdr-configuration-settings-in-lync-server-2013"></a>Creare o modificare una raccolta di impostazioni di configurazione di registrazione dettagli chiamata in Lync Server 2013
 
@@ -59,7 +59,7 @@ Quando si installa Microsoft Lync Server 2013, viene creata un'unica raccolta gl
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>Nome</p></td>
+<td><p>Name</p></td>
 <td><p>Identità</p></td>
 <td><p>Identificatore univoco delle impostazioni di configurazione di registrazione dettagli chiamata che si desidera creare. Queste impostazioni possono essere create solo nell'ambito del sito.</p></td>
 </tr>
@@ -127,7 +127,7 @@ Quando si installa Microsoft Lync Server 2013, viene creata un'unica raccolta gl
 
 ## <a name="creating-cdr-configuration-settings-by-using-windows-powershell-cmdlets"></a>Creazione delle impostazioni di configurazione di registrazione dettagli chiamata tramite i cmdlet di Windows PowerShell
 
-È possibile creare impostazioni di configurazione di registrazione dettagli chiamata anche utilizzando Windows PowerShell e il cmdlet **New-CsCdrConfiguration** . È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [http://go.microsoft.com/fwlink/p/?linkId=255876](http://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+È possibile creare impostazioni di configurazione di registrazione dettagli chiamata anche utilizzando Windows PowerShell e il cmdlet **New-CsCdrConfiguration** . È possibile eseguire questo cmdlet sia da Lync Server 2013 Management Shell sia da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
 
 <div>
 

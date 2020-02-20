@@ -12,18 +12,18 @@ ms:contentKeyID: 48184725
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8d87e0096ee71fb08da396188d419e918f66e125
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: e5961eedbaad72fddac42d6c2f8d54af97cfffa2
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42048059"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42152078"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="configure-web-publishing-rules-for-a-single-internal-pool-in-lync-server-2013"></a>Configurare le regole di pubblicazione Web per un singolo pool interno in Lync Server 2013
 
@@ -135,7 +135,7 @@ Per creare regole di pubblicazione Web, eseguire le procedure seguenti.
     
 
     > [!NOTE]  
-    > Ulteriori informazioni, schermate e linee guida per la distribuzione e la configurazione di IIS ARR sono disponibili nell'articolo di NextHop <A href="http://go.microsoft.com/fwlink/?linkid=293391">che utilizza IIS ARR come proxy inverso per Lync Server 2013</A>.
+    > Ulteriori informazioni, schermate e linee guida per la distribuzione e la configurazione di IIS ARR sono disponibili nell'articolo di NextHop <A href="https://go.microsoft.com/fwlink/?linkid=293391">che utilizza IIS ARR come proxy inverso per Lync Server 2013</A>.
 
     
     </div>

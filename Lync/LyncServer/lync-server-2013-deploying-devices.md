@@ -12,18 +12,18 @@ ms:contentKeyID: 48183889
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5400a65f1003012499fd3cf4afae8f75b8b38b86
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: fb88266acd896655fa9e32d7891436cfe9992627
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42049488"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42151346"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="deploying-devices-in-lync-server-2013"></a>Distribuzione di dispositivi in Lync Server 2013
 
@@ -37,15 +37,15 @@ ms.locfileid: "42049488"
 
 _**Ultimo argomento modificato:** 2013-09-10_
 
-Lync Server 2013 include Lync Phone Edition, software che viene eseguito su dispositivi qualificati e fornisce funzionalità di telefonia tradizionali e avanzate, sicurezza integrata, gestibilità e altro ancora. Lync Phone Edition è compatibile con Lync Server 2013 come avviene con Lync Server 2010. Per informazioni dettagliate sulla distribuzione di dispositivi, vedere [Deploying Lync Phone Edition](http://go.microsoft.com/fwlink/p/?linkid=285880) nella libreria TechNet di lync Server 2010.
+Lync Server 2013 include Lync Phone Edition, software che viene eseguito su dispositivi qualificati e fornisce funzionalità di telefonia tradizionali e avanzate, sicurezza integrata, gestibilità e altro ancora. Lync Phone Edition è compatibile con Lync Server 2013 come avviene con Lync Server 2010. Per informazioni dettagliate sulla distribuzione di dispositivi, vedere [Deploying Lync Phone Edition](https://go.microsoft.com/fwlink/p/?linkid=285880) nella libreria TechNet di lync Server 2010.
 
 <div>
 
 ## <a name="see-also"></a>Vedere anche
 
 
-[Pianificazione dei dispositivi](http://go.microsoft.com/fwlink/p/?linkid=285881)  
-[Supporto dell'infrastruttura e del software di dispositivi e client](http://go.microsoft.com/fwlink/p/?linkid=285882)  
+[Pianificazione dei dispositivi](https://go.microsoft.com/fwlink/p/?linkid=285881)  
+[Supporto dell'infrastruttura e del software di dispositivi e client](https://go.microsoft.com/fwlink/p/?linkid=285882)  
   
 
 </div>

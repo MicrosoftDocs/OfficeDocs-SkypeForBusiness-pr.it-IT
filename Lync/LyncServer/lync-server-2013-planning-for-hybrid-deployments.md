@@ -12,18 +12,18 @@ ms:contentKeyID: 48185910
 ms.date: 05/25/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4b0efc4a6a9e9f195705801969b8459c17855388
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: c70002eb7be67c221997465b6cdd5d252df284db
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42036686"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42152784"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="planning-for-lync-server-2013-hybrid-deployments"></a>Pianificazione delle distribuzioni ibride di Lync Server 2013
 
@@ -55,9 +55,9 @@ Per implementare e distribuire una distribuzione ibrida, è necessario che nel p
 
   - Per supportare l'accesso Single Sign-on con Office 365 in modo che gli utenti possano utilizzare le stesse credenziali di accesso per l'accesso a Office come in locale, è possibile utilizzare le funzionalità di sincronizzazione delle password di Azure Active Directory (AAD) Connect. È inoltre possibile utilizzare Active Directory Federation Services (AD FS) per l'accesso Single Sign-on con Office 365.
     
-    Per ulteriori informazioni, vedere [Integrazione delle identità locali con Azure Active Directory](http://go.microsoft.com/fwlink/p/?linkid=619754).
+    Per ulteriori informazioni, vedere [Integrazione delle identità locali con Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=619754).
 
-  - Una singola soluzione di sincronizzazione della directory per sincronizzare gli oggetti di Active Directory locali e online. Per informazioni dettagliate sulla sincronizzazione della directory, vedere [Directory Integration Tools](http://go.microsoft.com/fwlink/p/?linkid=530320).
+  - Una singola soluzione di sincronizzazione della directory per sincronizzare gli oggetti di Active Directory locali e online. Per informazioni dettagliate sulla sincronizzazione della directory, vedere [Directory Integration Tools](https://go.microsoft.com/fwlink/p/?linkid=530320).
 
 </div>
 
@@ -85,7 +85,7 @@ Esistono alcune differenze nelle funzionalità supportate nei client Lync, nonch
 
 Per informazioni dettagliate sul supporto dei client, vedere i seguenti argomenti:
 
-  - [Client per Lync Online](http://go.microsoft.com/fwlink/?linkid=281902)
+  - [Client per Lync Online](https://go.microsoft.com/fwlink/?linkid=281902)
 
   - [Tabelle di confronto dei client per Lync Server 2013](lync-server-2013-desktop-client-comparison-tables.md)
 
@@ -145,9 +145,9 @@ Per configurare la distribuzione ibrida con Skype for business online, è necess
 
 </div>
 
-Per ulteriori informazioni sulle topologie supportate, vedere [Supported topologies in Lync server 2013](lync-server-2013-supported-topologies.md)e [Lync Server 2013 Reference Topologies for Enterprise Hybrid Deployments](http://go.microsoft.com/fwlink/p/?linkid=398709).
+Per ulteriori informazioni sulle topologie supportate, vedere [Supported topologies in Lync server 2013](lync-server-2013-supported-topologies.md)e [Lync Server 2013 Reference Topologies for Enterprise Hybrid Deployments](https://go.microsoft.com/fwlink/p/?linkid=398709).
 
-Per informazioni sulla risoluzione dei problemi relativi alle distribuzioni ibride e sulla connessione di PowerShell a Lync Online, vedere [Lync Online: Lync PowerShell e la risoluzione dei problemi ibridi](http://go.microsoft.com/fwlink/p/?linkid=306718).
+Per informazioni sulla risoluzione dei problemi relativi alle distribuzioni ibride e sulla connessione di PowerShell a Lync Online, vedere [Lync Online: Lync PowerShell e la risoluzione dei problemi ibridi](https://go.microsoft.com/fwlink/p/?linkid=306718).
 
 </div>
 
@@ -216,7 +216,7 @@ I computer della rete devono essere in grado di eseguire ricerche DNS standard s
 
 A seconda della posizione del data center dei Microsoft Online Services, è inoltre necessario configurare i dispositivi firewall di rete in modo che accettino connessioni basate su nomi di dominio con caratteri jolly, \*ad esempio tutto il traffico proveniente da. Outlook.com. Se i firewall dell'organizzazione non supportano le configurazioni del nome con caratteri jolly, sarà necessario determinare manualmente gli intervalli di indirizzi IP che si desidera consentire e le porte specificate.
 
-Fare riferimento all'argomento della Guida per gli [URL e gli intervalli di indirizzi IP di Office 365](http://go.microsoft.com/fwlink/p/?linkid=252942).
+Fare riferimento all'argomento della Guida per gli [URL e gli intervalli di indirizzi IP di Office 365](https://go.microsoft.com/fwlink/p/?linkid=252942).
 
 </div>
 
@@ -246,7 +246,7 @@ Oltre ai requisiti delle porte per la comunicazione interna di Lync Server 2013,
 <td><p>Aperta in ingresso</p>
 <ul>
 <li><p>Active Directory Federation Services (ruolo del server federativo)</p>
-<p>Per ulteriori informazioni, vedere <a href="http://go.microsoft.com/fwlink/p/?linkid=281899">Understanding ADFS Role Services</a>.</p></li>
+<p>Per ulteriori informazioni, vedere <a href="https://go.microsoft.com/fwlink/p/?linkid=281899">Understanding ADFS Role Services</a>.</p></li>
 <li><p>Active Directory Federation Services (ruolo del server proxy)</p></li>
 <li><p>Portale dei Microsoft Online Services</p></li>
 <li><p>Portale della società personale</p></li>
@@ -323,7 +323,7 @@ Durante la pianificazione di una distribuzione ibrida, è consigliabile consider
 
   - **Client Lync alcuni**     utenti potrebbero richiedere una nuova versione client quando vengono spostati in Lync Online. Per Office Communications Server 2007 R2, gli utenti devono essere spostati in un pool Lync Server 2013 prima della migrazione a Lync Online.
     
-    Per ulteriori informazioni sul supporto client, vedere client [per Lync Online](http://go.microsoft.com/fwlink/p/?linkid=281902) e [i client Lync supportati e le configurazioni delle porte di rete](http://go.microsoft.com/fwlink/p/?linkid=281901).
+    Per ulteriori informazioni sul supporto client, vedere client [per Lync Online](https://go.microsoft.com/fwlink/p/?linkid=281902) e [i client Lync supportati e le configurazioni delle porte di rete](https://go.microsoft.com/fwlink/p/?linkid=281901).
 
   - **I criteri locali e i criteri di configurazione (non utente)**   online e locale richiedono una configurazione separata. Non è possibile impostare criteri globali che si applicano a entrambi.
 

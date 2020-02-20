@@ -12,18 +12,18 @@ ms:contentKeyID: 48184149
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6c97657b42ec4ea26f5300b1d28215d0360b63cf
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 303df28b307a2d23bdc468d1c53977030d0cf8df
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42042423"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42152584"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="preparing-for-and-installing-best-practices-analyzer-in-lync-server-2013"></a>Preparazione e installazione di Best Practices Analyzer in Lync Server 2013
 
@@ -93,7 +93,7 @@ Nel computer deve inoltre essere in esecuzione il software seguente:
 
 ## <a name="installing-best-practices-analyzer"></a>Installazione di Best Practices Analyzer
 
-È possibile scaricare l'Analizzatore procedure consigliate per Lync Server [http://go.microsoft.com/fwlink/p/?linkId=266539](http://go.microsoft.com/fwlink/p/?linkid=266539)2013 all'indirizzo.
+È possibile scaricare l'Analizzatore procedure consigliate per Lync Server [https://go.microsoft.com/fwlink/p/?linkId=266539](https://go.microsoft.com/fwlink/p/?linkid=266539)2013 all'indirizzo.
 
 Per installare Best Practices Analyzer, avviare il file di Microsoft Installer RtcBPA.msi nel computer in cui si vuole installare lo strumento e quindi seguire le istruzioni sullo schermo. La posizione predefinita per l'installazione dei file di \<programma è\>\\file\\di programma dell'unità\\di sistema Lync Server 2013 BPA.
 

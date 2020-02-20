@@ -12,18 +12,18 @@ ms:contentKeyID: 61084873
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b6b67c4843cc0c1039bee48aa6b7c4620b77ce08
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 2710e85eced76241f4946ef2746e544d07be941f
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42006994"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42152594"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="key-health-indicators-in-lync-server-2013"></a>Indicatori di integrità chiave in Lync Server 2013
 
@@ -37,7 +37,7 @@ ms.locfileid: "42006994"
 
 _**Ultimo argomento modificato:** 2014-02-10_
 
-Questo articolo è una compagna degli [indicatori di integrità principali: la base per il mantenimento di un poster integro di Lync Server](http://go.microsoft.com/fwlink/?linkid=391838) , che è possibile scaricare dall'area download.
+Questo articolo è una compagna degli [indicatori di integrità principali: la base per il mantenimento di un poster integro di Lync Server](https://go.microsoft.com/fwlink/?linkid=391838) , che è possibile scaricare dall'area download.
 
 ![Poster che descrive la risoluzione dei problemi utilizzando i dati di KHI](images/Dn594589.b6fe82bd-d70f-4c1f-a812-b615ac5fa7d7(OCS.15).jpg "Poster che descrive la risoluzione dei problemi utilizzando i dati di KHI")
 
@@ -75,7 +75,7 @@ KHIs vengono utilizzati oltre alle soluzioni di monitoraggio di Lync standard (a
 
 Raccogliere i contatori delle prestazioni di KHI e popolare il foglio di calcolo di KHI che accompagna la guida alla rete per produrre una scorecard che consenta di determinare l'integrità del server di una distribuzione di Lync. Una volta popolata, viene fornita una guida per la riparazione dell'ambiente e per informazioni aggiuntive su altre parti interessate. Valutare KHIs su base mensile e inserirli nei processi operativi in continua distribuzione.
 
-Scaricare la [Guida alla rete di Lync Server](http://go.microsoft.com/fwlink/p/?linkid=390677) per visualizzare l'elenco completo di KHIs e per ottenere i fogli di calcolo correlati.
+Scaricare la [Guida alla rete di Lync Server](https://go.microsoft.com/fwlink/p/?linkid=390677) per visualizzare l'elenco completo di KHIs e per ottenere i fogli di calcolo correlati.
 
 </div>
 
@@ -333,9 +333,9 @@ Le seguenti destinazioni KHI consigliate sono specifiche per i server perimetral
 ## <a name="see-also"></a>Vedere anche
 
 
-[Guida alla rete di Lync Server](http://go.microsoft.com/fwlink/p/?linkid=390677)  
-[Indicatori di integrità chiave: la base per la gestione dei server Lync integri](http://go.microsoft.com/fwlink/?linkid=391838)  
-[Metodologia qualità chiamata Lync](http://go.microsoft.com/fwlink/?linkid=391841)  
+[Guida alla rete di Lync Server](https://go.microsoft.com/fwlink/p/?linkid=390677)  
+[Indicatori di integrità chiave: la base per la gestione dei server Lync integri](https://go.microsoft.com/fwlink/?linkid=391838)  
+[Metodologia qualità chiamata Lync](https://go.microsoft.com/fwlink/?linkid=391841)  
   
 
 </div>

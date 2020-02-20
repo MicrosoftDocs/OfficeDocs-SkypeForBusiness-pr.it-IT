@@ -12,18 +12,18 @@ ms:contentKeyID: 63969574
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b67831b6dbcd7dae12f9b19dd71f2512a8807189
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 2832af2c038383e0cca9f8cb931ce4b675b44f2b
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42043488"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42150965"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="check-trunk-configuration-against-a-phone-number-in-lync-server-2013"></a>Controllare la configurazione del trunk in base a un numero di telefono in Lync Server 2013
 
@@ -136,7 +136,7 @@ Motivo: ^\\+ (\\d\*) $
 
 Nome: NoAreaCode
 
-A questo punto, è possibile controllare il valore della proprietà pattern (ovvero una stringa di [espressione regolare](http://go.microsoft.com/fwlink/?linkid=400464) ) per verificare se una o più regole di conversione sono configurate per gestire il numero composto. In caso contrario, è necessario modificare una delle regole esistenti (Set-CsOutboundTranslationRule) oppure utilizzare il cmdlet New-CsOutboundTranslationRule per aggiungere una nuova regola all'insieme.
+A questo punto, è possibile controllare il valore della proprietà pattern (ovvero una stringa di [espressione regolare](https://go.microsoft.com/fwlink/?linkid=400464) ) per verificare se una o più regole di conversione sono configurate per gestire il numero composto. In caso contrario, è necessario modificare una delle regole esistenti (Set-CsOutboundTranslationRule) oppure utilizzare il cmdlet New-CsOutboundTranslationRule per aggiungere una nuova regola all'insieme.
 
 </div>
 

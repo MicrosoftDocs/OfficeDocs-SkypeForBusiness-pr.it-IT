@@ -12,18 +12,18 @@ ms:contentKeyID: 48184972
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f6de54e91129351a153c9cf4e08925d62eeb342c
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 85ba9b1d9848fa51d798dd93b9cbc53daf69a6b7
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42030239"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42150427"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="lync-server-2013-administrative-tools"></a>Strumenti di amministrazione di Lync Server 2013
 
@@ -113,7 +113,7 @@ In Lync Server, Lync Server Management Shell fornisce un nuovo metodo per l'ammi
 
 ## <a name="logging-tool"></a>Strumento di registrazione
 
-Lo strumento di registrazione di Lync Server facilita la risoluzione dei problemi acquisendo le informazioni di registrazione e traccia dal prodotto durante l'esecuzione del prodotto. È possibile utilizzare lo strumento per eseguire le sessioni di debug su qualsiasi ruolo del server Lync Server. Per informazioni dettagliate sullo strumento di registrazione, vedere la documentazione dello strumento di registrazione di Lync Server 2010 nella [http://go.microsoft.com/fwlink/p/?linkId=199265](http://go.microsoft.com/fwlink/p/?linkid=199265)libreria TechNet all'indirizzo.
+Lo strumento di registrazione di Lync Server facilita la risoluzione dei problemi acquisendo le informazioni di registrazione e traccia dal prodotto durante l'esecuzione del prodotto. È possibile utilizzare lo strumento per eseguire le sessioni di debug su qualsiasi ruolo del server Lync Server. Per informazioni dettagliate sullo strumento di registrazione, vedere la documentazione dello strumento di registrazione di Lync Server 2010 nella [https://go.microsoft.com/fwlink/p/?linkId=199265](https://go.microsoft.com/fwlink/p/?linkid=199265)libreria TechNet all'indirizzo.
 
 <div>
 

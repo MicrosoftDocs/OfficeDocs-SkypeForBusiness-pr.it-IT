@@ -12,18 +12,18 @@ ms:contentKeyID: 48183472
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 83b91cfaf77d2e4112b917438d84260ed5b21553
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: a8aad7a429a57d6aaea7d285da0e3e87c23e8c6e
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42035702"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42148096"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="run-best-practices-analyzer"></a>Eseguire Best Practices Analyzer
 
@@ -39,7 +39,7 @@ _**Ultimo argomento modificato:** 2012-03-21_
 
 Lync Server 2010 Best Practices Analyzer Tool raccoglie le informazioni di configurazione da una distribuzione di Lync Server 2010 e determina se la configurazione è impostata in base alle procedure consigliate di Microsoft. È possibile installare lo strumento su un computer client che esegue Microsoft .NET Framework 3,5 Service Pack 1 o direttamente sul server che esegue Lync Server 2010. È consigliabile installare ed eseguire questo strumento in un computer client. Gli strumenti di amministrazione di Lync Server 2010 devono essere installati anche localmente nel computer client in modo che l'Analizzatore procedure consigliate possa raccogliere un set completo di dati.
 
-È possibile scaricare l'analizzatore Best Practices di Lync Server 2010 dall'area download <http://go.microsoft.com/fwlink/p/?linkid=246173> Microsoft all'indirizzo.
+È possibile scaricare l'analizzatore Best Practices di Lync Server 2010 dall'area download <https://go.microsoft.com/fwlink/p/?linkid=246173> Microsoft all'indirizzo.
 
 </div>
 

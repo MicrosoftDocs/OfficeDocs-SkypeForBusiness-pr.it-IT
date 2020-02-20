@@ -12,18 +12,18 @@ ms:contentKeyID: 59893870
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9878cf6d6de482e2319cfd3cddf15e6d0e6ecb6e
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 63ba5224d6663050295c5fddf9ea08e230f78506
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42044408"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42152290"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="public-key-infrastructure-for-lync-server-2013"></a>Infrastruttura a chiave pubblica per Lync Server 2013
 
@@ -49,7 +49,7 @@ Ogni certificato è collegato a una chiave pubblica. Il server denominato nel ce
 
 
 > [!NOTE]  
-> Non tutte le autorità di certificazione pubbliche sono conformi ai requisiti dei certificati di Lync Server 2013. Si consiglia di fare riferimento all'elenco dei fornitori di autorità di certificazione pubblica certificati per le proprie esigenze di certificato pubblico. Per informazioni dettagliate, vedere Unified Communications Certificate Partners <A href="http://go.microsoft.com/fwlink/p/?linkid=140898">http://go.microsoft.com/fwlink/p/?LinkId=140898</A>at.
+> Non tutte le autorità di certificazione pubbliche sono conformi ai requisiti dei certificati di Lync Server 2013. Si consiglia di fare riferimento all'elenco dei fornitori di autorità di certificazione pubblica certificati per le proprie esigenze di certificato pubblico. Per informazioni dettagliate, vedere Unified Communications Certificate Partners <A href="https://go.microsoft.com/fwlink/p/?linkid=140898">https://go.microsoft.com/fwlink/p/?LinkId=140898</A>at.
 
 
 

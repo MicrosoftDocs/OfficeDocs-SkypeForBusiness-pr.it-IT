@@ -12,18 +12,18 @@ ms:contentKeyID: 48185884
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8f96470163b1f258f59bb37128b45fbc5e15476e
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 03a3015f24bae2595ac845c351c32ccb5d36c5f7
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41989361"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42153096"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="peer-to-peer-activity-summary-report-in-lync-server-2013"></a>Rapporto riepilogativo attività peer-to-peer in Lync Server 2013
 
@@ -94,7 +94,7 @@ Nella tabella seguente sono elencati i filtri che è possibile utilizzare con il
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Descrizione</th>
 </tr>
 </thead>
@@ -152,7 +152,7 @@ Nella tabella seguente sono indicate le informazioni fornite nel Rapporto riepil
 </colgroup>
 <thead>
 <tr class="header">
-<th>Nome</th>
+<th>Name</th>
 <th>Elemento utilizzabile per eseguire l'ordinamento?</th>
 <th>Descrizione</th>
 </tr>

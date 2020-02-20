@@ -12,18 +12,18 @@ ms:contentKeyID: 48185189
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d4508c9c499b0219f754bf9815063f4b1210b811
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 16a7a78c67b94084c59ebad63baa12c3a7aa3df2
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029617"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42147549"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="deploying-lync-web-app-in-lync-server-2013"></a>Distribuzione di Lync Web App in Lync Server 2013
 
@@ -78,9 +78,9 @@ La versione Lync Server 2013 di Lync Web App supporta l'autenticazione a più fa
 
 **Per configurare l'autenticazione a più fattori**
 
-1.  Installare un ruolo del server federativo ADFS. Per informazioni dettagliate, vedere la guida alla distribuzione di Active Directory Federation Services 2,0 all'indirizzo<http://go.microsoft.com/fwlink/p/?linkid=267511>
+1.  Installare un ruolo del server federativo ADFS. Per informazioni dettagliate, vedere la guida alla distribuzione di Active Directory Federation Services 2,0 all'indirizzo<https://go.microsoft.com/fwlink/p/?linkid=267511>
 
-2.  Creare certificati per ADFS. Per ulteriori informazioni, vedere la sezione relativa ai certificati del server federativo del piano per la distribuzione di ADFS per l'utilizzo con l'argomento Single Sign- [http://go.microsoft.com/fwlink/p/?LinkId=285376](http://go.microsoft.com/fwlink/p/?linkid=285376)on all'indirizzo.
+2.  Creare certificati per ADFS. Per ulteriori informazioni, vedere la sezione relativa ai certificati del server federativo del piano per la distribuzione di ADFS per l'utilizzo con l'argomento Single Sign- [https://go.microsoft.com/fwlink/p/?LinkId=285376](https://go.microsoft.com/fwlink/p/?linkid=285376)on all'indirizzo.
 
 3.  Dall'interfaccia della riga di comando di Windows PowerShell, eseguire il comando riportato di seguito:
     ```powershell
@@ -113,7 +113,7 @@ La versione Lync Server 2013 di Lync Web App supporta l'autenticazione a più fa
 
 La funzionalità BranchCache in Windows 7 e Windows Server 2008 R2 può interferire con i componenti Web di Lync Web App. Per evitare problemi per gli utenti di Lync Web App, verificare che BranchCache non sia abilitato.
 
-Per informazioni dettagliate sulla disabilitazione di BranchCache, vedere la guida alla distribuzione di BranchCache, disponibile in formato Word nell'area download Microsoft [http://go.microsoft.com/fwlink/p/?LinkId=268788](http://go.microsoft.com/fwlink/p/?linkid=268788) all'interno e in formato HTML nella raccolta tecnica di Windows Server 2008 [http://go.microsoft.com/fwlink/p/?LinkId=268789](http://go.microsoft.com/fwlink/p/?linkid=268789)R2 all'indirizzo.
+Per informazioni dettagliate sulla disabilitazione di BranchCache, vedere la guida alla distribuzione di BranchCache, disponibile in formato Word nell'area download Microsoft [https://go.microsoft.com/fwlink/p/?LinkId=268788](https://go.microsoft.com/fwlink/p/?linkid=268788) all'interno e in formato HTML nella raccolta tecnica di Windows Server 2008 [https://go.microsoft.com/fwlink/p/?LinkId=268789](https://go.microsoft.com/fwlink/p/?linkid=268789)R2 all'indirizzo.
 
 </div>
 

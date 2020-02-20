@@ -12,18 +12,18 @@ ms:contentKeyID: 49733711
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 74d89b14b783e2b78050b2db8e71a1009c974384
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 4704cc5284b6923967e530492edf2a07054a2a19
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029547"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42150437"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="installing-a-certificate-on-a-watcher-node-located-outside-the-perimeter-network-of-lync-server-2013"></a>Installazione di un certificato in un nodo Watcher che si trova all'esterno della rete perimetrale di Lync Server 2013
 
@@ -37,9 +37,9 @@ ms.locfileid: "42029547"
 
 _**Ultimo argomento modificato:** 2012-10-22_
 
-Gli agenti di System Center Operations Manager in esecuzione in una rete perimetrale, ad esempio un server perimetrale di Lync Server, all'esterno dell'organizzazione (ad esempio un nodo Watcher esterno di una transazione sintetica) o in un limite di attendibilità dei servizi di dominio Active Directory, potrebbero richiedere la configurazione di un server Gateway System Center Operations Manager. Questo ruolo del server consente agli agenti che non dispongono di una relazione di trust con il server di gestione principale di emettere avvisi. Per informazioni dettagliate, vedere la sezione relativa alla gestione dei server gateway in Operations Manager 2007 nella libreria TechNet di System [http://go.microsoft.com/fwlink/p/?LinkId=268703](http://go.microsoft.com/fwlink/p/?linkid=268703)Center Operations Manager all'indirizzo.
+Gli agenti di System Center Operations Manager in esecuzione in una rete perimetrale, ad esempio un server perimetrale di Lync Server, all'esterno dell'organizzazione (ad esempio un nodo Watcher esterno di una transazione sintetica) o in un limite di attendibilità dei servizi di dominio Active Directory, potrebbero richiedere la configurazione di un server Gateway System Center Operations Manager. Questo ruolo del server consente agli agenti che non dispongono di una relazione di trust con il server di gestione principale di emettere avvisi. Per informazioni dettagliate, vedere la sezione relativa alla gestione dei server gateway in Operations Manager 2007 nella libreria TechNet di System [https://go.microsoft.com/fwlink/p/?LinkId=268703](https://go.microsoft.com/fwlink/p/?linkid=268703)Center Operations Manager all'indirizzo.
 
-Se si distribuisce un agente in una di queste posizioni, sarà inoltre necessario richiedere e configurare un certificato che consenta al nodo Watcher di inviare avvisi a System Center Operations Manager. Per semplificare questo processo, il team di Operations Manager ha creato un set di utilità che consente di richiedere e installare il tipo di certificato corretto nel computer del nodo di controllo. Per ulteriori informazioni e per scaricare queste utilità, vedere l'articolo su [http://go.microsoft.com/fwlink/p/?LinkId=267421](http://go.microsoft.com/fwlink/p/?linkid=267421)Blog "ottenere certificati per gli agenti non appartenenti a un dominio semplificato con la generazione guidata dei certificati".
+Se si distribuisce un agente in una di queste posizioni, sarà inoltre necessario richiedere e configurare un certificato che consenta al nodo Watcher di inviare avvisi a System Center Operations Manager. Per semplificare questo processo, il team di Operations Manager ha creato un set di utilità che consente di richiedere e installare il tipo di certificato corretto nel computer del nodo di controllo. Per ulteriori informazioni e per scaricare queste utilità, vedere l'articolo su [https://go.microsoft.com/fwlink/p/?LinkId=267421](https://go.microsoft.com/fwlink/p/?linkid=267421)Blog "ottenere certificati per gli agenti non appartenenti a un dominio semplificato con la generazione guidata dei certificati".
 
 </div>
 

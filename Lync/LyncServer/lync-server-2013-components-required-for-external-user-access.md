@@ -12,18 +12,18 @@ ms:contentKeyID: 48183711
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e225f63da97ea48d98a5a2540a6b35a9c63c08f2
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 31381edc58240d990096b47498b5c98845af5b2d
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42007956"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42147309"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="components-required-for-external-user-access-in-lync-server-2013"></a>Componenti necessari per l'accesso degli utenti esterni in Lync Server 2013
 
@@ -114,7 +114,7 @@ Per ulteriori informazioni relative ai proxy inversi e ai requisiti che devono s
 
 
 > [!NOTE]  
-> Gli utenti esterni non necessitano di una connessione VPN (Virtual Private Network) alla propria organizzazione per partecipare alle comunicazioni tramite Lync Server 2013. Se la tecnologia VPN è stata implementata nell'organizzazione e gli utenti utilizzano la VPN per Lync, è possibile che il traffico multimediale, ad esempio le conferenze video, sia influenzato negativamente. È consigliabile fornire un mezzo per il traffico multimediale per la connessione al servizio di AV Edge direttamente e ignorare la VPN. Per informazioni dettagliate, vedere l'articolo del Blog di NextHop "Abilitazione di Lync media per ignorare un tunnel <A href="http://go.microsoft.com/fwlink/p/?linkid=256532">http://go.microsoft.com/fwlink/p/?LinkId=256532</A>VPN" all'indirizzo.
+> Gli utenti esterni non necessitano di una connessione VPN (Virtual Private Network) alla propria organizzazione per partecipare alle comunicazioni tramite Lync Server 2013. Se la tecnologia VPN è stata implementata nell'organizzazione e gli utenti utilizzano la VPN per Lync, è possibile che il traffico multimediale, ad esempio le conferenze video, sia influenzato negativamente. È consigliabile fornire un mezzo per il traffico multimediale per la connessione al servizio di AV Edge direttamente e ignorare la VPN. Per informazioni dettagliate, vedere l'articolo del Blog di NextHop "Abilitazione di Lync media per ignorare un tunnel <A href="https://go.microsoft.com/fwlink/p/?linkid=256532">https://go.microsoft.com/fwlink/p/?LinkId=256532</A>VPN" all'indirizzo.
 
 
 

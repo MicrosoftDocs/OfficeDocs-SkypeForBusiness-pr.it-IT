@@ -12,18 +12,18 @@ ms:contentKeyID: 54973692
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a49fb76019fbb3bc3356fed5de7a67b0e3a10350
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 315d98e26b471e2d9dd84dcb70cd7302e924e9b3
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42046379"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42151558"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="configuring-enterprise-ca-for-smart-card-authentication-in-lync-server-2013"></a>Configurazione di CA dell'organizzazione per l'autenticazione con smart card in Lync Server 2013
 
@@ -37,7 +37,7 @@ ms.locfileid: "42046379"
 
 _**Ultimo argomento modificato:** 2013-07-03_
 
-Nella sezione seguente viene descritto come configurare un'autorità di certificazione (CA) radice dell'organizzazione per il supporto dell'autenticazione con smart card. Per informazioni su come installare una CA radice dell'organizzazione, vedere Install a Enterprise Root Certification Authority [http://go.microsoft.com/fwlink/p/?LinkID=313364](http://go.microsoft.com/fwlink/p/?linkid=313364)at.
+Nella sezione seguente viene descritto come configurare un'autorità di certificazione (CA) radice dell'organizzazione per il supporto dell'autenticazione con smart card. Per informazioni su come installare una CA radice dell'organizzazione, vedere Install a Enterprise Root Certification Authority [https://go.microsoft.com/fwlink/p/?LinkID=313364](https://go.microsoft.com/fwlink/p/?linkid=313364)at.
 
 <div>
 

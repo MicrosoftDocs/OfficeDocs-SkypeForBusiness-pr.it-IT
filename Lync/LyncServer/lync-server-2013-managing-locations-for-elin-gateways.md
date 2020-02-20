@@ -12,18 +12,18 @@ ms:contentKeyID: 48185496
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 35c470b704e7467f573cd5e1fec03d63cf1f4b4e
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 17fa27b82260a05ded5ca025d56005c864247844
+ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42043088"
+ms.lasthandoff: 02/19/2020
+ms.locfileid: "42150317"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
 <div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
 
-<div data-asp="http://msdn2.microsoft.com/asp">
+<div data-asp="https://msdn2.microsoft.com/asp">
 
 # <a name="managing-locations-for-elin-gateways-in-lync-server-2013"></a>Gestione delle posizioni per i gateway ELIN in Lync Server 2013
 
@@ -103,17 +103,17 @@ Dopo aver stabilito come suddividere lo spazio dell'edificio in posizioni, è ne
 <tbody>
 <tr class="odd">
 <td><p>Primo piano</p></td>
-<td><p>1 </p></td>
+<td><p>1</p></td>
 <td><p>425-555-0100</p></td>
 </tr>
 <tr class="even">
 <td><p>Secondo piano</p></td>
-<td><p>2 </p></td>
+<td><p>2</p></td>
 <td><p>425-555-0111</p></td>
 </tr>
 <tr class="odd">
 <td><p>Terzo piano</p></td>
-<td><p>3 </p></td>
+<td><p>3</p></td>
 <td><p>425-555-0123</p></td>
 </tr>
 </tbody>
@@ -144,7 +144,7 @@ Le considerazioni seguenti possono essere utili per determinare come verrà popo
   - **Valutare se si dispone di un database di terze parti contenente già un mapping di posizioni.**  
     Se si utilizza l'opzione servizio informazioni percorso secondario di Lync Server per la connessione a un database di terze parti, è possibile raggruppare e gestire percorsi tramite una piattaforma offline. Uno dei vantaggi di questo approccio è che le posizioni possono essere associate non solo a identificatori di rete, ma anche a un utente. Questo significa che il servizio informazioni percorso può restituire più indirizzi, provenienti dal servizio informazioni percorso secondario, a un client di Lync Server. L'utente può quindi scegliere la posizione più appropriata.
     
-    Per l'integrazione con il servizio informazioni percorso, è necessario che il database di terze parti segua lo schema di richiesta/risposta percorso di Lync Server. Per informazioni dettagliate, <http://go.microsoft.com/fwlink/p/?linkid=213819>vedere. Per informazioni dettagliate sulla distribuzione di un servizio informazioni percorso secondario, vedere [Configure a Secondary Location Information Service in Lync Server 2013](lync-server-2013-configure-a-secondary-location-information-service.md) nella documentazione relativa alla distribuzione.
+    Per l'integrazione con il servizio informazioni percorso, è necessario che il database di terze parti segua lo schema di richiesta/risposta percorso di Lync Server. Per informazioni dettagliate, <https://go.microsoft.com/fwlink/p/?linkid=213819>vedere. Per informazioni dettagliate sulla distribuzione di un servizio informazioni percorso secondario, vedere [Configure a Secondary Location Information Service in Lync Server 2013](lync-server-2013-configure-a-secondary-location-information-service.md) nella documentazione relativa alla distribuzione.
 
 Per informazioni dettagliate sul popolamento del database delle posizioni, vedere [Configure the location database in Lync Server 2013](lync-server-2013-configure-the-location-database.md) nella documentazione relativa alla distribuzione.
 
