@@ -12,20 +12,20 @@ ms:contentKeyID: 48185215
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b1377eabd4ffc199fe7a9014d28f153aba10afa4
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: d4eb6d1ec984d09f3868ad621add52fb947dd13b
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42149325"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42192689"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="monitoring-iis-request-tracing-log-files-in-lync-server-2013"></a><span data-ttu-id="874fa-102">Monitoraggio dei file di registro di traccia delle richieste IIS in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="874fa-102">Monitoring IIS request tracing log files in Lync Server 2013</span></span>
+# <a name="monitoring-iis-request-tracing-log-files-in-lync-server-2013"></a><span data-ttu-id="1f491-102">Monitoraggio dei file di registro di traccia delle richieste IIS in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="1f491-102">Monitoring IIS request tracing log files in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "42149325"
 
 <span> </span>
 
-<span data-ttu-id="874fa-103">_**Ultimo argomento modificato:** 2013-02-14_</span><span class="sxs-lookup"><span data-stu-id="874fa-103">_**Topic Last Modified:** 2013-02-14_</span></span>
+<span data-ttu-id="1f491-103">_**Ultimo argomento modificato:** 2013-02-14_</span><span class="sxs-lookup"><span data-stu-id="1f491-103">_**Topic Last Modified:** 2013-02-14_</span></span>
 
     This topic applies to deployments supporting Lync 2010 Lync Mobile clients only, and is intended for the Mobility Service (Mcx).
 
-<span data-ttu-id="874fa-104">Quando si Abilita l'analisi delle richieste di Internet Information Services (IIS) per il servizio per dispositivi mobili di Lync Server (MCX), i file di registro generati possono utilizzare fino a tre gigabyte di spazio su disco al giorno.</span><span class="sxs-lookup"><span data-stu-id="874fa-104">When you enable Internet Information Services (IIS) request tracing for the Lync Server Mobility Service (Mcx), the log files that are generated can consume up to three gigabytes of disk space per day.</span></span> <span data-ttu-id="874fa-105">La registrazione della traccia IIS è abilitata per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="874fa-105">IIS trace logging is enabled by default.</span></span> <span data-ttu-id="874fa-106">È necessario monitorare i Front End Server per assicurarsi che non si esaurisca lo spazio su disco.</span><span class="sxs-lookup"><span data-stu-id="874fa-106">You should monitor the Front End Servers to make sure that they do not run out of disk space.</span></span>
+<span data-ttu-id="1f491-104">Quando si Abilita l'analisi delle richieste di Internet Information Services (IIS) per il servizio per dispositivi mobili di Lync Server (MCX), i file di registro generati possono utilizzare fino a tre gigabyte di spazio su disco al giorno.</span><span class="sxs-lookup"><span data-stu-id="1f491-104">When you enable Internet Information Services (IIS) request tracing for the Lync Server Mobility Service (Mcx), the log files that are generated can consume up to three gigabytes of disk space per day.</span></span> <span data-ttu-id="1f491-105">La registrazione della traccia IIS è abilitata per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="1f491-105">IIS trace logging is enabled by default.</span></span> <span data-ttu-id="1f491-106">È necessario monitorare i Front End Server per assicurarsi che non si esaurisca lo spazio su disco.</span><span class="sxs-lookup"><span data-stu-id="1f491-106">You should monitor the Front End Servers to make sure that they do not run out of disk space.</span></span>
 
-<span data-ttu-id="874fa-107">Per impostazione predefinita, i file di registro vengono archiviati in%\\SystemDrive\\%\\Inetpub logs.</span><span class="sxs-lookup"><span data-stu-id="874fa-107">By default, IIS stores the log files at %SystemDrive%\\inetpub\\logs\\LogFiles.</span></span>
+<span data-ttu-id="1f491-107">Per impostazione predefinita, i file di registro vengono archiviati in%\\SystemDrive\\%\\Inetpub logs.</span><span class="sxs-lookup"><span data-stu-id="1f491-107">By default, IIS stores the log files at %SystemDrive%\\inetpub\\logs\\LogFiles.</span></span>
 
-<span data-ttu-id="874fa-108">Per disattivare la traccia delle richieste di IIS per un intero server, digitare il comando seguente alla riga di comando:</span><span class="sxs-lookup"><span data-stu-id="874fa-108">To turn off IIS request tracing for an entire server, at the command line, type the following:</span></span>
+<span data-ttu-id="1f491-108">Per disattivare la traccia delle richieste di IIS per un intero server, digitare il comando seguente alla riga di comando:</span><span class="sxs-lookup"><span data-stu-id="1f491-108">To turn off IIS request tracing for an entire server, at the command line, type the following:</span></span>
 
     %SystemDrive%\Windows\System32\inetsrv\appcmd set config /section:httpLogging /dontLog:True
 
-<span data-ttu-id="874fa-109">Per informazioni dettagliate sul comando **HttpLogging** , vedere [https://go.microsoft.com/fwlink/p/?linkId=234927](https://go.microsoft.com/fwlink/p/?linkid=234927).</span><span class="sxs-lookup"><span data-stu-id="874fa-109">For details about the **httpLogging** command, see [https://go.microsoft.com/fwlink/p/?linkId=234927](https://go.microsoft.com/fwlink/p/?linkid=234927).</span></span>
+<span data-ttu-id="1f491-109">Per informazioni dettagliate sul comando **HttpLogging** , vedere [https://go.microsoft.com/fwlink/p/?linkId=234927](https://go.microsoft.com/fwlink/p/?linkid=234927).</span><span class="sxs-lookup"><span data-stu-id="1f491-109">For details about the **httpLogging** command, see [https://go.microsoft.com/fwlink/p/?linkId=234927](https://go.microsoft.com/fwlink/p/?linkid=234927).</span></span>
 
 </div>
 

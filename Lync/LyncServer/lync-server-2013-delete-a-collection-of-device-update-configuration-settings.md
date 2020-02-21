@@ -12,20 +12,20 @@ ms:contentKeyID: 51803928
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 17d9163985a05611b8c38eb314da9f489695366c
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 28b12835916577e2900c5bd740a599aa229e250d
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42154628"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42190809"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="delete-a-collection-of-device-update-configuration-settings-in-lync-server-2013"></a><span data-ttu-id="2fb27-102">Eliminare una raccolta di impostazioni di configurazione per l'aggiornamento dei dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="2fb27-102">Delete a collection of Device Update configuration settings in Lync Server 2013</span></span>
+# <a name="delete-a-collection-of-device-update-configuration-settings-in-lync-server-2013"></a><span data-ttu-id="8a861-102">Eliminare una raccolta di impostazioni di configurazione per l'aggiornamento dei dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="8a861-102">Delete a collection of Device Update configuration settings in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,18 +35,18 @@ ms.locfileid: "42154628"
 
 <span> </span>
 
-<span data-ttu-id="2fb27-103">_**Ultimo argomento modificato:** 2013-02-20_</span><span class="sxs-lookup"><span data-stu-id="2fb27-103">_**Topic Last Modified:** 2013-02-20_</span></span>
+<span data-ttu-id="8a861-103">_**Ultimo argomento modificato:** 2013-02-20_</span><span class="sxs-lookup"><span data-stu-id="8a861-103">_**Topic Last Modified:** 2013-02-20_</span></span>
 
-<span data-ttu-id="2fb27-104">È inoltre possibile eliminare le impostazioni di configurazione per l'aggiornamento dei dispositivi utilizzando Windows PowerShell e il cmdlet **Remove-CsdeviceUpdateConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="2fb27-104">Device update configuration settings can also be deleted by using Windows PowerShell and the **Remove-CsdeviceUpdateConfiguration** cmdlet.</span></span> <span data-ttu-id="2fb27-105">Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="2fb27-105">This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="2fb27-106">Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.</span><span class="sxs-lookup"><span data-stu-id="2fb27-106">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
-
-<div>
-
+<span data-ttu-id="8a861-104">È inoltre possibile eliminare le impostazioni di configurazione per l'aggiornamento dei dispositivi utilizzando Windows PowerShell e il cmdlet **Remove-CsdeviceUpdateConfiguration** .</span><span class="sxs-lookup"><span data-stu-id="8a861-104">Device update configuration settings can also be deleted by using Windows PowerShell and the **Remove-CsdeviceUpdateConfiguration** cmdlet.</span></span> <span data-ttu-id="8a861-105">Questo cmdlet può essere eseguito da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="8a861-105">This cmdlet can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="8a861-106">Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.</span><span class="sxs-lookup"><span data-stu-id="8a861-106">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
 
 <div>
 
-## <a name="to-remove-a-specific-collection-of-device-update-configuration-settings"></a><span data-ttu-id="2fb27-107">Per rimuovere una raccolta specifica di impostazioni di configurazione per l'aggiornamento dei dispositivi</span><span class="sxs-lookup"><span data-stu-id="2fb27-107">To remove a specific collection of device update configuration settings</span></span>
 
-  - <span data-ttu-id="2fb27-108">Questo comando consente di eliminare le impostazioni di configurazione di aggiornamento dei dispositivi applicate al sito Redmond:</span><span class="sxs-lookup"><span data-stu-id="2fb27-108">This command deletes the device update configuration settings applied to the Redmond site:</span></span>
+<div>
+
+## <a name="to-remove-a-specific-collection-of-device-update-configuration-settings"></a><span data-ttu-id="8a861-107">Per rimuovere una raccolta specifica di impostazioni di configurazione per l'aggiornamento dei dispositivi</span><span class="sxs-lookup"><span data-stu-id="8a861-107">To remove a specific collection of device update configuration settings</span></span>
+
+  - <span data-ttu-id="8a861-108">Questo comando consente di eliminare le impostazioni di configurazione di aggiornamento dei dispositivi applicate al sito Redmond:</span><span class="sxs-lookup"><span data-stu-id="8a861-108">This command deletes the device update configuration settings applied to the Redmond site:</span></span>
     
         Remove-CsDeviceUpdateConfiguration -Identity "site:Redmond"
 
@@ -54,9 +54,9 @@ ms.locfileid: "42154628"
 
 <div>
 
-## <a name="to-remove-all-the-device-update-configuration-settings-applied-to-the-site-scope"></a><span data-ttu-id="2fb27-109">Per rimuovere tutte le impostazioni di configurazione dell'aggiornamento dei dispositivi applicate all'ambito del sito</span><span class="sxs-lookup"><span data-stu-id="2fb27-109">To remove all the device update configuration settings applied to the site scope</span></span>
+## <a name="to-remove-all-the-device-update-configuration-settings-applied-to-the-site-scope"></a><span data-ttu-id="8a861-109">Per rimuovere tutte le impostazioni di configurazione dell'aggiornamento dei dispositivi applicate all'ambito del sito</span><span class="sxs-lookup"><span data-stu-id="8a861-109">To remove all the device update configuration settings applied to the site scope</span></span>
 
-  - <span data-ttu-id="2fb27-110">Questo comando consente di eliminare tutte le impostazioni di configurazione di aggiornamento dei dispositivi applicate all'ambito del sito:</span><span class="sxs-lookup"><span data-stu-id="2fb27-110">This command deletes all the device update configuration settings applied to the site scope:</span></span>
+  - <span data-ttu-id="8a861-110">Questo comando consente di eliminare tutte le impostazioni di configurazione di aggiornamento dei dispositivi applicate all'ambito del sito:</span><span class="sxs-lookup"><span data-stu-id="8a861-110">This command deletes all the device update configuration settings applied to the site scope:</span></span>
     
         Get-CsDeviceUpdateConfiguration -Filter "site:*" | Remove-CsDeviceUpdateConfiguration
 
@@ -64,15 +64,15 @@ ms.locfileid: "42154628"
 
 <div>
 
-## <a name="to-remove-device-update-configuration-settings-based-on-the-value-of-the-logcleanupinterval-property"></a><span data-ttu-id="2fb27-111">Per rimuovere le impostazioni di configurazione dell'aggiornamento dei dispositivi in base al valore della proprietà LogCleanUpInterval</span><span class="sxs-lookup"><span data-stu-id="2fb27-111">To remove device update configuration settings based on the value of the LogCleanUpInterval property</span></span>
+## <a name="to-remove-device-update-configuration-settings-based-on-the-value-of-the-logcleanupinterval-property"></a><span data-ttu-id="8a861-111">Per rimuovere le impostazioni di configurazione dell'aggiornamento dei dispositivi in base al valore della proprietà LogCleanUpInterval</span><span class="sxs-lookup"><span data-stu-id="8a861-111">To remove device update configuration settings based on the value of the LogCleanUpInterval property</span></span>
 
-  - <span data-ttu-id="2fb27-112">Con il comando seguente vengono eliminate tutte le impostazioni di configurazione dell'aggiornamento dei dispositivi in cui l'intervallo di pulizia del registro è maggiore di 10 giorni (10,00:00:00):</span><span class="sxs-lookup"><span data-stu-id="2fb27-112">The following command deletes all the device update configuration settings where the log cleanup interval is greater than 10 days (10.00:00:00):</span></span>
+  - <span data-ttu-id="8a861-112">Con il comando seguente vengono eliminate tutte le impostazioni di configurazione dell'aggiornamento dei dispositivi in cui l'intervallo di pulizia del registro è maggiore di 10 giorni (10,00:00:00):</span><span class="sxs-lookup"><span data-stu-id="8a861-112">The following command deletes all the device update configuration settings where the log cleanup interval is greater than 10 days (10.00:00:00):</span></span>
     
         Get-CsDeviceUpdateConfiguration | Where-Object {$_.LogCleanUpInterval -gt "10.00:00:00" | Remove-CsDeviceUpdateConfiguration
 
 </div>
 
-<span data-ttu-id="2fb27-113">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsDeviceUpdateConfiguration](https://docs.microsoft.com/powershell/module/skype/Remove-CsDeviceUpdateConfiguration) .</span><span class="sxs-lookup"><span data-stu-id="2fb27-113">For details, see the Help topic for the [Remove-CsDeviceUpdateConfiguration](https://docs.microsoft.com/powershell/module/skype/Remove-CsDeviceUpdateConfiguration) cmdlet.</span></span>
+<span data-ttu-id="8a861-113">Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsDeviceUpdateConfiguration](https://docs.microsoft.com/powershell/module/skype/Remove-CsDeviceUpdateConfiguration) .</span><span class="sxs-lookup"><span data-stu-id="8a861-113">For details, see the Help topic for the [Remove-CsDeviceUpdateConfiguration](https://docs.microsoft.com/powershell/module/skype/Remove-CsDeviceUpdateConfiguration) cmdlet.</span></span>
 
 </div>
 

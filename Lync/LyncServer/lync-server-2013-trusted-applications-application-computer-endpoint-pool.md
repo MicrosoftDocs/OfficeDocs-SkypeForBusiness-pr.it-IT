@@ -12,20 +12,20 @@ ms:contentKeyID: 49733667
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bb1a0d83a92a8a64583147f79efa0a40633a5a9a
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 708a98a6c1e9d0ff2d0d499b439127afea64b3ff
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42140999"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42193329"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="trusted-applications-applicationcomputerendpointpool-in-lync-server-2013"></a><span data-ttu-id="b063c-102">Applicazioni attendibili (applicazione/computer/endpoint/pool) in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b063c-102">Trusted applications (application/computer/endpoint/pool) in Lync Server 2013</span></span>
+# <a name="trusted-applications-applicationcomputerendpointpool-in-lync-server-2013"></a><span data-ttu-id="174b8-102">Applicazioni attendibili (applicazione/computer/endpoint/pool) in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="174b8-102">Trusted applications (application/computer/endpoint/pool) in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,32 +35,32 @@ ms.locfileid: "42140999"
 
 <span> </span>
 
-<span data-ttu-id="b063c-103">_**Ultimo argomento modificato:** 2012-11-01_</span><span class="sxs-lookup"><span data-stu-id="b063c-103">_**Topic Last Modified:** 2012-11-01_</span></span>
+<span data-ttu-id="174b8-103">_**Ultimo argomento modificato:** 2012-11-01_</span><span class="sxs-lookup"><span data-stu-id="174b8-103">_**Topic Last Modified:** 2012-11-01_</span></span>
 
-<span data-ttu-id="b063c-104">Utilizzare le procedure descritte in questa sezione per gestire le applicazioni attendibili per Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="b063c-104">Use the procedures in this section to manage trusted applications for Lync Server 2013.</span></span>
+<span data-ttu-id="174b8-104">Utilizzare le procedure descritte in questa sezione per gestire le applicazioni attendibili per Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="174b8-104">Use the procedures in this section to manage trusted applications for Lync Server 2013.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="b063c-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="b063c-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="174b8-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="174b8-105">In This Section</span></span>
 
-  - [<span data-ttu-id="b063c-106">Gestione delle applicazioni attendibili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b063c-106">Managing trusted applications in Lync Server 2013</span></span>](lync-server-2013-managing-trusted-applications.md)
+  - [<span data-ttu-id="174b8-106">Gestione delle applicazioni attendibili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="174b8-106">Managing trusted applications in Lync Server 2013</span></span>](lync-server-2013-managing-trusted-applications.md)
 
 </div>
 
 <div>
 
-## <a name="related-sections"></a><span data-ttu-id="b063c-107">Sezioni correlate</span><span class="sxs-lookup"><span data-stu-id="b063c-107">Related Sections</span></span>
+## <a name="related-sections"></a><span data-ttu-id="174b8-107">Sezioni correlate</span><span class="sxs-lookup"><span data-stu-id="174b8-107">Related Sections</span></span>
 
-[<span data-ttu-id="b063c-108">Cmdlet per le applicazioni attendibili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b063c-108">Trusted applications cmdlets in Lync Server 2013</span></span>](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
+[<span data-ttu-id="174b8-108">Cmdlet per le applicazioni attendibili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="174b8-108">Trusted applications cmdlets in Lync Server 2013</span></span>](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="b063c-109">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="b063c-109">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="174b8-109">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="174b8-109">See Also</span></span>
 
 
-[<span data-ttu-id="b063c-110">Gestione delle applicazioni attendibili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b063c-110">Managing trusted applications in Lync Server 2013</span></span>](lync-server-2013-managing-trusted-applications.md)  
+[<span data-ttu-id="174b8-110">Gestione delle applicazioni attendibili in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="174b8-110">Managing trusted applications in Lync Server 2013</span></span>](lync-server-2013-managing-trusted-applications.md)  
   
 
 </div>

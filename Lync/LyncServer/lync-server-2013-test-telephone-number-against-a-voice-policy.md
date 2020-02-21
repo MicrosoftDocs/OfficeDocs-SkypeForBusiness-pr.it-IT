@@ -12,20 +12,20 @@ ms:contentKeyID: 63969596
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7670e99fc7ac7688eff360a28be6f7280d6191b1
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: d22c801c7d08c3df663f69df07a6c73a5f17f858
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42141622"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42194525"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="test-telephone-number-against-a-voice-policy-in-lync-server-2013"></a><span data-ttu-id="eaba1-102">Verificare il numero di telefono di un criterio vocale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="eaba1-102">Test telephone number against a voice policy in Lync Server 2013</span></span>
+# <a name="test-telephone-number-against-a-voice-policy-in-lync-server-2013"></a><span data-ttu-id="832fc-102">Verificare il numero di telefono di un criterio vocale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="832fc-102">Test telephone number against a voice policy in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,7 +35,7 @@ ms.locfileid: "42141622"
 
 <span> </span>
 
-<span data-ttu-id="eaba1-103">_**Ultimo argomento modificato:** 2014-05-20_</span><span class="sxs-lookup"><span data-stu-id="eaba1-103">_**Topic Last Modified:** 2014-05-20_</span></span>
+<span data-ttu-id="832fc-103">_**Ultimo argomento modificato:** 2014-05-20_</span><span class="sxs-lookup"><span data-stu-id="832fc-103">_**Topic Last Modified:** 2014-05-20_</span></span>
 
 
 <table>
@@ -45,17 +45,17 @@ ms.locfileid: "42141622"
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="eaba1-104">Pianificazione della verifica</span><span class="sxs-lookup"><span data-stu-id="eaba1-104">Verification schedule</span></span></p></td>
-<td><p><span data-ttu-id="eaba1-105">Mensile</span><span class="sxs-lookup"><span data-stu-id="eaba1-105">Monthly</span></span></p></td>
+<td><p><span data-ttu-id="832fc-104">Pianificazione della verifica</span><span class="sxs-lookup"><span data-stu-id="832fc-104">Verification schedule</span></span></p></td>
+<td><p><span data-ttu-id="832fc-105">Mensile</span><span class="sxs-lookup"><span data-stu-id="832fc-105">Monthly</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="eaba1-106">Strumento di testing</span><span class="sxs-lookup"><span data-stu-id="eaba1-106">Testing tool</span></span></p></td>
-<td><p><span data-ttu-id="eaba1-107">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="eaba1-107">Windows PowerShell</span></span></p></td>
+<td><p><span data-ttu-id="832fc-106">Strumento di testing</span><span class="sxs-lookup"><span data-stu-id="832fc-106">Testing tool</span></span></p></td>
+<td><p><span data-ttu-id="832fc-107">Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="832fc-107">Windows PowerShell</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="eaba1-108">Autorizzazioni necessarie</span><span class="sxs-lookup"><span data-stu-id="eaba1-108">Permissions required</span></span></p></td>
-<td><p><span data-ttu-id="eaba1-109">Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</span><span class="sxs-lookup"><span data-stu-id="eaba1-109">When run locally using the Lync Server Management Shell, users must be members of the RTCUniversalServerAdmins security group.</span></span></p>
-<p><span data-ttu-id="eaba1-110">Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet Test-CsVoicePolicy.</span><span class="sxs-lookup"><span data-stu-id="eaba1-110">When run using a remote instance of Windows PowerShell, users must be assigned an RBAC role that has permission to run the Test-CsVoicePolicy cmdlet.</span></span> <span data-ttu-id="eaba1-111">Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="eaba1-111">To see a list of all RBAC roles that can use this cmdlet, run the following command from the Windows PowerShell prompt:</span></span></p>
+<td><p><span data-ttu-id="832fc-108">Autorizzazioni necessarie</span><span class="sxs-lookup"><span data-stu-id="832fc-108">Permissions required</span></span></p></td>
+<td><p><span data-ttu-id="832fc-109">Quando si esegue localmente utilizzando Lync Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.</span><span class="sxs-lookup"><span data-stu-id="832fc-109">When run locally using the Lync Server Management Shell, users must be members of the RTCUniversalServerAdmins security group.</span></span></p>
+<p><span data-ttu-id="832fc-110">Quando si esegue l'utilizzo di un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che disponga dell'autorizzazione per eseguire il cmdlet Test-CsVoicePolicy.</span><span class="sxs-lookup"><span data-stu-id="832fc-110">When run using a remote instance of Windows PowerShell, users must be assigned an RBAC role that has permission to run the Test-CsVoicePolicy cmdlet.</span></span> <span data-ttu-id="832fc-111">Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando riportato di seguito dal prompt dei comandi di Windows PowerShell:</span><span class="sxs-lookup"><span data-stu-id="832fc-111">To see a list of all RBAC roles that can use this cmdlet, run the following command from the Windows PowerShell prompt:</span></span></p>
 <p><code>Get-CsAdminRole | Where-Object {$_.Cmdlets -match &quot;Test-CsVoicePolicy&quot;}</code></p></td>
 </tr>
 </tbody>
@@ -64,86 +64,86 @@ ms.locfileid: "42141622"
 
 <div>
 
-## <a name="description"></a><span data-ttu-id="eaba1-112">Descrizione</span><span class="sxs-lookup"><span data-stu-id="eaba1-112">Description</span></span>
+## <a name="description"></a><span data-ttu-id="832fc-112">Descrizione</span><span class="sxs-lookup"><span data-stu-id="832fc-112">Description</span></span>
 
-<span data-ttu-id="eaba1-113">La possibilità per gli utenti di VoIP aziendale di effettuare chiamate telefoniche in uscita tramite le cerniere PSTN (Public Switched Telephone Network), in gran parte, su tre elementi:</span><span class="sxs-lookup"><span data-stu-id="eaba1-113">The ability of Enterprise Voice users to make outgoing phone calls over the Public Switched Telephone network (PSTN) hinges, in large part, on three things:</span></span>
+<span data-ttu-id="832fc-113">La possibilità per gli utenti di VoIP aziendale di effettuare chiamate telefoniche in uscita tramite le cerniere PSTN (Public Switched Telephone Network), in gran parte, su tre elementi:</span><span class="sxs-lookup"><span data-stu-id="832fc-113">The ability of Enterprise Voice users to make outgoing phone calls over the Public Switched Telephone network (PSTN) hinges, in large part, on three things:</span></span>
 
-  - <span data-ttu-id="eaba1-114">Criteri vocali assegnati all'utente.</span><span class="sxs-lookup"><span data-stu-id="eaba1-114">The voice policy assigned to the user.</span></span>
+  - <span data-ttu-id="832fc-114">Criteri vocali assegnati all'utente.</span><span class="sxs-lookup"><span data-stu-id="832fc-114">The voice policy assigned to the user.</span></span>
 
-  - <span data-ttu-id="eaba1-115">Le route vocali utilizzate per instradare le chiamate da Lync Server alla rete PSTN.</span><span class="sxs-lookup"><span data-stu-id="eaba1-115">The voice routes used to route calls from Lync Server to the PSTN network.</span></span>
+  - <span data-ttu-id="832fc-115">Le route vocali utilizzate per instradare le chiamate da Lync Server alla rete PSTN.</span><span class="sxs-lookup"><span data-stu-id="832fc-115">The voice routes used to route calls from Lync Server to the PSTN network.</span></span>
 
-  - <span data-ttu-id="eaba1-116">Utilizzo della rete PSTN, una proprietà di Lync Server che connette un criterio vocale a una route vocale.</span><span class="sxs-lookup"><span data-stu-id="eaba1-116">The PSTN usage, a Lync Server property that connects a voice policy to a voice route.</span></span>
+  - <span data-ttu-id="832fc-116">Utilizzo della rete PSTN, una proprietà di Lync Server che connette un criterio vocale a una route vocale.</span><span class="sxs-lookup"><span data-stu-id="832fc-116">The PSTN usage, a Lync Server property that connects a voice policy to a voice route.</span></span>
 
-<span data-ttu-id="eaba1-117">L'utilizzo della rete PSTN è particolarmente importante: è la proprietà che connette un criterio vocale a una route vocale.</span><span class="sxs-lookup"><span data-stu-id="eaba1-117">The PSTN usage is especially important: it’s the property that connects a voice policy to a voice route.</span></span> <span data-ttu-id="eaba1-118">(Si dice che un criterio vocale e una route vocale siano connessi se hanno almeno un utilizzo PSTN in comune). I criteri vocali possono essere configurati senza specificare un utilizzo PSTN.</span><span class="sxs-lookup"><span data-stu-id="eaba1-118">(A voice policy and a voice route are said to be connected if they have at least one PSTN usage in common.) Voice policies can be configured without specifying a PSTN usage.</span></span> <span data-ttu-id="eaba1-119">In tal caso, gli utenti a cui è stato assegnato il criterio non saranno in grado di effettuare chiamate in uscita sulla rete PSTN.</span><span class="sxs-lookup"><span data-stu-id="eaba1-119">In that case, users who were assigned that policy won't be able to make outgoing calls over the PSTN network.</span></span> <span data-ttu-id="eaba1-120">Analogamente, le route vocali che non dispongono di almeno un utilizzo PSTN specificato non saranno in grado di instradare le chiamate alla rete PSTN.</span><span class="sxs-lookup"><span data-stu-id="eaba1-120">Likewise, voice routes that do not have at least one specified PSTN usage will be unable to route calls to the PSTN network.</span></span>
+<span data-ttu-id="832fc-117">L'utilizzo della rete PSTN è particolarmente importante: è la proprietà che connette un criterio vocale a una route vocale.</span><span class="sxs-lookup"><span data-stu-id="832fc-117">The PSTN usage is especially important: it’s the property that connects a voice policy to a voice route.</span></span> <span data-ttu-id="832fc-118">(Si dice che un criterio vocale e una route vocale siano connessi se hanno almeno un utilizzo PSTN in comune). I criteri vocali possono essere configurati senza specificare un utilizzo PSTN.</span><span class="sxs-lookup"><span data-stu-id="832fc-118">(A voice policy and a voice route are said to be connected if they have at least one PSTN usage in common.) Voice policies can be configured without specifying a PSTN usage.</span></span> <span data-ttu-id="832fc-119">In tal caso, gli utenti a cui è stato assegnato il criterio non saranno in grado di effettuare chiamate in uscita sulla rete PSTN.</span><span class="sxs-lookup"><span data-stu-id="832fc-119">In that case, users who were assigned that policy won't be able to make outgoing calls over the PSTN network.</span></span> <span data-ttu-id="832fc-120">Analogamente, le route vocali che non dispongono di almeno un utilizzo PSTN specificato non saranno in grado di instradare le chiamate alla rete PSTN.</span><span class="sxs-lookup"><span data-stu-id="832fc-120">Likewise, voice routes that do not have at least one specified PSTN usage will be unable to route calls to the PSTN network.</span></span>
 
-<span data-ttu-id="eaba1-121">Il cmdlet Test-CsVoicePolicy verifica che un determinato criterio vocale abbia un utilizzo PSTN e che l'utilizzo sia condiviso da almeno una route vocale.</span><span class="sxs-lookup"><span data-stu-id="eaba1-121">The Test-CsVoicePolicy cmdlet verifies that a given voice policy has a PSTN usage and that the usage is shared by at least one voice route.</span></span> <span data-ttu-id="eaba1-122">Se la verifica eseguita da Test-CsVoicePolicy ha esito positivo, il cmdlet restituirà il nome della prima route vocale valida individuata e anche il nome dell'utilizzo PSTN che connette il criterio alla route.</span><span class="sxs-lookup"><span data-stu-id="eaba1-122">If the verification run by Test-CsVoicePolicy succeeds, the cmdlet will report back the name of the first valid voice route it finds, and also the name of the PSTN usage that connects the policy to the route.</span></span>
+<span data-ttu-id="832fc-121">Il cmdlet Test-CsVoicePolicy verifica che un determinato criterio vocale abbia un utilizzo PSTN e che l'utilizzo sia condiviso da almeno una route vocale.</span><span class="sxs-lookup"><span data-stu-id="832fc-121">The Test-CsVoicePolicy cmdlet verifies that a given voice policy has a PSTN usage and that the usage is shared by at least one voice route.</span></span> <span data-ttu-id="832fc-122">Se la verifica eseguita da Test-CsVoicePolicy ha esito positivo, il cmdlet restituirà il nome della prima route vocale valida individuata e anche il nome dell'utilizzo PSTN che connette il criterio alla route.</span><span class="sxs-lookup"><span data-stu-id="832fc-122">If the verification run by Test-CsVoicePolicy succeeds, the cmdlet will report back the name of the first valid voice route it finds, and also the name of the PSTN usage that connects the policy to the route.</span></span>
 
 </div>
 
 <div>
 
-## <a name="running-the-test"></a><span data-ttu-id="eaba1-123">Esecuzione del test</span><span class="sxs-lookup"><span data-stu-id="eaba1-123">Running the test</span></span>
+## <a name="running-the-test"></a><span data-ttu-id="832fc-123">Esecuzione del test</span><span class="sxs-lookup"><span data-stu-id="832fc-123">Running the test</span></span>
 
-<span data-ttu-id="eaba1-124">Per eseguire il cmdlet Test-CsVoicePolicy, è necessario innanzitutto utilizzare il cmdlet Get-CsVoicePolicy per recuperare un'istanza del criterio vocale da testare. tale istanza deve quindi essere inviata tramite pipe a Test-CsVoicePolicy.</span><span class="sxs-lookup"><span data-stu-id="eaba1-124">To run the Test-CsVoicePolicy cmdlet you must first use the Get-CsVoicePolicy cmdlet retrieve an instance of the voice policy to be tested; that instance must then be piped to Test-CsVoicePolicy.</span></span> <span data-ttu-id="eaba1-125">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="eaba1-125">For example:</span></span>
+<span data-ttu-id="832fc-124">Per eseguire il cmdlet Test-CsVoicePolicy, è necessario innanzitutto utilizzare il cmdlet Get-CsVoicePolicy per recuperare un'istanza del criterio vocale da testare. tale istanza deve quindi essere inviata tramite pipe a Test-CsVoicePolicy.</span><span class="sxs-lookup"><span data-stu-id="832fc-124">To run the Test-CsVoicePolicy cmdlet you must first use the Get-CsVoicePolicy cmdlet retrieve an instance of the voice policy to be tested; that instance must then be piped to Test-CsVoicePolicy.</span></span> <span data-ttu-id="832fc-125">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="832fc-125">For example:</span></span>
 
 `Get-CsVoicePolicy -Identity "Global" | Test-CsVoicePolicy -TargetNumber "+12065551219"`
 
-<span data-ttu-id="eaba1-126">Si noti che questo comando, che non utilizza Get-CsVoicePolicy per recuperare un'istanza del criterio vocale, avrà esito negativo:</span><span class="sxs-lookup"><span data-stu-id="eaba1-126">Note that this command, which does not use Get-CsVoicePolicy to retrieve a voice policy instance, will fail:</span></span>
+<span data-ttu-id="832fc-126">Si noti che questo comando, che non utilizza Get-CsVoicePolicy per recuperare un'istanza del criterio vocale, avrà esito negativo:</span><span class="sxs-lookup"><span data-stu-id="832fc-126">Note that this command, which does not use Get-CsVoicePolicy to retrieve a voice policy instance, will fail:</span></span>
 
 `Test-CsVoicePolicy -TargetNumber "+12065551219" -VoicePolicy "Global"`
 
-<span data-ttu-id="eaba1-127">Se si desidera controllare tutti i criteri vocali in base a un numero di telefono specificato, utilizzare un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="eaba1-127">If you want to check all the voice policies against a specified phone number then use a command similar to this:</span></span>
+<span data-ttu-id="832fc-127">Se si desidera controllare tutti i criteri vocali in base a un numero di telefono specificato, utilizzare un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="832fc-127">If you want to check all the voice policies against a specified phone number then use a command similar to this:</span></span>
 
 `Get-CsVoicePolicy | Test-CsVoicePolicy -TargetNumber "+12065551219"`
 
-<span data-ttu-id="eaba1-128">Si noti che TargetNumber deve essere specificato utilizzando il formato E. 164.</span><span class="sxs-lookup"><span data-stu-id="eaba1-128">Note that the TargetNumber must be specified by using the E.164 format.</span></span> <span data-ttu-id="eaba1-129">Test-CsVoicePolicy non tenterà di normalizzare o tradurre i numeri di telefono nel formato E. 164.</span><span class="sxs-lookup"><span data-stu-id="eaba1-129">Test-CsVoicePolicy won't attempt to normalize or translate phone numbers into the E.164 format.</span></span>
+<span data-ttu-id="832fc-128">Si noti che TargetNumber deve essere specificato utilizzando il formato E. 164.</span><span class="sxs-lookup"><span data-stu-id="832fc-128">Note that the TargetNumber must be specified by using the E.164 format.</span></span> <span data-ttu-id="832fc-129">Test-CsVoicePolicy non tenterà di normalizzare o tradurre i numeri di telefono nel formato E. 164.</span><span class="sxs-lookup"><span data-stu-id="832fc-129">Test-CsVoicePolicy won't attempt to normalize or translate phone numbers into the E.164 format.</span></span>
 
-<span data-ttu-id="eaba1-130">Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmdlet Test-CsVoicePolicy.</span><span class="sxs-lookup"><span data-stu-id="eaba1-130">For more information, see the Help documentation for the Test-CsVoicePolicy cmdlet.</span></span>
-
-</div>
-
-<div>
-
-## <a name="determining-success-or-failure"></a><span data-ttu-id="eaba1-131">Determinazione dell'esito positivo o negativo</span><span class="sxs-lookup"><span data-stu-id="eaba1-131">Determining success or failure</span></span>
-
-<span data-ttu-id="eaba1-132">Se il criterio vocale è in grado di trovare sia una route vocale corrispondente che un utilizzo PSTN corrispondente, sia la route che l'utilizzo verranno visualizzati sullo schermo:</span><span class="sxs-lookup"><span data-stu-id="eaba1-132">If the voice policy can find both a matching voice route and a matching PSTN usage, then both the route and the usage will be displayed on-screen:</span></span>
-
-<span data-ttu-id="eaba1-133">FirstMatchingRoute MatchingUsage</span><span class="sxs-lookup"><span data-stu-id="eaba1-133">FirstMatchingRoute MatchingUsage</span></span>
-
-<span data-ttu-id="eaba1-134">\------------------ -------------</span><span class="sxs-lookup"><span data-stu-id="eaba1-134">\------------------ -------------</span></span>
-
-<span data-ttu-id="eaba1-135">RedmondVoiceRoute RedmondPstnUsage</span><span class="sxs-lookup"><span data-stu-id="eaba1-135">RedmondVoiceRoute RedmondPstnUsage</span></span>
-
-<span data-ttu-id="eaba1-136">Se non è possibile trovare una route vocale appropriata o un utilizzo PSTN appropriato, i valori delle proprietà vuote verranno visualizzati sullo schermo:</span><span class="sxs-lookup"><span data-stu-id="eaba1-136">If either an appropriate voice route or an appropriate PSTN usage cannot be found then blank property values will be displayed on-screen:</span></span>
-
-<span data-ttu-id="eaba1-137">FirstMatchingRoute MatchingUsage</span><span class="sxs-lookup"><span data-stu-id="eaba1-137">FirstMatchingRoute MatchingUsage</span></span>
-
-<span data-ttu-id="eaba1-138">\------------------ -------------</span><span class="sxs-lookup"><span data-stu-id="eaba1-138">\------------------ -------------</span></span>
+<span data-ttu-id="832fc-130">Per ulteriori informazioni, vedere la documentazione della Guida relativa al cmdlet Test-CsVoicePolicy.</span><span class="sxs-lookup"><span data-stu-id="832fc-130">For more information, see the Help documentation for the Test-CsVoicePolicy cmdlet.</span></span>
 
 </div>
 
 <div>
 
-## <a name="reasons-why-the-test-might-have-failed"></a><span data-ttu-id="eaba1-139">Motivi per cui il test potrebbe non avere avuto esito positivo</span><span class="sxs-lookup"><span data-stu-id="eaba1-139">Reasons why the test might have failed</span></span>
+## <a name="determining-success-or-failure"></a><span data-ttu-id="832fc-131">Determinazione dell'esito positivo o negativo</span><span class="sxs-lookup"><span data-stu-id="832fc-131">Determining success or failure</span></span>
 
-<span data-ttu-id="eaba1-140">Se Test-CsVoicePolicy non restituisce una corrispondenza che potrebbe significare che il criterio vocale non condivide un utilizzo PSTN con una route vocale.</span><span class="sxs-lookup"><span data-stu-id="eaba1-140">If Test-CsVoicePolicy does not return a match that could mean that the voice policy does not share a PSTN usage with a voice route.</span></span> <span data-ttu-id="eaba1-141">Per verificare che, utilizzare un cmdlet simile al seguente per verificare che gli utilizzi PSTN assegnati al criterio vocale:</span><span class="sxs-lookup"><span data-stu-id="eaba1-141">To verify that, use a cmdlet similar to the following to verify that PSTN usages assigned to the voice policy:</span></span>
+<span data-ttu-id="832fc-132">Se il criterio vocale è in grado di trovare sia una route vocale corrispondente che un utilizzo PSTN corrispondente, sia la route che l'utilizzo verranno visualizzati sullo schermo:</span><span class="sxs-lookup"><span data-stu-id="832fc-132">If the voice policy can find both a matching voice route and a matching PSTN usage, then both the route and the usage will be displayed on-screen:</span></span>
+
+<span data-ttu-id="832fc-133">FirstMatchingRoute MatchingUsage</span><span class="sxs-lookup"><span data-stu-id="832fc-133">FirstMatchingRoute MatchingUsage</span></span>
+
+<span data-ttu-id="832fc-134">\------------------ -------------</span><span class="sxs-lookup"><span data-stu-id="832fc-134">\------------------ -------------</span></span>
+
+<span data-ttu-id="832fc-135">RedmondVoiceRoute RedmondPstnUsage</span><span class="sxs-lookup"><span data-stu-id="832fc-135">RedmondVoiceRoute RedmondPstnUsage</span></span>
+
+<span data-ttu-id="832fc-136">Se non è possibile trovare una route vocale appropriata o un utilizzo PSTN appropriato, i valori delle proprietà vuote verranno visualizzati sullo schermo:</span><span class="sxs-lookup"><span data-stu-id="832fc-136">If either an appropriate voice route or an appropriate PSTN usage cannot be found then blank property values will be displayed on-screen:</span></span>
+
+<span data-ttu-id="832fc-137">FirstMatchingRoute MatchingUsage</span><span class="sxs-lookup"><span data-stu-id="832fc-137">FirstMatchingRoute MatchingUsage</span></span>
+
+<span data-ttu-id="832fc-138">\------------------ -------------</span><span class="sxs-lookup"><span data-stu-id="832fc-138">\------------------ -------------</span></span>
+
+</div>
+
+<div>
+
+## <a name="reasons-why-the-test-might-have-failed"></a><span data-ttu-id="832fc-139">Motivi per cui il test potrebbe non avere avuto esito positivo</span><span class="sxs-lookup"><span data-stu-id="832fc-139">Reasons why the test might have failed</span></span>
+
+<span data-ttu-id="832fc-140">Se Test-CsVoicePolicy non restituisce una corrispondenza che potrebbe significare che il criterio vocale non condivide un utilizzo PSTN con una route vocale.</span><span class="sxs-lookup"><span data-stu-id="832fc-140">If Test-CsVoicePolicy does not return a match that could mean that the voice policy does not share a PSTN usage with a voice route.</span></span> <span data-ttu-id="832fc-141">Per verificare che, utilizzare un cmdlet simile al seguente per verificare che gli utilizzi PSTN assegnati al criterio vocale:</span><span class="sxs-lookup"><span data-stu-id="832fc-141">To verify that, use a cmdlet similar to the following to verify that PSTN usages assigned to the voice policy:</span></span>
 
 `Get-CsVoicePolicy -Identity "Global" | Select-Object PstnUsages | Format-List`
 
-<span data-ttu-id="eaba1-142">Successivamente, eseguire questo comando per determinare gli utilizzi PSTN assegnati a ciascuna delle route vocali:</span><span class="sxs-lookup"><span data-stu-id="eaba1-142">Next, run this command to determine the PSTN usages assign to each of your voice routes:</span></span>
+<span data-ttu-id="832fc-142">Successivamente, eseguire questo comando per determinare gli utilizzi PSTN assegnati a ciascuna delle route vocali:</span><span class="sxs-lookup"><span data-stu-id="832fc-142">Next, run this command to determine the PSTN usages assign to each of your voice routes:</span></span>
 
 `Get-CsVoiceRoute | Select-Object Identity, PstnUsages`
 
-<span data-ttu-id="eaba1-143">Se vengono visualizzate eventuali corrispondenze, ovvero se vengono visualizzate una o più route vocali che condividono almeno un utilizzo PSTN con il criterio vocale, è necessario eseguire il cmdlet Test-CsVoiceRoute per verificare che la route vocale sia in grado di comporre il numero di telefono specificato.</span><span class="sxs-lookup"><span data-stu-id="eaba1-143">If you see any matches (that is, if you see one or more voice routes that share at least one PSTN usage with your voice policy), you should then run the Test-CsVoiceRoute cmdlet to verify that the voice route can dial the supplied phone number.</span></span>
+<span data-ttu-id="832fc-143">Se vengono visualizzate eventuali corrispondenze, ovvero se vengono visualizzate una o più route vocali che condividono almeno un utilizzo PSTN con il criterio vocale, è necessario eseguire il cmdlet Test-CsVoiceRoute per verificare che la route vocale sia in grado di comporre il numero di telefono specificato.</span><span class="sxs-lookup"><span data-stu-id="832fc-143">If you see any matches (that is, if you see one or more voice routes that share at least one PSTN usage with your voice policy), you should then run the Test-CsVoiceRoute cmdlet to verify that the voice route can dial the supplied phone number.</span></span>
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="eaba1-144">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="eaba1-144">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="832fc-144">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="832fc-144">See Also</span></span>
 
 
-[<span data-ttu-id="eaba1-145">Test-CsVoicePolicy</span><span class="sxs-lookup"><span data-stu-id="eaba1-145">Test-CsVoicePolicy</span></span>](https://docs.microsoft.com/powershell/module/skype/Test-CsVoicePolicy)  
+[<span data-ttu-id="832fc-145">Test-CsVoicePolicy</span><span class="sxs-lookup"><span data-stu-id="832fc-145">Test-CsVoicePolicy</span></span>](https://docs.microsoft.com/powershell/module/skype/Test-CsVoicePolicy)  
   
 
 </div>

@@ -12,20 +12,20 @@ ms:contentKeyID: 62258122
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ea8e76906514dd088cd96c758b886b6193dd8ec2
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: c4763f4589561f95d91c6aa449630b55c1cf74ed
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42153588"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42192589"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="moving-users-from-lync-online-to-lync-on-premises-in-lync-server-2013"></a><span data-ttu-id="e23df-102">Spostamento di utenti da Lync Online a Lync in locale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e23df-102">Moving users from Lync Online to Lync on-premises in Lync Server 2013</span></span>
+# <a name="moving-users-from-lync-online-to-lync-on-premises-in-lync-server-2013"></a><span data-ttu-id="00f4c-102">Spostamento di utenti da Lync Online a Lync in locale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="00f4c-102">Moving users from Lync Online to Lync on-premises in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "42153588"
 
 <span> </span>
 
-<span data-ttu-id="e23df-103">_**Ultimo argomento modificato:** 2014-05-08_</span><span class="sxs-lookup"><span data-stu-id="e23df-103">_**Topic Last Modified:** 2014-05-08_</span></span>
+<span data-ttu-id="00f4c-103">_**Ultimo argomento modificato:** 2014-05-08_</span><span class="sxs-lookup"><span data-stu-id="00f4c-103">_**Topic Last Modified:** 2014-05-08_</span></span>
 
-<span data-ttu-id="e23df-104">L'organizzazione ha distribuito Lync Online prima di distribuire Lync Server in locale?</span><span class="sxs-lookup"><span data-stu-id="e23df-104">Did your organization deploy Lync Online before it ever deployed Lync Server on-premises?</span></span> <span data-ttu-id="e23df-105">E ora si desidera spostare gli account utente originariamente abilitati per Lync in Lync Online per la distribuzione di Lync Server locale?</span><span class="sxs-lookup"><span data-stu-id="e23df-105">And now you’d like to move user accounts that were originally enabled for Lync in Lync Online to your on-premises Lync Server deployment?</span></span> <span data-ttu-id="e23df-106">In questa sezione è possibile eseguire questa operazione.</span><span class="sxs-lookup"><span data-stu-id="e23df-106">This section can help you do that.</span></span>
+<span data-ttu-id="00f4c-104">L'organizzazione ha distribuito Lync Online prima di distribuire Lync Server in locale?</span><span class="sxs-lookup"><span data-stu-id="00f4c-104">Did your organization deploy Lync Online before it ever deployed Lync Server on-premises?</span></span> <span data-ttu-id="00f4c-105">E ora si desidera spostare gli account utente originariamente abilitati per Lync in Lync Online per la distribuzione di Lync Server locale?</span><span class="sxs-lookup"><span data-stu-id="00f4c-105">And now you’d like to move user accounts that were originally enabled for Lync in Lync Online to your on-premises Lync Server deployment?</span></span> <span data-ttu-id="00f4c-106">In questa sezione è possibile eseguire questa operazione.</span><span class="sxs-lookup"><span data-stu-id="00f4c-106">This section can help you do that.</span></span>
 
 <div>
 
 
 > [!NOTE]  
-> <span data-ttu-id="e23df-107">In questa sezione viene utilizzato solo lo spostamento degli utenti originariamente abilitati per Lync in Lync Online.</span><span class="sxs-lookup"><span data-stu-id="e23df-107">This section is only about moving users who were originally enabled for Lync in Lync Online.</span></span> <span data-ttu-id="e23df-108">È possibile che gli account utente siano stati abilitati per la prima volta per Lync in locale, quindi spostati in Lync Online?</span><span class="sxs-lookup"><span data-stu-id="e23df-108">Maybe you have user accounts that you first enabled for Lync on-premises, then moved to Lync Online?</span></span> <span data-ttu-id="e23df-109">In caso affermativo e si desidera spostarli di nuovo in locale, il processo è semplice: <A href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">amministrazione degli utenti in una distribuzione ibrida di Lync Server 2013</A>.</span><span class="sxs-lookup"><span data-stu-id="e23df-109">If so, and you want to move them back to on-premises, the process is easy: <A href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">Administering users in a hybrid Lync Server 2013 deployment</A>.</span></span>
+> <span data-ttu-id="00f4c-107">In questa sezione viene utilizzato solo lo spostamento degli utenti originariamente abilitati per Lync in Lync Online.</span><span class="sxs-lookup"><span data-stu-id="00f4c-107">This section is only about moving users who were originally enabled for Lync in Lync Online.</span></span> <span data-ttu-id="00f4c-108">È possibile che gli account utente siano stati abilitati per la prima volta per Lync in locale, quindi spostati in Lync Online?</span><span class="sxs-lookup"><span data-stu-id="00f4c-108">Maybe you have user accounts that you first enabled for Lync on-premises, then moved to Lync Online?</span></span> <span data-ttu-id="00f4c-109">In caso affermativo e si desidera spostarli di nuovo in locale, il processo è semplice: <A href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">amministrazione degli utenti in una distribuzione ibrida di Lync Server 2013</A>.</span><span class="sxs-lookup"><span data-stu-id="00f4c-109">If so, and you want to move them back to on-premises, the process is easy: <A href="lync-server-2013-administering-users-in-a-hybrid-deployment.md">Administering users in a hybrid Lync Server 2013 deployment</A>.</span></span>
 
 
 
 </div>
 
-  - [<span data-ttu-id="e23df-110">Primi passaggi prima di avviare la migrazione degli utenti da Lync Online a Lync locale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e23df-110">First steps before you start migrating users from Lync Online to Lync on-premises in Lync Server 2013</span></span>](lync-server-2013-first-steps-before-you-start-migrating-users-from-lync-online-to-lync-on-premises.md)
+  - [<span data-ttu-id="00f4c-110">Primi passaggi prima di avviare la migrazione degli utenti da Lync Online a Lync locale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="00f4c-110">First steps before you start migrating users from Lync Online to Lync on-premises in Lync Server 2013</span></span>](lync-server-2013-first-steps-before-you-start-migrating-users-from-lync-online-to-lync-on-premises.md)
 
-  - [<span data-ttu-id="e23df-111">Migrazione degli utenti di Lync Online a Lync locale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e23df-111">Migrating Lync Online users to Lync on-premises in Lync Server 2013</span></span>](lync-server-2013-migrating-lync-online-users-to-lync-on-premises.md)
+  - [<span data-ttu-id="00f4c-111">Migrazione degli utenti di Lync Online a Lync locale in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="00f4c-111">Migrating Lync Online users to Lync on-premises in Lync Server 2013</span></span>](lync-server-2013-migrating-lync-online-users-to-lync-on-premises.md)
 
 </div>
 
