@@ -12,16 +12,16 @@ ms:contentKeyID: 63969578
 ms.date: 01/27/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 55d8881bc8b8a55351cc088c230574b958718a63
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: d0cb167d2a7aed3f5c107d4beba568c00ac501e0
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42150935"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42206732"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
@@ -69,7 +69,7 @@ Per controllare lo spazio libero sul disco, è possibile utilizzare i seguenti m
 
 1.  **System Center Operations Manager**   System Center Operations Manager può essere utilizzato per avvisare gli amministratori quando è vincolato lo spazio del volume.
 
-2.  **Esecuzione di uno**   spazio su disco di monitoraggio dello script mediante l'esecuzione di uno script che invia un messaggio se lo spazio disponibile sul disco rigido scende al di sotto del 20%. È possibile trovare uno script di esempio su Microsoft Script Center su TechNet, esaminare quanto segue:[http://gallery.technet.microsoft.com/scriptcenter/site/search?query=hard%20disk%20alert\&f%5B0%5D.Value=hard%20disk%20alert\&f%5B0%5D.Type=SearchText\&ac=5](http://gallery.technet.microsoft.com/scriptcenter/site/search?query=hard+disk+alert%26f%5b0%5d.value=hard+disk+alert%26f%5b0%5d.type=searchtext%26ac=5)
+2.  **Esecuzione di uno**   spazio su disco di monitoraggio dello script mediante l'esecuzione di uno script che invia un messaggio se lo spazio disponibile sul disco rigido scende al di sotto del 20%. È possibile trovare uno script di esempio su Microsoft Script Center su TechNet, esaminare quanto segue:[https://gallery.technet.microsoft.com/scriptcenter/site/search?query=hard%20disk%20alert\&f%5B0%5D.Value=hard%20disk%20alert\&f%5B0%5D.Type=SearchText\&ac=5](https://gallery.technet.microsoft.com/scriptcenter/site/search?query=hard+disk+alert%26f%5b0%5d.value=hard+disk+alert%26f%5b0%5d.type=searchtext%26ac=5)
 
 3.  **** Esplora risorse di Windows per controllare lo spazio su disco nei volumi che archiviano i log e i database di Lync Server 2013.   
 

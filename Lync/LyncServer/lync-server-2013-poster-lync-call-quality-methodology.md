@@ -12,16 +12,16 @@ ms:contentKeyID: 61084874
 ms.date: 06/24/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e35627633839f294cebced6df47a90919e7fc5ef
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: caff54dd2919bacfda02fceff138650f90bae650
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42139157"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42208783"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
@@ -103,7 +103,7 @@ Dopo aver scelto una strada per iniziare, definire una destinazione per ogni are
 
 ## <a name="pcd"></a>PCD
 
-Lo strumento di diagnostica di PreCall (PCD) consentirà di identificare e diagnosticare i problemi della rete perimetrale (il database QoE non raccoglie informazioni sul proprio perimetro o sulla propria rete geometrica), nonché di risolvere eventuali problemi di connessione nell'ultimo miglio. Lo strumento è disponibile sia come app Windows 8 Modern o come applicazione desktop di Windows all' http://apps.microsoft.com/windows/en-us/app/lync-2013-precall-diagnostics/9607fe33-2b51-403d-9615-c23f248e7c88indirizzo.
+Lo strumento di diagnostica di PreCall (PCD) consentirà di identificare e diagnosticare i problemi della rete perimetrale (il database QoE non raccoglie informazioni sul proprio perimetro o sulla propria rete geometrica), nonché di risolvere eventuali problemi di connessione nell'ultimo miglio. Lo strumento è disponibile sia come app Windows 8 Modern o come applicazione desktop di Windows all' https://apps.microsoft.com/windows/en-us/app/lync-2013-precall-diagnostics/9607fe33-2b51-403d-9615-c23f248e7c88indirizzo.
 
 </div>
 
