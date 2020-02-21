@@ -12,20 +12,20 @@ ms:contentKeyID: 51541523
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9ec5172df20205d37bb79995280a2c50e3f8efc1
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: e48af9dd5b35676ee0141b771f8e50e1fbdedae6
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42144702"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42201352"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="restoring-an-enterprise-edition-member-server-in-lync-server-2013"></a><span data-ttu-id="58739-102">Ripristino di un server membro Enterprise Edition in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="58739-102">Restoring an Enterprise Edition member server in Lync Server 2013</span></span>
+# <a name="restoring-an-enterprise-edition-member-server-in-lync-server-2013"></a><span data-ttu-id="31bc9-102">Ripristino di un server membro Enterprise Edition in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="31bc9-102">Restoring an Enterprise Edition member server in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "42144702"
 
 <span> </span>
 
-<span data-ttu-id="58739-103">_**Ultimo argomento modificato:** 2013-02-18_</span><span class="sxs-lookup"><span data-stu-id="58739-103">_**Topic Last Modified:** 2013-02-18_</span></span>
+<span data-ttu-id="31bc9-103">_**Ultimo argomento modificato:** 2013-02-18_</span><span class="sxs-lookup"><span data-stu-id="31bc9-103">_**Topic Last Modified:** 2013-02-18_</span></span>
 
-<span data-ttu-id="58739-104">Se un server che esegue uno dei ruoli del server seguenti ha esito negativo, seguire la procedura descritta in questo argomento per ripristinare il server.</span><span class="sxs-lookup"><span data-stu-id="58739-104">If a server running one of the following server roles fails, follow the procedure in this topic to restore the server.</span></span> <span data-ttu-id="58739-105">Se si verificano errori indipendenti in più server, seguire la procedura per ogni server.</span><span class="sxs-lookup"><span data-stu-id="58739-105">If multiple servers fail independently, follow the procedure for each server.</span></span>
+<span data-ttu-id="31bc9-104">Se un server che esegue uno dei ruoli del server seguenti ha esito negativo, seguire la procedura descritta in questo argomento per ripristinare il server.</span><span class="sxs-lookup"><span data-stu-id="31bc9-104">If a server running one of the following server roles fails, follow the procedure in this topic to restore the server.</span></span> <span data-ttu-id="31bc9-105">Se si verificano errori indipendenti in più server, seguire la procedura per ogni server.</span><span class="sxs-lookup"><span data-stu-id="31bc9-105">If multiple servers fail independently, follow the procedure for each server.</span></span>
 
-  - <span data-ttu-id="58739-106">Front End Server</span><span class="sxs-lookup"><span data-stu-id="58739-106">Front End Server</span></span>
+  - <span data-ttu-id="31bc9-106">Front End Server</span><span class="sxs-lookup"><span data-stu-id="31bc9-106">Front End Server</span></span>
 
-  - <span data-ttu-id="58739-107">Mediation Server</span><span class="sxs-lookup"><span data-stu-id="58739-107">Mediation Server</span></span>
+  - <span data-ttu-id="31bc9-107">Mediation Server</span><span class="sxs-lookup"><span data-stu-id="31bc9-107">Mediation Server</span></span>
 
-  - <span data-ttu-id="58739-108">Director</span><span class="sxs-lookup"><span data-stu-id="58739-108">Director</span></span>
+  - <span data-ttu-id="31bc9-108">Director</span><span class="sxs-lookup"><span data-stu-id="31bc9-108">Director</span></span>
 
-  - <span data-ttu-id="58739-109">server Persistent Chat</span><span class="sxs-lookup"><span data-stu-id="58739-109">Persistent Chat Server</span></span>
+  - <span data-ttu-id="31bc9-109">server Persistent Chat</span><span class="sxs-lookup"><span data-stu-id="31bc9-109">Persistent Chat Server</span></span>
 
-  - <span data-ttu-id="58739-110">Edge Server</span><span class="sxs-lookup"><span data-stu-id="58739-110">Edge Server</span></span>
+  - <span data-ttu-id="31bc9-110">Edge Server</span><span class="sxs-lookup"><span data-stu-id="31bc9-110">Edge Server</span></span>
 
 <div>
 
 
 > [!TIP]  
-> <span data-ttu-id="58739-111">Prima di iniziare il ripristino, è consigliabile prendere una copia dell'immagine del sistema.</span><span class="sxs-lookup"><span data-stu-id="58739-111">We recommend that you take an image copy of the system before you start restoration.</span></span> <span data-ttu-id="58739-112">È possibile utilizzare questa immagine come punto di rollback, in caso di problemi durante il ripristino.</span><span class="sxs-lookup"><span data-stu-id="58739-112">You can use this image as a rollback point, in case something goes wrong during restoration.</span></span> <span data-ttu-id="58739-113">È possibile che si desideri prendere la copia dell'immagine dopo l'installazione del sistema operativo e di SQL Server e ripristinare o registrare nuovamente i certificati.</span><span class="sxs-lookup"><span data-stu-id="58739-113">You might want to take the image copy after you install the operating system and SQL Server, and restore or reenroll the certificates.</span></span>
+> <span data-ttu-id="31bc9-111">Prima di iniziare il ripristino, è consigliabile prendere una copia dell'immagine del sistema.</span><span class="sxs-lookup"><span data-stu-id="31bc9-111">We recommend that you take an image copy of the system before you start restoration.</span></span> <span data-ttu-id="31bc9-112">È possibile utilizzare questa immagine come punto di rollback, in caso di problemi durante il ripristino.</span><span class="sxs-lookup"><span data-stu-id="31bc9-112">You can use this image as a rollback point, in case something goes wrong during restoration.</span></span> <span data-ttu-id="31bc9-113">È possibile che si desideri prendere la copia dell'immagine dopo l'installazione del sistema operativo e di SQL Server e ripristinare o registrare nuovamente i certificati.</span><span class="sxs-lookup"><span data-stu-id="31bc9-113">You might want to take the image copy after you install the operating system and SQL Server, and restore or reenroll the certificates.</span></span>
 
 
 
@@ -61,34 +61,34 @@ ms.locfileid: "42144702"
 
 <div>
 
-## <a name="to-restore-a-member-server"></a><span data-ttu-id="58739-114">Per ripristinare un server membro</span><span class="sxs-lookup"><span data-stu-id="58739-114">To restore a member server</span></span>
+## <a name="to-restore-a-member-server"></a><span data-ttu-id="31bc9-114">Per ripristinare un server membro</span><span class="sxs-lookup"><span data-stu-id="31bc9-114">To restore a member server</span></span>
 
-1.  <span data-ttu-id="58739-115">Iniziare con un server pulito o nuovo con lo stesso nome di dominio completo (FQDN) del server in cui si è verificato l'errore, installare il sistema operativo e quindi ripristinare o registrare nuovamente i certificati.</span><span class="sxs-lookup"><span data-stu-id="58739-115">Start with a clean or new server that has the same fully qualified domain name (FQDN) as the failed server, install the operating system, and then restore or reenroll the certificates.</span></span>
+1.  <span data-ttu-id="31bc9-115">Iniziare con un server pulito o nuovo con lo stesso nome di dominio completo (FQDN) del server in cui si è verificato l'errore, installare il sistema operativo e quindi ripristinare o registrare nuovamente i certificati.</span><span class="sxs-lookup"><span data-stu-id="31bc9-115">Start with a clean or new server that has the same fully qualified domain name (FQDN) as the failed server, install the operating system, and then restore or reenroll the certificates.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="58739-116">Seguire le procedure di distribuzione dei server dell'organizzazione per eseguire questa operazione.</span><span class="sxs-lookup"><span data-stu-id="58739-116">Follow your organization's server deployment procedures to perform this step.</span></span>
+    > <span data-ttu-id="31bc9-116">Seguire le procedure di distribuzione dei server dell'organizzazione per eseguire questa operazione.</span><span class="sxs-lookup"><span data-stu-id="31bc9-116">Follow your organization's server deployment procedures to perform this step.</span></span>
 
     
     </div>
 
-2.  <span data-ttu-id="58739-117">Da un account utente membro del gruppo RTCUniversalServerAdmins, eseguire l'accesso al server che si sta ripristinando.</span><span class="sxs-lookup"><span data-stu-id="58739-117">From a user account that is a member of the RTCUniversalServerAdmins group, log on to the server that you are restoring.</span></span>
+2.  <span data-ttu-id="31bc9-117">Da un account utente membro del gruppo RTCUniversalServerAdmins, eseguire l'accesso al server che si sta ripristinando.</span><span class="sxs-lookup"><span data-stu-id="31bc9-117">From a user account that is a member of the RTCUniversalServerAdmins group, log on to the server that you are restoring.</span></span>
 
-3.  <span data-ttu-id="58739-118">Passare alla cartella o al supporto di installazione di Lync Server e avviare la distribuzione guidata di Lync Server \\in\\Setup\\amd64 Setup. exe.</span><span class="sxs-lookup"><span data-stu-id="58739-118">Browse to the Lync Server installation folder or media, and start the Lync Server Deployment Wizard located at \\setup\\amd64\\Setup.exe.</span></span>
+3.  <span data-ttu-id="31bc9-118">Passare alla cartella o al supporto di installazione di Lync Server e avviare la distribuzione guidata di Lync Server \\in\\Setup\\amd64 Setup. exe.</span><span class="sxs-lookup"><span data-stu-id="31bc9-118">Browse to the Lync Server installation folder or media, and start the Lync Server Deployment Wizard located at \\setup\\amd64\\Setup.exe.</span></span>
 
-4.  <span data-ttu-id="58739-119">Utilizzare la Distribuzione guidata per eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="58739-119">Follow the Deployment Wizard to do the following:</span></span>
+4.  <span data-ttu-id="31bc9-119">Utilizzare la Distribuzione guidata per eseguire le operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="31bc9-119">Follow the Deployment Wizard to do the following:</span></span>
     
-    1.  <span data-ttu-id="58739-120">Eseguire **Passaggio 1: Installazione dell'archivio di configurazione locale** per installare i file della configurazione locale.</span><span class="sxs-lookup"><span data-stu-id="58739-120">Run **Step 1: Install Local Configuration Store** to install the local configuration files.</span></span>
+    1.  <span data-ttu-id="31bc9-120">Eseguire **Passaggio 1: Installazione dell'archivio di configurazione locale** per installare i file della configurazione locale.</span><span class="sxs-lookup"><span data-stu-id="31bc9-120">Run **Step 1: Install Local Configuration Store** to install the local configuration files.</span></span>
     
-    2.  <span data-ttu-id="58739-121">Eseguire il **passaggio 2: installazione o rimozione componenti di Lync Server** per installare il ruolo del server Lync Server.</span><span class="sxs-lookup"><span data-stu-id="58739-121">Run **Step 2: Setup or Remove Lync Server Components** to install the Lync Server server role.</span></span>
+    2.  <span data-ttu-id="31bc9-121">Eseguire il **passaggio 2: installazione o rimozione componenti di Lync Server** per installare il ruolo del server Lync Server.</span><span class="sxs-lookup"><span data-stu-id="31bc9-121">Run **Step 2: Setup or Remove Lync Server Components** to install the Lync Server server role.</span></span>
     
-    3.  <span data-ttu-id="58739-122">Eseguire **Passaggio 3: Richiesta, installazione o assegnazione dei certificati** per assegnare i certificati.</span><span class="sxs-lookup"><span data-stu-id="58739-122">Run **Step 3: Request, Install or Assign Certificates** to assign the certificates.</span></span>
+    3.  <span data-ttu-id="31bc9-122">Eseguire **Passaggio 3: Richiesta, installazione o assegnazione dei certificati** per assegnare i certificati.</span><span class="sxs-lookup"><span data-stu-id="31bc9-122">Run **Step 3: Request, Install or Assign Certificates** to assign the certificates.</span></span>
     
-    4.  <span data-ttu-id="58739-123">Eseguire **Passaggio 4: Avvio servizi** per avviare i servizi nel server.</span><span class="sxs-lookup"><span data-stu-id="58739-123">Run **Step 4: Start Services** to start services on the server.</span></span>
+    4.  <span data-ttu-id="31bc9-123">Eseguire **Passaggio 4: Avvio servizi** per avviare i servizi nel server.</span><span class="sxs-lookup"><span data-stu-id="31bc9-123">Run **Step 4: Start Services** to start services on the server.</span></span>
     
-    <span data-ttu-id="58739-124">Per informazioni dettagliate sull'esecuzione della distribuzione guidata, vedere la documentazione relativa alla distribuzione per il ruolo del server che si sta ripristinando.</span><span class="sxs-lookup"><span data-stu-id="58739-124">For details about running the Deployment Wizard, see the Deployment documentation for the server role that you are restoring.</span></span>
+    <span data-ttu-id="31bc9-124">Per informazioni dettagliate sull'esecuzione della distribuzione guidata, vedere la documentazione relativa alla distribuzione per il ruolo del server che si sta ripristinando.</span><span class="sxs-lookup"><span data-stu-id="31bc9-124">For details about running the Deployment Wizard, see the Deployment documentation for the server role that you are restoring.</span></span>
 
 </div>
 
