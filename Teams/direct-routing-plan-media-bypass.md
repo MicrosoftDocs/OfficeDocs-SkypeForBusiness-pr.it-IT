@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Leggere questo argomento per informazioni su come pianificare il bypass multimediale con il routing diretto del sistema telefonico.
-ms.openlocfilehash: 98f09d00960615c09dca8dcd78275a418d650f3e
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 7c7d82d1ac13ec1612403ba5fd20471e72173122
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41835976"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42214488"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
@@ -317,28 +317,28 @@ L'intervallo di porte dei processori multimediali (applicabile a tutti gli ambie
 UDP/SRTP | Media processor | SBC | 49 152-53 247    | Definita nell'SBC |
 | UDP/SRTP | SBC | Media processor | Definita nell'SBC | 49 152-53 247     |
 
-## <a name="considerations-if-you-have-skype-for-business-phones-in-your-network"></a>Considerazioni sui telefoni Skype for business in rete  
+## <a name="configure-separate-trunks-for-media-bypass-and-non-media-bypass"></a>Configurare trunk separati per il bypass multimediale e il bypass non multimediale  
 
-Se nella rete sono presenti punti finali di Skype for business che usano il routing diretto, ad esempio un utente di teams può avere un telefono 3PIP basato sul client Skype for business, il bypass multimediale sul trunk che serve questi utenti deve essere disattivato.
-
-È possibile creare un trunk separato per gli utenti e assegnargli un criterio di routing vocale online.
+Se si esegue la migrazione a un bypass multimediale da un bypass non multimediale e si vuole confermare la funzionalità prima di eseguire la migrazione di tutto l'utilizzo al bypass multimediale, è possibile creare un trunk separato e separare i criteri di routing vocale online per instradare il trunk di bypass multimediale e assegnarlo a specifici utenti. 
 
 Passaggi di configurazione di alto livello:
 
-- Suddividere gli utenti per tipo, a seconda che l'utente abbia o meno un telefono 3PIP.
+- Identificare gli utenti per testare il bypass multimediale.
 
 - Creare due trunk distinti con nomi di dominio completi diversi: uno abilitato per il bypass multimediale; l'altro no. 
 
   Entrambi i trunk puntano allo stesso SBC. Le porte per la segnalazione SIP TLS devono essere diverse. Le porte per elementi multimediali devono essere le stesse.
 
-- Assegnare il trunk corretto a seconda del tipo di utente nel criterio di routing vocale online.
+- Creare un nuovo criterio di routing vocale online e assegnare il trunk bypass multimediale alle route corrispondenti associate all'utilizzo PSTN per questo criterio.
+
+- Assegnare i nuovi criteri di routing vocale online agli utenti identificati per testare il bypass multimediale.
 
 L'esempio seguente illustra questa logica.
 
 | Set di utenti | Numero di utenti | FQDN trunk assegnato in OVRP | Bypass multimediale abilitato |
 | :------------ |:----------------- |:--------------|:--------------|
-Utenti con client teams e telefoni 3PIP | 20 | sbc1.contoso.com:5061 | false | 
-Utenti con solo punti finali di Teams (inclusi i nuovi telefoni certificati per i team) | 980 | sbc2.contoso.com:5060 | true
+Utenti con trunk di bypass non multimediale | 980 | sbc1.contoso.com:5060 | true
+Utenti con trunk bypass multimediale | 20 | sbc2.contoso.com:5061 | false | 
 
 Entrambi i trunk possono puntare allo stesso SBC con lo stesso indirizzo IP pubblico. Le porte di segnalazione TLS sull'SBC devono essere diverse, come illustrato nel diagramma seguente. Nota sarà necessario verificare che il certificato supporti entrambi i trunk. In SAN è necessario avere due nomi (**sbc1.contoso.com** e **sbc2.contoso.com**) o avere un certificato con carattere jolly.
 
@@ -354,9 +354,9 @@ Per informazioni su come configurare due trunk nello stesso SBC, vedere la docum
 
 ## <a name="client-endpoints-supported-with-media-bypass"></a>Endpoint client supportati con il bypass multimediale
 
-Il bypass multimediale è supportato con tutti gli endpoint di teams.
+Il bypass multimediale è supportato con tutti i client desktop di teams e i dispositivi telefonici teams. 
 
-Nota per i client Web (teams Web App in Microsoft Edge, Google Chrome o Mozilla Firefox) sarà possibile nascondere la chiamata al non-bypass anche se è stata avviata come chiamata di bypass. Questo problema si verifica automaticamente e non richiede alcuna azione da parte dell'amministratore. 
+Per tutti gli altri endpoint che non supportano il bypass multimediale, è possibile nascondere la chiamata al non-bypass anche se è stata avviata come chiamata di bypass. Questo problema si verifica automaticamente e non richiede alcuna azione da parte dell'amministratore. Questo include i telefoni di Skype for business 3PIP e i client Web teams che supportano le chiamate di routing diretto (New Microsoft Edge basato su Chromium, Google Chrome, Mozilla Firefox). 
  
 ## <a name="see-also"></a>Vedere anche
 
