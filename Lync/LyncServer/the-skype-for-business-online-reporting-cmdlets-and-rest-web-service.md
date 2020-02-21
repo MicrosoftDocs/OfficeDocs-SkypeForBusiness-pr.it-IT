@@ -12,16 +12,16 @@ ms:contentKeyID: 56563409
 ms.date: 05/04/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0476b90659ced152a4d24fbb3890ac224bdf0d91
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 63cbce4dda006bb45606a09eef29d8c47946ad2a
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42147999"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42189179"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
@@ -53,7 +53,7 @@ I cmdlet per i report disponibili per gli amministratori includono:
 
 La maggior parte degli amministratori utilizzerà i report disponibili nell'interfaccia di amministrazione di Microsoft 365: non solo i report vengono generati automaticamente, ma forniscono anche una rappresentazione grafica dei dati che spesso è più facile interpretare rispetto ai valori dei numeri non elaborati restituiti dall' cmdlet per la creazione di report. Tuttavia, gli amministratori che hanno familiarità con Windows PowerShell possono utilizzare i cmdlet per la creazione di report per restituire dati che non sono facilmente disponibili nei report di Lync Online. Ad esempio, i cmdlet per i report restituiscono informazioni sulla durata della sessione (la quantità di tempo, espressa in minuti, in cui sono state riportate tutte le sessioni). La durata delle sessioni individuali non è disponibile con i rapporti di Lync Online. Analogamente, nella visualizzazione giornaliera dei report di Lync Online vengono visualizzate informazioni solo per i 14 giorni precedenti. Se si desidera esaminare i totali giornalieri per un giorno diverso, ad esempio una data di quattro mesi fa, è possibile utilizzare i cmdlet per la creazione di report.
 
-Gli amministratori possono anche essere interessati all'articolo [utilizzo di Excel per recuperare i dati di report di office 365](http://msdn.microsoft.com/library/dn781442.aspx), in cui viene illustrato come utilizzare la funzionalità di query dei dati OData in Microsoft Excel per creare un report personalizzato di Office 365. I report personalizzati offrono la possibilità di dettare quali dati e quanti dati vengono restituiti dal servizio Reporting di Office 365. I report personalizzati consentono inoltre di eseguire operazioni quali la modalità di ordinamento e raggruppamento dei dati e l'accesso alle informazioni non visualizzate nell'interfaccia di amministrazione.
+Gli amministratori possono anche essere interessati all'articolo [utilizzo di Excel per recuperare i dati di report di office 365](https://msdn.microsoft.com/library/dn781442.aspx), in cui viene illustrato come utilizzare la funzionalità di query dei dati OData in Microsoft Excel per creare un report personalizzato di Office 365. I report personalizzati offrono la possibilità di dettare quali dati e quanti dati vengono restituiti dal servizio Reporting di Office 365. I report personalizzati consentono inoltre di eseguire operazioni quali la modalità di ordinamento e raggruppamento dei dati e l'accesso alle informazioni non visualizzate nell'interfaccia di amministrazione.
 
 Gli amministratori che dispongono di uno sfondo di sviluppo possono utilizzare il servizio Web REST per ottenere informazioni non visualizzate nell'interfaccia di amministrazione di Skype for business online. Il servizio REST è simile al servizio SOAP, in quanto ogni tecnologia consente di trasferire dati XML tra un client e un server. Tuttavia, il servizio REST ha almeno due vantaggi rispetto al servizio SOAP. Per un altro, REST esegue i trasferimenti di dati XML utilizzando un formato standardizzato noto come formato di diffusione ATOM. Al contrario, SOAP utilizza un formato non standard per il trasferimento dei dati. Inoltre, REST è in grado di trasferire dati tra le reti che bloccano verbi HTTP diversi da GET e POST.
 
@@ -65,10 +65,10 @@ Gli amministratori che dispongono di uno sfondo di sviluppo possono utilizzare i
 [Reporting di Lync Online](https://technet.microsoft.com/library/dn362827\(v=ocs.15\))  
 
 
-[Servizio Web di Reporting di Office 365](http://msdn.microsoft.com/library/office/jj984325.aspx)  
-[Informazioni sul servizio Web di Reporting di Office 365](http://msdn.microsoft.com/library/office/jj984321.aspx)  
+[Servizio Web di Reporting di Office 365](https://msdn.microsoft.com/library/office/jj984325.aspx)  
+[Informazioni sul servizio Web di Reporting di Office 365](https://msdn.microsoft.com/library/office/jj984321.aspx)  
 [Cmdlet per la creazione di rapporti di Exchange Online](https://technet.microsoft.com/library/jj200780\(v=exchg.150\).aspx)  
-[Usare Excel per recuperare dati di report Office 365](http://msdn.microsoft.com/library/dn781442.aspx)  
+[Usare Excel per recuperare dati di report Office 365](https://msdn.microsoft.com/library/dn781442.aspx)  
   
 
 </div>
