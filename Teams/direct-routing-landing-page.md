@@ -16,12 +16,12 @@ f1.keywords:
 description: Pagina di destinazione per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d146c2188f57dbee3887dd2fd595c1b06a86c30e
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: d643c137145649c0843296300a909c520ba653a6
+ms.sourcegitcommit: 0289062510f0791906dab2791c5db8acb1cf849a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836066"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42157904"
 ---
 # <a name="phone-system-direct-routing"></a>Instradamento diretto di Sistema telefonico
 
@@ -51,7 +51,7 @@ Queste sono le decisioni principali da prendere in considerazione per il routing
 
 |Chiedersi|Azione |
 | :------------|:-------|
-|Per quali utenti si Abilita il routing diretto? | Per altre informazioni, vedere [abilitare gli utenti per il servizio di routing diretto](direct-routing-configure.md#enable-users-for-direct-routing-service). |
+|Per quali utenti si Abilita il routing diretto? | Per altre informazioni, vedere [abilitare gli utenti per il servizio di routing diretto](direct-routing-configure.md). |
 Sono disponibili le licenze necessarie per il routing diretto? | Per altre informazioni, Vedi [licenze e altri requisiti](direct-routing-plan.md#licensing-and-other-requirements).
 |||
 
@@ -71,8 +71,8 @@ Si hanno più tenant? | Per altre informazioni, vedere [configurare un controlle
 
 |Chiedersi|Azione |
 |:------------|:-------|
-| Quali criteri di routing vocale, utilizzo PSTN e route vocali è necessario creare? | Per informazioni sul routing vocale, vedere [configurare il routing vocale](direct-routing-configure.md#configure-voice-routing).
-| Quali utenti verranno assegnati ai criteri di routing vocale definiti? | Vedere gli esempi in [configurare il routing vocale](direct-routing-configure.md#configure-voice-routing). |
+| Quali criteri di routing vocale, utilizzo PSTN e route vocali è necessario creare? | Per informazioni sul routing vocale, vedere [configurare il routing vocale](direct-routing-configure.md).
+| Quali utenti verranno assegnati ai criteri di routing vocale definiti? | Vedere gli esempi in [configurare il routing vocale](direct-routing-configure.md). |
 |||
 
 ### <a name="ensure-incoming-calls-land-in-the-teams-client-using-teamsupgradepolicy"></a>Assicurarsi che le chiamate in arrivo atterrino nel client teams usando TeamsUpgradePolicy

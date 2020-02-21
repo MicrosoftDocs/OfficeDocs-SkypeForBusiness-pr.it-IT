@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: be952d838135a03a873d7193118febf5639bd415
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 12d9350437867b04a181e62e8b23bb6ed78d8fbc
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836856"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161737"
 ---
 # <a name="plan-for-microsoft-365-government---dod-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-DoD
 
@@ -42,7 +42,7 @@ L'ambiente Microsoft 365 Government-DoD offre la conformità con i requisiti del
 
 Per altre informazioni su Microsoft 365 Government-DoD offering for US Government Customers in [Office 365 Government plans](https://products.office.com/government/compare-office-365-government-plans), inclusi i [requisiti di ammissibilità](https://products.office.com/government/compare-office-365-government-plans#EligibilityRequirements).
 
-La [Descrizione del servizio governativo degli Stati Uniti di Office 365](https://docs.microsoft.com/en-us/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government) descrive i vantaggi della piattaforma, che sono centrati sui requisiti di conformità delle riunioni negli Stati Uniti.
+La [Descrizione del servizio governativo degli Stati Uniti di Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government) descrive i vantaggi della piattaforma, che sono centrati sui requisiti di conformità delle riunioni negli Stati Uniti.
 
 
 > [!Tip]
@@ -79,6 +79,7 @@ Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune di
 | Base | Accesso | Disponibili |
 | | Icone di presenza | Disponibili |
 | | Presenza unificata (Skype for business e teams Unified) | Nell'arretrato governativo |
+| | Client Linux | Nell'arretrato governativo |
 | Attività | Feed | Disponibili |
 |  | Attività personali | Disponibili |
 | Chat | Conversazione | Disponibili |

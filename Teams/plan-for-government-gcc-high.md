@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 537f2a51076d93808089526d7b5be10faf5954b6
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: e3c44867b14a4b3bf83a45cf1dbbb37151c648a8
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837456"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161591"
 ---
 # <a name="plan-for-microsoft-365-government---gcc-high-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-GCC High
 
@@ -79,6 +79,7 @@ Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune di
 | Base | Accesso | Disponibili |
 | | Icone di presenza | Disponibili |
 | | Presenza unificata (Skype for business e teams Unified) | Disponibili |
+| | Client Linux | Nell'arretrato governativo |
 | Attività | Feed | Disponibili |
 |  | Attività personali | Disponibili |
 | Chat | Conversazione | Disponibili |

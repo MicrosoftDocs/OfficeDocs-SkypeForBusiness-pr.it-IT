@@ -1,6 +1,6 @@
 ---
 title: Gestire l'app turni per l'organizzazione in Microsoft Teams
-author: kenwith
+author: LanaChin
 ms.author: v-lanac
 ms.reviewer: lisawu
 manager: serdars
@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7514ef06248eb4685558c3a327a8de1cea12bb62
-ms.sourcegitcommit: ac922addbc1422b5c41273a2e03196efb2ed7770
+ms.openlocfilehash: 134ff131307034381b97643a2bf9a3dd7fc87a7d
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41831168"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161859"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app turni per l'organizzazione in Microsoft Teams
 
@@ -30,6 +30,7 @@ ms.locfileid: "41831168"
 > Efficace 31 dicembre 2019, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo. StaffHub smetterà di funzionare per tutti gli utenti il 31 dicembre 2019. Chiunque tenti di aprire StaffHub verrà visualizzato un messaggio che li indirizza a scaricare teams. Per altre informazioni, vedere [Microsoft StaffHub per ritirarsi](microsoft-staffhub-to-be-retired.md).  
 
 ## <a name="overview-of-shifts"></a>Panoramica dei turni
+
 L'app turni in Microsoft teams mantiene i dipendenti di I FIRSTLINE connessi e sincronizzati. È stato costruito per la prima volta per la gestione e la comunicazione del tempo veloce ed efficace per i team. Turni consente ai dipendenti di I FIRSTLINE e ai loro manager di usare i loro dispositivi mobili per gestire le pianificazioni e tenersi in contatto. 
 
 - I manager creano, aggiornano e gestiscono le pianificazioni di turno per i team. Possono inviare messaggi a una sola persona ("c'è una fuoriuscita sul pavimento") o all'intero team ("il GM regionale arriva in 20 minuti"). Possono anche inviare documenti di policy, notiziari e video. 
@@ -49,19 +50,17 @@ Turni i dati sono attualmente archiviati in Azure nei data center in Nord Americ
 
 ### <a name="enable-or-disable-shifts-in-your-organization"></a>Abilitare o disabilitare i turni nell'organizzazione
 
-Turni è abilitato per impostazione predefinita per tutti gli utenti di Teams dell'organizzazione. Puoi disattivare o attivare l'intera organizzazione delle app usando le impostazioni a livello di organizzazione nei criteri di autorizzazione dell'app nell'interfaccia di amministrazione di Microsoft teams.
+Turni è abilitato per impostazione predefinita per tutti gli utenti di Teams dell'organizzazione. Puoi disattivare o attivare l'app a livello di organizzazione nella pagina [Gestisci app](../../manage-apps.md) nell'interfaccia di amministrazione di Microsoft teams.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di autorizzazione** delle **app teams**.
-2. Fare clic su **impostazioni a livello di organizzazione**.
-3. Nel pannello **impostazioni a livello di organizzazione** , in **app bloccate**, eseguire una delle operazioni seguenti:
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alle >  **app teams****Manage Apps** .
+2. Nell'elenco delle app eseguire una delle operazioni seguenti:
 
-    - Per disattivare i turni per l'organizzazione, cercare l'app turni e fare clic su **Aggiungi** per aggiungerla all'elenco delle app bloccate.
-    - Per attivare i turni per l'organizzazione, Rimuovi l'app turni dall'elenco delle app bloccate.
-4. Fai clic su **Salva**. 
+    - Per disattivare i turni per l'organizzazione, cercare l'app turni, selezionarla e quindi fare clic su **blocca**.
+    - Per attivare i turni per l'organizzazione, cercare l'app turni, selezionarla e quindi fare clic su **Consenti**.
 
 ### <a name="enable-or-disable-shifts-for-specific-users-in-your-organization"></a>Abilitare o disabilitare turni per utenti specifici dell'organizzazione
 
-Per consentire o bloccare gli utenti specifici dell'organizzazione dall'uso di turni, verificare che i turni siano attivati per l'organizzazione in impostazioni a livello di organigramma e quindi creare un criterio di autorizzazione dell'app personalizzato e assegnarlo a tali utenti. Per altre informazioni, vedere [gestire i criteri di autorizzazione delle app in teams](../../teams-app-permission-policies.md).
+Per consentire o bloccare gli utenti specifici dell'organizzazione dall'uso di turni, verificare che i turni siano attivati per l'organizzazione nella pagina [Gestisci app](../../manage-apps.md) e quindi creare un criterio di autorizzazione per le app personalizzate e assegnarlo a tali utenti. Per altre informazioni, vedere [gestire i criteri di autorizzazione delle app in teams](../../teams-app-permission-policies.md).
 
 ### <a name="use-the-firstlineworker-app-setup-policy-to-pin-shifts-to-teams"></a>Usare i criteri di configurazione dell'app FirstlineWorker per aggiungere i turni ai team
 

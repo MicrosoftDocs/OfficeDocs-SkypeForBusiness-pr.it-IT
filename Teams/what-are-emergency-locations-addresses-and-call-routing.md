@@ -23,12 +23,12 @@ ms.custom:
 - Calling Plans
 - Direct Routing
 description: Informazioni sulle chiamate in caso di emergenza, incluse indicazioni su indirizzi di emergenza, routing delle chiamate di emergenza e chiamate di emergenza dinamiche.
-ms.openlocfilehash: 010a1d3afd6ea1fa490b506b82c46c31bf3a4fa2
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 85a09880c1eec83851208197c008c8aaafac88f6
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836676"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161689"
 ---
 # <a name="manage-emergency-calling"></a>Gestire le chiamate di emergenza
 
@@ -157,9 +157,9 @@ I client di teams per il routing diretto gli utenti possono acquisire un indiriz
 
 ### <a name="emergency-call-routing"></a>Routing delle chiamate di emergenza
 
-TeamsEmergencyCallRoutingPolicy fa riferimento a un uso PSTN online, che deve avere la configurazione di routing diretto appropriata per instradare correttamente le chiamate di emergenza ai gateway PSTN appropriati. In particolare, devi assicurarti che sia presente un OnlineVoiceRoute per la stringa di chiamata di emergenza. Per altre informazioni, vedere [configurare il routing diretto](direct-routing-configure.md#configure-voice-routing). 
+TeamsEmergencyCallRoutingPolicy fa riferimento a un uso PSTN online, che deve avere la configurazione di routing diretto appropriata per instradare correttamente le chiamate di emergenza ai gateway PSTN appropriati. In particolare, devi assicurarti che sia presente un OnlineVoiceRoute per la stringa di chiamata di emergenza. Per altre informazioni, vedere [configurare il routing diretto](direct-routing-configure.md). 
 
-(Nota: in Skype for Business Server il numero di emergenza è stato preceduto da un "+" che richiedeva la definizione di una route vocale in modo che corrisponda a "+ 911", ad esempio. I client teams non anteporre "+" ai numeri di emergenza.
+(Nota: i client di teams anteporre il segno "+" davanti ai numeri di emergenza in modo simile al client Skype for business, ovvero + 911. Questo comportamento verrà modificato nei prossimi mesi in modo che le chiamate di emergenza dei team non invieranno più un "+" che precede il numero; ovvero 911.)
 
 La possibilità di instradare in modo dinamico le chiamate di emergenza per gli utenti di routing diretto varia a seconda della rete chiamante di emergenza all'interno di un paese specifico. Sono disponibili due soluzioni:
 

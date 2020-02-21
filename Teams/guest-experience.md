@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 20fd9372c34fd189868aa32882115bee3f6c6f8f
-ms.sourcegitcommit: 346b58b5d5ea0d2ec68891275628dfde32c074fe
+ms.openlocfilehash: ed0ea94910e9b3b5499a1f23a6c1c081590957c7
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41977528"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160570"
 ---
 <a name="what-the-guest-experience-is-like"></a>Com'è l'esperienza guest
 =================================
@@ -41,22 +41,23 @@ Nella tabella seguente vengono confrontate le funzionalità teams disponibili pe
 
 |**Funzionalità in teams**|**Utenti teams nell'organizzazione**|**Utente Guest**|
 |:-----|:-----|:-----|
-|Creare un canale  <br/>  *I proprietari del team controllano questa impostazione.*  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)|![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)|
-|Partecipare a una chat privata  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)|![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)|
-|Partecipare a una conversazione di canale  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)|![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)|
-|Pubblicare, eliminare e modificare i messaggi  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)|![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)|
-|Condividere un file di canale  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)|![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)|
-|Condividere un file di chat  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
-|Aggiungere app (schede, bot o connettori)  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
-|Creare riunioni o pianificare le sessioni di Access  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
-|Accedere a OneDrive for Business Storage  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
-|Creare criteri di accesso Guest a livello di tenant e teams/Channels  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
-|Invitare un utente all'esterno del dominio del tenant di Office 365 <br/>  *I proprietari del team controllano questa impostazione.*  <br/> <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
-|Creare un team  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
-|Individuare e partecipare a un team pubblico  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
-|Visualizzazione organigramma  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
-|Usare la traduzione in linea  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
-|Diventare proprietario del team  <br/> |![Icona che descrive un segno di spunta ](media/5277fbec-0a8f-4bd0-b906-d6ddee85a46c.png)||
+|Creare un canale  <br/>  *I proprietari del team controllano questa impostazione.*  <br/> |&#x2713;|&#x2713;|
+|Partecipare a una chat privata  <br/> |&#x2713;|&#x2713;|
+|Partecipare a una conversazione di canale  <br/> |&#x2713;|&#x2713;|
+|Pubblicare, eliminare e modificare i messaggi  <br/> |&#x2713;|&#x2713;|
+|Condividere un file di canale  <br/> |&#x2713;|&#x2713;|
+|Condividere un file di chat  <br/> |&#x2713;||
+|Aggiungere app (schede, bot o connettori)  <br/> |&#x2713;||
+|Creare riunioni o pianificare le sessioni di Access  <br/> |&#x2713;||
+|Accedere a OneDrive for Business Storage  <br/> |&#x2713;||
+|Creare criteri di accesso Guest a livello di tenant e teams/Channels  <br/> |&#x2713;||
+|Invitare un utente all'esterno del dominio del tenant di Office 365 <br/>  *I proprietari del team controllano questa impostazione.*  <br/> <br/> |&#x2713;||
+|Creare un team  <br/> |&#x2713;||
+|Individuare e partecipare a un team pubblico  <br/> |&#x2713;||
+|Visualizzazione organigramma  <br/> |&#x2713;||
+|Usare la traduzione in linea  <br/> |&#x2713;||
+|Diventare proprietario del team  <br/> |&#x2713;||
+
    
 La tabella seguente mostra le funzionalità di chiamata e riunione disponibili per gli ospiti, rispetto ad altri tipi di utenti.
 

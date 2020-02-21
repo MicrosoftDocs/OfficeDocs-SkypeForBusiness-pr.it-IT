@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Leggere questo argomento per informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente a Microsoft Phone System.
-ms.openlocfilehash: d279792315aec17df10f5c1335306147c7080287
-ms.sourcegitcommit: eab284e2add7af1b3f3c5f1f77c0a3bbf77857a7
+ms.openlocfilehash: 347a8a7dd64831281c1c9e2f94f2bea24fb18555
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2020
-ms.locfileid: "41953777"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160710"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -311,7 +311,7 @@ Si applica a entrambi i casi di bypass multimediale e non di bypass.
 L'interfaccia di routing diretto sulla gamba tra il controller di bordo della sessione e il processore cloud media (senza bypass multimediale) o tra il client teams e il SBC (se il bypass multimediale abilitato) può usare i codec seguenti:
 
 - Bypass non multimediale (SBC to cloud media processor): SILK, G. 711, G. 722, G. 729
-- Bypass multimediale (SBC per il client Teams): SILK, G. 711, G. 722, G. 729, OPUS
+- Bypass multimediale (SBC per il client Teams): SILK, G. 711, G. 722, G. 729
 
 Puoi forzare l'uso del codec specifico nel controller di bordo della sessione escludendo i codec indesiderati dall'offerta.
 

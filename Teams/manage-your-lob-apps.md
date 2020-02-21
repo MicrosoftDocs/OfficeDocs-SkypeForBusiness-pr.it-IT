@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come portare le app teams personalizzate dallo sviluppo alla distribuzione.
-ms.openlocfilehash: 3369371de34cd1346e81be8ea57bb3f5675864c5
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 070b0ecbf0ccc9af798e1d3a3c689ce4d4ff4da2
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837506"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161822"
 ---
 # <a name="manage-your-line-of-business-apps-in-microsoft-teams"></a>Gestire le app line-of-business in Microsoft Teams
 
@@ -49,11 +49,11 @@ Per offrire agli sviluppatori l'accesso necessario per il test, consentire a tut
 
 Per consentire agli utenti di caricare app personalizzate, eseguire le operazioni seguenti:
 
-1. Attivare l'impostazione **Consenti interazione con le app personalizzate** a livello di organizzazione. Procedi come segue.
-    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>accedere ai**criteri di autorizzazione**delle **app** > teams e quindi fare clic su **impostazioni a livello di organizzazione**.
+1. Attivare l'impostazione **Consenti interazione con** le app personalizzate per l'intera organizzazione. Procedi come segue.
+    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>, passa a **Teams Apps** > **Manage Apps**, quindi fai clic su **impostazioni dell'app a livello di organizzazione**.
     2. In **app personalizzate**attivare Consenti l' **interazione con le app personalizzate**e quindi fare clic su **Salva**.
 
-    ![Screenshot dell'impostazione "Consenti interazione con le app personalizzate" a livello di organizzazione](media/manage-your-lob-apps-org-wide-custom-apps.png)
+    ![Screenshot dell'impostazione dell'app "Consenti interazione con le app personalizzate" a livello di organizzazione](media/manage-your-lob-apps-org-wide-custom-apps.png)
 
 2. Attivare l'impostazione **carica app personalizzate** nei criteri di configurazione dell'app globale. Procedi come segue.
     1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>, accedere ai**criteri di configurazione**delle **app** > teams e quindi fare clic sul criterio **globale (a livello di organizzazione)** .
@@ -81,12 +81,12 @@ Microsoft usa <a href="https://docs.microsoft.com/microsoftteams/platform/publis
 Per verificare che l'app funzioni correttamente nel tenant di produzione, è necessario consentire a utenti e/o trusted dell'organizzazione di caricare app personalizzate.  Proprio come nel <a href="https://docs.microsoft.com/microsoftteams/manage-your-lob-apps#allow-custom-apps-in-the-test-tenant" target="_blank">passaggio</a>precedente, puoi usare i criteri di configurazione delle app per eseguire questa operazione.
 
 > [!NOTE]
-> Se non si è in grado di caricare l'app nel tenant di produzione per la convalida, anche per se stessi o per gli utenti attendibili, è possibile ignorare questo passaggio e seguire i passaggi 3 e 4 per caricare l'app non convalidata nello Store delle app del tenant. Limita quindi l'accesso all'app solo a te e agli utenti di cui ti fidi. Questi utenti possono quindi ottenere l'app dall'archivio delle app tenant per eseguire la convalida. Dopo la convalidazione dell'app, USA gli stessi criteri di autorizzazione per aprire Access ed eseguire il rollback dell'app per l'uso della produzione.
+> Se non si è in grado di caricare l'app nel tenant di produzione per la convalida, anche per se stessi o per gli utenti attendibili, è possibile ignorare questo passaggio e seguire i passaggi 3 e 4 per caricare l'app non convalidata nell'App Store del tenant. Limita quindi l'accesso all'app solo a te e agli utenti di cui ti fidi. Questi utenti possono quindi ottenere l'app dall'archivio dell'app tenant per eseguire la convalida. Dopo la convalidazione dell'app, USA gli stessi criteri di autorizzazione per aprire Access ed eseguire il rollback dell'app per l'uso della produzione.
 
 Per consentire agli utenti attendibili di caricare app personalizzate, eseguire le operazioni seguenti:
 
-1. Attivare l'impostazione **Consenti interazione con le app personalizzate** a livello di organizzazione. Procedi come segue.
-    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>accedere ai**criteri di autorizzazione**delle **app** > teams e quindi fare clic su **impostazioni a livello di organizzazione**.
+1. Attivare l'impostazione **Consenti interazione con** le app personalizzate per l'intera organizzazione. Procedi come segue.
+    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>, passa a **Teams Apps** > **Manage Apps**, quindi fai clic su **impostazioni dell'app a livello di organizzazione**.
     2. In **app personalizzate**attivare Consenti l' **interazione con le app personalizzate**e quindi fare clic su **Salva**.
 2. Disattivare l'impostazione **carica app personalizzate** nei criteri di configurazione dell'app globale. Procedi come segue.
     1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>, accedere ai**criteri di configurazione**delle **app** > teams e quindi fare clic sul criterio **globale (a livello di organizzazione)** .
@@ -99,11 +99,17 @@ Per consentire agli utenti attendibili di caricare app personalizzate, eseguire 
 
     Questi utenti possono ora caricare il manifesto dell'app per verificare che l'app funzioni correttamente nel tenant di produzione.
 
-## <a name="step-3-upload-to-the-tenant-apps-catalog"></a>Passaggio 3: caricare il catalogo delle app tenant
+## <a name="step-3-upload-to-the-tenant-app-catalog"></a>Passaggio 3: caricare nel catalogo app tenant
 
-Per rendere l'app disponibile per gli utenti nello Store delle app tenant, carica l'app. Puoi eseguire questa operazione usando il client desktop teams. Seguire <a href="https://docs.microsoft.com/microsoftteams/tenant-apps-catalog-teams#go-to-the-tenant-apps-catalog" target="_blank">questa procedura.</a>
+Per rendere l'app disponibile per gli utenti nell'App Store tenant, carica l'app. Puoi eseguire questa operazione <a href="https://docs.microsoft.com/microsoftteams/tenant-apps-catalog-teams#go-to-the-tenant-apps-catalog" target="_blank">usando il client desktop teams</a> o nella pagina [Gestisci app](manage-apps.md) dell'interfaccia di amministrazione di Microsoft teams.
+
+Ecco uno screenshot dell'opzione carica nel client desktop teams.
 
 ![Screenshot della pagina delle app](media/manage-your-lob-apps-store.png)
+
+Ecco uno screenshot dell'opzione carica nella pagina **Gestisci app** nell'interfaccia di amministrazione di Microsoft teams.
+
+![Screenshot della pagina Manage Apps nell'interfaccia di amministrazione](media/manage-your-lob-apps-upload-new-app.png)
 
 ## <a name="step-4-configure-and-assign-permissions"></a>Passaggio 4: configurare e assegnare autorizzazioni
 
@@ -125,6 +131,6 @@ Per impostazione predefinita, per consentire agli utenti di trovare l'app, è ne
 
 Per aggiornare un'app, gli sviluppatori devono continuare a seguire il [passaggio 1](#step-1-develop-and-test) e il [passaggio 2](#step-2-validate-in-production).
 
-Puoi aggiornare l'app tramite il catalogo delle app tenant. A tale scopo, nel client desktop teams passa a **app** > **create per &lt;il nome&gt;del tenant**, fai clic su **...** nell'angolo in alto a destra dell'app, quindi fare clic su **Aggiorna**. Questa operazione sostituisce l'app esistente nel catalogo delle app tenant e tutti i criteri di autorizzazione e i criteri di configurazione restano applicati per l'app aggiornata. 
+Puoi aggiornare l'app tramite il catalogo app tenant. A tale scopo, nel client desktop teams passa a **app** > **create per &lt;il nome&gt;del tenant**, fai clic su **...** nell'angolo in alto a destra dell'app, quindi fare clic su **Aggiorna**. Questa operazione sostituisce l'app esistente nel catalogo dell'app tenant e tutti i criteri di autorizzazione e i criteri di configurazione restano applicati per l'app aggiornata. 
 
 ![Screenshot dell'aggiornamento di un'app nella pagina delle app](media/manage-your-lob-apps-update-app.png)

@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b9bac6ee38c166250746b6ce9f4fb48afe3cbfe2
-ms.sourcegitcommit: eb2182617d8f72f8a7ea95f7af101d10c6f4e9a0
+ms.openlocfilehash: 47abe9934c92ce83ab0874a10b2c04ef238b428a
+ms.sourcegitcommit: 0289062510f0791906dab2791c5db8acb1cf849a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41852103"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42157894"
 ---
 # <a name="upgrade-from-skype-for-business-to-teams-mdash-for-it-administrators"></a>Eseguire l'aggiornamento da Skype for business &mdash; a teams per gli amministratori IT
 
@@ -423,7 +423,7 @@ I passaggi di base sono elencati di seguito.I passaggi 1-5 sono elencati nella s
 
 1. Verificare che il controller di bordo della sessione (SBC) sia supportato con il routing diretto rivedendo [questo elenco](direct-routing-border-controllers.md). Devi anche assicurarti di avere la versione corretta del firmware.  
 
-2. Associare il proprio SBC locale al servizio di routing diretto di teams. Per informazioni dettagliate, vedere [associare il SBC al servizio di routing diretto del sistema telefonico](direct-routing-configure.md#pair-the-sbc-to-the-direct-routing-service-of-phone-system). 
+2. Associare il proprio SBC locale al servizio di routing diretto di teams. Per informazioni dettagliate, vedere [associare il SBC al servizio di routing diretto del sistema telefonico](direct-routing-configure.md). 
 
 3. Questa configurazione è essenzialmente uno specchio della configurazione locale. La configurazione online è costituita da: 
    - OnlineVoiceRoutingPolicy (basato sul VoiceRoutingPolicy locale se si esegue la migrazione degli utenti da Skype for business online e basato su VoicePolicy se la migrazione degli utenti è locale con Enterprise Voice).

@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un SBC (Session Border Controller) per servire più tenant.
-ms.openlocfilehash: 7bd313c1b0c6d8078ee3ce80b2a08697dc6040e7
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: e0027df53edcec54cbeaef560182ffddc451ecbd
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837276"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160730"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -37,7 +37,7 @@ Un elemento portante:
 - Gestisce la qualità della chiamata fine alla fine.
 - Addebiti separatamente per servizi PSTN.
 
-Microsoft non gestisce i vettori. Microsoft offre un sistema PBX (Microsoft Phone System) e un client teams, certifica i telefoni e certifica SBCs che può essere usato con il sistema telefonico Microsoft. Prima di scegliere un vettore, assicurati che la tua scelta abbia un SBC certificato e possa gestire la qualità vocale fine alla fine.
+Microsoft non gestisce i vettori. Microsoft offre un sistema PBX (Microsoft Phone System) e un client teams. Microsoft certifica anche i telefoni e certifica SBCs che può essere usato con il sistema telefonico Microsoft. Prima di scegliere un vettore, assicurati che la tua scelta abbia un SBC certificato e possa gestire la qualità vocale fine alla fine.
 
 Di seguito sono riportate le procedure per l'implementazione tecnica per configurare lo scenario.
 
@@ -215,7 +215,6 @@ Tuttavia, questo risultato non è stato ottimale per due motivi:
 
 -  **Elaborazione overhead**. Raccolta e monitoraggio dei dati di integrità del trunk: le opzioni SIP raccolte da più trunk logici, in realtà lo stesso SBC e lo stesso trunk fisico, rallentano l'elaborazione dei dati di routing.
  
-
 In base a questo feedback, Microsoft sta introducendo una nuova logica per eseguire il provisioning dei trunk per i tenant del cliente.
 
 Sono state introdotte due nuove entità:
@@ -245,4 +244,22 @@ Invitiamo vivamente la migrazione alla nuova soluzione il più presto possibile,
  
 
 Fare riferimento alle [istruzioni del fornitore SBC](#deploy-and-configure-the-sbc) per la configurazione dell'invio del nome FQDN dei sottodomini nell'intestazione del contatto.
+
+## <a name="considerations-for-setting-up-muti-tenant-failover"></a>Considerazioni per la configurazione del failover muti-tenant 
+
+Per configurare il failover per un ambiente multi-tenant, è necessario eseguire le operazioni seguenti:
+
+- Per ogni tenant, aggiungere i nomi di dominio completi per due diversi SBCs.  Ad esempio:
+
+   customer1.sbc1.contoso.com <br>
+   customer2.sbc2.contoso.com <br>
+
+- Nei criteri di routing vocale online degli utenti specificare sia SBCs.  Se un SBC non riesce, i criteri di routing instradano le chiamate al secondo SBC.
+
+
+## <a name="see-also"></a>Vedere anche
+
+[Pianificare Instradamento diretto](direct-routing-plan.md)
+
+[Configurare Instradamento diretto](direct-routing-configure.md)
 

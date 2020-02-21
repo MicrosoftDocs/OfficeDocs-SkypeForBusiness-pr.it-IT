@@ -5,7 +5,7 @@ ms.author: lolaj
 manager: serdars
 ms.topic: article
 ms.service: msteams
-ms.reviewer: siunies
+ms.reviewer: siunies, gageames
 audience: admin
 description: Guida per l'analisi delle prestazioni multimediali in tempo reale per Microsoft teams tramite Call Quality Dashboard (Call Quality Dashboard).
 localization_priority: Normal
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6e11c7d479aeac6eef39fb38588a61c0c7be25a6
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.openlocfilehash: 025bd70c79cdc0547f86514521fd1e565265d4f8
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41863397"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160780"
 ---
 # <a name="quality-of-experience-review-guide"></a>Guida sul controllo della qualità dell'esperienza
 
@@ -1285,7 +1285,7 @@ Per altre informazioni, vedere [questo articolo sulla qualità dei contenuti mul
 
 -   Guida [introduttiva a Call Quality dashboard](https://www.skypeoperationsframework.com/Academy?SOFTrainings=Configuring%20Call%20Quality%20Dashboard%20to%20monitor%20your%20Skype%20for%20Business%20Online%20Environment) e workshop
 
--   [Dimensioni e misure disponibili in Dashboard Qualità della chiamata](https://aka.ms/cqd-dm)
+-   [Dimensioni e misure disponibili in Call Quality Dashboard](https://aka.ms/cqd-dm)
 
 ### <a name="call-analytics-training"></a>Formazione sulle analisi delle chiamate
 
@@ -1295,7 +1295,7 @@ Per altre informazioni, vedere [questo articolo sulla qualità dei contenuti mul
 
 -   [Qual è la differenza tra Call Analytics e Call Quality dashboard?](difference-between-call-analytics-and-call-quality-dashboard.md)
 
--   [Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+-   [Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
 ### <a name="call-analytics-support"></a>Supporto di Call Analytics
 
@@ -1314,3 +1314,4 @@ Per altre informazioni, vedere [questo articolo sulla qualità dei contenuti mul
 -   [Creazione di report di Skype for Business online](/SkypeForBusiness/skype-for-business-online-reporting/skype-for-business-online-reporting)
 
 -   [Report di Microsoft Teams](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/New-usage-reports-for-Microsoft-Teams/ba-p/132614)
+ 

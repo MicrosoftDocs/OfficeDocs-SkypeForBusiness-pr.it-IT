@@ -3,7 +3,6 @@ title: Pubblicare app nel catalogo delle app del tenant di Microsoft Teams
 author: lolajacobsen
 ms.author: lolaj
 manager: serdars
-ms.date: 06/20/2019
 ms.topic: article
 ms.service: msteams
 ms.reviewer: prem
@@ -20,38 +19,38 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c1b2fb38dcca7142cad82d290b1225e69f035bae
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 1f3d4f5937c766c1c4f6f54a6a38872e793a3825
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836916"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161615"
 ---
-<a name="publish-apps-in-the-microsoft-teams-tenant-apps-catalog"></a>Pubblicare app nel catalogo delle app del tenant di Microsoft Teams
+<a name="publish-apps-in-the-microsoft-teams-tenant-app-catalog"></a>Pubblicare app nel catalogo delle app del tenant di Microsoft Teams
 =======================================================
 
-È possibile usare il catalogo delle app del tenant di Microsoft teams per testare e distribuire le applicazioni line-of-business alla propria organizzazione.
+Puoi usare il catalogo delle app del tenant di Microsoft teams per testare e distribuire le applicazioni line-of-business alla tua organizzazione.
 
-Il catalogo delle app tenant teams consente di distribuire applicazioni line-of-business costruite appositamente per l'organizzazione e di affidarsi alle funzioni aziendali critiche.
+Il catalogo delle app tenant teams consente di distribuire applicazioni line-of-business costruite appositamente per l'organizzazione e di affidarsi a tutte le funzioni aziendali critiche.
 
-Per pubblicare app per l'organizzazione, accedere al client teams usando un account con l'amministratore globale o i ruoli di amministratore del servizio teams e quindi seguire le istruzioni riportate di seguito.
+Per pubblicare le app per l'organizzazione, accedere al client teams usando un account con il ruolo amministratore globale o servizio teams e quindi seguire i passaggi seguenti.
 
-## <a name="publish-an-app-in-the-tenant-apps-catalog-from-the-teams-client"></a>Pubblicare un'app nel catalogo delle app tenant dal client Teams
+## <a name="publish-an-app-in-the-tenant-app-catalog-from-the-teams-client"></a>Pubblicare un'app nel catalogo dell'app tenant dal client Teams
 
 > [!NOTE]
-> È necessario avere effettuato l'accesso al client Microsoft teams con un account che include l'amministratore globale o il ruolo di amministratore del servizio teams abilitato per pubblicare le app per l'organizzazione. Leggi altre informazioni sull' [uso dei ruoli di amministratore per gestire i team](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles).
+> Questa procedura descrive come pubblicare un'app usando il client teams. Puoi anche pubblicare un'app nella pagina **Gestisci app** nell'interfaccia di amministrazione di Microsoft teams. Per altre informazioni, vedere [gestire le app in teams](manage-apps.md).
 
 ### <a name="get-a-teams-app-package"></a>Ottenere un pacchetto dell'app Teams
 
-Viene creato un pacchetto dell'app teams con [Teams App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio). Una volta che hai il pacchetto dell'app, puoi aggiungerlo al catalogo dell'app Enterprise. Mentre tutti gli utenti del tenant possono visualizzare il catalogo delle app, solo gli amministratori globali e i servizi di teams hanno la possibilità di pubblicarli e gestirli.
+Viene creato un pacchetto dell'app teams con [Teams App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio). Una volta che hai il pacchetto dell'app, puoi aggiungerlo al catalogo app tenant. Mentre tutti gli utenti dell'organizzazione possono visualizzare il catalogo delle app, solo gli amministratori globali e i servizi di teams hanno la possibilità di pubblicarli e gestirli.
 
-### <a name="go-to-the-tenant-apps-catalog"></a>Vai al catalogo delle app tenant
+### <a name="go-to-the-tenant-app-catalog"></a>Vai al catalogo app tenant
 
-Avviare il client Microsoft teams ed eseguire l'accesso usando le credenziali di amministratore del servizio globale o teams. Seleziona **app** sul lato sinistro dell'app e quindi seleziona la nuova sezione denominata per l'organizzazione specifica (in questo esempio, contoso). Gli utenti dell'organizzazione possono visualizzare le app nel catalogo e installarle per i team di cui fanno parte.
+Avviare teams ed eseguire l'accesso usando le credenziali di amministratore del servizio globale o teams. Seleziona **app** sul lato sinistro dell'app e quindi seleziona la nuova sezione denominata per l'organizzazione specifica (in questo esempio, contoso). Gli utenti dell'organizzazione possono visualizzare le app nel catalogo e installarle per i team di cui fanno parte.
 
 ![Screenshot dell'app teams Store che mostra il catalogo app.](media/private-app-store-teams-image01.png)
 
-### <a name="add-an-app-to-the-tenant-apps-catalog"></a>Aggiungere un'app al catalogo delle app tenant
+### <a name="add-an-app-to-the-tenant-app-catalog"></a>Aggiungere un'app al catalogo dell'app tenant
 
 1. Nella pagina **app** selezionare **carica un caricamento di un'app** > personalizzata**per contoso**.
 
@@ -63,11 +62,11 @@ Avviare il client Microsoft teams ed eseguire l'accesso usando le credenziali di
 
     ![Screenshot dell'app teams Store che mostra il catalogo app.](media/private-app-store-teams-image03.png)
 
-Quando si torna al catalogo delle app tenant, la nuova app Enterprise sarà presente. Ricordati che solo tu e i membri dell'organizzazione hai accesso a questo catalogo app.
+Quando si torna al catalogo dell'app tenant, la nuova app Enterprise sarà presente. Ricordati che solo tu e i membri dell'organizzazione hai accesso a questo catalogo app.
 
-### <a name="update-an-app-in-the-tenant-apps-catalog"></a>Aggiornare un'app nel catalogo delle app tenant
+### <a name="update-an-app-in-the-tenant-app-catalog"></a>Aggiornare un'app nel catalogo app tenant
 
-1. Dal catalogo delle app tenant selezionare "**...**" nell'angolo in alto a destra dell'app che vuoi aggiornare.
+1. Dal catalogo dell'app tenant selezionare "**...**" nell'angolo in alto a destra dell'app che vuoi aggiornare.
 
 2. Passare al pacchetto dell'app aggiornata e selezionarlo e quindi fare clic su **Apri**.
 
@@ -75,10 +74,14 @@ Quando si torna al catalogo delle app tenant, la nuova app Enterprise sarà pres
 
 L'app verrà aggiornata alla versione 2,0. Puoi anche eliminare l'app per l'intera società da questo menu.
 
-## <a name="use-the-office-365-admin-portal-to-manage-the-tenant-apps-catalog"></a>Usare il portale di amministrazione di Office 365 per gestire il catalogo delle app tenant
+## <a name="use-the-microsoft-teams-admin-center-to-manage-the-tenant-app-catalog"></a>Usare l'interfaccia di amministrazione di Microsoft teams per gestire il catalogo delle app tenant
 
-Se si hanno app che necessitano di correzioni di bug, è possibile disabilitare temporaneamente le app tramite l'interfaccia di amministrazione di Microsoft 365 > i**criteri di autorizzazione** delle**app** > Teams dell'interfaccia di **Amministrazione** > teams > <il nome del criterio, ad esempio "Global (org-Wide default)" > **app tenant** > bloccare app specifiche e consentire a tutti gli altri utenti di aggiungere l'app all'elenco.
+Se si hanno app che necessitano di correzioni di bug, è possibile disabilitare temporaneamente le app per gli utenti in un criterio di autorizzazione per le app.
 
-![Screenshot dell'app teams Store che mostra il catalogo app.](media/private-app-store-teams-image05.png)
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di autorizzazione**delle **app teams**.
+2. Selezionare i criteri di autorizzazione per le app che si desidera modificare e quindi fare clic su **modifica**.
+3. In **app tenant**selezionare **Blocca app specifiche e Consenti a tutti gli altri**e quindi aggiungere le app che si vuole bloccare.
 
-La disattivazione di un'app impedirà agli utenti di interagire con l'app, senza eliminare completamente l'app. Questi controlli offrono maggiore flessibilità e controllo per la gestione delle app nell'organizzazione.
+La disattivazione di un'app impedisce agli utenti di interagire con l'app, senza eliminare completamente l'app. Questi controlli offrono maggiore flessibilità e controllo per la gestione delle app nell'organizzazione.
+
+Per altre informazioni, vedere [gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).

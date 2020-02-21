@@ -22,50 +22,34 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: ed568fe0354f009656e3837d36701a94f0765340
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: ab5f85e7ea6239a5b56471ed0a378af3bc1c4c9f
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837406"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161671"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione delle app in Microsoft Teams
 
-Come amministratore, puoi usare i criteri di autorizzazione delle app per controllare quali app sono disponibili per gli utenti di Microsoft teams nell'organizzazione. È possibile consentire o bloccare tutte le app o le app specifiche pubblicate da Microsoft, da terze parti e dall'organizzazione. Quando si blocca un'app, gli utenti non sono in grado di installarlo dall'app store teams.
+Come amministratore, puoi usare i criteri di autorizzazione delle app per controllare quali app sono disponibili per gli utenti di Microsoft teams nell'organizzazione. È possibile consentire o bloccare tutte le app o le app specifiche pubblicate da Microsoft, da terze parti e dall'organizzazione. Quando si blocca un'app, gli utenti che hanno il criterio non riescono a installarlo dall'app teams Store.
 
-Puoi gestire i criteri di autorizzazione delle app nell'interfaccia di amministrazione di Microsoft teams. È possibile applicare le impostazioni a livello di organizzazione, usare il criterio globale (predefinito per l'intera organizzazione) e creare e assegnare criteri personalizzati a singoli utenti o utenti di un gruppo.  
+Puoi gestire i criteri di autorizzazione delle app nell'interfaccia di amministrazione di Microsoft teams. Puoi usare il criterio globale (predefinito per l'intera organizzazione) oppure creare e assegnare criteri personalizzati a singoli utenti o utenti di un gruppo.  
 
 ![Screenshot dei criteri di autorizzazione delle app](media/app-permission-policies.png)
 
 > [!NOTE]
 > Gli utenti dell'organizzazione otterranno automaticamente il criterio globale a meno che non si creino e non si assegnano criteri personalizzati. Le impostazioni dell'app a livello di organizzazione eseguono l'override dei criteri globali e di tutti i criteri personalizzati creati e assegnati agli utenti.
 
-Se l'organizzazione è già in teams, le impostazioni dell'app configurate in **impostazioni a livello di tenant** nell'interfaccia di amministrazione di Microsoft 365 si riflettono nelle impostazioni dell'app a livello di organigramma. Se non si ha familiarità con i team e si è appena iniziato, per impostazione predefinita tutte le app sono consentite nel criterio globale. Sono incluse le app pubblicate da Microsoft, terze parti e dall'organizzazione.
+Se l'organizzazione è già in teams, le impostazioni dell'app configurate in **impostazioni a livello di tenant** nell'interfaccia di amministrazione di Microsoft 365 si riflettono nelle impostazioni dell'app a livello di organigramma nella pagina [Manage Apps](manage-apps.md) . Se non si ha familiarità con i team e si è appena iniziato, per impostazione predefinita tutte le app sono consentite nel criterio globale. Sono incluse le app pubblicate da Microsoft, terze parti e dall'organizzazione.
 
-Supponi ad esempio di voler bloccare tutte le app di terze parti e consentire ad app specifiche di Microsoft per il team HR dell'organizzazione. Si creerebbe un criterio personalizzato denominato criteri di autorizzazione delle app HR, lo si imposta per bloccare e consentire le app desiderate e quindi assegnarlo agli utenti nel team HR.
+Supponi ad esempio di voler bloccare tutte le app di terze parti e consentire ad app specifiche di Microsoft per il team HR dell'organizzazione. Prima di tutto, devi accedere alla pagina [Gestisci app](manage-apps.md) e verificare che le app che vuoi consentire al team HR siano consentite a livello di organizzazione. Crea quindi un criterio personalizzato denominato criteri di autorizzazione per le app HR, impostalo per bloccare e consentire le app desiderate e assegnalo agli utenti nel team HR.
 
 > [!NOTE]
 > Se i team sono stati distribuiti in un ambiente governativo-GCC di Microsoft 365, vedere [criteri di autorizzazione delle app per GCC](#app-permission-policies-for-gcc) per altre informazioni sulle impostazioni dell'app di terze parti che sono univoche per GCC.
 
-## <a name="manage-org-wide-app-settings"></a>Gestire le impostazioni dell'app a livello di organizzazione
-
-Usa le impostazioni dell'app a livello di organizzazione per controllare quali app sono disponibili in tutta l'azienda. Le impostazioni dell'app a livello di organizzazione regolano il comportamento per tutti gli utenti ed eseguono l'override di qualsiasi altro criterio di autorizzazione dell'app assegnato agli utenti. Puoi usarle per controllare le app malevole o problematiche.
-
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di autorizzazione**delle **app teams**.
-2. Selezionare **impostazioni a livello di organizzazione**. È quindi possibile configurare le impostazioni desiderate nel pannello. 
-    ![Screenshot delle impostazioni dell'app a livello di organizzazione](media/app-permission-policies-org-wide-settings.png)
-3. In **app di terze parti**disattivare o attivare queste impostazioni per controllare l'accesso alle app di terze parti:
-
-    - **Consenti di terze parti in teams**: controlla se gli utenti possono usare app di terze parti.
-    - **Consenti a tutte le nuove app di terze parti pubblicate nello Store per impostazione predefinita**: questo controlla se le nuove app di terze parti pubblicate nell'app store teams diventano automaticamente disponibili in teams. Puoi impostare questa opzione solo se Consenti app di terze parti.
-
-4. In **app personalizzate**disattivare o attivare **Consenti l'interazione con le app personalizzate**. Questa impostazione controlla se gli utenti possono interagire con le app personalizzate (sideload). Tieni presente che questo è diverso dal consentire agli utenti di *caricare* app personalizzate.
-5. In **app bloccate**cercare e aggiungere le app che si desidera bloccare nell'organizzazione. Puoi scegliere le app dal Catalogo app tenant o dall'app teams Store.
-6. Fare clic su **Salva** per applicare le impostazioni dell'app a livello di organizzazione.
-
 ## <a name="create-a-custom-app-permission-policy"></a>Creare un criterio di autorizzazione per le app personalizzate
 
-Per controllare le app disponibili per diversi gruppi di utenti dell'organizzazione, creare e assegnare uno o più criteri di autorizzazione per le app personalizzate. È possibile creare e assegnare criteri personalizzati distinti a seconda che le app vengano pubblicate da Microsoft, da terze parti o dall'organizzazione. È importante sapere che dopo aver creato un criterio personalizzato, non è possibile modificarlo se le app di terze parti sono disabilitate in impostazioni a livello di organizzazione. 
+Per controllare le app disponibili per diversi gruppi di utenti dell'organizzazione, creare e assegnare uno o più criteri di autorizzazione per le app personalizzate. È possibile creare e assegnare criteri personalizzati distinti a seconda che le app vengano pubblicate da Microsoft, da terze parti o dall'organizzazione. È importante sapere che dopo aver creato un criterio personalizzato, non è possibile modificarlo se le app di terze parti sono disabilitate nelle impostazioni dell'app a livello di organizzazione.
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di autorizzazione**delle **app teams**.
 2. Fare clic su **Aggiungi**.
@@ -149,17 +133,17 @@ In GCC tutte le app di terze parti sono bloccate per impostazione predefinita. V
 
 Per abilitare un'app di terze parti per un utente o un gruppo di utenti dell'organizzazione, eseguire le operazioni seguenti:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di autorizzazione**delle **app teams**.
-2. Verificare che l'app di terze parti che si vuole consentire a un set di utenti sia bloccata a livello di organizzazione. A tale scopo, fai clic su **impostazioni a livello di organizzazione**e quindi, in **app bloccate**, verifica che l'app sia elencata.
-3. Modificare il criterio globale per bloccare l'app di terze parti. Procedi come segue.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alle app **Teams** > **Manage Apps**e quindi, nell'elenco delle app, verifica che l'app di terze parti che vuoi consentire a un set di utenti sia impostata su **bloccato** a livello di organizzazione.
+
+2. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di autorizzazione**delle **app teams**e quindi modificare il criterio globale per bloccare l'app di terze parti. Procedi come segue.
     1. Nella pagina Criteri di autorizzazione dell'app fare clic su **globale (impostazione predefinita a livello di organizzazione)**, quindi fare clic su **modifica**.
     2. In **app di terze parti**selezionare **Blocca app specifiche e Consenti a tutti gli altri utenti**di aggiungere l'app e quindi fare clic su **Salva**.
 
     > [!NOTE]
-    > È importante eseguire questa operazione prima di procedere con il passaggio successivo per consentire l'app a livello di organizzazione. Il motivo è che se l'app di terze parti non è bloccata nel criterio globale, tutti gli utenti a cui si applica il criterio globale potranno accedere all'app di terze parti quando la consentirai a livello di organizzazione.
+    > È importante eseguire questa operazione prima di procedere con il passaggio successivo per consentire l'app a livello di organizzazione. Questo perché se l'app di terze parti non è bloccata nei criteri di autorizzazione dell'app globale, tutti gli utenti a cui si applica il criterio globale potranno accedere all'app di terze parti quando la consentirai a livello di organizzazione.
 
-4. Consenti all'app di terze parti a livello di organizzazione. A questo scopo, fai clic su **impostazioni a livello di organizzazione**, in **app bloccate**, Rimuovi l'app dall'elenco e quindi fai clic su **Salva**.
-5. [Crea un criterio di autorizzazione per l'app personalizzata](#create-a-custom-app-permission-policy) per consentire l'app e quindi [assegna i criteri](#assign-a-custom-app-permission-policy-to-users) agli utenti desiderati.
+3. Consenti all'app di terze parti a livello di organizzazione. A questo scopo, nella barra di spostamento sinistra, vai a >  **app teams****Gestisci app**. Nell'elenco delle app fare clic a sinistra del nome dell'app per selezionare l'app e quindi selezionare **Consenti**.
+4. [Crea un criterio di autorizzazione per l'app personalizzata](#create-a-custom-app-permission-policy) per consentire l'app e quindi [assegna i criteri](#assign-a-custom-app-permission-policy-to-users) agli utenti desiderati.
 
 ## <a name="faq"></a>Domande frequenti
 
@@ -172,9 +156,9 @@ Sì, è possibile usare i criteri di autorizzazione delle app per controllare l'
 
 Puoi usare i criteri di configurazione delle app insieme ai criteri di autorizzazione per le app. Le app predefinite vengono selezionate dal set di app abilitate per un utente. Inoltre, se un utente ha un criterio di autorizzazione per le app che blocca un'app nei criteri di configurazione dell'app, l'app non verrà visualizzata in teams.
 
-#### <a name="can-i-use-app-permission-policies-to-restrict-uploading-custom-apps-also-known-as-sideloading"></a>È possibile usare I criteri di autorizzazione delle app per limitare il caricamento di app personalizzate (note anche come sideload)?
+#### <a name="can-i-use-app-permission-policies-to-restrict-uploading-custom-apps"></a>È possibile usare I criteri di autorizzazione delle app per limitare il caricamento di app personalizzate?
 
-Usa le impostazioni a livello di organizzazione nei criteri di autorizzazione per le app per limitare il caricamento di app personalizzate per l'azienda.  
+Puoi usare le impostazioni a livello di organizzazione nella pagina **Gestisci app** o i criteri di configurazione dell'app per limitare il caricamento di app personalizzate per l'azienda.  
 
 Per limitare utenti specifici al caricamento di app personalizzate, USA criteri per le app personalizzate. Per altre informazioni, vedere [gestire i criteri e le impostazioni dell'app personalizzata in teams](teams-custom-app-policies-and-settings.md).
 
@@ -197,9 +181,10 @@ Ad esempio, quando un'app viene bloccata, gli utenti non possono eseguire una de
 - Configurare i connettori per la ricezione delle notifiche
 - Usare l'estensione di messaggistica dell'app
 
-Il portale Legacy ha consentito il controllo delle app a livello di organizzazione, il che significa che quando un'app viene bloccata, è bloccata per tutti gli utenti dell'organizzazione. L'impostazione dell'app a livello di organizzazione nei criteri di autorizzazione per le app funziona esattamente nello stesso modo.
+Il portale Legacy ha consentito il controllo delle app a livello di organizzazione, il che significa che quando un'app viene bloccata, è bloccata per tutti gli utenti dell'organizzazione. Il blocco di un'app nella pagina [Gestisci app](manage-apps.md) funziona esattamente nello stesso modo.
 
 Per i criteri di autorizzazione delle app assegnati a utenti specifici, se è stata consentita un'app con un bot o una funzionalità di connessione e quindi bloccata e se l'app è consentita solo per alcuni utenti in un contesto condiviso, i membri di una chat di gruppo o un canale che non hanno l'autorizzazione per l'app  può visualizzare la cronologia e i messaggi inviati dal bot o dal connettore, ma non possono interagire con esso.
 
- ## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-topics"></a>Argomenti correlati
+
 - [Impostazioni di amministrazione per le app in Teams](admin-settings.md)

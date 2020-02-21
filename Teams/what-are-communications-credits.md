@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Licensing
 description: 'Learn what Communication Credits (PSTN Consumption) billing, how to find rates, and what services you get. '
-ms.openlocfilehash: c071ebf297714e81cdb8a508ebf313d0054fe633
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 682d2d9fb89c0cee46ca6fb0e856a6000e4c6386
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42051570"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42161727"
 ---
 # <a name="what-are-communications-credits"></a>Cosa sono i Crediti comunicazioni?
 
@@ -68,7 +68,7 @@ Per usare i numeri verdi in Skype for Business, sono necessari Crediti comunicaz
 > [!NOTE]
 > È possibile vedere i piani e i prezzi accedendo [all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e accedendo agli**abbonamenti** > per la **fatturazione** > **Aggiungi abbonamenti**. 
   
-Negli > **** > **abbonamenti**all'interfaccia di **amministrazione di Microsoft 365**è possibile aggiungere il credito manualmente in qualsiasi momento. È possibile anche abilitare l'opzione **Autoricarica**, che consente di ricaricare automaticamente l'account quando il saldo scende al di sotto della soglia impostata. Se si sceglie di pagare i Crediti comunicazioni versando l'importo in un'unica soluzione e il saldo scende a zero, i servizi di chiamata aggiuntivi illustrati in precedenza non saranno più disponibili. Per questo, è consigliabile utilizzare la funzione " **Autoricarica** " per evitare qualsiasi interruzione del servizio, nel caso in cui i Crediti comunicazioni arrivino a 0 (zero). Verrà inviata un'e-mail al completamento della transazione di ricarica, quando essa non va a buon fine (ad esempio una carta di credito scaduta) e anche quando i Crediti comunicazioni arrivano a 0 (zero).
+Nell'interfaccia **di amministrazione** > di Microsoft 365 per l'**acquisto di servizi** > di**fatturazione** > è possibile selezionare crediti per la comunicazione**per aggiungere i** crediti ed è possibile aggiungere credito manualmente in qualsiasi momento. È possibile anche abilitare l'opzione **Autoricarica**, che consente di ricaricare automaticamente l'account quando il saldo scende al di sotto della soglia impostata. Se si sceglie di pagare i Crediti comunicazioni versando l'importo in un'unica soluzione e il saldo scende a zero, i servizi di chiamata aggiuntivi illustrati in precedenza non saranno più disponibili. Per questo, è consigliabile utilizzare la funzione " **Autoricarica** " per evitare qualsiasi interruzione del servizio, nel caso in cui i Crediti comunicazioni arrivino a 0 (zero). Verrà inviata un'e-mail al completamento della transazione di ricarica, quando essa non va a buon fine (ad esempio una carta di credito scaduta) e anche quando i Crediti comunicazioni arrivano a 0 (zero).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

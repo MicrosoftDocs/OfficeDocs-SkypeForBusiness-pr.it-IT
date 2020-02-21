@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d85aa5435d05d5f296b06e56841a2e10c7ddd413
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 30cbb5a29f88494c24474624a79ffa4ea8004025
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826874"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160363"
 ---
 <a name="admin-settings-for-apps-in-microsoft-teams"></a>Impostazioni di amministrazione per le app in Microsoft Teams
 ==========================================
@@ -34,17 +34,24 @@ ms.locfileid: "41826874"
 
 Le app contengono strumenti fuori sede per l'organizzazione per ottenere un numero maggiore di team. Queste app combinano la funzionalità di schede, estensioni di messaggistica, connettori e bot forniti da Microsoft, creati da terze parti o da sviluppatori dell'organizzazione.
 
-Nelle **app teams** nell'interfaccia di amministrazione di Microsoft teams puoi impostare i criteri per la gestione delle app per l'organizzazione. Ad esempio, puoi impostare i criteri per controllare quali app sono disponibili per gli utenti del team ed è possibile personalizzare i team tramite il blocco delle app più importanti per gli utenti.
+Puoi gestire le app per l'organizzazione in **app teams** nell'interfaccia di amministrazione di Microsoft teams. Ad esempio, puoi consentire o bloccare le app a livello di organizzazione, impostare i criteri per controllare quali app sono disponibili per gli utenti del team e personalizzare i team tramite il blocco delle app più importanti per gli utenti.
 
 Stiamo migliorando continuamente l'esperienza dell'app in teams e aggiungendo funzionalità e funzionalità. Nel corso del tempo creeremo altre funzionalità di gestione delle app, quindi ricontrolla le informazioni più aggiornate sui criteri per le app.
 
+## <a name="manage-apps"></a>Gestire le app
+
+Usa la pagina **Gestisci app** per visualizzare e gestire tutte le app Teams nel catalogo app dell'organizzazione. Puoi vedere lo stato e le proprietà a livello di organizzazione delle app, bloccare o consentire le app a livello di organizzazione, caricare nuove app personalizzate nel catalogo del tenant e gestire le impostazioni dell'app in tutta l'organizzazione.
+
+La pagina **Gestisci app** consente di visualizzare tutte le app disponibili nel catalogo del tenant, fornendo le informazioni necessarie per decidere quali app consentire o bloccare in tutta l'organizzazione. Puoi quindi usare i [criteri di autorizzazione](#app-permission-policies)per le app, i [criteri di configurazione delle app](#app-setup-policies)e i [criteri e le impostazioni delle app personalizzate](#custom-app-policies-and-settings) per configurare l'esperienza dell'app per utenti specifici dell'organizzazione.
+
+Per altre informazioni, vedere [gestire le app in teams](manage-apps.md).
+
 ## <a name="app-permission-policies"></a>Criteri di autorizzazione delle app
 
-Con i criteri di autorizzazione per le app è possibile bloccare o consentire le app, a livello di organizzazione o per utenti specifici.  Quando blocchi un'app, tutte le interazioni con l'app sono disabilitate e l'app non viene visualizzata in teams per gli utenti.
+Con i criteri di autorizzazione delle app, puoi controllare quali app sono disponibili per gli utenti specifici dell'organizzazione. È possibile consentire o bloccare tutte le app o le app specifiche pubblicate da Microsoft, da terze parti e dall'organizzazione.
 
 Ad esempio, puoi usare i criteri di autorizzazione delle app per:
 
-- Disabilitare un'app che pone un rischio di autorizzazione o perdita di dati per l'organizzazione.
 - Distribuire gradualmente nuove app di terze parti o personalizzate a utenti specifici.
 - Semplificare l'esperienza utente, soprattutto quando si avvia l'implementazione di team in tutta l'organizzazione.
 
@@ -55,6 +62,7 @@ Per altre informazioni, vedere [gestire i criteri di autorizzazione delle app in
 I criteri di configurazione dell'app consentono di personalizzare l'esperienza dell'app per gli utenti. Scegli le app che vuoi aggiungere alla barra dell'app nei client di teams e l'ordine in cui vengono visualizzate, nei client Web, desktop e mobili.
 
 Ecco alcuni esempi di come usare i criteri di configurazione delle app:
+
 - Guidare la consapevolezza e l'adozione delle app principali. Ad esempio, Aggiungi un'app di reclutamento e gestione dei talenti personalizzati per gli utenti del team HR.
 - Funzionalità di aggiunta selettiva di core team, ad esempio chat, team e chiamate. In questo modo, puoi garantire agli utenti un'attività specifica in teams.
 

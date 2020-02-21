@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Optimization
 description: Scopri come la qualità della trasmissione è classificata nel Dashboard Qualità della chiamata di Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: bb1c96f92ae683f02d5972f8fa11afe15e3c5a92
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 2c70126c86a6e9f0a8bc48c8fffa90142fe5928f
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837906"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160740"
 ---
 # <a name="stream-classification-in-call-quality-dashboard"></a>Classificazione trasmissione nel Dashboard Qualità della chiamata
 
@@ -48,8 +48,17 @@ Se vengono soddisfatte una o più delle condizioni seguenti, un flusso audio vie
 |Ratio Concealed Samples Avg|> 0,07|Rapporto medio del numero di fotogrammi audio con campioni nascosti generati dalla perdita di pacchetti per la guarigione del numero totale di fotogrammi audio.|
 ||||
 
-### <a name="video-classifier"></a>Classificatore video
+### <a name="video-classifier-due-to-freeze"></a>Classificatore video a causa di un blocco
 
+Il flusso video è contrassegnato come _buono_ o _scarso_ in base al valore di un punteggio di classificazione generato per stimare che l'utente finale abbia sperimentato il video congelato. Questo classificatore è disponibile solo per il prodotto Microsoft teams.
+
+|Passaggio #|Metrica|Scenario|Condizione |Classificazione se la condizione è vera |Classificazione se la condizione è falsa |Classificazione se la metrica non è disponibile |Spiegazione |
+|:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |
+|1|Video scadente a causa del blocco del classificatore |La coppia server è client: Server|>0,246|_Poor_|_Good_|_Unclassified_|Un punteggio compreso tra 0 e 1 generato in base a una combinazione di esperienza utente, blocco delle statistiche sulla durata e esperienza complessiva delle chiamate |
+|2|Video scadente a causa del blocco del classificatore |La coppia server è client: client|>0,524|_Poor_|_Good_|_Unclassified_|Un punteggio compreso tra 0 e 1 generato in base a una combinazione di esperienza utente, blocco delle statistiche sulla durata e esperienza complessiva delle chiamate |
+|  |  |  |  |  |  |  |
+
+### <a name="video-classifier"></a>Classificatore video
 Un flusso video è contrassegnato come _buono_ o _scarso_ in base al valore della prima metrica disponibile nell'ordine seguente:
 
 |Passaggio #|Metrica|Condizione |Classificazione se la condizione è vera |Classificazione se la condizione è falsa |Classificazione se la metrica non è disponibile |Spiegazione |
@@ -109,6 +118,7 @@ Se la connettività ICE è riuscita per un flusso non _Classificato_ , il flusso
 
 [Attivazione e utilizzo di Call Quality Dashboard (Call Quality Dashboard)](turning-on-and-using-call-quality-dashboard.md)
 
-[Dimensioni e misure disponibili in Dashboard Qualità della chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md)
+[Dimensioni e misure disponibili in Call Quality Dashboard](dimensions-and-measures-available-in-call-quality-dashboard.md)
 
-[Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+[Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+ 

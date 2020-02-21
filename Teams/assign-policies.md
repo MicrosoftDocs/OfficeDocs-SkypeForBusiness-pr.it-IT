@@ -16,17 +16,17 @@ localization_priority: Normal
 search.appverid: MET150
 description: Scopri i diversi modi per assegnare i criteri agli utenti in Microsoft teams.
 f1keywords: ''
-ms.openlocfilehash: a4d50f6182441e97f5d7290610e254bd82e91e96
-ms.sourcegitcommit: c8d16d5e61d66d7b5e7391a800978b920612ea4d
+ms.openlocfilehash: cb1c5fd43379388327de5e517409f01f7f52ed1b
+ms.sourcegitcommit: d7be89019dd5a3b88b0840bddf1b88fea8598ea7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42052554"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42170762"
 ---
 # <a name="assign-policies-to-your-users-in-microsoft-teams"></a>Assegnare criteri agli utenti in Microsoft Teams
 
 > [!NOTE]
-> **Due delle caratteristiche di Microsoft teams descritte in questo articolo sono attualmente in anteprima per [l'assegnazione di](#assign-a-policy-to-a-group) [criteri batch](#assign-a-policy-to-a-batch-of-users)**
+> **Due delle caratteristiche di Microsoft teams discusse in questo articolo, [assegnazione di criteri batch](#assign-a-policy-to-a-batch-of-users) e [assegnazione di criteri ai gruppi](#assign-a-policy-to-a-group)sono attualmente in anteprima.**
 
 Come amministratore, puoi usare i criteri per controllare le caratteristiche dei team disponibili per gli utenti dell'organizzazione. Ad esempio, esistono criteri per la chiamata, criteri per le riunioni e criteri di messaggistica, per citarne solo alcuni.
 
@@ -213,18 +213,18 @@ Per altre informazioni, vedere [Get-CsBatchPolicyAssignmentOperation](https://do
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-L'assegnazione di criteri di gruppo consente di assegnare un criterio a un gruppo di utenti, ad esempio un gruppo di sicurezza o un'unità organizzativa. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando i membri vengono aggiunti o rimossi da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza.
+L'assegnazione dei criteri a gruppi consente di assegnare un criterio a un gruppo di utenti, ad esempio un gruppo di sicurezza o un'unità organizzativa. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando i membri vengono aggiunti o rimossi da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza.
 
 Puoi usare il ```New-CsGroupPolicyAssignment``` cmdlet per assegnare un criterio a un gruppo. Puoi specificare un gruppo usando l'ID oggetto, l'indirizzo SIP o l'indirizzo di posta elettronica.
 
 Quando si assegna il criterio, viene immediatamente assegnato al gruppo. Si noti tuttavia che la propagazione dell'assegnazione dei criteri ai membri del gruppo viene eseguita come operazione in background e può richiedere del tempo, a seconda delle dimensioni del gruppo. Lo stesso vale quando un criterio non viene assegnato da un gruppo o quando i membri vengono aggiunti o rimossi da un gruppo.
 
 > [!NOTE]
-> Attualmente, l'assegnazione di criteri di gruppo non è disponibile per tutti i tipi di criteri teams. Vedere [New-CsGroupPolicyAssignment](https://docs.microsoft.com/powershell/module/teams/new-csgrouppolicyassignment) per l'elenco dei tipi di criteri supportati.
+> Attualmente, l'assegnazione dei criteri ai gruppi non è disponibile per tutti i tipi di criteri teams. Vedere [New-CsGroupPolicyAssignment](https://docs.microsoft.com/powershell/module/teams/new-csgrouppolicyassignment) per l'elenco dei tipi di criteri supportati.
 
-### <a name="what-you-need-to-know-about-group-policy-assignment"></a>Informazioni utili sull'assegnazione di criteri di gruppo
+### <a name="what-you-need-to-know-about-policy-assignment-to-groups"></a>Informazioni utili sull'assegnazione dei criteri ai gruppi
 
-Prima di iniziare, è importante comprendere le regole di precedenza e la classificazione delle assegnazioni dei criteri di gruppo.
+Prima di iniziare, è importante comprendere le regole di precedenza e la classificazione delle assegnazioni di gruppo.
 
 #### <a name="precedence-rules"></a>Regole di precedenza
 
@@ -240,7 +240,7 @@ I criteri effettivi di un utente vengono aggiornati in base a queste regole quan
  
 Quando si assegna un criterio a un gruppo, è necessario specificare una classificazione per l'assegnazione del gruppo. Viene usato per determinare i criteri che un utente deve ereditare come criterio effettivo se l'utente è un membro di due o più gruppi e a ogni gruppo viene assegnato un criterio dello stesso tipo.
 
-La classificazione delle assegnazioni di gruppo è relativa ad altre assegnazioni dei criteri di gruppo dello stesso tipo. Ad esempio, se si sta assegnando un criterio di chiamata a due gruppi, impostare la classificazione di un'assegnazione su 1 e l'altra su 2, con 1 che è la classificazione più alta. La classificazione delle assegnazioni di gruppo indica l'appartenenza a un gruppo più importante o più pertinente rispetto alle altre appartenenze ai gruppi per quanto riguarda l'ereditarietà.
+La classificazione delle assegnazioni di gruppo è relativa ad altre assegnazioni di gruppo dello stesso tipo. Ad esempio, se si sta assegnando un criterio di chiamata a due gruppi, impostare la classificazione di un'assegnazione su 1 e l'altra su 2, con 1 che è la classificazione più alta. La classificazione delle assegnazioni di gruppo indica l'appartenenza a un gruppo più importante o più pertinente rispetto alle altre appartenenze ai gruppi per quanto riguarda l'ereditarietà.
  
 Supponiamo, ad esempio, di avere due gruppi, i dipendenti dello Store e i responsabili dello Store. A entrambi i gruppi viene assegnato un criterio di chiamata per i team, rispettivamente i criteri di chiamata dei dipendenti e i responsabili dello Store. Per un responsabile dello Store che si trova in entrambi i gruppi, il loro ruolo di Manager è più pertinente del loro ruolo di dipendente, quindi il criterio di chiamata assegnato al gruppo responsabili dello Store dovrebbe avere una classificazione più alta.
 
