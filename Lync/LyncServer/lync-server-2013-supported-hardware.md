@@ -12,20 +12,20 @@ ms:contentKeyID: 48184269
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9f5fce5077de827a6469886b88f2f8f608ff6e90
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: f3a32badc0752851b855c77bb8e034d786d2c20f
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42142412"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42181579"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="supported-hardware-for-lync-server-2013"></a><span data-ttu-id="06f64-102">Hardware supportato per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="06f64-102">Supported hardware for Lync Server 2013</span></span>
+# <a name="supported-hardware-for-lync-server-2013"></a><span data-ttu-id="70552-102">Hardware supportato per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="70552-102">Supported hardware for Lync Server 2013</span></span>
 
 </div>
 
@@ -35,19 +35,19 @@ ms.locfileid: "42142412"
 
 <span> </span>
 
-<span data-ttu-id="06f64-103">_**Ultimo argomento modificato:** 2012-09-21_</span><span class="sxs-lookup"><span data-stu-id="06f64-103">_**Topic Last Modified:** 2012-09-21_</span></span>
+<span data-ttu-id="70552-103">_**Ultimo argomento modificato:** 2012-09-21_</span><span class="sxs-lookup"><span data-stu-id="70552-103">_**Topic Last Modified:** 2012-09-21_</span></span>
 
-<span data-ttu-id="06f64-104">I requisiti hardware di Lync Server 2013 variano in base al ruolo del server, alla topologia, ai requisiti di archiviazione e allo scenario di distribuzione specifico.</span><span class="sxs-lookup"><span data-stu-id="06f64-104">Lync Server 2013 hardware requirements vary according to server role, topology, storage requirements, and the specific deployment scenario.</span></span>
+<span data-ttu-id="70552-104">I requisiti hardware di Lync Server 2013 variano in base al ruolo del server, alla topologia, ai requisiti di archiviazione e allo scenario di distribuzione specifico.</span><span class="sxs-lookup"><span data-stu-id="70552-104">Lync Server 2013 hardware requirements vary according to server role, topology, storage requirements, and the specific deployment scenario.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="06f64-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="06f64-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="70552-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="70552-105">In This Section</span></span>
 
-  - [<span data-ttu-id="06f64-106">Piattaforme hardware server per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="06f64-106">Server hardware platforms for Lync Server 2013</span></span>](lync-server-2013-server-hardware-platforms.md)
+  - [<span data-ttu-id="70552-106">Piattaforme hardware server per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="70552-106">Server hardware platforms for Lync Server 2013</span></span>](lync-server-2013-server-hardware-platforms.md)
 
-  - [<span data-ttu-id="06f64-107">Supporto hardware per client e dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="06f64-107">Client and device hardware support in Lync Server 2013</span></span>](lync-server-2013-client-and-device-hardware-support.md)
+  - [<span data-ttu-id="70552-107">Supporto hardware per client e dispositivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="70552-107">Client and device hardware support in Lync Server 2013</span></span>](lync-server-2013-client-and-device-hardware-support.md)
 
-  - [<span data-ttu-id="06f64-108">Supporto per l'archiviazione di file in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="06f64-108">File storage support in Lync Server 2013</span></span>](lync-server-2013-file-storage-support.md)
+  - [<span data-ttu-id="70552-108">Supporto per l'archiviazione di file in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="70552-108">File storage support in Lync Server 2013</span></span>](lync-server-2013-file-storage-support.md)
 
 </div>
 

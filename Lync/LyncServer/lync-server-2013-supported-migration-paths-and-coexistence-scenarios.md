@@ -12,20 +12,20 @@ ms:contentKeyID: 48184182
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d3d8596f6086a42513961890b505c62920db0d8a
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: ee00d806669718baec5352a1cfb5769b5d5dcb0f
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42142392"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42181549"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="supported-migration-paths-and-coexistence-scenarios-in-lync-server-2013"></a><span data-ttu-id="4731c-102">Percorsi di migrazione supportati e scenari di coesistenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4731c-102">Supported migration paths and coexistence scenarios in Lync Server 2013</span></span>
+# <a name="supported-migration-paths-and-coexistence-scenarios-in-lync-server-2013"></a><span data-ttu-id="90a63-102">Percorsi di migrazione supportati e scenari di coesistenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="90a63-102">Supported migration paths and coexistence scenarios in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,17 +35,17 @@ ms.locfileid: "42142392"
 
 <span> </span>
 
-<span data-ttu-id="4731c-103">_**Ultimo argomento modificato:** 2012-04-30_</span><span class="sxs-lookup"><span data-stu-id="4731c-103">_**Topic Last Modified:** 2012-04-30_</span></span>
+<span data-ttu-id="90a63-103">_**Ultimo argomento modificato:** 2012-04-30_</span><span class="sxs-lookup"><span data-stu-id="90a63-103">_**Topic Last Modified:** 2012-04-30_</span></span>
 
-<span data-ttu-id="4731c-104">Lync Server 2013 supporta la migrazione da Microsoft Lync Server 2010 e Microsoft Office Communications Server 2007 R2, inclusa la coesistenza con componenti client e server specifici di tali distribuzioni precedenti.</span><span class="sxs-lookup"><span data-stu-id="4731c-104">Lync Server 2013 supports migration from Microsoft Lync Server 2010 and Microsoft Office Communications Server 2007 R2, including coexistence with specific client and server components of those previous deployments.</span></span>
+<span data-ttu-id="90a63-104">Lync Server 2013 supporta la migrazione da Microsoft Lync Server 2010 e Microsoft Office Communications Server 2007 R2, inclusa la coesistenza con componenti client e server specifici di tali distribuzioni precedenti.</span><span class="sxs-lookup"><span data-stu-id="90a63-104">Lync Server 2013 supports migration from Microsoft Lync Server 2010 and Microsoft Office Communications Server 2007 R2, including coexistence with specific client and server components of those previous deployments.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="4731c-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="4731c-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="90a63-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="90a63-105">In This Section</span></span>
 
-  - [<span data-ttu-id="4731c-106">Percorsi di migrazione del server supportati e scenari di coesistenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4731c-106">Supported server migration paths and coexistence scenarios in Lync Server 2013</span></span>](lync-server-2013-supported-server-migration-paths-and-coexistence-scenarios.md)
+  - [<span data-ttu-id="90a63-106">Percorsi di migrazione del server supportati e scenari di coesistenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="90a63-106">Supported server migration paths and coexistence scenarios in Lync Server 2013</span></span>](lync-server-2013-supported-server-migration-paths-and-coexistence-scenarios.md)
 
-  - [<span data-ttu-id="4731c-107">Client supportati dalle distribuzioni precedenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4731c-107">Supported clients from previous deployments in Lync Server 2013</span></span>](lync-server-2013-supported-clients-from-previous-deployments.md)
+  - [<span data-ttu-id="90a63-107">Client supportati dalle distribuzioni precedenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="90a63-107">Supported clients from previous deployments in Lync Server 2013</span></span>](lync-server-2013-supported-clients-from-previous-deployments.md)
 
 </div>
 

@@ -12,20 +12,20 @@ ms:contentKeyID: 48183916
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2745cdf1fd5ce81dffad50ad5b128c44dc3917f3
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: f2b0eb3a28613c4294245bc65bb0bd865e879a07
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42142452"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42181599"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="supportability-for-lync-server-2013"></a><span data-ttu-id="171e4-102">Supporto per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="171e4-102">Supportability for Lync Server 2013</span></span>
+# <a name="supportability-for-lync-server-2013"></a><span data-ttu-id="da960-102">Supporto per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="da960-102">Supportability for Lync Server 2013</span></span>
 
 </div>
 
@@ -35,29 +35,29 @@ ms.locfileid: "42142452"
 
 <span> </span>
 
-<span data-ttu-id="171e4-103">_**Ultimo argomento modificato:** 2012-04-23_</span><span class="sxs-lookup"><span data-stu-id="171e4-103">_**Topic Last Modified:** 2012-04-23_</span></span>
+<span data-ttu-id="da960-103">_**Ultimo argomento modificato:** 2012-04-23_</span><span class="sxs-lookup"><span data-stu-id="da960-103">_**Topic Last Modified:** 2012-04-23_</span></span>
 
-<span data-ttu-id="171e4-104">Il software di comunicazione Microsoft Lync Server 2013 supporta le topologie progettate per soddisfare le esigenze di organizzazioni di piccole, medie o grandi dimensioni e che presentano requisiti diversi per le prestazioni, la disponibilità elevata e la scalabilità.</span><span class="sxs-lookup"><span data-stu-id="171e4-104">Microsoft Lync Server 2013 communications software supports topologies that are designed to meet the needs of organizations that are small, medium, or large and that have varying requirements for performance, high availability, and scalability.</span></span>
+<span data-ttu-id="da960-104">Il software di comunicazione Microsoft Lync Server 2013 supporta le topologie progettate per soddisfare le esigenze di organizzazioni di piccole, medie o grandi dimensioni e che presentano requisiti diversi per le prestazioni, la disponibilità elevata e la scalabilità.</span><span class="sxs-lookup"><span data-stu-id="da960-104">Microsoft Lync Server 2013 communications software supports topologies that are designed to meet the needs of organizations that are small, medium, or large and that have varying requirements for performance, high availability, and scalability.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="171e4-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="171e4-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="da960-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="da960-105">In This Section</span></span>
 
-  - [<span data-ttu-id="171e4-106">Supporto di Active Directory in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="171e4-106">Active Directory support in Lync Server 2013</span></span>](lync-server-2013-active-directory-support.md)
+  - [<span data-ttu-id="da960-106">Supporto di Active Directory in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="da960-106">Active Directory support in Lync Server 2013</span></span>](lync-server-2013-active-directory-support.md)
 
-  - [<span data-ttu-id="171e4-107">Topologie supportate in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="171e4-107">Supported topologies in Lync Server 2013</span></span>](lync-server-2013-supported-topologies.md)
+  - [<span data-ttu-id="da960-107">Topologie supportate in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="da960-107">Supported topologies in Lync Server 2013</span></span>](lync-server-2013-supported-topologies.md)
 
-  - [<span data-ttu-id="171e4-108">Collocazione dei server supportata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="171e4-108">Supported server collocation in Lync Server 2013</span></span>](lync-server-2013-supported-server-collocation.md)
+  - [<span data-ttu-id="da960-108">Collocazione dei server supportata in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="da960-108">Supported server collocation in Lync Server 2013</span></span>](lync-server-2013-supported-server-collocation.md)
 
-  - [<span data-ttu-id="171e4-109">Percorsi di migrazione supportati e scenari di coesistenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="171e4-109">Supported migration paths and coexistence scenarios in Lync Server 2013</span></span>](lync-server-2013-supported-migration-paths-and-coexistence-scenarios.md)
+  - [<span data-ttu-id="da960-109">Percorsi di migrazione supportati e scenari di coesistenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="da960-109">Supported migration paths and coexistence scenarios in Lync Server 2013</span></span>](lync-server-2013-supported-migration-paths-and-coexistence-scenarios.md)
 
-  - [<span data-ttu-id="171e4-110">Hardware supportato per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="171e4-110">Supported hardware for Lync Server 2013</span></span>](lync-server-2013-supported-hardware.md)
+  - [<span data-ttu-id="da960-110">Hardware supportato per Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="da960-110">Supported hardware for Lync Server 2013</span></span>](lync-server-2013-supported-hardware.md)
 
-  - [<span data-ttu-id="171e4-111">Supporto dell'infrastruttura e del software server in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="171e4-111">Server software and infrastructure support in Lync Server 2013</span></span>](lync-server-2013-server-software-and-infrastructure-support.md)
+  - [<span data-ttu-id="da960-111">Supporto dell'infrastruttura e del software server in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="da960-111">Server software and infrastructure support in Lync Server 2013</span></span>](lync-server-2013-server-software-and-infrastructure-support.md)
 
-  - [<span data-ttu-id="171e4-112">Requisiti e supporto per i server aggiuntivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="171e4-112">Additional server support and requirements in Lync Server 2013</span></span>](lync-server-2013-additional-server-support-and-requirements.md)
+  - [<span data-ttu-id="da960-112">Requisiti e supporto per i server aggiuntivi in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="da960-112">Additional server support and requirements in Lync Server 2013</span></span>](lync-server-2013-additional-server-support-and-requirements.md)
 
-  - [<span data-ttu-id="171e4-113">Supporto dell'infrastruttura e del software client e del dispositivo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="171e4-113">Client and device software and infrastructure support in Lync Server 2013</span></span>](lync-server-2013-client-and-device-software-and-infrastructure-support.md)
+  - [<span data-ttu-id="da960-113">Supporto dell'infrastruttura e del software client e del dispositivo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="da960-113">Client and device software and infrastructure support in Lync Server 2013</span></span>](lync-server-2013-client-and-device-software-and-infrastructure-support.md)
 
 </div>
 
