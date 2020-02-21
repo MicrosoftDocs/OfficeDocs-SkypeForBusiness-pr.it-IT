@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6ccea644ba1f1221d412d73e6488e8610ca02857
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: a2b051efa327a014bc719753e7aecae81f78e0f4
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41834496"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160383"
 ---
 # <a name="faq--upgrading-from-skype-for-business-to-microsoft-teams"></a>Domande frequenti - Aggiornamento da Skype for Business a Microsoft Teams
 
@@ -82,7 +82,7 @@ A supporto dei clienti di piccole dimensioni, che potrebbero non avere risorse I
 
 ### <a name="how-does-the-skype-for-business-online-retirement-announcement-affect-organizations-with-hybrid-configurations-skype-for-business-online-and-skype-for-business-server"></a>In che modo l'annuncio del ritiro di Skype for Business Online riguarda le organizzazioni con configurazioni ibride (Skype for Business Online e Skype for Business Server)?
 
-I clienti che usano ambienti ibridi con configurazioni online e locali dovranno eseguire la transizione degli utenti da Skype for Business Online a Microsoft Teams entro la data di ritiro del 31 luglio 2021. I percorsi di aggiornamento per le configurazioni ibride, basati su principi di coesistenza e interoperabilità rimarranno dopo il ritiro di Skype for Business Online. 
+I clienti che usano ambienti ibridi con configurazioni online e locali dovranno eseguire la transizione degli utenti da Skype for Business Online a Microsoft Teams entro la data di ritiro del 31 luglio 2021. I percorsi di aggiornamento per le configurazioni ibride, basati su principi di coesistenza e interoperabilità rimarranno dopo il ritiro di Skype for Business Online. Per altre informazioni, vedere [Coesistenza con Skype for Business](coexistence-chat-calls-presence.md) e [Coesistenza e interoperabilità di Microsoft Teams e Skype for Business](teams-and-skypeforbusiness-coexistence-and-interoperability.md).
 
 I clienti con abbonamenti idonei sono invitati a usare [FastTrack](https://fasttrack.microsoft.com/) per assistenza nell'onboarding di Teams.
 

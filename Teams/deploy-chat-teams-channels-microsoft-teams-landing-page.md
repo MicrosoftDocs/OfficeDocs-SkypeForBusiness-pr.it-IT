@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.quickstartteamsadmin
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2acb9d1734bb04c4db522417064c3d99fd660d89
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.openlocfilehash: c7c89b4abe53621ae217ecb3874df9a51a43a7ac
+ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41863217"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "42160700"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -243,7 +243,7 @@ I professionisti IT che lavorano nel settore dell'istruzione possono usufruire d
 
 ### <a name="government---gcc-considerations"></a>Considerazioni su Government - GCC
 
-L'uso di Microsoft 365 for Government -GCC (Government Certificate of Competency) è appropriato per le esigenze dei professionisti IT che si occupano di distribuzioni di Office 365 in entità governative federali, statali, locali, comunali e territoriali degli Stati Uniti o altre entità che gestiscono dati soggetti a requisiti e normative.
+L'uso di Microsoft 365 for Government - GCC (Government Community Cloud) è appropriato per le esigenze dei professionisti IT che si occupano di distribuzioni di Office 365 in entità governative federali, statali, locali, comunali e territoriali degli Stati Uniti o altre entità che gestiscono dati soggetti a requisiti e normative.
 
 | Chiedersi | Azione |
 |--------------|--------|
