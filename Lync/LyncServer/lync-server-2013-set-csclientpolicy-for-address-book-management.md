@@ -12,20 +12,20 @@ ms:contentKeyID: 48185726
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b5f8bc13421e07f3127b1669752c96796e533efc
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 086f88ad26e53e9086c3b1ec027877451f459187
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42143462"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42200672"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="set-csclientpolicy-for-address-book-management-in-lync-server-2013"></a><span data-ttu-id="55a5f-102">Set-CsClientPolicy per la gestione della Rubrica in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="55a5f-102">Set-CsClientPolicy for Address Book management in Lync Server 2013</span></span>
+# <a name="set-csclientpolicy-for-address-book-management-in-lync-server-2013"></a><span data-ttu-id="9c635-102">Set-CsClientPolicy per la gestione della Rubrica in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="9c635-102">Set-CsClientPolicy for Address Book management in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,24 +35,24 @@ ms.locfileid: "42143462"
 
 <span> </span>
 
-<span data-ttu-id="55a5f-103">_**Ultimo argomento modificato:** 2012-11-01_</span><span class="sxs-lookup"><span data-stu-id="55a5f-103">_**Topic Last Modified:** 2012-11-01_</span></span>
+<span data-ttu-id="9c635-103">_**Ultimo argomento modificato:** 2012-11-01_</span><span class="sxs-lookup"><span data-stu-id="9c635-103">_**Topic Last Modified:** 2012-11-01_</span></span>
 
-<span data-ttu-id="55a5f-p101">Utenti autorizzati a eseguire questo cmdlet: per impostazione predefinita, i membri dei gruppi seguenti sono autorizzati a eseguire localmente il cmdlet Set-CsClientPolicy: RTCUniversalServerAdmins. Per restituire un elenco di tutti i ruoli di controllo di accesso basato sui ruoli a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli del controllo di accesso basato sui ruoli creati personalmente), al prompt di Windows PowerShell eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="55a5f-p101">Who can run this cmdlet: By default, members of the following groups are authorized to run the Set-CsClientPolicy cmdlet locally: RTCUniversalServerAdmins. To return a list of all the role-based access control (RBAC) roles this cmdlet has been assigned to (including any custom RBAC roles you have created yourself), run the following command from the Windows PowerShell prompt:</span></span>
+<span data-ttu-id="9c635-p101">Utenti autorizzati a eseguire questo cmdlet: per impostazione predefinita, i membri dei gruppi seguenti sono autorizzati a eseguire localmente il cmdlet Set-CsClientPolicy: RTCUniversalServerAdmins. Per restituire un elenco di tutti i ruoli di controllo di accesso basato sui ruoli a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli del controllo di accesso basato sui ruoli creati personalmente), al prompt di Windows PowerShell eseguire il comando seguente:</span><span class="sxs-lookup"><span data-stu-id="9c635-p101">Who can run this cmdlet: By default, members of the following groups are authorized to run the Set-CsClientPolicy cmdlet locally: RTCUniversalServerAdmins. To return a list of all the role-based access control (RBAC) roles this cmdlet has been assigned to (including any custom RBAC roles you have created yourself), run the following command from the Windows PowerShell prompt:</span></span>
 
     Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClientPolicy"}
 
-<span data-ttu-id="55a5f-106">In modo analogo a New-CsClientPolicy, il cmdlet Set-CsClientPolicy consente di modificare le impostazioni dei client già implementate.</span><span class="sxs-lookup"><span data-stu-id="55a5f-106">Similar to New-CsClientPolicy, the Set-CsClientPolicy cmdlet allows you to modify client settings that are already in place.</span></span>
+<span data-ttu-id="9c635-106">In modo analogo a New-CsClientPolicy, il cmdlet Set-CsClientPolicy consente di modificare le impostazioni dei client già implementate.</span><span class="sxs-lookup"><span data-stu-id="9c635-106">Similar to New-CsClientPolicy, the Set-CsClientPolicy cmdlet allows you to modify client settings that are already in place.</span></span>
 
-<span data-ttu-id="55a5f-107">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="55a5f-107">For example:</span></span>
+<span data-ttu-id="9c635-107">Ad esempio:</span><span class="sxs-lookup"><span data-stu-id="9c635-107">For example:</span></span>
 
     Set-CsClientPolicy -Identity RedmondClientPolicy -WebServicePollInterval "00:15:00" -AddressBookAvailability "WebSearchAndFileDownload"
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="55a5f-108">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="55a5f-108">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="9c635-108">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="9c635-108">See Also</span></span>
 
 
-[<span data-ttu-id="55a5f-109">Set-CsClientPolicy</span><span class="sxs-lookup"><span data-stu-id="55a5f-109">Set-CsClientPolicy</span></span>](https://docs.microsoft.com/powershell/module/skype/Set-CsClientPolicy)  
+[<span data-ttu-id="9c635-109">Set-CsClientPolicy</span><span class="sxs-lookup"><span data-stu-id="9c635-109">Set-CsClientPolicy</span></span>](https://docs.microsoft.com/powershell/module/skype/Set-CsClientPolicy)  
   
 
 </div>
