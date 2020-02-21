@@ -19,18 +19,18 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5f58815ad2f722b0409b22e05a71adc65a8772e1
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 756ff8d15ec58426b73504fcb240068151eabcd7
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42045018"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42205411"
 ---
 <div id="main" class="v2">
     <div class="container">
         <h1>Workshop di pianificazione dell'aggiornamento a Teams</h1>
            <p>Vogliamo fornire ai nostri clienti importanti di Skype for Business tutto il necessario nel percorso di aggiornamento a Teams. È disponibile una serie di workshop interattivi sulla pianificazione dell'aggiornamento in cui forniremo indicazioni, condivideremo procedure consigliate e risorse progettate per aiutare gli utenti a pianificare e implementare l'aggiornamento a Teams. Per un'esperienza ottimale, iniziare con la sessione<strong>Pianificare l'aggiornamento</strong> qui sotto.
-            <p>Nuovo utente Teams? Altre informazioni sono disponibili <a href="http://docs.microsoft.com/microsoftteams/teams-overview">qui</a>.
+            <p>Nuovo utente Teams? Altre informazioni sono disponibili <a href="https://docs.microsoft.com/microsoftteams/teams-overview">qui</a>.
         <ul class="pivots">
             <li>
                 <a href="#home" data-linktype="self-bookmark"></a>

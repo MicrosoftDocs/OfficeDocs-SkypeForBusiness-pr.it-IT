@@ -12,20 +12,20 @@ ms:contentKeyID: 48184176
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f96e8f035dbc0005bb331a188a308f456992f091
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: ccd525e6c1690d2c1b1dd26bcae2aa447d8b9a02
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42138532"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42205434"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="clientversions-table-in-lync-server-2013"></a><span data-ttu-id="c23fa-102">Tabella ClientVersions in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="c23fa-102">ClientVersions table in Lync Server 2013</span></span>
+# <a name="clientversions-table-in-lync-server-2013"></a><span data-ttu-id="45d28-102">Tabella ClientVersions in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="45d28-102">ClientVersions table in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,9 +35,9 @@ ms.locfileid: "42138532"
 
 <span> </span>
 
-<span data-ttu-id="c23fa-103">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="c23fa-103">_**Topic Last Modified:** 2012-09-28_</span></span>
+<span data-ttu-id="45d28-103">_**Ultimo argomento modificato:** 2012-09-28_</span><span class="sxs-lookup"><span data-stu-id="45d28-103">_**Topic Last Modified:** 2012-09-28_</span></span>
 
-<span data-ttu-id="c23fa-p101">La tabella ClientVersions è una tabella di supporto in cui è archiviato un elenco dei diversi tipi di client e delle versioni che hanno partecipato alle sessioni registrate nel database. Ogni record della tabella rappresenta una versione client.</span><span class="sxs-lookup"><span data-stu-id="c23fa-p101">The ClientVersions table is a supporting table that stores a list of the various client types and versions that have participated in sessions recorded in the database. Each record in the table represents one client version.</span></span>
+<span data-ttu-id="45d28-p101">La tabella ClientVersions è una tabella di supporto in cui è archiviato un elenco dei diversi tipi di client e delle versioni che hanno partecipato alle sessioni registrate nel database. Ogni record della tabella rappresenta una versione client.</span><span class="sxs-lookup"><span data-stu-id="45d28-p101">The ClientVersions table is a supporting table that stores a list of the various client types and versions that have participated in sessions recorded in the database. Each record in the table represents one client version.</span></span>
 
 
 <table>
@@ -49,31 +49,31 @@ ms.locfileid: "42138532"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="c23fa-106">Colonna</span><span class="sxs-lookup"><span data-stu-id="c23fa-106">Column</span></span></th>
-<th><span data-ttu-id="c23fa-107">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="c23fa-107">Data Type</span></span></th>
-<th><span data-ttu-id="c23fa-108">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="c23fa-108">Key/Index</span></span></th>
-<th><span data-ttu-id="c23fa-109">Dettagli</span><span class="sxs-lookup"><span data-stu-id="c23fa-109">Details</span></span></th>
+<th><span data-ttu-id="45d28-106">Colonna</span><span class="sxs-lookup"><span data-stu-id="45d28-106">Column</span></span></th>
+<th><span data-ttu-id="45d28-107">Tipo di dati</span><span class="sxs-lookup"><span data-stu-id="45d28-107">Data Type</span></span></th>
+<th><span data-ttu-id="45d28-108">Chiave/indice</span><span class="sxs-lookup"><span data-stu-id="45d28-108">Key/Index</span></span></th>
+<th><span data-ttu-id="45d28-109">Dettagli</span><span class="sxs-lookup"><span data-stu-id="45d28-109">Details</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="c23fa-110"><strong>VersionId</strong></span><span class="sxs-lookup"><span data-stu-id="c23fa-110"><strong>VersionId</strong></span></span></p></td>
-<td><p><span data-ttu-id="c23fa-111"><strong>int</strong></span><span class="sxs-lookup"><span data-stu-id="c23fa-111"><strong>int</strong></span></span></p></td>
-<td><p><span data-ttu-id="c23fa-112">Principale</span><span class="sxs-lookup"><span data-stu-id="c23fa-112">Primary</span></span></p></td>
-<td><p><span data-ttu-id="c23fa-113">Numero univoco che identifica il tipo di client e la versione.</span><span class="sxs-lookup"><span data-stu-id="c23fa-113">Unique number identifying this client type and version.</span></span></p></td>
+<td><p><span data-ttu-id="45d28-110"><strong>VersionId</strong></span><span class="sxs-lookup"><span data-stu-id="45d28-110"><strong>VersionId</strong></span></span></p></td>
+<td><p><span data-ttu-id="45d28-111"><strong>int</strong></span><span class="sxs-lookup"><span data-stu-id="45d28-111"><strong>int</strong></span></span></p></td>
+<td><p><span data-ttu-id="45d28-112">Principale</span><span class="sxs-lookup"><span data-stu-id="45d28-112">Primary</span></span></p></td>
+<td><p><span data-ttu-id="45d28-113">Numero univoco che identifica il tipo di client e la versione.</span><span class="sxs-lookup"><span data-stu-id="45d28-113">Unique number identifying this client type and version.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="c23fa-114"><strong>Versione</strong></span><span class="sxs-lookup"><span data-stu-id="c23fa-114"><strong>Version</strong></span></span></p></td>
-<td><p><span data-ttu-id="c23fa-115"><strong>nvarchar (256)</strong></span><span class="sxs-lookup"><span data-stu-id="c23fa-115"><strong>nvarchar(256)</strong></span></span></p></td>
+<td><p><span data-ttu-id="45d28-114"><strong>Versione</strong></span><span class="sxs-lookup"><span data-stu-id="45d28-114"><strong>Version</strong></span></span></p></td>
+<td><p><span data-ttu-id="45d28-115"><strong>nvarchar (256)</strong></span><span class="sxs-lookup"><span data-stu-id="45d28-115"><strong>nvarchar(256)</strong></span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="c23fa-116">Nome della versione.</span><span class="sxs-lookup"><span data-stu-id="c23fa-116">Version name.</span></span></p></td>
+<td><p><span data-ttu-id="45d28-116">Nome della versione.</span><span class="sxs-lookup"><span data-stu-id="45d28-116">Version name.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="c23fa-117"><strong>ClientType</strong></span><span class="sxs-lookup"><span data-stu-id="c23fa-117"><strong>ClientType</strong></span></span></p></td>
-<td><p><span data-ttu-id="c23fa-118">int</span><span class="sxs-lookup"><span data-stu-id="c23fa-118">int</span></span></p></td>
+<td><p><span data-ttu-id="45d28-117"><strong>ClientType</strong></span><span class="sxs-lookup"><span data-stu-id="45d28-117"><strong>ClientType</strong></span></span></p></td>
+<td><p><span data-ttu-id="45d28-118">int</span><span class="sxs-lookup"><span data-stu-id="45d28-118">int</span></span></p></td>
 <td></td>
-<td><p><span data-ttu-id="c23fa-119">Specifica il tipo di client usato nella sessione.</span><span class="sxs-lookup"><span data-stu-id="c23fa-119">Specifies the type of client used in the session.</span></span> <span data-ttu-id="c23fa-120">Per ulteriori informazioni, vedere la <a href="lync-server-2013-useragentdef-table.md">Tabella UserAgentDef in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="c23fa-120">See the <a href="lync-server-2013-useragentdef-table.md">UserAgentDef table in Lync Server 2013</a> for more information.</span></span></p>
-<p><span data-ttu-id="c23fa-121">Questo campo è stato introdotto in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="c23fa-121">This field was introduced in Microsoft Lync Server 2013.</span></span></p></td>
+<td><p><span data-ttu-id="45d28-119">Specifica il tipo di client usato nella sessione.</span><span class="sxs-lookup"><span data-stu-id="45d28-119">Specifies the type of client used in the session.</span></span> <span data-ttu-id="45d28-120">Per ulteriori informazioni, vedere la <a href="lync-server-2013-useragentdef-table.md">Tabella UserAgentDef in Lync Server 2013</a> .</span><span class="sxs-lookup"><span data-stu-id="45d28-120">See the <a href="lync-server-2013-useragentdef-table.md">UserAgentDef table in Lync Server 2013</a> for more information.</span></span></p>
+<p><span data-ttu-id="45d28-121">Questo campo è stato introdotto in Microsoft Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="45d28-121">This field was introduced in Microsoft Lync Server 2013.</span></span></p></td>
 </tr>
 </tbody>
 </table>

@@ -12,20 +12,20 @@ ms:contentKeyID: 49733815
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b94b3614dcf2b09ab96b2deede70554f1d3e6f50
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: ad0f1c88e7c0a1ec855a69ad75f834f0a8982221
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42146169"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42206723"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deleting-existing-network-regions-in-lync-server-2013"></a><span data-ttu-id="6ef52-102">Eliminazione di aree di rete esistenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="6ef52-102">Deleting existing network regions in Lync Server 2013</span></span>
+# <a name="deleting-existing-network-regions-in-lync-server-2013"></a><span data-ttu-id="0f482-102">Eliminazione di aree di rete esistenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0f482-102">Deleting existing network regions in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,40 +35,40 @@ ms.locfileid: "42146169"
 
 <span> </span>
 
-<span data-ttu-id="6ef52-103">_**Ultimo argomento modificato:** 2013-02-21_</span><span class="sxs-lookup"><span data-stu-id="6ef52-103">_**Topic Last Modified:** 2013-02-21_</span></span>
+<span data-ttu-id="0f482-103">_**Ultimo argomento modificato:** 2013-02-21_</span><span class="sxs-lookup"><span data-stu-id="0f482-103">_**Topic Last Modified:** 2013-02-21_</span></span>
 
-<span data-ttu-id="6ef52-104">Un'area di rete interconnette diverse parti di una rete dislocate su più aree geografiche.</span><span class="sxs-lookup"><span data-stu-id="6ef52-104">A network region interconnects various parts of a network across multiple geographic areas.</span></span> <span data-ttu-id="6ef52-105">Ogni area di rete deve essere associata a un sito centrale.</span><span class="sxs-lookup"><span data-stu-id="6ef52-105">Every network region must be associated with a central site.</span></span> <span data-ttu-id="6ef52-106">Il sito centrale è il sito del data center in cui è in esecuzione il servizio dei criteri di larghezza di banda del controllo di ammissione di chiamata.</span><span class="sxs-lookup"><span data-stu-id="6ef52-106">The central site is the data center site on which the call admission control (CAC) bandwidth policy service is running.</span></span> <span data-ttu-id="6ef52-107">È possibile utilizzare il pannello di controllo di Lync Server per configurare le aree di rete.</span><span class="sxs-lookup"><span data-stu-id="6ef52-107">You can use Lync Server Control Panel to configure network regions.</span></span> <span data-ttu-id="6ef52-108">Queste includono impostazioni che determinano se consentire percorsi alternativi Internet per le connessioni audio e video.</span><span class="sxs-lookup"><span data-stu-id="6ef52-108">Network regions include settings that determine whether alternate paths through the Internet are allowed for audio and video connections.</span></span> <span data-ttu-id="6ef52-109">Dal pannello di controllo di Lync Server, è possibile creare, modificare o eliminare un'area di rete.</span><span class="sxs-lookup"><span data-stu-id="6ef52-109">From the Lync Server Control Panel, you can create, modify, or delete a network region.</span></span> <span data-ttu-id="6ef52-110">Utilizzare questo argomento per eliminare le aree di rete esistenti.</span><span class="sxs-lookup"><span data-stu-id="6ef52-110">Use this topic to delete existing network regions.</span></span> <span data-ttu-id="6ef52-111">Per informazioni dettagliate sulla creazione o la modifica delle aree di rete esistenti, vedere [creazione o modifica di aree di rete in Lync Server 2013](lync-server-2013-creating-or-modifying-network-regions.md).</span><span class="sxs-lookup"><span data-stu-id="6ef52-111">For details about creating or modifying existing network regions, see [Creating or modifying network regions in Lync Server 2013](lync-server-2013-creating-or-modifying-network-regions.md).</span></span>
+<span data-ttu-id="0f482-104">Un'area di rete interconnette diverse parti di una rete dislocate su più aree geografiche.</span><span class="sxs-lookup"><span data-stu-id="0f482-104">A network region interconnects various parts of a network across multiple geographic areas.</span></span> <span data-ttu-id="0f482-105">Ogni area di rete deve essere associata a un sito centrale.</span><span class="sxs-lookup"><span data-stu-id="0f482-105">Every network region must be associated with a central site.</span></span> <span data-ttu-id="0f482-106">Il sito centrale è il sito del data center in cui è in esecuzione il servizio dei criteri di larghezza di banda del controllo di ammissione di chiamata.</span><span class="sxs-lookup"><span data-stu-id="0f482-106">The central site is the data center site on which the call admission control (CAC) bandwidth policy service is running.</span></span> <span data-ttu-id="0f482-107">È possibile utilizzare il pannello di controllo di Lync Server per configurare le aree di rete.</span><span class="sxs-lookup"><span data-stu-id="0f482-107">You can use Lync Server Control Panel to configure network regions.</span></span> <span data-ttu-id="0f482-108">Queste includono impostazioni che determinano se consentire percorsi alternativi Internet per le connessioni audio e video.</span><span class="sxs-lookup"><span data-stu-id="0f482-108">Network regions include settings that determine whether alternate paths through the Internet are allowed for audio and video connections.</span></span> <span data-ttu-id="0f482-109">Dal pannello di controllo di Lync Server, è possibile creare, modificare o eliminare un'area di rete.</span><span class="sxs-lookup"><span data-stu-id="0f482-109">From the Lync Server Control Panel, you can create, modify, or delete a network region.</span></span> <span data-ttu-id="0f482-110">Utilizzare questo argomento per eliminare le aree di rete esistenti.</span><span class="sxs-lookup"><span data-stu-id="0f482-110">Use this topic to delete existing network regions.</span></span> <span data-ttu-id="0f482-111">Per informazioni dettagliate sulla creazione o la modifica delle aree di rete esistenti, vedere [creazione o modifica di aree di rete in Lync Server 2013](lync-server-2013-creating-or-modifying-network-regions.md).</span><span class="sxs-lookup"><span data-stu-id="0f482-111">For details about creating or modifying existing network regions, see [Creating or modifying network regions in Lync Server 2013](lync-server-2013-creating-or-modifying-network-regions.md).</span></span>
 
 <div>
 
-## <a name="to-delete-a-network-region"></a><span data-ttu-id="6ef52-112">Per eliminare un'area di rete</span><span class="sxs-lookup"><span data-stu-id="6ef52-112">To delete a network region</span></span>
+## <a name="to-delete-a-network-region"></a><span data-ttu-id="0f482-112">Per eliminare un'area di rete</span><span class="sxs-lookup"><span data-stu-id="0f482-112">To delete a network region</span></span>
 
-1.  <span data-ttu-id="6ef52-113">Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="6ef52-113">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or is assigned to the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+1.  <span data-ttu-id="0f482-113">Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="0f482-113">From a user account that is a member of the RTCUniversalServerAdmins group (or has equivalent user rights), or is assigned to the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
 
-2.  <span data-ttu-id="6ef52-114">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="6ef52-114">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="6ef52-115">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="6ef52-115">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="0f482-114">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="0f482-114">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="0f482-115">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="0f482-115">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="6ef52-116">Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Area**.</span><span class="sxs-lookup"><span data-stu-id="6ef52-116">In the left navigation bar, click **Network Configuration** and then click **Region**.</span></span>
+3.  <span data-ttu-id="0f482-116">Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Area**.</span><span class="sxs-lookup"><span data-stu-id="0f482-116">In the left navigation bar, click **Network Configuration** and then click **Region**.</span></span>
 
-4.  <span data-ttu-id="6ef52-117">Nella pagina **Area** fare clic sull'area che si desidera eliminare.</span><span class="sxs-lookup"><span data-stu-id="6ef52-117">On the **Region** page, click the region you want to delete.</span></span>
+4.  <span data-ttu-id="0f482-117">Nella pagina **Area** fare clic sull'area che si desidera eliminare.</span><span class="sxs-lookup"><span data-stu-id="0f482-117">On the **Region** page, click the region you want to delete.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="6ef52-p103">È possibile eliminare più aree contemporaneamente. A tale scopo, premere CTRL e selezionare più aree tenendo premuto CTRL. Per selezionare tutte le aree, scegliere <STRONG>Seleziona tutto</STRONG> dal menu <STRONG>Modifica</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="6ef52-p103">You can delete more than one region at a time. To do this, press CTRL and select multiple regions while holding down the CTRL key. Or, to select all regions, click <STRONG>Select all</STRONG> on the <STRONG>Edit</STRONG> menu.</span></span>
+    > <span data-ttu-id="0f482-p103">È possibile eliminare più aree contemporaneamente. A tale scopo, premere CTRL e selezionare più aree tenendo premuto CTRL. Per selezionare tutte le aree, scegliere <STRONG>Seleziona tutto</STRONG> dal menu <STRONG>Modifica</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="0f482-p103">You can delete more than one region at a time. To do this, press CTRL and select multiple regions while holding down the CTRL key. Or, to select all regions, click <STRONG>Select all</STRONG> on the <STRONG>Edit</STRONG> menu.</span></span>
 
     
     </div>
 
-5.  <span data-ttu-id="6ef52-121">Scegliere **Elimina** dal menu **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="6ef52-121">On the **Edit** menu, click **Delete**.</span></span>
+5.  <span data-ttu-id="0f482-121">Scegliere **Elimina** dal menu **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="0f482-121">On the **Edit** menu, click **Delete**.</span></span>
 
-6.  <span data-ttu-id="6ef52-122">Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="6ef52-122">Click **OK**.</span></span>
+6.  <span data-ttu-id="0f482-122">Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="0f482-122">Click **OK**.</span></span>
     
     <div>
     
 
     > [!WARNING]  
-    > <span data-ttu-id="6ef52-p104">Non è possibile rimuovere un'area di rete se è associata a un sito di rete. Se si tenta di rimuovere un'area associata a un sito, verrà visualizzato un messaggio di errore. Per scoprire se un'area è associata a siti, selezionare l'area e quindi scegliere <STRONG>Mostra dettagli</STRONG> dal menu <STRONG>Modifica</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="6ef52-p104">A network region cannot be removed if it is associated with a network site. If you attempt to remove a region associated with a site you will receive an error message. To see if a region is associated with any sites, select the region and then click <STRONG>Show details</STRONG> on the <STRONG>Edit</STRONG> menu.</span></span>
+    > <span data-ttu-id="0f482-p104">Non è possibile rimuovere un'area di rete se è associata a un sito di rete. Se si tenta di rimuovere un'area associata a un sito, verrà visualizzato un messaggio di errore. Per scoprire se un'area è associata a siti, selezionare l'area e quindi scegliere <STRONG>Mostra dettagli</STRONG> dal menu <STRONG>Modifica</STRONG>.</span><span class="sxs-lookup"><span data-stu-id="0f482-p104">A network region cannot be removed if it is associated with a network site. If you attempt to remove a region associated with a site you will receive an error message. To see if a region is associated with any sites, select the region and then click <STRONG>Show details</STRONG> on the <STRONG>Edit</STRONG> menu.</span></span>
 
     
     </div>
@@ -77,10 +77,10 @@ ms.locfileid: "42146169"
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="6ef52-126">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="6ef52-126">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="0f482-126">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="0f482-126">See Also</span></span>
 
 
-[<span data-ttu-id="6ef52-127">Creazione o modifica di aree di rete in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="6ef52-127">Creating or modifying network regions in Lync Server 2013</span></span>](lync-server-2013-creating-or-modifying-network-regions.md)  
+[<span data-ttu-id="0f482-127">Creazione o modifica di aree di rete in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0f482-127">Creating or modifying network regions in Lync Server 2013</span></span>](lync-server-2013-creating-or-modifying-network-regions.md)  
   
 
 </div>

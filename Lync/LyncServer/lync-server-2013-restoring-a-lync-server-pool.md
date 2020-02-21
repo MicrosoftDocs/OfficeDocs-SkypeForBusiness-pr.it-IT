@@ -12,20 +12,20 @@ ms:contentKeyID: 51541488
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6f9bc8e86b4dcdbd74d9fd9eed11de9c3735520e
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 294b276dbfe12af7b6b2fbd1bca285920431ce9c
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42144753"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42208732"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="restoring-a-lync-server-pool-in-lync-server-2013"></a><span data-ttu-id="4e701-102">Ripristino di un pool di Lync Server in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4e701-102">Restoring a Lync Server pool in Lync Server 2013</span></span>
+# <a name="restoring-a-lync-server-pool-in-lync-server-2013"></a><span data-ttu-id="299c7-102">Ripristino di un pool di Lync Server in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="299c7-102">Restoring a Lync Server pool in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,23 +35,23 @@ ms.locfileid: "42144753"
 
 <span> </span>
 
-<span data-ttu-id="4e701-103">_**Ultimo argomento modificato:** 2013-02-18_</span><span class="sxs-lookup"><span data-stu-id="4e701-103">_**Topic Last Modified:** 2013-02-18_</span></span>
+<span data-ttu-id="299c7-103">_**Ultimo argomento modificato:** 2013-02-18_</span><span class="sxs-lookup"><span data-stu-id="299c7-103">_**Topic Last Modified:** 2013-02-18_</span></span>
 
-<span data-ttu-id="4e701-104">La distribuzione di Lync Server può includere uno dei tipi di pool seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e701-104">Your Lync Server deployment may include any of the following types of pools:</span></span>
+<span data-ttu-id="299c7-104">La distribuzione di Lync Server può includere uno dei tipi di pool seguenti:</span><span class="sxs-lookup"><span data-stu-id="299c7-104">Your Lync Server deployment may include any of the following types of pools:</span></span>
 
-  - <span data-ttu-id="4e701-105">Front End Server</span><span class="sxs-lookup"><span data-stu-id="4e701-105">Front End Server</span></span>
+  - <span data-ttu-id="299c7-105">Front End Server</span><span class="sxs-lookup"><span data-stu-id="299c7-105">Front End Server</span></span>
 
-  - <span data-ttu-id="4e701-106">Mediation Server</span><span class="sxs-lookup"><span data-stu-id="4e701-106">Mediation Server</span></span>
+  - <span data-ttu-id="299c7-106">Mediation Server</span><span class="sxs-lookup"><span data-stu-id="299c7-106">Mediation Server</span></span>
 
-  - <span data-ttu-id="4e701-107">server Persistent Chat</span><span class="sxs-lookup"><span data-stu-id="4e701-107">Persistent Chat Server</span></span>
+  - <span data-ttu-id="299c7-107">server Persistent Chat</span><span class="sxs-lookup"><span data-stu-id="299c7-107">Persistent Chat Server</span></span>
 
-  - <span data-ttu-id="4e701-108">Edge Server</span><span class="sxs-lookup"><span data-stu-id="4e701-108">Edge Server</span></span>
+  - <span data-ttu-id="299c7-108">Edge Server</span><span class="sxs-lookup"><span data-stu-id="299c7-108">Edge Server</span></span>
 
-<span data-ttu-id="4e701-109">Se un intero pool avverte un'interruzione, seguire queste procedure per ogni server membro del pool.</span><span class="sxs-lookup"><span data-stu-id="4e701-109">If an entire pool experiences an outage, follow these procedures for each member server in the pool.</span></span>
+<span data-ttu-id="299c7-109">Se un intero pool avverte un'interruzione, seguire queste procedure per ogni server membro del pool.</span><span class="sxs-lookup"><span data-stu-id="299c7-109">If an entire pool experiences an outage, follow these procedures for each member server in the pool.</span></span>
 
-  - <span data-ttu-id="4e701-110">Per un pool Front End, ripristinare innanzitutto il server back-end e quindi ripristinare ogni Front End Server.</span><span class="sxs-lookup"><span data-stu-id="4e701-110">For a Front End pool, restore the Back End Server first, and then restore each Front End Server.</span></span> <span data-ttu-id="4e701-111">Per ulteriori informazioni, vedere [ripristino di un server back-end Enterprise Edition in Lync server 2013](lync-server-2013-restoring-an-enterprise-edition-back-end-server.md) e [ripristino di un server membro Enterprise Edition in Lync Server 2013](lync-server-2013-restoring-an-enterprise-edition-member-server.md).</span><span class="sxs-lookup"><span data-stu-id="4e701-111">For details, see [Restoring an Enterprise Edition Back End Server in Lync Server 2013](lync-server-2013-restoring-an-enterprise-edition-back-end-server.md) and [Restoring an Enterprise Edition member server in Lync Server 2013](lync-server-2013-restoring-an-enterprise-edition-member-server.md).</span></span>
+  - <span data-ttu-id="299c7-110">Per un pool Front End, ripristinare innanzitutto il server back-end e quindi ripristinare ogni Front End Server.</span><span class="sxs-lookup"><span data-stu-id="299c7-110">For a Front End pool, restore the Back End Server first, and then restore each Front End Server.</span></span> <span data-ttu-id="299c7-111">Per ulteriori informazioni, vedere [ripristino di un server back-end Enterprise Edition in Lync server 2013](lync-server-2013-restoring-an-enterprise-edition-back-end-server.md) e [ripristino di un server membro Enterprise Edition in Lync Server 2013](lync-server-2013-restoring-an-enterprise-edition-member-server.md).</span><span class="sxs-lookup"><span data-stu-id="299c7-111">For details, see [Restoring an Enterprise Edition Back End Server in Lync Server 2013](lync-server-2013-restoring-an-enterprise-edition-back-end-server.md) and [Restoring an Enterprise Edition member server in Lync Server 2013](lync-server-2013-restoring-an-enterprise-edition-member-server.md).</span></span>
 
-  - <span data-ttu-id="4e701-112">Per tutti gli altri tipi di pool, ripristinare ogni server membro.</span><span class="sxs-lookup"><span data-stu-id="4e701-112">For all other types of pools, restore each member server.</span></span> <span data-ttu-id="4e701-113">Per informazioni dettagliate, vedere [Restoring an Enterprise Edition member server in Lync server 2013](lync-server-2013-restoring-an-enterprise-edition-member-server.md).</span><span class="sxs-lookup"><span data-stu-id="4e701-113">For details, see [Restoring an Enterprise Edition member server in Lync Server 2013](lync-server-2013-restoring-an-enterprise-edition-member-server.md).</span></span>
+  - <span data-ttu-id="299c7-112">Per tutti gli altri tipi di pool, ripristinare ogni server membro.</span><span class="sxs-lookup"><span data-stu-id="299c7-112">For all other types of pools, restore each member server.</span></span> <span data-ttu-id="299c7-113">Per informazioni dettagliate, vedere [Restoring an Enterprise Edition member server in Lync server 2013](lync-server-2013-restoring-an-enterprise-edition-member-server.md).</span><span class="sxs-lookup"><span data-stu-id="299c7-113">For details, see [Restoring an Enterprise Edition member server in Lync Server 2013](lync-server-2013-restoring-an-enterprise-edition-member-server.md).</span></span>
 
 </div>
 

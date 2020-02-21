@@ -12,20 +12,20 @@ ms:contentKeyID: 50873756
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a941908c30a338c12f6c0a7731ade2f1e411dc38
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: e95abe52883bff2c99ad02b01ea4cc1473f4626f
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42146239"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42205502"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="create-or-modify-a-new-client-version-policy-in-lync-server-2013"></a><span data-ttu-id="01aa0-102">Creare o modificare un nuovo criterio di versione client in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="01aa0-102">Create or modify a new client version policy in Lync Server 2013</span></span>
+# <a name="create-or-modify-a-new-client-version-policy-in-lync-server-2013"></a><span data-ttu-id="262aa-102">Creare o modificare un nuovo criterio di versione client in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="262aa-102">Create or modify a new client version policy in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,50 +35,50 @@ ms.locfileid: "42146239"
 
 <span> </span>
 
-<span data-ttu-id="01aa0-103">_**Ultimo argomento modificato:** 2013-02-23_</span><span class="sxs-lookup"><span data-stu-id="01aa0-103">_**Topic Last Modified:** 2013-02-23_</span></span>
+<span data-ttu-id="262aa-103">_**Ultimo argomento modificato:** 2013-02-23_</span><span class="sxs-lookup"><span data-stu-id="262aa-103">_**Topic Last Modified:** 2013-02-23_</span></span>
 
-<span data-ttu-id="01aa0-104">È possibile utilizzare i criteri versione client per specificare le versioni dei client supportati nell'ambiente in uso.</span><span class="sxs-lookup"><span data-stu-id="01aa0-104">You can use client version policies to specify the versions of clients that are supported in your environment.</span></span> <span data-ttu-id="01aa0-105">L'utilizzo del controllo delle versioni client può contribuire a ridurre i costi associati al supporto di più versioni client.</span><span class="sxs-lookup"><span data-stu-id="01aa0-105">Using client versioning can help reduce the costs associated with supporting multiple client versions.</span></span> <span data-ttu-id="01aa0-106">È inoltre possibile migliorare l'esperienza complessiva degli utenti, perché quando le versioni precedenti e successive dei client interagiscono, le funzionalità disponibili possono essere limitate dalla versione precedente del client.</span><span class="sxs-lookup"><span data-stu-id="01aa0-106">It can also improve the overall user experience, because when earlier and later versions of clients interact, the available features can be limited by the earlier version of the client.</span></span> <span data-ttu-id="01aa0-107">È possibile creare o modificare i criteri di versione client dal pannello di controllo di Lync Server 2013 o Lync Server 2013 Management Shell.</span><span class="sxs-lookup"><span data-stu-id="01aa0-107">You can create or modify client version policies from Lync Server 2013 Control Panel or Lync Server 2013 Management Shell.</span></span>
+<span data-ttu-id="262aa-104">È possibile utilizzare i criteri versione client per specificare le versioni dei client supportati nell'ambiente in uso.</span><span class="sxs-lookup"><span data-stu-id="262aa-104">You can use client version policies to specify the versions of clients that are supported in your environment.</span></span> <span data-ttu-id="262aa-105">L'utilizzo del controllo delle versioni client può contribuire a ridurre i costi associati al supporto di più versioni client.</span><span class="sxs-lookup"><span data-stu-id="262aa-105">Using client versioning can help reduce the costs associated with supporting multiple client versions.</span></span> <span data-ttu-id="262aa-106">È inoltre possibile migliorare l'esperienza complessiva degli utenti, perché quando le versioni precedenti e successive dei client interagiscono, le funzionalità disponibili possono essere limitate dalla versione precedente del client.</span><span class="sxs-lookup"><span data-stu-id="262aa-106">It can also improve the overall user experience, because when earlier and later versions of clients interact, the available features can be limited by the earlier version of the client.</span></span> <span data-ttu-id="262aa-107">È possibile creare o modificare i criteri di versione client dal pannello di controllo di Lync Server 2013 o Lync Server 2013 Management Shell.</span><span class="sxs-lookup"><span data-stu-id="262aa-107">You can create or modify client version policies from Lync Server 2013 Control Panel or Lync Server 2013 Management Shell.</span></span>
 
 <div>
 
-## <a name="to-create-or-modify-client-version-policies-by-using-lync-server-control-panel"></a><span data-ttu-id="01aa0-108">Per creare o modificare i criteri di versione client utilizzando il pannello di controllo di Lync Server</span><span class="sxs-lookup"><span data-stu-id="01aa0-108">To create or modify client version policies by using Lync Server Control Panel</span></span>
+## <a name="to-create-or-modify-client-version-policies-by-using-lync-server-control-panel"></a><span data-ttu-id="262aa-108">Per creare o modificare i criteri di versione client utilizzando il pannello di controllo di Lync Server</span><span class="sxs-lookup"><span data-stu-id="262aa-108">To create or modify client version policies by using Lync Server Control Panel</span></span>
 
-1.  <span data-ttu-id="01aa0-109">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="01aa0-109">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
+1.  <span data-ttu-id="262aa-109">Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.</span><span class="sxs-lookup"><span data-stu-id="262aa-109">From a user account that is assigned to the CsUserAdministrator role or the CsAdministrator role, log on to any computer in your internal deployment.</span></span>
 
-2.  <span data-ttu-id="01aa0-110">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="01aa0-110">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="01aa0-111">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="01aa0-111">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
+2.  <span data-ttu-id="262aa-110">Aprire una finestra del browser e quindi immettere l'URL di amministrazione per aprire il Pannello di controllo di Lync Server.</span><span class="sxs-lookup"><span data-stu-id="262aa-110">Open a browser window, and then enter the Admin URL to open the Lync Server Control Panel.</span></span> <span data-ttu-id="262aa-111">Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il pannello di controllo di Lync Server, vedere [apertura degli strumenti di amministrazione di Lync server 2013](lync-server-2013-open-lync-server-administrative-tools.md).</span><span class="sxs-lookup"><span data-stu-id="262aa-111">For details about the different methods you can use to start Lync Server Control Panel, see [Open Lync Server 2013 administrative tools](lync-server-2013-open-lync-server-administrative-tools.md).</span></span>
 
-3.  <span data-ttu-id="01aa0-112">Sulla barra di spostamento sinistra fare clic su **client**.</span><span class="sxs-lookup"><span data-stu-id="01aa0-112">In the left navigation bar, click **Clients**.</span></span>
+3.  <span data-ttu-id="262aa-112">Sulla barra di spostamento sinistra fare clic su **client**.</span><span class="sxs-lookup"><span data-stu-id="262aa-112">In the left navigation bar, click **Clients**.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="01aa0-113">La scheda <STRONG>criteri versione client</STRONG> è selezionata per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="01aa0-113">The <STRONG>Client Version Policy</STRONG> tab is selected by default.</span></span>
+    > <span data-ttu-id="262aa-113">La scheda <STRONG>criteri versione client</STRONG> è selezionata per impostazione predefinita.</span><span class="sxs-lookup"><span data-stu-id="262aa-113">The <STRONG>Client Version Policy</STRONG> tab is selected by default.</span></span>
 
     
     </div>
 
-4.  <span data-ttu-id="01aa0-114">Nella pagina **criteri versione client** eseguire una delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="01aa0-114">On the **Client Version Policy** page, do one of the following:</span></span>
+4.  <span data-ttu-id="262aa-114">Nella pagina **criteri versione client** eseguire una delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="262aa-114">On the **Client Version Policy** page, do one of the following:</span></span>
     
-      - <span data-ttu-id="01aa0-115">Per creare un criterio di versione client, fare clic su **nuovo**, selezionare **criteri sito**, **Criteri pool**o **criteri utente**e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="01aa0-115">To create a client version policy, click **New**, select **Site policy**, **Pool policy**, or **User policy**, and then click **OK**.</span></span>
+      - <span data-ttu-id="262aa-115">Per creare un criterio di versione client, fare clic su **nuovo**, selezionare **criteri sito**, **Criteri pool**o **criteri utente**e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="262aa-115">To create a client version policy, click **New**, select **Site policy**, **Pool policy**, or **User policy**, and then click **OK**.</span></span>
     
-      - <span data-ttu-id="01aa0-116">Per modificare il criterio globale o un altro criterio di versione client esistente, selezionare il criterio, fare clic su **modifica**e quindi su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="01aa0-116">To modify the global policy or another existing client version policy, select the policy, click **Edit**, and then click **Show details**.</span></span>
+      - <span data-ttu-id="262aa-116">Per modificare il criterio globale o un altro criterio di versione client esistente, selezionare il criterio, fare clic su **modifica**e quindi su **Mostra dettagli**.</span><span class="sxs-lookup"><span data-stu-id="262aa-116">To modify the global policy or another existing client version policy, select the policy, click **Edit**, and then click **Show details**.</span></span>
 
-5.  <span data-ttu-id="01aa0-117">Nella pagina **modifica criteri versione client** creare o modificare regole come descritto in [creare o modificare una nuova regola di criteri di versione client in Lync Server 2013](lync-server-2013-create-or-modify-a-new-client-version-policy-rule.md).</span><span class="sxs-lookup"><span data-stu-id="01aa0-117">On the **Edit Client Version Policy** page, create or modify rules as described in [Create or modify a new client version policy rule in Lync Server 2013](lync-server-2013-create-or-modify-a-new-client-version-policy-rule.md).</span></span>
+5.  <span data-ttu-id="262aa-117">Nella pagina **modifica criteri versione client** creare o modificare regole come descritto in [creare o modificare una nuova regola di criteri di versione client in Lync Server 2013](lync-server-2013-create-or-modify-a-new-client-version-policy-rule.md).</span><span class="sxs-lookup"><span data-stu-id="262aa-117">On the **Edit Client Version Policy** page, create or modify rules as described in [Create or modify a new client version policy rule in Lync Server 2013](lync-server-2013-create-or-modify-a-new-client-version-policy-rule.md).</span></span>
 
 </div>
 
 <div>
 
-## <a name="creating-or-modifying-client-version-policies-by-using-windows-powershell-cmdlets"></a><span data-ttu-id="01aa0-118">Creazione o modifica di criteri di versione client tramite i cmdlet di Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="01aa0-118">Creating or Modifying Client Version Policies by Using Windows PowerShell Cmdlets</span></span>
+## <a name="creating-or-modifying-client-version-policies-by-using-windows-powershell-cmdlets"></a><span data-ttu-id="262aa-118">Creazione o modifica di criteri di versione client tramite i cmdlet di Windows PowerShell</span><span class="sxs-lookup"><span data-stu-id="262aa-118">Creating or Modifying Client Version Policies by Using Windows PowerShell Cmdlets</span></span>
 
-<span data-ttu-id="01aa0-119">È possibile creare criteri versione client utilizzando il cmdlet **New-CsClientVersionPolicy** e modificarli utilizzando il cmdlet **Set-CsClientVersionPolicy** .</span><span class="sxs-lookup"><span data-stu-id="01aa0-119">You can create client version policies by using the **New-CsClientVersionPolicy** cmdlet, and modify them by using the **Set-CsClientVersionPolicy** cmdlet.</span></span> <span data-ttu-id="01aa0-120">Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="01aa0-120">These cmdlets can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="01aa0-121">Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.</span><span class="sxs-lookup"><span data-stu-id="01aa0-121">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
+<span data-ttu-id="262aa-119">È possibile creare criteri versione client utilizzando il cmdlet **New-CsClientVersionPolicy** e modificarli utilizzando il cmdlet **Set-CsClientVersionPolicy** .</span><span class="sxs-lookup"><span data-stu-id="262aa-119">You can create client version policies by using the **New-CsClientVersionPolicy** cmdlet, and modify them by using the **Set-CsClientVersionPolicy** cmdlet.</span></span> <span data-ttu-id="262aa-120">Questi cmdlet possono essere eseguiti da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell.</span><span class="sxs-lookup"><span data-stu-id="262aa-120">These cmdlets can be run either from the Lync Server 2013 Management Shell or from a remote session of Windows PowerShell.</span></span> <span data-ttu-id="262aa-121">Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.</span><span class="sxs-lookup"><span data-stu-id="262aa-121">For details about using remote Windows PowerShell to connect to Lync Server, see the Lync Server Windows PowerShell blog article "Quick Start: Managing Microsoft Lync Server 2010 Using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876).</span></span>
 
 <div>
 
-## <a name="to-create-a-new-site-scoped-client-version-policy"></a><span data-ttu-id="01aa0-122">Per creare un nuovo criterio versione client con ambito sito</span><span class="sxs-lookup"><span data-stu-id="01aa0-122">To create a new site-scoped client version policy</span></span>
+## <a name="to-create-a-new-site-scoped-client-version-policy"></a><span data-ttu-id="262aa-122">Per creare un nuovo criterio versione client con ambito sito</span><span class="sxs-lookup"><span data-stu-id="262aa-122">To create a new site-scoped client version policy</span></span>
 
-  - <span data-ttu-id="01aa0-123">Il comando seguente consente di creare un nuovo criterio di versione client applicato al sito Redmond.</span><span class="sxs-lookup"><span data-stu-id="01aa0-123">The following command creates a new client version policy applied to the Redmond site.</span></span> <span data-ttu-id="01aa0-124">Poiché non sono specificati parametri aggiuntivi, il nuovo criterio utilizzerà le impostazioni predefinite della versione client.</span><span class="sxs-lookup"><span data-stu-id="01aa0-124">Because no additional parameters are specified, the new policy will use the default client version settings.</span></span>
+  - <span data-ttu-id="262aa-123">Il comando seguente consente di creare un nuovo criterio di versione client applicato al sito Redmond.</span><span class="sxs-lookup"><span data-stu-id="262aa-123">The following command creates a new client version policy applied to the Redmond site.</span></span> <span data-ttu-id="262aa-124">Poiché non sono specificati parametri aggiuntivi, il nuovo criterio utilizzerà le impostazioni predefinite della versione client.</span><span class="sxs-lookup"><span data-stu-id="262aa-124">Because no additional parameters are specified, the new policy will use the default client version settings.</span></span>
     
         New-CsClientVersionPolicy -Identity "site:Redmond"
 
@@ -86,15 +86,15 @@ ms.locfileid: "42146239"
 
 <div>
 
-## <a name="to-create-a-new-per-user-client-version-policy"></a><span data-ttu-id="01aa0-125">Per creare un nuovo criterio di versione client per utente</span><span class="sxs-lookup"><span data-stu-id="01aa0-125">To create a new per-user client version policy</span></span>
+## <a name="to-create-a-new-per-user-client-version-policy"></a><span data-ttu-id="262aa-125">Per creare un nuovo criterio di versione client per utente</span><span class="sxs-lookup"><span data-stu-id="262aa-125">To create a new per-user client version policy</span></span>
 
-  - <span data-ttu-id="01aa0-126">Per creare un criterio per utente, utilizzare un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="01aa0-126">To create a per-user policy, use a command similar to this:</span></span>
+  - <span data-ttu-id="262aa-126">Per creare un criterio per utente, utilizzare un comando simile al seguente:</span><span class="sxs-lookup"><span data-stu-id="262aa-126">To create a per-user policy, use a command similar to this:</span></span>
     
         New-CsClientVersionPolicy -Identity "RedmondClientVersionPolicy"
 
 </div>
 
-<span data-ttu-id="01aa0-127">Per informazioni dettagliate, vedere gli argomenti della Guida per il cmdlet [New-CsClientVersionPolicy](https://docs.microsoft.com/powershell/module/skype/New-CsClientVersionPolicy) e il cmdlet [Set-CsClientVersionPolicy](https://docs.microsoft.com/powershell/module/skype/Set-CsClientVersionPolicy) .</span><span class="sxs-lookup"><span data-stu-id="01aa0-127">For details, see the Help topics for the [New-CsClientVersionPolicy](https://docs.microsoft.com/powershell/module/skype/New-CsClientVersionPolicy) cmdlet and the [Set-CsClientVersionPolicy](https://docs.microsoft.com/powershell/module/skype/Set-CsClientVersionPolicy) cmdlet.</span></span>
+<span data-ttu-id="262aa-127">Per informazioni dettagliate, vedere gli argomenti della Guida per il cmdlet [New-CsClientVersionPolicy](https://docs.microsoft.com/powershell/module/skype/New-CsClientVersionPolicy) e il cmdlet [Set-CsClientVersionPolicy](https://docs.microsoft.com/powershell/module/skype/Set-CsClientVersionPolicy) .</span><span class="sxs-lookup"><span data-stu-id="262aa-127">For details, see the Help topics for the [New-CsClientVersionPolicy](https://docs.microsoft.com/powershell/module/skype/New-CsClientVersionPolicy) cmdlet and the [Set-CsClientVersionPolicy](https://docs.microsoft.com/powershell/module/skype/Set-CsClientVersionPolicy) cmdlet.</span></span>
 
 </div>
 

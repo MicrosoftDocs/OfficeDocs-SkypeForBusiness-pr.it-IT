@@ -12,20 +12,20 @@ ms:contentKeyID: 51541505
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bb001ef032a89d6225e493366c8df01333180d00
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: ef62fc903e70c0ff60cd86d124fbd092d9b394c1
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42151416"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42206402"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="configuring-group-call-pickup-in-lync-server-2013"></a><span data-ttu-id="64fa8-102">Configurazione del prelievo delle chiamate di gruppo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="64fa8-102">Configuring Group Call Pickup in Lync Server 2013</span></span>
+# <a name="configuring-group-call-pickup-in-lync-server-2013"></a><span data-ttu-id="0a918-102">Configurazione del prelievo delle chiamate di gruppo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0a918-102">Configuring Group Call Pickup in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,31 +35,31 @@ ms.locfileid: "42151416"
 
 <span> </span>
 
-<span data-ttu-id="64fa8-103">_**Ultimo argomento modificato:** 2013-02-01_</span><span class="sxs-lookup"><span data-stu-id="64fa8-103">_**Topic Last Modified:** 2013-02-01_</span></span>
+<span data-ttu-id="0a918-103">_**Ultimo argomento modificato:** 2013-02-01_</span><span class="sxs-lookup"><span data-stu-id="0a918-103">_**Topic Last Modified:** 2013-02-01_</span></span>
 
-<span data-ttu-id="64fa8-104">Aggiornamento cumulativo per Lync Server 2013: febbraio 2013 introduce il prelievo delle chiamate di gruppo come nuova funzionalità VoIP aziendale.</span><span class="sxs-lookup"><span data-stu-id="64fa8-104">Cumulative update for Lync Server 2013: February 2013 introduces Group Call Pickup as a new Enterprise Voice feature.</span></span> <span data-ttu-id="64fa8-105">Raccolta chiamata di gruppo consente agli utenti di raccogliere le chiamate che squillano per un altro utente componendo un numero di gruppo di prelievo di chiamata.</span><span class="sxs-lookup"><span data-stu-id="64fa8-105">Group Call Pickup lets users pick up calls that are ringing for another user by dialing a call pickup group number.</span></span>
+<span data-ttu-id="0a918-104">Aggiornamento cumulativo per Lync Server 2013: febbraio 2013 introduce il prelievo delle chiamate di gruppo come nuova funzionalità VoIP aziendale.</span><span class="sxs-lookup"><span data-stu-id="0a918-104">Cumulative update for Lync Server 2013: February 2013 introduces Group Call Pickup as a new Enterprise Voice feature.</span></span> <span data-ttu-id="0a918-105">Raccolta chiamata di gruppo consente agli utenti di raccogliere le chiamate che squillano per un altro utente componendo un numero di gruppo di prelievo di chiamata.</span><span class="sxs-lookup"><span data-stu-id="0a918-105">Group Call Pickup lets users pick up calls that are ringing for another user by dialing a call pickup group number.</span></span>
 
-<span data-ttu-id="64fa8-106">Quando si distribuisce VoIP aziendale, i componenti utilizzati dal prelievo di chiamata di gruppo vengono installati e abilitati automaticamente nel front end server o nel server Standard Edition.</span><span class="sxs-lookup"><span data-stu-id="64fa8-106">The components that Group Call Pickup uses are automatically installed and enabled on the Front End Server or Standard Edition server when you deploy Enterprise Voice.</span></span> <span data-ttu-id="64fa8-107">Tuttavia, è necessario configurare il prelievo delle chiamate di gruppo prima che sia disponibile per gli utenti.</span><span class="sxs-lookup"><span data-stu-id="64fa8-107">However, you must configure Group Call Pickup before it is available to users.</span></span>
+<span data-ttu-id="0a918-106">Quando si distribuisce VoIP aziendale, i componenti utilizzati dal prelievo di chiamata di gruppo vengono installati e abilitati automaticamente nel front end server o nel server Standard Edition.</span><span class="sxs-lookup"><span data-stu-id="0a918-106">The components that Group Call Pickup uses are automatically installed and enabled on the Front End Server or Standard Edition server when you deploy Enterprise Voice.</span></span> <span data-ttu-id="0a918-107">Tuttavia, è necessario configurare il prelievo delle chiamate di gruppo prima che sia disponibile per gli utenti.</span><span class="sxs-lookup"><span data-stu-id="0a918-107">However, you must configure Group Call Pickup before it is available to users.</span></span>
 
-<span data-ttu-id="64fa8-108">In questa sezione viene illustrata la configurazione del prelievo delle chiamate di gruppo.</span><span class="sxs-lookup"><span data-stu-id="64fa8-108">This section guides you through the configuration of Group Call Pickup.</span></span>
+<span data-ttu-id="0a918-108">In questa sezione viene illustrata la configurazione del prelievo delle chiamate di gruppo.</span><span class="sxs-lookup"><span data-stu-id="0a918-108">This section guides you through the configuration of Group Call Pickup.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="64fa8-109">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="64fa8-109">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="0a918-109">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="0a918-109">In This Section</span></span>
 
-[<span data-ttu-id="64fa8-110">Prerequisiti di configurazione del prelievo delle chiamate di gruppo e diritti utente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="64fa8-110">Group Call Pickup configuration prerequisites and user rights in Lync Server 2013</span></span>](lync-server-2013-group-call-pickup-configuration-prerequisites-and-user-rights.md)
+[<span data-ttu-id="0a918-110">Prerequisiti di configurazione del prelievo delle chiamate di gruppo e diritti utente in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0a918-110">Group Call Pickup configuration prerequisites and user rights in Lync Server 2013</span></span>](lync-server-2013-group-call-pickup-configuration-prerequisites-and-user-rights.md)
 
-[<span data-ttu-id="64fa8-111">Processo di distribuzione per il ritiro delle chiamate di gruppo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="64fa8-111">Deployment process for Group Call Pickup in Lync Server 2013</span></span>](lync-server-2013-deployment-process-for-group-call-pickup.md)
+[<span data-ttu-id="0a918-111">Processo di distribuzione per il ritiro delle chiamate di gruppo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0a918-111">Deployment process for Group Call Pickup in Lync Server 2013</span></span>](lync-server-2013-deployment-process-for-group-call-pickup.md)
 
-[<span data-ttu-id="64fa8-112">Distribuire lo strumento SEFAUtil in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="64fa8-112">Deploy the SEFAUtil tool in Lync Server 2013</span></span>](lync-server-2013-deploy-the-sefautil-tool.md)
+[<span data-ttu-id="0a918-112">Distribuire lo strumento SEFAUtil in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0a918-112">Deploy the SEFAUtil tool in Lync Server 2013</span></span>](lync-server-2013-deploy-the-sefautil-tool.md)
 
-[<span data-ttu-id="64fa8-113">Configurare i numeri del gruppo di prelievo delle chiamate in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="64fa8-113">Configure call pickup group numbers in Lync Server 2013</span></span>](lync-server-2013-configure-call-pickup-group-numbers.md)
+[<span data-ttu-id="0a918-113">Configurare i numeri del gruppo di prelievo delle chiamate in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0a918-113">Configure call pickup group numbers in Lync Server 2013</span></span>](lync-server-2013-configure-call-pickup-group-numbers.md)
 
-[<span data-ttu-id="64fa8-114">Abilitazione del prelievo delle chiamate di gruppo per gli utenti in Lync Server 2013 e assegnazione di un numero di gruppo</span><span class="sxs-lookup"><span data-stu-id="64fa8-114">Enable Group Call Pickup for users in Lync Server 2013 and assign a group number</span></span>](lync-server-2013-enable-group-call-pickup-for-users-and-assign-a-group-number.md)
+[<span data-ttu-id="0a918-114">Abilitazione del prelievo delle chiamate di gruppo per gli utenti in Lync Server 2013 e assegnazione di un numero di gruppo</span><span class="sxs-lookup"><span data-stu-id="0a918-114">Enable Group Call Pickup for users in Lync Server 2013 and assign a group number</span></span>](lync-server-2013-enable-group-call-pickup-for-users-and-assign-a-group-number.md)
 
-[<span data-ttu-id="64fa8-115">Comunicare le assegnazioni di prelievo delle chiamate di gruppo agli utenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="64fa8-115">Communicate Group Call Pickup assignments to users in Lync Server 2013</span></span>](lync-server-2013-communicate-group-call-pickup-assignment-to-users.md)
+[<span data-ttu-id="0a918-115">Comunicare le assegnazioni di prelievo delle chiamate di gruppo agli utenti in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0a918-115">Communicate Group Call Pickup assignments to users in Lync Server 2013</span></span>](lync-server-2013-communicate-group-call-pickup-assignment-to-users.md)
 
-[<span data-ttu-id="64fa8-116">Optional Verificare la distribuzione del prelievo delle chiamate di gruppo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="64fa8-116">(Optional) Verify the Group Call Pickup deployment in Lync Server 2013</span></span>](lync-server-2013-optional-verify-the-group-call-pickup-deployment.md)
+[<span data-ttu-id="0a918-116">Optional Verificare la distribuzione del prelievo delle chiamate di gruppo in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="0a918-116">(Optional) Verify the Group Call Pickup deployment in Lync Server 2013</span></span>](lync-server-2013-optional-verify-the-group-call-pickup-deployment.md)
 
 </div>
 
