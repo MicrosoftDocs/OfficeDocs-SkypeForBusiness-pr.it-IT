@@ -12,20 +12,20 @@ ms:contentKeyID: 48183618
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 93113f3167cf16733f5c7ab51247dcb57f1a118c
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 0cb548ad27e61284f5bc5f3fff1718faa20ef0e1
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42136453"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42213152"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="conference-activity-report-in-lync-server-2013"></a><span data-ttu-id="37066-102">Report attività conferenze in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="37066-102">Conference Activity Report in Lync Server 2013</span></span>
+# <a name="conference-activity-report-in-lync-server-2013"></a><span data-ttu-id="4ad97-102">Report attività conferenze in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="4ad97-102">Conference Activity Report in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,45 +35,45 @@ ms.locfileid: "42136453"
 
 <span> </span>
 
-<span data-ttu-id="37066-103">_**Ultimo argomento modificato:** 2012-10-22_</span><span class="sxs-lookup"><span data-stu-id="37066-103">_**Topic Last Modified:** 2012-10-22_</span></span>
+<span data-ttu-id="4ad97-103">_**Ultimo argomento modificato:** 2012-10-22_</span><span class="sxs-lookup"><span data-stu-id="4ad97-103">_**Topic Last Modified:** 2012-10-22_</span></span>
 
-<span data-ttu-id="37066-104">Con il Rapporto attività conferenza è semplice rispondere a domande come queste: quante conferenze si tengono ogni giorno e quando hanno luogo?</span><span class="sxs-lookup"><span data-stu-id="37066-104">The Conference Activity Report makes it easy for you to answer questions like these: how many conferences are being held each day, and when are those conferences being held?</span></span> <span data-ttu-id="37066-105">Informazioni di questo tipo non sono solo utili di per sé, ma anche come strumenti di risoluzione dei problemi.</span><span class="sxs-lookup"><span data-stu-id="37066-105">Information like this is useful not only in its own right, but also as a troubleshooting tool.</span></span> <span data-ttu-id="37066-106">Si supponga ad esempio che gli utenti si lamentino del fatto che la rete sia particolarmente lenta a metà giornata.</span><span class="sxs-lookup"><span data-stu-id="37066-106">For example, suppose users are complaining that the network seems particularly slow in the middle of the day.</span></span> <span data-ttu-id="37066-107">Un rapido sguardo ai report sulle attività di conferenza potrebbe suggerire un possibile motivo: molte più conferenze vengono pianificate tra le ore 10:00 e 2:00 poi in qualsiasi altro momento.</span><span class="sxs-lookup"><span data-stu-id="37066-107">A quick glance at the Conference Activity reports might suggest one possible reason: far more conferences are being scheduled between the hours of 10:00 AM and 2:00 PM then at any other time.</span></span>
+<span data-ttu-id="4ad97-104">Con il Rapporto attività conferenza è semplice rispondere a domande come queste: quante conferenze si tengono ogni giorno e quando hanno luogo?</span><span class="sxs-lookup"><span data-stu-id="4ad97-104">The Conference Activity Report makes it easy for you to answer questions like these: how many conferences are being held each day, and when are those conferences being held?</span></span> <span data-ttu-id="4ad97-105">Informazioni di questo tipo non sono solo utili di per sé, ma anche come strumenti di risoluzione dei problemi.</span><span class="sxs-lookup"><span data-stu-id="4ad97-105">Information like this is useful not only in its own right, but also as a troubleshooting tool.</span></span> <span data-ttu-id="4ad97-106">Si supponga ad esempio che gli utenti si lamentino del fatto che la rete sia particolarmente lenta a metà giornata.</span><span class="sxs-lookup"><span data-stu-id="4ad97-106">For example, suppose users are complaining that the network seems particularly slow in the middle of the day.</span></span> <span data-ttu-id="4ad97-107">Un rapido sguardo ai report sulle attività di conferenza potrebbe suggerire un possibile motivo: molte più conferenze vengono pianificate tra le ore 10:00 e 2:00 poi in qualsiasi altro momento.</span><span class="sxs-lookup"><span data-stu-id="4ad97-107">A quick glance at the Conference Activity reports might suggest one possible reason: far more conferences are being scheduled between the hours of 10:00 AM and 2:00 PM then at any other time.</span></span>
 
-<span data-ttu-id="37066-108">Se la lentezza della rete crea problemi, è possibile chiedere agli utenti di riprogrammare alcune delle conferenze in orari di minor traffico.</span><span class="sxs-lookup"><span data-stu-id="37066-108">If the slow network is causing problems, you can encourage users to reschedule some of their conferences during the less-heavily trafficked times of the day.</span></span>
+<span data-ttu-id="4ad97-108">Se la lentezza della rete crea problemi, è possibile chiedere agli utenti di riprogrammare alcune delle conferenze in orari di minor traffico.</span><span class="sxs-lookup"><span data-stu-id="4ad97-108">If the slow network is causing problems, you can encourage users to reschedule some of their conferences during the less-heavily trafficked times of the day.</span></span>
 
 <div>
 
-## <a name="accessing-the-conference-activity-report"></a><span data-ttu-id="37066-109">Accesso al Rapporto attività conferenza</span><span class="sxs-lookup"><span data-stu-id="37066-109">Accessing the Conference Activity Report</span></span>
+## <a name="accessing-the-conference-activity-report"></a><span data-ttu-id="4ad97-109">Accesso al Rapporto attività conferenza</span><span class="sxs-lookup"><span data-stu-id="4ad97-109">Accessing the Conference Activity Report</span></span>
 
-<span data-ttu-id="37066-110">Il rapporto attività conferenza è accessibile dal [rapporto riepilogativo conferenze in Lync Server 2013](lync-server-2013-conference-summary-report.md) facendo clic su una delle metriche seguenti:</span><span class="sxs-lookup"><span data-stu-id="37066-110">The Conference Activity Report is accessed from the [Conference Summary Report in Lync Server 2013](lync-server-2013-conference-summary-report.md) by clicking either one of the following metrics:</span></span>
+<span data-ttu-id="4ad97-110">Il rapporto attività conferenza è accessibile dal [rapporto riepilogativo conferenze in Lync Server 2013](lync-server-2013-conference-summary-report.md) facendo clic su una delle metriche seguenti:</span><span class="sxs-lookup"><span data-stu-id="4ad97-110">The Conference Activity Report is accessed from the [Conference Summary Report in Lync Server 2013](lync-server-2013-conference-summary-report.md) by clicking either one of the following metrics:</span></span>
 
-  - <span data-ttu-id="37066-111">Totale conferenze</span><span class="sxs-lookup"><span data-stu-id="37066-111">Total conferences</span></span>
+  - <span data-ttu-id="4ad97-111">Totale conferenze</span><span class="sxs-lookup"><span data-stu-id="4ad97-111">Total conferences</span></span>
 
-  - <span data-ttu-id="37066-112">Totale partecipanti</span><span class="sxs-lookup"><span data-stu-id="37066-112">Total participants</span></span>
+  - <span data-ttu-id="4ad97-112">Totale partecipanti</span><span class="sxs-lookup"><span data-stu-id="4ad97-112">Total participants</span></span>
 
 </div>
 
 <div>
 
-## <a name="making-the-best-use-of-the-conference-activity-report"></a><span data-ttu-id="37066-113">Utilizzo ottimale del Rapporto attività conferenza</span><span class="sxs-lookup"><span data-stu-id="37066-113">Making the Best Use of the Conference Activity Report</span></span>
+## <a name="making-the-best-use-of-the-conference-activity-report"></a><span data-ttu-id="4ad97-113">Utilizzo ottimale del Rapporto attività conferenza</span><span class="sxs-lookup"><span data-stu-id="4ad97-113">Making the Best Use of the Conference Activity Report</span></span>
 
-<span data-ttu-id="37066-p102">Per impostazione predefinita, il Rapporto attività conferenza mostra il numero totale di conferenze per il periodo di tempo specificato (ad esempio il numero totale di conferenze al giorno oppure il numero totale di conferenze all'ora). È tuttavia anche possibile scegliere di visualizzare il numero totale di partecipanti per il periodo di tempo specificato o il numero totale di minuti partecipante. A tale scopo, fare clic sul pulsante Mostra/Nascondi parametri per visualizzare le opzioni di filtro, quindi selezionare una delle seguenti opzioni dall'elenco a discesa Rapporto di:</span><span class="sxs-lookup"><span data-stu-id="37066-p102">By default the Conference Activity Report shows you the total number of conferences for the specified time period (for example, the total number of conferences per day, or the total number of conferences per hour of the day). However, you can also choose to display the total number of participants for that time period or the total number of participant minutes. To do that, click the Show/Hide Parameters button to display the filtering options, and then select one of the following from the Report by dropdown list:</span></span>
+<span data-ttu-id="4ad97-p102">Per impostazione predefinita, il Rapporto attività conferenza mostra il numero totale di conferenze per il periodo di tempo specificato (ad esempio il numero totale di conferenze al giorno oppure il numero totale di conferenze all'ora). È tuttavia anche possibile scegliere di visualizzare il numero totale di partecipanti per il periodo di tempo specificato o il numero totale di minuti partecipante. A tale scopo, fare clic sul pulsante Mostra/Nascondi parametri per visualizzare le opzioni di filtro, quindi selezionare una delle seguenti opzioni dall'elenco a discesa Rapporto di:</span><span class="sxs-lookup"><span data-stu-id="4ad97-p102">By default the Conference Activity Report shows you the total number of conferences for the specified time period (for example, the total number of conferences per day, or the total number of conferences per hour of the day). However, you can also choose to display the total number of participants for that time period or the total number of participant minutes. To do that, click the Show/Hide Parameters button to display the filtering options, and then select one of the following from the Report by dropdown list:</span></span>
 
-  - <span data-ttu-id="37066-117">Numero partecipanti</span><span class="sxs-lookup"><span data-stu-id="37066-117">Participant count</span></span>
+  - <span data-ttu-id="4ad97-117">Numero partecipanti</span><span class="sxs-lookup"><span data-stu-id="4ad97-117">Participant count</span></span>
 
-  - <span data-ttu-id="37066-118">Minuti partecipante</span><span class="sxs-lookup"><span data-stu-id="37066-118">Participant minutes</span></span>
+  - <span data-ttu-id="4ad97-118">Minuti partecipante</span><span class="sxs-lookup"><span data-stu-id="4ad97-118">Participant minutes</span></span>
 
-  - <span data-ttu-id="37066-119">Numero conferenze</span><span class="sxs-lookup"><span data-stu-id="37066-119">Conference count</span></span>
+  - <span data-ttu-id="4ad97-119">Numero conferenze</span><span class="sxs-lookup"><span data-stu-id="4ad97-119">Conference count</span></span>
 
 </div>
 
 <div>
 
-## <a name="filters"></a><span data-ttu-id="37066-120">Filtri</span><span class="sxs-lookup"><span data-stu-id="37066-120">Filters</span></span>
+## <a name="filters"></a><span data-ttu-id="4ad97-120">Filtri</span><span class="sxs-lookup"><span data-stu-id="4ad97-120">Filters</span></span>
 
-<span data-ttu-id="37066-p103">I filtri consentono di restituire un insieme di dati più circoscritto o di visualizzare in modi diversi i dati restituiti. Nella tabella riportata di seguito vengono elencati i filtri che è possibile utilizzare con il Rapporto attività conferenza.</span><span class="sxs-lookup"><span data-stu-id="37066-p103">Filters provide a way for you to return a more finely-targeted set of data or to view the returned data in different ways. The following table lists the filters that you can use with the Conference Activity Report.</span></span>
+<span data-ttu-id="4ad97-p103">I filtri consentono di restituire un insieme di dati più circoscritto o di visualizzare in modi diversi i dati restituiti. Nella tabella riportata di seguito vengono elencati i filtri che è possibile utilizzare con il Rapporto attività conferenza.</span><span class="sxs-lookup"><span data-stu-id="4ad97-p103">Filters provide a way for you to return a more finely-targeted set of data or to view the returned data in different ways. The following table lists the filters that you can use with the Conference Activity Report.</span></span>
 
-### <a name="conference-activity-report-filters"></a><span data-ttu-id="37066-123">Filtri per il Rapporto attività conferenza</span><span class="sxs-lookup"><span data-stu-id="37066-123">Conference Activity Report Filters</span></span>
+### <a name="conference-activity-report-filters"></a><span data-ttu-id="4ad97-123">Filtri per il Rapporto attività conferenza</span><span class="sxs-lookup"><span data-stu-id="4ad97-123">Conference Activity Report Filters</span></span>
 
 <table>
 <colgroup>
@@ -82,49 +82,49 @@ ms.locfileid: "42136453"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="37066-124">Name</span><span class="sxs-lookup"><span data-stu-id="37066-124">Name</span></span></th>
-<th><span data-ttu-id="37066-125">Descrizione</span><span class="sxs-lookup"><span data-stu-id="37066-125">Description</span></span></th>
+<th><span data-ttu-id="4ad97-124">Name</span><span class="sxs-lookup"><span data-stu-id="4ad97-124">Name</span></span></th>
+<th><span data-ttu-id="4ad97-125">Descrizione</span><span class="sxs-lookup"><span data-stu-id="4ad97-125">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="37066-126"><strong>From</strong></span><span class="sxs-lookup"><span data-stu-id="37066-126"><strong>From</strong></span></span></p></td>
-<td><p><span data-ttu-id="37066-p104">Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:</span><span class="sxs-lookup"><span data-stu-id="37066-p104">Start date/time for the time range. To view data by hours, enter both the start date and time as follows:</span></span></p>
-<p><span data-ttu-id="37066-129">07/07/2012 13.00</span><span class="sxs-lookup"><span data-stu-id="37066-129">7/7/2012 1:00 PM</span></span></p>
-<p><span data-ttu-id="37066-p105">Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="37066-p105">If you do not enter a start time, the report automatically begins at 12:00 AM on the specified day. To view data by day, enter just the date:</span></span></p>
-<p><span data-ttu-id="37066-132">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="37066-132">7/7/2012</span></span></p>
-<p><span data-ttu-id="37066-133">Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="37066-133">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
-<p><span data-ttu-id="37066-134">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="37066-134">7/3/2012</span></span></p>
-<p><span data-ttu-id="37066-135">Le settimane vanno sempre dal lunedì alla domenica.</span><span class="sxs-lookup"><span data-stu-id="37066-135">Weeks always run from Sunday through Saturday.</span></span></p></td>
+<td><p><span data-ttu-id="4ad97-126"><strong>From</strong></span><span class="sxs-lookup"><span data-stu-id="4ad97-126"><strong>From</strong></span></span></p></td>
+<td><p><span data-ttu-id="4ad97-p104">Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:</span><span class="sxs-lookup"><span data-stu-id="4ad97-p104">Start date/time for the time range. To view data by hours, enter both the start date and time as follows:</span></span></p>
+<p><span data-ttu-id="4ad97-129">07/07/2012 13.00</span><span class="sxs-lookup"><span data-stu-id="4ad97-129">7/7/2012 1:00 PM</span></span></p>
+<p><span data-ttu-id="4ad97-p105">Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="4ad97-p105">If you do not enter a start time, the report automatically begins at 12:00 AM on the specified day. To view data by day, enter just the date:</span></span></p>
+<p><span data-ttu-id="4ad97-132">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="4ad97-132">7/7/2012</span></span></p>
+<p><span data-ttu-id="4ad97-133">Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="4ad97-133">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
+<p><span data-ttu-id="4ad97-134">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="4ad97-134">7/3/2012</span></span></p>
+<p><span data-ttu-id="4ad97-135">Le settimane vanno sempre dal lunedì alla domenica.</span><span class="sxs-lookup"><span data-stu-id="4ad97-135">Weeks always run from Sunday through Saturday.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="37066-136"><strong>To</strong></span><span class="sxs-lookup"><span data-stu-id="37066-136"><strong>To</strong></span></span></p></td>
-<td><p><span data-ttu-id="37066-p106">Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:</span><span class="sxs-lookup"><span data-stu-id="37066-p106">End date/time for the time range. To view data by hours, enter both the end date and time as follows:</span></span></p>
-<p><span data-ttu-id="37066-139">07/07/2012 13.00</span><span class="sxs-lookup"><span data-stu-id="37066-139">7/7/2012 1:00 PM</span></span></p>
-<p><span data-ttu-id="37066-p107">Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="37066-p107">If you do not enter an end time, the report automatically ends at 12:00 AM on the specified day. To view data by day, enter just the date:</span></span></p>
-<p><span data-ttu-id="37066-142">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="37066-142">7/7/2012</span></span></p>
-<p><span data-ttu-id="37066-143">Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="37066-143">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
-<p><span data-ttu-id="37066-144">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="37066-144">7/3/2012</span></span></p>
-<p><span data-ttu-id="37066-145">Le settimane vanno sempre dal lunedì alla domenica.</span><span class="sxs-lookup"><span data-stu-id="37066-145">Weeks always run from Sunday through Saturday.</span></span></p></td>
+<td><p><span data-ttu-id="4ad97-136"><strong>To</strong></span><span class="sxs-lookup"><span data-stu-id="4ad97-136"><strong>To</strong></span></span></p></td>
+<td><p><span data-ttu-id="4ad97-p106">Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:</span><span class="sxs-lookup"><span data-stu-id="4ad97-p106">End date/time for the time range. To view data by hours, enter both the end date and time as follows:</span></span></p>
+<p><span data-ttu-id="4ad97-139">07/07/2012 13.00</span><span class="sxs-lookup"><span data-stu-id="4ad97-139">7/7/2012 1:00 PM</span></span></p>
+<p><span data-ttu-id="4ad97-p107">Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:</span><span class="sxs-lookup"><span data-stu-id="4ad97-p107">If you do not enter an end time, the report automatically ends at 12:00 AM on the specified day. To view data by day, enter just the date:</span></span></p>
+<p><span data-ttu-id="4ad97-142">7/7/2012</span><span class="sxs-lookup"><span data-stu-id="4ad97-142">7/7/2012</span></span></p>
+<p><span data-ttu-id="4ad97-143">Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):</span><span class="sxs-lookup"><span data-stu-id="4ad97-143">To view by week or by month, enter a date that falls anywhere within the week or month that you want to view (you do not have to enter the first day of the week or month):</span></span></p>
+<p><span data-ttu-id="4ad97-144">7/3/2012</span><span class="sxs-lookup"><span data-stu-id="4ad97-144">7/3/2012</span></span></p>
+<p><span data-ttu-id="4ad97-145">Le settimane vanno sempre dal lunedì alla domenica.</span><span class="sxs-lookup"><span data-stu-id="4ad97-145">Weeks always run from Sunday through Saturday.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="37066-146"><strong>Intervallo</strong></span><span class="sxs-lookup"><span data-stu-id="37066-146"><strong>Interval</strong></span></span></p></td>
-<td><p><span data-ttu-id="37066-p108">Intervallo di tempo. Selezionare uno dei valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="37066-p108">Time interval. Select any of the following:</span></span></p>
+<td><p><span data-ttu-id="4ad97-146"><strong>Intervallo</strong></span><span class="sxs-lookup"><span data-stu-id="4ad97-146"><strong>Interval</strong></span></span></p></td>
+<td><p><span data-ttu-id="4ad97-p108">Intervallo di tempo. Selezionare uno dei valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="4ad97-p108">Time interval. Select any of the following:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="37066-149">Orario (è possibile visualizzare al massimo 25 ore)</span><span class="sxs-lookup"><span data-stu-id="37066-149">Hourly (a maximum of 25 hours can be displayed)</span></span></p></li>
-<li><p><span data-ttu-id="37066-150">Giornaliero (è possibile visualizzare un massimo di 31 giorni)</span><span class="sxs-lookup"><span data-stu-id="37066-150">Daily (a maximum of 31 days can be displayed)</span></span></p></li>
-<li><p><span data-ttu-id="37066-151">Settimanale (è possibile visualizzare un massimo di 12 settimane)</span><span class="sxs-lookup"><span data-stu-id="37066-151">Weekly (a maximum of 12 weeks can be displayed)</span></span></p></li>
-<li><p><span data-ttu-id="37066-152">Mensile (è possibile visualizzare un massimo di 12 mesi)</span><span class="sxs-lookup"><span data-stu-id="37066-152">Monthly (a maximum of 12 months can be displayed)</span></span></p></li>
+<li><p><span data-ttu-id="4ad97-149">Orario (è possibile visualizzare al massimo 25 ore)</span><span class="sxs-lookup"><span data-stu-id="4ad97-149">Hourly (a maximum of 25 hours can be displayed)</span></span></p></li>
+<li><p><span data-ttu-id="4ad97-150">Giornaliero (è possibile visualizzare un massimo di 31 giorni)</span><span class="sxs-lookup"><span data-stu-id="4ad97-150">Daily (a maximum of 31 days can be displayed)</span></span></p></li>
+<li><p><span data-ttu-id="4ad97-151">Settimanale (è possibile visualizzare un massimo di 12 settimane)</span><span class="sxs-lookup"><span data-stu-id="4ad97-151">Weekly (a maximum of 12 weeks can be displayed)</span></span></p></li>
+<li><p><span data-ttu-id="4ad97-152">Mensile (è possibile visualizzare un massimo di 12 mesi)</span><span class="sxs-lookup"><span data-stu-id="4ad97-152">Monthly (a maximum of 12 months can be displayed)</span></span></p></li>
 </ul>
-<p><span data-ttu-id="37066-p109">Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, verrà visualizzato solo il numero massimo di valori, a partire dalla data di inizio. Se ad esempio si seleziona l'intervallo Giornaliero con data di inizio 07/07/2012 e data di fine 28/02/2012, verranno visualizzati i dati relativi ai giorni compresi tra 07/08/2012 12.00 e 07/09/2012 12.00, ovvero i dati relativi a un totale di 31 giorni.</span><span class="sxs-lookup"><span data-stu-id="37066-p109">If the start and end dates exceed the maximum number of values allowed for the selected interval, only the maximum number of values (starting from the start date) is displayed. For example, if you select the Daily interval with a start date of 7/7/2012 and an end date of 2/28/2012, data is displayed for the days 8/7/2012 12:00 AM to 9/7/2012 12:00 AM (that is, a total of 31 days' worth of data).</span></span></p></td>
+<p><span data-ttu-id="4ad97-p109">Se le date di inizio e di fine superano il numero massimo di valori consentiti per l'intervallo selezionato, verrà visualizzato solo il numero massimo di valori, a partire dalla data di inizio. Se ad esempio si seleziona l'intervallo Giornaliero con data di inizio 07/07/2012 e data di fine 28/02/2012, verranno visualizzati i dati relativi ai giorni compresi tra 07/08/2012 12.00 e 07/09/2012 12.00, ovvero i dati relativi a un totale di 31 giorni.</span><span class="sxs-lookup"><span data-stu-id="4ad97-p109">If the start and end dates exceed the maximum number of values allowed for the selected interval, only the maximum number of values (starting from the start date) is displayed. For example, if you select the Daily interval with a start date of 7/7/2012 and an end date of 2/28/2012, data is displayed for the days 8/7/2012 12:00 AM to 9/7/2012 12:00 AM (that is, a total of 31 days' worth of data).</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="37066-155"><strong>Rapporto di</strong></span><span class="sxs-lookup"><span data-stu-id="37066-155"><strong>Report by</strong></span></span></p></td>
-<td><p><span data-ttu-id="37066-p110">Indica i valori da utilizzare nel rapporto. È possibile selezionare uno dei valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="37066-p110">Indicates the values to be used in the report. You can select one of the following:</span></span></p>
+<td><p><span data-ttu-id="4ad97-155"><strong>Rapporto di</strong></span><span class="sxs-lookup"><span data-stu-id="4ad97-155"><strong>Report by</strong></span></span></p></td>
+<td><p><span data-ttu-id="4ad97-p110">Indica i valori da utilizzare nel rapporto. È possibile selezionare uno dei valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="4ad97-p110">Indicates the values to be used in the report. You can select one of the following:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="37066-158">Numero partecipanti</span><span class="sxs-lookup"><span data-stu-id="37066-158">Participant Count</span></span></p></li>
-<li><p><span data-ttu-id="37066-159">Minuti partecipante</span><span class="sxs-lookup"><span data-stu-id="37066-159">Participant Minutes</span></span></p></li>
-<li><p><span data-ttu-id="37066-160">Numero conferenze</span><span class="sxs-lookup"><span data-stu-id="37066-160">Conference Count</span></span></p></li>
+<li><p><span data-ttu-id="4ad97-158">Numero partecipanti</span><span class="sxs-lookup"><span data-stu-id="4ad97-158">Participant Count</span></span></p></li>
+<li><p><span data-ttu-id="4ad97-159">Minuti partecipante</span><span class="sxs-lookup"><span data-stu-id="4ad97-159">Participant Minutes</span></span></p></li>
+<li><p><span data-ttu-id="4ad97-160">Numero conferenze</span><span class="sxs-lookup"><span data-stu-id="4ad97-160">Conference Count</span></span></p></li>
 </ul></td>
 </tr>
 </tbody>
@@ -135,11 +135,11 @@ ms.locfileid: "42136453"
 
 <div>
 
-## <a name="metrics-for-conferences-by-pool"></a><span data-ttu-id="37066-161">Metrica delle conferenze per pool</span><span class="sxs-lookup"><span data-stu-id="37066-161">Metrics for Conferences by Pool</span></span>
+## <a name="metrics-for-conferences-by-pool"></a><span data-ttu-id="4ad97-161">Metrica delle conferenze per pool</span><span class="sxs-lookup"><span data-stu-id="4ad97-161">Metrics for Conferences by Pool</span></span>
 
-<span data-ttu-id="37066-162">Nella tabella riportata di seguito vengono elencate le informazioni contenute nel Rapporto attività conferenza per ogni pool.</span><span class="sxs-lookup"><span data-stu-id="37066-162">The following table lists the information in the Conference Activity Report for each pool.</span></span>
+<span data-ttu-id="4ad97-162">Nella tabella riportata di seguito vengono elencate le informazioni contenute nel Rapporto attività conferenza per ogni pool.</span><span class="sxs-lookup"><span data-stu-id="4ad97-162">The following table lists the information in the Conference Activity Report for each pool.</span></span>
 
-### <a name="metrics-for-conferences-by-pool"></a><span data-ttu-id="37066-163">Metrica delle conferenze per pool</span><span class="sxs-lookup"><span data-stu-id="37066-163">Metrics for Conferences by Pool</span></span>
+### <a name="metrics-for-conferences-by-pool"></a><span data-ttu-id="4ad97-163">Metrica delle conferenze per pool</span><span class="sxs-lookup"><span data-stu-id="4ad97-163">Metrics for Conferences by Pool</span></span>
 
 <table>
 <colgroup>
@@ -149,26 +149,26 @@ ms.locfileid: "42136453"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="37066-164">Name</span><span class="sxs-lookup"><span data-stu-id="37066-164">Name</span></span></th>
-<th><span data-ttu-id="37066-165">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="37066-165">Can you sort on this item?</span></span></th>
-<th><span data-ttu-id="37066-166">Descrizione</span><span class="sxs-lookup"><span data-stu-id="37066-166">Description</span></span></th>
+<th><span data-ttu-id="4ad97-164">Name</span><span class="sxs-lookup"><span data-stu-id="4ad97-164">Name</span></span></th>
+<th><span data-ttu-id="4ad97-165">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="4ad97-165">Can you sort on this item?</span></span></th>
+<th><span data-ttu-id="4ad97-166">Descrizione</span><span class="sxs-lookup"><span data-stu-id="4ad97-166">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="37066-167"><strong>Pool</strong></span><span class="sxs-lookup"><span data-stu-id="37066-167"><strong>Pool</strong></span></span></p></td>
-<td><p><span data-ttu-id="37066-168">No</span><span class="sxs-lookup"><span data-stu-id="37066-168">No</span></span></p></td>
-<td><p><span data-ttu-id="37066-169">Nome del pool di registrazione o del server perimetrale utilizzato nella conferenza.</span><span class="sxs-lookup"><span data-stu-id="37066-169">Name of the Registrar pool or Edge Server used in the conference.</span></span></p></td>
+<td><p><span data-ttu-id="4ad97-167"><strong>Pool</strong></span><span class="sxs-lookup"><span data-stu-id="4ad97-167"><strong>Pool</strong></span></span></p></td>
+<td><p><span data-ttu-id="4ad97-168">No</span><span class="sxs-lookup"><span data-stu-id="4ad97-168">No</span></span></p></td>
+<td><p><span data-ttu-id="4ad97-169">Nome del pool di registrazione o del server perimetrale utilizzato nella conferenza.</span><span class="sxs-lookup"><span data-stu-id="4ad97-169">Name of the Registrar pool or Edge Server used in the conference.</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="37066-170"><strong>Data/ora</strong></span><span class="sxs-lookup"><span data-stu-id="37066-170"><strong>Date/Time</strong></span></span></p></td>
-<td><p><span data-ttu-id="37066-171">No</span><span class="sxs-lookup"><span data-stu-id="37066-171">No</span></span></p></td>
-<td><p><span data-ttu-id="37066-172">Data e ora in cui è stata tenuta la conferenza.</span><span class="sxs-lookup"><span data-stu-id="37066-172">Date and time when the conference was held.</span></span></p></td>
+<td><p><span data-ttu-id="4ad97-170"><strong>Data/ora</strong></span><span class="sxs-lookup"><span data-stu-id="4ad97-170"><strong>Date/Time</strong></span></span></p></td>
+<td><p><span data-ttu-id="4ad97-171">No</span><span class="sxs-lookup"><span data-stu-id="4ad97-171">No</span></span></p></td>
+<td><p><span data-ttu-id="4ad97-172">Data e ora in cui è stata tenuta la conferenza.</span><span class="sxs-lookup"><span data-stu-id="4ad97-172">Date and time when the conference was held.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="37066-173"><strong>Totale</strong></span><span class="sxs-lookup"><span data-stu-id="37066-173"><strong>Total</strong></span></span></p></td>
-<td><p><span data-ttu-id="37066-174">No</span><span class="sxs-lookup"><span data-stu-id="37066-174">No</span></span></p></td>
-<td><p><span data-ttu-id="37066-175">Numero totale di partecipanti, minuti totali dei partecipanti o numero di conferenze.</span><span class="sxs-lookup"><span data-stu-id="37066-175">Total participant count, total participant minutes, or total conference count.</span></span></p></td>
+<td><p><span data-ttu-id="4ad97-173"><strong>Totale</strong></span><span class="sxs-lookup"><span data-stu-id="4ad97-173"><strong>Total</strong></span></span></p></td>
+<td><p><span data-ttu-id="4ad97-174">No</span><span class="sxs-lookup"><span data-stu-id="4ad97-174">No</span></span></p></td>
+<td><p><span data-ttu-id="4ad97-175">Numero totale di partecipanti, minuti totali dei partecipanti o numero di conferenze.</span><span class="sxs-lookup"><span data-stu-id="4ad97-175">Total participant count, total participant minutes, or total conference count.</span></span></p></td>
 </tr>
 </tbody>
 </table>
@@ -178,11 +178,11 @@ ms.locfileid: "42136453"
 
 <div>
 
-## <a name="metrics-for-conferences-by-server-type"></a><span data-ttu-id="37066-176">Metrica delle conferenze per tipo di server</span><span class="sxs-lookup"><span data-stu-id="37066-176">Metrics for Conferences by Server Type</span></span>
+## <a name="metrics-for-conferences-by-server-type"></a><span data-ttu-id="4ad97-176">Metrica delle conferenze per tipo di server</span><span class="sxs-lookup"><span data-stu-id="4ad97-176">Metrics for Conferences by Server Type</span></span>
 
-<span data-ttu-id="37066-177">Nella tabella riportata di seguito vengono elencate le informazioni contenute nel Rapporto attività conferenza per ogni tipo di server.</span><span class="sxs-lookup"><span data-stu-id="37066-177">The following table lists the information in the Conference Activity Report for each type of server.</span></span>
+<span data-ttu-id="4ad97-177">Nella tabella riportata di seguito vengono elencate le informazioni contenute nel Rapporto attività conferenza per ogni tipo di server.</span><span class="sxs-lookup"><span data-stu-id="4ad97-177">The following table lists the information in the Conference Activity Report for each type of server.</span></span>
 
-### <a name="metrics-for-conferences-by-server-type"></a><span data-ttu-id="37066-178">Metrica delle conferenze per tipo di server</span><span class="sxs-lookup"><span data-stu-id="37066-178">Metrics for Conferences by Server Type</span></span>
+### <a name="metrics-for-conferences-by-server-type"></a><span data-ttu-id="4ad97-178">Metrica delle conferenze per tipo di server</span><span class="sxs-lookup"><span data-stu-id="4ad97-178">Metrics for Conferences by Server Type</span></span>
 
 <table>
 <colgroup>
@@ -192,33 +192,33 @@ ms.locfileid: "42136453"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="37066-179">Name</span><span class="sxs-lookup"><span data-stu-id="37066-179">Name</span></span></th>
-<th><span data-ttu-id="37066-180">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="37066-180">Can you sort on this item?</span></span></th>
-<th><span data-ttu-id="37066-181">Descrizione</span><span class="sxs-lookup"><span data-stu-id="37066-181">Description</span></span></th>
+<th><span data-ttu-id="4ad97-179">Name</span><span class="sxs-lookup"><span data-stu-id="4ad97-179">Name</span></span></th>
+<th><span data-ttu-id="4ad97-180">Elemento utilizzabile per eseguire l'ordinamento?</span><span class="sxs-lookup"><span data-stu-id="4ad97-180">Can you sort on this item?</span></span></th>
+<th><span data-ttu-id="4ad97-181">Descrizione</span><span class="sxs-lookup"><span data-stu-id="4ad97-181">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="37066-182"><strong>Tipo server per conferenze</strong></span><span class="sxs-lookup"><span data-stu-id="37066-182"><strong>Conferencing server type</strong></span></span></p></td>
-<td><p><span data-ttu-id="37066-183">No</span><span class="sxs-lookup"><span data-stu-id="37066-183">No</span></span></p></td>
-<td><p><span data-ttu-id="37066-184">Tipo di server utilizzato nella conferenza, in genere uno dei tipi seguenti:</span><span class="sxs-lookup"><span data-stu-id="37066-184">Type of server used in the conference, typically one of the following:</span></span></p>
+<td><p><span data-ttu-id="4ad97-182"><strong>Tipo server per conferenze</strong></span><span class="sxs-lookup"><span data-stu-id="4ad97-182"><strong>Conferencing server type</strong></span></span></p></td>
+<td><p><span data-ttu-id="4ad97-183">No</span><span class="sxs-lookup"><span data-stu-id="4ad97-183">No</span></span></p></td>
+<td><p><span data-ttu-id="4ad97-184">Tipo di server utilizzato nella conferenza, in genere uno dei tipi seguenti:</span><span class="sxs-lookup"><span data-stu-id="4ad97-184">Type of server used in the conference, typically one of the following:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="37066-185">Web Conferencing Server</span><span class="sxs-lookup"><span data-stu-id="37066-185">Web Conferencing Server</span></span></p></li>
-<li><p><span data-ttu-id="37066-186">IM Conferencing Server</span><span class="sxs-lookup"><span data-stu-id="37066-186">IM Conferencing Server</span></span></p></li>
-<li><p><span data-ttu-id="37066-187">Telephony Conferencing Server</span><span class="sxs-lookup"><span data-stu-id="37066-187">Telephony Conferencing Server</span></span></p></li>
-<li><p><span data-ttu-id="37066-188">AV Conferencing Server</span><span class="sxs-lookup"><span data-stu-id="37066-188">AV Conferencing Server</span></span></p></li>
-<li><p><span data-ttu-id="37066-189">Condivisione applicazioni</span><span class="sxs-lookup"><span data-stu-id="37066-189">Application Sharing</span></span></p></li>
+<li><p><span data-ttu-id="4ad97-185">Web Conferencing Server</span><span class="sxs-lookup"><span data-stu-id="4ad97-185">Web Conferencing Server</span></span></p></li>
+<li><p><span data-ttu-id="4ad97-186">IM Conferencing Server</span><span class="sxs-lookup"><span data-stu-id="4ad97-186">IM Conferencing Server</span></span></p></li>
+<li><p><span data-ttu-id="4ad97-187">Telephony Conferencing Server</span><span class="sxs-lookup"><span data-stu-id="4ad97-187">Telephony Conferencing Server</span></span></p></li>
+<li><p><span data-ttu-id="4ad97-188">AV Conferencing Server</span><span class="sxs-lookup"><span data-stu-id="4ad97-188">AV Conferencing Server</span></span></p></li>
+<li><p><span data-ttu-id="4ad97-189">Condivisione applicazioni</span><span class="sxs-lookup"><span data-stu-id="4ad97-189">Application Sharing</span></span></p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="37066-190"><strong>Data/ora</strong></span><span class="sxs-lookup"><span data-stu-id="37066-190"><strong>Date/Time</strong></span></span></p></td>
-<td><p><span data-ttu-id="37066-191">No</span><span class="sxs-lookup"><span data-stu-id="37066-191">No</span></span></p></td>
-<td><p><span data-ttu-id="37066-192">Data e ora in cui è stata tenuta la conferenza.</span><span class="sxs-lookup"><span data-stu-id="37066-192">Date and time when the conference was held.</span></span></p></td>
+<td><p><span data-ttu-id="4ad97-190"><strong>Data/ora</strong></span><span class="sxs-lookup"><span data-stu-id="4ad97-190"><strong>Date/Time</strong></span></span></p></td>
+<td><p><span data-ttu-id="4ad97-191">No</span><span class="sxs-lookup"><span data-stu-id="4ad97-191">No</span></span></p></td>
+<td><p><span data-ttu-id="4ad97-192">Data e ora in cui è stata tenuta la conferenza.</span><span class="sxs-lookup"><span data-stu-id="4ad97-192">Date and time when the conference was held.</span></span></p></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="37066-193"><strong>Totale</strong></span><span class="sxs-lookup"><span data-stu-id="37066-193"><strong>Total</strong></span></span></p></td>
-<td><p><span data-ttu-id="37066-194">No</span><span class="sxs-lookup"><span data-stu-id="37066-194">No</span></span></p></td>
-<td><p><span data-ttu-id="37066-195">Numero totale di partecipanti, minuti totali dei partecipanti o numero di conferenze.</span><span class="sxs-lookup"><span data-stu-id="37066-195">Total participant count, total participant minutes, or total conference count.</span></span></p></td>
+<td><p><span data-ttu-id="4ad97-193"><strong>Totale</strong></span><span class="sxs-lookup"><span data-stu-id="4ad97-193"><strong>Total</strong></span></span></p></td>
+<td><p><span data-ttu-id="4ad97-194">No</span><span class="sxs-lookup"><span data-stu-id="4ad97-194">No</span></span></p></td>
+<td><p><span data-ttu-id="4ad97-195">Numero totale di partecipanti, minuti totali dei partecipanti o numero di conferenze.</span><span class="sxs-lookup"><span data-stu-id="4ad97-195">Total participant count, total participant minutes, or total conference count.</span></span></p></td>
 </tr>
 </tbody>
 </table>
