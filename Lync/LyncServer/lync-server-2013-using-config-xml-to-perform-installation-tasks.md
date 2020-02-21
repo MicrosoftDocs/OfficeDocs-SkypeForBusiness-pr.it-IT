@@ -12,20 +12,20 @@ ms:contentKeyID: 48183332
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7b6b06b270157bc1aa2387662229dbff3eb8f4d5
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: e2933da3fc52cc6a5c23f74806ff3a4e81dcb2ba
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42138717"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42212832"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="using-configxml-to-perform-installation-tasks-in-lync-server-2013"></a><span data-ttu-id="5a8fe-102">Utilizzo di config. XML per eseguire le attività di installazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="5a8fe-102">Using Config.xml to perform installation tasks in Lync Server 2013</span></span>
+# <a name="using-configxml-to-perform-installation-tasks-in-lync-server-2013"></a><span data-ttu-id="69863-102">Utilizzo di config. XML per eseguire le attività di installazione in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="69863-102">Using Config.xml to perform installation tasks in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,31 +35,31 @@ ms.locfileid: "42138717"
 
 <span> </span>
 
-<span data-ttu-id="5a8fe-103">_**Ultimo argomento modificato:** 2012-10-02_</span><span class="sxs-lookup"><span data-stu-id="5a8fe-103">_**Topic Last Modified:** 2012-10-02_</span></span>
+<span data-ttu-id="69863-103">_**Ultimo argomento modificato:** 2012-10-02_</span><span class="sxs-lookup"><span data-stu-id="69863-103">_**Topic Last Modified:** 2012-10-02_</span></span>
 
-<span data-ttu-id="5a8fe-104">Anche se lo strumento di personalizzazione di Office è lo strumento principale per l'installazione della personalizzazione, gli amministratori possono utilizzare il file config. XML per specificare ulteriori istruzioni di installazione che non sono disponibili nel set di strumenti.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-104">Although the Office Customization Tool (OCT) is the primary tool for customization installation, administrators can use the Config.xml file to specify additional installation instructions that are not available in the OCT.</span></span> <span data-ttu-id="5a8fe-105">È possibile eseguire le personalizzazioni seguenti solo mediante il file Config.xml:</span><span class="sxs-lookup"><span data-stu-id="5a8fe-105">The following customizations can only be made by using the Config.xml file:</span></span>
+<span data-ttu-id="69863-104">Anche se lo strumento di personalizzazione di Office è lo strumento principale per l'installazione della personalizzazione, gli amministratori possono utilizzare il file config. XML per specificare ulteriori istruzioni di installazione che non sono disponibili nel set di strumenti.</span><span class="sxs-lookup"><span data-stu-id="69863-104">Although the Office Customization Tool (OCT) is the primary tool for customization installation, administrators can use the Config.xml file to specify additional installation instructions that are not available in the OCT.</span></span> <span data-ttu-id="69863-105">È possibile eseguire le personalizzazioni seguenti solo mediante il file Config.xml:</span><span class="sxs-lookup"><span data-stu-id="69863-105">The following customizations can only be made by using the Config.xml file:</span></span>
 
-  - <span data-ttu-id="5a8fe-106">Specificare il percorso del punto di installazione di rete.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-106">Specify the path of the network installation point.</span></span>
+  - <span data-ttu-id="69863-106">Specificare il percorso del punto di installazione di rete.</span><span class="sxs-lookup"><span data-stu-id="69863-106">Specify the path of the network installation point.</span></span>
 
-  - <span data-ttu-id="5a8fe-107">Selezionare i prodotti da installare.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-107">Select the products to install.</span></span>
+  - <span data-ttu-id="69863-107">Selezionare i prodotti da installare.</span><span class="sxs-lookup"><span data-stu-id="69863-107">Select the products to install.</span></span>
 
-  - <span data-ttu-id="5a8fe-108">Configurare la registrazione e il percorso del file di personalizzazione dell'installazione e degli aggiornamenti software.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-108">Configure logging and the location of the Setup customization file and software updates.</span></span>
+  - <span data-ttu-id="69863-108">Configurare la registrazione e il percorso del file di personalizzazione dell'installazione e degli aggiornamenti software.</span><span class="sxs-lookup"><span data-stu-id="69863-108">Configure logging and the location of the Setup customization file and software updates.</span></span>
 
-  - <span data-ttu-id="5a8fe-109">Specificare le opzioni di installazione, ad esempio il nome utente.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-109">Specify installation options, such as user name.</span></span>
+  - <span data-ttu-id="69863-109">Specificare le opzioni di installazione, ad esempio il nome utente.</span><span class="sxs-lookup"><span data-stu-id="69863-109">Specify installation options, such as user name.</span></span>
 
-  - <span data-ttu-id="5a8fe-110">Copiare l'origine di installazione locale nel computer dell'utente senza installare Office.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-110">Copy the local installation source (LIS) to the user's computer without installing Office.</span></span>
+  - <span data-ttu-id="69863-110">Copiare l'origine di installazione locale nel computer dell'utente senza installare Office.</span><span class="sxs-lookup"><span data-stu-id="69863-110">Copy the local installation source (LIS) to the user's computer without installing Office.</span></span>
 
-  - <span data-ttu-id="5a8fe-111">Aggiungere o rimuovere lingue dall'installazione.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-111">Add or remove languages from the installation.</span></span>
+  - <span data-ttu-id="69863-111">Aggiungere o rimuovere lingue dall'installazione.</span><span class="sxs-lookup"><span data-stu-id="69863-111">Add or remove languages from the installation.</span></span>
 
-<span data-ttu-id="5a8fe-112">È consigliabile utilizzare il file config. XML per configurare l'installazione invisibile all'utente di Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-112">We recommend that you use the Config.xml file to configure Lync 2013 silent installation.</span></span>
+<span data-ttu-id="69863-112">È consigliabile utilizzare il file config. XML per configurare l'installazione invisibile all'utente di Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="69863-112">We recommend that you use the Config.xml file to configure Lync 2013 silent installation.</span></span>
 
-<span data-ttu-id="5a8fe-113">Per impostazione predefinita, il file config. XML memorizzato nella cartella di base del prodotto, \\ad esempio Product. WW) indirizza il programma di installazione per l'installazione del prodotto.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-113">By default, the Config.xml file that is stored in the core product folder (for example, \\product.WW) directs Setup to install that product.</span></span> <span data-ttu-id="5a8fe-114">Ad esempio, il file config. XML nella cartella seguente consente di installare Lync 2013:</span><span class="sxs-lookup"><span data-stu-id="5a8fe-114">For example, the Config.xml file in the following folder installs Lync 2013:</span></span>
+<span data-ttu-id="69863-113">Per impostazione predefinita, il file config. XML memorizzato nella cartella di base del prodotto, \\ad esempio Product. WW) indirizza il programma di installazione per l'installazione del prodotto.</span><span class="sxs-lookup"><span data-stu-id="69863-113">By default, the Config.xml file that is stored in the core product folder (for example, \\product.WW) directs Setup to install that product.</span></span> <span data-ttu-id="69863-114">Ad esempio, il file config. XML nella cartella seguente consente di installare Lync 2013:</span><span class="sxs-lookup"><span data-stu-id="69863-114">For example, the Config.xml file in the following folder installs Lync 2013:</span></span>
 
-  - <span data-ttu-id="5a8fe-115">\\\\condivisione\\\\server Lync15\\Lync. WW \\config. XML</span><span class="sxs-lookup"><span data-stu-id="5a8fe-115">\\\\server\\share\\Lync15\\Lync.WW \\Config.xml</span></span>
+  - <span data-ttu-id="69863-115">\\\\condivisione\\\\server Lync15\\Lync. WW \\config. XML</span><span class="sxs-lookup"><span data-stu-id="69863-115">\\\\server\\share\\Lync15\\Lync.WW \\Config.xml</span></span>
 
-<span data-ttu-id="5a8fe-116">Nella tabella seguente sono elencati gli elementi config. XML più comunemente utilizzati per l'installazione di Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-116">The Config.xml elements most commonly used for Lync 2013 installation are listed in the following table.</span></span>
+<span data-ttu-id="69863-116">Nella tabella seguente sono elencati gli elementi config. XML più comunemente utilizzati per l'installazione di Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="69863-116">The Config.xml elements most commonly used for Lync 2013 installation are listed in the following table.</span></span>
 
-### <a name="configxml-elements"></a><span data-ttu-id="5a8fe-117">Elementi config. XML</span><span class="sxs-lookup"><span data-stu-id="5a8fe-117">Config.xml elements</span></span>
+### <a name="configxml-elements"></a><span data-ttu-id="69863-117">Elementi config. XML</span><span class="sxs-lookup"><span data-stu-id="69863-117">Config.xml elements</span></span>
 
 <table>
 <colgroup>
@@ -68,60 +68,60 @@ ms.locfileid: "42138717"
 </colgroup>
 <thead>
 <tr class="header">
-<th><span data-ttu-id="5a8fe-118">Elemento</span><span class="sxs-lookup"><span data-stu-id="5a8fe-118">Element</span></span></th>
-<th><span data-ttu-id="5a8fe-119">Descrizione</span><span class="sxs-lookup"><span data-stu-id="5a8fe-119">Description</span></span></th>
+<th><span data-ttu-id="69863-118">Elemento</span><span class="sxs-lookup"><span data-stu-id="69863-118">Element</span></span></th>
+<th><span data-ttu-id="69863-119">Descrizione</span><span class="sxs-lookup"><span data-stu-id="69863-119">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><p><span data-ttu-id="5a8fe-120">Configurazione</span><span class="sxs-lookup"><span data-stu-id="5a8fe-120">Configuration</span></span></p></td>
-<td><p><span data-ttu-id="5a8fe-121">Elemento di primo livello (obbligatorio).</span><span class="sxs-lookup"><span data-stu-id="5a8fe-121">Top-level element (required).</span></span> <span data-ttu-id="5a8fe-122">Contiene l'attributo Product, ad esempio: Product = Lync</span><span class="sxs-lookup"><span data-stu-id="5a8fe-122">Contains the Product attribute, for example: Product=Lync</span></span></p></td>
+<td><p><span data-ttu-id="69863-120">Configurazione</span><span class="sxs-lookup"><span data-stu-id="69863-120">Configuration</span></span></p></td>
+<td><p><span data-ttu-id="69863-121">Elemento di primo livello (obbligatorio).</span><span class="sxs-lookup"><span data-stu-id="69863-121">Top-level element (required).</span></span> <span data-ttu-id="69863-122">Contiene l'attributo Product, ad esempio: Product = Lync</span><span class="sxs-lookup"><span data-stu-id="69863-122">Contains the Product attribute, for example: Product=Lync</span></span></p></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="5a8fe-123">OptionState</span><span class="sxs-lookup"><span data-stu-id="5a8fe-123">OptionState</span></span></p></td>
-<td><p><span data-ttu-id="5a8fe-124">Specifica come vengono gestite caratteristiche specifiche del prodotto durante l'installazione.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-124">Specifies how specific product features are handled during installation.</span></span> <span data-ttu-id="5a8fe-125">Utilizzare gli attributi seguenti per impedire l'installazione di servizi di integrazione applicativa, che include componenti condivisi che interferiscono con Outlook 2010:</span><span class="sxs-lookup"><span data-stu-id="5a8fe-125">Use the following attributes to prevent installation of Business Connectivity Services, which includes shared components that interfere with Outlook 2010:</span></span></p>
+<td><p><span data-ttu-id="69863-123">OptionState</span><span class="sxs-lookup"><span data-stu-id="69863-123">OptionState</span></span></p></td>
+<td><p><span data-ttu-id="69863-124">Specifica come vengono gestite caratteristiche specifiche del prodotto durante l'installazione.</span><span class="sxs-lookup"><span data-stu-id="69863-124">Specifies how specific product features are handled during installation.</span></span> <span data-ttu-id="69863-125">Utilizzare gli attributi seguenti per impedire l'installazione di servizi di integrazione applicativa, che include componenti condivisi che interferiscono con Outlook 2010:</span><span class="sxs-lookup"><span data-stu-id="69863-125">Use the following attributes to prevent installation of Business Connectivity Services, which includes shared components that interfere with Outlook 2010:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="5a8fe-126">ID =&quot;LOBiMain&quot;</span><span class="sxs-lookup"><span data-stu-id="5a8fe-126">Id=&quot;LOBiMain&quot;</span></span></p></li>
-<li><p><span data-ttu-id="5a8fe-127">Stato =&quot;assente&quot;</span><span class="sxs-lookup"><span data-stu-id="5a8fe-127">State=&quot;Absent&quot;</span></span></p></li>
-<li><p><span data-ttu-id="5a8fe-128">Children =&quot;Force&quot;</span><span class="sxs-lookup"><span data-stu-id="5a8fe-128">Children=&quot;Force&quot;</span></span></p></li>
+<li><p><span data-ttu-id="69863-126">ID =&quot;LOBiMain&quot;</span><span class="sxs-lookup"><span data-stu-id="69863-126">Id=&quot;LOBiMain&quot;</span></span></p></li>
+<li><p><span data-ttu-id="69863-127">Stato =&quot;assente&quot;</span><span class="sxs-lookup"><span data-stu-id="69863-127">State=&quot;Absent&quot;</span></span></p></li>
+<li><p><span data-ttu-id="69863-128">Children =&quot;Force&quot;</span><span class="sxs-lookup"><span data-stu-id="69863-128">Children=&quot;Force&quot;</span></span></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="5a8fe-129">Schermo</span><span class="sxs-lookup"><span data-stu-id="5a8fe-129">Display</span></span></p></td>
-<td><p><span data-ttu-id="5a8fe-130">Livello di interfaccia utente visualizzato all'utente dal programma di installazione.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-130">The level of UI that Setup displays to the user.</span></span> <span data-ttu-id="5a8fe-131">Tra gli attributi tipici sono inclusi i seguenti:</span><span class="sxs-lookup"><span data-stu-id="5a8fe-131">Typical attributes include the following:</span></span></p>
+<td><p><span data-ttu-id="69863-129">Schermo</span><span class="sxs-lookup"><span data-stu-id="69863-129">Display</span></span></p></td>
+<td><p><span data-ttu-id="69863-130">Livello di interfaccia utente visualizzato all'utente dal programma di installazione.</span><span class="sxs-lookup"><span data-stu-id="69863-130">The level of UI that Setup displays to the user.</span></span> <span data-ttu-id="69863-131">Tra gli attributi tipici sono inclusi i seguenti:</span><span class="sxs-lookup"><span data-stu-id="69863-131">Typical attributes include the following:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="5a8fe-132">CompletionNotice =&quot;Yes&quot; | &quot;No&quot;(impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="5a8fe-132">CompletionNotice=&quot;Yes&quot; | &quot;No&quot;(default)</span></span></p></li>
-<li><p><span data-ttu-id="5a8fe-133">AcceptEula =&quot;Yes&quot; | &quot;No&quot;(impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="5a8fe-133">AcceptEula=&quot;Yes&quot; | &quot;No&quot;(default)</span></span></p></li>
+<li><p><span data-ttu-id="69863-132">CompletionNotice =&quot;Yes&quot; | &quot;No&quot;(impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="69863-132">CompletionNotice=&quot;Yes&quot; | &quot;No&quot;(default)</span></span></p></li>
+<li><p><span data-ttu-id="69863-133">AcceptEula =&quot;Yes&quot; | &quot;No&quot;(impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="69863-133">AcceptEula=&quot;Yes&quot; | &quot;No&quot;(default)</span></span></p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="5a8fe-134">Registrazione</span><span class="sxs-lookup"><span data-stu-id="5a8fe-134">Logging</span></span></p></td>
-<td><p><span data-ttu-id="5a8fe-135">Opzioni per il tipo di registrazione eseguita dal programma di installazione.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-135">Options for the kind of logging that Setup performs.</span></span> <span data-ttu-id="5a8fe-136">Tra gli attributi tipici sono inclusi i seguenti:</span><span class="sxs-lookup"><span data-stu-id="5a8fe-136">Typical attributes include the following:</span></span></p>
+<td><p><span data-ttu-id="69863-134">Registrazione</span><span class="sxs-lookup"><span data-stu-id="69863-134">Logging</span></span></p></td>
+<td><p><span data-ttu-id="69863-135">Opzioni per il tipo di registrazione eseguita dal programma di installazione.</span><span class="sxs-lookup"><span data-stu-id="69863-135">Options for the kind of logging that Setup performs.</span></span> <span data-ttu-id="69863-136">Tra gli attributi tipici sono inclusi i seguenti:</span><span class="sxs-lookup"><span data-stu-id="69863-136">Typical attributes include the following:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="5a8fe-137">Type =&quot;off&quot; | &quot;standard&quot;(impostazione predefinita) | &quot;Verbose&quot;</span><span class="sxs-lookup"><span data-stu-id="5a8fe-137">Type =&quot;Off&quot; | &quot;Standard&quot;(default) | &quot;Verbose&quot;</span></span></p></li>
-<li><p><span data-ttu-id="5a8fe-138">Template = "nomefile. txt" (il nome del file di registro)</span><span class="sxs-lookup"><span data-stu-id="5a8fe-138">Template=”filename.txt” (the name of the log file)</span></span></p></li>
+<li><p><span data-ttu-id="69863-137">Type =&quot;off&quot; | &quot;standard&quot;(impostazione predefinita) | &quot;Verbose&quot;</span><span class="sxs-lookup"><span data-stu-id="69863-137">Type =&quot;Off&quot; | &quot;Standard&quot;(default) | &quot;Verbose&quot;</span></span></p></li>
+<li><p><span data-ttu-id="69863-138">Template = "nomefile. txt" (il nome del file di registro)</span><span class="sxs-lookup"><span data-stu-id="69863-138">Template=”filename.txt” (the name of the log file)</span></span></p></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><p><span data-ttu-id="5a8fe-139">Impostazione</span><span class="sxs-lookup"><span data-stu-id="5a8fe-139">Setting</span></span></p></td>
-<td><p><span data-ttu-id="5a8fe-140">Specifica i valori per le proprietà di Windows Installer.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-140">Specifies values for Windows Installer properties.</span></span> <span data-ttu-id="5a8fe-141">Tra gli attributi tipici sono inclusi i seguenti:</span><span class="sxs-lookup"><span data-stu-id="5a8fe-141">Typical attributes include the following:</span></span></p>
+<td><p><span data-ttu-id="69863-139">Impostazione</span><span class="sxs-lookup"><span data-stu-id="69863-139">Setting</span></span></p></td>
+<td><p><span data-ttu-id="69863-140">Specifica i valori per le proprietà di Windows Installer.</span><span class="sxs-lookup"><span data-stu-id="69863-140">Specifies values for Windows Installer properties.</span></span> <span data-ttu-id="69863-141">Tra gli attributi tipici sono inclusi i seguenti:</span><span class="sxs-lookup"><span data-stu-id="69863-141">Typical attributes include the following:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="5a8fe-142">Impostazione ID =&quot;Name&quot; (il nome della proprietà di Windows Installer)</span><span class="sxs-lookup"><span data-stu-id="5a8fe-142">Setting Id=&quot;name&quot; (the name of the Windows Installer property)</span></span></p></li>
-<li><p><span data-ttu-id="5a8fe-143">Valore =&quot;valore&quot; (valore da assegnare alla proprietà)</span><span class="sxs-lookup"><span data-stu-id="5a8fe-143">Value=&quot;value&quot; (the value to assign to the property)</span></span></p></li>
+<li><p><span data-ttu-id="69863-142">Impostazione ID =&quot;Name&quot; (il nome della proprietà di Windows Installer)</span><span class="sxs-lookup"><span data-stu-id="69863-142">Setting Id=&quot;name&quot; (the name of the Windows Installer property)</span></span></p></li>
+<li><p><span data-ttu-id="69863-143">Valore =&quot;valore&quot; (valore da assegnare alla proprietà)</span><span class="sxs-lookup"><span data-stu-id="69863-143">Value=&quot;value&quot; (the value to assign to the property)</span></span></p></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><p><span data-ttu-id="5a8fe-144">DistributionPoint</span><span class="sxs-lookup"><span data-stu-id="5a8fe-144">DistributionPoint</span></span></p></td>
-<td><p><span data-ttu-id="5a8fe-145">Percorso completo del punto di installazione di rete da cui deve essere eseguita l'installazione</span><span class="sxs-lookup"><span data-stu-id="5a8fe-145">The fully qualified path of the network installation point from which the installation is to run.</span></span> <span data-ttu-id="5a8fe-146">Include l'attributo location:</span><span class="sxs-lookup"><span data-stu-id="5a8fe-146">Includes the Location attribute:</span></span></p>
+<td><p><span data-ttu-id="69863-144">DistributionPoint</span><span class="sxs-lookup"><span data-stu-id="69863-144">DistributionPoint</span></span></p></td>
+<td><p><span data-ttu-id="69863-145">Percorso completo del punto di installazione di rete da cui deve essere eseguita l'installazione</span><span class="sxs-lookup"><span data-stu-id="69863-145">The fully qualified path of the network installation point from which the installation is to run.</span></span> <span data-ttu-id="69863-146">Include l'attributo location:</span><span class="sxs-lookup"><span data-stu-id="69863-146">Includes the Location attribute:</span></span></p>
 <ul>
-<li><p><span data-ttu-id="5a8fe-147">Location = "percorso"</span><span class="sxs-lookup"><span data-stu-id="5a8fe-147">Location=”path”</span></span></p></li>
+<li><p><span data-ttu-id="69863-147">Location = "percorso"</span><span class="sxs-lookup"><span data-stu-id="69863-147">Location=”path”</span></span></p></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
 
-<span data-ttu-id="5a8fe-148">Nell'esempio seguente viene illustrato un file config. XML per una tipica installazione invisibile all'utente di Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-148">The following example shows a Config.xml file for a typical silent installation of Lync 2013.</span></span>
+<span data-ttu-id="69863-148">Nell'esempio seguente viene illustrato un file config. XML per una tipica installazione invisibile all'utente di Lync 2013.</span><span class="sxs-lookup"><span data-stu-id="69863-148">The following example shows a Config.xml file for a typical silent installation of Lync 2013.</span></span>
 
     <Configuration Product="Lync">
       <OptionState Id="LOBiMain" State="Absent" Children="Force" />
@@ -131,21 +131,21 @@ ms.locfileid: "42138717"
       <DistributionPoint Location="\\server\share\Lync15" />
     </Configuration>
 
-<span data-ttu-id="5a8fe-149">Informazioni dettagliate sull'utilizzo del file config. XML per eseguire le attività di installazione e manutenzione di Office <https://go.microsoft.com/fwlink/p/?linkid=267514>sono disponibili all'indirizzo.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-149">Detailed information about using the Config.xml file to perform Office installation and maintenance tasks is available at <https://go.microsoft.com/fwlink/p/?linkid=267514>.</span></span>
+<span data-ttu-id="69863-149">Informazioni dettagliate sull'utilizzo del file config. XML per eseguire le attività di installazione e manutenzione di Office <https://go.microsoft.com/fwlink/p/?linkid=267514>sono disponibili all'indirizzo.</span><span class="sxs-lookup"><span data-stu-id="69863-149">Detailed information about using the Config.xml file to perform Office installation and maintenance tasks is available at <https://go.microsoft.com/fwlink/p/?linkid=267514>.</span></span>
 
 <div>
 
-## <a name="to-customize-the-configxml-file"></a><span data-ttu-id="5a8fe-150">Per personalizzare il file config. XML</span><span class="sxs-lookup"><span data-stu-id="5a8fe-150">To customize the Config.xml file</span></span>
+## <a name="to-customize-the-configxml-file"></a><span data-ttu-id="69863-150">Per personalizzare il file config. XML</span><span class="sxs-lookup"><span data-stu-id="69863-150">To customize the Config.xml file</span></span>
 
-1.  <span data-ttu-id="5a8fe-151">Aprire il file config. XML utilizzando uno strumento di editor di testo, ad esempio il blocco note.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-151">Open the Config.xml file by using a text editor tool, such as Notepad.</span></span>
+1.  <span data-ttu-id="69863-151">Aprire il file config. XML utilizzando uno strumento di editor di testo, ad esempio il blocco note.</span><span class="sxs-lookup"><span data-stu-id="69863-151">Open the Config.xml file by using a text editor tool, such as Notepad.</span></span>
 
-2.  <span data-ttu-id="5a8fe-152">Individuare le righe che contengono gli elementi che si desidera modificare.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-152">Locate the lines that contain the elements you want to change.</span></span>
+2.  <span data-ttu-id="69863-152">Individuare le righe che contengono gli elementi che si desidera modificare.</span><span class="sxs-lookup"><span data-stu-id="69863-152">Locate the lines that contain the elements you want to change.</span></span>
 
-3.  <span data-ttu-id="5a8fe-153">Modificare la voce dell'elemento con le opzioni Silent che si desidera utilizzare.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-153">Modify the element entry with the silent options that you want to use.</span></span> <span data-ttu-id="5a8fe-154">Assicurarsi di rimuovere i delimitatori dei commenti, "\<\!--" e "--\>".</span><span class="sxs-lookup"><span data-stu-id="5a8fe-154">Make sure that you remove the comment delimiters, "\<\!--" and "--\>".</span></span> <span data-ttu-id="5a8fe-155">Utilizzare ad esempio la sintassi seguente:</span><span class="sxs-lookup"><span data-stu-id="5a8fe-155">For example, use the following syntax:</span></span>
+3.  <span data-ttu-id="69863-153">Modificare la voce dell'elemento con le opzioni Silent che si desidera utilizzare.</span><span class="sxs-lookup"><span data-stu-id="69863-153">Modify the element entry with the silent options that you want to use.</span></span> <span data-ttu-id="69863-154">Assicurarsi di rimuovere i delimitatori dei commenti, "\<\!--" e "--\>".</span><span class="sxs-lookup"><span data-stu-id="69863-154">Make sure that you remove the comment delimiters, "\<\!--" and "--\>".</span></span> <span data-ttu-id="69863-155">Utilizzare ad esempio la sintassi seguente:</span><span class="sxs-lookup"><span data-stu-id="69863-155">For example, use the following syntax:</span></span>
     
         < DistributionPoint Location="\\server\share\Lync15" />
 
-4.  <span data-ttu-id="5a8fe-156">Salvare il file Config.xml.</span><span class="sxs-lookup"><span data-stu-id="5a8fe-156">Save the Config.xml file.</span></span>
+4.  <span data-ttu-id="69863-156">Salvare il file Config.xml.</span><span class="sxs-lookup"><span data-stu-id="69863-156">Save the Config.xml file.</span></span>
 
 </div>
 

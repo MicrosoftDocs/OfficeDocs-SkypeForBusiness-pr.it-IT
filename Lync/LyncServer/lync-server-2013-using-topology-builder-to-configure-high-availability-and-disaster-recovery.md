@@ -12,20 +12,20 @@ ms:contentKeyID: 48185113
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 75117cd8a88b5ff5f333457033b5af49c5464f53
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 56f74465ecba83ec2d4f857a504952a1ed271fb7
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42116729"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42212622"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="using-topology-builder-to-configure-high-availability-and-disaster-recovery-in-lync-server-2013"></a><span data-ttu-id="e28bd-102">Utilizzo di generatore di topologie per configurare la disponibilità elevata e il ripristino di emergenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e28bd-102">Using Topology Builder to configure high availability and disaster recovery in Lync Server 2013</span></span>
+# <a name="using-topology-builder-to-configure-high-availability-and-disaster-recovery-in-lync-server-2013"></a><span data-ttu-id="e01a1-102">Utilizzo di generatore di topologie per configurare la disponibilità elevata e il ripristino di emergenza in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e01a1-102">Using Topology Builder to configure high availability and disaster recovery in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "42116729"
 
 <span> </span>
 
-<span data-ttu-id="e28bd-103">_**Ultimo argomento modificato:** 2012-10-06_</span><span class="sxs-lookup"><span data-stu-id="e28bd-103">_**Topic Last Modified:** 2012-10-06_</span></span>
+<span data-ttu-id="e01a1-103">_**Ultimo argomento modificato:** 2012-10-06_</span><span class="sxs-lookup"><span data-stu-id="e01a1-103">_**Topic Last Modified:** 2012-10-06_</span></span>
 
-<span data-ttu-id="e28bd-104">Eseguire i passaggi seguenti all'interno di generatore di topologie per configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente.</span><span class="sxs-lookup"><span data-stu-id="e28bd-104">Perform the following steps within Topology Builder to configure high availability and disaster recovery for Persistent Chat Server.</span></span>
+<span data-ttu-id="e01a1-104">Eseguire i passaggi seguenti all'interno di generatore di topologie per configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente.</span><span class="sxs-lookup"><span data-stu-id="e01a1-104">Perform the following steps within Topology Builder to configure high availability and disaster recovery for Persistent Chat Server.</span></span>
 
-1.  <span data-ttu-id="e28bd-105">Aggiungere i database mirror e gli archivi SQL Server del database secondario di log shipping.</span><span class="sxs-lookup"><span data-stu-id="e28bd-105">Add the mirror databases and the log shipping secondary database SQL Server stores.</span></span>
+1.  <span data-ttu-id="e01a1-105">Aggiungere i database mirror e gli archivi SQL Server del database secondario di log shipping.</span><span class="sxs-lookup"><span data-stu-id="e01a1-105">Add the mirror databases and the log shipping secondary database SQL Server stores.</span></span>
 
-2.  <span data-ttu-id="e28bd-106">Modificare le proprietà del servizio del server Chat persistente in:</span><span class="sxs-lookup"><span data-stu-id="e28bd-106">Edit the Persistent Chat Server service properties to:</span></span>
+2.  <span data-ttu-id="e01a1-106">Modificare le proprietà del servizio del server Chat persistente in:</span><span class="sxs-lookup"><span data-stu-id="e01a1-106">Edit the Persistent Chat Server service properties to:</span></span>
     
-    1.  <span data-ttu-id="e28bd-107">Abilitare il mirroring per il database primario.</span><span class="sxs-lookup"><span data-stu-id="e28bd-107">Enable mirroring for the primary database.</span></span>
+    1.  <span data-ttu-id="e01a1-107">Abilitare il mirroring per il database primario.</span><span class="sxs-lookup"><span data-stu-id="e01a1-107">Enable mirroring for the primary database.</span></span>
     
-    2.  <span data-ttu-id="e28bd-108">Aggiungere l'archivio SQL Server mirror primario.</span><span class="sxs-lookup"><span data-stu-id="e28bd-108">Add the primary mirror SQL Server store.</span></span>
+    2.  <span data-ttu-id="e01a1-108">Aggiungere l'archivio SQL Server mirror primario.</span><span class="sxs-lookup"><span data-stu-id="e01a1-108">Add the primary mirror SQL Server store.</span></span>
     
-    3.  <span data-ttu-id="e28bd-109">Abilitare il database di log shipping di SQL Server.</span><span class="sxs-lookup"><span data-stu-id="e28bd-109">Enable the SQL Server Log Shipping database.</span></span>
+    3.  <span data-ttu-id="e01a1-109">Abilitare il database di log shipping di SQL Server.</span><span class="sxs-lookup"><span data-stu-id="e01a1-109">Enable the SQL Server Log Shipping database.</span></span>
     
-    4.  <span data-ttu-id="e28bd-110">Aggiungere l'archivio SQL Server secondario di log shipping di SQL Server.</span><span class="sxs-lookup"><span data-stu-id="e28bd-110">Add the SQL Server Log Shipping secondary SQL Server store.</span></span>
+    4.  <span data-ttu-id="e01a1-110">Aggiungere l'archivio SQL Server secondario di log shipping di SQL Server.</span><span class="sxs-lookup"><span data-stu-id="e01a1-110">Add the SQL Server Log Shipping secondary SQL Server store.</span></span>
     
-    5.  <span data-ttu-id="e28bd-111">Aggiungere il mirror dell'archivio SQL Server per il database secondario.</span><span class="sxs-lookup"><span data-stu-id="e28bd-111">Add the SQL Server store mirror for the secondary database.</span></span>
+    5.  <span data-ttu-id="e01a1-111">Aggiungere il mirror dell'archivio SQL Server per il database secondario.</span><span class="sxs-lookup"><span data-stu-id="e01a1-111">Add the SQL Server store mirror for the secondary database.</span></span>
     
-    6.  <span data-ttu-id="e28bd-112">Pubblicare la topologia.</span><span class="sxs-lookup"><span data-stu-id="e28bd-112">Publish the topology.</span></span>
+    6.  <span data-ttu-id="e01a1-112">Pubblicare la topologia.</span><span class="sxs-lookup"><span data-stu-id="e01a1-112">Publish the topology.</span></span>
 
 </div>
 

@@ -12,20 +12,20 @@ ms:contentKeyID: 48184249
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 89f1721967ec693556fecd12d31f45b9b3d108d4
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: dbf4798c154b240a6048840a819c35d39f5ffc9d
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42113279"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42211772"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="verify-connectivity-for-external-users-in-lync-server-2013"></a><span data-ttu-id="71bab-102">Verificare la connettività per gli utenti esterni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="71bab-102">Verify connectivity for external users in Lync Server 2013</span></span>
+# <a name="verify-connectivity-for-external-users-in-lync-server-2013"></a><span data-ttu-id="b18b4-102">Verificare la connettività per gli utenti esterni in Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b18b4-102">Verify connectivity for external users in Lync Server 2013</span></span>
 
 </div>
 
@@ -35,37 +35,37 @@ ms.locfileid: "42113279"
 
 <span> </span>
 
-<span data-ttu-id="71bab-103">_**Ultimo argomento modificato:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="71bab-103">_**Topic Last Modified:** 2012-10-19_</span></span>
+<span data-ttu-id="b18b4-103">_**Ultimo argomento modificato:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="b18b4-103">_**Topic Last Modified:** 2012-10-19_</span></span>
 
-<span data-ttu-id="71bab-104">La convalida della connettività per gli utenti esterni garantisce la connettività dagli utenti al server e alla porta per il servizio Access Edge.</span><span class="sxs-lookup"><span data-stu-id="71bab-104">Validating connectivity for external users requires ensuring connectivity from users to the server and port for the Access Edge service.</span></span>
+<span data-ttu-id="b18b4-104">La convalida della connettività per gli utenti esterni garantisce la connettività dagli utenti al server e alla porta per il servizio Access Edge.</span><span class="sxs-lookup"><span data-stu-id="b18b4-104">Validating connectivity for external users requires ensuring connectivity from users to the server and port for the Access Edge service.</span></span>
 
-<span data-ttu-id="71bab-105">Una risorsa importante per confermare la configurazione e la possibilità di connettersi, inviare e ricevere i messaggi corretti per gli scenari necessari per l'accesso degli utenti esterni è il sito analizzatore connettività<http://www.testocsconnectivity.com>remota ().</span><span class="sxs-lookup"><span data-stu-id="71bab-105">A valuable resource for confirming your configuration and the ability to connect, send and receive the correct messages for the scenarios that external user access requires is the Remote Connectivity Analyzer site (<http://www.testocsconnectivity.com>).</span></span> <span data-ttu-id="71bab-106">Il sito è gestito e mantenuto dal supporto tecnico Microsoft.</span><span class="sxs-lookup"><span data-stu-id="71bab-106">The site is managed and maintained by Microsoft Support.</span></span> <span data-ttu-id="71bab-107">Per accedere a Remote Connectivity Analyzer, aprire il sito Web in un browser e seguire le istruzioni per selezionare lo scenario.</span><span class="sxs-lookup"><span data-stu-id="71bab-107">To reach the Remote Connectivity Analyzer, open the Web site in a browser and follow the instructions to select the scenario.</span></span>
+<span data-ttu-id="b18b4-105">Una risorsa importante per confermare la configurazione e la possibilità di connettersi, inviare e ricevere i messaggi corretti per gli scenari necessari per l'accesso degli utenti esterni è il sito analizzatore connettività<http://www.testocsconnectivity.com>remota ().</span><span class="sxs-lookup"><span data-stu-id="b18b4-105">A valuable resource for confirming your configuration and the ability to connect, send and receive the correct messages for the scenarios that external user access requires is the Remote Connectivity Analyzer site (<http://www.testocsconnectivity.com>).</span></span> <span data-ttu-id="b18b4-106">Il sito è gestito e mantenuto dal supporto tecnico Microsoft.</span><span class="sxs-lookup"><span data-stu-id="b18b4-106">The site is managed and maintained by Microsoft Support.</span></span> <span data-ttu-id="b18b4-107">Per accedere a Remote Connectivity Analyzer, aprire il sito Web in un browser e seguire le istruzioni per selezionare lo scenario.</span><span class="sxs-lookup"><span data-stu-id="b18b4-107">To reach the Remote Connectivity Analyzer, open the Web site in a browser and follow the instructions to select the scenario.</span></span>
 
 <div>
 
-## <a name="test-connectivity-of-external-users-and-external-access"></a><span data-ttu-id="71bab-108">Testare la connettività degli utenti esterni e l'accesso esterno</span><span class="sxs-lookup"><span data-stu-id="71bab-108">Test Connectivity of External Users and External access</span></span>
+## <a name="test-connectivity-of-external-users-and-external-access"></a><span data-ttu-id="b18b4-108">Testare la connettività degli utenti esterni e l'accesso esterno</span><span class="sxs-lookup"><span data-stu-id="b18b4-108">Test Connectivity of External Users and External access</span></span>
 
-<span data-ttu-id="71bab-109">I test per l'accesso utente esterno devono includere ogni tipo di utente esterno supportato dall'organizzazione, inclusi alcuni o tutti quelli indicati di seguito:</span><span class="sxs-lookup"><span data-stu-id="71bab-109">Tests for external user access should include each type of external user that your organization supports, including any or all of the following:</span></span>
+<span data-ttu-id="b18b4-109">I test per l'accesso utente esterno devono includere ogni tipo di utente esterno supportato dall'organizzazione, inclusi alcuni o tutti quelli indicati di seguito:</span><span class="sxs-lookup"><span data-stu-id="b18b4-109">Tests for external user access should include each type of external user that your organization supports, including any or all of the following:</span></span>
 
-  - <span data-ttu-id="71bab-110">Utenti da almeno un dominio federato, con testing di messaggistica istantanea, presenza, audio/video e condivisione del desktop.</span><span class="sxs-lookup"><span data-stu-id="71bab-110">Users from at least one federated domain, and test IM, presence, A/V and desktop sharing.</span></span>
+  - <span data-ttu-id="b18b4-110">Utenti da almeno un dominio federato, con testing di messaggistica istantanea, presenza, audio/video e condivisione del desktop.</span><span class="sxs-lookup"><span data-stu-id="b18b4-110">Users from at least one federated domain, and test IM, presence, A/V and desktop sharing.</span></span>
 
-  - <span data-ttu-id="71bab-111">Utenti di ogni provider di servizi di messaggistica istantanea pubblica supportati dall'organizzazione e per i quali è stato completato il provisioning.</span><span class="sxs-lookup"><span data-stu-id="71bab-111">Users of each public IM service provider that your organization supports (and for which provisioning has been completed).</span></span>
+  - <span data-ttu-id="b18b4-111">Utenti di ogni provider di servizi di messaggistica istantanea pubblica supportati dall'organizzazione e per i quali è stato completato il provisioning.</span><span class="sxs-lookup"><span data-stu-id="b18b4-111">Users of each public IM service provider that your organization supports (and for which provisioning has been completed).</span></span>
 
-  - <span data-ttu-id="71bab-112">Utenti anonimi.</span><span class="sxs-lookup"><span data-stu-id="71bab-112">Anonymous users.</span></span>
+  - <span data-ttu-id="b18b4-112">Utenti anonimi.</span><span class="sxs-lookup"><span data-stu-id="b18b4-112">Anonymous users.</span></span>
 
-  - <span data-ttu-id="71bab-113">Utenti nell'organizzazione connessi a Lync in remoto, ma che non utilizzano una rete VPN.</span><span class="sxs-lookup"><span data-stu-id="71bab-113">Users within your organization who are logged into Lync remotely, but not using VPN.</span></span>
+  - <span data-ttu-id="b18b4-113">Utenti nell'organizzazione connessi a Lync in remoto, ma che non utilizzano una rete VPN.</span><span class="sxs-lookup"><span data-stu-id="b18b4-113">Users within your organization who are logged into Lync remotely, but not using VPN.</span></span>
 
-<span data-ttu-id="71bab-114">Questi test determinano se il server perimetrale:</span><span class="sxs-lookup"><span data-stu-id="71bab-114">These tests determine whether your Edge Server is:</span></span>
+<span data-ttu-id="b18b4-114">Questi test determinano se il server perimetrale:</span><span class="sxs-lookup"><span data-stu-id="b18b4-114">These tests determine whether your Edge Server is:</span></span>
 
-  - <span data-ttu-id="71bab-115">È in attesa sulle porte necessarie tramite un client telnet dall'esterno della rete.</span><span class="sxs-lookup"><span data-stu-id="71bab-115">Listening on the necessary ports by using a telnet client from outside your network.</span></span>
+  - <span data-ttu-id="b18b4-115">È in attesa sulle porte necessarie tramite un client telnet dall'esterno della rete.</span><span class="sxs-lookup"><span data-stu-id="b18b4-115">Listening on the necessary ports by using a telnet client from outside your network.</span></span>
     
-      - <span data-ttu-id="71bab-116">Esempio: telnet sip.contoso.com 443</span><span class="sxs-lookup"><span data-stu-id="71bab-116">Example: telnet sip.contoso.com 443</span></span>
+      - <span data-ttu-id="b18b4-116">Esempio: telnet sip.contoso.com 443</span><span class="sxs-lookup"><span data-stu-id="b18b4-116">Example: telnet sip.contoso.com 443</span></span>
     
-      - <span data-ttu-id="71bab-117">Eseguire il test precedente sulle porte utilizzate nel server perimetrale o nel pool di server perimetrali, a seconda della distribuzione.</span><span class="sxs-lookup"><span data-stu-id="71bab-117">Perform the preceding test on ports you are using on the Edge Server or Edge Server pool depending on your deployment.</span></span>
+      - <span data-ttu-id="b18b4-117">Eseguire il test precedente sulle porte utilizzate nel server perimetrale o nel pool di server perimetrali, a seconda della distribuzione.</span><span class="sxs-lookup"><span data-stu-id="b18b4-117">Perform the preceding test on ports you are using on the Edge Server or Edge Server pool depending on your deployment.</span></span>
 
-  - <span data-ttu-id="71bab-118">Esegue la risoluzione DNS esterna in modo accurato.</span><span class="sxs-lookup"><span data-stu-id="71bab-118">Performing accurate external DNS resolution.</span></span>
+  - <span data-ttu-id="b18b4-118">Esegue la risoluzione DNS esterna in modo accurato.</span><span class="sxs-lookup"><span data-stu-id="b18b4-118">Performing accurate external DNS resolution.</span></span>
     
-      - <span data-ttu-id="71bab-p102">Dall'esterno della rete, eseguire il ping di ognuno degli FQDN esterni del server perimetrale o del pool di server perimetrali. Anche se il ping non riesce verranno visualizzati gli indirizzi IP, confrontabili con quelli assegnati.</span><span class="sxs-lookup"><span data-stu-id="71bab-p102">From outside your network ping each of the external FQDN’s of your Edge or Edge pool. Even if the ping fails you will see the IP addresses, which you can compare to the ones you have assigned.</span></span>
+      - <span data-ttu-id="b18b4-p102">Dall'esterno della rete, eseguire il ping di ognuno degli FQDN esterni del server perimetrale o del pool di server perimetrali. Anche se il ping non riesce verranno visualizzati gli indirizzi IP, confrontabili con quelli assegnati.</span><span class="sxs-lookup"><span data-stu-id="b18b4-p102">From outside your network ping each of the external FQDN’s of your Edge or Edge pool. Even if the ping fails you will see the IP addresses, which you can compare to the ones you have assigned.</span></span>
 
 </div>
 
