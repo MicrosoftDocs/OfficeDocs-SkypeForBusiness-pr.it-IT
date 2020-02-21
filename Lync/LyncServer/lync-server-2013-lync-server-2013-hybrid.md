@@ -12,20 +12,20 @@ ms:contentKeyID: 48183839
 ms.date: 05/25/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8e8a6e578a6d6f6a97783eb4903350a5fec18b74
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 1626b01f1cf008285e7d7fd12c6987c8da9f9ba4
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42144953"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42186179"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="lync-server-2013-hybrid"></a><span data-ttu-id="e7926-102">Lync Server 2013 ibrido</span><span class="sxs-lookup"><span data-stu-id="e7926-102">Lync Server 2013 hybrid</span></span>
+# <a name="lync-server-2013-hybrid"></a><span data-ttu-id="e7709-102">Lync Server 2013 ibrido</span><span class="sxs-lookup"><span data-stu-id="e7709-102">Lync Server 2013 hybrid</span></span>
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "42144953"
 
 <span> </span>
 
-<span data-ttu-id="e7926-103">_**Ultimo argomento modificato:** 2016-05-25_</span><span class="sxs-lookup"><span data-stu-id="e7926-103">_**Topic Last Modified:** 2016-05-25_</span></span>
+<span data-ttu-id="e7709-103">_**Ultimo argomento modificato:** 2016-05-25_</span><span class="sxs-lookup"><span data-stu-id="e7709-103">_**Topic Last Modified:** 2016-05-25_</span></span>
 
-<span data-ttu-id="e7926-104">Con distribuzioni ibride di Lync, è possibile disporre di alcuni degli utenti di Lync in locale e di altri utenti in Lync Online, che condividono entrambi lo stesso dominio.</span><span class="sxs-lookup"><span data-stu-id="e7926-104">With Lync hybrid deployments, you can have some of your Lync users on-premises, and other users in Lync Online, both sharing the same domain.</span></span> <span data-ttu-id="e7926-105">In questo modo è più facile fornire servizi Lync agli utenti dell'organizzazione in diverse posizioni geografiche o utenti che si connettono in remoto.</span><span class="sxs-lookup"><span data-stu-id="e7926-105">This can make it easier to provide Lync services to users of your organization in different geographic locations or users that connect remotely.</span></span> <span data-ttu-id="e7926-106">È inoltre possibile avvalersi delle configurazioni ibride di Lync come percorso di migrazione a Office 365.</span><span class="sxs-lookup"><span data-stu-id="e7926-106">You can also take advantage of Lync hybrid configurations as a migration path to Office 365.</span></span>
+<span data-ttu-id="e7709-104">Con distribuzioni ibride di Lync, è possibile disporre di alcuni degli utenti di Lync in locale e di altri utenti in Lync Online, che condividono entrambi lo stesso dominio.</span><span class="sxs-lookup"><span data-stu-id="e7709-104">With Lync hybrid deployments, you can have some of your Lync users on-premises, and other users in Lync Online, both sharing the same domain.</span></span> <span data-ttu-id="e7709-105">In questo modo è più facile fornire servizi Lync agli utenti dell'organizzazione in diverse posizioni geografiche o utenti che si connettono in remoto.</span><span class="sxs-lookup"><span data-stu-id="e7709-105">This can make it easier to provide Lync services to users of your organization in different geographic locations or users that connect remotely.</span></span> <span data-ttu-id="e7709-106">È inoltre possibile avvalersi delle configurazioni ibride di Lync come percorso di migrazione a Office 365.</span><span class="sxs-lookup"><span data-stu-id="e7709-106">You can also take advantage of Lync hybrid configurations as a migration path to Office 365.</span></span>
 
-<span data-ttu-id="e7926-107">In questa sezione vengono descritte le configurazioni ibride per Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="e7926-107">This section describes hybrid configurations for Lync Server 2013.</span></span>
+<span data-ttu-id="e7709-107">In questa sezione vengono descritte le configurazioni ibride per Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="e7709-107">This section describes hybrid configurations for Lync Server 2013.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="e7926-108">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="e7926-108">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="e7709-108">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="e7709-108">In This Section</span></span>
 
-[<span data-ttu-id="e7926-109">Panoramica delle distribuzioni ibride di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e7926-109">Overview of Lync Server 2013 hybrid deployments</span></span>](lync-server-2013-overview-of-hybrid-deployments.md)
+[<span data-ttu-id="e7709-109">Panoramica delle distribuzioni ibride di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e7709-109">Overview of Lync Server 2013 hybrid deployments</span></span>](lync-server-2013-overview-of-hybrid-deployments.md)
 
-[<span data-ttu-id="e7926-110">Pianificazione delle distribuzioni ibride di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e7926-110">Planning for Lync Server 2013 hybrid deployments</span></span>](lync-server-2013-planning-for-hybrid-deployments.md)
+[<span data-ttu-id="e7709-110">Pianificazione delle distribuzioni ibride di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e7709-110">Planning for Lync Server 2013 hybrid deployments</span></span>](lync-server-2013-planning-for-hybrid-deployments.md)
 
-[<span data-ttu-id="e7926-111">Configurazione delle distribuzioni ibride di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e7926-111">Configuring Lync Server 2013 hybrid deployments</span></span>](lync-server-2013-configuring-hybrid-deployments.md)
+[<span data-ttu-id="e7709-111">Configurazione delle distribuzioni ibride di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="e7709-111">Configuring Lync Server 2013 hybrid deployments</span></span>](lync-server-2013-configuring-hybrid-deployments.md)
 
 </div>
 
