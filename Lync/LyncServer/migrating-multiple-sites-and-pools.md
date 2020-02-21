@@ -12,20 +12,20 @@ ms:contentKeyID: 48185079
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 11c1e7d104fa35cba02e95dffb348b0f64b16b66
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: e104160d7bb770e91f21cda32e43c83356df98a7
+ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42148825"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "42190039"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
-<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="http://msdn.microsoft.com/">
+<div class="topic" data-xmlns="http://www.w3.org/1999/xhtml" data-msxsl="urn:schemas-microsoft-com:xslt" data-cs="https://msdn.microsoft.com/">
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="migrating-multiple-sites-and-pools"></a><span data-ttu-id="d7c2c-102">Migrazione di più siti e pool</span><span class="sxs-lookup"><span data-stu-id="d7c2c-102">Migrating multiple sites and pools</span></span>
+# <a name="migrating-multiple-sites-and-pools"></a><span data-ttu-id="d82cc-102">Migrazione di più siti e pool</span><span class="sxs-lookup"><span data-stu-id="d82cc-102">Migrating multiple sites and pools</span></span>
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "42148825"
 
 <span> </span>
 
-<span data-ttu-id="d7c2c-103">_**Ultimo argomento modificato:** 2012-09-17_</span><span class="sxs-lookup"><span data-stu-id="d7c2c-103">_**Topic Last Modified:** 2012-09-17_</span></span>
+<span data-ttu-id="d82cc-103">_**Ultimo argomento modificato:** 2012-09-17_</span><span class="sxs-lookup"><span data-stu-id="d82cc-103">_**Topic Last Modified:** 2012-09-17_</span></span>
 
-<span data-ttu-id="d7c2c-104">Lync Server 2013 supporta distribuzioni multisito e multi-pool.</span><span class="sxs-lookup"><span data-stu-id="d7c2c-104">Lync Server 2013 supports multi-site and multi-pool deployments.</span></span> <span data-ttu-id="d7c2c-105">Il processo di migrazione di più pool da Lync Server 2010 a Lync Server 2013 richiede le considerazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="d7c2c-105">The process of migrating multiple pools from Lync Server 2010 to Lync Server 2013 requires the following considerations:</span></span>
+<span data-ttu-id="d82cc-104">Lync Server 2013 supporta distribuzioni multisito e multi-pool.</span><span class="sxs-lookup"><span data-stu-id="d82cc-104">Lync Server 2013 supports multi-site and multi-pool deployments.</span></span> <span data-ttu-id="d82cc-105">Il processo di migrazione di più pool da Lync Server 2010 a Lync Server 2013 richiede le considerazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="d82cc-105">The process of migrating multiple pools from Lync Server 2010 to Lync Server 2013 requires the following considerations:</span></span>
 
-1.  <span data-ttu-id="d7c2c-106">Dopo aver distribuito un pool pilota di Lync Server 2013, è necessario definire un sottoinsieme di utenti pilota che verranno spostati nel pool di Lync Server 2013 e una metodologia per la convalida della funzionalità degli utenti.</span><span class="sxs-lookup"><span data-stu-id="d7c2c-106">After deploying a Lync Server 2013 pilot pool, you need to define a subset of pilot users that will be moved to the Lync Server 2013 pool, and a methodology for validating the functionality of the users.</span></span> <span data-ttu-id="d7c2c-107">Ad esempio, dopo lo spostamento di un utente nel pool pilota, verificare che i criteri di conferenza dell'utente siano stati spostati in Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="d7c2c-107">For example, after moving a user to the pilot pool, verify the user’s conference policy has moved to Lync Server 2013.</span></span>
+1.  <span data-ttu-id="d82cc-106">Dopo aver distribuito un pool pilota di Lync Server 2013, è necessario definire un sottoinsieme di utenti pilota che verranno spostati nel pool di Lync Server 2013 e una metodologia per la convalida della funzionalità degli utenti.</span><span class="sxs-lookup"><span data-stu-id="d82cc-106">After deploying a Lync Server 2013 pilot pool, you need to define a subset of pilot users that will be moved to the Lync Server 2013 pool, and a methodology for validating the functionality of the users.</span></span> <span data-ttu-id="d82cc-107">Ad esempio, dopo lo spostamento di un utente nel pool pilota, verificare che i criteri di conferenza dell'utente siano stati spostati in Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="d82cc-107">For example, after moving a user to the pilot pool, verify the user’s conference policy has moved to Lync Server 2013.</span></span>
 
-2.  <span data-ttu-id="d7c2c-108">Dopo aver distribuito un server perimetrale nel pool pilota, è necessario verificare che gli utenti esterni possano comunicare con il pool di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="d7c2c-108">After deploying an Edge Server in the pilot pool, you need to validate that external users can communicate with the Lync Server 2013 pool.</span></span>
+2.  <span data-ttu-id="d82cc-108">Dopo aver distribuito un server perimetrale nel pool pilota, è necessario verificare che gli utenti esterni possano comunicare con il pool di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="d82cc-108">After deploying an Edge Server in the pilot pool, you need to validate that external users can communicate with the Lync Server 2013 pool.</span></span>
 
-3.  <span data-ttu-id="d7c2c-109">Dopo la transizione delle route federate dai server perimetrali di Lync Server 2010 ai server perimetrali di Lync Server 2013 pilota, è necessario verificare che gli utenti federati possano comunicare con il pool di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="d7c2c-109">After transitioning the federated routes from Lync Server 2010 Edge Servers to the pilot Lync Server 2013 Edge Servers, you need to validate that federated users can communicate with the Lync Server 2013 pool.</span></span>
+3.  <span data-ttu-id="d82cc-109">Dopo la transizione delle route federate dai server perimetrali di Lync Server 2010 ai server perimetrali di Lync Server 2013 pilota, è necessario verificare che gli utenti federati possano comunicare con il pool di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="d82cc-109">After transitioning the federated routes from Lync Server 2010 Edge Servers to the pilot Lync Server 2013 Edge Servers, you need to validate that federated users can communicate with the Lync Server 2013 pool.</span></span>
 
-4.  <span data-ttu-id="d7c2c-110">Dopo aver spostato tutti gli utenti e gli oggetti contatto non utente, è necessario verificare che il pool di Lync Server 2010 sia vuoto.</span><span class="sxs-lookup"><span data-stu-id="d7c2c-110">After moving all the users and non-user contact objects, you need to validate that the Lync Server 2010 pool is empty.</span></span>
+4.  <span data-ttu-id="d82cc-110">Dopo aver spostato tutti gli utenti e gli oggetti contatto non utente, è necessario verificare che il pool di Lync Server 2010 sia vuoto.</span><span class="sxs-lookup"><span data-stu-id="d82cc-110">After moving all the users and non-user contact objects, you need to validate that the Lync Server 2010 pool is empty.</span></span>
 
-5.  <span data-ttu-id="d7c2c-111">Dopo aver verificato che il pool di Lync Server 2010 sia vuoto, è possibile disattivare il pool.</span><span class="sxs-lookup"><span data-stu-id="d7c2c-111">After verifying that the Lync Server 2010 pool is empty, you can then deactivate the pool.</span></span>
+5.  <span data-ttu-id="d82cc-111">Dopo aver verificato che il pool di Lync Server 2010 sia vuoto, è possibile disattivare il pool.</span><span class="sxs-lookup"><span data-stu-id="d82cc-111">After verifying that the Lync Server 2010 pool is empty, you can then deactivate the pool.</span></span>
     
-    <span data-ttu-id="d7c2c-112">Per informazioni dettagliate su come disattivare i server e il pool legacy di Lync Server 2010, vedere [Phase 8: decommission legacy pools](phase-8-decommission-legacy-pools.md).</span><span class="sxs-lookup"><span data-stu-id="d7c2c-112">For details about how to deactivate the legacy Lync Server 2010 pool and servers, see [Phase 8: Decommission legacy pools](phase-8-decommission-legacy-pools.md).</span></span>
+    <span data-ttu-id="d82cc-112">Per informazioni dettagliate su come disattivare i server e il pool legacy di Lync Server 2010, vedere [Phase 8: decommission legacy pools](phase-8-decommission-legacy-pools.md).</span><span class="sxs-lookup"><span data-stu-id="d82cc-112">For details about how to deactivate the legacy Lync Server 2010 pool and servers, see [Phase 8: Decommission legacy pools](phase-8-decommission-legacy-pools.md).</span></span>
 
 </div>
 
