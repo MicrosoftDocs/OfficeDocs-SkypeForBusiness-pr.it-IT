@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 535c34bd19a2f019d1b9dc07718cf20d5da2f98e
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 9c2ef9f509f64e044567d9286704458b4dc91596
+ms.sourcegitcommit: 7093388425b34c80e444a50d062290187b80047d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826954"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42229901"
 ---
 # <a name="apps-bots--connectors-in-microsoft-teams"></a>App, bot e connettori in Microsoft Teams
 
@@ -57,7 +57,7 @@ Le app sono autorizzate dagli utenti e gestite dall'amministratore o dal profess
 
 | Chiedersi | Azione |
 |--------------|--------|
-|<br>A quali app si vuole consentire l'accesso? A quali non si vuole consentire l'accesso?  | <ul><li>Per un elenco degli elementi che è necessario prendere in considerazione quando si consente l'accesso a un'app, un bot, una scheda o un connettore, vedere [Autorizzazioni e considerazioni sulle app di Microsoft Teams](app-permissions.md).</li><li>Per informazioni su come rendere disponibile un'app agli utenti dell'organizzazione, vedere [Pubblicare app nel catalogo app del tenant di Teams](tenant-apps-catalog-teams.md).</li></ul>|
+|<br>A quali app si vuole consentire l'accesso? A quali non si vuole consentire l'accesso?  | <ul><li>Per un elenco degli elementi che è necessario prendere in considerazione quando si consente l'accesso a un'app, un bot, una scheda o un connettore, vedere [Autorizzazioni e considerazioni sulle app di Microsoft Teams](app-permissions.md).</li><li>Per informazioni su come rendere disponibile un'app agli utenti dell'organizzazione, vedere [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md).</li></ul>|
 |||
 
 ### <a name="bots-for-private-chats-and-channels"></a>Bot per chat e canali privati
