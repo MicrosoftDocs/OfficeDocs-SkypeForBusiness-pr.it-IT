@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come portare le app teams personalizzate dallo sviluppo alla distribuzione.
-ms.openlocfilehash: 070b0ecbf0ccc9af798e1d3a3c689ce4d4ff4da2
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+ms.openlocfilehash: f8c5a7dcc12bc9b3823285138d15a0ccdf11c52a
+ms.sourcegitcommit: 7093388425b34c80e444a50d062290187b80047d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161822"
+ms.lasthandoff: 02/22/2020
+ms.locfileid: "42229936"
 ---
 # <a name="manage-your-line-of-business-apps-in-microsoft-teams"></a>Gestire le app line-of-business in Microsoft Teams
 
@@ -101,13 +101,7 @@ Per consentire agli utenti attendibili di caricare app personalizzate, eseguire 
 
 ## <a name="step-3-upload-to-the-tenant-app-catalog"></a>Passaggio 3: caricare nel catalogo app tenant
 
-Per rendere l'app disponibile per gli utenti nell'App Store tenant, carica l'app. Puoi eseguire questa operazione <a href="https://docs.microsoft.com/microsoftteams/tenant-apps-catalog-teams#go-to-the-tenant-apps-catalog" target="_blank">usando il client desktop teams</a> o nella pagina [Gestisci app](manage-apps.md) dell'interfaccia di amministrazione di Microsoft teams.
-
-Ecco uno screenshot dell'opzione carica nel client desktop teams.
-
-![Screenshot della pagina delle app](media/manage-your-lob-apps-store.png)
-
-Ecco uno screenshot dell'opzione carica nella pagina **Gestisci app** nell'interfaccia di amministrazione di Microsoft teams.
+Per rendere l'app disponibile per gli utenti nell'App Store tenant, carica l'app. Puoi eseguire questa operazione nella pagina [Gestisci app](manage-apps.md) dell'interfaccia di amministrazione di Microsoft teams.
 
 ![Screenshot della pagina Manage Apps nell'interfaccia di amministrazione](media/manage-your-lob-apps-upload-new-app.png)
 
@@ -131,6 +125,8 @@ Per impostazione predefinita, per consentire agli utenti di trovare l'app, è ne
 
 Per aggiornare un'app, gli sviluppatori devono continuare a seguire il [passaggio 1](#step-1-develop-and-test) e il [passaggio 2](#step-2-validate-in-production).
 
-Puoi aggiornare l'app tramite il catalogo app tenant. A tale scopo, nel client desktop teams passa a **app** > **create per &lt;il nome&gt;del tenant**, fai clic su **...** nell'angolo in alto a destra dell'app, quindi fare clic su **Aggiorna**. Questa operazione sostituisce l'app esistente nel catalogo dell'app tenant e tutti i criteri di autorizzazione e i criteri di configurazione restano applicati per l'app aggiornata. 
+Puoi aggiornare l'app tramite il catalogo app tenant. A questo scopo, nell'interfaccia di amministrazione di Microsoft teams, vai alle >  **app teams****Manage Apps**. Nell'elenco delle app fare clic sul nome dell'app e quindi su **Aggiorna**. Questa operazione sostituisce l'app esistente nel catalogo dell'app tenant e tutti i criteri di autorizzazione per le app e i criteri di configurazione delle app restano applicati per l'app aggiornata.
 
-![Screenshot dell'aggiornamento di un'app nella pagina delle app](media/manage-your-lob-apps-update-app.png)
+## <a name="related-apps"></a>App correlate
+
+- [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
