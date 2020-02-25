@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come usare l'interfaccia di amministrazione di Microsoft teams per visualizzare un elenco di tutti i numeri di telefono dell'organizzazione e tutti i numeri assegnati agli utenti o non assegnati.
-ms.openlocfilehash: 7b2ae1d2cf008b3f824f3d3837b7023766571ec1
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 029f5f15e4d414ed2f6bc4e06d39b3456b32ee62
+ms.sourcegitcommit: 73518a589db1a9883fc97827f0ddb9132995fbfa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838156"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42236856"
 ---
 # <a name="see-a-list-of-phone-numbers-in-your-organization"></a>Visualizzare un elenco di numeri di telefono assegnati nell'organizzazione
 
@@ -114,5 +114,7 @@ Quando si configurano gli utenti dell'organizzazione per effettuare e ricevere c
 [Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
 
 [Etichetta Disclaimer per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+
+[Get-CsOnlineTelephoneNumber](https://docs.microsoft.com/powershell/module/skype/get-csonlinetelephonenumber)
   
  

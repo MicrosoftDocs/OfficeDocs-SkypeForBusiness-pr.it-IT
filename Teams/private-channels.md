@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft teams.
-ms.openlocfilehash: 45d05f2dd726b340ac79ac11810d23d00c8b3e9d
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 761d6a06da6bb02991e706f6e18ac8ce7d4106f4
+ms.sourcegitcommit: bb88ac0c9489bb47957e5ef1074b5df3126b6fdb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837316"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42265631"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -60,7 +60,7 @@ Per determinare se un canale privato è appropriato, prendere in considerazione 
 |Sì     |Supporto per riunioni private con ID conferenza di riunione dinamici         |No         |Creare un canale nel team esistente.         |
 |No     |No         |No         |Valutare la possibilità di creare un nuovo team.         |
 |No     |No         |Sì         |Valutare la possibilità di creare un nuovo team e quindi, in base alla riservatezza di ogni argomento, valutare la possibilità di creare canali separati standard o privati per ogni argomento.         |
-|No     |Sì         |Supporto per riunioni private con ID conferenza di riunione dinamici         |Creare un nuovo team o creare un nuovo canale privato in un team esistente.         |
+|No     |Sì         |Supporto per riunioni private con ID conferenza di riunione dinamici         |Creare un nuovo team e valutare la possibilità di creare un canale privato.         |
 
 Quando viene creato un canale privato, è collegato al team padre e non può essere spostato in un team diverso. Inoltre, i canali privati non possono essere convertiti in canali standard e viceversa.
 

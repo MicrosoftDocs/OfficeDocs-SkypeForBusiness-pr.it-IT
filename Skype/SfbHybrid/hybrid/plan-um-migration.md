@@ -11,16 +11,16 @@ ms.topic: article
 localization_priority: Normal
 ms.prod: skype-for-business-itpro
 description: In questo argomento vengono illustrate le operazioni da prendere in considerazione quando si decide di eseguire la migrazione delle distribuzioni esistenti di Skype for Business Server o Exchange Server alla versione più recente o a Skype for business online o Exchange Online.
-ms.openlocfilehash: 072720499ac91942d5f1fdbdbe05fffe2de4db05
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ce2e0712c75e5aa052c7eff7667f09ff34c3908a
+ms.sourcegitcommit: bb88ac0c9489bb47957e5ef1074b5df3126b6fdb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41756000"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42265611"
 ---
 # <a name="plan-for-skype-for-business-server-and-exchange-server-migration"></a>Pianificare la migrazione di Skype for Business Server e Exchange Server
 
-In questo argomento vengono illustrate le operazioni da prendere in considerazione quando si decide di eseguire la migrazione delle distribuzioni esistenti di Skype for Business Server o Exchange Server alla versione più recente o a Skype for business online o Exchange Online. Che cosa è possibile eseguire la migrazione e quando, dipende molto da ciò che è stato già configurato nell'organizzazione. Alcune funzionalità, ad esempio l'operatore automatico dell'organizzazione, non sono disponibili alla disponibilità generale (GA), ma verranno successivamente in 2018.
+In questo argomento vengono illustrate le operazioni da prendere in considerazione quando si decide di eseguire la migrazione delle distribuzioni esistenti di Skype for Business Server o Exchange Server alla versione più recente o a Skype for business online o Exchange Online. Che cosa è possibile eseguire la migrazione e quando, dipende molto da ciò che è stato già configurato nell'organizzazione.
 
 ## <a name="feature-changes-in-exchange-2019-and-skype-for-business-server-2019"></a>Modifiche alle funzionalità in Exchange 2019 e Skype for Business Server 2019
 
@@ -45,12 +45,12 @@ Cloud Voicemail non fornisce funzionalità di messaggistica vocale per i sistemi
 
 Con Skype for Business Server 2019, ci muoviamo dalla messaggistica unificata di Exchange Online alla segreteria telefonica cloud. Quando un utente viene spostato in un server Skype for business 2019, inizierà automaticamente a utilizzare la segreteria telefonica cloud quando viene configurato per la segreteria telefonica ospitata. Se si sta attualmente utilizzando la messaggistica unificata di Exchange Online, non è necessario eseguire altre attività se non spostare un utente in Skype for Business Server 2019 per iniziare a usare Cloud Voicemail. Tuttavia, esistono alcune modifiche alla funzionalità che è necessario tenere presenti:
 
-- Operatore automatico organizzativo (la sostituzione per l'operatore automatico nella messaggistica unificata di Exchange Online) non è disponibile in GA, ma sarà disponibile in un secondo momento in 2018.
+- Operatore automatico organizzativo è la sostituzione per l'operatore automatico nella messaggistica unificata di Exchange Online.
 - Le impostazioni della segreteria telefonica degli utenti in Outlook sul Web non si applicano alla segreteria telefonica cloud.
 
 ## <a name="on-premises-um-migration-scenarios"></a>Scenari di migrazione della messaggistica unificata locale
 
-Sono supportati gli scenari seguenti che consentono di eseguire la migrazione degli utenti sia a Exchange 2019 che alla segreteria telefonica cloud. Successivamente, in 2018, verranno supportati ulteriori scenari che consentono di eseguire la migrazione da altre versioni di Exchange e Skype for Business Server. Verranno inoltre fornite altre funzionalità, ad esempio l'operatore automatico dell'organizzazione.
+Sono supportati gli scenari seguenti che consentono di eseguire la migrazione degli utenti sia a Exchange 2019 che alla segreteria telefonica cloud.
 
 - Exchange 2013/Exchange 2016 e Skype for Business Server 2015 a Exchange 2019 e Skype for Business Server 2019
 - Skype for Business Server 2015 to Skype for Business Server 2019 con Exchange 2013/Exchange 2016
@@ -68,7 +68,7 @@ L'ordine in cui si spostano gli utenti in Exchange 2019 e Skype for Business Ser
 | Cassetta postale che si trova su:            | Utente che si trova su Skype for Business Server 2015 | Utente che si trova su Skype for Business Server 2019  |
 |--------------------------------|-----------------------------------------|------------------------------------------|
 | Exchange 2013/Exchange 2016    | Messaggistica unificata                             | Messaggistica unificata                              |
-| Exchange 2019                  | Non supportato                           | Segreteria telefonica cloud                          |
+| Exchange 2019                  | Non supportato                           | Cloud Voicemail                          |
 
 Prima di iniziare la migrazione a Skype for Business Server 2019 ed Exchange 2019, tenere presente quanto segue:
 

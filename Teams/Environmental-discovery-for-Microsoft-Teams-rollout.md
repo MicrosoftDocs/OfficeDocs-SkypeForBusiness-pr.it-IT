@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7f49626f6526fe05aed81f39574a094347e0a3ae
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 68bd92067bffc2ed88e8a9d44e228ce442021b29
+ms.sourcegitcommit: 73518a589db1a9883fc97827f0ddb9132995fbfa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41834526"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42236676"
 ---
 <a name="environmental-discovery-for-a-microsoft-teams-rollout"></a>Individuazione ambientale per l'implementazione di Microsoft Teams
 ===================================================
@@ -31,8 +31,7 @@ L'individuazione è uno dei primi passaggi principali da eseguire durante la pia
 
 Si esegue una scoperta dettagliata dell'ambiente per comprendere meglio lo stato corrente e per rivelare eventuali difficoltà o, ancora di più, possibili bloccanti per l'esecuzione dell'implementazione del team.
 
-<a name="discovery-questionnaire"></a>Questionario di individuazione
-=======================
+## <a name="discovery-questionnaire"></a>Questionario di individuazione
 
 Il questionario di esempio seguente illustra una serie di domande per verificare che l'organizzazione sia pronta per l'implementazione corretta di servizi di audioconferenza e telefono con funzionalità per i piani di chiamata in teams.
 

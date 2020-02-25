@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Scopri quali informazioni vengono inviate automaticamente agli utenti tramite posta elettronica quando le impostazioni dei servizi di conferenza telefonica con accesso esterno vengono modificate in Microsoft teams. '
-ms.openlocfilehash: 0c0764a3787fa6431d07125b607bf9916f7f8ccf
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 28dcf8e166eff4a8852dd1ad77828213dc88fd05
+ms.sourcegitcommit: 73518a589db1a9883fc97827f0ddb9132995fbfa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41835006"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42236866"
 ---
 # <a name="emails-sent-to-users-when-their-settings-change-in-microsoft-teams"></a>Messaggi di posta elettronica inviati agli utenti quando cambiano le impostazioni in Microsoft Teams
 
@@ -64,7 +64,7 @@ Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica
   
 - **Una licenza dell'utente è stata rimossa o quando il provider di servizi di audioconferenza viene modificato da Microsoft a altri provider o nessuno.**
 
-    Si verifica quando la licenza di **Audioconferenza** viene rimossa da un utente o quando si modifica il provider di servizi di audioconferenza di un utente da Microsoft a un provider di servizi di audioconferenza di terze parti o quando si imposta il provider su **Nessuno**. Questo messaggio di posta elettronica contiene le istruzioni e informazioni che consentono all'utente di utilizzare lo strumento di aggiornamento delle riunioni di Skype for Business online per rimuovere informazioni specifiche di audioconferenze, ad esempio il numero di telefono di conferenza predefinito o l'ID conferenza.
+    Questo problema si verifica quando **la licenza di audioconferenza viene** rimossa da un utente o quando si imposta il provider di servizi di audioconferenza su **nessuno**.
 
     Consulta la sezione [Assegnare o rimuovere licenze per Office 365 per le aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
 

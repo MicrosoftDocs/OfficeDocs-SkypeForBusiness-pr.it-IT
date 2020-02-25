@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - ms.teamsadmincenter.audioconferencing.overview
-ms.openlocfilehash: 1a9863f1566b06c46b2788bb484d8a4672b6cdbf
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 9a92715af20e2e27a4b5051bfeab461a61efdacf
+ms.sourcegitcommit: 73518a589db1a9883fc97827f0ddb9132995fbfa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826294"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "42236816"
 ---
 # <a name="audio-conferencing-in-office-365"></a>Audioconferenza in Office 365
 I servizi di audioconferenza in Office 365 consentono agli utenti di effettuare una chiamata alle riunioni dai loro telefoni. I servizi di audioconferenza permettono fino a 250 partecipanti al telefono.
@@ -47,7 +47,7 @@ You only need to set up Audio Conferencing for people who plan to schedule or le
 Dopo che i partecipanti hanno partecipato a una riunione, possono anche effettuare chiamate in uscita e invitare altri chiamanti in una riunione Skype for business o Microsoft teams. Vedere [chiamata in uscita da una riunione teams in modo che gli altri utenti possano partecipare](dialing-out-from-a-teams-meeting-so-other-people-can-join-it.md) o effettuare [una chiamata da una riunione Skype for business in modo che altri utenti possano partecipare](/SkypeForBusiness/audio-conferencing-in-office-365/dialing-out-from-a-meeting-so-other-people-can-join-it).
 
 ## <a name="what-does-it-cost"></a>Quali sono i costi?
-Per informazioni sui prezzi, consulta [Prezzi per Audioconferenza](https://products.office.com/skype-for-business/audio-conferencing#Requirements).
+Per informazioni sui prezzi, consulta [Prezzi per Audioconferenza](https://products.office.com/microsoft-teams/online-meeting-solutions#customerstoryregion2).
 
 ## <a name="where-is-it-available"></a>Dove è disponibile?
 Con i servizi di audioconferenza, gli utenti possono usare numeri di telefono a pedaggio e senza pedaggio per accedere alle riunioni. I numeri a pagamento vengono automaticamente assegnati come numeri di servizi di audioconferenza condivisi alle organizzazioni quando sono abilitati per la conferenza audio. I numeri verdi e a tariffa dedicati possono essere assegnati all'organizzazione da altre città.

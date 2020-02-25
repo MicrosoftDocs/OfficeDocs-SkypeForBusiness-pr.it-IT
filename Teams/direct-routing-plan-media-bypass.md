@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Leggere questo argomento per informazioni su come pianificare il bypass multimediale con il routing diretto del sistema telefonico.
-ms.openlocfilehash: 7c7d82d1ac13ec1612403ba5fd20471e72173122
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c40840e2169a67172f006a0f0910c715feb40253
+ms.sourcegitcommit: bb88ac0c9489bb47957e5ef1074b5df3126b6fdb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42214488"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42265641"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
@@ -137,7 +137,7 @@ Nel percorso multimediale per le chiamate non ignorate per gli utenti finali | S
 Nel percorso multimediale per le chiamate ignorate per gli utenti finali | Mai | Se il client non riesce a raggiungere il SBC nell'indirizzo IP pubblico | 
 Nel percorso multimediale per le applicazioni vocali | Sempre | Mai | 
 Può eseguire la transcodifica (B2BUA)\* | Sì | No, inoltra solo l'audio tra gli endpoint | 
-Numero di istanze nel mondo e nella posizione | 8 totale: 2 in Stati Uniti Est e ovest; 2 in Amsterdam e Dublino; 2 a Hong Kong e Singapore; 2 in Giappone (aggiunta in Q1CY2019)  | Più
+Numero di istanze nel mondo e nella posizione | 8 totale: 2 in Stati Uniti Est e ovest; 2 in Amsterdam e Dublino; 2 a Hong Kong e Singapore; 2 in Giappone  | Più
 
 L'intervallo IP è 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254). 
 
