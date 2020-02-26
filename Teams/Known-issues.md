@@ -18,12 +18,12 @@ f1.keywords:
 description: Elenco corrente dei problemi noti riguardanti l’interfaccia di amministrazione e l'app client di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d0aafe4bcceca731825726d084e41fab37bb9931
-ms.sourcegitcommit: 93a8bd330c9a8ced81cd3eafb7b7236e9ed2066f
+ms.openlocfilehash: 6a80e9a360b28ed5d00fb02be3d34aab21fb0e2e
+ms.sourcegitcommit: bb88ac0c9489bb47957e5ef1074b5df3126b6fdb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2020
-ms.locfileid: "41962095"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "42265521"
 ---
 # <a name="known-issues-for-microsoft-teams"></a>Problemi noti di Microsoft Teams
 
@@ -51,7 +51,7 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
-|[L'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) potrebbe non funzionare se si usa la scheda "Sito Web" nell'app desktop<br/> |Se un sito Web, come un portale Intranet, include criteri di accesso condizionale (ad esempio le restrizioni relative agli indirizzi IP o al browser) potrebbe non essere visualizzato come scheda all'interno dell'app desktop di Teams. <br/> |Usare Teams in un browser invece dell'app desktop.  <br/> |01/07/2018  <br/> |
+|[L'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) potrebbe non funzionare se si usa la scheda "Sito Web" o "Azure DevOps" nell'app desktop.<br/> |Se un sito Web, ad esempio un portale Intranet, include criteri di accesso condizionale (come le restrizioni relative agli indirizzi IP o al browser o la conformità dei dispositivi) potrebbe non essere visualizzato come scheda all'interno dell'app desktop di Teams. <br/> |Usare Teams in un browser invece dell'app desktop.  <br/> |01/07/2018  <br/> |
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
@@ -82,11 +82,15 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
+|Dopo aver modificato la password dell'account utente, viene visualizzato un messaggio di errore: la password potrebbe essere stata cambiata o il server richiede nuovamente le informazioni di accesso. Questo si verificherà usando una nuova password. <br/> | Teams risolverà presto il problema con la distribuzione della correzione. <br/> | Disconnettersi e accedere nuovamente con credenziali non corrette. Dopo il messaggio di errore, immettere le credenziali corrette. <br/> |09/01/20  <br/> |
+
+|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
+|:-----|:-----|:-----|:-----|
 |Quando si prova ad accedere a Teams da Internet Explorer o Microsoft Edge, il programma si arresta in modo continuo o anomalo e non effettua l’accesso.   <br/> | L'organizzazione usa siti attendibili di Internet Explorer e l'applicazione basata sul Web di Teams non effettua correttamente l’accesso perché tali siti attendibili non sono consentiti per Teams. <br/>|Apportare le seguenti modifiche alle impostazioni di IE o dal pannello di controllo, con diritti di amministratore o con Oggetto Criteri di gruppo:<br/><ol><li>In **Opzioni Internet** &gt; **Privacy** &gt; **Impostazioni avanzate**, accettare i cookie di terze parti e dei siti Web visualizzati, quindi selezionare la casella **Accetta sempre i cookie della sessione**.</li><li>Fare clic su **Opzioni Internet** &gt; **Sicurezza** &gt; **Siti attendibili** &gt; **Siti**e aggiungere i seguenti indirizzi Web:<ul><li>https://login.microsoftonline.com</li><li>https://\*.teams.microsoft.com</li></ul></li></ol><br/><b>Nota</b>: convalidare e consentire sempre tutti gli URL attendibili per Teams e i requisiti del seguente documento sugli [intervalli degli indirizzi IP e URL di Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).   <br/> |01/11/2017  <br/> |
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
-|Microsoft Teams accederà sempre all'account computer di dominio.   <br/> |Se un utente dispone di due account di Teams diversi ed è dotato di un computer con opzione di accesso al dominio abilitata, Teams userà il profilo di dominio presente sul computer per l'accesso automatico dell'utente all’applicazione. Per passare all’altro account di Teams, l'utente deve disconnettersi manualmente dall'app e immettere le credenziali di accesso del secondo account. Se l'utente si disconnette dall’app e riavvia il computer, Teams effettuerà l'accesso automatico usando il profilo di dominio. <br/> | Non ci sono soluzioni alternative. <br/> |02/08/2017  <br/> |
+|Microsoft Teams accederà sempre all'account computer di dominio.   <br/> |Se un utente dispone di due account di Teams diversi ed è dotato di un computer con opzione di accesso al dominio abilitata, Teams userà il profilo di dominio presente sul computer per l'accesso automatico dell'utente all’applicazione. Per passare all’altro account di Teams, l'utente deve disconnettersi manualmente dall'app e immettere le credenziali di accesso del secondo account. Se l'utente si disconnette dall’app e riavvia il computer, Teams effettuerà l'accesso automatico usando il profilo di dominio. <br/> | Se gli utenti hanno eseguito l'accesso a un computer aggiunto a un dominio e non si vuole che il nome utente sia prepopolato nella schermata di accesso a Teams, gli amministratori possono impostare la chiave seguente del Registro di sistema di Windows per disattivare il prepopolamento del nome utente (UPN): Computer\HKEY_CURRENT_USER\Software\Microsoft\Office\Teams SkipUpnPrefill(REG_DWORD) 0x00000001 (1). Nota: la precompilazione del nome utente per i nomi che terminano in ".local" o ".corp" è disattivata per impostazione predefinita, pertanto non è necessario impostare una chiave del Registro di sistema. Riferimenti https://docs.microsoft.com/microsoftteams/sign-in-teams. <br/> |02/08/2017  <br/> |
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
