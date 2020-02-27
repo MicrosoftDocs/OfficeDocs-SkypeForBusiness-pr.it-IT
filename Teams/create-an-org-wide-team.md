@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 854294f1ddb8e677037c151e3f7b3cada6e31c16
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 99acc2e1756c0915f404f6bf6b1bfab1e30fcaf6
+ms.sourcegitcommit: 152eb7daacd0a36f42aa441633c12c7037a0969a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826754"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288734"
 ---
 # <a name="create-an-org-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
@@ -44,9 +44,10 @@ Questi tipi di account non verranno aggiunti al team a livello di organizzazione
 Dato che la directory dell'organizzazione viene aggiornata per includere nuovi utenti attivi o se gli utenti non lavorano più presso la società e il loro account è disabilitato, le modifiche vengono sincronizzate automaticamente e gli utenti vengono aggiunti o rimossi dal team. I membri del team non possono uscire da un team a livello di organizzazione. In qualità di proprietario del team, è possibile aggiungere o rimuovere manualmente gli utenti, se necessario.
 
 > [!NOTE]
-> - Se non si vede l'opzione a **livello** di organizzazione quando si crea un team e si è un amministratore globale, è possibile che la caratteristica venga ancora distribuita, che sia stato raggiunto il limite di cinque team a livello di organigramma oppure che la società possa avere più del limite di dimensione corrente dei membri di 5.000. Stiamo cercando di aumentare questo limite in futuro.
+> - Se non si vede l'opzione a **livello** di organizzazione quando si crea un team e si è un amministratore globale, è possibile che la caratteristica venga ancora distribuita, che sia stato raggiunto il limite di cinque team a livello di organigramma oppure che la società possa avere più del limite di dimensione corrente dei membri di 5.000. Stiamo cercando di aumentare questo limite in futuro. I team a livello di organizzazione non sono ancora disponibili per i team per l'istruzione.
 > - Le camere che non fanno parte di un elenco di chat room, attrezzature e risorse potrebbero essere aggiunte o sincronizzate con il team a livello di organizzazione. I proprietari del team possono facilmente rimuovere questi account dal team.
 > - Tutte le azioni del sistema per aggiungere o rimuovere membri vengono pubblicate nel canale generale. Il canale verrà contrassegnato anche come avente una nuova attività nel client teams.
+> - Creeremo automaticamente un team a livello di organizzazione per la tua azienda se l'organizzazione è nuova per i team e non ha più di 5.000 utenti. Il nome del team rifletterà il nome del tenant e avrà un canale generale. Gli amministratori globali possono modificare questo team come qualsiasi altro team. 
 
 ## <a name="best-practices"></a>Procedure consigliate
 

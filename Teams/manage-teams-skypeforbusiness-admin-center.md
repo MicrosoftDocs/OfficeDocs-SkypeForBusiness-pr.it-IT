@@ -20,12 +20,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Skype for Business Online
-ms.openlocfilehash: f1aba8c461ca2cbdd827fe071d5e0486ac24b5f4
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 31d39b1c65afad3bdbb000ff779b590d9f82ac38
+ms.sourcegitcommit: 152eb7daacd0a36f42aa441633c12c7037a0969a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41833126"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288634"
 ---
 <a name="manage-teams-during-the-transition-to-the-new-microsoft-teams-admin-center"></a>Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams.
 ======================================================
@@ -104,12 +104,12 @@ La tabella seguente mostra la posizione in cui è possibile gestire le caratteri
 |Impostazioni di accesso esterno     |    X    |      |       |
 |Gestione utenti    |         |         |    X     |    
 |Audioconferenza     |    X     |    X     |         |
-|Piani di chiamata     |         |    X     |         |
-|Sistema telefonico    |         |     X    |         |
-|Gestione di numeri di telefono     |         |   X      |         |
+|Piani di chiamata     |    X    |    X     |         |
+|Sistema telefonico    |    X    |     X    |         |
+|Gestione di numeri di telefono     |    X    |   X      |         |
 |Licenze per le caratteristiche di cloud Voice     |         |         |    X     |
-|Operatori automatici     |         |    X     |         |
-|Code di chiamata     |         |    X     |         |
+|Operatori automatici     |    X    |          |         |
+|Code di chiamata     |    X    |          |         |
 
 ## <a name="manage-settings-after-the-migration"></a>Gestire le impostazioni dopo la migrazione
 

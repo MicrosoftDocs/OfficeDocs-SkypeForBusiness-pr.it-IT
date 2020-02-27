@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.quickstartteamsadmin
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c7c89b4abe53621ae217ecb3874df9a51a43a7ac
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+ms.openlocfilehash: 87de516afbd94a0d1784edd52efbcc5b10e262dd
+ms.sourcegitcommit: 29034bda30a8460eb18600785f785528d0944041
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160700"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "42285828"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -226,7 +226,7 @@ Teams si basa principalmente su Exchange Online, SharePoint Online e Skype for B
 
 | Chiedersi | Azione |
 |--------------|--------|
-|<br>Sarà necessario configurare l'accesso condizionale per Teams?|<ul><li>Per informazioni sul funzionamento dei criteri di accesso, vedere [Come funzionano i criteri di accesso condizionale per Teams?](security-compliance-overview.md#how-do-conditional-access-policies-work-for-teams)</li><li>Per configurare l'autenticazione a più fattori (MFA) per Teams, vedere:<ul><li>[Guida introduttiva: Richiedere MFA per app specifiche con l'accesso condizionale di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-mfa)</li><li>[Informazioni di riferimento sulle impostazioni di accesso condizionale di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/technical-reference)</li></ul></ul>|
+|<br>Sarà necessario configurare l'accesso condizionale per Teams?|<ul><li>Per informazioni sul funzionamento dei criteri di accesso, vedere [Come funzionano i criteri di accesso condizionale per Teams?](security-compliance-overview.md#how-conditional-access-policies-work-for-teams)</li><li>Per configurare l'autenticazione a più fattori (MFA) per Teams, vedere:<ul><li>[Guida introduttiva: Richiedere MFA per app specifiche con l'accesso condizionale di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-mfa)</li><li>[Informazioni di riferimento sulle impostazioni di accesso condizionale di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/technical-reference)</li></ul></ul>|
 |||
 
 
