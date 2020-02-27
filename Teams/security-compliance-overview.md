@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.securityandcompliance
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 27c46949391ec37178985ab3ed4a08aebc7e5747
-ms.sourcegitcommit: 29034bda30a8460eb18600785f785528d0944041
+ms.openlocfilehash: 45e4c49824df9a098af5251d13234eae48db5619
+ms.sourcegitcommit: 152eb7daacd0a36f42aa441633c12c7037a0969a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42285738"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288624"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
@@ -111,8 +111,8 @@ I clienti possono sfruttare eDiscovery sul posto o [Advanced eDiscovery] per i l
 
 Durante le controversie, potrebbe essere necessario che tutti i dati associati a un utente (custode) o a un team vengano mantenuti come non modificabili, in modo che possano essere usati come elementi di prova per il caso. A questo scopo, è possibile inserire un utente (cassetta postale dell'utente) o un team in attesa legale. Per un blocco legale del team, la cassetta postale del team può essere inserita nelle seguenti esenzioni:
 
-- Blocco sul posto (un sottoinsieme della cassetta postale o della raccolta siti tramite query di destinazione o contenuto filtrato viene sospeso) oppure
-- Blocco per controversia legale (l'intera cassetta postale o raccolta siti viene inserita in blocco)
+- Blocco sul posto (un sottoinsieme della cassetta postale o della raccolta siti tramite query di destinazione o contenuto filtrato viene inserito) oppure
+- Blocco per controversia legale (l'intera cassetta postale o raccolta siti viene inserita in attesa).
 
 In entrambi i casi, una volta impostato il blocco, assicura che, anche se gli utenti finali eliminano o modificano i messaggi di canale presenti nella cassetta postale del gruppo, le copie non modificabili del contenuto vengono mantenute e disponibili tramite la ricerca eDiscovery. Le esenzioni legali vengono in genere applicate nel contesto di un caso di eDiscovery.
 
@@ -148,14 +148,14 @@ Nella figura seguente viene indicato il flusso di ingestione delle riunioni di t
 
 Per quanto riguarda le funzionalità di protezione delle informazioni, gli abbonamenti a Office 365 e le licenze autonome associate determineranno il set di caratteristiche disponibile.
 
-Per informazioni su come determinare le licenze necessarie per implementare le funzionalità per la sicurezza e la conformità, vedere: [licenze per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center)
+Per informazioni su come determinare le licenze necessarie per implementare le funzionalità per la sicurezza e la conformità, vedere la pagina relativa alle [licenze per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
 > [!NOTE]
 > La ricerca di contenuto e eDiscovery non devono essere abilitate nel centro sicurezza & conformità per il lavoro.
 
 ## <a name="location-of-data-in-teams"></a>Posizione dei dati in Teams
 
-I dati in teams si trovano nell'area geografica associata al tenant di Office 365. Per visualizzare le aree geografiche supportate attualmente, vedere [la posizione dei dati in Microsoft teams](location-of-data-in-teams.md)
+I dati in teams si trovano nell'area geografica associata al tenant di Office 365. Per visualizzare le aree geografiche supportate attualmente, vedere [la posizione dei dati in Microsoft teams](location-of-data-in-teams.md).
 
 Per informazioni sull'area geografica in cui sono alloggiati i dati per il tenant, visitare il**profilo dell'organizzazione****delle impostazioni** > dell'interfaccia di [Amministrazione](https://portal.office.com/adminportal/home) > di Microsoft 365. Scorrere verso il basso fino a **posizione dati**.
 
