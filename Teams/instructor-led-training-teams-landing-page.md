@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: ms.teamsadmincenter.dashboard.trainingvideos.instructorled
 ms.collection:
 - M365-collaboration
-ms.openlocfilehash: fcf6ee6bbf0f9d485a84007a01cd9ce0dfee9500
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 958ca112e52cefa31e122c02b47c76a68537d284
+ms.sourcegitcommit: 152eb7daacd0a36f42aa441633c12c7037a0969a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836606"
+ms.lasthandoff: 02/27/2020
+ms.locfileid: "42288724"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -174,7 +174,7 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
         </a>
     </li>
     <li>
-        <a href="https://microsoftteams.eventbuilder.com/FLW3"target="_blank">
+        <a href="https://microsoftteams.eventbuilder.com/FLWValueWebinar"target="_blank">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -184,9 +184,9 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Operatori sul campo con Teams</h3>
-                        <p>Scopri le funzionalità per gli operatori sul campo in Teams.</p>
-                        <p><i>Gruppo di destinatari: utenti finali</i></p>
+                        <h3>Grandi vantaggi per gli operatori sul campo con Teams</h3>
+                        <p>Altre informazioni su come Teams consente una trasformazione digitale che porta un potenziale illimitato a tutta la forza lavoro.</p>
+                        <p><i>Gruppo di destinatari: business decision maker, IT decision maker</i></p>
                     </div>
                 </div>
             </div>

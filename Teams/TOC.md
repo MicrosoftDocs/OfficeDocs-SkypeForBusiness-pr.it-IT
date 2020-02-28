@@ -263,10 +263,10 @@
 
 ### Configurare l'instradamento diretto
 #### [Panoramica](direct-routing-configure.md)
-#### [Connettere SBC all'instradamento diretto](direct-routing-connect-the-sbc.md)
-#### [Abilitare gli utenti per l'instradamento diretto, le opzioni vocali e la segreteria telefonica](direct-routing-enable-users.md)
-#### [Configurare il routing vocale](direct-routing-voice-routing.md)
-#### [Tradurre i numeri di telefono](direct-routing-translate-numbers.md)
+#### [Passaggio 1: Connettere un controller SBC](direct-routing-connect-the-sbc.md)
+#### [Passaggio 2: Abilitare gli utenti](direct-routing-enable-users.md)
+#### [Passaggio 3: Configurare il routing vocale](direct-routing-voice-routing.md)
+#### [Passaggio 4: Tradurre i numeri di telefono](direct-routing-translate-numbers.md)
 #### [Configurare un SBC per più tenant](direct-routing-sbc-multiple-tenants.md)
 #### [Come usare i dispositivi analogici con l'instradamento diretto](direct-routing-analog-devices.md)
 
@@ -638,11 +638,11 @@
 <!-- ============================================================ -->
 
 # Sicurezza e conformità
+## [Panoramica](security-compliance-overview.md)
 ## Sicurezza
 ### [Modelli di identità e autenticazione](identify-models-authentication.md)
 ### [Accedere a Teams con l'autenticazione moderna](sign-in-teams.md)
 ## Conformità
-### [Panoramica](security-compliance-overview.md)
 ### [Barriere informative](information-barriers-in-teams.md)
 ### [Criteri di conservazione](retention-policies.md)
 ### [Prevenzione della perdita di dati](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
