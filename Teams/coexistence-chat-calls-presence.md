@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Questo documento descrive il comportamento della chat, il routing delle chiamate e la presenza tra gli utenti di teams e Skype for business, sia in-tenant che federati, in base alle modalità di TeamsUpgrade assegnate. Include le ottimizzazioni del routing, il comportamento della presenza, nonché la modifica della modalità di TeamsUpgrade predefinita da *legacy* a *Islands* e l'imminente pensionamento di *legacy*.
-ms.openlocfilehash: 442b4b68b9739d9d17d02e298b53c5d9ecec3c8f
-ms.sourcegitcommit: 73518a589db1a9883fc97827f0ddb9132995fbfa
+ms.openlocfilehash: 64889ae11b4ce8665fb4a6bdbb98ff95aaf777fc
+ms.sourcegitcommit: c16451519e05b47bbb77e09dacd13ff212617e91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42236826"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42328018"
 ---
 # <a name="coexistence-with-skype-for-business"></a>Coesistenza con Skype for Business
 
@@ -56,7 +56,7 @@ I parametri che determinano il metodo di routing del thread sono i seguenti:
     - La comunicazione teams to teams è sempre possibile in-tenant.
 
 > [!NOTE]
-> Attualmente, tutte le federazioni che coinvolgono teams sfruttano la pipeline della Federazione di Skype for business e teams-interoperabilità Skype for business. Stiamo pianificando team nativi-Federazione teams. Il documento presente verrà aggiornato al rilascio della Federazione nativa.
+> Se il destinatario e il mittente sono entrambi in modalità di aggiornamento di TeamsOnly, la conversazione sarà un'esperienza di chat nativa che include tutte le funzionalità di messaggistica e chiamata avanzate. Per altre informazioni, leggere l' [esperienza di chat nativa per gli utenti esterni (federati) in teams](native-chat-for-external-users.md). Se uno dei partecipanti alla conversazione non è in modalità di aggiornamento di TeamsOnly, la conversazione rimane un'esperienza di interoperabilità con i messaggi di solo testo.
 
 ## <a name="chat-and-call-routing"></a>Chat e routing delle chiamate
 

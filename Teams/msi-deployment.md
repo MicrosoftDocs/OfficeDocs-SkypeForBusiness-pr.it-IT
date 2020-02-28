@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bc57222f56235c71c676f952cb0dd5aa149dc4e3
-ms.sourcegitcommit: df552697ae9c8c01c40f816bbe98b251db147199
+ms.openlocfilehash: c048e321241f4403fbb69f71e56b3fc179346951
+ms.sourcegitcommit: c16451519e05b47bbb77e09dacd13ff212617e91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42277979"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42327828"
 ---
 # <a name="install-microsoft-teams-using-microsoft-endpoint-configuration-manager"></a>Installare Microsoft teams con Microsoft endpoint Configuration Manager
 
@@ -55,9 +55,9 @@ I team possono anche essere inclusi in una distribuzione di Office 365 ProPlus. 
 
 ### <a name="pc-installation"></a>Installazione del PC
 
-Il programma di installazione di teams MSI verrà collocato nei file di programmazione. Ogni volta che un utente accede a un nuovo profilo utente di Windows, verrà avviato il programma di installazione e verrà installata una copia dell'app teams nella cartella AppData dell'utente. Se un utente ha già installato l'app teams nella cartella AppData, il programma di installazione MSI ignorerà il processo per l'utente.
+Il programma di installazione di teams MSI verrà collocato nei file di programmazione. Ogni volta che un utente accede a un nuovo profilo utente di Windows, verrà avviato il programma di installazione e verrà installata una copia dell'app teams nella `AppData` cartella dell'utente. Se un utente ha già installato l'app teams nella `AppData` cartella, il programma di installazione MSI ignorerà il processo per l'utente.
 
-Non usare il file MSI per distribuire gli aggiornamenti, perché il client verrà aggiornato automaticamente quando viene rilevata una nuova versione disponibile nel servizio. Per ridistribuire il programma di installazione più recente, usare il processo di ridistribuzione di MSI descritto di seguito.Se si distribuisce una versione precedente del pacchetto MSI, il client verrà aggiornato automaticamente, ad eccezione degli ambienti VDI, quando possibile per l'utente. Se viene distribuita una versione molto vecchia, il file MSI attiverà un aggiornamento dell'app prima che l'utente possa usare teams.
+Non usare il file MSI per distribuire gli aggiornamenti, perché il client verrà aggiornato automaticamente quando viene rilevata una nuova versione disponibile nel servizio. Per ridistribuire il programma di installazione più recente, usare il processo di ridistribuzione di MSI descritto di seguito. Se si distribuisce una versione precedente del pacchetto MSI, il client verrà aggiornato automaticamente, ad eccezione degli ambienti VDI, quando possibile per l'utente. Se viene distribuita una versione molto vecchia, il file MSI attiverà un aggiornamento dell'app prima che l'utente possa usare teams.
 
 > [!Important]
 > Non è consigliabile modificare le posizioni di installazione predefinite, perché questo potrebbe interrompere il flusso di aggiornamento. Una versione troppo vecchia impedirà alla fine di impedire agli utenti di accedere al servizio.
@@ -65,7 +65,7 @@ Non usare il file MSI per distribuire gli aggiornamenti, perché il client verr�
 #### <a name="target-computer-requirements"></a>Requisiti del computer di destinazione
 
 - .NET Framework 4,5 o versione successiva
-- Windows 7 o versioni successive
+- Windows 8,1 o versione successiva
 - Windows Server 2012 R2 o versioni successive
 - 3 GB di spazio su disco per ogni profilo utente (scelta consigliata)
 
@@ -78,7 +78,7 @@ Per istruzioni complete su come distribuire l'app desktop teams su VDI, vedere [
 Se un utente disinstalla teams dal proprio profilo utente, il programma di installazione MSI rileva che l'utente ha disinstallato l'app teams e non ha più installato Team per il profilo utente. Per ridistribuire team per l'utente in un determinato computer in cui è stata disinstallata, eseguire le operazioni seguenti:
 
 1. Disinstallare l'app teams installata per ogni profilo utente.
-2. Dopo la disinstallazione, eliminare la directory in modo ricorsivo in%localappdata%\Microsoft\Teams\.
+2. Dopo la disinstallazione, eliminare la directory in `%localappdata%\Microsoft\Teams\`modo ricorsivo in.
 3. Ridistribuire il pacchetto MSI in quel particolare computer.
 
 ## <a name="prevent-teams-from-starting-automatically-after-installation"></a>Impedire l'avvio automatico dei team dopo l'installazione

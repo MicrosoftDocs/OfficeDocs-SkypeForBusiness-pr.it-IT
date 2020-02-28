@@ -21,12 +21,12 @@ description: Informazioni su come gestire le assegnazioni nell'interfaccia di am
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1fb811540fc4e79c65d93eefb993fa7523a39aff
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: ad9e3f8b0f2f3800c7394a9d4dc21fe7a2058426
+ms.sourcegitcommit: c16451519e05b47bbb77e09dacd13ff212617e91
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827824"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42327998"
 ---
 # <a name="assignments-in-teams-for-education"></a>Assegnare attività in Teams per l'istruzione
 
@@ -40,7 +40,6 @@ Con le impostazioni di amministratore nell'interfaccia di amministrazione di Mic
 
 <a name="#bkemaildigest"> </a>
 ### <a name="weekly-guardian-email-digest"></a>Digest della posta elettronica Guardian settimanale
-[!INCLUDE [preview-feature](../includes/preview-feature.md)]
 
 I messaggi di posta elettronica Guardian sono inviati settimanalmente ai genitori o ai tutori degli studenti. I messaggi di posta elettronica conterranno informazioni sulle assegnazioni della settimana precedente e per la settimana successiva e verranno inviate durante il fine settimana. I messaggi di posta elettronica devono essere aggiornati dagli amministratori tramite la funzionalità School Data Sync.
 
@@ -58,7 +57,6 @@ Questa impostazione è disinserita per impostazione predefinita.
 
 <a name="#turnitin"> </a>
 ### <a name="turnitin"></a>Turnitin
-[!INCLUDE [preview-feature](../includes/preview-feature.md)]
 
 Turnitin è un servizio di rilevamento del plagio. Si tratta di un prodotto o un servizio di terze parti soggetto ai propri termini e alla propria politica sulla privacy. L'utente è responsabile dell'uso di prodotti e servizi di terze parti.
 
