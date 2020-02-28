@@ -695,6 +695,7 @@
 
 ## Installare Teams
 ### [Ottenere client per Teams](get-clients.md)
+### [Ottenere Teams per Android in Cina](get-teams-android-in-china.md)
 ### [Requisiti hardware per l'app Teams](hardware-requirements-for-the-teams-app.md)
 ### [Consigli relativi all'hardware per encoder e decoder](hardware-decoders-and-encoders.md)
 ### [Installare Teams con MSI](msi-deployment.md)
