@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: cc2fbf41-a7e0-4ef8-a939-47bc42da5529
 description: 'Riepilogo: informazioni sulle considerazioni da prendere in considerazione quando si pianifica il dashboard qualità chiamata.'
-ms.openlocfilehash: 25342998332a596abce9ecd02e63e153be6e6d94
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 63b69d64624d13253badf1d3e6f44535afdc0993
+ms.sourcegitcommit: 35de08b532eb7cf58c3221210c2b3b52f8aa047e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029417"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "42339441"
 ---
 # <a name="plan-for-call-quality-dashboard-for-skype-for-business-server"></a>Pianificare il dashboard per la qualità delle chiamate per Skype for Business Server 
  
@@ -195,9 +195,9 @@ In questa sezione si presuppone la presenza di un singolo database di QoEMetrics
 
 |**Computer**|**Core della CPU**|**RAM**|**Archivio QoE e cubo sullo stesso disco**|**Archivio QoE e SQL Temp DB sullo stesso disco**|
 |:-----|:-----|:-----|:-----|:-----|
-|Macchina virtuale  <br/> |4   <br/> |7 GB  <br/> |Sì  <br/> |Sì  <br/> |
-|4 core  <br/> |4   <br/> |20 GB  <br/> |Sì  <br/> |No  <br/> |
-|8 core  <br/> |8   <br/> |32 GB  <br/> |Sì  <br/> |No  <br/> |
+|Macchina virtuale  <br/> |4  <br/> |7 GB  <br/> |Sì  <br/> |Sì  <br/> |
+|4 core  <br/> |4  <br/> |20 GB  <br/> |Sì  <br/> |No  <br/> |
+|8 core  <br/> |8  <br/> |32 GB  <br/> |Sì  <br/> |No  <br/> |
 |16 core  <br/> |16   <br/> |128 GB  <br/> |No  <br/> |No  <br/> |
    
 **Risultati delle prestazioni**
@@ -296,15 +296,10 @@ add-windowsfeature Web-Server, Web-Static-Content, Web-Default-Doc, Web-Asp-Net,
 
 Sono supportate le versioni di SQL Server seguenti:
   
-- SQL Server 2012
-    
-- SQL Server 2014
-
-- SQL Server 2016
-
-- SQL Server 2017
-
-- SQL Server 2019 (solo CQD di Skype for Business Server 2019)
+|||
+|:-----|:-----|
+| CQD 2015 <br/> |  SQL Server 2012, SQL Server 2014, SQL Server 2016  |
+|CQD 2019 <br/> |  SQL Server 2017, SQL Server 2019  |
     
 La Business Intelligence o Enterprise Edition è consigliata per motivi di prestazioni. Queste edizioni consentono l'utilizzo di più file di partizione che possono essere elaborati in parallelo, il che è utile per l'elaborazione dei dati che si estendono su più mesi o più. 
   

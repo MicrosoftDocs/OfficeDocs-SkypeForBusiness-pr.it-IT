@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.securityandcompliance
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 45e4c49824df9a098af5251d13234eae48db5619
-ms.sourcegitcommit: 152eb7daacd0a36f42aa441633c12c7037a0969a
+ms.openlocfilehash: 5b687d528f7cb593039fdafd9dcc6ec08ec66372
+ms.sourcegitcommit: 6cfaadec5782ca7316db36472bd0be20217da693
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288624"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341644"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
@@ -56,7 +56,7 @@ Modalità di gestione del contenuto interessato dopo il rilevamento dipende dall
 
 ### <a name="safe-links"></a>Collegamenti sicuri
 
-Mentre, in questo momento, i collegamenti sicuri ATP non sono disponibili in Microsoft teams, dovrebbero diventare disponibili in una data successiva e, in questo caso, aggiorniamo questo contenuto in modo da farvi sapere. Nel frattempo, per informazioni sui collegamenti sicuri di Office 365, consultare i [collegamenti sicuri di Office 365 ATP](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links#how-to-get-atp-safe-links-protection).
+Mentre, in questo momento, i collegamenti sicuri ATP non sono disponibili in Microsoft teams, ora sono in anteprima pubblica tramite il nostro programma di adozione della tecnologia (TAP) e mentre una data di rilascio per la disponibilità generale non è impostata, verrà aggiornato questo articolo quando arriverà il momento. Per informazioni sui collegamenti sicuri di Office 365, vedere la pagina relativa ai collegamenti sicuri per [Office 365 ATP](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links#how-to-get-atp-safe-links-protection).
 
 ### <a name="how-conditional-access-policies-work-for-teams"></a>Funzionamento dei criteri di accesso condizionale per i team
 

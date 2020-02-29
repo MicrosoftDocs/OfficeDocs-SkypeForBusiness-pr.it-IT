@@ -15,12 +15,12 @@ f1.keywords:
 description: Informazioni sulle barriere informative e sul loro impatto sui team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0d5b5964f3fcf0f4d24fee44121f868d573eb6e9
-ms.sourcegitcommit: 93a8bd330c9a8ced81cd3eafb7b7236e9ed2066f
+ms.openlocfilehash: a3f4f7f256be21b9b3f8063ed34a25afb4af6971
+ms.sourcegitcommit: 6cfaadec5782ca7316db36472bd0be20217da693
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2020
-ms.locfileid: "41962135"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341854"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -38,14 +38,21 @@ I criteri barriera delle informazioni impediscono anche ricerche e individuazion
 
 Il driver principale per gli ostacoli alle informazioni proviene dal settore dei servizi finanziari. Il Financial Industry Regulatory Authority ([FINRA]( http://www.finra.org)) esamina le barriere di informazione e i conflitti di interesse nelle aziende membri e fornisce indicazioni su come gestire tali conflitti (FINRA 2241, [Nota di regolamentazione della ricerca del debito 15-31](http://www.finra.org/sites/default/files/Regulatory-Notice-15-31_0.pdf).  
 
-## <a name="when-should-i-use-information-barriers"></a>Quando usare le barriere informative
+Tuttavia, poiché l'introduzione di barriere informative, molti altri settori li hanno trovati come utili. Altri scenari comuni includono:
+
+- Istruzione: gli studenti di una scuola non sono in grado di cercare informazioni di contatto per gli studenti di altre scuole.
+- Legale: mantenere la riservatezza dei dati ottenuti dall'avvocato di un cliente dall'accesso di un avvocato per la stessa società che rappresenta un altro cliente.
+- Governo: l'accesso e il controllo delle informazioni sono limitati tra reparti e gruppi.
+- Servizi professionali: un gruppo di persone in una società può chattare solo con un cliente o un cliente specifico tramite la Federazione o l'accesso guest durante l'impegno del cliente.
+
+## <a name="when-to-use-information-barriers"></a>Quando usare le barriere informative
 
 Potresti voler usare le barriere informative in situazioni come queste:
 
 - Un team deve essere impedito di comunicare o condividere dati con un altro team specifico.
 - Un team non deve comunicare o condividere dati con altri utenti esterni al team.
 
-Il servizio di valutazione dei criteri barriera delle informazioni determina se una comunicazione è conforme ai criteri barriera delle informazioni. 
+Il servizio di valutazione dei criteri barriera delle informazioni determina se una comunicazione è conforme ai criteri barriera delle informazioni.
 
 ## <a name="managing-information-barrier-policies"></a>Gestione dei criteri di barriera delle informazioni
 
@@ -58,29 +65,28 @@ I criteri di barriera delle informazioni vengono gestiti nel centro protezione &
 
 Il ruolo Gestione conformità IB è responsabile della gestione dei criteri di barriera delle informazioni. Per altre informazioni su questo ruolo, vedere [autorizzazioni nel centro conformità & sicurezza di Office 365](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center).
 
-## <a name="when-are-information-barrier-policies-checked"></a>Quando vengono controllati i criteri barriera delle informazioni?
+## <a name="information-barrier-triggers"></a>Trigger della barriera delle informazioni
 
-I criteri di barriera delle informazioni vengono controllati quando si verificano gli eventi di Team seguenti:
+I criteri di barriera delle informazioni vengono attivati quando si verificano gli eventi di Team seguenti:
 
 - I **membri vengono aggiunti a un team** : ogni volta che si aggiunge un utente a un team, il criterio dell'utente deve essere valutato in base ai criteri di barriera delle informazioni di altri membri del team. Dopo che l'utente è stato aggiunto correttamente, l'utente può eseguire tutte le funzioni del team senza ulteriori controlli. Se i criteri dell'utente li bloccano dall'aggiunta al team, l'utente non verrà visualizzato nella ricerca.
 - **È richiesta una nuova chat** : ogni volta che viene richiesta una nuova chat tra due o più utenti, la chat viene valutata per verificare che non violi i criteri di barriera delle informazioni. Se la conversazione viola un criterio di barriera delle informazioni, la conversazione non viene avviata.
 - **Un utente è invitato a partecipare a una riunione** : quando un utente è invitato a partecipare a una riunione, i criteri dell'utente vengono valutati in base ai criteri di altri membri del team e, se c'è una violazione, l'utente non sarà autorizzato a partecipare alla riunione.
 - **Una schermata viene condivisa tra due o più utenti** : ogni volta che viene condivisa una schermata tra due o più utenti, la condivisione dello schermo deve essere valutata per verificare che non violi i criteri di barriera delle informazioni di altri utenti. Se si violano i criteri di barriera delle informazioni, la condivisione dello schermo non sarà consentita.
 - **Un utente inserisce una chiamata telefonica (VoIP) in teams** : ogni volta che viene avviata una chiamata vocale da un utente a un altro utente o gruppo di utenti, la chiamata viene valutata per assicurarsi che non violi i criteri di barriera delle informazioni di altri membri del team. In caso di violazione, la chiamata vocale è bloccata.
-- **Utenti guest in teams** -i criteri barriera delle informazioni si applicano agli utenti guest anche in teams. Se gli utenti Guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere [gestire l'accesso guest nei gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#can-i-make-guest-objects-visible-in-the-global-address-list). Una volta individuabili gli utenti guest, puoi [definire i criteri di barriera delle informazioni](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies). 
+- **Utenti guest in teams** -i criteri barriera delle informazioni si applicano agli utenti guest anche in teams. Se gli utenti Guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere [gestire l'accesso guest nei gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#can-i-make-guest-objects-visible-in-the-global-address-list). Una volta individuabili gli utenti guest, puoi [definire i criteri di barriera delle informazioni](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies).
 
-## <a name="what-happens-to-existing-chat-threads-when-a-policy-is-changed"></a>Cosa succede ai thread di chat esistenti quando viene modificato un criterio?
+## <a name="how-policy-changes-impact-existing-chats"></a>Modifica dell'impatto delle chat esistenti tra i criteri
 
 Quando l'amministratore dei criteri barriera delle informazioni apporta modifiche a un criterio o una modifica dei criteri viene applicata a causa di una modifica del profilo di un utente (ad esempio per una modifica del processo o un motivo simile), il servizio valutazione criteri barriera informazioni viene automaticamente Cerca i membri per verificare che i membri del team non violino i criteri.
 
-Se esiste una chat o altre comunicazioni esistenti tra gli utenti e viene impostato un nuovo criterio o viene modificato un criterio esistente, il servizio valuta le comunicazioni esistenti per verificare che le comunicazioni siano ancora consentite. 
+Se esiste una chat o altre comunicazioni esistenti tra gli utenti e viene impostato un nuovo criterio o viene modificato un criterio esistente, il servizio valuta le comunicazioni esistenti per verificare che le comunicazioni siano ancora consentite.
 
 - **chat di 1:1** -se la comunicazione tra i due utenti non è più consentita (se un criterio blocca la comunicazione viene applicato a uno o entrambi gli utenti), viene bloccata un'ulteriore comunicazione e la conversazione della chat diventa di sola lettura.
-- **Chat di gruppo** : se la comunicazione di un utente al gruppo non è più consentita (ad esempio, se un utente modifica i processi), l'utente, insieme agli altri utenti che violano il criterio, potrebbe essere rimosso dalla chat di gruppo e non sarà possibile comunicare ulteriormente con il gruppo. L'utente può ancora vedere le vecchie conversazioni (che saranno di sola lettura), ma non sarà in grado di vedere o partecipare a nuove conversazioni con il gruppo. Se i criteri nuovi o modificati che impediscono la comunicazione vengono applicati a più utenti, gli utenti interessati dal criterio potrebbero essere rimossi da una chat di gruppo. Possono ancora vedere le conversazioni precedenti. 
+- **Chat di gruppo** : se la comunicazione di un utente al gruppo non è più consentita (ad esempio, se un utente modifica i processi), l'utente, insieme agli altri utenti che violano il criterio, potrebbe essere rimosso dalla chat di gruppo e non sarà possibile comunicare ulteriormente con il gruppo. L'utente può ancora vedere le vecchie conversazioni (che saranno di sola lettura), ma non sarà in grado di vedere o partecipare a nuove conversazioni con il gruppo. Se i criteri nuovi o modificati che impediscono la comunicazione vengono applicati a più utenti, gli utenti interessati dal criterio potrebbero essere rimossi da una chat di gruppo. Possono ancora vedere le conversazioni precedenti.
 - **Team** -tutti gli utenti rimossi dal gruppo vengono rimossi dal team e non saranno in grado di vedere o partecipare a conversazioni esistenti o nuove.
 
-
-## <a name="what-will-users-experience-if-another-user-is-blocked"></a>Che cosa faranno gli utenti se un altro utente è bloccato?
+## <a name="scenario-a-user-in-an-existing-chat-becomes-blocked"></a>Scenario: un utente in una chat esistente viene bloccato
 
 Attualmente gli utenti avvertono quanto segue se un criterio barriera informativo blocca un altro utente:
 
@@ -94,11 +100,12 @@ Attualmente gli utenti avvertono quanto segue se un criterio barriera informativ
 - **Chiamate contatti** -un utente può vedere gli utenti bloccati nell'elenco contatti chiamate, ma gli utenti bloccati verranno identificati e l'unica azione che l'utente può eseguire è eliminarli.
 - **Migrazione di Skype to teams** -durante una migrazione di Skype for business a teams, tutti gli utenti, anche quelli bloccati da criteri di barriera delle informazioni, verranno migrati in teams e verranno gestiti come descritto sopra.
 
-## <a name="will-files-and-sharepoint-site-experiences-connected-to-teams-honor-ib-policy"></a>I file e le esperienze del sito di SharePoint sono connessi ai criteri per i team in onore IB?
- 
+## <a name="teams-policies-and-sharepoint-sites"></a>Criteri per i team e siti di SharePoint
+
 Quando viene creato un team, viene eseguito il provisioning di un sito di SharePoint e viene associato al team per l'esperienza dei file. L'accesso a questo sito e ai file di SharePoint rende omaggio alla IB dell'organizzazione, ovvero solo gli utenti il cui segmento IB corrisponde al criterio IB sono autorizzati ad accedere. Anche al momento della condivisione di file, viene rispettato il criterio IB.
 
-Ad esempio: in Contoso Bank Corporation, l'utente "Sesha@contosobank.onmicrosoft.com" appartiene al segmento di Investment Banking e l'utente "Nikita@contosobank.onmicrosoft.com" appartiene al segmento Advisory. I criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti. Quando l'utente Seshe crea un team per il segmento investment banking, il team e il sito di SharePoint che lo appoggiano saranno accessibili solo agli utenti del segmento investment banking. L'utente Nikita non può accedere al sito anche se ha il collegamento al sito.
+Ad esempio: in Contoso Bank Corporation, l'utente "Sesha@contosobank.onmicrosoft.com" appartiene al segmento di Investment Banking e l'utente "Nikita@contosobank.onmicrosoft.com" appartiene al segmento Advisory. I criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti.
+Quando l'utente Seshe crea un team per il segmento investment banking, il team e il sito di SharePoint che lo appoggiano saranno accessibili solo agli utenti del segmento investment banking. L'utente Nikita non può accedere al sito anche se ha il collegamento al sito.
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 
@@ -111,4 +118,3 @@ Per altri dettagli, inclusi i piani e i prezzi, vedere indicazioni per le [licen
 - Per configurare i criteri di barriera delle informazioni, vedere [definire i criteri per le barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies).
 
 - Per modificare o rimuovere i criteri di barriera delle informazioni, vedere [modificare o rimuovere i criteri di barriera delle informazioni](https://docs.microsoft.com/microsoft-365/compliance/information-barriers-edit-segments-policies.md)
-

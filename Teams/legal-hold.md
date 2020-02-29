@@ -15,12 +15,12 @@ f1.keywords:
 description: Imparerai a inserire un utente o un team di Microsoft teams in blocco legale usando il centro conformità & sicurezza e scopri cosa richiede un blocco legale in base ai requisiti dei dati.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6c46de971a63a212c0773f5048aeded697d05e0c
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.openlocfilehash: e3727ac3f6b9ded4c3dbb34a1977f9b99cbaf15e
+ms.sourcegitcommit: 6cfaadec5782ca7316db36472bd0be20217da693
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41863027"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341634"
 ---
 <a name="place-a-microsoft-teams-user-or-team-on-legal-hold"></a>Inserire un utente o un team di Microsoft teams in blocco legale
 ==================================================
@@ -59,7 +59,7 @@ Come guida utile, è possibile usare la tabella seguente per capire cosa occorre
 |Scenario  |Cosa posizionare in blocco  |
 |---------|---------|
 |**Contenuto della chat di Microsoft Teams da un utente (in chat di 1:1, 1: molti o chat di gruppo, conversazioni con canali privati e così via)**     |Cassetta postale dell'utente         |
-|**Chat di canale di Microsoft Teams (esclusi i canali privati**    |Cassetta postale del gruppo usata per il team         |
+|**Chat di canale di Microsoft Teams (esclusi i canali privati)**    |Cassetta postale del gruppo usata per il team         |
 |**Contenuto di Microsoft Teams (ad esempio wiki, file)**     |Sito di SharePoint usato dal team         |
 |**File di canale privato di Microsoft Teams**     |Sito di SharePoint canale privato dedicato     |
 |**Contenuto privato dell'utente**     |Sito di OneDrive for business dell'utente         |

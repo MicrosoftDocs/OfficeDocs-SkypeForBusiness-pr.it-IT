@@ -16,15 +16,15 @@ search.appverid: MET150
 description: Informazioni su come recuperare i dati di Microsoft teams dal log di controllo di Office 365.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3c1f82a7688e3fdde7be85004c717293cc5777fa
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 3f53d1a0b5e600de9d38233b243dba3486b88bf1
+ms.sourcegitcommit: 6cfaadec5782ca7316db36472bd0be20217da693
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826274"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341624"
 ---
-<a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams
-==================================================
+# <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams
+
 > [!IMPORTANT]
 > [!INCLUDE [new-teams-sfb-admin-center-notice](includes/new-teams-sfb-admin-center-notice.md)]
 
@@ -52,20 +52,43 @@ Prima di poter esaminare i dati di controllo, è necessario attivare prima di tu
 
 ## <a name="retrieve-teams-data-from-the-audit-log"></a>Recuperare i dati di teams dal log di controllo
 
-
-1.  Per recuperare i log di controllo, accedere al [centro conformità & sicurezza](https://go.microsoft.com/fwlink/?linkid=855775). In **ricerca**selezionare **Ricerca log di controllo**.
-
-
-
-2. Usare la **ricerca** per filtrare in base alle attività, alle date e agli utenti che si desidera controllare.
-
-3. Esportare i risultati in Excel per un'ulteriore analisi.
+1. Per recuperare i log di controllo, accedere al [centro conformità & sicurezza](https://go.microsoft.com/fwlink/?linkid=855775). In **ricerca**selezionare **Ricerca log di controllo**.
+1. Usare la **ricerca** per filtrare in base alle attività, alle date e agli utenti che si desidera controllare.
+1. Esportare i risultati in Excel per un'ulteriore analisi.
 
 > [!IMPORTANT]
 > I dati di controllo sono visibili solo nel log di controllo se è attivato il controllo.
 
+## <a name="external-user-scenario"></a>Scenario utente esterno
+
+Uno scenario in cui è consigliabile tenersi d'occhio, da un punto di vista aziendale, è l'aggiunta di utenti esterni all'ambiente teams. Se gli utenti esterni sono abilitati, è consigliabile monitorarne la presenza.
+
+![Screenshot di un elenco di eventi attivati dalle eliminazioni di massa](media/TeamsExternalUserAddPolicy.png)
+
+La schermata di questo criterio per il monitoraggio degli utenti esterni consente di assegnare un nome al criterio, impostare la gravità in base alle esigenze aziendali, impostarlo come (in questo caso) una singola attività e quindi stabilire i parametri che verranno monitorati in modo specifico solo nell'aggiunta di utenti non interni e limita questa attività a Microsoft teams.
+
+I risultati di questo criterio saranno quindi in grado di essere visualizzati nel log attività:
+
+![Screenshot di un elenco di eventi attivati dalle eliminazioni di massa](media/TeamsExternalUserList.png)
+
+Qui puoi rivedere le corrispondenze ai criteri impostati e apportare le eventuali modifiche necessarie oppure esportare i risultati per usarli altrove.
+
+## <a name="mass-delete-scenario"></a>Scenario di eliminazione di massa
+
+Come accennato in precedenza, è possibile monitorare gli scenari di eliminazione. È possibile creare un criterio che monitora l'eliminazione di massa dei siti di teams:
+
+![Screenshot della pagina di creazione dei criteri che mostra l'impostazione di un criterio per il rilevamento dell'eliminazione di massa del team](media/TeamsMassDeletePolicy.png)
+
+Come Mostra la schermata, è possibile impostare molti parametri diversi per questo criterio per monitorare le eliminazioni dei team, tra cui gravità, azione singola o ripetuta e parametri che limitano questa operazione ai team e all'eliminazione del sito. Questa operazione può essere eseguita indipendentemente da un modello oppure è possibile che sia stato creato un modello per la base dei criteri, a seconda delle esigenze dell'organizzazione.
+
+Dopo aver stabilito un criterio che funzionerà per l'azienda, è possibile esaminare i risultati nel log attività come vengono attivati gli eventi:
+
+![Screenshot di un elenco di eventi attivati dalle eliminazioni di massa](media/TeamsMassDeleteList.png)
+
+È possibile filtrare i criteri impostati per visualizzare i risultati di tale criterio. Se i risultati ottenuti nel registro attività non sono soddisfacenti (forse si verificano molti risultati o niente affatto), potrebbe essere utile ottimizzare la query per renderla più pertinente a ciò che è necessario.
+
 ## <a name="video-techtip-using-audit-log-search-in-teams"></a>Video: TechTip: uso della ricerca nel log di controllo in teams
 
-Partecipare a un responsabile del programma per Teams, che illustra come eseguire la ricerca di un log di controllo per i team nel centro conformità & sicurezza di Office 365. 
+Partecipare a un responsabile del programma per Teams, che illustra come eseguire la ricerca di un log di controllo per i team nel centro conformità & sicurezza di Office 365.
 
 > [!VIDEO https://www.youtube.com/embed/UBxaRySAxyE]

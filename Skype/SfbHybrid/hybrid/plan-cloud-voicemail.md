@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: In questo articolo vengono illustrati i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione del servizio Microsoft Cloud Voicemail. Per informazioni sulla configurazione del messaggio vocale cloud, vedere Configuring cloud Voicemail.
-ms.openlocfilehash: 82d9473e35b5c10fd2c50b783a89df64aed62cbe
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 07448ab8232115e19c01261dc487c04b5a2dd4f9
+ms.sourcegitcommit: 6cfaadec5782ca7316db36472bd0be20217da693
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42006021"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341759"
 ---
 # <a name="plan-cloud-voicemail-service-for-on-premises-users"></a>Pianificare il servizio di segreteria cloud per gli utenti locali
 
@@ -88,18 +88,13 @@ Se si prevede di distribuire Skype for Business Server 2019 e/o Exchange Server 
 - Exchange Server 2019 non fornisce più la funzionalità di messaggistica unificata di Exchange
 - Skype for Business Server 2019 non si integra più con la messaggistica unificata di Exchange Online
 
-La funzionalità di interoperabilità della versione e le topologie supportate per il messaggio vocale cloud sono elencate nella tabella seguente, che confronta le versioni di Skype for Business Server a cui l'utente potrebbe essere ospitato con la versione possibile che fornisce la propria cassetta postale di Exchange. Cloud Voicemail funziona solo con Skype for Business Server e Exchange Server 2019 o Exchange Online.
+La funzionalità di interoperabilità della versione e le topologie supportate per il messaggio vocale cloud sono elencate nella tabella seguente, che confronta le versioni di Skype for Business Server a cui l'utente potrebbe essere ospitato con la versione possibile che fornisce la propria cassetta postale di Exchange. Se si desidera utilizzare Skype for business 2019 con Exchange Online o Exchange Server 2019, è necessario utilizzare il messaggio vocale cloud.
 
 | | Exchange Server 2013 | Exchange Server 2016 | Exchange Server 2019 | Exchange Online   |
 |:---    |:--- |:--- |:--- |:---  |
-| Skype for Business Server 2019 | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Segreteria telefonica cloud | Segreteria telefonica cloud |
-| Skype for Business Server 2015 | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Segreteria telefonica Cloud<sup>1</sup> | Segreteria telefonica cloud <br> Messaggistica unificata di Exchange Online<sup>2</sup> |
-| Lync Server 2013 <br>  | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Non supportata | Segreteria telefonica cloud <br> Messaggistica unificata di Exchange Online<sup>2</sup> |
-
-<sup>1</sup> non è stata ancora visualizzata questa opzione? È attualmente in fase di rollforward e potrebbe non essere ancora disponibile nell'organizzazione. Vedere il passaggio 6, prendere in considerazione l'opt-in, nel [supporto della migrazione della messaggistica unificata di Exchange Online](/SkypeForBusiness/plan/exchange-unified-messaging-online-migration-support
-) per optare per la connettività pianificata alla segreteria telefonica cloud.
-
-<sup>2</sup> fino a quando non è stato deprecato. Per ulteriori informazioni, vedere Supporto per la [migrazione della messaggistica unificata di Exchange Online](../../sfbserver2019/plan/exchange-unified-messaging-online-migration-support.md) . 
+| Skype for Business Server 2019 | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Cloud Voicemail | Cloud Voicemail |
+| Skype for Business Server 2015 | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Cloud Voicemail | Cloud Voicemail |
+| Lync Server 2013 <br>  | Messaggistica unificata di Exchange Server | Messaggistica unificata di Exchange Server | Non supportata | Cloud Voicemail |
 
 Microsoft consiglia i percorsi di migrazione seguenti:
 

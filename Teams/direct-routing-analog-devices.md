@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Leggere questo articolo per informazioni su come usare i dispositivi analogici con il routing diretto di Microsoft Phone System.
-ms.openlocfilehash: c1720a7f702babbf677ab8f1de75014c629e6d76
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 525e898bd0eafe88d6893249465734d7c33a10b2
+ms.sourcegitcommit: 6cfaadec5782ca7316db36472bd0be20217da693
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42192169"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "42341796"
 ---
 # <a name="how-to-use-analog-devices-with-phone-system-direct-routing"></a>Come usare i dispositivi analogici con routing diretto del sistema telefonico
 
@@ -45,7 +45,7 @@ In questo esempio vengono illustrati i passaggi seguenti:
 4. Assegnare la route vocale all'utilizzo PSTN
 5. Abilitare l'utente online
 6. Assegnare il criterio della route vocale all'utente
-7. Assegnare un criterio per la route vocale a un dispositivo analogico
+7. Creare una route vocale per un dispositivo analogico
 
 Per informazioni su come connettere un ATA a un SBC e configurare il SBC, vedere la guida alla configurazione del produttore SBC:
 - [Documentazione di configurazione di AudioCodes](https://www.audiocodes.com/media/14278/connecting-audiocodes-sbc-with-analog-device-to-microsoft-teams-direct-routing-enterprise-model-configuration-note.pdf)
@@ -104,7 +104,7 @@ Questo comando assegna all'utente il criterio di routing vocale online per utent
 PS C:\> Grant-CsOnlineVoiceRoutingPolicy -Identity "exampleuser@contoso.com" -PolicyName "AnalogInteropPolicy" 
 ```
 
-## <a name="step-7--assign-a-voice-route-to-an-analog-device"></a>Passaggio 7: assegnare una route vocale a un dispositivo analogico
+## <a name="step-7--create-a-voice-route-for-an-analog-device"></a>Passaggio 7: creare una route vocale per un dispositivo analogico
 
 Questo comando crea una route vocale online con Identity "Analog-Interop" per l'intervallo di numeri + 1425 4XX XX XX applicabile a un elenco di gateway online sbc.contoso.com e lo associa all'utilizzo PSTN online "Interop".  Questo comando deve essere eseguito per ogni dispositivo analogico con il modello di numero di telefono appropriato. In alternativa, è possibile usare un modello di numero appropriato per i dispositivi analogici durante la configurazione della route vocale online durante uno dei passaggi precedenti.
 
