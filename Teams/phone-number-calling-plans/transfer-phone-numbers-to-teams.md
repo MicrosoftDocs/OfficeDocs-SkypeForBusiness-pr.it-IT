@@ -17,12 +17,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: ''
-ms.openlocfilehash: 0f846029002529d221b079140cf7de8ae618f26c
-ms.sourcegitcommit: f3d4f4aabe31c5516507dfacbbd61cf0ae362d46
+ms.openlocfilehash: b87684b6fbb73115540e20c72636200e61ca0e88
+ms.sourcegitcommit: c4f13aa4947df606d38694a7e544b08be7ce20d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42089739"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370415"
 ---
 # <a name="transfer-phone-numbers-to-microsoft-teams"></a>Trasferire i numeri di telefono in Microsoft Teams
 
@@ -87,7 +87,7 @@ Prima di iniziare, è consigliabile rivedere le informazioni in [un ordine di tr
 
 ## <a name="what-happens-next"></a>Cosa succede ora?
 
-Quando riceviamo l'ordine di trasferimento, riceverai un messaggio di posta elettronica che verifica la tua richiesta. La tua richiesta viene selezionata e aggiornata giornalmente e verrai avvisato dello stato di avanzamento e dello stato nella posta elettronica. Se la richiesta viene rifiutata, verrà richiesto di aprire un ticket di supporto.
+Quando riceviamo l'ordine di trasferimento, riceverai un messaggio di posta elettronica che verifica la tua richiesta. La tua richiesta viene selezionata e aggiornata giornalmente e verrai avvisato dello stato di avanzamento e dello stato nella posta elettronica. Se la richiesta di porta viene rifiutata dal vettore perdente, contattare il [servizio di assistenza PSTN](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md).
 
 Per visualizzare lo stato dell'ordine di trasferimento, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai a >**ordini di porta** **vocale** > e quindi fai clic su **cronologia**ordini. Ogni stato dell'ordine di porta è elencato nella colonna **stato** . Per altre informazioni, vedere [Qual è lo stato degli ordini di trasferimento?](port-order-status.md)
 

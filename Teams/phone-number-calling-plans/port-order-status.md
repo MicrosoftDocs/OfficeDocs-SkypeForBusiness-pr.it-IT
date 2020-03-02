@@ -17,12 +17,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: 'Learn how to get the status of your port orders, and what the different actions you can take on them. '
-ms.openlocfilehash: 2c141bab63990c39ef7fd08837eb4ad99d72682d
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 67a69ff2a86a57e16d157fa1a0b4b36ca3c2e036
+ms.sourcegitcommit: c4f13aa4947df606d38694a7e544b08be7ce20d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827954"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "42370405"
 ---
 # <a name="whats-the-status-of-your-port-orders"></a>Qual è lo stato degli ordini di portabilità?
 
@@ -36,13 +36,13 @@ La tabella seguente elenca gli Stati degli ordini di porta, nonché le azioni ch
 |**Contattando il vettore** <br/> |Sì  <br/> |No  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |L'ordine è stato ricevuto e approvato da Microsoft e stiamo lavorando con il gestore della perdita per farlo approvare.  <br/> |
 |**Trasferimento approvato** <br/> |Sì  <br/> |Impegno per l'ordine costante (UFC)  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |L'ordine è stato accettato dal vettore perdente e la data di UFC è stata impostata.  <br/> |
 |**Trasferimento in sospeso** <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |No  <br/> |No  <br/> |Il trasferimento è inferiore a 24 ore di distanza, quindi l'ordine non può più essere modificato o annullato.  <br/> |
-|**Errore** <br/> |No  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Sì (in questo momento non è possibile eliminare l'ordine di conversione se si verifica un errore. L'ordine di trasferimento deve essere ricreato oppure è necessario contattare la [Guida del servizio PSTN](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md).  <br/> |Il vettore perdente ha rifiutato l'ordine.  <br/> |
+|**Errore** <br/> |No  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Sì (in questo momento non è possibile eliminare l'ordine di conversione se si verifica un errore. È necessario ricreare l'ordine di trasferimento oppure contattare il [servizio di assistenza PSTN](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md).  <br/> |Il vettore perdente ha rifiutato l'ordine.  <br/> |
 |**Completato** <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |No  <br/> |No  <br/> |I numeri sono stati trasferiti correttamente.  <br/> |
 |**Annullata** <br/> |No  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |No  <br/> |L'amministratore ha annullato l'ordine.  <br/> |
 
 Per istruzioni dettagliate, vedere [trasferire i numeri di telefono in teams](transfer-phone-numbers-to-teams.md).
 
-Se è necessaria assistenza o se è necessario ottenere altri numeri di telefono, contattare la [Guida del servizio di assistenza PSTN](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md).
+Se serve aiuto o se è necessario ottenere altri numeri di telefono, contattare il [servizio di assistenza PSTN](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
