@@ -4,6 +4,8 @@
 
 # [Poster di soluzioni di telefonia e architettura](teams-architecture-solutions-posters.md)  
 
+# [Supporto di lavoratori remoti (WFH)](support-remote-work-with-teams.md)
+
 # Formazione 
 ## [Panoramica](training-microsoft-teams-landing-page.md)
 ## [Training con docente per Teams](instructor-led-training-teams-landing-page.md)
@@ -157,6 +159,7 @@
 #### [Modificare le impostazioni per un bridge per audioconferenza](change-the-settings-for-an-audio-conferencing-bridge.md)
 #### [Consultare un elenco di numeri di audioconferenza](see-a-list-of-audio-conferencing-numbers-in-teams.md)
 #### [Impostare le lingue degli operatori automatici per le audioconferenze](set-auto-attendant-languages-for-audio-conferencing-in-teams.md)
+#### [Configurare la chiamata esterna per una riunione per gli utenti](set-up-meeting-dial-out-confirmation.md)
 
 
 ### [Gestire le impostazioni di audioconferenza per l'organizzazione](manage-the-audio-conferencing-settings-for-my-organization-in-teams.md)
@@ -720,6 +723,7 @@
 ##### [Office 365 Enterprise E5](teams-add-on-licensing/office-365-enterprise-e5-with-audio-conferencing.md)
 ##### [Office 365 Enterprise E5 senza Audioconferenza](teams-add-on-licensing/office-365-enterprise-e5-without-audio-conferencing.md)
 ##### [GOV, EDU e organizzazioni no profit](teams-add-on-licensing/gov-edu-and-nonprofit-organizations.md)
+### [Gestire l’offerta Office 365 E1 Trial](e1-trial-license.md)
 ### [Gestire l'offerta Teams Commercial Trial](iw-trial-teams.md)
 ### [Gestire l'esperienza di Teams Exploratory](teams-exploratory.md)
 ### [Aggiornare Teams gratuitamente alla versione in abbonamento di Office 365](upgrade-freemium.md)
