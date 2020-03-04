@@ -16,21 +16,21 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: eb0998579c29cd7405319600c436468bac2ec4e8
-ms.sourcegitcommit: 73376693670d12f3d9038d4ed604e6685ee21984
+ms.openlocfilehash: f2629f855485f0301f6a7fc576cd17a9e1c1f49d
+ms.sourcegitcommit: bc2e0f6f2ed3802ecc67275594db221c61824458
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41917021"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "42398174"
 ---
 <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 =======================================================
 
-L'esperienza Microsoft Teams Exploratory consente agli utenti dell'organizzazione che hanno Azure Active Directory (AAD) e non hanno una licenza per Teams di iniziare a usare un'esperienza esplorativa di Teams. Gli amministratori possono attivare o disattivare questa funzionalità per gli utenti nell'organizzazione. L'esperienza Teams Exploratory corrisponde a quella che in precedenza veniva chiamata [Microsoft Commercial Cloud Trial](iw-trial-teams.md).
+L'esperienza Microsoft Teams Exploratory consente agli utenti dell'organizzazione che hanno Azure Active Directory (AAD) e non hanno una licenza per Teams di iniziare a usare un'esperienza esplorativa di Teams. Gli amministratori possono attivare o disattivare questa funzionalità per gli utenti nell'organizzazione. L'esperienza Teams Exploratory ha sostituito la precedente [Microsoft Commercial Cloud Trial](iw-trial-teams.md).
 
 ## <a name="whats-in-the-teams-exploratory-experience"></a>Che cosa include l'esperienza Teams Exploratory?
 
-I piani di servizio inclusi nell'esperienza Teams Exploratory sono:
+I piani di servizio che un amministratore visualizzerà nell'ambito dell'esperienza Teams Exploratory sono i seguenti:
  - Exchange Online (Piano 1)
  - Flow per Office 365
  - Insights by MyAnalytics
@@ -53,9 +53,10 @@ I piani di servizio inclusi nell'esperienza Teams Exploratory sono:
 
 ## <a name="whos-eligible"></a>Chi è idoneo
 
+Se l'utente ha un indirizzo di posta elettronica di dominio Azure Active Directory gestito e attualmente non ha o non gli è stata assegnata una licenza Teams, è idoneo per questa esperienza. Ad esempio, se un utente ha Office 365 Business, che non include Teams, è idoneo per l'esperienza di Teams Exploratory.
+
 Gli utenti devono essere abilitati all'iscrizione di app e versioni di valutazione (nell'interfaccia di amministrazione di Microsoft 365). Per altre informazioni, vedere [Gestire l'esperienza Teams Exploratory](#manage-the-teams-exploratory-experience) più avanti in questo articolo. 
 
-Gli utenti che non hanno una licenza di Office 365 che include Teams possono iniziare a usare l'esperienza Teams Exploratory. Ad esempio, se un utente ha Office 365 Business (che non include Teams), è idoneo per l'esperienza Teams Exploratory.
 
 ## <a name="who-isnt-eligible"></a>Chi non è idoneo
 
@@ -144,10 +145,18 @@ Per altre informazioni, vedere [Licenze di Office 365 per Microsoft Teams](Offic
 
 ## <a name="what-happens-to-legacy-microsoft-teams-commercial-cloud-trial-licenses"></a>Che cosa accade alle licenze Microsoft Teams Commercial Cloud Trial legacy?
 
-A partire dalla metà di gennaio 2020 gli utenti idonei possono iniziare a usare l'esperienza Microsoft Teams Exploratory. Tutte le licenze legacy di Teams Commercial Cloud Trial verranno convertite automaticamente alla nuova offerta prima della scadenza della versione di valutazione.
+A partire da febbraio 2020, gli utenti idonei possono iniziare a usare l'esperienza Microsoft Teams Exploratory più recente. Tutte le licenze legacy di Teams Commercial Cloud Trial verranno convertite automaticamente alla nuova offerta prima della scadenza della versione di valutazione.
 
 ### <a name="remove-a-teams-exploratory-license"></a>Rimuovere una licenza di Teams Exploratory
 
 - Se si vuole rimuovere questa licenza con PowerShell, vedere [Rimuovere le licenze dagli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell)
 
 - Se si vuole rimuovere questa licenza tramite il portale di amministrazione, vedere la pagina dedicata alla [rimozione delle licenze per gli utenti di Office 365 per le aziende](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide)
+
+## <a name="how-long-does-the-teams-exploratory-experience-last"></a>Qual è la durata dell'esperienza di Teams Exploratory?
+
+L'esperienza di Microsoft Teams Exploratory è disponibile senza costi aggiuntivi fino alla successiva data di scadenza o rinnovo del contratto aziendale a gennaio 2021 o successivamente. In quel momento, gli utenti finali di una licenza per un'esperienza Microsoft Exploratory dovranno passare a una licenza a pagamento che includa Teams. Tutte le licenze per l'esperienza Microsoft Exploratory iniziate successivamente rimarranno disponibili senza costi aggiuntivi fino alla successiva scadenza o rinnovo. 
+
+### <a name="what-happens-if-an-end-user-initiates-the-microsoft-teams-exploratory-experience-just-before-my-anniversary-or-renewal-date"></a>Cosa succede se un utente finale avvia l'esperienza di Microsoft Teams Exploratory poco prima della data di scadenza o di rinnovo?
+
+Le licenze per l'esperienza Microsoft Teams Exploratory iniziate entro 90 giorni dalla data di scadenza o rinnovo del contratto aziendale non dovranno passare a una licenza a pagamento fino alla successiva data di scadenza o rinnovo. 
