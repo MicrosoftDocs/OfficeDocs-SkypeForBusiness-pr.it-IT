@@ -621,8 +621,10 @@
 ##### [Specifica dell'interfaccia STU3](expand-teams-across-your-org/healthcare/stu3-interface.md)
 ##### [Connettere l'app Pazienti all'API di Azure per FHIR](expand-teams-across-your-org/healthcare/patients-app-connect-azure-api-fhir.md)
 #### [Log di controllo per l'app Pazienti](expand-teams-across-your-org/healthcare/patients-audit.md)
+
 ## [Teams per l'istruzione](expand-teams-across-your-org/teams-for-education-landing-page.md)
 ### [Guida introduttiva per amministratori - Teams per l'istruzione](teams-quick-start-edu.yml)
+### [Iniziare a usare l'apprendimento a distanza](remote-learning-edu.md)
 ### [Assegnare attività in Teams per l'istruzione](expand-teams-across-your-org/assignments-in-teams.md)
 ### [Risorse di Teams per l'istruzione per amministratori](resources-teams-edu.md)
 ### [Pacchetti di criteri di Microsoft Teams per l'istruzione per amministratori](policy-packages-edu.md)
