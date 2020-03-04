@@ -21,12 +21,12 @@ ms.custom:
 ms.collection:
 - M365-collaboration
 description: Informazioni su come gestire le impostazioni per le riunioni di team che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: bed367c9c40bb7124235abf204bbfa0395859685
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 920069ed5f5687111d51411afce9499a2d5db5d2
+ms.sourcegitcommit: ab6099547846f048f1c4cc584a8c5cb8c386d22e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836466"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "42413316"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni delle riunioni in Microsoft Teams
 
@@ -71,7 +71,9 @@ Se non si vuole che gli utenti anonimi partecipino alle riunioni pianificate dag
     - **URL legale** Se l'organizzazione ha un sito Web legale in cui si vuole che gli utenti possano rivolgersi per eventuali problemi legali, immettere l'URL qui.
     - **URL della Guida** Se l'organizzazione dispone di un sito Web di supporto a cui si vuole che gli utenti possano accedere in caso di problemi, immettere l'URL qui.
     - **Piè** di pagina Immettere il testo che si vuole includere come piè di pagina.
-3. Attendere un'ora o giù di lì per la propagazione delle modifiche. Pianificare quindi una riunione di teams per vedere l'aspetto dell'invito alla riunione.  
+3. Fare clic su **Anteprima invito** per visualizzare un'anteprima dell'invito alla riunione.
+4. Al termine, fare clic su **Salva**.
+5. Attendere un'ora o giù di lì per la propagazione delle modifiche. Pianificare quindi una riunione di teams per vedere l'aspetto dell'invito alla riunione.  
 
 ## <a name="set-how-you-want-to-handle-real-time-media-traffic-for-teams-meetings"></a>Impostare il modo in cui si vuole gestire il traffico multimediale in tempo reale per le riunioni di Teams
 
@@ -90,13 +92,13 @@ Se si usa la qualità del servizio [(QoS)](qos-in-teams.md) per definire la prio
     ![Screenshot delle impostazioni di rete per le riunioni nell'interfaccia di amministrazione](media/meeting-settings-network.png "Screenshot delle impostazioni di rete per le riunioni di team nell'interfaccia di amministrazione di Microsoft Teams")
 
     - Per consentire l'uso dei contrassegni di DSCP per QoS, attivare l'opzione **Inserisci indicatori di qualità del servizio (QoS) per il traffico multimediale in tempo reale**. Hai solo l'opzione di usare i marcatori o meno; non è possibile impostare indicatori personalizzati per ogni tipo di traffico. Per altre informazioni sugli indicatori DSCP, vedere [selezionare un metodo di implementazione QoS](QoS-in-Teams.md#select-a-qos-implementation-method) .
-    > [!NOTE] 
-    > L'attivazione degli **indicatori di qualità del servizio (QoS) per il traffico multimediale in tempo reale** consentirà anche di comunicare con il relay di trasporto con le porte UDP 3479 (audio), 3480 (video) e 3481 (condivisione).
+        > [!NOTE] 
+        > L'attivazione degli **indicatori di qualità del servizio (QoS) per il traffico multimediale in tempo reale** consentirà anche di comunicare con il relay di trasporto con le porte UDP 3479 (audio), 3480 (video) e 3481 (condivisione).
     - Per specificare gli intervalli di porte, accanto a **selezionare un intervallo di porte per ogni tipo di traffico multimediale in tempo reale**, selezionare **Specifica intervalli di porte**e quindi immettere le porte di inizio e fine per la condivisione di audio, video e dello schermo. Per implementare QoS è necessario selezionare questa opzione.
-    > [!IMPORTANT]
-    > Se si seleziona **Usa automaticamente le porte disponibili**, vengono usate le porte disponibili tra 1024 e 65535. Usare questa opzione solo quando non si implementa QoS.
-    >
-    > La selezione di un intervallo di porte troppo stretto consentirà di ricevere chiamate cadute e una qualità di chiamata scadente. Le raccomandazioni riportate di seguito devono essere minime.
+        > [!IMPORTANT]
+        > Se si seleziona **Usa automaticamente le porte disponibili**, vengono usate le porte disponibili tra 1024 e 65535. Usare questa opzione solo quando non si implementa QoS.
+        >
+        > La selezione di un intervallo di porte troppo stretto consentirà di ricevere chiamate cadute e una qualità di chiamata scadente. Le raccomandazioni riportate di seguito devono essere minime.
 
 Se non si è certi degli intervalli di porte da usare nell'ambiente, le impostazioni seguenti rappresentano un buon punto di partenza. Per altre informazioni, vedere [implementare la qualità del servizio (QoS) in Microsoft teams](QoS-in-Teams.md). Questi sono i contrassegni di DSCP necessari e gli intervalli di porte multimediali suggeriti usati da teams e ExpressRoute.
 
