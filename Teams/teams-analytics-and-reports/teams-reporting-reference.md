@@ -15,12 +15,12 @@ ms.collection:
 description: Informazioni sui report Team disponibili nell'interfaccia di amministrazione di Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fc5c3c3c5588abe0c3ee748bdcd8a5ba3a2bf302
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 080ddb1455a204b7dc96ddcac8d414a1d1b77228
+ms.sourcegitcommit: 095bed15ffe64c34e6c39770b5734d966d5d8a0f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827224"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42507964"
 ---
 # <a name="microsoft-teams-analytics-and-reporting"></a>Analisi e creazione di report di Microsoft Teams
 
@@ -28,7 +28,7 @@ Nell'interfaccia di amministrazione di Microsoft teams è disponibile una nuova 
 
 ## <a name="how-to-access-the-reports"></a>Come accedere ai report
 
-Per accedere ai report, è necessario essere un amministratore globale in Office 365, amministratore del servizio teams o amministratore di Skype for business.  Passare all'interfaccia di amministrazione di Microsoft teams, nella barra di spostamento sinistra, selezionare **analisi & report**e quindi in **report**scegliere il report che si vuole eseguire.
+Per accedere ai report, è necessario essere un amministratore globale in Office 365, amministratore del servizio Team, amministratore delle comunicazioni di teams o amministratore di Skype for business.  Passare all'interfaccia di amministrazione di Microsoft teams, nella barra di spostamento sinistra, selezionare **analisi & report**e quindi in **report**scegliere il report che si vuole eseguire.
 
 > [!NOTE]
 > I report nell'interfaccia di amministrazione di Microsoft teams sono distinti dai report attività per i team che fanno parte dei report di Office 365 nell'interfaccia di amministrazione di Microsoft 365. Per altre informazioni sui report attività nell'interfaccia di amministrazione di Microsoft 365, vedere [report attività in teams nell'interfaccia di amministrazione di microsoft 365](../teams-activity-reports.md)
@@ -43,7 +43,7 @@ Stiamo migliorando continuamente l'esperienza di creazione di report in teams e 
 |---------|---------|
 |[Report sull'utilizzo di Teams](teams-usage-report.md)  |  Utenti attivi<br/>Utenti attivi in team e canali<br/>Canali attivi<br/>Messaggi<br/>Impostazione della privacy di Teams<br/>Guest in un team   |
 |[Report sulle attività degli utenti di Teams](user-activity-report.md)  |  1:1 chiama un utente a cui ha partecipato<br/>Messaggi inviati da un utente in una chat del team<br/>Messaggi inviati da un utente in una chat privata<br/>Data ultima attività di un utente     |
-|[Report sull'uso dei dispositivi di Teams](device-usage-report.md)   |  Utenti di Windows:<br/>Utenti Mac<br/>utenti iOS<br/>Utenti di telefoni Android     |
+|[Report sull'uso dei dispositivi di Teams](device-usage-report.md)   |  Utenti di Windows<br/>Utenti Mac<br/>utenti iOS<br/>Utenti di telefoni Android     |
 |[Report sull'uso degli eventi live di Teams](teams-live-event-usage-report.md)   |  Visualizzazioni totali<br>Ora di inizio<br>Stato evento<br>Organizzatore<br>Relatore<br>Produttore<br>Impostazione di registrazione<br>Tipo di produzione    |
 |[Report utenti bloccati PSTN di Teams](pstn-blocked-users-report.md)   |  Nome visualizzato<br>Numero di telefono<br>Motivo<br>Tipo di azione<br>Data e ora di azione   |
 |[Report pool di minuti PSTN di Teams](pstn-minute-pools-report.md) |  Paese o area geografica<br>Funzionalità (licenza) <br>Minuti totali<br>Minuti usati<br>Minuti disponibili|

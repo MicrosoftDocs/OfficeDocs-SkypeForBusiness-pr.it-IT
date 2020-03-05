@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Microsoft sta ritirando il servizio di messaggistica unificata di Exchange Online (ExchUMO) entro il 28 febbraio 2020. In questo articolo vengono riepilogati i clienti coinvolti che devono conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: f6adb1636d6a40e41b006c3981dc4d21ba503289
-ms.sourcegitcommit: ed0ecb3b1250a23d3b91a5a33256aee1c3119db1
+ms.openlocfilehash: c39485de1acceef0dc340f039a1586b3e6014522
+ms.sourcegitcommit: 5fbb57c5f0692afcb8e65516c63b96814f51ca65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42374303"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417621"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata di Exchange Online
 
@@ -235,6 +235,8 @@ I nuovi utenti di Skype for business verranno automaticamente provisionati per l
 Per ulteriori informazioni sugli operatori automatici, vedere [configurare un operatore automatico cloud](https://docs.microsoft.com/microsoftteams/create-a-phone-system-auto-attendant).
 
 #### <a name="known-issues"></a>Problemi noti
+
+**Disabilitare l'accesso sottoscrittore dopo la migrazione per evitare l'incoerenza del messaggio** L'accesso sottoscrittore potrebbe continuare a funzionare per il tenant fino a quando il servizio è completamente ritirato, anche dopo che tutti gli utenti sono stati migrati nella segreteria telefonica cloud. Per evitare confusione tra gli utenti e un'esperienza incoerente, disabilitare l'accesso sottoscrittore dopo che i messaggi di saluto sono stati modificati dopo che la migrazione non avrà alcun effetto. A tale scopo, rimuovere il contatto EXUM per ogni riga di accesso del Sottoscrittore tramite Get-CsExUmContact |? {$_. IsSubscriberAccess vengono impostate-eq $true} | Remove-CsExUmContact 
 
 **Trasferimento di chiamata dell'operatore automatico a PSTN** I clienti sono invitati a configurare temporaneamente una soluzione per soddisfare i requisiti per il trasferimento di una chiamata all'operatore automatico a un numero PSTN esterno o a un'istanza di RGS. 
  
