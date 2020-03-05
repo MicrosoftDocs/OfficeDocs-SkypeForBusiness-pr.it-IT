@@ -8,40 +8,80 @@ ms.topic: article
 ms.service: msteams
 ms.collection:
 - M365-collaboration
-ms.reviewer: dansteve
+ms.reviewer: dansteve, anmich
 localization_priority: Priority
 search.appverid: MET150
 description: Usare questa guida per aiutare gli utenti dell'organizzazione che lavorano da remoto a essere produttivi con Microsoft Teams, in particolare se lavorano da casa in risposta all'epidemia di COVID-19 (Coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 80af76906697ef2510fe75d8764e8908cdbbd976
-ms.sourcegitcommit: ed0ecb3b1250a23d3b91a5a33256aee1c3119db1
+ms.openlocfilehash: b61052a7468e9fcc13f8c3812e1ec5c2aa21fb7a
+ms.sourcegitcommit: 5fbb57c5f0692afcb8e65516c63b96814f51ca65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42374313"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417611"
 ---
 # <a name="support-remote-workers-using-microsoft-teams"></a>Supporto per i lavoratori remoti con Microsoft Teams
 
-Usare le procedure consigliate contenute in questo articolo per supportare gli utenti che lavorano da remoto o da casa.
+Se l'organizzazione vuole iniziare a usare Microsoft Teams per supportare gli utenti che lavorano in remoto o da casa, Seguire le indicazioni di questo articolo per diventare rapidamente operativi.
 
-## <a name="technical"></a>Guide tecniche
+## <a name="it-admin-guidance"></a>Guida per gli amministratori IT
 
-1.  Assicurarsi che [Teams sia attivo per tutti gli utenti](assign-teams-licenses.md)
+-  Assicurarsi che **[Teams sia attivo per tutti gli utenti](assign-teams-licenses.md)**
     
-      - Consultare [Teams E1 Trial](e1-trial-license.md), [Teams Exploratory](teams-exploratory.md) o [Teams gratuito](https://support.office.com/article/Welcome-to-Microsoft-Teams-free-6d79a648-6913-4696-9237-ed13de64ae3c) per rendere Teams disponibile per tutti gli utenti dell'organizzazione.
+- Se non si hanno licenze di Teams per tutti, usare una di queste offerte per rendere disponibile Teams a tutti:
 
-      - I dipendenti remoti fanno un uso maggiore di riunioni e audioconferenze. Se questi carichi di lavoro non sono stati ancora distribuiti, vedere [Riunioni e conferenze in Teams](deploy-meetings-microsoft-teams-landing-page.md).
+   - Vedere **[Teams gratuito](https://support.office.com/article/Welcome-to-Microsoft-Teams-free-6d79a648-6913-4696-9237-ed13de64ae3c)** o la **[versione di valutazione E1 di Teams](e1-trial-license.md)**. La versione di valutazione E1 di Teams consente a un amministratore di distribuire Teams; per informazioni dettagliate, rivolgersi al proprio partner o al team dell'account Microsoft.
 
-2.  Informare gli utenti su Teams. Scaricare il [Customer Success Kit di Teams](https://download.microsoft.com/download/A/E/9/AE984CD4-CF4B-41E7-9ABD-6735E3F01897/MicrosoftTeamsCustomerSuccessKit.zip) per ottenere presentazioni, messaggi di posta elettronica di esempio, poster e guide introduttive.
+   - Anche [Teams Exploratory](teams-exploratory.md) può essere un'opzione. 
+
+- Comprendere come iniziare a usare le **[riunioni in Teams](https://docs.microsoft.com/MicrosoftTeams/tutorial-meetings-in-teams)** nell'organizzazione. 
+
+Per altre informazioni, vedere [Altre risorse per il supporto dei lavoratori remoti](#additional-resources-for-supporting-remote-workers) più avanti.
 
 
-5.  Assicurarsi che i dipendenti abbiano accesso a Internet e larghezza di banda adeguati per Teams. Per informazioni a questo proposito, vedere [Preparare la rete dell'organizzazione per Teams](prepare-network.md).
-    - La larghezza di banda limitata può influire sulla qualità audio nelle riunioni di Teams. Per garantire la miglior esperienza di riunione in condizioni di larghezza di banda ridotta, invitare gli utenti a limitare il video e usare la rete PSTN per le chiamate e l'audio della riunione. 
+## <a name="end-user-communications"></a>Comunicazioni con gli utenti finali
 
-    - Se si ha bisogno di assistenza per la risoluzione dei problemi relativi alla qualità delle chiamate o delle riunioni, seguire le indicazioni in [Problema noto: chiamare ID conferenza di Skype for Business/Teams](#known-issue-dialing-into-skype-for-business-or-teams-conference-ids) in fondo all'articolo.
+Pronti per distribuire Teams agli utenti? Scaricare il **[Customer Success Kit](https://download.microsoft.com/download/A/E/9/AE984CD4-CF4B-41E7-9ABD-6735E3F01897/MicrosoftTeamsCustomerSuccessKit.zip)**, che contiene questi utili modelli di messaggi di posta elettronica:
+
+- Usare il modello di annuncio **Announcement Email** per comunicare agli utenti la disponibilità di Teams
+
+- Inviare il messaggio di introduzione **Your First Day in Teams Email** per aiutare gli utenti a essere subito produttivi
+
+- Dopo pochi giorni, inviare il modello con suggerimenti **Tips and Tricks Email** per aiutare gli utenti a trarre il massimo vantaggio dai team
+
+## <a name="end-user-guidance"></a>Istruzioni per gli utenti finali
+
+Condividere queste risorse e video con gli utenti finali per aiutarli a iniziare rapidamente:
+
+- Guardare il **[video di benvenuto](https://support.office.com/article/video-welcome-to-microsoft-teams-b98d533f-118e-4bae-bf44-3df2470c2b12?wt.mc_id=otc_microsoft_teams)** per una panoramica di Teams.
+
+- Scaricare la **[Guida introduttiva](https://download.microsoft.com/download/D/9/F/D9FE8B9E-22F5-47BF-A1AB-09539C41FCD0/Teams%20QS.pdf)** per apprendere le basi di Teams
+
+- Guardare una serie di brevi **[video introduttivi](https://support.office.com/article/video-what-is-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d)** per una panoramica su Teams
+
+- Guardare i video sulle **[riunioni](https://support.office.com/article/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4)** per imparare a usare le riunioni in Teams
+
+
+## <a name="additional-resources-for-supporting-remote-workers"></a>Altre risorse per il supporto dei lavoratori remoti
+
+1. Assicurarsi che i dipendenti abbiano accesso a Internet e larghezza di banda adeguati per Teams. Per informazioni a questo proposito, vedere [Preparare la rete dell'organizzazione per Teams](prepare-network.md).
+   - La larghezza di banda limitata può influire sulla qualità audio nelle riunioni di Teams. Per garantire la miglior esperienza di riunione in condizioni di larghezza di banda ridotta, invitare gli utenti a limitare il video e usare la rete PSTN per le chiamate e l'audio della riunione. 
+
+   - Se si ha bisogno di assistenza per la risoluzione dei problemi relativi alla qualità delle chiamate o delle riunioni, seguire le indicazioni in [Problema noto - Cina: chiamare ID conferenza di Skype for Business/Teams](#known-issue---china-dialing-into-skype-for-business-or-teams-conference-ids) in fondo all'articolo.
 
 2.  [Inviare collegamenti alle risorse di formazione](enduser-training.md) per aiutare i dipendenti a sfruttare al meglio Teams.
+
+3. Approfondire: leggere altre informazioni sulla distribuzione di Teams.
+   - Se l'organizzazione è di medie dimensioni (500-5000 utenti), iniziare dai [workshop interattivi](teams-in-30-workshops.md) dal vivo
+
+   - Partecipare a uno dei [corsi online](instructor-led-training-teams-landing-page.md) per vedere Teams in azione e trovare risposte alle eventuali domande  
+
+   - Condividere [video di formazione approfonditi](https://www.youtube.com/playlist?list=PLXPr7gfUMmKzR7_jXN5s886apYoHNC3Xk) con gli utenti che vogliono saperne di più
+
+   - Leggere [Come implementare Teams](How-to-roll-out-teams.md) per prepararsi alla distribuzione e alla gestione di Teams
+
+
     
 3. Leggere i nuovi contenuti sul lavoro in remoto e condividerli con gli utenti:
         
@@ -49,38 +89,27 @@ Usare le procedure consigliate contenute in questo articolo per supportare gli u
 
       - [Collaborare con Office 365](https://support.office.com/article/Collaborate-with-Office-365-ac05a41e-0b49-4420-9ebc-190ee4e744f4)
 
-      - [Lavorare in remoto con Teams e Office 365](https://support.microsoft.com/help/4549995/working-remotely-with-teams-and-office-365)
 
-3.  Invitare tutti a [installare](get-clients.md#mobile-clients) e usare l'app per dispositivi mobili: [iOS](https://go.microsoft.com/fwlink/?LinkId=835758)   [Android](https://go.microsoft.com/fwlink/p/?linkid=2102168)
+3.  Invitare tutti a [installare](get-clients.md#mobile-clients) e usare l'app per dispositivi mobili: [iOS](https://go.microsoft.com/fwlink/?LinkId=835758) o [Android](https://go.microsoft.com/fwlink/p/?linkid=2102168)
 
     > [!NOTE]
-    > Se ci si trova in Cina, passare a [Ottenere Teams per Android in Cina](get-teams-android-in-china.md)
+    > Se ci si trova in Cina, passare a [Ottenere Teams per Android in Cina](get-teams-android-in-china.md).
+
+8. Usare Teams per rimanere in contatto con i dipendenti:
+   - [Team a livello di organizzazione](create-an-org-wide-team.md) e modello di app [Company Communicator](https://docs.microsoft.com/microsoftteams/platform/samples/app-templates#company-communicator).
+    
+   - Inviare informazioni sui criteri dell'organizzazione per il lavoro da casa e in materia di salute e sicurezza.
+    
+   - Usare [Eventi live](teams-live-events/what-are-teams-live-events.md) per le riunioni a livello aziendale. Per ogni riunione di oltre 250 partecipanti, creare un evento live. 
 
 4.  Aumentare il personale dell'[helpdesk](troubleshoot-installation.md) per gestire le richieste degli utenti.
 
+7. Se non si ha familiarità con il ruolo di amministratore di Teams, vedere [Formazione amministratori per Teams](itadmin-readiness.md).
 
-## <a name="communications"></a>Comunicazioni
 
-Usare Teams per rimanere in contatto con i dipendenti:
-- [Team a livello di organizzazione](create-an-org-wide-team.md) e modello di app [Company Communicator](https://docs.microsoft.com/microsoftteams/platform/samples/app-templates#company-communicator)
-    
-- Inviare informazioni sui criteri dell'organizzazione per il lavoro da casa e in materia di salute e sicurezza.
-    
-- Usare [Eventi live](teams-live-events/what-are-teams-live-events.md) per le riunioni a livello aziendale. Per ogni riunione di oltre 250 partecipanti, creare un evento live. 
 
-## <a name="personal-considerations"></a>Considerazioni personali
 
-Ecco alcuni suggerimenti per lavorare in modo efficace da casa:
-
-- Predisporre uno spazio di lavoro fisico con una buona ergonomia e un'illuminazione appropriata.
-
-- Definire chiaramente gli orari lavorativi e gli impegni e usare lo [stato di presenza](https://support.office.com/article/change-your-status-in-teams-ce36ed14-6bc9-4775-a33e-6629ba4ff78e) di Teams per indicare quando si è lontani.
-
-- Telelavoro non vuol dire che stare in casa equivale a stare in ufficio: passare intenzionalmente dall'orario "ufficio" all'orario "sono tornato a casa".
-
-- Alzarsi periodicamente e fare una pausa. Fare una tazza di tè, una passeggiata o un po' di stretching.
-
-## <a name="known-issue-dialing-into-skype-for-business-or-teams-conference-ids"></a>Problema noto: chiamare ID conferenza di Skype for Business o Teams
+### <a name="known-issue---china-dialing-into-skype-for-business-or-teams-conference-ids"></a>Problema noto - Cina: chiamare ID conferenza di Skype for Business o Teams
 
 Di seguito è riportato il riepilogo di un post del Centro messaggi del 7 febbraio 2020 (MC203397):
 
@@ -88,8 +117,8 @@ Microsoft è a conoscenza del fatto che alcuni utenti dell'area Cina stanno risc
 
 Ecco le soluzioni consigliate se si verificano problemi con le audioconferenze:
 
-- Chiedere al chiamante o all'organizzatore della riunione di chiamare il proprio numero PSTN o di cellulare
-- Partecipare alla chiamata o alla riunione dai client desktop o per dispositivi mobili usando VoIP
+- Chiedere al chiamante o all'organizzatore della riunione di chiamare il proprio numero PSTN o di cellulare.
+- Partecipare alla chiamata o alla riunione dai client desktop o per dispositivi mobili usando VoIP.
 
 Se è necessario creare a un ticket di supporto, includere:
     
