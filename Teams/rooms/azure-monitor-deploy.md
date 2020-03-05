@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: d86ff657-ee92-4b06-aee3-d4c43090bdcb
 description: Questo articolo illustra come distribuire la gestione dei dispositivi Microsoft teams rooms in modo integrato e completo con Azure monitor.
-ms.openlocfilehash: 54268676eadab25599d4f8b6e415ff373717943f
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 70c2311143a4daabbc0838168e19969f950a2df1
+ms.sourcegitcommit: 5fbb57c5f0692afcb8e65516c63b96814f51ca65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826264"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417541"
 ---
 # <a name="deploy-no-loc-textmicrosoft-teams-rooms-management-with-no-loc-textazure-monitor"></a>Distribuire :::no-loc text="Microsoft Teams Rooms"::: la gestione con:::no-loc text="Azure Monitor":::
 
@@ -30,7 +30,7 @@ Puoi configurare :::no-loc text="Log Analytics"::: l'interno :::no-loc text="Azu
 
 Seguendo questa guida, è possibile usare un dashboard come l'esempio seguente per ottenere report di stato dettagliati per la disponibilità dei dispositivi, l'integrità dell' :::no-loc text="Microsoft Teams Rooms"::: applicazione e dell'hardware e la distribuzione delle versioni delle applicazioni e del sistema operativo.
 
-! [Screenshot della visualizzazione di :::no-loc text="Log Analytics"::: esempio per :::no-loc text="Microsoft Teams Rooms":::] (.. /media/Deploy-Azure-Monitor-1.png "visualizzazione :::no-loc text="Log Analytics"::: di esempio :::no-loc text="Microsoft Teams Rooms":::per")
+![Screenshot della visualizzazione analisi log di esempio per Microsoft teams rooms](../media/Deploy-Azure-Monitor-1.png "Visualizzazione analisi log di esempio per Microsoft teams rooms")
 
 A livello elevato, è necessario eseguire le attività seguenti:
 
@@ -383,7 +383,7 @@ Configurare una regola di avviso che controlli :::no-loc text="Microsoft Teams R
     1.  Selezionare **Crea nuovo**
     2.  Specificare nomi appropriati per il *nome del gruppo di azioni* e i campi *nome breve* .
     3.  Specificare un *nome di azione* univoco e selezionare **posta elettronica/SMS/push/Voice**e quindi selezionare **Modifica dettagli**.
-    4.  Selezionare la casella di controllo posta elettronica e specificare l'indirizzo di posta elettronica della persona o del gruppo che riceverà gli avvisi.
+    4.  Selezionare la casella di controllo **posta elettronica** e specificare l'indirizzo di posta elettronica della persona o del gruppo che riceverà gli avvisi.
     5.  È anche possibile specificare il numero di telefono per ricevere una notifica tramite SMS, una chiamata vocale o entrambi.
     6. Selezionare **OK**.
 

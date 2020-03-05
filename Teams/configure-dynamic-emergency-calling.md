@@ -16,12 +16,12 @@ f1.keywords:
 description: Configurare chiamate di emergenza dinamiche
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0cd5f3320896c823eb81a9147a1b1b1adb36dbac
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 6b22c6cec20e42ac33b15c53a49477b36a35fbe9
+ms.sourcegitcommit: 5fbb57c5f0692afcb8e65516c63b96814f51ca65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825514"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417591"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -70,10 +70,10 @@ Per altre informazioni sulle chiamate di emergenza, incluse informazioni su indi
 
 I client seguenti sono attualmente supportati.  Controlla spesso per vedere gli aggiornamenti di questo elenco.
 
-- Client desktop teams per Windows
-- Client desktop teams per Mac
-- Client di teams mobile per client IOS versione 1.0.92.2019121004 e App Store versione 1.0.92 e versioni successive
-- Client di teams per dispositivi mobili per client Android e versione Store 1416/1.0.0.2019121201 e versioni successive
+- Client desktop teams per Microsoft Windows
+- Client desktop teams per Apple macOS
+- Client di teams mobile per Apple iOS Client versione 1.0.92.2019121004 e App Store versione 1.0.92 e versioni successive
+- Client di teams per dispositivi mobili per client Android e Google Play Store versione 1416/1.0.0.2019121201 e versioni successive
 - Telefono teams versione 1449/1.0.94.2019110802 e versioni successive
 
 ## <a name="assign-emergency-addresses"></a>Assegnare indirizzi di emergenza

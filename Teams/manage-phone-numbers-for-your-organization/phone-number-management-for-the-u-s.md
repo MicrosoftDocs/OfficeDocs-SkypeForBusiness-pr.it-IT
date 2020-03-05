@@ -20,17 +20,17 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono negli Stati Uniti (e Puerto Rico) per Microsoft teams.
-ms.openlocfilehash: 8013b3a822f9e453dd60bb7e5af73a1326f7c04c
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono negli Stati Uniti (incluso Puerto Rico) per Microsoft teams.
+ms.openlocfilehash: a3c94b4e091529fdc2fa3389b3b0155f5bf118d9
+ms.sourcegitcommit: 5fbb57c5f0692afcb8e65516c63b96814f51ca65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41706931"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417631"
 ---
 # <a name="phone-number-management-for-the-us"></a>Gestione dei numeri di telefono per gli Stati Uniti
 
-Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono negli Stati Uniti (e Puerto Rico) per Microsoft teams.
+Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono negli Stati Uniti (incluso Puerto Rico) per Microsoft teams.
 
 Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md).
   

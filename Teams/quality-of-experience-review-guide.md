@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 025bd70c79cdc0547f86514521fd1e565265d4f8
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+ms.openlocfilehash: 13c3267378d4e8fbc5b3d3631606cf0824ea7a44
+ms.sourcegitcommit: 5fbb57c5f0692afcb8e65516c63b96814f51ca65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160780"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "42417851"
 ---
 # <a name="quality-of-experience-review-guide"></a>Guida sul controllo della qualità dell'esperienza
 
@@ -379,7 +379,7 @@ Per filtrare tutti i report dettagliati, nella barra del browser accodare il cod
 
 **Esempio**
 
-```https://cqd.lync.com/cqd/#/1234567/2018-5/filter/[AllStreams].[Is Teams]|[FALSE]```
+```https://cqd.teams.microsoft.com/cqd/#/1234567/2018-5/filter/[AllStreams].[Is Teams]|[FALSE]```
 
 Per altre informazioni sui filtri URL, vedere [filtrare i report](#filtering-reports) più avanti in questa sezione.
 
@@ -472,7 +472,7 @@ Per una formazione e risorse più approfondite, vedere l' [appendice](#other-res
 
 È possibile accedere a Call Quality dashboard uno dei tre modi seguenti:
 
--   Passare a <https://cqd.lync.com>.
+-   Passare a <https://cqd.teams.microsoft.com>.
 
 -   Accedere all'interfaccia di **amministrazione di Microsoft teams** e selezionare il collegamento a Call Quality dashboard, come illustrato nella figura seguente.
 
@@ -491,7 +491,7 @@ _Figura 8-accesso a Call Quality dashboard tramite l'interfaccia di amministrazi
 
 La prima volta che si accede a Call Quality dashboard, verrà visualizzata la pagina report di riepilogo. La maggior parte dei report descritti in questa guida è una relazione dettagliata personalizzata. Per iniziare a usare i report dettagliati, selezionare **report di riepilogo** nella parte superiore della pagina e quindi scegliere **report dettagliati**.
 
-![Screenshot che mostra i tipi di report disponibili in Call Quality dashboard](media/qerguide-image-choosereports.png)
+![Schermata che mostra i tipi di report disponibili in Call Quality dashboard](media/qerguide-image-choosereports.png)
 
 _Figura 9-spostarsi in report dettagliati_
 
@@ -543,7 +543,7 @@ Per implementare un filtro URL, nella barra degli indirizzi del browser aggiunge
 
 Esempio  
 
-```https://cqd.lync.com/cqd/#/1234567/2018-08/filter/[AllStreams].[Second Tenant Id]|[TENANTID]```
+```https://cqd.teams.microsoft.com/cqd/#/1234567/2018-08/filter/[AllStreams].[Second Tenant Id]|[TENANTID]```
 
 Per filtrare i report per Teams o Skype for business, aggiungere il codice seguente alla fine dell'URL:
 
@@ -553,11 +553,11 @@ Per filtrare i report per Teams o Skype for business, aggiungere il codice segue
 
 Esempio
 
-```https://cqd.lync.com/cqd/#/1234567/2018-08/filter/[AllStreams].[Is Teams]|[TRUE]```
+```https://cqd.teams.microsoft.com/cqd/#/1234567/2018-08/filter/[AllStreams].[Is Teams]|[TRUE]```
 
 
 > [!NOTE]
-> Gli esempi di URL descritti sopra sono solo per la rappresentazione visiva. Usare il collegamento Call Quality dashboard predefinito di <https://cqd.lync.com>.
+> Gli esempi di URL descritti sopra sono solo per la rappresentazione visiva. Usare il collegamento Call Quality dashboard predefinito di <https://cqd.teams.microsoft.com>.
 
 
 #### <a name="query-filters"></a>Filtri di query
@@ -591,7 +591,7 @@ Questa guida include [due modelli di Call Quality dashboard curati](https://aka.
 
 **Per importare i modelli (. CQDX) in Call Quality dashboard online**
 
-1. Passare a <https://cqd.lync.com>.
+1. Passare a <https://cqd.teams.microsoft.com>.
 
 2. Eseguire l'autenticazione usando le credenziali amministrative di Office 365.
 
@@ -690,13 +690,13 @@ I dati di qualità dell'esperienza (QoE) che i client inviano a Office 365, da c
 
 - Definire un **nome di rete** usando il testo "VPN" in questo campo per le subnet VPN.
 
-  ![Schermata report QCD che mostra la VPN tramite il nome di rete](media/qerguide-image-vpnnetworkname.png)
+  ![Schermata del report QCD che mostra la VPN tramite il nome di rete](media/qerguide-image-vpnnetworkname.png)
 
   _Figura 12-VPN tramite il nome di rete_
 
 - Definire un **nome di edificio** usando il testo "VPN" in questo campo per le subnet VPN.
 
-  ![Schermata report QCD che mostra la VPN usando il nome dell'edificio](media/qerguide-image-vpnbuildingname.png)
+  ![Schermata del report QCD che mostra la VPN usando il nome dell'edificio](media/qerguide-image-vpnbuildingname.png)
 
   _Figura 13-VPN con il nome dell'edificio_
 
@@ -711,7 +711,7 @@ I dati di qualità dell'esperienza (QoE) che i client inviano a Office 365, da c
 
 Il dashboard report di riepilogo di Call Quality dashboard include una pagina di **caricamento dei dati del tenant** , a cui si accede selezionando il tag di collegamento **Carica dati tenant** nell'angolo in alto a destra (cercare l'icona dell'ingranaggio). Questa pagina viene usata per gli amministratori per caricare le proprie informazioni, ad esempio il mapping di indirizzi IP e informazioni geografiche, la mappatura di ogni punto di accesso wireless e il relativo indirizzo MAC e così via.
 
-1. Accedere a Call Quality dashboard online esplorando <https://cqd.lync.com>.
+1. Accedere a Call Quality dashboard online esplorando <https://cqd.teams.microsoft.com>.
 
 2. Selezionare l'icona dell'ingranaggio nell'angolo in alto a destra e scegliere **Carica dati tenant** dalla pagina **report di riepilogo** .
 
@@ -721,7 +721,7 @@ Il dashboard report di riepilogo di Call Quality dashboard include una pagina di
 
 3. In alternativa, se è la prima volta che visiti Call Quality dashboard, ti verrà chiesto di caricare i dati dell'edificio. È possibile selezionare **carica ora** per passare rapidamente alla pagina di **caricamento dei dati del tenant** .
 
-   ![Schermata del banner che informa un utente di caricare i dati dell'edificio](media/qerguide-image-buildingdatauploadbanner.png)
+   ![Screenshot del banner che informa un utente di caricare i dati dell'edificio](media/qerguide-image-buildingdatauploadbanner.png)
 
    _Figura 15-creazione di banner per il caricamento dei dati_
 
@@ -778,7 +778,7 @@ Passare alla pagina **report dettagliati** in Call Quality dashboard online e pa
 > [!NOTE] 
 > Assicurarsi di regolare il filtro rapporto mese-anno nel mese corrente. Selezionare **modifica**e regolare il filtro rapporto **mese-anno** per salvare il nuovo mese predefinito.
 
-![Schermata che mostra il report subnet mancante](media/qerguide-image-missingbuildingreport.png)
+![Screenshot che mostra il report subnet mancante](media/qerguide-image-missingbuildingreport.png)
 
 _Figura 17-report edificio mancante_
 
@@ -1130,7 +1130,7 @@ Questo report identifica edifici e subnet specifici che contribuiscono all'utili
 > [!NOTE]
 > Assicurarsi di regolare il filtro del mese per il mese corrente. Selezionare **modifica**e regolare **anno mese** per salvare il nuovo mese predefinito.
 
-![Immagine di un report di utilizzo del proxy HTTP tramite la creazione e la subnet](media/qerguide-image-httpproxyusage.png)
+![Screenshot del report dell'utilizzo del proxy HTTP tramite la creazione e la subnet](media/qerguide-image-httpproxyusage.png)
 
 _Figura 29-utilizzo del proxy HTTP tramite la creazione e la subnet_
 
