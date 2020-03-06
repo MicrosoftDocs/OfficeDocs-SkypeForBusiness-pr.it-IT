@@ -71,6 +71,7 @@
 ### Accesso esterno (federazione)
 #### [Gestire l'accesso esterno](manage-external-access.md)
 #### [Chat nativa di Teams per utenti esterni](native-chat-for-external-users.md)
+#### [Interoperabilità tra Teams e Skype](teams-skype-interop.md)
 
 
 ### Accesso guest
@@ -148,7 +149,7 @@
 ### [Esercitazione: audioconferenza in Teams](Tutorial-Audio-Conferencing.yml)
 ### [Provare o acquistare le audioconferenze in Office 365](try-or-purchase-audio-conferencing-in-office-365-for-teams.md)
 ### [Periodo di accesso gratuito per audioconferenze](complimentary-dial-out-period.md)
-### [Vantaggio del periodo di accesso e della funzionalità Chiamami dell'abbonamento per audioconferenze](audio-conferencing-subscription-dial-out.md)
+### [Vantaggio per le funzionalità "Chiamate in uscita" e "Chiamami a" dell'abbonamento ad Audioconferenza](audio-conferencing-subscription-dial-out.md)
 
 ### [Configurare le audioconferenze per Microsoft Teams](set-up-audio-conferencing-in-teams.md)
 
@@ -625,6 +626,7 @@
 ## [Teams per l'istruzione](expand-teams-across-your-org/teams-for-education-landing-page.md)
 ### [Guida introduttiva per amministratori - Teams per l'istruzione](teams-quick-start-edu.yml)
 ### [Iniziare a usare l'apprendimento a distanza](remote-learning-edu.md)
+### [Licenze di Teams per l'istruzione](teams-edu-licensing.md)
 ### [Assegnare attività in Teams per l'istruzione](expand-teams-across-your-org/assignments-in-teams.md)
 ### [Risorse di Teams per l'istruzione per amministratori](resources-teams-edu.md)
 ### [Pacchetti di criteri di Microsoft Teams per l'istruzione per amministratori](policy-packages-edu.md)
@@ -635,6 +637,7 @@
 ### [Introduzione ai modelli di Teams per la vendita al dettaglio](get-started-with-retail-teams-templates.md)
 
 ## [Teams per enti pubblici](expand-teams-across-your-org/teams-for-government-landing-page.md)
+### [Gestire la versione di valutazione di Office 365 G1](g1-trial-license.md)
 ### [Pianificare Microsoft 365 Government - GCC](plan-for-government-gcc.md)
 ### [Pianificare Microsoft 365 Government - GCC High](plan-for-government-gcc-high.md)
 ### [Pianificare Microsoft 365 Government - DoD](plan-for-government-dod.md)
@@ -674,7 +677,8 @@
 ## [Risoluzione dei problemi di installazione e aggiornamento](troubleshoot-installation.md)
 ## [Risolvere i problemi di connettività con il client di Teams](connectivity-issues.md)
 ## [Usare i file di log nella risoluzione dei problemi di Teams](log-files.md)
-## [Verificare l'integrità dei servizi per Teams](service-health.md)
+## [Domande frequenti: Supporto del personale remoto](FAQ-support-remote-workforce.md)
+## [Verifica dell'integrità dei servizi per Teams](service-health.md)
 ## [Problemi noti per Teams](Known-issues.md)
 ## [Risorse di supporto per Teams](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
 
@@ -726,6 +730,7 @@
 ##### [Office 365 Enterprise E5 senza Audioconferenza](teams-add-on-licensing/office-365-enterprise-e5-without-audio-conferencing.md)
 ##### [GOV, EDU e organizzazioni no profit](teams-add-on-licensing/gov-edu-and-nonprofit-organizations.md)
 ### [Gestire l’offerta Office 365 E1 Trial](e1-trial-license.md)
+### [Gestire la versione di valutazione di Office 365 G1](g1-trial-license.md)
 ### [Gestire l'offerta Teams Commercial Trial](iw-trial-teams.md)
 ### [Gestire l'esperienza di Teams Exploratory](teams-exploratory.md)
 ### [Aggiornare Teams gratuitamente alla versione in abbonamento di Office 365](upgrade-freemium.md)
