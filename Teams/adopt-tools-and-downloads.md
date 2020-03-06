@@ -19,12 +19,12 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 55e4ec98d6e54dba88a417d9631605859962c9c1
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 78531cfad01051e4a9d7493384a18f4c0a4e1dc4
+ms.sourcegitcommit: 494e5956619084ff8f0a4f42efb5081c4530488a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42033023"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42551004"
 ---
 # <a name="tools-for-driving-adoption"></a>Strumenti per l'adozione della Guida 
 
@@ -155,4 +155,4 @@ Office 365 Champions Program è un programma gratuito che consente alle persone 
 Vedere la [sequenza animata di teams adoption](https://aka.ms/teamstoolkit), una guida online che ti aiuterà a distribuire Team nella tua azienda. Include molti strumenti, modelli e altre risorse scaricabili per aiutarti a seguire il viaggio di adozione dei team.
 
 ### <a name="teams-customer-success-kit"></a>Kit di successo del cliente Teams
-Il [Kit di successo per il cliente teams](https://download.microsoft.com/download/A/E/9/AE984CD4-CF4B-41E7-9ABD-6735E3F01897/MicrosoftTeamsCustomerSuccessKit.zip) offre strumenti che consentono di implementare teams nell'organizzazione. Include modelli di posta elettronica per annunci, volantini, poster, Countdown e suggerimenti & trucchi. Include anche le guide introduttive per i team leader e gli amministratori IT.
+Il [Kit di successo per il cliente teams](https://aka.ms/TeamsCustomerSuccess) offre strumenti che consentono di implementare teams nell'organizzazione. Include modelli di posta elettronica per annunci, volantini, poster, Countdown e suggerimenti & trucchi. Include anche le guide introduttive per i team leader e gli amministratori IT.

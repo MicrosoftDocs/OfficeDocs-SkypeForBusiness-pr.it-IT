@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7453743407696a0ba8c41cb401caf4f22ba7b78f
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 6ffbf676a86320fe3003d26dc94161d9e9e58c4d
+ms.sourcegitcommit: 494e5956619084ff8f0a4f42efb5081c4530488a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825304"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550913"
 ---
 ![Aggiornare il diagramma di viaggio, enfatizzando la fase di eccellenza operativa](media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di eccellenza operativa")
 
@@ -47,7 +47,7 @@ Per realizzare il massimo beneficio e i risultati aziendali con i team, gli uten
 
 - Arruolare campioni peer per aiutare l'evangelizzazione e incoraggiare gli altri utenti.
 - Controllo della [Guida all'adozione di Office 365](https://go.microsoft.com/fwlink/?linkid=859045) per suggerimenti su come aumentare l'impegno e l'adozione della guida.
-- Sfruttando il [Kit di successo per il cliente teams](https://download.microsoft.com/download/A/E/9/AE984CD4-CF4B-41E7-9ABD-6735E3F01897/MicrosoftTeamsCustomerSuccessKit.zip) per migliorare la consapevolezza e condividere le procedure consigliate.
+- Sfruttando il [Kit di successo per il cliente teams](https://aka.ms/TeamsCustomerSuccess) per migliorare la consapevolezza e condividere le procedure consigliate.
 - Implementazione di una [strategia di adozione formale e di gestione delle modifiche](http://www.successwithteams.com/) per favorire la crescita dell'adozione.
 
 ## <a name="prepare-for-new-functionality"></a>Preparare le nuove funzionalità

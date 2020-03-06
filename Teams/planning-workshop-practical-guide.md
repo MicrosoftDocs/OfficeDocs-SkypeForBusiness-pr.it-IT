@@ -15,19 +15,19 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a5d7423dfd0493af0e780b81f96d840f422d4833
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 356ff815fe05a91f203778c0f6af255182ace35c
+ms.sourcegitcommit: 494e5956619084ff8f0a4f42efb5081c4530488a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41834656"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42550903"
 ---
 # <a name="tools-and-workshops-plan-deliver-and-adopt-microsoft-teams"></a>Strumenti e laboratori: pianificare, distribuire e adottare Microsoft Teams
 
 Scaricare questi strumenti per illustrare la pianificazione, la distribuzione e l'adozione di team nell'organizzazione.
 
 
-- [Microsoft teams Customer Success Kit](https://download.microsoft.com/download/A/E/9/AE984CD4-CF4B-41E7-9ABD-6735E3F01897/MicrosoftTeamsCustomerSuccessKit.zip)
+- [Microsoft teams Customer Success Kit](https://aka.ms/TeamsCustomerSuccess)
 
     Questo kit contiene una vasta gamma di presentazioni, modelli di posta elettronica, suggerimenti & trucchi e poster che è possibile usare per implementare e guidare l'adozione di team nell'organizzazione. Include due guide introduttive per amministratori e team leader e usa esempi di casi per ogni reparto. Usare queste risorse per sfruttare al massimo i team per varie funzioni dell'organizzazione, tra cui marketing, vendite, finanza, risorse umane, IT, progettazione e gestione dei progetti.
 

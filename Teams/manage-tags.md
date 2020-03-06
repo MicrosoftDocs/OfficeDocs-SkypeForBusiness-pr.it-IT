@@ -16,30 +16,31 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire i tag usati nell'organizzazione in Microsoft teams.
-ms.openlocfilehash: 3ade2f47474fe8aaf16c568e8c141dcd84526d86
-ms.sourcegitcommit: 561b9bab7d6f5a621436bc85ea28ea14657e7868
+ms.openlocfilehash: 5da1d1549e6171656b0065036819be0fac450759
+ms.sourcegitcommit: 494e5956619084ff8f0a4f42efb5081c4530488a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42034509"
+ms.lasthandoff: 03/06/2020
+ms.locfileid: "42551043"
 ---
 # <a name="manage-tags-in-microsoft-teams"></a>Gestire i tag in Microsoft Teams
 
 > [!NOTE]
 > Questa funzionalità non è ancora visualizzata nell'interfaccia di amministrazione di Microsoft Teams? Attualmente viene implementato e potrebbe non essere ancora disponibile nell'organizzazione. Per rimanere in primo piano sulle caratteristiche future per i team, consulta la [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=microsoft%2Cteams).
 
-I tag in Microsoft teams consentono agli utenti di comunicare con un sottoinsieme di persone in un team. I tag possono essere aggiunti a uno o più membri del team per connettersi facilmente con il sottoinsieme giusto di persone. I proprietari e i membri del team (se la funzionalità è abilitata) possono aggiungere uno o più tag a una persona. I tag possono quindi essere usati in @mentions da chiunque nel team in un post del canale per comunicare solo con gli utenti a cui è stato assegnato il tag.
+I tag in Microsoft teams consentono agli utenti di comunicare con un sottoinsieme di persone in un team. I tag possono essere aggiunti a uno o più membri del team per connettersi facilmente con il sottoinsieme giusto di persone. I proprietari e i membri del team (se la funzionalità è abilitata) possono aggiungere uno o più tag a una persona. I tag possono quindi essere usati in @mentions da chiunque nel team in un post di canale o per avviare una conversazione con solo gli utenti a cui è stato assegnato il tag.
 
 > [!NOTE]
 > I tag non sono ancora supportati nei canali privati.
 
 ## <a name="how-tags-work"></a>Come funzionano i tag
 
-Un tag può essere aggiunto a una persona in un team specifico. Dopo l'aggiunta di un tag, può essere usato in @mentions in qualsiasi canale standard del team. Ecco alcuni esempi di come i tag possono essere usati in teams:
+Un tag può essere aggiunto a una persona in un team specifico. Dopo l'aggiunta di un tag, può essere usato in @mentions in una chat o in qualsiasi canale standard del team. Ecco alcuni esempi di come i tag possono essere usati in teams:
 
 - Un responsabile dello Store vuole pubblicare un annuncio su un canale e inviare una notifica a tutti i cassieri.
 - Un Product Manager di gruppo vuole Message tutti i responsabili di prodotto in un canale.
 - Un amministratore dell'ospedale vuole inviare un messaggio a tutti i radiologi di un canale.
+- Un responsabile marketing vuole avviare una chat di gruppo con tutte le finestre di progettazione. 
 
 Per altre informazioni, vedere [usare i contrassegni in teams](https://support.office.com/article/using-tags-in-teams-667bd56f-32b8-4118-9a0b-56807c96d91e).
 
