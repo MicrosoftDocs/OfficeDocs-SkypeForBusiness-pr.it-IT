@@ -1,7 +1,7 @@
 ---
 title: Configurare le impostazioni degli eventi dinamici in Microsoft Teams
-author: chuckedmonson
-ms.author: chucked
+author: lanachin
+ms.author: v-lanac
 manager: serdars
 ms.date: 03/11/2019
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.liveevents.settings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1cdfd1bc832827dbcf48e82a49ed4d02c38116bb
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 222e7e51fcf87e0e76c3ab18f33357f7489a1ce1
+ms.sourcegitcommit: a6425a536746e129ab8bda3984b5ae63fb316192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827144"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558596"
 ---
 # <a name="configure-live-event-settings-in-microsoft-teams"></a>Configurare le impostazioni degli eventi dinamici in Microsoft Teams
 
@@ -38,7 +38,7 @@ Puoi gestire facilmente queste impostazioni nell'interfaccia di amministrazione 
 
 Questo URL viene visualizzato nei partecipanti agli eventi dinamici. Aggiungere l'URL del supporto per l'organizzazione per offrire ai partecipanti un modo per contattare il supporto durante un evento dinamico.
 
-### <a name="an-icon-showing-the-microsoft-teams-logomediateams-logo-30x30png-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](../media/teams-logo-30x30.png) Uso dell'interfaccia di amministrazione di Microsoft Teams
+### <a name="an-icon-showing-the-microsoft-teams-logo-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](../media/teams-logo-30x30.png) Uso dell'interfaccia di amministrazione di Microsoft Teams
 
 1. Nella barra di spostamento sinistra, vai a**Impostazioni eventi live** **riunioni** > .
 2. In **URL di supporto**immettere l'URL di supporto dell'organizzazione. 
@@ -55,7 +55,7 @@ Per altre informazioni, vedere [set-CsTeamsMeetingBroadcastConfiguration](https:
 
 Se è stata acquistata e configurata una soluzione software defined Network (SDN) o una soluzione eCDN (Enterprise Content Delivery Network) tramite un partner di recapito video Microsoft, configurare il provider per gli eventi dinamici in teams. 
 
-### <a name="an-icon-showing-the-microsoft-teams-logomediateams-logo-30x30png-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](../media/teams-logo-30x30.png) Uso dell'interfaccia di amministrazione di Microsoft Teams
+### <a name="an-icon-showing-the-microsoft-teams-logo-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](../media/teams-logo-30x30.png) Uso dell'interfaccia di amministrazione di Microsoft Teams
 
 1. Nella barra di spostamento sinistra, vai a**Impostazioni eventi live** **riunioni** > .
 2. In **provider di distribuzione video di terze parti**completare le operazioni seguenti: 

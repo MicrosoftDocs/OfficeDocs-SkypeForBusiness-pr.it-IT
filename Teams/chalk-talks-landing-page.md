@@ -16,17 +16,19 @@ f1.keywords:
 ms.custom: ms.teamsadmincenter.dashboard.trainingvideos.instructorled
 ms.collection:
 - M365-collaboration
-ms.openlocfilehash: adead862907c29c066df8b2541c260045f19db95
-ms.sourcegitcommit: 5fbb57c5f0692afcb8e65516c63b96814f51ca65
+ms.openlocfilehash: 7d41218e75b24432e1f67ae1dc8344f8a76b8a50
+ms.sourcegitcommit: a6425a536746e129ab8bda3984b5ae63fb316192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417601"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558656"
 ---
 <div id="main" class="v2">
     <div class="container">
         <h1>Colloqui di Microsoft teams Chalk</h1>
-Progettato per i professionisti IT e i responsabili decisionali, i colloqui di Chalk teams offrono un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche in alcuni degli scenari più comuni e interessanti in teams. Facilitati da esperti in materia, questi laboratori interattivi online ti offriranno approfondimenti per migliorare l'implementazione dei team e offrire un valore aggiunto per gli utenti finali.<br><br><i>Fare clic sul titolo di un workshop seguente per visualizzare le date e gli orari disponibili e iscriversi oggi stesso.</i>
+Progettato per i professionisti IT e i responsabili decisionali, i colloqui di Chalk teams offrono un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche in alcuni degli scenari più comuni e interessanti in teams. Facilitati da esperti in materia, questi laboratori interattivi online ti offriranno approfondimenti per migliorare l'implementazione dei team e offrire un valore aggiunto per gli utenti finali.<br><br>
+           <strong>Prerequisito</strong>: prima di tutto partecipare ai <a href="https://aka.ms/Teamsin30"target="_blank">team in 30</a> laboratori.<br><br>
+           <i>Fare clic sul titolo di un workshop seguente per visualizzare le date e gli orari disponibili e iscriversi oggi stesso.</i>
         <ul class="pivots">
             <li>
                 <a href="#home" data-linktype="self-bookmark"></a> 

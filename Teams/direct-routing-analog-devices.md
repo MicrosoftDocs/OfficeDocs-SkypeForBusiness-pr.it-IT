@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Leggere questo articolo per informazioni su come usare i dispositivi analogici con il routing diretto di Microsoft Phone System.
-ms.openlocfilehash: 525e898bd0eafe88d6893249465734d7c33a10b2
-ms.sourcegitcommit: 6cfaadec5782ca7316db36472bd0be20217da693
+ms.openlocfilehash: 45128b8806644e4399687787bcce251ccb807d85
+ms.sourcegitcommit: a6425a536746e129ab8bda3984b5ae63fb316192
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341796"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558516"
 ---
 # <a name="how-to-use-analog-devices-with-phone-system-direct-routing"></a>Come usare i dispositivi analogici con routing diretto del sistema telefonico
 
@@ -39,16 +39,17 @@ Per configurare l'uso di dispositivi analogici con routing diretto, è necessari
 
 In questo esempio vengono illustrati i passaggi seguenti:
 
-1. Connettere il SBC al routing diretto
-2. Creare l'utilizzo PSTN
-3. Creare una route vocale e associarla all'utilizzo PSTN
-4. Assegnare la route vocale all'utilizzo PSTN
-5. Abilitare l'utente online
-6. Assegnare il criterio della route vocale all'utente
-7. Creare una route vocale per un dispositivo analogico
+1. Connettere il SBC al routing diretto.
+2. Creare l'utilizzo PSTN.
+3. Creare una route vocale e associarla all'utilizzo PSTN.
+4. Assegnare la route vocale all'uso PSTN.
+5. Abilitare l'utente online.
+6. Assegnare il criterio della route vocale all'utente.
+7. Creare una route vocale per un dispositivo analogico.
 
 Per informazioni su come connettere un ATA a un SBC e configurare il SBC, vedere la guida alla configurazione del produttore SBC:
 - [Documentazione di configurazione di AudioCodes](https://www.audiocodes.com/media/14278/connecting-audiocodes-sbc-with-analog-device-to-microsoft-teams-direct-routing-enterprise-model-configuration-note.pdf)
+- [Documentazione di configurazione della barra multifunzione](https://support.sonus.net/display/UXDOC81/Connect+SBC+Edge+to+Microsoft+Teams+Direct+Routing+to+Support+Analog+Devices)
 
 ## <a name="step-1--connect-the-sbc-to-direct-routing"></a>Passaggio 1.  Connettere il SBC al routing diretto
 
