@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9e0259a47f72caa441d0f7d4b13ccf00345b1a3d
-ms.sourcegitcommit: 494e5956619084ff8f0a4f42efb5081c4530488a
+ms.openlocfilehash: b604cf6148426bb24fe2a8ee2c442c67667e7fcc
+ms.sourcegitcommit: 64565c3f0a11105c9b2e870b5e6af658ed29b221
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42551013"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42556047"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -31,6 +31,7 @@ ms.locfileid: "42551013"
 > - Una raccolta di articoli scritti per i docenti, con indicazioni pratiche sui [**primi passi per l'insegnamento in Teams**](https://support.office.com/article/microsoft-teams-5aa4431a-8a3c-4aa5-87a6-b6401abea114).
 > - Un corso online di 1 ora in Microsoft Educator Center illustra il modo in cui i docenti usano Teams nelle loro vite professionali. [**Trasformare l'apprendimento con Microsoft Teams**](https://education.microsoft.com/course/9c9f5c11/overview).
 > - Un corso online di 1 ora in Microsoft Educator Center guida i docenti all'insegnamento nei team di classe. [**Creare un ambiente di apprendimento collaborativo con i team di classe.**](https://education.microsoft.com/course/b1e15cfc/overview)
+> - Docenti, studenti o genitori possono trovare altre indicazioni su [**insegnamento e apprendimento remoto con Office 365**](https://aka.ms/RemoteLearningHelp).
 
 Il blog del 4 marzo 2020 parla di [come gli istituti di istruzione possono rendere rapidamente operativi i programmi di apprendimento remoto con Microsoft Teams](https://aka.ms/teamseduremoteblog).
 
