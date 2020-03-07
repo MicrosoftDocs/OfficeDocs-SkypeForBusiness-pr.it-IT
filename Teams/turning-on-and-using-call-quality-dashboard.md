@@ -16,18 +16,19 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 localization_priority: Normal
-f1keywords:
-- ms.teamsadmincenter.directrouting.cqd
-- ms.lync.lac.ToolsCallQualityDashboard
+f1.keywords:
+- CSH
 ms.custom:
 - Reporting
+- ms.teamsadmincenter.directrouting.cqd
+- ms.lync.lac.ToolsCallQualityDashboard
 description: 'Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate. '
-ms.openlocfilehash: e29bced13fd4bad900c349efc07219e4edebc9d3
-ms.sourcegitcommit: 013190ad10cdc02ce02e583961f433d024d5d370
+ms.openlocfilehash: 9e9c70c88aec9fcdf898d94a17f46f76bd2c608a
+ms.sourcegitcommit: 98fcfc03c55917d0aca48b7bd97988f81e8930c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/31/2020
-ms.locfileid: "41636844"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42559897"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -36,6 +37,13 @@ Informazioni su come configurare l'organizzazione di Office 365 in modo da usare
 Call Quality Dashboard (Call Quality Dashboard) offre informazioni sulla qualità delle chiamate effettuate con i servizi Microsoft teams e Skype for business online. In questo argomento vengono illustrati i passaggi per iniziare a raccogliere i dati che è possibile usare per risolvere i problemi di qualità delle chiamate.
 
 Attualmente, Advanced Call Quality dashboard e Call Quality dashboard sono entrambi disponibili per l'uso. Advanced Call Quality dashboard è disponibile all' <span>https://cqd.teams.microsoft.com</span>indirizzo. Nuovo URL, ma lo stesso accesso con le credenziali di amministratore.
+
+## <a name="use-power-bi-to-analyze-cqd-data"></a>Usare Power BI per analizzare i dati di Call Quality dashboard
+
+Novità di gennaio 2020: [scaricare i modelli di query di Power BI per Call Quality dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). Modelli di Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati di Call Quality dashboard.
+
+Leggere [usare Power BI per analizzare i dati di Call Quality dashboard](CQD-Power-BI-query-templates.md) per altre informazioni.
+
 
 ## <a name="latest-changes-and-updates"></a>Ultime modifiche e aggiornamenti
 
@@ -355,7 +363,7 @@ Call Quality dashboard usa un file di dati dell'edificio, che consente di ottene
 - Il file di dati non include una riga di intestazione di tabella. La prima riga del file di dati dovrebbe essere dati reali, non etichette di intestazione come "rete".
 - I tipi di dati nel file possono essere solo stringa, Integer o Boolean. Per il tipo di dati Integer, il valore deve essere un valore numerico. I valori booleani devono essere 0 o 1.
 - Se una colonna usa il tipo di dati stringa, un campo dati può essere vuoto, ma deve comunque essere separato da una tabulazione o da una virgola. Un campo dati vuoto assegna semplicemente un valore di stringa vuoto.
-- Devono essere presenti 14 colonne per ogni riga, ogni colonna deve avere il tipo di dati appropriato e le colonne devono essere nell'ordine elencato nella tabella seguente:
+- Devono essere presenti 14 colonne per ogni riga (o 15 se si vuole aggiungere la colonna facoltativa), ogni colonna deve avere il tipo di dati appropriato e le colonne devono essere nell'ordine elencato nella tabella seguente:
 
 ||||||||||||||||
 |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:--- |:---  |:--- |:---|
@@ -423,6 +431,33 @@ Nell'elenco a discesa dei report nella parte superiore dello schermo visualizzat
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
+### <a name="why-does-cqd-mark-a-call-as-good-if-one-or-more-meeting-participants-had-a-poor-experience"></a>Perché Call Quality dashboard contrassegnare una chiamata come "buona" Se uno o più partecipanti alla riunione hanno avuto una cattiva esperienza?
+
+Vedere le regole usate da Call Quality dashboard per la [classificazione del flusso](stream-classification-in-call-quality-dashboard.md).
+ 
+Per i flussi audio, tutti e cinque i classificatori, calcolati per la media in base alla lunghezza della chiamata, potrebbero essere tutti all'interno dei parametri "buoni". Ciò non significa che gli utenti non abbiano sperimentato qualcosa che ha contribuito a una disattivazione audio, statica o glitch. 
+
+Per determinare se si trattava di un problema di rete, esaminare il delta tra i valori medi per la sessione e i valori max. I valori max sono i massimi rilevati e segnalati durante la sessione.
+ 
+Ecco un esempio di come risolvere questo problema. Supponiamo che tu prenda una traccia di rete durante una chiamata e i primi 20 minuti non ci siano pacchetti persi, ma allora hai una lacuna di 1,5 secondi di pacchetti e quindi buona per il resto della chiamata. La media sta per essere <perdita di pacchetti del 10% (0,1) anche in una analisi di Wireshark Trace RTP. Qual è stata la perdita di pacchetti max? 1,5 sec in un periodo di 5 secondi sarebbe 30% (0,3). Che si verificano nel periodo di campionamento di cinque secondi (forse può essere diviso nel periodo di campionamento)?
+ 
+Se le metriche di rete hanno un aspetto ottimale nei valori medi e Max, cercare altri dati di telemetria: 
+- Controllare il rapporto di eventi insufficienti della CPU per verificare se le risorse della CPU rilevate disponibili sono insufficienti e causano scarsa qualità. 
+- Il dispositivo audio è in modalità half duplex per evitare di ricevere commenti e suggerimenti a causa dei microfoni da chiudere agli altoparlanti? 
+- Controllare il rapporto tra l'evento AEC half duplex Device. È stato il dispositivo glitch o il microfono glitching introducendo rumore o statica a causa di rilasci audio USB quando è collegato a un hub o una stazione di ancoraggio:  
+- Verificare le proporzioni degli eventi glitch e microfoni del dispositivo. Il dispositivo funzionava correttamente?  
+- Controlla i rapporti di evento non funzionanti del dispositivo di acquisizione e rendering.
+
+
+Per altre informazioni sulle dimensioni e le misure disponibili in telemetria Call Quality dashboard, leggere [le dimensioni e le misure disponibili nel dashboard qualità chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md).
+
+Per il rumore di fondo, controllare il rapporto tra gli eventi per visualizzare la durata del disattivazione dei partecipanti.
+ 
+Creare report dettagliati in Call Quality dashboard e filtrare l'ID riunione per esaminare tutti gli utenti e i flussi di una riunione e aggiungere i campi a cui si è interessati. Un utente che segnala il problema potrebbe non essere quello che ha avuto il problema. Stanno solo segnalando l'esperienza.
+ 
+La telemetria non chiamerà necessariamente il problema, ma può aiutarti a capire meglio dove cercare e informare le tue decisioni. È la rete, il dispositivo, il driver o gli aggiornamenti del firmware, l'uso o l'utente?
+
+
 ### <a name="why-does-my-cqd-v2-report-data-look-different-than-the-cqd-v3-report-data"></a>Perché i dati del report Call Quality dashboard V2 hanno un aspetto diverso rispetto ai dati del report di Call Quality dashboard V3? 
 
 Se vengono visualizzate differenze di dati tra Call Quality dashboard V2 e V3, verificare che il confronto o la convalida dei dati sia stata eseguita su un livello "mele-mele" e su uno stretto, non su un livello aggregato. Se ad esempio si filtrano entrambi i report per i dati client desktop di MSIT ' Building 30', la percentuale di qualità scadente dovrebbe essere uguale tra V2 e V3.
@@ -478,6 +513,7 @@ Quando si filtrano solo i team in report di Call Quality Dashboard (teams = 1), 
 
 [Configurazione di Skype for Business Call Analytics](set-up-call-analytics.md)
 
-[Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+[Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
 [Analisi delle chiamate e Dashboard Qualità della chiamata](difference-between-call-analytics-and-call-quality-dashboard.md)
+ 

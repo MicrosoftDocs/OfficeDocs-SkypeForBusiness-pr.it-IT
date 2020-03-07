@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: ms.teamsadmincenter.dashboard.trainingvideos.instructorled
 ms.collection:
 - M365-collaboration
-ms.openlocfilehash: 7d41218e75b24432e1f67ae1dc8344f8a76b8a50
-ms.sourcegitcommit: a6425a536746e129ab8bda3984b5ae63fb316192
+ms.openlocfilehash: 4a66451a760e6d9e07c374e4ea900af4b0d78b36
+ms.sourcegitcommit: 98fcfc03c55917d0aca48b7bd97988f81e8930c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558656"
+ms.locfileid: "42559328"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -75,6 +75,7 @@ Progettato per i professionisti IT e i responsabili decisionali, i colloqui di C
         </a>
     </li>
     <li>
+        <a href="https://aka.ms/ChalkTalkAppTemplates"target="_blank">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -85,11 +86,12 @@ Progettato per i professionisti IT e i responsabili decisionali, i colloqui di C
                     </div>
                     <div class="cardText">
                         <h3>Distribuire un'app teams in 60 minuti</h3>
-                        <p><font color="red"><i>Prossimamente!</i></font> Estendere teams usando i modelli di app per creare strumenti usati quotidianamente in teams, in modo da ottenere il lavoro in un'unica esperienza.</p>
+                        <p>Estendere teams usando i modelli di app per creare strumenti usati quotidianamente in teams, in modo da ottenere il lavoro in un'unica esperienza.</p>
                     </div>
                 </div>
             </div>
         </div>
+        </a>
     </li>
     <li>
         <div class="cardSize">
