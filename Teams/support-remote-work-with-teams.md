@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare gli utenti dell'organizzazione che lavorano da remoto a essere produttivi con Microsoft Teams, in particolare se lavorano da casa in risposta all'epidemia di COVID-19 (Coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 26a6c739212b4f1b8564dfe0b8e412d4e8f0e615
-ms.sourcegitcommit: 494e5956619084ff8f0a4f42efb5081c4530488a
+ms.openlocfilehash: 011522533a5a1a0641afb3da4421a8ae8e6c6715
+ms.sourcegitcommit: a6425a536746e129ab8bda3984b5ae63fb316192
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42551053"
+ms.lasthandoff: 03/07/2020
+ms.locfileid: "42558636"
 ---
 # <a name="support-remote-workers-using-microsoft-teams"></a>Supporto per i lavoratori remoti con Microsoft Teams
 
@@ -92,6 +92,8 @@ Condividere queste risorse e video con gli utenti finali per aiutarli a iniziare
       - Blog di Teams (28 febbraio 2020): [4 tips for working from home with Microsoft Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/4-tips-for-working-from-home-with-microsoft-teams-by-lola/ba-p/1202083) (quattro suggerimenti per lavorare da casa con Microsoft Teams)
 
       - [Collaborare con Office 365](https://support.office.com/article/Collaborate-with-Office-365-ac05a41e-0b49-4420-9ebc-190ee4e744f4)
+
+      - [Lavorare in remoto con Office 365](https://support.office.com/article/work-remotely-with-office-365-164946c8-a47a-470e-a0b4-feb12a2eea04)
 
       - [Nove suggerimenti per lavorare in remoto](https://www.microsoft.com/tips/home/working-remotely)
 
