@@ -672,6 +672,11 @@
 ### [Configurare l'analisi delle chiamate](set-up-call-analytics.md)
 ### [Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 ### [Attivazione e utilizzo di Dashboard Qualità della chiamata](turning-on-and-using-call-quality-dashboard.md)
+### Usare Power BI per analizzare i dati di Dashboard Qualità della chiamata
+#### [Usare Power BI per analizzare i dati di Dashboard Qualità della chiamata](CQD-Power-BI-query-templates.md)
+#### [Installare il connettore Power BI per usare i modelli di query di Dashboard Qualità della chiamata](CQD-Power-BI-connector.md)
+#### [Ottenere i dati di Dashboard Qualità della chiamata sull'utilizzo di Teams](CQD-teams-utilization-report.md)
+#### [Usare il report PSTN di Dashboard Qualità della chiamata](CQD-PSTN-report.md)
 ### [Dimensioni e misure disponibili in Dashboard Qualità della chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md)
 ### [Classificazione del flusso in Dashboard Qualità della chiamata](stream-classification-in-call-quality-dashboard.md)
 ## [Risoluzione dei problemi di installazione e aggiornamento](troubleshoot-installation.md)
