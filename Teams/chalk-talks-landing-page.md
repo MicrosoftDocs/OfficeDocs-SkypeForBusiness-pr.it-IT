@@ -16,18 +16,17 @@ f1.keywords:
 ms.custom: ms.teamsadmincenter.dashboard.trainingvideos.instructorled
 ms.collection:
 - M365-collaboration
-ms.openlocfilehash: 4a66451a760e6d9e07c374e4ea900af4b0d78b36
-ms.sourcegitcommit: 98fcfc03c55917d0aca48b7bd97988f81e8930c1
+ms.openlocfilehash: cde69bd588c7262e5ed6f0274b091fee29b27030
+ms.sourcegitcommit: 769241842058cfb4618460fad2dde1494a3609a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42559328"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42574003"
 ---
 <div id="main" class="v2">
     <div class="container">
         <h1>Colloqui di Microsoft teams Chalk</h1>
 Progettato per i professionisti IT e i responsabili decisionali, i colloqui di Chalk teams offrono un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche in alcuni degli scenari più comuni e interessanti in teams. Facilitati da esperti in materia, questi laboratori interattivi online ti offriranno approfondimenti per migliorare l'implementazione dei team e offrire un valore aggiunto per gli utenti finali.<br><br>
-           <strong>Prerequisito</strong>: prima di tutto partecipare ai <a href="https://aka.ms/Teamsin30"target="_blank">team in 30</a> laboratori.<br><br>
            <i>Fare clic sul titolo di un workshop seguente per visualizzare le date e gli orari disponibili e iscriversi oggi stesso.</i>
         <ul class="pivots">
             <li>
