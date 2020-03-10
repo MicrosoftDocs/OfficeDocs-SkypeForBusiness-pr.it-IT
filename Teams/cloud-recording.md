@@ -16,12 +16,12 @@ f1.keywords:
 description: Linee guida pratiche per la distribuzione di funzionalità cloud Voice in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5041b35822a04dc98aa6c07d3731ad8c6791af98
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 678e17ed92c0f269e134ac6c23dce29169c0d36d
+ms.sourcegitcommit: 33bec766519397f898518a999d358657a413924c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42030720"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583003"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni cloud di Teams
 
@@ -151,6 +151,10 @@ Le dimensioni di una registrazione di 1 ora sono di 400 MB. Verificare di aver c
 ## <a name="manage-meeting-recordings"></a>Gestire le registrazioni delle riunioni
 
 Le registrazioni delle riunioni sono considerate contenuto di proprietà del tenant. Se il proprietario della registrazione lascia la società, l'amministratore può aprire l'URL del video di registrazione in Microsoft Stream in modalità amministratore. L'amministratore può eliminare la registrazione, aggiornare i metadati della registrazione o modificare le autorizzazioni per il video di registrazione. Leggi altre informazioni sulle [funzionalità di amministrazione in Stream](https://docs.microsoft.com/stream/manage-content-permissions).
+
+> [!NOTE]
+> Per altre informazioni sulla gestione delle registrazioni e dell'accesso degli utenti, vedere [gestire i dati degli utenti in Microsoft Stream](https://docs.microsoft.com/stream/managing-user-data) e [autorizzazioni e privacy in Microsoft Stream](https://docs.microsoft.com/stream/portal-permissions) .
+
 
 ## <a name="compliance-and-ediscovery-for-meeting-recordings"></a>Conformità e eDiscovery per le registrazioni delle riunioni
 

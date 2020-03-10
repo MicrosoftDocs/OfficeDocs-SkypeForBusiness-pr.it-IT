@@ -20,12 +20,12 @@ f1.keywords:
 - CSH
 ms.custom: Reporting
 description: Ottenere informazioni dettagliate sulle dimensioni e sulle misure usate dal dashboard qualità chiamata per Microsoft teams e Skype for business online.
-ms.openlocfilehash: 1bc3fc7e62b234d0679531d48a656c71c54db113
-ms.sourcegitcommit: 86502c9ad03c5dd5ed18f0e3276a81d1260c76d2
+ms.openlocfilehash: b23b87ee7cf0f28fca59a3dee13113dcf28a141a
+ms.sourcegitcommit: 33bec766519397f898518a999d358657a413924c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/10/2020
-ms.locfileid: "42574419"
+ms.locfileid: "42583081"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard"></a>Dimensioni e misure disponibili nel dashboard qualità chiamata
 
@@ -439,10 +439,8 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 |Posizione MP PSTN|Stringa|La posizione del processore multimediale mostrerà il percorso multimediale in modalità non di bypass.<br/>**Esempio:** USWE||
 |Area del primo paese PSTN|Stringa|Se FirstIsCaller è true, la prima area del paese PSTN è il paese del chiamante. Se è falso, la seconda area del paese PSTN è il paese del chiamante.<br/>**Esempio:** NOI||
 |Jitter|Millisecondi|La variazione dell'ora di arrivo dei pacchetti RTP. Per altre informazioni, vedere [classificazione in Stream in dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md) .<br/>**Esempio:** 5,982||
-|Packet Loss Rate|Percentuale|Percentuale di flussi tra Mediation Server e SBC o gateway, se disponibile.
-Per altre informazioni, vedere [classificazione in Stream in dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md) .<br/>**Esempio:** 1,2%||
-|Latenza (ora di andata e ritorno)|Millisecondi|Il tempo medio di propagazione della rete di andata e ritorno per flusso calcolato.
-Per altre informazioni, vedere [classificazione in Stream in dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md) .<br/>**Esempio:** 3,49||
+|Packet Loss Rate|Percentuale|Percentuale di flussi tra Mediation Server e SBC o gateway, se disponibile. Per altre informazioni, vedere [classificazione in Stream in dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md) .<br/>**Esempio:** 1,2%||
+|Latenza (ora di andata e ritorno)|Millisecondi|Il tempo medio di propagazione della rete di andata e ritorno per flusso calcolato. Per altre informazioni, vedere [classificazione in Stream in dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md) .<br/>**Esempio:** 3,49||
 ||||
 
 ### <a name="notes-on-dimension-data-typeunits"></a>Note sul tipo di dati dimensione/unità

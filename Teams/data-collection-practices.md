@@ -1,5 +1,5 @@
 ---
-title: Procedure di raccolta dati
+title: Pratiche di raccolta dati
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,12 +22,12 @@ ms.custom:
 - Legal
 hideEdit: true
 description: Microsoft raccoglie i dati di censimento, utilizzo e errore per capire in che modo viene usato Skype for business e dove gli utenti incontrano problemi. I dati vengono usati per pianificare i miglioramenti del prodotto.
-ms.openlocfilehash: ec443c54041e77d419e4b387029be0f5b06c9177
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 1c88086038c3874ae95f6151c1d04d13e0b9ccaf
+ms.sourcegitcommit: 33bec766519397f898518a999d358657a413924c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826764"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583103"
 ---
 # <a name="skype-for-business-and-microsoft-teams-data-collection-practices"></a>Procedure per la raccolta di dati in Skype for business e Microsoft Teams
 
@@ -117,6 +117,4 @@ Per configurare la rete, è possibile vedere [configurare la rete per Skype for 
 Se si usa Office 365 gestito da 21Vianet in Cina, vedere [configurare la rete per Skype for business online gestito da 21ViaNet](https://support.office.com/article/d21f89b0-3afc-432e-b735-036b2432fdbf).
 
 ## <a name="related-topics"></a>Argomenti correlati
-[Programma Analisi utilizzo software](https://www.microsoft.com/products/ceip/default.mspx)
-
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)

@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Eseguire la procedura per creare un numero di telefono predefinito per i chiamanti per partecipare a una riunione di Microsoft teams. '
-ms.openlocfilehash: b5a43b0987160b87ac4a6e25b10ae6d850612ac1
-ms.sourcegitcommit: 8e2fa7b744d0a174b699ae7298d4688b971eeff3
+ms.openlocfilehash: 88032829581224b339f47b34c432629019fd3bac
+ms.sourcegitcommit: 33bec766519397f898518a999d358657a413924c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41845237"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583113"
 ---
 # <a name="set-the-phone-numbers-included-on-invites-in-microsoft-teams"></a>Impostare i numeri di telefono inclusi negli inviti in Microsoft Teams
 
@@ -44,7 +44,7 @@ Un ponte per conferenze offre un insieme di numeri di telefono di accesso estern
 
 I numeri di telefono inclusi negli inviti alle riunioni degli utenti abilitati per i servizi di audioconferenza sono definiti dal numero di telefono predefinito per i servizi di conferenza e dalle impostazioni predefinite dell'utente del numero di telefono gratuito per i servizi di conferenza. Ogni impostazione specifica il numero verde e il pedaggio che verrà incluso nell'invito alla riunione di un utente specifico. Come indicato sopra, ogni invito alla riunione contiene un numero a pagamento, un numero verde facoltativo e un collegamento che apre l'elenco completo di tutti i numeri di telefono di accesso esterno che possono essere usati per partecipare a una determinata riunione.
 
-Per un nuovo utente, i numeri a pagamento predefiniti per i servizi di conferenza vengono assegnati in base al paese impostato nel profilo di Office 365 dell'utente quando l'utente è abilitato per il servizio di audioconferenza. Se nel Bridge di conferenza è presente un numero a pagamento che corrisponde al paese dell'utente, tale numero verrà assegnato automaticamente come numero di pedaggio predefinito per l'utente. Se non è presente, il numero definito come numero di pedaggio predefinito del Bridge di conferenza verrà assegnato come numero di pedaggio predefinito per l'utente.  
+Per un nuovo utente, i numeri a pagamento predefiniti per i servizi di conferenza vengono assegnati in base alla posizione di utilizzo impostata nell'interfaccia di amministrazione di Office 365 dell'utente quando l'utente è abilitato per il servizio di audioconferenza. Se nel Bridge di conferenza è presente un numero a pagamento che corrisponde al paese dell'utente, tale numero verrà assegnato automaticamente come numero di pedaggio predefinito per l'utente. Se non è presente, il numero definito come numero di pedaggio predefinito del Bridge di conferenza verrà assegnato come numero di pedaggio predefinito per l'utente.  
 
 Quando l'utente è abilitato per il servizio di audioconferenza, il numero di telefono predefinito e il numero verde dell'utente possono essere modificati dall'amministratore del tenant dai valori iniziali in qualsiasi momento.
 
