@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4b0a516ae74ea012d8cba4e85509b5b37ee27163
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 4cf14616d4cfa2abc2caa99aee052b30e902172d
+ms.sourcegitcommit: 769241842058cfb4618460fad2dde1494a3609a1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41834886"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42574023"
 ---
 # <a name="overview-of-teams-and-channels-in-microsoft-teams"></a>Panoramica di team e canali in Microsoft Teams
 
@@ -73,7 +73,7 @@ I proprietari del team possono gestire le impostazioni a livello di Team diretta
 
 Tre minuti per vedere questo video di go-to-guide per i proprietari del team:
 
-   > [!VIDEO https://www.youtube.com/embed/7XcDSuw6NR4]
+   > [!VIDEO https://www.youtube.com/embed/kalV4dG-oFo]
 
 Se si è un amministratore di Microsoft teams in Office 365, è possibile accedere alle impostazioni a livello di sistema nell'interfaccia di amministrazione di Microsoft teams. Queste impostazioni possono avere un impatto sulle opzioni e le impostazioni predefinite per i proprietari del team. Ad esempio, puoi abilitare un canale predefinito, "generale", per gli annunci a livello di Team, le discussioni e le risorse, che verranno visualizzati in tutti i team.
 

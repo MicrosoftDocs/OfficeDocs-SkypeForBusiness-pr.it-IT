@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Usare Power BI per analizzare i dati di Call Quality dashboard per Microsoft teams.
-ms.openlocfilehash: d737f321ea8684ffe99b50575b1b2e8d044804d0
-ms.sourcegitcommit: 98fcfc03c55917d0aca48b7bd97988f81e8930c1
+ms.openlocfilehash: 155bde0373880befc770d745ca246b76d4c63eec
+ms.sourcegitcommit: 543f650ad4aff73bccfe7a60b66fb944b4e3c119
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42559493"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42572894"
 ---
 # <a name="use-power-bi-to-analyze-cqd-data-for-microsoft-teams"></a>Usare Power BI per analizzare i dati di Call Quality dashboard per Microsoft Teams
 
@@ -38,7 +38,7 @@ Prima di poter usare questi file di PBIX, è necessario [installare il connettor
 |Report dispositivo mobile call Quality dashboard. pbix     | Offre approfondimenti specifici per gli utenti di dispositivi mobili, tra cui la qualità delle chiamate, l'affidabilità e la tariffa chiamata. Visualizzare i report di rete mobile, rete WiFi e sistemi operativi mobili (Android, iOS).        |
 |Report di routing diretto PSTN Call Quality dashboard. pbix     |Fornisce informazioni specifiche per le chiamate PSTN che passano attraverso il routing diretto. Per altre informazioni, vedere [usare il report di routing diretto PSTN di Call Quality dashboard](CQD-PSTN-report.md).         |
 |Report di riepilogo di Call Quality dashboard. pbix     |Visualizzazioni migliori, presentazione migliorata, maggiore densità di informazioni e date di rotolamento. Questi report semplificano l'identificazione degli outlier. Eseguire il drill-down nella qualità delle chiamate per posizione con una mappa interattiva facile da usare. 9 nuovi report:</p>-Qualità complessiva<br>-Affidabilità complessiva<br>-RMC (Vota la mia chiamata) globale<br>-Qualità conferenza<br>-Qualità P2P<br>-Affidabilità per le conferenze<br>-Affidabilità P2P<br>-RMC conferenza<br>-RMC P2P         |
-|**(Nuovo!)** Report sull'utilizzo di teams Call Quality dashboard. pbix     | Mostra come gli utenti dell'organizzazione usano team e quanto. Per altre informazioni, vedere [usare il report di Power bi Call Quality dashboard per visualizzare l'utilizzo di Microsoft teams](CQD-teams-utilization-report.md).        |
+|<strong>(Nuovo!)</strong> Report sull'utilizzo di teams Call Quality dashboard. pbix     | Mostra come gli utenti dell'organizzazione usano team e quanto. Per altre informazioni, vedere [usare il report di Power bi Call Quality dashboard per visualizzare l'utilizzo di Microsoft teams](CQD-teams-utilization-report.md).        |
 |Feedback degli utenti di Call Quality Dashboard (Vota la mia chiamata) report. pbix     | Mostra il tasso di dati della chiamata in modo che sia possibile usare facilmente per supportare la chiamata per l'organizzazione. Riferimento incrociato con Verbatims per identificare le opportunità di formazione per gli utenti finali.        |
 
 

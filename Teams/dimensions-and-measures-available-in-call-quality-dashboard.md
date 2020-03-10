@@ -20,12 +20,12 @@ f1.keywords:
 - CSH
 ms.custom: Reporting
 description: Ottenere informazioni dettagliate sulle dimensioni e sulle misure usate dal dashboard qualità chiamata per Microsoft teams e Skype for business online.
-ms.openlocfilehash: 99013a4919dac1312564ab3f4d935fb2628d5da5
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+ms.openlocfilehash: 1bc3fc7e62b234d0679531d48a656c71c54db113
+ms.sourcegitcommit: 86502c9ad03c5dd5ed18f0e3276a81d1260c76d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161747"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42574419"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard"></a>Dimensioni e misure disponibili nel dashboard qualità chiamata
 
@@ -426,6 +426,23 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Building Name Pair  | Coppia enumerata  | Coppia del nome edificio per il primo e il secondo endpoint.  | &bull;Il nome dell'edificio per un endpoint non può essere determinato. Può accadere perché l'endpoint si trova all'esterno della rete aziendale o accede alla rete da un sito senza mappatura della subnet. <br/> **Valore di esempio:** Edificio principale: edificio del sito filiale |
 | Inside Corp Pair  | Coppia enumerata <br/>**Valori possibili:** <br/> Interno : Interno <br/> Interno : Esterno <br/> Esterno : Esterno | Coppi che mostra se gli endpoint erano situati all'interno o all'esterno della rete aziendale in base alla mappatura della subnet.   |   |
 | Scenario Pair  | Coppia enumerata  | Coppia che mostra se gli endpoint erano situati all'interno o all'esterno della rete aziendale in base alla mappatura della subnet e ai dettagli di connessione della rete. <br/> **Nota:** Le coppie sono separate da'--'. <br/> **Valore di esempio:** Client-interno--client-interno-WiFi  | &bull;Il tipo di connettività di rete era sconosciuto per entrambi gli endpoint.  |
+|**PSTN**|||
+|Motivo di fine chiamata PSTN (codice di risposta SIP)|Int|Un codice di risposta intero A tre cifre Mostra lo stato finale della chiamata. <br/> Per altre informazioni sulla spiegazione SIP, vedere l' [elenco dei codici di risposta SIP](https://www.wikipedia.org/wiki/List_of_SIP_response_codes). <br/>**Esempio:** 404||
+|FQDN trunk PSTN|Stringa|FQDN è il nome di dominio completo (FQDN) di Session Border Controller (SBC).<br/>**Esempio:** sbcgw.contoso.com||
+|Nome portante PSTN|Stringa|La società autorizzata dalle agenzie di regolamentazione a gestire un sistema di telecomunicazioni.<br/>**Esempio:** Colt|Il routing diretto non ha un gestore. Solo un piano chiamante ha un elemento portante.|
+|Tipo di chiamata PSTN|Stringa|Questa stringa combina il tipo di servizio e il tipo di chiamata.<br/><br/>Tipo di servizio:<br/>piano per le chiamate > utente<br/>BYOT-> routing diretto<br/>conf-> audioconferenza<br/>app ucap-> Voice<br/>emergenza-> numero di emergenza<br/><br/>Tipo chiamata:<br/>Chiamata in ingresso ><br/>Chiamata in uscita out-><br/>Out_transfer-> chiamata in uscita viene trasferita in terza persona<br/>Out_forward-> chiamata in uscita viene inoltrata a terze persone<br/>Out_conf-> chiamata in uscita con un partecipante PSTN ad-hoc<br/><br/>**Esempio:** ByotIn||
+|Tipo di connettività PSTN|Stringa|Il tipo di connettività PSTN include il routing diretto, il piano di chiamate o i servizi di audioconferenza. In questo momento, solo il routing diretto è disponibile nel dashboard qualità chiamata (Call Quality Dashboard).<br/>**Esempio:** Routing diretto||
+|Espressione di codice SIP finale PSTN|Stringa|Frase motivo corrispondente al codice di risposta SIP e al codice di risposta Microsoft.<br/>**Esempio:** Addio||
+|Motivo di fine chiamata PSTN|Int|Codice di risposta inviato dal componente Microsoft che indica azioni specifiche che si sono verificate.<br/>**Esempio:** 540000||
+|Tipo di evento PSTN|Stringa|Tipo di evento che fornisce la telemetria.<br/>**Esempio:** Fine||
+|Ora delle informazioni dell'evento PSTN|Data|L'ora in formato UTC quando una chiamata in uscita viene avviata da Microsoft Network o una chiamata in ingresso raggiunge la rete Microsoft.<br/>**Esempio:** 2020-02-06 20:57:53.1750000||
+|Posizione MP PSTN|Stringa|La posizione del processore multimediale mostrerà il percorso multimediale in modalità non di bypass.<br/>**Esempio:** USWE||
+|Area del primo paese PSTN|Stringa|Se FirstIsCaller è true, la prima area del paese PSTN è il paese del chiamante. Se è falso, la seconda area del paese PSTN è il paese del chiamante.<br/>**Esempio:** NOI||
+|Jitter|Millisecondi|La variazione dell'ora di arrivo dei pacchetti RTP. Per altre informazioni, vedere [classificazione in Stream in dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md) .<br/>**Esempio:** 5,982||
+|Packet Loss Rate|Percentuale|Percentuale di flussi tra Mediation Server e SBC o gateway, se disponibile.
+Per altre informazioni, vedere [classificazione in Stream in dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md) .<br/>**Esempio:** 1,2%||
+|Latenza (ora di andata e ritorno)|Millisecondi|Il tempo medio di propagazione della rete di andata e ritorno per flusso calcolato.
+Per altre informazioni, vedere [classificazione in Stream in dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md) .<br/>**Esempio:** 3,49||
 ||||
 
 ### <a name="notes-on-dimension-data-typeunits"></a>Note sul tipo di dati dimensione/unità
@@ -580,7 +597,7 @@ Molti valori di misurazione possono essere usati anche come filtri. La tabella s
 | AVG secondo livello di segnale RxAGC|Intervallo (decibel) |Livello di segnale medio ricevuto al controllo guadagno automatico per il secondo flusso audio in ingresso.| |
 | AVG primo livello di rumore RxAGC|Intervallo (decibel) |Livello di rumore medio ricevuto al controllo di guadagno automatico per il primo flusso audio in ingresso.||
 | AVG secondo livello di rumore RxAGC|Intervallo (decibel) |Livello di rumore medio ricevuto al controllo guadagno automatico per il secondo flusso audio in ingresso.| |
-| Livello di segnale di loopback del primo rendering di AVG|Intervallo (decibel) | Livello medio del segnale di loopback del primo altoparlante (dopo l'applicazione di tutti gli effetti di offload del dispositivo).|   Livello medio di segnale di loopback del relatore (dopo l'applicazione di eventuali effetti di offload del dispositivo).|
+| Livello di segnale di loopback del primo rendering di AVG|Intervallo (decibel) | Livello medio del segnale di loopback del primo altoparlante (dopo l'applicazione di tutti gli effetti di offload del dispositivo).|
 | Livello di segnale loopback di AVG Second render|Intervallo (decibel) | Livello medio di segnale di loopback del secondo altoparlante (dopo l'applicazione di eventuali effetti di offload del dispositivo).|
 |Avg First Audio Send Signal Level |Decibel |Livello medio di energia dell'audio inviato per l'audio vocale classificato come mono o per il canale sinistro dell'audio vocale stereo inviato dai primi endpoint. |
 |Avg Second Audio Send Signal Level |Decibel |Livello medio di energia dell'audio inviato per l'audio vocale classificato come mono o per il canale sinistro dell'audio vocale stereo inviato dai secondi endpoint. |
@@ -617,7 +634,7 @@ Molti valori di misurazione possono essere usati anche come filtri. La tabella s
 |Avg Round Trip |Millisecondi |Media del tempo di roundtrip medio di propagazione alla rete calcolato come da specifica RFC3550 in millisecondi relativamente ai flussi. |
 |Avg Round Trip Max |Millisecondi |Media del tempo di roundtrip massimo di propagazione alla rete calcolato come da specifica RFC3550 in millisecondi relativamente ai flussi. |
  Utilizzo di pacchetti AVG|Numero di pacchetti|Numero medio di pacchetti RTP (Real-Time Transport Protocol) inviati al secondo nella sessione.|
-|Avg Network Jitter |Millisecondi | Media del jitter della rete calcolato oltre 20 seconde finestre durante la sessione. |
+|Avg Network Jitter |Millisecondi |   Media del jitter della rete calcolato oltre 20 seconde finestre durante la sessione. |
 | AVG rete jitter max|Millisecondi |Media del jitter di rete massimo in millisecondi calcolati oltre 20 secondi di Windows durante la sessione.  ||
 | Media jitter min di rete|Millisecondi|Media dei valori minimi di jitter della rete in millisecondi calcolati in più di 20 seconde finestre durante la sessione per i flussi.| |
 | Dimensione buffer jitter media max|Millisecondi|Dimensione massima del buffer jitter durante la sessione.| |
@@ -651,6 +668,25 @@ Molti valori di misurazione possono essere usati anche come filtri. La tabella s
 | Rapporto sugli eventi di AVG Second Device Glitches|Percentuale|Frazione media della chiamata che il secondo endpoint ha rilevato glitch o lacune nel contenuto multimediale riprodotto o acquisito che ha causato la scarsa qualità del contenuto multimediale inviato o ricevuto.|
 | Numero di eventi Glitches First Device|Numero di flussi in cui il primo endpoint ha rilevato anomalie o lacune significativi nei contenuti multimediali riprodotti o acquisiti che causavano la scarsa qualità del contenuto multimediale inviato o ricevuto.||
 | Conteggio eventi glitch del secondo dispositivo|Numero di flusso in cui il secondo endpoint ha rilevato glitch o lacune significativi nel contenuto multimediale riprodotto o acquisito che ha causato la scarsa qualità del contenuto multimediale inviato o ricevuto.||
+| Conteggio dei tentativi totali PSTN | Numero di chiamate | Totale chiamate tentate, incluse le chiamate e le chiamate non riuscite nell'intervallo di tempo selezionato.|
+|Conteggio connessioni totali PSTN | Numero di chiamate | Totale chiamate connesse correttamente nell'intervallo di tempo selezionato.|
+|Conteggio dei tentativi in ingresso PSTN | Numero di chiamate | Totale chiamate in ingresso tentate, incluse le chiamate e le chiamate non riuscite nell'intervallo di tempo selezionato.|
+|Conteggio connesso in ingresso PSTN | Numero di chiamate | Totale chiamate connesse correttamente in ingresso nell'intervallo di tempo selezionato.|
+|Conteggio tentativi in uscita PSTN | Numero di chiamate | Totale chiamate in uscita tentate, incluse le chiamate e le chiamate non riuscite nell'intervallo di tempo selezionato.|
+|Conteggio connesso in uscita PSTN | Numero di chiamate | Totale chiamate connesse correttamente in uscita nell'intervallo di tempo selezionato.|
+|Minuti totali PSTN | Minuti | Minuti totali | Utilizzo totale dei minuti nell'intervallo di tempo selezionato.|
+|Minuti totali in ingresso PSTN | Minuti | Totale dei minuti in entrata nell'intervallo di tempo selezionato.|
+|Minuti totali in uscita PSTN | Minuti | Utilizzo totale minuti in uscita nell'intervallo di tempo selezionato.|
+|Conteggio utenti attivi PSTN | Numero di utenti | Numero di utenti che hanno effettuato almeno una chiamata connessa durante il giorno.|
+|Durata della chiamata media PSTN | Minuti | Durata media di tutte le chiamate connesse nell'intervallo di tempo selezionato. In genere, una chiamata PSTN di 1:1 è di quattro-cinque minuti. Tuttavia, questa media può variare per ogni società.|
+|Conteggio chiamate simultanee in ingresso totale PSTN | Numero di chiamate | Numero massimo di chiamate in ingresso attive simultanee in un minuto.|
+|Conteggio chiamate simultanee in uscita PSTN Total | Numero di chiamate | Numero massimo di chiamate in uscita attive simultanee in un minuto.|
+|Latenza P50 | Millisecondi | il 50% delle richieste deve essere più veloce rispetto alla latenza specificata.|
+|Jitter P50 | Millisecondi | il 50% delle richieste deve essere più rapido di un jitter.|
+|Tasso di perdita di pacchetti P50 | Percentuale | 50% delle richieste dovrebbe avere un tasso di perdita di pacchetti inferiore a quello indicato.|
+|Ritardo della chiamata in uscita PSTN| Millisecondi | Il ritardo che si verifica sulle chiamate in uscita misurato a partire dal momento in cui un numero è stato composto fino a quando il chiamante o l'interlocutore non sente squillare.|
+|Ritardo della chiamata in arrivo PSTN | Millisecondi | Il tempo o il ritardo che si verifica sulle chiamate in arrivo misurato a partire dal momento in cui un numero è stato composto fino a quando il chiamante o l'interlocutore non sente la chiamata.|
+|Percentuale buona di NER PSTN | Percentuale | L'NER misura la capacità di una rete di consegnare le chiamate misurando il numero di chiamate inviate rispetto al numero di chiamate recapitate a un destinatario.<br/>NER = (risposte chiamate + utente occupato + squillo nessuna risposta + attacchi terminali)/tentativo totale chiamate x 100|
 ||||
 
 ## <a name="filters"></a>Filtri

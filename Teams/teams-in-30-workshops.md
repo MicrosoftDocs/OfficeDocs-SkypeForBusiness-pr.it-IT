@@ -20,12 +20,12 @@ ms.custom: ms.teamsadmincenter.dashboard.trainingvideos.enduserteamstraining
 ROBOTS: NOINDEX
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 182b7178cf24b786e81afd9181c9275541857486
-ms.sourcegitcommit: a6425a536746e129ab8bda3984b5ae63fb316192
+ms.openlocfilehash: 094f3db845109538df4652c3f1e990465c670918
+ms.sourcegitcommit: 86502c9ad03c5dd5ed18f0e3276a81d1260c76d2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558606"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42574429"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -147,8 +147,8 @@ ms.locfileid: "42558606"
                     </div>
                     <div class="cardText">
                     <h3>Colloqui di gesso in teams</h3>
-                    <p>Facilitati da esperti in materia, questi laboratori interattivi online offrono un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche per alcuni degli scenari più comuni e interessanti in teams.</p>
-                    <p><strong>Prerequisito</strong>: teams in 30 laboratori. I colloqui di gesso si basano su ciò che imparerai nei seminari che trovi in questa pagina.</p>
+                    <p>Facilitati da esperti in materia, questi laboratori interattivi online offrono un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche per alcuni degli scenari più comuni e interessanti in teams. I colloqui di gesso presuppongono che l'implementazione di team di base sia stata completata.</p>
+                    <p><strong>Prerequisito</strong>: teams in 30 partecipanti all'officina o già abilitati per i team di tutta l'organizzazione.</p>
                     <p><i>Gruppo di destinatari: amministratori IT</i></p>
                     </div>
                 </div>
