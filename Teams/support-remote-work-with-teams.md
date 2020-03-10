@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare gli utenti dell'organizzazione che lavorano da remoto a essere produttivi con Microsoft Teams, in particolare se lavorano da casa in risposta all'epidemia di COVID-19 (Coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 011522533a5a1a0641afb3da4421a8ae8e6c6715
-ms.sourcegitcommit: a6425a536746e129ab8bda3984b5ae63fb316192
+ms.openlocfilehash: cdd4338a157869d6e0453910a29514d6dc7ed0c9
+ms.sourcegitcommit: 769241842058cfb4618460fad2dde1494a3609a1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558636"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42574083"
 ---
 # <a name="support-remote-workers-using-microsoft-teams"></a>Supporto per i lavoratori remoti con Microsoft Teams
 
@@ -65,6 +65,8 @@ Condividere queste risorse e video con gli utenti finali per aiutarli a iniziare
 
 2. Oltre alla versione di valutazione di [Office 365 E1](e1-trial-license.md) e a [Teams gratuito](https://support.office.com/article/Welcome-to-Microsoft-Teams-free-6d79a648-6913-4696-9237-ed13de64ae3c), è anche possibile scegliere [Teams Exploratory](teams-exploratory.md) se occorrono licenze gratuite per Teams.
 
+1. Se si lavora nel settore dell'istruzione e si vogliono configurare docenti, studenti e amministratori in Teams, usare Office 365 A1. La versione gratuita di Office 365 è disponibile per tutti gli istituti di istruzione. Iscriviti alla pagina [ Ottenere gratuitamente Office 365 per l'intera scuola](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans).
+
 1. Assicurarsi che i dipendenti abbiano accesso a Internet e larghezza di banda adeguati per Teams. Per informazioni a questo proposito, vedere [Preparare la rete dell'organizzazione per Teams](prepare-network.md).
 
    - La larghezza di banda limitata può influire sulla qualità audio nelle riunioni di Teams. Per garantire la miglior esperienza di riunione in condizioni di larghezza di banda ridotta, invitare gli utenti a limitare il video e usare la rete PSTN per le chiamate e l'audio della riunione. 
@@ -89,6 +91,8 @@ Condividere queste risorse e video con gli utenti finali per aiutarli a iniziare
     
 3. Leggere i nuovi contenuti sul lavoro in remoto e condividerli con gli utenti:
         
+      - *Novità del 9 marzo 2020*: [Lavorare in remoto con Microsoft Teams](https://products.office.com/microsoft-teams/work-remotely)
+
       - Blog di Teams (28 febbraio 2020): [4 tips for working from home with Microsoft Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/4-tips-for-working-from-home-with-microsoft-teams-by-lola/ba-p/1202083) (quattro suggerimenti per lavorare da casa con Microsoft Teams)
 
       - [Collaborare con Office 365](https://support.office.com/article/Collaborate-with-Office-365-ac05a41e-0b49-4420-9ebc-190ee4e744f4)
@@ -109,7 +113,7 @@ Condividere queste risorse e video con gli utenti finali per aiutarli a iniziare
     
    - Inviare informazioni sui criteri dell'organizzazione per il lavoro da casa e in materia di salute e sicurezza.
     
-   - Usare [Eventi live](teams-live-events/what-are-teams-live-events.md) per le riunioni a livello aziendale. Per ogni riunione di oltre 250 partecipanti, creare un evento live. 
+   - Usare [Eventi live](teams-live-events/what-are-teams-live-events.md) per le riunioni a livello aziendale. Per ogni riunione di oltre 250 partecipanti, creare un evento live. Attivare i sottotitoli in tempo reale per [riunioni](https://support.office.com/article/Use-live-captions-in-a-Teams-meeting-4be2d304-f675-4b57-8347-cbd000a21260) ed [eventi live](https://support.office.com/article/Use-live-captions-in-a-live-event-1d6778d4-6c65-4189-ab13-e2d77beb9e2a). Inoltre, attivare i sottotitoli in eventi live. Dette funzionalità aumentano l’inclusione, la produttività e la comprensione. 
 
 4.  Aumentare il personale dell'[helpdesk](troubleshoot-installation.md) per gestire le richieste degli utenti.
 
