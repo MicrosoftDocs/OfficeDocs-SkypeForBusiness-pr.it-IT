@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4812c444-2546-48d7-9ca7-b71fce508ed8
 description: 'Riepilogo: configurare i requisiti non server per Skype for Business Server 2015. È possibile configurare una serie di operazioni prima di eseguire la distribuzione, tra cui Active Directory, DNS, certs e fileshares.'
-ms.openlocfilehash: 0d1f2ff87189cd7fd88f37429fb2ebf6805f6810
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 164f4b8037c972907eb6d1375f77b3cc350959e5
+ms.sourcegitcommit: 543f650ad4aff73bccfe7a60b66fb944b4e3c119
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42012585"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42572804"
 ---
 # <a name="environmental-requirements-for-skype-for-business-server-2015"></a>Requisiti ambientali per Skype for Business Server 2015
  
@@ -85,7 +85,7 @@ A questo punto, il livello di funzionalità del dominio di qualsiasi dominio in 
     
 - Windows Server 2003
     
-È possibile disporre di controller di dominio di sola lettura in questi ambienti? Verificare che sia disponibile anche il controller di dominio scrivibile.
+È possibile disporre di controller di dominio di sola lettura in questi ambienti? Certo, purché vi siano anche controller di dominio scrivibile disponibili nello stesso sito del server Skype for business.
   
 A questo punto, è importante sapere che Skype for Business Server 2015 non supporta i domini con etichetta singola. Cosa sono? Se si dispone di un dominio radice con l'etichetta contoso. local, andrà bene. Se si dispone di un dominio radice appena denominato local, questo non funzionerà e non sarà supportato come risultato. [In questo articolo della Knowledge base](https://support.microsoft.com/kb/300684/en-us)è stato scritto un po' di più.
   
@@ -374,4 +374,3 @@ Skype for Business Server 2015 è in grado di utilizzare la stessa condivisione 
 > [!CAUTION] 
 > È necessario sapere che l'utilizzo di Network Attached Storage (NAS) come condivisione file non è supportato, quindi utilizzare una delle opzioni sopra elencate. 
   
-

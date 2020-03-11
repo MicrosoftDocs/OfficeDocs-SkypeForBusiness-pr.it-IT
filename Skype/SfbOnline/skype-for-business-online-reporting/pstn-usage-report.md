@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Reporting
 description: La nuova area report dell'interfaccia di amministrazione di Skype for business Mostra la chiamata e l'attività di conferenza audio nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli di utilizzo PSTN dei servizi di audioconferenza, incluso il costo della chiamata, in modo da poter comprendere l'utilizzo e chiamare i dettagli di fatturazione per determinare l'utilizzo all'interno dell'organizzazione.
-ms.openlocfilehash: b76bd2f752b03e59143162261b37f311f1b38b64
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: a489277eceaab533fc03ac7017dcc217b4071bc6
+ms.sourcegitcommit: 33bec766519397f898518a999d358657a413924c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41706051"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42582883"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
@@ -71,8 +71,8 @@ Questo è l'aspetto del report.
      *    **user_out_forwarding** (l'utente ha inoltrato la chiamata a un numero PSTN)
 
      **Tipi di chiamate Audioconferenze**
-     *    **conf_in** (una chiamata in entrata per il Bridge di audioconferenza) 
-     *    **conf_out** (chiamata in uscita dal bridge Audioconferenze, tipicamente per aggiungere un numero PSTN alla conferenza)
+     *    **conf_in** (una chiamata in entrata per il Bridge di audioconferenza). Per i record di questo tipo di chiamata, l'utente specificato nella colonna **ID utente** corrisponde all'organizzatore della riunione.
+     *    **conf_out** (una chiamata in uscita dal Bridge di audioconferenza, in genere per aggiungere un numero PSTN alla conferenza). Per i record di questo tipo di chiamata, l'utente specificato nella colonna **ID utente** corrisponde all'organizzatore della riunione.
 
      **UCAP (Unified Communication Applications)** 
      *    **ucap_in** (chiamata PSTN in ingresso per l'applicazione UC, ad esempio operatore automatico o coda di chiamata) 
@@ -94,12 +94,13 @@ Questo è l'aspetto del report.
      *    **MCOPSTN6** -piano per chiamate nazionali (240 min Calling Plan) Nota: disponibilità limitata
      *    **MCOMEETADD** -audioconferenza
      *    **MCOMEETACPEA** -pay per minute audioconferenza
+     
 > [!NOTE]
 > Se si vuole eseguire un report per includere solo le chiamate pay per minute che non sono incluse nell'abbonamento a una chiamata o a una conferenza, filtrare il report con la funzionalità "MCOPSTNPP". In questo modo verrà fornito un elemento per tutte le chiamate pay per minute.  Per i servizi di conferenza audio pay per minute, filtrare per "MCOMEETACPEA" invece di "MCOPSTNPP".  
-***
+
 > [!NOTE]
 > In alcuni campi potrebbe essere visualizzato anche "Nessun dato". "Nessun dato" indica che il campo non è applicabile al tipo o alla funzionalità di chiamata. 
-***
+
 > [!NOTE]
 > Se si dispone di un piano per chiamate Telstra, non verranno visualizzati record dettagli chiamata nel report utilizzo PSTN. Contattare Telstra per le esigenze di Reporting. 
 ***
