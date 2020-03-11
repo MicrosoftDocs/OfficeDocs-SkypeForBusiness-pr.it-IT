@@ -22,19 +22,19 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.allowsideloading
 - ms.teamsadmincenter.appsetuppolicies.tooltip.allowsideloading
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
-ms.openlocfilehash: 86bf441f6dfa74b243f1a6e64139a32b8b94d7fa
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+ms.openlocfilehash: a3435d0a6be9e9ef6642fe84404cb54d4ebaf8e4
+ms.sourcegitcommit: dde63e1b92c0bc3dbb41d8670778b863c3bc9bec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161632"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42601423"
 ---
 # <a name="manage-custom-app-policies-and-settings-in-microsoft-teams"></a>Gestire i criteri e le impostazioni dell'app personalizzata in Microsoft Teams
 
 > [!NOTE]
 > Per usare app Studio vedere [Introduzione alla piattaforma Microsoft teams con C#/.NET e App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-dotnet-app-studio) l'ultimo passaggio non funziona ancora, quindi è necessario scaricare il zip e installarlo alla vecchia maniera in [caricare un pacchetto dell'app in Microsoft teams](https://docs.microsoft.com/microsoftteams/platform/concepts/apps/apps-upload).
 
-Come amministratore, puoi usare le impostazioni e i criteri delle app personalizzati per controllare chi nell'organizzazione può caricare app personalizzate in Microsoft teams. Gli amministratori decidono quali utenti possono caricare app personalizzate e gli amministratori e i proprietari del team possono determinare se specifici team dell'organizzazione consentano l'aggiunta di app personalizzate.  Dopo aver modificato i criteri delle app personalizzate, è possibile che siano necessarie fino a 24 ore affinché le modifiche abbiano effetto.
+Come amministratore, puoi usare le impostazioni e i criteri delle app personalizzati per controllare chi nell'organizzazione può caricare app personalizzate in Microsoft teams. Gli amministratori decidono quali utenti possono caricare app personalizzate e gli amministratori e i proprietari del team possono determinare se specifici team dell'organizzazione consentano l'aggiunta di app personalizzate.  Dopo aver modificato i criteri delle app personalizzate, è possibile che siano necessarie fino a 24 ore affinché le modifiche abbiano effetto. Per gestire questi criteri è necessario essere un amministratore globale o un servizio di teams.
 
 ## <a name="overview-of-custom-apps"></a>Panoramica delle app personalizzate
 
