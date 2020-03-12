@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare l'assegnazione di criteri batch per assegnare i criteri a set di grandi dimensioni degli utenti nell'Istituto di istruzione in blocco per scopi scolastici remoti (Teleschool, tele-scuola).
 f1keywords: ''
-ms.openlocfilehash: e95c6b035298ce583a0ad34a030f2086b7c12ff3
-ms.sourcegitcommit: 33bec766519397f898518a999d358657a413924c
+ms.openlocfilehash: 79c36aa0e2a7a2d310756d052b8962daeaa38634
+ms.sourcegitcommit: a34a827dfdad05b281e2e5ec5a80fc4e67fc89e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583339"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604303"
 ---
 # <a name="assign-policies-to-large-sets-of-users-in-your-school"></a>Assegnare criteri a grandi gruppi di utenti nella tua scuola
 
@@ -42,14 +42,14 @@ Seguire questa procedura per assegnare un criterio di riunione personalizzato al
 
 ## <a name="connect-to-the-azure-ad-powershell-for-graph-module-and-the-teams-powershell-module"></a>Connettersi al modulo di Azure AD PowerShell per il grafico e al modulo di PowerShell Teams
 
-Prima di eseguire la procedura descritta in questo articolo, è necessario installare e connettersi a Azure AD PowerShell per modulo grafico (per identificare gli utenti in base alle licenze assegnate) e alla versione preliminare del modulo di PowerShell di Microsoft Teams (per assegnare i criteri a tali utenti).
+Prima di eseguire la procedura descritta in questo articolo, è necessario installare e connettersi a Azure AD PowerShell per il modulo grafico (per identificare gli utenti tramite le licenze assegnate) e il modulo di PowerShell di Microsoft Teams (per assegnare i criteri a tali utenti).
 
 ### <a name="install-and-connect-to-the-azure-ad-powershell-for-graph-module"></a>Installare e connettersi al modulo di Azure AD PowerShell per il grafico
 
 Aprire un prompt dei comandi di Windows PowerShell con privilegi elevati (eseguire Windows PowerShell come amministratore) e quindi eseguire le operazioni seguenti per installare il modulo di PowerShell per il grafico di Azure Active Directory.
 
 ```powershell
-Install-Module AzureAD
+Install-Module -Name AzureAD
 ```
 
 Eseguire la procedura seguente per connettersi ad Azure AD.
@@ -60,11 +60,15 @@ Connect-AzureAD
 
 Quando viene richiesto, accedere con le credenziali di amministratore.
 
-Per altre informazioni, vedere [connettersi con il modulo di PowerShell per il grafico di Azure Active Directory](https://docs.microsoft.com/eoffice365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Per altre informazioni, vedere [connettersi con il modulo di PowerShell per il grafico di Azure Active Directory](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
-### <a name="install-and-connect-to-the-pre-release-version-of-the-teams-powershell-module"></a>Installare e connettersi alla versione non definitiva del modulo di PowerShell Teams
+### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo di PowerShell di Microsoft Teams
 
-I cmdlet necessari sono disponibili nella versione precedente del modulo di PowerShell teams. Seguire la procedura descritta in [installare e connettersi al modulo di PowerShell per Microsoft teams](assign-policies.md#install-and-connect-to-the-microsoft-teams-powershell-module) per disinstallare prima la versione in generale disponibile del modulo di PowerShell Teams (se è installato) e quindi installare la versione più recente di pre-rilascio del modulo dalla raccolta di test di PowerShell.
+Eseguire la procedura seguente per installare il [modulo di PowerShell per Microsoft teams](https://www.powershellgallery.com/packages/MicrosoftTeams). Assicurarsi di installare la versione 1.0.5 o successiva.
+
+```powershell
+Install-Module -Name MicrosoftTeams
+```
 
 Eseguire le operazioni seguenti per connettersi ai team e avviare una sessione.
 
@@ -102,7 +106,7 @@ In questo esempio l'output mostra che la licenza di facoltà SkuId è "e97c048c-
 Eseguiamo quindi le operazioni seguenti per identificare gli utenti con questa licenza e raccoglierli tutti insieme.
 
 ```powershell
-$faculty = Get-AzureADUser -All $true | Where-Object (($_.assignedLicenses).SkuId -contains “e97c048c-37a4-45fb-ab50-922fbf07a370”)
+$faculty = Get-AzureADUser -All $true | Where-Object (($_.assignedLicenses).SkuId -contains "e97c048c-37a4-45fb-ab50-922fbf07a370")
 ```
 
 ## <a name="assign-a-policy-in-bulk"></a>Assegnare un criterio in blocco

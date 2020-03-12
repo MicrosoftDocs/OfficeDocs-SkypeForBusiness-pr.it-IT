@@ -16,17 +16,17 @@ localization_priority: Normal
 search.appverid: MET150
 description: Scopri i diversi modi per assegnare i criteri agli utenti in Microsoft teams.
 f1keywords: ''
-ms.openlocfilehash: cb1c5fd43379388327de5e517409f01f7f52ed1b
-ms.sourcegitcommit: d7be89019dd5a3b88b0840bddf1b88fea8598ea7
+ms.openlocfilehash: e9f31f9bf9d08497b58490ddc7a7bea9e0496539
+ms.sourcegitcommit: a34a827dfdad05b281e2e5ec5a80fc4e67fc89e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170762"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42604293"
 ---
 # <a name="assign-policies-to-your-users-in-microsoft-teams"></a>Assegnare criteri agli utenti in Microsoft Teams
 
 > [!NOTE]
-> **Due delle caratteristiche di Microsoft teams discusse in questo articolo, [assegnazione di criteri batch](#assign-a-policy-to-a-batch-of-users) e [assegnazione di criteri ai gruppi](#assign-a-policy-to-a-group)sono attualmente in anteprima.**
+> **Una delle caratteristiche di Microsoft teams discusse in questo articolo, [assegnazione dei criteri ai gruppi](#assign-a-policy-to-a-group), è attualmente in anteprima.**
 
 Come amministratore, puoi usare i criteri per controllare le caratteristiche dei team disponibili per gli utenti dell'organizzazione. Ad esempio, esistono criteri per la chiamata, criteri per le riunioni e criteri di messaggistica, per citarne solo alcuni.
 
@@ -64,7 +64,7 @@ Ecco una panoramica dei modi in cui è possibile assegnare i criteri agli utenti
 |---------|---------|----|
 |[Assegnare un criterio a singoli utenti](#assign-a-policy-to-individual-users)    | Si è nuovi team e si è appena iniziato o si deve solo assegnare uno o due criteri a un numero limitato di utenti. |L'interfaccia di amministrazione di Microsoft teams o i cmdlet di PowerShell nel modulo di PowerShell Skype for business online
 | [Assegnare un pacchetto di criteri](#assign-a-policy-package)   | È necessario assegnare più criteri a specifici set di utenti dell'organizzazione che hanno ruoli uguali o simili. Ad esempio, assegnare il pacchetto di criteri Education (Teacher) agli insegnanti della scuola per consentire l'accesso completo alle chat, alle chiamate e alle riunioni e al pacchetto di criteri per l'istruzione (studente di scuola secondaria) agli studenti secondari per limitare alcune funzionalità come chiamate private.  |Interfaccia di amministrazione di Microsoft teams o cmdlet di PowerShell nel modulo di PowerShell Teams|
-|[Assegnare un criterio a un batch di utenti](#assign-a-policy-to-a-batch-of-users) (in anteprima)   | È necessario assegnare criteri a set di utenti di grandi dimensioni. Ad esempio, si vuole assegnare un criterio a centinaia o migliaia di utenti dell'organizzazione alla volta.  |Cmdlet di PowerShell nel modulo di PowerShell Teams|
+|[Assegnare un criterio a un gruppo di utenti](#assign-a-policy-to-a-batch-of-users)   | È necessario assegnare criteri a set di utenti di grandi dimensioni. Ad esempio, si vuole assegnare un criterio a centinaia o migliaia di utenti dell'organizzazione alla volta.  |Cmdlet di PowerShell nel modulo di PowerShell Teams|
 |[Assegnare un criterio a un gruppo](#assign-a-policy-to-a-group) (in anteprima)   |È necessario assegnare criteri in base all'appartenenza al gruppo di un utente. Ad esempio, si vuole assegnare un criterio a tutti gli utenti in un gruppo di sicurezza o in un'unità organizzativa.| Cmdlet di PowerShell nel modulo di PowerShell Teams|
 | Assegnare un pacchetto di criteri a un batch di utenti (disponibile a breve) |||
 | Assegnare un pacchetto di criteri a un gruppo (disponibile a breve)   | ||
@@ -121,8 +121,6 @@ Quando si assegna un pacchetto di criteri agli utenti, i criteri del pacchetto v
 Per altre informazioni sui pacchetti di criteri, tra cui indicazioni dettagliate su come assegnarle e gestirle, vedere gestire i [pacchetti di criteri in teams](manage-policy-packages.md).
 
 ## <a name="assign-a-policy-to-a-batch-of-users"></a>Assegnare un criterio a un gruppo di utenti
-
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
  
 Con l'assegnazione di criteri batch è possibile assegnare un criterio a set di utenti di grandi dimensioni alla volta senza dover usare uno script. Puoi usare il ```New-CsBatchPolicyAssignmentOperationd``` cmdlet per inviare un batch di utenti e i criteri che vuoi assegnare. Le assegnazioni vengono elaborate come operazione in background e viene generato un ID operazione per ogni batch. Puoi quindi usare il ```Get-CsBatchPolicyAssignmentOperation``` cmdlet per tenere traccia dello stato di avanzamento e dello stato delle assegnazioni in un batch.
 
@@ -133,25 +131,10 @@ Un batch può contenere fino a 20.000 utenti. È possibile specificare gli utent
 
 ### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo di PowerShell di Microsoft Teams
 
-> [!NOTE]
-> I cmdlet si trovano nella versione preliminare del modulo di PowerShell teams. Seguire questa procedura per disinstallare prima di tutto la versione in genere disponibile del modulo di PowerShell Teams (se è installato) e quindi installare la versione più recente di pre-rilascio del modulo dalla raccolta di test di PowerShell.
-
-Se non è già stato eseguito, eseguire la procedura seguente per registrare la raccolta di test di PowerShell come origine attendibile.
+Eseguire la procedura seguente per installare il [modulo di PowerShell per Microsoft teams](https://www.powershellgallery.com/packages/MicrosoftTeams). Assicurarsi di installare la versione 1.0.5 o successiva.
 
 ```powershell
-Register-PSRepository -SourceLocation https://www.poshtestgallery.com/api/v2 -Name PsTestGallery -InstallationPolicy Trusted
-```
-
-Se è installata la versione in genere disponibile del modulo di PowerShell teams, eseguire la procedura seguente per disinstallarlo.
-
-```powershell
-Uninstall-Module MicrosoftTeams -AllVersions
-```
-
-Eseguire la procedura seguente per installare il modulo di PowerShell Microsoft Teams più recente dalla raccolta di test di PowerShell.
-
-```powershell
-Install-Module MicrosoftTeams -Repository PSTestGallery
+Install-Module -Name MicrosoftTeams
 ```
 
 Eseguire le operazioni seguenti per connettersi ai team e avviare una sessione.
