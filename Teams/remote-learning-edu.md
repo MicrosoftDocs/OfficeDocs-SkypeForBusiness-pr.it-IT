@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ae9315c172bc88cb96d5071e4bddf7f2e82a0d9f
-ms.sourcegitcommit: a597b1572f1eca095144288446a2c038e5daa5f7
+ms.openlocfilehash: e7d0f4a38194f80329c34cab73d61a99d4d4d03b
+ms.sourcegitcommit: 90066455ea2f982cdeabd9bff7944718bc7895c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42586703"
+ms.lasthandoff: 03/11/2020
+ms.locfileid: "42592546"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -32,7 +32,7 @@ ms.locfileid: "42586703"
 > - Un corso online di 1 ora in Microsoft Educator Center illustra il modo in cui i docenti usano Teams nelle loro vite professionali. [**Trasformare l'apprendimento con Microsoft Teams**](https://education.microsoft.com/course/9c9f5c11/overview).
 > - Un corso online di 1 ora in Microsoft Educator Center guida i docenti all'insegnamento nei team di classe. [**Creare un ambiente di apprendimento collaborativo con i team di classe.**](https://education.microsoft.com/course/b1e15cfc/overview)
 > - Docenti, studenti, genitori o tutori possono trovare altre indicazioni su [**insegnamento e apprendimento remoto con Office 365**](https://aka.ms/RemoteLearningHelp).
-> - Genitori e tutori possono anche accedere alla [Pagina del supporto per i genitori](https://support.office.com/article/remote-learning-with-office-365-guidance-for-parents-and-guardians-89d514f9-bf5e-4374-a731-a75d38ddd588) per assistenza sull'apprendimento remoto.
+> - Genitori e tutori possono accedere anche alla [**Pagina del supporto per i genitori**](https://support.office.com/article/remote-learning-with-office-365-guidance-for-parents-and-guardians-89d514f9-bf5e-4374-a731-a75d38ddd588) per assistenza sull'apprendimento remoto.
 
 Il blog del 4 marzo 2020 parla di [come gli istituti di istruzione possono rendere rapidamente operativi i programmi di apprendimento remoto con Microsoft Teams](https://aka.ms/teamseduremoteblog).
 
@@ -104,7 +104,7 @@ Ecco una serie di configurazioni non predefinite di criteri che potrebbero esser
 
 - Creazione di canali privati impostato su "disattivato"
 
-**Il personale e gli insegnanti di scuola primaria** dovrebbero disporre di criteri che gli garantiscano le funzionalità di base e che possano essere limitate per gli studenti. Creare nuovi criteri che consentano la pianificazione delle chat private e la pianificazione delle riunioni (le impostazioni predefinite per un nuovo criterio). [Assegnare questi criteri al personale e agli insegnanti tramite l'appartenenza al gruppo di sicurezza](batch-policy-assignment-edu).
+**Il personale e gli insegnanti di scuola primaria** dovrebbero disporre di criteri che gli garantiscano le funzionalità di base e che possano essere limitate per gli studenti. Creare nuovi criteri che consentano la pianificazione delle chat private e la pianificazione delle riunioni (le impostazioni predefinite per un nuovo criterio). [Assegnare questi criteri in blocco al personale e ai docenti tramite l'assegnazione di criteri per batch](batch-policy-assignment-edu.md).
 
 ## <a name="start-using-teams"></a>Introduzione a Teams
 
