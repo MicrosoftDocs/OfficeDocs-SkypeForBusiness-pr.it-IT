@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: ms.teamsadmincenter.dashboard.trainingvideos.instructorled
 ms.collection:
 - M365-collaboration
-ms.openlocfilehash: 958ca112e52cefa31e122c02b47c76a68537d284
-ms.sourcegitcommit: 152eb7daacd0a36f42aa441633c12c7037a0969a
+ms.openlocfilehash: 9fe712b484c20f5a7a8a1b1df5c4720788ac877a
+ms.sourcegitcommit: 33bec766519397f898518a999d358657a413924c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288724"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "42583063"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -192,7 +192,28 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
             </div>
         </div>
         </a>
-    </li>        </ul>
+    </li>
+    <li>
+        <a href="https://aka.ms/TeamsAtHome"target="_blank">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/office/media/icons/headset.svg" alt="Headset" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Gestire il lavoro da casa con Teams</h3>
+                        <p><strong><font color="#4B53BC">NUOVO!</font></strong> Le procedure consigliate per rimanere in contatto con il team e garantire la produttività.</p>
+                        <p><i>Destinatari: utenti finali, responsabili del team e del reparto</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>  
+        </ul>
         </li>
     </ul>
     </div>
