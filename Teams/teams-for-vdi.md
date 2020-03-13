@@ -1,5 +1,5 @@
 ---
-title: Team per l'infrastruttura desktop virtualizzata
+title: Teams per Virtualized Desktop Infrastructure (VDI)
 author: LanaChin
 ms.author: v-lanac
 manager: serdars
@@ -16,14 +16,14 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f9c8f0fe24cfb94be368fb2afa6446f311f2f790
-ms.sourcegitcommit: 5fbb57c5f0692afcb8e65516c63b96814f51ca65
+ms.openlocfilehash: 4e009ccfb70e307e4a67f8331deabce51e229c0f
+ms.sourcegitcommit: 511238a3550ad0ff8d4bbd4600a252651ab6a654
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417881"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42615368"
 ---
-# <a name="teams-for-virtualized-desktop-infrastructure"></a>Team per l'infrastruttura desktop virtualizzata
+# <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
 In questo articolo vengono illustrati i requisiti e le limitazioni per l'uso di Microsoft teams in un ambiente virtualizzato.
 
@@ -132,8 +132,8 @@ Per altre informazioni su teams e Office 365 ProPlus, vedere [come escludere tea
 
 1. Scaricare il pacchetto MSI teams che corrisponde al sistema operativo VDI VM usando uno dei collegamenti seguenti:
 
-    - [versione a 32 bit](https://statics.teams.cdn.office.net/production-windows/1.2.00.32462/Teams_windows.msi)
-    - [versione a 64 bit](https://statics.teams.cdn.office.net/production-windows-x64/1.2.00.32462/Teams_windows_x64.msi)
+    - [versione a 32 bit](https://statics.teams.cdn.office.net/production-windows/1.3.00.4461/Teams_windows.msi)
+    - [versione a 64 bit](https://statics.teams.cdn.office.net/production-windows-x64/1.3.00.4461/Teams_windows_x64.msi)
 
     La versione minima dell'app desktop teams necessaria è la versione 1.2.00.31357. Il blocco PSTN non è supportato nelle versioni precedenti.
 
@@ -254,8 +254,8 @@ Per assegnare un criterio a più utenti alla volta, vedere [modificare le impost
 In alternativa, è anche possibile eseguire le operazioni seguenti:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa al criterio che vuoi assegnare. Ad esempio:
-    - Accedere ai **** > **criteri**per le chiamate vocali e quindi fare clic su **DisallowCalling**.
-    - Accedere a **** > **criteri riunione**riunioni e quindi fare clic su **AllOff**.
+    - Accedere ai **Voice** > **criteri**per le chiamate vocali e quindi fare clic su **DisallowCalling**.
+    - Accedere a **Meetings** > **criteri riunione**riunioni e quindi fare clic su **AllOff**.
 3. Selezionare **Gestisci utenti**.
 4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
 5. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
@@ -265,7 +265,7 @@ In alternativa, è anche possibile eseguire le operazioni seguenti:
 L'esempio seguente mostra come usare [Grant-CsTeamsCallingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamscallingpolicy) per assegnare i criteri di chiamata di DisallowCalling a un utente.
 
 ```PowerShell
-Grant-CsTeamsCallingPolicy -PolicyName DisallowCalling -Identity “user email id”
+Grant-CsTeamsCallingPolicy -PolicyName DisallowCalling -Identity "user email id"
 ```
 
 Per ulteriori informazioni sull'uso di PowerShell per gestire i criteri di chiamata, vedere [set-CsTeamsCallingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamscallingpolicy).
@@ -273,7 +273,7 @@ Per ulteriori informazioni sull'uso di PowerShell per gestire i criteri di chiam
 L'esempio seguente mostra come usare [Grant-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsmeetingpolicy) per assegnare i criteri di riunione di AllOff a un utente.
 
 ```PowerShell
-Grant-CsTeamsMeetingPolicy -PolicyName AllOff -Identity “user email id”
+Grant-CsTeamsMeetingPolicy -PolicyName AllOff -Identity "user email id"
 ```
 
 Per altre informazioni sull'uso di PowerShell per gestire i criteri delle riunioni, vedere [set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy).
@@ -306,8 +306,8 @@ Per assegnare un criterio a più utenti alla volta, vedere [modificare le impost
 In alternativa, è anche possibile eseguire le operazioni seguenti:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa al criterio che vuoi assegnare. Ad esempio:
-    - Accedere ai **** > **criteri**per le chiamate vocali e quindi fare clic su **AllowCalling**.
-    - Accedere a **** > **criteri riunione**riunioni e quindi fare clic su **Allon**.
+    - Accedere ai **Voice** > **criteri**per le chiamate vocali e quindi fare clic su **AllowCalling**.
+    - Accedere a **Meetings** > **criteri riunione**riunioni e quindi fare clic su **Allon**.
 3. Selezionare **Gestisci utenti**.
 4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
 5. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
@@ -317,7 +317,7 @@ In alternativa, è anche possibile eseguire le operazioni seguenti:
 L'esempio seguente mostra come usare [Grant-CsTeamsCallingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamscallingpolicy) per assegnare i criteri di chiamata di AllowCalling a un utente.
 
 ```PowerShell
-Grant-CsTeamsCallingPolicy -PolicyName AllowCalling -Identity “user email id”
+Grant-CsTeamsCallingPolicy -PolicyName AllowCalling -Identity "user email id"
 ```
 
 Per ulteriori informazioni sull'uso di PowerShell per gestire i criteri di chiamata, vedere [set-CsTeamsCallingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamscallingpolicy).
@@ -325,7 +325,7 @@ Per ulteriori informazioni sull'uso di PowerShell per gestire i criteri di chiam
 L'esempio seguente mostra come usare [Grant-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsmeetingpolicy) per assegnare i criteri di riunione Allon a un utente.
 
 ```PowerShell
-Grant-CsTeamsMeetingPolicy -PolicyName AllOn -Identity “user email id”
+Grant-CsTeamsMeetingPolicy -PolicyName AllOn -Identity "user email id"
 ```
 
 Per altre informazioni sull'uso di PowerShell per gestire i criteri delle riunioni, vedere [set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy).
