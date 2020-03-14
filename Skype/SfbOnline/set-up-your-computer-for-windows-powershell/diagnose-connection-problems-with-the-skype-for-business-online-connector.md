@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - PowerShell
 description: Troubleshoot creating a remote PowerShell session to connect to Skype for Business Online, including Import-Module, concurrent shell, Live ID, and permission errors.
-ms.openlocfilehash: f3de8d67079aaf4afeffdc63588f6806413383fc
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: be3500ea5573dab6daa3d8ff72a8de4f60566ee2
+ms.sourcegitcommit: a4fd238de09366d6ed33d72c908faff812da11a5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42010689"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637133"
 ---
 # <a name="diagnose-connection-problems-with-the-skype-for-business-online-connector"></a>Diagnosi dei problemi di connessione con il connettore di Skype for Business Online
 
@@ -140,7 +140,7 @@ Ogni amministratore può eseguire fino a tre connessioni remote simultanee a Sky
 ## <a name="the-maximum-number-of-concurrent-shells-for-this-tenant-in-skype-for-business-online-has-been-exceeded"></a>È stato superato il numero massimo di shell simultanee per questo tenant in Skype for Business Online
 <a name="BKMKMaxNumberShellsTenant"> </a>
 
-Sebbene ogni amministratore possa stabilire fino a tre connessioni simultanee a un tenant di Skype for Business online, un tenant non può avere più di nove connessioni simultanee. Supponiamo ad esempio che tre amministratori abbiano tre sessioni aperte ciascuno. Se un quarto amministratore cerca di stabilire una connessione, portando a 10 le connessioni simultanee, il tentativo non riuscirà e verrà generato il messaggio di errore seguente:
+Anche se ogni amministratore può avere fino a tre connessioni simultanee a un tenant di Skype for business online, nessun tenant può avere più di venti connessioni simultanee. Ad esempio, sei amministratori possono avere tre sessioni aperte. Se un settimo amministratore prova ad aprire più di due connessioni (risultante da un totale di 21 connessioni simultanee), il tentativo avrà esito negativo, con il messaggio di errore seguente:
   
 - **Errore**: *New-PSSession: [admin.Vdomain.com] la connessione al server remoto admin.Vdomain.com non è riuscita con il messaggio di errore seguente: il servizio WS-Management non è in grado di elaborare la richiesta. Il numero massimo di shell simultanee per il tenant è stato superato. Chiudere le shell esistenti o aumentare la quota per il tenant. Per altre informazioni, vedere [risoluzione dei problemi remoti]https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1 (*
 

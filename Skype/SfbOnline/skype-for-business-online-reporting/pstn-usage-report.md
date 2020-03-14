@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Reporting
 description: La nuova area report dell'interfaccia di amministrazione di Skype for business Mostra la chiamata e l'attività di conferenza audio nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli di utilizzo PSTN dei servizi di audioconferenza, incluso il costo della chiamata, in modo da poter comprendere l'utilizzo e chiamare i dettagli di fatturazione per determinare l'utilizzo all'interno dell'organizzazione.
-ms.openlocfilehash: a489277eceaab533fc03ac7017dcc217b4071bc6
-ms.sourcegitcommit: 33bec766519397f898518a999d358657a413924c
+ms.openlocfilehash: 7050334a390188f47f5d201b3fa541d337601400
+ms.sourcegitcommit: a4fd238de09366d6ed33d72c908faff812da11a5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42582883"
+ms.lasthandoff: 03/13/2020
+ms.locfileid: "42637143"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
@@ -56,7 +56,7 @@ Questo è l'aspetto del report.
 
 ***
 ![Numero 1](../images/sfbcallout1.png)<br/>La tabella illustra tutto l'utilizzo di PSTN suddiviso per utente. Mostra tutti gli utenti a cui è assegnato Skype for Business e il loro utilizzo di PSTN. È possibile aggiungere/rimuovere colonne dalla tabella.
-*    **ID chiamata** è l'ID della chiamata. Si tratta di un identificativo univoco per la chiamata utilizzato quando si chiama l'assistenza Microsoft.
+*    **ID chiamata** è l'ID della chiamata. Si tratta di un identificatore per la chiamata usata quando si chiama il servizio di supporto tecnico Microsoft.
 *    **ID utente** è il nome di accesso dell'utente.
 *    **Numero di telefono** è il numero di telefono Skype for Business che ha ricevuto la chiamata (per le chiamate in entrata) o il numero chiamato (per le chiamate in uscita).
 *    La **posizione dell'utente** è il paese/area geografica in cui si trova l'utente.
@@ -106,7 +106,48 @@ Questo è l'aspetto del report.
 ***
 ![Numero 2](../images/sfbcallout2.png)<br/>Fare clic per trascinare una colonna fino a **Per raggruppare per una specifica colonna, trascinare qui l'intestazione di colonna** se si desidera creare una visualizzazione che raggruppi tutti i dati in una o più colonne.
  ***
-![Numero 3](../images/sfbcallout3.png)<br/>È anche possibile esportare i dati del report in un file di Excel delimitato da VIRGOLe facendo clic o toccando il pulsante **Esporta in Excel** . È possibile esportare dati fino a un anno dalla data corrente, a meno che il regolamento specifico per paese non vieti la conservazione dei dati per 12 mesi.<br/><br/> Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. 
+
+## <a name="exporting-pstn-usage-report"></a>Esportazione di report sull'utilizzo PSTN
+
+Facendo clic o toccando il pulsante **Esporta in Excel** è possibile scaricare il report sull'utilizzo PSTN. È possibile esportare i dati fino a un anno dalla data corrente, a meno che le normative specifiche per paese non vietino la conservazione dei dati per 12 mesi.
+
+Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi.
+
+Il processo di esportazione può richiedere da pochi secondi a diversi minuti per il completamento, a seconda della quantità di dati. Quando il server completa l'esportazione, viene visualizzato un file zip denominato "**chiamate. Export. [ ] `identifier`. zip**", con l'identificatore che rappresenta un ID univoco per l'esportazione, che può essere usato per la risoluzione dei problemi.
+
+Se si hanno entrambi i piani per le chiamate e il routing diretto, il file esportato potrebbe contenere dati per entrambi i prodotti. Il file di report sull'utilizzo PSTN avrà il nome "**PSTN. Calls. [ ] `UTC date`. csv**". Oltre ai file di routing PSTN e Direct, l'archivio contiene il file "**Parameters. JSON**", con l'intervallo di tempo e le funzionalità di esportazione selezionati (se presenti).
+
+File esportato è un file con valori separati da virgola (CSV), conforme allo standard [RFC 4180](https://tools.ietf.org/html/rfc4180) . Il file può essere aperto in Excel o in qualsiasi altro editor conforme agli standard senza richiedere trasformazioni.
+
+La prima riga del file CSV contiene i nomi di colonna.
+
+### <a name="fields-in-the-export"></a>Campi nell'esportazione
+
+Il file esportato contiene altri campi che non sono disponibili nel report online. Questi possono essere usati per la risoluzione dei problemi e i flussi di lavoro automatici.
+
+| #  | Nome | [Tipo di dati (SQL Server)](https://docs.microsoft.com/sql/t-sql/data-types/data-types-transact-sql) | Descrizione |
+| :-: | :-: | :-: |:------------------- |
+| 0 | UsageId | `uniqueidentifier` | Identificatore univoco delle chiamate |
+| 1 | ID chiamata | `nvarchar(64)` | Identificatore chiamata. Non è garantito che sia univoco |
+| 2 | ID conferenza | `nvarchar(64)` | ID della conferenza audio |
+| 3 | Posizione utente | `nvarchar(2)` | Codice paese dell'utente, [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) |
+| 4 | AAD ObjectId | `uniqueidentifier` | Chiamata dell'ID utente in Azure Active Directory.<br/> Questo e altre informazioni utente saranno null/Empty per i tipi di chiamata bot (ucap_in, ucap_out) |
+| 5 | UPN | `nvarchar(128)` | UserPrincipalName (nome di accesso) in Azure Active Directory.<br/>Si tratta in genere dello stesso indirizzo SIP dell'utente e può essere uguale all'indirizzo di posta elettronica dell'utente |
+| 6 | Nome visualizzato dell'utente | `nvarchar(128)` | Nome visualizzato dell'utente |
+| 7 | ID chiamante | `nvarchar(128)` | Numero che ha ricevuto la chiamata per le chiamate in ingresso o il numero composto per le chiamate in uscita. Formato [E. 164](https://en.wikipedia.org/wiki/E.164) |
+| 8 | Tipo di chiamata | `nvarchar(32)` | Se la chiamata è una chiamata in uscita PSTN o in ingresso e il tipo di chiamata, ad esempio una chiamata effettuata da un utente o da una conferenza audio |
+| 9 | Tipo di numero | `nvarchar(16)` | Tipo di numero di telefono dell'utente, ad esempio un servizio di numero verde |
+| 10 | Nazionali/internazionali | `nvarchar(16)` | Se la chiamata è stata nazionale (all'interno di un paese o di un'area geografica) o internazionale (all'esterno di un paese o area geografica) in base alla posizione dell'utente |
+| 11 | Destinazione chiamata | `nvarchar(64)` | Paese o area geografica chiamata |
+| 12 | Numero di destinazione | `nvarchar(32)` | Numero composto in formato [E. 164](https://en.wikipedia.org/wiki/E.164) |
+| 13 | Ora di inizio | `datetimeoffset` | Ora di inizio chiamata (UTC, [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) |
+| 14 | Ora di fine | `datetimeoffset` | Ora di fine chiamata (UTC, [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) |
+| 15 | Secondi di durata | `int` | Per quanto tempo la chiamata è stata connessa |
+| 16 | Costo di connessione | `numeric(16, 2)` | Prezzo della tariffa di connessione |
+| 17 | Addebito | `numeric(16, 2)` | Importo del pagamento o del costo della chiamata addebitata al tuo account |
+| 18 | Valuta | `nvarchar(3)` | Tipo di valuta usata per calcolare il costo della chiamata ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)) |
+| 19 | Capacità | `nvarchar(32)` | Licenza usata per la chiamata |
+
     
 ## <a name="want-to-see-other-skype-for-business-reports"></a>Per consultare altri report di Skype for Business
 
