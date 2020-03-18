@@ -18,13 +18,15 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6d7d0b1cf23b94f33c66218eaacdfdeda5aaab19
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 888e56561e4e6f4a521a0e1730fe3c9ea6adff82
+ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42048597"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42706936"
 ---
+# <a name="assess-organizational-change-readiness"></a>Valutare l'idoneità dell'organizzazione
+
 ![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione degli utenti](media/upgrade-banner-user-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione degli utenti")
 
 Questo articolo fa parte della fase di preparazione degli utenti del viaggio di aggiornamento, un'attività completata in parallelo alla fase di preparazione tecnica. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
@@ -33,8 +35,6 @@ Questo articolo fa parte della fase di preparazione degli utenti del viaggio di 
 - [Definizione dell'ambito del progetto](https://aka.ms/SkypetoTeams-Scope)
 - [Coesistenza e interoperabilità intesa di Skype for business e teams](https://aka.ms/SkypeToTeams-Coexist)
 - [Scelto il viaggio di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
-
-# <a name="assess-organizational-change-readiness"></a>Valutare l'idoneità dell'organizzazione
 
 Dopo avere assicurato il team di progetto e definito la visione, l'ambito e gli obiettivi, il passaggio successivo per il viaggio di aggiornamento consiste nel garantire che l'organizzazione e gli utenti siano pronti per i team, un'attività che si completa in parallelo, garantendo la disponibilità tecnica. Per realizzare il valore di teams, gli utenti devono effettivamente usarlo. Semplicemente l'attivazione di teams non garantisce che si raggiunga l'obiettivo. Gli utenti hanno casi di utilizzo diversi e stili di apprendimento variabili e si adattano alle nuove tecnologie a velocità diverse. La buona notizia è che la gestione del cambiamento non è poi così complicata, ma ci vuole uno sforzo mirato. Le discussioni guidate di seguito sono progettate per facilitare la comprensione della base utente in modo da poter preparare il livello di istruzione appropriato per semplificare e accelerare l'adozione. È possibile esaminare la base utente in due modi:
 
@@ -62,7 +62,7 @@ Usare i principianti della conversazione seguenti per eseguire una valutazione d
 <!--
 | **Type of user** | **%** |
 |------------|---|
-| *Early adopters* request the solution before it’s available. | |
+| *Early adopters* request the solution before it's available. | |
 | *Informed users* accept the solution as soon as its value is demonstrated. | |
 | *Laggards* reject the solution, even when pushed into change. | |
 -->
@@ -80,8 +80,8 @@ Usare i principianti della conversazione seguenti per eseguire una valutazione d
 | **Type of learner** | **%** |
 |---------------|---|
 | *Self-motivated* learners seek out resources, learn by doing. | |
-| *Team-players* enjoy group and interactive training; they’ll go along with coworkers. | |
-| *Hand-holding* seekers expect “white glove” or one-on-one assistance. | |
+| *Team-players* enjoy group and interactive training; they'll go along with coworkers. | |
+| *Hand-holding* seekers expect "white glove" or one-on-one assistance. | |
 -->
 
 | Self-motivated | Giocatori del team | Cercatori di mano-holding |

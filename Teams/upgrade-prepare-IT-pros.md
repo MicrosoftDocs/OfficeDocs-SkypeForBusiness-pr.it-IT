@@ -18,13 +18,15 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c11b7fa80940ad45d4462510e8fa46531f10f1e9
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 6c3813b5d79f1362ff30ff15fa6fd2aff38b25a9
+ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836126"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42706896"
 ---
+# <a name="prepare-your-it-staff-for-microsoft-teams"></a>Preparare il personale IT per Microsoft Teams
+
 ![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione tecnica](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
 
 Questo articolo fa parte della fase di preparazione tecnica del viaggio di aggiornamento, un'attività completata in parallelo con la fase di preparazione degli utenti. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
@@ -33,8 +35,6 @@ Questo articolo fa parte della fase di preparazione tecnica del viaggio di aggio
 - [Definizione dell'ambito del progetto](https://aka.ms/SkypetoTeams-Scope)
 - [Coesistenza e interoperabilità intesa di Skype for business e teams](https://aka.ms/SkypeToTeams-Coexist)
 - [Scelto il viaggio di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
-
-# <a name="prepare-your-it-staff-for-microsoft-teams"></a>Preparare il personale IT per Microsoft Teams
 
 Gli amministratori del tenant di Office 365, i lead tecnici e il servizio di supporto tecnico sono responsabili della Guida di un'esperienza utente di alta qualità. Questo include garantire che la rete sia pronta per supportare team, configurare Team per gli utenti e riuscire a risolvere efficacemente i problemi che potrebbero presentarsi.
 

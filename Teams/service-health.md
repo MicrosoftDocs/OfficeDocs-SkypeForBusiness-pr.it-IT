@@ -16,17 +16,17 @@ f1.keywords:
 description: È buona norma verificare che il servizio teams sia integro e altri componenti di Office 365, ad esempio Exchange, SharePoint e OneDrive for business.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b61de9768de69830328f4ea789db1b8af7e7a24a
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 219c484b4bf8eff35d78966820a3002e55aecbb7
+ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41835736"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42706576"
 ---
 <a name="verify-service-health-for-microsoft-teams"></a>Verificare l'integrità dei servizi per Microsoft Teams
 ===========================================
 
-L'integrità dei servizi per Microsoft teams viene visualizzata nella pagina principale del portale di amministrazione di Office 365. Prima di risolvere i problemi, è consigliabile verificare che il servizio teams sia integro.
+L'integrità dei servizi per Microsoft teams viene visualizzata nell'interfaccia di amministrazione di Microsoft 365. Prima di risolvere i problemi, è consigliabile verificare che il servizio teams sia integro.
 
 Inoltre, tieni presente che Microsoft teams è basato su altri servizi di Office 365, quindi, quando stai esaminando l'integrità dei servizi, ricordati di controllare anche lo stato di Exchange, SharePoint e OneDrive for business. I problemi di integrità del servizio per questi altri servizi non significano automaticamente che i team hanno un impatto (ad esempio, i download di Rubrica in Exchange non sono disponibili), ma che è necessario rivedere gli avvisi per i servizi interessati per determinare se c'è un impatto su Microsoft teams.
 

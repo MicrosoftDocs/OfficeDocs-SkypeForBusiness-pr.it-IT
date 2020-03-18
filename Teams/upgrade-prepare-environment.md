@@ -18,13 +18,15 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 82b9418f2e87550667cbc163f8f37a0989ec2b30
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.openlocfilehash: afbcc5721d55983e19970e6c2fbc60e5a7467cba
+ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41863437"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42706796"
 ---
+# <a name="prepare-your-environment-for-upgrading-to-teams"></a>Preparare l'ambiente per l'aggiornamento a teams
+
 ![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione tecnica](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
 
 Questo articolo fa parte della fase di preparazione tecnica del viaggio di aggiornamento, un'attività completata in parallelo con la fase di preparazione degli utenti. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
@@ -33,8 +35,6 @@ Questo articolo fa parte della fase di preparazione tecnica del viaggio di aggio
 - [Definizione dell'ambito del progetto](https://aka.ms/SkypetoTeams-Scope)
 - [Coesistenza e interoperabilità intesa di Skype for business e teams](https://aka.ms/SkypeToTeams-Coexist)
 - [Scelto il viaggio di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
-
-# <a name="prepare-your-environment-for-upgrading-to-teams"></a>Preparare l'ambiente per l'aggiornamento a teams
 
 Per guidare un aggiornamento riuscito delle squadre nell'organizzazione, è importante convalidare l'ambiente Skype for business corrente e la disponibilità della rete. La preparazione dell'ambiente corrente consentirà di garantire un'esperienza utente di alta qualità ora, oltre a migliorare la qualità dell'esperienza utente in teams. Il tempo necessario per pianificare singoli passaggi consente di velocizzare la distribuzione e di evitare che vengano ignorati elementi di azione importanti.
 

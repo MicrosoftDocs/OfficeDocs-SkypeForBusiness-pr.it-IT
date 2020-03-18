@@ -18,20 +18,20 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 13da1a583d5aa0abaad4e981e5fc68d3aa913ce9
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 4084bc58d98aa05af14511869fc44c6db85343b8
+ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837246"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42707016"
 ---
+# <a name="define-your-project-scope"></a>Definire l'ambito del progetto
+
 ![Aggiornare il diagramma di viaggio, evidenziando la fase di definizione del progetto](media/upgrade-banner-project-definition.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di definizione del progetto")
 
 Questo articolo fa parte della fase di definizione del progetto del viaggio di aggiornamento, un'attività che si completa dopo aver creato una coalizione di sponsorizzazione e un team di progetto dagli stakeholder identificati sono la chiave per il successo del progetto. Prima di procedere, verificare di aver completato le attività seguenti:
 
 - [Parti interessate del progetto in elenco](upgrade-enlist-stakeholders.md)
-
-# <a name="define-your-project-scope"></a>Definire l'ambito del progetto
 
 Il tempo necessario per definire la visione, l'ambito, gli obiettivi e la governance del progetto consentirà di garantire che tutti gli stakeholder del progetto siano allineati e attivi per gli stessi risultati finali. Questo aspetto è particolarmente importante, poiché il team di preparazione tecnica e il team di preparazione degli utenti lavoreranno in modo indipendente per riunire i rispettivi pezzi. Dopo aver completato questa sezione, consultarla in tutto il progetto per assicurarti di essere sulla buona strada per ottenere lo stato finale desiderato. USA gli obiettivi che identifichi di seguito per misurare i risultati e mitigarli in base alle esigenze.
 

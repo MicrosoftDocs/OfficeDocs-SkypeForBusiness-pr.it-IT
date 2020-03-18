@@ -18,16 +18,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a3226dd3887a4d289b810bb866d96dba704dd448
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 29cd3a6b420ab33cfc6f18b839d544572cfc9753
+ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837116"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42706916"
 ---
-![Diagramma del viaggio di aggiornamento di Teams](media/upgrade-banner-main.png "Verificare che il progetto sia configurato per il successo con il team di progetto giusto. Definire l'ambito, gli obiettivi e la sequenza temporale del progetto. Confermare sia la disponibilità tecnica che l'utente. Eseguire il piano di implementazione. Mantenere lo slancio per massimizzare i risultati.")
-
 # <a name="plan-for-your-upgrade"></a>Pianificare l'aggiornamento
+
+![Diagramma del viaggio di aggiornamento di Teams](media/upgrade-banner-main.png "Verificare che il progetto sia configurato per il successo con il team di progetto giusto. Definire l'ambito, gli obiettivi e la sequenza temporale del progetto. Confermare sia la disponibilità tecnica che l'utente. Eseguire il piano di implementazione. Mantenere lo slancio per massimizzare i risultati.")
 
 Un ambiente tecnico sano, l'adozione sostenibile degli utenti e la realizzazione degli obiettivi aziendali iniziano tutti con una pianificazione adeguata. Un piano solido offre un Framework per il progetto di aggiornamento e assicura che tutte le parti interessate funzionino per gli stessi obiettivi. Richiedendo tempo per definire correttamente il successo, è possibile misurare i risultati man mano che si procede attraverso la distribuzione e verificare che si stiano ottenendo gli esiti desiderati. La pianificazione del viaggio include:
 

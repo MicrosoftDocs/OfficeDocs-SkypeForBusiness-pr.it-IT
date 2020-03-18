@@ -18,13 +18,15 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ea2fc7a56b3bc87a7d25c2afa86ff0b9f974995c
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 088db496d6e04cb25a26a55f2748b25a11a8a76b
+ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836248"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42706786"
 ---
+# <a name="prepare-your-organization"></a>Preparare l'organizzazione
+
 ![Fasi del viaggio di aggiornamento, con enfasi sulla fase di preparazione degli utenti](media/upgrade-banner-user-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione degli utenti")
 
 Questo articolo fa parte della fase di preparazione degli utenti del viaggio di aggiornamento, un'attività completata in parallelo alla fase di preparazione tecnica. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
@@ -33,8 +35,6 @@ Questo articolo fa parte della fase di preparazione degli utenti del viaggio di 
 - [Definizione dell'ambito del progetto](https://aka.ms/SkypetoTeams-Scope)
 - [Coesistenza e interoperabilità intesa di Skype for business e teams](https://aka.ms/SkypeToTeams-Coexist)
 - [Scelto il viaggio di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
-
-# <a name="prepare-your-organization"></a>Preparare l'organizzazione
 
 Per realizzare il valore massimo da teams, gli utenti devono usarlo in realtà, ma gli utenti possono cambiare il modo in cui funzionano non è sempre facile. Il tempo necessario per comprendere gli utenti e progettare il giusto piano di preparazione può aiutare a facilitare la modifica e ad accelerare l'adozione di team. Queste attività devono essere completate in parallelo alla preparazione tecnica:
 

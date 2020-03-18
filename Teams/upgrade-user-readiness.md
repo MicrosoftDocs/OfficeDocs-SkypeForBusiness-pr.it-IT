@@ -18,13 +18,15 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ad51dd4b269652ec1899b2af6ace6a9b7b9f713a
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: d52c9d670c81e0fcbdcf31012ec08a008b082459
+ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836796"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42706686"
 ---
+# <a name="prepare-a-user-readiness-plan"></a>Preparare un piano di idoneità degli utenti
+
 ![Fasi del viaggio di aggiornamento, evidenziando la fase di preparazione degli utenti](media/upgrade-banner-user-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione degli utenti")
 
 Questo articolo fa parte della fase di preparazione degli utenti del viaggio di aggiornamento, un'attività completata in parallelo alla fase di preparazione tecnica. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
@@ -33,8 +35,6 @@ Questo articolo fa parte della fase di preparazione degli utenti del viaggio di 
 - [Definizione dell'ambito del progetto](https://aka.ms/SkypetoTeams-Scope)
 - [Coesistenza e interoperabilità intesa di Skype for business e teams](https://aka.ms/SkypeToTeams-Coexist)
 - [Scelto il viaggio di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
-
-# <a name="prepare-a-user-readiness-plan"></a>Preparare un piano di idoneità degli utenti
 
 Un piano ottimale per la preparazione degli utenti incorpora il modo in cui comunicare, formare e supportare gli utenti durante il pilota, il bordo e l'aggiornamento ai team. Come si è scoperto in [valutare la disponibilità del cambiamento organizzativo](https://aka.ms/OrgReadiness), la disponibilità non è adatta a una sola dimensione. Per garantire un ricettività ottimale alla nuova tecnologia, usa una combinazione di messaggistica a portata di mano (che incorpora i casi di visione/valore e di uso universale) e messaggistica, formazione e supporto personalizzati per gli utenti e le coorti che hai definito e anche per i tuoi ritardatari, in base alle esigenze. Questo piano personalizzato consentirà di semplificare l'adozione degli utenti, consentendo all'utente di correlarsi più rapidamente ai team, dimostrando di comprendere le proprie esigenze.
 

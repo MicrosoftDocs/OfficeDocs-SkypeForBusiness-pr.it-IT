@@ -18,13 +18,15 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ec47733accfe9973887cd9f3f7019ac368e8e970
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: d58613bc3455d5467e9e6c6589f73d498c6e1e3b
+ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837216"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42706906"
 ---
+# <a name="prepare-your-network-for-upgrading-to-teams"></a>Preparare la rete per l'aggiornamento a teams
+
 ![Aggiornare il diagramma di viaggio, enfatizzando la fase di preparazione tecnica](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
 
 Questo articolo fa parte della fase di preparazione tecnica del viaggio di aggiornamento, un'attività completata in parallelo con la fase di preparazione degli utenti. Prima di procedere, verificare di aver completato queste attività dalle fasi precedenti:
@@ -36,8 +38,6 @@ Questo articolo fa parte della fase di preparazione tecnica del viaggio di aggio
 
 > [!Tip]
 > Vedere la sessione seguente per informazioni su come teams sfrutta la rete e su come pianificare al meglio la connettività di rete ottimale: [pianificazione della rete teams](https://aka.ms/teams-networking)
-
-# <a name="prepare-your-network-for-upgrading-to-teams"></a>Preparare la rete per l'aggiornamento a teams
 
 Se si sta distribuendo audio, video o riunioni, è possibile eseguire alcuni passaggi aggiuntivi per ottimizzare la rete per tale funzionalità. Teams USA la tecnologia audio e video (codec) che può adattarsi e quindi eseguire in modo migliore in più condizioni di rete. Per garantire prestazioni ottimali e coerenti, è consigliabile preparare la rete per i team.
 

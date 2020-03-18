@@ -18,13 +18,15 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ec60beb606224a5b202a03187027b8e3e002dfd1
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 52721d40e36dc017d9ba76473367d1c9c5e5b4e7
+ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41833896"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42706456"
 ---
+# <a name="conduct-a-user-pilot"></a>Condurre un progetto pilota per gli utenti
+
 ![Aggiornare il diagramma di viaggio, evidenziando la distribuzione e l'implementazione](media/upgrade-banner-deployment.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di distribuzione e implementazione")
 
 Questo articolo fa parte della fase di distribuzione e implementazione del viaggio di aggiornamento e condivide gli approfondimenti per l'esecuzione di un pilota efficace. Prima di procedere, verificare di aver completato le attività seguenti:
@@ -35,8 +37,6 @@ Questo articolo fa parte della fase di distribuzione e implementazione del viagg
 - [Scelto il viaggio di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 - [Preparare l'ambiente](https://aka.ms/SkypeToTeams-TechnicalReadiness)
 - [Preparare l'organizzazione](https://aka.ms/SkypeToTeams-UserReadiness)
-
-# <a name="conduct-a-user-pilot"></a>Condurre un progetto pilota per gli utenti
 
 Distribuendo le nuove tecnologie, l'organizzazione può realizzare un valore aziendale come il risparmio dei costi, la conformità della sicurezza, la soddisfazione dei dipendenti e l'efficienza operativa, ma può anche influenzare la produttività e l'infrastruttura organizzativa degli utenti ( rete). Prima di abilitare la nuova tecnologia in tutta l'organizzazione, eseguire un pilota formale dell'utente. Proprio come si dipinge una piccola chiazza di colore su un muro prima di dipingere l'intera sala, è possibile testare una distribuzione ampia su scala più ridotta eseguendo un progetto pilota per convalidare la disponibilità tecnica e degli utenti, identificare e mitigare i problemi e garantire un successo implementazione a livello di organizzazione.
 

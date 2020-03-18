@@ -18,18 +18,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 02772dddf435e8c3dc2bc0fe243e453e387cd244
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 2c5a437353d00fca8a59bd7de2b753967adc1134
+ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837206"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42707006"
 ---
+# <a name="get-the-most-out-of-teams-after-upgrading"></a>Ottenere il massimo dai team dopo l'aggiornamento
+
 ![Aggiornare il diagramma di viaggio, enfatizzando la fase di eccellenza operativa](media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di eccellenza operativa")
 
 Questo articolo fa parte della fase di eccellenza operativa del viaggio di aggiornamento, che inizia non appena hai completato l'aggiornamento da Skype for business a teams.
-
-# <a name="get-the-most-out-of-teams-after-upgrading"></a>Ottenere il massimo dai team dopo l'aggiornamento
 
 Questo articolo offre una panoramica dei requisiti per ottenere il massimo dai team operativi dopo l'aggiornamento. Monitorando continuamente le funzionalità del servizio teams, puoi essere certo di offrire il massimo valore per l'organizzazione.
 

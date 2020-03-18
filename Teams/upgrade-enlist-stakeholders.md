@@ -18,19 +18,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b271dbfbb99508c26feb86cb7803b8eacdf73910
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 5244bd063caae9b0fab1411f4644e3adbd337431
+ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837196"
+ms.lasthandoff: 03/17/2020
+ms.locfileid: "42706996"
 ---
+# <a name="enlist-your-project-stakeholders"></a>Integrare gli stakeholder del progetto
+
 ![Illustrazione che mostra lo stato delle parti interessate del viaggio di aggiornamento](media/upgrade-banner-stakeholders.png "Fasi del viaggio di aggiornamento, con particolare attenzione alla raccolta del team di stakeholder del progetto")
 
 Questo articolo fa parte della fase di Project stakeholders del viaggio di aggiornamento, la prima e più importante attività completa per il successo del progetto.
-
-
-# <a name="enlist-your-project-stakeholders"></a>Integrare gli stakeholder del progetto
 
 Dall'implementazione dei risultati finali del progetto alla responsabilità della guida, le parti interessate detiene la chiave per il successo del progetto. Ci sono due gruppi di parti interessate che vorrai assegnare: (1) una _coalizione di sponsorizzazione_ che include gli sponsor esecutivi e di progetto che hanno un interesse acquisito e influenzano il successo del progetto e (2) il _team di progetto_, costituito dai responsabili della preparazione tecnica e degli utenti, che completeranno le varie attività nel piano di progetto. Il thread comune tra questi due gruppi è _Project Manager_, che lavora per garantire che le attività di progetto vengano completate nella programmazione e riportino lo stato del progetto alla coalizione.
 
