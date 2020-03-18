@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 806a96db63ca0bbb44eb92ed6e84f8451069e725
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 7ec2d9ede5fdd31070228995cefaa16a60ad6224
+ms.sourcegitcommit: cfaae3ecbf853766de788b4825a86e04f68868ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42035460"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42795999"
 ---
 # <a name="teams-only-mode-considerations"></a>Considerazioni sulla modalità solo Teams
 
@@ -49,8 +49,6 @@ Mentre migliaia di clienti hanno eseguito l'aggiornamento a Microsoft teams, esi
 
 **Considerazioni a livello di tenant**: stiamo lavorando per abilitare teams negli ambienti seguenti; Tuttavia, per il momento, gli amministratori non dovrebbero aggiornare gli utenti dell'organizzazione se il tenant di Skype for business è ospitato in uno degli ambienti seguenti:
 
- - Nuvola di community governative High
- - Government community Cloud DoD
  - Office 365 gestito da 21Vianet
  - Office 365 Germania
  - Il tenant di Skype for business è ospitato in Corea del sud **e** l'organizzazione richiede che i dati dei team vengano archiviati in Corea del sud. Attualmente, le organizzazioni con i dati di Skype for business archiviati in Corea del sud che aggiornano a teams avranno i loro dati di team archiviati nell'area del datacenter Asia, non nell'area del centro dati della Corea del sud.

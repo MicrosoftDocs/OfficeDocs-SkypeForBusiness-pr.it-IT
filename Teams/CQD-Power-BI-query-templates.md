@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Usare Power BI per analizzare i dati di Call Quality dashboard per Microsoft teams.
-ms.openlocfilehash: 155bde0373880befc770d745ca246b76d4c63eec
-ms.sourcegitcommit: 543f650ad4aff73bccfe7a60b66fb944b4e3c119
+ms.openlocfilehash: c69d2ba79044d4d15e21881e5d2a9a2ce4f64feb
+ms.sourcegitcommit: cfaae3ecbf853766de788b4825a86e04f68868ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42572894"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796009"
 ---
 # <a name="use-power-bi-to-analyze-cqd-data-for-microsoft-teams"></a>Usare Power BI per analizzare i dati di Call Quality dashboard per Microsoft Teams
 
@@ -40,6 +40,9 @@ Prima di poter usare questi file di PBIX, è necessario [installare il connettor
 |Report di riepilogo di Call Quality dashboard. pbix     |Visualizzazioni migliori, presentazione migliorata, maggiore densità di informazioni e date di rotolamento. Questi report semplificano l'identificazione degli outlier. Eseguire il drill-down nella qualità delle chiamate per posizione con una mappa interattiva facile da usare. 9 nuovi report:</p>-Qualità complessiva<br>-Affidabilità complessiva<br>-RMC (Vota la mia chiamata) globale<br>-Qualità conferenza<br>-Qualità P2P<br>-Affidabilità per le conferenze<br>-Affidabilità P2P<br>-RMC conferenza<br>-RMC P2P         |
 |<strong>(Nuovo!)</strong> Report sull'utilizzo di teams Call Quality dashboard. pbix     | Mostra come gli utenti dell'organizzazione usano team e quanto. Per altre informazioni, vedere [usare il report di Power bi Call Quality dashboard per visualizzare l'utilizzo di Microsoft teams](CQD-teams-utilization-report.md).        |
 |Feedback degli utenti di Call Quality Dashboard (Vota la mia chiamata) report. pbix     | Mostra il tasso di dati della chiamata in modo che sia possibile usare facilmente per supportare la chiamata per l'organizzazione. Riferimento incrociato con Verbatims per identificare le opportunità di formazione per gli utenti finali.        |
+
+> [!TIP]
+> Dopo aver configurato i report di Power BI per i dati di Call Quality dashboard, aggiungerli come scheda a un canale. Dopo aver selezionato **+** un canale, selezionare **Power bi** e quindi trovare il report. Tenere presente che solo gli utenti con una licenza di Power BI e le credenziali di amministratore di Call Quality dashboard possono accedere ai report.
 
 
 ## <a name="related-topics"></a>Argomenti correlati

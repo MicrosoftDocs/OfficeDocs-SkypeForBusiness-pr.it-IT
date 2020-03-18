@@ -3,7 +3,6 @@ title: Introduzione ai modelli di Teams
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
-ms.date: 01/25/2019
 audience: Admin
 ms.topic: conceptual
 ms.service: msteams
@@ -19,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fef3357f938be0e9261d0b5459c9f6aa16942329
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 585d3241506dacf60eb02b1d7a3e97cb80357026
+ms.sourcegitcommit: cfaae3ecbf853766de788b4825a86e04f68868ca
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837016"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796029"
 ---
 # <a name="get-started-with-teams-templates"></a>Introduzione ai modelli di Teams
 
@@ -77,9 +76,6 @@ Per impostazione predefinita, il modello di base è impostato su **standard** ch
 | Assistenza sanitaria<br>Ward |`https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareWard')` |Canali <ul><li>Annunci\*</li><li>Huddles\*</li><li>Arrotonda</li><li>Personale\*</li><li>Formazione\*</li></ul>\*Canali preferiti automaticamente |
 |Assistenza sanitaria<br>Ospedale | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareHospital')` |Canali<ul><li>Annunci\*</li><li>Conformità\*</li><li>Custodia</li><li>Risorse umane</li></li><li>Farmacia</li></ul>\*Canale con il favorito automatico|
 |||
-
-> [!NOTE]
-> Aggiungeremo altri tipi di modello di base nelle versioni future di Microsoft teams, quindi controlla le informazioni più aggiornate sulle proprietà supportate.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
