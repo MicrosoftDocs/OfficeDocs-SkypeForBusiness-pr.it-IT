@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.quickstartteamsadmin
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 87de516afbd94a0d1784edd52efbcc5b10e262dd
-ms.sourcegitcommit: 29034bda30a8460eb18600785f785528d0944041
+ms.openlocfilehash: f8259b8a06a4601ff7feebca53c06f268bdc08c5
+ms.sourcegitcommit: cfaae3ecbf853766de788b4825a86e04f68868ca
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42285828"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42796019"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -42,14 +42,7 @@ Per iniziare, guardare il breve video sulle chat, i team e i canali di Teams (4:
 
 ## <a name="chat-deployment-prerequisites"></a>Prerequisiti per la distribuzione della chat
 
-Prima di implementare Teams nell'organizzazione, è necessario verificare che l'ambiente sia pronto. Rivedere le informazioni seguenti e apportare le modifiche necessarie all'ambiente.
-
-- Per ottenere l'esperienza di Teams completa, è necessario che l'organizzazione abbia distribuito [Exchange Online e SharePoint Online](#exchange-and-sharepoint-interoperability) e che disponga di un dominio verificato per Office 365, ad esempio, contoso.com.
-
-- Per espandere chat, team e canali all'interno dell'organizzazione, accertarsi che tutte le posizioni abbiano accesso a Internet, in modo che possano connettersi a Office 365. Verificare come minimo che le porte comuni seguenti siano aperte a Internet da tutte le posizioni:
-
-    - Aprire le porte **TCP** 80 e 443 per il traffico in uscita dai client che useranno Teams
-    - Aprire le porte **UDP** da 3478 a 3481 per il traffico in uscita dai client che useranno Teams
+Prima di implementare Teams nell'organizzazione, è necessario verificare che l'ambiente sia pronto. Consultare [Preparare la rete dell'organizzazione per Teams](prepare-network.md) e apportare le modifiche necessarie per l'ambiente.
 
 |Chiedersi|Azione |
 |------------|-------|
