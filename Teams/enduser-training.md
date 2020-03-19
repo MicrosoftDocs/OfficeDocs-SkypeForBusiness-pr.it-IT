@@ -9,6 +9,7 @@ ms.service: msteams
 audience: admin
 ms.collection:
 - M365-collaboration
+- Teams_ITAdmin_RemoteWorkers
 ms.reviewer: lolaj
 search.appverid: MET150
 description: Video di formazione, esercitazioni e altre risorse per gli utenti dell'organizzazione per imparare e usare teams.
@@ -19,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.dashboard.trainingvideos.enduser
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 72e8543d4d279796051ae24a728092fc236b13e3
-ms.sourcegitcommit: 769241842058cfb4618460fad2dde1494a3609a1
+ms.openlocfilehash: 967fdf2dd00c41425a56627082c5f74a7310acb9
+ms.sourcegitcommit: 86366b66b15870fe83cbb76e1ae7aa1ce9b3bfe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42574013"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42858351"
 ---
 # <a name="end-user-training-for-microsoft-teams"></a>Formazione per gli utenti finali per Microsoft Teams
 
@@ -148,7 +149,32 @@ Guardare questo breve video che introduce in teams</h3>
 
 <h2>Formazione in primo piano</h2>
 <ul class="panelContent cardsW">
-     <li>
+<li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Lavorare in remoto (WFH)</h3>
+                         <p><a href="https://aka.ms/remote-work">Lavorare in remoto con Office 365</a></p>
+                        <p><a href="https://support.office.com/article/5144136b-1ff8-476f-bcba-00de0bdaa600">Procedure consigliate per la collaborazione con Office 365</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li> 
+    <li>
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardText">
+                        <h3>Apprendimento remoto</h3>
+                         <p><a href="https://www.microsoft.com/en-us/education/remote-learning">Esecuzione della transizione all'apprendimento remoto</a></p>
+                        <p><a href="https://aka.ms/TeamsEDUQuickGuide">Teams per l'istruzione: Guida introduttiva</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li><li>
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
