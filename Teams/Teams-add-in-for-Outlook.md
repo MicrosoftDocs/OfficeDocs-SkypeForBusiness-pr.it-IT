@@ -1,5 +1,5 @@
 ---
-title: Usare il componente aggiuntivo riunione di Microsoft teams in Outlook
+title: Usare il componente aggiuntivo Riunione di Microsoft Teams in Outlook
 author: ChuckEdmonson
 ms.author: chucked
 manager: serdars
@@ -9,7 +9,7 @@ ms.service: msteams
 ms.reviewer: sonua
 localization_priority: Normal
 search.appverid: MET150
-description: Microsoft teams installa un componente aggiuntivo in Outlook che consente agli utenti di pianificare una riunione di Teams da Outlook.
+description: Microsoft Teams installa un componente aggiuntivo in Outlook che consente agli utenti di pianificare una riunione di Teams da Outlook.
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,7 +20,7 @@ appliesto:
 - Microsoft Teams
 ms.openlocfilehash: e1cdd071dfe19c50650d6f18605a5aeed5b39300
 ms.sourcegitcommit: c16451519e05b47bbb77e09dacd13ff212617e91
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/28/2020
 ms.locfileid: "42327848"
@@ -28,104 +28,104 @@ ms.locfileid: "42327848"
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
 
-Il componente aggiuntivo riunione teams consente agli utenti di pianificare una riunione Teams da Outlook. Il componente aggiuntivo è disponibile per Outlook in Windows, Mac, Web e mobile.
+Il componente aggiuntivo Riunione di Teams consente agli utenti di pianificare una riunione di Teams da Outlook. Il componente aggiuntivo è disponibile per Outlook in Windows, Mac, Web e dispositivi mobili.
 
-## <a name="teams-meeting-add-in-in-outlook-for-windows"></a>Componente aggiuntivo riunione teams in Outlook per Windows
+## <a name="teams-meeting-add-in-in-outlook-for-windows"></a>Componente aggiuntivo Riunione di Teams in Outlook per Windows
 
-Il componente aggiuntivo riunione teams viene installato automaticamente per gli utenti che dispongono di Microsoft teams e Office 2010, Office 2013 o Office 2016 installato nel PC Windows. Gli utenti vedranno il componente aggiuntivo riunione teams sulla barra multifunzione del calendario di Outlook.
+Il componente aggiuntivo Riunione di Teams viene installato automaticamente per gli utenti che hanno Microsoft Teams e Office 2010, Office 2013 oppure Office 2016 nel loro PC Windows. Gli utenti vedranno il componente aggiuntivo Riunione di Teams sulla barra multifunzione del Calendario di Outlook.
 
-![Screenshot del componente aggiuntivo riunione teams sulla barra multifunzione di Outlook](media/Teams-add-in-for-Outlook.png)
+![Screenshot del componente aggiuntivo Riunione di Teams sulla barra multifunzione di Outlook](media/Teams-add-in-for-Outlook.png)
 
 > [!NOTE]
-> - Le autorizzazioni utente per l'esecuzione del file Regsvr32. exe sono un requisito minimo per il componente aggiuntivo riunione teams per l'installazione nel computer.
-> - Se gli utenti non vedono il componente aggiuntivo riunione teams, indicano loro di chiudere Outlook e teams, quindi riavviare prima il client teams, quindi accedere a teams e quindi riavviare il client Outlook in questo ordine specifico.
-> - Se si usa un'installazione di Office Outlook da Microsoft Store, il componente aggiuntivo riunione teams non è supportato. Gli utenti che richiedono questo componente aggiuntivo si consiglia di installare la versione a portata di clic di Office, come descritto in Office in [Windows 10 in modalità S](https://support.office.com/article/faq-office-on-windows-10-in-s-mode-717193b5-ff9f-4388-84c0-277ddf07fe3f) .
+> - Le autorizzazioni utente per eseguire il file Regsvr32.exe sono un requisito minimo per installare il componente aggiuntivo Riunione di Teams nel computer.
+> - Se gli utenti non vedono il componente aggiuntivo Riunione di Teams, puoi chiedere loro di chiudere Outlook e Teams, quindi di riavviare prima il client Team, poi di accedere a Teams e infine di riavviare il client Outlook nell’ordine appena esposto.
+> - Se si usa un'installazione di Office Outlook da Microsoft Store, il componente aggiuntivo Riunione di Teams non è supportato. Gli utenti che richiedono questo componente aggiuntivo possono installare la versione a portata di clic di Office, come descritto nell’articolo [Office su Windows 10 in modalità S](https://support.office.com/article/faq-office-on-windows-10-in-s-mode-717193b5-ff9f-4388-84c0-277ddf07fe3f).
 
-## <a name="teams-meeting-add-in-in-outlook-for-mac"></a>Componente aggiuntivo riunione teams in Outlook per Mac
+## <a name="teams-meeting-add-in-in-outlook-for-mac"></a>Componente aggiuntivo Riunione di Teams in Outlook per Mac
 
-Il pulsante riunione teams in Outlook per Mac verrà visualizzato nella barra multifunzione di Outlook per Mac se Outlook è in uso per la build di produzione 16.24.414.0 e versioni successive e viene attivato con un abbonamento client di Office 365.
+Il pulsante Riunione di Teams in Outlook per Mac viene visualizzato nella barra multifunzione di Outlook per Mac se Outlook sta eseguendo la build di produzione 16.24.414.0 e versioni successive e se è attivato con un abbonamento al client Office 365.
 
-Le coordinate della riunione (i numeri di collegamento e di accesso esterno per i team) verranno aggiunte all'invito alla riunione dopo che l'utente ha fatto clic su **Invia**.  
+Le coordinate della riunione, ossia il collegamento per unirsi a Teams e i numeri telefonici di accesso esterno, verranno aggiunte all'invito alla riunione dopo che l'utente avrà fatto clic su **Invia**.  
 
-## <a name="teams-meeting-add-in-in-outlook-web-app"></a>Componente aggiuntivo riunione teams in Outlook Web App
+## <a name="teams-meeting-add-in-in-outlook-web-app"></a>Componente aggiuntivo Riunione di Teams in Outlook Web App
 
-Il pulsante riunioni teams in Outlook Web App verrà visualizzato come parte della nuova creazione di eventi se l'utente si trova in una versione iniziale del nuovo Outlook sul Web. Vedere il [Blog di Outlook](https://techcommunity.microsoft.com/t5/Outlook-Blog/Designed-to-be-fast-The-Outlook-on-the-web-user-experience-gets/ba-p/234909?utm_source=t.co&utm_medium=referral) per informazioni su come gli utenti possono provare la versione iniziale del nuovo Outlook sul Web.
+Il pulsante Riunioni di Teams in Outlook Web App verrà visualizzato come parte della creazione di un nuovo evento se l'utente possiede una versione precedente del nuovo Outlook sul web. Per informazioni su come gli utenti possono provare a usare la versione precedente del nuovo Outlook sul web, vedere il [Blog di Outlook](https://techcommunity.microsoft.com/t5/Outlook-Blog/Designed-to-be-fast-The-Outlook-on-the-web-user-experience-gets/ba-p/234909?utm_source=t.co&utm_medium=referral).
 
-![Screenshot del componente aggiuntivo riunione teams in Outlook Web App](media/teams-meeting-add-in-web.png)
+![Screenshot del componente aggiuntivo Riunione di Teams in Outlook Web App](media/teams-meeting-add-in-web.png)
 
-Le coordinate della riunione (i numeri di collegamento e di accesso esterno per i team) verranno aggiunte all'invito alla riunione dopo che l'utente ha fatto clic su **Invia**.  
+Le coordinate della riunione, ossia il collegamento per unirsi a Teams e i numeri telefonici di accesso esterno, verranno aggiunte all'invito alla riunione dopo che l'utente avrà fatto clic su **Invia**.  
 
-## <a name="teams-meeting-add-in-in-outlook-mobile-ios-and-android"></a>Componente aggiuntivo riunione teams in Outlook Mobile (iOS e Android)
+## <a name="teams-meeting-add-in-in-outlook-mobile-ios-and-android"></a>Componente aggiuntivo Riunione di Teams in Outlook Mobile (per iOS e Android)
 
-Il pulsante riunione teams viene visualizzato nelle build più recenti dell'app Outlook iOS e Android.
+Il pulsante Riunione di Teams compare nelle build più recenti dell'app di Outlook per iOS e Android.
 
-![Screenshot del componente aggiuntivo riunione teams in Outlook Mobile](media/teams-meeting-add-in-mobile.png)
+![Screenshot del componente aggiuntivo Riunione di Teams in Outlook Mobile](media/teams-meeting-add-in-mobile.png)
 
-Le coordinate della riunione (i numeri di collegamento e di accesso esterno per i team) verranno aggiunte all'invito alla riunione dopo che l'utente ha fatto clic su **Invia**.  
+Le coordinate della riunione, ossia il collegamento per unirsi a Teams e i numeri telefonici di accesso esterno, verranno aggiunte all'invito alla riunione dopo che l'utente avrà fatto clic su **Invia**.  
 
-## <a name="teams-meeting-add-in-in-and-findtime-for-outlook"></a>Componente aggiuntivo riunione teams in e FindTime per Outlook
-FindTime è un componente aggiuntivo per Outlook che consente agli utenti di raggiungere un consenso per un periodo di riunione tra le aziende. Quando gli invitati alla riunione hanno fornito i loro orari preferiti, FindTime invia l'invito alla riunione per conto dell'utente. Se l'opzione **riunione online** è selezionata in FindTime, FindTime programmerà una riunione Skype for business o Microsoft teams. FindTime utilizzerà l'impostazione impostata dall'organizzazione come canale di riunione online predefinito.
+## <a name="teams-meeting-add-in-in-and-findtime-for-outlook"></a>Componente aggiuntivo Riunione di Teams in TrovaOrario per Outlook
+TrovaOrario è un componente aggiuntivo per Outlook che aiuta gli utenti a raggiungere un consenso tra le aziende per stabilire l’orario di riunione. Una volta che gli invitati della riunione hanno fornito il loro orario preferito, TrovaOrario invia l'invito alla riunione per conto dell'utente. Se viene selezionata l'opzione **Riunione online** in TrovaOrario, verrà programmata una riunione di Skype for Business o di Microsoft Teams. (TrovaOrario userà qualsiasi opzione impostata dall'organizzazione come canale predefinito per le riunioni online.)
 
 > [!NOTE]  
-> Se è stata salvata un'impostazione di Skype for business nel [dashboard di Findtime](https://findtime.microsoft.com/UserDashboard), Findtime utilizzerà quella invece di Microsoft teams. Se si vuole usare Microsoft teams, eliminare l'impostazione Skype for business nel dashboard.
+> Se è stato impostato Skype for Business nella [dashboard di TrovaOrario](https://findtime.microsoft.com/UserDashboard), verrà usata questa impostazione anziché Microsoft Teams. Se si vuole usare Microsoft Teams, eliminare l'opzione Skype for Business nella dashboard.
 
-Per altre informazioni, vedere [pianificare le riunioni con FindTime](https://support.office.com/article/scheduling-meetings-with-findtime-4dc806ed-fde3-4ea7-8c5e-b5d1fddab4a6) .
+Per altre informazioni, vedere [Pianificare riunioni con TrovaOrario](https://support.office.com/article/scheduling-meetings-with-findtime-4dc806ed-fde3-4ea7-8c5e-b5d1fddab4a6).
 
 ## <a name="authentication-requirements"></a>Requisiti di autenticazione
 
-Il componente aggiuntivo riunione teams richiede agli utenti di accedere a teams con l'autenticazione moderna. Se gli utenti non usano questo metodo per accedere, saranno comunque in grado di usare il client teams, ma non saranno in grado di pianificare le riunioni online di teams usando il componente aggiuntivo per Outlook. Per risolvere questo problema, è possibile eseguire una delle operazioni seguenti:
+Il componente aggiuntivo Riunione di Teams richiede agli utenti di accedere a Teams con l'Autenticazione moderna. Se non viene usato questo metodo per eseguire l'accesso, sarà possibile comunque usare il client Teams, ma non sarà possibile pianificare riunioni online di Teams usando il componente aggiuntivo per Outlook. È possibile correggere eseguendo una delle operazioni seguenti:
 
-- Se l'autenticazione moderna non è configurata per l'organizzazione, è necessario configurare l'autenticazione moderna.
-- Se è stata configurata l'autenticazione moderna, ma la finestra di dialogo è stata annullata, è consigliabile richiedere agli utenti di accedere di nuovo con l'autenticazione a più fattori.
+- Se l'Autenticazione moderna non è configurata per l'organizzazione, è consigliabile eseguirne la configurazione.
+- Se l'Autenticazione moderna è configurata ma è stata annullata nella finestra di dialogo, è consigliabile richiedere agli utenti di eseguire di nuovo l'accesso con l'autenticazione a più fattori.
 
-Per ulteriori informazioni su come configurare l'autenticazione, vedere [modelli di identità e autenticazione in Microsoft teams](identify-models-authentication.md).
+Per altre informazioni su come configurare l'autenticazione, vedere [Modelli di identità e autenticazione in Microsoft Teams](identify-models-authentication.md).
 
-## <a name="enable-private-meetings"></a>Abilitare riunioni private
+## <a name="enable-private-meetings"></a>Attivare riunioni private
 
-**Consenti la pianificazione per le riunioni private** deve essere abilitata nell'interfaccia di amministrazione di Microsoft teams per il componente aggiuntivo per la distribuzione. Nell'interfaccia di amministrazione passare a**criteri riunione** **riunioni** > e, nella sezione **generale** , attivare o disattivare la **pianificazione delle riunioni private** .
+È necessario attivare **Consenti pianificazione per le riunioni private** nell'interfaccia di amministrazione di Microsoft Teams per distribuire il componente aggiuntivo. Nell'interfaccia di amministrazione, andare su **Riunioni** > **Criteri riunione** e nella sezione **Generale**, infine attivare **Consenti la pianificazione di riunioni private**.
 
-![Screenshot delle impostazioni nell'interfaccia di amministrazione di Microsoft teams.](media/teams-add-in-for-outlook-image1.png)
+![Screenshot delle impostazioni dell'interfaccia di amministrazione di Microsoft Teams.](media/teams-add-in-for-outlook-image1.png)
 
-Il client teams installa il componente aggiuntivo corretto determinando se gli utenti necessitano della versione a 32 bit o 64 bit.
+Il client Teams installa il componente aggiuntivo corretto determinando se gli utenti hanno bisogno della versione a 32 o a 64 bit.
 
 > [!NOTE]
-> Gli utenti potrebbero dover riavviare Outlook dopo un'installazione o un aggiornamento di teams per ottenere il componente aggiuntivo più recente.
+> Gli utenti potrebbero dover riavviare Outlook dopo l'installazione o l'aggiornamento di Teams per ottenere il componente aggiuntivo più recente.
 
-## <a name="teams-upgrade-policy-and-the-teams-meeting-add-in-for-outlook"></a>Criteri di aggiornamento dei team e il componente aggiuntivo riunione team per Outlook
+## <a name="teams-upgrade-policy-and-the-teams-meeting-add-in-for-outlook"></a>Criteri di aggiornamento di Teams e del componente aggiuntivo Riunione di Teams per Outlook
 
-I clienti possono [scegliere il viaggio di aggiornamento da Skype for business a teams](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md). Gli amministratori del tenant possono usare la modalità di coesistenza di teams per definire questo viaggio per gli utenti. Gli amministratori del tenant hanno la possibilità di consentire agli utenti di usare teams insieme a Skype for business (modalità isole). 
+I clienti possono [scegliere il percorso di aggiornamento da Skype for Business a Teams](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md). Gli amministratori tenant possono usare la modalità di coesistenza di Teams per definire questo percorso per gli utenti. Gli amministratori tenant hanno la possibilità di consentire agli utenti di usare Teams insieme a Skype for Business (modalità Isole). 
 
-Quando gli utenti che si trovano in modalità Isola pianificano una riunione in Outlook, in genere si aspettano di poter scegliere se pianificare una riunione di Skype for business o di teams. In Outlook sul Web, Outlook Windows e Outlook Mac, gli utenti possono visualizzare i componenti aggiuntivi Skype for business e teams in modalità Islands. A causa di alcune limitazioni della versione iniziale, Outlook Mobile può supportare solo la creazione di riunioni Skype for business **o** teams. Per informazioni dettagliate, vedere la tabella seguente.
+Quando gli utenti in modalità Isole pianificano una riunione in Outlook, in genere prevedono di decidere se pianificare una riunione di Skype for Business o di Teams. In Outlook sul web, Outlook Windows e Outlook Mac, gli utenti possono vedere i componenti aggiuntivi di Skype for Business e Teams in modalità Isole. A causa di alcune limitazioni nel rilascio iniziale, Outlook Mobile supporta solo la creazione di riunioni di Skype for Business **o** di Teams. Per altri dettagli, vedere la tabella seguente.
 
-| Modalità di coesistenza nell'interfaccia di amministrazione di Teams | Provider di riunioni predefinito in Outlook Mobile |
+| Modalità di coesistenza nell’interfaccia di amministrazione di Teams | Provider di riunioni predefinito in Outlook Mobile |
 | --------------------------------------|---------------------------------------------|
-| Isole | Skype for business |
-| Solo Skype for Business | Skype for business |
-| Collaborazione tra Skype for business e teams | Skype for business |
-| Skype for business con la collaborazione e le riunioni di Teams | Teams |
+| Isole | Skype for Business |
+| Solo Skype for Business | Skype for Business |
+| Collaborazione di Skype for Business con Teams | Skype for Business |
+| Collaborazione e riunioni di Skype for Business con Teams | Teams |
 | Solo Teams | Teams |
 
 ## <a name="other-considerations"></a>Altre considerazioni
 
-Il componente aggiuntivo riunione teams è ancora in costruzione, quindi tieni presente quanto segue:
+Il componente aggiuntivo Riunione di Teams è ancora in fase di sviluppo, pertanto è importante tenere presente quanto segue:
 
-- Il componente aggiuntivo è per le riunioni pianificate con partecipanti specifici, non per le riunioni in un canale. Le riunioni di canale devono essere pianificate all'interno di teams.
-- Il componente aggiuntivo non funzionerà se un proxy di autenticazione si trova nel percorso di rete dei servizi PC e teams dell'utente.
-- Gli utenti non possono pianificare eventi dinamici dall'interno di Outlook. Accedere a teams per pianificare gli eventi dinamici. Per altre informazioni, vedere [che cosa sono gli eventi live di Microsoft teams?](teams-live-events/what-are-teams-live-events.md).
+- Il componente aggiuntivo è adatto a riunioni programmate con partecipanti specifici, non alle riunioni in un canale. Le riunioni nei canali devono essere programmate direttamente in Teams.
+- Il componente aggiuntivo non funzionerà se un Proxy di autenticazione si trova nel percorso di rete relativo ai servizi di Teams e del PC dell'utente.
+- Gli utenti non possono programmare gli eventi live all’interno di Outlook. Andare su Teams per pianificare gli eventi live. Per altre informazioni, vedere [Che cosa sono gli eventi live di Microsoft Teams?](teams-live-events/what-are-teams-live-events.md).
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Se non è possibile installare il componente aggiuntivo riunione teams per Outlook, provare a eseguire questi passaggi per la risoluzione dei problemi.
+Se non si riesce a trovare il componente aggiuntivo Riunione di Teams per Outlook per l'installazione, provare a eseguire questa procedura di risoluzione dei problemi.
 
-- Verificare che siano stati applicati tutti gli aggiornamenti disponibili per il client desktop Outlook.
-- Riavviare il client desktop teams.
-- Disconnettersi e quindi accedere di nuovo al client desktop teams.
-- Riavviare il client desktop di Outlook. Verificare che Outlook non sia in uso in modalità amministratore.
-- Verificare che il nome dell'account utente connesso non contenga spazi. (Si tratta di un problema noto e verrà risolto in un aggiornamento futuro).
-- Verificare che Single Sign-on (SSO) sia abilitato.
+- Assicurarsi che siano stati applicati tutti gli aggiornamenti disponibili per il client desktop di Outlook.
+- Riavviare il client desktop di Teams.
+- Disconnettersi e quindi eseguire di nuovo l'accesso al client desktop di Teams.
+- Riavviare il client desktop di Outlook. (Verificare che Outlook non sia in esecuzione in modalità amministratore.)
+- Assicurarsi che il nome dell'account utente connesso non contenga spazi. (Si tratta di un problema noto che verrà risolto in un prossimo aggiornamento.)
+- Assicurarsi che il Single Sign-On (SSO) sia abilitato.
 
-Se l'amministratore ha configurato Microsoft Exchange per [controllare l'accesso a Exchange Web Server (EWS)](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange), un delegato non potrà programmare una riunione di teams per conto del boss. La soluzione per questa configurazione è in fase di sviluppo e verrà rilasciata in futuro. 
+Se l'amministratore ha configurato Microsoft Exchange per [controllare l'accesso a Exchange Web Server (EWS)](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange), un eventuale delegato non potrà pianificare una riunione di Teams per conto del suo superiore. La soluzione per questa configurazione è in fase di sviluppo e verrà rilasciata in futuro. 
 
-Per informazioni generali su come disabilitare i componenti aggiuntivi, vedere [visualizzare, gestire e installare componenti aggiuntivi nelle applicazioni di Office](https://support.office.com/article/View-manage-and-install-add-ins-in-Office-programs-16278816-1948-4028-91E5-76DCA5380F8D).
+Per informazioni generali su come disabilitare i componenti aggiuntivi, vedere [Visualizzare, gestire e installare componenti aggiuntivi nei programmi di Office](https://support.office.com/article/View-manage-and-install-add-ins-in-Office-programs-16278816-1948-4028-91E5-76DCA5380F8D).
 
-Leggi altre informazioni sulle [riunioni e le chiamate in Microsoft teams](https://support.office.com/article/Meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8).
+Altre informazioni su [riunioni e chiamate in Microsoft Teams](https://support.office.com/article/Meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8).
