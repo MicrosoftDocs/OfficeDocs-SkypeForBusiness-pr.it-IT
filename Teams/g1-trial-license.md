@@ -12,14 +12,15 @@ localization_priority: Priority
 description: Per il governo degli Stati Uniti, se non si ha Microsoft Teams ma serve in fretta, distribuire la versione di valutazione di Office 365 G1 agli utenti che hanno l'esigenza di lavorare in remoto o da casa a seguito dell'epidemia di COVID-19 (coronavirus).
 ms.collection:
 - M365-collaboration
+- Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 388c3c30e9b4db2db6a21179829ca6ac40e00da0
-ms.sourcegitcommit: 095bed15ffe64c34e6c39770b5734d966d5d8a0f
+ms.openlocfilehash: a6ae8079ba3ccd498936c5d17740ea2e5bafb514
+ms.sourcegitcommit: 86366b66b15870fe83cbb76e1ae7aa1ce9b3bfe1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42508197"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42858721"
 ---
 <a name="manage-the-office-365-g1-trial-for-us-government"></a>Gestire la versione di valutazione di Office 365 G1 per il governo degli Stati Uniti 
 ==============================

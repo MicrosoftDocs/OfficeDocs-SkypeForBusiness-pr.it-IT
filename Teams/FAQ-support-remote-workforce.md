@@ -8,18 +8,19 @@ ms.topic: article
 ms.service: msteams
 ms.collection:
 - M365-collaboration
+- Teams_ITAdmin_RemoteWorkers
 ms.reviewer: nichrose
 localization_priority: Priority
 search.appverid: MET150
 description: Usare questa guida per aiutare il personale remoto a essere produttivo quando lavora da casa in risposta all'epidemia di COVID-19 (coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 869c489fbb5ff30f611b52d3682b090422aece8d
-ms.sourcegitcommit: 5f4bcbd3011aae13db846b4fe3da0b76fff7d05f
+ms.openlocfilehash: e5b6249adc4c5f7af09f0414b07f500058f71747
+ms.sourcegitcommit: 86366b66b15870fe83cbb76e1ae7aa1ce9b3bfe1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42617750"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42858741"
 ---
 # <a name="faq-support-your-remote-workforce"></a>Domande frequenti: Supporto del personale remoto
 
