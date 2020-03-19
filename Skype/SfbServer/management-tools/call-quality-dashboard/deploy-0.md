@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 287f64f5-0f8a-455a-8979-7b34bf0217bb
 description: 'Riepilogo: informazioni sul processo di distribuzione per il dashboard qualità chiamata. Call Quality dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: d42d735ab5a60ec02ad2e1f4f696908996457c0b
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 5879c4a99eec8471763e0fccc3a4886be660dbb6
+ms.sourcegitcommit: 54cbcf917d9663e6aa9760d7399b36c00d66478c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42042263"
+ms.lasthandoff: 03/18/2020
+ms.locfileid: "42840160"
 ---
 # <a name="deploy-call-quality-dashboard-for-skype-for-business-server"></a>Distribuire dashboard qualità chiamata per Skype for Business Server
  
@@ -386,22 +386,23 @@ I parametri BuildingKey, Buildingname, BuildingShortName, OwnershipTypeId, Build
 L'importazione di edifici offre la possibilità di ottenere informazioni specifiche sull'edificio (chiamate insufficienti per ogni edificio su WiFi/Wired, ecc.). 
   
 > [!NOTE]
-> Questo passaggio è facoltativo, ma è consigliato. 
+> Questo passaggio è facoltativo, ma è consigliato.
   
-Importare le subnet e mapparle agli edifici importati nell'ultimo passaggio. Se si è deciso di non popolare NetworkName, assicurarsi che ogni voce della tabella utilizzi un NetworkNameID di 0.
+Importare le subnet e mapparle agli edifici importati nell'ultimo passaggio. Se si è deciso di non popolare NetworkName, assicurarsi che ogni voce della tabella utilizzi un NetworkNameID di 0. Per ulteriori informazioni sulla sintassi e sui parametri SQL per il dashboard qualità chiamata, vedere [Use Call Quality dashboard for Skype for Business Server](https://docs.microsoft.com/skypeforbusiness/management-tools/call-quality-dashboard/use).
   
  **Sintassi SQL di esempio**
   
 ```SQL
 INSERT INTO [dbo].[CqdNetwork] 
 ([Network]
+,[NetworkRange]
 ,[NetworkNameID]
 ,[BuildingKey]
 ,[UpdatedDate]
 )
 
 VALUES
- ('172.16.254.0',0,1,'2015-11-11')
+ ('172.16.254.0',32,0,1,'2015-11-11')
 ```
 
 I parametri Network e UpdatedDate sono obbligatori, mentre gli altri parametri sono facoltativi.

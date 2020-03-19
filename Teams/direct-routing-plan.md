@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Leggere questo argomento per informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente a Microsoft Phone System.
-ms.openlocfilehash: 347a8a7dd64831281c1c9e2f94f2bea24fb18555
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+ms.openlocfilehash: 0e15f8e76bc9512a28311764c39e34b45131b9d3
+ms.sourcegitcommit: 86366b66b15870fe83cbb76e1ae7aa1ce9b3bfe1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160710"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42858581"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -303,6 +303,25 @@ L'intervallo di porte dei processori multimediali è illustrato nella tabella se
   > [!NOTE]
   > Microsoft consiglia almeno due porte per chiamata simultanea su SBC.
 
+
+## <a name="media-traffic-media-processors-geography"></a>Traffico multimediale: geografia dei processori multimediali
+
+Il traffico multimediale scorre tramite componenti detti media processor. I processori multimediali vengono posizionati negli stessi datacenter come proxy SIP. Esistono inoltre processori multimediali aggiuntivi per ottimizzare il flusso multimediale. Ad esempio, non abbiamo un componente proxy SIP ora in Australia (flussi SIP via Singapore o Hong Kong), ma abbiamo il processore multimediale locale in Australia. La necessità per i processori multimediali localmente è dettata dalla latenza che sperimentiamo inviando traffico interurbano, ad esempio da Australia a Singapore o Hong Kong. Mentre la latenza nell'esempio di traffico che scorre dall'Australia a Hong Kong o Singapore è accettabile per mantenere una buona qualità delle chiamate per il traffico SIP, per il traffico multimediale in tempo reale non lo è.
+
+Posizione dei processori multimediali:
+
+Posizioni in cui sono stati distribuiti sia i componenti proxy SIP che i processori multimediali:
+- Stati Uniti (due nei data center US West e US East)
+- Europa (Datacenter di Amsterdam e Dublin)
+- Asia (centro dati di Singapore e Hong Kong)
+
+Posizioni in cui vengono distribuiti solo i processori multimediali (flussi SIP tramite il centro dati più vicino elencato sopra):
+- Giappone (JP est e centro dati ovest)
+- Australia (centri dati AU est e ovest)
+
+
+
+
 ## <a name="media-traffic-codecs"></a>Traffico multimediale: codec
 
 ### <a name="leg-between-sbc-and-cloud-media-processor-or-microsoft-teams-client"></a>Gamba tra SBC e cloud media processor o Microsoft teams client.
@@ -333,6 +352,3 @@ Per altre informazioni sulle SBCs supportate, vedere l' [elenco dei controller d
 ## <a name="see-also"></a>Vedere anche
 
 [Configurare Instradamento diretto](direct-routing-configure.md)
-
-
-
