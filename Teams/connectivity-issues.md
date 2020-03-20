@@ -1,5 +1,5 @@
 ---
-title: Risolvere i problemi di connettività con il client Microsoft Teams
+title: Risolvere i problemi di connettività con il client di Microsoft Teams
 ms.reviewer: ''
 author: LolaJacobsen
 ms.author: lolaj
@@ -13,33 +13,33 @@ ms.collection:
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Risolvere i problemi di connettività con il client Microsoft teams, causato principalmente dal firewall o dalla connessione proxy, e come risolverlo.
+description: Risolvere i problemi di connettività con il client Microsoft Teams causati principalmente dal firewall o dalla connessione proxy.
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: a12be097d0609f3631b6761f31350603b283faa2
 ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/06/2020
 ms.locfileid: "41825354"
 ---
-<a name="troubleshoot-connectivity-issues-with-the-microsoft-teams-client"></a>Risolvere i problemi di connettività con il client Microsoft Teams
+<a name="troubleshoot-connectivity-issues-with-the-microsoft-teams-client"></a>Risolvere i problemi di connettività con il client di Microsoft Teams
 ==============================================================
 
-La maggior parte dei problemi individuati con il client Microsoft teams può essere ricondotta alla connettività firewall o proxy. Verificare che gli URL, gli indirizzi IP e le porte necessari vengano aperti nel firewall o nel proxy ridurrà la risoluzione dei problemi non necessaria. Per informazioni specifiche su URL e IPs necessari per Microsoft teams, vedere gli [URL di Office 365 e](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) l'articolo del supporto degli indirizzi IP. Gli scenari seguenti richiedono l'apertura di URL e porte specifici nel firewall.
+La maggior parte dei problemi riscontrati con il client di Microsoft Teams può essere ricondotta al firewall o alla connessione proxy. Per ridurre al minimo l'uso non necessario della funzionalità Risoluzione dei problemi, è opportuno controllare che gli opportuni URL, indirizzi IP e porte siano aperti nel firewall o proxy. Per informazioni specifiche sugli URL e gli indirizzi IP necessari per Microsoft Teams, vedere l'articolo del supporto [URL e indirizzi IP di Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2). Per gli scenari seguenti è necessario che gli URL e le porte specifici siano aperti nel firewall.
 
 -   Autenticazione
 
--   Connettività client di Microsoft Teams
+-   Connettività del client di Microsoft Teams
 
 -   Collaborazione
 
--   Contenuti multimediali
+-   Elementi multimediali
 
 -   Servizi condivisi
 
 -   Integrazione di terze parti
 
--   Interoperabilità di Skype for business
+-   Interoperabilità di Skype for Business
 
--   Interoperabilità dei client Skype for business
+-   Interoperabilità del client di Skype for Business
