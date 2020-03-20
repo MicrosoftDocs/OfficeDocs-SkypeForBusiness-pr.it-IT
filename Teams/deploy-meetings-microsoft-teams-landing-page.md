@@ -12,16 +12,17 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
+- Teams_ITAdmin_RemoteWorkers
 localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 77a935041cd0cdcb35a28e315ab48eadf6263273
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 00dab47ce695d542dcd9b7a30a1b289d0a804dea
+ms.sourcegitcommit: 86366b66b15870fe83cbb76e1ae7aa1ce9b3bfe1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826884"
+ms.lasthandoff: 03/19/2020
+ms.locfileid: "42858601"
 ---
 # <a name="meetings-and-conferencing-in-microsoft-teams"></a>Riunioni e conferenze in Microsoft Teams
 
@@ -46,7 +47,7 @@ Prima di estendere la distribuzione delle riunioni all'intera dell'organizzazion
 
 Per ottenere un'esperienza ottimale in Teams, è necessario che l'organizzazione abbia distribuito Exchange Online e SharePoint Online e che disponga di un dominio verificato per Office 365, ad esempio *contoso.com*.
 
-Per estendere le riunioni all'intera organizzazione, occorre verificare che tutte le località degli utenti abbiano accesso a Internet per connettersi ai servizi di Office 365. Verificare come minimo che le porte comuni seguenti siano aperte a Internet dalle posizioni degli utenti:
+Per estendere le riunioni all'intera organizzazione, occorre verificare che tutte le località degli utenti abbiano accesso a Internet per connettersi ai servizi di Office 365. È necessario verificare che almeno le porte comuni seguenti siano aperte a Internet dalle posizioni degli utenti:
 
 - Porte TCP 80 e 443 in uscita dai client che useranno Teams
 - Porte UDP da 3478 a 3481 in uscita dai client che useranno Teams
@@ -110,7 +111,7 @@ Per un'esperienza di riunione ottimale in Teams è consigliabile usare dispositi
 
 ### <a name="reporting"></a>Reporting
 
-Usare i report attività per scoprire in che modo gli utenti dell'organizzazione usano Teams. Ad esempio, se alcuni utenti non usano ancora Teams, potrebbero non sapere come iniziare oppure non sapere come usare Teams per essere più produttivi e collaborativi. L'organizzazione può usare i report attività per stabilire come assegnare la priorità alle attività di formazione e comunicazione. 
+Usare i report attività per scoprire in che modo gli utenti dell'organizzazione usano Teams. Ad esempio, se alcuni utenti non usano ancora Teams, potrebbero non sapere come iniziare oppure come usare Teams per essere più produttivi e collaborativi. L'organizzazione può usare i report attività per stabilire come assegnare la priorità alle attività di formazione e comunicazione. 
 
 
 | Chiedersi | Azione |

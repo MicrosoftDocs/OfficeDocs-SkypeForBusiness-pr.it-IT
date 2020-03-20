@@ -24,50 +24,50 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'Italia.
+description: Questi sono i servizi di Office 365 per Skype for Business e Microsoft Teams disponibili per l'Italia.
 ms.openlocfilehash: 982dac5989c66f743df1c0e1dca41e2c34ae4d7e
 ms.sourcegitcommit: eb2182617d8f72f8a7ea95f7af101d10c6f4e9a0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/07/2020
 ms.locfileid: "41853291"
 ---
 # <a name="availability-in-italy"></a>Disponibilità in Italia
 
-[Trova un altro Paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri di più sulla disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica.
+[Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per l'Italia.
+Questi sono i servizi di Office 365 per Skype for Business e Microsoft Teams disponibili per l'Italia.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Milano</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
-|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibili  <br/> |
+|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibile  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
-| Operatori automatici <br/> |Disponibili  <br/> |
-|Code di chiamata  <br/> |Disponibili  <br/> |
-|Casella vocale  <br/> |Disponibili  <br/> |
+| Operatori automatici <br/> |Disponibile  <br/> |
+|Code di chiamata  <br/> |Disponibile  <br/> |
+|Segreteria telefonica  <br/> |Disponibile  <br/> |
    
-## <a name="calling-plans"></a>Piani per chiamate
+## <a name="calling-plans"></a>Piani di chiamata
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |No  <br/> |
 |Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
 
-Se i piani di chiamata non sono disponibili per l'acquisto, provare a usare il [routing diretto del sistema telefonico](../direct-routing-landing-page.md). Con il routing diretto, puoi usare il sistema telefonico con virtualmente qualsiasi gestore di telefonia.
+Se i Piani di chiamata non sono disponibili per l'acquisto, valutare l'uso di [Instradamento diretto di Sistema telefonico](../direct-routing-landing-page.md). Con l'Instradamento diretto, è possibile usare il Sistema telefonico praticamente con qualsiasi gestore telefonico.
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Milano  <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
@@ -75,9 +75,9 @@ Se i piani di chiamata non sono disponibili per l'acquisto, provare a usare il [
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
   
-## <a name="communications-credits"></a>Crediti comunicazioni
+## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    
@@ -87,7 +87,7 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 
-[Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+[Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
   
  

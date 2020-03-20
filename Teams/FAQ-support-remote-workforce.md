@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare il personale remoto a essere produttivo quando lavora da casa in risposta all'epidemia di COVID-19 (coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e5b6249adc4c5f7af09f0414b07f500058f71747
-ms.sourcegitcommit: 86366b66b15870fe83cbb76e1ae7aa1ce9b3bfe1
+ms.openlocfilehash: bedd9e0022dc82520d7c23e8f8f7b61a5fd78e89
+ms.sourcegitcommit: 45bbec77370ed44ba069790086541a914800ae5a
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/19/2020
-ms.locfileid: "42858741"
+ms.locfileid: "42866571"
 ---
 # <a name="faq-support-your-remote-workforce"></a>Domande frequenti: Supporto del personale remoto
 
@@ -35,7 +35,7 @@ Con i recenti annunci riguardanti l'epidemia di COVID-19 (coronavirus), Microsof
 > [!NOTE]
 > Se si è già configurato M365 e si vogliono ottenere altre informazioni sulle azioni intraprese da Microsoft, visitare il Centro messaggi e consultare il post **MC205458**.
 
-Leggere in proposito il post di blog del 5 marzo 2020 di Jared Spataro, vicepresidente aziendale di Microsoft 365: [Il nostro impegno nei confronti dei clienti durante l'epidemia di COVID-19](https://www.microsoft.com/microsoft-365/blog/2020/03/05/our-commitment-to-customers-during-covid-19/)
+Leggere in proposito il post di blog del 5 marzo 2020 di Jared Spataro, vicepresidente aziendale di Microsoft 365: [Il nostro impegno nei confronti dei clienti durante l'epidemia di COVID-19](https://www.microsoft.com/it-IT/microsoft-365/blog/2020/03/05/our-commitment-to-customers-during-covid-19/)
 
 ### <a name="with-the-actions-that-microsoft-is-taking-do-we-anticipate-problems"></a>Le azioni intraprese da Microsoft consentiranno di evitare problemi?
 

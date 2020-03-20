@@ -1,5 +1,5 @@
 ---
-title: Gli utenti possono effettuare chiamate in uscita a questi paesi e aree geografiche
+title: Gli utenti possono effettuare chiamate in uscita verso questi paesi e aree geografiche
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -23,63 +23,63 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Questo argomento contiene tutti i paesi/aree geografiche a cui gli utenti possono inserire le chiamate in uscita se hanno un piano di chiamata.
+description: Questo argomento contiene un elenco di tutti i paesi e le aree geografiche verso cui gli utenti possono effettuare chiamate in uscita se dispongono di un Piano di chiamata.
 ms.openlocfilehash: d882078c32b5820dc060778dca4c3f30b4b2a044
 ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/03/2020
 ms.locfileid: "41682513"
 ---
-# <a name="users-can-make-outbound-calls-to-these-countries-and-regions"></a>Gli utenti possono effettuare chiamate in uscita a questi paesi e aree geografiche
+# <a name="users-can-make-outbound-calls-to-these-countries-and-regions"></a>Gli utenti possono effettuare chiamate in uscita verso questi paesi e aree geografiche
 
-### <a name="see-what-countriesregions-users-can-make-outbound-calls-to-if-the-user-has-the-domestic-and-international-calling-plan-license"></a>Informazioni sui paesi o le aree geografiche in cui gli utenti possono effettuare chiamate in uscita se l'utente ha la licenza per il piano per chiamate nazionali e internazionali
+### <a name="see-what-countriesregions-users-can-make-outbound-calls-to-if-the-user-has-the-domestic-and-international-calling-plan-license"></a>Consultare l'elenco per scoprire verso quali paesi o aree geografiche gli utenti possono effettuare chiamate in uscita, a condizione che dispongano di una licenza Piano di chiamata nazionale e internazionale
 
-|**A-D**| **E-H**|**I-L**|**M-O**|**P-S**|**T-Z**|
+|**A - D**| **E - H**|**I - L**|**M - O**|**P - S**|**T - Z**|
 ---|---|---|---|---|---|
-|Afghanistan|Ecuador |Islanda |Macau |Pakistan |Taiwan   |
-|Albania|Egitto |India |Macedonia |Palau |Tagikistan   |
-|Algeria|El Salvador |Indonesia |Malawi |Palestinian Authority |Tanzania (Repubblica unita di)  |
-|Samoa americane|Guinea Equatoriale |Iran |Malaysia |Panama | Thailandia   |
+|Afghanistan|Ecuador |Islanda |RAS di Macao |Pakistan |Taiwan   |
+|Albania|Egitto |India |Macedonia del Nord |Palau |Tagikistan   |
+|Algeria|El Salvador |Indonesia |Malawi |Autorità Palestinese |Repubblica di Tanzania  |
+|Samoa americane|Guinea Equatoriale |Iran |Malaysia |Panamá | Thailandia   |
 |Andorra |Eritrea |Iraq |Mali |Paraguay |Togo   |
 |Angola |Estonia |Irlanda |Malta |Perù | Trinidad e Tobago  |
 |Anguilla |Etiopia |Israele |Isole Marshall | Filippine | Turchia |
-|Antigua e Barbuda | Faroe Islands |Italia |Martinica |Polonia |Turkmenistan |
-|Argentina|Figi |Giamaica |Mauritius |Portogallo |Turks e Caicos   |
+|Antigua e Barbuda | Isole Fær Øer |Italia |Martinica |Polonia |Turkmenistan |
+|Argentina|Figi |Giamaica |Mauritius |Portogallo |Isole Turks e Caicos   |
 |Armenia |Finlandia |Giappone |Mayotte | Portorico |Uganda  |
 |Aruba |Francia |Giordania |Messico |Qatar | Ucraina   |
 |Australia |Guyana francese |Kazakistan |Micronesia |Riunione |Emirati Arabi Uniti (E.A.U.)  |
-|Austria |Polinesia francese |Kenya |Moldavia (Repubblica di) |Romania |Regno Unito |
-|Azerbaijan (Azərbaycan) |Georgia |Corea (Repubblica di) |Monaco | Federazione Russa |Stati Uniti  |
-|Bahamas |Germania |Kuwait (الكويت) |Mongolia |Ruanda | Uruguay |
-|Bahrein |Ghana |Kirghizistan |Montenegro | Saint Kitts and Nevis |Uzbekistan  |
-|Bangladesh |Gialtar |Lao |Montserrat | Saint Lucia |Città del Vaticano  |
+|Austria |Polinesia francese |Kenya |Repubblica di Moldova |Romania |Regno Unito |
+|Azerbaigian |Georgia |Repubblica di Corea |Monaco | Federazione russa |Stati Uniti  |
+|Bahamas |Germania |Kuwait |Mongolia |Ruanda | Uruguay |
+|Bahrein |Ghana |Kirghizistan |Montenegro | Saint Kitts e Nevis |Uzbekistan  |
+|Bangladesh |Gibilterra |Lao |Montserrat | Saint Lucia |Città del Vaticano  |
 |Barbados |Grecia |Lettonia |Marocco |Saint Vincent e Grenadine |Venezuela   |
 |Bielorussia |Groenlandia |Libano |Mozambico | San Marino |Vietnam  |
-|Belgio |Grenada |Lesotho |Myanmar | Arabia Saudita (المملكة العربية السعودية) | Isole Vergini (britanniche) |
-|Belize |Guadalupa |Libia |Namibia |Senegal | Isole Vergini (USA)  |
-|Benin |Guam |Liechtenstein |Nepal | Serbia | Isole Wallis e Futuna  |
+|Belgio |Grenada |Lesotho |Myanmar | Arabia Saudita | Isole Vergini Britanniche |
+|Belize |Guadalupa |Libia |Namibia |Senegal | Isole Vergini Americane  |
+|Benin |Guam |Liechtenstein |Nepal | Serbia | Wallis e Futuna  |
 |Bermuda |Guatemala |Lituania |Paesi Bassi |Singapore |Yemen |
-|Bhutan |Guinea |Lussemburgo |Antille olandesi |Slovacchia |Zambia  |
+|Bhutan |Guinea |Lussemburgo |Antille Olandesi |Slovacchia |Zambia  |
 |Bolivia |Guyana| |Nuova Caledonia |Slovenia |Zimbabwe |
-|Bosnia and Herzegovina (Bosna i Hercegovina) |Haiti ||Nuova Zelanda |Sudafrica | 
+|Bosnia ed Erzegovina |Haiti ||Nuova Zelanda |Sudafrica | 
 |Botswana |Honduras ||Nicaragua |Sud Sudan |
-|Brasile |Hong Kong - R.A.S. ||Niger |Spagna | 
-|Bunei Darussalam |Ungheria ||Nigeria |Sri Lanka | 
-|Bulgaria |||Isole Marianne Settentrionali |St. Pierre e Miquelon |
+|Brasile |RAS di Hong Kong ||Niger |Spagna | 
+|Brunei Darussalam |Ungheria ||Nigeria |Sri Lanka | 
+|Bulgaria |||Isole Marianne settentrionali |St. Pierre e Miquelon |
 |Burkina Faso |||Norvegia |Sudan |
 |Cambogia |||Oman |Suriname | 
 |Camerun ||||Swaziland |
 |Canada ||||Svezia | 
 |Cabo Verde ||||Svizzera |
-|Cayman Islands ||||Repubblica Araba di Siria |
+|Isole Cayman ||||Repubblica araba siriana |
 |Repubblica Centrafricana |
 |Cile |
 |Cina |
 |Colombia |
-|Comoro |
-|Congo (Repubblica democratica del) |
-|Congo (Repubblica popolare del) |
+|Comore |
+|Repubblica democratica popolare del Congo |
+|Repubblica popolare del Congo |
 |Costa Rica |
 |Costa d'Avorio |
 |Croazia |
