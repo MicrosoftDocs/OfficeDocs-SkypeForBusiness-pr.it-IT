@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4e009ccfb70e307e4a67f8331deabce51e229c0f
-ms.sourcegitcommit: 511238a3550ad0ff8d4bbd4600a252651ab6a654
+ms.openlocfilehash: 2cfe1c1af9fe85d307999289d318106c8ebc132a
+ms.sourcegitcommit: 92a278c0145798266ecbe052e645b2259bcbd62d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42615368"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892296"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -142,28 +142,31 @@ Per altre informazioni su teams e Office 365 ProPlus, vedere [come escludere tea
     - Installazione per utente (impostazione predefinita)
   
         ```console
-        msiexec /i <path_to_msi> /l*v <install_logfile_name>
+        msiexec /i <path_to_msi> /l*v <install_logfile_name> ALLUSERS=1
         ```
-    
+
         Questa è l'installazione predefinita, che installa teams nella cartella% AppData% User. A questo punto, la configurazione dell'immagine dorata è completa. I team non funzionano correttamente con l'installazione per utente in una configurazione non permanente.
-    
+
     - Installazione per computer
 
         ```console
-        msiexec /i <path_to_msi> /l*v <install_logfile_name> ALLUSER=1
+        msiexec /i <path_to_msi> /l*v <install_logfile_name> ALLUSER=1 ALLUSERS=1
         ```
 
         In questo articolo vengono installati Team nella cartella Program Files (x86) in un sistema operativo a 64 bit e nella cartella Program Files in un sistema operativo a 32 bit. A questo punto, la configurazione dell'immagine dorata è completa. Per le configurazioni non permanenti è necessario installare teams per computer.
- 
+
         La prossima sessione di accesso interattivo avvia team e richiede le credenziali.
 
-3. Disinstallare il file MSI dalla VM VDI. 
+    > [!NOTE]
+    > Questi esempi usano anche il parametro **ALLUSERS = 1** . Quando si imposta questo parametro, il programma di installazione a livello di computer teams viene visualizzato in programmi e funzionalità nel pannello di controllo e nelle app & funzionalità nelle impostazioni di Windows per tutti gli utenti del computer. Tutti gli utenti possono quindi disinstallare teams se hanno credenziali di amministratore. È importante comprendere la differenza tra **ALLUSERS = 1** e **ALLUSER = 1**. Il parametro **ALLUSERS = 1** può essere usato in ambienti non VDI e VDI e il parametro **ALLUSER = 1** viene usato solo in ambienti VDI per specificare un'installazione per singolo computer.
+
+3. Disinstallare il file MSI dalla VM VDI.
 
     Esistono due modi per disinstallare teams:  
   
     - Script di PowerShell (scelta consigliata)
-    
-    - Riga di comando: questo approccio rimuove teams, ma impedisce la reinstallazione di teams. Eseguire il comando seguente:
+
+    - Riga di comando:
   
       ```console
       msiexec /passive /x <path_to_msi> /l*v <uninstall_logfile_name>
