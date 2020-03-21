@@ -22,14 +22,14 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 description: Informazioni su come configurare il sistema telefonico per le code delle chiamate cloud con Microsoft teams.
-ms.openlocfilehash: 0447bf7aa8d935b214dc9db7c9a730d27fbb0b23
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: fc958aa1713a7cda12a054b3a029bfc1786b0955
+ms.sourcegitcommit: 92a278c0145798266ecbe052e645b2259bcbd62d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824790"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42897240"
 ---
-# <a name="create-a-cloud-call-queue"></a>Creare una coda delle chiamate nel cloud
+# <a name="create-a-cloud-call-queue"></a>Creare una coda di chiamata cloud
 
 Le code delle chiamate cloud possono essere fornite:
 
@@ -184,7 +184,7 @@ Gli agenti di chiamata selezionati devono essere:
 - Utenti di Skype for Business Server locale
 
   > [!NOTE]
-  > Questo vale anche se vuoi reindirizzare le chiamate agli utenti dell'organizzazione online. Questi utenti devono avere una licenza per il **sistema telefonico** e VoIP aziendale abilitato **o** avere un piano di chiamata. Per altre informazioni, vedere [assegnare licenze Skype for business](/Skype/SfbOnline/skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md), [assegnare licenze Microsoft teams](https://docs.microsoft.com/microsoftteams/assign-teams-licenses)o [quale piano per le chiamate è giusto per l'utente?](https://docs.microsoft.com/microsoftteams/calling-plan-landing-page)
+  > Questo vale anche se vuoi reindirizzare le chiamate agli utenti dell'organizzazione online. Questi utenti devono avere una licenza per il **sistema telefonico** e VoIP aziendale abilitato *o* avere un piano di chiamata. Per altre informazioni, vedere [assegnare licenze Skype for business](https://docs.microsoft.com/skypeforbusiness/skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses), [assegnare licenze Microsoft teams](https://docs.microsoft.com/microsoftteams/assign-teams-licenses)o [quale piano per le chiamate è giusto per l'utente?](https://docs.microsoft.com/microsoftteams/calling-plan-landing-page)
 
  Per abilitare un agente per VoIP aziendale, è possibile usare Windows PowerShell. Ad esempio, Esegui:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
 
