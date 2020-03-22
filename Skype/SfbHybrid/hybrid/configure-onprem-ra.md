@@ -13,12 +13,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Configurare un account delle risorse per Skype for Business Server 2019.
-ms.openlocfilehash: 9acd9df1d9c5372915ea51ff1b3b94e1f89c3311
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 14d2f161be54ac61c866597bdad141cf31138fbd
+ms.sourcegitcommit: 92a278c0145798266ecbe052e645b2259bcbd62d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42113259"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "42892306"
 ---
 # <a name="configure-resource-accounts"></a>Configurare gli account delle risorse
 
@@ -32,7 +32,7 @@ Se si dispone di un operatore automatico di messaggistica unificata di Exchange 
 
 Se l'operatore automatico del sistema telefonico o la coda di chiamata avranno bisogno di un numero di servizio, le varie dipendenze potranno essere soddisfatte nella sequenza seguente:
 
-1. Ottenere un numero di servizio
+1. Ottenere un numero di servizio.
 2. Ottenere un sistema telefonico gratuito- [licenza utente virtuale](/MicrosoftTeams/teams-add-on-licensing/virtual-user) o una licenza di sistema telefonico a pagamento da utilizzare con l'account delle risorse.
 3. Creare l'account della risorsa. Un operatore automatico o una coda di chiamata deve disporre di un account delle risorse associato.
 4. Attendere la sincronizzazione di Active Directory tra online e in locale.
@@ -71,7 +71,7 @@ La creazione di un account delle risorse che utilizza un numero di telefono rich
 3. Creare un account di risorse locale eseguendo il `New-CsHybridApplicationEndpoint` cmdlet per ogni operatore automatico del sistema telefonico o coda di chiamata, quindi assegnare un nome, un indirizzo SIP e così via.
 
     ``` Powershell
-    New-CsHybridApplicationEndpoint -DisplayName appinstance01 -SipAddress sip:appinstance01@contoso.com -OU "ou=Redmond,dc=litwareinc,dc=com"
+    New-CsHybridApplicationEndpoint -ApplicationID <GUID> -DisplayName appinstance01 -SipAddress sip:appinstance01@contoso.com -OU "ou=Redmond,dc=litwareinc,dc=com"
     ```
 
     Per ulteriori informazioni su questo comando, vedere [New-CsHybridApplicationEndpoint](https://docs.microsoft.com/powershell/module/skype/new-cshybridapplicationendpoint?view=skype-ps) .
@@ -103,12 +103,12 @@ La creazione di un account delle risorse che utilizza un numero di telefono rich
    Set-CsOnlineApplicationInstance -Identity appinstance01@contoso.com -OnpremPhoneNumber +14250000000
    ```
 
-L'account della risorsa avrà bisogno di un numero di telefono assegnato se verrà assegnato a un operatore automatico o una coda di chiamata di primo livello. I numeri di telefono dell'utente (abbonato) non possono essere assegnati a un account risorsa, è possibile utilizzare solo numeri di telefono a pedaggio o a pedaggio.
+   L'account della risorsa avrà bisogno di un numero di telefono assegnato se verrà assegnato a un operatore automatico o una coda di chiamata di primo livello. I numeri di telefono dell'utente (abbonato) non possono essere assegnati a un account risorsa, è possibile utilizzare solo numeri di telefono a pedaggio o a pedaggio.
 
-  È possibile assegnare un numero ibrido di routing diretto all'account delle risorse.  Per informazioni dettagliate, vedere [Plan Direct routing](/MicrosoftTeams/direct-routing-plan) .
+     È possibile assegnare un numero ibrido di routing diretto all'account delle risorse. Per ulteriori informazioni, vedere [Plan Direct routing](/MicrosoftTeams/direct-routing-plan).
 
-  > [!NOTE]
-  > I numeri di servizio di routing diretti assegnati agli account delle risorse per l'operatore automatico e le code di chiamata sono supportati solo per gli utenti e gli agenti di Microsoft teams.
+     > [!NOTE]
+     > I numeri di servizio di routing diretti assegnati agli account delle risorse per l'operatore automatico e le code di chiamata sono supportati solo per gli utenti e gli agenti di Microsoft teams.
 
 7. Creare l'operatore automatico del sistema telefonico o la coda di chiamata. Visualizzare uno tra:
 
@@ -195,7 +195,7 @@ La migrazione dalla messaggistica unificata di Exchange al sistema telefonico ri
 
 [Creare una coda delle chiamate nel cloud](/MicrosoftTeams/create-a-phone-system-call-queue)
 
-[Che cosa sono gli operatori automatici cloud?](/MicrosoftTeams/what-are-phone-system-auto-attendants)
+[Cosa sono gli operatori automatici cloud?](/MicrosoftTeams/what-are-phone-system-auto-attendants)
 
 [Configurare un operatore automatico cloud](/MicrosoftTeams/create-a-phone-system-auto-attendant)  
 
