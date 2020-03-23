@@ -17,150 +17,150 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare e gestire i canali privati in Microsoft teams.
+description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
 ms.openlocfilehash: 761d6a06da6bb02991e706f6e18ac8ce7d4106f4
 ms.sourcegitcommit: bb88ac0c9489bb47957e5ef1074b5df3126b6fdb
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/25/2020
 ms.locfileid: "42265631"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
-I canali privati in Microsoft teams creano spazi focalizzati per la collaborazione all'interno del team. Solo gli utenti del team proprietari o membri del canale privato possono accedere al canale. Tutti gli utenti, inclusi gli ospiti, possono essere aggiunti come membri di un canale privato, purché siano già membri del team.
+I canali privati di Microsoft Teams creano spazi dedicati per la collaborazione all'interno dei team. Solo gli utenti proprietari del team o membri del canale privato possono accedere al canale. Tutti gli utenti, inclusi gli utenti guest, possono essere aggiunti come membri a un canale privato, purché siano già membri del team.
 
-È consigliabile usare un canale privato se si vuole limitare la collaborazione a coloro che hanno bisogno di sapere o se si vuole facilitare la comunicazione tra un gruppo di persone assegnato a un progetto specifico, senza dover creare un team aggiuntivo da gestire.
+È possibile usare un canale privato se si vuole limitare la collaborazione agli utenti che hanno la necessità acquisire competenze o se si vuole agevolare le comunicazioni tra un gruppo di persone assegnato a un progetto specifico, senza dover gestire un altro team.
 
-Ad esempio, un canale privato è utile in questi scenari:
+Ad esempio, un canale privato è utile negli scenari seguenti:
 
-- Un gruppo di persone in un team vuole uno spazio concentrato per collaborare senza dover creare un team separato.
-- Un sottoinsieme di persone in un team vuole un canale privato per discutere le informazioni riservate, come i bilanci, il resourcing, il posizionamento strategico e così via.
+- Un gruppo di persone in un team desidera uno spazio mirato per collaborare senza dover creare un team distinto.
+- Un sottoinsieme di persone in un team vuole un canale privato per discutere di informazioni riservate, come budget, gestione delle risorse, posizionamento strategico e così via.
 
-Un'icona di blocco indica un canale privato. Solo i membri dei canali privati possono vedere e partecipare ai canali privati a cui vengono aggiunti.
+Un'icona a forma di lucchetto indica un canale privato. Solo i membri dei canali privati possono visualizzare e partecipare ai canali privati a cui vengono aggiunti.
 
-![Screenshot dei canali privati in un team](media/private-channels-in-teams.png)
+![Schermata di canali privati in un team](media/private-channels-in-teams.png)
 
-## <a name="what-you-need-to-know-about-private-channels"></a>Informazioni utili sui canali privati
+## <a name="what-you-need-to-know-about-private-channels"></a>Informazioni necessarie riguardo ai canali privati
 
-Attualmente i canali privati supportano connettori e schede (ad eccezione di stream, Planner e maschere). Stiamo lavorando al supporto delle app complete per i canali privati, incluse le estensioni di messaggistica e i bot.
+Attualmente, i canali privati supportano i connettori e le schede, ad eccezione di Stream, Planner e Forms. Stiamo lavorando per fornire un supporto completo delle app per i canali privati, tra cui le estensioni per la messaggistica e i bot.
 
-Ogni team può avere un massimo di 30 canali privati e ogni canale privato può avere un massimo di 250 membri. Il limite di 30 canali privati è in aggiunta al limite di canale standard di 200 per Team.
+Ogni team può avere un massimo di 30 canali privati e ogni canale privato può avere un massimo di 250 membri. Il limite di 30 canali privati si aggiunge al limite di 200 standard per ogni team.
 
 > [!NOTE]
-> Aggiungiamo continuamente funzionalità ai canali privati in modo da controllare le informazioni più aggiornate su app, riunioni di canale e scalare canali privati per i team di grandi dimensioni.
+> Vengono aggiunte continuamente funzionalità ai canali privati, ritornare per le informazioni più aggiornate relative ad app, riunioni di canale ed estensione dei canali privati per i team di grandi dimensioni.
 
 ## <a name="when-to-create-a-private-channel"></a>Quando creare un canale privato
 
-Per determinare se un canale privato è appropriato, prendere in considerazione le domande seguenti su chi deve collaborare e su quale sia la collaborazione.
+Per determinare se un canale privato è la soluzione adeguata, valutare le domande seguenti su chi deve collaborare e sull’oggetto della collaborazione.
 
-|Esiste già un team che ha queste persone come membri del team?  |Questo lavoro deve essere mantenuto privato dagli altri utenti?  |Ci sono più argomenti distinti da discutere?  |Recommendation  |
+|Esiste già un team che ha queste persone come membri?  |Il lavoro deve essere mantenuto privato rispetto agli altri utenti?  |Gli argomenti di discussione sono molteplici?  |Consiglio  |
 |---------|---------|---------|---------|
-|Sì      |Sì         |Supporto per più paesi         |Creare un canale privato nel team esistente o valutare la possibilità di creare canali privati dedicati per ogni argomento.         |
-|Sì     |Sì         |Supporto per riunioni private con ID conferenza di riunione dinamici         |Creare un canale privato nel team esistente.         |
-|Sì     |Supporto per riunioni private con ID conferenza di riunione dinamici         |No         |Creare un canale nel team esistente.         |
-|No     |No         |No         |Valutare la possibilità di creare un nuovo team.         |
-|No     |No         |Sì         |Valutare la possibilità di creare un nuovo team e quindi, in base alla riservatezza di ogni argomento, valutare la possibilità di creare canali separati standard o privati per ogni argomento.         |
-|No     |Sì         |Supporto per riunioni private con ID conferenza di riunione dinamici         |Creare un nuovo team e valutare la possibilità di creare un canale privato.         |
+|Sì      |Sì         |Sì         |Creare un canale privato nel team esistente o considerare la possibilità di creare canali privati dedicati per ogni argomento.         |
+|Sì     |Sì         |No         |Creare un canale privato nel team esistente.         |
+|Sì     |No         |No         |Creare un canale nel team esistente.         |
+|No     |No         |No         |È consigliabile creare un nuovo team.         |
+|No     |No         |Sì         |È consigliabile creare un nuovo team e quindi, in base alla riservatezza di ogni argomento, creare canali standard o privati distinti per ogni argomento.         |
+|No     |Sì         |No         |Creare un nuovo team e prendere in considerazione la creazione di un canale privato.         |
 
-Quando viene creato un canale privato, è collegato al team padre e non può essere spostato in un team diverso. Inoltre, i canali privati non possono essere convertiti in canali standard e viceversa.
+Quando viene creato un canale privato, questo viene collegato al team padre e non può essere spostato in un altro team. Inoltre, i canali privati non possono essere convertiti in canali standard e viceversa.
 
-## <a name="private-channel-creation-and-membership"></a>Creazione e appartenenza a canali privati
+## <a name="private-channel-creation-and-membership"></a>Creazione e appartenenza a un canale privato
 
-### <a name="who-can-create-private-channels"></a>Chi può creare canali privati?
+### <a name="who-can-create-private-channels"></a>Chi può creare i canali privati?
 
-Per impostazione predefinita, qualsiasi proprietario del team o membro del team può creare un canale privato. Gli utenti non possono crearli. La possibilità di creare canali privati può essere gestita a livello di team e a livello di organizzazione:
+Per impostazione predefinita, tutti i proprietari o i membri del team possono creare un canale privato. Gli utenti guest non possono crearli. La possibilità di creare canali privati può essere gestita a livello di team e a livello aziendale:
 
-- Nella scheda **Impostazioni** di un team i proprietari del team possono disattivare o attivare la possibilità per i membri di creare canali privati.
-- Come amministratore, puoi usare i [criteri](teams-policies.md) per controllare gli utenti dell'organizzazione autorizzati a creare canali privati.
+- Nella scheda **Impostazioni** di un team, i proprietari del team possono disattivare o attivare la possibilità per i membri di creare canali privati.
+- L'amministratore può usare i [criteri](teams-policies.md) per controllare quali utenti dell'organizzazione sono autorizzati a creare canali privati.
 
-La persona che crea un canale privato è il proprietario del canale privato e solo il proprietario del canale privato può aggiungere o rimuovere direttamente gli utenti. Un proprietario di canale privato può aggiungere qualsiasi membro del team a un canale privato creato, inclusi gli utenti. I membri di un canale privato hanno uno spazio di conversazione sicuro e quando vengono aggiunti nuovi membri possono vedere tutte le conversazioni (anche le conversazioni precedenti) nel canale privato.
+La persona che crea un canale privato è il proprietario del canale privato e solo il proprietario del canale privato può aggiungere o rimuovere direttamente le persone da quest'ultimo. Il proprietario di un canale privato può aggiungere qualsiasi membro del team a un canale privato creato, inclusi gli utenti guest. I membri di un canale privato dispongono di uno spazio di conversazione sicuro e, quando vengono aggiunti nuovi membri, questi possono vedere tutte le conversazioni nel canale privato, anche quelle avvenute in precedenza.
 
-### <a name="what-happens-when-a-team-member-leaves-or-is-removed-from-a-team"></a>Cosa succede quando un membro del team esce o viene rimosso da un team?
+### <a name="what-happens-when-a-team-member-leaves-or-is-removed-from-a-team"></a>Cosa succede quando un membro del team lascia o viene rimosso da un team?
 
-Se un membro del team esce o viene rimosso da un team, l'utente può anche lasciare o essere rimosso da tutti i canali privati del team. Se l'utente viene aggiunto di nuovo al team, deve essere aggiunto di nuovo ai canali privati del team.
+Se un membro del team lascia o viene rimosso da un team, tale utente lascerà o verrà rimosso anche da tutti i canali privati del team. Se l'utente viene aggiunto di nuovo al team, sarà necessario aggiungerlo di nuovo ai canali privati del team.
 
-### <a name="what-happens-when-a-private-channel-owner-is-removed-from-a-private-channel"></a>Cosa succede quando un proprietario di canale privato viene rimosso da un canale privato?
+### <a name="what-happens-when-a-private-channel-owner-is-removed-from-a-private-channel"></a>Cosa succede quando un proprietario di un canale privato viene rimosso da un canale privato?
 
-Un proprietario di canale privato non può essere rimosso dal client teams se è l'ultimo proprietario di uno o più canali privati.
+Il proprietario di un canale privato non può essere rimosso tramite il client di Teams, se si tratta dell'ultimo proprietario di uno o più canali privati.
 
-Se un proprietario di canale privato lascia l'organizzazione o se viene rimosso dal gruppo Office 365 associato al team, un membro del canale privato viene automaticamente innalzato di stato come proprietario del canale privato.
+Se il proprietario di un canale privato lascia l'organizzazione o se viene rimosso dal gruppo di Office 365 associato al team, un membro del canale privato viene automaticamente innalzato di livello per ricoprire il ruolo di proprietario del canale privato.
 
-### <a name="what-can-team-owners-and-team-members-see-in-a-private-channel"></a>Cosa possono vedere i proprietari e i membri del team in un canale privato?
+### <a name="what-can-team-owners-and-team-members-see-in-a-private-channel"></a>Cosa possono visualizzare i proprietari e i membri del team in un canale privato?
 
-I proprietari del team possono visualizzare i nomi di tutti i canali privati nel proprio team e possono anche eliminare qualsiasi canale privato nel team. (Un canale privato eliminato può essere ripristinato entro 30 giorni dopo l'eliminazione). I proprietari del team non possono visualizzare i file in un canale privato o le conversazioni e l'elenco dei membri di un canale privato, a meno che non siano membri del canale privato.
+I proprietari del team possono visualizzare i nomi di tutti i canali privati nel loro team nonché eliminare qualsiasi canale privato del team. È possibile ripristinare un canale privato entro 30 giorni dopo l’eliminazione. I proprietari dei team non possono visualizzare i file in un canale privato o le conversazioni e l'elenco dei membri di un canale privato, a meno che non siano membri di tale canale privato.
 
-La tabella seguente mostra chi può vedere cosa c'è in un canale privato.
+La tabella seguente mostra chi può visualizzare cosa in un canale privato.
 
-|Elemento  |Il proprietario del team può vedere |I membri del team possono vedere |
+|Elemento  |Il proprietario di un team può visualizzare |I membri di un team possono visualizzare |
 |---------|---------|---------|
-|Nome e descrizione    |Tutti i canali privati del team         |Solo i canali privati a cui vengono aggiunti         |
-|Conversazioni e schede     |Solo quando si aggiunge al canale privato         |Solo quando si aggiunge al canale privato         |
-|File e contenuto    |Solo quando si aggiunge al canale privato        |Solo quando si aggiunge al canale privato         |
-|Proprietario del canale privato    |Tutti i canali privati del team        |Solo quando si aggiunge al canale privato         |
-|Indicatore di data ultima attività  |Tutti i canali privati del team       |Solo quando si aggiunge al canale privato         |
+|Nome e descrizione    |Tutti i canali privati del team         |Solo i canali privati a cui sono stati aggiunti         |
+|Conversazioni e schede     |Solo se aggiunto al canale privato         |Solo se aggiunto al canale privato         |
+|File e contenuti    |Solo se aggiunto al canale privato        |Solo se aggiunto al canale privato         |
+|Proprietario di un canale privato    |Tutti i canali privati del team        |Solo se aggiunto al canale privato         |
+|Data e ora dell’ultima attività  |Tutti i canali privati del team       |Solo se aggiunto al canale privato         |
 
 ## <a name="manage-private-channels"></a>Gestire i canali privati
 
-Nella tabella seguente sono illustrate le azioni che i proprietari, i membri e gli utenti possono eseguire nei canali privati.
+Nella tabella seguente sono illustrate le azioni che i proprietari, i membri e gli utenti guest possono eseguire nei canali privati.
 
-|Azione  |Proprietario del team|Membro del team|Guest team|Proprietario del canale privato|Membro del canale privato|Guest Channel privato|
+|Azione  |Proprietario di un team|Membro di un team|Utente guest di un team|Proprietario di un canale privato|Membro di un canale privato|Utente guest di un canale privato|
 |---------|---------|---------|---------|---------|---------|---------|
-|Creare un canale privato|Sì<sup>1</sup>|Sì<sup>1, 2</sup>|No|N/D|N/D|N/D|
-|Eliminare un canale privato|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|
-|Uscire da un canale privato|N/D|N/D|N/D|Sì<sup>3</sup>|Sì|Supporto per più paesi|
-|Modifica canale privato|No|N/D|N/D|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|
-|Ripristinare il canale privato eliminato|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|
-|Aggiungere membri|No|N/D|N/D|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|
-|Modificare le impostazioni|No|N/D|N/D|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|
-|Gestire le schede e le app|No|N/D|N/D|Sì<sup>4</sup>|Sì<sup>5</sup>|No|
+|Creare un canale privato|Sì<sup>1</sup>|Sì<sup>1,2</sup>|No|N/D|N/D|N/D|
+|Eliminare un canale privato|Sì|No|No|Sì|No|No|
+|Lasciare un canale privato|N/D|N/D|N/D|Sì<sup>3</sup>|Sì|Sì|
+|Modificare un canale privato|No|N/D|N/D|Sì|No|No|
+|Ripristinare un canale privato eliminato|Sì|No|No|Sì|No|No|
+|Aggiungere membri|No|N/D|N/D|Sì|No|No|
+|Modificare le impostazioni|No|N/D|N/D|Sì|No|No|
+|Gestire schede e app|No|N/D|N/D|Sì<sup>4</sup>|Sì<sup>5</sup>|No|
 
-<sup>1</sup> supponendo che il criterio configurato dall'amministratore consenta all'utente di creare canali privati.<br>
-<sup>2</sup> ogni team ha un'impostazione che i proprietari del team possono attivare o disattivare per consentire ai membri del team di creare canali privati. I proprietari del team possono sempre creare canali privati.<br>
-<sup>3</sup> supponendo che il proprietario del canale privato non sia l'ultimo proprietario del canale. <br>
-<sup>4</sup> richiede al team di installare un'app per un canale privato per usarla.<br>
-<sup>5</sup> i proprietari di canali privati possono configurare questo.
+<sup>1</sup> Presupponendo che i criteri configurati dall'amministratore consentano all'utente di creare canali privati.<br>
+<sup>2</sup> Ogni team ha un'impostazione che può essere attivata o disattivata dai proprietari di un team per consentire ai membri di creare canali privati. I proprietari di un team possono sempre creare canali privati.<br>
+<sup>3</sup> Presupponendo che il proprietario del canale privato non sia l'ultimo proprietario del canale. <br>
+<sup>4</sup> È necessario che il team abbia installato un'app per usare un canale privato.<br>
+<sup>5</sup> I proprietari di canali privati possono configurare questa opzione.
 
-### <a name="manage-private-channel-membership-and-settings"></a>Gestire l'appartenenza e le impostazioni dei canali privati
+### <a name="manage-private-channel-membership-and-settings"></a>Gestire l'appartenenza e le impostazioni di un canale privato
 
-Ogni canale privato ha le proprie impostazioni, inclusa la possibilità di aggiungere e rimuovere membri, aggiungere schede e @mentioning per l'intero canale. Queste impostazioni sono indipendenti dalle impostazioni del team padre. Quando viene creato un canale privato, eredita le impostazioni dal team padre, dopodiché le impostazioni possono essere modificate indipendentemente dalle impostazioni del team padre.
+Ogni canale privato ha impostazioni personalizzate, tra cui la possibilità di aggiungere e rimuovere membri, aggiungere schede e @menzioni per l'intero canale. Queste impostazioni sono indipendenti dalle impostazioni del team padre. Quando viene creato un canale privato, questo eredita le impostazioni del team padre, che possono in seguito essere modificate indipendentemente dalle impostazioni del team padre.
 
-Il proprietario del canale privato può fare clic su **Gestisci canale**e quindi usare le schede **membri** e **Impostazioni** per aggiungere o rimuovere membri e modificare le impostazioni.  
+Il proprietario del canale privato può fare clic su **Gestisci canale** e quindi usare le schede **Membri** e **Impostazioni** per aggiungere o rimuovere membri e modificare le impostazioni.  
 
-![Screenshot delle impostazioni dei canali privati](media/private-channels-in-teams-channel-settings.png)
+![Schermata delle impostazioni di un canale privato](media/private-channels-in-teams-channel-settings.png)
 
 ## <a name="manage-the-life-cycle-of-private-channels"></a>Gestire il ciclo di vita dei canali privati
 
-Per informazioni su come gestire il ciclo di vita dei canali privati nell'organizzazione, vedere [gestire il ciclo di vita dei canali privati in teams](private-channels-life-cycle-management.md) . Questo include come controllare se gli utenti dell'organizzazione possono creare canali privati, come creare un canale privato per conto di un proprietario del team, come ottenere un elenco di tutti i messaggi di canale privato per scopi di archiviazione e controllo e altre attività di gestione.  
+Per informazioni su come gestire il ciclo di vita dei canali privati nell'organizzazione, vedere [Gestire il ciclo di vita dei canali privati in Teams](private-channels-life-cycle-management.md). Sono incluse informazioni su come controllare se gli utenti dell'organizzazione possono creare canali privati, come creare un canale privato per conto del proprietario del team, come ottenere un elenco di tutti i messaggi del canale privato a scopo di archiviazione e controllo e altre attività di gestione.  
 
-## <a name="private-channel-sharepoint-sites"></a>Siti di SharePoint per canali privati
+## <a name="private-channel-sharepoint-sites"></a>Siti di SharePoint del canale privato
 
-Ogni canale privato ha una raccolta siti di SharePoint ottimizzata per la condivisione di file e il provisioning rapido. La raccolta siti separata consente di garantire l'accesso ai file di canale privato è limitato solo ai membri del canale privato rispetto al sito del team in cui i proprietari del team hanno accesso a tutti gli asset all'interno della raccolta siti. Queste raccolte siti vengono create con una raccolta documenti per impostazione predefinita e possono essere facilmente migliorate per una raccolta siti completa tramite l' [interfaccia di gestione del sito](https://support.office.com/article/Enable-or-disable-site-collection-features-A2F2A5C2-093D-4897-8B7F-37F86D83DF04). Ogni raccolta siti viene creata nella stessa area geografica della raccolta siti del team padre. Questi siti leggeri hanno un ID modello personalizzato, "TEAMCHANNEL # 0", per semplificare la gestione tramite le API PowerShell e Graph.  In base alla progettazione non sono visibili nell'interfaccia di amministrazione di SharePoint.
+Ogni canale privato dispone di una raccolta siti di SharePoint ottimizzata per la condivisione di file e il provisioning rapido. La raccolta siti separata consente di garantire l'accesso ai file del canale privato solo ai membri del canale privato, diversamente dal sito del team in cui i proprietari del team hanno accesso a tutte le risorse della raccolta siti. Queste raccolte siti vengono create con una raccolta documenti per impostazione predefinita e possono essere facilmente migliorate per ottenere una raccolta siti completa tramite l'[interfaccia di gestione dei siti](https://support.office.com/article/Enable-or-disable-site-collection-features-A2F2A5C2-093D-4897-8B7F-37F86D83DF04). Ogni raccolta siti viene creata nella stessa area geografica della raccolta siti del team padre. Questi siti semplificati hanno un ID modello personalizzato, "TEAMCHANNEL#0", per semplificare la gestione con PowerShell e API Graph.  Per impostazione di progettazione, non sono visibili nell'interfaccia di amministrazione di SharePoint.
 
-Per contenere un numero maggiore di raccolte siti per tenant, il limite è aumentato da 500.000 a 2 milioni. Una raccolta siti canale privato sincronizza la classificazione dei dati ed eredita le autorizzazioni di accesso guest dalla raccolta siti del team padre.  L'appartenenza al proprietario della raccolta siti e ai gruppi di membri viene mantenuta sincronizzata con l'appartenenza del canale privato all'interno di teams. Tutte le modifiche apportate all'appartenenza al proprietario o ai gruppi di membri in SharePoint Online verranno ripristinate automaticamente nell'appartenenza a un canale privato entro quattro ore. In scenari in cui alcuni utenti devono accedere ai documenti senza dover accedere ai messaggi del canale privato, aggiungerli al gruppo visitatori del sito o a un nuovo gruppo separato da proprietari e membri.
+Per ospitare un maggior numero di raccolte siti per tenant, il limite è stato aumentato da 500.000 a 2 milioni. Una raccolta siti di un canale privato sincronizza la classificazione dei dati ed eredita le autorizzazioni di accesso guest dalla raccolta siti del team padre.  L'appartenenza ai gruppi dei membri e di proprietari della raccolta siti viene mantenuta sincronizzata con quella ai canali privati in Teams. Le modifiche apportate all'appartenenza ai gruppi di membri o di proprietari in SharePoint Online verranno trasferite automaticamente all'appartenenza ai canali privati entro quattro ore. Negli scenari in cui alcuni utenti hanno l'esigenza di accedere ai documenti senza bisogno di accedere ai messaggi del canale privato, è possibile aggiungerli al gruppo Visitatori nel sito o a un nuovo gruppo distinto da quelli di Proprietari e Membri.
 
-Teams gestisce il ciclo di vita della raccolta siti di SharePoint del canale privato. Se la raccolta siti viene eliminata all'esterno dei team, un processo in background ripristina il sito entro quattro ore, purché il canale privato sia ancora attivo. Se il sito viene eliminato e eliminato in maniera difficile, viene effettuato il provisioning di una nuova raccolta siti per il canale privato.
+Teams gestisce il ciclo di vita della raccolta siti di SharePoint del canale privato. Se la raccolta siti viene eliminata all'esterno di Teams, un processo in background ripristina il sito entro quattro ore, a condizione che il canale privato sia ancora attivo. Se il sito viene eliminato ed eliminato definitivamente, viene eseguito il provisioning di una nuova raccolta siti per il canale privato.
 
-Se viene ripristinato un canale privato o un team che contiene un canale privato, le raccolte siti verranno ripristinate. Se viene ripristinata una raccolta siti del canale privato ed è oltre la finestra di eliminazione morbida di 30 giorni per il canale privato, la raccolta siti funziona come raccolta siti autonoma.
+Se un canale privato o un team che contiene un canale privato viene ripristinato, le raccolte siti vengono ripristinate con esso. Se viene ripristinata una raccolta siti del canale privato al di là del periodo di eliminazione temporanea di 30 giorni per il canale privato, la raccolta siti funziona come raccolta siti autonoma.
 
 ## <a name="private-channel-message-compliance-records"></a>Record di conformità dei messaggi del canale privato
 
-I record per i messaggi inviati in un canale privato vengono recapitati alla cassetta postale di tutti i membri del canale privato, invece che a una cassetta postale del gruppo. I titoli dei record sono formattati per indicare il canale privato da cui sono stati inviati.
+I record per i messaggi inviati in un canale privato vengono recapitati nella cassetta postale di tutti i membri del canale privato, anziché in una cassetta postale di gruppo. I titoli dei record vengono formattati in modo da indicare da quale canale privato sono stati inviati.
 
-Per altre informazioni sull'esecuzione di una ricerca di eDiscovery per i messaggi di canale privato, vedere [eDiscovery di canali privati](ediscovery-investigation.md#ediscovery-of-private-channels).
+Per altre informazioni su come eseguire una ricerca di eDiscovery per i messaggi del canale privato, vedere [eDiscovery di canali privati](ediscovery-investigation.md#ediscovery-of-private-channels).
 
-## <a name="considerations-around-access-in-private-channels"></a>Considerazioni su Access in canali privati
+## <a name="considerations-around-access-in-private-channels"></a>Considerazioni sull'accesso nei canali privati
 
-Quando viene creato un nuovo blocco appunti di OneNote in un canale privato, gli altri utenti possono comunque accedere al blocco appunti perché il comportamento è uguale alla condivisione dell'accesso a qualsiasi altro elemento in un sito di SharePoint di un canale privato con un utente.
+Quando viene creato un nuovo blocco appunti di OneNote in un canale privato, altri utenti possono comunque ottenere l’accesso al blocco appunti poiché si tratta di un comportamento equivalente alla condivisione con un utente dell'accesso a qualsiasi altro elemento in un sito di SharePoint di un canale privato.
 
-Se a un utente viene concesso l'accesso a un blocco appunti in un canale privato tramite SharePoint, la rimozione dell'utente dal team o dal canale privato non rimuoverà l'accesso dell'utente al blocco appunti.
+Se a un utente viene concesso l'accesso a un blocco appunti in un canale privato tramite SharePoint, la rimozione dell'utente dal team o dal canale privato non rimuove l'accesso di tale utente al blocco appunti.
 
-Se un blocco appunti esistente viene aggiunto come scheda a un canale privato, l'accesso al canale privato non viene modificato. Questo significa quanto segue:
+Se un blocco appunti esistente viene aggiunto come scheda a un canale privato, l'accesso al canale privato non viene modificato. Questo significa che:
 
-- Non tutti nel canale privato avranno accesso al blocco appunti per impostazione predefinita. Il motivo è che potrebbe non avere accesso alla posizione in cui è ospitato il blocco appunti, ad esempio il sito di SharePoint di un altro team.
-- Gli utenti che non sono membri del canale privato possono visualizzare il blocco appunti.  
+- Non tutti i membri del canale privato avranno accesso al blocco appunti per impostazione predefinita. Questo è dovuto al fatto che potrebbero non avere accesso al percorso in cui è ospitato il blocco appunti, ad esempio il sito di SharePoint di un altro team.
+- Utenti non membri del canale privato possono visualizzare il blocco appunti.  
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica di team e canali in teams](teams-channels-overview.md)
-- [Panoramica di PowerShell Teams](teams-powershell-overview.md)
-- [Usare l'API Microsoft Graph per lavorare con i team](https://docs.microsoft.com/graph/api/resources/teams-api-overview?view=graph-rest-1.0)
+- [Panoramica su team e canali in Teams](teams-channels-overview.md)
+- [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
+- [Usare l'API Microsoft Graph per lavorare con Teams](https://docs.microsoft.com/graph/api/resources/teams-api-overview?view=graph-rest-1.0)
