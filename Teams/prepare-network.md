@@ -16,18 +16,18 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 42f0ec656036849aa87d9d4e7e092f4b5d3a505f
-ms.sourcegitcommit: 4306083e7b1dc2e7a0d02b682790450934dada50
+ms.openlocfilehash: d85bb4ba32bf83d3c774a2b6700a96c7e35dcb2a
+ms.sourcegitcommit: 545e466f1fa9163bb00cc96c8db70a70b02af697
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/14/2020
-ms.locfileid: "42639463"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42935259"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
 
 ## <a name="network-requirements"></a>Requisiti di rete
 
-Se è già stata [ottimizzata la rete per Office 365](https://docs.microsoft.com/Office365/Enterprise/assessing-network-connectivity), è probabile che sia pronta per Microsoft teams. In ogni caso, prima di iniziare l'implementazione del team, verificare quanto segue:
+Se è già stata [ottimizzata la rete per Office 365](https://docs.microsoft.com/Office365/Enterprise/assessing-network-connectivity), è probabile che sia pronta per Microsoft teams. In ogni caso, e soprattutto se si distribuisce rapidamente team come primo carico di lavoro di Office 365 per supportare i **dipendenti remoti** : verificare quanto segue prima di iniziare l'implementazione del team.
 
 1.  Tutte le posizioni hanno accesso a Internet (in modo che possano connettersi a Office 365)? Come minimo, oltre al normale traffico Web, verificare di avere aperto gli elementi seguenti per tutte le posizioni, per i supporti in teams:
 
