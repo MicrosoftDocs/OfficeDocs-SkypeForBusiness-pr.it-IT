@@ -19,12 +19,12 @@ ms.custom:
 description: Video di formazione, Deck PowerPoint, esercitazioni e altre risorse per gli amministratori che spiegano come pianificare, distribuire ed eseguire Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 217f099fb773d3f8468e214c2e1e9ef33990d816
-ms.sourcegitcommit: 86366b66b15870fe83cbb76e1ae7aa1ce9b3bfe1
+ms.openlocfilehash: 2794891da78e8b8028bc18d82715a27d5c2eb78d
+ms.sourcegitcommit: 613665c866f6fd0febfa6e26ad718241cdfbb207
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42858341"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42937610"
 ---
 # <a name="admin-training-for-microsoft-teams"></a>Formazione per amministratori per Microsoft Teams
 
@@ -105,7 +105,7 @@ Usare le risorse di formazione per istruirsi sui team, insegnare ad altri o eseg
 | Chiamate di emergenza dinamiche | [Video](https://aka.ms/teams-dec) |  [Presentazione](https://aka.ms/teams-dec-deck) |
 | Eventi dinamici | [Video](https://aka.ms/teams-live-events-session) | [Presentazione](https://aka.ms/teams-live-events-deck) |
 | Introduzione al sistema telefonico | [Video](https://aka.ms/teams-phone-system) | [Presentazione](https://aka.ms/teams-phone-system-deck) |
-| Routing diretto | [Video](https://aka.ms/teams-direct-routing) | [Presentazione](https://aka.ms/teams-direct-routing-deck) |
+| Routing diretto | [Video 1: pianificazione del routing diretto in teams](https://aka.ms/teams-dr-plan)<br>[Video 2: configurazione e gestione del routing diretto in teams](https://aka.ms/teams-dr-config)<br>Video 3: migrazione al routing diretto in teams: <strong> <font color="#4B53BC">presto disponibile</font></strong>  | [Presentazione](https://aka.ms/teams-direct-routing-deck) |
 | Aggiornamento da Skype for Business a Teams | [Video 1: Introduzione all'aggiornamento](https://aka.ms/teams-upgrade-intro)</br>[Video 2: pianificare l'aggiornamento](https://aka.ms/teams-upgrade-plan)</br>[Video 3: coesistenza e interoperabilità](https://aka.ms/teams-upgrade-coexistence-interop)</br>[Video 4: esperienza dell'amministratore](https://aka.ms/teams-upgrade-admin) | [Presentazione](https://aka.ms/teams-upgrade-deck)|
 
 <h2>Guide introduttive</h2>
