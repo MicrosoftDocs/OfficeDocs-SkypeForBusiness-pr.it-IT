@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Leggere questo argomento per informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente a Microsoft Phone System.
-ms.openlocfilehash: 0e15f8e76bc9512a28311764c39e34b45131b9d3
-ms.sourcegitcommit: 86366b66b15870fe83cbb76e1ae7aa1ce9b3bfe1
+ms.openlocfilehash: 5efed6ed21e6eb4bfa4e2ae89e625595b0307ada
+ms.sourcegitcommit: 545e466f1fa9163bb00cc96c8db70a70b02af697
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42858581"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42928439"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -257,7 +257,7 @@ Il nome FQDN sip.pstnhub.gov.teams.microsoft.us verrà risolto in uno degli indi
 
 |**Traffico**|**Da**|**A**|**Porta di origine**|**Porta di destinazione**|
 |:--- |:--- |:--- |:--- |:--- |
-|SIP/TLS|Proxy SIP|SBC|1024-65535|Definito nel SBC (per Office 365 GCC High/DoD solo le porte 5061 e 5062 devono essere usate)|
+|SIP/TLS|Proxy SIP|SBC|1024-65535|Definita in SBC (per Office 365 è necessario usare solo la porta 5061 di GCC High/DoD)|
 SIP/TLS|SBC|Proxy SIP|Definita nell'SBC|5061|
 ||||||
 
