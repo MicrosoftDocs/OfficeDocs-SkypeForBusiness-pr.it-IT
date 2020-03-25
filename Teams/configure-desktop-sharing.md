@@ -11,14 +11,14 @@ ms.service: msteams
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Configurare un criterio di riunione per consentire agli utenti di condividere i loro desktop in chat o riunioni di Teams
+description: Configurare un criterio di riunione per consentire agli utenti di condividere i propri desktop nelle chat o nelle riunioni di Teams
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 366aaeb4f48670ae04d4b53d21196ef2d9e81fb4
 ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/06/2020
 ms.locfileid: "41825544"
@@ -26,43 +26,43 @@ ms.locfileid: "41825544"
 <a name="configure-desktop-sharing-in-microsoft-teams"></a>Configurare la condivisione desktop in Microsoft Teams
 ============================================
 
-Condivisione desktop consente agli utenti di presentare una schermata o un'app durante una riunione o una chat. Gli amministratori possono configurare la condivisione dello schermo in Microsoft teams per consentire agli utenti di condividere un'intera schermata, un'app o un file. Puoi consentire agli utenti di dare o richiedere il controllo, concedere la condivisione di PowerPoint, aggiungere una lavagna e consentire le note condivise. È anche possibile specificare se gli utenti anonimi o esterni possono richiedere il controllo della schermata condivisa.
+La condivisione del desktop consente agli utenti di presentare una schermata o un'app durante una riunione o in una chat. Gli amministratori possono configurare la condivisione dello schermo in Microsoft Teams per consentire agli utenti di condividere l'intero schermo, un'app o un file. È possibile consentire agli utenti di fornire o richiedere il controllo, consentire la condivisione di PowerPoint, aggiungere una lavagna e consentire le note condivise. Inoltre, è possibile configurare se consentire agli utenti esterni o anonimi di richiedere il controllo dello schermo condiviso.
 
-Per configurare la condivisione dello schermo, è possibile creare un nuovo criterio per le riunioni e assegnarlo agli utenti che si vuole gestire.
+Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni e assegnarlo agli utenti da gestire.
 
-**Nell'interfaccia di [amministrazione di Microsoft teams](https://admin.teams.microsoft.com/)**
+**Nell'[interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com/)**
 
-1. Selezionare **** > **criteri riunione**riunioni.
+1. Selezionare **Riunioni** > **Criteri riunione**.
 
-    ![Schermata che mostra i criteri riunione selezionati](media/configure-desktop-sharing-image1.png)
+    ![Screenshot che mostra Criteri riunione selezionato](media/configure-desktop-sharing-image1.png)
 
-2. Nella pagina **criteri riunione** selezionare **nuovo criterio**.
+2. Nella pagina **Criteri riunione**, selezionare **Nuovo criterio**.
 
-    ![Schermata che mostra il messaggio criteri riunione](media/configure-desktop-sharing-image2.png)
+    ![Screenshot che mostra il messaggio di Criteri riunione](media/configure-desktop-sharing-image2.png)
 
-3. Assegnare un titolo univoco ai criteri e immettere una breve descrizione.
+3. Assegnare un titolo univoco al criterio e immettere una breve descrizione.
 
-4. In **condivisione contenuto**scegliere una **modalità di condivisione dello schermo** nell'elenco a discesa:
+4. In **Condivisione di contenuti**, scegliere una **Modalità di condivisione dello schermo** nell'elenco a discesa:
 
-   - **Intero schermo** : consente agli utenti di condividere l'intero desktop.
-   - **Singola applicazione** : consente agli utenti di limitare la condivisione dello schermo a una singola applicazione attiva.
-   - **Disabled** -disattiva la condivisione dello schermo.
+   - **Schermo intero**: consente agli utenti di condividere l'intero desktop.
+   - **Applicazione singola**: consente agli utenti di limitare la condivisione dello schermo a una singola applicazione attiva.
+   - **Disabilitata**: disabilita la condivisione dello schermo.
 
-    ![Schermata che mostra le opzioni della modalità di condivisione](media/configure-desktop-sharing-image3.png)
+    ![Screenshot che mostra le opzioni di condivisione dello schermo](media/configure-desktop-sharing-image3.png)
 
-5. Attivare o disattivare le impostazioni seguenti:
+5. Abilitare o disabilitare le impostazioni seguenti:
 
-    - **Consentire a un partecipante di dare o richiedere il controllo** , consente ai membri del team di concedere o richiedere il controllo del desktop o dell'applicazione del relatore.
-    - **Consentire a un partecipante esterno di dare o richiedere il controllo** , consente agli utenti esterni (federati) di concedere o richiedere il controllo del desktop o dell'applicazione del relatore.
-    - **Consenti condivisione di PowerPoint** : consente agli utenti di creare riunioni che consentano la carica e la condivisione delle presentazioni di PowerPoint.
-    - **Consenti lavagna** : consente agli utenti di condividere una lavagna.
-    - **Consenti note condivise** : consente agli utenti di prendere note condivise.
+    - **Consentire a un partecipante di concedere o richiedere il controllo**: consente ai membri del team di concedere o richiedere il controllo dell'applicazione o del desktop del relatore.
+    - **Consentire a un partecipante esterno di concedere o richiedere il controllo**: consente ai guest e agli utenti (federati) esterni di concedere o richiedere il controllo dell'applicazione o del desktop del relatore.
+    - **Consentire la condivisione di PowerPoint**: consente di creare riunioni nelle quali è possibile caricare e condividere le presentazioni di PowerPoint.
+    - **Consentire la lavagna**: consente agli utenti di condividere una lavagna.
+    - **Consentire le note condivise**: consente agli utenti di creare note condivise.
 
-6. Fai clic su **Salva**.
+6. Fare clic su **Salva**.
 
 ## <a name="use-powershell-to-configure-shared-desktop"></a>Usare PowerShell per configurare il desktop condiviso
 
-Puoi anche usare il cmdlet [set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps) per controllare la condivisione del desktop. Impostare i parametri seguenti:
+Inoltre, è possibile usare il cmdlet [Set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps) per controllare la condivisione del desktop. Impostare i seguenti parametri:
 
 - Descrizione
 - ScreenSharingMode
@@ -72,5 +72,5 @@ Puoi anche usare il cmdlet [set-CsTeamsMeetingPolicy](https://docs.microsoft.com
 - AllowWhiteboard
 - AllowSharedNotes
 
-[Altre informazioni sull'uso del cmdlet csTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps).
+[Altre informazioni sull'utilizzo del cmdlet csTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps).
 
