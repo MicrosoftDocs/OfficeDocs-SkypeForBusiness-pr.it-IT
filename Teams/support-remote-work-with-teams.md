@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare gli utenti dell'organizzazione che lavorano da remoto a essere produttivi con Microsoft Teams, in particolare se lavorano da casa in risposta all'epidemia di COVID-19 (Coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 85fc97c801495c05a4b5a8f68fe508ef7a7b08af
-ms.sourcegitcommit: 92a278c0145798266ecbe052e645b2259bcbd62d
+ms.openlocfilehash: 844aef84633c767131b60158e634b0f6f3fe1cd2
+ms.sourcegitcommit: 545e466f1fa9163bb00cc96c8db70a70b02af697
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892336"
+ms.lasthandoff: 03/24/2020
+ms.locfileid: "42928409"
 ---
 # <a name="support-remote-workers-using-microsoft-teams"></a>Supporto per i lavoratori remoti con Microsoft Teams
 
@@ -77,6 +77,8 @@ Condividere queste risorse e video con gli utenti finali per aiutarli a iniziare
 
    - La larghezza di banda limitata può influire sulla qualità audio nelle riunioni di Teams. Per garantire la miglior esperienza di riunione in condizioni di larghezza di banda ridotta, invitare gli utenti a limitare il video e usare la rete PSTN per le chiamate e l'audio della riunione. 
 
+   - Leggere questo blog tempestivo (6 marzo 2020) [Come ottimizzare rapidamente il traffico di Office 365 per il personale remoto e ridurre il carico nell'infrastruttura](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571).
+   
    - Se si è in Cina, vedere [Ottimizzazione delle prestazioni del tenant globale di Office 365 per utenti della Cina](https://docs.microsoft.com/Office365/Enterprise/office-365-networking-china).
 
    - Se si ha bisogno di assistenza per la risoluzione dei problemi relativi alla qualità delle chiamate o delle riunioni, seguire le indicazioni in [Problema noto - Cina: chiamare ID conferenza di Skype for Business/Teams](#known-issue---china-dialing-into-skype-for-business-or-teams-conference-ids) in fondo all'articolo.
