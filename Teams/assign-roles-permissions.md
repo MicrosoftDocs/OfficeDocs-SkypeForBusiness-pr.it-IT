@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cd9ca2fc26c58087992cdee18dee1b1d869a6fa1
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: f411de7f0c373e82b450cd41b828fd591777311b
+ms.sourcegitcommit: 4d376449a75928282373598647f2b82127909c4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826104"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978458"
 ---
 <a name="assign-team-owners-and-members-in-microsoft-teams"></a>Assegnare proprietari e membri del team in Microsoft Teams
 =================================================
@@ -48,9 +48,7 @@ La tabella seguente mostra la differenza tra le autorizzazioni di un proprietari
 |        ***Eliminare un canale privato**         |    Sì     |    No|
 |          **Aggiungere membri**          |  Sì<sup>3</sup>   |     N.<sup>4</sup>    |
 |          **Richiesta di aggiunta di membri**          |  N/D   |     Sì<sup>5</sup>     |
-|           **Aggiungere schede**            |    Sì     |    Sì<sup>2</sup>|
-|        **Aggiungere connettori**         |    Sì     |    Sì<sup>2</sup>|
-|           **Aggiungere bot**            |    Sì     |    Sì<sup>2</sup>|
+|           **Aggiungere app**            |    Sì     |    Sì<sup>2</sup>|
 
 <sup>1</sup> i proprietari del team possono creare Teams a meno che non siano stati limitati. [Autorizzazioni per creare teams di](#permissions-to-create-teams) seguito.<br>
 <sup>2</sup> un proprietario può disattivare questi elementi a livello di Team, in questo caso i membri non avrebbero accesso.<br>
@@ -83,4 +81,4 @@ Per impostazione predefinita, tutti gli utenti con una cassetta postale in Excha
 ||||
 |---------|---------|---------|
 | ![Icona che rappresenta un punto decisionale](media/Assign_roles_and_permissions_in_Microsoft_Teams_image2.png)     |Punto decisionale         |Tutti gli utenti di Microsoft teams saranno in grado di creare Teams (scelta consigliata)?         |
-| ![Icona che rappresenta i passaggi successivi](media/Assign_roles_and_permissions_in_Microsoft_Teams_image3.png)    |Operazioni successive         |Modificare le autorizzazioni predefinite per chi può creare gruppi di Office 365 se è necessario limitare chi può creare Teams         |
+| ![Icona che rappresenta i passaggi successivi](media/Assign_roles_and_permissions_in_Microsoft_Teams_image3.png)    |Passaggi successivi         |Modificare le autorizzazioni predefinite per chi può creare gruppi di Office 365 se è necessario limitare chi può creare Teams         |

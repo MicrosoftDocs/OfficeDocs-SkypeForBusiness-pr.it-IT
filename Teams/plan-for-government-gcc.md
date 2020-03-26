@@ -17,16 +17,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a1b97e82edd97079c1e4615e5bb7fcf4a1eb2fea
-ms.sourcegitcommit: b6eb22e96be5fb18984f1dd05e4eb8f2cfc032f6
+ms.openlocfilehash: 97f7987d450b5a7b1fc23c39ed1e96ee0f953ae9
+ms.sourcegitcommit: 4d376449a75928282373598647f2b82127909c4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/26/2020
-ms.locfileid: "42968661"
+ms.locfileid: "42978508"
 ---
 # <a name="plan-for-microsoft-365-government---gcc-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-GCC
 
-Questa guida è per i professionisti IT che guidano le distribuzioni di Office 365 in Stati Uniti, enti governativi federali, statali, locali, tribali o territoriali o altre entità che gestiscono i dati soggetti alle normative governative e ai requisiti, dove l'uso di Microsoft 365 Government-GCC è appropriato per soddisfare questi requisiti.
+Questa guida è per i professionisti IT che guidano le distribuzioni di Office 365 in Stati Uniti, enti governativi federali, statali, locali, tribali o territoriali o altre entità che gestiscono i dati soggetti alle normative governative e ai requisiti, dove l'uso di Microsoft 365 Government-GCC è appropriato per soddisfare questi requisiti. Nuovo 26 marzo 2020: non perdere la Guida introduttiva scaricabile [per GCC](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/Quick-Start-Guide-for-GCC.pdf?raw=true).
 
 > [!IMPORTANT]
 > Microsoft teams sta vivendo un enorme picco nelle chiamate online e nelle conferenze audio/video a causa della pandemia di coronavirus (COVID-19).<br/>
@@ -35,7 +35,7 @@ Questa guida è per i professionisti IT che guidano le distribuzioni di Office 3
 > 
 >Questi server audio/video si trovano all'interno dei server Microsoft Azure FedRAMP High Accreditation Boundary negli Stati Uniti e non archiviano il contenuto del cliente. Tuttavia, questi server elaborano audio e video per le chiamate e le conferenze e operano sotto il nostro personale commerciale durante questo periodo di interim.<br/>
 > 
->Il personale qualificato e schermato sta monitorando questi server per un potenziale accesso ai dati dei clienti, rivedendo eventuali log-ons interattivi in questi server. Il personale qualificato soddisfa i requisiti di GCC per accedere al contenuto del cliente. Per informazioni dettagliate sui requisiti di selezione, vedere la [Descrizione del servizio GCC](Office365-ServiceDescriptions\office-365-platform-service-description\office-365-us-government\gcc.md).<br/>
+>Il personale qualificato e schermato sta monitorando questi server per un potenziale accesso ai dati dei clienti, rivedendo eventuali log-ons interattivi in questi server. Il personale qualificato soddisfa i requisiti di GCC per accedere al contenuto del cliente. Per informazioni dettagliate sui requisiti di selezione, vedere la [Descrizione del servizio GCC](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/gcc).<br/>
 > 
 >Grazie per il tuo supporto mentre procediamo per garantire che i nostri servizi rimangano disponibili e affidabili in questi tempi straordinari.<br/>
 

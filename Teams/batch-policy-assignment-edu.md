@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare l'assegnazione di criteri batch per assegnare i criteri a set di grandi dimensioni degli utenti nell'Istituto di istruzione in blocco per scopi scolastici remoti (Teleschool, tele-scuola).
 f1keywords: ''
-ms.openlocfilehash: 5e3ee25bf4fadea595fc224b2944a12c279f9c59
-ms.sourcegitcommit: 92a278c0145798266ecbe052e645b2259bcbd62d
+ms.openlocfilehash: 7e297b6a4b99162fb50564d4f552a06f0dc41a10
+ms.sourcegitcommit: 4d376449a75928282373598647f2b82127909c4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892276"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978518"
 ---
 # <a name="assign-policies-to-large-sets-of-users-in-your-school"></a>Assegnare criteri a grandi gruppi di utenti nella tua scuola
 
@@ -161,7 +161,7 @@ Get-CsUserPolicyAssignment -Identity hannah@contoso.com
 
 ## <a name="faq"></a>Domande frequenti
 
-**Voglio assicurarmi che tutti gli utenti che sono studenti, personale ed educatori ottengano automaticamente le licenze assegnate. Come è possibile eseguire questa operazione?**
+**Voglio assicurarmi che tutti gli utenti che sono studenti, personale ed educatori ottengano automaticamente i criteri assegnati. Come è possibile eseguire questa operazione?**
 
 Il team del prodotto teams sta lavorando per supportare l'assegnazione di criteri ai gruppi di sicurezza. A questo punto è possibile creare gruppi per studenti e docenti e quindi i criteri appropriati per i gruppi. Tieni presente che le assegnazioni degli utenti esplicite, ad esempio i criteri assegnati con questa esercitazione, sostituiranno i criteri ereditati da un gruppo. Quando questa funzionalità è supportata, verranno fornite altre istruzioni su come usare l'assegnazione dei criteri per raggruppare e aggiornare gli utenti per assicurarsi che vengano assegnati i criteri di gruppo ereditati.
 

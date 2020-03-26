@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 13c3267378d4e8fbc5b3d3631606cf0824ea7a44
-ms.sourcegitcommit: 5fbb57c5f0692afcb8e65516c63b96814f51ca65
+ms.openlocfilehash: ced9ab01c5f33ef2b8095079443c447c301ee742
+ms.sourcegitcommit: 4d376449a75928282373598647f2b82127909c4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417851"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978598"
 ---
 # <a name="quality-of-experience-review-guide"></a>Guida sul controllo della qualità dell'esperienza
 
@@ -68,13 +68,13 @@ Questa tabella Mostra gli elementi che ogni ruolo può eseguire in Call Quality 
 
 |  |Visualizzare i report  |Visualizzare i campi EUII  |Creare report  |Caricare i dati dell'edificio  |
 |---------|:-------:|:-------:|:-------:|:-------:|
-|Amministratore globale di Office 365     |Sì         |Sì         |Sì         |Supporto per più paesi         |
-|Amministratore del servizio Teams     |Sì         |Sì         |Sì         |Supporto per più paesi         |
-|Amministratore comunicazioni Teams     |Sì         |Sì         |Sì         |Supporto per più paesi         |
-|Tecnico supporto comunicazioni Teams     |Sì         |Sì         |Sì         |No         |
+|Amministratore globale di Office 365     |Sì         |Supporto per più paesi         |Supporto per più paesi         |Supporto per più paesi         |
+|Amministratore del servizio Teams     |Sì         |Supporto per più paesi         |Supporto per più paesi         |Supporto per più paesi         |
+|Amministratore comunicazioni Teams     |Sì         |Supporto per più paesi         |Supporto per più paesi         |Supporto per più paesi         |
+|Tecnico supporto comunicazioni Teams     |Sì         |Supporto per più paesi         |Sì         |No         |
 |Specialista supporto comunicazioni Teams     |Sì         |No         |Sì         |No         |
-|Amministratore di Skype for business     |Sì         |Sì         |Sì         |Supporto per più paesi         |
-|Lettore globale di Azure AD |Sì         |Sì         |Sì         |No         |
+|Amministratore di Skype for business     |Sì         |Supporto per più paesi         |Supporto per più paesi         |Supporto per più paesi         |
+|Lettore globale di Azure AD |Sì         |Supporto per più paesi         |Sì         |No         |
 |Lettore di report di Office 365<sup>1</sup>     |Sì         |No         |Sì         |No         |
 
 <sup>1</sup> oltre a leggere i report di Call Quality dashboard, il lettore di report di Office 365 può visualizzare tutti i [report attività](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) nell'interfaccia di amministrazione e tutti i report del [pacchetto di contenuto adoption di Microsoft 365](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f).
@@ -652,6 +652,7 @@ _Tabella 5-struttura dei file in costruzione_
 | Area             | Stringa    | MSUS                      | Consigliato |
 | InsideCorp         | Bool      | 1                         | Obbligatorio    |
 | ExpressRoute       | Bool      | 0                         | Obbligatorio    |
+| VPN                | Bool      | 0                         | Facoltativo    |
 
 \*Anche se non richiesto da Call Quality dashboard, i modelli sono configurati per visualizzare il nome dell'edificio e della rete.
 
@@ -701,7 +702,7 @@ I dati di qualità dell'esperienza (QoE) che i client inviano a Office 365, da c
   _Figura 13-VPN con il nome dell'edificio_
 
 > [!IMPORTANT]
-> Alcune implementazioni VPN non segnalano in modo accurato le informazioni sulla subnet. Se questo problema si verifica nella creazione di report, è consigliabile aggiungere voci separate per ogni indirizzo della subnet VPN in una rete separata a 32 bit quando si aggiunge una subnet VPN al file di compilazione. Ogni riga può avere gli stessi metadati dell'edificio. Ad esempio, invece di una riga per 172.16.18.0/24, hai 253 righe, con una riga per ogni indirizzo da 172.16.18.1/32 a 172.16.18.254/32, incluso.
+> Alcune implementazioni VPN non segnalano in modo accurato le informazioni sulla subnet. Questo perché il client VPN viene fornito con una subnet a 32 bit.  Come accennato nella sezione precedente, Call Quality Dashboard non è in grado di identificare correttamente una subnet a 32 bit.  Per identificare in modo accurato una subnet VPN in Call Quality dashboard, impostare il campo VPN su 1 nel file di costruzione.
 
 
 > [!NOTE]

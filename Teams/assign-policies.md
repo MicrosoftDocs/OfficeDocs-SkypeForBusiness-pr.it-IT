@@ -16,17 +16,17 @@ localization_priority: Normal
 search.appverid: MET150
 description: Scopri i diversi modi per assegnare i criteri agli utenti in Microsoft teams.
 f1keywords: ''
-ms.openlocfilehash: 0f0ce566eb395e3bf3722149797908599091bc2a
-ms.sourcegitcommit: 891ba3670ccd16bf72adee5a5f82978dc144b9c1
+ms.openlocfilehash: a3946ab7296603822655ac115ae5826f3f670cea
+ms.sourcegitcommit: 4d376449a75928282373598647f2b82127909c4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42691196"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978528"
 ---
 # <a name="assign-policies-to-your-users-in-microsoft-teams"></a>Assegnare criteri agli utenti in Microsoft Teams
 
 > [!NOTE]
-> **Una delle caratteristiche di Microsoft teams discusse in questo articolo, [assegnazione dei criteri ai gruppi](#assign-a-policy-to-a-group), è attualmente in anteprima.**
+> **Una delle caratteristiche di Microsoft teams discusse in questo articolo, [assegnazione dei criteri ai gruppi](#assign-a-policy-to-a-group), è attualmente disponibile solo in anteprima limitata. I cmdlet di PowerShell per questa funzionalità si trovano nel modulo di PowerShell per i team pre-release.**
 
 Come amministratore, puoi usare i criteri per controllare le caratteristiche dei team disponibili per gli utenti dell'organizzazione. Ad esempio, esistono criteri per la chiamata, criteri per le riunioni e criteri di messaggistica, per citarne solo alcuni.
 
@@ -77,8 +77,8 @@ Seguire questa procedura per assegnare un criterio a un singolo utente o a un nu
 
 Per assegnare un criterio a un utente:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi fai clic sull'utente.
-2. Selezionare l'utente facendo clic a sinistra del nome utente, quindi fare clic su **Modifica impostazioni**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi fare clic sull'utente.
+2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
 3. Selezionare il criterio che si vuole assegnare e quindi fare clic su **applica**.
 
 Per assegnare un criterio a un massimo di 20 utenti alla volta, vedere [modificare le impostazioni utente di teams in blocco](edit-user-settings-in-bulk.md).
@@ -87,8 +87,8 @@ In alternativa, è anche possibile eseguire le operazioni seguenti:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa alla pagina dei criteri.
 2. Selezionare il criterio che si vuole assegnare facendo clic a sinistra del nome del criterio.
-3. Selezionare **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
+3. Scegliere **Gestisci utenti**.
+4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 5. Al termine dell'aggiunta di utenti, selezionare **Salva**.
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
@@ -197,7 +197,7 @@ Per altre informazioni, vedere [Get-CsBatchPolicyAssignmentOperation](https://do
 
 ## <a name="assign-a-policy-to-a-group"></a>Assegnare un criterio a un gruppo
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
+**L'assegnazione dei criteri ai gruppi è attualmente disponibile solo in anteprima limitata. I cmdlet per questa funzionalità si trovano nel modulo di PowerShell per i team pre-release.**
 
 L'assegnazione dei criteri a gruppi consente di assegnare un criterio a un gruppo di utenti, ad esempio un gruppo di sicurezza o un'unità organizzativa. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando i membri vengono aggiunti o rimossi da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza.
 

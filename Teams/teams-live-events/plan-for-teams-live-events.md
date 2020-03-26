@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Informazioni sui fattori da prendere in considerazione prima di configurare gli eventi dinamici in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6f0c141751a9b67a47640ba5210c3cb7aeeadbb2
-ms.sourcegitcommit: a6425a536746e129ab8bda3984b5ae63fb316192
+ms.openlocfilehash: ecd08f71545bcaf2775b3e502860b9d6a8e234fc
+ms.sourcegitcommit: 4d376449a75928282373598647f2b82127909c4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558566"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978418"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare eventi dinamici in Microsoft Teams
 
@@ -64,13 +64,13 @@ L'utente deve avere:
 |**Visibilità partecipanti**       |**Produzione di Teams**  |**App esterna o produzione di dispositivi**  |
 |------------------------------|-----------------|----------------------|
 |Pubblico (utenti anonimi)      |  Sì            |  No                  |
-|Utenti Guest                   |  N.<sup>1</sup> |  No                  |
-|Tutti gli utenti della società federata |  N.<sup>2</sup> |  No                  |
+|Utenti guest                   |  Sì            |  No                  |
+|Tutti gli utenti della società federata |  Sì<sup>1</sup>|  No                  |
 |Tutti gli utenti della società           |  Sì            |  Sì                 |
 |Gruppi/utenti specifici      |  Sì            |  Sì                 |
 
-<sup>1</sup> può guardare eventi live se l'evento Live è configurato con l'opzione **a livello di organizzazione** .<br>
-<sup>2</sup> può guardare solo gli eventi dinamici come utenti anonimi.
+<sup>1</sup> i partecipanti federati possono essere invitati solo tramite persone & gruppo <br>
+
 
  
 ## <a name="teams-live-events-and-skype-meeting-broadcast"></a>Eventi live di teams e Skype meeting broadcast
