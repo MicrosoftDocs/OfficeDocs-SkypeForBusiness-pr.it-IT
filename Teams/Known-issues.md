@@ -17,12 +17,12 @@ f1.keywords:
 description: Elenco corrente dei problemi noti riguardanti l’interfaccia di amministrazione e l'app client di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 212f7f2bab023127bcc110133d1b8e574ee0d5de
-ms.sourcegitcommit: 545e466f1fa9163bb00cc96c8db70a70b02af697
+ms.openlocfilehash: 9023c7a7bfe5a629f3f2fdb9589ee3f9ef9efd68
+ms.sourcegitcommit: 0549714f17f9994cf832a303ec9bc58a537c3a51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42928289"
+ms.lasthandoff: 03/25/2020
+ms.locfileid: "42951511"
 ---
 # <a name="known-issues-for-microsoft-teams"></a>Problemi noti di Microsoft Teams
 
@@ -62,11 +62,7 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
-|Non è possibile aggiungere membri ai team quando UsersPermissionToReadOtherUsersEnabled è impostato su false  <br/> |Se il suddetto valore è impostato su falso in AAD, il cliente non è in grado di aggiungere membri esterni o interni in Microsoft Teams e viene visualizzato il seguente messaggio di errore: "Impossibile aggiungere membro. Si è verificato un problema. Riprovare più tardi." Tuttavia, i membri possono essere aggiunti direttamente ai gruppi di Office 365.    <br/> |Modificare l’opzione su true in AAD.  <br/> |10/04/2018  <br/> |
-
-|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
-|:-----|:-----|:-----|:-----|
-|La gestione amministratore dei connettori a livello di tenant non è più disponibile  <br/> |Quando si prova ad aggiungere un connettore sia nel client che nella versione online, viene visualizzato il messaggio di errore: Si è verificato un errore imprevisto. Riprovare. Eseguire: Set-OrganizationConfig -ConnectorsEnabled=True   <br/> |Disabilitare con le impostazioni di Teams. Consultare il seguente articolo del supporto tecnico: https://answers.microsoft.com/en-us/msoffice/forum/msoffice_o365admin-mso_teams-mso_o365b/how-to-enable-or-disable-connectors-in-office-365/33d4b2c1-00eb-420a-ad83-01a2b42ad098    <br/> |21/06/2017  <br/> |
+|Non è possibile aggiungere membri ai team quando UsersPermissionToReadOtherUsersEnabled è impostato su false  <br/> |Se questo valore è impostato su falso in AAD, gli utenti non possono aggiungere membri esterni o interni in Microsoft Teams e viene visualizzato il seguente messaggio di errore: "Impossibile aggiungere membro. Si è verificato un problema. Riprovare più tardi." Tuttavia, i membri possono essere aggiunti direttamente ai gruppi di Office 365.    <br/> |Modificare l’opzione su true in AAD.  <br/> |10/04/2018  <br/> |
 
 ## <a name="apps"></a>App
 
@@ -77,14 +73,6 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
 |[L'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) potrebbe non funzionare se si usa la scheda "Sito Web" o "Azure DevOps" nell'app desktop.<br/> |Se un sito Web, ad esempio un portale Intranet, include criteri di accesso condizionale (come le restrizioni relative agli indirizzi IP o al browser o la conformità dei dispositivi) potrebbe non essere visualizzato come scheda all'interno dell'app desktop di Teams. <br/> |Usare Teams in un browser invece dell'app desktop.  <br/> |01/07/2018  <br/> |
-
-|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
-|:-----|:-----|:-----|:-----|
-|Opzioni Connettori mancanti per alcuni team  <br/> |Quando si fa clic con il pulsante destro del mouse su un canale, l'opzione Connettori non è presente per nessun membro del team.  <br/> |Il creatore del team deve avere una cassetta postale online, in caso contrario, non sarà disponibile l'opzione Connettori. Si tratta di un comportamento previsto.  <br/> |26/06/2017  <br/> |
-
-|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
-|:-----|:-----|:-----|:-----|
-|L'app "Attività" rimane visibile quando è disabilitata  <br/> |Quando l'app "Attività" è disabilitata nell'interfaccia di amministrazione, rimane visibile nel client di Teams per gli utenti con licenza EDU. Se la si seleziona quando è disabilitata, verrà visualizzato il seguente messaggio di errore: "Accidenti! Si è verificato un problema... "  <br/> |Non ci sono soluzioni alternative.  <br/> |29/12/2017  <br/> |
 
 ## <a name="audio-conferencing"></a>Audioconferenza
 
