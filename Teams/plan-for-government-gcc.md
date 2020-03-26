@@ -17,16 +17,28 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 51afc464b5f6d0fa698250d1255315535e383bf8
-ms.sourcegitcommit: ed0ecb3b1250a23d3b91a5a33256aee1c3119db1
+ms.openlocfilehash: a1b97e82edd97079c1e4615e5bb7fcf4a1eb2fea
+ms.sourcegitcommit: b6eb22e96be5fb18984f1dd05e4eb8f2cfc032f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2020
-ms.locfileid: "42374323"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42968661"
 ---
 # <a name="plan-for-microsoft-365-government---gcc-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-GCC
 
 Questa guida è per i professionisti IT che guidano le distribuzioni di Office 365 in Stati Uniti, enti governativi federali, statali, locali, tribali o territoriali o altre entità che gestiscono i dati soggetti alle normative governative e ai requisiti, dove l'uso di Microsoft 365 Government-GCC è appropriato per soddisfare questi requisiti.
+
+> [!IMPORTANT]
+> Microsoft teams sta vivendo un enorme picco nelle chiamate online e nelle conferenze audio/video a causa della pandemia di coronavirus (COVID-19).<br/>
+> 
+>In risposta all'aumento senza precedenti delle chiamate e per garantirne la continuità e la disponibilità, Microsoft consente a Microsoft teams GCC audio/video server di sfruttare la capacità di elaborazione nei nostri datacenter commerciali, oltre che nei datacenter di stato.<br/>
+> 
+>Questi server audio/video si trovano all'interno dei server Microsoft Azure FedRAMP High Accreditation Boundary negli Stati Uniti e non archiviano il contenuto del cliente. Tuttavia, questi server elaborano audio e video per le chiamate e le conferenze e operano sotto il nostro personale commerciale durante questo periodo di interim.<br/>
+> 
+>Il personale qualificato e schermato sta monitorando questi server per un potenziale accesso ai dati dei clienti, rivedendo eventuali log-ons interattivi in questi server. Il personale qualificato soddisfa i requisiti di GCC per accedere al contenuto del cliente. Per informazioni dettagliate sui requisiti di selezione, vedere la [Descrizione del servizio GCC](Office365-ServiceDescriptions\office-365-platform-service-description\office-365-us-government\gcc.md).<br/>
+> 
+>Grazie per il tuo supporto mentre procediamo per garantire che i nostri servizi rimangano disponibili e affidabili in questi tempi straordinari.<br/>
+
 
 > [!NOTE]
 > Se l'organizzazione ha già incontrato i requisiti di ammissibilità per il governo di Microsoft 365 e per i quali è stata accettata l'applicazione, è possibile ignorare i passaggi 1 e 2 e passare direttamente al passaggio 3. 
@@ -75,69 +87,69 @@ Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune di
 
 |                             | Funzionalità                     | GCC            |
 |-----------------------------|-----------------------------|----------------|
-| Base | Accesso | Disponibili |
-| | Icone di presenza | Disponibili |
-| | Presenza unificata (Skype for business e teams Unified) | Disponibili |
-| Attività | Feed | Disponibili |
-|  | Attività personali | Disponibili |
-| Chat | Conversazione | Disponibili |
-| | File | Disponibili |
-| | Organigramma | Disponibili |
-| | Attività | Disponibili |
-| | Interoperabilità (1:1 Teams-chat Skype for business) | Disponibili |
-| Teams | Messaggio di canale | Disponibili |
-| | File di canale | Disponibili |
+| Base | Accesso | Disponibile |
+| | Icone di presenza | Disponibile |
+| | Presenza unificata (Skype for business e teams Unified) | Disponibile |
+| Attività | Feed | Disponibile |
+|  | Attività personali | Disponibile |
+| Chat | Conversazione | Disponibile |
+| | File | Disponibile |
+| | Organigramma | Disponibile |
+| | Attività | Disponibile |
+| | Interoperabilità (1:1 Teams-chat Skype for business) | Disponibile |
+| Teams | Messaggio di canale | Disponibile |
+| | File di canale | Disponibile |
 | | Scheda OneNote | Nell'arretrato governativo |
 | | Inviare un canale tramite posta elettronica | Non disponibile |
-| | Aggiungi membro | Disponibili |
-| | Accesso guest | Disponibili |
-| Riunioni | Pianificare una riunione | Disponibili |
-| | Partecipare a una riunione | Disponibili |
-| | Riunione VoIP | Disponibili |
-| | Condivisione desktop | Disponibili |
-| | Dare e prendere il controllo della condivisione | Disponibili |
-| | Connettersi da una sala riunioni | Disponibili |
-| | Join anonimo | Disponibili |
-| | Registrazione cloud | Disponibili |
-| | Note riunione | Disponibili |
-| | Eventi dinamici | Disponibili |
-| | Riunioni federate | Disponibili |
-| | Supporto per Surface Hub | Disponibili |
-| Chiamate | Contatti | Disponibili |
-| | Storia | Disponibili |
-| | Casella vocale | Disponibili |
-| | Chiamata VoIP | Disponibili |
-| | Skype for business-teams Calling | Disponibili |
-| | Piani per chiamate | Disponibili |
-| | Servizi di audioconferenza (per consentire ai partecipanti alla riunione di partecipare tramite PSTN) | Disponibili |
-| | Routing diretto di Microsoft Phone System | Disponibili |
-| | Sala di attesa per i chiamanti PSTN | Disponibili |
-| | Coda di chiamata | Disponibili |
-| | Supporto di boss e delegati | Disponibili |
-| | Trasferimento consultivo e sicuro | Disponibili |
-| | Non disturbare l'innovazione | Disponibili |
-| | Anello distintivo | Disponibili |
-| | 1:1 per raggruppare le escalation delle chiamate con team, Skype for business e partecipanti PSTN | Disponibili |
-| | Inoltra al gruppo | Disponibili |
-| | Trasferimento a chiamata PSTN | Disponibili |
-| | Piani per chiamate di emergenza | Disponibili |
-| | Supporto per i telefoni SIP certificati esistenti | Disponibili |
-| | USB HID | Disponibili |
-| | eDiscovery per le chiamate e le riunioni | Disponibili |
-| | Operatore automatico organizzazione | Disponibili |
-| | Supporto per Skype consumer-teams Call | Disponibili |
-| File | Recente | Disponibili |
-| | Microsoft Teams | Disponibili |
-| Negozio | App Store | Disponibili |
-| Ricerca | Messaggi | Disponibili |
-| | Persone | Disponibili |
-| | File | Disponibili |
-| | Comandi barra | Disponibili |
-| Conformità | Ricerca di contenuto di conformità | Disponibili |
-| | Conservazione | Disponibili |
-| | Ricerca nel log di controllo | Disponibili |
-| | Blocco legale | Disponibili |
-| | eDiscovery | Disponibili |
+| | Aggiungi membro | Disponibile |
+| | Accesso guest | Disponibile |
+| Riunioni | Pianificare una riunione | Disponibile |
+| | Partecipare a una riunione | Disponibile |
+| | Riunione VoIP | Disponibile |
+| | Condivisione desktop | Disponibile |
+| | Dare e prendere il controllo della condivisione | Disponibile |
+| | Connettersi da una sala riunioni | Disponibile |
+| | Join anonimo | Disponibile |
+| | Registrazione cloud | Disponibile |
+| | Note riunione | Disponibile |
+| | Eventi dinamici | Disponibile |
+| | Riunioni federate | Disponibile |
+| | Supporto per Surface Hub | Disponibile |
+| Chiamate | Contatti | Disponibile |
+| | Storia | Disponibile |
+| | Segreteria telefonica | Disponibile |
+| | Chiamata VoIP | Disponibile |
+| | Skype for business-teams Calling | Disponibile |
+| | Piani di chiamata | Disponibile |
+| | Servizi di audioconferenza (per consentire ai partecipanti alla riunione di partecipare tramite PSTN) | Disponibile |
+| | Routing diretto di Microsoft Phone System | Disponibile |
+| | Sala di attesa per i chiamanti PSTN | Disponibile |
+| | Coda di chiamata | Disponibile |
+| | Supporto di boss e delegati | Disponibile |
+| | Trasferimento consultivo e sicuro | Disponibile |
+| | Non disturbare l'innovazione | Disponibile |
+| | Anello distintivo | Disponibile |
+| | 1:1 per raggruppare le escalation delle chiamate con team, Skype for business e partecipanti PSTN | Disponibile |
+| | Inoltra al gruppo | Disponibile |
+| | Trasferimento a chiamata PSTN | Disponibile |
+| | Piani per chiamate di emergenza | Disponibile |
+| | Supporto per i telefoni SIP certificati esistenti | Disponibile |
+| | USB HID | Disponibile |
+| | eDiscovery per le chiamate e le riunioni | Disponibile |
+| | Operatore automatico organizzazione | Disponibile |
+| | Supporto per Skype consumer-teams Call | Disponibile |
+| File | Recente | Disponibile |
+| | Microsoft Teams | Disponibile |
+| Store | App Store | Disponibile |
+| Ricerca | Messaggi | Disponibile |
+| | Persone | Disponibile |
+| | File | Disponibile |
+| | Comandi barra | Disponibile |
+| Conformità | Ricerca di contenuto di conformità | Disponibile |
+| | Conservazione | Disponibile |
+| | Ricerca nel log di controllo | Disponibile |
+| | Blocco legale | Disponibile |
+| | eDiscovery | Disponibile |
 
 > [!Note]
 > Una volta che altri carichi di lavoro saranno completamente disponibili nel cloud GCC, questi saranno resi disponibili in teams quando verrà completato il completamento di tutte le operazioni di integrazione.

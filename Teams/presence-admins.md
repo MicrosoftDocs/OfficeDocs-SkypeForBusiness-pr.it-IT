@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: msteams
 audience: admin
 ms.reviewer: rakayala
-description: Informazioni per gli amministratori sulla presenza in teams.
+description: Informazioni per gli amministratori sulla presenza in Teams.
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
@@ -18,66 +18,66 @@ appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 7e0d7ef2fa7ae12f660bf6b77ba7c45a8c49ab10
 ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/08/2020
 ms.locfileid: "41863197"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
-La presenza fa parte del profilo di un utente in Microsoft Teams (e in tutto Office 365) che indica la disponibilità e lo stato correnti dell'utente ad altri utenti. Per impostazione predefinita, tutti gli utenti dell'organizzazione che usano team possono vedere (in tempi quasi reali) se sono disponibili online.
+La presenza è inclusa nel profilo degli utenti di Microsoft Teams (e ovunque in Office 365) e indica la disponibilità e lo stato correnti dell'utente. Per impostazione predefinita, tutti gli utenti dell'organizzazione che usano Teams possono vedere (praticamente in tempo reale) se gli altri utenti sono disponibili online.
 
 > [!IMPORTANT]
-> Se si disinstalla il client di Skype for Business dopo aver spostato un utente in modalità **Solo Teams**, l’icona di presenza smetterà di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Soluzione alternativa: per vedere la presenza in Outlook e in altre app di Office, è necessario installare Skype for business, anche se si sta usando teams in modalità **solo teams** . Microsoft è a conoscenza del problema e sta lavorando per risolverlo.
+> Se si disinstalla il client di Skype for Business dopo aver spostato un utente in modalità **Solo Teams**, l’icona di presenza smetterà di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Soluzione alternativa: per visualizzare la presenza in Outlook (e in altre app di Office) è necessario installare Skype for Business, anche se Teams viene eseguito in modalità **Solo Teams**. Microsoft è a conoscenza del problema e sta lavorando per risolverlo.
 
-La presenza di Teams in Outlook è supportata nell'app desktop Outlook 2013 e versioni successive.
+La presenza di Teams in Outlook è supportata nell'applicazione desktop di Outlook 2013 e versioni successive.
 
-## <a name="presence-states-in-teams"></a>Stati presenza in teams
+## <a name="presence-states-in-teams"></a>Stati di presenza in Teams
 
-Gli Stati di presenza degli utenti disponibili in teams sono:
+Gli stati di presenza degli utenti disponibili in Teams sono:
 
-|Configurato dall'utente|App configurata|
+|Utente configurato|App configurata|
 |:--- |:---|
-| ![Segno di spunta verde fisso, che indica la presenza disponibile](media/Presence_Available.png) Disponibili|![Segno di spunta verde fisso, che indica la presenza disponibile](media/Presence_Available.png) Disponibili|
-|| ![Aprire il segno di spunta verde, indica disponibile OOF](media/Presence_Available_OOF.png) Disponibile, fuori sede |
-|  ![Cerchio rosso a tinta unita, indica occupato](media/Presence_Busy.png) Disponibilità |  ![Cerchio rosso a tinta unita, indica occupato](media/Presence_Busy.png) Disponibilità  |
-|| ![Cerchio rosso a tinta unita, indica occupato in una chiamata](media/Presence_Busy.png) In una chiamata|
-|| ![Cerchio rosso a tinta unita, indica occupato in una riunione](media/Presence_Busy.png) In una riunione |
-|| ![Aprire il cerchio rosso, indica occupato](media/Presence_Busy_OOF.png) In una chiamata fuori sede|
-|  ![Cerchio rosso con linea bianca, indica non disturbare](media/Presence_DND.png) Non disturbare ||
-|| ![Cerchio rosso con linea bianca, indica la presentazione](media/Presence_DND.png) Presentazione|
-|| ![Cerchio rosso con linea bianca, indica lo stato di messa a fuoco](media/Presence_DND.png) Incentrato|
-| ![Icona dell'orologio giallo che indica la distanza](media/Presence_Away.png) Via| ![Icona dell'orologio giallo che indica la distanza](media/Presence_Away.png) Via|
-|| ![Icona dell'orologio giallo, che](media/Presence_Away.png) indica la data dell'ultima *ora* di visualizzazione|
-|![Icona dell'orologio giallo, indica via, torno subito](media/Presence_Away.png) Torno subito| |
-|| ![Icona dell'orologio giallo, indica via, fuori lavoro](media/Presence_Away.png)  Fuori ufficio|
-|| ![Cerchio grigio con x, indica offline](media/Presence_Offline.png) Offline |
-|| ![Apri cerchio grigio, indica lo stato sconosciuto](media/Presence_Unknown.png) Stato sconosciuto|
-||![Aprire il cerchio rosso con la linea diagonale, indica il blocco](media/Presence_Blocked.png) Bloccati |
-|| ![Cerchio viola con freccia, indica fuori sede](media/Presence_OOF.png) Fuori sede|
+| ![Segno di spunta verde, indica la presenza Disponibile](media/Presence_Available.png) Disponibile|![Segno di spunta verde, indica la presenza Disponibile](media/Presence_Available.png) Disponibile|
+|| ![Segno di spunta verde trasparente, indica la disponibilità fuori sede](media/Presence_Available_OOF.png) Disponibile, fuori sede |
+|  ![Cerchio rosso pieno, indica Non disponibile](media/Presence_Busy.png) Non disponibile |  ![Cerchio rosso pieno, indica Non disponibile](media/Presence_Busy.png) Non disponibile  |
+|| ![Cerchio rosso pieno, indica Non disponibile, al telefono](media/Presence_Busy.png) Chiamata in corso|
+|| ![Cerchio rosso pieno, indica Non disponibile, in riunione](media/Presence_Busy.png) In riunione |
+|| ![Cerchio rosso trasparente, indica Non disponibile](media/Presence_Busy_OOF.png) Chiamata in corso, fuori sede|
+|  ![Cerchio rosso con linea bianca, indica Non disturbare](media/Presence_DND.png) Non disturbare ||
+|| ![Cerchio rosso con linea bianca, indica Presentazione in corso](media/Presence_DND.png) Presentazione in corso|
+|| ![Cerchio rosso con linea bianca, indica Occupato](media/Presence_DND.png) Occupato|
+| ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente| ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente|
+|| ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente, ultimo accesso *orario*|
+|![Icona orologio giallo, indica Assente, torno subito](media/Presence_Away.png) Torno subito| |
+|| ![Icona orologio giallo, indica Assente, non al lavoro](media/Presence_Away.png)  Non al lavoro|
+|| ![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Offline |
+|| ![Cerchio grigio trasparente, indica Stato sconosciuto](media/Presence_Unknown.png) Stato sconosciuto|
+||![Cerchio rosso trasparente con linea diagonale, indica Bloccato](media/Presence_Blocked.png) Bloccato |
+|| ![Cerchio viola con freccia, indica Fuori sede](media/Presence_OOF.png) Fuori sede|
 |||
  
-Gli utenti possono impostare manualmente lo stato presenza corrente su alcune opzioni e il relativo stato viene riflesso a tutti gli altri utenti. Vengono aggiornati automaticamente anche altri dettagli sulla presenza dell'utente. Le modifiche sono basate su attività utente (disponibile, assente), Stati del calendario di Outlook (in una riunione) o Stati dell'app Teams (in una chiamata, presentazione), agli Stati rientrati nell'elenco. C'è un timeout di 15 minuti di inattività, dopo il quale viene reimpostato uno stato presenza corrente su assente.
+Gli utenti possono impostare manualmente lo stato corrente di presenza su alcune opzioni e quest'ultimo verrà mostrato a tutti gli altri utenti. I dettagli aggiuntivi sulla presenza dell'utente vengono aggiornati automaticamente. I cambiamenti di stato si basano sulle attività utente (Disponibile, Assente), gli stati del calendario di Outlook (In riunione) o gli stati dell'app Teams (Chiamata in corso, Presentazione in corso), insieme agli stati inclusi nell'elenco. È presente un timeout di inattività di 15 minuti, in seguito al quale lo stato di presenza corrente viene impostato su Assente.
 
-Gli utenti ricevono tutti i messaggi di chat inviati a loro in teams indipendentemente dallo stato di presenza. Se un utente è offline quando qualcuno invia un messaggio, il messaggio di chat viene visualizzato in teams la volta successiva che l'utente è online. Se un utente si trova in uno stato non disturbare, l'utente riceverà ancora messaggi di chat, ma non verrà visualizzata una notifica banner.
+Gli utenti ricevono tutti i messaggi delle chat di Teams, indipendentemente dallo stato di presenza. Se un utente è offline quando riceve un messaggio, questo apparirà nella chat di Teams non appena l'utente sarà nuovamente online. Se un utente è sullo stato Non disturbare, riceverà comunque i messaggi delle chat ma non verrà mostrata la notifica del banner.
 
-Gli utenti ricevono chiamate in tutti gli Stati di presenza, ad eccezione degli Stati non disturbanti, in cui le chiamate in arrivo vengono recapitate alla segreteria telefonica. Se il destinatario ha bloccato il chiamante, la chiamata non verrà recapitata e il chiamante vedrà la presenza del destinatario offline.
+Gli utenti ricevono le chiamate con qualsiasi stato di presenza, tranne gli stati Non disturbare, per i quali le chiamate in arrivo vengono reindirizzate alla segreteria telefonica. Se il destinatario ha bloccato il chiamante, l'utente non riceverà la chiamata e il chiamante visualizzerà la presenza del destinatario come Offline.
 
-Gli utenti possono aggiungere persone all'elenco di accesso prioritario accedendo alla**privacy** **delle impostazioni** > in teams. Le persone con accesso prioritario possono contattare l'utente anche quando l'utente si trova in uno stato non disturbare.
+Gli utenti possono aggiungere persone al proprio elenco degli accessi prioritari andando in **Impostazioni** > **Privacy** in Teams. Le persone con accesso prioritario possono contattare l'utente anche con lo stato Non disturbare.
 
-## <a name="admin-settings-in-teams-compared-to-skype-for-business"></a>Impostazioni di amministrazione in teams rispetto a Skype for business
+## <a name="admin-settings-in-teams-compared-to-skype-for-business"></a>Confronto tra le impostazioni di amministrazione di Teams e Skype for Business
 
-Le seguenti impostazioni di amministratore Skype for business sono diverse in teams:
+Le seguenti impostazioni di amministrazione di Skype for Business sono diverse da quelle di Teams:
 
-- In teams, la condivisione della presenza è sempre abilitata per gli utenti dell'organizzazione. La privacy (dove è possibile definire chi può vedere la presenza) la configurazione non è disponibile in teams.
-- La condivisione della presenza con tutti (inclusi i servizi federati) è sempre abilitata per gli utenti in teams. Il relativo elenco di contatti (se ne ha uno in Skype for business) è visibile in **Chat > contatti** o in **chiamate > contatti**.
-- Il client non disturbare e le caratteristiche di innovazione sono sempre abilitate per gli utenti in teams.
-- Calendario (include fuori sede e altre informazioni sul calendario) l'integrazione è sempre abilitata per gli utenti quando i team sono integrati con Outlook.
-- L'indicatore l'ultima volta *che* viene *visualizzato* o disattivo è sempre abilitato per gli utenti in teams se l'organizzazione usa anche Skype for business.
+- In Teams, la condivisione della presenza è sempre abilitata per gli utenti dell'organizzazione. La configurazione della privacy, grazie alla quale è possibile stabilire chi può visualizzare la presenza, non è disponibile in Teams.
+- La condivisione della presenza con tutti, inclusi i servizi federati, è sempre abilitata per gli utenti di Teams. L'elenco contatti, se presente in Skype for Business, è visibile in **Chat > Contatti** o in **Chiamate > Contatti**.
+- Le funzionalità client Non disturbare e Contatti sempre ammessi sono sempre abilitate per gli utenti di Teams.
+- L'integrazione del calendario, incluse le informazioni fuori sede e degli altri calendario, è sempre abilitata per gli utenti se Teams è integrato con Outlook.
+- L'indicatore *Ultimo accesso* o *Assente dalle* è sempre abilitato per gli utenti di Teams se l'organizzazione utilizza anche Skype for Business.
 
 > [!NOTE]
-> La capacità di un amministratore di teams di personalizzare queste impostazioni non è attualmente supportata.
+> La personalizzazione di queste impostazioni da parte di un amministratore di Teams non è supportata al momento.
 
 ## <a name="coexistence-with-skype-for-business"></a>Coesistenza con Skype for Business
 
-Vedere la [coesistenza con Skype for business](coexistence-chat-calls-presence.md) per informazioni dettagliate su come funziona la presenza di teams quando l'organizzazione usa anche Skype for business.
+Vedere [Coesistenza con Skype for Business](coexistence-chat-calls-presence.md) per i dettagli sul funzionamento della presenza di Teams quando l'organizzazione utilizza anche Skype for Business.
