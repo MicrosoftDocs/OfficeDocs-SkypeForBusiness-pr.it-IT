@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Informazioni sui fattori da prendere in considerazione prima di configurare gli eventi dinamici in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ecd08f71545bcaf2775b3e502860b9d6a8e234fc
-ms.sourcegitcommit: 4d376449a75928282373598647f2b82127909c4f
+ms.openlocfilehash: 816cfb3c971621a367dcf81d1ec555e9735bda9d
+ms.sourcegitcommit: a2b2ae17a35f530f797504bb85b44f1a0f561a7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978418"
+ms.lasthandoff: 03/27/2020
+ms.locfileid: "42983862"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare eventi dinamici in Microsoft Teams
 
@@ -81,6 +81,7 @@ La tabella seguente evidenzia le funzionalità e le funzionalità principali off
 |---------|---------|---------|---------|
 |Numero massimo di destinatari |10.000 partecipanti |10.000 partecipanti<sup>1</sup> |10.000 partecipanti<sup>1</sup> |
 |Durata massima dell'evento Live |4 ore |4 ore |4 ore |
+|Numero massimo di relatori e produttori in un evento Live |10 <sup>2</sup> |10 <sup>2</sup> |10 <sup>2</sup> |
 |Numero massimo di eventi live concorrenti per Office 365 tenant |15  | 15  | 15  |
 |Creazione di eventi dinamici |   Portale Skype meeting broadcast |Teams, Yammer tramite Teams | Teams, Yammer tramite teams, Stream |
 |Coinvolgimento del pubblico-Yammer |&#x2714; |&#x2714; (esperienza integrata) |&#x2714; (esperienza integrata) |
@@ -104,7 +105,9 @@ La tabella seguente evidenzia le funzionalità e le funzionalità principali off
 |Report di presenza post-broadcast per produttori |&#x2714; |&#x2714; |X |
 |Analisi del sentimento del pubblico-votazioni in tempo reale & sondaggi |&#x2714; (Microsoft Pulse) |X |X |
 
-<sup>1</sup> i limiti impostati possono essere modificati.
+<sup>1</sup> i limiti impostati possono essere modificati.<br/>
+<sup>2</sup> puoi avere fino a 250 relatori e produttori in un evento Live, ma solo gli ultimi 10 che hanno parlato sono presenti nell'elenco.
+
 
 ## <a name="regional-availability"></a>Disponibilità regionale
 Puoi usare gli eventi teams Live in più aree geografiche in tutto il mondo. Le informazioni seguenti mostrano la disponibilità per i membri del team dell'evento e i partecipanti. 
