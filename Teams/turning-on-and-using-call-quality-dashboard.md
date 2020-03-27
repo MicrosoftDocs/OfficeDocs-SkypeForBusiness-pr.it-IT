@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
 description: 'Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate. '
-ms.openlocfilehash: 9e9c70c88aec9fcdf898d94a17f46f76bd2c608a
-ms.sourcegitcommit: 98fcfc03c55917d0aca48b7bd97988f81e8930c1
+ms.openlocfilehash: 7fafbebaa21a6bbd71ab0e253f226908d6787869
+ms.sourcegitcommit: 4d376449a75928282373598647f2b82127909c4f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42559897"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42983326"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -94,7 +94,7 @@ Call Quality dashboard versione 1 ha fornito agli amministratori di Skype for Bu
 
 ## <a name="cqd-near-real-time-nrt-data"></a>Dati di Call Quality dashboard near-Real-Time (NRT)
 
-Advanced Call Quality Dashboard (v3, rilasciata il 2019 novembre) usa un feed di dati quasi in tempo reale. I record di chiamata sono disponibili presso il portale di Call Quality dashboard entro 30 minuti dalla fine della chiamata. I record di chiamata della pipeline NRT sono disponibili solo per alcuni mesi prima di essere rimossi dal set di dati. Call Quality dashboard V3 unisce i dati della pipeline V2 corrente con i dati della NRT della pipeline V3. Le query sui portali V2 e V3 per i dati del periodo di archiviazione producono gli stessi risultati. Le query di dati V2 e V3 per i dati NRT e NRT data + PII periodi saranno diverse.
+Advanced Call Quality Dashboard (v3, rilasciata il 2019 novembre) usa un feed di dati quasi in tempo reale. I record delle chiamate sono disponibili presso il portale di Call Quality dashboard in media in 30 minuti (in confronto al precedente Call Quality dashboard che è in media di 24 ore). I record di chiamata della pipeline NRT sono disponibili solo per alcuni mesi prima di essere rimossi dal set di dati. Call Quality dashboard V3 unisce i dati della pipeline V2 corrente con i dati della NRT della pipeline V3. Le query sui portali V2 e V3 per i dati del periodo di archiviazione producono gli stessi risultati. Le query di dati V2 e V3 per i dati NRT e NRT data + PII periodi saranno diverse.
 
 ### <a name="piieuii-data"></a>Dati personali/EUII
 
@@ -420,7 +420,7 @@ Se hai creato report o caricato i file dei dati del tenant (mapping) in Call Qua
 
 Se si vuole creare un report specifico che si concentri su una dimensione dei dati in modo che i report dettagliati forniti non siano disponibili, creare un report personalizzato.
 
-Nell'elenco a discesa dei report nella parte superiore dello schermo visualizzato all'accesso \(la schermata **** \) Riepilogo report selezionare **report dettagliati** e quindi **nuovo** d fare clic su "modifica" nel menu azione di un report per visualizzare l'editor di query. Ogni report viene supportato da una query nel cubo. Un report è una visualizzazione dei dati restituiti dalla query. L'editor di query consente di modificare queste query e le opzioni di visualizzazione del report. Quando si apre l'editor di query per un nuovo report, viene visualizzato un elemento simile a questa schermata:
+Nell'elenco a discesa dei report nella parte superiore dello schermo visualizzato all'accesso \(la schermata **Summary Reports** \) Riepilogo report selezionare **report dettagliati** e quindi **nuovo** d fare clic su "modifica" nel menu azione di un report per visualizzare l'editor di query. Ogni report viene supportato da una query nel cubo. Un report è una visualizzazione dei dati restituiti dalla query. L'editor di query consente di modificare queste query e le opzioni di visualizzazione del report. Quando si apre l'editor di query per un nuovo report, viene visualizzato un elemento simile a questa schermata:
 
 ![Modificare nuovi report](media/e8969625-e6f9-4d67-873f-93e78dd12b35.png)
 

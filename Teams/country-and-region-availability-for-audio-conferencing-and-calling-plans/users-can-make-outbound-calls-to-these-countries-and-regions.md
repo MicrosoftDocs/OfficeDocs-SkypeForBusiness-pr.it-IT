@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Questo argomento contiene un elenco di tutti i paesi e le aree geografiche verso cui gli utenti possono effettuare chiamate in uscita se dispongono di un Piano di chiamata.
-ms.openlocfilehash: d882078c32b5820dc060778dca4c3f30b4b2a044
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
-ms.translationtype: HT
+ms.openlocfilehash: 09e6fae92c7708e13c8b1eb595d76bf313dbba0c
+ms.sourcegitcommit: 89a7c0427a5abbef838a17ae7eac6934c6176a35
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41682513"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982129"
 ---
 # <a name="users-can-make-outbound-calls-to-these-countries-and-regions"></a>Gli utenti possono effettuare chiamate in uscita verso questi paesi e aree geografiche
 

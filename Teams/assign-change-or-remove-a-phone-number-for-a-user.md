@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come assegnare, modificare o rimuovere un numero di telefono dell'ufficio per gli utenti del team in modo che le aziende e i client possano effettuare chiamate.
-ms.openlocfilehash: 08f662abbad8d7e59d6ed543257d7bb1116e08f1
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: b406a303352afaf29537815e98aed2d660670f12
+ms.sourcegitcommit: 89a7c0427a5abbef838a17ae7eac6934c6176a35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826994"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42982109"
 ---
 # <a name="assign-change-or-remove-a-phone-number-for-a-user"></a>Assegnare, modificare o rimuovere il numero di telefono di un utente
 
@@ -48,9 +48,9 @@ Per informazioni su come ottenere piani per le chiamate in team e su quanto cost
 2. Nella pagina **numeri di telefono** selezionare un numero non assegnato nell'elenco e quindi fare clic su **modifica**.  
 3. Nel riquadro **modifica** , in **assegnata a**, cercare l'utente in base al nome visualizzato o al nome utente e quindi fare clic su **assegna**.
 4. Per assegnare o modificare la posizione di emergenza associata, in **posizione di emergenza**cercare e quindi selezionare la posizione.
-6. Fai clic su **Salva**.
+6. Fare clic su **Salva**.
     > [!NOTE]
-    > A causa della latenza tra Office 365 e teams, possono essere necessarie fino a 24 ore per consentire agli utenti di essere abilitati. Se dopo 24 ore, se il numero di telefono non viene assegnato correttamente, [contattare il servizio di assistenza PSTN](manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md). Opzioni di assistenza
+    > A causa della latenza tra Office 365 e teams, possono essere necessarie fino a 24 ore per consentire agli utenti di essere abilitati. Se dopo 24 ore, se il numero di telefono non viene assegnato correttamente, [contattare il supporto per i prodotti business-Guida per gli amministratori](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). Opzioni di assistenza
   
 ## <a name="change-a-phone-number-for-a-user"></a>Cambiare un numero di telefono per un utente
  
@@ -60,11 +60,11 @@ Per informazioni su come ottenere piani per le chiamate in team e su quanto cost
 2. Nella barra di spostamento sinistra fare clic su**numeri di telefono** **vocali** > .
 3. Nella pagina **numeri di telefono** selezionare il numero identificato nel passaggio 1 e quindi fare clic su **modifica**.  
 4. Nel riquadro **modifica** , in **assegna a**, fare clic sulla **X** per rimuovere l'utente.
-5. Fai clic su **Salva**.
+5. Fare clic su **Salva**.
 6. Nella pagina **numeri di telefono** selezionare un numero non assegnato nell'elenco e quindi fare clic su **modifica**.  
 7. Nel riquadro **modifica** , in **assegnata a**, cercare l'utente in base al nome visualizzato o al nome utente e quindi fare clic su **assegna**.
 8. Per assegnare o modificare la posizione di emergenza associata, in **posizione di emergenza**cercare e quindi selezionare la posizione.
-9. Fai clic su **Salva**.
+9. Fare clic su **Salva**.
 
 ## <a name="remove-a-phone-number-from-a-user"></a>Rimozione di un numero di telefono da un utente
  
@@ -74,7 +74,7 @@ Per informazioni su come ottenere piani per le chiamate in team e su quanto cost
 2. Nella barra di spostamento sinistra fare clic su**numeri di telefono** **vocali** > .
 3. Nella pagina **numeri di telefono** selezionare il numero identificato nel passaggio 2 e quindi fare clic su **modifica**.  
 4. Nel riquadro **modifica** , in **assegna a**, fare clic sulla **X** per rimuovere l'utente.
-5. Fai clic su **Salva**.
+5. Fare clic su **Salva**.
     
 ## <a name="related-topics"></a>Argomenti correlati
 
