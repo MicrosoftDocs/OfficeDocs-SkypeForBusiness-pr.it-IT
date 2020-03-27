@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8cb9e4c4b46e732b2cc96b58b67522a8a9da678c
-ms.sourcegitcommit: a2b2ae17a35f530f797504bb85b44f1a0f561a7d
+ms.openlocfilehash: fd01a781cfb5a928e4d14e64d45789b4f023648d
+ms.sourcegitcommit: 3ddb28e085a89501e4e64687de4697f82f47f119
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/27/2020
-ms.locfileid: "42983817"
+ms.locfileid: "43027676"
 ---
 <a name="microsoft-teams-resources-for-education-admins"></a>Risorse di Microsoft Teams per l'istruzione per amministratori
 ==============================================
@@ -36,9 +36,9 @@ Leggere i [termini e le condizioni prima di](https://github.com/MicrosoftDocs/Of
 
 | |  |
 |---------|---------|
-|[Opuscolo suggerimenti e trucchi](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/get-started-tips-tricks.zip?raw=true)<br> ![Screenshot](media/edu-adoption-get-started.png)    |
 |Poster- [personalizzabili](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/posters-customizable.zip?raw=true) e [pronti](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/posters-print-ready.zip?raw=true) per la stampa<br>![Screenshot di un poster](media/edu-adoption-posters.png)     |[Dispense](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/handouts.zip?raw=true)<br>![Screenshot di un volantino](media/edu-adoption-handouts.png)|
 |[Volantini](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/flyers.zip?raw=true)<br>![Screenshot di un volantino](media/edu-adoption-flyers.png)   |[Annunci di libri](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/book-adverts.zip?raw=true)<br>![Screenshot di un annuncio di un libro](media/edu-adoption-book-adverts.png)         |
+|[Opuscolo suggerimenti e trucchi](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/get-started-tips-tricks.zip?raw=true)<br> ![Screenshot](media/edu-adoption-get-started.png)    |
 
 ### <a name="digital-assets"></a>Asset digitali
 
