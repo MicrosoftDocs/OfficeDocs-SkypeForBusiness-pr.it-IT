@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e7a27d8f3d6da0521b09ab2c1a011eab9aa7235f
-ms.sourcegitcommit: 92a278c0145798266ecbe052e645b2259bcbd62d
+ms.openlocfilehash: 28fe29133384f082dd7b8e51bcff1705906efc94
+ms.sourcegitcommit: 4d376449a75928282373598647f2b82127909c4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892346"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "42978498"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -79,7 +79,8 @@ Ecco una serie di configurazioni non predefinite di criteri che potrebbero esser
 
 #### <a name="messaging-policy"></a>Criteri di messaggistica
 
-- Cambia in "disattivato"
+- Elimina messaggi inviati impostato su 'disattivato'
+- Modifica messaggi inviati impostato su 'disattivato'
 - Classificazione contenuto Giphy impostato su "rigido"
 - Traduzione messaggi impostato su "attivato"
 - Invio di messaggi urgenti con le notifiche priorità impostato su "disattivato"
