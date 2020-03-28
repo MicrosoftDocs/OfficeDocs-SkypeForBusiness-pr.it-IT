@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 86cbb37b46bca606e7225ce0267a49c709fc9619
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
-ms.translationtype: HT
+ms.openlocfilehash: a9097dfc43ca0f70d37b0051e6b0e10283da26c3
+ms.sourcegitcommit: e710bb8dbbd084912cbf509896515a674ab5e19f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160750"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033390"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
@@ -32,7 +32,7 @@ Per impostazione predefinita, i dati delle chat di Teams, dei canali e dei file 
 È possibile creare e gestire i criteri di conservazione di Teams e altri carichi di lavoro nel [Centro sicurezza e conformità di Office 365](https://protection.office.com/) o tramite i cmdlet di PowerShell per il Centro sicurezza e conformità. È possibile applicare un criterio di conservazione di Teams a un'intera organizzazione o a specifici utenti e team.
 
 > [!NOTE]
-> La configurazione per la conservazione di messaggi di canali privati non è ancora supportata. La conservazione dei file condivisi in canali privati è supportata.
+> Non è ancora supportata la configurazione per la conservazione dei messaggi del canale privato. La conservazione dei file condivisi in canali privati è supportata.
 
 Per altre informazioni sui criteri di conservazione di Office 365, vedere [Panoramica dei criteri di conservazione](https://support.office.com/article/overview-of-retention-policies-5e377752-700d-4870-9b6d-12bfc12d2423).
 
@@ -147,14 +147,14 @@ Per eliminare un criterio di conservazione di Teams, eseguire le operazioni segu
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-Per creare e gestire i criteri di conservazione di Teams tramite PowerShell, usare i cmdlet seguenti.
+Per creare e gestire i criteri di conservazione dei team tramite [Office 365 Security & PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)per la conformità, usare i cmdlet seguenti:
 
 |Criterio|Regola|
 |---|---|
-|[New-TeamsRetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-teamsretentioncompliancepolicy?view=exchange-ps)| [New-TeamsRetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-teamsretentioncompliancerule?view=exchange-ps)|
-|[Get-TeamsRetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-teamsretentioncompliancepolicy?view=exchange-ps)| [Get-TeamsRetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-teamsretentioncompliancerule?view=exchange-ps)|
-|[Set-TeamsRetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-teamsretentioncompliancepolicy?view=exchange-ps)| [Set-TeamsRetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-teamsretentioncompliancerule?view=exchange-ps)|
-|[Remove-TeamsRetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-teamsretentioncompliancepolicy?view=exchange-ps)| [Remove-TeamsRetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-teamsretentioncompliancerule?view=exchange-ps)|
+|[New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancepolicy?view=exchange-ps)| [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/new-retentioncompliancerule?view=exchange-ps)|
+|[Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancepolicy?view=exchange-ps)| [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/get-retentioncompliancerule?view=exchange-ps)|
+|[Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancepolicy?view=exchange-ps)| [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/set-retentioncompliancerule?view=exchange-ps)|
+|[Remove-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancepolicy?view=exchange-ps)| [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/policy-and-compliance-retention/remove-retentioncompliancerule?view=exchange-ps)|
 
 ## <a name="known-issues"></a>Problemi noti
 

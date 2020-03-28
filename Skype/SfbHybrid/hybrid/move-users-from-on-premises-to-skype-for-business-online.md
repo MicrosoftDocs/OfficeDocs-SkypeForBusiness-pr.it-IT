@@ -1,5 +1,5 @@
 ---
-title: Spostare gli utenti da locale a Skype for business online
+title: Spostare utenti da ambiente locale a Skype for Business Online
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -18,14 +18,14 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: Informazioni su come spostare gli utenti in Skype for business online.
-ms.openlocfilehash: 6653ca8fe7082f0cabd2057c078f7d0d8d6f0389
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 6d8e8fa08c124717a0d61a758bdb60f2dd24c410
+ms.sourcegitcommit: e710bb8dbbd084912cbf509896515a674ab5e19f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726756"
+ms.lasthandoff: 03/28/2020
+ms.locfileid: "43033380"
 ---
-# <a name="move-users-from-on-premises-to-skype-for-business-online"></a>Spostare gli utenti da locale a Skype for business online
+# <a name="move-users-from-on-premises-to-skype-for-business-online"></a>Spostare utenti da ambiente locale a Skype for Business Online
 
 Dopo aver spostato un utente da locale a Skype for business online, l'utente interagisce con Skype for business online per la sua funzionalità. Tutti i contatti che esistevano in locale saranno disponibili in Skype for business online e tutte le riunioni esistenti che l'utente organizzerà per il futuro verranno aggiornate in modo che i collegamenti puntino a Skype for business online. Se l'utente è abilitato per l'audioconferenza, le riunioni includeranno anche le coordinate di accesso esterno.  Per spostare gli utenti da un ambiente locale a Skype for business online, utilizzare il cmdlet Move-CsUser o il pannello di controllo di Skype for Business Server, entrambi strumenti locali. 
 
@@ -40,10 +40,7 @@ Per spostare un utente in online tramite Move-CsUser:
 - Specificare l'utente da spostare utilizzando il parametro Identity.
 - Specificare il parametro-target con il valore "sipfed. online. Lync. <span>com ".
 - Se non si dispone di un account con autorizzazioni sufficienti sia in locale che in Office 365, utilizzare il parametro-Credential per fornire un account con autorizzazioni sufficienti in Office 365.
-- Se l'account con le autorizzazioni in Office 365 non si conclude con "on. Microsoft. <span>com ", è necessario specificare il parametro-HostedMigrationOverrideUrl, con il valore corretto come descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials).
-
- > [!NOTE]
- > È necessario determinare il valore HostedMigrationOverrideUrl corretto per il tenant. Questa operazione può essere completata facilmente accedendo all'interfaccia di amministrazione di Skype for business legacy. determinare il prefisso-XXXXXXX.online.lync.com e aggiungere/HostedMigration/hostedmigrationservice.svc. ad esempio: https://admin1a.online.lync.com/HostedMigration/hostedmigrationService.svc dopo aver identificato il valore, utilizzarlo per la variabile $URL come illustrato di seguito.
+- Se l'account con le autorizzazioni in Office 365 non termina in ". onmicrosoft. <span>com ", è necessario specificare il parametro-HostedMigrationOverrideUrl, con il valore corretto come descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials).
 
 È possibile utilizzare la sequenza di cmdlet seguente per spostare un utente in Skype for business online e si presuppone che la credenziale Office 365 sia un account separato e fornito come input per il prompt di Get-Credential.
 
