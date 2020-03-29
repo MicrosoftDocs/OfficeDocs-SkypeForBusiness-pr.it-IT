@@ -629,6 +629,7 @@
 ### [Iniziare a usare l'apprendimento a distanza](remote-learning-edu.md)
 ### [Assegnare criteri a grandi gruppi di utenti](batch-policy-assignment-edu.md)
 ### [Licenze di Teams per l'istruzione](teams-edu-licensing.md)
+### [Indicazioni per larghezza di banda ridotta per gli amministratori dell'istruzione](edu-remote-low-bandwidth.md)
 ### [Assegnare attività in Teams per l'istruzione](expand-teams-across-your-org/assignments-in-teams.md)
 ### [Risorse di Teams per l'istruzione per amministratori](resources-teams-edu.md)
 ### [Pacchetti di criteri di Microsoft Teams per l'istruzione per amministratori](policy-packages-edu.md)
@@ -652,6 +653,7 @@
 # Sicurezza e conformità
 ## [Panoramica](security-compliance-overview.md)
 ## Sicurezza
+### [Guida alla sicurezza](teams-security-guide.md)
 ### [Modelli di identità e autenticazione](identify-models-authentication.md)
 ### [Accedere a Teams con l'autenticazione moderna](sign-in-teams.md)
 ## Conformità
