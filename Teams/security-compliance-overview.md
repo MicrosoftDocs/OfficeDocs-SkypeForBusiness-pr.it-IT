@@ -12,18 +12,19 @@ localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
+- remotework
 f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.securityandcompliance
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5b687d528f7cb593039fdafd9dcc6ec08ec66372
-ms.sourcegitcommit: 6cfaadec5782ca7316db36472bd0be20217da693
+ms.openlocfilehash: 3320681f606150be223433d6ab80e8e0ee41a42f
+ms.sourcegitcommit: f96d66d08a9d6993edbb9554738dc8236d901933
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341644"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43053412"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
@@ -70,7 +71,11 @@ L'applicazione desktop Microsoft teams supporta AppLocker.  Per altre informazio
 
 ## <a name="compliance"></a>Conformità
 
-Teams offre una vasta gamma di informazioni per aiutarti con le aree di conformità, inclusi i criteri di conservazione, la protezione dalla perdita dei dati (DLP), la eDiscovery e il blocco legale per canali, chat e file, la ricerca nel log di controllo e la gestione delle applicazioni per dispositivi mobili con Microsoft Intune. Sono state fornite informazioni su tutti questi argomenti e si può accedere al centro conformità & sicurezza di Office 365 per gestire queste impostazioni.
+Teams offre una vasta gamma di informazioni utili per le aree di conformità, tra cui conformità delle comunicazioni per canali, chat e allegati, criteri di conservazione, protezione dalla perdita dei dati (DLP), eDiscovery e blocco legale per canali, chat e file, log di controllo ricerca, nonché gestione delle applicazioni per dispositivi mobili con Microsoft Intune. Sono state fornite informazioni su tutti questi argomenti e si può visitare il centro [conformità Microsoft 365](https://compliance.microsoft.com) o [Office 365 Security & Compliance Center](https://protection.microsoft.com) per gestire queste impostazioni.
+
+### <a name="communication-compliance"></a>Conformità delle comunicazioni
+
+La conformità delle comunicazioni in Microsoft 365 consente di aggiungere utenti ai criteri in ambito che possono essere configurati per esaminare le comunicazioni di Microsoft teams per il linguaggio offensivo, le informazioni riservate e le informazioni relative agli standard interni e normativi . Le comunicazioni chat e gli allegati associati sia in canali pubblici che privati, le singole chat e gli allegati possono essere analizzati per ridurre al minimo i rischi di comunicazione nell'organizzazione. Per altre informazioni su come configurare i criteri per individuare, acquisire e intervenire per le comunicazioni non appropriate per i team, vedere [conformità delle comunicazioni in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance).
 
 ### <a name="retention-policies"></a>Criteri di conservazione
 
@@ -163,11 +168,12 @@ Per informazioni sull'area geografica in cui sono alloggiati i dati per il tenan
 
 ## <a name="compliance-standards"></a>Standard di conformità
 
-Teams è conforme a livello D. Sono inclusi i seguenti standard: ISO 27001, ISO 27018, SSAE16 SOC 1 e SOC 2, HIPAA e clausole modello EU (EUMC). In Microsoft Compliance Framework Microsoft classifica le applicazioni e i servizi di Office 365 in quattro categorie. Ogni categoria è definita da specifici impegni di conformità che devono essere soddisfatti per un servizio di Office 365 o un servizio Microsoft correlato, da elencare in tale categoria.
+Teams è conforme a livello D. Sono inclusi i seguenti standard: [iso 27001](https://docs.microsoft.com/microsoft-365/compliance/offering-iso-27001), [ISO 27018](https://docs.microsoft.com/microsoft-365/compliance/offering-iso-27018), [SSAE16 SOC 1 e SOC 2](https://docs.microsoft.com/microsoft-365/compliance/offering-soc), [HIPAA](https://docs.microsoft.com/microsoft-365/compliance/offering-hipaa-hitech)e [clausole modello EU (EUMC)](https://docs.microsoft.com/microsoft-365/compliance/offering-eu-model-clauses). In Microsoft Compliance Framework Microsoft classifica le applicazioni e i servizi di Office 365 in quattro categorie. Ogni categoria è definita da specifici impegni di conformità che devono essere soddisfatti per un servizio di Office 365 o un servizio Microsoft correlato, da elencare in tale categoria.
 
 I servizi nelle categorie di conformità C e D che hanno impegni di conformità leader del settore sono abilitati per impostazione predefinita. I servizi nelle categorie A e B sono dotati di controlli per attivare o disattivare questi servizi per un'intera organizzazione. I dettagli sono disponibili nel [Framework conformità per gli standard e le normative del settore](https://download.microsoft.com/download/1/4/3/1434ABAB-B8E9-412D-8C3A-187B5FCB7A2F/Compliance%20Framework%20document.pdf). Teams supporta anche la conformità a Cloud Security Alliance.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[](https://docs.microsoft.com/microsoft-365/security/)
-[Conformità M365](https://docs.microsoft.com/microsoft-365/compliance/) sicurezza M365
+[Microsoft 365 Security](https://docs.microsoft.com/microsoft-365/security/)
+Microsoft[365 Compliance](https://docs.microsoft.com/microsoft-365/compliance/)
+Microsoft[Compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home)
