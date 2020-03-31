@@ -20,12 +20,12 @@ f1.keywords:
 - CSH
 ms.custom: Reporting
 description: Ottenere informazioni dettagliate sulle dimensioni e sulle misure usate dal dashboard qualità chiamata per Microsoft teams e Skype for business online.
-ms.openlocfilehash: b23b87ee7cf0f28fca59a3dee13113dcf28a141a
-ms.sourcegitcommit: 33bec766519397f898518a999d358657a413924c
+ms.openlocfilehash: 71f9f2ea8ea01108b0a2f80e8e07cacfeef899ea
+ms.sourcegitcommit: 62969bd1c3a74412aa692709d497b8c6c5992c5c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583081"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43059430"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard"></a>Dimensioni e misure disponibili nel dashboard qualità chiamata
 
@@ -501,7 +501,7 @@ Molti valori di misurazione possono essere usati anche come filtri. La tabella s
 
 |Nome misura |Unità |Descrizione |
 |:--- |:--- |:--- |
-|Total Stream Count |Numero di flussi |Numero di flussi del supporto, indipendentemente dal tipo di supporto. |
+|Total Stream Count |Numero di flussi |Numero di flussi multimediali indipendentemente dal tipo di elementi multimediali, inclusi i flussi di affidabilità/diagnostica che potrebbero non avere un tipo di elemento multimediale. |
 | Numero totale di flussi CDR disponibili | Numero di flussi |Numero di flussi multimediali con informazioni di affidabilità/diagnostica disponibili. Vedere [registrazione dei dettagli delle chiamate (CDR) in Skype for Business Server](https://docs.microsoft.com/skypeforbusiness/manage/health-and-monitoring/call-detail-recording-cdr) |
 |Total Media Failed Stream Count |Numero di flussi |Il numero di flussi in cui non è stato possibile stabilire il percorso del supporto o si è chiuso in modo anomalo. |
 |Total Call Setup Failed Stream Count |Numero di flussi |Il numero di flussi in cui non è stato possibile stabilire il percorso del supporto tra gli endpoint all'inizio della chiamata. |

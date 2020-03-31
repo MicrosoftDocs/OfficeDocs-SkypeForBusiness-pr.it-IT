@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d85bb4ba32bf83d3c774a2b6700a96c7e35dcb2a
-ms.sourcegitcommit: 545e466f1fa9163bb00cc96c8db70a70b02af697
+ms.openlocfilehash: f91ba33e372334fed3561227f1c7f88f9357aa55
+ms.sourcegitcommit: f96d66d08a9d6993edbb9554738dc8236d901933
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42935259"
+ms.lasthandoff: 03/30/2020
+ms.locfileid: "43060356"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
 
@@ -34,7 +34,7 @@ Se è già stata [ottimizzata la rete per Office 365](https://docs.microsoft.com
     |  |  |
     |---------|---------|
     |Porte     |Porte UDP da <strong>3478</strong> a <strong>3481</strong>        |
-    |[Indirizzi IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) |<strong>13.107.64.0/18</strong> e <strong>52.112.0.0/14</strong>        |
+    |[Indirizzi IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) |<strong>13.107.64.0/18</strong>, <strong>52.112.0.0/14</strong>e <strong>52.120.0.0/14</strong>         |
     
 2.  Si dispone di un dominio verificato per Office 365 (ad esempio, contoso.com)?
     
@@ -67,7 +67,7 @@ Le attività seguenti sono facoltative e non sono necessarie per l'implementazio
 
   - Le squadre si avviano lentamente (forse la larghezza di banda non è sufficiente)
   - Chiamate Keep dropping (potrebbe essere dovuto a firewall o bloccanti proxy)
-  - Le chiamate sono statiche-y e ritagliate o le voci sembrano robot (potrebbe essere un jitter o una perdita di pacchetti)
+  - Le chiamate sono statiche e ritagliate o le voci sembrano robot (potrebbe essere jitter o perdita di pacchetti)
 
 Per una discussione approfondita sull'ottimizzazione della rete, tra cui indicazioni per identificare e risolvere i problemi di rete, leggere i principi di connettività di rete di [Office 365](https://aka.ms/pnc).
 
