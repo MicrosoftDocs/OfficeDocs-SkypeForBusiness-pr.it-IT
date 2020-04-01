@@ -1,7 +1,7 @@
 ---
 title: Pianificare Microsoft 365 Government-distribuzioni di GCC-Microsoft Teams
 author: lolajacobsen
-ms.author: lolaj
+ms.author: heidip
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fb36e9decf7fba80250dce1035187b94198bc86d
-ms.sourcegitcommit: f96d66d08a9d6993edbb9554738dc8236d901933
+ms.openlocfilehash: be3afe64ba45761f61e68c04a812bffe0129cef2
+ms.sourcegitcommit: 4e1647d19501b37860d9fc79370fa4347f76f85f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053609"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43079458"
 ---
 # <a name="plan-for-microsoft-365-government---gcc-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-GCC
 
@@ -82,75 +82,11 @@ Dopo aver deciso che il servizio è appropriato per l'organizzazione, avviare il
 |-----------|------------|
 | ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto decisionale|<ul><li>Decidere se modificare le impostazioni di sicurezza di Microsoft 365 Government-GCC predefinite, risolvendo in primo luogo l'impatto delle eventuali modifiche apportate.</li></ul> |
 
-## <a name="step-4-understand-which-capabilities-are-currently-unavailable-or-disabled-by-default"></a>Passaggio 4. Informazioni sulle funzionalità attualmente non disponibili o disabilitate per impostazione predefinita. 
+## <a name="step-4-understand-which-capabilities-are-currently-unavailable-or-disabled-by-default"></a>Passaggio 4. Informazioni sulle funzionalità attualmente non disponibili o disabilitate per impostazione predefinita.
 
 Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune differenze tra i piani di Microsoft 365 Government-GCC e Enterprise. Fare riferimento alla tabella seguente per vedere quali funzionalità sono disponibili.
 
-|                             | Funzionalità                     | GCC            |
-|-----------------------------|-----------------------------|----------------|
-| Base | Accesso | Disponibile |
-| | Icone di presenza | Disponibile |
-| | Presenza unificata (Skype for business e teams Unified) | Disponibile |
-| Attività | Feed | Disponibile |
-|  | Attività personali | Disponibile |
-| Chat | Conversazione | Disponibile |
-| | File | Disponibile |
-| | Organigramma | Disponibile |
-| | Attività | Disponibile |
-| | Interoperabilità (1:1 Teams-chat Skype for business) | Disponibile |
-| Teams | Messaggio di canale | Disponibile |
-| | File di canale | Disponibile |
-| | Scheda OneNote | Nell'arretrato governativo |
-| | Inviare un canale tramite posta elettronica | Non disponibile |
-| | Aggiungi membro | Disponibile |
-| | Accesso guest | Disponibile |
-| Riunioni | Pianificare una riunione | Disponibile |
-| | Partecipare a una riunione | Disponibile |
-| | Riunione VoIP | Disponibile |
-| | Condivisione desktop | Disponibile |
-| | Dare e prendere il controllo della condivisione | Disponibile |
-| | Connettersi da una sala riunioni | Disponibile |
-| | Join anonimo | Disponibile |
-| | Registrazione cloud | Disponibile |
-| | Note riunione | Disponibile |
-| | Eventi dinamici | Disponibile |
-| | Riunioni federate | Disponibile |
-| | Supporto per Surface Hub | Disponibile |
-| Chiamate | Contatti | Disponibile |
-| | Storia | Disponibile |
-| | Segreteria telefonica | Disponibile |
-| | Chiamata VoIP | Disponibile |
-| | Skype for business-teams Calling | Disponibile |
-| | Piani di chiamata | Disponibile |
-| | Servizi di audioconferenza (per consentire ai partecipanti alla riunione di partecipare tramite PSTN) | Disponibile |
-| | Routing diretto di Microsoft Phone System | Disponibile |
-| | Sala di attesa per i chiamanti PSTN | Disponibile |
-| | Coda di chiamata | Disponibile |
-| | Supporto di boss e delegati | Disponibile |
-| | Trasferimento consultivo e sicuro | Disponibile |
-| | Non disturbare l'innovazione | Disponibile |
-| | Anello distintivo | Disponibile |
-| | 1:1 per raggruppare le escalation delle chiamate con team, Skype for business e partecipanti PSTN | Disponibile |
-| | Inoltra al gruppo | Disponibile |
-| | Trasferimento a chiamata PSTN | Disponibile |
-| | Piani per chiamate di emergenza | Disponibile |
-| | Supporto per i telefoni SIP certificati esistenti | Disponibile |
-| | USB HID | Disponibile |
-| | eDiscovery per le chiamate e le riunioni | Disponibile |
-| | Operatore automatico organizzazione | Disponibile |
-| | Supporto per Skype consumer-teams Call | Disponibile |
-| File | Recente | Disponibile |
-| | Microsoft Teams | Disponibile |
-| Store | App Store | Disponibile |
-| Ricerca | Messaggi | Disponibile |
-| | Persone | Disponibile |
-| | File | Disponibile |
-| | Comandi barra | Disponibile |
-| Conformità | Ricerca di contenuto di conformità | Disponibile |
-| | Conservazione | Disponibile |
-| | Ricerca nel log di controllo | Disponibile |
-| | Blocco legale | Disponibile |
-| | eDiscovery | Disponibile |
+[Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description)
 
 > [!Note]
 > Una volta che altri carichi di lavoro saranno completamente disponibili nel cloud GCC, questi saranno resi disponibili in teams quando verrà completato il completamento di tutte le operazioni di integrazione.

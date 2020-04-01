@@ -1,7 +1,7 @@
 ---
 title: Pianificare l'implementazione di Microsoft 365 Government-GCC High Deployment-Microsoft Teams
 author: lolajacobsen
-ms.author: lolaj
+ms.author: heidip
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e3c44867b14a4b3bf83a45cf1dbbb37151c648a8
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+ms.openlocfilehash: 7be9916a1c51b7e98467d1e8c44a18dd6d227d35
+ms.sourcegitcommit: 4e1647d19501b37860d9fc79370fa4347f76f85f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161591"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43079418"
 ---
 # <a name="plan-for-microsoft-365-government---gcc-high-deployments"></a>Pianificare le distribuzioni di Microsoft 365 Government-GCC High
 
@@ -74,76 +74,7 @@ Dopo aver deciso che il servizio è appropriato per l'organizzazione, avviare il
 
 Per soddisfare le esigenze dei clienti del cloud governativo, esistono alcune differenze tra i team di Microsoft 365 Government-GCC High e i team nei piani aziendali. Fare riferimento alla tabella seguente per vedere quali funzionalità sono disponibili.
 
-|                             | Funzionalità                     | GCC High       |
-|-----------------------------|-----------------------------|----------------|
-| Base | Accesso | Disponibili |
-| | Icone di presenza | Disponibili |
-| | Presenza unificata (Skype for business e teams Unified) | Disponibili |
-| | Client Linux | Nell'arretrato governativo |
-| Attività | Feed | Disponibili |
-|  | Attività personali | Disponibili |
-| Chat | Conversazione | Disponibili |
-| | File | Disponibili |
-| | Organigramma | Disponibili |
-| | Attività | Disponibili |
-| | Interoperabilità (1:1 Teams-chat Skype for business) | Disponibili |
-| Teams | Messaggio di canale | Disponibili |
-| | File di canale | Disponibili |
-| | Scheda OneNote | Nell'arretrato governativo |
-| | Inviare un canale tramite posta elettronica | Non disponibile |
-| | Aggiungi membro | Disponibili |
-| | Accesso guest | Nell'arretrato governativo |
-| Riunioni | Pianificare una riunione | Disponibili |
-| | Partecipare a una riunione | Disponibili |
-| | Riunione VoIP | Disponibili |
-| | Condivisione desktop | Disponibili |
-| | Dare e prendere il controllo della condivisione | Disponibili |
-| | Connettersi da una sala riunioni | Disponibili |
-| | Join anonimo | Disponibili |
-| | Registrazione cloud | Nell'arretrato governativo |
-| | Note riunione | Disponibili |
-| | Riunioni broadcast | Nell'arretrato governativo |
-| | Riunioni federate intra-cloud (GCCH a GCCH) | Disponibili |
-| | Supporto per Surface Hub | Nell'arretrato governativo |
-| Chiamate | Contatti | Disponibili |
-| | Storia | Disponibili |
-| | Casella vocale | Disponibili |
-| | Chiamata VoIP | Disponibili |
-| | Skype for business-teams Calling | Disponibili |
-| | Piani per chiamate | Non disponibile |
-| | Servizi di audioconferenza (per consentire ai partecipanti alla riunione di partecipare tramite PSTN) | Disponibili |
-| | Routing diretto di Microsoft Phone System | Disponibili |
-| | Sala di attesa per i chiamanti PSTN | Nell'arretrato governativo |
-| | Coda di chiamata | Nell'arretrato governativo |
-| | Supporto di boss e delegati | Nell'arretrato governativo |
-| | Trasferimento consultivo e sicuro | Nell'arretrato governativo |
-| | Non disturbare l'innovazione | Nell'arretrato governativo |
-| | Anello distintivo | Nell'arretrato governativo |
-| | 1:1 per raggruppare le escalation delle chiamate con team, Skype for business e partecipanti PSTN | Nell'arretrato governativo |
-| | Inoltra al gruppo | Nell'arretrato governativo |
-| | Trasferimento a chiamata PSTN | Nell'arretrato governativo |
-| | Piani per chiamate di emergenza | Nell'arretrato governativo |
-| | Supporto per i telefoni SIP certificati esistenti | Nell'arretrato governativo |
-| | USB HID | Disponibili |
-| | eDiscovery per le chiamate e le riunioni | Disponibili |
-| | Operatore automatico organizzazione | Nell'arretrato governativo |
-| | Supporto per Skype consumer-teams Call | Non disponibile |
-| File | Recente | Disponibili |
-| | Microsoft Teams | Disponibili |
-| Negozio | App Store | Non disponibile |
-| Ricerca | Messaggi | Disponibili |
-| | Persone | Disponibili |
-| | File | Disponibili |
-| | Comandi barra | Disponibili |
-| Conformità | Ricerca di contenuto di conformità | Disponibili |
-| | Conservazione | Disponibili |
-| | Ricerca nel log di controllo | Disponibili |
-| | Blocco legale | Disponibili |
-| | eDiscovery | Disponibili |
-
-|    |     |
-|-----------|------------|
-| ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto decisionale|<ul><li>Decidere se il set di funzionalità teams soddisfa le esigenze dell'organizzazione.</li></ul> |
+[Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description)
 
 ## <a name="step-5-plan-for-governance"></a>Passaggio 5. Pianificare la governance
 

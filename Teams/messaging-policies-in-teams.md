@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 description: Informazioni sui criteri di messaggistica e sul modo in cui possono essere usati per controllare la messaggistica di chat in teams.
-ms.openlocfilehash: 476fd2cf77b7ec57a0279d71b614dc50395b3023
-ms.sourcegitcommit: 62969bd1c3a74412aa692709d497b8c6c5992c5c
+ms.openlocfilehash: a589b676a6c1da24eae7a25218fcfd449160f374
+ms.sourcegitcommit: 4e1647d19501b37860d9fc79370fa4347f76f85f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43059410"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43079438"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in teams
 
@@ -60,11 +60,11 @@ Se si applica un criterio a più utenti, selezionare ognuno di essi facendo clic
 1. Accedere ai > **criteri di messaggistica**dell'interfaccia di **amministrazione di Microsoft teams**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
 3. Scegliere **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
+4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 5. Al termine dell'aggiunta di utenti, selezionare **Salva**.
 
 > [!NOTE]
-> Non è possibile eliminare un criterio se gli utenti sono assegnati. Devi prima assegnare un criterio diverso a tutti gli utenti interessati, quindi puoi eliminare il criterio originale.
+> Non è possibile eliminare un criterio a cui sono utenti. È prima di tutto necessario assegnare un criterio diverso a tutti gli utenti interessati, quindi sarà possibile eliminare il criterio originale.
 
 <!--- End zone marker here--->
 
@@ -92,7 +92,7 @@ Usare le impostazioni seguenti per modificare i criteri di messaggistica globale
 - **Consenti anteprime URL** Usare questa impostazione per attivare o disattivare l'anteprima automatica degli URL nei messaggi.
 - **Consentire agli utenti di tradurre i messaggi** Attivare questa impostazione per consentire agli utenti di tradurre automaticamente i messaggi di teams nella lingua specificata dalle impostazioni della lingua personale per Office 365.
 - **Consentire all'utilità di lettura immersiva di visualizzare i messaggi** Attivare questa impostazione per consentire agli utenti di visualizzare i messaggi in Microsoft immersive Reader. Immersive Reader è uno strumento di apprendimento che offre un'esperienza di lettura a schermo intero per aumentare la leggibilità del testo.
-- **Inviare messaggi urgenti con le notifiche prioritarie** Se si attiva questa opzione, gli utenti possono inviare un messaggio che usa le notifiche prioritarie. Le notifiche prioritarie avvisano gli utenti ogni 2 minuti per un periodo di 20 minuti o finché i messaggi non vengono raccolti e letti dal destinatario, massimizzando la probabilità che il messaggio venga raccolto e agito in modo tempestivo.   [!INCLUDE [pri-message-offer](includes/pri-message-offer.md)]
+- **Inviare messaggi urgenti con le notifiche prioritarie** Se si attiva questa opzione, gli utenti possono inviare messaggi usando le [notifiche prioritarie](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462). Le notifiche prioritarie avvisano gli utenti ogni 2 minuti per un periodo di 20 minuti o finché i messaggi contrassegnati come *urgenti* vengono prelevati e letti dal destinatario, massimizzando la probabilità che il messaggio venga agito in modo tempestivo.   [!INCLUDE [pri-message-offer](includes/pri-message-offer.md)]
 - **Creazione di messaggi audio** 
   > [!Important]
   > I messaggi audio non vengono acquisiti in eDiscovery Reporting. 
