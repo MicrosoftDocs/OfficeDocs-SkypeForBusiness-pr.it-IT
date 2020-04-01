@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_RemoteWorkers
 - remotework
-ms.openlocfilehash: a77a96e13e43be436bbf50411f47c6a515706aa4
-ms.sourcegitcommit: f96d66d08a9d6993edbb9554738dc8236d901933
+ms.openlocfilehash: 979dea70287f82b34ef6cb0f38ec31fa58610d3d
+ms.sourcegitcommit: ce6b6b57eb9683649f589b747163110bf42ae420
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053539"
+ms.lasthandoff: 03/31/2020
+ms.locfileid: "43062673"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -96,6 +96,26 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
         </a>
     </li>
     <li>
+        <a href="https://microsoftteams.eventbuilder.com/teamschannels"target="_blank">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/office/media/icons/users-people.svg" alt="Users/people" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Esplorare team e canali in Teams</h3>
+                        <p>Informazioni su come semplificare un progetto e la collaborazione tra gruppi di lavoro.</p>
+                        <p><i>Gruppo di destinatari: utenti finali</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
+    <li>
         <a href="https://aka.ms/LearnTeamsApps"target="_blank">
         <div class="cardSize">
             <div class="cardPadding">
@@ -156,26 +176,6 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
         </a>
     </li>
     <li>
-        <a href="https://docs.microsoft.com/MicrosoftTeams/upgrade-workshops-landing-page"target="_blank">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/migration-teams.svg" alt="Migration arrow symbol" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Workshop di pianificazione dell'aggiornamento</h3>
-                        <p>Pianificare e implementare un aggiornamento efficace a Teams</p>
-                        <p><i>Gruppo di destinatari: professionisti IT, responsabili del cambio di adozione</i></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
         <a href="https://microsoftteams.eventbuilder.com/FLWValueWebinar"target="_blank">
         <div class="cardSize">
             <div class="cardPadding">
@@ -215,8 +215,29 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
         </div>
         </a>
     </li>  
+    <li>
+        <a href="https://docs.microsoft.com/MicrosoftTeams/upgrade-workshops-landing-page"target="_blank">
+        <div class="cardSize">
+            <div class="cardPadding">
+                <div class="card">
+                    <div class="cardImageOuter">
+                        <div class="cardImage">
+                            <img src="https://docs.microsoft.com/office/media/icons/migration-teams.svg" alt="Migration arrow symbol" />
+                        </div>
+                    </div>
+                    <div class="cardText">
+                        <h3>Workshop di pianificazione dell'aggiornamento</h3>
+                        <p>Pianificare e implementare un aggiornamento efficace a Teams</p>
+                        <p><i>Gruppo di destinatari: professionisti IT, responsabili del cambio di adozione</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </a>
+    </li>
         </ul>
         </li>
     </ul>
     </div>
 </div> 
+ 
