@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare i lavoratori degli enti pubblici che lavorano da remoto a essere produttivi con Microsoft Teams, in particolare se lavorano da casa in risposta all'epidemia di COVID-19 (Coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3ba76e667b7dc5aeb3ae83b2d2a19d5e4da5d653
-ms.sourcegitcommit: a2b2ae17a35f530f797504bb85b44f1a0f561a7d
+ms.openlocfilehash: 35bd251b4b8ef6a13263148c5fbb2245256dad3f
+ms.sourcegitcommit: 4e1647d19501b37860d9fc79370fa4347f76f85f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42983845"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43079388"
 ---
 # <a name="support-remote-government-workers-using-microsoft-teams"></a>Supporto per i lavoratori remoti degli enti pubblici con Microsoft Teams
 
@@ -57,7 +57,7 @@ Pronti per distribuire Teams agli utenti? È possibile trovare questi interessan
 
 Condividere queste risorse e video con gli utenti finali per aiutarli a iniziare rapidamente:
 
-  - Scaricare la **[Guida introduttiva per enti pubblici](https:aka.ms/quickstartgov)** per apprendere le basi di Teams.
+  - Scaricare la **[Guida introduttiva per enti pubblici](https://aka.ms/quickstartgov)** per apprendere le basi di Teams.
 
   - Guardare i **[brevi video introduttivi](https://support.office.com/article/video-what-is-microsoft-teams-422bf3aa-9ae8-46f1-83a2-e65720e1a34d?wt.mc_id=otc_microsoft_teams)** per avere istruzioni dettagliate su Teams e i **[video sulle riunioni](https://support.office.com/article/join-a-teams-meeting-078e9868-f1aa-4414-8bb9-ee88e9236ee4)** per avere informazioni sull'utilizzo delle riunioni in Teams.
 
