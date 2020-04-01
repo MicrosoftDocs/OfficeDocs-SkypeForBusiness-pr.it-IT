@@ -16,19 +16,19 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8fc2a66e2414350a56874583af6a00f688450f0e
-ms.sourcegitcommit: 996ae0d36ae1bcb3978c865bb296d8eccf48598e
+ms.openlocfilehash: 8cee6937a1bdc2bef6d2184066cb32a4aa94d8e6
+ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43068518"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43096851"
 ---
 # <a name="set-up-the-call-me-feature-for-your-users"></a>Configurare la funzionalità Chiamami per gli utenti
 
 In Microsoft teams, la funzionalità **chiamami** offre agli utenti un modo per partecipare alla parte audio di una riunione tramite telefono. Questa operazione è utile in scenari in cui l'uso di un computer per l'audio potrebbe non essere possibile. Gli utenti ottengono la parte audio della riunione tramite il telefono cellulare o la linea di terra e la parte di contenuto&mdash;della riunione, quando un altro partecipante alla riunione condivide lo schermo&mdash;o riproduce un video nel computer.
 
 > [!IMPORTANT]
-> Durante la durata del focolaio di COVID-19, è consigliabile che gli utenti partecipino alle riunioni facendo clic sul pulsante **partecipa alla riunione teams** invece di effettuare la chiamata tramite i numeri di conferenza PSTN o usando **chiama**. Questo consente di garantire l'audio di qualità durante i periodi in cui il volume delle riunioni elevato causa la congestione della rete PSTN.
+> Durante la durata del focolaio di COVID-19, è consigliabile che gli utenti partecipino alle riunioni facendo clic sul pulsante **partecipa alla riunione teams** invece di effettuare la chiamata tramite i numeri di conferenza PSTN o usando **chiama**</strong>. Questo vale principalmente per la congestione delle infrastrutture di telefonia dei paesi interessati da COVID-19. Evitando chiamate PSTN, è probabile che si verifichi una qualità audio migliore. 
 
 ## <a name="the-user-experience"></a>Esperienza utente
 

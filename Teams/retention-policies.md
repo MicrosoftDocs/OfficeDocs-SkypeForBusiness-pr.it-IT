@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a9097dfc43ca0f70d37b0051e6b0e10283da26c3
-ms.sourcegitcommit: e710bb8dbbd084912cbf509896515a674ab5e19f
+ms.openlocfilehash: e2c918a8276be2eeab0a125a1661b70b42c6b069
+ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033390"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43097001"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
@@ -82,7 +82,7 @@ Ecco alcune considerazioni e limitazioni da tenere presenti quando si usano i cr
 
 - Teams non supporta impostazioni di conservazione avanzate, ad esempio la possibilità di applicare un criterio a contenuti che includono parole chiave o informazioni sensibili. Attualmente, i criteri di conservazione di Teams si applicano a tutti i contenuti di messaggi di chat e/o canali.
 
-- Potrebbero essere necessari fino a tre giorni per pulire i messaggi scaduti in Teams. I criteri di conservazione di Teams elimineranno i messaggi di chat e canali al termine del periodo di conservazione. Tuttavia, potrebbero essere necessari fino a tre giorni per pulire i messaggi ed eliminarli definitivamente. Inoltre, i messaggi di chat e canali saranno disponibili per la ricerca tramite gli strumenti di eDiscovery tra il periodo successivo alla scadenza del periodo di conservazione e quello di eliminazione definitiva dei messaggi.
+- I team possono richiedere fino a tre o sette giorni per pulire i messaggi scaduti. I criteri di conservazione di Teams elimineranno i messaggi di chat e canali al termine del periodo di conservazione. Tuttavia, potrebbero essere necessarie fino a tre o sette giorni per pulire questi messaggi e eliminarli definitivamente. Inoltre, i messaggi di chat e canali saranno disponibili per la ricerca tramite gli strumenti di eDiscovery tra il periodo successivo alla scadenza del periodo di conservazione e quello di eliminazione definitiva dei messaggi.
 
 ### <a name="multiple-retention-policies-and-the-principles-of-retention"></a>Più criteri di conservazione e i principi di conservazione
 

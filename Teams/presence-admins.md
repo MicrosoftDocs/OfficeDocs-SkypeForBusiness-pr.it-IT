@@ -16,16 +16,16 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7e0d7ef2fa7ae12f660bf6b77ba7c45a8c49ab10
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
-ms.translationtype: HT
+ms.openlocfilehash: ea756b24a0292a35d4e47252383bfc954fcb8fa7
+ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41863197"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43096971"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
-La presenza è inclusa nel profilo degli utenti di Microsoft Teams (e ovunque in Office 365) e indica la disponibilità e lo stato correnti dell'utente. Per impostazione predefinita, tutti gli utenti dell'organizzazione che usano Teams possono vedere (praticamente in tempo reale) se gli altri utenti sono disponibili online.
+La presenza fa parte del profilo di un utente in Microsoft Teams (e in tutto Office 365) che indica la disponibilità e lo stato correnti dell'utente ad altri utenti. Per impostazione predefinita, tutti gli utenti dell'organizzazione che usano Teams possono vedere (praticamente in tempo reale) se gli altri utenti sono disponibili online.
 
 > [!IMPORTANT]
 > Se si disinstalla il client di Skype for Business dopo aver spostato un utente in modalità **Solo Teams**, l’icona di presenza smetterà di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Soluzione alternativa: per visualizzare la presenza in Outlook (e in altre app di Office) è necessario installare Skype for Business, anche se Teams viene eseguito in modalità **Solo Teams**. Microsoft è a conoscenza del problema e sta lavorando per risolverlo.
@@ -33,8 +33,6 @@ La presenza è inclusa nel profilo degli utenti di Microsoft Teams (e ovunque in
 La presenza di Teams in Outlook è supportata nell'applicazione desktop di Outlook 2013 e versioni successive.
 
 ## <a name="presence-states-in-teams"></a>Stati di presenza in Teams
-
-Gli stati di presenza degli utenti disponibili in Teams sono:
 
 |Utente configurato|App configurata|
 |:--- |:---|
@@ -56,14 +54,16 @@ Gli stati di presenza degli utenti disponibili in Teams sono:
 ||![Cerchio rosso trasparente con linea diagonale, indica Bloccato](media/Presence_Blocked.png) Bloccato |
 || ![Cerchio viola con freccia, indica Fuori sede](media/Presence_OOF.png) Fuori sede|
 |||
- 
-Gli utenti possono impostare manualmente lo stato corrente di presenza su alcune opzioni e quest'ultimo verrà mostrato a tutti gli altri utenti. I dettagli aggiuntivi sulla presenza dell'utente vengono aggiornati automaticamente. I cambiamenti di stato si basano sulle attività utente (Disponibile, Assente), gli stati del calendario di Outlook (In riunione) o gli stati dell'app Teams (Chiamata in corso, Presentazione in corso), insieme agli stati inclusi nell'elenco. È presente un timeout di inattività di 15 minuti, in seguito al quale lo stato di presenza corrente viene impostato su Assente.
 
-Gli utenti ricevono tutti i messaggi delle chat di Teams, indipendentemente dallo stato di presenza. Se un utente è offline quando riceve un messaggio, questo apparirà nella chat di Teams non appena l'utente sarà nuovamente online. Se un utente è sullo stato Non disturbare, riceverà comunque i messaggi delle chat ma non verrà mostrata la notifica del banner.
+Gli Stati di presenza configurati dall'app si basano sulle attività degli utenti (disponibile, assente), sugli Stati del calendario di Outlook (in una riunione) o sugli Stati dell'app Teams (in una chiamata, presentazione).
 
-Gli utenti ricevono le chiamate con qualsiasi stato di presenza, tranne gli stati Non disturbare, per i quali le chiamate in arrivo vengono reindirizzate alla segreteria telefonica. Se il destinatario ha bloccato il chiamante, l'utente non riceverà la chiamata e il chiamante visualizzerà la presenza del destinatario come Offline.
+Quando si blocca il computer o quando si entra in modalità inattiva o sospensione, lo stato di presenza corrente cambia in via. Per dispositivi mobili, lo stato presenza viene modificato in via ogni volta che l'app teams è in background.
 
-Gli utenti possono aggiungere persone al proprio elenco degli accessi prioritari andando in **Impostazioni** > **Privacy** in Teams. Le persone con accesso prioritario possono contattare l'utente anche con lo stato Non disturbare.
+Gli utenti ricevono tutti i messaggi delle chat di Teams, indipendentemente dallo stato di presenza. Se un utente è offline quando riceve un messaggio, questo apparirà nella chat di Teams non appena l'utente sarà nuovamente online. Se un utente è in non disturbare, l'utente riceverà ancora messaggi di chat, ma le notifiche banner non vengono visualizzate.
+
+Gli utenti ricevono chiamate in tutti gli Stati di presenza, ad eccezione di non disturbare, in cui le chiamate in arrivo vanno alla segreteria telefonica. Se il destinatario ha bloccato il chiamante, l'utente non riceverà la chiamata e il chiamante visualizzerà la presenza del destinatario come Offline.
+
+Gli utenti possono aggiungere persone al proprio elenco degli accessi prioritari andando in **Impostazioni** > **Privacy** in Teams. Le persone con accesso prioritario possono contattare l'utente anche quando l'utente è in non disturbare.
 
 ## <a name="admin-settings-in-teams-compared-to-skype-for-business"></a>Confronto tra le impostazioni di amministrazione di Teams e Skype for Business
 

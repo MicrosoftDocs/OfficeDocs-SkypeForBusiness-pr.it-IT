@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Informazioni sui fattori da prendere in considerazione prima di configurare gli eventi dinamici in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 816cfb3c971621a367dcf81d1ec555e9735bda9d
-ms.sourcegitcommit: a2b2ae17a35f530f797504bb85b44f1a0f561a7d
+ms.openlocfilehash: fac7ca633985a030fd611578466b52912cd3b445
+ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2020
-ms.locfileid: "42983862"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43096821"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare eventi dinamici in Microsoft Teams
 
@@ -92,7 +92,7 @@ La tabella seguente evidenzia le funzionalità e le funzionalità principali off
 |Consente più relatori |&#x2714; (Skype for business) |&#x2714; (Teams) |N/D  |
 |Invitare un relatore durante la riunione |&#x2714; (Skype for business) |X |N/D |
 |Partecipare a un relatore su Web e mobile |&#x2714; (Skype for business)  |X |N/D |
-|Relatori/partecipanti federati & Guest |&#x2714; (Skype for business)  | (presto disponibile) |N/D |
+|Relatori/partecipanti federati & Guest |&#x2714; (Skype for business)  | &#x2714; (Teams)  |N/D |
 |Relatore-accesso PSTN |X |&#x2714; (Teams) |N/D |
 |Presentare una schermata |X |&#x2714; (Teams) |N/D |
 |Presentare un PowerPoint (condivisione PPT) |&#x2714; |X (attenuato tramite condivisione dello schermo) |N/D |
