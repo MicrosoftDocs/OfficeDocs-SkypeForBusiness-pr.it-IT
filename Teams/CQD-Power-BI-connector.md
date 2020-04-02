@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
-ms.openlocfilehash: 393bfaf6348bb5ebc8c46df011387961d95cccfa
-ms.sourcegitcommit: 708270f1fecab6b7b44345d57a8e12bc36d19c8b
+ms.openlocfilehash: 73f19ef893aebbbd2c6ab9b79946097d6a834c36
+ms.sourcegitcommit: f0f2fa999c1ca4a1118377c7938a247f79217609
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/02/2020
-ms.locfileid: "43102347"
+ms.locfileid: "43106693"
 ---
 # <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
 
@@ -121,7 +121,7 @@ Tieni presente che, anche se il connettore è in anteprima, è improbabile che q
 
 ### <a name="im-trying-to-use-the-date-column-as-a-date-slicer-as-soon-as-i-convert-the-data-type-of-this-column-to-date-i-get-this-error"></a>Si sta cercando di usare la colonna data come filtro dei dati. Non appena si converte il tipo di dati di questa colonna in data, viene visualizzato questo messaggio di errore:
 
-  **Impossibile caricare i dati per questo oggetto visivo**: errore OLE DB o ODBC: [Expression. Error] non è possibile ripiegare l'espressione nell'origine dati. Provare un'espressione più semplice. 
+> **Impossibile caricare i dati per questo oggetto visivo**: errore OLE DB o ODBC: [Expression. Error] non è possibile ripiegare l'espressione nell'origine dati. Provare un'espressione più semplice. 
 
 I filtri dei dati di data non sono supportati con il connettore di Power BI. Per specificare un intervallo di date, applicare due filtri al report, specificando una data minore di e maggiore di.
 

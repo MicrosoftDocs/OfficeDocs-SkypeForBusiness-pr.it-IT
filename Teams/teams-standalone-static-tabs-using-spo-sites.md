@@ -12,12 +12,12 @@ ms.reviewer: vinbel
 search.appverid: MET150
 description: È possibile usare un sito o una pagina di SharePoint Online esistente e creare una scheda statica autonoma che può essere usata come portale Intranet per l'organizzazione.
 localization_priority: Normal
-ms.openlocfilehash: 772063a7444e9c31d2740ac48635dc0f2e367435
-ms.sourcegitcommit: aaae9df142ebb844a1fea27d3ae3b95130903d6a
+ms.openlocfilehash: 0215a2e1f79627f55bc14c00a099b25d2859b6f9
+ms.sourcegitcommit: f0f2fa999c1ca4a1118377c7938a247f79217609
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43100364"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43106633"
 ---
 # <a name="create-a-teams-intranet-portal-app-from-a-sharepoint-online-site-or-page"></a>Creare un'app del portale Intranet di un team da un sito o una pagina di SharePoint Online
 
@@ -31,8 +31,7 @@ Tenere presente che il processo visualizzato **deve usare** un sito o una pagina
 > Accertarsi che il caricamento laterale delle app team sia abilitato per il tenant. A seconda di dove ci si trova nel processo di migrazione del portale di amministrazione di teams, potrebbe essere necessario abilitarlo in teams > admin o in amministrazione > impostazioni > servizi e componenti aggiuntivi > Microsoft teams > app > app esterne, nella versione precedente del portale. 
 
 ## <a name="use-app-studio-to-create-your-standalone-sharepoint-online-app"></a>Usare App Studio per creare l'app autonoma di SharePoint Online
-
-Prima di iniziare:
+''' Prima di iniziare:
 1. È necessario conoscere l'URL di un sito del team o di una comunicazione moderna di SharePoint Online o di una pagina.
     - Questi siti avranno sempre */Teams/)* o */sites/* nei percorsi.
 
@@ -66,19 +65,12 @@ Iniziare seguendo la procedura seguente:
 10. Inserire il **contenturl e l'URL del sito Web**. 
 
 - **contentUrl**: {{SiteUrl}}/_layouts/15/teamslogon.aspx? SPFX = true&dest = {{sitePath}}  
-- **websiteUrl**: {{SiteUrl}} 
+- **web'iteUrl**: {{siteurl}}'' esempio **contenturl**:https://contoso.sharepoint.com/sites/ContosoHub/_layouts/15/teamslogon.aspx?SPFX=true&dest=/sites/ContosoHub 
 
-    Esempio **contenturl**:https://contoso.sharepoint.com/sites/ContosoHub/_layouts/15/teamslogon.aspx?SPFX=true&dest=/sites/ContosoHub 
+11. Passare a **Domains e Permissi'ns**. Verificare che la sezione domini validi contenga il nome di dominio di SharePoint Online.
+'' Esempio: contoso.sharepoint.com
 
-11. Passare a **domini e autorizzazioni**. Verificare che la sezione domini validi contenga il nome di dominio di SharePoint Online.
-
-    Esempio: contoso.sharepoint.com
-
-12. Aggiungere le seguenti proprietà **Single Sign-on per** l'app Web: 
-     
-     Esempio: **ID applicazione AAD**: **URL della risorsa**00000003-0000-0FF1-CE00-000000000000: {{subdomain}}. SharePoint. com
-
-    ![Single Sign-on Web App con ID e URL.](media/personal-app.png)
+12. Aggiungere le seguenti proprietà **Single Sign-on per** l'app Web:'' esempio:''''' **ID applicazione AAD**: **URL della risorsa**00000003-0000-0FF1-CE00-000000000000: {{subdomain}}. SharePoint. ![com '''''' web app Single Sign-on, con ID e URL.](media/personal-app.png)
 
 13. **Salvare** queste proprietà e quindi passare a **test e Distribuisci**. 
 
@@ -96,15 +88,15 @@ Per visualizzare la nuova scheda del desktop teams, passare ai puntini di sospen
 Se vuoi rendere disponibile la nuova app nel menu a sinistra in una posizione più alta, devi usare un'impostazione di criteri per le app. Questa impostazione è disponibile nella sezione amministrazione del team > criteri delle app > aggiungere un'applicazione bloccata. Quando si assegna il criterio a un utente per il test, la modifica verrà visualizzata 24 ore più tardi. Tenendo presente questo aspetto, decidi dove inserire l'app prima di tutto per evitare ritardi.
 
 Per visualizzare e testare la nuova app in un dispositivo mobile, aprire il cassetto dell'app toccando la freccia (**^**) sopra la barra delle schede nella parte inferiore dello schermo. Trova la tua app e passala nel dispositivo mobile.
-
+        
 > [!CAUTION]
 > Il supporto per dispositivi mobili è attualmente in anteprima per sviluppatori. Per abilitare l'anteprima dello sviluppatore, passare a impostazioni > informazioni e quindi abilitare la modalità anteprima sviluppatore.
 
 ## <a name="a-sample-manifestjson-file"></a>File manifest. JSON di esempio
 
-Il file JSON che si genera avrà un aspetto simile al seguente.
+Il file OCS che si genera avrà un aspetto simile al seguente.
 
-```JSON
+```JSON'
 { 
 
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json", 
@@ -119,7 +111,7 @@ Il file JSON che si genera avrà un aspetto simile al seguente.
 
     "developer": { 
 
-        "name": "Contoso", 
+        "name": "Contoso", ''
 
         "websiteUrl": "https://www.contoso.com", 
 
@@ -139,13 +131,13 @@ Il file JSON che si genera avrà un aspetto simile al seguente.
 
     "name": { 
 
-        "short": "Contoso Intranet", 
+        "short": "Contoso Intranet", '
 
         "full": "Intranet Portal for Contoso" 
 
-    }, 
-
-    "description": { 
+    },                     
+                        
+    "des    ription": {                 
 
         "short": "Intranet portal for Contoso", 
 
@@ -154,13 +146,13 @@ Il file JSON che si genera avrà un aspetto simile al seguente.
     }, 
 
     "accentColor": "#FFFFFF", 
-
+''
     "staticTabs": [ 
 
         { 
-
-            "entityId": "communicationSiteTab", 
-
+                                       
+                     "       nti        Id":       "com    unicat    onSi    eTab", 
+                                       
             "name": "Contoso Net", 
 
             "contentUrl": "https://contoso.sharepoint.com/sites/ContosoNet/_layouts/15/teamslogon.aspx?SPFX=true&dest=/sites/ContosoNet/", 
