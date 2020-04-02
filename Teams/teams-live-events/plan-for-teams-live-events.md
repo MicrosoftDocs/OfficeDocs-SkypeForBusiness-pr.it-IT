@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Informazioni sui fattori da prendere in considerazione prima di configurare gli eventi dinamici in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fac7ca633985a030fd611578466b52912cd3b445
-ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
+ms.openlocfilehash: 95baeaf25600853b7d6a2b4e18c548d1998f6789
+ms.sourcegitcommit: 708270f1fecab6b7b44345d57a8e12bc36d19c8b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43096821"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43102367"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare eventi dinamici in Microsoft Teams
 
@@ -87,25 +87,25 @@ La tabella seguente evidenzia le funzionalità e le funzionalità principali off
 |Coinvolgimento del pubblico-Yammer |&#x2714; |&#x2714; (esperienza integrata) |&#x2714; (esperienza integrata) |
 |Coinvolgimento del pubblico – moderato Q & A |&#x2714;  |&#x2714; |&#x2714; |
 |Client di produttori in Windows |&#x2714; (Skype for business) |&#x2714; (Teams) |&#x2714; (Stream, teams tramite l'incorporamento del flusso) |
-|Client di produttori su Mac |X  | &#x2714; (Teams) |&#x2714; (Stream, teams tramite l'incorporamento del flusso) |
-|Conteggio partecipanti nell'interfaccia utente del produttore |X  |&#x2714; (Teams) |&#x2714; (Stream, teams tramite l'incorporamento del flusso) |
+|Client di produttori su Mac |&#x274C;  | &#x2714; (Teams) |&#x2714; (Stream, teams tramite l'incorporamento del flusso) |
+|Conteggio partecipanti nell'interfaccia utente del produttore |&#x274C;  |&#x2714; (Teams) |&#x2714; (Stream, teams tramite l'incorporamento del flusso) |
 |Consente più relatori |&#x2714; (Skype for business) |&#x2714; (Teams) |N/D  |
-|Invitare un relatore durante la riunione |&#x2714; (Skype for business) |X |N/D |
-|Partecipare a un relatore su Web e mobile |&#x2714; (Skype for business)  |X |N/D |
-|Relatori/partecipanti federati & Guest |&#x2714; (Skype for business)  | &#x2714; (Teams)  |N/D |
-|Relatore-accesso PSTN |X |&#x2714; (Teams) |N/D |
-|Presentare una schermata |X |&#x2714; (Teams) |N/D |
-|Presentare un PowerPoint (condivisione PPT) |&#x2714; |X (attenuato tramite condivisione dello schermo) |N/D |
+|Invitare un relatore durante la riunione |&#x2714; (Skype for business) |&#x274C; |N/D |
+|Partecipare a un relatore su Web e mobile |&#x2714; (Skype for business)  |&#x274C; |N/D |
+|Relatori/partecipanti federati & Guest |&#x2714; (Skype for business)  |  &#x2714; (Teams) |N/D |
+|Relatore-accesso PSTN |&#x274C; |&#x2714; (Teams) |N/D |
+|Presentare una schermata |&#x274C; |&#x2714; (Teams) |N/D |
+|Presentare un PowerPoint (condivisione PPT) |&#x2714; |&#x274C; (attenuata tramite la condivisione dello schermo) |N/D |
 |Registrazione delle riunioni basata su cloud |&#x2714; |&#x2714; |&#x2714; |
-|Pubblicazione automatica della registrazione in streaming |X |X |&#x2714; |
-|Didascalie e sottotitoli dinamici |&#x2714; |&#x2714; |X |
+|Pubblicazione automatica della registrazione in streaming |&#x274C; |&#x274C; |&#x2714; |
+|Didascalie e sottotitoli dinamici |&#x2714; |&#x2714; |&#x274C; |
 |Didascalie nelle registrazioni di eventi Live |&#x2714; |&#x2714; |&#x2714; |
 |Controlli DVR partecipanti (pausa, rewind) |&#x2714; |&#x2714; |&#x2714; |
 |Supporto per i partner eCDN |&#x2714; (hive, Kollective, ramp) |&#x2714; (hive, Kollective, ramp) |&#x2714; (hive, Kollective, ramp) |
-|Report di presenza post-broadcast per produttori |&#x2714; |&#x2714; |X |
-|Analisi del sentimento del pubblico-votazioni in tempo reale & sondaggi |&#x2714; (Microsoft Pulse) |X |X |
+|Report di presenza post-broadcast per produttori |&#x2714; |&#x2714; |&#x274C; |
+|Analisi del sentimento del pubblico-votazioni in tempo reale & sondaggi |&#x2714; (Microsoft Pulse) |&#x274C; |&#x274C; |
 
-<sup>1</sup> i limiti impostati possono essere modificati.<br/>
+<sup>1</sup> i limiti impostati possono essere modificati. Verificare [i limiti e le specifiche per i team](../limits-specifications-teams.md).<br/>
 <sup>2</sup> puoi avere fino a 250 relatori e produttori in un evento Live, ma solo gli ultimi 10 che hanno parlato sono presenti nell'elenco.
 
 

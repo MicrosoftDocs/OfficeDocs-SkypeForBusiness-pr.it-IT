@@ -17,12 +17,12 @@ ms.collection:
 description: Esempi di come usare PowerShell per impostare i criteri in teams per controllare chi può contenere eventi dinamici nell'organizzazione e le caratteristiche disponibili negli eventi creati
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a7e9e96bde0112508da200bea741b9938e273a9d
-ms.sourcegitcommit: a6425a536746e129ab8bda3984b5ae63fb316192
+ms.openlocfilehash: cb43e2a7420ef6c121cea93fd4cd8e4cc40ddfb2
+ms.sourcegitcommit: 708270f1fecab6b7b44345d57a8e12bc36d19c8b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558616"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43102357"
 ---
 # <a name="use-powershell-to-set-live-events-policies-in-microsoft-teams"></a>Usare PowerShell per impostare i criteri degli eventi dinamici in Microsoft Teams
 
@@ -33,6 +33,9 @@ Puoi usare i cmdlet di Windows PowerShell seguenti per impostare e assegnare le 
 - [Grant-CsTeamsMeetingBroadcastPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsmeetingbroadcastpolicy?view=skype-ps)
 
 Ecco alcuni esempi.
+
+> [!NOTE]
+> Prima di poter eseguire questi cmdlet, è necessario essere connessi a PowerShell per Skype for business online. Per altre informazioni, vedere [gestire Skype for business online con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell).
 
 ## <a name="allow-users-to-schedule-live-events"></a>Consentire agli utenti di pianificare eventi dinamici 
 
@@ -142,5 +145,5 @@ Set-CsTeamsMeetingBroadcastPolicy -Identity Global -AllowBroadcastTranscription 
 
 ### <a name="related-topics"></a>Argomenti correlati
 - [Configurare gli eventi live di Teams](set-up-for-teams-live-events.md)
-
+- [Panoramica di PowerShell per Teams](../teams-powershell-overview.md)
 

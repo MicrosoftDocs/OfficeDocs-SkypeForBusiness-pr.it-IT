@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
-ms.openlocfilehash: c9987d05c5b057adf55791ffb2105d9ddb252722
-ms.sourcegitcommit: 98fcfc03c55917d0aca48b7bd97988f81e8930c1
+ms.openlocfilehash: 393bfaf6348bb5ebc8c46df011387961d95cccfa
+ms.sourcegitcommit: 708270f1fecab6b7b44345d57a8e12bc36d19c8b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42559490"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43102347"
 ---
 # <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
 
@@ -111,11 +111,21 @@ Nonostante l'uso di Power BI, non tutte le funzionalità di Power BI sono suppor
 
 3.  Oggetti **visivi personalizzati:** Mentre il connettore Call Quality dashboard funziona con un intervallo di elementi visivi personalizzati, non siamo in grado di garantire la compatibilità con tutti gli oggetti visivi personalizzati. Molti elementi visivi personalizzati si basano sull'uso delle colonne calcolate o dei dati importati, né supportati dai connettori DirectQuery.
 
-4.  **Riferimento ai dati memorizzati nella cache** Power BI attualmente non supporta il riferimento ai dati memorizzati nella cache da un connettore DirectQuery in alcun modo. Qualsiasi tentativo di fare riferimento ai risultati di una query comporterà una nuova query.
+4.  **Riferimento ai dati memorizzati nella cache** Power BI attualmente non supporta il riferimento ai dati memorizzati nella cache da un connettore DirectQuery in alcun modo. Qualsiasi tentativo di fare riferimento ai risultati di una query comporterà una nuova query. 
 
 5.  **Filtro dei dati relativi:** È supportata nel connettore Call Quality dashboard, ma solo con le dimensioni ora *inizio* e *ora di fine* . Anche se la dimensione *Data* può essere la scelta più ovvia per il filtro della data relativa, la *Data* non viene archiviata come oggetto data-ora e quindi non supporta il filtro della data relativa in Power bi.
 
 Tieni presente che, anche se il connettore è in anteprima, è improbabile che queste limitazioni cambino con la versione finale del connettore. La maggior parte di questi problemi è una restrizione alla progettazione di connettori DirectQuery in Power BI o fondamentale per la progettazione del modello di dati Call Quality dashboard.
+
+## <a name="troubleshooting"></a>Risoluzione dei problemi
+
+### <a name="im-trying-to-use-the-date-column-as-a-date-slicer-as-soon-as-i-convert-the-data-type-of-this-column-to-date-i-get-this-error"></a>Si sta cercando di usare la colonna data come filtro dei dati. Non appena si converte il tipo di dati di questa colonna in data, viene visualizzato questo messaggio di errore:
+
+  **Impossibile caricare i dati per questo oggetto visivo**: errore OLE DB o ODBC: [Expression. Error] non è possibile ripiegare l'espressione nell'origine dati. Provare un'espressione più semplice. 
+
+I filtri dei dati di data non sono supportati con il connettore di Power BI. Per specificare un intervallo di date, applicare due filtri al report, specificando una data minore di e maggiore di.
+
+In alternativa, se le date che si desidera visualizzare sono recenti, applicare un filtro relativo alla data per visualizzare solo i dati degli ultimi N giorni/settimane/mesi.
 
 ## <a name="error-codes"></a>Codici di errore
 
