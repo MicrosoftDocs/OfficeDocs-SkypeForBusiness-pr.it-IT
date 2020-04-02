@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
-ms.openlocfilehash: b89f2b439cf79cf90915c61771bb5a08ef27db99
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 9f166e8626d799cb95a447b453663b60079b0704
+ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824810"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43102086"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
@@ -220,7 +220,12 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 
 > [!IMPORTANT]
 > Attenersi alla seguente procedura:
->- Gli utenti che si desidera rendere disponibili per la chiamata tramite estensione devono avere un'estensione specificata come parte del numero di telefono o del numero di telefono cellulare assegnato nell'interfaccia di [amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users?view=o365-worldwide#use-the-new-admin-center-to-add-users).  Il formato necessario per immettere l'estensione nel campo numero di telefono dell'utente è `+<phonenumber>;ext=<extension>` o. `x<extension>`
+>- Gli utenti che si desidera rendere disponibili per la chiamata tramite estensione devono avere un'estensione specificata come parte di uno degli attributi telefonici seguenti definiti in Active Directory o nell'interfaccia di [amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/add-users/add-users?view=o365-worldwide#use-the-new-admin-center-to-add-users)di Azure Active Directory.
+>    - HomePhone
+>    - Dispositivi mobili/MobilePhone
+>    - TelephoneNumber/PhoneNumber
+>    - OtherTelephone
+>- Il formato necessario per immettere l'estensione nel campo numero di telefono dell'utente è `+<phonenumber>;ext=<extension>` o. `x<extension>`
 >- L'assegnazione di un'estensione nell'interfaccia di amministrazione di teams non è attualmente supportata. È necessario usare il comando [set-MsolUser](https://docs.microsoft.com/powershell/module/msonline/set-msoluser?view=azureadps-1.0) di PowerShell o l'interfaccia di amministrazione di Microsoft 365.
 >- Possono essere necessarie fino a 12 ore prima che siano disponibili modifiche agli attributi PhoneNumber e MobilePhone di AAD.
 >- NON definire un'estensione per il LineUri di un utente. Questa operazione non è attualmente supportata.
@@ -273,7 +278,7 @@ Inizialmente, gli orari di ufficio sono definiti per iniziare da 12:00 AM e term
 
  <!-- The **Apply to all days** option can be used to reset all days of the week to match the settings for that day. This makes setting weekdays and weekends to different hours easier.-->
 
-![Icona del numero 6, un callout nella schermata](media/teamscallout6.png) precedente per configurare un'interruzione (ad esempio un'interruzione di pranzo), selezionare **Aggiungi nuova ora** per il giorno della settimana per creare una nuova riga di tabella e selezionare nuovi orari di inizio e fine. È possibile impostare più interruzioni in orari di ufficio.
+![Icona del numero 6, un callout nello screenshot](media/teamscallout6.png) precedente per configurare un'interruzione (ad esempio un'interruzione di pranzo), selezionare **Aggiungi nuova ora** per il giorno della settimana per creare una nuova riga di tabella e selezionare nuovi orari di inizio e fine. È possibile impostare più interruzioni in orari di ufficio.
 
 Le opzioni di [flusso delle chiamate](#call-flow) disponibili dopo le ore sono le stesse delle opzioni disponibili durante l'orario di ufficio. Scorrere verso il basso nella pagina di immissione delle informazioni per impostare le opzioni del flusso delle chiamate orarie.
 
