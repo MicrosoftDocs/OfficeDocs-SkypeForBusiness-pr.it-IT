@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e1cdd071dfe19c50650d6f18605a5aeed5b39300
-ms.sourcegitcommit: c16451519e05b47bbb77e09dacd13ff212617e91
-ms.translationtype: HT
+ms.openlocfilehash: 0320a08a5358716472d382482cb9c825d0709e59
+ms.sourcegitcommit: 1bb3df681177db5ecc6afae3d3f3a46c251e5c23
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42327848"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43117434"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -37,6 +37,7 @@ Il componente aggiuntivo Riunione di Teams viene installato automaticamente per 
 ![Screenshot del componente aggiuntivo Riunione di Teams sulla barra multifunzione di Outlook](media/Teams-add-in-for-Outlook.png)
 
 > [!NOTE]
+> - Ci sono altre considerazioni se l'organizzazione esegue sia team che Skype for business. In alcune circostanze, il componente aggiuntivo teams non è disponibile in Outlook. Per informazioni dettagliate, vedere [eseguire l'aggiornamento da Skype for business a teams](https://docs.microsoft.com/microsoftteams/upgrade-to-teams-on-prem-overview#meetings) .
 > - Le autorizzazioni utente per eseguire il file Regsvr32.exe sono un requisito minimo per installare il componente aggiuntivo Riunione di Teams nel computer.
 > - Se gli utenti non vedono il componente aggiuntivo Riunione di Teams, puoi chiedere loro di chiudere Outlook e Teams, quindi di riavviare prima il client Team, poi di accedere a Teams e infine di riavviare il client Outlook nell’ordine appena esposto.
 > - Se si usa un'installazione di Office Outlook da Microsoft Store, il componente aggiuntivo Riunione di Teams non è supportato. Gli utenti che richiedono questo componente aggiuntivo possono installare la versione a portata di clic di Office, come descritto nell’articolo [Office su Windows 10 in modalità S](https://support.office.com/article/faq-office-on-windows-10-in-s-mode-717193b5-ff9f-4388-84c0-277ddf07fe3f).
@@ -73,7 +74,7 @@ Per altre informazioni, vedere [Pianificare riunioni con TrovaOrario](https://su
 
 ## <a name="authentication-requirements"></a>Requisiti di autenticazione
 
-Il componente aggiuntivo Riunione di Teams richiede agli utenti di accedere a Teams con l'Autenticazione moderna. Se non viene usato questo metodo per eseguire l'accesso, sarà possibile comunque usare il client Teams, ma non sarà possibile pianificare riunioni online di Teams usando il componente aggiuntivo per Outlook. È possibile correggere eseguendo una delle operazioni seguenti:
+Il componente aggiuntivo Riunione di Teams richiede agli utenti di accedere a Teams con l'Autenticazione moderna. Se gli utenti non usano questo metodo per accedere, saranno comunque in grado di usare il client teams, ma non saranno in grado di pianificare le riunioni online di teams usando il componente aggiuntivo per Outlook. È possibile correggere eseguendo una delle operazioni seguenti:
 
 - Se l'Autenticazione moderna non è configurata per l'organizzazione, è consigliabile eseguirne la configurazione.
 - Se l'Autenticazione moderna è configurata ma è stata annullata nella finestra di dialogo, è consigliabile richiedere agli utenti di eseguire di nuovo l'accesso con l'autenticazione a più fattori.
@@ -120,7 +121,7 @@ Se non si riesce a trovare il componente aggiuntivo Riunione di Teams per Outloo
 - Assicurarsi che siano stati applicati tutti gli aggiornamenti disponibili per il client desktop di Outlook.
 - Riavviare il client desktop di Teams.
 - Disconnettersi e quindi eseguire di nuovo l'accesso al client desktop di Teams.
-- Riavviare il client desktop di Outlook. (Verificare che Outlook non sia in esecuzione in modalità amministratore.)
+- Riavviare il client desktop di Outlook. Verificare che Outlook non sia in uso in modalità amministratore.
 - Assicurarsi che il nome dell'account utente connesso non contenga spazi. (Si tratta di un problema noto che verrà risolto in un prossimo aggiornamento.)
 - Assicurarsi che il Single Sign-On (SSO) sia abilitato.
 

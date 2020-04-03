@@ -19,24 +19,32 @@ ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.securityandcompliance
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3320681f606150be223433d6ab80e8e0ee41a42f
-ms.sourcegitcommit: f96d66d08a9d6993edbb9554738dc8236d901933
+ms.openlocfilehash: fbec8f7d246a4acfe241ef4f4d701cc9e1e6b28c
+ms.sourcegitcommit: 1bb3df681177db5ecc6afae3d3f3a46c251e5c23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053412"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43117424"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
 > [!IMPORTANT]
-> Come cliente di Office 365, si è proprietari e si controllano i dati. Microsoft non usa i dati per altro che fornire il servizio a cui si è sottoscritto. In qualità di provider di servizi non analizziamo la posta elettronica, i documenti o i team per la pubblicità o per scopi non correlati ai servizi. Microsoft non ha accesso al contenuto caricato. Come OneDrive for business e SharePoint Online, i dati dei clienti restano all'interno del tenant. Per altre informazioni sui dati relativi a attendibilità e sicurezza, visitare il [Centro protezione Microsoft](https://microsoft.com/trustcenter). Teams segue le stesse linee guida e i principi del Centro protezione Microsoft.
+> Per informazioni su come garantire al meglio **la sicurezza mentre tutti lavorano da casa durante l'epidemia di COVID-19**, leggere questi articoli:
+>  - [12 principali attività dei team di sicurezza per supportare il lavoro da casa](https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work)
+>  - [Ottimizzare la connettività di Office 365 per gli utenti remoti tramite uno split tunneling VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
+>  - Aggiornamento del 2 aprile 2020: [Guida alla sicurezza di teams](teams-security-guide.md)
+
 
 Microsoft teams è basato sul cloud di livello aziendale di Office 365 Hyper-Grade, offrendo le funzionalità avanzate di sicurezza e conformità che i nostri clienti si aspettano. Per altre informazioni sulla pianificazione della sicurezza in Office 365, leggere il contenuto di Office 365. [La roadmap di sicurezza di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/security-roadmap) è un buon punto di partenza. Per altre informazioni sulla pianificazione della conformità in Office 365, è possibile iniziare con [l'articolo piano per la sicurezza e la conformità](https://docs.microsoft.com/microsoft-365/compliance/plan-for-security-and-compliance) .
 
-In questo articolo verranno fornite ulteriori informazioni sulla sicurezza e la conformità specifiche per i team. È consigliabile rivedere i video di Microsoft Mechanics relativi alla sicurezza e alla conformità:
+
+In questo articolo verranno fornite ulteriori informazioni sulla sicurezza e la conformità specifiche per i team. Non perdere questi video di Microsoft Mechanics sulla sicurezza e la conformità:
 
 - [Elementi essenziali di Microsoft teams per it: sicurezza e conformità](https://youtu.be/91lHNKVVvQ4) (12:42 min)
 - [Controlli Microsoft teams per la sicurezza e la conformità](https://www.youtube.com/watch?v=Km4T4hMM__k) (10:54 min)
+
+> [!IMPORTANT]
+> Come cliente di Office 365, si è proprietari e si controllano i dati. Microsoft non usa i dati per altro che fornire il servizio a cui si è sottoscritto. In qualità di provider di servizi non analizziamo la posta elettronica, i documenti o i team per la pubblicità o per scopi non correlati ai servizi. Microsoft non ha accesso al contenuto caricato. Come OneDrive for business e SharePoint Online, i dati dei clienti restano all'interno del tenant. Per altre informazioni sui dati relativi a attendibilità e sicurezza, visitare il [Centro protezione Microsoft](https://microsoft.com/trustcenter). Teams segue le stesse linee guida e i principi del Centro protezione Microsoft.
 
 ## <a name="security"></a>Sicurezza
 
@@ -71,11 +79,11 @@ L'applicazione desktop Microsoft teams supporta AppLocker.  Per altre informazio
 
 ## <a name="compliance"></a>Conformità
 
-Teams offre una vasta gamma di informazioni utili per le aree di conformità, tra cui conformità delle comunicazioni per canali, chat e allegati, criteri di conservazione, protezione dalla perdita dei dati (DLP), eDiscovery e blocco legale per canali, chat e file, log di controllo ricerca, nonché gestione delle applicazioni per dispositivi mobili con Microsoft Intune. Sono state fornite informazioni su tutti questi argomenti e si può visitare il centro [conformità Microsoft 365](https://compliance.microsoft.com) o [Office 365 Security & Compliance Center](https://protection.microsoft.com) per gestire queste impostazioni.
+Teams offre una vasta gamma di informazioni utili per le aree di conformità, tra cui conformità delle comunicazioni per canali, chat e allegati, criteri di conservazione, protezione dalla perdita dei dati (DLP), eDiscovery e blocco legale per canali, chat e file, ricerca nel log di controllo e gestione delle applicazioni per dispositivi mobili con Microsoft Intune. Sono state fornite informazioni su tutti questi argomenti e si può visitare il centro [conformità Microsoft 365](https://compliance.microsoft.com) o [Office 365 Security & Compliance Center](https://protection.microsoft.com) per gestire queste impostazioni.
 
 ### <a name="communication-compliance"></a>Conformità delle comunicazioni
 
-La conformità delle comunicazioni in Microsoft 365 consente di aggiungere utenti ai criteri in ambito che possono essere configurati per esaminare le comunicazioni di Microsoft teams per il linguaggio offensivo, le informazioni riservate e le informazioni relative agli standard interni e normativi . Le comunicazioni chat e gli allegati associati sia in canali pubblici che privati, le singole chat e gli allegati possono essere analizzati per ridurre al minimo i rischi di comunicazione nell'organizzazione. Per altre informazioni su come configurare i criteri per individuare, acquisire e intervenire per le comunicazioni non appropriate per i team, vedere [conformità delle comunicazioni in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance).
+La conformità delle comunicazioni in Microsoft 365 consente di aggiungere utenti ai criteri in ambito che possono essere configurati per esaminare le comunicazioni di Microsoft teams per il linguaggio offensivo, le informazioni riservate e le informazioni relative agli standard interni e normativi. Le comunicazioni chat e gli allegati associati sia in canali pubblici che privati, le singole chat e gli allegati possono essere analizzati per ridurre al minimo i rischi di comunicazione nell'organizzazione. Per altre informazioni su come configurare i criteri per individuare, acquisire e intervenire per le comunicazioni non appropriate per i team, vedere [conformità delle comunicazioni in Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/communication-compliance).
 
 ### <a name="retention-policies"></a>Criteri di conservazione
 

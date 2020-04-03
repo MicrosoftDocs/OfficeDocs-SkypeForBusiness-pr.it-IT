@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0eca4b7c7c4708509eb33bc14e4514dc3f858980
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 344bf59d401e43c40c6f643b334c2f34311d6cbe
+ms.sourcegitcommit: 8665603fae8408ccbc083dd59cb01936ebe96c58
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837956"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43116692"
 ---
 # <a name="powershell-script-to-test-direct-routing-session-border-controller-connections"></a>Script di PowerShell per testare le connessioni del controller di bordo della sessione di routing diretto
 
@@ -36,3 +36,8 @@ Lo script Invia un test SIP al Runner di prova, attende il risultato e lo presen
 ## <a name="download-the-script-and-documentation"></a>Scaricare lo script e la documentazione
 
 Scaricare lo [script e la documentazione del client del tester SIP](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/sip-tester-client/siptesterclient.zip?raw=true).
+
+  > [!NOTE]
+  > Lo script client di SIP tester supporta solo adal.ps versione 3.19.8.1. Verrà restituito un errore se viene usata una versione più recente di adal.ps.
+  
+  

@@ -23,19 +23,20 @@ ms.custom:
 - Calling Plans
 ROBOTS: NOINDEX, NOFOLLOW
 description: Quando si ottengono numeri di telefono o porting (trasferendo) i numeri per l'organizzazione, potrebbe essere necessario ottenere assistenza e supporto tecnico presso il servizio di assistenza PSTN.
-ms.openlocfilehash: 3fe6353deb52911a4e0f0249f500a2a562e29ac1
-ms.sourcegitcommit: 33bec766519397f898518a999d358657a413924c
+ms.openlocfilehash: 58c32b8bf54ff6b1e9df689c6bcde184889b8462
+ms.sourcegitcommit: 8665603fae8408ccbc083dd59cb01936ebe96c58
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583076"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43116702"
 ---
 # <a name="pstn-service-desk-contact"></a>Contatto per il servizio di assistenza PSTN
 
-Se hai bisogno di assistenza per ottenere o trasferire numeri a noi, ma ti serve aiuto, facci sapere come puoi aiutarti in un messaggio di posta elettronica e inviarlo a noi. Nella richiesta di assistenza per la posta elettronica includere tutti i dettagli possibili e includere dettagli come l'ID organizzazione (ID tenant), i domini, i tipi di numeri di cui si ha bisogno di assistenza, il numero di numeri desiderati, la persona che autorizza l'account e altri dettagli importanti informazioni sul problema.
+Se hai bisogno di assistenza per ottenere o trasferire numeri a noi, ma ti serve aiuto, facci sapere come puoi aiutarti in un messaggio di posta elettronica e inviarlo a noi. Nella richiesta di assistenza per la posta elettronica includere tutti i dettagli possibili e includere dettagli come l'ID organizzazione (ID tenant), i domini, i tipi di numeri di cui si ha bisogno di assistenza, il numero di numeri desiderati, la persona che ha autorizzato l'account e altri dettagli importanti sul problema.
 
   - ID organizzazione (ID tenant) o domini attivi.
   - Tipi di numeri per cui serve assistenza (utente/abbonato, servizio/pedaggio o numero verde).
+    - Includere il prefisso (i)/Country/Region da cui si desiderano i numeri di telefono.
   - Quanti numeri è necessario (se si tratta di un numero per l'acquisizione).
   - Autorizzazione dell'utente per l'account e altri dettagli importanti in base alla richiesta.
 
