@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e147a300f628347b5e38837a3d277a78a4c593c4
-ms.sourcegitcommit: 29034bda30a8460eb18600785f785528d0944041
+ms.openlocfilehash: 68468455da96fc3b2790a832b6732d7211bd7733
+ms.sourcegitcommit: dc6108917392754d950cea47b92f871211bf4212
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42285748"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131144"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -32,11 +32,11 @@ Per usufruire dell'esperienza completa di Teams, è necessario che ogni utente s
 
 Le cassette postali di Exchange degli utenti possono essere ospitate online o in locale. Alcune funzionalità richiedono tuttavia una distribuzione ibrida per essere in posizione con il tenant di Office 365.
 
-Gli utenti ospitati in Exchange Online o Exchange dedicato a vNext possono usare tutte le funzionalità di teams. Possono creare e partecipare a team e canali, creare e visualizzare riunioni, chiamare e chattare, modificare le immagini del profilo utente e aggiungere e configurare connettori, schede e bot.
+Gli utenti ospitati in Exchange Online o Exchange dedicato a vNext possono usare tutte le funzionalità di teams. Possono creare e partecipare a team e canali, creare e visualizzare riunioni, chiamare e chattare, modificare le immagini del profilo utente (se il criterio della cassetta postale di Outlook sul Web lo consente) e aggiungere e configurare connettori, schede e bot.
 
 Gli utenti ospitati in Exchange Online dedicato (legacy) devono essere sincronizzati con Azure Active Directory in Office 365. Possono creare e partecipare a team e canali, aggiungere e configurare schede e bot e usare le funzionalità di chat e chiamate. Tuttavia, non possono modificare le immagini del profilo, gestire le riunioni, accedere ai contatti di Outlook o gestire i connettori.
 
-Gli utenti con cassette postali ospitate in locale devono essere sincronizzati con Azure Active Directory. Possono usare tutte le funzionalità dello scenario precedente, ma possono anche modificare l'immagine del profilo utente e gestire le riunioni, fornendo Exchange Server 2016 (aggiornamento cumulativo 3) o versioni successive, in fase di creazione locale.
+Gli utenti con cassette postali ospitate in locale devono essere sincronizzati con Azure Active Directory. Possono usare tutte le funzionalità dello scenario precedente, ma possono anche modificare l'immagine del profilo utente (se i criteri delle cassette postali di Outlook sul Web lo consentono) e gestire le riunioni, fornendo Exchange Server 2016 (aggiornamento cumulativo 3) o versioni successive, in fase di creazione locale.
 
 La tabella seguente fornisce un utile riferimento rapido per la disponibilità delle caratteristiche in base all'ambiente Exchange.
 
@@ -45,10 +45,10 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 
 | La cassetta postale dell'utente è ospitata in: | eDiscovery| Blocco&nbsp;legale | Conservazione| MGMT per team e canali |Creare e visualizzare riunioni in teams| Modificare l'immagine del profilo utente | Cronologia chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Segreteria telefonica |Aggiungere e configurare connettori|Aggiungere e configurare le schede|Aggiungere e configurare i bot| 
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Sì|Sì|Sì|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Sì|Sì|Supporto per più paesi|
-|**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Sì|Sì|Sì|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Sì|Sì|Supporto per più paesi|
-|**Exchange Online dedicato-legacy** (obbligatorio per la sincronizzazione con Azure ad)|Sì <sup>2</sup>|Sì <sup>2, 3</sup>|Sì <sup>4|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
-|**Exchange locale** (è necessario eseguire la sincronizzazione con Azure ad)|Sì <sup>2</sup>| Sì <sup>2, 3</sup> |Sì <sup>4|Sì|Sì (Exchange 2016 CU3 +)|Sì (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
+|**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Sì<sup>8</sup>|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
+|**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Sì<sup>8</sup>|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
+|**Exchange Online dedicato-legacy** (obbligatorio per la sincronizzazione con Azure ad)|Sì <sup>2</sup>|Sì <sup>2, 3</sup>|Sì <sup>4|Sì|No|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
+|**Exchange locale** (è necessario eseguire la sincronizzazione con Azure ad)|Sì <sup>2</sup>| Sì <sup>2, 3</sup> |Sì <sup>4|Sì|Sì (Exchange 2016 CU3 +)|Sì<sup>8</sup> (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
 
 <sup>1</sup> Exchange 2016 CU3 e versioni successive supportate.  
 
@@ -63,6 +63,8 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 <sup>6</sup> se uno dei proprietari di un team può aggiungere connettori, tutti gli altri membri del team saranno in grado di farlo, anche se le cassette postali vengono ospitate in locale.
 
 <sup>7</sup> solo contatti nella cartella Contatti predefinita. L'accesso ad altri contatti o cartelle secondarie non è supportato.
+
+<sup>8</sup> teams onora l'impostazione di [Outlook sul criterio delle cassette postali Web](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy) configurata dagli amministratori del tenant per controllare se gli utenti possono modificare l'immagine del profilo. Se l'impostazione **-SetPhotoEnabled** è disattivata nel criterio, gli utenti non possono aggiungere, modificare o rimuovere l'immagine del profilo. Ad esempio, se un utente carica un'immagine del profilo approvata dal reparto IT o HR dell'organizzazione, non è necessaria alcuna azione. Tuttavia, se un utente carica un'immagine non appropriata, cambia l'immagine in base ai criteri interni dell'organizzazione.
 
 ## <a name="requirements-to-get-the-most-out-of-microsoft-teams"></a>Requisiti per ottenere il massimo da Microsoft Teams
 
