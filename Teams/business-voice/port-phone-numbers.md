@@ -17,14 +17,19 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c9895875832e1d173366a4f6ef0c48abf662fc5d
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 1dab1673f32c6a3c902c761004e5720d8c61dbfb
+ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827401"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43096891"
 ---
 # <a name="move-port-phone-numbers-to-business-voice"></a>Trasferire numeri di telefono in Business Voice
+
+> [!IMPORTANT]
+> Le informazioni contenute in questo articolo sono applicabili solo a Business Voice **senza** Piano per chiamate. Business Voice con Piano per chiamate è disponibile solo in determinati paesi e regioni. Prima di leggere questo articolo, controllare la [disponibilità di Business Voice per paesi e aree geografiche](country-region-availability.md) per verificare se il proprio paese o area geografica supporta Business Voice con Piano di chiamata.
+>
+> Se il tenant si trova in un paese o un'area geografica che non supporta Business Voice con Piano per chiamate, vedere [Ottenere assistenza da parte di un rivenditore o un partner Microsoft](reseller-partner-support.md).
 
 Quando la procedura guidata Attività iniziali consente di configurare Business Voice, assegna numeri di telefono per la linea principale dell'azienda e per tutti gli utenti a cui è stata assegnata una licenza di Business Voice. Se si hanno già numeri di telefono che si vogliono mantenere nel passaggio a Business Voice, è possibile trasferirli con un processo denominato portabilità del numero di telefono. Dopo aver trasferito i numeri di telefono in Business Voice, è possibile assegnarvi utenti e servizi. I vecchi numeri sostituiscono i numeri temporanei assegnati dalla procedura guidata Attività iniziali.
 

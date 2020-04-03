@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare il personale remoto a essere produttivo quando lavora da casa in risposta all'epidemia di COVID-19 (coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 720a94f86bd8ca0d84d682b15d59461a4b9133fb
-ms.sourcegitcommit: 62969bd1c3a74412aa692709d497b8c6c5992c5c
+ms.openlocfilehash: 4df15c379d4232dafaea71114f68877dd7347989
+ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2020
-ms.locfileid: "43059400"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43096961"
 ---
 # <a name="faq-support-your-remote-workforce"></a>Domande frequenti: Supporto del personale remoto
 
@@ -42,6 +42,10 @@ Leggere in proposito il post di blog del 5 marzo 2020 di Jared Spataro, vicepres
 ### <a name="with-the-actions-that-microsoft-is-taking-do-we-anticipate-problems"></a>Le azioni intraprese da Microsoft consentiranno di evitare problemi?
 
 Anche se Microsoft sta facendo il possibile per evitare problemi, un picco inatteso in un'area a causa della diffusione del virus potrebbe creare problemi temporanei. Nonostante il monitoraggio attivo e l'aggiunta di capacità quando necessario, si potrebbe percepire un impatto negativo finché non saremo in grado di aggiungere capacità in queste aree. Inoltre, esistono situazioni esterne su cui Microsoft non ha il controllo. Riteniamo che anche gli ISP e gli operatori di telefonia stiano intraprendendo azioni proattive, ma alcuni potrebbero non essere in grado di gestire un carico maggiore con più persone che lavorano da casa.Stiamo lavorando nell'intero settore con particolare attenzione all'infrastruttura di rete. In caso di problemi di interruzione, consultare il Centro messaggi per informazioni sulle interruzioni correnti.
+
+### <a name="what-can-admins-do-if-attendees-are-having-trouble-joining-meetings-by-dialing-in-such-as-if-calls-arent-getting-through"></a>Cosa possono fare gli amministratori se i partecipanti hanno problemi a partecipare alle riunioni componendo il numero, ad esempio se le chiamate non vengono inoltrate?
+
+Nel corso dell'epidemia di COVID-19, si consiglia agli utenti di partecipare alle riunioni facendo clic sul pulsante **Partecipa alla riunione di Teams** anziché chiamare utilizzando i numeri della conferenza PSTN o utilizzando **Chiamami a**</strong>. Ciò è principalmente dovuto alla congestione delle infrastrutture telefoniche dei paesi colpiti da COVID-19. Evitando le chiamate PSTN, la qualità audio sarà probabilmente migliore. 
 
 ### <a name="what-are-the-general-microsoft-guidelines-regarding-network-optimization-for-microsoft-365-some-of-my-users-in-china-are-having-a-bad-experience-what-should-i-do-to-optimize-our-network"></a>Quali sono le linee guida generali di Microsoft relative all'ottimizzazione della rete per Microsoft 365? Alcuni miei utenti in Cina stanno avendo un'esperienza negativa, cosa occorre fare per ottimizzare la rete?
 

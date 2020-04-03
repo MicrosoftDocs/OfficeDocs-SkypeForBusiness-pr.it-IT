@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Panoramica di Microsoft 365 Business Voice e di come può aiutare le piccole e medie imprese a comunicare in modo più efficiente.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1b9093fe2fd7050e582132c79a932b4b6fd4925d
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: ecce1626a541c14c7175390c086acfa5eb0262f2
+ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824564"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43096871"
 ---
 # <a name="what-is-microsoft-365-business-voice"></a>Che cos'è Microsoft 365 Business Voice?
 
@@ -42,8 +42,9 @@ Business Voice è la scelta giusta se l'organizzazione ha un massimo di 300 uten
 * Microsoft 365 E3
 * Microsoft 365 Business
 
+Business Voice è disponibile in oltre 70 paesi e aree geografiche. La possibilità di configurare Business Voice autonomamente, di trasferire i numeri di telefono su Microsoft 365 e gestire i numeri di telefono in Microsoft 365 dipende dal paese o dalla regione in cui si trova il tenant di Microsoft 365. Per ulteriori informazioni, vedere [Disponibilità di Business Voice per paesi e aree geografiche](country-region-availability.md).
+
 > [!IMPORTANT]
-> Business Voice è attualmente disponibile in Canada e nel Regno Unito. Altri paesi e aree geografiche diventeranno disponibili nel 2020.
 >
 > Microsoft Teams e Business Voice funzionano solo quando le cassette postali degli utenti si trovano in Microsoft 365.  Le cassette postali ubicate in Exchange Server locale non sono supportate.
 

@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 704a08678bfb64cdbee223b555dfaa4fa6350892
-ms.sourcegitcommit: e710bb8dbbd084912cbf509896515a674ab5e19f
+ms.openlocfilehash: 87918e83aae6f56a3956336603decd41817cdd2a
+ms.sourcegitcommit: aaae9df142ebb844a1fea27d3ae3b95130903d6a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033370"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43100083"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -38,11 +38,11 @@ ms.locfileid: "43033370"
 
 Il blog del 4 marzo 2020 parla di [come gli istituti di istruzione possono rendere rapidamente operativi i programmi di apprendimento remoto con Microsoft Teams](https://aka.ms/teamseduremoteblog).
 
-L'apprendimento online può essere personale, coinvolgente e socialmente connesso tanto quanto l'apprendimento in classe. Gli studenti e i docenti possono mantenersi in contatto e aiutarsi a vicenda usando le conversazioni e sentirsi come se si incontrassero di persona usando le riunioni in tempo reale. I docenti possono tenere traccia dei progressi degli studenti nel lavoro quotidiano usando le attività. Nessuno si sentirà isolato. Molti studenti che usano l'apprendimento online pensano di avere più possibilità di esprimersi e riferiscono di sentirsi più in contatto con i propri docenti e coetanei rispetto al normale apprendimento in classe. E, proprio come in un'aula, gli insegnanti possono usare le app e le funzioni di Teams per supportare al meglio il proprio lavoro.
+L'apprendimento online può essere personale, coinvolgente e socialmente connesso tanto quanto l'apprendimento in classe. Gli studenti e i docenti possono mantenersi in contatto e aiutarsi a vicenda usando le conversazioni e sentirsi come se si incontrassero di persona usando le riunioni in tempo reale. I docenti possono tenere traccia dei progressi degli studenti nel lavoro quotidiano usando le attività. Nessuno si sentirà isolato. Molti studenti che usano l'apprendimento online pensano di avere più possibilità di esprimersi e riferiscono di sentirsi più in contatto con i propri docenti e coetanei rispetto al normale apprendimento in classe. E, proprio come in un'aula, i docenti possono usare le app e le funzioni di Teams per supportare al meglio il proprio lavoro.
 
 Microsoft Teams è un hub digitale che raggruppa conversazioni, contenuti, attività e app in un'unica posizione, permettendo ai docenti di creare ambienti di apprendimento stimolanti. È possibile creare classi collaborative, collegarsi a community di apprendimento professionale e comunicare con i colleghi, tutto grazie a un singolo strumento.
 
-All'interno di Teams gli insegnanti possono dialogare facilmente con gli studenti, condividere file e siti Web, creare un blocco appunti di OneNote per la classe e distribuire e assegnare voti alle attività. I blocchi appunti di OneNote per la classe predefiniti e la gestione delle attività end-to-end consentono ai docenti di organizzare lezioni interattive e fornire un feedback efficace e tempestivo. Gli amministratori e il personale scolastico possono tenersi aggiornati e collaborare usando team del personale per inviare comunicazioni e confrontarsi. I docenti possono condividere materiale didattico nelle community di formazione professionale.
+All'interno di Teams i docenti possono dialogare facilmente con gli studenti, condividere file e siti Web, creare un blocco appunti di OneNote per la classe e distribuire e assegnare voti alle attività. I blocchi appunti di OneNote per la classe predefiniti e la gestione delle attività end-to-end consentono ai docenti di organizzare lezioni interattive e fornire un feedback efficace e tempestivo. Gli amministratori e il personale scolastico possono tenersi aggiornati e collaborare usando team del personale per inviare comunicazioni e confrontarsi. I docenti possono condividere materiale didattico nelle community di formazione professionale.
 
 Seguire le procedure consigliate in questo articolo per iniziare a usare Teams per le proprie esigenze formative e le funzionalità per l'apprendimento a distanza. I team di classe possono essere usati per creare spazi di classe collaborativi, fornire una piattaforma di incontro virtuale, facilitare l'apprendimento con attività e feedback ed effettuare chiamate dal vivo con gli studenti.
 
@@ -54,7 +54,7 @@ Per altre informazioni sugli scenari di utilizzo di Teams, consultare i [webinar
 
 Teams sfrutta le funzionalità di Microsoft 365 per autenticare gli utenti e fornire servizi. È necessario creare identità per personale scolastico, insegnanti e studenti per facilitare la collaborazione. Se le identità non esistono già, seguire questa procedura.
 
-Occorre [abilitare le licenze di Teams per gli utenti](https://docs.microsoft.com/microsoft-365/education/intune-edu-trial/enable-microsoft-teams) e poi [assegnare le licenze agli utenti](teams-edu-licensing.md) prima che questi possano usare le funzionalità di Teams. Teams si basa su altre funzionalità di Microsoft 365, come [Gruppi di Office 365](Office-365-groups.md), [Exchange](Exchange-Teams-interact.md), [SharePoint e OneDrive](SharePoint-OneDrive-interact.md) per offrire possibilità di collaborazione. Se questi servizi sono abilitati, gli utenti avranno la migliore l'esperienza possibile di Teams. [Teams è supportato per gli utenti che hanno un account di posta elettronica su Google](https://docs.microsoft.com/microsoft-365/education/deploy/enabling-teams-for-education-for-google-users).
+Occorre [abilitare le licenze di Teams per gli utenti](https://docs.microsoft.com/MicrosoftTeams/teams-quick-start-edu?tutorial-step=2) e poi [assegnare le licenze agli utenti](teams-edu-licensing.md) prima che questi possano usare le funzionalità di Teams. Teams si basa su altre funzionalità di Microsoft 365, come [Gruppi di Office 365](Office-365-groups.md), [Exchange](Exchange-Teams-interact.md), [SharePoint e OneDrive](SharePoint-OneDrive-interact.md) per offrire possibilità di collaborazione. Se questi servizi sono abilitati, gli utenti avranno la migliore l'esperienza possibile di Teams. [Teams è supportato per gli utenti che hanno un account di posta elettronica su Google](https://docs.microsoft.com/microsoft-365/education/deploy/enabling-teams-for-education-for-google-users).
 
 Microsoft Teams è incluso in Office 365 A1, che è gratuito per gli istituti di istruzione. Per informazioni su come distribuire Office 365 e preparare l'intera scuola per Teams, vedere [questa pagina](https://docs.microsoft.com/microsoft-365/education/intune-edu-trial/set-up-office365-edu-tenant). Per ricevere assistenza è possibile creare un ticket [qui](https://signup.microsoft.com/Signup?OfferId=03ee83a5-5cb4-4545-aca9-33ead43f222a,d764709a-7763-45ef-a2a8-db5b8b6ae704&DL=ENTERPRISEPREMIUM_FACULTY&ali=1) e per ricevere formazione su Teams si può visitare il Microsoft Store locale per parlare con un esperto.
 

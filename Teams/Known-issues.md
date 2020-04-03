@@ -17,12 +17,12 @@ f1.keywords:
 description: Elenco corrente dei problemi noti riguardanti l’interfaccia di amministrazione e l'app client di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9023c7a7bfe5a629f3f2fdb9589ee3f9ef9efd68
-ms.sourcegitcommit: 0549714f17f9994cf832a303ec9bc58a537c3a51
+ms.openlocfilehash: d856962cf0fdb21d0dd58313b5ade6a9bab9d364
+ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951511"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43096621"
 ---
 # <a name="known-issues-for-microsoft-teams"></a>Problemi noti di Microsoft Teams
 
@@ -276,7 +276,7 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
-|Reparto configurato non correttamente come account di risorsa <br/> | Gli account di risorsa locali, associati a un operatore automatico o alla coda delle chiamate, che siano stati creati prima di gennaio 2019, potrebbero non avere il parametro Reparto impostato correttamente. Questo scenario potrebbe causare un errore di assegnazione dei numeri di telefono. Stiamo approntando una correzione per risolvere il problema. <br/><br/> Gli account di risorsa configurati usando New-CsHybridApplicationEndpoint con Skype for Business Server potrebbero non avere il parametro Reparto impostato correttamente, rendendo impossibile la creazione dell'account di risorsa nell'interfaccia di amministrazione di Teams. In questo caso, è necessario configurare il nome del reparto in Active Directory in locale prima di eseguire la sincronizzazione online.|Per ovviare a questo problema, è possibile eseguire il seguente Cmdlet per impostare il parametro Reparto. Eseguire: Set-MsolUser -ObjectId <Resource Account Object ID> -Department "Microsoft Communication Application Instance" <br/> Consultare anche l’[Aggiornamento del servizio Coda delle chiamate e Operatore automatico](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Auto-Attendant-and-Call-Queues-Service-Update/ba-p/564521). |08/05/2019 <br/> |
+|Reparto configurato non correttamente come account di risorsa <br/> | Gli account di risorsa locali, associati a un operatore automatico o alla coda delle chiamate, che siano stati creati prima di gennaio 2019, potrebbero non avere il parametro Reparto impostato correttamente. Questo scenario potrebbe causare un errore di assegnazione dei numeri di telefono. Stiamo approntando una correzione per risolvere il problema. <br/><br/> Gli account di risorsa configurati usando New-CsHybridApplicationEndpoint con Skype for Business Server potrebbero non avere il parametro Reparto impostato correttamente, rendendo impossibile la creazione dell'account di risorsa nell'interfaccia di amministrazione di Teams. In questo caso, è necessario configurare il nome del reparto in Active Directory in locale prima di eseguire la sincronizzazione online.|Per risolvere questo problema, è possibile eseguire il seguente cmdlet per impostare il parametro Department: Set-AdUser -Identity <objectId> - Department “Microsoft Communication Application Instance” <br/> Consultare anche l’[Aggiornamento del servizio Coda delle chiamate e Operatore automatico](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Auto-Attendant-and-Call-Queues-Service-Update/ba-p/564521). |08/05/2019 <br/> |
 
 
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|

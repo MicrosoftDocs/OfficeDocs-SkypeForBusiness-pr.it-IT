@@ -17,22 +17,25 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ba381659572fa8cfda6ac605a2910ef19220dcbd
-ms.sourcegitcommit: 29034bda30a8460eb18600785f785528d0944041
+ms.openlocfilehash: 95ad893b3070a560edfa0e4afe46ab10df2960ad
+ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "42285818"
+ms.lasthandoff: 04/01/2020
+ms.locfileid: "43096881"
 ---
 # <a name="use-the-getting-started-wizard-to-set-up-business-voice"></a>Usare la procedura guidata Attività iniziali per configurare Business Voice
+
+> [!IMPORTANT]
+> Le informazioni contenute in questo articolo sono applicabili solo a Business Voice **senza** Piano per chiamate. Business Voice con Piano per chiamate è disponibile solo in determinati paesi e regioni. Prima di leggere questo articolo, controllare la [disponibilità di Business Voice per paesi e aree geografiche](country-region-availability.md) per verificare se il proprio paese o area geografica supporta Business Voice con Piano di chiamata.
+>
+> Se il tenant si trova in un paese o un'area geografica che non supporta Business Voice con Piano per chiamate, vedere [Ottenere assistenza da parte di un rivenditore o un partner Microsoft](reseller-partner-support.md).
 
 La procedura guidata Attività iniziali per configurare rapidamente Microsoft 365 Business Voice consente di effettuare e ricevere chiamate telefoniche in Microsoft Teams. Per le aziende di piccole dimensioni che partono da zero, la procedura guidata consente di iniziare a usare il sistema in pochi minuti con numeri di telefono, menu di chiamata, messaggi di saluto e altro ancora. Per le aziende più grandi con una soluzione di telefonia consolidata, la procedura guidata consente di configurare una distribuzione pilota di Business Voice, in modo da poterlo usare con pochi utenti prima di configurarlo per tutti. In entrambi i casi, si può iniziare a usare Business Voice appena terminata la procedura guidata.
 
 È consigliabile leggere questo articolo prima di avviare la procedura guidata. Quando si è pronti a eseguire la procedura guidata, selezionare **Inizia** nella pagina [Introduzione a Microsoft 365 Business Voice](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/featureexplorer/apps/SmbVoice). Accedere con l'account usato per creare l'abbonamento o un altro account di amministratore globale.
 
 > [!IMPORTANT]
-> Business Voice è attualmente disponibile in Canada e nel Regno Unito. Altri paesi e aree geografiche diventeranno disponibili nel 2020.
->
 > Microsoft Teams e Business Voice funzionano solo quando le cassette postali degli utenti si trovano in Microsoft 365.  Le cassette postali in Exchange Server locale non sono supportate.
 
 <!-- After you've finished the wizard, you may want to check out the following articles:

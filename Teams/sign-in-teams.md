@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: msteams
 search.appverid: MET150
 ms.reviewer: ''
-description: Come accedere a Microsoft Teams usando l'autenticazione moderna. Include come ignorare l'aggiunta automatica del nome utente UPN quando gli utenti accedono.
+description: Come accedere a Microsoft Teams usando l'autenticazione moderna. Include come ignorare l'aggiunta automatica del nome utente UPN quando gli utenti accedono con un'impostazione che indica a Windows di ignorare l'UPN.
 localization_priority: Priority
 ms.collection:
 - M365-collaboration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c541371b78bcd9119abe7a11523d0d2f7b5eda7c
-ms.sourcegitcommit: 4d376449a75928282373598647f2b82127909c4f
+ms.openlocfilehash: f86568f92f2b758ae48062c84b330461743ef178
+ms.sourcegitcommit: 8665603fae8408ccbc083dd59cb01936ebe96c58
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978368"
+ms.lasthandoff: 04/02/2020
+ms.locfileid: "43116642"
 ---
 <a name="sign-in-to-microsoft-teams-using-modern-authentication"></a>Accedere a Microsoft Teams con l'autenticazione moderna
 ==========================
@@ -40,7 +40,7 @@ L'autenticazione moderna è un processo che informa Teams che gli utenti hanno g
 
 - Se gli utenti hanno eseguito l'accesso a un computer aggiunto a un dominio, all'avvio di Teams potrebbero dover eseguire un ulteriore passaggio di autenticazione, a seconda che l'organizzazione abbia scelto di richiedere l'autenticazione MFA o che il computer in uso richieda già l'autenticazione MFA per accedere. Se il computer in uso richiede già l'autenticazione MFA per accedere, aprendo Teams l'app viene avviata automaticamente.
 
-- Se gli utenti hanno eseguito l'accesso a un computer aggiunto a un dominio e non si vuole che il nome utente sia precompilato nella schermata di accesso a Teams, gli amministratori possono impostare la chiave seguente del Registro di sistema di Windows per disattivare il prepopolamento del nome utente (UPN):
+- Se gli utenti hanno eseguito l'accesso a un computer aggiunto a un dominio e **non si vuole che il nome utente sia precompilato nella schermata di accesso a Teams**, gli amministratori possono impostare la chiave seguente del Registro di sistema di Windows per disattivare il prepopolamento del nome utente (UPN):
 
   Computer\HKEY_CURRENT_USER\Software\Microsoft\Office\Teams<br/>
   SkipUpnPrefill(REG_DWORD)<br/>
