@@ -12,32 +12,32 @@ metadata:
   ms.author: samanro
   ms.date: 02/12/2020
   localization_priority: Priority
-  ms.openlocfilehash: aaa60d789f5048c11647460dccb636da8c519e62
-  ms.sourcegitcommit: eab284e2add7af1b3f3c5f1f77c0a3bbf77857a7
+  ms.openlocfilehash: e3c67ada87cdee958fbb76c4862e01b1ced7901a
+  ms.sourcegitcommit: 1bb3df681177db5ecc6afae3d3f3a46c251e5c23
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 02/12/2020
-  ms.locfileid: "41953797"
+  ms.lasthandoff: 04/02/2020
+  ms.locfileid: "43117534"
 highlightedContent:
   items:
+  - title: COVID-19 Response-supporta i dipendenti remoti con teams
+    itemType: overview
+    url: /MicrosoftTeams/support-remote-work-with-teams
   - title: Come implementare Teams
     itemType: deploy
     url: /MicrosoftTeams/how-to-roll-out-teams
+  - title: Sicurezza e conformità in teams
+    itemType: overview
+    url: /MicrosoftTeams/security-compliance-overview
   - title: Trovare formazione per l'utente e gli utenti
     itemType: learn
     url: /MicrosoftTeams/training-microsoft-teams-landing-page
   - title: Aggiornamento da Skype for Business a Teams
-    itemType: overview
+    itemType: how-to-guide
     url: /MicrosoftTeams/upgrade-start-here
   - title: Hub di adozione
     itemType: get-started
     url: /MicrosoftTeams/adopt-microsoft-teams-landing-page
-  - title: Poster e soluzioni per l'architettura IT
-    itemType: architecture
-    url: /MicrosoftTeams/teams-architecture-solutions-posters
-  - title: Iniziare da qui se si è nuovi in teams
-    itemType: quickstart
-    url: /MicrosoftTeams/teams-overview
 additionalContent:
   sections:
   - items:
@@ -51,8 +51,8 @@ additionalContent:
         url: /MicrosoftTeams/teams-memory-usage-perf
       - text: Comunicare con utenti di altre organizzazioni (accesso Guest/External)
         url: /MicrosoftTeams/communicate-with-users-from-other-organizations
-      - text: Sicurezza e conformità in teams
-        url: /MicrosoftTeams/security-compliance-overview
+      - text: Poster e soluzioni per l'architettura IT
+        url: /MicrosoftTeams/teams-architecture-solutions-posters
     - title: Chiamata vocale con teams
       links:
       - text: Cloud Voice in Microsoft Teams
