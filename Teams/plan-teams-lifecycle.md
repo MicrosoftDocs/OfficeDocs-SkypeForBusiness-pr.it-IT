@@ -1,5 +1,5 @@
 ---
-title: Pianificare la gestione del ciclo di vita in Teams - Microsoft Teams
+title: Pianificare la gestione del ciclo di vita
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -16,12 +16,13 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 783ae4f1c293a51b5f9838d4ffa3039731c0c867
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: ce58f292fd732c498880936c01d3e1b1343d2aa6
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837356"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137826"
 ---
 # <a name="plan-for-lifecycle-management-in-teams"></a>Pianificare la gestione del ciclo di vita in Teams
 

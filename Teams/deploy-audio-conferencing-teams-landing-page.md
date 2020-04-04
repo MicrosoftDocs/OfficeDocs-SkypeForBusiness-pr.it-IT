@@ -1,5 +1,5 @@
 ---
-title: Audioconferenza in Microsoft Teams
+title: Configurare le impostazioni di audioconferenza - Microsoft Teams
 ms.reviewer: ''
 description: Usare queste risorse per la distribuzione per semplificare l'implementazione del servizio di audioconferenza nell'ambito del carico di lavoro delle riunioni in Microsoft Teams.
 ms.topic: article
@@ -12,20 +12,21 @@ ms.service: msteams
 ms.collection:
 - M365-voice
 - M365-collaboration
+ms.custom: seo-marvel-mar2020
 f1.keywords:
 - NOCSH
 localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 78c4443352bffa02dc5bdeef6297ede6bed01e64
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: f57753947221068a21edd282ba0667efc4182690
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826744"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137326"
 ---
-# <a name="audio-conferencing-in-microsoft-teams"></a>Audioconferenza in Microsoft Teams
+# <a name="learn-how-to-deploy-audio-conferencing-in-microsoft-teams"></a>Scopri come distribuire i servizi di audioconferenza in Microsoft Teams
 
 Audioconferenza consente di partecipare a una riunione di Teams da un normale telefono e di chiamare un numero di telefono dall'interno di una riunione. Verificare di aver esaminato l'articolo sull'[implementazione delle riunioni](deploy-meetings-microsoft-teams-landing-page.md) come parte della distribuzione del servizio di audioconferenza nell'organizzazione.
 

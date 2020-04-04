@@ -1,5 +1,5 @@
 ---
-title: Gestire l'offerta Microsoft Teams Commercial Cloud Trial
+title: Gestire l'offerta Commercial Cloud Trial
 author: ChuckEdmonson
 ms.author: chucked
 manager: serdars
@@ -16,12 +16,13 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fb4a42ebe8772eebe5e5ebd130a68dd4bba714b3
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: a46720a59b5d3530f64bf4f459df13ad7c5cf5de
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836596"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137156"
 ---
 <a name="manage-the-microsoft-teams-commercial-cloud-trial-offer"></a>Gestire l'offerta Microsoft Teams Commercial Cloud Trial
 =======================================================
@@ -70,7 +71,7 @@ Gli utenti idonei possono aderire all'offerta di valutazione eseguendo l'accesso
 
 Tutte le versioni di valutazione all'interno dell'organizzazione condividono le stesse date di inizio e fine, in base alla data in cui il primo utente si è iscritto per la versione di valutazione. Ad esempio, se l'utente A avvia la prima versione di valutazione il 25 gennaio 2019 e l'utente B avvia una versione di valutazione il 3 giugno 2019, le versioni di valutazione di entrambi gli utenti scadranno il 25 gennaio 2020.
 
-## <a name="manage-the-trial"></a>Gestire la versione di valutazione
+## <a name="manage-the-trial"></a><a name="manage-the-trial"></a>Gestire la versione di valutazione
 
 La versione di valutazione di Teams deve essere avviata dai singoli utenti finali e non può essere avviata per conto dei dipendenti.
 

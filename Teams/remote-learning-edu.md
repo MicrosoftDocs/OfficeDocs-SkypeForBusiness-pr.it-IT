@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 87918e83aae6f56a3956336603decd41817cdd2a
-ms.sourcegitcommit: aaae9df142ebb844a1fea27d3ae3b95130903d6a
+ms.openlocfilehash: 15e84c6e5d7d205910be982eb0688143cd14abfa
+ms.sourcegitcommit: dc6108917392754d950cea47b92f871211bf4212
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43100083"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43131224"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -58,6 +58,9 @@ Occorre [abilitare le licenze di Teams per gli utenti](https://docs.microsoft.co
 
 Microsoft Teams è incluso in Office 365 A1, che è gratuito per gli istituti di istruzione. Per informazioni su come distribuire Office 365 e preparare l'intera scuola per Teams, vedere [questa pagina](https://docs.microsoft.com/microsoft-365/education/intune-edu-trial/set-up-office365-edu-tenant). Per ricevere assistenza è possibile creare un ticket [qui](https://signup.microsoft.com/Signup?OfferId=03ee83a5-5cb4-4545-aca9-33ead43f222a,d764709a-7763-45ef-a2a8-db5b8b6ae704&DL=ENTERPRISEPREMIUM_FACULTY&ali=1) e per ricevere formazione su Teams si può visitare il Microsoft Store locale per parlare con un esperto.
 
+> [!NOTE]
+> Per le informazioni più aggiornate sulle distribuzioni di EDU, leggere le [Indicazioni aggiornate per la distribuzione di M365 EDU durante l'epidemia di COVID-19](https://docs.microsoft.com/microsoft-365/education/deploy/guidance-for-m365-edu-deployment-during-covid19).
+
 ## <a name="easily-set-up-teams"></a>Configurare facilmente Teams
 
 Ecco le due cose da fare per iniziare a usare Teams:
@@ -75,6 +78,9 @@ I benefici per gli utenti di scuole secondarie superiori sono massimi quando tut
 **Il personale, gli insegnanti e gli studenti degli istituti di istruzione superiore** possono beneficiare delle funzionalità incluse nei criteri (globali) predefiniti. È possibile abilitare altre impostazioni dei criteri per aggiungere ulteriori funzionalità a Teams, tra cui [le funzionalità di traduzione nei criteri di messaggistica](messaging-policies-in-teams.md#messaging-policy-settings) e la [trascrizione automatica delle riunioni](meeting-policies-in-teams.md#allow-transcription) nei criteri delle riunioni.
 
 **Negli istituti didattici primari e secondari ** può essere necessario limitare le funzionalità disponibili agli studenti. I criteri impostano limiti alle azioni che possono intraprendere gli studenti. Poiché in genere gli studenti sono il gruppo di utenti più numeroso e che spesso riceve le impostazioni più restrittive, è consigliabile che le modifiche ai criteri per gli studenti siano rese "globali" (impostazione predefinita a livello di organizzazione).
+
+> [!IMPORTANT]
+> Per i criteri riunione assegnati agli utenti, è consigliabile configurare l'opzione "Ammetti automaticamente le persone" su "Tutti gli utenti dell'organizzazione". Questa opzione garantisce che gli utenti non autenticati debbano essere ammessi dalla sala di attesa per poter partecipare alle riunioni di Teams. Per altre informazioni, leggere [Gestire i criteri di riunione in Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams#automatically-admit-people).
 
 Ecco una serie di configurazioni non predefinite di criteri che potrebbero essere assegnate a studenti di scuola primaria o secondaria inferiore per limitare le comunicazioni non moderate tra studenti:
 
@@ -140,6 +146,12 @@ Per altre informazioni sull'uso di Teams per l'istruzione, vedere: [Microsoft Te
 
 > [!NOTE]
 > Alcune delle principali funzionalità di Teams non sono specifiche per l'istruzione. Suggerimenti e consigli per le funzionalità di base di Teams sono disponibili in [Guida e formazione su Teams](https://support.office.com/teams).
+
+### <a name="prevent-users-from-changing-their-profile-photo"></a>Impedire agli utenti di cambiare la foto del profilo
+
+Teams rispetta l'impostazione del [criterio per la cassetta postale di Outlook sul Web](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy), che è configurata dagli amministratori del tenant per controllare se gli utenti possono modificare la propria immagine del profilo. Se l'opzione **-SetPhotoEnabled** è disattivata, gli utenti non possono aggiungere, cambiare o rimuovere l'immagine del profilo. Per impedire a studenti o membri del personale di modificare o rimuovere la propria immagine del profilo, disattivare questa impostazione nel criterio per la cassetta postale di Outlook sul Web ad essi assegnato.
+
+Ad esempio, se uno studente carica un'immagine del profilo approvata dal reparto IT o HR dell'istituto di istruzione, non è necessario alcun intervento. Tuttavia, se uno studente carica un'immagine inappropriata, sarà possibile cambiarla in base ai criteri interni dell'istituto.  
 
 ## <a name="adoption-content"></a>Contenuti per l'adozione
 
