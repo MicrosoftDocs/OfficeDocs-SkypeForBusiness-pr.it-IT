@@ -1,5 +1,5 @@
 ---
-title: Panoramica della sicurezza e della conformità in Microsoft Teams
+title: Panoramica della sicurezza e della conformità
 author: MicrosoftHeidi
 ms.author: heidip
 manager: serdars
@@ -17,14 +17,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.securityandcompliance
+- seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fbec8f7d246a4acfe241ef4f4d701cc9e1e6b28c
-ms.sourcegitcommit: 1bb3df681177db5ecc6afae3d3f3a46c251e5c23
+ms.openlocfilehash: e777ef76f6c8f11dfd914b3c4be149c224b63cf5
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43117424"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139095"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
@@ -143,6 +144,10 @@ Per altre informazioni specifiche per le squadre sulla configurazione della rice
 ### <a name="auditing-and-reporting"></a>Controllo e creazione di report
 
 La ricerca nel log di controllo si inserisce direttamente nel centro conformità & sicurezza di Office 365 e offre la possibilità di impostare gli avvisi, nonché di segnalare eventi di controllo, consentendo l'esportazione di set di eventi specifici o generici per il carico di lavoro per l'uso di amministratori e le indagini in una sequenza temporale di controllo illimitata. È possibile configurare gli avvisi per tutti i dati del log di controllo all'interno del centro conformità & sicurezza di Office 365 e filtrare ed esportare questi dati per un'ulteriore analisi. Per altre informazioni su come eseguire un log di controllo per Office 365, fare riferimento alla sezione [cercare l'articolo del log di controllo](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) . Per altre informazioni sulla ricerca di eventi di Microsoft Teams nel centro conformità & sicurezza di Office 365, è anche possibile eseguire il [controllo attiva nell'articolo teams](audit-log-events.md) per la revisione.
+
+## <a name="privacy"></a>Privacy
+
+In Microsoft proteggere i dati è la priorità più alta. Per informazioni sulle procedure di privacy, vedere [privacy in Microsoft](https://www.microsoft.com/trust-center/privacy).
 
 ## <a name="information-protection-architecture"></a>Architettura di protezione delle informazioni
 

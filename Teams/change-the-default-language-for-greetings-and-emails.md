@@ -21,13 +21,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Phone System
-description: "Informazioni su come configurare Skype for Businesss per usare un'altra lingua per il messaggio di saluto predefinito della segreteria telefonica dell'organizzazione. "
-ms.openlocfilehash: 078fd14944d5384d38d870e09575980cc89e8889
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+- seo-marvel-mar2020
+description: Informazioni su come configurare Skype for Businesss per usare un'altra lingua per il messaggio di saluto predefinito della segreteria telefonica dell'organizzazione.
+ms.openlocfilehash: 829776be347f2453f3b87a150b19e2334e876f40
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825234"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139135"
 ---
 # <a name="change-the-default-language-for-greetings-and-emails"></a>Modificare la lingua predefinita per i messaggi di saluto e le e-mail
 

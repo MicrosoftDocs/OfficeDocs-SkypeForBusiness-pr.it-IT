@@ -22,17 +22,18 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - ms.teamsadmincenter.audioconferencing.bridgesettings
-description: 'Ecco i passaggi necessari per modificare le impostazioni per un Bridge di conferenza usato per richiedere ai chiamanti e raccogliere nomi e pin per gli organizzatori della riunione quando non usano le app Skype for business o Microsoft teams. '
-ms.openlocfilehash: d872bf3d0db2e19089716ab65fc487db601c48ea
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+- seo-marvel-mar2020
+description: Modificare le impostazioni del Bridge di conferenza audio, incluse le notifiche di entrata e uscita, i nomi di riproduzione o i numeri di telefono, i toni e i chiamanti per registrare il nome.
+ms.openlocfilehash: aaff3518675e1db56340f9dc1568b994cf2ed6e6
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825114"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139085"
 ---
 # <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un bridge per audioconferenza
 
-Quando si configurano i servizi di audioconferenza in Office 365, si riceveranno i numeri di telefono per gli utenti provenienti da un Bridge per audioconferenza. Un Bridge per i servizi di conferenza può contenere uno o più numeri di telefono. Questi numeri di telefono vengono usati quando i chiamanti accedono a una riunione. Il numero di telefono è incluso nella parte inferiore dell'invito alla riunione di Skype for business o Microsoft teams.
+Quando si configurano i servizi di audioconferenza in Office 365, si riceveranno i numeri di telefono per gli utenti provenienti da un Bridge per audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono. Questi numeri di telefono vengono usati quando i chiamanti accedono a una riunione. Il numero di telefono è incluso nella parte inferiore dell'invito alla riunione di Skype for business o Microsoft teams.
   
 Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiamante di ricevere le istruzioni vocali usando un operatore automatico della riunione e quindi, a seconda delle impostazioni, può riprodurre le notifiche, chiedere ai chiamanti di registrare il proprio nome e controllare le impostazioni del PIN. I PIN vengono assegnati agli organizzatori della riunione per consentire loro di avviare una riunione quando non usano un'app Skype for business o Microsoft teams.
 
@@ -42,7 +43,7 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
 
-## <a name="an-icon-showing-the-microsoft-teams-logomediateams-logo-30x30png-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) Uso dell'interfaccia di amministrazione di Microsoft Teams
+## <a name="an-icon-showing-the-microsoft-teams-logo-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) Uso dell'interfaccia di amministrazione di Microsoft Teams
 
 1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
 
@@ -64,14 +65,14 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
 5. Per specificare se inviare messaggi di posta elettronica agli utenti, abilitare o disabilitare automaticamente l'invio di posta elettronica agli **utenti in caso di modifica della configurazione dei**servizi di audioconferenza.
     Vedere i [messaggi di posta elettronica inviati automaticamente agli utenti quando le impostazioni dei servizi di audioconferenza cambiano in Microsoft teams](emails-sent-to-users-when-their-settings-change-in-teams.md) o i [messaggi di posta elettronica inviati agli utenti quando le impostazioni cambiano in Skype for business online](/SkypeForBusiness/audio-conferencing-in-office-365/emails-sent-to-users-when-their-settings-change) per altre informazioni.
  
-6. Fai clic su **Salva**. 
+6. Fare clic su **Salva**. 
 
 
-## <a name="an-icon-showing-the-skype-for-business-logomediasfb-logo-30x30png--using-the-skype-for-business-admin-center"></a>![Icona che mostra il logo di Skype for business](media/sfb-logo-30x30.png)  Utilizzo dell'interfaccia di amministrazione di Skype for Business
+## <a name="an-icon-showing-the-skype-for-business-logo--using-the-skype-for-business-admin-center"></a>![Icona che mostra il logo di Skype for business](media/sfb-logo-30x30.png)  Utilizzo dell'interfaccia di amministrazione di Skype for Business
 
  **Impostare l'esperienza della riunione quando i chiamanti partecipano a una riunione**
     
-1. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, vai a**impostazioni di Microsoft Bridge**per **** > audioconferenza.
+1. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, vai a**impostazioni di Microsoft Bridge**per **Audio conferencing** > audioconferenza.
     
 2. Nella pagina **Impostazioni Bridge Microsoft** , in **esperienza di partecipazione a una riunione**, selezionare:
     
@@ -135,6 +136,6 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Configurare servizi di audioconferenza per Microsoft Teams](set-up-audio-conferencing-in-teams.md)
+[Configurare Audioconferenza per Microsoft Teams](set-up-audio-conferencing-in-teams.md)
 
 [Configurare servizi di audioconferenza per Skype for business online](/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)

@@ -1,5 +1,5 @@
 ---
-title: Piani di chiamata in Office 365-codice di gestione delle denunce per il Regno Unito (UK)
+title: Codice di gestione delle denunce per il Regno Unito -Piani per chiamate di Office 365
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,14 +20,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Legal
+- seo-marvel-mar2020
 hideEdit: true
-description: 'Learn how to make a complaint for Skype for business calling services (PSTN Calling in the United Kingdom), what the timelines are for replies, and how to resolve disputes for unresolved complaints. '
-ms.openlocfilehash: 4a035c77756acc811eec184c0749623a2142cf41
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+description: Presentare un reclamo per i servizi di chiamata Skype for business (chiamate PSTN nel Regno Unito), sequenze temporali per le risposte e risoluzione delle controversie per i reclami non risolti.
+ms.openlocfilehash: 6bebf983d19461485f7f381c300fc6e5b3611b6b
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825574"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137286"
 ---
 # <a name="calling-plans-in-office-365---complaint-handling-code-for-the-united-kingdom-uk"></a>Piani di chiamata in Office 365-codice di gestione delle denunce per il Regno Unito (UK)
 

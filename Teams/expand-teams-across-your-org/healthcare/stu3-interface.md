@@ -16,13 +16,14 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: anach
-description: Integrazione dell'app EHR di Microsoft teams patients
-ms.openlocfilehash: d718f3d3772a08ecfa57e418a4f4fc2e22fe7172
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+description: Informazioni sulla specifica dell'interfaccia STU3 in teams, inclusa la configurazione o la riconfigurazione di un server FHIR per l'utilizzo con l'app Microsoft teams patients.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 35d887575ffb894b7a47e50511e6bd6c3a9a75d1
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42147699"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141199"
 ---
 # <a name="stu3-interface-specification"></a>Specifica dell'interfaccia STU3
 
@@ -221,7 +222,7 @@ Vedere l'esempio seguente della chiamata:
 
     Richiesta: ottenere <Fhir-Server>/AllergyIntolerance? patient =<ID paziente>
     
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"risorsa": {"resourceType": "AllergyIntolerance", "ID": "<Resource-ID>", "clinicalStatus": "attivo", "verificationStatus": "confermato", "codice": {"codifica": [{"System": "http://rxnav.nlm.nih.gov/REST/Ndfrt" "," codice ":" N0000175503 "," visualizzazione ":" solfonammide antibatterico ",}]," testo ":" solfonammide Ant ibacterial "}," assertedDate ":" 2018-01-01T00:00:00-07:00 "," reazione ": [{" manifestazione ": [{" codifica ": [{" System ":"http://snomed.info/sct"," codice ":" 271807003 "," display ":" rash cutaneo ",}]," testo ":" eruzione cutanea "}]
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset"; "Total": 1 "," voce ": [{" risorsa ": {" resourceType ":" AllergyIntolerance "," ID ":" <Resource-ID> "," clinicalStatus ":" Active "," verificationStatus ":" confermato "," codice ": {" codifica ":" "," System "http://rxnav.nlm.nih.gov/REST/Ndfrt:" "," codice ":" N0000175503 "," display ":" solfonammide antibatterico ",}]," testo ":" solfonammide antibatterico "}," assertedDate ":" 2018-01-01T00:00:00-07:00 "," reazione ": [{" manifestazione ": [{" coding ": [{http://snomed.info/sct" System ":" "," code ":" 271807003 "," display ":" rash cutaneo ",}]," testo ":" eruzione cutanea "}],}]}}]}
 
 * * *
 

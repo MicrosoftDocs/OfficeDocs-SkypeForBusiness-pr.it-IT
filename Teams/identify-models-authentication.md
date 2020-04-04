@@ -1,5 +1,5 @@
 ---
-title: Modelli di identità e autenticazione in Microsoft Teams
+title: Modelli di identità e autenticazione
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
@@ -17,12 +17,13 @@ ms.collection:
 description: Informazioni sui diversi modelli di identità in Microsoft teams, ad esempio cloud, Synchronized e federate. Scopri anche l'autenticazione a più fattori.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5c09702700cf62505bbe0016d44545a02596f6b8
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: a58dcdae704be7ccdaefe1e2bca3b4978f4a10f9
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42022287"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139295"
 ---
 <a name="identity-models-and-authentication-in-microsoft-teams"></a>Modelli di identità e autenticazione in Microsoft Teams
 ==========================================

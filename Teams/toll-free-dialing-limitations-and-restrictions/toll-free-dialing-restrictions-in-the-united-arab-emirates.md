@@ -22,13 +22,14 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: 4d8d138a1b7d8ab89bdae366e610b3b623bd9ab1
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+- seo-marvel-mar2020
+description: Informazioni sulla chiamata gratuita di numeri verdi negli Emirati Arabi Uniti, tra cui disponibilità, disponibilità di rete cablata/a linee fisse e mobili e restrizioni.
+ms.openlocfilehash: 7da543192b6e0fd0e3e4b710fd31ced50695813e
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41680743"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139745"
 ---
 # <a name="toll-free-dialing-restrictions-in-the-united-arab-emirates"></a>Restrizioni di chiamata gratuita negli Emirati Arabi Uniti
 

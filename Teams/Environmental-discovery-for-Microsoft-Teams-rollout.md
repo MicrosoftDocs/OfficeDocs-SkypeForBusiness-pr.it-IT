@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams |  Valuta ambiente | Adozione, individuazione
+title: Compatibilità ambientale-Microsoft Teams
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
@@ -17,12 +17,13 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 68bd92067bffc2ed88e8a9d44e228ce442021b29
-ms.sourcegitcommit: 73518a589db1a9883fc97827f0ddb9132995fbfa
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: abe848e21ed245230edc1ebfbfd038af9eec9175
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42236676"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139315"
 ---
 <a name="environmental-discovery-for-a-microsoft-teams-rollout"></a>Individuazione ambientale per l'implementazione di Microsoft Teams
 ===================================================
@@ -203,7 +204,7 @@ Usare la tabella seguente per acquisire lo stato di approvazione e preparazione 
 >
 > | Domanda | Answer | Commenti |
 > |---|---|---|
-> | Qual è l'uso attivo corrente di <br>Skype for business? | **** totale di utenti attivi e utenti abilitati | |
+> | Qual è l'uso attivo corrente di <br>Skype for business? | **__** totale di utenti attivi e utenti abilitati | |
 > | Modalità di utilizzo dell'organizzazione <br>Skype for business? | conversazioni di 1:1 <br>&nbsp;&nbsp; &nbsp; Messaggistica <input type="checkbox"> istantanea <br>&nbsp;&nbsp; Chiamata &nbsp; <input type="checkbox"> <br>&nbsp;&nbsp; Condivisione &nbsp; <input type="checkbox"><br> Riunioni <br>&nbsp;&nbsp; &nbsp; <input type="checkbox"><br>&nbsp;&nbsp; Condivisione &nbsp; <input type="checkbox"><br>&nbsp;&nbsp; Chiamata &nbsp; <input type="checkbox"> | |
 > | L'organizzazione ha un'adozione da parte dell'utente <br>e cambiare il team di gestione? | <input type="checkbox">Sì<br/> <input type="checkbox">Non | |
 > | Come si fa a misurare il successo della tecnologia attualmente <br>Rollout come Skype for business? | | |

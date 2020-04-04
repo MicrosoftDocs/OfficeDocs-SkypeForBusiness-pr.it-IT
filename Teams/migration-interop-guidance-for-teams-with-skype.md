@@ -1,5 +1,5 @@
 ---
-title: Linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business
+title: Migrazione e interoperabilità-Skype for business
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -15,16 +15,17 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.coexistence
 - ms.teamsadmincenter.teamsupgrade.overview
+- seo-marvel-mar2020
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ae75a26f611fc6262c9f2352c09cb175bd00656d
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 5bf12dc366de030329b306fdd2f68291b5ff532d
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41832669"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140275"
 ---
 # <a name="migration-and-interoperability-guidance-for-organizations-using-teams-together-with-skype-for-business"></a>Linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business
 
@@ -49,13 +50,13 @@ Come organizzazione con Skype for business che inizia ad adottare teams, gli amm
 
 5.  L'interoperabilità tra teams e gli utenti di Skype for business è possibile solo *se l'utente di teams è ospitato online in Skype for business*. L'utente destinatario di Skype for business può essere ospitato in locale (e richiede la configurazione di Skype for business Hybrid) o online. Gli utenti ospitati in Skype for business locale possono usare i team in modalità isole (definiti più avanti in questo documento), ma non possono usare team per l'interoperabilità o la Federazione con altri utenti che usano Skype for business.  
 
-6.  Il comportamento di aggiornamento e di interoperabilità viene determinato in base alla modalità di coesistenza di un utente, descritto più avanti. La modalità è gestita da TeamsUpgradePolicy. 
+6.    Il comportamento di aggiornamento e di interoperabilità viene determinato in base alla modalità di coesistenza di un utente, descritto più avanti. La modalità è gestita da TeamsUpgradePolicy. 
 
 7.  L'aggiornamento di un utente alla modalità TeamsOnly garantisce che tutte le chat in arrivo e le chiamate saranno sempre atterrate nel client Teams dell'utente, indipendentemente dal client da cui ha avuto origine. Questi utenti pianificano anche tutte le nuove riunioni in teams. Per essere in modalità TeamsOnly, un utente deve essere ospitato online in Skype for business. Questa operazione è necessaria per garantire l'interoperabilità, la Federazione e l'amministrazione completa dell'utente teams. Per aggiornare un utente a TeamsOnly:
     - Se l'utente è ospitato in Skype for business online (o non ha mai avuto un account Skype), concedere loro TeamsUpgradePolicy con Mode = TeamsOnly usando l'istanza "UpgradeToTeams" usando PowerShell oppure usare l'interfaccia di amministrazione di teams per selezionare la modalità di TeamsOnly.
     - Se l'utente è ospitato in locale, USA `Move-CsUser` gli strumenti di amministrazione locali per trasferire prima l'utente in Skype for business online.  Se si ha Skype for Business Server 2019 o CU8 per Skype for Business Server 2015, è possibile specificare l' `-MoveToTeams` opzione `Move-CsUser` per spostare l'utente direttamente in teams come parte dello sposta online. Questa opzione eseguirà anche la migrazione delle riunioni dell'utente in teams. Se `-MoveToTeams` non è specificato o non è disponibile, dopo `Move-CsUser` il completamento assegnare la modalità TeamsOnly a tale utente usando PowerShell o l'interfaccia di amministrazione teams. Per altri dettagli [, vedere trasferire utenti tra locale e cloud](https://docs.microsoft.com/skypeforbusiness/hybrid/move-users-between-on-premises-and-cloud).  Per altre informazioni sulla migrazione delle riunioni, vedere [uso del servizio di migrazione delle riunioni (MMS)](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms).
 
-8.  Per usare Microsoft Phone System con teams, gli utenti devono essere in modalità TeamsOnly (ad esempio, ospitati in Skype for business online e aggiornati a teams) e devono essere configurati per il [routing diretto](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Direct-Routing-is-now-Generally-Available/ba-p/210359#M1277) di Microsoft Phone System (che consente di usare il sistema telefonico con i propri trunk e SBC) o di avere un piano di chiamata di Office 365. Il routing diretto di Microsoft Phone System non è supportato in modalità isole.    
+8.    Per usare Microsoft Phone System con teams, gli utenti devono essere in modalità TeamsOnly (ad esempio, ospitati in Skype for business online e aggiornati a teams) e devono essere configurati per il [routing diretto](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Direct-Routing-is-now-Generally-Available/ba-p/210359#M1277) di Microsoft Phone System (che consente di usare il sistema telefonico con i propri trunk e SBC) o di avere un piano di chiamata di Office 365. Il routing diretto di Microsoft Phone System non è supportato in modalità isole.    
 
 9.  La pianificazione delle riunioni di teams con i servizi di audioconferenza (accesso esterno o chiamata in uscita tramite PSTN) è disponibile indipendentemente dal fatto che l'utente sia ospitato in Skype for business online o Skype for business locale. 
 
@@ -87,9 +88,9 @@ Le modalità sono elencate di seguito.
 |---|---|---|---|---|
 |**TeamsOnly<sup>2</sup>**</br>*Richiede Home in Skype for business online*|Teams|Teams|Sì|Stato finale dell'aggiornamento. Anche l'impostazione predefinita per i nuovi tenant.|
 |Isole|Sia|Sia|Sì|Configurazione predefinita. Consente a un singolo utente di valutare entrambi i client affiancati. Le chat e le chiamate possono atterrare in entrambi i client, quindi gli utenti devono sempre eseguire entrambi i client. Per evitare un'esperienza di Skype for business confusa o regressione, le comunicazioni esterne (federate), i servizi vocali PSTN e le applicazioni vocali, l'integrazione di Office e molte altre integrazioni continuano a essere gestite da Skype for business.|
-|SfBWithTeamsCollabAndMeetings<sup>2</sup>|Skype for business|Teams|Sì|"First meetings". Principalmente per le organizzazioni locali per trarre vantaggio dalle funzionalità di riunione dei team, se non sono ancora pronte per la migrazione delle chiamate al cloud.|
-|SfBWithTeamsCollab|Skype for business|Skype for business|Sì|Punto di partenza alternativo per organizzazioni complesse che necessitano di un controllo amministrativo più rigoroso.|
-|SfBOnly|Skype for business|Skype for business|No<sup>3</sup>|Scenario specializzato per le organizzazioni con requisiti severi intorno al controllo dati. Teams viene usato solo per partecipare alle riunioni pianificate da altri utenti.|
+|SfBWithTeamsCollabAndMeetings<sup>2</sup>|Skype for Business|Teams|Sì|"First meetings". Principalmente per le organizzazioni locali per trarre vantaggio dalle funzionalità di riunione dei team, se non sono ancora pronte per la migrazione delle chiamate al cloud.|
+|SfBWithTeamsCollab|Skype for Business|Skype for Business|Sì|Punto di partenza alternativo per organizzazioni complesse che necessitano di un controllo amministrativo più rigoroso.|
+|SfBOnly|Skype for Business|Skype for Business|No<sup>3</sup>|Scenario specializzato per le organizzazioni con requisiti severi intorno al controllo dati. Teams viene usato solo per partecipare alle riunioni pianificate da altri utenti.|
 ||||||
 
 </br>
@@ -123,16 +124,16 @@ Teams fornisce tutte le istanze rilevanti di TeamsUpgradePolicy tramite criteri 
 
 |Identity|Modalità|NotifySfbUsers|
 |---|---|---|
-|Isole|Isole|False|
-|IslandsWithNotify|Isole|True|
-|SfBOnly|SfBOnly|False|
-|SfBOnlyWithNotify|SfBOnly|True|
-|SfBWithTeamsCollab|SfBWithTeamsCollab|False|
-|SfBWithTeamsCollabWithNotify|SfBWithTeamsCollab|True|
-|SfBWithTeamsCollabAndMeetings|SfBWithTeamsCollabAndMeetings|False|
-|SfBWithTeamsCollabAndMeetingsWithNotify|SfBWithTeamsCollabAndMeetings|True|
-|UpgradeToTeams|TeamsOnly|False|
-|Globale</br>*Predefinita*|Isole|False|
+|Isole|Isole|Falso|
+|IslandsWithNotify|Isole|Vero|
+|SfBOnly|SfBOnly|Falso|
+|SfBOnlyWithNotify|SfBOnly|Vero|
+|SfBWithTeamsCollab|SfBWithTeamsCollab|Falso|
+|SfBWithTeamsCollabWithNotify|SfBWithTeamsCollab|Vero|
+|SfBWithTeamsCollabAndMeetings|SfBWithTeamsCollabAndMeetings|Falso|
+|SfBWithTeamsCollabAndMeetingsWithNotify|SfBWithTeamsCollabAndMeetings|Vero|
+|UpgradeToTeams|TeamsOnly|Falso|
+|Globale</br>*Predefinita*|Isole|Falso|
 ||||
 
 Queste istanze di criteri possono essere concesse a singoli utenti o a una base a livello di tenant. Ad esempio:

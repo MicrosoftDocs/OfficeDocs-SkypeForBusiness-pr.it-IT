@@ -1,5 +1,5 @@
 ---
-title: Numeri di telefono per i servizi di audioconferenza in Microsoft Teams
+title: Numeri di telefono per i servizi di audioconferenza
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,17 +21,18 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - LIL_Placement
+- seo-marvel-mar2020
 description: Informazioni su quali paesi e aree possiedono numeri telefonici di accesso esterno e come vengono assegnati automaticamente.
-ms.openlocfilehash: e7a9d67bfb843e65721ebbd18b03b48aca8a24f0
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 921878c7b0dfd8abd313adffb9b87e07e58ad66d
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836876"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137856"
 ---
-# <a name="phone-numbers-for-audio-conferencing-in-microsoft-teams"></a>Numeri di telefono per i servizi di audioconferenza in Microsoft Teams
+# <a name="phone-numbers-for-audio-conferencing-in-microsoft-teams"></a>Numeri di telefono per le audioconferenze in Microsoft Teams
 
-Quando si configurano i servizi di audioconferenza per Microsoft teams, i numeri di telefono di accesso **esterno** vengono assegnati automaticamente alla propria organizzazione. Per visualizzare i numeri di telefono assegnati al Bridge di audioconferenza, nell'interfaccia di amministrazione di Microsoft teams accedere a Bridge **** > **conferenza**riunioni. Per altre informazioni, [vedere un elenco di numeri di servizi di audioconferenza](see-a-list-of-audio-conferencing-numbers-in-teams.md).
+Quando si configurano i servizi di audioconferenza per Microsoft teams, i numeri di telefono di accesso **esterno** vengono assegnati automaticamente alla propria organizzazione. Per visualizzare i numeri di telefono assegnati al Bridge di audioconferenza, nell'interfaccia di amministrazione di Microsoft teams accedere a Bridge **Meetings** > **conferenza**riunioni. Per altre informazioni, [vedere un elenco di numeri di servizi di audioconferenza](see-a-list-of-audio-conferencing-numbers-in-teams.md).
   
   
 ## <a name="audio-conferencing-coverage-and-pricing"></a>Copertura e prezzi per Audioconferenza
@@ -60,10 +61,10 @@ Shared audio conferencing phone numbers are automatically assigned to organizati
 Per visualizzare un elenco di Paesi/aree geografiche che hanno numeri di telefono automaticamente assegnati per le organizzazioni, consulta [Disponibilità per Paese e area geografica per Audioconferenza e Piani di chiamata](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
     
 > [!NOTE]
-> La posizione del paese o dell'area geografica dell'organizzazione può essere trovata accedendo all'interfaccia di **amministrazione di Microsoft 365** e cercando in **profilo organizzazione**. 
+> Il paese o l'area geografica dell'organizzazione è disponibile accedendo all'**interfaccia di amministrazione di Microsoft 365** e cercando il **Profilo organizzazione**. 
   
 > [!CAUTION]
-> A causa della disponibilità limitata di numeri di telefono a pedaggio in Venezuela, Indonesia e Emirati Arabi Uniti (UAE), le organizzazioni provenienti da questi paesi/aree geografiche non avranno un numero a pagamento assegnato automaticamente all'audioconferenza. I numeri verdi di queste località sono offerti in base alla disponibilità. 
+> A causa della disponibilità limitata di numeri di telefono a tariffa in Venezuela, Indonesia e Emirati Arabi Uniti (UAE), le organizzazioni di questi paesi/aree geografiche non dispongono di un numero a tariffa per il servizio di audioconferenza assegnato automaticamente. I numeri a tariffa e i numeri verdi di queste località sono disponibili a seconda dell'inventario a disposizione. 
   
 
 ## <a name="what-else-should-you-know"></a>Informazioni aggiuntive

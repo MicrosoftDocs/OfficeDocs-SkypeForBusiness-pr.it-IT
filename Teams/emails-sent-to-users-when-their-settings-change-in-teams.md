@@ -1,5 +1,5 @@
 ---
-title: Messaggi di posta elettronica inviati agli utenti quando cambiano le impostazioni in Microsoft Teams
+title: E-mail inviate automaticamente agli utenti in caso di modifica delle impostazioni
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,13 +19,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
+- seo-marvel-mar2020
 description: 'Scopri quali informazioni vengono inviate automaticamente agli utenti tramite posta elettronica quando le impostazioni dei servizi di conferenza telefonica con accesso esterno vengono modificate in Microsoft teams. '
-ms.openlocfilehash: 28dcf8e166eff4a8852dd1ad77828213dc88fd05
-ms.sourcegitcommit: 73518a589db1a9883fc97827f0ddb9132995fbfa
+ms.openlocfilehash: ada608da12791a586d3adcbfd6477c1f26f7e30d
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "42236866"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141259"
 ---
 # <a name="emails-sent-to-users-when-their-settings-change-in-microsoft-teams"></a>Messaggi di posta elettronica inviati agli utenti quando cambiano le impostazioni in Microsoft Teams
 
@@ -85,7 +86,7 @@ Quando disattivi l'invio di messaggi di posta elettronica agli utenti, la posta 
 
 Per impostazione predefinita, i messaggi di posta elettronica verranno inviati agli utenti, ma se si vuole impedire loro di ricevere messaggi di posta elettronica per i servizi di audioconferenza, è possibile usare Microsoft teams o Windows PowerShell. 
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
 
@@ -93,7 +94,7 @@ Per impostazione predefinita, i messaggi di posta elettronica verranno inviati a
 
 3. Nel riquadro **Impostazioni Bridge** abilitare o disabilitare **Invia automaticamente i messaggi di posta elettronica agli utenti in caso di modifica delle impostazioni di accesso**esterno.
 
-4. Fai clic su **Salva**.
+4. Fare clic su **Salva**.
 
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]

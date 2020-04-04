@@ -1,5 +1,5 @@
 ---
-title: Consentire agli utenti di registrare il proprio nome quando partecipano a una riunione in Microsoft Teams
+title: Consentire agli utenti di registrare il proprio nome per una riunione
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,13 +20,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
+- seo-marvel-mar2020
 description: Informazioni su come abilitare o disabilitare se gli utenti possono registrare i loro nomi quando partecipano a una riunione in Microsoft teams.
-ms.openlocfilehash: b7b04ba5959d4ffbbb4664401ccf8e95b46c48b9
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: f6d1f8ea0ef015e4d951fbf3bbe124263a3b9a1f
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836106"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141219"
 ---
 # <a name="enable-users-to-record-their-name-when-they-join-a-meeting-in-microsoft-teams"></a>Consentire agli utenti di registrare il proprio nome quando partecipano a una riunione in Microsoft Teams
 
@@ -37,7 +38,7 @@ Il bridge di conferenza risponde alla chiamata di un utente che sta eseguendo l'
   
 ## <a name="set-whether-callers-should-record-their-name"></a>Impostare se i chiamanti devono registrare il nome
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
 
@@ -47,7 +48,7 @@ Il bridge di conferenza risponde alla chiamata di un utente che sta eseguendo l'
 
 4. Se si abilitano le notifiche, scegliere **nomi o numeri di telefono** in **tipo di annuncio di entrata/uscita**e quindi attivare **Chiedi ai chiamanti di registrare il proprio nome prima di partecipare a una riunione.**
 
-6. Fai clic su **Salva**.
+6. Fare clic su **Salva**.
     
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]

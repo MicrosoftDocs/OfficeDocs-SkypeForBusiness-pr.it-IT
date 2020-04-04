@@ -1,5 +1,5 @@
 ---
-title: Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams.
+title: Gestire la transizione dei team all'interfaccia di amministrazione di nuovi team
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
@@ -8,24 +8,25 @@ audience: admin
 ms.service: msteams
 ms.reviewer: ''
 search.appverid: MET150
-description: Informazioni su come gestire le impostazioni dell'utente e dell'intero tenant per i team durante la transizione dall'esperienza teams nell'interfaccia di amministrazione di Microsoft 365 al nuovo centro di amministrazione di Microsoft teams.
+description: Informazioni su come gestire le impostazioni utente e a livello di tenant per i team durante la transizione da teams nell'interfaccia di amministrazione di Microsoft 365 al nuovo centro di amministrazione di teams.
 localization_priority: Normal
 f1.keywords:
 - CSH
 ms.custom:
 - NewAdminCenter_Update
 - ms.teamsadmincenter.dashboard.helparticle.manageteamsnewadmincenter
+- seo-marvel-mar2020
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
 - Skype for Business Online
-ms.openlocfilehash: 31d39b1c65afad3bdbb000ff779b590d9f82ac38
-ms.sourcegitcommit: 152eb7daacd0a36f42aa441633c12c7037a0969a
+ms.openlocfilehash: b08f747c6a26d0401095e5aa004b972e0428b830
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288634"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137056"
 ---
 <a name="manage-teams-during-the-transition-to-the-new-microsoft-teams-admin-center"></a>Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams.
 ======================================================

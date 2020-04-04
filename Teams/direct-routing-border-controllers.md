@@ -1,5 +1,5 @@
 ---
-title: Elenco di Session Border Controller certificati per Instradamento diretto
+title: Controller di bordo della sessione certificato per il routing diretto
 ms.author: crowe
 ms.reviewer: FilippSe
 author: CarolynRowe
@@ -17,12 +17,13 @@ hideEdit: true
 f1.keywords:
 - NOCSH
 description: Partner Microsoft con fornitori di SBC selezionati per certificare il lavoro di SBCs con il routing diretto.
-ms.openlocfilehash: e7831abf7a5d522afd05c3fd178e6acda04772e3
-ms.sourcegitcommit: 43e8960ef091d9e206f22eb7ffef9d6e84756335
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: fcad24511384a9fb1cf8e49d5f305801622be6f3
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "42939620"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137314"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 

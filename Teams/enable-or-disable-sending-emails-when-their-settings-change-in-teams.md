@@ -1,5 +1,5 @@
 ---
-title: Abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di conferenza audio cambiano in Microsoft Teams
+title: Opzioni di posta elettronica durante la modifica delle impostazioni del audioconferenza
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,19 +19,20 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
+- seo-marvel-mar2020
 description: "Informazioni su come abilitare o disabilitare Skype dall'invio di messaggi di posta elettronica agli utenti in caso di impostazioni come le modifiche ai pin o le modifiche dei numeri di conferenza predefiniti in Microsoft teams. "
-ms.openlocfilehash: 3bb4b09cf1e60edcb9ffb4f4fdb981a9fd6ea0ae
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: f1c9ca14a88317cd921c19e761ee06cba2786dba
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836806"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141239"
 ---
 # <a name="enable-or-disable-sending-emails-when-audio-conferencing-settings-change-in-microsoft-teams"></a>Abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di conferenza audio cambiano in Microsoft Teams
 
 Gli utenti vengono informati automaticamente tramite posta elettronica quando sono abilitati per l'Audioconferenza. In alcuni casi, tuttavia, è possibile ridurre il numero di messaggi di posta elettronica inviati agli utenti di Microsoft teams. In tal caso, puoi disabilitare l'invio dei messaggi posta elettronica.
   
-Se si disabilita l'invio di messaggi di posta elettronica, i messaggi di audioconferenza non verranno inviati agli utenti, inclusi i messaggi di posta elettronica per quando gli utenti sono abilitati o disabilitati per i servizi di audioconferenza, quando il PIN viene reimpostato e quando l'ID conferenza e il numero di telefono delle conferenze predefinite cambiano .
+Se si disabilita l'invio di messaggi di posta elettronica, i messaggi di audioconferenza non verranno inviati agli utenti, inclusi i messaggi di posta elettronica per quando gli utenti sono abilitati o disabilitati per i servizi di audioconferenza, quando il PIN viene reimpostato e quando viene modificato l'ID conferenza e il numero di telefono delle conferenze
   
 Ecco un esempio di messaggio di posta elettronica inviato agli utenti quando sono abilitati per i servizi di audioconferenza:
   
@@ -58,7 +59,7 @@ Ecco un esempio di messaggio di posta elettronica inviato agli utenti quando son
 
 Puoi usare Microsoft teams o Windows PowerShell per abilitare o disabilitare l'invio di messaggi di posta elettronica agli utenti.
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
 
@@ -66,7 +67,7 @@ Puoi usare Microsoft teams o Windows PowerShell per abilitare o disabilitare l'i
 
 3. Nel riquadro **Impostazioni Bridge** abilitare o disabilitare **Invia automaticamente i messaggi di posta elettronica agli utenti in caso di modifica delle impostazioni di accesso**esterno.
 
-4. Fai clic su **Salva**.
+4. Fare clic su **Salva**.
 
   
 > [!Note]

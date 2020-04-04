@@ -13,15 +13,16 @@ localization_priority: Normal
 search.appverid: MET150
 MS.collection:
 - M365-voice
-description: Informazioni su come usare il report pool di minuti PSTN in teams nell'interfaccia di amministrazione di Microsoft teams per visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
+description: Come usare il report pool di minuti PSTN di teams nell'interfaccia di amministrazione di Microsoft teams per visualizzare i minuti usati all'interno dell'organizzazione durante il mese corrente.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0fa9b8f4a676c1e937fed02eabc0e7cd4acd5325
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 5f44d8a48dc01b8d2cdbce9dd164d5b2440c24d8
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827324"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140667"
 ---
 # <a name="microsoft-teams-pstn-minute-pools-report"></a>Report pool di minuti PSTN di Microsoft Teams
 

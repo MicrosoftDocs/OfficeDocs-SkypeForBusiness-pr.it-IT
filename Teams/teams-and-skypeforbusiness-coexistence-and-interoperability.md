@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams | Aggiornamento, modalità isole, criteri di interoperabilità, solo
+title: Interoperabilità tra Skype for business e Microsoft Teams
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -12,18 +12,18 @@ localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
 - CSH
-ms.custom: Teams-upgrade-guidance
+ms.custom: seo-marvel-mar2020
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ef1c9d8fd9d30101fdd40dba5946dfefb324742c
-ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
+ms.openlocfilehash: dc2a4495d95d0c6458fef16ea2f3f336dd337db4
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42706656"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140677"
 ---
 # <a name="understand-microsoft-teams-and-skype-for-business-coexistence-and-interoperability"></a>Informazioni sulla coesistenza e l'interoperabilità di Microsoft teams e Skype for business
 
@@ -34,7 +34,7 @@ Questo articolo fa parte della fase di definizione del progetto del viaggio di a
 - [Elenco delle parti interessate del progetto](upgrade-enlist-stakeholders.md)
 - [Definizione dell'ambito del progetto](https://aka.ms/SkypetoTeams-Scope)
 
-Se l'organizzazione usa Skype for business oggi e si inizia a usare teams insieme a Skype for business, oppure si inizia a eseguire l'aggiornamento a teams, è importante capire come coesistono le due applicazioni, quando e come interagiscono e come gestire migrazione degli utenti fino al loro eventuale aggiornamento da Skype for business a teams.
+Se l'organizzazione usa Skype for business oggi e si inizia a usare teams insieme a Skype for business o si inizia a eseguire l'aggiornamento a teams, è importante capire come coesistono le due applicazioni, quando e come interagiscono e come gestire la migrazione degli utenti fino al loro eventuale aggiornamento da Skype for business a teams.
 
 > [!Tip]
 > Per informazioni sulla [coesistenza e l'interoperabilità,](https://aka.ms/teams-upgrade-coexistence-interop)vedere la sessione seguente.
@@ -70,13 +70,13 @@ Per evitare un'esperienza di Skype for business confusa o regressione, le comuni
 
 In questa modalità di coesistenza gli utenti rimangono in Skype for business, non in team, per le funzionalità di chat, riunioni e chiamate e non usano team per team e canali. Questa modalità è oggi disponibile; Tuttavia, nell'implementazione corrente i team e i canali non vengono disattivati automaticamente per l'utente. Questa operazione può essere eseguita usando i criteri delle autorizzazioni dell'app per nascondere team e canali.
 
-Questa modalità può essere usata prima di avviare una distribuzione gestita di teams per impedire agli utenti di iniziare a usare team prima di aver creato la disponibilità o come un modo per abilitare la partecipazione autenticata alle riunioni di team per gli utenti di Skype for business, purché gli utenti siano concesso in licenza per i team.
+Questa modalità può essere usata prima di avviare una distribuzione gestita di teams per impedire agli utenti di iniziare a usare teams prima di aver creato la disponibilità o come metodo per abilitare la partecipazione autenticata alle riunioni di team per gli utenti di Skype for business, purché gli utenti dispongano della licenza per i team.
 
 ### <a name="teams-only"></a>Solo Teams
 
 
 > [!IMPORTANT]
-> Se si disinstalla il client di Skype for Business dopo aver spostato un utente in modalità **Solo Teams**, l’icona di presenza smetterà di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Soluzione alternativa: per vedere la presenza in Outlook e in altre app di Office, è necessario installare Skype for business, anche se si sta usando teams in modalità **solo teams** . Microsoft è a conoscenza del problema e sta lavorando per risolverlo.
+> Se si disinstalla il client di Skype for Business dopo aver spostato un utente in modalità **Solo Teams**, l’icona di presenza smetterà di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Soluzione alternativa: per visualizzare la presenza in Outlook (e in altre app di Office) è necessario installare Skype for Business, anche se Teams viene eseguito in modalità **Solo Teams**. Microsoft è a conoscenza del problema e sta lavorando per risolverlo.
 
 
 Un utente **solo teams** (detto anche utente *aggiornato* ) ha accesso a tutte le funzionalità in teams. Possono mantenere il client Skype for business per partecipare a riunioni su Skype for business organizzati da utenti non aggiornati o da parti esterne. Un utente aggiornato può continuare a comunicare con altri utenti dell'organizzazione che usano ancora Skype for business usando le funzionalità di interoperabilità tra teams e Skype for business (purché gli utenti di Skype for business non siano in modalità **isole** ). Tuttavia, un utente aggiornato non può avviare una chat, una chiamata o una riunione Skype for business.
@@ -95,7 +95,7 @@ Le organizzazioni che hanno un punto di partenza di Skype for Business Server in
 
 ### <a name="skype-for-business-with-teams-collaboration-and-meetings-also-known-as-meetings-first"></a>Skype for business con la collaborazione e le riunioni di teams, note anche come riunioni per primo
 
-Usa questa modalità di coesistenza per accelerare la disponibilità delle funzionalità di riunione dei team nella tua organizzazione, oltre alle sue funzionalità di collaborazione, consentendo agli utenti di sfruttare l'esperienza di riunioni superiori di teams-grande qualità, funzionalità innovative come la trascrizione e la traduzione o la sfocatura dello sfondo e un'esperienza utente superiore in tutte le piattaforme, inclusi i dispositivi mobili e i browser.
+Usa questa modalità di coesistenza per accelerare la disponibilità delle funzionalità di riunione di teams nell'organizzazione, oltre alle funzionalità di collaborazione, consentendo agli utenti di sfruttare l'esperienza di riunioni di Team superiori-qualità eccellente, funzionalità innovative come la trascrizione e la traduzione o la sfocatura dello sfondo e un'esperienza utente superiore in tutte le piattaforme, inclusi i dispositivi mobili e i browser.
 
 Insieme all'uso di team per le conversazioni basate su team e canali in questa modalità, gli utenti useranno team per pianificare e condurre le riunioni. Chat e chiamate private restano in Skype for business. I team e Skype for business traggono vantaggio da un'ampia gamma di funzionalità di "migliore collaborazione", come la riconciliazione della presenza, il supporto automatico di blocco/sospensione e la gestione dei dispositivi HID in entrambe le applicazioni. Tieni presente che è possibile nascondere team e canali, se necessario, usando i criteri delle autorizzazioni dell'app.
 
@@ -166,7 +166,7 @@ L'escalation di interoperabilità consiste nell'integrare le funzionalità di in
 
 Quando l'escalation di interoperabilità viene attivata dall'utente teams, viene creata una riunione teams. Quando viene attivato dall'utente Skype for business, viene creata una riunione Skype for business. In entrambi i casi, la riunione creata è una riunione che si **incontra ora** , che non viene applicata al calendario dell'utente.
  
-L'altra parte riceve il collegamento a una riunione tramite l'interoperabilità tramite chat e i join facendo clic sul collegamento. Se l'utente di Skype for business ha un account teams ed è invitato dall'utente teams, si unirà alla riunione autenticata. In caso contrario, si uniranno come partecipante anonimo. Al contrario, gli utenti di teams hanno quasi sempre un account Skype for business e un client Skype for business che possono usare per partecipare a una riunione Skype for business come partecipante autenticato, ma potrebbero anche partecipare come partecipanti anonimi, ad esempio usando Skype App riunione.
+L'altra parte riceve il collegamento a una riunione tramite l'interoperabilità tramite chat e i join facendo clic sul collegamento. Se l'utente di Skype for business ha un account teams ed è invitato dall'utente teams, si unirà alla riunione autenticata. In caso contrario, si uniranno come partecipante anonimo. Al contrario, gli utenti di teams hanno quasi sempre un account Skype for business e un client Skype for business che possono usare per partecipare a una riunione Skype for business come partecipante autenticato, ma potrebbero anche partecipare come partecipanti anonimi, ad esempio usando l'app riunione Skype.
 
 Una volta che le parti hanno partecipato alla riunione, possono eseguire tutte le attività supportate in riunioni, ad esempio condivisione di contenuti desktop o di contenuto, condivisione di file o trasferimento, aggiunta di altri partecipanti e così via.
 

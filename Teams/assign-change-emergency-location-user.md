@@ -17,12 +17,13 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Informazioni su come assegnare o modificare una posizione di emergenza per gli utenti dell'organizzazione.
-ms.openlocfilehash: dca0116188eddeb3c28b8d1f8486ae601e742079
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 2652cbd2f01af4436de737bae54656e96488ab27
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41695711"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137106"
 ---
 # <a name="assign-or-change-an-emergency-location-for-a-user"></a>Assegnare o modificare una posizione di emergenza per un utente
 
@@ -39,7 +40,7 @@ Per informazioni su come ottenere piani per le chiamate in Office 365 e quanto c
 - Per assegnare una posizione di emergenza, cercare e selezionare una posizione di emergenza.
 - Per modificare la posizione di emergenza già assegnata all'utente, fare clic su **X** per rimuovere la posizione esistente e quindi cercare e selezionare la posizione che si vuole assegnare.
 
-4. Fai clic su **Salva**.
+4. Fare clic su **Salva**.
     
 ## <a name="related-topics"></a>Argomenti correlati
 

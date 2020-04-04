@@ -1,5 +1,5 @@
 ---
-title: Configurare la licenza telefonica per l'area comune per Microsoft Teams
+title: Configurare la licenza telefonica per l'area comune
 ms.author: lolaj
 author: LolaJacobsen
 manager: serdars
@@ -19,13 +19,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Phone System
+- seo-marvel-mar2020
 description: "Informazioni su come configurare i telefoni per l'area comune per atri, aree di ricezione e sale conferenze "
-ms.openlocfilehash: 5997137420a9cac0517f67a81c7dedc7b779b715
-ms.sourcegitcommit: f3d4f4aabe31c5516507dfacbbd61cf0ae362d46
+ms.openlocfilehash: da44a7d66cdc0810405711719f4545caf64007a7
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42089729"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140869"
 ---
 # <a name="set-up-the-common-area-phone-license-for-microsoft-teams"></a>Configurare la licenza telefonica per l'area comune per Microsoft Teams
 > [!NOTE]
@@ -39,7 +40,7 @@ Prima di tutto, è necessario acquistare una licenza per un telefono con area co
 
 ## <a name="step-1---buy-the-licenses"></a>Passaggio 1: acquista le licenze
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 accedere a **** > **servizi di acquisto** fatturazione e quindi espandere **altri piani**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 accedere a **Billing** > **servizi di acquisto** fatturazione e quindi espandere **altri piani**.
 
     ![Screenshot che mostra il riquadro Telefono area comune](media/set-up-common-area-phone-image1.png)
 
@@ -62,7 +63,7 @@ La licenza telefonica per l'area comune supporta:
 
 |   |  Telefono di area comune  |
 |---------|---------|
-|Skype for business |   &#x2714; |
+|Skype for Business |   &#x2714; |
 |Microsoft Teams |   &#x2714; |
 |Sistemi telefonici |    &#x2714; |
 |Audioconferenza |       &#x2718; &sup1;  |
@@ -104,7 +105,7 @@ Usare l'interfaccia di amministrazione di teams per assegnare un numero all'uten
 
 1. Nell'interfaccia di amministrazione di teams selezionare**numeri di telefono** **vocali** > .
 
-3.  Seleziona un numero dall'elenco di numeri di telefono e fai clic su **Assegnare**.
+3.    Seleziona un numero dall'elenco di numeri di telefono e fai clic su **Assegnare**.
 
 4. Nella casella utente vocale della pagina **assegna** Digitare il nome dell'utente che utilizzerà il telefono e quindi selezionare l'utente nell'elenco a discesa **selezionare un utente vocale** .
 

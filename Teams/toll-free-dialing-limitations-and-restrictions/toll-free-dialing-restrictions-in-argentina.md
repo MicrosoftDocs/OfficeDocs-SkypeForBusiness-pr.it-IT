@@ -22,13 +22,14 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: f084dae0e3843721fd559a20ebdf3807623df99e
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+- seo-marvel-mar2020
+description: Informazioni sulla chiamata gratuita di numeri verdi in Argentina, tra cui disponibilità, disponibilità di rete cablata/a linee fisse e mobili e restrizioni.
+ms.openlocfilehash: 02a639ddd0d3008fa1f63278665b09eb95854fe9
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41708192"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140545"
 ---
 # <a name="toll-free-dialing-restrictions-in-argentina"></a>Restrizioni di chiamata gratuita in Argentina
 

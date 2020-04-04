@@ -1,5 +1,5 @@
 ---
-title: A bordo dei primi adottanti e raccogliere feedback per Microsoft Teams
+title: Eseguire l'onboarding degli early adopter e raccogliere feedback
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -13,18 +13,20 @@ search.appverid: MET150
 description: Scegliere early adopters per la fase di sperimentazione dell'adozione di teams e quindi raccogliere feedback per il progetto.
 f1.keywords:
 - CSH
-ms.custom: Adopt
+ms.custom:
+- Adopt
+- seo-marvel-mar2020
 ms.collection:
 - Teams_ITAdmin_Adopt
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 65e697ef46f9ec087975b47741597a7e0ff68508
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: f7000c3555a660fc692b7b88b0d94fb3ea42742c
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837806"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140743"
 ---
 # <a name="onboard-early-adopters-and-gather-feedback-for-microsoft-teams"></a>A bordo dei primi adottanti e raccogliere feedback per Microsoft Teams
 
@@ -37,7 +39,7 @@ Completare i passaggi seguenti con questi primi adottanti:
 3. Verificare l'accesso al canale di feedback del team di Champions teamwork e di tutti gli altri strumenti di social networking interni che si possono usare. 
 4. Valutare la possibilità di creare sondaggi periodici per il completamento che raccolgono informazioni mirate.
 
-## <a name="gather-feedback"></a>Raccogliere commenti e suggerimenti
+## <a name="gather-feedback"></a>Raccogliere il feedback
 
 Usare i componenti di Office 365 per raccogliere commenti e suggerimenti per il progetto.
   

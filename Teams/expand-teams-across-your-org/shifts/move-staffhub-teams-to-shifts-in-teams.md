@@ -1,5 +1,5 @@
 ---
-title: Spostare i team di StaffHub in turni in Microsoft Teams
+title: Spostare i team di StaffHub in turni
 author: LanaChin
 ms.author: v-lanac
 ms.reviewer: lisawu, gumariam
@@ -18,12 +18,13 @@ ms.collection:
 - SPO_Content
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4725669d4f5829941df4bded0a5f2bbb393fb034
-ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 3c93e01624883d9db755479baf6e87c80feba2e1
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887875"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139595"
 ---
 # <a name="move-your-microsoft-staffhub-teams-to-shifts-in-microsoft-teams"></a>Spostare i team di Microsoft StaffHub in turni in Microsoft Teams
 
@@ -271,7 +272,7 @@ Eseguire la procedura seguente per ottenere un elenco di tutti i team di StaffHu
 ```PowerShell
 $StaffHubTeams = Get-StaffHubTeamsForTenant
 
-$StaffHubTeams[0] | Where-Object { $_.ManagedBy -eq ‘StaffHub’ }
+$StaffHubTeams[0] | Where-Object { $_.ManagedBy -eq 'StaffHub' }
 ```
 
 Eseguire quindi le operazioni seguenti per trasferire tutti i team.

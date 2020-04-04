@@ -21,13 +21,14 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
-description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: 270d169be6992b97dfba94bedd4802560af78ef8
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+- seo-marvel-mar2020
+description: Informazioni sulla chiamata gratuita di numeri verdi in un paese/area geografica, tra cui disponibilità, disponibilità di reti cablate/fisse e dispositivi mobili e restrizioni.
+ms.openlocfilehash: e987a392be81178a043835f44e34c67143609244
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836906"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140555"
 ---
 # <a name="toll-free-dialing-limitations-and-restrictions"></a>Restrizioni e limitazioni per le chiamate verso numeri verdi
 

@@ -1,5 +1,5 @@
 ---
-title: Gestire i criteri e le impostazioni dell'app personalizzata in Microsoft Teams
+title: Gestire i criteri e le impostazioni dell'app personalizzata
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -22,12 +22,13 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.allowsideloading
 - ms.teamsadmincenter.appsetuppolicies.tooltip.allowsideloading
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
-ms.openlocfilehash: a3435d0a6be9e9ef6642fe84404cb54d4ebaf8e4
-ms.sourcegitcommit: dde63e1b92c0bc3dbb41d8670778b863c3bc9bec
+- seo-marvel-mar2020
+ms.openlocfilehash: 7c3c7958994c50e1ae0e90ed13437601dabc0688
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42601423"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140657"
 ---
 # <a name="manage-custom-app-policies-and-settings-in-microsoft-teams"></a>Gestire i criteri e le impostazioni dell'app personalizzata in Microsoft Teams
 
@@ -75,7 +76,7 @@ Per includere le app desiderate, è possibile modificare le impostazioni dei cri
 2. Fare clic su **Aggiungi**.
 3. Attivare o disattivare **carica app personalizzate**.
 4. Scegliere le altre impostazioni desiderate per il criterio.
-5. Fai clic su **Salva**.
+5. Fare clic su **Salva**.
 
 ### <a name="team-custom-app-setting"></a>Impostazione dell'app personalizzata del team
 

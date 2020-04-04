@@ -1,5 +1,5 @@
 ---
-title: Implementare la qualità del servizio nei client di Microsoft Teams
+title: Implementare la qualità del servizio nei client di Teams
 author: lolajacobsen
 ms.author: lolaj
 manager: Serdars
@@ -17,12 +17,13 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6fb3823a77995e401be7e60e86603f9d8c56099f
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 66e6dc43e03f1ec3606116ad001f11104de4a55f
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41863157"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139605"
 ---
 # <a name="set-qos-on-windows-clients"></a>Configurare QoS nei client di Windows
 
@@ -30,11 +31,11 @@ ms.locfileid: "41863157"
 
 *Tabella 1. Intervalli di porte iniziali consigliati*
 
-|Tipo di traffico multimediale| Intervallo di porte di origine client |Protocollo|Valore DSCP|Classe DSCP|
+|Tipo di traffico multimediale| Intervallo di porte di origine client  |Protocollo|Valore DSCP|Classe DSCP|
 |:--- |:--- |:--- |:--- |:--- |
-|Audio| 50000-50019|TCP/UDP|46|Inoltro accelerato (EF)|
-|Video| 50020-50039|TCP/UDP|34|Inoltro assicurato (AF41)|
-|Condivisione di applicazioni/schermi| 50040-50059|TCP/UDP|18|Inoltro assicurato (AF21)|
+|Audio| 50.000–50.019|TCP/UDP|46|Expedited Forwarding (EF)|
+|Video| 50.020–50.039|TCP/UDP|34|Assured Forwarding (AF41)|
+|Condivisione di applicazioni/schermi| 50.040–50.059|TCP/UDP|18|Assured Forwarding (AF21)|
 | | | | | |
 
 Laddove possibile, configurare le impostazioni QoS basate su criteri all'interno di un oggetto Criteri di gruppo. I passaggi seguenti sono molto simili a [configurare gli intervalli di porte e i criteri di qualità dei servizi per i clienti in Skype for Business Server](https://docs.microsoft.com/SkypeForBusiness/manage/network-management/qos/configuring-port-ranges-for-your-skype-clients#configure-quality-of-service-policies-for-clients-running-on-windows-10), che contiene alcuni dettagli aggiuntivi che potrebbero non essere necessari.

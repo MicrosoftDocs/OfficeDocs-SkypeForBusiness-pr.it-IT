@@ -13,15 +13,16 @@ localization_priority: Normal
 search.appverid: MET150
 MS.collection:
 - M365-voice
-description: Informazioni su come usare il report utenti bloccati PSTN nell'interfaccia di amministrazione di Microsoft teams per ottenere una panoramica degli utenti di Teams dell'organizzazione bloccati dall'esecuzione di chiamate PSTN.
+description: Usare il report utenti bloccati PSTN nell'interfaccia di amministrazione di Microsoft teams per ottenere una panoramica degli utenti del team dell'organizzazione bloccati dall'esecuzione di chiamate PSTN.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f1ef4dfbab2b32b088c8e2f8b38b55c15a66eb32
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: e6055533138f08bafbdc9c39b03350612075840f
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827344"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140687"
 ---
 # <a name="microsoft-teams-pstn-blocked-users-report"></a>Report utenti bloccati PSTN di Microsoft Teams
 

@@ -16,13 +16,14 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-description: Questo documento descrive il comportamento della chat, il routing delle chiamate e la presenza tra gli utenti di teams e Skype for business, sia in-tenant che federati, in base alle modalità di TeamsUpgrade assegnate. Include le ottimizzazioni del routing, il comportamento della presenza, nonché la modifica della modalità di TeamsUpgrade predefinita da *legacy* a *Islands* e l'imminente pensionamento di *legacy*.
-ms.openlocfilehash: 64889ae11b4ce8665fb4a6bdbb98ff95aaf777fc
-ms.sourcegitcommit: c16451519e05b47bbb77e09dacd13ff212617e91
+ms.custom: seo-marvel-mar2020
+description: Comportamento di coesistenza tra teams & Skype for business, inclusi i parametri di routing, la chat & il routing delle chiamate, le chat & le chiamate da thread preesistenti & presenza.
+ms.openlocfilehash: ff5e94b16cd55374ec0aeb45aaffdda41fbe0498
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42328018"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137307"
 ---
 # <a name="coexistence-with-skype-for-business"></a>Coesistenza con Skype for Business
 
@@ -79,8 +80,8 @@ Nelle tabelle seguenti:
 
 | <br/><br/> Modalità | Mittente <br/><br/> Client | <br/><br/> SfB&nbsp;homed | | Destinatario <br/><br/> Isole  |
 |--- |--- |--- |--- |--- |
-| Isole | Teams <br/> Skype for business<br/> Teams<br/> Skype for business| Online<br/> Online<br/> On-Prem<br/>On-Prem| &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;|Teams <br/> Skype for business<br/> Teams<br/> Skype for business|
-|SfB\* <br/> | Skype for business<br/>Skype for business<br/> | Online<br/> On-Prem<br/> |&boxv;<br/>&boxv;|Skype for business<br/>Skype for business<br/>|
+| Isole | Teams <br/> Skype for Business<br/> Teams<br/> Skype for Business| Online<br/> Online<br/> On-Prem<br/>On-Prem| &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;|Teams <br/> Skype for Business<br/> Teams<br/> Skype for Business|
+|SfB\* <br/> | Skype for Business<br/>Skype for Business<br/> | Online<br/> On-Prem<br/> |&boxv;<br/>&boxv;|Skype for Business<br/>Skype for Business<br/>|
 |TeamsOnly |Teams| Online<br/>|&boxv;<br/>|Teams|
 | | | | | |
 
@@ -88,8 +89,8 @@ Nelle tabelle seguenti:
 
 | <br/><br/> Modalità   | Mittente <br/><br/> Client | <br/><br/> SfB&nbsp;homed | |   Destinatario <br/><br/> SfB\*   |
 |--- |--- |--- |---   |--- |
-| Isole |Teams<br/>Skype for business<br/>Teams <br/>Skype for business  |Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;<br/>| *Skype for Business* <br/> Skype for business<br/> **Non è possibile** <br/>Skype for business<br/> |
-|SfB\* <br/> | Skype for business<br/>Skype for business<br/> | Online<br/> On-Prem<br/> |&boxv;<br/>&boxv; |  Skype for business<br/>Skype for business<br/> |
+| Isole |Teams<br/>Skype for Business<br/>Teams <br/>Skype for Business  |Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;<br/>| *Skype for Business* <br/> Skype for Business<br/> **Non è possibile** <br/>Skype for Business<br/> |
+|SfB\* <br/> | Skype for Business<br/>Skype for Business<br/> | Online<br/> On-Prem<br/> |&boxv;<br/>&boxv; |  Skype for Business<br/>Skype for Business<br/> |
 |TeamsOnly |Teams| Online<br/>|&boxv;<br/> |  *Skype for Business* <br/>| 
 | | | | | |
 
@@ -97,8 +98,8 @@ Nelle tabelle seguenti:
 
 | <br/><br/> Modalità   | Mittente <br/><br/> Client | <br/><br/> SfB&nbsp;homed | |   Destinatario <br/><br/> TeamsOnly  |
 |--- |--- |--- |--- | --- |
-| Isole   |Teams<br/>Skype for business<br/>Teams <br/>Skype for business<br/>|Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;|  Teams <br/>*Team* <br/>Teams <br/>*Team*  |
-|SfB\*  | Skype for business<br/>Skype for business<br/> | Online<br/> On-Prem<br/> | &boxv;<br/>&boxv; | *Team*  <br/>*Team*   |
+| Isole   |Teams<br/>Skype for Business<br/>Teams <br/>Skype for Business<br/>|Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;|  Teams <br/>*Team* <br/>Teams <br/>*Team*  |
+|SfB\*  | Skype for Business<br/>Skype for Business<br/> | Online<br/> On-Prem<br/> | &boxv;<br/>&boxv; | *Team*  <br/>*Team*   |
 |TeamsOnly  | Teams | Online |  &boxv; |Teams   |
 |  |  |  | | |
 
@@ -111,7 +112,7 @@ In sintesi, se la conversazione è possibile come descritto in precedenza, i mes
 Questo perché non possiamo presupporre che un partner di Skype for business federativo usi già teams se si trovano in modalità isole. Islands è la modalità predefinita, ma non possiamo presupporre che tutti gli utenti delle isole eseguano team. Con il routing a Skype for business assicuriamo che nessuna comunicazione a un utente di isole non riesca. Se si instradano a teams, è possibile che le comunicazioni non vengano perse se la destinazione non usa team. Il routing a Skype for business garantisce che il messaggio venga sempre ricevuto.  
 
 > [!NOTE]
-> L'implementazione corrente della Federazione teams si basa su Skype for business Federation, quindi sfrutta l'infrastruttura di interoperabilità (che richiede che il tenant del mittente sia online puro o Skype for business Hybrid) e fornisca un set di funzionalità ridotto rispetto a un thread nativo. Prevediamo di fornirci team nativi alla Federazione teams in futuro, a questo punto il thread sarà nativo e fornirà funzionalità complete.
+> L'implementazione corrente della Federazione di teams si basa su Skype for business Federation, quindi sfrutta l'infrastruttura di interoperabilità (che richiede che il tenant dell'originatore sia online puro o Skype for business Hybrid) e fornisca un insieme ridotto di funzionalità rispetto a un thread nativo. Prevediamo di fornirci team nativi alla Federazione teams in futuro, a questo punto il thread sarà nativo e fornirà funzionalità complete.
 
 Le tabelle seguenti descrivono il client che riceverà una chiamata dall'originator (tre colonne più a sinistra), a seconda della modalità di origine, del cliente scelto e della posizione in cui è ospitato il client Skype for business (on-Prem o online).
 
@@ -119,8 +120,8 @@ Le tabelle seguenti descrivono il client che riceverà una chiamata dall'origina
 
 | <br/><br/>Modalità   | Mittente<br/><br/> Client| <br/><br/>SfB homed| | Destinatario<br/><br/> Isole |
 |--- |--- |--- |--- |--- |
-| Isole |Teams<br/>Skype for business <br/>Teams <br/>Skype for business  |Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;<br/>| *Skype for Business* <br/> Skype for business <br/> **Non è possibile**   <br/> Skype for business |
-| SfB\* |Skype for business <br/>Skype for business |Online<br/> On-Prem<br/> | &boxv;<br/>&boxv;|Skype for business <br/>Skype for business |
+| Isole |Teams<br/>Skype for Business <br/>Teams <br/>Skype for Business  |Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;<br/>| *Skype for Business* <br/> Skype for Business <br/> **Non è possibile**   <br/> Skype for Business |
+| SfB\* |Skype for Business <br/>Skype for Business |Online<br/> On-Prem<br/> | &boxv;<br/>&boxv;|Skype for Business <br/>Skype for Business |
 | TeamsOnly |Teams |Online| &boxv;|*Skype for Business* |
 |  | | | | 
 
@@ -128,8 +129,8 @@ Le tabelle seguenti descrivono il client che riceverà una chiamata dall'origina
 
 | <br/><br/>Modalità   | Mittente<br/><br/> Client| <br/><br/>SfB homed| |  Destinatario<br/><br/> SfB\* |  
 |--- |--- |--- |--- |--- |
-| Isole |Teams<br/>Skype for business <br/>Teams <br/>Skype for business <br/>|Online<br/> Online<br/> On-Prem<br/> On-Prem<br/> | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;<br/>| *Skype for Business* <br/> Skype for business <br/> **Non è possibile** <br/>Skype for business <br/> |  
-| SfB\* |Skype for business <br/>Skype for business  |Online<br/> On-Prem<br/>  |&boxv;<br/>&boxv; | Skype for business <br/>Skype for business  |
+| Isole |Teams<br/>Skype for Business <br/>Teams <br/>Skype for Business <br/>|Online<br/> Online<br/> On-Prem<br/> On-Prem<br/> | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;<br/>| *Skype for Business* <br/> Skype for Business <br/> **Non è possibile** <br/>Skype for Business <br/> |  
+| SfB\* |Skype for Business <br/>Skype for Business  |Online<br/> On-Prem<br/>  |&boxv;<br/>&boxv; | Skype for Business <br/>Skype for Business  |
 | TeamsOnly | Teams|Online |&boxv; |*Skype for Business*  |
 |  | | | | |
 
@@ -137,8 +138,8 @@ Le tabelle seguenti descrivono il client che riceverà una chiamata dall'origina
 
 | <br/><br/>Modalità | Mittente<br/><br/> Client| <br/><br/>SfB homed| |  Destinatario<br/>  <br/> TeamsOnly  |
 |--- |--- |--- |--- |--- |
-| Isole  |Teams<br/>Skype for business <br/>Teams <br/>Skype for business <br/>|Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;| Teams <br/>*Team* <br/>**Non è possibile** <br/>*Team* |
-| SfB\* |Skype for business <br/>Skype for business  | Online<br/> On-Prem| &boxv;<br/>&boxv;|*Team* <br/>*Team*   |
+| Isole  |Teams<br/>Skype for Business <br/>Teams <br/>Skype for Business <br/>|Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;| Teams <br/>*Team* <br/>**Non è possibile** <br/>*Team* |
+| SfB\* |Skype for Business <br/>Skype for Business  | Online<br/> On-Prem| &boxv;<br/>&boxv;|*Team* <br/>*Team*   |
 | TeamsOnly |Teams |Online |&boxv; |Teams |
 |  | | | | |
 
@@ -174,7 +175,7 @@ Per conoscere il comportamento da prevedere, è necessario capire che la presenz
 
 * Se un utente è in modalità TeamsOnly, qualsiasi altro utente (sia in teams che in Skype for business) vedrà che la presenza di teams di TeamsOnly dell'utente
 * Se un utente si trova in una delle modalità\* SFB (SfbOnly, SfbWithTeamsCollab, SfbWithTeamsCollabAndMeetings), qualsiasi altro utente (sia in team che in Skype for business) vedrà che la presenza\* di Skype for business per l'utente di SFB
-* Se un utente è in modalità Islands (o legacy), la presenza in teams e la presenza in Skype for business sono indipendenti (i valori non devono corrispondere) e altri utenti vedranno una o l'altra presenza dell'utente Islands, a seconda che si trovino nello stesso tenant o in una Federazione tenant ed il client che usano
+* Se un utente è in modalità Islands (o legacy), la presenza in teams e la presenza in Skype for business sono indipendenti (i valori non devono corrispondere) e altri utenti vedranno una o l'altra presenza dell'utente Islands, a seconda che si trovino nello stesso tenant o in un tenant federato e quale cliente usano
     * Da teams, qualsiasi altro utente all'interno dello stesso tenant vedrà la presenza di Teams dell'utente Islands; Questa operazione è allineata alla tabella di routing in-tenant riportata sopra
     * Da teams, qualsiasi altro utente di un tenant federato vedrà la presenza di Skype for business dell'utente Islands; Questa operazione è allineata alla tabella di routing federata precedente
     * Da Skype for business, qualsiasi altro utente vedrà la presenza di Skype for business dell'utente Islands (sia in-tenant che federati); Questo è allineato alle tabelle di routing sopra
@@ -190,8 +191,8 @@ La tabella descrive la presenza dell'autore che verrà visualizzata da un osserv
 
 |Watcher <br/><br/>Client| |<br/><br/>Isole |Publisher <br/><br/>SfB\* |<br/>Solo Teams|
 |--- |--- |--- |--- |---|
-|Skype for business |&boxv;|Skype for business | Skype for business | Teams|
-|Teams |&boxv; |Teams |Skype for business |Teams |
+|Skype for Business |&boxv;|Skype for Business | Skype for Business | Teams|
+|Teams |&boxv; |Teams |Skype for Business |Teams |
 | | | | |
 
 ### <a name="federated-presence"></a>Presenza federata
@@ -204,8 +205,8 @@ La tabella seguente descrive la presenza dell'autore che verrà visualizzata da 
 
 |Watcher <br/><br/> Client | |<br/><br/> Isole  |Publisher <br/><br/> SfB\* |<br/><br/> Solo Teams |
 |--- |--- |--- |--- |---|
-|Skype for business |&boxv; |Skype for business  | Skype for business  | Teams  |
-|Teams | &boxv;|Skype for business |Skype for business |Teams|
+|Skype for Business |&boxv; |Skype for Business  | Skype for Business  | Teams  |
+|Teams | &boxv;|Skype for Business |Skype for Business |Teams|
 | | | | ||
 
 ### <a name="presence-in-pre-existing-threads"></a>Presenza nei thread preesistenti

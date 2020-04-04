@@ -1,5 +1,5 @@
 ---
-title: Gestire l'accesso esterno (federazione) in Microsoft Teams
+title: Gestire l'accesso esterno (Federazione)
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
@@ -15,16 +15,17 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.externalaccess.overview
+- seo-marvel-mar2020
 description: L'amministratore IT o di Teams può configurare l'accesso esterno per altri domini (federazione) per consentire agli utenti di tali domini di partecipare a Teams.
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: b354172e5a60e3c6f9df5d74c5d16731fdac0bf8
-ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
+ms.openlocfilehash: 6db70da03ae2e1dba0d89f319c7311241ac17b3a
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43096861"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141069"
 ---
 <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
 ======================================================

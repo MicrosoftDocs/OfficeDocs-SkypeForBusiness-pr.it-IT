@@ -1,5 +1,5 @@
 ---
-title: Visualizzare un elenco di numeri di servizi di audioconferenza in Microsoft Teams
+title: Consultare un elenco di numeri di audioconferenza
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,13 +20,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
+- seo-marvel-mar2020
 description: 'Informazioni su come cercare i numeri dei servizi di conferenza telefonica con accesso esterno da Microsoft teams. '
-ms.openlocfilehash: 05008f8c3d51d17023be26dcc78e9e0b60243a5c
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: d430daf841694029818f54d27abfeba3bc77604e
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838166"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140969"
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers-in-microsoft-teams"></a>Visualizzare un elenco di numeri di servizi di audioconferenza in Microsoft Teams
 
@@ -46,7 +47,7 @@ Se è disponibile un solo numero di telefono all'interno dell'organizzazione, qu
 
 ## <a name="to-view-your-audio-conferencing-phone-numbers"></a>Per visualizzare i numeri di telefono per Audioconferenza
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
 2. Visualizzare i numeri di telefono disponibili per i servizi di audioconferenza.

@@ -16,13 +16,14 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: anach
-description: Integrazione dell'app EHR di Microsoft teams patients
-ms.openlocfilehash: 10a6b21e583b5fdd3e70857c4cfc5e7e21a7e988
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+description: Informazioni sulla specifica dell'interfaccia DSTU2 in teams, inclusa la configurazione o la riconfigurazione di un server FHIR per l'utilizzo con l'app Microsoft teams patients.
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: f09f43af431b3f0cc6d9f984171206f2549a550a
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42153818"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43136956"
 ---
 # <a name="dstu2-interface-specification"></a>Specifica dell'interfaccia DSTU2
 
@@ -175,7 +176,7 @@ Vedere l'esempio seguente di questa chiamata:
 
     Richiesta: ottenere <Fhir-Server>/Condition? patient =<patient-ID>&_count = 10
     
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"risorsa": {"resourceType": "condizione", "ID": "<Resource-ID>", "codice": {"codifica": [{"System": "http://snomed.info/sct" "," codice ":" 386033004 "," Visualizza ":" neuropatia (nervo) "}]}," dateRecorded ":" 2018-09-17 "," gravità ":" codifica ": [{") syst em ":"http://snomed.info/sct"," codice ":" 24484000 "," visualizzazione ":" grave "}]}},}]}
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"Resource", "resourceType", "Condition", "ID", "<Resource-ID>", "code": {"coding": [{"System": "http://snomed.info/sct", "code": "386033004", "display": "neuropatia (danni nervosi)"}]}, "dateRecorded": "2018-09-17", "Severity": {"coding": [{"System"http://snomed.info/sct: "", "code": "24484000", "display": "grave"}]}},}]}
 
 * * *
 
@@ -204,7 +205,7 @@ L'obiettivo è quello di riuscire a recuperare l'ultima posizione nota del pazie
 
     Richiesta: ottenere <Fhir-Server>/Encounter? patient =<ID paziente>&_sort:d ESC = data&_count = 1
     
-    Response: {"ResourceType": "bundle", "Type": "searchset", "Total": 1, "entry": [{"risorsa": "" ResourceType ":" Encounter "," ID ":" <Resource-ID> "," Identifier ": [{" use ":" Official "," value ":"<id>"}]," stato ":" arrivato "," tipo ": [{" codifica ": [{" visualizzazione ":" appuntamento "}],}]," paziente ": {" riferimento ":" paziente/<paziente-ID> "}," periodo ":" inizio ":" 09/17/2018 1:00:00 PM "}," location ": [{              "location": {"display": "Clinic-ENT"},}]}}]}
+    Risposta: {"ResourceType": "bundle", "Type": "searchset", "Total": 1, "entry": [{"" Resource ": {" ResourceType ":" Encounter "," ID ":" <Resource-ID> "," identificatore ": [{" use ":" Official "," value ":<id>" "}]," stato ":" arrivato "," tipo ": [{" codifica ": [{" visualizzazione ":" appuntamento "}],}]," paziente ": {" riferimento ":" paziente/<paziente-ID> "}," punto ": {" Start ":" 09/17/2018 1:00:00 PM "}," location ": [{" location ": {" display ":" Clinic-ENT "},}]}}]}
 
 * * *
 
@@ -236,7 +237,7 @@ Vedere l'esempio seguente di questa chiamata:
 
     Richiesta: ottenere <Fhir-Server>/AllergyIntolerance? patient =<ID paziente>
     
-    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"Resource": {"resourceType": "AllergyIntolerance", "ID": "<Resource-ID>", "recordedDate": "2018-09-17T07:00:00.000 Z", "sostanza": {"testo": "anacardio"}, "stato": "confermato", "reazione": [{"sostanza": {"testo": "Estratto del dado allergenico prodotto iniettabile"}, "manifestati on ": [{" testo ":" reazione anafilattica "}]}]}}]}
+    Response: {"resourceType": "bundle", "ID": "<Bundle-ID>", "Type": "searchset", "Total": 1, "entry": [{"Resource": {"resourceType": "AllergyIntolerance", "ID": "<Resource-ID>", "recordedDate": "2018-09-17T07:00:00.000 Z", "sostanza": {"testo": "anacardi Nuts"}, "stato": "confermato", "reazione": [{"sostanza": {"testo": "Estratto prodotto iniettabile di anacardio dado allergenico"}, "manifestazione": [{"testo": "reazione anafilattica"}]}]}}]}
 
 * * *
 

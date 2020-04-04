@@ -1,5 +1,5 @@
 ---
-title: Valutare l'ambiente per i workload vocali di Microsoft teams cloud
+title: Valutare l'ambiente per i carichi di lavoro cloud Voice
 author: rmw2890
 ms.author: Rowille
 manager: serdars
@@ -18,12 +18,13 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3efb5a58c36a38757b2f6046ca8c8c42ab80f6ce
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 17843b886fc334d7b02907882a82dffdf302e9f5
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825074"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137986"
 ---
 # <a name="evaluate-my-environment"></a>Valutare il proprio ambiente
 
@@ -42,7 +43,7 @@ Dovresti includere queste informazioni nel registro dei rischi.
 
 ## <a name="current-environment"></a>Ambiente corrente
 
-Come parte della tua individuazione ambientale, Includi tutte le questioni relative al calcolo degli utenti finali, ad esempio una valutazione della conformità di PC e dispositivi mobili per supportare i servizi di audioconferenza e il sistema telefonico con i casi di utilizzo del piano di chiamata, da requisiti hardware a requisiti software.
+Come parte della tua individuazione ambientale, Includi tutte le questioni relative al calcolo degli utenti finali, ad esempio una valutazione della conformità di PC e dispositivi mobili per supportare i servizi di audioconferenza e il sistema telefonico con i casi di utilizzo del piano di chiamata, dai requisiti hardware ai requisiti software.
 
 L'individuazione ambientale può anche scoprire se è necessario [trasferire i numeri di telefono a Microsoft](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
 Questa operazione consentirà all'organizzazione di modificare il piano di progetto e di preparare le informazioni necessarie per la portabilità dei numeri. È possibile usare l' [individuazione ambientale per l'implementazione di Microsoft teams](environmental-discovery-for-microsoft-teams-rollout.md) per eseguire l'individuazione ambientale.
@@ -155,7 +156,7 @@ L'apertura di queste porte è essenziale per una distribuzione affidabile di tea
 Se l'organizzazione richiede di specificare gli intervalli di indirizzi IP esatti e i domini a cui devono essere aperte queste porte, è possibile limitare gli intervalli e i domini IP di destinazione per queste porte. Per un elenco di porte, protocolli e intervalli IP esatti, vedere [URL e intervalli di indirizzi IP di Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_teams).
 Se si sceglie di limitare gli intervalli di indirizzi IP di destinazione e i domini, è necessario verificare che l'elenco delle porte e degli intervalli sia aggiornato perché potrebbe cambiare. È possibile sottoscrivere [questo feed RSS per l'](https://go.microsoft.com/fwlink/p/?linkid=236301) aggiornamento quando si verificano le modifiche. È anche buona norma verificare se tutte le porte vengono aperte eseguendo regolarmente lo strumento di [valutazione della rete Skype for business](https://www.microsoft.com/download/details.aspx?id=53885) . Per altre informazioni sulle funzionalità di questo strumento, vedere la sezione successiva.
 
-In caso di distribuzione di un server proxy, è consigliabile ignorare il server proxy per tutti i servizi teams. Anche se l'uso di un proxy potrebbe funzionare, è molto probabile che la qualità venga ridotta a causa del fatto che i contenuti multimediali vengono costretti a usare TCP anziché UDP. Per altre informazioni sui server proxy e l'esclusione, vedere [URL e intervalli di indirizzi IP di Office 365](https://docs.microsoft.com/MicrosoftTeams/office-365-urls-ip-address-ranges).
+In caso di distribuzione di un server proxy, è consigliabile ignorare il server proxy per tutti i servizi teams. Anche se l'uso di un proxy potrebbe funzionare, è molto probabile che la qualità venga ridotta a causa di un elemento multimediale costretto a usare TCP anziché UDP. Per altre informazioni sui server proxy e l'esclusione, vedere [URL e intervalli di indirizzi IP di Office 365](https://docs.microsoft.com/MicrosoftTeams/office-365-urls-ip-address-ranges).
 
 <!--ENDOFSECTION-->
 

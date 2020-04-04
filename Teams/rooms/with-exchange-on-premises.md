@@ -1,5 +1,5 @@
 ---
-title: Distribuire le sale di Microsoft teams con Exchange in locale
+title: Distribuire le sale di Microsoft teams con Exchange locale
 ms.author: v-lanac
 author: lanachin
 manager: serdars
@@ -10,17 +10,19 @@ ms.service: msteams
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-ms.custom: Strat_SB_Admin
+ms.custom:
+- Strat_SB_Admin
+- seo-marvel-mar2020
 ms.assetid: 24860c05-40a4-436b-a44e-f5fcb9129e98
 ms.collection:
 - M365-collaboration
 description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams in un ambiente ibrido con Exchange in locale.
-ms.openlocfilehash: eb399eea64707e07d796ee36e85036e662ce8de1
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 0efed0a07024f0f1fcfeea7168c4f78c66fecd64
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838186"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141009"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-on-premises"></a>Distribuire le sale di Microsoft teams con Exchange in locale
 
@@ -169,7 +171,7 @@ Skype for Business Online PowerShell viene usato per gestire i servizi sia per M
 3. Fare clic sull'account Microsoft teams Rooms e quindi fare clic sull'icona della penna per modificare le informazioni sull'account.
 4. Fare clic su **licenze**.
 5. In **assegna licenze**selezionare Skype for business (piano 2) o Skype for business (piano 3), a seconda delle licenze e dei requisiti per la segreteria telefonica aziendale. È necessario usare una licenza di piano 3 Se si vuole usare VoIP aziendale nelle sale di Microsoft teams.
-6. Fai clic su **Salva**.
+6. Fare clic su **Salva**.
 
 Per la convalida, dovresti essere in grado di usare qualsiasi client per accedere a questo account.
   

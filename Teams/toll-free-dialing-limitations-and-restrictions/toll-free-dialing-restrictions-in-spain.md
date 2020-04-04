@@ -22,13 +22,14 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: 83680f72541f87db3d29221efc88da2dc5086e58
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+- seo-marvel-mar2020
+description: Informazioni sulla chiamata gratuita di numeri verdi in Spagna, tra cui disponibilità, disponibilità di rete cablata/a linee fisse e mobili e restrizioni.
+ms.openlocfilehash: 25e3877ae472d2fb037876713dca054f54d7ac77
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41693281"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139795"
 ---
 # <a name="toll-free-dialing-restrictions-in-spain"></a>Restrizioni di chiamata gratuita in Spagna
 

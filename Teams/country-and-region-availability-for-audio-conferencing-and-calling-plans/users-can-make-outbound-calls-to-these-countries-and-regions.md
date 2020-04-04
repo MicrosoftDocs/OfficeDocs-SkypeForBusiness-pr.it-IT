@@ -1,5 +1,5 @@
 ---
-title: Gli utenti possono effettuare chiamate in uscita verso questi paesi e aree geografiche
+title: Effettuare chiamate in uscita in questi paesi/aree geografiche
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -23,13 +23,14 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
+- seo-marvel-mar2020
 description: Questo argomento contiene un elenco di tutti i paesi e le aree geografiche verso cui gli utenti possono effettuare chiamate in uscita se dispongono di un Piano di chiamata.
-ms.openlocfilehash: 09e6fae92c7708e13c8b1eb595d76bf313dbba0c
-ms.sourcegitcommit: 89a7c0427a5abbef838a17ae7eac6934c6176a35
+ms.openlocfilehash: 4e41235473436e326d19f42d8e838d5508becf97
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42982129"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141049"
 ---
 # <a name="users-can-make-outbound-calls-to-these-countries-and-regions"></a>Gli utenti possono effettuare chiamate in uscita verso questi paesi e aree geografiche
 

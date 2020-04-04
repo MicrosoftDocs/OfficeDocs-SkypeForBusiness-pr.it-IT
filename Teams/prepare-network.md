@@ -1,5 +1,5 @@
 ---
-title: Preparare la rete dell'organizzazione per Microsoft Teams
+title: Preparare la rete dell'organizzazione per Teams
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: jastark, kojika
 audience: admin
-description: Prima di implementare Microsoft teams, valutare e preparare la rete per assicurarsi che sia pronta per i team. Le informazioni includono requisiti di rete, requisiti di larghezza di banda e linee guida per l'ottimizzazione della rete.
+description: Informazioni sulla preparazione della rete dell'organizzazione per Microsoft teams, inclusi i requisiti di rete, l'ottimizzazione della rete e i requisiti di larghezza di banda.
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
@@ -16,12 +16,14 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 64bcdee7e1a4ce7f36a9089fd5231cf2a63e9d5b
-ms.sourcegitcommit: f0f2fa999c1ca4a1118377c7938a247f79217609
+ms.custom:
+- seo-marvel-mar2020
+ms.openlocfilehash: bc81781e17b16820eebb134a0ee57f1fb82d403c
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43109460"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43143778"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
 
@@ -157,5 +159,4 @@ Se la larghezza di banda *non è* limitata, teams ottimizza la qualità multimed
 [Modelli di identità e autenticazione in Teams](identify-models-authentication.md)
 
 [Come implementare Teams](How-to-roll-out-teams.md)
-
 

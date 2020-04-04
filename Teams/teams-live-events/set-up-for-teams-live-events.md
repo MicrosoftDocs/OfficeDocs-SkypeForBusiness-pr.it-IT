@@ -14,16 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-description: Informazioni sui passaggi per configurare Live per gli eventi in teams, tra cui la preparazione della rete, l'assegnazione di licenze, l'uso di criteri per abilitare le caratteristiche e la pianificazione degli eventi dinamici per gli utenti e la configurazione di un provider di distribuzione di terze parti.
-ms.custom: ms.teamsadmincenter.liveevents.policies
+description: Configurare Live per gli eventi in teams, inclusa la configurazione della rete, l'assegnazione di licenze, l'abilitazione delle caratteristiche degli eventi dinamici e la pianificazione e la distribuzione di soluzioni video.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f18f35ef6775f04049b79374a4e2940646eff9e8
-ms.sourcegitcommit: a6425a536746e129ab8bda3984b5ae63fb316192
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: ae30fdb824c62027d1a704435e80df2a9abf1f85
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558576"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140565"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi dinamici in Microsoft Teams
 
@@ -81,10 +81,10 @@ Se è stato creato un criterio eventi dinamici personalizzati, assegnarlo agli u
 
 ![Icona che mostra il logo di Microsoft Teams](../media/teams-logo-30x30.png) Uso dell'interfaccia di amministrazione di Microsoft Teams
 
-1. Accedere ai **** > **criteri eventi live**riunioni.
+1. Accedere ai **Meetings** > **criteri eventi live**riunioni.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
-3. Selezionare **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
+3. Scegliere **Gestisci utenti**.
+4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 5. Al termine dell'aggiunta di utenti, selezionare **Salva**.
  
 
@@ -114,7 +114,7 @@ Le soluzioni SDN/eCDN seguenti sono preintegrate e possono essere configurate pe
 - **Ramp OmniCache** offre la distribuzione di rete di nuova generazione e assicura il recapito continuo dei contenuti video in WAN globali, aiutando i produttori di eventi a ottimizzare la larghezza di banda della rete e supportare trasmissioni di eventi live di successo e streaming su richiesta. Il supporto per la rampa OmniCache per gli eventi dinamici prodotti in teams sarà disponibile a breve. [Altre informazioni](http://www.ramp.com). 
  
 > [!NOTE] 
-> La soluzione scelta di SDN o eCDN è soggetta alle **condizioni di servizio e alla politica di privacy del provider**di terze parti selezionato, che disciplinerà l'uso della soluzione del provider. L'uso della soluzione del provider non sarà soggetto alle condizioni di contratto multilicenza Microsoft o ai servizi online. Se non si accettano i termini del **provider di terze parti**, non abilitare la soluzione in teams. 
+> La soluzione scelta di SDN o eCDN è soggetta alle **condizioni di servizio e alla politica di privacy del provider**di terze parti, che disciplinerà l'uso della soluzione del provider. L'uso della soluzione del provider non sarà soggetto alle condizioni di contratto multilicenza Microsoft o ai servizi online. Se non si accettano i termini del **provider di terze parti**, non abilitare la soluzione in teams. 
 
 Dopo aver configurato la soluzione SDN o eCDN, si è pronti per configurare il provider per gli eventi dinamici in teams. 
 
@@ -125,4 +125,3 @@ Vedere [configurare le impostazioni degli eventi dinamici in teams](configure-te
 - [Cosa sono gli eventi live di Teams?](what-are-teams-live-events.md)
 - [Pianificare gli eventi live di Teams](plan-for-teams-live-events.md)
 - [Configurare le impostazioni degli eventi dinamici in teams](configure-teams-live-events.md)
-

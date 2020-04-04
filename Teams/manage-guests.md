@@ -13,21 +13,22 @@ ms.reviewer: sbhatta
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Gli amministratori IT possono aggiungere ospiti a livello di tenant, impostare e gestire i criteri e le autorizzazioni degli utenti guest, determinare gli utenti che possono invitare gli ospiti e tirare i report sulle attività degli utenti guest.
+description: Informazioni su come creare i primi team e i nuovi canali, a bordo dei primi adottanti, monitorare l'uso e il feedback e ottenere risorse per pianificare l'implementazione a livello di organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ef091eb926301e6dd9d3ac27d7c62486d93075a1
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: fea5ab9eec355d77f19165253fe97ee8aeb725ca
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41834776"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139245"
 ---
 <a name="manage-guest-access-in-microsoft-teams"></a>Gestire l'accesso guest in Microsoft Teams
 ======================================
 
 > [!IMPORTANT]
-> Potrebbe essere necessario attendere fino a 24 ore affinché le modifiche abbiano effetto. 
+> Possono essere necessarie fino a 24 ore prima che le modifiche diventino effettive. 
 
 **Guest** è un tipo di utente in Microsoft teams incluso in tutti gli abbonamenti a Office 365 Business Premium, Office 365 Enterprise, Office 365 Business Essentials e Office 365 Education. Non sono necessarie altre licenze di Office 365. Leggi altre informazioni sulla [gestione delle licenze di accesso Guest](#guest-access-licensing-limits) di seguito.
 

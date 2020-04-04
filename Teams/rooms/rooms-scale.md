@@ -10,7 +10,9 @@ ms.service: msteams
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-ms.custom: Strat_SB_Admin
+ms.custom:
+- Strat_SB_Admin
+- seo-marvel-mar2020
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 ms.collection:
 - M365-collaboration
@@ -32,12 +34,12 @@ no-loc:
 - Azure Monitor
 - Log Analytics
 - Operations Management Suite
-ms.openlocfilehash: eb1e4337f97f16df6d7ef039bf4ba095ed692995
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 04d5945e042293ad0cb1597307fd4a2b596bee39
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827924"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141019"
 ---
 # <a name="deploy-microsoft-teams-rooms-by-using-microsoft-endpoint-configuration-manager"></a>Distribuire le sale di Microsoft teams usando Microsoft endpoint Configuration Manager
 
@@ -593,7 +595,7 @@ Tutti i pacchetti devono essere distribuiti ai server a cui è stato assegnato i
 
 ## <a name="configuration-manager-task-sequences"></a>Sequenze di attività di gestione configurazione
 
-Puoi usare le sequenze di attività con Configuration Manager per automatizzare i passaggi per la distribuzione di un'immagine del sistema operativo in un computer di destinazione. Per distribuire un'unità Microsoft teams rooms in modo automatico, è possibile creare una sequenza di attività che faccia riferimento all'immagine di avvio usata per avviare il computer di Microsoft teams rooms, l'immagine del sistema operativo Windows 10 Enterprise che si vuole installare e qualsiasi altri contenuti aggiuntivi, ad esempio altre applicazioni o aggiornamenti software.
+Puoi usare le sequenze di attività con Configuration Manager per automatizzare i passaggi per la distribuzione di un'immagine del sistema operativo in un computer di destinazione. Per distribuire un'unità Microsoft teams rooms in modo automatico, è possibile creare una sequenza di attività che faccia riferimento all'immagine di avvio usata per avviare il computer di Microsoft teams rooms, l'immagine del sistema operativo Windows 10 Enterprise che si vuole installare e qualsiasi altro contenuto aggiuntivo, ad esempio altre applicazioni o aggiornamenti software.
 
 ### <a name="import-the-sample-task-sequence"></a>Importare la sequenza di attività di esempio
 
@@ -656,7 +658,7 @@ Puoi usare le sequenze di attività con Configuration Manager per automatizzare 
    11. **Copiare i file di configurazione di SRS V2**: in questo passaggio vengono copiati i file di installazione e configurazione necessari dal kit di distribuzione di Microsoft teams Rooms nel disco rigido locale. Per questo passaggio non è necessario alcun adattamento.
        -   Verificare che il **pacchetto di applicazione SRS V2-SRS** e **disabilitare il reindirizzamento del file System di 64 bit** siano selezionati.
 
-   12. **Install-SRSv2-OS-Updates**: questo passaggio distribuisce gli eventuali aggiornamenti obbligatori del sistema operativo necessari con la distribuzione di Microsoft teams rooms. Effettuare le seguenti operazioni:
+   12. **Install-SRSv2-OS-Updates**: questo passaggio distribuisce gli eventuali aggiornamenti obbligatori del sistema operativo necessari con la distribuzione di Microsoft teams rooms. Eseguire le operazioni seguenti:
        -   Selezionare [Configura una console Microsoft teams Rooms](console.md) per vedere quali aggiornamenti sono necessari.
        -   Verificare che il **pacchetto degli aggiornamenti di SRS V2-OS** includa tutti gli aggiornamenti necessari.
        -   Verificare che sia selezionato il **Pacchetto SRS V2-OS Updates** .

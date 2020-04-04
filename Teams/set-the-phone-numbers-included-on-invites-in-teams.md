@@ -1,5 +1,5 @@
 ---
-title: Impostare i numeri di telefono inclusi negli inviti in Microsoft Teams
+title: Impostare i numeri di telefono inclusi negli inviti
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,13 +20,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
+- seo-marvel-mar2020
 description: 'Eseguire la procedura per creare un numero di telefono predefinito per i chiamanti per partecipare a una riunione di Microsoft teams. '
-ms.openlocfilehash: 88032829581224b339f47b34c432629019fd3bac
-ms.sourcegitcommit: 33bec766519397f898518a999d358657a413924c
+ms.openlocfilehash: 6c45a28ab48add26eef8929e37e5cf60113185ea
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583113"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140899"
 ---
 # <a name="set-the-phone-numbers-included-on-invites-in-microsoft-teams"></a>Impostare i numeri di telefono inclusi negli inviti in Microsoft Teams
 
@@ -50,7 +51,7 @@ Quando l'utente è abilitato per il servizio di audioconferenza, il numero di te
 
 ## <a name="set-or-change-the-default-audio-conferencing-phone-number-for-a-meeting-organizer-or-user"></a>Impostare o modificare il numero di telefono predefinito per l'audioconferenza per un organizzatore o un utente di una riunione
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra fare clic su **utenti**.
 

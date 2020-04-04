@@ -1,5 +1,5 @@
 ---
-title: Audioconferenza con tariffa al minuto
+title: Audioconferenze con tariffe al minuto
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,15 +21,16 @@ f1.keywords:
 - CSH
 ms.custom:
 - Licensing
-description: Oltre alla licenza per l'utente standard per i servizi di audioconferenza, le organizzazioni che usano Microsoft multilicenza possono anche scegliere un'offerta pay-per-minute per abilitare le funzionalità di conferenza audio per le loro organizzazioni.
-ms.openlocfilehash: ac73ca3396e5fff9e9146206a8f9e2008d9065f7
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+- seo-marvel-mar2020
+description: Informazioni sull'opzione pay-per-minute per abilitare le funzionalità di conferenza audio per le organizzazioni che usano Microsoft multilicenza.
+ms.openlocfilehash: 5943b5d160df1ddd2ebb3da42818b02683e47309
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826284"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139165"
 ---
-# <a name="audio-conferencing-pay-per-minute"></a>Audioconferenza con tariffa al minuto
+# <a name="audio-conferencing-pay-per-minute"></a>Audioconferenze con tariffe al minuto
 
 Oltre alla licenza per l'utente standard per i servizi di audioconferenza, il volume e le organizzazioni di licenze possono anche scegliere un'offerta pay-per-minute per abilitare le funzionalità di conferenza audio per le loro organizzazioni.
   
@@ -59,7 +60,7 @@ Per abilitare l'audio in pay-per-minute per i servizi di audioconferenza per gli
 
 ## <a name="why-is-it-best-for-you"></a>Perché è consigliabile?
 
-- Pay per minute verrà addebitato solo per ogni minuto per ogni chiamata in ingresso o in uscita inserita da ogni partecipante durante una riunione programmata (le tariffe variano per la chiamata gratuita a pedaggio o a pagamento e per destinazione) invece di usare Skype for business o l'applicazione teams in un dispositivo mobile dispositivo o PC.
+- Pay per minute verrà addebitato solo per ogni minuto per ogni chiamata in ingresso o in uscita inserita da ogni partecipante durante una riunione programmata (le tariffe variano per la chiamata gratuita a pedaggio o a pedaggio e per destinazione) invece di usare Skype for business o teams Application in un dispositivo mobile o un PC.
 
 - Funzionalità per gestire i costi poiché gli amministratori possono controllare per limitare i tipi di dial-out (internazionali e nazionali) che possono essere eseguiti dalle riunioni di un organizzatore. Vedere [criteri di restrizione delle chiamate in uscita per audioconferenza e chiamata PSTN degli utenti](/microsoftteams/outbound-calling-restriction-policies)
 
@@ -75,7 +76,7 @@ Per abilitare l'audio in pay-per-minute per i servizi di audioconferenza per gli
 
  **Stai cercando i prezzi?** Vedere [come visualizzare i prezzi e acquistare licenze per i componenti aggiuntivi](teams-add-on-licensing/microsoft-teams-add-on-licensing.md#bkmk_how) oppure una delle opzioni seguenti:
   
-- [Prezzi per le Audioconferenze](https://products.office.com/skype-for-business/audio-conferencing#Requirements)
+- [Prezzi per Audioconferenza](https://products.office.com/skype-for-business/audio-conferencing#Requirements)
     
 - [Tariffe del Sistema telefonico](https://products.office.com/skype-for-business/phone-system#Requirements)
     
@@ -83,7 +84,7 @@ Per abilitare l'audio in pay-per-minute per i servizi di audioconferenza per gli
     
 ## <a name="related-topics"></a>Argomenti correlati
   
-[Licenze per i componenti aggiuntivi Microsoft Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+[Licenze per i componenti aggiuntivi di Microsoft Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
   
   
  

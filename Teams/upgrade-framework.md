@@ -7,29 +7,31 @@ ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: dearbeen
 audience: admin
-description: Usare un Framework di successo comprovato per aiutare il viaggio di aggiornamento dell'organizzazione da Skype for business a teams
+description: Usa un Framework di successo collaudato per aiutare il viaggio di aggiornamento dell'organizzazione da Skype for business a teams.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
 - CSH
-ms.custom: Teams-upgrade-guidance
+ms.custom:
+- Teams-upgrade-guidance
+- seo-marvel-mar2020
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 42b4efcd2e9b38aebb7f44d3aa09d7be1ca634f3
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.openlocfilehash: ab92190b95c081f1b82d27970972c77bcf726f05
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41863527"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139655"
 ---
 # <a name="about-the-upgrade-framework"></a>Informazioni sul framework di aggiornamento
 
 Per eliminare le congetture dal viaggio di aggiornamento, abbiamo impiegato un Framework collaudato per l'implementazione delle modifiche. Come illustrato di seguito, ogni passaggio del Framework si basa sul passaggio precedente e, per ottenere risultati ottimali, è consigliabile seguire i passaggi descritti in ordine.  
 
-Iniziare riunendo le parti interessate giuste e definendo il piano di aggiornamento (ad esempio. ambito, obiettivi e sequenza temporale). Con un piano in vigore, confermare il proprio ambiente tecnico e gli utenti finali sono pronti per i team. Implementare quindi l'aggiornamento in fasi, passando da un progetto pilota a un aggiornamento a livello di organizzazione, quando è pronto. Una volta che l'organizzazione è in teams, stabilisci un piano operativo che monitora la qualità e accelera l'adozione degli utenti.
+Iniziare riunendo le parti interessate giuste e definendo il piano di aggiornamento (ad esempio ambito, obiettivi e sequenza temporale). Con un piano in vigore, confermare il proprio ambiente tecnico e gli utenti finali sono pronti per i team. Implementare quindi l'aggiornamento in fasi, passando da un progetto pilota a un aggiornamento a livello di organizzazione, quando è pronto. Una volta che l'organizzazione è in teams, stabilisci un piano operativo che monitora la qualità e accelera l'adozione degli utenti.
 
 ![Illustrazione del Framework di viaggio di aggiornamento](media/upgrade-banner-main.png "Verificare che il progetto sia configurato per il successo con il team di progetto giusto. Definire l'ambito, gli obiettivi e la sequenza temporale del progetto. Confermare sia la disponibilità tecnica che l'utente. Eseguire il piano di implementazione. Mantenere lo slancio per massimizzare i risultati.")
 
@@ -127,4 +129,4 @@ Per illustrare come può essere spiegato il percorso di aggiornamento, è stato 
 > Il contenuto dell'aggiornamento è in continua evoluzione. Assicurati di controllare le informazioni più aggiornate e di leggere il Blog di [Teams](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/bg-p/MicrosoftTeamsBlog). 
 
 > [!Important]
-> Skype for business online verrà ritirato il 31 luglio 2021, dopodiché non sarà più accessibile o supportato. Per massimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, ti invitiamo a iniziare subito il tuo viaggio in Microsoft teams. Tieni presente che un aggiornamento corretto allinea la disponibilità tecnica e degli utenti, quindi assicurati di sfruttare le linee guida qui mentre navighi in Microsoft teams.
+> Skype for Business Online verrà ritirato il 31 luglio 2021 e non sarà più accessibile o supportato. Per massimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, ti invitiamo a iniziare subito il tuo viaggio in Microsoft teams. Tieni presente che un aggiornamento corretto allinea la disponibilità tecnica e degli utenti, quindi assicurati di sfruttare le linee guida qui mentre navighi in Microsoft teams.

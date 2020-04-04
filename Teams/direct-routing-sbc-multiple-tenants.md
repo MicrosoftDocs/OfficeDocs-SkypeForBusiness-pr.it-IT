@@ -1,5 +1,5 @@
 ---
-title: Configurare un Session Border Controller per più tenant
+title: Configurare il controller di bordo della sessione-più tenant
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -16,12 +16,13 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un SBC (Session Border Controller) per servire più tenant.
-ms.openlocfilehash: e0027df53edcec54cbeaef560182ffddc451ecbd
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 90bad0c87cef92a36dea392d98cfb66824c10113
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160730"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141089"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -118,8 +119,8 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
 ### <a name="add-a-base-domain-to-the-tenant-and-verify-it"></a>Aggiungere un dominio di base al tenant e verificarlo
 
-1.  Nell'interfaccia di amministrazione di Microsoft 365, accedere a Domains di **configurazione** > **** > **Aggiungi dominio**.
-2.  Nella casella **immettere un dominio** Digitare l'FQDN del dominio di base. Nell'esempio seguente il dominio di base è *Customers.adatum.biz*.
+1.    Nell'interfaccia di amministrazione di Microsoft 365, accedere a Domains di **configurazione** > **Domains** > **Aggiungi dominio**.
+2.    Nella casella **immettere un dominio** Digitare l'FQDN del dominio di base. Nell'esempio seguente il dominio di base è *Customers.adatum.biz*.
 
     ![Schermata che mostra la pagina Aggiungi un dominio](media/direct-routing-2-sbc-add-domain.png)
 
@@ -128,8 +129,8 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
     ![Schermata che mostra la conferma di un nome di dominio verificato](media/direct-routing-3-sbc-verify-domain.png)
 
-5.  Fare clic su **Avanti**, quindi nella pagina **Aggiorna impostazioni DNS** Selezionare **aggiungerò i record DNS** e fare clic su **Avanti**.
-6.  Nella pagina successiva deselezionare tutti i valori (a meno che non si voglia usare il nome di dominio per Exchange, SharePoint o teams/Skype for business), fare clic su **Avanti**e quindi su **fine**. Verificare che il nuovo dominio sia nello stato di completamento della configurazione.
+5.    Fare clic su **Avanti**, quindi nella pagina **Aggiorna impostazioni DNS** Selezionare **aggiungerò i record DNS** e fare clic su **Avanti**.
+6.    Nella pagina successiva deselezionare tutti i valori (a meno che non si voglia usare il nome di dominio per Exchange, SharePoint o teams/Skype for business), fare clic su **Avanti**e quindi su **fine**. Verificare che il nuovo dominio sia nello stato di completamento della configurazione.
 
     ![Schermata che mostra i domini con stato di installazione completata](media/direct-routing-14-sbc-setup-complete.png)
 
@@ -158,7 +159,7 @@ Per convalidare il ruolo che si ha, accedere all'interfaccia di amministrazione 
 Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo in Office 365, vedere [informazioni sui ruoli di amministratore di office 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d).
 
 ### <a name="add-a-subdomain-to-the-customer-tenant-and-verify-it"></a>Aggiungere un sottodominio al tenant del cliente e verificarlo
-1. Nell'interfaccia di amministrazione di Microsoft 365, accedere a Domains di **configurazione** > **** > **Aggiungi dominio**.
+1. Nell'interfaccia di amministrazione di Microsoft 365, accedere a Domains di **configurazione** > **Domains** > **Aggiungi dominio**.
 2. Nella casella **immettere un dominio** Digitare il nome di dominio completo del sottodominio per il tenant. Nell'esempio seguente il sottodominio è sbc1.customers.adatum.biz.
 
     ![Screenshot della pagina Aggiungi un dominio](media/direct-routing-5-sbc-add-customer-domain.png)
@@ -218,22 +219,22 @@ Tuttavia, questo risultato non è stato ottimale per due motivi:
 In base a questo feedback, Microsoft sta introducendo una nuova logica per eseguire il provisioning dei trunk per i tenant del cliente.
 
 Sono state introdotte due nuove entità:
--   Un tronco vettore registrato nel tenant del vettore usando il comando New-CSOnlinePSTNGateway, ad esempio New-CSOnlinePSTNGateway-FQDN customers.adatum.biz-SIPSignalingport 5068-ForwardPAI $true.
+-    Un tronco vettore registrato nel tenant del vettore usando il comando New-CSOnlinePSTNGateway, ad esempio New-CSOnlinePSTNGateway-FQDN customers.adatum.biz-SIPSignalingport 5068-ForwardPAI $true.
 
--   Un trunk derivato, che non richiede la registrazione. È semplicemente un nome host desiderato aggiunto dal trunk del vettore. Derivano tutti i parametri di configurazione dal trunk del vettore. Il trunk derivato non deve essere creato in PowerShell e l'associazione con il trunk del vettore si basa sul nome FQDN (Vedi dettagli seguenti).
+-    Un trunk derivato, che non richiede la registrazione. È semplicemente un nome host desiderato aggiunto dal trunk del vettore. Derivano tutti i parametri di configurazione dal trunk del vettore. Il trunk derivato non deve essere creato in PowerShell e l'associazione con il trunk del vettore si basa sul nome FQDN (Vedi dettagli seguenti).
 
 **Logica di provisioning ed esempio**
 
--   I vettori devono solo configurare e gestire un singolo trunk (trunk Carrier nel dominio vettore) usando il comando set-CSOnlinePSTNGateway. Nell'esempio precedente è adatum.biz;
--   Nel tenant del cliente, il vettore deve solo aggiungere il nome di dominio completo del trunk derivato ai criteri di routing vocale degli utenti. Non è necessario eseguire New-CSOnlinePSTNGateway per un trunk.
--    Il trunk derivato, come suggerisce il nome, eredita o deriva tutti i parametri di configurazione dal trunk del vettore. Esempi
--   Customers.adatum.biz-il tronco portante che deve essere creato nel tenant del vettore.
--   Sbc1.customers.adatum.biz: il trunk derivato in un tenant del cliente che non deve essere creato in PowerShell.  È possibile aggiungere semplicemente il nome del trunk derivato nel tenant del cliente nei criteri di routing vocale online senza crearlo.
+-    I vettori devono solo configurare e gestire un singolo trunk (trunk Carrier nel dominio vettore) usando il comando set-CSOnlinePSTNGateway. Nell'esempio precedente è adatum.biz;
+-    Nel tenant del cliente, il vettore deve solo aggiungere il nome di dominio completo del trunk derivato ai criteri di routing vocale degli utenti. Non è necessario eseguire New-CSOnlinePSTNGateway per un trunk.
+-     Il trunk derivato, come suggerisce il nome, eredita o deriva tutti i parametri di configurazione dal trunk del vettore. Esempi
+-    Customers.adatum.biz-il tronco portante che deve essere creato nel tenant del vettore.
+-    Sbc1.customers.adatum.biz: il trunk derivato in un tenant del cliente che non deve essere creato in PowerShell.  È possibile aggiungere semplicemente il nome del trunk derivato nel tenant del cliente nei criteri di routing vocale online senza crearlo.
 -   Il gestore dovrà impostare il record DNS che risolve il nome FQDN del trunk derivato nell'indirizzo IP di Carrier SBC.
 
--   Tutte le modifiche apportate a un trunk del vettore (sul tenant del gestore) vengono applicate automaticamente ai trunk derivati. Ad esempio, i vettori possono cambiare una porta SIP nel trunk del vettore e questa modifica si applica a tutti i trunk derivati. La nuova logica per configurare i trunk semplifica la gestione perché non è necessario passare a ogni tenant e cambiare il parametro in ogni trunk.
--   Le opzioni vengono inviate solo al nome di dominio completo del trunk vettore. Lo stato di integrità del trunk del vettore viene applicato a tutti i trunk derivati e viene usato per le decisioni di routing. Altre informazioni sulle [Opzioni di routing diretto](https://docs.microsoft.com/microsoftteams/direct-routing-monitor-and-troubleshoot).
--   Il vettore può drenare il tronco del vettore e tutti i tronchi derivati verranno drenati. 
+-    Tutte le modifiche apportate a un trunk del vettore (sul tenant del gestore) vengono applicate automaticamente ai trunk derivati. Ad esempio, i vettori possono cambiare una porta SIP nel trunk del vettore e questa modifica si applica a tutti i trunk derivati. La nuova logica per configurare i trunk semplifica la gestione perché non è necessario passare a ogni tenant e cambiare il parametro in ogni trunk.
+-    Le opzioni vengono inviate solo al nome di dominio completo del trunk vettore. Lo stato di integrità del trunk del vettore viene applicato a tutti i trunk derivati e viene usato per le decisioni di routing. Altre informazioni sulle [Opzioni di routing diretto](https://docs.microsoft.com/microsoftteams/direct-routing-monitor-and-troubleshoot).
+-    Il vettore può drenare il tronco del vettore e tutti i tronchi derivati verranno drenati. 
  
 
 **Migrazione dal modello precedente al trunk del vettore**

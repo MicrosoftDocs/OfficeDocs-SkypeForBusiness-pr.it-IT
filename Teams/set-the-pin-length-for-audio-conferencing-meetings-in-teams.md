@@ -1,5 +1,5 @@
 ---
-title: Impostare la lunghezza del PIN per le riunioni di audioconferenza in Microsoft Teams
+title: Impostare la lunghezza dei PIN per le riunioni in audioconferenza
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,26 +20,27 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
+- seo-marvel-mar2020
 description: Per informazioni sui parametri relativi alla lunghezza e ai requisiti di un PIN, vedere come impostare la lunghezza delle riunioni in Microsoft teams.
-ms.openlocfilehash: 2827845cb53aa822f09ebdd0948cc06e679e4c0a
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: f8d225728854e1bb7609264eecfd1230de2f919b
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838076"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140889"
 ---
 # <a name="set-the-pin-length-for-audio-conferencing-meetings-in-microsoft-teams"></a>Impostare la lunghezza del PIN per le riunioni di audioconferenza in Microsoft Teams
 
-Quando si configura una conferenza audio per Microsoft teams, si otterrà un Bridge per audioconferenza. Un Bridge per i servizi di conferenza può contenere uno o più numeri di telefono. Il numero di telefono impostato verrà incluso nell'invito alla riunione per l'app Microsoft teams.
+Quando si configura una conferenza audio per Microsoft teams, si otterrà un Bridge per audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono. Il numero di telefono impostato verrà incluso nell'invito alla riunione per l'app Microsoft teams.
   
-Il Bridge per i servizi di audioconferenza risponde a una chiamata per gli utenti che accedono a una riunione tramite telefono. Risponde al chiamante con le richieste vocali di un operatore automatico e quindi, a seconda delle impostazioni, può riprodurre le notifiche e chiedere ai chiamanti di registrare il proprio nome. **Impostazioni bridge Microsoft** consentono di modificare le impostazioni per le notifiche di riunione e l'esperienza di iscrizione alla riunione e impostare la lunghezza del PIN che vengono utilizzati per gli organizzatori delle riunioni. Gli organizzatori della riunione usano i pin per avviare le riunioni se non possono partecipare alla riunione usando l'app Microsoft teams.
+Il bridge di conferenza risponde a una chiamata di un utente che partecipa a una riunione utilizzando un telefono. Risponde al chiamante con le richieste vocali di un operatore automatico e quindi, a seconda delle impostazioni, può riprodurre le notifiche e chiedere ai chiamanti di registrare il proprio nome. **Impostazioni bridge Microsoft** consentono di modificare le impostazioni per le notifiche di riunione e l'esperienza di iscrizione alla riunione e impostare la lunghezza del PIN che vengono utilizzati per gli organizzatori delle riunioni. Gli organizzatori della riunione usano i pin per avviare le riunioni se non possono partecipare alla riunione usando l'app Microsoft teams.
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
   
 ## <a name="setting-the-pin-length"></a>Impostazione della lunghezza del PIN
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
 
@@ -47,7 +48,7 @@ Il Bridge per i servizi di audioconferenza risponde a una chiamata per gli utent
 
 3. Nel riquadro **Impostazioni Bridge** , in **lunghezza PIN**, selezionare il numero di cifre desiderato per il PIN.
 
-4. Fai clic su **Salva**.
+4. Fare clic su **Salva**.
 
 > [!NOTE]
 > Un PIN è diverso da un ID conferenza. Gli ID conferenza vengono utilizzati dai chiamanti quando partecipano alla riunione. Vengono utilizzati per identificare la riunione. Il PIN viene utilizzato per autenticare un chiamante come organizzatore della riunione. 

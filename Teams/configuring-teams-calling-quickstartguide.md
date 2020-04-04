@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva-configurazione di piani di chiamata in Microsoft Teams
+title: Guida introduttiva-configurazione di piani per le chiamate
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -18,12 +18,13 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b7f1ded5d843689e828b00c0a466e012b8750582
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: a81cd7d3481c9c2f6e3e5c8874eef97dc0540431
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825364"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137776"
 ---
 <a name="quick-start-guide-configuring-calling-plans-in-microsoft-teams"></a>Guida introduttiva: configurazione di piani di chiamata in Microsoft Teams
 ==============================================================
@@ -64,7 +65,7 @@ Per fare in modo che le chiamate VOIP e PSTN in arrivo siano sempre presenti nel
 
 **Note**
  - I telefoni IP di Skype for Business riceveranno le chiamate, anche se l'utente è in modalità TeamsOnly.  
- - Gli utenti che hanno effettuato il provisioning con le licenze per il sistema telefonico e i piani di chiamata per l'uso con Skype for business online (ad esempio, hanno assegnato un valore di OnlineVoiceRoutingPolicy), avranno attivato la scheda chiamate in teams e potranno inserire chiamate PSTN in uscita da I team senza amministratori che devono eseguire qualsiasi azione amministrativa.
+ - Gli utenti che hanno effettuato il provisioning con il sistema telefonico e le licenze per i piani di chiamata per l'uso con Skype for business online (ad esempio, hanno assegnato un valore di OnlineVoiceRoutingPolicy), la scheda chiamate è abilitata in teams e può inserire chiamate PSTN in uscita da team senza che gli amministratori debbano eseguire alcuna azione amministrativa.
 
 
 ### <a name="how-to-configure-users-to-receive-all-incoming-voip-and-pstn-calls-in-teams"></a>Come configurare gli utenti per ricevere tutte le chiamate VOIP e PSTN in arrivo in teams

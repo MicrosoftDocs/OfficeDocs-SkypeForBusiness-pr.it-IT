@@ -1,5 +1,5 @@
 ---
-title: Creare una strategia di gestione delle modifiche per Microsoft Teams
+title: Creare una strategia di gestione delle modifiche
 ms.reviewer: ''
 author: LolaJacobsen
 ms.author: lolaj
@@ -11,15 +11,16 @@ audience: admin
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Informazioni su come creare una strategia di gestione delle modifiche per Microsoft teams attraverso l'identificazione di principali stakeholder, risultati aziendali, misure di successo e gestione della campagna.
+description: Creare una strategia di gestione delle modifiche per Microsoft teams identificando gli stakeholder principali, i risultati aziendali, le misure di successo e la gestione della campagna.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8e6c07271caecd2c84301930f0b71aa6eda0011a
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 628c839560423e0e2524bed24082156469faeb36
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824974"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137916"
 ---
 <a name="create-a-change-management-strategy-for-microsoft-teams"></a>Creare una strategia di gestione delle modifiche per Microsoft Teams
 =======================================================

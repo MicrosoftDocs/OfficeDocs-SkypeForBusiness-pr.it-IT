@@ -15,13 +15,14 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Leggere questo argomento per informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente a Microsoft Phone System.
-ms.openlocfilehash: be0d901095afa322935944a9b4898e540946bf8a
-ms.sourcegitcommit: 46b15a11755a89526be2a0b20befad61c628cdb4
+ms.custom: seo-marvel-mar2020
+description: Informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente al sistema telefonico Microsoft.
+ms.openlocfilehash: bc092c2441ff359de1189e1ff000a61c51dcec1f
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42955725"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140285"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -264,7 +265,7 @@ SIP/TLS|SBC|Proxy SIP|Definita nell'SBC|5061|
 
 ### <a name="failover-mechanism-for-sip-signaling"></a>Meccanismo di failover per la segnalazione SIP
 
-SBC esegue una query DNS per risolvere sip.pstnhub.microsoft.com. In base alla posizione SBC e alle metriche delle prestazioni del centro dati, viene selezionato il centro dati principale. Se il data center principale avverte un problema, il SBC tenterà il sip2.pstnhub.microsoft.com, che viene risolto nel secondo Data Center assegnato, e, nel caso raro che i datacenter in due aree geografiche non sono disponibili, SBC riprova l'ultimo FQDN ( sip3.pstnhub.microsoft.com), che fornisce l'IP del centro dati terziario.
+SBC esegue una query DNS per risolvere sip.pstnhub.microsoft.com. In base alla posizione SBC e alle metriche delle prestazioni del centro dati, viene selezionato il centro dati principale. Se il data center principale presenta un problema, il SBC tenterà il sip2.pstnhub.microsoft.com, che viene risolto nel secondo Data Center assegnato, e, nel caso raro che i datacenter in due aree geografiche non sono disponibili, SBC riprova l'ultimo FQDN (sip3.pstnhub.microsoft.com), che fornisce l'IP del centro dati terziario.
 
 La tabella seguente riepiloga le relazioni tra i centri dati primari, secondari e terziari:
 

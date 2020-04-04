@@ -21,13 +21,14 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - LIL_Placement
-description: Per il piano di chiamate di Office 365, informazioni su come acquistare e configurare licenze, ottenere numeri di telefono, aggiungere e assegnare posizioni di emergenza e numeri di telefono agli utenti e informare gli utenti sui nuovi numeri di telefono.
-ms.openlocfilehash: 3fd123991544bc4555be7ceb7693089f0d439070
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+- seo-marvel-mar2020
+description: Informazioni su come configurare i piani per le chiamate, inclusi i piani di visualizzazione disponibili nella propria area geografica, acquistare & assegnare licenze, ottenere numeri di telefono e aggiungere indirizzi di emergenza & posizioni.
+ms.openlocfilehash: 4c470327b01b799dabc585db479e51e8ef37c41b
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838046"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140879"
 ---
 # <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
 
@@ -51,17 +52,17 @@ Esistono tre modi per ottenere nuovi numeri utente:
 
 - **Usare l'interfaccia di amministrazione di teams.** Per alcuni paesi/aree geografiche, è possibile ottenere numeri per gli utenti usando l'interfaccia di amministrazione di teams, vedere [ottenere i numeri di telefono per gli utenti](getting-phone-numbers-for-your-users.md).
     
-- **Importa i tuoi numeri esistenti.** È possibile convertire o trasferire i numeri esistenti dal provider di servizi o dal gestore di telefonia corrente a Office 365. Per altre informazioni, vedere [trasferire numeri di telefono in team](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o [gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md). 
+- **Importa i tuoi numeri esistenti.** È possibile importare o trasferire i numeri di telefono esistenti dal provider di servizi o dall'operatore telefonico corrente in Office 365. Per altre informazioni, vedere [trasferire numeri di telefono in team](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o [gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md). 
   
 - **Utilizzare un modulo di richiesta per nuovi numeri.** A volte, a seconda del paese o dell'area geografica, non potrai ottenere i nuovi numeri di telefono usando l'interfaccia di amministrazione di teams oppure avrai bisogno di numeri di telefono o codici di area specifici. In questo caso è necessario scaricare un modulo di richiesta, compilarlo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md). 
 
 ## <a name="step-4-add-emergency-addresses-and-locations-for-your-organization"></a>Passaggio 4: aggiungere indirizzi e posizioni di emergenza per l'organizzazione
-<a name="bkmk_add_addresses"></a> Un indirizzo di emergenza deve essere associato a un numero di telefono. Quando questa associazione si verifica può variare tra paese e aree geografiche. Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito, è necessario associare un indirizzo di emergenza per il numero di telefono quando si desidera ottenere i numeri di telefono da Office 365 o il trasferimento di numeri di telefono da provider di servizi corrente. 
+<a name="bkmk_add_addresses"> </a> Un indirizzo di emergenza deve essere associato a un numero di telefono. Quando questa associazione si verifica può variare tra paese e aree geografiche. Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito, è necessario associare un indirizzo di emergenza per il numero di telefono quando si desidera ottenere i numeri di telefono da Office 365 o il trasferimento di numeri di telefono da provider di servizi corrente. 
 
 Per informazioni sulle chiamate di emergenza e sulla gestione degli indirizzi di emergenza, vedere [gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md) e [aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-remove-emergency-location-organization.md).
     
 ## <a name="step-5-assign-an-emergency-address-and-a-phone-number-to-a-user"></a>Passaggio 5: assegnare un indirizzo di emergenza e un numero di telefono a un utente
-<a name="bkmk_add_addresses"></a> Quando si configurano i piani per le chiamate in Office 365, è necessario assegnare un numero di telefono e un indirizzo di emergenza a ognuno degli utenti. Prima di poter associare a un numero di telefono, è necessario creare l'indirizzo di emergenza.  Per altre informazioni, vedere [assegnare o modificare un indirizzo di emergenza](assign-change-emergency-location-user.md).
+<a name="bkmk_add_addresses"> </a> Quando si configurano i piani per le chiamate in Office 365, è necessario assegnare un numero di telefono e un indirizzo di emergenza a ognuno degli utenti. Prima di poter associare a un numero di telefono, è necessario creare l'indirizzo di emergenza.  Per altre informazioni, vedere [assegnare o modificare un indirizzo di emergenza](assign-change-emergency-location-user.md).
 
 
 > [!TIP]

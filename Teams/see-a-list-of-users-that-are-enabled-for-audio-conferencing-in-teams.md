@@ -1,5 +1,5 @@
 ---
-title: Visualizzare un elenco di utenti abilitati per i servizi di audioconferenza in Microsoft Teams
+title: Visualizzare un elenco di utenti abilitati per i servizi di audioconferenza
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,13 +20,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
+- seo-marvel-mar2020
 description: "Informazioni su come visualizzare un elenco di utenti dell'organizzazione abilitati per i servizi di conferenza telefonica con accesso esterno all'interno di Microsoft teams. "
-ms.openlocfilehash: 9330aef9e143764949c4589535126eb2dd72e883
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 4f4608eb7d7465e40dbec2590505b0997ccbef2c
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838146"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140949"
 ---
 # <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-microsoft-teams"></a>Visualizzare un elenco di utenti abilitati per i servizi di audioconferenza in Microsoft Teams
 

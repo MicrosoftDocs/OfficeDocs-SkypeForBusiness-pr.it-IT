@@ -1,5 +1,5 @@
 ---
-title: Servizi di conferenza audio con routing diretto per GCCH e DoD
+title: Servizi di conferenza audio con routing diretto, GCCH e DoD
 author: LanaChin
 ms.author: v-lanac
 manager: serdars
@@ -19,12 +19,13 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Informazioni su come usare i servizi di conferenza audio con routing diretto in ambienti GCCH e DoD.
-ms.openlocfilehash: a8a9b5a46f1efd88de38fa65e857d3eebbbd6e3d
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 6b8077e2bf376976c9906a8703ebd59a1d1cc23f
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42047187"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141169"
 ---
 # <a name="audio-conferencing-with-direct-routing-for-gcc-high-and-dod"></a>Audioconferenza con Instradamento diretto per GCC High e DoD
 
@@ -72,7 +73,7 @@ Puoi usare il cmdlet di PowerShell New-csHybridTelephoneNumber per definire i nu
 
 Ad esempio:
   ```PowerShell
-  New-csHybridTelephoneNumber -TelephoneNumber “+14250000000”
+  New-csHybridTelephoneNumber -TelephoneNumber "+14250000000"
   ```
 
 #### <a name="assign-the-service-phone-numbers-to-the-audio-conferencing-bridge-of-your-organization"></a>Assegnare i numeri di telefono del servizio al Bridge di audioconferenza dell'organizzazione

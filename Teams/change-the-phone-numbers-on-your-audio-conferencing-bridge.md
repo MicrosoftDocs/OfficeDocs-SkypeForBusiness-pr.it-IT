@@ -1,5 +1,5 @@
 ---
-title: Cambiare i numeri di telefono del bridge per i servizi di audioconferenza
+title: Modificare i numeri di telefono in Bridge per audioconferenza
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,13 +21,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
-description: When you buy Audio Conferencing licenses, Microsoft is hosting your audio conferencing bridge for your organization. The audio conferencing bridge gives out dial-in phone numbers from different locations so meeting organizers and participants can use them to join Skype for Business or Microsoft Teams meetings using a phone.
-ms.openlocfilehash: 54662b34f5b8b1f56aceffb2294801a485bc26ae
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+- seo-marvel-mar2020
+description: Informazioni sui passaggi necessari per assegnare un nuovo numero di telefono del servizio al Bridge di conferenza per espandere la copertura per gli utenti.
+ms.openlocfilehash: 571b7a9c14db1601e0a4b94740395ad087808a49
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825204"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139075"
 ---
 # <a name="change-the-phone-numbers-on-your-audio-conferencing-bridge"></a>Cambiare i numeri di telefono del bridge per i servizi di audioconferenza
 
@@ -36,7 +37,7 @@ Quando si acquistano le licenze per i servizi **di audioconferenza,** Microsoft 
 Oltre ai numeri di telefono già assegnati al Bridge per i servizi di conferenza, è possibile [ottenere numeri di servizio aggiuntivi](/microsoftteams/getting-service-phone-numbers) (numeri verdi e numerati usati per le conferenze audio) da altre posizioni e quindi assegnarli al Bridge di conferenza in modo da poter espandere la copertura per gli utenti.
   
 > [!NOTE]
-> Per poter assegnare o annullare l'assegnazione di un numero di telefono per un Bridge per i servizi di conferenza, il numero di telefono deve essere un numero di*servizio*. Per visualizzare il tipo di numero, è possibile spostarsi in numeri di **** > **telefono** vocale nel portale legacy e cercare nella colonna tipo di **numero** . I crediti per le comunicazioni di Office 365 devono essere configurati prima di tutto per consentire agli utenti di effettuare una chiamata in plancia su un numero verde.
+> Per poter assegnare o annullare l'assegnazione di un numero di telefono per un Bridge per i servizi di conferenza, il numero di telefono deve essere un numero di*servizio*. Per visualizzare il tipo di numero, è possibile spostarsi in numeri di **Voice** > **telefono** vocale nel portale legacy e cercare nella colonna tipo di **numero** . Bisogna prima impostare il Credito per la comunicazione di Office 365 per consentire agli utenti di accedere al ponte per audioconferenze su un numero verde.
 
 ## <a name="steps-when-you-are-assigning-a-new-service-phone-number-to-your-conference-bridge"></a>Istruzioni per assegnare un numero telefonico di servizio al tuo bridge di conferenza
 
@@ -82,7 +83,7 @@ Dopo aver salvato le modifiche, i nuovi numeri di telefono predefiniti verranno 
 
 Per i due passaggi successivi sarà necessario avviare Windows PowerShell.
   
-Se sono stati aggiornati i numeri di telefono predefiniti inlcuded nella riunione invita per alcuni o tutti gli utenti, è possibile facoltativamente aggiornare gli inviti alle riunioni già inviati agli utenti dell'organizzazione prima che i numeri di telefono predefiniti vengano modificati usando il Servizio di migrazione delle riunioni. Per ulteriori informazioni, consulta [Configurazione del servizio MMS (Meeting Migration Service)](/SkypeForBusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms).
+Se sono stati aggiornati i numeri di telefono predefiniti che sono inlcuded nella riunione invita per alcuni o tutti gli utenti, è possibile facoltativamente aggiornare gli inviti alle riunioni già inviati agli utenti dell'organizzazione prima che i numeri di telefono predefiniti vengano modificati tramite il servizio di migrazione delle riunioni. Per ulteriori informazioni, consulta [Configurazione del servizio MMS (Meeting Migration Service)](/SkypeForBusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms).
   
 - Eseguire il servizio di migrazione delle riunioni (MMS) per gli utenti che avevano i numeri di telefono predefiniti modificati nel passaggio 2. Per farlo, eseguire il comando seguente:
 
@@ -235,7 +236,7 @@ Il risultato, oltre ad altre informazioni come l'identità, il nome e l'area geo
 
 Ad **esempio**, per annullare l'assegnazione, DefaultServiceNumber "8005551234"
 ```PowerShell
-Unregister-CsOnlineDialInConferencingServiceNumber -BridgeName “Conference Bridge” -RemoveDefaultServiceNumber 8005551234 
+Unregister-CsOnlineDialInConferencingServiceNumber -BridgeName "Conference Bridge" -RemoveDefaultServiceNumber 8005551234 
 ```
 
 ## <a name="about-windows-powershell"></a>Informazioni su Windows PowerShell

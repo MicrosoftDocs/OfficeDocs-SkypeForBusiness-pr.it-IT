@@ -1,5 +1,5 @@
 ---
-title: Aggiornare la distribuzione ibrida di Skype for business a Microsoft Teams | PSTN
+title: Aggiornare la distribuzione ibrida di Skype for business ai team
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -12,18 +12,20 @@ localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
 - CSH
-ms.custom: Teams-upgrade-guidance
+ms.custom:
+- Teams-upgrade-guidance
+- seo-marvel-mar2020
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ca9ebc7a28e07eec9b24c0628ade4941c0fd2fa2
-ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
+ms.openlocfilehash: fa72c0d6a03ef89d0c04b0a70a0bbc918a508243
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42706696"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43136976"
 ---
 # <a name="upgrade-from-a-skype-for-business-hybrid-deployment-to-teams"></a>Eseguire l'aggiornamento da una distribuzione ibrida di Skype for business a teams
 
@@ -39,7 +41,7 @@ Questo articolo fa parte della fase di distribuzione e implementazione del viagg
 - [Preparare l'organizzazione](https://aka.ms/SkypeToTeams-UserReadiness)
 - [Condotto un pilota](https://aka.ms/SkypeToTeams-Pilot)
 
-Seguire le indicazioni di questo articolo se è stata distribuita in locale Skype for business o Microsoft Lync e la si è configurata in una distribuzione ibrida con il tenant di Office 365 e l'organizzazione vuole eseguire l'aggiornamento ai team in modo selettivo, usando più modalità di coesistenza-o all-in. Per entrambi i percorsi di aggiornamento, è necessario trasferire gli utenti a Skype for business online (se non sono già stati ospitati online) e quindi assegnare loro la modalità di coesistenza e di aggiornamento appropriata.
+Seguire le indicazioni di questo articolo se è stata distribuita in locale Skype for business o Microsoft Lync e la si è configurata in una distribuzione ibrida con il tenant di Office 365 e l'organizzazione vuole eseguire l'aggiornamento ai team in modo selettivo, usando più modalità di coesistenza o all-in. Per entrambi i percorsi di aggiornamento, è necessario trasferire gli utenti a Skype for business online (se non sono già stati ospitati online) e quindi assegnare loro la modalità di coesistenza e di aggiornamento appropriata.
 
 > [!IMPORTANT]
 > [!INCLUDE [upgrade-disclaimer](includes/upgrade-disclaimer.md)]
@@ -57,6 +59,6 @@ Dopo aver spostato gli utenti in Skype for business online, è possibile assegna
 
 ## <a name="phone-system-and-teams-upgrade"></a>Aggiornamento di sistema telefonico e teams
 
-Se si sta eseguendo la transizione della distribuzione ibrida di Skype for business al sistema telefonico con i piani per le chiamate e Microsoft sarà il provider PSTN (Public Switched Telephone Network) e supponendo di aver completato la portabilità del numero di telefono, aggiornare gli utenti a I team eseguiranno automaticamente la transizione delle chiamate PSTN in ingresso ai team.
+Se si sta eseguendo la transizione della distribuzione ibrida di Skype for business al sistema telefonico con i piani per le chiamate e Microsoft sarà il provider PSTN (Public Switched Telephone Network) e supponendo che sia stata completata la portabilità del numero di telefono, l'aggiornamento degli utenti a teams eseguirà automaticamente la transizione delle chiamate PSTN in ingresso ai team.
 
-Se i piani di chiamata non sono disponibili o si intende usare il provider di connettività PSTN esistente, è necessario eseguire la transizione della distribuzione vocale aziendale oppure una distribuzione vocale ibrida che usa la distribuzione locale esistente o il Cloud Connector Edition, per Routing diretto di Microsoft Phone System. Per aggiornare gli utenti a teams, vedere le [considerazioni aggiuntive per il routing diretto del sistema telefonico](2-envision-make-my-service-decisions-direct-routing.md).
+Se i piani per le chiamate non sono disponibili o si intende usare il provider di connettività PSTN esistente, è necessario eseguire la transizione della distribuzione vocale aziendale oppure una distribuzione vocale ibrida che usa la distribuzione locale esistente o il Cloud Connector Edition, al routing diretto di Microsoft Phone System. Per aggiornare gli utenti a teams, vedere le [considerazioni aggiuntive per il routing diretto del sistema telefonico](2-envision-make-my-service-decisions-direct-routing.md).

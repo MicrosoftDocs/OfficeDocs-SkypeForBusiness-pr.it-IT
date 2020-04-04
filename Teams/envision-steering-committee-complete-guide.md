@@ -1,5 +1,5 @@
 ---
-title: Comitato direttivo per la distribuzione vocale di Microsoft teams cloud
+title: Comitato direttivo per la distribuzione di cloud Voice
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -15,12 +15,13 @@ localization_priority: Normal
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4338e2b6b169fa6f8fc46ae116f3d297096543f7
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 397f41a468c987e70d068066dcf16ddf0e64843a
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862987"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43136786"
 ---
 # <a name="steering-committee"></a>Comitato direttivo
 
@@ -30,7 +31,7 @@ Un comitato direttivo è un gruppo direttivo di principali stakeholder e Project
 
 Ogni progetto richiede una visione concordata e una carta. Per fornire i risultati desiderati per i progetti, la visione deve essere definita in modo chiaro, deve essere monitorata e mantenuta. Questo diventa la responsabilità del comitato direttivo: guidare le decisioni, consigliare, fornire un controllo strategico, fungere da sostenitori dell'organizzazione per le iniziative del progetto e, se necessario, rimuovere i blocchi.
 
-L'organizzazione deve inserire un pensiero significativo nella formazione del comitato direttivo. Il Comitato deve garantire che il progetto raggiunga gli obiettivi aziendali definiti per la modifica della Guida in tutta l'organizzazione, si incontri periodicamente per discutere l'impulso corrente del progetto e contribuisca a rimuovere eventuali ostacoli incontrati durante il periodo di viaggio.
+L'organizzazione deve inserire un pensiero significativo nella formazione del comitato direttivo. Il Comitato deve garantire che il progetto raggiunga gli obiettivi aziendali definiti per la modifica della Guida in tutta l'organizzazione, si incontri periodicamente per discutere il polso corrente del progetto e contribuisca a rimuovere eventuali ostacoli che si incontrano durante il viaggio.
 
 Il Comitato deve definire la sua carta per includere alcuni obiettivi chiave:
 

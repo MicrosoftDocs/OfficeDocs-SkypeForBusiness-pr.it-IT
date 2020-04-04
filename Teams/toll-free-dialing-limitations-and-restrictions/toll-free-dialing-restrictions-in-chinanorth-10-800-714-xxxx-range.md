@@ -1,5 +1,5 @@
 ---
-title: Restrizioni di chiamata gratuita in Cina-Nord (intervallo di 10 800 714 XXXX)
+title: Restrizioni di chiamata gratuita in Cina-nord
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -22,13 +22,14 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: a4a3c5638665f41b91fba46501077c4e9dc44fdf
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+- seo-marvel-mar2020
+description: Informazioni sulla chiamata dei numeri verdi in Cina nord, tra cui disponibilità, disponibilità di reti cablate/fisse e dispositivi mobili e restrizioni.
+ms.openlocfilehash: fd535751d235914b7f33e5e22afb726f5bfbdcec
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41707952"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140465"
 ---
 # <a name="toll-free-dialing-restrictions-in-china---north-10-800-714-xxxx-range"></a>Restrizioni di chiamata gratuita in Cina-Nord (intervallo di 10 800 714 XXXX)
 

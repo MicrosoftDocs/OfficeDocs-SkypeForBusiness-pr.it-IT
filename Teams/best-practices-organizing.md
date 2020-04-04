@@ -1,5 +1,5 @@
 ---
-title: Procedure consigliate per l'organizzazione dei team in Microsoft Teams
+title: Procedure consigliate per organizzare i team
 ms.reviewer: pbethi
 author: LolaJacobsen
 ms.author: lolaj
@@ -16,12 +16,13 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 59dcb99e8e8734885f7e62b79102cfad2745612a
-ms.sourcegitcommit: cfaae3ecbf853766de788b4825a86e04f68868ca
-ms.translationtype: HT
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: e8f6335edde67fcc00e68b6aa42b3100afa603c9
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795759"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43136876"
 ---
 <a name="best-practices-for-organizing-teams-in-microsoft-teams"></a>Procedure consigliate per l'organizzazione dei team in Microsoft Teams
 ======================================================
@@ -40,7 +41,7 @@ Per la prima distribuzione di Teams, è consigliabile iniziare con un numero ris
 
 ## <a name="create-channels-to-focus-discussions"></a>Creare canali per concentrarsi sulle discussioni
 
-Dopo aver creato il team, è consigliabile iniziare a pensare ai diversi progetti e tipi di conversazione che è necessario supportare. Creare dei canali iniziali in modo che gli utenti sappiano dove poter collaborare e trovare le conversazioni esistenti. Usare nomi descrittivi per i canali per consentire agli utenti di orientarsi tra le varie conversazione. Aggiungere strumenti (come OneNote, Power BI o Planner) come schede a un canale affinché gli utenti abbiano tutto il necessario direttamente nel canale. Inoltre, è possibile aggiungere a un canale una pagina Web usata frequentemente come scheda. 
+Dopo aver creato il team, è consigliabile iniziare a pensare ai diversi progetti e tipi di conversazioni che è necessario supportare. Creare dei canali iniziali in modo che gli utenti sappiano dove poter collaborare e trovare le conversazioni esistenti. Usare nomi descrittivi per i canali per consentire agli utenti di orientarsi tra le varie conversazione. Aggiungere strumenti (come OneNote, Power BI o Planner) come schede a un canale affinché gli utenti abbiano tutto il necessario direttamente nel canale. Inoltre, è possibile aggiungere a un canale una pagina Web usata frequentemente come scheda. 
 
 Con questi suggerimenti rapidi per utenti finali è possibile scoprire di più sul [lavoro in team](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499#ID0EAABAAA=Work_in_teams). 
 

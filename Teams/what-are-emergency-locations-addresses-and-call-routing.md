@@ -1,5 +1,5 @@
 ---
-title: Pianificare chiamate di emergenza, indirizzi di emergenza, routing delle chiamate di emergenza, chiamate dinamiche di emergenza
+title: Pianificare e gestire le chiamate di emergenza
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -22,13 +22,14 @@ ms.custom:
 - ms.lync.lac.AddressAndLocation
 - Calling Plans
 - Direct Routing
+- seo-marvel-mar2020
 description: Informazioni sulle chiamate in caso di emergenza, incluse indicazioni su indirizzi di emergenza, routing delle chiamate di emergenza e chiamate di emergenza dinamiche.
-ms.openlocfilehash: 85a09880c1eec83851208197c008c8aaafac88f6
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+ms.openlocfilehash: 8afe2d2af8b2aecbe3d73da03137f330aa8304b8
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42161689"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141029"
 ---
 # <a name="manage-emergency-calling"></a>Gestire le chiamate di emergenza
 
@@ -91,7 +92,7 @@ Le chiamate di emergenza dinamiche per i piani per le chiamate Microsoft offrono
 
 In questo momento, solo gli utenti del piano chiamante negli Stati Uniti possono sfruttare le posizioni dinamiche per il routing delle chiamate di emergenza come indicato di seguito:
 
-- Se un client di teams per un utente di un piano di chiamate United States acquisisce in modo dinamico un indirizzo di emergenza negli Stati Uniti, tale indirizzo viene usato per il routing delle emergenze anziché per l'indirizzo registrato e la chiamata verrà indirizzata automaticamente al PSAP nel area di servizio dell'indirizzo.
+- Se un client di teams per un utente di un piano di chiamate degli Stati Uniti acquisisce in modo dinamico un indirizzo di emergenza all'interno degli Stati Uniti, tale indirizzo viene usato per il routing delle emergenze anziché per l'indirizzo registrato e la chiamata verrà indirizzata automaticamente al PSAP nell'area di servizio dell'indirizzo.
 
 - Se un client di teams per un utente del piano di chiamate degli Stati Uniti non acquisisce in modo dinamico un indirizzo di emergenza negli Stati Uniti, l'indirizzo di emergenza registrato viene usato per aiutare lo schermo e instradare la chiamata. La chiamata verrà tuttavia visualizzata per determinare se è necessario un indirizzo aggiornato prima di connettere il chiamante alla PSAP appropriata.
 
@@ -179,7 +180,7 @@ Per altre informazioni, vedere [controlli bordo sessione certificati per il rout
 
 #### <a name="emergency-location-identification-number-elin-applications"></a>Applicazioni ELIN (Emergency Location Identification Number)
 
-I controller di bordo della sessione (SBCs) possono includere le applicazioni ELIN (Emergency Location Identification Number). Se un'applicazione ELIN SBC è integrata in una distribuzione di routing diretta, è necessario configurare gli indirizzi di emergenza e i numeri di telefono associati nell'applicazione ELIN e quindi caricare i record ELIN nel database delle chiamate di emergenza nella rispettiva rete PSTN .  Le posizioni di emergenza teams con un identificatore ELIN devono corrispondere a quelle dell'applicazione ELIN.
+I controller di bordo della sessione (SBCs) possono includere le applicazioni ELIN (Emergency Location Identification Number). Se un'applicazione ELIN SBC è integrata in una distribuzione di routing diretta, è necessario configurare gli indirizzi di emergenza e i numeri di telefono associati nell'applicazione ELIN e quindi caricare i record ELIN nel database delle chiamate di emergenza nella rispettiva rete PSTN.  Le posizioni di emergenza teams con un identificatore ELIN devono corrispondere a quelle dell'applicazione ELIN.
 
 Quando una chiamata di emergenza con una posizione acquisita in modo dinamico viene instradata all'SBC appropriato, l'applicazione ELIN:
 

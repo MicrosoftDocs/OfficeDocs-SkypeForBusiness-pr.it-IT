@@ -1,5 +1,5 @@
 ---
-title: Domande frequenti su Microsoft Education Governance per professionisti IT-Microsoft Teams
+title: Domande frequenti sulla governance di Microsoft Education per amministratori
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -16,12 +16,13 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 719f9429d49dfef7a21670c67bad96c9e26c993e
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 18476e043268d8b51fdf877b27e23eb926a1885e
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837436"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137786"
 ---
 # <a name="microsoft-education-governance-faq-for-admins"></a>Domande frequenti sulla governance di Microsoft Education per amministratori
 
@@ -60,7 +61,7 @@ Se si è certi di voler controllare chi può creare team, vedere [gestire chi pu
 
 All'inizio di ogni semestre o trimestre è necessario un numero di nuovi team. Potrebbe essere utile adottare un approccio automatizzato per creare automaticamente questi team, popolarli con gli utenti giusti e impostare le autorizzazioni appropriate:
 
--   School Data Sync può creare gruppi di Office 365 per Exchange Online e SharePoint Online, team di classe per Microsoft teams e blocchi appunti per la classe di OneNote, gruppi scolastici per Intune per l'istruzione e integrazione di roster e Single Sign-on (SSO) per molti altri applicazioni di terze parti. Per altre informazioni, vedere [Panoramica di School Data Sync](https://docs.microsoft.com/schooldatasync/overview-of-school-data-sync).
+-   School Data Sync può creare gruppi di Office 365 per Exchange Online e SharePoint Online, team di classe per Microsoft teams e blocchi appunti per la classe di OneNote, gruppi scolastici per Intune per l'istruzione e integrazione di roster e Single Sign-on (SSO) per molte altre applicazioni di terze parti. Per altre informazioni, vedere [Panoramica di School Data Sync](https://docs.microsoft.com/schooldatasync/overview-of-school-data-sync).
 -   Con PowerShell è possibile creare team e canali e configurare le impostazioni automaticamente. Per altre informazioni, vedere [Microsoft teams PowerShell](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps) .
 -   Puoi usare l'API Microsoft Graph (attualmente in versione beta) per creare, configurare, clonare ed archiviare team. Per altre informazioni, vedere [usare l'API Microsoft Graph per collaborare con Microsoft teams](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/teams_api_overview) .
 

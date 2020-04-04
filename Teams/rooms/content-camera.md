@@ -1,5 +1,5 @@
 ---
-title: Gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML
+title: Informazioni su come configurare le telecamere di contenuto-Microsoft Teams
 ms.author: kenwith
 author: kenwith
 ms.reviewer: sohailta
@@ -12,13 +12,14 @@ f1.keywords:
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-description: Questo articolo illustra la gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft teams rooms, incluso l'applicazione di un tema personalizzato.
-ms.openlocfilehash: b470804ac2c5a44a0eb74330ea5158c2e9fe9098
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.custom: seo-marvel-mar2020
+description: Usare una videocamera di contenuto in una sala Microsoft teams, che interagisce con il software di elaborazione delle immagini per consentire ai relatori di disegnare su una lavagna analogica.
+ms.openlocfilehash: 6ddc1a43a9d75e6f142c82c0215124bad97f77dd
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824534"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137626"
 ---
 # <a name="content-cameras"></a>Videocamere di contenuto
 
@@ -86,7 +87,7 @@ In alternativa, fare riferimento al Marketplace di Microsoft teams Devices per i
 
 Dopo aver installato la videocamera nella sala, configurarla nella console Microsoft teams rooms della sala:
 
-1. Selezionare **** ![l'icona](../media/70f1b43f-16d6-4172-9139-71d845c4ed5c.png)impostazioni impostazioni, accedere come amministratore e selezionare **Impostazioni dispositivo**.
+1. Selezionare **Settings** ![l'icona](../media/70f1b43f-16d6-4172-9139-71d845c4ed5c.png)impostazioni impostazioni, accedere come amministratore e selezionare **Impostazioni dispositivo**.
 2. Nella sezione **impostazioni predefinite fotocamera** selezionare la fotocamera del contenuto e verificare che l'opzione **miglioramenti contenuto** sia selezionata.
 3. Opzionale Se la fotocamera è stata installata a testa in giù perché la videocamera è stata montata dal soffitto, selezionare l'opzione **ruota contenuto camera 180 °** .
 4. Selezionare **Salva ed esci**.

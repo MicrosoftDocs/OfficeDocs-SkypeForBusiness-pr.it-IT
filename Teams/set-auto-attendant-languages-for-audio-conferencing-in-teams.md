@@ -1,5 +1,5 @@
 ---
-title: Impostare le lingue per l'operatore automatico per i servizi di audioconferenza in Microsoft Teams
+title: Impostare le lingue per gli operatori automatici per audioconferenza
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,13 +20,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
+- seo-marvel-mar2020
 description: Informazioni su come selezionare le lingue per gli operatori automatici di audioconferenza per un numero di audioconferenza in Microsoft teams.
-ms.openlocfilehash: a84ee0b230ed8de35da3a4fdea488eee9b3628e6
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 37d430ba641277c7b72f921b06599f58cff4e4a0
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838106"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140919"
 ---
 # <a name="set-auto-attendant-languages-for-audio-conferencing-in-microsoft-teams"></a>Impostare le lingue per l'operatore automatico per i servizi di audioconferenza in Microsoft Teams
 
@@ -42,7 +43,7 @@ Scegliere una lingua principale e fino a quattro lingue secondarie. La lingua im
   
 ## <a name="set-the-conferencing-auto-attendant-languages"></a>Impostare le lingue dell'operatore automatico per i servizi di conferenza
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > .
 
@@ -53,7 +54,7 @@ Scegliere una lingua principale e fino a quattro lingue secondarie. La lingua im
     > [!NOTE]
     > Sono elencate le lingue predefinite e quelle alternative supportate. L'ordine in cui vengono selezionati gli elenchi sarà l'ordine delle lingue presentate ai chiamanti. 
 
-4. Fai clic su **Salva**.
+4. Fare clic su **Salva**.
 
     
 ## <a name="want-else-should-i-know"></a>Altre informazioni utili

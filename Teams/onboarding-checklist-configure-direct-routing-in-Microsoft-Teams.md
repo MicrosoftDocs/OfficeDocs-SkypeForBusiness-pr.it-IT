@@ -1,5 +1,5 @@
 ---
-title: Elenco di controllo onboarding per la configurazione del routing diretto in Microsoft Teams
+title: Elenco di controllo onboarding-configura routing diretto-Microsoft Teams
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -15,12 +15,13 @@ f1.keywords:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e6179eec9d6f08bb40b5bae493cb49f59f8eddd6
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 176075b9ea5570b7049ae1647dc63cfebfa84194
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837426"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139937"
 ---
 # <a name="configure-direct-routing-in-microsoft-teams"></a>Configurare il routing diretto in Microsoft Teams
 

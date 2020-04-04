@@ -1,5 +1,5 @@
 ---
-title: Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza
+title: Aggiungere, modificare, rimuovere posizioni di emergenza
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -17,12 +17,13 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: "Informazioni su come aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione nell'interfaccia di amministrazione di Microsoft teams. "
-ms.openlocfilehash: 2471f13f67555eeff4e0a1b130c416dbbe97b0c7
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 5ec834592e6978c2e2b63810ea25eb7e837513dd
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41695831"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141269"
 ---
 # <a name="add-change-or-remove-an-emergency-location-for-your-organization"></a>Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza
 
@@ -40,16 +41,16 @@ Per informazioni su come ottenere un piano per le chiamate e sulla quantità di 
 4. Selezionare il paese o l'area geografica e quindi immettere l'indirizzo.
 
    > [!NOTE]
-   > In Belgio, Francia, Germania, Irlanda, Paesi Bassi e Spagna è importante capire che per attivare correttamente un numero di telefono in Office 365 l'indirizzo impostato nella posizione di emergenza, usato per acquisire il numero, deve corrispondere al numero di telefono prefisso.
+   > In Belgio, Francia, Germania, Irlanda, Paesi Bassi e Spagna è importante capire che per attivare correttamente un numero di telefono in Office 365 l'indirizzo impostato nella posizione di emergenza, usato per acquisire il numero, deve corrispondere al prefisso del numero di telefono.
 5. Se l'indirizzo non viene trovato e si vuole modificare manualmente l'indirizzo, attivare **Consenti di modificare manualmente la maschera di indirizzo se non è possibile trovare l'indirizzo selezionato**.
-6. Fai clic su **Salva**.
+6. Fare clic su **Salva**.
     
 ## <a name="change-an-emergency-location"></a>Modificare la posizione per gli interventi di emergenza
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **fare clic su** > **indirizzi di emergenza**.
 2. Nell'elenco selezionare la posizione che si vuole modificare e quindi fare clic su **modifica**.
 3. Apportare le modifiche desiderate.
-4. Fai clic su **Salva**.
+4. Fare clic su **Salva**.
 
 > [!NOTE]
 > È possibile modificare le informazioni relative all'indirizzo per una posizione solo se l'indirizzo non è convalidato. Se l'indirizzo è già convalidato ed è necessario modificare l'indirizzo, eliminare la posizione e quindi creare una nuova posizione con l'indirizzo corretto.

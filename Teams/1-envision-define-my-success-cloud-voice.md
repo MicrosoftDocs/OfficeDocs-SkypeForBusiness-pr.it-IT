@@ -1,5 +1,5 @@
 ---
-title: Definire il successo in servizi di audioconferenza, sistema telefonico con piani di chiamata o routing diretto del sistema telefonico-Microsoft Teams
+title: Audioconferenza, piani di chiamata o routing diretto
 author: rmw2890
 ms.author: Rowille
 manager: serdars
@@ -9,7 +9,7 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 ms.reviewer: rowille
-description: Misurare i risultati dei servizi di audioconferenza, del sistema telefonico con i piani di chiamata o del sistema telefonico Direct routing Deployment e verificare che siano stati raggiunti gli esiti desiderati.
+description: Definire il successo per la distribuzione di servizi di audioconferenza, sistema telefonico con piani di chiamata o routing diretto del sistema telefonico per l'organizzazione.
 ms.collection:
 - M365-voice
 - M365-collaboration
@@ -18,12 +18,13 @@ f1.keywords:
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3c3669e904db7dbea805daa5737b0bfb81e931d7
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: dbbcbce46ab713b7a1820d01d476ef5d35dee0d0
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825424"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139575"
 ---
 # <a name="define-my-success"></a>Definizione del successo
 
@@ -31,7 +32,7 @@ Questo articolo offre una panoramica dei requisiti per la definizione del succes
 
 <!--ENDOFSECTION-->
 
-I servizi di **audioconferenza** includono le organizzazioni con punti di ingresso aggiuntivi per le riunioni (ad hoc o pianificate) consentendo ai partecipanti alla riunione di partecipare tramite PSTN (Public Switched Telephone Network) tramite la chiamata tramite telefono fisso tradizionale, PBX (Private Branch Exchange) o telefoni cellulari. Ciò è utile quando l'organizzatore o i partecipanti non si trovano davanti a un computer o quando le connessioni dati non sono disponibili o troppo inaffidabili per supportare le comunicazioni vocali, ad esempio in un'area remota con una copertura dati mobile spotty o connessa a una rete Wi-Fi pubblica gratuita. servizio con larghezza di banda limitata o quando i partecipanti alla riunione preferiscono connettersi alla riunione usando un endpoint di telefonia facilmente accessibile.
+I servizi di **audioconferenza** includono le organizzazioni con punti di ingresso aggiuntivi per le riunioni (ad hoc o pianificate) consentendo ai partecipanti alla riunione di partecipare tramite PSTN (Public Switched Telephone Network) tramite la chiamata tramite telefono fisso tradizionale, PBX (Private Branch Exchange) o telefoni cellulari. Ciò è utile quando l'organizzatore o i partecipanti non si trovano davanti a un computer, o quando le connessioni dati non sono disponibili o troppo inaffidabili per supportare le comunicazioni vocali, ad esempio in un'area remota con una copertura dati mobile spotty o connesse a un servizio Wi-Fi pubblico gratuito con larghezza di banda limitata o quando i partecipanti alla riunione preferiscono effettuare l'accesso alla riunione usando un endpoint di telefonia facilmente accessibile.
 
 Il **sistema telefonico con piani di chiamata ("piani di chiamata")** offre alle organizzazioni un modo per modernizzare il proprio ambiente di lavoro, consentendo agli utenti di effettuare chiamate telefoniche aziendali da computer e dispositivi mobili. L'ammodernamento del luogo di lavoro può essere incluso in un numero qualsiasi di scenari, ovvero un'implementazione di lavoro basata su attività, uno dei principali movimenti di Office, un aggiornamento di Office fit-out, un ritiro di una soluzione PBX legacy, la conclusione di un contratto di provider di servizi PSTN e così via. Con i piani per le chiamate, Microsoft semplifica la connettività alla rete PSTN.
 
@@ -236,7 +237,7 @@ Un comitato direttivo è un gruppo direttivo di principali stakeholder e Project
 
 Ogni progetto richiede una visione concordata e una carta. Per consegnare i risultati desiderati dal progetto, la visione deve essere definita in modo chiaro e deve essere monitorata e mantenuta. Questo diventa la responsabilità del comitato direttivo: guidare le decisioni, consigliare, fornire un controllo strategico, fungere da sostenitori dell'organizzazione per le iniziative del progetto e, se necessario, rimuovere i blocchi.
 
-L'organizzazione deve inserire un pensiero significativo nella formazione del comitato direttivo. Il Comitato deve garantire che il progetto raggiunga gli obiettivi aziendali definiti per la modifica della Guida in tutta l'organizzazione, si incontri periodicamente per discutere l'impulso corrente del progetto e contribuisca a sbloccare gli eventuali ostacoli che si incontrano lungo il modo.
+L'organizzazione deve inserire un pensiero significativo nella formazione del comitato direttivo. Il Comitato deve garantire che il progetto raggiunga gli obiettivi aziendali definiti per la modifica della Guida in tutta l'organizzazione, si incontri periodicamente per discutere l'impulso corrente del progetto e contribuisca a sbloccare gli eventuali ostacoli che si incontrano lungo il percorso.
 
 Il Comitato deve definire la sua carta per includere alcuni obiettivi chiave:
 

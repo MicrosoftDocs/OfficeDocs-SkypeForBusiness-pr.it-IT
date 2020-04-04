@@ -1,5 +1,5 @@
 ---
-title: Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams
+title: Rispondere alle chiamate all'operatore automatico e alla coda di chiamata
 ms.reviewer: waseemh
 author: LolaJacobsen
 ms.author: lolaj
@@ -18,12 +18,13 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8e864e32409730373d98263215b0bcc35d9b404d
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: d630ea41915cb89013e407a6fa0b1cc21cb21abf
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825314"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137436"
 ---
 <a name="answer-auto-attendant-and-call-queue-calls-directly-from-teams"></a>Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams
 ===========================================================
@@ -34,7 +35,7 @@ Gli utenti del team possono ricevere e rispondere alle chiamate dagli operatori 
 
 Gli operatori automatici Cloud includono una serie di richieste vocali o un file audio che i chiamanti sentono al posto di un operatore umano quando chiamano un'organizzazione. L'operatore automatico consente ai chiamanti di spostarsi nel sistema di menu, effettuare chiamate o individuare utenti mediante tastiera a toni DTMF (Dual Tone Multi-Frequency) o input vocali con riconoscimento vocale.
 
-Le code delle chiamate Cloud includono i messaggi di saluto usati quando qualcuno chiama un numero di telefono per l'organizzazione, la possibilità di inserire automaticamente le chiamate in attesa e la possibilità di cercare il successivo agente di chiamata disponibile per gestire la chiamata mentre le persone che chiamano sono ascolto della musica in attesa. È possibile creare code di chiamata singole o multiple per l'organizzazione.
+Le code delle chiamate Cloud includono i messaggi di saluto usati quando qualcuno chiama un numero di telefono per l'organizzazione, la possibilità di inserire automaticamente le chiamate in attesa e la possibilità di cercare l'agente di chiamata disponibile per gestire la chiamata mentre le persone che chiamano ascoltano musica in attesa. È possibile creare code di chiamata singole o multiple per l'organizzazione.
 
 ## <a name="handling-an-auto-attendant-or-call-queue-call"></a>Gestione di una chiamata tramite operatore automatico o coda di chiamata
 
@@ -53,10 +54,10 @@ Una volta risolta una chiamata tramite operatore automatico o coda di chiamata, 
 
 Il supporto per le chiamate all'operatore automatico e alla coda di chiamata è disponibile nei client seguenti:
 
--   Client Microsoft Teams Windows (versioni a 32 e 64 bit)
--   Client Microsoft Teams Mac
--   App per iPhone di Microsoft Teams
--   App Microsoft teams Android
+-    Client Microsoft Teams Windows (versioni a 32 e 64 bit)
+-    Client Microsoft Teams Mac
+-    App per iPhone di Microsoft Teams
+-    App Microsoft teams Android
 
 ## <a name="configure-auto-attendant-and-call-queue-support-for-microsoft-teams"></a>Configurare l'operatore automatico e il supporto delle code di chiamata per Microsoft Teams
 
@@ -64,8 +65,8 @@ Per ricevere le chiamate all'operatore automatico e alla coda di chiamata in Mic
 
 ## <a name="related-topics"></a>Argomenti correlati
 
--   [Che cos'è il sistema telefonico in Office 365](what-is-phone-system-in-office-365.md)
--   [Creare una coda delle chiamate nel cloud](create-a-phone-system-call-queue.md)
--   [Cosa sono gli operatori automatici cloud?](what-are-phone-system-auto-attendants.md)
--   [Configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md)
+-    [Che cos'è il sistema telefonico in Office 365](what-is-phone-system-in-office-365.md)
+-    [Creare una coda di chiamata cloud](create-a-phone-system-call-queue.md)
+-    [Cosa sono gli operatori automatici cloud?](what-are-phone-system-auto-attendants.md)
+-    [Configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md)
 

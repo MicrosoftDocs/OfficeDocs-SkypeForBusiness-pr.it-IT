@@ -11,7 +11,7 @@ localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni su come caricare un file di testo contenente un elenco di posizioni fisiche e subnet associate da usare come etichette per la creazione di report per l'analisi delle chiamate e i report del dashboard qualità chiamata.
+description: Informazioni su come aggiungere e aggiornare le etichette dei report caricando un file di testo contenente un elenco di percorsi fisici e subnet associate.
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,14 +19,15 @@ ms.custom:
 - ms.teamsadmincenter.locations.reportinglabels.overview
 - ms.teamsadmincenter.voice.phonenumbers.searchacquire.tooltip.location
 - ms.teamsadmincenter.locations.overview
+- seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ebf362bf6b0cb7213b085a895e59e7c93e98d60f
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: b245566c0920604dac0e10e6a6cfe49937570bc2
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836576"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137116"
 ---
 <a name="add-and-update-reporting-labels"></a>Aggiungere e aggiornare etichette di reporting
 ============================
@@ -51,10 +52,10 @@ Usare l'esempio seguente per creare il file di dati.
 
 |Rete|Nome rete|Intervallo di rete|Nome dell'edificio|Tipo di proprietà|Tipo di edificio|Tipo di Office Building|Città|CAP|Paese|Stato|Area|All'interno di Corp|Route Express|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-|10.0.128.0 |SVC-1|32|USCAMTV001|Contoso leased ri&F|Office|RI&F|Visualizzazione Mountain|94043|NOI|CA|NOI|1|1|
-|10.0.130.0 |SVC-1|32|USCAMTV001|Contoso leased ri&F|Office|RI&F|Visualizzazione Mountain|94043|NOI|CA|NOI|1|1|
-|10.0.131.0 |SVC-1|32|USCAMTV001|Contoso leased ri&F|Office|RI&F|Visualizzazione Mountain|94043|NOI|CA|NOI|1|1|
-|10.0.132.0 |SVC-1|32|USCAMTV001|Contoso leased ri&F|Office|RI&F|Visualizzazione Mountain|94043|NOI|CA|NOI|1|1|
+|10.0.128.0    |SVC-1|32|USCAMTV001|Contoso leased ri&F|Office|RI&F|Visualizzazione Mountain|94043|NOI|CA|NOI|1|1|
+|10.0.130.0    |SVC-1|32|USCAMTV001|Contoso leased ri&F|Office|RI&F|Visualizzazione Mountain|94043|NOI|CA|NOI|1|1|
+|10.0.131.0    |SVC-1|32|USCAMTV001|Contoso leased ri&F|Office|RI&F|Visualizzazione Mountain|94043|NOI|CA|NOI|1|1|
+|10.0.132.0    |SVC-1|32|USCAMTV001|Contoso leased ri&F|Office|RI&F|Visualizzazione Mountain|94043|NOI|CA|NOI|1|1|
 
 Per altre informazioni sulla formattazione del file di dati, vedere [formato di file di dati tenant e struttura del file di dati dell'edificio](turning-on-and-using-call-quality-dashboard.md#tenant-data-file-format-and-structure).
 

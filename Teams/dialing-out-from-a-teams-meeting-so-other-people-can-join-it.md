@@ -1,5 +1,5 @@
 ---
-title: Chiamata in uscita da una riunione di Microsoft teams in modo che gli altri utenti possano accedervi
+title: Chiamata in uscita da una riunione in modo che gli altri utenti possano partecipare
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,13 +20,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
+- seo-marvel-mar2020
 description: Scopri cosa ti serve e come gli organizzatori della riunione possono chiamare altri utenti tramite teams.
-ms.openlocfilehash: f0c8ca62c5e985ecae4bc5a0f373a95b0d1ce69e
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: fbba74f7d8cd25da4a96237dfc551463681eef20
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826974"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137366"
 ---
 # <a name="dialing-out-from-a-microsoft-teams-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione di Microsoft teams in modo che gli altri utenti possano accedervi
 
@@ -61,4 +62,4 @@ Per istruzioni su come consentire agli utenti di accedere a una riunione di team
 
 [Provare o acquistare le audioconferenze in Office 365](try-or-purchase-audio-conferencing-in-office-365-for-teams.md)
     
-[Licenze per i componenti aggiuntivi Microsoft Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+[Licenze per i componenti aggiuntivi di Microsoft Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)

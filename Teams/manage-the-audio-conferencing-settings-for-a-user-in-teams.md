@@ -1,5 +1,5 @@
 ---
-title: Gestire le impostazioni dei servizi di audioconferenza per un utente in Microsoft Teams
+title: Gestire le impostazioni dei servizi di audioconferenza per gli utenti
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,19 +20,20 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
-description: "In qualità di amministratore di Office 365, è possibile modificare le impostazioni di audioconferenza di Microsoft teams, ad esempio il provider, il numero verde o i numeri verdi, l'ID conferenza o il PIN, per un singolo utente dell'organizzazione. "
-ms.openlocfilehash: 1d6a72c2a621d5f87c1d0fad215c648e2511f48c
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+- seo-marvel-mar2020
+description: Un amministratore di Office 365 può modificare le impostazioni dei servizi di audioconferenza per i team, tra cui provider, numero verde o numerico gratuito, ID conferenza o PIN per un utente.
+ms.openlocfilehash: f635a3a9c471d2d089b8592c4dd36f55bf9095e2
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836258"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137146"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-a-user-in-microsoft-teams"></a>Gestire le impostazioni dei servizi di audioconferenza per un utente in Microsoft Teams
 
 In qualità di amministratore di Office 365, puoi modificare le impostazioni di Audioconferenza, ad esempio il provider, il numero predefinito a pagamento o gratuito, l'ID conferenza o il PIN per un singolo utente nell'organizzazione. Per modificare le impostazioni per l'organizzazione, vedere [gestire le impostazioni dei servizi di audioconferenza per l'organizzazione](manage-the-audio-conferencing-settings-for-my-organization-in-teams.md).
 
-## <a name="an-icon-showing-the-microsoft-teams-logomediateams-logo-30x30png-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) Uso dell'interfaccia di amministrazione di Microsoft Teams
+## <a name="an-icon-showing-the-microsoft-teams-logo-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) Uso dell'interfaccia di amministrazione di Microsoft Teams
 
 1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
@@ -47,9 +48,9 @@ In qualità di amministratore di Office 365, puoi modificare le impostazioni di 
 |**ID conferenza**  |Fare clic su **Reimposta ID conferenza** se è necessario reimpostare l'ID conferenza per l'utente. Per ulteriori informazioni, consulta [Reimpostare un ID conferenza per un utente](reset-a-conference-id-for-a-user-in-teams.md).  |
 |**PIN** |Fare clic su **Reimposta PIN** se è necessario reimpostare il pin per l'utente. Per ulteriori informazioni, consulta [Reimpostare il PIN per Audioconferenza](reset-the-audio-conferencing-pin-in-teams.md). |
 |**Numero di telefono a pagamento predefinito** per i servizi di conferenza (obbligatorio) |Questi saranno i numeri impostati nel Bridge di audioconferenza. Formattare i numeri che si desidera vengano visualizzati in richieste di riunione di Skype for business e Microsoft teams. Per cambiare il numero di pedaggio predefinito, fare clic su **modifica** **accanto a servizi di audioconferenza e** nel riquadro **audioconferenza** selezionare un numero in **numero di pedaggio**. |
-|**Gli inviti di questo utente possono includere un numero verde**|Per modificare questa impostazione, fare **** clic su modifica **accanto a servizi di audioconferenza e** nel riquadro **audioconferenza** , attivare o disattivare i **numeri verdi nelle convocazioni di riunione di questo utente** . |
+|**Gli inviti di questo utente possono includere un numero verde**|Per modificare questa impostazione, fare **Edit** clic su modifica **accanto a servizi di audioconferenza e** nel riquadro **audioconferenza** , attivare o disattivare i **numeri verdi nelle convocazioni di riunione di questo utente** . |
 |**Gli utenti non autenticati possono essere la prima persona della riunione**|Per modificare questa impostazione, attivare o disattivare **gli utenti non autenticati può essere la prima persona della riunione** .
-|**Autorizzazioni di accesso esterno**|Per modificare questa impostazione, fare **** clic su modifica **accanto a servizi di audioconferenza e** nel riquadro **audioconferenza** scegliere un'opzione in **chiamata in uscita dalle riunioni**.|
+|**Autorizzazioni di accesso esterno**|Per modificare questa impostazione, fare **Edit** clic su modifica **accanto a servizi di audioconferenza e** nel riquadro **audioconferenza** scegliere un'opzione in **chiamata in uscita dalle riunioni**.|
 
 ![Mostra le impostazioni per i servizi di audioconferenza per un utente](media/teams-manage-audio-conferencing-settings-for-a-user-image1.png)
  

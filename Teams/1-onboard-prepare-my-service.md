@@ -1,5 +1,5 @@
 ---
-title: Preparare la distribuzione del servizio vocale cloud di Microsoft Teams
+title: Preparare la distribuzione del servizio cloud Voice
 author: rmw2890
 ms.author: Rowille
 manager: serdars
@@ -18,12 +18,13 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: efc7193549fac95a29a574f455576dec5ea35c58
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 710a365ef68d3e187013892ef978cd8e12557cc1
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862826"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137996"
 ---
 # <a name="prepare-my-service"></a>Preparare il servizio
 
@@ -80,7 +81,7 @@ Come passaggio successivo, usa il [sito Web Enablement PlayBook per Voice (PlayB
 
 ## <a name="test-cloud-voice-workloads-in-teams"></a>Testare i carichi di lavoro Voice cloud in teams
 
-Dopo aver definito e documentato i piani per il successo e l'implementazione tecnica del team cloud Voice in fase di previdenza e aver effettuato la configurazione desiderata nell'interfaccia di amministrazione, il passaggio successivo consiste nel verificare che l'organizzazione sia le aspettative e i requisiti vengono soddisfatti tramite funzionalità, funzionalità e usabilità. È consigliabile eseguire questo passaggio di convalida prima di distribuire una distribuzione pilota o finale nell'ambiente di produzione.
+Dopo aver definito e documentato i piani di successo e di implementazione tecnica del cloud teams per la tua organizzazione, come parte della fase di previsione e aver effettuato la configurazione desiderata nell'interfaccia di amministrazione, il passaggio successivo consiste nel verificare che le aspettative e i requisiti della propria azienda vengano soddisfatti tramite funzionalità, funzionalità e usabilità. È consigliabile eseguire questo passaggio di convalida prima di distribuire una distribuzione pilota o finale nell'ambiente di produzione.
 
 È possibile sfruttare il piano di successo aziendale definito durante la fase di previsione per fungere da base per determinare le attività, le aspettative, i casi di prova di funzionalità/funzionalità e l'ambito generale da valutare durante la fase di test.
 
@@ -117,7 +118,7 @@ Per altre informazioni, vedere:
 
 - [Pianificazione tecnica per i servizi di audioconferenza](cloud-voice-deployment.md)
 
-- [Configurare servizi di audioconferenza per Microsoft Teams](set-up-audio-conferencing-in-teams.md)
+- [Configurare Audioconferenza per Microsoft Teams](set-up-audio-conferencing-in-teams.md)
 
 - [Pianificazione tecnica per il sistema telefonico con piani di chiamata](calling-plan-landing-page.md)
 

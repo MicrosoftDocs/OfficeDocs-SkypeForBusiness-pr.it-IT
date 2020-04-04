@@ -1,5 +1,5 @@
 ---
-title: Visualizzare, modificare e reimpostare un ID conferenza assegnato a un utente in Microsoft Teams
+title: Visualizzare, modificare e reimpostare l'ID conferenza di un utente
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,13 +19,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
-description: "Informazioni su come assegnare un ID conferenza a un utente in Microsoft teams e quali sono i parametri dell'ID conferenza. "
-ms.openlocfilehash: e6b1a1ace9bdbf607fa4e1ef678687f37034a052
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+- seo-marvel-mar2020
+description: Informazioni su come assegnare un ID conferenza a un utente in Microsoft teams e quali sono i parametri degli ID conferenza.
+ms.openlocfilehash: 7c4b9614843f353438630892574c25576913d24b
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838136"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140939"
 ---
 # <a name="view-and-reset-a-conference-id-assigned-to-a-user-in-microsoft-teams"></a>Visualizzare e reimpostare un ID conferenza assegnato a un utente in Microsoft Teams
 
@@ -42,7 +43,7 @@ Verrà inviato un messaggio di posta elettronica all'utente con l'ID conferenza 
 
 ### <a name="to-view-the-conference-id"></a>Per visualizzare l'ID conferenza
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
@@ -62,7 +63,7 @@ Per altre informazioni, vedere la pagina di [riferimento di PowerShell per Micro
 
 È possibile reimpostare un ID conferenza per un utente se, per esempio, venisse dimenticato.
   
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 

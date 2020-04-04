@@ -1,5 +1,5 @@
 ---
-title: Assegnare o modificare la posizione di un luogo di emergenza per un utente
+title: Assegnare, modificare le posizioni per i percorsi di emergenza per gli utenti
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -17,12 +17,13 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Informazioni su come assegnare o modificare la posizione di un luogo di emergenza per gli utenti dell'organizzazione.
-ms.openlocfilehash: 5fc4f9ceeb8fc602ae28831ba48fcf37191608b9
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 6390ebf3cc366d41b36d09f597dd2bf76ba2d2a2
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41684169"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137486"
 ---
 # <a name="assign-or-change-the-place-for-an-emergency-location-for-a-user"></a>Assegnare o modificare la posizione di un luogo di emergenza per un utente
 
@@ -39,7 +40,7 @@ Per informazioni su come ottenere piani per le chiamate in Office 365 e quanto c
 - Per assegnare una posizione, cercare la posizione o il luogo e quindi selezionare il luogo nei risultati della ricerca.
 - Per modificare la posizione già assegnata all'utente, fare clic su **X** per rimuovere il percorso e il luogo esistenti, cercare e quindi selezionare la posizione che si vuole assegnare.
 
-4. Fai clic su **Salva**.
+4. Fare clic su **Salva**.
     
 ## <a name="related-topics"></a>Argomenti correlati
 

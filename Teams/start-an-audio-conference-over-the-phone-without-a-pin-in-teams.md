@@ -1,5 +1,5 @@
 ---
-title: Avviare una conferenza audio tramite telefono senza PIN in Microsoft Teams
+title: Avviare una conferenza audio tramite telefono senza PIN in teams
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,13 +20,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
+- seo-marvel-mar2020
 description: "Informazioni su come abilitare o disabilitare i chiamanti anonimi che partecipano a una riunione dall'interfaccia di amministrazione di teams. "
-ms.openlocfilehash: 87588bc8edfcc4d50b5589339f92f56829ec38ef
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: e6e3244a3b2135023d80b9b0df925cc5293244f6
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837916"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140829"
 ---
 # <a name="start-an-audio-conference-over-the-phone-without-a-pin-in-microsoft-teams"></a>Avviare una conferenza audio tramite telefono senza PIN in Microsoft Teams
 
@@ -41,7 +42,7 @@ Un PIN non è necessario per l'organizzatore della riunione se qualcuno ha avvia
   
 ## <a name="enable-or-disable-anonymous-callers-from-joining-a-meeting"></a>Abilitare o disabilitare la partecipazione dei chiamanti anonimi a una riunione
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra fare clic su **utenti**. 
 

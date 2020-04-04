@@ -1,5 +1,5 @@
 ---
-title: Usare PowerShell per impostare i criteri degli eventi dinamici in Microsoft Teams
+title: Usare PowerShell per impostare i criteri degli eventi dinamici
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -14,15 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-description: Esempi di come usare PowerShell per impostare i criteri in teams per controllare chi può contenere eventi dinamici nell'organizzazione e le caratteristiche disponibili negli eventi creati
+description: Esempi di come usare PowerShell per impostare i criteri in teams per controllare chi può contenere eventi dinamici nell'organizzazione e le funzionalità disponibili negli eventi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cb43e2a7420ef6c121cea93fd4cd8e4cc40ddfb2
-ms.sourcegitcommit: 708270f1fecab6b7b44345d57a8e12bc36d19c8b
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 4d5f1cceb42afd2be92aedcd0a40af4e23650512
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43102357"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140647"
 ---
 # <a name="use-powershell-to-set-live-events-policies-in-microsoft-teams"></a>Usare PowerShell per impostare i criteri degli eventi dinamici in Microsoft Teams
 

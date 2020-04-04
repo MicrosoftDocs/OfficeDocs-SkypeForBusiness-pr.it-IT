@@ -1,5 +1,5 @@
 ---
-title: Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate
+title: Tipi di numeri di telefono usati per i piani di chiamata
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -20,13 +20,14 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - ms.teamsadmincenter.voice.phonenumbers.searchacquire.tooltip.numbertype
+- seo-marvel-mar2020
 description: Informazioni sui diversi tipi di numeri di telefono usati dai team per i piani di chiamata.
-ms.openlocfilehash: d31bf767fab2f90ddd57b9bb43cd12b5960d5102
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: e960da72476ec91f8f13afe42d0e4da6c12e746d
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826894"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137346"
 ---
 # <a name="different-kinds-of-phone-numbers-used-for-calling-plans"></a>Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate
 

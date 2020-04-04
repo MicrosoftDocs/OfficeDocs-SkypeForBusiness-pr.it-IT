@@ -1,5 +1,5 @@
 ---
-title: Piani di chiamata in Office 365-codice di pratica per il Regno Unito (UK)
+title: Codice di pratica per il Regno Unito -Piani per chiamate di Office 365
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,14 +20,15 @@ f1.keywords:
 - CSH
 ms.custom:
 - Legal
+- seo-marvel-mar2020
 hideEdit: true
-description: 'Learn the code of practice for Calling Plans (PSTN Calling plans)  for Skype for Business for the United Kingdom, where to get help, and how to submit complaints and resolve disputes. '
-ms.openlocfilehash: a811b3a49310a81d5cc62502fe210367b5ac6905
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+description: Informazioni sul codice di esercitazione per i piani per chiamate PSTN per Skype for business UK, incluso, dove ottenere assistenza e come inviare reclami e risolvere le controversie.
+ms.openlocfilehash: ef69d726ab40a4eb282422ab549961776c985ef1
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824944"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139045"
 ---
 # <a name="calling-plans-in-office-365---code-of-practice-for-the-united-kingdom-uk"></a>Piani di chiamata in Office 365-codice di pratica per il Regno Unito (UK)
 
@@ -150,4 +151,3 @@ Le tariffe per numeri NTS, numeri personali e numeri 0870 sono disponibili sul n
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
-

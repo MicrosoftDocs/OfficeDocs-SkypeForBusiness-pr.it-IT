@@ -1,5 +1,5 @@
 ---
-title: Gestire le impostazioni dei servizi di audioconferenza per l'organizzazione in Microsoft Teams
+title: Gestire le impostazioni per i servizi di audioconferenza
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,13 +20,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
+- seo-marvel-mar2020
 description: 'Per assegnare una licenza di conferenza telefonica con accesso esterno a un utente e molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno, vedere la procedura Microsoft teams. '
-ms.openlocfilehash: b7c080936b2f7e4a1fde76134cab7272c861d8d4
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 513695cf905c7cb21f332f6b025318253b03334d
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837526"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141159"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-your-organization-in-microsoft-teams"></a>Gestire le impostazioni dei servizi di audioconferenza per l'organizzazione in Microsoft Teams
 
@@ -58,7 +59,7 @@ Potrebbe essere più semplice visualizzare tutte le impostazioni di audioconfere
   
 ## <a name="enable-or-disable-emails-sent-to-audio-conferencing-users"></a>Abilitare o disabilitare i messaggi di posta elettronica inviati agli utenti di servizi di audioconferenza
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
 
@@ -66,7 +67,7 @@ Potrebbe essere più semplice visualizzare tutte le impostazioni di audioconfere
 
 3. Nel riquadro **Impostazioni Bridge** abilitare o disabilitare **Invia automaticamente i messaggi di posta elettronica agli utenti in caso di modifica delle impostazioni di accesso**esterno.
 
-4. Fai clic su **Salva**.
+4. Fare clic su **Salva**.
 
     
 **Uso di Windows PowerShell**
@@ -89,7 +90,7 @@ See [Reset a conference ID for a user](reset-a-conference-id-for-a-user-in-teams
 
 A ogni riunione che un utente pianifica viene assegnato un ID conferenza univoco. Anche se un ID conferenza verrà creato e assegnato automaticamente a un utente, potrebbero esserci momenti in cui un utente non vuole usarlo e si vuole impostarlo su un certo numero o se gli utenti non ricordano o hanno perso l'ID conferenza. 
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
@@ -101,7 +102,7 @@ Vedere [reimpostare il pin per la conferenza audio](reset-the-audio-conferencing
   
 ## <a name="send-an-email-with-audio-conferencing-information-to-a-user"></a>Inviare un messaggio di posta elettronica con informazioni per i servizi di audioconferenza a un utente
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
@@ -114,7 +115,7 @@ See [Send an email to a user with their Audio Conferencing information](send-an-
   
 ## <a name="set-the-phone-numbers-included-on-invites"></a>Impostare i numeri di telefono inclusi negli inviti
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
@@ -122,7 +123,7 @@ See [Send an email to a user with their Audio Conferencing information](send-an-
  
 3. Nel riquadro **audioconferenza** è possibile impostare **il numero verde e,** se consentito, il **numero verde**.
 
-4. Fai clic su **Salva**.
+4. Fare clic su **Salva**.
     
 Vedere [impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbers-included-on-invites-in-teams.md).
   
@@ -131,7 +132,7 @@ Vedere [impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbe
 
 **Impostare l'esperienza della riunione quando i chiamanti partecipano a una riunione**
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
 
@@ -145,7 +146,7 @@ Vedere [impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbe
 
     Se si scelgono **i nomi o i numeri di telefono**, è anche possibile scegliere di abilitare o disabilitare i **chiamanti per registrare il nome prima di partecipare alla riunione**. 
 
-5. Fai clic su **Salva**.
+5. Fare clic su **Salva**.
 
     
 Vedere [modificare le impostazioni per un Bridge di audioconferenza](change-the-settings-for-an-audio-conferencing-bridge.md).
@@ -171,7 +172,7 @@ Vedere [modificare le impostazioni per un Bridge di audioconferenza](change-the-
 
 3. Nel riquadro **Impostazioni Bridge** abilitare o disabilitare **l'invio automatico di messaggi di posta elettronica agli utenti in caso di modifica delle impostazioni di conferenza audio**.
 
-4. Fai clic su **Salva**. 
+4. Fare clic su **Salva**. 
  
     È anche possibile inviare messaggi di posta elettronica all'utente con le impostazioni di audioconferenza, passando alle proprietà dei servizi di audioconferenza dell'utente e facendo clic su **Invia informazioni sulla conferenza tramite posta elettronica**.
     
@@ -181,7 +182,7 @@ See [Send an email to a user with their Audio Conferencing information](send-an-
     
 ## <a name="see-and-set-the-primary-default-and-secondary-alternate-languages-on-an-audio-conferencing-bridge"></a>Visualizzare e impostare le lingue primarie (predefinite) e secondarie (Alternate) in un Bridge di audioconferenza
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
 
@@ -189,14 +190,14 @@ See [Send an email to a user with their Audio Conferencing information](send-an-
 
 3. Scegliere le lingue desiderate in **lingua predefinita** e **lingue alternative (facoltativo)**.
 
-4. Fai clic su **Salva**.
+4. Fare clic su **Salva**.
 
 
 See [Set auto attendant languages for Audio Conferencing](set-auto-attendant-languages-for-audio-conferencing-in-teams.md).
   
 ## <a name="see-audio-conferencing-dial-in-numbers"></a>Visualizzare i numeri di accesso esterno per i servizi di audioconferenza
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
 

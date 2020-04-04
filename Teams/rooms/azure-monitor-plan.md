@@ -14,18 +14,19 @@ ms.assetid: 9fd16866-27eb-47a9-b335-2f6bc9044a80
 ms.collection:
 - M365-collaboration
 description: In questo articolo vengono illustrate le considerazioni sulla pianificazione per l'uso di Azure monitor per amministrare i dispositivi Microsoft teams rooms nell'implementazione di Skype for business o teams.
-ms.openlocfilehash: 4fdf5d80b88a973cf1a1132775c7b0cc85e5cc18
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 16a962d7414407cf5f2f5734b7a2f39a56f7d281
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826114"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137606"
 ---
 # <a name="plan-microsoft-teams-rooms-management-with-azure-monitor"></a>Pianificare la gestione di Microsoft teams Rooms con Azure monitor
  
  In questo articolo vengono illustrate le considerazioni sulla pianificazione per l'uso di Azure monitor per amministrare i dispositivi Microsoft teams rooms nell'implementazione di Microsoft teams o Skype for business.
   
-[Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) è una raccolta di servizi di gestione progettati nel cloud dall'inizio. Invece di distribuire e gestire risorse locali, i componenti di Azure monitor sono interamente ospitati in Azure. La configurazione è minima e può essere installato e funzionante letteralmente in pochi minuti. Con un certo lavoro di personalizzazione, può aiutare nella gestione dei sistemi di conferenza di Microsoft teams Rooms fornendo le notifiche in tempo reale dell'integrità del sistema o degli errori per i singoli sistemi in camera e può potenzialmente scalare fino a gestire migliaia di Microsoft Teams Sale riunioni.
+[Azure monitor](https://docs.microsoft.com/azure/azure-monitor/overview) è una raccolta di servizi di gestione progettati nel cloud dall'inizio. Invece di distribuire e gestire risorse locali, i componenti di Azure monitor sono interamente ospitati in Azure. La configurazione è minima e può essere installato e funzionante letteralmente in pochi minuti. Con un certo lavoro di personalizzazione, può aiutare nella gestione dei sistemi di conferenza di Microsoft teams Rooms fornendo le notifiche in tempo reale dell'integrità del sistema o degli errori per i singoli sistemi in camera e può potenzialmente scalare fino a gestire migliaia di sale riunioni di Microsoft teams.
   
 In questo articolo vengono illustrate le procedure consigliate per la gestione dei dispositivi di conferenza di Microsoft teams e i relativi requisiti di progettazione/architettura e implementazione, nonché i collegamenti a articoli dettagliati per l'implementazione di Azure monitor per Microsoft teams Rooms e informazioni di riferimento critiche per il monitoraggio continuo delle sale di Microsoft teams. 
   

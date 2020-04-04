@@ -8,7 +8,7 @@ audience: admin
 ms.topic: article
 ms.service: msteams
 search.appverid: MET150
-description: ''
+description: Trova le risposte alle domande frequenti sulla pensione di Microsoft StaffHub e la transizione all'app turni in Microsoft teams.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -17,12 +17,13 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 346ef795f8432154d74610e4d061d00fc6039f2a
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 53d82dc346226215101c837dcf8a2f10dd6ff2fc
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42008158"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141179"
 ---
 # <a name="microsoft-staffhub-to-be-retired"></a>Ritiro di Microsoft StaffHub
 
@@ -148,7 +149,7 @@ Ti invitiamo a rivedere i roster del team esistenti su StaffHub e, se possibile,
 
 La programmazione dell'utente verrà spostata in turni, ma l'utente non sarà membro del team o di un gruppo di Office 365.
 
-Per gli account inattivi non collegati a un account utente di Azure AD, un Manager può garantire che l'utente venga aggiunto come membro del team aggiungendo un indirizzo di posta elettronica di Office 365 valido nella pagina membri del team di StaffHub in modo che l'utente sia collegato all'account di Azure AD corretto nella pagina organizzazione IR.
+Per gli account inattivi non collegati a un account utente di Azure AD, un Manager può garantire che l'utente venga aggiunto come membro del team aggiungendo un indirizzo di posta elettronica di Office 365 valido nella pagina membri del team di StaffHub in modo che l'utente sia collegato all'account di Azure AD corretto nell'organizzazione.
 
 Un'altra opzione consiste nel fatto che gli amministratori eseguano i cmdlet **Add-StaffHubMember** e **Remove-StaffHubUser** per rimuovere un account non provisioning da un team di StaffHub e aggiungere di nuovo l'utente al team con il relativo UPN.
 

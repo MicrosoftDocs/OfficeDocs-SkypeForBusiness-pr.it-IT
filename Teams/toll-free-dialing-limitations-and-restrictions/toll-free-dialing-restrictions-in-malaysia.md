@@ -22,13 +22,14 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: bcec32c632b7c17358d4ac8cbea147fb446b7d61
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+- seo-marvel-mar2020
+description: Informazioni sulla chiamata gratuita di numeri verdi in Malesia, tra cui disponibilità, disponibilità di rete cablata/a linee fisse e mobili e restrizioni.
+ms.openlocfilehash: de80bcf4d33f8aa715584ec7922b97ab3d476eda
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41693561"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140335"
 ---
 # <a name="toll-free-dialing-restrictions-in-malaysia"></a>Restrizioni di chiamata gratuita in Malesia
 

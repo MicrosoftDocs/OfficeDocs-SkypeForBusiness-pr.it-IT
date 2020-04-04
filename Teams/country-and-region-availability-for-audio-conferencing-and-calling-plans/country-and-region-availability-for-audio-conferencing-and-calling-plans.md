@@ -1,5 +1,5 @@
 ---
-title: Disponibilità di Audioconferenza e Piani di chiamata per Paese e area geografica
+title: Disponibilità di paese/area geografica-servizi di audioconferenza, piani per chiamate
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -24,13 +24,14 @@ ms.custom:
 - Phone System
 - Calling Plans
 - LIL_Placement
-description: Puoi selezionare un paese/un’area geografica per vedere se sono disponibili o meno Audioconferenza, Sistema telefonico, Piani per chiamate, Crediti comunicazioni e i numeri verdi e a tariffa.
-ms.openlocfilehash: cc1acc2e112477c441b9bfb492dff49183e5dc3d
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
-ms.translationtype: HT
+- seo-marvel-mar2020
+description: Scopri se i servizi di audioconferenza, il sistema telefonico, i piani di chiamata, i crediti per le comunicazioni e i numeri verdi sono disponibili in un paese o in un'area geografica.
+ms.openlocfilehash: d6c989ea073a3d12f5bd4f04496f57977534e05c
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41682523"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141059"
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani di chiamata per Paese e area geografica
 

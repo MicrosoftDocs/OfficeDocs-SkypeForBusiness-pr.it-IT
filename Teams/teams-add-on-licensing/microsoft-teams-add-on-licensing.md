@@ -19,13 +19,14 @@ localization_priority: Normal
 ms.custom:
 - Licensing
 - LIL_Placement
-description: Informazioni sulle licenze per i componenti aggiuntivi, le funzionalità incluse in ciascuna licenza, come acquistarle per il proprio prodotto e come utilizzarle con il gestore telefonico esistente. È possibile ottenere informazioni sui prezzi e i dettagli del piano di Office 365, Credito per la comunicazione e Piani di chiamata.
-ms.openlocfilehash: c1faf51c6f0c61ce569a0e3f14181aa8db276a2c
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
-ms.translationtype: HT
+- seo-marvel-mar2020
+description: Informazioni sulle licenze per i componenti aggiuntivi, le funzionalità incluse in ciascuna licenza, come acquistarle per il proprio prodotto e come utilizzarle con il gestore telefonico esistente.
+ms.openlocfilehash: 10f8b8d0af5c0c70d68c6fbdba561b15af41f64b
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029377"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140819"
 ---
 # <a name="microsoft-teams-add-on-licensing"></a>Licenze per i componenti aggiuntivi di Microsoft Teams
 

@@ -1,5 +1,5 @@
 ---
-title: Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario
+title: Modelli per organizzazioni sanitarie
 author: kenwith
 ms.author: kenwith
 manager: serdars
@@ -17,12 +17,13 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: ''
 description: Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario
-ms.openlocfilehash: d2e22b47fbb0e6387a183fc12da70f7729af9172
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: 7973b051684ba2d6d3f4024244ac4930cfd2de6f
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827764"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43136945"
 ---
 # <a name="get-started-with-teams-templates-for-healthcare-organizations"></a>Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario
 
@@ -150,7 +151,7 @@ Per usare questi modelli, è sufficiente modificare la proprietà "template@odat
               "IsFavoriteByDefault": false
             },
             {
-              "displayName": "Women’s Health",
+              "displayName": "Women's Health",
               "IsFavoriteByDefault": false
             }
           ],

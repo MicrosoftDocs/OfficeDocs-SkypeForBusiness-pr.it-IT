@@ -21,13 +21,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Legal
-description: I clienti possono usare il piano di chiamata di Office 365 e i servizi di audioconferenza di Office 365 consentiti dai termini e dai contratti multilicenza del cliente per Skype for business online e Microsoft teams.
-ms.openlocfilehash: 59a885f53d23f5297d6730e718ac1a95801d6a30
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+- seo-marvel-mar2020
+description: Informazioni sul periodo di chiamata in uscita gratuito per il piano di chiamate di Office 365 e per i servizi di audioconferenza di Office 365 in Microsoft teams.
+ms.openlocfilehash: 46c9aac02c40a973abc8356dc4212b3521852461
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825504"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43137296"
 ---
 # <a name="audio-conferencing-complimentary-dial-out-period"></a>Periodo di chiamate gratuite di Audioconferenza
 
@@ -43,7 +44,7 @@ Questa modifica non verrà eseguita per i paesi in cui è disponibile l'abboname
 
 ### <a name="complimentary-dial-out-period-details"></a>Dettagli del periodo di chiamata gratuita
 
-Per i clienti che adottano il servizio di conferenza audio di Office 365, Microsoft offre un ulteriore vantaggio aggiuntivo correlato alla chiamata in uscita dalle riunioni organizzate dagli utenti assegnati a una licenza di abbonamento a Office 365 per i servizi di audioconferenza tramite novembre 2019. Durante questo periodo di tempo gratuito, Microsoft consente agli organizzatori della riunione o ai partecipanti autorizzati come definiti nelle impostazioni dei criteri di riunione, di effettuare chiamate in uscita dall'interno della riunione a numeri di telefono non Premium nei paesi e nelle aree geografiche di 44 "zona A" elencati di seguito. Questo vantaggio si applica alle licenze di abbonamento mensile per i servizi di audioconferenza e non si estende alle licenze pay-per-minute per audioconferenza.
+Per i clienti che adottano il servizio di conferenza audio di Office 365, Microsoft offre un ulteriore vantaggio aggiuntivo correlato alla chiamata in uscita dalle riunioni organizzate dagli utenti assegnati a una licenza di abbonamento a Office 365 per i servizi di audioconferenza tramite il 2019 novembre. Durante questo periodo di tempo gratuito, Microsoft consente agli organizzatori della riunione o ai partecipanti autorizzati come definiti nelle impostazioni dei criteri di riunione, di effettuare chiamate in uscita dall'interno della riunione a numeri di telefono non Premium nei paesi e nelle aree geografiche di 44 "zona A" elencati di seguito. Questo vantaggio si applica alle licenze di abbonamento mensile per i servizi di audioconferenza e non si estende alle licenze pay-per-minute per audioconferenza.
 
 Inoltre, durante il periodo di chiamata gratuita è disponibile un limite di 900 minuti:
 
@@ -54,14 +55,14 @@ Gli utenti con una posizione di utilizzo della licenza (questa è la posizione d
  
 - Tutti gli utenti di 115 condividono un pool di (115 utenti X 900 min) = 103.500 conferenza telefonica con accesso esterno in minuti per ogni mese di calendario, che può essere usato per inserire le chiamate in uscita in qualsiasi zona A paesi e aree geografiche.
 - Tutte le chiamate che superano i 103.500 minuti per mese di calendario vengono fatturate al minuto usando i crediti per le comunicazioni alle tariffe pubblicate a tale destinazione. (Nota: il tenant deve configurare i crediti per le comunicazioni e assegnare la licenza per i crediti di comunicazione all'organizzatore della riunione).
-- Tutte le chiamate in uscita verso le destinazioni non presenti nella zona un elenco di paesi vengono fatturate al minuto usando i crediti per le comunicazioni alle tariffe pubblicate a tale destinazione (purché il tenant abbia configurato i crediti per le comunicazioni e abbia assegnato la licenza per i crediti di comunicazione al Organizzatore di riunioni).
+- Tutte le chiamate in uscita verso le destinazioni non presenti nell'area di un elenco di paesi vengono fatturate al minuto usando i crediti per le comunicazioni alle tariffe pubblicate a tale destinazione (purché il tenant abbia configurato i crediti per le comunicazioni e abbia assegnato la licenza per i crediti di comunicazione all'organizzatore della riunione).
 
 > [!NOTE]
 > È possibile monitorare l'uso di un pool di minuti con accesso esterno nell'interfaccia di amministrazione di Skype for business. Nell'interfaccia di amministrazione di Microsoft teams & Skype accedere ai**pool di minuti PSTN**dei > **report** > del **portale legacy**. Questo pool di minuti gratuiti verrà etichettato nel report come "chiamate in uscita per la zona A paesi e aree geografiche".
 
 Le notifiche tramite posta elettronica verranno inviate a tutti gli amministratori del tenant di un cliente specifico quando l'utilizzo del pool di minuti di accesso esterno del tenant ha raggiunto 80% e 100%.
 
-Per le chiamate con chiamata in uscita fatturate al minuto (chiamate che superano il pool di minuti per la chiamata in uscita del tenant o le chiamate a destinazioni non nell'elenco di paesi e aree geografiche), le chiamate e le tariffe associate si basano principalmente sulla destinazione dell'invito e non sul paese. o l'area geografica dell'organizzatore o del partecipante che avvia la chiamata in uscita. Ad esempio, una chiamata a un numero di telefono in Francia verrà fatturata con la stessa aliquota se è stata avviata da un partecipante alla riunione negli Stati Uniti o in una persona in Francia.
+Per le chiamate con chiamata in uscita fatturate al minuto (chiamate che superano il pool di minuti per la chiamata in uscita del tenant o le chiamate a destinazioni non presenti nell'elenco di paesi e aree geografiche), le chiamate e le tariffe associate si basano principalmente sulla destinazione dell'invito e non sul paese o l'area geografica dell'organizzatore o del partecipante che avvia la chiamata. Ad esempio, una chiamata a un numero di telefono in Francia verrà fatturata con la stessa aliquota se è stata avviata da un partecipante alla riunione negli Stati Uniti o in una persona in Francia.
 
 Per altre informazioni sui crediti di comunicazione, Vedi [crediti per comunicazioni](what-are-communications-credits.md).
 

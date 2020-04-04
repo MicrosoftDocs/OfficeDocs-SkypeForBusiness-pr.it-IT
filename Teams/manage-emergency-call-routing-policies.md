@@ -1,5 +1,5 @@
 ---
-title: Gestire i criteri di routing delle chiamate di emergenza in Microsoft Teams
+title: Gestire i criteri del routing delle chiamate di emergenza
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -16,12 +16,13 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i criteri di routing delle chiamate di emergenza in Microsoft teams.
-ms.openlocfilehash: af0b7a6a82e0d5ff06c65d726b2f67af22b6f4aa
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: c0e02a44997e07626c39dc576357f8811a9b1bf9
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836506"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141119"
 ---
 # <a name="manage-emergency-call-routing-policies-in-microsoft-teams"></a>Gestire i criteri di routing delle chiamate di emergenza in Microsoft Teams
 
@@ -51,7 +52,7 @@ Se i criteri di routing delle chiamate di emergenza sono stati assegnati a un si
     > [!NOTE]
     > Le stringhe di chiamata e le maschere di chiamata devono essere univoche all'interno di un criterio. Questo significa che per un criterio puoi definire più numeri di emergenza ed è possibile impostare più maschere di chiamata per una stringa di chiamata, ma ogni stringa di chiamata e maschera di chiamata deve essere usata solo una volta.
 
-6. Fai clic su **Salva**.
+6. Fare clic su **Salva**.
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
@@ -75,18 +76,18 @@ Vedere [set-CsTeamsEmergencyCallRoutingPolicy](https://docs.microsoft.com/powers
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Uso dell'interfaccia di amministrazione di Microsoft Teams
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi fai clic sull'utente.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi fare clic sull'utente.
 2. Fare clic su **criteri**e quindi fare clic su **modifica**accanto a **criteri assegnati**.
 3. In **criteri di routing delle chiamate di emergenza**selezionare il criterio che si vuole assegnare e quindi fare clic su **Salva**.
 
 Per assegnare un criterio teams personalizzato a più utenti alla volta, vedere [modificare le impostazioni utente di teams in blocco](edit-user-settings-in-bulk.md).
 
-In alternativa, è anche possibile eseguire le operazioni seguenti:
+Si può anche procedere nel modo seguente:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams selezionare criteri per l'**emergenza** **vocale** > e quindi fare clic sulla scheda **criteri di routing delle chiamate** .
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
-3. Selezionare **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
+3. Scegliere **Gestisci utenti**.
+4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 5. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
@@ -131,4 +132,4 @@ Set-CsTenantNetworkSite -identity "site1" -EmergencyCallRoutingPolicy "Emergency
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Gestire i criteri delle chiamate di emergenza in teams](manage-emergency-calling-policies.md)
-- [Panoramica di PowerShell Teams](teams-powershell-overview.md)
+- [Panoramica di PowerShell per Teams](teams-powershell-overview.md)

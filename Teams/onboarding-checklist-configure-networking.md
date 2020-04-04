@@ -1,5 +1,5 @@
 ---
-title: Elenco di controllo onboarding per la configurazione della rete per Microsoft Teams
+title: Elenco di controllo onboarding-configurare la rete-Microsoft Teams
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -15,12 +15,13 @@ f1.keywords:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 97a59ede284474069f39dc166d77d0a4a6ebc167
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.custom: seo-marvel-mar2020
+ms.openlocfilehash: b4780e0509598406b25c1b8145a29a6aeef0423f
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862886"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43138316"
 ---
 # <a name="configure-networking"></a>Configurare la rete
 

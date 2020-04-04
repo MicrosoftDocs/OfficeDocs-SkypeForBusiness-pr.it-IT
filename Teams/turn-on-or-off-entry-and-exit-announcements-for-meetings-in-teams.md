@@ -1,5 +1,5 @@
 ---
-title: Attivare o disattivare gli annunci di entrata e uscita per le riunioni in Microsoft Teams
+title: Attivare o disattivare gli annunci di entrata e uscita per le riunioni in teams
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,13 +19,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
+- seo-marvel-mar2020
 description: 'Informazioni su come attivare o disattivare gli annunci di entrata e uscita in una riunione di Microsoft teams. '
-ms.openlocfilehash: 8deb53145c95f9a370e894083de8e998b50fa9ae
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 558146853c7365a1eac9fdd2497326781889cf09
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41832606"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43139685"
 ---
 # <a name="turn-on-or-off-entry-and-exit-announcements-for-meetings-in-microsoft-teams"></a>Attivare o disattivare gli annunci di entrata e uscita per le riunioni in Microsoft Teams
 
@@ -38,7 +39,7 @@ Il ponte per audioconferenze risponde a una chiamata di un utente che si collega
   
 ## <a name="setting-meeting-join-options"></a>Impostazione delle opzioni di partecipazione alla riunione
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
 
@@ -50,7 +51,7 @@ Il ponte per audioconferenze risponde a una chiamata di un utente che si collega
     
 5. Se si sceglie **nomi o numeri di telefono**, abilitare o disabilitare i **chiamanti per registrare il nome prima di partecipare alla riunione**.
     
-6. Fai clic su **Salva**.
+6. Fare clic su **Salva**.
 
 ## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
 
@@ -64,4 +65,4 @@ Per altre informazioni su Windows PowerShell, vedere la pagina di [riferimento d
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Domande frequenti sul servizio di audioconferenza](audio-conferencing-common-questions.md)
+[Domande ricorrenti sulle audioconferenze](audio-conferencing-common-questions.md)
