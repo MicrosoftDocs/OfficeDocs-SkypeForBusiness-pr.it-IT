@@ -14,55 +14,55 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Dopo aver distribuito uno o più server perimetrali, è necessario abilitare i tipi di accesso esterno che verranno supportati per l'organizzazione.
+description: Dopo avere distribuito uno o più server Edge Server, è necessario abilitare i tipi di accesso esterno da supportare per l'organizzazione.
 ms.openlocfilehash: e4405585da71dc48f5fa1790f83938a814270d84
 ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/06/2020
 ms.locfileid: "41818277"
 ---
 # <a name="manage-external-access-policy-for-your-organization"></a>Gestire i criteri di accesso esterno per l'organizzazione
 
-Dopo aver distribuito uno o più server perimetrali, è necessario abilitare i tipi di accesso esterno che verranno supportati per l'organizzazione.
+Dopo avere distribuito uno o più server Edge Server, è necessario abilitare i tipi di accesso esterno da supportare per l'organizzazione.
 
-Per impostazione predefinita, non sono configurati criteri per supportare l'accesso degli utenti esterni, incluso l'accesso degli utenti remoti, l'accesso degli utenti federati, anche se è già stato abilitato il supporto per l'accesso degli utenti esterni per l'organizzazione. Per controllare l'uso dell'accesso degli utenti esterni, è necessario configurare uno o più criteri, specificando il tipo di accesso utente esterno supportato per ogni criterio. Gli ambiti di criteri seguenti sono disponibili per la creazione e la configurazione. Per impostazione predefinita, il criterio globale viene creato, ma non può essere eliminato.
+Per impostazione predefinita, non vi sono criteri configurati per supportare l'accesso utente esterno, inclusi l'accesso utente remoto e federato, anche se il supporto dell'accesso utente esterno è già stato abilitato per l'organizzazione. Per controllare l'uso dell'accesso utente esterno, è necessario configurare uno o più criteri, specificando il tipo di accesso utente esterno supportato per ogni criterio. Per la creazione e la configurazione sono disponibili gli ambiti di criteri seguenti. Per impostazione predefinita, i criteri globali possono essere creati ma non possono essere eliminati.
 
-  - **Criteri globali il**   criterio globale viene creato quando si distribuisce un server perimetrale. Per impostazione predefinita, nel criterio globale non sono abilitate le opzioni di accesso degli utenti esterni. Per supportare l'accesso degli utenti esterni a livello globale, è possibile configurare il criterio globale per supportare uno o più tipi di opzioni di accesso degli utenti esterni. Il criterio globale si applica a tutti gli utenti dell'organizzazione, ma i criteri del sito e i criteri degli utenti eseguono l'override del criterio globale. Se elimini il criterio globale, non lo Rimuovi. Puoi invece reimpostarla sull'impostazione predefinita.
+  - **Criteri globali**   I criteri globali vengono creati quando si distribuiscono i server Edge Server. Per impostazione predefinita, nei criteri globali non vengono abilitate opzioni di accesso per gli utenti esterni. Per supportare l'accesso degli utenti esterni a livello globale, è possibile configurare i criteri globali in modo da supportare uno o più tipi di opzioni di accesso degli utenti esterni. I criteri globali si applicano a tutti gli utenti dell'organizzazione, ma i criteri sito e i criteri utente sostituiscono i criteri globali. Se si eliminano i criteri globali, questi non vengono rimossi, ma ne vengono ripristinate le impostazioni predefinite.
 
-  - **Criteri sito è**   possibile creare e configurare uno o più criteri del sito per limitare il supporto per l'accesso degli utenti esterni a siti specifici. La configurazione dei criteri sito ha la precedenza sui criteri globali, ma solo per il sito specifico a cui i criteri si riferiscono. Ad esempio, se si Abilita l'accesso degli utenti remoti nel criterio globale, è possibile specificare un criterio per il sito che disabilita l'accesso degli utenti remoti per un sito specifico. Per impostazione predefinita, un criterio del sito viene applicato a tutti gli utenti del sito, ma è possibile assegnare un criterio utente a un utente per ignorare l'impostazione dei criteri del sito.
+  - **Criteri sito**   È possibile creare e configurare uno o più criteri sito per limitare il supporto per l'accesso degli utenti esterni a siti specifici. La configurazione nel criterio sito ha la priorità sul criterio globale, ma solo per il sito specifico a cui si applica il criterio sito. Se ad esempio si abilita l'accesso degli utenti remoti nel criterio globale, è possibile specificare un criterio sito che disabilita l'accesso degli utenti remoti per un sito specifico. Per impostazione predefinita, un criterio sito viene applicato a tutti gli utenti del sito, ma è possibile assegnare un criterio utente a un utente per ignorare l'impostazione del criterio sito.
 
-  - **Criteri**   per gli utenti è possibile creare e configurare uno o più criteri utente per limitare il supporto per l'accesso degli utenti remoti a un utente specifico. La configurazione nel criterio utente sostituisce il criterio globale e del sito, ma solo per gli utenti specifici a cui è assegnato il criterio utente. Ad esempio, se si Abilita l'accesso degli utenti remoti nei criteri globali e nei criteri del sito, è possibile specificare un criterio utente che disabilita l'accesso degli utenti remoti e quindi assegnare i criteri utente a utenti specifici. Se crei un criterio utente, devi applicarlo a uno o più utenti prima che abbia effetto.
+  - **Criteri utente**   È possibile creare e configurare uno o più criteri utente per limitare il supporto per l'accesso degli utenti remoti a utenti specifici. La configurazione nel criterio utente ha la priorità sui criteri globale e sito, ma solo per gli utenti specifici a cui viene assegnato il criterio utente. Se ad esempio si abilita l'accesso degli utenti remoti nei criteri globale e sito, è possibile specificare un criterio utente che disabilita l'accesso degli utenti remoti e quindi assegnare tale criterio utente a utenti specifici. Se si crea un criterio utente, è necessario applicarlo a uno o più utenti per renderlo effettivo.
 
 
 > [!IMPORTANT]  
-> Le impostazioni dei criteri applicate a un livello di criteri possono eseguire l'override delle impostazioni applicate a un altro livello di criteri. La precedenza dei criteri di Skype for Business Server è: criteri utente (la maggior parte delle influenze) esegue l'override di un criterio del sito e quindi un criterio del sito sostituisce un criterio globale (almeno l'influenza). Ciò significa che l'impostazione del criterio è più vicina all'oggetto che il criterio sta influenzando, più influenza ha sull'oggetto.
+> Le impostazioni criteri applicate a un determinato livello di criteri possono sostituire le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri di Skype for Business Server è la seguente: i criteri utente (maggiore influenza) sostituiscono i criteri sito e i criteri sito sostituiscono i criteri globali (minore influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto.
 
 
 Queste opzioni includono i tipi di accesso esterno seguenti:
 
-  - **Abilitare le comunicazioni con gli utenti**   federati abilitare questa operazione se si vuole supportare l'accesso degli utenti ai domini partner federati. Questa impostazione configura la possibilità per gli utenti di comunicare con altri domini federati SIP, nonché di provider ospitati come Microsoft Office 365. 
+  - **Abilita comunicazioni con utenti federati**   Abilitare questa opzione se si desidera supportare l'accesso utente ai domini dei partner federati. Questa impostazione consente agli utenti di comunicare con altri domini federati SIP e con provider ospitati come Microsoft Office 365. 
 
 
-  - **Abilitare le comunicazioni con gli utenti**   remoti abilitare questa opzione se si vuole che gli utenti dell'organizzazione che si trovano all'esterno del firewall, ad esempio i telelavoratori e gli utenti che viaggiano, possano connettersi a Skype for Business Server tramite Internet.
+  - **Abilita comunicazioni con utenti remoti**   Abilitare questa opzione se si vuole consentire la connessione a Skype for Business Server via Internet agli utenti dell'organizzazione che si trovano all'esterno del firewall, come telelavoratori e utenti in viaggio.
 
-  - **Abilitare le comunicazioni con gli utenti**   pubblici abilitare questa opzione se si vuole che gli utenti interni possano comunicare con i contatti del provider di messaggistica istantanea pubblica.
+  - **Abilita comunicazioni con utenti pubblici**   Abilitare questa opzione se si vuole consentire agli utenti interni di comunicare con i contatti dei provider di messaggistica istantanea pubblici.
    
 
 > [!NOTE]  
-> Oltre ad abilitare il supporto per l'accesso degli utenti esterni, devi anche configurare i criteri per controllare l'uso dell'accesso degli utenti esterni nell'organizzazione prima che qualsiasi tipo di accesso utente esterno sia disponibile per gli utenti. Per informazioni dettagliate sulla creazione, la configurazione e l'applicazione di criteri per l'accesso degli utenti esterni, vedere [abilitare o disabilitare l'accesso remoto agli utenti](../access-edge/enable-or-disable-remote-user-access.md).
+> Oltre ad abilitare il supporto dell'accesso a utenti esterni, è inoltre necessario configurare i criteri per controllare l'uso dell'accesso agli utenti esterni nell'organizzazione prima che sia disponibile qualsiasi tipo di accesso esterno per gli utenti. Per informazioni dettagliate sulla creazione, la configurazione e l'applicazione di criteri per l'accesso agli utenti esterni, vedere [Abilitare o disabilitare l'accesso utente remoto](../access-edge/enable-or-disable-remote-user-access.md).
 
 
 
 **Per visualizzare i criteri di accesso esterno usando i cmdlet di Windows PowerShell**
 
-  - Puoi visualizzare i criteri di accesso esterno usando Skype for Business Server Management Shell e il cmdlet **Get-CsExternalAccessPolicy** . Puoi eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
+  - È possibile visualizzare i criteri di accesso esterno con Skype for Business Server Management Shell e il **cmdlet Get-CsExternalAccessPolicy**. È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
     
     Per visualizzare informazioni su tutti i criteri di accesso esterno, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
     
     `Get-CsExternalAccessPolicy`
     
-    Questo comando restituisce informazioni simili a quelle seguenti:
+    Il comando restituisce informazioni simili a quelle riportate di seguito:
     
     ```console
     Identity                          : Global
