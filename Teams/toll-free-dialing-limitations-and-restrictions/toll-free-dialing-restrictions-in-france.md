@@ -22,35 +22,36 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
-description: Questo ti aiuterà a scoprire come effettuare la chiamata a un numero verde in ogni paese/area geografica. Dopo aver selezionato il paese/area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli, restrizioni e limiti specifici per la disponibilità del servizio gratuito, in cui è disponibile un servizio a pagamento gratuito. Il formato di chiamata o i formati ti mostreranno i codici di accesso necessari in ogni paese/area geografica per chiamare il numero verde.
-ms.openlocfilehash: 68218d21a4fc51d9271d7ce47297ce2c417b516c
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+- seo-marvel-mar2020
+description: Informazioni sulla chiamata gratuita di numeri verdi in Francia, tra cui disponibilità, disponibilità di rete cablata/a linee fisse e mobili e restrizioni.
+ms.openlocfilehash: 5595b8266f78b0b18beb30b9893a09089d56a345
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41707842"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43140425"
 ---
-# <a name="toll-free-dialing-restrictions-in-france"></a><span data-ttu-id="36808-105">Restrizioni di chiamata gratuita in Francia</span><span class="sxs-lookup"><span data-stu-id="36808-105">Toll-free dialing restrictions in France</span></span>
+# <a name="toll-free-dialing-restrictions-in-france"></a><span data-ttu-id="67701-103">Restrizioni di chiamata gratuita in Francia</span><span class="sxs-lookup"><span data-stu-id="67701-103">Toll-free dialing restrictions in France</span></span>
 
-<span data-ttu-id="36808-106">[Trovare un altro paese o un'area geografica](../toll-free-dialing-limitations-and-restrictions.md)o altre informazioni sulle limitazioni e le restrizioni di chiamata senza pedaggio.</span><span class="sxs-lookup"><span data-stu-id="36808-106">[Find another country or region](../toll-free-dialing-limitations-and-restrictions.md), or learn more about toll-free dialing limitations and restrictions.</span></span>
+<span data-ttu-id="67701-104">[Trovare un altro paese o un'area geografica](../toll-free-dialing-limitations-and-restrictions.md)o altre informazioni sulle limitazioni e le restrizioni di chiamata senza pedaggio.</span><span class="sxs-lookup"><span data-stu-id="67701-104">[Find another country or region](../toll-free-dialing-limitations-and-restrictions.md), or learn more about toll-free dialing limitations and restrictions.</span></span>
 
 
-|<span data-ttu-id="36808-107">**Dettagli**</span><span class="sxs-lookup"><span data-stu-id="36808-107">**Details**</span></span>|<span data-ttu-id="36808-108">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="36808-108">**Description**</span></span>|
+|<span data-ttu-id="67701-105">**Dettagli**</span><span class="sxs-lookup"><span data-stu-id="67701-105">**Details**</span></span>|<span data-ttu-id="67701-106">**Descrizione**</span><span class="sxs-lookup"><span data-stu-id="67701-106">**Description**</span></span>|
 |:-----|:-----|
-|<span data-ttu-id="36808-109">È disponibile una chiamata gratuita?</span><span class="sxs-lookup"><span data-stu-id="36808-109">Is toll-free calling available?</span></span>  <br/> |<span data-ttu-id="36808-110">Sì</span><span class="sxs-lookup"><span data-stu-id="36808-110">Yes</span></span>  <br/> |
-|<span data-ttu-id="36808-111">Formato di chiamata (s)</span><span class="sxs-lookup"><span data-stu-id="36808-111">Dialing format(s)</span></span>  <br/> |<span data-ttu-id="36808-112">0 800 9XX XXX</span><span class="sxs-lookup"><span data-stu-id="36808-112">0 800 9XX XXX</span></span>  <br/> |
-|<span data-ttu-id="36808-113">Codice ISO paese/area geografica</span><span class="sxs-lookup"><span data-stu-id="36808-113">Country/region ISO code</span></span>  <br/> |<span data-ttu-id="36808-114">FR</span><span class="sxs-lookup"><span data-stu-id="36808-114">FR</span></span>  <br/> |
-|<span data-ttu-id="36808-115">Isola/territorio coperto</span><span class="sxs-lookup"><span data-stu-id="36808-115">Island/territory covered</span></span>  <br/> | <span data-ttu-id="36808-116">Francia continentale e Corsica</span><span class="sxs-lookup"><span data-stu-id="36808-116">France mainland and Corsica</span></span> <br/> |
-|<span data-ttu-id="36808-117">Isola/territorio non coperto</span><span class="sxs-lookup"><span data-stu-id="36808-117">Island/territory not covered</span></span>  <br/> |<span data-ttu-id="36808-118">No access from Monaco, Reunion, Martinique, Guadeloupe, Guyane, St. Pierre-&amp;-Miquelon, Mayotte, New Caledonia, French Polynesia, Wallis &amp; Futuna.</span><span class="sxs-lookup"><span data-stu-id="36808-118">No access from Monaco, Reunion, Martinique, Guadeloupe, Guyane, St. Pierre-&amp;-Miquelon, Mayotte, New Caledonia, French Polynesia, Wallis &amp; Futuna.</span></span>  <br/> |
-|<span data-ttu-id="36808-119">Disponibilità di linee cablate/fisse</span><span class="sxs-lookup"><span data-stu-id="36808-119">Wired/fixed line availability</span></span>  <br/> |<span data-ttu-id="36808-120">Sì</span><span class="sxs-lookup"><span data-stu-id="36808-120">Yes</span></span>  <br/> |
-|<span data-ttu-id="36808-121">Disponibilità rete mobile</span><span class="sxs-lookup"><span data-stu-id="36808-121">Mobile network availability</span></span>  <br/> |<span data-ttu-id="36808-122">Sì</span><span class="sxs-lookup"><span data-stu-id="36808-122">Yes</span></span>  <br/> |
-|<span data-ttu-id="36808-123">Commenti, limitazioni e problemi di accesso</span><span class="sxs-lookup"><span data-stu-id="36808-123">Comments, restrictions, and access issues</span></span>  <br/> |<span data-ttu-id="36808-124">Accesso da mobile: tariffa a tempo.</span><span class="sxs-lookup"><span data-stu-id="36808-124">Mobile access: Airtime is charged.</span></span>  <br/> |
+|<span data-ttu-id="67701-107">È disponibile una chiamata gratuita?</span><span class="sxs-lookup"><span data-stu-id="67701-107">Is toll-free calling available?</span></span>  <br/> |<span data-ttu-id="67701-108">Sì</span><span class="sxs-lookup"><span data-stu-id="67701-108">Yes</span></span>  <br/> |
+|<span data-ttu-id="67701-109">Formato di chiamata (s)</span><span class="sxs-lookup"><span data-stu-id="67701-109">Dialing format(s)</span></span>  <br/> |<span data-ttu-id="67701-110">0 800 9XX XXX</span><span class="sxs-lookup"><span data-stu-id="67701-110">0 800 9XX XXX</span></span>  <br/> |
+|<span data-ttu-id="67701-111">Codice ISO paese/area geografica</span><span class="sxs-lookup"><span data-stu-id="67701-111">Country/region ISO code</span></span>  <br/> |<span data-ttu-id="67701-112">FR</span><span class="sxs-lookup"><span data-stu-id="67701-112">FR</span></span>  <br/> |
+|<span data-ttu-id="67701-113">Isola/territorio coperto</span><span class="sxs-lookup"><span data-stu-id="67701-113">Island/territory covered</span></span>  <br/> | <span data-ttu-id="67701-114">Francia continentale e Corsica</span><span class="sxs-lookup"><span data-stu-id="67701-114">France mainland and Corsica</span></span> <br/> |
+|<span data-ttu-id="67701-115">Isola/territorio non coperto</span><span class="sxs-lookup"><span data-stu-id="67701-115">Island/territory not covered</span></span>  <br/> |<span data-ttu-id="67701-116">No access from Monaco, Reunion, Martinique, Guadeloupe, Guyane, St. Pierre-&amp;-Miquelon, Mayotte, New Caledonia, French Polynesia, Wallis &amp; Futuna.</span><span class="sxs-lookup"><span data-stu-id="67701-116">No access from Monaco, Reunion, Martinique, Guadeloupe, Guyane, St. Pierre-&amp;-Miquelon, Mayotte, New Caledonia, French Polynesia, Wallis &amp; Futuna.</span></span>  <br/> |
+|<span data-ttu-id="67701-117">Disponibilità di linee cablate/fisse</span><span class="sxs-lookup"><span data-stu-id="67701-117">Wired/fixed line availability</span></span>  <br/> |<span data-ttu-id="67701-118">Sì</span><span class="sxs-lookup"><span data-stu-id="67701-118">Yes</span></span>  <br/> |
+|<span data-ttu-id="67701-119">Disponibilità rete mobile</span><span class="sxs-lookup"><span data-stu-id="67701-119">Mobile network availability</span></span>  <br/> |<span data-ttu-id="67701-120">Sì</span><span class="sxs-lookup"><span data-stu-id="67701-120">Yes</span></span>  <br/> |
+|<span data-ttu-id="67701-121">Commenti, limitazioni e problemi di accesso</span><span class="sxs-lookup"><span data-stu-id="67701-121">Comments, restrictions, and access issues</span></span>  <br/> |<span data-ttu-id="67701-122">Accesso da mobile: tariffa a tempo.</span><span class="sxs-lookup"><span data-stu-id="67701-122">Mobile access: Airtime is charged.</span></span>  <br/> |
    
-## <a name="related-topics"></a><span data-ttu-id="36808-125">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="36808-125">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="67701-123">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="67701-123">Related topics</span></span>
 
-[<span data-ttu-id="36808-126">Restrizioni e limitazioni per le chiamate verso numeri verdi</span><span class="sxs-lookup"><span data-stu-id="36808-126">Toll-free dialing limitations and restrictions</span></span>](../toll-free-dialing-limitations-and-restrictions.md)
+[<span data-ttu-id="67701-124">Restrizioni e limitazioni per le chiamate verso numeri verdi</span><span class="sxs-lookup"><span data-stu-id="67701-124">Toll-free dialing limitations and restrictions</span></span>](../toll-free-dialing-limitations-and-restrictions.md)
 
-[<span data-ttu-id="36808-127">Ottenere numeri di servizio per Skype for Business e Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="36808-127">Getting service phone numbers for Skype for Business and Microsoft Teams</span></span>](/microsoftteams/getting-service-phone-numbers)
+[<span data-ttu-id="67701-125">Ottenere numeri di servizio per Skype for Business e Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="67701-125">Getting service phone numbers for Skype for Business and Microsoft Teams</span></span>](/microsoftteams/getting-service-phone-numbers)
 
   
  

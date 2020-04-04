@@ -1,7 +1,7 @@
 ### YamlMime:Tutorial
-title: Servizi di audioconferenza in Microsoft Teams
+title: 'Esercitazione: Servizi di audioconferenza-Microsoft Teams'
 metadata:
-  title: Servizi di audioconferenza in Microsoft Teams
+  title: 'Esercitazione: Guida introduttiva a servizi di audioconferenza in Microsoft Teams'
   description: Esercitazione interattiva illustra i servizi di audioconferenza in Microsoft teams.
   audience: IT Pro
   level: Intermediate
@@ -19,12 +19,13 @@ metadata:
   - M365-collaboration
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: bc4bf9f29caa34a2b645403e0de9a45c3a47a79c
-  ms.sourcegitcommit: 0dcd078947a455a388729fd50c7a939dd93b0b61
+  ms.custom: seo-marvel-mar2020
+  ms.openlocfilehash: aa558029f1698f6d54b9ff2646d3238d50a8d7de
+  ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 10/17/2019
-  ms.locfileid: "37572491"
+  ms.lasthandoff: 04/03/2020
+  ms.locfileid: "43141149"
 items:
 - durationInMinutes: 1
   content: >
@@ -49,7 +50,7 @@ items:
 
     -   Passaggi per la pianificazione
 
-    -   Report
+    -   Reporting
 
 
     I servizi di audioconferenza aggiungono funzionalità e funzionalità alle riunioni in teams. Prima di questa esercitazione è consigliabile completare le [riunioni in Microsoft teams](https://aka.ms/tr-meetings) .
@@ -85,7 +86,7 @@ items:
   content: "\nIn questo esercizio avrai la possibilità di testare i servizi di audioconferenza in teams.\nAnche se non descriviamo come eseguire tutte le azioni, ti consigliamo di provare alcuni scenari.\n\n### <a name=\"requirements\"></a>Requisiti\n-   Un tenant di Office 365 con licenze appropriate per l'uso di Teams\n    -   Ti consigliamo vivamente di usare un tenant di test dedicato.\n    -   Se non si dispone di un tenant di prova, è possibile iscriversi a un tenant di valutazione alla [versione di valutazione di Office 365 Enterprise E5](https://go.microsoft.com/fwlink/p/?LinkID=698279).\n    -   Non eseguire test nell'ambiente di produzione. La modifica delle impostazioni o dei criteri può avere un impatto negativo su tutti gli utenti e può influire sull'esperienza utente.\n-   Almeno due endpoint\n    -   Possono essere due PC, ma è anche possibile usare il client sul telefono cellulare.\n    -   Un telefono in grado di accedere alle riunioni e di effettuare chiamate\n\n### <a name=\"suggested-scenarios-to-test\"></a>Scenari suggeriti per il test\n-   Consentire agli utenti di servizi di audioconferenza.\n-   Impostare diversi numeri di Bridge per conferenze per utenti diversi.\n-   Modificare il numero del Bridge di conferenza predefinito per il tenant.\n-   Modificare le impostazioni per il numero del Bridge di conferenza (lingue diverse).\n-   Modificare le impostazioni globali per i Bridge di conferenza (notifiche di entrata e di uscita della riunione, lunghezza del PIN, notifiche tramite posta elettronica).\n-   Osservare il messaggio di posta elettronica inviato agli utenti.\n-   Pianificare le riunioni dei team e rivedere l'invito alla riunione.\n-   Partecipare a una riunione da un telefono.\n-   Effettuare una chiamata esterna da una riunione a un telefono.\n-   Usare i controlli a più frequenze a doppio tono durante una riunione per disattivare e riattivare l'audio di un telefono.\n"
 - title: Valore unità
   durationInMinutes: 1
-  content: "\nDa una prospettiva di creazione di report sono presenti due aree da esaminare:\n-   Utilizzo: quante riunioni avvengono?\n-   Qualità: qual è la qualità delle riunioni?\n\nÈ consigliabile monitorare attentamente entrambe le aree:\n-   L'utilizzo ridotto indica che gli utenti, per un motivo o un altro, non usano il prodotto. È possibile determinare i motivi solo analizzando ulteriormente.\n    I motivi possono variare dalla percezione che le riunioni non siano a corto di requisiti per gli utenti, per mancanza di consapevolezza o formazione, per problemi di qualità.\n-   La qualità bassa, invece, indica che sono presenti problemi di connettività tra gli utenti e Office 365. La qualità bassa può portare a un'esperienza utente errata e a un uso più basso. Vedere i [report di Office 365 nell'interfaccia di amministrazione-attività degli utenti di Microsoft teams](https://support.office.com/article/Office-365-Reports-in-the-Admin-Center-Microsoft-Teams-user-activity-07f67fc4-c0a4-4d3f-ad20-f40c7f6db524) (tempo di lettura stimato 5 minuti) per altre informazioni sui report sull'utilizzo.\n\nLa gestione della qualità esula dall'ambito di questo corso di formazione, ma Vedi il materiale di formazione seguente:\n\n-   [Gestire il servizio personale](https://docs.microsoft.com/MicrosoftTeams/1-drive-value-operate-my-service)\n"
+  content: "\nDa una prospettiva di creazione di report sono presenti due aree da esaminare:\n-   Utilizzo: quante riunioni avvengono?\n-   Qualità: qual è la qualità delle riunioni?\n\nÈ consigliabile monitorare attentamente entrambe le aree:\n-   L'utilizzo ridotto indica che gli utenti, per un motivo o un altro, non usano il prodotto. È possibile determinare i motivi solo analizzando ulteriormente.\n    I motivi possono variare dalla percezione che le riunioni non siano a corto di requisiti per gli utenti, per mancanza di consapevolezza o formazione, per problemi di qualità.\n-   La qualità bassa, invece, indica che sono presenti problemi di connettività tra gli utenti e Office 365. La qualità bassa può portare a un'esperienza utente errata e a un uso più basso. Vedere i [report di Office 365 nell'interfaccia di amministrazione-attività degli utenti di Microsoft teams](https://support.office.com/article/Office-365-Reports-in-the-Admin-Center-Microsoft-Teams-user-activity-07f67fc4-c0a4-4d3f-ad20-f40c7f6db524) (tempo di lettura stimato 5 minuti) per altre informazioni sui report sull'utilizzo.\n\nLa gestione della qualità esula dall'ambito di questo corso di formazione, ma Vedi il materiale di formazione seguente:\n\n-   [Gestire il servizio](https://docs.microsoft.com/MicrosoftTeams/1-drive-value-operate-my-service)\n"
 - title: Passaggi successivi
   durationInMinutes: 1
   content: >-
@@ -95,7 +96,7 @@ items:
 
     -   Requisiti per i servizi di audioconferenza
 
-    -   Report
+    -   Reporting
 
 
     ### <a name="next-steps"></a>Passaggi successivi
