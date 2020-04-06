@@ -8,7 +8,6 @@ author: LolaJacobsen
 ms.author: lolaj
 audience: admin
 manager: serdars
-ms.date: 03/19/2019
 ms.service: msteams
 f1.keywords:
 - NOCSH
@@ -19,17 +18,18 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 756ff8d15ec58426b73504fcb240068151eabcd7
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c272ce29a73b66af2eee03a04469a90b1e34bf64
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42205411"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43141039"
 ---
 <div id="main" class="v2">
     <div class="container">
         <h1>Workshop di pianificazione dell'aggiornamento a Teams</h1>
            <p>Vogliamo fornire ai nostri clienti importanti di Skype for Business tutto il necessario nel percorso di aggiornamento a Teams. È disponibile una serie di workshop interattivi sulla pianificazione dell'aggiornamento in cui forniremo indicazioni, condivideremo procedure consigliate e risorse progettate per aiutare gli utenti a pianificare e implementare l'aggiornamento a Teams. Per un'esperienza ottimale, iniziare con la sessione<strong>Pianificare l'aggiornamento</strong> qui sotto.
+           <p>Per visualizzare questi workshop in tempo reale, guardare i video dedicati alla <a href="https://aka.ms/UpgradeOnDemand"target="_blank">pianificazione dell'aggiornamento a Teams</a> su YouTube.
             <p>Nuovo utente Teams? Altre informazioni sono disponibili <a href="https://docs.microsoft.com/microsoftteams/teams-overview">qui</a>.
         <ul class="pivots">
             <li>

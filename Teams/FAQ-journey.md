@@ -1,5 +1,5 @@
 ---
-title: Domande frequenti - Aggiornamento da Skype for Business a Microsoft Teams
+title: Domande frequenti sull'aggiornamento da Skype for Business a Teams
 author: lanachin
 ms.author: v-lanac
 manager: serdars
@@ -12,18 +12,20 @@ localization_priority: Priority
 search.appverid: MET150
 f1.keywords:
 - CSH
-ms.custom: Teams-upgrade-guidance
+ms.custom:
+- Teams-upgrade-guidance
+- seo-marvel-mar2020
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a2b051efa327a014bc719753e7aecae81f78e0f4
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+ms.openlocfilehash: 44544e440d9f6cdfff08ae66ed7f425abf69fb4d
+ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160383"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "43136536"
 ---
 # <a name="faq--upgrading-from-skype-for-business-to-microsoft-teams"></a>Domande frequenti - Aggiornamento da Skype for Business a Microsoft Teams
 
@@ -112,7 +114,7 @@ Microsoft offre anche workshop interattivi dal vivo in cui vengono condivise lin
 
 ### <a name="my-organization-is-already-running-teams-alongside-skype-for-business-can-i-just-disable-skype-for-business"></a>L'organizzazione sta già usando Teams insieme a Skype for Business. È possibile disabilitare semplicemente Skype for Business?
 
-No, è preferibile passare agli utenti alla modalità **Solo Teams** per completare l'aggiornamento a Teams. Se l'organizzazione è pronta per l'aggiornamento ai Teams, prendersi il tempo per comunicare agli utenti cosa sta succedendo e permettere loro di abituarsi gradualmente a Teams. Questo contribuirà a garantire un'esperienza di aggiornamento positiva e a ridurre le chiamate all'help desk. Per modelli di comunicazione di esempio, scaricare il [kit per il successo dell'aggiornamento](https://aka.ms/UpgradeSuccessKit).
+No, è preferibile passare agli utenti alla modalità **Solo Teams** per completare l'aggiornamento a Teams. Se l'organizzazione è pronta per l'aggiornamento a Teams, è bene comunicare agli utenti cosa sta succedendo e concedere loro il tempo per abituarsi gradualmente a Teams. Questo contribuirà a garantire un'esperienza di aggiornamento positiva e a ridurre le chiamate all'help desk. Per modelli di comunicazione di esempio, scaricare il [kit per il successo dell'aggiornamento](https://aka.ms/UpgradeSuccessKit).
 
 ### <a name="who-can-i-contact-if-i-have-questions-about-the-upgrade-process"></a>A chi ci si può rivolgere per domande sul processo di aggiornamento?
 
@@ -130,7 +132,7 @@ Dopo l'aggiornamento degli utenti a Teams (modalità **Solo Teams**):
 
 - Le riunioni di Skype for Business programmate prima dell'aggiornamento funzioneranno come previsto, ma tutte le nuove riunioni verranno programmate in Teams.
 
-- Se gli utenti provano ad accedere a Skype for Business, riceveranno dal client la notifica che sono stati aggiornati a Teams.
+- Se gli utenti provano ad accedere a Skype for Business, riceveranno dal client la notifica dell'avvenuto aggiornamento a Teams.
 
 - Gli utenti dovranno disinstallare manualmente il client di Skype for Business nel dispositivo mobile.
 
