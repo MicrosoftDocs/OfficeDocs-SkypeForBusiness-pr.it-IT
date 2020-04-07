@@ -18,18 +18,17 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c272ce29a73b66af2eee03a04469a90b1e34bf64
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 38960039c34c8fae0838b07ebea5b9581b63c297
+ms.sourcegitcommit: c70778ea3a29834f62e6ef96053b5540803acc6a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141039"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43153294"
 ---
 <div id="main" class="v2">
     <div class="container">
         <h1>Workshop di pianificazione dell'aggiornamento a Teams</h1>
-           <p>Vogliamo fornire ai nostri clienti importanti di Skype for Business tutto il necessario nel percorso di aggiornamento a Teams. È disponibile una serie di workshop interattivi sulla pianificazione dell'aggiornamento in cui forniremo indicazioni, condivideremo procedure consigliate e risorse progettate per aiutare gli utenti a pianificare e implementare l'aggiornamento a Teams. Per un'esperienza ottimale, iniziare con la sessione<strong>Pianificare l'aggiornamento</strong> qui sotto.
-           <p>Per visualizzare questi workshop in tempo reale, guardare i video dedicati alla <a href="https://aka.ms/UpgradeOnDemand"target="_blank">pianificazione dell'aggiornamento a Teams</a> su YouTube.
+           <p>Vogliamo fornire ai nostri clienti importanti di Skype for Business tutto il necessario nel percorso di aggiornamento a Teams. È disponibile una serie di workshop interattivi sulla pianificazione dell'aggiornamento in cui forniremo indicazioni, condivideremo procedure consigliate e risorse progettate per aiutare gli utenti a pianificare e implementare l'aggiornamento a Teams. Per un'esperienza ottimale, iniziare con la sessione<strong>Pianificare l'aggiornamento</strong> qui sotto. Per visualizzare questi workshop in tempo reale, guardare i video dedicati all'<a href="https://aka.ms/UpgradeOnDemand"target="_blank">Aggiornamento a Microsoft Teams</a> su YouTube.
             <p>Nuovo utente Teams? Altre informazioni sono disponibili <a href="https://docs.microsoft.com/microsoftteams/teams-overview">qui</a>.
         <ul class="pivots">
             <li>
