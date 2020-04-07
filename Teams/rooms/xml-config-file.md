@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 ms.custom: seo-marvel-mar2020
 description: Gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft teams rooms, incluso l'applicazione di un tema personalizzato e la creazione di un file di impostazioni master.
-ms.openlocfilehash: 988fa11ef3a84c21bfef3a726e3901bae26e222a
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 0334b9de7759885b6bf00dae7a6418b3c381c68f
+ms.sourcegitcommit: 0fdc60840f45ff5b0a39a8ec4a21138f6cab49c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140989"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43160070"
 ---
 # <a name="manage-a-microsoft-teams-rooms-console-settings-remotely-with-an-xml-configuration-file"></a>Gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML
 
@@ -44,6 +44,7 @@ Qualsiasi editor di testo può essere usato per creare un file di impostazioni. 
         <ConfigureDomain>domain1, domain2</ConfigureDomain>
     </UserAccount>
     <IsTeamsDefaultClient>false</IsTeamsDefaultClient>
+    <ModernAuthEnabled>false</ModernAuthEnabled>
     <BluetoothAdvertisementEnabled>true</BluetoothAdvertisementEnabled>
     <SkypeMeetingsEnabled>false</SkypeMeetingsEnabled>
     <TeamsMeetingsEnabled>true</TeamsMeetingsEnabled>
@@ -91,6 +92,7 @@ Se un valore variabile è di tipo errato, gli elementi non sono in ordine, gli e
 | \<ConfigureDomain\>  |&#x2778; di stringa  ||È possibile elencare diversi domini, separati da virgole. |
 |\<TeamsMeetingsEnabled\> |&#x2777; booleani  |Primo &#x2776;  |Disabilitata per impostazione predefinita. <br/> <br/> Il file XML viene considerato male formato se sia \<SkypeMeetingsEnabled\> che\<TeamsMeetingsEnabled\> sono disabilitati, ma è accettabile che entrambe le impostazioni siano abilitate in contemporanea. |
 |\<> IsTeamsDefaultClient |&#x2777; booleani  |Primo &#x2776;  |Disabilitata per impostazione predefinita. |
+|\<> ModernAuthEnabled |&#x2777; booleani  |Primo &#x2776;  |Disabilitata per impostazione predefinita. <br/> <br/>Quando è impostato su true, l'applicazione Microsoft teams Rooms usa solo l'autenticazione moderna per la connessione alle risorse e non rientra nell'autenticazione di base.|
 |\<> BluetoothAdvertisementEnabled |&#x2777; booleani  |Primo &#x2776;  |Abilitato per impostazione predefinita. |
 |\<DualScreenMode\>  |&#x2777; booleani  |Primo &#x2776;  |Se true, la modalità dual screen è abilitata. In caso contrario, il dispositivo usa la modalità a schermo singolo. |
 | \<DuplicateIngestDefault\> |&#x2777; booleani  |Primo &#x2776; |Se true, il contenuto viene visualizzato in entrambe le schermate in modalità dual screen, quando non è presente una riunione. | 

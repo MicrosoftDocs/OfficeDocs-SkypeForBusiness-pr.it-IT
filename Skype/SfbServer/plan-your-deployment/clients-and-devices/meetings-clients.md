@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 31e95e16-f79f-46c6-b123-973fa56a824e
 description: "Riepilogo: i professionisti IT devono esaminare i requisiti di supporto per l'app Skype for Business Web App e Skype Meetings durante la pianificazione di Skype for Business Server. Questo articolo non è destinato agli utenti di queste app."
-ms.openlocfilehash: 77633b53c44e28301b21cc2f37240a4a1e459938
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: f5b402b23cbb49d1605b83b9f54531e26714b1f7
+ms.sourcegitcommit: 25e70de7c943e22fe6ac6e8d6b4353ca68f81f83
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42013449"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43157639"
 ---
 # <a name="plan-for-meetings-clients-web-app-and-meetings-app"></a>Pianificare i client di riunioni (app per le riunioni e le app Web)
  
@@ -65,7 +65,7 @@ Per utilizzare l'app Web di Skype for business, un utente deve disporre di una d
    
 &#x2776; il plug-in del browser di Skype for Business Web App richiede un plug-in di condivisione specifico per l'utilizzo di funzionalità vocali, video, condivisione e visualizzazione della condivisione dello schermo in continuo e altre caratteristiche. A un partecipante alla riunione viene data la possibilità di installare il plug-in di condivisione quando partecipano alla riunione o quando avviano una di queste funzionalità. In Windows 8 e Windows 8,1, è possibile installare il plug-in di condivisione solo se è in esecuzione Internet Explorer 10 o Internet Explorer 11 per il desktop. Queste funzionalità non sono disponibili con le versioni non desktop di Internet Explorer 10 e 11. Si noti che Firefox e Safari versione 12,0 e versioni successive non sono più supportati.
   
-&#x2777; sui sistemi operativi Windows 7, Windows Server 2008 R2 e Macintosh supportati, sono disponibili tutte le funzionalità, tra cui voce, video, visualizzazione applicazioni, condivisione applicazioni, visualizzazione desktop e condivisione desktop. Per utilizzare queste funzionalità, è necessario installare un plug-in quando richiesto. Si noti che Mac OS X versione 10,7 non è più supportato.
+&#x2777; sui sistemi operativi Windows 7, Windows Server 2008 R2 e Macintosh supportati, sono disponibili tutte le funzionalità, tra cui voce, video, visualizzazione applicazioni, condivisione applicazioni, visualizzazione desktop e condivisione desktop. Per utilizzare queste funzionalità, è necessario installare un plug-in quando richiesto. Si noti che Mac OS X versione 10,7 non è più supportato.  Si noti inoltre che l'applicazione Web non verrà installata su OS X 10,15 o versioni successive.  È consigliabile utilizzare la versione più recente di Skype for business per Mac, che supporta gli scenari di join anonimi in avanti.
   
 &#x2778; l'accesso all'app Web da Chrome su Windows lancerà un piccolo programma che carica l'app Web in un frame Internet Explorer incorporato. Questo programma richiede la corretta installazione di una delle versioni supportate di Internet Explorer per l'applicazione Web.
   

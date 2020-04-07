@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come creare e gestire i dial plan (PSTN Calling dial plans) e su come gestirli.
-ms.openlocfilehash: 774b0a78f39b91b634ed0833be3497935cb25c4f
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 6a5f46772ed8eebb309ba8bd9eaeca6fddb35afa
+ms.sourcegitcommit: 0fdc60840f45ff5b0a39a8ec4a21138f6cab49c9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826924"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43160080"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare piani di chiamata
 
@@ -50,7 +50,7 @@ Dopo aver pianificato i dial plan per l'organizzazione e aver individuato tutte 
     > [!NOTE]
     > Teams attraversa l'elenco delle regole di normalizzazione dall'alto verso il basso e usa la prima regola che corrisponde al numero selezionato. Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, verificare che le regole più restrittive siano ordinate sopra quelle meno restrittive.
 
-6. Fai clic su **Salva**.
+6. Fare clic su **Salva**.
 7. Se si vuole testare il dial plan, in **dial plan di prova**immettere un numero di telefono e quindi fare clic su **test**.
 
 ### <a name="edit-a-dial-plan"></a>Modificare un dial plan
@@ -61,11 +61,11 @@ Dopo aver pianificato i dial plan per l'organizzazione e aver individuato tutte 
 
 ### <a name="add-users-to-a-dial-plan"></a>Aggiungere utenti a un dial plan
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **Voice** > **dial plan**.
-2. Selezionare il dial plan facendo clic a sinistra del nome del dial plan.
-3. Selezionare **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
-5. Al termine dell'aggiunta di utenti, selezionare **applica**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**.
+2. Selezionare l'utente facendo clic sul nome visualizzato.
+3. Selezionare la scheda **criteri** .
+4. Fare clic su **modifica** a destra dei criteri assegnati.
+5. Nel menu a discesa **dial plan** selezionare il dial plan che si vuole assegnare all'utente e quindi fare clic su **applica**.
 
 ## <a name="using-powershell"></a>Utilizzo di PowerShell
   
@@ -248,4 +248,4 @@ New-CsTenantDialPlan -Identity $dp.SimpleName -ExternalAccessPrefix $dp.External
 - [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 - [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 - [Etichetta Disclaimer per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
-- [Panoramica di PowerShell Teams](teams-powershell-overview.md)
+- [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
