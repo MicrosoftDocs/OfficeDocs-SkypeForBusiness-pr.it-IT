@@ -17,12 +17,12 @@ description: Informazioni su come gestire le app teams nella pagina Manage Apps 
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: 532129792dd35a2b016510094f1b08beade1b32a
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 5e261dfd6f23ec298e354a7732a9a1afa9d6b22e
+ms.sourcegitcommit: f3390e27bb63b66d1c4fb4f8afbda6b814fbbb5b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43136846"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170554"
 ---
 <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia di amministrazione di Microsoft Teams
 ======================================================
@@ -68,6 +68,9 @@ La pagina **Gestisci app** è la posizione in cui puoi consentire o bloccare sin
 Per consentire o bloccare un'app, selezionarla e quindi fare clic su **Consenti** o **blocca**. Quando blocchi un'app, tutte le interazioni con l'app sono disabilitate e l'app non viene visualizzata in teams per tutti gli utenti dell'organizzazione.
 
 Quando blocchi o Consenti un'app nella pagina **Gestisci** app, questa app è bloccata o consentita per tutti gli utenti dell'organizzazione.  Quando blocchi o Consenti un'app in un criterio di autorizzazione dell'app teams, è bloccata o consentita per gli utenti a cui è stato assegnato il criterio. Affinché un utente sia in grado di installare e interagire con qualsiasi app, devi consentire l'app a livello di organizzazione nella pagina **Gestisci** app e nei criteri di autorizzazione dell'app assegnati all'utente.
+
+ > [!NOTE]
+ > Per disinstallare un'app, fai clic con il pulsante destro del mouse sull'app e quindi fai clic su **Disinstalla** o usa il menu **Altre app** sul lato sinistro. 
 
 ## <a name="manage-org-wide-app-settings"></a>Gestire le impostazioni dell'app a livello di organizzazione
 
