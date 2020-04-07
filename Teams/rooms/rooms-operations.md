@@ -13,12 +13,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Leggere questo argomento per informazioni sulla gestione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: 5368df53e7617f602265071a66f7b871c6b88f66
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 1fecf852c11e7ab89e0cdc7dc6caf615182e7d5f
+ms.sourcegitcommit: 25e70de7c943e22fe6ac6e8d6b4353ca68f81f83
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825870"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43157760"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Manutenzione e operazioni di Microsoft teams rooms 
  
@@ -31,10 +31,10 @@ Con la configurazione aggiuntiva, la gestione remota è possibile usando Microso
 ## <a name="collecting-logs-on-microsoft-teams-rooms"></a>Raccolta di registri in Microsoft teams rooms
 <a name="Logs"> </a>
 
-Per raccogliere i log, è necessario richiamare lo script di raccolta log fornito con l'app Microsoft teams rooms. In modalità amministratore avviare un prompt dei comandi con privilegi elevati ed eseguire il comando seguente:
+Per raccogliere i log, è necessario richiamare lo script di raccolta log fornito con l'app Microsoft teams rooms. In modalità amministratore avviare un prompt di PowerShell con privilegi elevati ed eseguire il comando seguente:
   
 ```PowerShell
-powershell -ExecutionPolicy unrestricted c:\rigel\x64\scripts\provisioning\ScriptLaunch.ps1 CollectSrsV2Logs.ps1
+c:\rigel\x64\scripts\provisioning\ScriptLaunch.ps1 CollectSrsV2Logs.ps1 -ExecutionPolicy unrestricted
 ```
 
 I log verranno emessi come file ZIP in c:\rigel.
@@ -84,7 +84,7 @@ In questa sezione vengono illustrate le impostazioni di sistema di cui le sale d
 Il trasferimento di file tramite criteri di gruppo è illustrato in [configurare un elemento del file](https://technet.microsoft.com/library/cc772536%28v=ws.11%29.aspx).
 
 > [!NOTE]
-> Quando il dispositivo Microsoft teams Rooms è compatibile con la versione successiva del sistema operativo Windows 10, il dispositivo viene aggiornato automaticamente alla versione successiva tramite Windows Update. Il dispositivo Microsoft teams Rooms non deve essere aggiornato manualmente alla prossima versione di Windows 10 o tramite l'abilitazione dei criteri di gruppo di Windows Update for business (WUFB) "Seleziona il livello di conformità di Windows per gli aggiornamenti che vuoi ricevere" e "Seleziona quando si compila l'anteprima e Gli aggiornamenti delle caratteristiche vengono ricevuti tramite GPO. Un dispositivo con questi criteri di gruppo abilitato è noto per l'esecuzione in problemi relativi all'aggiornamento del sistema operativo Windows 10 dall'app Microsoft teams rooms.
+> Quando il dispositivo Microsoft teams Rooms è compatibile con la versione successiva del sistema operativo Windows 10, il dispositivo viene aggiornato automaticamente alla versione successiva tramite Windows Update. Il dispositivo Microsoft teams Rooms non deve essere aggiornato manualmente alla prossima versione di Windows 10 o tramite l'abilitazione dei criteri di gruppo di Windows Update for business (WUFB) "Seleziona il livello di conformità di Windows per gli aggiornamenti che vuoi ricevere" e "Seleziona quando vengono ricevuti gli aggiornamenti di anteprima e di funzionalità" tramite GPO. Un dispositivo con questi criteri di gruppo abilitato è noto per l'esecuzione in problemi relativi all'aggiornamento del sistema operativo Windows 10 dall'app Microsoft teams rooms.
 
 ## <a name="remote-management-using-powershell"></a>Gestione remota tramite PowerShell
 <a name="RemotePS"> </a>

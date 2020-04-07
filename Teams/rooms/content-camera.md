@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 ms.custom: seo-marvel-mar2020
 description: Usare una videocamera di contenuto in una sala Microsoft teams, che interagisce con il software di elaborazione delle immagini per consentire ai relatori di disegnare su una lavagna analogica.
-ms.openlocfilehash: 6ddc1a43a9d75e6f142c82c0215124bad97f77dd
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: ecd9c20c7f479c548d0ab9b4c3db8bbec945e79f
+ms.sourcegitcommit: 25e70de7c943e22fe6ac6e8d6b4353ca68f81f83
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137626"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43157809"
 ---
 # <a name="content-cameras"></a>Videocamere di contenuto
 
@@ -102,6 +102,4 @@ Puoi anche modificare queste impostazioni in remoto usando un [file di configura
 
 [Requisiti di Microsoft teams rooms](requirements.md)
 
-> [!NOTE]
-> Alcuni dispositivi della sala Microsoft teams che hanno console basate su Microsoft Surface Pro (ad esempio Logitech SmartDock e Crestron SR) non supportano ancora la fotocamera del contenuto. Il supporto per questi dispositivi verrà aggiunto più avanti in CY2019. 
->
+

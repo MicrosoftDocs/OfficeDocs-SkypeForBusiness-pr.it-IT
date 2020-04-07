@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e777ef76f6c8f11dfd914b3c4be149c224b63cf5
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 922489b421a819554ae680cf70ab2df6a21b2aed
+ms.sourcegitcommit: 25e70de7c943e22fe6ac6e8d6b4353ca68f81f83
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139095"
+ms.lasthandoff: 04/06/2020
+ms.locfileid: "43157629"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
@@ -81,6 +81,12 @@ L'applicazione desktop Microsoft teams supporta AppLocker.  Per altre informazio
 ## <a name="compliance"></a>Conformità
 
 Teams offre una vasta gamma di informazioni utili per le aree di conformità, tra cui conformità delle comunicazioni per canali, chat e allegati, criteri di conservazione, protezione dalla perdita dei dati (DLP), eDiscovery e blocco legale per canali, chat e file, ricerca nel log di controllo e gestione delle applicazioni per dispositivi mobili con Microsoft Intune. Sono state fornite informazioni su tutti questi argomenti e si può visitare il centro [conformità Microsoft 365](https://compliance.microsoft.com) o [Office 365 Security & Compliance Center](https://protection.microsoft.com) per gestire queste impostazioni.
+
+### <a name="information-barriers"></a>Barriere informative
+
+Gli ostacoli alle informazioni sono criteri messi sul posto dagli amministratori dei team per fare in modo che le persone o i gruppi possano comunicare tra loro (quando non c'è bisogno di un'azienda per farlo o un motivo normativo per impedirne l'esecuzione) e consente inoltre di impostare i criteri relativi a elementi come ricerche e eDiscovery (descritti di seguito). Questi criteri possono influire sugli utenti in chat di 1:1, chat di gruppo o a livello di team.
+
+Per ulteriori informazioni su questo argomento, vedere [barriere informative in Microsoft teams](information-barriers-in-teams.md).
 
 ### <a name="communication-compliance"></a>Conformità delle comunicazioni
 
