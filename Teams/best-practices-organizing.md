@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e8f6335edde67fcc00e68b6aa42b3100afa603c9
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 621bb6328ab4ea59caa18d27fe7196a25ee15157
+ms.sourcegitcommit: 1c2cef3deb384216bf0a89628573a277ee6e3e2b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43136876"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43174918"
 ---
 <a name="best-practices-for-organizing-teams-in-microsoft-teams"></a>Procedure consigliate per l'organizzazione dei team in Microsoft Teams
 ======================================================
@@ -31,9 +31,7 @@ I team sono gruppi di persone che si riuniscono attorno a un obiettivo comune. Q
 
 Prima di creare un team, considerare l'obiettivo, il progetto o gli elementi di lavoro e chi nell'organizzazione può portare a termine tale compito in maniera collaborativa. Una volta identificati questi elementi, aggiungere il gruppo di persone scelto a un team per avviare la collaborazione. Poiché i membri possono cambiare nel corso del tempo, è consigliabile designare più proprietari per ogni team. Per altre informazioni, vedere [Gestione dei team](https://support.office.com/article/Teams-and-Channels-df38ae23-8f85-46d3-b071-cb11b9de5499).
 
-Ecco un breve video che illustra alcuni esempi su come strutturare i team con un unico obiettivo o con membri di diverse organizzazioni:
-
-> [!VIDEO https://youtu.be/XAowXcmQ-kA]
+La [playlist video](https://www.youtube.com/playlist?list=PLXPr7gfUMmKwYKFSqoPN-aHQppI7rRQLf) di Microsoft teams offre altre informazioni per la creazione e la gestione di team.
 
 ## <a name="add-teams-gradually"></a>Aggiungere gradualmente i team
 
@@ -41,11 +39,11 @@ Per la prima distribuzione di Teams, è consigliabile iniziare con un numero ris
 
 ## <a name="create-channels-to-focus-discussions"></a>Creare canali per concentrarsi sulle discussioni
 
-Dopo aver creato il team, è consigliabile iniziare a pensare ai diversi progetti e tipi di conversazioni che è necessario supportare. Creare dei canali iniziali in modo che gli utenti sappiano dove poter collaborare e trovare le conversazioni esistenti. Usare nomi descrittivi per i canali per consentire agli utenti di orientarsi tra le varie conversazione. Aggiungere strumenti (come OneNote, Power BI o Planner) come schede a un canale affinché gli utenti abbiano tutto il necessario direttamente nel canale. Inoltre, è possibile aggiungere a un canale una pagina Web usata frequentemente come scheda. 
+Dopo aver creato il team, è consigliabile iniziare a pensare ai diversi progetti e tipi di conversazioni che è necessario supportare. Creare dei canali iniziali in modo che gli utenti sappiano dove poter collaborare e trovare le conversazioni esistenti. Usare nomi descrittivi per i canali per consentire agli utenti di orientarsi tra le varie conversazione. Aggiungere strumenti (come OneNote, Power BI o Planner) come schede a un canale affinché gli utenti abbiano tutto il necessario direttamente nel canale. Inoltre, è possibile aggiungere a un canale una pagina Web usata frequentemente come scheda.
 
-Con questi suggerimenti rapidi per utenti finali è possibile scoprire di più sul [lavoro in team](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499#ID0EAABAAA=Work_in_teams). 
+Con questi suggerimenti rapidi per utenti finali è possibile scoprire di più sul [lavoro in team](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499#ID0EAABAAA=Work_in_teams).
 
-Procedura consigliata: creare team con un maggior numero di membri e canali. Ridurre al minimo il numero di team che richiedono la partecipazione di una sola persona. I canali all'interno di un team dovrebbero essere considerati come argomenti o sequenze di lavoro per aiutare il team a organizzare le proprie attività per realizzare gli obiettivi in comune. Non c'è un numero specifico di canali da creare consigliato. Ogni team deve creare i canali in base al proprio lavoro, alle priorità e allo stile. 
+Procedura consigliata: creare team con un maggior numero di membri e canali. Ridurre al minimo il numero di team che richiedono la partecipazione di una sola persona. I canali all'interno di un team dovrebbero essere considerati come argomenti o sequenze di lavoro per aiutare il team a organizzare le proprie attività per realizzare gli obiettivi in comune. Non c'è un numero specifico di canali da creare consigliato. Ogni team deve creare i canali in base al proprio lavoro, alle priorità e allo stile.
 
 Usare i canali standard per le conversazioni a cui possono partecipare tutti i membri del team. Sfruttare i [canali privati di Teams](private-channels.md) se, invece, è necessario un spazio di collaborazione dedicato a un determinato gruppo di membri.
 
@@ -64,12 +62,11 @@ Non è possibile rimuovere, rinominare o rimuovere dai preferiti il canale gener
 
 Per altre informazioni, consultare la scheda **Lavorare nei canali** nella pagina [Team e canali](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499#ID0EAABAAA=Work_in_channels).
 
-
-
 ## <a name="consider-setting-up-moderation-in-your-channels"></a>Considerare la configurazione della moderazione nei canali
 
 I proprietari del team possono abilitare la moderazione in un canale per controllare chi può creare nuovi post e rispondere ai post nel canale. Durante la configurazione della moderazione, è possibile scegliere uno o più membri del team come moderatori (i proprietari del team sono moderatori per impostazione predefinita). Per altre informazioni, vedere [Configurare e gestire la moderazione dei canali in Microsoft Teams](manage-channel-moderation-in-teams.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Creare un team a livello di organizzazione in Teams](create-an-org-wide-team.md)
+- [Creare un team a livello di organizzazione in Teams](create-an-org-wide-team.md)
+- [Limiti e specifiche per Microsoft Teams](limits-specifications-teams.md)
