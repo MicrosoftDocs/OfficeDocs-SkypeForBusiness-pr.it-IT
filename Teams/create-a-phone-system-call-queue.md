@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 description: Informazioni su come configurare il sistema telefonico per le code delle chiamate cloud con Microsoft teams.
-ms.openlocfilehash: fc958aa1713a7cda12a054b3a029bfc1786b0955
-ms.sourcegitcommit: 92a278c0145798266ecbe052e645b2259bcbd62d
+ms.openlocfilehash: 2027658c5335f19c00ea1c8e44c6d38e1f16a730
+ms.sourcegitcommit: 9a448104a76857e3aa464c53cec577d813f8f414
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42897240"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43184240"
 ---
 # <a name="create-a-cloud-call-queue"></a>Creare una coda di chiamata cloud
 
@@ -49,11 +49,9 @@ Tutte le chiamate nella coda vengono inviate agli agenti da uno dei metodi segue
 - Con il routing seriale, la prima chiamata nella coda squilla tutti gli agenti di chiamata uno alla volta.
 - Con Round Robin, il routing delle chiamate in arrivo è bilanciato in modo che ogni agente di chiamata ottenga lo stesso numero di chiamate dalla coda.
 
-    > [!NOTE]
-    > Gli agenti di chiamata **offline**, hanno impostato la loro presenza su non **disturbare** o hanno scelto di non ricevere chiamate nella coda di chiamata.
+Puoi impostare le opzioni di gestione delle chiamate, ad esempio l'opzione di opt-in/opt-out, il routing basato sulla presenza, il tempo di attesa delle chiamate e le opzioni di timeout delle chiamate con uno dei metodi descritti sopra.
 
-- Solo una notifica di chiamata in arrivo (per la chiamata a capo della coda) alla volta passa agli agenti di chiamata.
-- Una volta che un agente di chiamata accetta la chiamata, la prossima chiamata in arrivo in coda viene segnalata agli agenti di chiamata.
+Solo una notifica di chiamata in arrivo (per la chiamata a capo della coda) alla volta passa agli agenti di chiamata. Una volta che un agente di chiamata accetta la chiamata, la prossima chiamata in arrivo in coda viene segnalata agli agenti di chiamata.
 
 > [!NOTE]
 > Questo articolo si applica sia a Microsoft teams che a Skype for business online.
@@ -164,7 +162,7 @@ precedente musica in**attesa** è possibile usare la musica predefinita in attes
 
 ### <a name="select-the-call-answering-options"></a>Selezionare le opzioni di segreteria telefonica
 
-![Screenshot delle opzioni di segreteria telefonica](media/5d249515-d532-4af2-90da-011404028b89.png) 
+![Screenshot delle opzioni di segreteria telefonica](media/teams-cq-call-answering-options.png)
 
 ![Icona del numero 1, fa riferimento a un callout nello screenshot](media/teamscallout1.png)
 precedente**chiamare agenti e gruppi** per aggiungere singoli agenti direttamente, senza aggiungerli a un gruppo, fare clic su **Aggiungi utenti**. Inserire singoli agenti nell'ordine in cui si vuole che ricevano la chiamata. È possibile aggiungere fino a 20 singoli agenti (per aggiungere più di 20, inserirli in un gruppo).
@@ -177,9 +175,9 @@ Le chiamate vengono instradate prima a singoli agenti, quindi agli agenti in gru
 - Gruppo di sicurezza
 - Elenco di distribuzione
 
-Gli agenti di chiamata selezionati devono essere: 
+Gli agenti di chiamata selezionati devono essere uno dei seguenti:
 
-- Utenti online con licenza di sistema telefonico e VoIP aziendale abilitato 
+- Utenti online con licenza di sistema telefonico e VoIP aziendale abilitato
 - Utenti online con un piano per le chiamate
 - Utenti di Skype for Business Server locale
 
@@ -197,9 +195,17 @@ Gli agenti di chiamata selezionati devono essere:
 
 - Il **routing degli assistenti** fa sì che la prima chiamata nella coda squilli tutti gli agenti di chiamata contemporaneamente. Il primo agente di chiamata a prendere la chiamata riceve la chiamata.
 - **Routing seriale** le chiamate in arrivo squillano tutti gli agenti di chiamata uno alla volta, dall'inizio dell'elenco agente chiamate. Non è possibile ordinare gli agenti nell'elenco agente chiamate. Se un agente respinge o non prende una chiamata, la chiamata suonerà l'agente successivo e proverà tutti gli agenti finché non viene prelevato o non viene ritirato.
-  > [!NOTE]
-  > Con il routing seriale, per gli agenti **offline** o che hanno impostato la loro presenza su **non disturbare**, la chiamata verrà instradata a tali utenti e non riesce a connettere l'utente non disponibile, il routing all'agente successivo nell'elenco degli agenti. Questo non è il caso se l'agente ha **scelto** di ricevere chiamate dalla coda di chiamata. Per ridurre l'intervallo di tempo che la chiamata instrada all'agente successivo in linea, il tempo di avviso dell'agente può essere ridotto.
 - **Round Robin** bilancia il routing delle chiamate in arrivo in modo che ogni agente di chiamata ottenga lo stesso numero di chiamate dalla coda. Questo potrebbe essere auspicabile in un ambiente di vendita in entrata per assicurare la parità di opportunità tra tutti gli agenti di chiamata.
+
+![Icona del numero 3, fa riferimento a un callout](media/teamscallout3.png)
+**nello screenshot precedente** il routing basato sulla presenza del routing basato sul posizionamento usa lo stato di disponibilità degli agenti di chiamata per determinare se un agente deve essere incluso nell'elenco di routing delle chiamate per il metodo di routing selezionato. Gli agenti di chiamata il cui stato di disponibilità è impostato su **disponibile** sono inclusi nell'elenco di routing delle chiamate e possono ricevere chiamate. Gli agenti il cui stato di disponibilità è impostato su qualsiasi altro stato sono esclusi dall'elenco di routing delle chiamate e non ricevono le chiamate finché il loro stato di disponibilità non torna a **disponibile**.
+
+Puoi abilitare il routing delle chiamate basate sulla presenza con uno dei metodi di routing.
+
+Se un agente sceglie di ricevere chiamate, non verrà incluso nell'elenco di routing delle chiamate, indipendentemente dal tipo di stato di disponibilità impostato.
+
+> [!CAUTION]
+> Gli agenti che usano il client Skype for business non sono inclusi nell'elenco di routing delle chiamate quando è abilitato il routing basato sulla presenza, indipendentemente dallo stato di disponibilità. Gli agenti che non sono presenti nell'elenco di routing delle chiamate non ricevono chiamate. Se si hanno agenti che usano Skype for business, non abilitare il routing delle chiamate basate sulla presenza.
 
 ### <a name="select-an-agent-opt-out-option"></a>Selezionare un'opzione di opt-out per l'agente
 
