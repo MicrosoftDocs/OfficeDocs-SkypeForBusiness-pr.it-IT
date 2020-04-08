@@ -95,7 +95,6 @@
 ### [Gestire le impostazioni di Teams per l'organizzazione](enable-features-office-365.md)
 ### [Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams](manage-teams-skypeforbusiness-admin-center.md).
 ### [Gestire Teams nell'Interfaccia di amministrazione di Microsoft Teams](manage-teams-in-modern-portal.md)
-### [Gestire la versione gratuita di Teams](manage-freemium.md)
 ### [Assegnare proprietari e membri dei team in Teams](assign-roles-permissions.md)
 ### [Modificare le impostazioni utente di Teams in blocco](edit-user-settings-in-bulk.md)
 ### [Assegnare i criteri agli utenti](assign-policies.md)
@@ -753,6 +752,7 @@
 ### [Gestire la versione di valutazione di Office 365 G1](g1-trial-license.md)
 ### [Gestire l'offerta Teams Commercial Trial](iw-trial-teams.md)
 ### [Gestire l'esperienza di Teams Exploratory](teams-exploratory.md)
+### [Gestire la versione gratuita di Teams](manage-freemium.md)
 ### [Aggiornare Teams gratuitamente alla versione in abbonamento di Office 365](upgrade-freemium.md)
 ### [Gestione delle licenze per i criteri di messaggistica](teams-add-on-licensing/pri-message.md)
 ### [Licenza utente virtuale](teams-add-on-licensing/virtual-user.md)
