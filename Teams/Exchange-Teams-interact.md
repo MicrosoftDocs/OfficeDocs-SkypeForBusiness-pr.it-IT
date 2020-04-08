@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 68468455da96fc3b2790a832b6732d7211bd7733
-ms.sourcegitcommit: dc6108917392754d950cea47b92f871211bf4212
+ms.openlocfilehash: d97f92b56b4a3e38489b1f99f8ba25497485495f
+ms.sourcegitcommit: a610bfe9c0192432744dfaf8d5ff5c2bb5a16b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43131144"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43191243"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -36,7 +36,7 @@ Gli utenti ospitati in Exchange Online o Exchange dedicato a vNext possono usare
 
 Gli utenti ospitati in Exchange Online dedicato (legacy) devono essere sincronizzati con Azure Active Directory in Office 365. Possono creare e partecipare a team e canali, aggiungere e configurare schede e bot e usare le funzionalità di chat e chiamate. Tuttavia, non possono modificare le immagini del profilo, gestire le riunioni, accedere ai contatti di Outlook o gestire i connettori.
 
-Gli utenti con cassette postali ospitate in locale devono essere sincronizzati con Azure Active Directory. Possono usare tutte le funzionalità dello scenario precedente, ma possono anche modificare l'immagine del profilo utente (se i criteri delle cassette postali di Outlook sul Web lo consentono) e gestire le riunioni, fornendo Exchange Server 2016 (aggiornamento cumulativo 3) o versioni successive, in fase di creazione locale.
+Gli utenti con cassette postali ospitate in locale devono essere sincronizzati con Azure Active Directory. Possono usare tutte le funzionalità dello scenario precedente, ma possono anche modificare l'immagine del profilo utente (se i criteri delle cassette postali di Outlook sul Web lo consentono) e gestire le riunioni, fornendo Exchange Server 2016 (aggiornamento cumulativo 3) o versioni successive, in locale con OAuth configurato (preferibilmente tramite la configurazione guidata ibrida).
 
 La tabella seguente fornisce un utile riferimento rapido per la disponibilità delle caratteristiche in base all'ambiente Exchange.
 
@@ -48,7 +48,7 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 |**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Sì<sup>8</sup>|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
 |**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Sì<sup>8</sup>|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
 |**Exchange Online dedicato-legacy** (obbligatorio per la sincronizzazione con Azure ad)|Sì <sup>2</sup>|Sì <sup>2, 3</sup>|Sì <sup>4|Sì|No|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
-|**Exchange locale** (è necessario eseguire la sincronizzazione con Azure ad)|Sì <sup>2</sup>| Sì <sup>2, 3</sup> |Sì <sup>4|Sì|Sì (Exchange 2016 CU3 +)|Sì<sup>8</sup> (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
+|**Exchange locale** (è necessario eseguire la sincronizzazione con Azure ad & OAuth config)|Sì <sup>2</sup>| Sì <sup>2, 3</sup> |Sì <sup>4|Sì|Sì (Exchange 2016 CU3 +)|Sì<sup>8</sup> (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
 
 <sup>1</sup> Exchange 2016 CU3 e versioni successive supportate.  
 

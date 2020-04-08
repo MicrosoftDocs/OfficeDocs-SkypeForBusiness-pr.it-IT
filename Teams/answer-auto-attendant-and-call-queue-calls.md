@@ -19,17 +19,17 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d630ea41915cb89013e407a6fa0b1cc21cb21abf
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 80400d9e9d7ab1519a15ab299f07896f55342eaf
+ms.sourcegitcommit: a610bfe9c0192432744dfaf8d5ff5c2bb5a16b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137436"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43190870"
 ---
 <a name="answer-auto-attendant-and-call-queue-calls-directly-from-teams"></a>Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams
 ===========================================================
 
-Gli utenti del team possono ricevere e rispondere alle chiamate dagli operatori automatici del cloud e chiamare le code direttamente dal client teams. Per gli utenti di teams, la funzionalità operatore automatico è ora in generale disponibile e la funzionalità coda di chiamata è in anteprima. 
+Gli utenti del team possono ricevere e rispondere alle chiamate dagli operatori automatici del cloud e chiamare le code direttamente dal client teams.
 
 ## <a name="what-are-auto-attendants-and-call-queues"></a>Cosa sono gli operatori automatici e le code di chiamata?
 

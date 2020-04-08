@@ -13,12 +13,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Questo articolo illustra il supporto del ciclo di vita per le sale di Microsoft teams.
-ms.openlocfilehash: e5142d23d9f57a6ca50bcdb348378084afffd86b
-ms.sourcegitcommit: 1bb3df681177db5ecc6afae3d3f3a46c251e5c23
+ms.openlocfilehash: 27610cd7a7ed5c2bca1fcb118b3687149d2872d0
+ms.sourcegitcommit: a610bfe9c0192432744dfaf8d5ff5c2bb5a16b00
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43117524"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43190825"
 ---
 # <a name="microsoft-teams-rooms-app-version-support"></a>Supporto per la versione dell'app Microsoft teams rooms
  
@@ -59,7 +59,7 @@ La tabella seguente mostra le versioni consigliate e supportate di Windows 10 ve
 | 1709 |2018-01-18 |Non supportato                         |&#x2014; |&#x2014; |
 | 1703 |2017-07-11 |Non supportato                         |&#x2014; |&#x2014; |
 
-&#x2781; la versione di Windows 10 1809 non è consigliata a causa di problemi di compatibilità trovati con l'applicazione Microsoft teams rooms. Questo problema specifico fa in modo che l'applicazione sale di Microsoft teams non inizi dopo il riavvio notturno. Questo problema è stato risolto nella versione di Windows 10 1903.  
+&#x2780; Windows 10 versione 1809 non è consigliabile a causa di problemi di compatibilità trovati con l'applicazione Microsoft teams rooms. Questo problema specifico fa in modo che l'applicazione sale di Microsoft teams non venga avviata dopo il riavvio notturno. Questo problema è stato risolto in Windows 10 versione 1903.  
 
 Quando usi una versione supportata di Windows 10, otterrai sempre gli aggiornamenti delle applicazioni più recenti per l'app Microsoft teams rooms.  
 
