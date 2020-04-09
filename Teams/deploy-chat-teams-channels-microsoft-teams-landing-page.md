@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.quickstartteamsadmin
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f8259b8a06a4601ff7feebca53c06f268bdc08c5
-ms.sourcegitcommit: cfaae3ecbf853766de788b4825a86e04f68868ca
+ms.openlocfilehash: 0c6cd94f5d7205b438396dcb09ebb047a49b8f2e
+ms.sourcegitcommit: f3390e27bb63b66d1c4fb4f8afbda6b814fbbb5b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796019"
+ms.lasthandoff: 04/07/2020
+ms.locfileid: "43170594"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -97,6 +97,10 @@ L'accesso esterno, in precedenza noto come federazione, consente agli utenti di 
 ### <a name="guest-access"></a>Accesso guest
 
 L'accesso guest in Teams consente a utenti esterni all'organizzazione di accedere a team e canali. Le impostazioni di accesso guest consentono di controllare quali funzionalità possono essere usate o meno dagli utenti guest. L'accesso guest è disattivato per impostazione predefinita. Per altre informazioni, vedere [Accesso guest in Teams](https://docs.microsoft.com/microsoftteams/guest-access).
+
+> [!NOTE]
+> Per altre informazioni sull'accesso esterno e l'accesso guest, vedere [Comunicare con utenti di altre organizzazioni in Microsoft Teams](communicate-with-users-from-other-organizations.md)
+
 
 |Chiedersi|Azione |
 |------------|-------|
