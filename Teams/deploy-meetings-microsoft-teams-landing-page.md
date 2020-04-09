@@ -18,12 +18,12 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 11c3844540288bc94da445e4f13ed90b9a524f46
-ms.sourcegitcommit: f96d66d08a9d6993edbb9554738dc8236d901933
+ms.openlocfilehash: 7aee2a4a8e17480be9eb99b4504ef6967e6b2bb3
+ms.sourcegitcommit: a610bfe9c0192432744dfaf8d5ff5c2bb5a16b00
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053649"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43190858"
 ---
 # <a name="meetings-and-conferencing-in-microsoft-teams"></a>Riunioni e conferenze in Microsoft Teams
 
@@ -31,8 +31,12 @@ L'[Introduzione](get-started-with-teams-quick-start.md) è stata completata. Si 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE46ZdQ]
 
-*Novità di novembre 2019*: ora si può [usare Advisor per Teams (anteprima) per distribuire Microsoft Teams](use-advisor-teams-roll-out.md). Advisor per Teams (anteprima) guida l'implementazione di Teams, incluse riunioni e conferenze. Valuta l’ambiente di Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente le riunioni e le conferenze in Teams.
+Per altre informazioni sull'esperienza delle riunioni per gli utenti, vedere [Riunioni e chiamate](https://support.office.com/article/meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8). 
 
+
+*Novità di aprile 2020*: gli organizzatori possono terminare una riunione per tutti i partecipanti in Teams facendo clic su **Fine riunione** nei controlli all'interno della riunione.  
+
+*Novità di novembre 2019*: ora si può [usare Advisor per Teams (anteprima) per distribuire Microsoft Teams](use-advisor-teams-roll-out.md). Advisor per Teams (anteprima) guida l'implementazione di Teams, incluse riunioni e conferenze. Valuta l’ambiente di Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente le riunioni e le conferenze in Teams.
 
 ## <a name="meetings-and-conferencing-deployment-decisions"></a>Decisioni per la distribuzione di riunioni e conferenze
 
