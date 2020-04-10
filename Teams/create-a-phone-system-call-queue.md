@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 description: Informazioni su come configurare il sistema telefonico per le code delle chiamate cloud con Microsoft teams.
-ms.openlocfilehash: 2027658c5335f19c00ea1c8e44c6d38e1f16a730
-ms.sourcegitcommit: 9a448104a76857e3aa464c53cec577d813f8f414
+ms.openlocfilehash: e6ff659790159595c86a2aa442bcb20bcff9659a
+ms.sourcegitcommit: 1d24b62f41bce4f8d86d6060291af1267f75a2a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43184240"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43213651"
 ---
 # <a name="create-a-cloud-call-queue"></a>Creare una coda di chiamata cloud
 
@@ -204,7 +204,7 @@ Puoi abilitare il routing delle chiamate basate sulla presenza con uno dei metod
 
 Se un agente sceglie di ricevere chiamate, non verrà incluso nell'elenco di routing delle chiamate, indipendentemente dal tipo di stato di disponibilità impostato.
 
-> [!CAUTION]
+> [!IMPORTANT]
 > Gli agenti che usano il client Skype for business non sono inclusi nell'elenco di routing delle chiamate quando è abilitato il routing basato sulla presenza, indipendentemente dallo stato di disponibilità. Gli agenti che non sono presenti nell'elenco di routing delle chiamate non ricevono chiamate. Se si hanno agenti che usano Skype for business, non abilitare il routing delle chiamate basate sulla presenza.
 
 ### <a name="select-an-agent-opt-out-option"></a>Selezionare un'opzione di opt-out per l'agente

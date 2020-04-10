@@ -16,19 +16,19 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire i tag usati nell'organizzazione in Microsoft teams.
-ms.openlocfilehash: 5fbfa980f1cf6acd8ce32af810bf2527ece3d1fa
-ms.sourcegitcommit: 0549714f17f9994cf832a303ec9bc58a537c3a51
+ms.openlocfilehash: 6b95dc07954803ea6d15a1ca5bdf6c705ca3e252
+ms.sourcegitcommit: 1d24b62f41bce4f8d86d6060291af1267f75a2a2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2020
-ms.locfileid: "42951551"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209488"
 ---
 # <a name="manage-tags-in-microsoft-teams"></a>Gestire i tag in Microsoft Teams
 
 I tag in Microsoft teams consentono agli utenti di comunicare con un sottoinsieme di persone in un team. I tag possono essere aggiunti a uno o più membri del team per connettersi facilmente con il sottoinsieme giusto di persone. I proprietari e i membri del team (se la funzionalità è abilitata) possono aggiungere uno o più tag a una persona. I tag possono quindi essere usati in @mentions da chiunque nel team in un post di canale o per avviare una conversazione con solo gli utenti a cui è stato assegnato il tag.
 
 > [!NOTE]
-> I tag non sono ancora supportati nei canali privati. I tag non sono ancora disponibili nelle organizzazioni US Government community Cloud (GCC), GCC High o Department of Defense (DoD). 
+> I tag non sono ancora supportati nei canali privati. I tag non sono ancora disponibili nelle organizzazioni US Government community Cloud (GCC), GCC High o Department of Defense (DoD).
 
 ## <a name="how-tags-work"></a>Come funzionano i tag
 
@@ -37,7 +37,7 @@ Un tag può essere aggiunto a una persona in un team specifico. Dopo l'aggiunta 
 - Un responsabile dello Store vuole pubblicare un annuncio su un canale e inviare una notifica a tutti i cassieri.
 - Un Product Manager di gruppo vuole Message tutti i responsabili di prodotto in un canale.
 - Un amministratore dell'ospedale vuole inviare un messaggio a tutti i radiologi di un canale.
-- Un responsabile marketing vuole avviare una chat di gruppo con tutte le finestre di progettazione. 
+- Un responsabile marketing vuole avviare una chat di gruppo con tutte le finestre di progettazione.
 
 Per altre informazioni, vedere [usare i contrassegni in teams](https://support.office.com/article/using-tags-in-teams-667bd56f-32b8-4118-9a0b-56807c96d91e).
 
@@ -46,6 +46,8 @@ Per altre informazioni, vedere [usare i contrassegni in teams](https://support.o
 Come amministratore, puoi controllare chi può aggiungere tag e come vengono usati i tag in tutta l'organizzazione nell'interfaccia di amministrazione di Microsoft teams.
 
 ![Screenshot delle impostazioni di tagging nell'interfaccia di amministrazione di Microsoft Teams](media/manage-tags-admin-settings.png)
+
+Un team può avere fino a 100 tag, fino a 100 i membri del team possono essere assegnati a un tag e può essere assegnato un massimo di 25 tag a un singolo utente. 
 
 ### <a name="set-who-can-add-tags"></a>Impostare gli utenti che possono aggiungere tag
 
