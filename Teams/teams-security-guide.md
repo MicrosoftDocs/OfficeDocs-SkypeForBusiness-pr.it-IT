@@ -19,15 +19,16 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d2aded83cf92a98aaaa1b01fdedab695013dac8e
-ms.sourcegitcommit: 1c2cef3deb384216bf0a89628573a277ee6e3e2b
+ms.openlocfilehash: 32cbbbc87e6447c3bc49b97b772e2aea4849550f
+ms.sourcegitcommit: 1d24b62f41bce4f8d86d6060291af1267f75a2a2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43174968"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209498"
 ---
 > [!IMPORTANT]
-> Il modello di servizio di Teams è soggetto a modifiche per migliorare l'esperienza utente. Ad esempio, le scadenze del token di accesso o di aggiornamento predefinito potrebbero essere soggette a modifica per migliorare le prestazioni e la resilienza di autenticazione per gli utenti che usano Teams. Le modifiche apportate verranno applicate con l'obiettivo di garantire la protezione e l’affidabilità da progettazione di Teams.
+> Il modello di servizio di Teams è soggetto a modifiche per migliorare l'esperienza utente. Ad esempio, le scadenze del token di accesso o di aggiornamento predefinito potrebbero essere soggette a modifica per migliorare le prestazioni e la resilienza di autenticazione per gli utenti che usano Teams. Le modifiche apportate verranno applicate con l'obiettivo di garantire la protezione e l’affidabilità da progettazione di Teams. 
+<p>
 
  # <a name="security-and-microsoft-teams"></a>Sicurezza e Microsoft Teams
 
@@ -77,7 +78,7 @@ TLS autentica tutte le parti ed esegue la crittografia di tutto il traffico. L'u
 
 Un attacco man-in-the-middle si verifica quando un utente malintenzionato dirige la comunicazione tra due utenti attraverso il proprio computer senza che i due utenti comunicanti lo sappiano. L'utente malintenzionato può monitorare e leggere il traffico prima di inviarlo al destinatario previsto. Ogni utente della comunicazione, inconsapevolmente, invia e riceve traffico dall'utente malintenzionato, il tutto pensando di comunicare solo con l'utente previsto. Ciò può accadere se un utente malintenzionato riesce a modificare i Servizi di Dominio di Active Directory per aggiungere il proprio server come server attendibile, o modificare il DNS (Domain Name System) per consentire ai client di connettersi tramite l'utente malintenzionato nel percorso verso il server.
 
-Un attacco man-in-the-middle può verificarsi anche con il traffico multimediale tra due client, tranne che per il fatto che in Teams i flussi audio, video e di condivisione delle applicazioni da punto a punto sono crittografati con SRTP, utilizzando chiavi crittografiche negoziate tra i peer tramite SIP (Session Initiation Protocol) su TLS.
+Per impedire gli attacchi man-in-the-middle al traffico multimediale tra due endpoint che partecipano alla condivisione di audio, video e applicazioni di Teams è necessario crittografare il flusso multimediale con il protocollo SRTP. Le chiavi crittografiche vengono negoziate tra i due endpoint attraverso un protocollo di segnalazione proprietario (protocollo Teams Call Signaling), che sfrutta il canale UDP/TCP crittografato con TLS 1.2 e AES-256 (in modalità GCM).
 
 ### <a name="rtp-replay-attack"></a>Attacco di riproduzione RTP
 
