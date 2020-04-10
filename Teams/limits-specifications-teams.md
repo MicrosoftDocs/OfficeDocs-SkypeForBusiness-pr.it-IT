@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0fd871f36c2261dd5ec243dbd8dbdd52a3a8e694
-ms.sourcegitcommit: 93a8bd330c9a8ced81cd3eafb7b7236e9ed2066f
+ms.openlocfilehash: 3d7b2dec3b4077ddfb06035a2d7069b04c789db1
+ms.sourcegitcommit: 1d24b62f41bce4f8d86d6060291af1267f75a2a2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/13/2020
-ms.locfileid: "41962085"
+ms.lasthandoff: 04/09/2020
+ms.locfileid: "43209448"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -121,8 +121,6 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 |Ricorrente senza ora di fine     |Ora di inizio + 60 giorni         |60 giorni         |
 |Ricorrente con ora di fine     |Ora di fine dell'ultima occorrenza + 60 giorni         |60 giorni         |
 
-
-
 ## <a name="teams-live-events"></a>Eventi live in Teams
 
 |Funzionalità     | Limite massimo |
@@ -156,6 +154,15 @@ Poiché Teams viene eseguito in un back-end di SharePoint Online per la condivis
 I canali sono supportati da cartelle all'interno della raccolta siti di SharePoint Online creata per il team, quindi le schede dei file all'interno dei canali condividono i limiti di archiviazione del team a cui appartengono.
 
 Per altre informazioni, vedere [Limiti di SharePoint Online](https://support.office.com/article/SharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498).
+
+## <a name="tags"></a>Tag
+
+|Funzionalità  |Limite massimo  |
+|---------|---------|
+|Numero di tag per team    | 100        |
+|Numero di tag predefiniti consigliati per ogni team    | 25        |
+|Numero di membri del team assegnati a un tag    |100         |
+|Numero di tag assegnati a un utente    |25         |
 
 ## <a name="contacts"></a>Contatti
 

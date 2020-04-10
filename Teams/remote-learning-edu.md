@@ -18,19 +18,20 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0358e23f4f549aba6064a78d95f7ce160bb738b0
-ms.sourcegitcommit: 1c2cef3deb384216bf0a89628573a277ee6e3e2b
+ms.openlocfilehash: f0223d3a29c704b5ab55d2183fd6587c845b351c
+ms.sourcegitcommit: 273d7565ad350bf97dbf035f148fd48b1cb04d4f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43174958"
+ms.lasthandoff: 04/08/2020
+ms.locfileid: "43194856"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
 > [!NOTE]
 > Questo articolo contiene indicazioni per preparare l'istituto di istruzione per l'apprendimento remoto. Le risorse seguenti possono essere utili per gli insegnanti, i dirigenti scolastici o i professionisti IT:
 >
-> - Scaricare [**Introduzione a Teams**](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/Teams-for-Education-ITAdmin-get-started-guide.pptx?raw=true): una guida per professionisti IT con procedure utili per la gestione della sicurezza e delle modifiche.
+> - È possibile rendere subito operativa l'intera scuola o l'università con Teams, consultare [**Guida introduttiva rapida**](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/teams-for-education-getting-started-1-pager.pdf?raw=true).
+> - Scaricare [**Introduzione a Teams**](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/Teams-for-Education-ITAdmin-get-started-guide.pptx?raw=true): una guida per professionisti IT che offre procedure utili per la gestione della sicurezza e delle modifiche.
 > - Una raccolta di articoli scritti per i docenti, con indicazioni pratiche sui [**primi passi per l'insegnamento in Teams**](https://support.office.com/article/microsoft-teams-5aa4431a-8a3c-4aa5-87a6-b6401abea114).
 > - Un corso online di 1 ora in Microsoft Educator Center illustra il modo in cui i docenti usano Teams nelle loro vite professionali. [**Trasformare l'apprendimento con Microsoft Teams**](https://education.microsoft.com/course/9c9f5c11/overview).
 > - Un corso online di 1 ora in Microsoft Educator Center guida i docenti all'insegnamento nei team di classe. [**Creare un ambiente di apprendimento collaborativo con i team di classe.**](https://education.microsoft.com/course/b1e15cfc/overview)
@@ -136,6 +137,8 @@ Dopo aver configurato il team, i proprietari del team possono [personalizzare le
 ### <a name="collaborative-meetings-for-virtual-classes"></a>Riunioni collaborative per le lezioni virtuali
 
 Le [riunioni di Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/tutorial-meetings-in-teams) supportano fino a 250 partecipanti simultanei, con la possibilità di utilizzare audio, video, [condivisione di contenuti](https://support.office.com/article/show-your-screen-during-a-meeting-90c84e5a-b6fe-4ed4-9687-5923d230d3a7), lavagne e note condivise. Le riunioni possono essere programmate nel client Teams come [riunioni in uno spazio privato o in un canale del team](https://docs.microsoft.com/MicrosoftTeams/tutorial-meetings-in-teams), in modo che tutti i membri del team ne siano a conoscenza. Le riunioni possono essere registrate e salvate per essere riviste in un secondo momento dai partecipanti. Le registrazioni possono anche essere [trascritte per trovare facilmente i contenuti](https://support.office.com/article/Microsoft-Stream-automatically-creates-closed-captions-for-videos-8d6ac353-9ff2-4e2b-bca1-329499455308) discussi. Per la riunione è possibile usare webcam, microfono e altoparlante di un portatile o di un telefono cellulare e ottenere un'elevata qualità audio/video da [dispositivi ottimizzati di Microsoft Teams](https://products.office.com/microsoft-teams/across-devices/devices).
+
+In Teams, gli organizzatori delle riunioni possono terminare una riunione per tutti i partecipanti. Grazie a questa funzionalità, i docenti possono garantire che gli studenti non rimangano in una riunione senza sorveglianza al termine della lezione.
 
 ### <a name="districtuniversity-events-or-updates"></a>Eventi o aggiornamenti distrettuali/universitari
 
