@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 66ef35a8a8235507e4d87a7b9c4da7625a939770
-ms.sourcegitcommit: 9419860f9a1c1dd2c7c444162e1d55d704e19c69
+ms.openlocfilehash: f45c83e765bcc10d81ff9cab6fb70b8c7d027ad0
+ms.sourcegitcommit: 2d44f1a673316daf0aca3149571b24a63ca72772
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43207005"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227410"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
@@ -66,7 +66,11 @@ Modalità di gestione del contenuto interessato dopo il rilevamento dipende dall
 
 ### <a name="safe-links"></a>Collegamenti sicuri
 
-Mentre, in questo momento, i collegamenti sicuri ATP non sono disponibili in Microsoft teams, ora sono in anteprima pubblica tramite il nostro programma di adozione della tecnologia (TAP) e mentre una data di rilascio per la disponibilità generale non è impostata, verrà aggiornato questo articolo quando arriverà il momento. Nel frattempo, per informazioni sui collegamenti sicuri di Office 365, vedere [collegamenti sicuri di office 365 ATP](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links#how-to-get-atp-safe-links-protection).
+Mentre, in questo momento, i collegamenti sicuri Advanced Threat Protection (ATP) non sono disponibili in Microsoft teams, ora sono in [anteprima pubblica](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams?view=o365-worldwide) tramite il nostro programma di adozione della tecnologia (TAP) e mentre una data di rilascio per la disponibilità generale non è impostata, verrà aggiornato questo articolo quando arriverà il momento. Nel frattempo, per informazioni sui collegamenti sicuri di Office 365, vedere [collegamenti sicuri di office 365 ATP](https://docs.microsoft.com/office365/securitycompliance/atp-safe-links#how-to-get-atp-safe-links-protection). Collegamenti sicuri ATP è disponibile sia in [ATP Plan 1 che in ATP Plan 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide).
+
+### <a name="safe-attachments"></a>Allegati sicuri
+
+Gli allegati sicuri sono una funzionalità progettata per migliorare la sicurezza degli utenti controllando e rilevando gli allegati dolosi. Gli amministratori globali o di sicurezza creano [criteri](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-atp-safe-attachments-policies?view=o365-worldwide) per la gestione di questi presunti allegati illeciti per impedire che vengano inviati agli utenti, a cui si fa clic e si è agito. La protezione degli allegati attendibili è disponibile per SharePoint Online, OneDrive for business e Microsoft teams e sia Office 365 [Advanced Threat Protection Plan 1 che 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide) hanno questa funzionalità. Leggi altre informazioni sugli allegati sicuri e su come possono aiutare a proteggere [l'organizzazione.](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments?view=o365-worldwide)
 
 ### <a name="how-conditional-access-policies-work-for-teams"></a>Funzionamento dei criteri di accesso condizionale per i team
 

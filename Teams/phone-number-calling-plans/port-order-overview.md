@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.voice.phonenumbers.porting.overview
 - Calling Plans
 description: Informazioni generali sugli ordini di trasferimento e su come trasferire i numeri di telefono dal provider di servizi in teams.
-ms.openlocfilehash: 7d92c76c62405efbffaff378b2045195c175d867
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 0102adfd53dba3ff455ddbdbc3678e625fd978de
+ms.sourcegitcommit: 2d44f1a673316daf0aca3149571b24a63ca72772
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827944"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227540"
 ---
 # <a name="whats-a-port-order"></a>Cos'è un ordine di portabilità?
 
@@ -35,7 +35,9 @@ Esaminare le informazioni contenute in questo articolo per familiarizzare con la
   
 ## <a name="what-countries-or-regions-support-number-porting"></a>Quali paesi o aree geografiche supportano la portabilità del numero?
 
-È possibile convertire o trasferire i numeri di telefono in tutti i paesi o le aree geografiche supportati, ma come inviare una richiesta di un ordine di trasferimento dipende dal paese o dall'area geografica in cui provengono i numeri di telefono. Per un elenco di paesi e aree geografiche che supportano la conversione del numero, vedere [gestire i numeri di telefono per l'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
+È possibile convertire o trasferire i numeri di telefono in tutti i paesi o le aree geografiche supportati, ma come inviare una richiesta di un ordine di trasferimento dipende dal paese o dall'area geografica in cui provengono i numeri di telefono. Per un elenco di paesi e aree geografiche che supportano la conversione del numero, vedere [gestire i numeri di telefono per l'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).  
+
+Attualmente, [la conversione guidata nell'interfaccia](transfer-phone-numbers-to-teams.md) di amministrazione di Microsoft teams supporta l'ottenimento di numeri di telefono per Regno Unito, Stati Uniti e Canada. Per ottenere i numeri di telefono per altri paesi e aree geografiche, è possibile [inviare manualmente un ordine di trasferimento](manually-submit-port-order.md).
   
 ## <a name="what-numbers-can-be-transferred"></a>Quali numeri possono essere trasferiti?
 

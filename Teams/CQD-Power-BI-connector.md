@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
-ms.openlocfilehash: 73f19ef893aebbbd2c6ab9b79946097d6a834c36
-ms.sourcegitcommit: f0f2fa999c1ca4a1118377c7938a247f79217609
+ms.openlocfilehash: ad76c2f4378a1f639abf98d115e4700fae7796c5
+ms.sourcegitcommit: 2d44f1a673316daf0aca3149571b24a63ca72772
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43106693"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227550"
 ---
 # <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
 
@@ -75,7 +75,8 @@ Una volta completata l'installazione, nel riquadro *campi* dovrebbero essere vis
 
     ![Screenshot: connettore Power BI](media/CQD-power-bi-connector4.png)
 
-**Nota importante:** Il dashboard qualità chiamata richiede una misura per l'esecuzione di una query. La mancata aggiunta di una misura a una query causerà l'errore della query.
+    > [!IMPORTANT] 
+    > Il dashboard qualità chiamata richiede una misura per l'esecuzione di una query. La mancata aggiunta di una misura a una query causerà l'errore della query.
 
 3.  Selezionare *quindi le dimensioni* desiderate per filtrare e trascinarle nel riquadro Filtri in questo campo *visivo* . Il connettore di Power BI di Call Quality dashboard attualmente supporta il filtro di *base* (selezionare i valori da un elenco di valori di dimensione possibili), il filtro *avanzato* (specificare manualmente i valori e gli operandi per filtrare, in modo simile a Advanced Call Quality Dashboard) e il *filtro delle date relativo* (disponibile solo per le dimensioni di *fine* e *ora di inizio* ). Il filtro in base alle *prime N* non è supportato da Call Quality dashboard.
 
@@ -83,7 +84,8 @@ Una volta completata l'installazione, nel riquadro *campi* dovrebbero essere vis
 
 4.  Infine, seleziona la scheda *formato* nel riquadro *visualizzazioni* per applicare lo stile e formattare la query.
 
-**Nota:** Le query Call Quality Dashboard richiedono almeno una misura per l'esecuzione. Se la query non viene caricata, verificare che sia stata inclusa una misura nella query.
+    > [!NOTE]
+    > Le query Call Quality Dashboard richiedono almeno una misura per l'esecuzione. Se la query non viene caricata, verificare che sia stata inclusa una misura nella query.
 
 ## <a name="creating-a-drillthrough-report"></a>Creazione di un report drill-through
 
@@ -100,6 +102,10 @@ Il [drill-through in Power bi](https://docs.microsoft.com/power-bi/desktop-drill
     ![Screenshot: connettore Power BI](media/CQD-power-bi-connector7.png)
 
 Diversamente da Advanced Call Quality dashboard, Power BI supporta il drill-through non sequenziale. Finché una query include la dimensione necessaria, può eseguire il drill-through in qualsiasi altra pagina.
+
+### <a name="best-practice"></a>Procedure consigliate
+
+Le query del connettore di qualità delle chiamate devono essere progettate con la funzionalità drill-through. Invece di provare a caricare tutti i dati contemporaneamente e quindi affettare i filtri, iniziare con query più ampie e a bassa cardinalità e eseguire il drill-down per eseguire query di alta cardinalità. Ad esempio, quando si tenta di diagnosticare le subnet che contribuiscono maggiormente ai problemi di qualità, è utile identificare prima di tutto le aree geografiche e i paesi che contribuiscono al problema, quindi eseguire il drill-down delle subnet in quella regione o paese. I modelli di connettori per la qualità delle chiamate sono stati progettati in questo modo per fungere da esempio.
 
 ## <a name="limitations"></a>Limitazioni
 

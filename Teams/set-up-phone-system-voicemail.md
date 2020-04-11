@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: 'Informazioni su come configurare la segreteria telefonica cloud per gli utenti. '
-ms.openlocfilehash: 5f975eac51cf3787ac5a1dde9b76b80b0912478d
-ms.sourcegitcommit: a610bfe9c0192432744dfaf8d5ff5c2bb5a16b00
+ms.openlocfilehash: dc771847db8dca52d22b4c1db1b8ae585b99f8e4
+ms.sourcegitcommit: 2d44f1a673316daf0aca3149571b24a63ca72772
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43190833"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227500"
 ---
 # <a name="set-up-cloud-voicemail"></a>Configurare Cloud Voicemail
 
@@ -120,6 +120,12 @@ Grant-CsOnlineVoicemailPolicy -PolicyName TranscriptionProfanityMaskingEnabled -
 
 > [!IMPORTANT]
 > Il servizio di segreteria telefonica in Office 365 memorizza in cache i criteri di segreteria telefonica e aggiorna la cache ogni 4 ore. Perciò le modifiche apportate ai criteri possono impiegare fino a 4 ore per essere applicate.
+
+## <a name="help-your-users-learn-teams-voicemail-features"></a>Aiutare gli utenti a conoscere le caratteristiche della segreteria telefonica
+
+Per gli utenti sono disponibili le informazioni seguenti per gestire le impostazioni della segreteria telefonica e altre funzionalità di chiamata in teams:
+
+- [Gestire le impostazioni delle chiamate in teams](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f). Questo articolo illustra come gestire tutti i team di utenti finali che chiamano le funzionalità. 
 
 ## <a name="help-your-users-learn-skype-for-business-voicemail-features"></a>Aiutare gli utenti a imparare le funzioni della segreteria telefonica Skype for Business
 

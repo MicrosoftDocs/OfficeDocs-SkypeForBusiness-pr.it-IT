@@ -18,12 +18,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare la creazione guidata porta per trasferire il numero di telefono dal provider di servizi corrente a Microsoft teams.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 07368b6dfd05567eac4eac66614560b6ecc9d2b4
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: a13e08a569c34f8182997bb438e997d8caee2ae7
+ms.sourcegitcommit: 2d44f1a673316daf0aca3149571b24a63ca72772
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137866"
+ms.lasthandoff: 04/11/2020
+ms.locfileid: "43227530"
 ---
 # <a name="transfer-phone-numbers-to-microsoft-teams"></a>Trasferire i numeri di telefono in Microsoft Teams
 
@@ -39,7 +39,7 @@ Prima di iniziare, è consigliabile rivedere le informazioni in [un ordine di tr
 ## <a name="create-a-port-order-and-transfer-your-phone-numbers-to-teams"></a>Creare un ordine di trasferimento e trasferire i numeri di telefono in teams
 
 > [!NOTE]
-> **Attualmente, è possibile usare questa procedura guidata per ottenere numeri di telefono per il Regno Unito e il Canada**. Per ottenere i numeri di telefono per altri paesi e aree geografiche, è possibile [inviare manualmente un ordine di trasferimento](manually-submit-port-order.md). Per ottenere il modulo necessario per inviare manualmente un ordine di trasferimento, selezionare il paese o l'area geografica nell'elenco a discesa in [gestire i numeri di telefono per l'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
+> **Attualmente, è possibile usare questa procedura guidata per ottenere numeri di telefono per Regno Unito, Stati Uniti e Canada**. Per ottenere i numeri di telefono per altri paesi e aree geografiche, è possibile [inviare manualmente un ordine di trasferimento](manually-submit-port-order.md). Per ottenere il modulo necessario per inviare manualmente un ordine di trasferimento, selezionare il paese o l'area geografica nell'elenco a discesa in [gestire i numeri di telefono per l'organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a**numeri di telefono** **vocale** > . Fare clic su **numeri**e quindi su **porta** per avviare la procedura guidata.
 2. Esaminare **le informazioni nella pagina inizia** e quindi quando si è pronti, fare clic su **Avanti**.
