@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f45c83e765bcc10d81ff9cab6fb70b8c7d027ad0
-ms.sourcegitcommit: 2d44f1a673316daf0aca3149571b24a63ca72772
+ms.openlocfilehash: 17cf1e32b26edc609bea9e679c9f5ee5f4cc66d2
+ms.sourcegitcommit: f9860dbf3c719fec5ffc1874b503b6db252afe10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227410"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43237899"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
@@ -193,7 +193,7 @@ Per informazioni sull'area geografica in cui sono alloggiati i dati per il tenan
 
 Teams è conforme a livello D. Sono inclusi i seguenti standard: [iso 27001](https://docs.microsoft.com/microsoft-365/compliance/offering-iso-27001), [ISO 27018](https://docs.microsoft.com/microsoft-365/compliance/offering-iso-27018), [SSAE16 SOC 1 e SOC 2](https://docs.microsoft.com/microsoft-365/compliance/offering-soc), [HIPAA](https://docs.microsoft.com/microsoft-365/compliance/offering-hipaa-hitech)e [clausole modello EU (EUMC)](https://docs.microsoft.com/microsoft-365/compliance/offering-eu-model-clauses). In Microsoft Compliance Framework Microsoft classifica le applicazioni e i servizi di Office 365 in quattro categorie. Ogni categoria è definita da specifici impegni di conformità che devono essere soddisfatti per un servizio di Office 365 o un servizio Microsoft correlato, da elencare in tale categoria.
 
-I servizi nelle categorie di conformità C e D che hanno impegni di conformità leader del settore sono abilitati per impostazione predefinita. I servizi nelle categorie A e B sono dotati di controlli per attivare o disattivare questi servizi per un'intera organizzazione. I dettagli sono disponibili nel [Framework conformità per gli standard e le normative del settore](https://download.microsoft.com/download/1/4/3/1434ABAB-B8E9-412D-8C3A-187B5FCB7A2F/Compliance%20Framework%20document.pdf). Teams supporta anche la conformità a Cloud Security Alliance.
+I servizi nelle categorie di conformità C e D che hanno impegni di conformità leader del settore sono abilitati per impostazione predefinita. I servizi nelle categorie A e B sono dotati di controlli per attivare o disattivare questi servizi per un'intera organizzazione. I dettagli si trovano negli [standard di conformità](security-compliance-overview.md#compliance-standards). Teams supporta anche la conformità a Cloud Security Alliance.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

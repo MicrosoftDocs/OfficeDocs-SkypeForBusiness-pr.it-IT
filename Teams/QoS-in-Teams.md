@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 545cbc1d170f6b511de5e8d21a237bc893ee0702
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 5bbb66b99a061648c4c12b7611fc7054a4044c6f
+ms.sourcegitcommit: f9860dbf3c719fec5ffc1874b503b6db252afe10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43138036"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43237889"
 ---
 # <a name="implement-quality-of-service-qos-in-microsoft-teams"></a>Implementare la qualità del servizio (QoS) in Microsoft Teams
 
@@ -78,7 +78,7 @@ Una semplice analogia consiste nel fatto che QoS crea una "corsia di carpooling"
 
 ## <a name="select-a-qos-implementation-method"></a>Selezionare un metodo di implementazione QoS
 
-Puoi implementare il QoS tramite tagging basato su porta, usando gli elenchi di controllo di accesso (ACL) nei router della rete. La codifica basata su porta è il metodo più affidabile perché funziona in ambienti Windows e Mac misti ed è la soluzione più semplice da implementare. I client mobili non offrono un meccanismo per contrassegnare il traffico usando i valori DSCP, quindi richiedono questo metodo.  
+Puoi implementare il QoS tramite tagging basato su porta, usando gli elenchi di controllo di accesso (ACL) nei router della rete. La codifica basata su porta è il metodo più affidabile perché funziona in ambienti Windows, Mac e Linux misti ed è la soluzione più semplice da implementare. I client mobili non offrono un meccanismo per contrassegnare il traffico usando i valori DSCP, quindi richiedono questo metodo.  
 
 Usando questo metodo, il router della rete esamina un pacchetto in arrivo e, se il pacchetto è arrivato usando una determinata porta o intervallo di porte, lo identifica come un determinato tipo di elemento multimediale e lo inserisce nella coda per il tipo, aggiungendo un contrassegno di [DSCP](https://tools.ietf.org/html/rfc2474) predeterminato all'intestazione del pacchetto IP in modo che altri dispositivi possano riconoscere il tipo di traffico e assegnargli la priorità nella coda.
 

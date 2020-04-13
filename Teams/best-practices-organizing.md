@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 621bb6328ab4ea59caa18d27fe7196a25ee15157
-ms.sourcegitcommit: 1c2cef3deb384216bf0a89628573a277ee6e3e2b
+ms.openlocfilehash: f8f142e48c005b14fc265d7efe6d4413b3c5f44c
+ms.sourcegitcommit: f9860dbf3c719fec5ffc1874b503b6db252afe10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43174918"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43237939"
 ---
 <a name="best-practices-for-organizing-teams-in-microsoft-teams"></a>Procedure consigliate per l'organizzazione dei team in Microsoft Teams
 ======================================================
@@ -31,7 +31,10 @@ I team sono gruppi di persone che si riuniscono attorno a un obiettivo comune. Q
 
 Prima di creare un team, considerare l'obiettivo, il progetto o gli elementi di lavoro e chi nell'organizzazione può portare a termine tale compito in maniera collaborativa. Una volta identificati questi elementi, aggiungere il gruppo di persone scelto a un team per avviare la collaborazione. Poiché i membri possono cambiare nel corso del tempo, è consigliabile designare più proprietari per ogni team. Per altre informazioni, vedere [Gestione dei team](https://support.office.com/article/Teams-and-Channels-df38ae23-8f85-46d3-b071-cb11b9de5499).
 
-La [playlist video](https://www.youtube.com/playlist?list=PLXPr7gfUMmKwYKFSqoPN-aHQppI7rRQLf) di Microsoft teams offre altre informazioni per la creazione e la gestione di team.
+
+Ecco un breve video che illustra alcuni esempi su come strutturare i team con un unico obiettivo o con membri di diverse organizzazioni:
+
+> [!VIDEO https://www.youtube.com/embed/WkAVgNKn0hs]
 
 ## <a name="add-teams-gradually"></a>Aggiungere gradualmente i team
 
