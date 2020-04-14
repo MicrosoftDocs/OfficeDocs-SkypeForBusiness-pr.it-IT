@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 8d47b242-b93d-4c2e-a658-23b78bca30b1
 description: 'Sintesi: preparare i server Skype for Business Server 2015 con questo argomento. Hardware, sistema operativo, database, software, tutti i requisiti di sistema e suggerimenti sono disponibili per garantire una corretta installazione e distribuzione della server farm.'
-ms.openlocfilehash: 9cc063a44924bd6080525ca7a751bd1a3356666c
-ms.sourcegitcommit: 543f650ad4aff73bccfe7a60b66fb944b4e3c119
+ms.openlocfilehash: 53ce5d464b9faea14ca6970f85b3f937af8238e2
+ms.sourcegitcommit: f9860dbf3c719fec5ffc1874b503b6db252afe10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42572794"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43237949"
 ---
 # <a name="server-requirements-for-skype-for-business-server-2015"></a>Requisiti del server per Skype for Business Server 2015
  
@@ -47,7 +47,7 @@ Dopo aver incassato la topologia (e, in caso contrario, è possibile consultare 
   
 Hardware consigliato per Front End Server, server back-end, server Standard Edition e server Chat persistente:
   
-|**Componente hardware**|**Consigliato**|
+|**Componente hardware**|**Consigliata**|
 |:-----|:-----|
 |CPU  <br/> |processore duale a 64 bit, hex-core, 2,26 gigahertz (GHz) o superiore.  <br/> I processori Intel Itanium non sono supportati per i ruoli di Skype for Business Server 2015.  <br/> |
 |Memoria  <br/> |32 gigabyte (GB).  <br/> |
@@ -56,7 +56,7 @@ Hardware consigliato per Front End Server, server back-end, server Standard Edit
    
 Hardware consigliato per server perimetrali, Mediation Server autonomi, server di interoperabilità video e direttori:
   
-|**Componente hardware**|**Consigliato**|
+|**Componente hardware**|**Consigliata**|
 |:-----|:-----|
 |CPU  <br/> |processore duale a 64 bit, quad-core, 2,26 gigahertz (GHz) o superiore.  <br/> I processori Intel Itanium non sono supportati per i ruoli di Skype for Business Server 2015.  <br/> |
 |Memoria  <br/> |16 gigabyte.  <br/> |
@@ -74,7 +74,10 @@ Dopo aver installato l'hardware, è necessario installare i sistemi operativi (O
 |Windows Server 2012 R2 Datacenter OS con tutti gli aggiornamenti necessari installati.  <br/> |Sistema operativo Windows Server 2012 R2 Standard con tutti gli aggiornamenti necessari installati.  <br/> |
 |Windows Server 2012 Datacenter OS con tutti gli aggiornamenti necessari installati.  <br/> |Sistema operativo Windows Server 2012 Standard con tutti gli aggiornamenti necessari installati.  <br/> |
    
-Se non è presente nell'elenco, non funzionerà correttamente, non provare a utilizzare le nuove installazioni di Skype for Business Server 2015. Si noti che l'aggiornamento sul posto del sistema operativo non è supportato con Lync Server 2013.  È necessario distribuire un pool separato ed eseguire la migrazione degli utenti nel nuovo pool con un sistema operativo diverso.
+Se non è presente nell'elenco, non funzionerà correttamente, non provare a utilizzare le nuove installazioni di Skype for Business Server 2015.
+
+> [!NOTE]
+> L'aggiornamento sul posto del sistema operativo non è supportato con Lync Server 2013. È necessario distribuire un pool separato ed eseguire la migrazione degli utenti nel nuovo pool con un sistema operativo diverso. Tutti i server di un pool devono avere la stessa versione del sistema operativo.
   
 > [!NOTE]
 > Potrebbe essere stato notato che Windows Server 2008 R2 non è presente nell'elenco. Ciò è dovuto al fatto che è consigliabile utilizzare Windows Server 2012 R2 per tutti i nuovi server che devono essere utilizzati per questo. È consigliabile utilizzare Windows Server 2008 R2 solo quando si dispone di server esistenti con Lync Server 2013 già installato e si intende eseguire un aggiornamento sul posto. Windows Server 2008 R2 ha raggiunto la fine del ciclo di vita del supporto mainstream su 1/13/2015 e raggiungerà la fine del relativo ciclo di vita del supporto su 1/14/2020.
@@ -268,6 +271,6 @@ Accodamento messaggi, denominato anche MSMQ. Si tratta di un componente di Windo
   
  **Ultimo pensiero:**
   
-Non installare alcun software client del server Microsoft Internet Security and Acceleration (ISA) o qualsiasi altro software LSP (Layered Service Providers) di Winsock (eventuali firewall di terze parti o software di ispezione della rete anti-virus verrebbe incluso qui) su tutti i Front End Server o i Mediation Server autonomi. Le scarse prestazioni del traffico multimediale sono state osservate quando il software è installato.
+Non installare alcun software client del server Microsoft Internet Security and Acceleration (ISA) o qualsiasi altro software LSP (Layered Service Providers) di Winsock (qualsiasi software di controllo di terze parti o firewall potrebbe essere incluso in questo articolo) in uno dei server front end o di Mediation Server autonomi. Le scarse prestazioni del traffico multimediale sono state osservate quando il software è installato.
   
 
