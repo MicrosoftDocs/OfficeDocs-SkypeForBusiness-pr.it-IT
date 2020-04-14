@@ -16,12 +16,12 @@ f1.keywords:
 ms.custom: ms.teamsadmincenter.dashboard.trainingvideos.instructorled
 ms.collection:
 - M365-collaboration
-ms.openlocfilehash: cde69bd588c7262e5ed6f0274b091fee29b27030
-ms.sourcegitcommit: 769241842058cfb4618460fad2dde1494a3609a1
+ms.openlocfilehash: 2fd1b76b1aaed68cd0c9ce61fe6d6a408a2fd296
+ms.sourcegitcommit: 379bfaf6b0584c1ac93341af605f93ab932a442b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42574003"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240596"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -93,6 +93,7 @@ Progettato per i professionisti IT e i responsabili decisionali, i colloqui di C
         </a>
     </li>
     <li>
+        <a href="https://microsoftteams.eventbuilder.com/ChalkTalksEnableFirstline"target="_blank">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -103,13 +104,14 @@ Progettato per i professionisti IT e i responsabili decisionali, i colloqui di C
                     </div>
                     <div class="cardText">
                         <h3>Come abilitare teams per l'impegno di I FIRSTLINE Worker</h3>
-                        <p><font color="red"><i>Prossimamente!</i></font> Pronti per avviare l'abilitazione delle aree di lavoro digitali per la forza lavoro I FIRSTLINE? Insieme illustreremo le procedure consigliate per l'avvio di un progetto pilota per migliorare la comunicazione, l'impegno dei dipendenti e la produttività operativa.</p>
+                        <p>Pronti per avviare l'abilitazione delle aree di lavoro digitali per la forza lavoro I FIRSTLINE? Insieme illustreremo le procedure consigliate per l'avvio di un progetto pilota per migliorare la comunicazione, l'impegno dei dipendenti e la produttività operativa.</p>
                     </div>
                 </div>
             </div>
         </div>
     </li>
     <li>
+        <a href="https://microsoftteams.eventbuilder.com/ChalkTalksQuality"target="_blank">
         <div class="cardSize">
             <div class="cardPadding">
                 <div class="card">
@@ -119,8 +121,8 @@ Progettato per i professionisti IT e i responsabili decisionali, i colloqui di C
                         </div>
                     </div>
                     <div class="cardText">
-                        <h3>Scoprire le novità di Teams</h3>
-                        <p><font color="red"><i>Prossimamente!</i></font>  Si è in attesa di una funzionalità da rilasciare in teams? Vieni a interagire con gli esperti di teams mentre camminiamo tra le versioni più recenti e più grandi della funzionalità nel corso dell'ultimo mese, insieme alle procedure consigliate per implementarle.</p>
+                        <h3>Assunzione di responsabilità per le esperienze di qualità AV</h3>
+                        <p>Si sta cercando di garantire agli utenti esperienze ottimali con riunioni e funzionalità vocali in teams? Durante questa sessione verranno illustrati gli strumenti, la creazione di report e le procedure consigliate per&mdash;gestire la qualità del servizio dall'instaurazione di una strategia proattiva per risolvere i problemi comuni Man mano che si presentano.</p>
                     </div>
                 </div>
             </div>

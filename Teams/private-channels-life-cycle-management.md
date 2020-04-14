@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire il ciclo di vita dei canali privati nell'organizzazione.
-ms.openlocfilehash: 317cded1be30beac8fefbb579d5f0c24258f2fa1
-ms.sourcegitcommit: a4fd238de09366d6ed33d72c908faff812da11a5
+ms.openlocfilehash: 39830035ba91b2fa50c7d5bbd82e6da6e60d0f00
+ms.sourcegitcommit: 379bfaf6b0584c1ac93341af605f93ab932a442b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637203"
+ms.lasthandoff: 04/13/2020
+ms.locfileid: "43240636"
 ---
 # <a name="manage-the-life-cycle-of-private-channels-in-microsoft-teams"></a>Gestire il ciclo di vita dei canali privati in Microsoft Teams
 
@@ -95,7 +95,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies/{id}
 
 ## <a name="find-sharepoint-urls-for-all-private-channels-in-a-team"></a>Trovare gli URL di SharePoint per tutti i canali privati in un team
 
-Indipendentemente dal fatto che si voglia eseguire una eDiscovery o un blocco legale su file in un canale privato o che si cerchi di creare un'app line-of-business che inserisce i file in canali privati specifici, è possibile eseguire query sulle raccolte siti di SharePoint esclusive create per ogni canale privato.
+Indipendentemente dal fatto che si voglia eseguire una eDiscovery o un blocco legale su file in un canale privato o che si cerchi di creare un'app line-of-business che inserisce i file in canali privati specifici, è possibile eseguire query sulle raccolte siti di SharePoint create per ogni canale privato.
 
 Come amministratore, puoi usare i comandi delle API di PowerShell o Graph per eseguire query su questi URL.
 
@@ -271,7 +271,7 @@ Puoi provare questi comandi tramite [Esplora grafico](https://developer.microsof
 
 ### <a name="install-the-latest-teams-powershell-module-from-the-powershell-test-gallery"></a>Installare il modulo di PowerShell più recente della raccolta di test di PowerShell
 
-La versione più recente disponibile al pubblico del modulo di PowerShell Teams (attualmente [1.0.3](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.3)) non supporta la gestione dei canali privati. Seguire questa procedura per installare la versione più recente del modulo di PowerShell teams con il supporto per i canali privati (attualmente 1.0.18) dalla raccolta di test di PowerShell.
+La versione più recente disponibile al pubblico del modulo di PowerShell Teams (attualmente [1.0.5](https://www.powershellgallery.com/packages/MicrosoftTeams/1.0.5)) non supporta la gestione dei canali privati. Seguire questa procedura per installare la versione più recente del modulo di PowerShell teams con il supporto per i canali privati (attualmente 1.0.21) dalla raccolta di test di PowerShell.
 
 > [!NOTE]
 > Non installare il modulo teams PowerShell dalla raccolta di test di PowerShell affiancata con una versione del modulo dalla raccolta di PowerShell pubblica. Seguire questa procedura per disinstallare prima il modulo di PowerShell teams dalla raccolta di PowerShell pubblica e quindi installare la versione più recente del modulo dalla raccolta di test di PowerShell.
@@ -323,8 +323,8 @@ Se il modulo teams PowerShell è già stato installato dalla raccolta test di Po
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica di PowerShell Teams](teams-powershell-overview.md)
-- [Usare l'API Microsoft Graph per lavorare con i team](https://docs.microsoft.com/graph/api/resources/teams-api-overview?view=graph-rest-1.0)
+- [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
+- [Usare l'API Microsoft Graph per lavorare con Teams](https://docs.microsoft.com/graph/api/resources/teams-api-overview?view=graph-rest-1.0)
     - [Canali elenco](https://docs.microsoft.com/graph/api/channel-list)
     - [Creare un canale](https://docs.microsoft.com/graph/api/channel-post)
     - [Aggiungere un membro al canale](https://docs.microsoft.com/graph/api/conversationmember-add)
