@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare gli utenti dell'organizzazione che lavorano da remoto a essere produttivi con Microsoft Teams, in particolare se lavorano da casa in risposta all'epidemia di COVID-19 (Coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 96ff59470c8d9726b4c26bf0522e5b1e730b9014
-ms.sourcegitcommit: f3390e27bb63b66d1c4fb4f8afbda6b814fbbb5b
+ms.openlocfilehash: ef26f05e20aadeb46be2a553303bc686aded6215
+ms.sourcegitcommit: 5606f908c6efeb67713f5986b1d8575a896bb5bd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170514"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43506847"
 ---
 # <a name="support-remote-workers-using-microsoft-teams"></a>Supporto per i lavoratori remoti con Microsoft Teams
 
@@ -67,6 +67,8 @@ Condividere queste risorse e video con gli utenti finali per aiutarli a iniziare
 
 1. Leggere [Domande frequenti: Supporto del personale remoto](FAQ-support-remote-workforce.md), che viene aggiornato regolarmente.
 
+2. [Usare Advisor per Teams per distribuire Teams](use-advisor-teams-roll-out.md). Advisor per Teams (nell'interfaccia di amministrazione di Teams) guida la distribuzione di Teams.
+
 1. Leggere i post del blog recenti:
    
    - [Come Microsoft consente ai dipendenti di lavorare in remoto con Microsoft Teams](https://www.microsoft.com/itshowcase/blog/how-microsoft-enables-its-employees-to-work-remotely/).
@@ -109,7 +111,7 @@ Condividere queste risorse e video con gli utenti finali per aiutarli a iniziare
    - [Sicurezza e Teams](teams-security-guide.md) offre tutti i dettagli tecnici sulla sicurezza di Teams, come parte delle procedure e delle procedure consigliate per la sicurezza di livello aziendale di Microsoft 365.
 
 
-2.  [Inviare collegamenti alle risorse di formazione](enduser-training.md) per aiutare i dipendenti a sfruttare al meglio Teams.
+2.  Condividere un collegamento a [Video di formazione su Teams](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7) per aiutare i dipendenti a sfruttare al meglio Teams.
 
 3. Approfondire: leggere altre informazioni sulla distribuzione di Teams.
 
