@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Informazioni sui fattori da prendere in considerazione prima di configurare gli eventi dinamici in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 95baeaf25600853b7d6a2b4e18c548d1998f6789
-ms.sourcegitcommit: 708270f1fecab6b7b44345d57a8e12bc36d19c8b
+ms.openlocfilehash: 2f70a7a2be51045f616ebb4cedc5baf46dbe101d
+ms.sourcegitcommit: 56ceda54ca48d2984298d4d1f26017c0147d4431
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43102367"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43505623"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare eventi dinamici in Microsoft Teams
 
@@ -55,6 +55,7 @@ L'utente deve avere:
 - Condivisione dello schermo abilitata in riunioni Teams (*il parametro TeamsMeetingPolicy-ScreenSharingMode = EntireScreen*).
 - Programmazione di eventi dinamici in teams Enabled (*il parametro TeamsMeetingBroadcastPolicy-AllowBroadcastScheduling = true*).
 - Autorizzazioni per creare eventi dinamici in Stream (per l'app esterna o la produzione di dispositivi).
+- Modalità di coesistenza configurata per poter pianificare le riunioni di Team (*isole, riunioni per primo o solo team*).
 
 > [!IMPORTANT]
 > Gli utenti anonimi non autenticati non possono essere invitati come produttori o relatori in eventi live di teams. 
@@ -70,8 +71,6 @@ L'utente deve avere:
 |Gruppi/utenti specifici      |  Sì            |  Sì                 |
 
 <sup>1</sup> i partecipanti federati possono essere invitati solo tramite persone & gruppo <br>
-
-
  
 ## <a name="teams-live-events-and-skype-meeting-broadcast"></a>Eventi live di teams e Skype meeting broadcast
 
@@ -132,4 +131,3 @@ Andare alla [configurazione per gli eventi live di teams](set-up-for-teams-live-
 - [Cosa sono gli eventi live di Teams?](what-are-teams-live-events.md)
 - [Configurare gli eventi live di Teams](set-up-for-teams-live-events.md)
 - [Configurare le impostazioni degli eventi dinamici in teams](configure-teams-live-events.md)
-

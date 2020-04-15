@@ -14,12 +14,12 @@ ms.assetid: ''
 ms.collection:
 - M365-collaboration
 description: Informazioni su come configurare l'autenticazione moderna per Microsoft teams rooms
-ms.openlocfilehash: bef547ab0b9ade2edc433ec64bb1ef61eee4c040
-ms.sourcegitcommit: 0fdc60840f45ff5b0a39a8ec4a21138f6cab49c9
+ms.openlocfilehash: ee95de457d5af82fb68acb4fd79b6b5a5a3a7ed0
+ms.sourcegitcommit: 56ceda54ca48d2984298d4d1f26017c0147d4431
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160113"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43505613"
 ---
 # <a name="authentication-in-microsoft-teams-rooms"></a>Autenticazione nelle sale di Microsoft Teams
 
@@ -33,7 +33,7 @@ L'autenticazione moderna è supportata in Microsoft teams Rooms versione 4.4.25.
 
 Quando si usa l'autenticazione moderna con l'applicazione Microsoft teams rooms, viene usata la libreria di autenticazione di Active Directory (ADAL) per connettersi a Microsoft teams, Exchange e Skype for business. Un dispositivo Microsoft teams Rooms è un dispositivo condiviso ed esegue un riavvio notturno per garantirne il corretto funzionamento e ottenere aggiornamenti critici per il sistema operativo, il driver, il firmware o l'applicazione. Il meccanismo di autenticazione moderna usa il tipo di autorizzazione [credenziali password del proprietario della risorsa](https://tools.ietf.org/html/rfc6749#section-1.3.3) in OAuth 2,0, che non richiede alcun intervento da parte dell'utente. Questa è una delle principali differenze tra la modalità di funzionamento dell'autenticazione moderna per gli account utente e gli account delle risorse usati dall'applicazione Microsoft teams rooms. Per questo motivo, gli account delle risorse di Microsoft teams Rooms non devono essere configurati in modo da usare l'autenticazione a più fattori, l'autenticazione tramite smart card o l'autenticazione basata su certificati client (tutti disponibili per gli utenti finali).
 
-L'altra differenza fondamentale tra la modalità di funzionamento dell'autenticazione moderna nei dispositivi Microsoft teams Rooms e i dispositivi finali è che non è possibile usare un account di risorse per applicare criteri di accesso condizionale a livello di dispositivo, ad esempio "Richiedi il dispositivo da contrassegnare come reclamo" oppure "Richiedi un dispositivo Unito AD Azure Active Directory" e così via. Questo perché i concetti a livello di dispositivo non si applicano all'autenticazione moderna quando vengono usati a livello di applicazione. Puoi invece registrare un dispositivo in Microsoft Intune e applicare i criteri di conformità usando le linee guida [qui](https://techcommunity.microsoft.com/t5/intune-customer-success/bg-p/IntuneCustomerSuccess).
+L'altra differenza fondamentale tra la modalità di funzionamento dell'autenticazione moderna nei dispositivi Microsoft teams Rooms e i dispositivi finali è che non è possibile usare un account di risorse per applicare criteri di accesso condizionale a livello di dispositivo, ad esempio "Richiedi il dispositivo per essere contrassegnato come conforme" oppure "Richiedi un dispositivo Unito AD Azure AD" e così via. Questo perché i concetti a livello di dispositivo non si applicano all'autenticazione moderna quando vengono usati a livello di applicazione. È invece possibile registrare un dispositivo in Microsoft Intune e applicare i criteri di conformità usando le indicazioni fornite nella [gestione delle sale riunioni di teams con Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/managing-teams-meeting-rooms-with-intune/ba-p/1069230).
 
 ## <a name="enable-modern-authentication-on-a-microsoft-teams-rooms-device"></a>Abilitare l'autenticazione moderna in un dispositivo Microsoft teams rooms
 
@@ -73,7 +73,7 @@ Per altre informazioni sulla disabilitazione dell'autenticazione di base in Exch
 
 ## <a name="hybrid-modern-authentication"></a>Autenticazione moderna ibrida
 
-Per garantire l'autenticazione corretta per il server Exchange locale e/o Skype for Business Server, è necessario verificare che l'account delle risorse usato con Microsoft teams rooms sia configurato per ottenere l'autorizzazione da Azure AD. Per altre informazioni sull'identità e i metodi ibridi che funzionano per l'organizzazione, leggere gli argomenti seguenti: 
+Per garantire l'autenticazione corretta per il server di Exchange locale e/o Skype for Business Server, è necessario verificare che l'account delle risorse usato con Microsoft teams rooms sia configurato per ottenere l'autorizzazione da Azure AD. Per altre informazioni sull'identità e i metodi ibridi che funzionano per l'organizzazione, vedere gli argomenti seguenti: 
 
 - [Che cos'è la sincronizzazione hash password?](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-phs)
 - [Che cos'è l'autenticazione passthrough?](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-pta)
@@ -83,13 +83,13 @@ Per garantire l'autenticazione corretta per il server Exchange locale e/o Skype 
 
 I prerequisiti per abilitare l'autenticazione moderna nella topologia ibrida sono coperti da una [Panoramica di autenticazione moderna ibrida e prerequisiti per l'uso con i server Skype for business e Exchange locale](https://docs.microsoft.com/office365/enterprise/hybrid-modern-auth-overview). Tutti i prerequisiti descritti nell'articolo si applicano.
 
-Tuttavia, poiché le sale di Microsoft teams usano l'autorizzazione per le [credenziali di password del proprietario delle risorse](https://tools.ietf.org/html/rfc6749#section-1.3.3) e le API REST sottostanti per l'autenticazione moderna, sono importanti le differenze che sono specifiche per le sale di Microsoft teams.
+Tuttavia, poiché le sale di Microsoft teams usano l'autorizzazione per le [credenziali di password del proprietario delle risorse](https://tools.ietf.org/html/rfc6749#section-1.3.3) e le API REST sottostanti per l'autenticazione moderna, le differenze seguenti sono importanti da tenere presenti nelle sale di Microsoft teams.
 
 - È necessario avere Exchange Server 2016 CU8 o versione successiva oppure Exchange Server 2019 CU1 o versione successiva.
 - È necessario avere Skype for Business Server 2015 CU5 o versione successiva oppure Skype for Business Server 2019 o versioni successive.
 - L'AMF non è supportata indipendentemente dalla topologia.
 - Se si usa un provider di autenticazione di terze parti supportato da Azure AD, deve supportare l'autorizzazione OAuth e utilizzare le credenziali di password del proprietario delle risorse.
-- Non usare criteri di accesso condizionale a livello di dispositivo per un account di risorse configurato con l'applicazione. In questo modo si verificheranno errori di accesso. È invece possibile registrare un dispositivo in Microsoft Intune e applicare i criteri di conformità usando le linee guida pubblicate [qui](https://techcommunity.microsoft.com/t5/intune-customer-success/bg-p/IntuneCustomerSuccess).
+- Non usare criteri di accesso condizionale a livello di dispositivo per un account di risorse configurato con l'applicazione. In questo modo si verificheranno errori di accesso. È invece possibile registrare un dispositivo in Microsoft Intune e applicare i criteri di conformità usando le linee guida pubblicate nella [gestione delle sale riunioni di teams con Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/managing-teams-meeting-rooms-with-intune/ba-p/1069230).
 
 ### <a name="configure-exchange-server"></a>Configurare Exchange Server
 
@@ -107,4 +107,4 @@ Se la configurazione non è consentita per l'autenticazione moderna ibrida o è 
 
 Puoi configurare un account delle risorse usato con le sale di Microsoft teams per l'accesso basato su IP/posizione. Per altre informazioni, vedere [accesso condizionale: bloccare l'accesso in base alla posizione](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-location).
 
-Nessun altro criterio di accesso condizionale è supportato. Per altre informazioni sulla conformità dei dispositivi, vedere le indicazioni [qui](https://techcommunity.microsoft.com/t5/intune-customer-success/bg-p/IntuneCustomerSuccess).  
+Nessun altro criterio di accesso condizionale è supportato. Per altre informazioni sulla conformità dei dispositivi, vedere [gestione delle sale riunioni di teams con Intune](https://techcommunity.microsoft.com/t5/intune-customer-success/managing-teams-meeting-rooms-with-intune/ba-p/1069230).  

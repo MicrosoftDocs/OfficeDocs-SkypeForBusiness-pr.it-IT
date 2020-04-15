@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
-ms.openlocfilehash: eff5b3e7d29715714513e7c627a1611f6733b70f
-ms.sourcegitcommit: 25e70de7c943e22fe6ac6e8d6b4353ca68f81f83
+ms.openlocfilehash: 05a70c578812ee5ecdd91214ab253843fe67471c
+ms.sourcegitcommit: 56ceda54ca48d2984298d4d1f26017c0147d4431
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43159274"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43508625"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
@@ -225,7 +225,7 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 >    - Dispositivi mobili/MobilePhone
 >    - TelephoneNumber/PhoneNumber
 >    - OtherTelephone
->- Il formato necessario per immettere l'estensione nel campo numero di telefono dell'utente è `+<phonenumber>;ext=<extension>` o. `x<extension>`
+>- Il formato obbligatorio per immettere l'estensione nel campo numero di telefono dell'utente è `+<phonenumber>;ext=<extension>` o `x<extension>`.
 >- L'assegnazione di un'estensione nell'interfaccia di amministrazione di teams non è attualmente supportata. È necessario usare il comando [set-MsolUser](https://docs.microsoft.com/powershell/module/msonline/set-msoluser?view=azureadps-1.0) di PowerShell o l'interfaccia di amministrazione di Microsoft 365.
 >- Possono essere necessarie fino a 12 ore prima che siano disponibili modifiche agli attributi PhoneNumber e MobilePhone di AAD.
 >- NON definire un'estensione per il LineUri di un utente. Questa operazione non è attualmente supportata.

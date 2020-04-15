@@ -17,12 +17,12 @@ f1.keywords:
 description: Elenco corrente dei problemi noti riguardanti l’interfaccia di amministrazione e l'app client di Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d856962cf0fdb21d0dd58313b5ade6a9bab9d364
-ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
+ms.openlocfilehash: 2a8775722daa5cd6fc236933fc0e0fd8bad1213a
+ms.sourcegitcommit: 56ceda54ca48d2984298d4d1f26017c0147d4431
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43096621"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43505533"
 ---
 # <a name="known-issues-for-microsoft-teams"></a>Problemi noti di Microsoft Teams
 
@@ -296,13 +296,6 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 |**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
 |Numero di telefono bloccato|Numero di telefono bloccato: l’eliminazione dell’account di risorsa prima della rimozione del corrispettivo numero di telefono comporta il blocco del numero di telefono.|Contattare il supporto Microsoft per sbloccare il numero di telefono.|18/05/2019|
-
-## <a name="presence"></a>Icone di presenza
-|**Titolo del problema**|**Comportamento/sintomo**|**Soluzione alternativa nota**|**Data di scoperta**|
-|:-----|:-----|:-----|:-----|
-|Le icone di presenza non vengono visualizzate in Outlook e in altre applicazioni di Office dopo aver spostato un utente in modalità **Solo Teams**. <br/> |Se si disinstalla il client di Skype for Business dopo aver spostato un utente in modalità **Solo Teams**, l’icona di presenza smetterà di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams.  <br/> |Per visualizzare l’icona di presenza in Outlook e in altre app di Office, è necessario installare Skype for Business, anche se Team viene eseguito in modalità **Solo Teams**. Microsoft è a conoscenza del problema e sta lavorando per risolverlo.  <br/> |09/2019  <br/> |
-
-
 
 ## <a name="provisioning"></a>Provisioning
 

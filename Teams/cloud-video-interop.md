@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2f2c5cb45c82696ec5b365dc8e887cbaa9abce13
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: ddd8a0574899c13e03aae34915b8a342d1984feb
+ms.sourcegitcommit: 56ceda54ca48d2984298d4d1f26017c0147d4431
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42046499"
+ms.lasthandoff: 04/14/2020
+ms.locfileid: "43505643"
 ---
 # <a name="cloud-video-interop-for-microsoft-teams"></a>Interoperabilità cloud video per Microsoft Teams
 
@@ -43,6 +43,12 @@ L'interoperabilità cloud video è destinata ai clienti che soddisfano i criteri
 - Si vuole mantenere il valore del loro investimento nei dispositivi della sala riunioni correnti e nei dispositivi video personali durante la migrazione a una soluzione Microsoft teams nativa
 
 Mentre l'interoperabilità cloud video offre una soluzione intermedia ottimale, invitiamo i clienti a esaminare le soluzioni di riunione di Team nativi, ad esempio i sistemi di sala teams, per il lungo periodo. 
+
+### <a name="office-365-us-government-and-third-party-services"></a>Office 365 US Government e servizi di terze parti
+
+Office 365 offre la possibilità di integrare applicazioni di terze parti nei siti di SharePoint Online, Skype for business, teams, applicazioni di Office incluse in Office 365 ProPlus (ad esempio Word, Excel, PowerPoint e Outlook) e Outlook Web App. Office 365 supporta inoltre l'integrazione con i provider di servizi di terze parti. Queste applicazioni e servizi di terze parti possono comportare l'archiviazione, la trasmissione e l'elaborazione dei dati del cliente dell'organizzazione su sistemi di terze parti esterni all'infrastruttura di Office 365 e quindi non coperti dagli impegni di conformità e protezione dei dati di Office 365. **Per valutare l'uso appropriato di questi servizi per l'organizzazione, è consigliabile esaminare le istruzioni sulla privacy e la conformità fornite da terze parti.**
+
+
 
 ### <a name="partners-certified-for-microsoft-teams"></a>Partner certificati per Microsoft Teams
 
@@ -87,7 +93,7 @@ Durante la fase di fornitura, le licenze verranno assegnate agli utenti appropri
 
 ### <a name="schedule"></a>Pianificare
 
-Dopo l'abilitazione di un utente per l'interoperabilità del cloud video, qualsiasi riunione pianificata con il componente aggiuntivo riunione teams per Outlook o il client teams avrà le informazioni aggiuntive appropriate aggiunte automaticamente alla riunione teams in modo che cloud video I dispositivi compatibili con l'interoperabilità possono partecipare a queste riunioni.
+Dopo che un utente è stato abilitato per l'interoperabilità del cloud video, qualsiasi riunione pianificata usando il componente aggiuntivo riunione team per Outlook o il client teams avrà le informazioni aggiuntive appropriate aggiunte automaticamente alla riunione teams in modo che i dispositivi compatibili con cloud video Interop possano partecipare a queste riunioni.
 
 ### <a name="join"></a>Partecipare a
 
