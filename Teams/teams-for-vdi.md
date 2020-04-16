@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2cfe1c1af9fe85d307999289d318106c8ebc132a
-ms.sourcegitcommit: 92a278c0145798266ecbe052e645b2259bcbd62d
+ms.openlocfilehash: ee41f32ac2237e5e2c6e2e92fd18ea1c1952f7cd
+ms.sourcegitcommit: df4dde0fe6ce9e26cb4b3da4e4b878538d31decc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892296"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43521612"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -135,7 +135,7 @@ Per altre informazioni su teams e Office 365 ProPlus, vedere [come escludere tea
     - [versione a 32 bit](https://statics.teams.cdn.office.net/production-windows/1.3.00.4461/Teams_windows.msi)
     - [versione a 64 bit](https://statics.teams.cdn.office.net/production-windows-x64/1.3.00.4461/Teams_windows_x64.msi)
 
-    La versione minima dell'app desktop teams necessaria è la versione 1.2.00.31357. Il blocco PSTN non è supportato nelle versioni precedenti.
+    La versione minima dell'app desktop teams necessaria è la versione 1.3.00.4461. Il blocco PSTN non è supportato nelle versioni precedenti.
 
 2. Installare il file MSI nella VM VDI eseguendo uno dei comandi seguenti:
 
@@ -246,21 +246,21 @@ Puoi impostare i criteri usando l'interfaccia di amministrazione di Microsoft te
 Per assegnare i criteri di chiamata DisallowCalling e i criteri di riunione di AllOff agli utenti, seguire questa procedura:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**.
-2. Selezionare l'utente facendo clic a sinistra del nome utente, quindi fare clic su **Modifica impostazioni**.
-3. Effettuare le seguenti operazioni:
+2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
+3. Eseguire le operazioni seguenti:
     1.  In **criteri di chiamata**fare clic su **DisallowCalling**.
     2.  In **criteri riunione**fare clic su **AllOff**.
 4. Fare clic su **applica**.
 
-Per assegnare un criterio a più utenti alla volta, vedere [modificare le impostazioni utente di teams in blocco](edit-user-settings-in-bulk.md).
+Per assegnare un criterio a più utenti alla volta, vedere [modificare le impostazioni degli utenti di Teams in blocco](edit-user-settings-in-bulk.md).
 
-In alternativa, è anche possibile eseguire le operazioni seguenti:
+Si può anche procedere nel modo seguente:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa al criterio che vuoi assegnare. Ad esempio:
     - Accedere ai **Voice** > **criteri**per le chiamate vocali e quindi fare clic su **DisallowCalling**.
     - Accedere a **Meetings** > **criteri riunione**riunioni e quindi fare clic su **AllOff**.
-3. Selezionare **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
+3. Scegliere **Gestisci utenti**.
+4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 5. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
 
 #### <a name="assign-policies-using-powershell"></a>Assegnare criteri tramite PowerShell
@@ -283,7 +283,7 @@ Per altre informazioni sull'uso di PowerShell per gestire i criteri delle riunio
 
 ## <a name="migrate-teams-on-vdi-with-chat-and-collaboration-to-citrix-with-calling-and-meetings"></a>Eseguire la migrazione di teams su VDI con la chat e la collaborazione a Citrix con chiamate e riunioni
 
-Se si dispone di un'implementazione di teams su VDI con chat e collaborazione in cui sono stati impostati i criteri a livello di utente per disattivare le funzionalità di chiamata e riunione e si esegue la migrazione a Citrix con l'ottimizzazione AV, è necessario impostare i criteri per attivare le chiamate e funzionalità di riunione per questi team in utenti VDI.
+Se si dispone di un'implementazione di teams su VDI con chat e collaborazione in cui sono stati impostati i criteri a livello di utente per disattivare le funzionalità di chiamata e riunione e si esegue la migrazione a Citrix con l'ottimizzazione AV, è necessario impostare i criteri per attivare le funzionalità di chiamata e riunione per tali team in utenti VDI.
 
 ### <a name="set-policies-to-turn-on-calling-and-meeting-functionality"></a>Impostare i criteri per attivare le funzionalità di chiamata e riunione
 
@@ -298,21 +298,21 @@ Puoi usare l'interfaccia di amministrazione di Microsoft teams o PowerShell per 
 Per assegnare i criteri di chiamata AllowCalling e i criteri di riunione AllOn agli utenti, seguire questa procedura:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**.
-2. Selezionare l'utente facendo clic a sinistra del nome utente, quindi fare clic su **Modifica impostazioni**.
-3. Effettuare le seguenti operazioni:
+2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
+3. Eseguire le operazioni seguenti:
     1.  In **criteri di chiamata**fare clic su **AllowCalling**.
     2.  In **criteri riunione**fare clic su **Allon**.
 4. Fare clic su **applica**.
 
-Per assegnare un criterio a più utenti alla volta, vedere [modificare le impostazioni utente di teams in blocco](edit-user-settings-in-bulk.md).
+Per assegnare un criterio a più utenti alla volta, vedere [modificare le impostazioni degli utenti di Teams in blocco](edit-user-settings-in-bulk.md).
 
-In alternativa, è anche possibile eseguire le operazioni seguenti:
+Si può anche procedere nel modo seguente:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa al criterio che vuoi assegnare. Ad esempio:
     - Accedere ai **Voice** > **criteri**per le chiamate vocali e quindi fare clic su **AllowCalling**.
     - Accedere a **Meetings** > **criteri riunione**riunioni e quindi fare clic su **Allon**.
-3. Selezionare **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
+3. Scegliere **Gestisci utenti**.
+4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 5. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
 
 #### <a name="assign-policies-using-powershell"></a>Assegnare criteri tramite PowerShell
@@ -369,4 +369,4 @@ Per informazioni su come risolvere i problemi relativi a VDA e CWA, vedere [ques
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Installare Microsoft teams con MSI](msi-deployment.md)
-- [Panoramica di PowerShell Teams](teams-powershell-overview.md)
+- [Panoramica di PowerShell per Teams](teams-powershell-overview.md)

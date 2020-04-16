@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 75098323afa8aef9e80223cbc1883e9c12cb53c6
-ms.sourcegitcommit: 477aac9e14fced139ee7dd827942ce35b9769b63
+ms.openlocfilehash: 4b31f2efb613551ab17320900e45cf30d0ee11be
+ms.sourcegitcommit: df4dde0fe6ce9e26cb4b3da4e4b878538d31decc
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510695"
+ms.locfileid: "43521542"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Eseguire un'analisi eDiscovery del contenuto in Microsoft Teams
 
@@ -43,12 +43,12 @@ Non tutto il contenuto del team è eDiscoverable. La tabella seguente mostra i t
 | Indicatore di data e ora visualizzato quando un messaggio è stato letto da ogni utente | No | |
 | Registrazioni audio | No | |
 | Messaggi di canale privato | No | |
-| Emoji, gif, adesivi | No | |
+| Emoji, gif, adesivi | Sì | |
 | Frammenti di codice | No | |
 | Collegamenti alle chat | No | |
 | Reazioni (simili, cuori e così via) | No | |
 | Messaggi modificati | Sì | Se l'utente è in attesa, vengono mantenute le versioni precedenti dei messaggi modificati. |
-| Immagini in linea | No | |
+| Immagini in linea | Sì | |
 | Tabelle | No | |
 | Oggetto | No | |
 | Citazioni | Sì | Il contenuto tra virgolette è ricercabile. Tuttavia, i risultati della ricerca non indicano che il contenuto è stato citato. |
