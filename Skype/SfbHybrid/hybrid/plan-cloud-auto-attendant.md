@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Panoramica sull'utilizzo di un operatore automatico cloud con Skype for Business Server 2019
-ms.openlocfilehash: 2cb4c54e4c70e9187e44c5de3cb70fac85be30a6
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: f0b8018e7a926444e7920ccac31ed3ff4ab5c15f
+ms.sourcegitcommit: 477aac9e14fced139ee7dd827942ce35b9769b63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42150477"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510805"
 ---
 # <a name="plan-cloud-auto-attendants"></a>Pianificare gli operatori automatici del cloud
 
@@ -25,10 +25,10 @@ L'operatore automatico utilizzato con la messaggistica unificata di Exchange (Ex
 
 Questo significa intrinsecamente che si avrà un'implementazione ibrida di Skype for Business Server 2019 se si desidera utilizzare le funzionalità di messaggistica unificata come gli operatori automatici. Per informazioni dettagliate, vedere [configurare la connettività ibrida tra Skype for Business Server e Office 365](configure-hybrid-connectivity.md) .
 
-Un operatore automatico è un servizio cloud che accetta le chiamate ai clienti e i messaggi di saluto, fornisce loro le opzioni di menu e interagiscono con i chiamanti che utilizzano la voce o il tastierino per instradare le chiamate verso la destinazione corretta. A ciascun operatore automatico viene assegnato un **account risorse** (vedere[Configure Resource accounts](configure-onprem-ra.md)) sul sistema Skype for Business Server 2019 che verrà collegato direttamente a un operatore automatico nell'interfaccia di amministrazione di Microsoft teams. Vedere [che cosa sono gli operatori automatici cloud?](/SkypeForBusiness/what-is-phone-system-in-office-365/what-are-phone-system-auto-attendants.md) per ulteriori dettagli sugli operatori automatici e sulle opzioni e caratteristiche disponibili per gli operatori automatici.
+Un operatore automatico è un servizio cloud che accetta le chiamate dei clienti e riproduce i messaggi di saluto, fornisce le opzioni di menu e interagisce con i chiamanti che utilizzano la funzionalità vocale o il tastierino telefonico per instradare le chiamate verso la destinazione corretta. A ciascun operatore automatico viene assegnato un *account risorse* (vedere [Configure Resource accounts](configure-onprem-ra.md)) sul sistema Skype for Business Server 2019 che verrà collegato direttamente a un operatore automatico nell'interfaccia di amministrazione di Microsoft teams. Vedere [che cosa sono gli operatori automatici cloud?](/SkypeForBusiness/what-is-phone-system-in-office-365/what-are-phone-system-auto-attendants.md) per ulteriori dettagli sugli operatori automatici e sulle opzioni e caratteristiche disponibili per gli operatori automatici.
 
 > [!NOTE]
-> È possibile assegnare più numeri di servizio Microsoft o numeri ibridi a un operatore automatico.
+> È possibile assegnare più numeri di servizio Microsoft, numeri di routing diretto o numeri ibridi a un operatore automatico.
 
 Una chiamata in arrivo a un operatore automatico cloud può eseguire uno dei diversi percorsi, come illustrato di seguito:
 
@@ -58,7 +58,7 @@ Oltre ai requisiti di cui sopra, è necessario configurare i requisiti seguenti 
    Per ulteriori informazioni, vedere [pianificare la connettività ibrida tra Skype for Business Server e office 365](plan-hybrid-connectivity.md) e [configurare la connettività ibrida tra Skype for Business server e Office 365](configure-hybrid-connectivity.md).
 
 - Se si assegna un numero di telefono all'operatore automatico, sarà necessaria una licenza di [Office 365 Enterprise E5](/skypeforbusiness/skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e5-with-audio-conferencing) .
-- Creare [un account delle risorse online o](/MicrosoftTeams/manage-resource-accounts.md) di una [risorsa](configure-onprem-ra.md)locale per ogni operatore automatico e assegnare numeri di telefono e licenze. 
+- Creare [un account delle risorse online o](/MicrosoftTeams/manage-resource-accounts.md) di una [risorsa](configure-onprem-ra.md) locale per ogni operatore automatico e assegnare numeri di telefono e licenze. 
 
 ## <a name="migration-and-interoperability"></a>Migrazione e interoperabilità
 
@@ -108,7 +108,7 @@ Quando si dispone di una struttura solida in grado di soddisfare le proprie esig
 
 [Abilitazione della registrazione di prompt personalizzati tramite l'interfaccia telefonica](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/enable-custom-prompt-recording)
 
-[Che cosa sono gli operatori automatici cloud?](/SkypeForBusiness/what-is-phone-system-in-office-365/what-are-phone-system-auto-attendants)
+[Cosa sono gli operatori automatici cloud?](/SkypeForBusiness/what-is-phone-system-in-office-365/what-are-phone-system-auto-attendants)
 
 [Configurare un operatore automatico cloud](/microsoftteams/create-a-phone-system-auto-attendant)
 

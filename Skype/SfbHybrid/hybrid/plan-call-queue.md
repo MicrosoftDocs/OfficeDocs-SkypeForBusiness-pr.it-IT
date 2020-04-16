@@ -1,7 +1,7 @@
 ---
 title: Pianificare una coda di chiamata cloud
-ms.author: jambirk
-author: jambirk
+ms.author: crowe
+author: CarolynRowe
 manager: serdars
 ms.reviewer: wasseemh
 audience: ITPro
@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Panoramica sull'utilizzo di un operatore automatico cloud con Skype for Business Server 2019.
-ms.openlocfilehash: 24a0bba82ef38288f5c96cc7c51ce1bfb88c8f05
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: d14aeab9857f2a54e6622fb368193a2e270e0f49
+ms.sourcegitcommit: 477aac9e14fced139ee7dd827942ce35b9769b63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41735226"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510795"
 ---
 # <a name="plan-cloud-call-queues"></a>Pianificare le code di chiamata cloud
 
@@ -31,7 +31,7 @@ Inoltre, le code di chiamata cloud possono fornire:
 A ogni coda di chiamata viene assegnato un **account risorse** (vedere [Configure Resource accounts](configure-onprem-ra.md)) sul sistema Skype for Business Server 2019 che verrà collegato direttamente a una coda di chiamata nell'interfaccia di amministrazione di Microsoft teams. Per ulteriori informazioni sulle code di chiamata, vedere [creare una coda di chiamata cloud](/MicrosoftTeams/create-a-phone-system-call-queue) e quali opzioni e caratteristiche esistono per le code di chiamata.
 
 > [!NOTE]
-> È possibile assegnare più numeri di telefono a una coda di chiamata, ma devono essere numeri di servizio Microsoft o numeri ibridi.
+> È possibile assegnare più numeri di telefono a una coda di chiamata, ma devono essere numeri di servizio Microsoft, numeri di routing diretti o numeri ibridi.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -61,7 +61,7 @@ Quando si dispone di una struttura solida in grado di soddisfare le proprie esig
 
 [Abilitazione della registrazione di prompt personalizzati tramite l'interfaccia telefonica](https://docs.microsoft.com/exchange/voice-mail-unified-messaging/greetings-announcements-menus-and-prompts/enable-custom-prompt-recording)
 
-[Che cosa sono gli operatori automatici cloud?](/SkypeForBusiness/what-is-phone-system-in-office-365/what-are-phone-system-auto-attendants)
+[Cosa sono gli operatori automatici cloud?](/SkypeForBusiness/what-is-phone-system-in-office-365/what-are-phone-system-auto-attendants)
 
 [Configurare un operatore automatico cloud](/MicrosoftTeams/create-a-phone-system-auto-attendant)
 
@@ -69,4 +69,4 @@ Quando si dispone di una struttura solida in grado di soddisfare le proprie esig
 
 [Configurare la connettività ibrida tra Skype for Business Server e Office 365](configure-hybrid-connectivity.md)
 
-[Gestire gli account delle risorse in Microsoft Teams](/MicrosoftTeams/manage-resource-accounts)
+[Gestire gli account di risorsa in Microsoft Teams](/MicrosoftTeams/manage-resource-accounts)

@@ -13,20 +13,20 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Configurare un account delle risorse per Skype for Business Server 2019.
-ms.openlocfilehash: 14d2f161be54ac61c866597bdad141cf31138fbd
-ms.sourcegitcommit: 92a278c0145798266ecbe052e645b2259bcbd62d
+ms.openlocfilehash: 1de087abdf08420a6300ae45466e9696aacb1ed1
+ms.sourcegitcommit: 477aac9e14fced139ee7dd827942ce35b9769b63
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892306"
+ms.lasthandoff: 04/15/2020
+ms.locfileid: "43510785"
 ---
 # <a name="configure-resource-accounts"></a>Configurare gli account delle risorse
 
 Le implementazioni ibride di Skype for Business Server 2019 utilizzano solo i servizi cloud forniti dal sistema telefonico per la messaggistica unificata e non si integrano con Exchange Online. In Skype for Business Server 2019 si è ora in grado di utilizzare le code di chiamata cloud e gli operatori automatici descritti in [Ecco cosa si ottiene con il sistema telefonico in Office 365](/MicrosoftTeams/here-s-what-you-get-with-phone-system).
 
-Per utilizzare un operatore automatico o una coda di chiamata di sistema telefonico con Skype for Business Server 2019, è necessario creare gli account delle risorse che fungono da endpoint dell'applicazione e possono essere assegnati numeri di telefono, quindi utilizzare l'interfaccia di amministrazione dei team online per configurare la coda di chiamata o operatore automatico. Questo account risorse può essere ospitato online (vedere [gestire gli account delle risorse in Microsoft teams](/MicrosoftTeams/manage-resource-accounts) per creare gli account delle risorse ospitati online) o in locale, come descritto in questo articolo. In genere si dispone di più nodi dell'operatore automatico del sistema telefonico o della coda di chiamata, ognuno dei quali è mappato a un account delle risorse, che può essere ospitato online o in Skype for Business Server 2019.
+Per utilizzare un operatore automatico o una coda di chiamata di sistema telefonico con Skype for Business Server 2019, è necessario creare gli account delle risorse che fungono da endpoint dell'applicazione e possono essere assegnati numeri di telefono, quindi utilizzare l'interfaccia di amministrazione dei team online per configurare la coda di chiamata o l'operatore automatico. Questo account risorse può essere ospitato online (vedere [gestire gli account delle risorse in Microsoft teams](/MicrosoftTeams/manage-resource-accounts) per creare gli account delle risorse ospitati online) o in locale, come descritto in questo articolo. In genere si dispone di più nodi dell'operatore automatico del sistema telefonico o della coda di chiamata, ognuno dei quali è mappato a un account delle risorse, che può essere ospitato online o in Skype for Business Server 2019.
 
-Se si dispone di un operatore automatico di messaggistica unificata di Exchange e di un sistema di coda di chiamata, prima di passare a Exchange Server 2019 o Exchange Online, sarà necessario registrare manualmente i dettagli come descritto di seguito e quindi implementare un sistema completamente nuovo utilizzando l'interfaccia di amministrazione dei team .
+Se si dispone di un operatore automatico di messaggistica unificata di Exchange e di un sistema di coda di chiamata, prima di passare a Exchange Server 2019 o Exchange Online, sarà necessario registrare manualmente i dettagli come descritto di seguito e quindi implementare un sistema completamente nuovo utilizzando l'interfaccia di amministrazione dei team.
 
 ## <a name="overview"></a>Panoramica
 
@@ -105,7 +105,7 @@ La creazione di un account delle risorse che utilizza un numero di telefono rich
 
    L'account della risorsa avrà bisogno di un numero di telefono assegnato se verrà assegnato a un operatore automatico o una coda di chiamata di primo livello. I numeri di telefono dell'utente (abbonato) non possono essere assegnati a un account risorsa, è possibile utilizzare solo numeri di telefono a pedaggio o a pedaggio.
 
-     È possibile assegnare un numero ibrido di routing diretto all'account delle risorse. Per ulteriori informazioni, vedere [Plan Direct routing](/MicrosoftTeams/direct-routing-plan).
+     È possibile assegnare un routing diretto o un numero ibrido all'account delle risorse. Per ulteriori informazioni, vedere [Plan Direct routing](/MicrosoftTeams/direct-routing-plan) and [Plan cloud auto attendants](plan-cloud-auto-attendant.md).
 
      > [!NOTE]
      > I numeri di servizio di routing diretti assegnati agli account delle risorse per l'operatore automatico e le code di chiamata sono supportati solo per gli utenti e gli agenti di Microsoft teams.
