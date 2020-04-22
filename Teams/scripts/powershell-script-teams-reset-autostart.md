@@ -15,22 +15,22 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ad6411f82df31ec5f0be93cbd30d87a1832daa50
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 16d0c9270cfa387c10d1c3e4b05ac5bb1d5f3f0a
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826964"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780535"
 ---
-# <a name="powershell-script-sample---reset-the-autostart-setting-in-teams"></a><span data-ttu-id="575cd-103">Esempio di script di PowerShell-reimpostare l'impostazione autostart in teams</span><span class="sxs-lookup"><span data-stu-id="575cd-103">PowerShell script sample - Reset the autostart setting in Teams</span></span>
+# <a name="powershell-script-sample---reset-the-autostart-setting-in-teams"></a><span data-ttu-id="16536-103">Esempio di script di PowerShell-reimpostare l'impostazione autostart in teams</span><span class="sxs-lookup"><span data-stu-id="16536-103">PowerShell script sample - Reset the autostart setting in Teams</span></span>
 
-<span data-ttu-id="575cd-104">Usa questo script per reimpostare l'impostazione di avvio manuale dei team per ogni singolo utente.</span><span class="sxs-lookup"><span data-stu-id="575cd-104">Use this script to reset the Teams autostart setting on a per-user basis.</span></span> <span data-ttu-id="575cd-105">Include tutti i valori impostati dall'utente o dall'app teams.</span><span class="sxs-lookup"><span data-stu-id="575cd-105">This includes any values set by the user or the Teams app.</span></span> <span data-ttu-id="575cd-106">Per impostazione predefinita, teams avvia automaticamente quando un utente accede al proprio computer dopo l'installazione.</span><span class="sxs-lookup"><span data-stu-id="575cd-106">By default, Teams automatically starts when a user logs in to their computer after it's installed.</span></span>
+<span data-ttu-id="16536-104">Usa questo script per reimpostare l'impostazione di avvio manuale dei team per ogni singolo utente.</span><span class="sxs-lookup"><span data-stu-id="16536-104">Use this script to reset the Teams autostart setting on a per-user basis.</span></span> <span data-ttu-id="16536-105">Include tutti i valori impostati dall'utente o dall'app teams.</span><span class="sxs-lookup"><span data-stu-id="16536-105">This includes any values set by the user or the Teams app.</span></span> <span data-ttu-id="16536-106">Per impostazione predefinita, teams avvia automaticamente quando un utente accede al proprio computer dopo l'installazione.</span><span class="sxs-lookup"><span data-stu-id="16536-106">By default, Teams automatically starts when a user logs in to their computer after it's installed.</span></span>
 
-<span data-ttu-id="575cd-107">Se i team sono già stati distribuiti e si vuole impostare l'impostazione [Impedisci l'avvio automatico di Microsoft teams dopo l'installazione di criteri di gruppo](../msi-deployment.md#use-group-policy-recommended) per disabilitare l'autostart di teams, è necessario prima di tutto impostare i criteri di gruppo sul valore desiderato e quindi eseguire questo script.</span><span class="sxs-lookup"><span data-stu-id="575cd-107">If you've already deployed Teams and want to set the [Prevent Microsoft Teams from starting automatically after installation Group Policy setting](../msi-deployment.md#use-group-policy-recommended) to disable Teams autostart, you'll need to first set the Group Policy setting to the value you want, and then run this script.</span></span>
+<span data-ttu-id="16536-107">Se i team sono già stati distribuiti e si vuole impostare l'impostazione [Impedisci l'avvio automatico di Microsoft teams dopo l'installazione di criteri di gruppo](../msi-deployment.md#use-group-policy-recommended) per disabilitare l'autostart di teams, è necessario prima di tutto impostare i criteri di gruppo sul valore desiderato e quindi eseguire questo script.</span><span class="sxs-lookup"><span data-stu-id="16536-107">If you've already deployed Teams and want to set the [Prevent Microsoft Teams from starting automatically after installation Group Policy setting](../msi-deployment.md#use-group-policy-recommended) to disable Teams autostart, you'll need to first set the Group Policy setting to the value you want, and then run this script.</span></span>
 
-<span data-ttu-id="575cd-108">Dopo l'avvio di teams per un utente, le impostazioni di autostart non possono essere disattivate tramite criteri di gruppo.</span><span class="sxs-lookup"><span data-stu-id="575cd-108">After Teams is started for a user, the autostart settings can't be disabled by using Group Policy.</span></span>
+<span data-ttu-id="16536-108">Dopo l'avvio di teams per un utente, le impostazioni di autostart non possono essere disattivate tramite criteri di gruppo.</span><span class="sxs-lookup"><span data-stu-id="16536-108">After Teams is started for a user, the autostart settings can't be disabled by using Group Policy.</span></span>
 
-## <a name="sample-script"></a><span data-ttu-id="575cd-109">Script di esempio</span><span class="sxs-lookup"><span data-stu-id="575cd-109">Sample script</span></span>
+## <a name="sample-script"></a><span data-ttu-id="16536-109">Script di esempio</span><span class="sxs-lookup"><span data-stu-id="16536-109">Sample script</span></span>
 
 ````powershell
 <#
@@ -146,7 +146,7 @@ if($null -eq $teamsProc) {
 }
 ````
 
-## <a name="related-topics"></a><span data-ttu-id="575cd-110">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="575cd-110">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="16536-110">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="16536-110">Related topics</span></span>
 
-- [<span data-ttu-id="575cd-111">Installare Teams con MSI</span><span class="sxs-lookup"><span data-stu-id="575cd-111">Install Teams using MSI</span></span>](../msi-deployment.md)
-- [<span data-ttu-id="575cd-112">Distribuire Team con Office 365 ProPlus</span><span class="sxs-lookup"><span data-stu-id="575cd-112">Deploy Teams with Office 365 ProPlus</span></span>](https://docs.microsoft.com/deployoffice/teams-install)
+- [<span data-ttu-id="16536-111">Installare Teams con MSI</span><span class="sxs-lookup"><span data-stu-id="16536-111">Install Teams using MSI</span></span>](../msi-deployment.md)
+- [<span data-ttu-id="16536-112">Distribuire Team con le app Microsoft 365 per le aziende</span><span class="sxs-lookup"><span data-stu-id="16536-112">Deploy Teams with Microsoft 365 Apps for enterprise</span></span>](https://docs.microsoft.com/deployoffice/teams-install)
