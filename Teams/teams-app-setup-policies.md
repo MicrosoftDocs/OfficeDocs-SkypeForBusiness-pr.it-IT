@@ -19,25 +19,25 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 241a109a6d6a6809f3bcfe363884f6168e67ef12
-ms.sourcegitcommit: 86366b66b15870fe83cbb76e1ae7aa1ce9b3bfe1
+ms.openlocfilehash: 55b43e9fe156a2b3707cb5e99c57239345bf031e
+ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42858702"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43749823"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
 > [!NOTE]
 > Se hai abilitato l'impostazione dell'app a livello di organizzazione, **Consenti l'interazione con**le app personalizzate, potresti non vedere i criteri di configurazione delle app ancora nell'interfaccia di amministrazione di Microsoft teams. Attualmente viene implementato e sarà presto disponibile nell'organizzazione.
 
-Come amministratore, puoi usare i criteri di configurazione delle app per eseguire le operazioni seguenti:
+Gli amministratori possono usare i criteri di installazione app per eseguire le operazioni seguenti:
 
-- Personalizzare i team per evidenziare le app più importanti per gli utenti. Scegli le app da aggiungere e imposta l'ordine in cui vengono visualizzate. Il blocco delle app consente di mostrare le app necessarie agli utenti dell'organizzazione, inclusi quelli creati da terze parti o dagli sviluppatori dell'organizzazione.
-- Controlla se gli utenti possono aggiungere app ai team.
+- Personalizzare Teams in modo da evidenziare le app più importanti per gli utenti. Scegli le app da aggiungere e imposta l'ordine in cui vengono visualizzate. L'aggiunta di app consente di mettere in evidenza le app di cui gli utenti dell'organizzazione hanno bisogno, incluse quelle create da terze parti o dagli sviluppatori dell'organizzazione.
+- Controllare se gli utenti possono aggiungere app a Teams.
 - Installare app per conto degli utenti **(in anteprima)**. Scegli le app da installare per impostazione predefinita per gli utenti quando avviano teams. Tieni presente che gli utenti possono ancora installare le app se i [criteri di autorizzazione dell'app](teams-app-permission-policies.md) assegnati consentiti.
 
-Le app vengono aggiunte alla barra dell'app. Questa è la barra sul lato del client desktop teams e nella parte inferiore dei client per dispositivi mobili Teams (iOS e Android).
+Le app vengono aggiunte alla barra delle app. Questa barra si trova sul lato del client Teams desktop e nella parte inferiore dei client Teams per dispositivi mobili (iOS e Android).
 
 |Client desktop Teams  |Client per dispositivi mobili Teams |
 |---------|---------|
@@ -45,7 +45,7 @@ Le app vengono aggiunte alla barra dell'app. Questa è la barra sul lato del cli
 
 Per vedere le app preinstallate, nella barra dell'app gli utenti fanno clic su **... Altre app** nei client desktop e Web teams e scorrere rapidamente verso l'alto nei client per dispositivi mobili.
 
-Puoi gestire i criteri di configurazione delle app nell'interfaccia di amministrazione di Microsoft teams. Puoi usare il criterio globale (predefinito per l'intera organizzazione) o creare criteri personalizzati e assegnarli agli utenti. Gli utenti dell'organizzazione otterranno automaticamente il criterio globale a meno che non si creino e non si assegnano criteri personalizzati. Per gestire questi criteri è necessario essere un amministratore globale o un servizio di teams.
+Puoi gestire i criteri di configurazione delle app nell'interfaccia di amministrazione di Microsoft teams. È possibile usare il criterio globale (predefinito per l'intera organizzazione) o creare criteri personalizzati e assegnarli agli utenti. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato. Per gestire questi criteri, è necessario essere un amministratore globale o un amministratore del servizio Teams.
 
 Per includere le app desiderate, è possibile modificare le impostazioni del criterio globale. Se si desidera personalizzare i team per diversi gruppi di utenti dell'organizzazione, creare e assegnare uno o più criteri personalizzati. Se a un utente viene assegnato un criterio personalizzato, tale criterio si applica all'utente. Se a un utente non viene assegnato un criterio personalizzato, il criterio globale si applica all'utente.
 
@@ -89,7 +89,7 @@ Puoi usare l'interfaccia di amministrazione di Microsoft teams per creare criter
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di configurazione**delle **app teams**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
 3. Da qui apportare le modifiche desiderate.
-4. Fai clic su **Salva**.
+4. Fare clic su **Salva**.
 
 ## <a name="assign-a-custom-app-setup-policy-to-users"></a>Assegnare criteri di configurazione dell'app personalizzati agli utenti
 
@@ -98,18 +98,18 @@ Puoi usare l'interfaccia di amministrazione di Microsoft teams per assegnare un 
 ### <a name="assign-a-custom-app-setup-policy-to-users"></a>Assegnare criteri di configurazione dell'app personalizzati agli utenti
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi fai clic sull'utente.
-2. Selezionare l'utente facendo clic a sinistra del nome utente, quindi fare clic su **Modifica impostazioni**.
+2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
 3. In **criteri di configurazione delle app**selezionare i criteri di configurazione dell'app che si desidera assegnare e quindi fare clic su **applica**.
 
-Per assegnare un criterio a più utenti alla volta, vedere [modificare le impostazioni utente di teams in blocco](edit-user-settings-in-bulk.md).
+Per assegnare un criterio a più utenti alla volta, vedere [modificare le impostazioni degli utenti di Teams in blocco](edit-user-settings-in-bulk.md).
 
-In alternativa, è anche possibile eseguire le operazioni seguenti:
+Si può anche procedere nel modo seguente:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di configurazione**delle **app teams**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
-3. Selezionare **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
-5. Dopo aver completato l'aggiunta di utenti, selezionare **Salva**.
+3. Scegliere **Gestisci utenti**.
+4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
+5. Dopo avere aggiunto gli utenti, selezionare **Salva**.
 
 ### <a name="assign-a-custom-app-setup-policy-to-users-in-a-group"></a>Assegnare criteri di configurazione dell'app personalizzati agli utenti di un gruppo
 
@@ -182,7 +182,7 @@ Con i client di teams per dispositivi mobili, gli utenti vedranno le app di core
 
 #### <a name="can-users-change-the-order-of-apps-pinned-through-a-policy"></a>Gli utenti possono modificare l'ordine delle app bloccati da un criterio?
 
-Attualmente gli utenti possono modificare l'ordine delle app bloccate nei client per dispositivi mobili di teams, ma non nei client desktop o Web teams.
+Gli utenti possono modificare l'ordine delle app aggiunte nei client desktop e mobili di teams se l'opzione **Consenti il blocco utente** è attivata. Gli utenti non possono modificare l'ordine delle app aggiunte nei client Web di teams.
 
 ### <a name="custom-teams-apps"></a>App Team personalizzate
 
