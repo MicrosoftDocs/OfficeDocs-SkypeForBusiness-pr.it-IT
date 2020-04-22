@@ -18,17 +18,17 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: e109d3a8f43d6f989c96709562efbf759c0e562e
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 91e2763fac952b7188284dcf09e6fc0b7cc4bf16
+ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137696"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43749863"
 ---
 # <a name="quality-of-experience-review-guide"></a>Guida sul controllo della qualità dell'esperienza 
 
 <!-- Note that this link to the Word doc is intentionally NOT the aka.ms/qerquide link -->
-Questa guida riguarda la fase di valori di unità per Microsoft teams e Skype for business online. È possibile [scaricare una versione di Word](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/quality-of-experience-review-guide.docx?raw=true) di questa guida.
+Questa guida riguarda la fase di valori di unità per Microsoft teams e Skype for business online. 
 
 ## <a name="introduction"></a>Introduzione
 
@@ -478,15 +478,15 @@ Per una formazione e risorse più approfondite, vedere l' [appendice](#other-res
 
 -   Accedere all'interfaccia di **amministrazione di Microsoft teams** e selezionare il collegamento a Call Quality dashboard, come illustrato nella figura seguente.
 
-![Screenshot del dashboard qualità chiamata selezionato.](media/qerguide-image-mopo.png "Nel riquadro di spostamento sinistro è selezionato il collegamento al dashboard qualità chiamata.")
+    ![Screenshot del dashboard qualità chiamata selezionato.](media/qerguide-image-mopo.png "Nel riquadro di spostamento sinistro è selezionato il collegamento al dashboard qualità chiamata.")
 
-_Figura 7-accesso a Call Quality dashboard tramite l'interfaccia di amministrazione di Microsoft Teams_
+    _Figura 7-accesso a Call Quality dashboard tramite l'interfaccia di amministrazione di Microsoft Teams_
 
 -   Accedere agli > **strumenti**di interfaccia di **amministrazione di Skype for business**legacy e selezionare il collegamento a Call Quality dashboard, come illustrato nella figura seguente.
 
-![Screenshot di Call Quality dashboard selezionato nel riquadro principale.](media/qerguide-image-legacyui.png "Gli strumenti sono selezionati nel riquadro di spostamento sinistro e il collegamento a Call Quality dashboard è selezionato nel riquadro principale.")
+    ![Screenshot di Call Quality dashboard selezionato nel riquadro principale.](media/qerguide-image-legacyui.png "Gli strumenti sono selezionati nel riquadro di spostamento sinistro e il collegamento a Call Quality dashboard è selezionato nel riquadro principale.")
 
-_Figura 8-accesso a Call Quality dashboard tramite l'interfaccia di amministrazione di Skype for business_
+    _Figura 8-accesso a Call Quality dashboard tramite l'interfaccia di amministrazione di Skype for business_
 
 
 ### <a name="getting-started"></a>Introduzione
@@ -634,7 +634,7 @@ Il formato del file di dati caricato deve soddisfare i requisiti seguenti per su
 
 -   Per ogni colonna, se il tipo di dati è stringa, i dati possono essere vuoti (ma deve essere comunque separato da un delimitatore appropriato, ovvero un carattere di tabulazione o una virgola). Questo assegna un valore di stringa vuoto solo al campo.
 
--   Per ogni riga devono essere presenti 14 colonne. Ogni colonna deve avere il tipo di dati descritto nella tabella seguente e le colonne devono essere nell'ordine elencato nella tabella.
+-   Devono essere presenti 14 colonne per ogni riga (o 15 se si vuole aggiungere la colonna VPN facoltativa). Ogni colonna deve avere il tipo di dati descritto nella tabella seguente e le colonne devono essere nell'ordine elencato nella tabella.
 
 _Tabella 5-struttura dei file in costruzione_
 

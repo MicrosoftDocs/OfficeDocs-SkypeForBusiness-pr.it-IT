@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 26eb3af88b6e16de0535d25d4b5205a72626b7b2
-ms.sourcegitcommit: df4dde0fe6ce9e26cb4b3da4e4b878538d31decc
+ms.openlocfilehash: ca163d2a705b4aaebc77c03dbf4c92edf9c5d601
+ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521532"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43749573"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -111,22 +111,51 @@ Quando gli utenti in modalità Isole pianificano una riunione in Outlook, in gen
 Il componente aggiuntivo Riunione di Teams è ancora in fase di sviluppo, pertanto è importante tenere presente quanto segue:
 
 - Il componente aggiuntivo è adatto a riunioni programmate con partecipanti specifici, non alle riunioni in un canale. Le riunioni nei canali devono essere programmate direttamente in Teams.
-- Il componente aggiuntivo non funzionerà se un Proxy di autenticazione si trova nel percorso di rete relativo ai servizi di Teams e del PC dell'utente.
+- Il componente aggiuntivo non funzionerà se un proxy di autenticazione si trova nel percorso di rete del PC e dei servizi Teams dell'utente.
 - Gli utenti non possono programmare gli eventi live all’interno di Outlook. Andare su Teams per pianificare gli eventi live. Per altre informazioni, vedere [Che cosa sono gli eventi live di Microsoft Teams?](teams-live-events/what-are-teams-live-events.md).
+
+Altre informazioni su [riunioni e chiamate in Microsoft Teams](https://support.office.com/article/Meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8).
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
+Eseguire la procedura seguente per risolvere i problemi relativi al componente aggiuntivo riunione teams.
+
+### <a name="teams-meeting-add-in-in-outlook-for-windows-does-not-show"></a>Il componente aggiuntivo riunione teams in Outlook per Windows non viene visualizzato
+
 Se non si riesce a trovare il componente aggiuntivo Riunione di Teams per Outlook per l'installazione, provare a eseguire questa procedura di risoluzione dei problemi.
 
-- Assicurarsi che siano stati applicati tutti gli aggiornamenti disponibili per il client desktop di Outlook.
-- Riavviare il client desktop di Teams.
-- Disconnettersi e quindi eseguire di nuovo l'accesso al client desktop di Teams.
-- Riavviare il client desktop di Outlook. Verificare che Outlook non sia in uso in modalità amministratore.
+- Verificare che l'utente disponga di un criterio di aggiornamento di teams che consente la pianificazione delle riunioni in teams. Per altre informazioni, vedere [eseguire l'aggiornamento da Skype for business a teams](https://docs.microsoft.com/microsoftteams/upgrade-to-teams-on-prem-overview#meetings) .
+- Verificare che l'utente disponga di un criterio di riunione teams che consenta il componente aggiuntivo per Outlook. Per altre informazioni, vedere [gestire i criteri di riunione in teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams#allow-the-outlook-add-in) .
+- Verificare che l'utente abbia installato il client desktop teams. Il componente aggiuntivo riunione non verrà installato quando si usa solo il client Web teams.
+- Verificare che l'utente disponga delle autorizzazioni per l'esecuzione di regsvr32. exe.
+- Verificare che siano stati applicati tutti gli aggiornamenti disponibili per il client desktop Outlook.
 - Assicurarsi che il nome dell'account utente connesso non contenga spazi. (Si tratta di un problema noto che verrà risolto in un prossimo aggiornamento.)
-- Assicurarsi che il Single Sign-On (SSO) sia abilitato.
+- Eseguire la procedura seguente:
+  - Riavviare il client desktop di Teams.
+  - Disconnettersi e quindi eseguire di nuovo l'accesso al client desktop di Teams.
+  - Riavviare il client desktop di Outlook. Verificare che Outlook non sia in uso in modalità amministratore.
+
+Se il componente aggiuntivo non è ancora visibile, verificare che non sia disabilitato in Outlook.
+
+- In Outlook scegliere **file** e quindi **Opzioni**.
+- Selezionare la scheda **componenti** aggiuntivi della finestra di dialogo **Opzioni di Outlook** .
+- Verificare che il **componente aggiuntivo riunione Microsoft teams per Microsoft Office** sia elencato nell'elenco **componenti aggiuntivi attivi dell'applicazione**
+- Se il componente aggiuntivo riunione teams è elencato nell'elenco componenti aggiuntivi per l' **applicazione disabilitata** , **selezionare componenti aggiuntivi com** in **Gestisci** e quindi selezionare **Vai...**
+- Impostare la casella di controllo accanto a **Microsoft teams Meeting Add-in per Microsoft Office**.
+- Scegliere **OK** per tutte le finestre di dialogo e riavviare Outlook.
+
+Per informazioni generali su come gestire i componenti aggiuntivi, vedere [visualizzare, gestire e installare componenti aggiuntivi nelle applicazioni di Office](https://support.office.com/article/View-manage-and-install-add-ins-in-Office-programs-16278816-1948-4028-91E5-76DCA5380F8D).
+
+Se il componente aggiuntivo non viene ancora visualizzato, eseguire la procedura seguente per verificare le impostazioni del registro di sistema.
+
+> [!NOTE]
+> La modifica in modo non corretto del registro di sistema può danneggiare gravemente il computer. Prima di apportare modifiche al registro di sistema, è consigliabile eseguire il backup di tutti i dati valutati nel computer.
+- Avviare RegEdit. exe
+- Passare a HKEY_CURRENT_USER \Software\Microsoft\Office\Outlook\Addins
+- Verificare che esista TeamsAddin. FastConnect.
+- In TeamsAddin. FastConnect verificare che LoadBehavior esista e sia impostato su 3.
+  - Se LoadBehavior ha un valore diverso da 3, cambiarlo in 3 e riavviare Outlook.
+
+### <a name="delegate-scheduling-does-not-work"></a>La pianificazione del delegato non funziona
 
 Se l'amministratore ha configurato Microsoft Exchange per [controllare l'accesso a Exchange Web Server (EWS)](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange), un eventuale delegato non potrà pianificare una riunione di Teams per conto del suo superiore. La soluzione per questa configurazione è in fase di sviluppo e verrà rilasciata in futuro. 
-
-Per informazioni generali su come disabilitare i componenti aggiuntivi, vedere [Visualizzare, gestire e installare componenti aggiuntivi nei programmi di Office](https://support.office.com/article/View-manage-and-install-add-ins-in-Office-programs-16278816-1948-4028-91E5-76DCA5380F8D).
-
-Altre informazioni su [riunioni e chiamate in Microsoft Teams](https://support.office.com/article/Meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8).

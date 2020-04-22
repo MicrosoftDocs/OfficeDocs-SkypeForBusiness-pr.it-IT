@@ -12,12 +12,12 @@ ms.reviewer: vinbel
 search.appverid: MET150
 description: Informazioni sulle funzionalità di interoperabilità tra gli utenti di team nell'organizzazione e gli utenti Skype (consumer).
 localization_priority: Normal
-ms.openlocfilehash: 6e157cb04687d0577ad5b4cb5fd8da7d2f55e0b4
-ms.sourcegitcommit: 87022aa009eae868e1fd945dc299367e16733a3c
+ms.openlocfilehash: ca67cd1f96b2a0e8bc9b65e60ccf71fdea53763a
+ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42545025"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43749553"
 ---
 # <a name="teams-and-skype-interoperability"></a>Interoperabilità teams e Skype
 
@@ -78,9 +78,9 @@ Nell'interfaccia di amministrazione di Microsoft teams accedere a **Impostazioni
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-Usa il cmdlet [Set-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/set-csexternalaccesspolicy) insieme al ```EnablePublicCloudAccess``` parametro per controllare se gli utenti del team possono comunicare con gli utenti Skype. Impostando il parametro ```true``` per consentire agli utenti di comunicare con utenti Skype.
+Usa il cmdlet [Set-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/set-csexternalaccesspolicy) insieme al ```EnablePublicCloudAccess``` parametro per controllare se gli utenti del team possono comunicare con gli utenti Skype. Impostando il parametro ```true``` per consentire agli utenti di comunicare con utenti Skype. Tieni presente che ```EnablePublicCloudAudioVideoAccess``` il parametro può essere usato per abilitare/disabilitare le chiamate audio/video.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Gestire l'accesso esterno in teams](manage-external-access.md)
-- [Panoramica di PowerShell Teams](teams-powershell-overview.md)
+- [Panoramica di PowerShell per Teams](teams-powershell-overview.md)

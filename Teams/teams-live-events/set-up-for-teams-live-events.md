@@ -18,43 +18,48 @@ description: Configurazione dell'ambiente per gli eventi live in Teams, incluse 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ae30fdb824c62027d1a704435e80df2a9abf1f85
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
-ms.translationtype: HT
+ms.openlocfilehash: 8e3110717cd9279d881415bf1e01d03a1cbee293
+ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140565"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43749803"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi live in Microsoft Teams
 
 La configurazione per gli eventi live prevede diversi passaggi.
 
 ## <a name="step-1-set-up-your-network-for-live-events-in-teams"></a>Passaggio 1: Configurare la rete per gli eventi live in Teams
+
 Per produrre eventi live in Teams occorre [preparare la rete dell'organizzazione per Teams](https://docs.microsoft.com/microsoftteams/prepare-network).  
 
 ## <a name="step-2-get-and-assign-licenses"></a>Passaggio 2: Ottenere e assegnare licenze
-Assicurarsi di aver assegnato correttamente le licenze per [chi può creare e pianificare eventi live](plan-for-teams-live-events.md#who-can-create-and-schedule-live-events) e [chi può guardare gli eventi live](plan-for-teams-live-events.md#who-can-watch-live-events).
+
+Assicurarsi di aver assegnato correttamente le licenze per [chi può creare e pianificare eventi live](plan-for-teams-live-events.md#who-can-attend-create-and-schedule-live-events) e [chi può guardare gli eventi live](plan-for-teams-live-events.md#who-can-watch-live-events).
 
 ## <a name="step-3-set-up-live-events-policies"></a>Passaggio 3: Configurare i criteri per gli eventi live
+
 I criteri per gli eventi live consentono di controllare chi nell'organizzazione può organizzare eventi live e le funzionalità disponibili negli eventi creati. È possibile usare il criterio predefinito o creare uno o più criteri personalizzati per gli eventi live. Dopo aver creato un criterio personalizzato, assegnarlo a un utente o a un gruppo di utenti dell'organizzazione.
 
 > [!NOTE]
-> Se non si creano e assegnano criteri personalizzati, gli utenti dell'organizzazione riceveranno il criterio globale. Per impostazione predefinita, nel criterio globale la pianificazione di eventi live per gli utenti di Teams è abilitata, le didascalie e i sottotitoli in tempo reale sono disattivati, chiunque all'interno dell'organizzazione può partecipare agli eventi live e l'impostazione di registrazione è configurata in modo da registrare sempre. 
+> Se non si creano e assegnano criteri personalizzati, gli utenti dell'organizzazione riceveranno il criterio globale. Per impostazione predefinita, nel criterio globale la pianificazione di eventi live per gli utenti di Teams è abilitata, le didascalie e i sottotitoli in tempo reale sono disattivati, chiunque all'interno dell'organizzazione può partecipare agli eventi live e l'impostazione di registrazione è configurata in modo da registrare sempre.
 
 ### <a name="create-or-edit-a-live-events-policy"></a>Creare o modificare un criterio per gli eventi live
+
 <a name="bkcreatepolicy"> </a>
 
 **![Icona che mostra il logo di Microsoft Teams](../media/teams-logo-30x30.png) Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nel riquadro di spostamento sinistro passare a **Riunioni** > **Criteri eventi live**. 
+1. Nel riquadro di spostamento sinistro passare a **Riunioni** > **Criteri eventi live**.
 2. Eseguire una delle operazioni seguenti:
-- Se si vuole modificare il criterio predefinito esistente, scegliere **Globale (predefinito a livello di organizzazione)**. 
-- Se si vuole creare un nuovo criterio personalizzato, scegliere **Nuovo criterio**. 
-- Se si vuole modificare un criterio personalizzato, selezionare il criterio e quindi scegliere **Modifica**. 
+
+- Se si vuole modificare il criterio predefinito esistente, scegliere **Globale (predefinito a livello di organizzazione)**.
+- Se si vuole creare un nuovo criterio personalizzato, scegliere **Nuovo criterio**.
+- Se si vuole modificare un criterio personalizzato, selezionare il criterio e quindi scegliere **Modifica**.
 
     Ecco le impostazioni che è possibile modificare per soddisfare le esigenze dell'organizzazione.
 
-    ![Screenshot delle impostazioni dei criteri per gli eventi live](../media/teams-live-events-policies.png "Screenshot dell'impostazione dei criteri per gli eventi live nell'interfaccia di amministrazione di Microsoft Teams.") 
+    ![Screenshot delle impostazioni dei criteri per gli eventi live](../media/teams-live-events-policies.png "Screenshot dell'impostazione dei criteri per gli eventi live nell'interfaccia di amministrazione di Microsoft Teams.")
 
 |Impostazione  |Descrizione  |
 |---------|---------|

@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 17cf1e32b26edc609bea9e679c9f5ee5f4cc66d2
-ms.sourcegitcommit: f9860dbf3c719fec5ffc1874b503b6db252afe10
+ms.openlocfilehash: 42f6b185a8a09b0aae139175acfc632b84387db8
+ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43237899"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43749443"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
@@ -118,9 +118,9 @@ Per altre informazioni su come eseguire Office 365 eDiscovery nel centro sicurez
 
 Abbiamo un articolo specifico per le squadre per altre informazioni, [eDiscovery delle chat Guest-to-Guest](eDiscovery-investigation.md).
 
-I clienti possono sfruttare eDiscovery sul posto o [Advanced eDiscovery] per i loro [requisiti](https://docs.microsoft.com/microsoft-365/compliance/office-365-advanced-ediscovery). La tabella seguente illustra le differenze tra i due:
+I clienti possono sfruttare eDiscovery o [Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/office-365-advanced-ediscovery) per i loro requisiti. La tabella seguente illustra le differenze tra i due:
 
-| |EDiscovery sul posto  |EDiscovery avanzato  |
+| |eDiscovery  |EDiscovery avanzato  |
 |---------|---------|---------|
 |Gestione dei casi     |X        |X         |
 |Controllo di accesso  |X         |X         |

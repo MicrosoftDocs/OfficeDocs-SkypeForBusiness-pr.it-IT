@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e423bedc05dbbf303ecfdbf569ff9e1b096bd3d7
-ms.sourcegitcommit: c16451519e05b47bbb77e09dacd13ff212617e91
-ms.translationtype: HT
+ms.openlocfilehash: 8a3425ca19ded72f814e8f81252b7224c2c08a42
+ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42327838"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43749494"
 ---
 # <a name="get-clients-for-microsoft-teams"></a>Ottenere i client per Microsoft Teams 
 
@@ -45,6 +45,9 @@ Il client desktop di Microsoft Teams è un'applicazione autonoma ed è anche [di
 I client desktop supportano le comunicazioni in tempo reale (audio, video e condivisione del contenuto) per riunioni del team, chiamate di gruppo e chiamate private tra due persone.
 
 I client desktop possono essere scaricati e installati direttamente dagli utenti finali dalla pagina [https://teams.microsoft.com/downloads](https://go.microsoft.com/fwlink/?linkid=855754), se hanno le autorizzazioni locali appropriate. I diritti di amministratore non sono necessari per installare il client di Teams in un PC, ma lo sono per installarlo in un Mac.
+
+> [!NOTE]
+> Per altre informazioni sull'installazione di Team su un Chromebook, vedere [come installare ed eseguire Microsoft Office in un Chromebook](https://support.office.com/article/how-to-install-and-run-microsoft-office-on-a-chromebook-32f14a23-2c1a-4579-b973-d4b1d78561ad).
 
 Gli amministratori IT possono usare il proprio metodo preferito per distribuire i file di installazione nei computer dell'organizzazione. Alcuni esempi sono Microsoft Endpoint Configuration Manager in Windows o Jamf Pro in macOS. Per ottenere il pacchetto MSI per la distribuzione in Windows, vedere [Installare Microsoft Teams con MSI](msi-deployment.md).  
 
@@ -75,6 +78,8 @@ Quando gli utenti avviano per la prima volta una chiamata usando il client di Mi
 > [!NOTE]
 > La configurazione di Windows Firewall verrà modificata anche se il messaggio viene ignorato selezionando "Annulla". Verranno create due regole in entrata per teams.exe, con l'azione Blocca per i protocolli TCP e UDP.
 
+Se si vuole impedire ai team di richiedere agli utenti di creare regole del firewall quando gli utenti effettuano la prima chiamata da teams, usare la [regola del firewall in ingresso script di PowerShell di esempio](#sample-powershell-script---inbound-firewall-rule) di seguito. 
+
 ### <a name="mac"></a>Mac
 
 Gli utenti Mac possono installare Teams con un file di installazione PKG per i computer che eseguono macOS. Per installare il client Mac è necessario l'accesso amministrativo. Il client macOS viene installato nella cartella /Applicazioni.
@@ -103,7 +108,7 @@ Gli amministratori IT possono usare la distribuzione gestita di Teams per distri
 ### <a name="linux"></a>Linux
 
 Gli utenti potranno installare pacchetti Linux nativi nei formati `.deb` e `.rpm`.
-Installando il pacchetto DEB o RPM verrà installato automaticamente il repository del pacchetto
+L'installazione del pacchetto DEB o RPM installerà automaticamente il repository del pacchetto.
 - DEB `https://packages.microsoft.com/repos/ms-teams stable main`
 - RPM `https://packages.microsoft.com/yumrepos/ms-teams` 
 
@@ -214,7 +219,7 @@ Per gli amministratori IT non sono attualmente disponibili opzioni per configura
 
 ![Screenshot delle impostazioni di notifica.](media/Get_clients_for_Microsoft_Teams_image6.png)
 
-## <a name="sample-powershell-script"></a>Script di PowerShell di esempio
+## <a name="sample-powershell-script---inbound-firewall-rule"></a>Esempio di script di PowerShell-regola del firewall in ingresso
 
 Questo script di esempio, che deve essere eseguito nei computer client nel contesto di un account amministratore con privilegi elevati, creerà una nuova regola del firewall in entrata per ogni cartella utente trovata in c:\Users. Questa regola impedisce all'applicazione di chiedere agli utenti di creare regole del firewall quando effettuano la loro prima chiamata da Teams. 
 

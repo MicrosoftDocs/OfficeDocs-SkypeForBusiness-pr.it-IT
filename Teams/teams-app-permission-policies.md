@@ -22,23 +22,23 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: baf3f025dd9b2340f59aee18d72d3707e4cab8fd
-ms.sourcegitcommit: dde63e1b92c0bc3dbb41d8670778b863c3bc9bec
+ms.openlocfilehash: 3382eff6334c3879c1c30d503101446ceaae4df9
+ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2020
-ms.locfileid: "42601413"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43749813"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione delle app in Microsoft Teams
 
-Come amministratore, puoi usare i criteri di autorizzazione delle app per controllare quali app sono disponibili per gli utenti di Microsoft teams nell'organizzazione. È possibile consentire o bloccare tutte le app o le app specifiche pubblicate da Microsoft, da terze parti e dall'organizzazione. Quando si blocca un'app, gli utenti che hanno il criterio non riescono a installarlo dall'app teams Store. Per gestire questi criteri è necessario essere un amministratore globale o un servizio di teams.
+Gli amministratori possono usare i criteri di autorizzazione app per controllare quali app sono disponibili per gli utenti di Microsoft Teams dell'organizzazione. È possibile consentire o bloccare tutte le app o le app specifiche pubblicate da Microsoft, da terze parti e dall'organizzazione. Quando si blocca un'app, gli utenti a cui è assegnato il criterio non possono a installarla dallo store delle app di Teams. Per gestire questi criteri, è necessario essere un amministratore globale o un amministratore del servizio Teams.
 
 Puoi gestire i criteri di autorizzazione delle app nell'interfaccia di amministrazione di Microsoft teams. Puoi usare il criterio globale (predefinito per l'intera organizzazione) oppure creare e assegnare criteri personalizzati a singoli utenti o utenti di un gruppo.  
 
 ![Screenshot dei criteri di autorizzazione delle app](media/app-permission-policies.png)
 
 > [!NOTE]
-> Gli utenti dell'organizzazione otterranno automaticamente il criterio globale a meno che non si creino e non si assegnano criteri personalizzati. Le impostazioni dell'app a livello di organizzazione eseguono l'override dei criteri globali e di tutti i criteri personalizzati creati e assegnati agli utenti.
+> Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato. Le impostazioni dell'app a livello di organizzazione eseguono l'override dei criteri globali e di tutti i criteri personalizzati creati e assegnati agli utenti.
 
 Se l'organizzazione è già in teams, le impostazioni dell'app configurate in **impostazioni a livello di tenant** nell'interfaccia di amministrazione di Microsoft 365 si riflettono nelle impostazioni dell'app a livello di organigramma nella pagina [Manage Apps](manage-apps.md) . Se non si ha familiarità con i team e si è appena iniziato, per impostazione predefinita tutte le app sono consentite nel criterio globale. Sono incluse le app pubblicate da Microsoft, terze parti e dall'organizzazione.
 
@@ -69,7 +69,7 @@ Per controllare le app disponibili per diversi gruppi di utenti dell'organizzazi
     1. Dopo aver scelto l'elenco di app, fare clic su **Consenti**.
 
 6. Allo stesso modo, se si è selezionato **Blocca app specifiche e si consente a tutti gli altri utenti**, cercare e aggiungere le app che si vuole bloccare.
-7. Fai clic su **Salva**.
+7. Fare clic su **Salva**.
 
 ## <a name="edit-an-app-permission-policy"></a>Modificare i criteri di autorizzazione delle app
 
@@ -78,7 +78,7 @@ Per controllare le app disponibili per diversi gruppi di utenti dell'organizzazi
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di autorizzazione**delle **app teams**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
 3. Da qui apportare le modifiche desiderate. Puoi gestire le impostazioni in base all'App Publisher e aggiungere e rimuovere app in base all'impostazione Consenti/blocca.
-4. Fai clic su **Salva**.
+4. Fare clic su **Salva**.
 
 ## <a name="assign-a-custom-app-permission-policy-to-users"></a>Assegnare un criterio di autorizzazione app personalizzata agli utenti
 
@@ -87,17 +87,17 @@ Puoi usare l'interfaccia di amministrazione di Microsoft teams per assegnare un 
 ### <a name="assign-a-custom-app-permission-policy-to-a-user"></a>Assegnare un criterio di autorizzazione dell'app personalizzata a un utente
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**.
-2. Selezionare l'utente facendo clic a sinistra del nome utente, quindi fare clic su **Modifica impostazioni**.
+2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
 3. In **criteri di autorizzazione**per le app selezionare i criteri di autorizzazione per le app da assegnare e quindi fare clic su **applica**.
 
-Per assegnare un criterio a più utenti alla volta, vedere [modificare le impostazioni utente di teams in blocco](edit-user-settings-in-bulk.md).
+Per assegnare un criterio a più utenti alla volta, vedere [modificare le impostazioni degli utenti di Teams in blocco](edit-user-settings-in-bulk.md).
 
-In alternativa, è anche possibile eseguire le operazioni seguenti:
+Si può anche procedere nel modo seguente:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di autorizzazione**delle **app teams**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
-3. Selezionare **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
+3. Scegliere **Gestisci utenti**.
+4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 5. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
 
 ### <a name="assign-a-custom-app-permission-policy-to-users-in-a-group"></a>Assegnare criteri di autorizzazione per le app personalizzate agli utenti di un gruppo
@@ -149,6 +149,9 @@ Per abilitare un'app di terze parti per un utente o un gruppo di utenti dell'org
 
 ### <a name="working-with-app-permission-policies"></a>Uso dei criteri di autorizzazione delle app
 
+#### <a name="what-app-interactions-do-permission-policies-affect"></a>Quali interazioni delle app influenzano i criteri di autorizzazione?
+I criteri di autorizzazione regolano l'utilizzo dell'app controllando installazione, individuazione e interazione per gli utenti finali. Gli amministratori possono comunque gestire le app nell'interfaccia di amministrazione di Microsoft teams indipendentemente dai criteri di autorizzazione assegnati.
+
 #### <a name="can-i-control-line-of-business-lob-apps"></a>È possibile controllare le app line of business (LOB)?
 Sì, è possibile usare i criteri di autorizzazione delle app per controllare l'implementazione e la distribuzione delle app personalizzate (line-of-business). È possibile creare criteri personalizzati o modificare i criteri globali per consentire o bloccare le app personalizzate in base alle esigenze dell'organizzazione.
 
@@ -183,7 +186,7 @@ Ad esempio, quando un'app viene bloccata, gli utenti non possono eseguire una de
 
 Il portale Legacy ha consentito il controllo delle app a livello di organizzazione, il che significa che quando un'app viene bloccata, è bloccata per tutti gli utenti dell'organizzazione. Il blocco di un'app nella pagina [Gestisci app](manage-apps.md) funziona esattamente nello stesso modo.
 
-Per i criteri di autorizzazione delle app assegnati a utenti specifici, se è stata consentita un'app con un bot o una funzionalità di connessione e quindi bloccata e se l'app è consentita solo per alcuni utenti in un contesto condiviso, i membri di una chat di gruppo o un canale che non hanno l'autorizzazione per l'app  può visualizzare la cronologia e i messaggi inviati dal bot o dal connettore, ma non possono interagire con esso.
+Per i criteri di autorizzazione delle app assegnati a utenti specifici, se è stata consentita un'app con un bot o una funzionalità di connessione e quindi è stata bloccata e se l'app è consentita solo per alcuni utenti in un contesto condiviso, i membri di una chat di gruppo o di un canale che non hanno l'autorizzazione per l'app possono vedere la cronologia dei messaggi inviati dal bot , ma non può interagire con essa.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
