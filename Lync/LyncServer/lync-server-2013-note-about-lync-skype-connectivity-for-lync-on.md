@@ -12,12 +12,12 @@ ms:contentKeyID: 57793359
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 65f91c6ecbfa97a5799d2811f69d920c1e7947b2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: de54cbdde864da5600c06b608344e8593529d604
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42216682"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780705"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,11 +37,11 @@ ms.locfileid: "42216682"
 
 _**Ultimo argomento modificato:** 2013-09-23_
 
-Questo documento è stato scritto per consentire agli amministratori locali di Lync Server di configurare la connettività Lync-Skype.La connettività Lync-Skype è anche una funzionalità di Lync Online, che fa parte di Office 365. È possibile abilitare la funzionalità di connettività Lync-Skype dall'interfaccia di amministrazione di Lync all'interno del portale di Office 365.
+Questo documento è stato scritto per consentire agli amministratori locali di Lync Server di configurare la connettività Lync-Skype.La connettività Lync-Skype è anche una funzionalità di Lync Online, che fa parte di Office 365. È possibile abilitare la funzionalità di connettività Lync-Skype dall'interfaccia di amministrazione di Lync all'interno dell'interfaccia utente di Microsoft 365.
 
-Per Office 365 medie imprese, Office 365 Enterprise, Office 365 Education e Office 365 for Government: accedere al portale di Office 365 e passare all'interfaccia di amministrazione di **Lync**. Passare a **comunicazioni esterne**. In **provider di servizi di messaggistica istantanea**fare clic su **Abilita**. Se si desidera controllare l'accesso di singoli utenti alla connettività Lync-Skype, è possibile modificare le impostazioni di comunicazione esterna di singoli utenti.
+Per Office 365 medie imprese, Office 365 Enterprise, Office 365 Education e Office 365 for Government: accedere all'interfaccia di amministrazione di Microsoft 365 e passare all'interfaccia di **gestione di Lync**. Passare a **comunicazioni esterne**. In **provider di servizi di messaggistica istantanea**fare clic su **Abilita**. Se si desidera controllare l'accesso di singoli utenti alla connettività Lync-Skype, è possibile modificare le impostazioni di comunicazione esterna di singoli utenti.
 
-Per Office 365 Small Business Premium: accedere a Office 365 e passare a **impostazioni \> del servizio \> di amministrazione per messaggistica istantanea, riunioni e conferenze**. Attiva comunicazioni esterne. L'opzione comunicazioni esterne attiva sia la connettività Lync-Skype sia le comunicazioni con altre organizzazioni che utilizzano Lync. A seconda del momento in cui è stato avviato l'utilizzo di Lync Online, l'opzione di comunicazione esterna in uno stato "on" può inizialmente indicare solo che le comunicazioni con altre organizzazioni Lync sono attivate. Per attivare la connettività Lync-Skype, è sufficiente disattivare e quindi riattivare l'opzione.
+Per Office 365 Small Business Premium: accedere e passare a **impostazioni \> del servizio \> di amministrazione messaggistica istantanea, riunioni e conferenze**. Attiva comunicazioni esterne. L'opzione comunicazioni esterne attiva sia la connettività Lync-Skype sia le comunicazioni con altre organizzazioni che utilizzano Lync. A seconda del momento in cui è stato avviato l'utilizzo di Lync Online, l'opzione di comunicazione esterna in uno stato "on" può inizialmente indicare solo che le comunicazioni con altre organizzazioni Lync sono attivate. Per attivare la connettività Lync-Skype, è sufficiente disattivare e quindi riattivare l'opzione.
 
 </div>
 

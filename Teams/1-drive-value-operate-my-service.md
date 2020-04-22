@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a63ce726a3a09fb820a6008aa0edf50a0e88ea95
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 2d5c5f919e03cd1e2935e4027e38b33a23a9540b
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826984"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779222"
 ---
 # <a name="operate-my-service"></a>Gestire il servizio
 
@@ -37,7 +37,7 @@ La gestione dei servizi è un argomento ampio che include le operazioni quotidia
 
 La nozione di gestione dei servizi non è probabilmente un nuovo concetto per la maggior parte delle organizzazioni. I processi e le attività associati ai servizi esistenti potrebbero essere già stati implementati. In questo caso, puoi probabilmente migliorare i tuoi processi correnti quando pianifichi la gestione dei servizi oggi per supportare i team in futuro.
 
-La gestione dei servizi comprende tutte le attività e i processi coinvolti nella gestione dei team end-to-end. Come indicato in precedenza, alcuni componenti della gestione dei servizi, ovvero l'infrastruttura che il servizio di Office 365 stesso comporta, sono responsabili di Microsoft, mentre il cliente è responsabile per gli utenti di gestire i vari aspetti dei team, la rete e gli endpoint forniti.
+La gestione dei servizi comprende tutte le attività e i processi coinvolti nella gestione dei team end-to-end. Come indicato in precedenza, alcuni componenti della gestione dei servizi, ovvero l'infrastruttura che il servizio di Office 365 stesso comporta, sono responsabili di Microsoft, mentre il cliente è responsabile per gli utenti di gestire i vari aspetti dei team, della rete e degli endpoint forniti.
 
 Le attività e le attività in questa guida sono raggruppate in otto categorie, come illustrato nel diagramma seguente. Ognuna di queste categorie verrà espansa nelle sezioni seguenti.
 
@@ -112,7 +112,7 @@ Nelle sezioni seguenti vengono descritti gli strumenti che è possibile sfruttar
 
 | Strumento di monitoraggio                       | Vantaggi                                            | Quando usare                                                                                  |
 |---------------------------------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------|
-| Portale di Office 365                     | Disponibile da qualsiasi dispositivo con un browser supportato. | USA quando non hai bisogno di notifiche in tempo reale.                                          |
+| Interfaccia di amministrazione di Microsoft 365                     | Disponibile da qualsiasi dispositivo con un browser supportato. | USA quando non hai bisogno di notifiche in tempo reale.                                          |
 | App di amministrazione di Office 365                  | Fornisce notifiche push al dispositivo mobile.  | USA quando devi ricevere notifiche sugli incidenti del servizio mentre sei in viaggio.                  |
 | Microsoft System Center               | Integrazione con Microsoft System Center.           | Usare quando sono necessarie funzionalità di monitoraggio avanzate e supporto delle notifiche.                       |
 | API di Communications Service di Office 365 | Accesso a livello di codice all'integrità dei servizi di Office 365.   | Usare quando è necessaria l'integrazione con uno strumento di monitoraggio di terze parti o si vuole creare una soluzione personalizzata. |
@@ -120,9 +120,9 @@ Nelle sezioni seguenti vengono descritti gli strumenti che è possibile sfruttar
 > [!NOTE]
 > Solo gli utenti a cui è assegnato il ruolo di amministratore **globale** o di **amministrazione del servizio** possono visualizzare l'integrità dei servizi.
 
-### <a name="monitoring-with-the-office-365-portal"></a>Monitoraggio con il portale di Office 365
+### <a name="monitoring-with-the-microsoft-365-admin-center"></a>Monitoraggio con l'interfaccia di amministrazione di Microsoft 365
 
-Il [portale di Office 365](https://portal.office.com/) offre un [dashboard di integrità dei servizi](https://portal.office.com/adminportal/home#/servicehealth) in cui è possibile visualizzare l'integrità corrente del servizio teams oltre ai servizi dipendenti.
+L'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/) offre un [dashboard di integrità dei servizi](https://portal.office.com/adminportal/home#/servicehealth) in cui è possibile visualizzare l'integrità corrente del servizio teams oltre ai servizi dipendenti.
 
 ### <a name="monitoring-with-the-mobile-app"></a>Monitoraggio con l'app per dispositivi mobili
 
@@ -456,7 +456,7 @@ Anche se sono state seguite le indicazioni precedenti, gli utenti dell'organizza
 
 [URL e intervalli di indirizzi IP per Office 365](https://aka.ms/o365ips)
 
-[Ottenere client per Microsoft Teams](get-clients.md)
+[Ottenere i client per Microsoft Teams](get-clients.md)
 
 [Community di Microsoft Teams](https://techcommunity.microsoft.com/t5/Microsoft-Teams/ct-p/MicrosoftTeams)
 
@@ -532,7 +532,7 @@ In alcuni casi non è possibile eseguire il provisioning di un numero in un'area
 
 ### <a name="team-creation-optional"></a>Creazione del team (facoltativo)
 
-Per impostazione predefinita, tutti gli utenti con una cassetta postale in Exchange Online hanno le autorizzazioni per creare gruppi di Office 365 e quindi un team in Microsoft teams. Se si vuole avere un controllo più rigoroso e [limitare la creazione di nuovi team](assign-roles-permissions.md#permissions-to-create-teams) (e quindi la creazione di nuovi gruppi di Office 365), è possibile delegare i diritti di creazione e gestione dei gruppi a un set di amministratori. Se l'organizzazione vuole perseguire questa opzione, vedere il processo descritto in questo articolo per consentire agli utenti di inviare richieste elaborate da un team assegnato.
+Per impostazione predefinita, tutti gli utenti con una cassetta postale in Exchange Online hanno le autorizzazioni per creare gruppi di Microsoft 365 e quindi un team in Microsoft teams. Se si vuole avere un controllo più stretto e [limitare la creazione di nuovi team](assign-roles-permissions.md#permissions-to-create-teams) (e quindi la creazione di nuovi gruppi Microsoft 365), è possibile delegare i diritti di creazione e gestione del gruppo a un set di amministratori. Se l'organizzazione vuole perseguire questa opzione, vedere il processo descritto in questo articolo per consentire agli utenti di inviare richieste elaborate da un team assegnato.
 
 ### <a name="dailyweeklymonthlyas-needed-tasks"></a>Attività quotidiane/settimanali/mensili/necessarie
 

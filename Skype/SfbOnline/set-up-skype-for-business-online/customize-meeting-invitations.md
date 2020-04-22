@@ -21,12 +21,12 @@ ms.custom:
 - ms.lync.lac.MeetingInvitation
 - ms.teamsadmincenter.meetingsettings.invitationurls
 description: 'Personalizzare gli inviti alle riunioni Skype con loghi grafici, guida e URL legali e testo del piè di pagina. '
-ms.openlocfilehash: b30c31d3e109fa36e49665c19a7aaebad581c7cc
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+ms.openlocfilehash: 41ed423349ff34f27a164b4d9c652571241b1afb
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41769639"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776231"
 ---
 # <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
@@ -41,14 +41,14 @@ Come amministratore, puoi assicurarti che tutti gli inviti alle riunioni di Skyp
     
 3. Archiviare l'immagine in una posizione centrale accessibile a tutti gli utenti aziendali, ad esempio una condivisione di rete, una cartella condivisa di OneDrive for business, un Dropbox e così via.
     
-    A questo punto è possibile aggiungerlo agli inviti alle riunioni. Vedere i passaggi successivi.
+    Ora è possibile aggiungerla agli inviti alle riunioni. Vedere i passaggi successivi.
     
 ## <a name="customize-your-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 <a name="__top"> </a>
 
-![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
+![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
     
 2. Nell'interfaccia di amministrazione scegliere interfaccia di **Amministrazione** > **Skype for business**.
     

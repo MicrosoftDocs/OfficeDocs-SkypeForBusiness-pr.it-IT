@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente al sistema telefonico Microsoft.
-ms.openlocfilehash: bc092c2441ff359de1189e1ff000a61c51dcec1f
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 0140e4d2cfae95531602daec5a859a85888e9d15
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140285"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780695"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -71,11 +71,11 @@ I requisiti di infrastruttura per i SBCs, i domini e altri requisiti di connetti
 |:--- |:--- |
 |SBC (Session Border Controller)|Un SBC supportato. Per altre informazioni, Vedi [SBCS supportate](#supported-session-border-controllers-sbcs).|
 |Trunk di telefonia connesso a SBC|Uno o più trunk di telefonia connessi a SBC. Da una parte, il SBC si connette al sistema telefonico Microsoft tramite il routing diretto. SBC può anche connettersi a entità di telefonia di terze parti, come i PBX, gli adattatori per la telefonia analogica e così via. L'opzione di connettività PSTN connessa al SBC funzionerà. Per la configurazione dei trunk PSTN per il SBC, vedere i fornitori SBC o i provider trunk.|
-|Tenant di Office 365|Un tenant di Office 365 che si usa per gli utenti di Microsoft teams e la configurazione e la connessione a SBC.|
+|Organizzazione di Office 365|Un'organizzazione di Office 365 che si usa per gli utenti di Microsoft teams e la configurazione e la connessione a SBC.|
 |Registrar utente|L'utente deve essere ospitato in Office 365.<br/>Se l'azienda ha un ambiente di Skype for business o Lync locale con connettività ibrida a Office 365, non è possibile abilitare la funzionalità Voice in teams per un utente ospitato in locale.<br/><br/>Per controllare il registrar di un utente, usare il cmdlet di PowerShell di Skype for business online seguente:<br/><code>Get-CsOnlineUser -Identity \<user> \| fl HostingProvider</code> <br/><br/>L'output del cmdlet deve mostrare:<br/><code>HostingProvider : sipfed.online.lync.com</code>|
-|Domini|Uno o più domini aggiunti ai tenant di Office 365.<br/><br/>Tieni presente che non puoi usare il dominio predefinito \*, onmicrosoft.com, che viene creato automaticamente per il tenant.<br/><br/>Per visualizzare i domini, è possibile usare il cmdlet di PowerShell di Skype for business online seguente:<br/><code>Get-CsTenant \| fl Domains</code><br/><br/>Per altre informazioni sui domini e i tenant di Office 365, vedere [domande frequenti sui domini](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a).|
+|Domini|Uno o più domini aggiunti alle organizzazioni di Office 365.<br/><br/>Tieni presente che non puoi usare il dominio predefinito \*, onmicrosoft.com, che viene creato automaticamente per il tenant.<br/><br/>Per visualizzare i domini, è possibile usare il cmdlet di PowerShell di Skype for business online seguente:<br/><code>Get-CsTenant \| fl Domains</code><br/><br/>Per altre informazioni sui domini e sulle organizzazioni di Office 365, vedere [domande frequenti sui domini](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a).|
 |Indirizzo IP pubblico per SBC|Un indirizzo IP pubblico che può essere usato per la connessione a SBC. In base al tipo di SBC, SBC può usare NAT.|
-|Nome di dominio completo (FQDN) per SBC|Un nome di dominio completo per SBC, in cui la parte del dominio del nome FQDN è uno dei domini registrati nel tenant di Office 365. Per altre informazioni, Vedi [nomi di dominio SBC](#sbc-domain-names).|
+|Nome di dominio completo (FQDN) per SBC|Un nome di dominio completo per SBC, in cui la parte del dominio del nome FQDN è uno dei domini registrati nell'organizzazione di Office 365. Per altre informazioni, Vedi [nomi di dominio SBC](#sbc-domain-names).|
 |Voce DNS pubblica per SBC |Una voce DNS pubblica che mappa il nome di dominio completo SBC all'indirizzo IP pubblico. |
 |Certificato attendibile pubblico per SBC |Certificato per l'SBC da usare per tutte le comunicazioni con routing diretto. Per altre informazioni, vedere [certificato attendibile pubblico per SBC](#public-trusted-certificate-for-the-sbc).|
 |Punti di connessione per il routing diretto |I punti di connessione per il routing diretto sono i tre FQDN seguenti:<br/><br/>`sip.pstnhub.microsoft.com`-L'FQDN globale deve essere provato per primo.<br/>`sip2.pstnhub.microsoft.com`-FQDN secondario, mappa geograficamente alla seconda area di priorità.<br/>`sip3.pstnhub.microsoft.com`– Il nome di dominio completo terziario viene mappato geograficamente alla terza area prioritaria.<br/><br/>Per informazioni sui requisiti di configurazione, vedere [segnalazione SIP: FQDN](#sip-signaling-fqdns).|

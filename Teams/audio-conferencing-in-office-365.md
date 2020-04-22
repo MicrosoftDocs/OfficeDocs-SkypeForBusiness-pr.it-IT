@@ -1,5 +1,5 @@
 ---
-title: Audioconferenza in Office 365
+title: Servizi di audioconferenza in Microsoft 365
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -24,14 +24,14 @@ ms.custom:
 - ms.teamsadmincenter.audioconferencing.overview
 - seo-marvel-mar2020
 description: Informazioni su servizi di audioconferenza in Office 365, inclusi costi, disponibilità e numeri di telefono dedicati.
-ms.openlocfilehash: 5fef21489bbbceb490a2b97d70ee9dbafd2a791c
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: fb61c9445358949677358220e881dbe318ff64b4
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139015"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780415"
 ---
-# <a name="audio-conferencing-in-office-365"></a>Audioconferenza in Office 365
+# <a name="audio-conferencing-in-microsoft-365"></a>Servizi di audioconferenza in Microsoft 365
 L’audioconferenza in Office 365 consente agli utenti di partecipare alle riunioni dal telefono. L’audioconferenza permette di avere fino a 250 partecipanti al telefono.
 
 ## <a name="what-is-audio-conferencing"></a>Informazioni sulle audioconferenze
@@ -68,7 +68,7 @@ Sono disponibili due tipi di numeri di telefono per l’audioconferenza che poss
   
  I **numeri di telefono dedicati** sono i numeri di telefono disponibili solo per gli utenti all'interno dell'organizzazione. Puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri. Sarà necessario avere un numero di telefono per questo tipo di servizio.
   
- I **numeri di telefono condivisi** sono i numeri di telefono che possono essere condivisi con altre organizzazioni Office 365. Non puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
+ I **numeri di telefono condivisi** sono i numeri di telefono che possono essere condivisi con altri Microsoft 365 o Office 365S. Non puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
   
 While the default audio conferencing number that is assigned to an organizer is only included in the meeting invite, a caller can use any of the phone numbers that are assigned to your conferencing bridge to join a meeting. The list of phone numbers that can be used to join a meeting is available using the **Find a local number** link that is included on every meeting invite.
 

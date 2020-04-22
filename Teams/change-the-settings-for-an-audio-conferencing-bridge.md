@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.audioconferencing.bridgesettings
 - seo-marvel-mar2020
 description: Modificare le impostazioni del Bridge di conferenza audio, incluse le notifiche di entrata e uscita, i nomi di riproduzione o i numeri di telefono, i toni e i chiamanti per registrare il nome.
-ms.openlocfilehash: aaff3518675e1db56340f9dc1568b994cf2ed6e6
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 48028ccb3f2a0664f9fa724ec91e1dfc0177326f
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139085"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780345"
 ---
 # <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un bridge per audioconferenza
 
@@ -43,7 +43,7 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
 
-## <a name="an-icon-showing-the-microsoft-teams-logo-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) Uso dell'interfaccia di amministrazione di Microsoft Teams
+## <a name="an-icon-showing-the-microsoft-teams-logo-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) Usando l'interfaccia di amministrazione di Microsoft Teams.
 
 1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
 
@@ -90,7 +90,7 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
     
 **Impostare la lunghezza del PIN per le riunioni**
   
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
     
 2. Accedere all'interfaccia di **Amministrazione** > di Microsoft 365**Skype for business**.
     
@@ -103,7 +103,7 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
   
 **Selezionare se inviare messaggi di posta elettronica agli utenti**
   
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
     
 2. Accedere all'interfaccia di **Amministrazione** > di Microsoft 365**Skype for business**.
     

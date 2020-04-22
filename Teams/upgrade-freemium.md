@@ -1,5 +1,5 @@
 ---
-title: Aggiornare Microsoft teams gratuitamente all'abbonamento a Office 365
+title: Aggiornare Microsoft teams gratuitamente all'abbonamento
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
@@ -19,20 +19,20 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 92bb76f58983e4605d5a1be147bb898aee1a5832
-ms.sourcegitcommit: f3390e27bb63b66d1c4fb4f8afbda6b814fbbb5b
+ms.openlocfilehash: a96bb03a511a776e2f7e4aded5cd79f66fe2106c
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170524"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780445"
 ---
-# <a name="upgrade-microsoft-teams-free-to-office-365-subscription-version"></a>Aggiornare Microsoft teams gratuitamente alla versione dell'abbonamento a Office 365
+# <a name="upgrade-microsoft-teams-free-to-subscription-version"></a>Aggiornare la versione di Microsoft teams Free to Subscription
 ======================================================
 
-Se l'organizzazione usa la versione gratuita di Microsoft teams, è possibile eseguire facilmente l'aggiornamento alla versione completa acquistando un piano di sottoscrizione di Office 365 per gli utenti. La versione completa offre funzionalità aggiuntive per i team, ad esempio pianificazione, audioconferenza, amministrazione avanzata e funzionalità di sicurezza, che la versione gratuita non offre. Office 365 combina la famiglia di prodotti desktop Microsoft Office con versioni basate su cloud dei servizi di comunicazione e collaborazione di nuova generazione di Microsoft, inclusi Exchange Online, SharePoint Online e Office, per consentire agli utenti di essere produttivi praticamente ovunque tramite Internet. Quando si aggiornano teams, i dati dei team esistenti non andranno persi; tutti i team, i canali, le chat, i file e le autorizzazioni vengono forniti con l'utente. 
+Se l'organizzazione usa la versione gratuita di Microsoft teams, è possibile eseguire facilmente l'aggiornamento alla versione completa acquistando un piano di abbonamento a Microsoft 365 o Office 365 per gli utenti. La versione completa offre funzionalità aggiuntive per i team, ad esempio pianificazione, audioconferenza, amministrazione avanzata e funzionalità di sicurezza, che la versione gratuita non offre. Office 365 combina la famiglia di prodotti desktop Microsoft Office con versioni basate su cloud dei servizi di comunicazione e collaborazione di nuova generazione di Microsoft, inclusi Exchange Online, SharePoint Online e Office, per consentire agli utenti di essere produttivi praticamente ovunque tramite Internet. Quando si aggiornano teams, i dati dei team esistenti non andranno persi; tutti i team, i canali, le chat, i file e le autorizzazioni vengono forniti con l'utente. 
 
 > [!NOTE]
-> Se si ha già un abbonamento a Office 365, si è idonei per la versione di valutazione di Teams (con l'identità aziendale), non per la versione gratuita. Il Trial teams offre la versione completa di teams per un periodo di tempo limitato. Per altre informazioni, vedere [gestire l'offerta di valutazione cloud commerciale Microsoft teams](iw-trial-teams.md).
+> Se si ha già un abbonamento a Microsoft 365 o Office 365, è possibile partecipare alla versione di valutazione di Teams (con la propria identità aziendale) e non alla versione gratuita. Il Trial teams offre la versione completa di teams per un periodo di tempo limitato. Per altre informazioni, vedere [gestire l'offerta di valutazione cloud commerciale Microsoft teams](iw-trial-teams.md).
 
 ## <a name="how-does-teams-free-compare-to-the-full-version-of-teams"></a>In che modo i team si confrontano gratuitamente con la versione completa di Teams?
 
@@ -47,7 +47,7 @@ Teams Free è progettato per piccole e medie imprese ed ha le caratteristiche se
 - Riunioni di canale
 - Condivisione dello schermo
 
-La versione completa di teams inclusa in un abbonamento a Office 365 offre le caratteristiche seguenti, oltre alle funzionalità disponibili in teams Free:
+La versione completa di teams inclusa in un abbonamento a Microsoft 365 o Office 365 offre le caratteristiche seguenti, oltre alle funzionalità disponibili in teams Free:
 
 - Nessun limite per gli utenti (con licenza Enterprise)
 - Hosting di posta elettronica di Exchange e dominio di posta elettronica personalizzato
@@ -85,7 +85,7 @@ Per eseguire l'aggiornamento alla versione completa di teams, selezionare **Aggi
 
 ![screenshot che mostra il pulsante Aggiorna](media/teams-freemium-upgrade-image1.png)
 
-Immettere l'indirizzo di posta elettronica che si usa per accedere a teams e quindi acquistare un piano Office 365 Business Premium. Se si vuole acquistare Office 365 Business Essentials o una versione Enterprise di Office 365, contattare il [supporto tecnico](https://portal.office.com/support/altusupport.aspx?app=teamsfreeupgrade).
+Immettere l'indirizzo di posta elettronica che si usa per accedere a teams e quindi acquistare un piano standard Microsoft 365 business. Se si vuole acquistare Microsoft 365 Business Basic o una versione Enterprise di Office 365, contattare il [supporto tecnico](https://portal.office.com/support/altusupport.aspx?app=teamsfreeupgrade).
 
 ## <a name="whats-next"></a>Altre informazioni
 

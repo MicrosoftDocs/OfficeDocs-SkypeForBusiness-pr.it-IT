@@ -1,5 +1,5 @@
 ---
-title: 'Office 365 Business Premium '
+title: 'Microsoft 365 business standard '
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,17 +18,17 @@ localization_priority: Normal
 ms.custom:
 - Licensing
 - LIL_Placement
-description: 'Informazioni sulle licenze per i componenti aggiuntivi, le caratteristiche e su come acquistare piani di Office 365 Business Premium. '
-ms.openlocfilehash: b51724524f56fe534c95ede85bca7535ab1be396
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+description: 'Informazioni sulle licenze per i componenti aggiuntivi, le caratteristiche e su come acquistare i piani standard di Microsoft 365 business. '
+ms.openlocfilehash: 20aacf46acf60bb581056654babc85277f41ee45
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826564"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780505"
 ---
-# <a name="office-365-business-premium"></a>Office 365 Business Premium
+# <a name="microsoft-365-business-standard"></a>Microsoft 365 business standard
 
-Se si dispone di [Office 365 Business Premium](https://products.office.com/en/business/office-365-business-premium), è possibile usare Microsoft teams per effettuare chiamate ad altri utenti della propria azienda che partecipano all'abbonamento. Ad esempio, se la tua azienda ha 10 persone, puoi usare teams per chiamare e inviare messaggi istantanei.
+Se si dispone di [microsoft 365 business standard](https://products.office.com/en/business/office-365-business-premium), è possibile usare Microsoft teams per effettuare chiamate ad altri utenti della propria azienda che partecipano all'abbonamento. Ad esempio, se la tua azienda ha 10 persone, puoi usare teams per chiamare e inviare messaggi istantanei.
 
 
 **Per effettuare e ricevere chiamate da persone esterne all'azienda, sono disponibili le seguenti opzioni**:

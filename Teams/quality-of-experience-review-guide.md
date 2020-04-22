@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: 91e2763fac952b7188284dcf09e6fc0b7cc4bf16
-ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.openlocfilehash: 44ea666d39427e6be6aa60a3c05af2a10ed1cc5e
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2020
-ms.locfileid: "43749863"
+ms.locfileid: "43780585"
 ---
 # <a name="quality-of-experience-review-guide"></a>Guida sul controllo della qualità dell'esperienza 
 
@@ -70,16 +70,16 @@ Questa tabella Mostra gli elementi che ogni ruolo può eseguire in Call Quality 
 
 |  |Visualizzare i report  |Visualizzare i campi EUII  |Creare report  |Caricare i dati dell'edificio  |
 |---------|:-------:|:-------:|:-------:|:-------:|
-|Amministratore globale di Office 365     |Sì         |Supporto per più paesi         |Supporto per più paesi         |Supporto per più paesi         |
+|Amministratore globale     |Sì         |Supporto per più paesi         |Supporto per più paesi         |Supporto per più paesi         |
 |Amministratore del servizio Teams     |Sì         |Supporto per più paesi         |Supporto per più paesi         |Supporto per più paesi         |
 |Amministratore comunicazioni Teams     |Sì         |Supporto per più paesi         |Supporto per più paesi         |Supporto per più paesi         |
 |Tecnico supporto comunicazioni Teams     |Sì         |Supporto per più paesi         |Sì         |No         |
 |Specialista supporto comunicazioni Teams     |Sì         |No         |Sì         |No         |
 |Amministratore di Skype for business     |Sì         |Supporto per più paesi         |Supporto per più paesi         |Supporto per più paesi         |
 |Lettore globale di Azure AD |Sì         |Supporto per più paesi         |Sì         |No         |
-|Lettore di report di Office 365<sup>1</sup>     |Sì         |No         |Sì         |No         |
+|Lettore di report Microsoft 365<sup>1</sup>     |Sì         |No         |Sì         |No         |
 
-<sup>1</sup> oltre a leggere i report di Call Quality dashboard, il lettore di report di Office 365 può visualizzare tutti i [report attività](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) nell'interfaccia di amministrazione e tutti i report del [pacchetto di contenuto adoption di Microsoft 365](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f).
+<sup>1</sup> oltre a leggere i report di Call Quality dashboard, il lettore di report di Microsoft 365 può visualizzare tutti i [report attività](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) nell'interfaccia di amministrazione e tutti i report di [Microsoft 365 adoption Content Pack](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f).
 
 > [!NOTE]
 > Se non si vedono EUII (informazioni identificative per gli utenti finali) e si ha uno dei ruoli consentiti per vedere queste informazioni, tenere presente che Call Quality dashboard mantiene solo EUII per 30 giorni. Viene eliminato qualsiasi valore antecedente di 30 giorni.
@@ -598,7 +598,7 @@ Questa guida include [due modelli di Call Quality dashboard curati](https://aka.
 2. Eseguire l'autenticazione usando le credenziali amministrative di Office 365.
 
    > [!NOTE]
-   > Per accedere a Call Quality dashboard è necessario avere l'amministratore globale di Office 365, l'amministratore di Skype for business o il ruolo di report Reader. 
+   > Per accedere a Call Quality dashboard è necessario avere il ruolo amministratore globale, amministratore di Skype for business o report Reader. 
 
 3. Selezionare il menu **report di riepilogo** nella parte superiore della pagina e quindi scegliere **report dettagliati**.
 
@@ -1189,7 +1189,7 @@ Se si ha una combinazione di pacchetti a portata di clic e di installazione (MSI
 I numeri di versione per Skype for business possono essere trovati tramite i collegamenti seguenti:
 
 -   [Rilasciare informazioni per gli aggiornamenti a Office ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
--   [Cronologia degli aggiornamenti per Office 365 ProPlus](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
+-   [Cronologia degli aggiornamenti per le app Microsoft 365 per le aziende](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
 -   [Download e aggiornamenti per Skype for Business](/SkypeForBusiness/software-updates)
 
 ### <a name="devices"></a>Dispositivi

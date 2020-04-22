@@ -21,12 +21,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: "Informazioni sulle licenze di componenti aggiuntivi, sulle caratteristiche e sull'acquisto di piani E1, E3 ed E4 per Office 365 Enterprise. "
-ms.openlocfilehash: 79a803061acfd4550c75871c08f40b16ee2f8e2b
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 8000a71c52c03d82c8d01c92601be01d48db04dd
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42010589"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43777961"
 ---
 # <a name="office-365-enterprise-e1-e3-and-e4"></a>Office 365 Enterprise E1, E3 e E4
 
@@ -71,7 +71,7 @@ The E3 plan is part of your Action Pack. To buy the **Phone System** and **Audio
 
 In alcune situazioni, non puoi vedere la possibilità di acquistare componenti aggiuntivi di Skype for Business in interfaccia di amministrazione di Microsoft 365.
 
-- **È stato acquistato Office 365 Business Premium con GoDaddy**. In questo caso, non è possibile acquistare i componenti aggiuntivi di Skype for Business. È necessario passare al piano E3 (che GoDaddy non vende) e quindi acquistarli. [Contattare il supporto tecnico per i prodotti per le aziende - Guida dell'amministratore](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+- **È stato acquistato Microsoft 365 business standard tramite GoDaddy**. In questo caso, non sarà possibile acquistare componenti aggiuntivi Skype for Business (non disponibili presso GoDaddy). È necessario passare al piano E3 (che GoDaddy non vende), quindi è possibile acquistarlo. [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
 - **You have a monthly commitment instead of an annual commitment**. In some cases, customers who have a monthly commitment can't buy the add-ons (this is different from the payment method, which can be monthly). This is a known issue that we are fixing. [Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 

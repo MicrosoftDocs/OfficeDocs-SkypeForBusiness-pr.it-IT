@@ -12,12 +12,12 @@ ms:contentKeyID: 62258120
 ms.date: 11/13/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f10aedf2a183e7ad965ba36ea0610fc02b93dfce
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e87b977dd70227d134e5feae8df2ea089e216df3
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42185149"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780745"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -143,13 +143,13 @@ _**Ultimo argomento modificato:** 2015-11-13_
     
     Il formato dell'URL specificato per il parametro **HostedMigrationOverrideUrl** deve essere l'URL del pool in cui è in esecuzione il servizio di migrazione ospitata, nel formato seguente *:\<https://FQDN\>del pool/HostedMigration/hostedmigrationService.svc*.
     
-    È possibile determinare l'URL del servizio di migrazione ospitata visualizzando l'URL del pannello di controllo di Lync Online per l'account tenant di Office 365.
+    È possibile determinare l'URL del servizio di migrazione ospitata visualizzando l'URL del pannello di controllo di Lync Online per l'account dell'organizzazione di Office 365.
     
     <div>
     
-    ## <a name="to-determine-the-hosted-migration-service-url-for-your-office-365-tenant"></a>Per determinare l'URL del servizio di migrazione ospitata per il tenant di Office 365
+    ## <a name="to-determine-the-hosted-migration-service-url-for-your-office-365-organization"></a>Per determinare l'URL del servizio di migrazione ospitata per l'organizzazione di Office 365
     
-    1.  Accedere al tenant di Office 365 come amministratore.
+    1.  Accedere all'organizzazione di Office 365 come amministratore.
     
     2.  Aprire l'interfaccia di **amministrazione di Lync**.
     

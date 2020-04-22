@@ -12,12 +12,12 @@ ms:contentKeyID: 50117635
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: de478ddf104f36fc208f2773c26c772b2cc0addd
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4478f60fc99304e7cf882ddec7951aa3625d74f2
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42195339"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779582"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -43,7 +43,7 @@ Prima di rendere disponibile l'app Windows Store di Lync per gli utenti, verific
 
 ## <a name="enabling-multi-factor-authentication-for-lync-windows-store-app"></a>Abilitazione dell'autenticazione a più fattori per l'app Windows Store di Lync
 
-Aggiornamenti cumulativi per Lync Server 2013: giugno 2013 aggiunge il supporto per l'autenticazione a più fattori per i client delle app di Windows Store di Lync. Oltre a nome utente e password, è possibile richiedere altri metodi di autenticazione, ad esempio smart card o pin, per autenticare gli utenti esterni quando eseguono l'accesso alle riunioni di Lync. Per abilitare l'autenticazione a più fattori, è necessario distribuire il server federativo di Active Directory Federation Services (ADFS) e abilitare l'autenticazione passiva in Lync Server 2013. Dopo aver configurato ADFS, gli utenti esterni che tentano di partecipare alle riunioni di Lync sono presentati con una pagina Web di autenticazione a più fattori di ADFS che contiene il nome utente e la sfida per la password insieme a tutti i metodi di autenticazione aggiuntivi che sono stati configurati. .
+Aggiornamenti cumulativi per Lync Server 2013: giugno 2013 aggiunge il supporto per l'autenticazione a più fattori per i client delle app di Windows Store di Lync. Oltre a nome utente e password, è possibile richiedere altri metodi di autenticazione, ad esempio smart card o pin, per autenticare gli utenti esterni quando eseguono l'accesso alle riunioni di Lync. Per abilitare l'autenticazione a più fattori, è necessario distribuire il server federativo di Active Directory Federation Services (ADFS) e abilitare l'autenticazione passiva in Lync Server 2013. Dopo aver configurato ADFS, gli utenti esterni che tentano di partecipare alle riunioni di Lync sono presentati con una pagina Web di autenticazione a più fattori di ADFS che contiene il nome utente e la sfida per la password insieme ai metodi di autenticazione aggiuntivi che sono stati configurati.
 
 <div class=" ">
 
@@ -138,7 +138,7 @@ Se la topologia è costituita da Lync Server 2010 con Office Communications Serv
 
 ## <a name="lync-windows-store-app-cannot-sign-in-due-to-a-certificate-name-validation-failure"></a>L'app Lync Windows Store non è in grado di accedere a causa di un errore di convalida del nome del certificato
 
-È possibile che si verifichi un problema di accesso per gli utenti di Office 365 che non eseguono la versione più recente dell'app Lync Windows Store. Questo problema si verifica in genere quando si utilizzano più domini (ad esempio, quando l'URI SIP è **usera@domainZ.com** ma il server perimetrale è **SIP.domainX.com**). Per risolvere il problema, è necessario che gli utenti installino la versione più recente dell'app Lync Windows Store, che richiede anche Windows 8,1.
+È possibile che si verifichi un problema di accesso per gli utenti di Microsoft 365 o Office 365 che non eseguono la versione più recente dell'app Lync Windows Store. Questo problema si verifica in genere quando si utilizzano più domini (ad esempio, quando l'URI SIP è **usera@domainZ.com** ma il server perimetrale è **SIP.domainX.com**). Per risolvere il problema, è necessario che gli utenti installino la versione più recente dell'app Lync Windows Store, che richiede anche Windows 8,1.
 
 </div>
 

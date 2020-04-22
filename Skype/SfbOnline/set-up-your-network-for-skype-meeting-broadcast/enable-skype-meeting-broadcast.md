@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - SMB
 description: Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, è necessario abilitarlo. A questo scopo, devi sapere come usare Windows PowerShell. Se non si conosce Windows PowerShell, è consigliabile assumere un partner Microsoft per eseguire questo passaggio.
-ms.openlocfilehash: 1b06f327fa59ec8e90c9b014db8a252ca7b40579
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 4684f445dc004678bf978069c2430111e7961d0d
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42010609"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43778121"
 ---
 # <a name="enable-skype-meeting-broadcast"></a>Abilitare Skype Meeting Broadcast
 
@@ -33,9 +33,9 @@ Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, 
   
 ## <a name="enable-skype-meeting-broadcast-using-the-skype-for-business-admin-center"></a>Abilitare Skype meeting broadcast con l'interfaccia di amministrazione di Skype for business
 
-![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
+![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
-1. Accedere con l'account di amministratore globale di Office 365 o con l'account di [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)amministratore di Skype for business.
+1. Accedere con l'account di amministratore globale o con l'account di [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home)amministratore di Skype for business.
     
 2. Nell'interfaccia di amministrazione accedere a**Teams**di interfaccia di **Amministrazione** > .
     
@@ -55,7 +55,7 @@ Prima che gli utenti dell'organizzazione possano usare Skype meeting broadcast, 
     
 6. Scegliere **Windows PowerShell**dal **menu Start**.
     
-7. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
+7. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
     
    ```PowerShell
    $Credential = get-credential

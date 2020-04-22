@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d1dfd82cc10f90616dcdd557e9d1d70f36a9ae1f
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 2a8c154a0e3f1366327b37b22531541fde288db2
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837816"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780485"
 ---
 # <a name="governance-quick-start-for-microsoft-teams"></a>Guida introduttiva di governance per Microsoft Teams
 
@@ -36,7 +36,7 @@ Le attività seguenti si verificheranno contemporaneamente e potrebbero coinvolg
 
 Per altre informazioni, vedere [pianificare la governance in teams](plan-teams-governance.md) e [pianificare la gestione del ciclo di vita in teams](plan-teams-lifecycle.md).
 
-## <a name="an-icon-representing-a-decision-pointmediateams-adoption-decision-iconpngdecisions"></a>![Icona che rappresenta un punto decisionale](media/teams-adoption-decision-icon.png)Decisioni
+## <a name="an-icon-representing-a-decision-pointdecisions"></a>![Icona che rappresenta un punto decisionale](media/teams-adoption-decision-icon.png)Decisioni
 
 Prendere le decisioni seguenti (a questo punto le decisioni si applicano solo alla fase 2):
 
@@ -62,7 +62,7 @@ L'esperienza di riunione teams è di alta qualità, supporta la chat video e por
 
 ### <a name="decision-6--data-security"></a>Decisione 6: sicurezza dei dati
 
-In preparazione per l'ampia distribuzione, è possibile scegliere di usare le etichette di sicurezza per classificare i tipi di team nell'ambiente. Ai fini di questo esperimento ti consigliamo di fare riferimento al [piano per la governance in teams](plan-teams-governance.md) e di verificare che i criteri di conservazione di base siano stati impostati sui dati del team nell'organizzazione di Office 365. Potrebbe essere necessario coordinare questo lavoro con il team tecnico perché i diritti di amministratore di Office 365 sono necessari per completare il lavoro.
+In preparazione per l'ampia distribuzione, è possibile scegliere di usare le etichette di sicurezza per classificare i tipi di team nell'ambiente. Ai fini di questo esperimento ti consigliamo di fare riferimento al [piano per la governance in teams](plan-teams-governance.md) e di verificare che i criteri di conservazione di base siano stati impostati sui dati del team in Microsoft 365 o Office 365. Potrebbe essere necessario coordinare questo lavoro con il team tecnico perché i diritti di amministratore di Office 365 sono necessari per completare il lavoro.
 
 ### <a name="decision-7-length-of-your-experiment"></a>Decisione 7: lunghezza dell'esperimento
 

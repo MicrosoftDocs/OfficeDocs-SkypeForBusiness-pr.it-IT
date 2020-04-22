@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 18476e043268d8b51fdf877b27e23eb926a1885e
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 79b6e33c6434a1242b7d30322aff77b62f1b42fd
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137786"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780215"
 ---
 # <a name="microsoft-education-governance-faq-for-admins"></a>Domande frequenti sulla governance di Microsoft Education per amministratori
 
@@ -31,14 +31,14 @@ ms.locfileid: "43137786"
 
 ## <a name="how-do-i-control-team-creation-im-worried-students-are-going-to-create-inappropriate-teams"></a>Come si controlla la creazione del team? Sono preoccupato che gli studenti creino team inappropriati.
 
-Per evitare nomi inappropriati o fuorvianti oppure solo per ottenere una struttura più appropriata per il nome del team, è possibile usare i criteri di denominazione dei gruppi di Office 365 (attualmente in anteprima):
+Per evitare nomi inappropriati o fuorvianti oppure solo per ottenere una maggiore struttura per il nome dei team, è possibile usare i criteri di denominazione dei gruppi di Microsoft 365 (attualmente in anteprima):
 
 -   **Criteri di denominazione suffisso-prefisso** È possibile usare i prefissi o i suffissi per definire la convenzione di denominazione dei team (gruppi), ad esempio **GRP_US_My Group_Engineering**. I prefissi e i suffissi possono essere stringhe fisse o attributi utente, ad esempio **[reparto]**, che vengono aggiunti al nome in base all'utente che sta creando il team.
 -   **Parole bloccate personalizzate** È possibile caricare un set di parole che gli utenti di un'organizzazione specifica sono bloccati dall'uso nei nomi dei team creati. Ad esempio, è possibile bloccare i termini **amministratore delegato**, **libro paga**e **risorse umane** da usare in nomi di team per i gruppi a cui non si applicano.
 -   **Classificazione** È possibile creare classificazioni che gli utenti dell'organizzazione possono impostare quando creano un gruppo di Office 365. 
 
 > [!IMPORTANT]
-> L'uso dei criteri di denominazione dei gruppi di Office 365 richiede le licenze di Azure Active Directory Premium P1 o le licenze di Azure AD Basic EDU per ogni utente univoco che fa parte di uno o più gruppi di Office 365.
+> Usando i criteri di denominazione dei gruppi di Microsoft 365 è necessario usare le licenze di Azure Active Directory Premium P1 o le licenze di Azure AD Basic EDU per ogni utente univoco che fa parte di uno o più gruppi di Microsoft 365.
 
 Per istruzioni dettagliate, vedere [criteri di denominazione dei gruppi di Office](https://support.office.com/article/office-365-groups-naming-policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552).
 
@@ -55,13 +55,13 @@ In generale, è consigliabile impedire a chiunque di creare teams. Se tutti poss
 
 In questa esperienza, la formazione degli utenti aiuta a garantire l'utilizzo dei team responsabili. Non appena gli utenti capiscono che la creazione di team non è anonima, essi comprendono le implicazioni della loro creazione con noncuranza e tendono a rifuggire dall'uso indesiderato dello strumento.
 
-Se si è certi di voler controllare chi può creare team, vedere [gestire chi può creare gruppi di Office 365](https://support.office.com/article/manage-who-can-create-office-365-groups-4c46c8cb-17d0-44b5-9776-005fced8e618).
+Se si è certi di voler controllare chi può creare team, vedere [gestire chi può creare gruppi di Microsoft 365](https://support.office.com/article/manage-who-can-create-office-365-groups-4c46c8cb-17d0-44b5-9776-005fced8e618).
 
 ## <a name="how-do-i-automatically-create-a-team-for-each-course-at-the-beginning-of-the-semester-or-quarter"></a>Come si crea automaticamente un team per ogni corso all'inizio del semestre o del trimestre?
 
 All'inizio di ogni semestre o trimestre è necessario un numero di nuovi team. Potrebbe essere utile adottare un approccio automatizzato per creare automaticamente questi team, popolarli con gli utenti giusti e impostare le autorizzazioni appropriate:
 
--   School Data Sync può creare gruppi di Office 365 per Exchange Online e SharePoint Online, team di classe per Microsoft teams e blocchi appunti per la classe di OneNote, gruppi scolastici per Intune per l'istruzione e integrazione di roster e Single Sign-on (SSO) per molte altre applicazioni di terze parti. Per altre informazioni, vedere [Panoramica di School Data Sync](https://docs.microsoft.com/schooldatasync/overview-of-school-data-sync).
+-   School Data Sync può creare gruppi di Microsoft 365 per Exchange Online e SharePoint Online, team di classe per Microsoft teams e blocchi appunti per la classe di OneNote, gruppi scolastici per Intune per l'istruzione e integrazione di roster e Single Sign-on (SSO) per molte altre applicazioni di terze parti. Per altre informazioni, vedere [Panoramica di School Data Sync](https://docs.microsoft.com/schooldatasync/overview-of-school-data-sync).
 -   Con PowerShell è possibile creare team e canali e configurare le impostazioni automaticamente. Per altre informazioni, vedere [Microsoft teams PowerShell](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps) .
 -   Puoi usare l'API Microsoft Graph (attualmente in versione beta) per creare, configurare, clonare ed archiviare team. Per altre informazioni, vedere [usare l'API Microsoft Graph per collaborare con Microsoft teams](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/teams_api_overview) .
 
@@ -78,7 +78,7 @@ Ti consigliamo di pensare prima di tutto a come gestire i dati dei team quando i
 -   **Team di archiviazione:** Questa impostazione inserisce i team in modalità di sola lettura. Possono comunque essere visualizzati e cercati, ma nessuno può aggiungere nuovi post. [Archiviare o ripristinare un team](https://support.office.com/article/archive-or-restore-a-team-dc161cfd-b328-440f-974b-5da5bd98b5a7) descrive in che modo i proprietari del team possono archiviare un team. I proprietari del team possono anche usare l' [API del grafico (beta)](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/teams_api_overview) per archiviare o ripristinare un team.
  
 > [!IMPORTANT]
-> L'uso dei criteri di scadenza di Office 365 groups richiede le licenze di Azure Active Directory Premium P1 per ogni utente univoco che fa parte di uno o più gruppi di Office 365.
+> L'uso dei criteri di scadenza di Microsoft 365 groups richiede le licenze di Azure Active Directory Premium P1 per ogni utente univoco che fa parte di uno o più gruppi di Microsoft 365.
 
 ## <a name="are-there-team-templates-for-my-faculty-members-to-use-when-creating-a-team"></a>I modelli di team per i membri della facoltà possono essere usati durante la creazione di un team?
 
@@ -122,10 +122,10 @@ Per altre informazioni sui criteri per i team, vedere [gestire le impostazioni d
 Puoi usare l'accesso guest per invitare utenti esterni al tenant, che possono essere utili per la collaborazione alla ricerca o per le conferenze degli ospiti:
 
 -   Usa la whitelist dei domini per consentire o bloccare gli utenti in base al loro dominio.
--   Attivare e disattivare l'accesso guest per particolari gruppi e team di Office 365, per controllare quali team possono (e non possono) invitare gli ospiti.
+-   Attivare e disattivare l'accesso guest per particolari gruppi e team di Microsoft 365, per controllare quali team possono (e non possono) invitare gli ospiti.
 -   Usare il log di controllo per visualizzare gli avvisi inviati agli utenti invitati.
 
-Per altre informazioni, vedere [accesso guest nei gruppi di Office 365](https://support.office.com/article/Guest-access-in-Office-365-Groups-bfc7a840-868f-4fd6-a390-f347bf51aff6#PickTab=Manage).
+Per altre informazioni, vedere [accesso guest nei gruppi di Microsoft 365](https://support.office.com/article/Guest-access-in-Office-365-Groups-bfc7a840-868f-4fd6-a390-f347bf51aff6#PickTab=Manage).
 
 ## <a name="what-information-can-i-review-about-existing-teams"></a>Quali informazioni si possono rivedere sui team esistenti?
 

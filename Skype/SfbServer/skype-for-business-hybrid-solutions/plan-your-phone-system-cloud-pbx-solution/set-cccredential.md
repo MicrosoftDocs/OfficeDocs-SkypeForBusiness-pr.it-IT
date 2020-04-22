@@ -12,19 +12,19 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 784ff94a-4b33-4dbd-ba74-27acc3eb6954
-description: Il cmdlet Set-CcCredential imposta le credenziali della distribuzione corrente di Skype for Business Cloud Connector Edition.
-ms.openlocfilehash: b7620a6d76415e4e2a49ea9bd628d1e1cba7f4ff
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Il cmdlet Set-CcCredential imposta le credenziali della distribuzione di Skype for Business Cloud Connector Edition corrente.
+ms.openlocfilehash: a97d85ef6fec31383b349e9a0c3b3d9e25d04337
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824210"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780675"
 ---
 # <a name="set-cccredential"></a>Set-CcCredential
  
-Il cmdlet Set-CcCredential imposta le credenziali della distribuzione corrente di Skype for Business Cloud Connector Edition. 
+Il cmdlet Set-CcCredential imposta le credenziali della distribuzione di Skype for Business Cloud Connector Edition corrente. 
   
-Con Cloud Connector versione 2,0 e successive, questo cmdlet può anche impostare le informazioni sull'account per l'amministratore della macchina virtuale e per l'amministratore del dominio.
+Con il connettore Cloud versione 2,0 e versioni successive, questo cmdlet può anche impostare le informazioni sull'account per l'amministratore della macchina virtuale e per l'amministratore di dominio.
   
 ```powershell
 Set-CcCredential [[-AccountType] <string> {TenantAdmin}]
@@ -35,7 +35,7 @@ Set-CcCredential [[-AccountType] <string> {TenantAdmin}]
 
 ### <a name="example-1"></a>Esempio 1
 
-L'esempio seguente specifica il nome dell'account e la password per l'amministratore del tenant:
+Nell'esempio seguente viene specificato il nome e la password dell'account per l'amministratore tenant:
   
 ```powershell
 Set-CcCredential -AccountType "TenantAdmin"
@@ -44,19 +44,19 @@ Set-CcCredential -AccountType "TenantAdmin"
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Il cmdlet Set-CcCredential imposta il nome dell'account e la password per l'amministratore del tenant. Per le versioni precedenti a 2,0, l'amministratore deve essere un amministratore globale di Office 365. Cloud Connector usa questo account per ottenere informazioni di configurazione, impostare i parametri di configurazione e aggiornare lo stato dell'appliance alla configurazione del tenant di Office 365. Con il rilascio 2,0 e versioni successive, puoi anche usare questo cmdlet per aggiornare le password per gli account VmAdmin e DomainAdmin.
+Il cmdlet Set-CcCredential consente di impostare il nome e la password dell'account per l'amministratore tenant. Per le versioni precedenti all'2,0, questo amministratore deve essere un amministratore globale. Il connettore cloud utilizza questo account per ottenere informazioni di configurazione, impostare parametri di configurazione e aggiornare lo stato dell'accessorio alla configurazione dell'organizzazione di Office 365. Con la versione 2,0 e versioni successive, è anche possibile utilizzare questo cmdlet per aggiornare le password per gli account VmAdmin e DomainAdmin.
   
 ## <a name="parameters"></a>Parametri
 <a name="DetailedDescription"> </a>
 
-|**Parametro**|**Richiesto**|**Tipo**|**Descrizione**|
+|**Parametro**|**Obbligatorio**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
-| AccountType <br/> | Obbligatorio <br/> |System.String  <br/> | Il valore del parametro deve essere "TenantAdmin", "VmAdmin" o "DomainAdmin". <br/> |
+| AccountType <br/> | Obbligatorio <br/> |System. String  <br/> | Il valore del parametro deve essere "TenantAdmin", "VmAdmin" o "DomainAdmin". <br/> |
    
 ## <a name="input-types"></a>Tipi di input
 <a name="InputTypes"> </a>
 
-Nessuno. Il cmdlet Set-CcCredential non accetta l'input da pipeline.
+Nessuna. Il cmdlet Set-CcCredential non accetta input da pipeline.
   
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>

@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ddd8a0574899c13e03aae34915b8a342d1984feb
-ms.sourcegitcommit: 56ceda54ca48d2984298d4d1f26017c0147d4431
+ms.openlocfilehash: f9addb5dfe25f5d4906c0b4ab1d332a2ea70f72d
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43505643"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779642"
 ---
 # <a name="cloud-video-interop-for-microsoft-teams"></a>Interoperabilità cloud video per Microsoft Teams
 
@@ -46,7 +46,7 @@ Mentre l'interoperabilità cloud video offre una soluzione intermedia ottimale, 
 
 ### <a name="office-365-us-government-and-third-party-services"></a>Office 365 US Government e servizi di terze parti
 
-Office 365 offre la possibilità di integrare applicazioni di terze parti nei siti di SharePoint Online, Skype for business, teams, applicazioni di Office incluse in Office 365 ProPlus (ad esempio Word, Excel, PowerPoint e Outlook) e Outlook Web App. Office 365 supporta inoltre l'integrazione con i provider di servizi di terze parti. Queste applicazioni e servizi di terze parti possono comportare l'archiviazione, la trasmissione e l'elaborazione dei dati del cliente dell'organizzazione su sistemi di terze parti esterni all'infrastruttura di Office 365 e quindi non coperti dagli impegni di conformità e protezione dei dati di Office 365. **Per valutare l'uso appropriato di questi servizi per l'organizzazione, è consigliabile esaminare le istruzioni sulla privacy e la conformità fornite da terze parti.**
+Office 365 offre la possibilità di integrare applicazioni di terze parti nei siti di SharePoint Online, Skype for business, teams, applicazioni di Office incluse nelle app Microsoft 365 per le aziende (ad esempio Word, Excel, PowerPoint e Outlook) e Outlook Web App. Office 365 supporta inoltre l'integrazione con i provider di servizi di terze parti. Queste applicazioni e servizi di terze parti possono comportare l'archiviazione, la trasmissione e l'elaborazione dei dati del cliente dell'organizzazione su sistemi di terze parti esterni all'infrastruttura di Office 365 e quindi non coperti dagli impegni di conformità e protezione dei dati di Office 365. **Per valutare l'uso appropriato di questi servizi per l'organizzazione, è consigliabile esaminare le istruzioni sulla privacy e la conformità fornite da terze parti.**
 
 
 

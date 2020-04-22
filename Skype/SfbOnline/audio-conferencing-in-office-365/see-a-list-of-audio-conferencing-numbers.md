@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come cercare i numeri di conferenza telefonica con accesso esterno all'interno di Skype for Business online. "
-ms.openlocfilehash: 6c9c9633f99edf42c3016b90f3b52c6c4c54b0d6
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 065de84b3efa5303fbf3321b0087462c23c331fe
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42011019"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779412"
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers-in-skype-for-business-online"></a>Visualizzare un elenco di numeri per Audioconferenza in Skype for Business online
 
@@ -52,7 +52,7 @@ If there is only one phone number available in your organization, it will be use
 
 ## <a name="to-view-your-audio-conferencing-phone-numbers"></a>Per visualizzare i numeri di telefono per Audioconferenza
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
     
 2. Accedere all'interfaccia di amministrazione > **Skype for business**.
     

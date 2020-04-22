@@ -15,12 +15,12 @@ f1.keywords:
 description: Informazioni sulle barriere informative e sul loro impatto sui team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a666d89e78a9234144eb09173b713d1186410206
-ms.sourcegitcommit: 25e70de7c943e22fe6ac6e8d6b4353ca68f81f83
+ms.openlocfilehash: 8cdb736db3234d0c7e24729a7d8e2b06c2d068d0
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43157819"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780815"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -60,14 +60,14 @@ Il servizio di valutazione dei criteri barriera delle informazioni determina se 
 
 ## <a name="managing-information-barrier-policies"></a>Gestione dei criteri di barriera delle informazioni
 
-I criteri di barriera delle informazioni vengono gestiti nel centro protezione & conformità (SCC) di Office 365 tramite i cmdlet di PowerShell. Per altre informazioni, vedere [definire i criteri per le barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies).
+I criteri di barriera delle informazioni vengono gestiti nel centro conformità Microsoft 365 (SCC) usando i cmdlet di PowerShell. Per altre informazioni, vedere [definire i criteri per le barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies).
 
 > [!IMPORTANT]
 > Prima di configurare o definire i criteri, **è necessario abilitare la ricerca di directory con ambito in Microsoft teams**. Attendere almeno 24 ore dopo l'abilitazione della ricerca nell'ambito della directory prima di configurare o definire i criteri per le barriere informative. Leggi [altre informazioni sui prerequisiti per le barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies#prerequisites).
 
 ## <a name="information-barriers-administrator-role"></a>Ruolo amministratore barriere informative
 
-Il ruolo Gestione conformità IB è responsabile della gestione dei criteri di barriera delle informazioni. Per altre informazioni su questo ruolo, vedere [autorizzazioni nel centro conformità & sicurezza di Office 365](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center).
+Il ruolo Gestione conformità IB è responsabile della gestione dei criteri di barriera delle informazioni. Per altre informazioni su questo ruolo, vedere [autorizzazioni nel centro conformità Microsoft 365](https://docs.microsoft.com/office365/securitycompliance/permissions-in-the-security-and-compliance-center).
 
 ## <a name="information-barrier-triggers"></a>Trigger della barriera delle informazioni
 
@@ -93,7 +93,7 @@ I criteri di barriera delle informazioni vengono attivati quando si verificano g
 
 - **Una schermata viene condivisa tra due o più utenti** : ogni volta che viene condivisa una schermata tra due o più utenti, la condivisione dello schermo deve essere valutata per verificare che non violi i criteri di barriera delle informazioni di altri utenti. Se si violano i criteri di barriera delle informazioni, la condivisione dello schermo non sarà consentita.
 - **Un utente inserisce una chiamata telefonica (VoIP) in teams** : ogni volta che viene avviata una chiamata vocale da un utente a un altro utente o gruppo di utenti, la chiamata viene valutata per assicurarsi che non violi i criteri di barriera delle informazioni di altri membri del team. In caso di violazione, la chiamata vocale è bloccata.
-- **Utenti guest in teams** -i criteri barriera delle informazioni si applicano agli utenti guest anche in teams. Se gli utenti Guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere [gestire l'accesso guest nei gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#can-i-make-guest-objects-visible-in-the-global-address-list). Una volta individuabili gli utenti guest, puoi [definire i criteri di barriera delle informazioni](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies).
+- **Utenti guest in teams** -i criteri barriera delle informazioni si applicano agli utenti guest anche in teams. Se gli utenti Guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere [gestire l'accesso guest nei gruppi di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#can-i-make-guest-objects-visible-in-the-global-address-list). Una volta individuabili gli utenti guest, puoi [definire i criteri di barriera delle informazioni](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies).
 
 ## <a name="how-policy-changes-impact-existing-chats"></a>Modifica dell'impatto delle chat esistenti tra i criteri
 

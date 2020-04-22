@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 42f6b185a8a09b0aae139175acfc632b84387db8
-ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.openlocfilehash: e226acdc12d4b94b7854f6d4bdb1d2fa618fa21e
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2020
-ms.locfileid: "43749443"
+ms.locfileid: "43777501"
 ---
 # <a name="security-and-compliance-in-microsoft-teams"></a>Sicurezza e conformità in Microsoft Teams
 
@@ -53,7 +53,7 @@ Teams impone l'autenticazione a livello di team e a livello di organizzazione a 
 
 Leggere i [modelli di identità e l'autenticazione](identify-models-authentication.md) per approfondire l'autenticazione e i team e [come funziona l'autenticazione moderna](sign-in-teams.md) in particolare per l'autenticazione moderna.
 
-Poiché teams funziona in collaborazione con SharePoint, OneNote, Exchange e altro ancora, è consigliabile gestire la sicurezza in Office 365. Per altre informazioni sulla sicurezza di Office 365, vedere [configurare il tenant di office 365 per aumentare la sicurezza](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
+Poiché teams funziona in collaborazione con SharePoint, OneNote, Exchange e altro ancora, è consigliabile gestire la sicurezza in Office 365. Per altre informazioni sulla sicurezza di Office 365, vedere [configurare l'organizzazione di office 365 per una maggiore sicurezza](https://docs.microsoft.com/office365/securitycompliance/tenant-wide-setup-for-increased-security).
 
 > [!NOTE]
 > Attualmente, i [canali privati](private-channels.md) supportano funzionalità limitate di sicurezza e conformità. Il supporto per il set completo di caratteristiche di sicurezza e conformità nei canali privati sarà disponibile a breve.
@@ -84,7 +84,7 @@ L'applicazione desktop Microsoft teams supporta AppLocker.  Per altre informazio
 
 ## <a name="compliance"></a>Conformità
 
-Teams offre una vasta gamma di informazioni utili per le aree di conformità, tra cui conformità delle comunicazioni per canali, chat e allegati, criteri di conservazione, protezione dalla perdita dei dati (DLP), eDiscovery e blocco legale per canali, chat e file, ricerca nel log di controllo e gestione delle applicazioni per dispositivi mobili con Microsoft Intune. Sono state fornite informazioni su tutti questi argomenti e si può visitare il centro [conformità Microsoft 365](https://compliance.microsoft.com) o [Office 365 Security & Compliance Center](https://protection.microsoft.com) per gestire queste impostazioni.
+Teams offre una vasta gamma di informazioni utili per le aree di conformità, tra cui conformità delle comunicazioni per canali, chat e allegati, criteri di conservazione, protezione dalla perdita dei dati (DLP), eDiscovery e blocco legale per canali, chat e file, ricerca nel log di controllo e gestione delle applicazioni per dispositivi mobili con Microsoft Intune. Sono state fornite informazioni su tutti questi argomenti e si può accedere al [centro conformità Microsoft 365](https://compliance.microsoft.com) per gestire queste impostazioni.
 
 ### <a name="information-barriers"></a>Barriere informative
 
@@ -140,11 +140,11 @@ Durante le controversie, potrebbe essere necessario che tutti i dati associati a
 
 In entrambi i casi, una volta impostato il blocco, assicura che, anche se gli utenti finali eliminano o modificano i messaggi di canale presenti nella cassetta postale del gruppo, le copie non modificabili del contenuto vengono mantenute e disponibili tramite la ricerca eDiscovery. Le esenzioni legali vengono in genere applicate nel contesto di un caso di eDiscovery.
 
-Vedere la [Panoramica dell'](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) articolo sui criteri di conservazione per altre informazioni sulla conservazione e l'archiviazione nel centro conformità & sicurezza di Office 365. Per altre informazioni specifiche sulle squadre in attesa legale, è anche possibile [inserire un utente o un team di Microsoft teams in un articolo per il blocco legale](legal-hold.md) per saperne di più.
+Vedere la [Panoramica dell'](https://docs.microsoft.com/microsoft-365/compliance/retention-policies) articolo sui criteri di conservazione per comprendere meglio la conservazione e il mantenimento nel centro conformità Microsoft 365. Per altre informazioni specifiche sulle squadre in attesa legale, è anche possibile [inserire un utente o un team di Microsoft teams in un articolo per il blocco legale](legal-hold.md) per saperne di più.
 
 ### <a name="compliance-content-search"></a>Ricerca di contenuto di conformità
 
-La ricerca di contenuto può essere usata per cercare tutti i dati dei team tramite ricche funzionalità di filtro. I dati risultanti possono essere esportati in un contenitore specifico per il supporto della conformità e del contenzioso. Questa operazione può essere eseguita con o senza un caso di eDiscovery. In questo modo gli amministratori della conformità possono raccogliere i dati dei team in tutti gli utenti, rivederli ed esportarli per ulteriori elaborazioni. Per altre informazioni su come eseguire una ricerca di contenuto di conformità per Microsoft teams e altri contenuti di Office 365 nel centro sicurezza & di Office 365, vedere la pagina relativa alla [ricerca di contenuto in office 365](https://docs.microsoft.com/microsoft-365/compliance/content-search) .
+La ricerca di contenuto può essere usata per cercare tutti i dati dei team tramite ricche funzionalità di filtro. I dati risultanti possono essere esportati in un contenitore specifico per il supporto della conformità e del contenzioso. Questa operazione può essere eseguita con o senza un caso di eDiscovery. In questo modo gli amministratori della conformità possono raccogliere i dati dei team in tutti gli utenti, rivederli ed esportarli per ulteriori elaborazioni. Per altre informazioni su come eseguire una ricerca di contenuto di conformità per Microsoft teams e altri contenuti di Microsoft 365 o Office 365 nel centro conformità di Microsoft 365, vedere la pagina relativa alla [ricerca di contenuto nell'articolo di office 365](https://docs.microsoft.com/microsoft-365/compliance/content-search) .
 
 > [!TIP]
 > Usando la ricerca di contenuto, è possibile filtrare solo il contenuto di Microsoft teams, ad esempio messaggi di chat e canali, riunioni e chiamate, se necessario.
@@ -153,7 +153,7 @@ Per altre informazioni specifiche per le squadre sulla configurazione della rice
 
 ### <a name="auditing-and-reporting"></a>Controllo e creazione di report
 
-La ricerca nel log di controllo si inserisce direttamente nel centro conformità & sicurezza di Office 365 e offre la possibilità di impostare gli avvisi, nonché di segnalare eventi di controllo, consentendo l'esportazione di set di eventi specifici o generici per il carico di lavoro per l'uso di amministratori e le indagini in una sequenza temporale di controllo illimitata. È possibile configurare gli avvisi per tutti i dati del log di controllo all'interno del centro conformità & sicurezza di Office 365 e filtrare ed esportare questi dati per un'ulteriore analisi. Per altre informazioni su come eseguire un log di controllo per Office 365, vedere l'articolo [cercare il log di controllo](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) . Per altre informazioni sulla ricerca di eventi di Microsoft Teams nel centro conformità & sicurezza di Office 365, è anche possibile eseguire il [controllo attiva nell'articolo teams](audit-log-events.md) per la revisione.
+La ricerca nel log di controllo si connette direttamente al centro conformità Microsoft 365 e offre la possibilità di impostare gli avvisi, nonché di segnalare gli eventi di controllo, consentendo l'esportazione di set di eventi specifici o generici per il carico di lavoro per l'uso dell'amministratore e le indagini in una sequenza temporale di controllo illimitata. È possibile configurare gli avvisi per tutti i dati del log di controllo nel centro conformità Microsoft 365 e filtrare ed esportare questi dati per un'ulteriore analisi. Per altre informazioni su come eseguire un log di controllo per Office 365, vedere l'articolo [cercare il log di controllo](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) . Per altre informazioni sulla ricerca di eventi Microsoft Teams nel centro conformità Microsoft 365, è anche possibile eseguire il [controllo attiva in teams](audit-log-events.md) per la revisione.
 
 ## <a name="privacy"></a>Privacy
 
@@ -174,7 +174,7 @@ Nella figura seguente viene indicato il flusso di ingestione delle riunioni di t
 
 ## <a name="licensing"></a>Licenze
 
-Per quanto riguarda le funzionalità di protezione delle informazioni, gli abbonamenti a Office 365 e le licenze autonome associate determineranno il set di caratteristiche disponibile.
+Per quanto riguarda le funzionalità di protezione delle informazioni, gli abbonamenti a Microsoft 365, gli abbonamenti a Office 365 e le licenze autonome associate determineranno il set di caratteristiche disponibile.
 
 Per informazioni sulla determinazione delle licenze necessarie per implementare le funzionalità per la sicurezza e la conformità, vedere la sezione relativa alle [licenze per Office 365 o Microsoft 365](https://download.microsoft.com/download/8/7/7/877B1713-671E-43AA-BB79-AF8478C64AFF/Licensing-Microsoft-365.pdf).
 
@@ -183,7 +183,7 @@ Per informazioni sulla determinazione delle licenze necessarie per implementare 
 
 ## <a name="location-of-data-in-teams"></a>Posizione dei dati in Teams
 
-I dati in teams si trovano nell'area geografica associata al tenant di Office 365. Per visualizzare le aree geografiche supportate attualmente, vedere [la posizione dei dati in Microsoft teams](location-of-data-in-teams.md).
+I dati in teams si trovano nell'area geografica associata all'organizzazione di Office 365. Per visualizzare le aree geografiche supportate attualmente, vedere [la posizione dei dati in Microsoft teams](location-of-data-in-teams.md).
 
 Per informazioni sull'area geografica in cui sono alloggiati i dati per il tenant, visitare il**profilo dell'organizzazione****delle impostazioni** > dell'interfaccia di [Amministrazione](https://portal.office.com/adminportal/home) > di Microsoft 365. Scorrere verso il basso fino a **posizione dati**.
 

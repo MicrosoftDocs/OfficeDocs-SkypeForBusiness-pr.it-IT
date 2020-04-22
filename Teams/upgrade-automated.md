@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1ed959f74be1074ab8ed60b3fe54f06384b7990a
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: b42785d4f8d765e7d9600c2e195e48d7ec60d8ba
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836168"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780655"
 ---
 # <a name="automated-upgrades-from-skype-for-business-online-to-microsoft-teams"></a>Aggiornamenti automatici da Skype for business online a Microsoft Teams
 
@@ -35,7 +35,7 @@ Un aggiornamento riuscito da Skype for business a Microsoft teams richiede la pi
 
 I clienti di Skype for business online idonei per gli aggiornamenti automatici ai team riceveranno una serie di notifiche di aggiornamento che iniziano 30 giorni prima della data di aggiornamento pianificata. Queste notifiche verranno recapitate come *piano per* i post di modifica nel centro messaggi di amministrazione, aggiornare i messaggi di posta elettronica all'amministratore globale e i contrassegni in-app agli utenti finali.
 
-Queste notifiche comunicheranno la data programmata dell'aggiornamento automatizzato, collegherà le risorse di aggiornamento e la formazione per aiutare l'adozione e l'uso dei team e darà ai clienti la possibilità di rinviare l'aggiornamento automatico di altri 30 giorni l'evento non è pronto per l'aggiornamento in base alla data pianificata.
+Queste notifiche comunicheranno la data programmata dell'aggiornamento automatizzato, collegherà le risorse di aggiornamento e la formazione per aiutare l'adozione e l'uso dei team e darà ai clienti l'opzione di posticipare l'aggiornamento automatico di altri 30 giorni, se non sono pronti per l'aggiornamento in base alla data prevista.
 
 ## <a name="the-automated-upgrade-experience"></a>Esperienza di aggiornamento automatizzata
 
@@ -56,7 +56,7 @@ Al termine dell'aggiornamento automatico, la **modalità di coesistenza** è imp
 
 Le transizioni di successo da Skype for business online a Microsoft teams richiedono pianificazione tecnica e disponibilità degli utenti per garantire che l'organizzazione sia pronta a sfruttare le funzionalità estese e le prestazioni dei team. Tuttavia, man mano che pianifichi l'aggiornamento, potresti trovare che l'organizzazione non è ancora pronta per l'aggiornamento a teams in questo momento.
 
-Se si riceve una notifica relativa all'aggiornamento automatico programmato a teams e si vuole posticipare una data successiva, l'amministratore globale di Office 365 può accedere al portale di amministrazione di teams e fare clic sul pulsante *rinvia* . In questo modo si premerà la data di aggiornamento automatica di 30 giorni. Quando si aggiorna il portale di amministrazione di teams dopo il rinvio, viene visualizzata una notifica che include la nuova data di aggiornamento automatizzata.
+Se si riceve una notifica relativa all'aggiornamento automatico programmato a teams e si vuole posticipare una data successiva, l'amministratore globale può accedere al portale di amministrazione di teams e fare clic sul pulsante *rinvia* . In questo modo si premerà la data di aggiornamento automatica di 30 giorni. Quando si aggiorna il portale di amministrazione di teams dopo il rinvio, viene visualizzata una notifica che include la nuova data di aggiornamento automatizzata.
 
 ## <a name="requests-to-downgrade-to-skype-for-business"></a>Richieste di downgrade a Skype for business
 
@@ -64,7 +64,7 @@ Consentiamo il downgrade di una tantum da Teams a SfBO, per consentire ai tenant
 
 ## <a name="related-content"></a>Contenuti correlati
 
-- [Introduzione all'aggiornamento di Microsoft Teams](upgrade-start-here.md)
+- [Guida introduttiva all'aggiornamento di Microsoft Teams](upgrade-start-here.md)
 - [Ritiro di Skype for Business Online](skype-for-business-online-retirement.md)
 - [Get-CsTeamsUpgradeStatus](https://docs.microsoft.com/powershell/module/skype/get-csteamsupgradestatus?view=skype-ps)
 - [Considerazioni sulla modalità solo Teams](teams-only-mode-considerations.md)

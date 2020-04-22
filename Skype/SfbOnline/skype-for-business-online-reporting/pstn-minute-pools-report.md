@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Reporting
 description: La nuova area report dell'interfaccia di amministrazione di Skype for business Mostra la chiamata e l'attività di conferenza audio nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile usare il report pool di minuti PSTN di Skype for business per visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
-ms.openlocfilehash: 2777b4f32b99a086110b75ca527eda29b0842b6e
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: ac27e88b6e0f4945dde90f5e5f7bade31f20fe6a
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41692431"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776251"
 ---
 # <a name="pstn-minute-pools-report"></a>Report pool minuti PSTN
 
@@ -42,12 +42,12 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
   
 ## <a name="how-to-get-to-the-skype-for-business-pstn-minute-pools-report"></a>Come ottenere il report dei pool di minuti PSTN di Skype for business
 
-![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
+![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
 -  > Accedere all'interfaccia di amministrazione > **interfaccia di amministrazione di****Skype for business** > per i**report** > di**pool di minuti PSTN**.
     
 > [!NOTE]
-> A seconda dell'abbonamento a Office 365, potresti non vedere tutti gli stessi dettagli visualizzati qui. 
+> A seconda dell'abbonamento a Microsoft 365 o Office 365, potrebbero non essere visualizzati tutti gli stessi dettagli visualizzati qui. 
   
 ## <a name="interpret-the-skype-for-business-pstn-minute-pools-report"></a>Interpretare il report pool di minuti PSTN di Skype for business
 

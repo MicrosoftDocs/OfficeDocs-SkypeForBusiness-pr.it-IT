@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Informazioni su come assegnare un ID conferenza per un utente in Skype for Business online e quale devono essere i parametri ID conferenza. '
-ms.openlocfilehash: 8bec76e25df092beb18725467c3041de3c1d7745
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: b5ed8bb8ec32277e0bebca43338ae233aa6d38f6
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42010989"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776841"
 ---
 # <a name="view-and-reset-a-conference-id-assigned-to-a-user-in-skype-for-business-online"></a>Visualizzare e reimpostare un ID conferenza assegnato a un utente in Skype for Business online
 
@@ -46,11 +46,11 @@ An email will be sent to the user with the conference ID and the default audio c
 
 ### <a name="to-view-the-conference-id"></a>Per visualizzare l'ID conferenza
 
-![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
+![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
 È possibile visualizzare l'ID conferenza e inviarlo agli utenti.
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
 
 2. Accedere all'interfaccia di amministrazione > **Skype for business**.
 
@@ -76,9 +76,9 @@ Per ulteriori informazioni sul cmdlet, vedere [Get-CsOnlineDialInConferencingUse
 
 È possibile reimpostare un ID conferenza per un utente se, per esempio, venisse dimenticato.
 
-![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
+![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
 
 2. Accedere all'interfaccia di amministrazione > **Skype for business**.
 

@@ -16,12 +16,12 @@ ms.collection:
 - M365-voice
 localization_priority: Normal
 description: Questo articolo illustra l'elenco dei telefoni certificati per Microsoft teams e le funzionalità supportate nei telefoni certificati per Microsoft teams.
-ms.openlocfilehash: b811a92977d10601aa601e1bae811ef73c34dce8
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 94ee5e2dc1b55da190c4b6afa736fab2ced3e1d1
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836866"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780225"
 ---
 # <a name="phones-for-microsoft-teams"></a>Telefoni per Microsoft Teams
 
@@ -35,18 +35,18 @@ Per offrire un'esperienza di Microsoft teams di alta qualità e attendibile sui 
 
 Nella tabella seguente sono disponibili un set di caratteristiche di alto livello supportato nei telefoni IP certificati teams.
 
-|Caratteristiche |Telefono da tavolo (modalità personale) |Telefono della sala riunioni (modalità condivisa)|
+|Funzionalità |Telefono da tavolo (modalità personale) |Telefono della sala riunioni (modalità condivisa)|
 |---------|---------|---------|
 |**Autenticazione** | |  |
 |Accedi con le credenziali utente |  Sì | Sì|
 |Accedere con PC/smartphone  | Sì |Sì|
 |Autenticazione moderna | Sì |Sì |
-|Blocco telefono/Sblocca | No |No |
+|Blocco telefono/Sblocca | Sì |No |
 |**Chiamate** |  |  |
 |Chiamate P2P in arrivo/in uscita | Sì  |Sì |
 |Controlli in chiamata tramite interfaccia utente (mute, attesa/ripresa, trasferimento, fine chiamata)| Sì  |Sì |
 |Chiamate PSTN| Sì  |Sì |
-|Casella vocale visuale | No | No |
+|Casella vocale visuale | Sì | No |
 |supporto di 911  | Sì  |Sì |
 |**Calendario e presenza**|   | |
 |Accesso al calendario e dettagli delle riunioni|Sì |Sì|
@@ -58,7 +58,7 @@ Nella tabella seguente sono disponibili un set di caratteristiche di alto livell
 |Join con un clic per le riunioni  | Sì  |Sì |
 |Partecipare a riunioni Skype for business | Sì  | Sì|
 |Controlli delle chiamate di riunione (silenziamento/riattivazione, attesa/ripresa, blocco, aggiunta/rimozione partecipante)|Sì|Sì|
-|Dettagli riunione|No|No|
+|Dettagli riunione|Sì|No|
 
 Stiamo lavorando per aggiungere continuamente funzionalità per aiutare gli utenti a migliorare l'esperienza dei team sui telefoni. Le schermate seguenti illustrano alcune delle esperienze che sosteniamo oggi.
 
@@ -141,7 +141,7 @@ La versione minima del firmware può essere selezionata nella pagina di accesso 
 
 ## <a name="required-licenses"></a>Licenze necessarie
 
-Le licenze di Microsoft teams possono essere acquistate come parte degli [abbonamenti a Office 365](Office-365-licensing.md). Per altre informazioni sulle licenze necessarie per l'uso di Microsoft teams sui telefoni, vedere [licenze di sistema telefonico](https://products.office.com/microsoft-teams/voice-calling)disponibili.
+Le licenze di Microsoft teams possono essere acquistate come parte degli [abbonamenti a microsoft 365 e Office 365](Office-365-licensing.md). Per altre informazioni sulle licenze necessarie per l'uso di Microsoft teams sui telefoni, vedere [licenze di sistema telefonico](https://products.office.com/microsoft-teams/voice-calling)disponibili.
 
 Per altre informazioni su come ottenere teams, vedere [come si accede a Microsoft teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
 

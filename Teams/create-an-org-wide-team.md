@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 99acc2e1756c0915f404f6bf6b1bfab1e30fcaf6
-ms.sourcegitcommit: 152eb7daacd0a36f42aa441633c12c7037a0969a
-ms.translationtype: HT
+ms.openlocfilehash: 90051eb5ee4faf981ec54efa8049909dde4311d3
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288734"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43778452"
 ---
 # <a name="create-an-org-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
@@ -77,7 +77,7 @@ Anche se i membri non possono abbandonare un team a livello di organizzazione, i
 
 ### <a name="is-there-a-way-to-create-an-org-wide-team-other-than-using-the-teams-client"></a>Esiste un modo per creare un team a livello di organizzazione diverso dall'uso del client di Teams?
 
-Gli amministratori globali possono creare un team a livello di organizzazione solo usando il client di Teams. Se l'organizzazione impone la creazione di team con PowerShell, la soluzione alternativa consigliata consiste nell'aggiungere gli amministratori globali al gruppo di sicurezza degli utenti che possono creare un team. Per altre informazioni, vedere [Gestire chi può creare gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups).
+Gli amministratori globali possono creare un team a livello di organizzazione solo usando il client di Teams. Se l'organizzazione impone la creazione di team con PowerShell, la soluzione alternativa consigliata consiste nell'aggiungere gli amministratori globali al gruppo di sicurezza degli utenti che possono creare un team. Per altre informazioni, vedere [gestire chi può creare gruppi di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups).
 
 Se questo non è possibile, è possibile usare PowerShell per creare un team pubblico e aggiungere un amministratore globale come proprietario del team. Quindi, l'amministratore globale deve fare clic su **Altre opzioni** accanto al nome del team, fare clic su **Modifica team** e modificare la privacy in **A livello di organizzazione: tutti gli utenti dell'organizzazione verranno aggiunti automaticamente**. Tenere presente che solo i proprietari del team possono accedere all'opzione **Modifica team** e solo gli amministratori globali possono vedere l'opzione **A livello di organizzazione**.
 

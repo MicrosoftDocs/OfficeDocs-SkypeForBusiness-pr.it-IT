@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Reporting
 description: La nuova area report dell'interfaccia di amministrazione di Skype for business Mostra la chiamata e l'attività di conferenza audio nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli di utilizzo PSTN dei servizi di audioconferenza, incluso il costo della chiamata, in modo da poter comprendere l'utilizzo e chiamare i dettagli di fatturazione per determinare l'utilizzo all'interno dell'organizzazione.
-ms.openlocfilehash: 7050334a390188f47f5d201b3fa541d337601400
-ms.sourcegitcommit: a4fd238de09366d6ed33d72c908faff812da11a5
+ms.openlocfilehash: 4161f0f9f0b6e011b67f94afc14b5ac793fc1009
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637143"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776271"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
@@ -39,12 +39,12 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
   
 ## <a name="how-to-get-to-the-skype-for-business-pstn-usage-details-report"></a>Come ottenere i report di utilizzo PSTN di Skype for Business
 
-![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
+![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
 -  > Accedere all'interfaccia di amministrazione > **interfaccia di amministrazione di****Skype for business** > per l'interfaccia di amministrazione**segnala** > **i dettagli sull'utilizzo PSTN**.
     
     > [!NOTE]
-    > In base all'abbonamento a Office 365 di cui si dispone, alcuni dei prodotti e report illustrati in questo articolo potrebbero non essere disponibili. 
+    > A seconda dell'abbonamento a Microsoft 365 o Office 365, è possibile che non vengano visualizzati tutti i prodotti e i report visualizzati qui.
   
 ## <a name="interpret-the-skype-for-business-pstn-usage-report"></a>Interpretare il report di utilizzo PSTN di Skype for Business
 
@@ -146,7 +146,7 @@ Il file esportato contiene altri campi che non sono disponibili nel report onlin
 | 16 | Costo di connessione | `numeric(16, 2)` | Prezzo della tariffa di connessione |
 | 17 | Addebito | `numeric(16, 2)` | Importo del pagamento o del costo della chiamata addebitata al tuo account |
 | 18 | Valuta | `nvarchar(3)` | Tipo di valuta usata per calcolare il costo della chiamata ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)) |
-| 19 | Capacità | `nvarchar(32)` | Licenza usata per la chiamata |
+| 19 | Funzionalità | `nvarchar(32)` | Licenza usata per la chiamata |
 
     
 ## <a name="want-to-see-other-skype-for-business-reports"></a>Per consultare altri report di Skype for Business

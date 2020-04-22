@@ -13,15 +13,15 @@ f1.keywords:
 - NOCSH
 ms.reviewer: anach
 search.appverid: MET150
-description: Informazioni su come recuperare i dati di Microsoft teams dal log di controllo di Office 365.
+description: Informazioni su come recuperare i dati di Microsoft teams dal log di controllo.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3f53d1a0b5e600de9d38233b243dba3486b88bf1
-ms.sourcegitcommit: 6cfaadec5782ca7316db36472bd0be20217da693
+ms.openlocfilehash: 9b1235dcd1a33800185eb005f5e309204790c5b1
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341624"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43778892"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams
 
@@ -41,11 +41,11 @@ Il log di controllo consente di analizzare attività specifiche in tutti i servi
 > [!NOTE]
 > Gli eventi di controllo dei canali privati vengono registrati anche per i team e i canali standard.
 
-Per visualizzare l'elenco completo delle attività controllate in Office 365, vedere [cercare il log di controllo nel centro conformità & sicurezza di office 365](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c).
+Per visualizzare l'elenco completo delle attività controllate in Microsoft 365, leggere [cercare il log di controllo nel centro conformità microsoft 365](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
 ## <a name="turn-on-auditing-in-teams"></a>Attivare il controllo in teams
 
-Prima di poter esaminare i dati di controllo, è necessario attivare prima di tutto il controllo nel [centro conformità & sicurezza](https://protection.office.com). Per assistenza durante l'attivazione del controllo, leggere [attivare o disattivare la ricerca nel log di controllo di Office 365](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014).
+Prima di poter esaminare i dati di controllo, è necessario attivare prima di tutto il controllo nel [centro conformità & sicurezza](https://protection.office.com). Per assistenza durante l'attivazione del controllo, leggere [attivare o disattivare la ricerca nel log di controllo](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014).
 
 > [!IMPORTANT]
 > I dati di controllo sono disponibili solo dal momento in cui è stato attivato il controllo.
@@ -65,7 +65,7 @@ Uno scenario in cui è consigliabile tenersi d'occhio, da un punto di vista azie
 
 ![Screenshot di un elenco di eventi attivati dalle eliminazioni di massa](media/TeamsExternalUserAddPolicy.png)
 
-La schermata di questo criterio per il monitoraggio degli utenti esterni consente di assegnare un nome al criterio, impostare la gravità in base alle esigenze aziendali, impostarlo come (in questo caso) una singola attività e quindi stabilire i parametri che verranno monitorati in modo specifico solo nell'aggiunta di utenti non interni e limita questa attività a Microsoft teams.
+La schermata di questo criterio per il monitoraggio delle aggiunte degli utenti esterni consente di assegnare un nome ai criteri, impostare la gravità in base alle esigenze aziendali, impostarla come (in questo caso) una singola attività e quindi stabilire i parametri che controlleranno in modo specifico solo l'aggiunta di utenti non interni e limitare l'attività a Microsoft teams.
 
 I risultati di questo criterio saranno quindi in grado di essere visualizzati nel log attività:
 

@@ -12,12 +12,12 @@ ms:contentKeyID: 48184449
 ms.date: 02/21/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a95f2fba2d65f0d25f1fa9b843dd7bb47240aa6c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 44d1f06fcbdbbba7400bf45857dad9ed57971363
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42188394"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779722"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -103,7 +103,7 @@ Dopo avere importato il modulo, digitare il comando seguente e premere Invio, pe
 
     Connect-MsolService
 
-A questo punto, viene visualizzata una finestra di dialogo delle credenziali. Digitare il nome utente e la password di Office 365 nella finestra di dialogo, quindi scegliere OK.
+A questo punto, viene visualizzata una finestra di dialogo delle credenziali. Immettere il nome utente e la password di Microsoft 365 o Office 365 nella finestra di dialogo e quindi fare clic su OK.
 
 Quando si è connessi a Office 365, è possibile eseguire il comando seguente per ottenere le informazioni relative ai nomi del servizio principale:
 

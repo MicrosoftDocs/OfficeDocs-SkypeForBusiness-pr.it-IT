@@ -12,12 +12,12 @@ ms:contentKeyID: 48185910
 ms.date: 05/25/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 8f9572df29681d6b2ee754fe51702fcc8f0b0163
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 54888a96d33dc3d9195256483f41719031847744
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42184289"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780325"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -45,7 +45,7 @@ _**Ultimo argomento modificato:** 2016-05-25_
 
 Per implementare e distribuire una distribuzione ibrida, è necessario che nel proprio ambiente siano configurati i seguenti elementi.
 
-  - Un tenant di Microsoft Office 365 con Skype for business online abilitato. Si noti che è possibile utilizzare solo un singolo tenant per una configurazione ibrida con la distribuzione locale.
+  - Un'organizzazione di Microsoft Office 365 con Skype for business online abilitato. Si noti che è possibile utilizzare solo un singolo tenant per una configurazione ibrida con la distribuzione locale.
 
   - Una singola distribuzione locale (Infrastructure) di Skype for Business Server o Lync Server distribuito in una topologia supportata. Vedere Requisiti per la topologia.
     
@@ -159,7 +159,7 @@ L'elenco dei domini consentiti include i domini che dispongono di un nome di dom
 
 Per configurare correttamente una distribuzione ibrida, è necessario soddisfare i requisiti seguenti:
 
-  - La corrispondenza del dominio deve essere configurata per la distribuzione locale e per il tenant di Office 365. Se l'individuazione dei partner è abilitata nella distribuzione locale, è necessario configurare la Federazione aperta per il tenant online. Se l'individuazione dei partner non è abilitata, la federazione chiusa deve essere configurata per il tenant online.
+  - La corrispondenza del dominio deve essere configurata per la distribuzione locale e per l'organizzazione di Office 365. Se l'individuazione dei partner è abilitata nella distribuzione locale, è necessario configurare la Federazione aperta per il tenant online. Se l'individuazione dei partner non è abilitata, la federazione chiusa deve essere configurata per il tenant online.
 
   - L'elenco dei domini bloccati nella distribuzione locale deve corrispondere esattamente all'elenco dei domini bloccati per il tenant online.
 
@@ -309,7 +309,7 @@ Durante la pianificazione di una distribuzione ibrida, è consigliabile consider
 
   - **Contatti utente il**   limite per i contatti per gli utenti di Lync Online è 250. Tutti i contatti oltre tale numero verranno rimossi dall'elenco contatti dell'utente quando l'account viene spostato in Lync Online.
 
-  - ****   Gli elenchi di contatti, i gruppi e gli elenchi di controllo di accesso per gli utenti di messaggistica istantanea e presenza vengono migrati con l'account utente.
+  - **Instant Messaging and Presence**   Gli elenchi di contatti, i gruppi e gli elenchi di controllo di accesso per gli utenti di messaggistica istantanea e presenza vengono migrati con l'account utente.
 
   - **Dati per le conferenze, contenuto di riunioni e riunioni**   pianificate questo contenuto non viene migrato con l'account utente. Gli utenti devono ripianificare le riunioni dopo la migrazione degli account a Lync Online.
 

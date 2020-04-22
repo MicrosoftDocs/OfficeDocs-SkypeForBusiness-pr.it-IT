@@ -15,16 +15,16 @@ ms.collection:
 - Teams_ITAdmin_Healthcare
 ms.reviewer: anach
 description: App pazienti per amministratori Teams
-ms.openlocfilehash: 03aa421a72ab1402e0574a65117fa1eb182f1a47
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: fbbb3361968ae928638fedca09fbd8d4c2ff33b6
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42147709"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780405"
 ---
 # <a name="audit-logs-for-patients-app"></a>Log di controllo per l'app Pazienti
 
-Un log di controllo per l'attività dell'app pazienti consente ai team di risposta dopo l'incidente di esaminare le modifiche apportate ai record medici elettronici (EMR) o alle informazioni sanitarie del paziente (PHI) e determinare se le modifiche o i miglioramenti apportati ai criteri o alle procedure per l'accesso a PHI sono necessari strumenti di produttività. Gli eventi del log di controllo coprono le azioni eseguite tramite l'interfaccia utente dell'app patients.
+Un log di controllo per l'attività dell'app pazienti consente ai team di risposta dopo l'incidente di esaminare le modifiche apportate ai record medici elettronici (EMR) o alle informazioni sanitarie del paziente (PHI) e determinare se sono necessarie modifiche o miglioramenti di criteri o procedure per l'accesso a PHI in strumenti di produttività. Gli eventi del log di controllo coprono le azioni eseguite tramite l'interfaccia utente dell'app patients.
 
 ## <a name="meet-hipaa-requirements"></a>Soddisfare i requisiti HIPAA
 
@@ -41,7 +41,7 @@ Un controllo è dipendente da diverse configurazioni precedenti:
 
 1. L'amministratore dovrebbe collaborare con il proprio provider di servizi di FHIR per avere EMR in un formato usato dall'app patients. Vedere [integrazione di record sanitari elettronici in Microsoft teams](patients-app.md).
 2. Un amministratore del provider di servizi sanitari deve abilitare l'app patients nell'interfaccia di amministrazione di teams. Per altre informazioni, Vedi [gestire i criteri di configurazione delle app in Microsoft teams](../../teams-app-setup-policies.md) e articoli correlati.
-3. L'amministratore deve abilitare gli audit delle attività in Office 365, allo stesso modo in cui abilitano qualsiasi controllo del log attività in Office 365, come descritto [prima di iniziare](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-begin) e [attivare o disattivare la ricerca nel log di controllo di Office 365](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search). Se la registrazione di controllo è già attiva, non è necessario nulla di speciale per l'app pazienti. Ogni volta che un provider di servizi sanitari installa e gestisce l'app all'interno di un team, i log di controllo registrano la loro attività PHI.
+3. L'amministratore deve abilitare gli audit delle attività in Office 365, allo stesso modo in cui abilitano qualsiasi controllo del log attività in Office 365, come descritto [prima di iniziare](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-begin) e [attivare o disattivare la ricerca nel log di controllo](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search). Se la registrazione di controllo è già attiva, non è necessario nulla di speciale per l'app pazienti. Ogni volta che un provider di servizi sanitari installa e gestisce l'app all'interno di un team, i log di controllo registrano la loro attività PHI.
 4. L'amministratore dovrà quindi annunciare la disponibilità dell'app patients e gli operatori sanitari dovrebbero iniziare a generare attività da includere in un controllo.
 
 <!-- add link out to client doc when available -->
@@ -80,6 +80,6 @@ Le attività registrate per Microsoft teams in generale sono descritte nelle [at
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Eseguire una ricerca nel log di controllo di Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+[Eseguire una ricerca nel log di controllo](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
 [Integrare cartelle cliniche elettroniche in Microsoft Teams](patients-app.md)

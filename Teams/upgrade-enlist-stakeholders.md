@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5244bd063caae9b0fab1411f4644e3adbd337431
-ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
+ms.openlocfilehash: e7e8effb58130a177e193db006ec6e0279f27309
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42706996"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780595"
 ---
 # <a name="enlist-your-project-stakeholders"></a>Integrare gli stakeholder del progetto
 
@@ -61,7 +61,7 @@ Facoltativamente, è possibile creare un comitato direttivo. A volte i progetti 
 | Lead per la telefonia | Fornisce informazioni approfondite sulla progettazione e l'implementazione di telefonia |
 | Proprietario del servizio/campione di qualità | Gestisce l'operazione di teams all-up, inclusa la qualità dell'esperienza utente |
 | Cavo per desktop e dispositivi | Fornisce l'input in client, dispositivi e app desktop |
-| Amministratore IT Pro/tenant | Garantisce la disponibilità della rete e le configurazioni del portale di Office 365 |
+| Amministratore IT Pro/tenant | Garantisce la disponibilità della rete e le configurazioni dell'interfaccia di amministrazione di Microsoft 365 |
 | Supporto/help desk lead | Gestisce la disponibilità del supporto tecnico |
 | Lead per la gestione delle modifiche | Supervisiona il programma di gestione e adozione delle modifiche degli utenti |
 | Lead Marketing | Progetta e implementa campagne di comunicazione |

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6eacfa99-9759-4c13-aca3-8992c2ff2710
 description: Informazioni su come preparare l'accessorio Cloud Connector per la distribuzione e l'utilizzo con il sistema telefonico in Office 365 (cloud PBX).
-ms.openlocfilehash: 6dbbc7eb1639859f889d6674e9f000507912d35a
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 21943dfd8b86bfeabb4cbd28b501b80a3f2b5c45
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41983841"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779242"
 ---
 # <a name="prepare-your-cloud-connector-appliance"></a>Preparare l'accessorio Cloud Connector
 
@@ -171,7 +171,7 @@ Quando si aggiorna il file ini, prendere in considerazione quanto segue:
 
 - **SiteName:** Il valore predefinito è **site1**. È necessario aggiornarlo prima di distribuire il connettore Cloud, poiché quando si esegue **Register-CcAppliance** per registrare un dispositivo in un sito esistente o nuovo, il cmdlet utilizzerà **siteName** per determinare il sito da registrare.
 
-     Se si desidera registrare l'accessorio in un nuovo sito, è necessario che il valore di **siteName** sia univoco e diverso rispetto ai siti esistenti. Se si desidera registrare l'accessorio in un sito esistente, è necessario che il valore di **siteName** nel file. ini corrisponda al nome definito nella configurazione tenant di Office 365. Se si sta copiando un file di configurazione da un sito a un altro, accertarsi di aver aggiornato di conseguenza il valore per **siteName** per ogni sito.
+     Se si desidera registrare l'accessorio in un nuovo sito, è necessario che il valore di **siteName** sia univoco e diverso rispetto ai siti esistenti. Se si desidera registrare l'accessorio in un sito esistente, è necessario che il valore di **siteName** nel file. ini corrisponda al nome definito nella configurazione dell'organizzazione di Office 365. Se si sta copiando un file di configurazione da un sito a un altro, accertarsi di aver aggiornato di conseguenza il valore per **siteName** per ogni sito.
 
 - **NomeServer:** Il nome del server non deve contenere il nome di dominio e deve essere limitato a 15 caratteri.
 
@@ -305,11 +305,11 @@ L'account CceService viene creato durante la distribuzione di Skype for Business
 
 3. Impostarne il valore su **attivato**.
 
-## <a name="set-up-your-office-365-tenant"></a>Configurazione del tenant di Office 365
+## <a name="set-up-your-office-365-organization"></a>Configurare l'organizzazione di Office 365
 
-È necessario un tenant di Office 365 con Skype for business online e il sistema telefonico in Office 365. Verificare che il tenant sia configurato e configurato prima di tentare di utilizzare il connettore Cloud.
+È necessaria un'organizzazione di Office 365 con Skype for business online e il sistema telefonico in Office 365. Verificare che il tenant sia configurato e configurato prima di tentare di utilizzare il connettore Cloud.
 
-Alcuni passaggi di installazione di Office 365 richiedono l'utilizzo di TRPS (tenant Remote PowerShell) per configurare il tenant di Office 365. **Tale operazione deve essere installata nel server host.** È possibile scaricare il modulo Skype for business online per PowerShell da: [Skype for business online, modulo di Windows PowerShell](https://www.microsoft.com/download/details.aspx?id=39366).
+Alcuni passaggi di installazione di Office 365 richiedono l'utilizzo di TRPS (tenant Remote PowerShell) per configurare l'organizzazione di Office 365. **Tale operazione deve essere installata nel server host.** È possibile scaricare il modulo Skype for business online per PowerShell da: [Skype for business online, modulo di Windows PowerShell](https://www.microsoft.com/download/details.aspx?id=39366).
 
 Creare un account di amministratore di Skype for business dedicato per la gestione di Cloud Connector online, ad esempio CceOnlineManagmentAdministrator. Questo account verrà utilizzato dall'accessorio per aggiungere o rimuovere Appliance, abilitare o disabilitare l'aggiornamento automatico del sistema operativo, abilitare o disabilitare l'aggiornamento automatico binario. Impostare la password per l'account affinché non scada mai in modo che non sia necessario modificarla per il servizio ogni volta che scade.
 

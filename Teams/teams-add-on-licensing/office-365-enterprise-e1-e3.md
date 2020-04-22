@@ -20,12 +20,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Informazioni sulle licenze per i componenti aggiuntivi, le caratteristiche e su come acquistare i piani di Office 365 Enterprise E1 e E3. '
-ms.openlocfilehash: 18a15c59b93fa0f426c780028b0029dd909abb2a
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 0cc29a9cc353f9d0068aeb65b10179f4adfdc804
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029367"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780495"
 ---
 # <a name="office-365-enterprise-e1-and-e3"></a>Office 365 Enterprise E1 ed E3
 
@@ -67,7 +67,7 @@ Il piano E3 fa parte del tuo Action Pack. Per acquistare i componenti aggiuntivi
 
 In alcune situazioni non verrà visualizzata l'opzione per acquistare componenti aggiuntivi Microsoft teams nell'interfaccia di amministrazione di Microsoft 365:
 
-- **Office 365 Business Premium è stato acquistato tramite GoDaddy**. In questo caso, non è possibile acquistare componenti aggiuntivi Microsoft teams. È necessario passare al piano E3 e quindi acquistarlo. [Contattare il supporto tecnico per i prodotti per le aziende - Guida dell’amministratore](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
+- **È stato acquistato Microsoft 365 business standard tramite GoDaddy**. In questo caso, non è possibile acquistare componenti aggiuntivi Microsoft teams. È necessario passare al piano E3 e quindi acquistarlo. [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
 - **You have a monthly commitment instead of an annual commitment**. In some cases, customers who have a monthly commitment can't buy the add-ons (this is different from the payment method, which can be monthly). This is a known issue that we are fixing. [Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 

@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: "In qualità di amministratore di Office 365, puoi modificare le impostazioni di Audioconferenza di Skype for Business online, ad esempio il provider, il numero predefinito a pagamento o gratuito, l'ID conferenza o il PIN per un singolo utente nell'organizzazione. "
-ms.openlocfilehash: c9a5f90d0c7577571188764393ecc667a243cd56
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: fe6814bee547e80d6bcb6fc367d055dce13d513d
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41707181"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43777991"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-a-user-in-skype-for-business-online"></a>Gestire le impostazioni di audioconferenza per un utente in Skype for business online
 
@@ -36,7 +36,7 @@ ms.locfileid: "41707181"
 As an Office 365 admin, you can edit the Audio Conferencing settings—such as the provider, default toll or toll-free number, conference ID, or PIN—for an individual user in your organization. If you want to edit settings for your organization, see [Manage the Audio Conferencing settings for my organization](manage-the-audio-conferencing-settings-for-my-organization.md).
 
  
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
     
 2. Scegli **Interfaccia di amministrazione** > **Skype for Business**.
     

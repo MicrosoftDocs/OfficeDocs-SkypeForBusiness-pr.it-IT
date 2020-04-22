@@ -1,5 +1,5 @@
 ---
-title: Piani di chiamata per Office 365
+title: Piani di chiamata per Microsoft 365
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -25,14 +25,14 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: 'Learn about Calling Plan (PSTN Calling plan) for Skype for business options and how to get licenses for your organization. '
-ms.openlocfilehash: 7eb6b049761ed7575512b816ea31c86c35c17baf
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 81bf7febe1bece1482c9e882632c6b6bde512207
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825254"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779945"
 ---
-# <a name="calling-plans-for-office-365"></a>Piani di chiamata per Office 365
+# <a name="calling-plans-for-microsoft-365"></a>Piani di chiamata per Microsoft 365
 
 Le chiamate ad altri utenti di Skype for business e Microsoft teams sono gratuite, ma se si vuole che gli utenti possano chiamare telefoni normali e non si dispone già di un provider di servizi per effettuare chiamate vocali, è necessario acquistare un piano di chiamata. Per altre informazioni, vedere [sistema telefonico e piani per chiamate](calling-plan-landing-page.md).
   
@@ -52,7 +52,7 @@ Per informazioni dettagliate sui limiti di utilizzo e sulle condizioni per l'uti
   
 ## <a name="how-to-buy-a-calling-plan"></a>Come acquistare un piano di chiamata
 
-1. <strong>Devi prima acquistare una</strong> licenza per il componente aggiuntivo * * Phone System<strong>. A questo scopo, [Accedi all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e scegli * *</strong> > **** >  > **abbonamenti per i componenti aggiuntivi per**l'acquisto di servizi di fatturazione**Acquista ora**.
+1. <strong>Devi prima acquistare una</strong> licenza per il componente aggiuntivo * * Phone System<strong>. A questo scopo, [Accedi all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e scegli * *</strong> > **Purchase services** >  > **abbonamenti per i componenti aggiuntivi per**l'acquisto di servizi di fatturazione**Acquista ora**.
     
     ![Screenshot che mostra l'opzione per acquistare un piano per chiamate vocali.](media/5893fca0-292c-4cdf-9b43-c507a8b44b74.png)
   
@@ -77,7 +77,7 @@ Assegna quindi le licenze per i componenti aggiuntivi Enterprise E5 o **Phone Sy
     
 - [Tariffe del Sistema telefonico](https://go.microsoft.com/fwlink/?linkid=799763)
     
-- [Prezzi per le Audioconferenze](https://go.microsoft.com/fwlink/?linkid=799762)
+- [Prezzi per Audioconferenza](https://go.microsoft.com/fwlink/?linkid=799762)
     
 ## <a name="for-more-information"></a>Per altre informazioni
 
@@ -85,16 +85,16 @@ Ecco altri articoli che spiegano come configurare i piani per le chiamate:
   
 - [Configurare i piani per chiamate](set-up-calling-plans.md)
     
-- [Licenze per i componenti aggiuntivi Microsoft Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+- [Licenze per i componenti aggiuntivi di Microsoft Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
     
 - [Ecco cosa offre il Sistema telefonico in Office 365](https://docs.microsoft.com/MicrosoftTeams/here-s-what-you-get-with-phone-system)
     
    
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Configurare Skype for Business online](/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
+- [Configurare Skype for Business Online](/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
     
-- [Impostare Cloud Voicemail - Guida per gli amministratori](set-up-phone-system-voicemail.md)
+- [Configurare Cloud Voicemail - Guida per gli amministratori](set-up-phone-system-voicemail.md)
     
 - [Configurare i piani per chiamate](set-up-calling-plans.md)
     

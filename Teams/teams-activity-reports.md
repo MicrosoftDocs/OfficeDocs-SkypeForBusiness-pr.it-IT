@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ddbfd37754ed5ab1347fb198936c1df3f43b356c
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 9f3f35318c2ccfdf791becba0ae67208484c883c
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41835476"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779052"
 ---
 <a name="use-activity-reports-for-microsoft-teams"></a>Usare i report attività per Microsoft Teams 
 ========================================
@@ -31,7 +31,7 @@ ms.locfileid: "41835476"
 
 ## <a name="how-to-view-the-teams-reports-in-the-reports-dashboard"></a>Come visualizzare i report Teams nel dashboard report
 
-1. Nell'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/adminportal/home)selezionare **** > **utilizzo**report.
+1. Nell'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/adminportal/home)selezionare **Reports** > **utilizzo**report.
  
 2. Nella pagina **utilizzo** scegliere **Seleziona un report**e quindi in **Microsoft teams** nell'elenco dei report scegliere il report che si vuole visualizzare.
 
@@ -94,7 +94,7 @@ Il report utilizzo di dispositivi teams fornisce informazioni sul modo in cui gl
 
 I report attività possono essere raggiunti dagli utenti assegnati:
 
-- Ruolo di amministratore globale di Office 365
+- Ruolo di amministratore globale
 - Ruolo di amministratore specifico del prodotto (Exchange, Skype for business o SharePoint)
 - Ruolo lettore report
 

@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: 'Informazioni su come configurare la segreteria telefonica cloud per gli utenti. '
-ms.openlocfilehash: dc771847db8dca52d22b4c1db1b8ae585b99f8e4
-ms.sourcegitcommit: 2d44f1a673316daf0aca3149571b24a63ca72772
+ms.openlocfilehash: 4f85e8db6f50becb4ae2406e84621c08507e9737
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227500"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779732"
 ---
 # <a name="set-up-cloud-voicemail"></a>Configurare Cloud Voicemail
 
@@ -71,7 +71,7 @@ Le informazioni seguenti includono la configurazione della segreteria telefonica
 
 La trascrizione della segreteria telefonica è abilitata per impostazione predefinita e il mascheramento di volgarità è disabilitato per impostazione predefinita per tutte le organizzazioni e utenti. Tuttavia, è possibile controllarli utilizzando il cmdlet [Set-CsOnlineVoicemailPolicy](https://technet.microsoft.com/library/mt798310.aspx) e [Grant-CsOnlineVoicemailPolicy](https://technet.microsoft.com/library/mt798311.aspx).
 
-I messaggi della segreteria telefonica ricevuti dagli utenti dell'organizzazione vengono trascritti nell'area geografica in cui è ospitato il tenant di Office 365. L'area in cui è ospitato il tenant potrebbe non essere la stessa area in cui si trova l'utente che riceve il messaggio della segreteria telefonica. Per visualizzare l'area geografica in cui è ospitato il tenant, accedere alla pagina del [profilo dell'organizzazione](https://go.microsoft.com/fwlink/p/?linkid=2067339) e quindi fare clic su **Visualizza dettagli** accanto a **posizione dati**.
+I messaggi della segreteria telefonica ricevuti dagli utenti dell'organizzazione vengono trascritti nell'area geografica in cui è ospitata l'organizzazione di Office 365. L'area in cui è ospitato il tenant potrebbe non essere la stessa area in cui si trova l'utente che riceve il messaggio della segreteria telefonica. Per visualizzare l'area geografica in cui è ospitato il tenant, accedere alla pagina del [profilo dell'organizzazione](https://go.microsoft.com/fwlink/p/?linkid=2067339) e quindi fare clic su **Visualizza dettagli** accanto a **posizione dati**.
 
 > [!IMPORTANT]
 > Non è possibile creare una nuova istanza di criteri per la trascrizione e la trascrizione delle maschere profane usando il cmdlet **New-CsOnlineVoiceMailPolicy** e non è possibile rimuovere un'istanza di criteri esistente usando il cmdlet **Remove-CsOnlineVoiceMailPolicy** .

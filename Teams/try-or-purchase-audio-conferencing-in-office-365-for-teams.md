@@ -1,5 +1,5 @@
 ---
-title: Provare o acquistare servizi di audioconferenza in Office 365 per Teams
+title: Provare o acquistare servizi di audioconferenza in Microsoft 365 per Teams
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -23,14 +23,14 @@ ms.custom:
 - ms.lync.lac.CpcGettingStarted
 - seo-marvel-mar2020
 description: 'Vedi come provare o acquistare le licenze di Audioconferenza (conferenze PSTN) per Office 365 per configurare le conferenze telefoniche a cui gli utenti possono connettersi. '
-ms.openlocfilehash: 6f30f59e20ee6fd8516bcfe420e2b936e9749a8e
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 35d84c84f02c459af32aa764d877f4b8c64d4d63
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139695"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780165"
 ---
-# <a name="try-or-purchase-audio-conferencing-in-office-365-for-microsoft-teams"></a>Provare o acquistare servizi di audioconferenza in Office 365 per Microsoft Teams
+# <a name="try-or-purchase-audio-conferencing-in-microsoft-365-for-microsoft-teams"></a>Provare o acquistare servizi di audioconferenza in Microsoft 365 per Microsoft Teams
 
 A volte le persone all'interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Microsoft teams include la funzionalità di conferenza audio per questa situazione. Gli utenti possono chiamare riunioni di Microsoft teams usando un telefono, invece di usare l'app Microsoft teams su un dispositivo mobile o un PC.
 

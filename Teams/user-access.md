@@ -18,12 +18,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 379573e7c671c3a5bca906cc3986bce068921b07
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: f571dd461c6c783703159dfd6e9beb343612dd58
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41833656"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779482"
 ---
 <a name="manage-user-access-to-microsoft-teams"></a>Gestire l'accesso degli utenti a Microsoft Teams
 =====================================
@@ -39,7 +39,7 @@ Usare i criteri di messaggistica, gestiti dall'interfaccia di amministrazione di
 
 ## <a name="manage-teams-through-the-microsoft-365-admin-center"></a>Gestire i team tramite l'interfaccia di amministrazione di Microsoft 365
 
-Le licenze a livello di utente di teams vengono gestite direttamente tramite le interfacce di gestione degli utenti di Microsoft 365. Un amministratore può assegnare licenze ai nuovi utenti quando vengono creati nuovi account utente o per gli utenti con account esistenti. Per gestire le licenze di Microsoft teams, l'amministratore deve disporre dei privilegi di amministratore globale o amministratore di Office 365.
+Le licenze a livello di utente di teams vengono gestite direttamente tramite le interfacce di gestione degli utenti di Microsoft 365. Un amministratore può assegnare licenze ai nuovi utenti quando vengono creati nuovi account utente o per gli utenti con account esistenti. Per gestire le licenze di Microsoft teams, l'amministratore deve avere i privilegi di amministratore globale o gestione utenti.
 
 Quando a un utente viene assegnata una licenza SKU come E3 o E5, viene automaticamente assegnata una licenza di Microsoft teams e l'utente è abilitato per Microsoft teams. Gli amministratori possono avere un controllo granulare su tutti i servizi e le licenze di Office 365 e la licenza di Microsoft teams per un utente specifico o un gruppo di utenti può essere abilitata o disabilitata.
 
@@ -73,8 +73,8 @@ Per disabilitare team per tutti gli utenti con una licenza attiva per il piano d
 | | | |
 |---------|---------|---------|
 |![Icona che rappresenta un punto decisionale](media/Manage_user_access_to_Microsoft_Teams_image5.png)     |Punto decisionale         |<ul><li>Qual è il piano dell'organizzazione per i team onboard in tutta l'organizzazione?  (Pilot o Open)</li></ul>         |
-|![Icona che rappresenta i passaggi successivi](media/Manage_user_access_to_Microsoft_Teams_image6.png)     |Operazioni successive         |<ul><li>Se si esegue l'onboarding tramite un pilota chiuso, decidere se si vuole farlo tramite licenze o comunicazioni mirate.</li><li>A seconda della decisione, eseguire la procedura per assicurarsi che solo gli utenti pilota autorizzati ad accedere ai team (se necessario).</li><li>Documentare le linee guida per cui gli utenti (o meno) avranno accesso a teams.</li></ul>         |
+|![Icona che rappresenta i passaggi successivi](media/Manage_user_access_to_Microsoft_Teams_image6.png)     |Passaggi successivi         |<ul><li>Se si esegue l'onboarding tramite un pilota chiuso, decidere se si vuole farlo tramite licenze o comunicazioni mirate.</li><li>A seconda della decisione, eseguire la procedura per assicurarsi che solo gli utenti pilota autorizzati ad accedere ai team (se necessario).</li><li>Documentare le linee guida per cui gli utenti (o meno) avranno accesso a teams.</li></ul>         |
 
-## <a name="manage-teams-at-the-office-365-tenant-level"></a>Gestire Teams a livello di tenant di Office 365
+## <a name="manage-teams-at-the-office-365-organization-level"></a>Gestire Teams a livello di organizzazione di Office 365
 [!INCLUDE [global-switch-expiry-note](includes/global-switch-expiry-note.md)]
 

@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Vedere come selezionare le lingue dell'operatore automatico per un numero di Audioconferenza in Skype for Business online.
-ms.openlocfilehash: 22c3ad1d2386dec07060548cd055a5d289db4364
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 34ed4ccee5239923f68b089ce14551fe43c32320
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41680383"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776801"
 ---
 # <a name="set-auto-attendant-languages-for-audio-conferencing-in-skype-for-business-online"></a>Impostare le lingue dell'operatore automatico per Audioconferenza in Skype for Business online
 
@@ -45,7 +45,7 @@ Choose one primary language and up to four secondary languages. The primary lang
   
 ## <a name="set-the-conferencing-auto-attendant-languages"></a>Impostare le lingue dell'operatore automatico per i servizi di conferenza
 
-È necessario essere un [amministratore globale di Office 365](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) o [Skype for Business](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) per eseguire questo passaggio.
+Per eseguire questo passaggio, è necessario essere un amministratore [globale](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) o un [amministratore di Skype for business](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) .
     
 1. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, vai a **portale legacy**. Nel portale legacy Selezionare Servizi di **audioconferenza**e quindi fare clic su **Microsoft Bridge**.
     
@@ -56,7 +56,7 @@ Choose one primary language and up to four secondary languages. The primary lang
     > [!NOTE]
     > Vengono elencate le lingue principali e secondarie supportate. L'ordine in cui vengono selezionati gli elenchi sarà l'ordine delle lingue presentate ai chiamanti. 
   
-4. Fai clic su **Salva**.
+4. Fare clic su **Salva**.
     
 ## <a name="want-else-should-i-know"></a>Altre informazioni utili
 

@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6ce0e580-8c4a-45de-a54f-e39e438335d6
 description: Trovare informazioni su Skype for Business Cloud Connector Edition, un set di macchine virtuali in pacchetti (VM) che implementano la connettività PSTN locale con il sistema telefonico in Office 365 (cloud PBX).
-ms.openlocfilehash: 9530fa2815dc491e6cda3579a801c3d5430f9b41
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 055149121b5abdb2fa92f72278f94b35f8556dff
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42018147"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779262"
 ---
 # <a name="plan-for-skype-for-business-cloud-connector-edition"></a>Pianificare Skype for Business Cloud Connector Edition
 
@@ -40,11 +40,11 @@ Cloud Connector Edition 2,1 è ora disponibile. Se non è ancora stato eseguito 
 > [!NOTE]
 > Microsoft supporta la versione precedente di Cloud Connector Edition per 60 giorni dopo il rilascio di una nuova versione. Microsoft supporterà la versione 2.0.1 per 60 giorni dopo il rilascio di 2,1 per consentire il tempo necessario per l'aggiornamento. Tutte le versioni precedenti a 2.0.1 non sono più supportate.
 
-Cloud Connector Edition è un'offerta ibrida costituita da un insieme di macchine virtuali in pacchetti (VM) che implementano la connettività PSTN locale con il sistema telefonico in Office 365. Distribuendo una topologia minima di Skype for Business Server in un ambiente virtualizzato, gli utenti dell'organizzazione che si trovano nel cloud possono ricevere servizi PBX dal cloud Microsoft, ma la connettività PSTN viene fornita tramite la voce locale esistente. infrastruttura.
+Cloud Connector Edition è un'offerta ibrida costituita da un insieme di macchine virtuali in pacchetti (VM) che implementano la connettività PSTN locale con il sistema telefonico in Office 365. Distribuendo una topologia minima di Skype for Business Server in un ambiente virtualizzato, gli utenti dell'organizzazione che si trovano nel cloud possono ricevere servizi PBX dal cloud Microsoft, ma la connettività PSTN viene fornita tramite l'infrastruttura vocale locale esistente.
 
 ![Diagramma della topologia che mostra il gateway cloud PBX che connette cloud PBX a una distribuzione locale di Skype for business.](../../media/bd898e69-6458-4276-aebe-1854f28ed6fa.png)
 
-Poiché il connettore Cloud consente di integrare il sistema telefonico nei servizi di Office 365 con l'ambiente di telefonia esistente, ad esempio PBX, dispositivi analogici e Call Center, è possibile implementare una migrazione in fasi dalla soluzione di telefonia esistente al telefono Sistema in Office 365.
+Poiché il connettore Cloud consente di integrare il sistema telefonico nei servizi di Office 365 con l'ambiente di telefonia esistente, ad esempio PBX, dispositivi analogici e Call Center, è possibile implementare una migrazione in fasi dalla soluzione di telefonia esistente al sistema telefonico di Office 365.
 
 Si supponga, ad esempio, che la società disponga di un Call Center sofisticato con funzionalità specifiche che il sistema telefonico in Office 365 non fornisce. È possibile scegliere di lasciare gli utenti di Call Center con la soluzione esistente, ma spostare altri utenti nel sistema telefonico in Office 365.
 
@@ -52,7 +52,7 @@ Cloud Connector fornirà il routing tra gli utenti ospitati in locale e online e
 
 Quando si pianifica la distribuzione di Cloud Connector Edition, tenere presente quanto segue:
 
-- Per utilizzare Cloud Connector per sfruttare le soluzioni cloud Voice, è necessario iscriversi a un tenant di Office 365 che include il sistema telefonico in Office 365. [! Nota] se non si dispone ancora di un tenant di Office 365, è possibile imparare a iscriversi qui: [Office 365 for business](https://products.office.com/business/office). Si noti che è necessario iscriversi a un piano che include Skype for business online.
+- Per utilizzare Cloud Connector per sfruttare le soluzioni cloud Voice, è necessario iscriversi a un'organizzazione di Office 365 che include il sistema telefonico in Office 365. [! Nota] se non si dispone ancora di un'organizzazione di Office 365, è possibile imparare a iscriversi qui: [office 365 for business](https://products.office.com/business/office). Si noti che è necessario iscriversi a un piano che include Skype for business online.
 
 - Per registrare gli apparecchi dei connettori cloud con il servizio Skype for business online e per eseguire vari cmdlet, Cloud Connector 2,0 e versioni successive richiede un account di Office 365 dedicato con i diritti di amministratore del tenant di Skype for business. Le versioni dei connettori cloud precedenti a 2,0 richiedono un account di Office 365 dedicato con diritti di amministratore globale tenant.
 
@@ -101,7 +101,7 @@ In questa sezione sono contenute le seguenti sezioni:
 ## <a name="cloud-connector-edition-components"></a>Componenti di Cloud Connector Edition
 <a name="BKMK_Components"> </a>
 
-Con Cloud Connector Edition, è possibile distribuire un insieme di macchine virtuali con pacchetti che contengono una topologia di Skype for Business Server minima, costituita da un componente perimetrale, da un componente di Mediation e da un ruolo CMS (Central Management store). Verrà installato anche un controller di dominio, necessario per il funzionamento interno del connettore Cloud. Questi servizi sono configurati per l'ambiente ibrido con il tenant di Office 365 che include i servizi Skype for business online.
+Con Cloud Connector Edition, è possibile distribuire un insieme di macchine virtuali con pacchetti che contengono una topologia di Skype for Business Server minima, costituita da un componente perimetrale, da un componente di Mediation e da un ruolo CMS (Central Management store). Verrà installato anche un controller di dominio, necessario per il funzionamento interno del connettore Cloud. Questi servizi sono configurati per l'ambiente ibrido con l'organizzazione di Office 365 che include i servizi Skype for business online.
 
 ![Componenti di Cloud Connector Edition](../../media/f2d4b8a7-c2f4-4cfc-8137-f187399c1298.png)
 
@@ -262,7 +262,7 @@ Prima di distribuire Cloud Connector Edition, verificare di disporre dei seguent
 
   - Record DNS esterno per il servizio Access Edge del componente perimetrale; ad esempio, il nome\<\>del dominio AP. È necessario un record per ogni sito PSTN. Questo record deve contenere indirizzi IP di tutti i bordi per il sito.
 
-- Un tenant di Office 365 con tutti i record DNS e SRV necessari creati.
+- Un'organizzazione di Office 365 con tutti i record DNS e SRV necessari creati.
 
     > [!IMPORTANT]
     > Quando si integra il tenant con Cloud Connector Edition, l'utilizzo del suffisso di dominio predefinito,. onmicrosoft.com, come dominio SIP per l'organizzazione non è supportato. > non è possibile utilizzare SIP. \<Nome\> di dominio come nome dell'interfaccia del proxy di accesso Edge del connettore Cloud poiché questo record DNS è utilizzato da Office 365.
@@ -419,11 +419,11 @@ In questo caso, tutto il traffico multimediale per il punto finale in Internet p
 
 Il computer host deve essere in grado di raggiungere risorse esterne per installare, aggiornare e gestire correttamente il connettore Cloud. Nella tabella seguente vengono riportate le destinazioni e le porte necessarie tra il computer host e le risorse esterne.
 
-|Direction  <br/> |IP origine  <br/> |IP destinazione  <br/> |Porta di origine  <br/> |Porta di destinazione  <br/> |Protocol  <br/> |Scopo  <br/> |
+|Direction  <br/> |IP origine  <br/> |IP destinazione  <br/> |Porta di origine  <br/> |Porta di destinazione  <br/> |Protocollo  <br/> |Finalità  <br/> |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |In uscita  <br/> |IPs host del connettore Cloud  <br/> |qualsiasi  <br/> |qualsiasi  <br/> |53  <br/> |TCP/UDP  <br/> |DNS  <br/> |
 |In uscita  <br/> |IPs host del connettore Cloud  <br/> |qualsiasi  <br/> |qualsiasi  <br/> |80, 443  <br/> |TCP  <br/> |Elenco di revoche di certificati (CRL)  <br/> |
-|In uscita  <br/> |IPs host del connettore Cloud  <br/> |qualsiasi  <br/> |qualsiasi  <br/> |80, 443  <br/> |TCP  <br/> |Aggiornamento del connettore Cloud  <br/> Skype for Business Online  <br/> PowerShell per amministratori  <br/> Windows Update  <br/> |
+|In uscita  <br/> |IPs host del connettore Cloud  <br/> |qualsiasi  <br/> |qualsiasi  <br/> |80, 443  <br/> |TCP  <br/> |Aggiornamento del connettore Cloud  <br/> Skype for Business Online  <br/> PowerShell per amministratori  <br/> Windows Update  <br/> |
 
 Se sono necessarie regole più restrittive, fare riferimento ai seguenti URL di whitelist:
 
@@ -442,7 +442,7 @@ Se sono necessarie regole più restrittive, fare riferimento ai seguenti URL di 
 
 Il componente perimetrale deve risolvere i nomi esterni dei servizi di Office 365 e i nomi interni di altri componenti dei connettori cloud.
 
-Ogni componente perimetrale è un computer multihomed con interfacce esterne e interne. Il connettore Cloud distribuisce i server DNS sul componente del controller di dominio all'interno della rete perimetrale. È possibile puntare server perimetrale al server DNS all'interno del perimetro per tutte le risoluzioni nome, ma è necessario abilitare il server DNS del connettore Cloud per la risoluzione dei nomi esterni impostando una zona DNS contenente uno o più record A DNS per le query esterne che fanno riferimento a nome. ricerche ad altri server DNS pubblici.
+Ogni componente perimetrale è un computer multihomed con interfacce esterne e interne. Il connettore Cloud distribuisce i server DNS sul componente del controller di dominio all'interno della rete perimetrale. È possibile puntare server perimetrale al server DNS all'interno del perimetro per tutte le risoluzioni nome, ma è necessario abilitare il server DNS del connettore Cloud per risolvere i nomi esterni impostando una zona DNS contenente uno o più record A DNS per le query esterne che fanno riferimento alle ricerche dei nomi ad altri server DNS pubblici.
 
 Nel file ini, se si imposta il nome FQDN per i gateway dallo stesso spazio di dominio del dominio SIP, l'area autorevole per questo dominio SIP verrà creata nel server DNS all'interno del perimetro. Se il server perimetrale punta a questo server DNS per risolvere i nomi, Edge non risolverà mai la _sipfederationtls. \<record\> DNS dominio, necessario per il flusso di chiamata. In questo caso, Microsoft consiglia di fornire un server DNS nell'interfaccia esterna perimetrale per risolvere le ricerche dei nomi Internet e ogni componente perimetrale deve utilizzare un file HOST per risolvere altri nomi di componenti del connettore Cloud in indirizzi IP.
 

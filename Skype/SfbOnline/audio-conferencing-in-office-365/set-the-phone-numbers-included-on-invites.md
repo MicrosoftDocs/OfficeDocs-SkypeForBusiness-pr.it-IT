@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Ottenere i passaggi per creare un numero di telefono predefinito affinché i chiamanti possano partecipare ad una riunione di Skype for Business online. '
-ms.openlocfilehash: c6a8c9c3b3d21a64ad54d84ed8bfab22044f9cf5
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: a570c457c51ce87655c1cb13e1eb61951b968400
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41680373"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776781"
 ---
 # <a name="set-the-phone-numbers-included-on-invites-in-skype-for-business-online"></a>Impostare in Skype for Business online i numeri di telefono inclusi negli inviti
 
@@ -48,7 +48,7 @@ A conferencing bridge gives you a set of dial-in phone numbers for your organiza
   
 ## <a name="set-the-default-dial-in-phone-number-for-a-meeting-organizer"></a>Impostare il numero di telefono di accesso esterno predefinito per l'organizzatore della riunione
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
     
 2. Scegli **Interfaccia di amministrazione** > **Skype for Business**.
     

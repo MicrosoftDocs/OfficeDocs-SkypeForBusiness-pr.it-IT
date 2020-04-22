@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3a3ee51fdbbda7c3d49ac5a7b2a65b977f8fb245
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 90ce02e773d20759b90ea090123823b6bf94d9ee
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137136"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779622"
 ---
 # <a name="installing-the-moodle-integration-with-microsoft-teams"></a>Installazione dell'integrazione di Moodle con Microsoft Teams
 
@@ -73,7 +73,7 @@ Per altre informazioni, vedere come installare i plug-in Moodle nella [documenta
 
 > [!VIDEO https://www.youtube.com/embed/FpGEezaJ3SA]
 
-Quindi devi registrare Moodle come applicazione in Azure Active Directory. È stato fornito uno script di PowerShell che consente di completare il processo. Lo script di PowerShell applica una nuova applicazione Azure AD per il tenant di Office 365, che verrà usata dal plug-in di Office 365 Moodle. Lo script provisionerà l'app per il tenant di Office 365, configurerà tutti gli URL di risposta e le autorizzazioni necessari per l'app di cui è stato eseguito il provisioning e restituirà l'AppID e la chiave. Puoi usare l'AppID e la chiave generati nella pagina di configurazione del plug-in di Office 365 Moodle per configurare il server Moodle con Azure AD. Per visualizzare i passaggi manuali dettagliati che lo script di PowerShell sta automatizzando, è possibile trovarli nella [documentazione completa per il plug](https://docs.moodle.org/34/en/Office365#Register_your_Moodle_instance_as_an_Application)-in.
+Quindi devi registrare Moodle come applicazione in Azure Active Directory. È stato fornito uno script di PowerShell che consente di completare il processo. Lo script di PowerShell applica una nuova applicazione Azure AD per l'organizzazione di Office 365, che verrà usata dal plug-in di Office 365 Moodle. Lo script provisionerà l'app per il tenant di Office 365, configurerà tutti gli URL di risposta e le autorizzazioni necessari per l'app di cui è stato eseguito il provisioning e restituirà l'AppID e la chiave. Puoi usare l'AppID e la chiave generati nella pagina di configurazione del plug-in di Office 365 Moodle per configurare il server Moodle con Azure AD. Per visualizzare i passaggi manuali dettagliati che lo script di PowerShell sta automatizzando, è possibile trovarli nella [documentazione completa per il plug](https://docs.moodle.org/34/en/Office365#Register_your_Moodle_instance_as_an_Application)-in.
 
 ### <a name="moodle-tab-for-microsoft-teams-information-flow"></a>Scheda Moodle per il flusso di informazioni di Microsoft Teams
 

@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: "Informazioni su come configurare il sistema telefonico (cloud PBX) per l'organizzazione. "
-ms.openlocfilehash: e1ae56200132ab4468b6db8d490c12d11b7a6deb
-ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+ms.openlocfilehash: 8c534607ca50baae75c3b0b2fdf5bc54359c22e4
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41888725"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779813"
 ---
 # <a name="set-up-phone-system-in-your-organization"></a>Configurare il sistema telefonico nell'organizzazione
 
@@ -81,11 +81,11 @@ Oltre a ottenere i numeri di telefono per gli utenti da Office 365, è possibile
 ### <a name="get-new-service-numbers-using-the-teams-admin-center"></a>Ottenere nuovi numeri di servizio con l'interfaccia di amministrazione di Teams
 
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
 
 2. Accedere all'interfaccia di **amministrazione di teams**.
 
-3. Nel riquadro di spostamento sinistro passa a **** > **numeri** > di telefono vocale**Aggiungi nuovo numero**e quindi fai clic su **nuovi numeri di servizio**.
+3. Nel riquadro di spostamento sinistro passa a **Voice** > **numeri** > di telefono vocale**Aggiungi nuovo numero**e quindi fai clic su **nuovi numeri di servizio**.
 
     > [!IMPORTANT]
     > Per visualizzare l'opzione **vocale** nel riquadro di spostamento sinistro nell'interfaccia di amministrazione di teams, è necessario prima acquistare almeno una licenza **Enterprise E5**, una licenza per il componente aggiuntivo per il **sistema telefonico** o una licenza per il componente aggiuntivo per i servizi di **audioconferenza** .
@@ -105,12 +105,12 @@ Se avete seguito i passaggi precedenti, avete già acquistato il Sistema telefon
 
 ## <a name="step-6-if-you-want-to-set-up-audio-conferencing"></a>Passaggio 6: Se si desidera impostare Audioconferenze
 
-A volte le persone all’interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Microsoft teams include la funzionalità per i servizi di audioconferenza solo per questa situazione. Gli utenti possono chiamare riunioni di teams usando un telefono, invece di usare l'app teams in un dispositivo mobile o un PC.
+A volte le persone all'interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Microsoft teams include la funzionalità per i servizi di audioconferenza solo per questa situazione. Gli utenti possono chiamare riunioni di teams usando un telefono, invece di usare l'app teams in un dispositivo mobile o un PC.
 Per informazioni su come configurare i servizi di audioconferenza, vedere [configurare le conferenze audio per i team](set-up-audio-conferencing-in-teams.md).
 
 ## <a name="step-7-if-you-want-to-set-up-a-cloud-call-queue"></a>Passaggio 7: se si vuole configurare una coda di chiamata cloud
 
-Le code delle chiamate Cloud includono i messaggi di saluto usati quando qualcuno chiama un numero di telefono per l'organizzazione, la possibilità di inserire automaticamente le chiamate in attesa e la possibilità di cercare il successivo agente di chiamata disponibile per gestire la chiamata mentre le persone che chiamano sono ascolto della musica in attesa. È possibile creare code di chiamata singole o multiple per l'organizzazione.
+Le code delle chiamate Cloud includono i messaggi di saluto usati quando qualcuno chiama un numero di telefono per l'organizzazione, la possibilità di inserire automaticamente le chiamate in attesa e la possibilità di cercare l'agente di chiamata disponibile per gestire la chiamata mentre le persone che chiamano ascoltano musica in attesa. È possibile creare code di chiamata singole o multiple per l'organizzazione.
 
 Per altre informazioni sulle code di chiamata, vedere [creare una coda di chiamata cloud](create-a-phone-system-call-queue.md).
 
@@ -147,7 +147,7 @@ Se non vengono impostati i Crediti comunicazioni o assegnata una licenza **Credi
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](getting-service-phone-numbers.md)
 
-[Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+[Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
     
   
  

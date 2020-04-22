@@ -18,17 +18,17 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-description: Puoi configurare il modo in cui gli utenti si connettono a Skype for business online con l'app Skype for business su dispositivi mobili, ad esempio una funzionalità che consente agli utenti di effettuare e ricevere chiamate telefoniche sul proprio telefono cellulare usando il proprio numero di telefono aziendale anziché il telefono cellulare nu Mbera. I criteri di mobilità possono essere usati anche per richiedere connessioni Wi-Fi durante la creazione o la ricezione di chiamate.
-ms.openlocfilehash: 2d608356e08ae989d0be79bd61f14a4d6ba3b9f0
-ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+description: Puoi configurare il modo in cui gli utenti si connettono a Skype for business online usando l'app Skype for business su dispositivi mobili, ad esempio una funzionalità che consente agli utenti di effettuare e ricevere chiamate telefoniche sul proprio telefono cellulare usando il proprio numero di telefono aziendale anziché il numero di cellulare. I criteri di mobilità possono essere usati anche per richiedere connessioni Wi-Fi durante la creazione o la ricezione di chiamate.
+ms.openlocfilehash: ac8f94cb7203b3b0ee4698969db0b76cb1e31a49
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887855"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776261"
 ---
 # <a name="set-up-mobile-policies-for-your-organization"></a>Impostazione dei criteri per dispositivi mobili per la propria organizzazione
 
-Puoi configurare il modo in cui gli utenti si connettono a Skype for business online con l'app Skype for business su dispositivi mobili, ad esempio una funzionalità che consente agli utenti di effettuare e ricevere chiamate telefoniche sul proprio telefono cellulare usando il proprio numero di telefono aziendale anziché il telefono cellulare nu Mbera. I criteri di mobilità possono essere usati anche per richiedere connessioni Wi-Fi durante la creazione o la ricezione di chiamate.
+Puoi configurare il modo in cui gli utenti si connettono a Skype for business online usando l'app Skype for business su dispositivi mobili, ad esempio una funzionalità che consente agli utenti di effettuare e ricevere chiamate telefoniche sul proprio telefono cellulare usando il proprio numero di telefono aziendale anziché il numero di cellulare. I criteri di mobilità possono essere usati anche per richiedere connessioni Wi-Fi durante la creazione o la ricezione di chiamate.
   
 Le impostazioni dei criteri per dispositivi mobili possono essere configurate al momento della creazione di un criterio oppure puoi usare il cmdlet **Set-CsMobilityPolicy** per modificare le impostazioni di un criterio esistente.
   
@@ -55,7 +55,7 @@ Le impostazioni dei criteri per dispositivi mobili possono essere configurate al
     
     1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
         
-    2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
+    2. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
         
         > [!NOTE]
         > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.

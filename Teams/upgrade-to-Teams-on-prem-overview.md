@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 47abe9934c92ce83ab0874a10b2c04ef238b428a
-ms.sourcegitcommit: 0289062510f0791906dab2791c5db8acb1cf849a
+ms.openlocfilehash: 69efb8c74950ffdb4426049558caaf59254b4605
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42157894"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779803"
 ---
 # <a name="upgrade-from-skype-for-business-to-teams-mdash-for-it-administrators"></a>Eseguire l'aggiornamento da Skype for business &mdash; a teams per gli amministratori IT
 
@@ -76,7 +76,7 @@ La tabella seguente riepiloga l'esperienza dei team per la modalità Islands e T
 | Esperienza Teams | In modalità Isole | In modalità TeamsOnly |
 |:------------------ | :------------------- | :------------------ |
 | Chat in arrivo e chiamate ricevute in:|  Teams o Skype for business | Teams |
-| Chiamate PSTN ricevute in: | Skype for business <br>L'uso della funzionalità PSTN in teams non è supportato in modalità Islands.    | Teams |   
+| Chiamate PSTN ricevute in: | Skype for Business <br>L'uso della funzionalità PSTN in teams non è supportato in modalità Islands.    | Teams |   
  |Icone di presenza  | La presenza in Skype for business e teams è indipendente. Gli utenti possono visualizzare stati diversi per gli stessi utenti delle isole, a seconda del client che usano. | La presenza si basa esclusivamente sulle attività dell'utente in teams. Tutti gli altri utenti, indipendentemente dal client che usano, vedono quella presenza. | 
  | Pianificazione delle riunioni   | Gli utenti possono pianificare le riunioni in teams o in Skype for business. Vedranno entrambi i componenti aggiuntivi in Outlook. |   Gli utenti pianificano solo riunioni in teams. Solo il componente aggiuntivo teams è disponibile in Outlook. | 
 
@@ -201,7 +201,7 @@ Grant-CsTeamsUpgradePolicy -Identity $user -PolicyName EnableNotification
 
 Quando un utente viene migrato in modalità TeamsOnly, per impostazione predefinita le riunioni Skype for business esistenti che hanno organizzato verranno convertite in teams. Puoi facoltativamente disabilitare il comportamento predefinito quando assegni la modalità TeamsOnly a un utente. Quando si spostano utenti da locale, le riunioni devono essere migrate nel cloud per funzionare con l'account utente online, ma se non si specifica-MoveToTeams, le riunioni verranno migrate come riunioni Skype for business, anziché convertite in teams. 
 
-Quando si assegna la modalità TeamsOnly a livello di tenant, la migrazione delle riunioni non viene attivata per gli utenti. Se si vuole assegnare la modalità TeamsOnly a livello di tenant e eseguire la migrazione delle riunioni, è possibile usare PowerShell per ottenere un elenco di utenti nel tenant (ad esempio, usando Get-CsOnlineUser con tutti i filtri necessari) e quindi scorrere ogni utente per attivare la riunione migrazione tramite Start-CsExMeetingMigration. Per informazioni dettagliate, vedere [uso del servizio di migrazione delle riunioni (MMS)](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms).
+Quando si assegna la modalità TeamsOnly a livello di tenant, la migrazione delle riunioni non viene attivata per gli utenti. Se si vuole assegnare la modalità TeamsOnly a livello di tenant e eseguire la migrazione delle riunioni, è possibile usare PowerShell per ottenere un elenco di utenti nel tenant (ad esempio, usando Get-CsOnlineUser con tutti i filtri necessari) e quindi scorrere ogni utente per attivare la migrazione delle riunioni usando Start-CsExMeetingMigration. Per informazioni dettagliate, vedere [uso del servizio di migrazione delle riunioni (MMS)](https://docs.microsoft.com/skypeforbusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms).
 
 
 ### <a name="additional-considerations-for-organizations-with-skype-for-business-server-on-premises"></a>Considerazioni aggiuntive per le organizzazioni con Skype for Business Server locale
@@ -221,7 +221,7 @@ Quando si assegna la modalità TeamsOnly a livello di tenant, la migrazione dell
 - Se si vogliono visualizzare le notifiche nel client Skype for business per gli utenti locali, è necessario usare TeamsUpgradePolicy nel set di strumenti locale. Solo il parametro NotifySfbUsers è pertinente per gli utenti locali.  Gli utenti locali ricevono la modalità dalle istanze online di TeamsUpgradePolicy. Vedere le note in [Grant-CsTeamsUpgradePolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps). 
 
 >[!NOTE]
-> Qualsiasi nuovo tenant creato dopo il 3 settembre 2019 viene creato come tenant di TeamsOnly senza la possibilità per gli amministratori di eseguire il downgrade. Organizzazioni con Skype for Business Server locale che in precedenza non ha mai avuto un abbonamento a Office 365 prima del 3 settembre, 2019 dovrà contattare il supporto tecnico Microsoft per declassare il tenant, dopo aver acquisito un abbonamento a Office 365. 
+> Qualsiasi nuovo tenant creato dopo il 3 settembre 2019 viene creato come tenant di TeamsOnly, a meno che l'organizzazione non abbia già una distribuzione locale di Skype for Business Server. Microsoft usa i record DNS per identificare le organizzazioni di Skype for Business Server locale. Se l'organizzazione ha un server Skype for business locale senza voci DNS pubbliche, è necessario chiamare il supporto Microsoft per declassare il nuovo tenant. 
 
 
 ## <a name="perform-the-upgrade-for-your-organization"></a>Eseguire l'aggiornamento per l'organizzazione
@@ -286,7 +286,7 @@ Se alcuni utenti dell'organizzazione usano attivamente team in modalità isole, 
 
 1. Trovare gli utenti attivi in teams come indicato di seguito:
 
-   1. Nel portale di amministrazione di Office 365, nella barra di spostamento sinistra, vai a report e quindi utilizzo. 
+   1. Nell'interfaccia di amministrazione di Microsoft 365, nella barra di spostamento sinistra, vai a report e quindi utilizzo. 
    2. Nell'elenco a discesa "Seleziona un report" scegliere Microsoft teams e quindi attività utente. Verrà fornito un tavolo esportabile di utenti attivi in teams. 
    3. Fare clic su Esporta, Apri Excel e filtra per visualizzare solo gli utenti attivi in teams.
 
@@ -335,7 +335,7 @@ Se è coinvolta una funzionalità di chiamata PSTN, quando si passa alla modalit
 
 - *Un utente in Skype for business locale con Enterprise Voice, che si sposterà in online e continuerà a mantenere la connettività PSTN locale*.  La migrazione di questo utente a teams richiede lo spostamento dell'account Skype for business locale dell'utente nel cloud e il coordinamento di tale spostamento con la migrazione dell'utente al routing diretto. 
 
-- *Un utente in Skype for business locale con Enterprise Voice*, che si sposterà in online e userà un piano di chiamata Microsoft.  La migrazione di questo utente a teams richiede lo spostamento dell'account Skype for business locale dell'utente nel cloud e il coordinamento di tale spostamento con una a) la porta del numero di telefono di tale utente in un piano di chiamata Microsoft o B) che assegna un nuovo numero di abbonato da aree disponibili.
+- *Un utente in Skype for business locale con Enterprise Voice*, che si sposterà in online e userà un piano di chiamata Microsoft.  La migrazione di questo utente a teams richiede lo spostamento dell'account Skype for business locale dell'utente nel cloud e il coordinamento di tale spostamento con una a) la porta del numero di telefono di tale utente in un piano di chiamata Microsoft o B) che assegna un nuovo numero di abbonato dalle aree disponibili.
 
 Questo articolo fornisce solo una panoramica di alto livello. Per altre informazioni, Vedi piani di routing e [chiamate](calling-plan-landing-page.md) [dirette del sistema telefonico](direct-routing-landing-page.md) . Inoltre, tieni presente che l'uso del sistema telefonico con teams è supportato solo quando l'utente è in modalità TeamsOnly.  Se l'utente è in modalità isole, il sistema telefonico è supportato solo con Skype for business. 
 

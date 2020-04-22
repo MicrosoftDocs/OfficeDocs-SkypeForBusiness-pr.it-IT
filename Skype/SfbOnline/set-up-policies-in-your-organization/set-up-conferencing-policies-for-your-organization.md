@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: 'Le conferenze sono una parte importante di Skype for Business online: le conferenze consentono a gruppi di utenti di incontrarsi online per visualizzare diapositive e video, condividere applicazioni, scambiare file e comunicare e collaborare in altro modo.'
-ms.openlocfilehash: aba41b8c1e527157c9ff8d58a2a7a78bfebb0a82
-ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+ms.openlocfilehash: d7bbcca81888487d54fa1a08eaf09b5462dc391f
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41887895"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776241"
 ---
 # <a name="set-up-conferencing-policies-for-your-organization"></a>Impostazione dei criteri di conferenza per la propria organizzazione
 
@@ -59,7 +59,7 @@ Le impostazioni dei criteri possono essere configurate al momento della creazion
     
     1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
         
-    2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
+    2. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
         
         > [!NOTE]
         > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.

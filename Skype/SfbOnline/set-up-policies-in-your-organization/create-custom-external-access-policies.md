@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: Skype for business online consente di creare altri criteri di accesso esterno. A differenza dei criteri per i client o i servizi di conferenza, in cui è possibile avere più combinazioni, esistono tre criteri di accesso esterno predefiniti in grado di coprire la maggior parte degli scenari.
-ms.openlocfilehash: 76fa8fd1ae18f4108d9c4f52bca73d86ea07aafd
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: bf98dbdd7e59bea5f818bf803ba993be569c59b7
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41983971"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776311"
 ---
 # <a name="create-custom-external-access-policies"></a>Creare criteri di accesso esterno personalizzato
 
@@ -67,7 +67,7 @@ Per fare questo lavoro, l'utente deve usare una versione supportata di 2016 a po
     
 1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
     
-2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
+2. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
     
     > [!NOTE]
     > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.

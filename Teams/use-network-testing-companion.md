@@ -19,12 +19,12 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 - Skype for Business Online
-ms.openlocfilehash: c3d292eecb6173f98a2e95dbbd5a1097f5f785eb
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: a9fffea969ea1448bdf8f2a076dbef6756765e20
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836756"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780025"
 ---
 <a name="use-the-network-testing-companion"></a>Usare il Network Testing Companion
 =================================
@@ -34,7 +34,7 @@ Skype for business e Microsoft teams [Network Testing Companion](https://www.pow
 Puoi usare questo strumento nella fase di pianificazione di una distribuzione di Skype for business o Microsoft teams. Se si sta usando teams o Skype for business online, è possibile usare questo strumento per risolvere i problemi di qualità vocale o semplicemente per verificare la connessione di rete prima di effettuare una chiamata o dopo avere avuto un'esperienza di qualità scadente.
 
 > [!NOTE]
-> Non è necessario un abbonamento a Office 365 per scaricare e installare il compagno di test di rete.
+> Non è necessario un abbonamento a Microsoft 365 o Office 365 per scaricare e installare il compagno di test di rete.
 
 ## <a name="download-the-tool-and-documentation"></a>Scaricare lo strumento e la documentazione
 

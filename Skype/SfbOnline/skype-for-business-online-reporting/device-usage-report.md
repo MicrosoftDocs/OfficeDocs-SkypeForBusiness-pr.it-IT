@@ -19,13 +19,13 @@ f1.keywords:
 ms.custom:
 - Reporting
 - O365E_ReportsS4BClients
-description: "[] Il nuovo dashboard Report di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi usare il report sull'uso del dispositivo Skype for business per vedere i dispositivi, inclusi i sistemi operativi basati su Windows e i dispositivi mobili, che hanno installato l'app Skype for business e lo usano per la messaggistica istantanea e le riunioni. Per altre informazioni, vedere report attività nell'interfaccia di amministrazione."
-ms.openlocfilehash: 52503a90b2474460347effb676247fc3ffed9919
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: Il nuovo dashboard dei report di Microsoft 365 Mostra la panoramica delle attività nei prodotti Office 365 dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi usare il report sull'uso del dispositivo Skype for business per vedere i dispositivi, inclusi i sistemi operativi basati su Windows e i dispositivi mobili, che hanno installato l'app Skype for business e lo usano per la messaggistica istantanea e le riunioni. Per altre informazioni, vedere report attività nell'interfaccia di amministrazione.
+ms.openlocfilehash: 9d12938fdbc495e1d95b8ed26500185f09f2b01b
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41769399"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776301"
 ---
 # <a name="device-usage-report"></a>Report utilizzo dispositivo
 
@@ -46,7 +46,7 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
     
      ![Widget report sull'utilizzo dei dispositivi Skype for business](../images/13e7a51c-f680-4164-9a18-67de10fceb7f.png)
   
-    In base all'abbonamento a Office 365 di cui si dispone, alcuni dei report su prodotti e attività illustrati in questo articolo potrebbero non essere disponibili.
+    A seconda dell'abbonamento a Microsoft 365 o Office 365, potresti non vedere tutti i prodotti e i report attività visualizzati qui.
     
 ## <a name="interpret-the-skype-for-business-device-usage-report"></a>Interpretare il report sull'utilizzo del dispositivo Skype for business
 

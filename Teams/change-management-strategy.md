@@ -15,12 +15,12 @@ description: Creare una strategia di gestione delle modifiche per Microsoft team
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 628c839560423e0e2524bed24082156469faeb36
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 396649f40a3e3413de67aea61eca7f2feb7dac4b
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137916"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43778382"
 ---
 <a name="create-a-change-management-strategy-for-microsoft-teams"></a>Creare una strategia di gestione delle modifiche per Microsoft Teams
 =======================================================
@@ -37,7 +37,7 @@ Procedure consigliate per la gestione delle modifiche per i team:
 
 4.  Progettare, avviare e gestire la campagna di adozione. Scaricare il [Kit di successo del cliente](https://aka.ms/TeamsSuccessKit) come punto di partenza. Una buona campagna di adozione include:
 
-    un.  Materiali di sensibilizzazione interni, ad esempio poster, segnaletica digitale ed eventi
+    a.  Materiali di sensibilizzazione interni, ad esempio poster, segnaletica digitale ed eventi
 
     b.  Informazioni di self-help e formazione in una singola posizione
     
@@ -145,9 +145,9 @@ Come per qualsiasi & campagna di adozione delle comunicazioni, è consigliabile 
 <a name="measure-and-share-success"></a>Misurare e condividere il successo
 -------------------------------------------------
 
-Il team di progetto deve essere amministratori IT dell'organizzazione. Questi utenti avranno accesso ai report sull'utilizzo di Microsoft teams di Office 365 incorporati nell'esperienza di amministrazione del portale di Office 365. Queste informazioni possono mostrare l'uso di Microsoft teams nella tua azienda. Ti consigliamo anche di ricevere feedback direttamente dagli utenti circa la loro esperienza di teams e altre idee che hanno per l'uso. La condivisione di questi esempi reali dall'interno della propria azienda è estremamente utile per l'atterraggio di un cambiamento duraturo nel tempo con la community degli utenti.  
+Il team di progetto deve essere amministratori IT dell'organizzazione. Questi utenti avranno accesso ai report sull'utilizzo di Microsoft teams di Office 365 incorporati nell'esperienza dell'interfaccia di amministrazione di Microsoft 365. Queste informazioni possono mostrare l'uso di Microsoft teams nella tua azienda. Ti consigliamo anche di ricevere feedback direttamente dagli utenti circa la loro esperienza di teams e altre idee che hanno per l'uso. La condivisione di questi esempi reali dall'interno della propria azienda è estremamente utile per l'atterraggio di un cambiamento duraturo nel tempo con la community degli utenti.  
 
-Altre informazioni sui report sull'utilizzo di Microsoft teams [nel portale di](https://support.office.com/article/Office-365-Reports-in-the-Admin-Center-Microsoft-Teams-user-activity-07f67fc4-c0a4-4d3f-ad20-f40c7f6db524) amministrazione di Office 365
+Altre informazioni sui report sull'utilizzo di Microsoft teams nell'interfaccia di amministrazione di Microsoft 365 [qui](https://support.office.com/article/Office-365-Reports-in-the-Admin-Center-Microsoft-Teams-user-activity-07f67fc4-c0a4-4d3f-ad20-f40c7f6db524)
 
 > [!TIP]
 > Usa il tuo team pubblico o la community di Yammer per raccogliere informazioni sull'uso. Condividili usando un tag #TeamsStories per facilitare il recupero.  Condividere un #TeamsStory al mese nella Intranet per evidenziare i dipendenti che abbracciano la modifica per aumentare la produttività e la collaborazione nell'ambiente.  

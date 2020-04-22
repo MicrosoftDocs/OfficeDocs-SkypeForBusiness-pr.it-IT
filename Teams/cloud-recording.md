@@ -15,12 +15,12 @@ f1.keywords:
 description: Come attivare e gestire la registrazione delle riunioni in Microsoft teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1098b1e316bb6ed747577183fc144bf2db7d0b9d
-ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.openlocfilehash: f358a0099da3f759e50f02b7bb7a5226069fcd28
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2020
-ms.locfileid: "43751853"
+ms.locfileid: "43780335"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -51,7 +51,7 @@ In questa sezione viene descritto come configurare e pianificare la registrazion
 
 ### <a name="turn-on-microsoft-stream-for-users-in-the-organization"></a>Attivare Microsoft Stream per gli utenti dell'organizzazione
 
-Microsoft Stream è disponibile come parte degli abbonamenti a Office 365 idonei o come servizio autonomo.  Per altre informazioni, vedere la [panoramica sulle licenze di Stream](https://docs.microsoft.com/stream/license-overview).  Microsoft Stream è ora incluso in Microsoft 365 Business, Office 365 Business Premium e Office 365 Business Essentials.
+Microsoft Stream è disponibile come parte degli abbonamenti Microsoft 365 e Office 365 idonei o come servizio autonomo.  Per altre informazioni, vedere la [panoramica sulle licenze di Stream](https://docs.microsoft.com/stream/license-overview).  Microsoft Stream è ora incluso in Microsoft 365 business, Microsoft 365 business standard e Microsoft 365 Business Basic.
 
 Leggere altre informazioni su come [assegnare licenze agli utenti in Office 365](https://support.office.com/article/Assign-licenses-to-users-in-Office-365-for-business-997596B5-4173-4627-B915-36ABAC6786DC) in modo che gli utenti possano accedere a Microsoft Stream. Assicurarsi che Microsoft Stream non sia bloccato per gli utenti, come illustrato in [questo articolo](https://docs.microsoft.com/stream/disable-user-organization).
 

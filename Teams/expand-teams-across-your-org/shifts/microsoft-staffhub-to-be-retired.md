@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 53d82dc346226215101c837dcf8a2f10dd6ff2fc
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 4c37d0c606a52893b69a101c99ef962e46d4deb3
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141179"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780635"
 ---
 # <a name="microsoft-staffhub-to-be-retired"></a>Ritiro di Microsoft StaffHub
 
@@ -97,7 +97,7 @@ Turni è disponibile nelle lingue seguenti: cinese semplificato, inglese (Stati 
 
 #### <a name="where-is-shifts-data-stored"></a>Dove vengono archiviati i dati di turni?
 
-Turni i dati vengono archiviati in Azure nei data center in Nord America e in Europa occidentale. Il contenuto di SharePoint sfrutta i gruppi di Office 365 e usa lo stesso spazio di archiviazione e supporto.
+Turni i dati vengono archiviati in Azure nei data center in Nord America e in Europa occidentale. Il contenuto di SharePoint sfrutta i gruppi di Microsoft 365 e usa lo stesso spazio di archiviazione e supporto.
 
 Per altre informazioni, Vedi [posizione dei dati di turni](manage-the-shifts-app-for-your-organization-in-teams.md#location-of-shifts-data).
 
@@ -131,9 +131,9 @@ Teams supporta la coesistenza con Skype for business. Per altre informazioni, ve
 
 Sì, ogni Manager e membro del team che usa team e turni all'interno di Teams deve avere un account di Office 365 (Azure AD) e deve essere assegnata una licenza valida.
  
-#### <a name="in-staffhub-i-could-add-a-special-prefix-to-all-office-365-groups-that-were-created-by-staffhub-teams-can-i-do-the-same-in-teams"></a>In StaffHub è possibile aggiungere un prefisso speciale a tutti i gruppi di Office 365 creati da team di StaffHub. È possibile eseguire la stessa operazione in teams?
+#### <a name="in-staffhub-i-could-add-a-special-prefix-to-all-microsoft-365-groups-that-were-created-by-staffhub-teams-can-i-do-the-same-in-teams"></a>In StaffHub è possibile aggiungere un prefisso speciale a tutti i gruppi di Microsoft 365 creati da team di StaffHub. È possibile eseguire la stessa operazione in teams?
 
-Non si avrà la stessa funzionalità quando si passa da StaffHub a teams. Se è necessario applicare la coerenza dei nomi a tutti i gruppi di Office 365, è possibile usare i [criteri di denominazione dei gruppi di office 365](https://docs.microsoft.com/office365/admin/create-groups/groups-naming-policy).
+Non si avrà la stessa funzionalità quando si passa da StaffHub a teams. Se è necessario applicare la coerenza dei nomi a tutti i gruppi di Microsoft 365, è possibile usare i [criteri di denominazione dei gruppi di microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/groups-naming-policy).
 
 #### <a name="will-team-names-be-the-same-in-teams"></a>I nomi del team saranno gli stessi in teams?
 
@@ -149,7 +149,7 @@ Ti invitiamo a rivedere i roster del team esistenti su StaffHub e, se possibile,
 
 La programmazione dell'utente verrà spostata in turni, ma l'utente non sarà membro del team o di un gruppo di Office 365.
 
-Per gli account inattivi non collegati a un account utente di Azure AD, un Manager può garantire che l'utente venga aggiunto come membro del team aggiungendo un indirizzo di posta elettronica di Office 365 valido nella pagina membri del team di StaffHub in modo che l'utente sia collegato all'account di Azure AD corretto nell'organizzazione.
+Per gli account inattivi non collegati a un account utente di Azure AD, un Manager può garantire che l'utente venga aggiunto come membro del team aggiungendo un indirizzo di posta elettronica Microsoft 365 o Office 365 valido nella pagina membri del team di StaffHub in modo che l'utente sia collegato all'account di Azure AD corretto nell'organizzazione.
 
 Un'altra opzione consiste nel fatto che gli amministratori eseguano i cmdlet **Add-StaffHubMember** e **Remove-StaffHubUser** per rimuovere un account non provisioning da un team di StaffHub e aggiungere di nuovo l'utente al team con il relativo UPN.
 

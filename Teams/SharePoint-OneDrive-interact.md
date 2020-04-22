@@ -18,17 +18,17 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fd34bf368667fcfa5776de40cad0d1444440805a
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: f4f536c6395e17e58f255ac3b88ccca0a092815c
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137256"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43778562"
 ---
 # <a name="how-sharepoint-online-and-onedrive-for-business-interact-with-microsoft-teams"></a>Come interagire con SharePoint Online e OneDrive for business con Microsoft Teams
 
 > [!Tip]
-> Per informazioni su come interagire con i team con Azure Active Directory (AAD), Office 365 groups, Exchange, SharePoint e OneDrive for business, vedere la sessione seguente: [fondazioni di Microsoft teams](https://aka.ms/teams-foundations)
+> Per informazioni su come interagire con i team con Azure Active Directory (AAD), Microsoft 365 groups, Exchange, SharePoint e OneDrive for business, vedere la sessione seguente: [fondazioni di Microsoft teams](https://aka.ms/teams-foundations)
 
 Ogni team di Microsoft Teams ha un sito del team in SharePoint Online e ogni canale standard in un team ottiene una cartella nella raccolta documenti del sito del team predefinita. I file condivisi in una conversazione vengono aggiunti automaticamente alla raccolta documenti e le autorizzazioni e opzioni di sicurezza per i file impostate in SharePoint vengono applicate automaticamente all'interno di Teams. Per vedere l'impatto della modifica di un indirizzo del sito in SharePoint, leggere [modificare l'indirizzo del sito](https://docs.microsoft.com/sharepoint/change-site-address).
 

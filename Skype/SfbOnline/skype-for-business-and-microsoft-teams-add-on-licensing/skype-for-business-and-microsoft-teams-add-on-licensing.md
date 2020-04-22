@@ -23,12 +23,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: "Learn about add-on licenses, what features you'll get with it, how to buy them for your product, and how to use your existing carrier with them. You can get information on pricing and plan details for Office 365, Communication Credits, and Calling plans. "
-ms.openlocfilehash: 94a5adc1e9f9abf5529aaf5b149d9cfc906efbe8
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 3488ec2239ba99b2bfe6efa97ed162804f4aa1e6
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42010569"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43777551"
 ---
 # <a name="skype-for-business-add-on-licensing"></a>Licenze per i componenti aggiuntivi Skype for Business
 
@@ -38,13 +38,13 @@ Le licenze per i componenti aggiuntivi sono licenze per le caratteristiche speci
 
 Le licenze di Skype for business sono progettate per offrire la massima flessibilità. Ad esempio, dopo aver usato le funzionalità di base di Skype for business per un po' di tempo, è possibile acquistare licenze per i componenti aggiuntivi quando si è pronti per usare altre funzionalità, ad esempio i servizi di audioconferenza, o il sistema telefonico in Office 365.
 
-## <a name="how-does-add-on-licensing-affect-cost"></a>Qual è l'impatto delle licenze per i componenti aggiuntivi sui costi?
+## <a name="how-does-add-on-licensing-affect-cost"></a>Come viene influenzato il costo dalle licenze per i componenti aggiuntivi?
 
 For most businesses, buying a bundle of software in an Enterprise plan will result in lower overall cost. Typically, when you buy several add-on licenses individually instead of as part of a plan, you may end up with higher combined cost.
 
 Per ulteriori informazioni sui costi, consulta [Come vedere prezzi e acquistare le licenze di componenti aggiuntivi](skype-for-business-and-microsoft-teams-add-on-licensing.md#bkmk_how) oppure uno dei seguenti:
 
-- [Prezzi per le Audioconferenze](https://products.office.com/skype-for-business/audio-conferencing)
+- [Prezzi per Audioconferenza](https://products.office.com/skype-for-business/audio-conferencing)
 
 - [Tariffe del Sistema telefonico](https://products.office.com/skype-for-business/phone-system)
 
@@ -65,21 +65,21 @@ A seconda del piano di cui si dispone già, è possibile acquistare licenze per 
 
 Need to talk to someone about all the add-on options? [Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
-## <a name="license-options-based-on-your-plan"></a>Opzioni di licenza basate sul tuo piano
+## <a name="license-options-based-on-your-plan"></a>Opzioni di licenza basate sul piano
 
 The add-on licensing options available to you depends on your Office 365 or Skype for Business plan. See the following topics for information, features, and options that are specific to your plan.
 
-- [Office 365 Business Premium](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-business-premium-plan.md)
-- [Office 365 Premium, Office 365 ProPlus o Skype for Business online (Piano 2)](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-premium-pro-plus-or-business-online-plan.md)
+- [Microsoft 365 business standard](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-business-premium-plan.md)
+- [Office 365 Premium, Microsoft 365 Apps for Enterprise o Skype for business online piano 2](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-premium-pro-plus-or-business-online-plan.md)
 - [Office 365 Enterprise E1, E3 ed E4](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e1-e3-e4.md)
 - [Office 365 Enterprise E5](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e5-with-audio-conferencing.md)
 - [Office 365 Enterprise E5 senza Audioconferenza](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e5-without-audio-conferencing.md)
 - [Microsoft Teams Rooms](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/skype-room-systems-v2.md)
-- [GOV, EDU e organizzazioni senza scopo di lucro](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/gov-edu-and-nonprofit-organizations.md)
+- [Organizzazioni GOV, EDU e no profit](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/gov-edu-and-nonprofit-organizations.md)
 
 Per un elenco dettagliato delle caratteristiche e dei confronti per ogni piano di Skype for business, vedere la [Descrizione del servizio Skype for business online](https://go.microsoft.com/fwlink/?LinkId=730729).
 
-## <a name="how-to-see-prices-and-buy-add-on-licenses"></a>Come conoscere i prezzi e acquistare le licenze per componenti aggiuntivi
+## <a name="how-to-see-prices-and-buy-add-on-licenses"></a>Come scoprire i prezzi e acquistare le licenze per componenti aggiuntivi
 <a name="bkmk_how"> </a>
 
  **Dopo aver acquistato un piano di Office 365, è possibile vedere i prezzi e acquistare componenti aggiuntivi tramite l'interfaccia di amministrazione di Microsoft 365**.
@@ -102,12 +102,12 @@ Per la documentazione completa sulla pianificazione della distribuzione, tra cui
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
+- [Configurare Skype for Business Online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
     
-- [Impostare Cloud Voicemail - Guida per gli amministratori](/microsoftteams/set-up-phone-system-voicemail)
+- [Configurare Cloud Voicemail - Guida per gli amministratori](/microsoftteams/set-up-phone-system-voicemail)
     
 - [Impostare Piani di chiamata](/microsoftteams/set-up-calling-plans) e [Piani di chiamata per Office 365](/MicrosoftTeams/calling-plans-for-office-365)
     
-- [Aggiungere fondi e gestire i crediti per la comunicazione](/microsoftteams/add-funds-and-manage-communications-credits)
+- [Aggiungere fondi e gestire Credito per la comunicazione](/microsoftteams/add-funds-and-manage-communications-credits)
     
 - [Configurare Cloud Connector](https://technet.microsoft.com/library/mt605228.aspx) e [scaricare Cloud Connector](https://aka.ms/CloudConnectorInstaller)

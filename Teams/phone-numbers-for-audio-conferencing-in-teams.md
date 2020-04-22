@@ -23,12 +23,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni su quali paesi e aree possiedono numeri telefonici di accesso esterno e come vengono assegnati automaticamente.
-ms.openlocfilehash: 921878c7b0dfd8abd313adffb9b87e07e58ad66d
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 9f130ec72d398e55ff3f4890ae89422915fc47a2
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137856"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779612"
 ---
 # <a name="phone-numbers-for-audio-conferencing-in-microsoft-teams"></a>Numeri di telefono per le audioconferenze in Microsoft Teams
 
@@ -50,7 +50,7 @@ There are two types of audio conferencing phone numbers that can be assigned to 
   
 - I **numeri di telefono dedicati** sono i numeri di telefono disponibili solo per gli utenti all'interno dell'organizzazione. Puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
   
-- I **numeri di telefono condivisi** sono i numeri di telefono che possono essere condivisi con altre organizzazioni Office 365. Non puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
+- I **numeri di telefono condivisi** sono i numeri di telefono che possono essere condivisi con altri Microsoft 365 o Office 365S. Non puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
   
 While the default audio conferencing number that is assigned to an organizer is only included in the meeting invite, a caller can use any of the phone numbers that are assigned to your conferencing bridge to join a meeting. The list of phone numbers that can be used to join a meeting is available using the **Find a local number** link that is included on every meeting invite.
   

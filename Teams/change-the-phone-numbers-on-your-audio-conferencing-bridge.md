@@ -23,12 +23,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Informazioni sui passaggi necessari per assegnare un nuovo numero di telefono del servizio al Bridge di conferenza per espandere la copertura per gli utenti.
-ms.openlocfilehash: 571b7a9c14db1601e0a4b94740395ad087808a49
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 233678bd953046eed5e6425e0b1a36c5a39b1061
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139075"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780355"
 ---
 # <a name="change-the-phone-numbers-on-your-audio-conferencing-bridge"></a>Cambiare i numeri di telefono del bridge per i servizi di audioconferenza
 
@@ -69,7 +69,7 @@ Solo un numero a pagamento del servizio può essere impostato come numero predef
 
 I numeri di telefono predefiniti di un utente sono quelli inclusi negli inviti alla riunione quando pianificano una riunione. Per altre informazioni, incluso il modo in cui vengono assegnati i numeri di telefono di defaul per i nuovi utenti, vedere [impostare i numeri di telefono inclusi negli inviti in Microsoft teams](set-the-phone-numbers-included-on-invites-in-teams.md) o [impostare i numeri di telefono inclusi negli inviti in Skype for business online](/SkypeForBusiness/audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites).
   
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
 
 2. Accedere ai team di**Amministrazione** > dell'interfaccia di amministrazione di **Microsoft 365** > &**agli utenti**di servizi di**audioconferenza** > di**Skype** > **legacy Portal** > e selezionare gli utenti nell'elenco.
 
@@ -133,7 +133,7 @@ Per ulteriori informazioni sul servizio MMS (Meeting Migration Service), consult
   
 ### <a name="step-3---unassign-the-old-phone-number-from-the-audio-conferencing-bridge"></a>Passaggio 3-annullare l'assegnazione del vecchio numero di telefono dal Bridge di audioconferenza
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
 
 2. Accedere ai team di interfaccia**di amministrazione di** > interfaccia di amministrazione di **Microsoft 365** > **&** > i**numeri di telefono****vocali** > del**portale** > legacy Skype.
 
@@ -169,7 +169,7 @@ Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in u
 
 1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
 
-2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
+2. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
 
 >
   ```PowerShell

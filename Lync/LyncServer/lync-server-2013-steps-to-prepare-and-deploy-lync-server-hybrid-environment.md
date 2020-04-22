@@ -12,12 +12,12 @@ ms:contentKeyID: 48185060
 ms.date: 12/29/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 207cb9b8435294abeac12f67506eb356a6ca73c6
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: bc029df06f22524fa99c232edf6bbe6aa9759f5a
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42208322"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780175"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -64,8 +64,8 @@ Nella tabella seguente sono elencati i passaggi necessari per preparare l'ambien
 <tr class="even">
 <td></td>
 <td><p>Aggiungere il dominio e verificare la proprietà</p></td>
-<td><p>Il dominio è talvolta denominato anche <em>dominio Vanity</em>. È necessario aggiungere il dominio al tenant di Office 365, quindi seguire la procedura per convalidare il dominio con Office 365. In questo modo si conferma che si è il proprietario del dominio.</p>
-<p>Per aggiungere il dominio al tenant di Office 365, seguire la procedura descritta in <a href="https://go.microsoft.com/fwlink/p/?linkid=254983">aggiungere il proprio dominio a office 365</a>.</p>
+<td><p>Il dominio è talvolta denominato anche <em>dominio Vanity</em>. È necessario aggiungere il proprio dominio all'organizzazione di Office 365, quindi seguire la procedura per convalidare il dominio con Office 365. In questo modo si conferma che si è il proprietario del dominio.</p>
+<p>Per aggiungere il dominio alla propria organizzazione di Office 365, attenersi alla procedura descritta in <a href="https://go.microsoft.com/fwlink/p/?linkid=254983">aggiungere il proprio dominio a office 365</a>.</p>
 <p>Completare tutti i passaggi di ogni sezione dell'argomento, tra cui &quot;la modifica dei record DNS per i servizi di Office 365.&quot;</p></td>
 </tr>
 <tr class="odd">

@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6c3813b5d79f1362ff30ff15fa6fd2aff38b25a9
-ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
+ms.openlocfilehash: 47aef5ceee6daee63683655f167016e4d7ae1cf2
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42706896"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776736"
 ---
 # <a name="prepare-your-it-staff-for-microsoft-teams"></a>Preparare il personale IT per Microsoft Teams
 
@@ -36,13 +36,13 @@ Questo articolo fa parte della fase di preparazione tecnica del viaggio di aggio
 - [Coesistenza e interoperabilità intesa di Skype for business e teams](https://aka.ms/SkypeToTeams-Coexist)
 - [Scelto il viaggio di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-Gli amministratori del tenant di Office 365, i lead tecnici e il servizio di supporto tecnico sono responsabili della Guida di un'esperienza utente di alta qualità. Questo include garantire che la rete sia pronta per supportare team, configurare Team per gli utenti e riuscire a risolvere efficacemente i problemi che potrebbero presentarsi.
+Gli amministratori dell'organizzazione di Office 365, i lead tecnici e il servizio di supporto tecnico sono responsabili della Guida di un'esperienza utente di alta qualità. Questo include garantire che la rete sia pronta per supportare team, configurare Team per gli utenti e riuscire a risolvere efficacemente i problemi che potrebbero presentarsi.
 
 Condividere le risorse seguenti con i membri del personale IT e verificare che siano pronti per il supporto degli utenti prima di iniziare l'aggiornamento a teams:
 
 - [Formazione per amministratori per Microsoft Teams](itadmin-readiness.md)
 - [Contattare il supporto di Office 365 per le aziende - Guida per gli amministratori](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
-- [Risolvere i problemi di connettività con il client Microsoft Teams](connectivity-issues.md)
+- [Risolvere i problemi di connettività con il client di Microsoft Teams](connectivity-issues.md)
 - [Usare i file di log in risoluzione dei problemi di Microsoft Teams](log-files.md)
 
 [//]: # (Chiedere a Debbie di esaminare:)

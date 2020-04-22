@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 24ccbaa0e7f43cdf1ccc816a3839547793c65167
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: ac5045df6462be28d7f13e093695376ea612e6cd
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139625"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780155"
 ---
 # <a name="upgrade-from-skype-for-business-on-premises-to-teams"></a>Eseguire l'aggiornamento da Skype for business locale a teams
 
@@ -42,7 +42,7 @@ Questo articolo fa parte della fase di distribuzione e implementazione del viagg
 -   [Preparare l'organizzazione](https://aka.ms/SkypeToTeams-UserReadiness)
 -   [Condotto un pilota](https://aka.ms/SkypeToTeams-Pilot)
 
-Se si è implementato Skype for Business Server o Microsoft Lync locale e l'organizzazione vuole eseguire l'aggiornamento a teams, seguire le istruzioni in questo articolo. È necessario configurare la connettività ibrida con il tenant di Office 365 e determinare i requisiti di coesistenza se si stanno spostando gli utenti in teams in fasi. 
+Se si è implementato Skype for Business Server o Microsoft Lync locale e l'organizzazione vuole eseguire l'aggiornamento a teams, seguire le istruzioni in questo articolo. È necessario configurare la connettività ibrida con l'organizzazione di Office 365 e determinare i requisiti di coesistenza se si stanno spostando gli utenti in teams in fasi. 
 
 > [!IMPORTANT]
 > Skype for Business Online verrà ritirato il 31 luglio 2021 e non sarà più accessibile o supportato. Per massimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, ti invitiamo a iniziare subito il tuo viaggio in Microsoft teams. Tieni presente che un aggiornamento corretto allinea la disponibilità tecnica e degli utenti, quindi assicurati di sfruttare le linee guida qui mentre navighi in Microsoft teams.

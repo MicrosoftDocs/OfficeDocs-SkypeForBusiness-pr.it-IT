@@ -16,16 +16,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 44b7a87a003b59543c37feb278462e839d83bd1e
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.openlocfilehash: 68a7b26fa9668685fc9082ecdb202b6f589e0f4f
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41863307"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780185"
 ---
 # <a name="overview-of-dynamic-membership-for-teams"></a>Panoramica sull'appartenenza dinamica per i team
 
-Microsoft teams supporta i team associati ai gruppi di Office 365 tramite *l'appartenenza dinamica*. L'appartenenza dinamica consente di definire l'appartenenza a un team da una o più regole che controllano alcuni attributi utente in Azure Active Directory (Azure AD). Gli utenti vengono aggiunti o rimossi automaticamente ai team corretti quando gli attributi dell'utente cambiano o gli utenti partecipano e lasciano il tenant.
+Microsoft teams supporta i team associati ai gruppi Microsoft 365 tramite *l'appartenenza dinamica*. L'appartenenza dinamica consente di definire l'appartenenza a un team da una o più regole che controllano alcuni attributi utente in Azure Active Directory (Azure AD). Gli utenti vengono aggiunti o rimossi automaticamente ai team corretti quando gli attributi dell'utente cambiano o gli utenti partecipano e lasciano il tenant.
 
 Con l'appartenenza dinamica puoi configurare Team per alcuni coorti di utenti dell'organizzazione. Possibili scenari includono:
 - Un ospedale può creare team distinti per infermieri, medici e chirurghi per trasmettere comunicazioni. Questo aspetto è particolarmente importante se l'ospedale si basa su dipendenti temporanei.
@@ -48,7 +48,7 @@ Durante l'accesso come amministratore del tenant, seguire le istruzioni in [crea
 
 ## <a name="create-a-new-team-with-your-o365-group"></a>Creare un nuovo team con il gruppo di Office 365
 
-Ora consente di rendere effettive le modifiche apportate all'appartenenza e creare un nuovo team come descritto in [migliorare i gruppi di Office 365 esistenti con Microsoft teams](enhance-office-365-groups.md).
+Ora consente di rendere effettive le modifiche apportate all'appartenenza e creare un nuovo team come descritto in [migliorare i gruppi microsoft 365 esistenti con Microsoft teams](enhance-office-365-groups.md).
 
 ## <a name="apply-dynamic-membership-to-an-existing-team"></a>Applicare l'appartenenza dinamica a un team esistente
 

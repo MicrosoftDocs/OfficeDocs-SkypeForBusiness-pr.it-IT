@@ -22,18 +22,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6c359f1d078448af33a8871ebcbe0f5cb73c1b15
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: a3d65b6af52764a28548cb9ddf190959f89e8f97
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836158"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43778332"
 ---
 # <a name="upgrade-basic"></a>Aggiornamento di base
 
 <a name="about-upgrade-basic"></a>
 
-Progettato per organizzazioni di piccole dimensioni o per chi usa Skype for business online per la messaggistica istantanea (chat) e solo per le riunioni, l'elenco di controllo di base per l'aggiornamento è un piano di azione accelerato che include le attività consigliate e le risorse associate per l'implementazione di un passaggio riuscito da Skype for business a teams.
+Progettato per organizzazioni di piccole dimensioni o per chi usa Skype for business online per la messaggistica istantanea (chat) e solo per le riunioni, l'elenco di controllo di base per l'aggiornamento è un piano di azione accelerato che include attività consigliate e risorse associate per l'implementazione di un passaggio efficace da Skype for business a teams.
 
 Questi dieci semplici passaggi consentono di ottenere tutto il necessario per un aggiornamento riuscito. Sono progettati per essere completati in circa 30 o 45 giorni, ma è consigliabile modificare le date di completamento dell'attività in base alla pianificazione dell'aggiornamento dell'organizzazione.
 
@@ -75,7 +75,7 @@ I leader senior sono responsabili per il successo aziendale; Assicurati di tener
 
 *(Circa quattro-sei settimane prima dell'aggiornamento)*
 
-Teams offre funzionalità compatibili con Skype for business, ad esempio messaggistica istantanea (chat) e riunioni, ma può anche fare molto di più. Come vero hub per il lavoro di gruppo, teams consente ai Workgroup di gestire progetti, file, conversazioni e app in un'unica posizione. Per impostazione predefinita, teams è attivato per tutte le organizzazioni. Decidere in che modo l'organizzazione utilizzerà teams e configurerà l'ambiente per il successo. 
+Teams offre funzionalità compatibili con Skype for business, ad esempio messaggistica istantanea (chat) e riunioni, ma può anche fare molto di più. Come vero hub per il lavoro di gruppo, teams consente ai Workgroup di gestire progetti, file, conversazioni e app in un'unica posizione. Per impostazione predefinita, Teams è attivato per tutte le organizzazioni. Decidere in che modo l'organizzazione utilizzerà teams e configurerà l'ambiente per il successo. 
 
 > [!Note]
 > Come cliente esistente di Skype for business, l'infrastruttura di rete corrente è probabilmente già configurata per i team. Per confermare questa operazione, è possibile seguire la guida "pianificazione tecnica completa" collegata al seguente (facoltativo).
@@ -114,7 +114,7 @@ Gli utenti fortemente adottati in Skype for business potrebbero avere bisogno di
 La disponibilità di un ampio preavviso agli utenti darà loro tempo per familiarizzare con i team senza influire negativamente sulla produttività, ottenendo così un'esperienza utente più positiva. Inviare una comunicazione per comunicare loro cosa sta cambiando, perché sta cambiando e come prepararsi.
 
 > [!Note]
-> Se necessario, è possibile abilitare i team per gli utenti tramite il portale di amministrazione di Office 365 in questo momento.
+> Se necessario, è possibile abilitare i team per gli utenti tramite l'interfaccia di amministrazione di Microsoft 365 in questo momento.
 
 **Risorse**
 

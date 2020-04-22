@@ -16,12 +16,12 @@ MS.collection:
 description: Informazioni su come usare il report utilizzo PSTN teams nell'interfaccia di amministrazione di Microsoft teams per ottenere una panoramica dell'utilizzo delle chiamate e delle conferenze audio nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3372bc77a4850da0690c2076c5858812e3e80452
-ms.sourcegitcommit: a4fd238de09366d6ed33d72c908faff812da11a5
+ms.openlocfilehash: c35699093168f5bb0443277f65da9a8060f27b69
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2020
-ms.locfileid: "42637193"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43778252"
 ---
 # <a name="microsoft-teams-pstn-usage-report"></a>Report utilizzo PSTN di Microsoft Teams
 
@@ -124,7 +124,7 @@ La prima riga del file CSV contiene i nomi di colonna. Tutte le date sono UTC e 
 | 16 | Costo di connessione | `numeric(16, 2)` | Prezzo della tariffa di connessione |
 | 17 | Addebito | `numeric(16, 2)` | Importo del pagamento o del costo della chiamata addebitata al tuo account |
 | 18 | Valuta | `nvarchar(3)` | Tipo di valuta usata per calcolare il costo della chiamata ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)) |
-| 19 | Capacità | `nvarchar(32)` | Licenza usata per la chiamata |
+| 19 | Funzionalità | `nvarchar(32)` | Licenza usata per la chiamata |
 
 ### <a name="exported-direct-routing-usage-report"></a>Report sull'uso di routing diretto esportato
 
@@ -134,7 +134,7 @@ La prima riga del file CSV contiene i nomi di colonna. Tutte le date sono UTC e 
 | :-: | :-: | :-: |:------------------- |
 | 0 | CorrelationId | `uniqueidentifier` | Identificatore univoco delle chiamate |
 | 1 | Indirizzo SIP | `nvarchar(128)` | Indirizzo dell'utente o del bot che ha eseguito o ricevuto la chiamata.<br/>Si noti che si tratta in realtà di UserPrincipalName (UPN, nome di accesso) in Azure Active Directory, che in genere corrisponde all'indirizzo SIP. |
-| 2 | Nome visualizzato | `nvarchar(128)` | Nome di un utente o di un bot chiamante, ad esempio coda di chiamata o operatore automatico, come impostato in Office 365 Portal |
+| 2 | Nome visualizzato | `nvarchar(128)` | Nome di un utente o di un bot chiamante, ad esempio coda di chiamata o operatore automatico, impostato nell'interfaccia di amministrazione di Microsoft 365 |
 | 3 | Paese utente | `nvarchar(2)` | Codice paese dell'utente, [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) |
 | 4 | Invitare il tempo | `datetimeoffset` | Quando l'invito iniziale invia in uscita dall'utente di teams o dalla chiamata bot al SBC o ricevuto in ingresso a teams o chiamata tramite bot dal componente proxy SIP del routing diretto da SBC |
 | 5 | Ora di inizio | `datetimeoffset` | Ora in cui il proxy SIP ha ricevuto la risposta finale (messaggio SIP "200 OK") da SBC in uscita (teams/bot a un utente PSTN) o dopo che il proxy SIP ha inviato l'invito all'hop successivo all'interno del backend di teams sulla chiamata in ingresso (un utente PSTN in un team/bot).<br/>Per le chiamate non riuscite e senza risposta, può essere uguale a tempo di inviti o di errore |

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 16b14d59-7737-4f9d-aa4d-83765a18ea07
 description: 'Riepilogo: gli amministratori di Skype for Business Server 2019 o Skype for business online possono utilizzare queste tabelle per comprendere quali funzionalità sono supportate nei client.'
-ms.openlocfilehash: f8b50614d663104e1307b233449ccffc0e26adb5
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 3d56744e9c383e018c5954422d4e1b6be4035b32
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42129489"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779432"
 ---
 # <a name="desktop-client-feature-comparison-for-skype-for-business-server-2019"></a>Confronto delle funzionalità dei client desktop per Skype for Business Server 2019
 
@@ -72,7 +72,7 @@ In questa tabella vengono illustrate le funzionalità relative alla gestione dei
 | Eseguire ricerche nella rubrica della società                                                             | &#x2714;                                      | &#x2714;                  | &#x2714;         |
 | Eseguire ricerche nei contatti di Microsoft Outlook                                                             | &#x2714;                                      | &#x2714;                  | &#x2714;         |
 | Gestire gruppi di contatti                                                                         | &#x2714;                                      | &#x2714;                  | &#x2714;         |
-| Espandere gruppi di distribuzione e gruppi di Office 365                                              | &#x2714;                                      | &#x2714;                  | &#x2714;         |
+| Espandere i gruppi di distribuzione e i gruppi di Microsoft 365                                              | &#x2714;                                      | &#x2714;                  | &#x2714;         |
 | Cercare Response Group  <br/> (non disponibile in Skype for business online)                | &#x2714;                                      |                           | &#x2714;         |
 | Visualizzare gruppi di contatti recenti                                                                 | &#x2714;                                      |                           | &#x2714;         |
 | Visualizzare il gruppo Conversazioni correnti                                                           | &#x2714;                                      | &#x2714;                  | &#x2714;         |

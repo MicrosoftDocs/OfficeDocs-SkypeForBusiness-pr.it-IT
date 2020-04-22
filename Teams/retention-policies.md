@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e2c918a8276be2eeab0a125a1661b70b42c6b069
-ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
+ms.openlocfilehash: 17ece37fded1d7b0743f3eeb66a300021f568c44
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43097001"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779783"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
@@ -29,7 +29,7 @@ I criteri di conservazione consentono di gestire le informazioni nell'organizzaz
 
 Per impostazione predefinita, i dati delle chat di Teams, dei canali e dei file vengono conservati per sempre. Gli amministratori possono configurare i criteri di conservazione di Teams per i messaggi di chat e canali e decidere in modo proattivo se tenere i dati, eliminarli o conservarli per un periodo di tempo specifico e in seguito eliminarli.
 
-È possibile creare e gestire i criteri di conservazione di Teams e altri carichi di lavoro nel [Centro sicurezza e conformità di Office 365](https://protection.office.com/) o tramite i cmdlet di PowerShell per il Centro sicurezza e conformità. È possibile applicare un criterio di conservazione di Teams a un'intera organizzazione o a specifici utenti e team.
+È possibile creare e gestire i criteri di conservazione per team e altri carichi di lavoro nel [centro conformità Microsoft 365](https://protection.office.com/) o tramite i cmdlet di PowerShell di Security & Compliance Center. È possibile applicare un criterio di conservazione di Teams a un'intera organizzazione o a specifici utenti e team.
 
 > [!NOTE]
 > Non è ancora supportata la configurazione per la conservazione dei messaggi del canale privato. La conservazione dei file condivisi in canali privati è supportata.
@@ -123,7 +123,7 @@ Per creare criteri di conservazione per i messaggi di chat e canali di Teams, es
         ![Screenshot delle opzioni per i messaggi dei canali e le chat di Teams nella pagina Scegliere le posizioni](media/retention-policies-create.png)
 
       > [!IMPORTANT]
-      > I messaggi dei canali e le chat di Teams non sono interessati dai criteri di conservazione applicati alle cassette postali di utenti o gruppi nelle posizioni della **posta elettronica di Exchange** o dei **gruppi di Office 365**. Anche se i messaggi delle chat e i canali di Teams vengono archiviati in Exchange, sono interessati solo dai criteri di conservazione applicati alle posizioni di Teams.
+      > I criteri di conservazione applicati alle cassette postali degli utenti o di gruppo nei percorsi di **posta elettronica di Exchange** o di **gruppi di Microsoft 365** non influenzano le chat team e i messaggi di canale Anche se i messaggi delle chat e i canali di Teams vengono archiviati in Exchange, sono interessati solo dai criteri di conservazione applicati alle posizioni di Teams.
 
 6. Esaminare le impostazioni e quindi, una volta pronti, selezionare **Crea questo criterio**.
 
@@ -160,7 +160,7 @@ Per creare e gestire i criteri di conservazione dei team tramite [Office 365 Sec
 
 Di seguito sono elencati i problemi noti dei criteri di conservazione di Teams rilevati e in corso di analisi.
 
-- In **Scegli i team** nella riga della posizione **Messaggi dei canali di Teams**, potrebbero venire mostrati gruppi di Office 365 non presenti in Teams. Questo problema verrà risolto in futuro.
+- In **Scegli teams** nella riga location **messages Channel teams** è possibile che vengano visualizzati gruppi di Microsoft 365 che non sono anche team. Questo problema verrà risolto in futuro.
 
 - In **Scegli gli utenti** nella riga della posizione **Chat di Teams**, potrebbero venire mostrati utenti non della cassetta postale e guest. I criteri di conservazione non possono essere impostati per i guest e verranno presto rimossi dall'elenco.
 

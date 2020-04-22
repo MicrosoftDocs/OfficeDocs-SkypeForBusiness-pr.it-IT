@@ -22,12 +22,12 @@ ms.custom:
 - ms.lync.lac.DashboardOrganizationInformation
 - ms.lync.lac.DashboardUserStatistics
 description: Scopri quali statistiche degli utenti di Skype for Business sono disponibili, ad esempio il numero di utenti abilitati, gli utenti con accesso alle conferenze o gli utenti abilitati per Office 365.
-ms.openlocfilehash: f4d98b8c8a57551dc71d1b38436c204aff67ec27
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: fd1998795fe87fda0d49fe42cc1c8101c51f3b9c
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42010749"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43777031"
 ---
 # <a name="user-statistics-and-organization-information"></a>Statistiche sugli utenti e informazioni sull'organizzazione
 
@@ -40,7 +40,7 @@ Il dashboard di Skype for Business dà una rapida visione d'insieme di come è c
 |**Proprietà** <br/> |**Come modificare** <br/> |
 |Utenti di Skype for Business Online  <br/> |Per consentire o impedire l'utilizzo dell'app Skype for Business, consulta l'articolo [Assegnare o rimuovere le licenze per Office 365 Business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) o [Rimuovere licenze da utenti per Office 365 Business](https://support.office.com/article/9b497c85-d0a4-4735-80fa-d3565bc05bd1).  <br/> Per un elenco completo di cosa fare quando un utente lascia l'azienda, vedi [Rimuovere un ex dipendente da Office 365](https://support.office.com/article/44d96212-4d90-4027-9aa9-a95eddb367d1).  <br/> |
 |Utenti abilitati per le audioconferenze  <br/> |Per consentire agli utenti di servizi di audioconferenza, vedere [provare o acquistare servizi di audioconferenza in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md).  <br/> |
-|Utenti nel cloud  <br/> |Questo è il numero di utenti Skype for Business online con account Office 365.  <br/> Per aggiungere persone al tuo abbonamento Office 365 (cioè creare account Office 365 per loro), vedi [Aggiungere utenti individualmente o in gruppo a Office 365 - Guida per gli amministratori](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec).  <br/> |
+|Utenti nel cloud  <br/> |Questo è il numero di utenti Skype for Business online con account Office 365.  <br/> Per aggiungere persone al proprio abbonamento a Microsoft 365 o Office 365, ovvero creare account di Office 365 per gli utenti, vedere [aggiunta di utente singolarmente o in blocco a office 365-Guida per gli amministratori](https://support.office.com/article/1970f7d6-03b5-442f-b385-5880b9c256ec).  <br/> |
 |Utenti sincronizzati e ospitati online  <br/> |Questo è il numero di utenti ibridi creati in una distribuzione locale di Skype for Business Server ma sincronizzati in Office 365.  <br/> Per impostare la connettività ibrida in Skype for Business, consulta [Pianificare connettività ibrida tra Skype for Business Server e Skype for Business Online](https://technet.microsoft.com/library/jj204669.aspx)  <br/> |
    
 > [!NOTE]

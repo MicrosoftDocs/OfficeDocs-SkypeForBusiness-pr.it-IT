@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: Informazioni su quali paesi e aree possiedono numeri telefonici di accesso esterno e come vengono assegnati automaticamente.
-ms.openlocfilehash: 19f2cb6f0c03ecdbc6890c7c1c24daceb508377a
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: fa99e9225f55919b58bf6d9b4648a740b21fcb34
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41986511"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43777441"
 ---
 # <a name="phone-numbers-for-audio-conferencing-in-skype-for-business-online"></a>Numeri di telefono per Audioconferenza su Skype for Business online
 
@@ -55,7 +55,7 @@ There are two types of audio conferencing phone numbers that can be assigned to 
   
  I **numeri di telefono dedicati** sono i numeri di telefono disponibili solo per gli utenti all'interno dell'organizzazione. Puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
   
- I **numeri di telefono condivisi** sono i numeri di telefono che possono essere condivisi con altre organizzazioni Office 365. Non puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
+ I **numeri di telefono condivisi** sono i numeri di telefono che possono essere condivisi con altri Microsoft 365 o Office 365S. Non è possibile modificare le lingue usate quando qualcuno chiama uno di questi numeri.
   
 While the default audio conferencing number that is assigned to an organizer is only included in the meeting invite, a caller can use any of the phone numbers that are assigned to your conferencing bridge to join a meeting. The list of phone numbers that can be used to join a meeting is available using the **Find a local number** link that is included on every meeting invite.
   

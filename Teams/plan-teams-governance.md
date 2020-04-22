@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: afd990c0a49b1f61bb5be717cc3bf2ad7bc70935
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 7fd782df443504a20a6010f07ac15b9078e570a7
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836188"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780205"
 ---
 # <a name="plan-for-governance-in-teams"></a>Pianificare la governance in Teams
 
@@ -45,7 +45,7 @@ L'organizzazione potrebbe richiedere l'implementazione di controlli severi sul m
 > [!TIP]
 > Usare la tabella seguente per acquisire i requisiti dell'organizzazione.
 
-|Capacità |Dettagli |Azure AD Premium <br> licenza richiesta |Decisione |
+|Funzionalità |Dettagli |Azure AD Premium <br> licenza richiesta |Decisione |
 |---------|---------|---------|---------|
 |Criteri di denominazione del team | Usa parole bloccate con suffisso prefisso, personalizzate. |P1 |DA definire |
 |Classificazione del team |Assegnare classificazioni a teams. |P1 |DA definire |
@@ -57,7 +57,7 @@ L'organizzazione potrebbe richiedere l'implementazione di controlli severi sul m
 > Per informazioni su come pianificare in anticipo, vedere [altre informazioni sull'impostazione di questi criteri e sulle licenze necessarie](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#template-settings).
 > 
 > [!NOTE]
-> Limitare la creazione di gruppi e team può rallentare la produttività degli utenti, poiché molti servizi di Office 365 richiedono la creazione di gruppi per il servizio. Per altre informazioni, passare a ed espandere il [motivo per cui controllare chi crea i gruppi di Office 365](https://support.office.com/article/manage-who-can-create-office-365-groups-4c46c8cb-17d0-44b5-9776-005fced8e618#why).
+> Limitare la creazione di gruppi e team può rallentare la produttività degli utenti, poiché molti servizi di Office 365 richiedono la creazione di gruppi per il servizio. Per altre informazioni, passare a ed espandere il motivo per cui [controllare chi crea i gruppi di Microsoft 365](https://support.office.com/article/manage-who-can-create-office-365-groups-4c46c8cb-17d0-44b5-9776-005fced8e618#why).
 
 
 #### <a name="additional-information"></a>Altre informazioni
@@ -66,14 +66,14 @@ Dopo aver determinato i requisiti, puoi implementarli usando i controlli di Azur
 
 - [Cmdlet di Azure Active Directory per la configurazione delle impostazioni di gruppo](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets).
 
-- [Applicare un criterio di denominazione per i gruppi di Office 365 in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-naming-policy).
+- [Applicare un criterio di denominazione per i gruppi di Microsoft 365 in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-naming-policy).
 
-- [Criteri di denominazione dei gruppi di Office 365](https://support.office.com/article/office-365-groups-naming-policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552).
+- [Criteri di denominazione dei gruppi di Microsoft 365](https://support.office.com/article/office-365-groups-naming-policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552).
 
 
 ## <a name="group-and-team-expiration-retention-and-archiving"></a>Scadenza del gruppo e del team, conservazione e archiviazione
 
-L'organizzazione potrebbe avere altri requisiti per l'impostazione di criteri per la scadenza, la conservazione e l'archiviazione dei dati di team e teams (canali e file di canale). È possibile configurare i criteri di scadenza del gruppo per gestire automaticamente il ciclo di vita del gruppo e i criteri di conservazione per mantenere o eliminare le informazioni in base alle esigenze ed è possibile archiviare i team (impostare la modalità di sola lettura) per mantenere una visualizzazione temporizzata di un team non più attivo.
+L'organizzazione potrebbe avere altri requisiti per l'impostazione di criteri per la scadenza, la conservazione e l'archiviazione dei dati di team e teams (canali e file di canale). È possibile configurare i criteri di scadenza del gruppo per gestire automaticamente il ciclo di vita del gruppo e i criteri di conservazione per mantenere o eliminare le informazioni in base alle esigenze ed è possibile archiviare i team (impostarli in modalità di sola lettura) per mantenere una visualizzazione temporizzata di un team non più attivo.
 
 |           |            |
 |-----------|------------|
@@ -83,9 +83,9 @@ L'organizzazione potrebbe avere altri requisiti per l'impostazione di criteri pe
 > [!TIP]
 > Usare la tabella seguente per acquisire i requisiti dell'organizzazione.
 
-|Capacità |Dettagli |Licenza Premium di Azure AD |Decisione |
+|Funzionalità |Dettagli |Licenza Premium di Azure AD |Decisione |
 |---------|---------|---------|---------|
-|Criteri di scadenza |Gestire il ciclo di vita dei gruppi di Office 365 impostando un criterio di scadenza. |P1 |DA definire|
+|Criteri di scadenza |Gestire il ciclo di vita dei gruppi di Microsoft 365 impostando un criterio di scadenza. |P1 |DA definire|
 |Criteri di conservazione |Mantenere o eliminare i dati per un determinato periodo di tempo impostando i criteri di conservazione per i team nel centro conformità & sicurezza. **Nota**: l'uso di questa funzionalità richiede la concessione di licenze di Office 365 Enterprise E3 o versioni successive. |No |DA definire |
 |Archiviare e ripristinare |Archiviare un team quando non è più attivo, ma si vuole tenerlo in riferimento o per riattivarlo in futuro. |No |DA definire |
 
@@ -96,7 +96,7 @@ L'organizzazione potrebbe avere altri requisiti per l'impostazione di criteri pe
 
 Per informazioni tecniche su come implementare queste impostazioni, vedere:
 
-- [Configurare la scadenza di gruppi di Office 365](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle).
+- [Configurare la scadenza di Microsoft 365 groups](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-lifecycle).
 
 - [Configurare i criteri di conservazione dei team](retention-policies.md).
 
@@ -105,7 +105,7 @@ Per informazioni tecniche su come implementare queste impostazioni, vedere:
 
 ## <a name="teams-feature-management"></a>Gestione delle funzionalità Teams
 
-Un altro aspetto importante della gestione della governance e del ciclo di vita per i team è la possibilità di controllare le caratteristiche a cui gli utenti avranno accesso. È possibile gestire le funzionalità di messaggistica, riunione e chiamata, sia a livello di tenant di Office 365 che per utente. 
+Un altro aspetto importante della gestione della governance e del ciclo di vita per i team è la possibilità di controllare le caratteristiche a cui gli utenti avranno accesso. È possibile gestire le funzionalità di messaggistica, riunione e chiamata, a livello di organizzazione o per utente di Office 365. 
 
 
 |         |         |
@@ -121,7 +121,7 @@ Per gli elenchi dettagliati di tutte le impostazioni, incluse le indicazioni tec
 
 - [Gestire le impostazioni di Microsoft Teams per l'organizzazione](enable-features-office-365.md)
 - [Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams](manage-teams-skypeforbusiness-admin-center.md).
-- [Gestire i criteri delle riunioni in teams](meeting-policies-in-teams.md)
+- [Gestire i criteri di riunione in Teams](meeting-policies-in-teams.md)
 - [Gestire i criteri di messaggistica in teams](messaging-policies-in-teams.md)
 
 Inoltre, puoi configurare la moderazione per un canale e dare funzionalità di moderatore a determinati utenti, in modo che possano controllare chi può creare post di canale e rispondere. Per altre informazioni, vedere [configurare e gestire la moderazione dei canali in Microsoft teams](manage-channel-moderation-in-teams.md) .

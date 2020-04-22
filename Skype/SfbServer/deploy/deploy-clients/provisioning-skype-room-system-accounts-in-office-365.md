@@ -1,5 +1,5 @@
 ---
-title: Provisioning degli account di sistema di Skype room in Office 365
+title: Provisioning degli account di sistema di Skype room in Microsoft 365 e Office 365
 ms.author: v-lanac
 author: lanachin
 manager: serdars
@@ -11,25 +11,25 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: c36150bb-461c-4f1c-877b-fac7fb232f7c
-description: Leggere questo argomento per informazioni sul provisioning degli account di sistema di Skype room in Office 365.
-ms.openlocfilehash: 141c833bcbdd744a7577c0762cb8ba55dd3d5c54
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+description: Leggere questo argomento per informazioni sul provisioning degli account di sistema di Skype room in Microsoft 365 o Office 365.
+ms.openlocfilehash: e2796d9a81f918c0503382e23aad5ead711240e7
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42037726"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779712"
 ---
-# <a name="provisioning-skype-room-system-accounts-in-office-365"></a>Provisioning degli account di sistema di Skype room in Office 365
+# <a name="provisioning-skype-room-system-accounts-in-microsoft-365-and-office-365"></a>Provisioning degli account di sistema di Skype room in Microsoft 365 e Office 365
  
 Leggere questo argomento per informazioni sul provisioning degli account di sistema di Skype room in Office 365.
   
-Nella sezione seguente viene illustrato il provisioning dell'account del sistema in sala Skype per un tenant di Office 365.
+Nella sezione seguente viene illustrato il provisioning dell'account del sistema in chat per un'organizzazione di Office 365.
   
-## <a name="office-365-prerequisites"></a>Prerequisiti di Office 365
+## <a name="microsoft-365-and-office-365-prerequisites"></a>Prerequisiti di Microsoft 365 e Office 365
 
 Il tenant online deve soddisfare i requisiti seguenti:
   
-- Il piano di Office 365 deve includere Skype for business online piano 2 o Office 365 E1, E3 o E5. <br/>Per informazioni dettagliate sui piani di Skype for business online, vedere la [Descrizione del servizio Skype for business online](https://technet.microsoft.com/library/jj822172.aspx).
+- Il piano Microsoft 365 o Office 365 deve includere Skype for business online (piano 2) o Office 365 E1, E3 o E5. <br/>Per informazioni dettagliate sui piani di Skype for business online, vedere la [Descrizione del servizio Skype for business online](https://technet.microsoft.com/library/jj822172.aspx).
     
 - Il tenant deve disporre della funzionalità di conferenza abilitata per Skype for business.
     
@@ -99,7 +99,7 @@ Dopo aver assegnato una licenza per Skype for business online, è possibile effe
   
 ## <a name="skype-for-business-online-provisioning"></a>Provisioning di Skype for business online
 
-Dopo aver creato e abilitato un account della cassetta postale della sala risorse come illustrato in precedenza e aver concesso in licenza l'account per Skype for business online, l'account verrà sincronizzato dalla foresta di Exchange Online alla foresta di Skype for business online utilizzando il Foresta di Active Directory di Windows Azure. I passaggi seguenti sono necessari per eseguire il provisioning dell'account del sistema di chat room Skype nel pool Skype for business online. Questi passaggi sono gli stessi sia per un account della cassetta postale di una risorsa esistente che per un account appena creato (confrm1 o confrm2), perché dopo che sono stati abilitati in Exchange Online, entrambi gli account verranno sincronizzati con Skype for business online nello stesso modo:
+Dopo aver creato e abilitato l'account di una cassetta postale della sala risorse, come illustrato in precedenza e aver concesso in licenza l'account per Skype for business online, l'account verrà sincronizzato dalla foresta di Exchange Online alla foresta di Skype for business online utilizzando la foresta di Windows Azure Active Directory. I passaggi seguenti sono necessari per eseguire il provisioning dell'account del sistema di chat room Skype nel pool Skype for business online. Questi passaggi sono gli stessi sia per un account della cassetta postale di una risorsa esistente che per un account appena creato (confrm1 o confrm2), perché dopo che sono stati abilitati in Exchange Online, entrambi gli account verranno sincronizzati con Skype for business online nello stesso modo:
   
 1. Creare una sessione di PowerShell remota. Tenere presente che è necessario scaricare Skype for Business Online Connector Module e l'assistente per l'accesso ai Microsoft Online Services e verificare che il computer sia configurato. Per ulteriori informazioni, vedere [configurare il computer per Windows PowerShell](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
     

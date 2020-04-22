@@ -15,12 +15,12 @@ f1.keywords:
 description: Informazioni sulla modalità di aggiornamento del client desktop teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8058fa1e79b7d415d03c08500213206579029042
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 0a76fe4e0cfb896d1bd89a02acebc1c00dff8767
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41832616"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776831"
 ---
 # <a name="teams-update-process"></a>Processo di aggiornamento di Teams
 
@@ -36,11 +36,11 @@ Gli utenti devono essere connessi per l'accesso agli aggiornamenti da scaricare.
 
 A partire dal 31 luglio 2019, gli aggiornamenti del client teams usano una larghezza di banda di rete significativamente inferiore durante l'aggiornamento. Questa opzione è attivata per impostazione predefinita e non richiede alcuna azione da parte di amministratori o utenti.
 
-## <a name="what-about-updates-to-office-365-proplus"></a>Informazioni sugli aggiornamenti di Office 365 ProPlus
+## <a name="what-about-updates-to-microsoft-365-apps-for-enterprise"></a>Informazioni sugli aggiornamenti delle app Microsoft 365 per le aziende
 
-Per impostazione predefinita, teams viene installato con le nuove installazioni di Office 365 ProPlus, come descritto in [distribuire Microsoft teams con office 365 ProPlus](https://docs.microsoft.com/DeployOffice/teams-install). 
+Per impostazione predefinita, teams viene installato con le nuove installazioni delle app Microsoft 365 per le aziende, come descritto in [distribuire Microsoft teams con le app microsoft 365 per le aziende](https://docs.microsoft.com/DeployOffice/teams-install). 
 
-Teams segue il proprio processo di aggiornamento come descritto sopra e non il processo di aggiornamento per le altre app di Office, come Word ed Excel. Per altre informazioni, vedere [Panoramica dei canali di aggiornamento per Office 365 ProPlus](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
+Teams segue il proprio processo di aggiornamento come descritto sopra e non il processo di aggiornamento per le altre app di Office, come Word ed Excel. Per altre informazioni, vedere [Panoramica dei canali di aggiornamento per le app Microsoft 365 per le aziende](https://docs.microsoft.com/DeployOffice/overview-of-update-channels-for-office-365-proplus)
 
 ## <a name="what-about-updates-to-teams-on-vdi"></a>Informazioni sugli aggiornamenti di teams su VDI
 
@@ -56,7 +56,7 @@ Come servizio online moderno, il client teams si aggiorna automaticamente ogni d
 
 Per iniziare a fornire assistenza per identificare quando i client desktop non sono aggiornati, verrà visualizzato un avviso in-app se la versione corrente dell'utente è compresa tra uno e tre mesi e se è disponibile una nuova versione. Questa messaggistica in-app incoraggia gli utenti ad aggiornare l'ultima versione di teams o, se necessario, a raggiungere l'amministratore IT. Gli utenti dei client desktop di teams che hanno più di tre mesi vedranno una pagina di blocco che fornisce le opzioni per l'aggiornamento ora, per raggiungere l'amministratore IT o per continuare a teams sul Web.
 
-Le versioni client desktop che hanno più di tre mesi prima dell'installazione e/o della prima esecuzione di teams hanno un periodo di tolleranza di 28 giorni prima di rispondere alle suddette informazioni sulla manutenzione. Durante questo periodo, il processo di aggiornamento automatico aggiornerà il client teams. Se non viene aggiornato, gli utenti vedranno un avviso in-app per incoraggiarli ad aggiornare manualmente l'ultima versione di teams o, se necessario, per contattare l'amministratore IT. Questo include gli utenti che usano il client desktop teams come parte del bundle di Office 365 ProPlus.
+Le versioni client desktop che hanno più di tre mesi prima dell'installazione e/o della prima esecuzione di teams hanno un periodo di tolleranza di 28 giorni prima di rispondere alle suddette informazioni sulla manutenzione. Durante questo periodo, il processo di aggiornamento automatico aggiornerà il client teams. Se non viene aggiornato, gli utenti vedranno un avviso in-app per incoraggiarli ad aggiornare manualmente l'ultima versione di teams o, se necessario, per contattare l'amministratore IT. Ciò include gli utenti che usano il client desktop teams come parte del bundle delle app Microsoft 365 per l'organizzazione.
 
 I client desktop di teams su cloud governativi hanno attualmente un'eccezione a questo contratto di manutenzione fino a nuovo avviso.
 

@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ed0ea94910e9b3b5499a1f23a6c1c081590957c7
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+ms.openlocfilehash: 60891c2e5283b8e9cdaa9e8d7852768bbb52d8aa
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160570"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776931"
 ---
 <a name="what-the-guest-experience-is-like"></a>Com'è l'esperienza guest
 =================================
@@ -51,7 +51,7 @@ Nella tabella seguente vengono confrontate le funzionalità teams disponibili pe
 |Creare riunioni o pianificare le sessioni di Access  <br/> |&#x2713;||
 |Accedere a OneDrive for Business Storage  <br/> |&#x2713;||
 |Creare criteri di accesso Guest a livello di tenant e teams/Channels  <br/> |&#x2713;||
-|Invitare un utente all'esterno del dominio del tenant di Office 365 <br/>  *I proprietari del team controllano questa impostazione.*  <br/> <br/> |&#x2713;||
+|Invitare un utente al di fuori del dominio dell'organizzazione di Office 365 <br/>  *I proprietari del team controllano questa impostazione.*  <br/> <br/> |&#x2713;||
 |Creare un team  <br/> |&#x2713;||
 |Individuare e partecipare a un team pubblico  <br/> |&#x2713;||
 |Visualizzazione organigramma  <br/> |&#x2713;||

@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ee41f32ac2237e5e2c6e2e92fd18ea1c1952f7cd
-ms.sourcegitcommit: df4dde0fe6ce9e26cb4b3da4e4b878538d31decc
+ms.openlocfilehash: 43adfb71c287677a6390d371a05bd1aea35ceda3
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521612"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779985"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -106,27 +106,27 @@ Escludere i seguenti elementi dalla cartella cache di teams% AppData%/Microsoft/
 - file txt
 - Cartella media-stack
 
-### <a name="office-365-proplus-considerations"></a>Considerazioni su Office 365 ProPlus
+### <a name="microsoft-365-apps-for-enterprise-considerations"></a>Considerazioni sulle app Microsoft 365 per le aziende
 
-Quando si distribuiscono team con Office 365 ProPlus in VDI, tenere presente quanto segue.
+Quando si distribuiscono team con le app Microsoft 365 per le aziende in VDI, tenere presente quanto segue.
 
-#### <a name="new-deployments-of-teams-through-office-365-proplus"></a>Nuove distribuzioni di teams tramite Office 365 ProPlus
+#### <a name="new-deployments-of-teams-through-microsoft-365-apps-for-enterprise"></a>Nuove distribuzioni di teams tramite le app Microsoft 365 per le aziende
 
-Prima di distribuire teams tramite Office 365 ProPlus, è necessario prima disinstallare le app di Team preesistenti, se distribuite con l'installazione per singolo computer.
+Prima di distribuire teams tramite le app Microsoft 365 per le aziende, è prima necessario disinstallare le app di Team preesistenti, se distribuite con l'installazione per singolo computer.
 
-Teams through Office 365 ProPlus viene installato per ogni utente. Per altre informazioni, vedere l'articolo [installare o aggiornare l'app desktop teams nella sezione VDI](#install-or-update-the-teams-desktop-app-on-vdi) .
+I team tramite le app Microsoft 365 per le aziende sono installati per ogni utente. Per altre informazioni, vedere l'articolo [installare o aggiornare l'app desktop teams nella sezione VDI](#install-or-update-the-teams-desktop-app-on-vdi) .
 
-#### <a name="teams-deployments-through-office-365-proplus-updates"></a>Distribuzioni di teams tramite gli aggiornamenti di Office 365 ProPlus
+#### <a name="teams-deployments-through-microsoft-365-apps-for-enterprise-updates"></a>Distribuzioni di teams tramite le app Microsoft 365 per gli aggiornamenti aziendali
 
-I team vengono aggiunti anche alle installazioni esistenti di Office 365 ProPlus. Dato che Office 365 ProPlus installa solo team per solo utente, vedere la sezione [installare o aggiornare l'app desktop teams in VDI](#install-or-update-the-teams-desktop-app-on-vdi) .
+I team vengono aggiunti anche alle installazioni esistenti delle app Microsoft 365 per le aziende. Poiché le app Microsoft 365 per l'organizzazione installano solo team per singolo utente, vedere la sezione [installare o aggiornare l'app desktop teams in VDI](#install-or-update-the-teams-desktop-app-on-vdi) .
 
-#### <a name="using-teams-with-per-machine-installation-and-office-365-proplus"></a>Uso di team con l'installazione per computer e Office 365 ProPlus
+#### <a name="using-teams-with-per-machine-installation-and-microsoft-365-apps-for-enterprise"></a>Uso di team con l'installazione per computer e le app Microsoft 365 per le aziende
 
-Office 365 ProPlus non supporta le installazioni per computer di teams. Per usare l'installazione per computer, è necessario escludere team da Office 365 ProPlus. Vedere [distribuire l'app desktop teams alla VM](#deploy-the-teams-desktop-app-to-the-vm) e [come escludere la distribuzione di teams tramite le sezioni di Office 365 ProPlus](#how-to-exclude-teams-deployment-through-office-365-proplus) .
+Le app Microsoft 365 per le aziende non supportano le installazioni per computer di teams. Per usare l'installazione per computer, è necessario escludere team dalle app Microsoft 365 per le aziende. Vedere [distribuire l'app desktop teams alla VM](#deploy-the-teams-desktop-app-to-the-vm) e [come escludere la distribuzione dei team tramite le app Microsoft 365 per](#how-to-exclude-teams-deployment-through-microsoft-365-apps-for-enterprise) le sezioni aziendali.
 
-#### <a name="how-to-exclude-teams-deployment-through-office-365-proplus"></a>Come escludere la distribuzione di teams tramite Office 365 ProPlus
+#### <a name="how-to-exclude-teams-deployment-through-microsoft-365-apps-for-enterprise"></a>Come escludere la distribuzione di teams tramite le app Microsoft 365 per le aziende
 
-Per altre informazioni su teams e Office 365 ProPlus, vedere [come escludere team da nuove installazioni di office 365 ProPlus](https://docs.microsoft.com/DeployOffice/teams-install#how-to-exclude-microsoft-teams-from-new-installations-of-office-365-proplus) e [usare criteri di gruppo per controllare l'installazione di teams](https://docs.microsoft.com/DeployOffice/teams-install#use-group-policy-to-control-the-installation-of-microsoft-teams).
+Per altre informazioni sui team e sulle app Microsoft 365 per le aziende, vedere [come escludere team dalle nuove installazioni delle app microsoft 365 per le aziende](https://docs.microsoft.com/DeployOffice/teams-install#how-to-exclude-microsoft-teams-from-new-installations-of-office-365-proplus) e [usare criteri di gruppo per controllare l'installazione di teams](https://docs.microsoft.com/DeployOffice/teams-install#use-group-policy-to-control-the-installation-of-microsoft-teams).
 
 ### <a name="deploy-the-teams-desktop-app-to-the-vm"></a>Distribuire l'app desktop teams alla VM
 

@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ef2f257934847f74466ff6f91890a667084b88d1
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 8c3e3e9d3253fef62c93751367647399ca91febd
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139665"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780605"
 ---
 # <a name="define-your-project-scope"></a>Definire l'ambito del progetto
 
@@ -93,7 +93,7 @@ Nella tabella seguente sono illustrati esempi di OKRs e KSIs per le fasi inizial
 |---|---|---|---|---|
 | **Rete e qualità** | La percentuale di chiamate audio insufficienti deve essere minima | [Dashboard qualità chiamata (Call Quality Dashboard)](https://aka.ms/sof-cqd) | \<3% di chiamate scadenti con teams | Settimanali, quindi mensili |
 | **Uso e sensibilizzazione** | La chat, le riunioni e l'esperienza di chiamata è uguale o migliore di Skype for business | Sondaggio | 80% d'accordo o fortemente d'accordo | Settimanale tramite Pilot, post-implementazione |
-| **Uso e adozione** | Gli utenti usano attivamente la soluzione | Report di Office 365 o Call Quality dashboard | 90% di partecipazione degli utenti pilota, migliore della soluzione corrente | Settimanali, quindi mensili |
+| **Uso e adozione** | Gli utenti usano attivamente la soluzione | Report di Microsoft 365 o Call Quality dashboard | 90% di partecipazione degli utenti pilota, migliore della soluzione corrente | Settimanali, quindi mensili |
 | **Uso e formazione** | Ho avuto risorse di formazione/assistenza adeguate per usare correttamente Teams | Sondaggio post-pilota | 80% d'accordo o fortemente d'accordo | Post-pilota, post-implementazione |
 | **Soddisfazione degli utenti** | Vorrei consigliare le squadre ad altri | [Net Promoter Score (NPS)](http://www.npscalculator.com/en) tramite sondaggio post-pilota | NPS \> 0 | Post-pilota, post-implementazione |
 | **Driver aziendale** | Risparmi sui costi | Debiti | \$Spese di costo X Million in soluzioni di terze parti | Sei mesi, poi un anno e poi cinque anni dopo l'implementazione |
@@ -107,7 +107,7 @@ Nella tabella seguente sono illustrati esempi di OKRs e KSIs per le fasi inizial
 
 | Rischio | Probabilità | Impatto | Generale | Piano di attenuazione |
 |---|---|---|---|-------|
-| **Qualità della rete** | Media | Alta | Alta | Eseguire un esercizio di pianificazione della rete. |
+| **Qualità della rete** | Media. | Alta | Alta | Eseguire un esercizio di pianificazione della rete. |
 | **Adozione ridotta degli utenti** | Alta | Alta | Alta | Collaborare in modo proattivo con gli utenti durante le fasi di pilotaggio e distribuzione; implementare una campagna di sensibilizzazione e formazione mirata per creare il desiderio. |
 | | | | | |
 

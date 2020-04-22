@@ -16,17 +16,17 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 18ad8a2808b12eb05e51d781cb422c65ad14e7ad
-ms.sourcegitcommit: edca9c1310b22a7b15ee1e3d00b4064cf647aa1e
+ms.openlocfilehash: ba8e6439d1b0c8bb5795408f5cff39ef2c298fa4
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43580674"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43778732"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
 > [!Tip]
-> Per informazioni su come interagire con i team con Azure Active Directory (AAD), Office 365 groups, Exchange, SharePoint e OneDrive for business, vedere la sessione seguente: [fondazioni di Microsoft teams](https://aka.ms/teams-foundations)
+> Per informazioni su come interagire con i team con Azure Active Directory (AAD), Microsoft 365 groups, Exchange, SharePoint e OneDrive for business, vedere la sessione seguente: [fondazioni di Microsoft teams](https://aka.ms/teams-foundations)
 
 Per usufruire dell'esperienza completa di Teams, è necessario che ogni utente sia abilitato per la creazione di gruppi di Office 365, Exchange Online e SharePoint Online.
 
@@ -96,7 +96,7 @@ Ecco alcuni aspetti aggiuntivi da considerare quando implementi Microsoft teams 
 
 - Se l'organizzazione ha requisiti di conformità per verificare che tutte le discussioni delle riunioni siano individuabili, è consigliabile disabilitare le riunioni private se l'organizzatore ha una cassetta postale di Exchange locale.
 
-- In una distribuzione ibrida di Exchange, il contenuto dei messaggi di chat è ricercabile indipendentemente dal fatto che i partecipanti alla chat abbiano una cassetta postale basata sul cloud o una cassetta postale locale. Per altre informazioni, vedere [ricerca di cassette postali basate su cloud per gli utenti locali in Office 365](https://docs.microsoft.com/office365/securitycompliance/search-cloud-based-mailboxes-for-on-premises-users). Per informazioni su come cercare contenuto in teams, leggere [Ricerca contenuto nel centro conformità & sicurezza di Office 365](https://docs.microsoft.com/Office365/SecurityCompliance/content-search#searching-microsoft-teams-and-office-365-groups).
+- In una distribuzione ibrida di Exchange, il contenuto dei messaggi di chat è ricercabile indipendentemente dal fatto che i partecipanti alla chat abbiano una cassetta postale basata sul cloud o una cassetta postale locale. Per altre informazioni, vedere [ricerca di cassette postali basate su cloud per gli utenti locali in Office 365](https://docs.microsoft.com/office365/securitycompliance/search-cloud-based-mailboxes-for-on-premises-users). Per informazioni su come cercare contenuto in teams, leggere [Ricerca contenuto nel centro conformità Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/content-search#searching-microsoft-teams-and-office-365-groups).
 
 > [!TIP]
 > Per informazioni su come usare Azure AD Connect per la sincronizzazione con Azure Active Directory, vedere [integrazione delle identità locali con Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=854600).

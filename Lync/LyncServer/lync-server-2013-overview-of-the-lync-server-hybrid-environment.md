@@ -12,12 +12,12 @@ ms:contentKeyID: 48183399
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 480e4a097a3faa8dc70d05ff72027fd6e65e5a76
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b39c94b08da65e546fdf3ad01d42ada636ff371d
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42215852"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780755"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -59,7 +59,7 @@ Per completare le attività di configurazione di una distribuzione ibrida, è ne
 
   - [Installazione di Windows PowerShell per Single Sign-on con AD FS](https://go.microsoft.com/fwlink/p/?linkid=398710)
 
-  - L'assistente per l'accesso ai Microsoft Online Services (Msoidcli-7.0. msi) è incluso nel programma di installazione desktop di Office 365, che può essere ottenuto dalla pagina dei download collegata dal portale di amministrazione di Office 365.
+  - L'assistente per l'accesso ai Microsoft Online Services (Msoidcli-7.0. msi) è incluso nel programma di installazione desktop di Office 365, che può essere ottenuto dalla pagina dei download collegata dall'interfaccia di amministrazione di Microsoft 365.
 
 </div>
 
@@ -67,7 +67,7 @@ Per completare le attività di configurazione di una distribuzione ibrida, è ne
 
 ## <a name="administrator-credentials"></a>Credenziali di amministratore
 
-Quando viene richiesto di fornire le credenziali di amministratore, utilizzare il nome utente e la password per l'account Administrator del tenant di Office 365. Queste credenziali vengono utilizzate anche quando si configura Active Directory Federation Services (AD FS) 2,0, la sincronizzazione della directory, il servizio Single Sign-on, la Federazione e lo spostamento degli utenti in Lync Online.
+Quando viene richiesto di fornire le credenziali di amministratore, utilizzare il nome utente e la password per l'account di amministratore per l'organizzazione di Office 365. Queste credenziali vengono utilizzate anche quando si configura Active Directory Federation Services (AD FS) 2,0, la sincronizzazione della directory, il servizio Single Sign-on, la Federazione e lo spostamento degli utenti in Lync Online.
 
 </div>
 

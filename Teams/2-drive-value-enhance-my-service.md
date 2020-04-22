@@ -18,21 +18,21 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 339353c1f4d7dc15b3cec69e275d0dd6111896eb
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: b91045dae26d14ca1e902812a705e8fa99bdd164
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825094"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779192"
 ---
 # <a name="enhance-my-service"></a>Migliorare il servizio
 
 Questo articolo offre una panoramica dei requisiti per ottenere il massimo dai servizi cloud Voice per l'organizzazione. Monitorando continuamente le funzionalità del servizio cloud Voice, puoi essere certo di offrire il massimo valore per l'organizzazione.
 
 ## <a name="enhance-my-service-overview"></a>Migliorare la panoramica del servizio
-Dopo aver implementato con successo i servizi di audioconferenza o di sistema telefonico con i piani di chiamata per l'organizzazione e l'uso del servizio con qualità e affidabilità, il passaggio successivo consiste nel valutare regolarmente se si hanno opportunità di migliorare i servizi. Si tratta di una parte della pianificazione continua di miglioramento del servizio che è uno standard moderno per la gestione dei servizi cloud. 
+Dopo aver implementato con successo i servizi di audioconferenza o di sistema telefonico con i piani di chiamata per l'organizzazione e l'uso del servizio con qualità e affidabilità, il passaggio successivo consiste nel valutare regolarmente se si hanno opportunità per migliorare i servizi. Si tratta di una parte della pianificazione continua di miglioramento del servizio che è uno standard moderno per la gestione dei servizi cloud. 
 
-Un ottimo modo per assicurarsi di ottenere sempre il massimo dai servizi consiste nel monitorare le [Roadmap pubbliche dei team](https://products.office.com/business/office-365-roadmap?filters=microsoft%20teams) per nuovi miglioramenti alle funzionalità che potrebbero interessare l'organizzazione. Se si ha accesso al portale di amministrazione di Office 365, si riceveranno aggiornamenti periodici sulle caratteristiche nuove e mutevoli tramite il centro messaggi. 
+Un ottimo modo per assicurarsi di ottenere sempre il massimo dai servizi consiste nel monitorare le [Roadmap pubbliche dei team](https://products.office.com/business/office-365-roadmap?filters=microsoft%20teams) per nuovi miglioramenti alle funzionalità che potrebbero interessare l'organizzazione. Se si ha accesso all'interfaccia di amministrazione di Microsoft 365, si riceveranno aggiornamenti periodici sulle caratteristiche nuove e mutevoli tramite il centro messaggi. 
 
 Inoltre, poiché le organizzazioni crescono e cambiano, è necessario richiedere tempo per rivedere e aggiornare i casi di utilizzo aziendale a intervalli regolari per verificare che il servizio sia configurato in modo che soddisfi le esigenze correnti dell'organizzazione.  Assicurati di ricevere feedback reali dagli utenti e dai campioni interni stabilendo i canali di feedback nell'organizzazione. Possono essere conversazioni informali, riunioni regolari o tramite un canale di teams o una community di Yammer. 
 

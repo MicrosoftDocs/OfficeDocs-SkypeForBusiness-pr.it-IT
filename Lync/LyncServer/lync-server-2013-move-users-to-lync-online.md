@@ -12,12 +12,12 @@ ms:contentKeyID: 48184392
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 2f490a50ade6c10d37a478729c46a5545970afb1
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 5106d4e27921d9407b2663410cc0872892479ebb
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42184599"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779853"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -53,7 +53,7 @@ Le impostazioni utente vengono spostate con l'account utente. Alcune impostazion
 
 Prima di iniziare a spostare gli utenti in Lync Online, potrebbe essere necessario spostare alcuni utenti pilota per confermare che l'ambiente sia configurato correttamente. È quindi possibile verificare che le funzionalità e i servizi di Lync funzionino come previsto prima di tentare di spostare altri utenti.
 
-Per spostare un utente locale nel tenant di Lync Online, eseguire i cmdlet seguenti in Lync Server Management Shell, utilizzando le credenziali di amministratore per il tenant di Microsoft Office 365. Sostituire "username@contoso.com" con le informazioni per l'utente che si desidera spostare.
+Per spostare un utente locale nel tenant di Lync Online, eseguire i cmdlet seguenti in Lync Server Management Shell, utilizzando le credenziali di amministratore per l'organizzazione di Microsoft Office 365. Sostituire "username@contoso.com" con le informazioni per l'utente che si desidera spostare.
 
    ```PowerShell
     $creds=Get-Credential
@@ -65,11 +65,11 @@ Per spostare un utente locale nel tenant di Lync Online, eseguire i cmdlet segue
 
 Il formato dell'URL specificato per il parametro **HostedMigrationOverrideUrl** deve essere l'URL del pool in cui è in esecuzione il servizio di migrazione ospitata, nel formato seguente:\<https://FQDN\>del pool/HostedMigration/hostedmigrationService.svc.
 
-È possibile determinare l'URL del servizio di migrazione ospitata visualizzando l'URL del pannello di controllo di Lync Online per l'account tenant di Office 365.
+È possibile determinare l'URL del servizio di migrazione ospitata visualizzando l'URL del pannello di controllo di Lync Online per l'account dell'organizzazione di Office 365.
 
-**Per determinare l'URL del servizio di migrazione ospitata per il tenant di Office 365**
+**Per determinare l'URL del servizio di migrazione ospitata per l'organizzazione di Office 365**
 
-1.  Accedere al tenant di Office 365 come amministratore.
+1.  Accedere all'organizzazione di Office 365 come amministratore.
 
 2.  Aprire l'interfaccia di **amministrazione di Lync**.
 

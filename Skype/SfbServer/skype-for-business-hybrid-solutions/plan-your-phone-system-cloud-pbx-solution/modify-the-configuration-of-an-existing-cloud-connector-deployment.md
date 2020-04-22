@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 90490c65-0e40-4e85-96e1-751f27897e25
 description: Seguire la procedura descritta in questo argomento per modificare la configurazione di una distribuzione di Skype for Business Cloud Connector Edition 1.4.1 o versione successiva esistente.
-ms.openlocfilehash: 4c2c0b8ad5340cd4ae4275f1ac009bf3d9d3ec0b
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 77e9940e10cc356afbade5592bf41a0cdba66b0f
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42018007"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779382"
 ---
 # <a name="modify-the-configuration-of-an-existing-cloud-connector-deployment"></a>Modificare la configurazione di una distribuzione del connettore cloud esistente
  
@@ -109,7 +109,7 @@ Se nel sito sono presenti più dispositivi, è necessario attenersi alla procedu
 
 Per modificare la configurazione di più siti in una distribuzione, seguire la procedura per un singolo sito, aggiornando un sito alla volta.
   
-## <a name="modify-the-configuration-of-your-office-365-tenant-to-enable-automatic-updates"></a>Modificare la configurazione del tenant di Office 365 per abilitare gli aggiornamenti automatici
+## <a name="modify-the-configuration-of-your-office-365-organization-to-enable-automatic-updates"></a>Modificare la configurazione dell'organizzazione di Office 365 per abilitare gli aggiornamenti automatici
 <a name="BKMK_MultipleSites"> </a>
 
 Per abilitare gli aggiornamenti automatici del sistema operativo e gli aggiornamenti automatici dei bit, è necessario utilizzare l'account di amministratore del tenant di Skype for business per la gestione online e utilizzare Remote PowerShell tenant come indicato di seguito.
@@ -161,7 +161,7 @@ Se sono stati disabilitati gli aggiornamenti automatici dei bit o degli aggiorna
 ## <a name="update-the-dedicated-tenant-admin-credentials"></a>Aggiornare le credenziali di amministratore tenant dedicate
 <a name="BKMK_MultipleSites"> </a>
 
-Le modifiche amministrative nel tenant di Office 365 per il connettore Cloud sono eseguite da un account con le autorizzazioni necessarie. Nelle versioni di connettori cloud precedenti all'2,0, quell'account è un account amministratore globale dedicato del tenant. In Cloud Connector Versions 2,0 e versioni successive, quell'account può essere un account di Office 365 con i diritti di amministratore di Skype for business.
+Le modifiche amministrative nell'organizzazione di Office 365 per il connettore Cloud sono eseguite da un account con le autorizzazioni necessarie. Nelle versioni di connettori cloud precedenti all'2,0, quell'account è un account amministratore globale dedicato del tenant. In Cloud Connector Versions 2,0 e versioni successive, quell'account può essere un account di Office 365 con i diritti di amministratore di Skype for business.
   
 Se le credenziali dell'account di amministratore cambiano in Office 365, è inoltre necessario aggiornare le credenziali memorizzate nella cache locale in Cloud Connector eseguendo il comando di PowerShell di amministratore seguente su ogni accessorio Cloud Connector distribuito:
   

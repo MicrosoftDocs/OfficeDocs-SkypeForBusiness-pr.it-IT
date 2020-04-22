@@ -21,12 +21,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni sulle licenze per i componenti aggiuntivi, le funzionalità incluse in ciascuna licenza, come acquistarle per il proprio prodotto e come utilizzarle con il gestore telefonico esistente.
-ms.openlocfilehash: 10f8b8d0af5c0c70d68c6fbdba561b15af41f64b
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 93d3ea0637063a2422871ba82e037c8f01e36299
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140819"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780515"
 ---
 # <a name="microsoft-teams-add-on-licensing"></a>Licenze per i componenti aggiuntivi di Microsoft Teams
 
@@ -65,8 +65,8 @@ A seconda del piano di cui si dispone già, è possibile acquistare licenze per 
 
 Le opzioni di licenza per componenti aggiuntivi a disposizione dipendono dal piano di Office 365. Consulta i seguenti argomenti per informazioni, funzionalità e opzioni specifiche per il piano.
 
-- [Office 365 Business Premium](office-365-business-premium.md)
-- [Office 365 ProPlus](office-365-premium-pro-plus.md)
+- [Microsoft 365 business standard](office-365-business-premium.md)
+- [App Microsoft 365 per le aziende](office-365-premium-pro-plus.md)
 - [Office 365 Enterprise E1 o E3](office-365-enterprise-e1-e3.md)
 - [Office 365 Enterprise E5](office-365-enterprise-e5-with-audio-conferencing.md)
 - [Office 365 Enterprise E5 senza Audioconferenza](office-365-enterprise-e5-without-audio-conferencing.md)

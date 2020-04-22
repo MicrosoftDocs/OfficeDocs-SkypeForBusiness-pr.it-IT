@@ -1,5 +1,5 @@
 ---
-title: Distribuire le sale di Microsoft teams con Office 365
+title: Distribuire Microsoft teams Rooms con Microsoft 365 o Office 365
 ms.author: v-lanac
 author: lanachin
 manager: serdars
@@ -14,15 +14,15 @@ ms.collection:
 - M365-collaboration
 ms.custom: ''
 ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
-description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams con Office 365.
-ms.openlocfilehash: 39a703b844df1a1ff487187772ff8eb8ea035191
-ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams con Microsoft 365 o Office 365.
+ms.openlocfilehash: 02eb5869d7464a4daeece177c4d1b5a5ef440fa0
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41888755"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780545"
 ---
-# <a name="deploy-microsoft-teams-rooms-with-office-365"></a>Distribuire le sale di Microsoft teams con Office 365
+# <a name="deploy-microsoft-teams-rooms-with-microsoft-365-or-office-365"></a>Distribuire Microsoft teams Rooms con Microsoft 365 o Office 365
 
 Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams con Office 365, in cui Microsoft teams o Skype for business e Exchange sono entrambi online.
 
@@ -144,7 +144,7 @@ Per informazioni dettagliate sui piani di Skype for business online, vedere la [
    Set-AzureADUser -UserPrincipalName <Account> -PhoneNumber "<PhoneNumber>"
    ```  -->
 
-6. L'account del dispositivo deve avere una licenza di Office 365 valida oppure Exchange e Microsoft teams o Skype for business non funzioneranno. Se si ha la licenza, è necessario assegnare una posizione di utilizzo all'account del dispositivo, determinando gli SKU di licenza disponibili per il proprio account. Puoi usare`Get-MsolAccountSku` <!-- Get-AzureADSubscribedSku --> per recuperare un elenco di SKU disponibili per il tenant di Office 365, come indicato di seguito:
+6. L'account del dispositivo deve avere una licenza di Office 365 valida oppure Exchange e Microsoft teams o Skype for business non funzioneranno. Se si ha la licenza, è necessario assegnare una posizione di utilizzo all'account del dispositivo, determinando gli SKU di licenza disponibili per il proprio account. Puoi usare`Get-MsolAccountSku` <!-- Get-AzureADSubscribedSku --> per recuperare un elenco di SKU disponibili per l'organizzazione di Office 365, come indicato di seguito:
 
   ``` Powershell
   Get-MsolAccountSku
@@ -257,12 +257,12 @@ Per la convalida, dovresti essere in grado di usare qualsiasi client Skype for b
 
 [Configurare gli account per le sale di Microsoft Teams](rooms-configure-accounts.md)
 
-[Pianificare le sale di Microsoft Teams](rooms-plan.md)
+[Piano per Microsoft Teams Rooms](rooms-plan.md)
 
-[Distribuire le sale di Microsoft Teams](rooms-deploy.md)
+[Distribuire Microsoft Teams Rooms](rooms-deploy.md)
 
-[Configurare una console Microsoft teams rooms](console.md)
+[Configurare una console per Microsoft Teams Rooms](console.md)
 
-[Gestire le sale di Microsoft Teams](rooms-manage.md)
+[Gestire Microsoft Teams Rooms](rooms-manage.md).
 
 [Licenze di Microsoft teams rooms](rooms-licensing.md)

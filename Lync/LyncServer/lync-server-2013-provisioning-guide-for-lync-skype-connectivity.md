@@ -12,12 +12,12 @@ ms:contentKeyID: 57793363
 ms.date: 11/26/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 76eb0ed3fbfffc3a30794f1cc8652090235ecc88
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6165310a32bbbc7ea13fc6663dfd4cf5ab791435
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42201733"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780075"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,7 +37,7 @@ ms.locfileid: "42201733"
 
 _**Ultimo argomento modificato:** 2014-11-26_
 
-Lync Server 2013 supporta la connettività con Skype. Questa connettività consente agli utenti di Lync 2013 di aggiungere contatti Skype utilizzando l'account Microsoft dell'utente Skype (MSA). I client Skype possono inoltre aggiungere utenti di Lync all'elenco dei contatti. In base ai criteri configurati amministrativamente in Lync Server, gli utenti di Lync e Skype saranno in grado di comunicare utilizzando la messaggistica istantanea, vedere reciprocamente la presenza e avviare chiamate audio e video. La connettività Lync-Skype è anche una funzionalità di Lync Online e può essere abilitata per i clienti di Lync Online dall'interfaccia di amministrazione di Lync all'interno del portale di Office 365.
+Lync Server 2013 supporta la connettività con Skype. Questa connettività consente agli utenti di Lync 2013 di aggiungere contatti Skype utilizzando l'account Microsoft dell'utente Skype (MSA). I client Skype possono inoltre aggiungere utenti di Lync all'elenco dei contatti. In base ai criteri configurati amministrativamente in Lync Server, gli utenti di Lync e Skype saranno in grado di comunicare utilizzando la messaggistica istantanea, vedere reciprocamente la presenza e avviare chiamate audio e video. La connettività Lync-Skype è anche una funzionalità di Lync Online e può essere abilitata per i clienti di Lync Online dall'interfaccia di amministrazione di Lync all'interno dell'interfaccia amministrativa di Microsoft 365.
 
 <div>
 

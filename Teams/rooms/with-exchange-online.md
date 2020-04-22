@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f3ba85b8-442c-4133-963f-76f1c8a1fff9
 description: Leggere questo argomento per informazioni su come distribuire le sale di Microsoft teams con Exchange Online.
-ms.openlocfilehash: d909174712ba27efdc5e4c5427c51c67049b8e92
-ms.sourcegitcommit: 543f650ad4aff73bccfe7a60b66fb944b4e3c119
+ms.openlocfilehash: fbf1057539f15d6de702909a1571c9e11fdf5de3
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42572884"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780555"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-online"></a>Distribuire le sale di Microsoft teams con Exchange Online
 
@@ -101,7 +101,7 @@ Se si è distribuito Active Directory Federation Services (ADFS), potrebbe esser
      ``` -->
 
 2. L'account utente deve avere una licenza di Office 365 valida per garantire che Exchange e Skype for Business Server funzionino. Se si ha la licenza, è necessario assegnare una posizione di utilizzo all'account utente, determinando gli SKU di licenza disponibili per il proprio account. Eseguire l'assegnazione in un passaggio successivo.
-3. Quindi, USA`Get-MsolAccountSku` <!--Get-AzureADSubscribedSku--> per recuperare un elenco di SKU disponibili per il tenant di Office 365.
+3. Quindi, USA`Get-MsolAccountSku` <!--Get-AzureADSubscribedSku--> per recuperare un elenco di SKU disponibili per l'organizzazione di Office 365.
 4. Quando si elencano gli SKU, è possibile aggiungere una licenza usando l'`Set-MsolUserLicense` <!-- Set-AzureADUserLicense--> cmdlet. In questo caso, $strLicense è il codice SKU visualizzato, ad esempio contoso: STANDARDPACK. 
 
     ```PowerShell
@@ -145,7 +145,7 @@ Se si è distribuito Active Directory Federation Services (ADFS), potrebbe esser
 3. Fare clic sull'account Microsoft teams Rooms e quindi fare clic sull'icona della penna per modificare le informazioni sull'account.
 4. Fare clic su **licenze**.
 5. In **assegna licenze**selezionare Skype for business (piano 2) o Skype for business (piano 3), a seconda delle licenze e dei requisiti per la segreteria telefonica aziendale. È necessario usare una licenza di piano 3 Se si vuole usare Enterprise Voice in Microsoft teams rooms.
-6. Fai clic su **Salva**.
+6. Fare clic su **Salva**.
 
 Per la convalida, dovresti essere in grado di usare qualsiasi client Skype for business per accedere a questo account.
 
@@ -159,10 +159,10 @@ Per la convalida, dovresti essere in grado di usare qualsiasi client Skype for b
 
 [Configurare gli account per le sale di Microsoft Teams](rooms-configure-accounts.md)
 
-[Pianificare le sale di Microsoft Teams](rooms-plan.md)
+[Piano per Microsoft Teams Rooms](rooms-plan.md)
   
-[Distribuire le sale di Microsoft Teams](rooms-deploy.md)
+[Distribuire Microsoft Teams Rooms](rooms-deploy.md)
   
-[Configurare una console Microsoft teams rooms](console.md)
+[Configurare una console per Microsoft Teams Rooms](console.md)
   
-[Gestire le sale di Microsoft Teams](rooms-manage.md)
+[Gestire Microsoft Teams Rooms](rooms-manage.md).

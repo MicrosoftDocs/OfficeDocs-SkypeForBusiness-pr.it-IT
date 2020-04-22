@@ -12,12 +12,12 @@ ms:contentKeyID: 48183925
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7fa0bae9909015ca8cefe52cc09dabbe7a4419b8
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6ad8735834ab004753444849c529cb4ceec18c16
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42190455"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776711"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -41,7 +41,7 @@ Lync 2013 introduce un approccio diverso alla distribuzione del client. In una p
 
   - **Office 2013 Windows Installer** è un pacchetto di installazione basato su Windows Installer costituito da più file MSI. La creazione di un prodotto completo si basa sulla combinazione di un pacchetto MSI principale indipendente dalla lingua con uno o più pacchetti specifici della lingua. I singoli pacchetti vengono assemblati durante l'installazione mentre le attività di personalizzazione e manutenzione vengono eseguite durante e dopo l'installazione di Office nei computer degli utenti. Negli argomenti di questa sezione viene descritto come utilizzare e personalizzare il programma di installazione di Windows di Office 2013 per la distribuzione di Lync 2013.
 
-  - **Office 2013 a** portata di clic è un programma di installazione che consente di eseguire il flusso dei file di installazione di Office all'utente dal portale di Microsoft Office 365. Gli amministratori possono personalizzare l'installazione utilizzando lo strumento di distribuzione di Office per la funzione a portata di clic. Poiché la funzione a portata di clic di Office 2013 viene utilizzata principalmente nell'ambiente Microsoft Office 365, questo metodo di installazione non viene descritto in dettaglio in questa sezione. Per informazioni dettagliate sull'utilizzo e la personalizzazione dell'installazione a portata di clic, vedere la documentazione di Office 2013 Resource Kit. Gli amministratori possono anche scaricare il programma di Office 2013 a portata di clic e i file di origine della lingua in una posizione locale, che è utile quando si desidera ridurre al minimo la richiesta sulla rete o impedire agli utenti di installare il software da Internet a causa di requisiti di sicurezza aziendale.
+  - **Office 2013 a** portata di clic è un programma di installazione che consente di eseguire il flusso dei file di installazione di Office all'utente dall'interfaccia di amministrazione di Microsoft 365. Gli amministratori possono personalizzare l'installazione utilizzando lo strumento di distribuzione di Office per la funzione a portata di clic. Poiché la funzione a portata di clic di Office 2013 viene utilizzata principalmente nell'ambiente Microsoft Office 365, questo metodo di installazione non viene descritto in dettaglio in questa sezione. Per informazioni dettagliate sull'utilizzo e la personalizzazione dell'installazione a portata di clic, vedere la documentazione di Office 2013 Resource Kit. Gli amministratori possono anche scaricare il programma di Office 2013 a portata di clic e i file di origine della lingua in una posizione locale, che è utile quando si desidera ridurre al minimo la richiesta sulla rete o impedire agli utenti di installare il software da Internet a causa dei requisiti di sicurezza aziendale.
 
 Negli argomenti di questa sezione vengono illustrate le modalità di distribuzione dei client tramite il programma di installazione di Office 2013 basato su MSI. Il riferimento primario dovrebbe essere la documentazione di Office 2013 Resource Kit, in cui vengono descritti in dettaglio la modalità di preparazione dell'infrastruttura, la personalizzazione dell'installazione e la distribuzione di Office 2013. Tuttavia, è consigliabile utilizzare la documentazione di Office in combinazione con gli argomenti di questa sezione, in cui vengono indicate le considerazioni relative alla distribuzione specifiche di Lync 2013.
 

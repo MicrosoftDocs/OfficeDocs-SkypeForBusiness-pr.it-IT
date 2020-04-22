@@ -19,18 +19,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 28daebcb-c2dc-4338-b2d1-04345ece9c19
 description: Informazioni su come abilitare il sistema telefonico in Office 365 Voice Services per gli utenti di Skype for business.
-ms.openlocfilehash: ae1443fa0f0725b6cbbe722703f24af02139c12d
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 8ed04e3926adfecb2f0022d12c783f6c3e83d763
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42050198"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780725"
 ---
 # <a name="enable-users-for-enterprise-voice-online-and-phone-system-in-office-365-voicemail"></a>Abilitare gli utenti per Enterprise Voice online e il sistema telefonico in Office 365 segreteria telefonica
  
 Informazioni su come abilitare il sistema telefonico in Office 365 Voice Services per gli utenti di Skype for business.
   
-L'ultimo passaggio per la distribuzione del sistema telefonico in Office 365 con connettività PSTN locale consiste nell'abilitare gli utenti per il sistema telefonico in Office 365 e nella segreteria telefonica. Per abilitare queste funzionalità, è necessario essere un utente con il ruolo di amministratore globale di Office 365 ed essere in grado di eseguire Remote PowerShell. È necessario seguire la procedura descritta in questo argomento per tutti gli account utente che non dispongono già di VoIP aziendale abilitato per Skype for business online.
+L'ultimo passaggio per la distribuzione del sistema telefonico in Office 365 con connettività PSTN locale consiste nell'abilitare gli utenti per il sistema telefonico in Office 365 e nella segreteria telefonica. Per abilitare queste funzionalità, è necessario essere un utente con il ruolo di amministratore globale ed essere in grado di eseguire Remote PowerShell. È necessario seguire la procedura descritta in questo argomento per tutti gli account utente che non dispongono già di VoIP aziendale abilitato per Skype for business online.
   
 ## <a name="enable-phone-system-in-office-365-voice-services"></a>Abilitare il sistema telefonico in Office 365 Voice Services
 

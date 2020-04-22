@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 16b14d59-7737-4f9d-aa4d-83765a18ea07
 description: 'Riepilogo: gli amministratori di Skype for Business Server 2015 o Skype for business online possono utilizzare queste tabelle per comprendere quali funzionalità sono supportate nei client.'
-ms.openlocfilehash: 36583ab342daa68f87cffb8600fa54c1ce74d089
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: c07955758f86e31eb947a99ce8ba0e8dc7a44b30
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42013499"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43777801"
 ---
 # <a name="desktop-client-feature-comparison-for-skype-for-business-server-2015"></a>Confronto delle funzionalità dei client desktop per Skype for Business Server 2015
 
@@ -77,7 +77,7 @@ In questa tabella vengono illustrate le funzionalità relative alla gestione dei
 |Eseguire ricerche nella rubrica della società |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Eseguire ricerche nei contatti di Microsoft Outlook |&#x2714;|&#x2714;|&#x2714;||&#x2714;|&#x2714;|&#x2714;||&#x2714;|
 |Gestire gruppi di contatti |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;||&#x2714;|&#x2714;|
-|Espandere gruppi di distribuzione e gruppi di Office 365 |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|||
+|Espandere i gruppi di distribuzione e i gruppi di Microsoft 365 |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|||
 |Cercare Response Group  <br/> (non disponibile in Skype for business online) |&#x2714;||&#x2714;||&#x2714;|&#x2714;||||
 |Visualizzare gruppi di contatti recenti |&#x2714;||&#x2714;||&#x2714;|&#x2714;||||
 |Visualizzare il gruppo Conversazioni correnti |&#x2714;|&#x2714;|&#x2714;||&#x2714;|&#x2714;|&#x2714;|||

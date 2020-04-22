@@ -20,18 +20,18 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come creare e gestire i dial plan (PSTN Calling dial plans) e su come gestirli.
-ms.openlocfilehash: 6a5f46772ed8eebb309ba8bd9eaeca6fddb35afa
-ms.sourcegitcommit: 0fdc60840f45ff5b0a39a8ec4a21138f6cab49c9
+ms.openlocfilehash: 9c72745e6dee12ffbac4d91df47df37c327aab33
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160080"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43778262"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare piani di chiamata
 
 Dopo aver pianificato i dial plan per l'organizzazione e aver individuato tutte le regole di normalizzazione che devono essere create per il routing delle chiamate, si è pronti per creare i dial plan. È possibile usare l'interfaccia di amministrazione di Microsoft teams o Windows PowerShell per creare e gestire piani di chiamata.  
 
-## <a name="using-the-microsoft-teams-admin-center"></a>Uso dell'interfaccia di amministrazione di Microsoft Teams
+## <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
 
 ### <a name="create-a-dial-plan"></a>Creare un dial plan
 
@@ -87,7 +87,7 @@ Per altre informazioni, vedere [connettersi a tutti i servizi di Office 365 in u
   
 1. Fare clic su **Avvia** > **Windows PowerShell**.
     
-2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
+2. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
     
     > [!NOTE]
     > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.

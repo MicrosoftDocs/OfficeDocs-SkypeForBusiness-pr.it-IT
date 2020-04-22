@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: Learn how to send Skype for Business instant messages even when your contacts aren't signed in using PowerShell.
-ms.openlocfilehash: 2b9cea6e7a4bcb3f7fc34bdf67e77353412d9e13
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 03e92118fd915582030b5259654664121ca96c50
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41706311"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43777141"
 ---
 # <a name="turn-on-or-off-offline-messages-for-admins"></a>Attivare o disattivare i messaggi offline per gli amministratori
 
@@ -62,7 +62,7 @@ Per altre informazioni, vedere [Connettersi a tutti i servizi di Office 365 in u
 
 1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
 
-2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
+2. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
 
     > [!NOTE]
     > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.
@@ -82,7 +82,7 @@ Per altre informazioni sull'avvio di Windows PowerShell, vedere [connettersi a t
 > [!NOTE]
 > I messaggi offline sono disponibili **solo** nella versione più recente del client Skype for business a portata di clic e non sono disponibili quando viene usato un file *. msi o un vecchio click-to-Run per installare il client Skype for business.
 
-Per abilitare o disabilitare i messaggi offline, inviare messaggi offline per gli utenti dell'organizzazione __ , impostare `True` EnableIMAutoArchiving `False`su or. Per impostazione predefinita, questa opzione è `True`impostata su.
+Per abilitare o disabilitare i messaggi offline, inviare messaggi offline per gli utenti dell'organizzazione _EnableIMAutoArchiving_ , impostare `True` EnableIMAutoArchiving `False`su or. Per impostazione predefinita, questa opzione è `True`impostata su.
 
 Per disattivarli, utilizzare il cmdlet **Set-CsClientPolicy** ed eseguire:
 
@@ -90,7 +90,7 @@ Per disattivarli, utilizzare il cmdlet **Set-CsClientPolicy** ed eseguire:
 Set-CsClientPolicy -Identity Global -EnableIMAutoArchiving $False
 ```
 
-Per abilitare o disabilitare i messaggi offline, inviare messaggi offline per un utente __ , impostare `True` EnableIMAutoArchiving `False`su or. Per impostazione predefinita, è impostato su  `True`. Puoi usare un criterio esistente o crearne uno simile all'esempio seguente.
+Per abilitare o disabilitare i messaggi offline, inviare messaggi offline per un utente _EnableIMAutoArchiving_ , impostare `True` EnableIMAutoArchiving `False`su or. Per impostazione predefinita, è impostato su  `True`. Puoi usare un criterio esistente o crearne uno simile all'esempio seguente.
 
 
   ```PowerShell

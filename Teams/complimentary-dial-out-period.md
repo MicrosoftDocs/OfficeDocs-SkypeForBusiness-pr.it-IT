@@ -23,12 +23,12 @@ ms.custom:
 - Legal
 - seo-marvel-mar2020
 description: Informazioni sul periodo di chiamata in uscita gratuito per il piano di chiamate di Office 365 e per i servizi di audioconferenza di Office 365 in Microsoft teams.
-ms.openlocfilehash: 46c9aac02c40a973abc8356dc4212b3521852461
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 19ffdd1b0a634a2fb3294479b2163af38aefedf6
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137296"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779793"
 ---
 # <a name="audio-conferencing-complimentary-dial-out-period"></a>Periodo di chiamate gratuite di Audioconferenza
 
@@ -48,7 +48,7 @@ Per i clienti che adottano il servizio di conferenza audio di Office 365, Micros
 
 Inoltre, durante il periodo di chiamata gratuita è disponibile un limite di 900 minuti:
 
-Gli utenti con una posizione di utilizzo della licenza (questa è la posizione del paese dell'utente definita nell'area licenze del portale di amministrazione di Office 365) in qualsiasi paese possono effettuare la chiamata da una conferenza a uno dei paesi e delle aree geografiche di 44. Ogni utente riceve 900 minuti per utente al mese in qualsiasi zona di paesi e aree geografiche raggruppate a livello di tenant. Ad esempio, un cliente ha acquistato licenze di abbonamento a servizi di audioconferenza di 115 e ha 10 utenti negli Stati Uniti, 100 utenti nel Regno Unito e 5 utenti in India, tutti con licenze di abbonamento a servizi di audioconferenza assegnate agli utenti.
+Gli utenti con una posizione di utilizzo della licenza (questa è la posizione del paese dell'utente definita nell'area licenze dell'interfaccia di amministrazione di Microsoft 365) in qualsiasi paese possono effettuare la chiamata da una conferenza a uno dei paesi e delle aree geografiche di 44. Ogni utente riceve 900 minuti per utente al mese in qualsiasi zona di paesi e aree geografiche raggruppate a livello di tenant. Ad esempio, un cliente ha acquistato licenze di abbonamento a servizi di audioconferenza di 115 e ha 10 utenti negli Stati Uniti, 100 utenti nel Regno Unito e 5 utenti in India, tutti con licenze di abbonamento a servizi di audioconferenza assegnate agli utenti.
 
 > [!NOTE]
 > La dimensione del pool si basa sulle licenze assegnate e non sulle licenze acquistate.

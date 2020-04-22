@@ -17,12 +17,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: anach
 description: App pazienti per amministratori Teams
-ms.openlocfilehash: 4c4eaced1b7e3c328d589906ac50cfb8ac805ea3
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 405a87be4bd9504c0bdca98c17748f0864ba72ed
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42153788"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780195"
 ---
 # <a name="patients-app-overview"></a>Panoramica dell'app Pazienti
 
@@ -30,12 +30,12 @@ L'applicazione patients è un'app Store di Microsoft teams disponibile per tutti
 
 L'app ha due modalità:
 
-- La modalità connessa EMR che si connette a EMR tramite FHIR. L'app modalità connessa EMR rimane in anteprima privata e i clienti interessati o gli amministratori possono richiedere l'accesso all'app eliminando Microsoft un messaggio di posta elettronica su [teamsforhealthcare@service.microsoft.com](mailto:teamsforhealthcare@service.microsoft.com) con le informazioni sul tenant di Office 365.
+- La modalità connessa EMR che si connette a EMR tramite FHIR. L'app modalità connessa EMR rimane in anteprima privata e i clienti interessati o gli amministratori possono richiedere l'accesso all'app eliminando Microsoft un messaggio di posta elettronica su [teamsforhealthcare@service.microsoft.com](mailto:teamsforhealthcare@service.microsoft.com) con le informazioni sull'organizzazione di Office 365.
 - La modalità manuale che consente ai team di assistenza di aggiungere/apportare manualmente le informazioni sul paziente. L'applicazione è disponibile nell'app store teams per gli utenti finali da scaricare in anteprima privata. L'app può essere limitata a determinate sezioni di utenti che usano [criteri di configurazione delle app](../../teams-app-setup-policies.md) in teams. Per accedere all'app, il tenant deve far parte del programma di adozione della tecnologia (TAP). Invia un messaggio di posta elettronica su [teamsforhealthcare@service.microsoft.com](mailto:teamsforhealthcare@service.microsoft.com) per avviare il processo per richiedere l'accesso.
 
 ## <a name="usage-example"></a>Esempio di utilizzo
 
-Durante le sessioni di arrotondamento su ogni turno in reparto medico, i clinici si radunano presso la stazione di cura per discutere gli ultimi aggiornamenti sullo stato di avanzamento dei pazienti nel reparto.  Evidenziano le metriche chiave critiche (non necessariamente mediche o che esplicitano sulle cartelle cliniche dei pazienti) e assicurano che il paziente sia sul percorso di scorrimento a destra per il discarico in base alla diagnosi. Per aggirare questi pazienti, l'infermiera di carica configura l'app paziente in un team in cui vengono aggiunti tutti i clinici e aggiunge i pazienti a un elenco di pazienti. Durante i turni, gli infermieri e gli altri responsabili della cura per il paziente accedono a Microsoft teams e l'app patients sui loro dispositivi mobili e aggiornano le informazioni pertinenti sul paziente nel dispositivo e quindi tutti gli altri membri del team di assistenza possono vedere gli aggiornamenti e le note e rimanere sincronizzati. Due volte al giorno, all'inizio e alla fine di un turno, hanno anche riunioni di team multi-disciplinari per passare all'elenco dei pazienti e usare l'app pazienti per mettere a terra se stessi e condividere informazioni su ogni paziente usando l'app pazienti in uno schermo di grandi dimensioni. Spesso, alcuni clinici possono anche accedere a queste riunioni di team in remoto ed essere ancora parte della discussione.
+Durante le sessioni di arrotondamento su ogni turno in reparto medico, i clinici si radunano presso la stazione di cura per discutere gli ultimi aggiornamenti sullo stato di avanzamento dei pazienti nel reparto.  Evidenziano le metriche chiave critiche (non necessariamente mediche o che esplicitano sulle cartelle cliniche dei pazienti) e assicurano che il paziente sia sul percorso di scorrimento a destra per il discarico in base alla diagnosi. Per aggirare questi pazienti, l'infermiera di carica configura l'app paziente in un team in cui vengono aggiunti tutti i clinici e aggiunge i pazienti a un elenco di pazienti. Durante i turni, gli infermieri e gli altri responsabili della cura per il paziente accedono a Microsoft teams e l'app patients sui loro dispositivi mobili e aggiornano le informazioni relative ai pazienti nel dispositivo e quindi tutti gli altri membri del team di assistenza possono vedere gli aggiornamenti e le note e rimanere sincronizzati. Due volte al giorno, all'inizio e alla fine di un turno, hanno anche riunioni di team multi-disciplinari per passare all'elenco dei pazienti e usare l'app pazienti per mettere a terra se stessi e condividere informazioni su ogni paziente usando l'app pazienti in uno schermo di grandi dimensioni. Spesso, alcuni clinici possono anche accedere a queste riunioni di team in remoto ed essere ancora parte della discussione.
 
 ## <a name="configure-patients-app"></a>Configurare l'app pazienti
 

@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sull'ID chiamante predefinito di Office 365 (numero di telefono assegnato dall'utente), noto anche come ID linea chiamante. È possibile modificare o bloccare l'ID chiamante di un utente.
-ms.openlocfilehash: c04fdfa7dc395f31eb3277fe0ab2f77aa92605c7
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 3e19b1de929057880573c29ba75aa0ec1091139f
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140909"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780525"
 ---
 # <a name="set-the-caller-id-for-a-user"></a>Impostare l'ID chiamante per un utente
 Il sistema telefonico in Office 365 fornisce un ID chiamante predefinito che è il numero di telefono assegnato dell'utente. È possibile impostare o bloccare l'ID chiamante (detto anche ID linea chiamante) per un utente. Per altre informazioni sull'uso dell'ID chiamante nell'organizzazione, è [possibile usare l'ID chiamante nell'organizzazione](how-can-caller-id-be-used-in-your-organization.md).
@@ -79,7 +79,7 @@ Per ulteriori informazioni su queste impostazioni e su come usarle, visita [Come
     
 1. Fare clic sul pulsante **Start** > **Windows PowerShell**.
     
-2. Nella finestra **Windows PowerShell** connettersi all'organizzazione di Office 365 eseguendo:
+2. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
     
    > [!NOTE]
    > Il comando **Import-Module** va eseguito solo la prima volta che si usa il modulo Windows PowerShell di Skype for Business online.

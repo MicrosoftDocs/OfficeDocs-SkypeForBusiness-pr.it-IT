@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 0df4fd9e-370b-4b9d-a595-f1199fbc9f81
 description: "Riepilogo: informazioni sul nuovo Skype for business e sui passaggi che è possibile eseguire per preparare l'ambiente e gli utenti per l'aggiornamento, se si sta utilizzando Skype for business online, Skype for Business Server 2019, Skype for Business Server 2015, Lync Server 2013 o Lync Server 2010."
-ms.openlocfilehash: c54465b2f2c6cb7fb8d131b52de27c3f64d0bcc2
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: c1fecbdb5a4ec0a19e464a57ee128d2d00ad501f
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42028007"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43777751"
 ---
 # <a name="plan-the-skype-for-business-2015-client-experience-for-your-users"></a>Pianificare l'esperienza client di Skype for business 2015 per gli utenti
  
@@ -44,7 +44,7 @@ Il 12 maggio 2015 ci sarà un altro aggiornamento mensile da Office che include 
 ## <a name="what-client-experience-do-you-want-for-your-users"></a>Quale esperienza client si desidera per gli utenti?
 <a name="clientexperience"> </a>
 
-Con il nuovo client Skype for business, è possibile controllare l'esperienza client che gli utenti ricevono, Lync o Skype for business. L'esperienza client predefinita dipende dal fatto che si utilizzi Lync o Skype for business locale o online. Se si utilizza Skype for business online (Lync Online) oggi con Office 365 ProPlus, Office 365 Business Premium o Office 2013, l'esperienza client Skype for business aggiornata, ispirata all'aspetto di Skype, sarà l'esperienza utente predefinita. Se si utilizza Lync Server in locale oggi, l'esperienza client di Lync sarà l'impostazione predefinita.
+Con il nuovo client Skype for business, è possibile controllare l'esperienza client che gli utenti ricevono, Lync o Skype for business. L'esperienza client predefinita dipende dal fatto che si utilizzi Lync o Skype for business locale o online. Se si utilizza Skype for business online (Lync Online) oggi con Microsoft 365 Apps for Enterprise, Microsoft 365 business standard o Office 2013, l'esperienza client Skype for business aggiornata, ispirata all'aspetto di Skype, sarà l'esperienza utente predefinita. Se si utilizza Lync Server in locale oggi, l'esperienza client di Lync sarà l'impostazione predefinita.
   
 È possibile configurare l'esperienza client che gli utenti ottengono utilizzando i criteri client. Un criterio client è un insieme di impostazioni di configurazione che vengono applicate agli utenti quando si effettuano l'accesso a Lync o Skype for business.
   

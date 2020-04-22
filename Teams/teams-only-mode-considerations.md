@@ -21,16 +21,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7ec2d9ede5fdd31070228995cefaa16a60ad6224
-ms.sourcegitcommit: cfaae3ecbf853766de788b4825a86e04f68868ca
+ms.openlocfilehash: 4c4619758672022ed767c56e296ba41d2dcc33fd
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42795999"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776821"
 ---
 # <a name="teams-only-mode-considerations"></a>Considerazioni sulla modalità solo Teams
 
-Se si è un amministratore del tenant di Office 365, si vedrà ora l'opzione per l'aggiornamento alla modalità solo teams nell'interfaccia di amministrazione di Microsoft teams. Con questa funzionalità è possibile aggiornare singoli utenti o, in alternativa, l'intero tenant.  
+Se si è un amministratore dell'organizzazione di Office 365, verrà visualizzata l'opzione per eseguire l'aggiornamento alla modalità solo teams nell'interfaccia di amministrazione di Microsoft teams. Con questa funzionalità è possibile aggiornare singoli utenti o, in alternativa, l'intero tenant.  
 
 L'aggiornamento alla modalità solo teams offre agli utenti tutti i vantaggi di Microsoft teams, l'hub per il lavoro in team in Office 365, tramite una singola esperienza client. Inoltre, gli utenti in modalità solo team riceveranno tutte le chiamate e le chat in teams, indipendentemente dal fatto che il mittente usi Skype for business o teams e tragga vantaggio dal supporto per l'interoperabilità e la Federazione.
 

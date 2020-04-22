@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3c93e01624883d9db755479baf6e87c80feba2e1
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 6c57ebda3d23135beb46febf13529b903958df6b
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139595"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780625"
 ---
 # <a name="move-your-microsoft-staffhub-teams-to-shifts-in-microsoft-teams"></a>Spostare i team di Microsoft StaffHub in turni in Microsoft Teams
 
@@ -78,7 +78,7 @@ Prima di trasferire un team di StaffHub in teams, verificare che:
 
 - L'utente connesso è un amministratore globale.
 - Teams è abilitato per tutti gli utenti del tenant.
-- La creazione di gruppi di Office 365 è abilitata nel tenant.
+- La creazione di gruppi Microsoft 365 è abilitata nel tenant.
 - StaffHub teamId è valido.
 - Il team di StaffHub ha almeno un proprietario del team.
 - Il team di StaffHub contiene membri.
@@ -140,7 +140,7 @@ $InvitedUsersObject | SELECT * | export-csv InvitedUsers.csv -NoTypeInformation
 
 #### <a name="link-the-account"></a>Collegare l'account
 
-Esegui una delle operazioni seguenti:
+Eseguire una delle operazioni seguenti:
 
 - Convertire e collegare l'account.
 

@@ -19,21 +19,21 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Optimization
-description: Questo argomento definisce il set di requisiti di prestazioni di rete per i servizi Skype for business online e come si può scegliere di usare Internet o ExpressRoute per la connettività tra la rete e Skype for business online in base alla valutazione della rete connettività. Se si è deciso di distribuire Azure ExpressRoute per la connettività dedicata a Office 365, questo documento fornisce anche indicazioni su come pianificare le connessioni di ExpressRoute in diversi scenari di distribuzione di Skype for business online.
-ms.openlocfilehash: 2d9192f4dfb27de97527ff584c0ab0a204e20cca
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+description: Questo argomento definisce il set di requisiti di prestazioni di rete per i servizi Skype for business online e come si può scegliere di usare Internet o ExpressRoute per la connettività tra la rete e Skype for business online in base alla valutazione della connettività di rete. Se si è deciso di distribuire Azure ExpressRoute per la connettività dedicata a Office 365, questo documento fornisce anche indicazioni su come pianificare le connessioni di ExpressRoute in diversi scenari di distribuzione di Skype for business online.
+ms.openlocfilehash: ed7ad6ebd456122e41ccd74269180ff9c79fa3fb
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41693071"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776441"
 ---
 # <a name="media-quality-and-network-connectivity-performance-in-skype-for-business-online"></a>Qualità multimediale e prestazioni della connettività di rete in Skype for Business online
 
-Questo argomento definisce il set di requisiti di prestazioni di rete per i servizi Skype for business online e come si può scegliere di usare Internet o ExpressRoute per la connettività tra la rete e Skype for business online in base alla valutazione della rete connettività. Se si è deciso di distribuire Azure ExpressRoute per la connettività dedicata a Office 365, questo documento fornisce anche indicazioni su come pianificare le connessioni di ExpressRoute in diversi scenari di distribuzione di Skype for business online.
+Questo argomento definisce il set di requisiti di prestazioni di rete per i servizi Skype for business online e come si può scegliere di usare Internet o ExpressRoute per la connettività tra la rete e Skype for business online in base alla valutazione della connettività di rete. Se si è deciso di distribuire Azure ExpressRoute per la connettività dedicata a Office 365, questo documento fornisce anche indicazioni su come pianificare le connessioni di ExpressRoute in diversi scenari di distribuzione di Skype for business online.
   
 La qualità dei contenuti multimediali in tempo reale (audio, video e condivisione applicazioni) tramite IP è fortemente influenzata dalla qualità della connettività di rete end-to-end. Per una qualità ottimale dei supporti multimediali di Skype for Business Online, è importante assicurarsi che vi sia una connessione di alta qualità tra la rete aziendale e Skype for Business Online. Il modo migliore per offrire tale qualità è configurare la propria rete interna e la connettività cloud in base alla capacità della rete di contenere picchi di traffico per Skype for Business Online su tutte le connessioni.
   
-Azure ExpressRoute non è un requisito per i servizi di Office 365, tra cui Skype for business online. Azure ExpressRoute, tuttavia, è una delle opzioni di distribuzione disponibili per garantire che la connettività a Office 365 soddisfi i requisiti di prestazioni della rete Skype for business e garantisca il supporto più ottimale per Skype for business online Esperienza di qualità.
+Azure ExpressRoute non è un requisito per i servizi di Office 365, tra cui Skype for business online. Azure ExpressRoute è tuttavia una delle opzioni di distribuzione disponibili per garantire che la connettività a Office 365 soddisfi i requisiti di prestazioni della rete Skype for business e assicuri l'esperienza di qualità multimediale Skype for business online più ottimale.
   
 > [!TIP]
 > Anche se questo argomento offre informazioni generali sulle prestazioni di rete, le linee guida complete per la valutazione della rete sono al di fuori dell'ambito del documento. Per trovare un elenco dei partner di Skype for business online che possono aiutarti con le misurazioni delle prestazioni di rete nell'ambito di una valutazione completa della rete, visita [Skype for business partner Solutions](http://partnersolutions.skypeforbusiness.com/). 
@@ -74,7 +74,7 @@ La qualità dei contenuti multimediali in tempo reale sulla rete IP è fortement
 > [!NOTE]
 >  Il buffering per jitter aumenterà la latenza fine-fine.
   
-Con molte sessioni multimediali in tempo reale di Skype for business online, oltre ad altri traffici di rete generati da altri servizi di Office 365 e altre applicazioni aziendali, assicurandosi che la larghezza di banda sia sufficiente per l'intero percorso di rete connettere la rete al servizio Skype for business online è fondamentale per evitare la congestione della rete e garantire un'eccellente qualità multimediale in tempo reale (audio, video e condivisione applicazioni). 
+Con molte sessioni multimediali in tempo reale di Skype for business online, oltre ad altri traffici di rete generati da altri servizi di Office 365 e altre applicazioni aziendali, verificare che la larghezza di banda sufficiente per l'intero percorso di rete che connette la rete al servizio Skype for business online sia fondamentale per evitare la congestione della rete e garantire un'eccellente media in tempo reale (audio , video e condivisione applicazioni) di qualità. 
   
 #### <a name="implementing-quality-of-service-qos-across-congested-networks"></a>Implementazione della qualità del servizio (QoS) in tutte le reti congestionate
 
@@ -120,7 +120,7 @@ In uno scenario di chiamata PSTN il percorso multimediale attraversa i segmenti 
 ### <a name="network-performance-requirements-from-a-skype-for-business-client-to-microsoft-network-edge"></a>Requisiti di prestazioni di rete da un client Skype for business a Microsoft Network Edge
 <a name="bkSfBClienttoEdge"></a>
 
-Per una qualità ottimale dei contenuti multimediali di Skype for business, per una connessione dalla rete della società a Microsoft Network Edge sono necessarie le seguenti soglie o limiti di prestazioni di rete. Questo segmento della rete include la rete interna, che include tutte le connessioni WiFi e Ethernet, il traffico sito-sito della società tramite una connessione WAN, ad esempio il cambio di etichetta Multiprotocol (MPLS), nonché il partner Internet o ExpressRoute connessioni a Microsoft Network Edge.
+Per una qualità ottimale dei contenuti multimediali di Skype for business, per una connessione dalla rete della società a Microsoft Network Edge sono necessarie le seguenti soglie o limiti di prestazioni di rete. Questo segmento della rete include la rete interna, che include tutte le connessioni WiFi e Ethernet, il traffico sito-sito aziendale tramite una connessione WAN, ad esempio il cambio di etichetta Multiprotocol (MPLS), nonché le connessioni partner Internet o ExpressRoute al Microsoft Network Edge.
   
 > [!CAUTION]
 > **La connettività tra un client Skype for business nella rete aziendale e i servizi di Office 365 deve soddisfare i seguenti requisiti e soglie di prestazioni di rete.**
@@ -146,7 +146,7 @@ Per una qualità ottimale dei contenuti multimediali di Skype for business, per 
 ### <a name="network-performance-requirements-from-your-network-edge-to-microsoft-network-edge"></a>Requisiti di prestazioni di rete dal bordo della rete a Microsoft Network Edge
 <a name="bkYourNetworkEdge"> </a>
 
-Di seguito sono riportate le destinazioni o le soglie di prestazioni di rete necessarie per la connessione tra il bordo della rete e il bordo della rete Microsoft. Questo segmento della rete esclude la rete interna o WAN del cliente ed è inteso come indicazioni per testare il traffico di rete inviato tramite Internet o tramite una rete partner di ExpressRoute e può essere usato anche per negoziare una prestazione Service Level Agreement (SLA) con il provider di ExpressRoute.
+Di seguito sono riportate le destinazioni o le soglie di prestazioni di rete necessarie per la connessione tra il bordo della rete e il bordo della rete Microsoft. Questo segmento della rete esclude la rete interna o WAN del cliente ed è inteso come indicazioni per testare il traffico di rete inviato tramite Internet o tramite una rete partner di ExpressRoute e può essere usato anche quando si negozia un contratto di servizio di prestazioni con il provider di ExpressRoute.
   
 > [!CAUTION]
 > **La connettività tra il bordo della rete aziendale e Microsoft Network Edge deve soddisfare i seguenti requisiti e soglie di prestazioni di rete.**
@@ -170,7 +170,7 @@ Di seguito sono riportate le destinazioni o le soglie di prestazioni di rete nec
 ## <a name="measuring-network-performance"></a>Misurazione delle prestazioni di rete
 <a name="bkNetworkPerf"> </a>
 
-Per misurare le prestazioni effettive della rete, in particolare per la latenza e la perdita di pacchetti, da qualsiasi sito di rete aziendale a un bordo di rete, è possibile usare strumenti come ping, test su un set di servizi di inoltro multimediale Skype for business in esecuzione da Microsoft Edge and data centrare i siti. 
+Per misurare le prestazioni effettive della rete, in particolare per la latenza e la perdita di pacchetti, da qualsiasi sito di rete aziendale a un bordo di rete, è possibile usare strumenti come ping, test su un set di servizi di inoltro multimediale Skype for business in esecuzione dai siti Microsoft Edge e Data Center. 
 
 >[!NOTE]
 > La misurazione delle prestazioni di rete tramite ping (ICMP) non è efficace. Per questo motivo, l'indirizzo IP anycast seguente smetterà di rispondere alle richieste ICMP a partire da gennaio 2020. Per misurare efficacemente la performance di rete, Microsoft consiglia lo strumento di valutazione della [rete](https://www.microsoft.com/download/details.aspx?id=53885).
@@ -232,13 +232,13 @@ Di seguito sono elencate le destinazioni latenza (RTT) per la configurazione del
 
 Azure ExpressRoute per Office 365 è una connessione di rete dedicata per la connessione a Office 365. Offre ai clienti la possibilità di avere il controllo sul percorso che richiede il traffico di rete di Office 365. Non devono più preoccuparsi del routing imprevedibile che accade su Internet, in cui i dati vengono trasportati da vettori, provider e ISP sconosciuti. Il traffico di rete inviato tramite ExpressRoute viene inviato direttamente dall'altra parte della rete del partner di ExpressRoute alla rete Microsoft. Questo consente ai clienti di trattare Office 365 come se si trova nel proprio centro dati fuori sede con una connessione dedicata.
   
-Azure ExpressRoute è disponibile per tutte le offerte di licenze di Office 365. Tuttavia, è necessario il componente aggiuntivo Azure ExpressRoute Premium per Office 365 per abilitare il routing globale. I clienti di Office 365 con almeno 500 seggi che implementano ExpressRoute possono ottenere il *componente aggiuntivo ExpressRoute Premium* richiesto senza ulteriori spese.
+Azure ExpressRoute è disponibile per tutte le offerte di licenze di Office 365. Tuttavia, è necessario il componente aggiuntivo Azure ExpressRoute Premium per Office 365 per abilitare il routing globale. I clienti con almeno 500 seggi che implementano ExpressRoute possono ottenere il *componente aggiuntivo ExpressRoute Premium* richiesto senza ulteriori spese.
   
 ### <a name="is-expressroute-required-for-good-media-quality"></a>ExpressRoute è necessario per una qualità multimediale ottimale?
 
 Azure ExpressRoute non è un requisito per ottenere la qualità multimediale Skype for business online più ottimale. Si tratta, tuttavia, di una delle opzioni di distribuzione che consentono di verificare che la connettività cloud soddisfi le soglie o i limiti delle prestazioni di Skype for Business Network.
   
-Office 365 è un servizio ad alte prestazioni e sicuro che usa Internet. Continuiamo a investire in nuove funzionalità di sicurezza e in nodi Edge regionali per migliorare continuamente la sicurezza e le prestazioni. Azure ExpressRoute non è un requisito per i servizi di Office 365, tra cui Skype for business online. Azure ExpressRoute è una delle opzioni di distribuzione disponibili che contribuiranno a garantire che la connettività a Office 365 soddisfi i requisiti di prestazioni della rete Skype for business e assicuri la qualità multimediale Skype for business online più ottimale esperienza.
+Office 365 è un servizio ad alte prestazioni e sicuro che usa Internet. Continuiamo a investire in nuove funzionalità di sicurezza e in nodi Edge regionali per migliorare continuamente la sicurezza e le prestazioni. Azure ExpressRoute non è un requisito per i servizi di Office 365, tra cui Skype for business online. Azure ExpressRoute è una delle opzioni di distribuzione disponibili che contribuiranno a garantire che la connettività a Office 365 soddisfi i requisiti di prestazioni della rete Skype for business e garantisca l'esperienza di qualità multimediale Skype for business online più ottimale.
   
 Per la qualità dei contenuti multimediali Skype for business online, è importante che la connessione tra i siti aziendali e i bordi della rete Microsoft soddisfi i requisiti di prestazioni per le [prestazioni di rete da un client Skype for business a Microsoft Network Edge](media-quality-and-network-connectivity-performance.md#bkSfBClienttoEdge) e che la connessione tra i bordi della rete e i bordi della rete Microsoft soddisfi i requisiti per le prestazioni di [rete dal bordo della rete a Microsoft Network Edge](media-quality-and-network-connectivity-performance.md#bkYourNetworkEdge)  
   
@@ -298,7 +298,7 @@ L'immagine seguente mostra un esempio di questo tipo di distribuzione. Per quest
   
 ### <a name="online-only-deployment---multiple-sites-on-the-same-continent"></a>Distribuzione solo online: più siti nello stesso continente
 
-Se la società usa i servizi Skype for business online da più uffici della stessa area geografica o continentale e si è scelto di implementare Azure ExpressRoute, è consigliabile connettere il sito principale tramite ExpressRoute e quindi facoltativamente aggiungere altri ExpressRoute peering per altre posizioni che non soddisfano le destinazioni consigliate per le prestazioni di rete.
+Se la società usa i servizi Skype for business online da più uffici della stessa area geografica o continentale e si è scelto di implementare Azure ExpressRoute, è consigliabile connettere il sito principale tramite ExpressRoute e quindi facoltativamente aggiungere altri peer di ExpressRoute per altre posizioni che non soddisfano le destinazioni consigliate per le prestazioni di rete.
   
 Nell'esempio seguente contoso è una società di servizi di viaggio degli Stati Uniti con sede a New York, ma ha altri uffici negli Stati Uniti. I loro uffici sono collegati tra loro tramite una rete WAN che usa MPLS per la connessione a Office 365. Inizialmente hanno configurato una connessione ExpressRoute dal proprio router Internet a Hoboken, New Jersey, nel sito di New York MeetMe. 
   
@@ -316,7 +316,7 @@ Nell'esempio seguente contoso è un grande studio legale aziendale con uffici ne
   
 ### <a name="hybrid-deployment"></a>Distribuzione ibrida
 
-Se si ha una distribuzione locale di Lync o Skype for business e si sceglie di implementare un'integrazione ibrida di Skype for business online, è consigliabile se si decide di distribuire Azure ExpressRoute, è necessario avere almeno una connessione ExpressRoute per ogni sito Lync o Skype for Business Edge locale e almeno una connessione ExpressRoute per ogni continente con uffici. A seconda del costo e della prestazione, per ogni continente è possibile scegliere di distribuire connessioni ExpressRoute aggiuntive dagli uffici in cui non vengono soddisfatte le destinazioni di prestazioni di rete.
+Se si dispone di una distribuzione locale di Lync o Skype for business e si sceglie di implementare un'integrazione ibrida di Skype for business online, è consigliabile se si decide di distribuire Azure ExpressRoute, è necessario disporre di almeno una connessione ExpressRoute per ogni sito Lync o Skype for Business Edge e almeno una connessione ExpressRoute per ogni continente con gli uffici. A seconda del costo e della prestazione, per ogni continente è possibile scegliere di distribuire connessioni ExpressRoute aggiuntive dagli uffici in cui non vengono soddisfatte le destinazioni di prestazioni di rete.
   
 Se si dispone di una distribuzione Skype for business locale, è necessario seguire la [Guida alla pianificazione e distribuzione di Edge Server](https://technet.microsoft.com/library/mt346417.aspx). In particolare, gli Edge Server devono essere raggiungibili dall'esterno della rete. Questa operazione viene in genere eseguita assegnando un indirizzo IP pubblico instradabile all'Edge Server o tramite NAT (Network Address Translation).
   

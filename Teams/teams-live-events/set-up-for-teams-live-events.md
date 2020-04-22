@@ -18,12 +18,12 @@ description: Configurazione dell'ambiente per gli eventi live in Teams, incluse 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8e3110717cd9279d881415bf1e01d03a1cbee293
-ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.openlocfilehash: df54e90f2c895ebf7090fbec2487aae52bd53d66
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2020
-ms.locfileid: "43749803"
+ms.locfileid: "43779955"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi live in Microsoft Teams
 
@@ -97,7 +97,7 @@ Se è stato creato un criterio personalizzato per gli eventi live, assegnarlo ag
 
 Per fare in modo che gli utenti possano pianificare eventi prodotti con un'app o un dispositivo esterno è inoltre necessario eseguire queste operazioni:
 
-1. Abilitare Microsoft Stream per gli utenti dell'organizzazione. Stream è disponibile come parte degli abbonamenti a Office 365 idonei o come servizio autonomo. Stream non è incluso nei piani Business Essentials o Business Premium. Per altre informazioni, vedere la [Panoramica sulle licenze di Stream](https://docs.microsoft.com/stream/license-overview).
+1. Abilitare Microsoft Stream per gli utenti dell'organizzazione. Stream è disponibile come parte degli abbonamenti Microsoft 365 o Office 365 idonei o come servizio autonomo. Stream non è incluso nei piani Business Essentials o Business Premium. Per altre informazioni, vedere la [Panoramica sulle licenze di Stream](https://docs.microsoft.com/stream/license-overview).
 
       Leggere altre informazioni su come [assegnare licenze agli utenti in Office 365](https://support.office.com/article/Assign-licenses-to-users-in-Office-365-for-business-997596B5-4173-4627-B915-36ABAC6786DC) in modo che gli utenti possano accedere a Stream. Assicurarsi che Stream non sia bloccato per gli utenti, come illustrato in [questo articolo](https://docs.microsoft.com/stream/disable-user-organization).
 

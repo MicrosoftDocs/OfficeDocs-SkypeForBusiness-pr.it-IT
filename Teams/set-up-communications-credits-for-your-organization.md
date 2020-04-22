@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Licensing
 description: 'Learn how to set up communication credits (PSTN Consumption) billing licenses for your users and organization. '
-ms.openlocfilehash: e1672c2d3c66690393e34b90fbeb1b2be4d54042
-ms.sourcegitcommit: 5e2dc3430e63bc0a17b87a63fa36ac93d96d8134
+ms.openlocfilehash: 304c08568ee39f69f727d159a5599a3a3ac89ed4
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41889415"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779743"
 ---
 # <a name="set-up-communications-credits-for-your-organization"></a>Configurare i Crediti comunicazioni per la propria organizzazione
 
@@ -56,7 +56,7 @@ Per altre informazioni, vedere [licenze per i componenti aggiuntivi Microsoft te
   
 ## <a name="step-2-set-up-communications-credits-for-your-organization"></a>Passaggio 2: configurare i Crediti comunicazioni per la propria organizzazione
 
-1. Accedere al nuovo portale di Office 365 con l'account aziendale o dell'Istituto di istruzione.
+1. Accedere alla nuova interfaccia di amministrazione di Microsoft 365 con l'account di lavoro o dell'Istituto di istruzione.
     
 2. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft 365, vedere**servizi di acquisto**di **fatturazione** > . Scorrere verso il basso e selezionare **componenti**aggiuntivi.
 
@@ -89,7 +89,7 @@ Quando si configurano i crediti per le comunicazioni, è necessario esaminare l'
   
 ## <a name="step-3-assign-a-communications-credits-license-to-users"></a>Passaggio 3: assegnare agli utenti una licenza Crediti comunicazioni
 
-1. Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
+1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
     
 2. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft 365, accedere a utenti**attivi**degli **utenti** > e quindi selezionare un utente o utenti dall'elenco.
     
@@ -116,13 +116,13 @@ Per visualizzare una tabella con la licenza o le licenze necessarie per ogni fun
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Configurare Skype for Business online](/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
+- [Configurare Skype for Business Online](/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
     
-- [Impostare Cloud Voicemail - Guida per gli amministratori](set-up-phone-system-voicemail.md)
+- [Configurare Cloud Voicemail - Guida per gli amministratori](set-up-phone-system-voicemail.md)
     
 - [Impostare Piani di chiamata](set-up-calling-plans.md) e [Piani di chiamata per Office 365](calling-plans-for-office-365.md)
     
-- [Aggiungere fondi e gestire i crediti per la comunicazione](add-funds-and-manage-communications-credits.md)
+- [Aggiungere fondi e gestire Credito per la comunicazione](add-funds-and-manage-communications-credits.md)
     
   
  
