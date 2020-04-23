@@ -16,16 +16,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3908100a0270f9e72835e189a220ece6e54a27bd
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 11d95858c39a2d555a4b1a7433b0a7dce0388293
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836536"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780265"
 ---
 # <a name="location-of-data-in-microsoft-teams"></a>Posizione dei dati in Microsoft Teams
 
-I dati in teams si trovano nell'area geografica associata al tenant di Office 365. Attualmente, teams supporta l'Australia, il Canada, la Francia, la Germania, l'India, il Giappone, il Sud Africa, la Corea del sud, la Svizzera (che include Liechtenstein), gli Emirati Arabi Uniti, il Regno Unito, le Americhe, l'APAC e le aree EMEA. 
+I dati in teams si trovano nell'area geografica associata all'organizzazione di Office 365. Attualmente, teams supporta l'Australia, il Canada, la Francia, la Germania, l'India, il Giappone, il Sud Africa, la Corea del sud, la Svizzera (che include Liechtenstein), gli Emirati Arabi Uniti, il Regno Unito, le Americhe, l'APAC e le aree EMEA. 
 
 > [!IMPORTANT]
 > I team attualmente offrono la residenza dati in Australia, Canada, Francia, Germania, India, Giappone, Emirati Arabi Uniti, Regno Unito, Corea del sud, Sudafrica e Svizzera (che include Liechtenstein) solo per i nuovi inquilini.
@@ -47,7 +47,7 @@ Per una discussione approfondita, vedere la [sessione Ignite di breakout in Micr
 
 ### <a name="core-teams-customer-data"></a>Dati dei clienti di core Teams
 
-Se il tenant viene provisioning in Australia, Canada, Unione europea, Francia, Germania, India, Giappone, Sud Africa, Corea del sud, Svizzera (che include Liechtenstein), Emirati Arabi Uniti, Regno Unito o Stati Uniti, Microsoft Stores i dati del cliente seguenti a riposo solo all'interno di tale percorso:
+Se il tenant è stato provisioning in Australia, Canada, Unione europea, Francia, Germania, India, Giappone, Sud Africa, Corea del sud, Svizzera (che include Liechtenstein), Emirati Arabi Uniti, Regno Unito o Stati Uniti, Microsoft archivia i dati dei clienti seguenti in Rest only in tale posizione:
 
 - Chat Team, conversazioni di team e Channel, immagini, messaggi della segreteria telefonica e contatti
 - Contenuto del sito di SharePoint Online e i file archiviati in tale sito
@@ -83,7 +83,7 @@ I servizi Team descritti in questa sezione archiviano i dati in Rest nei percors
 |Giappone    |Tokyo (Saitama) e Osaka         |
 |Liechtenstein   |Ginevra e Zurigo       |
 |Sudafrica     |Johannesburg e Cape Town         |
-|Corea del Sud     |Seoul e Busan         |
+|Sud Corea     |Seoul e Busan         |
 |Svizzera    |Ginevra e Zurigo       |
 |Emirati Arabi Uniti     |Abu Dhabi e Dubai         |
 |Regno Unito     | Cardiff e Londra        |

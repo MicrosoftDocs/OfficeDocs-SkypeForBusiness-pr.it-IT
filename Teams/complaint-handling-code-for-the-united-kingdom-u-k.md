@@ -1,5 +1,5 @@
 ---
-title: Codice di gestione delle denunce per il Regno Unito -Piani per chiamate di Office 365
+title: Codice di gestione delle denunce per il Regno Unito -Piani per chiamate di Microsoft 365
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -23,16 +23,16 @@ ms.custom:
 - seo-marvel-mar2020
 hideEdit: true
 description: Presentare un reclamo per i servizi di chiamata Skype for business (chiamate PSTN nel Regno Unito), sequenze temporali per le risposte e risoluzione delle controversie per i reclami non risolti.
-ms.openlocfilehash: 6bebf983d19461485f7f381c300fc6e5b3611b6b
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 75ee19a237f669bf52ce354f325275f859180dd0
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137286"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780275"
 ---
-# <a name="calling-plans-in-office-365---complaint-handling-code-for-the-united-kingdom-uk"></a>Piani di chiamata in Office 365-codice di gestione delle denunce per il Regno Unito (UK)
+# <a name="calling-plans-in-microsoft-365---complaint-handling-code-for-the-united-kingdom-uk"></a>Piani di chiamata in Microsoft 365-codice di gestione delle denunce per il Regno Unito (UK)
 
-Questo codice si applica ai clienti di piccole imprese (organizzazioni con 10 dipendenti o meno) nel Regno Unito (UK) per quanto riguarda il servizio Office 365 Calling Plan (il "servizio") in conformità con le normative per le comunicazioni del Regno Unito. Altri servizi di Skype for Business sono disciplinati dal contratto di servizio tra il cliente e Microsoft e da eventuali altri termini applicabili all'utilizzo del servizio specifico da parte del cliente.
+Questo codice si applica ai clienti di piccole imprese (organizzazioni con 10 dipendenti o meno) nel Regno Unito (UK) per quanto riguarda il servizio Microsoft 365 Calling Plan (il "servizio") in conformità con le normative per le comunicazioni del Regno Unito. Altri servizi di Skype for Business sono disciplinati dal contratto di servizio tra il cliente e Microsoft e da eventuali altri termini applicabili all'utilizzo del servizio specifico da parte del cliente.
 
 ## <a name="how-to-make-a-complaint"></a>Come presentare un reclamo
 

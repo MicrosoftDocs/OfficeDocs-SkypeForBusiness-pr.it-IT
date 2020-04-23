@@ -17,12 +17,12 @@ description: Informazioni su come creare i primi team e i nuovi canali, a bordo 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fea5ab9eec355d77f19165253fe97ee8aeb725ca
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 544dcb4ffd424512797d3791e2eda6b22439c084
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139245"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43777841"
 ---
 <a name="manage-guest-access-in-microsoft-teams"></a>Gestire l'accesso guest in Microsoft Teams
 ======================================
@@ -30,7 +30,7 @@ ms.locfileid: "43139245"
 > [!IMPORTANT]
 > Possono essere necessarie fino a 24 ore prima che le modifiche diventino effettive. 
 
-**Guest** è un tipo di utente in Microsoft teams incluso in tutti gli abbonamenti a Office 365 Business Premium, Office 365 Enterprise, Office 365 Business Essentials e Office 365 Education. Non sono necessarie altre licenze di Office 365. Leggi altre informazioni sulla [gestione delle licenze di accesso Guest](#guest-access-licensing-limits) di seguito.
+**Guest** è un tipo di utente in Microsoft teams incluso in tutti gli abbonamenti a Microsoft 365 business standard, Office 365 Enterprise, Microsoft 365 Business Basic e Office 365 Education. Non sono necessarie altre licenze di Office 365. Leggi altre informazioni sulla [gestione delle licenze di accesso Guest](#guest-access-licensing-limits) di seguito.
 
 L'accesso Guest teams è un'impostazione a livello di tenant ed è disattivata per impostazione predefinita. Per informazioni dettagliate su come attivare l'accesso guest, vedere [attivare o disattivare l'accesso Guest ai team](set-up-guests.md)oppure usare l'elenco di [controllo di accesso Guest](guest-access-checklist.md) per passare alla configurazione.
 
@@ -64,7 +64,7 @@ Le recensioni di Access sono disponibili con l'edizione Premium P2 di Azure AD, 
 
 ## <a name="lag-time-for-guest-access-settings-to-take-effect"></a>Tempo di ritardo per l'effetto delle impostazioni di accesso Guest
 
-Per le impostazioni di accesso guest in Azure Active Directory, sono necessarie 2-24 ore affinché le modifiche abbiano effetto nell'organizzazione di Office 365. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che la caratteristica Guest non sia stata attivata o che le impostazioni non siano ancora valide. Per informazioni sui problemi di configurazione dell'accesso guest, leggere [risolvere i problemi di accesso guest in teams](troubleshoot-guest-access.md).
+Per le impostazioni di accesso guest in Azure Active Directory, sono necessarie 2-24 ore affinché le modifiche abbiano effetto su Microsoft 365 o Office 365. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che la caratteristica Guest non sia stata attivata o che le impostazioni non siano ancora valide. Per informazioni sui problemi di configurazione dell'accesso guest, leggere [risolvere i problemi di accesso guest in teams](troubleshoot-guest-access.md).
 
   
 ## <a name="external-access-federation-vs-guest-access"></a>Accesso esterno (federazione) e accesso guest

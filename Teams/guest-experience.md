@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 60891c2e5283b8e9cdaa9e8d7852768bbb52d8aa
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 2f118611d55fe9192f32402946d672901b0f66ee
+ms.sourcegitcommit: 6fbaab29076e16fe18f8faeb7e012a0815c2369d
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2020
-ms.locfileid: "43776931"
+ms.locfileid: "43785869"
 ---
 <a name="what-the-guest-experience-is-like"></a>Com'è l'esperienza guest
 =================================
@@ -34,6 +34,11 @@ Quando un ospite è invitato a partecipare a un team, riceve un messaggio di pos
 Tutti i membri del team vedono un messaggio nel thread del canale che annuncia che il proprietario del team ha aggiunto un Guest e fornisce il nome dell'ospite. Tutti gli utenti del team possono identificare facilmente chi è ospite. Come illustrato nello screenshot seguente di un team di esempio, un banner indica "questo team ha Guest" e viene visualizzata un'etichetta **(Guest)** accanto al nome di ogni Guest.
     
 ![Screenshot che Mostra gli utenti Guest notifica banner](media/guest-experience-image2.png "Lo screenshot mostra una parte del canale di marketing per Northwind Traders, con la notifica nel banner superiore che indica che il team ha GUEST e gli utenti che sono ospiti sono identificati con l'ospite di Word accanto al nome.")
+
+Vedere questi video sull'esperienza Guest in teams:
+- [Partecipare a un team come Guest](https://support.office.com/article/join-a-team-as-a-guest-928d1eef-61e2-49ec-b754-c2fe86b34824)
+- [Partecipare a una riunione di teams con gli ospiti](https://support.office.com/article/join-a-company-meeting-a120c282-063d-46b8-b973-851197ab75d8)
+
 
 ## <a name="comparison-of-team-member-and-guest-capabilities"></a>Confronto tra i membri del team e le funzionalità Guest
 

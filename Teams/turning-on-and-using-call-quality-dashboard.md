@@ -23,16 +23,16 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
 description: 'Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate. '
-ms.openlocfilehash: 7fafbebaa21a6bbd71ab0e253f226908d6787869
-ms.sourcegitcommit: 4d376449a75928282373598647f2b82127909c4f
+ms.openlocfilehash: 52bf3856ad5c737143d179525e5c2870748f3b46
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42983326"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43788955"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
-Informazioni su come configurare l'organizzazione di Office 365 in modo da usare il dashboard qualità chiamata per monitorare la qualità delle chiamate.
+Informazioni su come configurare Microsoft 365 o Office 365 per utilizzare il dashboard qualità chiamata per monitorare la qualità delle chiamate.
   
 Call Quality Dashboard (Call Quality Dashboard) offre informazioni sulla qualità delle chiamate effettuate con i servizi Microsoft teams e Skype for business online. In questo argomento vengono illustrati i passaggi per iniziare a raccogliere i dati che è possibile usare per risolvere i problemi di qualità delle chiamate.
 
@@ -149,11 +149,11 @@ Ad esempio, in un report drill-through di qualità delle chiamate, un utente pu�
 
 ## <a name="activate-microsoft-call-quality-dashboard-cqd-summary-reports"></a>Attivare i report di riepilogo di Microsoft Call Quality Dashboard (Call Quality Dashboard)
 
-Prima di poter iniziare a usare Call Quality dashboard, attivarlo per l'organizzazione di Office 365 come segue:
+Prima di poter iniziare a usare Call Quality dashboard, attivarlo per Microsoft 365 o Office 365 come segue:
 
 ![Icona che mostra il logo](media/teams-logo-30x30.png) Microsoft teams con l'interfaccia di amministrazione di **Microsoft teams**
 
-1. Accedere all'organizzazione di Office 365 tramite l'account di amministratore del servizio Microsoft teams e quindi selezionare il riquadro **amministratore** per aprire l'interfaccia di amministrazione.
+1. Accedere a Microsoft 365 o Office 365 con l'account di amministratore del servizio Microsoft teams e quindi selezionare il riquadro **amministratore** per aprire l'interfaccia di amministrazione.
 2. Nel riquadro sinistro, in **centri di amministrazione**, selezionare **Microsoft teams** per aprire l'interfaccia di amministrazione di Microsoft teams.
 3. Nell'interfaccia di amministrazione di Microsoft teams selezionare **chiamata dashboard qualità** nel riquadro sinistro.
 4. \(Nella pagina che apre https://<span>CQD.teams.Microsoft.com<span/>\)fare clic su **Accedi** e immettere l'account di amministratore globale o le informazioni dell'account di amministratore del servizio Microsoft teams.
@@ -166,7 +166,7 @@ Dopo aver effettuato l'accesso, una volta attivato, Call Quality dashboard inizi
 
 ![Icona del logo](media/sfb-logo-30x30.png) Skype for business **con il portale legacy di Skype for business**
 
-1. Accedere all'organizzazione di Office 365 con un account di amministratore e quindi selezionare il riquadro **amministratore** per aprire l'interfaccia di amministrazione.
+1. Accedere a Microsoft 365 o Office 365 usando un account di amministratore e quindi selezionare il riquadro **amministratore** per aprire l'interfaccia di amministrazione.
 2. Nel riquadro sinistro, in **centri di amministrazione**, selezionare **Microsoft teams** per aprire l'interfaccia di amministrazione di Microsoft teams.
 3. Nell'interfaccia di amministrazione di Microsoft teams selezionare **portale legacy** nel riquadro sinistro, selezionare **strumenti**e quindi selezionare **Skype for business online Call Quality dashboard**.
 
@@ -466,7 +466,7 @@ Call Quality dashboard V2 e Call Quality dashboard V3 hanno conteggi totali dive
 
 Se lo scenario di utilizzo include le chiamate di Skype for Business Server 2019, i dati di Call Quality dashboard V3 includono chiamate Skype bot (operatore automatico, CVI, interfaccia desktop virtuale), eventi dinamici e chiamate PSTN. Call Quality dashboard V2 non usa questi dati. (Call Quality dashboard V3 richiede Skype for Business Server 2019 con il connettore di dati cloud configurato).
 
-Ad esempio, se vengono visualizzati i flussi audio di 200.000 con gli errori di 5000 in un report di riepilogo di Call Quality dashboard V2, non sarebbe insolito vedere i flussi audio di 300.000 con gli errori di 5500 (la differenza può essere dovuta alle chiamate di Skype for Business Server di 2019, alle chiamate CVI, alle chiamate PSTN e così via) in un report di riepilogo di Call Quality dashboard V3.
+Ad esempio, se vengono visualizzati i flussi audio di 200.000 con 5000 errori in un report di riepilogo di Call Quality dashboard V2, non sarebbe insolito vedere i flussi audio di 300.000 con gli errori di 5500 (la differenza può essere dovuta alle chiamate di Skype for Business Server 2019, alle chiamate CVI, alle chiamate PSTN e così via) in un report di riepilogo di Call Quality dashboard V3.
 
 Per evitare ambiguità tra le differenze impreviste, esaminare più di una scomposizione dei dati complessivi. Filtrare i dati in base a uno o più dei parametri seguenti:
 
@@ -496,7 +496,7 @@ Quando si confrontano i dati per questi due servizi:
 ### <a name="why-cant-i-see-euii-in-cqd"></a>Perché non è possibile visualizzare EUII in Call Quality dashboard?
 
 Questi ruoli di amministratore possono accedere a Call Quality dashboard, ma non possono visualizzare EUII (informazioni identificabili per gli utenti finali):
-- Lettore di report di Office 365
+- Lettore di report di Microsoft 365
 - Specialista supporto comunicazioni Teams
 
 Per altre informazioni sui ruoli che possono accedere a Call Quality dashboard, incluso EUII, vedere [assegnare ruoli per l'accesso a Call Quality dashboard](quality-of-experience-review-guide.md#assign-roles-for-accessing-cqd).

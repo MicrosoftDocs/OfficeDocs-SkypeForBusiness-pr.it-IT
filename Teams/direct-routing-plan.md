@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente al sistema telefonico Microsoft.
-ms.openlocfilehash: 0140e4d2cfae95531602daec5a859a85888e9d15
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 7d5a69ff3b0533d17d6582489fad6e156d8df1c7
+ms.sourcegitcommit: 6fbaab29076e16fe18f8faeb7e012a0815c2369d
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780695"
+ms.locfileid: "43785939"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -299,8 +299,8 @@ L'intervallo di porte dei processori multimediali è illustrato nella tabella se
 
 |**Traffico**|**Da**|**A**|**Porta di origine**|**Porta di destinazione**|
 |:--- |:--- |:--- |:--- |:--- |
-|UDP/SRTP|Media processor|SBC|49152-53247|Definita nell'SBC|
-|UDP/SRTP|SBC|Media processor|Definita nell'SBC|49152-53247|
+|UDP/SRTP|Media processor|SBC|3478-3481 e 49152-53247|Definita nell'SBC|
+|UDP/SRTP|SBC|Media processor|Definita nell'SBC|3478-3481 e 49152-53247|
 
   > [!NOTE]
   > Microsoft consiglia almeno due porte per chiamata simultanea su SBC.

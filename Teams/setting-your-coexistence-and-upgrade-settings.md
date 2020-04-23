@@ -17,21 +17,19 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e0eee70dd27647e59a742f4155ba292b54684eaa
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: a8cf8b0400ae924924d73394be0ca4deabcdeb9e
+ms.sourcegitcommit: 0fa50d1cf354d79fbaf16b6aaec60e8d3ab852e8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837976"
+ms.lasthandoff: 04/21/2020
+ms.locfileid: "43579612"
 ---
 # <a name="setting-your-coexistence-and-upgrade-settings"></a>Impostazione delle impostazioni di coesistenza e aggiornamento
 
-> [!IMPORTANT]
-> [!INCLUDE [new-teams-sfb-admin-center-notice](includes/new-teams-sfb-admin-center-notice.md)]
 
 Quando si aggiornano gli utenti di Skype for business per usare teams, sono disponibili diverse opzioni che consentono di semplificare il processo per gli utenti. Si ha la possibilità di apportare le impostazioni di coesistenza e aggiornamento per tutti gli utenti dell'organizzazione contemporaneamente oppure di apportare modifiche alle impostazioni per un singolo o un set di utenti dell'organizzazione. Tieni presente che le versioni precedenti dei client Skype for business potrebbero non rispettare queste impostazioni. Per altre informazioni sulle versioni client Skype for business, vedere la [pagina download e aggiornamenti di Skype for business](https://docs.microsoft.com/skypeforbusiness/software-updates). 
 
-È possibile comprendere meglio i tipi di modalità disponibili leggendo [Microsoft teams e la coesistenza di Skype for business e l'interoperabilità](teams-and-skypeforbusiness-coexistence-and-interoperability.md) o la [coesistenza con Skype for business](coexistence-chat-calls-presence.md).  
+Puoi comprendere meglio le modalità disponibili leggendo [Microsoft teams e la coesistenza di Skype for business e l'interoperabilità](teams-and-skypeforbusiness-coexistence-and-interoperability.md) o la [coesistenza con Skype for business](coexistence-chat-calls-presence.md).  
 
 > [!IMPORTANT]
 > [!INCLUDE [upgrade-disclaimer](includes/upgrade-disclaimer.md)]
@@ -39,17 +37,18 @@ Quando si aggiornano gli utenti di Skype for business per usare teams, sono disp
 
 ## <a name="set-upgrade-options-for-all-users-in-your-organization"></a>Impostare le opzioni di aggiornamento per tutti gli utenti dell'organizzazione
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nell'interfaccia di [amministrazione di Microsoft teams](https://admin.teams.microsoft.com/), nella barra di spostamento sinistra, passa a aggiornamento a **livello** > di organizzazione di**Teams**. 
 
-2. Nella parte superiore della pagina di **aggiornamento dei team** apportare le modifiche seguenti per il lavoro.
+2. Nella parte superiore della pagina **upgrade teams** modificare le opzioni seguenti come desiderato.
     - Impostare la modalità di **coesistenza** .
         - **Islands** : usare questa impostazione se si vuole che gli utenti possano usare contemporaneamente Skype for business e teams.
         - **Solo Skype for business** -usare questa impostazione se si vuole che gli utenti usino solo Skype for business.
         - **Skype for business con teams Collaboration** -usare questa impostazione se si vuole che gli utenti usino Skype for business, oltre a usare team per la collaborazione di gruppo (canali).
         - **Skype for business con teams Collaboration and Meetings** -usare questa impostazione se si vuole che gli utenti usino Skype for business, oltre a usare team per la collaborazione di gruppo (canali) e le riunioni di team.
-        - **Solo teams** (in anteprima per alcune organizzazioni)-usare questa impostazione se si vuole che gli utenti usino solo team. Tieni presente che anche con questa impostazione, gli utenti possono ancora partecipare alle riunioni ospitate in Skype for business.
+        - **Solo teams** : usare questa impostazione se si vuole che gli utenti usino solo team. Tieni presente che anche con questa impostazione, gli utenti possono ancora partecipare alle riunioni ospitate in Skype for business.
+        
     - Impostare **informa gli utenti di Skype for business che i team sono disponibili per l'aggiornamento**. Se si attiva questa opzione, gli utenti di Skype for business verranno avvisati che presto verranno aggiornati all'app teams.
     - Imposta l' **app preferita per gli utenti che partecipano a riunioni Skype for business**. Questa impostazione determina quale app viene usata per partecipare a riunioni Skype for business e viene rispettata indipendentemente dal valore della modalità di coesistenza.
       - **App riunioni Skype**
@@ -59,7 +58,7 @@ Quando si aggiornano gli utenti di Skype for business per usare teams, sono disp
 
 ## <a name="set-upgrade-options-for-a-single-user-in-your-organization"></a>Impostare le opzioni di aggiornamento per un singolo utente dell'organizzazione
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra passa a **utenti**e quindi seleziona l'utente nell'elenco. 
 2. Nella scheda **account** per l'utente, in **aggiornamento Team**, fare clic su **modifica**.
@@ -74,6 +73,8 @@ Quando si aggiornano gli utenti di Skype for business per usare teams, sono disp
 5. Dopo avere apportato le modifiche, fare clic su **Salva** .
 
 ### <a name="related-topics"></a>Argomenti correlati
+[Eseguire l'aggiornamento da Skype for business a teams — per gli amministratori IT](upgrade-to-teams-on-prem-overview.md)
+
 [Pianificare il viaggio](upgrade-plan-journey.md)
 
 [Comprendere il viaggio di coesistenza e di aggiornamento per Skype for business e teams](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
