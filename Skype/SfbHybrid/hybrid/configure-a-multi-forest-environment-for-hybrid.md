@@ -1,5 +1,5 @@
 ---
-title: Distribuzione di una topologia a foresta di risorse
+title: Distribuire una topologia di foresta di risorse
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -18,14 +18,14 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: Nelle sezioni seguenti vengono fornite indicazioni su come configurare un ambiente con più foreste in un modello di foresta di risorse e utenti per fornire le funzionalità di Skype for business in uno scenario ibrido.
-ms.openlocfilehash: 33945b245009a221d709e13d587f435aa4c054d8
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 3a0a5f08c9be4c6ba4c954a4100794d83d46ea53
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41983041"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780125"
 ---
-# <a name="deploy-a-resource-forest-topology"></a>Distribuzione di una topologia a foresta di risorse
+# <a name="deploy-a-resource-forest-topology"></a>Distribuire una topologia di foresta di risorse
  
 Nelle sezioni seguenti vengono fornite indicazioni su come configurare un ambiente con più foreste in un modello di foresta di risorse e utenti per fornire le funzionalità di Skype for business in uno scenario ibrido. 
   
@@ -52,7 +52,7 @@ In una topologia a foresta di risorse, le foreste di risorse che ospitano Skype 
   
 ## <a name="synchronize-accounts-into-the-forest-hosting-skype-for-business"></a>Sincronizzare gli account nella foresta che ospita Skype for business
 
-Quando Skype for Business Server viene distribuito in una foresta (una foresta di risorse), ma fornisce funzionalità agli utenti in una o più foreste (foreste di account), gli utenti nelle altre foreste devono essere rappresentati come oggetti utente disabilitati nella foresta in cui Skype for Business Server distribuito. È necessario distribuire e configurare un prodotto di gestione delle identità, ad esempio Microsoft Identity Manager, per eseguire il provisioning e la sincronizzazione degli utenti dalle foreste degli account all'interno della foresta in cui è distribuito Skype for Business Server. Gli utenti devono essere sincronizzati nella foresta che ospita Skype for Business Server come oggetti utente disabilitati. Gli utenti non possono essere sincronizzati come oggetti contatto di Active Directory, perché Azure Active Directory Connect non sincronizza correttamente i contatti in Azure AD per l'utilizzo con Skype.
+Quando Skype for Business Server viene distribuito in una foresta (una foresta di risorse), ma fornisce funzionalità agli utenti in una o più foreste (foreste di account), gli utenti nelle altre foreste devono essere rappresentati come oggetti utente disabilitati nella foresta in cui è distribuito Skype for Business Server. È necessario distribuire e configurare un prodotto di gestione delle identità, ad esempio Microsoft Identity Manager, per eseguire il provisioning e la sincronizzazione degli utenti dalle foreste degli account all'interno della foresta in cui è distribuito Skype for Business Server. Gli utenti devono essere sincronizzati nella foresta che ospita Skype for Business Server come oggetti utente disabilitati. Gli utenti non possono essere sincronizzati come oggetti contatto di Active Directory, perché Azure Active Directory Connect non sincronizza correttamente i contatti in Azure AD per l'utilizzo con Skype.
   
 Indipendentemente dalla configurazione di più foreste, la foresta che ospita Skype for Business Server può anche fornire la funzionalità per tutti gli utenti abilitati presenti nella stessa foresta.
   
@@ -73,9 +73,9 @@ Non sincronizzare la UPN tra le foreste. Durante i test, è stato rilevato che �
     
 - Se l'UPN univoco di ogni foresta utente è stato sincronizzato con l'oggetto disabilitato associato nella foresta di risorse, l'autenticazione AD FS avrà esito negativo. La regola di corrispondenza troverebbe l'UPN nell'oggetto nella foresta di risorse, che era disabilitato e non poteva essere utilizzato per l'autenticazione. 
     
-## <a name="create-an-office-365-tenant"></a>Creare un tenant di Office 365
+## <a name="create-an-office-365-organization"></a>Creare un'organizzazione di Office 365
 
-Sarà quindi necessario eseguire il provisioning di un tenant di Office 365 da utilizzare con la distribuzione. Per ulteriori informazioni, vedere [abbonamenti, licenze, account e tenant per offerte cloud di Microsoft](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings). 
+Sarà quindi necessario eseguire il provisioning di un'organizzazione di Office 365 da utilizzare con la distribuzione. Per ulteriori informazioni, vedere [abbonamenti, licenze, account e tenant per offerte cloud di Microsoft](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings). 
   
 ## <a name="configure-active-directory-federation-services"></a>Configurazione di Active Directory Federation Services
 

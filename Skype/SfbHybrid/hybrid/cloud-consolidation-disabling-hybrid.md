@@ -1,5 +1,5 @@
 ---
-title: Disabilitare l'ibrido per completare la migrazione al cloud
+title: Disabilitare la soluzione ibrida per completare la migrazione al cloud
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -21,20 +21,20 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: In questa appendice sono riportati i passaggi dettagliati per la disabilitazione dell'ibrido come parte del consolidamento cloud per Teams e Skype for business.
-ms.openlocfilehash: 8fc9745c75f9b449751164065f974ccd8088218f
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: 053d632b5a07b7ce7cca8ef7a1ddf45a673bcf59
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41726976"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780145"
 ---
-# <a name="disable-hybrid-to-complete-migration-to-the-cloud"></a>Disabilitare l'ibrido per completare la migrazione al cloud
+# <a name="disable-hybrid-to-complete-migration-to-the-cloud"></a>Disabilitare la soluzione ibrida per completare la migrazione al cloud
 
-Dopo aver spostato tutti gli utenti da locale al cloud, è possibile rimuovere le autorizzazioni per la distribuzione di Skype for business locale. Oltre a rimuovere qualsiasi hardware, un passaggio critico consiste nel separare logicamente la distribuzione locale da Office 365 disabilitando l'ambiente ibrido. La disattivazione dell'ibrido è costituita da tre passaggi:
+Dopo aver spostato tutti gli utenti dall'infrastruttura locale al cloud, è possibile ritirare la distribuzione locale di Skype for Business. Oltre a rimuovere eventuale hardware, un passaggio critico è quello di separare logicamente la distribuzione locale da Office 365 disabilitando l'ambiente ibrido. La disattivazione dell'ibrido è costituita da tre passaggi:
 
-1. Aggiornare i record DNS in modo che puntino a Office 365.
+1. Aggiornare i record NS in modo che puntino a Office 365.
 
-2. Disabilitare il dominio diviso nel tenant di Office 365.
+2. Disabilitare il dominio diviso nell'organizzazione di Office 365.
 
 3. Disabilitare l'abilità in locale per comunicare con Office 365.
 
@@ -56,7 +56,7 @@ Il DNS esterno dell'organizzazione per l'organizzazione locale deve essere aggio
     |CNAME| soddisfare|   3600|   WEBDIR. online. Lync. <span>com|
     |CNAME| Dialin  |3600|  WEBDIR. online. Lync. <span>com|
 
-2.  *Disabilitare lo spazio degli indirizzi SIP condiviso in Office 365 tenant.*
+2.  *Disabilitare lo spazio degli indirizzi SIP condiviso nell'organizzazione di Office 365.*
 Il comando seguente deve essere effettuato da una finestra di PowerShell di Skype for business online.
 
     ```PowerShell

@@ -18,14 +18,14 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: 'Riepilogo: informazioni su come eseguire la migrazione delle impostazioni utente e spostare gli utenti in team.'
-ms.openlocfilehash: af5281faffa9bd9439e045dc40f67283bb740cb5
-ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+ms.openlocfilehash: 07d0657017d24acbbd3961c3528056debb927a5a
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41888775"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779682"
 ---
-# <a name="move-users-from-on-premises-to-teams"></a>Spostare gli utenti da locale a teams
+# <a name="move-users-from-on-premises-to-teams"></a>Spostare utenti da ambiente locale a Teams
 
 Quando un utente viene spostato da solo in locale a teams, la Home page di Skype for business dell'utente viene spostata da locale a online e all'utente viene assegnato TeamsUpgradePolicy con Mode = TeamsOnly.  Dopo lo spostamento di un utente dalla modalità locale a TeamsOnly:
 
@@ -55,13 +55,13 @@ Esistono due metodi per spostare un utente da locale a teams:
 
 ## <a name="move-a-user-directly-from-skype-for-business-on-premises-to-teams-only"></a>Spostare un utente direttamente da Skype for business in locale solo ai team
 
-Gli strumenti di amministrazione locali in Skype for Business Server 2015 con CU8, così come in Skype for Business Server 2019, consentono di spostare gli utenti da locali a modalità solo team in un solo passaggio utilizzando il cmdlet Move-CsUser in PowerShell o Skype for business se Pannello di controllo di rver, come descritto di seguito.
+Gli strumenti di amministrazione locali in Skype for Business Server 2015 con CU8, così come in Skype for Business Server 2019, consentono di spostare gli utenti da locali alla modalità solo gruppo in un solo passaggio utilizzando il cmdlet Move-CsUser in PowerShell o il pannello di controllo di Skype for Business Server, come descritto di seguito.
 
 ### <a name="move-to-teams-using-move-csuser"></a>Passare ai team tramite Move-CsUser
 
-Move-CsUser è disponibile da una finestra di PowerShell della shell di gestione di Skype for business locale. I passaggi riportati di seguito e le autorizzazioni necessarie sono gli stessi che lo spostamento di un utente in Skype for business online, tranne per il fatto che è necessario specificare anche l'opzione MoveToTeams ed è necessario assicurarsi che all'utente sia stata assegnata anche una licenza per i team (oltre a Skype for business Online).
+Move-CsUser è disponibile da una finestra di PowerShell della shell di gestione di Skype for business locale. I passaggi riportati di seguito e le autorizzazioni necessarie sono uguali allo spostamento di un utente in Skype for business online, tranne per il fatto che è necessario specificare anche l'opzione MoveToTeams ed è necessario assicurarsi che all'utente sia stata assegnata anche una licenza per i team (oltre a Skype for business online).
 
-È necessario disporre di privilegi sufficienti sia nell'ambiente locale che nel tenant di Office 365, come descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials). È possibile utilizzare un singolo account che disponga di privilegi in entrambi gli ambienti oppure è possibile avviare una finestra della shell di gestione di Skype for Business Server locale con le credenziali locali e utilizzare il `-Credential` parametro per specificare le credenziali di un account di Office 365 con il ruolo amministrativo di Office 365 necessario.
+È necessario disporre di privilegi sufficienti sia nell'ambiente locale che nell'organizzazione di Office 365, come descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials). È possibile utilizzare un singolo account che disponga di privilegi in entrambi gli ambienti oppure è possibile avviare una finestra della shell di gestione di Skype for Business Server locale con le credenziali locali e utilizzare il `-Credential` parametro per specificare le credenziali di un account di Office 365 con il ruolo amministrativo di Office 365 necessario.
 
 Per spostare un utente in modalità solo teams tramite Move-CsUser:
 
@@ -121,6 +121,6 @@ Per impostazione predefinita, il valore di DownloadTeams è true. Tuttavia, vien
 [Grant-CsTeamsUpgradePolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsupgradepolicy
 )
 
-[Linee guida sulla migrazione e sull'interoperabilità per le organizzazioni che utilizzano Team insieme a Skype for business](/microsoftteams/migration-interop-guidance-for-teams-with-skype)
+[Linee guida per la migrazione e l'interoperabilità di organizzazioni che usano Teams insieme a Skype for Business](/microsoftteams/migration-interop-guidance-for-teams-with-skype)
 
-[Coesistenza con Skype for business](/microsoftteams/coexistence-chat-calls-presence)
+[Coesistenza con Skype for Business](/microsoftteams/coexistence-chat-calls-presence)

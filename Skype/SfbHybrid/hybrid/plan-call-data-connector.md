@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Panoramica sull'utilizzo degli strumenti di telemetria di Skype for business online per monitorare un'implementazione locale in uno scenario ibrido.
-ms.openlocfilehash: 910bfe2a1af1f39976d0098aeb1fd23a7ef31490
-ms.sourcegitcommit: b693d5923d6240cbb865241a5750963423a4b33e
+ms.openlocfilehash: ad4d7ddb270bc4e4227eea7d33c37411ea96fa8c
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41765234"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43779662"
 ---
 # <a name="plan-call-data-connector"></a>Pianificare il connettore dei dati delle chiamate
 
@@ -62,10 +62,10 @@ I requisiti seguenti presumono che sia già stato distribuito Skype for Business
 
    Per ulteriori informazioni, vedere [pianificare la connettività ibrida tra Skype for Business Server e office 365](plan-hybrid-connectivity.md) e [configurare la connettività ibrida tra Skype for Business server e Office 365](configure-hybrid-connectivity.md).
 
-- Eseguire l'autenticazione nel tenant di Office 365 e verificare di aver abilitato i ruoli seguenti:
+- Eseguire l'autenticazione nell'organizzazione di Office 365 e verificare di aver abilitato i ruoli seguenti:
 
   - Amministratore di Skype for Business Server
-  - Amministratore globale di Office 365
+  - Amministratore globale
 
 - Se non è stato ancora fatto, attiva il dashboard qualità chiamata, come descritto in [attivazione e utilizzo di Call Quality dashboard per Microsoft teams e Skype for business online](/microsoftteams/turning-on-and-using-call-quality-dashboard).
 

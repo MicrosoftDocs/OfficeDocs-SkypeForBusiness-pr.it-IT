@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: "Riepilogo: informazioni su come configurare l'interoperabilità tra la distribuzione locale e Skype for business online."
-ms.openlocfilehash: bd8b3ee3e70cb3662a4eae68fdb5ae6149b55a84
-ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.openlocfilehash: ccf140b62cdbad11605c99fe1cb0cc66aa1ee4dd
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2020
-ms.locfileid: "43750033"
+ms.locfileid: "43780105"
 ---
 # <a name="configure-skype-for-business-hybrid"></a>Configurare Skype for Business ibrido
 
@@ -31,13 +31,13 @@ Per configurare Skype for Business ibrido, è necessario:
 
 - [Configurare il servizio perimetrale locale per la Federazione con Office 365 o un'altra organizzazione](#configure-your-on-premises-edge-service-to-federate-with-office-365-or-another-organization).
 - [Configurare l'ambiente locale in modo che consideri attendibile office 365 e che venga abilitato lo spazio degli indirizzi SIP condiviso con office 365](#configure-your-on-premises-environment-to-enable-shared-sip-address-space-with-office-365).
-- [Abilitare lo spazio degli indirizzi SIP condiviso nel tenant di Office 365](#enable-shared-sip-address-space-in-your-office-365-tenant).
+- [Abilitare lo spazio degli indirizzi SIP condiviso nell'organizzazione di Office 365](#enable-shared-sip-address-space-in-your-office-365-organization).
 
 Si noti che, se si dispone di Exchange locale, è possibile configurare OAuth tra gli ambienti Exchange locale e Skype for business online. Per ulteriori informazioni, vedere [gestire l'autenticazione da server a server in Skype for Business Server](https://docs.microsoft.com/SkypeForBusiness/manage/authentication/server-to-server-and-partner-applications) e [pianificare l'integrazione di Skype for business ed Exchange](https://docs.microsoft.com/SkypeForBusiness/plan-your-deployment/integrate-with-exchange/integrate-with-exchange#feature_support). 
   
 ## <a name="configure-your-on-premises-edge-service-to-federate-with-office-365-or-another-organization"></a>Configurare il servizio perimetrale locale per la Federazione con Office 365 o un'altra organizzazione
 
-La federazione permette agli utenti della distribuzione locale di comunicare con gli utenti di Office 365 dell'organizzazione. Per configurare la Federazione, eseguire il seguente cmdlet in Skype for Business Server Management Shell:
+La federazione consente agli utenti della distribuzione locale di comunicare con gli utenti di Microsoft 365 o Office 365 nell'organizzazione. Per configurare la Federazione, eseguire il seguente cmdlet in Skype for Business Server Management Shell:
   
 ```PowerShell
 Set-CSAccessEdgeConfiguration -AllowOutsideUsers $True -AllowFederatedUsers $True -EnablePartnerDiscovery $True -UseDnsSrvRouting
@@ -65,11 +65,11 @@ Creare quindi un nuovo provider di hosting, utilizzare il cmdlet New-CsHostingPr
 New-CsHostingProvider -Identity Office365 -ProxyFqdn "sipfed.online.lync.com" -Enabled $true -EnabledSharedAddressSpace $true -HostsOCSUsers $true -VerificationLevel UseSourceVerification -IsLocal $false -AutodiscoverUrl https://webdir.online.lync.com/Autodiscover/AutodiscoverService.svc/root 
 ```
 
- ## <a name="enable-shared-sip-address-space-in-your-office-365-tenant"></a>Abilitare lo spazio degli indirizzi SIP condiviso nel tenant di Office 365
+ ## <a name="enable-shared-sip-address-space-in-your-office-365-organization"></a>Abilitare lo spazio degli indirizzi SIP condiviso nell'organizzazione di Office 365
   
-Oltre alla modifica apportata nella distribuzione locale, è necessario apportare la modifica corrispondente nel tenant di Office 365 per abilitare lo spazio di indirizzi SIP condiviso con la distribuzione locale.  
+Oltre alla modifica apportata nella distribuzione locale, è necessario apportare le modifiche corrispondenti nell'organizzazione di Office 365 per abilitare lo spazio degli indirizzi SIP condiviso con la distribuzione locale.  
 
-Per abilitare lo spazio degli indirizzi SIP condiviso nel tenant di Office 365, stabilire una sessione remota di PowerShell con Skype for business online e quindi eseguire il cmdlet seguente:
+Per abilitare lo spazio degli indirizzi SIP condiviso nell'organizzazione di Office 365, stabilire una sessione remota di PowerShell con Skype for business online e quindi eseguire il cmdlet seguente:
   
 ```PowerShell
 Set-CsTenantFederationConfiguration -SharedSipAddressSpace $true
