@@ -17,12 +17,12 @@ description: Informazioni su come comunicare con utenti di altre organizzazioni 
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: f7a18390841c6a62488c060b4279110a61dffb23
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: fb22aeaef31d04a9d359bc43742c85b72bf12c97
+ms.sourcegitcommit: 6fbaab29076e16fe18f8faeb7e012a0815c2369d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824924"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43785929"
 ---
 <a name="communicate-with-users-from-other-organizations-in-microsoft-teams"></a>Comunicare con utenti di altre organizzazioni in Microsoft Teams
 ======================================================
@@ -73,6 +73,7 @@ Se si vuole attivare l'accesso guest nell'organizzazione, iniziare con l'[Elenco
 | È possibile bloccare l’utente singolo | No | Sì |
 | Le @menzioni sono supportate | Sì<sup>4</sup> | Sì |
 | Effettuare chiamate private | Sì | Sì |
+| Visualizzare il numero di telefono dei partecipanti alla riunione con accesso esterno | No | Sì |
 | Consentire video IP | Sì | Sì |
 | Modalità di condivisione dello schermo | Sì<sup>4</sup> | Sì |
 | Consentire Riunione immediata | No | Sì |

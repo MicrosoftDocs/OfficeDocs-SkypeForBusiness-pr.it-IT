@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Informazioni sui fattori da prendere in considerazione prima di configurare eventi live in Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c4a7f60a199a342d69311467bffbc4607854a719
-ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.openlocfilehash: aabd94e8a5c4904f0343e2c8ccb647d632f3fa21
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2020
-ms.locfileid: "43752363"
+ms.locfileid: "43779965"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -86,7 +86,7 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 |Numero massimo di partecipanti |10.000 partecipanti |10.000 partecipanti<sup>1</sup> |10.000 partecipanti<sup>1</sup> |
 |Durata massima dell'evento live |4 ore |4 ore |4 ore |
 |Numero massimo di relatori e produttori in un evento live |10 <sup>2</sup> |10 <sup>2</sup> |10 <sup>2</sup> |
-|Numero massimo di eventi live concomitanti per tenant di Office 365 |15  | 15  | 15  |
+|Numero massimo di eventi live concomitanti per l'organizzazione di Office 365 |15  | 15  | 15  |
 |Creazione eventi live |   Portale di Skype Meeting Broadcast |Teams, Yammer tramite Teams | Teams, Yammer tramite Teams, Stream |
 |Coinvolgimento partecipanti - Yammer |&#x2714; |&#x2714; (esperienza integrata) |&#x2714; (esperienza integrata) |
 |Coinvolgimento partecipanti - Domande e risposte con moderatore |&#x2714;  |&#x2714; |&#x2714; |
@@ -117,7 +117,7 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 È possibile usare la funzione degli eventi live di Teams in più aree geografiche del mondo. Le informazioni seguenti mostrano la disponibilità per i partecipanti e i membri del team dell'evento.
 
 > [!IMPORTANT]
-> L'area geografica dell'evento viene selezionata automaticamente in base all'organizzatore e all'organizzazione di Office 365.
+> L'area geografica dell'evento viene selezionata automaticamente in base all'organizzatore e a Microsoft 365 o Office 365.
 
 **Disponibile nelle aree geografiche seguenti**
 
