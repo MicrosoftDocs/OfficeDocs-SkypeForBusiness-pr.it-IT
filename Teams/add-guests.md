@@ -18,12 +18,12 @@ description: Gli amministratori possono imparare ad aggiungere nuovi utenti gues
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 60538383021028d043cb47197dd41ee89f8a4d37
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 026fa191dffa160980bfb00e7031490f01ddc6cc
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139365"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43778221"
 ---
 <a name="add-a-guest-to-a-team"></a>Aggiungere un utente guest a un team
 =====================
@@ -42,7 +42,7 @@ Gli amministratori possono aggiungere un nuovo utente guest all'organizzazione i
 
 Con Collaborazione B2B di Azure AD, le organizzazioni possono applicare criteri di accesso condizionale e autenticazione a più fattori (MFA) per gli utenti B2B. Questi criteri possono essere applicati a livello di tenant, di app o di singolo utente, così come vengono abilitati per dipendenti a tempo pieno e membri dell'organizzazione. Tali criteri vengono applicati all'organizzazione delle risorse. Per altre informazioni, vedere [Accesso condizionale per gli utenti di Collaborazione B2B](https://go.microsoft.com/fwlink/?linkid=857454). Non è possibile bloccare singoli utenti guest.
 
-Gli utenti guest che sono stati già aggiunti tramite B2B di Azure AD, Gruppi di Office 365 o SharePoint Online sono pronti. L'amministratore di Office 365 o un proprietario dei team può aggiungere questi utenti guest ai rispettivi team. Se un team è già presente in un gruppo di Office 365 e viene aggiunto un utente guest al gruppo, il guest otterrà l'accesso al team. L'aggiunta di un guest tramite il gruppo di Office 365 non genera un messaggio di posta elettronica di invito per il guest, pertanto una persona del team deve informarlo.
+Gli utenti guest che sono stati già aggiunti tramite B2B di Azure AD, Gruppi di Microsoft 365 o SharePoint Online sono pronti. L'amministratore di Office 365 o un proprietario dei team può aggiungere questi utenti guest ai rispettivi team. Se un team è già presente in un gruppo di Office 365 e viene aggiunto un utente guest al gruppo, il guest otterrà l'accesso al team. L'aggiunta di un guest tramite il gruppo di Office 365 non genera un messaggio di posta elettronica di invito per il guest, pertanto una persona del team deve informarlo.
 
 > [!NOTE]
 > Gli utenti guest sono soggetti ai limiti del servizio di [Office 365](https://go.microsoft.com/fwlink/p/?linkid=282347) e [Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=853019).

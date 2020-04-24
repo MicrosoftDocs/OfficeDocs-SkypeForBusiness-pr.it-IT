@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.dashboard.helparticle.quickstartteamsadmin
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0c6cd94f5d7205b438396dcb09ebb047a49b8f2e
-ms.sourcegitcommit: f3390e27bb63b66d1c4fb4f8afbda6b814fbbb5b
+ms.openlocfilehash: 082cde04ad29ba0d1af68bb02f851d87197d7407
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170594"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776571"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -46,7 +46,7 @@ Prima di implementare Teams nell'organizzazione, è necessario verificare che l'
 
 |Chiedersi|Azione |
 |------------|-------|
-|L'organizzazione è pronta per la distribuzione di Teams?|Per rispondere a questa domanda, vedere: <ul><li>[Preparare la rete dell'organizzazione per Teams](prepare-network.md)</li><li>[URL e intervalli di indirizzi IP per Office 365](office-365-urls-ip-address-ranges.md)</li><li>[Pianificare i gruppi di Office 365 durante la creazione di team](plan-office-365-groups.md)</li></ul>|
+|L'organizzazione è pronta per la distribuzione di Teams?|Per rispondere a questa domanda, vedere: <ul><li>[Preparare la rete dell'organizzazione per Teams](prepare-network.md)</li><li>[URL e intervalli di indirizzi IP per Office 365](office-365-urls-ip-address-ranges.md)</li><li>[Pianificare i gruppi di Microsoft 365 durante la creazione di team](plan-office-365-groups.md)</li></ul>|
 |||
 
 ## <a name="core-deployment-decisions"></a>Decisioni chiave per la distribuzione
@@ -193,7 +193,7 @@ L'organizzazione potrebbe richiedere l'implementazione di controlli sulle modali
 | Chiedersi | Azione |
 |--------------|--------|
 |Sarà necessario implementare controlli su chi può creare team?| Vedere [Pianificare la governance in Teams](plan-teams-governance.md).|
-|Sarà necessario implementare controlli sulla denominazione dei team?|Vedere [Applicare criteri di denominazione per i gruppi di Office 365 in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-naming-policy).|
+|Sarà necessario implementare controlli sulla denominazione dei team?|Vedere [Applicare criteri di denominazione per i gruppi di Microsoft 365 in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-naming-policy).|
 |||
 
 ### <a name="teams-application-policy-side-rail-control"></a>Criteri per le applicazioni di Teams (controllo della barra laterale)

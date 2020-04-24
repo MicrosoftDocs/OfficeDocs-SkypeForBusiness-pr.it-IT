@@ -9,7 +9,7 @@ ms.reviewer: baluc
 ms.service: msteams
 search.appverid: MET150
 localization_priority: Priority
-description: Gli utenti di Office 365 che non hanno una licenza di Microsoft Teams possono avviare un periodo di valutazione di 1 anno di Teams.
+description: Gli utenti di Microsoft 365 o Office 365 che non hanno una licenza di Microsoft Teams possono avviare un periodo di valutazione di 1 anno di Teams.
 f1.keywords:
 - NOCSH
 ms.collection:
@@ -17,17 +17,17 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a46720a59b5d3530f64bf4f459df13ad7c5cf5de
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 6a0ad5cf058b8dcc5567cfc706ed3edb2cc09adf
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137156"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43778352"
 ---
 <a name="manage-the-microsoft-teams-commercial-cloud-trial-offer"></a>Gestire l'offerta Microsoft Teams Commercial Cloud Trial
 =======================================================
 
-Con Microsoft Teams Commercial Cloud Trial, agli utenti di Office 365 esistenti nell'organizzazione, che non hanno una licenza di Microsoft Teams, possono avviare un periodo di valutazione del prodotto di 1 anno. Gli amministratori possono attivare o disattivare questa funzionalità per gli utenti nell'organizzazione.
+Con Microsoft Teams Commercial Cloud Trial, agli utenti di Microsoft 365 o Office 365 esistenti nell'organizzazione, che non hanno una licenza di Microsoft Teams, possono avviare un periodo di valutazione del prodotto di 1 anno. Gli amministratori possono attivare o disattivare questa funzionalità per gli utenti nell'organizzazione.
 
 > [!IMPORTANT]
 > L'offerta Microsoft Teams Commercial Cloud Trial verrà sostituita da quella Microsoft Teams Exploratory a partire da gennaio 2020. Per informazioni su questa nuova offerta, vedere [Gestire la licenza Teams Exploratory](teams-exploratory.md).
@@ -55,7 +55,7 @@ La versione di valutazione mette a disposizione un abbonamento di prova di 1 ann
 
 Gli utenti devono essere abilitati all'iscrizione per app e versioni di valutazione (nell'interfaccia di amministrazione di Microsoft 365). Per altre informazioni, vedere [Gestire la versione di valutazione](#manage-the-trial) più avanti in questo articolo. 
 
-Gli utenti che non hanno una licenza di Office 365 che include Teams possono avvalersi dell'offerta Microsoft Teams Commercial Cloud Trial. Ad esempio, se un utente ha Office 365 Business (che non include Teams), è idoneo per la versione di valutazione.
+Gli utenti che non hanno una licenza di Office 365 che include Teams possono avvalersi dell'offerta Microsoft Teams Commercial Cloud Trial. Ad esempio, se un utente ha Microsoft 365 Apps for business (che non include Teams), è idoneo per la versione di valutazione.
 
 ## <a name="who-is-not-eligible"></a>Chi non è idoneo
 

@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bdc38c7ad6f7a7eaef0fa0cfb2a9d48745b92bef
-ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.openlocfilehash: a2e1073736ff927c34c56f3236d98e338384942d
+ms.sourcegitcommit: 6fbaab29076e16fe18f8faeb7e012a0815c2369d
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2020
-ms.locfileid: "43749593"
+ms.locfileid: "43785879"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -39,7 +39,7 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 |Numero di team di tutta l'organizzazione consentiti in un tenant | 5     |
 |Numero di membri in un [team di tutta l'organizzazione](create-an-org-wide-team.md) | 5.000       |
 |Numero di team che possono essere creati da un amministratore globale        |  500.000   |
-|Numero di team che un tenant di Office 365 può avere    | 500.000&sup2;     |
+|Numero di team che un'organizzazione di Office 365 può avere    | 500.000&sup2;     |
 |Numero di canali per team    | 200 (include i canali eliminati)&sup3;         |
 |Numero di canali privati per team    |30|
 |Dimensione post di conversazione sul canale | Circa 28 KB per post<sup>4</sup> |
@@ -63,6 +63,7 @@ La chat di Teams opera in un back-end di Microsoft Exchange, quindi per la funzi
 |Funzionalità  | Limite massimo  |
 |---------|---------|
 |Numero di persone in una chat privata<sup>1</sup>  | 100    |
+|Numero di persone in un video o una chiamata audio dalla chat | 20 |
 |Numero di file allegati<sup>2</sup>  |10     |
 |Dimensione chat | Circa 28 KB per post<sup>3</sup> |
 
@@ -109,6 +110,7 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 |Funzionalità     | Limite massimo |
 |------------|---------------|
 |Numero di persone in una riunione  | 250    |
+|Numero di persone in un video o una chiamata audio dalla chat | 20 |
 |Dimensione massima file di PowerPoint | 2 GB|
 |Teams conserva le [registrazioni delle riunioni](cloud-recording.md) che non vengono caricate in Microsoft Stream, disponibili per il download locale | 20 giorni |
 
@@ -128,7 +130,7 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 |------------|---------------|
 |Dimensioni del gruppo di destinatari | 10.000 partecipanti |
 |Durata dell'evento | 4 ore |
-|Eventi live simultanei in un tenant di Office 365 | 15 |
+|Eventi live simultanei in un'organizzazione di Office 365 | 15 |
 
 Per altre informazioni sugli eventi live e per un confronto tra gli eventi live di Teams e Skype Meeting Broadcast, passare a [Eventi live di Teams e Skype Meeting Broadcast](teams-live-events/plan-for-teams-live-events.md#teams-live-events-and-skype-meeting-broadcast).
 
@@ -146,7 +148,7 @@ Archiviando i file nella raccolta documenti di SharePoint Online e in OneDrive f
 
 Poiché Teams viene eseguito in un back-end di SharePoint Online per la condivisione dei file, alla sezione File all'interno di un team si applicano le limitazioni di SharePoint. Ecco i limiti di archiviazione applicabili per SharePoint Online.
 
-|Funzionalità                 |Office 365 Business Essentials  |Office 365 Business Premium   |Office 365 Enterprise E1  |Office 365 Enterprise E3  |Office 365 Enterprise E5  |Office 365 Enterprise F1  |
+|Funzionalità                 |Microsoft 365 Business Basic  |Microsoft 365 Business Standard   |Office 365 Enterprise E1  |Office 365 Enterprise E3  |Office 365 Enterprise E5  |Office 365 Enterprise F1  |
 |------------------------|---------|---------|---------|---------|---------|---------|
 |Archiviazione                 |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata  |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata  |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata   |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata |1 TB per ogni organizzazione e 10 GB per ogni licenza acquistata  |1 TB per ogni organizzazione           |
 |Spazio di archiviazione per i file di Teams |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |Fino a 25 TB per raccolta siti o gruppo |
