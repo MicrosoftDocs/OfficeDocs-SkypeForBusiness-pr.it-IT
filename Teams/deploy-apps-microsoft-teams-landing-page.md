@@ -17,12 +17,12 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9c2ef9f509f64e044567d9286704458b4dc91596
-ms.sourcegitcommit: 7093388425b34c80e444a50d062290187b80047d
+ms.openlocfilehash: d47a14dd84a1ccbe73d07ea3cbd638b5ed6159db
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42229901"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776621"
 ---
 # <a name="apps-bots--connectors-in-microsoft-teams"></a>App, bot e connettori in Microsoft Teams
 
@@ -62,11 +62,11 @@ Le app sono autorizzate dagli utenti e gestite dall'amministratore o dal profess
 
 ### <a name="bots-for-private-chats-and-channels"></a>Bot per chat e canali privati
 
-I bot sono programmi automatizzati che rispondono alle domande o forniscono aggiornamenti e notifiche su dettagli che gli utenti trovano interessanti o su cui vogliono mantenersi informati. I bot consentono agli utenti di interagire con servizi cloud come la gestione delle attività, la pianificazione e il polling in una chat di Teams. Teams supporta i bot all'interno di chat e canali privati. Gli amministratori possono controllare se in un tenant di Office 365 è consentito l'uso di bot.
+I bot sono programmi automatizzati che rispondono alle domande o forniscono aggiornamenti e notifiche su dettagli che gli utenti trovano interessanti o su cui vogliono mantenersi informati. I bot consentono agli utenti di interagire con servizi cloud come la gestione delle attività, la pianificazione e il polling in una chat di Teams. Teams supporta i bot all'interno di chat e canali privati. Gli amministratori possono controllare se in un’organizzazione di Office 365 è consentito l'uso di bot.
 
 | Chiedersi | Azione |
 |--------------|--------|
-|Si vuole consentire l'uso di bot personalizzati nel tenant di Office 365?|Per altre informazioni sull'aggiunta di bot, vedere [Aggiungere bot per chat e canali privati in Microsoft Teams](add-bots.md). Per informazioni su come attivare o disattivare i bot personalizzati, vedere [Impostazioni di amministrazione per le app in Microsoft Teams](admin-settings.md).|
+|Si vuole consentire l'uso di bot personalizzati nell’organizzazione di Office 365?|Per altre informazioni sull'aggiunta di bot, vedere [Aggiungere bot per chat e canali privati in Microsoft Teams](add-bots.md). Per informazioni su come attivare o disattivare i bot personalizzati, vedere [Impostazioni di amministrazione per le app in Microsoft Teams](admin-settings.md).|
 |||
 
 ### <a name="built-in-and-custom-tabs"></a>Schede predefinite e personalizzate
@@ -75,7 +75,7 @@ I proprietari e i membri del team possono aggiungere schede a un canale, una cha
 
 | Chiedersi | Azione |
 |--------------|--------|
-|Si vuole consentire l'uso di schede personalizzate nel tenant di Office 365?|Per altre informazioni, vedere [Usare schede predefinite e personalizzate in Teams](built-in-custom-tabs.md).|
+|Si vuole consentire l'uso di schede personalizzate nell’organizzazione di Office 365?|Per altre informazioni, vedere [Usare schede predefinite e personalizzate in Teams](built-in-custom-tabs.md).|
 |||
 
 ### <a name="office-365-and-custom-connectors"></a>Connettori personalizzati e di Office 365

@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b8cc942b1f249a78622d49f2880eed7282e900c0
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 2604a0dd6aa662d807ae878dc31800736529833c
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837056"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43778442"
 ---
 # <a name="monitor-usage-and-feedback-in-microsoft-teams"></a>Monitorare l'utilizzo e il feedback in Microsoft Teams
 È importante sapere in che modo gli utenti usano Teams e com'è la loro esperienza con Teams. I report sull'utilizzo consentono di comprendere meglio i modelli di utilizzo e, insieme al feedback degli utenti, forniscono informazioni approfondite utili per l'implementazione su scala più ampia e per stabilire come assegnare la priorità alle attività di formazione e comunicazione.
@@ -54,7 +54,7 @@ Per vedere questi report è necessario essere un amministratore globale in Offic
 Per altre informazioni, vedere [Analisi e creazione di report di Teams](teams-analytics-and-reports/teams-reporting-reference.md). 
 
 ### <a name="teams-activity-reports-microsoft-365-admin-center"></a>Report sulle attività di Teams (interfaccia di amministrazione di Microsoft 365)
-È anche possibile visualizzare le attività di Teams tramite report disponibili dall'interfaccia di amministrazione di Microsoft 365. Questi report fanno parte dei report di Office 365 nell'interfaccia di amministrazione di Microsoft 365 e forniscono informazioni sulle attività degli utenti e sull'utilizzo dei dispositivi. 
+È anche possibile visualizzare le attività di Teams tramite report disponibili dall'interfaccia di amministrazione di Microsoft 365. Questi report fanno parte dei report di Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365 e forniscono informazioni sulle attività degli utenti e sull'utilizzo dei dispositivi. 
 
 Per visualizzare questi report, passare all'interfaccia di amministrazione di Microsoft 365 e fare clic su **Report** > **Utilizzo**. In **Seleziona un report** fare clic su **Microsoft Teams**. Da qui scegliere il report che si vuole visualizzare.
 

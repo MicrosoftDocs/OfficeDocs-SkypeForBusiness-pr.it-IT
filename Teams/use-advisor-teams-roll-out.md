@@ -19,20 +19,20 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Usare Advisor per Teams (anteprima pubblica) per pianificare e completare la distribuzione di Microsoft Teams.
-ms.openlocfilehash: 6e4f383983326333bcd8b821d2342872eb89ecd7
-ms.sourcegitcommit: f96d66d08a9d6993edbb9554738dc8236d901933
+ms.openlocfilehash: 006ecf1563da153660902ac4c580253e50632867
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2020
-ms.locfileid: "43053619"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780805"
 ---
 # <a name="use-advisor-for-teams-to-help-you-roll-out-microsoft-teams"></a>Usare Advisor per Teams per distribuire Microsoft Teams
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-Advisor per Teams (anteprima pubblica) illustra in modo dettagliato l'implementazione di Microsoft Teams. Valuta l’ambiente tenant di Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente Teams. Quindi, Advisor per Teams crea un team di distribuzione (in Teams) con canali per ogni carico di lavoro che si vuole distribuire. Ogni carico di lavoro del team di distribuzione include un piano di Planner completo che include tutte le attività di implementazione per ogni carico di lavoro.  Con questo piano di Planner, si possono assegnare attività alle persone responsabili di ogni fase dell'implementazione, tra cui il project manager, gli amministratori di Teams e di Office 365, le persone di supporto e il team di adozione e conformità degli utenti. Ogni attività di implementazione contiene tutte le indicazioni e le risorse necessarie per completare correttamente l'attività.
+Advisor per Teams (anteprima pubblica) illustra in modo dettagliato l'implementazione di Microsoft Teams. Valuta l’ambiente dell’organizzazione di Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente Teams. Quindi, Advisor per Teams crea un team di distribuzione (in Teams) con canali per ogni carico di lavoro che si vuole distribuire. Ogni carico di lavoro del team di distribuzione include un piano di Planner completo che include tutte le attività di implementazione per ogni carico di lavoro.  Con questo piano di Planner, si possono assegnare attività alle persone responsabili di ogni fase dell'implementazione, tra cui il project manager, gli amministratori di Teams e di Office 365, le persone di supporto e il team di adozione e conformità degli utenti. Ogni attività di implementazione contiene tutte le indicazioni e le risorse necessarie per completare correttamente l'attività.
 
-Advisor per Teams fa parte dell'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com). Per sfruttare al meglio l'integrazione di Advisor per Teams con Forms e Planner, è necessaria almeno una licenza di Office 365 Business Essentials. Per iniziare a usare Advisor per Teams, fare clic sul pulsante **Avvia** nel widget **Distribuzione del carico di lavoro di Teams** nel dashboard. In alternativa, passare a **Pianificazione** > **Assistente per Teams**.
+Advisor per Teams fa parte dell'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com). Per sfruttare al meglio l'integrazione di Advisor per Teams con Forms e Planner, è necessaria almeno una licenza di Microsoft 365 Business Basic. Per iniziare a usare Advisor per Teams, fare clic sul pulsante **Avvia** nel widget **Distribuzione del carico di lavoro di Teams** nel dashboard. In alternativa, passare a **Pianificazione** > **Assistente per Teams**.
 
 > [!IMPORTANT]
 > Advisor per Teams non è disponibile per le distribuzioni di Microsoft 365 Government - GCC High o DoD.
@@ -96,8 +96,8 @@ Oltre ai [test di valutazione per i carichi di lavoro](#assessment-tests-for-all
 
 |Test di valutazione  |Cosa indica  |
 |---------|---------|
-|Criteri di denominazione del Gruppo di Office 365 configurati     |Se sono stati configurati gli standard di denominazione per i Gruppi di Office 365. I criteri di denominazione per i Gruppi di Office 365 consentono all'organizzazione di applicare una strategia di denominazione coerente con i team creati dall'utente e si applica anche ad altri carichi di lavoro dei Gruppi, tra cui Outlook, SharePoint, Planner e Yammer. Questo test esegue una query in Azure AD tramite Microsoft Graph per verificare l'esistenza di criteri di denominazione validi per i Gruppi di Office 365. Per altre informazioni, leggere [Criteri di denominazione dei Gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/groups-naming-policy).    |
-|Criteri di scadenza dei gruppi di Office 365 configurati     |Se i criteri di scadenza di un Gruppo sono stati definiti per i Gruppi di Office 365. Questo consente all'organizzazione di rimuovere automaticamente Teams inattivi. Per impostazione predefinita l'opzione è disattivata. Questo test esegue una query in Azure AD tramite Microsoft Graph e indica se un valore è stato modificato rispetto all'impostazione predefinita. Per altre informazioni, leggere [Criteri di scadenza dei Gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups-expiration-policy).    |
+|Criteri di denominazione del Gruppo di Office 365 configurati     |Se sono stati configurati gli standard di denominazione per i Gruppi di Microsoft 365. I criteri di denominazione per i Gruppi di Microsoft 365 consentono all'organizzazione di applicare una strategia di denominazione coerente con i team creati dall'utente e si applica anche ad altri carichi di lavoro dei Gruppi, tra cui Outlook, SharePoint, Planner e Yammer. Questo test esegue una query in Azure AD tramite Microsoft Graph per verificare l'esistenza di criteri di denominazione validi per i Gruppi di Microsoft 365. Per altre informazioni, leggere [Criteri di denominazione dei Gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/groups-naming-policy).    |
+|Criteri di scadenza dei gruppi di Office 365 configurati     |Se i criteri di scadenza di un Gruppo sono stati definiti per i Gruppi di Microsoft 365. Questo consente all'organizzazione di rimuovere automaticamente Teams inattivi. Per impostazione predefinita l'opzione è disattivata. Questo test esegue una query in Azure AD tramite Microsoft Graph e indica se un valore è stato modificato rispetto all'impostazione predefinita. Per altre informazioni, leggere [Criteri di scadenza dei Gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups-expiration-policy).    |
 
 ### <a name="assessments-for-meetings-and-conferencing"></a>Valutazioni per messaggistica istantanea, riunioni e conferenze
 
@@ -131,7 +131,7 @@ Quando Advisor per Teams crea il team di distribuzione, il relativo bot consegna
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 ### <a name="what-are-the-licensing-requirements-for-advisor-for-teams"></a>Quali sono i requisiti di licenza per Advisor per Teams?
-Per sfruttare al meglio l'integrazione di Advisor per Teams con Forms e Planner, è necessario almeno Office 365 Business Essentials.
+Per sfruttare al meglio l'integrazione di Advisor per Teams con Forms e Planner, è necessario almeno Microsoft 365 Business Basic.
 
 ### <a name="can-i-delete-the-deployment-team"></a>È possibile eliminare il team di distribuzione?
 Dopo che Advisor per Teams ha creato il team di distribuzione, è possibile gestire il team come qualsiasi altro team, inclusa la possibilità di eliminarlo. Tenere presente che se non si elimina il team tramite l'interfaccia di amministrazione di Teams, il team verrà visualizzato come ancora esistente nell'interfaccia di amministrazione. Si tratta di una situazione temporanea: verrà risolta quando Advisor per Teams non sarà più in anteprima pubblica e diventerà disponibile a livello generale.
