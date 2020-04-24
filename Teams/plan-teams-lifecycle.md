@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ce58f292fd732c498880936c01d3e1b1343d2aa6
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 29caa32b894c2a407a724f68c11c01cfe567c82e
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137826"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780255"
 ---
 # <a name="plan-for-lifecycle-management-in-teams"></a>Pianificare la gestione del ciclo di vita in Teams
 
@@ -40,7 +40,7 @@ Tutti i concetti e le definizioni seguenti hanno effetto sulle decisioni da assu
 
 **Team**
 
-Un _team_ è un insieme di persone, contenuti e strumenti che facilitano la collaborazione. Per ogni team si definiscono i membri e le autorizzazioni e i criteri ad essi applicabili. I team sono basati sui gruppi di Office 365 e le modifiche apportate all'appartenenza al gruppo di Office 365 vengono sincronizzate con il team. Come per gli altri gruppi di Office 365, il provisioning del team viene eseguito automaticamente con una cassetta postale di Exchange, un sito di SharePoint, un blocco appunti di OneNote e altre risorse all'interno di Office 365. [Altre informazioni sui gruppi di Office 365](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+Un _team_ è un insieme di persone, contenuti e strumenti che facilitano la collaborazione. Per ogni team si definiscono i membri e le autorizzazioni e i criteri ad essi applicabili. I team sono basati sui gruppi di Microsoft 365 e le modifiche apportate all'appartenenza al gruppo di Office 365 vengono sincronizzate con il team. Come per gli altri gruppi di Microsoft 365, il provisioning del team viene eseguito automaticamente con una cassetta postale di Exchange, un sito di SharePoint, un blocco appunti di OneNote e altre risorse all'interno di Office 365. [Altre informazioni sui Gruppi di Microsoft 365](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 **Canali**
 
@@ -57,7 +57,7 @@ Determinano chi può partecipare al team:
 
 Il tipo degli utenti del team ne determina il livello di controllo:
 
--   Il _creatore del team_ ha le autorizzazioni necessarie per creare un gruppo o un team nella directory. L'amministratore può vincolare questo tipo di utente a un subset di amministratori o utenti. Per altre informazioni, vedere [Gestire chi può creare gruppi di Office 365](https://support.office.com/article/Manage-who-can-create-Office-365-Groups-4c46c8cb-17d0-44b5-9776-005fced8e618). 
+-   Il _creatore del team_ ha le autorizzazioni necessarie per creare un gruppo o un team nella directory. L'amministratore può vincolare questo tipo di utente a un subset di amministratori o utenti. Per altre informazioni, vedere [Gestire chi può creare gruppi di Microsoft 365](https://support.office.com/article/Manage-who-can-create-Office-365-Groups-4c46c8cb-17d0-44b5-9776-005fced8e618). 
 -   Il _proprietario del team_ gestisce l'appartenenza e le impostazioni del team. Ogni team può avere fino a 100 proprietari.
 -   Il _membro del team_ è un membro dell'organizzazione che partecipa a un team.
 -   Un _guest_ è un utente esterno all'organizzazione. Chiunque abbia un indirizzo di posta elettronica può essere invitato come guest, se l'organizzazione ha abilitato l'[accesso guest](guest-access.md).
@@ -79,7 +79,7 @@ I ruoli di amministratore di Teams determinano le capacità dei titolari dei var
 <tbody>
    <tr>
     <td valign="top" colspan="2">Amministratore del servizio Teams</td>
-    <td valign="top">Gestire il servizio Teams e creare e gestire i gruppi di Office 365</td>
+    <td valign="top">Gestire il servizio Teams e creare e gestire i gruppi di Microsoft 365</td>
     <td valign="top">Gestire le riunioni, inclusi criteri riunione, configurazioni e bridge di conferenza<sup>1</sup><br><br>Gestire le funzionalità vocali, tra cui criteri di chiamata, inventario e assegnazione dei numeri di telefono, code delle chiamate e operatori automatici<sup>1</sup><br><br>Gestire la messaggistica, inclusi i criteri di messaggistica<sup>1</sup><br><br>Gestire tutte le impostazioni a livello di organizzazione, inclusi federazione, aggiornamento di Teams e impostazioni del client di Teams<sup>1</sup><br><br>Gestire i team dell'organizzazione e le impostazioni associate, inclusa l'appartenenza<sup>2</sup><br><br>Visualizzare la pagina del profilo utente e risolvere i problemi di qualità delle chiamate degli utenti usando il set di strumenti per la risoluzione dei problemi avanzato<sup>3</sup></td>
 </tr>
 <tr>
@@ -197,7 +197,7 @@ Se un team inizia a fossilizzarsi su determinate modalità, considerare la possi
 
 Quando il lavoro di un team è concluso, è importante riconoscerlo formalmente. Questo dà ai membri del team un senso di completamento ed evita che qualcuno acceda a informazioni obsolete. È possibile usare il team stesso per eseguire le attività rituali di chiusura, come la stesura di relazioni finali e riepiloghi esecutivi.
 
-È possibile eliminare i team di cui si è certi di non avere più bisogno, ad esempio un team creato esclusivamente a scopo di test o un team che contiene dati sensibili. I team vengono in realtà eliminati con una "eliminazione temporanea" che l'IT può annullare entro un massimo di 21 giorni (30 giorni per i gruppi di Office 365). L'eliminazione dei team non influisce sulle chat o sui contenuti conservati in ottemperanza ai criteri di conformità. Anche per i canali esiste l'eliminazione temporanea e possono essere ripristinati entro un massimo di 21 giorni.
+È possibile eliminare i team di cui si è certi di non avere più bisogno, ad esempio un team creato esclusivamente a scopo di test o un team che contiene dati sensibili. I team vengono in realtà eliminati con una "eliminazione temporanea" che l'IT può annullare entro un massimo di 21 giorni (30 giorni per i gruppi di Microsoft 365). L'eliminazione dei team non influisce sulle chat o sui contenuti conservati in ottemperanza ai criteri di conformità. Anche per i canali esiste l'eliminazione temporanea e possono essere ripristinati entro un massimo di 21 giorni.
 
 È anche possibile usare i criteri di scadenza e conservazione oltre alle funzionalità di archiviazione per ridurre l'esposizione associata ai team non più attivi o i cui proprietari hanno lasciato l'organizzazione.
 
