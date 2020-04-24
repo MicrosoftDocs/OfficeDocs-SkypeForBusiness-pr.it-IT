@@ -10,28 +10,32 @@ audience: admin
 ms.reviewer: sonua
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-collaboration
 search.appverid: MET150
 description: Informazioni sui fattori da prendere in considerazione prima di configurare eventi live in Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2f70a7a2be51045f616ebb4cedc5baf46dbe101d
-ms.sourcegitcommit: 56ceda54ca48d2984298d4d1f26017c0147d4431
+ms.openlocfilehash: c4a7f60a199a342d69311467bffbc4607854a719
+ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43505623"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43752363"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
-Quando si pianificano eventi live di Teams per organizzare riunioni con numerosi partecipanti nell'organizzazione, è necessario considerare diversi fattori prima di procedere alla configurazione. 
+Quando si pianificano eventi live di Teams per organizzare riunioni con numerosi partecipanti nell'organizzazione, è necessario considerare diversi fattori prima di procedere alla configurazione.
 
-## <a name="who-can-create-and-schedule-live-events"></a>Chi può creare e pianificare eventi live? 
+## <a name="who-can-attend-create-and-schedule-live-events"></a>Chi può partecipare, creare e pianificare eventi live
+
+Chiunque può partecipare a un evento live senza licenza. Leggere [Guida introduttiva per l'amministratore - Riunioni ed eventi live](../quick-start-meetings-live-events.md).
+
 Per la pianificazione di un evento live di Teams, sono necessari i prerequisiti seguenti.
 
 Ecco le licenze che devono essere assegnate:  
+
 - Una licenza di Office 365 Enterprise E1, E3 o E5 o una licenza di Office 365 A3 o A5
 - Una licenza di Microsoft Teams
 - Una licenza di Microsoft Stream
@@ -50,6 +54,7 @@ Ecco le licenze che devono essere assegnate:
 Per altre informazioni sulle licenze, vedere [Licenze per i componenti aggiuntivi di Microsoft Teams](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 
 L'utente deve disporre di:
+
 - Pianificazione delle riunioni private in Teams abilitata (*parametro TeamsMeetingPolicy -AllowPrivateMeetingScheduling = True*).
 - Condivisione video abilitata nelle riunioni di Teams (*parametro TeamsMeetingPolicy -AllowIPVideo = True*).
 - Condivisione schermo abilitata nelle riunioni di Teams (*parametro TeamsMeetingPolicy -ScreenSharingMode = EntireScreen*).
@@ -58,23 +63,23 @@ L'utente deve disporre di:
 - La modalità di coesistenza viene configurata per riuscire a pianificare le riunioni di Teams (*Isole, riunioni al primo posto o solo Teams*).
 
 > [!IMPORTANT]
-> Gli utenti anonimi non autenticati non possono essere invitati come produttori o relatori negli eventi live di Teams. 
- 
-## <a name="who-can-watch-live-events"></a>Chi può assistere agli eventi live?
+> Gli utenti anonimi non autenticati non possono essere invitati come produttori o relatori negli eventi live di Teams.
+
+## <a name="who-can-watch-live-events"></a>Chi può assistere agli eventi live
 
 |**Visibilità dei partecipanti**       |**Produzione in Teams**  |**Produzione in app o dispositivi esterni**  |
 |------------------------------|-----------------|----------------------|
 |Pubblica (utenti anonimi)      |  Sì            |  No                  |
 |Utenti guest                   |  Sì            |  No                  |
-|Tutti gli utenti di società federate |  Sì<sup>1</sup>|  No                  |
+|Tutti gli utenti dell'organizzazione con accesso esterno (federazione) |  Sì<sup>1</sup>|  No                  |
 |Tutti gli utenti della società           |  Sì            |  Sì                 |
 |Gruppi/utenti specifici      |  Sì            |  Sì                 |
 
-<sup>1</sup> I partecipanti federati possono essere invitati solo tramite l'opzione Utenti e gruppi <br>
- 
+<sup>1</sup> I partecipanti con accesso esterno (federazione) possono essere invitati solo tramite l'opzione Utenti e gruppi <br>
+
 ## <a name="teams-live-events-and-skype-meeting-broadcast"></a>Eventi live di Teams e Skype Meeting Broadcast
 
-La tabella seguente illustra le funzionalità principali disponibili negli eventi live e le differenze con Skype Meeting Broadcast. 
+La tabella seguente illustra le funzionalità principali disponibili negli eventi live e le differenze con Skype Meeting Broadcast.
 
 |**Funzionalità**   |**Skype Meeting Broadcast** |**Eventi prodotti in Teams** |**Eventi prodotti in app o dispositivi esterni** |
 |---------|---------|---------|---------|
@@ -91,7 +96,7 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 |Consente più relatori |&#x2714; (Skype for Business) |&#x2714; (Teams) |N/D  |
 |Invitare un relatore durante la riunione |&#x2714; (Skype for Business) |&#x274C; |N/D |
 |Partecipazione del relatore su Web e dispositivi mobili |&#x2714; (Skype for Business)  |&#x274C; |N/D |
-|Relatori/partecipanti federati e guest |&#x2714; (Skype for Business)  |  &#x2714; (Teams) |N/D |
+|Relatori/Partecipanti con accesso esterno (federazione) |&#x2714; (Skype for Business)  |  &#x2714; (Teams) |N/D |
 |Relatore - Accesso PSTN |&#x274C; |&#x2714; (Teams) |N/D |
 |Presentare una schermata |&#x274C; |&#x2714; (Teams) |N/D |
 |Presentare una presentazione di PowerPoint (condivisione PPT) |&#x2714; |&#x274C; (attenuato tramite condivisione dello schermo) |N/D |
@@ -107,27 +112,31 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 <sup>1</sup> I limiti impostati potrebbero essere modificati. Consultare [Limiti e specifiche per Teams](../limits-specifications-teams.md).<br/>
 <sup>2</sup> È possibile avere fino a 250 relatori e produttori in un evento live, ma solo gli ultimi 10 che sono intervenuti vengono visualizzati nell'elenco.
 
-
 ## <a name="regional-availability"></a>Disponibilità a livello di area geografica
-È possibile usare la funzione degli eventi live di Teams in più aree geografiche del mondo. Le informazioni seguenti mostrano la disponibilità per i partecipanti e i membri del team dell'evento. 
+
+È possibile usare la funzione degli eventi live di Teams in più aree geografiche del mondo. Le informazioni seguenti mostrano la disponibilità per i partecipanti e i membri del team dell'evento.
 
 > [!IMPORTANT]
 > L'area geografica dell'evento viene selezionata automaticamente in base all'organizzatore e all'organizzazione di Office 365.
 
 **Disponibile nelle aree geografiche seguenti**
+
 - Americhe
 - Europa/Africa
 - Asia Pacifico
-- Aree Go Local: Canada, India, Australia, Giappone e Regno Unito
+- Posizione dei dati per Canada, India, Australia, Giappone e Regno Unito
 
 **Esclusioni e considerazioni**
-- **Go Local:** le aree Go Local di Teams, ad eccezione di quelle elencate sopra, non sono supportate al momento.
+
+- **Posizione dei dati:** le posizioni dei dati di Teams, ad eccezione di quelle elencate sopra, non sono supportate al momento.
 - **Cina:** i partecipanti e i membri del team dell'evento non potranno usare gli eventi live di Teams perché la rete CDN di Azure non è accessibile in Cina. In alternativa, è possibile usare una connessione VPN aziendale che ottiene il client connesso alla rete CDN tramite la rete aziendale del cliente.
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 Passare a [Configurare gli eventi live di Teams](set-up-for-teams-live-events.md).
 
 ### <a name="related-topics"></a>Argomenti correlati
+
 - [Cosa sono gli eventi live di Teams?](what-are-teams-live-events.md)
 - [Configurare gli eventi live di Teams](set-up-for-teams-live-events.md)
 - [Configurare le impostazioni degli eventi live in Teams](configure-teams-live-events.md)
