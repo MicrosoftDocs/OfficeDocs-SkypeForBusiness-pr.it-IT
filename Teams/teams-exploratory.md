@@ -9,7 +9,7 @@ ms.reviewer: baluc
 ms.service: msteams
 search.appverid: MET150
 localization_priority: Priority
-description: Gli utenti di Office 365 che non hanno una licenza di Microsoft Teams possono iniziare a usare una licenza Teams Exploratory.
+description: Gli utenti di Microsoft 365 o Office 365 che non hanno una licenza di Microsoft Teams possono iniziare a usare una licenza Teams Exploratory.
 f1.keywords:
 - NOCSH
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4991945d47ecda85964068530118bcf3ef1f616a
-ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.openlocfilehash: 4cc744b8cbe9942712857309f061b998957661b4
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2020
-ms.locfileid: "43749793"
+ms.locfileid: "43780385"
 ---
 <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 =======================================================
@@ -54,7 +54,7 @@ I piani di servizio che un amministratore visualizzerà nell'ambito dell'esperie
 
 ## <a name="whos-eligible"></a>Chi è idoneo
 
-Se l'utente ha un indirizzo di posta elettronica di dominio Azure Active Directory gestito e attualmente non ha o non gli è stata assegnata una licenza Teams, è idoneo per questa esperienza. Ad esempio, se un utente ha Office 365 Business, che non include Teams, è idoneo per l'esperienza di Teams Exploratory.
+Se l'utente ha un indirizzo di posta elettronica di dominio Azure Active Directory gestito e attualmente non ha o non gli è stata assegnata una licenza Teams, è idoneo per questa esperienza. Ad esempio, se un utente ha App Microsoft 365 per le aziende, che non include Teams, è idoneo per l'esperienza di Teams Exploratory.
 
 Gli utenti devono essere abilitati all'iscrizione di app e versioni di valutazione (nell'interfaccia di amministrazione di Microsoft 365). Per altre informazioni, vedere [Gestire l'esperienza Teams Exploratory](#manage-the-teams-exploratory-experience) più avanti in questo articolo. 
 
