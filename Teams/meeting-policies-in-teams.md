@@ -24,7 +24,7 @@ ms.custom:
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams.
 ms.openlocfilehash: b87453fb24173ba648511f49efc82becb2616d70
 ms.sourcegitcommit: 56ceda54ca48d2984298d4d1f26017c0147d4431
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/14/2020
 ms.locfileid: "43505633"
