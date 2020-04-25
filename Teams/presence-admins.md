@@ -18,16 +18,16 @@ appliesto:
 - Microsoft Teams
 ms.openlocfilehash: ab24c6ee27f3e99a30a18af82f0a26196a049528
 ms.sourcegitcommit: 477aac9e14fced139ee7dd827942ce35b9769b63
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/15/2020
 ms.locfileid: "43510775"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
-La presenza fa parte del profilo di un utente in Microsoft Teams (e in tutto Office 365) che indica la disponibilità e lo stato correnti dell'utente ad altri utenti. Per impostazione predefinita, tutti gli utenti dell'organizzazione che usano Teams possono vedere (praticamente in tempo reale) se gli altri utenti sono disponibili online.
+La presenza è inclusa nel profilo degli utenti di Microsoft Teams (e ovunque in Office 365) e indica la disponibilità e lo stato correnti dell'utente. Per impostazione predefinita, tutti gli utenti dell'organizzazione che usano Teams possono vedere (praticamente in tempo reale) se gli altri utenti sono disponibili online.
 
-La presenza di Teams in Outlook è supportata nell'applicazione desktop di Outlook 2013 e versioni successive.
+La presenza di Teams in Outlook è supportata nell'app desktop Outlook 2013 e versioni successive.
 
 ## <a name="presence-states-in-teams"></a>Stati di presenza in Teams
 
@@ -52,15 +52,15 @@ La presenza di Teams in Outlook è supportata nell'applicazione desktop di Outlo
 || ![Cerchio viola con freccia, indica Fuori sede](media/Presence_OOF.png) Fuori sede|
 |||
 
-Gli Stati di presenza configurati dall'app si basano sulle attività degli utenti (disponibile, assente), sugli Stati del calendario di Outlook (in una riunione) o sugli Stati dell'app Teams (in una chiamata, presentazione).
+Gli stati di presenza configurati dall'app si basano sulle attività utente (Disponibile, Assente), gli stati del calendario di Outlook (In riunione) o gli stati dell'app Teams (Chiamata in corso, Presentazione in corso).
 
-Quando si blocca il computer o quando si entra in modalità inattiva o sospensione, lo stato di presenza corrente cambia in via. Per dispositivi mobili, lo stato presenza viene modificato in via ogni volta che l'app teams è in background.
+Lo stato di presenza corrente cambia in Assente quando si blocca il computer o quando si attiva la modalità di sospensione. In un dispositivo mobile, lo stato di presenza viene impostato su Assente quando l'app Teams è in background.
 
-Gli utenti ricevono tutti i messaggi delle chat di Teams, indipendentemente dallo stato di presenza. Se un utente è offline quando riceve un messaggio, questo apparirà nella chat di Teams non appena l'utente sarà nuovamente online. Se un utente è in non disturbare, l'utente riceverà ancora messaggi di chat, ma le notifiche banner non vengono visualizzate.
+Gli utenti ricevono tutti i messaggi delle chat di Teams, indipendentemente dallo stato di presenza. Se un utente è offline quando riceve un messaggio, questo apparirà nella chat di Teams non appena l'utente sarà nuovamente online. Se un utente è in stato Non disturbare, riceverà comunque i messaggi delle chat, ma le notifiche del banner non verranno mostrate.
 
-Gli utenti ricevono chiamate in tutti gli Stati di presenza, ad eccezione di non disturbare, in cui le chiamate in arrivo vanno alla segreteria telefonica. Se il destinatario ha bloccato il chiamante, l'utente non riceverà la chiamata e il chiamante visualizzerà la presenza del destinatario come Offline.
+Gli utenti ricevono le chiamate con qualsiasi stato di presenza tranne Non disturbare, in cui le chiamate in arrivo vengono inoltrate alla segreteria telefonica. Se il destinatario ha bloccato il chiamante, l'utente non riceverà la chiamata e il chiamante visualizzerà la presenza del destinatario come Offline.
 
-Gli utenti possono aggiungere persone al proprio elenco degli accessi prioritari andando in **Impostazioni** > **Privacy** in Teams. Le persone con accesso prioritario possono contattare l'utente anche quando l'utente è in non disturbare.
+Gli utenti possono aggiungere persone al proprio elenco degli accessi prioritari andando in **Impostazioni** > **Privacy** in Teams. Le persone con accesso prioritario possono contattare l'utente anche se è in stato Non disturbare.
 
 ## <a name="admin-settings-in-teams-compared-to-skype-for-business"></a>Confronto tra le impostazioni di amministrazione di Teams e Skype for Business
 
