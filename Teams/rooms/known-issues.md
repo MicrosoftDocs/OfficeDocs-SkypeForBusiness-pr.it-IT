@@ -12,13 +12,14 @@ f1.keywords:
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-description: Questo articolo illustra i problemi noti per le sale di Microsoft teams, in base all'area delle caratteristiche.
-ms.openlocfilehash: e0b22d55de5fcf2fd49cf795497f2cb26c1952cf
-ms.sourcegitcommit: 708270f1fecab6b7b44345d57a8e12bc36d19c8b
+description: L'amministratore può ottenere informazioni su un elenco di problemi noti per le sale di Microsoft teams, tra cui l'aggiornamento, l'interfaccia utente, l'hardware e le limitazioni e i comportamenti previsti.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: d8f7dcd6453458885a35bdcf7b39e729cc776f5a
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2020
-ms.locfileid: "43102377"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905418"
 ---
 # <a name="known-issues"></a>Problemi noti 
  
@@ -75,4 +76,4 @@ Microsoft teams Rooms è un'applicazione con più finestre e richiede la conness
 
 [Guida di Microsoft teams rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
 
-[Gestire le sale di Microsoft Teams](rooms-manage.md)
+[Gestire Microsoft Teams Rooms](rooms-manage.md).

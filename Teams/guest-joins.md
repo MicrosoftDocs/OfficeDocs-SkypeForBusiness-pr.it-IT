@@ -14,15 +14,16 @@ ms.reviewer: sbhatta
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Una breve panoramica del modo in cui un guest viene invitato a partecipare a un team di Microsoft Teams.
+description: Informazioni sui passaggi necessari per aggiungere utenti esterni all'organizzazione come Guest a un team in Microsoft teams.
+ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 491770bcd3c2f435bbd2ea18c366effea2c8124f
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
-ms.translationtype: HT
+ms.openlocfilehash: 8202f7cae250d497eb690a7cb337c12dd1b79cb1
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41833176"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43902551"
 ---
 <a name="how-a-guest-joins-a-team"></a>Come partecipare a un team da guest
 ========================
@@ -39,7 +40,7 @@ Il proprietario di un team di Microsoft Teams può aggiungere e gestire i guest 
 1. Il guest riceve un'e-mail di benvenuto dal proprietario del team, contenente informazioni sul team e sulle funzionalità disponibili in quanto nuovo membro. 
 1. Il guest accetta l'invito.
   Gli utenti guest che hanno un indirizzo e-mail di un account aziendale o dell'istituto di istruzione di Azure Active Directory o Office 365, possono accettare direttamente l'invito. 
-  Se il guest non ha ancora un account Microsoft associato al proprio indirizzo e-mail, verrà reindirizzato per crearne uno gratuitamente. 
+  Se il Guest non ha ancora un account Microsoft associato al proprio indirizzo di posta elettronica, verrà indirizzato per crearne uno gratuitamente. 
 1. Dopo aver accettato l'invito, il guest può [partecipare a team e canali](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499), ricevere e rispondere ai messaggi del canale, [accedere ai file nei canali](https://support.office.com/article/access-files-in-channels-c593c78a-27c4-4661-a598-682baa30ca7e), partecipare alle chat, partecipare alle riunioni, collaborare ai documenti e altro ancora. 
 
 In Teams, i guest vengono identificati in modo chiaro. Il nome di un utente guest include l'etichetta **(Guest)** e il canale include un'icona che indica la presenza di guest nel team. Per maggiori dettagli, vedere [Informazioni sull'esperienza guest](guest-experience.md).

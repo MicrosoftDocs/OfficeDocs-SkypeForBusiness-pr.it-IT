@@ -1,5 +1,5 @@
 ---
-title: Configurare una console Microsoft teams rooms
+title: Configurare una console per Microsoft Teams Rooms
 ms.author: v-lanac
 author: lanachin
 ms.reviewer: Travis-Snoozy
@@ -12,17 +12,17 @@ f1.keywords:
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: dae1bfb6-7262-4030-bf53-dc3b3fe971ea
-description: Questo articolo descrive come configurare la console Microsoft teams Rooms e le sue periferiche.
-ms.openlocfilehash: c91c570cd83cc07f1f15823623f2b02a2ebcddf4
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+description: In questo articolo viene descritto come impostare e configurare la console Microsoft teams Rooms e le relative periferiche.
+ms.openlocfilehash: d5c1b7f47769d925f6d67527429971970b555044
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826094"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905448"
 ---
-# <a name="configure-a-microsoft-teams-rooms-console"></a>Configurare una console Microsoft teams rooms
+# <a name="configure-a-microsoft-teams-rooms-console"></a>Configurare una console per Microsoft Teams Rooms
 
 Questo articolo descrive come configurare la console Microsoft teams Rooms e le sue periferiche.
   
@@ -86,7 +86,7 @@ Al termine, rimuovere il disco USB dal computer e procedere con [l'installazione
 
 5. Avviare il disco di configurazione USB. Fare riferimento alle istruzioni del produttore. Se il dispositivo di destinazione è una superficie Pro, usare la procedura seguente per avviare il disco di configurazione USB:
 
-    un. Premere e continuare a tenere premuto il pulsante volume giù (-).
+    a. Premere e continuare a tenere premuto il pulsante volume giù (-).
 
     b. Premere e rilasciare il pulsante di accensione.
 
@@ -101,7 +101,7 @@ Dopo che il sistema è stato arrestato, è sicuro rimuovere il disco di configur
 
 ### <a name="selecting-a-language"></a>Selezione di una lingua 
 
-Nell'aggiornamento di Creator è necessario usare lo script ApplyCurrentRegionAndLanguage. ps1 in scenari in cui la selezione della lingua implicita non offre all'utente la lingua effettiva dell'applicazione desiderata (ad esempio, vogliono che l'app console venga aggiornata in francese, ma è in arrivo in inglese).
+Nell'aggiornamento di Creator devi usare lo script ApplyCurrentRegionAndLanguage. ps1 in scenari in cui la selezione della lingua implicita non offre all'utente la lingua effettiva dell'applicazione desiderata (ad esempio, vogliono che l'app console venga in francese, ma è in arrivo in inglese).
   
 > [!NOTE]
 > Le istruzioni seguenti funzionano solo per le console create con l'aggiornamento di Windows Creator. I sistemi legacy/in-Market che non sono stati configurati con il nuovo sistema di provisioning non saranno in grado di usare queste istruzioni, ma dovrebbero anche non risentire del problema iniziale che richiede questo intervento manuale (Anniversary Edition consente di selezionare la lingua dell'app in modo esplicito nell'ambito del programma di installazione).
@@ -128,7 +128,7 @@ Nell'aggiornamento di Creator è necessario usare lo script ApplyCurrentRegionAn
     
 10. Per tutte le lingue che si desidera rimuovere:
     
-    un. Selezionare la lingua che si vuole rimuovere.
+    a. Selezionare la lingua che si vuole rimuovere.
     
     b. Selezionare **Rimuovi**.
     
@@ -260,10 +260,10 @@ Usare l'elenco di controllo seguente durante una verifica finale che la console 
 ## <a name="see-also"></a>Vedere anche
 <a name="Checklist"> </a>
 
-[Pianificare le sale di Microsoft Teams](rooms-plan.md)
+[Piano per Microsoft Teams Rooms](rooms-plan.md)
   
-[Distribuire le sale di Microsoft Teams](rooms-deploy.md)
+[Distribuire Microsoft Teams Rooms](rooms-deploy.md)
   
-[Configurare una console Microsoft teams rooms](console.md)
+[Configurare una console per Microsoft Teams Rooms](console.md)
   
-[Gestire le sale di Microsoft Teams](rooms-manage.md)
+[Gestire Microsoft Teams Rooms](rooms-manage.md).

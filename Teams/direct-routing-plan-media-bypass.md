@@ -15,13 +15,14 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Leggere questo argomento per informazioni su come pianificare il bypass multimediale con il routing diretto del sistema telefonico.
-ms.openlocfilehash: c40840e2169a67172f006a0f0910c715feb40253
-ms.sourcegitcommit: bb88ac0c9489bb47957e5ef1074b5df3126b6fdb
+description: Informazioni su come pianificare il bypass multimediale con il routing diretto del sistema telefonico, che consente di ridurre il percorso del traffico multimediale e migliorare le prestazioni.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 316e94a2baafcecc9fb690f3d836e7c96c0b30ea
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42265641"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901841"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
@@ -78,7 +79,7 @@ Il diagramma seguente mostra il flusso delle chiamate quando il bypass multimedi
 
 Di seguito viene descritto il flusso delle chiamate se l'utente non ha accesso all'indirizzo IP pubblico di SBC. 
 
-Supponiamo ad esempio che l'utente sia esterno e che l'amministratore del tenant abbia deciso di non aprire l'indirizzo IP pubblico di SBC a tutti gli utenti di Internet, ma solo al cloud Microsoft. I componenti interni del traffico possono fluire tramite i relay di trasporto di teams. Questa è la configurazione consigliata per gli utenti esterni alla rete aziendale. Tenere presente quanto segue:
+Supponiamo ad esempio che l'utente sia esterno e che l'amministratore del tenant abbia deciso di non aprire l'indirizzo IP pubblico di SBC a tutti gli utenti di Internet, ma solo al cloud Microsoft. I componenti interni del traffico possono fluire tramite i relay di trasporto di teams. Questa è la configurazione consigliata per gli utenti esterni alla rete aziendale. Tenere in considerazione gli aspetti seguenti:
 
 - Vengono usati i relè di trasporto teams.
 
@@ -319,7 +320,7 @@ UDP/SRTP | Media processor | SBC | 49 152-53 247    | Definita nell'SBC |
 
 ## <a name="configure-separate-trunks-for-media-bypass-and-non-media-bypass"></a>Configurare trunk separati per il bypass multimediale e il bypass non multimediale  
 
-Se si esegue la migrazione a un bypass multimediale da un bypass non multimediale e si vuole confermare la funzionalità prima di eseguire la migrazione di tutto l'utilizzo al bypass multimediale, è possibile creare un trunk separato e separare i criteri di routing vocale online per instradare il trunk di bypass multimediale e assegnarlo a specifici utenti. 
+Se si esegue la migrazione a un bypass multimediale da un bypass non multimediale e si vuole confermare la funzionalità prima di eseguire la migrazione di tutto l'utilizzo al bypass multimediale, è possibile creare un trunk separato e separare i criteri di routing vocale online per instradare il trunk di bypass multimediale e assegnare a utenti specifici. 
 
 Passaggi di configurazione di alto livello:
 

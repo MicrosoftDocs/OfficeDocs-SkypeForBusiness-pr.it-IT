@@ -14,13 +14,13 @@ ms.assetid: f8109905-3279-475f-a64b-31d37af48bfe
 ms.collection:
 - M365-collaboration
 description: Questo articolo illustra come gestire i dispositivi Microsoft teams rooms in modo integrato con Azure monitor.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8ddc76c43bf3aff42312f18ed35fc7aec9691edb
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 74c4ba537adeeeffbc7f3f3ca1cfba7481dff6fb
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137592"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905458"
 ---
 # <a name="manage-microsoft-teams-rooms-devices-with-azure-monitor"></a>Gestire i dispositivi Microsoft teams Rooms con Azure monitor
 
@@ -44,7 +44,7 @@ La comprensione di queste descrizioni degli eventi avvisa rapidamente i problemi
 | 3001  <br> Evento di errore  | Si tratta di un evento di errore hardware. L'app Microsoft teams Rooms ha un processo che controlla l'integrità dei componenti hardware connessi (prima della sala, del microfono, del relatore, della videocamera) ogni 5 minuti. Se uno o più componenti non sono sani, scrive EventId 3001 nel log eventi. Questo evento viene scritto ogni 5 minuti finché non viene risolto il problema con il dispositivo.   | {"Descrizione": " **stato di visualizzazione della sala: non sano.** Il numero di visualizzazioni configurato è 2. Il numero di visualizzazione reale è 0. **Stato microfono conferenza: non sano.** Stato altoparlante conferenza: integro. Stato altoparlante predefinito: integro. Stato fotocamera: integro. "," ResourceState ":" non integro "," OperationName ":" HardwareCheckEngine "," OperationResult ":" fail "," OS ":" Windows 10 "," OSVersion ":" 10.0.14393.1198 "," alias ":"<span></span>alias @contoso. com "," DisplayName ":" la sala riunioni di Yosemite "," appVersion ":" 2.0.58.0 "," IndirizzoIPv4 ":" 10.10.10.10 "," IndirizzoIPv6 ":" IndirizzoIPv6 "," IPv4Address2 ":" 10.10.10.10 "} <br><br>  Le periferiche hardware vengono visualizzate in modo sano o non integro. <br> In questo esempio sono configurati due fronti di visualizzazione della sala e attualmente nessuno di essi è disponibile. Lo stato del microfono conferenza non è sano, che potrebbe avere diverse possibili cause. Poiché almeno una risorsa non ha superato il controllo, il ResourceState viene elencato come non sano. Inviare un tecnico per indagare ulteriormente. |
 | 4000  <br> Informazioni  <br> | Si tratta di un evento di riavvio dell'app. Ogni volta che l'app viene riavviata, l'evento verrà loggato nel log eventi di Windows.  <br> | {"Description": "riavvia app.", "ResourceState": "Healthy", "OperationName": "Restart", "OperationResult": "Pass", "OS": "Windows 10", "OSVersion": "10.0.14393.693", "alias": "alias<span></span>@domain. com", "DisplayName": "nome visualizzato", "appVersion": "1.0.38.0", "IndirizzoIPv4": "10.10.10.10", "IndirizzoIPv6": "IP V6 Address"} <br><br> L'app può essere riavviata per diversi motivi. Confrontare la frequenza di riavvio dei dispositivi nello stesso edificio e in edifici diversi. Tieni presenti problemi noti come le fluttuazioni e gli errori di alimentazione, poiché potrebbero essere utili per i problemi di infrastruttura.|
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
  
 
 [Pianificare la gestione di Microsoft teams Rooms con Azure monitor](azure-monitor-plan.md)

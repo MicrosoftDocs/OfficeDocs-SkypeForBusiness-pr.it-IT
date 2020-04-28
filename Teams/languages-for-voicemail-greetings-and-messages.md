@@ -20,13 +20,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Phone System
-description: 'Scopri quali lingue puoi impostare in Skype for Business per i messaggi di sistema predefiniti. '
-ms.openlocfilehash: 78d3c53782e83ae191983bd8d7af2f1f5072f1df
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+- seo-marvel-apr2020
+description: Informazioni sulle lingue che è possibile impostare in Skype for business per i messaggi di sistema predefiniti e i saluti della segreteria telefonica.
+ms.openlocfilehash: e5158c7b313ad13abbd370550c38f54c8df04d29
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836586"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904521"
 ---
 # <a name="languages-for-voicemail-greetings-and-messages"></a>Lingua per i messaggi e i saluti della segreteria telefonica
 
@@ -61,7 +62,7 @@ Per cambiare la lingua usata da Skype for Business per i messaggi di saluto dell
 |Italiano  <br/> |Italia  <br/> |it-IT  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Giapponese  <br/> |Giappone  <br/> |ja-JP  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Coreano  <br/> |Coreano  <br/> |ko-KR  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |
-|Norvegese (Bokmål)  <br/> |Norvegia  <br/> |nb-NO  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |No  <br/> |
+|Norvegese (Bokmål)  <br/> |Norvegia  <br/> |nb-NO  <br/> |Sì  <br/> |No  <br/> |No  <br/> |
 |Polacco  <br/> |Polonia  <br/> |pl-PL  <br/> |Sì  <br/> | Sì <br/> |No  <br/> |
 |Portoghese  <br/> |Brasile  <br/> |pt-BR  <br/> |Sì, ma viene utilizzato il portoghese continentale (pt-PT).  <br/> |Sì  <br/> |Sì  <br/> |
 |Portoghese  <br/> |Portogallo  <br/> |pt-PT  <br/> |Sì  <br/> |Sì  <br/> |Sì, ma viene utilizzato il portoghese brasiliano (pt-BR).  <br/> |

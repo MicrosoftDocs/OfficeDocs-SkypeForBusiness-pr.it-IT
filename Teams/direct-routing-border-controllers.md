@@ -16,14 +16,14 @@ appliesto:
 hideEdit: true
 f1.keywords:
 - NOCSH
-description: Partner Microsoft con fornitori di SBC selezionati per certificare il lavoro di SBCs con il routing diretto.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ec7dacf18c27eb6aafbb29adc2ce618e9db07e68
-ms.sourcegitcommit: 0fdc60840f45ff5b0a39a8ec4a21138f6cab49c9
+description: L'amministratore può conoscere i controller di bordo della sessione (SBCs) che sono stati certificati per il routing diretto.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 4d0a4f5846b120559b2fbaea97e191f1740ad4be
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160046"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901831"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 

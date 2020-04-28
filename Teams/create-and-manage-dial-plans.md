@@ -19,13 +19,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Calling Plans
-description: Informazioni su come creare e gestire i dial plan (PSTN Calling dial plans) e su come gestirli.
-ms.openlocfilehash: 9c72745e6dee12ffbac4d91df47df37c327aab33
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+- seo-marvel-apr2020
+description: Informazioni su come usare l'interfaccia di amministrazione di Microsoft teams o Windows PowerShell per creare e gestire piani di chiamata (piani di chiamate PSTN).
+ms.openlocfilehash: 50cdbaf9fd1e5ae10eca20c0f547dce29d606983
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43778262"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43902021"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare piani di chiamata
 
@@ -212,7 +213,7 @@ Get-CsOnlineUser | Where-Object {$_.TenantDialPlan -eq "RedmondDialPlan"}
 
 Esegui questa operazione per rimuovere eventuali TenantDialPlan assegnati da tutti gli utenti che hanno un provider dihosting di sipfed.online.lync.com.
 ```PowerShell
-Get-CsOnlineUser -Filter {HostingProvider -eq “sipfed.online.lync.com”} | Grant-CsTenantDialPlan -policyname $null
+Get-CsOnlineUser -Filter {HostingProvider -eq "sipfed.online.lync.com"} | Grant-CsTenantDialPlan -policyname $null
 ```
 
 Eseguirli per aggiungere il piano di chiamata esistente locale denominato OPDP1 come un piano di chiamata del tenant per l'organizzazione. È necessario innanzitutto salvare il piano di chiamata del tenant locale in un file .xml e quindi utilizzarlo per creare il nuovo piano di chiamata del tenant.

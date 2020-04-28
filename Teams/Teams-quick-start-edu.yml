@@ -2,7 +2,7 @@
 title: Guida introduttiva-Microsoft teams per gli amministratori dell'istruzione
 metadata:
   title: Guida introduttiva-Microsoft teams per gli amministratori dell'istruzione
-  description: Per gli amministratori IT in Education, distribuire Microsoft teams nell'organizzazione.
+  description: Informazioni su come gli amministratori IT degli istituti di istruzione possono distribuire Microsoft teams in un'organizzazione.
   audience: IT Pro
   level: Intermediate
   displayType: one-column
@@ -20,14 +20,15 @@ metadata:
   - CSH
   ms.custom:
   - NewAdminCenter_Update
+  - seo-marvel-mar2020
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: 6bee8d59066fb589d5cc3625c98363711a75987b
-  ms.sourcegitcommit: aaae9df142ebb844a1fea27d3ae3b95130903d6a
+  ms.openlocfilehash: 6920451ab328dc534571dda06b70e601aec4c148
+  ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 04/01/2020
-  ms.locfileid: "43100043"
+  ms.lasthandoff: 04/27/2020
+  ms.locfileid: "43902411"
 items:
 - durationInMinutes: 2
   content: "\n[Microsoft teams](https://support.office.com/article/Video-What-is-Microsoft-Teams-b98d533f-118e-4bae-bf44-3df2470c2b12) è un hub digitale che raggruppa conversazioni, riunioni, file e app in un'unica posizione. Dato che è basato su Office 365, le scuole traggono vantaggio dall'integrazione con le loro comuni app e servizi di Office. Offre sicurezza e conformità a livello aziendale che è estensibile e personalizzabile per soddisfare le esigenze di ogni istituto scolastico.\n\nCon Microsoft teams, la scuola o l'istituzione può creare aule collaborative, connettersi a comunità di apprendimento professionale, comunicare con il personale scolastico, coordinare la ricerca tra le istituzioni o semplificare più facilmente gli sforzi di vita degli studenti, come i club o le attività extrascolastiche, il tutto da un'esperienza unica in Office 365 per l'istruzione.\n\nMicrosoft teams Risparmia tempo, approfondisce le connessioni e semplifica la logistica quotidiana. In questo modo il personale può concentrarsi sui propri ruoli di educatori, ricercatori e dirigenti della scuola o dell'Istituto.  \n\nQuesta guida è per gli amministratori IT in Education, inclusi quelli che non hanno ancora distribuito Team. Questa guida ti aiuterà a iniziare: \n- Abilitazione di team per la tua scuola\n- Informazioni sui tipi di controlli disponibili per la gestione dei team all'interno dell'Istituto di istruzione\n- Ricerca di servizi partner tramite riferimenti a documenti esterni \n\nQuesta guida è progettata per iniziare rapidamente con le raccomandazioni di configurazione specifiche per i team nelle scuole. Non si tratta di una soluzione adatta a una sola dimensione, ma è un buon punto di partenza. \n\nSe i team sono già stati distribuiti (come versione pilota o completa) e sono alla ricerca di puntatori su come usare teams, vedere [Microsoft teams for Education](https://support.office.com/article/Microsoft-Teams-5aa4431a-8a3c-4aa5-87a6-b6401abea114).\n\n## <a name=\"before-you-begin\"></a>Prima di iniziare\n\n1. [Distribuire School Data Sync](https://docs.microsoft.com/SchoolDataSync) per semplificare la creazione automatica di team per gli insegnanti. Contatto [https://aka.ms/sdssupport](https://aka.ms/sdssupport) per assistenza per la distribuzione.\n2. Configurare le porte e i protocolli corretti per i team. Vedere [URL e intervalli di indirizzi IP di Office 365](office-365-urls-ip-address-ranges.md).\n3. [Preparare la rete della scuola per i team](prepare-network.md).\n4. Scegliere un tipo di team. Teams for Education offre tre nuovi tipi di Team (per un totale di quattro). Per comprendere le differenze e i casi di utilizzo di ognuno, vedere [scegliere un tipo di team per collaborare in teams](https://support.office.com/article/Choose-a-team-type-to-collaborate-in-Microsoft-Teams-0a971053-d640-4555-9fd7-f785c2b99e67).\n"

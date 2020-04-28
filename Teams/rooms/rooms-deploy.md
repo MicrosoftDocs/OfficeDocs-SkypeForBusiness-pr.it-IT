@@ -1,5 +1,5 @@
 ---
-title: Distribuire le sale di Microsoft Teams
+title: Distribuire Microsoft Teams Rooms
 ms.author: v-lanac
 author: lanachin
 manager: serdars
@@ -12,15 +12,15 @@ f1.keywords:
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-ms.custom: ''
+ms.custom: seo-marvel-apr2020
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
-description: Leggere questo articolo per informazioni sulla distribuzione delle sale di Microsoft teams.
-ms.openlocfilehash: 650302d6d952a59c1cc460e2cdf8758cfb0fcd41
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+description: Leggere questo articolo per informazioni su come distribuire le sale di Microsoft teams, incluse le fasi di distribuzione.
+ms.openlocfilehash: cf5ba9614426c59412c53b7e0e9420ca09ef6267
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41863347"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905408"
 ---
 # <a name="deployment-overview"></a>Panoramica della distribuzione
 
@@ -82,7 +82,7 @@ _Esempio di tabella di pianificazione dell'account del servizio Microsoft teams 
 
 | **Sito**  | **Nome sala** | **Tipo di sala** | **Funzionalità future della sala**                                                 | **Caratteristiche dell'account di Microsoft teams rooms**                                                                                         |
 |-----------|---------------|---------------|------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| HQ di Londra | Curie         | Media        | 1 schermata, audio e video + presentazione <br>Accesso ai servizi di conferenza telefonica con chiamata in ingresso<br> Accesso PSTN  | Abilitato per Skype for business, abilitato per Exchange (cassetta postale delle risorse) <br>Abilitato per i servizi di audioconferenza <br>Abilitato per il sistema telefonico |
+| HQ di Londra | Curie         | Media.        | 1 schermata, audio e video + presentazione <br>Accesso ai servizi di conferenza telefonica con chiamata in ingresso<br> Accesso PSTN  | Abilitato per Skype for business, abilitato per Exchange (cassetta postale delle risorse) <br>Abilitato per i servizi di audioconferenza <br>Abilitato per il sistema telefonico |
 | HQ di Sydney | Collina          | Grande         | 2 schermi, audio e video + presentazione<br>Accesso ai servizi di conferenza telefonica con chiamata in ingresso<br> Accesso PSTN  | Abilitato per Skype for business, abilitato per Exchange (cassetta postale delle risorse)<br> Abilitato per i servizi di audioconferenza <br>Abilitato per il sistema telefonico |
 
 
@@ -138,7 +138,7 @@ Quando si pianifica di distribuire le sale di Microsoft teams, è possibile pren
 | Distribuire più di 50 dispositivi Microsoft teams rooms, distribuire dispositivi da più fornitori o richiedere agli agenti specifici dell'organizzazione come parte della distribuzione. | Usare una piattaforma di distribuzione e creazione di software basato su sequencer, ad esempio [Microsoft endpoint Configuration Manager](rooms-scale.md).  |
 
 
-**Suggerimento PRO** : ogni sala di Microsoft Teams deve avere un nome di computer valido e univoco nella rete. Molti sistemi di monitoraggio e avviso visualizzano il nome del computer come identificatore chiave, quindi è importante sviluppare una convenzione di denominazione per le distribuzioni di Microsoft teams Rooms che consente al personale di supporto di individuare facilmente le sale di Microsoft teams contrassegnate che richiedono un'azione. Un esempio potrebbe essere l'uso di un modello di**-*nome della sala* MTR-sito (MTR-Lon-Curie). 
+**Suggerimento PRO** : ogni sala di Microsoft Teams deve avere un nome di computer valido e univoco nella rete. Molti sistemi di monitoraggio e avviso visualizzano il nome del computer come identificatore chiave, quindi è importante sviluppare una convenzione di denominazione per le distribuzioni di Microsoft teams Rooms che consente al personale di supporto di individuare facilmente le sale di Microsoft teams contrassegnate come che richiedono un'azione. Un esempio potrebbe essere l'uso di un modello di*Site*-*nome della sala* MTR-sito (MTR-Lon-Curie). 
 
 Nell'ambito della distribuzione è anche necessario considerare la strategia per la gestione e la configurazione degli [account locali](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/clients-and-devices/skype-room-systems-v2-0#local-accounts) creati dal programma di installazione dell'applicazione Microsoft teams rooms.
 
@@ -166,12 +166,12 @@ _Tabella di distribuzione di esempio_
 
 | **Sito**  | **Nome sala** | **Tipo di sala** | **Sistema Microsoft teams rooms**  | **Periferiche**  | **Nome computer di Microsoft teams rooms**  | **Account delle risorse di Microsoft teams rooms**  |
 |-----------|---------------|---------------|-----------------------------------|------------------|------------------------------------------|---------------------------------------------|
-| HQ di Londra | Curie         | Media        |                                   |                  |                                          |                                             |
+| HQ di Londra | Curie         | Media.        |                                   |                  |                                          |                                             |
 | HQ di Sydney | Collina          | Grande         |                                   |                  |                                          |                                             |
 
 ### <a name="microsoft-teams-rooms-application-and-peripheral-device-configuration"></a>Configurazione di applicazioni e periferiche di Microsoft teams rooms 
 
-Dopo che ogni sistema di Microsoft teams Rooms è stato distribuito fisicamente e i dispositivi periferici supportati sono connessi, è necessario configurare l'applicazione Microsoft teams Rooms per assegnare l'account delle risorse di Microsoft teams Rooms e la password create in precedenza , per consentire al sistema Microsoft teams Rooms di accedere a Microsoft teams o Skype for business ed Exchange. È fondamentale sfruttare le periferiche audio e video USB certificate collegate in un punto qualsiasi del documento. L'operazione non può causare un comportamento imprevedibile. 
+Dopo che ogni sistema di Microsoft teams Rooms è stato distribuito fisicamente e i dispositivi periferici supportati sono connessi, è necessario configurare l'applicazione Microsoft teams Rooms per assegnare l'account delle risorse di Microsoft teams Rooms e la password creati in precedenza, per consentire al sistema di Microsoft teams Rooms di accedere a Microsoft teams o Skype for business ed Exchange. È fondamentale sfruttare le periferiche audio e video USB certificate collegate in un punto qualsiasi del documento. L'operazione non può causare un comportamento imprevedibile. 
 
 È possibile configurare manualmente ogni sistema di Microsoft teams rooms. In alternativa, puoi usare un file di configurazione XML centralizzato, per-Microsoft teams Rooms per gestire le impostazioni dell'applicazione e sfruttare uno script di GPO per la riapplicazione della configurazione desiderata, ogni volta che viene avviato il sistema di Microsoft teams rooms. 
 
@@ -198,7 +198,7 @@ _Tabella risorse di esempio_
 
 | **Sito**  | **Nome sala** | **Tipo di sala** | **Microsoft teams Rooms Nr. seriale**  | **Dispositivi periferici/nos seriale/porte**  | **Nome computer di Microsoft teams rooms**  | **Account del servizio Microsoft teams rooms**  | **Data di distribuzione** |
 |-----------|---------------|---------------|------------------------------------------|------------------------------------------|------------------------------------------|--------------------------------------------|-------------------|
-| HQ di Londra | Curie         | Media        |                                          |                                          |                                          |                                            |                   |
+| HQ di Londra | Curie         | Media.        |                                          |                                          |                                          |                                            |                   |
 | HQ di Sydney | Collina          | Grande         |                                          |                                          |                                          |                                            |                   |
 
 

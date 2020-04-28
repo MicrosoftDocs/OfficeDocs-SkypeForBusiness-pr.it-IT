@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 849d54b5bbdab228d4d91329894da3cdf993017b
-ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
+ms.openlocfilehash: 597dfa4b2184272c96843cca1ed7c7b79e4d3667
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42706606"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43902271"
 ---
 # <a name="choose-your-upgrade-journey-from-skype-for-business-to-teams"></a>Scegliere il viaggio di aggiornamento da Skype for business a teams
 
@@ -41,7 +41,7 @@ Questo articolo fa parte della fase di definizione del progetto del viaggio di a
 Come cliente esistente di Skype for business, la transizione completa ai team può richiedere del tempo. Puoi tuttavia iniziare a realizzare il valore dei teams oggi, consentendo agli utenti di usare teams insieme a Skype for business. Poiché esistono alcune funzionalità sovrapposte tra le due app, è consigliabile esaminare le modalità di coesistenza e di aggiornamento disponibili per determinare il percorso appropriato per l'organizzazione. Ad esempio, è possibile scegliere di abilitare tutti i carichi di lavoro su entrambe le soluzioni senza interoperabilità. In alternativa, potresti decidere di gestire l'esperienza utente, introducendo gradualmente le funzionalità dei team o puntando su gruppi di utenti per le funzionalità di selezione, finché l'organizzazione non è pronta per aggiornare tutti i team. Usa il risultato del tuo pilota per valutare il viaggio di aggiornamento giusto per l'organizzazione.
 
 > [!IMPORTANT]
-> Skype for business online verrà ritirato il 31 luglio 2021, dopodiché non sarà più accessibile o supportato. Per massimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, ti invitiamo a iniziare subito il tuo viaggio in Microsoft teams.
+> Skype for Business Online verrà ritirato il 31 luglio 2021 e non sarà più accessibile o supportato. Per massimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, ti invitiamo a iniziare subito il tuo viaggio in Microsoft teams.
 
 In questo articolo vengono illustrate le varie modalità che consentono di gestire quali modalità in Skype for business e teams sono disponibili per gli utenti. Come per qualsiasi distribuzione, ti consigliamo vivamente di [pilotare il piano previsto](pilot-essentials.md) con un gruppo selezionato di utenti prima di aggiornare l'organizzazione a teams. Tenere presente che l'introduzione di una nuova tecnologia può essere di disturbo per gli utenti. Richiedere tempo per valutare la disponibilità degli utenti e implementare un piano di comunicazione e formazione prima di implementare una delle modalità descritte in questo documento.
 
@@ -102,7 +102,7 @@ La tabella seguente riepiloga l'esperienza dei team per la modalità Islands e T
 | Esperienza Teams | In modalità Isole | In modalità TeamsOnly |
 |:------------------ | :------------------- | :------------------ |
 | Chat in arrivo e chiamate ricevute in:|  Teams o Skype for business | Teams |
-| Chiamate PSTN ricevute in: | Skype for business <br>L'uso della funzionalità PSTN in teams non è supportato in modalità Islands.     | Teams |   
+| Chiamate PSTN ricevute in: | Skype for Business <br>L'uso della funzionalità PSTN in teams non è supportato in modalità Islands.     | Teams |   
  |Icone di presenza    | La presenza in Skype for business e teams è indipendente. Gli utenti possono visualizzare stati diversi per gli stessi utenti delle isole, a seconda del client che usano. | La presenza si basa esclusivamente sulle attività dell'utente in teams. Tutti gli altri utenti, indipendentemente dal client che usano, vedono quella presenza. | 
  | Pianificazione delle riunioni    | Gli utenti possono pianificare le riunioni in teams o in Skype for business. Vedranno entrambi i componenti aggiuntivi in Outlook.    |     Gli utenti pianificano solo riunioni in teams. Solo il componente aggiuntivo teams è disponibile in Outlook. | 
 
@@ -145,10 +145,10 @@ In alternativa, l'amministratore può prima di tutto spostare solo la pianificaz
 
 |Esperienza Teams  |In modalità SfBWithTeamsCollab |In modalità SfBWithTeamsCollabAndMeetings |In modalità TeamsOnly  |
 |---------|---------|---------|---------|
-|Chat in arrivo e chiamate VOIP dagli utenti dell'organizzazione ricevute in:     | Skype for business        | Skype for business       | Teams        |
-|Chiamate PSTN ricevute in:     | Skype for business        |Skype for business         | Teams        |
-|Icone di presenza     | Skype for business        |Skype for business         | Teams        |
-|Pianificazione delle riunioni     | Skype for business         | Teams        | Teams        |
+|Chat in arrivo e chiamate VOIP dagli utenti dell'organizzazione ricevute in:     | Skype for Business        | Skype for Business       | Teams        |
+|Chiamate PSTN ricevute in:     | Skype for Business        |Skype for Business         | Teams        |
+|Icone di presenza     | Skype for Business        |Skype for Business         | Teams        |
+|Pianificazione delle riunioni     | Skype for Business         | Teams        | Teams        |
 
 
 La tabella seguente riepiloga i pro e i contro dell'uso delle modalità Skype for business come passaggio di transizione verso la modalità TeamsOnly.

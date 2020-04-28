@@ -11,19 +11,20 @@ ms.collection:
 - M365-collaboration
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare i modelli di teams per creare strutture del team progettate per le esigenze del rivenditore.
+description: Informazioni su come usare i modelli di teams per creare strutture del team progettate per le esigenze del rivenditore fornendo impostazioni predefinite, canali e app preinstallate.
 f1.keywords:
 - CSH
 ms.custom:
 - NewAdminCenter_Update
+- seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ec16f919bad5ed696741664836aa3d7127837c5a
-ms.sourcegitcommit: 92a278c0145798266ecbe052e645b2259bcbd62d
+ms.openlocfilehash: 4477d42cf7036ac93d79684407ee97b7b9e9b900
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "42892366"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904661"
 ---
 # <a name="get-started-with-teams-templates-in-retail"></a>Introduzione ai modelli di teams in Retail 
 
@@ -43,7 +44,7 @@ Il modello dello Store è ideale per creare un team che rappresenti una singola 
 
 | Tipo di modello di base | baseTemplateId | Proprietà disponibili con questo modello di base |
 | ------------------ | -------------- | ----------------------------------------------------- |
-| Negozio <br>Store | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailStore')`| Canali <ul><li>Turni di consegna\*</li><li>Apprendimento\*</li></ul>\*Canali preferiti automaticamente<br><br>Proprietà del team <ul><li>Visibilità del team impostata su pubblico</li></ul> <br>Autorizzazioni per i membri <ul><li>Non è possibile creare/aggiornare/eliminare i canali </li><li>Non è possibile aggiungere/rimuovere app </li><li>Non è possibile creare/aggiornare/rimuovere schede</li><li>Non è possibile creare/aggiornare/rimuovere connettori</li><ul>|
+| Negozio <br>Negozio | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailStore')`| Canali <ul><li>Turni di consegna\*</li><li>Apprendimento\*</li></ul>\*Canali preferiti automaticamente<br><br>Proprietà del team <ul><li>Visibilità del team impostata su pubblico</li></ul> <br>Autorizzazioni per i membri <ul><li>Non è possibile creare/aggiornare/eliminare i canali </li><li>Non è possibile aggiungere/rimuovere app </li><li>Non è possibile creare/aggiornare/rimuovere schede</li><li>Non è possibile creare/aggiornare/rimuovere connettori</li><ul>|
 ||||
 
 Modi consigliati per personalizzare il modello di archivio per l'organizzazione:
@@ -58,12 +59,12 @@ Il modello di collaborazione di Manager è un altro dei modelli di Team progetta
 
 | Tipo di modello di base | baseTemplateId | Proprietà disponibili con questo modello di base |
 | ------------------ | -------------- | ----------------------------------------------------- |
-| Negozio <br>Store | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailManagerCollaboration')`| Canali <ul><li>Operazioni\*</li><li>Apprendimento\*</li></ul>\*Canali preferiti automaticamente<br><br>Proprietà del team <ul><li>Visibilità del team impostata su privato</li></ul> <br>Autorizzazioni per i membri <ul><li>Può creare/aggiornare/eliminare i canali </li><li>Può aggiungere/rimuovere app </li><li>Può creare/aggiornare/rimuovere schede</li><li>Può creare/aggiornare/rimuovere connettori</li><ul>|
+| Negozio <br>Negozio | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailManagerCollaboration')`| Canali <ul><li>Operazioni\*</li><li>Apprendimento\*</li></ul>\*Canali preferiti automaticamente<br><br>Proprietà del team <ul><li>Visibilità del team impostata su privato</li></ul> <br>Autorizzazioni per i membri <ul><li>Può creare/aggiornare/eliminare i canali </li><li>Può aggiungere/rimuovere app </li><li>Può creare/aggiornare/rimuovere schede</li><li>Può creare/aggiornare/rimuovere connettori</li><ul>|
 ||||
 
 Modi consigliati per personalizzare il modello di collaborazione di gestione per l'organizzazione:
 
-- Se l'organizzazione ha siti Web interni, ad esempio un sito di SharePoint, che sono rilevanti per i responsabili, valutare la possibilità di aggiungerli come schede in un canale del team pertinente (vedere [la documentazione relativa alle istruzioni](get-started-with-teams-templates.md) ).
+- Se l'organizzazione ha siti Web interni, ad esempio un sito di SharePoint, che sono rilevanti per i responsabili, è consigliabile aggiungerli come schede in un canale del team pertinente. Per istruzioni, vedere la documentazione del [modello Microsoft teams](get-started-with-teams-templates.md) .
 
 ## <a name="how-to-use-first-party-templates"></a>Come usare i modelli di First Party
 

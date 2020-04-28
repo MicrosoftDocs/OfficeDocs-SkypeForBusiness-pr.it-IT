@@ -20,14 +20,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
-- seo-marvel-mar2020
-description: 'Informazioni su come cercare i numeri dei servizi di conferenza telefonica con accesso esterno da Microsoft teams. '
-ms.openlocfilehash: d430daf841694029818f54d27abfeba3bc77604e
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+- seo-marvel-apr2020
+description: Informazioni su come cercare i numeri per le conferenze telefoniche con accesso esterno disponibili per i servizi di audioconferenza in Microsoft teams.
+ms.openlocfilehash: 962ca1626ab0bcc6fe3ac7e8da1c0183dbe3dcf2
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140969"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905758"
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers-in-microsoft-teams"></a>Visualizzare un elenco di numeri di servizi di audioconferenza in Microsoft Teams
 

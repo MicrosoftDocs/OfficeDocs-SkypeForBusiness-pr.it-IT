@@ -15,14 +15,14 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Informazioni su come configurare un SBC (Session Border Controller) per servire più tenant.
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1419a42a6affa00bbeed35d328f91331ad5357ec
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+description: Informazioni su come configurare un SBC (Session Border Controller) per servire più tenant per i partner Microsoft e/o i vettori PSTN.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 061d0afec96e6c76e49f6471ea8ed2f673e33eba
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779572"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901851"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 

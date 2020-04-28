@@ -13,13 +13,14 @@ localization_priority: Normal
 ms.assetid: 3034fdcb-7c89-42c4-9c5e-13400e82d88f
 ms.collection:
 - M365-collaboration
-description: Leggere questo argomento per informazioni su come partecipare a un PC appliance di sistema Skype room al proprio dominio.
-ms.openlocfilehash: f2cad169b812d3da3a964c96adabc498df1009b8
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+description: L'amministratore può ottenere informazioni su come partecipare a un PC Appliance Skype room System a un dominio Active Directory, insieme alle considerazioni per farlo.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: dfcee1421c25903a5ec8deb2f66871ed1d57ef1c
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826084"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905438"
 ---
 <!-- This asset missed in the rebrand, and honestly not sure if it's worth keeping.   -->
 
@@ -60,7 +61,7 @@ Anche se si crea un'unità organizzativa separata e si blocca l'ereditarietà, e
   
 Potresti avere più approcci per risolvere questi problemi. Ti consigliamo di consultarti con gli esperti di Active Directory per assicurarti di avere a disposizione un'unità organizzativa che disponga di impostazioni GPO appropriate o almeno un'unità organizzativa in cui i criteri descritti in precedenza non esistono. È consigliabile abilitare la qualità del servizio (QoS) per i dispositivi Skype room System.
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
   
 [Configurazione dispositivo: crearne una nuova o modificarne una esistente](/skypeforbusiness/help-topics/help-lscp/device-configuration-create-new-or-edit-existing.md)
 

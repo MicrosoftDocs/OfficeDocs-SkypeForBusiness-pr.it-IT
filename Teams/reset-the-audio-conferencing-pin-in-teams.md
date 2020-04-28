@@ -20,13 +20,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
-description: 'Scopri cosa devi sapere sui pin e come reimpostarli in Microsoft teams. '
-ms.openlocfilehash: 92f0fcf0b5a5e8afe0615b54b08f0fa407c4a969
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+- seo-marvel-apr2020
+description: Informazioni su come reimpostare il PIN per le conferenze audio di un utente in Microsoft teams e scoprire informazioni importanti sui pin.
+ms.openlocfilehash: 451031698294fc49acee4a51efa0203cd3eb898d
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41838226"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905488"
 ---
 # <a name="reset-the-audio-conferencing-pin-in-microsoft-teams"></a>Reimpostare il PIN di conferenza audio in Microsoft Teams
 
@@ -36,7 +37,7 @@ Le riunioni possono essere avviate quando un utente autenticato entra in contatt
 
 ## <a name="reset-a-users-pin"></a>Reimpostare il PIN dell'utente
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 

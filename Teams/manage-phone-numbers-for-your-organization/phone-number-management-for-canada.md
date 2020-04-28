@@ -19,13 +19,14 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
+- seo-marvel-apr2020
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Canada per Microsoft teams.
-ms.openlocfilehash: 9b24413ae7e1534e1a39cc76cc943341221e82cc
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 1ebeb077f17c47ed91509538ab5a66d1a2c19620
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779823"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905838"
 ---
 # <a name="phone-number-management-for-canada"></a>Gestione dei numeri di telefono per il Canada
 
@@ -51,6 +52,5 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
 
 [Etichetta Disclaimer per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
-
 
 

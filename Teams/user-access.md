@@ -13,17 +13,18 @@ f1.keywords:
 - CSH
 ms.reviewer: ritikag
 search.appverid: MET150
-description: Informazioni su come abilitare o disabilitare l'accesso a livello utente per singolo utente.
+description: Informazioni su come abilitare o disabilitare l'accesso a livello utente per singolo utente assegnando o rimuovendo la licenza per il prodotto Microsoft teams.
 ms.custom:
 - NewAdminCenter_Update
+- seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f571dd461c6c783703159dfd6e9beb343612dd58
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 10485fd7f04cfae675ea38967389851d4d72be90
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779482"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43903351"
 ---
 <a name="manage-user-access-to-microsoft-teams"></a>Gestire l'accesso degli utenti a Microsoft Teams
 =====================================
