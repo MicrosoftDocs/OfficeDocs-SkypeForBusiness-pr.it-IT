@@ -10,21 +10,23 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come guidare l'adozione di teams usando il prodotto.
+description: Informazioni su come guidare l'adozione di teams gestendo la distribuzione di Office 365 con teams, incluso come bloccare le risorse chiave come schede nei canali appropriati.
 f1.keywords:
 - CSH
-ms.custom: Adopt
+ms.custom:
+- Adopt
+- seo-marvel-apr2020
 ms.collection:
 - Teams_ITAdmin_Adopt
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 69cfb557f04644c1bb54d78ae24a8110d42ee8a0
-ms.sourcegitcommit: 494e5956619084ff8f0a4f42efb5081c4530488a
+ms.openlocfilehash: 0b1a22c76cd2a9ef9ca5d4be667cbfebe8a19b62
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2020
-ms.locfileid: "42551033"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904928"
 ---
 # <a name="create-your-first-teams-in-microsoft-teams"></a>Creare i primi team in Microsoft Teams
 

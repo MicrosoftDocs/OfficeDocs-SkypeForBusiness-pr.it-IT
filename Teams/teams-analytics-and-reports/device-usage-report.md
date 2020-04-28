@@ -16,18 +16,19 @@ ms.collection:
 description: Informazioni su come usare il report utilizzo del dispositivo teams nell'interfaccia di amministrazione di Microsoft teams per vedere come gli utenti dell'organizzazione si connettono ai team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 16abf763579a542583f3aafa30252c1423759641
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 128a9e816249dd918a5bf5fb380fde78d3ed9ce2
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827354"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904918"
 ---
 # <a name="microsoft-teams-device-usage-report"></a>Report sull'utilizzo di dispositivi Microsoft Teams
 
 Il report utilizzo di dispositivi teams nell'interfaccia di amministrazione di Microsoft teams fornisce informazioni su come gli utenti si connettono ai team. Puoi usare il report per visualizzare i dispositivi usati in tutta l'organizzazione, incluso il numero di team che usano i loro dispositivi mobili quando si è in viaggio.  
 
-## <a name="view-the-report"></a>Visualizzare il report
+## <a name="view-the-device-usage-report"></a>Visualizzare il report sull'utilizzo dei dispositivi
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** > report**sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo del dispositivo teams**.
 2. In **intervallo di date**selezionare un intervallo e quindi fare clic su **Esegui report**.

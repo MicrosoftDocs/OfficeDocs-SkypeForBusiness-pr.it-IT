@@ -15,13 +15,14 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Leggere questo argomento per informazioni su come configurare il bypass multimediale con il routing diretto del sistema telefonico.
-ms.openlocfilehash: 8d6891d8ecabace3b093e2dc788edee6e9cc5bd1
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+description: Informazioni su come configurare il bypass multimediale con il routing diretto del sistema telefonico tramite il cambio di tutti gli utenti contemporaneamente o l'implementazione di un approccio graduale (consigliato).
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 2d6bb25296b7a98e6fea7a59a5dd9406622dbd96
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837606"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904838"
 ---
 # <a name="configure-media-bypass-with-direct-routing"></a>Configurare il bypass multimediale con Instradamento diretto
 
@@ -29,11 +30,11 @@ Prima di configurare il bypass multimediale con il routing diretto, assicurati d
 
 Per attivare il bypass multimediale, è necessario che siano soddisfatte le condizioni seguenti:
 
-1.  Verificare che il fornitore di Session Border Controller (SBC) di Choice supporti il bypass multimediale e fornisca istruzioni su come configurare il bypass in SBC. Vedere la pagina certificazione per informazioni su SBCs, che supportano il bypass multimediale e per le istruzioni.
+1.    Verificare che il fornitore di Session Border Controller (SBC) di Choice supporti il bypass multimediale e fornisca istruzioni su come configurare il bypass in SBC. Vedere la pagina certificazione per informazioni su SBCs, che supportano il bypass multimediale e per le istruzioni.
 
-2.  È necessario attivare il bypass multimediale nel trunk usando il comando seguente: **set-CSOnlinePSTNGateway-Identity <sbc_FQDN>-MediaBypass $true**.
+2.    È necessario attivare il bypass multimediale nel trunk usando il comando seguente: **set-CSOnlinePSTNGateway-Identity <sbc_FQDN>-MediaBypass $true**.
 
-3.  Verificare che le porte necessarie vengano aperte. 
+3.    Verificare che le porte necessarie vengano aperte. 
 
 
 ## <a name="migrate-from-non-bypassed-trunks-to-bypass-enabled-trunks"></a>Eseguire la migrazione da trunk non bypassati a trunk abilitati per bypass
@@ -59,7 +60,7 @@ Per un elenco di Session Border Controller (SBCs) Certified for Direct routing, 
 
 
 
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 [Pianificare il bypass multimediale con routing diretto](direct-routing-plan-media-bypass.md)
 
