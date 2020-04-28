@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come portare le app teams personalizzate dallo sviluppo alla distribuzione.
-ms.openlocfilehash: f8c5a7dcc12bc9b3823285138d15a0ccdf11c52a
-ms.sourcegitcommit: 7093388425b34c80e444a50d062290187b80047d
+ms.openlocfilehash: dd34b96a40affc2ffd7e5ddeb6a118a122831296
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/22/2020
-ms.locfileid: "42229936"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904948"
 ---
 # <a name="manage-your-line-of-business-apps-in-microsoft-teams"></a>Gestire le app line-of-business in Microsoft Teams
 
@@ -126,6 +126,20 @@ Per impostazione predefinita, per consentire agli utenti di trovare l'app, è ne
 Per aggiornare un'app, gli sviluppatori devono continuare a seguire il [passaggio 1](#step-1-develop-and-test) e il [passaggio 2](#step-2-validate-in-production).
 
 Puoi aggiornare l'app tramite il catalogo app tenant. A questo scopo, nell'interfaccia di amministrazione di Microsoft teams, vai alle >  **app teams****Manage Apps**. Nell'elenco delle app fare clic sul nome dell'app e quindi su **Aggiorna**. Questa operazione sostituisce l'app esistente nel catalogo dell'app tenant e tutti i criteri di autorizzazione per le app e i criteri di configurazione delle app restano applicati per l'app aggiornata.
+
+### <a name="end-user-update-experience"></a>Esperienza di aggiornamento degli utenti finali
+
+Nella maggior parte dei casi, dopo aver completato l'aggiornamento di un'app, la nuova versione verrà visualizzata automaticamente per gli utenti finali. Tuttavia, esistono alcuni aggiornamenti al manifesto di <a href="https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema" target="_blank">Microsoft teams</a> che richiedono l'accettazione da parte dell'utente:
+
+* è stato aggiunto o rimosso un bot
+* modifica della proprietà "botId" di un bot esistente
+* modifica della proprietà "isNotificationOnly" di un bot esistente
+* la proprietà "supportsFiles" del bot è cambiata
+* è stata aggiunta o rimossa un'estensione della messaggistica
+* è stato aggiunto un nuovo connettore
+* è stata aggiunta una nuova scheda statica
+* è stata aggiunta una nuova scheda configurabile
+* Proprietà all'interno di "webApplicationInfo" modificate
 
 ## <a name="related-apps"></a>App correlate
 

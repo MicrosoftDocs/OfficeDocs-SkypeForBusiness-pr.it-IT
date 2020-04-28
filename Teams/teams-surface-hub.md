@@ -8,23 +8,24 @@ audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.reviewer: jatpatel
-description: Configurare le impostazioni di amministrazione per Microsoft teams per Surface Hub.
+description: Informazioni su come installare e configurare l'app team per Surface Hub in modo che i team siano l'applicazione predefinita per le chiamate e le riunioni.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
 - CSH
 ms.custom:
 - Devices
+- seo-marvel-apr2020
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5634c4ac5e5955d099555cce4f74b57a527662e9
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 589bbfe75f0beea88066b5a6188b1d29c98ddd5f
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836936"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905648"
 ---
 <a name="deploy-microsoft-teams-for-surface-hub"></a>Distribuire Microsoft teams per Surface Hub
 ======================================
@@ -41,7 +42,7 @@ Prima di installare teams per Surface Hub, assicurarsi di eseguire le operazioni
 Queste istruzioni sono per l'installazione di teams per Surface Hub da Microsoft Store. 
  
 1. Avviare Microsoft Store:<br>
-   un. Toccare **Avvia** > **tutte** > **le impostazioni delle**app.<br> b. Toccare **account del dispositivo hub superficie, gestione**.<br>
+   a. Toccare **Avvia** > **tutte** > **le impostazioni delle**app.<br> b. Toccare **account del dispositivo hub superficie, gestione**.<br>
    c. A sinistra, toccare la scheda **funzionalità & app** .<br> 3D. Sulla destra toccare il pulsante **Apri Store** . 
 2. In Microsoft Store cercare *Microsoft teams*. Verrà visualizzato l' **Hub Microsoft teams per Surface** . Toccare il pulsante **Ottieni l'app** per installarlo.  
 3. Al termine dell'installazione, riavviare Surface Hub. 

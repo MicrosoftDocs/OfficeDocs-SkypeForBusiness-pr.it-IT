@@ -22,13 +22,14 @@ ms.custom:
 - Reporting
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
-description: 'Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate. '
-ms.openlocfilehash: 52bf3856ad5c737143d179525e5c2870748f3b46
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+- seo-marvel-apr2020
+description: Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate.
+ms.openlocfilehash: bfb67c6246581513d06ad4489ab8c3b534ad04d4
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43788955"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43914064"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -409,11 +410,11 @@ EndpointName, EndpointMake, EndpointModel, EndpointType, EndpointLabel1, Endpoin
 
 Se hai creato report o caricato i file dei dati del tenant (mapping) in Call Quality dashboard per Skypehttps://cqd.lync.com) for business (e vuoi eseguire la migrazione a Call Quality dashboardhttps://cqd.teams.microsoft.com)for teams, ecco come:
 
-1.  Passare a [https://cqd.lync.com/cqd/](https://cqd.lync.com/cqd/) e passare al set di report che si vuole esportare. 
-2.  Posizionare il puntatore del mouse sul report e, nel "..." scegliere **Esporta albero report**. Salvare il file di esportazione.
-3.  [https://cqd.teams.microsoft.com/cqd/](https://cqd.teams.microsoft.com/cqd/) Passare al percorso in cui si vogliono importare i report.
-4.  Dai collegamenti a sinistra fare clic su **Importa** e selezionare il file esportato. 
-5.  Dopo aver importato i report, verrà visualizzato questo messaggio: "il rapporto di importazione è riuscito. Il nuovo report è stato aggiunto alla fine del set di report. 
+1.    Passare a [https://cqd.lync.com/cqd/](https://cqd.lync.com/cqd/) e passare al set di report che si vuole esportare. 
+2.    Posizionare il puntatore del mouse sul report e, nel "..." scegliere **Esporta albero report**. Salvare il file di esportazione.
+3.    [https://cqd.teams.microsoft.com/cqd/](https://cqd.teams.microsoft.com/cqd/) Passare al percorso in cui si vogliono importare i report.
+4.    Dai collegamenti a sinistra fare clic su **Importa** e selezionare il file esportato. 
+5.    Dopo aver importato i report, verrà visualizzato questo messaggio: "il rapporto di importazione è riuscito. Il nuovo report è stato aggiunto alla fine del set di report. 
 
 
 ## <a name="create-custom-detailed-reports"></a>Creare report dettagliati personalizzati

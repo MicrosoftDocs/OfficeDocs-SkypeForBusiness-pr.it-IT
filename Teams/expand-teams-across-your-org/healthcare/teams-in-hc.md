@@ -16,13 +16,14 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ''
-description: Guida introduttiva a Teams per le organizzazioni del settore sanitario
-ms.openlocfilehash: 15e10a69174787d104a990f8b71a6e8ef4f8be04
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+description: Informazioni sulle caratteristiche per l'assistenza sanitaria che includono il coordinamento delle cure, la messaggistica sicura, la telesanità, l'integrazione di EHR e l'integrazione del sistema di lavoro i FIRSTLINE.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: b3335fa6cd5135dd30837338d762dd3b3fe8a2e7
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42147689"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905738"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Guida introduttiva a Teams per le organizzazioni del settore sanitario
 

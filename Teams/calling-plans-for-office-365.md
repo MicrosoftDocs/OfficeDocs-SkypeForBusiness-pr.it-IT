@@ -24,13 +24,14 @@ ms.custom:
 - O365P_E5Voiceplandetails
 - Licensing
 - LIL_Placement
+- seo-marvel-apr2020
 description: 'Learn about Calling Plan (PSTN Calling plan) for Skype for business options and how to get licenses for your organization. '
-ms.openlocfilehash: 81bf7febe1bece1482c9e882632c6b6bde512207
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: c7e3d405e82613de8cfe5313c6dd93c0b5c29e0a
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779945"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905018"
 ---
 # <a name="calling-plans-for-microsoft-365"></a>Piani di chiamata per Microsoft 365
 
@@ -42,7 +43,7 @@ Ecco le opzioni per i piani di chiamata:
     
 - **Piano per chiamate nazionali e internazionali**: gli utenti con licenza possono chiamare i numeri che si trovano nel paese/area geografica in cui la licenza di Office 365 è assegnata all'utente in base alla posizione dell'utente e ai numeri internazionali in [196 paesi/aree geografiche](country-and-region-availability-for-audio-conferencing-and-calling-plans/users-can-make-outbound-calls-to-these-countries-and-regions.md).
     
-Minuti mensili disponibili per ogni organizzazione e ogni paese/area geografica si trovano [qui](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
+Per informazioni sui minuti mensili disponibili per ogni organizzazione in ogni paese/area geografica, vedere [disponibilità di paesi e aree](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) geografiche.
   
 > [!IMPORTANT]
 > Il paese/area geografica si basa sulla posizione della licenza dell'utente negli > **utenti attivi** dell'interfaccia di **amministrazione di Microsoft 365**e **non** sull'indirizzo di fatturazione elencato nel **profilo dell'organizzazione** nell'area di **amministrazione di Microsoft 365**.   
@@ -92,7 +93,7 @@ Ecco altri articoli che spiegano come configurare i piani per le chiamate:
    
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Configurare Skype for Business Online](/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
+- [Configurare Skype for Business online](/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
     
 - [Configurare Cloud Voicemail - Guida per gli amministratori](set-up-phone-system-voicemail.md)
     

@@ -9,22 +9,23 @@ ms.service: msteams
 ms.reviewer: jastark
 audience: admin
 search.appverid: MET150
-description: Informazioni sulle impostazioni dei criteri di chiamata in Microsoft teams.
+description: Informazioni su come creare, modificare e aggiungere utenti ai criteri per le chiamate personalizzate in Microsoft teams, nonché varie impostazioni dei criteri di chiamata.
 localization_priority: Normal
 ms.custom:
-- NewAdminCenter_Update
+- ms.teamsadmincenter.callingpolicies.overview
+- seo-marvel-apr2020
 ms.collection:
 - M365-voice
-f1keywords:
-- ms.teamsadmincenter.callingpolicies.overview
+f1.keywords:
+- CSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 788cc0e93b16585f1d3424d3bfa0a62693528740
-ms.sourcegitcommit: 30b4b979e20066253e32ab9e44d79c48a97e6211
+ms.openlocfilehash: a94bf072aa4db0ba0b3f65fb5340c22ab09581e4
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "37972447"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43914062"
 ---
 <a name="calling-policies-in-microsoft-teams"></a>Criteri di chiamata in Microsoft Teams
 ===================================
@@ -105,6 +106,10 @@ Se si imposta questa opzione **su** attivato, le chiamate verranno inviate trami
 ### <a name="busy-on-busy-is-available-while-in-a-call"></a>La disponibilità di occupato è disponibile durante una chiamata
 
 Occupato in occupato (opzioni di occupato)) è una nuova impostazione nei criteri di chiamata dei team che consente di configurare il modo in cui vengono gestite le chiamate in arrivo quando un utente è già in una chiamata o una conferenza o se è stata inserita una chiamata in attesa. Le chiamate nuove o in arrivo possono essere rifiutate con un segnale di occupato. È possibile abilitare le opzioni di occupato a livello di tenant o a livello di utente. Indipendentemente dal modo in cui sono configurate le opzioni di occupato, gli utenti di una chiamata o di una conferenza o di una chiamata in attesa non vengono impediti di avviare nuove chiamate o conferenze. Questa impostazione è disabilitata per impostazione predefinita.
+
+### <a name="allow-music-on-hold"></a>Consenti musica in attesa
+
+Questa impostazione consente di attivare o disattivare la musica in attesa quando un chiamante PSTN viene posizionato in attesa. È attivata per impostazione predefinita. Questa impostazione non si applica alle caratteristiche di Call Park e boss delegate ed è attualmente disponibile solo tramite PowerShell. 
 
 ## <a name="see-also"></a>Vedere anche
 

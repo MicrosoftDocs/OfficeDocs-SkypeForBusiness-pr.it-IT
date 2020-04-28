@@ -10,21 +10,23 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Completare l'elenco di controllo per iniziare l'adozione di Microsoft teams.
+description: Usa questo elenco di controllo rapido per garantire il successo dato che l'organizzazione inizia ad adottare Microsoft teams.
 f1.keywords:
 - CSH
-ms.custom: Adopt
+ms.custom:
+- Adopt
+- seo-marvel-apr2020
 ms.collection:
 - Teams_ITAdmin_Adopt
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d7cef7033a79d7282d73534ded41805b11b2a46e
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 9cdea5f7e6bce5e348fa2a85feb93f733bf46c24
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837746"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905088"
 ---
 # <a name="microsoft-teams-adoption-quick-start-checklist"></a>Elenco di controllo introduttivo di Microsoft teams adoption
 

@@ -13,15 +13,17 @@ ms.reviewer: sbhatta
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Scopri come un amministratore può modificare informazioni sugli utenti guest nel portale di Azure Active Directory.
+description: In questo articolo verrà illustrato come un amministratore può modificare le informazioni sugli utenti guest nel portale di Azure Active Directory.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d59e991212391ea9cdac194ef3687da9095f0679
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.custom:
+- seo-marvel-apr2020
+ms.openlocfilehash: 038312f2dc63778111bd58ae93bfc5afab56750c
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41833776"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904051"
 ---
 <a name="edit-guest-user-information"></a>Modificare le informazioni degli utenti guest
 ===========================

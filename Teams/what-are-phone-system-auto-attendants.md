@@ -1,5 +1,5 @@
 ---
-title: Che cosa sono gli operatori automatici di cloud?
+title: Cosa sono gli operatori automatici cloud?
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -22,15 +22,16 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.autoattendants.overview
 - Phone System
-description: Scopri quali sono gli operatori automatici di cloud e come usarli.
-ms.openlocfilehash: d9f108acd4c1ebe3c275d79555145c6c92a78737
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+- seo-marvel-apr2020
+description: Informazioni sugli operatori automatici del cloud e su come usarli per consentire ai chiamanti di spostarsi in un sistema di menu per individuare e inserire o trasferire chiamate a utenti o reparti.
+ms.openlocfilehash: bfe142db0322757dd8fefe55c4de529168939126
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836666"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905138"
 ---
-# <a name="what-are-cloud-auto-attendants"></a>Che cosa sono gli operatori automatici di cloud?
+# <a name="what-are-cloud-auto-attendants"></a>Cosa sono gli operatori automatici cloud?
 
 Sistema telefonico in Office 365 fornisce gli operatori automatici, che possono essere usati per consentire ai chiamanti esterni e interni di spostarsi in un sistema di menu per individuare e inserire o trasferire chiamate a utenti o reparti dell'organizzazione.
   
@@ -91,7 +92,7 @@ Il numero di utenti di Active Directory per nome e dial by Extension può essere
 |Voce (ingresso vocale) |FirstName  <br/> LastName  <br/> Nome + Cognome  <br/> Cognome + Nome  | utenti di 80.000 |
 
 > [!NOTE]
-> Se si usa dial by Name con il riconoscimento vocale, ma Active Directory dell'organizzazione è maggiore di 80.000 utenti e non è stato limitato l'ambito della chiamata per nome tramite la caratteristica ambito di chiamata, il comando componi per nome continuerà a funzionare per i chiamanti tramite una tastiera del telefono e gli input vocali saranno disponibili per tutti gli altri scenari. È possibile utilizzare la funzione Ambito di chiamata per limitare i nomi raggiungibili modificando l'ambito di Chiamata per nome per un particolare operatore automatico.
+> Se si usa dial by Name con il riconoscimento vocale, ma Active Directory dell'organizzazione è più grande degli utenti di 80.000 e non è stato limitato l'ambito della chiamata per nome tramite la caratteristica ambito di chiamata, dial by Name continuerà a funzionare per i chiamanti usando una tastiera del telefono e gli input vocali saranno disponibili per tutti gli altri scenari. È possibile utilizzare la funzione Ambito di chiamata per limitare i nomi raggiungibili modificando l'ambito di Chiamata per nome per un particolare operatore automatico.
   
 ### <a name="dial-by-name---keypad-dtmf-entry"></a>Chiamata per nome - Immissione con tastiera (DTMF)
 Le persone che chiamano in può usare la chiamata in base al nome per raggiungere gli utenti specificando il nome completo o parziale della persona che sta cercando di raggiungere. Sono disponibili vari formati che possono essere usati quando viene immesso il nome.
@@ -244,6 +245,6 @@ Per assegnare un numero di servizio, è necessario ottenere o trasferire i numer
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 
-[Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+[Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
 [Esempio per piccole imprese - Impostare un operatore automatico](/microsoftteams/tutorial-org-aa)

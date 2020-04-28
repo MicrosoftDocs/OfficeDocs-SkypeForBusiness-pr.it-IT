@@ -11,19 +11,20 @@ localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni su come usare i modelli di teams per creare un team con canali predefiniti.
+description: Informazioni su come usare i modelli di teams per creare spazi di collaborazione con canali per diversi argomenti e per preinstallare app per la fornitura di contenuti e servizi.
 f1.keywords:
 - CSH
 ms.custom:
 - NewAdminCenter_Update
+- seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 585d3241506dacf60eb02b1d7a3e97cb80357026
-ms.sourcegitcommit: cfaae3ecbf853766de788b4825a86e04f68868ca
+ms.openlocfilehash: e4cdf8d489025110b47a98402a344e025b256012
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796029"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904621"
 ---
 # <a name="get-started-with-teams-templates"></a>Introduzione ai modelli di Teams
 
@@ -49,7 +50,7 @@ La maggior parte delle proprietà di un team è inclusa e supportata dai modelli
 | Nome del team | Immagine del team |
 | Descrizione del team | Impostazioni canale |
 | Visibilità del team (pubblico o privato) | Connettori |
-| Impostazioni del team (ad esempio, membro, Guest, @ menzioni) | File e contenuto |
+| Impostazioni del team (ad esempio, membro, Guest, @ menzioni) | File e contenuti |
 | Canale di auto-Preferiti | |
 | App installata | |
 | Schede aggiunte | |

@@ -12,11 +12,11 @@ f1.keywords:
 localization_priority: Normal
 ms.custom:
 - Strat_SB_Admin
-- seo-marvel-mar2020
+- seo-marvel-apr2020
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 ms.collection:
 - M365-collaboration
-description: Leggere questo argomento per informazioni sulla distribuzione di sale Microsoft teams su distribuzioni su larga scala.
+description: Informazioni sulla distribuzione di sale Microsoft teams su distribuzioni su larga scala con Microsoft endpoint Configuration Manager.
 no-loc:
 - Microsoft
 - Microsoft Corporation
@@ -34,12 +34,12 @@ no-loc:
 - Azure Monitor
 - Log Analytics
 - Operations Management Suite
-ms.openlocfilehash: 04d5945e042293ad0cb1597307fd4a2b596bee39
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: f96b970165996cc27308ce616fb4875d741f8869
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141019"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905318"
 ---
 # <a name="deploy-microsoft-teams-rooms-by-using-microsoft-endpoint-configuration-manager"></a>Distribuire le sale di Microsoft teams usando Microsoft endpoint Configuration Manager
 
@@ -728,7 +728,7 @@ Dopo aver completato le sequenze di attività di Microsoft endpoint Configuratio
 
     5.  Selezionare **configurazione di avvio**.
 
-    6.  Esegui una delle operazioni seguenti:
+    6.  Eseguire una delle operazioni seguenti:
 
         -   Selezionare **avvio PXE**e trascinarlo nella parte superiore dell'elenco. In alternativa, è possibile scorrere rapidamente verso sinistra sulla scheda di rete per avviare immediatamente il dispositivo. Questo non influirà sull'ordine di avvio.
         -   Selezionare l'unità flash USB che contiene il supporto di avvio.

@@ -10,19 +10,21 @@ search.appverid: MET150
 ms.reviewer: srividhc
 f1.keywords:
 - NOCSH
-description: L'interoperabilità cloud video consente ai dispositivi della sala riunioni di terze parti di partecipare a riunioni Microsoft teams.
+description: Usa l'interoperabilità cloud video come soluzione intermedia per consentire ai dispositivi della sala riunioni di terze parti di partecipare alle riunioni di Microsoft teams.
 localization_priority: Normal
+ms.custom:
+- seo-marvel-apr2020
 ms.collection:
 - M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f9addb5dfe25f5d4906c0b4ab1d332a2ea70f72d
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 5c7cb1888856ff8dba910e4f4735516876a8ade2
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779642"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905878"
 ---
 # <a name="cloud-video-interop-for-microsoft-teams"></a>Interoperabilità cloud video per Microsoft Teams
 
@@ -89,7 +91,7 @@ Il partner scelto per la distribuzione CVI fornirà un documento di distribuzion
 
 ### <a name="provision"></a>Disposizione  
 
-Durante la fase di fornitura, le licenze verranno assegnate agli utenti appropriati in base alla guida alla configurazione dei partner. Dovrai anche passare attraverso il processo di consenso di Azure per fornire al partner l'accesso all'ambiente teams. Per altre informazioni sul processo di consenso di Azure è possibile trovare qui:https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent 
+Durante la fase di fornitura, le licenze verranno assegnate agli utenti appropriati in base alla guida alla configurazione dei partner. Dovrai anche passare attraverso il processo di consenso di Azure per fornire al partner l'accesso all'ambiente teams. Per altre informazioni sul processo di consenso di Azure, vedere [autorizzazioni e consenso nell'endpoint della piattaforma Microsoft Identity](https://docs.microsoft.com/azure/active-directory/develop/v2-permissions-and-consent) .
 
 ### <a name="schedule"></a>Pianificare
 

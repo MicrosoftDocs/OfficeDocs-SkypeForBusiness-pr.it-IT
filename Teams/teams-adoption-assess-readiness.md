@@ -10,21 +10,23 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Determinare se l'organizzazione è pronta per la transizione ai team.
+description: Valutare le parti interessate, identificare i primi adottanti e valutare se l'organizzazione è pronta per la transizione ai team.
 f1.keywords:
 - CSH
-ms.custom: Adopt
+ms.custom:
+- Adopt
+- seo-marvel-apr2020
 ms.collection:
 - Teams_ITAdmin_Adopt
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8e7f1261857905cea3c849654fdbcf926c36026d
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 3c34494c08b6c81671c7f36e1ca76593e8d204be
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837876"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904768"
 ---
 # <a name="how-ready-is-your-organization-for-microsoft-teams"></a>In che modo è pronta l'organizzazione per Microsoft Teams?
 

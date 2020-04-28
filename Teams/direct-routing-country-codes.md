@@ -15,13 +15,14 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Leggere questo articolo per individuare i codici paese dei percorsi multimediali per il routing diretto.
-ms.openlocfilehash: 4d3e19ceeab48e7ade6ffa9b51bff68f38613426
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+description: Leggere questo articolo per individuare i codici paese dei percorsi multimediali per il routing diretto, in modo da poter selezionare il percorso multimediale ottimale.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 69265e797b256186f714e2cd4dcefcb3751c05ee
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836096"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904808"
 ---
 # <a name="direct-routing-media-path-country-codes"></a>Codice paese percorso diretto di routing multimediale
 
@@ -56,7 +57,7 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Aruba           | AW |
 | Australia       | AU |
 | Austria         | A |
-| Azerbaijan (Azərbaycan)      | AZ |
+| Azerbaigian      | AZ |
 | Bahamas         | BS |
 | Bahrein         | BH |
 | Bangladesh      | BD |
@@ -69,7 +70,7 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Bhutan          | BT |
 | Bolivia         | BO |
 | Bonaire         | BQ |
-| Bosnia and Herzegovina (Bosna i Hercegovina) | BA |
+| Bosnia ed Erzegovina | BA |
 | Botswana        | BW |
 | Isola di Bouvet   | BV |
 | Brasile          | BR |
@@ -83,7 +84,7 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Cambogia        | KH |
 | Camerun        | CM |
 | Canada          | CA |
-| Cayman Islands  | KY |
+| Isole Cayman  | KY |
 | Repubblica Centrafricana | CF |
 | Ciad            | TD |
 | Cile           | CL |
@@ -91,13 +92,13 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Isola di Natale | CX |
 | Isole Cocos (Keeling) | CC |
 | Colombia        | CO |
-| Comoro         | KM |
+| Comore         | KM |
 | Congo           | CG |
 | Congo (RDC)     | CD |
 | Isole Cook    | NTO |
 | Costa Rica      | CR |
 | Costa d'Avorio   | CI |
-| Croazia         | HR |
+| Croazia         | Risorse umane |
 | Cuba            | CU |
 | Curacao         | CW |
 | Cipro          | CY |
@@ -105,7 +106,7 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Danimarca         | DK |
 | Gibuti        | DJ |
 | Dominica        | DM |
-| Repubblica dominicana | ESEGUIRE |
+| Repubblica Dominicana | ESEGUIRE |
 | Ecuador         | EC |
 | Egitto           | EG |
 | El Salvador     | SV |
@@ -115,7 +116,7 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Eswatini        | SZ |
 | Etiopia        | ET |
 | Isole Falkland | CE |
-| Faroe Islands   | DELLA |
+| Isole Fær Øer   | DELLA |
 | Figi            | FJ |
 | Finlandia         | FI |
 | Francia          | FR |
@@ -141,7 +142,7 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Haiti           | Ciao |
 | Isole Heard e McDonald | HM |
 | Honduras        | HN |
-| Hong Kong SAR (香港特別行政區)   | HK |
+| RAS di Hong Kong   | HK |
 | Ungheria         | HU |
 | Islanda         | È |
 | India           | IN |
@@ -162,7 +163,7 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Kiribati        | KI |
 | Corea           | KR |
 | Kosovo          | XK |
-| Kuwait (الكويت)          | KW |
+| Kuwait          | KW |
 | Kirghizistan      | KG |
 | Laos            | Discover |
 | Lettonia          | LV |
@@ -208,13 +209,13 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Isola Norfolk  | NF |
 | Corea del Nord     | KP |
 | Macedonia settentrionale | MK |
-| Isole Marianne Settentrionali | NP |
+| Isole Marianne settentrionali | NP |
 | Norvegia          | NON |
 | Oman            | OM |
 | Pakistan        | PK |
 | Palau           | PW |
-| Palestinian Authority | PS |
-| Panama          | PA |
+| Autorità Palestinese | PS |
+| Panamá          | PA |
 | Papua Nuova Guinea | PGGIÙ |
 | Paraguay        | PY |
 | Perù            | PE |
@@ -230,7 +231,7 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Ruanda          | RW |
 | Saba            | XS |
 | Saint Barthelemy | BL |
-| Saint Kitts and Nevis | KN |
+| Saint Kitts e Nevis | KN |
 | Saint Lucia     | LC |
 | Saint Martin    | MF |
 | Saint Pierre e Miquelon | PM |
@@ -238,7 +239,7 @@ La tabella seguente mostra i valori del codice paese per il parametro-MediaRelay
 | Samoa           | WS |
 | San Marino      | SM |
 | Sao Tome e Principe | ST |
-| Arabia Saudita (المملكة العربية السعودية)    | SA |
+| Arabia Saudita    | SA |
 | Senegal         | SN |
 | Serbia          | RS |
 | Seychelles      | SC |

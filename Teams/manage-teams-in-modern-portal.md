@@ -8,22 +8,23 @@ ms.service: msteams
 audience: admin
 search.appverid: MET150
 ms.reviewer: islubin, jastark
-description: Informazioni su come visualizzare o aggiornare i team nell'interfaccia di amministrazione di Microsoft teams.
+description: Informazioni su come visualizzare o aggiornare i team configurati dall'organizzazione per la collaborazione nell'interfaccia di amministrazione di Microsoft teams.
 localization_priority: Normal
 f1.keywords:
 - CSH
 ms.custom:
 - NewAdminCenter_Update
+- seo-marvel-apr2020
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d07c9c1f19b86b3b95a597a52290acb2fdaa80cc
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 8c83d985a277c8341565e44878ba03385e23a358
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836268"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904998"
 ---
 <a name="manage-teams-in-the-microsoft-teams-admin-center"></a>Gestire team nell'interfaccia di amministrazione di Microsoft Teams
 ==========================================
@@ -132,7 +133,7 @@ Sostituire **{GroupID}** nella query per l'effettivo GroupID in questione, che Ã
 
 6. Verificare che il team sia correttamente visualizzato nell'interfaccia di amministrazione di Microsoft teams-Panoramica del team.
 
-## <a name="learn-more"></a>Ulteriori informazioni
+## <a name="learn-more"></a>Altre informazioni
 
 - [Informazioni di riferimento sui cmdlet Teams](https://docs.microsoft.com/powershell/teams/?view=teams-ps)  
 - [Usare i ruoli di amministratore teams per gestire Teams](using-admin-roles.md)

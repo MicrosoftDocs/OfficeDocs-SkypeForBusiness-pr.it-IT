@@ -13,13 +13,14 @@ localization_priority: Normal
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 ms.collection:
 - M365-collaboration
-description: Questo articolo illustra i preparativi per l'infrastruttura per la distribuzione delle sale di Microsoft teams.
-ms.openlocfilehash: 7c067376ffffd2a674c5e0cfb2204801b0c4f32a
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+description: Informazioni su come preparare l'infrastruttura per la distribuzione delle sale di Microsoft teams in modo da poter sfruttare tutte le funzionalità.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5267e27409e41c014d391048b70620fc802d8ff4
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779773"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905348"
 ---
 # <a name="prepare-your-environment"></a>Predisporre l'ambiente
 
@@ -158,7 +159,7 @@ Analogamente a qualsiasi dispositivo Windows, il nome del computer può essere r
   
  Se si vuole rinominare il computer dopo averla aggiunta a un dominio, usare il comando Rinomina-computer di PowerShell seguito dal nuovo nome del computer.
   
-## <a name="see-also"></a>Vedere anche
+## <a name="related-topics"></a>Argomenti correlati
 
 [Pianificare le sale di Microsoft Teams](rooms-plan.md)
 

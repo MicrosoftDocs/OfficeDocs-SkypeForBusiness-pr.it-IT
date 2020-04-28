@@ -8,7 +8,7 @@ ms.reviewer: roykuntz
 ms.service: msteams
 audience: admin
 search.appverid: MET150
-description: Informazioni su come abilitare il routing basato sulla posizione per il routing diretto.
+description: Informazioni su come abilitare il routing basato sulla posizione per il routing diretto, incluso l'abilitazione per gli utenti, i siti di rete, le configurazioni dei gateway e i criteri di chiamata.
 localization_priority: Normal
 f1.keywords:
 - NOCSH
@@ -16,12 +16,13 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 734a2354e81dc88430e8f880c46b0f97862158b5
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 56ea3f8b27a582a9cea282244a03be692d0781be
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836556"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905778"
 ---
 # <a name="enable-location-based-routing-for-direct-routing"></a>Abilitare l'instradamento basato sulla posizione per Instradamento diretto
 
@@ -92,7 +93,7 @@ Questo articolo descrive come abilitare il routing basato sulla posizione per il
     ||Sito 1 (Delhi)  |Sito 2 (Hyderabad)  |
     |---------|---------|---------|
 |Nome sito    |Sito 1 (Delhi)    |Sito 2 (Hyderabad)   
-    |EnableLocationBasedRouting    |True    |True    |
+    |EnableLocationBasedRouting    |Vero    |Vero    |
     |Subnet     |Subnet 1 (Delhi)     |Subnet 2 (Hyderabad)     |
 
 ## <a name="enable-location-based-routing-for-gateways"></a>Abilitare il routing basato sulla posizione per i gateway
@@ -119,8 +120,8 @@ Questo articolo descrive come abilitare il routing basato sulla posizione per il
 
     In questo esempio, consentiamo il routing basato sulla posizione per ogni gateway associato ai gateway PSTN nei siti di Delhi e Hyderabad. 
     ```PowerShell
-    Set-CSOnlinePSTNGateway -Identity sbc.contoso.com  -GatewaySiteLbrEnabled $true –GatewaySiteID “Delhi”
-    Set-CSOnlinePSTNGateway -Identity sbc1.contoso.com  -GatewaySiteLbrEnabled $true -GatewaySiteID “Hyderabad” 
+    Set-CSOnlinePSTNGateway -Identity sbc.contoso.com  -GatewaySiteLbrEnabled $true –GatewaySiteID "Delhi"
+    Set-CSOnlinePSTNGateway -Identity sbc1.contoso.com  -GatewaySiteLbrEnabled $true -GatewaySiteID "Hyderabad" 
     ```
     Non abilitare il routing basato sulla posizione per i gateway che non instradano le chiamate alla rete PSTN. Tuttavia, devi comunque associare il gateway al sito di rete in cui si trova il sistema. Questo perché le restrizioni di routing basate sul percorso devono essere applicate per le chiamate PSTN raggiungendo endpoint connessi tramite il gateway. In questo esempio, il routing basato sulla posizione non è abilitato per ogni gateway associato ai sistemi PBX nei siti di Delhi e Hyderabad.
 
@@ -142,10 +143,10 @@ Questo articolo descrive come abilitare il routing basato sulla posizione per il
 
     ||GatewaySiteLbrEnabled   |NetworkSiteID  |
     |---------|---------|---------|
-    |PstnGateway: Gateway 1 DEL-GW    |    True     |   Sito 1 (Delhi)      |
-    |PstnGateway: Gateway 2 HYD-GW     |   True      |      Sito 2 (Hyderabad)   |
-    |PstnGateway: Gateway 3 DEL-PBX    |    False     |     Sito 1 (Delhi)    |
-    |PstnGateway: Gateway 4 HYD-PBX    |    False     |    Sito 2 (Hyderabad)     |
+    |PstnGateway: Gateway 1 DEL-GW    |    Vero     |   Sito 1 (Delhi)      |
+    |PstnGateway: Gateway 2 HYD-GW     |   Vero      |      Sito 2 (Hyderabad)   |
+    |PstnGateway: Gateway 3 DEL-PBX    |    Falso     |     Sito 1 (Delhi)    |
+    |PstnGateway: Gateway 4 HYD-PBX    |    Falso     |    Sito 2 (Hyderabad)     |
 
 ## <a name="enable-location-based-routing-for-calling-policies"></a>Abilitare il routing basato sulla posizione per i criteri di chiamata
 
@@ -159,7 +160,7 @@ Grant-CsTeamsCallingPolicy -PolicyName <policy name> -id <user id>
 In questo esempio viene impedito l'esclusione del pedaggio PSTN ai criteri di chiamata di Utente1. 
 
 ```PowerShell
-Grant-CsTeamsCallingPolicy –PolicyName “AllowCallingPreventTollBypass” -id “User1” 
+Grant-CsTeamsCallingPolicy –PolicyName "AllowCallingPreventTollBypass" -id "User1" 
 ```
 
 ## <a name="related-topics"></a>Argomenti correlati

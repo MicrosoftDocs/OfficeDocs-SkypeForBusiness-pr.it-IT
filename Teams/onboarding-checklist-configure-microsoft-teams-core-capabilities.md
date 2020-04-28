@@ -8,20 +8,20 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: rowille
 audience: admin
-description: Quando si configurano teams, seguire le attività e le operazioni principali in questo elenco di controllo.
+description: Seguire le attività di base di questo elenco di controllo quando si configurano team per l'organizzazione.
+ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords:
 - NOCSH
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 385262789d243e7e504532fbac5003e5b3e35fed
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 69874e9d75cea1377b0aae110b5e1b3ce681d84f
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43777271"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43903901"
 ---
 # <a name="configure-microsoft-teams-core-capabilities"></a>Configurare le funzionalità di base di Microsoft Teams
 

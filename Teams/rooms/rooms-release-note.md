@@ -12,13 +12,14 @@ f1.keywords:
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-description: In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di Microsoft teams.
-ms.openlocfilehash: a79f9c4087be638de5c978eda2a8cf1d12fc1ed4
-ms.sourcegitcommit: 2d44f1a673316daf0aca3149571b24a63ca72772
+description: L'amministratore può leggere le note sulla versione per Microsoft teams rooms, che elencano i miglioramenti cumulativi nelle sale di Microsoft teams.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: ecc7328f81da24bb750ec164bc614db2104179a7
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227520"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905338"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
@@ -70,7 +71,6 @@ Introdotti in questo aggiornamento:
 - Possibilità di disabilitare il contenuto duplicato fuori riunione per la doppia visualizzazione delle sale tramite XML
 - Schermata iniziale applicazione
 - Comunicazioni del software open source (OSS) nelle impostazioni del dispositivo
-- Correggere la connettività di PSOM quando TLS 1,0 e TLS 1,1 sono disabilitati in Skype for Business Server 2015/2019.
 
 ### <a name="43420-03022020"></a>4.3.42.0 (03/02/2020)
 
@@ -348,6 +348,6 @@ Introdotti in questo aggiornamento:
 
 [Problemi noti per le sale di Microsoft Teams](known-issues.md)
 
-[Pianificare le sale di Microsoft Teams](rooms-plan.md)
+[Piano per Microsoft Teams Rooms](rooms-plan.md)
 
-[Gestire le sale di Microsoft Teams](rooms-manage.md)
+[Gestire Microsoft Teams Rooms](rooms-manage.md).

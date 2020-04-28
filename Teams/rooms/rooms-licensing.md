@@ -20,23 +20,24 @@ f1.keywords:
 ms.custom:
 - Licensing
 - LIL_Placement
-description: 'Informazioni sulle caratteristiche disponibili nelle sale di Microsoft teams. '
-ms.openlocfilehash: 193d84970d5c425143de75d212ad57ac4532aa1c
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+- seo-marvel-apr2020
+description: Informazioni sulle licenze disponibili per diversi tipi di funzionalità di chiamata e riunione in Microsoft teams rooms.
+ms.openlocfilehash: cc736fad2e7050f4989250917d8fc0d1a7c22fae
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41693811"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905388"
 ---
 # <a name="teams-meeting-room-licensing-update"></a>Aggiornamento delle licenze della sala riunioni Teams
 
 ## <a name="licensing-solutions-for-shared-communication-devices"></a>Soluzioni di gestione licenze per dispositivi di comunicazione condivisi
 
-Microsoft ha un SKU dedicato per le riunioni di licenza e la chiamata su base per dispositivo per i dispositivi della sala riunioni, ad esempio Microsoft teams Rooms e Microsoft Surface Hub.
+Microsoft ha un SKU dedicato per le riunioni di licenza e la chiamata su base per dispositivo per i dispositivi della sala riunioni, ad esempio Microsoft teams rooms, Microsoft Surface Hub e collaboartion bars per Microsoft teams.
 
 ||SKU sala riunioni |  
 |:--- |:---: |
-|Skype for business |&#x2714;|
+|Skype for Business |&#x2714;|
 |Microsoft Teams|  &#x2714;|
 |Sistema telefonico|  &#x2714;|
 |Audioconferenza|&#x2714; &sup1;|

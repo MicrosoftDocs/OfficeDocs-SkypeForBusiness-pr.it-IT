@@ -13,15 +13,16 @@ localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Configurare chiamate di emergenza dinamiche
+description: Informazioni su come configurare i piani di chiamata Microsoft e il sistema telefonico Direct routing funzionalità di chiamata di emergenza dinamica.
+ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6b22c6cec20e42ac33b15c53a49477b36a35fbe9
-ms.sourcegitcommit: 5fbb57c5f0692afcb8e65516c63b96814f51ca65
+ms.openlocfilehash: 92862eb960722ac2becbe216cdec5281282106b5
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "42417591"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905888"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -96,7 +97,7 @@ Per altre informazioni sulla configurazione degli indirizzi di emergenza, vedere
 
 Le impostazioni di rete vengono usate per determinare la posizione di un client di teams e per ottenere dinamicamente criteri per le chiamate di emergenza e una posizione di emergenza. È possibile configurare le impostazioni di rete in base alle modalità di funzionamento dell'organizzazione per le chiamate di emergenza.
 
-Le impostazioni di rete includono i siti che includono una raccolta di subnet, che vengono usati esclusivamente per l'assegnazione di criteri dinamici agli utenti.  Ad esempio, un criterio TeamsEmergencyCalling e i criteri TeamsEmergencyCallRouting potrebbero essere assegnati al "sito Redmond" in modo che qualsiasi utente che si sposta in roaming da casa o da un'altra posizione Microsoft sia configurato con numeri di emergenza, routing e Security desk specifico di Redmond.  
+Le impostazioni di rete includono i siti che includono una raccolta di subnet, che vengono usati esclusivamente per l'assegnazione di criteri dinamici agli utenti.  Ad esempio, un criterio TeamsEmergencyCalling e i criteri TeamsEmergencyCallRouting potrebbero essere assegnati al "sito Redmond" in modo che tutti gli utenti che si spostano da casa o da un'altra posizione Microsoft siano configurati con numeri di emergenza, routing e Security desk specifici di Redmond.  
 
 >[!Note]
 >Le subnet possono essere definite anche in LIS e possono essere associate a una posizione di emergenza.  

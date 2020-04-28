@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: svemu
 audience: admin
-description: Informazioni su come usare Network Planner per determinare i requisiti di rete per Microsoft teams.
+description: L'amministratore può imparare a usare Network Planner per determinare i requisiti di rete per Microsoft teams.
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
@@ -18,14 +18,15 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.networkplanner.overview
 - ms.teamsadmincenter.networkplanner.personas
+- seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1e27979bc4f440fee58f97ffb647cdd5465fb326
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 4a4676349dab9c7b587e63dcc9a538c9f0b43a80
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41832706"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904798"
 ---
 # <a name="use-the-network-planner-for-microsoft-teams"></a>Usare Network Planner per Microsoft Teams
 
@@ -56,7 +57,7 @@ Seguire questa procedura per creare una persona personalizzata:
 
 4. Selezionare le autorizzazioni che l'utente utilizzerà nell'organizzazione.
 
-5. Fai clic su **Salva**.
+5. Fare clic su **Salva**.
 
 ## <a name="build-your-plan"></a>Creare un piano
 
@@ -85,7 +86,7 @@ Seguire questa procedura per iniziare a creare il piano di rete:
       > [!NOTE]
       > È necessario aggiungere numeri di capacità WAN e Internet per visualizzare suggerimenti specifici sulla larghezza di banda quando si genera un report.
 
-    4. Fai clic su **Salva**.
+    4. Fare clic su **Salva**.
 
 ## <a name="create-a-report"></a>Creare un report
 
@@ -101,7 +102,7 @@ Dopo aver aggiunto tutti i siti, è possibile creare un report, come indicato di
     - Una tabella con singoli calcoli visualizzerà i requisiti di larghezza di banda per ogni attività consentita.
     - In una visualizzazione aggiuntiva verranno visualizzate le esigenze generali della larghezza di banda con le raccomandazioni.
 
-4. Fai clic su **Salva**. Il report sarà disponibile nell'elenco report per la visualizzazione successiva.
+4. Fare clic su **Salva**. Il report sarà disponibile nell'elenco report per la visualizzazione successiva.
 
 ## <a name="example-scenario"></a>Scenario di esempio
 

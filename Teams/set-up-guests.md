@@ -11,25 +11,25 @@ ms.collection:
 - M365-collaboration
 ms.reviewer: sbhatta
 search.appverid: MET150
-description: Attivare o disattivare la funzionalità di accesso guest in Microsoft teams.
+description: Informazioni su come attivare o disattivare la caratteristica di accesso guest in Microsoft teams come amministratore di Office 365.
 ms.custom: ms.teamsadmincenter.orgwidesettings.guestaccess.turnonguestaccessarticle
 f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5bcdbc3251820bdcee860323ad993efc8d6673c0
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: e634c58d34787a76477591ab4262c703e5773cbe
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41835646"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43903791"
 ---
 <a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso Guest a Microsoft Teams
 ===================================================
 
-Per impostazione predefinita, l'accesso Guest è disattivato. Come amministratore di Office 365, è necessario attivare l'accesso guest per i team prima che l'amministratore o i proprietari del team possano aggiungere Guest. Per attivare l'accesso guest, usare l' [elenco di controllo di accesso Guest](guest-access-checklist.md). 
+L'accesso guest è disabilitato per impostazione predefinita. Come amministratore di Office 365, è necessario attivare l'accesso guest per i team prima che l'amministratore o i proprietari del team possano aggiungere Guest. Per attivare l'accesso guest, usare l' [elenco di controllo di accesso Guest](guest-access-checklist.md). 
 
-Dopo aver attivato l'accesso guest, sono necessarie 2-24 ore affinché le modifiche abbiano effetto. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che l'accesso guest non sia stato attivato o che le impostazioni non siano ancora valide.
+Dopo aver attivato l'accesso guest, potrebbero essere necessarie un paio di ore per applicare le modifiche. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che l'accesso guest non sia stato attivato o che le impostazioni non siano ancora valide.
 
 > [!IMPORTANT]
 > L'attivazione dell'accesso guest dipende dalle impostazioni in Azure Active Directory, Office 365, SharePoint Online e teams. Per altre informazioni, vedere [autorizzare l'accesso guest in teams](Teams-dependencies.md).
@@ -38,15 +38,15 @@ Dopo aver attivato l'accesso guest, sono necessarie 2-24 ore affinché le modifi
 
 ## <a name="configure-guest-access-in-the-teams-admin-center"></a>Configurare l'accesso guest nell'interfaccia di amministrazione di Teams
 
-1.  Accedere all'interfaccia di amministrazione di Microsoft teams.
+1.    Accedere all'interfaccia di amministrazione di Microsoft teams.
 
-2.  Selezionare > **l'accesso Guest** **delle impostazioni a livello di organizzazione**.
+2.    Selezionare > **l'accesso Guest** **delle impostazioni a livello di organizzazione**.
 
 3. Impostare **Consenti accesso guest in Microsoft teams** **su**attivato.
 
     ![Consenti l'opzione di accesso Guest impostata su attivato ](media/set-up-guests-image1.png)
 
-4.  In **chiamate**, **riunioni**e **messaggistica** **selezionare attivato** o **disattivato** per ogni funzionalità, a seconda di cosa si vuole consentire agli utenti guest.
+4.    In **chiamate**, **riunioni**e **messaggistica** **selezionare attivato** o **disattivato** per ogni funzionalità, a seconda di cosa si vuole consentire agli utenti guest.
 
     - **Effettuare chiamate private** : attivare **questa impostazione per consentire agli utenti** di effettuare chiamate peer-to-peer.
     - **Consenti video IP** -attivare questa impostazione per consentire agli utenti di **usare il video** nelle chiamate e nelle riunioni.
@@ -67,7 +67,7 @@ Dopo aver attivato l'accesso guest, sono necessarie 2-24 ore affinché le modifi
     - **Usare gli adesivi nelle conversazioni** : attivare questa **impostazione per consentire agli utenti** di usare gli adesivi nelle conversazioni. 
 
 
-5.  Fai clic su **Salva**.
+5.    Fare clic su **Salva**.
 
 ## <a name="use-powershell-to-turn-guest-access-on-or-off"></a>Usare PowerShell per attivare o disattivare l'accesso Guest
 Leggere [usare PowerShell per attivare o disattivare l'accesso Guest](guest-access-PowerShell.md#use-powershell-to-turn-guest-access-on-or-off)

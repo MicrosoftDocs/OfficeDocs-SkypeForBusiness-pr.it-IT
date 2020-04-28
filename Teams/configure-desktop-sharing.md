@@ -11,17 +11,18 @@ ms.service: msteams
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Configurare un criterio di riunione per consentire agli utenti di condividere i propri desktop nelle chat o nelle riunioni di Teams
+description: Informazioni su come configurare un criterio di riunione per consentire agli utenti di condividere i loro desktop in chat o riunioni di teams.
 ms.collection:
 - M365-collaboration
+ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 366aaeb4f48670ae04d4b53d21196ef2d9e81fb4
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
-ms.translationtype: HT
+ms.openlocfilehash: 955a642d2a2309ccbaf9f9d6280170a93a9179ae
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825544"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905898"
 ---
 <a name="configure-desktop-sharing-in-microsoft-teams"></a>Configurare la condivisione desktop in Microsoft Teams
 ============================================
@@ -52,8 +53,8 @@ Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni
 
 5. Abilitare o disabilitare le impostazioni seguenti:
 
-    - **Consentire a un partecipante di concedere o richiedere il controllo**: consente ai membri del team di concedere o richiedere il controllo dell'applicazione o del desktop del relatore.
-    - **Consentire a un partecipante esterno di concedere o richiedere il controllo**: consente ai guest e agli utenti (federati) esterni di concedere o richiedere il controllo dell'applicazione o del desktop del relatore.
+    - **Consentire a un partecipante di dare o richiedere il controllo** , consente ai membri del team di concedere o richiedere il controllo del desktop o dell'applicazione del relatore.
+    - **Consentire a un partecipante esterno di dare o richiedere il controllo** , consente agli utenti esterni (federati) di concedere o richiedere il controllo del desktop o dell'applicazione del relatore.
     - **Consentire la condivisione di PowerPoint**: consente di creare riunioni nelle quali è possibile caricare e condividere le presentazioni di PowerPoint.
     - **Consentire la lavagna**: consente agli utenti di condividere una lavagna.
     - **Consentire le note condivise**: consente agli utenti di creare note condivise.

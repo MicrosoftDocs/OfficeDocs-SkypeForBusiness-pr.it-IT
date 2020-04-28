@@ -16,20 +16,20 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: ''
-description: Guida introduttiva a Messaggistica protetta per le organizzazioni del settore sanitario
+description: Informazioni su come personalizzare un criterio di messaggistica sicuro che può includere le conferme di lettura e le notifiche prioritarie.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f2b431eb28d2f475bc8abdf6ac05db760200d40e
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 95a4d258f35827d4ad30ee1e6b2938e6331efcc2
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43136986"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905528"
 ---
 # <a name="get-started-with-secure-messaging-for-healthcare-organizations"></a>Guida introduttiva a Messaggistica protetta per le organizzazioni del settore sanitario
 
 I criteri di messaggistica vengono usati per controllare quali funzionalità di messaggistica di chat e canali sono disponibili per gli utenti in Microsoft teams e fanno parte della distribuzione complessiva di messaggistica sicura per organizzazioni sanitarie, come ospedali, cliniche o uffici del medico, in cui è fondamentale avere un messaggio prelevato e agito in modo tempestivo, come è importante sapere quando vengono letti messaggi cruciali.
 
-È possibile usare il criterio globale (predefinito per l'intera organizzazione) o creare uno o più criteri di messaggistica personalizzati per gli utenti dell'azienda. Gli utenti dell'organizzazione otterranno automaticamente il criterio globale a meno che non si creino e non si assegnano criteri personalizzati. Dopo aver creato un criterio personalizzato, assegnarlo a un utente o a un gruppo di utenti dell'organizzazione. Ad esempio, puoi scegliere di consentire solo a determinati ruoli di lavoro di usare queste funzionalità (solo medici e infermieri) e altri lavoratori (come gli addetti alle pulizie o il personale della cucina) per ottenere un set di caratteristiche più limitato. Per decidere autonomamente ciò che serve alla propria organizzazione, le indicazioni sono al massimo un suggerimento.
+È possibile usare il criterio globale (predefinito per l'intera organizzazione) o creare uno o più criteri di messaggistica personalizzati per gli utenti dell'azienda. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato. Dopo aver creato un criterio personalizzato, assegnarlo a un utente o a un gruppo di utenti dell'organizzazione. Ad esempio, puoi scegliere di consentire solo a determinati ruoli di lavoro di usare queste funzionalità (solo medici e infermieri) e altri lavoratori (come gli addetti alle pulizie o il personale della cucina) per ottenere un set di caratteristiche più limitato. Per decidere autonomamente ciò che serve alla propria organizzazione, le indicazioni sono al massimo un suggerimento.
 
 I criteri possono essere facilmente gestiti nell'interfaccia di [amministrazione di Microsoft teams](https://admin.teams.microsoft.com) accedendo con le credenziali di amministratore e scegliendo i **criteri di messaggistica** nel riquadro di spostamento sinistro.
 

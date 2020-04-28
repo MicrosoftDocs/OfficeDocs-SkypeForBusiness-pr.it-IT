@@ -12,15 +12,16 @@ search.appverid: MET150
 ms.reviewer: vikramju
 f1.keywords:
 - NOCSH
-description: Informazioni sulle barriere informative e sul loro impatto sui team.
+description: In questo articolo vengono illustrati gli ostacoli alle informazioni in Microsoft teams e come possono influire sui team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8cdb736db3234d0c7e24729a7d8e2b06c2d068d0
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 2bbe2f38fe56e6952952730b7ba74dda1a98398f
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780815"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904978"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 

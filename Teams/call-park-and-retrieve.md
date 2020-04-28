@@ -20,13 +20,14 @@ f1.keywords:
 ms.custom:
 - Phone System
 - ms.teamsadmincenter.callparkpolicies.overview
-description: USA Call Park e recupera per effettuare una chiamata in attesa nel servizio Teams nel cloud.
-ms.openlocfilehash: b4b5200f139f5610ff1109b97742607d3b633ff6
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+- seo-marvel-apr2020
+description: Informazioni su come usare Call Park e retrieve per effettuare una chiamata in attesa nel servizio Teams nel cloud.
+ms.openlocfilehash: 2420652fc908a943e798ac1acade53eca4c5b55f
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824594"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905038"
 ---
 # <a name="call-park-and-retrieve-in-microsoft-teams"></a>Chiamare il parcheggio e il recupero in Microsoft Teams
 
@@ -49,7 +50,7 @@ Per parcheggiare e recuperare le chiamate, un utente deve essere un utente di Vo
 
 Call Park and retrieve è attualmente supportato dai seguenti client e dispositivi. (Supportata solo in modalità teams, con o senza connettività PSTN)
 
-| Capacità | Desktop Teams | App teams Mac | App Web Teams (Edge) |App teams per dispositivi mobili iOS/Android | Telefono IP Teams | Telefono IP Skype for business |
+| Funzionalità | Desktop Teams | App teams Mac | App Web Teams (Edge) |App teams per dispositivi mobili iOS/Android | Telefono IP Teams | Telefono IP Skype for business |
 |------------|---------------|---------------|----------------------|-----------------------------|----------------|-----------------------------|
 | Parcheggiare una chiamata | Sì | Sì | Sì | Sì | Prossimamente| No |
 | Recuperare una chiamata parcheggiata | Sì | Sì | Sì | Sì | Prossimamente| No |
@@ -65,7 +66,7 @@ Per informazioni su come usare la funzionalità chiama parcheggio e recupera, ve
 
 Seguire questa procedura per abilitare un criterio per il parcheggio delle chiamate:
 
-1. Accedere ai criteri per il**** > **parcheggio**dell'interfaccia di amministrazione > di **Microsoft teams**.
+1. Accedere ai criteri per il**Voice** > **parcheggio**dell'interfaccia di amministrazione > di **Microsoft teams**.
 2. Selezionare **nuovo criterio**.
 3. Assegnare un nome al criterio e quindi passare **Consenti al parcheggio** di chiamata **.**
 4. Selezionare **Salva**.
@@ -74,11 +75,11 @@ Seguire questa procedura per abilitare un criterio per il parcheggio delle chiam
 
 Seguire questa procedura per assegnare un criterio di parcheggio di chiamata a uno o più utenti:
 
-1. Accedere ai criteri per il**** > **parcheggio**dell'interfaccia di amministrazione > di **Microsoft teams**.
+1. Accedere ai criteri per il**Voice** > **parcheggio**dell'interfaccia di amministrazione > di **Microsoft teams**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
-3. Selezionare **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
-5. Al termine dell'aggiunta di utenti, selezionare **Salva**.
+3. Scegliere **Gestisci utenti**.
+4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
+5. Dopo aver aggiunto gli utenti, selezionare **Salva**.
  
 ### <a name="configure-call-park-and-retrieve-with-powershell"></a>Configurare il parcheggio delle chiamate e il recupero con PowerShell
 

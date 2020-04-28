@@ -13,13 +13,14 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 ms.assetid: ''
-description: Gestire gli aggiornamenti di Windows per Microsoft teams rooms
-ms.openlocfilehash: 2fc96118b70ff7c15e7bde02fdcd048c07581ad3
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+description: L'amministratore può trovare informazioni su come gestire gli aggiornamenti di Windows e gli aggiornamenti delle funzionalità di Windows per le sale di Microsoft teams.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: e52c1fdf3bb35be6869320aa57e6f5aff5fd0773
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41827914"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905308"
 ---
 # <a name="manage-windows-updates"></a>Gestire gli aggiornamenti di Windows
 

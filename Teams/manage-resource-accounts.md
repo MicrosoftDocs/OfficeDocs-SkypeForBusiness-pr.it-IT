@@ -18,13 +18,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.orgwidesettings.resourceaccounts.overview
-description: Informazioni sulla gestione degli account delle risorse in Microsoft Teams
-ms.openlocfilehash: 9de381c1ba338c9ffc51153ac0fa1296ccb3f4a0
-ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+- seo-marvel-apr2020
+description: In questo articolo verrà illustrato come creare, modificare e gestire gli account delle risorse in Microsoft teams.
+ms.openlocfilehash: 07f6f15f3ed3fc1e115ae672ef1eac89b5eab12f
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43750003"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905008"
 ---
 # <a name="manage-resource-accounts-in-microsoft-teams"></a>Gestire gli account di risorsa in Microsoft Teams
 
@@ -37,7 +38,7 @@ In Microsoft teams o Skype for business online ogni coda di chiamata di sistema 
 > [!NOTE]
 > Questo articolo si applica sia a Microsoft teams che a Skype for business online. Per gli account delle risorse ospitati in Skype for Business Server 2019, vedere [configurare gli account di risorse](/SkypeForBusiness/hybrid/configure-onprem-ra).
 
-## <a name="overview"></a>Panoramica
+## <a name="assign-a-phone-number-to-a-phone-system-call-queue"></a>Assegnare un numero di telefono a una coda di chiamata di sistema telefonico
 
 Se l'organizzazione usa già almeno una licenza per il sistema telefonico, per assegnare un numero di telefono a una coda di chiamata di sistema telefonico, il processo è:
 
