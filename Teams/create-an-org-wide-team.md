@@ -8,7 +8,7 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 search.appverid: MET150
-description: Informazioni su come creare e gestire un team a livello di organizzazione in Teams.
+description: Informazioni su come creare e gestire un team a livello di organizzazione in teams, in modo da consentire a tutti gli utenti di una società di piccole e medie dimensioni di collaborare.
 localization_priority: Normal
 f1.keywords:
 - NOCSH
@@ -16,12 +16,13 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 90051eb5ee4faf981ec54efa8049909dde4311d3
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 41d7241cc0ffddf1042a3fe46f75def76c1ccf04
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43778452"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43903031"
 ---
 # <a name="create-an-org-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
@@ -71,13 +72,13 @@ Valutare l'opportunità di configurare la moderazione dei canali e di fornire ca
 
 ### <a name="remove-accounts-that-might-not-belong"></a>Rimuovere gli account non idonei
 
-Anche se i membri non possono abbandonare un team a livello di organizzazione, i proprietari del team possono gestire l'elenco dei partecipanti rimuovendo gli account che non dovrebbero appartenervi. **Assicurarsi di usare Teams per rimuovere gli utenti dal team a livello di organizzazione**. Se si usa un altro metodo, ad esempio si procede tramite l'interfaccia di amministrazione di Microsoft 365 o un gruppo in Outlook, l'utente potrebbe essere aggiunto di nuovo al team a livello di organizzazione.
+Anche se i membri non possono uscire da un team a livello di organizzazione, come proprietario del team, puoi gestire il roster del team rimuovendo gli account che non appartengono. **Assicurarsi di usare Teams per rimuovere gli utenti dal team a livello di organizzazione**. Se si usa un altro metodo, ad esempio si procede tramite l'interfaccia di amministrazione di Microsoft 365 o un gruppo in Outlook, l'utente potrebbe essere aggiunto di nuovo al team a livello di organizzazione.
 
 ## <a name="faq"></a>Domande frequenti
 
 ### <a name="is-there-a-way-to-create-an-org-wide-team-other-than-using-the-teams-client"></a>Esiste un modo per creare un team a livello di organizzazione diverso dall'uso del client di Teams?
 
-Gli amministratori globali possono creare un team a livello di organizzazione solo usando il client di Teams. Se l'organizzazione impone la creazione di team con PowerShell, la soluzione alternativa consigliata consiste nell'aggiungere gli amministratori globali al gruppo di sicurezza degli utenti che possono creare un team. Per altre informazioni, vedere [gestire chi può creare gruppi di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups).
+Gli amministratori globali possono creare un team a livello di organizzazione solo usando il client di Teams. Se l'organizzazione impone la creazione di team con PowerShell, la soluzione alternativa consigliata consiste nell'aggiungere gli amministratori globali al gruppo di sicurezza degli utenti che possono creare un team. Per altre informazioni, vedere [Gestire chi può creare gruppi di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups).
 
 Se questo non è possibile, è possibile usare PowerShell per creare un team pubblico e aggiungere un amministratore globale come proprietario del team. Quindi, l'amministratore globale deve fare clic su **Altre opzioni** accanto al nome del team, fare clic su **Modifica team** e modificare la privacy in **A livello di organizzazione: tutti gli utenti dell'organizzazione verranno aggiunti automaticamente**. Tenere presente che solo i proprietari del team possono accedere all'opzione **Modifica team** e solo gli amministratori globali possono vedere l'opzione **A livello di organizzazione**.
 

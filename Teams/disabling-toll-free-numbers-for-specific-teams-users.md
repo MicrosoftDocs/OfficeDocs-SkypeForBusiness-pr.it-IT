@@ -19,13 +19,14 @@ f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
-description: Gli amministratori possono controllare come gli organizzatori utilizzano i numeri gratuiti per le riunioni.
-ms.openlocfilehash: 7bc830529fc24a61be914998e923ad2d5288b7c5
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+- seo-marvel-mar2020
+description: Informazioni su come controllare il modo in cui gli organizzatori possono usare numeri verdi per le riunioni Bridge di audioconferenza.
+ms.openlocfilehash: 517ffea6a15cd625320f33e3eb4911f4a250d51d
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41837266"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904571"
 ---
 # <a name="disabling-toll-free-numbers-for-specific-teams-users"></a>Disabilitazione dei numeri verdi per gli utenti di team specifici
 

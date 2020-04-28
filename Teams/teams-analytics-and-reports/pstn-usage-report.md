@@ -16,12 +16,13 @@ MS.collection:
 description: Informazioni su come usare il report utilizzo PSTN teams nell'interfaccia di amministrazione di Microsoft teams per ottenere una panoramica dell'utilizzo delle chiamate e delle conferenze audio nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c35699093168f5bb0443277f65da9a8060f27b69
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 411cf551697bd1fdd0902dc2d906e1c7752cd27d
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43778252"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904301"
 ---
 # <a name="microsoft-teams-pstn-usage-report"></a>Report utilizzo PSTN di Microsoft Teams
 
@@ -29,7 +30,7 @@ Il report utilizzo PSTN teams nell'interfaccia di amministrazione di Microsoft t
 
 La scheda **piani di chiamata** Mostra le informazioni che includono il numero di minuti che gli utenti hanno trascorso nelle chiamate PSTN in ingresso e in uscita e il costo di queste chiamate. La scheda **routing diretto** Mostra le informazioni che includono l'indirizzo SIP e l'ora di inizio e di fine delle chiamate. Usare le informazioni contenute in questo report per scoprire l'uso della rete PSTN nell'organizzazione e consentire l'analisi, pianificare e prendere decisioni aziendali.
 
-## <a name="view-the-report"></a>Visualizzare il report
+## <a name="view-the-pstn-usage-report"></a>Visualizzare il report sull'utilizzo PSTN
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** > report**sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **report sull'utilizzo PSTN**.
 2. In **intervallo di date**selezionare un intervallo predefinito di 7 o 28 giorni oppure impostare un intervallo personalizzato e quindi selezionare **Esegui report**.
@@ -79,10 +80,10 @@ Questi campi possono provenire da SBC del cliente. Sono disponibili tre formati 
 
 L'ID di correlazione condivisa esiste solo nel file di Excel esportato che si scarica e indica che sono correlate due o più chiamate. Di seguito vengono illustrati i diversi scenari e quando è presente l'ID di correlazione condivisa.
 
-1.  Utente PSTN 1 in un endpoint PSTN denominato teams User 1 nel client teams, tipo di chiamata Dr_In, ID di correlazione 57f28917-42k5-4c0c-9433-79734873f2ac, nessun ID di correlazione condivisa.
-2.  L'utente teams 1 nel client Teams ha chiamato l'utente PSTN 1 in un endpoint PSTN, chiama tipo Dr_Out 2c12b8ca-62eb-4c48-B68D-e451f518ff4, nessun ID di correlazione condivisa.
-3.  Utente PSTN 1 in un endpoint PSTN denominato teams User 2 nel client teams, tipo di chiamata Dr_In f45e9a25-9f94-46e7-A457-84f5940efde9, ID di correlazione condivisa f45e9a25-9f94-46e7-A457-84f5940efde9.
-4.  Chiamata esistente 3 con l'ID di correlazione "f45e9a25-9f94-46e7-A457-84f5940efde9". Utente PSTN 1 in una chiamata con teams User 2. Utenti teams 2 trasferiti (ciechi o consultivi) una chiamata a team o utenti PSTN, tipo di chiamata Dr_Out_User_Transfer 45a1da7c-9e97-481a-8a05-3fe19a9a77e0, ID di correlazione condivisa f45e9a25-9f94-46e7-A457-84f5940efde9.
+1.    Utente PSTN 1 in un endpoint PSTN denominato teams User 1 nel client teams, tipo di chiamata Dr_In, ID di correlazione 57f28917-42k5-4c0c-9433-79734873f2ac, nessun ID di correlazione condivisa.
+2.    L'utente teams 1 nel client Teams ha chiamato l'utente PSTN 1 in un endpoint PSTN, chiama tipo Dr_Out 2c12b8ca-62eb-4c48-B68D-e451f518ff4, nessun ID di correlazione condivisa.
+3.    Utente PSTN 1 in un endpoint PSTN denominato teams User 2 nel client teams, tipo di chiamata Dr_In f45e9a25-9f94-46e7-A457-84f5940efde9, ID di correlazione condivisa f45e9a25-9f94-46e7-A457-84f5940efde9.
+4.    Chiamata esistente 3 con l'ID di correlazione "f45e9a25-9f94-46e7-A457-84f5940efde9". Utente PSTN 1 in una chiamata con teams User 2. Utenti teams 2 trasferiti (ciechi o consultivi) una chiamata a team o utenti PSTN, tipo di chiamata Dr_Out_User_Transfer 45a1da7c-9e97-481a-8a05-3fe19a9a77e0, ID di correlazione condivisa f45e9a25-9f94-46e7-A457-84f5940efde9.
 
 ## <a name="exporting-the-reports"></a>Esportare i report
 Fare clic su **Esporta in Excel**, quindi nella scheda **download** fare clic su **Scarica** per scaricare il report quando è pronto. Il processo di esportazione può richiedere da pochi secondi a diversi minuti per il completamento, a seconda della quantità di dati.

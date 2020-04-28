@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 43adfb71c287677a6390d371a05bd1aea35ceda3
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 18c545d6b3208bb5156a699deee71ee27b38b3f4
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779985"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43903121"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -161,12 +161,6 @@ Per altre informazioni sui team e sulle app Microsoft 365 per le aziende, vedere
     > Questi esempi usano anche il parametro **ALLUSERS = 1** . Quando si imposta questo parametro, il programma di installazione a livello di computer teams viene visualizzato in programmi e funzionalità nel pannello di controllo e nelle app & funzionalità nelle impostazioni di Windows per tutti gli utenti del computer. Tutti gli utenti possono quindi disinstallare teams se hanno credenziali di amministratore. È importante comprendere la differenza tra **ALLUSERS = 1** e **ALLUSER = 1**. Il parametro **ALLUSERS = 1** può essere usato in ambienti non VDI e VDI e il parametro **ALLUSER = 1** viene usato solo in ambienti VDI per specificare un'installazione per singolo computer.
 
 3. Disinstallare il file MSI dalla VM VDI.
-
-    Esistono due modi per disinstallare teams:  
-  
-    - Script di PowerShell (scelta consigliata)
-
-    - Riga di comando:
   
       ```console
       msiexec /passive /x <path_to_msi> /l*v <uninstall_logfile_name>

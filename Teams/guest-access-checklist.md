@@ -7,7 +7,7 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 ms.reviewer: sbhatta
-description: Usare questo elenco di controllo per configurare l'accesso guest in Microsoft Teams.
+description: Informazioni su come attivare e configurare l'accesso guest in Microsoft teams come amministratore globale o in teams.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -17,12 +17,13 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 22a0c2a8641203e764d6c490a008525cf71e8d5c
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 04627c74528972aad69b1e810e222f55cae49588
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43776951"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43902581"
 ---
 <a name="microsoft-teams-guest-access-checklist"></a>Elenco di controllo per l'accesso guest in Microsoft Teams
 =========================================
@@ -30,7 +31,7 @@ ms.locfileid: "43776951"
 Usare questo elenco di controllo per attivare e configurare l'accesso guest in Microsoft Teams. Per apportare queste modifiche è necessario essere un amministratore globale o un amministratore di Teams.
 
 > [!IMPORTANT]
-> Possono essere necessarie fino a 24 ore prima che le modifiche diventino effettive. 
+> Potrebbe essere necessario attendere un paio di ore perché le modifiche abbiano effetto. 
 
 Guardare questo breve video (5:31 minuti) per scoprire come attivare l'accesso guest in tutto Microsoft 365, incluso Teams.
 

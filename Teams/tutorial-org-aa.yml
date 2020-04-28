@@ -2,7 +2,7 @@
 title: 'Esempio di piccola impresa: configurare un operatore automatico'
 metadata:
   title: 'Esempio di piccola impresa: configurare un operatore automatico'
-  description: Per gli amministratori IT, pianificare gli operatori automatici nell'organizzazione.
+  description: Gli amministratori IT possono usare il sistema telefonico in teams per configurare gli operatori automatici e il sistema di menu automatizzato per le chiamate in arrivo.
   audience: IT Pro
   level: Intermediate
   displayType: one-column
@@ -21,12 +21,12 @@ metadata:
   - M365-voice
   ms.custom:
   - NewAdminCenter_Update
-  ms.openlocfilehash: 2fe6c5c39d63fe2adc46ffad32d342520b17b874
-  ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+  ms.openlocfilehash: ad9738ef2c4701871c4d960ad664b589f05f6cc0
+  ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 02/20/2020
-  ms.locfileid: "42160760"
+  ms.lasthandoff: 04/27/2020
+  ms.locfileid: "43904501"
 items:
 - durationInMinutes: 2
   content: "\n[Microsoft teams](/MicrosoftTeams/Teams-overview) e [Skype for business online](https://support.office.com/article/Video-What-is-Skype-for-Business-3a21eca4-434d-41f1-ab06-3d4a268573b7) sono entrambi parte di Office 365 che offre la chat, le conversazioni telefoniche, la segreteria telefonica, le riunioni, i file e le app insieme in un'unica posizione. Entrambi richiedono licenze per il [**sistema telefonico**](/MicrosoftTeams/what-is-phone-system-in-office-365) per abilitare le funzionalità di controllo delle chiamate e PBX nel cloud di Office 365. La licenza è disponibile come componente aggiuntivo o come parte delle licenze Enterprise E5. I dettagli delle licenze sono relativi alle [licenze per i componenti aggiuntivi Skype for business](/skypeforbusiness/skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing). \n\nUna licenza per il sistema telefonico consente di sostituire il sistema PBX esistente con un [set di funzionalità](/MicrosoftTeams/here-s-what-you-get-with-phone-system) che includono la segreteria telefonica, le code di chiamata e gli [operatori automatici](/microsoftteams/what-are-phone-system-auto-attendants), che consentono alle persone che chiamano l'azienda di spostarsi in un sistema di menu per accedervi al reparto, alla persona o all'operatore giusto. Gli operatori automatici possono essere usati con teams o Skype for business. Per creare un sistema di operatore automatico per l'organizzazione, è possibile usare l'interfaccia di amministrazione di Microsoft teams.\n\nSe viene chiesto di configurare un operatore automatico, questo articolo fornisce un'illustrazione di un piano, una progettazione e un'illustrazione del processo di implementazione per gli operatori automatici in una piccola impresa ipotetica. Non si tratta di una soluzione con una sola dimensione, bensì del processo di pensiero dietro una struttura funzionante di diversi operatori automatici. \n\n## <a name=\"before-you-begin\"></a>Prima di iniziare\n\nQuesta esercitazione presuppone che tu abbia già eseguito queste attività: \n- [Configurare il sistema telefonico nell'organizzazione](/MicrosoftTeams/setting-up-your-phone-system) per specificare i numeri di telefono per gli utenti.\n- [Configurare Cloud Voicemail](/MicrosoftTeams/set-up-phone-system-voicemail) \n- [Quali sono gli operatori automatici di cloud?](/MicrosoftTeams/what-are-phone-system-auto-attendants) per comprendere meglio le caratteristiche del sistema telefonico che possono interagire con un operatore automatico.\n\nInoltre, sarai lieto di scoprire che la maggior parte della parte della pianificazione e della progettazione può essere eseguita usando una lavagna bianca o un indice: avere un buon piano non è tecnicamente impegnativo.\n"

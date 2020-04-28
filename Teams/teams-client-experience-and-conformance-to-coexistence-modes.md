@@ -7,23 +7,25 @@ ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: bjwhalen
 audience: admin
-description: Esperienza del client di Teams e conformità alle modalità di coesistenza
+description: Informazioni sull'esperienza del client teams e sulla conformità alle modalità di coesistenza (SfBOnly, SfBWithTeamsCollab, SfBWithTeamsCollabAndMeetings).
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
 - CSH
-ms.custom: Teams-upgrade-guidance
+ms.custom:
+- Teams-upgrade-guidance
+- seo-marvel-apr2020
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7e2687f00a2d0ccb02e742d5077e472aa1dc37ed
-ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
+ms.openlocfilehash: 0c67046128c79608f19a4a1f4474164a949f37ef
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42706616"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43903361"
 ---
 # <a name="teams-client-experience-and-conformance-to-coexistence-modes"></a>Esperienza del client di Teams e conformità alle modalità di coesistenza
 
@@ -73,8 +75,8 @@ Gli amministratori *non* devono impostare in modo esplicito queste impostazioni 
 |Modalità|AllowUserChat|AllowPrivateCalling|AllowPrivateMeetingScheduling|AllowChannelMeetingScheduling|
 |---|---|---|---|---|
 |TeamsOnly o isole|Abilitata|Abilitata|Abilitata|Abilitata|
-|SfBWithTeamsCollabAndMeetings|Disabilitata|Disabilitata|Abilitata|Abilitata|
-|SfBWithTeamsCollab o SfBOnly|Disabilitata|Disabilitata|Disabilitata|Disabilitata|
+|SfBWithTeamsCollabAndMeetings|Disattiva|Disattiva|Abilitata|Abilitata|
+|SfBWithTeamsCollab o SfBOnly|Disattiva|Disattiva|Disattiva|Disattiva|
 ||||||
 
 Quando si usa PowerShell, `Grant-CsTeamsUpgradePolicy` il cmdlet controlla la configurazione delle impostazioni corrispondenti in TeamsMessagingPolicy, TeamsCallingPolicy e TeamsMeetingPolicy per determinare se tali impostazioni verrebbero sostituite da TeamsUpgradePolicy e, in caso affermativo, viene fornito un messaggio informativo in PowerShell.  Come indicato sopra, non è più necessario impostare queste altre impostazioni dei criteri. Di seguito è riportato un esempio di come appare l'avviso di PowerShell:

@@ -8,7 +8,7 @@ audience: admin
 ms.service: msteams
 ms.reviewer: sbhatta
 search.appverid: MET150
-description: Informazioni sulla funzionalità Microsoft teams disponibile per gli utenti guest.
+description: Questo articolo descrive la funzionalità Microsoft teams disponibile per gli utenti guest e risponde anche ad alcune delle domande frequenti più comuni correlate.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -17,12 +17,13 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2f118611d55fe9192f32402946d672901b0f66ee
-ms.sourcegitcommit: 6fbaab29076e16fe18f8faeb7e012a0815c2369d
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c7bf160e53fcbdd13fefac06c706d743a8b55643
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43785869"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43902601"
 ---
 <a name="what-the-guest-experience-is-like"></a>Com'è l'esperienza guest
 =================================

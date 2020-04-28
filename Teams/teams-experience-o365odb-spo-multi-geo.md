@@ -7,22 +7,23 @@ ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: snigdhav
 audience: admin
-description: Informazioni sull'uso di team in Microsoft 365 o Office 365 OneDrive e il contratto di locazione multi-Geo abilitato per SharePoint Online.
+description: In questo articolo verranno fornite informazioni sull'uso di team in Microsoft 365 o Office 365 OneDrive e il contratto di locazione multi-Geo abilitato a SharePoint Online.
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
 - SPO_Content
+ms.custom: seo-marvel-apr2020
 f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 534155d49cda89291e5d8bdfb8da9b8caf0efb5f
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 4e754177de6f08476c9160254f2334f6f3ac18d3
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780395"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43903141"
 ---
 <a name="teams-experience-in-a-microsoft-365-or-office-365-onedrive-and-sharepoint-online-multi-geo-enabled-tenancy"></a>Esperienza teams in un sito Microsoft 365 o Office 365 OneDrive e un contratto di locazione multigeo-abilitato per SharePoint Online
 ===========================================

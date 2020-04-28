@@ -21,13 +21,14 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.contentsharing
 - ms.teamsadmincenter.meetingpolicies.general
 - ms.teamsadmincenter.meetingpolicies.participantandguests
-description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams.
-ms.openlocfilehash: b87453fb24173ba648511f49efc82becb2616d70
-ms.sourcegitcommit: 56ceda54ca48d2984298d4d1f26017c0147d4431
-ms.translationtype: HT
+- seo-marvel-apr2020
+description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
+ms.openlocfilehash: d06dbe4d2a6e7750abba5352becc15be1daf8ce6
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43505633"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904431"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -170,7 +171,7 @@ Per altre informazioni sulla registrazione di una riunione cloud, vedere [Regist
 
 ### <a name="allow-ip-video"></a>Consenti video IP
 
-Questa è una combinazione di criterio per organizzatore e criterio per utente. Il video è un componente chiave per le riunioni. In alcune organizzazioni, gli amministratori possono volere un maggior controllo sugli utenti che possono usare il video nelle riunioni. Questa impostazione controlla se è possibile attivare il video nelle riunioni ospitate da un utente e nelle chiamate 1:1 e di gruppo avviate da un utente. Le riunioni organizzate da un utente che ha questo criterio abilitato consentono la condivisione di video nella riunione da parte dei partecipanti, se anche questi ultimi hanno il criterio abilitato. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi e federati, ereditano i criteri dell'organizzatore della riunione.
+Questa è una combinazione di criterio per organizzatore e criterio per utente. Il video è un componente chiave per le riunioni. In alcune organizzazioni gli amministratori potrebbero volere un maggiore controllo sulle riunioni degli utenti che hanno un video. Questa impostazione controlla se è possibile attivare il video nelle riunioni ospitate da un utente e nelle chiamate 1:1 e di gruppo avviate da un utente. Le riunioni organizzate da un utente che ha questo criterio abilitato consentono la condivisione di video nella riunione da parte dei partecipanti, se anche questi ultimi hanno il criterio abilitato. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi e federati, ereditano i criteri dell'organizzatore della riunione.
 
 ![Screenshot che mostra una riunione con impostazioni audio e video](media/meeting-policies-audio-video-settings.png)
 
@@ -181,17 +182,17 @@ Osserviamo l'esempio seguente.
 |Daniela   | Globale   | Vero        |
 |Amanda    | CriterioRiunionePosizione1        | Falso      |
 
-Le riunioni ospitate da Daniela consentono di attivare il video. Daniela può partecipare alla riunione e attivare il video. Amanda non può attivare il video nella riunione di Daniela il criterio di Amanda è impostato in modo da non consentire il video. Amanda può vedere i video condivisi da altri partecipanti alla riunione.
+Le riunioni ospitate da Daniela consentono di attivare il video. Daniela può partecipare alla riunione e attivare il video. Amanda non può attivare il video nella riunione di Daniela perché la politica di Amanda è impostata su non consentire il video. Amanda può vedere i video condivisi da altri partecipanti alla riunione.
 
 Nelle riunioni ospitate da Amanda nessuno può attivare il video, indipendentemente dai criteri video assegnati. Questo significa che Daniela non può attivare il video nelle riunioni di Amanda.  
 
-Se Daniela chiama Amanda con il video, Amanda può rispondere alla chiamata solo con l'audio.  Una volta connessa la chiamata, Amanda potrà vedere il video di Daniela, ma non potrà attivare il video. Se Amanda chiama Daniela, Daniela può rispondere alla chiamata con il video e l'audio. Una volta connessa la chiamata, Daniela può attivare o disattivare suo video come desidera.
+Se Daniela chiama Amanda con il video, Amanda può rispondere alla chiamata solo con l'audio.  Quando la chiamata è connessa, Amanda può vedere il video di Daniela, ma non può attivare il video. Se Amanda chiama Daniela, Daniela può rispondere alla chiamata con il video e l'audio. Una volta connessa la chiamata, Daniela può attivare o disattivare suo video come desidera.
 
 ### <a name="media-bit-rate-kbs"></a>Velocità in bit supporto (KB)
 
 Questo è un criterio per utente. Questa impostazione determina la velocità in bit per le trasmissioni audio, video e di condivisione di app basate su video nelle chiamate e riunioni dell'utente. Si applica ai flussi multimediali in uplink o downlink per gli utenti nella chiamata o riunione. Questa impostazione consente di controllare in modo granulare la gestione della larghezza di banda dell'organizzazione. In base agli scenari di riunione necessari per gli utenti, è necessario disporre di una larghezza di banda sufficiente per fornire un'esperienza di buona qualità. Il valore minimo è 30 Kbps e il valore massimo dipende dallo scenario della riunione. Per altre informazioni sulla larghezza di banda minima consigliata per una buona qualità di riunioni, chiamate ed eventi live in Teams, vedere [Requisiti di larghezza di banda](prepare-network.md#bandwidth-requirements).
 
-Se la larghezza di banda di una riunione non è sufficiente, i partecipanti vedranno un messaggio che indica una scarsa qualità della rete.
+Se non è disponibile una larghezza di banda sufficiente per una riunione, i partecipanti vedranno un messaggio che indica una qualità di rete scadente.
 
 Per le riunioni che necessitano di un'esperienza video di qualità elevata, ad esempio le riunioni del consiglio di amministrazione e gli eventi live di Teams, è consigliabile impostare la larghezza di banda su 10 Mbps. Anche se è stata impostata la massima qualità dell'esperienza, lo stack multimediale di Teams si adatta alle condizioni di larghezza di banda ridotte quando vengono rilevate determinate condizioni di rete, a seconda dello scenario. 
 
@@ -221,7 +222,7 @@ Osserviamo l'esempio seguente.
 |Daniela  | Globale   | Schermo intero |
 |Amanda   | CriterioRiunionePosizione1  | Disattiva |
 
-Le riunioni ospitate da Daniela consentono ai partecipanti alla riunione di condividere l'intero schermo o una specifica applicazione. Se Amanda partecipa a una riunione di Daniela, non può condividere il suo schermo o una specifica applicazione, perché l'impostazione del suo criterio non lo consente. Nelle riunioni ospitate da Amanda nessuno può condividere lo schermo o una singola applicazione, indipendentemente dal criterio di condivisione dello schermo assegnati. Ciò significa che Daniela non può condividere il suo schermo o una singola applicazione nelle riunioni di Amanda.  
+Le riunioni ospitate da Daniela consentono ai partecipanti alla riunione di condividere l'intero schermo o una specifica applicazione. Se Amanda si unisce alla riunione di Daniela, Amanda non può condividere il suo schermo o un'applicazione specifica perché l'impostazione dei criteri è disabilitata. Nelle riunioni ospitate da Amanda nessuno può condividere lo schermo o una singola applicazione, indipendentemente dal criterio di condivisione dello schermo assegnati. Questo significa che Daniela non può condividere il suo schermo o una singola applicazione nelle riunioni di Amanda.  
 
 Al momento, gli utenti non possono riprodurre video o condividere il proprio schermo in una riunione di Teams se usano Google Chrome.
 

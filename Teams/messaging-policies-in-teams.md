@@ -18,19 +18,20 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
-description: Informazioni sui criteri di messaggistica e sul modo in cui possono essere usati per controllare la messaggistica di chat in teams.
-ms.openlocfilehash: a589b676a6c1da24eae7a25218fcfd449160f374
-ms.sourcegitcommit: 4e1647d19501b37860d9fc79370fa4347f76f85f
+- seo-marvel-apr2020
+description: In questo articolo vengono illustrati i criteri di messaggistica e il modo in cui possono essere usati per controllare la messaggistica di chat in teams.
+ms.openlocfilehash: d9cc2fbd9d3ba2eef77114228130a763d3f4fd25
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43079438"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904421"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in teams
 
 <!--- Add zone marker here--->
 
-I criteri di messaggistica vengono usati per controllare quali funzionalità di messaggistica chat e canale sono disponibili per gli utenti in Microsoft teams. È possibile usare i criteri predefiniti creati automaticamente o creare uno o più criteri di messaggistica personalizzati per gli utenti dell'organizzazione. Dopo aver creato un criterio, è possibile assegnarlo a un utente o a un gruppo di utenti dell'organizzazione.
+I criteri di messaggistica vengono usati per controllare le funzionalità di messaggistica disponibili in chat e canali per gli utenti di Microsoft Teams. È possibile usare i criteri predefiniti creati automaticamente o creare uno o più criteri di messaggistica personalizzati per gli utenti dell'organizzazione. Dopo aver creato un criterio, è possibile assegnarlo a un utente o a un gruppo di utenti dell'organizzazione.
 
 Per impostazione predefinita, viene creato un criterio denominato globale (impostazione predefinita a livello di organizzazione). Per impostazione predefinita, a tutti gli utenti dell'organizzazione verrà assegnato questo criterio di messaggistica. È possibile apportare modifiche a questo criterio o creare uno o più criteri personalizzati e assegnarvi gli utenti. Quando si creano criteri personalizzati, è possibile consentire o impedire che determinate funzionalità siano disponibili per gli utenti e quindi assegnarle a uno o più utenti che avranno bisogno delle impostazioni applicate. 
 
@@ -61,7 +62,7 @@ Se si applica un criterio a più utenti, selezionare ognuno di essi facendo clic
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
 3. Scegliere **Gestisci utenti**.
 4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
-5. Al termine dell'aggiunta di utenti, selezionare **Salva**.
+5. Dopo aver aggiunto gli utenti, selezionare **Salva**.
 
 > [!NOTE]
 > Non è possibile eliminare un criterio a cui sono utenti. È prima di tutto necessario assegnare un criterio diverso a tutti gli utenti interessati, quindi sarà possibile eliminare il criterio originale.

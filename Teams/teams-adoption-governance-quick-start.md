@@ -10,21 +10,23 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Prendere decisioni chiave per la fase 2 del piano di adozione
+description: Guida introduttiva che include le decisioni chiave che è necessario apportare alla fase 2 del piano di adozioni di Microsoft teams.
 f1.keywords:
 - CSH
-ms.custom: Adopt
+ms.custom:
+- Adopt
+- seo-marvel-apr2020
 ms.collection:
 - Teams_ITAdmin_Adopt
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2a8c154a0e3f1366327b37b22531541fde288db2
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 7b24fd6e6ea957c085050dd1311ec536800b706b
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780485"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904321"
 ---
 # <a name="governance-quick-start-for-microsoft-teams"></a>Guida introduttiva di governance per Microsoft Teams
 

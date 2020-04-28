@@ -16,18 +16,19 @@ ms.collection:
 description: Informazioni su come usare il report utilizzo teams nell'interfaccia di amministrazione di Microsoft teams per ottenere una panoramica delle attività dei team nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0252478a1ca41962ecdc424f97c85025b6b7dda9
-ms.sourcegitcommit: f4beced1a74d123253e166c7d402c1f24653d452
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 8cc25c5f63bd8645e5bfc540438a77f37abaa164
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "43528421"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904271"
 ---
 # <a name="microsoft-teams-usage-report"></a>Report sull'utilizzo di Microsoft Teams
 
 Il report sull'utilizzo di teams nell'interfaccia di amministrazione di Microsoft teams offre una panoramica delle attività di utilizzo in teams, incluso il numero di utenti e canali attivi, in modo da poter vedere rapidamente quanti utenti nell'organizzazione usano team per comunicare e collaborare. È possibile visualizzare le informazioni sull'utilizzo per i team, incluso il numero di utenti e canali attivi, gli ospiti e i messaggi in ogni team.
 
-## <a name="view-the-report"></a>Visualizzare il report
+## <a name="view-the-usage-report"></a>Visualizzare il report sull'utilizzo
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** > report**sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo teams**.
 2. In **intervallo di date**selezionare un intervallo e quindi fare clic su **Esegui report**.

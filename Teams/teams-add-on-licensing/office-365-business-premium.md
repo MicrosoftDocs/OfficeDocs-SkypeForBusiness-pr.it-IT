@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 business standard '
+title: 'Microsoft 365 Business Standard '
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -18,15 +18,16 @@ localization_priority: Normal
 ms.custom:
 - Licensing
 - LIL_Placement
-description: 'Informazioni sulle licenze per i componenti aggiuntivi, le caratteristiche e su come acquistare i piani standard di Microsoft 365 business. '
-ms.openlocfilehash: 20aacf46acf60bb581056654babc85277f41ee45
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+- seo-marvel-apr2020
+description: Informazioni sulle licenze per i componenti aggiuntivi, le relative caratteristiche e su come acquistare queste licenze per i piani standard aziendali di Microsoft 365.
+ms.openlocfilehash: 136dbf60f728d4c4455c466dd8a8a02376e20f1f
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780505"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904611"
 ---
-# <a name="microsoft-365-business-standard"></a>Microsoft 365 business standard
+# <a name="microsoft-365-business-standard"></a>Microsoft 365 Business Standard
 
 Se si dispone di [microsoft 365 business standard](https://products.office.com/en/business/office-365-business-premium), è possibile usare Microsoft teams per effettuare chiamate ad altri utenti della propria azienda che partecipano all'abbonamento. Ad esempio, se la tua azienda ha 10 persone, puoi usare teams per chiamare e inviare messaggi istantanei.
 

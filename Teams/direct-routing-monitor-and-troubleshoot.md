@@ -15,13 +15,14 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Questo articolo descrive come monitorare e risolvere i problemi di configurazione del routing diretto.
-ms.openlocfilehash: 5dcae4d734c146c92c0cda4ac988d6010f90cc6f
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+description: Informazioni su come monitorare e risolvere i problemi di configurazione del routing diretto, inclusi i controller di bordo della sessione, i componenti di routing diretto e i trunk delle telecomunicazioni.
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 52ab594b901606ccf7c3b43fc8484d989c248fcd
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836046"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901911"
 ---
 # <a name="monitor-and-troubleshoot-direct-routing"></a>Monitorare e risolvere i problemi di Instradamento diretto
 
