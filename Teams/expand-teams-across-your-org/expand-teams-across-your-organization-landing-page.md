@@ -1,6 +1,6 @@
 ---
 title: Espandere Microsoft teams nell'organizzazione
-description: Informazioni sulle risorse di Microsoft teams, inclusi turni per Team, team per l'assistenza sanitaria, team per l'istruzione, teams for Retail e teams for Government.
+description: Informazioni sulle risorse disponibili per la creazione della distribuzione standard teams per ottenere il massimo dai team per specifici tipi di organizzazione.
 layout: LandingPage
 ms.topic: landing-page
 author: lanachin
@@ -15,13 +15,13 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d4b6e2b1706f64a37aa8174ca919bd7582b90772
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 91a584f7dea5ae9c6ea23f8c4ee30b5eadf3dc20
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43136939"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904371"
 ---
 # <a name="expand-microsoft-teams-across-your-organization"></a>Espandere Microsoft teams nell'organizzazione
 
