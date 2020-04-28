@@ -2,7 +2,7 @@
 title: Utilizzo di Network Planner-esempio di scenario
 metadata:
   title: Utilizzo di Network Planner-esempio di scenario
-  description: Utilizzare Network Planner per configurare un piano di rete e generare un report.
+  description: Questo scenario di esempio Mostra come usare lo strumento Network Planner per creare siti e utenti e eseguire report.
   audience: IT Pro
   level: Intermediate
   displayType: one-column
@@ -15,12 +15,13 @@ metadata:
   localization_priority: Normal
   ms.collection:
   - M365-collaboration
-  ms.openlocfilehash: 7a743bea1524084298abb590c653d994aacb0bc4
-  ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+  ms.custom: seo-marvel-apr2020
+  ms.openlocfilehash: 5148415363ac62c68140982d03235b8bfa8835ac
+  ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 02/08/2020
-  ms.locfileid: "41863537"
+  ms.lasthandoff: 04/27/2020
+  ms.locfileid: "43904511"
 items:
 - durationInMinutes: 2
   content: "\nLo strumento Network Planner è disponibile nell'interfaccia di amministrazione di teams. Consente di determinare i requisiti di rete per l'organizzazione. Questo scenario di esempio Mostra come usare lo strumento per creare siti, utenti e report in cui è in corso una società denominata Contoso. \n\n## <a name=\"before-you-begin\"></a>Prima di iniziare\n\nSupponiamo che tu conosca già il tuo modo per aggirare l'interfaccia di amministrazione di teams e hai familiarità con ciò che devi fare per preparare la rete per i team. Se si tratta del primo articolo che si è visto in Network Planner, è consigliabile passare prima di tutto agli articoli seguenti.\n\n- [Preparare la rete dell'organizzazione per Teams](prepare-network.md)\n- [Usare Network Planner per Microsoft Teams](network-planner.md) \n\n## <a name=\"overview-of-contoso-network\"></a>Panoramica della rete contoso\n\nContoso ha tre posizioni:\n\n- **Sede centrale di Seattle:** Questa è la posizione principale per contoso. Ha 1000 dipendenti e 25 di loro stanno chiamando solo. Il sito è connesso a Internet ed esiste una connessione telefonica locale (PSTN). Contoso ha configurato il routing diretto per poter usare la connessione telefonica locale con i team. \n- **Kirkland Office:** Questa filiale ha 400 dipendenti e 10 chiama solo. Il sito usa la connessione alla sede centrale sia per il traffico Internet che per il telefono (PSTN). Questo ufficio è connesso alla sede centrale di Seattle usando una connessione WAN.\n- **Ufficio di Denver:** Questo Office include 250 dipendenti e 50 che chiamano solo. Il sito ha una connessione Internet locale, ma non ha una connessione telefonica diretta (PSTN).\n\nIniziamo!\n"

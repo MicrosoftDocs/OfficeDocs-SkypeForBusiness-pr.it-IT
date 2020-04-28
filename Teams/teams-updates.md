@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 ms.date: 05/16/2019
 ms.reviewer: LolaJ
-description: Visualizzare un elenco di articoli di team aggiornati.
+description: Questo argomento è un elenco di argomenti della Guida di Microsoft teams che sono stati aggiornati di recente, inclusi i collegamenti agli argomenti aggiornati.
 localization_priority: Normal
 search.appverid: MET150
 ms.collection:
@@ -17,15 +17,16 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 13c4923143bf835da930a0193618db9c600c45d4
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5d8c037be9b1aa55d97e39fc5821d6a4ad87ffaf
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836926"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43905633"
 ---
-# <a name="microsoft-teams-content-updates"></a><span data-ttu-id="48242-103">Aggiornamenti del contenuto di Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="48242-103">Microsoft Teams content updates</span></span>
+# <a name="microsoft-teams-content-updates"></a><span data-ttu-id="ea00a-103">Aggiornamenti del contenuto di Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="ea00a-103">Microsoft Teams content updates</span></span>
 
-<span data-ttu-id="48242-104">Questo argomento elenca gli argomenti di Microsoft teams che sono stati modificati di recente.</span><span class="sxs-lookup"><span data-stu-id="48242-104">This topic lists Microsoft Teams topics that have been changed recently.</span></span>
+<span data-ttu-id="ea00a-104">Questo argomento elenca gli argomenti di Microsoft teams che sono stati modificati di recente.</span><span class="sxs-lookup"><span data-stu-id="ea00a-104">This topic lists Microsoft Teams topics that have been changed recently.</span></span>
 
 > [!INCLUDE [teams-content-updates](includes/teams-content-updates.md)]
