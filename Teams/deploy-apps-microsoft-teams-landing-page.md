@@ -1,7 +1,7 @@
 ---
 title: App, bot e connettori in Microsoft Teams
 ms.reviewer: ''
-description: Usare queste risorse per la distribuzione per istruzioni su come distribuire app in Microsoft Teams.
+description: Informazioni sulle app, i bot e i connettori e su come decidere quale distribuire in Microsoft Teams in base al profilo e ai requisiti di business dell'organizzazione.
 ms.topic: article
 author: LolaJacobsen
 ms.author: lolaj
@@ -17,12 +17,13 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d47a14dd84a1ccbe73d07ea3cbd638b5ed6159db
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 83e5c452cd2e9056818059c5f0b1ddcdeca2c235
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43776621"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43901951"
 ---
 # <a name="apps-bots--connectors-in-microsoft-teams"></a>App, bot e connettori in Microsoft Teams
 
@@ -93,7 +94,7 @@ Può essere utile modificare queste impostazioni in base alle esigenze e alla co
 
 ### <a name="activity-reports"></a>Report attività
 
-È possibile usare i report attività per scoprire in che modo gli utenti dell'organizzazione usano Teams. Ad esempio, se alcuni utenti non usano ancora Teams, potrebbero non sapere come iniziare oppure non sapere come usare Teams per essere più produttivi e collaborativi. L'organizzazione può usare i report attività per stabilire come assegnare la priorità alle attività di formazione e comunicazione. Per visualizzare i report attività è necessario essere un amministratore globale in Office 365, un amministratore del servizio Teams o un amministratore di Skype for Business.
+È possibile usare i report attività per scoprire in che modo gli utenti dell'organizzazione usano Teams. Ad esempio, se alcuni utenti non usano ancora Teams, potrebbero non sapere come iniziare oppure come usare Teams per essere più produttivi e collaborativi. L'organizzazione può usare i report attività per stabilire come assegnare la priorità alle attività di formazione e comunicazione. Per visualizzare i report attività è necessario essere un amministratore globale in Office 365, un amministratore del servizio Teams o un amministratore di Skype for Business.
 
 | Chiedersi | Azione |
 |--------------|--------|

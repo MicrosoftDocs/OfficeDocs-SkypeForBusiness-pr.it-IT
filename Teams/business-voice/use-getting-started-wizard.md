@@ -17,12 +17,12 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 95ad893b3070a560edfa0e4afe46ab10df2960ad
-ms.sourcegitcommit: 4ee9835282e1440d03abc6dbcd172bc20c5b3015
+ms.openlocfilehash: 9a22c741898b48c3d71970699f09c00bb638205f
+ms.sourcegitcommit: 3ef5c913318fdeeaa8c55caab07c2f8224eae2b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2020
-ms.locfileid: "43096881"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43898131"
 ---
 # <a name="use-the-getting-started-wizard-to-set-up-business-voice"></a>Usare la procedura guidata Attività iniziali per configurare Business Voice
 
@@ -49,7 +49,7 @@ Se non si vuole personalizzare subito nulla, l'operazione è completata. È poss
 
 <table>
     <tr>
-        <td>Se si desidera modificare l'indirizzo di emergenza, fare clic su <b>Modifica</b> e immettere un nuovo indirizzo. L'indirizzo specificato viene convalidato per verificare che sia legittimo e formattato correttamente per i servizi di risposta alle emergenze. L'indirizzo viene quindi assegnato a tutti gli utenti a cui si assegnerà un numero nel passaggio successivo. Se si hanno dipendenti in più ubicazioni, vedere <a href="./customize-business-voice.md">Personalizzazione di Business Voice</a> per aggiungere e assegnare più indirizzi di emergenza dopo aver completato la procedura guidata Attività iniziali.</td> 
+        <td>Se si desidera modificare l'indirizzo di emergenza, fare clic su <b>Modifica</b> e immettere un nuovo indirizzo. L'indirizzo specificato viene convalidato per verificare che sia legittimo e formattato correttamente per i servizi di risposta alle emergenze. L'indirizzo viene quindi assegnato a tutti gli utenti a cui si assegnerà un numero nel passaggio successivo. Se si hanno dipendenti in più ubicazioni, vedere <a href="./customize-business-voice.md">Personalizzazione di Business Voice</a> per aggiungere e assegnare più indirizzi di emergenza dopo aver completato la procedura guidata Attività iniziali.</td>
         <td><img src="https://docs.microsoft.com/MicrosoftTeams/media/voice-wizard-choose-number.png" width="400"></td></tr>
 </table>
 
@@ -59,7 +59,7 @@ Per altre informazioni, vedere [Che cosa sono il routing delle chiamate, gli ind
 
 <table>
     <tr>
-        <td>Oltre a un nuovo numero di telefono locale, si può acquistare un numero verde o trasferire un numero esistente in Microsoft 365. Per configurare un numero verde, è necessario acquistare un piano per chiamate. Per trasferire uno o più numeri in Microsoft 365, accedere all'<a href="https://admin.teams.microsoft.com">interfaccia di amministrazione di Teams</a> al termine della procedura guidata.
+        <td>Oltre a un nuovo numero di telefono locale, si può acquistare un numero verde o trasferire un numero esistente in Microsoft 365. Per configurare un numero verde, è necessario acquistare Credito per la comunicazione. Per trasferire uno o più numeri in Microsoft 365, accedere all'<a href="https://admin.teams.microsoft.com">interfaccia di amministrazione di Teams</a> al termine della procedura guidata.
         </td>
         <td><img src="https://docs.microsoft.com/MicrosoftTeams/media/voice-wizard-choose-number.png" width="400">
         </td>

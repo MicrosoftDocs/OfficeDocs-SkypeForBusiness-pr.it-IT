@@ -14,15 +14,16 @@ localization_priority: Priority
 ms.collection:
 - M365-collaboration
 search.appverid: MET150
-description: Informazioni sui fattori da prendere in considerazione prima di configurare eventi live in Microsoft Teams.
+description: Questo articolo offre informazioni sui fattori da prendere in considerazione prima di configurare eventi live in Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: aabd94e8a5c4904f0343e2c8ccb647d632f3fa21
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: c0246a8517035ab5edd347fef30ae3f86af4afd9
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779965"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43903081"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -99,6 +100,7 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 |Relatori/Partecipanti con accesso esterno (federazione) |&#x2714; (Skype for Business)  |  &#x2714; (Teams) |N/D |
 |Relatore - Accesso PSTN |&#x274C; |&#x2714; (Teams) |N/D |
 |Presentare una schermata |&#x274C; |&#x2714; (Teams) |N/D |
+|Condividere l'audio di sistema in Windows (disponibile solo in caso di condivisione dello schermo)|&#x274C; |&#x2714; (Teams) |&#x2714; |
 |Presentare una presentazione di PowerPoint (condivisione PPT) |&#x2714; |&#x274C; (attenuato tramite condivisione dello schermo) |N/D |
 |Registrazione delle riunioni basate sul cloud |&#x2714; |&#x2714; |&#x2714; |
 |Pubblicazione automatica delle registrazioni su Stream  |&#x274C; |&#x274C; |&#x2714; |

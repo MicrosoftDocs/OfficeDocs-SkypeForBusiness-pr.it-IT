@@ -19,18 +19,18 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d3375abfbcd8319d104b4a2a657492c5105e240f
-ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.openlocfilehash: 30599b73447e9b5ab9873c6cd48372d997def5d1
+ms.sourcegitcommit: 3ef5c913318fdeeaa8c55caab07c2f8224eae2b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43749783"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43898121"
 ---
 > [!IMPORTANT]
 > Il modello di servizio di Teams è soggetto a modifiche per migliorare l'esperienza utente. Ad esempio, le scadenze del token di accesso o di aggiornamento predefinito potrebbero essere soggette a modifica per migliorare le prestazioni e la resilienza di autenticazione per gli utenti che usano Teams. Le modifiche apportate verranno applicate con l'obiettivo di garantire la protezione e l’affidabilità da progettazione di Teams.
 <p>
 
- # <a name="security-and-microsoft-teams"></a>Sicurezza e Microsoft Teams
+# <a name="security-and-microsoft-teams"></a>Sicurezza e Microsoft Teams
 
 Microsoft Teams, come parte del servizio Microsoft 365 (M365), segue tutte le migliori pratiche e procedure di sicurezza, come la protezione a livello di servizio attraverso difesa in profondità, controlli utente nell'ambito del servizio, potenziamento delle misure di sicurezza e best practice operative. Per i dettagli completi, consultare il [Centro protezione Microsoft](https://microsoft.com/trustcenter).
 
@@ -209,7 +209,6 @@ Sono due le opzioni disponibili per controllare chi arriva nelle riunioni di Tea
 |Utenti dell'organizzazione e organizzazioni attendibili      |  - Nel tenant</br> - Ospite del tenant</br> - Federato</br>        |  - Anonimo</br>  - Con accesso esterno PSTN</br>      |
 |Tutti      |   - Nel tenant</br>  - Ospite del tenant</br>  - Federato Anonimo</br>  - Con accesso esterno PSTN</br>       |         |
 
-
 2. Il secondo metodo riguarda le **riunioni strutturate**, dove il relatore può effettuare praticamente tutte le operazioni e i partecipanti hanno un'esperienza controllata. Dopo aver partecipato a una riunione strutturata, i relatori controllano cosa possono fare i partecipanti alla riunione. </p>
 
 |Azioni  |Relatori  |Partecipanti  |
@@ -227,7 +226,7 @@ Sono due le opzioni disponibili per controllare chi arriva nelle riunioni di Tea
 
 Teams offre agli utenti aziendali la possibilità di creare e partecipare in tempo reale a riunioni. Gli utenti aziendali possono anche invitare utenti esterni che non dispongono di un account AAD/Office 365 a partecipare a tali riunioni. Anche gli utenti impiegati da partner esterni con un'identità sicura e autenticata possono partecipare alle riunioni e, se autorizzati a farlo, possono agire da relatori. Gli utenti anonimi non possono creare o partecipare a una riunione come relatori, ma possono essere promossi a tale ruolo una volta che avranno partecipato.
 
-Affinché gli utenti anonimi possano partecipare alle riunioni di Teams, deve essere attivata l'impostazione Partecipanti nell'interfaccia di amministrazione di Teams.  
+Affinché gli utenti anonimi possano partecipare alle riunioni di Teams, deve essere attivata l'impostazione Partecipanti nell'interfaccia di amministrazione di Teams.
 
 > [!NOTE]
 > Il termine *utenti anonimi* significa utenti che non sono autenticati nel tenant dell'organizzazione. In questo contesto, tutti gli utenti esterni sono considerati anonimi. Gli utenti autenticati includono gli utenti del tenant e gli utenti guest del tenant.
@@ -238,6 +237,9 @@ Consentire agli utenti esterni di partecipare alle riunioni di Teams può essere
 - I tipi di partecipante consentono di limitare l'accesso a specifiche riunioni.
 - La pianificazione delle riunioni è limitata agli utenti che possiedono un account AAD e una licenza per Teams.
 - Gli utenti anonimi, ovvero non autenticati, che desiderano partecipare a una conferenza telefonica con accesso esterno, compongono uno dei numeri di accesso alla conferenza. Se l'opzione "Consenti sempre ai chiamanti di evitare la sala di attesa" è *attivata*, dovranno attendere finché un oratore o un utente autenticato non parteciperà alla riunione.
+
+> [!CAUTION]
+> Per fare in modo che gli utenti anonimi (utenti non invitati esplicitamente) non possano partecipare a una riunione, è necessario verificare che **Gli utenti anonimi possono partecipare a una riunione** sia impostato su **Disattivato** per la sezione **Participante** delle riunione.
 
 Un organizzatore può anche configurare impostazioni per consentire ai chiamanti esterni di accedere per primi a una riunione. Questa impostazione è configurata nelle impostazioni Audioconferenza per gli utenti e viene applicata a tutte le riunioni pianificate dall'utente.
 
@@ -269,6 +271,9 @@ I partecipanti alla riunione sono inoltre classificati per posizione e credenzia
 Molte riunioni coinvolgono utenti esterni. Queste stesse società desiderano anche rassicurazioni in merito all'identità degli utenti esterni prima di consentire a tali utenti di partecipare a una riunione. Nella sezione seguente viene descritto in che modo Teams limita l'accesso alle riunioni per i tipi di utenti che non sono stati autorizzati in modo esplicito e richiede a tutti i tipi di utente di fornire *credenziali* appropriate per l'accesso a una riunione.
 
 ### <a name="participant-admittance"></a>Ammissione dei partecipanti
+
+> [!CAUTION]
+> Per fare in modo che gli utenti anonimi (utenti non invitati esplicitamente) non possano partecipare a una riunione, è necessario verificare che **Gli utenti anonimi possono partecipare a una riunione** sia impostato su **Disattivato** per la sezione **Participante** delle riunione.
 
 In Teams, gli utenti anonimi possono essere trasferiti a un'area di attesa chiamata sala di attesa. I relatori possono quindi scegliere di *ammettere* questi utenti alla riunione o di *rifiutarli*. Quando gli utenti vengono trasferiti nella sala di attesa, il relatore e i partecipanti ricevono una notifica e gli utenti anonimi devono attendere di essere accettati o rifiutati oppure che la connessione scada.
 

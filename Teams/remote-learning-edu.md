@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 756059aaf7a707a824c75bd0306df04a70b66829
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: d380300aa27d07ecfecdbe805be9042c88779285
+ms.sourcegitcommit: 3ef5c913318fdeeaa8c55caab07c2f8224eae2b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780565"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43898161"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -76,6 +76,9 @@ I benefici per gli utenti di scuole secondarie superiori sono massimi quando tut
 Per una panoramica su come creare team, vedere: [Creare un team di classe in Microsoft Teams](https://support.office.com/article/create-a-class-team-in-microsoft-teams-preview-fae422eb-58b7-4431-9ff2-a4b9b6ae7c5b).
 
 ### <a name="2-configure-user-experiences-using-policies"></a>2. Configurare le esperienze utente con i criteri
+
+> [!IMPORTANT]
+> Per altre informazioni su come proteggere gli studenti durante le riunioni, vedere [Mantenere al sicuro gli studenti durante l'uso delle riunioni in Teams per l'apprendimento a distanza](https://support.office.com/article/f00fa399-0473-4d31-ab72-644c137e11c8).
 
 [I criteri di Teams](teams-policies.md) consentono di gestire le opzioni disponibili per utenti o gruppi di utenti specifici. I criteri possono essere applicati per definire a chi è consentito usare la chat privata, le chiamate private, la pianificazione delle riunioni, i tipi di contenuto che possono essere condivisi e molto altro ancora.
 
@@ -156,8 +159,6 @@ Per altre informazioni sull'uso di Teams per l'istruzione, vedere: [Microsoft Te
 
 > [!NOTE]
 > Alcune delle principali funzionalità di Teams non sono specifiche per l'istruzione. Suggerimenti e consigli per le funzionalità di base di Teams sono disponibili in [Guida e formazione su Teams](https://support.office.com/teams).
-
-Per altre informazioni su come proteggere gli studenti durante le riunioni, vedere [Mantenere al sicuro gli studenti durante l'uso delle riunioni in Teams per l'apprendimento a distanza](https://support.office.com/article/f00fa399-0473-4d31-ab72-644c137e11c8).
 
 ### <a name="prevent-users-from-changing-their-profile-photo"></a>Impedire agli utenti di cambiare la foto del profilo
 

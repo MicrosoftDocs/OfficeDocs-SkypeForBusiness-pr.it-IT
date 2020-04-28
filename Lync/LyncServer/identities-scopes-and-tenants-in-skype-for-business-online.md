@@ -12,12 +12,12 @@ ms:contentKeyID: 56558817
 ms.date: 05/04/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e6c6f0c08d03cd746f5929f6a7f1d82373a527a4
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 598f1cb760a6b4ca969c1e8df25f9735fd0df7c1
+ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180293"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43918564"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -89,7 +89,7 @@ Potrebbe essere necessario anche due utenti: Ken e Pilar Ackerman. A Ken è stat
 
 Come si può notare, Ken è autorizzato a comunicare con i provider di messaggistica istantanea pubblici. Ciò è dovuto al fatto che le impostazioni del criterio per utente assegnatogli eseguono l'override delle impostazioni del criterio globale. Pilar Ackerman non è in grado di comunicare con i provider di messaggistica istantanea pubblici. Ciò è dovuto al fatto che è gestita dal criterio globale e che il criterio globale proibisce tali comunicazioni.
 
-I criteri per utente devono essere creati per il supporto di Office 365. Dopo aver creato i criteri, è possibile assegnarli agli utenti utilizzando il cmdlet **Grant-CS** appropriato (ad esempio, [Grant-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/Grant-CsExternalAccessPolicy)). I criteri per utente sono facili da identificare perché l'identità dei criteri inizia sempre con il **prefisso**del tag. Ad esempio:
+I criteri per utente devono essere creati dal supporto tecnico Microsoft. Dopo aver creato i criteri, è possibile assegnarli agli utenti utilizzando il cmdlet **Grant-CS** appropriato (ad esempio, [Grant-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/Grant-CsExternalAccessPolicy)). I criteri per utente sono facili da identificare perché l'identità dei criteri inizia sempre con il **prefisso**del tag. Ad esempio:
 
     Identity : tag:AllowPublicIMCommunication
 
