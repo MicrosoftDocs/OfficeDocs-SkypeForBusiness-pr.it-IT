@@ -9,20 +9,20 @@ ms.reviewer: baluc
 ms.service: msteams
 search.appverid: MET150
 localization_priority: Priority
-description: Gli utenti di Microsoft 365 o Office 365 che non hanno una licenza di Microsoft Teams possono avviare un periodo di valutazione di 1 anno di Teams.
+description: Informazioni su come gli utenti di Microsoft 365 o Office 365 che non hanno una licenza di Microsoft Teams possono avviare un periodo di valutazione di 1 anno di Teams.
 f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6a0ad5cf058b8dcc5567cfc706ed3edb2cc09adf
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.custom: seo-marvel-apr2020
+ms.openlocfilehash: 5f8735cc328f06fd612fb86e292bc4291b99e21f
+ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43778352"
+ms.lasthandoff: 04/27/2020
+ms.locfileid: "43904531"
 ---
 <a name="manage-the-microsoft-teams-commercial-cloud-trial-offer"></a>Gestire l'offerta Microsoft Teams Commercial Cloud Trial
 =======================================================
