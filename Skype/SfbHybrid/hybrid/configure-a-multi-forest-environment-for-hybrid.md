@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: Nelle sezioni seguenti vengono fornite indicazioni su come configurare un ambiente con più foreste in un modello di foresta di risorse e utenti per fornire le funzionalità di Skype for business in uno scenario ibrido.
-ms.openlocfilehash: 3a0a5f08c9be4c6ba4c954a4100794d83d46ea53
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: acfca3b29407b019b87f5429906dbc72b4ef7dc3
+ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780125"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43918685"
 ---
 # <a name="deploy-a-resource-forest-topology"></a>Distribuire una topologia di foresta di risorse
  
@@ -65,7 +65,7 @@ Per ottenere la sincronizzazione corretta delle identità, è necessario sincron
 |ProxyAddresses  <br/> |ProxyAddresses  <br/> |
 |Attributo objectSID  <br/> |msRTCSIP-OriginatorSID  <br/> |
    
-L' [attributo di collegamento dell'account scelto](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-design-concepts/) verrà utilizzato come Anchor di origine. Se si dispone di un attributo diverso e immutabile che si preferisce utilizzare, è possibile farlo. Basta essere sicuri di modificare la regola delle attestazioni AD FS e selezionare l'attributo durante la configurazione di AAD Connect.
+L' [attributo di collegamento dell'account scelto](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts) verrà utilizzato come Anchor di origine. Se si dispone di un attributo diverso e immutabile che si preferisce utilizzare, è possibile farlo. Basta essere sicuri di modificare la regola delle attestazioni AD FS e selezionare l'attributo durante la configurazione di AAD Connect.
   
 Non sincronizzare la UPN tra le foreste. Durante i test, è stato rilevato che è necessario utilizzare un UPN univoco per ogni foresta utente, in quanto non è possibile utilizzare lo stesso UPN tra più foreste. Di conseguenza, sono state presentate due possibilità, per sincronizzare l'UPN o per non eseguire la sincronizzazione. 
   
@@ -121,14 +121,16 @@ L'installazione di AAD Connect deve essere eseguita utilizzando le impostazioni 
     
 3. Identificare gli utenti nelle directory locali: selezionare **identità utente esistenti tra più directory**e selezionare gli attributi **attributo objectSID** e **msExchangeMasterAccountSID** .
     
-4. Identificare gli utenti in Azure AD: Anchor di origine: selezionare l'attributo che si è scelto dopo la lettura [selezionando un attributo sourceAnchor valido](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect-design-concepts/), nome dell'entità utente- **userPrincipalName**.
+4. Identificare gli utenti in Azure AD: Anchor di origine: selezionare l'attributo che si è scelto dopo la lettura [selezionando un attributo sourceAnchor valido](https://docs.microsoft.com/azure/active-directory/hybrid/plan-connect-design-concepts#selecting-a-good-sourceanchor-attribute), nome dell'entità utente- **userPrincipalName**.
     
 5.  Funzionalità facoltative: selezionare se è stata distribuita la distribuzione ibrida di Exchange.
     
     > [!NOTE]
     >  Se si dispone solo di Exchange Online, è possibile che si verifichi un problema con gli errori OAuth durante l'individuazione automatica a causa del reindirizzamento CNAME. Per risolvere questo errore, è necessario impostare l'URL di individuazione automatica di Exchange eseguendo il cmdlet seguente da Skype for Business Server Management Shell:
-  
-    Set-CsOAuthConfiguration-ExchangeAutoDiscoverURL https://<span>Autodiscover-s.Outlook.com/autodiscover/autodiscover.svc 
+    >
+    > ```powershell
+    > Set-CsOAuthConfiguration -ExchangeAutoDiscoverURL https://autodiscover-s.outlook.com/autodiscover/autodiscover.svc 
+    > ```
     
 6.  Farm ADFS: selezionare **Usa una farm di Windows Server 2012 R2 ad FS esistente** e immettere il nome del server ad FS.
     
@@ -142,4 +144,3 @@ Seguire le procedure consigliate per la configurazione dell'ambiente ibrido di S
 
 Se necessario, seguire le procedure consigliate per la configurazione dell'ambiente ibrido di Exchange. Per ulteriori informazioni, vedere [distribuzioni ibride di Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid). 
   
-

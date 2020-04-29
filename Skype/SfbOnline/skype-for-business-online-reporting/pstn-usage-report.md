@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Reporting
 description: La nuova area report dell'interfaccia di amministrazione di Skype for business Mostra la chiamata e l'attività di conferenza audio nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli di utilizzo PSTN dei servizi di audioconferenza, incluso il costo della chiamata, in modo da poter comprendere l'utilizzo e chiamare i dettagli di fatturazione per determinare l'utilizzo all'interno dell'organizzazione.
-ms.openlocfilehash: 4161f0f9f0b6e011b67f94afc14b5ac793fc1009
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: e298bc79b821a8ec8373186a879b94790bc9d151
+ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43776271"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43918514"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
@@ -32,7 +32,7 @@ La nuova area **report** dell'interfaccia di amministrazione di Skype for busine
   
 Vedere la [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per altri report disponibili.
   
-Questo report, insieme agli altri report di Skype for business, fornisce informazioni dettagliate sull'attività, incluso l'uso delle chiamate nell'organizzazione. Questi dettagli sono molto utili per l'analisi, la pianificazione e l'esecuzione di altre decisioni aziendali per l'organizzazione e per la configurazione dei crediti per le [comunicazioni](/microsoftteams/what-are-communications-credits)
+Questo report, insieme agli altri report di Skype for business, fornisce informazioni dettagliate sull'attività, incluso l'uso delle chiamate nell'organizzazione. Questi dettagli sono molto utili per l'analisi, la pianificazione e l'esecuzione di altre decisioni aziendali per l'organizzazione e per la configurazione dei crediti per le [comunicazioni](/microsoftteams/what-are-communications-credits).
   
 > [!NOTE]
 > È possibile visualizzare tutti i report di Skype for business quando si accede come amministratore all'interfaccia di amministrazione di Microsoft 365. 
@@ -77,8 +77,9 @@ Questo è l'aspetto del report.
      **UCAP (Unified Communication Applications)** 
      *    **ucap_in** (chiamata PSTN in ingresso per l'applicazione UC, ad esempio operatore automatico o coda di chiamata) 
      *    **ucap_out** (chiamata PSTN in uscita dall'applicazione UC, ad esempio operatore automatico o coda di chiamata)
-     *    **Nota:** Le chiamate trasferite a un utente dall'applicazione UC, ad esempio un operatore automatico o una coda di chiamata, non verranno visualizzate nel report utilizzo PSTN, poiché questi piedini di chiamata sono chiamate audio peer-to-peer (P2P). È possibile accedere alle chiamate P2P nell'interfaccia di amministrazione di Skype for business in "strumenti > Skype for business call Analytics" e cercare in base al nome utente o all'indirizzo SIP correlando la chiamata per data/ora e/o CLID di origine (ID linea chiamante). 
-*     
+         > [!NOTE]
+         > Le chiamate trasferite a un utente dall'applicazione UC, ad esempio un operatore automatico o una coda di chiamata, non verranno visualizzate nel report utilizzo PSTN, poiché questi piedini di chiamata sono chiamate audio peer-to-peer (P2P). È possibile accedere alle chiamate P2P nell'interfaccia di amministrazione di Skype for business in "strumenti > Skype for business call Analytics" e cercare in base al nome utente o all'indirizzo SIP correlando la chiamata per data/ora e/o CLID di origine (ID linea chiamante). 
+
      **Nazionale/internazionale** indica se la chiamata effettuata è considerata nazionale (entro un Paese/area geografica) o internazionale (al di fuori di un Paese/area geografica) a seconda della posizione dell'utente. 
 *    **Destinazione chiamata** è il nome della destinazione paese/area geografica chiamata, ad esempio Francia, Germania o Stati Uniti (USA). 
 *    **Tipo di numero** è il tipo di numero di telefono proveniente dal numero di telefono di un utente, un servizio o un numero verde.  
@@ -125,28 +126,29 @@ La prima riga del file CSV contiene i nomi di colonna.
 
 Il file esportato contiene altri campi che non sono disponibili nel report online. Questi possono essere usati per la risoluzione dei problemi e i flussi di lavoro automatici.
 
-| #  | Nome | [Tipo di dati (SQL Server)](https://docs.microsoft.com/sql/t-sql/data-types/data-types-transact-sql) | Descrizione |
-| :-: | :-: | :-: |:------------------- |
-| 0 | UsageId | `uniqueidentifier` | Identificatore univoco delle chiamate |
-| 1 | ID chiamata | `nvarchar(64)` | Identificatore chiamata. Non è garantito che sia univoco |
-| 2 | ID conferenza | `nvarchar(64)` | ID della conferenza audio |
-| 3 | Posizione utente | `nvarchar(2)` | Codice paese dell'utente, [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) |
-| 4 | AAD ObjectId | `uniqueidentifier` | Chiamata dell'ID utente in Azure Active Directory.<br/> Questo e altre informazioni utente saranno null/Empty per i tipi di chiamata bot (ucap_in, ucap_out) |
-| 5 | UPN | `nvarchar(128)` | UserPrincipalName (nome di accesso) in Azure Active Directory.<br/>Si tratta in genere dello stesso indirizzo SIP dell'utente e può essere uguale all'indirizzo di posta elettronica dell'utente |
-| 6 | Nome visualizzato dell'utente | `nvarchar(128)` | Nome visualizzato dell'utente |
-| 7 | ID chiamante | `nvarchar(128)` | Numero che ha ricevuto la chiamata per le chiamate in ingresso o il numero composto per le chiamate in uscita. Formato [E. 164](https://en.wikipedia.org/wiki/E.164) |
-| 8 | Tipo di chiamata | `nvarchar(32)` | Se la chiamata è una chiamata in uscita PSTN o in ingresso e il tipo di chiamata, ad esempio una chiamata effettuata da un utente o da una conferenza audio |
-| 9 | Tipo di numero | `nvarchar(16)` | Tipo di numero di telefono dell'utente, ad esempio un servizio di numero verde |
-| 10 | Nazionali/internazionali | `nvarchar(16)` | Se la chiamata è stata nazionale (all'interno di un paese o di un'area geografica) o internazionale (all'esterno di un paese o area geografica) in base alla posizione dell'utente |
-| 11 | Destinazione chiamata | `nvarchar(64)` | Paese o area geografica chiamata |
-| 12 | Numero di destinazione | `nvarchar(32)` | Numero composto in formato [E. 164](https://en.wikipedia.org/wiki/E.164) |
-| 13 | Ora di inizio | `datetimeoffset` | Ora di inizio chiamata (UTC, [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) |
-| 14 | Ora di fine | `datetimeoffset` | Ora di fine chiamata (UTC, [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) |
-| 15 | Secondi di durata | `int` | Per quanto tempo la chiamata è stata connessa |
-| 16 | Costo di connessione | `numeric(16, 2)` | Prezzo della tariffa di connessione |
-| 17 | Addebito | `numeric(16, 2)` | Importo del pagamento o del costo della chiamata addebitata al tuo account |
-| 18 | Valuta | `nvarchar(3)` | Tipo di valuta usata per calcolare il costo della chiamata ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)) |
-| 19 | Funzionalità | `nvarchar(32)` | Licenza usata per la chiamata |
+> [!div class="has-no-wrap"]  
+> | #  | Nome | [Tipo di dati (SQL Server)](https://docs.microsoft.com/sql/t-sql/data-types/data-types-transact-sql) | Descrizione |
+> | :-: | :-: | :-: |:------------------- |
+> | 0 | UsageId | `uniqueidentifier` | Identificatore univoco delle chiamate |
+> | 1 | ID chiamata | `nvarchar(64)` | Identificatore chiamata. Non è garantito che sia univoco |
+> | 2 | ID conferenza | `nvarchar(64)` | ID della conferenza audio |
+> | 3 | Posizione utente | `nvarchar(2)` | Codice paese dell'utente, [ISO 3166-1 Alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) |
+> | 4 | AAD ObjectId | `uniqueidentifier` | Chiamata dell'ID utente in Azure Active Directory.<br/> Questo e altre informazioni utente saranno null/Empty per i tipi di chiamata bot (ucap_in, ucap_out) |
+> | 5 | UPN | `nvarchar(128)` | UserPrincipalName (nome di accesso) in Azure Active Directory.<br/>Si tratta in genere dello stesso indirizzo SIP dell'utente e può essere uguale all'indirizzo di posta elettronica dell'utente |
+> | 6 | Nome visualizzato dell'utente | `nvarchar(128)` | Nome visualizzato dell'utente |
+> | 7 | ID chiamante | `nvarchar(128)` | Numero che ha ricevuto la chiamata per le chiamate in ingresso o il numero composto per le chiamate in uscita. Formato [E. 164](https://en.wikipedia.org/wiki/E.164) |
+> | 8 | Tipo di chiamata | `nvarchar(32)` | Se la chiamata è una chiamata in uscita PSTN o in ingresso e il tipo di chiamata, ad esempio una chiamata effettuata da un utente o da una conferenza audio |
+> | 9 | Tipo di numero | `nvarchar(16)` | Tipo di numero di telefono dell'utente, ad esempio un servizio di numero verde |
+> | 10 | Nazionali/internazionali | `nvarchar(16)` | Se la chiamata è stata nazionale (all'interno di un paese o di un'area geografica) o internazionale (all'esterno di un paese o area geografica) in base alla posizione dell'utente |
+> | 11 | Destinazione chiamata | `nvarchar(64)` | Paese o area geografica chiamata |
+> | 12 | Numero di destinazione | `nvarchar(32)` | Numero composto in formato [E. 164](https://en.wikipedia.org/wiki/E.164) |
+> | 13 | Ora di inizio | `datetimeoffset` | Ora di inizio chiamata (UTC, [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) |
+> | 14 | Ora di fine | `datetimeoffset` | Ora di fine chiamata (UTC, [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601)) |
+> | 15 | Secondi di durata | `int` | Per quanto tempo la chiamata è stata connessa |
+> | 16 | Costo di connessione | `numeric(16, 2)` | Prezzo della tariffa di connessione |
+> | 17 | Addebito | `numeric(16, 2)` | Importo del pagamento o del costo della chiamata addebitata al tuo account |
+> | 18 | Valuta | `nvarchar(3)` | Tipo di valuta usata per calcolare il costo della chiamata ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217)) |
+> | 19 | Funzionalità | `nvarchar(32)` | Licenza usata per la chiamata |
 
     
 ## <a name="want-to-see-other-skype-for-business-reports"></a>Per consultare altri report di Skype for Business
