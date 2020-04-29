@@ -1,7 +1,7 @@
 ---
 title: Eseguire un'analisi eDiscovery del contenuto
 author: LolaJacobsen
-ms.author: lolaj
+ms.author: hakank
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4b31f2efb613551ab17320900e45cf30d0ee11be
-ms.sourcegitcommit: df4dde0fe6ce9e26cb4b3da4e4b878538d31decc
+ms.openlocfilehash: 67006fba94a58514fa33c91edd0a46312396b31a
+ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43521542"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43918584"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Eseguire un'analisi eDiscovery del contenuto in Microsoft Teams
 
@@ -40,17 +40,15 @@ Non tutto il contenuto del team è eDiscoverable. La tabella seguente mostra i t
 |:--- | --- |:--- |
 | Messaggi di chat in teams | Sì | Messaggi di chat dalle chat in cui gli utenti Guest sono gli unici partecipanti in una chat di 1:1 o 1: N non sono eDiscoverable. |
 | Registrazioni audio | No | |
-| Indicatore di data e ora visualizzato quando un messaggio è stato letto da ogni utente | No | |
-| Registrazioni audio | No | |
 | Messaggi di canale privato | No | |
 | Emoji, gif, adesivi | Sì | |
 | Frammenti di codice | No | |
-| Collegamenti alle chat | No | |
+| Collegamenti alle chat | Sì | |
 | Reazioni (simili, cuori e così via) | No | |
 | Messaggi modificati | Sì | Se l'utente è in attesa, vengono mantenute le versioni precedenti dei messaggi modificati. |
 | Immagini in linea | Sì | |
-| Tabelle | No | |
-| Oggetto | No | |
+| Tabelle | Sì | |
+| Oggetto | Sì | |
 | Citazioni | Sì | Il contenuto tra virgolette è ricercabile. Tuttavia, i risultati della ricerca non indicano che il contenuto è stato citato. |
 | Nome del canale | No | |
 
@@ -162,7 +160,7 @@ Un set di revisione della conversazione offre una visualizzazione più intuitiva
 
 Funzionalità come la redazione è disponibile in entrambi i tipi di set di revisione.
 
-Per altre informazioni sui set di revisione, vedere [rivedere le conversazioni in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/conversation-review-sets)
+Per altre informazioni sui set di revisione, vedere [rivedere le conversazioni in Advanced eDiscovery](https://docs.microsoft.com/microsoft-365/compliance/conversation-review-sets).
 
 #### <a name="collection-options"></a>Opzioni di raccolta
 

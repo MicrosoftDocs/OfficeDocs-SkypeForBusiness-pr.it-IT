@@ -16,12 +16,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Usare Power BI per analizzare i dati di Call Quality dashboard per Microsoft teams.
-ms.openlocfilehash: af540f09fefc27b99e1c084d2571fe51d47a393c
-ms.sourcegitcommit: f3390e27bb63b66d1c4fb4f8afbda6b814fbbb5b
+ms.openlocfilehash: a288376192af375660107b79e93ec8613f46163d
+ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170504"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43918675"
 ---
 # <a name="use-power-bi-to-analyze-cqd-data-for-microsoft-teams"></a>Usare Power BI per analizzare i dati di Call Quality dashboard per Microsoft Teams
 
@@ -29,7 +29,7 @@ Novità di gennaio 2020: [scaricare i modelli di query di Power BI per Call Qual
 
 Per i report di Call Quality dashboard in teams, se si preferisce usare Power BI per eseguire query e segnalare i dati, scaricare i modelli di Power BI di Call Quality dashboard. Quando si aprono i modelli in Power BI, viene chiesto di accedere con le credenziali di amministratore di Call Quality dashboard. È possibile personalizzare questi modelli di query e distribuirli a tutti gli utenti dell'organizzazione che hanno una licenza di Power BI e le autorizzazioni di amministratore di Call Quality dashboard.
 
-Prima di poter usare questi file di PBIX, è necessario [installare il connettore Power BI per Microsoft Call Quality dashboard](CQD-Power-BI-connector.md) usando il file *MicrosoftCallQuality. PQX* incluso nel [download](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). 
+Prima di poter usare questi file di PBIT, è necessario [installare il connettore Power BI per Microsoft Call Quality dashboard](CQD-Power-BI-connector.md) usando il file *MicrosoftCallQuality. PQX* incluso nel [download](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). 
 
 
 |  |  |
@@ -43,7 +43,7 @@ Prima di poter usare questi file di PBIX, è necessario [installare il connettor
 |Feedback degli utenti di Call Quality Dashboard (Vota la mia chiamata) report. PBIT     | Mostra il tasso di dati della chiamata in modo che sia possibile usare facilmente per supportare la chiamata per l'organizzazione. Riferimento incrociato con Verbatims per identificare le opportunità di formazione per gli utenti finali.        |
 
 > [!TIP]
-> Dopo aver configurato i report di Power BI per i dati di Call Quality dashboard, aggiungerli come scheda a un canale. Dopo aver selezionato **+** un canale, selezionare **Power bi** e quindi trovare il report. Tenere presente che solo gli utenti con una licenza di Power BI e le credenziali di amministratore di Call Quality dashboard possono accedere ai report.
+> Dopo aver configurato i report di Power BI per i dati di Call Quality dashboard, aggiungerli come scheda a un canale. Dopo aver selezionato **+** un canale, selezionare **Power bi** e quindi trovare il report. Per altre informazioni, leggere [incorpora report con la scheda Power BI per Teams](https://docs.microsoft.com/power-bi/service-embed-report-microsoft-teams). Tenere presente che solo gli utenti con una licenza di Power BI e le credenziali di amministratore di Call Quality dashboard possono accedere ai report.
 
 
 ## <a name="related-topics"></a>Argomenti correlati

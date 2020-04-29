@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un SBC (Session Border Controller) per servire più tenant per i partner Microsoft e/o i vettori PSTN.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 061d0afec96e6c76e49f6471ea8ed2f673e33eba
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 883df3c78387d509f094f91bc346fc5b31f53690
+ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901851"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43918715"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -119,8 +119,8 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
 ### <a name="add-a-base-domain-to-the-tenant-and-verify-it"></a>Aggiungere un dominio di base al tenant e verificarlo
 
-1.    Nell'interfaccia di amministrazione di Microsoft 365, accedere a Domains di **configurazione** > **Domains** > **Aggiungi dominio**.
-2.    Nella casella **immettere un dominio** Digitare l'FQDN del dominio di base. Nell'esempio seguente il dominio di base è *Customers.adatum.biz*.
+1. Nell'interfaccia di amministrazione di Microsoft 365, accedere a Domains di **configurazione** > **Domains** > **Aggiungi dominio**.
+2. Nella casella **immettere un dominio** Digitare l'FQDN del dominio di base. Nell'esempio seguente il dominio di base è *Customers.adatum.biz*.
 
     ![Schermata che mostra la pagina Aggiungi un dominio](media/direct-routing-2-sbc-add-domain.png)
 
@@ -129,8 +129,8 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
     ![Schermata che mostra la conferma di un nome di dominio verificato](media/direct-routing-3-sbc-verify-domain.png)
 
-5.    Fare clic su **Avanti**, quindi nella pagina **Aggiorna impostazioni DNS** Selezionare **aggiungerò i record DNS** e fare clic su **Avanti**.
-6.    Nella pagina successiva deselezionare tutti i valori (a meno che non si voglia usare il nome di dominio per Exchange, SharePoint o teams/Skype for business), fare clic su **Avanti**e quindi su **fine**. Verificare che il nuovo dominio sia nello stato di completamento della configurazione.
+5. Fare clic su **Avanti**, quindi nella pagina **Aggiorna impostazioni DNS** Selezionare **aggiungerò i record DNS** e fare clic su **Avanti**.
+6. Nella pagina successiva deselezionare tutti i valori (a meno che non si voglia usare il nome di dominio per Exchange, SharePoint o teams/Skype for business), fare clic su **Avanti**e quindi su **fine**. Verificare che il nuovo dominio sia nello stato di completamento della configurazione.
 
     ![Schermata che mostra i domini con stato di installazione completata](media/direct-routing-14-sbc-setup-complete.png)
 
@@ -227,7 +227,7 @@ Sono state introdotte due nuove entità:
 
 -    I vettori devono solo configurare e gestire un singolo trunk (trunk Carrier nel dominio vettore) usando il comando set-CSOnlinePSTNGateway. Nell'esempio precedente è adatum.biz;
 -    Nel tenant del cliente, il vettore deve solo aggiungere il nome di dominio completo del trunk derivato ai criteri di routing vocale degli utenti. Non è necessario eseguire New-CSOnlinePSTNGateway per un trunk.
--     Il trunk derivato, come suggerisce il nome, eredita o deriva tutti i parametri di configurazione dal trunk del vettore. Esempi
+-    Il trunk derivato, come suggerisce il nome, eredita o deriva tutti i parametri di configurazione dal trunk del vettore. Esempi
 -    Customers.adatum.biz-il tronco portante che deve essere creato nel tenant del vettore.
 -    Sbc1.customers.adatum.biz: il trunk derivato in un tenant del cliente che non deve essere creato in PowerShell.  È possibile aggiungere semplicemente il nome del trunk derivato nel tenant del cliente nei criteri di routing vocale online senza crearlo.
 -   Il gestore dovrà impostare il record DNS che risolve il nome FQDN del trunk derivato nell'indirizzo IP di Carrier SBC.

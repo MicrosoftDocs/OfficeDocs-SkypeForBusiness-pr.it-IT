@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come pianificare il bypass multimediale con il routing diretto del sistema telefonico, che consente di ridurre il percorso del traffico multimediale e migliorare le prestazioni.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 316e94a2baafcecc9fb690f3d836e7c96c0b30ea
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: f5e053149670804e585d0cd61522f67a922b2b47
+ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901841"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43918695"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
@@ -254,7 +254,8 @@ UDP/SRTP | Client | SBC | 50 000-50 019  | Definita nell'SBC |
 | UDP/SRTP | SBC | Client | Definita nell'SBC | 50 000-50 019  |
 
 
-Nota: se si dispone di un dispositivo di rete che converte le porte di origine del client, verificare che le porte tradotte vengano aperte tra l'apparecchiatura di rete e l'SBC. 
+> [!NOTE]
+> Se si dispone di un dispositivo di rete che converte le porte di origine del client, verificare che le porte tradotte vengano aperte tra l'apparecchiatura di rete e il SBC. 
 
 ### <a name="requirements-for-using-transport-relays"></a>Requisiti per l'uso dei relè di trasporto
 
@@ -262,7 +263,7 @@ I relè di trasporto si trovano nello stesso intervallo dei processori multimedi
 
 ### <a name="office-365-and-office-365-gcc-environments"></a>Ambienti Office 365 e Office 365 GCC
 
--52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
+- 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
 
 ## <a name="office-365-gcc-dod-environment"></a>Office 365 GCC DoD Environment
 
@@ -282,11 +283,12 @@ UDP/SRTP | Inoltro di trasporto | SBC | 50 000-59 999    | Definita nell'SBC |
 | UDP/SRTP | SBC | Inoltro di trasporto | Definita nell'SBC | 50 000-59 999, 3478, 3479     |
 
 
-Nota: Microsoft consiglia almeno due porte per chiamata simultanea su SBC. Poiché Microsoft ha due versioni di relay di trasporto, sono necessarie le seguenti:
-
-- V4, che può funzionare solo con l'intervallo di porte da 50 000 a 59 999
-
-- V6, che funziona con le porte 3478, 3479
+> [!NOTE]
+> Microsoft consiglia almeno due porte per chiamata simultanea su SBC. Poiché Microsoft ha due versioni di relay di trasporto, sono necessarie le seguenti:
+> 
+> - V4, che può funzionare solo con l'intervallo di porte da 50 000 a 59 999
+> 
+> - V6, che funziona con le porte 3478, 3479
 
 In questo momento, il bypass multimediale supporta solo la versione v4 dei relay di trasporto. In futuro presenteremo il supporto di V6. 
 
@@ -301,7 +303,7 @@ L'intervallo IP per il traffico multimediale è
 
 ### <a name="office-365-and-office-365-gcc-environments"></a>Ambienti Office 365 e Office 365 GCC
 
--52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
+- 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
 
 ## <a name="office-365-gcc-dod-environment"></a>Office 365 GCC DoD Environment
 
@@ -315,8 +317,8 @@ L'intervallo di porte dei processori multimediali (applicabile a tutti gli ambie
 
 | Traffico | Da | A | Porta di origine | Porta di destinazione|
 | :-------- | :-------- |:-----------|:--------|:---------|
-UDP/SRTP | Media processor | SBC | 49 152-53 247    | Definita nell'SBC |
-| UDP/SRTP | SBC | Media processor | Definita nell'SBC | 49 152-53 247     |
+UDP/SRTP | Media processor | SBC | 3478, 3479 e 49 152-53 247    | Definita nell'SBC |
+| UDP/SRTP | SBC | Media processor | Definita nell'SBC | 3478, 3479 e 49 152-53 247     |
 
 ## <a name="configure-separate-trunks-for-media-bypass-and-non-media-bypass"></a>Configurare trunk separati per il bypass multimediale e il bypass non multimediale  
 

@@ -24,12 +24,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate.
-ms.openlocfilehash: bfb67c6246581513d06ad4489ab8c3b534ad04d4
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 874b074047e191422d552236dea1d0f1e746780d
+ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43914064"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43918840"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -38,6 +38,30 @@ Informazioni su come configurare Microsoft 365 o Office 365 per utilizzare il da
 Call Quality Dashboard (Call Quality Dashboard) offre informazioni sulla qualità delle chiamate effettuate con i servizi Microsoft teams e Skype for business online. In questo argomento vengono illustrati i passaggi per iniziare a raccogliere i dati che è possibile usare per risolvere i problemi di qualità delle chiamate.
 
 Attualmente, Advanced Call Quality dashboard e Call Quality dashboard sono entrambi disponibili per l'uso. Advanced Call Quality dashboard è disponibile all' <span>https://cqd.teams.microsoft.com</span>indirizzo. Nuovo URL, ma lo stesso accesso con le credenziali di amministratore.
+
+## <a name="assign-roles-for-accessing-cqd"></a>Assegnare ruoli per l'accesso a Call Quality dashboard
+
+Assegnare [ruoli](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) per accedere a Call Quality dashboard alle persone che devono usarle. 
+
+Questa tabella Mostra gli elementi che ogni ruolo può eseguire in Call Quality Dashboard:
+
+
+|  |Visualizzare i report  |Visualizzare i campi EUII  |Creare report  |Caricare i dati dell'edificio  |
+|---------|:-------:|:-------:|:-------:|:-------:|
+|Amministratore globale     |Sì         |Supporto per più paesi         |Supporto per più paesi         |Supporto per più paesi         |
+|Amministratore del servizio Teams     |Sì         |Supporto per più paesi         |Supporto per più paesi         |Supporto per più paesi         |
+|Amministratore comunicazioni Teams     |Sì         |Supporto per più paesi         |Supporto per più paesi         |Supporto per più paesi         |
+|Tecnico supporto comunicazioni Teams     |Sì         |Supporto per più paesi         |Sì         |No         |
+|Specialista supporto comunicazioni Teams     |Sì         |No         |Sì         |No         |
+|Amministratore di Skype for business     |Sì         |Supporto per più paesi         |Supporto per più paesi         |Supporto per più paesi         |
+|Lettore globale di Azure AD |Sì         |Supporto per più paesi         |Sì         |No         |
+|Lettore di report Microsoft 365<sup>1</sup>     |Sì         |No         |Sì         |No         |
+
+<sup>1</sup> oltre a leggere i report di Call Quality dashboard, il lettore di report di Microsoft 365 può visualizzare tutti i [report attività](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) nell'interfaccia di amministrazione e tutti i report di [Microsoft 365 adoption Content Pack](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f).
+
+> [!NOTE]
+> Se non si vedono EUII (informazioni identificative per gli utenti finali) e si ha uno dei ruoli consentiti per vedere queste informazioni, tenere presente che Call Quality dashboard mantiene solo EUII per 30 giorni. Viene eliminato qualsiasi valore antecedente di 30 giorni.
+
 
 ## <a name="use-power-bi-to-analyze-cqd-data"></a>Usare Power BI per analizzare i dati di Call Quality dashboard
 
@@ -500,7 +524,7 @@ Questi ruoli di amministratore possono accedere a Call Quality dashboard, ma non
 - Lettore di report di Microsoft 365
 - Specialista supporto comunicazioni Teams
 
-Per altre informazioni sui ruoli che possono accedere a Call Quality dashboard, incluso EUII, vedere [assegnare ruoli per l'accesso a Call Quality dashboard](quality-of-experience-review-guide.md#assign-roles-for-accessing-cqd).
+Per altre informazioni sui ruoli che possono accedere a Call Quality dashboard, incluso EUII, vedere [assegnare ruoli per l'accesso a Call Quality dashboard](#assign-roles-for-accessing-cqd).
 
 ### <a name="why-am-i-seeing-skype-for-business-information-in-cqd-when-ive-filtered-for-teams-only"></a>Perché è possibile visualizzare le informazioni di Skype for business in Call Quality dashboard quando è stato filtrato solo per i team?
 

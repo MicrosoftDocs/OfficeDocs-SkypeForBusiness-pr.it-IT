@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b85df2a7a5cf341c61d86baef89b0df8a3c4f439
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 4eb43e79a7ad45596876a3fc932ad405271b0dda
+ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43902531"
+ms.lasthandoff: 04/28/2020
+ms.locfileid: "43918504"
 ---
 # <a name="hardware-requirements-for-microsoft-teams"></a>Requisiti hardware per Microsoft Teams
 
@@ -72,7 +72,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 |Video    |  Videocamera USB 2.0       |
 |Dispositivi    |   Videocamera, microfono e altoparlanti standard del portatile    | 
 |Opzioni vocali    |  Compatibilità con microfoni e altoparlanti, auricolari con microfono o dispositivi equivalenti       |
-|Videochiamate e riunioni | <ul><li>Per un'esperienza ottimale con le videochiamate e le riunioni online, è consigliabile usare un computer con un processore da 2,0 GHz e una RAM di 4,0 GB (o superiore). </li><li>L'effetto video facoltativo Esegui sfocatura sfondo richiede un processore con supporto Advanced Vector Extensions 2 (AVX2), supportato sulla maggior parte dei dispositivi Mac del 2013 o successivi. Per un elenco dei decodificatori e codificatori non supportati, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md).</li><li>La funzionalità di partecipazione a una riunione tramite il rilevamento di prossimità in una sala riunioni di Microsoft Teams non è disponibile su Linux.</li></ul>
+|Videochiamate e riunioni | <ul><li>Per un'esperienza ottimale con le videochiamate e le riunioni online, è consigliabile usare un computer con un processore da 2,0 GHz e una RAM di 4,0 GB (o superiore). </li><li>Gli effetti video in background richiedono un processore con il supporto Advanced Vector Extensions 2 (AVX2), supportato nella maggior parte dei dispositivi Mac in ritardo di 2013 e versioni successive. Per un elenco dei decodificatori e codificatori non supportati, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md).</li><li>La funzionalità di partecipazione a una riunione tramite il rilevamento di prossimità in una sala riunioni di Microsoft Teams non è disponibile su Linux.</li></ul>
 |Distribuzioni Linux supportate | Ubuntu 16.04 LTS, 18.04 LTS, Fedora 30 Workstation, RHEL 8 Workstation, CentOS 8
 
 ## <a name="hardware-requirements-for-teams-on-mobile-devices"></a>Requisiti hardware per Teams su dispositivi mobili
