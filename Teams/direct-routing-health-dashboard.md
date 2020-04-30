@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come usare il dashboard integrità per monitorare la connessione tra il controller di bordo della sessione e il routing diretto.
-ms.openlocfilehash: a89377c798295267b1e75f3ffa6efc19b8c4c37d
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 55ae433428a8bb6fd42d4166e5d756432463b4ed
+ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42051802"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43940743"
 ---
 # <a name="health-dashboard-for-direct-routing"></a>Dashboard integrità per il routing diretto
 
@@ -55,7 +55,7 @@ Il dashboard integrità offre le informazioni seguenti relative all'integrità c
 
    La formula usata per calcolare NER è:
 
-   NER = risposte alle chiamate + utente occupato + squillo nessuna risposta + morsetto di rigetto delle convulsioni x 100
+   NER = 100 x (risposte chiamate + utente occupato + squillo nessuna risposta + attacchi terminali)/Total chiamate
 
  
 - **Durata media** delle chiamate: le informazioni sulla durata media delle chiamate consentono di monitorare la qualità delle chiamate. La durata media di una chiamata PSTN di 1:1 è di quattro-cinque minuti.  Tuttavia, per ogni società, questa media può essere diversa.  Microsoft consiglia di stabilire una previsione per la durata media della chiamata per la società. Se questo parametro è significativamente inferiore alla linea di base, potrebbe indicare che gli utenti hanno problemi con la qualità della chiamata o l'affidabilità e si riagganciano prima del solito. Se si inizia a visualizzare una durata di chiamata media estremamente bassa, ad esempio 15 secondi, i chiamanti potrebbero essere sospesi perché il servizio non è in esecuzione in modo affidabile. 

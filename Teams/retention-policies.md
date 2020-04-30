@@ -1,8 +1,8 @@
 ---
 title: Criteri di conservazione in Microsoft Teams
 author: LanaChin
-ms.author: v-lanac
-manager: serdars
+ms.author: anwara
+manager: prvijay
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
@@ -17,18 +17,18 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dde12e5197031cd768cecf539ae2213f2a5b4d92
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 9487a6a96397be27ebf23bd474fc0b9a5ba1fea0
+ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905468"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43940773"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
 I criteri di conservazione consentono di gestire le informazioni nell'organizzazione in modo più efficiente. Usare i criteri di conservazione per mantenere i dati necessari a conformarsi ai criteri interni dell'organizzazione, alle normative di settore o alle esigenze legali e per eliminare i dati considerati una responsabilità che non è più necessario conservare o che non hanno alcun valore legale o aziendale.
 
-Per impostazione predefinita, i dati delle chat di Teams, dei canali e dei file vengono conservati per sempre. Gli amministratori possono configurare i criteri di conservazione di Teams per i messaggi di chat e canali e decidere in modo proattivo se tenere i dati, eliminarli o conservarli per un periodo di tempo specifico e in seguito eliminarli.
+Per impostazione predefinita, i dati di chat, canali e file di teams vengono mantenuti per sempre, a meno che non si tenti di eliminare il contenuto tramite criteri di conservazione, eliminazioni degli utenti, eliminazioni dall'amministratore e così via. Gli amministratori possono configurare i criteri di conservazione dei team per i messaggi di chat e canali e decidere in modo proattivo se mantenere i dati, eliminarli o conservarli per un determinato periodo di tempo e quindi eliminarli.
 
 È possibile creare e gestire i criteri di conservazione per team e altri carichi di lavoro nel [centro conformità Microsoft 365](https://protection.office.com/) o tramite i cmdlet di PowerShell di Security & Compliance Center. È possibile applicare un criterio di conservazione di Teams a un'intera organizzazione o a specifici utenti e team.
 

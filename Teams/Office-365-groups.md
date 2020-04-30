@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 414ca42153ab336500aa7b2e9de42dd9fe7f2708
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: d82b8de29d8f73f439f158e96d1c61767a3bd019
+ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43902121"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43940693"
 ---
 <a name="microsoft-365-groups-and-microsoft-teams"></a>Microsoft 365 Groups e Microsoft Teams
 =====================================
@@ -55,4 +55,4 @@ Quando si crea un team, nel backend si crea un gruppo di Office 365 e la raccolt
 
 Le caratteristiche e le funzionalità di gruppo per gli utenti dipendono dalla posizione in cui si guida l'appartenenza al gruppo. Se ad esempio si rimuove un membro di un team, questi vengono rimossi anche dal gruppo di Office 365. La rimozione dal gruppo rimuove immediatamente il team e i canali dal client teams. Se si rimuove una persona da un gruppo con l'interfaccia di amministrazione di Microsoft 365, non sarà più possibile accedere agli altri aspetti della collaborazione, ad esempio la raccolta documenti di SharePoint Online, il gruppo Yammer o OneNote condiviso. Tuttavia, avranno comunque accesso alla funzionalità di chat del team per circa due ore.
 
-Come procedura consigliata per la gestione dei membri del team, Aggiungi e Rimuovi membri dal client teams per verificare che sia applicato il controllo di accesso a cascata corretto ad altre applicazioni cloud dipendenti. Inoltre, eviterai un'esperienza disarticolata lasciando le persone con l'impressione che abbiano ancora accesso alle risorse a cui hanno usato (fino a quando il ciclo di sincronizzazione successivo aggiunge o revoca l'accesso a un determinato componente del servizio). Se si aggiungono o si rimuovono membri del team all'esterno del client Teams (usando l'interfaccia di amministrazione di Microsoft 365, Azure AD o Exchange Online PowerShell), possono essere necessarie fino a due ore affinché le modifiche vengano applicate in teams.
+Come procedura consigliata per la gestione dei membri del team, Aggiungi e Rimuovi membri dal client teams per verificare che sia applicato il controllo di accesso a cascata corretto ad altre applicazioni cloud dipendenti. Inoltre, eviterai un'esperienza disarticolata lasciando le persone con l'impressione che abbiano ancora accesso alle risorse a cui hanno usato (fino a quando il ciclo di sincronizzazione successivo aggiunge o revoca l'accesso a un determinato componente del servizio). Se si aggiungono o si rimuovono membri del team all'esterno del client Teams (usando l'interfaccia di amministrazione di Microsoft 365, Azure AD o Exchange Online PowerShell), le modifiche apportate ai team possono richiedere fino a 24 ore (in alcuni casi).

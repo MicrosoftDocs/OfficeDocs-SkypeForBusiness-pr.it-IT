@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: 689b22a98c986ca73ae3926785f75dcb6c6a9e74
-ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
+ms.openlocfilehash: 3a482ce562c0d0281c1bc289dfc953f416a8f133
+ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43918705"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43940703"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -44,7 +44,10 @@ I criteri riunione vengono usati per controllare le funzionalità disponibili pe
 |Per organizzatore e per utente     |Quando si implementa una combinazione di criteri per organizzatore e per utente, l'uso di alcune funzionalità da parte dei partecipanti alla riunione è limitato, in base ai criteri applicati al singolo utente e ai criteri dell'organizzatore. Ad esempio, **Consenti registrazione cloud** è un criterio per organizzazione e per utente. Attivare questa impostazione per consentire all'organizzatore della riunione e ai partecipanti di avviare o interrompere una registrazione.
 
 Per impostazione predefinita, viene creato un criterio denominato Globale (predefinito a livello di organizzazione). Il criterio di riunione Globale viene assegnato per impostazione predefinita a tutti gli utenti dell'organizzazione. È possibile modificarlo o creare uno o più criteri personalizzati e assegnarli agli utenti. Se non si creano e assegnano criteri personalizzati, gli utenti riceveranno il criterio Globale. Quando si crea un criterio personalizzato, è possibile consentire o impedire che determinate funzionalità siano disponibili per gli utenti e quindi assegnarlo a uno o più utenti ai quali verranno applicate le impostazioni.
--Nota-il pulsante Dettagli riunione sarà availiable se un utente ha le licenze audioconferenza abilitate o se l'utente è autorizzato a audioconferencing, in caso contrario, i dettagli della riunione non saranno availiable
+
+> [!NOTE]
+> Il pulsante Dettagli riunione sarà disponibile se l'utente ha abilitato le licenze per le conferenze audio o se l'utente è autorizzato a ricevere servizi di audioconferenza, in caso contrario, i dettagli della riunione non saranno disponibili
+
 ## <a name="change-or-create-a-meeting-policy"></a>Modificare o creare un criterio di riunione
 
 Per modificare o creare un criterio riunione, passare all'interfaccia di amministrazione di Microsoft Teams > **Riunioni**  >  **Criteri riunione**. Selezionare un criterio dall'elenco o selezionare **Aggiungi**. Se si sta creando un nuovo criterio, aggiungere un nome e una descrizione. Il nome non può contenere caratteri speciali o più di 64 caratteri. Scegliere le impostazioni desiderate e quindi selezionare **Salva**.
@@ -139,7 +142,7 @@ Si noti che, disattivando **Consenti la pianificazione di riunioni private** e *
 - [Consenti la trascrizione](#allow-transcription)
 - [Consenti registrazione cloud](#allow-cloud-recording)
 - [Consenti video IP](#allow-ip-video)
-- [Velocità in bit media (KPS)](#media-bit-rate-kps)
+- [Velocità in bit media (KBS)](#media-bit-rate-kbs)
 
 ### <a name="allow-transcription"></a>Consenti la trascrizione
 
@@ -188,9 +191,9 @@ Nelle riunioni ospitate da Amanda nessuno può attivare il video, indipendenteme
 
 Se Daniela chiama Amanda con il video, Amanda può rispondere alla chiamata solo con l'audio.  Quando la chiamata è connessa, Amanda può vedere il video di Daniela, ma non può attivare il video. Se Amanda chiama Daniela, Daniela può rispondere alla chiamata con il video e l'audio. Una volta connessa la chiamata, Daniela può attivare o disattivare suo video come desidera.
 
-### <a name="media-bit-rate-kps"></a>Velocità in bit media (KPS)
+### <a name="media-bit-rate-kbs"></a>Velocità in bit media (KBS)
 
-Questo è un criterio per utente. Questa impostazione determina la velocità in bit per le trasmissioni audio, video e di condivisione di app basate su video nelle chiamate e riunioni dell'utente. Si applica ai flussi multimediali in uplink o downlink per gli utenti nella chiamata o riunione. Questa impostazione consente di controllare in modo granulare la gestione della larghezza di banda dell'organizzazione. In base agli scenari di riunione necessari per gli utenti, è necessario disporre di una larghezza di banda sufficiente per fornire un'esperienza di buona qualità. Il valore minimo è 30 KPS e il valore massimo dipende dallo scenario della riunione. Per altre informazioni sulla larghezza di banda minima consigliata per una buona qualità di riunioni, chiamate ed eventi live in Teams, vedere [Requisiti di larghezza di banda](prepare-network.md#bandwidth-requirements).
+Questo è un criterio per utente. Questa impostazione determina la velocità in bit per le trasmissioni audio, video e di condivisione di app basate su video nelle chiamate e riunioni dell'utente. Si applica ai flussi multimediali in uplink o downlink per gli utenti nella chiamata o riunione. Questa impostazione consente di controllare in modo granulare la gestione della larghezza di banda dell'organizzazione. In base agli scenari di riunione necessari per gli utenti, è necessario disporre di una larghezza di banda sufficiente per fornire un'esperienza di buona qualità. Il valore minimo è 30 Kbps e il valore massimo dipende dallo scenario della riunione. Per altre informazioni sulla larghezza di banda minima consigliata per una buona qualità di riunioni, chiamate ed eventi live in Teams, vedere [Requisiti di larghezza di banda](prepare-network.md#bandwidth-requirements).
 
 Se non è disponibile una larghezza di banda sufficiente per una riunione, i partecipanti vedranno un messaggio che indica una qualità di rete scadente.
 

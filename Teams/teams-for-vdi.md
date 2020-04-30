@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 18c545d6b3208bb5156a699deee71ee27b38b3f4
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: d3a6d946d6bf00e6e43a0f6678352e5b4e9b7629
+ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43903121"
+ms.lasthandoff: 04/29/2020
+ms.locfileid: "43940673"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -345,6 +345,7 @@ Per altre informazioni sull'uso di PowerShell per gestire i criteri delle riunio
 - La risoluzione del flusso video in entrata e in uscita è limitata alla risoluzione 720p. Si tratta di una limitazione WebRTC.
 - È supportato un solo flusso video da una videocamera in arrivo o da un flusso di condivisione dello schermo. Quando c'è una condivisione dello schermo in arrivo, la condivisione dello schermo viene visualizzata al posto del video del relatore dominante.
 - Condivisione dello schermo in uscita:
+    - La condivisione dello schermo dalla chat non è supportata.
     - La condivisione delle applicazioni non è supportata.
 - Dare controllo e prendere il controllo:  
     - Non supportato durante una sessione di condivisione dello schermo o di condivisione dell'applicazione.
