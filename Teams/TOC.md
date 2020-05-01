@@ -276,14 +276,6 @@
 #### [Come usare i dispositivi analogici con l'instradamento diretto](direct-routing-analog-devices.md)
 
 
-### [Eseguire la migrazione a Instradamento diretto](direct-routing-migrating.md)
-
-### Monitorare e risolvere i problemi di Instradamento diretto
-#### [Panoramica](direct-routing-monitor-and-troubleshoot.md)
-#### [Dashboard sull'integrità](direct-routing-health-dashboard.md)
-### [Account utente in un ambiente ibrido con connettività PSTN](direct-routing-user-accounts-in-a-hybrid-environment.md)
-
-
 ### Instradamento basato sulla posizione
 #### [Pianificare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-plan.md)
 #### [Configurare le impostazioni di rete per l'instradamento basato sulla posizione](location-based-routing-configure-network-settings.md)
@@ -297,12 +289,14 @@
 #### [Pianificare l'ottimizzazione degli elementi multimediali locali](direct-routing-media-optimization.md)
 #### [Configurare l'ottimizzazione degli elementi multimediali locali](direct-routing-media-optimization-configure.md)
 
-### Monitorare e risolvere i problemi di Instradamento diretto
-#### [Panoramica](direct-routing-monitor-and-troubleshoot.md)
-#### [Dashboard sull'integrità](direct-routing-health-dashboard.md)
 ### [Account utente in un ambiente ibrido con connettività PSTN](direct-routing-user-accounts-in-a-hybrid-environment.md)
 
 ### [Eseguire la migrazione a Instradamento diretto](direct-routing-migrating.md)
+
+### Monitorare e risolvere i problemi di Instradamento diretto
+#### [Panoramica](direct-routing-monitor-and-troubleshoot.md)
+#### [Dashboard sull'integrità](direct-routing-health-dashboard.md)
+
 
 ### Informazioni di riferimento tecniche per Instradamento diretto
 #### [Failover trunk sulle chiamate in uscita](direct-routing-trunk-failover-on-outbound-call.md)
