@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: 'Informazioni su come ottenere nuovi numeri di telefono o di trasferimento di dati esistenti per i team e come visualizzare le modifiche apportate agli utenti. '
-ms.openlocfilehash: d2ac4a0a5e487b99cf8dbc303b85e6f4e3446ec8
-ms.sourcegitcommit: d7be89019dd5a3b88b0840bddf1b88fea8598ea7
+ms.openlocfilehash: 97d827d2fedbf12fd18519ac70a23bacdc78a58c
+ms.sourcegitcommit: 69ff557c79d6b1a3d1089fe5c8f5c8ed8ff7431e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42170752"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43951011"
 ---
 # <a name="getting-phone-numbers-for-your-users"></a>Recupero di numeri di telefono per gli utenti
 
@@ -35,7 +35,7 @@ Sono disponibili tre modi per ottenere i numeri degli utenti:
 
 - **Usare l'interfaccia di amministrazione di Microsoft teams.** Per alcuni paesi e aree geografiche è possibile ottenere numeri per gli utenti tramite l'interfaccia di amministrazione di Microsoft teams. Vedere [ottenere nuovi numeri di telefono per gli utenti](#get-new-phone-numbers-for-your-users).
     
-- **Importa i tuoi numeri esistenti.** È possibile convertire o trasferire i numeri esistenti dal provider di servizi o dal gestore di telefonia corrente. Per altre informazioni utili, vedere [trasferire i numeri di telefono in team](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams) o [gestire i numeri di telefono per l'organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization) .  
+- **Importa i tuoi numeri esistenti.** È possibile convertire o trasferire i numeri esistenti dal provider di servizi o dal gestore di telefonia corrente. Per ulteriori informazioni su come eseguire questa operazione, vedere [Trasferire numeri di telefono in Teams](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams) o [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).  
   
 - **Utilizzare un modulo di richiesta per nuovi numeri.** A volte, a seconda del paese o dell'area geografica, non potrai ottenere i nuovi numeri di telefono usando l'interfaccia di amministrazione di Microsoft teams oppure avrai bisogno di numeri di telefono o codici di area specifici. In caso affermativo, è necessario scaricare un modulo e inviarlo di nuovo a noi. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).
   
@@ -44,10 +44,10 @@ Sono disponibili tre modi per ottenere i numeri degli utenti:
   
 ## <a name="get-new-phone-numbers-for-your-users"></a>Ottenere numeri di telefono per gli utenti
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
     
 1. Nella barra di spostamento sinistra, vai a**numeri di telefono** **vocale** > e quindi fai clic su **Aggiungi**.
-2. Immettere un nome per l'ordine e, se si vuole, aggiungere una descrizione.
+2. Immettere un nome per l'ordine e aggiungere una descrizione.
 3. Nella pagina location and quantity eseguire le operazioni seguenti:
     1. In **paese o area geografica**selezionare un paese o un'area geografica.
     2. In **tipo di numero**selezionare **utente (abbonato)**.
@@ -68,7 +68,7 @@ Sono disponibili tre modi per ottenere i numeri degli utenti:
 
 ## <a name="view-the-phone-numbers-for-your-organization"></a>Visualizzare i numeri di telefono per l'organizzazione
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di Microsoft teams** 
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams** 
 
 Nella barra di spostamento sinistra, vai a**numeri di telefono** **vocale** > per visualizzare i numeri per l'organizzazione, inclusi la posizione, il tipo di numero e le informazioni sullo stato.
   

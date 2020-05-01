@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
-ms.openlocfilehash: ad76c2f4378a1f639abf98d115e4700fae7796c5
-ms.sourcegitcommit: 2d44f1a673316daf0aca3149571b24a63ca72772
+ms.openlocfilehash: d9619fbf39558597c0f6c168f57f8b240d3c2a20
+ms.sourcegitcommit: 5692900c0fc0a2552fe3f8ece40920c839e1ea23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227550"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952445"
 ---
 # <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
 
@@ -153,7 +153,11 @@ Se si verificano altri errori al di fuori di questo ambito, inviare una notifica
 
 **<sup>2</sup>** le credenziali di accesso usate per Call Quality dashboard *non* devono essere le stesse credenziali usate per accedere all'app desktop Power bi.
 
+## <a name="frequently-asked-questions"></a>Domande frequenti
 
+### <a name="when-will-the-power-bi-connector-be-updated-from-beta-status"></a>Quando verrà aggiornato il connettore di Power BI dallo stato "beta"?
+
+Nonostante il tag beta, il connettore di qualità della chiamata per Power BI è la versione finale del connettore ed è stato ufficialmente firmato dal team di Power BI per riflettere questo. Il processo di certificazione per rimuovere il tag Beta è esteso e richiede un impegno da parte del team di Power BI per consentire il supporto diretto anche al connettore. A causa di vincoli temporali, il team di Power BI non è attualmente in grado di specificare il supporto e la certificazione più ampia, ma è comunque pronto ad attestare la sicurezza, l'autenticità e le funzionalità generali del connettore di qualità della chiamata Microsoft.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

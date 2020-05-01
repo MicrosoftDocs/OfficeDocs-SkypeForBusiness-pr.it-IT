@@ -17,12 +17,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i criteri delle chiamate di emergenza in Microsoft teams per definire cosa succede quando un utente di Teams dell'organizzazione effettua una chiamata di emergenza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e697e05c4ade1e14ee2f59da5b60413e60e2367
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 62a6314435aa3af44d0c44ab6a6790212c62d8de
+ms.sourcegitcommit: 5692900c0fc0a2552fe3f8ece40920c839e1ea23
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905108"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43952435"
 ---
 # <a name="manage-emergency-calling-policies-in-microsoft-teams"></a>Gestire i criteri delle chiamate di emergenza in Microsoft Teams
 
@@ -42,9 +42,10 @@ Se è stato assegnato un criterio per le chiamate di emergenza a un sito di rete
 2. Fare clic su **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio.
 4. Impostare il modo in cui si vuole informare gli utenti dell'organizzazione, in genere il servizio di sicurezza, quando viene effettuata una chiamata di emergenza. A questo scopo, in **modalità notifica**selezionare una delle opzioni seguenti:
-    - **Solo notifica**: viene inviato un messaggio di chat di teams agli utenti e ai gruppi specificati.
+    - **Invia solo notifica**: viene inviato un messaggio di chat di teams agli utenti e ai gruppi specificati.
     - **In conferenza ma in sordina**: viene inviato un messaggio di chat di teams agli utenti e ai gruppi specificati, che possono ascoltare, ma non partecipare, nella conversazione tra il chiamante e l'operatore di PSAP.
-5.  Se è stata selezionata la modalità di notifica **in conferenza ma disattivato** , nella casella **Numero chiamata in uscita per le notifiche** è possibile immettere un numero di telefono PSTN di un utente o di un gruppo per chiamare e partecipare alla chiamata di emergenza. Ad esempio, immettere il numero del servizio di sicurezza dell'organizzazione, che riceverà una chiamata quando viene effettuata una chiamata di emergenza e potrà quindi ascoltare o partecipare alla chiamata.
+    - **Conferenze in e sono riattivate** **(presto disponibile)**: viene inviato un messaggio di chat di teams agli utenti e ai gruppi specificati e possono riattivare l'audio per ascoltare e partecipare alla conversazione tra il chiamante e l'operatore di PSAP.
+5.  Se è stata selezionata la modalità di notifica **in conferenza ma disattivato** , nella casella **Numero chiamata in uscita per le notifiche** è possibile immettere un numero di telefono PSTN di un utente o di un gruppo per chiamare e partecipare alla chiamata di emergenza. Ad esempio, immettere il numero del servizio di sicurezza dell'organizzazione, che riceverà una chiamata quando viene effettuata una chiamata di emergenza e potrà quindi ascoltare la chiamata.
 6. Cercare e selezionare uno o più utenti o gruppi, ad esempio il servizio di sicurezza dell'organizzazione, per avvisare quando viene effettuata una chiamata di emergenza.  La notifica può essere inviata agli indirizzi di posta elettronica di utenti, gruppi di distribuzione e gruppi di sicurezza. Può essere notificato un massimo di 50 utenti.
 7. Fare clic su **Salva**.
 
@@ -100,15 +101,15 @@ In questo esempio assegniamo un criterio denominato criteri per le chiamate di e
 > Prima di tutto, assicurati di connetterti a Azure Active Directory PowerShell per modulo grafico e modulo di PowerShell per Skype for business seguendo la procedura descritta in [Connetti a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window).
 
 Ottenere il GroupObjectId del gruppo specifico.
-```
+```powershell
 $group = Get-AzureADGroup -SearchString "Contoso Operations"
 ```
 Ottenere i membri del gruppo specificato.
-```
+```powershell
 $members = Get-AzureADGroupMember -ObjectId $group.ObjectId -All $true | Where-Object {$_.ObjectType -eq "User"}
 ```
 Assegnare tutti gli utenti del gruppo a un determinato criterio teams. In questo esempio, i criteri di routing delle chiamate di emergenza delle operazioni.
-```
+```powershell
 $members | ForEach-Object {Grant-CsTeamsEmergencyCallingPolicy -PolicyName "Operations Emergency Calling Policy" -Identity $_.UserPrincipalName}
 ``` 
 A seconda del numero di membri del gruppo, questo comando può richiedere diversi minuti per l'esecuzione.
@@ -119,9 +120,9 @@ Utilizzare il cmdlet [set-CsTenantNetworkSite](https://docs.microsoft.com/powers
 
 L'esempio seguente mostra come assegnare un criterio denominato criteri di chiamata di emergenza contoso 1 al sito di Microsoft1.
 
-    ```
-    Set-CsTenantNetworkSite -identity "site1" -EmergencyCallingPolicy "Contoso Emergency Calling Policy 1"
-    ```
+```powershell
+Set-CsTenantNetworkSite -identity "site1" -EmergencyCallingPolicy "Contoso Emergency Calling Policy 1"
+```
 
 ## <a name="related-topics"></a>Argomenti correlati
 

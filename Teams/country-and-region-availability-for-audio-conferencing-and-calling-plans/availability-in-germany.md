@@ -25,37 +25,37 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Germania.
-ms.openlocfilehash: fedbd51600ae2d21d2221446eeeb6267b2406676
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: af11dafc34947f2ef162252029795d1465f6d43a
+ms.sourcegitcommit: 69ff557c79d6b1a3d1089fe5c8f5c8ed8ff7431e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41683909"
+ms.lasthandoff: 04/30/2020
+ms.locfileid: "43951201"
 ---
 # <a name="availability-in-germany"></a>Disponibilità in Germania
 
-[Trova un altro Paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri di più sulla disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica.
+[Per trovare un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o per altre informazioni sulla disponibilità di Piano chiamata e Audioconferenza per paese e aree geografica.
 
 Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per la Germania.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Francoforte</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
-|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibili  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Monaco</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
+|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibile  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
-| Operatori automatici <br/> |Disponibili  <br/> |
-|Code di chiamata  <br/> |Disponibili  <br/> |
-|Casella vocale  <br/> |Disponibili  <br/> |
+| Operatori automatici <br/> |Disponibile  <br/> |
+|Code di chiamata  <br/> |Disponibile  <br/> |
+|Segreteria telefonica  <br/> |Disponibile  <br/> |
    
-## <a name="calling-plans"></a>Piani per chiamate
+## <a name="calling-plans"></a>Piani di chiamata
     
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
@@ -66,17 +66,17 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Francoforte  <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |<ul> <li>Francoforte  <li> Monaco </ul> <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
   
-## <a name="communications-credits"></a>Crediti comunicazioni
+## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    
@@ -86,7 +86,7 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 
-[Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+[Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
 
 
