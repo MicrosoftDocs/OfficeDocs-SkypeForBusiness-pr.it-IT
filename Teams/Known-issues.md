@@ -1,5 +1,5 @@
 ---
-title: Problemi noti di Microsoft Teams
+title: Supporto di Microsoft Teams nell'organizzazione
 author: LolaJacobsen
 ms.author: lolaj
 manager: serdars
@@ -9,25 +9,33 @@ ms.collection:
 - Teams_ITAdmin_GuestAccess
 - M365-collaboration
 ms.custom: seo-marvel-mar2020
-ms.reviewer: marcl
+ms.reviewer: marcl, billkau
 audience: admin
 localization_priority: Priority
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Usare questo elenco di problemi noti per l'app client Microsoft Teams e l'esperienza di amministrazione per risolvere i problemi all'interno dell'organizzazione.
+description: Usare queste risorse per il supporto di Microsoft Teams nell'organizzazione, indipendentemente dal fatto che si sia l'amministratore di Teams o un tecnico del supporto helpdesk.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1343317d29f196caf151ead5a6429fb3edf19d87
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 362958a7307a71b68a2582bffca2e323966b1977
+ms.sourcegitcommit: 3325fd9de57367e9dd60685d1fef096921441a76
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43902301"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43997007"
 ---
-# <a name="known-issues-for-microsoft-teams"></a>Problemi noti di Microsoft Teams
+# <a name="support-microsoft-teams-in-your-organization"></a>Supporto di Microsoft Teams nell'organizzazione
 
-Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
+Se si cercano informazioni sui problemi noti di Teams, questo è il posto giusto. Usare le risorse di questo articolo per assistenza in merito al supporto di Teams nell'organizzazione. 
+
+Per iniziare, esaminare l'elenco di [problemi noti e risoluzioni](#common-issues-and-resolutions) più avanti in questo articolo.
+
+Se non si trovano le informazioni necessarie, passare a [Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams) e cercare il problema nel sommario oppure nella casella **Filtra in base al titolo**. 
+:::image type="content" source="media/known-issues1.png" alt-text="Screenshot del sommario e della casella del filtro nella pagina Risoluzione dei problemi di Teams":::
+
+Se non si riesce a risolvere il problema, contattare il [Supporto tecnico Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json).
+
 
 ## <a name="common-issues-and-resolutions"></a>Problemi noti e risoluzioni
 
@@ -55,4 +63,9 @@ Questo articolo elenca i problemi noti di Microsoft Teams per area funzionale.
 |---------|---------|
 |Viene visualizzato il messaggio "Stai perdendo un'occasione!" .   |Assicurarsi di [Abilitare Microsoft Teams per l'istituto di istruzione](https://docs.microsoft.com/microsoft-365/education/intune-edu-trial/enable-microsoft-teams). Nei tenant EDU, Teams non è abilitato per impostazione predefinita. Per prima cosa è necessario attivarlo. <br><br>Vedere poi [Insegnamento e apprendimento remoto in Office 365 Education](https://support.office.com/article/remote-teaching-and-learning-in-office-365-education-f651ccae-7b65-478b-8366-51bb884025c4) per le indicazioni più aggiornate su come configurare l'istituto di istruzione, pianificare le lezioni, creare riunioni virtuali e condividere contenuti con gli studenti.<br><br>Infine, assicurarsi di consultare i video di formazione per amministratori IT di Microsoft Teams, le presentazioni e molto altro ancora qui: [Formazione amministratori per Teams](itadmin-readiness.md).        |
 
-Vedere [Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams) per altre informazioni su come risolvere i problemi relativi a Microsoft Teams.
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)
+
+[Risorse di supporto per Teams](https://docs.microsoft.com/office365/admin/contact-support-for-business-products?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
