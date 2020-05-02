@@ -17,12 +17,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: 52d3922bc68e942ad1cd58e40861fa8820ee6614
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 72c6db7bdc6ff8b765afdf38bfe910552b45cbf2
+ms.sourcegitcommit: 3325fd9de57367e9dd60685d1fef096921441a76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43778402"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43997257"
 ---
 <a name="troubleshoot-problems-with-guest-access-in-microsoft-teams"></a>Risolvere i problemi relativi all'accesso guest in Microsoft Teams
 ======================================================
@@ -31,15 +31,15 @@ ms.locfileid: "43778402"
 > Possono essere necessarie fino a 24 ore prima che le modifiche diventino effettive. 
 
 
+- Per verificare se si conosce il problema, vedere [team di supporto nell'organizzazione](Known-issues.md).
 - Per verificare gli attuali problemi di supporto tecnico con l'accesso guest in Team, passare a [Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/).
-- Per sapere se questo problema è stato già riscontrato, vedere [Problemi noti di Microsoft Teams](Known-issues.md).
 - I guest sono utenti esterni all'organizzazione. Se qualcuno si trova all'interno dell'organizzazione (tra cui dipendenti, terzisti o agenti sul posto), non può essere aggiunto come guest. Lo stesso vale per le consociate.
 - Sono presenti informazioni riguardanti le nuove o aggiornate prossime funzionalità di accesso guest nella [Roadmap di Teams](https://aka.ms/teamsroadmap).
 - Inviare il proprio feedback in [UserVoice di Teams](https://aka.ms/TeamsUserVoice).
 
 ## <a name="if-your-guests-are-seeing-license-errors"></a>I guest visualizzano errori di licenza.
 
-L'accesso guest in Teams utilizza Azure Active Directory (Azure AD) Business to Business (B2B) e il relativo modello di licenza. L'accesso Guest è incluso in tutti gli abbonamenti a Microsoft 365 business standard, Office 365 Enterprise e Office 365 Education. Non sono necessarie altre licenze di Office 365.
+L'accesso guest in Teams utilizza Azure Active Directory (Azure AD) Business to Business (B2B) e il relativo modello di licenza. L'accesso guest è incluso in tutti gli abbonamenti di Microsoft 365 Business Standard, Office 365 Enterprise e Office 365 Education. Non sono necessarie altre licenze di Office 365.
 
 > [!NOTE]
 > I team devono essere abilitati nel tenant di un Guest per consentire agli utenti di accedere e usare i team come guest in un altro tenant (risorsa).

@@ -19,12 +19,12 @@ localization_priority: Normal
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0f17ed779415c1dfaa731d13839d02ca971d46f1
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 0ed1e7d4f90fa1be96ac48f376c3cb1b939a39c4
+ms.sourcegitcommit: 3325fd9de57367e9dd60685d1fef096921441a76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904591"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43997187"
 ---
 # <a name="microsoft-teams-apps-permissions-and-considerations"></a>Autorizzazioni e considerazioni sulle app di Microsoft Teams
 
@@ -43,7 +43,7 @@ Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_M
 |    |     |
 |-----------|------------|
 | ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto decisionale|<ul><li>Usare le tabelle seguenti come guida per individuare le autorizzazioni richieste dalle app che si stanno esaminando.</li></ul> |
-| ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Eseguire ricerche nell'app o nel servizio stesso per decidere se si vuole consentire l'accesso all'interno dell'organizzazione. Ad esempio, i bot inviano e ricevono messaggi dagli utenti e, ad eccezione dei bot line-of-business aziendali, sono situati al di fuori del limite di conformità. Di conseguenza, qualsiasi app che includa un bot richiede le autorizzazioni e ha il profilo di rischio, come minimo. </li></ul>|
+| ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Eseguire ricerche nell'app o nel servizio stesso per decidere se si vuole consentire l'accesso all'interno dell'organizzazione. Ad esempio, i bot inviano e ricevono messaggi dagli utenti e, eccetto i bot personalizzati aziendali, si trovano all'esterno del limite di conformità. Di conseguenza, qualsiasi app che includa un bot richiede le autorizzazioni e ha il profilo di rischio, come minimo. </li></ul>|
 
 ## <a name="global-app-permissions-and-considerations"></a>Autorizzazioni e considerazioni sulle app globali
 

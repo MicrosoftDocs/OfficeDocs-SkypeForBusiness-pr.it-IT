@@ -23,35 +23,40 @@ ms.custom:
 - Calling Plans
 ROBOTS: NOINDEX, NOFOLLOW
 description: Quando si ottengono numeri di telefono o porting (trasferendo) i numeri per l'organizzazione, potrebbe essere necessario ottenere assistenza e supporto tecnico presso il servizio di assistenza PSTN.
-ms.openlocfilehash: f24d65cbe6d7bf41b4e248345bde0cdd5ce7ec01
-ms.sourcegitcommit: a610bfe9c0192432744dfaf8d5ff5c2bb5a16b00
+ms.openlocfilehash: f9dd45f70a0e233f22fbbe607731d65146c705f7
+ms.sourcegitcommit: a09334ef1a6b0a877839c3b46165eb5a6aad1ba9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43191317"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44006012"
 ---
 # <a name="pstn-service-desk-contact"></a>Contatto per il servizio di assistenza PSTN
 
-Se si ha bisogno di assistenza per trasferire/convertire i numeri di telefono esistenti o acquisire nuovi numeri di telefono per Microsoft teams, inviare un messaggio di posta elettronica e includere il maggior numero possibile di dettagli:
-  - [ID organizzazione (ID tenant) o domini Microsoft attualmente attivi.] ((https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)
+Il team di Service Desk PSTN ha attualmente tre indirizzi di posta elettronica per il supporto, presentati nella tabella seguente:
+
+| **Voglio trasferire/portare I numeri esistenti..**  | **Voglio ordinare i nuovi numeri per..** |
+|:-----:|:------:|
+| [**All'interno degli Stati Uniti o Canada**, invia un messaggio di posta elettronica su PTN@microsoft.com](mailto:ptn@microsoft.com)| [**Belgio, Francia, Germania, Gran Bretagna, Irlanda, Paesi Bassi, Spagna, Svezia, Svizzera**, invia un messaggio di posta elettronica a ptneu@microsoft.com](mailto:ptneu@microsoft.com)|
+|[Al di **fuori degli Stati Uniti o Canada**, invia un messaggio di posta elettronica su ptneu@microsoft.com](mailto:ptneu@microsoft.com)| [**Resto del mondo**, invia un messaggio di posta elettronica a gcstnmsd@microsoft.com](mailto:gcstnmsd@microsoft.com)|
+
+Se hai bisogno **di assistenza per trasferire/convertire i numeri di telefono esistenti in Microsoft teams**, Includi il maggior numero possibile di dettagli:
+  - [ID organizzazione (ID tenant) o domini Microsoft attualmente attivi](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
   - Tipi di numeri di telefono di cui si ha bisogno di assistenza (**utente/abbonato** o **servizio/pedaggio/numero verde**).
   - Altri dettagli importanti in base alla richiesta.
-  - Se si vuole **acquisire nuovi numeri di telefono** , includere anche il numero di richieste e il prefisso (s)/Country/Region da cui si desiderano nuovi numeri di telefono.
   
-Una volta che hai queste informazioni, invia una richiesta a uno degli indirizzi di posta elettronica seguenti in base alla tua richiesta:
-- **Trasferimento/portabilità del numero**
-    - Trasferimento/conversione dei numeri di telefono esistenti **all'interno degli Stati Uniti o del Canada** a Microsoft teams, [inviare un messaggio di posta elettronica su PTN@microsoft.com](mailto:ptn@microsoft.com).
-    - Trasferimento/conversione dei numeri di telefono esistenti al di **fuori degli Stati Uniti o del Canada** a Microsoft teams, [inviare un messaggio di posta elettronica su ptneu@microsoft.com](mailto:ptneu@microsoft.com).
-    
-- **Acquisizione di numeri**
-    - Acquisizione di nuovi numeri di telefono per uno dei seguenti paesi: **Belgio, Francia, Germania, Gran Bretagna, Irlanda, Paesi Bassi, Spagna, Svezia, Svizzera**, [inviare un messaggio di posta elettronica all'indirizzo ptneu@microsoft.com](mailto:ptneu@microsoft.com)
-    - Acquisizione di nuovi numeri di telefono per il **resto del mondo**, [inviare un messaggio di posta elettronica su gcstnmsd@microsoft.com](mailto:gcstnmsd@microsoft.com).
+Se hai bisogno di assistenza **per acquisire nuovi numeri di telefono per Microsoft teams**, Includi il maggior numero possibile di dettagli:
+  - [ID organizzazione (ID tenant) o domini Microsoft attualmente attivi.](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)
+  - Tipi di numeri di telefono che si desidera acquisire (**utente/abbonato** o **servizio/pedaggio/numero verde**).
+  - Il numero di richieste e il prefisso (i)/Country/Region da cui si desiderano nuovi numeri di telefono.
+
+Se hai bisogno di assistenza per **qualsiasi elemento relativo alla configurazione, alla configurazione, alle licenze/commissioni/fatturazione**, contatta il [supporto per i prodotti per le aziende-pagina della Guida per gli amministratori](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide&tabs=online) e il nostro team tecnico sarà lieto di assisterti.
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
 - Per vedere _se_ e quali **piani di chiamata** sono disponibili nel proprio paese o area geografica, leggere: [disponibilità di paesi e aree geografiche per i piani di audioconferenza e chiamate](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 - Per agevolare la scelta del tipo di numeri di telefono corretti, leggere: [diversi tipi di numeri di telefono usati per i piani di chiamata](../different-kinds-of-phone-numbers-used-for-calling-plans.md).
 - Per ottenere assistenza per la configurazione di numeri di telefono per l'organizzazione, leggere: [supporto per i prodotti business-Guida per gli amministratori](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide&tabs=online).
+
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](../different-kinds-of-phone-numbers-used-for-calling-plans.md)

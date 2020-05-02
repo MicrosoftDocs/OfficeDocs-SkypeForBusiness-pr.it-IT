@@ -17,12 +17,12 @@ description: Informazioni su come gestire le app teams nella pagina Manage Apps 
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: 5e261dfd6f23ec298e354a7732a9a1afa9d6b22e
-ms.sourcegitcommit: f3390e27bb63b66d1c4fb4f8afbda6b814fbbb5b
+ms.openlocfilehash: ea73b460fee758a45f19d6acbd5ff8172e2b8304
+ms.sourcegitcommit: a09334ef1a6b0a877839c3b46165eb5a6aad1ba9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43170554"
+ms.lasthandoff: 05/02/2020
+ms.locfileid: "44006042"
 ---
 <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia di amministrazione di Microsoft Teams
 ======================================================
@@ -53,13 +53,13 @@ Per visualizzare le informazioni desiderate nella tabella, fare clic su **modifi
 
 ## <a name="upload-a-new-app"></a>Caricare una nuova app
 
-Puoi usare il catalogo app per testare e distribuire applicazioni line-of-business costruite appositamente per l'organizzazione. Viene creato un pacchetto dell'app teams con [Teams App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio). Quando si ha il pacchetto dell'app, è possibile aggiungerlo al catalogo dell'app. Mentre tutti gli utenti dell'organizzazione possono visualizzare il catalogo delle app, solo gli amministratori globali e i servizi di teams possono pubblicarli e gestirli.
+Puoi usare il catalogo app per testare e distribuire applicazioni personalizzate create appositamente per l'organizzazione. Viene creato un pacchetto dell'app teams con [Teams App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio). Quando si ha il pacchetto dell'app, è possibile aggiungerlo al catalogo dell'app. Mentre tutti gli utenti dell'organizzazione possono visualizzare il catalogo delle app, solo gli amministratori globali e i servizi di teams possono pubblicarli e gestirli.
 
 Per caricare una nuova app personalizzata nel catalogo dell'app tenant, fai clic su **carica nuova app** per caricare il pacchetto dell'app in formato zip. L'app non viene evidenziata dopo il caricamento, quindi dovrai cercare il catalogo dell'app per trovarlo.
 
 Per aggiornare un'app dopo il caricamento, nell'elenco delle app nella pagina **Gestisci** app fare clic sul nome dell'app e quindi su **Aggiorna**. Questa operazione sostituisce l'app esistente nel catalogo delle app e tutti i criteri di autorizzazione delle app e i criteri di configurazione delle app restano applicati per l'app aggiornata.
 
-Per altre informazioni, vedere [gestire le app line-of-business in teams](manage-your-lob-apps.md).
+Per altre informazioni, vedere [gestire le app personalizzate in teams](manage-your-custom-apps.md).
 
 ## <a name="allow-and-block-apps"></a>Consentire e bloccare le app
 

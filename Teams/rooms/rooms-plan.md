@@ -1,5 +1,5 @@
 ---
-title: Pianificare le sale di Microsoft Teams
+title: Piano per Microsoft Teams Rooms
 ms.author: v-lanac
 author: lanachin
 ms.reviewer: sohailta
@@ -14,12 +14,12 @@ ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 ms.collection:
 - M365-collaboration
 description: Questo articolo illustra le considerazioni relative alla pianificazione per la distribuzione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: 1d5236c522a0f3da6f2c2686e34db9d665a93d15
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: b28c310ab5c00040490d359cf6b79445f0d1cc95
+ms.sourcegitcommit: 3325fd9de57367e9dd60685d1fef096921441a76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825894"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43997307"
 ---
 # <a name="plan-microsoft-teams-rooms"></a>Pianificare le sale di Microsoft Teams
 
@@ -65,9 +65,9 @@ In genere, i bundle e le unità integrate includono il software preinstallato, m
 
 Usa l'approccio illustrato di seguito per guidarti alla distribuzione e personalizzare gli output di esempio forniti in questi articoli in base alle esigenze dell'organizzazione.
 
-Prima di tutto, è possibile comprendere le sale riunioni in cui si è in esecuzione e in che modo il lavoro migliore per il futuro, quindi spostarsi selezionando e procurando l'equipaggiamento necessario, preparando i siti, configurando e distribuendo il servizio, gestendo le modifiche e adozione degli utenti e sviluppo di operazioni e procedure di manutenzione.
+Prima di tutto, è possibile comprendere le sale riunioni e le informazioni utili per il futuro, quindi spostarsi selezionando e procurando l'equipaggiamento necessario, preparando i siti, configurando e distribuendo il servizio, gestendo le modifiche e l'adozione degli utenti e sviluppando le operazioni e le procedure di manutenzione.
 
-![Prima di tutto, è possibile capire cosa si ha e che cosa avrebbe funzionato meglio, quindi spostarsi selezionando e procurando l'equipaggiamento necessario, preparando i siti, configurando e distribuendo il servizio, gestendo le modifiche e l'adozione degli utenti e sviluppando operazioni e procedure di manutenzione.](../media/room-systems-image2.png "Prima di tutto, è possibile capire cosa si ha e che cosa avrebbe funzionato meglio, quindi spostarsi selezionando e procurando l'equipaggiamento necessario, preparando i siti, configurando e distribuendo il servizio, gestendo le modifiche e l'adozione degli utenti e sviluppando operazioni e procedure di manutenzione.")
+![Prima di tutto, è possibile capire cosa si ha e che cosa potrebbe funzionare meglio per l'utente, quindi spostarsi selezionando e procurando l'equipaggiamento necessario, preparando i siti, configurando e distribuendo il servizio, gestendo le modifiche e l'adozione degli utenti e sviluppando le operazioni e le procedure di manutenzione.](../media/room-systems-image2.png "Prima di tutto, è possibile capire cosa si ha e che cosa potrebbe funzionare meglio per l'utente, quindi spostarsi selezionando e procurando l'equipaggiamento necessario, preparando i siti, configurando e distribuendo il servizio, gestendo le modifiche e l'adozione degli utenti e sviluppando le operazioni e le procedure di manutenzione.")
 
 Potrebbe essere necessario coordinare queste attività in diversi team. Offriamo una visualizzazione di alto livello delle principali attività che è necessario includere e suggerimenti per i team che sono in genere coinvolti nella distribuzione e gestione di sistemi per sale riunioni per decidere chi è necessario collaborare.
 
@@ -87,7 +87,7 @@ Potrebbe essere necessario coordinare queste attività in diversi team. Offriamo
 
 ## <a name="room-inventory-and-capability-planning"></a>Inventario delle camere e pianificazione delle funzionalità
 
-Il primo passaggio consiste nell'inventariare le sale riunioni e conferenze esistenti dell'organizzazione per comprenderne l'ambiente, le dimensioni della sala, il layout e lo scopo e per identificare le funzionalità per le quali è necessario che ogni sala dell'ambito sia in futuro, ad esempio il più ricco le funzionalità di collaborazione verranno abilitate nella sala. 
+Il primo passaggio consiste nell'inventariare le sale riunioni e conferenze esistenti dell'organizzazione in modo da comprendere l'ambiente, le dimensioni della sala, il layout e lo scopo e per identificare le funzionalità che devono essere consentite per ogni ambiente in futuro, ad esempio le funzionalità di collaborazione più ricche che verranno abilitate nella sala. 
 
 Dopo aver creato un inventario delle attrezzature e delle funzionalità in ogni sala esistente, i requisiti per il feed della sala nella pianificazione della selezione del dispositivo consentono di creare una soluzione di conferenza avanzata. Le modalità (audio, video) necessarie per ogni sala, oltre a dimensioni e finalità della sala, giocano un ruolo importante per decidere quale soluzione sia più appropriata per ogni sala. 
 
@@ -102,7 +102,7 @@ _Inventario di esempio/sala riunioni_
 
 | Sito  | Nome sala | Tipo di sala | Numero di persone  | In ambito? | Funzionalità della sala corrente       | Funzionalità future della sala     |
 |-----------|---------------|---------------|-----------------------|--------------|-------------------------------------|----------------------------------------------------------|
-| HQ di Londra | Curie         | Media        | 6&ndash;12                  | Sì          | Vivavoce                        | 1 schermata, audio e video + presentazione<br>Accesso PSTN |
+| HQ di Londra | Curie         | Media.        | 6&ndash;12                  | Sì          | Vivavoce                        | 1 schermata, audio e video + presentazione<br>Accesso PSTN |
 | HQ di Sydney | Collina          | Grande         | 12&ndash;16                 | Sì          | Unità AV legacy, 1 schermata e fotocamera | 2 schermi, audio e video + presentazione<br>Accesso PSTN |
 
 ## <a name="device-selection"></a>Selezione del dispositivo 
@@ -150,7 +150,7 @@ L'organizzazione deve eseguire attività di monitoraggio, amministrazione e gest
 
 Molte organizzazioni hanno un team o un partner AV che gestisce le sale riunioni e i dispositivi. Questo team deve essere coinvolto nell'accettare chi gestirà i dispositivi Microsoft teams Rooms per il monitoraggio delle prestazioni e la distribuzione di aggiornamenti software e hotfix. 
 
-Si consideri la coda dell'helpdesk che instraderà le chiamate correlate a Microsoft teams Rooms֪ e offrirà una FAQ al team dell'helpdesk per comprendere meglio come usare le sale di Microsoft teams e i passaggi principali per la risoluzione dei problemi che possono eseguire. Un buon punto di partenza per le domande frequenti è la [Guida dell'utente](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) e l' [elenco dei problemi noti](known-issues.md).
+Si consideri la coda dell'helpdesk che instraderà le chiamate correlate a Microsoft teams Rooms֪ e offrirà una FAQ al team dell'helpdesk per comprendere meglio come usare le sale di Microsoft teams e i passaggi principali per la risoluzione dei problemi che possono eseguire. Un buon punto di partenza per le domande frequenti è la guida e il [supporto tecnico](known-issues.md)per gli [utenti](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) dell'organizzazione.
 
 |    |     |
 |-----------|------------|

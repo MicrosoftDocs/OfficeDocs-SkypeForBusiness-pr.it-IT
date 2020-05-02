@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d3a6d946d6bf00e6e43a0f6678352e5b4e9b7629
-ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
+ms.openlocfilehash: 11192ca8bc1fe7e273e687363bf327fcd0c3078e
+ms.sourcegitcommit: 3325fd9de57367e9dd60685d1fef096921441a76
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43940673"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "43997167"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -353,7 +353,7 @@ Per altre informazioni sull'uso di PowerShell per gestire i criteri delle riunio
 - Quando si condivide la schermata in una configurazione con più monitor, viene condiviso solo il monitor principale.
 - Il ridimensionamento DPI elevato su CWA non è supportato.
 
-Per i problemi noti relativi ai team che non sono correlati a VDI, vedere [problemi noti per i team](Known-issues.md).
+Per i problemi noti relativi ai team che non sono correlati a VDI, vedere [supportare team nell'organizzazione](Known-issues.md).
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
