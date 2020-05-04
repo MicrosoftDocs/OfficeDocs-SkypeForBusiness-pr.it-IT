@@ -1,4 +1,4 @@
-Teams supporta completamente i browser Internet seguenti, con le eccezioni segnalate per le chiamate e le riunioni.
+Teams supporta completamente i browser Internet seguenti, con le eccezioni segnalate per le chiamate e le riunioni. Questa tabella si applica ai sistemi operativi in esecuzione nei computer desktop. 
 
 
 |Browser  |Chiamate: audio, video e condivisione  |Riunioni: audio, video e condivisione <sup>1</sup> <sup>2</sup>  |
@@ -15,4 +15,6 @@ Teams supporta completamente i browser Internet seguenti, con le eccezioni segna
 <sup>2</sup> Esegui sfocatura dello sfondo non è disponibile quando si esegue Teams in un browser. Questa funzionalità è disponibile solo per il client desktop di Teams.
 
 > [!NOTE]
-> Se il sistema operativo può eseguire il browser supportato, Teams è supportato. Ad esempio, eseguendo Firefox nel sistema operativo Linux è possibile usare Teams.
+> Se il sistema operativo può eseguire il browser supportato, Teams è supportato nei computer desktop. Ad esempio, eseguendo Firefox nel sistema operativo Linux è possibile usare Teams.
+>
+> Per i sistemi operativi per dispositivi mobili, è consigliabile eseguire l'app di Teams, disponibile negli store Android e iOS. L'esecuzione di Teams con un sistema operativo per dispositivi mobili è supportata, ma molte funzionalità non sono disponibili.
