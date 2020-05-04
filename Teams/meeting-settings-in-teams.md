@@ -23,7 +23,7 @@ ms.collection:
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
 ms.openlocfilehash: 25945b35ec4800a00ab295ba328d5f1d65ac2ab0
 ms.sourcegitcommit: 3ef5c913318fdeeaa8c55caab07c2f8224eae2b0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/27/2020
 ms.locfileid: "43898171"
