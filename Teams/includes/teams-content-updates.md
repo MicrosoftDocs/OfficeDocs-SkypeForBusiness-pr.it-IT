@@ -8,46 +8,6 @@
 
 | Pubblicato in |Titolo argomento | Modificare |
 |------|------------|--------|
-| 3/24/2020 | [Gestire i pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | modificato |
-| 3/24/2020 | [Installare Microsoft Teams usando MSI tramite Microsoft Endpoint Configuration Manager](/MicrosoftTeams/msi-deployment) | modificato |
-| 3/24/2020 | [Formazione per amministratori per Microsoft Teams](/MicrosoftTeams/itadmin-readiness) | modificato |
-| 3/24/2020 | [Elenco di Session Border Controller certificati per Instradamento diretto](/MicrosoftTeams/direct-routing-border-controllers) | modificato |
-| 3/24/2020 | [Creare utenti di Microsoft 365, aggiungere licenze di Business Voice e assegnare numeri di telefono](/MicrosoftTeams/business-voice/create-users) | modificato |
-| 3/25/2020 | [Problemi noti di Microsoft Teams](/MicrosoftTeams/known-issues) | modificato |
-| 3/25/2020 | [Elenco di controllo per l'accesso guest in Microsoft Teams](/MicrosoftTeams/guest-access-checklist) | modificato |
-| 3/25/2020 | [Gestire i tag in Microsoft Teams](/MicrosoftTeams/manage-tags) | modificato |
-| 3/25/2020 | [Pianificare Instradamento diretto](/MicrosoftTeams/direct-routing-plan) | modificato |
-| 3/25/2020 | [Riunioni di Microsoft teams su browser non supportati](/MicrosoftTeams/unsupported-browsers) | modificato |
-| 3/26/2020 | [Pianificare Microsoft 365 Government-distribuzioni di GCC-Microsoft Teams](/MicrosoftTeams/plan-for-government-gcc) | modificato |
-| 3/26/2020 | [Assegnare proprietari e membri del team in Microsoft Teams](/MicrosoftTeams/assign-roles-permissions) | modificato |
-| 3/26/2020 | [Assegnare criteri a grandi gruppi di utenti nella tua scuola](/MicrosoftTeams/batch-policy-assignment-edu) | modificato |
-| 3/26/2020 | [Gestire la versione di valutazione gratuita di Office 365 E1](/MicrosoftTeams/e1-trial-license) | modificato |
-| 3/26/2020 | [Guida alla revisione della qualità dell'esperienza per Microsoft Teams](/MicrosoftTeams/quality-of-experience-review-guide) | modificato |
-| 3/26/2020 | [Risorse di Microsoft Teams per l'istruzione per amministratori](/MicrosoftTeams/remote-learning-edu) | modificato |
-| 3/26/2020 | [Attivare e usare il dashboard qualità chiamata](/MicrosoftTeams/turning-on-and-using-call-quality-dashboard) | modificato |
-| 3/26/2020 | [Visualizzare l'utilizzo di Microsoft teams in Power BI usando i dati di Call Quality dashboard](/MicrosoftTeams/cqd-teams-utilization-report) | modificato |
-| 3/26/2020 | [Assegnare i criteri agli utenti in Microsoft Teams](/MicrosoftTeams/assign-policies)  | modificato |
-| 3/26/2020 | [Accedere a Microsoft Teams con l'autenticazione moderna](/MicrosoftTeams/sign-in-teams) | modificato |
-| 3/26/2020 | [Pianificare un evento live in Microsoft Teams](/MicrosoftTeams/teams-live-events/plan-for-teams-live-events) | modificato |
-| 3/26/2020 | [Assegnare, modificare o rimuovere il numero di telefono di un utente](/MicrosoftTeams/assign-change-or-remove-a-phone-number-for-a-user) | modificato |
-| 3/26/2020 | [Gli utenti possono effettuare chiamate in uscita verso questi paesi e aree geografiche](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/users-can-make-outbound-calls-to-these-countries-and-regions) | modificato |
-| 3/26/2020 | [Requisiti per Microsoft Teams Rooms](/MicrosoftTeams/rooms/requirements) | modificato |
-| 3/26/2020 | [Supporto per i lavoratori remoti con Microsoft Teams](/MicrosoftTeams/support-remote-work-with-teams) | modificato |
-| 3/26/2020 | [Risorse di Microsoft Teams per l'istruzione per amministratori](/MicrosoftTeams/resources-teams-edu) | modificato |
-| 3/27/2020 | [Risorse di Microsoft Teams per l'istruzione per amministratori](/MicrosoftTeams/resources-teams-edu) | modificato |
-| 3/27/2020 | Video-servizi di audioconferenza in Microsoft Teams | rimosso |
-| 3/27/2020 | [Eseguire un'analisi eDiscovery del contenuto in Microsoft Teams](/MicrosoftTeams/ediscovery-investigation) | modificato |
-| 3/27/2020 | [Criteri di conservazione in Microsoft Teams](/MicrosoftTeams/retention-policies) | modificato |
-| 3/27/2020 | [Assegnare criteri a grandi gruppi di utenti nella tua scuola](/MicrosoftTeams/batch-policy-assignment-edu) | modificato |
-| 3/27/2020 | [Risorse di Microsoft Teams per l'istruzione per amministratori](/MicrosoftTeams/remote-learning-edu) | modificato |
-| 3/27/2020 | [Come viene usata la memoria in Microsoft Teams](/MicrosoftTeams/teams-memory-usage-perf) | modificato |
-
-
-## <a name="week-of-march-30-2020"></a>Settimana del 30 marzo 2020
-
-
-| Pubblicato in |Titolo argomento | Modificare |
-|------|------------|--------|
 | 3/31/2020 | [Domande frequenti - Supporto del personale remoto](/MicrosoftTeams/faq-support-remote-workforce) | modificato |
 | 3/31/2020 | [Riunioni in Microsoft Teams](/MicrosoftTeams/tutorial-meetings-in-teams) | modificato |
 | 3/31/2020 | [Assegnare i criteri agli utenti in Microsoft Teams](/MicrosoftTeams/assign-policies)  | modificato |
@@ -575,3 +535,66 @@
 | 4/23/2020 | [Gestire le impostazioni delle riunioni](/MicrosoftTeams/meeting-settings-in-teams) | modificato |
 | 4/23/2020 | [Risorse di Microsoft Teams per l'istruzione per amministratori](/MicrosoftTeams/remote-learning-edu) | modificato |
 | 4/23/2020 | [Guida alla sicurezza di Microsoft Teams](/MicrosoftTeams/teams-security-guide) | modificato |
+
+
+## <a name="week-of-april-27-2020"></a>Settimana del 27 aprile 2020
+
+
+| Pubblicato in |Titolo argomento | Modificare |
+|------|------------|--------|
+| 4/28/2020 | [Benvenuto in Microsoft Teams](/MicrosoftTeams/teams-overview) | modificato |
+| 4/28/2020 | [Gestire i pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | modificato |
+| 4/28/2020 | [Panoramica della sicurezza e della conformità](/MicrosoftTeams/security-compliance-overview) | modificato |
+| 4/28/2020 | [Supporto per i lavoratori remoti con Microsoft Teams](/MicrosoftTeams/support-remote-work-with-teams) | modificato |
+| 4/28/2020 | [Gestire l'accesso degli utenti a Microsoft Teams](/MicrosoftTeams/user-access) | modificato |
+| 4/28/2020 | [Dashboard integrità per il routing diretto](/MicrosoftTeams/direct-routing-health-dashboard) | modificato |
+| 4/28/2020 | [Gestire i criteri delle riunioni](/MicrosoftTeams/meeting-policies-in-teams) | modificato |
+| 4/28/2020 | [Preparare la rete dell'organizzazione per Teams](/MicrosoftTeams/prepare-network) | modificato |
+| 4/28/2020 | Visualizzare l'analisi tra team e per team in Teams | rimosso |
+| 4/28/2020 | [Telefoni e dispositivi per Teams](/MicrosoftTeams/teams-ip-phones) | modificato |
+| 4/29/2020 | [Microsoft 365 Groups e Microsoft Teams](/MicrosoftTeams/office-365-groups) | modificato |
+| 4/29/2020 | [Gestire i criteri delle riunioni](/MicrosoftTeams/meeting-policies-in-teams) | modificato |
+| 4/29/2020 | [Guida introduttiva per l'amministratore - Riunioni ed eventi live in Microsoft Teams](/MicrosoftTeams/quick-start-meetings-live-events) | modificato |
+| 4/29/2020 | [Criteri di conservazione in Microsoft Teams](/MicrosoftTeams/retention-policies) | modificato |
+| 4/29/2020 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | modificato |
+| 4/29/2020 | [Colloqui di Microsoft teams Chalk](/MicrosoftTeams/chalk-talks-landing-page) | modificato |
+| 4/29/2020 | [Disponibilità in Germania](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-germany) | modificato |
+| 4/29/2020 | [Gestire i dispositivi in Microsoft Teams](/MicrosoftTeams/device-management) | modificato |
+| 4/29/2020 | [Configurare la risponderia per il routing diretto](/MicrosoftTeams/direct-routing-ringback-bot) | modificato |
+| 4/29/2020 | [Eseguire un'analisi eDiscovery del contenuto](/MicrosoftTeams/ediscovery-investigation) | modificato |
+| 4/29/2020 | [Recuperare numeri di telefono per gli utenti](/MicrosoftTeams/getting-phone-numbers-for-your-users) | modificato |
+| 4/29/2020 | [Training con docente e video per gli utenti](/MicrosoftTeams/instructor-led-training-teams-landing-page) | modificato |
+| 4/29/2020 | [Limiti e specifiche per Microsoft Teams](/MicrosoftTeams/limits-specifications-teams) | modificato |
+| 4/29/2020 | [Telefoni per Microsoft Teams](/MicrosoftTeams/phones-for-teams) | modificato |
+| 4/29/2020 | [Pianificare la gestione del ciclo di vita](/MicrosoftTeams/plan-teams-lifecycle) | modificato |
+| 4/29/2020 | [Esempio di script di PowerShell-export managers and its directs](/MicrosoftTeams/scripts/powershell-script-create-teams-from-managers-export-managers) | modificato |
+| 4/29/2020 | [Esempio di script di PowerShell-creare nuovi team di responsabili](/MicrosoftTeams/scripts/powershell-script-create-teams-from-managers-new-teams) | modificato |
+| 4/29/2020 | [Esempio di script di PowerShell-creare & assegnare criteri di messaggistica](/MicrosoftTeams/scripts/powershell-script-teams-messaging-policy-edu) | modificato |
+| 4/29/2020 | [Esempio di script di PowerShell-reimpostare l'impostazione autostart in teams](/MicrosoftTeams/scripts/powershell-script-teams-reset-autostart) | modificato |
+| 4/29/2020 | [Script di PowerShell per testare le connessioni del controller di bordo della sessione di routing diretto](/MicrosoftTeams/sip-tester-powershell-script) | modificato |
+| 4/29/2020 | [Formazione per amministratori per Microsoft Teams](/MicrosoftTeams/teams-admin-training-landing-page) | modificato |
+| 4/29/2020 | [Telefoni e dispositivi per Teams](/MicrosoftTeams/teams-ip-phones) | modificato |
+| 4/29/2020 | [Panoramica di PowerShell Teams](/MicrosoftTeams/teams-powershell-overview) | modificato |
+| 4/29/2020 | [Usare i ruoli di amministratore di Microsoft teams per gestire Teams](/MicrosoftTeams/using-admin-roles) | modificato |
+| 4/29/2020 | [Che cos’è il Sistema telefonico in Office 365?](/MicrosoftTeams/what-is-phone-system-in-office-365) | modificato |
+| 4/30/2020 | [Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard](/MicrosoftTeams/cqd-power-bi-connector) | modificato |
+| 4/30/2020 | [Gestire i criteri delle chiamate di emergenza in Microsoft Teams](/MicrosoftTeams/manage-emergency-calling-policies) | modificato |
+| 4/30/2020 | [Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams](/MicrosoftTeams/audit-log-events) | modificato |
+| 4/30/2020 | [Disponibilità in Arabia Saudita](/MicrosoftTeams/country-and-region-availability-for-audio-conferencing-and-calling-plans/availability-in-saudi-arabia) | modificato |
+| 4/30/2020 | [Gestire i pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | modificato |
+| 5/1/2020 | [Guida alle operazioni per Microsoft Teams](/MicrosoftTeams/1-drive-value-operate-my-service) | modificato |
+| 5/1/2020 | [Supporto di Microsoft Teams nell'organizzazione](/MicrosoftTeams/known-issues) | modificato |
+| 5/1/2020 | [Benvenuto in Microsoft Teams](/MicrosoftTeams/teams-overview) | modificato |
+| 5/1/2020 | [Autorizzazioni e considerazioni sulle app di Microsoft Teams](/MicrosoftTeams/app-permissions) | modificato |
+| 5/1/2020 | [Ottenere i client per Microsoft Teams](/MicrosoftTeams/get-clients) | modificato |
+| 5/1/2020 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | modificato |
+| 5/1/2020 | [Gestire le app personalizzate in Microsoft Teams](/MicrosoftTeams/manage-your-lob-apps) | modificato |
+| 5/1/2020 | [Gestire il ciclo di vita dei canali privati in Microsoft Teams](/MicrosoftTeams/private-channels-life-cycle-management) | modificato |
+| 5/1/2020 | [Piano per Microsoft Teams Rooms](/MicrosoftTeams/rooms/rooms-plan) | modificato |
+| 5/1/2020 | [Note sulla versione](/MicrosoftTeams/rooms/rooms-release-note) | modificato |
+| 5/1/2020 | [Definire scenari di utilizzo per Microsoft Teams](/MicrosoftTeams/teams-adoption-define-usage-scenarios) | modificato |
+| 5/1/2020 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | modificato |
+| 5/1/2020 | [Risolvere i problemi relativi all'accesso guest in Microsoft Teams](/MicrosoftTeams/troubleshoot-guest-access) | modificato |
+| 5/1/2020 | [Operazioni per la qualità\| della gestione \| dei servizi di Microsoft Teams](/MicrosoftTeams/upgrade-operate-my-service) | modificato |
+| 5/1/2020 | [Assegnare, modificare o rimuovere il numero di telefono di un utente](/MicrosoftTeams/assign-change-or-remove-a-phone-number-for-a-user) | modificato |
+| 5/1/2020 | [Contattare il desk del servizio PSTN](/MicrosoftTeams/manage-phone-numbers-for-your-organization/contact-pstn-service-desk) | modificato |

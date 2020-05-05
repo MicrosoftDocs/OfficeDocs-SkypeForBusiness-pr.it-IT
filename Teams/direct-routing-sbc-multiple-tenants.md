@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un SBC (Session Border Controller) per servire più tenant per i partner Microsoft e/o i vettori PSTN.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 883df3c78387d509f094f91bc346fc5b31f53690
-ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
+ms.openlocfilehash: 13d2dceb8cedc6e48d420619476cbf73c675785a
+ms.sourcegitcommit: e618396eb8da958983668ad0884b4481e1ed7b98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43918715"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44021998"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -253,7 +253,7 @@ Per configurare il failover per un ambiente multi-tenant, è necessario eseguire
 - Per ogni tenant, aggiungere i nomi di dominio completi per due diversi SBCs.  Ad esempio:
 
    customer1.sbc1.contoso.com <br>
-   customer2.sbc2.contoso.com <br>
+   customer1.sbc2.contoso.com <br>
 
 - Nei criteri di routing vocale online degli utenti specificare sia SBCs.  Se un SBC non riesce, i criteri di routing instradano le chiamate al secondo SBC.
 

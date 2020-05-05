@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ba8e6439d1b0c8bb5795408f5cff39ef2c298fa4
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 9475b323e1b9b04c5735a656eac5766b8a110810
+ms.sourcegitcommit: 48b24ccf133c9d03b0d1d4eea1ec275b2be5e3bb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43778732"
+ms.lasthandoff: 05/04/2020
+ms.locfileid: "44016180"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -50,7 +50,7 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 |**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Sì<sup>8</sup>|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
 |**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Sì<sup>8</sup>|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
 |**Exchange Online dedicato-legacy** (obbligatorio per la sincronizzazione con Azure ad)|Sì <sup>2</sup>|Sì <sup>2, 3</sup>|Sì <sup>4|Sì|No|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
-|**Exchange locale** (è necessario eseguire la sincronizzazione con Azure ad & OAuth config)|Sì <sup>2</sup>| Sì <sup>2, 3</sup> |Sì <sup>4|Sì|Sì (Exchange 2016 CU3 +)|Sì<sup>8</sup> (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
+|**Exchange locale** (è necessario eseguire la sincronizzazione con Azure ad & OAuth config)|Sì <sup>2</sup>| Sì <sup>2</sup> |Sì <sup>4|Sì|Sì (Exchange 2016 CU3 +)|Sì<sup>8</sup> (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
 
 <sup>1</sup> Exchange 2016 CU3 e versioni successive supportate.  
 

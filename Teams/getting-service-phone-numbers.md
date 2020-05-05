@@ -21,12 +21,12 @@ ms.custom:
 - Phone System
 - seo-marvel-mar2020
 description: Informazioni su come ottenere nuovi numeri di telefono e portare o trasferire numeri esistenti per i servizi di audioconferenza, gli operatori automatici e le code di chiamata (numeri di servizio) per i team.
-ms.openlocfilehash: 9eb88d46a9e993067e7a2fc8baf9847dea5b32d7
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 9ce7875f06677ab6b9a4ad61a9e30bf0df861bb8
+ms.sourcegitcommit: e618396eb8da958983668ad0884b4481e1ed7b98
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43136716"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44021988"
 ---
 # <a name="getting-service-phone-numbers"></a>Recuperare numeri di telefono del servizio.
 
@@ -51,7 +51,7 @@ Sono disponibili tre modi per ottenere i numeri di servizio:
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra, vai a**numeri di telefono** **vocale** > e quindi fai clic su **Aggiungi**.
-2. Immettere un nome per l'ordine e, se si vuole, aggiungere una descrizione.
+2. Immettere un nome per l'ordine e aggiungere una descrizione.
 3. Nella pagina location and quantity eseguire le operazioni seguenti:
     1. In **paese o area geografica**selezionare un paese o un'area geografica.
     1. In **tipo di numero**selezionare il tipo di numero di servizio desiderato.
