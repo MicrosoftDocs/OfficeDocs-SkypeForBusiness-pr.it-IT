@@ -1,5 +1,5 @@
 ---
-title: Migliorare i gruppi di Office 365 esistenti
+title: Migliorare i gruppi Microsoft 365 esistenti
 ms.reviewer: ''
 author: LolaJacobsen
 ms.author: lolaj
@@ -8,7 +8,7 @@ ms.date: 09/25/2017
 ms.topic: article
 ms.service: msteams
 audience: admin
-description: Per informazioni su come migliorare i gruppi di Office 365 con Microsoft teams, è possibile invitare un elenco di ditributi a un team, aggiungere gruppi di sicurezza abilitati alla posta elettronica e altro ancora.
+description: Informazioni su come migliorare i gruppi di Microsoft 365 con Microsoft teams invitando un elenco di ditributi a un team, aggiungendo gruppi di sicurezza abilitati alla posta elettronica e altro ancora.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -18,14 +18,14 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ad71a5d65eca924e7d73c157011ff12ce38bc9e4
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 97164b6eeed1a626681cf320fc02c7dd0a74353a
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43136866"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43776601"
 ---
-<a name="enhance-existing-office-365-groups-with-microsoft-teams"></a>Migliorare i gruppi di Office 365 esistenti con Microsoft Teams
+<a name="enhance-existing-microsoft-365-groups-with-microsoft-teams"></a>Migliorare i gruppi Microsoft 365 esistenti con Microsoft Teams
 =======================================================
 
 Gli utenti di Microsoft teams possono migliorare un gruppo di Office 365 esistente con funzionalità teams. Quando si cerca di migliorare un gruppo di Office 365 pubblico, gli utenti possono eseguire questa operazione se il numero di membri è uguale o inferiore a 5.000.
@@ -43,7 +43,7 @@ Gli utenti possono anche invitare una lista di distribuzione a un team e i membr
 
 È anche possibile aggiungere gruppi di sicurezza abilitati alla posta elettronica come membri di un team. Tuttavia, se in seguito si aggiungono altri membri al gruppo di sicurezza, tali membri non vengono aggiunti automaticamente al team. È necessario aggiungere i nuovi membri separatamente o aggiungere di nuovo il gruppo di sicurezza al team. Se si aggiunge di nuovo il gruppo di sicurezza, la deduplicazione garantisce che i membri vengano aggiunti una sola volta.
 
-Esistono due tipi di impostazioni di privacy con i gruppi di Office 365, **pubblici e privati**. Mentre entrambi i tipi di gruppo possono essere abilitati per i team, c'è una lieve differenza quando si tratta di self-service.
+Esistono due tipi di impostazioni di privacy con i gruppi Microsoft 365, **pubblici e privati**. Mentre entrambi i tipi di gruppo possono essere abilitati per i team, c'è una lieve differenza quando si tratta di self-service.
 
 -   Gli utenti possono cercare gruppi pubblici e possono partecipare autonomamente senza bisogno di approvazione del proprietario del team.
 

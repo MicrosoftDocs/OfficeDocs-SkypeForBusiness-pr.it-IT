@@ -19,12 +19,12 @@ localization_priority: Normal
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dbbcbce46ab713b7a1820d01d476ef5d35dee0d0
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 6cafff163c4794002d8f92b638e73112faa8d1e4
+ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139575"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "43780665"
 ---
 # <a name="define-my-success"></a>Definizione del successo
 
@@ -204,7 +204,7 @@ Quando si definisce KSIs, è consigliabile usare i criteri "specifici, misurabil
 > |---------|---------|---------|---------|---------|---------|
 > |Uso/adozione|La qualità delle chiamate è uguale o migliore della soluzione precedente|Sondaggio|80% degli utenti concordano o sono fortemente concordi|Dopo l'abilitazione e il trimestrale|Team Information Technology|
 > |Uso/adozione|Microsoft Teams ha semplificato il processo di comunicazione|Sondaggio|80% degli utenti concordano o sono fortemente concordi|Dopo l'abilitazione e il trimestrale|Team di gestione delle modifiche|
-> |Uso/adozione|Gli utenti usano attivamente la soluzione|Report di Office 365, dashboard qualità chiamata|80% degli utenti sono utenti quotidiani attivi|Quotidiana|Team di gestione delle modifiche|
+> |Uso/adozione|Gli utenti usano attivamente la soluzione|Report di Microsoft 365, dashboard qualità chiamata|80% degli utenti sono utenti quotidiani attivi|Quotidiana|Team di gestione delle modifiche|
 > |Uso/qualità|La percentuale di chiamate/conferenze non consentite dovrebbe essere minima|Dashboard qualità delle chiamate|< 5% delle chiamate scadenti per mese|Quotidiana|Team Information Technology|
 > |Uso/supporto|So come ottenere supporto tecnico|Sondaggio|90% degli utenti concordano o sono fortemente concordi|Dopo l'abilitazione e il trimestrale|Team di gestione delle modifiche|
 > |Uso/supporto|Sono soddisfatto della qualità del supporto tecnico|Sondaggio|80% degli utenti concordano o sono fortemente concordi|Dopo ogni incidente|Team Information Technology|
@@ -219,7 +219,7 @@ Quando si definisce KSIs, è consigliabile usare i criteri "specifici, misurabil
 > |---------|---------|---------|---------|---------|
 > |L'imminente fusione aggiungerà fino a 1.000 persone|Alta|Alta|Alta|<ul><li>Per le società unite, creare un OKR separato che si applica alle proprie fasi di progetto (immaginare, a bordo, valore unità)</li><li>Non includere questi OKRs in OKRs esistente</li></ul>|
 > |La portabilità del numero di telefono ritarderà il completamento del progetto|Alta|Alta|Alta|<ul><li>Preparare tutte le informazioni necessarie per supportare il trasferimento del numero di telefono in anticipo (record servizio clienti, dettagli fatturazione, lettera di autorizzazione)</li><li>Regolare la sequenza temporale del progetto per adattare l'esecuzione della conversione del numero di telefono alla data di consegna</li><li>Comunicare l'uso di nuovi numeri di conferenza telefonica con accesso esterno a partecipanti esterni</li><li>Usare numeri di telefono temporanei con la manipolazione dell'ID chiamante</li></ul>|
-> |Riprogettazione della rete pianificata|Alta|Media|Media|<ul><li>Prima di implementare teams come piattaforma di comunicazione e collaborazione moderna, eseguire una valutazione della conformità della rete per i siti nell'ambito del progetto</li></ul>|
+> |Riprogettazione della rete pianificata|Alta|Media.|Media.|<ul><li>Prima di implementare teams come piattaforma di comunicazione e collaborazione moderna, eseguire una valutazione della conformità della rete per i siti nell'ambito del progetto</li></ul>|
 > |Configurazione SBC|Alta|Alta|Alta|<ul><li>Prima di implementare teams come sostituto per il PBX esistente, verificare che sia possibile soddisfare tutti i requisiti di configurazione di SBC</li><li>Verificare che le risorse di supporto SBC abbiano il set di competenze appropriato per configurare SBC per il routing diretto</li></ul>|
 
 <br>
