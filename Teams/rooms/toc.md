@@ -7,8 +7,9 @@
 ### [Requisiti](requirements.md)
 ### [Concessione di licenze online](rooms-licensing.md)
 ### [Gestione dei piani con Monitoraggio di Azure](azure-monitor-plan.md)
+### [Pianificare la gestione di Managed Meeting Rooms](managed-meeting-rooms.md)
 
-## Distribuzione
+## Distribuire
 ### [Panoramica della distribuzione](rooms-deploy.md)
 ### [Configurare gli account](rooms-configure-accounts.md)
 ### [Con Office 365](with-office-365.md)
@@ -25,7 +26,7 @@
 ## Gestione
 ### [Panoramica della gestione](rooms-manage.md)
 ### [Manutenzione e operazioni](rooms-operations.md)
-### [Problemi noti](known-issues.md)
+### [Supportare Teams nell'organizzazione](known-issues.md)
 ### [Dispositivi con Monitoraggio di Azure](azure-monitor-manage.md)
 ### [Impostazioni con un file XML](xml-config-file.md)
 ### [Uso dello strumento di ripristino](recovery-tool.md)
