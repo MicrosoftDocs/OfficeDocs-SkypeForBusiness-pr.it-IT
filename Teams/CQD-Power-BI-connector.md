@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
-ms.openlocfilehash: d9619fbf39558597c0f6c168f57f8b240d3c2a20
-ms.sourcegitcommit: 5692900c0fc0a2552fe3f8ece40920c839e1ea23
+ms.openlocfilehash: 9274394c15e76aa985cf9e0a005963b79e0acac9
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952445"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042593"
 ---
 # <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
 
@@ -158,6 +158,16 @@ Se si verificano altri errori al di fuori di questo ambito, inviare una notifica
 ### <a name="when-will-the-power-bi-connector-be-updated-from-beta-status"></a>Quando verrà aggiornato il connettore di Power BI dallo stato "beta"?
 
 Nonostante il tag beta, il connettore di qualità della chiamata per Power BI è la versione finale del connettore ed è stato ufficialmente firmato dal team di Power BI per riflettere questo. Il processo di certificazione per rimuovere il tag Beta è esteso e richiede un impegno da parte del team di Power BI per consentire il supporto diretto anche al connettore. A causa di vincoli temporali, il team di Power BI non è attualmente in grado di specificare il supporto e la certificazione più ampia, ma è comunque pronto ad attestare la sicurezza, l'autenticità e le funzionalità generali del connettore di qualità della chiamata Microsoft.
+
+### <a name="why-does-the-connector-seem-so-slow-compared-to-advanced-cqd-in-browser-what-can-i-do-to-improve-performance"></a>Perché il connettore sembra così lento rispetto a Call Quality dashboard avanzato nel browser? Cosa è possibile fare per migliorare le prestazioni?
+
+Le prestazioni delle query per i vari modelli sono in realtà le stesse sia nel browser che nel connettore. La differenza include il numero di query simultanee in esecuzione. Poiché la versione in-browser di Call Quality dashboard era meno ben sviluppata e le opzioni di visualizzazione dense di informazioni, la maggior parte dei report era limitata al caricamento di query di 2-3 alla volta. D'altra parte, i modelli di connettori spesso visualizzano 20 + query simultanee. Se si vuole creare report che rispondono solo alle versioni precedenti in cui si è abituati, provare a creare report con non più di 2-3 query per scheda.
+
+### <a name="i-find-that-i-routinely-run-into-the-10000-row-limit-when-running-queries-how-can-i-get-the-connector-to-return-more-than-10000-rows"></a>Quando si esegue una query, viene eseguito in routine il limite di 10.000 righe. Come è possibile ottenere il connettore per restituire più di 10.000 righe?
+
+Il limite di 10.000 righe viene effettivamente specificato nella fine dell'API ed è progettato per migliorare significativamente le prestazioni e ridurre il rischio di errori di esecuzione della query derivanti da condizioni di memoria insufficiente.
+
+Invece di tentare di aumentare il conteggio delle righe dei risultati, è consigliabile ristrutturare i report in base alle procedure consigliate per i connettori. I modelli inclusi sono progettati per illustrare le procedure consigliate. Dove possibile, iniziare osservando i KPI usando dimensioni più ampie e di cardinalità inferiore, ad esempio mese, anno, data, area geografica, paese e così via. Da lì è possibile eseguire il drill-down in dimensioni di cardinalità sempre più elevate. I report helpdesk e posizione avanzata contengono entrambi buoni esempi di questo flusso di lavoro drill-down.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

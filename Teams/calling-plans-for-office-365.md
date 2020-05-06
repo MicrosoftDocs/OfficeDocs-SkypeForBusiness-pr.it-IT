@@ -26,12 +26,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: 'Learn about Calling Plan (PSTN Calling plan) for Skype for business options and how to get licenses for your organization. '
-ms.openlocfilehash: c7e3d405e82613de8cfe5313c6dd93c0b5c29e0a
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 14e3727ae4e474b2b211df469b44e94b2cec8bf3
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905018"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44041733"
 ---
 # <a name="calling-plans-for-microsoft-365"></a>Piani di chiamata per Microsoft 365
 
@@ -58,19 +58,19 @@ Per informazioni dettagliate sui limiti di utilizzo e sulle condizioni per l'uti
     ![Screenshot che mostra l'opzione per acquistare un piano per chiamate vocali.](media/5893fca0-292c-4cdf-9b43-c507a8b44b74.png)
   
     > [!NOTE]
-    > A seconda del piano, potrebbe essere necessario acquistare altri componenti aggiuntivi prima di poter acquistare licenze per il sistema telefonico. Per altre informazioni, vedere "opzioni di licenza basate sul piano" in [licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
+    > A seconda del piano, potrebbe essere necessario acquistare altri componenti aggiuntivi prima di poter acquistare licenze per il sistema telefonico. Per altre informazioni, Vedi [licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
   
 2. Dopo aver acquistato le licenze di sistema telefonico, è possibile acquistare il piano per le chiamate effettuando l'accesso all'interfaccia di **amministrazione di Microsoft 365**, scegliere**abbonamenti per i componenti aggiuntivi**per l'**acquisto di servizi** > di **fatturazione** > e quindi fare clic su **Acquista ora**. Verranno visualizzati i piani per le chiamate.
     
     ![Screenshot che mostra le opzioni del piano per le chiamate vocali.](media/ab2d6dce-56eb-4bbc-ac1a-430b0c065d18.png)
   
-È possibile acquistare e assegnare piani di chiamata diversi a utenti diversi, a seconda delle esigenze dell'organizzazione. Dopo aver selezionato il piano di chiamata necessario, procedere con l'estrazione. Si assegna un piano a ogni utente nell'interfaccia di amministrazione di Microsoft 365. Per informazioni, vedere [assegnare le licenze di Microsoft teams](assign-teams-licenses.md).
+È possibile acquistare e assegnare piani di chiamata diversi a utenti diversi, a seconda delle esigenze dell'organizzazione. Dopo aver selezionato il piano di chiamata necessario, procedere con l'estrazione. Si assegna un piano a ogni utente nell'interfaccia di amministrazione di Microsoft 365. Per informazioni, vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md).
   
 ## <a name="do-you-have-a-service-provider-that-provides-on-premises-pstn-connectivity-for-hybrid-users"></a>Si dispone di un provider di servizi che offre connettività PSTN locale per gli utenti ibridi?
 
 In caso affermativo, non è necessario acquistare un piano per le chiamate. Office 365 Enterprise E5 include il componente aggiuntivo per il **sistema telefonico** , quindi è possibile procedere con l'estrazione.
   
-Assegna quindi le licenze per i componenti aggiuntivi Enterprise E5 o **Phone System** agli utenti nell'interfaccia di amministrazione di Microsoft 365. Per informazioni, vedere [assegnare le licenze di Microsoft teams](assign-teams-licenses.md).
+Assegna quindi le licenze per i componenti aggiuntivi Enterprise E5 o **Phone System** agli utenti nell'interfaccia di amministrazione di Microsoft 365. Per informazioni, vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md).
   
 ## <a name="pricing-information"></a>Informazioni sui prezzi
 

@@ -18,12 +18,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c0246a8517035ab5edd347fef30ae3f86af4afd9
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 51c81bb5c9ec945d7a7c47021a6a0af705c98883
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43903081"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042853"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -119,14 +119,21 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 È possibile usare la funzione degli eventi live di Teams in più aree geografiche del mondo. Le informazioni seguenti mostrano la disponibilità per i partecipanti e i membri del team dell'evento.
 
 > [!IMPORTANT]
-> L'area geografica dell'evento viene selezionata automaticamente in base all'organizzatore e a Microsoft 365 o Office 365.
+> L'area geografica dell'evento viene selezionata automaticamente in base all'organizzatore e alla posizione del tenant di Microsoft 365.
 
-**Disponibile nelle aree geografiche seguenti**
+**Disponibile in questi data center regionali**
 
 - Americhe
-- Europa/Africa
 - Asia Pacifico
-- Posizione dei dati per Canada, India, Australia, Giappone e Regno Unito
+- Europa/Africa
+
+**Posizione dei dati per questi paesi**
+
+- Australia
+- Canada
+- India
+- Giappone
+- Regno Unito
 
 **Esclusioni e considerazioni**
 

@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: 'Per assegnare una licenza di conferenza telefonica con accesso esterno a un utente e molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno, vedere la procedura Microsoft teams. '
-ms.openlocfilehash: 513695cf905c7cb21f332f6b025318253b03334d
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: b353f119d3f666f0a694ab325273e2b5f568da04
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141159"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042483"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-your-organization-in-microsoft-teams"></a>Gestire le impostazioni dei servizi di audioconferenza per l'organizzazione in Microsoft Teams
 
@@ -39,7 +39,7 @@ Potrebbe essere più semplice visualizzare tutte le impostazioni di audioconfere
 ## <a name="assign-an-audio-conferencing-license"></a>Assegnare una licenza di audioconferenza
 
 > [!NOTE]
-> Non è possibile assegnare licenze con teams. È necessario usare l'interfaccia di amministrazione di Microsoft 365. Vedi [Assegnare le licenze per i componenti aggiuntivi Skype for Business e Microsoft Teams](assign-teams-licenses.md). 
+> Non è possibile assegnare licenze con teams. È necessario usare l'interfaccia di amministrazione di Microsoft 365. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md). 
   
  **Per assegnare una licenza per un utente**
   

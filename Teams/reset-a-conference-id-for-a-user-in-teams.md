@@ -21,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Informazioni sui passaggi per reimpostare l'ID conferenza di una riunione dell'utente in Microsoft teams e ottenere collegamenti agli strumenti di aggiornamento e migrazione delle riunioni.
-ms.openlocfilehash: 4874630d27f0ded2cdf9cf4bb0bc0912a426e544
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 008a479677723dedbfe1923f57358808b16fd9ec
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137616"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042453"
 ---
 # <a name="reset-a-conference-id-for-a-user-in-microsoft-teams"></a>Reimpostare un ID conferenza per un utente in Microsoft Teams
 
@@ -59,7 +59,7 @@ Un ID conferenza dinamico è incluso nella parte inferiore degli inviti alle riu
 
 - È possibile inviare tutte le informazioni di conferenza all'utente in un messaggio di posta elettronica che include l'ID conferenza e i numeri di telefono di accesso esterno facendo clic su **Invia informazioni conferenza in posta elettronica** per l'utente nella sezione **audioconferenza** . Il PIN non è incluso.
     
-- Un ID conferenza conterrà 7 cifre e non è possibile modificarne la lunghezza.
+- Un ID conferenza conterrà 8 cifre e non è possibile modificarne la lunghezza.
     
 - Dopo la reimpostazione, il nuovo ID conferenza viene riportato nella sezione **ID conferenza**.
     

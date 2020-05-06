@@ -23,12 +23,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni su come configurare i piani per le chiamate, inclusi i piani di visualizzazione disponibili nella propria area geografica, acquistare & assegnare licenze, ottenere numeri di telefono e aggiungere indirizzi di emergenza & posizioni.
-ms.openlocfilehash: 4c470327b01b799dabc585db479e51e8ef37c41b
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 08db669cfb7ddb75f6a73610f112c682a016354b
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140879"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042403"
 ---
 # <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
 
@@ -45,7 +45,7 @@ Se i piani per le chiamate non sono disponibili per il proprio paese o area geog
     > [!TIP]
     > **Phone System** licenses and Calling Plans in Office 365 go together, so to see the option to purchase Calling Plans, you must first have the **Phone System** licenses.
   
-2. First assign the licenses, and then assign a Calling Plan to the people in your organization. Vedere [assegnare le licenze di Microsoft teams](assign-teams-licenses.md).
+2. First assign the licenses, and then assign a Calling Plan to the people in your organization. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md).
     
 ## <a name="step-3-get-phone-numbers"></a>Passaggio 3: ottenere i numeri di telefono
 Esistono tre modi per ottenere nuovi numeri utente:

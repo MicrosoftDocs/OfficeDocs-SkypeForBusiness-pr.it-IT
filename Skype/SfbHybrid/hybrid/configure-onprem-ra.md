@@ -13,12 +13,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Configurare un account delle risorse per Skype for Business Server 2019.
-ms.openlocfilehash: 1de087abdf08420a6300ae45466e9696aacb1ed1
-ms.sourcegitcommit: 477aac9e14fced139ee7dd827942ce35b9769b63
+ms.openlocfilehash: 0d7e52892c718f215a269201b73a547a97c13f96
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510785"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042843"
 ---
 # <a name="configure-resource-accounts"></a>Configurare gli account delle risorse
 
@@ -43,7 +43,7 @@ Se l'operatore automatico del sistema telefonico o la coda di chiamata avranno b
 
 Se l'operatore automatico o la coda di chiamata è annidata in un operatore automatico di primo livello, l'account di risorse associato deve disporre di un numero di telefono solo se si desidera che più punti di ingresso nella struttura di operatori automatici e code di chiamata.
 
-Per reindirizzare le chiamate agli utenti dell'organizzazione ospitate online, è necessario che dispongano di una licenza di **sistema telefonico** e che siano abilitati per VoIP aziendale o che dispongano di piani di chiamata di Office 365. Vedere [assegnare licenze Microsoft teams](/MicrosoftTeams/assign-teams-licenses). Per abilitarli per VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, eseguire:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
+Per reindirizzare le chiamate agli utenti dell'organizzazione ospitate online, è necessario che dispongano di una licenza di **sistema telefonico** e che siano abilitati per VoIP aziendale o che dispongano di piani di chiamata di Office 365. Vedere [assegnare licenze per i componenti aggiuntivi di Microsoft teams](/MicrosoftTeams/teams-add-on-licensing/assign-teams-add-on-licenses). Per abilitarli per VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, eseguire:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
 
 Se l'operatore automatico del sistema telefonico o la coda di chiamata che si sta creando sarà annidata e non avrà bisogno di un numero di telefono, il processo è:
 
@@ -84,7 +84,7 @@ La creazione di un account delle risorse che utilizza un numero di telefono rich
 
     Per ulteriori informazioni su questo comando, vedere [Start-ADSyncSyncCycle](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler) .
 
-5. Assegnare la licenza del sistema telefonico-utente virtuale o del sistema telefonico all'account delle risorse. Vedere [assegnare licenze di Microsoft teams](/MicrosoftTeams/assign-teams-licenses) e [assegnare licenze a un utente](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?redirectSourcePath=%252farticle%252f997596b5-4173-4627-b915-36abac6786dc&view=o365-worldwide#assign-licenses-to-one-user).
+5. Assegnare la licenza del sistema telefonico-utente virtuale o del sistema telefonico all'account delle risorse. Vedere [assegnare licenze per i componenti aggiuntivi di Microsoft teams](/MicrosoftTeams/teams-add-on-licensing/assign-teams-add-on-licenses) e [assegnare licenze a un utente](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?redirectSourcePath=%252farticle%252f997596b5-4173-4627-b915-36abac6786dc&view=o365-worldwide#assign-licenses-to-one-user).
 
    Se si assegna un numero di telefono a un account delle risorse, è ora possibile utilizzare il sistema telefonico senza costi-licenza utente virtuale. Questo fornisce funzionalità del sistema telefonico ai numeri di telefono a livello di organizzazione e consente di creare funzionalità di operatore automatico e coda di chiamata.
 

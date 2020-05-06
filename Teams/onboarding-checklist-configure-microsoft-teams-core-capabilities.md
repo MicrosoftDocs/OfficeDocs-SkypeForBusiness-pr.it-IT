@@ -16,12 +16,12 @@ f1.keywords:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 69874e9d75cea1377b0aae110b5e1b3ce681d84f
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: e7d167b8e1e868f550067b08f2f7dbfb22cb0a41
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43903901"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042103"
 ---
 # <a name="configure-microsoft-teams-core-capabilities"></a>Configurare le funzionalità di base di Microsoft Teams
 
@@ -35,5 +35,5 @@ ms.locfileid: "43903901"
 | 6  | FACOLTATIVO: configurare i criteri di denominazione dei team | Teams sfrutta i criteri di denominazione per i gruppi di Microsoft 365 quando gli utenti creano o modificano i nomi del team. <br/><br/>Per impostazione predefinita, non vengono applicate restrizioni di denominazione quando un utente crea un team. <br/><br/>Se è necessario applicare regole per i nomi dei team, configurare i criteri di denominazione di Microsoft 365 groups che si applicano alla propria organizzazione. Puoi impostare i prefissi e i suffissi obbligatori e specificare le parole bloccate. | | [Pianificare i gruppi Microsoft 365 durante la creazione di team in Microsoft Teams](plan-office-365-groups.md) <br/><br/>[Criteri di denominazione dei gruppi di Microsoft 365](https://support.office.com/article/Office-365-Groups-naming-policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552) |
 | 7  | Configurare Exchange per il dominio SMTP Teams | Teams USA Exchange Online per inviare notifiche ai membri del team usando il dominio SMTP, email.teams.microsoft.com, quando è stato aggiunto o rimosso. <br/><br/>Assicurati di aggiungere il dominio SMTP all'elenco dei domini accettati nell'infrastruttura di Exchange. | | [Aggiungere il dominio SMTP di Microsoft teams come dominio accettato in Exchange Online](smtp-accepted-domain.md) |
 | 8  | Configurare e gestire l'accesso degli utenti ai team | Anche se ti consigliamo vivamente di abilitare tutti gli utenti per i team, puoi consentire o impedire l'accesso ai team per ogni singolo utente assegnando o rimuovendo la licenza del prodotto teams. | | [Gestire l'accesso degli utenti a Microsoft Teams](user-access.md) |
-| 9  | Assegnare licenze agli utenti | Assegnare licenze agli utenti per funzionalità come l'audioconferenza, il sistema telefonico e i piani per le chiamate | | [Assegnare le licenze Skyper for Business e Microsoft Teams](assign-teams-licenses.md)|
+| 9  | Assegnare licenze agli utenti | Assegnare licenze agli utenti per funzionalità come l'audioconferenza, il sistema telefonico e i piani per le chiamate | | [Assegnare licenze per i componenti aggiuntivi Microsoft Teams](teams-add-on-licensing/assign-teams-add-on-licenses.md)|
 | 10 | Facoltativo: usare PowerShell per amministrare Teams | È possibile usare i cmdlet di PowerShell anziché l'interfaccia di amministrazione di Microsoft 365 per amministrare e gestire le impostazioni dei team. | | [PowerShell per Microsoft Teams](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps) |

@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare gli utenti dell'organizzazione che lavorano da remoto a essere produttivi con Microsoft Teams, in particolare se lavorano da casa in risposta all'epidemia di COVID-19 (Coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 98570e5ee634781467c373bebf1ec1fa4dc97e6d
-ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
+ms.openlocfilehash: bdcb1dd78db1e3a555b58b40c17a7313d875317a
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43940713"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042423"
 ---
 # <a name="support-remote-workers-using-microsoft-teams"></a>Supporto per i lavoratori remoti con Microsoft Teams
 
@@ -33,7 +33,7 @@ Se si ha un'azienda di piccole o medie dimensioni, leggere l'articolo [Consentir
 
 - Assicurarsi che tutti gli utenti abbiano accesso a Teams, usando l'offerta gratuita di 6 mesi di **[Office 365 E1](e1-trial-license.md)** o la **[versione freemium di Teams](https://support.office.com/article/Welcome-to-Microsoft-Teams-free-6d79a648-6913-4696-9237-ed13de64ae3c)**. Se serve assistenza, contattare il proprio partner o il team degli account Microsoft.
 
--  Se si ha già un abbonamento che include Teams, **[attivarlo per tutti](assign-teams-licenses.md)**.
+-  Se si ha già un abbonamento che include Teams, **[attivarlo per tutti](user-access.md)**.
     
 - Comprendere come iniziare a usare le **[riunioni e gli eventi live in Teams](quick-start-meetings-live-events.md)** nell'organizzazione. 
 

@@ -1,9 +1,8 @@
 ---
 title: Gestire l'accesso degli utenti a Microsoft Teams
-author: LolaJacobsen
-ms.author: lolaj
+author: LanaChin
+ms.author: v-lanac
 manager: serdars
-ms.date: 03/12/2018
 ms.topic: article
 ms.service: msteams
 audience: admin
@@ -13,69 +12,96 @@ f1.keywords:
 - CSH
 ms.reviewer: ritikag
 search.appverid: MET150
-description: Informazioni su come abilitare o disabilitare l'accesso a livello utente per singolo utente assegnando o rimuovendo la licenza per il prodotto Microsoft teams.
+description: Informazioni su come gestire l'accesso degli utenti ai team assegnando o rimuovendo una licenza di teams agli utenti dell'organizzazione.
 ms.custom:
 - NewAdminCenter_Update
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 823038671ac03669808e8a3dec5d065a60682b19
-ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
+ms.openlocfilehash: 32ab8f68ef1c37fbb5cb724b322b4db0ee757b84
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43940613"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042273"
 ---
-<a name="manage-user-access-to-microsoft-teams"></a>Gestire l'accesso degli utenti a Microsoft Teams
-=====================================
-> [!IMPORTANT]
-> [!INCLUDE [new-teams-sfb-admin-center-notice](includes/new-teams-sfb-admin-center-notice.md)]
+# <a name="manage-user-access-to-teams"></a>Gestire l'accesso degli utenti a Teams
 
-A livello di utente, l'accesso a Microsoft teams può essere abilitato o disabilitato per singolo utente assegnando o rimuovendo la licenza per il prodotto Microsoft teams.
+Puoi gestire l'accesso ai team a livello di utente assegnando o rimuovendo una licenza di prodotto Microsoft teams. Ogni utente dell'organizzazione deve avere una licenza di teams prima di poter usare teams. È possibile assegnare una licenza di teams per i nuovi utenti quando vengono creati nuovi account utente o per gli utenti con account esistenti.
 
-Usare i criteri di messaggistica, gestiti dall'interfaccia di amministrazione di teams, per controllare quali funzionalità di messaggistica chat e canali sono disponibili per gli utenti in teams. È possibile usare i criteri predefiniti o creare uno o più criteri di messaggistica personalizzati per gli utenti dell'organizzazione. Per altre informazioni, leggere [gestire i criteri di messaggistica in teams](messaging-policies-in-teams.md).
+Per impostazione predefinita, quando un piano di licenza (ad esempio Microsoft 365 Enterprise E3 o Microsoft 365 Business Premium) viene assegnato a un utente, viene automaticamente assegnata una licenza di teams e l'utente è abilitato per Teams. Puoi disabilitare o abilitare team per un utente rimuovendo o assegnando una licenza in qualsiasi momento.
+
+È possibile gestire le licenze teams nell'interfaccia di amministrazione di Microsoft 365 o tramite PowerShell. Per gestire le licenze, è necessario essere un amministratore globale o un amministratore di gestione utenti.
 
 > [!NOTE]
->Microsoft consiglia di attivare team per tutti gli utenti di un'azienda in modo che i team possano essere formati organicamente per progetti e altre iniziative dinamiche. Anche se decidi di pilotarlo, potrebbe essere comunque utile conservare i team abilitati per tutti gli utenti, ma solo le comunicazioni di destinazione per il gruppo di utenti pilota.
+> Ti consigliamo di abilitare teams per tutti gli utenti in modo che i team possano essere formati organicamente per progetti e altre iniziative dinamiche. Anche se si sta usando un pilota, può essere comunque utile conservare i team abilitati per tutti gli utenti, ma solo le comunicazioni di destinazione per il gruppo di utenti pilota.
 
-## <a name="manage-teams-through-the-microsoft-365-admin-center"></a>Gestire i team tramite l'interfaccia di amministrazione di Microsoft 365
+## <a name="using-the-microsoft-365-admin-center"></a>Uso dell'interfaccia di amministrazione di Microsoft 365
 
-Le licenze a livello di utente di teams vengono gestite direttamente tramite le interfacce di gestione degli utenti di Microsoft 365. Un amministratore può assegnare licenze ai nuovi utenti quando vengono creati nuovi account utente o per gli utenti con account esistenti. Per gestire le licenze di Microsoft teams, l'amministratore deve avere i privilegi di amministratore globale o gestione utenti.
+Usare l'interfaccia di amministrazione di Microsoft 365 per gestire le licenze di team per singoli utenti o piccoli set di utenti alla volta. È possibile gestire le licenze per i team nella pagina **licenze** (per un massimo di 20 utenti alla volta) o nella pagina **utenti attivi** . Il metodo scelto varia a seconda che si vogliano gestire le licenze di prodotto per utenti specifici o gestire le licenze utente per prodotti specifici.
 
-Quando a un utente viene assegnata una licenza SKU come E3 o E5, viene automaticamente assegnata una licenza di Microsoft teams e l'utente è abilitato per Microsoft teams. Gli amministratori possono avere un controllo granulare su tutti i servizi e le licenze di Office 365 e la licenza di Microsoft teams per un utente specifico o un gruppo di utenti può essere abilitata o disabilitata.
+Se è necessario gestire le licenze per i team per un numero elevato di utenti, ad esempio centinaia o migliaia di utenti, [usare PowerShell](#using-powershell) o le [licenze basate su gruppo in Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign). 
 
-![Screenshot della sezione licenze di prodotto nell'interfaccia di amministrazione.](media/Manage_user_access_to_Microsoft_Teams_image2.png) 
+### <a name="assign-a-teams-license"></a>Assegnare una licenza per Teams
 
-Una licenza per gli utenti di teams può essere disabilitata in qualsiasi momento. Quando la licenza è disabilitata, gli utenti accedono a Microsoft teams verranno impediti e l'utente non sarà più in grado di visualizzare i team nell'icona di avvio delle app di Office 365 e nella Home page.
+La procedura è diversa a seconda che si usi la pagina **licenze** o **gli utenti attivi** .  Per istruzioni dettagliate, vedere [assegnare licenze agli utenti](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
-![Screenshot che mostra i team selezionati nella sezione licenze di prodotto.](media/Manage_user_access_to_Microsoft_Teams_image4.png)
+|||
+|---------|---------|
+|![Screenshot della licenza teams abilitata per un utente](media/assign-teams-licenses-1.png)    | ![Screenshot della licenza teams abilitata per un utente](media/assign-teams-licenses-2.png)        |
 
-## <a name="manage-via-powershell"></a>Gestire tramite PowerShell
+### <a name="remove-a-teams-license"></a>Rimuovere una licenza per Teams
+
+Quando si rimuove una licenza di Teams da un utente, i team sono disabilitati per l'utente e non vedranno più i team nell'icona di avvio delle app o nella Home page. Per la procedura dettagliata, vedere [annullare l'assegnazione di licenze dagli utenti](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users).
+
+|||
+|---------|---------|
+|![Screenshot della licenza per i team disabilitata per un utente](media/remove-teams-licenses-1.png)    | ![Screenshot della licenza per i team disabilitata per un utente](media/remove-teams-licenses-2.png)        |
+
+## <a name="using-powershell"></a>Utilizzo di PowerShell
+
+Usare PowerShell per gestire le licenze per i team per gli utenti in blocco. Puoi abilitare e disabilitare teams tramite PowerShell nello stesso modo in cui vuoi per qualsiasi altra licenza per il piano di servizio. Sono necessari gli identificatori per i piani di servizio per i team, che sono i seguenti:
+
+- Microsoft teams: TEAMS1
+- Microsoft teams per GCC: TEAMS_GOV
+- Microsoft teams per DoD: TEAMS_DOD
+
+### <a name="assign-teams-licenses-in-bulk"></a>Assegnare licenze teams in blocco
+
+Per la procedura dettagliata, vedere [assegnare licenze agli account utente con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell).
+
+### <a name="remove-teams-licenses-in-bulk"></a>Rimuovere le licenze teams in blocco
+
+Per la procedura dettagliata, vedere [disabilitare l'accesso ai servizi con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-with-office-365-powershell) e [disabilitare l'accesso ai servizi durante l'assegnazione di licenze utente](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-while-assigning-user-licenses).
+
+#### <a name="example"></a>Esempio 
+
+Di seguito è riportato un esempio di come usare i cmdlet [New-MsolLicenseOptions](https://docs.microsoft.com/powershell/module/msonline/new-msollicenseoptions) e [Set-MsolUserLicense](https://docs.microsoft.com/powershell/module/msonline/set-msoluserlicense) per disabilitare i team per gli utenti con un piano di licenze specifico. Ad esempio, seguire questa procedura per disabilitare prima i team per tutti gli utenti che hanno un particolare piano di licenze. Quindi Abilita teams per ogni singolo utente che dovrebbe avere accesso a teams.
 
 > [!IMPORTANT]
-> New-MsolLicenseOptions consentirà di abilitare tutti i servizi precedentemente disabilitati, a meno che non siano stati identificati esplicitamente nello script personalizzato. Ad esempio, se si vuole abbandonare entrambi gli Exchange & Sway disabilitando i team, è necessario includerlo nello script o entrambi gli Exchange & Sway verranno abilitati per gli utenti identificati.
+> Il cmdlet [New-MsolLicenseOptions](https://docs.microsoft.com/powershell/module/msonline/new-msollicenseoptions) consentirà di abilitare tutti i servizi precedentemente disabilitati, a meno che non siano stati identificati esplicitamente nello script personalizzato. Ad esempio, se vuoi abbandonare sia Exchange che Sway disabled mentre disabilitano anche i team, dovrai includere questo nello script o sia Exchange che Sway saranno abilitati per gli utenti che hai identificato.
 
-L'abilitazione e la disabilitazione dei team come licenza per il carico di lavoro tramite PowerShell viene eseguita come qualsiasi altro carico di lavoro. Il nome del piano di servizio è TEAMS1 per Microsoft teams. Per GCC il nome del piano di servizio è TEAMS_GOV. Per GCC High il nome del piano di servizio è TEAMS_GCCHIGH. Per DoD il nome del piano di servizio è TEAMS_DOD (vedere [disabilitare l'accesso ai servizi con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/disable-access-to-services-with-office-365-powershell) per altre informazioni).
-
-**Esempio:** Di seguito è riportato un semplice esempio di come disabilitare i team per tutti gli utenti in un determinato tipo di licenza. Prima di tutto è necessario eseguire questa operazione, quindi abilitarla individualmente per gli utenti che devono avere accesso per scopi di pilotaggio.
-
-Per visualizzare i tipi di abbonamento presenti all'interno dell'organizzazione, usare il comando seguente:
+Eseguire il comando seguente per visualizzare tutti i piani di licenze disponibili nell'organizzazione. Per altre informazioni, vedere [visualizzare licenze e servizi con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell).
 
       Get-MsolAccountSku
 
-Immettere il nome del piano che include il nome dell'organizzazione e il piano per l'Istituto di istruzione (ad esempio ContosoSchool: ENTERPRISEPACK_STUDENT), quindi eseguire i comandi seguenti:
+Eseguire i comandi seguenti, dove \<CompanyName: License> è il nome dell'organizzazione e l'identificatore per il piano di licenza recuperato nel passaggio precedente. Ad esempio, ContosoSchool: ENTERPRISEPACK_STUDENT.
 
-      $acctSKU="<plan name>
+      $acctSKU="<CompanyName:License>
       $x = New-MsolLicenseOptions -AccountSkuId $acctSKU -DisabledPlans "TEAMS1"
-Per disabilitare team per tutti gli utenti con una licenza attiva per il piano denominato, eseguire il comando seguente:
+
+Eseguire il comando seguente per disabilitare team per tutti gli utenti che hanno una licenza attiva per il piano di licenza.
 
       Get-MsolUser | Where-Object {$_.licenses[0].AccountSku.SkuPartNumber -eq  ($acctSKU).Substring($acctSKU.IndexOf(":")+1,  $acctSKU.Length-$acctSKU.IndexOf(":")-1) -and $_.IsLicensed -eq $True} |  Set-MsolUserLicense -LicenseOptions $x
 
-| | | |
-|---------|---------|---------|
-|![Icona che rappresenta un punto decisionale](media/Manage_user_access_to_Microsoft_Teams_image5.png)     |Punto decisionale         |<ul><li>Qual è il piano dell'organizzazione per i team onboard in tutta l'organizzazione?  (Pilot o Open)</li></ul>         |
-|![Icona che rappresenta i passaggi successivi](media/Manage_user_access_to_Microsoft_Teams_image6.png)     |Passaggi successivi         |<ul><li>Se si esegue l'onboarding tramite un pilota chiuso, decidere se si vuole farlo tramite licenze o comunicazioni mirate.</li><li>A seconda della decisione, eseguire la procedura per assicurarsi che solo gli utenti pilota autorizzati ad accedere ai team (se necessario).</li><li>Documentare le linee guida per cui gli utenti (o meno) avranno accesso a teams.</li></ul>         |
+## <a name="manage-teams-at-the-organization-level"></a>Gestire team a livello di organizzazione
 
-## <a name="manage-teams-at-the-office-365-organization-level"></a>Gestire Teams a livello di organizzazione di Office 365
 [!INCLUDE [global-switch-expiry-note](includes/global-switch-expiry-note.md)]
 
+## <a name="related-topics"></a>Argomenti correlati
+
+- [Licenze per i componenti aggiuntivi Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+- [Assegnare licenze per il componente aggiuntivo Teams](teams-add-on-licensing/assign-teams-add-on-licenses.md)
+- [Visualizzare licenze e servizi con PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell)
+- [Nomi dei prodotti e identificatori dei piani di servizio per le licenze](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
+- [Riferimento SKU per l'istruzione](sku-reference-edu.md)

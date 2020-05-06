@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Microsoft sta ritirando il servizio di messaggistica unificata di Exchange Online (ExchUMO) entro il 28 febbraio 2020. In questo articolo vengono riepilogati i clienti coinvolti che devono conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: ab0040887b41fc62786f21c889f7dd63aae011b4
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: a28d8e1d9217773ec28c8f2afdf00cb1e16ae53c
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780775"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042833"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata di Exchange Online
 
@@ -47,7 +47,7 @@ Per ulteriori informazioni, vedere l'utente e l'impatto sull'esperienza di ammin
 
 Microsoft ha individuato diverse distribuzioni dei clienti che utilizzano funzionalità di ExchUMO e aiuteranno i clienti a eseguire la migrazione in base al piano seguente. 
 
-|Gruppo clienti |Sequenza temporale  |Dettagli  |
+|Gruppo clienti |Tempistica  |Dettagli  |
 |---------|---------|---------|
 |Clienti pronti per la migrazione<br><br>Funzionalità di cui eseguire la migrazione:<br><ul><li>Segreteria telefonica</ul>   |   Marzo-maggio 2019  |Esempi:<ul><li>    Clienti con semplicità di distribuzione e utilizzo della segreteria telefonica<li>Clienti con tutti i requisiti stabiliti per Microsoft per eseguire la migrazione<ul>|
 |Clienti con prerequisiti<br><br>Funzionalità di cui eseguire la migrazione:<br><ul><li>Segreteria telefonica<li>Operatore automatico<li>Coda di chiamata</ul> |  Maggio — dicembre 2019 |Esempi: <br><ul><li>La configurazione ibrida non è completa<li>I numeri PSTN ibridi non sono configurati</ul>|
@@ -135,6 +135,7 @@ Gli amministratori dell'organizzazione di Office 365 sono tenuti a ricreare gli 
 | VM | Funzionalità del servizio | eDiscovery e blocco  | Per la sicurezza e la conformità  | Y | Y    |
 | VM | Funzionalità del servizio | Supporto delle regole di Exchange | Per la sicurezza e la conformità  | Y | Y    |
 | VM | Funzionalità utente | Accesso esterno PSTN  | Accesso sottoscrittore  | N | Y    |
+| VM | Funzionalità utente | Delegato  | email di chiamata senza risposta  | N | Y    |
 | VM | Funzionalità utente | PSTN Outlook Voice Access   | Accesso sottoscrittore  | N | Y    |
 | VM | Funzionalità utente | Accesso esterno tramite un endpoint autenticato | Chiamata del servizio segreteria telefonica per l'ascolto dei messaggi vocali e la modifica delle impostazioni della segreteria telefonica| Y | Y    |
 | VM | Funzionalità utente | Impostazione utente per disabilitare la segreteria telefonica   |  | Y | Y    |
@@ -222,7 +223,7 @@ Di seguito è riportata una panoramica dell'esperienza di migrazione della segre
 |Ricezione di macchine virtuali in Outlook, app di questo| Nessuna modifica<br>Gli utenti continuano a ricevere i messaggi vocali in tutti gli endpoint supportati. |
 |Trascrizione | Avanzato<br>La trascrizione di CVM ha un tasso di precisione molto più elevato e lingue supportate rispetto a ExchUMO. |
 |Impostazione utente | Nuova esperienza<br>Gli utenti sono in grado di modificare le proprie preferenze da un portale di impostazioni utente (USP). Gli utenti possono accedere al proprio USP da un collegamento ipertestuale nella posta elettronica della segreteria telefonica oppure il pulsante Impostazioni utente nel proprio client di questo. https://aka.ms/vmsettings.   
- |Funzionalità| Per informazioni dettagliate, vedere il confronto tra set di caratteristiche. |
+ |Caratteristiche| Per informazioni dettagliate, vedere il confronto tra set di caratteristiche. |
 |Regole di Outlook per i messaggi VM | Nessuna modifica<br>Le regole create in precedenza si applicheranno ai messaggi di CVM dopo la migrazione.
  |
 

@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5f8735cc328f06fd612fb86e292bc4291b99e21f
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 68d8ff88e34fac291560b414c18055a12d838a91
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904531"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042793"
 ---
 <a name="manage-the-microsoft-teams-commercial-cloud-trial-offer"></a>Gestire l'offerta Microsoft Teams Commercial Cloud Trial
 =======================================================
@@ -139,7 +139,7 @@ Per aggiornare gli utenti dalla licenza di valutazione, eseguire queste operazio
 
 3. Assegnare la licenza acquistata.
 
-Per altre informazioni, vedere [Licenze di Office 365 per Microsoft Teams](Office-365-licensing.md).
+Per altre informazioni, vedere [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
 
 > [!NOTE]
 > Se allo scadere di una versione di valutazione non viene immediatamente eseguito l'aggiornamento a un abbonamento che include Teams, i dati dell'utente non vengono rimossi. L'utente esiste ancora in Azure Active Directory e tutti i dati all'interno di Teams vengono conservati. Una volta assegnata una nuova licenza all'utente per abilitare nuovamente le funzionalità di Teams, tutto il contenuto sarà ancora disponibile. 

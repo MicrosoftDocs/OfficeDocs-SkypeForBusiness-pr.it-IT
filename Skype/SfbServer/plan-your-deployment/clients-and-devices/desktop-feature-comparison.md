@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 16b14d59-7737-4f9d-aa4d-83765a18ea07
 description: 'Riepilogo: gli amministratori di Skype for Business Server 2015 o Skype for business online possono utilizzare queste tabelle per comprendere quali funzionalità sono supportate nei client.'
-ms.openlocfilehash: c07955758f86e31eb947a99ce8ba0e8dc7a44b30
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 2da6ed53ea70e6a3065b283456ccf028fd04ca6f
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43777801"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44041953"
 ---
 # <a name="desktop-client-feature-comparison-for-skype-for-business-server-2015"></a>Confronto delle funzionalità dei client desktop per Skype for Business Server 2015
 
@@ -188,7 +188,7 @@ In questa tabella vengono illustrate le funzionalità relative al supporto dei s
 |Prelievo chiamata di gruppo  |&#x2714;||&#x2714; &#x2776; ||||&#x2714;|||
 |Routing basato su posizione  |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;||&#x2714;|
 |Gestisci Response Group/gruppo di chiamate del team |&#x2714;||&#x2714;|||||||
-
+|Chiamata dell'operatore automatico di risposta |&#x2714;||&#x2714;|||||||
  &#x2776; questa funzionalità non è disponibile in Skype for business online.
   
 ## <a name="external-users-support"></a>Supporto per gli utenti esterni

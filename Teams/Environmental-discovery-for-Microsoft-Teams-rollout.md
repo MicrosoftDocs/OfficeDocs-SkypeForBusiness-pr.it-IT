@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: abe848e21ed245230edc1ebfbfd038af9eec9175
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: c067abec99c032b8343de0a5c5fc0a1f3869efe5
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139315"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042223"
 ---
 <a name="environmental-discovery-for-a-microsoft-teams-rollout"></a>Individuazione ambientale per l'implementazione di Microsoft Teams
 ===================================================
@@ -36,7 +36,7 @@ Si esegue una scoperta dettagliata dell'ambiente per comprendere meglio lo stato
 
 Il questionario di esempio seguente illustra una serie di domande per verificare che l'organizzazione sia pronta per l'implementazione corretta di servizi di audioconferenza e telefono con funzionalità per i piani di chiamata in teams.
 
-Tutte le questioni relative all'infrastruttura di collaborazione esistente e al tenant di Office 365, alla rete, agli endpoint, alle operazioni e all'adozione e alla disponibilità sono incluse nell'ambito del questionario sull'individuazione ambientale.
+Tutte le questioni relative all'infrastruttura di collaborazione esistente e all'organizzazione di Office 365, alla rete, agli endpoint, alle operazioni e all'adozione e alla disponibilità sono incluse nell'ambito del questionario sull'individuazione ambientale.
 
 Il questionario è suddiviso in più sezioni per confermare la disponibilità dell'organizzazione per la distribuzione di team in più aree principali. Collaborare con il team di progetto per specificare le informazioni richieste con il maggior dettaglio possibile per facilitare le attività di pianificazione.
 
@@ -67,16 +67,16 @@ Acquisire informazioni dettagliate sui principali stakeholder del progetto di im
 > | Video Team Lead | | | |
 > | Lead della business unit | | | |
 
-<a name="office-365-tenant-details"></a>Dettagli del tenant di Office 365
+<a name="office-365-organization-details"></a>Dettagli dell'organizzazione di Office 365
 ---
 
-È consigliabile disporre di un tenant di Office 365 attivo durante l'utilizzo di questo questionario. Se non è ancora stato attivato o configurato un tenant di Office 365, vedere [pianificare la configurazione di office 365 per le aziende](https://support.office.com/article/plan-your-setup-of-office-365-for-business-eb926624-018b-4486-bf11-5fba6ee4d645).
+Ti consigliamo vivamente di avere un'organizzazione di Office 365 attiva durante l'utilizzo di questo questionario. Se non è ancora stata attivata o configurata un'organizzazione di Office 365, vedere [pianificare la configurazione di office 365 per le aziende](https://support.office.com/article/plan-your-setup-of-office-365-for-business-eb926624-018b-4486-bf11-5fba6ee4d645).
 
-Usare la tabella seguente per acquisire informazioni sul tenant di Office 365.
+Usare la tabella seguente per acquisire informazioni sull'organizzazione di Office 365.
 
 > | Domanda | Answer | Commenti |
 > |---|---|---|
-> | Nota il tenant di Office 365 di produzione <br>nome e ID nella colonna risposta <br/>Se si ha più di un tenant <br>associato all'organizzazione <br>Nota tutti gli ID. | Nome tenant: <br/>ID tenant:| |
+> | Nota l'organizzazione di Office 365 di produzione <br>nome e ID nella colonna risposta <br/>Se si ha più di un tenant <br>associato all'organizzazione <br>Nota tutti gli ID. | Nome tenant: <br/>ID tenant:| |
 > | In quali aree geografiche sono distribuiti i tenant?| | |
 > | Questi tenant sono Office 365 multitenant o <br>Dedicato? | <input type="checkbox">Multitenant<br/> <input type="checkbox">Dedicato | |
 > | Quali prodotti Microsoft online sono in uso oggi? <br/>Nota il numero di utenti abilitati per ogni <br>servizio nella colonna comments. | <input type="checkbox">Microsoft Teams <br/> <input type="checkbox">Skype for business <br>&nbsp; &nbsp; &nbsp;Online <br/> <input type="checkbox">Exchange Online <br/> <input type="checkbox">SharePoint Online <br/> <input type="checkbox">OneDrive for business <br/> <input type="checkbox">Yammer <br/> <input type="checkbox">Altri| |
@@ -115,7 +115,7 @@ Se applicabile, acquisire i dettagli della distribuzione dei team usando la tabe
 > | Domanda | Answer | Commenti |
 > |---|---|---|
 > | Quali tipi di utenti sono abilitati per i team? | <input type="checkbox">Tutti gli utenti dell'organizzazione <br/> <input type="checkbox">Utenti/gruppi utente specifici <br>&nbsp;&nbsp; (Specificare nella colonna &nbsp;comments) ||
-> | Quali caratteristiche e modalità di teams sono in uso? | <input type="checkbox">Conversazioni basate su canale <br/> <input type="checkbox">Chat privata <br/> <input type="checkbox">Accesso Guest <br/> <input type="checkbox">Riunioni di canale <br/> <input type="checkbox">Riunioni private <br/> <input type="checkbox">Chiamate private <br/> <input type="checkbox">Meetup del canale ad-hoc <br/> <input type="checkbox">Video nelle riunioni <br/> <input type="checkbox">Condivisione dello schermo nelle riunioni <br/> <input type="checkbox">Audioconferenza <br/><input type="checkbox">Applicazioni (app)<br> &nbsp;&nbsp; Schede &nbsp; <input type="checkbox"><br>&nbsp;&nbsp; Bot &nbsp; <input type="checkbox"> <br>&nbsp;&nbsp; Connettori &nbsp; <input type="checkbox"><br><input type="checkbox">Integrazione di archiviazione cloud personalizzata <br>&nbsp;&nbsp; (Box, Dropbox, ShareFile, Google &nbsp; Drive) <br/> <input type="checkbox">Integrazione tramite posta elettronica del canale <br/> <input type="checkbox">Altro (specificare nella colonna Comments). | |
+> | Quali caratteristiche e modalità di teams sono in uso? | <input type="checkbox">Conversazioni basate su canale <br/> <input type="checkbox">Chat privata <br/> <input type="checkbox">Accesso Guest <br/> <input type="checkbox">Riunioni di canale <br/> <input type="checkbox">Riunioni private <br/> <input type="checkbox">Chiamate private <br/> <input type="checkbox">Meetup del canale ad-hoc <br/> <input type="checkbox">Video nelle riunioni <br/> <input type="checkbox">Condivisione dello schermo nelle riunioni <br/> <input type="checkbox">Audioconferenza <br/><input type="checkbox">Applicazioni (app)<br> &nbsp;&nbsp; Schede &nbsp; <input type="checkbox"><br>&nbsp;&nbsp; Bot &nbsp; <input type="checkbox"> <br>&nbsp;&nbsp; Connettori &nbsp; <input type="checkbox"><br><input type="checkbox">Integrazione di archiviazione cloud personalizzata <br>&nbsp;&nbsp; Dropbox, box, ShareFile, Google Drive, Egnyte (presto &nbsp; disponibile) <br/> <input type="checkbox">Integrazione tramite posta elettronica del canale <br/> <input type="checkbox">Altro (specificare nella colonna Comments). | |
 > | Quali applicazioni sono state distribuite in teams? | | |
 > | Sono state bloccate in modo specifico eventuali funzionalità Teams? <br/>In caso affermativo, prendere nota dei dettagli nella colonna commenti. | <input type="checkbox">Sì <br/> <input type="checkbox">Non ||
 > | Quali client di team sono in uso? | <input type="checkbox">Web <br/> <input type="checkbox">Windows <br/> <input type="checkbox">Mac <br/> <input type="checkbox">Linux <br/>  <input type="checkbox">iOS <br/> <input type="checkbox">Android <br/> <input type="checkbox">Windows Mobile | |

@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8db4565b4a9b1fd5e984640b20d3eaacbed24a37
-ms.sourcegitcommit: 4d376449a75928282373598647f2b82127909c4f
+ms.openlocfilehash: 39e1177f4e400b0be085bb2c822bc645fc77cf7c
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978488"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042393"
 ---
 <a name="manage-the-office-365-e1-trial"></a>Gestire la versione di valutazione di Office 365 E1
 ==============================
@@ -59,7 +59,7 @@ Dopo aver usato il codice promozionale per la versione di valutazione E1, non è
 
 ## <a name="manage-the-e1-trial"></a>Gestire la versione di valutazione E1
 
-Dopo aver attivato la versione di valutazione di Office 365 E1, attivare la licenza per gli utenti che ne abbia bisogno. Per informazioni sulla procedura consultare [Gestire l'accesso degli utenti a Teams](user-access.md#manage-teams-through-the-microsoft-365-admin-center).
+Dopo aver attivato la versione di valutazione di Office 365 E1, attivare la licenza per gli utenti che ne abbia bisogno. Per informazioni sulla procedura consultare [Gestire l'accesso degli utenti a Teams](user-access.md).
 
 
 Dopo aver attivato la versione di valutazione E1, gli utenti verranno gestiti come quelli che hanno una licenza a pagamento. Per altre informazioni, vedere [Gestire le impostazioni di Teams per l'organizzazione](enable-features-office-365.md).
@@ -76,7 +76,7 @@ Per aggiornare gli utenti dalla versione di valutazione E1 a un abbonamento a pa
 
 3. Assegnare la licenza acquistata.
 
-Per altre informazioni, vedere [Licenze di Office 365 per Microsoft Teams](Office-365-licensing.md).
+Per altre informazioni, vedere [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
 
 > [!NOTE]
 > Se allo scadere della versione di valutazione E1 non viene immediatamente eseguito l'aggiornamento a un abbonamento che include Teams, i dati dell'utente non vengono rimossi. L'utente esiste ancora in Azure Active Directory e tutti i dati all'interno di Teams vengono conservati. Una volta assegnata una nuova licenza all'utente per abilitare nuovamente le funzionalità di Teams, tutto il contenuto sarà ancora disponibile. 
@@ -90,7 +90,7 @@ Per altre informazioni, vedere [Licenze di Office 365 per Microsoft Teams](Offic
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Gestire l'accesso degli utenti a Teams](user-access.md#manage-teams-through-the-microsoft-365-admin-center)
+[Gestire l'accesso degli utenti a Teams](user-access.md)
 
 [Gestire le impostazioni di Teams per l'organizzazione](enable-features-office-365.md)
 

@@ -15,12 +15,12 @@ description: Usare queste linee guida per implementare Microsoft teams come prim
 ROBOTS: NOINDEX, NOFOLLOW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9db6b2192224e796475c903cf5eeeaa06ecdc8ee
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 2cd8fc92d3f46df8bcfaa07a96b69b84790750aa
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780375"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44041713"
 ---
 # <a name="roll-out-microsoft-teams-first"></a>Distribuire prima Microsoft Teams
 
@@ -43,7 +43,7 @@ Per iniziare a usare la prima distribuzione di teams, è necessario soddisfare a
     Per comprendere gli attributi sincronizzati con la sincronizzazione AAD, leggere [Azure ad Connect Sync: attributi sincronizzati con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized)
 
 3.  Licenze utente appropriate assegnate per i team  
-    Per informazioni sulle licenze di teams, leggere [licenze di Office 365 per Microsoft teams](office-365-licensing.md)
+    Per informazioni sulle licenze di teams, leggere la [Descrizione del servizio Microsoft teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
 
 4.  Rete dell'organizzazione predisposta per i team  
     Per informazioni sulla preparazione della rete, leggere [preparare la rete dell'organizzazione per i team](prepare-network.md).
@@ -54,7 +54,7 @@ Per iniziare a usare la prima distribuzione di teams, è necessario soddisfare a
 > I tenant creati dopo il 1 ° settembre 2019 vengono provisionati in modalità solo teams.
 > 
 > [!IMPORTANT]
-> Se si è distribuito Skype for Business Server e il tenant è stato effettuato il provisioning dopo il 2019 settembre, contattare il supporto Premier per abilitare le funzionalità di coesistenza per i team. Verificare che il criterio "organizzazione Wide Upgrade policy" sia impostato su "modalità Isola" <span class="underline">prima</span> di assegnare le licenze per i team a un utente.
+> Se si è distribuito Skype for Business Server e il tenant è stato effettuato il provisioning dopo il 2019 settembre, contattare il supporto tecnico per abilitare le funzionalità di coesistenza per i team. Verificare che il criterio "organizzazione Wide Upgrade policy" sia impostato su "modalità Isola" <span class="underline">prima</span> di assegnare le licenze per i team a un utente.
 
 ## <a name="migration-starting-points"></a>Punti di partenza della migrazione
 
@@ -233,7 +233,7 @@ Altre informazioni: <a href="https://docs.microsoft.com/microsoftteams/admin-set
 
 1.  Soddisfare i requisiti preliminari descritti nella sezione inizio qui sopra.
 
-2.  Cambiare il tenant in modalità isole (per i tenant con provisioning dopo 9/1/2019, contattare il supporto Premier per apportare questa modifica)  
+2.  Cambiare il tenant in modalità isole (per i tenant con provisioning dopo 9/1/2019, contattare il supporto tecnico per apportare questa modifica)  
     [Impostazione delle impostazioni di coesistenza e aggiornamento](setting-your-coexistence-and-upgrade-settings.md)
 
 3.  Configurare il tenant in conformità con le politiche aziendali/aziendali  

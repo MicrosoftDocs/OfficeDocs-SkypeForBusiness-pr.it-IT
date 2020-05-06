@@ -21,12 +21,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Guida dettagliata in dettaglio come configurare il sistema telefonico (cloud PBX) per l'organizzazione in Office 365.
-ms.openlocfilehash: c2756b750c00dd370d5ef33370ae359d0351e07e
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 01e5016761481a49af5a2946dd151acb7c3930ea
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905568"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042433"
 ---
 # <a name="set-up-phone-system-in-your-organization"></a>Configurare il sistema telefonico nell'organizzazione
 
@@ -40,7 +40,7 @@ The following is a step-by-step guide for setting up Phone System in Office 365.
 
 ## <a name="step-2-buy-and-assign-phone-system-and-calling-plan-licenses"></a>Passaggio 2: acquistare e assegnare licenze relative a Sistema telefonico e Piani di chiamata
 
-Per assegnare un sistema telefonico e una licenza per un piano di chiamata a un singolo utente, la procedura è uguale all'assegnazione di una licenza di Office 365.  È anche possibile assegnare licenze a più utenti in blocco. Per altre informazioni, vedere [assegnare licenze di Microsoft teams](assign-teams-licenses.md).
+Per assegnare un sistema telefonico e una licenza per un piano di chiamata a un singolo utente, la procedura è uguale all'assegnazione di una licenza di Office 365.  È anche possibile assegnare licenze a più utenti in blocco. Per altre informazioni, vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md).
 
 Se i piani per le chiamate non sono disponibili per il proprio paese o area geografica, è consigliabile usare il routing diretto per connettere l'infrastruttura di telefonia locale al sistema telefonico.  Per altre informazioni, Vedi [routing diretto del sistema telefonico](direct-routing-landing-page.md).
 

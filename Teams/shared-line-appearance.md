@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.users.voice.calldelegation.tooltip
 - seo-marvel-apr2020
 description: Scopri come inviare agli utenti un messaggio di posta elettronica con le informazioni relative ai servizi di audioconferenza in Microsoft teams.
-ms.openlocfilehash: 52f4257d5e5603c0f7ed812d5ab677a18ed47fb9
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 80c279e4d80478c2392f8c4faffb46e822c016e4
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905548"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042583"
 ---
 # <a name="shared-line-appearance-in-microsoft-teams"></a>Aspetto della linea condivisa in Microsoft Teams
 
@@ -40,7 +40,7 @@ L'aspetto della linea condivisa fa parte della caratteristica di delega che cons
 
 Un utente deve avere un sistema telefonico con connettività PSTN (una licenza per un piano di chiamata o un routing diretto OnlineVoiceRoutingPolicy) per essere un delegato o configurare la delega e consentire ad altri di effettuare o ricevere chiamate per proprio conto.
 
-Sia i responsabili che i delegati devono avere un sistema telefonico con connettività PSTN (una licenza per un piano di chiamata o un routing diretto OnlineVoiceRoutingPolicy). L'esperienza della linea condivisa fa parte della delega ed è inclusa nel sistema telefonico. Per altre informazioni sul modello di licenza, vedere [licenze di Office 365 per Microsoft teams](office-365-licensing.md).
+Sia i responsabili che i delegati devono avere un sistema telefonico con connettività PSTN (una licenza per un piano di chiamata o un routing diretto OnlineVoiceRoutingPolicy). L'esperienza della linea condivisa fa parte della delega ed è inclusa nel sistema telefonico. Per altre informazioni sul modello di licenza, vedere [Descrizione del servizio Microsoft teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
 
 ## <a name="configuring-delegation-and-shared-line-appearance"></a>Configurazione della delega e dell'aspetto delle linee condivise
 

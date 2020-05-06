@@ -24,12 +24,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate.
-ms.openlocfilehash: 874b074047e191422d552236dea1d0f1e746780d
-ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
+ms.openlocfilehash: 95c4a777576b2cf574ba76d7f1b19de69f64dc88
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43918840"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44047371"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -482,6 +482,8 @@ Creare report dettagliati in Call Quality dashboard e filtrare l'ID riunione per
  
 La telemetria non chiamerà necessariamente il problema, ma può aiutarti a capire meglio dove cercare e informare le tue decisioni. È la rete, il dispositivo, il driver o gli aggiornamenti del firmware, l'uso o l'utente?
 
+### <a name="why-do-i-see-upto-02-difference-in-call-and-user-count-values-on-measures-and-how-to-get-most-accurate-volumes"></a>Perché viene visualizzata la differenza fino al 0,2% dei valori delle chiamate e dei conteggi degli utenti sulle misure e su come ottenere volumi più accurati? 
+Per calcolare le misure conteggio chiamate e conteggio utenti, viene eseguita un'operazione conta.se distinta rispetto alla chiamata o agli identificatori utente nel set di dati. Nei set di dati di grandi dimensioni è disponibile un inherient di errore fino a 0,2% con il distinto conta.se opeartion. Per il volume più accurato, devi basarti sulle misure di conteggio flusso poiché non si basano su questa operazione conta.se distinta. L'applicazione di filtri per ridurre il volume di dati può ridurre l'errore, ma potrebbe non elimnate questa origine di errore in conteggi distinti per l'utente e la chiamata. Fare riferimento a [dimensioni e misure disponibili nel dashboard qualità chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md) per cui sono interessate le misure.
 
 ### <a name="why-does-my-cqd-v2-report-data-look-different-than-the-cqd-v3-report-data"></a>Perché i dati del report Call Quality dashboard V2 hanno un aspetto diverso rispetto ai dati del report di Call Quality dashboard V3? 
 

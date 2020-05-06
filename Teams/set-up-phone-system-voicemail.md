@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: 'Informazioni su come configurare la segreteria telefonica cloud per gli utenti. '
-ms.openlocfilehash: 4f85e8db6f50becb4ae2406e84621c08507e9737
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: eb25d18dc0414edcc3b143487cced1f0e13b2b60
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779732"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042933"
 ---
 # <a name="set-up-cloud-voicemail"></a>Configurare Cloud Voicemail
 
@@ -41,7 +41,7 @@ Per gli utenti di Skype for business online e per i piani di chiamata, cloud Voi
   
 1. Se la funzione Sistema telefonico non è inclusa nel tuo piano, può essere necessario acquistare licenze per il componente aggiuntivo **Sistema telefonico**. Inoltre è necessario acquistare una licenza Exchange Online. Vedere [licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
     
-2. [Assegnare o rimuovere licenze per Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc), [assegnare le licenze di Microsoft teams](assign-teams-licenses.md)e le licenze di Exchange Online agli utenti della propria azienda. Terminate queste operazioni, potranno ricevere i messaggi vocali.
+2. [Assegnare o rimuovere licenze per Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc), assegnare le licenze per i [componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md)e le licenze di Exchange Online alle persone della propria azienda. Terminate queste operazioni, potranno ricevere i messaggi vocali.
     
 3. Il supporto per la trascrizione segreteria telefonica è stato aggiunto a partire da marzo 2017 ed è attivato per impostazione predefinita per tutte le organizzazioni e gli utenti. Puoi disattivare la trascrizione per la tua organizzazione usando Windows PowerShell e attenendoti alle seguenti istruzioni.
 
@@ -51,7 +51,7 @@ Le informazioni seguenti includono la configurazione della segreteria telefonica
   
 1. Se la funzione Sistema telefonico non è inclusa nel tuo piano, può essere necessario acquistare licenze per il componente aggiuntivo **Sistema telefonico**. Inoltre è necessario acquistare una licenza Exchange Online. Vedere [licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
     
-2. [Assegnare o rimuovere licenze per Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc), [assegnare le licenze di Microsoft teams](assign-teams-licenses.md)e le licenze di Exchange Online agli utenti della propria azienda.
+2. [Assegnare o rimuovere licenze per Office 365 for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc), assegnare le licenze per i [componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md)e le licenze di Exchange Online alle persone della propria azienda.
     
 3. Seguire le istruzioni corrispondenti alla soluzione di chiamate PSTN locale distribuita per gli utenti. Per Cloud Connector Edition, seguire le istruzioni nella sezione **Enable Users for Phone System Voice and voicemail Services** della [Guida alla configurazione di Skype for Business Cloud Connector Edition](https://technet.microsoft.com/library/mt605228.aspx). Per le chiamate PSTN con Skype for Business Server, seguire [consentire agli utenti di VoIP aziendale in locale](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/enable-the-users-for-enterprise-voice-on-premises). Per il routing diretto di teams, seguire la sezione **configurare il numero di telefono e abilitare l'organizzazione vocale e la segreteria telefonica** di [Configura routing diretto](https://docs.microsoft.com/microsoftteams/direct-routing-configure#configure-the-phone-number-and-enable-enterprise-voice-and-voicemail).
 
@@ -136,7 +136,7 @@ Abbiamo informazioni e articoli di formazione per aiutare gli utenti a usare con
 - [Formazione per Skype for Business 2016](https://support.office.com/article/eb2081bc-fd0a-4eda-94da-5a39f369ee74)
 
 ## <a name="related-topics"></a>Argomenti correlati
-[Configurare Skype for Business Online](/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
+[Configurare Skype for Business online](/skypeforbusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)
 
 [Ecco cosa offre il Sistema telefonico in Office 365](here-s-what-you-get-with-phone-system.md)
 

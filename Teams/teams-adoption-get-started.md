@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 853e897a31b229962acec8f85d8a0a3e966c507b
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 00e0cd424de4917cf4a6f84a36b99dbfc3e2f951
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905858"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44041873"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-teams"></a>Introduzione alla guida dell'adozione di Microsoft Teams
 
@@ -36,7 +36,7 @@ Guidando l'adozione di Microsoft teams, puoi offrire un'esperienza utente eccell
 
 Prima di iniziare, verificare che:
 
-- [Teams è installato](get-clients.md) e le [licenze vengono assegnate](office-365-licensing.md) nell'ambiente. Le licenze minime devono essere assegnate al team di base e agli early adopters che parteciperanno alla fase iniziale del progetto.
+- [Teams è installato](get-clients.md) e le [licenze vengono assegnate](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description) nell'ambiente. Le licenze minime devono essere assegnate al team di base e agli early adopters che parteciperanno alla fase iniziale del progetto.
 
 - Sono state scaricate le applicazioni desktop e per dispositivi mobili. 
 

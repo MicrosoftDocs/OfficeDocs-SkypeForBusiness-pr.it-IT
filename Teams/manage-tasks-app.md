@@ -15,12 +15,12 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d0ae16216c5975407b3ec1c60a67231edd2ee8f1
-ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
+ms.openlocfilehash: cc6238e2cf9a3912cfa8cec765f63e6a553f4db1
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43940969"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042493"
 ---
 # <a name="manage-the-tasks-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app attività per l'organizzazione in Microsoft Teams
 
@@ -28,7 +28,7 @@ ms.locfileid: "43940969"
 
 ## <a name="overview-of-tasks"></a>Panoramica delle attività
 
-L'app attività offre un'esperienza di gestione delle attività coesa a Microsoft teams, che integra le attività personali e le attività di Team Powered by planner in un'unica posizione. Gli utenti possono accedere alle attività come un'app sul lato sinistro di teams e come tabulazione in un canale all'interno di singoli team. Gli elenchi **personali** e gli **elenchi di Team** nelle attività consentono agli utenti di visualizzare e gestire tutte le attività personali e di team e di assegnare priorità al lavoro. Le attività sono disponibili in team desktop, Web e client mobili. 
+L'app attività offre un'esperienza di gestione delle attività coesa a Microsoft teams, che integra le attività personali Powered by [Microsoft](https://todo.microsoft.com/tasks/) e le attività del team alimentate da Planner in un'unica posizione. Gli utenti possono accedere alle attività come un'app sul lato sinistro di teams e come tabulazione in un canale all'interno di singoli team. Gli elenchi **personali** e gli **elenchi di Team** nelle attività consentono agli utenti di visualizzare e gestire tutte le attività personali e di team e di assegnare priorità al lavoro. Le attività sono disponibili in team desktop, Web e client mobili. 
 
 > [!NOTE]
 > Quando eseguiamo l'esperienza di attività nei client desktop di teams, il nome dell'app verrà inizialmente visualizzato come **Planner** per gli utenti. Il nome verrà quindi temporaneamente modificato in **attività da Planner e da fare**e in seguito sarà rinominato in **attività**. Nei client di teams mobile gli utenti vedranno sempre il nome dell'app come **attività**. Potrebbe essere necessario un breve ritardo nella disponibilità dell'esperienza per dispositivi mobili dopo l'esperienza Desktop disponibile.

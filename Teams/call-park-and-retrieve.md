@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.callparkpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni su come usare Call Park e retrieve per effettuare una chiamata in attesa nel servizio Teams nel cloud.
-ms.openlocfilehash: 2420652fc908a943e798ac1acade53eca4c5b55f
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: e36690c4059ceae67c8615b1e910051439ca8e78
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905038"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042963"
 ---
 # <a name="call-park-and-retrieve-in-microsoft-teams"></a>Chiamare il parcheggio e il recupero in Microsoft Teams
 
@@ -44,7 +44,7 @@ Alcuni degli scenari comuni per l'uso di Call Park sono i seguenti:
 
 ## <a name="license-required"></a>Licenza richiesta
 
-Per parcheggiare e recuperare le chiamate, un utente deve essere un utente di VoIP aziendale e un amministratore deve concedere all'utente un criterio per il parcheggio delle chiamate. Per altre informazioni sul modello di licenza, vedere [licenze di Office 365 per Microsoft teams](office-365-licensing.md).
+Per parcheggiare e recuperare le chiamate, un utente deve essere un utente di VoIP aziendale e un amministratore deve concedere all'utente un criterio per il parcheggio delle chiamate. Per altre informazioni sul modello di licenza, vedere [Descrizione del servizio Microsoft teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
 
 ## <a name="call-park-and-retrieve-feature-availability"></a>Chiamare il parcheggio e recuperare la disponibilità delle caratteristiche
 

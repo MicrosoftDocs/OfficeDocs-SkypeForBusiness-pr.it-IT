@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ca163d2a705b4aaebc77c03dbf4c92edf9c5d601
-ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.openlocfilehash: 4d9e288037b82b3d5b0cccab133debdfa2d7d66b
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43749573"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042213"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -124,12 +124,12 @@ Eseguire la procedura seguente per risolvere i problemi relativi al componente a
 
 Se non si riesce a trovare il componente aggiuntivo Riunione di Teams per Outlook per l'installazione, provare a eseguire questa procedura di risoluzione dei problemi.
 
+- Gli utenti di Windows 7 devono installare l' [aggiornamento per Universal C Runtime in Windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows) per il componente aggiuntivo riunione teams per il lavoro.
 - Verificare che l'utente disponga di un criterio di aggiornamento di teams che consente la pianificazione delle riunioni in teams. Per altre informazioni, vedere [eseguire l'aggiornamento da Skype for business a teams](https://docs.microsoft.com/microsoftteams/upgrade-to-teams-on-prem-overview#meetings) .
 - Verificare che l'utente disponga di un criterio di riunione teams che consenta il componente aggiuntivo per Outlook. Per altre informazioni, vedere [gestire i criteri di riunione in teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams#allow-the-outlook-add-in) .
 - Verificare che l'utente abbia installato il client desktop teams. Il componente aggiuntivo riunione non verrà installato quando si usa solo il client Web teams.
-- Verificare che l'utente disponga delle autorizzazioni per l'esecuzione di regsvr32. exe.
+- Verificare che l'utente disponga delle autorizzazioni per l'esecuzione di regsvr32. exe.  Per altre informazionihttps://support.microsoft.com/help/249873/how-to-use-the-regsvr32-tool-and-troubleshoot-regsvr32-error-messages
 - Verificare che siano stati applicati tutti gli aggiornamenti disponibili per il client desktop Outlook.
-- Assicurarsi che il nome dell'account utente connesso non contenga spazi. (Si tratta di un problema noto che verrà risolto in un prossimo aggiornamento.)
 - Eseguire la procedura seguente:
   - Riavviare il client desktop di Teams.
   - Disconnettersi e quindi eseguire di nuovo l'accesso al client desktop di Teams.
