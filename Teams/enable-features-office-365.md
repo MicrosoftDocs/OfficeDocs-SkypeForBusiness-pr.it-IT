@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e2ec2956b3fc448f4408cefd7e7bf323898cc7d2
-ms.sourcegitcommit: 3ef5c913318fdeeaa8c55caab07c2f8224eae2b0
+ms.openlocfilehash: d39ec3f7bb6a5454c25acf859e335993ed275a71
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43898101"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042503"
 ---
 # <a name="manage-microsoft-teams-settings-for-your-organization"></a>Gestire le impostazioni di Microsoft Teams per l'organizzazione
 
@@ -75,7 +75,7 @@ Attivare questa funzionalità per consentire agli utenti di inviare messaggi di 
 
 Qui è possibile attivare o disattivare la condivisione di file e le opzioni di archiviazione di file nel cloud.
 
-Gli utenti possono caricare e condividere file dai servizi di archiviazione cloud in canali e chat di Teams. Le opzioni di archiviazione cloud di Teams attualmente includono Dropbox, Box, ShareFile, Google Drive e [Egnyte](https://www.egnyte.com). Attivare l'opzione per i provider di archiviazione cloud che l'organizzazione vuole usare.
+Gli utenti possono caricare e condividere file dai servizi di archiviazione cloud in canali e chat di Teams. Le opzioni di archiviazione cloud di Teams attualmente includono Dropbox, Box, ShareFile, Google Drive e Egnyte (presto disponibile). Attivare l'opzione per i provider di archiviazione cloud che l'organizzazione vuole usare.
 
 #### <a name="organization"></a>Organizzazione
 

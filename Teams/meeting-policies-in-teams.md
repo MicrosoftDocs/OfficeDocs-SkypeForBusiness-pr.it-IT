@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: 3a482ce562c0d0281c1bc289dfc953f416a8f133
-ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
+ms.openlocfilehash: 4a61d2563a63d2dc8d1b55bbf0bbc6c52230d900
+ms.sourcegitcommit: c3f44fccdbd9178d30b52bb0db6f6d31a6dd174b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43940703"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139210"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -106,10 +106,11 @@ Quando si seleziona un criterio esistente nella pagina **Criteri riunione** o si
 - [Consenti il componente aggiuntivo per Outlook](#allow-the-outlook-add-in)
 - [Consenti la pianificazione delle riunioni di canale](#allow-channel-meeting-scheduling)
 - [Consenti la pianificazione di riunioni private](#allow-scheduling-private-meetings)
+- [Consenti l'uso di Riunione immediata nelle riunioni private](#allow-meet-now-in-private-meetings)
 
 ### <a name="allow-meet-now-in-channels"></a>Consenti l'uso di Riunione immediata nei canali
 
-Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione ad hoc in un canale di Teams. Se si attiva, quando un utente pubblica un messaggio in un canale di Teams, può fare clic su **Riunione immediata** sotto la casella di composizione per avviare una riunione ad hoc nel canale.
+Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione ad hoc in un canale di Teams. Se si attiva, quando un utente pubblica un messaggio in un canale di Teams, può fare clic su **Riunione immediata** sotto la casella di composizione per avviare una riunione ad hoc nel canale. Il valore predefinito è True.
 
 ![Screenshot che mostra l'icona Riunione immediata sotto un messaggio](media/meeting-policies-meet-now.png)
 
@@ -123,7 +124,7 @@ Se si disattiva questa impostazione, gli utenti non potranno pianificare riunion
 
 ### <a name="allow-channel-meeting-scheduling"></a>Consenti la pianificazione delle riunioni di canale
 
-Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di Teams.  Se si disattiva, l'opzione **Pianifica una riunione** non sarà disponibile per l'utente quando avvia una riunione in un canale di Teams e l'opzione **Aggiungi canale** sarà disabilitata per gli utenti in Teams.
+Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare una riunione in un canale di Teams.  Se si disattiva, l'opzione **Pianifica una riunione** non sarà disponibile per l'utente quando avvia una riunione in un canale di Teams e l'opzione **Aggiungi canale** sarà disabilitata per gli utenti in Teams. Il valore predefinito è True.
 
 ![Screenshot che mostra l'opzione Pianifica una riunione in Teams](media/meeting-policies-schedule-a-meeting.png)
 
@@ -133,7 +134,11 @@ Questo è un criterio per utente e si applica prima dell'inizio di una riunione.
 
 Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se gli utenti possono pianificare riunioni private in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team.
 
-Si noti che, disattivando **Consenti la pianificazione di riunioni private** e **Consenti la pianificazione delle riunioni di canale**, le opzioni **Aggiungi partecipanti obbligatori** e **Aggiungi canale** vengono disabilitate per gli utenti in Teams.
+Si noti che, disattivando **Consenti la pianificazione di riunioni private** e **Consenti la pianificazione delle riunioni di canale**, le opzioni **Aggiungi partecipanti obbligatori** e **Aggiungi canale** vengono disabilitate per gli utenti in Teams. Il valore predefinito è True.
+
+### <a name="allow-meet-now-in-private-meetings"></a>Consenti l'uso di Riunione immediata nelle riunioni private
+
+Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione privata ad hoc.  Il valore predefinito è True.
 
 <a name="bkaudioandvideo"> </a>
 
@@ -314,7 +319,6 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 - [Consenti alle persone anonime di avviare una riunione](#let-anonymous-people-start-a-meeting)
 - [Ammetti automaticamente le persone](#automatically-admit-people)
 - [Consenti agli utenti che chiamano di ignorare la sala di attesa](#allow-dial-in-users-to-bypass-the-lobby)
-- [Consenti l'uso di Riunione immediata nelle riunioni private](#allow-meet-now-in-private-meetings)
 - [Abilita i sottotitoli in tempo reale ](#enable-live-captions)
 - [Consenti l'uso della chat nelle riunioni ](#allow-chat-in-meetings)
 
@@ -378,9 +382,6 @@ Ecco il comportamento di partecipazione degli utenti che effettuano l'accesso tr
 |   | Tutti gli utenti dell'organizzazione     |Attesa in sala di attesa         |
 |   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate      | Attesa in sala di attesa         |
 
-### <a name="allow-meet-now-in-private-meetings"></a>Consenti l'uso di Riunione immediata nelle riunioni private
-
-Questo è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione privata ad hoc. 
 
 ### <a name="enable-live-captions"></a>Abilita i sottotitoli in tempo reale
 

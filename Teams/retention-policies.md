@@ -17,12 +17,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9487a6a96397be27ebf23bd474fc0b9a5ba1fea0
-ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
+ms.openlocfilehash: be3df465c740aef7069a77cb7a7562fd0ecd8cd9
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43940773"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042443"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
@@ -55,7 +55,7 @@ Con i criteri di conservazione di Teams è possibile:
 
 Se i dati sono soggetti a criteri di conservazione, gli utenti possono continuare a usarli in quanto non vengono spostati, ma conservati nella posizione originale. Se un utente modifica o elimina dati soggetti a criteri, viene salvata una copia in una posizione protetta che verrà conservata per l'intero periodo di applicazione dei criteri.
 
-Il requisito minimo di licenza per i criteri di conservazione è avere Office 365 E3. Per altre informazioni sulle licenze, vedere [Licenze di Office 365 per Teams](Office-365-licensing.md).
+Il requisito minimo di licenza per i criteri di conservazione è avere Office 365 E3. Per ulteriori informazioni sulle licenze, vedere [Descrizione del servizio Microsoft teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
 
 ## <a name="how-teams-retention-policies-work"></a>Come funzionano i criteri di conservazione di Teams
 

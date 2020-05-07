@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 55b43e9fe156a2b3707cb5e99c57239345bf031e
-ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.openlocfilehash: 89b1a8a756cba44435098e5cd446294004029eac
+ms.sourcegitcommit: b5c747e2daad6dd3c1d91f4e61ae6f26db5c77f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43749823"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064481"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
@@ -183,6 +183,10 @@ Con i client di teams per dispositivi mobili, gli utenti vedranno le app di core
 #### <a name="can-users-change-the-order-of-apps-pinned-through-a-policy"></a>Gli utenti possono modificare l'ordine delle app bloccati da un criterio?
 
 Gli utenti possono modificare l'ordine delle app aggiunte nei client desktop e mobili di teams se l'opzione **Consenti il blocco utente** è attivata. Gli utenti non possono modificare l'ordine delle app aggiunte nei client Web di teams.
+
+#### <a name="does-user-pinning-take-precedence"></a>Il blocco degli utenti ha la precedenza?
+
+Se i criteri di configurazione dell'app assegnati all'utente vengono modificati per bloccare il blocco delle app degli utenti, i team rimuovono tutte le app aggiunte alla barra dell'app. Se il criterio viene quindi modificato in modo da consentire il blocco delle app degli utenti, gli utenti devono ripetere l'aggiunta delle app precedentemente bloccate.
 
 ### <a name="custom-teams-apps"></a>App Team personalizzate
 

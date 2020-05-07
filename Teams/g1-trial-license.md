@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a6ae8079ba3ccd498936c5d17740ea2e5bafb514
-ms.sourcegitcommit: 86366b66b15870fe83cbb76e1ae7aa1ce9b3bfe1
+ms.openlocfilehash: 9579edfb8571f6d7d3ddf86eb6ce56c2a7e4fb85
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2020
-ms.locfileid: "42858721"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042813"
 ---
 <a name="manage-the-office-365-g1-trial-for-us-government"></a>Gestire la versione di valutazione di Office 365 G1 per il governo degli Stati Uniti 
 ==============================
@@ -55,7 +55,7 @@ Dopo aver usato il codice promozionale per la versione di valutazione G1, non è
 
 ## <a name="manage-the-g1-trial"></a>Gestire la versione di valutazione G1
 
-Dopo aver attivato la versione di valutazione di Office 365 G1, attivare la licenza per gli utenti che ne hanno bisogno. Per informazioni sulla procedura consultare  [Gestire l'accesso degli utenti a Teams](user-access.md#manage-teams-through-the-microsoft-365-admin-center).
+Dopo aver attivato la versione di valutazione di Office 365 G1, attivare la licenza per gli utenti che ne hanno bisogno. Per informazioni sulla procedura consultare  [Gestire l'accesso degli utenti a Teams](user-access.md).
 
 Dopo aver attivato la versione di valutazione G1, gli utenti verranno gestiti come quelli che hanno una licenza a pagamento. Per altre informazioni, vedere  [Gestire le impostazioni di Teams per l'organizzazione](enable-features-office-365.md).
 
@@ -82,7 +82,6 @@ Per altre informazioni, vedere [Teams per enti pubblici](expand-teams-across-you
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Gestire l'accesso degli utenti a Teams](user-access.md#manage-teams-through-the-microsoft-365-admin-center)
+[Gestire l'accesso degli utenti a Teams](user-access.md)
 
 [Gestire le impostazioni di Teams per l'organizzazione](enable-features-office-365.md)
-

@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come portare le app teams personalizzate dallo sviluppo alla distribuzione.
-ms.openlocfilehash: 8166ba6b46853510a9f4e966ddca4e5b8686b551
-ms.sourcegitcommit: a09334ef1a6b0a877839c3b46165eb5a6aad1ba9
+ms.openlocfilehash: a2896a2aa2b2d9750afd147b113a76637514afb6
+ms.sourcegitcommit: b5c747e2daad6dd3c1d91f4e61ae6f26db5c77f0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006055"
+ms.lasthandoff: 05/06/2020
+ms.locfileid: "44064531"
 ---
 # <a name="manage-your-custom-apps-in-microsoft-teams"></a>Gestire le app personalizzate in Microsoft Teams
 
@@ -131,15 +131,19 @@ Puoi aggiornare l'app tramite il catalogo app tenant. A questo scopo, nell'inter
 
 Nella maggior parte dei casi, dopo aver completato l'aggiornamento di un'app, la nuova versione verrà visualizzata automaticamente per gli utenti finali. Tuttavia, esistono alcuni aggiornamenti al manifesto di <a href="https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema" target="_blank">Microsoft teams</a> che richiedono l'accettazione da parte dell'utente:
 
-* è stato aggiunto o rimosso un bot
-* modifica della proprietà "botId" di un bot esistente
-* modifica della proprietà "isNotificationOnly" di un bot esistente
-* la proprietà "supportsFiles" del bot è cambiata
-* è stata aggiunta o rimossa un'estensione della messaggistica
-* è stato aggiunto un nuovo connettore
-* è stata aggiunta una nuova scheda statica
-* è stata aggiunta una nuova scheda configurabile
+* È stato aggiunto o rimosso un bot
+* Modifica della proprietà "botId" di un bot esistente
+* Modifica della proprietà "isNotificationOnly" di un bot esistente
+* La proprietà "supportsFiles" del bot è cambiata
+* È stata aggiunta o rimossa un'estensione della messaggistica
+* È stato aggiunto un nuovo connettore
+* È stata aggiunta una nuova scheda statica
+* È stata aggiunta una nuova scheda configurabile
 * Proprietà all'interno di "webApplicationInfo" modificate
+
+![Screenshot dell'elenco delle app, che mostra le app che hanno una nuova versione disponibile](media/manage-your-custom-apps-update1.png)
+
+![Screenshot dell'opzione di aggiornamento per un'app](media/manage-your-custom-apps-update2.png)
 
 ## <a name="related-apps"></a>App correlate
 

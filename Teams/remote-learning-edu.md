@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d380300aa27d07ecfecdbe805be9042c88779285
-ms.sourcegitcommit: 3ef5c913318fdeeaa8c55caab07c2f8224eae2b0
+ms.openlocfilehash: a7fcdb92005b5094a4e54ecf95d30b227fee1ae8
+ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43898161"
+ms.lasthandoff: 05/05/2020
+ms.locfileid: "44042463"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -78,7 +78,7 @@ Per una panoramica su come creare team, vedere: [Creare un team di classe in Mic
 ### <a name="2-configure-user-experiences-using-policies"></a>2. Configurare le esperienze utente con i criteri
 
 > [!IMPORTANT]
-> Per altre informazioni su come proteggere gli studenti durante le riunioni, vedere [Mantenere al sicuro gli studenti durante l'uso delle riunioni in Teams per l'apprendimento a distanza](https://support.office.com/article/f00fa399-0473-4d31-ab72-644c137e11c8).
+> Per altre informazioni su come proteggere gli studenti durante le riunioni, vedere [Mantenere al sicuro gli studenti durante l'uso delle riunioni in Teams per l'apprendimento a distanza](https://support.office.com/article/f00fa399-0473-4d31-ab72-644c137e11c8). Se si vogliono approfondire i suggerimenti per i criteri per l’istruzione per amministratori, passare a [Criteri e pacchetti di criteri di Teams per l'istruzione](policy-packages-edu.md).
 
 [I criteri di Teams](teams-policies.md) consentono di gestire le opzioni disponibili per utenti o gruppi di utenti specifici. I criteri possono essere applicati per definire a chi è consentito usare la chat privata, le chiamate private, la pianificazione delle riunioni, i tipi di contenuto che possono essere condivisi e molto altro ancora.
 
