@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dcda9b15a3bfe5204bc410728449672707e614fd
-ms.sourcegitcommit: b143611d14765af054a4f84cca52e2003d35af1a
+ms.openlocfilehash: 73193c1979e2db3632f84e762b9c716ab46a7e56
+ms.sourcegitcommit: b5c747e2daad6dd3c1d91f4e61ae6f26db5c77f0
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/06/2020
-ms.locfileid: "44047765"
+ms.locfileid: "44064421"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -131,7 +131,9 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 |------------|---------------|
 |Dimensioni del gruppo di destinatari | 10.000 partecipanti |
 |Durata dell'evento | 4 ore |
-|Eventi live simultanei in un'organizzazione di Office 365 | 15 |
+|Eventi live simultanei eseguiti in un'organizzazione di Office 365 <sup>1</sup> | 15 |
+
+<sup>1</sup> È possibile pianificare un numero illimitato di eventi, ma se ne possono eseguire solo 15 alla volta. Non appena il produttore partecipa a un evento live, questo è considerato in esecuzione. Il produttore che prova a partecipare al sedicesimo evento live riceve un messaggio di errore.
 
 Per altre informazioni sugli eventi live e per un confronto tra gli eventi live di Teams e Skype Meeting Broadcast, passare a [Eventi live di Teams e Skype Meeting Broadcast](teams-live-events/plan-for-teams-live-events.md#teams-live-events-and-skype-meeting-broadcast).
 
