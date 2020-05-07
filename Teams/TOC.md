@@ -624,14 +624,14 @@
 ## [Teams per l'istruzione](expand-teams-across-your-org/teams-for-education-landing-page.md)
 ### [Guida introduttiva per amministratori - Teams per l'istruzione](teams-quick-start-edu.yml)
 ### [Iniziare a usare l'apprendimento a distanza](remote-learning-edu.md)
+### [Pacchetti di criteri di Microsoft Teams per l'istruzione per amministratori](policy-packages-edu.md)
 ### [Assegnare criteri a grandi gruppi di utenti](batch-policy-assignment-edu.md)
-### [Licenze di Teams per l'istruzione](teams-edu-licensing.md)
 ### [Indicazioni per larghezza di banda ridotta per gli amministratori dell'istruzione](edu-remote-low-bandwidth.md)
 ### [Assegnare attività in Teams per l'istruzione](expand-teams-across-your-org/assignments-in-teams.md)
 ### [Risorse di Teams per l'istruzione per amministratori](resources-teams-edu.md)
-### [Pacchetti di criteri di Microsoft Teams per l'istruzione per amministratori](policy-packages-edu.md)
 ### [Domande frequenti sulla governance di Microsoft Education per amministratori](plan-teams-governance-edu.md)
 ### [Installare l'integrazione Moodle](install-moodle-integration.md)
+### [Licenze di Teams per l'istruzione](teams-edu-licensing.md)
 ### [Riferimento a Education SKU](sku-reference-edu.md)
 
 ## Teams per gli operatori sul campo
@@ -734,16 +734,8 @@
 
 ## Licenze
 ### [Gestire l'accesso degli utenti a Teams](user-access.md)
-### [Gestione delle licenze di Office 365 e Microsoft 365 per Teams](office-365-licensing.md)
-### [Assegnare licenze di Teams](assign-teams-licenses.md)
-### [Gestione delle licenze per i componenti aggiuntivi di Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
-#### Opzioni di licenza basate sul tuo piano
-##### [Microsoft 365 Business Standard](teams-add-on-licensing/office-365-business-premium.md)
-##### [App Microsoft 365 per grandi imprese](teams-add-on-licensing/office-365-premium-pro-plus.md)
-##### [Office 365 Enterprise E1 ed E3](teams-add-on-licensing/office-365-enterprise-e1-e3.md)
-##### [Office 365 Enterprise E5](teams-add-on-licensing/office-365-enterprise-e5-with-audio-conferencing.md)
-##### [Office 365 Enterprise E5 senza Audioconferenza](teams-add-on-licensing/office-365-enterprise-e5-without-audio-conferencing.md)
-##### [GOV, EDU e organizzazioni no profit](teams-add-on-licensing/gov-edu-and-nonprofit-organizations.md)
+### [Opzioni di licenza per i componenti aggiuntivi di Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+### [Assegnare le licenze per i componenti aggiuntivi di Teams](teams-add-on-licensing/assign-teams-add-on-licenses.md)
 ### [Gestire l’offerta Office 365 E1 Trial](e1-trial-license.md)
 ### [Gestire la versione di valutazione di Office 365 G1](g1-trial-license.md)
 ### [Gestire l'offerta Teams Commercial Trial](iw-trial-teams.md)
@@ -751,7 +743,7 @@
 ### [Gestire la versione gratuita di Teams](manage-freemium.md)
 ### [Aggiornare Teams gratuitamente alla versione in abbonamento](upgrade-freemium.md)
 ### [Gestione delle licenze per i criteri di messaggistica](teams-add-on-licensing/pri-message.md)
-### [Licenza utente virtuale](teams-add-on-licensing/virtual-user.md)
+### [Sistema telefonico di Microsoft 365 - Licenza Utente virtuale](teams-add-on-licensing/virtual-user.md)
 
 
 ## Interoperabilità con Microsoft 365 e Office 365
