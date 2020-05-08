@@ -19,18 +19,17 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 30599b73447e9b5ab9873c6cd48372d997def5d1
-ms.sourcegitcommit: 3ef5c913318fdeeaa8c55caab07c2f8224eae2b0
+ms.openlocfilehash: 6571da01408893423ae6672dccd80ba65a55cbaf
+ms.sourcegitcommit: 6e24ea8aa9cccf8a1a964c8ed414ef5c7de3dc17
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43898121"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44158973"
 ---
+# <a name="security-and-microsoft-teams"></a>Sicurezza e Microsoft Teams
+
 > [!IMPORTANT]
 > Il modello di servizio di Teams è soggetto a modifiche per migliorare l'esperienza utente. Ad esempio, le scadenze del token di accesso o di aggiornamento predefinito potrebbero essere soggette a modifica per migliorare le prestazioni e la resilienza di autenticazione per gli utenti che usano Teams. Le modifiche apportate verranno applicate con l'obiettivo di garantire la protezione e l’affidabilità da progettazione di Teams.
-<p>
-
-# <a name="security-and-microsoft-teams"></a>Sicurezza e Microsoft Teams
 
 Microsoft Teams, come parte del servizio Microsoft 365 (M365), segue tutte le migliori pratiche e procedure di sicurezza, come la protezione a livello di servizio attraverso difesa in profondità, controlli utente nell'ambito del servizio, potenziamento delle misure di sicurezza e best practice operative. Per i dettagli completi, consultare il [Centro protezione Microsoft](https://microsoft.com/trustcenter).
 
@@ -98,7 +97,7 @@ Questa sezione offre una panoramica degli elementi fondamentali che formano il f
 
 Gli elementi principali sono:
 
-- Azure Active Directory (AAD), che fornisce un singolo repository back-end attendibile per gli account utente. Le informazioni sul profilo utente vengono archiviate in AAD attraverso le azioni di Microsoft Graph.
+- Azure Active Directory (Azure AD), che fornisce un singolo repository back-end attendibile per gli account utente. Le informazioni sul profilo utente vengono archiviate in Azure AD tramite le azioni di Microsoft Graph.
   - Tenere presente che potrebbero essere presenti più token emessi, visibili se si esegue il monitoraggio del traffico di rete. Sono inclusi i token Skype, di cui potrebbero essere visibili tracce mentre si osserva il traffico audio e chat.
 - TLS (Transport Layer Security) e Mutual TLS (MTLS) che eseguono la crittografia del traffico dei messaggi istantanei e abilitano l'autenticazione degli endpoint. I flussi audio, video e di condivisione di applicazioni da punto a punto sono crittografati e la relativa integrità è verificata utilizzando il protocollo SRTP (Secure Real-Time Transport Protocol). Nella traccia potrebbe essere visibile anche traffico OAuth, specialmente relativo alle autorizzazioni di negoziazione quando si passa da una scheda all'altra in Teams, ad esempio per passare da Post a File. Per un esempio del flusso OAuth per le schede, [vedere il documento](https://docs.microsoft.com/microsoftteams/platform/tabs/how-to/authentication/auth-flow-tab).
 - Teams usa protocolli standard del settore per l'autenticazione degli utenti, ove possibile.
@@ -160,7 +159,7 @@ Teams utilizza algoritmi FIPS (Federal Information Processing Standard) per gli 
 
 ### <a name="user-and-client-authentication"></a>Autenticazione utente e client
 
-Un utente affidabile è un utente le cui credenziali sono state autenticate da AAD in Office 365/Microsoft 365.
+Un utente affidabile è un utente le cui credenziali sono state autenticate da Azure AD in Office 365/Microsoft 365.
 
 L'autenticazione è il provisioning delle credenziali utente a un server o servizio attendibile. Teams utilizza i seguenti protocolli di autenticazione, a seconda dello stato e della posizione dell'utente.
 
@@ -169,11 +168,11 @@ L'autenticazione è il provisioning delle credenziali utente a un server o servi
 > [!NOTE]
 > Se è necessario rispolverare i metodi di autenticazione e autorizzazione di Azure Active Directory, l'introduzione di questo articolo e le sezioni "Informazioni di base sull'autenticazione in Azure AD" possono essere d'aiuto.
 
-L'autenticazione di Teams viene eseguita tramite AAD e OAuth. Il processo di autenticazione può essere semplificato per:
+L'autenticazione di Teams viene eseguita tramite Azure AD e OAuth. Il processo di autenticazione può essere semplificato per:
 
 - Accesso utente > Emissione di token > richiesta successiva per usare il token emesso.
 
-Le richieste da client a server sono autenticate e autorizzate tramite AAD mediante l'uso di OAuth. Gli utenti con credenziali valide emesse da un partner federato sono considerati attendibili ed è possibile eseguire lo stesso processo come utenti nativi. Tuttavia, gli amministratori potrebbero applicare ulteriori limitazioni.
+Le richieste da client a server sono autenticate e autorizzate tramite Azure AD mediante l'uso di OAuth. Gli utenti con credenziali valide emesse da un partner federato sono considerati attendibili ed è possibile eseguire lo stesso processo come utenti nativi. Tuttavia, gli amministratori potrebbero applicare ulteriori limitazioni.
 
 Per l'autenticazione dei contenuti multimediali, anche i protocolli ICE e TURN usano la challenge Digest come descritto nell'RFC su TURN di IETF.
 
@@ -203,28 +202,28 @@ Sono due le opzioni disponibili per controllare chi arriva nelle riunioni di Tea
 
 1. È possibile controllare chi partecipa alle riunioni tramite le impostazioni relative alla **sala di attesa**.</p>
 
-|Opzioni per l'impostazione dei partecipanti che possono evitare la sala di attesa disponibili nella pagina Opzioni riunione   |Tipi di utente che dispongono dell’accesso diretto alla riunione  |Tipi di utenti che passano per la sala di attesa   |
-|---------|---------|---------|
-|Utenti dell’organizzazione     |  - Nel tenant  </br>- Ospite del tenant         |  - Federato</br>  - Anonimo</br>  - Con accesso esterno PSTN</br>     |
-|Utenti dell'organizzazione e organizzazioni attendibili      |  - Nel tenant</br> - Ospite del tenant</br> - Federato</br>        |  - Anonimo</br>  - Con accesso esterno PSTN</br>      |
-|Tutti      |   - Nel tenant</br>  - Ospite del tenant</br>  - Federato Anonimo</br>  - Con accesso esterno PSTN</br>       |         |
+    |Opzioni per l'impostazione dei partecipanti che possono evitare la sala di attesa disponibili nella pagina Opzioni riunione   |Tipi di utente che dispongono dell’accesso diretto alla riunione  |Tipi di utenti che passano per la sala di attesa   |
+    |---------|---------|---------|
+    |Utenti dell’organizzazione     |  - Nel tenant  </br>- Ospite del tenant         |  - Federato</br>  - Anonimo</br>  - Con accesso esterno PSTN</br>     |
+    |Utenti dell'organizzazione e organizzazioni attendibili      |  - Nel tenant</br> - Ospite del tenant</br> - Federato</br>        |  - Anonimo</br>  - Con accesso esterno PSTN</br>      |
+    |Tutti      |   - Nel tenant</br>  - Ospite del tenant</br>  - Federato Anonimo</br>  - Con accesso esterno PSTN</br>       |         |
 
 2. Il secondo metodo riguarda le **riunioni strutturate**, dove il relatore può effettuare praticamente tutte le operazioni e i partecipanti hanno un'esperienza controllata. Dopo aver partecipato a una riunione strutturata, i relatori controllano cosa possono fare i partecipanti alla riunione. </p>
 
-|Azioni  |Relatori  |Partecipanti  |
-|---------|---------|---------|
-|Parlare e condividere il proprio video     |   S      |   S      |
-|Partecipare alla chat della riunione     |   S    |    S     |
-|Modificare le impostazioni nelle opzioni della riunione     |   S      |  N       |
-|Disattivare l'audio degli altri partecipanti| S | N |
-|Rimuovere altri partecipanti      |  S       |   N      |
-|Condividere il contenuto     |     S    |     N    |
-|Ammettere altri partecipanti dalla sala di attesa|  S       |   N      |
-|Rendere altri partecipanti relatori o partecipanti     |   S      | N        |
-|Interrompere o avviare la registrazione     |     S    |    N     |
-|Prendere il controllo quando un altro partecipante condivide una presentazione PowerPoint     |  S         | N        |
+    |Azioni  |Relatori  |Partecipanti  |
+    |---------|---------|---------|
+    |Parlare e condividere il proprio video     |   S      |   S      |
+    |Partecipare alla chat della riunione     |   S    |    S     |
+    |Modificare le impostazioni nelle opzioni della riunione     |   S      |  N       |
+    |Disattivare l'audio degli altri partecipanti| S | N |
+    |Rimuovere altri partecipanti      |  S       |   N      |
+    |Condividere il contenuto     |     S    |     N    |
+    |Ammettere altri partecipanti dalla sala di attesa|  S       |   N      |
+    |Rendere altri partecipanti relatori o partecipanti     |   S      | N        |
+    |Interrompere o avviare la registrazione     |     S    |    N     |
+    |Prendere il controllo quando un altro partecipante condivide una presentazione PowerPoint     |  S         | N        |
 
-Teams offre agli utenti aziendali la possibilità di creare e partecipare in tempo reale a riunioni. Gli utenti aziendali possono anche invitare utenti esterni che non dispongono di un account AAD/Office 365 a partecipare a tali riunioni. Anche gli utenti impiegati da partner esterni con un'identità sicura e autenticata possono partecipare alle riunioni e, se autorizzati a farlo, possono agire da relatori. Gli utenti anonimi non possono creare o partecipare a una riunione come relatori, ma possono essere promossi a tale ruolo una volta che avranno partecipato.
+Teams offre agli utenti aziendali la possibilità di creare e partecipare in tempo reale a riunioni. Gli utenti aziendali possono anche invitare utenti esterni che non dispongono di un account di Azure AD/Office 365 a partecipare a tali riunioni. Anche gli utenti impiegati da partner esterni con un'identità sicura e autenticata possono partecipare alle riunioni e, se autorizzati a farlo, possono agire da relatori. Gli utenti anonimi non possono creare o partecipare a una riunione come relatori, ma possono essere promossi a tale ruolo una volta che avranno partecipato.
 
 Affinché gli utenti anonimi possano partecipare alle riunioni di Teams, deve essere attivata l'impostazione Partecipanti nell'interfaccia di amministrazione di Teams.
 
@@ -238,8 +237,8 @@ Consentire agli utenti esterni di partecipare alle riunioni di Teams può essere
 - La pianificazione delle riunioni è limitata agli utenti che possiedono un account AAD e una licenza per Teams.
 - Gli utenti anonimi, ovvero non autenticati, che desiderano partecipare a una conferenza telefonica con accesso esterno, compongono uno dei numeri di accesso alla conferenza. Se l'opzione "Consenti sempre ai chiamanti di evitare la sala di attesa" è *attivata*, dovranno attendere finché un oratore o un utente autenticato non parteciperà alla riunione.
 
-> [!CAUTION]
-> Per fare in modo che gli utenti anonimi (utenti non invitati esplicitamente) non possano partecipare a una riunione, è necessario verificare che **Gli utenti anonimi possono partecipare a una riunione** sia impostato su **Disattivato** per la sezione **Participante** delle riunione.
+  > [!CAUTION]
+  > Per fare in modo che gli utenti anonimi (utenti non invitati esplicitamente) non possano partecipare a una riunione, è necessario verificare che **Gli utenti anonimi possono partecipare a una riunione** sia impostato su **Disattivato** per la sezione **Participante** delle riunione.
 
 Un organizzatore può anche configurare impostazioni per consentire ai chiamanti esterni di accedere per primi a una riunione. Questa impostazione è configurata nelle impostazioni Audioconferenza per gli utenti e viene applicata a tutte le riunioni pianificate dall'utente.
 

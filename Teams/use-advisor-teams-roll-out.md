@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Usare Advisor per Teams (anteprima pubblica) per pianificare e completare la distribuzione di Microsoft Teams.
-ms.openlocfilehash: 1357829330f4d2ef7ad95e0eda1cebcbe8492756
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: 79273c0c0d96bf5f7c52399310bffce433928e2b
+ms.sourcegitcommit: c3f44fccdbd9178d30b52bb0db6f6d31a6dd174b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042913"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44139199"
 ---
 # <a name="use-advisor-for-teams-to-help-you-roll-out-microsoft-teams"></a>Usare Advisor per Teams per distribuire Microsoft Teams
 
@@ -65,6 +65,12 @@ Durante la fase di anteprima pubblica di Advisor per Teams, vengono forniti i du
     - Piano di Planner, incluse le attività di adozione
     - Sondaggio utenti con Forms
     - Bot Advisor per Teams
+1. Aggiornamento di Skype for Business
+    - Valutazione del tenant
+    - Piano di Planner, incluse le attività di adozione
+    - Sondaggio utenti con Forms
+    - Bot Advisor per Teams
+    - Progettato per i clienti che attualmente utilizzano ambienti locali Skype for Business online o Skype for Business, il piano di aggiornamento di Skype for Business consentirà un aggiornamento pianificato in ogni minimo dettaglio. Sfruttando un efficiente framework comprovato per l'implementazione del cambiamento, il piano farà da guida attraverso una procedura dettagliata, sia che si abbia appena iniziato a usare Teams, che già lo si utilizzi insieme a Skype for Business o che si sia pronti per l'aggiornamento. Il piano mette a disposizione anche [materiale sussidiario e procedure consigliate online](https://aka.ms/SkypeToTeams), [risorse scaricabili](https://aka.ms/UpgradeSuccessKit), [workshop di pianificazione di gruppo](https://aka.ms/UpgradeWorkshops) e risorse aggiuntive a supporto del raggiungimento dei risultati.
 
 È consigliabile iniziare con il piano Chat, team, canali e app. Dopo aver completato la distribuzione del carico di lavoro, tornare in Advisor per Teams e fare clic su **Aggiungi canale** per avviare il carico di lavoro successivo.
 
@@ -108,6 +114,9 @@ Oltre ai [test di valutazione per i carichi di lavoro](#assessment-tests-for-all
 |Licenze di audioconferenza    |Se si dispone di un abbonamento attivo con licenze di audioconferenza. Si tratta di un prerequisito per la distribuzione di bridge di audioconferenza. Eseguire una query in Microsoft Graph per verificare se sono presenti licenze di audioconferenza, con almeno una licenza disponibile da assegnare. Per altre informazioni, leggere [ Licenze per i componenti aggiuntivi di Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).    |
 |Licenze di streaming     |Se si dispone di un abbonamento attivo con licenze di Microsoft Stream. Si tratta di un prerequisito per attivare la registrazione di una riunione. Eseguire una query in Microsoft Graph per verificare se sono presenti licenze di Microsoft Stream e almeno una licenza disponibile da assegnare. Per altre informazioni su Stream e su come attivarlo, leggere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 
+### <a name="assessments-for-skype-for-business-upgrade"></a>Valutazioni per l'aggiornamento di Skype for Business
+Oltre ai [test di valutazione per i carichi di lavoro](#assessment-tests-for-all-workloads), l'aggiornamento di Skype for Business include anche le valutazioni utilizzate nelle riunioni e nei piani per le conferenze.
+
 ### <a name="advisor-for-teams-bot"></a>Bot Advisor per Teams
 
 Quando Advisor per Teams crea il team di distribuzione, il relativo bot consegna il messaggio seguente nel canale Generale:
@@ -148,6 +157,9 @@ Sì, dopo che Advisor per Teams ha creato il team di distribuzione, è necessari
 ### <a name="can-i-modify-the-forms-survey"></a>È possibile modificare il sondaggio di Forms?
 Sì, dopo che Advisor per Teams ha creato il team di distribuzione, è possibile modificare il sondaggio di Forms in base alle esigenze.
 
+### <a name="are-there-any-differences-between-advisor-for-teams-in-gcc"></a>Esiste una differenza tra Advisor per Teams in GCC?
+Sì, vengono creati sondaggi di Forms per utenti ma non vengono aggiunti ai canali del piano poiché l'app Teams di Forms non è attualmente disponibile in GCC.
+
 ### <a name="what-information-is-advisor-for-teams-collecting-about-my-organization"></a>Quali informazioni raccoglie Advisor per Teams sull'organizzazione?
 Advisor per Teams richiede il consenso per la raccolta di informazioni diverse da quelle di identificazione degli utenti finali. Le informazioni raccolte si trovano sotto forma di telemetria che fornisce un feedback a Microsoft sui risultati prodotti da Advisor per Teams e su cosa andrebbe migliorato. Questi stessi dati vengono usati per identificare opportunità per Microsoft di impegnarsi in modo proattivo con l'organizzazione in modo da facilitare la distribuzione.
 
@@ -170,4 +182,4 @@ Passare al [Centro assistenza di Forms](https://support.office.com/forms).
 [Procedure consigliate per l'organizzazione dei team in Teams](best-practices-organizing.md)
 
 [Nomi dei prodotti e identificatori dei piani di servizio per le licenze](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference
-) 
+)
