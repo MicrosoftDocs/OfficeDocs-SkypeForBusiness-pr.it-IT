@@ -20,28 +20,28 @@ ms.custom:
 - Setup
 - LIL_Placement
 description: "Informazioni su come consentire alle persone che usano Skype for business di contattare utenti Skype for business all'esterno dell'organizzazione e aggiungerli al proprio elenco di contatti. "
-ms.openlocfilehash: ffefa664845f5dbe06b064e0a197a28d8df2c3da
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 71282fe105c85cadca9aab341fc1b5e6ffbe47d2
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42010809"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44164475"
 ---
 # <a name="let-skype-for-business-users-add-skype-contacts"></a>Consentire agli utenti di Skype for Business di aggiungere contatti Skype
 
 Con Skype for business, gli utenti possono cercare e inviare messaggi istantanei con tutti coloro che usano Skype, l'app gratuita. In questo articolo vengono illustrate le operazioni da eseguire in modo che possano aggiungere contatti Skype. 
   
-Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di amministratore](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d?ui=en-US&rs=en-US&ad=US) in Office 365.
+Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di amministratore](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d?ui=en-US&rs=en-US&ad=US) in Microsoft 365 o Office 365.
 
-![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
+![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
   
-1. Accedere con l'account di amministratore di Office 365 [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home#/homepage)all'indirizzo.
+1. Accedere con l'account di amministratore di Microsoft 365 o Office 365 [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home#/homepage).
     
 2. Nell'interfaccia di amministrazione accedere a interfaccia di **Amministrazione** > di**Skype for business**. 
     
     ![Scegliere l'interfaccia di amministrazione di Skype for business.](../images/376a7a45-e6e3-4716-be09-d2f294d885a2.png)
   
-3. Nell'interfaccia di **amministrazione di Skype for business**scegli **** > **comunicazioni esterne**dell'organizzazione. 
+3. Nell'**interfaccia di amministrazione di Skype for Business** scegliere **Organizzazione** > **Comunicazioni esterne**. 
     
 4. Per impostazione predefinita, gli utenti possono comunicare con tutte le altre persone del mondo che usano Skype for business (supponendo che il firewall sia stato configurato per consentire questa operazione). 
     

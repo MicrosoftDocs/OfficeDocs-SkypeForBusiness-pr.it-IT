@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Vedere come selezionare le lingue dell'operatore automatico per un numero di Audioconferenza in Skype for Business online.
-ms.openlocfilehash: 34ed4ccee5239923f68b089ce14551fe43c32320
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 93b6ea917c7f79747273366893efc47a22b89bb2
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43776801"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44163902"
 ---
 # <a name="set-auto-attendant-languages-for-audio-conferencing-in-skype-for-business-online"></a>Impostare le lingue dell'operatore automatico per Audioconferenza in Skype for Business online
 
@@ -64,7 +64,7 @@ Per eseguire questo passaggio, è necessario essere un amministratore [globale](
     
 - Le lingue possono essere impostate per numeri specifici, ma non per i numeri di telefono condivisi.
     
-- Per visualizzare un elenco dei paesi/aree geografiche in cui sono disponibili i servizi di Audioconferenza in Office 365 con Microsoft come provider, vedere [Numeri di telefono per Audioconferenza](phone-numbers-for-audio-conferencing.md).
+- Per visualizzare un elenco di paesi/aree geografiche in cui sono disponibili i servizi di conferenza audio in Microsoft 365 o Office 365 che usano Microsoft come provider, vedere [numeri di telefono per le conferenze audio](phone-numbers-for-audio-conferencing.md).
     
 ## <a name="want-to-use-windows-powershell"></a>Desideri utilizzare Windows PowerShell?
 
@@ -74,4 +74,4 @@ Per altre informazioni, vedere [uso di Windows PowerShell per eseguire comuni at
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
+[Provare o acquistare servizi di audioconferenza in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)

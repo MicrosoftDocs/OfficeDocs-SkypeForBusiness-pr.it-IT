@@ -21,12 +21,12 @@ ms.custom:
 - ms.lync.lac.MeetingInvitation
 - ms.teamsadmincenter.meetingsettings.invitationurls
 description: 'Personalizzare gli inviti alle riunioni Skype con loghi grafici, guida e URL legali e testo del piè di pagina. '
-ms.openlocfilehash: 41ed423349ff34f27a164b4d9c652571241b1afb
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 2f4622a964037feab0c06e731606aded7a9fb758
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43776231"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44164335"
 ---
 # <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
@@ -69,14 +69,14 @@ Come amministratore, puoi assicurarti che tutti gli inviti alle riunioni di Skyp
    
 5. Scegliere **Save**.
     
-6. Attendere un'ora o in modo che le modifiche vengano popolate in tutti i servizi di Office 365. Quindi passa a Outlook e pianifica una riunione Skype per vedere come sono le modifiche. 
+6. Attendere un'ora o in modo che le modifiche vengano popolate in tutti i servizi Microsoft 365 o Office 365. Quindi passa a Outlook e pianifica una riunione Skype per vedere come sono le modifiche. 
     
     ![Ecco l'aspetto di un invito personalizzato, senza l'elemento grafico](../images/ebb5c03c-c23d-4da7-97f1-9b13e26a6cf8.png)
   
 ## <a name="related-topics"></a>Argomenti correlati
 <a name="__top"> </a>
 
-[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
+[Provare o acquistare servizi di audioconferenza in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
 
   
  

@@ -20,24 +20,24 @@ f1.keywords:
 ms.custom:
 - Setup
 description: "Questo riepilogo delle impostazioni dell'organizzazione e degli utenti di Skype for business può essere utile per altre informazioni sulla connettività di messaggistica istantanea pubblica, sugli inviti alle riunioni, le chiamate e le riunioni di registrazione e altro ancora.  "
-ms.openlocfilehash: fd8db122b1e0ec8ef205c07f68826dea83a833c7
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: a7c627620bba6d1249dcc6ce14bbaf25796b7173
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41706461"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44164125"
 ---
 # <a name="skype-for-business-online-settings-summary"></a>Riepilogo delle impostazioni di Skype for Business online
 
 L'interfaccia di **amministrazione di Skype for business** include le impostazioni per l'intera organizzazione e per i singoli utenti. 
   
 > [!NOTE]
->  A seconda della tua posizione, potresti non avere accesso a tutte le funzionalità di Skype for business online. Per informazioni dettagliate, vedere [limitazioni della licenza per Office 365](https://go.microsoft.com/fwlink/?LinkId=529483). 
+>  A seconda della tua posizione, potresti non avere accesso a tutte le funzionalità di Skype for business online. Per informazioni dettagliate, vedere [limitazioni delle licenze per Microsoft 365 e Office 365](https://go.microsoft.com/fwlink/?LinkId=529483). 
   
 ## <a name="skype-for-business-online-organization-settings"></a>Impostazioni aziendali di Skype for Business online
 <a name="__top"> </a>
 
-|**Impostazione**|**Descrizione**|**Predefinita**|**Ulteriori informazioni**|
+|**Impostazione**|**Descrizione**|**Predefinita**|**Altre informazioni**|
 |:-----|:-----|:-----|:-----|
 |Federazione domini  <br/> |Consente di comunicare con altre organizzazioni che usano Skype for Business online.  <br/> |Abilitata  <br/> |[Consentire agli utenti di contattare utenti Skype for Business esterni](allow-users-to-contact-external-skype-for-business-users.md) <br/> |
 |Connettività per messaggistica istantanea pubblica  <br/> |Consente di comunicare con utenti di Skype for Business online.  <br/> |Abilitata  <br/> |[Consentire agli utenti di contattare utenti Skype for Business esterni](allow-users-to-contact-external-skype-for-business-users.md) <br/> |

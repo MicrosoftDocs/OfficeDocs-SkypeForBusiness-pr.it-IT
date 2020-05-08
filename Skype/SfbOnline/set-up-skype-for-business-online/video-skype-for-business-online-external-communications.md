@@ -19,18 +19,18 @@ f1.keywords:
 ms.custom:
 - Setup
 description: 'Informazioni su come configurare le comunicazioni esterne di Skype for business online per gli utenti in grado di comunicare con contatti Skype esterni. '
-ms.openlocfilehash: ec10b29c87d4dcab00bb2e680c0ed594aa9de2d9
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 52b43ea21f9f0aa56b923355cfc936f334f1607f
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42010739"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44164485"
 ---
 # <a name="video-skype-for-business-online-external-communications"></a>Video: Comunicazioni esterne di Skype for Business online
 
 Configurare le comunicazioni esterne di Skype for business online in modo che gli utenti possano comunicare con i contatti esterni di Skype for business, Lync e Skype.
 
- **Audience:** Amministratori di Office 365
+ **Audience:** Amministratori di Microsoft 365 e Office 365
 
 ***
 > [!VIDEO https://videoplayercdn.osi.office.net/hub/?csid=ux-cms-en-us-msoffice&uuid=492278f0-6912-47ba-a1d1-00040061cf44&AutoPlayVideo=false]

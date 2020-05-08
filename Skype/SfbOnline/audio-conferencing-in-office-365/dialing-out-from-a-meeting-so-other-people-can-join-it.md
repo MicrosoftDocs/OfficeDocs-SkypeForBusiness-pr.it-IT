@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Informazioni su requisiti e sul modo in cui gli organizzatori delle riunioni possono effettua una chiamata a utenti che utilizzano Skype for Business.
-ms.openlocfilehash: e69fa266b9e10091f0936baee45c140ba198661f
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: c0bf11f3bd6a865bcd5dea107eedb8f2d5f5951f
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41982821"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44164285"
 ---
 # <a name="dialing-out-from-a-skype-for-business-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione Skype for business in modo che gli altri utenti possano accedervi
 
@@ -58,7 +58,7 @@ Dial-out is only available to some countries/regions. Per l'elenco completo, ved
   
 ## <a name="want-to-know-more-about-audio-conferencing"></a>Per saperne di più sui servizi di conferenza telefonica con accesso esterno
 
-[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
+[Provare o acquistare servizi di audioconferenza in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
     
 - [Licenze per i componenti aggiuntivi di Skype for Business](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md)
     

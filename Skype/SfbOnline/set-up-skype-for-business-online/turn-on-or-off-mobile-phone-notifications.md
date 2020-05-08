@@ -20,25 +20,25 @@ ms.custom:
 - Setup
 - ms.lync.lac.OrgMobileNotification
 description: Informazioni su come attivare o disattivare le notifiche per i telefoni cellulari, in modo che gli utenti possano ricevere avvisi su messaggi istantanei in arrivo, segreteria telefonica e messaggistica istantanea.
-ms.openlocfilehash: e84ae2ef4054d730cc56bae3bd545f04e966bab4
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+ms.openlocfilehash: 8e209637ffe4c4053adc6dea44fb574257c330c3
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41769549"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44164111"
 ---
 # <a name="turn-on-or-off-mobile-phone-notifications"></a>Attivare o disattivare le notifiche per cellulari
 
-Quando si **[assegnano ruoli di amministratore in Office 365 for business](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** per l'organizzazione, è possibile scegliere se gli utenti di Skype for Business ricevono avvisi sui messaggi istantanei in arrivo e in uscita quando si trovano nei loro telefoni cellulari o tablet.
+Quando si **[assegnano ruoli di amministratore nelle app Microsoft 365 per le aziende](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** per l'organizzazione, è possibile scegliere se gli utenti di Skype for Business ricevono avvisi sui messaggi istantanei in arrivo e in uscita quando si trovano nei loro telefoni cellulari o tablet.
   
 Su telefoni Android e Windows, le notifiche di Skype for business compaiono in tempo reale. Per i dispositivi Windows Phone, iPhone e iPad, tuttavia, viene usata la notifica push per visualizzare gli avvisi ogni volta che non si usa Skype for business sul telefono o sul tablet.
   
 ## <a name="turn-push-notifications-off-for-all-the-windows-phone-or-apple-devices-in-your-organization"></a>Disattivare le notifiche push per tutti i dispositivi Windows Phone o Apple dell'organizzazione
 <a name="__top"> </a>
 
-![Icona che mostra il logo](../images/sfb-logo-30x30.png) di Skype for business **con l'interfaccia di amministrazione di Skype for business**
+![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
-1. Accedere a Office 365.
+1. Accedere a Microsoft 365.
     
 2. Accedere all'interfaccia di amministrazione > **Skype for business**.
     

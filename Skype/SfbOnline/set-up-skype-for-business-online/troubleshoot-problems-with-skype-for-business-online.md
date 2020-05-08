@@ -18,13 +18,13 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-description: Learn how to fix issues for admins and users of Skype for Business in Office 365.
-ms.openlocfilehash: 812df872775e31109df300e3bad1911de975c07e
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+description: Informazioni su come risolvere i problemi per gli amministratori e gli utenti di Skype for business in Microsoft 365 e Office 365.
+ms.openlocfilehash: 79f4f9f2ac8d1cd2e6b65486089b212c076d272d
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43777161"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44164315"
 ---
 # <a name="troubleshoot-problems-with-skype-for-business-online"></a>Risolvere i problemi di Skype for Business online
 
@@ -75,9 +75,9 @@ La maggior parte dei problemi che devono affrontare gli utenti di Skype for Busi
 ## <a name="still-need-help-contact-support"></a>Serve ulteriore assistenza? Contattare il supporto.
 <a name="BK_SupportBridge_1"> </a>
 
-In qualità di amministratore di Office 365 per le aziende, puoi accedere gratuitamente agli agenti di supporto competenti per il supporto di pre-vendita, account e fatturazione, oltre che per risolvere i problemi tecnici. È anche possibile [contattare il supporto](https://go.microsoft.com/fwlink/p/?LinkID=518322) per conto degli utenti di Microsoft 365 e Office 365 nell'organizzazione.
+In qualità di amministratore per le app Microsoft 365 per le aziende, è possibile accedere gratuitamente agli agenti di supporto competenti per il supporto di pre-vendita, account e fatturazione, oltre che per risolvere i problemi tecnici. È anche possibile [contattare il supporto](https://go.microsoft.com/fwlink/p/?LinkID=518322) per conto degli utenti di Microsoft 365 e Office 365 nell'organizzazione.
 
-- [Ottenere assistenza dai forum della community di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=518605)
+- [Ottenere assistenza dai forum della community di Microsoft 365 e Office 365](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 
 - [Amministratori: Contattare il supporto](https://go.microsoft.com/fwlink/p/?LinkID=518322)
 
@@ -88,5 +88,3 @@ In qualità di amministratore di Office 365 per le aziende, puoi accedere gratui
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
-
-

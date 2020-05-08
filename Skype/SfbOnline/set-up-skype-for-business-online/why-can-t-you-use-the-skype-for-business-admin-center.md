@@ -21,12 +21,12 @@ ms.custom:
 - Setup
 - ms.lync.lac.TenantInMigration
 description: "Informazioni su cosa è possibile e non si può usare nell'interfaccia di amministrazione di Skype for business e altre funzionalità quando il servizio viene migrato in un altro centro dati Microsoft. "
-ms.openlocfilehash: f43f1cce6921d3e3cb6e40ad58898ece04d800df
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 7258467929663c42bfb6088202511a04613db383
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43777621"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44164495"
 ---
 # <a name="why-cant-i-use-the-skype-for-business-online-admin-center-right-now"></a>Perché non è possibile usare l'interfaccia di amministrazione di Skype for business online in questo momento?
 
@@ -42,7 +42,7 @@ Per altri dettagli tecnici, vedere [durante e dopo lo stato di trasferimento dei
 
 Per prima cosa, analizziamo alcuni termini.
   
-- **Data Center** Questa è la posizione fisica in cui sono archiviate le informazioni di Microsoft 365 o Office 365, ad esempio i file e i messaggi di posta elettronica. Se si vuole veramente analizzare i dati di Office 365, vedere[questo articolo](https://www.microsoft.com/online/legal/v2/?docid=25).
+- **Data Center** Questa è la posizione fisica in cui sono archiviate le informazioni di Microsoft 365 o Office 365, ad esempio i file e i messaggi di posta elettronica. Se si vuole veramente analizzare i dati di Microsoft 365 e Office 365, vedere[questo articolo](https://www.microsoft.com/online/legal/v2/?docid=25).
     
 - **Migrazione** Questo è più o meno uguale a "spostamento". In questo caso, significa che stiamo spostando gli utenti e le impostazioni di Skype for business online da un centro dati a un altro più vicino a te per migliorare il servizio.
     
@@ -52,7 +52,7 @@ Per prima cosa, analizziamo alcuni termini.
     
 Questo significa che stiamo spostando tutti gli utenti e le impostazioni di servizio di Skype for business online in un'altra posizione più vicina a te. Maggiore è il miglioramento. La buona notizia è che dopo questo breve periodo di tempo, il servizio Skype for business online migliorerà.
   
-![Migrazione del servizio in Office 365](../images/77502071-36fe-4833-a5ff-3b9ca7676542.png)
+![Migrazione del servizio in Microsoft 365 o Office 365](../images/77502071-36fe-4833-a5ff-3b9ca7676542.png)
   
 ## <a name="what-skype-for-business-online-features-will-still-work"></a>Quali funzionalità di Skype for business online funzionano ancora?
 
@@ -64,7 +64,7 @@ Anche se non è possibile accedere all'interfaccia di amministrazione di Skype f
     
 ## <a name="can-i-get-other-work-done"></a>È possibile eseguire altre operazioni?
 
-Sicuro. Mentre si sta migrando il servizio Skype for business online, è comunque possibile usare gli altri centri di amministrazione di Office 365, ad esempio Office 365 ed Exchange Admin Centers. Tuttavia, insieme all'interfaccia di amministrazione di Skype for business online, non potrai usare i cmdlet di PowerShell remoto di Skype for business online durante la migrazione. 
+Sicuro. Mentre si sta migrando il servizio Skype for business online, è comunque possibile usare gli altri centri di amministrazione di Microsoft 365, ad esempio Microsoft 365 ed Exchange Admin Centers. Tuttavia, insieme all'interfaccia di amministrazione di Skype for business online, non potrai usare i cmdlet di PowerShell remoto di Skype for business online durante la migrazione. 
   
 ## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)

@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Ottenere un elenco di problemi noti quando si usa Microsoft come provider di conferenze telefoniche con accesso esterno, stato e alcune soluzioni alternative. '
-ms.openlocfilehash: 6c462fea8a6ff1ebdae25a09ef8471d82559f3eb
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: fba5bfff687121c7b1b64c0e51233ccb576497e2
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41695771"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44164521"
 ---
 # <a name="audio-conferencing-troubleshooting-and-known-issues"></a>Risoluzione dei problemi e problemi noti relativi ai servizi di audioconferenza
 
@@ -34,7 +34,7 @@ ms.locfileid: "41695771"
   
 ## <a name="troubleshooting-and-known-issues"></a>Risoluzione dei problemi e problemi noti
 
-I servizi di audioconferenza che utilizzano Microsoft come provider hanno problemi correnti che vengono monitorati, sottoposti a indagine e possibilmente risolti nelle prossime versioni build di Office 365.
+Le conferenze audio che usano Microsoft come provider di servizi di audioconferenza hanno problemi correnti che vengono rilevate e studiate attivamente e saranno potenzialmente risolte quando la funzionalità verrà aggiornata nelle versioni future di Microsoft 365.
   
 Per il momento, usa questo nome come riferimento per la risoluzione dei problemi potenziali con la configurazione e l'utilizzo di servizi di audioconferenza per le persone che usano Skype for business nell'organizzazione.
 
@@ -48,4 +48,4 @@ Per il momento, usa questo nome come riferimento per la risoluzione dei problemi
    
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Provare o acquistare le audioconferenze in Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
+[Provare o acquistare servizi di audioconferenza in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)

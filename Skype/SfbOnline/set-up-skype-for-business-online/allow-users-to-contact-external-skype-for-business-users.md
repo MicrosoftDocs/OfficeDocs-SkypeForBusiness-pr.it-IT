@@ -28,17 +28,17 @@ ms.custom:
 - O365P_ShareLync
 - LIL_Placement
 description: "Scopri come configurare Skype for business per consentire agli utenti di parlare con gli utenti di un'altra organizzazione o di consentire loro di accedere ai contatti esterni. "
-ms.openlocfilehash: 394613e3137c65e814cc08dd898ec797d560d1c6
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: a1f399f7b127596aaf28c7e22b2c65525c72a8e4
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42010939"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44164825"
 ---
 # <a name="allow-users-to-contact-external-skype-for-business-users"></a>Permettere agli utenti di contattare utenti Skype for Business esterni
 
 > [!NOTE]
-> La Federazione di Skype for business non è disponibile per Office 365 gestito da 21Vianet e dalle organizzazioni di Office 365 Germany. 
+> La Federazione di Skype for business non è disponibile per Microsoft 365 o Office 365 gestito da 21Vianet e dalle organizzazioni Microsoft 365 o Office 365 Germany. 
   
 Seguire i passaggi di questo articolo quando:
   
@@ -51,11 +51,11 @@ Seguire i passaggi di questo articolo quando:
 ## <a name="enable-business-to-business-communications-for-your-users"></a>Abilitare le comunicazioni business-to-business per gli utenti
 <a name="bk_preview"> </a>
 
-Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di amministratore](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) in Office 365 in entrambe le organizzazioni.
+Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di amministratore](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) in Microsoft 365 o Office 365 in entrambe le organizzazioni.
 
 ![Icona che mostra il logo](../images/teams-logo-30x30.png) di Microsoft teams **con l'interfaccia di amministrazione di teams**
   
-1. Accedere con l'account di amministratore di Office 365. 
+1. Accedere con l'account di amministratore di Microsoft 365 o Office 365. 
     
 2. Nell'interfaccia di amministrazione accedere a**Teams**di interfaccia di **Amministrazione** > .
     
@@ -64,8 +64,8 @@ Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di 
 3. Nel **centro teams**scegliere **Skype** > **legacy Portal** 
  ![scegliere il portale legacy di SFB.](../images/SFBlegacy-size65.png)
  
-4. Nell'interfaccia di **amministrazione di Skype for business** scegli **** > **comunicazioni esterne**dell'organizzazione.
-5. Per configurare la comunicazione con un'azienda specifica o con utenti di un altro dominio, nella casella a discesa scegliere **solo per i domini consentiti**.
+4. Nell'interfaccia di **amministrazione di Skype for business** scegli **Organization** > **comunicazioni esterne**dell'organizzazione.
+5. Per configurare la comunicazione con una specifica azienda o con utenti in un altro dominio, nella casella di riepilogo a discesa scegliere **Attiva solo per i domini consentiti**.
     
     In alternativa, se vuoi abilitare la comunicazione con tutti gli altri utenti del mondo che hanno aperto i criteri di Skype for business, scegli attivato **eccetto i domini bloccati**. Questa è l'impostazione predefinita.
     
@@ -98,7 +98,7 @@ Per testare la configurazione, è necessario un contatto in Skype for business c
     
     Se viene visualizzato un messaggio che non può essere inviato a causa di criteri aziendali, è necessario effettuare un doppio controllo sugli [URL e gli intervalli di indirizzi IP di Office 365](https://docs.microsoft.com/microsoftteams/office-365-urls-ip-address-ranges).
     
-3. Chiedere al contatto Skype for business di inviare una richiesta di chat. Se non si riceve la richiesta, il problema è che le impostazioni del firewall (presumendo che abbiano già confermato le impostazioni del firewall siano corrette).
+3. Chiedere al contatto Skype for business di inviare una richiesta di chat. Se non si riceve la richiesta, il problema sono le impostazioni del firewall, supponendo di aver già verificato che le impostazioni firewall dell'altra organizzazione siano corrette.
     
 4. Un altro modo per verificare se il problema è il firewall consiste nell'accedere a una posizione WiFi non dietro il firewall, ad esempio un coffee shop, e usare Skype for business per inviare una richiesta al contatto per la chat. Se il messaggio passa da lì, ma non quando si è al lavoro, si sa che il problema è il firewall.
     
@@ -116,7 +116,7 @@ Dopo aver abilitato le comunicazioni esterne con altri utenti di Skype for busin
     
 - Per configurare la Federazione tra Lync e Skype for business online, vedere questo articolo: [configurazione del supporto federativo per un cliente di Lync Online](https://technet.microsoft.com/library/hh202193.aspx).
     
-- Quando due utenti di Skype for business in Office 365 comunicano tra loro su domini separati, possono usare solo le caratteristiche di Skype for business (ad esempio, conversazioni video o condivisione desktop) attivate in entrambe le organizzazioni.
+- Quando due utenti di Skype for business in Microsoft 365 o Office 365 comunicano tra loro su domini distinti, possono usare solo le caratteristiche di Skype for business (ad esempio, conversazioni video o condivisione desktop) attivate in entrambe le organizzazioni.
     
 - Se un utente di Skype for business nell'organizzazione viene inserito in un blocco sul posto o in una controversia legale, le conversazioni ISTANTANEe tra l'utente e gli altri utenti di Skype for business o Skype verranno salvate in **elementi ripristinabili** nella cassetta postale. Le conversazioni non vengono salvate nella cartella **Cronologia conversazioni** nella cassetta postale.
     
@@ -125,7 +125,7 @@ Dopo aver abilitato le comunicazioni esterne con altri utenti di Skype for busin
 
 Dopo aver abilitato le comunicazioni esterne per l'intera azienda, è possibile disattivarle solo per singoli utenti specifici.
   
-1. Accedere con l'account di amministratore di Office 365.
+1. Accedere con l'account di amministratore di Microsoft 365 o Office 365.
     
 2. Nell'interfaccia di amministrazione, passa a utenti**attivi**degli **utenti** > .
     

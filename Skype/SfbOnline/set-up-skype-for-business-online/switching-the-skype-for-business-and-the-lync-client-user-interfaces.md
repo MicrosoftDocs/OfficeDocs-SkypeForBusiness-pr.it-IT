@@ -19,17 +19,17 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-description: 'Learn how to switch between Skype for Business and Lync client user interfaces using PowerShell in Office 365 '
-ms.openlocfilehash: 02221d0edde6a37ec16a4820792d1d18756d4bb7
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+description: 'Informazioni su come passare tra le interfacce utente del client Skype for business e di Lync con PowerShell in Microsoft 365 o Office 365 '
+ms.openlocfilehash: 02542d11c7315c8f7e183fb78eebf210ead2df94
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41706451"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44164305"
 ---
 # <a name="switching-between-the-skype-for-business-and-the-lync-client-user-interfaces"></a>Passaggio tra le interfacce utente del client Skype for Business e del client Lync
 
-[] Nelle organizzazioni che dispongono di Skype for Business online, puoi utilizzare una sessione remota di PowerShell in Office 365 per abilitare gli utenti Skype for Business a utilizzare l'interfaccia utente del client Skype for Business o quella del client Skype for Business (Lync). L'impostazione predefinita prevede che gli utenti utilizzino l'interfaccia utente del client Skype for Business. Se si preferisce usare l'esperienza client Lync, è possibile gestire il primo comportamento del client di avvio per visualizzare l'interfaccia utente di Lync eseguendo i passaggi descritti più avanti in questo argomento.
+Per le organizzazioni Skype for business online, è possibile usare la remota PowerShell in Microsoft 365 o Office 365 per consentire agli utenti di Skype for business di usare il client Skype for business o l'interfaccia utente del client Skype for business (Lync). L'impostazione predefinita prevede che gli utenti utilizzino l'interfaccia utente del client Skype for Business. Se si preferisce usare l'esperienza client Lync, è possibile gestire il primo comportamento del client di avvio per visualizzare l'interfaccia utente di Lync eseguendo i passaggi descritti più avanti in questo argomento.
   
 > [!NOTE]
 > L'esperienza client Lync 2013 non è prevista per le versioni client di Skype for Business 2016. Prima di provare a configurare l'ambiente client per l'utilizzo del client Lync 2013, verifica che la versione client non inizi con il numero 16; ad esempio: 16.x.x.x. 
@@ -150,26 +150,26 @@ Questa tabella visualizza tutti i criteri personalizzati online disponibili. Son
 |**Nome del criterio**|**EnableSkypeUI**|
 |:-----|:-----|
 `ClientPolicyDefaultPhoto`||
-`ClientPolicyDefaultPhotoDisableSkypeUI` |False|
+`ClientPolicyDefaultPhotoDisableSkypeUI` |Falso|
 `ClientPolicyNoIMURL`||
-`ClientPolicyNoIMURLDisableSkypeUI` |False|
+`ClientPolicyNoIMURLDisableSkypeUI` |Falso|
 `ClientPolicyNoIMURLPhoto`||
-`ClientPolicyNoIMURLPhotoDisableSkypeUI` |False|
+`ClientPolicyNoIMURLPhotoDisableSkypeUI` |Falso|
 `ClientPolicyNoSaveIMNoArchivingI`||
-`ClientPolicyNoSaveIMNoArchivingDisableSkypeUI` |False|
+`ClientPolicyNoSaveIMNoArchivingDisableSkypeUI` |Falso|
 `ClientPolicyNoSaveIMNoArchivingNoIMURL`||
-`ClientPolicyNoSaveIMNoArchivingNoIMURLDisableSkypeUI` |False|
+`ClientPolicyNoSaveIMNoArchivingNoIMURLDisableSkypeUI` |Falso|
 `ClientPolicyNoSaveIMNoArchivingNoIMURLPhoto` ||
-`ClientPolicyNoSaveIMNoArchivingNoIMURLPhotoDisableSkypeUI`|False|
+`ClientPolicyNoSaveIMNoArchivingNoIMURLPhotoDisableSkypeUI`|Falso|
 `ClientPolicyNoSaveIMNoArchivingPhoto`||
-`ClientPolicyNoSaveIMNoArchivingPhotoDisableSkypeUI` |False|
+`ClientPolicyNoSaveIMNoArchivingPhotoDisableSkypeUI` |Falso|
 
    
 Per iniziare a usare Windows PowerShell, vedere i seguenti argomenti:
   
-- [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
+- [Perché è necessario usare Microsoft 365 o Office 365 PowerShell](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-- [Modi migliori per gestire Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+- [Procedure consigliate per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
     
 ## <a name="first-launch-client-behaviors"></a>Comportamenti del client al primo avvio
 

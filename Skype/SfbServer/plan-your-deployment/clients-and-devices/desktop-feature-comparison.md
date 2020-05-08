@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 16b14d59-7737-4f9d-aa4d-83765a18ea07
 description: 'Riepilogo: gli amministratori di Skype for Business Server 2015 o Skype for business online possono utilizzare queste tabelle per comprendere quali funzionalità sono supportate nei client.'
-ms.openlocfilehash: 2da6ed53ea70e6a3065b283456ccf028fd04ca6f
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: 4d23a23b133366401d784d4e403b283af1967162
+ms.sourcegitcommit: 6e24ea8aa9cccf8a1a964c8ed414ef5c7de3dc17
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44041953"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44158923"
 ---
 # <a name="desktop-client-feature-comparison-for-skype-for-business-server-2015"></a>Confronto delle funzionalità dei client desktop per Skype for Business Server 2015
 
@@ -165,7 +165,7 @@ Per informazioni dettagliate, vedere la [Descrizione del servizio Skype for busi
 In questa tabella vengono illustrate le funzionalità relative al supporto dei servizi vocali.
   
 > [!NOTE]
-> Le funzionalità di Skype for Business Voice (telefonia) sono limitate a determinati piani di sottoscrizione di Skype for business online. > per informazioni dettagliate, vedere la [Descrizione del servizio Skype for business online](https://technet.microsoft.com/library/jj822172.aspx).
+> Le funzionalità di Skype for Business Voice (telefonia) sono limitate a determinati piani di sottoscrizione di Skype for business online. Per informazioni dettagliate, vedere la [Descrizione del servizio Skype for business online](https://technet.microsoft.com/library/jj822172.aspx).
   
 | Caratteristica/funzionalità | Client Skype for business 2015 o 2016 | Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -189,7 +189,8 @@ In questa tabella vengono illustrate le funzionalità relative al supporto dei s
 |Routing basato su posizione  |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;||&#x2714;|
 |Gestisci Response Group/gruppo di chiamate del team |&#x2714;||&#x2714;|||||||
 |Chiamata dell'operatore automatico di risposta |&#x2714;||&#x2714;|||||||
- &#x2776; questa funzionalità non è disponibile in Skype for business online.
+
+&#x2776; questa funzionalità non è disponibile in Skype for business online.
   
 ## <a name="external-users-support"></a>Supporto per gli utenti esterni
 

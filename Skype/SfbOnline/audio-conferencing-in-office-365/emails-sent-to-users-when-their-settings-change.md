@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Scopri quali informazioni vengono inviate automaticamente agli utenti tramite posta elettronica quando modificano le impostazioni di conferenza telefonica in Skype for Business online. '
-ms.openlocfilehash: 12904c6485a422c7df314767b58ac485c38816ea
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: e2f58bfe582b7adc6672c06bec0e90571ff9a96a
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41986551"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44164275"
 ---
 # <a name="emails-sent-to-users-when-their-settings-change-in-skype-for-business-online"></a>Messaggi di posta elettronica inviati agli utenti quando le loro impostazioni cambiano in Skype for Business online
 
@@ -35,7 +35,7 @@ ms.locfileid: "41986551"
 
 I messaggi di posta elettronica vengono inviati automaticamente agli utenti che sono [abilitati per le audioconferenze](set-up-audio-conferencing.md) tramite Microsoft come provider di servizi di audioconferenza.
   
-By default, there are four types of email that will be sent to your users who are enabled for Audio Conferencing. However, if you want to limit the number of emails sent to users, you can turn it off. Audio Conferencing in Office 365 will send email to your users' email when:
+Per impostazione predefinita, sono disponibili quattro tipi di messaggi di posta elettronica che verranno inviati agli utenti abilitati per i servizi di audioconferenza. Tuttavia, se si vuole limitare il numero di messaggi di posta elettronica inviati agli utenti, è possibile disattivarlo. I servizi di audioconferenza in Microsoft 365 o Office 365 invieranno messaggi di posta elettronica all'indirizzo di posta elettronica degli utenti quando:
   
 - **Viene assegnata loro una licenza di Audioconferenza o quando cambi il provider di audioconferenza e passi a Microsoft.**
     
@@ -76,7 +76,7 @@ By default, there are four types of email that will be sent to your users who ar
     
     This happens when the **Audio Conferencing** license is removed from a user or when changing the audio conferencing provider of a user from Microsoft to a third-party audio conferencing provider or when setting the provider to **None**. This email contains the instructions and information for the user to use the Skype for Business Online Meeting Update Tool to remove audio conferencing specific information, such as the default conference phone number or conference ID.
     
-    Consulta la sezione [Assegnare o rimuovere licenze per Office 365 per le aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
+    Vedere [assegnare o rimuovere licenze per le app Microsoft 365 per le aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).
     
     Di seguito è riportato un esempio di questo messaggio di posta elettronica:
     
@@ -87,7 +87,7 @@ By default, there are four types of email that will be sent to your users who ar
 
 ## <a name="make-changes-to-the-email-messages-that-are-sent-to-them"></a>Apportare modifiche ai messaggi di posta elettronica inviati
 
-You can make changes to the email that is automatically sent to users including the email address and the display name that is included in the *From* contact information. By default, the sender of the emails will be from Office 365, but you can change the email address and display name using Windows PowerShell and the [Set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285) cmdlet. To make changes to the email address that is sending the email to the users, you must:
+È possibile apportare modifiche al messaggio di posta elettronica inviato automaticamente agli utenti, inclusi l'indirizzo di posta elettronica e il nome visualizzato incluso nelle informazioni *di contatto da* . Per impostazione predefinita, il mittente dei messaggi di posta elettronica sarà da Microsoft 365 o Office 365, ma è possibile modificare l'indirizzo di posta elettronica e il nome visualizzato usando Windows PowerShell e il cmdlet [set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285) . Per apportare modifiche all'indirizzo di posta elettronica che invia il messaggio di posta elettronica agli utenti, è necessario:
   
 - Immetti il nome visualizzato nel parametro  _SendEmailFromDisplayName_.
     
@@ -118,7 +118,7 @@ Per impostazione predefinita, verranno inviati messaggi di posta elettronica agl
     
 2. Nella pagina **delle impostazioni di Microsoft Bridge** selezionare o deselezionare **Invia automaticamente i messaggi di posta elettronica agli utenti se le impostazioni dei servizi di audioconferenza cambiano**. 
     
-3. Fai clic su **Salva**. 
+3. Fare clic su **Salva**. 
 
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
@@ -145,13 +145,13 @@ Puoi usare il cmdlet [set-CsOnlineDialInConferencingTenantSettings](https://go.m
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-- Per impostazione predefinita, il mittente dei messaggi di posta elettronica sarà di Office 365, ma è possibile modificare l'indirizzo di posta elettronica e il nome visualizzato usando Windows PowerShell e il cmdlet [set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285) .
+- Per impostazione predefinita, il mittente dei messaggi di posta elettronica sarà da Microsoft 365 o Office 365, ma è possibile modificare l'indirizzo di posta elettronica e il nome visualizzato usando Windows PowerShell e il cmdlet [set-CsOnlineDialInConferencingTenantSettings](https://go.microsoft.com/fwlink/?LinkId=627285) .
     
-- Windows PowerShell riguarda la gestione degli utenti e le azioni che sono autorizzati o meno a eseguire. Con Windows PowerShell puoi gestire Office 365 tramite un unico punto di amministrazione, che ti agevola il lavoro quotidiano quando hai molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedi i seguenti argomenti:
+- Windows PowerShell riguarda la gestione degli utenti e gli elementi consentiti o non consentiti. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
-  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Perché è necessario usare Microsoft 365 o Office 365 PowerShell](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-  - [Modi migliori per gestire Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Procedure consigliate per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
     
 - Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo con l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche all'impostazione per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti: 
     

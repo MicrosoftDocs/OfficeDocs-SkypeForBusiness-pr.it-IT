@@ -17,12 +17,12 @@ description: Informazioni su come configurare i piani di chiamata Microsoft e il
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 92862eb960722ac2becbe216cdec5281282106b5
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: b76f8605aa1151911c26e0724db161b3a497fcf6
+ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905888"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44164555"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -135,7 +135,7 @@ Tieni presente che può essere necessario un po' di tempo (fino a un paio di ore
 
 ## <a name="configure-location-information-service"></a>Configurare il servizio informazioni sulla posizione
 
-Un client teams ottiene gli indirizzi di emergenza dalle posizioni associate a identificatori di rete diversi. Sono supportate sia le subnet che i punti di accesso wireless (WAP). Il supporto per switch/porta Ethernet è in sospeso.
+Un client teams ottiene gli indirizzi di emergenza dalle posizioni associate a identificatori di rete diversi. Sono supportate sia le subnet che i punti di accesso wireless (WAP). Se sono presenti più posizioni, il WAP avrà la precedenza sulla subnet. Il supporto per switch/porta Ethernet è in sospeso.
 
 Affinché un client ottenga una posizione, è necessario popolare il servizio informazioni sulla posizione con gli identificatori di rete e le posizioni di emergenza usando i cmdlet seguenti:  
 

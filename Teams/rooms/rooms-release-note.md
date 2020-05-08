@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può leggere le note sulla versione per Microsoft teams rooms, che elencano i miglioramenti cumulativi nelle sale di Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ffc6b052fca002493b31a2f7c55f43cf9ce8804a
-ms.sourcegitcommit: 3325fd9de57367e9dd60685d1fef096921441a76
+ms.openlocfilehash: 0a4af973e02c8ae3799ee0abe6df5c9694956635
+ms.sourcegitcommit: 6e24ea8aa9cccf8a1a964c8ed414ef5c7de3dc17
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997217"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44158953"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
@@ -29,6 +29,7 @@ In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di M
 
 |Rilascio |Pubblicato in <br/> Microsoft Store |
 |--- |--- |
+|4.4.41.0 |05/06/2020 |
 |4.4.25.0 |03/31/2020 |
 |4.3.42.0 |03/02/2020 |
 |4.3.33.0 |1/10/2020 |
@@ -62,6 +63,12 @@ In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di M
 |RTM (1.0.8) |12/7/2016 |
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Funzionalità di introduzione e risoluzione dei problemi di Microsoft teams rooms
+
+### <a name="44410-05062020"></a>4.4.41.0 (05/06/2020)
+
+Introdotti in questo aggiornamento:
+- Correzioni per l'affidabilità per l'avvio delle applicazioni in Windows 10 Kiosk
+
 ### <a name="44250-03312020"></a>4.4.25.0 (03/31/2020)
 
 Introdotti in questo aggiornamento:

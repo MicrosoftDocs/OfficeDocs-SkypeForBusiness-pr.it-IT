@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
-ms.openlocfilehash: 9274394c15e76aa985cf9e0a005963b79e0acac9
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: e461a145280e6edf8c2039dbea55b5547dd5596e
+ms.sourcegitcommit: 6e24ea8aa9cccf8a1a964c8ed414ef5c7de3dc17
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042593"
+ms.lasthandoff: 05/07/2020
+ms.locfileid: "44158983"
 ---
 # <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
 
@@ -28,6 +28,7 @@ Prima di poter usare i modelli di query di Power BI per Call Quality Dashboard (
 
 Leggere [usare Power BI per analizzare i dati di Call Quality dashboard per i team](CQD-Power-BI-query-templates.md) per informazioni su questi modelli.
 
+Verificare di avere il ruolo di [accesso Call Quality dashboard](https://docs.microsoft.com/microsoftteams/turning-on-and-using-call-quality-dashboard#assign-roles-for-accessing-cqd) appropriato per accedere ai report di Power bi. 
 
 ## <a name="installation"></a>Installazione
 
