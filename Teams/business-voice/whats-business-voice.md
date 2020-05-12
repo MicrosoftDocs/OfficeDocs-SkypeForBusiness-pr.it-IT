@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Panoramica di Microsoft 365 Business Voice e di come può aiutare le piccole e medie imprese a comunicare in modo più efficiente.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bffce01704402aac8fea90aee92d6bd854c5874f
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 828d05e68e84145868f4e58156fbe86ec8f14912
+ms.sourcegitcommit: 42b9b921d28cb02f537f0598653835193eb3f42f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780795"
+ms.lasthandoff: 05/08/2020
+ms.locfileid: "44170677"
 ---
 # <a name="what-is-microsoft-365-business-voice"></a>Che cos'è Microsoft 365 Business Voice?
 
@@ -32,15 +32,19 @@ Business Voice fa tutto questo integrando le funzionalità del Sistema telefonic
 
 Business Voice è la scelta giusta se l'organizzazione ha un massimo di 300 utenti e si usa uno degli abbonamenti a Microsoft 365 seguenti:
 
-* Microsoft 365 Business Basic
-* Microsoft 365 Business Standard
-* Office 365 E1
-* Office 365 E3
-* Office 365 F1
-* Microsoft 365 A1
-* Microsoft 365 A3
-* Microsoft 365 E3
-* Microsoft 365 Business
+- Microsoft 365 Business Basic
+- Microsoft 365 Business Standard
+- Microsoft 365 Business Premium
+- App di Microsoft per le aziende 
+- App di Microsoft per grandi imprese
+- Microsoft 365 F1
+- Office 365 F1
+- Microsoft e Office 365 Enterprise E1, E3 o E5
+- Microsoft 365 e Office 365 Education A1, A3 o A5
+- Microsoft 365 e Office 365 Government G1, G3 o G5 (solo GCC)
+- Microsoft 365 Nonprofit Business Basic
+- Microsoft 365 Nonprofit Business Standard
+- Microsoft 365 e Office 365 Nonprofit E1, E3 o E5
 
 Business Voice è disponibile in oltre 70 paesi e aree geografiche. La possibilità di configurare Business Voice autonomamente, di trasferire i numeri di telefono su Microsoft 365 e gestire i numeri di telefono in Microsoft 365 dipende dal paese o dalla regione in cui si trova il tenant di Microsoft 365. Per ulteriori informazioni, vedere [Disponibilità di Business Voice per paesi e aree geografiche](country-region-availability.md).
 
