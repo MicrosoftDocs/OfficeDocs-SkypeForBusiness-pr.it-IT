@@ -12,12 +12,12 @@ ms:contentKeyID: 48679556
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 937dfe2a63f755a7366fbb1b82c5593c466ac544
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: b78e9be0f3b885a40fcf313173a1281ac5489936
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42181409"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221840"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,7 +37,7 @@ ms.locfileid: "42181409"
 
 _**Ultimo argomento modificato:** 2012-10-19_
 
-La connettività di messaggistica istantanea (IM) del provider hosted consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti da provider ospitati, tra cui Microsoft Office 365 e Lync Online.
+La connettività di messaggistica istantanea (IM) del provider hosted consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti da provider ospitati, tra cui Microsoft 365 e Lync Online.
 
 Ogni provider ospitato è configurato con il nome di dominio completo del server perimetrale del provider e il livello di verifica predefinito **Consenti agli utenti di comunicare solo con le persone incluse nell'elenco Contatti che usano questo provider**.
 
@@ -59,13 +59,13 @@ Per creare o modificare provider gestiti, eseguire la procedura seguente:
 
 6.  Nella pagina **Modifica provider federato SIP** è possibile immettere o modificare le seguenti impostazioni:
     
-      - **Abilitare le comunicazioni con questo provider**   selezionando questa impostazione, viene abilitata la comunicazione con gli utenti del provider.
+      - **Abilitare le comunicazioni con questo provider**     Selezionando questa impostazione, viene abilitata la comunicazione con gli utenti del provider.
     
-      - **Nome provider:**   una proprietà obbligatoria, digitare il nome del provider come verrà riflesso nell'elenco dei provider federati SIP.
+      - **Nome provider:**     Una proprietà obbligatoria, digitare il nome del provider come verrà riflesso nell'elenco dei provider federati SIP.
     
-      - **Servizio Access Edge (FQDN):**   una proprietà obbligatoria, digitare il nome di dominio completo del servizio Access Edge del provider ospitato che si sta configurando. Queste informazioni devono essere fornite dal provider ospitato e devono essere modificate solo se il provider ospitato apporta una modifica al nome di dominio completo del servizio Access Edge nel provider ospitato.
+      - **Servizio Access Edge (FQDN):**     Una proprietà obbligatoria, digitare il nome di dominio completo del servizio Access Edge del provider ospitato che si sta configurando. Queste informazioni devono essere fornite dal provider ospitato e devono essere modificate solo se il provider ospitato apporta una modifica al nome di dominio completo del servizio Access Edge nel provider ospitato.
     
-      - **Livello di verifica predefinito:**   l'impostazione predefinita, **Consenti agli utenti di comunicare con persone presenti nell'elenco contatti che usano questo provider** limiterà la comunicazione ai contatti accettati e che si trovano nell'elenco dei contatti.
+      - **Livello di verifica predefinito:**     L'impostazione predefinita **consente agli utenti di comunicare con le persone presenti nell'elenco contatti che usano questo provider** limiterà la comunicazione ai contatti accettati e che si trovano nell'elenco dei contatti.
         
         Se si seleziona **Consenti agli utenti di comunicare con chiunque usi questo provider**, viene rimossa la limitazione che prevede che sia stato ricevuto e accettato un invito di contatto. Questa impostazione non limita gli utenti dai quali è possibile essere contattati dalla rete del provider ospitato.
 

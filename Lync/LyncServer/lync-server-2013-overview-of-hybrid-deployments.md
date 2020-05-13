@@ -12,12 +12,12 @@ ms:contentKeyID: 48185845
 ms.date: 05/25/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ae6aec94b75bdb559dace5fe110c1b07442f6171
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0d5b3b276d93fc0f09ad42be9448dc87eb1ba049
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42216272"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221540"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -39,7 +39,7 @@ _**Ultimo argomento modificato:** 2016-05-25_
 
 Una distribuzione ibrida di Lync Server è una distribuzione in cui gli utenti di un dominio, ad esempio contoso.com, vengono divisi tra l'utilizzo di Lync Server in locale e Microsoft Lync Online. Alcuni utenti del dominio sono ospitati nel Lync Server locale e alcuni utenti sono ospitati in Skype for business online.
 
-È possibile configurare la distribuzione Lync locale per l'ambiente ibrido con Skype for business online e utilizzare la sincronizzazione di Active Directory per sincronizzare gli utenti locali e online. È inoltre possibile configurare le distribuzioni ibride per l'integrazione con Exchange locale e SharePoint o con le applicazioni di Microsoft Office 365, tra cui Exchange Online e SharePoint Online.
+È possibile configurare la distribuzione Lync locale per l'ambiente ibrido con Skype for business online e utilizzare la sincronizzazione di Active Directory per sincronizzare gli utenti locali e online. È inoltre possibile configurare le distribuzioni ibride per l'integrazione con Exchange e SharePoint locali oppure con le applicazioni Microsoft 365 e Office 365, tra cui Exchange Online e SharePoint Online.
 
 In questa sezione viene illustrata la distribuzione delle applicazioni necessarie per una distribuzione ibrida di Lync Server e quindi la configurazione della distribuzione per la gestione degli utenti tra Lync Server locale e Skype for business online.
 
@@ -60,4 +60,3 @@ Per ulteriori informazioni su Skype for business online, vedere [Lync Online](ht
 </div>
 
 </div>
-

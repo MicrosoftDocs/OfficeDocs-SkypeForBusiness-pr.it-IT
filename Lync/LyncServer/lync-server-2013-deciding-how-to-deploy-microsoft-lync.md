@@ -12,12 +12,12 @@ ms:contentKeyID: 48184423
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: fdd7deb87eef28e3b439f290f6da5a90d2fe50dc
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: d5f4e622d71175ec393706af39ce470c5030216a
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42187369"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221800"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,7 +37,7 @@ ms.locfileid: "42187369"
 
 _**Ultimo argomento modificato:** 2012-10-03_
 
-Durante la pianificazione di Lync, la prima decisione importante è la distribuzione di Microsoft Lync: come Lync Server 2013 in locale o Lync Online con Microsoft Office 365 nel cloud.
+Durante la pianificazione di Lync, la prima decisione importante è la distribuzione di Microsoft Lync: come Lync Server 2013 in locale oppure Lync Online con Microsoft 365 o Office 365 nel cloud.
 
   - **Lync Server 2013 locale** : questa opzione offre il set completo di funzionalità di Lync e fornisce la massima flessibilità per la configurazione, la personalizzazione e la gestione della distribuzione. Tutti i server sono installati localmente e mantenuti presso l'organizzazione. Una distribuzione locale fornisce l'intera gamma di funzionalità di Lync Server.
 
@@ -51,17 +51,17 @@ Il tipo di distribuzione più adatto per un'azienda dipende dal tipo di workload
 
 Una distribuzione locale di Lync Server rappresenta la soluzione ideale nei seguenti casi:
 
-  - **Funzionalità complete di VoIP aziendale**   se si prevede di distribuire una soluzione VoIP aziendale completa per la sostituzione del sistema PBX o che utilizza funzionalità di chiamata avanzate, è necessaria una distribuzione locale di Lync Server. La distribuzione locale supporta un tipo di connettività diretta con i sistemi e trunk PBX, e funzionalità telefoniche avanzate come gruppi di risposta e parcheggio di chiamata. Lync Online attualmente non supporta queste funzionalità.
+  - Funzionalità complete di **VoIP aziendale**     Se si prevede di distribuire una soluzione VoIP aziendale completa per la sostituzione del sistema PBX o che utilizza funzionalità di chiamata avanzate, è necessaria una distribuzione locale di Lync Server. La distribuzione locale supporta un tipo di connettività diretta con i sistemi e trunk PBX, e funzionalità telefoniche avanzate come gruppi di risposta e parcheggio di chiamata. Lync Online attualmente non supporta queste funzionalità.
 
-  - **Controlli di qualità multimediale**   se si desidera che l'intera gamma di funzionalità di controllo della qualità multimediale, ad esempio le funzionalità di gestione delle chiamate (CAC) e qualità del servizio (QoS), si desideri una distribuzione locale.
+  - Controlli di qualità **multimediale**     Se si desidera che l'intera gamma di funzionalità di controllo della qualità multimediale, ad esempio le caratteristiche di servizio di ammissione di chiamata (CAC) e Quality of Service (QoS), si desideri una distribuzione locale.
 
-  - **Chat persistente**   se è necessario distribuire la chat persistente per l'organizzazione, è necessario scegliere una distribuzione locale.
+  - **Chat**     persistente Se è necessario distribuire la chat persistente per l'organizzazione, è necessario scegliere una distribuzione locale.
 
-  - **applicazioni server di**   terze parti solo le distribuzioni locali possono funzionare con applicazioni di terze parti attendibili che utilizzano Microsoft Unified Communications Managed API (UCMA).
+  - Applicazioni server di terze **parti**     Solo le distribuzioni locali possono lavorare con le applicazioni di terze parti attendibili che utilizzano Microsoft Unified Communications Managed API (UCMA).
 
-  - **Società multi-nazionali/multiregionali che necessitano di supporto**   regionale se si dispone di datacenter in più paesi o aree geografiche e devono essere distribuiti e gestiti su base regionale, è preferibile una distribuzione locale, poiché fornisce questo tipo di funzionalità di gestione regionale.
+  - **Società multi-nazionali/multiregionali che necessitano di supporto regionale**     Se si dispone di datacenter in più paesi o aree geografiche e devono essere distribuiti e gestiti su base regionale, è preferibile una distribuzione locale, in quanto fornisce questo tipo di funzionalità di gestione regionale.
 
-  - **Controllo completo sui criteri, i report e gli aggiornamenti**   con una distribuzione di Lync Server locale, è possibile accedere al set completo di criteri server e client, al monitoraggio e ad altri report e alla tempistica degli aggiornamenti. Lync Online fornisce un sottoinsieme di impostazioni e report di criteri e fornisce una finestra limitata, anche se significativa, per l'accettazione degli aggiornamenti.
+  - **Controllo completo sui criteri, i report e gli aggiornamenti**     Con una distribuzione di Lync Server locale, è possibile accedere al set completo di criteri server e client, al monitoraggio e ad altri report e alla tempistica degli aggiornamenti. Lync Online fornisce un sottoinsieme di impostazioni e report di criteri e fornisce una finestra limitata, anche se significativa, per l'accettazione degli aggiornamenti.
 
 </div>
 
@@ -82,4 +82,3 @@ Se nessuno dei precedenti rappresenta un fattore di importanza critica per la pr
 </div>
 
 </div>
-

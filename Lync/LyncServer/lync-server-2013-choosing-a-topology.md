@@ -12,12 +12,12 @@ ms:contentKeyID: 48183634
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dc30881da768d8dad9f952df37bdf1accdf091b9
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6a75e1e829b59ff66df6b598c63b35f2f78981e4
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42192019"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221740"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -69,7 +69,7 @@ Quando si sceglie una topologia, è possibile utilizzare una delle opzioni di to
 
 Nella tabella seguente sono riepilogate le funzionalità disponibili con le topologie di Microsoft Lync Server 2013 supportate. Le intestazioni di colonna indicano la funzionalità disponibile per una determinata opzione di configurazione di server perimetrale. Utilizzando come esempio l'opzione di server perimetrale con scalabilità implementata e con bilanciamento del carico DNS, è possibile osservare che supporta la disponibilità elevata, può utilizzare indirizzi IP privati non instradabili (con NAT) o indirizzi IP pubblici instradabili assegnati alle interfacce esterne perimetrali e comporta una riduzione dei costi perché non è necessario un dispositivo di bilanciamento del carico hardware.
 
-Gli scenari di failover dei server perimetrali supportati con il bilanciamento del carico DNS sono sessioni punto-punto di Lync-to-Lync, sessioni di Lync Conferencing, sessioni Lync-to-PSTN e Office 365. Gli scenari di failover dei server perimetrali che non beneficiano del bilanciamento del carico DNS sono il failover per la messaggistica unificata di Exchange (prima di Exchange 2010 SP1), la connettività per la messaggistica istantanea pubblica e la Federazione con i computer che eseguono le comunicazioni di Office Server.
+Gli scenari di failover dei server perimetrali supportati con il bilanciamento del carico DNS sono sessioni punto-punto di Lync a Lync, sessioni di Lync Conferencing, sessioni Lync-to-PSTN, Office 365 e Microsoft 365. Gli scenari di failover del server perimetrale che non beneficiano del bilanciamento del carico DNS sono il failover per la messaggistica unificata di Exchange (prima di Exchange 2010 SP1), la connettività di messaggistica istantanea pubblica e la Federazione con i server che eseguono Office Communications.
 
 ### <a name="summary-of-edge-server-topology-options"></a>Riepilogo delle opzioni di topologia di server perimetrali
 
@@ -153,7 +153,7 @@ L'utilizzo di NAT per tutte le interfacce esterne perimetrali richiede l'utilizz
 
   - Lync Server 2013 il perimetro consolidato in scala (bilanciamento del carico DNS) richiede tre indirizzi IP pubblici per ogni server perimetrale in un pool perimetrale.
 
-  - Lync Server 2013 il perimetro consolidato in scala (bilanciamento del carico hardware) richiede tre indirizzi IP pubblici per l'indirizzo IP virtuale del dispositivo di bilanciamento del carico (un requisito di tempo che non incrementa il numero di server perimetrali aggiunti al pool) più tre indirizzi IP pubblici per Server perimetrale in un pool.
+  - Lync Server 2013 il perimetro consolidato in scala (bilanciamento del carico hardware) richiede tre indirizzi IP pubblici per l'indirizzo IP virtuale del dispositivo di bilanciamento del carico (un requisito di tempo che non incrementa il numero di server perimetrali aggiunti al pool) più tre indirizzi IP pubblici per ogni server perimetrale in un pool.
 
 ### <a name="ip-address-requirements-for-scaled-consolidated-edge-ip-address-per-role"></a>Requisiti di indirizzi IP per topologie di server perimetrali consolidati con scalabilità implementata (indirizzo IP per ruolo)
 
@@ -172,22 +172,22 @@ L'utilizzo di NAT per tutte le interfacce esterne perimetrali richiede l'utilizz
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>2</p></td>
+<td><p>2 </p></td>
 <td><p>6 </p></td>
 <td><p>3 (1 per VIP) + 6</p></td>
 </tr>
 <tr class="even">
-<td><p>3</p></td>
+<td><p>3 </p></td>
 <td><p>9 </p></td>
 <td><p>3 (1 per VIP) + 9</p></td>
 </tr>
 <tr class="odd">
-<td><p>4</p></td>
-<td><p>12</p></td>
+<td><p>4 </p></td>
+<td><p>12 </p></td>
 <td><p>3 (1 per VIP) + 12</p></td>
 </tr>
 <tr class="even">
-<td><p>5</p></td>
+<td><p>5 </p></td>
 <td><p>15 </p></td>
 <td><p>3 (1 per IP virtuale) + 15</p></td>
 </tr>
@@ -212,23 +212,23 @@ L'utilizzo di NAT per tutte le interfacce esterne perimetrali richiede l'utilizz
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>2</p></td>
-<td><p>2</p></td>
+<td><p>2 </p></td>
+<td><p>2 </p></td>
 <td><p>1 (1 per IP virtuale) + 2</p></td>
 </tr>
 <tr class="even">
-<td><p>3</p></td>
-<td><p>3</p></td>
+<td><p>3 </p></td>
+<td><p>3 </p></td>
 <td><p>3 (1 per IP virtuale) + 6</p></td>
 </tr>
 <tr class="odd">
-<td><p>4</p></td>
-<td><p>4</p></td>
+<td><p>4 </p></td>
+<td><p>4 </p></td>
 <td><p>4 (1 per IP virtuale) + 6</p></td>
 </tr>
 <tr class="even">
-<td><p>5</p></td>
-<td><p>5</p></td>
+<td><p>5 </p></td>
+<td><p>5 </p></td>
 <td><p>5 (1 per IP virtuale) + 6</p></td>
 </tr>
 </tbody>
@@ -271,7 +271,7 @@ Gli aspetti principali di cui tenere conto per la scelta della topologia sono la
 
 
 > [!IMPORTANT]
-> L'utilizzo del bilanciamento del carico DNS è consigliato se si sta eseguendo la Federazione con aziende che utilizzano Lync Server 2010 e Microsoft Office 365. Tenere presente che sono presenti effetti significativi sulle prestazioni se la maggior parte dei partner federati utilizza Office Communications Server 2007 o Office Communications Server 2007 R2.
+> L'utilizzo del bilanciamento del carico DNS è consigliato se si sta eseguendo la Federazione con aziende che utilizzano Lync Server 2010 e Office 365 o Microsoft 365. Tenere presente che sono presenti effetti significativi sulle prestazioni se la maggior parte dei partner federati utilizza Office Communications Server 2007 o Office Communications Server 2007 R2.
 
 
 

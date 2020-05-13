@@ -12,12 +12,12 @@ ms:contentKeyID: 48183894
 ms.date: 05/15/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 33f382fcbed7316948a865e7e7c75cf518b157fb
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f7f3f32b4e0c13ea68df183d19b020118e32205b
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42185519"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221610"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,7 +37,7 @@ ms.locfileid: "42185519"
 
 _**Ultimo argomento modificato:** 2015-05-14_
 
-Microsoft Lync Server 2013 deve essere in grado di comunicare con altre applicazioni e prodotti server in modo sicuro e senza problemi. Ad esempio, è possibile configurare Lync Server 2013 in modo che i dati dei contatti e/o i dati di archiviazione siano archiviati in Microsoft Exchange Server 2013; Tuttavia, è possibile eseguire questa operazione solo se Lync Server e Exchange sono in grado di comunicare in modo sicuro tra loro. Analogamente, è possibile pianificare una conferenza di Lync Server dall'interno di Microsoft SharePoint Server. Tuttavia, è possibile eseguire questa operazione solo se i due server (SharePoint e Lync Server) vengono confidati tra loro. Anche se è possibile utilizzare un meccanismo di autenticazione per la comunicazione Lync-to-Exchange e un meccanismo separato per la comunicazione Lync-to-SharePoint, un approccio migliore e più efficiente consiste nell'utilizzare un metodo standardizzato per tutti i server-to-server autenticazione e autorizzazione.
+Microsoft Lync Server 2013 deve essere in grado di comunicare con altre applicazioni e prodotti server in modo sicuro e senza problemi. Ad esempio, è possibile configurare Lync Server 2013 in modo che i dati dei contatti e/o i dati di archiviazione siano archiviati in Microsoft Exchange Server 2013; Tuttavia, è possibile eseguire questa operazione solo se Lync Server e Exchange sono in grado di comunicare in modo sicuro tra loro. Analogamente, è possibile pianificare una conferenza di Lync Server dall'interno di Microsoft SharePoint Server. Tuttavia, è possibile eseguire questa operazione solo se i due server (SharePoint e Lync Server) vengono confidati tra loro. Anche se è possibile utilizzare un meccanismo di autenticazione per la comunicazione Lync-to-Exchange e un meccanismo separato per la comunicazione Lync-to-SharePoint, un approccio migliore e più efficiente consiste nell'utilizzare un metodo standardizzato per tutte le autorizzazioni e l'autenticazione da server a server.
 
 L'utilizzo di un unico metodo standardizzato per l'autenticazione da server a server è l'approccio adottato da Lync Server 2013. Per la versione 2013, Lync Server 2013 (così come altri prodotti server Microsoft, tra cui Exchange 2013 e Microsoft SharePoint Server) supportano il protocollo OAuth (Open Authorization) per l'autenticazione e l'autorizzazione da server a server. Con OAuth, un protocollo di autorizzazione standard usato da diversi siti Web principali, le password e le credenziali utente non vengono trasferite da un computer all'altro. L'autorizzazione e l'autenticazione si basano, invece, sullo scambio di token di sicurezza che garantiscono l'accesso a un insieme di risorse per un periodo di tempo specifico.
 
@@ -57,9 +57,9 @@ Lync Server 2013 supporta tre scenari di autenticazione da server a server. Con 
 
   - Configurare l'autenticazione da server a server tra un'installazione locale di Lync Server 2013 e un'installazione locale di Exchange 2013 e/o Microsoft SharePoint Server.
 
-  - Configurare l'autenticazione da server a server tra una coppia di componenti di Office 365 (ad esempio, tra Microsoft Exchange e Microsoft Lync Server o tra Microsoft Lync Server e Microsoft SharePoint).
+  - Configurare l'autenticazione da server a server tra una coppia di componenti di Microsoft 365 (ad esempio, tra Microsoft Exchange e Microsoft Lync Server o tra Microsoft Lync Server e Microsoft SharePoint).
 
-  - Configurare l'autenticazione server-server in un ambiente cross-premise, ovvero l'autenticazione server-server tra un server locale e un componente di Office 365..
+  - Configurare l'autenticazione da server a server in un ambiente cross-premise, ovvero l'autenticazione da server a server tra un server locale e un componente Microsoft 365.
 
 Si noti che, in questo momento, solo Exchange 2013, SharePoint Server e Lync Server 2013 supportano l'autenticazione da server a server; Se uno di questi server non è in esecuzione, non sarà possibile implementare completamente l'autenticazione OAuth.
 
@@ -67,7 +67,7 @@ Si noti che, in questo momento, solo Exchange 2013, SharePoint Server e Lync Ser
 
 Tuttavia, l'autenticazione da server a server è necessaria se si desidera utilizzare alcune delle nuove funzionalità di Lync Server, ad esempio "archivio contatti unificato". Con l'archivio contatti unificato, Lync Server 2013 le informazioni di contatto sono archiviate in Exchange 2013 anziché in Lync Server; in questo modo gli utenti possono disporre di un unico gruppo di contatti facilmente accessibile dall'interno di Lync, Microsoft Outlook o Microsoft Outlook Web Access. Poiché l'archivio contatti unificato richiede che Lync Server 2013 condivida informazioni con Exchange 2013, è necessario utilizzare l'autenticazione da server a server per distribuire la caratteristica. L'autenticazione da server a server è necessaria anche se si sceglie di utilizzare l'archiviazione di Exchange, in cui le trascrizioni delle sessioni di messaggistica istantanea vengono salvate come messaggi di posta elettronica di Exchange 2013 anziché come singoli record di database.
 
-Per la versione di Office 365 di Lync Server per la comunicazione con la controparte di Exchange, Lync Server 2013 deve prima ottenere un token di sicurezza dal server di autorizzazione. Lync Server utilizza quindi tale token di sicurezza per identificarsi in Exchange. La versione di Exchange di Office 365 deve passare attraverso lo stesso processo per comunicare con Lync Server 2013.
+Per la versione di Microsoft 365 di Lync Server per la comunicazione con la controparte di Exchange, Lync Server 2013 deve prima ottenere un token di sicurezza dal server di autorizzazione. Lync Server utilizza quindi tale token di sicurezza per identificarsi in Exchange. La versione di Exchange di Microsoft 365 deve passare attraverso lo stesso processo per comunicare con Lync Server 2013.
 
 Per l'autenticazione server-server in locale tra due server Microsoft, non è invece necessario usare un server di token di terze parti. I prodotti server come Lync Server 2013 ed Exchange 2013 dispongono di un server token incorporato che può essere utilizzato per l'autenticazione con altri server Microsoft (come SharePoint Server) che supportano l'autenticazione da server a server. Ad esempio, Lync Server 2013 può rilasciare e firmare un token di sicurezza in modo autonomo, quindi può utilizzare quel token per comunicare con Exchange 2013. In questo caso, non è necessario un server di token di terze parti.
 

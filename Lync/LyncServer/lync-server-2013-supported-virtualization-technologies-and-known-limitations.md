@@ -12,12 +12,12 @@ ms:contentKeyID: 48184428
 ms.date: 02/07/2017
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c81b56fd8d0922b011840aa2b3133ce05d32ad13
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 0968f79b8c9aedc3dc2d2318a2e8abf5c51531d7
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42218282"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221146"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -45,9 +45,9 @@ Il plug-in VDI di Lync consente la chiamata audio e video per le tecnologie di v
 
 Il plug-in VDI di Lync supporta le funzionalità remote desktop complete nello scenario di desktop virtuale personale, ma non nello scenario di sessione Desktop remoto. Questi scenari possono essere descritti nel modo seguente:
 
-  - **Supportato: desktop virtuali personalizzati o VDI (Virtual Desktop Infrastructure).**    In questo scenario, ogni utente esegue l'accesso a un desktop virtuale personalizzabile ed è in grado di salvare i file sul desktop che persistono tra le sessioni. Servizi Desktop remoto Microsoft, VMware Horizon View e Citrix XenDesktop sono implementazioni che sono state testate per l'utilizzo con Lync. Per informazioni sugli ambienti VDI specifici del fornitore e sull'hardware client che sono stati testati da Microsoft, vedere [Infrastructure qualified for Microsoft Lync](https://go.microsoft.com/fwlink/?linkid=313435).
+  - **Supportato: desktop virtuali personalizzati o VDI (Virtual Desktop Infrastructure).**     In questo scenario, ogni utente esegue l'accesso a un desktop virtuale personalizzabile ed è in grado di salvare i file sul desktop che persistono tra le sessioni. Servizi Desktop remoto Microsoft, VMware Horizon View e Citrix XenDesktop sono implementazioni che sono state testate per l'utilizzo con Lync. Per informazioni sugli ambienti VDI specifici del fornitore e sull'hardware client che sono stati testati da Microsoft, vedere [Infrastructure qualified for Microsoft Lync](https://go.microsoft.com/fwlink/?linkid=313435).
 
-  - **Non supportata: sessioni di desktop remoto.**    In questo scenario, ogni utente esegue l'accesso a una sessione desktop virtuale generica che non può essere personalizzata. Le implementazioni di esempio includono Microsoft Remote Desktop Sessions (RDSH) e Citrix XenApp in combinazione con Citrix Receiver.
+  - **Non supportata: sessioni di desktop remoto.**     In questo scenario, ogni utente esegue l'accesso a una sessione desktop virtuale generica che non può essere personalizzata. Le implementazioni di esempio includono Microsoft Remote Desktop Sessions (RDSH) e Citrix XenApp in combinazione con Citrix Receiver.
 
 Il plug-in VDI di Lync non supporta altre tecnologie di virtualizzazione, ad esempio la virtualizzazione dell'applicazione, che consente l'utilizzo di un'applicazione senza richiedere l'installazione dell'applicazione completa localmente. Le implementazioni di esempio includono Citrix XenApp e Microsoft Application Virtualization (App-V). Le modalità di flusso applicazioni, comunicazione remota applicazioni e virtualizzazione mista, ad esempio la comunicazione remota applicazioni in Desktop remoto completo, non sono supportate.
 
@@ -81,7 +81,7 @@ Quando si utilizza Lync 2013 in un ambiente VDI, sono note le limitazioni seguen
     
       - Suonerie personalizzate e funzionalità di musica in attesa.
 
-  - Il plug-in VDI di Lync non è supportato in un ambiente di Office 365.
+  - Il plug-in VDI di Lync non è supportato in un ambiente Microsoft 365 o Office 365.
 
 </div>
 

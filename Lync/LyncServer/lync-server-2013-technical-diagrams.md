@@ -7,17 +7,17 @@ f1.keywords:
 - NOCSH
 TOCTitle: Technical diagrams
 ms:assetid: 7b6da49b-ac72-4ab0-8957-166e330b38fa
-ms:mtpsurl: https://technet.microsoft.com/en-us/library/Dn594589(v=OCS.15)
+ms:mtpsurl: https://technet.microsoft.com/library/Dn594589(v=OCS.15)
 ms:contentKeyID: 61180439
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 14a76769398b93e422a3d9cad2f8f84ad1c6f8bc
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 37a6ec347e6a6907ebd0736556ea02053ab05202
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42194979"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44219686"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,7 +37,7 @@ ms.locfileid: "42194979"
 
 _**Ultimo argomento modificato:** 2014-03-14_
 
-**Riepilogo:** questi diagrammi forniscono rappresentazioni visive delle soluzioni consigliate per Lync 2013.
+**Riepilogo:**   Questi diagrammi offrono una rappresentazione visiva delle soluzioni consigliate per Lync 2013.
 
 Queste risorse sono disponibili in formato Visio (con estensione VSD) (Visio 2010 o Visio 2013) e in formato PDF. Per informazioni su come stampare i documenti, vedere Suggerimenti per la stampa dei poster.
 
@@ -136,7 +136,7 @@ Questi manifesti illustrano in dettaglio un'area tecnica specifica e sono destin
 <p><a href="https://go.microsoft.com/fwlink/p/?linkid=391840">Ingrandire il poster in dettaglio con Zoom.it da Microsoft</a></p>
 <p><a href="https://go.microsoft.com/fwlink/p/?linkid=391837">Versione PDF</a> (indicata per dispositivi mobili o tablet)</p>
 <p><a href="https://go.microsoft.com/fwlink/p/?linkid=391839">Versione di Visio</a> (indicata per gli utenti con Visio)</p></td>
-<td><p>In questo poster vengono descritte le opzioni della piattaforma disponibili per Lync 2013 per BDMs e gli architetti i clienti possono scegliere tra Lync Online e Office 365, Lync ibrido, Lync Server locale e Lync ospitato. Il poster include le informazioni su ogni opzione architetturale, compresi gli scenari ideali per ciascuna di esse, i requisiti di licenze e le responsabilità dei professionisti IT.</p>
+<td><p>In questo poster vengono descritte le opzioni della piattaforma disponibili per Lync 2013 per BDMs e i clienti degli architetti possono scegliere Lync Online con Microsoft 365, Lync ibrido, Lync Server locale e Lync ospitato. Il poster include le informazioni su ogni opzione architetturale, compresi gli scenari ideali per ciascuna di esse, i requisiti di licenze e le responsabilità dei professionisti IT.</p>
 <p>Dimensioni: 34-by-44 Inch</p>
 <p>Questo poster è stato creato utilizzando Visio 2013. Non è necessario apportare modifiche per un ambiente specifico.</p></td>
 </tr>

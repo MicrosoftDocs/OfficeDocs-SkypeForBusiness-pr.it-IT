@@ -12,12 +12,12 @@ ms:contentKeyID: 51541531
 ms.date: 09/21/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 82e66cf65d8aa29e476e759bd1f09ccbbf7b61f5
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: de331cc4742a3a995a63ea4848e2515871fb5f69
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780245"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221216"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -49,7 +49,7 @@ Nelle tabelle seguenti vengono confrontate le caratteristiche e le funzionalità
 
   - Audio e video di Lync-to-Lync
 
-  - Conferenza
+  - Conferenze
 
   - Telefonia
 
@@ -412,8 +412,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non utilizza l
 </table>
 
 
-1 non disponibile per gli utenti di Skype for business online e/o Microsoft 365 o Office 365.
-
+1 non disponibile per gli utenti di Skype for business online, Microsoft 365 o Office 365.
 </div>
 
 <div>
@@ -757,11 +756,11 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non utilizza l
 </table>
 
 
-1 per gli utenti di Microsoft 365 o di Office 365, questa funzionalità è disponibile solo per le riunioni abilitate ai provider di servizi di audioconferenza (ACP).
+1 per gli utenti di Office 365 e Microsoft 365, questa funzionalità è disponibile solo per le riunioni abilitate ai provider di servizi di audioconferenza (ACP).
 
 2 non disponibile per gli utenti di Microsoft 365 o Office 365.
 
-3 per Skype for business online e/o Microsoft 365 o Office 365 User, questa funzionalità è disponibile in provider di servizi di audioconferenza di terze parti.
+3 per gli utenti di Skype for business online, Microsoft 365 o Office 365, questa funzionalità è disponibile in provider di servizi di audioconferenza di terze parti.
 
 4A la presentazione di PowerPoint condivisa da Lync Web App non può essere visualizzata da Lync Mobile 2013. Le annotazioni eseguite nei client desktop di Lync 2013 non sono visualizzabili sui dispositivi mobili.
 
@@ -892,13 +891,13 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non utilizza l
 </table>
 
 
-1 gli utenti di Lync Server 2013, Skype for business online e Office 365 possono chiamare gli altri utenti di Lync e Skype toccando l'icona. Gli utenti di Lync Server 2013 possono anche effettuare chiamate PSTN toccando l'icona.
+1 gli utenti di Lync Server 2013, Skype for business online e Microsoft 365 o Office 365 possono chiamare altri utenti di Lync e utenti Skype toccando l'icona. Gli utenti di Lync Server 2013 possono anche effettuare chiamate PSTN toccando l'icona.
 
 2 per gli utenti di Lync Server 2013 locali, nei dispositivi Windows Phone, iPhone e iPad, l'utente tocca l'icona della chiamata nella scheda contatto e accetta il callback da Lync Server 2013. Per gli utenti di Microsoft 365 o Office 365, nei dispositivi Windows Phone, iPhone e iPad, quando l'utente tocca il pulsante di chiamata, viene visualizzata una finestra di dialogo in cui viene chiesto all'utente di confermare che vuole chiamare il numero.
 
-3 non disponibile per Skype for business online e/o Microsoft 365 o Office 365.
+3 non disponibile per gli utenti di Skype for business online, Microsoft 365 o Office 365
 
-4 per Skype for business online e/o Microsoft 365 o Office 365 User, questa funzionalità è supportata dai partner Microsoft.
+4 per gli utenti di Skype for business online, Microsoft 365 o Office 365, questa funzionalità è supportata dai partner Microsoft.
 
 </div>
 
@@ -973,7 +972,7 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non utilizza l
 
 1 per impostazione predefinita, agli utenti federati viene assegnata la relazione di privacy dei contatti esterni. Per essere in grado di raggiungere un contatto federato sul proprio telefono cellulare chiamando il numero di lavoro pubblicato, il contatto federato deve assegnare manualmente la relazione di privacy ai colleghi.
 
-2 non disponibile per gli utenti di Office 365.
+2 non disponibile per gli utenti di Microsoft 365 o Office 365.
 
 </div>
 
@@ -1080,4 +1079,3 @@ In iPhone e iPad, Lync si disconnette automaticamente se l'utente non utilizza l
 </div>
 
 </div>
-

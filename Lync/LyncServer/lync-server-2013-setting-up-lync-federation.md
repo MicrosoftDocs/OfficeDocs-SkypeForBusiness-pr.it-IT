@@ -12,12 +12,12 @@ ms:contentKeyID: 48183822
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: cea596f571064a3b72ecbb3b0c2b56c2179aa315
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 27b955def7b7648f274125353673d6973afb59b7
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42182044"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221590"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -78,7 +78,7 @@ Se il server o i server perimetrali sono già stati distribuiti, l'aggiunta dell
 
 ## <a name="configuring-federation-with-partners"></a>Configurazione della federazione con i partner
 
-1.  Per configurare correttamente una federazione con un altro Microsoft Lync Server 2013, Lync Server 2010, Office Communications Server 2007 R2 o Office Communicator 2007, selezionare il tipo di federazione dalla tabella seguente e definire i record DNS SRV, host DNS (A o AAAA per IPv6) e configurare i criteri applicabili al tipo di Federazione:
+1.  Per configurare correttamente una federazione con un altro Microsoft Lync Server 2013, Lync Server 2010, Office Communications Server 2007 R2 o Office Communicator 2007, selezionare il tipo di federazione dalla tabella seguente e definire i record DNS SRV, l'host DNS (A o AAAA per IPv6) e configurare i criteri applicabili al tipo di Federazione:
     
     
     <table>
@@ -99,7 +99,7 @@ Se il server o i server perimetrali sono già stati distribuiti, l'aggiunta dell
     <tbody>
     <tr class="odd">
     <td><p>Dominio partner individuato</p></td>
-    <td><p>Configurare il record SRV del formato _sipfederationtls. _tcp. &lt;nome&gt;di dominio esterno in cui il valore della porta per il record SRV è TCP 5061 e l' <strong>host che offre questo servizio</strong> è definito come SIP. &lt;nome&gt; di dominio esterno – FQDN del servizio Access Edge. Per informazioni dettagliate sulla creazione del record SRV, vedere <a href="lync-server-2013-configure-dns-for-edge-support.md">configurare DNS per il supporto di Edge in Lync Server 2013</a> .</p></td>
+    <td><p>Configurare il record SRV del formato _sipfederationtls. _tcp. &lt; nome di dominio esterno &gt; in cui il valore della porta per il record SRV è TCP 5061 e l' <strong>host che offre questo servizio</strong> è definito come SIP. &lt;nome di dominio esterno &gt; – FQDN del servizio Access Edge. Per informazioni dettagliate sulla creazione del record SRV, vedere <a href="lync-server-2013-configure-dns-for-edge-support.md">configurare DNS per il supporto di Edge in Lync Server 2013</a> .</p></td>
     <td><ul>
     <li><p><a href="lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md">Abilitare o disabilitare la Federazione e la connettività per la messaggistica istantanea pubblica in Lync Server 2013</a></p></li>
     <li><p><a href="lync-server-2013-enable-or-disable-discovery-of-federation-partners.md">Abilitare o disabilitare l'individuazione dei partner federativi in Lync Server 2013</a></p></li>
@@ -108,7 +108,7 @@ Se il server o i server perimetrali sono già stati distribuiti, l'aggiunta dell
     </tr>
     <tr class="even">
     <td><p>Dominio partner consentito</p></td>
-    <td><p>Configurare il record SRV del formato _sipfederationtls. _tcp. &lt;nome&gt;di dominio esterno in cui il valore della porta per il record SRV è TCP 5061 e l' <strong>host che offre questo servizio</strong> è definito come SIP. &lt;nome&gt; di dominio esterno – FQDN del servizio Access Edge. Per informazioni dettagliate sulla creazione del record SRV, vedere <a href="lync-server-2013-configure-dns-for-edge-support.md">configurare DNS per il supporto di Edge in Lync Server 2013</a> .</p></td>
+    <td><p>Configurare il record SRV del formato _sipfederationtls. _tcp. &lt; nome di dominio esterno &gt; in cui il valore della porta per il record SRV è TCP 5061 e l' <strong>host che offre questo servizio</strong> è definito come SIP. &lt;nome di dominio esterno &gt; – FQDN del servizio Access Edge. Per informazioni dettagliate sulla creazione del record SRV, vedere <a href="lync-server-2013-configure-dns-for-edge-support.md">configurare DNS per il supporto di Edge in Lync Server 2013</a> .</p></td>
     <td><ul>
     <li><p><a href="lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md">Abilitare o disabilitare la Federazione e la connettività per la messaggistica istantanea pubblica in Lync Server 2013</a></p></li>
     </ul></td>
@@ -132,7 +132,7 @@ Se il server o i server perimetrali sono già stati distribuiti, l'aggiunta dell
     <li><p><a href="lync-server-2013-create-or-edit-public-sip-federated-providers.md">Creare o modificare provider federati SIP pubblici in Lync Server 2013</a></p></li>
     <li><p><a href="lync-server-2013-create-or-edit-hosted-sip-federated-providers.md">Creare o modificare provider federati SIP ospitati Lync Server 2013</a></p></li>
     </ul></td>
-    <td><p>Questo tipo di federazione definisce servizi e provider di hosting che si desidera configurare per gli utenti. Tra gli usi più comuni è inclusa la configurazione per i provider di servizi di messaggistica istantanea pubblici come Windows Live Messenger, Yahoo! e AOL, oltre a provider di hosting come Lync Online e Office 365</p>
+    <td><p>Questo tipo di federazione definisce servizi e provider di hosting che si desidera configurare per gli utenti. Tra gli usi più comuni è inclusa la configurazione per i provider di servizi di messaggistica istantanea pubblici come Windows Live Messenger, Yahoo! e AOL, oltre a provider di hosting come Lync Online e Microsoft 365</p>
     <div>
 
     > [!IMPORTANT]  

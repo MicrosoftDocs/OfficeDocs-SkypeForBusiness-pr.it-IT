@@ -12,12 +12,12 @@ ms:contentKeyID: 48184160
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 55ca35ace807c5e8e551295f3d395e85d514b901
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: afc2b1599551cfc3b7ee7341e441946610166ba0
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42185939"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221760"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,15 +37,15 @@ ms.locfileid: "42185939"
 
 _**Ultimo argomento modificato:** 2013-10-07_
 
-Dopo la distribuzione di uno o più server perimetrali, è necessario abilitare i tipi di accesso esterno che saranno supportati per l'organizzazione.
+Dopo avere distribuito uno o più server Edge Server, è necessario abilitare i tipi di accesso esterno da supportare per l'organizzazione.
 
 Per impostazione predefinita, non vi sono criteri configurati per supportare l'accesso utente esterno, inclusi l'accesso utente remoto e federato, anche se il supporto dell'accesso utente esterno è già stato abilitato per l'organizzazione. Per controllare l'uso dell'accesso utente esterno, è necessario configurare uno o più criteri, specificando il tipo di accesso utente esterno supportato per ogni criterio. Per la creazione e la configurazione sono disponibili gli ambiti di criteri seguenti. Per impostazione predefinita, i criteri globali possono essere creati ma non possono essere eliminati.
 
-  - **Criteri globali il**   criterio globale viene creato quando si distribuiscono i server perimetrali. Per impostazione predefinita, nessuna opzione di accesso utente esterno è abilitata nel criterio globale. Per supportare l'accesso degli utenti esterni a livello globale, è necessario configurare i criteri globali per il supporto di uno o più tipi di opzioni di accesso utente esterno. Il criterio globale si applica a tutti gli utenti dell'organizzazione, ma i criteri di sito e i criteri utente eseguono l'override dei criteri globali. Se si elimina il criterio globale, non è possibile rimuoverlo. Al contrario, è necessario reimpostarlo sull'impostazione predefinita.
+  - **Criteri globali**   I criteri globali vengono creati quando si distribuiscono i server Edge Server. Per impostazione predefinita, nei criteri globali non vengono abilitate opzioni di accesso per gli utenti esterni. Per supportare l'accesso degli utenti esterni a livello globale, è possibile configurare i criteri globali in modo da supportare uno o più tipi di opzioni di accesso degli utenti esterni. I criteri globali si applicano a tutti gli utenti dell'organizzazione, ma i criteri sito e i criteri utente sostituiscono i criteri globali. Se si eliminano i criteri globali, questi non vengono rimossi, ma ne vengono ripristinate le impostazioni predefinite.
 
-  - **Criteri sito è**   possibile creare e configurare uno o più criteri sito per limitare il supporto per l'accesso degli utenti esterni a siti specifici. La configurazione nel criterio sito ha la priorità sul criterio globale, ma solo per il sito specifico a cui si applica il criterio sito. Se ad esempio si abilita l'accesso degli utenti remoti nel criterio globale, è possibile specificare un criterio sito che disabilita l'accesso degli utenti remoti per un sito specifico. Per impostazione predefinita, un criterio sito viene applicato a tutti gli utenti del sito, ma è possibile assegnare un criterio utente a un utente per ignorare l'impostazione del criterio sito.
+  - **Criteri sito**   È possibile creare e configurare uno o più criteri sito per limitare il supporto per l'accesso degli utenti esterni a siti specifici. La configurazione nel criterio sito ha la priorità sul criterio globale, ma solo per il sito specifico a cui si applica il criterio sito. Se ad esempio si abilita l'accesso degli utenti remoti nel criterio globale, è possibile specificare un criterio sito che disabilita l'accesso degli utenti remoti per un sito specifico. Per impostazione predefinita, un criterio sito viene applicato a tutti gli utenti del sito, ma è possibile assegnare un criterio utente a un utente per ignorare l'impostazione del criterio sito.
 
-  - **Criteri utente è**   possibile creare e configurare uno o più criteri utente per limitare il supporto per l'accesso utente remoto a utenti specifici. La configurazione nel criterio utente ha la priorità sui criteri globale e sito, ma solo per gli utenti specifici a cui viene assegnato il criterio utente. Se ad esempio si abilita l'accesso degli utenti remoti nei criteri globale e sito, è possibile specificare un criterio utente che disabilita l'accesso degli utenti remoti e quindi assegnare tale criterio utente a utenti specifici. Se si crea un criterio utente, è necessario applicarlo a uno o più utenti per renderlo effettivo.
+  - **Criteri utente**   È possibile creare e configurare uno o più criteri utente per limitare il supporto per l'accesso degli utenti remoti a utenti specifici. La configurazione nel criterio utente ha la priorità sui criteri globale e sito, ma solo per gli utenti specifici a cui viene assegnato il criterio utente. Se ad esempio si abilita l'accesso degli utenti remoti nei criteri globale e sito, è possibile specificare un criterio utente che disabilita l'accesso degli utenti remoti e quindi assegnare tale criterio utente a utenti specifici. Se si crea un criterio utente, è necessario applicarlo a uno o più utenti per renderlo effettivo.
 
 <div>
 
@@ -59,7 +59,7 @@ Per impostazione predefinita, non vi sono criteri configurati per supportare l'a
 
 Queste opzioni includono i tipi di accesso esterno seguenti:
 
-  - **Abilitare le comunicazioni con gli utenti**   federati abilitare questa operazione se si desidera supportare l'accesso degli utenti ai domini partner federati. Questa impostazione consente di configurare la possibilità per gli utenti di comunicare con altri domini federati SIP, nonché di provider ospitati come Microsoft Office 365. Se si seleziona questa opzione, è possibile selezionare l'opzione che consente la comunicazione con i domini federati XMPP.
+  - **Abilita comunicazioni con utenti federati**   Abilitare questa opzione se si desidera supportare l'accesso utente ai domini dei partner federati. Questa impostazione consente di configurare la possibilità per gli utenti di comunicare con altri domini federati SIP, nonché di provider ospitati come Microsoft 365. Se si seleziona questa opzione, è possibile selezionare l'opzione che consente la comunicazione con i domini federati XMPP.
     
     Dopo aver selezionato **Abilita comunicazioni con utenti federati** è possibile selezionare, se si vuole, **Abilita le comunicazioni con gli utenti federati XMPP**. La federazione XMPP è una federazione con organizzazioni che usano il protocollo XMPP (eXtensible Messaging and Presence Protocol).
     
@@ -72,9 +72,9 @@ Queste opzioni includono i tipi di accesso esterno seguenti:
     
     </div>
 
-  - **Abilitare le comunicazioni con gli utenti**   remoti abilitare questa opzione se si desidera che gli utenti dell'organizzazione che si trovano all'esterno del firewall, ad esempio i telecommuter e gli utenti che viaggiano, siano in grado di connettersi a Lync Server tramite Internet.
+  - **Abilitare le comunicazioni con gli utenti**     remoti Abilitare questa opzione se si desidera che gli utenti dell'organizzazione che si trovano all'esterno del firewall, ad esempio i telelavoratori e gli utenti che viaggiano, siano in grado di connettersi a Lync Server tramite Internet.
 
-  - **Abilitare le comunicazioni con gli utenti**   pubblici abilitare questa opzione se si desidera che gli utenti interni siano in grado di comunicare con i contatti dei provider di messaggistica istantanea pubblici, ad\!esempio quelli forniti da Windows Live, Yahoo e America Online (AOL).
+  - **Abilitare le comunicazioni con gli utenti pubblici**     Abilitare questa opzione se si desidera che gli utenti interni siano in grado di comunicare con i contatti dei provider di messaggistica istantanea pubblici, ad esempio quelli forniti da Windows Live, Yahoo \! e America Online (AOL).
     
     <div>
     
@@ -101,9 +101,9 @@ Queste opzioni includono i tipi di accesso esterno seguenti:
 
 </div>
 
-**Per visualizzare i criteri di accesso esterno tramite i cmdlet di Windows PowerShell**
+**Per visualizzare i criteri di accesso esterno usando i cmdlet di Windows PowerShell**
 
-  - È possibile visualizzare i criteri di accesso esterno utilizzando Lync Server Management Shell e il cmdlet **Get-CsExternalAccessPolicy** . È possibile eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+  - È possibile visualizzare i criteri di accesso esterno utilizzando Lync Server Management Shell e il cmdlet **Get-CsExternalAccessPolicy** . È possibile eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync Server 2010 using Remote PowerShell" at [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876) .
     
     Per visualizzare informazioni su tutti i criteri di accesso esterno, digitare il comando seguente in Lync Server Management Shell e quindi premere INVIO:
     

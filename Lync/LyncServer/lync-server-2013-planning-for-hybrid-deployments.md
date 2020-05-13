@@ -12,12 +12,12 @@ ms:contentKeyID: 48185910
 ms.date: 05/25/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 54888a96d33dc3d9195256483f41719031847744
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 47e8bc57edbf3b6414820aba1613be8b44fc670e
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780325"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221520"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -45,7 +45,7 @@ _**Ultimo argomento modificato:** 2016-05-25_
 
 Per implementare e distribuire una distribuzione ibrida, è necessario che nel proprio ambiente siano configurati i seguenti elementi.
 
-  - Un'organizzazione di Microsoft Office 365 con Skype for business online abilitato. Si noti che è possibile utilizzare solo un singolo tenant per una configurazione ibrida con la distribuzione locale.
+  - Un'organizzazione di Microsoft 365 o Office 365 con Skype for business online abilitato. Si noti che è possibile utilizzare solo un singolo tenant per una configurazione ibrida con la distribuzione locale.
 
   - Una singola distribuzione locale (Infrastructure) di Skype for Business Server o Lync Server distribuito in una topologia supportata. Vedere Requisiti per la topologia.
     
@@ -53,7 +53,7 @@ Per implementare e distribuire una distribuzione ibrida, è necessario che nel p
 
   - Strumenti di amministrazione di Skype for Business Server 2015. Se si utilizza Lync Server 2013 o Lync Server 2010, è possibile utilizzare gli strumenti di amministrazione di Lync Server 2013.
 
-  - Per supportare l'accesso Single Sign-on con Office 365 in modo che gli utenti possano utilizzare le stesse credenziali di accesso per l'accesso a Office come in locale, è possibile utilizzare le funzionalità di sincronizzazione delle password di Azure Active Directory (AAD) Connect. È inoltre possibile utilizzare Active Directory Federation Services (AD FS) per l'accesso Single Sign-on con Office 365.
+  - Per supportare l'accesso Single Sign-on con Microsoft 365 o Office 365 in modo che gli utenti possano utilizzare le stesse credenziali di accesso per accedere a Office come in locale, è possibile utilizzare le funzionalità di sincronizzazione delle password di Azure Active Directory (AAD) Connect. È inoltre possibile utilizzare Active Directory Federation Services (AD FS) per l'accesso Single Sign-on con Microsoft 365 o Office 365.
     
     Per ulteriori informazioni, vedere [Integrazione delle identità locali con Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=619754).
 
@@ -159,7 +159,7 @@ L'elenco dei domini consentiti include i domini che dispongono di un nome di dom
 
 Per configurare correttamente una distribuzione ibrida, è necessario soddisfare i requisiti seguenti:
 
-  - La corrispondenza del dominio deve essere configurata per la distribuzione locale e per l'organizzazione di Office 365. Se l'individuazione dei partner è abilitata nella distribuzione locale, è necessario configurare la Federazione aperta per il tenant online. Se l'individuazione dei partner non è abilitata, la federazione chiusa deve essere configurata per il tenant online.
+  - La corrispondenza del dominio deve essere configurata per la distribuzione locale e per l'organizzazione di Microsoft 365 o Office 365. Se l'individuazione dei partner è abilitata nella distribuzione locale, è necessario configurare la Federazione aperta per il tenant online. Se l'individuazione dei partner non è abilitata, la federazione chiusa deve essere configurata per il tenant online.
 
   - L'elenco dei domini bloccati nella distribuzione locale deve corrispondere esattamente all'elenco dei domini bloccati per il tenant online.
 
@@ -191,7 +191,7 @@ Inoltre, è necessario assicurarsi che la risoluzione DNS descritta nella tabell
 <td><p>Requisito DNS</p></td>
 </tr>
 <tr class="even">
-<td><p>Record SRV DNS per _sipfederationtls. _tcp. &lt;SipDomain.com&gt; per tutti i domini SIP supportati che si risolvono in Access Edge IP esterni (s)</p></td>
+<td><p>Record SRV DNS per _sipfederationtls. _tcp. &lt; sipdomain.com &gt; per tutti i domini SIP supportati che si risolvono in Access Edge IP esterni (s)</p></td>
 <td><p>Server perimetrali</p></td>
 <td><p>Abilitare la comunicazione federata in una configurazione ibrida. Il server perimetrale deve sapere dove instradare il traffico federato per il dominio SIP suddiviso tra locali e online.</p></td>
 </tr>
@@ -214,7 +214,7 @@ A seconda del modo in cui il DNS è configurato nell'organizzazione, potrebbe es
 
 I computer della rete devono essere in grado di eseguire ricerche DNS standard su Internet. Se questi computer possono connettersi a siti Internet standard, la rete soddisfa questo requisito.
 
-A seconda della posizione del data center dei Microsoft Online Services, è inoltre necessario configurare i dispositivi firewall di rete in modo che accettino connessioni basate su nomi di dominio con caratteri jolly, \*ad esempio tutto il traffico proveniente da. Outlook.com. Se i firewall dell'organizzazione non supportano le configurazioni del nome con caratteri jolly, sarà necessario determinare manualmente gli intervalli di indirizzi IP che si desidera consentire e le porte specificate.
+A seconda della posizione del data center dei Microsoft Online Services, è inoltre necessario configurare i dispositivi firewall di rete in modo che accettino connessioni basate su nomi di dominio con caratteri jolly, ad esempio tutto il traffico proveniente da \* . Outlook.com. Se i firewall dell'organizzazione non supportano le configurazioni del nome con caratteri jolly, sarà necessario determinare manualmente gli intervalli di indirizzi IP che si desidera consentire e le porte specificate.
 
 Fare riferimento all'argomento della Guida per gli [URL e gli intervalli di indirizzi IP di Office 365](https://go.microsoft.com/fwlink/p/?linkid=252942).
 
@@ -299,7 +299,7 @@ Quando si sincronizzano gli account utente tra le distribuzioni di Lync in local
 
 
 > [!IMPORTANT]  
-> Se l'utente viene creato utilizzando il portale online per Office 365, l'account utente non verrà sincronizzato con Active Directory locale e l'utente non sarà presente in Active Directory locale. Se gli utenti sono già stati creati in Lync Online e si desidera configurare l'ambiente ibrido con un server Lync locale, vedere <A href="lync-server-2013-moving-users-from-lync-online-to-lync-on-premises.md">moveing users from Lync Online to Lync on-premises in Lync Server 2013</A>.
+> Se l'utente viene creato utilizzando il portale online per l'interfaccia di amministrazione di Microsoft 365, l'account utente non verrà sincronizzato con Active Directory locale e l'utente non sarà presente in Active Directory locale. Se gli utenti sono già stati creati in Lync Online e si desidera configurare l'ambiente ibrido con un server Lync locale, vedere <A href="lync-server-2013-moving-users-from-lync-online-to-lync-on-premises.md">moveing users from Lync Online to Lync on-premises in Lync Server 2013</A>.
 
 
 
@@ -307,11 +307,11 @@ Quando si sincronizzano gli account utente tra le distribuzioni di Lync in local
 
 Durante la pianificazione di una distribuzione ibrida, è consigliabile considerare anche i seguenti problemi relativi all'utente.
 
-  - **Contatti utente il**   limite per i contatti per gli utenti di Lync Online è 250. Tutti i contatti oltre tale numero verranno rimossi dall'elenco contatti dell'utente quando l'account viene spostato in Lync Online.
+  - **Contatti utente**     Il limite per i contatti per gli utenti di Lync Online è 250. Tutti i contatti oltre tale numero verranno rimossi dall'elenco contatti dell'utente quando l'account viene spostato in Lync Online.
 
-  - **Instant Messaging and Presence**   Gli elenchi di contatti, i gruppi e gli elenchi di controllo di accesso per gli utenti di messaggistica istantanea e presenza vengono migrati con l'account utente.
+  - **Messaggistica istantanea e presenza**     Gli elenchi di contatti utente, i gruppi e gli elenchi di controllo di accesso (ACL) vengono migrati con l'account utente.
 
-  - **Dati per le conferenze, contenuto di riunioni e riunioni**   pianificate questo contenuto non viene migrato con l'account utente. Gli utenti devono ripianificare le riunioni dopo la migrazione degli account a Lync Online.
+  - **Dati per conferenze, contenuto di riunioni e riunioni**     pianificate Questo contenuto non viene migrato con l'account utente. Gli utenti devono ripianificare le riunioni dopo la migrazione degli account a Lync Online.
 
 </div>
 
@@ -321,11 +321,11 @@ Durante la pianificazione di una distribuzione ibrida, è consigliabile consider
 
   - In un ambiente ibrido di Lync Server 2013, gli utenti possono essere abilitati per la messaggistica istantanea, la voce e le riunioni sia in locale che online, ma non entrambi contemporaneamente.
 
-  - **Client Lync alcuni**     utenti potrebbero richiedere una nuova versione client quando vengono spostati in Lync Online. Per Office Communications Server 2007 R2, gli utenti devono essere spostati in un pool Lync Server 2013 prima della migrazione a Lync Online.
+  - **Client Lync**     Alcuni utenti potrebbero richiedere una nuova versione client quando vengono spostati in Lync Online. Per Office Communications Server 2007 R2, gli utenti devono essere spostati in un pool Lync Server 2013 prima della migrazione a Lync Online.
     
     Per ulteriori informazioni sul supporto client, vedere client [per Lync Online](https://go.microsoft.com/fwlink/p/?linkid=281902) e [i client Lync supportati e le configurazioni delle porte di rete](https://go.microsoft.com/fwlink/p/?linkid=281901).
 
-  - **I criteri locali e i criteri di configurazione (non utente)**   online e locale richiedono una configurazione separata. Non è possibile impostare criteri globali che si applicano a entrambi.
+  - **Criteri e configurazione locali (non utente)**     I criteri online e locali richiedono una configurazione separata. Non è possibile impostare criteri globali che si applicano a entrambi.
 
 </div>
 
@@ -338,4 +338,3 @@ Durante la pianificazione di una distribuzione ibrida, è consigliabile consider
 </div>
 
 </div>
-

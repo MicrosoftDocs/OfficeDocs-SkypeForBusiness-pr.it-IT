@@ -12,12 +12,12 @@ ms:contentKeyID: 48183665
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 897cf5afee93363d1931b8c2ff3822a90ae29024
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 155ee98a7386368d90fd549d920cdfe77c05cb6e
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42185749"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221620"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -41,7 +41,7 @@ La distribuzione di un server perimetrale o di un pool di server perimetrali è 
 
 Dopo l'installazione e la configurazione della distribuzione interna di Lync Server 2013, gli utenti interni dell'organizzazione possono collaborare con altri utenti interni che dispongono di account SIP nei servizi di dominio Active Directory (AD DS). La collaborazione può includere l'invio e la ricezione di messaggi istantanei, l'aggiornamento delle informazioni sulla presenza e la partecipazione a conferenze, anche note come "riunioni". È possibile abilitare e configurare l'accesso utente esterno per controllare se gli utenti esterni supportati possono collaborare con gli utenti interni di Lync Server. Gli utenti esterni possono includere utenti remoti della propria distribuzione, utenti federati (inclusi utenti supportati dei provider di servizi di messaggistica istantanea pubblici), membri della federazione XMPP e partecipanti anonimi delle conferenze.
 
-Se nella distribuzione è inclusa l'installazione di un server perimetrale di Lync Server 2013 o di un pool di Edge, l'ambito dei possibili tipi di comunicazione è notevolmente esteso con una serie di opzioni per l'accesso degli utenti esterni, la comunicazione con i membri di altri domini federati SIP. SIP provider federati e utenti federati XMPP. Dopo aver configurato il server perimetrale o il pool di Edge, è possibile abilitare i tipi di accesso utente esterno che si desidera fornire e configurare i criteri per il controllo dell'accesso esterno. In Lync Server 2013, è possibile abilitare e configurare l'accesso e i criteri per gli utenti esterni utilizzando il pannello di controllo di Lync Server, Lync Server Management Shell o entrambi, in base ai requisiti di attività. Per informazioni dettagliate su questi strumenti di gestione, vedere gli [strumenti di amministrazione di Lync server 2013](lync-server-2013-lync-server-administrative-tools.md) nella documentazione relativa alle operazioni, [Lync Server 2013 Management Shell](lync-server-2013-lync-server-management-shell.md) nella documentazione relativa alle operazioni e [installare gli strumenti di amministrazione di Lync Server 2013](lync-server-2013-install-lync-server-administrative-tools.md) nella documentazione relativa alle operazioni.
+Se nella distribuzione è inclusa l'installazione di un server perimetrale di Lync Server 2013 o di un pool perimetrale, l'ambito dei possibili tipi di comunicazione è notevolmente esteso con una serie di opzioni per l'accesso degli utenti esterni, la comunicazione con i membri di altri domini federati SIP, i provider federati SIP e gli utenti federati XMPP. Dopo aver configurato il server perimetrale o il pool di Edge, è possibile abilitare i tipi di accesso utente esterno che si desidera fornire e configurare i criteri per il controllo dell'accesso esterno. In Lync Server 2013, è possibile abilitare e configurare l'accesso e i criteri per gli utenti esterni utilizzando il pannello di controllo di Lync Server, Lync Server Management Shell o entrambi, in base ai requisiti di attività. Per informazioni dettagliate su questi strumenti di gestione, vedere gli [strumenti di amministrazione di Lync server 2013](lync-server-2013-lync-server-administrative-tools.md) nella documentazione relativa alle operazioni, [Lync Server 2013 Management Shell](lync-server-2013-lync-server-management-shell.md) nella documentazione relativa alle operazioni e [installare gli strumenti di amministrazione di Lync Server 2013](lync-server-2013-install-lync-server-administrative-tools.md) nella documentazione relativa alle operazioni.
 
 <div>
 
@@ -55,11 +55,11 @@ Se nella distribuzione è inclusa l'installazione di un server perimetrale di Ly
 
 Per impostazione predefinita, non vengono configurati criteri per supportare l'accesso utente esterno, incluso l'accesso di utenti remoti e di utenti federati, anche se il supporto dell'accesso utente esterno è già stato abilitato per l'organizzazione. Per controllare l'utilizzo dell'accesso utente esterno, è necessario configurare uno o più criteri, specificando il tipo di accesso utente esterno supportato per ogni criterio. Sono inclusi i criteri di accesso esterno seguenti:
 
-  - **Criteri globali il**   criterio globale viene creato quando si distribuiscono i server perimetrali. Per impostazione predefinita, nessuna opzione di accesso utente esterno è abilitata nel criterio globale. Per supportare l'accesso degli utenti esterni a livello globale, è necessario configurare i criteri globali per il supporto di uno o più tipi di opzioni di accesso utente esterno. Il criterio globale si applica a tutti gli utenti dell'organizzazione, ma i criteri di sito e i criteri utente eseguono l'override dei criteri globali. Se si elimina il criterio globale, non è possibile rimuoverlo. Al contrario, è necessario reimpostarlo sull'impostazione predefinita.
+  - **Criteri globali**   I criteri globali vengono creati quando si distribuiscono i server Edge Server. Per impostazione predefinita, nei criteri globali non vengono abilitate opzioni di accesso per gli utenti esterni. Per supportare l'accesso degli utenti esterni a livello globale, è possibile configurare i criteri globali in modo da supportare uno o più tipi di opzioni di accesso degli utenti esterni. I criteri globali si applicano a tutti gli utenti dell'organizzazione, ma i criteri sito e i criteri utente sostituiscono i criteri globali. Se si eliminano i criteri globali, questi non vengono rimossi, ma ne vengono ripristinate le impostazioni predefinite.
 
-  - **Criteri sito è**   possibile creare e configurare uno o più criteri sito per limitare il supporto per l'accesso degli utenti esterni a siti specifici. La configurazione nel criterio sito ha la priorità sul criterio globale, ma solo per il sito specifico a cui si applica il criterio sito. Se ad esempio si abilita l'accesso degli utenti remoti nel criterio globale, è possibile specificare un criterio sito che disabilita l'accesso degli utenti remoti per un sito specifico. Per impostazione predefinita, un criterio sito viene applicato a tutti gli utenti del sito, ma è possibile assegnare un criterio utente a un utente per ignorare l'impostazione del criterio sito.
+  - **Criteri sito**   È possibile creare e configurare uno o più criteri sito per limitare il supporto per l'accesso degli utenti esterni a siti specifici. La configurazione nel criterio sito ha la priorità sul criterio globale, ma solo per il sito specifico a cui si applica il criterio sito. Se ad esempio si abilita l'accesso degli utenti remoti nel criterio globale, è possibile specificare un criterio sito che disabilita l'accesso degli utenti remoti per un sito specifico. Per impostazione predefinita, un criterio sito viene applicato a tutti gli utenti del sito, ma è possibile assegnare un criterio utente a un utente per ignorare l'impostazione del criterio sito.
 
-  - **Criteri utente è**   possibile creare e configurare uno o più criteri utente per limitare il supporto per l'accesso utente remoto a utenti specifici. La configurazione nel criterio utente ha la priorità sui criteri globale e sito, ma solo per gli utenti specifici a cui viene assegnato il criterio utente. Se ad esempio si abilita l'accesso degli utenti remoti nei criteri globale e sito, è possibile specificare un criterio utente che disabilita l'accesso degli utenti remoti e quindi assegnare tale criterio utente a utenti specifici. Se si creano criteri utente, è necessario applicarli a uno o più utenti affinché diventino attivi.
+  - **Criteri utente**   È possibile creare e configurare uno o più criteri utente per limitare il supporto per l'accesso degli utenti remoti a utenti specifici. La configurazione nel criterio utente ha la priorità sui criteri globale e sito, ma solo per gli utenti specifici a cui viene assegnato il criterio utente. Se ad esempio si abilita l'accesso degli utenti remoti nei criteri globale e sito, è possibile specificare un criterio utente che disabilita l'accesso degli utenti remoti e quindi assegnare tale criterio utente a utenti specifici. Se si crea un criterio utente, è necessario applicarlo a uno o più utenti per renderlo effettivo.
 
 Per stabilire quali impostazioni di configurazione e quali criteri è necessario creare o modificare, considerare gli aspetti seguenti:
 
@@ -87,7 +87,7 @@ Configurare le impostazioni come descritto nell'argomento [abilitare o disabilit
 
 Configurare le impostazioni come descritto nell'argomento [abilitare o disabilitare l'invio di una dichiarazione di non responsabilità per l'archiviazione ai partner federati in Lync Server 2013](lync-server-2013-enable-or-disable-sending-an-archiving-disclaimer-to-federated-partners.md).
 
-**Si desidera consentire agli utenti di comunicare con i provider federati SIP che consentono la comunicazione con i provider pubblici, ad esempio Windows Live Messenger, AOL e\!Yahoo?**
+**Si desidera consentire agli utenti di comunicare con i provider federati SIP che consentono la comunicazione con i provider pubblici, ad esempio Windows Live Messenger, AOL e Yahoo \! ?**
 
 Configurare le impostazioni come descritto negli argomenti [Configure policies to Control public User Access in Lync server 2013](lync-server-2013-configure-policies-to-control-public-user-access.md)[abilitare o disabilitare la Federazione e la connettività per la messaggistica istantanea pubblica in Lync Server 2013](lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md)e [creare o modificare provider federati SIP pubblici in Lync Server 2013](lync-server-2013-create-or-edit-public-sip-federated-providers.md).
 
@@ -107,7 +107,7 @@ Configurare le impostazioni come descritto negli argomenti [Configure policies t
 
 </div>
 
-**Si desidera consentire agli utenti di comunicare con i provider federati SIP che sono provider ospitati che eseguono Microsoft Office 365, Microsoft Lync Online e Microsoft Lync Online 2010?**
+**Si desidera consentire agli utenti di comunicare con i provider federati SIP che sono provider ospitati che eseguono Microsoft 365, Microsoft Lync Online e Microsoft Lync Online 2010?**
 
 Configurare le impostazioni come descritto negli argomenti [creare o modificare provider federati SIP pubblici in Lync server 2013](lync-server-2013-create-or-edit-public-sip-federated-providers.md), [abilitare o disabilitare la Federazione e la connettività per la messaggistica istantanea pubblica in Lync Server 2013](lync-server-2013-enable-or-disable-federation-and-public-im-connectivity.md) e [creare o modificare provider federati sip ospitati Lync Server 2013](lync-server-2013-create-or-edit-hosted-sip-federated-providers.md)
 

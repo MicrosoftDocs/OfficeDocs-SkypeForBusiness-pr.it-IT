@@ -12,12 +12,12 @@ ms:contentKeyID: 48185341
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 5b8718d5f3dda34b97b4c3e96c2fe9531d6658b9
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6203e6a7ee99f4b080fa93976a2a937e62fe9d3c
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42216782"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221560"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -51,9 +51,9 @@ Lync Server 2013, il server Chat persistente consente di partecipare a conversaz
 
   - Migliorare la diffusione di informazioni e conoscenze importanti
 
-Lync Server 2013, il server Chat persistente non è disponibile in Microsoft Office 365. In questo momento, è disponibile solo per i clienti di Lync 2013 locali.
+Lync Server 2013, il server Chat persistente non è disponibile in Microsoft 365 o Office 365. In questo momento, è disponibile solo per i clienti di Lync 2013 locali.
 
-In Lync 2013, la funzionalità chat persistente è integrata nel client Lync 2013. Di conseguenza, gli utenti possono accedere a messaggistica istantanea/presenza, audio/video, conferenze e chat persistente tutti nel client Lync 2013. Per ulteriori informazioni sul client Lync 2013, vedere <https://go.microsoft.com/fwlink/p/?linkid=270877>.
+In Lync 2013, la funzionalità chat persistente è integrata nel client Lync 2013. Di conseguenza, gli utenti possono accedere a messaggistica istantanea/presenza, audio/video, conferenze e chat persistente tutti nel client Lync 2013. Per ulteriori informazioni sul client Lync 2013, vedere <https://go.microsoft.com/fwlink/p/?linkid=270877> .
 
 In questo argomento vengono descritte le modifiche apportate alla caratteristica tra la nuova versione di Lync Server 2013, il server Chat persistente e la versione precedente (Microsoft Lync Server 2010, Group Chat), tra cui:
 
@@ -67,9 +67,9 @@ In questo argomento vengono descritte le modifiche apportate alla caratteristica
 
 Per ulteriori informazioni sulla versione più recente del server Chat persistente, vedere gli argomenti seguenti:
 
-  - La guida per la chat <https://go.microsoft.com/fwlink/p/?linkid=270945> persistente in cui viene fornito un elenco dettagliato delle funzionalità di chat persistente, il loro funzionamento e come utilizzarle durante l'esecuzione del server Chat persistente.
+  - La guida per la chat persistente in <https://go.microsoft.com/fwlink/p/?linkid=270945> cui viene fornito un elenco dettagliato delle funzionalità di chat persistente, il loro funzionamento e come utilizzarle durante l'esecuzione del server Chat persistente.
 
-  - La [pianificazione del server Chat persistente in Lync server 2013](lync-server-2013-planning-for-persistent-chat-server.md) nella documentazione relativa alla pianificazione [distribuzione del server Chat persistente in Lync Server 2013](lync-server-2013-deploying-persistent-chat-server.md) nella documentazione relativa alla distribuzione, [migrazione da Lync Server 2010, Group chat o Office Communications Server 2007 R2 group chat a Lync Server 2013, Persistent Chat Server](migration-from-lync-server-2010-group-chat-or-office-communications-server-2007-r2-group-chat-to-lync-server-2013-persistent-chat-server.md) nella documentazione relativa alla migrazione e [gestione di Lync Server 2013, Persistent Chat Server](managing-lync-server-2013-persistent-chat-server.md) nella documentazione relativa alle operazioni, che forniscono tutte le istruzioni per la configurazione Server Chat persistente.
+  - La [pianificazione del server Chat persistente in Lync server 2013](lync-server-2013-planning-for-persistent-chat-server.md) nella documentazione relativa alla pianificazione [distribuzione del server Chat persistente in Lync Server 2013](lync-server-2013-deploying-persistent-chat-server.md) nella documentazione relativa alla distribuzione, [migrazione da Lync Server 2010, Group chat o Office Communications Server 2007 R2 group chat a Lync Server 2013, Persistent Chat Server](migration-from-lync-server-2010-group-chat-or-office-communications-server-2007-r2-group-chat-to-lync-server-2013-persistent-chat-server.md) nella documentazione relativa alla migrazione e [gestione di Lync Server 2013, Persistent Chat Server](managing-lync-server-2013-persistent-chat-server.md) nella documentazione relativa alle operazioni, che forniscono tutte le istruzioni per la configurazione del server Chat persistente.
 
   - Il file di documentazione. msi del server di chat persistente (file di Windows Installer) consente agli utenti di accedere alla documentazione offline completa sul server Chat persistente.
 
@@ -103,13 +103,13 @@ Inoltre, per supportare il caricamento e il download dei file nelle chat room pe
 
 
 > [!IMPORTANT]  
-> Il ruolo <STRONG>PersistentChatService</STRONG> può essere eseguito nello stesso server di un server front-&nbsp;end di Lync Server 2013 solo se il front end server è un&nbsp;server front end Standard Edition. Il ruolo <STRONG>PersistentChatService</STRONG> non può essere eseguito indipendentemente da un server&nbsp;Front-End di Lync Server 2013. Può essere installato solo nel contesto di una distribuzione di Lync Server 2013.
+> Il ruolo <STRONG>PersistentChatService</STRONG> può essere eseguito nello stesso server di un server front-end di Lync Server 2013 solo se il front end server è un server front end &nbsp; Standard Edition &nbsp; . Il ruolo <STRONG>PersistentChatService</STRONG> non può essere eseguito indipendentemente da un &nbsp; server front-end di Lync Server 2013. Può essere installato solo nel contesto di una distribuzione di Lync Server 2013.
 
 
 
 </div>
 
-Nel server Chat persistente, il servizio di ricerca è stato eliminato. In Lync Server 2010, Group Chat, il servizio di ricerca è stato eseguito su ogni server front-end di Group Chat Server e ha eseguito il routing su uno dei server di canale. Lync Server 2013 si basa sul routing tramite gli oggetti contatto, in cui ogni pool di server Chat persistente è rappresentato da un oggetto contatto utilizzato dai front end server di Lync Server per identificare e instradare le richieste a un pool di server Chat persistente appropriato e per uno dei computer in cui è in esecuzione il server Chat persistente nel pool.
+Nel server Chat persistente, il servizio di ricerca è stato eliminato. In Lync Server 2010, Group Chat, il servizio di ricerca è stato eseguito su ogni server front-end di Group Chat Server e ha eseguito il routing su uno dei server di canale. Lync Server 2013 si basa sul routing tramite gli oggetti contatto, in cui ogni pool di server Chat persistente è rappresentato da un oggetto contatto utilizzato dai Front End Server Lync Server per identificare e instradare le richieste a un pool di server Chat persistente appropriato e a uno dei computer in cui è in esecuzione il server Chat persistente nel pool.
 
 In Lync Server 2013, sono disponibili modifiche del servizio conformità:
 
@@ -139,7 +139,7 @@ In Lync Server 2013, sono disponibili miglioramenti sia per la disponibilità el
 
   - Miglioramenti a disponibilità elevata: il mirroring di SQL Server viene utilizzato per garantire la disponibilità elevata per il database del contenuto del server Chat persistente e il database di conformità di Persistent Chat all'interno di un Data Center (nel sito).
 
-  - Miglioramenti al ripristino di emergenza: il server Chat persistente supporta un'architettura del pool estesa che consente di estendere un singolo pool di server Chat persistente tra due siti, ovvero un singolo pool logico nella topologia, con i server del pool fisicamente si trova su due siti. Il log shipping di SQL Server viene utilizzato per il ripristino di emergenza tra siti.
+  - Miglioramenti al ripristino di emergenza: il server Chat persistente supporta un'architettura del pool estesa che consente di estendere un singolo pool di server Chat persistente tra due siti, ovvero un singolo pool logico nella topologia, con i server del pool che si trovano fisicamente su due siti. Il log shipping di SQL Server viene utilizzato per il ripristino di emergenza tra siti.
 
 Per ulteriori informazioni sulla disponibilità elevata e il ripristino di emergenza, vedere [Configuring Persistent Chat Server for High Availability and Disaster Recovery in Lync Server 2013](lync-server-2013-configuring-persistent-chat-server-for-high-availability-and-disaster-recovery.md) nella documentazione relativa alla distribuzione.
 
@@ -165,7 +165,7 @@ Lync Server 2013 ha semplificato l'amministrazione e la gestione del server Chat
 
 ## <a name="whats-different-about-user-roles-from-previous-group-chat-server-versions"></a>Cosa c'è di diverso nei ruoli degli utenti dalle versioni precedenti di Group Chat Server?
 
-Lync Server 2010, Group Chat aveva un ruolo di amministratore utente, un ruolo di amministratore di chat room e un ruolo di amministratore di Lync Server in grado di gestire i componenti aggiuntivi. il server Chat persistente fornisce semplicemente un ruolo di amministratore di chat persistente (simile ad altri Lync Ruoli del controllo di accesso basato sul ruolo del server (RBAC)). Chiunque sia membro di questo ruolo RBAC può gestire le chat room, i componenti aggiuntivi e le categorie (e quindi ottenere l'accesso degli utenti per queste categorie) e la configurazione del pool di server Chat persistente.
+Lync Server 2010, Group Chat aveva un ruolo di amministratore utente, un ruolo di amministratore della chat room e un ruolo di amministratore di Lync Server in grado di gestire i componenti aggiuntivi. il server Chat persistente fornisce semplicemente un ruolo amministratore di chat persistente (simile ad altri ruoli di controllo di accesso basato sul ruolo di Lync Server). Chiunque sia membro di questo ruolo RBAC può gestire le chat room, i componenti aggiuntivi e le categorie (e quindi ottenere l'accesso degli utenti per queste categorie) e la configurazione del pool di server Chat persistente.
 
 </div>
 
@@ -234,4 +234,3 @@ La registrazione per il server Chat persistente e System Center Operations Manag
 </div>
 
 </div>
-

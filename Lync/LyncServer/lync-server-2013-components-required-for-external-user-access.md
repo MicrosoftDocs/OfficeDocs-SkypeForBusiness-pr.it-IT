@@ -12,12 +12,12 @@ ms:contentKeyID: 48183711
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: ca81e26e6a4b634b7b1f861ddfb0e0aedebca23f
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 05c4b2845f4146c6394712951089750299ce60b7
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204690"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221820"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -64,13 +64,13 @@ La maggior parte dei componenti perimetrali viene distribuita in una rete perime
 
 I server perimetrali inviano e ricevono il traffico di rete per i servizi offerti dalla distribuzione interna da parte di utenti esterni. Nel server perimetrale vengono eseguiti i servizi seguenti:
 
-  - **Access Edge service**   il servizio Access Edge fornisce un singolo punto di connessione attendibile per il traffico SIP (Session Initiation Protocol) in uscita e in ingresso.
+  - **Servizio**     Access Edge Il servizio Access Edge fornisce un singolo punto di connessione attendibile per il traffico SIP (Session Initiation Protocol) in uscita e in ingresso.
 
-  - **Servizio**   Web Conferencing Edge il servizio Web Conferencing Edge consente agli utenti esterni di partecipare alle riunioni ospitate nella distribuzione interna di Lync Server 2013.
+  - Servizio Web Conferencing **Edge**     Il servizio Web Conferencing Edge consente agli utenti esterni di partecipare alle riunioni ospitate nella distribuzione interna di Lync Server 2013.
 
-  - **Servizio a/v Edge**   il servizio a/v Edge rende disponibili audio, video, condivisione applicazioni e trasferimento di file per gli utenti esterni. Gli utenti possono aggiungere audio e video alle riunioni che includono partecipanti esterni e possono comunicare utilizzando audio e/o video direttamente con un utente esterno nelle sessioni punto-punto. Il servizio A/V Edge offre inoltre il supporto per la condivisione desktop e il trasferimento di file.
+  - Servizio A/ **V Edge**     Il servizio A/V Edge rende disponibili audio, video, condivisione applicazioni e trasferimento di file per gli utenti esterni. Gli utenti possono aggiungere audio e video alle riunioni che includono partecipanti esterni e possono comunicare utilizzando audio e/o video direttamente con un utente esterno nelle sessioni punto-punto. Il servizio A/V Edge offre inoltre il supporto per la condivisione desktop e il trasferimento di file.
 
-  - **Servizio proxy XMPP**   il servizio proxy XMPP accetta e invia i messaggi XMPP (Extensible Messaging and Presence Protocol) a e da partner federati XMPP configurati.
+  - **Servizio**     proxy XMPP Il servizio proxy XMPP accetta e invia i messaggi XMPP (Extensible Messaging and Presence Protocol) a e da partner federati XMPP configurati.
 
 Gli utenti esterni autorizzati possono accedere ai server perimetrali per la connessione alla distribuzione interna di Lync Server 2013, ma i server perimetrali non forniscono un mezzo per qualsiasi altro accesso alla rete interna.
 
@@ -106,7 +106,7 @@ Questo proxy è necessario per eseguire le operazioni seguenti:
 
   - Consentire ai dispositivi mobili di individuare automaticamente i Front End Server che offrono servizi per dispositivi mobili
 
-  - Abilitare le notifiche push per i dispositivi mobili dai servizi di notifica push Office 365 o Apple
+  - Per abilitare le notifiche push ai dispositivi mobili da Microsoft 365, Office 365 o Apple Push Notification Services
 
 Per ulteriori informazioni relative ai proxy inversi e ai requisiti che devono soddisfare i proxy inversi, vedere i dettagli nei [requisiti di configurazione per il proxy inverso in Lync Server 2013](lync-server-2013-configuration-requirements-for-reverse-proxy.md).
 
@@ -114,7 +114,7 @@ Per ulteriori informazioni relative ai proxy inversi e ai requisiti che devono s
 
 
 > [!NOTE]  
-> Gli utenti esterni non necessitano di una connessione VPN (Virtual Private Network) alla propria organizzazione per partecipare alle comunicazioni tramite Lync Server 2013. Se la tecnologia VPN è stata implementata nell'organizzazione e gli utenti utilizzano la VPN per Lync, è possibile che il traffico multimediale, ad esempio le conferenze video, sia influenzato negativamente. È consigliabile fornire un mezzo per il traffico multimediale per la connessione al servizio di AV Edge direttamente e ignorare la VPN. Per informazioni dettagliate, vedere l'articolo del Blog di NextHop "Abilitazione di Lync media per ignorare un tunnel <A href="https://go.microsoft.com/fwlink/p/?linkid=256532">https://go.microsoft.com/fwlink/p/?LinkId=256532</A>VPN" all'indirizzo.
+> Gli utenti esterni non necessitano di una connessione VPN (Virtual Private Network) alla propria organizzazione per partecipare alle comunicazioni tramite Lync Server 2013. Se la tecnologia VPN è stata implementata nell'organizzazione e gli utenti utilizzano la VPN per Lync, è possibile che il traffico multimediale, ad esempio le conferenze video, sia influenzato negativamente. È consigliabile fornire un mezzo per il traffico multimediale per la connessione al servizio di AV Edge direttamente e ignorare la VPN. Per informazioni dettagliate, vedere l'articolo del Blog di NextHop "Abilitazione di Lync media per ignorare un tunnel VPN" all'indirizzo <A href="https://go.microsoft.com/fwlink/p/?linkid=256532">https://go.microsoft.com/fwlink/p/?LinkId=256532</A> .
 
 
 

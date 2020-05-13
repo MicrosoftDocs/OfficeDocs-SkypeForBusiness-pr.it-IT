@@ -12,12 +12,12 @@ ms:contentKeyID: 48183399
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: b39c94b08da65e546fdf3ad01d42ada636ff371d
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: e3fe59038c022dafcf7eeedb0079ae1a8cc63fd1
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780755"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221530"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -59,7 +59,7 @@ Per completare le attività di configurazione di una distribuzione ibrida, è ne
 
   - [Installazione di Windows PowerShell per Single Sign-on con AD FS](https://go.microsoft.com/fwlink/p/?linkid=398710)
 
-  - L'assistente per l'accesso ai Microsoft Online Services (Msoidcli-7.0. msi) è incluso nel programma di installazione desktop di Office 365, che può essere ottenuto dalla pagina dei download collegata dall'interfaccia di amministrazione di Microsoft 365.
+  - L'assistente per l'accesso ai Microsoft Online Services (Msoidcli-7.0. msi) è incluso nel programma di installazione desktop per Microsoft 365, che può essere ottenuto dalla pagina dei download collegata dall'interfaccia di amministrazione di Microsoft 365.
 
 </div>
 
@@ -67,7 +67,7 @@ Per completare le attività di configurazione di una distribuzione ibrida, è ne
 
 ## <a name="administrator-credentials"></a>Credenziali di amministratore
 
-Quando viene richiesto di fornire le credenziali di amministratore, utilizzare il nome utente e la password per l'account di amministratore per l'organizzazione di Office 365. Queste credenziali vengono utilizzate anche quando si configura Active Directory Federation Services (AD FS) 2,0, la sincronizzazione della directory, il servizio Single Sign-on, la Federazione e lo spostamento degli utenti in Lync Online.
+Quando viene richiesto di fornire le credenziali di amministratore, utilizzare il nome utente e la password per l'account di amministratore per l'organizzazione Microsoft 365 o Office 365. Queste credenziali vengono utilizzate anche quando si configura Active Directory Federation Services (AD FS) 2,0, la sincronizzazione della directory, il servizio Single Sign-on, la Federazione e lo spostamento degli utenti in Lync Online.
 
 </div>
 
@@ -75,7 +75,7 @@ Quando viene richiesto di fornire le credenziali di amministratore, utilizzare i
 
 ## <a name="connecting-to-lync-online-powershell"></a>Connessione a PowerShell di Lync Online
 
-Gli amministratori hanno ora la possibilità di utilizzare Windows PowerShell per gestire Lync Online e gli account utente di Lync Online. A tale scopo, è innanzitutto necessario scaricare e installare il modulo di Lync Online Connector dall'area download Microsoft (https://go.microsoft.com/fwlink/?LinkId=294688). Per ulteriori informazioni sul download, l'installazione e l'utilizzo del modulo di Lync Online Connector e per informazioni dettagliate sull'utilizzo di Windows PowerShell per la gestione di Lync Online, vedere [utilizzo di Windows PowerShell per gestire Lync Online](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
+Gli amministratori hanno ora la possibilità di utilizzare Windows PowerShell per gestire Lync Online e gli account utente di Lync Online. A tale scopo, è innanzitutto necessario scaricare e installare il modulo di Lync Online Connector dall'area download Microsoft ( https://go.microsoft.com/fwlink/?LinkId=294688) . Per ulteriori informazioni sul download, l'installazione e l'utilizzo del modulo di Lync Online Connector e per informazioni dettagliate sull'utilizzo di Windows PowerShell per la gestione di Lync Online, vedere [utilizzo di Windows PowerShell per gestire Lync Online](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
 
 </div>
 

@@ -12,12 +12,12 @@ ms:contentKeyID: 48184946
 ms.date: 08/15/2016
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 34e96ec4aac4573a05e50eb1b13469731068b6db
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 2ce178e57b850ee4003f2596ee075d68ea14e00a
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779562"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221156"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -63,7 +63,7 @@ La federazione consente agli utenti della distribuzione locale di comunicare con
 
 ## <a name="configure-your-skype-for-business-online-tenant-for-a-shared-sip-address-space"></a>Configurare il tenant di Skype for business online per uno spazio di indirizzi SIP condiviso
 
-Un indirizzo SIP (Session Initiation Protocol) è un identificatore univoco per ogni utente in una rete, simile a un numero di telefono o a un indirizzo di posta elettronica. Prima di provare a spostare gli utenti di Lync da locale a Skype for business online, è necessario configurare l'organizzazione di Office 365 per condividere lo spazio degli indirizzi SIP (Session Initiation Protocol) condiviso con la distribuzione locale. Se questa operazione non è configurata, è possibile che venga visualizzato il messaggio di errore seguente:
+Un indirizzo SIP (Session Initiation Protocol) è un identificatore univoco per ogni utente in una rete, simile a un numero di telefono o a un indirizzo di posta elettronica. Prima di provare a spostare gli utenti di Lync da locale a Skype for business online, è necessario configurare l'organizzazione Microsoft 365 o Office 365 per condividere lo spazio degli indirizzi SIP (Session Initiation Protocol) condiviso con la distribuzione locale. Se questa operazione non è configurata, è possibile che venga visualizzato il messaggio di errore seguente:
 
 Move-CsUser: HostedMigration fault: Error = (510), Description = (il tenant di questo utente non è abilitato per lo spazio di indirizzi SIP condiviso).
 
@@ -71,7 +71,7 @@ Per configurare uno spazio di indirizzi SIP condiviso, stabilire una sessione re
 ```powershell
 Set-CsTenantFederationConfiguration -SharedSipAddressSpace $true
 ```
-Per creare una sessione remota di PowerShell con Skype for business online, è necessario prima di tutto installare il modulo Skype for business online per Windows PowerShell, che è possibile ottenere [https://go.microsoft.com/fwlink/p/?LinkId=391911](https://go.microsoft.com/fwlink/p/?linkid=391911)qui:.
+Per creare una sessione remota di PowerShell con Skype for business online, è necessario prima di tutto installare il modulo Skype for business online per Windows PowerShell, che è possibile ottenere qui: [https://go.microsoft.com/fwlink/p/?LinkId=391911](https://go.microsoft.com/fwlink/p/?linkid=391911) .
 
 Dopo aver installato il modulo, è possibile stabilire una sessione remota con i cmdlet seguenti:
 
@@ -116,4 +116,3 @@ Per ulteriori informazioni sull'utilizzo del modulo di PowerShell per Skype for 
 </div>
 
 </div>
-

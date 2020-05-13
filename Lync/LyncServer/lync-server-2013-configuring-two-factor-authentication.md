@@ -12,12 +12,12 @@ ms:contentKeyID: 54973688
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6dca691687a75a97373f15bcfcc54a7873e0f907
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 170c7564e53680f3c6971894ceee9997d20e63ef
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42209372"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221810"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,7 +37,7 @@ ms.locfileid: "42209372"
 
 _**Ultimo argomento modificato:** 2013-07-03_
 
-Nelle sezioni seguenti vengono descritti i passaggi necessari per configurare l'autenticazione a due fattori per la distribuzione. Per ulteriori informazioni sull'autenticazione a due fattori, vedere [Abilitazione di Office 365 multi-factor authentication for online Administrators-Grid User post](https://go.microsoft.com/fwlink/p/?linkid=313332).
+Nelle sezioni seguenti vengono descritti i passaggi necessari per configurare l'autenticazione a due fattori per la distribuzione. 
 
 <div>
 
@@ -72,4 +72,3 @@ Nelle sezioni seguenti vengono descritti i passaggi necessari per configurare l'
 </div>
 
 </div>
-
