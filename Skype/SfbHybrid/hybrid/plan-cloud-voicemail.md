@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: In questo articolo vengono illustrati i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione del servizio Microsoft Cloud Voicemail. Per informazioni sulla configurazione del messaggio vocale cloud, vedere Configuring cloud Voicemail.
-ms.openlocfilehash: 07448ab8232115e19c01261dc487c04b5a2dd4f9
-ms.sourcegitcommit: 6cfaadec5782ca7316db36472bd0be20217da693
+ms.openlocfilehash: 30a4983c79f4a7cddd274c272b5a094c17653bbb
+ms.sourcegitcommit: 7c08d88dcaa85e34e93131bb9a5a64597c6d8155
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341759"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210632"
 ---
 # <a name="plan-cloud-voicemail-service-for-on-premises-users"></a>Pianificare il servizio di segreteria cloud per gli utenti locali
 
@@ -79,7 +79,7 @@ Oltre ai requisiti di cui sopra, è necessario configurare i requisiti seguenti 
 
 - Un URL di servizi Web Exchange (EWS) esterno e l'individuazione automatica devono essere configurati o alcune funzionalità di segreteria telefonica cloud saranno limitate.
 
-- Se si dispone di una distribuzione solo locale&#x2014;che è solo server Exchange e Skype for business in locale&#x2014;ma si vuole usufruire di cloud voicemail, non sono necessarie licenze aggiuntive.
+- Se si dispone di una distribuzione solo locale&#x2014;che è solo server Exchange e Skype for business in locale&#x2014;ma si vuole usufruire della segreteria telefonica cloud, è necessaria una licenza di sistema telefonico.
 
 ## <a name="migration-and-interoperability"></a>Migrazione e interoperabilità
 
@@ -100,6 +100,6 @@ Microsoft consiglia i percorsi di migrazione seguenti:
 
 - Se si esegue l'aggiornamento a Skype for Business Server 2019, è possibile utilizzare la messaggistica unificata di Exchange in Exchange Server 2013 o 2016, ma è necessario eseguire l'aggiornamento a cloud voicemail se si utilizza Exchange Server 2019.
 - Se si esegue l'aggiornamento a Exchange Server 2019 e si utilizzano versioni precedenti della messaggistica UNIFICAta di Exchange Server per Skype for Business Server, Microsoft consiglia di eseguire l'aggiornamento a Skype for Business Server 2019 prima dell'aggiornamento della cassetta postale.  In caso contrario, le funzionalità di messaggistica vocale andranno perse.
-- Se si esegue l'aggiornamento a Skype for Business Server 2019 e Skype for Business Server 2015 è configurato per la segreteria telefonica con la messaggistica unificata di Exchange Online, la segreteria telefonica degli utenti eseguirà la migrazione automatica dalla messaggistica unificata di Exchange Online alla segreteria telefonica del cloud quando il relativo account Skype for Business Server 2019. 
+- Se si esegue l'aggiornamento a Skype for Business Server 2019 e Skype for Business Server 2015 è configurato per la segreteria telefonica con la messaggistica unificata di Exchange Online, la segreteria telefonica degli utenti eseguirà la migrazione automatica dalla messaggistica unificata di Exchange Online alla segreteria telefonica del cloud quando il relativo account viene spostato in Skype for 2019 business 
 
 Per ulteriori informazioni sulla pianificazione della migrazione, vedere [Plan for Skype for Business Server and Exchange Server Migration](plan-um-migration.md).
