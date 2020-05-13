@@ -17,20 +17,20 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5358e169c66764cc3343feeb78365fbe47cab452
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: 3c02d93fb010b603e973077029b9b6710c5e0ba7
+ms.sourcegitcommit: 7c08d88dcaa85e34e93131bb9a5a64597c6d8155
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042473"
+ms.lasthandoff: 05/12/2020
+ms.locfileid: "44210642"
 ---
 # <a name="admin-quick-start---meetings-and-live-events-in-microsoft-teams"></a>Guida introduttiva per l'amministratore - Riunioni ed eventi live in Microsoft Teams
 
 Esistono due modi per incontrarsi in Microsoft Teams: riunioni ed eventi live. Questo articolo illustra come implementare e configurare rapidamente riunioni ed eventi live per l'organizzazione. 
 
- - Le **riunioni** in Teams includono audio, video e condivisione dello schermo con un massimo di 250 persone. Sono uno dei modi principali per collaborare in Teams. Inoltre, non è necessario essere membri di un'organizzazione (né avere un account Teams) per partecipare a una riunione di Teams: nell'invito sono incluse tutte le istruzioni per collegarsi. 
+ - Le **riunioni** in Teams includono audio, video e condivisione dello schermo con un massimo di 350 persone. Sono uno dei modi principali per collaborare in Teams. Inoltre, non è necessario essere membri di un'organizzazione (né avere un account Teams) per partecipare a una riunione di Teams: nell'invito sono incluse tutte le istruzioni per collegarsi. 
 
- - Gli **eventi live** sono un'estensione delle riunioni di Teams. Permettono di pianificare e produrre eventi da trasmettere a un vasto pubblico online, fino a 10.000 persone. Per una riunione con più di 250 persone, usa un evento live.
+ - Gli **eventi live** sono un'estensione delle riunioni di Teams. Permettono di pianificare e produrre eventi da trasmettere a un vasto pubblico online, fino a 10.000 persone. Per una riunione con più di 350 persone, usare un evento live.
 
 ## <a name="get-licenses-for-meetings-and-live-events"></a>Ottieni le licenze per le riunioni e gli eventi live
 
