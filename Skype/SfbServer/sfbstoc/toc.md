@@ -11,13 +11,13 @@
 
 ## [Soluzioni di telefonia Microsoft](../../sfbhybrid/hybrid/msft-telephony-solutions.md)
 
-### [Pianificare Sistema telefonico connettività PSTN in locale](../skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-phone-system-with-on-premises-pstn-connectivity.md)
+### [Pianificare Sistema telefonico con connettività PSTN in locale in Skype for Business Server](../skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-phone-system-with-on-premises-pstn-connectivity.md)
 
 ### [Abilitare gli utenti per Sistema telefonico con connettività PSTN in locale in Skype for Business Server](../skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/enable-users-for-phone-system.md)
 
 #### [Abilitare gli utenti per VoIP aziendale in locale](../skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/enable-the-users-for-enterprise-voice-on-premises.md)
 #### [Assegnare un criterio di routing vocale](../skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/assign-a-voice-routing-policy.md)
-#### [Abilitare gli utenti per VoIP aziendale online e Sistema telefonico nella segreteria telefonica di Office 365](../skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/enable-users-for-enterprise-voice-online-and-phone-system-voicemail.md)
+#### [Abilitare gli utenti per VoIP aziendale online e Sistema telefonico nella segreteria telefonica](../skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/enable-users-for-enterprise-voice-online-and-phone-system-voicemail.md)
 
 
 ### [Pianificare Skype for Business Cloud Connector Edition](../skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition.md)
