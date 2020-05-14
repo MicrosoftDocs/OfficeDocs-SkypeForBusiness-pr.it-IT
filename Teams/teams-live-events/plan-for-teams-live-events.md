@@ -18,12 +18,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 51c81bb5c9ec945d7a7c47021a6a0af705c98883
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: e997b667b02ef2c3b68e5c751b619098e9e740e4
+ms.sourcegitcommit: a7c823f61d9ab88424bad924113d780ce11e509f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042853"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44224239"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -35,14 +35,16 @@ Chiunque può partecipare a un evento live senza licenza. Leggere [Guida introdu
 
 Per la pianificazione di un evento live di Teams, sono necessari i prerequisiti seguenti.
 
-Ecco le licenze che devono essere assegnate:  
+Ecco le licenze che devono essere assegnate per produrre o presentare un evento live di Teams:  
 
-- Una licenza di Office 365 Enterprise E1, E3 o E5 o una licenza di Office 365 A3 o A5
-- Una licenza di Microsoft Teams
-- Una licenza di Microsoft Stream
+- Una licenza di Microsoft o Office 365 Enterprise E1, E3 o E5 o una licenza di Office 365 Education A3 o A5.
+- Una licenza di Microsoft Teams. Quest'ultima è inclusa nelle licenze indicate sopra. 
+- Una licenza di Microsoft Stream, necessaria se si prevede di condividere il contenuto in un'app o un dispositivo esterno. Vedere l'articolo sulla [gestione delle licenze di Microsoft Stream](https://docs.microsoft.com/stream/license-overview). 
 
-> [!IMPORTANT]
-> Gli utenti che creano e pianificano un evento live devono disporre di una cassetta postale di Exchange Online.
+  Gli utenti non hanno bisogno di una licenza di Microsoft Stream se dovranno solo avere la possibilità di registrare e scaricare le registrazioni. Questo significa che le registrazioni non vengono archiviate in Microsoft Stream, bensì in Azure Media Services (AMS), con un limite di 30 giorni prima dell'eliminazione. Attualmente l'amministratore non può controllare o gestire questo aspetto, inclusa la capacità di eliminazione.
+
+> [!NOTE]
+> Attualmente non ci sono piani di Microsoft 365 Small Business che possono essere usati per creare e organizzare eventi live di Teams.
 
 È importante tenere presente che è necessaria una licenza di Office 365 per partecipare a un evento live come utente autenticato, ma questo requisito dipende dal metodo di produzione utilizzato:
 
@@ -81,6 +83,14 @@ L'utente deve disporre di:
 ## <a name="teams-live-events-and-skype-meeting-broadcast"></a>Eventi live di Teams e Skype Meeting Broadcast
 
 La tabella seguente illustra le funzionalità principali disponibili negli eventi live e le differenze con Skype Meeting Broadcast.
+
+> [!IMPORTANT]
+> **Aumento del limite degli eventi live di Microsoft 365**
+> 
+> Per consentire ai clienti di soddisfare le esigenze di comunicazione in rapida evoluzione, i limiti predefiniti degli eventi live di Microsoft 365 verranno temporaneamente aumentati fino al 1° luglio 2020 per gli eventi live che avranno luogo in Teams. Gli aumenti seguenti verranno distribuiti a fine aprile 2020:
+> - Limite di partecipanti: gli eventi possono supportare fino a 20.000 partecipanti
+> - Eventi concomitanti: 50 eventi possono avere luogo contemporaneamente in uno stesso tenant
+> - Durata dell'evento: la durata dell'evento viene aumentata a 16 ore per ogni trasmissione
 
 |**Funzionalità**   |**Skype Meeting Broadcast** |**Eventi prodotti in Teams** |**Eventi prodotti in app o dispositivi esterni** |
 |---------|---------|---------|---------|
@@ -123,17 +133,29 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 
 **Disponibile in questi data center regionali**
 
-- Americhe
+- Nord America
+- America centrale
+- Sud America
 - Asia Pacifico
 - Europa/Africa
 
-**Posizione dei dati per questi paesi**
-
+**Posizione dei dati per questi paesi/aree geografiche (supportate)**
 - Australia
 - Canada
 - India
 - Giappone
 - Regno Unito
+
+**Questi paesi/aree geografiche e cloud non sono supportati**
+- Germania
+- Francia
+- Norvegia
+- Sudafrica
+- Sud Corea
+- Svizzera
+- Emirati Arabi Uniti
+- Government Community Cloud (GCC)-H
+- DOD
 
 **Esclusioni e considerazioni**
 
