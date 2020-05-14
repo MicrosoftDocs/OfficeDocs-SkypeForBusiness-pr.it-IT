@@ -20,16 +20,16 @@ ms.custom:
 - Calling Plans
 - ms.lync.lac.CivicAddressValidation
 description: "Scopri cos'è la convalida dell'indirizzo, perché è importante e che rapporto ha con gli indirizzi e servizi di emergenza. "
-ms.openlocfilehash: 695698f8d1b6a466829174802f2ece0b92398f7e
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+ms.openlocfilehash: 9cde4246cf449e1259fb7b46264f20d65d3a7849
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41769249"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44220696"
 ---
 # <a name="what-is-address-validation"></a>Cos'è la convalida dell'indirizzo?
 
-Durante la configurazione dei Piani per chiamate in Office 365, devi assegnare un numero di telefono e un indirizzo per gli interventi di emergenza a ciascun utente.
+Quando si configurano i piani di chiamata, è necessario assegnare un numero di telefono e un indirizzo di emergenza a ognuno degli utenti.
   
 La convalida di un indirizzo civico o stradale implica la verifica della legittimità e della corretta formattazione dell'indirizzo. È possibile che un indirizzo di emergenza parzialmente corretto, ad esempio un nome digitato in modo errato della città, possa ancora superare la convalida. Il processo di convalida utilizza tutte le parti di un dato indirizzo per stabilire se contiene informazioni sufficienti a inoltrare la chiamata al centro dei servizi di emergenza più appropriato. In tal caso, viene considerato convalidato e può essere assegnato a un numero di telefono.
 

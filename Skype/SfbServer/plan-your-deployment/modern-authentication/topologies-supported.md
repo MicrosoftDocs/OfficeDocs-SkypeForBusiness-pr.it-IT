@@ -14,12 +14,12 @@ ms.collection: IT_Skype16
 ms.custom: tracyp
 ms.assetid: 258430b0-574a-47fb-90b7-54ee8996b2ec
 description: In questo articolo sono elencate le topologie online e locali supportate con l'autenticazione moderna in Skype for business, nonché le funzionalità di sicurezza che si applicano a ogni topologia.
-ms.openlocfilehash: 8c580b5ddbc38073960885375b74c73222ee272d
-ms.sourcegitcommit: 3ef5c913318fdeeaa8c55caab07c2f8224eae2b0
+ms.openlocfilehash: 443980f6ecf2bdf170974bf0fdc0dd64f3657e67
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43898111"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44219696"
 ---
 # <a name="skype-for-business-topologies-supported-with-modern-authentication"></a>Topologie di Skype for business supportate con l'autenticazione moderna
 
@@ -35,7 +35,7 @@ Dato Skype for business, Skype for business online, Exchange Server ed Exchange 
 
 ### <a name="supported-ma-topologies-in-skype-for-business"></a>Topologie di MA supportate in Skype for business
 
-Esistono potenzialmente due applicazioni server e due carichi di lavoro di Office 365, coinvolti nelle topologie Skype for business utilizzate da MA.
+Esistono potenzialmente due applicazioni server e due carichi di lavoro Microsoft 365 o Office 365, coinvolti nelle topologie Skype for business utilizzate da MA.
 
 - Skype for Business Server (CU 5) in locale
 
@@ -93,7 +93,7 @@ Le topologie miste coinvolgono combinazioni di ibridi di questo Split-Domain. Qu
 |Misto 3  <br/> |![Supporto di MA con questo, EXO con MA on, oltre a EXCH e questo in locale.](../../media/772dc261-c041-4a96-90d0-fd0b5124decf.PNG)           <br/> Utenti ospitati/cassette postali che si trovano: EXO + questo, o EXCH + questo  <br/> |Nessuna funzionalità di questo MA disponibile in questa topologia  <br/> |Nessuna funzionalità di MA per questo.  <br/> |
 |Misto 4  <br/> |![MA supportato con questo, SFBO con MA su, più EXCH e questo.](../../media/8971bfaf-961f-476c-b16e-5418d1fa0a6d.PNG)           <br/> Utenti ospitati/cassette postali che si trovano: EXCH + SFBO o EXCH + questo  <br/> |MA è attiva per SFBO, pertanto il server di autorizzazione è Azure AD per gli utenti ospitati in SFBO. Gli utenti di questo e EXO usano Active Directory.  <br/> |Solo AMF, CBA, CA/MAM con Intune solo per gli utenti online.\*  <br/> |
 |Misto 5  <br/> |![MA supportato in questo, EXO con MA e SFBO con MA, e EXCH e questo in locale.](../../media/ecc366cf-1a7b-4ad1-bf8e-57111b8ad94f.PNG)           <br/> Utenti ospitati/cassette postali che si trovano: EXO + SFBO, EXO + questo, EXCH + SFBO o EXCH + questo  <br/> |MA è attiva sia in EXO che in SFBO, pertanto il server di autorizzazione è Azure AD per gli utenti ospitati in SFBO; Gli utenti di on-Prem in EXCH e questo utilizzano Active Directory.  <br/> |Solo AMF, CBA, CA/MAM con Intune solo per gli utenti online.\*  <br/> |
-|Misto 6  <br/> |![In una topologia mista 6, l'autenticazione moderna è attiva in tutte e quattro le posizioni possibili: la situazione ideale quando si tratta di un'autorizzazione moderna.](../../media/8de21756-9152-466d-a706-58b258e2271c.png)           <br/> Utenti ospitati/cassette postali che si trovano: EXO + SFBO, EXO + questo, EXCH + SFBO o EXCH + questo  <br/> |MA è su Everywhere, quindi il server di autorizzazione è Azure AD per tutti gli utenti. (online e in locale)  <br/>  Per ulteriori [https://aka.ms/ModernAuthOverview](https://aka.ms/ModernAuthOverview) informazioni, vedere per la procedura di distribuzione. <br/> |Mae, CBA e CA/MAM (tramite Intune) per tutti gli utenti.  <br/> |
+|Misto 6  <br/> |![In una topologia mista 6, l'autenticazione moderna è attiva in tutte e quattro le posizioni possibili: la situazione ideale quando si tratta di un'autorizzazione moderna.](../../media/8de21756-9152-466d-a706-58b258e2271c.png)           <br/> Utenti ospitati/cassette postali che si trovano: EXO + SFBO, EXO + questo, EXCH + SFBO o EXCH + questo  <br/> |MA è su Everywhere, quindi il server di autorizzazione è Azure AD per tutti gli utenti. (online e in locale)  <br/>  Per ulteriori informazioni [https://aka.ms/ModernAuthOverview](https://aka.ms/ModernAuthOverview) , vedere per la procedura di distribuzione. <br/> |Mae, CBA e CA/MAM (tramite Intune) per tutti gli utenti.  <br/> |
 
 \*-AMF include Windows desktop, MAC, iOS, dispositivi Android e telefoni Windows; CBA include i dispositivi desktop, iOS e Android di Windows; CA/MAM con Intune, include dispositivi Android e iOS.
 

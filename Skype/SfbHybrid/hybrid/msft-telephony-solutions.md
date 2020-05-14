@@ -18,12 +18,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Vengono descritte le soluzioni di telefonia Microsoft.
-ms.openlocfilehash: 1ab2feb1a7cc650bc9dbb35d3205a6f9de2de7b7
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: c317079284c43f2578141827409655903982b79e
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42048627"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221326"
 ---
 # <a name="microsoft-telephony-solutions"></a>Soluzioni telefoniche Microsoft
 
@@ -40,13 +40,13 @@ Microsoft supporta diverse opzioni quando si inizia il viaggio a squadre nel clo
 
 ## <a name="private-branch-exchange-pbx-options"></a>Opzioni del PBX (Private Branch Exchange)
 
-### <a name="phone-system-office-365"></a>Sistema telefonico (Office 365)
+### <a name="phone-system-microsoft-365-or-office-365"></a>Sistema telefonico (Microsoft 365 o Office 365)
   
-Sistema telefonico è la tecnologia Microsoft per abilitare il controllo delle chiamate e le funzionalità del PBX (Private Branch Exchange) nel cloud di Office 365 con Microsoft teams e/o Skype for business online. 
+Sistema telefonico è la tecnologia Microsoft per abilitare il controllo delle chiamate e le funzionalità del PBX (Private Branch Exchange) in Microsoft 365 o Office 365 cloud con Microsoft teams e/o Skype for business online. 
 
-Sistema telefonico compatibile con i team o con i client Skype for business online e con i dispositivi certificati. Il sistema telefonico consente di sostituire il sistema PBX esistente con un set di caratteristiche direttamente recapitato da Office 365 e strettamente integrato nell'esperienza di produttività cloud dell'azienda. Per connettere il sistema telefonico alla rete PSTN (Public Switched Telephone Network), è possibile scegliere il piano di chiamata di Microsoft o il proprio carrier di telefonia.
+Sistema telefonico compatibile con i team o con i client Skype for business online e con i dispositivi certificati. Il sistema telefonico consente di sostituire il sistema PBX esistente con un set di funzionalità direttamente recapitate da Microsoft 365 o Office 365 e strettamente integrate nell'esperienza di produttività cloud dell'azienda. Per connettere il sistema telefonico alla rete PSTN (Public Switched Telephone Network), è possibile scegliere il piano di chiamata di Microsoft o il proprio carrier di telefonia.
 
-Per ulteriori informazioni, vedere [che cos'è il sistema telefonico in Office 365](https://docs.microsoft.com/MicrosoftTeams/what-is-phone-system-in-office-365).
+Per ulteriori informazioni, vedere [che cos'è il sistema telefonico in Microsoft 365 o Office 365](https://docs.microsoft.com/MicrosoftTeams/what-is-phone-system-in-office-365).
 
 ### <a name="enterprise-voice-skype-for-business-server"></a>VoIP aziendale (Skype for Business Server)
 
@@ -58,18 +58,18 @@ Per ulteriori informazioni, vedere [Plan for Enterprise Voice in Skype for Busin
 
 È possibile scegliere di connettersi alla rete PSTN (Public Switched Telephone Network) per:
 
-- Utilizzo di Microsoft Calling Plan in Office 365 
+- Utilizzo di Microsoft Calling Plan in Microsoft 365 o Office 365 
 - Connessione di un gestore di telefonia personalizzato
 
-### <a name="calling-plan-office-365"></a>Piano per le chiamate (Office 365)
+### <a name="calling-plan-microsoft-365-or-office-365"></a>Piano per le chiamate (Microsoft 365 o Office 365)
 
-Questa opzione consente di connettere il sistema telefonico Microsoft Office 365 alla rete PSTN (Public Switched Telephone Network) per abilitare le chiamate ai telefoni fissi e mobili di tutto il mondo. Con il piano di chiamata, Microsoft è il gestore PSTN.
+Questa opzione consente di connettere il sistema telefonico Microsoft 365 o Office 365 alla rete PSTN (Public Switched Telephone Network) per abilitare le chiamate ai telefoni fissi e mobili di tutto il mondo. Con il piano di chiamata, Microsoft è il gestore PSTN.
 
-Per ulteriori informazioni, vedere [Calling plans for Office 365](https://docs.microsoft.com/MicrosoftTeams/calling-plans-for-office-365).
+Per ulteriori informazioni, vedere [Calling plans for Microsoft 365 or Office 365](https://docs.microsoft.com/MicrosoftTeams/calling-plans-for-office-365).
 
-### <a name="connect-your-own-telephony-carrier-office-365-and-skype-for-business-on-premises"></a>Connettere il proprio carrier di telefonia (Office 365 e Skype for business in locale)
+### <a name="connect-your-own-telephony-carrier-microsoft-365-or-office-365-and-skype-for-business-on-premises"></a>Connettere il proprio carrier di telefonia (Microsoft 365 o Office 365 e Skype for business in locale)
 
-Questa opzione consente di connettere il sistema telefonico in Office 365 o VoIP aziendale in Skype for business locale alla rete di telefonia. Questa opzione richiede un session border controller (SBC) supportato. In alcuni casi, questa opzione può richiedere la distribuzione in locale di ulteriori software Microsoft.
+Questa opzione consente di connettere il sistema telefonico in Microsoft 365 o Office 365 o il sistema VoIP aziendale in Skype for business in locale alla rete di telefonia. Questa opzione richiede un session border controller (SBC) supportato. In alcuni casi, questa opzione può richiedere la distribuzione in locale di ulteriori software Microsoft.
 
 ## <a name="which-solution-is-right-for-your-organization"></a>Quale soluzione è adatta alla propria organizzazione?
 
@@ -115,12 +115,12 @@ Il sistema telefonico con il piano di chiamata è un'opzione all-in-the-cloud pe
 
 
 - Sistema telefonico Microsoft con piani di chiamata nazionali o internazionali aggiunti che consentono la chiamata ai telefoni di tutto il mondo (a seconda del livello di servizio concesso in licenza). 
-- Poiché il piano per le chiamate PSTN opera fuori da Office 365, questa opzione non richiede la distribuzione o la manutenzione di una distribuzione locale.
+- Poiché il piano per le chiamate PSTN opera in Microsoft 365 o Office 365, questa opzione non richiede la distribuzione o la manutenzione di una distribuzione locale.
 - I clienti possono connettere un SBC supportato tramite il routing diretto per l'interoperabilità con PBX di terze parti, dispositivi analogici e altre apparecchiature di telefonia di terze parti supportate da SBC.
 
 | Requisiti dell'infrastruttura                   | Obbligatorio?|
 | :----------------------------------------------------| ---------:|
-| Richiede una connessione ininterrotta a Office 365 | Sì |
+| Richiede una connessione ininterrotta a Microsoft 365 o Office 365 | Sì |
 | Disponibile in tutto il mondo *                            | No  |
 | Richiede la distribuzione e la gestione di un session border controller (SBC) supportato | No |
 | Richiede contratto con corriere di terze parti      | No   |
@@ -137,7 +137,7 @@ Se si risponde Sì alle domande seguenti, questa è la soluzione ideale per l'ut
 - Non si desidera gestire i controlli Border Session da soli.
 - Teams e/o Skype for business online include tutte le caratteristiche richieste dall'organizzazione.
 
-Per ulteriori informazioni, vedere [che cos'è il sistema telefonico in office 365](https://docs.microsoft.com/MicrosoftTeams/what-is-phone-system-in-office-365) e [piani di chiamata per Office 365](https://docs.microsoft.com/MicrosoftTeams/calling-plans-for-office-365).
+Per ulteriori informazioni, vedere [che cos'è il sistema telefonico in microsoft 365 e office 365](https://docs.microsoft.com/MicrosoftTeams/what-is-phone-system-in-office-365) e [piani di chiamata per Microsoft 365 o Office 365](https://docs.microsoft.com/MicrosoftTeams/calling-plans-for-office-365).
 
 ## <a name="phone-system-with-own-carrier-via-direct-routing"></a>Sistema telefonico con portante privato tramite routing diretto
 
@@ -152,7 +152,7 @@ Questa opzione fornisce a Microsoft Phone System nel cloud praticamente qualsias
 
 | Requisiti dell'infrastruttura                   | Obbligatorio?|
 | :----------------------------------------------------| ---------:|
-| Richiede una connessione ininterrotta a Office 365 | Sì |
+| Richiede una connessione ininterrotta a Microsoft 365 o Office 365 | Sì |
 | Disponibile in tutto il mondo                            | Sì  |
 | Richiede la distribuzione e la gestione di un session border controller (SBC) supportato | Sì |
 | Richiede contratto con corriere di terze parti *      | Sì   |
@@ -168,7 +168,7 @@ Se si risponde Sì alle domande seguenti, questa è la soluzione ideale per l'ut
 - È necessario interoperare con sistemi PBX e/o apparecchiature di terze parti, ad esempio, dispositivi analogici
 - I team dispongono di tutte le funzionalità necessarie per l'organizzazione.
 
-Per ulteriori informazioni, vedere [che cos'è il sistema telefonico in Office 365](https://docs.microsoft.com/MicrosoftTeams/what-is-phone-system-in-office-365) e [pianificare il routing diretto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-plan).
+Per ulteriori informazioni, vedere [che cos'è il sistema telefonico in Microsoft 365 e Office 365](https://docs.microsoft.com/MicrosoftTeams/what-is-phone-system-in-office-365) e [pianificare il routing diretto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-plan).
 
 
 ## <a name="phone-system-with-own-carrier-via-skype-for-business-server-or-cloud-connector-edition"></a>Sistema telefonico con supporto proprio tramite Skype for Business Server o Cloud Connector Edition
@@ -184,7 +184,7 @@ Questa opzione consente a Microsoft Phone System nel cloud di connettersi a una 
 
 | Requisiti dell'infrastruttura                   | Obbligatorio?|
 | :----------------------------------------------------| ---------:|
-| Richiede una connessione ininterrotta a Office 365 | Sì |
+| Richiede una connessione ininterrotta a Microsoft 365 o Office 365 | Sì |
 | Disponibile in tutto il mondo                            | Sì  |
 | Richiede la distribuzione e la gestione di un session border controller (SBC) supportato | Sì |
 | Richiede contratto con corriere di terze parti      | Sì   |
@@ -198,7 +198,7 @@ Se si risponde Sì alle domande seguenti, questa è la soluzione ideale per l'ut
 - Il piano per le chiamate PSTN non è disponibile nella propria area geografica.
 - È necessario mantenere l'operatore PSTN corrente.
 
-Per ulteriori informazioni, vedere [che cos'è il sistema telefonico in Office 365](https://docs.microsoft.com/MicrosoftTeams/what-is-phone-system-in-office-365), [Skype for Business Server 2019](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-server-2019)e [Plan for Skype for Business Cloud Connector Edition](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
+Per ulteriori informazioni, vedere [che cos'è il sistema telefonico in Microsoft 365 e Office 365](https://docs.microsoft.com/MicrosoftTeams/what-is-phone-system-in-office-365), [Skype for Business Server 2019](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-server-2019)e [Plan for Skype for Business Cloud Connector Edition](https://docs.microsoft.com/SkypeForBusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition).
 
 Suggerimento: quando si modificano le condizioni aziendali, ad esempio, non è più necessario mantenere il gestore PSTN, è consigliabile passare a Microsoft teams utilizzando le opzioni 1 o 2 per:
 - Ridurre al minimo i costi di manutenzione
@@ -217,7 +217,7 @@ Questa opzione consente a VoIP aziendale di connettersi a una rete di telefonia 
 
 | Requisiti dell'infrastruttura                   | Obbligatorio?|
 | :----------------------------------------------------| ---------:|
-| Richiede una connessione ininterrotta a Office 365 | No |
+| Richiede una connessione ininterrotta a Microsoft 365 o Office 365 | No |
 | Disponibile in tutto il mondo                            | Sì  |
 | Richiede la distribuzione e la gestione di un session border controller (SBC) supportato | Sì |
 | Richiede contratto con corriere di terze parti      | Sì   |
@@ -228,15 +228,3 @@ Per ulteriori informazioni, vedere [Plan for Enterprise Voice in Skype for Busin
 Suggerimento: quando si modificano le condizioni aziendali, ad esempio, non è più necessario mantenere il gestore PSTN, è consigliabile passare a Microsoft teams utilizzando le opzioni 1 o 2 per:
 - Ridurre al minimo i costi di manutenzione
 - Accedere alle funzionalità più recenti rilasciate da Microsoft
-
-
-
-
-
-
-
-
-
-
-
-  

@@ -1,5 +1,5 @@
 ---
-title: Abilitare gli utenti per Enterprise Voice online e il sistema telefonico in Office 365 segreteria telefonica
+title: Abilitare gli utenti per la segreteria telefonica di VoIP aziendale online e del sistema telefonico
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -18,25 +18,25 @@ ms.collection:
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: 28daebcb-c2dc-4338-b2d1-04345ece9c19
-description: Informazioni su come abilitare il sistema telefonico in Office 365 Voice Services per gli utenti di Skype for business.
-ms.openlocfilehash: 8ed04e3926adfecb2f0022d12c783f6c3e83d763
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+description: Informazioni su come abilitare i servizi vocali del sistema telefonico per gli utenti di Skype for business.
+ms.openlocfilehash: 522da56969f851280812670692a27d94e4df09a8
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780725"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221106"
 ---
-# <a name="enable-users-for-enterprise-voice-online-and-phone-system-in-office-365-voicemail"></a>Abilitare gli utenti per Enterprise Voice online e il sistema telefonico in Office 365 segreteria telefonica
+# <a name="enable-users-for-enterprise-voice-online-and-phone-system-voicemail"></a>Abilitare gli utenti per la segreteria telefonica di VoIP aziendale online e del sistema telefonico
  
-Informazioni su come abilitare il sistema telefonico in Office 365 Voice Services per gli utenti di Skype for business.
+Informazioni su come abilitare i servizi vocali del sistema telefonico per gli utenti di Skype for business.
   
-L'ultimo passaggio per la distribuzione del sistema telefonico in Office 365 con connettività PSTN locale consiste nell'abilitare gli utenti per il sistema telefonico in Office 365 e nella segreteria telefonica. Per abilitare queste funzionalità, è necessario essere un utente con il ruolo di amministratore globale ed essere in grado di eseguire Remote PowerShell. È necessario seguire la procedura descritta in questo argomento per tutti gli account utente che non dispongono già di VoIP aziendale abilitato per Skype for business online.
+L'ultimo passaggio per la distribuzione del sistema telefonico con connettività PSTN locale consiste nell'abilitare gli utenti per il sistema telefonico e la segreteria telefonica. Per abilitare queste funzionalità, è necessario essere un utente con il ruolo di amministratore globale ed essere in grado di eseguire Remote PowerShell. È necessario seguire la procedura descritta in questo argomento per tutti gli account utente che non dispongono già di VoIP aziendale abilitato per Skype for business online.
   
-## <a name="enable-phone-system-in-office-365-voice-services"></a>Abilitare il sistema telefonico in Office 365 Voice Services
+## <a name="enable-phone-system-voice-services"></a>Abilitazione dei servizi vocali del sistema telefonico
 
-Per abilitare un utente per il sistema telefonico in Office 365 vocale e segreteria telefonica, è necessario eseguire alcuni passaggi iniziali, ad esempio controllare se il connettore di Skype for business online è distribuito sui server e abilitare gli utenti per la segreteria telefonica ospitata.
+Per abilitare un utente per la segreteria telefonica del sistema telefonico, è necessario eseguire alcuni passaggi iniziali, ad esempio controllare se il connettore di Skype for business online è distribuito sui server e abilitare gli utenti per la segreteria telefonica ospitata.
   
-### <a name="to-enable-your-users-for-phone-system-in-office-365-voice-and-voicemail"></a>Per abilitare gli utenti per il sistema telefonico in Office 365 vocale e segreteria telefonica
+### <a name="to-enable-your-users-for-phone-system-voice-and-voicemail"></a>Per abilitare gli utenti per la segreteria telefonica e vocale del sistema telefonico
 
 1. Prima di iniziare, verificare che il connettore di Skype for business online (modulo di Windows PowerShell) sia distribuito nei server front end. In caso contrario, è possibile scaricarlo dall' [area download](https://www.microsoft.com/download/details.aspx?id=39366). Per ulteriori informazioni sull'utilizzo di questo modulo, vedere [configurazione del computer per la gestione di Skype for business online](https://technet.microsoft.com/library/dn362839%28v=ocs.15%29.aspx).
     
@@ -87,9 +87,9 @@ Per abilitare un utente per il sistema telefonico in Office 365 vocale e segrete
     > [!NOTE]
     > È inoltre possibile specificare un utente per l'indirizzo SIP, il nome dell'entità utente (UPN), il nome di dominio e il nome utente (dominio\nomeutente) e il nome visualizzato in Active Directory ("Bob Kelly"). 
   
-## <a name="update-the-line-uri-and-dial-plan-for-users-enabled-for-phone-system-in-office-365"></a>Aggiornamento dell'URI di linea e del dial plan per gli utenti abilitati per il sistema telefonico in Office 365
+## <a name="update-the-line-uri-and-dial-plan-for-users-enabled-for-phone-system"></a>Aggiornamento dell'URI di linea e del dial plan per gli utenti abilitati per il sistema telefonico
 
-In questa sezione viene descritto come aggiornare l'URI di linea e il dial plan per gli utenti abilitati per il sistema telefonico in Office 365. 
+In questa sezione viene descritto come aggiornare l'URI di linea e il dial plan per gli utenti abilitati per il sistema telefonico. 
   
 ### <a name="to-update-the-line-uri"></a>Per aggiornare l'URI di linea
 
@@ -141,12 +141,12 @@ In questa sezione viene descritto come aggiornare l'URI di linea e il dial plan 
 
 ## <a name="update-the-voice-routing-policies-using-on-premises-windows-powershell-cmdlets"></a>Aggiornare i criteri di routing vocale utilizzando i cmdlet di Windows PowerShell locali
 
-In questa sezione viene descritto come aggiornare i criteri di routing vocale per gli utenti abilitati per il sistema telefonico in Office 365.
+In questa sezione viene descritto come aggiornare i criteri di routing vocale per gli utenti abilitati per il sistema telefonico.
   
-Sistema telefonico in Office 365 gli utenti devono disporre di un criterio di routing vocale ad essi assegnato per le chiamate da instradare correttamente. Questa impostazione è diversa da quella degli utenti di VoIP aziendale locali che richiedono l'assegnazione di un criterio vocale per consentire alle chiamate di instradare correttamente. Il criterio di routing vocale deve contenere gli utilizzi PSTN che definiscono le chiamate e le route autorizzate per il sistema telefonico negli utenti di Office 365. È possibile copiare questi utilizzi PSTN dai criteri vocali esistenti ai nuovi criteri di routing vocale. Per ulteriori informazioni, vedere [New-CsVoiceRoutingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csvoiceroutingpolicy?view=skype-ps).
+Gli utenti di sistema telefonico devono disporre di un criterio di routing vocale ad essi assegnato per le chiamate da instradare correttamente. Questa impostazione è diversa da quella degli utenti di VoIP aziendale locali che richiedono l'assegnazione di un criterio vocale per consentire alle chiamate di instradare correttamente. Il criterio di routing vocale deve contenere gli utilizzi PSTN che definiscono le chiamate e le route autorizzate per gli utenti del sistema telefonico. È possibile copiare questi utilizzi PSTN dai criteri vocali esistenti ai nuovi criteri di routing vocale. Per ulteriori informazioni, vedere [New-CsVoiceRoutingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csvoiceroutingpolicy?view=skype-ps).
   
 > [!NOTE]
-> Tutti i sistemi di telefonia in Office 365 agli utenti viene assegnato lo stesso criterio vocale online denominato BusinessVoice che definisce le funzionalità di chiamata consentite; ad esempio, Consenti squillo simultaneo. 
+> A tutti gli utenti di sistema telefonico sono assegnati gli stessi criteri vocali online denominati BusinessVoice, che definisce le funzionalità di chiamata consentite; ad esempio, Consenti squillo simultaneo. 
   
 ### <a name="to-assign-a-per-user-voice-routing-policy-to-a-single-user"></a>Per assegnare un criterio di routing vocale per utente a un singolo utente
 

@@ -12,18 +12,18 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c36150bb-461c-4f1c-877b-fac7fb232f7c
 description: Leggere questo argomento per informazioni sul provisioning degli account di sistema di Skype room in Microsoft 365 o Office 365.
-ms.openlocfilehash: e2796d9a81f918c0503382e23aad5ead711240e7
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: dd79081c690863a5851295ab48a950b3f7af66af
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779712"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221850"
 ---
 # <a name="provisioning-skype-room-system-accounts-in-microsoft-365-and-office-365"></a>Provisioning degli account di sistema di Skype room in Microsoft 365 e Office 365
  
-Leggere questo argomento per informazioni sul provisioning degli account di sistema di Skype room in Office 365.
+Leggere questo argomento per informazioni sul provisioning degli account di sistema di Skype room in Microsoft 365 o Office 365.
   
-Nella sezione seguente viene illustrato il provisioning dell'account del sistema in chat per un'organizzazione di Office 365.
+Nella sezione seguente viene illustrato il provisioning dell'account del sistema di chat room Skype.
   
 ## <a name="microsoft-365-and-office-365-prerequisites"></a>Prerequisiti di Microsoft 365 e Office 365
 
@@ -41,7 +41,7 @@ Il tenant online deve soddisfare i requisiti seguenti:
     
   - Accesso remoto a PowerShell di Skype for business online
     
-  - Modulo di Windows Azure Active Directory per Windows PowerShell per accedere all'accesso alla directory di Office 365
+  - Modulo di Windows Azure Active Directory per Windows PowerShell per accedere a Microsoft 365 o all'accesso alla directory di Office 365
     
 Per l'account della sala Skype, è necessaria la licenza seguente:
   
@@ -55,9 +55,9 @@ Per l'account della sala Skype, è necessaria la licenza seguente:
     
 ## <a name="provisioning-overview"></a>Panoramica del provisioning
 
-Nel diagramma seguente viene fornita una panoramica del flusso di provisioning dell'account del sistema in sala Skype in Office 365.
+Nel diagramma seguente viene fornita una panoramica del flusso di provisioning dell'account del sistema di Skype room.
   
-![Procedure per il provisioning di Skype room System per O365](../../media/354c5659-317b-4e85-a1bc-c60c07f305a4.png)
+![Procedure per il provisioning di Skype room System](../../media/354c5659-317b-4e85-a1bc-c60c07f305a4.png)
   
 ## <a name="identify-a-new-conference-room"></a>Identificare una nuova sala riunioni
 
@@ -93,7 +93,7 @@ Dopo aver creato la cassetta postale, è possibile utilizzare il cmdlet Set-Cale
 
 ## <a name="assigning-a-skype-for-business-online-license"></a>Assegnazione di una licenza di Skype for business online
 
-A questo punto, è possibile assegnare una licenza di Skype for business online (piano 2) o Skype for business online (piano 3) utilizzando il portale amministrativo di Office 365 come descritto in [assegnare o rimuovere licenze per office 365 for business](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&amp;rs=en-US&amp;ad=US) o in licenze per i componenti aggiuntivi di [Skype for business](https://support.office.com/article/Skype-for-Business-add-on-licensing-3ed752b1-5983-43f9-bcfd-760619ab40a7). 
+A questo punto è possibile assegnare una licenza di Skype for business online (piano 2) o Skype for business online (piano 3) utilizzando il portale amministrativo Microsoft 365 come descritto in [assegnare o rimuovere licenze per microsoft 365 for business](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc?ui=en-US&amp;rs=en-US&amp;ad=US) o in licenze per i componenti aggiuntivi di [Skype for business](https://support.office.com/article/Skype-for-Business-add-on-licensing-3ed752b1-5983-43f9-bcfd-760619ab40a7). 
   
 Dopo aver assegnato una licenza per Skype for business online, è possibile effettuare l'accesso e verificare che l'account sia attivo utilizzando un client Skype for business.
   
@@ -126,7 +126,7 @@ Dopo aver creato e abilitato l'account di una cassetta postale della sala risors
 
 ## <a name="password-expiration"></a>Scadenza password
 
-In Office 365, i criteri di scadenza della password predefinita per tutti gli account utente sono 90 giorni, a meno che non si configuri un criterio di scadenza delle password diverso. Per gli account di sistema delle chat room Skype, è possibile selezionare la password never expires setting con i passaggi seguenti.
+In Microsoft 365 o Office 365, i criteri di scadenza della password predefinita per tutti gli account utente sono di 90 giorni, a meno che non si configuri un criterio di scadenza di una password diversa. Per gli account di sistema delle chat room Skype, è possibile selezionare la password never expires setting con i passaggi seguenti.
   
 1. Creare una sessione di Windows Azure Active Directory utilizzando le credenziali di amministratore globale del tenant.
     

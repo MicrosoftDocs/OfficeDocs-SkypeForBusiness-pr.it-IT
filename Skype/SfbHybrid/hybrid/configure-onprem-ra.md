@@ -13,16 +13,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Configurare un account delle risorse per Skype for Business Server 2019.
-ms.openlocfilehash: 0d7e52892c718f215a269201b73a547a97c13f96
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: b5397a1d179ade5e9d70d6c9cf857bae9319d155
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042843"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221136"
 ---
 # <a name="configure-resource-accounts"></a>Configurare gli account delle risorse
 
-Le implementazioni ibride di Skype for Business Server 2019 utilizzano solo i servizi cloud forniti dal sistema telefonico per la messaggistica unificata e non si integrano con Exchange Online. In Skype for Business Server 2019 si è ora in grado di utilizzare le code di chiamata cloud e gli operatori automatici descritti in [Ecco cosa si ottiene con il sistema telefonico in Office 365](/MicrosoftTeams/here-s-what-you-get-with-phone-system).
+Le implementazioni ibride di Skype for Business Server 2019 utilizzano solo i servizi cloud forniti dal sistema telefonico per la messaggistica unificata e non si integrano con Exchange Online. In Skype for Business Server 2019 si è ora in grado di utilizzare le code di chiamata cloud e gli operatori automatici descritti in [Ecco cosa si ottiene con il sistema telefonico in Microsoft 365 o Office 365](/MicrosoftTeams/here-s-what-you-get-with-phone-system).
 
 Per utilizzare un operatore automatico o una coda di chiamata di sistema telefonico con Skype for Business Server 2019, è necessario creare gli account delle risorse che fungono da endpoint dell'applicazione e possono essere assegnati numeri di telefono, quindi utilizzare l'interfaccia di amministrazione dei team online per configurare la coda di chiamata o l'operatore automatico. Questo account risorse può essere ospitato online (vedere [gestire gli account delle risorse in Microsoft teams](/MicrosoftTeams/manage-resource-accounts) per creare gli account delle risorse ospitati online) o in locale, come descritto in questo articolo. In genere si dispone di più nodi dell'operatore automatico del sistema telefonico o della coda di chiamata, ognuno dei quali è mappato a un account delle risorse, che può essere ospitato online o in Skype for Business Server 2019.
 
@@ -43,7 +43,7 @@ Se l'operatore automatico del sistema telefonico o la coda di chiamata avranno b
 
 Se l'operatore automatico o la coda di chiamata è annidata in un operatore automatico di primo livello, l'account di risorse associato deve disporre di un numero di telefono solo se si desidera che più punti di ingresso nella struttura di operatori automatici e code di chiamata.
 
-Per reindirizzare le chiamate agli utenti dell'organizzazione ospitate online, è necessario che dispongano di una licenza di **sistema telefonico** e che siano abilitati per VoIP aziendale o che dispongano di piani di chiamata di Office 365. Vedere [assegnare licenze per i componenti aggiuntivi di Microsoft teams](/MicrosoftTeams/teams-add-on-licensing/assign-teams-add-on-licenses). Per abilitarli per VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, eseguire:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
+Per reindirizzare le chiamate agli utenti dell'organizzazione ospitate online, è necessario che dispongano di una licenza di **sistema telefonico** e che siano abilitati per VoIP aziendale o che dispongano di piani di chiamata Microsoft 365 o Office 365. Vedere [assegnare licenze Microsoft teams](/MicrosoftTeams/assign-teams-licenses). Per abilitarli per VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, eseguire:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
 
 Se l'operatore automatico del sistema telefonico o la coda di chiamata che si sta creando sarà annidata e non avrà bisogno di un numero di telefono, il processo è:
 
@@ -58,7 +58,7 @@ La creazione di un account delle risorse che utilizza un numero di telefono rich
 
 1. Porta o ottenere un numero di servizio a pagamento o a pedaggio. Il numero non può essere assegnato a nessun altro account di servizi vocali o risorse.
 
-   Prima di assegnare un numero di telefono a un account delle risorse, è necessario ottenere o trasferire numeri di servizio a pedaggio o a pedaggio esistenti. Dopo aver ottenuto i numeri > **di telefono di** > servizio a pagamento o a pedaggio, verranno visualizzati nei numeri di**telefono**dell'interfaccia di **amministrazione di Microsoft teams**e il **tipo di numero** elencato verrà elencato come **servizio gratuito**. Per ottenere i numeri di servizio, vedere [ottenere numeri di telefono di servizio](/MicrosoftTeams/getting-service-phone-numbers) o se si desidera trasferire un numero di servizio esistente, vedere [trasferire numeri di telefono a teams](/MicrosoftTeams/phone-number-calling-plans/transfer-phone-numbers-to-teams).
+   Prima di assegnare un numero di telefono a un account delle risorse, è necessario ottenere o trasferire numeri di servizio a pedaggio o a pedaggio esistenti. Dopo aver ottenuto i numeri di telefono di servizio a pagamento o a pedaggio, verranno visualizzati nei numeri di telefono dell'interfaccia di **amministrazione di Microsoft teams**  >  **Voice**  >  **Phone numbers**e il **tipo di numero** elencato verrà elencato come **servizio gratuito**. Per ottenere i numeri di servizio, vedere [ottenere numeri di telefono di servizio](/MicrosoftTeams/getting-service-phone-numbers) o se si desidera trasferire un numero di servizio esistente, vedere [trasferire numeri di telefono a teams](/MicrosoftTeams/phone-number-calling-plans/transfer-phone-numbers-to-teams).
 
    Se si è al di fuori degli Stati Uniti, non è possibile utilizzare l'interfaccia di amministrazione di Microsoft teams per ottenere i numeri di servizio. Andare a [gestire i numeri di telefono per l'organizzazione](/MicrosoftTeams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization) , invece, per vedere come farlo dall'esterno degli Stati Uniti.
 
@@ -76,7 +76,7 @@ La creazione di un account delle risorse che utilizza un numero di telefono rich
 
     Per ulteriori informazioni su questo comando, vedere [New-CsHybridApplicationEndpoint](https://docs.microsoft.com/powershell/module/skype/new-cshybridapplicationendpoint?view=skype-ps) .
 
-4. Optional Dopo aver creato gli account delle risorse, è possibile attendere che Active Directory venga sincronizzato tra online e in locale oppure forzare una sincronizzazione e procedere alla configurazione online dell'operatore automatico del sistema telefonico o delle code di chiamata. Per forzare una sincronizzazione, è possibile eseguire il comando seguente nel computer che esegue AAD Connect (se non lo si è già fatto, è `import-module adsync` necessario caricarlo per eseguire il comando):
+4. Optional Dopo aver creato gli account delle risorse, è possibile attendere che Active Directory venga sincronizzato tra online e in locale oppure forzare una sincronizzazione e procedere alla configurazione online dell'operatore automatico del sistema telefonico o delle code di chiamata. Per forzare una sincronizzazione, è possibile eseguire il comando seguente nel computer che esegue AAD Connect (se non lo si è già fatto, è necessario caricarlo `import-module adsync` per eseguire il comando):
 
     ``` Powershell
     Start-ADSyncSyncCycle -PolicyType Delta
@@ -135,7 +135,7 @@ Accedere al server front end di Skype for business ed eseguire i cmdlet di Power
 
     Per ulteriori informazioni su questo comando, vedere [New-CsHybridApplicationEndpoint](https://docs.microsoft.com/powershell/module/skype/new-cshybridapplicationendpoint?view=skype-ps) .
 
-2. Optional Dopo aver creato gli account delle risorse, è possibile attendere che Active Directory venga sincronizzato tra online e in locale oppure forzare una sincronizzazione e procedere alla configurazione online dell'operatore automatico del sistema telefonico o delle code di chiamata. Per forzare una sincronizzazione, è possibile eseguire il comando seguente nel computer che esegue AAD Connect (se non lo si è già fatto, è `import-module adsync` necessario caricarlo per eseguire il comando):
+2. Optional Dopo aver creato gli account delle risorse, è possibile attendere che Active Directory venga sincronizzato tra online e in locale oppure forzare una sincronizzazione e procedere alla configurazione online dell'operatore automatico del sistema telefonico o delle code di chiamata. Per forzare una sincronizzazione, è possibile eseguire il comando seguente nel computer che esegue AAD Connect (se non lo si è già fatto, è necessario caricarlo `import-module adsync` per eseguire il comando):
 
     ``` Powershell
     Start-ADSyncSyncCycle -PolicyType Delta
@@ -209,4 +209,4 @@ La migrazione dalla messaggistica unificata di Exchange al sistema telefonico ri
 
 [New-CsOnlineApplicationInstance](https://docs.microsoft.com/powershell/module/skype/new-csonlineapplicationinstance?view=skype-ps)
 
-[Gestire gli account delle risorse in Microsoft teams](/MicrosoftTeams/manage-resource-accounts) - \(per creare gli account delle risorse ospitati online\)
+[Gestire gli account delle risorse in Microsoft teams](/MicrosoftTeams/manage-resource-accounts)  -  \( per creare gli account delle risorse ospitati online\)

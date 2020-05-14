@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 ms.prod: skype-for-business-itpro
 description: In questo argomento vengono illustrate le operazioni da prendere in considerazione quando si decide di eseguire la migrazione delle distribuzioni esistenti di Skype for Business Server o Exchange Server alla versione più recente o a Skype for business online o Exchange Online.
-ms.openlocfilehash: ce2e0712c75e5aa052c7eff7667f09ff34c3908a
-ms.sourcegitcommit: bb88ac0c9489bb47957e5ef1074b5df3126b6fdb
+ms.openlocfilehash: fec12eb5b386222ad0a69115ca3fc9e2de9e2fea
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42265611"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221266"
 ---
 # <a name="plan-for-skype-for-business-server-and-exchange-server-migration"></a>Pianificare la migrazione di Skype for Business Server e Exchange Server
 
@@ -33,7 +33,7 @@ La messaggistica unificata (UM) è stata deprecata in Exchange 2019. Questo sign
 - Segreteria telefonica
 - Operatore automatico
 
-Se è stato distribuito il ruolo di messaggistica unificata in Exchange 2013 o il servizio di messaggistica unificata in Exchange 2016 e si desidera eseguire l'aggiornamento a Exchange 2019, è necessario eseguire la migrazione della segreteria telefonica al servizio Microsoft Cloud voicemail in Office 365. Se si desidera eseguire la migrazione della segreteria telefonica alla segreteria telefonica cloud, consultare la sezione Exchange [2013/exchange 2016 e Skype for business 2015 a exchange 2019 e Skype for business 2019](#exchange-2013exchange-2016-and-skype-for-business-2015-to-exchange-2019-and-skype-for-business-2019) .
+Se è stato distribuito il ruolo di messaggistica unificata in Exchange 2013 o il servizio di messaggistica unificata in Exchange 2016 e si desidera eseguire l'aggiornamento a Exchange 2019, è necessario eseguire la migrazione della segreteria telefonica al servizio Microsoft Cloud voicemail in Microsoft 365 o Office 365. Se si desidera eseguire la migrazione della segreteria telefonica alla segreteria telefonica cloud, consultare la sezione Exchange [2013/exchange 2016 e Skype for business 2015 a exchange 2019 e Skype for business 2019](#exchange-2013exchange-2016-and-skype-for-business-2015-to-exchange-2019-and-skype-for-business-2019) .
 > [!IMPORTANT]
 > Se gli utenti dei server Exchange 2013 o Exchange 2016 dispongono di cassette postali abilitate alla messaggistica unificata, non spostarli in Exchange 2019 prima di aggiornare i server Skype for business a Skype for Business Server 2019 e spostare gli utenti in modo da evitare un'interruzione della messaggistica vocale.
 
@@ -55,13 +55,13 @@ Sono supportati gli scenari seguenti che consentono di eseguire la migrazione de
 - Exchange 2013/Exchange 2016 e Skype for Business Server 2015 a Exchange 2019 e Skype for Business Server 2019
 - Skype for Business Server 2015 to Skype for Business Server 2019 con Exchange 2013/Exchange 2016
 
-Negli scenari seguenti è necessario che non esistano configurazioni PBX o SBC come parte della distribuzione corrente e si presuppone che la messaggistica unificata sia configurata nei server Exchange locali. Ognuna di queste soluzioni presuppone inoltre che sia stata decisa la configurazione di una distribuzione ibrida tra i server Skype for business locali e Office 365. Per ulteriori informazioni sulle distribuzioni ibride di Skype for business, vedere [pianificare la connettività ibrida](plan-hybrid-connectivity.md).
+Negli scenari seguenti è necessario che non esistano configurazioni PBX o SBC come parte della distribuzione corrente e si presuppone che la messaggistica unificata sia configurata nei server Exchange locali. Ognuna di queste soluzioni presuppone inoltre che sia stata decisa la configurazione di una distribuzione ibrida tra i server Skype for business locali e Microsoft 365 o Office 365. Per ulteriori informazioni sulle distribuzioni ibride di Skype for business, vedere [pianificare la connettività ibrida](plan-hybrid-connectivity.md).
 
 ### <a name="exchange-2013exchange-2016-and-skype-for-business-2015-to-exchange-2019-and-skype-for-business-2019"></a>Exchange 2013/Exchange 2016 e Skype for business 2015 a Exchange 2019 e Skype for business 2019
 
 In questo scenario, si desidera eseguire la migrazione dei server Exchange 2013, Exchange 2016 e Skype for business 2015 esistenti a Exchange 2019 e Skype for business 2019.
 
-Come accennato in precedenza in questo argomento, Exchange 2019 non include più il servizio di messaggistica unificata. Ciò significa che, per tutte le cassette postali che si desidera spostare in Exchange 2019, è necessario utilizzare il servizio di segreteria telefonica cloud per sostituire la funzionalità fornita da un Service di messaggistica unificata. Quando si configura Skype for Business Server 2019 e una distribuzione ibrida tra it e Office 365, i servizi vocali di messaggistica unificata di Exchange vengono sostituiti da cloud Voicemail.
+Come accennato in precedenza in questo argomento, Exchange 2019 non include più il servizio di messaggistica unificata. Ciò significa che, per tutte le cassette postali che si desidera spostare in Exchange 2019, è necessario utilizzare il servizio di segreteria telefonica cloud per sostituire la funzionalità fornita da un Service di messaggistica unificata. Quando si configura Skype for Business Server 2019 e una distribuzione ibrida tra it e Microsoft 365 o Office 365, i servizi vocali di messaggistica unificata di Exchange vengono sostituiti da cloud Voicemail.
 
 L'ordine in cui si spostano gli utenti in Exchange 2019 e Skype for Business Server 2019 è fondamentale per garantire che la funzionalità della segreteria telefonica rimanga disponibile per tutti gli utenti. L'elaborazione della segreteria telefonica è determinata anche dalla posizione in cui si trovano le cassette postali e gli utenti di Exchange e Skype for business. Consultare la seguente tabella per vedere quali combinazioni di Exchange e Skype for Business Server sono supportate e dove viene elaborato il messaggio vocale.
 

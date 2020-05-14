@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: e69ac58c-e8fe-40bc-a4c8-f0a0190fbaa7
 description: Leggere questo argomento per esaminare le considerazioni sulla pianificazione per l'implementazione di bypass multimediale con Cloud Connector Edition versione 2,0 e versioni successive. Per informazioni sulla distribuzione di bypass multimediale, vedere Deploy media bypass in Cloud Connector Edition.
-ms.openlocfilehash: f9da5df4815c731b479f5d2333f26546be0daf4c
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 568fa13584a44540d8351ea2eb32475c1d276ff7
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43778782"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44220256"
 ---
 # <a name="plan-for-media-bypass-in-cloud-connector-edition"></a>Pianificare il bypass multimediale in Cloud Connector Edition
  
@@ -37,7 +37,7 @@ Il bypass multimediale può migliorare la qualità vocale riducendo la latenza, 
 
 Mentre la segnalazione prende lo stesso percorso con o senza bypass multimediale, il flusso multimediale differisce. Nei diagrammi seguenti vengono illustrati i percorsi multimediali e di segnalazione nelle topologie con e senza bypass multimediale. 
   
-Ad esempio, nella topologia seguente, che non utilizza il bypass multimediale, un client Skype for business inserisce una chiamata PSTN su un numero esterno, la segnalazione SIP passa a Office 365 e Office 365 quindi indirizza il traffico di segnalazione in base ai criteri vocali dell'utente finale. Per gli utenti dei connettori cloud, i criteri vocali indirizzano il traffico di segnalazione al server perimetrale del connettore Cloud, che instrada il traffico di segnalazione a un SBC (Session Border Controller) PSTN o a un gateway tramite il Cloud Connector Mediation Server. I flussi multimediali dal client Skype for business al Cloud Connector Mediation Server e quindi a SBC o gateway, come illustrato nel diagramma seguente:
+Ad esempio, nella topologia seguente, che non utilizza il bypass multimediale, un client Skype for business inserisce una chiamata PSTN su un numero esterno, la segnalazione SIP passa a Microsoft 365 o Office 365, che indirizza il traffico di segnalazione in base ai criteri vocali dell'utente finale. Per gli utenti dei connettori cloud, i criteri vocali indirizzano il traffico di segnalazione al server perimetrale del connettore Cloud, che instrada il traffico di segnalazione a un SBC (Session Border Controller) PSTN o a un gateway tramite il Cloud Connector Mediation Server. I flussi multimediali dal client Skype for business al Cloud Connector Mediation Server e quindi a SBC o gateway, come illustrato nel diagramma seguente:
   
 **Percorsi multimediali e di segnalazione senza bypass multimediale**
 
@@ -59,7 +59,7 @@ Il bypass multimediale è utile anche quando si desidera fornire servizi di tele
 
 ![Esempio di sito con Cloud Connector](../../media/ace8dc3c-1082-46a2-b8b4-98cbf678620e.png)
   
-1. Il traffico SIP scorre dall'utente di Zurigo a Office 365.
+1. Il traffico SIP scorre dall'utente di Zurigo a Microsoft 365 o Office 365.
     
 2. Il traffico viene quindi indirizzato all'appliance del connettore Cloud di Amsterdam come specificato nel criterio di routing vocale dell'utente.
     

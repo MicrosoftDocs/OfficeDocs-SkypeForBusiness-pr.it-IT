@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: 'Riepilogo: informazioni su come eseguire la migrazione delle impostazioni utente e spostare gli utenti in team.'
-ms.openlocfilehash: 07d0657017d24acbbd3961c3528056debb927a5a
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 7b6925917cff3265280b88979660ad1289a63d12
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779682"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221376"
 ---
 # <a name="move-users-from-on-premises-to-teams"></a>Spostare utenti da ambiente locale a Teams
 
@@ -61,17 +61,17 @@ Gli strumenti di amministrazione locali in Skype for Business Server 2015 con CU
 
 Move-CsUser è disponibile da una finestra di PowerShell della shell di gestione di Skype for business locale. I passaggi riportati di seguito e le autorizzazioni necessarie sono uguali allo spostamento di un utente in Skype for business online, tranne per il fatto che è necessario specificare anche l'opzione MoveToTeams ed è necessario assicurarsi che all'utente sia stata assegnata anche una licenza per i team (oltre a Skype for business online).
 
-È necessario disporre di privilegi sufficienti sia nell'ambiente locale che nell'organizzazione di Office 365, come descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials). È possibile utilizzare un singolo account che disponga di privilegi in entrambi gli ambienti oppure è possibile avviare una finestra della shell di gestione di Skype for Business Server locale con le credenziali locali e utilizzare il `-Credential` parametro per specificare le credenziali di un account di Office 365 con il ruolo amministrativo di Office 365 necessario.
+È necessario disporre di privilegi sufficienti sia nell'ambiente locale che nel servizio cloud (Microsoft 365 o Office 365), come descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials). È possibile utilizzare un singolo account che disponga di privilegi in entrambi gli ambienti oppure è possibile avviare una finestra della shell di gestione di Skype for Business Server locale con le credenziali locali e utilizzare il `-Credential` parametro per specificare le credenziali di un account di Microsoft 365 o di Office 365 con il ruolo amministrativo necessario.
 
 Per spostare un utente in modalità solo teams tramite Move-CsUser:
 
 - Specificare l'utente da spostare tramite il `Identity` parametro.
-- Specificare il parametro-target con il valore "sipfed. online. Lync. <span>com ".
+- Specificare il parametro-target con il valore "sipfed. online. Lync. <span> com ".
 - Specificare l' `MoveToTeams` opzione.
-- Se non si dispone di un account con autorizzazioni sufficienti sia in locale che in Office 365, utilizzare il `-credential` parametro per fornire un account con autorizzazioni sufficienti in Office 365.
-- Se l'account con le autorizzazioni in Office 365 non termina in "onmicrosoft. <span>com ", è necessario specificare il `-HostedMigrationOverrideUrl` parametro con il valore corretto descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials).
+- Se non si dispone di un account con autorizzazioni sufficienti sia nei locali che nel servizio cloud (Microsoft 365 o Office 365), utilizzare il `-credential` parametro per fornire un account con autorizzazioni sufficienti in Office 365.
+- Se l'account con autorizzazioni in Microsoft 365 o Office 365 non termina in "onmicrosoft. <span> com ", è necessario specificare il `-HostedMigrationOverrideUrl` parametro con il valore corretto descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials).
 
-È possibile utilizzare la sequenza di cmdlet seguente per spostare un utente in TeamsOnly e si presuppone che la credenziale Office 365 sia un account separato e fornito come input per il prompt di Get-Credential.
+È possibile utilizzare la sequenza di cmdlet seguente per spostare un utente in TeamsOnly e si presuppone che la credenziale Microsoft 365 o Office 365 sia un account separato e fornito come input per il prompt di Get-Credential.
 
   ```powershell
   $cred=Get-Credential
@@ -86,13 +86,13 @@ Per spostare un utente in modalità solo teams tramite Move-CsUser:
 3. Utilizzare **trova** per individuare gli utenti che si desidera spostare in teams.
 4. Selezionare l'utente o gli utenti e quindi, nell'elenco a discesa **azione** in alto nell'elenchi, scegliere **Sposta gli elementi selezionati in teams**.
 5. Nella procedura guidata fare clic su **Avanti**.
-6. Se richiesto, accedere a Office 365, con un account che termina con. onmicrosoft.com e dispone di autorizzazioni sufficienti.
+6. Se richiesto, accedere a Microsoft 365 o Office 365 con un account che termina con. onmicrosoft.com e dispone di autorizzazioni sufficienti.
 7. Fare clic su **Avanti**e **quindi su Avanti per** spostare l'utente.
 8. Si noti che i messaggi di stato relativi a esito positivo o negativo sono forniti nella parte superiore dell'app del pannello di controllo principale, non nella procedura guidata.
 
 ## <a name="notify-your-skype-for-business-on-premises-users-of-the-upcoming-move-to-teams"></a>Avvisare gli utenti di Skype for business in locale del passaggio imminente ai team
 
-Gli strumenti di amministrazione locali in Skype for Business Server 2015 con CU8, così come in Skype for Business Server 2019, consentono di notificare agli utenti di Skype for business locali il trasferimento imminente ai team. Quando si abilitano queste notifiche, gli utenti visualizzeranno una notifica nel client Skype for business (Win32, Mac, Web e mobile) come illustrato di seguito. Se gli utenti fanno clic sul pulsante **prova** , il client teams verrà avviato se è installato; in caso contrario, gli utenti verranno spostati nella versione Web dei team nel browser. Per impostazione predefinita, quando le notifiche sono abilitate, i client Win32 Skype for business scaricano automaticamente il client del team in modo che il client RTF sia disponibile prima di spostare l'utente in modalità solo teams. Tuttavia, è anche possibile disabilitare questo comportamento.  Le notifiche vengono configurate tramite la versione locale `TeamsUpgradePolicy`di e il download silenzioso per i client Win32 è controllato tramite il cmdlet `TeamsUpgradeConfiguration` locale.
+Gli strumenti di amministrazione locali in Skype for Business Server 2015 con CU8, così come in Skype for Business Server 2019, consentono di notificare agli utenti di Skype for business locali il trasferimento imminente ai team. Quando si abilitano queste notifiche, gli utenti visualizzeranno una notifica nel client Skype for business (Win32, Mac, Web e mobile) come illustrato di seguito. Se gli utenti fanno clic sul pulsante **prova** , il client teams verrà avviato se è installato; in caso contrario, gli utenti verranno spostati nella versione Web dei team nel browser. Per impostazione predefinita, quando le notifiche sono abilitate, i client Win32 Skype for business scaricano automaticamente il client del team in modo che il client RTF sia disponibile prima di spostare l'utente in modalità solo teams. Tuttavia, è anche possibile disabilitare questo comportamento.  Le notifiche vengono configurate tramite la versione locale di `TeamsUpgradePolicy` e il download silenzioso per i client Win32 è controllato tramite il `TeamsUpgradeConfiguration` cmdlet locale.
 
 > [!TIP]
 > Potrebbe essere necessario riavviare alcuni server affinché funzionino in Skype for business 2015 con CU8.

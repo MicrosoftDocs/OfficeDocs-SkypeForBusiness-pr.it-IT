@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: In questo articolo vengono illustrati i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione del servizio Microsoft Cloud Voicemail. Per informazioni sulla configurazione del messaggio vocale cloud, vedere Configuring cloud Voicemail.
-ms.openlocfilehash: 30a4983c79f4a7cddd274c272b5a094c17653bbb
-ms.sourcegitcommit: 7c08d88dcaa85e34e93131bb9a5a64597c6d8155
+ms.openlocfilehash: e07dfe76a60d107702891384458cf164a4744578
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2020
-ms.locfileid: "44210632"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221286"
 ---
 # <a name="plan-cloud-voicemail-service-for-on-premises-users"></a>Pianificare il servizio di segreteria cloud per gli utenti locali
 
@@ -31,7 +31,7 @@ Cloud Voicemail prende il posto della messaggistica unificata di Exchange (UM) n
 
 - Accesso alla segreteria telefonica nella cassetta postale di Exchange dell'utente utilizzando i client Skype for business online o Outlook
 
-- La possibilità di utilizzare il portale basato sul Web di Office 365 per gestire le opzioni della segreteria telefonica
+- La possibilità di utilizzare l'interfaccia di amministrazione di Microsoft 365 per gestire le opzioni della segreteria telefonica
 
 - Supporto per le cassette postali di Exchange in locale o nel cloud
 
@@ -46,7 +46,7 @@ Con il messaggio vocale cloud, le attività di amministrazione sono notevolmente
 - Non è necessario configurare il ruolo di messaggistica unificata di Exchange.
 - Le attività di installazione per la segreteria telefonica cloud sono più semplici.
 - Gli aggiornamenti alla funzionalità della segreteria telefonica vengono recapitati direttamente nel cloud, per consentire agli utenti di accedere sempre alle funzionalità più recenti e agli aggiornamenti con meno dipendenza dagli aggiornamenti cumulativi (CUs).
-- Si dispone dello stesso set di controlli per le cassette postali locali e di Exchange Online. Per ulteriori informazioni su questi controlli, vedere [configurare la segreteria telefonica del sistema telefonico](https://support.office.com/article/Set-up-Phone-System-voicemail-Admin-help-9c590873-b014-4df3-9e27-1bb97322a79d?ui=en-US&rs=en-US&ad=US).
+- Si dispone dello stesso set di controlli per le cassette postali locali e di Exchange Online. Per ulteriori informazioni su questi controlli, vedere [configurare la segreteria telefonica del sistema telefonico](https://support.office.com/article/Set-up-Phone-System-voicemail-Admin-help-9c590873-b014-4df3-9e27-1bb97322a79d).
 
 Nel diagramma seguente viene illustrata la segreteria telefonica cloud in una distribuzione ibrida:
 
@@ -73,7 +73,7 @@ Oltre ai requisiti di cui sopra, è necessario configurare i requisiti seguenti 
 
 - Connettività ibrida. Se è già stato distribuito Skype for Business Server e si desidera abilitare la segreteria telefonica cloud per gli utenti locali, è necessario verificare di disporre della connettività ibrida configurata tra gli ambienti locali e online. A volte viene chiamata configurazione di un dominio diviso.
 
-   Per ulteriori informazioni, vedere [pianificare la connettività ibrida tra Skype for Business Server e office 365](plan-hybrid-connectivity.md) e [configurare la connettività ibrida tra Skype for Business server e Office 365](configure-hybrid-connectivity.md).
+   Per ulteriori informazioni, vedere [pianificare la connettività ibrida tra Skype for Business Server e Microsoft 365 o office 365](plan-hybrid-connectivity.md) e [configurare la connettività ibrida tra Skype for Business server e Office 365](configure-hybrid-connectivity.md).
 
 - Gli utenti locali devono essere abilitati per VoIP aziendale e per la segreteria telefonica ospitata in Skype for Business Server.
 

@@ -13,12 +13,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Leggere questo argomento per informazioni sulla gestione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: 1fecf852c11e7ab89e0cdc7dc6caf615182e7d5f
-ms.sourcegitcommit: 25e70de7c943e22fe6ac6e8d6b4353ca68f81f83
+ms.openlocfilehash: 109d07bdf7b4925f7c3d0481e1ff7facef3de8f8
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43157760"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "43580704"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Manutenzione e operazioni di Microsoft teams rooms 
  
@@ -31,10 +31,10 @@ Con la configurazione aggiuntiva, la gestione remota è possibile usando Microso
 ## <a name="collecting-logs-on-microsoft-teams-rooms"></a>Raccolta di registri in Microsoft teams rooms
 <a name="Logs"> </a>
 
-Per raccogliere i log, è necessario richiamare lo script di raccolta log fornito con l'app Microsoft teams rooms. In modalità amministratore avviare un prompt di PowerShell con privilegi elevati ed eseguire il comando seguente:
+Per raccogliere i log, è necessario richiamare lo script di raccolta log fornito con l'app Microsoft teams rooms. In modalità amministratore avviare un prompt dei comandi con privilegi elevati ed eseguire il comando seguente:
   
 ```PowerShell
-c:\rigel\x64\scripts\provisioning\ScriptLaunch.ps1 CollectSrsV2Logs.ps1 -ExecutionPolicy unrestricted
+powershell -ExecutionPolicy unrestricted c:\rigel\x64\scripts\provisioning\ScriptLaunch.ps1 CollectSrsV2Logs.ps1
 ```
 
 I log verranno emessi come file ZIP in c:\rigel.
@@ -78,7 +78,7 @@ In questa sezione vengono illustrate le impostazioni di sistema di cui le sale d
 |Impostazione|Permette|
 |:-----|:-----|
 |HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon AutoAdminLogon = (REG_SZ) 1  <br/> |Consente l'avvio delle sale di Microsoft Teams  <br/> |
-|Power Management-\> in AC, disattivare lo schermo dopo 10 minuti  <br/> Power Management-\> su AC, non posizionare mai il sistema in modalità Sleep  <br/> |Consente alle sale di Microsoft teams di disattivare i display allegati e di riattivarsi automaticamente  <br/> |
+|Power Management- \> in AC, disattivare lo schermo dopo 10 minuti  <br/> Power Management- \> su AC, non posizionare mai il sistema in modalità Sleep  <br/> |Consente alle sale di Microsoft teams di disattivare i display allegati e di riattivarsi automaticamente  <br/> |
 |NET account/maxpwage: illimitato  <br/> O un mezzo equivalente per disabilitare la scadenza della password per l'account locale. La mancata esecuzione di questa operazione causerà l'errore di accesso dell'account Skype che lamenta una password scaduta. Tieni presente che questo ha un impatto su tutti gli account locali nel computer e quindi la mancata impostazione di questa operazione causerà anche l'eventuale scadenza dell'account amministrativo nella casella.  <br/> |Consente all'account Skype di accedere sempre  <br/> |
    
 Il trasferimento di file tramite criteri di gruppo è illustrato in [configurare un elemento del file](https://technet.microsoft.com/library/cc772536%28v=ws.11%29.aspx).
@@ -112,8 +112,8 @@ Per eseguire un'operazione di gestione:
 1. Accedere a un PC con le credenziali dell'account che dispongano delle autorizzazioni per eseguire i comandi di PowerShell in un dispositivo Microsoft teams rooms.
 2. Aprire un prompt dei comandi di PowerShell normale nel PC.
 3. Copiare il testo del comando dalla tabella seguente e incollarlo alla richiesta.
-4. Sostituire `<Device fqdn>` i campi con valori FQDN appropriati per l'ambiente.
-5. Sostituire * \<Path\> * con il nome file e il percorso locale del file di configurazione Master SkypeSettings. XML (o immagine del tema).
+4. Sostituire i `<Device fqdn>` campi con valori FQDN appropriati per l'ambiente.
+5. Sostituire * \< path \> * con il nome file e il percorso locale del file di configurazione Master SkypeSettings. XML (o immagine del tema).
     
 Per ottenere i dispositivi allegati
   
@@ -173,11 +173,11 @@ Per gestire gli aggiornamenti manualmente e non è possibile seguire la procedur
 ### <a name="to-update-using-powershell"></a>Per eseguire l'aggiornamento usando PowerShell
 
 1. Estrai il pacchetto dal file [MSI](https://go.microsoft.com/fwlink/?linkid=851168) di installazione a una condivisione a cui il dispositivo può accedere.
-2. Eseguire lo script seguente per la destinazione dei dispositivi Microsoft teams Rooms \<,\> modificando la condivisione alla condivisione del dispositivo in base alle esigenze:
+2. Eseguire lo script seguente per la destinazione dei dispositivi Microsoft teams rooms, modificando \< \> la condivisione alla condivisione del dispositivo in base alle esigenze:
     
-```PowerShell
-Add-AppxPackage -Update -ForceApplicationShutdown -Path '\\<share>\$oem$\$1\Rigel\x64\Ship\AppPackages\*\*.appx' -DependencyPath (Get-ChildItem '\\<share>\$oem$\$1\Rigel\x64\Ship\AppPackages\*\Dependencies\x64\*.appx' | Foreach-Object {$_.FullName})
-```
+    ```PowerShell
+    Add-AppxPackage -Update -ForceApplicationShutdown -Path '\\<share>\$oem$\$1\Rigel\x64\Ship\AppPackages\*\*.appx' -DependencyPath (Get-ChildItem '\\<share>\$oem$\$1\Rigel\x64\Ship\AppPackages\*\Dependencies\x64\*.appx' | Foreach-Object {$_.FullName})
+    ```
 
 ## <a name="admin-mode-and-device-management"></a>Modalità di amministrazione e gestione dei dispositivi
 <a name="AdminMode"> </a>

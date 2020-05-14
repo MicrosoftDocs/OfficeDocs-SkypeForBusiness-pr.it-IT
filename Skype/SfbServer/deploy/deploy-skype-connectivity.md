@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: fb51860b-6f46-4b71-b8c8-682d0982d36d
 description: 'Riepilogo: informazioni su come connettere Skype for Business Server con Skype consumer. Nota anche come connettività Skype.'
-ms.openlocfilehash: 2cf124c340218a352f55fa1c09302a0d0f1d972a
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: b0cae57ac357b2b88d74b6326176c7cb7cdaf22e
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780065"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44219746"
 ---
 # <a name="deploy-skype-connectivity-in-skype-for-business-server"></a>Distribuire la connettività Skype in Skype for Business Server
 
@@ -73,13 +73,13 @@ Nella tabella seguente viene illustrato il supporto per la ricerca di directory 
 > [!NOTE]
 > Skype for Business Server strozza le richieste in arrivo, se nella coda sono presenti troppe richieste in sospeso. 
   
-## <a name="deploying-skype-connectivity-for-skype-for-business-online-in-office-365"></a>Distribuzione della connettività Skype per Skype for business online in Office 365
+## <a name="deploying-skype-connectivity-for-skype-for-business-online"></a>Distribuzione della connettività Skype per Skype for business online
 
-La connettività Skype è anche una funzionalità di Skype for business online, che fa parte di Office 365. È possibile abilitare la funzionalità di connettività Skype dal centro di amministrazione di Skype for business all'interno dell'interfaccia di amministrazione di Microsoft 365.
+La connettività Skype è anche una funzionalità di Skype for business online, che fa parte di Microsoft 365 e Office 365. È possibile abilitare la funzionalità di connettività Skype dal centro di amministrazione di Skype for business all'interno dell'interfaccia di amministrazione di Microsoft 365.
   
-Per Office 365 medie imprese, Office 365 Enterprise, Office 365 Education e Office 365 for Government: accedere all'interfaccia di amministrazione di Microsoft 365 e passare all'interfaccia di gestione di Skype for business. Passare a comunicazioni esterne. In provider di servizi di messaggistica istantanea fare clic su Abilita. Se si desidera controllare l'accesso di singoli utenti alla connettività Skype, è possibile modificarne le impostazioni di comunicazione esterna.
+Per Microsoft 365 medie imprese, Office 365 Enterprise, Microsoft 365 Education e Office 365 for Government: accedere all'interfaccia di amministrazione di Microsoft 365 e passare all'interfaccia di gestione di Skype for business. Passare a comunicazioni esterne. In provider di servizi di messaggistica istantanea fare clic su Abilita. Se si desidera controllare l'accesso di singoli utenti alla connettività Skype, è possibile modificarne le impostazioni di comunicazione esterna.
   
-Per Office 365 Small Business Premium: accedere a Office 365 e passare a impostazioni \> \> del servizio di amministrazione per messaggistica istantanea, riunioni e conferenze. Attiva comunicazioni esterne. L'opzione comunicazioni esterne attiva sia la connettività Skype sia le comunicazioni con altre organizzazioni che utilizzano Skype for business.
+Per Office 365 Small Business Premium: accedere a Office 365 e passare a impostazioni del servizio di amministrazione per \> \> messaggistica istantanea, riunioni e conferenze. Attiva comunicazioni esterne. L'opzione comunicazioni esterne attiva sia la connettività Skype sia le comunicazioni con altre organizzazioni che utilizzano Skype for business.
   
 Per ulteriori informazioni su amministrazione di Skype for business online, vedere:
   
@@ -204,7 +204,7 @@ La configurazione della connettività Skype può essere realizzata anche utilizz
     
    - ProxyFqdn: posizione di Skype Federation Edge (di proprietà/gestito da Microsoft)
     
-   - IconURL: icona utilizzata dal client &amp; Lync Skype for business per identificare visivamente i contatti Skype
+   - IconURL: icona utilizzata dal &amp; client Lync Skype for business per identificare visivamente i contatti Skype
     
    - NameDecorationRoutingDomain e NameDecorationExcludedDomainList: questa impostazione consente agli utenti di immettere MSAs degli utenti di Skype senza dover conoscere i domini "decorazione" non Microsoft con "msn.com". In questo modo viene eliminata la necessità di digitare "User (contoso. com) @msn. com" per tutti i domini che non sono presenti in ExcludedDomainList. Se il dominio non è incluso nell'elenco escluso, il client questo formatterà automaticamente la MSA. Sono stati aggiunti i domini dell'account Microsoft più comuni all'elenco escluso.
     
@@ -247,4 +247,3 @@ Nella tabella seguente viene descritto lo stato di interoperabilità tra la vers
 |Lync Phone Edition  <br/> |N/D  <br/> |N/D  <br/> |
 |Lync Attendant  <br/> |N/D  <br/> |N/D  <br/> |
    
-

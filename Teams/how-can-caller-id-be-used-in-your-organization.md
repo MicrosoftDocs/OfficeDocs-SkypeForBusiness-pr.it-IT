@@ -1,5 +1,5 @@
 ---
-title: Come usare l'ID chiamante nell'organizzazione
+title: Come usare l'ID chiamante nella tua organizzazione
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -22,18 +22,18 @@ ms.custom:
 - Calling Plans
 - ms.teamsadmincenter.voice.callerid.overview
 description: L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
-ms.openlocfilehash: af578cf92f6c19e8ac612dfe8301914c9e55833b
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 2547e6ca3aed10d112897aa1b24900a479c5c8ef
+ms.sourcegitcommit: a7c823f61d9ab88424bad924113d780ce11e509f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836308"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44224209"
 ---
-# <a name="how-can-caller-id-be-used-in-your-organization"></a>Come usare l'ID chiamante nell'organizzazione
+# <a name="how-can-caller-id-be-used-in-your-organization"></a>Come usare l'ID chiamante nella tua organizzazione
 
 L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
   
-La funzionalità ID chiamante è disponibile per tutti gli utenti di Sistema telefonico indipendentemente dalla connettività PSTN:
+La funzionalità ID chiamante è disponibile per tutti gli utenti del sistema telefonico indipendentemente dalla connettività PSTN:
   
 - Connettività PSTN in linea
     
@@ -62,11 +62,11 @@ Tuttavia, non è possibile assegnare questi tipi di numeri di telefono per l'ID 
     
 Per impostare l'ID chiamante in uscita, vedere [Impostazione dell'ID chiamante per gli utenti](/microsoftteams/set-the-caller-id-for-a-user).
   
-### <a name="end-user-control-of-outbound-caller-id"></a>Controllo degli utenti finali dell'ID chiamante in uscita
+### <a name="end-user-control-of-outbound-caller-id"></a>Controllo utente finale dell'ID chiamante in uscita
 
-The EnableUserOverride attribute enables single or multiple users to change their Caller ID setting to **Anonymous**. This only applies when a CallingLineIdentity policy is configured with a CallingIDSubstitute parameter of either LineURI or Substitute. The default value of EnableUserOverride is False.
+L'attributo EnableUserOverride consente a singoli o più utenti di modificare l'impostazione dell'ID chiamante in **Anonymous**. Questo problema si applica solo quando un criterio CallingLineIdentity è configurato con un parametro CallingIDSubstitute di LineURI o sostituto. Il valore predefinito di EnableUserOverride è false.
   
-Gli utenti finali possono impostare l'ID chiamante su **Anonimo** usando la scheda **Impostazioni** nel client desktop Skype for business, selezionare **chiama un utente finale** (se abilitato dall'amministratore), selezionare Nascondi il **numero di telefono e le informazioni del profilo per tutte le chiamate**.
+Gli utenti finali possono impostare l'ID chiamante su **Anonimo** usando la scheda **Impostazioni** nel client desktop Skype for business, selezionare **chiama un utente finale** (se abilitato dall'amministratore) e quindi selezionare **Nascondi il numero di telefono e le informazioni del profilo per tutte le chiamate**. In teams gli utenti possono accedere all'immagine del profilo nell'angolo in alto a destra, selezionare **le**  >  **chiamate**di impostazioni e quindi in **ID chiamante**selezionare **Nascondi il numero di telefono e le informazioni del profilo per tutte le chiamate**.
   
 ||||
 |:-----|:-----|:-----|
@@ -74,8 +74,8 @@ Gli utenti finali possono impostare l'ID chiamante su **Anonimo** usando la sche
 |A portata di clic  <br/> |Current Channel rilasciato il 6 dicembre 2016 - versione 1611 (Build 7571.2072)  <br/> |Sì  <br/> |
 |A portata di clic  <br/> |Prima versione per Deferred Channel rilasciata il 22 febbraio 2017 - versione 1701 (Build 7766.2060)  <br/> |Sì  <br/> |
 |A portata di clic  <br/> |Deferred Channel rilasciato il 13 giugno 2017 - versione 1701 (Build 7766.2092)  <br/> |Sì  <br/> |
-|MSI  <br/> |Skype for business  <br/> |No  <br/> |
-|Mac  <br/> |Skype for business  <br/> |No  <br/> |
+|MSI  <br/> |Skype for Business  <br/> |No  <br/> |
+|Mac  <br/> |Skype for Business  <br/> |No  <br/> |
    
 ## <a name="inbound-caller-id"></a>ID chiamante in ingresso
 

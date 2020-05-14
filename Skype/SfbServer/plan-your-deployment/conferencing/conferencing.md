@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 10add1ea-d693-406c-9dc9-853df0ab05da
 description: 'Riepilogo: leggere questo argomento per informazioni sulle funzionalità e le funzionalità di conferenza in Skype for Business Server.'
-ms.openlocfilehash: feaa3dbbe3d05b09e3490ef160ceb21816ae7d5e
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 1c67eecda6c7691dfbb042f4743733b73864a426
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780425"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221166"
 ---
 # <a name="plan-for-conferencing-in-skype-for-business-server"></a>Pianificare le conferenze in Skype for Business Server
  
@@ -136,7 +136,7 @@ Le dimensioni delle riunioni supportate da Skype for Business Server dipendono d
     
 Per ulteriori informazioni sulla gestione di riunioni di grandi dimensioni, vedere [pianificare riunioni di grandi dimensioni in Skype for Business Server](large-meetings.md).
   
-Se l'organizzazione richiede una maggiore capacità di riunione, è consigliabile implementare un ambiente ibrido che si avvale di Skype meeting broadcast, un servizio online che fa parte di Office 365. Skype meeting Broadcast consente agli utenti di ospitare e trasmettere riunioni a grandi gruppi di destinatari online fino a 10.000 partecipanti. L'uso di Skype meeting broadcast richiede che Skype for Business Server sia già configurato in una configurazione ibrida con un'organizzazione di Office di produzione 365. Tutti gli utenti devono disporre di un tenant online definito come prerequisito. Se si è interessati alla distribuzione di una soluzione ibrida che può usufruire di Skype meeting broadcast, vedere [Configure your on-premises Deployment for Skype meeting broadcast](../../deploy/configure-skype-meeting-broadcast.md).
+Se l'organizzazione richiede una maggiore capacità di riunione, è consigliabile implementare un ambiente ibrido che si avvale di Skype meeting broadcast, un servizio online che fa parte di Microsoft 365 e Office 365. Skype meeting Broadcast consente agli utenti di ospitare e trasmettere riunioni a grandi gruppi di destinatari online fino a 10.000 partecipanti. L'uso di Skype meeting broadcast richiede che Skype for Business Server sia già configurato in una configurazione ibrida con un'organizzazione di produzione Microsoft 365 o Office 365. Tutti gli utenti devono disporre di un tenant online definito come prerequisito. Se si è interessati alla distribuzione di una soluzione ibrida che può usufruire di Skype meeting broadcast, vedere [Configure your on-premises Deployment for Skype meeting broadcast](../../deploy/configure-skype-meeting-broadcast.md).
   
 ## <a name="determine-your-organizations-needs"></a>Determinare le esigenze delle organizzazioni
 

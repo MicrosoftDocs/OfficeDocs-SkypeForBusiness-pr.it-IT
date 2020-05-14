@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Panoramica sull'utilizzo degli strumenti di telemetria di Skype for business online per monitorare un'implementazione locale in uno scenario ibrido.
-ms.openlocfilehash: ad4d7ddb270bc4e4227eea7d33c37411ea96fa8c
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 30ff8aebc739e0602f9700cbe9120d230845a023
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779662"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221316"
 ---
 # <a name="plan-call-data-connector"></a>Pianificare il connettore dei dati delle chiamate
 
@@ -60,12 +60,12 @@ I requisiti seguenti presumono che sia già stato distribuito Skype for Business
 
 - Abilitare la connettività ibrida. Se è già stato distribuito Skype for Business Server e si desidera abilitare il connettore dei dati di chiamata, è necessario verificare di disporre della connettività ibrida configurata tra gli ambienti locali e online. A volte viene chiamata configurazione di un dominio diviso.
 
-   Per ulteriori informazioni, vedere [pianificare la connettività ibrida tra Skype for Business Server e office 365](plan-hybrid-connectivity.md) e [configurare la connettività ibrida tra Skype for Business server e Office 365](configure-hybrid-connectivity.md).
+   Per ulteriori informazioni, vedere [pianificare la connettività ibrida tra Skype for Business Server e microsoft 365 o office 365](plan-hybrid-connectivity.md) e [configurare la connettività ibrida tra Skype for Business server e Microsoft 365 o Office 365](configure-hybrid-connectivity.md).
 
-- Eseguire l'autenticazione nell'organizzazione di Office 365 e verificare di aver abilitato i ruoli seguenti:
+- Eseguire l'autenticazione nell'organizzazione Microsoft 365 o Office 365 e verificare di aver abilitato i ruoli seguenti:
 
   - Amministratore di Skype for Business Server
-  - Amministratore globale
+  - Microsoft 365 o Office 365 Global Administrator
 
 - Se non è stato ancora fatto, attiva il dashboard qualità chiamata, come descritto in [attivazione e utilizzo di Call Quality dashboard per Microsoft teams e Skype for business online](/microsoftteams/turning-on-and-using-call-quality-dashboard).
 

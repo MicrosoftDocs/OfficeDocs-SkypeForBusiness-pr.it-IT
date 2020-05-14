@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: Informazioni su come spostare gli utenti da Skype for business online a locale.
-ms.openlocfilehash: 0add74a2480f4caed493e6e448427aa2462db714
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 64a5561fda35669be6ce7718c3ec037dcb8b9264
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779672"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221336"
 ---
 # <a name="move-users-from-the-cloud-to-on-premises"></a>Spostare gli utenti dal cloud all'ambiente locale 
 
@@ -49,16 +49,16 @@ Dopo aver spostato un utente dal cloud all'ambiente locale:
 
 ### <a name="move-users-with-move-csuser"></a>Spostare gli utenti con Move-CsUser
 
-Move-CsUser è disponibile da una finestra di PowerShell della shell di gestione di Skype for business locale. È necessario disporre di privilegi sufficienti sia nell'ambiente locale sia nell'organizzazione di Office 365, come descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials). È possibile utilizzare un singolo account che disponga di privilegi in entrambi gli ambienti oppure è possibile avviare una finestra della shell di gestione di Skype for Business Server locale con le credenziali locali e utilizzare il `-Credential` parametro per specificare le credenziali di un account di Office 365 con il ruolo amministrativo di Office 365 necessario.
+Move-CsUser è disponibile da una finestra di PowerShell della shell di gestione di Skype for business locale. È necessario disporre di privilegi sufficienti sia nell'ambiente locale sia nell'organizzazione del servizio cloud (Microsoft 365 o Office 365), come descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials). È possibile utilizzare un singolo account che disponga di privilegi in entrambi gli ambienti oppure è possibile avviare una finestra della shell di gestione di Skype for Business Server locale con le credenziali locali e utilizzare il `-Credential` parametro per specificare le credenziali di un account di Microsoft 365 o di Office 365 con il ruolo amministrativo necessario.
 
 Per spostare un utente in locale tramite Move-CsUser:
 
 - Specificare l'utente da spostare utilizzando il parametro Identity.
 - Specificare il parametro-target con il nome di dominio completo del pool locale desiderato che ospiterà l'utente.
-- Se non si dispone di un account con autorizzazioni sufficienti sia in locale che in Office 365, utilizzare il parametro-Credential per fornire un account con autorizzazioni sufficienti in Office 365.
-- Se l'account con le autorizzazioni in Office 365 non termina con "on.microsoft.com", è necessario specificare il parametro-HostedMigrationOverrideUrl con il valore corretto descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials).
+- Se non si dispone di un account con autorizzazioni sufficienti sia in locale che nel servizio cloud (Microsoft 365 o Office 365), utilizzare il parametro-Credential per fornire un account con autorizzazioni sufficienti in Microsoft 365 o Office 365.
+- Se l'account con autorizzazioni in Microsoft 365 o Office 365 non termina con "on.microsoft.com", è necessario specificare il parametro-HostedMigrationOverrideUrl, con il valore corretto descritto in [credenziali amministrative obbligatorie](move-users-between-on-premises-and-cloud.md#required-administrative-credentials).
 
-La sequenza di cmdlet seguente può essere utilizzata per spostare un utente in Skype for Business Server e presuppone che la credenziale Office 365 sia un account separato e fornito come input per il prompt di Get-Credential.
+La sequenza di cmdlet seguente può essere utilizzata per spostare un utente in Skype for Business Server e presuppone che la credenziale Microsoft 365 o Office 365 sia un account separato e fornito come input per il prompt di Get-Credential.
 
 ```PowerShell
 $cred=Get-Credential
@@ -73,13 +73,13 @@ Move-CsUser -Identity username@contoso.com -Target pool.corp.contoso.com -Creden
 3. Utilizzare **trova** per individuare gli utenti che si desidera spostare di nuovo in locale.
 4. Selezionare l'utente o gli utenti, quindi fare clic **su Sposta selezionati in locale**dall'elenco a discesa **azione** .
 5. Nella procedura guidata, selezionare il pool di utenti che ospiterà l'utente e fare clic su **Avanti**.
-6. Se richiesto, accedere a Office 365, con un account che termina con. onmicrosoft.com e dispone di autorizzazioni sufficienti.
+6. Se richiesto, accedere a Microsoft 365 o Office 365 con un account che termina con. onmicrosoft.com e dispone di autorizzazioni sufficienti.
 7. Fare clic su **Avanti**e **quindi su Avanti per** spostare l'utente.
 8. Si noti che i messaggi di stato relativi a esito positivo o negativo sono forniti nella parte superiore dell'app del pannello di controllo principale, non nella procedura guidata.
 
 ### <a name="removing-teamsonly-mode"></a>Rimozione della modalità TeamsOnly
 
-Se si utilizza una versione precedente a Skype for business 2015 con CU8 e l'utente viene spostato di nuovo in modalità locale in TeamsOnly, è necessario rimuovere l'istanza di UpgradeToTeams prima di `TeamsUpgradePolicy` spostare l'utente locale. È possibile concedere esplicitamente un criterio con una modalità diversa oppure è sufficiente rimuovere l'assegnazione di criteri esistente per l'utente per l'utilizzo dei criteri globali (purché il criterio globale del tenant non sia UpgradeToTeams).
+Se si utilizza una versione precedente a Skype for business 2015 con CU8 e l'utente viene spostato di nuovo in modalità locale in TeamsOnly, è necessario rimuovere l'istanza di UpgradeToTeams `TeamsUpgradePolicy` prima di spostare l'utente locale. È possibile concedere esplicitamente un criterio con una modalità diversa oppure è sufficiente rimuovere l'assegnazione di criteri esistente per l'utente per l'utilizzo dei criteri globali (purché il criterio globale del tenant non sia UpgradeToTeams).
 
 Per rimuovere l'assegnazione dell'utente di TeamsUpgradePolicy, eseguire il cmdlet seguente da una finestra di PowerShell di Skype for business online:
 

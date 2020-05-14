@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 784ff94a-4b33-4dbd-ba74-27acc3eb6954
 description: Il cmdlet Set-CcCredential imposta le credenziali della distribuzione di Skype for Business Cloud Connector Edition corrente.
-ms.openlocfilehash: a97d85ef6fec31383b349e9a0c3b3d9e25d04337
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 3717eb0dcaa46bb6708f40ecb7f94869f24774a2
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780675"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221570"
 ---
 # <a name="set-cccredential"></a>Set-CcCredential
  
@@ -44,7 +44,7 @@ Set-CcCredential -AccountType "TenantAdmin"
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Il cmdlet Set-CcCredential consente di impostare il nome e la password dell'account per l'amministratore tenant. Per le versioni precedenti all'2,0, questo amministratore deve essere un amministratore globale. Il connettore cloud utilizza questo account per ottenere informazioni di configurazione, impostare parametri di configurazione e aggiornare lo stato dell'accessorio alla configurazione dell'organizzazione di Office 365. Con la versione 2,0 e versioni successive, è anche possibile utilizzare questo cmdlet per aggiornare le password per gli account VmAdmin e DomainAdmin.
+Il cmdlet Set-CcCredential consente di impostare il nome e la password dell'account per l'amministratore tenant. Per le versioni precedenti all'2,0, questo amministratore deve essere un amministratore globale. Il connettore cloud utilizza questo account per ottenere informazioni di configurazione, impostare parametri di configurazione e aggiornare lo stato dell'accessorio alla configurazione dell'organizzazione di Microsoft 365 o Office 365. Con la versione 2,0 e versioni successive, è anche possibile utilizzare questo cmdlet per aggiornare le password per gli account VmAdmin e DomainAdmin.
   
 ## <a name="parameters"></a>Parametri
 <a name="DetailedDescription"> </a>

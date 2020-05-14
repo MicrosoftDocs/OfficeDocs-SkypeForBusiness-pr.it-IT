@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Panoramica sull'utilizzo di un operatore automatico cloud con Skype for Business Server 2019.
-ms.openlocfilehash: d14aeab9857f2a54e6622fb368193a2e270e0f49
-ms.sourcegitcommit: 477aac9e14fced139ee7dd827942ce35b9769b63
+ms.openlocfilehash: 2186909b3ec905d6ec6d387bcea172d8fb80287c
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2020
-ms.locfileid: "43510795"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221306"
 ---
 # <a name="plan-cloud-call-queues"></a>Pianificare le code di chiamata cloud
 
@@ -43,7 +43,7 @@ Oltre ai requisiti di cui sopra, è necessario configurare i requisiti seguenti 
 
 - Connettività ibrida. Se è già stato distribuito Skype for Business Server e si desidera abilitare le code di chiamata cloud per gli utenti locali, è necessario verificare di disporre della connettività ibrida configurata tra gli ambienti locali e online. A volte viene chiamata configurazione di un dominio diviso.
 
-   Per ulteriori informazioni, vedere [pianificare la connettività ibrida tra Skype for Business Server e office 365](plan-hybrid-connectivity.md) e [configurare la connettività ibrida tra Skype for Business server e Office 365](configure-hybrid-connectivity.md).
+   Per ulteriori informazioni, vedere [pianificare la connettività ibrida tra Skype for Business Server e microsoft 365 o office 365](plan-hybrid-connectivity.md) e [configurare la connettività ibrida tra Skype for Business server e Microsoft 365 o Office 365](configure-hybrid-connectivity.md).
 
 - Se si assegna un numero di telefono a un account delle risorse, è ora possibile utilizzare la licenza per l'utente virtuale del sistema telefonico senza costi. Questo fornisce funzionalità del sistema telefonico ai numeri di telefono a livello di organizzazione e consente di creare funzionalità di operatore automatico e coda di chiamata.
 
@@ -65,8 +65,8 @@ Quando si dispone di una struttura solida in grado di soddisfare le proprie esig
 
 [Configurare un operatore automatico cloud](/MicrosoftTeams/create-a-phone-system-auto-attendant)
 
-[Pianificare la connettività ibrida tra Skype for Business Server e Office 365](plan-hybrid-connectivity.md)
+[Pianificare la connettività ibrida tra Skype for Business Server e Microsoft 365 o Office 365](plan-hybrid-connectivity.md)
 
-[Configurare la connettività ibrida tra Skype for Business Server e Office 365](configure-hybrid-connectivity.md)
+[Configurare la connettività ibrida tra Skype for Business Server e Microsoft 365 o Office 365](configure-hybrid-connectivity.md)
 
 [Gestire gli account di risorsa in Microsoft Teams](/MicrosoftTeams/manage-resource-accounts)

@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: Fornisce ai professionisti IT i collegamenti alle informazioni sugli aggiornamenti più recenti per le versioni perpetue dei client Skype for business 2016, Skype for business 2015 e Lync 2013
-ms.openlocfilehash: 8a6008845c4218c8682a22cbab110551999d19cb
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: f8ee4756c38f6917a814db1672b29db3c7f6ca6c
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779702"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221880"
 ---
 # <a name="latest-updates-for-versions-of-skype-for-business-that-use-windows-installer-msi"></a>Aggiornamenti più recenti per le versioni di Skype for business che utilizzano Windows Installer (MSI)
 
@@ -25,14 +25,14 @@ Usare i collegamenti in questa pagina per ottenere ulteriori informazioni e scar
 
 > [!NOTE]
 > - Le informazioni contenute in questo articolo si applicano solo alle versioni perpetue di Skype for business che utilizzano la tecnologia di installazione di Windows Installer (MSI). Ad esempio, se è stata installata una versione con contratto multilicenza di Skype for business, come Skype for business incluso con Office Professional Plus 2016.
-> - Le informazioni contenute in questo articolo non si applicano alle versioni di Office 365 di Skype for business, come Skype for business incluso in Microsoft 365 Apps for Enterprise.
+> - Le informazioni contenute in questo articolo non si applicano alle versioni di Skype for business di Microsoft 365 o di Office 365, come Skype for business incluso in Microsoft 365 Apps for Enterprise.
 > - Per gli aggiornamenti più recenti dei client per dispositivi mobili, accedere all'App Store per il client mobile (iTunes, Google Play o Microsoft Store) per visualizzare i dettagli e installare gli aggiornamenti.
 > - Per sapere quale versione di Skype for business si sta utilizzando, vedere [quale versione di Skype for business](https://support.microsoft.com/help/3195481/how-to-check-the-version-of-skype-for-business-2016) è in uso?
 > - Per ulteriori informazioni sull'installazione degli aggiornamenti di Office, vedere [Installare gli aggiornamenti di Office](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5).
 
-La compatibilità di Skype for business con Office 365 e l'ambiente locale dipende dai requisiti di sistema per la distribuzione:
+La compatibilità di Skype for business con Microsoft 365 o Office 365 e l'ambiente locale dipende dai requisiti di sistema per la distribuzione:
 
-- Office 365 funziona con qualsiasi versione di Skype for business che è in supporto mainstream, che include la versione più recente di Skype for business 2016. Per le versioni precedenti di Skype for business, solo coloro che dispongono di supporto esteso possono continuare a funzionare con Office 365, anche se con funzionalità ridotte. Per ulteriori informazioni, vedere [criteri di ciclo](https://support.microsoft.com/lifecycle)di vita Microsoft.
+- Microsoft 365 e Office 365 sono compatibili con qualsiasi versione di Skype for business inclusa nel supporto mainstream, che include la versione più recente di Skype for business 2016. Per le versioni precedenti di Skype for business, solo coloro che dispongono di supporto esteso possono continuare a funzionare con Microsoft 365 o Office 365, anche se con funzionalità ridotte. Per ulteriori informazioni, vedere [criteri di ciclo](https://support.microsoft.com/lifecycle)di vita Microsoft.
 
 - Per le distribuzioni locali di Skype for Business Server, seguire i requisiti di sistema per la propria versione di Skype for business:
 

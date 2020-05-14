@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: "Riepilogo: in una distribuzione locale di Skype for Business Server abilitato per l'ibrido, è possibile spostare gli utenti tra l'ambiente locale e il cloud (se Microsoft teams o Skype for business online).."
-ms.openlocfilehash: aea3bed7db6c7821d957aa0e6d56cbafd548edb7
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: eede6062bd9d03a2d9d6062a6dacb861ce37e14c
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780085"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221126"
 ---
 # <a name="move-users-between-on-premises-and-cloud"></a>Spostare utenti tra ambiente locale e cloud
 
@@ -41,8 +41,8 @@ Prerequisiti per spostare un utente nel cloud (se solo in Skype for business o s
 - L'organizzazione deve disporre di Azure AD Connect configurata in modo appropriato e sincronizzare tutti gli attributi rilevanti per l'utente, come descritto in [Configure Azure ad Connect](configure-azure-ad-connect.md).
 - È necessario configurare l'ambiente ibrido di Skype for business, come descritto in [Configure Skype for business Hybrid](configure-federation-with-skype-for-business-online.md).
 - All'utente deve essere assegnata una licenza di Skype for Business Online (piano 2) e, se usa Teams, deve disporre anche di una licenza Teams.  Inoltre:
-    - Se l'utente è abilitato per le conferenze telefoniche con accesso esterno in locale, per impostazione predefinita, l'utente deve disporre anche di una licenza di audioconferenza assegnata in Office 365 prima di eseguire lo spostamento online dell'utente. Dopo la migrazione al cloud l'utente dovrà eseguire il provisioning per le audioconferenze nel cloud. Se per qualche motivo si desidera spostare un utente nel cloud, ma non utilizzare la funzionalità di audioconferenza, è possibile ignorare questo controllo specificando il `BypassAudioConferencingCheck` parametro in. `Move-CsUser`
-    - Se l'utente è abilitato per VoIP aziendale in locale, per impostazione predefinita l'utente deve disporre di una licenza di sistema telefonico assegnata in Office 365 prima di spostare l'utente online. Dopo la migrazione al cloud l'utente dovrà eseguire il provisioning per Sistema telefonico nel cloud. Se per qualche motivo si desidera spostare un utente nel cloud ma non utilizzare la funzionalità del sistema telefonico, è possibile ignorare questo controllo specificando il `BypassEnterpriseVoiceCheck`parametro in `Move-CsUser`.
+    - Se l'utente è abilitato per le conferenze telefoniche con accesso esterno in locale, per impostazione predefinita l'utente deve disporre anche di una licenza di audioconferenza assegnata in Microsoft 365 o Office 365 prima di eseguire lo spostamento dell'utente in linea. Dopo la migrazione al cloud l'utente dovrà eseguire il provisioning per le audioconferenze nel cloud. Se per qualche motivo si desidera spostare un utente nel cloud, ma non utilizzare la funzionalità di audioconferenza, è possibile ignorare questo controllo specificando il `BypassAudioConferencingCheck` parametro in `Move-CsUser` .
+    - Se l'utente è abilitato per VoIP aziendale in locale, per impostazione predefinita l'utente deve disporre di una licenza di sistema telefonico assegnata in Microsoft 365 o Office 365 prima di spostare l'utente online. Dopo la migrazione al cloud l'utente dovrà eseguire il provisioning per Sistema telefonico nel cloud. Se per qualche motivo si desidera spostare un utente nel cloud ma non utilizzare la funzionalità del sistema telefonico, è possibile ignorare questo controllo specificando il `BypassEnterpriseVoiceCheck` parametro in `Move-CsUser` .
 
 
 ## <a name="moving-users"></a>Spostamento degli utenti
@@ -62,13 +62,13 @@ Per spostare gli utenti tra i locali e il cloud (sia che si tratti di team o di 
 
 ## <a name="required-administrative-credentials"></a>Credenziali amministrative necessarie
 
-Per spostare gli utenti tra i locali e il cloud, è necessario utilizzare un account con privilegi sufficienti sia nell'ambiente Skype for Business Server locale sia nell'organizzazione di Office 365. È possibile usare un solo account che disponga di tutti i privilegi necessari oppure due account; in tal caso viene eseguito l'accesso agli strumenti locali con le credenziali locali e quindi, in questi strumenti, si forniscono altre credenziali per un account amministrativo di Office 365.  
+Per spostare gli utenti tra i locali e il cloud, è necessario utilizzare un account con privilegi sufficienti sia nell'ambiente di Skype for Business Server locale, sia nell'organizzazione Microsoft 365 o Office 365. È possibile utilizzare un account con tutti i privilegi necessari oppure due account, in questo caso è possibile accedere agli strumenti locali con le credenziali locali e quindi in questi strumenti è necessario fornire ulteriori credenziali per un account amministrativo di Microsoft 365 o Office 365.  
 
 - Nell'ambiente locale l'utente che esegue lo spostamento deve avere il ruolo CSServerAdminstrator in Skype for Business Server.
-- In Office 365 l'utente che esegue lo spostamento deve avere il ruolo di Amministratore globale oppure i ruoli di Amministratore di Skype for Business e di Amministratore utenti.  
+- In Microsoft 365 e Office 365, l'utente che esegue lo spostamento deve essere un amministratore globale o deve disporre di entrambi i ruoli di amministratore di Skype for business e amministratore utente.  
 
     > [!Important]
-    > - Se si utilizza il pannello di controllo di amministrazione di Skype for business, verrà richiesto di fornire le credenziali per un account di Office 365 con i ruoli corretti, come indicato in alto. È necessario fornire un account che termina con. onmicrosoft.com. Se non è possibile, utilizzare il cmdlet Move-CsUser.
+    > - Se si utilizza il pannello di controllo di amministrazione di Skype for business, verrà richiesto di fornire le credenziali per un account Microsoft 365 o Office 365 con i ruoli corretti, come indicato in alto. È necessario fornire un account che termina con. onmicrosoft.com. Se non è possibile, utilizzare il cmdlet Move-CsUser.
     >- Se si utilizza Move-CsUser in PowerShell, è possibile utilizzare un account che termina con. onmicrosoft.com oppure è possibile utilizzare qualsiasi account locale sincronizzato in Azure AD, purché venga specificato anche il parametro HostedMigrationOverrideUrl nel cmdlet. Il valore dell'URL di sostituzione della migrazione ospitata è una variante dell'URL seguente:https://adminXX.online.lync.com/HostedMigration/hostedmigrationService.svc<br>Nell'URL sopra riportato, sostituire il XX con due o tre caratteri, determinato come indicato di seguito:
     >   - In una sessione di PowerShell di Skype for business online, eseguire il cmdlet seguente:<br>`Get-CsTenant|ft identity`
     >    - Il valore risultante avrà il formato seguente:<br>`OU=<guid>,OU=OCS Tenants,DC=lyncXX001,DC=local`

@@ -3,7 +3,7 @@ title: Uso del report di routing diretto PSTN di Call Quality dashboard
 ms.author: lolaj
 author: LolaJacobsen
 manager: serdars
-ms.reviewer: siunies
+ms.reviewer: siunies, fan.fan
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -15,19 +15,20 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Usare il report routing diretto PSTN di Call Quality dashboard per monitorare e risolvere i problemi di chiamata PSTN in Microsoft teams.
-ms.openlocfilehash: 32d91d56e51c5706c3e460029312f3b6bb6948c3
-ms.sourcegitcommit: 98fcfc03c55917d0aca48b7bd97988f81e8930c1
+ms.openlocfilehash: a3a7d84a21858b8cb2039f3f5bb6efde6b9adaaa
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42559487"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221750"
 ---
 # <a name="using-the-cqd-pstn-direct-routing-report"></a>Uso del report di routing diretto PSTN di Call Quality dashboard
 
 Novità di marzo 2020 è stato aggiunto un report di routing diretto PSTN di Call Quality Dashboard ai modelli di [query di Power bi scaricabili per Call Quality dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). 
 
 
-Il report routing diretto PSTN di Call Quality dashboard consente ai clienti di comprendere i modelli di utilizzo e la qualità dei servizi PSTN monitorare le informazioni su SBC, il servizio di telefonia, i parametri di rete e i dettagli del rapporto di efficacia della rete e l'utilizzo della servizio. Queste informazioni consentono di identificare i problemi, incluso il motivo per cui sono state eliminate le chiamate. Ad esempio, potrai sapere quando il volume scende, quante chiamate vengono influenzate da quale motivo.
+Il report routing diretto PSTN di Call Quality Dashboard (Call Quality dashboard PSTN Direct routing report. PBIT) consente di comprendere i modelli di utilizzo e la qualità dei servizi PSTN. Questo report consente di monitorare l'utilizzo del servizio, le informazioni relative a session border controller (SBC), il servizio di telefonia, i parametri di rete e i dettagli del rapporto di efficacia della rete. Queste informazioni consentono di identificare i problemi, incluso il motivo per cui sono state eliminate le chiamate. Ad esempio, potrai vedere quando il volume scende o il numero di chiamate che vengono influenzate e per quale motivo.
+
 
 Il report routing diretto PSTN di Call Quality dashboard include quattro sezioni:
 
@@ -38,6 +39,24 @@ Il report routing diretto PSTN di Call Quality dashboard include quattro sezioni
   - [Rapporto efficacia di rete](#network-effectiveness-ratio)
 
   - [Parametri di rete](#network-parameters)
+
+## <a name="highlights"></a>Evidenzia
+
+1. Analizzare per tipo di chiamata, SBC, chiamante e paese chiamato
+
+   Il report routing diretto PSTN di Call Quality dashboard aggrega le metriche di affidabilità e utilizzo per tutti i SBCs del tenant per gli ultimi 7, 30 o 180 giorni (6 mesi). È possibile analizzare i dati per tipo di chiamata, SBC, chiamante e paese chiamato. Se si è interessati a un determinato SBC o a un paese, sarà possibile identificare le modifiche nelle tendenze nell'intervallo di tempo selezionato.
+   :::image type="content" source="media/CQD-PSTN-report8.png" alt-text="Screenshot dei filtri disponibili nel report di routing diretto PSTN di Call Quality dashboard":::
+   
+2. Tenere traccia delle tendenze
+
+    L'analisi delle tendenze è essenziale quando si cerca di comprendere l'uso e l'affidabilità del servizio. Le tendenze orarie consentono di analizzare in modo ravvicinato le prestazioni quotidiane, che consentono di identificare gli incidenti in tempo reale. Le tendenze quotidiane consentono di visualizzare l'integrità del servizio da una prospettiva di lungo periodo. È importante essere in grado di spostarsi tra queste due modalità con la corretta granularità dei dati. Il report routing diretto PSTN di Call Quality dashboard offre una panoramica delle tendenze di 6 mesi, le tendenze quotidiane di 7 e 30 giorni e le tendenze orarie in modo da poter analizzare le prestazioni a ogni livello.
+    :::image type="content" source="media/CQD-PSTN-report9.png" alt-text="Screenshot dei grafici delle tendenze nel report di routing diretto PSTN di Call Quality dashboard":::
+
+3. Eseguire il drill-through a SBC o a livello utente
+
+   È stata creata una funzionalità di drill-through su molte categorie di dati in Call Quality dashboard, che consente di comprendere rapidamente la distribuzione dell'utilizzo o dell'affidabilità a livello di utente o SBC. Usando drill-through puoi poinpoint rapidamente i problemi e capire l'impatto dell'utente reale. Il report routing diretto PSTN di Call Quality dashboard include le metriche dei dettagli del servizio e della percentuale di efficacia della rete. Fare clic sul punto dati a cui si è interessati per eseguire il drill-up a SBC o a livello di utente.
+   :::image type="content" source="media/CQD-PSTN-report10.png" alt-text="Schermata che mostra la funzionalità di drill-through in un punto dati":::
+
 
 ## <a name="pstn-overview"></a>Panoramica PSTN
 

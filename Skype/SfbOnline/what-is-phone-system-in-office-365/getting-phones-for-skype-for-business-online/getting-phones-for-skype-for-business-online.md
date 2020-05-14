@@ -22,25 +22,25 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: 'Informazioni su quali telefoni di Polycom, HP e Mitel utilizzano Skype for Business e sulle licenze necessarie. '
-ms.openlocfilehash: f779462ad6def85cee43139d450d19b5d70195a3
-ms.sourcegitcommit: a61d33fe15982bd8a34f1759b6b89be5aa699fe3
+ms.openlocfilehash: f51465cc86baa37e54acddf732cc5f63e6274aa1
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "41784763"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44220436"
 ---
 # <a name="getting-phones-for-skype-for-business-online"></a>Ottenere telefoni per Skype for Business online
 
 Skype for Business Online qualifies and supports desktop phones for users who want to have a traditional phone experience, rather than use the Skype for Business app. This topic covers the phones and firmware versions that are supported for use in Skype for Business Online and other information that can help you when you are setting up phones in your organization.
 
 > [!NOTE]
-> Skype for business verrà sostituito lentamente da Microsoft teams come metodo di comunicazione principale in Office 365.  Per altre informazioni, vedere [una nuova visione per comunicazioni intelligenti in Office 365](https://www.microsoft.com/microsoft-365/blog/2017/09/25/a-new-vision-for-intelligent-communications-in-office-365/) .
+> Skype for business verrà sostituito lentamente da Microsoft teams come metodo di comunicazione principale in Microsoft 365 e Office 365.  Per altre informazioni, vedere [una nuova visione per comunicazioni intelligenti in Office 365](https://www.microsoft.com/microsoft-365/blog/2017/09/25/a-new-vision-for-intelligent-communications-in-office-365/) .
 >
 >Per ottenere gli aggiornamenti più recenti e le informazioni più aggiornate sui dispositivi supportati, vedere i [dispositivi Microsoft teams per comunicazioni intelligenti](https://products.office.com/microsoft-teams/across-devices?ms.url=officecomteamsdevices&rtc=1).
   
 ## <a name="supported-phones"></a>Telefoni supportati
   
-Microsoft collabora e lavora in stretta collaborazione con Polycom, Yealink e AudioCodes per sviluppare e certificare una vasta gamma di dispositivi tramite il programma PIP (partner IP Phone Program) per il sistema telefonico in Office 365 e Skype for Business Server.
+Microsoft collabora e lavora in stretta collaborazione con Polycom, Yealink e AudioCodes per sviluppare e certificare una vasta gamma di dispositivi tramite il programma PIP (partner IP Phone Program) per il sistema telefonico.
   
 Quando si ordinano nuovi telefoni per Skype for business, è importante acquistare telefoni con il *giusto ID prodotto*. Questi ID prodotto garantiscono che i telefoni ricevuti abbiano già installato la versione qualificata di Skype for business online.
   
@@ -64,7 +64,7 @@ Per altre informazioni sui telefoni AudioCodes, Vedi [telefoni IP di Skype for b
   
 ## <a name="supported-firmware"></a>Firmware supportato
 
-Si tratta della versione software minima necessaria per i telefoni supportati per l'utilizzo con Sistema telefonico in Office 365:
+Questa è la versione minima richiesta per i telefoni supportati per l'utilizzo con il sistema telefonico:
   
 ||||
 |:-----|:-----|:-----|
@@ -100,17 +100,17 @@ Per le funzionalità e le funzionalità del dispositivo completo, controllare le
 |Controlli per le riunioni  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Casella vocale visuale  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
 |Blocco telefono  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Aggiornamento del dispositivo  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Provisioning in banda  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|QoE  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Invio registro  <br/> <br/> **Nota:** Attualmente tutti i registri vengono caricati solo nel team di supporto Microsoft; l'accesso dei clienti ai registri telefonici non è ancora disponibile.           |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Autenticazione moderna  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
-|Numero di emergenza multiplo  <br/> |No  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |No  <br/> |Sì  <br/> |
-|Integrazione calendario Exchange*  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> <br/> **Nota:** Richiede il tethering del PC           |
-|Integrazioni presenza  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |
-|Elenco aziendale  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Delega  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |No  <br/> |
-|Integrazione immagine contatto  <br/> |No  <br/> |Sì  <br/> |No  <br/> |Sì  <br/> |
+|Aggiornamento del dispositivo  <br/> |Sì  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|Provisioning in banda  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|QoE  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Invio registro  <br/> <br/> **Nota:** Attualmente tutti i registri vengono caricati solo nel team di supporto Microsoft; l'accesso dei clienti ai registri telefonici non è ancora disponibile.           |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|Autenticazione moderna  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |
+|Numero di emergenza multiplo  <br/> |Sì  <br/> |No  <br/> |No  <br/> |Sì  <br/> |
+|Integrazione calendario Exchange*  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> <br/> **Nota:** Richiede il tethering del PC           |
+|Integrazioni presenza  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |
+|Elenco aziendale  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Supporto per più paesi  <br/> |Sì  <br/> |
+|Delega  <br/> |Sì  <br/> |Supporto per più paesi  <br/> |Sì  <br/> |No  <br/> |
+|Integrazione immagine contatto  <br/> |No  <br/> |Sì  <br/> |Supporto per riunioni private con ID conferenza di riunione dinamici  <br/> |Sì  <br/> |
 ||||||
 
      
@@ -123,9 +123,9 @@ Per le istruzioni dettagliate di configurazione, vedi la sezione [Distribuzione 
 ## <a name="related-topics"></a>Argomenti correlati
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md)
 
-[Ecco cosa offre il Sistema telefonico in Office 365](/MicrosoftTeams/here-s-what-you-get-with-phone-system)
+[Vantaggi offerti dal Sistema telefonico](/MicrosoftTeams/here-s-what-you-get-with-phone-system)
 
-[Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans)
+[Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans)
 
   
  

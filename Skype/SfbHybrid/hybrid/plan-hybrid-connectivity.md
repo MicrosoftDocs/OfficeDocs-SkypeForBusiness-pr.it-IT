@@ -1,5 +1,5 @@
 ---
-title: Pianificare la connessione ibrida | Integrazione di Skype for Business Server 2019 Microsoft 365 e Office 365
+title: Pianificare la connessione ibrida | Integrazione di Skype for Business Server 2019 e Microsoft 365 o Office 365
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Considerazioni sulla pianificazione per l'implementazione della connettività ibrida tra Skype for Business Server e Skype for business online o teams.
-ms.openlocfilehash: ff0ac03d0f93eaa509badb4462d179b41f77ab21
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 3a7df5ef36a7d0e6bf58c1784edb0bbe0baa9409
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779753"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221276"
 ---
 # <a name="plan-hybrid-connectivity-between-skype-for-business-server-and-microsoft-365-or-office-365"></a>Pianificare la connettività ibrida tra Skype for Business Server e Microsoft 365 o Office 365
 
@@ -36,7 +36,7 @@ Se sono presenti utenti di Skype for Business locale che usano anche Teams (in m
 
 In questo argomento vengono descritti i requisiti dell'infrastruttura e del sistema necessari per configurare la connettività ibrida tra la distribuzione di Skype for Business Server locale esistente e i team o Skype for business online.
 
-Dopo aver letto questo argomento e aver pronto la configurazione della connettività ibrida, vedere [Configure Hybrid connectivity between Skype for Business Server and Office 365](configure-hybrid-connectivity.md). Negli argomenti di configurazione vengono fornite istruzioni dettagliate per configurare la connettività ibrida tra la distribuzione locale e i team o Skype for business online.
+Dopo aver letto questo argomento e aver pronto la configurazione della connettività ibrida, vedere [Configure Hybrid connectivity between Skype for Business Server and Microsoft 365 or Office 365](configure-hybrid-connectivity.md). Negli argomenti di configurazione vengono fornite istruzioni dettagliate per configurare la connettività ibrida tra la distribuzione locale e i team o Skype for business online.
 
 ## <a name="about-shared-sip-address-space-functionality"></a>Informazioni sulla funzionalità dello spazio di indirizzi SIP condiviso
 
@@ -50,28 +50,31 @@ Questo tipo di configurazione si basa sulla funzionalità dello spazio di indiri
 
 Quando viene configurato lo spazio degli indirizzi SIP condiviso:
 
-- Azure Active Directory Connect viene utilizzato per sincronizzare la directory locale con Office 365.
+- Azure Active Directory Connect viene utilizzato per sincronizzare la directory locale con Microsoft 365 o Office 365.
 - Gli utenti ospitati in locale interagiscono con i server Skype for business locali.
 - Gli utenti ospitati online possono interagire con Skype for business online o con i servizi teams.
 - Gli utenti di entrambi gli ambienti possono comunicare tra loro.
 - Active Directory locale è autorevole. Tutti gli utenti devono essere creati prima in Active Directory locale e quindi sincronizzati con Azure AD. Anche se si desidera che l'utente sia ospitato online, è necessario innanzitutto creare l'utente nell'ambiente locale e quindi spostare l'utente in online per assicurarsi che l'utente sia individuabile dagli utenti locali.
 
-Prima che un utente possa essere spostato online, all'utente deve essere assegnata una licenza di Skype for business online (piano 2). Se l'utente utilizzerà teams, all'utente deve anche essere assegnata una licenza per i team (e la licenza di Skype for business deve rimanere abilitata). Se gli utenti desiderano usufruire di altre funzionalità online, ad esempio audioconferenza o sistema telefonico, è necessario assegnare loro la licenza appropriata in Office 365.
+Prima che un utente possa essere spostato online, all'utente deve essere assegnata una licenza di Skype for business online (piano 2). Se l'utente utilizzerà teams, all'utente deve anche essere assegnata una licenza per i team (e la licenza di Skype for business deve rimanere abilitata). Se gli utenti desiderano usufruire di altre funzionalità online, ad esempio audioconferenza o sistema telefonico, è necessario assegnare loro la licenza appropriata in Microsoft 365 o Office 365.
 
 ## <a name="infrastructure-requirements"></a>Requisiti dell'infrastruttura
 
 <a name="BKMK_Infrastructure"> </a>
 
-Per implementare la connettività ibrida tra l'ambiente locale e i servizi di comunicazione di Office 365, è necessario soddisfare i requisiti di infrastruttura seguenti:
+Per implementare la connettività ibrida tra l'ambiente locale e Microsoft 365 o Office 365 Communication Services, è necessario soddisfare i requisiti dell'infrastruttura seguenti:
 
 - Una singola distribuzione locale di Skype for Business Server o Lync Server distribuito in una topologia supportata. Vedere [requisiti della topologia](plan-hybrid-connectivity.md#BKMK_Topology) in questo argomento.
-- Un'organizzazione di Microsoft Office 365 con Skype for business online abilitato.
+
+- Un'organizzazione di Microsoft 365 o Office 365 con Skype for business online abilitato.
     > [!NOTE]
     > È possibile utilizzare solo un singolo tenant per una configurazione ibrida con la distribuzione locale.
-- Azure Active Directory Connect per sincronizzare la directory locale con Office 365. Per ulteriori informazioni, vedere [Azure ad Connect: accounts and Permissions](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-accounts-permissions).
+    
+- Azure Active Directory Connect per sincronizzare la directory locale con Microsoft 365 o Office 365. Per ulteriori informazioni, vedere [Azure ad Connect: accounts and Permissions](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-accounts-permissions).
+
 - Strumenti di amministrazione di Skype for Business Server.  Questi sono necessari per spostare gli utenti da locale al cloud. Questi strumenti devono essere installati in un server con accesso sia alla distribuzione locale che a Internet.
 - Strumenti di amministrazione online.  È possibile utilizzare l'interfaccia di amministrazione dei team o Windows PowerShell per gestire i team e Skype for business online. Per utilizzare PowerShell per gestire team o Skype for business online, scaricare e installare il connettore di Skype for business online.
-- Lo spazio degli indirizzi SIP condiviso deve essere abilitato e la distribuzione locale deve essere configurata per l'utilizzo di Office 365 come provider di hosting. Per ulteriori informazioni sui passaggi necessari per configurare la connettività ibrida, vedere [Configure Hybrid Connectivity](configure-hybrid-connectivity.md).
+- Lo spazio degli indirizzi SIP condiviso deve essere abilitato e la distribuzione locale deve essere configurata per l'utilizzo di Microsoft 365 o Office 365 come provider di hosting. Per ulteriori informazioni sui passaggi necessari per configurare la connettività ibrida, vedere [Configure Hybrid Connectivity](configure-hybrid-connectivity.md).
 
 Dopo aver configurato la connettività ibrida, è possibile spostare gli utenti in teams o in Skype for business online. Per ulteriori informazioni, vedere [spostare gli utenti da locale a teams](move-users-from-on-premises-to-teams.md) e [spostare gli utenti da locale a Skype for business online](move-users-from-on-premises-to-skype-for-business-online.md).
 
@@ -109,12 +112,12 @@ Microsoft supporta i seguenti tipi di scenari ibridi a più foreste:
   - Gli utenti sono adeguatamente sincronizzati nella foresta che ospita Skype for business. Nelle configurazioni ibride, questo significa che gli utenti devono essere sincronizzati come oggetti utente disabilitati.
   - La foresta che ospita Skype for business deve considerare attendibile la foresta contenente gli utenti.
     Per informazioni dettagliate sugli scenari ibridi della foresta di risorse, vedere [deploy a Resource Forest topologie for Hybrid Skype for business](configure-a-multi-forest-environment-for-hybrid.md).
-- **Più distribuzioni di Skype for Business Server in più foreste.** Questa configurazione può verificarsi a causa degli scenari di fusione e acquisizione, nonché in imprese più complesse.  Il consolidamento di tutti gli utenti da locale al cloud in un'unica organizzazione di Office 365 può essere raggiunto per qualsiasi organizzazione con più distribuzioni di Skype for business, purché vengano soddisfatti i requisiti chiave seguenti:
 
-  - La maggior parte dell'organizzazione di Office 365 deve essere coinvolta. Il consolidamento in scenari con più di un'organizzazione di Office 365 non è supportato.
+- **Più distribuzioni di Skype for Business Server in più foreste.** Questa configurazione può verificarsi a causa degli scenari di fusione e acquisizione, nonché in imprese più complesse. Il consolidamento di tutti gli utenti da locale al cloud in una singola organizzazione di Microsoft 365 o Office 365 può essere raggiunto per qualsiasi organizzazione con più distribuzioni di Skype for business, purché vengano soddisfatti i requisiti chiave seguenti:
+  - Sono presenti al massimo un'organizzazione di Microsoft 365 o Office 365. Il consolidamento in scenari con più di un'organizzazione non è supportato.
   - In un determinato momento, solo una foresta Skype for business locale può essere in modalità ibrida (spazio di indirizzi SIP condiviso). Tutte le altre foreste di Skype for business locali devono rimanere completamente in locale (e presumibilmente federata tra loro). Si noti che queste altre organizzazioni locali possono sincronizzarsi con AAD, se lo si desidera, con [nuove funzionalità per disabilitare i domini SIP online](https://docs.microsoft.com/powershell/module/skype/disable-csonlinesipdomain) disponibili al 2018 dicembre.
 
-    I clienti con distribuzioni di Skype for business in più foreste devono migrare completamente ogni foresta di Skype for business singolarmente nell'organizzazione di Office 365 utilizzando la funzionalità di Split-Domain (spazio di indirizzi SIP condiviso) e quindi disabilitare l'ibrido con la distribuzione locale, prima di procedere alla migrazione della successiva distribuzione di Skype for business locale. Inoltre, prima di essere migrati nel cloud, gli utenti locali restano in uno stato federato con tutti gli utenti che non sono rappresentati nella stessa directory locale dell'utente. Per ulteriori informazioni, vedere [cloud Consolidation for teams e Skype for business](cloud-consolidation.md).
+    I clienti con distribuzioni di Skype for business in più foreste devono migrare completamente ogni foresta di Skype for business singolarmente nell'organizzazione Microsoft 365 o Office 365 utilizzando la funzionalità Split-Domain (Shared SIP Address Space) e quindi disabilitare Hybrid con la distribuzione locale, prima di passare alla migrazione della successiva distribuzione di Skype for business locale. Inoltre, prima di essere migrati nel cloud, gli utenti locali restano in uno stato federato con tutti gli utenti che non sono rappresentati nella stessa directory locale dell'utente. Per ulteriori informazioni, vedere [cloud Consolidation for teams e Skype for business](cloud-consolidation.md).
 
 ## <a name="federation-requirements"></a>Requisiti di Federazione
 
@@ -124,7 +127,7 @@ Durante la configurazione di un ambiente ibrido, è necessario assicurarsi che g
 
 Per configurare correttamente una distribuzione ibrida, è necessario soddisfare i requisiti seguenti:
 
-- La corrispondenza del dominio deve essere configurata per la distribuzione locale e per l'organizzazione di Office 365. Se l'individuazione dei partner è abilitata nella distribuzione locale, è necessario configurare la Federazione aperta per il tenant online. Se l'individuazione dei partner non è abilitata, la federazione chiusa deve essere configurata per il tenant online.
+- La corrispondenza del dominio deve essere configurata per la distribuzione locale e per l'organizzazione di Microsoft 365 o Office 365. Se l'individuazione dei partner è abilitata nella distribuzione locale, è necessario configurare la Federazione aperta per l'organizzazione online. Se l'individuazione dei partner non è abilitata, la federazione chiusa deve essere configurata per l'organizzazione online.
 - L'elenco dei domini bloccati nella distribuzione locale deve corrispondere esattamente all'elenco dei domini bloccati per il tenant online.
 - L'elenco dei domini consentiti nella distribuzione locale deve corrispondere esattamente all'elenco dei domini consentiti per il tenant online.
 - La Federazione deve essere abilitata per le comunicazioni esterne per il tenant online.
@@ -146,7 +149,7 @@ Inoltre, è necessario assicurarsi che la risoluzione DNS descritta nella tabell
 
 |Record DNS  <br/> |Risolvibile da  <br/> |Requisito DNS  <br/> |
 |:-----|:-----|:-----|
-|Record SRV DNS per _sipfederationtls. _tcp. \<SipDomain.com\> per tutti i domini SIP supportati che si risolvono in Access Edge IP esterni (s)  <br/> |Server perimetrali  <br/> |Abilitare la comunicazione federata in una configurazione ibrida. Il server perimetrale deve sapere dove instradare il traffico federato per il dominio SIP suddiviso tra locali e online.  <br/> Deve utilizzare la corrispondenza del nome DNS rigorosa tra il dominio nel nome utente e il record SRV.  <br/> |
+|Record SRV DNS per _sipfederationtls. _tcp. \< sipdomain.com \> per tutti i domini SIP supportati che si risolvono in Access Edge IP esterni (s)  <br/> |Server perimetrali  <br/> |Abilitare la comunicazione federata in una configurazione ibrida. Il server perimetrale deve sapere dove instradare il traffico federato per il dominio SIP suddiviso tra locali e online.  <br/> Deve utilizzare la corrispondenza del nome DNS rigorosa tra il dominio nel nome utente e il record SRV.  <br/> |
 |DNS un record (s) per FQDN del servizio Web Conferencing Edge, ad esempio webcon.contoso.com che si risolvono in Web Conferencing Edge IP esterno (s)  <br/> |Computer degli utenti connessi alla rete aziendale interna  <br/> |Consente agli utenti online di presentare o visualizzare il contenuto nelle riunioni ospitate locali. Il contenuto include file di PowerPoint, lavagne, sondaggi e note condivise.  <br/> |
 
 A seconda del modo in cui il DNS è configurato nell'organizzazione, potrebbe essere necessario aggiungere questi record all'area DNS interna ospitata per i domini SIP corrispondenti per fornire la risoluzione DNS interna a questi record.
@@ -157,6 +160,6 @@ A seconda del modo in cui il DNS è configurato nell'organizzazione, potrebbe es
 
 I computer della rete devono essere in grado di eseguire ricerche DNS standard su Internet. Se questi computer possono connettersi a siti Internet standard, la rete soddisfa questo requisito.
 
-A seconda della posizione del data center dei Microsoft Online Services, è inoltre necessario configurare i dispositivi firewall di rete in modo che accettino connessioni basate su nomi di dominio con caratteri jolly, \*ad esempio tutto il traffico proveniente da. Outlook.com. Se i firewall dell'organizzazione non supportano le configurazioni del nome con caratteri jolly, sarà necessario determinare manualmente gli intervalli di indirizzi IP che si desidera consentire e le porte specificate.
+A seconda della posizione del data center dei Microsoft Online Services, è inoltre necessario configurare i dispositivi firewall di rete in modo che accettino connessioni basate su nomi di dominio con caratteri jolly, ad esempio tutto il traffico proveniente da \* . Outlook.com. Se i firewall dell'organizzazione non supportano le configurazioni del nome con caratteri jolly, sarà necessario determinare manualmente gli intervalli di indirizzi IP che si desidera consentire e le porte specificate.
 
-Per ulteriori informazioni, inclusi i dettagli sulle porte e i requisiti di protocollo, vedere [URL e intervalli di indirizzi IP di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=252942).
+Per ulteriori informazioni, inclusi i dettagli sulle porte e i requisiti di protocollo, vedere [URL e intervalli di indirizzi IP di Microsoft 365 e Office 365](https://go.microsoft.com/fwlink/p/?LinkId=252942).

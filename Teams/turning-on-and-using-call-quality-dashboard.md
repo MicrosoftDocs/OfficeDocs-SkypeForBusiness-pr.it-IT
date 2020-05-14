@@ -24,12 +24,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate.
-ms.openlocfilehash: 95c4a777576b2cf574ba76d7f1b19de69f64dc88
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: 59f905315eebe1e2f3e3b24b157eb198173a94e8
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44047371"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44226021"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -37,7 +37,7 @@ Informazioni su come configurare Microsoft 365 o Office 365 per utilizzare il da
   
 Call Quality Dashboard (Call Quality Dashboard) offre informazioni sulla qualità delle chiamate effettuate con i servizi Microsoft teams e Skype for business online. In questo argomento vengono illustrati i passaggi per iniziare a raccogliere i dati che è possibile usare per risolvere i problemi di qualità delle chiamate.
 
-Attualmente, Advanced Call Quality dashboard e Call Quality dashboard sono entrambi disponibili per l'uso. Advanced Call Quality dashboard è disponibile all' <span>https://cqd.teams.microsoft.com</span>indirizzo. Nuovo URL, ma lo stesso accesso con le credenziali di amministratore.
+Attualmente, Advanced Call Quality dashboard e Call Quality dashboard sono entrambi disponibili per l'uso. Advanced Call Quality dashboard è disponibile all'indirizzo <span>https://cqd.teams.microsoft.com</span> . Nuovo URL, ma lo stesso accesso con le credenziali di amministratore.
 
 ## <a name="assign-roles-for-accessing-cqd"></a>Assegnare ruoli per l'accesso a Call Quality dashboard
 
@@ -148,9 +148,9 @@ Il parametro data URL ora può accettare un campo Day. I report di giorni lavora
 
 |URL| Data di fine dell'andamento del giorno di rotolamento|
 |:---|:---|
-|<span>https://<cqdv3>/SPD/#/Dashboard/<reportid>/2019-02/</span>   |Giorno corrente di feb 2019|
-|<span>https://<cqdv3>/SPD/#/Dashboard/<reportid>/2019-02-15/</span>|15 feb 2019|
-|<span>https://<cqdv3>/SPD/#/dashboard/<reportid>/00/</span>        |Giorno corrente|
+|<span>https:// <cqdv3> /SPD/#/dashboard/ <reportid> /2019-02/</span>   |Giorno corrente di feb 2019|
+|<span>https:// <cqdv3> /SPD/#/dashboard/ <reportid> /2019-02-15/</span>|15 feb 2019|
+|<span>https:// <cqdv3> /SPD/#/dashboard/ <reportid> /00/</span>        |Giorno corrente|
 |||
 
 Per impostazione predefinita, il giorno corrente del mese viene usato come ultimo giorno dell'andamento del giorno di rotolamento.
@@ -176,12 +176,12 @@ Ad esempio, in un report drill-through di qualità delle chiamate, un utente pu�
 
 Prima di poter iniziare a usare Call Quality dashboard, attivarlo per Microsoft 365 o Office 365 come segue:
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) Microsoft teams con l'interfaccia di amministrazione di **Microsoft teams**
+![Icona che mostra il logo Microsoft teams ](media/teams-logo-30x30.png) **con l'interfaccia di amministrazione di Microsoft teams**
 
 1. Accedere a Microsoft 365 o Office 365 con l'account di amministratore del servizio Microsoft teams e quindi selezionare il riquadro **amministratore** per aprire l'interfaccia di amministrazione.
 2. Nel riquadro sinistro, in **centri di amministrazione**, selezionare **Microsoft teams** per aprire l'interfaccia di amministrazione di Microsoft teams.
 3. Nell'interfaccia di amministrazione di Microsoft teams selezionare **chiamata dashboard qualità** nel riquadro sinistro.
-4. \(Nella pagina che apre https://<span>CQD.teams.Microsoft.com<span/>\)fare clic su **Accedi** e immettere l'account di amministratore globale o le informazioni dell'account di amministratore del servizio Microsoft teams.
+4. Nella pagina che apre \( https:// <span> CQD.teams.Microsoft.com <span/> \) fare clic su **Accedi** e immettere l'account di amministratore globale o le informazioni dell'account di amministratore del servizio Microsoft teams.
 
     ![Screenshot: Mostra il prompt delle credenziali](media/ac4c1699-d8c1-4bda-af30-0fec35b5fd22.png)
   
@@ -189,7 +189,7 @@ Dopo aver effettuato l'accesso, una volta attivato, Call Quality dashboard inizi
 > [!NOTE]
 > Potrebbe essere necessario uno o più ore per elaborare dati sufficienti per visualizzare i risultati significativi nei report.
 
-![Icona del logo](media/sfb-logo-30x30.png) Skype for business **con il portale legacy di Skype for business**
+![Icona del logo Skype for business ](media/sfb-logo-30x30.png) **con il portale legacy di Skype for business**
 
 1. Accedere a Microsoft 365 o Office 365 usando un account di amministratore e quindi selezionare il riquadro **amministratore** per aprire l'interfaccia di amministrazione.
 2. Nel riquadro sinistro, in **centri di amministrazione**, selezionare **Microsoft teams** per aprire l'interfaccia di amministrazione di Microsoft teams.
@@ -212,7 +212,7 @@ I report di riepilogo di Call Quality dashboard includono un sottoinsieme delle 
 |:--- |:--- |:--- |
 |Metrica di condivisione applicazioni | No | Sì |
 |Supporto per informazioni sulla creazione di clienti | Sì | Supporto per più paesi |
-|Supporto per le informazioni sull'endpoint cliente | Solo in <span>CQD.teams.Microsoft.com<span/> | Solo in <span>CQD.teams.Microsoft.com<span/> |
+|Supporto per le informazioni sull'endpoint cliente | Solo in <span> CQD.teams.Microsoft.com<span/> | Solo in <span> CQD.teams.Microsoft.com<span/> |
 |Supporto analisi drill-down   | No   | Sì   |
 |Metriche per l'affidabilità multimediale   | No   | Sì   |
 |Report di out-of-the-box   | Sì   | Supporto per più paesi   |
@@ -359,7 +359,7 @@ Il dashboard report di riepilogo di Call Quality dashboard include una pagina di
 
    - Un file di dati deve essere un file con estensione TSV (valori separati da tabulazioni) o un file CSV (valore delimitato da virgole). Con un file CSV, qualsiasi campo che contiene una virgola deve essere racchiuso tra virgolette o avere la virgola rimossa. Ad esempio, se il nome dell'edificio è NY, NY, immettere "NY, NY" nel file CSV.
    - Il file di dati non deve essere maggiore di 50 MB.
-   - I file caricati in cqd.teams.microsoft.com hanno un limite di riga espanso di 1 milione per semplificare le prestazioni delle query. Questo limite si applica anche a Call Quality dashboard V2 in<span></span>Call Quality dashboard.<span></span>Lync. com.
+   - I file caricati in cqd.teams.microsoft.com hanno un limite di riga espanso di 1 milione per semplificare le prestazioni delle query. Questo limite si applica anche a Call Quality dashboard V2 in Call Quality dashboard <span></span> . Lync. <span></span> com.
    - Per ogni file di dati, ogni colonna del file deve corrispondere a un tipo di dati predefinito, descritto più avanti in questo argomento.
 3. Specificare quindi una **Data di inizio** e, facoltativamente, **specificare una data di fine**.
 4. Infine, seleziona **carica** per caricare il file nel server Call Quality dashboard.
@@ -432,11 +432,11 @@ EndpointName, EndpointMake, EndpointModel, EndpointType, EndpointLabel1, Endpoin
 
 ## <a name="migrate-reports-from-previous-version-of-cqd"></a>Eseguire la migrazione dei report da una versione precedente di Call Quality dashboard
 
-Se hai creato report o caricato i file dei dati del tenant (mapping) in Call Quality dashboard per Skypehttps://cqd.lync.com) for business (e vuoi eseguire la migrazione a Call Quality dashboardhttps://cqd.teams.microsoft.com)for teams, ecco come:
+Se hai creato report o caricato i file dei dati del tenant (mapping) in Call Quality dashboard per Skype for business ( https://cqd.lync.com) e vuoi eseguire la migrazione a Call Quality dashboard for teams https://cqd.teams.microsoft.com) , ecco come:
 
 1.    Passare a [https://cqd.lync.com/cqd/](https://cqd.lync.com/cqd/) e passare al set di report che si vuole esportare. 
 2.    Posizionare il puntatore del mouse sul report e, nel "..." scegliere **Esporta albero report**. Salvare il file di esportazione.
-3.    [https://cqd.teams.microsoft.com/cqd/](https://cqd.teams.microsoft.com/cqd/) Passare al percorso in cui si vogliono importare i report.
+3.    Passare al [https://cqd.teams.microsoft.com/cqd/](https://cqd.teams.microsoft.com/cqd/) percorso in cui si vogliono importare i report.
 4.    Dai collegamenti a sinistra fare clic su **Importa** e selezionare il file esportato. 
 5.    Dopo aver importato i report, verrà visualizzato questo messaggio: "il rapporto di importazione è riuscito. Il nuovo report è stato aggiunto alla fine del set di report. 
 
@@ -445,7 +445,7 @@ Se hai creato report o caricato i file dei dati del tenant (mapping) in Call Qua
 
 Se si vuole creare un report specifico che si concentri su una dimensione dei dati in modo che i report dettagliati forniti non siano disponibili, creare un report personalizzato.
 
-Nell'elenco a discesa dei report nella parte superiore dello schermo visualizzato all'accesso \(la schermata **Summary Reports** \) Riepilogo report selezionare **report dettagliati** e quindi **nuovo** d fare clic su "modifica" nel menu azione di un report per visualizzare l'editor di query. Ogni report viene supportato da una query nel cubo. Un report è una visualizzazione dei dati restituiti dalla query. L'editor di query consente di modificare queste query e le opzioni di visualizzazione del report. Quando si apre l'editor di query per un nuovo report, viene visualizzato un elemento simile a questa schermata:
+Nell'elenco a discesa dei report nella parte superiore dello schermo visualizzato all'accesso \( la schermata **Riepilogo report** \) selezionare **report dettagliati** e quindi **nuovo** d fare clic su "modifica" nel menu azione di un report per visualizzare l'editor di query. Ogni report viene supportato da una query nel cubo. Un report è una visualizzazione dei dati restituiti dalla query. L'editor di query consente di modificare queste query e le opzioni di visualizzazione del report. Quando si apre l'editor di query per un nuovo report, viene visualizzato un elemento simile a questa schermata:
 
 ![Modificare nuovi report](media/e8969625-e6f9-4d67-873f-93e78dd12b35.png)
 
@@ -489,9 +489,17 @@ Per calcolare le misure conteggio chiamate e conteggio utenti, viene eseguita un
 
 Se vengono visualizzate differenze di dati tra Call Quality dashboard V2 e V3, verificare che il confronto o la convalida dei dati sia stata eseguita su un livello "mele-mele" e su uno stretto, non su un livello aggregato. Se ad esempio si filtrano entrambi i report per i dati client desktop di MSIT ' Building 30', la percentuale di qualità scadente dovrebbe essere uguale tra V2 e V3.
 
-Call Quality dashboard V2 e Call Quality dashboard V3 hanno conteggi totali diversi poiché Call Quality dashboard V3 presenta nuovi scenari non presenti in Call Quality dashboard V2. Il totale di riepilogo o i numeri totali aggregati senza filtri dovrebbero essere diversi.  
+La classificazione CQDv2 per l'errore CallSetup è Inly considerata solo per la modalità "audio", in CQDv3 questa classificazione si verifica per ogni modalità (audio, video e condivisione applicazioni) ed è rappresentata nel rispettivo flusso di modalità. 
 
-Se lo scenario di utilizzo include le chiamate di Skype for Business Server 2019, i dati di Call Quality dashboard V3 includono chiamate Skype bot (operatore automatico, CVI, interfaccia desktop virtuale), eventi dinamici e chiamate PSTN. Call Quality dashboard V2 non usa questi dati. (Call Quality dashboard V3 richiede Skype for Business Server 2019 con il connettore di dati cloud configurato).
+Per i team, CQDv2 applica lo stesso feedback degli utenti a tutte le modalità CQDv3 applica la base di feedback sulla modalità per i team.
+
+Call Quality dashboard v3 include 
+1. Chiamate di Skype for Business Server 2019 
+2. Chiamate Skype bot, ad esempio: operatore automatico, coda di chiamata, servizio di annuncio conferenza, 
+3. Interfaccia desktop virtuale,
+4. Interoperabilità video per conferenze
+3. Le chiamate di Publisher e Presenter di eventi dinamici e 
+4. Chiamate PSTN. 
 
 Ad esempio, se vengono visualizzati i flussi audio di 200.000 con 5000 errori in un report di riepilogo di Call Quality dashboard V2, non sarebbe insolito vedere i flussi audio di 300.000 con gli errori di 5500 (la differenza può essere dovuta alle chiamate di Skype for Business Server 2019, alle chiamate CVI, alle chiamate PSTN e così via) in un report di riepilogo di Call Quality dashboard V3.
 
@@ -500,6 +508,18 @@ Per evitare ambiguità tra le differenze impreviste, esaminare più di una scomp
 - User Agent Category Pair
 - Primo prodotto
 - Secondo prodotto
+
+Ecco un esempio di applicazione di filtri specifici per confrontare i dati di Call Quality dashboard V2 e Call Quality dashboard V3:
+
+1. Record QoE disponibile = vero
+
+2. Add is Filter Pair server con valore: client: client e client: Server. La maggior parte dei tenant preferisce escludere server: chiamate server.
+
+3. Aggiungere un filtro per la categoria agente utente e filtrare l'operatore automatico, la coda delle chiamate, il bot, il sistema di sala, MediationServer, il servizio di annuncio conferenza, VDI e così via.
+
+:::image type="content" source="media/turning-on-and-using-call-quality-dashboard1.png" alt-text="Screenshot dell'applicazione di filtri specifici in Call Quality dashboard V3":::
+
+:::image type="content" source="media/turning-on-and-using-call-quality-dashboard2.png" alt-text="Screenshot dell'applicazione di filtri specifici in Call Quality dashboard V2":::
 
 ### <a name="other-expected-differences-between-cqd-v2-and-cqd-v3"></a>Altre differenze previste tra Call Quality dashboard V2 e Call Quality dashboard V3
 

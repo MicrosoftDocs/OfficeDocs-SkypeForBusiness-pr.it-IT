@@ -21,17 +21,17 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - ms.lync.lac.NumberActivationStateUpdating
-description: La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
-ms.openlocfilehash: 0de8fb57f8c5471087c5b1c157f8314d3a80adf5
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: La convalida degli indirizzi è una parte importante della configurazione dei piani di chiamata. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
+ms.openlocfilehash: 2722928d44867547740e4049f9090af683f61824
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41769059"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44220656"
 ---
 # <a name="why-is-number-activation-listed-as-updating"></a>Perché l'attivazione del numero è elencata come aggiornamento?
 
-La convalida dell'indirizzo è un aspetto importante della configurazione dei Piani per chiamate in Office 365. Se per qualche motivo un numero di telefono non è attivato ed è elencato come **aggiornamento** a causa della convalida degli indirizzi, è necessario creare e inviare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
+La convalida degli indirizzi è una parte importante della configurazione dei piani di chiamata. Se per qualche motivo un numero di telefono non è attivato ed è elencato come **aggiornamento** a causa della convalida degli indirizzi, è necessario creare e inviare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
   
 ## <a name="for-organizations-150-or-less-follow-these-steps"></a>Per le organizzazioni da 150 persone o meno segui questi passaggi
 1. Nell'interfaccia di amministrazione scegliere **serve assistenza**?
@@ -42,9 +42,9 @@ La convalida dell'indirizzo è un aspetto importante della configurazione dei Pi
 
 ## <a name="for-organizations-with-more-than-150-users-create-a-service-request-to-validate-an-emergency-address"></a>Per le organizzazioni con più di 150 utenti, crea una richiesta di servizio per convalidare un indirizzo per gli interventi di emergenza
 
-1. Accedi a Office 365 come amministratore usando l'account aziendale o dell'istituto di istruzione.
+1. Accedere come amministratore a Microsoft 365 o Office 365 con l'account aziendale o dell'Istituto di istruzione.
     
-2. Nell'interfaccia di amministrazione, nella barra di spostamento sinistra, fare clic su **supporta** > **nuova richiesta di servizio**.
+2. Nell'interfaccia di amministrazione, nella barra di spostamento sinistra, fare clic su **supporta**  >  **nuova richiesta di servizio**.
     
 3. In **Richieste di servizio** fai clic su **Aggiungi**.
     
@@ -69,7 +69,7 @@ La convalida dell'indirizzo è un aspetto importante della configurazione dei Pi
       - Paese o area geografica
     
      > [!IMPORTANT]
-     > **Immettere il paese o area geografica in cui offriamo il servizio Piani per chiamate in Office 365 per il quale stai tentando di convalidare un indirizzo per gli interventi di emergenza durante l'assegnazione del numero di telefono.**
+     > **Inserire il paese/area geografica in cui sono disponibili i piani per le chiamate in cui si sta provando a convalidare un indirizzo di emergenza quando si assegna il numero di telefono.**
   
       - Codice postale
     

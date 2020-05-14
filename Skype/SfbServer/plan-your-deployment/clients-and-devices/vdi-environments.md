@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ea68414b-bb7e-483a-b731-b6b5a44372b1
 description: In questo argomento vengono illustrate le considerazioni relative alla pianificazione per l'utilizzo di Skype for business durante la connessione a un desktop virtuale remoto.
-ms.openlocfilehash: c2972e2b453b6cf5592ddc8b3b48dfceee9a4e35
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 6886eab8a13db852e0aa86b63d08aa33f82fdaed
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42027997"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44219526"
 ---
 # <a name="plan-for-skype-for-business-in-vdi-environments"></a>Pianificare Skype for business in ambienti VDI
  
@@ -43,7 +43,7 @@ Esistono tre soluzioni disponibili per il componente plug-in VDI, offerte da Mic
 ## <a name="citrix-hdx-realtime-optimization-pack"></a>Citrix HDX ottimizzazione in tempo reale
 <a name="Citrix_RT"> </a>
 
-Il plugin per l'ambiente VDI di Citrix (caratteristica di XenApp e XenDesktop) è compatibile con Lync 2013 e Skype for business 2015 e 2016 (i client completi che utilizzano qualsiasi programma di installazione di clic per eseguire o i programmi di installazione MSI rilasciati dopo il gennaio 2017 PU) installati su un server virtuale desktop. Il suo funzionamento generale si basa sul plug-in Microsoft Lync VDI, ma è compatibile con una vasta gamma di sistemi operativi client, tra cui Windows 10, Macintosh e Linux.
+Il plug-in dell'ambiente VDI di Citrix (caratteristica di XenApp e XenDesktop) è compatibile con Lync 2013 e Skype for business 2015 e 2016 (client completi che utilizzano qualsiasi programma di installazione di clic per eseguire o programmi di installazione MSI rilasciati dopo il gennaio 2017 PU) installati su un desktop virtuale. Il suo funzionamento generale si basa sul plug-in Microsoft Lync VDI, ma è compatibile con una vasta gamma di sistemi operativi client, tra cui Windows 10, Macintosh e Linux.
   
 Un elenco completo delle funzionalità e delle tecnologie supportate può essere trovato nel sito Web di Citrix per la [distribuzione di Microsoft Skype for business agli utenti di XenApp e XenDesktop](https://www.citrix.com/content/dam/citrix/en_us/documents/products-solutions/delivering-microsoft-lync-to-xenapp-and-xendesktop-users.pdf).
   
@@ -62,7 +62,7 @@ La soluzione ambiente VDI di VMWare è compatibile con i client di Skype for bus
   
 È possibile trovare una descrizione completa delle funzionalità e delle tecnologie supportate nel sito Web VMWare nei collegamenti seguenti:
   
-- [What ' s New in VMware Horizon &amp; 7,4 horizon client 4,7](https://blogs.vmware.com/euc/2018/01/vmware-horizon-7-4-horizon-client-4-7-whats-new.mdl)
+- [What ' s New in VMware Horizon 7,4 &amp; Horizon Client 4,7](https://blogs.vmware.com/euc/2018/01/vmware-horizon-7-4-horizon-client-4-7-whats-new.mdl)
     
 - [Pacchetto di virtualizzazione di Horizon per Skype for business](https://www.vmware.com/products/horizon/skype-for-business.mdl)
     
@@ -161,10 +161,10 @@ Non è previsto supporto per le seguenti caratteristiche:
     
 - Suonerie personalizzate e funzionalità di musica in attesa.
     
-Il plug-in VDI di Lync non è supportato in un ambiente di Office 365.
+Il plug-in VDI di Lync non è supportato negli ambienti Microsoft 365 o Office 365.
   
 > [!NOTE]
-> Il pacchetto di ottimizzazione Citrix RealTime supporta Office 365. Per gli ambienti virtuali basati su Citrix, consultare la documentazione relativa alla [Panoramica tecnica](https://docs.citrix.com/en-us/hdx-optimization/2-0/hdx-realtime-optimization-pack-about.mdl) di Citrix per l'elenco delle caratteristiche e delle versioni supportate.
+> Il pacchetto di ottimizzazione Citrix RealTime supporta Microsoft 365 e Office 365. Per gli ambienti virtuali basati su Citrix, consultare la documentazione relativa alla [Panoramica tecnica](https://docs.citrix.com/en-us/hdx-optimization/2-0/hdx-realtime-optimization-pack-about.mdl) di Citrix per l'elenco delle caratteristiche e delle versioni supportate.
   
 ## <a name="see-also"></a>Vedere anche
 <a name="Citrix_RT"> </a>

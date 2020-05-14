@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: eba70d88-13b3-4598-95d5-8a343c9e7d26
 description: Leggere questo argomento per informazioni su come distribuire Skype room System in un ambiente ibrido.
-ms.openlocfilehash: 3fe92990fa80f938d078c92624232a289b5f8621
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+ms.openlocfilehash: 5773fac7aa87a6ee8c7c64c68124e48f4be67b66
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41768969"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44219676"
 ---
 # <a name="skype-room-system-hybrid-deployments"></a>Distribuzioni ibride di Skype room System
 
@@ -25,34 +25,34 @@ Leggere questo argomento per informazioni su come distribuire Skype room System 
   
 ## <a name="hybrid-deployments"></a>Distribuzioni ibride
 
-Seguire questa procedura se la topologia include Skype for Business Server e Exchange Online e si vuole ospitare la cassetta postale delle risorse di sistema room Skype in Exchange Online. Questa sezione copre anche uno scenario ibrido in cui sono stati distribuiti sia Exchange Online che Exchange Server.
+Attenersi alla seguente procedura se la topologia include Skype for Business Server e Exchange Online e si desidera ospitare la cassetta postale per le risorse di sistema Skype room su Exchange Online. In questa sezione viene inoltre illustrato uno scenario ibrido in cui sono distribuiti sia Exchange Online che Exchange Server.
   
-Per scopi illustrativi, usiamo LyncSample.com per il dominio locale e LyncSample.ccstp.net per il dominio online.
+A scopo illustrativo, viene utilizzato LyncSample.com per il dominio locale e LyncSample.ccstp.net per il dominio online.
   
-1. Creare una cassetta postale delle risorse nell'interfaccia di amministrazione di Exchange (LyncSample.ccsctp.net) connettendosi a Exchange Online Management Shell come descritto in provisioning di Exchange Online.
+1. Creare una cassetta postale per le risorse nell'interfaccia di amministrazione di Exchange (LyncSample.ccsctp.net) mediante la connessione a Exchange Online Management Shell, come descritto in Exchange Online provisioning.
     
    ```powershell
    New-Mailbox -room -name "LRS Test 5" -RoomMailboxPassword (ConvertTo-SecureString <password> -AsPlainText -Force) -EnableRoomMailboxAccount $true 
    ```
 
-    Puoi verificare la connettività OWA usando lrstest5@LyncSample.ccsctp.net per accedere.
+    È possibile verificare la connettività OWA utilizzando lrstest5@LyncSample.ccsctp.net per eseguire l'accesso.
     
-2. Nell'interfaccia di amministrazione di Exchange di Office 365 aggiungere un indirizzo di posta elettronica lrstest5@LyncSample.com (dominio su Prem) e impostarlo come indirizzo di risposta.
+2. Nell'interfaccia di amministrazione di Exchange di Microsoft 365 o Office 365, aggiungere un indirizzo di posta elettronica lrstest5@LyncSample.com (su-Prem Domain) e impostarlo come indirizzo di risposta.
     
-3. Creare un lrstest5@LyncSample.com utente di Active Directory on-Prem, impostare l'indirizzo di posta elettronica su lrstest5@LyncSample.com e impostare l'indirizzo di destinazione su lrstest5@LyncSample.com.
+3. Creare un utente di Active Directory lrstest5@LyncSample.com, impostare l'indirizzo di posta elettronica su lrstest5@LyncSample.com e impostare l'indirizzo di destinazione su lrstest5@LyncSample.com.
     
-4. Attiva la sincronizzazione della directory e, dopo il completamento della sincronizzazione, verifica che gli utenti si fondono in AAD e che non sia possibile modificare le proprietà nelle risorse del destinatario nell'interfaccia di amministrazione di Exchange di Office365.
+4. Attivare la sincronizzazione della directory e, dopo aver completato la sincronizzazione, verificare che gli utenti si fondono in AAD e che non sia possibile modificare le proprietà nelle risorse del destinatario nell'interfaccia di amministrazione di Microsoft 365 o Office 365 Exchange.
     
-5. Verificare la connettività OWA con lrstest5@LyncSample.com. Prima hai verificato la connettività OWA usando il dominio online.
+5. Verificare la connettività OWA mediante lrstest5@LyncSample.com. (In precedenza, è stata verificata la connettività OWA utilizzando il dominio online).
     
-    Dopo aver creato la cassetta postale, è possibile usare Set-CalendarProcessing in Exchange Online Management Shell per configurare la cassetta postale. Fare riferimento ai passaggi da 3 a 6 in distribuzioni singole in una foresta per maggiori dettagli.
+    Dopo aver creato la cassetta postale, è possibile utilizzare Set-CalendarProcessing in Exchange Online Management Shell per configurare la cassetta postale. Per ulteriori informazioni, fare riferimento ai passaggi da 3 a 6 nelle distribuzioni on-Prem di una foresta singola.
     
    > [!NOTE]
-   > Se si ha un ambiente ibrido con Exchange Server ed Exchange Online, accedere a Exchange Management Shell e abilitare-RemoteMailbox lrstest5@LyncSample.com-RemoteRoutingAddress lrstest5@LyncSample.mail.ccsctp.net-room. Attiva quindi la sincronizzazione della directory. 
+   > Se si dispone di un ambiente ibrido con Exchange Server ed Exchange Online, passare a Exchange Management Shell e Enable-RemoteMailbox lrstest5@LyncSample.com-RemoteRoutingAddress lrstest5@LyncSample.mail.ccsctp.net-room. Attivare quindi la sincronizzazione della directory. 
   
-    Se si vuole ospitare la cassetta postale di sistema Skype room in Exchange Online, questi passaggi di Exchange Management Shell non sono necessari ed è possibile procedere con il passaggio 6.
+    Se si desidera ospitare la cassetta postale del sistema Skype room in Exchange Online, questi passaggi di Exchange Management Shell non sono necessari ed è possibile procedere con il passaggio 6.
     
-6. Abilitare l'account di sistema room Skype per Skype for business eseguendo il cmdlet seguente in Skype for Business Management Shell:
+6. Abilitare l'account di sistema della sala Skype per Skype for business eseguendo il cmdlet seguente su Skype for Business Management Shell:
     
    ```powershell
    Enable-CsMeetingRoom -SipAddress 'sip: lrstest5@LyncSample.com' -RegistrarPool pool1.child.corp.LyncSample.com -Identity lrstest5@LyncSample.com
@@ -60,6 +60,6 @@ Per scopi illustrativi, usiamo LyncSample.com per il dominio locale e LyncSample
    ```
 
 > [!NOTE]
-> Se si ha Skype for business online invece di Skype for Business Server nello scenario precedente, dopo aver provisionato la cassetta postale delle risorse di Exchange, eseguire il provisioning di un account Skype for business come descritto in Skype for business online. 
+> Se si ha Skype for business online invece di Skype for Business Server nello scenario sopra riportato, dopo aver provisionato la cassetta postale per le risorse di Exchange, eseguire il provisioning di un account Skype for business come descritto in Skype for business online. 
   
 

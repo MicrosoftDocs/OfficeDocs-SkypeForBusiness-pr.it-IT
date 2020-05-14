@@ -16,12 +16,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e38b7fcfdbe8789604716410beca3c5d76975c29
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
-ms.translationtype: HT
+ms.openlocfilehash: 58c264075608817ef805f7b6c58f8b39394fc369
+ms.sourcegitcommit: a7c823f61d9ab88424bad924113d780ce11e509f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905498"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44224229"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -40,11 +40,12 @@ Per registrare le riunioni di un utente di Teams, è necessario che Microsoft St
 - L'utente ha spazio di archiviazione sufficiente in Microsoft Stream per salvare le registrazioni
 - L'utente ha l'impostazione TeamsMeetingPolicy-AllowCloudRecording configurata su True
 - L'utente non è un utente anonimo, guest o federato nella riunione
+- Per abilitare la trascrizione per una riunione di un utente, il criterio di riunione Teams a cui sono assegnati deve avere-AllowTranscription impostazione deve essere impostato su true.
 
-> [!NOTE]
-> Inoltre, per consentire alla persona che avvia la registrazione di scegliere se trascriverla automaticamente, è necessario che l'impostazione di TeamsMeetingPolicy-AllowTranscription dell'utente sia impostata su True
+<sup>1</sup> l'utente deve avere la licenza per caricare/scaricare riunioni in/da Microsoft Stream, ma non ha bisogno della licenza per registrare una riunione. Se si vuole impedire a un utente di registrare una riunione di Microsoft Teams, è necessario assegnargli un criterio TeamsMeetingPolicy con AllowCloudRecording impostato su $False.
 
-<sup>1</sup>L'utente deve avere una licenza che consenta di caricare/scaricare riunioni in/da Microsoft Stream, ma non ha bisogno della licenza per registrare una riunione. Se si vuole impedire a un utente di registrare una riunione di Microsoft Teams, è necessario assegnargli un criterio TeamsMeetingPolicy con AllowCloudRecording impostato su $False.
+> [!IMPORTANT] 
+> Gli utenti non hanno bisogno di una licenza Microsoft Stream assegnata se si vuole che gli utenti registrino e scarichino solo le registrazioni. Ciò significherà che le registrazioni non sono archiviate in Microsoft Stream, ma sono invece archiviate in Azure Media Services (AMS) con un limite di 30 giorni prima che venga eliminato. A questo punto non è possibile che un amministratore possa controllare o gestire, inclusa la possibilità di eliminarlo.
 
 ## <a name="set-up-teams-cloud-meeting-recording-for-users-in-your-organization"></a>Configurare la registrazione di riunioni di Teams nel cloud per gli utenti dell'organizzazione
 
@@ -54,7 +55,7 @@ In questa sezione viene descritto come configurare e pianificare la registrazion
 
 Microsoft Stream è disponibile come parte degli abbonamenti a Microsoft 365 e Office 365 idonei o come servizio autonomo.  Per altre informazioni, vedere la [Panoramica sulle licenze di Stream](https://docs.microsoft.com/stream/license-overview).  Microsoft Stream è ora incluso in Microsoft 365 Business, Microsoft 365 Business Standard e Microsoft 365 Business Basic.
 
-Leggere altre informazioni su come [assegnare licenze agli utenti in Office 365](https://support.office.com/article/Assign-licenses-to-users-in-Office-365-for-business-997596B5-4173-4627-B915-36ABAC6786DC) in modo che gli utenti possano accedere a Microsoft Stream. Assicurarsi che Microsoft Stream non sia bloccato per gli utenti, come illustrato in [questo articolo](https://docs.microsoft.com/stream/disable-user-organization).
+Leggere altre informazioni su come [assegnare licenze agli utenti in Office 365](https://support.office.com/article/Assign-licenses-to-users-in-Office-365-for-business-997596B5-4173-4627-B915-36ABAC6786DC) in modo che gli utenti possano accedere a Microsoft Stream. Verificare che Microsoft Stream non sia bloccato per gli utenti, come definito in [blocca iscrizioni per Microsoft Stream](https://docs.microsoft.com/stream/disable-user-organization).
 
 ### <a name="make-sure-users-have-upload-video-permissions-in-microsoft-stream"></a>Assicurarsi che gli utenti dispongano delle autorizzazioni per caricare video in Microsoft Stream
 
@@ -132,7 +133,7 @@ Per modificare il valore di AllowCloudRecording nel criterio globale, usare il c
 
 ### <a name="planning-for-storage"></a>Pianificazione dell'archiviazione
 
-Le dimensioni di una registrazione di 1 ora sono pari a 400 MB. Assicurarsi di aver compreso la capacità necessaria per i file registrati e di disporre di spazio di archiviazione sufficiente in Microsoft Stream.  Leggere [questo articolo](https://docs.microsoft.com/stream/license-overview) per informazioni sullo spazio di archiviazione di base incluso nell'abbonamento e su come acquistare spazio di archiviazione aggiuntivo.
+Le dimensioni di una registrazione di 1 ora sono pari a 400 MB. Assicurarsi di aver compreso la capacità necessaria per i file registrati e di disporre di spazio di archiviazione sufficiente in Microsoft Stream.  Leggere la [Panoramica sulle licenze di Microsoft Stream](https://docs.microsoft.com/stream/license-overview) per comprendere lo spazio di archiviazione di base incluso nell'abbonamento e come acquistare ulteriore spazio di archiviazione.
 
 ## <a name="manage-meeting-recordings"></a>Gestire le registrazioni delle riunioni
 
@@ -140,7 +141,6 @@ Le registrazioni delle riunioni sono considerate contenuto di proprietà del ten
 
 > [!NOTE]
 > Per altre informazioni sulla gestione delle registrazioni e dell'accesso degli utenti, vedere [Gestire i dati degli utenti in Microsoft Stream](https://docs.microsoft.com/stream/managing-user-data) e [Autorizzazioni e privacy in Microsoft Stream](https://docs.microsoft.com/stream/portal-permissions).
-
 
 ## <a name="compliance-and-ediscovery-for-meeting-recordings"></a>Conformità ed eDiscovery per le registrazioni delle riunioni
 

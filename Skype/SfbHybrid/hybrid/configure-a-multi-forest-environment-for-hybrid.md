@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: Nelle sezioni seguenti vengono fornite indicazioni su come configurare un ambiente con più foreste in un modello di foresta di risorse e utenti per fornire le funzionalità di Skype for business in uno scenario ibrido.
-ms.openlocfilehash: acfca3b29407b019b87f5429906dbc72b4ef7dc3
-ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
+ms.openlocfilehash: cf3a162001756661afd0f204e9968713d9db0f5b
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43918685"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221480"
 ---
 # <a name="deploy-a-resource-forest-topology"></a>Distribuire una topologia di foresta di risorse
  
@@ -35,7 +35,7 @@ Nelle sezioni seguenti vengono fornite indicazioni su come configurare un ambien
 
 Sono supportate più foreste di utenti. Tenere presente quanto segue: 
     
-- Per le versioni supportate di Lync Server e Skype for Business Server in una configurazione ibrida, vedere [Server Version requirements](plan-hybrid-connectivity.md#server-version-requirements) in [Plan Hybrid connectivity between Skype for Business server e Office 365](plan-hybrid-connectivity.md).
+- Per le versioni supportate di Lync Server e Skype for Business Server in una configurazione ibrida, vedere [Server Version requirements](plan-hybrid-connectivity.md#server-version-requirements) in [Plan Hybrid connectivity between Skype for Business server and Microsoft 365 or Office 365](plan-hybrid-connectivity.md).
     
 - Exchange Server può essere distribuito in una o più foreste, che possono o meno includere la foresta contenente Skype for Business Server. Assicurarsi di aver applicato l'aggiornamento cumulativo più recente.
     
@@ -73,9 +73,9 @@ Non sincronizzare la UPN tra le foreste. Durante i test, è stato rilevato che �
     
 - Se l'UPN univoco di ogni foresta utente è stato sincronizzato con l'oggetto disabilitato associato nella foresta di risorse, l'autenticazione AD FS avrà esito negativo. La regola di corrispondenza troverebbe l'UPN nell'oggetto nella foresta di risorse, che era disabilitato e non poteva essere utilizzato per l'autenticazione. 
     
-## <a name="create-an-office-365-organization"></a>Creare un'organizzazione di Office 365
+## <a name="create-a-microsoft-365-or-office-365-organization"></a>Creare un'organizzazione di Microsoft 365 o Office 365
 
-Sarà quindi necessario eseguire il provisioning di un'organizzazione di Office 365 da utilizzare con la distribuzione. Per ulteriori informazioni, vedere [abbonamenti, licenze, account e tenant per offerte cloud di Microsoft](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings). 
+Sarà quindi necessario eseguire il provisioning di un'organizzazione di Microsoft 365 o Office 365 da utilizzare con la distribuzione. Per ulteriori informazioni, vedere [abbonamenti, licenze, account e tenant per offerte cloud di Microsoft](https://docs.microsoft.com/office365/enterprise/subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings). 
   
 ## <a name="configure-active-directory-federation-services"></a>Configurazione di Active Directory Federation Services
 
@@ -91,9 +91,9 @@ A meno che non si utilizzi un SIP/SMTP/UPN univoco per gli utenti di ogni forest
     
 Se si dispone di una farm ADFS in ogni foresta di utenti e si utilizza un SIP/SMTP/UPN univoco per ogni foresta, vengono risolti entrambi i problemi. Durante i tentativi di autenticazione vengono ricercati e confrontati solo gli account nella foresta di utenti specifica. Ciò consentirà di fornire un processo di autenticazione più semplice. 
   
-Questa sarà una distribuzione standard di Windows Server 2012 R2 AD FS e dovrebbe funzionare prima di continuare. Per istruzioni, vedere [How to install ad FS 2012 R2 for Office 365](https://blogs.technet.com/b/rmilne/archive/2014/04/28/how-to-install-adfs-2012-r2-for-office-365.aspx). 
+Questa sarà una distribuzione standard di Windows Server 2012 R2 AD FS e dovrebbe funzionare prima di continuare. Per istruzioni, vedere [come installare ad FS 2012 R2 per Microsoft 365 o Office 365](https://blogs.technet.com/b/rmilne/archive/2014/04/28/how-to-install-adfs-2012-r2-for-office-365.aspx). 
   
-Dopo la distribuzione, è necessario modificare la regola delle attestazioni in modo che corrisponda all'ancoraggio di origine selezionato in precedenza. Nella console MMC ADFS, sotto Trust relying party, fare clic con il pulsante destro del mouse su **Microsoft Office 365 Identity Platform**e quindi scegliere **modifica regole attestazione**. Modificare la prima regola e cambiare attributo objectSID in **EmployeeNumber**. 
+Dopo la distribuzione, è necessario modificare la regola delle attestazioni in modo che corrisponda all'ancoraggio di origine selezionato in precedenza. Nella console MMC ADFS, sotto Trust relying party, fare clic con il pulsante destro del mouse su **microsoft 365 Identity** Platform o **Microsoft Office 365 Identity Platform**, quindi selezionare **modifica regole attestazione**. Modificare la prima regola e cambiare attributo objectSID in **EmployeeNumber**. 
   
 ![Schermata di modifica delle regole a più foreste](../../sfbserver/media/f5d485bd-52cc-437f-ba71-217f8902056c.png)
   
@@ -107,9 +107,9 @@ Al termine dell'operazione e l'Unione di AAD Connect, se si esamina un oggetto n
   
 ![Schermata oggetto metaverse a più foreste](../../sfbserver/media/16379880-2de3-4c43-b219-1551f5dec5f6.png)
   
-Gli attributi evidenziati in verde sono Stati Uniti da Office 365, i gialli sono dalla foresta degli utenti e quelli blu sono dalla foresta di risorse. 
+Gli attributi evidenziati in verde sono Stati Uniti da Microsoft 365 o Office 365, il giallo proveniente dalla foresta degli utenti e il blu proveniente dalla foresta di risorse. 
   
-Si tratta di un utente di testing e si può vedere che AAD Connect ha identificato sourceAnchor e cloudSourceAnchor dall'utente e dagli oggetti della foresta di risorse da Office 365, nel nostro caso 1101, che è la employeeNumber selezionata in precedenza. È stato quindi in grado di unire questo oggetto in quello che si vede sopra. 
+Si tratta di un utente di testing e si può vedere che AAD Connect ha identificato sourceAnchor e cloudSourceAnchor dall'utente e gli oggetti della foresta di risorse da Microsoft 365 o Office 365, nel nostro caso 1101, che è la employeeNumber selezionata in precedenza. È stato quindi in grado di unire questo oggetto in quello che si vede sopra. 
   
 Per ulteriori informazioni, vedere [integrazione delle directory locali con Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-aadconnect/). 
   

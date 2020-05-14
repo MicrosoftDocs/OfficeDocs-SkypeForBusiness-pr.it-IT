@@ -1,5 +1,5 @@
 ---
-title: Servizio di registrazione centralizzato in Skype for Business 2015
+title: Servizio di registrazione centralizzato in Skype for business 2015
 ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
@@ -13,87 +13,87 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 975718a0-f3e3-404d-9453-6224e73bfdd0
-description: 'Riepilogo: informazioni sui componenti del servizio e sulle impostazioni di configurazione per il servizio di registrazione centralizzato in Skype for Business Server 2015.'
-ms.openlocfilehash: 6d3ac969e5d9e5898acfe2a95c6fc08e115ab545
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: 'Riepilogo: informazioni sui componenti del servizio e le impostazioni di configurazione per il servizio di registrazione centralizzato in Skype for Business Server 2015.'
+ms.openlocfilehash: e65ea3a0a5ed4d86591b630df6d84e436a7efd66
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41816625"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44221890"
 ---
-# <a name="centralized-logging-service-in-skype-for-business-2015"></a>Servizio di registrazione centralizzato in Skype for Business 2015
+# <a name="centralized-logging-service-in-skype-for-business-2015"></a>Servizio di registrazione centralizzato in Skype for business 2015
  
-**Riepilogo:** Informazioni sui componenti del servizio e sulle impostazioni di configurazione per il servizio di registrazione centralizzato in Skype for Business Server 2015.
+**Riepilogo:** Informazioni sui componenti di servizio e le impostazioni di configurazione per il servizio di registrazione centralizzato in Skype for Business Server 2015.
   
 Il servizio di registrazione centralizzato può: 
   
-- Avviare o interrompere la registrazione in uno o più computer e pool con un singolo comando da una posizione centrale.
+- Avviare o interrompere la registrazione su uno o più computer e pool con un singolo comando da una posizione centrale.
     
-- Eseguire ricerche nei registri in uno o più computer e pool. È possibile personalizzare la ricerca per restituire tutti i log in tutti i computer oppure restituire risultati più concisi.
+- Registri di ricerca su uno o più computer e pool. È possibile personalizzare la ricerca per restituire tutti i registri su tutti i computer o restituire risultati più concisi.
     
-- Configurare le sessioni di registrazione nel modo seguente:
+- Configurare sessioni di registrazione come segue:
     
-  - Definire uno **scenario**oppure usare uno scenario predefinito. Uno scenario in un servizio di registrazione centralizzato è costituito da un ambito (globale o sito), un nome di scenario per identificare lo scopo dello scenario e uno o più provider. Puoi eseguire lo scenario predefinito e uno scenario definito in un determinato momento in un computer.
+  - Definire uno **Scenario**, oppure utilizzarne uno predefinito. Uno scenario nel servizio di registrazione centralizzato è costituito da un ambito (globale o sito), un nome dello scenario per identificare lo scopo dello scenario e uno o più provider. È possibile eseguire lo scenario predefinito e uno scenario definito in un determinato momento su un computer.
     
-  - Utilizzare un provider esistente o creare un nuovo provider. Aprovider definisce la raccolta della sessione di registrazione, il livello di dettaglio, i componenti da tracciare e i contrassegni applicati.
+  - Utilizzare un provider esistente, o crearne uno nuovo. Aprovider definisce la raccolta della sessione di registrazione, il livello di dettaglio, i componenti da tracciare e gli elementi applicati ai flag.
     
     > [!TIP]
-    >  Se si ha familiarità con OCSLogger, termproviders fa riferimento alla raccolta di **componenti** (ad esempio, S4, SipStack), a un **tipo di registrazione** (ad esempio WPP, EventLog o Logfile di IIS), a un livello di **traccia** , ad esempio all, Verbose, debug, e ai **Contrassegni** (ad esempio TF_COMPONENT TF_DIAG). Questi elementi sono definiti nel provider (una variabile di Windows PowerShell) e passati al comando servizio registrazione centralizzato.
+    >  Se si ha familiarità con OCSLogger, termproviders si riferisce all'insieme di **componenti** (ad esempio, S4, SipStack), a un **tipo di registrazione** (ad esempio, WPP, EventLog o logfile IIS), a un **livello di traccia** , ad esempio all, Verbose, debug, e **flag** , ad esempio TF_COMPONENT TF_DIAG. Questi elementi sono definiti nel provider (variabile di Windows PowerShell) e vengono passati al comando del servizio di registrazione centralizzato.
   
   - Configurare i registri per computer e pool specifici.
     
-  - Definire l'ambito della sessione di registrazione dal **sito** delle opzioni (per eseguire le acquisizioni di registrazione nei computer solo in questo sito) o **globale** (per eseguire le acquisizioni di registrazione in tutti i computer della distribuzione).
+  - Definire l'ambito della sessione di registrazione dal **sito** opzioni (per eseguire le acquisizioni di registrazione solo nei computer del sito) oppure **Global** (per eseguire acquisizioni di registrazione in tutti i computer della distribuzione).
     
-Il servizio di registrazione centralizzato è un potente strumento per la risoluzione dei problemi di grandi o piccole dimensioni, dall'analisi causa radice ai problemi di prestazioni. Tutti gli esempi vengono visualizzati con Skype for Business Server Management Shell. La guida viene fornita per lo strumento della riga di comando tramite lo strumento stesso, ma esiste un set limitato di funzioni che è possibile eseguire dalla riga di comando. Usando Skype for Business Server Management Shell, hai accesso a un set di caratteristiche molto più ampio e molto più configurabile, in modo che sia sempre la prima scelta. 
+Il servizio di registrazione centralizzato è un potente strumento per la risoluzione dei problemi di grandi o piccole dimensioni, dall'analisi delle cause radice ai problemi di prestazioni. Tutti gli esempi vengono visualizzati con Skype for Business Server Management Shell. La guida viene fornita per lo strumento da riga di comando tramite lo strumento stesso, ma esiste un insieme limitato di funzioni che è possibile eseguire dalla riga di comando. Utilizzando Skype for Business Server Management Shell, è possibile accedere a un insieme di caratteristiche molto più grande e configurabile, in modo da essere sempre la prima scelta. 
   
-## <a name="logging-service-components"></a>Registrazione di componenti di servizio
+## <a name="logging-service-components"></a>Componenti del servizio di registrazione
 
  Il servizio di registrazione centralizzato viene eseguito in tutti i server della distribuzione ed è costituito dai seguenti agenti e servizi:
   
-- Agente di servizio di registrazione centralizzato ClsAgent viene eseguito su tutti i computer con Skype for Business Server distribuito. Viene ascoltata (sulle porte **TCP 50001-50003**) per i comandi di CLSCONTROLLER su WCF e restituisce le risposte al controller. Gestisce le sessioni di log (avvio/arresto/aggiornamento) e cerca i registri. Esegue anche operazioni di pulizia come l'archiviazione e l'eliminazione dei log. 
+- L'agente di servizio di registrazione centralizzato ClsAgent viene eseguito su tutti i computer in cui è distribuito Skype for Business Server. Ascolta (sulle porte **TCP 50001-50003**) per i comandi di CLSCONTROLLER su WCF e invia nuovamente risposte al controller. Gestisce le sessioni di registro (avvio/arresto/aggiornamento) e cerca i log. Esegue anche operazioni di pulizia come l'archiviazione dei log e le eliminazioni. 
     
-- Cmdlet del controller del servizio di registrazione centralizzato Skype for Business Server Management Shell invia i comandi Start, stop, Flush e Search al ClsAgent. Quando vengono inviati i comandi di ricerca, i log risultanti vengono restituiti a ClsControllerLib. dll e aggregati. Il controller invia comandi all'agente, riceve lo stato di questi comandi e gestisce i dati del file di log di ricerca mentre viene restituito da tutti gli agenti in qualsiasi computer nell'ambito della ricerca e aggrega i dati del log in un set di output significativo e ordinato. Le informazioni degli argomenti seguenti sono incentrate sull'uso di Skype for Business Server Management Shell.
+- Cmdlet del controller del servizio di registrazione centralizzato Skype for Business Server Management Shell invia i comandi Start, stop, Flush e Search al ClsAgent. Quando vengono inviati i comandi di ricerca, i registri risultanti vengono restituiti al ClsControllerLib. dll e aggregati. Il controller invia comandi all'agente, riceve lo stato di tali comandi e gestisce i dati del file del registro di ricerca quando viene restituito da tutti gli agenti su qualsiasi computer nell'ambito di ricerca e aggrega i dati del registro in un set di output significativo e ordinato. Le informazioni contenute negli argomenti seguenti sono incentrate sull'utilizzo di Skype for Business Server Management Shell.
     
-**Comunicazioni ClsController a ClsAgent**
+**Comunicazioni di ClsController a ClsAgent**
 
 ![Relazione tra CLSController e CLSAgent.](../../media/Ops_CLS_Architecture.jpg)
   
-Puoi emettere comandi usando l'interfaccia della riga di comando di Windows Server o usando Skype for Business Server Management Shell. I comandi vengono eseguiti nel computer in cui è stato effettuato l'accesso e inviati a ClsAgent localmente o agli altri computer e pool della distribuzione.
+I comandi vengono rilasciati utilizzando l'interfaccia della riga di comando di Windows Server o l'utilizzo di Skype for Business Server Management Shell. I comandi vengono eseguiti nel computer a cui è connesso l'utente e inviati al ClsAgent locale o agli altri computer e pool della distribuzione.
   
-ClsAgent gestisce un file di indice di tutti. Memorizzare nella CACHE i file presenti nel computer locale. ClsAgent li alloca in modo che siano distribuiti equamente tra i volumi definiti dall'opzione CacheFileLocalFolders, non consumando mai più di 80% di ogni volume (ovvero la posizione della cache locale e la percentuale è configurabile tramite il cmdlet **Set-CsClsConfiguration** ). ClsAgent è anche responsabile dell'invecchiamento dei vecchi file del log di traccia dell'evento memorizzato nella cache (ETL) dal computer locale. Dopo due settimane, ovvero l'intervallo di tempo configurabile con il cmdlet **Set-CsClsConfiguration** , questi file vengono copiati in una condivisione file ed eliminati dal computer locale. Per informazioni dettagliate, vedere [Set-CsClsConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csclsconfiguration?view=skype-ps). Quando viene ricevuta una richiesta di ricerca, vengono usati i criteri di ricerca per selezionare il set di file ETL memorizzati nella cache per eseguire la ricerca in base ai valori nell'indice gestito dall'agente.
+ClsAgent mantiene un file di indice di tutti i file CACHE che si trova nel computer locale. ClsAgent li alloca in modo che vengano distribuiti uniformemente tra i volumi definiti mediante l'opzione CacheFileLocalFolders, senza mai occupare più dell'80% di ogni volume (ovvero il percorso della cache locale e la percentuale sono configurabili mediante il cmdlet **Set-CsClsConfiguration**). ClsAgent è anche responsabile dei file di traccia degli eventi (etl) in scadenza memorizzati nella cache del computer locale. Dopo due settimane (il periodo di tempo è configurabile mediante il cmdlet **Set-CsClsConfiguration**) questi file vengono copiati in una condivisione ed eliminati dal computer locale. Per dettagli, vedere [Set-CsClsConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csclsconfiguration?view=skype-ps). Quando si riceve una richiesta di ricerca, i criteri di quest'ultima vengono usati per selezionare il set di file etl memorizzati nella cache per eseguire la ricerca in base ai valori nell'indice mantenuto dall'agente.
   
 > [!NOTE]
-> I file spostati nella condivisione file dal computer locale possono essere cercati da ClsAgent. Quando ClsAgent sposta i file nella condivisione file, l'invecchiamento e la rimozione dei file non viene mantenuta da ClsAgent. Devi definire un'attività amministrativa per monitorare le dimensioni dei file nella condivisione file ed eliminarle o archiviarle. 
+> I file che vengono spostati nella condivisione di file dal computer locale possono essere ricercati da ClsAgent. Dopo che ClsAgent sposta i file nella condivisione, la scadenza e la rimozione dei file non vengono gestite da ClsAgent. È necessario definire un'attività amministrativa per monitorare le dimensioni dei file nella condivisione ed eliminarli o archiviarli. 
   
-I file di log risultanti possono essere letti e analizzati usando una varietà di strumenti, tra cui **Snooper. exe** e qualsiasi strumento in grado di leggere un file di testo, ad esempio **notepad. exe**. Snooper. exe fa parte degli strumenti di debug di Skype for Business Server 2015 ed è disponibile come [download Web](https://go.microsoft.com/fwlink/p/?LinkId=285257).
+I file di log risultanti possono essere letti e analizzati mediante diversi strumenti, tra cui **Snooper.exe** e qualsiasi strumento in grado di leggere file di testo, come **Notepad.exe**. Snooper. exe fa parte degli strumenti di debug di Skype for Business Server 2015 ed è disponibile come [download Web](https://go.microsoft.com/fwlink/p/?LinkId=285257).
   
-Come OCSLogger, il servizio di registrazione centralizzato contiene diversi componenti da individuare e offre opzioni per selezionare contrassegni, ad esempio TF_COMPONENT e TF_DIAG. Il servizio di registrazione centralizzato mantiene anche le opzioni del livello di registrazione di OCSLogger.
+Come OCSLogger, il servizio di registrazione centralizzato dispone di diversi componenti su cui eseguire la traccia e fornisce le opzioni per selezionare i flag, ad esempio TF_COMPONENT e TF_DIAG. Il servizio di registrazione centralizzato conserva anche le opzioni del livello di registrazione di OCSLogger.
   
-Il vantaggio più importante per l'uso di Skype for Business Server Management Shell sul ClsController della riga di comando è che puoi configurare e definire nuovi scenari usando i provider selezionati che si rivolgono allo spazio dei problemi, ai contrassegni personalizzati e ai livelli di registrazione. Gli scenari disponibili per ClsController sono limitati a quelli definiti per l'eseguibile.
+Il vantaggio più importante per l'utilizzo di Skype for Business Server Management Shell tramite la riga di comando di ClsController è che è possibile configurare e definire nuovi scenari utilizzando provider selezionati che si riferiscono allo spazio problematico, ai flag personalizzati e ai livelli di registrazione. Gli scenari disponibili in ClsController sono limitati a quelli definiti per l'eseguibile.
   
-Nelle versioni precedenti è stato fornito OCSLogger. exe per consentire agli amministratori e al personale di supporto di raccogliere file di traccia dai computer della distribuzione. OCSLogger, per tutti i suoi punti di forza, ha avuto un difetto. È possibile raccogliere i log solo in un computer in un momento specifico. È possibile accedere a più computer utilizzando copie separate di OCSLogger, ma si è finito con più registri e non è possibile aggregare i risultati in modo semplice.
+Nelle versioni precedenti, OCSLogger.exe consente agli amministratori e al personale di supporto di raccogliere file di traccia dai computer nella distribuzione. OCSLogger, nonostante tutti i punti di forza, ha una lacuna. È possibile collegare i log a un solo computer alla volta. È possibile accedere a più computer usando copie separate di OCSLogger, tuttavia ciò produce più log e nessun modo semplice per aggregare i risultati.
   
-Quando un utente richiede una ricerca nel log, ClsController determina i computer a cui inviare la richiesta, ovvero in base agli scenari selezionati. Determina anche se la ricerca deve essere inviata alla condivisione file in cui si trovano i file con estensione ETL salvati. Quando i risultati della ricerca vengono restituiti a ClsController, il controller unisce i risultati in un unico set di risultati ordinato in tempo che viene presentato all'utente. Gli utenti possono salvare i risultati della ricerca nel computer locale per un'ulteriore analisi.
+Quando un utente richiede una ricerca di log, ClsController determina i computer a cui inviare la richiesta (in base agli scenari selezionati). Determina anche se la ricerca deve essere inviata alla condivisione di file in cui sono stati salvati i file con estensione etl. Quando i risultati di riceva vengono restituiti a ClsController, il controller li unisce in un singolo set di risultati in ordine cronologico presentato all'utente. Gli utenti possono salvare i risultati di ricerca nel proprio computer locale per ulteriori analisi.
   
-Quando si avvia una sessione di registrazione, si specificano scenari relativi al problema che si sta provando a risolvere. Puoi eseguire due scenari in qualsiasi momento. Uno di questi due scenari dovrebbe essere lo scenario AlwaysOn. Come suggerisce il nome, deve essere sempre in uso nella distribuzione, raccogliendo informazioni su tutti i computer, i pool e i componenti.
+Quando si avvia una sessione di registrazione, si specificano scenari relativi al problema da risolvere. È possibile eseguire due scenari alla volta. Uno di questi scenari deve essere quello AlwaysOn, ovvero deve essere sempre in esecuzione nella distribuzione per raccogliere informazioni su tutti i computer, i pool e i componenti.
   
 > [!IMPORTANT]
-> Per impostazione predefinita, lo scenario AlwaysOn non è in uso nella distribuzione. È necessario avviare esplicitamente lo scenario. Una volta avviato, continuerà a essere eseguito fino a quando non è stato interrotto in modo esplicito e lo stato in esecuzione verrà mantenuto tramite il riavvio dei computer. Per informazioni dettagliate su come avviare e arrestare gli scenari, vedere [avviare o interrompere l'acquisizione di log CLS in Skype for Business Server 2015](start-or-stop-log-capture.md). 
+> Per impostazione predefinita, lo scenario AlwaysOn non è in esecuzione nella distribuzione. È necessario avviarlo in modo esplicito. Una volta avviato, il servizio continua a essere eseguito fino all'arresto esplicito e lo stato di esecuzione permane nonostante i riavvii del computer. Per informazioni dettagliate su come avviare e arrestare gli scenari, vedere [avviare o arrestare l'acquisizione dei log CLS in Skype for Business Server 2015](start-or-stop-log-capture.md). 
   
-Quando si verifica un problema, avviare un secondo scenario correlato al problema segnalato. Riprodurre il problema e interrompere la registrazione per il secondo scenario. Iniziare le ricerche del log in relazione al problema segnalato. La raccolta aggregata di registri produce un file di log contenente i messaggi di traccia provenienti da tutti i computer del sito o dell'ambito globale della distribuzione. Se la ricerca restituisce più dati che puoi analizzare tenerne (in genere noto come rapporto segnale/rumore, in cui il rumore è troppo alto), puoi eseguire un'altra ricerca con parametri più stretti. A questo punto, puoi iniziare a notare i modelli visualizzati e può aiutarti a ottenere uno stato attivo più chiaro sul problema. Infine, dopo aver eseguito un paio di ricerche ricercate, è possibile trovare dati rilevanti per il problema e individuare la causa radice.
+Quando si verifica un problema, avviare un secondo scenario correlato al problema segnalato. Riprodurre il problema e arrestare la registrazione per il secondo scenario. Iniziare le ricerche dei log relativi al problema segnalato. La raccolta aggregata dei log produce un file di log contenente i messaggi di traccia di tutti i computer nel sito oppure dell'ambito globale della distribuzione. Se la ricerca restituisce più dati di quanti sia possibile analizzarne (condizione nota in genere come rapporto segnale/rumore, in cui il rumore è troppo elevato), è possibile eseguire un'altra ricerca con parametri più limitati. A questo punto, è possibile iniziare a osservare i modelli risultati in modo da formarsi un quadro più chiaro del problema. Infine, dopo aver eseguito un paio di ricerche perfezionate, è possibile individuare i dati rilevanti per il problema e dedurne la causa principale.
   
 > [!TIP]
-> Quando si presenta uno scenario di problemi in Skype for Business Server, iniziare a chiedersi "che cosa si conosce già del problema?" Se si quantificano i limiti del problema, è possibile eliminare gran parte delle entità operative in Skype for Business Server. 
+> Quando viene presentato un problema in Skype for Business Server, iniziare a chiedersi "che cosa è già noto del problema?" Se si quantificano i limiti del problema, è possibile eliminare una parte importante delle entità operative in Skype for Business Server. 
   
-Si consideri uno scenario di esempio in cui si sa che gli utenti non ottengono risultati correnti quando cercano un contatto. Non ha senso cercare problemi nei componenti multimediali, VoIP aziendale, servizi di conferenza e un certo numero di altri componenti. Non è possibile sapere se il problema è effettivamente: nel client o si tratta di un problema lato server? I contatti vengono raccolti da Active Directory da User Replicator e recapitati al client tramite il server della Rubrica (ABServer). Il ABServer riceve gli aggiornamenti dal database RTC (dove User Replicator li scrive) e li raccoglie in file della Rubrica, per impostazione predefinita-1:30 AM. I client di Skype for Business Server recuperano la nuova rubrica in una programmazione randomizzata. Dato che si sa come funziona il processo, è possibile ridurre la ricerca del potenziale causa di un problema relativo ai dati raccolti da Active Directory da User Replicator, che ABServer non recupera e crea i file della Rubrica o i client non Download del file della Rubrica.
+Considerare ad esempio uno scenario in cui si sa che gli utenti non ricevono risultati aggiornati quando cercano un contatto. Non vi è alcun motivo per cercare problemi nei componenti multimediali, VoIP aziendale, conferenze e un certo numero di altri componenti. Ciò che potrebbe non essere noto è la posizione effettiva da cui trae origine il problema: lato client o lato server? I contatti vengono raccolti da Active Directory da User Replicator e recapitati al client tramite il server della Rubrica (ABServer). Il ABServer ottiene gli aggiornamenti dal database RTC (in cui User Replicator le ha scritto) e li raccoglie nei file della Rubrica, per impostazione predefinita-1:30 AM. I client Skype for Business Server recuperano la nuova rubrica in base a una pianificazione casuale. Poiché si sa come funziona il processo, è possibile ridurre la ricerca per la causa potenziale di un problema relativo ai dati raccolti da Active Directory da User Replicator, che il ABServer non è in grado di recuperare e creare i file della rubrica oppure che i client non possono scaricare il file della Rubrica.
   
 ## <a name="current-configuration"></a>Configurazione corrente
 
-Il servizio di registrazione centralizzato è configurato per definire il modo in cui il servizio di registrazione è destinato a raccogliere, come raccoglie, da dove raccoglierà e quali sono le impostazioni del log. Puoi definire queste impostazioni a livello globale (ovvero, per l'intera distribuzione) o per un sito (ovvero un sito denominato nella distribuzione). Tutte le registrazioni definitive utilizzeranno le impostazioni appropriate per l'identità usata per i comandi per avviare, arrestare, svuotare e cercare i registri.
+Il servizio di registrazione centralizzato è configurato per definire la modalità di raccolta del servizio di registrazione, il modo in cui verrà raccolta, la raccolta e le impostazioni del registro. Queste impostazioni vengono definite globalmente, ovvero per l'intera distribuzione, o per un sito, ovvero un sito denominato nella distribuzione. Per tutte le attività di registrazione definite verranno utilizzate le impostazioni adatte all'identità utilizzata per i comandi di avvio, interruzione, scaricamento e ricerca dei log.
   
 ### <a name="to-display-the-current-centralized-logging-service-configuration"></a>Per visualizzare la configurazione del servizio di registrazione centralizzata corrente
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi fare clic su **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start**, scegliere **tutti i programmi**, fare clic su **Skype for business 2015**e quindi su **Skype for Business Server Management Shell**.
     
 2. Digitare quanto segue al prompt della riga di comando:
     
@@ -102,28 +102,28 @@ Il servizio di registrazione centralizzato è configurato per definire il modo i
    ```
 
     > [!TIP]
-    > È possibile limitare o espandere l'ambito delle impostazioni di configurazione restituite definendo `-Identity` e un ambito, ad esempio "site: Redmond", per restituire solo il CsClsConfiguration per il sito Redmond. Per informazioni dettagliate su una determinata parte della configurazione, è possibile reindirizzare l'output in un altro cmdlet di Windows PowerShell. Ad esempio, per ottenere informazioni dettagliate sugli scenari definiti nella configurazione per il sito "Redmond", digitare:`Get-CsClsConfiguration -Identity "site:Redmond" | Select-Object -ExpandProperty Scenarios`
+    > È possibile limitare o espandere l'ambito delle impostazioni di configurazione restituite definendo `-Identity` e un ambito, ad esempio "site: Redmond" per restituire solo CsClsConfiguration per il sito Redmond. Se si desiderano informazioni dettagliate su una determinata parte della configurazione, è possibile eseguire il piping dell'output in un altro cmdlet di Windows PowerShell. Ad esempio, per ottenere informazioni dettagliate sugli scenari definiti nella configurazione per il sito "Redmond", digitare:`Get-CsClsConfiguration -Identity "site:Redmond" | Select-Object -ExpandProperty Scenarios`
   
-     ![Output di esempio di Get-CsClsConfiguration.](../../media/Ops_Get-CsClsConfiguration_Basic.jpg)
+     ![Output di esempio da Get-CsClsConfiguration.](../../media/Ops_Get-CsClsConfiguration_Basic.jpg)
   
-    Il risultato del cmdlet Visualizza la configurazione corrente del servizio di registrazione centralizzata.
+    Il risultato del cmdlet consente di visualizzare la configurazione corrente del servizio di registrazione centralizzato.
     
 |**Impostazione di configurazione**|**Descrizione**|
 |:-----|:-----|
-|**Identity** <br/> |Identifica l'ambito e il nome per questa configurazione. Esiste una sola configurazione globale e una configurazione per ogni sito.  <br/> |
+|**Identity** <br/> |Identifica l'ambito e il nome della configurazione corrente. Esistono una sola configurazione a livello globale e una sola per sito.  <br/> |
 |**Scenari** <br/> |Elenco di tutti gli scenari definiti per questa configurazione.  <br/> |
-|**SearchTerms** <br/> |Termini di ricerca definiti per la configurazione. Office 365, non distribuzioni locali.  <br/> |
-|**SecurityGroups** <br/> |I gruppi di sicurezza definiti che controllano chi, ovvero i membri dei gruppi di sicurezza, possono vedere i computer in base al sito in cui si trovano. Il sito, in questo contesto, è il sito definito in Generatore di topologie.  <br/> |
-|**Aree geografiche** <br/> |Le aree definite vengono usate per raccogliere SecurityGroups in un'area geografica, ad esempio EMEA.  <br/> |
-|**EtlFileRolloverSizeMB** <br/> |Il parametro indica la dimensione massima del file di log prima che venga creato un nuovo file di log di traccia eventi (ETL). Viene creato un nuovo file di log quando viene raggiunta la dimensione definita anche se il tempo massimo impostato in EtlFileRolloverMinutes non è ancora stato raggiunto.  <br/> |
-|**EtlFileRolloverMinutes** <br/> |Intervallo di tempo massimo definito, in minuti, che un log può trascorrere prima che venga creato un nuovo file con estensione ETL. Viene creato un nuovo file di log quando il timer scade anche se la dimensione massima impostata in EtlFileRolloverSizeMB non è ancora stata raggiunta.  <br/> |
-|**TmfFileSearchPath** <br/> |Posizione in cui cercare i file di formato del messaggio di traccia.  <br/> |
-|**CacheFileLocalFolders** <br/> |Percorso definito nella posizione in cui vengono scritti i file di cache nei computer. CLSAgent scrive i file della cache ed è in esecuzione nel contesto del servizio di rete. In questo caso,% TEMP% si espande in%WINDIR%\ServiceProfiles\NetworkService\AppData\Local. Per impostazione predefinita, i file di cache e i file di log vengono scritti nella stessa directory.  <br/> |
-|**CacheFileNetworkFolder** <br/> |Puoi definire un percorso UNC (Universal Naming Convention) per ricevere i file della cache durante le operazioni di registrazione.  <br/> |
-|**CacheFileLocalRetentionPeriod** <br/> |Definito come il tempo massimo, in giorni, in cui vengono conservati i file della cache.  <br/> |
-|**CacheFileMaxDiskUsage** <br/> |Definita come percentuale di spazio su disco che può essere usata dai file di cache.  <br/> |
-|**ComponentThrottleLimit** <br/> |Definito come numero massimo di tracce al secondo che un componente può produrre prima che venga attivato il limitatore automatico della valvola a farfalla.  <br/> |
-|**ComponentThrottleSample** <br/> |Numero di volte in 60 secondi che il ComponentThrottleLimit può essere superato.  <br/> |
-|**MinimumClsAgentServiceVersion** <br/> |La versione minima di CLSAgent è consentita per l'esecuzione. Questo elemento è destinato a Office 365.  <br/> |
+|**SearchTerms** <br/> |Termini di ricerca definiti per la configurazione. Microsoft 365 o Office 365, distribuzioni non locali.  <br/> |
+|**SecurityGroups** <br/> |Gruppi di sicurezza definiti che controllano gli utenti, ovvero i membri dei gruppi di sicurezza, che possono vedere i computer in base al sito in cui si trovano. Il sito, in questo contesto, è il sito come definito in Generatore di topologie.  <br/> |
+|**Regioni** <br/> |Le aree definite vengono utilizzate per raccogliere i SecurityGroups in un'area, ad esempio EMEA.  <br/> |
+|**EtlFileRolloverSizeMB** <br/> |Il parametro indica le dimensioni massime del file di log prima che venga creato un nuovo file di log traccia eventi (.etl). Viene creato un nuovo file di log quando si raggiungono le dimensioni definite anche se non è stato ancora esaurito il tempo massimo impostato in EtlFileRolloverMinutes.  <br/> |
+|**EtlFileRolloverMinutes** <br/> |Periodo di tempo massimo definito, espresso in minuti, che può trascorrere per un log prima che venga creato un nuovo file con estensione etl. Viene creato un nuovo file di log quando il timer scade anche se non sono ancora state raggiunte le dimensioni massime impostate in EtlFileRolloverSizeMB.  <br/> |
+|**TmfFileSearchPath** <br/> |Posizione in cui cercare i file TMF (Trace Message Format).  <br/> |
+|**CacheFileLocalFolders** <br/> |Percorso definito della posizione nei computer in cui vengono scritti i file di cache. CLSAgent scrive i file di cache e viene eseguito nel contesto del servizio di rete. In questo caso, %TEMP% si espande in %WINDIR%\ServiceProfiles\NetworkService\AppData\Local. Per impostazione predefinita, i file di cache e di log vengono scritti nella stessa directory.  <br/> |
+|**CacheFileNetworkFolder** <br/> |È possibile definire un percorso UNC (Universal Naming Convention) per ricevere i file di cache durante le operazioni di registrazione.  <br/> |
+|**CacheFileLocalRetentionPeriod** <br/> |Definito come tempo massimo, espresso in giorni, di mantenimento dei file di cache.  <br/> |
+|**CacheFileMaxDiskUsage** <br/> |Definito come percentuale dello spazio su disco che può essere utilizzato dai file di cache.  <br/> |
+|**ComponentThrottleLimit** <br/> |Definito come numero massimo di tracce al secondo che un componente può produrre prima che venga attivato il limite di velocità automatico.  <br/> |
+|**ComponentThrottleSample** <br/> |Numero di volte nell'arco di 60 secondi in cui è possibile superare ComponentThrottleLimit.  <br/> |
+|**MinimumClsAgentServiceVersion** <br/> |Versione minima di CLSAgent di cui è consentita l'esecuzione. Questo elemento è destinato a Microsoft 365 o Office 365.  <br/> |
    
 

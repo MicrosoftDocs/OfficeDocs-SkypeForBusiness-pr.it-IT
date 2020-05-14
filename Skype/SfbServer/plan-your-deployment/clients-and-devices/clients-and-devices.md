@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 95f0852e-391d-4345-985f-0a2da50491fa
 description: 'Riepilogo: revisione dei client e delle app supportate per Skype for business.'
-ms.openlocfilehash: 71960fe7f450bbf4073c80d584e1eb1b0eb259d5
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: bcb6cfdaa0797e46ebc01f551a46600577d4dc27
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42013489"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44220556"
 ---
 # <a name="plan-for-clients-and-devices"></a>Pianificare i client e i dispositivi
 
@@ -36,7 +36,7 @@ Skype for Business Server supporta diversi tipi di client, tra cui il software c
 
 ### <a name="skype-for-business-2019"></a>Skype for business (2019)
 
-Skype for business (2019) è il client completo consigliato per Skype for Business Server 2015 e 2019. Per una descrizione delle nuove funzionalità, vedere [seguire gli aggiornamenti più recenti in Skype for business](https://support.office.com/article/What-s-new-in-Skype-for-Business-2016-cece9f93-add1-4d93-9a38-56cc598e5781) . Il supporto per le funzionalità client è dettagliato nel [confronto delle funzionalità client desktop per Skype for business](desktop-feature-comparison.md)e la documentazione dell'utente è relativa alla [Guida di Skype for business](https://support.office.com/Skype-for-business). Questo client è incluso quando un utente installa Office 365.
+Skype for business (2019) è il client completo consigliato per Skype for Business Server 2015 e 2019. Per una descrizione delle nuove funzionalità, vedere [seguire gli aggiornamenti più recenti in Skype for business](https://support.office.com/article/What-s-new-in-Skype-for-Business-2016-cece9f93-add1-4d93-9a38-56cc598e5781) . Il supporto per le funzionalità client è dettagliato nel [confronto delle funzionalità client desktop per Skype for business](desktop-feature-comparison.md)e la documentazione dell'utente è relativa alla [Guida di Skype for business](https://support.office.com/Skype-for-business). Questo client è incluso quando un utente installa Microsoft 365 o Office 365.
 
 È disponibile anche un client di base gratuito che supporta meno funzionalità. Entrambe le versioni sono disponibili per il download nel [download di Skype for business in tutti i dispositivi](https://products.office.com/skype-for-business/download-app?tab=tabs-3). Le differenze tra i client completi e di base sono descritte nella sezione [limitazioni client di base](desktop-feature-comparison.md#Full-Basic) .
 
@@ -78,9 +78,9 @@ Se Skype for business non è installato nel computer di un utente e l'utente fa 
 
 Un ambiente VDI (Virtual Desktop Infrastructure) viene utilizzato in alcune organizzazioni in cui i problemi di sicurezza e conformità sono particolarmente sensibili. L'utilizzo di Skype for business con audio e video completi su una connessione di questo tipo richiede pesanti carichi di elaborazione audio e video sul client ospitato su un desktop virtuale. È disponibile un ulteriore software plug-in VDI che consente di scaricare l'elaborazione nel computer locale dell'utente finale e di ridurre il carico sul desktop virtuale. Per informazioni dettagliate sull'utilizzo di questi plug-in, vedere [Plan for Skype for business in VDI Environments](vdi-environments.md) .
 
-### <a name="microsoft-teams-rooms"></a>Sale di Microsoft Teams
+### <a name="microsoft-teams-rooms"></a>Microsoft Teams Rooms
 
-Microsoft teams Rooms è la soluzione di conferenza più recente di Microsoft che utilizza un'interfaccia familiare e può essere facilmente distribuita e gestita, sfruttando gli strumenti esistenti come i pannelli LCD per semplificare l'installazione. Microsoft teams Rooms utilizza un'app UWP costruita appositamente in esecuzione su Surface Pro 4 o Surface Pro in una modalità console (dopo la distribuzione dell'app UWP è l'unica applicazione che verrà eseguita sul dispositivo) e richiederà un account dispositivo personalizzato per l'implementazione. Il software viene aggiornato tramite Windows Store e Windows Update. Per https://aka.ms/MTRDocs informazioni dettagliate sull'utilizzo di queste console sala nella distribuzione, vedere. 
+Microsoft teams Rooms è la soluzione di conferenza più recente di Microsoft che utilizza un'interfaccia familiare e può essere facilmente distribuita e gestita, sfruttando gli strumenti esistenti come i pannelli LCD per semplificare l'installazione. Microsoft teams Rooms utilizza un'app UWP costruita appositamente in esecuzione su Surface Pro 4 o Surface Pro in una modalità console (dopo la distribuzione dell'app UWP è l'unica applicazione che verrà eseguita sul dispositivo) e richiederà un account dispositivo personalizzato per l'implementazione. Il software viene aggiornato tramite Windows Store e Windows Update. https://aka.ms/MTRDocsPer informazioni dettagliate sull'utilizzo di queste console sala nella distribuzione, vedere. 
 
 ### <a name="skype-for-business-on-surface-hub"></a>Skype for business su Surface Hub
 
@@ -91,7 +91,7 @@ Microsoft Surface Hub è un dispositivo di produttività all-in-One che è stato
 
 Se nell'organizzazione sono state acquistate le licenze appropriate, scegliere il client completo, altrimenti scegliere il client di base.
 
-Gli utenti possono installare il client per se stessi da [scaricare Skype for business su tutti i dispositivi](https://products.office.com/skype-for-business/download-app?tab=tabs-3). Il client viene installato anche quando gli utenti installano Office 365 in Windows. Se alcuni utenti dispongono di Mac, gli utenti avranno un set di caratteristiche diverso, come descritto nelle sezioni precedenti.
+Gli utenti possono installare il client per se stessi da [scaricare Skype for business su tutti i dispositivi](https://products.office.com/skype-for-business/download-app?tab=tabs-3). Il client viene installato anche quando gli utenti installino Microsoft 365 o Office 365 su Windows. Se alcuni utenti dispongono di Mac, gli utenti avranno un set di caratteristiche diverso, come descritto nelle sezioni precedenti.
 
 Alcune funzionalità disponibili con Skype for Business Server 2015 non sono disponibili in Skype for business online o in Skype for Business Server 2019, vedere [online o Hybrid account utente limitazioni per 2015](desktop-feature-comparison.md#Online-Hybrid) o [online o ibrida limitazioni dell'account utente per 2019](desktop-feature-comparison.md#Online-Hybrid) per specifiche. Gli amministratori di Skype for business online possono fare riferimento alla [Descrizione del servizio Skype for business online](https://technet.microsoft.com/library/skype-for-business-online-service-description.aspx) per informazioni sui diversi piani disponibili.
 

@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
-ms.openlocfilehash: e461a145280e6edf8c2039dbea55b5547dd5596e
-ms.sourcegitcommit: 6e24ea8aa9cccf8a1a964c8ed414ef5c7de3dc17
+ms.openlocfilehash: c9e644d9b21a21a9e87c9a51440610f1b4a15c6d
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44158983"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44219836"
 ---
 # <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
 
@@ -34,11 +34,11 @@ Verificare di avere il ruolo di [accesso Call Quality dashboard](https://docs.mi
 
 Il processo per l'installazione di un connettore personalizzato e la regolazione della sicurezza per consentire l'uso del connettore sono descritti in dettaglio nella [documentazione di Power bi](https://docs.microsoft.com/power-bi/desktop-connector-extensibility). In nome della semplicità, ecco una breve spiegazione:
 
-1.  Verificare se nel computer è già presente una * \[cartella documenti\]\\di Power bi\\desktop Custom Connector*. In caso contrario, crea questa cartella. <sup>1</sup>
+1.  Verificare se nel computer è già presente una cartella * \[ documenti di \] \\ Power bi Desktop \\ Custom Connector*   . In caso contrario, crea questa cartella. <sup>1</sup>
 
-2.  Scaricare il file del connettore (un * \** file con estensione MEZ o * \*PQX* ) e inserirlo nella directory dei *connettori personalizzati* .
+2.  Scaricare il file del connettore (un file con estensione * \* MEZ* o * \* PQX* ) e inserirlo nella directory dei *connettori personalizzati* .
 
-3.  **Se il file del connettore è * \** un file con estensione MEZ,** è anche necessario modificare le impostazioni di sicurezza descritte nella [documentazione relativa alla configurazione del connettore personalizzato](https://docs.microsoft.com/power-bi/desktop-connector-extensibility#data-extension-security).
+3.  **Se il file del connettore è un file con * \* estensione MEZ* ,** è anche necessario modificare le impostazioni di sicurezza descritte nella [documentazione relativa alla configurazione del connettore personalizzato](https://docs.microsoft.com/power-bi/desktop-connector-extensibility#data-extension-security).
 
 Se viene rilasciata una nuova versione di questo connettore di Power BI per Microsoft teams, è sufficiente sostituire il vecchio file del connettore nella directory *Custom Connectors* con il nuovo file.
 
@@ -150,7 +150,7 @@ Se si verificano altri errori al di fuori di questo ambito, inviare una notifica
 
 ## <a name="footnotes"></a>Note
 
-**<sup>1</sup>** determinati processi e app (ad esempio OneDrive) possono causare la modifica della cartella radice documenti; Verificare che la directory dei *connettori personalizzati\\di Power bi desktop* sia inserita nella cartella documenti della cartella radice corrente.
+**<sup>1</sup>** determinati processi e app (ad esempio OneDrive) possono causare la modifica della cartella radice documenti; Verificare che la directory dei * \\ connettori personalizzati di Power bi desktop* sia inserita nella cartella documenti della cartella radice corrente.
 
 **<sup>2</sup>** le credenziali di accesso usate per Call Quality dashboard *non* devono essere le stesse credenziali usate per accedere all'app desktop Power bi.
 
@@ -160,7 +160,7 @@ Se si verificano altri errori al di fuori di questo ambito, inviare una notifica
 
 Nonostante il tag beta, il connettore di qualità della chiamata per Power BI è la versione finale del connettore ed è stato ufficialmente firmato dal team di Power BI per riflettere questo. Il processo di certificazione per rimuovere il tag Beta è esteso e richiede un impegno da parte del team di Power BI per consentire il supporto diretto anche al connettore. A causa di vincoli temporali, il team di Power BI non è attualmente in grado di specificare il supporto e la certificazione più ampia, ma è comunque pronto ad attestare la sicurezza, l'autenticità e le funzionalità generali del connettore di qualità della chiamata Microsoft.
 
-### <a name="why-does-the-connector-seem-so-slow-compared-to-advanced-cqd-in-browser-what-can-i-do-to-improve-performance"></a>Perché il connettore sembra così lento rispetto a Call Quality dashboard avanzato nel browser? Cosa è possibile fare per migliorare le prestazioni?
+### <a name="why-does-the-connector-seem-so-slow-compared-to-advanced-cqd-in-the-browser-what-can-i-do-to-improve-performance"></a>Perché il connettore sembra così lento rispetto a Call Quality dashboard avanzato nel browser? Cosa è possibile fare per migliorare le prestazioni?
 
 Le prestazioni delle query per i vari modelli sono in realtà le stesse sia nel browser che nel connettore. La differenza include il numero di query simultanee in esecuzione. Poiché la versione in-browser di Call Quality dashboard era meno ben sviluppata e le opzioni di visualizzazione dense di informazioni, la maggior parte dei report era limitata al caricamento di query di 2-3 alla volta. D'altra parte, i modelli di connettori spesso visualizzano 20 + query simultanee. Se si vuole creare report che rispondono solo alle versioni precedenti in cui si è abituati, provare a creare report con non più di 2-3 query per scheda.
 
@@ -169,6 +169,8 @@ Le prestazioni delle query per i vari modelli sono in realtà le stesse sia nel 
 Il limite di 10.000 righe viene effettivamente specificato nella fine dell'API ed è progettato per migliorare significativamente le prestazioni e ridurre il rischio di errori di esecuzione della query derivanti da condizioni di memoria insufficiente.
 
 Invece di tentare di aumentare il conteggio delle righe dei risultati, è consigliabile ristrutturare i report in base alle procedure consigliate per i connettori. I modelli inclusi sono progettati per illustrare le procedure consigliate. Dove possibile, iniziare osservando i KPI usando dimensioni più ampie e di cardinalità inferiore, ad esempio mese, anno, data, area geografica, paese e così via. Da lì è possibile eseguire il drill-down in dimensioni di cardinalità sempre più elevate. I report helpdesk e posizione avanzata contengono entrambi buoni esempi di questo flusso di lavoro drill-down.
+
+
 
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c94063f1-e802-4a61-be90-022fc185335e
 description: "Riepilogo: esaminare le considerazioni sull'utilizzo delle porte prima di implementare Skype for Business Server."
-ms.openlocfilehash: 33199855d020af08e306022be47a0a9757125adb
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 09b0d187195faa0aa4b5278456991d9223427f9d
+ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42025787"
+ms.lasthandoff: 05/13/2020
+ms.locfileid: "44220386"
 ---
 # <a name="port-and-protocol-requirements-for-servers"></a>Requisiti relativi a porte e protocolli per i server
  
@@ -34,7 +34,7 @@ Anche se questo può sembrare un po' scoraggiante all'inizio, il sollevamento di
   
 È inoltre possibile trovare le informazioni contenute in queste tabelle in formato diagramma rivedendo il poster dei carichi di lavoro del protocollo collegato ai [diagrammi tecnici per l'articolo di Skype for Business Server 2015](../../technical-diagrams.md) .
 > [!NOTE]
-> - Se si sta implementando Skype for business online (O365), fare riferimento a [Office 365 URL e intervalli di indirizzi IP](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;amp;rs=en-US&amp;amp;ad=US). Gli ambienti ibridi devono fare riferimento a questo argomento e [pianificare anche la connettività ibrida](../../skype-for-business-hybrid-solutions/plan-hybrid-connectivity.md?toc=/SkypeForBusiness/sfbhybridtoc/toc.json).
+> - Se si sta implementando Skype for business online (Microsoft 365 o Office 365), fare riferimento a [microsoft 365 e agli intervalli di indirizzi IP e URL di office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;amp;rs=en-US&amp;amp;ad=US). Gli ambienti ibridi devono fare riferimento a questo argomento e [pianificare anche la connettività ibrida](../../skype-for-business-hybrid-solutions/plan-hybrid-connectivity.md?toc=/SkypeForBusiness/sfbhybridtoc/toc.json).
 > - È possibile disporre di firewall hardware o software, non sono necessari modelli o versioni specifiche. Ciò che conta è ciò che le porte sono whitelist in modo che il firewall non comprometta il funzionamento di Skype for Business Server.
   
 ## <a name="port-and-protocol-details"></a>Informazioni dettagliate sulle porte e sui protocolli
@@ -50,7 +50,7 @@ Nella tabella seguente sono elencate le porte che è necessario aprire per ogni 
   
 **Porte server richieste (per ruolo server)**
 
-|Ruolo server|Nome servizio|Porta|Protocol|Notes|
+|Ruolo server|Nome servizio|Porta|Protocollo|Notes|
 |:-----|:-----|:-----|:-----|:-----|
 |Tutti i server  |SQL Browser  |1434  |UDP  |Browser SQL per la copia locale replicata del database dell'archivio di gestione centrale.  |
 |Front End Server  |Servizio front-end di Skype for Business Server  |5060  |TCP  |Utilizzata facoltativamente dai server Standard Edition e dai Front End Server per le route statiche ai servizi trusted, ad esempio i server di controllo delle chiamate remote.  |
@@ -107,13 +107,13 @@ Nella tabella seguente sono elencate le porte che è necessario aprire per ogni 
 |Front End Server della chat persistente  |Servizio di trasferimento file di chat persistente  |443  |TCP (TLS)  ||
    
 > [!NOTE]
-> Alcuni scenari di controllo delle chiamate remote richiedono una connessione TCP tra il Front End Server o Director e il sistema PBX. Anche se Skype for Business Server non utilizza più la porta TCP 5060, durante la distribuzione del controllo delle chiamate remote viene creata una configurazione server attendibile, che associa il nome di dominio completo del server RCC line alla porta TCP che verrà utilizzata dal front end server o dal Director per la connessione al Sistema PBX. Per informazioni dettagliate, vedere il cmdlet **CsTrustedApplicationComputer** nella documentazione di Skype for Business Server Management Shell.
+> Alcuni scenari di controllo delle chiamate remote richiedono una connessione TCP tra il Front End Server o Director e il sistema PBX. Anche se Skype for Business Server non utilizza più la porta TCP 5060, durante la distribuzione del controllo delle chiamate remote viene creata una configurazione del server attendibile, che associa il nome di dominio completo del server della linea RCC alla porta TCP che verrà utilizzata dal front end server o dal Director per la connessione al sistema PBX. Per informazioni dettagliate, vedere il cmdlet **CsTrustedApplicationComputer** nella documentazione di Skype for Business Server Management Shell.
   
 Per i pool che utilizzano solo il servizio di bilanciamento del carico hardware (non il servizio di bilanciamento del carico DNS), la tabella che segue mostra le porte che devono aprire i servizi di bilanciamento del carico hardware.
   
 **Porte del servizio di bilanciamento del carico hardware se si utilizza solo questo servizio di bilanciamento**
 
-|Servizio di bilanciamento del carico|Porta|Protocol|
+|Servizio di bilanciamento del carico|Porta|Protocollo|
 |:-----|:-----|:-----|
 |Servizio di bilanciamento del carico Front End Server  |5061  |TCP (TLS)  |
 |Servizio di bilanciamento del carico Front End Server  |444  |HTTPS  |
@@ -140,7 +140,7 @@ Per i pool che utilizzano solo il servizio di bilanciamento del carico hardware 
   
 **Porte del servizio di bilanciamento del carico hardware se si utilizza il servizio di bilanciamento del carico DNS**
 
-|Servizio di bilanciamento del carico|Porta|Protocol|
+|Servizio di bilanciamento del carico|Porta|Protocollo|
 |:-----|:-----|:-----|
 |Servizio di bilanciamento del carico Front End Server  |80  |HTTP  |
 |Servizio di bilanciamento del carico Front End Server  |443  |HTTPS  |
@@ -151,7 +151,7 @@ Per i pool che utilizzano solo il servizio di bilanciamento del carico hardware 
 
 **Porte client richieste**
 
-|Componente|Porta|Protocol|Notes|
+|Componente|Porta|Protocollo|Notes|
 |:-----|:-----|:-----|:-----|
 |Client  |67/68  |DHCP  |Utilizzato da Skype for Business Server per individuare il nome di dominio completo del registrar (ovvero se DNS SRV ha esito negativo e le impostazioni manuali non sono configurate).  |
 |Client  |443  |TCP (TLS)  |Utilizzata per il traffico SIP da client a server per l'accesso utente esterno.  |
@@ -182,11 +182,11 @@ Nella tabella riportata di seguito vengono illustrate le impostazioni di eccezio
   
 **Eccezioni IPsec consigliate**
 
-|Nome regola|IP origine|IP destinazione|Protocol|Porta origine|Porta destinazione|Requisito di autenticazione|
+|Nome regola|IP origine|IP destinazione|Protocollo|Porta origine|Porta destinazione|Requisito di autenticazione|
 |:--- |:--- |:--- |:--- |:--- |:--- |:--- |
 |A/V Edge Server in ingresso interno  |Qualsiasi  |A/V Edge Server interno  |UDP e TCP  |Qualsiasi  |Qualsiasi  |Non autenticare  |
 |A/V Edge Server in ingresso esterno  |Qualsiasi  |A/V Edge Server esterno  |UDP e TCP  |Qualsiasi  |Qualsiasi  |Non autenticare  |
-|A/V Edge Server interno in uscita  |A/V Edge Server interno  |Qualsiasi  |TCP &amp; UDP  |Qualsiasi  |Qualsiasi  |Non autenticare  |
+|A/V Edge Server interno in uscita  |A/V Edge Server interno  |Qualsiasi  |&amp;TCP UDP  |Qualsiasi  |Qualsiasi  |Non autenticare  |
 |A/V Edge Server esterno in uscita  |A/V Edge Server esterno  |Qualsiasi  |UDP e TCP  |Qualsiasi  |Qualsiasi  |Non autenticare  |
 |Mediation Server in ingresso  |Qualsiasi  |Mediation  <br/> Server (s)  |UDP e TCP  |Qualsiasi  |Qualsiasi  |Non autenticare  |
 |Mediation Server in uscita  |Mediation  <br/> Server (s)  |Qualsiasi  |UDP e TCP  |Qualsiasi  |Qualsiasi  |Non autenticare  |
