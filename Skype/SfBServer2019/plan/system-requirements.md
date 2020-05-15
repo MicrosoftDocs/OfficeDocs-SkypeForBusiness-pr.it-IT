@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: ''
 description: "Sintesi: preparare i server di Skype for Business Server 2019 e l'infrastruttura del dominio con questo argomento. Hardware, sistema operativo, database, software, tutti i requisiti di sistema e le raccomandazioni, insieme al certificato DNS, alla condivisione file e alle informazioni di Active Directory, sono qui per garantire una corretta installazione e distribuzione della server farm."
-ms.openlocfilehash: 7e0e8e3480c849fadd32921a5859766133ec1166
-ms.sourcegitcommit: 379bfaf6b0584c1ac93341af605f93ab932a442b
+ms.openlocfilehash: 8bb12fa9f5d0cd0144604f21d311c50f7f63b0f4
+ms.sourcegitcommit: 000515147632c6278bcda4505a1038014dda8e2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "43240536"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232377"
 ---
 # <a name="system-requirements-for-skype-for-business-server-2019"></a>Requisiti di sistema per Skype for Business Server 2019
  
@@ -357,11 +357,11 @@ In questa topologia sono presenti una o più foreste di utenti e Skype for Busin
 #### <a name="multiple-forests-in-a-resource-forest-topology-with-skype-for-business-online-and-azure-active-directory-connect"></a>Più foreste in una topologia con foresta di risorse con Skype for business online e Azure Active Directory Connect
 <a name="BKMK_multipleforestopology"> </a>
 
-![Vengono illustrati due insiemi di strutture AD, una foresta di utenti e una foresta di risorse. Le due foreste dispongono di una relazione di trust. Sono sincronizzati con Office 365 utilizzando Azure AD Connect. Tutti gli utenti sono abilitati per Skype for business tramite Office 365.](../../SfbServer/media/6d54558d-8786-4ebf-90f6-55ae3fdb5ae7.jpg)
+![Vengono illustrati due insiemi di strutture AD, una foresta di utenti e una foresta di risorse. Le due foreste dispongono di una relazione di trust. Sono sincronizzati con Microsoft 365 utilizzando Azure AD Connect. Tutti gli utenti sono abilitati per Skype for business tramite Microsoft 365.](../../SfbServer/media/6d54558d-8786-4ebf-90f6-55ae3fdb5ae7.jpg)
   
-In questo scenario, sono presenti più foreste in locale, con una topologia con foresta di risorse. Esiste una relazione di trust completa tra le foreste di Active Directory. Lo strumento Azure Active Directory Connect viene utilizzato per sincronizzare gli account tra le foreste di utenti locali e Office 365.
+In questo scenario, sono presenti più foreste in locale, con una topologia con foresta di risorse. Esiste una relazione di trust completa tra le foreste di Active Directory. Lo strumento Azure Active Directory Connect viene utilizzato per sincronizzare gli account tra le foreste di utenti locali e Microsoft 365 o Office 365.
   
- L'organizzazione dispone anche di Office 365 e utilizza [Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) per sincronizzare gli account locali con Office 365. Gli utenti abilitati per Skype for business sono abilitati tramite Office 365 e Skype for business online. Skype for Business Server non è distribuito in locale.
+ L'organizzazione ha anche Microsoft 365 o Office 365 e utilizza [Azure Active Directory Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) per sincronizzare gli account locali con Microsoft 365 o Office 365. Gli utenti abilitati per Skype for business sono abilitati tramite Microsoft 365 o Office 365 e Skype for business online. Skype for Business Server non è distribuito in locale.
   
 L'autenticazione Single Sign-on viene fornita da una farm di Active Directory Federation Services che si trova nella foresta di utenti.
   
@@ -464,24 +464,24 @@ Certificati per i server Standard Edition:
 |**Certificato**|**Nome soggetto/nome comune**|**Nome alternativo soggetto**|**Esempio**|**Comments**|
 |:-----|:-----|:-----|:-----|:-----|
 |Predefinita  <br/> |FQDN del pool  <br/> |FQDN del pool e FQDN del server  <br/> Se sono presenti più domini SIP ed è stata abilitata la configurazione automatica dei client, la Configurazione guidata certificati rileva e aggiunge l'FQDN di ogni dominio SIP supportato.  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS (Domain Name System) esatta nei criteri di gruppo, saranno inoltre necessarie voci per sip.sipdomain (per ogni dominio SIP di cui si dispone).  <br/> |SN = SE01. contoso. com; SAN = SE01. contoso. com  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, sarà inoltre necessario utilizzare SAN=sip.contoso.com; SAN=sip.fabrikam.com  <br/> |Nei server Standard Edition, il nome di dominio completo del server corrisponde al nome di dominio completo del pool.  <br/> La procedura guidata rileva i domini SIP specificati durante la configurazione e li aggiunge automaticamente al nome alternativo del soggetto.  <br/> È inoltre possibile utilizzare questo certificato per l'autenticazione da server a server.  <br/> |
-|Interno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che corrisponde al nome di dominio completo del server)  <br/> E  <br/> • Soddisfa gli URL semplici  <br/> • URL semplice con accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN = SE01. contoso. com; SAN = SE01. contoso. com; SAN = meet. contoso. com; SAN = meet. fabrikam. com; SAN = dialin. contoso. com; SAN = admin. contoso. com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN = SE01. contoso. com; SAN = SE01. contoso. com; SAN =\*. contoso.com  <br/> |Non è possibile eseguire l'override del nome FQDN Web interno in Generatore di topologie.  <br/> Se si dispone di più URL semplici, è necessario includerli tutti come SANs.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
-|Esterno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • URL semplice con accesso esterno  <br/> • Soddisfa gli URL semplici per dominio SIP  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN = SE01. contoso. com; SAN = webcon01. contoso. com; SAN = meet. contoso. com; SAN = meet. fabrikam. com; SAN = dialin. contoso. com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN = SE01. contoso. com; SAN = webcon01. contoso. com; SAN =\*. contoso.com  <br/> |Se sono presenti più URL semplici per le riunioni, sarà necessario includerli tutti come nomi alternativi del soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
+|Interno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che corrisponde al nome di dominio completo del server)  <br/> E  <br/> • Soddisfa gli URL semplici  <br/> • URL semplice con accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN = SE01. contoso. com; SAN = SE01. contoso. com; SAN = meet. contoso. com; SAN = meet. fabrikam. com; SAN = dialin. contoso. com; SAN = admin. contoso. com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN = SE01. contoso. com; SAN = SE01. contoso. com; SAN = \* . contoso.com  <br/> |Non è possibile eseguire l'override del nome FQDN Web interno in Generatore di topologie.  <br/> Se si dispone di più URL semplici, è necessario includerli tutti come SANs.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
+|Esterno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • URL semplice con accesso esterno  <br/> • Soddisfa gli URL semplici per dominio SIP  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN = SE01. contoso. com; SAN = webcon01. contoso. com; SAN = meet. contoso. com; SAN = meet. fabrikam. com; SAN = dialin. contoso. com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN = SE01. contoso. com; SAN = webcon01. contoso. com; SAN = \* . contoso.com  <br/> |Se sono presenti più URL semplici per le riunioni, sarà necessario includerli tutti come nomi alternativi del soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
    
 Certificati per front end server in un pool Front end:
   
 |**Certificato**|**Nome soggetto/nome comune**|**Nome alternativo soggetto**|**Esempio**|**Comments**|
 |:-----|:-----|:-----|:-----|:-----|
 |Predefinita  <br/> |FQDN del pool  <br/> |FQDN del pool e FQDN del server  <br/> Se sono presenti più domini SIP ed è stata abilitata la configurazione automatica dei client, la Configurazione guidata certificati rileva e aggiunge l'FQDN di ogni dominio SIP supportato.  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS (Domain Name System) esatta nei criteri di gruppo, saranno inoltre necessarie voci per sip.sipdomain (per ogni dominio SIP di cui si dispone).  <br/> |SN = EEpool. contoso. com; SAN = EEpool. contoso. com; SAN = ee01. contoso. com  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, sarà inoltre necessario utilizzare SAN=sip.contoso.com; SAN=sip.fabrikam.com  <br/> |La procedura guidata rileva i domini SIP specificati durante la configurazione e li aggiunge automaticamente al nome alternativo del soggetto.  <br/> È inoltre possibile utilizzare questo certificato per l'autenticazione da server a server.  <br/> |
-|Interno Web  <br/> |FQDN del pool  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che non corrisponde al nome di dominio completo del server)  <br/> • FQDN del server  <br/> • FQDN del pool di Skype for business  <br/> E  <br/> • Soddisfa gli URL semplici  <br/> • URL semplice con accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN = ee01. contoso. com; SAN = ee01. contoso. com; SAN = meet. contoso. com; SAN = meet. fabrikam. com; SAN = dialin. contoso. com; SAN = admin. contoso. com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN = ee01. contoso. com; SAN = ee01. contoso. com; SAN =\*. contoso.com  <br/> |Se sono presenti più URL semplici per le riunioni, sarà necessario includerli tutti come nomi alternativi del soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
-|Esterno Web  <br/> |FQDN del pool  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • URL semplice con accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN = ee01. contoso. com; SAN = webcon01. contoso. com; SAN = meet. contoso. com; SAN = meet. fabrikam. com; SAN = dialin. contoso. com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN = ee01. contoso. com; SAN = webcon01. contoso. com; SAN =\*. contoso.com  <br/> |Se sono presenti più URL semplici per le riunioni, sarà necessario includerli tutti come nomi alternativi del soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
+|Interno Web  <br/> |FQDN del pool  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che non corrisponde al nome di dominio completo del server)  <br/> • FQDN del server  <br/> • FQDN del pool di Skype for business  <br/> E  <br/> • Soddisfa gli URL semplici  <br/> • URL semplice con accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN = ee01. contoso. com; SAN = ee01. contoso. com; SAN = meet. contoso. com; SAN = meet. fabrikam. com; SAN = dialin. contoso. com; SAN = admin. contoso. com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN = ee01. contoso. com; SAN = ee01. contoso. com; SAN = \* . contoso.com  <br/> |Se sono presenti più URL semplici per le riunioni, sarà necessario includerli tutti come nomi alternativi del soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
+|Esterno Web  <br/> |FQDN del pool  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • URL semplice con accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN = ee01. contoso. com; SAN = webcon01. contoso. com; SAN = meet. contoso. com; SAN = meet. fabrikam. com; SAN = dialin. contoso. com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN = ee01. contoso. com; SAN = webcon01. contoso. com; SAN = \* . contoso.com  <br/> |Se sono presenti più URL semplici per le riunioni, sarà necessario includerli tutti come nomi alternativi del soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
    
 Certificati per il server Director:
   
 |**Certificato**|**Nome soggetto/nome comune**|**Nome alternativo soggetto**|**Esempio**|
 |:-----|:-----|:-----|:-----|
 |Predefinita  <br/> |Pool Director  <br/> |FQDN del server Director, FQDN del pool di server Director.  <br/> Se il pool è il server di accesso automatico per i client ed è richiesta la corrispondenza DNS rigorosa nei criteri di gruppo, saranno inoltre necessarie voci per SIP. SipDomain (per ogni dominio SIP di cui si dispone).  <br/> |pool.contoso.com; SAN = dir01. contoso. com  <br/> Se il pool di server Director rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, sarà inoltre necessario utilizzare SAN=sip.contoso.com; SAN=sip.fabrikam.com  <br/> |
-|Interno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che corrisponde al nome di dominio completo del server)  <br/> • FQDN del server  <br/> • FQDN del pool di Skype for business  <br/> E  <br/> • Soddisfa gli URL semplici  <br/> • URL semplice con accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN = dir01. contoso. com; SAN = dir01. contoso. com; SAN = meet. contoso. com; SAN = meet. fabrikam. com; SAN = dialin. contoso. com; SAN = admin. contoso. com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN = dir01. contoso. com; SAN = dir01. contoso. com SAN =\*. contoso.com  <br/> |
-|Esterno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • Soddisfa gli URL semplici per dominio SIP  <br/> • URL semplice con accesso esterno  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |Il nome FQDN Web esterno del Director deve essere diverso dal pool Front end o dal front end server.  <br/> SN = dir01. contoso. com; SAN = directorwebcon01. contoso. com SAN = meet. contoso. com; SAN = meet. fabrikam. com; SAN = dialin. contoso. com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN = dir01. contoso. com; SAN = directorwebcon01. contoso. com SAN =\*. contoso.com  <br/> |
+|Interno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che corrisponde al nome di dominio completo del server)  <br/> • FQDN del server  <br/> • FQDN del pool di Skype for business  <br/> E  <br/> • Soddisfa gli URL semplici  <br/> • URL semplice con accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN = dir01. contoso. com; SAN = dir01. contoso. com; SAN = meet. contoso. com; SAN = meet. fabrikam. com; SAN = dialin. contoso. com; SAN = admin. contoso. com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN = dir01. contoso. com; SAN = dir01. contoso. com SAN = \* . contoso.com  <br/> |
+|Esterno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • Soddisfa gli URL semplici per dominio SIP  <br/> • URL semplice con accesso esterno  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |Il nome FQDN Web esterno del Director deve essere diverso dal pool Front end o dal front end server.  <br/> SN = dir01. contoso. com; SAN = directorwebcon01. contoso. com SAN = meet. contoso. com; SAN = meet. fabrikam. com; SAN = dialin. contoso. com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN = dir01. contoso. com; SAN = directorwebcon01. contoso. com SAN = \* . contoso.com  <br/> |
    
 Certificati per Mediation Server autonomo:
   
@@ -493,7 +493,7 @@ Certificati per Survivable Branch Appliance (in particolare, Survivable Branch A
   
 |**Certificato**|**Nome soggetto/nome comune**|**Nome alternativo soggetto**|**Esempio**|
 |:-----|:-----|:-----|:-----|
-|Predefinita  <br/> |FQDN del dispositivo  <br/> |SIP. \<SipDomain\> (è necessaria una sola voce per dominio SIP)  <br/> |SN = sba01. contoso. NET; SAN = SIP. contoso. com; SAN = SIP. fabrikam. com  <br/> |
+|Predefinita  <br/> |FQDN del dispositivo  <br/> |SIP. \< SipDomain \> (è necessaria una sola voce per dominio SIP)  <br/> |SN = sba01. contoso. NET; SAN = SIP. contoso. com; SAN = SIP. fabrikam. com  <br/> |
    
 ### <a name="certificates-for-external-user-access-edge"></a>Certificati per l'accesso degli utenti esterni (Edge)
 
@@ -523,16 +523,16 @@ Requisiti dei certificati per pool di server Director e front end:
   
 |**Descrizione**|**Voce SAN**|
 |:-----|:-----|
-|URL del servizio di individuazione automatica interno  <br/> |SAN = LyncdiscoverInternal. \<SipDomain\>  <br/> |
-|URL del servizio di individuazione automatica esterno  <br/> |SAN = lyncdiscover. \<SipDomain\>  <br/> |
+|URL del servizio di individuazione automatica interno  <br/> |SAN = LyncdiscoverInternal. \< SipDomain\>  <br/> |
+|URL del servizio di individuazione automatica esterno  <br/> |SAN = lyncdiscover. \< SipDomain\>  <br/> |
    
-In alternativa, è possibile utilizzare SAN\*=. \<SipDomain\>
+In alternativa, è possibile utilizzare SAN = \* . \< SipDomain\>
   
 Requisiti dei certificati per il proxy inverso (public CA):
   
 |**Descrizione**|**Voce SAN**|
 |:-----|:-----|
-|URL del servizio di individuazione automatica esterno  <br/> |SAN = lyncdiscover. \<SipDomain\>  <br/> |
+|URL del servizio di individuazione automatica esterno  <br/> |SAN = lyncdiscover. \< SipDomain\>  <br/> |
    
 Questa SAN deve essere assegnata al certificato assegnato al listener SSL nel proxy inverso.
   
@@ -554,7 +554,6 @@ Skype for Business Server 2019 è in grado di utilizzare la stessa condivisione 
 > [!CAUTION]
 > È necessario sapere che l'utilizzo di Network Attached Storage (NAS) come condivisione file non è supportato, quindi utilizzare una delle opzioni sopra elencate. Questa limitazione del supporto è causata dalla progettazione variabile di dispositivi NAS che devono fornire l'adattabilità del file System al computer basato su Windows Server che accede al file system condiviso dei dispositivi.
   
-
 
 
 

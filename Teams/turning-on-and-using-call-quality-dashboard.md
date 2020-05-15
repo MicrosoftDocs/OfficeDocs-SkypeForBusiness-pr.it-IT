@@ -24,12 +24,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate.
-ms.openlocfilehash: 59f905315eebe1e2f3e3b24b157eb198173a94e8
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 9a1c7cb451f722d019a4119daf8ab9c3a08c810f
+ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44226021"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44243577"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -483,13 +483,13 @@ Creare report dettagliati in Call Quality dashboard e filtrare l'ID riunione per
 La telemetria non chiamerà necessariamente il problema, ma può aiutarti a capire meglio dove cercare e informare le tue decisioni. È la rete, il dispositivo, il driver o gli aggiornamenti del firmware, l'uso o l'utente?
 
 ### <a name="why-do-i-see-upto-02-difference-in-call-and-user-count-values-on-measures-and-how-to-get-most-accurate-volumes"></a>Perché viene visualizzata la differenza fino al 0,2% dei valori delle chiamate e dei conteggi degli utenti sulle misure e su come ottenere volumi più accurati? 
-Per calcolare le misure conteggio chiamate e conteggio utenti, viene eseguita un'operazione conta.se distinta rispetto alla chiamata o agli identificatori utente nel set di dati. Nei set di dati di grandi dimensioni è disponibile un inherient di errore fino a 0,2% con il distinto conta.se opeartion. Per il volume più accurato, devi basarti sulle misure di conteggio flusso poiché non si basano su questa operazione conta.se distinta. L'applicazione di filtri per ridurre il volume di dati può ridurre l'errore, ma potrebbe non elimnate questa origine di errore in conteggi distinti per l'utente e la chiamata. Fare riferimento a [dimensioni e misure disponibili nel dashboard qualità chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md) per cui sono interessate le misure.
+Per calcolare le misure conteggio chiamate e conteggio utenti, viene eseguita un'operazione conta.se distinta rispetto alla chiamata o agli identificatori utente nel set di dati. Nei set di dati di grandi dimensioni esiste un errore di 0,2% inerente all'operazione conta.se distinta. Per il volume più accurato, devi basarti sulle misure di conteggio flusso poiché non si basano su questa operazione conta.se distinta. L'applicazione di filtri per ridurre il volume dei dati può ridurre l'errore, ma potrebbe non eliminare questa origine di errore in conteggi distinti per gli utenti e le chiamate. Fare riferimento a [dimensioni e misure disponibili nel dashboard qualità chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md) per cui sono interessate le misure.
 
 ### <a name="why-does-my-cqd-v2-report-data-look-different-than-the-cqd-v3-report-data"></a>Perché i dati del report Call Quality dashboard V2 hanno un aspetto diverso rispetto ai dati del report di Call Quality dashboard V3? 
 
 Se vengono visualizzate differenze di dati tra Call Quality dashboard V2 e V3, verificare che il confronto o la convalida dei dati sia stata eseguita su un livello "mele-mele" e su uno stretto, non su un livello aggregato. Se ad esempio si filtrano entrambi i report per i dati client desktop di MSIT ' Building 30', la percentuale di qualità scadente dovrebbe essere uguale tra V2 e V3.
 
-La classificazione CQDv2 per l'errore CallSetup è Inly considerata solo per la modalità "audio", in CQDv3 questa classificazione si verifica per ogni modalità (audio, video e condivisione applicazioni) ed è rappresentata nel rispettivo flusso di modalità. 
+La classificazione CQDv2 per l'errore CallSetup viene considerata solo per la modalità "audio", in CQDv3 questa classificazione si verifica per ogni modalità (audio, video e condivisione applicazioni) ed è rappresentata nel rispettivo flusso di modalità. 
 
 Per i team, CQDv2 applica lo stesso feedback degli utenti a tutte le modalità CQDv3 applica la base di feedback sulla modalità per i team.
 

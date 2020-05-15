@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: "Riepilogo: informazioni su come utilizzare PowerShell per ottenere la funzionalità SEFAUtil in Skype for Business Server 2019 dopo l'installazione dell'aggiornamento cumulativo 1."
-ms.openlocfilehash: 1a18a954e40ba7a0c72e4d87b4b3c943e827f2a1
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 24040a3da5dc2549996463078a55324f3fc03657
+ms.sourcegitcommit: 000515147632c6278bcda4505a1038014dda8e2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42049138"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232567"
 ---
 # <a name="using-sefautil-functionality-via-powershell-in-skype-for-business-server-2019"></a>Utilizzo della funzionalità SEFAUtil tramite PowerShell in Skype for Business Server 2019
 
@@ -94,7 +94,7 @@ Questo cmdlet aggiunge o rimuove i membri del team.
 
 Questo cmdlet imposta un elenco di team per membri specifici.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Per le distribuzioni locali, i cmdlet introdotti in questa funzionalità possono essere eseguiti solo dai membri dei gruppi seguenti, per il livello di accesso specificato di seguito:
 
@@ -103,7 +103,7 @@ Per le distribuzioni locali, i cmdlet introdotti in questa funzionalità possono
 - CsHelpDesk-Get per tutti i cmdlet
 
 Per ulteriori informazioni su questi ruoli di amministratore, vedere [creare gli amministratori del pannello di controllo di Skype for Business Server](../SfbServer/help-topics/help-depwiz/create-skype-for-business-server-control-panel-administrators.md). L'amministratore può accedere a questi cmdlet direttamente o in remoto accedendo a un computer server.
-Per una distribuzione ibrida, gli amministratori di Skype for business dovrebbero essere in grado di chiamare Get e set per tutti i cmdlet. Per ulteriori informazioni sull'elenco completo dei ruoli, vedere [informazioni sui ruoli di amministratore di Office 365](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)
+Per una distribuzione ibrida, gli amministratori di Skype for business dovrebbero essere in grado di chiamare Get e set per tutti i cmdlet. Per ulteriori informazioni sull'elenco completo dei ruoli, vedere [informazioni sui ruoli di amministratore](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)
 
 > [!NOTE]
 > L'individuazione automatica del server deve essere abilitata. Non verranno introdotti ulteriori requisiti di licenza per l'utilizzo dei cmdlet.

@@ -23,23 +23,23 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per Barbados.
-ms.openlocfilehash: ad2d5d1269700cd65c21ea6dc60f8ee347c3decf
-ms.sourcegitcommit: eb2182617d8f72f8a7ea95f7af101d10c6f4e9a0
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per le Barbados.
+ms.openlocfilehash: 551275b6cd17bacbce836e03d1b981ef9fd897af
+ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41853891"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44230975"
 ---
 # <a name="availability-in-barbados"></a>Disponibilità in Barbados
 
-[Trova un altro Paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri di più sulla disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica.
+[Per trovare un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o per altre informazioni sulla disponibilità di Piano chiamata e Audioconferenza per paese e aree geografica.
 
-Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per Barbados.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per le Barbados.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì, solo in [pay-per-minute](../audio-conferencing-pay-per-minute.md)  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> | No |
@@ -47,14 +47,14 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
    
 ## <a name="phone-system"></a>Sistema telefonico
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
-|Operatori automatici <br/> |Disponibili  <br/> |
-|Code di chiamata  <br/> |Disponibili  <br/> |
-|Casella vocale  <br/> |Disponibili  <br/> |
+|Operatori automatici <br/> |Disponibile  <br/> |
+|Code di chiamata  <br/> |Disponibile  <br/> |
+|Segreteria telefonica  <br/> |Disponibile  <br/> |
    
-## <a name="calling-plans"></a>Piani per chiamate
+## <a name="calling-plans"></a>Piani di chiamata
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
@@ -62,11 +62,11 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
 
-Se i piani di chiamata non sono disponibili per l'acquisto, provare a usare il [routing diretto del sistema telefonico](../direct-routing-landing-page.md). Con il routing diretto, puoi usare il sistema telefonico con virtualmente qualsiasi gestore di telefonia.
+Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instradamento diretto di Sistema telefonico](../direct-routing-landing-page.md). Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri a pedaggio e a pagamento gratuito per i servizi
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Non applicabile <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |No <br/> |
@@ -74,9 +74,9 @@ Se i piani di chiamata non sono disponibili per l'acquisto, provare a usare il [
    
  Per ottenere numeri di telefono a pedaggio e a pedaggio gratuito per i servizi di audioconferenza, gli operatori automatici e le code di chiamata, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers).
   
-## <a name="communications-credits"></a>Crediti comunicazioni
+## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    
@@ -86,5 +86,5 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 
-[Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+[Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 

@@ -24,23 +24,23 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per lo Sri Lanka.
-ms.openlocfilehash: 57055a4e379f7ecc77718da38514edc4ca241472
-ms.sourcegitcommit: eb2182617d8f72f8a7ea95f7af101d10c6f4e9a0
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per lo Sri Lanka.
+ms.openlocfilehash: 96a700cfa7917ca4b51c3fd4e65c831f77fd950f
+ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41852386"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44230694"
 ---
 # <a name="availability-in-sri-lanka"></a>Disponibilità in Sri Lanka
 
-[Trova un altro Paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri di più sulla disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica.
+[Per trovare un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o per altre informazioni sulla disponibilità di Piano chiamata e Audioconferenza per paese e aree geografica.
 
-Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibili per lo Sri Lanka.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per lo Sri Lanka.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> | I numeri di telefono non sono associati a una località o a una città specifica. Per i numeri di telefono dedicati, vedere[ottenere i numeri di telefono di servizio per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
@@ -48,14 +48,14 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
    
 ## <a name="phone-system"></a>Sistema telefonico
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
-| Operatori automatici <br/> |Disponibili  <br/> |
-|Code di chiamata  <br/> |Disponibili  <br/> |
-|Casella vocale  <br/> |Disponibili  <br/> |
+| Operatori automatici <br/> |Disponibile  <br/> |
+|Code di chiamata  <br/> |Disponibile  <br/> |
+|Segreteria telefonica  <br/> |Disponibile  <br/> |
    
-## <a name="calling-plans"></a>Piani per chiamate
+## <a name="calling-plans"></a>Piani di chiamata
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
@@ -63,11 +63,11 @@ Ecco i servizi di Office 365 per Skype for business e Microsoft teams disponibil
 |Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
 
-Se i piani di chiamata non sono disponibili per l'acquisto, provare a usare il [routing diretto del sistema telefonico](../direct-routing-landing-page.md). Con il routing diretto, puoi usare il sistema telefonico con virtualmente qualsiasi gestore di telefonia.
+Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instradamento diretto di Sistema telefonico](../direct-routing-landing-page.md). Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |I numeri di telefono non sono associati a una località o a una città specifica.  <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
@@ -75,9 +75,9 @@ Se i piani di chiamata non sono disponibili per l'acquisto, provare a usare il [
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
   
-## <a name="communications-credits"></a>Crediti comunicazioni
+## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
    
@@ -87,7 +87,7 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 
-[Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+[Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
   
  

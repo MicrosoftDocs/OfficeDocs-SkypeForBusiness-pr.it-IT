@@ -18,33 +18,42 @@ f1.keywords:
 - NOCSH
 description: In questo articolo verrà illustrato come assegnare o modificare la posizione di un luogo di emergenza per gli utenti dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8689c6a578beac3a93fa8ef9214d6c33cd2d071a
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: d5b13cf5d4b4a0cf22077318e3c2c2196840f66e
+ms.sourcegitcommit: 000515147632c6278bcda4505a1038014dda8e2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904848"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232467"
 ---
 # <a name="assign-or-change-the-place-for-an-emergency-location-for-a-user"></a>Assegnare o modificare la posizione di un luogo di emergenza per un utente
 
 Ogni numero di telefono attivo deve avere una posizione di emergenza associata quando si assegna il numero di telefono a un utente. (Si associa l'indirizzo quando si riceve un numero di telefono in Office 365 o quando si trasferisce un numero di telefono). Quando si associa il numero a una posizione di emergenza, è anche possibile aggiungere una posizione per specificare un percorso più preciso all'interno di una posizione fisica. Una posizione può essere il piano, l'ala dell'edificio o il numero di ufficio in cui si trova l'utente. È possibile avere un numero illimitato di posizioni per una determinata posizione di emergenza e modificare la posizione se l'utente si sposta in un altro ufficio o edificio. Ad esempio, se l'utente si sposta da piano 34 a piano 35.
   
-Per informazioni su come ottenere piani per le chiamate in Office 365 e quanto costano, vedere [licenze per i componenti](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)aggiuntivi per i team.
+Per informazioni su come ottenere piani per le chiamate e su quanto costano, vedere licenze per i [componenti aggiuntivi](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)per i team.
   
-## <a name="assign-or-change-the-place-for-an-emergency-location-for-a-user"></a>Assegnare o modificare la posizione di un luogo di emergenza per un utente
+È possibile assegnare o modificare la posizione di un luogo di emergenza per un utente nell'interfaccia di amministrazione di Microsoft teams oppure usando PowerShell.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su**numeri di telefono** **vocale** > .
+## <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **Voice**  >  **numeri di telefono**vocale.
+
 2. Nella pagina **numeri di telefono** selezionare un numero utente nell'elenco e quindi fare clic su **modifica**.
+
 3. Nel riquadro **modifica** , in **posizione di emergenza**, eseguire una delle operazioni seguenti:
 
-- Per assegnare una posizione, cercare la posizione o il luogo e quindi selezionare il luogo nei risultati della ricerca.
-- Per modificare la posizione già assegnata all'utente, fare clic su **X** per rimuovere il percorso e il luogo esistenti, cercare e quindi selezionare la posizione che si vuole assegnare.
+    - Per assegnare una posizione, cercare la posizione o il luogo e quindi selezionare il luogo nei risultati della ricerca.
+
+    - Per modificare la posizione già assegnata all'utente, fare clic su **X** per rimuovere il percorso e il luogo esistenti, cercare e quindi selezionare la posizione che si vuole assegnare.
 
 4. Fare clic su **Salva**.
+
+## <a name="using-powershell"></a>Utilizzo di PowerShell
+
+Vedere [set-CsOnlineLisLocation](https://docs.microsoft.com/powershell/module/skype/set-csonlinelislocation).
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Che cosa sono il routing delle chiamate, le posizioni e i luoghi di emergenza?](what-are-emergency-locations-addresses-and-call-routing.md)
+- [Gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md)
 - [Aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-remove-emergency-location-organization.md)
 - [Aggiungere, modificare o rimuovere un luogo per una posizione di emergenza per l'organizzazione](add-change-remove-emergency-place-organization.md)
 - [Assegnare o modificare una posizione di emergenza per un utente](assign-change-emergency-location-user.md)

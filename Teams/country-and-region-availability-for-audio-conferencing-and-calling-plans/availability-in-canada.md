@@ -24,19 +24,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Questi sono i servizi Office 365 per Skype for Business e Microsoft Teams disponibili per il Canada.
-ms.openlocfilehash: fbf1f2aafdaf2a05d303548e45f56ab519af9493
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per il Canada.
+ms.openlocfilehash: b2ee63ca498e810d7eebdb80ab6252ce97864401
+ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41695261"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44230965"
 ---
 # <a name="availability-in-canada"></a>Disponibilità in Canada
 
 [Trova un altro Paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri di più sulla disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica.
 
-Questi sono i servizi Office 365 per Skype for Business e Microsoft Teams disponibili per il Canada.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per il Canada.
 
 ## <a name="audio-conferencing"></a>Audioconferenza
 
@@ -44,18 +44,18 @@ Questi sono i servizi Office 365 per Skype for Business e Microsoft Teams dispon
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Toronto</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
-|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibili  <br/> |
+|Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibile  <br/> |
 
 ## <a name="phone-system"></a>Sistema telefonico
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
-| Operatori automatici <br/> |Disponibili  <br/> |
-|Code di chiamata  <br/> |Disponibili  <br/> |
-|Casella vocale  <br/> |Disponibili  <br/> |
+| Operatori automatici <br/> |Disponibile  <br/> |
+|Code di chiamata  <br/> |Disponibile  <br/> |
+|Segreteria telefonica  <br/> |Disponibile  <br/> |
 
-## <a name="calling-plans"></a>Piani per chiamate
+## <a name="calling-plans"></a>Piani di chiamata
 
 | **Funzionalità**                                        | **Dettagli**                                                                                                                                                                                                                                                                 |
 |:---------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -69,7 +69,7 @@ Questi sono i servizi Office 365 per Skype for Business e Microsoft Teams dispon
 
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> | <ul><li>Calgary <li>  Montreal <li>  Toronto <li>  Vancouver <li>  Winnipeg </ul> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
@@ -80,9 +80,9 @@ Questi sono i servizi Office 365 per Skype for Business e Microsoft Teams dispon
 > [!Note] 
 > Quando un piano chiamante (nazionale o nazionale e internazionale) negli Stati Uniti compone un numero di telefono in Canada, verrà considerato come una chiamata domestica. Questo accade anche quando un utente in Canada effettuerà una chiamata a un numero degli Stati Uniti.
 
-## <a name="communications-credits"></a>Crediti comunicazioni
+## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Funzionalità**|**Dettagli**|
+|**Caratteristica**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
 
@@ -92,4 +92,4 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 
 [Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
 
-[Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+[Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)

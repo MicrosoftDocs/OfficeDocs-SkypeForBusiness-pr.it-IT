@@ -24,12 +24,12 @@ ms.custom:
 - Direct Routing
 - seo-marvel-mar2020
 description: Informazioni sulle chiamate in caso di emergenza, incluse indicazioni su indirizzi di emergenza, routing delle chiamate di emergenza e chiamate di emergenza dinamiche.
-ms.openlocfilehash: 8afe2d2af8b2aecbe3d73da03137f330aa8304b8
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 8c2de31aa81ac36338560c9b75d5c7ef27e460f8
+ms.sourcegitcommit: 000515147632c6278bcda4505a1038014dda8e2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141029"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232547"
 ---
 # <a name="manage-emergency-calling"></a>Gestire le chiamate di emergenza
 
@@ -90,7 +90,7 @@ Quando la posizione deve essere associata al numero di telefono dipende dal paes
 
 Le chiamate di emergenza dinamiche per i piani per le chiamate Microsoft offrono la possibilità di configurare e instradare telefonate di emergenza in base alla posizione corrente del client teams. La possibilità di eseguire il routing automatico al punto di risposta di sicurezza pubblica appropriato (PSAP) o di informare il personale del servizio di sicurezza varia a seconda del paese di utilizzo dell'utente teams.  
 
-In questo momento, solo gli utenti del piano chiamante negli Stati Uniti possono sfruttare le posizioni dinamiche per il routing delle chiamate di emergenza come indicato di seguito:
+Per gli utenti del piano di chiamata, la posizione dinamica per il routing delle chiamate di emergenza è supportata solo negli Stati Uniti, come indicato di seguito. Per informazioni sulle chiamate di emergenza dinamiche e sul routing diretto, vedere [considerazioni relative al routing diretto](#considerations-for-direct-routing).
 
 - Se un client di teams per un utente di un piano di chiamate degli Stati Uniti acquisisce in modo dinamico un indirizzo di emergenza all'interno degli Stati Uniti, tale indirizzo viene usato per il routing delle emergenze anziché per l'indirizzo registrato e la chiamata verrà indirizzata automaticamente al PSAP nell'area di servizio dell'indirizzo.
 

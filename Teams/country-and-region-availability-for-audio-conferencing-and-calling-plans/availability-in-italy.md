@@ -24,19 +24,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Questi sono i servizi di Office 365 per Skype for Business e Microsoft Teams disponibili per l'Italia.
-ms.openlocfilehash: 982dac5989c66f743df1c0e1dca41e2c34ae4d7e
-ms.sourcegitcommit: eb2182617d8f72f8a7ea95f7af101d10c6f4e9a0
-ms.translationtype: HT
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'Italia.
+ms.openlocfilehash: b768830a77a14538a33e58a8cfbe9a99bfed52f2
+ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "41853291"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44229194"
 ---
 # <a name="availability-in-italy"></a>Disponibilità in Italia
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Questi sono i servizi di Office 365 per Skype for Business e Microsoft Teams disponibili per l'Italia.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'Italia.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 

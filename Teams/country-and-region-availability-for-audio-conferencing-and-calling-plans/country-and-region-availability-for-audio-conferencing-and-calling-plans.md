@@ -26,12 +26,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Scopri se i servizi di audioconferenza, il sistema telefonico, i piani di chiamata, i crediti per le comunicazioni e i numeri verdi sono disponibili in un paese o in un'area geografica.
-ms.openlocfilehash: d6c989ea073a3d12f5bd4f04496f57977534e05c
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: eae54b4b8957f588afab45758f9be5d2f678b3ea
+ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43141059"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44230194"
 ---
 # <a name="country-and-region-availability-for-audio-conferencing-and-calling-plans"></a>Disponibilità di Audioconferenza e Piani di chiamata per Paese e area geografica
 
@@ -178,14 +178,14 @@ Per saperne di più sull’Audioconferenza, consulta [Domande ricorrenti sull'Au
 In Audioconferenza è presente una funzionalità denominata "*Chiama*" che può essere utilizzata per consentire ad altri di accedere a una riunione dall’esterno. Utilizza l'elenco a discesa qui sopra per cercare il paese/l’area geografica e vedere se questa funzione è disponibile.
 
 > [!CAUTION]
-> L'accesso a numeri telefonici verdi o gratuiti potrebbe non essere possibile, perché alcuni numeri verdi funzionano solo all'interno di un determinato paese o di una determinata area all'interno di un paese. Ad esempio, se si chiama dagli Stati Uniti un numero verde in Brasile, la chiamata potrebbe non andare a buon fine perché la chiamata non proviene dal Brasile o da una regione specifica del Brasile. La possibilità di chiamare i numeri verdi varia notevolmente a seconda delle restrizioni del numero verde composto. Purtroppo, dall'interno di Office 365 non possiamo influire su questo comportamento, e di conseguenza, la tua esperienza può variare a seconda del numero verde e delle restrizioni del numero verde. 
+> L'accesso a numeri telefonici verdi o gratuiti potrebbe non essere possibile, perché alcuni numeri verdi funzionano solo all'interno di un determinato paese o di una determinata area all'interno di un paese. Ad esempio, se si chiama dagli Stati Uniti un numero verde in Brasile, la chiamata potrebbe non andare a buon fine perché la chiamata non proviene dal Brasile o da una regione specifica del Brasile. La possibilità di chiamare i numeri verdi varia notevolmente a seconda delle restrizioni del numero verde composto. Purtroppo, non possiamo controllare questo comportamento e, di conseguenza, la tua esperienza può variare a seconda del numero verde composto e delle restrizioni del numero verde. 
   
-Le chiamate in uscita dall'interno di una riunione verso un altro paese/un’altra area geografica non elencati di seguito possono essere effettuate mediante [Crediti comunicazioni Office 365](../what-are-communications-credits.md). Per questo tipo di utenti sarà necessario [configurare il Credito per la comunicazione per la propria organizzazione](../set-up-communications-credits-for-your-organization.md).
+La chiamata in uscita da una riunione a un altro paese/area geografica nel mondo non elencato di seguito è disponibile con i [crediti di comunicazione](../what-are-communications-credits.md). Per questo tipo di utenti sarà necessario [configurare il Credito per la comunicazione per la propria organizzazione](../set-up-communications-credits-for-your-organization.md).
   
 ### <a name="phone-system"></a>Sistema telefonico
 Con Sistema telefonico puoi creare operatori automatici e code di chiamata (con un numero verde o a tariffa) per rispondere alle chiamate in arrivo alla tua organizzazione e, quando aggiungi un Piano per chiamate per gli utenti, questi ultimi possono utilizzare Skype for Business per assolvere alle attività di base di controllo delle chiamate, come effettuare e ricevere chiamate, trasferire chiamate, attivare o disattivare l’audio delle chiamate. Gli utenti di **Sistema telefonico** possono fare clic su un nome nella loro rubrica e Skype for Business effettuerà una chiamata a tale persona. Per effettuare e ricevere chiamate, gli utenti di **Sistema telefonico** possono utilizzare i loro dispositivi mobili, una cuffia auricolare con laptop o PC o uno dei numerosi telefoni IP che funzionano con Skype for Business.
 
-> La disponibilità di numeri telefonici a pagamento per alcune di queste località può variare a seconda dei livelli di inventario. Oltre a ottenere numeri di telefono per singoli utenti di Office 365, è anche possibile cercare e acquisire numeri di telefono a tariffa o gratuiti (numeri verdi) per servizi come Audioconferenza (per il bridging delle conferenze), operatori automatici e code di chiamata. Questi vengono detti numeri di servizio. Per ottenere nuovi numeri, consultare [Ottenere numeri di servizio](/microsoftteams/getting-service-phone-numbers). Ai tuoi utenti, tuttavia, una volta assegnato loro un Piano per le chiamate, puoi assegnare un numero di telefono utente per permettere loro di effettuare e ricevere chiamate. Per trovare questi numeri di telefono, consultare [Recuperare numeri di telefono per gli utenti](/microsoftteams/getting-phone-numbers-for-your-users). Puoi anche consultare [Assegnare, modificare o rimuovere il numero di telefono di un utente](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user). 
+> La disponibilità di numeri telefonici a pagamento per alcune di queste località può variare a seconda dei livelli di inventario. Oltre ad ottenere i numeri di telefono per i singoli utenti, è anche possibile cercare e acquisire numeri di telefono a pedaggio o a numero verde per servizi come l'audioconferenza (per i Bridge di conferenza), gli operatori automatici e le code di chiamata. Questi vengono detti numeri di servizio. Per ottenere nuovi numeri, consultare [Ottenere numeri di servizio](/microsoftteams/getting-service-phone-numbers). Ai tuoi utenti, tuttavia, una volta assegnato loro un Piano per le chiamate, puoi assegnare un numero di telefono utente per permettere loro di effettuare e ricevere chiamate. Per trovare questi numeri di telefono, consultare [Recuperare numeri di telefono per gli utenti](/microsoftteams/getting-phone-numbers-for-your-users). Puoi anche consultare [Assegnare, modificare o rimuovere il numero di telefono di un utente](/microsoftteams/assign-change-or-remove-a-phone-number-for-a-user). 
 
 [Tariffe del Sistema telefonico](https://products.office.com/skype-for-business/phone-system#Requirements)
 
@@ -204,7 +204,7 @@ Per informazioni sulle licenze, è possibile anche consultare [Licenza sistema t
   
 ### <a name="toll-and-toll-free-phone-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
-Oltre a ottenere numeri di telefono per singoli utenti di Office 365, è anche possibile cercare e acquisire numeri di telefono a tariffa o gratuiti (numeri verdi) per servizi come Audioconferenza (per il bridging delle conferenze), operatori automatici e code di chiamata. Questi vengono chiamati numeri di servizio.
+Oltre ad ottenere i numeri di telefono per i singoli utenti, è anche possibile cercare e acquisire numeri di telefono a pedaggio o a numero verde per servizi come l'audioconferenza (per i Bridge di conferenza), gli operatori automatici e le code di chiamata. Questi vengono chiamati numeri di servizio.
   
 Di seguito è riportato un elenco delle capitali e delle principali città da cui è possibile ottenere i numeri di servizio a tariffa da utilizzare con Audioconferenza e Piani per chiamate. Puoi ottenere i numeri di servizio a tariffa di queste località richiedendoli all’**interfaccia di amministrazione di Skype for Business**.
   

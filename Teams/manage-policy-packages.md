@@ -20,12 +20,12 @@ ms.custom:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft teams per semplificare, snellire e garantire la coerenza quando si gestiscono i criteri per i gruppi di utenti.
-ms.openlocfilehash: 752995cb31fa1588420b31e8927ce95ad4b52dc0
-ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
+ms.openlocfilehash: b900e7ad8e41b8ebad0ff2af774e36478c956f59
+ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43945590"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44243561"
 ---
 # <a name="manage-policy-packages-in-microsoft-teams"></a>Gestire i pacchetti di criteri in Microsoft Teams
 
@@ -47,8 +47,11 @@ I team attualmente includono i seguenti pacchetti di criteri.
 |Istruzione (studente di scuola elementare)   |Crea un set di criteri e impostazioni dei criteri applicabili agli studenti primari.|
 |Istruzione (studente di scuola secondaria)    |Crea un set di criteri e impostazioni dei criteri applicabili agli studenti secondari.         |
 |Istruzione (insegnante)    |Crea un set di criteri e impostazioni dei criteri applicabili agli insegnanti.      |
+|Istruzione (insegnante di scuola elementare che usa l'apprendimento remoto) (anteprima)   |Crea un set di criteri che si applicano agli insegnanti primari per massimizzare la sicurezza degli studenti e la collaborazione quando si usa l'apprendimento remoto.      |
+|Istruzione (studente della scuola elementare che usa l'apprendimento remoto) (anteprima)    |Crea un set di criteri che si applicano agli studenti primari per massimizzare la sicurezza degli studenti e la collaborazione quando si usa l'apprendimento remoto.      |
 |Lavoratore clinico sanitario  |Crea un set di criteri e impostazioni dei criteri che conferiscono agli operatori clinici, ad esempio infermieri registrati, addebiti infermieri, medici e assistenti sociali, l'accesso completo alla chat, alle chiamate, alla gestione del turno e alle riunioni. |
 |Information Worker sanitari  |Crea un set di criteri e impostazioni dei criteri che forniscono agli Information Worker come personale IT, personale informatico, personale finanziario e responsabili della conformità, accesso completo alla chat, alle chiamate e alle riunioni.|
+|Sala paziente sanitaria (anteprima)  |Crea un set di criteri e impostazioni dei criteri applicabili alle sale del paziente nell'organizzazione sanitaria.|
 |Utente di piccole e medie imprese (Business Voice) |Crea un criterio di configurazione dell'app che include le app per un'esperienza di Business Voice.|
 |Utente di piccole e medie imprese (senza Business Voice) |Crea un set di criteri e impostazioni dei criteri applicabili agli utenti di piccole e medie imprese senza le funzionalità vocali aziendali.|
 |Addetto alla sicurezza pubblica   |Crea un set di criteri e impostazioni dei criteri applicabili agli addetti alla sicurezza pubblica dell'organizzazione.|

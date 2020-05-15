@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottenere informazioni dettagliate sulle dimensioni e sulle misure usate dal dashboard qualità chiamata per Microsoft teams e Skype for business online.
-ms.openlocfilehash: c1c277e29f46fe9c748b82e4ebfcfe29897a60da
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 93e7857c2e63f7b13986898ac8e9973c2be189de
+ms.sourcegitcommit: 000515147632c6278bcda4505a1038014dda8e2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137336"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232587"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard"></a>Dimensioni e misure disponibili nel dashboard qualità chiamata
 
@@ -123,7 +123,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 |**Deployment**| | | |
 | First Tenant Id  | Stringa  | ID tenant Office 365 per il primo endpoint. <br/> **Valore di esempio:** 00000000 — 0000 -0000-0000 — 000000000000  | <br/>&bull;Non è stato possibile determinare l'ID tenant per il primo endpoint. Questo potrebbe indicare che l'endpoint è stato connesso a una distribuzione locale di Skype for Business Server.  |
 | Second Tenant Id  | Stringa  | ID tenant Office 365 per il secondo endpoint. <br/> **Valore di esempio:** 00000000 — 0000-0000-0000 — 000000000000  |  <br/>&bull;Non è stato possibile determinare l'ID tenant per il secondo endpoint. Questo potrebbe indicare che l'endpoint è stato connesso a una distribuzione locale di Skype for Business Server.  |
-| First Pool  | Stringa  | FQDN pool Skype for Business Online assegnato al primo endpoint. <br/> **Valore di esempio:** pool1<span></span>.<span></span>Lync. com  | <br/>&bull;Indica che l'endpoint è stato effettuato l'accesso a Microsoft teams o Skype for business. Questo campo viene popolato solo per i flussi usando le distribuzioni locali di Skype for Business Server. |
+| First Pool  | Stringa  | FQDN pool Skype for Business Online assegnato al primo endpoint. <br/> **Valore di esempio:** pool1 <span></span> . Lync <span></span> . com  | <br/>&bull;Indica che l'endpoint è stato effettuato l'accesso a Microsoft teams o Skype for business. Questo campo viene popolato solo per i flussi usando le distribuzioni locali di Skype for Business Server. |
 | Second Pool  | Stringa  | FQDN pool Skype for Business Online assegnato al secondo endpoint. <br/> **Valore di esempio:** <span>pool1.Lync.com</span>   | &bull;Non è stato possibile determinare il pool di Skype for business online per il secondo endpoint. Questo potrebbe indicare che l'endpoint è stato connesso a una distribuzione locale di Skype for Business Server.  |
 | Is Federated  | Boolean  | True se i flussi sono stati tra due tenant federati, false in caso contrario.   | <br/>&bull;Non è stato possibile determinare se si trattava di un flusso federato <br/>&bull;Alcuni dati di segnalazione non sono stati raccolti   |
 |Area | Stringa   |  Area geografica in cui si trovava la distribuzione in base all'area Home del tenant. <br/> **Valore di esempio:** America del Nord | <br/>&bull;Dati di rete non segnalati <br/>&bull;La rete non è all'interno della rete aziendale <br/>&bull;La rete non ha la regione definita nei dati di mappatura subnet. |
@@ -163,8 +163,8 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Full Month  | Data e ora  | Mese intero della fine del flusso. I valori sono riportati nel fuso orario UTC. <br/> **Valore di esempio:** 2017-02-01T00:00:00 | |
 |Ora di inizio|Stringa  |Ora del giorno in cui è stata avviata la chiamata.|&bull;Configurazione chiamata non riuscita |
 |**UserAgent** | | |
-| First Domain  | Stringa  | Dominio dell'utente del primo endpoint. Se il primo endpoint è un server di conferenza, usa il dominio dell'organizzatore della riunione. Può anche essere il dominio degli account di servizio utilizzati nello scenario.  <br/> **Valore di esempio:** Contoso<span></span>. com | |
-| Second Domain  | Stringa  | Dominio dell'utente del secondo endpoint. Se il secondo endpoint è un server di conferenza, usa il dominio dell'organizzatore della riunione. Può anche essere il dominio degli account di servizio utilizzati nello scenario. <br/> **Valore di esempio:** Contoso<span></span>. com  | |
+| First Domain  | Stringa  | Dominio dell'utente del primo endpoint. Se il primo endpoint è un server di conferenza, usa il dominio dell'organizzatore della riunione. Può anche essere il dominio degli account di servizio utilizzati nello scenario.  <br/> **Valore di esempio:** Contoso <span></span> . com | |
+| Second Domain  | Stringa  | Dominio dell'utente del secondo endpoint. Se il secondo endpoint è un server di conferenza, usa il dominio dell'organizzatore della riunione. Può anche essere il dominio degli account di servizio utilizzati nello scenario. <br/> **Valore di esempio:** Contoso <span></span> . com  | |
 | First User Agent Category  | Stringa  | Categoria dell'agente utente del primo endpoint. <br/> **Valore di esempio:** OC | &bull;Un agente utente al momento non ha un mapping    |
 | Second User Agent Category  | Stringa  | Categoria dell'agente utente del secondo endpoint. <br/> **Valore di esempio:** OC | &bull;Un agente utente al momento non ha un mapping    |
 | First User Agent  | Stringa  | Stringa agente utente del primo endpoint. <br/> **Valore di esempio:** UCCAPI/16.0.7766.5281 OC/16.0.7766.2047 (Skype for business) | &bull;Nessun agente utente segnalato dal primo endpoint   |
@@ -243,8 +243,8 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Secondo canale Wi-Fi  | Stringa  | Canale WiFi utilizzato dal secondo endpoint. <br/> **Valore di esempio:** 10  | <br/>&bull;Non è stato usato il WiFi <br/>&bull;Il canale non è stato segnalato  |
 | Primo tipo di radio Wi-Fi  | Stringa  | Tipo di radio WiFi utilizzata dal primo endpoint. HRDSSS è equivalente a 802.11b.<br/> **Valore di esempio:** 802.11 AC  | <br/>&bull;Non è stato usato il WiFi <br/>&bull;Il tipo di WiFi non è stato segnalato  |
 | Secondo tipo di radio Wi-Fi  | Stringa  | Tipo di radio WiFi utilizzata dal secondo endpoint. HRDSSS è equivalente a 802.11b.<br/> **Valore di esempio:** 802.11 AC  | <br/>&bull;Non è stato usato il WiFi <br/>&bull;Il tipo di WiFi non è stato segnalato  |
-| First DNS Suffix  | Stringa  | Suffisso DNS associato all'adattatore di rete riportato dal primo endpoint. Nota: questo valore può essere riportato per qualsiasi tipo di adattatore di rete. **Valore di esempio:** Corp<span></span>.<span></span>contoso. com  | <br/>&bull;Questo valore non è stato segnalato dall'endpoint <br/>  |
-| Second DNS Suffix  | Stringa  | Suffisso DNS associato all'adattatore di rete riportato dal secondo endpoint. Nota: questo valore può essere riportato per qualsiasi tipo di adattatore di rete.<br/> **Valore di esempio:** Corp<span></span>.<span></span>contoso. com   | <br/>&bull;Questo valore non è stato segnalato dall'endpoint  |
+| First DNS Suffix  | Stringa  | Suffisso DNS associato all'adattatore di rete riportato dal primo endpoint. Nota: questo valore può essere riportato per qualsiasi tipo di adattatore di rete. **Valore di esempio:** Corp <span></span> . contoso <span></span> . com  | <br/>&bull;Questo valore non è stato segnalato dall'endpoint <br/>  |
+| Second DNS Suffix  | Stringa  | Suffisso DNS associato all'adattatore di rete riportato dal secondo endpoint. Nota: questo valore può essere riportato per qualsiasi tipo di adattatore di rete.<br/> **Valore di esempio:** Corp <span></span> . contoso <span></span> . com   | <br/>&bull;Questo valore non è stato segnalato dall'endpoint  |
 | Prima banda Wi-Fi  | Stringa  | Banda WiFi usata, secondo quanto riportato dal primo endpoint. <br/> **Valore di esempio:** 5,0 GHz  | <br/>&bull;Il valore non è stato calcolato dall'endpoint <br/>&bull;Il valore non è stato segnalato  |
 | Seconda banda Wi-Fi  | Stringa  | Banda WiFi usata, secondo quanto riportato dal secondo endpoint. <br/> **Valore di esempio:** 5,0 GHz  | <br/>&bull;Il valore non è stato calcolato dall'endpoint <br/>&bull;Il valore non è stato segnalato  |
 | Prima potenza del segnale Wi-Fi  | Stringa  | Intensità del segnale WiFi in percentuale [0-100] riportata dal primo endpoint. <br/> **Valore di esempio:** 081: [90-100)  | <br/>&bull;Il valore non è stato calcolato dall'endpoint <br/>&bull;Il valore non è stato segnalato  |
@@ -455,7 +455,7 @@ I valori booleani sono sempre true o false. In alcuni casi, true può essere rap
 
 Le dimensioni fornite come intervallo o gruppo di valori sono indicate utilizzando il formato seguente:
 
- _\<stringa\> ordine di ordinamento\<[limite inferiore\> - \<incluso il limite superiore esclusivo\>_
+ _\<stringa ordine di ordinamento \> [limite \< inferiore incluso il \>  -  \< limite superiore esclusivo\>_
 
 Ad esempio, la dimensione Durata (Minuti) rappresenta la durata della chiamata in secondi e il valore è riferito come intervallo di valori.
 
@@ -467,7 +467,7 @@ Ad esempio, la dimensione Durata (Minuti) rappresenta la durata della chiamata i
 |066: [3 – 4) |3 minuti < = durata flusso < 4 minuti |
 |  | |
 
-La \<stringa di ordinamento> viene usata per controllare l'ordinamento quando si presentano i dati e può essere usato per il filtro. Ad esempio, un filtro su Durata (Minuti) < "065", mostrerà flussi con una durata inferiore a 2 minuti (lo "0" iniziale è necessario perché il filtro funzioni come previsto).
+La \< stringa di ordinamento> viene usata per controllare l'ordinamento quando si presentano i dati e può essere usato per il filtro. Ad esempio, un filtro su Durata (Minuti) < "065", mostrerà flussi con una durata inferiore a 2 minuti (lo "0" iniziale è necessario perché il filtro funzioni come previsto).
 
 > [!NOTE]
 > Il valore effettivo della stringa di ordinamento non è significativo.
@@ -480,7 +480,7 @@ Le stringhe usate da Call Quality dashboard sono spesso derivate dai file di dat
 
 Le dimensioni fornite come coppia di enumerazione sono indicate utilizzando il formato seguente:
 
- _\<valore di enumerazione da un punto\> finale \<: valore di enumerazione dall'altro endpoint\>_
+ _\<valore di enumerazione da un punto finale \> : \< valore di enumerazione dall'altro endpoint\>_
 
 L'ordinamento dei valori di enumerazione è coerente ma non riflette l'ordinamento del primo e del secondo endpoint.
 
@@ -499,7 +499,7 @@ Nella tabella sopra riportata sono elencati i motivi possibili per cui una dimen
 
 ## <a name="measurements"></a>Misure
 
-Molti valori di misurazione possono essere usati anche come filtri. La tabella seguente elenca le misure attualmente disponibili in Call Quality dashboard, visualizzate nell'ordine indicato nell'editor di query:
+Molti valori di misurazione possono essere usati anche come filtri. La tabella seguente elenca le misure attualmente disponibili in Call Quality dashboard, visualizzate nell'ordine indicato nell'editor di query
 
 |Nome misura |Unità |Descrizione |
 |:--- |:--- |:--- |
@@ -511,7 +511,7 @@ Molti valori di misurazione possono essere usati anche come filtri. La tabella s
 |Total Media Succeeded Stream Count |Numero di flussi |Il numero di flussi in cui il percorso del supporto è stato stabilito e si è completato correttamente. |
 |Total Call Setup Succeeded Stream Count |numero di flussi |Il numero di flussi in cui è stato possibile stabilire il percorso del supporto tra gli endpoint all'inizio della chiamata.|
 |Total Call Setup Failure Percentage |Percentuale |La percentuale di tutti i flussi in cui non è stato possibile stabilire il percorso del supporto tra gli endpoint all'inizio della chiamata. |
-|Total Call Dropped Failure Percentage |Percentuale |Percentuale di flussi definiti correttamente in cui il percorso del supporto non è stato interrotto normalmente. | Numero totale chiamate brevi
+|Total Call Dropped Failure Percentage |Percentuale |Percentuale di flussi definiti correttamente in cui il percorso del supporto non è stato interrotto normalmente.| 
 |Total Answer Seizure Ratio |Rapporto |Rapporto delle chiamate con durata inferiore a cinque secondi sul numero totale delle chiamate . |
 |Total Short Call Percentage |Percentuale |Percentuale delle chiamate totali meno di 1 minuto di lunghezza. |
 |Total Media Failure Percentage |Percentuale |La percentuale di tutti i flussi in cui non è stato possibile stabilire il percorso del supporto o in cui il percorso del supporto si è chiuso in modo anomalo. |
@@ -521,8 +521,8 @@ Molti valori di misurazione possono essere usati anche come filtri. La tabella s
 |Firewall IP Blocked Media Failure Percentage |Percentuale |Percentuale di flussi che non è stato possibile stabilire perché le apparecchiature di rete hanno bloccato l'accesso ai server Skype for business. Questi errori in genere indicano che un proxy, un firewall o un altro dispositivo di sicurezza di rete non è configurato correttamente per accedere all'indirizzo IP e alle porte usate da Skype for business in Office 365. |
 | Supporto non riuscito a causa di un altro conteggio flusso|Numero di flussi| Numero di flussi in cui non è stato possibile stabilire il percorso del supporto tra gli endpoint a causa di un motivo indeterminato o non classificato.| |
 | Percentuale di errore di altri elementi multimediali|Percentuale| Percentuale di flussi in cui non è stato possibile stabilire il percorso del supporto tra gli endpoint a causa di un motivo indeterminato o non classificato. ||
-| Numero totale di chiamate CDR disponibili|Numero di flussi|Numero totale di flussi multimediali con informazioni di affidabilità/diagnostica disponibili.|
-| Conteggio chiamate non riuscito totale|Numero di flussi|Numero di flussi in cui non è stato possibile stabilire il percorso del supporto tra gli endpoint.|
+| Numero totale di chiamate CDR disponibili|Numero di flussi|Numero totale di flussi multimediali con informazioni di affidabilità/diagnostica disponibili. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|
+| Conteggio chiamate non riuscito totale|Numero di flussi|Numero di flussi in cui non è stato possibile stabilire il percorso del supporto tra gli endpoint. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|
 |Audio Stream Count |Numero di flussi |Il numero dei flussi audio. |
 |Audio Poor Stream Count |Numero di flussi |Numero di flussi audio classificati come poveri in base alle metriche di rete elencate qui: [classificazione in Stream nel dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md). |
  |Audio Good Stream Count |Numero di flussi |Numero di flussi audio classificati come validi in base alle metriche di rete elencate qui: [classificazione in Stream nel dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md). |
@@ -543,11 +543,11 @@ Molti valori di misurazione possono essere usati anche come filtri. La tabella s
 |Audio Poor Call Stream Count |Numero di flussi |Numero di flussi audio in cui almeno un flusso audio nella chiamata (Call-Leg) è stato classificato come scadente in base alle metriche di rete elencate qui: [classificazione in Stream nel dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md). |
 |Audio Unclassified Call Stream Count |Numero di flussi |Numero di flussi audio in cui entrambi i flussi audio della chiamata (Leg-Call) non possono essere classificati a causa di metriche di rete mancanti. |
 |Percentuale livello di chiamata audio scadente |Percentuale |Percentuale di tutti i flussi audio in cui almeno un flusso audio nella chiamata (Call-Leg) è stato classificato come scadente in base alle metriche di rete elencate qui: [classificazione in Stream nel dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md). |
-| Conteggio chiamate audio | Numero |Numero di chiamate che coinvolgono l'audio.| |
-| Conteggio chiamate audio scadente|Numero  |Numero di chiamate che coinvolgono l'audio Classificato come scadente.|
-| Conteggio chiamate audio ottimali |Numero di chiamate|Numero di chiamate che coinvolgono l'audio Classificato come valido.|
-| Conteggio chiamate non classificate audio |Numero di chiamate|Numero di chiamate che coinvolgono l'audio che non è stato possibile classificare come buoni o poveri.|
-| Audio Poor Call Percentage |Percentuale di chiamate|Percentuale di chiamate che coinvolgono l'audio Classificato come scadente.|
+| Conteggio chiamate audio | Numero |Numero di chiamate che coinvolgono l'audio. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|
+| Conteggio chiamate audio scadente|Numero  |Numero di chiamate che coinvolgono l'audio Classificato come scadente. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|
+| Conteggio chiamate audio ottimali |Numero di chiamate|Numero di chiamate che coinvolgono l'audio Classificato come valido. Per questa misura è presente un errore di 0,2%. Vedere le note seguenti per i dettagli.|
+| Conteggio chiamate non classificate audio |Numero di chiamate|Numero di chiamate che coinvolgono l'audio che non è stato possibile classificare come buoni o poveri. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|
+| Audio Poor Call Percentage |Percentuale di chiamate|Percentuale di chiamate che coinvolgono l'audio Classificato come scadente. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|
 |AppSharing Stream Count |Numero di flussi |Numero di flussi di condivisione applicazioni basati su RDP. |
 |AppSharing Poor Due To SpoiledTilePercentTotal Count |Numero di flussi |Numero di flussi di condivisione delle applicazioni in cui la metrica del riquadro viziato per la percentuale di metri totali supera le soglie elencate qui: [classificazione del flusso nel dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md). |
 |AppSharing Poor Due To RelativeOneWayAverage Count |Numero di flussi |Numero di flussi di condivisione delle applicazioni in cui la metrica del riquadro viziato per la percentuale di metri totali supera le soglie elencate qui: [classificazione del flusso nel dashboard qualità chiamata](stream-classification-in-call-quality-dashboard.md). |
@@ -662,18 +662,18 @@ Molti valori di misurazione possono essere usati anche come filtri. La tabella s
 | Media glitch MIC second rate|Numero di glitch|Media del secondo tasso di glitch MIC (glitch per 5 minuti per il microfono dell'endpoint) per il flusso. ||
 | AVG primo altoparlante tasso di glitch|Numero di glitch|Tasso di glitch primo altoparlante medio (glitch per 5 minuti per l'altoparlante endpoint) per il flusso. |
 | AVG secondo tasso di glitch speaker|Numero di glitch|Media del secondo tasso di glitch altoparlante (glitch per 5 minuti per l'altoparlante endpoint) per il flusso. |
-| Numero primo utente|Numero | Numero di utenti del primo endpoint univoci o distinti.| |
-| Conteggio utenti secondo|Numero|Numero di utenti di endpoint di secondo tipo univoci o distinti.|
+| Numero primo utente|Numero | Numero di utenti del primo endpoint univoci o distinti. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.| 
+| Conteggio utenti secondo|Numero|Numero di utenti di endpoint di secondo tipo univoci o distinti. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|
 | Rapporto sugli eventi di AVG First Device Glitches|Percentuale|Frazione media delle chiamate che il primo endpoint ha rilevato glitch o lacune nei contenuti multimediali riprodotti o acquisiti che hanno causato la scarsa qualità del contenuto multimediale inviato o ricevuto.|
 | Rapporto sugli eventi di AVG Second Device Glitches|Percentuale|Frazione media della chiamata che il secondo endpoint ha rilevato glitch o lacune nel contenuto multimediale riprodotto o acquisito che ha causato la scarsa qualità del contenuto multimediale inviato o ricevuto.|
 | Numero di eventi Glitches First Device|Numero di flussi in cui il primo endpoint ha rilevato anomalie o lacune significativi nei contenuti multimediali riprodotti o acquisiti che causavano la scarsa qualità del contenuto multimediale inviato o ricevuto.||
 | Conteggio eventi glitch del secondo dispositivo|Numero di flusso in cui il secondo endpoint ha rilevato glitch o lacune significativi nel contenuto multimediale riprodotto o acquisito che ha causato la scarsa qualità del contenuto multimediale inviato o ricevuto.||
-| Conteggio dei tentativi totali PSTN | Numero di chiamate | Totale chiamate tentate, incluse le chiamate e le chiamate non riuscite nell'intervallo di tempo selezionato.|
-|Conteggio connessioni totali PSTN | Numero di chiamate | Totale chiamate connesse correttamente nell'intervallo di tempo selezionato.|
-|Conteggio dei tentativi in ingresso PSTN | Numero di chiamate | Totale chiamate in ingresso tentate, incluse le chiamate e le chiamate non riuscite nell'intervallo di tempo selezionato.|
-|Conteggio connesso in ingresso PSTN | Numero di chiamate | Totale chiamate connesse correttamente in ingresso nell'intervallo di tempo selezionato.|
-|Conteggio tentativi in uscita PSTN | Numero di chiamate | Totale chiamate in uscita tentate, incluse le chiamate e le chiamate non riuscite nell'intervallo di tempo selezionato.|
-|Conteggio connesso in uscita PSTN | Numero di chiamate | Totale chiamate connesse correttamente in uscita nell'intervallo di tempo selezionato.|
+| Conteggio dei tentativi totali PSTN | Numero di chiamate | Totale chiamate tentate, incluse le chiamate e le chiamate non riuscite nell'intervallo di tempo selezionato. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|
+|Conteggio connessioni totali PSTN | Numero di chiamate | Totale chiamate connesse correttamente nell'intervallo di tempo selezionato. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|
+|Conteggio dei tentativi in ingresso PSTN | Numero di chiamate | Totale chiamate in ingresso tentate, incluse le chiamate e le chiamate non riuscite nell'intervallo di tempo selezionato. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|
+|Conteggio connesso in ingresso PSTN | Numero di chiamate | Totale chiamate connesse correttamente in ingresso nell'intervallo di tempo selezionato. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|
+|Conteggio tentativi in uscita PSTN | Numero di chiamate | Totale chiamate in uscita tentate, incluse le chiamate e le chiamate non riuscite nell'intervallo di tempo selezionato. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|
+|Conteggio connesso in uscita PSTN | Numero di chiamate | Totale chiamate connesse correttamente in uscita nell'intervallo di tempo selezionato. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|
 |Minuti totali PSTN | Minuti | Minuti totali | Utilizzo totale dei minuti nell'intervallo di tempo selezionato.|
 |Minuti totali in ingresso PSTN | Minuti | Totale dei minuti in entrata nell'intervallo di tempo selezionato.|
 |Minuti totali in uscita PSTN | Minuti | Utilizzo totale minuti in uscita nell'intervallo di tempo selezionato.|
@@ -686,8 +686,13 @@ Molti valori di misurazione possono essere usati anche come filtri. La tabella s
 |Tasso di perdita di pacchetti P50 | Percentuale | 50% delle richieste dovrebbe avere un tasso di perdita di pacchetti inferiore a quello indicato.|
 |Ritardo della chiamata in uscita PSTN| Millisecondi | Il ritardo che si verifica sulle chiamate in uscita misurato a partire dal momento in cui un numero è stato composto fino a quando il chiamante o l'interlocutore non sente squillare.|
 |Ritardo della chiamata in arrivo PSTN | Millisecondi | Il tempo o il ritardo che si verifica sulle chiamate in arrivo misurato a partire dal momento in cui un numero è stato composto fino a quando il chiamante o l'interlocutore non sente la chiamata.|
-|Percentuale buona di NER PSTN | Percentuale | L'NER misura la capacità di una rete di consegnare le chiamate misurando il numero di chiamate inviate rispetto al numero di chiamate recapitate a un destinatario.<br/>NER = (risposte chiamate + utente occupato + squillo nessuna risposta + attacchi terminali)/tentativo totale chiamate x 100|
+|Percentuale buona di NER PSTN | Percentuale | L'NER misura la capacità di una rete di consegnare le chiamate misurando il numero di chiamate inviate rispetto al numero di chiamate recapitate a un destinatario.<br/>NER = (risposte chiamate + utente occupato + squillo nessuna risposta + terminazioni di rigetto)/tentativo totale chiama x 100. esiste un errore di 0,2% per questa misura. Per informazioni dettagliate, vedere la nota seguente.|
 ||||
+
+### <a name="notes-on-measurements"></a>Note sulle misure
+
+#### <a name="accuracy-limitations"></a>Limitazioni di precisione
+Alcune misure per l'utente e il conteggio delle chiamate si basano sull'esecuzione di un'operazione conta.se distinta nel set di dati per calcolare il conteggio. Attualmente esiste un errore fino a 0,2% inerente l'operazione conta.se distinta, a seconda del numero di righe in cui viene eseguita l'operazione. Per il volume più accurato, è consigliabile usare le misure di conteggio flussi poiché non si basano su questa operazione conta.se distinta. L'applicazione di filtri per ridurre il volume dei dati può ridurre l'errore, ma potrebbe non eliminare questa origine di errore in conteggi distinti per gli utenti e le chiamate. Per altre informazioni su questa limitazione, vedere la [funzione di aggregazione DB](https://docs.microsoft.com/azure/data-explorer/kusto/query/dcount-aggfunction).
 
 ## <a name="filters"></a>Filtri
 

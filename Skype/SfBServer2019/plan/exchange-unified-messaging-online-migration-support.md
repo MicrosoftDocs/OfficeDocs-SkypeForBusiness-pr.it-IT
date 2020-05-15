@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Microsoft sta ritirando il servizio di messaggistica unificata di Exchange Online (ExchUMO) entro il 28 febbraio 2020. In questo articolo vengono riepilogati i clienti coinvolti che devono conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: a28d8e1d9217773ec28c8f2afdf00cb1e16ae53c
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: cf8b62d4a36059a90631e139910dab3f9f40aa38
+ms.sourcegitcommit: 000515147632c6278bcda4505a1038014dda8e2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042833"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44232561"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata di Exchange Online
 
@@ -82,7 +82,7 @@ Microsoft ha individuato diverse distribuzioni dei clienti che utilizzano funzio
     Consultare una notifica nel centro notifiche di amministrazione con ulteriori dettagli e sequenza temporale sulla migrazione degli utenti. Le notifiche vengono inviate almeno 30 giorni prima del periodo di migrazione. 
 
     > [!Note]
-    > Se è stata ricevuta una notifica con la sequenza temporale della migrazione degli utenti e si desidera posticipare la migrazione per motivi aziendali, è possibile contattare il supporto tecnico Microsoft. Si noti che non è possibile posticipare la migrazione oltre la data di pensionamento, il 28 febbraio 2020. Per i clienti che potrebbero avere altre domande, contattare il team account o il supporto tecnico Microsoft. I clienti che già utilizzano Office 365 possono inviare un caso di supporto tramite l'interfaccia di amministrazione di Microsoft 365. 
+    > Se è stata ricevuta una notifica con la sequenza temporale della migrazione degli utenti e si desidera posticipare la migrazione per motivi aziendali, è possibile contattare il supporto tecnico Microsoft. Si noti che non è possibile posticipare la migrazione oltre la data di pensionamento, il 28 febbraio 2020. Per i clienti che potrebbero avere altre domande, contattare il team account o il supporto tecnico Microsoft. I clienti che già utilizzano Microsoft 365 o Office 365 possono inviare un caso di supporto tramite l'interfaccia di amministrazione di Microsoft 365. 
 
 6. **Considerare la possibilità di optare per una migrazione pianificata**
 
@@ -104,7 +104,7 @@ Microsoft ha individuato diverse distribuzioni dei clienti che utilizzano funzio
 
 ## <a name="auto-attendant-migration-guidelines"></a>Linee guida per la migrazione degli operatori automatici
 
-Gli amministratori dell'organizzazione di Office 365 sono tenuti a ricreare gli operatori automatici di messaggistica unificata di Exchange nel servizio Microsoft Cloud AutoAttendant e a scambiarli con i numeri di telefono locali prima del 28 febbraio 2020, ovvero quando il servizio UMO di Exchange verrà ritirato. Questa è la linea guida consigliata per eseguire correttamente la migrazione e testare nuovi operatori automatici cloud. Se si dispone di un numero elevato di operatori automatici, è possibile utilizzare l' [operatore automatico di messaggistica unificata di Exchange per gli script di migrazione degli operatori](https://github.com/NathanJBennett/ExUMAAMigrationToCloudAA) automatici del cloud per semplificare la migrazione in blocco degli operatori automatici.
+Gli amministratori dell'organizzazione di Microsoft 365 e Office 365 sono tenuti a ricreare gli operatori automatici di messaggistica unificata di Exchange nel servizio Microsoft Cloud Auto Attendant e a commutare i loro numeri di telefono locali prima del 28 febbraio 2020, ovvero quando il servizio UMO di Exchange verrà ritirato. Questa è la linea guida consigliata per eseguire correttamente la migrazione e testare nuovi operatori automatici cloud. Se si dispone di un numero elevato di operatori automatici, è possibile utilizzare l' [operatore automatico di messaggistica unificata di Exchange per gli script di migrazione degli operatori](https://github.com/NathanJBennett/ExUMAAMigrationToCloudAA) automatici del cloud per semplificare la migrazione in blocco degli operatori automatici.
 
 ### <a name="setup"></a>Configurazione
 

@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenze sono certificati per Microsoft teams per ottenere risultati ottimali.
-ms.openlocfilehash: 9a533b882da3298cdfd497e4f87b88e64a2d5ef4
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: 517cea81f2cbe47f43fe38b2761b774f49c425c4
+ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44041834"
+ms.lasthandoff: 05/14/2020
+ms.locfileid: "44230654"
 ---
 # <a name="ip-phones-certified-for-microsoft-teams"></a>Telefoni IP certificati per Microsoft Teams
 
@@ -48,8 +48,8 @@ I telefoni seguenti sono certificati per Microsoft teams:
 |:---|:---|:---|
 |AudioCodes C450HD | C450HD_TEAMS_0.225 | 2019 marzo|
 |AudioCodes C448HD (solo modalità CAP) | C450HD_TEAMS_0.225 | 2019 marzo|
-|Crestron M100|2.3875.00068|2018 dicembre|
-|Crestron Flex UC-P100-T & UC-P110-T  | 58.15.91.6 |2019 gennaio|
+|Crestron M100| Questo prodotto è stato interrotto. Per altre informazioni, visitare [Crestron M100](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Tabletop-Conferencing-Systems/UC-M100-T) nel sito Web di Crestron. | Interrotto da 5/11/2020|
+|Crestron Flex UC-P100-T & UC-P110-T  | Questo prodotto è stato interrotto. Per altre informazioni, visitare il sito Web del [telefono UC]( https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Accessories/UC-PHONE-T-PLUS) in Crestron. |Interrotto da 5/11/2020|
 |Visualizzazione ThinkSmart Lenovo|CD-18781Y. 200410.067|2020 aprile|
 |Poli CCX400 | 1.0.0.0200 | 2020 gennaio|
 |Poli CCX600 | 5.9.12.1111| 2020 gennaio|
@@ -86,3 +86,5 @@ Se si è un fornitore che cerca di partecipare al programma di certificazione, v
 Informazioni sui [programmi di certificazione di Skype for business e Microsoft teams](https://docs.microsoft.com/SkypeForBusiness/certification/overview).
 
 [Esplorare i telefoni Microsoft teams e i dispositivi certificati.](https://products.office.com/microsoft-teams/across-devices/devices)
+
+[Interoperabilità teams e Skype](teams-skype-interop.md)
