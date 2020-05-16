@@ -21,12 +21,12 @@ description: Informazioni su come gestire le assegnazioni nell'interfaccia di am
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ad9e3f8b0f2f3800c7394a9d4dc21fe7a2058426
-ms.sourcegitcommit: c16451519e05b47bbb77e09dacd13ff212617e91
+ms.openlocfilehash: 78ce963b8d675aa6d5c851c1081472559d24c3a3
+ms.sourcegitcommit: 296aeac481f901eb9d52b4f12a8c037afc49fa77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "42327998"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44256451"
 ---
 # <a name="assignments-in-teams-for-education"></a>Assegnare attività in Teams per l'istruzione
 
@@ -47,13 +47,15 @@ Questa impostazione è disinserita per impostazione predefinita.
 
 <a name="bkmakecode"> </a>
 ### <a name="makecode"></a>MakeCode
-MakeCode è una piattaforma di codifica basata su blocchi che consente di portare in vita l'informatica per tutti gli studenti. 
+Microsoft MakeCode è una piattaforma di codifica basata su blocchi che consente di portare in vita l'informatica per tutti gli studenti. 
 
-Si tratta di un prodotto o un servizio di terze parti soggetto ai propri termini e alla propria politica sulla privacy. L'utente è responsabile dell'uso di prodotti e servizi di terze parti.
+MakeCode è un prodotto Microsoft soggetto alle [condizioni d'uso](https://go.microsoft.com/fwlink/?LinkID=206977) e ai criteri di [privacy](https://go.microsoft.com/fwlink/?LinkId=521839) di Microsoft.
 
-Questa impostazione è disinserita per impostazione predefinita.
+Questa impostazione è disinserita per impostazione predefinita. Per abilitare le assegnazioni di MakeCode in teams, nell'interfaccia di **amministrazione di teams**passare alla sezione **assegnazioni** e attivare l'opzione toggle MakeCode **su**attivato. Fare clic su **Salva** e consentire fino a 24 ore per rendere effettive queste impostazioni.
 
-[Leggi altre informazioni su MakeCode](https://www.microsoft.com/makecode)
+Per altre informazioni sul funzionamento di questa funzionalità, vedere questa [dimostrazione video](https://makecode.com/blog/teams/teams-assignments).
+
+[Leggi altre informazioni su MakeCode](https://aka.ms/makecode)
 
 <a name="#turnitin"> </a>
 ### <a name="turnitin"></a>Turnitin
@@ -78,7 +80,7 @@ Selezionare **integrazioni** dal menu laterale, quindi fare clic su **Aggiungi i
 ![Screenshot che mostra l'aggiunta di una nuova integrazione](./educationImages/Assignments_mopo_turnitin2.png)
 
 Il TurnitinApiKey verrà assegnato dopo aver seguito le istruzioni. Copiare la chiave API e incollarla nell'interfaccia di amministrazione di Microsoft teams.  Questa è l'unica volta che è possibile visualizzare la chiave.
-![Screenshot che Mostra come copiare la chiave API](./educationImages/Assignments_mopo_turnitin3.png)
+![Schermata che mostra la copia della chiave API](./educationImages/Assignments_mopo_turnitin3.png)
 
 Quando si fa clic sul pulsante **Salva** nell'interfaccia di amministrazione per questa impostazione, consentire fino a 24 ore per rendere effettive queste impostazioni.
 

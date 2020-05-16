@@ -19,12 +19,12 @@ localization_priority: Normal
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0ed1e7d4f90fa1be96ac48f376c3cb1b939a39c4
-ms.sourcegitcommit: 3325fd9de57367e9dd60685d1fef096921441a76
+ms.openlocfilehash: f19cbbba6df7c43c69af35893466344e8df1d17d
+ms.sourcegitcommit: 296aeac481f901eb9d52b4f12a8c037afc49fa77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997187"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44256481"
 ---
 # <a name="microsoft-teams-apps-permissions-and-considerations"></a>Autorizzazioni e considerazioni sulle app di Microsoft Teams
 
@@ -57,7 +57,11 @@ Nessuno
 
 ### <a name="considerations"></a>Considerazioni
 
-Un'app deve rivelare i dati che usa e i dati usati per i collegamenti alle condizioni d'uso e ai criteri di privacy.</td>
+- Un'app deve rivelare i dati che usa e i dati usati per i collegamenti alle condizioni d'uso e ai criteri di privacy.
+
+- Il [consenso specifico della risorsa](resource-specific-consent.md) fornisce un set di autorizzazioni che possono essere richieste dalle app, visualizzate nella schermata di installazione dell'app. Per altre informazioni sulle autorizzazioni per il consenso specifiche delle risorse, vedere informazioni di [riferimento sulle autorizzazioni](https://docs.microsoft.com/graph/permissions-reference)per i grafici.
+
+- Le app possono anche avere bisogno di autorizzazioni diverse dalle autorizzazioni di consenso specifiche delle risorse. Dopo l'installazione di un'app, l'app può richiedere le autorizzazioni del grafico tramite una richiesta di consenso. Per altre informazioni, vedere [informazioni sulle esperienze di consenso dell'applicazione Azure ad](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience). È possibile configurare le autorizzazioni API e il consenso in Azure Portal. Per altre informazioni, Vedi [Framework di consenso di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/consent-framework).
 
 ## <a name="bots-and-messaging-extensions"></a>Bot e estensioni di messaggistica
 
@@ -95,7 +99,7 @@ Un'app deve rivelare i dati che usa e i dati usati per i collegamenti alle condi
 
 - È teoricamente possibile che i messaggi di bot contengano collegamenti a siti di phishing o malware, ma i bot possono essere bloccati dall'utente, dall'amministratore del tenant o globalmente da Microsoft.
 
-- Un bot può recuperare (e potrebbe archiviare) informazioni di identità molto basilari per i membri del team a cui è stata aggiunta l'app o per singoli utenti in chat personali o di gruppo. Per ottenere altre informazioni su questi utenti, il bot deve richiedere l'accesso a Azure Active Directory (Azure AD)
+- Un bot può recuperare (e potrebbe archiviare) informazioni di identità molto basilari per i membri del team a cui è stata aggiunta l'app o per singoli utenti in chat personali o di gruppo. Per ottenere altre informazioni su questi utenti, il bot deve richiedere l'accesso a Azure Active Directory (Azure AD).
 
 - I bot possono recuperare (e potrebbero archiviare) l'elenco dei canali in un team; questi dati lasciano la rete aziendale.
 

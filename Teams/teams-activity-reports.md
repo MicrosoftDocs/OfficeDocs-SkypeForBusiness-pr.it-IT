@@ -18,12 +18,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 01f9ecbbce3146a2b5d36a70b485a2106f12ab6e
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: f1eb02b7755ecfaa78b3b5ad511f45052a7807b5
+ms.sourcegitcommit: 296aeac481f901eb9d52b4f12a8c037afc49fa77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43902351"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44256391"
 ---
 <a name="use-activity-reports-for-microsoft-teams"></a>Usare i report attività per Microsoft Teams 
 ========================================
@@ -32,7 +32,7 @@ ms.locfileid: "43902351"
 
 ## <a name="how-to-view-the-teams-reports-in-the-reports-dashboard"></a>Come visualizzare i report Teams nel dashboard report
 
-1. Nell'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/adminportal/home)selezionare **Reports** > **utilizzo**report.
+1. Nell'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/adminportal/home)selezionare **Reports**  >  **utilizzo**report.
  
 2. Nella pagina **utilizzo** scegliere **Seleziona un report**e quindi in **Microsoft teams** nell'elenco dei report scegliere il report che si vuole visualizzare.
 
@@ -101,7 +101,7 @@ I report attività possono essere raggiunti dagli utenti assegnati:
 
 ### <a name="reports-reader-role"></a>Ruolo lettore report
 
-È possibile assegnare il ruolo di *lettore report* al personale non it a cui si vuole accedere ai report. Assegnando questo ruolo ai responsabili della formazione o agli stakeholder aziendali, puoi assicurarti che abbiano accesso alle informazioni utili per guidare e tenere traccia dei team.
+È possibile assegnare il ruolo di *lettore report* al personale non it a cui si vuole accedere ai report. Assegnando questo ruolo ai responsabili della formazione o agli stakeholder aziendali, puoi assicurarti che abbiano accesso alle informazioni utili per guidare e tenere traccia dei team. Per informazioni su come assegnare ruoli, vedere [assegnare ruoli di amministratore e di amministratore agli utenti con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).
 
 ## <a name="other-information-on-the-reports-dashboard"></a>Altre informazioni nel dashboard report
 

@@ -16,12 +16,12 @@ f1.keywords:
 description: Configurare l'ottimizzazione multimediale locale per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 518445e10b757adc9a21c426fb885bb04b7a878b
-ms.sourcegitcommit: b143611d14765af054a4f84cca52e2003d35af1a
+ms.openlocfilehash: c3da3cf243b24d0f614c05e9d09eb68796a68545
+ms.sourcegitcommit: 296aeac481f901eb9d52b4f12a8c037afc49fa77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44047855"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44256491"
 ---
 # <a name="configure-local-media-optimization-for-direct-routing"></a>Configurare l'ottimizzazione multimediale locale per il routing diretto
 
@@ -52,7 +52,7 @@ Per configurare l'utente e i siti SBC, sarà necessario:
 
 ## <a name="configure-sbcs-for-local-media-optimization-according-to-the-sbc-vendor-specification"></a>Configurare SBC per l'ottimizzazione di elementi multimediali locali in base alla specifica del fornitore SBC
 
-Questo articolo descrive la configurazione per i componenti Microsoft. Per informazioni sulla configurazione di SBC, vedere il fornitore di SBC documentazione.
+Questo articolo descrive la configurazione per i componenti Microsoft. Per informazioni sulla configurazione di SBC, vedere la documentazione del fornitore SBC.
 
 L'ottimizzazione media locale è supportata dai seguenti fornitori di SBC:
 
@@ -108,7 +108,7 @@ Tutti i parametri sono maiuscole/minuscole, quindi devi assicurarti di usare lo 
 
 ### <a name="define-network-regions"></a>Definire le aree di rete
 
-Per definire le aree di rete, usare il cmdlet New-CsTenantNetworkRegion. Il parametro RegionID è un nome logico che rappresenta la geografia dell'area geografica e non ha dipendenze o restrizioni. Il parametro <site ID> CentralSite è facoltativo.
+Per definire le aree di rete, usare il cmdlet New-CsTenantNetworkRegion. Il parametro RegionID è un nome logico che rappresenta la geografia dell'area geografica e non ha dipendenze o restrizioni. Il <site ID> parametro CentralSite è facoltativo.
 
 ```
 New-CsTenantNetworkRegion -NetworkRegionID <region ID>  
@@ -228,7 +228,7 @@ La tabella seguente mostra la configurazione e l'azione degli utenti finali:
 
 | Posizione fisica dell'utente| L'utente effettua o riceve una chiamata a/da numero | Numero di telefono dell'utente  | Criteri di routing vocale online | Modalità configurata per SBC |
 |:------------|:-------|:-------|:-------|:-------|
-| Vietnam | + 84 4 3926 3000 | + 84 4 5555 5555   | Priorità 1: ^\+84 (\d{9}) $-VNsbc.contoso.com <br> Priorità 2:. *-proxysbc.contoso.com   | VNsbc.contoso.com-ignora sempre <br> proxysbc.contoso.com-ignora sempre
+| Vietnam | + 84 4 3926 3000 | + 84 4 5555 5555   | Priorità 1: ^ \+ 84 (\d {9} ) $-VNsbc.contoso.com <br> Priorità 2:. *-proxysbc.contoso.com   | VNsbc.contoso.com-ignora sempre <br> proxysbc.contoso.com-ignora sempre
 
 
 Il diagramma seguente mostra la scala SIP per una chiamata in uscita con la modalità di bypass sempre e l'utente nella stessa posizione di SBC.
@@ -239,7 +239,7 @@ La tabella seguente mostra le intestazioni X-MS inviate tramite routing diretto:
 
 | Parametro | Spiegazione |
 |:------------|:-------|
-| Invitare + 8443926300@VNsbc.contoso.com | Il nome di destinazione dell'SBC come definito nei criteri di routing vocale online viene inviato nell'URI della richiesta | 
+| Invitare + 8443926300@VNsbc.contoso.com | Il nome di dominio completo di destinazione dell'oggetto SBC definito nei criteri di routing vocale online viene inviato nell'URI della richiesta | 
 | X-MS-UserLocation: Internal | Il campo indica che l'utente si trova all'interno della rete aziendale |
 | X-MS-MediaPath: VNsbc.contoso.com |   Specifica il SBC che deve essere attraversato dal client al SBC di destinazione. In questo caso, come abbiamo sempre bypassare, e il client è interno il nome di destinazione inviato come unico nome nell'intestazione. | 
 |X-MS-UserSite: Vietnam |   Campo indicato nel sito in cui si trova l'utente. |
@@ -277,7 +277,7 @@ La tabella seguente mostra le intestazioni X-MS inviate dal servizio di routing 
 
 | Parametro |   Spiegazione |
 |:------------|:-------|
-|Invitare + 8443926300@VNsbc.contoso.com | Il nome di destinazione dell'SBC come definito nei criteri di routing vocale online viene inviato nell'URI della richiesta.|
+|Invitare + 8443926300@VNsbc.contoso.com | Il nome di dominio completo di destinazione dell'SBC come definito nei criteri di routing vocale online viene inviato nell'URI della richiesta.|
 | X-MS-UserLocation: esterno | Il campo indica che l'utente si trova all'esterno della rete aziendale. |
 | X-MS-MediaPath: proxysbc.contoso.com, VNsbc.contoso.com    | Specifica il SBC che deve essere attraversato dal client al SBC di destinazione. In questo caso, come abbiamo sempre bypassare, e il client è esterno. |
 
@@ -309,7 +309,7 @@ La tabella seguente mostra la configurazione e l'azione degli utenti finali:
 
 | Posizione fisica dell'utente |  L'utente effettua o riceve una chiamata a/da numero |  Numero di telefono dell'utente | Criteri di routing vocale online |   Modalità configurata per SBC |
 |:------------|:-------|:-------|:-------|:-------|
-| Vietnam | + 84 4 3926 3000 |  + 84 4 5555 5555 | Priorità 1: ^\+84 (\d{9}) $-VNsbc.contoso.com <br> Priorità 2:. *-proxysbc.contoso.com | VNsbc.contoso.com-OnlyForLocalUsers Proxysbc.contoso.com-ignora sempre |
+| Vietnam | + 84 4 3926 3000 |  + 84 4 5555 5555 | Priorità 1: ^ \+ 84 (\d {9} ) $-VNsbc.contoso.com <br> Priorità 2:. *-proxysbc.contoso.com | VNsbc.contoso.com-OnlyForLocalUsers Proxysbc.contoso.com-ignora sempre |
 
 #### <a name="outbound-calls-and-the-user-is-in-the-same-location-as-the-sbc-with-only-for-local-users"></a>Le chiamate in uscita e l'utente si trova nella stessa posizione del SBC con solo per gli utenti locali
 

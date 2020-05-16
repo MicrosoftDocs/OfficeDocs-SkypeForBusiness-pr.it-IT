@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: 4a61d2563a63d2dc8d1b55bbf0bbc6c52230d900
-ms.sourcegitcommit: c3f44fccdbd9178d30b52bb0db6f6d31a6dd174b
+ms.openlocfilehash: a2c921da824bdbbcd6b0f6baf49887e55df08ca9
+ms.sourcegitcommit: 296aeac481f901eb9d52b4f12a8c037afc49fa77
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139210"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "44256501"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -46,7 +46,7 @@ I criteri riunione vengono usati per controllare le funzionalità disponibili pe
 Per impostazione predefinita, viene creato un criterio denominato Globale (predefinito a livello di organizzazione). Il criterio di riunione Globale viene assegnato per impostazione predefinita a tutti gli utenti dell'organizzazione. È possibile modificarlo o creare uno o più criteri personalizzati e assegnarli agli utenti. Se non si creano e assegnano criteri personalizzati, gli utenti riceveranno il criterio Globale. Quando si crea un criterio personalizzato, è possibile consentire o impedire che determinate funzionalità siano disponibili per gli utenti e quindi assegnarlo a uno o più utenti ai quali verranno applicate le impostazioni.
 
 > [!NOTE]
-> Il pulsante Dettagli riunione sarà disponibile se l'utente ha abilitato le licenze per le conferenze audio o se l'utente è autorizzato a ricevere servizi di audioconferenza, in caso contrario, i dettagli della riunione non saranno disponibili
+> Il pulsante Dettagli riunione sarà disponibile se l'utente ha abilitato le licenze per le conferenze audio o se l'utente è autorizzato a ricevere servizi di audioconferenza, in caso contrario, i dettagli della riunione non saranno disponibili.
 
 ## <a name="change-or-create-a-meeting-policy"></a>Modificare o creare un criterio di riunione
 
@@ -327,7 +327,7 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 
 ### <a name="let-anonymous-people-start-a-meeting"></a>Consenti alle persone anonime di avviare una riunione
 
-Questo è un criterio per organizzatore. Questa impostazione controlla se gli utenti anonimi, inclusi gli utenti B2B e federati, possono partecipare alla riunione dell'utente in assenza di un utente autenticato dell'organizzazione. 
+Questo è un criterio per organizzatore. Questa impostazione controlla se gli utenti anonimi, inclusi gli utenti B2B e federati, possono partecipare alla riunione dell'utente in assenza di un utente autenticato dell'organizzazione. Il valore predefinito è False.
 
 ![Screenshot che mostra un messaggio a un utente in attesa](media/meeting-policies-anonymous-user-lobby.png)
 
@@ -365,11 +365,11 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
 |---------|---------|
 |**Tutti**   |Tutti i partecipanti accedono direttamente alla riunione senza passare dalla sala di attesa. Sono inclusi utenti autenticati, utenti federati, guest, utenti anonimi e utenti che effettuano l'accesso tramite telefono.       |
 |**Tutti gli utenti dell'organizzazione e delle organizzazioni federate**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti di organizzazioni federate, accedono direttamente alla riunione senza passare dalla sala di attesa.  Gli utenti anonimi e quelli che effettuano l'accesso tramite telefono aspettano in sala di attesa.   |
-|**Tutti gli utenti dell'organizzazione**    |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa.  Gli utenti federati, gli utenti anonimi e quelli che effettuano l'accesso tramite telefono aspettano in sala di attesa.           |
+|**Tutti gli utenti dell'organizzazione**    |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa.  Gli utenti federati, gli utenti anonimi e quelli che effettuano l'accesso tramite telefono aspettano in sala di attesa. Questa è l'impostazione predefinita.           |
 
 ### <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa
 
-Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**.
+Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Il valore predefinito è False.
 
 Ecco il comportamento di partecipazione degli utenti che effettuano l'accesso tramite telefono.
 
@@ -402,6 +402,16 @@ Questo è un criterio per organizzatore. Questa impostazione determina se la cha
 
 <a name="bkparticipantsandguests"> </a>
 
+## <a name="meeting-policy-settings---meeting-attendance-report"></a>Impostazioni dei criteri riunione-report presenza riunione
+
+Questo è un criterio per utente. Questa impostazione controlla se gli organizzatori della riunione possono scaricare il [report presenza riunione](teams-analytics-and-reports/meeting-attendance-report.md).
+
+Al momento, è possibile usare PowerShell solo per configurare questa impostazione di criteri. È possibile modificare un criterio di riunione di team esistenti usando il cmdlet [set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy) . In alternativa, crea un nuovo criterio riunione teams usando il cmdlet [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) e assegnalo agli utenti.
+
+Per consentire a un organizzatore di una riunione di scaricare il report presenza riunione, imposta il parametro **AllowEngagementReport** su **Enabled**. Quando è abilitata, l'opzione per scaricare il report viene visualizzata nel riquadro **partecipanti** .
+
+Per impedire a un organizzatore di una riunione di scaricare il report, imposta il parametro su **disabled**. Per impostazione predefinita, questa impostazione è disabilitata e l'opzione per scaricare il report non è disponibile.
+
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Criteri di messaggistica in Teams](messaging-policies-in-teams.md)
+- [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
