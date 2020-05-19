@@ -21,12 +21,12 @@ ms.custom: ms.teamsadmincenter.policypackages.overview
 localization_priority: Priority
 search.appverid: MET150
 description: Informazioni sui criteri in un ambiente Education, o EDU, e su come usare e gestire i pacchetti di criteri in Microsoft Teams.
-ms.openlocfilehash: 7aab40ce5cd3e82d884faffea29c0a1f47be6d26
-ms.sourcegitcommit: c3f44fccdbd9178d30b52bb0db6f6d31a6dd174b
+ms.openlocfilehash: c602327321319c9924501d7879abcadf2a2c019e
+ms.sourcegitcommit: 5a88788bd0a0b2ccbc5b977b38dcfe4681cd5d10
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139229"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278189"
 ---
 # <a name="teams-policies-and-policy-packages-for-education"></a>Criteri e pacchetti di criteri di Teams per l'istruzione
 
@@ -269,8 +269,14 @@ Queste impostazioni consentiranno ai docenti di controllare l'accesso alle riuni
 - **Consenti alle persone anonime di avviare una riunione**: **disattivato**
 - **Ammetti automaticamente le persone**: **Tutti gli utenti dell'organizzazione**
 - **Consenti agli utenti che chiamano di ignorare la sala di attesa**: **disattivato**
+- <sup>1</sup>**DesignatedPresenterRoleMode**: **OrganizerOnlyUserOverride**
 
-### <a name="message-policies"></a>Criteri di messaggistica
+<sup>1</sup> Questa impostazione non è presente nell'interfaccia di amministrazione di Microsoft Teams, quindi è necessario usare PowerShell per impostare il parametro **DesignatedPresenterRoleMode** usando il cmdlet [Set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy) o [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy). Imposta il valore predefinito dell'impostazione **Chi può essere un relatore?** nelle **Opzioni riunione** in Teams su **Solo io**. Con questa opzione, solo l'organizzatore della riunione può essere un relatore, mentre tutti gli altri partecipanti alla riunione sono designati come partecipanti. Per altre informazioni, vedere [Impostazioni dei criteri di riunione - Modalità ruolo relatore designato](meeting-policies-in-teams.md#meeting-policy-settings---designated-presenter-role-mode).
+
+> [!NOTE]
+> Per i membri del personale che non sono docenti, è possibile impostare il parametro su **EveryoneUserOverride**, che corrisponde all'impostazione **Tutti** in Teams, o su **EveryoneInCompanyUserOverride**, che corrisponde all'impostazione **Utenti dell'organizzazione** in Teams.
+
+### <a name="messaging-policies"></a>Criteri di messaggistica
 
 Impostare l'opzione **I proprietari possono eliminare i messaggi inviati** come **attivata** permetterà ai docenti di monitorare le sessioni di chat e rimuovere i messaggi non appropriati nelle riunioni di canale.
 
