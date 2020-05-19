@@ -64,8 +64,8 @@
 ### [Gestire le app personalizzate](manage-your-custom-apps.md)
 ### [Certificazione delle app](/teams-app-certification/all-apps?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
 ### [Modelli di app per Teams](https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
-### [Gestire l'app Attività per l'organizzazione](manage-tasks-app.md)
 ### [Configurare la gerarchia di destinazione del team](set-up-your-team-hierarchy.md)
+### [Gestire l'app Attività per l'organizzazione](manage-tasks-app.md)
 ### [Configurare l'app Riunioni Skype per Teams](configure-skype-meetings-app-to-work-with-teams.md)
 
 ## Comunicare con utenti esterni
@@ -604,6 +604,7 @@
 # Istruzioni per industrie ed enti pubblici
 ## [Panoramica](expand-teams-across-your-org/expand-teams-across-your-organization-landing-page.md)
 ## [Introduzione ai modelli di Teams](get-started-with-teams-templates.md)
+## [App Bookings e visite virtuali](bookings-app-admin.md)
 ## [Turni per Teams](expand-teams-across-your-org/shifts-for-teams-landing-page.md)
 ### [Ritiro di Microsoft StaffHub](expand-teams-across-your-org/shifts/microsoft-staffhub-to-be-retired.md)
 ### [Installare il modulo di PowerShell Microsoft StaffHub](expand-teams-across-your-org/shifts/install-the-staffhub-powershell-module.md)
@@ -628,7 +629,7 @@
 ## [Teams per l'istruzione](expand-teams-across-your-org/teams-for-education-landing-page.md)
 ### [Guida introduttiva per amministratori - Teams per l'istruzione](teams-quick-start-edu.yml)
 ### [Iniziare a usare l'apprendimento a distanza](remote-learning-edu.md)
-### [Pacchetti di criteri di Microsoft Teams per l'istruzione per amministratori](policy-packages-edu.md)
+### [Criteri e pacchetti di criteri di Teams per l'istruzione](policy-packages-edu.md)
 ### [Assegnare criteri a grandi gruppi di utenti](batch-policy-assignment-edu.md)
 ### [Indicazioni per larghezza di banda ridotta per gli amministratori dell'istruzione](edu-remote-low-bandwidth.md)
 ### [Assegnare attività in Teams per l'istruzione](expand-teams-across-your-org/assignments-in-teams.md)
@@ -763,12 +764,12 @@
 
 
 ## Dispositivi supportati
-### [Gestire i dispositivi in Teams](device-management.md)
-### [Telefoni per Teams](phones-for-teams.md)
+### [Gestire i dispositivi in Teams](devices/device-management.md)
+### [Telefoni per Teams](devices/phones-for-teams.md)
+### [Dispositivi video e audio USB](devices/usb-devices.md)
 ### [Distribuire barre di collaborazione per Microsoft Teams](devices/collab-bar-deploy.md)
-### [Dispositivi video e audio USB](/skypeforbusiness/certification/devices-usb-devices?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
 ### [Soluzioni e dispositivi per sala riunioni](/skypeforbusiness/certification/devices-meeting-rooms?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
-### [Telefoni IP certificati per Microsoft Teams](teams-ip-phones.md)
+### [Telefoni IP certificati per Microsoft Teams](devices/teams-ip-phones.md)
 ### [Telefoni per Skype for Business Online](/SkypeForBusiness/what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/deploying-skype-for-business-online-phones?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
 
 
