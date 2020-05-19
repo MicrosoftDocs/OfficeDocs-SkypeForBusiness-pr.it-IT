@@ -15,12 +15,12 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2bb8133733f7230715753ecea0118fc635af446b
-ms.sourcegitcommit: 6e24ea8aa9cccf8a1a964c8ed414ef5c7de3dc17
+ms.openlocfilehash: 26e4ee05b9f94fa0883aef5bbe98b691c9e0c46d
+ms.sourcegitcommit: 5a88788bd0a0b2ccbc5b977b38dcfe4681cd5d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159003"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278169"
 ---
 # <a name="set-up-your-team-targeting-hierarchy"></a>Configurare la gerarchia di destinazione del team
 
@@ -57,7 +57,7 @@ Il file CSV deve contenere le tre colonne seguenti, nell'ordine seguente, a part
 ----------------|----------|---------------|
 | TargetName    | Sì      | Questo è il nome del nodo. Il nome può contenere fino a 100 caratteri di lunghezza e contiene solo i caratteri A-Z, a-z e 0-9. I nomi dei nodi devono essere univoci. |
 | ParentName    | Sì       | Questo è il nome del nodo padre. Il valore specificato in questa posizione deve corrispondere esattamente al valore nel campo TargetName del nodo padre. Se si vogliono aggiungere più nodi padre, separare ogni nome di nodo padre con un punto e virgola (;). È possibile aggiungere fino a 25 nodi padre e ogni nome di nodo padre può contenere fino a 2500 caratteri di lunghezza. Un nodo può avere più nodi padre solo se i nodi padre sono nodi radice.   <br><br>**Importante** Prestare attenzione a non creare un ciclo in cui un elemento padre più in alto nella gerarchia fa riferimento a un nodo figlio inferiore nella gerarchia. Questo non è supportato. |
-| TeamID        | Sì, se il team pubblica attività o riceve attività da un nodo padre       | Contiene l'ID del team a cui si vuole collegare un nodo. Un nodo deve essere collegato a un team se si trova nella parte inferiore della gerarchia, se si vuole che gli utenti possano pubblicare da tale nodo o se si vuole che gli utenti possano vedere la creazione di report per il nodo e i relativi discendenti. Ad esempio, se il tuo Manager per l'area della West Region vuole visualizzare i report di completamento delle attività per i nodi che appartengono all'area geografica.<br><br>Se si vuole aggiungere un nodo solo per il raggruppamento di altri nodi nella gerarchia, non è necessario collegare tale nodo a un team e non è possibile lasciarlo vuoto. È possibile collegare ogni nodo a un solo team.<br>Per ottenere l'ID di un team a cui si vuole collegare un nodo, eseguire il comando di PowerShell seguente `Get-Team | Export-Csv TeamList.csv`:. In questo articolo vengono elencati i team dell'organizzazione e sono inclusi il nome e l'ID per ogni team. Individuare il nome del team a cui si vuole creare il collegamento e quindi copiare l'ID in questo campo.|
+| TeamId        | Sì, se il team pubblica attività o riceve attività da un nodo padre       | Contiene l'ID del team a cui si vuole collegare un nodo. Un nodo deve essere collegato a un team se si trova nella parte inferiore della gerarchia, se si vuole che gli utenti possano pubblicare da tale nodo o se si vuole che gli utenti possano vedere la creazione di report per il nodo e i relativi discendenti. Ad esempio, se il tuo Manager per l'area della West Region vuole visualizzare i report di completamento delle attività per i nodi che appartengono all'area geografica.<br><br>Se si vuole aggiungere un nodo solo per il raggruppamento di altri nodi nella gerarchia, non è necessario collegare tale nodo a un team e non è possibile lasciarlo vuoto. È possibile collegare ogni nodo a un solo team.<br>Per ottenere l'ID di un team a cui si vuole collegare un nodo, eseguire il comando di PowerShell seguente: `Get-Team | Export-Csv TeamList.csv` . In questo articolo vengono elencati i team dell'organizzazione e sono inclusi il nome e l'ID per ogni team. Individuare il nome del team a cui si vuole creare il collegamento e quindi copiare l'ID in questo campo.|
 
 ### <a name="add-attribute-columns"></a>Aggiungere colonne di attributi
 
@@ -90,14 +90,14 @@ Quando si aggiunge una colonna bucket, tenere presente quanto segue:
 
 Ecco un esempio di file CSV dello schema che verrebbe creato per supportare la gerarchia visualizzata nell'immagine precedente. Questo schema contiene gli elementi seguenti:
 
-- Tre colonne obbligatorie denominate `TargetName` `ParentName`e`TeamID`
-- Tre colonne attributo denominate `Store layout` `Departments:Clothing`e`Departments:Foods`
-- Tre colonne del bucket `Fresh Foods`denominate `Frozen Foods`e`Womenswear`
+- Tre colonne obbligatorie denominate `TargetName` `ParentName` e`TeamId`
+- Tre colonne attributo denominate `Store layout` `Departments:Clothing` e`Departments:Foods`
+- Tre colonne del bucket denominate `Fresh Foods` `Frozen Foods` e`Womenswear`
 
-L' `Store layout` attributo contiene valori che includono `Compact`, `Standard`e `Large`. Le `Departments` colonne dell'attributo possono essere impostate su un valore `0` (zero) o `1`. Il `Store` layout e `Departments` gli attributi non vengono visualizzati nell'immagine precedente. Sono stati aggiunti qui per mostrare come aggiungere attributi alle voci di nodo. Lo stesso vale per le tre colonne del bucket.
+L' `Store layout` attributo contiene valori che includono `Compact` , `Standard` e `Large` . Le `Departments` colonne dell'attributo possono essere impostate su un valore `0` (zero) o `1` . Il `Store` layout e `Departments` gli attributi non vengono visualizzati nell'immagine precedente. Sono stati aggiunti qui per mostrare come aggiungere attributi alle voci di nodo. Lo stesso vale per le tre colonne del bucket.
 
 
-| TargetName             | ParentName                      | TeamID                       | Layout dello Store|Reparti: Abbigliamento|Reparti: alimenti|#Fresh alimenti|#Frozen alimenti|#Womenswear|
+| TargetName             | ParentName                      | TeamId                       | Layout dello Store|Reparti: Abbigliamento|Reparti: alimenti|#Fresh alimenti|#Frozen alimenti|#Womenswear|
 |------------------------|-------------------------|--------------------------------------|-------------|---|---|---|---|---|
 | Richiamare                 |                         | db23e6ba-04a6-412a-95e8-49e5b01943ba |||||||
 | Comunicazioni         |                         | 145399ce-a761-4843-a110-3077249037fc |||||||

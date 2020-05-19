@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: a2c921da824bdbbcd6b0f6baf49887e55df08ca9
-ms.sourcegitcommit: 296aeac481f901eb9d52b4f12a8c037afc49fa77
+ms.openlocfilehash: 2b7579b9dfe1d70c0a570d6ca519491a263e9f09
+ms.sourcegitcommit: 5a88788bd0a0b2ccbc5b977b38dcfe4681cd5d10
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44256501"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44278199"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -401,6 +401,23 @@ Questo è un criterio per utente e si applica durante una riunione. Questa impos
 Questo è un criterio per organizzatore. Questa impostazione determina se la chat della riunione è consentita nella riunione dell'utente.
 
 <a name="bkparticipantsandguests"> </a>
+
+## <a name="meeting-policy-settings---designated-presenter-role-mode"></a>Impostazioni dei criteri riunione-modalità ruolo relatore designato
+
+Questo è un criterio per utente. Questa impostazione consente di modificare il valore predefinito dell'utente **che può presentare** l'impostazione in **Opzioni riunione** nel client teams. Questa impostazione del criterio ha effetto su tutte le riunioni, incluse le riunioni di riunione ora.
+
+**Chi può presentarsi?** l'impostazione consente agli organizzatori della riunione di scegliere chi può essere relatore in una riunione. Per altre informazioni, vedere [modificare le impostazioni dei partecipanti per una riunione di Team](https://support.microsoft.com/article/change-participant-settings-for-a-teams-meeting-53261366-dbd5-45f9-aae9-a70e6354f88e) e [ruoli in una riunione teams](https://support.microsoft.com/article/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019).
+
+Al momento, è possibile usare PowerShell solo per configurare questa impostazione di criteri. È possibile modificare un criterio di riunione di team esistenti usando il cmdlet [set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy) . In alternativa, crea un nuovo criterio riunione teams usando il cmdlet [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) e assegnalo agli utenti.
+
+Per specificare il valore predefinito dell'utente **che può presentare** l'impostazione in teams, imposta il parametro **DesignatedPresenterRoleMode** su una delle opzioni seguenti:
+
+- **EveryoneUserOverride**: tutti i partecipanti alla riunione possono essere relatori. Questo è il valore predefinito. Questo parametro corrisponde all'impostazione **Everyone** in teams.
+- **EveryoneInCompanyUserOverride**: gli utenti autenticati dell'organizzazione, inclusi gli utenti guest, possono essere relatori. Questo parametro corrisponde all'impostazione **utenti nell'organizzazione** in teams.
+- **EveryoneInSameAndFederatedCompanyUserOverride**: gli utenti autenticati dell'organizzazione, inclusi gli utenti guest e gli utenti provenienti da organizzazioni federate, possono essere relatori. Questo parametro corrisponde all'impostazione **utenti dell'organizzazione e delle organizzazioni attendibili** in teams.
+- **OrganizerOnlyUserOverride**: solo l'organizzatore della riunione può essere un relatore e tutti i partecipanti alla riunione sono designati come partecipanti. Questo parametro corrisponde all'impostazione **solo me** in teams.
+
+Tieni presente che dopo aver impostato il valore predefinito, gli organizzatori della riunione possono comunque modificare questa impostazione in teams e scegliere chi può presentare nelle riunioni che pianificano.
 
 ## <a name="meeting-policy-settings---meeting-attendance-report"></a>Impostazioni dei criteri riunione-report presenza riunione
 

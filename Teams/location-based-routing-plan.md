@@ -16,12 +16,12 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0c341b808890ecc1d3b237ae70190aad9d1de8ea
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 9c3d5f4eb0cd63dd252d5fcc01bff21f8643a788
+ms.sourcegitcommit: ebdad71a8d393466e33a2fdc8606d882a6007588
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836546"
+ms.lasthandoff: 05/18/2020
+ms.locfileid: "44280275"
 ---
 # <a name="plan-location-based-routing-for-direct-routing"></a>Pianificare l'instradamento basato sulla posizione per Instradamento diretto
 
@@ -133,7 +133,7 @@ Il trasferimento delle chiamate richiede che l'utente che inizia a prendere la c
 
 #### <a name="user-not-enabled-for-location-based-routing"></a>Utente non abilitato per il routing basato sulla posizione
 
-Un utente che non è abilitato per il routing basato sulla posizione può trasferire o inoltrare chiamate PSTN ad altri utenti non abilitati per il routing basato sulla posizione. L'utente in genere non è autorizzato a trasferire o inoltrare una chiamata PSTN a un utente abilitato per il routing basato sulla posizione, perché gli utenti abilitati per il routing basato sulla posizione sono in genere consentiti solo per essere congiunti in gateway abilitati al routing basato sulla posizione per PSTN chiamate. L'eccezione è quando un routing basato sulla posizione ha abilitato il roaming di un utente a un sito non abilitato per il routing basato sulla posizione. In questo scenario, la chiamata trasferita è consentita.  
+Un utente che non è abilitato per il routing basato sulla posizione può trasferire o inoltrare chiamate PSTN ad altri utenti non abilitati per il routing basato sulla posizione. L'utente in genere non è autorizzato a trasferire o inoltrare una chiamata PSTN a un utente abilitato per il routing basato sulla posizione, perché gli utenti abilitati al routing basato sulla posizione sono in genere consentiti solo per essere congiunti in gateway abilitati al routing basato sulla posizione per le chiamate PSTN. L'eccezione è quando un routing basato sulla posizione ha abilitato il roaming di un utente a un sito non abilitato per il routing basato sulla posizione. In questo scenario, la chiamata trasferita è consentita.  
 
 Allo stesso modo, un utente che non è abilitato per il routing basato sulla posizione può ricevere solo una chiamata PSTN transfer o Forwarded da un altro utente che non è abilitato per il routing basato sulla posizione. 
 
@@ -249,6 +249,10 @@ Il routing basato sulla posizione non si applica ai tipi di interazioni seguenti
 ### <a name="location-based-routing-for-conferencing"></a>Routing basato sulla posizione per i servizi di conferenza
 
 Un utente abilitato al routing basato sulla posizione su una chiamata PSTN non è autorizzato ad avviare una conferenza con un altro utente o un numero PSTN. La connessione agli operatori automatici o alle code di chiamata è consentita. Se l'utente ha una licenza per conferenze, l'utente deve avviare una conferenza con gli utenti pertinenti e chiamare la rete PSTN tramite il Bridge conferenza per avviare una conferenza telefonica.  
+
+### <a name="media-bypass-requirement-for-location-based-routing"></a>Requisiti per il bypass multimediale per il routing basato sulla posizione
+
+Se si sta distribuendo il routing basato sulla posizione in India, è necessario configurare anche il bypass multimediale. Per altre informazioni, vedere [pianificare il bypass multimediale con routing diretto](direct-routing-plan-media-bypass.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 
