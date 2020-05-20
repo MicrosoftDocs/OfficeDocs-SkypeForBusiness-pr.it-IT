@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4d9e288037b82b3d5b0cccab133debdfa2d7d66b
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: a836ac2e2c5e461e8c2feacda4bfd3b569593a6a
+ms.sourcegitcommit: 1a6b4efad1e6a958cdbaae4b0e2e231145c9658f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042213"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "44321615"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -32,7 +32,7 @@ Il componente aggiuntivo Riunione di Teams consente agli utenti di pianificare u
 
 ## <a name="teams-meeting-add-in-in-outlook-for-windows"></a>Componente aggiuntivo Riunione di Teams in Outlook per Windows
 
-Il componente aggiuntivo Riunione di Teams viene installato automaticamente per gli utenti che hanno Microsoft Teams e Office 2010, Office 2013 oppure Office 2016 nel loro PC Windows. Gli utenti vedranno il componente aggiuntivo Riunione di Teams sulla barra multifunzione del Calendario di Outlook.
+Il componente aggiuntivo riunione teams viene installato automaticamente per gli utenti che dispongono di Microsoft teams e Office 2013, Office 2016 o Office 2019 installato nel PC Windows. Gli utenti vedranno il componente aggiuntivo Riunione di Teams sulla barra multifunzione del Calendario di Outlook.
 
 ![Screenshot del componente aggiuntivo Riunione di Teams sulla barra multifunzione di Outlook](media/Teams-add-in-for-Outlook.png)
 
@@ -65,12 +65,12 @@ Il pulsante Riunione di Teams compare nelle build più recenti dell'app di Outlo
 Le coordinate della riunione, ossia il collegamento per unirsi a Teams e i numeri telefonici di accesso esterno, verranno aggiunte all'invito alla riunione dopo che l'utente avrà fatto clic su **Invia**.  
 
 ## <a name="teams-meeting-add-in-in-and-findtime-for-outlook"></a>Componente aggiuntivo Riunione di Teams in TrovaOrario per Outlook
-TrovaOrario è un componente aggiuntivo per Outlook che aiuta gli utenti a raggiungere un consenso tra le aziende per stabilire l’orario di riunione. Una volta che gli invitati della riunione hanno fornito il loro orario preferito, TrovaOrario invia l'invito alla riunione per conto dell'utente. Se viene selezionata l'opzione **Riunione online** in TrovaOrario, verrà programmata una riunione di Skype for Business o di Microsoft Teams. (TrovaOrario userà qualsiasi opzione impostata dall'organizzazione come canale predefinito per le riunioni online.)
+FindTime è un componente aggiuntivo per Outlook che consente agli utenti di raggiungere il consenso in un periodo di riunione tra le aziende. Una volta che gli invitati della riunione hanno fornito il loro orario preferito, TrovaOrario invia l'invito alla riunione per conto dell'utente. Se viene selezionata l'opzione **Riunione online** in TrovaOrario, verrà programmata una riunione di Skype for Business o di Microsoft Teams. (TrovaOrario userà qualsiasi opzione impostata dall'organizzazione come canale predefinito per le riunioni online.)
 
 > [!NOTE]  
 > Se è stato impostato Skype for Business nella [dashboard di TrovaOrario](https://findtime.microsoft.com/UserDashboard), verrà usata questa impostazione anziché Microsoft Teams. Se si vuole usare Microsoft Teams, eliminare l'opzione Skype for Business nella dashboard.
 
-Per altre informazioni, vedere [Pianificare riunioni con TrovaOrario](https://support.office.com/article/scheduling-meetings-with-findtime-4dc806ed-fde3-4ea7-8c5e-b5d1fddab4a6).
+Per altre informazioni, vedere [pianificare le riunioni con FindTime](https://support.office.com/article/scheduling-meetings-with-findtime-4dc806ed-fde3-4ea7-8c5e-b5d1fddab4a6).
 
 ## <a name="authentication-requirements"></a>Requisiti di autenticazione
 
@@ -103,7 +103,7 @@ Quando gli utenti in modalità Isole pianificano una riunione in Outlook, in gen
 | Isole | Skype for Business |
 | Solo Skype for Business | Skype for Business |
 | Collaborazione di Skype for Business con Teams | Skype for Business |
-| Collaborazione e riunioni di Skype for Business con Teams | Teams |
+| Collaborazione e riunioni di Skype for Business con Teams | Team |
 | Solo Teams | Teams |
 
 ## <a name="other-considerations"></a>Altre considerazioni
@@ -128,7 +128,8 @@ Se non si riesce a trovare il componente aggiuntivo Riunione di Teams per Outloo
 - Verificare che l'utente disponga di un criterio di aggiornamento di teams che consente la pianificazione delle riunioni in teams. Per altre informazioni, vedere [eseguire l'aggiornamento da Skype for business a teams](https://docs.microsoft.com/microsoftteams/upgrade-to-teams-on-prem-overview#meetings) .
 - Verificare che l'utente disponga di un criterio di riunione teams che consenta il componente aggiuntivo per Outlook. Per altre informazioni, vedere [gestire i criteri di riunione in teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams#allow-the-outlook-add-in) .
 - Verificare che l'utente abbia installato il client desktop teams. Il componente aggiuntivo riunione non verrà installato quando si usa solo il client Web teams.
-- Verificare che l'utente disponga delle autorizzazioni per l'esecuzione di regsvr32. exe.  Per altre informazionihttps://support.microsoft.com/help/249873/how-to-use-the-regsvr32-tool-and-troubleshoot-regsvr32-error-messages
+- Verificare che l'utente abbia installato Outlook 2013 o versione successiva.
+- Verificare che l'utente disponga delle autorizzazioni per l'esecuzione di regsvr32. exe.
 - Verificare che siano stati applicati tutti gli aggiornamenti disponibili per il client desktop Outlook.
 - Eseguire la procedura seguente:
   - Riavviare il client desktop di Teams.
