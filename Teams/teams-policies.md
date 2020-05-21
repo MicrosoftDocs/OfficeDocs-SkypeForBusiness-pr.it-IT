@@ -24,24 +24,24 @@ ms.custom:
 - ms.teamsadmincenter.teamsandchannelpolicies.overview
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.discover
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.create
-ms.openlocfilehash: dc3d5fa4880f3255017b535657a4a32a51789c82
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 392bbb3c97cf32e815f81073bf662d4d6280ae75
+ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836966"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326653"
 ---
 # <a name="manage-teams-policies-in-microsoft-teams"></a>Gestire i criteri dei team in Microsoft Teams
 
 Come amministratore, puoi usare i criteri di teams in Microsoft teams per controllare gli utenti che possono eseguire in team e canali. Ad esempio, puoi impostare se gli utenti possono scoprire team privati nei risultati della ricerca e nella raccolta team e se gli utenti possono creare canali privati.
 
-Per gestire i criteri dei team, è possibile **passare a** > **criteri** teams teams nell'interfaccia di amministrazione di Microsoft teams. Puoi usare il criterio globale (predefinito per l'intera organizzazione) o creare criteri personalizzati e assegnarli agli utenti. Gli utenti dell'organizzazione otterranno automaticamente il criterio globale a meno che non si creino e non si assegnano criteri personalizzati.
+Per gestire i criteri dei team, è possibile **passare a**criteri teams teams nell'interfaccia di amministrazione di  >  **Teams policies** Microsoft teams. È possibile usare il criterio globale (predefinito per l'intera organizzazione) o creare criteri personalizzati e assegnarli agli utenti. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato.
 
-È possibile modificare i criteri globali oppure creare e assegnare criteri personalizzati. Se a un utente viene assegnato un criterio personalizzato, tale criterio si applica all'utente. Se a un utente non viene assegnato un criterio personalizzato, il criterio globale si applica all'utente. Dopo aver modificato il criterio globale o assegnato un criterio, possono essere necessarie fino a 24 ore affinché le modifiche abbiano effetto.
+È possibile modificare i criteri globali oppure creare e assegnare criteri personalizzati. Se a un utente viene assegnato un criterio personalizzato, tale criterio si applica all'utente. Se a un utente non viene assegnato un criterio personalizzato, il criterio globale si applica all'utente. Dopo aver modificato il criterio globale o assegnato un criterio, è possibile che le modifiche abbiano effetto.
 
 ## <a name="create-a-custom-teams-policy"></a>Creare un criterio teams personalizzato
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, **Vai a** > **criteri**teams teams.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, **Vai a**  >  **criteri**teams teams.
 2. Fare clic su **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio.
 
@@ -51,13 +51,13 @@ Per gestire i criteri dei team, è possibile **passare a** > **criteri** teams t
 - **Scoprire team privati**:<a name="discoverteams"> </a> attivare questa impostazione per consentire agli utenti di individuare team privati nei risultati della ricerca e nella raccolta team.
 - **Creare canali privati**: <a name="createchannels"> </a>attivare questa impostazione per consentire agli utenti di creare canali privati.
 
-5. Fai clic su **Salva**.
+5. Fare clic su **Salva**.
 
 ## <a name="edit-a-teams-policy"></a>Modificare un criterio Teams
 
 È possibile modificare il criterio globale o i criteri personalizzati creati.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, **Vai a** > **criteri**teams teams.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, **Vai a**  >  **criteri**teams teams.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
 3. Attivare o disattivare le impostazioni desiderate e quindi fare clic su **Salva**.
 
@@ -73,12 +73,12 @@ Per gestire i criteri dei team, è possibile **passare a** > **criteri** teams t
 
 Per assegnare un criterio teams personalizzato a più utenti alla volta, vedere [modificare le impostazioni utente di teams in blocco](edit-user-settings-in-bulk.md).
 
-In alternativa, è anche possibile eseguire le operazioni seguenti:
+Si può anche procedere nel modo seguente:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, **Vai a** > **criteri**teams teams.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, **Vai a**  >  **criteri**teams teams.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
-3. Selezionare **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o per nome utente, selezionare il nome e quindi fare clic su **Aggiungi**. Ripetere questo passaggio per ogni utente che si vuole aggiungere.
+3. Scegliere **Gestisci utenti**.
+4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 5. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
 
 ### <a name="assign-a-custom-teams-policy-to-users-in-a-group"></a>Assegnare criteri Team personalizzati agli utenti di un gruppo

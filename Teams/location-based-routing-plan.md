@@ -16,12 +16,12 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9c3d5f4eb0cd63dd252d5fcc01bff21f8643a788
-ms.sourcegitcommit: ebdad71a8d393466e33a2fdc8606d882a6007588
+ms.openlocfilehash: 6f72360f4462a64e357d58489aa70203bf10c532
+ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280275"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326643"
 ---
 # <a name="plan-location-based-routing-for-direct-routing"></a>Pianificare l'instradamento basato sulla posizione per Instradamento diretto
 
@@ -252,7 +252,7 @@ Un utente abilitato al routing basato sulla posizione su una chiamata PSTN non �
 
 ### <a name="media-bypass-requirement-for-location-based-routing"></a>Requisiti per il bypass multimediale per il routing basato sulla posizione
 
-Se si sta distribuendo il routing basato sulla posizione in India, è necessario configurare anche il bypass multimediale. Per altre informazioni, vedere [pianificare il bypass multimediale con routing diretto](direct-routing-plan-media-bypass.md).
+Se si sta distribuendo il routing basato sulla posizione in India, è necessario configurare anche il bypass multimediale. Per altre informazioni, vedere [pianificare l'esclusione di elementi multimediali con routing diretto](direct-routing-plan-media-bypass.md) e [ottimizzazione di elementi multimediali locali per il routing diretto](direct-routing-media-optimization.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

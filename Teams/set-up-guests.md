@@ -17,19 +17,19 @@ f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e634c58d34787a76477591ab4262c703e5773cbe
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: e434a85693226252ecef2a5b4c251024524e698f
+ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43903791"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326563"
 ---
 <a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso Guest a Microsoft Teams
 ===================================================
 
 L'accesso guest è disabilitato per impostazione predefinita. Come amministratore di Office 365, è necessario attivare l'accesso guest per i team prima che l'amministratore o i proprietari del team possano aggiungere Guest. Per attivare l'accesso guest, usare l' [elenco di controllo di accesso Guest](guest-access-checklist.md). 
 
-Dopo aver attivato l'accesso guest, potrebbero essere necessarie un paio di ore per applicare le modifiche. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che l'accesso guest non sia stato attivato o che le impostazioni non siano ancora valide.
+Dopo aver attivato l'accesso guest, potrebbe essere necessario qualche ora affinché le modifiche abbiano effetto. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che l'accesso guest non sia stato attivato o che le impostazioni non siano ancora valide.
 
 > [!IMPORTANT]
 > L'attivazione dell'accesso guest dipende dalle impostazioni in Azure Active Directory, Office 365, SharePoint Online e teams. Per altre informazioni, vedere [autorizzare l'accesso guest in teams](Teams-dependencies.md).
@@ -40,7 +40,7 @@ Dopo aver attivato l'accesso guest, potrebbero essere necessarie un paio di ore 
 
 1.    Accedere all'interfaccia di amministrazione di Microsoft teams.
 
-2.    Selezionare > **l'accesso Guest** **delle impostazioni a livello di organizzazione**.
+2.    Selezionare l'accesso Guest **delle impostazioni a livello di organizzazione**  >  **Guest access**.
 
 3. Impostare **Consenti accesso guest in Microsoft teams** **su**attivato.
 

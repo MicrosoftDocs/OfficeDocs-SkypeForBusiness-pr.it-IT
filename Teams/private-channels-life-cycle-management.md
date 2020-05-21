@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire il ciclo di vita dei canali privati nell'organizzazione.
-ms.openlocfilehash: 154cde6ad8371b2d9f902bf3803f48e72ade0a77
-ms.sourcegitcommit: 1a6b4efad1e6a958cdbaae4b0e2e231145c9658f
+ms.openlocfilehash: 45d9591eed2bd3a880d3ca3e2ceb2252bf6f8898
+ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44321701"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326693"
 ---
 # <a name="manage-the-life-cycle-of-private-channels-in-microsoft-teams"></a>Gestire il ciclo di vita dei canali privati in Microsoft Teams
 
@@ -180,7 +180,11 @@ Puoi provare questi comandi tramite [Esplora grafico](https://developer.microsof
 
 È consigliabile elencare i proprietari e i membri di un canale privato per decidere se è necessario promuovere alcuni membri del canale privato con un proprietario. Questo problema può verificarsi quando si hanno proprietari di canali privati che hanno lasciato l'organizzazione e il canale privato richiede all'amministratore la guida per rivendicare la proprietà del canale.
 
-Come amministratore, puoi usare i comandi delle API di PowerShell o Graph per eseguire query su questi URL.
+Gli amministratori possono usare l'API di Microsoft teams Center, PowerShell o Graph per eseguire queste azioni.
+
+### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
+
+Per informazioni su come gestire i membri del team con l'interfaccia di amministrazione di Microsoft teams, vedere [gestire team nell'interfaccia di amministrazione di Microsoft teams](manage-teams-in-modern-portal.md).
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 

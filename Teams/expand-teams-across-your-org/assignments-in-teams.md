@@ -21,12 +21,12 @@ description: Informazioni su come gestire le assegnazioni nell'interfaccia di am
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 78ce963b8d675aa6d5c851c1081472559d24c3a3
-ms.sourcegitcommit: 296aeac481f901eb9d52b4f12a8c037afc49fa77
+ms.openlocfilehash: 61caf4bc59387fd5c00cabf459976506b97ef9a0
+ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44256451"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326763"
 ---
 # <a name="assignments-in-teams-for-education"></a>Assegnare attività in Teams per l'istruzione
 
@@ -51,7 +51,7 @@ Microsoft MakeCode è una piattaforma di codifica basata su blocchi che consente
 
 MakeCode è un prodotto Microsoft soggetto alle [condizioni d'uso](https://go.microsoft.com/fwlink/?LinkID=206977) e ai criteri di [privacy](https://go.microsoft.com/fwlink/?LinkId=521839) di Microsoft.
 
-Questa impostazione è disinserita per impostazione predefinita. Per abilitare le assegnazioni di MakeCode in teams, nell'interfaccia di **amministrazione di teams**passare alla sezione **assegnazioni** e attivare l'opzione toggle MakeCode **su**attivato. Fare clic su **Salva** e consentire fino a 24 ore per rendere effettive queste impostazioni.
+Questa impostazione è disinserita per impostazione predefinita. Per abilitare le assegnazioni di MakeCode in teams, nell'interfaccia di **amministrazione di teams**passare alla sezione **assegnazioni** e attivare l'opzione toggle MakeCode **su**attivato. Fare clic su **Salva** e attendere alcune ore per rendere effettive queste impostazioni.
 
 Per altre informazioni sul funzionamento di questa funzionalità, vedere questa [dimostrazione video](https://makecode.com/blog/teams/teams-assignments).
 
@@ -82,6 +82,6 @@ Selezionare **integrazioni** dal menu laterale, quindi fare clic su **Aggiungi i
 Il TurnitinApiKey verrà assegnato dopo aver seguito le istruzioni. Copiare la chiave API e incollarla nell'interfaccia di amministrazione di Microsoft teams.  Questa è l'unica volta che è possibile visualizzare la chiave.
 ![Schermata che mostra la copia della chiave API](./educationImages/Assignments_mopo_turnitin3.png)
 
-Quando si fa clic sul pulsante **Salva** nell'interfaccia di amministrazione per questa impostazione, consentire fino a 24 ore per rendere effettive queste impostazioni.
+Dopo aver fatto clic sul pulsante **Salva** nell'interfaccia di amministrazione per questa impostazione, attendere alcune ore per rendere effettive queste impostazioni.
 
 Pronti per iniziare a usare l'integrazione di Turnitin in teams? Iscriversi al [programma Early Access](https://www.turnitin.com/products/feedback-studio/microsoft-teams-integration).

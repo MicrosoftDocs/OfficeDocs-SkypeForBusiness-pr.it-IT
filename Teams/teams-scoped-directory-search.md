@@ -19,12 +19,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6b06e675e93dd022847fc7af202045c3ecdebe63
-ms.sourcegitcommit: 6cfaadec5782ca7316db36472bd0be20217da693
+ms.openlocfilehash: e81e2fb588e718060ffbdf90a51c020ff2d6556c
+ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/29/2020
-ms.locfileid: "42341778"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326593"
 ---
 # <a name="use-microsoft-teams-scoped-directory-search"></a>Usare la ricerca nella directory con ambito di Microsoft Teams
 
@@ -51,7 +51,7 @@ Per informazioni su come usare i criteri Rubrica, leggere i [criteri di barriera
 
 1. Usare i criteri di barriera delle informazioni per configurare l'organizzazione in sottogruppi virtuali. Per altre informazioni, vedere [definire i criteri di barriera delle informazioni](https://docs.microsoft.com/microsoft-365/compliance/information-barriers-policies).
 
-2. Nell'interfaccia di amministrazione di Microsoft teams selezionare impostazioni per i**Team**di **Impostazioni** > a livello di organizzazione.
+2. Nell'interfaccia di amministrazione di Microsoft teams selezionare impostazioni per i team di **impostazioni a livello di organizzazione**  >  **Teams settings**.
 
 3. In **ricerca**, accanto a **ricerca directory ambito in teams con i criteri di Rubrica di Exchange (SOA)**, attivare l' **attivazione.**
 
@@ -59,4 +59,4 @@ Per informazioni su come usare i criteri Rubrica, leggere i [criteri di barriera
 
 
 > [!IMPORTANT]
-> Questa modifica può richiedere fino a 24 ore per la replica.
+> Questa modifica può richiedere alcune ore per la replica.

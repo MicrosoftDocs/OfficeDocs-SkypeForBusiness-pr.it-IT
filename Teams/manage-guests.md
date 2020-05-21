@@ -17,18 +17,18 @@ description: Informazioni su come creare i primi team e i nuovi canali, a bordo 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 544dcb4ffd424512797d3791e2eda6b22439c084
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 83f4e4cdff4515f89a5b3fe68c91d848f9ae5dda
+ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43777841"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326453"
 ---
 <a name="manage-guest-access-in-microsoft-teams"></a>Gestire l'accesso guest in Microsoft Teams
 ======================================
 
 > [!IMPORTANT]
-> Possono essere necessarie fino a 24 ore prima che le modifiche diventino effettive. 
+> Potrebbe essere necessario attendere qualche ora affinché le modifiche abbiano effetto. 
 
 **Guest** è un tipo di utente in Microsoft teams incluso in tutti gli abbonamenti a Microsoft 365 business standard, Office 365 Enterprise, Microsoft 365 Business Basic e Office 365 Education. Non sono necessarie altre licenze di Office 365. Leggi altre informazioni sulla [gestione delle licenze di accesso Guest](#guest-access-licensing-limits) di seguito.
 
@@ -38,7 +38,7 @@ Dopo che l'accesso Guest è attivato, è possibile configurare le impostazioni p
     
 Gli amministratori IT possono aggiungere ospiti a livello di tenant, impostare e gestire i criteri e le autorizzazioni degli utenti guest e tirare i report sulle attività degli utenti guest. Questi controlli sono disponibili nell'interfaccia di amministrazione di teams. I contenuti e le attività degli utenti Guest rientrano nella stessa protezione di conformità e controllo del resto di Office 365.
 
-I proprietari del team possono invitare nuovi ospiti e aggiungere utenti Guest Directory esistenti ai loro team nell'interfaccia di amministrazione di teams. Identificare gli utenti guest nella **pagina teams** > **Manage teams** e impostare le funzionalità relative ai canali per gli ospiti nella pagina di**accesso Guest** **delle impostazioni** > a livello di organizzazione. Le impostazioni includono consentire agli utenti di creare, aggiornare ed eliminare canali, come illustrato nella figura seguente.
+I proprietari del team possono invitare nuovi ospiti e aggiungere utenti Guest Directory esistenti ai loro team nell'interfaccia di amministrazione di teams. Identificare gli utenti guest nella pagina **Teams**  >  **Manage teams** e impostare le funzionalità relative ai canali per gli ospiti nella pagina di accesso Guest **delle impostazioni a livello di organizzazione**  >  **Guest access** . Le impostazioni includono consentire agli utenti di creare, aggiornare ed eliminare canali, come illustrato nella figura seguente.
 
 ![Impostazioni delle autorizzazioni guest in teams](media/manage-guest-access-image1.png)
   
@@ -64,7 +64,7 @@ Le recensioni di Access sono disponibili con l'edizione Premium P2 di Azure AD, 
 
 ## <a name="lag-time-for-guest-access-settings-to-take-effect"></a>Tempo di ritardo per l'effetto delle impostazioni di accesso Guest
 
-Per le impostazioni di accesso guest in Azure Active Directory, sono necessarie 2-24 ore affinché le modifiche abbiano effetto su Microsoft 365 o Office 365. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che la caratteristica Guest non sia stata attivata o che le impostazioni non siano ancora valide. Per informazioni sui problemi di configurazione dell'accesso guest, leggere [risolvere i problemi di accesso guest in teams](troubleshoot-guest-access.md).
+Per le impostazioni di accesso guest in Azure Active Directory, le modifiche apportate in Microsoft 365 o Office 365 richiedono alcune ore. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che la caratteristica Guest non sia stata attivata o che le impostazioni non siano ancora valide. Per informazioni sui problemi di configurazione dell'accesso guest, leggere [risolvere i problemi di accesso guest in teams](troubleshoot-guest-access.md).
 
   
 ## <a name="external-access-federation-vs-guest-access"></a>Accesso esterno (federazione) e accesso guest

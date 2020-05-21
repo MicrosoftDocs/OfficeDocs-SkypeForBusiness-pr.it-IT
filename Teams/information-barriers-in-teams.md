@@ -16,12 +16,12 @@ description: In questo articolo vengono illustrati gli ostacoli alle informazion
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2bbe2f38fe56e6952952730b7ba74dda1a98398f
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 1cf6b2fc8c103b8a27bca2d21dd2138def88ce06
+ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904978"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326743"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -64,7 +64,7 @@ Il servizio di valutazione dei criteri barriera delle informazioni determina se 
 I criteri di barriera delle informazioni vengono gestiti nel centro conformità Microsoft 365 (SCC) usando i cmdlet di PowerShell. Per altre informazioni, vedere [definire i criteri per le barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies).
 
 > [!IMPORTANT]
-> Prima di configurare o definire i criteri, **è necessario abilitare la ricerca di directory con ambito in Microsoft teams**. Attendere almeno 24 ore dopo l'abilitazione della ricerca nell'ambito della directory prima di configurare o definire i criteri per le barriere informative. Leggi [altre informazioni sui prerequisiti per le barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies#prerequisites).
+> Prima di configurare o definire i criteri, **è necessario abilitare la ricerca di directory con ambito in Microsoft teams**. Attendere almeno qualche ora dopo l'abilitazione della ricerca nell'ambito della directory prima di configurare o definire i criteri per le barriere informative. Leggi [altre informazioni sui prerequisiti per le barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies#prerequisites).
 
 ## <a name="information-barriers-administrator-role"></a>Ruolo amministratore barriere informative
 

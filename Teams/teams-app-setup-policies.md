@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 89b1a8a756cba44435098e5cd446294004029eac
-ms.sourcegitcommit: b5c747e2daad6dd3c1d91f4e61ae6f26db5c77f0
+ms.openlocfilehash: 3cbf3ec38876d57fe1c2b8ac61abf5b86d5c2106
+ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064481"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326773"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
@@ -58,7 +58,7 @@ Per includere le app desiderate, è possibile modificare le impostazioni del cri
 
 Puoi usare l'interfaccia di amministrazione di Microsoft teams per creare criteri personalizzati.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di configurazione**delle **app teams**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai criteri di configurazione delle **app teams**  >  **Setup policies**.
 2. Fare clic su **Aggiungi**.
     ![Schermata che mostra la pagina Aggiungi criteri di configurazione dell'app](media/app-setup-policies-add.png)
 3. Immettere un nome e una descrizione per il criterio.
@@ -86,7 +86,7 @@ Puoi usare l'interfaccia di amministrazione di Microsoft teams per creare criter
 
 È possibile usare l'interfaccia di amministrazione di Microsoft teams per modificare un criterio, inclusi i criteri globali (a livello di organizzazione) e i criteri personalizzati creati.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di configurazione**delle **app teams**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai criteri di configurazione delle **app teams**  >  **Setup policies**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
 3. Da qui apportare le modifiche desiderate.
 4. Fare clic su **Salva**.
@@ -105,7 +105,7 @@ Per assegnare un criterio a più utenti alla volta, vedere [modificare le impost
 
 Si può anche procedere nel modo seguente:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai > **criteri di configurazione**delle **app teams**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai criteri di configurazione delle **app teams**  >  **Setup policies**.
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
 3. Scegliere **Gestisci utenti**.
 4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
@@ -161,7 +161,7 @@ Il numero di app pinne che è possibile aggiungere a un criterio non contiene al
 
 #### <a name="how-long-does-it-take-for-policy-changes-to-take-effect"></a>Quanto tempo occorre per applicare le modifiche ai criteri?
 
-Dopo aver modificato il criterio globale o assegnato un criterio, possono essere necessarie fino a 24 ore affinché le modifiche abbiano effetto.
+Dopo aver modificato il criterio globale o assegnato un criterio, è possibile che le modifiche abbiano effetto.
 
 ### <a name="user-experience"></a>Esperienza utente
 

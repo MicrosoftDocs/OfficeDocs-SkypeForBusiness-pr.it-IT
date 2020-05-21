@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 04627c74528972aad69b1e810e222f55cae49588
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 9d91731792dd049f76d781c4a0be08e92d09e0bb
+ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43902581"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326603"
 ---
 <a name="microsoft-teams-guest-access-checklist"></a>Elenco di controllo per l'accesso guest in Microsoft Teams
 =========================================
@@ -31,7 +31,7 @@ ms.locfileid: "43902581"
 Usare questo elenco di controllo per attivare e configurare l'accesso guest in Microsoft Teams. Per apportare queste modifiche è necessario essere un amministratore globale o un amministratore di Teams.
 
 > [!IMPORTANT]
-> Potrebbe essere necessario attendere un paio di ore perché le modifiche abbiano effetto. 
+> Potrebbe essere necessario attendere qualche ora affinché le modifiche abbiano effetto. 
 
 Guardare questo breve video (5:31 minuti) per scoprire come attivare l'accesso guest in tutto Microsoft 365, incluso Teams.
 
@@ -39,7 +39,7 @@ Guardare questo breve video (5:31 minuti) per scoprire come attivare l'accesso g
 
 ## <a name="step-1-turn-on-guest-access-at-the-teams-org-wide-level"></a>Passaggio 1: attivare l'accesso guest a livello di organizzazione di Teams
 
-Per attivare l'accesso guest, passare all'**interfaccia di amministrazione di Microsoft Teams**. 
+Per attivare l'accesso guest, accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> . 
 
 1. Nell'interfaccia di amministrazione di Teams selezionare **Impostazioni organizzazione** > **Accesso guest**.
 2. Impostare il selettore **Consenti accesso ospite in Teams** su **Attivato**.
@@ -78,7 +78,7 @@ Queste sono le impostazioni di Azure AD che supportano l'accesso guest in Teams.
 
 ## <a name="step-3-configure-microsoft-365-groups"></a>Passaggio 3: configurare i gruppi Microsoft 365
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, accedere a**Impostazioni** **Impostazioni** > , fare clic su **Servizi**e quindi selezionare **gruppi Microsoft 365**.
+1. Nell'interfaccia di amministrazione di Microsoft 365, accedere **Settings**a  >  **Impostazioni**impostazioni, fare clic su **Servizi**e quindi selezionare **gruppi Microsoft 365**.
 
      ![La schermata mostra le impostazioni dei gruppi di Microsoft 365](media/guest-access-checklist-services-settings.png)
 2. Assicurarsi che la casella di controllo **Consenti ai membri del gruppo esterni all'organizzazione di accedere al contenuto del gruppo** sia selezionata. In caso contrario, gli utenti guest non saranno in grado di accedere al contenuto del gruppo.
