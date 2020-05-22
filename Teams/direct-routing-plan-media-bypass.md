@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come pianificare il bypass multimediale con il routing diretto del sistema telefonico, che consente di ridurre il percorso del traffico multimediale e migliorare le prestazioni.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f5e053149670804e585d0cd61522f67a922b2b47
-ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
+ms.openlocfilehash: a4f8995c3972da8fd2d060b7083edb61138b97ac
+ms.sourcegitcommit: f63cf7fdde333a7cb36c39e9b6cdc33afd2b4601
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43918695"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44338246"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
@@ -140,7 +140,9 @@ Nel percorso multimediale per le applicazioni vocali | Sempre | Mai |
 Può eseguire la transcodifica (B2BUA)\* | Sì | No, inoltra solo l'audio tra gli endpoint | 
 Numero di istanze nel mondo e nella posizione | 8 totale: 2 in Stati Uniti Est e ovest; 2 in Amsterdam e Dublino; 2 a Hong Kong e Singapore; 2 in Giappone  | Più
 
-L'intervallo IP è 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254). 
+Gli intervalli IP sono:
+- 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
+- 52.120.0.0/14 (indirizzi IP da 52.120.0.1 a 52.123.255.254)
 
 \*Spiegazione della transcodifica: 
 

@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può ottenere informazioni su un elenco di problemi noti per le sale di Microsoft teams, tra cui l'aggiornamento, l'interfaccia utente, l'hardware e le limitazioni e i comportamenti previsti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d8f7dcd6453458885a35bdcf7b39e729cc776f5a
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: e3cb46ed1ca3fde81f301ec6c2f2f8620452b389
+ms.sourcegitcommit: f63cf7fdde333a7cb36c39e9b6cdc33afd2b4601
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905418"
+ms.lasthandoff: 05/21/2020
+ms.locfileid: "44338226"
 ---
 # <a name="known-issues"></a>Problemi noti 
  
@@ -33,6 +33,8 @@ Questo articolo elenca i problemi noti di Microsoft teams rooms, in base all'are
 |  ---        |      ---             |   ---            | --- |
 |  App obsoleta         |    La console Microsoft teams Rooms Mostra un errore "configurazione di sistema non aggiornata".                |   [Usare lo strumento di ripristino di Microsoft teams rooms](recovery-tool.md)             |  Nessuno |
 |  Dispositivo aggiornato alla versione non supportata di Windows 10   |    Dispositivo Windows 10 aggiornato dalla versione 1803 alla versione 1809, che non è supportato. La versione supportata è 1903. |   Questo problema può verificarsi se l'impostazione di [criteri di gruppo o MDM per](https://docs.microsoft.com/windows/deployment/update/waas-configure-wufb) l'impostazione di DeferFeatureUpdatesPeriodinDays, che consente di rinviare gli aggiornamenti delle caratteristiche per un numero specificato di giorni, viene impostata sul massimo di 365 giorni. <br><br> Windows 10 versione 1809 non è supportato con Microsoft teams rooms, mentre la versione 1903 è supportata. Tuttavia, a partire dal 27 marzo 2020, la versione 1809 è superiore a 365 giorni. Se questa impostazione non è cambiata, Windows tenta di installare la versione 1809, che può causare problemi con le sale di Microsoft teams.<br><br>Per evitare questa situazione, **rimuovere** qualsiasi impostazione di criteri di gruppo o MDM per rinviare gli aggiornamenti. In questo modo, Windows si aggiornerà con la versione più recente del sistema operativo supportata. <br><br>**Importante** L'impostazione criteri di gruppo o MDM deve essere **rimossa** (a sinistra non configurata) e **non impostata su 0**. Se il criterio è impostato su 0, Windows prende la versione più recente disponibile che potrebbe non essere supportata. |  Nessuno |
+| Applicazione non avviata |  Dopo l'aggiornamento alla versione dell'applicazione 4.4.41.0, il sistema si avvia allo schermo nero in cui può rimanere bloccato oppure passa alla schermata di accesso dopo pochi minuti. | Seguire i passaggi descritti in [Microsoft teams Rooms l'applicazione non viene avviata dopo l'aggiornamento alla versione 4.4.41.0](https://docs.microsoft.com/microsoftteams/troubleshoot/teams-administration/teams-rooms-app-wont-start-after-update) per risolvere il problema.  | Nessuno |
+
 
 <a name="OS-conflicts"> </a>  
 ## <a name="user-interface"></a>Interfaccia utente 
@@ -66,8 +68,6 @@ Usa sempre una connessione di rete a 1 Gbps cablata per assicurarti di avere la 
 ***
 
 Se il dispositivo Microsoft teams Rooms perde fiducia nel dominio, non sarà possibile eseguire l'autenticazione nel dispositivo e aprire le impostazioni. Se ad esempio si rimuovono le sale di Microsoft teams dal dominio dopo l'aggiunta di un dominio, l'attendibilità viene persa. La soluzione alternativa consiste nell'eseguire l'accesso con l'account di amministratore locale. 
-***
-La versione a 64 bit di Windows 10 Enterprise Anniversary Edition (lingua inglese, versione 1607) non è più supportata da Microsoft teams Rooms Release 3.0.12.0. 
 ***
 Microsoft teams Rooms è un'applicazione con più finestre e richiede la connessione di una facciata dello schermo della sala alla porta HDMI del dispositivo, perché l'app funzioni correttamente. Verificare che sia collegato uno schermo HDMI oppure usare un connettore HDMI fittizio se si sta testando e non è ancora stato acquistato uno schermo.
 ***
