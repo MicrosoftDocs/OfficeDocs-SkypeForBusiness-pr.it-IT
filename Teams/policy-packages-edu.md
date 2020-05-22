@@ -21,12 +21,12 @@ ms.custom: ms.teamsadmincenter.policypackages.overview
 localization_priority: Priority
 search.appverid: MET150
 description: Informazioni sui criteri in un ambiente Education, o EDU, e su come usare e gestire i pacchetti di criteri in Microsoft Teams.
-ms.openlocfilehash: c602327321319c9924501d7879abcadf2a2c019e
-ms.sourcegitcommit: 5a88788bd0a0b2ccbc5b977b38dcfe4681cd5d10
+ms.openlocfilehash: c8eed1c27f73d8805924ee30be0041a710bbdb25
+ms.sourcegitcommit: 624bd511b96cf213483d3ea8f27b20a91d955550
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44278189"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44330571"
 ---
 # <a name="teams-policies-and-policy-packages-for-education"></a>Criteri e pacchetti di criteri di Teams per l'istruzione
 
@@ -130,6 +130,8 @@ Microsoft Teams attualmente include i pacchetti di criteri seguenti:
 |**Education_PrimaryStudent**| Studenti di scuole elementari  | Gli studenti più giovani dell'istituto di istruzione possono avere bisogno di più limiti all'interno di Microsoft Teams. Usare questo set di criteri e impostazioni di criteri per limitare le funzionalità, ad esempio per la creazione e la gestione di riunioni, la gestione delle chat e le chiamate private. |
 |**Education_SecondaryStudent**| Studenti di scuole medie o superiori | Gli studenti delle scuole secondarie possono avere bisogno di più limiti all'interno di Microsoft Teams. Usare questo set di criteri e impostazioni di criteri per limitare le funzionalità, ad esempio per la creazione e la gestione di riunioni, la gestione delle chat e le chiamate private. |
 |**Education_HigherEducationStudent**| Studenti universitari | Gli studenti universitari possono avere bisogno di meno limiti, ma l'applicazione di alcune limitazioni è comunque consigliata. È possibile usare questo set di criteri e impostazioni di criteri per consentire l'accesso a chat, chiamate e riunioni all'interno dell'organizzazione, limitando però il modo in cui gli studenti usano Microsoft Teams con i partecipanti esterni. |
+|**Education_PrimaryTeacher_RemoteLearning**| Docenti e personale | Crea una serie di criteri che si applicano agli insegnanti delle scuole elementari per massimizzare la sicurezza e la collaborazione degli studenti quando si adotta l'apprendimento a distanza. |
+|**Education_PrimaryStudent_RemoteLearning**| Studenti di scuole elementari| Crea una serie di criteri che si applicano agli studenti delle scuole elementari per massimizzare la sicurezza e la collaborazione degli studenti quando si adotta l'apprendimento a distanza.
 |||
 
 :::image type="content" source="media/edu-policy-packages-list.png" alt-text="Pagina con l'elenco dei pacchetti di criteri tra cui scegliere.":::

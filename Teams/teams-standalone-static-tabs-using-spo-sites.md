@@ -14,12 +14,12 @@ ms.reviewer: vinbel
 search.appverid: MET150
 description: A partire da una pagina o un sito di SharePoint Online, creare una scheda statica autonoma che può essere usata come portale Intranet per l'organizzazione.
 localization_priority: Priority
-ms.openlocfilehash: 63527cb3cccc5f882f44ff39911d33270bafb4c8
-ms.sourcegitcommit: 9419860f9a1c1dd2c7c444162e1d55d704e19c69
+ms.openlocfilehash: 4777b744d76415f45718cb274f402556e1e28240
+ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43207075"
+ms.lasthandoff: 05/20/2020
+ms.locfileid: "44326583"
 ---
 # <a name="create-a-teams-intranet-portal-app-from-a-sharepoint-online-site-or-page"></a>Creare un'app "Portale Intranet" di Teams da un sito o una pagina di SharePoint Online
 
@@ -41,7 +41,7 @@ Informazioni preliminari:
 
 2. È necessario conoscere il sottodominio del tenant, che verrà usato nel segnaposto **{{subdomain}}**.
 
-3. In questo articolo si userà il segnaposto **{{siteUrl}}** per indicare l'*URL* del sito o della pagina scelta.
+3. In questo articolo si userà **{{siteUrl}}** come segnaposto per l'*URL* del sito o della pagina scelta.
     - *URL di esempio*:   https://contoso.sharepoint.com/teams/Contoso   *o* https://contoso.sharepoint.com/sites/Contoso
 4. Inoltre, si userà **{{sitePath}}** per indicare il *percorso* dell'URL, ad esempio /teams/Contoso.
     - *Percorsi di esempio*:   /teams/Contoso   *o* /sites/Contoso
@@ -96,7 +96,7 @@ Per iniziare, procedere come segue:
 
 Per visualizzare la nuova scheda sul desktop di Teams, passare ai puntini di sospensione **...**, sul lato sinistro della barra dell'app. Trovare la nuova app, caricarla e testare l'applicazione autonoma in Teams.
 
-Se si vuole rendere disponibile la nuova app in una posizione più in alto nel menu a sinistra, è necessario usare un'impostazione di criteri per l'app. Questa impostazione è disponibile nella sezione di amministrazione del team > criteri app > aggiungere un'applicazione bloccata. Quando si assegnano i criteri a un utente per il test, la modifica viene visualizzata dopo 24 ore. Tenendo presente questo aspetto, decidere se l'app dovrebbe comparire non appena possibile per evitare ritardi.
+Se si vuole rendere disponibile la nuova app in una posizione più in alto nel menu a sinistra, è necessario usare un'impostazione di criteri per l'app. Questa impostazione è disponibile nella sezione di amministrazione del team > criteri app > aggiungere un'applicazione bloccata. Quando si assegnano i criteri a un utente per il test, la modifica viene visualizzata dopo poche ore. Tenendo presente questo aspetto, decidere se l'app dovrebbe comparire non appena possibile per evitare ritardi.
 
 Per visualizzare e testare la nuova app in un dispositivo mobile, aprire il menu dell'app toccando la freccia (**^**) sopra la barra delle schede nella parte inferiore dello schermo. Individuare l'app e accedervi nel dispositivo mobile.
 
