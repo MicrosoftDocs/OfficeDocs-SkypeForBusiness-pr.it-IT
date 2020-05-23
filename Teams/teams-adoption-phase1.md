@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 00615f1bbd48654701ff64e547bffdbd8ee142f9
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 620e6ebdcfe244dc937ab96bc4e14c67cda0b11c
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905668"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44349710"
 ---
 # <a name="microsoft-teams-adoption-phase-1---start"></a>Adozione di Microsoft teams fase 1-inizio
 
@@ -67,10 +67,10 @@ Nella maggior parte dei casi, questo team iniziale dovrebbe essere un piccolo gr
 
 ## <a name="additional-resources"></a>Risorse aggiuntive
 
-La [community tecnica Microsoft](https://aka.ms/TechCommunity) offre approfondimenti forniti da peer in materia di adozione e problemi tecnici per molti prodotti Office 365. Ti consigliamo di partecipare alle community seguenti:
+La [community tecnica Microsoft](https://aka.ms/TechCommunity) offre approfondimenti forniti da peer in materia di adozione e problemi tecnici per molti prodotti Microsoft 365 e Office 365. Ti consigliamo di partecipare alle community seguenti:
 
 - [Microsoft teams Technical Community](https://aka.ms/TeamsCommunity) : ottenere risposte alle domande sui prodotti, imparare da altri clienti dei team e seguire il Blog per rimanere aggiornati sulle nuove caratteristiche e sui casi di utilizzo per i team. 
-- [Office 365 Champions Program](https://aka.ms/O365Champions) e la community di adozione di guida: imparerai dai tuoi coetanei su come migliorare l'adozione delle unità di lavoro di Office 365, ad esempio Team, SharePoint, Yammer e altri prodotti. Aprire ai professionisti IT, agli utenti aziendali, agli sviluppatori "accidentali" e a chiunque sia interessato a promuovere l'adozione di servizi cloud.  
+- Il [programma Champions](https://aka.ms/O365Champions) e la community adoption per la guida: imparerai dai tuoi coetanei su come migliorare l'adozione delle unità di lavoro di Microsoft 365 o Office 365, ad esempio Team, SharePoint, Yammer e altri prodotti. Aprire ai professionisti IT, agli utenti aziendali, agli sviluppatori "accidentali" e a chiunque sia interessato a promuovere l'adozione di servizi cloud.  
 
 
-![Icona che rappresenta il passaggio](media/teams-adoption-next-icon.png) successivo: informazioni su [team e canali](teams-adoption-understand-teams-and-channels.md)
+![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) : [informazioni su team e canali](teams-adoption-understand-teams-and-channels.md)

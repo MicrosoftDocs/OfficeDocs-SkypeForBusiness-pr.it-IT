@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f7000c3555a660fc692b7b88b0d94fb3ea42742c
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 2c71cc945c3de6b6a4446ab44db4fbc2a4e43520
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140743"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350240"
 ---
 # <a name="onboard-early-adopters-and-gather-feedback-for-microsoft-teams"></a>A bordo dei primi adottanti e raccogliere feedback per Microsoft Teams
 
@@ -41,7 +41,7 @@ Completare i passaggi seguenti con questi primi adottanti:
 
 ## <a name="gather-feedback"></a>Raccogliere il feedback
 
-Usare i componenti di Office 365 per raccogliere commenti e suggerimenti per il progetto.
+Usare i componenti di Microsoft 365 o Office 365 per raccogliere commenti e suggerimenti per il progetto.
   
 ![Icona che rappresenta un punto decisionale](media/teams-adoption-decision-icon.png) Decisione: se l'organizzazione ha già un investimento in una rete Yammer, è possibile usarla come forum di feedback per il programma Early Adopter. In caso contrario, e il tuo programma Early Adopter ha meno di 5000 membri, crea un team in teams per raccogliere feedback e dare formazione.
   
@@ -49,4 +49,4 @@ Usare i componenti di Office 365 per raccogliere commenti e suggerimenti per il 
 > Alcune organizzazioni combineranno i canali per il feedback dei primi adottanti nel team del programma teamwork Champions. Questo è un buon approccio perché molti adottanti in anticipo potrebbero diventare campioni in futuro e si creerà una comunità più forte. 
 
 
-![Icona che rappresenta il passaggio](media/teams-adoption-next-icon.png) successivo: supporto a [bordo](teams-adoption-onboard-support.md).
+![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) : [supporto a bordo](teams-adoption-onboard-support.md).

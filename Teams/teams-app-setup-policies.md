@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 3cbf3ec38876d57fe1c2b8ac61abf5b86d5c2106
-ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
+ms.openlocfilehash: b4c6fe9551374139e8220543cb83f262a2a5195a
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326773"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350060"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
@@ -93,15 +93,21 @@ Puoi usare l'interfaccia di amministrazione di Microsoft teams per creare criter
 
 ## <a name="assign-a-custom-app-setup-policy-to-users"></a>Assegnare criteri di configurazione dell'app personalizzati agli utenti
 
-Puoi usare l'interfaccia di amministrazione di Microsoft teams per assegnare un criterio personalizzato a singoli utenti o al modulo di PowerShell di Skype for business per assegnare criteri personalizzati a gruppi di utenti, ad esempio un gruppo di sicurezza o un gruppo di distribuzione.
+Puoi usare l'interfaccia di amministrazione di Microsoft teams per assegnare un criterio personalizzato a singoli utenti o al modulo di PowerShell di Skype for business per assegnare un criterio personalizzato agli utenti di un gruppo, ad esempio un gruppo di sicurezza o un gruppo di distribuzione.
 
 ### <a name="assign-a-custom-app-setup-policy-to-users"></a>Assegnare criteri di configurazione dell'app personalizzati agli utenti
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi fai clic sull'utente.
+Per assegnare un criterio a un utente:
+
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi fare clic sull'utente.
 2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
 3. In **criteri di configurazione delle app**selezionare i criteri di configurazione dell'app che si desidera assegnare e quindi fare clic su **applica**.
 
-Per assegnare un criterio a più utenti alla volta, vedere [modificare le impostazioni degli utenti di Teams in blocco](edit-user-settings-in-bulk.md).
+Per assegnare un criterio a più utenti alla volta:
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi cerca gli utenti o filtra la visualizzazione per mostrare gli utenti desiderati.
+2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
+3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **applica**.  
 
 Si può anche procedere nel modo seguente:
 
@@ -197,3 +203,4 @@ Prima di inviare l'app, assicurati di seguire le linee guida per il logo. Per al
  ## <a name="related-topics"></a>Argomenti correlati
 
 - [Impostazioni di amministrazione per le app in Teams](admin-settings.md)
+- [Assegnare criteri agli utenti in teams](assign-policies.md)

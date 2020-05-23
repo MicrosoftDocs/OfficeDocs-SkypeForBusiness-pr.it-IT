@@ -17,17 +17,17 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fe7851e57cd6d812d0b8904668ca5fd67fd5999d
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 5701e508440a338e0f0ba1fd133dac98ec35d57f
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41826694"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44349630"
 ---
 # <a name="run-a-report-to-show-active-staffhub-usage"></a>Eseguire un report per mostrare l'utilizzo di StaffHub attivo
 
 > [!IMPORTANT]
-> Efficace 31 dicembre 2019, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo. StaffHub smetterà di funzionare per tutti gli utenti il 31 dicembre 2019. Chiunque tenti di aprire StaffHub verrà visualizzato un messaggio che li indirizza a scaricare teams. Per altre informazioni, vedere [Microsoft StaffHub per ritirarsi](microsoft-staffhub-to-be-retired.md).  
+> Efficace il 30 giugno 2020, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo. StaffHub smetterà di funzionare per tutti gli utenti il 30 giugno 2020. Chiunque tenti di aprire StaffHub verrà visualizzato un messaggio che li indirizza a scaricare teams. Per altre informazioni, vedere [Microsoft StaffHub per ritirarsi](microsoft-staffhub-to-be-retired.md).  
 
 Seguire i passaggi di questo articolo per eseguire un report per ottenere un elenco di utenti attivi di StaffHub nell'organizzazione. Queste informazioni possono essere utili quando si preparano a [trasferire i team di StaffHub a Microsoft teams](move-staffhub-teams-to-shifts-in-teams.md). Nel report è necessario includere le comunicazioni quando si effettua il passaggio da StaffHub a teams.
 

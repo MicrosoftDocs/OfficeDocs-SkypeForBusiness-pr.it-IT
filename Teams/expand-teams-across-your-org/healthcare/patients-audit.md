@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_Healthcare
 ms.reviewer: anach
 description: App pazienti per amministratori Teams
-ms.openlocfilehash: fbbb3361968ae928638fedca09fbd8d4c2ff33b6
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: a4c3980feceac51a6a674848e4c0005d9cc0c9d1
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780405"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350180"
 ---
 # <a name="audit-logs-for-patients-app"></a>Log di controllo per l'app Pazienti
 
@@ -28,7 +28,7 @@ Un log di controllo per l'attività dell'app pazienti consente ai team di rispos
 
 ## <a name="meet-hipaa-requirements"></a>Soddisfare i requisiti HIPAA
 
-In base alle linee guida HIPAA, i provider di servizi sanitari sono tenuti a conservare i record di tutti gli accessi a PHI, in modo che sia possibile verificare le modifiche. Microsoft si impegna a raggiungere i clienti aziendali con Microsoft teams e ad aiutarli a soddisfare i requisiti e i controlli HIPAA. L'accesso a PHI tramite l'app pazienti è completamente registrato e i registri vengono resi disponibili nel centro sicurezza e conformità di M365, come descritto nell'articolo della [funzionalità Ricerca log di controllo](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) .
+In base alle linee guida HIPAA, i provider di servizi sanitari sono tenuti a conservare i record di tutti gli accessi a PHI, in modo che sia possibile verificare le modifiche. Microsoft si impegna a raggiungere i clienti aziendali con Microsoft teams e ad aiutarli a soddisfare i requisiti e i controlli HIPAA. L'accesso a PHI tramite l'app pazienti è completamente registrato e i registri sono resi disponibili nel centro conformità Microsoft 365, come descritto nell'articolo della [funzionalità Ricerca log di controllo](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) .
 
 > [!IMPORTANT]
 > L'onere di mantenere la privacy del paziente viene posto sul provider di servizi sanitari per legge. La legge dà diritto ai pazienti alla privacy e richiede che un amministratore IT o un controller HIPAA possa facilmente determinare quale infermiera, clinico o assistente sociale abbia acceduto o alterato i record del paziente. Uno degli esempi più comuni di violazione di accesso di PHI è l'accesso ai pazienti VIP. La funzionalità del log di controllo è necessaria per eseguire indagini su eventuali violazioni di Access PHI e per soddisfare i requisiti HIPAA.
@@ -37,11 +37,11 @@ In base alle linee guida HIPAA, i provider di servizi sanitari sono tenuti a con
 
 ## <a name="enable-audit-logs-for-the-patients-app"></a>Abilitare i log di controllo per l'app patients
 
-Un controllo è dipendente da diverse configurazioni precedenti:
+Un controllo dipende da diverse configurazioni precedenti:
 
 1. L'amministratore dovrebbe collaborare con il proprio provider di servizi di FHIR per avere EMR in un formato usato dall'app patients. Vedere [integrazione di record sanitari elettronici in Microsoft teams](patients-app.md).
 2. Un amministratore del provider di servizi sanitari deve abilitare l'app patients nell'interfaccia di amministrazione di teams. Per altre informazioni, Vedi [gestire i criteri di configurazione delle app in Microsoft teams](../../teams-app-setup-policies.md) e articoli correlati.
-3. L'amministratore deve abilitare gli audit delle attività in Office 365, allo stesso modo in cui abilitano qualsiasi controllo del log attività in Office 365, come descritto [prima di iniziare](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-begin) e [attivare o disattivare la ricerca nel log di controllo](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search). Se la registrazione di controllo è già attiva, non è necessario nulla di speciale per l'app pazienti. Ogni volta che un provider di servizi sanitari installa e gestisce l'app all'interno di un team, i log di controllo registrano la loro attività PHI.
+3. L'amministratore deve abilitare gli audit delle attività, allo stesso modo in cui abilitano qualsiasi controllo del log attività, come descritto in [prima di iniziare](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-begin) e [attivare o disattivare la ricerca nel log di controllo](https://docs.microsoft.com/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search). Se la registrazione di controllo è già attiva, non è necessario nulla di speciale per l'app pazienti. Ogni volta che un provider di servizi sanitari installa e gestisce l'app all'interno di un team, i log di controllo registrano la loro attività PHI.
 4. L'amministratore dovrà quindi annunciare la disponibilità dell'app patients e gli operatori sanitari dovrebbero iniziare a generare attività da includere in un controllo.
 
 <!-- add link out to client doc when available -->

@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3c34494c08b6c81671c7f36e1ca76593e8d204be
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: aeca6da477147c420c9dea053dbebc465fb491f6
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904768"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350270"
 ---
 # <a name="how-ready-is-your-organization-for-microsoft-teams"></a>In che modo è pronta l'organizzazione per Microsoft Teams?
 
@@ -64,7 +64,7 @@ I primi adottanti condividono determinati tratti, indipendentemente dalle dimens
 - Disponibilità a condividere le proprie osservazioni e le proprie informazioni con il gruppo
 - Sono acquirenti di rischi; ossia sono disposti a provare qualcosa per vedere se funziona
 
-Usare un modulo semplice in Office 365 per consentire a questi utenti di optare per il programma Early Adopter per i team. A seconda delle dimensioni e della complessità dell'organizzazione, puoi scegliere di abilitare alcuni o tutti questi individui per la fase di sperimentazione. In questo programma accettano di partecipare attivamente alla fase di sperimentazione e di inviare un feedback regolare al team di progetto. Evitare di avere persone che vogliono semplicemente testare la nuova tecnologia Drive. Avvisa che, dando questo feedback attivo, contribuisce a creare il risultato del progetto. Userai questo elenco di persone nella [fase 2-esperimento](teams-adoption-phase2-experiment.md).
+Usare un modulo semplice in Microsoft 365 o Office 365 per consentire a questi utenti di optare per il programma Early Adopter per Teams. A seconda delle dimensioni e della complessità dell'organizzazione, puoi scegliere di abilitare alcuni o tutti questi individui per la fase di sperimentazione. In questo programma accettano di partecipare attivamente alla fase di sperimentazione e di inviare un feedback regolare al team di progetto. Evitare di avere persone che vogliono semplicemente testare la nuova tecnologia Drive. Avvisa che, dando questo feedback attivo, contribuisce a creare il risultato del progetto. Userai questo elenco di persone nella [fase 2-esperimento](teams-adoption-phase2-experiment.md).
 
 La guida ai programmi adottati in anticipo è una risorsa utile per avviare questo programma nell'ambiente in uso.  
  
@@ -104,4 +104,4 @@ Combinare questi dati con i profili delle parti interessate e i dipendenti che d
 
 Puoi usare i campioni interni per risolvere il problema di avere tipi di modifica diversi. In questo caso, il feedback è la chiave per il successo: incoraggiare le persone a condividere le proprie sfide e le proprie esigenze. Abbracciare i disgregatori e i dissenzienti dando a questi individui o gruppi un seggio al tavolo durante la sperimentazione. Questa procedura consigliata consente di spianare la strada a una distribuzione più agevole dei miglioramenti della collaborazione.  
 
-![Icona che rappresenta il passaggio](media/teams-adoption-next-icon.png) successivo: [Microsoft teams adoption fase 2: esperimento](teams-adoption-phase2-experiment.md) 
+![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) : [Microsoft teams adoption fase 2: esperimento](teams-adoption-phase2-experiment.md) 

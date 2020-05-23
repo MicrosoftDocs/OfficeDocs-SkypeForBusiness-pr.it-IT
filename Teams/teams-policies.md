@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.teamsandchannelpolicies.overview
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.discover
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.create
-ms.openlocfilehash: 392bbb3c97cf32e815f81073bf662d4d6280ae75
-ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
+ms.openlocfilehash: ce387ec406a9ccfd6ee45a67f2613a45c219f21f
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326653"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44349700"
 ---
 # <a name="manage-teams-policies-in-microsoft-teams"></a>Gestire i criteri dei team in Microsoft Teams
 
@@ -65,13 +65,19 @@ Per gestire i criteri dei team, è possibile **passare a**criteri teams teams ne
 
 È possibile usare l'interfaccia di amministrazione di Microsoft teams per assegnare un criterio personalizzato a uno o più utenti o al modulo di PowerShell di Skype for business per assegnare criteri personalizzati a gruppi di utenti, ad esempio un gruppo di sicurezza o un gruppo di distribuzione.
 
-### <a name="assign-a-custom-teams-policy-to-a-user"></a>Assegnare un criterio teams personalizzato a un utente
+### <a name="assign-a-custom-teams-policy-to-users"></a>Assegnare un criterio team personalizzati agli utenti
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi fai clic sull'utente.
+Per assegnare un criterio a un utente:
+
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi fare clic sull'utente.
 2. Fare clic su **criteri**e quindi fare clic su **modifica**accanto a **criteri assegnati**.
 3. In **criteri Team**selezionare il criterio che si vuole assegnare e quindi fare clic su **Salva**.
 
-Per assegnare un criterio teams personalizzato a più utenti alla volta, vedere [modificare le impostazioni utente di teams in blocco](edit-user-settings-in-bulk.md).
+Per assegnare un criterio a più utenti alla volta:
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi cerca gli utenti o filtra la visualizzazione per mostrare gli utenti desiderati.
+2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
+3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **applica**.  
 
 Si può anche procedere nel modo seguente:
 
@@ -108,3 +114,4 @@ A seconda del numero di membri del gruppo, questo comando può richiedere divers
 
 - [Gestire l'individuazione di team privati in Teams](manage-discovery-of-private-teams.md)
 - [Canali privati in teams](private-channels.md)
+- [Assegnare criteri agli utenti in teams](assign-policies.md)

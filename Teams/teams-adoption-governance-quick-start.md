@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7b24fd6e6ea957c085050dd1311ec536800b706b
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: a65a9c43ba6828781c53b14e739ba92593ca934c
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904321"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350250"
 ---
 # <a name="governance-quick-start-for-microsoft-teams"></a>Guida introduttiva di governance per Microsoft Teams
 
@@ -64,10 +64,10 @@ L'esperienza di riunione teams è di alta qualità, supporta la chat video e por
 
 ### <a name="decision-6--data-security"></a>Decisione 6: sicurezza dei dati
 
-In preparazione per l'ampia distribuzione, è possibile scegliere di usare le etichette di sicurezza per classificare i tipi di team nell'ambiente. Ai fini di questo esperimento ti consigliamo di fare riferimento al [piano per la governance in teams](plan-teams-governance.md) e di verificare che i criteri di conservazione di base siano stati impostati sui dati del team in Microsoft 365 o Office 365. Potrebbe essere necessario coordinare questo lavoro con il team tecnico perché i diritti di amministratore di Office 365 sono necessari per completare il lavoro.
+In preparazione per l'ampia distribuzione, è possibile scegliere di usare le etichette di sicurezza per classificare i tipi di team nell'ambiente. Ai fini di questo esperimento ti consigliamo di fare riferimento al [piano per la governance in teams](plan-teams-governance.md) e di verificare che i criteri di conservazione di base siano stati impostati sui dati del team in Microsoft 365 o Office 365. Potrebbe essere necessario coordinare questo lavoro con il team tecnico perché per completare questo lavoro è necessario disporre dei diritti di amministratore di Microsoft 365 o Office 365.
 
 ### <a name="decision-7-length-of-your-experiment"></a>Decisione 7: lunghezza dell'esperimento
 
 Un'implementazione di team di successo procede a un ritmo sano per garantire lo slancio, lo stato d'attenzione e le informazioni appropriate. È consigliabile che questa fase del progetto abbia una lunghezza di 60 giorni per garantire che i primi adottanti completino cicli aziendali sufficienti. L'estensione della sperimentazione per un tempo troppo lungo aumenta il rischio di un programma di modifica non riuscito; Tuttavia, questa volta sarà diverso per ogni organizzazione.  
 
-![Icona che rappresenta il passaggio](media/teams-adoption-next-icon.png) successivo: [definire scenari di utilizzo](teams-adoption-define-usage-scenarios.md)
+![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) : [definire scenari di utilizzo](teams-adoption-define-usage-scenarios.md)

@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i criteri di ID chiamante in Microsoft teams per modificare o bloccare l'ID chiamante degli utenti di teams nell'organizzazione.
-ms.openlocfilehash: a4dbdbac0922bb475f47447a3cf8b2d0f001909c
-ms.sourcegitcommit: a7c823f61d9ab88424bad924113d780ce11e509f
+ms.openlocfilehash: dde534d0c74b11b3c3131a7d5c9eb8611135f70f
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44224263"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44349780"
 ---
 # <a name="manage-caller-id-policies-in-microsoft-teams"></a>Gestire i criteri di ID chiamante in Microsoft Teams
 
@@ -67,17 +67,21 @@ Puoi gestire i criteri ID chiamante accedendo **Voice**ai  >  **criteri ID chiam
 
 ## <a name="assign-a-custom-caller-id-policy-to-users"></a>Assegnare un criterio ID chiamante personalizzato agli utenti
 
-È possibile usare l'interfaccia di amministrazione di Microsoft teams per assegnare un criterio personalizzato a uno o più utenti o al modulo di PowerShell di Skype for business per assegnare criteri personalizzati a gruppi di utenti, ad esempio un gruppo di sicurezza o un gruppo di distribuzione.
+È possibile usare l'interfaccia di amministrazione di Microsoft teams per assegnare un criterio personalizzato a uno o più utenti o al modulo di PowerShell di Skype for business per assegnare un criterio personalizzato agli utenti di un gruppo, ad esempio un gruppo di sicurezza o un gruppo di distribuzione.
 
-### <a name="assign-a-custom-caller-line-id-policy-to-a-user"></a>Assegnare un criterio ID linea chiamante personalizzato a un utente
+### <a name="assign-a-custom-caller-line-id-policy-to-users"></a>Assegnare un criterio ID linea chiamante personalizzato agli utenti
+
+Per assegnare un criterio a un utente:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi fare clic sull'utente.
 2. Fare clic su **criteri**e quindi fare clic su **modifica**accanto a **criteri assegnati**.
 3. In **criteri ID chiamante**selezionare il criterio che si vuole assegnare e quindi scegliere **Salva**.
 
-### <a name="assign-a-custom-calling-line-id-policy-to-multiple-users-at-a-time"></a>Assegnare criteri di ID linea di chiamata personalizzati a più utenti alla volta
+Per assegnare un criterio a più utenti alla volta:
 
-Per assegnare un criterio ID linea chiamante personalizzato a più utenti alla volta, vedere [modificare le impostazioni utente di teams in blocco](edit-user-settings-in-bulk.md).
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi cerca gli utenti o filtra la visualizzazione per mostrare gli utenti desiderati.
+2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
+3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **applica**.  
 
 Si può anche procedere nel modo seguente:
 
@@ -113,4 +117,4 @@ A seconda del numero di membri del gruppo, questo comando può richiedere divers
  ## <a name="related-topics"></a>Argomenti correlati
 
 - [New-CsCallingLineIdentity](https://docs.microsoft.com/powershell/module/skype/new-cscallinglineidentity?view=skype-ps)
-
+- [Assegnare criteri agli utenti in teams](assign-policies.md)

@@ -17,18 +17,18 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i criteri delle chiamate di emergenza in Microsoft teams per definire cosa succede quando un utente di Teams dell'organizzazione effettua una chiamata di emergenza.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 62a6314435aa3af44d0c44ab6a6790212c62d8de
-ms.sourcegitcommit: 5692900c0fc0a2552fe3f8ece40920c839e1ea23
+ms.openlocfilehash: ea02c1c7f9d4142db9cb25c00714e04a28e0e5e3
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43952435"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350200"
 ---
 # <a name="manage-emergency-calling-policies-in-microsoft-teams"></a>Gestire i criteri delle chiamate di emergenza in Microsoft Teams
 
 Se l'organizzazione usa i piani di chiamata o il routing diretto del sistema telefonico distribuito, è possibile usare i criteri per le chiamate di emergenza in Microsoft teams per definire cosa succede quando un utente di Teams dell'organizzazione effettua una chiamata di emergenza. Puoi impostare gli utenti a cui inviare una notifica e il modo in cui vengono informati quando un utente a cui viene assegnato il criterio chiama i servizi di emergenza. Ad esempio, è possibile configurare le impostazioni dei criteri per comunicare automaticamente alla scrivania di sicurezza dell'organizzazione e farli ascoltare in chiamate di emergenza.  
 
-Puoi gestire i criteri delle chiamate di emergenza passando ai**criteri di emergenza** **vocale** > nell'interfaccia di amministrazione di Microsoft teams oppure usando Windows PowerShell. I criteri possono essere assegnati a utenti e [siti di rete](cloud-voice-network-settings.md).
+Puoi gestire i criteri delle chiamate di emergenza **Voice**passando ai  >  **criteri di emergenza** vocale nell'interfaccia di amministrazione di Microsoft teams oppure usando Windows PowerShell. I criteri possono essere assegnati a utenti e [siti di rete](cloud-voice-network-settings.md).
 
 Per gli utenti, è possibile usare il criterio globale (predefinito per l'intera organizzazione) oppure creare e assegnare criteri personalizzati. Gli utenti otterranno automaticamente il criterio globale a meno che non si creino e si assegnano criteri personalizzati. Tieni presente che puoi modificare le impostazioni nel criterio globale, ma non puoi rinominarle o eliminarle. Per i siti di rete, è possibile creare e assegnare criteri personalizzati.
 
@@ -38,7 +38,7 @@ Se è stato assegnato un criterio per le chiamate di emergenza a un sito di rete
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams selezionare criteri per l'**emergenza** **vocale** > e quindi fare clic sulla scheda **criteri di chiamata** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Voice**selezionare  >  **criteri**per l'emergenza vocale e quindi fare clic sulla scheda **criteri di chiamata** .
 2. Fare clic su **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio.
 4. Impostare il modo in cui si vuole informare gli utenti dell'organizzazione, in genere il servizio di sicurezza, quando viene effettuata una chiamata di emergenza. A questo scopo, in **modalità notifica**selezionare una delle opzioni seguenti:
@@ -59,7 +59,7 @@ Vedere [New-CsTeamsEmergencyCallingPolicy](https://docs.microsoft.com/powershell
 
 È possibile modificare il criterio globale o i criteri personalizzati creati.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams selezionare criteri per l'**emergenza** **vocale** > e quindi fare clic sulla scheda **criteri di chiamata** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Voice**selezionare  >  **criteri**per l'emergenza vocale e quindi fare clic sulla scheda **criteri di chiamata** .
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva**.
 
@@ -71,15 +71,21 @@ Vedere [set-CsTeamsEmergencyCallingPolicy](https://docs.microsoft.com/powershell
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
 
+Per assegnare un criterio a un utente:
+
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi fare clic sull'utente.
 2. Fare clic su **criteri**e quindi fare clic su **modifica**accanto a **criteri assegnati**.
 3. In **criteri**per le chiamate di emergenza selezionare i criteri da assegnare e quindi fare clic su **Salva**.
 
-Per assegnare un criterio teams personalizzato a più utenti alla volta, vedere [modificare le impostazioni utente di teams in blocco](edit-user-settings-in-bulk.md).
+Per assegnare un criterio a più utenti alla volta:
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi cerca gli utenti o filtra la visualizzazione per mostrare gli utenti desiderati.
+2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
+3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **applica**.  
 
 Si può anche procedere nel modo seguente:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams selezionare criteri per l'**emergenza** **vocale** > e quindi fare clic sulla scheda **criteri di chiamata** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Voice**selezionare  >  **criteri**per l'emergenza vocale e quindi fare clic sulla scheda **criteri di chiamata** .
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
 3. Scegliere **Gestisci utenti**.
 4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
@@ -128,3 +134,4 @@ Set-CsTenantNetworkSite -identity "site1" -EmergencyCallingPolicy "Contoso Emerg
 
 - [Gestire i criteri di routing delle chiamate di emergenza in teams](manage-emergency-call-routing-policies.md)
 - [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
+- [Assegnare criteri agli utenti in teams](assign-policies.md)

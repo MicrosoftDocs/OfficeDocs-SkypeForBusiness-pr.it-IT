@@ -21,12 +21,12 @@ f1.keywords:
 description: Informazioni su come formare un team di campioni per promuovere l'adozione di team tramite la sensibilizzazione, l'adozione e l'istruzione nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4be0002b65567bcd708e765242b744936c6ac12e
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: e2c44be9ac59b3a7c076540b658cf27bf74ef0e8
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904758"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350260"
 ---
 # <a name="create-your-champions-program-for-microsoft-teams"></a>Creare il programma Champions per Microsoft Teams
 
@@ -45,7 +45,7 @@ I campioni devono:
 
 Usare la [Guida ai programmi di Champions](https://go.microsoft.com/fwlink/?linkid=854665) per creare questo programma nell'organizzazione. Le procedure consigliate per questa community sono:
 
-- Partecipare al programma Office 365 Champions: assicurarsi che almeno i responsabili del programma Champion (e potenzialmente tutti i campioni della società) siano membri del [programma Microsoft office 365 Champion](https://aka.ms/O365Champions). Questa chiamata gratuita per la Comunità mensile fornirà informazioni preziose per l'uso di programmi personalizzati e per ottenere il massimo da team e altri servizi di Office 365. I materiali di programma possono essere riutilizzati nel programma interno.
+- Partecipare al programma Microsoft 365 o Microsoft Office 365 [Champions](https://aka.ms/O365Champions). Assicurarsi che almeno i responsabili del programma Champion (e potenzialmente tutti i campioni della società) siano membri del programma. Questa chiamata comunitaria gratuita e mensile fornirà informazioni preziose per l'uso di programmi personalizzati e per ottenere il massimo da team e altri servizi Microsoft 365 o Office 365. I materiali di programma possono essere riutilizzati nel programma interno.
 
 - Usa il team campione di teamwork: i tuoi campioni dovrebbero usare il team che hai configurato per tutte le comunicazioni del programma, il feedback e per trovare le risorse.  In questo modo i clienti avranno sempre più familiarità con il prodotto e i suoi vantaggi.
 
@@ -60,5 +60,5 @@ Usare la [Guida ai programmi di Champions](https://go.microsoft.com/fwlink/?link
 
 - Campioni del treno presto e spesso: le riunioni mensili del programma possono essere usate per creare competenze nella community di campioni. Usa queste opportunità per portarle a bordo, eseguire la formazione iniziale, incoraggiarle a partecipare ai corsi e verificare che siano pronte a supportare i dipendenti Man mano che avanzano nella fase di sperimentazione.  
 
-![Icona che rappresenta il passaggio](media/teams-adoption-next-icon.png) successivo: [completare la Guida introduttiva di governance](teams-adoption-governance-quick-start.md)
+![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) : [completare la Guida introduttiva di governance](teams-adoption-governance-quick-start.md)
 

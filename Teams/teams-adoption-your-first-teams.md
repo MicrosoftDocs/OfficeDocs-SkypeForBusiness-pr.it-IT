@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come guidare l'adozione di teams gestendo la distribuzione di Office 365 con teams, incluso come bloccare le risorse chiave come schede nei canali appropriati.
+description: Informazioni su come guidare l'adozione dei team gestendo la distribuzione di Microsoft 365 o Office 365 con i team, incluso il modo in cui aggiungere le risorse chiave come schede nei canali appropriati.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,16 +21,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0b1a22c76cd2a9ef9ca5d4be667cbfebe8a19b62
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 59b42c0f464c377b1a4e320fc01e6466fde99f3b
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904928"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350220"
 ---
 # <a name="create-your-first-teams-in-microsoft-teams"></a>Creare i primi team in Microsoft Teams
 
-Il modo migliore per guidare l'adozione dei team consiste nell'usare il prodotto. È consigliabile gestire la distribuzione di Office 365 con teams. Dovresti anche creare una community di dipendenti focalizzati sul lavoro di squadra e sulla produttività. Questi team iniziali possono cambiare nel tempo. Alcuni team suggeriti sono:
+Il modo migliore per guidare l'adozione dei team consiste nell'usare il prodotto. È consigliabile gestire la distribuzione di Microsoft 365 o Office 365 con teams. Dovresti anche creare una community di dipendenti focalizzati sul lavoro di squadra e sulla produttività. Questi team iniziali possono cambiare nel tempo. Alcuni team suggeriti sono:
 
 | Nome del team | Nomi di canale proposti |
 | --------- | ---------------------- |
@@ -38,7 +38,7 @@ Il modo migliore per guidare l'adozione dei team consiste nell'usare il prodotto
 | Implementazione di Microsoft Teams | Generale <br/> Consapevolezza e adozione <br/> Impegno aziendale <br/> Programma Early Adopter <br/> Feedback e approfondimenti <br/> Sicurezza e conformità <br/> Strategia e pianificazione <br/> Integrità e problemi relativi ai servizi <br/> Formazione <br/> Chat di Watercooler |
 | Campioni di teamwork | Generale <br/> Procedure consigliate, formazione e procedura <br/> Angolo campione <br/> Feedback e supporto tecnico <br/> Lead di programma <br/> Hub sociale |
 
-In Microsoft teams, la [raccolta schede](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview) consente di accedere a tutte le app di Office 365 e di terze parti attivate dall'amministratore. Per ottenere il massimo valore dal prodotto, è consigliabile bloccare le risorse chiave come schede in ognuno dei canali appropriati. Vedere l'esempio seguente.
+In Microsoft teams, la [raccolta schede](https://docs.microsoft.com/microsoftteams/platform/concepts/tabs/tabs-overview) consente di accedere a tutte le app Microsoft 365 o Office 365 e di terze parti attivate dall'amministratore. Per ottenere il massimo valore dal prodotto, è consigliabile bloccare le risorse chiave come schede in ognuno dei canali appropriati. Vedere l'esempio seguente.
 
 ![Screenshot che mostra le schede predefinite e personalizzate](media/teams-adoption-tab-example.png)
 
@@ -51,7 +51,7 @@ Nei team iniziali consigliamo di aggiungere gli elementi seguenti per una facile
 | Consapevolezza e adozione | [Hub adoption Teams](https://aka.ms/DriveTeamsAdoption)<br/>[Microsoft teams Customer Success Kit](https://aka.ms/TeamsCustomerSuccess)|
 | Impegno aziendale | Wiki-guida per l'impegno<br/>Modulo: richiesta di consultazione di Teams<br/>Elenco-richieste di impegno |
 |Early adopters | Community di feedback aggiunti <br/> OneNote per domande frequenti e temi comuni |
-| Feedback e creazione di report | Report sull'utilizzo di Office 365 aggiunto (solo per gli amministratori di Office 365) |
+| Feedback e creazione di report | Report sull'utilizzo di Microsoft 365 o Office 365 (solo per gli amministratori di Microsoft 365 o Office 365) |
 | Sicurezza e conformità | Microsoft Trust Portal <br/> [Documentazione sulla sicurezza e conformità](https://docs.microsoft.com/office365/securitycompliance/index)<br/> [Roadmap](https://docs.microsoft.com/office365/securitycompliance/security-roadmap) |
 | Strategia e pianificazione | Collaborazione North Star PowerPoint <br/> Piano di progetto adoption Service |
 | Formazione | Portale di formazione per l'apprendimento personalizzato <br/> [Formazione su teams online](https://aka.ms/TeamsTraining) |
@@ -66,4 +66,4 @@ Nei team iniziali consigliamo di aggiungere gli elementi seguenti per una facile
 
 Quando si inizia a usare teams, sarà importante che gli altri membri del team di progetto si impegnino a usare la chat, i canali e le risorse dei team per eseguire il progetto. L'uso personale dei team è fondamentale per la qualità del progetto di adozione. Ti consigliamo di resistere alla frammentazione del progetto continuando ad avere conversazioni con il team di progetto principale nella posta elettronica. Passando a teams verrà modellato il comportamento che si vuole abbracciare dai dipendenti. Impostare il tono, passare prima di tutto e iniziare a utilizzare le informazioni del progetto in un'unica posizione.  
 
-![Icona che descrive il passaggio](media/teams-adoption-next-icon.png) successivo: [quanto è pronta l'organizzazione per Microsoft teams?](teams-adoption-assess-readiness.md)
+![Icona che descrive il passaggio successivo ](media/teams-adoption-next-icon.png) : [quanto è pronta l'organizzazione per Microsoft teams?](teams-adoption-assess-readiness.md)

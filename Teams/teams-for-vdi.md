@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 11192ca8bc1fe7e273e687363bf327fcd0c3078e
-ms.sourcegitcommit: 3325fd9de57367e9dd60685d1fef096921441a76
+ms.openlocfilehash: 59c3d9d6ee6da2881aff52efa77c3d13678b560a
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997167"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44350230"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -87,7 +87,7 @@ In una configurazione permanente dedicata, le modifiche apportate al sistema ope
 
 Di seguito è riportata la configurazione minima consigliata della VM.
 
-|Parametro  |Sistema operativo workstation  |Sistema operativo del server  |
+|Parametro  |Sistema operativo workstation  |Sistema operativo server  |
 |---------|---------|---------|
 |vCPU   |    2 Core     |  4, 6 o 8<br>È importante comprendere la configurazione NUMA (non-Uniform Memory Access) sottostante e configurare le VM di conseguenza.     |
 |RAM     |   4 GB      | 512 a 1024 MB per utente        |
@@ -237,7 +237,7 @@ Puoi impostare i criteri usando l'interfaccia di amministrazione di Microsoft te
 
 #### <a name="assign-policies-using-the-microsoft-teams-admin-center"></a>Assegnare criteri con l'interfaccia di amministrazione di Microsoft Teams
 
-Per assegnare i criteri di chiamata DisallowCalling e i criteri di riunione di AllOff agli utenti, seguire questa procedura:
+Per assegnare i criteri di chiamata di DisallowCalling e i criteri di riunione di AllOff a un utente:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**.
 2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
@@ -246,13 +246,17 @@ Per assegnare i criteri di chiamata DisallowCalling e i criteri di riunione di A
     2.  In **criteri riunione**fare clic su **AllOff**.
 4. Fare clic su **applica**.
 
-Per assegnare un criterio a più utenti alla volta, vedere [modificare le impostazioni degli utenti di Teams in blocco](edit-user-settings-in-bulk.md).
+Per assegnare un criterio a più utenti alla volta:
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi cerca gli utenti o filtra la visualizzazione per mostrare gli utenti desiderati.
+2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
+3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **applica**.  
 
 Si può anche procedere nel modo seguente:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa al criterio che vuoi assegnare. Ad esempio:
-    - Accedere ai **Voice** > **criteri**per le chiamate vocali e quindi fare clic su **DisallowCalling**.
-    - Accedere a **Meetings** > **criteri riunione**riunioni e quindi fare clic su **AllOff**.
+    - Accedere ai **Voice**  >  **criteri**per le chiamate vocali e quindi fare clic su **DisallowCalling**.
+    - Accedere a **Meetings**  >  **criteri riunione**riunioni e quindi fare clic su **AllOff**.
 3. Scegliere **Gestisci utenti**.
 4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 5. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
@@ -289,7 +293,7 @@ Puoi usare l'interfaccia di amministrazione di Microsoft teams o PowerShell per 
 
 #### <a name="assign-policies-using-the-microsoft-teams-admin-center"></a>Assegnare criteri con l'interfaccia di amministrazione di Microsoft Teams
 
-Per assegnare i criteri di chiamata AllowCalling e i criteri di riunione AllOn agli utenti, seguire questa procedura:
+Per assegnare i criteri di chiamata AllowCalling e i criteri di riunione AllOn a un utente:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**.
 2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
@@ -298,13 +302,17 @@ Per assegnare i criteri di chiamata AllowCalling e i criteri di riunione AllOn a
     2.  In **criteri riunione**fare clic su **Allon**.
 4. Fare clic su **applica**.
 
-Per assegnare un criterio a più utenti alla volta, vedere [modificare le impostazioni degli utenti di Teams in blocco](edit-user-settings-in-bulk.md).
+Per assegnare un criterio a più utenti alla volta:
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi cerca gli utenti o filtra la visualizzazione per mostrare gli utenti desiderati.
+2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
+3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **applica**.  
 
 Si può anche procedere nel modo seguente:
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa al criterio che vuoi assegnare. Ad esempio:
-    - Accedere ai **Voice** > **criteri**per le chiamate vocali e quindi fare clic su **AllowCalling**.
-    - Accedere a **Meetings** > **criteri riunione**riunioni e quindi fare clic su **Allon**.
+    - Accedere ai **Voice**  >  **criteri**per le chiamate vocali e quindi fare clic su **AllowCalling**.
+    - Accedere a **Meetings**  >  **criteri riunione**riunioni e quindi fare clic su **Allon**.
 3. Scegliere **Gestisci utenti**.
 4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 5. Al termine dell'aggiunta di utenti, fare clic su **Salva**.

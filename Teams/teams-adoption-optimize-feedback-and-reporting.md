@@ -21,16 +21,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ff6a3b285033176b0262b67663fbd448392ea343
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: fcaa545f2a704dfad856a4cebbcc9cb9f31d7481
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140697"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44349770"
 ---
 # <a name="optimize-feedback-and-reporting-for-your-microsoft-teams-adoption"></a>Ottimizzare il feedback e la creazione di report per l'adozione di Microsoft Teams
 
-Verificare che i segnali vengano ritirati dal servizio e dai dipendenti seguendo le procedure consigliate per il feedback degli utenti e i report sull'integrità dei servizi.  In alcuni casi, potrebbe essere necessario disporre dei diritti di amministratore di Office 365 per accedere a determinati report sull'uso e sull'integrità del servizio. Se non si è l'amministratore di Office 365 per l'organizzazione, collaborare con tale individuo per ottenere il ruolo di lettore di report nell'interfaccia di amministrazione di Microsoft 365 per accedere a alcuni di questi dati. 
+Verificare che i segnali vengano ritirati dal servizio e dai dipendenti seguendo le procedure consigliate per il feedback degli utenti e i report sull'integrità dei servizi.  In alcuni casi potrebbe essere necessario disporre dei diritti di amministratore per accedere a determinati report sull'uso e sull'integrità del servizio. Se non si è l'amministratore di Microsoft 365 o Office 365 per l'organizzazione, collaborare con tale individuo per ottenere il ruolo di lettore di report nell'interfaccia di amministrazione di Microsoft 365 per accedere a parte di questi dati.
 
 ## <a name="incorporating-feedback"></a>Inserimento di commenti e suggerimenti 
 
@@ -56,8 +56,8 @@ Procedure consigliate: i rappresentanti del reparto supporto interno o dell'help
 
 Sono disponibili tre tipi di report da esaminare durante la distribuzione e l'adozione di Microsoft teams:
 
-- [Integrità dei servizi](https://status.office365.com/) : sia per Office 365 che per il reparto di supporto IT interno.
-- [Attività del servizio](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports?redirectSourcePath=%252fen-us%252farticle%252fActivity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263&view=o365-worldwide) : da Office 365 visualizzare i [report in Microsoft teams](https://docs.microsoft.com/office365/admin/activity-reports/microsoft-teams-user-activity?redirectSourcePath=%252farticle%252fOffice-365-Reports-in-the-Admin-Center-Microsoft-Teams-user-activity-07f67fc4-c0a4-4d3f-ad20-f40c7f6db524&view=o365-worldwide). È anche possibile usare le informazioni di altri sistemi all'interno dell'organizzazione.
+- [Integrità dei servizi](https://status.office365.com/) : Microsoft 365 o Office 365 e il reparto di supporto IT interno.
+- [Attività del servizio](https://docs.microsoft.com/office365/admin/activity-reports/activity-reports?redirectSourcePath=%252fen-us%252farticle%252fActivity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263&view=o365-worldwide) : Microsoft 365 o Office 365 Visualizza i [report in Microsoft teams](https://docs.microsoft.com/office365/admin/activity-reports/microsoft-teams-user-activity?redirectSourcePath=%252farticle%252fOffice-365-Reports-in-the-Admin-Center-Microsoft-Teams-user-activity-07f67fc4-c0a4-4d3f-ad20-f40c7f6db524&view=o365-worldwide). È anche possibile usare le informazioni di altri sistemi all'interno dell'organizzazione.
 - Soddisfazione del servizio: raccolte da forum e sondaggi interni della community su esperienze specifiche
 
-![Icona che rappresenta il passaggio](media/teams-adoption-next-icon.png) successivo: [sensibilizzare e implementare la formazione](teams-adoption-drive-awareness.md)
+![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) : [sensibilizzare e implementare la formazione](teams-adoption-drive-awareness.md)

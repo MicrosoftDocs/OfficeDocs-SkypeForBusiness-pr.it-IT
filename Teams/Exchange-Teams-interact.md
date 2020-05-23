@@ -16,25 +16,25 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9475b323e1b9b04c5735a656eac5766b8a110810
-ms.sourcegitcommit: 48b24ccf133c9d03b0d1d4eea1ec275b2be5e3bb
+ms.openlocfilehash: ca63f95bb95a304fc410b402a68a52e5b1aeca9e
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "44016180"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44349640"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
 > [!Tip]
 > Per informazioni su come interagire con i team con Azure Active Directory (AAD), Microsoft 365 groups, Exchange, SharePoint e OneDrive for business, vedere la sessione seguente: [fondazioni di Microsoft teams](https://aka.ms/teams-foundations)
 
-Per usufruire dell'esperienza completa di Teams, è necessario che ogni utente sia abilitato per la creazione di gruppi di Office 365, Exchange Online e SharePoint Online.
+Per l'esperienza completa in teams, ogni utente deve essere abilitato per la creazione di gruppi di Exchange Online, SharePoint Online e Microsoft 365.
 
 Le cassette postali di Exchange degli utenti possono essere ospitate online o in locale. L'integrazione con Exchange locale richiede una distribuzione ibrida di Exchange. Per altre informazioni sulla configurazione di una distribuzione ibrida, vedere [distribuzioni ibride di Exchange Server](https://docs.microsoft.com/exchange/exchange-hybrid).
 
 Gli utenti ospitati in Exchange Online o Exchange dedicato a vNext possono usare tutte le funzionalità di teams. Possono creare e partecipare a team e canali, creare e visualizzare riunioni, chiamare e chattare, modificare le immagini del profilo utente (se il criterio della cassetta postale di Outlook sul Web lo consente) e aggiungere e configurare connettori, schede e bot.
 
-Gli utenti ospitati in Exchange Online dedicato (legacy) devono essere sincronizzati con Azure Active Directory in Office 365. Possono creare e partecipare a team e canali, aggiungere e configurare schede e bot e usare le funzionalità di chat e chiamate. Tuttavia, non possono modificare le immagini del profilo, gestire le riunioni, accedere ai contatti di Outlook o gestire i connettori.
+Gli utenti ospitati in Exchange Online dedicato (legacy) devono essere sincronizzati con Azure Active Directory in Microsoft 365 o Office 365. Possono creare e partecipare a team e canali, aggiungere e configurare schede e bot e usare le funzionalità di chat e chiamate. Tuttavia, non possono modificare le immagini del profilo, gestire le riunioni, accedere ai contatti di Outlook o gestire i connettori.
 
 Gli utenti con cassette postali ospitate in locale devono essere sincronizzati con Azure Active Directory. Possono sfruttare tutte le funzionalità dello scenario precedente, inoltre, possono anche modificare l'immagine del profilo utente (se il criterio delle cassette postali di Outlook sul Web lo consente) e gestire le riunioni, fornendo Exchange Server 2016 (aggiornamento cumulativo 3) o versioni successive, viene eseguito localmente con OAuth configurato, preferibilmente tramite la configurazione guidata ibrida di Exchange, come descritto in [configurare l'autenticazione OAuth tra le organizzazioni di Exchange e Exchange Online](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help). Per abilitare la delega del calendario per questi utenti, è anche necessario completare i passaggi 2-3 come descritto in [configurare l'integrazione e il protocollo OAuth tra Skype for business online ed Exchange Server](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises); Questa procedura fornirà all'applicazione per la pianificazione dei team le autorizzazioni necessarie per confermare le autorizzazioni di delega.   
 
@@ -45,12 +45,12 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 
 **Azioni supportate:**
 
-| La cassetta postale dell'utente è ospitata in: | eDiscovery| Blocco&nbsp;legale | Conservazione| MGMT per team e canali |Creare e visualizzare riunioni in teams| Modificare l'immagine del profilo utente | Cronologia chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Segreteria telefonica |Aggiungere e configurare connettori|Aggiungere e configurare le schede|Aggiungere e configurare i bot| 
+| La cassetta postale dell'utente è ospitata in: | eDiscovery| &nbsp;Blocco legale | Conservazione| MGMT per team e canali |Creare e visualizzare riunioni in teams| Modificare l'immagine del profilo utente | Cronologia chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Segreteria telefonica |Aggiungere e configurare connettori|Aggiungere e configurare le schede|Aggiungere e configurare i bot| 
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Sì<sup>8</sup>|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
 |**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Sì<sup>8</sup>|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
-|**Exchange Online dedicato-legacy** (obbligatorio per la sincronizzazione con Azure ad)|Sì <sup>2</sup>|Sì <sup>2, 3</sup>|Sì <sup>4|Sì|No|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
-|**Exchange locale** (è necessario eseguire la sincronizzazione con Azure ad & OAuth config)|Sì <sup>2</sup>| Sì <sup>2</sup> |Sì <sup>4|Sì|Sì (Exchange 2016 CU3 +)|Sì<sup>8</sup> (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup>5|Sì <sup>6|Sì|Supporto per più paesi|
+|**Exchange Online dedicato-legacy** (obbligatorio per la sincronizzazione con Azure ad)|Sì <sup>2</sup>|Sì <sup>2, 3</sup>|Sì <sup> 4|Sì|No|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup> 5|Sì <sup> 6|Sì|Supporto per più paesi|
+|**Exchange locale** (è necessario eseguire la sincronizzazione con Azure ad & OAuth config)|Sì <sup>2</sup>| Sì <sup>2</sup> |Sì <sup> 4|Sì|Sì (Exchange 2016 CU3 +)|Sì<sup>8</sup> (Exchange 2016 CU3 +)|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup> 5|Sì <sup> 6|Sì|Supporto per più paesi|
 
 <sup>1</sup> Exchange 2016 CU3 e versioni successive supportate.  
 
@@ -70,18 +70,21 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 
 ## <a name="requirements-to-get-the-most-out-of-microsoft-teams"></a>Requisiti per ottenere il massimo da Microsoft Teams
 
-Microsoft teams funziona con diversi servizi di Office 365 per consentire agli utenti un'esperienza avanzata. Per supportare questa esperienza, è necessario abilitare determinate funzionalità o servizi e assegnare licenze.
+Microsoft teams funziona con diversi servizi Microsoft 365 e Office 365 per consentire agli utenti un'esperienza avanzata. Per supportare questa esperienza, è necessario abilitare determinate funzionalità o servizi e assegnare licenze.
 
 - SharePoint Online è necessario per condividere e archiviare i file nelle conversazioni del team. Microsoft teams non supporta SharePoint locale.
 
-- Gli utenti devono essere assegnati a una licenza di SharePoint Online se vogliono condividere file in chat. Se gli utenti non sono assegnati e abilitati con le licenze di SharePoint Online, non hanno spazio di archiviazione di OneDrive for business in Office 365. La condivisione dei file continuerà a funzionare nei canali, ma gli utenti non potranno condividere file in chat senza spazio di archiviazione di OneDrive for business in Office 365.
+- Gli utenti devono essere assegnati a una licenza di SharePoint Online se vogliono condividere file in chat. Se gli utenti non sono assegnati e abilitati con le licenze di SharePoint Online, non hanno lo spazio di archiviazione di OneDrive for business in Microsoft 365 o Office 365. La condivisione dei file continuerà a funzionare nei canali, ma gli utenti non potranno condividere file in chat senza spazio di archiviazione di OneDrive for business in Microsoft 365 o Office 365.
 
-- Gli utenti devono essere abilitati per la creazione di gruppi di Office 365 per creare team in Microsoft teams.
+- Gli utenti devono essere abilitati per la creazione di gruppi di Microsoft 365 per creare team in Microsoft teams.
 
 - Per consentire a Microsoft teams di lavorare con Exchange locale, è necessario configurare il nuovo protocollo di autenticazione di Exchange OAuth, preferibilmente eseguendo la procedura guidata ibrida di Exchange, come descritto in [configurare l'autenticazione OAuth tra le organizzazioni Exchange e Exchange Online](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help). Per consentire agli utenti che dispongono di una cassetta postale di Exchange locale di pianificare le riunioni di team per conto di un altro utente, è necessario completare anche i passaggi 2-3 come descritto in [configurare Integration e OAuth tra Skype for business online ed Exchange Server](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises). 
 
 > [!NOTE]
->Per l'integrazione di Exchange locale e teams, è necessario assegnare la licenza necessaria per l'utente sincronizzato di AAD.
+> Il componente aggiuntivo Outlook teams può essere usato per pianificare una riunione di team per le cassette postali ospitate in Exchange locale. Tuttavia, la pianificazione di una riunione di team per conto di un altro utente con Exchange locale richiede Exchange 2013 CU9 e versioni successive e il nuovo protocollo di autenticazione di Exchange OAuth. Sia il delegato che il delegante devono avere una cassetta postale in Exchange locale.
+
+> [!NOTE]
+> Per l'integrazione di Exchange locale e teams, è necessario assegnare la licenza necessaria per l'utente sincronizzato di AAD.
 
 > [!IMPORTANT]
 > Se si disinstalla il client Skype for business dopo aver spostato un utente in modalità **solo teams** , la presenza potrebbe smettere di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Per risolvere il problema, selezionare l'immagine del profilo nell'angolo in alto a destra di Microsoft teams e quindi selezionare **Impostazioni**. Nella scheda **generale** in **applicazione**Selezionare **registra teams come app di chat per Office (è necessario riavviare le applicazioni di Office)**. Dopo aver selezionato questa opzione, chiudere e riaprire tutte le app di Office, incluso Outlook. Dopo l'apertura di Outlook, le informazioni sulla presenza saranno disponibili.
@@ -96,7 +99,7 @@ Ecco alcuni aspetti aggiuntivi da considerare quando implementi Microsoft teams 
 
 - Se l'organizzazione ha requisiti di conformità per verificare che tutte le discussioni delle riunioni siano individuabili, è consigliabile disabilitare le riunioni private se l'organizzatore ha una cassetta postale di Exchange locale.
 
-- In una distribuzione ibrida di Exchange, il contenuto dei messaggi di chat è ricercabile indipendentemente dal fatto che i partecipanti alla chat abbiano una cassetta postale basata sul cloud o una cassetta postale locale. Per altre informazioni, vedere [ricerca di cassette postali basate su cloud per gli utenti locali in Office 365](https://docs.microsoft.com/office365/securitycompliance/search-cloud-based-mailboxes-for-on-premises-users). Per informazioni su come cercare contenuto in teams, leggere [Ricerca contenuto nel centro conformità Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/content-search#searching-microsoft-teams-and-office-365-groups).
+- In una distribuzione ibrida di Exchange, il contenuto dei messaggi di chat è ricercabile indipendentemente dal fatto che i partecipanti alla chat abbiano una cassetta postale basata sul cloud o una cassetta postale locale. Per altre informazioni, vedere [ricerca di cassette postali basate su cloud per gli utenti locali](https://docs.microsoft.com/office365/securitycompliance/search-cloud-based-mailboxes-for-on-premises-users). Per informazioni su come cercare contenuto in teams, leggere [Ricerca contenuto nel centro conformità Microsoft 365](https://docs.microsoft.com/Office365/SecurityCompliance/content-search#searching-microsoft-teams-and-office-365-groups).
 
 > [!TIP]
 > Per informazioni su come usare Azure AD Connect per la sincronizzazione con Azure Active Directory, vedere [integrazione delle identità locali con Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=854600).
