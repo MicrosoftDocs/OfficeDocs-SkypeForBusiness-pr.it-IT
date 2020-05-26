@@ -20,12 +20,12 @@ ms.custom:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft teams per semplificare, snellire e garantire la coerenza quando si gestiscono i criteri per i gruppi di utenti.
-ms.openlocfilehash: 6927e2efae60370c0622f38570fc961794734f35
-ms.sourcegitcommit: e0ed3b6478918c4737648e6c27eb01de0b622b0e
+ms.openlocfilehash: d9ad5c2308ead1fe5761755270f81f058bf0fa3c
+ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44322301"
+ms.lasthandoff: 05/23/2020
+ms.locfileid: "44353023"
 ---
 # <a name="manage-policy-packages-in-microsoft-teams"></a>Gestire i pacchetti di criteri in Microsoft Teams
 
@@ -47,8 +47,8 @@ I team attualmente includono i seguenti pacchetti di criteri.
 |Istruzione (studente di scuola elementare)   |Crea un set di criteri e impostazioni dei criteri applicabili agli studenti primari.|
 |Istruzione (studente di scuola secondaria)    |Crea un set di criteri e impostazioni dei criteri applicabili agli studenti secondari.         |
 |Istruzione (insegnante)    |Crea un set di criteri e impostazioni dei criteri applicabili agli insegnanti.      |
-|Istruzione (insegnante di scuola elementare che usa l'apprendimento remoto) (anteprima)   |Crea un set di criteri che si applicano agli insegnanti primari per massimizzare la sicurezza degli studenti e la collaborazione quando si usa l'apprendimento remoto.      |
-|Istruzione (studente della scuola elementare che usa l'apprendimento remoto) (anteprima)    |Crea un set di criteri che si applicano agli studenti primari per massimizzare la sicurezza degli studenti e la collaborazione quando si usa l'apprendimento remoto.      |
+|Istruzione (insegnante di scuola elementare che usa l'apprendimento remoto)    |Crea una serie di criteri che si applicano agli insegnanti delle scuole elementari per massimizzare la sicurezza e la collaborazione degli studenti quando si adotta l'apprendimento a distanza.      |
+|Istruzione (studente della scuola elementare che usa l'apprendimento remoto)    |Crea una serie di criteri che si applicano agli studenti delle scuole elementari per massimizzare la sicurezza e la collaborazione degli studenti quando si adotta l'apprendimento a distanza.      |
 |Lavoratore clinico sanitario  |Crea un set di criteri e impostazioni dei criteri che conferiscono agli operatori clinici, ad esempio infermieri registrati, addebiti infermieri, medici e assistenti sociali, l'accesso completo alla chat, alle chiamate, alla gestione del turno e alle riunioni. |
 |Information Worker sanitari  |Crea un set di criteri e impostazioni dei criteri che forniscono agli Information Worker come personale IT, personale informatico, personale finanziario e responsabili della conformità, accesso completo alla chat, alle chiamate e alle riunioni.|
 |Sala paziente sanitaria  |Crea un set di criteri e impostazioni dei criteri applicabili alle sale del paziente nell'organizzazione sanitaria.|

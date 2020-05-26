@@ -100,8 +100,8 @@
 ### [Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams](manage-teams-skypeforbusiness-admin-center.md).
 ### [Gestire Teams nell'Interfaccia di amministrazione di Microsoft Teams](manage-teams-in-modern-portal.md)
 ### [Assegnare proprietari e membri dei team in Teams](assign-roles-permissions.md)
-### [Modificare le impostazioni utente di Teams in blocco](edit-user-settings-in-bulk.md)
 ### [Assegnare i criteri agli utenti](assign-policies.md)
+### [Visualizzare le assegnazioni dei criteri nel Log attività](activity-log.md)
 ### [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)
 ### [Gestire i criteri di configurazione delle app in Teams](teams-app-setup-policies.md)
 ### [Gestire le impostazioni e i criteri delle app personalizzate in Teams](teams-custom-app-policies-and-settings.md)
