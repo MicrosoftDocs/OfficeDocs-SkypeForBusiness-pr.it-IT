@@ -23,12 +23,12 @@ ms.custom:
 - Calling Plans
 ROBOTS: NOINDEX, NOFOLLOW
 description: Quando si ottengono numeri di telefono o porting (trasferendo) i numeri per l'organizzazione, potrebbe essere necessario ottenere assistenza e supporto tecnico presso il servizio di assistenza PSTN.
-ms.openlocfilehash: f9dd45f70a0e233f22fbbe607731d65146c705f7
-ms.sourcegitcommit: a09334ef1a6b0a877839c3b46165eb5a6aad1ba9
+ms.openlocfilehash: 3079d6881d86239d395c036c9630ef5ee2eac151
+ms.sourcegitcommit: 47637ed816b471fe689e7bdac27b73e6efced60c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/02/2020
-ms.locfileid: "44006012"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374274"
 ---
 # <a name="pstn-service-desk-contact"></a>Contatto per il servizio di assistenza PSTN
 
@@ -38,6 +38,7 @@ Il team di Service Desk PSTN ha attualmente tre indirizzi di posta elettronica p
 |:-----:|:------:|
 | [**All'interno degli Stati Uniti o Canada**, invia un messaggio di posta elettronica su PTN@microsoft.com](mailto:ptn@microsoft.com)| [**Belgio, Francia, Germania, Gran Bretagna, Irlanda, Paesi Bassi, Spagna, Svezia, Svizzera**, invia un messaggio di posta elettronica a ptneu@microsoft.com](mailto:ptneu@microsoft.com)|
 |[Al di **fuori degli Stati Uniti o Canada**, invia un messaggio di posta elettronica su ptneu@microsoft.com](mailto:ptneu@microsoft.com)| [**Resto del mondo**, invia un messaggio di posta elettronica a gcstnmsd@microsoft.com](mailto:gcstnmsd@microsoft.com)|
+|A causa di un picco elevato nelle richieste in arrivo, il team di conversione del **Nord America** viene eseguito il backlog. Stiamo lavorando per cancellare questo backlog in base a una FIFO (First in, First out) e, di conseguenza, **la risposta alle nuove richieste verrà ritardata.**|
 
 Se hai bisogno **di assistenza per trasferire/convertire i numeri di telefono esistenti in Microsoft teams**, Includi il maggior numero possibile di dettagli:
   - [ID organizzazione (ID tenant) o domini Microsoft attualmente attivi](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).

@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: 2f6a88276a2b5d3214b89555d0008e2b58cf1aa2
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: 87f790db77d2f98f66f53e399bf13f134a8e0a6e
+ms.sourcegitcommit: 47637ed816b471fe689e7bdac27b73e6efced60c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44349560"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374314"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -70,17 +70,17 @@ Assegnare poi il criterio agli utenti.
 
 ## <a name="assign-a-meeting-policy-to-users"></a>Assegnare un criterio riunione agli utenti
 
-Per assegnare un criterio di riunione a un solo utente:
+Per assegnare un criterio riunione a un solo utente:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi fare clic sull'utente.
 2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
 3. In **Criteri riunioni** selezionare il criterio da assegnare e poi fare clic su **Applica**.
 
-Per assegnare un criterio a più utenti alla volta:
+Per assegnare un criterio a più utenti contemporaneamente:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi cerca gli utenti o filtra la visualizzazione per mostrare gli utenti desiderati.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
 2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
-3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **applica**.  
+3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **Applica**.  
 
 Si può anche procedere nel modo seguente:
 
@@ -333,60 +333,32 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 
 ### <a name="let-anonymous-people-start-a-meeting"></a>Consenti alle persone anonime di avviare una riunione
 
-Questo è un criterio per organizzatore. Questa impostazione controlla se gli utenti anonimi, inclusi gli utenti B2B e federati, possono partecipare alla riunione dell'utente in assenza di un utente autenticato dell'organizzazione. Il valore predefinito è False.
+Si tratta di un criterio per organizzatore che consente la chiamata in riunioni di conferenza. Questa impostazione controlla se la chiamata in utenti può partecipare alla riunione senza un utente autenticato dall'organizzazione in presenza. Il valore predefinito è false che indica che la chiamata in utenti attenderà nella sala di attesa fino a quando un utente autenticato dell'organizzazione non partecipa alla riunione. 
 
-![Screenshot che mostra un messaggio a un utente in attesa](media/meeting-policies-anonymous-user-lobby.png)
+**Nota** Se falso e una chiamata in un utente si unisce prima alla riunione e viene inserita nella sala di attesa, un utente dell'organizzazione deve partecipare alla riunione con un client di teams per ammettere l'utente da lobbby. Non sono disponibili controlli della sala di attesa per gli utenti con accesso esterno. 
 
-Ecco il comportamento di partecipazione degli utenti anonimi quando nella riunione sono presenti utenti autenticati.
-
-|Consenti alle persone anonime di avviare una riunione  |Ammetti automaticamente le persone |Comportamento di partecipazione degli utenti anonimi |
-|---------|---------|---------|
-|Vero    | Tutti      | Accesso diretto         |
-|   | Tutti gli utenti dell'organizzazione       | Attesa in sala di attesa        |
-|   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate       | Attesa in sala di attesa         |
-|Falso    | Tutti        | Accesso diretto        |
-|   | Tutti gli utenti dell'organizzazione     | Attesa in sala di attesa        |
-|   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate      | Attesa in sala di attesa         |
-
-Ecco il comportamento di partecipazione degli utenti anonimi quando nella riunione non sono presenti utenti autenticati.
-
-|Consenti alle persone anonime di avviare una riunione |Ammetti automaticamente le persone  |Comportamento di partecipazione degli utenti anonimi |
-|---------|---------|---------|
-|Vero    | Tutti      | Accesso diretto         |
-|   | Tutti gli utenti dell'organizzazione       | Attesa in sala di attesa        |
-|   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate       | Attesa in sala di attesa         |
-|Falso    | Tutti        | Attesa in sala di attesa. Gli utenti vengono ammessi automaticamente quando il primo utente autenticato entra nella riunione.        |
-|   | Tutti gli utenti dell'organizzazione     |Attesa in sala di attesa         |
-|   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate      | Attesa in sala di attesa         |
 
 ### <a name="automatically-admit-people"></a>Ammetti automaticamente le persone
 
-Questo è un criterio per organizzatore. Questa impostazione controlla se gli utenti si uniscono direttamente a una riunione o restano in sala di attesa finché non vengono ammessi da un utente autenticato.
+Questo è un criterio per organizzatore. Questa impostazione controlla se gli utenti si uniscono direttamente a una riunione o restano in sala di attesa finché non vengono ammessi da un utente autenticato. Questa impostazione non si applica alla chiamata in utenti. 
 
 ![Screenshot che mostra una riunione con un utente in sala di attesa](media/meeting-policies-lobby.png)
 
  Gli organizzatori di riunioni possono fare clic **Opzioni riunione** nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata.
+ 
+ **Nota** Nelle opzioni della riunione l'impostazione è etichettata "chi può bypassare la sala d'attesa"
   
 |Valore dell'impostazione  |Comportamento di partecipazione |
 |---------|---------|
-|**Tutti**   |Tutti i partecipanti accedono direttamente alla riunione senza passare dalla sala di attesa. Sono inclusi utenti autenticati, utenti federati, guest, utenti anonimi e utenti che effettuano l'accesso tramite telefono.       |
-|**Tutti gli utenti dell'organizzazione e delle organizzazioni federate**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti di organizzazioni federate, accedono direttamente alla riunione senza passare dalla sala di attesa.  Gli utenti anonimi e quelli che effettuano l'accesso tramite telefono aspettano in sala di attesa.   |
-|**Tutti gli utenti dell'organizzazione**    |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa.  Gli utenti federati, gli utenti anonimi e quelli che effettuano l'accesso tramite telefono aspettano in sala di attesa. Questa è l'impostazione predefinita.           |
+|**Tutti**   |Tutti i partecipanti accedono direttamente alla riunione senza passare dalla sala di attesa. Sono inclusi utenti autenticati, utenti esterni di organizzazioni attendibili (federati), Guest e utenti anonimi.     |
+|**Tutti gli utenti dell'organizzazione e delle organizzazioni federate**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti provenienti da organizzazioni attendibili, partecipano direttamente alla riunione senza attendere nella sala di attesa.  Gli utenti anonimi attendono nella sala di attesa.   |
+|**Tutti gli utenti dell'organizzazione**    |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa.  Gli utenti di organizzazioni attendibili e utenti anonimi attendono nella sala di attesa. Questa è l'impostazione predefinita.           |
 
 ### <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa
 
-Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Il valore predefinito è False.
+Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Il valore predefinito è False. Quando falso, gli utenti della chiamata in ingresso aspetteranno nella sala di attesa finché un utente dell'organizzazione non partecipa alla riunione con un client di teams e li ammette. Quando true, la chiamata in utenti si unirà automaticamente alla riunione quando un utente dell'organizzazione partecipa alla riunione. 
 
-Ecco il comportamento di partecipazione degli utenti che effettuano l'accesso tramite telefono.
-
-|Consenti agli utenti che chiamano di ignorare la sala di attesa  |Ammetti automaticamente le persone  |Comportamento di partecipazione degli utenti che accedono tramite telefono |
-|---------|---------|---------|
-|Vero    | Tutti      | Accesso diretto         |
-|   | Tutti gli utenti dell'organizzazione       | Accesso diretto        |
-|   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate       | Accesso diretto         |
-|Falso    | Tutti        | Accesso diretto        |
-|   | Tutti gli utenti dell'organizzazione     |Attesa in sala di attesa         |
-|   | Tutti gli utenti dell'organizzazione e delle organizzazioni federate      | Attesa in sala di attesa         |
+**Nota** Se una chiamata in un utente partecipa a una riunione prima che un utente dell'organizzazione partecipi alla riunione, verrà inserita nella sala di attesa fino a quando un utente dell'organizzazione non partecipa alla riunione usando un client di teams e li ammette. 
 
 
 ### <a name="enable-live-captions"></a>Abilita i sottotitoli in tempo reale

@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni sui registri di debug, multimediali e desktop prodotti da Microsoft teams, dove possono essere trovati e come possono essere utili per la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2c8da7e60e785d765e77e17935b60382e864a83b
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: a9981a30eb0365f2919d86bd6bf694375e71e9eb
+ms.sourcegitcommit: 47637ed816b471fe689e7bdac27b73e6efced60c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41833376"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374204"
 ---
 <a name="use-log-files-in-troubleshooting-microsoft-teams"></a>Usare i file di log in risoluzione dei problemi di Microsoft Teams
 =================================================
@@ -39,7 +39,7 @@ Quando si crea una richiesta di supporto con il supporto Microsoft, il tecnico d
 La tabella seguente descrive i diversi client e i registri associati. I file di log sono archiviati in posizioni specifiche per il client e il sistema operativo.
 
 
-|Client |Debug|Desktop|Contenuti multimediali|
+|Client |Debug|Desktop|Elementi multimediali|
 |---------|---------|---------|---------|
 |Web    |X         |-         |-         |
 |Windows     |X         |X         |X         |
@@ -74,7 +74,7 @@ I log di debug vengono prodotti usando i seguenti metodi specifici per il sistem
 
 I log di debug vengono scaricati automaticamente nelle cartelle seguenti.
 
--   Windows:% UserProfile%\\download
+-   Windows:% UserProfile% \\ download
 
 -   Mac OSX: download
 
@@ -88,9 +88,9 @@ I registri multimediali contengono dati di diagnostica relativi alla condivision
 
 |Client |Posizione |
 |---------|---------|
-|Windows     |%appdata%\Microsoft\Teams\media-stack\\*. Blog         |
-|            |%appdata%\Microsoft\Teams\skylib\\*. Blog
-|            |%appdata%\Microsoft\Teams\media-stack\\*. etl         |
+|Windows     |%appdata%\Microsoft\Teams\media-stack \\ *. Blog         |
+|            |%appdata%\Microsoft\Teams\skylib \\ *. Blog
+|            |%appdata%\Microsoft\Teams\media-stack \\ *. etl         |
 |Mac OSX     |~/Libreria/Application Support/Microsoft/teams/media-stack/*. Blog         |
 |            |~/Libreria/Application Support/Microsoft/teams/skylib/*. Blog         |
 

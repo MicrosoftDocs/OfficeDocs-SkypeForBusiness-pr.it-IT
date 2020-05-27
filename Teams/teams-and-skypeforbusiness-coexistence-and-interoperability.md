@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dc2a4495d95d0c6458fef16ea2f3f336dd337db4
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: e34bc0b15186afdbbe33edb154f02b4decdc3b12
+ms.sourcegitcommit: 47637ed816b471fe689e7bdac27b73e6efced60c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140677"
+ms.lasthandoff: 05/27/2020
+ms.locfileid: "44374304"
 ---
 # <a name="understand-microsoft-teams-and-skype-for-business-coexistence-and-interoperability"></a>Informazioni sulla coesistenza e l'interoperabilità di Microsoft teams e Skype for business
 
@@ -82,6 +82,8 @@ Questa modalità può essere usata prima di avviare una distribuzione gestita di
 Un utente **solo teams** (detto anche utente *aggiornato* ) ha accesso a tutte le funzionalità in teams. Possono mantenere il client Skype for business per partecipare a riunioni su Skype for business organizzati da utenti non aggiornati o da parti esterne. Un utente aggiornato può continuare a comunicare con altri utenti dell'organizzazione che usano ancora Skype for business usando le funzionalità di interoperabilità tra teams e Skype for business (purché gli utenti di Skype for business non siano in modalità **isole** ). Tuttavia, un utente aggiornato non può avviare una chat, una chiamata o una riunione Skype for business.
 
 Non appena l'organizzazione è pronta per consentire ad alcuni o a tutti gli utenti di usare teams come unico strumento di comunicazione e collaborazione, è possibile aggiornare gli utenti alla modalità **solo teams** . Se si esegue l'aggiornamento dalla modalità **Islands** , è consigliabile saturare prima di tutto l'adozione di teams in tutta l'organizzazione prima di iniziare il processo di aggiornamento. In questo modo si evitano scenari di comunicazione interrotti a causa della modalità **Islands** che non offre interoperabilità.
+
+Quando si è in modalità **solo teams** , teams è l'app predefinita per il protocollo SIP/Tel. Ciò significa che i collegamenti nella scheda contatto di un utente in Outlook per la chiamata o la chat verranno gestiti da teams.
 
 Per altre considerazioni su come passare alla modalità **solo teams** , vedere [considerazioni sulla modalità solo teams](teams-only-mode-considerations.md).
 
@@ -204,7 +206,7 @@ Dopo l'accettazione, vengono inseriti nella riunione Teams; devono iniziare la c
  
 Nel frattempo, l'utente di Skype for business riceve un messaggio di chat in arrivo con il collegamento alla riunione e viene guidato per partecipare.
 
-Questa escalation a una riunione di teams è disponibile sia per l'interoperabilità in-tenant che per le chiamate e le chat federative tra tenant. È attivato per impostazione predefinita e non sono presenti impostazioni che l'amministratore deve eseguire il provisioning. Tuttavia, è disattivata per l'utente se l'amministratore viene ``-AllowPrivateMeetNow`` impostato ``CsTeamsMeetingPolicy`` su ``$false``.
+Questa escalation a una riunione di teams è disponibile sia per l'interoperabilità in-tenant che per le chiamate e le chat federative tra tenant. È attivato per impostazione predefinita e non sono presenti impostazioni che l'amministratore deve eseguire il provisioning. Tuttavia, è disattivata per l'utente se l'amministratore viene ``-AllowPrivateMeetNow`` impostato ``CsTeamsMeetingPolicy`` su ``$false`` .
 
 Dopo aver esaminato questo articolo, vedere [scegliere il percorso di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md), le [linee guida per la migrazione e l'interoperabilità](https://aka.ms/SkypeToTeams-Interop), la [coesistenza con Skype for business](coexistence-chat-calls-presence.md)e [impostare le impostazioni di coesistenza e aggiornamento](https://aka.ms/SkypeToTeams-SetCoexistence) per i dettagli di implementazione.
 
