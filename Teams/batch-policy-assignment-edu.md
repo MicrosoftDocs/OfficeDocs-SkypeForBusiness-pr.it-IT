@@ -17,12 +17,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare l'assegnazione di criteri batch per assegnare i criteri a set di grandi dimensioni degli utenti nell'Istituto di istruzione in blocco per scopi scolastici remoti (Teleschool, tele-scuola).
 f1keywords: ''
-ms.openlocfilehash: bb851981f9923869d39c690dff6d22e446e0e844
-ms.sourcegitcommit: e710bb8dbbd084912cbf509896515a674ab5e19f
+ms.openlocfilehash: 5772a260642b09232e4df5eec57751a39ec2a74a
+ms.sourcegitcommit: 86b0956680b867b8bedb2e969220b8006829ee53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/28/2020
-ms.locfileid: "43033360"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44410441"
 ---
 # <a name="assign-policies-to-large-sets-of-users-in-your-school"></a>Assegnare criteri a grandi gruppi di utenti nella tua scuola
 
@@ -108,10 +108,8 @@ $faculty = Get-AzureADUser -All $true | Where-Object {($_.assignedLicenses).SkuI
 
 ## <a name="assign-a-policy-in-bulk"></a>Assegnare un criterio in blocco
 
-A questo punto, assegniamo i criteri appropriati agli utenti in blocco. Il numero massimo di utenti per cui è possibile assegnare o aggiornare i criteri è 20.000 alla volta. Ad esempio, se si hanno più di 20.000 personale ed educatori, è necessario inviare più batch.
+A questo punto, assegniamo i criteri appropriati agli utenti in blocco. Il numero massimo di utenti per cui è possibile assegnare o aggiornare i criteri è 5.000 alla volta. Ad esempio, se si hanno più di 5.000 personale ed educatori, è necessario inviare più batch.
 
-> [!IMPORTANT]
-> Attualmente consigliamo di assegnare criteri in batch di utenti di 5.000 alla volta. Durante questi periodi di maggiore domanda, potresti riscontrare ritardi nei tempi di elaborazione. Per ridurre al minimo l'impatto di questi tempi di elaborazione più elevati, ti consigliamo di inviare dimensioni batch più piccole fino a utenti di 5.000 e inviare ogni batch solo dopo il completamento di quello precedente. L'invio di batch all'esterno dell'orario di lavoro normale può anche essere utile.
 
 Eseguire la procedura seguente per assegnare il criterio della riunione denominato EducatorMeetingPolicy al personale e agli insegnanti.
 
@@ -130,13 +128,13 @@ Ogni assegnazione in blocco restituisce un ID operazione, che può essere usato 
 Get-CsBatchPolicyAssignmentOperation -OperationId 3964004e-caa8-4eb4-b0d2-7dd2c8173c8c | fl
 ```
 
-Per visualizzare lo stato di assegnazione di ogni utente nell'operazione batch, eseguire la procedura seguente. I ```UserState``` dettagli di ogni utente si trovano nella proprietà.
+Per visualizzare lo stato di assegnazione di ogni utente nell'operazione batch, eseguire la procedura seguente. I dettagli di ogni utente si trovano nella ```UserState``` Proprietà.
 
 ```powershell
 Get-CsBatchPolicyAssignmentOperation -OperationId 3964004e-caa8-4eb4-b0d2-7dd2c8173c8c | Select -ExpandProperty UserState
 ```
 
-## <a name="assign-a-policy-in-bulk-if-you-have-more-than-20000-users"></a>Assegnare un criterio in blocco se si hanno più di 20.000 utenti
+## <a name="assign-a-policy-in-bulk-if-you-have-more-than-5000-users"></a>Assegnare un criterio in blocco se si hanno più di 5.000 utenti
 
 Prima di tutto, eseguire le operazioni seguenti per verificare il numero di membri del personale e gli insegnanti:
 
@@ -144,13 +142,13 @@ Prima di tutto, eseguire le operazioni seguenti per verificare il numero di memb
 $faculty.count
 ```
 
-Invece di fornire l'intero elenco di ID utente, eseguire la procedura seguente per specificare il primo 20.000 e quindi il successivo 20.000 e così via.
+Invece di fornire l'intero elenco di ID utente, eseguire la procedura seguente per specificare il primo 5.000 e quindi il successivo 5.000 e così via.
 
 ```powershell
 New-CsBatchPolicyAssignmentOperation -PolicyType TeamsMeetingPolicy -PolicyName EducatorMeetingPolicy -Identity $faculty[0..19999].ObjectId
 ```
 
-Puoi modificare l'intervallo di ID utente fino a raggiungere l'elenco completo degli utenti. Ad esempio, immetti ```$faculty[0..19999``` per il primo batch, ```$faculty[20000..39999``` USA per il secondo batch, ```$faculty[40000..59999``` Immetti per il terzo batch e così via.
+Puoi modificare l'intervallo di ID utente fino a raggiungere l'elenco completo degli utenti. Ad esempio, immetti ```$faculty[0..4999``` per il primo batch, USA ```$faculty[5000..9999``` per il secondo batch, immetti ```$faculty[10000..14999``` per il terzo batch e così via.
 
 ## <a name="get-the-policies-assigned-to-a-user"></a>Ottenere i criteri assegnati a un utente
 

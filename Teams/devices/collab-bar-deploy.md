@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni sulla distribuzione di barre di collaborazione per Microsoft teams.
-ms.openlocfilehash: 4593d6b42e61efbd7d57f27fd0a10ed8f97b82f5
-ms.sourcegitcommit: f0ccafb7e9c2d382ab4545e085657e8129024f1d
+ms.openlocfilehash: 71f9482dd5f42ddeb56b32c1a92db033d1f179f7
+ms.sourcegitcommit: 86b0956680b867b8bedb2e969220b8006829ee53
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268054"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44410451"
 ---
 # <a name="deploy-collaboration-bars-for-microsoft-teams"></a>Distribuire barre di collaborazione per Microsoft Teams
 
@@ -62,7 +62,7 @@ Prima di distribuire le barre di collaborazione, è necessario decidere se usare
 
 Se si decide di configurare un account Microsoft 365 Resource, è necessario acquistare una licenza per la sala riunioni. La licenza della sala riunioni include una cassetta postale per le risorse che consente alle persone dell'organizzazione di prenotare la sala riunioni tramite Outlook o teams. La licenza consente inoltre la condivisione di video e audio e lo schermo tra i partecipanti alla riunione.
 
-Se è necessario ricevere o effettuare chiamate da o verso un numero di telefono esterno, è necessario anche un sistema telefonico Microsoft 365 o una licenza vocale di Microsoft 365 business.
+Se è necessario ricevere o effettuare chiamate da o verso un numero di telefono esterno, potrebbe essere necessario un piano di chiamata o una licenza per [il componente aggiuntivo](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?tabs=small-business)Voice business per Microsoft 365. Se si ha un routing diretto abilitato nell'organizzazione, è necessaria solo la SKU della sala riunioni.
 
 Quando si crea un account di risorse, è possibile scegliere se consentire all'account di accettare o rifiutare automaticamente le convocazioni di riunione, concedere riunioni ricorrenti, specificare la quantità di persone in anticipo che possono prenotare la risorsa e così via.
 
@@ -87,7 +87,7 @@ La pianificazione della configurazione e della distribuzione comprende le aree p
 
 ### <a name="account-provisioning"></a>Provisioning degli account
 
-Se si prevede di usare gli account delle risorse di Microsoft 365 per consentire agli utenti di prenotare le barre di collaborazione, seguire le istruzioni in [creare un account risorse usando l'](resource-account-ui.md) interfaccia di amministrazione di Microsoft 365 per creare un account di risorse di Microsoft 365 per ogni barra di collaborazione che ne ha bisogno. Anche in questo caso è necessario aggiungere una licenza per la sala riunioni all'account delle risorse e, se si vogliono effettuare o ricevere chiamate da o verso numeri di telefono esterni, un sistema telefonico o una licenza vocale commerciale.
+Se si prevede di usare gli account delle risorse di Microsoft 365 per consentire agli utenti di prenotare le barre di collaborazione, seguire le istruzioni in [creare un account risorse usando l'](resource-account-ui.md) interfaccia di amministrazione di Microsoft 365 per creare un account di risorse di Microsoft 365 per ogni barra di collaborazione che ne ha bisogno. Anche in questo caso è necessario aggiungere una licenza per la sala riunioni all'account delle risorse e, se si vogliono effettuare o ricevere chiamate da o verso numeri di telefono esterni, un piano di chiamata o una licenza vocale aziendale se l'organizzazione non usa il routing diretto.
 
 Se si vogliono assegnare barre di collaborazione a singoli utenti per l'uso privato, non è necessario configurare altri account. Gli utenti possono accedere alle barre di collaborazione usando gli account personali.
 

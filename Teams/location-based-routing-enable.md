@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 69f2ee37e63f83d6fc1d19ea733ff44ad23e7011
-ms.sourcegitcommit: 6e24ea8aa9cccf8a1a964c8ed414ef5c7de3dc17
+ms.openlocfilehash: 4daf270dcd67dc732bba5e5fe134d5a0994dcd75
+ms.sourcegitcommit: 2295a668a6f118b95f010e81150351741572b076
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44158993"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44412643"
 ---
 # <a name="enable-location-based-routing-for-direct-routing"></a>Abilitare l'instradamento basato sulla posizione per Instradamento diretto
 
@@ -54,7 +54,7 @@ Per ulteriori informazioni su come creare criteri di routing vocale e assegnarli
 
 ### <a name="enable-location-based-routing-for-network-sites"></a>Abilitare il routing basato sulla posizione per i siti di rete
 
-Abilitare il routing basato sulla posizione per i siti che devono applicare restrizioni di routing. A questo scopo, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alla**topologia di rete** **locations** > , seleziona un sito di rete, fai clic su **modifica**e quindi attiva **routing basato sulla posizione**.  
+Abilitare il routing basato sulla posizione per i siti che devono applicare restrizioni di routing. A questo scopo, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations**, vai alla  >  **topologia di rete**locations, seleziona un sito di rete, fai clic su **modifica**e quindi attiva **routing basato sulla posizione**.  
 
 Per altre informazioni, vedere [gestire la topologia di rete](manage-your-network-topology.md).
 
@@ -62,7 +62,7 @@ Per altre informazioni, vedere [gestire la topologia di rete](manage-your-networ
 
 Abilitare il routing basato sulla posizione ai gateway che instradano le chiamate ai gateway PSTN che instradano le chiamate alla rete PSTN e associano il sito in cui si trova il gateway. 
 
-1. Nella barra di spostamento sinistra, passa a routing **vocale** > **diretto**e quindi fai clic sulla scheda **SBCS** .
+1. Nella barra di spostamento sinistra, passa a routing **vocale**  >  **diretto**e quindi fai clic sulla scheda **SBCS** .
 2. Selezionare l'SBC e quindi fare clic su **modifica**. 
 3. In **ottimizzazione di routing e media basato sulla posizione**attivare **Abilita routing basato sulla posizione**.
 4. Specificare l'ID sito del gateway e quindi impostare la modalità di bypass.
@@ -176,17 +176,6 @@ Per altre informazioni, vedere [chiamare i criteri in teams](teams-calling-polic
     Identity: sbc2.contoso.com 
     GatewaySiteLbrEnabled: $false 
     ```
-
-    Gli endpoint connessi a sistemi che non instradano le chiamate alla rete PSTN (ad esempio, un PBX) avranno restrizioni simili agli endpoint degli utenti di teams abilitati per il routing basato sulla posizione. Ciò significa che questi utenti possono effettuare e ricevere chiamate da e verso utenti di teams indipendentemente dalla posizione dell'utente. Possono anche effettuare e ricevere chiamate da e verso altri sistemi che non instradano le chiamate alla rete PSTN, ad esempio un endpoint connesso a un PBX diverso, indipendentemente dal sito di rete a cui è associato il sistema. Tutte le chiamate in ingresso, le chiamate in uscita, i trasferimenti delle chiamate e l'inoltro di chiamata che coinvolgono endpoint PSTN saranno soggetti a imposte di routing basate sulla posizione. Queste chiamate devono usare solo gateway PSTN definiti come locali per tali sistemi. 
-
-    La tabella seguente mostra la configurazione del gateway di quattro gateway in due diversi siti di rete: due collegati a gateway PSTN e due collegati a sistemi PBX. 
-
-    ||GatewaySiteLbrEnabled   |NetworkSiteID  |
-    |---------|---------|---------|
-    |PstnGateway: Gateway 1 DEL-GW    |    Vero     |   Sito 1 (Delhi)      |
-    |PstnGateway: Gateway 2 HYD-GW     |   Vero      |      Sito 2 (Hyderabad)   |
-    |PstnGateway: Gateway 3 DEL-PBX    |    Falso     |     Sito 1 (Delhi)    |
-    |PstnGateway: Gateway 4 HYD-PBX    |    Falso     |    Sito 2 (Hyderabad)     |
 
 ### <a name="enable-location-based-routing-for-calling-policies"></a>Abilitare il routing basato sulla posizione per i criteri di chiamata
 
