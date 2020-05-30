@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 89e7db133b8878e77dbf14025b97c658b0de21e4
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: 052cf825e2f05dd17a77043ab87bedbb2f3f8d9c
+ms.sourcegitcommit: 1e7bc16969db01317ee482cabf681febae0ef51f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44349610"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44416726"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -37,6 +37,7 @@ Il componente aggiuntivo riunione teams viene installato automaticamente per gli
 ![Screenshot del componente aggiuntivo Riunione di Teams sulla barra multifunzione di Outlook](media/Teams-add-in-for-Outlook.png)
 
 > [!NOTE]
+> - Non esiste **alcun URL diretto** che si collega al componente aggiuntivo teams.
 > - Ci sono altre considerazioni se l'organizzazione esegue sia team che Skype for business. In alcune circostanze, il componente aggiuntivo teams non è disponibile in Outlook. Per informazioni dettagliate, vedere [eseguire l'aggiornamento da Skype for business a teams](https://docs.microsoft.com/microsoftteams/upgrade-to-teams-on-prem-overview#meetings) .
 > - Le autorizzazioni utente per eseguire il file Regsvr32.exe sono un requisito minimo per installare il componente aggiuntivo Riunione di Teams nel computer.
 > - Se gli utenti non vedono il componente aggiuntivo Riunione di Teams, puoi chiedere loro di chiudere Outlook e Teams, quindi di riavviare prima il client Team, poi di accedere a Teams e infine di riavviare il client Outlook nell’ordine appena esposto.
@@ -65,6 +66,7 @@ Il pulsante Riunione di Teams compare nelle build più recenti dell'app di Outlo
 Le coordinate della riunione, ossia il collegamento per unirsi a Teams e i numeri telefonici di accesso esterno, verranno aggiunte all'invito alla riunione dopo che l'utente avrà fatto clic su **Invia**.  
 
 ## <a name="teams-meeting-add-in-in-and-findtime-for-outlook"></a>Componente aggiuntivo Riunione di Teams in TrovaOrario per Outlook
+
 FindTime è un componente aggiuntivo per Outlook che consente agli utenti di raggiungere il consenso in un periodo di riunione tra le aziende. Una volta che gli invitati della riunione hanno fornito il loro orario preferito, TrovaOrario invia l'invito alla riunione per conto dell'utente. Se viene selezionata l'opzione **Riunione online** in TrovaOrario, verrà programmata una riunione di Skype for Business o di Microsoft Teams. (TrovaOrario userà qualsiasi opzione impostata dall'organizzazione come canale predefinito per le riunioni online.)
 
 > [!NOTE]  
@@ -96,15 +98,25 @@ Il client Teams installa il componente aggiuntivo corretto determinando se gli u
 
 I clienti possono [scegliere il percorso di aggiornamento da Skype for Business a Teams](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md). Gli amministratori tenant possono usare la modalità di coesistenza di Teams per definire questo percorso per gli utenti. Gli amministratori tenant hanno la possibilità di consentire agli utenti di usare Teams insieme a Skype for Business (modalità Isole). 
 
-Quando gli utenti in modalità Isole pianificano una riunione in Outlook, in genere prevedono di decidere se pianificare una riunione di Skype for Business o di Teams. In Outlook sul web, Outlook Windows e Outlook Mac, gli utenti possono vedere i componenti aggiuntivi di Skype for Business e Teams in modalità Isole. A causa di alcune limitazioni nel rilascio iniziale, Outlook Mobile supporta solo la creazione di riunioni di Skype for Business **o** di Teams. Per altri dettagli, vedere la tabella seguente.
+Quando gli utenti in modalità Isole pianificano una riunione in Outlook, in genere prevedono di decidere se pianificare una riunione di Skype for Business o di Teams. In Outlook sul Web, Outlook Windows e Outlook Mac, gli utenti possono visualizzare i componenti aggiuntivi Skype for business e teams in modalità Islands per impostazione predefinita. È possibile configurare un'impostazione di criteri riunione teams per controllare se gli utenti in modalità isole possono usare solo il componente aggiuntivo riunione teams o sia la riunione teams che i componenti aggiuntivi per le riunioni di Skype for business.
+
+A causa di alcune limitazioni nel rilascio iniziale, Outlook Mobile supporta solo la creazione di riunioni di Skype for Business **o** di Teams. Per altri dettagli, vedere la tabella seguente.
 
 | Modalità di coesistenza nell’interfaccia di amministrazione di Teams | Provider di riunioni predefinito in Outlook Mobile |
 | --------------------------------------|---------------------------------------------|
 | Isole | Skype for Business |
 | Solo Skype for Business | Skype for Business |
 | Collaborazione di Skype for Business con Teams | Skype for Business |
-| Collaborazione e riunioni di Skype for Business con Teams | Team |
+| Collaborazione e riunioni di Skype for Business con Teams | Teams |
 | Solo Teams | Teams |
+
+### <a name="set-whether-users-in-islands-mode-can-only-use-the-teams-meeting-add-in-or-both-the-teams-meeting-and-skype-for-business-meeting-add-ins"></a>Imposta se gli utenti in modalità isole possono usare solo il componente aggiuntivo riunione teams o sia la riunione teams che i componenti aggiuntivi per riunioni Skype for business
+
+**(disponibile a breve)**
+
+Come amministratore, puoi configurare un'impostazione di criteri riunione teams per controllare quale componente aggiuntivo riunione di Outlook viene usato per *gli utenti che si trovano in modalità isole*. Puoi specificare se gli utenti possono usare solo il componente aggiuntivo riunione teams o sia la riunione teams che i componenti aggiuntivi per le riunioni di Skype for business per pianificare le riunioni in Outlook.
+
+Puoi applicare questo criterio solo agli utenti che si trovano in modalità isole e avere il parametro **AllowOutlookAddIn** impostato su **true** nei criteri della riunione teams. Per istruzioni su come impostare questo criterio, vedere [impostare il provider della riunione per gli utenti in modalità isole](meeting-policies-in-teams.md#meeting-policy-settings---meeting-provider-for-islands-mode).
 
 ## <a name="other-considerations"></a>Altre considerazioni
 

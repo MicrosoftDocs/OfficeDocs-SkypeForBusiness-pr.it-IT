@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
-ms.openlocfilehash: 7c54c34bcdbdd7227e40dab52f9a765bf4336e37
-ms.sourcegitcommit: 86b0956680b867b8bedb2e969220b8006829ee53
+ms.openlocfilehash: 84177d98addfa3efc96db4e77148556a941a74dc
+ms.sourcegitcommit: 1e7bc16969db01317ee482cabf681febae0ef51f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44410471"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44416866"
 ---
 # <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
 
@@ -163,6 +163,10 @@ Nonostante il tag beta, il connettore di qualità della chiamata per Power BI è
 ### <a name="why-does-the-connector-seem-slower-compared-to-advanced-cqd-in-the-browser-what-can-i-do-to-improve-performance"></a>Perché il connettore sembra più lento rispetto al Call Quality dashboard avanzato nel browser? Cosa è possibile fare per migliorare le prestazioni?
 
 Le prestazioni delle query per i vari modelli sono in realtà le stesse sia nel browser che nel connettore.  Come per qualsiasi altra app autonoma, Power BI aggiunge il proprio tempo di autenticazione e rendering alle nostre prestazioni. La differenza include inoltre il numero di query simultanee in esecuzione. Poiché la versione in-browser di Call Quality dashboard era meno ben sviluppata e le opzioni di visualizzazione dense di informazioni, la maggior parte dei report era limitata al caricamento di query di 2-3 alla volta. D'altra parte, i modelli di connettori spesso visualizzano 20 + query simultanee. Se si vuole creare report che rispondono solo alle versioni precedenti in cui si è abituati, provare a creare report con non più di 2-3 query per scheda.
+
+Per altre informazioni, vedere gli articoli seguenti: 
+- [Guida all'ottimizzazione per Power BI](https://docs.microsoft.com/power-bi/guidance/power-bi-optimization)
+- [Linee guida per il modello DirectQuery](https://docs.microsoft.com/power-bi/guidance/directquery-model-guidance)
 
 ### <a name="i-find-that-i-routinely-run-into-the-10000-row-limit-when-running-queries-how-can-i-get-the-connector-to-return-more-than-10000-rows"></a>Quando si esegue una query, viene eseguito in routine il limite di 10.000 righe. Come è possibile ottenere il connettore per restituire più di 10.000 righe?
 

@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Informazioni su come recuperare i dati di Microsoft teams dal log di controllo.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 88eda5d9acaeb876008b3eb35d38b348830cce48
-ms.sourcegitcommit: 67466cde3ffd5c42d632300b8a2adf7aab7df5d1
+ms.openlocfilehash: 62b4c462cec58facca274883c98f1aad23042f16
+ms.sourcegitcommit: 1e7bc16969db01317ee482cabf681febae0ef51f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43958411"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44416736"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams
 
@@ -34,7 +34,7 @@ Il log di controllo consente di analizzare attività specifiche nei servizi Micr
 - Canale aggiunto
 - Impostazione modificata
 
-Per un elenco completo delle attività di teams controllate, vedere [attività di teams](#teams-activities).
+Per un elenco completo delle attività di teams controllate, vedere [attività di Team](#teams-activities) e [turni nelle attività di Teams (in anteprima)](#shifts-in-teams-activities).
 
 > [!NOTE]
 > Gli eventi di controllo dei canali privati vengono registrati anche per i team e i canali standard.
@@ -59,7 +59,7 @@ Il periodo di tempo in cui un record di controllo viene mantenuto e la ricerca n
 
 ## <a name="tips-for-searching-the-audit-log"></a>Suggerimenti per la ricerca nel log di controllo
 
-Ecco alcuni suggerimenti per la ricerca di [attività in teams](#teams-activities) nel log di controllo.
+Ecco alcuni suggerimenti per la ricerca di attività in teams nel log di controllo.
 
 ![Screenshot della pagina di ricerca del log di controllo](media/audit-log-search-page.png)
 
@@ -67,7 +67,7 @@ Ecco alcuni suggerimenti per la ricerca di [attività in teams](#teams-activitie
     ![Screenshot della ricerca nel log di controllo](media/audit-log-search.png)
 - Per visualizzare gli eventi per le attività eseguite tramite cmdlet, selezionare **Mostra risultati per tutte le attività** nell'elenco **attività** . Se si conosce il nome dell'operazione per queste attività, cercare tutte le attività e quindi filtrare i risultati digitando il nome dell'operazione nella casella della colonna **attività** . Per altre informazioni, vedere [passaggio 3: filtrare i risultati della ricerca](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#step-3-filter-the-search-results).
 - Per cancellare i criteri di ricerca correnti, fare clic su **Cancella**. L'intervallo di date restituisce l'impostazione predefinita degli ultimi sette giorni. È anche possibile fare clic su **Cancella tutto per visualizzare i risultati per tutte le attività** per annullare tutte le attività selezionate.
-- Se vengono trovati risultati di 5.000, è probabile che siano presenti più eventi di 5.000 che soddisfano i criteri di ricerca. È possibile affinare i criteri di ricerca e rieseguire la ricerca per restituire meno risultati oppure esportare tutti i risultati della ricerca selezionando **Esporta risultati** > per**scaricare tutti i risultati**.
+- Se vengono trovati risultati di 5.000, è probabile che siano presenti più eventi di 5.000 che soddisfano i criteri di ricerca. È possibile affinare i criteri di ricerca e rieseguire la ricerca per restituire meno risultati oppure esportare tutti i risultati della ricerca selezionando **Esporta risultati**per  >  **scaricare tutti i risultati**.
 
 Guarda [questo video per l'](https://www.youtube.com/embed/UBxaRySAxyE) uso della ricerca nel log audio. Unisciti a un responsabile di programma per Teams, come dimostra come eseguire una ricerca nel log di controllo per i team.
 
@@ -142,6 +142,41 @@ Ecco un elenco di tutti gli eventi registrati per le attività utente e amminist
 |Connettore aggiornato    |ConnectorUpdated         |Un utente ha modificato un connettore in un canale.         |
 |Scheda aggiornamento   |TabUpdated         |Un utente ha modificato una tabulazione in un canale.         |
 |L'utente ha eseguito l'accesso a teams     |TeamsSessionStarted         |Un utente accede a un client Microsoft teams. Questo evento non acquisisce le attività di aggiornamento del token.         |
+
+## <a name="shifts-in-teams-activities"></a>Turni nelle attività di Teams
+
+**(in anteprima)**
+
+Se l'organizzazione usa l'app turni in teams, è possibile eseguire una ricerca nel log di controllo per le attività correlate all'app turni. Ecco un elenco di tutti gli eventi che vengono registrati per le attività di turni in teams nel log di controllo di Microsoft 365.
+
+|Nome descrittivo  |Operazione  |Descrizione  |
+|---------|---------|---------|
+|Gruppo di pianificazione aggiunto      |SchedulingGroupAdded          |Un utente aggiunge correttamente un nuovo gruppo di pianificazione alla programmazione.          |
+|Gruppo di pianificazione modificato     |SchedulingGroupEdited         |Un utente modifica correttamente un gruppo di pianificazione.          |
+|Gruppo pianificazione eliminata         |SchedulingGroupDeleted              |Un utente elimina correttamente un gruppo di pianificazione dalla pianificazione.|
+|Aggiunta di un turno      |ShiftAdded          |Un utente aggiunge correttamente un turno.           |
+|Turno modificato       |ShiftEdited       |Un utente modifica correttamente un turno.        |
+|Spostamento eliminato          |ShiftDeleted          | Un utente elimina correttamente un turno.               |
+|Aggiunta di una pausa      |TimeOffAdded          |Un utente aggiunge correttamente una pausa nella programmazione.          |
+|Timeout modificato         |TimeOffEdited           |Un utente modifica correttamente il tempo.          |
+|Timeout eliminata     |TimeOffDeleted              |Un utente elimina correttamente il tempo.           |
+|Aggiunta di un turno aperto     |OpenShiftAdded          |Un utente aggiunge correttamente un turno aperto a un gruppo di pianificazione.          |
+|Modifica open Shift    |OpenShiftEdited          |Un utente modifica correttamente un turno aperto in un gruppo di pianificazione.          |
+|Elimina turno aperto      |OpenShiftDeleted          |Un utente elimina correttamente un turno aperto da un gruppo di pianificazione.         |
+|Pianificazione condivisa     |ScheduleShared                  |Un utente ha condiviso correttamente una pianificazione del team per un intervallo di date.          |
+|Clock in uso dell'ora         |ClockedIn          |Un utente ha correttamente l'orologio usando l'ora.          |
+|Temporizzato con l'ora      |ClockedOut          |Un utente ha correttamente l'orologio usando il cronometro.          |
+|Interruzione iniziata con l'ora      |BreakStarted          |Un utente avvia un'interruzione durante una sessione di clock del tempo attiva.          |
+|Interruzione terminata con l'ora    |BreakEnded          |Un utente termina un'interruzione durante una sessione di clock del tempo attiva.          |
+|Aggiunta dell'ora di clock     |TimeClockEntryAdded          |Un utente aggiunge correttamente una nuova voce di clock manuale nel foglio di tempo.          |
+|Voce dell'ora di clock modificata     | TimeClockEntryEdited             |Un utente modifica correttamente una voce di clock nel foglio di tempo.          |
+|Voce dell'ora di clock eliminata    |TimeClockEntryDeleted              |Un utente elimina correttamente una voce dell'ora di clock nel foglio di tempo.          |
+|Richiesta di spostamento aggiunta         |RequestAdded              |Un utente ha aggiunto una richiesta di spostamento.          |
+|Risposta alla richiesta di spostamento     |RequestRespondedTo                  |Un utente ha risposto a una richiesta di spostamento.          |
+|Richiesta di spostamento annullata         |RequestCanceled               |Un utente ha annullato una richiesta di spostamento.          |
+|Impostazione di pianificazione modificata      |ScheduleSettingChanged          |Un utente modifica un'impostazione nelle impostazioni di turni.         |
+|Integrazione della forza lavoro aggiunta      |WorkforceIntegrationAdded                  | L'app turni è integrata con un sistema di terze parti.         |
+|Messaggio di fuori turno accettato         |OffShiftDialogAccepted          |Un utente riconosce il messaggio di spostamento disattivato per accedere ai team dopo il turno di ore.           |
 
 ## <a name="office-365-management-activity-api"></a>API di attività di gestione di Office 365
 

@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 745644c7a6cf2207412faacd78e7b5a26d7b754d
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: c2ca24f2176547f83efb6bdce591ac71d516dca9
+ms.sourcegitcommit: 1e7bc16969db01317ee482cabf681febae0ef51f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44349660"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44416886"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app turni per l'organizzazione in Microsoft Teams
 
@@ -73,11 +73,27 @@ Per visualizzare i criteri di FirstlineWorker, nella barra di spostamento sinist
 
 ![Screenshot dei criteri di configurazione dell'app FirstlineWorker](../../media/firstline-worker-app-setup-policy.png "Screenshot dei criteri di configurazione dell'app FirstlineWorker nell'interfaccia di amministrazione di Microsoft Teams")
 
-#### <a name="assign-the-firstlineworker-policy-to-individual-users"></a>Assegnare i criteri di FirstlineWorker a singoli utenti
+#### <a name="assign-the-firstlineworker-policy-to-users"></a>Assegnare i criteri di FirstlineWorker agli utenti
+
+Per assegnare i criteri di configurazione dell'app FirstlineWorker a un utente:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi fare clic sull'utente.
-2. Accanto a **Criteri assegnati** scegliere **Modifica**.
-3. In **criteri di configurazione dell'app teams**selezionare **FirstlineWorker**e quindi scegliere **Salva**.
+2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
+3. In **criteri di configurazione delle app**selezionare **FirstlineWorker**e quindi fare clic su **applica**.
+
+Per assegnare un criterio a più utenti contemporaneamente:
+
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
+2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
+3. Fare clic su **Modifica impostazioni**, in **criteri di configurazione dell'app**Selezionare **FirstlineWorker**e quindi fare clic su **applica**.  
+
+Si può anche procedere nel modo seguente:
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai criteri di configurazione delle **app teams**  >  **Setup policies**.
+2. Selezionare i criteri di FirstlineWorker facendo clic a sinistra del nome del criterio.
+3. Scegliere **Gestisci utenti**.
+4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
+5. Dopo aver completato l'aggiunta di utenti, selezionare **applica**.
 
 #### <a name="assign-the-firstlineworker-app-setup-policy-to-user-members-of-a-group"></a>Assegnare i criteri di configurazione dell'app FirstlineWorker ai membri di un gruppo
 
@@ -102,5 +118,15 @@ $members | ForEach-Object {Grant-CsTeamsAppSetupPolicy -PolicyName "FirstlineWor
 ``` 
 A seconda del numero di membri del gruppo, questo comando può richiedere diversi minuti per l'esecuzione.
 
+## <a name="search-the-audit-log-for-shifts-events"></a>Eseguire ricerche nel log di controllo per gli eventi turni
+
+**(in anteprima)**
+
+È possibile eseguire una ricerca nel log di controllo per visualizzare le attività di turni nell'organizzazione.  Per altre informazioni su come eseguire una ricerca nel log di controllo e visualizzare un elenco di [attività di turni](../../audit-log-events.md#shifts-in-teams-activities) registrate nel log di controllo, vedere [eseguire la ricerca nel log di controllo per gli eventi in teams](../../audit-log-events.md).
+
+Prima di eseguire una ricerca nel log di controllo, è necessario attivare prima di tutto il controllo nel [centro conformità & sicurezza](https://protection.office.com). Per altre informazioni, vedere [attivare o disattivare la ricerca nel log di controllo](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014). Tieni presente che i dati di controllo sono disponibili solo dal momento in cui hai attivato il controllo.
+
 ## <a name="related-topics"></a>Argomenti correlati
+
 - [Sposta la guida per gli operatori di I FIRSTLINE](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b)
+- [Assegnare criteri agli utenti in teams](../../assign-policies.md)

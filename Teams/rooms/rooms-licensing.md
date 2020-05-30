@@ -22,12 +22,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni sulle licenze disponibili per diversi tipi di funzionalità di chiamata e riunione in Microsoft teams rooms.
-ms.openlocfilehash: d3ab603e914fef828788d474fa051c1e102165cd
-ms.sourcegitcommit: b5c747e2daad6dd3c1d91f4e61ae6f26db5c77f0
+ms.openlocfilehash: 581be3b73e951ff4d3409ccf9f4ee10f212c7f23
+ms.sourcegitcommit: 1e7bc16969db01317ee482cabf681febae0ef51f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064491"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44416846"
 ---
 # <a name="teams-meeting-room-licensing-update"></a>Aggiornamento delle licenze della sala riunioni Teams
 
@@ -67,7 +67,7 @@ La tabella seguente elenca le caratteristiche disponibili nelle sale di Microsof
 |Partecipazione a una riunione programmata  | SKU sala riunioni  |Skype for Business Licenza CAL per server Standard  |
 |Avviare una riunione ad hoc | SKU sala riunioni  |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Enterprise|
 |Avviare una riunione ad hoc e effettuare chiamate in uscita da una riunione a numeri di telefono |  SKU sala riunioni |Skype for Business Licenza CAL Standard  <br/> Skype for Business Licenza CAL per server Enterprise|
-|Assegnare un numero di telefono alla sala e effettuare o ricevere chiamate dalla sala o partecipare a una conferenza audio usando un numero di telefono  | SKU sala riunioni  |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Plus  |
+|Assegnare un numero di telefono alla sala e effettuare o ricevere chiamate dalla sala o partecipare a una conferenza audio usando un numero di telefono  | Con routing diretto: SKU sala riunioni<br/>Senza routing diretto: piano per chiamate nazionali o internazionali<br/>Microsoft 365 Business Voice  |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Plus  |
 |Gestire il dispositivo room con Microsoft Intune |SKU sala riunioni  |Abbonamento a Microsoft Intune con [MDM locale](https://docs.microsoft.com/configmgr/mdm/plan-design/plan-on-premises-mdm) |
 | |||
 

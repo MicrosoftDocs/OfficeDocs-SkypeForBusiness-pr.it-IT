@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: 87f790db77d2f98f66f53e399bf13f134a8e0a6e
-ms.sourcegitcommit: 47637ed816b471fe689e7bdac27b73e6efced60c
+ms.openlocfilehash: efe9e50ae7f3365917ea31ef722a47c1f1fe95ec
+ms.sourcegitcommit: 1e7bc16969db01317ee482cabf681febae0ef51f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374314"
+ms.lasthandoff: 05/29/2020
+ms.locfileid: "44416876"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -335,7 +335,7 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 
 Si tratta di un criterio per organizzatore che consente la chiamata in riunioni di conferenza. Questa impostazione controlla se la chiamata in utenti può partecipare alla riunione senza un utente autenticato dall'organizzazione in presenza. Il valore predefinito è false che indica che la chiamata in utenti attenderà nella sala di attesa fino a quando un utente autenticato dell'organizzazione non partecipa alla riunione. 
 
-**Nota** Se falso e una chiamata in un utente si unisce prima alla riunione e viene inserita nella sala di attesa, un utente dell'organizzazione deve partecipare alla riunione con un client di teams per ammettere l'utente da lobbby. Non sono disponibili controlli della sala di attesa per gli utenti con accesso esterno. 
+**Nota** Se falso e una chiamata in un utente si unisce prima alla riunione e viene inserita nella sala di attesa, un utente dell'organizzazione deve partecipare alla riunione con un client di teams per ammettere l'utente dalla sala di attesa. Non sono disponibili controlli della sala di attesa per gli utenti con accesso esterno. 
 
 
 ### <a name="automatically-admit-people"></a>Ammetti automaticamente le persone
@@ -346,7 +346,7 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
 
  Gli organizzatori di riunioni possono fare clic **Opzioni riunione** nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata.
  
- **Nota** Nelle opzioni della riunione l'impostazione è etichettata "chi può bypassare la sala d'attesa"
+ **Nota** Nelle opzioni della riunione l'impostazione è denominata "chi può bypassare la sala d'attesa"
   
 |Valore dell'impostazione  |Comportamento di partecipazione |
 |---------|---------|
@@ -406,6 +406,23 @@ Al momento, è possibile usare PowerShell solo per configurare questa impostazio
 Per consentire a un organizzatore di una riunione di scaricare il report presenza riunione, imposta il parametro **AllowEngagementReport** su **Enabled**. Quando è abilitata, l'opzione per scaricare il report viene visualizzata nel riquadro **partecipanti** .
 
 Per impedire a un organizzatore di una riunione di scaricare il report, imposta il parametro su **disabled**. Per impostazione predefinita, questa impostazione è disabilitata e l'opzione per scaricare il report non è disponibile.
+
+## <a name="meeting-policy-settings---meeting-provider-for-islands-mode"></a>Impostazioni dei criteri riunione-provider riunione per la modalità Isole
+
+**(disponibile a breve)**
+
+Questo è un criterio per utente. Questa impostazione controlla il componente aggiuntivo riunione di Outlook usato per *gli utenti che si trovano in modalità isole*. Puoi specificare se gli utenti possono usare solo il componente aggiuntivo riunione teams o sia la riunione teams che i componenti aggiuntivi per le riunioni di Skype for business per pianificare le riunioni in Outlook.
+
+Puoi applicare questo criterio solo agli utenti che si trovano in modalità isole e avere il parametro **AllowOutlookAddIn** impostato su **true** nei criteri della riunione teams.
+
+Al momento, è possibile usare PowerShell solo per impostare questo criterio. È possibile modificare un criterio di riunione di team esistenti usando il cmdlet [set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy) . In alternativa, crea un nuovo criterio riunione teams usando il cmdlet [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) e assegnalo agli utenti.
+
+Per specificare il componente aggiuntivo per la riunione che si desidera sia disponibile per gli utenti, impostare il parametro **PreferredMeetingProviderForIslandsMode** nel modo seguente:
+
+- Imposta il parametro su **TeamsAndSfB** per abilitare sia il componente aggiuntivo riunioni teams che Skype for business in Outlook. Questo è il valore predefinito.
+- Imposta il parametro su **TeamsOnly** per abilitare solo il componente aggiuntivo riunione teams in Outlook. Questa impostazione dei criteri garantisce che tutte le riunioni future abbiano un collegamento per la riunione di teams. Non esegue la migrazione dei collegamenti alle riunioni di Skype for business esistenti in teams. Questa impostazione dei criteri non influisce sulla presenza, la chat, le chiamate PSTN o altre funzionalità di Skype for business, quindi gli utenti continueranno a usare Skype for business per queste funzionalità.
+
+  Se si imposta il parametro su **TeamsOnly**e quindi si torna a **TeamsAndSfB**, entrambi i componenti aggiuntivi riunione sono abilitati. Tuttavia, tieni presente che i collegamenti alle riunioni di join di teams esistenti non verranno migrati in Skype for business. Solo le riunioni di Skype for business programmate dopo la modifica avranno un collegamento a una riunione Skype for business.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
