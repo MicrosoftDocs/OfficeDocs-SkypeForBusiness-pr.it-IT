@@ -21,17 +21,17 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7cb1178771ad0616a28fcc9e8a22c08b2851c4cf
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 74764b2a785835b9dfb65bedf3eb67db0e1109af
+ms.sourcegitcommit: 86b0956680b867b8bedb2e969220b8006829ee53
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904878"
+ms.lasthandoff: 05/28/2020
+ms.locfileid: "44410421"
 ---
 # <a name="how-to-roll-out-microsoft-teams"></a>Come implementare Microsoft Teams
 
 ## <a name="start-here"></a>Iniziare da qui
-Sia per le piccole imprese sia per le società multi-nazionali, il primo passo per l'implementazione di Teams è andare alla pagina [Introduzione](get-started-with-teams-quick-start.md). Viene illustrata la procedura per eseguire l'implementazione di Teams su scala ridotta, che per le piccole imprese potrebbe già essere sufficiente, o se si sta implementando rapidamente Teams come primo carico di lavoro di Office 365 per supportare i **lavoratori remoti**. Se l'organizzazione è più grande, usare [Introduzione](get-started-with-teams-quick-start.md) per eseguire un'implementazione pilota di Teams per un gruppo di early adopter, in modo da poter imparare a usare Teams e iniziare a pianificare la distribuzione a livello di organizzazione. 
+Sia per le piccole imprese sia per le società multi-nazionali, il primo passo per l'implementazione di Teams è andare alla pagina [Introduzione](get-started-with-teams-quick-start.md). Viene illustrata la procedura per eseguire la distribuzione di Teams su scala ridotta, che per le piccole imprese potrebbe già essere sufficiente, o se si sta implementando rapidamente Teams come primo carico di lavoro di Office 365 per supportare i **lavoratori remoti**. Se l'organizzazione è più grande, usare [Introduzione](get-started-with-teams-quick-start.md) per eseguire un'implementazione pilota di Teams per un gruppo di early adopter, in modo da poter imparare a usare Teams e iniziare a pianificare la distribuzione a livello di organizzazione. 
 
 ## <a name="recommended-path-to-teams"></a>Percorso suggerito per Teams
 
