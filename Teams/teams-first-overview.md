@@ -15,12 +15,12 @@ description: Usare queste linee guida per implementare Microsoft teams come prim
 ROBOTS: NOINDEX, NOFOLLOW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2cd8fc92d3f46df8bcfaa07a96b69b84790750aa
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: 647f6879f7892c1a65599832e48deb67e183fae0
+ms.sourcegitcommit: bdafa1f4146e615d325e27a50352f10c0d51ef1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44041713"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44472347"
 ---
 # <a name="roll-out-microsoft-teams-first"></a>Distribuire prima Microsoft Teams
 
@@ -142,9 +142,7 @@ Altre informazioni: <a href="https://docs.microsoft.com/microsoftteams/admin-set
 <li><p>eDiscovery e Legal detiene per la conformità ai messaggi di canale è supportato</p></li>
 <li><p>Sono disponibili i criteri di prevenzione della perdita dei dati (DLP)</p></li>
 </ul>
-<p>Set di caratteristiche completo disponibile con Exchange Online, Exchange locale supporta la maggior parte di queste funzionalità, vedere</p>
-<p><a href="https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact">Modalità di interazione tra Exchange e Teams</a></p>
-<p>per l'elenco completo</p></td>
+<p>Set di caratteristiche completo disponibile con Exchange Online, Exchange locale supporta la maggior parte di queste funzionalità, vedere <a href="https://docs.microsoft.com/MicrosoftTeams/exchange-teams-interact">modalità di interazione tra Exchange e teams</a> per l'elenco completo.</p></td>
 </tr>
 </tbody>
 </table>
@@ -243,8 +241,7 @@ Altre informazioni: <a href="https://docs.microsoft.com/microsoftteams/admin-set
     [Ottenere client per Teams](get-clients.md)
 
 5.   Guidare il programma di adozione  
-    [Adottare Microsoft Teams](adopt-microsoft-teams-landing-page.md)
-    
+    [Adottare Microsoft Teams](adopt-microsoft-teams-landing-page.md)<br/>
     [Elenco di controllo introduttivo di Microsoft teams adoption](teams-adoption-quick-start-checklist.md)
 
 6.  Iniziare a pianificare lo spostamento di altri carichi di lavoro in Office 365

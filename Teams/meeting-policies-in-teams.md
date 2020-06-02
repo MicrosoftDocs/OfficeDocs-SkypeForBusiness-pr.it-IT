@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: efe9e50ae7f3365917ea31ef722a47c1f1fe95ec
-ms.sourcegitcommit: 1e7bc16969db01317ee482cabf681febae0ef51f
+ms.openlocfilehash: cd5056b2252d4aaad7f1bc8c104c43f43aa516fd
+ms.sourcegitcommit: ef3cd762e799df43bdcde03363c501d7ca9bb6b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44416876"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44489148"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -423,6 +423,24 @@ Per specificare il componente aggiuntivo per la riunione che si desidera sia dis
 - Imposta il parametro su **TeamsOnly** per abilitare solo il componente aggiuntivo riunione teams in Outlook. Questa impostazione dei criteri garantisce che tutte le riunioni future abbiano un collegamento per la riunione di teams. Non esegue la migrazione dei collegamenti alle riunioni di Skype for business esistenti in teams. Questa impostazione dei criteri non influisce sulla presenza, la chat, le chiamate PSTN o altre funzionalità di Skype for business, quindi gli utenti continueranno a usare Skype for business per queste funzionalità.
 
   Se si imposta il parametro su **TeamsOnly**e quindi si torna a **TeamsAndSfB**, entrambi i componenti aggiuntivi riunione sono abilitati. Tuttavia, tieni presente che i collegamenti alle riunioni di join di teams esistenti non verranno migrati in Skype for business. Solo le riunioni di Skype for business programmate dopo la modifica avranno un collegamento a una riunione Skype for business.
+
+## <a name="meeting-policy-settings---video-filters-mode"></a>Impostazioni dei criteri riunione-modalità filtri video
+
+Questo è un criterio per utente. Questa impostazione controlla se gli utenti possono personalizzare lo sfondo del video in una riunione.
+
+Al momento, è possibile usare PowerShell solo per impostare questo criterio. È possibile modificare un criterio di riunione di team esistenti usando il cmdlet [set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy) . In alternativa, crea un nuovo criterio riunione teams usando il cmdlet [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) e quindi assegna il criterio agli utenti.
+
+Per specificare se gli utenti possono personalizzare lo sfondo del video in una riunione, imposta il parametro **VideoFiltersMode** nel modo seguente:
+
+|Valore di impostazione in PowerShell |Comportamento  |
+|---------|---------|
+|**Nofilters**     |L'utente non può personalizzare lo sfondo del video.|
+|**BlurOnly**     |L'utente ha la possibilità di sfocare lo sfondo del video. |
+|**BlurandDefaultBackgrounds**     |L'utente ha la possibilità di sfocare lo sfondo del video o scegliere da un set di immagini da usare come sfondo. |
+|**AllFilters**     |Use ha la possibilità di sfocare lo sfondo del video, scegliere da un set di immagini o caricare immagini personalizzate da usare come sfondo. |
+
+> [!NOTE]
+> Le immagini caricate dagli utenti non vengono visualizzate dai team. Quando si usa l'impostazione **AllFilters** , è necessario disporre di criteri di organizzazione interni per impedire agli utenti di caricare immagini offensive o inappropriate o immagini che l'organizzazione non ha diritto di usare per gli sfondi delle riunioni di teams.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

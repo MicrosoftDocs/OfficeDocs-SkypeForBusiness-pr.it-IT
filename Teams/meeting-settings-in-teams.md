@@ -21,12 +21,12 @@ ms.custom:
 ms.collection:
 - M365-collaboration
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 25945b35ec4800a00ab295ba328d5f1d65ac2ab0
-ms.sourcegitcommit: 3ef5c913318fdeeaa8c55caab07c2f8224eae2b0
-ms.translationtype: HT
+ms.openlocfilehash: 761504400639c8ed53c617f6c816dd7c4703a530
+ms.sourcegitcommit: ef3cd762e799df43bdcde03363c501d7ca9bb6b3
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43898171"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44489138"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -38,8 +38,11 @@ Con la partecipazione anonima, chiunque può partecipare alla riunione come uten
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
-2. In **Partecipanti**, attivare **Gli utenti anonimi possono partecipare a una riunione**.
+1. Accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/?linkid=867439" target="_blank">https://admin.teams.microsoft.com</a> .
+
+2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
+
+3. In **Partecipanti**, attivare **Gli utenti anonimi possono partecipare a una riunione**.
 
     ![Screenshot delle impostazioni dei partecipanti per le riunioni nell'interfaccia di amministrazione](media/meeting-settings-participants.png "Screenshot delle impostazioni dei partecipanti per le riunioni di Teams nell'interfaccia di amministrazione di Microsoft Teams")
 
@@ -62,8 +65,9 @@ Con la partecipazione anonima, chiunque può partecipare alla riunione come uten
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
-2. In **Invito tramite posta elettronica**, eseguire quanto descritto di seguito:
+1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a>.
+2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
+3. In **Invito tramite posta elettronica**, eseguire quanto descritto di seguito:
 
     ![Screenshot delle impostazioni di invito alla riunione che è possibile personalizzare](media/meeting-settings-invitation.png "Screenshot delle impostazioni di invito alla riunione che è possibile personalizzare per le riunioni di Teams")
 
@@ -71,9 +75,9 @@ Con la partecipazione anonima, chiunque può partecipare alla riunione come uten
     - **URL informazioni legali** Se l'organizzazione ha un sito Web legale che gli utenti possono visitare per qualsiasi questione legale, immettere l'URL qui.
     - **URL assistenza** Se l'organizzazione ha un sito Web di assistenza che gli utenti possono visitare in caso di problemi, immettere l'URL qui.
     - **Piè di pagina** Immettere il testo da includere come piè di pagina.
-3. Fare clic su **Invito di anteprima** per visualizzare un'anteprima dell'invito alla riunione.
-4. Al termine fare clic su **Salva**.
-5. Attendere un'ora o il tempo necessario per consentire la propagazione delle modifiche. Quindi, pianificare una riunione di Teams per vedere l'aspetto dell'invito alla riunione.  
+4. Fare clic su **Invito di anteprima** per visualizzare un'anteprima dell'invito alla riunione.
+5. Al termine fare clic su **Salva**.
+6. Attendere un'ora o il tempo necessario per consentire la propagazione delle modifiche. Quindi, pianificare una riunione di Teams per vedere l'aspetto dell'invito alla riunione.  
 
 ## <a name="set-how-you-want-to-handle-real-time-media-traffic-for-teams-meetings"></a>Impostare il modo in cui si vuole gestire il traffico multimediale in tempo reale per le riunioni di Teams
 
@@ -85,9 +89,9 @@ Se si usa la Qualità del servizio [(QoS)](qos-in-teams.md) per assegnare la pri
 > Se si attiva la Qualità del servizio (QoS) o si modificano le impostazioni nell'interfaccia di amministrazione di Microsoft Teams per il servizio di Microsoft Teams, è anche necessario [applicare le impostazioni di corrispondenza a tutti i dispositivi degli utenti](QoS-in-Teams-clients.md) e a tutti i dispositivi di rete interni per implementare completamente le modifiche apportate alla Qualità del servizio (QoS) in Teams.
 
  ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
-
-1. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
-2. In **Rete**, eseguire quanto descritto di seguito:
+1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a>.
+2. Nel riquadro di spostamento sinistro, andare a **Riunioni** > **Impostazioni di riunione**.
+3. In **Rete**, eseguire quanto descritto di seguito:
 
     ![Screenshot delle impostazioni di rete per le riunioni nell'interfaccia di amministrazione](media/meeting-settings-network.png "Screenshot delle impostazioni di rete per le riunioni di Teams nell'interfaccia di amministrazione di Microsoft Teams")
 

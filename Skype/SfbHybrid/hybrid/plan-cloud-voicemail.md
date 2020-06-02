@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: In questo articolo vengono illustrati i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione del servizio Microsoft Cloud Voicemail. Per informazioni sulla configurazione del messaggio vocale cloud, vedere Configuring cloud Voicemail.
-ms.openlocfilehash: e07dfe76a60d107702891384458cf164a4744578
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: b78608f3fd1e60421ad0edc4318b2b44217851c2
+ms.sourcegitcommit: bdafa1f4146e615d325e27a50352f10c0d51ef1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221286"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44472255"
 ---
 # <a name="plan-cloud-voicemail-service-for-on-premises-users"></a>Pianificare il servizio di segreteria cloud per gli utenti locali
 
@@ -79,7 +79,7 @@ Oltre ai requisiti di cui sopra, è necessario configurare i requisiti seguenti 
 
 - Un URL di servizi Web Exchange (EWS) esterno e l'individuazione automatica devono essere configurati o alcune funzionalità di segreteria telefonica cloud saranno limitate.
 
-- Se si dispone di una distribuzione solo locale&#x2014;che è solo server Exchange e Skype for business in locale&#x2014;ma si vuole usufruire della segreteria telefonica cloud, è necessaria una licenza di sistema telefonico.
+- Se si dispone di un server Exchange locale, configurare il messaggio di posta elettronica cloud utilizzando la procedura descritta in [set up cloud Voicemail per gli utenti di cassette postali di Exchange Server](https://docs.microsoft.com/microsoftteams/set-up-phone-system-voicemail#set-up-cloud-voicemail-for-exchange-server-mailbox-users).
 
 ## <a name="migration-and-interoperability"></a>Migrazione e interoperabilità
 
