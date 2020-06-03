@@ -2,7 +2,7 @@
 layout: HubPage
 ms.topic: hub-page
 title: Training con docente e video per gli utenti
-ms.reviewer: dearbeen
+ms.reviewer: landerl
 manager: serdars
 description: Informazioni su come iscriversi a corsi di formazione live gratuiti con docente per scoprire tutto su Microsoft Teams.
 localization_priority: Priority
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_RemoteWorkers
 - remotework
-ms.openlocfilehash: f3c50309e97c38e21e06c1ec133a5261f09ea392
-ms.sourcegitcommit: 69ff557c79d6b1a3d1089fe5c8f5c8ed8ff7431e
+ms.openlocfilehash: 6765b67498cb3e3ade6104ff86fc49d9be3384f1
+ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43951001"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44523449"
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -172,26 +172,6 @@ Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti 
                         <h3>Teams per l'istruzione - Webinar</h3>
                         <p>Scopri come usare Teams nell'istruzione superiore.</p>
                         <p><i>Gruppo di destinatari: personale, studenti, docenti, istituti di ricerca, professionisti IT</i></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://microsoftteams.eventbuilder.com/FLWValueWebinar"target="_blank">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/clock-teams.svg" alt="Clock symbol" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Grandi vantaggi per gli operatori sul campo con Teams</h3>
-                        <p>Altre informazioni su come Teams consente una trasformazione digitale che porta un potenziale illimitato a tutta la forza lavoro.</p>
-                        <p><i>Gruppo di destinatari: business decision maker, IT decision maker</i></p>
                     </div>
                 </div>
             </div>
