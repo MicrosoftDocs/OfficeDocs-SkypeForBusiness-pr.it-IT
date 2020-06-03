@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6c40e9f89d56329dc8f4f450b72a76c031315b9a
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: 502bdb8c5e441449680fa383b20f3e570d8a8ecc
+ms.sourcegitcommit: ef3cd762e799df43bdcde03363c501d7ca9bb6b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44041753"
+ms.lasthandoff: 06/01/2020
+ms.locfileid: "44489128"
 ---
 <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 =======================================================
@@ -79,7 +79,7 @@ Gli amministratori possono impedire agli utenti finali di eseguire l'esperienza 
 
 ### <a name="prevent-users-from-installing-trial-apps-and-services"></a>Impedire agli utenti di installare le versioni di valutazione di app e servizi
 
-È possibile disattivare l'opzione per installare le versioni di valutazione di app e servizi per evitare che gli utenti eseguano l'esperienza Teams Exploratory.
+È possibile disattivare l'opzione per installare le versioni di valutazione di app e servizi per evitare che gli utenti eseguano l'esperienza Teams Exploratory. È necessario avere i privilegi di amministratore. Per altre informazioni sui ruoli di amministratore, vedere [Usare i ruoli di amministratore di Microsoft Teams per gestire Teams](teams-exploratory.md).
 
 1. Nell'[interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home), passare a **Impostazioni** > **Impostazioni**, selezionare **Servizi** e quindi selezionare **App e servizi di proprietà degli utenti**.
 
@@ -94,11 +94,11 @@ Gli amministratori possono impedire agli utenti finali di eseguire l'esperienza 
 
 ### <a name="manage-availability-for-a-user-with-a-license-that-includes-teams"></a>Gestire la disponibilità per un utente con una licenza che include Teams
 
-Un utente a cui è stata assegnata una licenza che include Teams non è idoneo per l'esperienza Teams Exploratory. Quando il piano di servizio Teams è attivato, l'utente può accedere e usare Teams. Se il piano di servizio è disabilitato, l'utente non può accedere e l'esperienza Teams Exploratory non è disponibile.
+Un utente a cui è stata assegnata una licenza che include Teams non è idoneo per l'esperienza Teams Exploratory. Quando il piano di servizio Teams è attivato, l'utente può accedere e usare Teams. Se il piano di servizio è disabilitato, l'utente non può accedere e l'esperienza Teams Exploratory non è disponibile. È necessario avere i privilegi di amministratore. 
 
 Per disattivare l'accesso a Teams:
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** > **Utenti attivi**.
+1. Nell'[interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home) selezionare**Utenti** > **Utenti attivi**.
 
 2. Selezionare la casella accanto al nome dell'utente.
 
@@ -110,7 +110,7 @@ Per disattivare l'accesso a Teams:
 
 ### <a name="manage-teams-availability-for-users-who-are-already-using-the-teams-exploratory-experience"></a>Gestire la disponibilità di Teams per gli utenti che usano già l'esperienza Teams Exploratory
 
-Se un utente usa già l'esperienza Teams Exploratory, è possibile disattivarla rimuovendo la licenza o il piano di servizio.
+Se un utente usa già l'esperienza Teams Exploratory, è possibile disattivarla rimuovendo la licenza o il piano di servizio. È necessario avere i privilegi di amministratore. 
 
 Per disattivare la licenza dell'esperienza Teams Exploratory:
 
@@ -131,7 +131,7 @@ Gli utenti che hanno una licenza di Teams Exploratory possono essere gestiti nel
 
 ### <a name="upgrade-users-from-the-teams-exploratory-license"></a>Aggiornare gli utenti dalla licenza di Teams Exploratory
 
-Per aggiornare gli utenti dalla licenza di Teams Exploratory, eseguire queste operazioni:
+Per aggiornare gli utenti dalla licenza di Teams Exploratory è necessario avere i privilegi di amministratore ed eseguire le operazioni seguenti:
 
 1. Acquistare un abbonamento che include Teams.
 
@@ -161,3 +161,10 @@ L'esperienza di Microsoft Teams Exploratory è disponibile senza costi aggiuntiv
 ### <a name="what-happens-if-an-end-user-initiates-the-microsoft-teams-exploratory-experience-just-before-my-anniversary-or-renewal-date"></a>Cosa succede se un utente finale avvia l'esperienza di Microsoft Teams Exploratory poco prima della data di scadenza o di rinnovo?
 
 Le licenze per l'esperienza Microsoft Teams Exploratory iniziate entro 90 giorni dalla **data di scadenza** o **rinnovo del contratto** non dovranno passare a una licenza a pagamento fino alla successiva data di scadenza o rinnovo. 
+
+### <a name="what-if-my-agreement-doesnt-have-an-anniversary-or-yearly-renewal-date-for-example-month-to-month-agreements"></a>Cosa succede quando un contratto non ha una data di ricorrenza o una data di rinnovo annuale, ad esempio i contratti che si rinnovano mensilmente?
+
+Per tali contratti, l'anno successivo all'attivazione da parte del primo utente finale delle licenze per l'esperienza di Microsoft Teams Exploratory, verrà considerato come data di ricorrenza o di rinnovo. Gli utenti di Microsoft Teams Exploratory devono convertire la propria licenza in una licenza a pagamento entro tale data ogni anno, in base ai criteri illustrati in precedenza.
+
+Ad esempio, se il primo utente finale attiva una licenza Microsoft Teams Exploratory il 19 giugno 2020, deve convertirla insieme agli altri utenti idonei nel tenant del cliente in una licenza a pagamento di Teams entro il 19 giugno 2021. 
+
