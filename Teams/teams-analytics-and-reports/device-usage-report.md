@@ -18,10 +18,10 @@ appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 128a9e816249dd918a5bf5fb380fde78d3ed9ce2
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
+ms.lasthandoff: 06/02/2020
 ms.locfileid: "43904918"
 ---
 # <a name="microsoft-teams-device-usage-report"></a>Report sull'utilizzo di dispositivi Microsoft Teams
@@ -30,7 +30,7 @@ Il report utilizzo di dispositivi teams nell'interfaccia di amministrazione di M
 
 ## <a name="view-the-device-usage-report"></a>Visualizzare il report sull'utilizzo dei dispositivi
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** > report**sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo del dispositivo teams**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** report  >  **sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo del dispositivo teams**.
 2. In **intervallo di date**selezionare un intervallo e quindi fare clic su **Esegui report**.
 
     ![Screenshot del report utilizzo di dispositivi teams nell'interfaccia di amministrazione di teams con callout](../media/teams-reports-device-usage-with-callouts.png "Screenshot del report utilizzo di dispositivi teams nell'interfaccia di amministrazione di teams con callout")

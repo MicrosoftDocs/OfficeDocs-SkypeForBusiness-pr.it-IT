@@ -5,7 +5,7 @@ ms.author: v-lanac
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
-ms.reviewer: dearbeen
+ms.reviewer: landerl
 audience: admin
 description: Per informazioni su come pianificare l'aggiornamento, è necessario prima di tutto eseguire l'elenco delle parti interessate e quindi l'ambito del progetto.
 localization_priority: Normal
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c6a5ec2857baf0c602a060397ad853a1339916a3
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 9f2a52c9bce6269ec7ddd69e4923a011cf3b6872
+ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904401"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44523109"
 ---
 # <a name="plan-for-your-upgrade"></a>Pianificare l'aggiornamento
 

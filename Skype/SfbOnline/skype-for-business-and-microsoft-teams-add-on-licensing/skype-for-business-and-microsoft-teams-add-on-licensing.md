@@ -23,12 +23,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: "Learn about add-on licenses, what features you'll get with it, how to buy them for your product, and how to use your existing carrier with them. You can get information on pricing and plan details for Office 365, Communication Credits, and Calling plans. "
-ms.openlocfilehash: 3488ec2239ba99b2bfe6efa97ed162804f4aa1e6
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 45b0a85dc6c893fef6b8ec40191069561c74332b
+ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43777551"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44205157"
 ---
 # <a name="skype-for-business-add-on-licensing"></a>Licenze per i componenti aggiuntivi Skype for Business
 
@@ -59,17 +59,17 @@ A seconda del piano di cui si dispone già, è possibile acquistare licenze per 
 |**Funzionalità** <br/> |**Descrizione** <br/> |
 |**Audioconferenza** <br/> |A volte gli utenti dell'organizzazione dovranno usare un telefono per chiamare una riunione Skype for business, invece di usare il computer. Usare la funzionalità di conferenza audio per questa situazione.<br/> Per sapere se l'Audioconferenza è disponibile nel proprio Paese o area geografica, consulta [Disponibilità per Paese e area geografica di Audioconferenza e Piani di chiamata](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans). <br/> Se stai cercando i costi, consulta [Requisiti per Audioconferenza](https://products.office.com/skype-for-business/audio-conferencing#requirements).  <br/> |
 |**Numeri verdi per l'accesso esterno alle conferenze o per avere la possibilità di effettuare chiamate in uscita all'interno di una conferenza per aggiungere un partecipante chiamando qualsiasi numero di telefono in tutto il mondo** <br/> |Se aggiungi Audioconferenze, ti consigliamo di [Impostare Crediti di comunicazione](/microsoftteams/set-up-communications-credits-for-your-organization). <br/> |
-|**Sistema telefonico** <br/> |Un PBX è un sistema telefonico in un'azienda. Il sistema telefonico in Office 365 è un servizio telefonico ospitato. Offre funzionalità PBX sia tradizionali che innovative, ma senza l'equipaggiamento complicato e costoso. [Ecco cosa si ottiene con il sistema telefonico in Office 365](/MicrosoftTeams/here-s-what-you-get-with-phone-system).<br/> Se stai cercando i costi, consulta [Requisiti di Sistema telefonico](https://products.office.com/skype-for-business/cloud-pbx#requirements).  <br/> |
-|**Piani di chiamata** <br/> |Calls to other Skype for Business users are free, but if you want your users to be able to call any phone numbers outside of your business, get a [Calling Plan](/MicrosoftTeams/calling-plans-for-office-365). There are Domestic Calling Plans and Domestic and International Calling Plans in Office 365.  <br/> Se stai cercando i costi, consulta [Requisiti per i Piani di chiamata](https://products.office.com/skype-for-business/pstn-calling-plans#requirements).  <br/> |
+|**Sistema telefonico** <br/> |Un PBX è un sistema telefonico in un'azienda. Il sistema telefonico è un servizio telefonico ospitale. Offre funzionalità PBX sia tradizionali che innovative, ma senza l'equipaggiamento complicato e costoso. [Ecco cosa si ottiene con il sistema telefonico](/MicrosoftTeams/here-s-what-you-get-with-phone-system).<br/> Se stai cercando i costi, consulta [Requisiti di Sistema telefonico](https://products.office.com/skype-for-business/cloud-pbx#requirements).  <br/> |
+|**Piani di chiamata** <br/> |Le chiamate ad altri utenti di Skype for business sono gratuite, ma se si vuole che gli utenti possano chiamare i numeri di telefono al di fuori della propria azienda, ottenere un [piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365). Ci sono piani per chiamate nazionali e piani per chiamate nazionali e internazionali.<br/> Se stai cercando i costi, consulta [Requisiti per i Piani di chiamata](https://products.office.com/skype-for-business/pstn-calling-plans#requirements).  <br/> |
 |**Microsoft Teams Rooms** <br/> |Non si tratta di un componente aggiuntivo, ma di una funzionalità che consente la condivisione di video, audio e contenuti in sale riunioni. Vedere [Microsoft teams Rooms](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/skype-room-systems-v2.md).<br/> |
 
 Need to talk to someone about all the add-on options? [Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
 ## <a name="license-options-based-on-your-plan"></a>Opzioni di licenza basate sul piano
 
-The add-on licensing options available to you depends on your Office 365 or Skype for Business plan. See the following topics for information, features, and options that are specific to your plan.
+Le opzioni di licenza per i componenti aggiuntivi disponibili variano a seconda del piano. Vedere gli argomenti seguenti per informazioni, funzionalità e opzioni specifiche per il piano.
 
-- [Microsoft 365 business standard](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-business-premium-plan.md)
+- [Microsoft 365 Business Standard](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-business-premium-plan.md)
 - [Office 365 Premium, Microsoft 365 Apps for Enterprise o Skype for business online piano 2](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-premium-pro-plus-or-business-online-plan.md)
 - [Office 365 Enterprise E1, E3 ed E4](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e1-e3-e4.md)
 - [Office 365 Enterprise E5](../skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e5-with-audio-conferencing.md)
@@ -82,7 +82,7 @@ Per un elenco dettagliato delle caratteristiche e dei confronti per ogni piano d
 ## <a name="how-to-see-prices-and-buy-add-on-licenses"></a>Come scoprire i prezzi e acquistare le licenze per componenti aggiuntivi
 <a name="bkmk_how"> </a>
 
- **Dopo aver acquistato un piano di Office 365, è possibile vedere i prezzi e acquistare componenti aggiuntivi tramite l'interfaccia di amministrazione di Microsoft 365**.
+ **Dopo aver acquistato un piano microsoft 365, è possibile vedere i prezzi e acquistare componenti aggiuntivi tramite l'interfaccia di amministrazione di microsoft 365**.
 
 A seconda dei componenti aggiuntivi che desideri, consigliamo di [confrontare se è più conveniente](https://go.microsoft.com/fwlink/?linkid=844053) passare a un piano che includa già quelle caratteristiche.
 
@@ -95,19 +95,14 @@ Se si vuole usare il piano per le chiamate esistente, acquistare il componente a
 
 If you are using on-premises PSTN connectivity for hybrid users, you  *only*  assign **Phone System** licenses to your users. **DO NOT** also assign a Calling Plan.
 
-Per la documentazione completa sulla pianificazione della distribuzione, tra cui Sistema telefonico con connettività PSTN in locale, consulta [Pianifica il tuo Sistema telefonico nella soluzione Office 365 (Cloud PBX)](https://technet.microsoft.com/library/mt612869.aspx).
-
-
 [!INCLUDE [LinkedIn Learning Info](../../common/office/linkedin-learning-info.md)]
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Configurare Skype for Business Online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
+- [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
     
 - [Configurare Cloud Voicemail - Guida per gli amministratori](/microsoftteams/set-up-phone-system-voicemail)
     
 - [Impostare Piani di chiamata](/microsoftteams/set-up-calling-plans) e [Piani di chiamata per Office 365](/MicrosoftTeams/calling-plans-for-office-365)
     
 - [Aggiungere fondi e gestire Credito per la comunicazione](/microsoftteams/add-funds-and-manage-communications-credits)
-    
-- [Configurare Cloud Connector](https://technet.microsoft.com/library/mt605228.aspx) e [scaricare Cloud Connector](https://aka.ms/CloudConnectorInstaller)

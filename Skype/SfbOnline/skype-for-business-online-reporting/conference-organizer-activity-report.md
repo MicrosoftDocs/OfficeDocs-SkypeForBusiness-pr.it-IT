@@ -20,16 +20,16 @@ ms.custom:
 - Reporting
 - O365E_ReportsS4BOrgActivity
 description: 'Learn how to get the Skype for Business Conference Organized Activity report, and how to interpret and customize it. '
-ms.openlocfilehash: f005a1ee53d1fc5ab5ee9e4736ff8d6d241f3a6e
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+ms.openlocfilehash: 3d00b86e5e080e16f199a6f9e2fd24de2d607d23
+ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41769389"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44204837"
 ---
 # <a name="conference-organizer-activity-report"></a>Report attività organizzatore di conferenze
 
-[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi utilizzare il report **attività organizzatore di conferenze in Skype for Business** per vedere quanto i tuoi utenti utilizzano messaggistica istantanea, audio, video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft nelle loro conferenze. 
+Il dashboard **report** Mostra la panoramica delle attività in tutti i prodotti Microsoft 365 o Office 365 dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi utilizzare il report **attività organizzatore di conferenze in Skype for Business** per vedere quanto i tuoi utenti utilizzano messaggistica istantanea, audio, video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft nelle loro conferenze. 
 
 Per altre informazioni, vedere [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) .
   
@@ -40,9 +40,9 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
   
 ## <a name="how-to-get-to-the-skype-for-business-conference-organizer-report"></a>Come ottenere il report organizzatore di conferenze di Skype for Business
 
-1. Accedere all'interfaccia di amministrazione > **segnala** > l'**utilizzo**.
+1. Accedere all'interfaccia di amministrazione > **segnala**l'  >  **utilizzo**.
     
-2. Nella pagina **utilizzo** selezionare**attività organizzatore di conferenze** di **Skype for business** >nell' **elenco Seleziona un report** a sinistra. In alternativa, fai clic sul widget **attività di Skype for business** e quindi fai clic su **attività organizzatore di conferenze** di Skype for business nell'elenco **attività di Skype for business** .
+2. Nella pagina **utilizzo** selezionare attività organizzatore di conferenze di **Skype for business**  > **Conference organizer activity** nell' **elenco Seleziona un report** a sinistra. In alternativa, fai clic sul widget **attività di Skype for business** e quindi fai clic su **attività organizzatore di conferenze** di Skype for business nell'elenco **attività di Skype for business** .
   
 ## <a name="interpret-the-skype-for-business-conferences-organizer-report"></a>Interpretare il report organizzatore di conferenze di Skype for Business
 

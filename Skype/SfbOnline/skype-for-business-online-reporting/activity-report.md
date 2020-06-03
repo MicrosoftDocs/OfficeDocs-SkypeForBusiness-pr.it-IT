@@ -20,16 +20,16 @@ ms.custom:
 - Reporting
 - O365E_ReportsS4BActivity
 description: 'Learn how to get the Skype for Business Activity reports, what it contains, and how to interpret the data. '
-ms.openlocfilehash: 577ed8ea84326510ad1c2943dcbf0b280a2bd9ae
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+ms.openlocfilehash: f50b8c03304a308594fd7bd920ee92e8d38a1f43
+ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41769419"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44205557"
 ---
 # <a name="activity-report"></a>Report attività
 
-Il dashboard di **report** di Office 365 Mostra la panoramica delle attività nei prodotti Office 365 dell'organizzazione. Consente di eseguire il drill-up dei singoli report a livello di prodotto per ottenere informazioni più dettagliate sulle attività all'interno di ogni prodotto. Ad esempio, puoi usare il report **attività di Skype for business** per vedere quanto gli utenti usano sessioni di conferenza peer-to-peer o organizzate, o quanto partecipano alle sessioni di conferenza. 
+Il dashboard **report** Mostra la panoramica delle attività in tutti i prodotti Microsoft 365 o Office 365 dell'organizzazione. Consente di eseguire il drill-up dei singoli report a livello di prodotto per ottenere informazioni più dettagliate sulle attività all'interno di ogni prodotto. Ad esempio, puoi usare il report **attività di Skype for business** per vedere quanto gli utenti usano sessioni di conferenza peer-to-peer o organizzate, o quanto partecipano alle sessioni di conferenza. 
 
 Per altre informazioni, vedere [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) .
   
@@ -40,9 +40,9 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
   
 ## <a name="how-to-get-to-the-skype-for-business-activity-report"></a>Come ottenere il report attività in Skype for Business
 
-1. Accedere all'interfaccia di amministrazione > **segnala** > l'**utilizzo**.
+1. Accedere all'interfaccia di amministrazione > **segnala**l'  >  **utilizzo**.
     
-2. Nella pagina **uso** scegliere**attività** **Skype for business** > nell' **elenco Seleziona un report** a sinistra oppure fare clic sul widget **attività di Skype for business** .
+2. Nella pagina **uso** scegliere attività **Skype for business**nell'  >  **Activity** **elenco Seleziona un report** a sinistra oppure fare clic sul widget **attività di Skype for business** .
 
   
 ## <a name="interpret-the-skype-for-business-activity-report"></a>Interpretazione del report attività in Skype for Business
@@ -89,7 +89,7 @@ La tabella mostra una ripartizione di tutte le attività di conferenza per ogni 
 * **Peer-to-peer** Mostra il numero totale di sessioni di conferenza peer-to-peer che l'utente ha usato.
 * **Conferenze organizzate** mostra il numero totale di conferenze che sono state organizzate dall'utente.
 * **Conferenze frequentate** mostra il numero totale di conferenze a cui ha partecipato questo utente.
-* **Prodotto assegnato** si riferisce ai prodotti di Office 365 assegnati all'utente.<br/>
+* **Prodotto assegnato** è il Microsoft 365 o i prodotti Office 365 assegnati a questo utente.<br/>
 
 Se i criteri dell'organizzazione impediscono di visualizzare i report in cui le informazioni utente sono identificabili, è possibile modificare l'impostazione di privacy per tutti questi report. Per visualizzare i **dettagli degli utenti** , vedere la sezione report nei [report attività nell'interfaccia di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263).
 ***

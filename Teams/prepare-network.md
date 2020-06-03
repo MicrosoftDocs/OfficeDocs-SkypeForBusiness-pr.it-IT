@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: f06599b7e3ed06a26715de30d59dd25a61c0f197
-ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
+ms.openlocfilehash: 6d811db9759b2876520b307140a3a1967047f482
+ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43945575"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44523301"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
 
@@ -106,7 +106,10 @@ Per una discussione approfondita sull'ottimizzazione della rete, tra cui indicaz
 <td>Assicurarsi che tutti i computer che eseguono il client teams possano risolvere le query DNS esterne per individuare i servizi forniti da Office 365 e che i firewall non impediscano l'accesso. Per informazioni sulla configurazione delle porte del firewall, vedere <a href="https://docs.microsoft.com/microsoftteams/office-365-urls-ip-address-ranges">URL e intervalli di indirizzi IP di Office 365</a>.</td>
 </tr>
 <tr class="odd">
-<td>Convalidare le dimensioni del pool (NAT)</td>
+<td>Gestire la persistenza della sessione</td>
+<td>Verificare che il firewall non modifichi gli indirizzi NAT (Network Address Translation) o le porte per UDP.</td>
+</tr><tr class="odd">
+<td>Convalidare le dimensioni del pool NAT</td>
 <td>Convalidare le dimensioni del pool NAT (Network Address Translation) necessarie per la connettività degli utenti. Quando più utenti e dispositivi accedono a Office 365 tramite <a href="https://docs.microsoft.com/office365/enterprise/nat-support-with-office-365">NAT (Network Address Translation) o Pat (Port Address Translation)</a>, è necessario assicurarsi che i dispositivi nascosti dietro ogni indirizzo IP instradabile pubblicamente non superino il numero supportato. Verificare che gli indirizzi IP pubblici adeguati vengano assegnati ai pool NAT per evitare l'esaurimento della porta. L'esaurimento della porta contribuirà agli utenti e ai dispositivi interni non essendo in grado di connettersi al servizio Office 365.</td>
 </tr>
 <tr class="even">

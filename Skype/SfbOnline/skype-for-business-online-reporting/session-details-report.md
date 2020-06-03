@@ -18,17 +18,17 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Reporting
-description: Il nuovo dashboard dei report di Microsoft 365 Mostra la panoramica delle attività nei prodotti Office 365 dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto.
-ms.openlocfilehash: b10e68e46b8865579692594ded33e89558f4fdc2
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+description: Il dashboard report Mostra la panoramica delle attività in tutti i prodotti Microsoft 365 o Office 365 dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto.
+ms.openlocfilehash: 951f93aabe66bdb7e6b92f9b2c6cf1627e7e1a10
+ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43776281"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44205507"
 ---
 # <a name="session-details-report"></a>Report dettagli della sessione.
 
-[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi usare il report **Dettagli sessione di Skype for business** per vedere i dettagli sulle singole esperienze di chiamata dell'utente.
+Il dashboard **report** Mostra la panoramica delle attività in tutti i prodotti Microsoft 365 o Office 365 dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi usare il report **Dettagli sessione di Skype for business** per vedere i dettagli sulle singole esperienze di chiamata dell'utente.
   
 Vedere [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per altri report disponibili.
   
@@ -46,7 +46,7 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
 3. Nell'elenco in **selezionare un report**fare clic su **Dettagli sessione di Skype for business**.
     
     > [!TIP]
-    > Se > **questo report non** > è visualizzato, accedere ai dettagli della**sessione**nell'interfaccia di **amministrazione di Skype for business**. 
+    > Se questo report non è visualizzato, accedere ai dettagli della sessione nell'interfaccia di **amministrazione di Skype for business**  >  **Reports**  >  **Session details**. 
   
     > [!IMPORTANT]
     > A seconda dell'abbonamento a Microsoft 365 o Office 365, è possibile che non vengano visualizzati tutti i prodotti e i report visualizzati qui. 

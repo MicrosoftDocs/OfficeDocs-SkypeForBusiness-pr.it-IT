@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - PowerShell
 description: Troubleshoot creating a remote PowerShell session to connect to Skype for Business Online, including Import-Module, concurrent shell, Live ID, and permission errors.
-ms.openlocfilehash: e86ec24e47bf6e8ea8d3e6b4ea66ab9da89457fd
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 019ef023b325227be046aae1e855573449453864
+ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42010629"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44204877"
 ---
 # <a name="diagnose-connection-problems-with-the-skype-for-business-online-connector"></a>Diagnosi dei problemi di connessione con il connettore di Skype for Business Online
 
@@ -62,7 +62,7 @@ ms.locfileid: "42010629"
 
 Il criterio di esecuzione di PowerShell consente di determinare quali file di configurazione possono essere caricati nella console di PowerShell e quali script possono essere eseguiti da un utente da questa console. Come minimo, il Modulo del connettore di Skype for Business Online non può essere importato a meno che il criterio di esecuzione non sia stato impostato su RemoteSigned. In caso contrario, quando si prova a importare il modulo verrà visualizzato il seguente messaggio di errore:
   
-- **Errore**: <em>Import-Module: file C:\\programmi file\\comuni\\Microsoft Lync Server 2013\\modules\\LyncOnlineConnector\\LyncOnlineConnectorStartup. psm1 non può essere caricato perché gli script in uso sono disabilitati in questo sistema. Per altre informazioni, vedere about_Execution_Policies at https://go.microsoft.com/fwlink/?LinkID=135170.</em>
+- **Errore**: <em>Import-Module: file C: \\ Programmi file \\ comuni \\ Microsoft Lync Server 2013 \\ modules \\ LyncOnlineConnector \\ LyncOnlineConnectorStartup. psm1 non può essere caricato perché gli script in uso sono disabilitati in questo sistema. Per altre informazioni, vedere about_Execution_Policies at https://go.microsoft.com/fwlink/?LinkID=135170 .</em>
 
 - **Risoluzione** Per risolvere il problema, avviare PowerShell come amministratore e quindi eseguire il comando seguente:
     ```PowerShell
@@ -75,9 +75,9 @@ Il criterio di esecuzione di PowerShell consente di determinare quali file di co
 
 Il Modulo del connettore di Skype for Business Online può essere eseguito solo in Windows PowerShell 3.0. Se provi a importare il modulo in una versione precedente di PowerShell, il processo di importazione non riesce e viene visualizzato un messaggio di errore analogo al seguente:
   
-  - **Errore**: *Import-Module: la versione di PowerShell caricata è "2,0". Modulo ' d:\\programmi file\\comuni\\Microsoft Lync Server 2013\\modules\\LyncOnlineConnector\\LyncOnlineConnector. psd1' richiede una versione di PowerShell minima di ' 3,0' da eseguire. Verificare l'installazione di PowerShell e riprovare.*
+  - **Errore**: *Import-Module: la versione di PowerShell caricata è "2,0". Modulo ' d: \\ Programmi file \\ comuni \\ Microsoft Lync Server 2013 \\ modules \\ LyncOnlineConnector \\ LyncOnlineConnector. Psd1' richiede una versione di PowerShell minima di ' 3,0' da eseguire. Verificare l'installazione di PowerShell e riprovare.*
 
-- **Risoluzione**: l'unico modo per risolvere il problema è installare Windows PowerShell 3,0, disponibile nell'area download Microsoft [https://www.microsoft.com/download/details.aspx?id=34595](https://www.microsoft.com/download/details.aspx?id=34595).
+- **Risoluzione**: l'unico modo per risolvere il problema è installare Windows PowerShell 3,0, disponibile nell'area download Microsoft [https://www.microsoft.com/download/details.aspx?id=34595](https://www.microsoft.com/download/details.aspx?id=34595) .
   
 ## <a name="modern-authentication-fails-when-winrm-basic-authentication-has-been-disabled"></a>L'autenticazione moderna non riesce quando l'autenticazione di base di WinRM è stata disattivata
 <a name="BKMKWinRMBasicAuth"> </a>
@@ -102,9 +102,9 @@ Sono in genere tre i motivi della non riuscita di un tentativo di connessione, c
     Start-Service "msoidsvc"
     ```
 
-    Se il servizio è in esecuzione, potrebbero essersi verificati problemi di connessione di rete tra il computer e il server di autenticazione di Microsoft Live ID. Per verificare, apri Internet Explorer e accedi a [https://login.microsoftonline.com/.](https://login.microsoftonline.com/.) Prova ad accedere a Office 365 da questa pagina. Se l'accesso non riesce, è probabile che ci siano problemi con la connessione di rete.
+    Se il servizio è in esecuzione, potrebbero essersi verificati problemi di connessione di rete tra il computer e il server di autenticazione di Microsoft Live ID. Per verificare, apri Internet Explorer e accedi a [https://login.microsoftonline.com/.](https://login.microsoftonline.com/.) Provare a eseguire l'accesso a Microsoft 365 o Office 365. Se l'accesso non riesce, è probabile che ci siano problemi con la connessione di rete.
   
-    Meno frequentemente, è possibile che l'URI di connessione per il server di autenticazione di Microsoft Live ID sia stato impostato con un valore errato. Se si è già verificato che l'Assistente per l'accesso è in esecuzione e non sono stati riscontrati problemi di rete, questa potrebbe essere la causa del problema. In tal caso, contatta il supporto tecnico di Office 365.
+    Meno frequentemente, è possibile che l'URI di connessione per il server di autenticazione di Microsoft Live ID sia stato impostato con un valore errato. Se si è già verificato che l'Assistente per l'accesso è in esecuzione e non sono stati riscontrati problemi di rete, questa potrebbe essere la causa del problema. In questo caso, contattare il supporto tecnico Microsoft.
   
 ## <a name="failed-to-load-live-id-module"></a>Caricamento del modulo Live ID non riuscito
 <a name="BKMKFailedLoad"> </a>
@@ -122,7 +122,7 @@ Quando tenti di effettuare una connessione remota a Skype for Business online, d
 
 - **Errore**: *Get-CsWebTicket: accesso non riuscito per l'utente ' kenmyer@litwareinc.com '. Creare un nuovo oggetto PSCredential, assicurandosi di avere usato il nome utente e la password corretti.*
 
-- **Risoluzione**: se si ritiene che si stia usando un account utente valido e si abbia la password corretta, provare di nuovo a eseguire l'accesso. In caso di esito negativo, usa le stesse credenziali e prova ad accedere all'indirizzo [https://login.microsoftonline.com/](https://login.microsoftonline.com/). Se non riesci comunque a eseguire l'accesso, contatta il supporto tecnico di Office 365. 
+- **Risoluzione**: se si ritiene che si stia usando un account utente valido e si abbia la password corretta, provare di nuovo a eseguire l'accesso. In caso di esito negativo, usa le stesse credenziali e prova ad accedere all'indirizzo [https://login.microsoftonline.com/](https://login.microsoftonline.com/). Se non si riesce ad accedere, contattare il supporto tecnico Microsoft. 
 
   
 ## <a name="the-user-does-not-have-permission-to-manage-this-tenant"></a>L'utente non dispone delle autorizzazioni per la gestione del tenant
@@ -132,7 +132,7 @@ Non puoi stabilire una connessione remota di PowerShell a Skype for Business onl
 
 - **Errore**: *New-PSSession: [admin.Vdomain.com] l'elaborazione dei dati da server remoto admin.Vdomain.com non è riuscita con il messaggio di errore seguente: l'utente "User@foo.com" non ha l'autorizzazione per la gestione del tenant. Le autorizzazioni possono essere concesse assegnando all'utente il ruolo RBAC appropriato. Per altre informazioni, vedere [risoluzione dei problemi remoti](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1).*
 
-- **Risoluzione**: se si ritiene di essere o si suppone sia un membro del gruppo amministratori tenant, è necessario contattare il supporto di Office 365.
+- **Risoluzione**: se si ritiene di essere o si suppone sia un membro del gruppo amministratori tenant, è necessario contattare il supporto tecnico Microsoft.
   
 ## <a name="ability-to-connect-to-tenant-has-been-disabled-in-skype-for-business-online"></a>La possibilità di connetterti al tenant è stata disabilitata in Skype for Business Online
 <a name="BKMKAbilityConnect"> </a>
@@ -141,14 +141,14 @@ Per poter usare PowerShell per la gestone di Skype for Business online, è neces
 
 - **Errore**: *New-PSSession: [admin.Vdomain.com] l'elaborazione dei dati da server remoto admin.Vdomain.com non è riuscita con il messaggio di errore seguente: la possibilità di connettersi al tenant tramite una sessione remota di PowerShell è stata disattivata. Contattare la Guida di Lync per controllare i criteri di PowerShell del tenant del tenant. Per altre informazioni, vedere [risoluzione dei problemi remoti](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1).*
 
-- **Risoluzione**: se viene visualizzato questo messaggio di errore, è necessario contattare il supporto di Office 365 e ottenere l'accesso remoto a PowerShell abilitato.
+- **Risoluzione**: se viene visualizzato questo messaggio di errore, è necessario contattare il supporto tecnico Microsoft e ottenere l'accesso remoto di PowerShell abilitato.
   
 ## <a name="the-maximum-number-of-concurrent-shells-for-this-user-in-skype-for-business-online-has-been-exceeded"></a>È stato superato il numero massimo di shell simultanee per questo utente in Skype for Business Online
 <a name="BKMKMaxNumberShellsUser"> </a>
 
 Ogni amministratore può eseguire fino a tre connessioni remote simultanee a Skype for Business online. Se sono attive tre connessioni remote a PowerShell, qualsiasi tentativo di effettuare una quarta connessione simultanea non riuscirà, generando il messaggio di errore seguente:
 
-- **Errore**: *New-PSSession: [admin.Vdomain.com] la connessione al server remoto admin.Vdomain.com non è riuscita con il messaggio di errore seguente: il servizio WS-Management non è in grado di elaborare la richiesta. È stato superato il numero massimo di shell simultanee per l'utente. Chiudere le shell esistenti o aumentare la quota per l'utente. Per altre informazioni, vedere [risoluzione dei problemi remoti]https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1 (*
+- **Errore**: *New-PSSession: [admin.Vdomain.com] la connessione al server remoto admin.Vdomain.com non è riuscita con il messaggio di errore seguente: il servizio WS-Management non è in grado di elaborare la richiesta. È stato superato il numero massimo di shell simultanee per l'utente. Chiudere le shell esistenti o aumentare la quota per l'utente. Per altre informazioni, vedere [risoluzione dei problemi remoti] https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1 (*
 
 - **Risoluzione**: l'unico modo per risolvere il problema è chiudere una o più delle connessioni precedenti. Dopo aver concluso una sessione di Skype for Business online, è consigliabile usare il cmdlet **Remove-PSSession** per terminare la sessione. Questa soluzione aiuta a prevenire il problema.
   
@@ -157,7 +157,7 @@ Ogni amministratore può eseguire fino a tre connessioni remote simultanee a Sky
 
 Anche se ogni amministratore può avere fino a tre connessioni simultanee a un tenant di Skype for business online, nessun tenant può avere più di 20 connessioni simultanee. Ad esempio, sei amministratori possono avere tre sessioni aperte. Se un quarto amministratore prova a eseguire più di 2 connessioni (con conseguente totale di 21 connessioni simultanee), il tentativo avrà esito negativo, con il messaggio di errore seguente:
   
-- **Errore**: *New-PSSession: [admin.Vdomain.com] la connessione al server remoto admin.Vdomain.com non è riuscita con il messaggio di errore seguente: il servizio WS-Management non è in grado di elaborare la richiesta. Il numero massimo di shell simultanee per il tenant è stato superato. Chiudere le shell esistenti o aumentare la quota per il tenant. Per altre informazioni, vedere [risoluzione dei problemi remoti]https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1 (*
+- **Errore**: *New-PSSession: [admin.Vdomain.com] la connessione al server remoto admin.Vdomain.com non è riuscita con il messaggio di errore seguente: il servizio WS-Management non è in grado di elaborare la richiesta. Il numero massimo di shell simultanee per il tenant è stato superato. Chiudere le shell esistenti o aumentare la quota per il tenant. Per altre informazioni, vedere [risoluzione dei problemi remoti] https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-5.1 (*
 
 - **Risoluzione**: l'unico modo per risolvere il problema è chiudere una o più delle connessioni precedenti. Dopo aver concluso una sessione di Skype for Business online, è consigliabile usare il cmdlet **Remove-PSSession** per terminare la sessione. Questa soluzione aiuta a prevenire il problema.  
  

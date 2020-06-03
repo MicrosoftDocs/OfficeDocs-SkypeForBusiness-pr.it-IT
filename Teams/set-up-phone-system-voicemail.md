@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: 'Informazioni su come configurare la segreteria telefonica cloud per gli utenti. '
-ms.openlocfilehash: d747b86d50cf4e81398d53bbc3602bff9cc4351c
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: 5526bee2bd365a4047e3641ea223941227858d1a
+ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44349720"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44523119"
 ---
 # <a name="set-up-cloud-voicemail"></a>Configurare Cloud Voicemail
 
@@ -35,7 +35,7 @@ Questo articolo riguarda l' [amministratore di Office 365](https://support.offic
 > [!NOTE]
 > Cloud Voicemail supporta il deposito dei messaggi della segreteria telefonica solo in una cassetta postale di Exchange e non supporta sistemi di posta elettronica di terze parti. 
 
-## <a name="cloud-only-environments-set-up-cloud-voicemail-for-cloud-psystem-users"></a>Ambienti solo cloud: configurare la segreteria telefonica cloud per gli utenti di PSYSTEM cloud
+## <a name="cloud-only-environments-set-up-cloud-voicemail-for-phone-system-users"></a>Ambienti solo cloud: configurare la segreteria telefonica cloud per gli utenti del sistema telefonico
 
 Per gli utenti di Skype for business online e per i piani di chiamata, cloud Voicemail viene configurato automaticamente e provisionato per gli utenti dopo l'assegnazione di una licenza per il **sistema telefonico** e di un numero di telefono.
   
@@ -74,6 +74,26 @@ Le informazioni seguenti si riferiscono alla configurazione della segreteria tel
 
 > [!NOTE]
 > Quando un delegato risponde a una chiamata per conto di un delegante, le notifiche non sono disponibili nel cloud Voicemail. Gli utenti possono ricevere notifiche per le chiamate perse.
+
+## <a name="enabling-protected-voicemail-in-your-organization"></a>Abilitazione della segreteria telefonica protetta nell'organizzazione
+
+Quando qualcuno lascia un messaggio vocale per un utente dell'organizzazione, la segreteria telefonica viene recapitata alla cassetta postale dell'utente come allegato di un messaggio di posta elettronica. Uso delle regole del flusso di posta per applicare la crittografia dei messaggi, è possibile impedire che i messaggi della segreteria telefonica vengano inoltrati ad altri destinatari. Quando si Abilita la segreteria telefonica protetta, gli utenti possono ascoltare i messaggi vocali protetti chiamandoli nella cassetta postale della segreteria telefonica o aprendo il messaggio in Outlook, Outlook sul Web o in Outlook per Android o iOS. Non è possibile aprire messaggi vocali protetti in Skype for business.
+
+Per altre informazioni sulla crittografia dei messaggi, vedere [crittografia della posta elettronica](https://docs.microsoft.com/microsoft-365/compliance/email-encryption?view=o365-worldwide).
+
+Per configurare la segreteria telefonica protetta, eseguire le operazioni seguenti:
+
+1. Accedere https://admin.microsoft.com e accedere usando un account con autorizzazioni di amministratore globale.
+2. Selezionare **Mostra tutto** e quindi vai a interfaccia di **Amministrazione**di  >  **Exchange**.
+3. Nell'interfaccia di amministrazione di Exchange selezionare **regole flusso di posta**  >  **Rules**.
+4. Selezionare **+** **Aggiungi**e quindi applicare la **crittografia dei messaggi di Office 365 e i diritti di protezione ai messaggi**.
+5. Specificare un nome per la nuova regola del flusso di posta e quindi in **applica questa regola se**selezionare **le proprietà del messaggio**  >  **includono il tipo di messaggio**segreteria  >  **telefonica**. Selezionare **OK**.
+6. In **eseguire le operazioni seguenti**selezionare **Applica crittografia messaggi di Office 365 e protezione dei diritti al messaggio con** e quindi selezionare **selezionarne uno**. In **modello RMS**selezionare non **inoltrare**. Selezionare **OK** e quindi **Salva**.
+    > [!NOTE]
+    > Se l'elenco di **modelli RMS** è vuoto, è necessario configurare la crittografia dei messaggi di Office 365. Per altre informazioni sulla configurazione della crittografia dei messaggi di Office 365, vedere gli articoli seguenti:
+    > - [Configurare le nuove funzionalità di crittografia messaggi di Office 365](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities?view=o365-worldwide)
+    > - [Configurazione e gestione di modelli per la protezione delle informazioni di Azure](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates)
+    > - [Opzione non inoltra per i messaggi di posta elettronica](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)
 
 ## <a name="setting-voicemail-policies-in-your-organization"></a>Impostazione dei criteri di segreteria telefonica dell'organizzazione
 

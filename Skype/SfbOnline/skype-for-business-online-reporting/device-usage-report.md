@@ -19,17 +19,17 @@ f1.keywords:
 ms.custom:
 - Reporting
 - O365E_ReportsS4BClients
-description: Il nuovo dashboard dei report di Microsoft 365 Mostra la panoramica delle attività nei prodotti Office 365 dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi usare il report sull'uso del dispositivo Skype for business per vedere i dispositivi, inclusi i sistemi operativi basati su Windows e i dispositivi mobili, che hanno installato l'app Skype for business e lo usano per la messaggistica istantanea e le riunioni. Per altre informazioni, vedere report attività nell'interfaccia di amministrazione.
-ms.openlocfilehash: 9d12938fdbc495e1d95b8ed26500185f09f2b01b
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+description: Il dashboard report Mostra la panoramica delle attività in tutti i prodotti Microsoft 365 o Office 365 dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi usare il report sull'uso del dispositivo Skype for business per vedere i dispositivi, inclusi i sistemi operativi basati su Windows e i dispositivi mobili, che hanno installato l'app Skype for business e lo usano per la messaggistica istantanea e le riunioni. Per altre informazioni, vedere report attività nell'interfaccia di amministrazione.
+ms.openlocfilehash: b9baff4a9ca363276590faa8e3aaafffb9e7ad4f
+ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43776301"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44205457"
 ---
 # <a name="device-usage-report"></a>Report utilizzo dispositivo
 
-[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi usare il report **sull'uso del dispositivo Skype for business** per vedere i dispositivi, inclusi i sistemi operativi basati su Windows e i dispositivi mobili, che hanno installato l'app Skype for business e lo usano per la messaggistica istantanea e le riunioni. 
+Il dashboard **report** Mostra la panoramica delle attività in tutti i prodotti Microsoft 365 o Office 365 dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi usare il report **sull'uso del dispositivo Skype for business** per vedere i dispositivi, inclusi i sistemi operativi basati su Windows e i dispositivi mobili, che hanno installato l'app Skype for business e lo usano per la messaggistica istantanea e le riunioni. 
 
 Per altre informazioni, vedere [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) .
   
@@ -40,7 +40,7 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
   
 ## <a name="how-to-get-to-the-skype-for-business-device-usage-report"></a>Come ottenere il report sull'utilizzo del dispositivo Skype for business
 
-1. Accedere all'interfaccia di amministrazione > **segnala** > l'**utilizzo**.
+1. Accedere all'interfaccia di amministrazione > **segnala**l'  >  **utilizzo**.
     
 2. Nella pagina **uso** fare clic su **utilizzo del dispositivo Skype for business** nell' **elenco Seleziona un report** a sinistra. In alternativa, fai clic sul widget **attività di Skype for business** e quindi fai clic su **uso del dispositivo Skype for business** nell'elenco **attività di Skype for business** .
     

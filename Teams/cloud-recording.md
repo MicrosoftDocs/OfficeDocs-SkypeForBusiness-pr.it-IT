@@ -16,18 +16,21 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 58c264075608817ef805f7b6c58f8b39394fc369
-ms.sourcegitcommit: a7c823f61d9ab88424bad924113d780ce11e509f
+ms.openlocfilehash: eb2a9a3cf2e349ab74fc9059408a7be2c41c8408
+ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44224229"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44523339"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
 In Microsoft Teams, gli utenti possono registrare le riunioni e le chiamate di gruppo per acquisire audio, video e attività di condivisione dello schermo. È anche disponibile un'opzione per la trascrizione automatica delle registrazioni, che consente agli utenti di riprodurre le registrazioni delle riunioni con sottotitoli e cercare gli elementi di discussione importanti nella trascrizione. La registrazione avviene nel cloud e viene salvata in [Microsoft Stream](https://docs.microsoft.com/stream/), in modo che gli utenti possano condividerla in tutta sicurezza nell'organizzazione.
 
 Argomenti correlati: [documentazione per gli utenti finali sulla registrazione delle riunioni di Teams](https://aka.ms/recordmeeting)
+
+> [!NOTE]
+> Per informazioni sull'uso dei ruoli nelle riunioni di team e su come modificare i ruoli degli utenti, vedere [ruoli in una riunione di teams](https://support.microsoft.com/en-us/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019?ui=en-us&rs=en-us&ad=us).
 
 ## <a name="prerequisites-for-teams-cloud-meeting-recording"></a>Prerequisiti per la registrazione delle riunioni di Teams nel cloud
 
@@ -45,7 +48,7 @@ Per registrare le riunioni di un utente di Teams, è necessario che Microsoft St
 <sup>1</sup> l'utente deve avere la licenza per caricare/scaricare riunioni in/da Microsoft Stream, ma non ha bisogno della licenza per registrare una riunione. Se si vuole impedire a un utente di registrare una riunione di Microsoft Teams, è necessario assegnargli un criterio TeamsMeetingPolicy con AllowCloudRecording impostato su $False.
 
 > [!IMPORTANT] 
-> Gli utenti non hanno bisogno di una licenza Microsoft Stream assegnata se si vuole che gli utenti registrino e scarichino solo le registrazioni. Ciò significherà che le registrazioni non sono archiviate in Microsoft Stream, ma sono invece archiviate in Azure Media Services (AMS) con un limite di 30 giorni prima che venga eliminato. A questo punto non è possibile che un amministratore possa controllare o gestire, inclusa la possibilità di eliminarlo.
+> Gli utenti non hanno bisogno di una licenza di Microsoft Stream se dovranno solo avere la possibilità di registrare e scaricare le registrazioni. Ciò significherà che le registrazioni non sono archiviate in Microsoft Stream, ma sono invece archiviate in Azure Media Services (AMS) con un limite di 30 giorni prima che venga eliminato. Attualmente l'amministratore non può controllare o gestire questo aspetto, inclusa la capacità di eliminazione.
 
 ## <a name="set-up-teams-cloud-meeting-recording-for-users-in-your-organization"></a>Configurare la registrazione di riunioni di Teams nel cloud per gli utenti dell'organizzazione
 
@@ -74,6 +77,9 @@ Nell'interfaccia di amministrazione di Microsoft Teams attivare o disattivare l'
 Con PowerShell, configurare l'opzione AllowCloudRecording in TeamsMeetingPolicy. Per altre informazioni, vedere [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) and [Set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy).
 
 Tenere presente che sia l'organizzatore della riunione che la persona che avvia la registrazione devono avere autorizzazioni di registrazione per registrare la riunione. A meno che non siano stati assegnati criteri personalizzati, gli utenti ottengono il criterio globale, che ha AllowCloudRecording disabilitato per impostazione predefinita.
+
+> [!NOTE]
+> Per altre informazioni sull'uso dei ruoli di teams per configurare chi ha l'autorizzazione per registrare una riunione, vedere [ruoli in una riunione di teams](https://support.microsoft.com/en-us/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019?ui=en-us&rs=en-us&ad=us).
 
 Affinché un utente rientri nel criterio globale, usare il cmdlet seguente per rimuovere l'assegnazione di un criterio specifico per un utente:
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cd3cacafdf5f3f8369ea6bce18da2aac976e437b
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 40f88c93e20fde89eb9791cc90760d554e52a004
+ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825134"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44512813"
 ---
 # <a name="document-my-success-plan"></a>Documentare il piano di successo
 
@@ -108,7 +108,7 @@ Di seguito è riportato un esempio di piano di esecuzione trimestrale per la fas
 
 ## <a name="communications-and-governance-plan"></a>Piano di comunicazione e governance
 
-Per tenere aggiornati gli stakeholder del progetto con lo stato di avanzamento della distribuzione, è necessario stabilire un piano per il modo in cui le comunicazioni si terranno tra i membri del team di progetto principali e con le parti interessate per discutere questioni relative allo stato del progetto, Key pietre miliari, blocchi e varie recensioni del progetto nei confronti di KSIs, metriche operative e obiettivi strategici stabiliti.
+Per tenere aggiornati i partecipanti al progetto con lo stato di avanzamento della distribuzione, è necessario stabilire un piano per il modo in cui le comunicazioni si terranno tra i membri del team di progetto di base e con le parti interessate per discutere le questioni relative allo stato del progetto, alle principali attività cardine, agli stampi e alle varie recensioni del progetto rispetto a KSIs, metriche operative e obiettivi strategici.
 
 Di seguito è riportato un esempio di piano di comunicazione e governance che può essere sfruttato nel progetto di implementazione vocale cloud.
 
@@ -173,7 +173,7 @@ Dopo aver eseguito la valutazione della conformità con l'adozione, il team di p
 
 Identificare le risorse per supportare le attività di adozione come volantini, messaggi di posta elettronica di benvenuto e materiali di formazione, oltre a tutte le personalizzazioni necessarie per soddisfare i requisiti dell'organizzazione.
 
-Scaricare i modelli per le attività di adozioni dal [Microsoft teams Customer Success Kit](https://www.microsoft.com/download/details.aspx?id=54244).
+Scaricare i modelli per le attività di adozioni dal [Microsoft teams Customer Success Kit](https://aka.ms/TeamsCustomerSuccess).
 
 ### <a name="operational-plan"></a>Piano operativo
 

@@ -22,16 +22,16 @@ ms.custom:
 - O365M_ReportsS4BPeerActivity
 - O365P_ReportsS4BPeerActivity
 description: 'Get a Skype for Business Peer-to-peer activity report, and learn how to interpret and customize it for your needs. '
-ms.openlocfilehash: 53d36b29961991a6d87ccd8b3ccfb94335693ac8
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+ms.openlocfilehash: 3708bff31f0034347c23d67d58cf4be7cb3bc956
+ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41769339"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44205057"
 ---
 # <a name="peer-to-peer-activity-report"></a>Report attività peer-to-peer
 
-[] Il nuovo dashboard **Report** di Office 365 offre una panoramica delle attività su tutti i prodotti Office 365 nella tua organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi usare il report **attività peer-to-peer di Skype for business** per vedere quanto gli utenti usano messaggistica istantanea, audio, video, condivisione applicazioni e trasferimento di file. 
+Il dashboard **report** Mostra la panoramica delle attività in tutti i prodotti Microsoft 365 o Office 365 dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, puoi usare il report **attività peer-to-peer di Skype for business** per vedere quanto gli utenti usano messaggistica istantanea, audio, video, condivisione applicazioni e trasferimento di file. 
 
 Vedere la [Panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263).
   
@@ -42,9 +42,9 @@ Questo report, insieme agli altri report di Skype for business, fornisce informa
   
 ## <a name="how-to-get-to-the-skype-for-business-peer-to-peer-activity-report"></a>Come ottenere il report Attività peer-to-peer Skype for Business
 
-1. Accedere all'interfaccia di amministrazione > **segnala** > l'**utilizzo**.
+1. Accedere all'interfaccia di amministrazione > **segnala**l'  >  **utilizzo**.
     
-2. Nella pagina **utilizzo** selezionare**attività peer-to-peer** di **Skype for business** > nell' **elenco Seleziona un report** a sinistra. In alternativa, fai clic sul widget **attività di Skype for business** e quindi fai clic su **attività peer-to-peer Skype for business** nell'elenco **attività di Skype for business** .
+2. Nella pagina **utilizzo** selezionare **Skype for Business**  >  **attività peer-to-peer** di Skype for business nell' **elenco Seleziona un report** a sinistra. In alternativa, fai clic sul widget **attività di Skype for business** e quindi fai clic su **attività peer-to-peer Skype for business** nell'elenco **attività di Skype for business** .
 
 ## <a name="interpret-the-skype-for-business-peer-to-peer-activity-report"></a>Interpretare il report Attività peer-to-peer Skype for Business
 

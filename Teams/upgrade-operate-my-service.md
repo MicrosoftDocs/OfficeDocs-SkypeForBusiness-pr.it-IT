@@ -6,7 +6,7 @@ manager: serdars
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
-ms.reviewer: dearbeen
+ms.reviewer: landerl
 description: Attività e attività necessarie per la gestione dei servizi di teams, incluso il monitoraggio dell'integrità dei servizi e la valutazione e garanzia della qualità e dell'uso della rete
 localization_priority: Normal
 search.appverid: MET150
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3183eac6851531bcaefbddd72cc445844755b307
-ms.sourcegitcommit: 3325fd9de57367e9dd60685d1fef096921441a76
+ms.openlocfilehash: 976954014e3d1e78e8ca22de4f20a95985033006
+ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997287"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44523319"
 ---
 # <a name="operate-your-service"></a>Gestire il servizio
 
@@ -166,7 +166,7 @@ Questi gruppi possono includere i proprietari dei servizi, gli helpdesk, i grupp
 
 Microsoft teams è un servizio basato su cloud. Con questo viene la possibilità di apportare nuove funzionalità e funzionalità a un ritmo rapido. La realizzazione di un'innovazione continua offre un evidente vantaggio per le organizzazioni, ma queste modifiche devono essere gestite in modo appropriato all'interno dell'organizzazione per evitare che l'utente abbia resistenze o escalation all'helpdesk.
 
-Gli aggiornamenti dei team vengono distribuiti automaticamente agli utenti. Gli utenti avranno sempre il client e le funzionalità più recenti disponibili nel servizio teams. Non è possibile gestire l'implementazione degli aggiornamenti di teams agli utenti, pertanto è importante gestire la modifica attraverso programmi di comunicazione, formazione e adozione efficaci. Se gli utenti sono a conoscenza della modifica, hanno colto i vantaggi e hanno il potere di sfruttare le nuove funzionalità&mdash;che sapranno adattare più rapidamente e accogliere positivamente la modifica.
+Gli aggiornamenti dei team vengono distribuiti automaticamente agli utenti. Gli utenti avranno sempre il client e le funzionalità più recenti disponibili nel servizio teams. Non è possibile gestire l'implementazione degli aggiornamenti di teams agli utenti, pertanto è importante gestire la modifica attraverso programmi di comunicazione, formazione e adozione efficaci. Se gli utenti sono a conoscenza della modifica, hanno colto i vantaggi e hanno il potere di sfruttare le nuove funzionalità &mdash; che sapranno adattare più rapidamente e accogliere positivamente la modifica.
 
 ### <a name="monitoring-for-change"></a>Monitoraggio per la modifica
 

@@ -6,7 +6,7 @@ manager: serdars
 ms.topic: article
 ms.service: msteams
 audience: admin
-ms.reviewer: dearbeen
+ms.reviewer: landerl
 description: Informazioni su come aggiornare l'organizzazione a Microsoft Teams da un deployement di Skype for business online.
 localization_priority: Normal
 search.appverid: MET150
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 37deecdbff083718dcb5b8a16e77ac8da4b998ff
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 29dc02a88efe533f9a43a110c357203b87a890d6
+ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905358"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44523169"
 ---
 # <a name="upgrade-from-skype-for-business-online-to-teams"></a>Eseguire l'aggiornamento da Skype for business online a teams
 
@@ -58,7 +58,7 @@ Seguire questa procedura per aggiornare tutti gli utenti ai team contemporaneame
 
 ### <a name="step-1-notify-the-users-of-the-change-optional"></a>Passaggio 1: notificare agli utenti la modifica (facoltativo)
 
-1. Nell'interfaccia di amministrazione di Microsoft teams selezionare l'**aggiornamento dei team**di **Impostazioni** > a livello di organizzazione.
+1. Nell'interfaccia di amministrazione di Microsoft teams selezionare l'aggiornamento dei team di **impostazioni a livello di organizzazione**  >  **Teams upgrade**.
 2. In **modalità di coesistenza**cambiare gli **utenti di Notify Skype for business che è disponibile un aggiornamento a teams** **su**attivato.
 
 ### <a name="step-2-set-the-coexistence-mode-to-teamsonly-for-the-organization"></a>Passaggio 2: impostare la modalità di coesistenza su TeamsOnly per l'organizzazione

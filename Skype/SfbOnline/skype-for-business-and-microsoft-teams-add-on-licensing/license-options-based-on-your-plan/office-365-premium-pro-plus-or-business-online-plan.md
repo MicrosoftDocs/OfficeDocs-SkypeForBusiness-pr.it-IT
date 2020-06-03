@@ -21,12 +21,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: Informazioni sulle licenze per i componenti aggiuntivi, le caratteristiche e su come acquistare per le app Microsoft 365 per le aziende o per Skype for business online piano standalone 2.
-ms.openlocfilehash: f7ec0d5bec1dbf9aea795c7dee75e4fb0a606077
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: d7c09d25a31d54a73591b53807828ea02c3d637c
+ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43777921"
+ms.lasthandoff: 06/02/2020
+ms.locfileid: "44204857"
 ---
 # <a name="microsoft-365-apps-for-enterprise-or-skype-for-business-online-standalone-plan-2"></a>App Microsoft 365 per Enterprise o Skype for business online piano autonomo 2
 
@@ -40,6 +40,6 @@ Se sono già state acquistate le [app Microsoft 365 per le aziende](https://prod
 |**Per aggiungere questa caratteristica** <br/> |**Ecco cosa è necessario acquistare** <br/> |
 |**Audioconferenza** <br/> Buy 1 **Audio Conferencing** license for each person who is going to schedule or host a dial-in meeting. Attendees do not need licenses. <br/> |Componente aggiuntivo per **Audioconferenze** <br/>Una volta acquistate le licenze, Microsoft sarà il provider di servizi di audioconferenza. |
 |**Numeri verdi per l'accesso esterno alle conferenze e la possibilità di effettuare chiamate in uscita da una conferenza per aggiungere qualcuno chiamando qualsiasi numero di telefono nel mondo** <br/> |[Credito per la comunicazione](/microsoftteams/set-up-communications-credits-for-your-organization)|
-|**Sistema telefonico** <br/> |1. [passare a un piano di Office 365 per le aziende diverso](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a). Se si dispone di app Microsoft 365 per le aziende o di Skype for business online standalone Plan 2, è consigliabile aggiornare il piano a un piano Enterprise E5 per ottenere le caratteristiche di cloud Voice. Se si esegue l'aggiornamento a un piano Enterprise E1 o E3, viene visualizzata l'opzione per acquistare il componente aggiuntivo per il **sistema telefonico** .<br/> 2. Componente aggiuntivo di **Sistema telefonico** <br/>  3. Piani di chiamata: acquista un [Piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365) da Office 365. <br/>  In alternativa, utilizza il [servizio telefonico del tuo provider esistente](../../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md#bkmk_existing).  <br/> |
-|**Piani di chiamata** <br/> |1. [passare a un piano di Office 365 per le aziende diverso](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a).  <br/> 2. Componente aggiuntivo di **Sistema telefonico** <br/> 3. [Piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365): è possibile acquistarlo solo dopo l'acquisto di componente aggiuntivo al **Sistema telefonico**. <br/> |
+|**Sistema telefonico** <br/> |1. [passare a un piano Microsoft 365 for business diverso](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a). Se si dispone di app Microsoft 365 per le aziende o di Skype for business online standalone Plan 2, è consigliabile aggiornare il piano a un piano Enterprise E5 per ottenere le caratteristiche di cloud Voice. Se si esegue l'aggiornamento a un piano Enterprise E1 o E3, viene visualizzata l'opzione per acquistare il componente aggiuntivo per il **sistema telefonico** .<br/> 2. Componente aggiuntivo di **Sistema telefonico** <br/>  3. piani di chiamata: acquistare un piano per le [chiamate](/MicrosoftTeams/calling-plans-for-office-365) . <br/>  In alternativa, utilizza il [servizio telefonico del tuo provider esistente](../../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md#bkmk_existing).  <br/> |
+|**Piani di chiamata** <br/> |1. [passare a un piano Microsoft 365 for business diverso](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a).  <br/> 2. Componente aggiuntivo di **Sistema telefonico** <br/> 3. [Piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365): è possibile acquistarlo solo dopo l'acquisto di componente aggiuntivo al **Sistema telefonico**. <br/> |
    

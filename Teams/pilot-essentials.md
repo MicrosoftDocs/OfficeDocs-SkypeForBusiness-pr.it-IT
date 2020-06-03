@@ -5,7 +5,7 @@ ms.author: v-lanac
 manager: serdars
 ms.topic: article
 ms.service: msteams
-ms.reviewer: dearbeen
+ms.reviewer: landerl
 audience: admin
 description: Linee guida per l'avvio di Microsoft teams Pilot per esplorare tutto ciò che i team possono offrire alla propria organizzazione mentre si continua a usare Skype for business
 localization_priority: Normal
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 52721d40e36dc017d9ba76473367d1c9c5e5b4e7
-ms.sourcegitcommit: 5d64e30a1984a4b1d9ff36e2e1721cb4bbf9e450
+ms.openlocfilehash: 0849c2aae273953e7cb67b95f32cf30f4e17297f
+ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2020
-ms.locfileid: "42706456"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44522689"
 ---
 # <a name="conduct-a-user-pilot"></a>Condurre un progetto pilota per gli utenti
 
@@ -38,7 +38,7 @@ Questo articolo fa parte della fase di distribuzione e implementazione del viagg
 - [Preparare l'ambiente](https://aka.ms/SkypeToTeams-TechnicalReadiness)
 - [Preparare l'organizzazione](https://aka.ms/SkypeToTeams-UserReadiness)
 
-Distribuendo le nuove tecnologie, l'organizzazione può realizzare un valore aziendale come il risparmio dei costi, la conformità della sicurezza, la soddisfazione dei dipendenti e l'efficienza operativa, ma può anche influenzare la produttività e l'infrastruttura organizzativa degli utenti ( rete). Prima di abilitare la nuova tecnologia in tutta l'organizzazione, eseguire un pilota formale dell'utente. Proprio come si dipinge una piccola chiazza di colore su un muro prima di dipingere l'intera sala, è possibile testare una distribuzione ampia su scala più ridotta eseguendo un progetto pilota per convalidare la disponibilità tecnica e degli utenti, identificare e mitigare i problemi e garantire un successo implementazione a livello di organizzazione.
+Distribuendo le nuove tecnologie, l'organizzazione può realizzare un valore aziendale come il risparmio dei costi, la conformità della sicurezza, la soddisfazione dei dipendenti e l'efficienza operativa, ma può anche influenzare la produttività e l'infrastruttura organizzativa degli utenti (la rete). Prima di abilitare la nuova tecnologia in tutta l'organizzazione, eseguire un pilota formale dell'utente. Proprio come si dipinge una piccola chiazza di colore su un muro prima di dipingere l'intera sala, è possibile testare una distribuzione ampia su scala più ridotta eseguendo un progetto pilota per convalidare la disponibilità tecnica e degli utenti, identificare e mitigare i problemi e garantire una corretta implementazione a livello di organizzazione.
 
 Per ottenere risultati più realistici, il pilota dovrebbe coinvolgere gli utenti effettivi, mimare il modo in cui comunica e collaborare e verificare sia le esperienze tecniche che quelle degli utenti. Indipendentemente dal fatto che l'organizzazione stia valutando l'esecuzione di Skype for business e teams affiancati, l'aggiornamento ai team in futuro o la distribuzione di nuove funzionalità, una chiamata o una conferenza, un pilota può aiutare a identificare il percorso più appropriato per l'organizzazione. A volte considerata la fase 1 di un'implementazione, il pilota ideale sfrutta la preparazione già avviata e implementa il piano definito con un gruppo di utenti mirato.
 
@@ -78,14 +78,14 @@ L'organizzazione può scegliere di pilotare tutte le funzionalità contemporanea
 
 ## <a name="5-conduct-your-pilot"></a>5. eseguire il pilota
 
-Con tutta la logistica in atto, ora sei pronto per iniziare il tuo progetto pilota. L'esecuzione di un pilota include la comunicazione con gli utenti, il monitoraggio della rete e l'uso per garantire che le prestazioni della rete e la qualità delle chiamate rimangano integri, raccolgono feedback dai partecipanti e rivedendo i ticket dell'helpdesk per domande correlate a Squadre.
+Con tutta la logistica in atto, ora sei pronto per iniziare il tuo progetto pilota. L'esecuzione del pilota include la comunicazione con gli utenti, il monitoraggio della rete e l'uso per garantire che le prestazioni della rete e la qualità delle chiamate rimangano integri, raccolgono feedback dai partecipanti e rivedendo i ticket dell'helpdesk per le domande relative ai team.
 
 ### <a name="tips-for-pilot-success"></a>Suggerimenti per il successo pilota
 
 I suggerimenti seguenti consentono di verificare l'esito positivo del progetto pilota:
 
 - Prima di iniziare il pilota, verificare che tutti i partecipanti al programma pilota siano abilitati per la modalità di coesistenza appropriata.
-- (https://aka.ms/SkypeToTeams-SetCoexistence) si vuole convalidare.
+- ( https://aka.ms/SkypeToTeams-SetCoexistence) si vuole convalidare.
 - Ogni settimana, in tutto il tuo pilota, incontra le parti interessate del progetto per esaminare il feedback degli utenti, i dati sull'utilizzo, i dati di rete e i biglietti dell'helpdesk per garantire che il tuo pilota funzioni senza problemi. Apportare le modifiche necessarie.
 
 ### <a name="suggested-timeline"></a>Sequenza temporale consigliata
