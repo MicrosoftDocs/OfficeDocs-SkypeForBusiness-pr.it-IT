@@ -24,26 +24,26 @@ ms.custom:
 - Direct Routing
 - seo-marvel-mar2020
 description: Informazioni sulle chiamate in caso di emergenza, incluse indicazioni su indirizzi di emergenza, routing delle chiamate di emergenza e chiamate di emergenza dinamiche.
-ms.openlocfilehash: 8c2de31aa81ac36338560c9b75d5c7ef27e460f8
-ms.sourcegitcommit: 000515147632c6278bcda4505a1038014dda8e2f
+ms.openlocfilehash: 889446ca08289ccb15128bee8ca6b6170398c599
+ms.sourcegitcommit: d8e05e66311725f8ff6d28011355129baeb305b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232547"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44539493"
 ---
 # <a name="manage-emergency-calling"></a>Gestire le chiamate di emergenza
 
-In questo articolo vengono illustrati i concetti che è necessario conoscere per gestire le chiamate di emergenza, che include informazioni su indirizzi di emergenza, indirizzi di emergenza dinamici e routing delle chiamate di emergenza. Questo articolo usa la terminologia seguente:
+In questo articolo vengono illustrati i concetti che è necessario conoscere per gestire le chiamate di emergenza &mdash; che includono informazioni su indirizzi di emergenza, indirizzi di emergenza dinamici e routing delle chiamate di emergenza. Questo articolo usa la terminologia seguente:
 
-- **Indirizzo di emergenza** -indirizzo civico-l'indirizzo fisico o di strada di una posizione di business per l'organizzazione.
+- **Indirizzo di emergenza** -indirizzo civico &mdash; l'indirizzo fisico o stradale di una sede aziendale per l'organizzazione.
 
   Ad esempio, l'indirizzo *12345 North Main Street, Redmond, WA 98052* viene usato per instradare le chiamate di emergenza alle autorità di spedizione appropriate e per facilitare l'individuazione del chiamante di emergenza.
 
 - **Posizionare** -in genere un piano, un edificio, un'ala o un numero di ufficio. La posizione è associata a un indirizzo di emergenza per assegnare un percorso più preciso all'interno di un edificio. È possibile avere un numero illimitato di posizioni associate a un indirizzo di emergenza. Ad esempio, se l'organizzazione ha più edifici, è consigliabile includere informazioni sul luogo per ogni edificio e per ogni piano all'interno di ogni edificio.  
 
-- **Posizione di emergenza** : la posizione è un indirizzo civico, con un posto facoltativo. Se l'azienda ha più di una posizione fisica, è probabile che sia necessaria più di una posizione di emergenza. 
+- **Posizione di emergenza** : la posizione è un indirizzo civico &mdash; con un posto facoltativo. Se l'azienda ha più di una posizione fisica, è probabile che sia necessaria più di una posizione di emergenza. 
 
-  Quando si crea un indirizzo di emergenza, per questo indirizzo viene creato automaticamente un ID posizione univoco.  Se si aggiunge una posizione a un indirizzo di emergenza, ad esempio se si aggiunge un piano a un indirizzo di un edificio, viene creato un ID posizione per la combinazione dell'indirizzo di emergenza e del luogo.  In questo esempio ci saranno due ID posizione: uno per l'indirizzo civico; uno per l'indirizzo civico Unito e il luogo associato.
+  Quando si crea un indirizzo di emergenza, per questo indirizzo viene creato automaticamente un ID posizione univoco.  Se si aggiunge una posizione a un indirizzo di emergenza &mdash; , ad esempio, se si aggiunge un piano a un indirizzo di un edificio &mdash; viene creato un ID posizione per la combinazione dell'indirizzo di emergenza e del luogo.  In questo esempio ci saranno due ID posizione: uno per l'indirizzo civico; uno per l'indirizzo civico Unito e il luogo associato.
 
   Quando si assegna una posizione di emergenza a un utente o un sito, si tratta di un ID di posizione univoco associato all'utente o al sito.
 
@@ -84,7 +84,7 @@ Quando la posizione deve essere associata al numero di telefono dipende dal paes
 
 - Negli Stati Uniti e in Canada, ad esempio, è necessaria una posizione di emergenza quando un numero viene assegnato a un utente.
 
-- Per altri paesi, ad esempio in Europa, Medio Oriente e Africa (EMEA), è necessaria una posizione di emergenza quando si riceve il numero di telefono da Office 365 o quando viene trasferito da un altro provider o gestore di servizi.
+- Per altri paesi, &mdash; ad esempio in Europa, Medio Oriente e Africa (EMEA) &mdash; è necessaria una posizione di emergenza quando si riceve il numero di telefono da Office 365 o quando viene trasferito da un altro provider o gestore di servizi.
 
 ### <a name="dynamic-emergency-calling"></a>Chiamate di emergenza dinamiche
 
@@ -96,7 +96,7 @@ Per gli utenti del piano di chiamata, la posizione dinamica per il routing delle
 
 - Se un client di teams per un utente del piano di chiamate degli Stati Uniti non acquisisce in modo dinamico un indirizzo di emergenza negli Stati Uniti, l'indirizzo di emergenza registrato viene usato per aiutare lo schermo e instradare la chiamata. La chiamata verrà tuttavia visualizzata per determinare se è necessario un indirizzo aggiornato prima di connettere il chiamante alla PSAP appropriata.
 
-Negli Stati Uniti è necessario configurare l'indirizzo civico che fa parte delle posizioni di emergenza assegnate agli identificatori di rete e includere i codici Geo associati. Per altre informazioni, vedere [pianificare e configurare chiamate di emergenza dinamiche](configure-dynamic-emergency-calling.md).
+Negli Stati Uniti è necessario configurare l'indirizzo civico che fa parte delle posizioni di emergenza assegnate agli identificatori di rete &mdash; e includere i codici Geo associati. Per altre informazioni, vedere [pianificare e configurare chiamate di emergenza dinamiche](configure-dynamic-emergency-calling.md).
 
 
 ### <a name="emergency-call-routing"></a>Routing delle chiamate di emergenza
@@ -142,15 +142,15 @@ Se i piani per le chiamate non sono disponibili nell'area o se si vuole conserva
 
 ### <a name="emergency-call-enablement-and-configuration"></a>Abilitazione e configurazione delle chiamate di emergenza
 
-Devi definire i criteri per le chiamate di emergenza per gli utenti di routing diretto usando TeamsEmergencyCallRoutingPolicy per definire i numeri di emergenza e la destinazione di routing associata. Nota che i percorsi di emergenza registrati non sono supportati per gli utenti di routing diretto.
+Per definire i numeri di emergenza e la destinazione di routing associata, è necessario definire i criteri di chiamata di emergenza per gli utenti del routing diretto usando un criterio di routing delle chiamate di emergenza per i team (TeamsEmergencyCallRoutingPolicy). Nota che i percorsi di emergenza registrati non sono supportati per gli utenti di routing diretto.
 
-È possibile assegnare un TeamsEmergencyCallRoutingPolicy a un account utente di routing diretto di teams, a un sito di rete o a entrambi. Quando un client teams avvia o modifica una connessione di rete, teams esegue una ricerca del sito di rete in cui il client si trova nel modo seguente:
+È possibile assegnare criteri di routing delle chiamate di emergenza a un account utente di routing diretto di teams, a un sito di rete o a entrambi. Quando un client teams avvia o modifica una connessione di rete, teams esegue una ricerca del sito di rete in cui il client si trova nel modo seguente:
 
-- Se un TeamsEmergencyCallRoutingPolicy è associato al sito, il criterio del sito viene usato per configurare le chiamate di emergenza.
+- Se un criterio di routing delle chiamate di emergenza è associato al sito, il criterio del sito viene usato per configurare le chiamate di emergenza.
 
-- Se non è presente alcun TeamsEmergencyCallRoutingPolicy associato al sito oppure se il client è connesso a un sito non definito, viene usata la TeamsEmergencyCallRoutingPolicy associata all'account utente per configurare le chiamate di emergenza. 
+- Se non ci sono criteri di routing delle chiamate di emergenza associati al sito oppure se il client è connesso a un sito non definito, il criterio di routing delle chiamate di emergenza associato all'account utente viene usato per configurare le chiamate di emergenza. 
 
-- Se il client teams non è in grado di ottenere un TeamsEmergencyCallRoutingPolicy, l'utente non è abilitato per le chiamate di emergenza.
+- Se il client teams non è in grado di ottenere un criterio di routing delle chiamate di emergenza, l'utente non è abilitato per le chiamate di emergenza.
 
 ### <a name="dynamic-emergency-calling"></a>Chiamate di emergenza dinamiche
 
@@ -158,7 +158,7 @@ I client di teams per il routing diretto gli utenti possono acquisire un indiriz
 
 ### <a name="emergency-call-routing"></a>Routing delle chiamate di emergenza
 
-TeamsEmergencyCallRoutingPolicy fa riferimento a un uso PSTN online, che deve avere la configurazione di routing diretto appropriata per instradare correttamente le chiamate di emergenza ai gateway PSTN appropriati. In particolare, devi assicurarti che sia presente un OnlineVoiceRoute per la stringa di chiamata di emergenza. Per altre informazioni, vedere [configurare il routing diretto](direct-routing-configure.md). 
+Il criterio di routing delle chiamate di emergenza fa riferimento a un uso PSTN online, che deve avere la configurazione di routing diretto appropriata per instradare correttamente le chiamate di emergenza ai gateway PSTN appropriati. In particolare, devi assicurarti che sia presente un OnlineVoiceRoute per la stringa di chiamata di emergenza. Per altre informazioni, vedere [configurare il routing diretto](direct-routing-configure.md). 
 
 (Nota: i client di teams anteporre il segno "+" davanti ai numeri di emergenza in modo simile al client Skype for business, ovvero + 911. Questo comportamento verrà modificato nei prossimi mesi in modo che le chiamate di emergenza dei team non invieranno più un "+" che precede il numero; ovvero 911.)
 
@@ -198,17 +198,17 @@ Per altre informazioni, vedere [controlli bordo sessione certificati per il rout
 
 La notifica di Security desk è disponibile sia con i piani di chiamata Microsoft che con il routing diretto del sistema telefonico.
 
-Si usa TeamsEmergencyCallingPolicy per configurare gli utenti che devono ricevere una notifica durante una chiamata di emergenza e il modo in cui vengono notificati: solo chat, conferenze in e disattivato o conferenze in e disattivato, ma con la possibilità di riattivare l'audio.  È anche possibile specificare un numero PSTN esterno di un utente o di un gruppo per chiamare e partecipare alla chiamata di emergenza. 
+Si usa un criterio per le chiamate di emergenza di Teams (TeamsEmergencyCallingPolicy) per configurare gli utenti che devono ricevere una notifica durante una chiamata di emergenza e il modo in cui vengono notificati: solo chat, conferenze in e disattivato, o conferenze in e disattivato, ma con la possibilità di riattivare l'audio.  È anche possibile specificare un numero PSTN esterno di un utente o di un gruppo per chiamare e partecipare alla chiamata di emergenza. 
 
-Un TeamsEmergencyCallingPolicy può essere concesso a un account utente di teams, assegnato a un sito di rete o a entrambi.  Quando un client teams avvia o modifica una connessione di rete, teams esegue una ricerca del sito di rete in cui si trova il client:
+Un criterio di chiamata di emergenza può essere concesso a un account utente di teams, assegnato a un sito di rete o a entrambi.  Quando un client teams avvia o modifica una connessione di rete, teams esegue una ricerca del sito di rete in cui si trova il client:
 
-- Se un TeamsEmergencyCallingPolicy è associato a un sito di rete, il criterio del sito viene usato per configurare la notifica di Security desk.
+- Se un criterio di chiamata di emergenza è associato a un sito di rete, il criterio del sito viene usato per configurare la notifica di Security desk.
 
-- Se non è presente alcun TeamsEmergencyCallingPolicy associato al sito o se il client è connesso a un sito non definito, il TeamsEmergencyCallingPolicy associato all'account utente viene usato per configurare la notifica di Security desk.  
+- Se non ci sono criteri per le chiamate di emergenza associati al sito oppure se il client è connesso a un sito non definito, viene usato il criterio per le chiamate di emergenza associato all'account utente per configurare la notifica di Security desk.  
 
-- Se il client teams non è in grado di ottenere un TeamsEmergencyCallingPolicy, l'utente non è abilitato per la notifica di Security desk.
+- Se il client teams non è in grado di ottenere un criterio per le chiamate di emergenza, l'utente non è abilitato per la notifica di Security desk.
 
-Durante una chiamata di emergenza, un desk di sicurezza viene convocato nella chiamata e l'esperienza dell'utente del Security desk viene controllata in base al TeamsEmergencyCallingPolicy. Viene avviata una chat di gruppo con ogni membro del servizio di sicurezza e la posizione del chiamante di emergenza viene condivisa tramite una notifica di messaggio importante.  Se un'opzione per la conferenza è configurata come parte del criterio, ogni utente del servizio di sicurezza viene inoltre chiamato come parte della conferenza.
+Durante una chiamata di emergenza, un desk di sicurezza viene convocato nella chiamata e l'esperienza dell'utente del Security desk viene controllata in base al criterio di chiamata di emergenza per i team. Viene avviata una chat di gruppo con ogni membro del servizio di sicurezza e la posizione del chiamante di emergenza viene condivisa tramite una notifica di messaggio importante.  Se un'opzione per la conferenza è configurata come parte del criterio, ogni utente del servizio di sicurezza viene inoltre chiamato come parte della conferenza.
 
     
 ## <a name="related-topics"></a>Argomenti correlati

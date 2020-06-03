@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b245566c0920604dac0e10e6a6cfe49937570bc2
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: bace73e411970ee1b907890b08a5e501daf90e50
+ms.sourcegitcommit: d8e05e66311725f8ff6d28011355129baeb305b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137116"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44539643"
 ---
 <a name="add-and-update-reporting-labels"></a>Aggiungere e aggiornare etichette di reporting
 ============================
@@ -38,9 +38,9 @@ Le etichette dei report e i dati relativi alle posizioni che fornisci sono una s
 
 **Per modificare la tabella delle subnet e delle posizioni**
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **posizioni** > che**segnalano etichette**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **posizioni**che  >  **segnalano etichette**.
 2. Fare clic su **Sostituisci dati percorsi**.
-3. Nel riquadro **Sostituisci dati posizione** fare clic su **Seleziona un file**e quindi selezionare e caricare il file CSV o TSV modificato.
+3. Nel riquadro **Sostituisci dati percorsi** fare clic su **Seleziona un file**e quindi selezionare e caricare il file CSV o TSV modificato.
 4. Fare clic su **carica**.
 
 È possibile scaricare un modello di esempio [qui](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/locations-template.zip?raw=true).

@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come configurare le impostazioni di rete per le funzionalità vocali di cloud in Microsoft teams.
-ms.openlocfilehash: 2f615de14cb38c24a1789b968e7c77e38698e26d
-ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+ms.openlocfilehash: 03eaeac1bce07cffa7dc000f964f080361a37d40
+ms.sourcegitcommit: d8e05e66311725f8ff6d28011355129baeb305b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41888705"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44539626"
 ---
 # <a name="manage-your-network-topology-for-cloud-voice-features-in-microsoft-teams"></a>Gestire la topologia di rete per le funzionalità vocali di cloud in Microsoft Teams
 
@@ -39,12 +39,12 @@ Si definiscono aree di rete, siti di rete e subnet nella scheda **siti di rete**
 
 #### <a name="add-and-configure-a-network-site"></a>Aggiungere e configurare un sito di rete
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alla**topologia di rete** **locations** > e quindi fai clic sulla scheda **siti di rete** .
-2. Fare clic su **nuovo**e quindi immettere un nome e una descrizione per il sito.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations**, vai alla  >  **topologia di rete**locations e quindi fai clic sulla scheda **siti di rete** .
+2. Fare clic su **Aggiungi**e quindi immettere un nome e una descrizione per il sito.
 
     ![Screenshot della pagina Aggiungi sito di rete](media/manage-network-topology-add-site.png)
 
-3. Per associare il sito a un'area di rete, fare clic su **collega area di rete**, selezionare un'area geografica esistente o fare clic su **Aggiungi** per aggiungere un'area geografica e quindi fare clic su **collega**.  
+3. Per associare il sito a un'area di rete, fare clic su **Aggiungi area di rete**, selezionare un'area geografica esistente o fare clic su **Aggiungi** per aggiungere un'area geografica e quindi fare clic su **collega**.  
 4. Per abilitare il routing basato sulla posizione per il sito, attivare il **routing basato sulla posizione**.
 5. Per assegnare i criteri dei servizi di emergenza al sito, eseguire una o entrambe le operazioni seguenti:
 
@@ -52,11 +52,11 @@ Si definiscono aree di rete, siti di rete e subnet nella scheda **siti di rete**
     - Se l'organizzazione ha distribuito il routing diretto del sistema telefonico, in **criteri di routing delle chiamate di emergenza**selezionare i criteri desiderati.
 
 6. Per associare una subnet al sito, fare clic su **Aggiungi subnet**in **subnet**. Specificare la versione IP, l'indirizzo IP, l'intervallo di rete, aggiungere una descrizione e quindi fare clic su **applica**. Ogni subnet deve essere associata a un sito specifico.
-7. Fai clic su **Salva**.
+7. Fare clic su **Salva**.
 
 #### <a name="modify-a-network-site"></a>Modificare un sito di rete
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alla**topologia di rete** **locations** > e quindi fai clic sulla scheda **siti di rete** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations**, vai alla  >  **topologia di rete**locations e quindi fai clic sulla scheda **siti di rete** .
 2. Selezionare il sito facendo clic a sinistra del nome del sito, quindi fare clic su **modifica**.
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva.**
 
@@ -66,7 +66,7 @@ Gli indirizzi IP attendibili esterni vengono gestiti nella scheda **IPS attendib
 
 #### <a name="add-a-trusted-ip-address"></a>Aggiungere un indirizzo IP attendibile
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alla**topologia di rete** **locations** > e quindi fai clic sulla scheda **IPS attendibile** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations**, vai alla  >  **topologia di rete**locations e quindi fai clic sulla scheda **IPS attendibile** .
 2. Fare clic su **nuovo**.
 3. Nel riquadro **Aggiungi indirizzo IP attendibile** specificare la versione IP, l'indirizzo IP, l'intervallo di rete, aggiungere una descrizione e quindi fare clic su **applica**.
 
@@ -74,7 +74,7 @@ Gli indirizzi IP attendibili esterni vengono gestiti nella scheda **IPS attendib
 
 #### <a name="edit-a-trusted-ip-address"></a>Modificare un indirizzo IP attendibile
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alla**topologia di rete** **locations** > e quindi fai clic sulla scheda **IPS attendibile** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Locations**, vai alla  >  **topologia di rete**locations e quindi fai clic sulla scheda **IPS attendibile** .
 2. Selezionare l'indirizzo IP facendo clic a sinistra, quindi fare clic su **modifica**.
 3. Nel riquadro **modifica indirizzo IP attendibile** apportare le modifiche desiderate e quindi fare clic su **applica**.
 
@@ -84,7 +84,7 @@ Per completare la procedura descritta in questa sezione, è necessaria una certa
 
 ### <a name="define-network-regions"></a>Definire le aree di rete
 
- Usa il cmdlet [New-CsTenantNetworkRegion](https://docs.microsoft.com/powershell/module/skype/New-CsTenantNetworkRegion) per definire le aree di rete. Tieni presente che il parametro RegionID è un nome logico che rappresenta la geografia dell'area geografica e non ha dipendenze o &lt;restrizioni e&gt; il parametro ID sito CentralSite è facoltativo.
+ Usa il cmdlet [New-CsTenantNetworkRegion](https://docs.microsoft.com/powershell/module/skype/New-CsTenantNetworkRegion) per definire le aree di rete. Tieni presente che il parametro RegionID è un nome logico che rappresenta la geografia dell'area geografica e non ha dipendenze o restrizioni e il &lt; parametro ID sito CentralSite &gt; è facoltativo.
 
 ```PowerShell
 New-CsTenantNetworkRegion -NetworkRegionID <region ID>  

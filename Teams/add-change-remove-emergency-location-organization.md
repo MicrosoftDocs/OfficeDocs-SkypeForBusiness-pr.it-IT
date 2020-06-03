@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: "Informazioni su come aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione nell'interfaccia di amministrazione di Microsoft teams. "
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 72730a326c6239b195d77f8a7bdde1b376da646f
-ms.sourcegitcommit: 000515147632c6278bcda4505a1038014dda8e2f
+ms.openlocfilehash: 8bed76fdfff2a6af2dabb3eef5c01dcfb39f422a
+ms.sourcegitcommit: d8e05e66311725f8ff6d28011355129baeb305b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232487"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44539463"
 ---
 # <a name="add-change-or-remove-an-emergency-location-for-your-organization"></a>Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza
 
@@ -40,13 +40,13 @@ Per informazioni su come ottenere un piano per le chiamate e sulla quantità di 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **fare clic su**  >  **indirizzi di emergenza**.
-2. Fare clic su **Aggiungi posizione**.
+2. Fare clic su **Aggiungi**.
 3. Immettere un nome e una descrizione per la posizione.
 4. Selezionare il paese o l'area geografica e quindi immettere l'indirizzo.
 
    > [!NOTE]
    > In Belgio, Francia, Germania, Irlanda, Paesi Bassi e Spagna è importante capire che per attivare correttamente un numero di telefono in Office 365 l'indirizzo impostato nella posizione di emergenza, usato per acquisire il numero, deve corrispondere al prefisso del numero di telefono.
-5. Se l'indirizzo non viene trovato e si vuole modificare manualmente l'indirizzo, attivare **Consenti di modificare manualmente la maschera di indirizzo se non è possibile trovare l'indirizzo selezionato**.
+5. Se l'indirizzo non viene trovato e si vuole modificare manualmente l'indirizzo, attivare **modifica manualmente l'** indirizzo.
 6. Fare clic su **Salva**.
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell

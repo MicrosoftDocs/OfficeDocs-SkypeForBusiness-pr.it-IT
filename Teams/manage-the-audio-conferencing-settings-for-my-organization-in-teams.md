@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: 'Per assegnare una licenza di conferenza telefonica con accesso esterno a un utente e molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno, vedere la procedura Microsoft teams. '
-ms.openlocfilehash: b353f119d3f666f0a694ab325273e2b5f568da04
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: f887e6567052f80d6353202906f77a51e6403372
+ms.sourcegitcommit: d8e05e66311725f8ff6d28011355129baeb305b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042483"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44539453"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-your-organization-in-microsoft-teams"></a>Gestire le impostazioni dei servizi di audioconferenza per l'organizzazione in Microsoft Teams
 
@@ -45,7 +45,7 @@ Potrebbe essere più semplice visualizzare tutte le impostazioni di audioconfere
   
 1. Accedere a Microsoft 365 con l'account di lavoro o dell'Istituto di istruzione.
     
-2. Nella barra di spostamento sinistra dell'interfaccia di **amministrazione di Microsoft 365**, **accedere a** > utenti**attivi**degli utenti e quindi selezionare l'utente o gli utenti dall'elenco degli utenti disponibili.
+2. Nella barra di spostamento sinistra dell'interfaccia di **amministrazione di Microsoft 365**, **accedere a utenti**  >  **attivi**degli utenti e quindi selezionare l'utente o gli utenti dall'elenco degli utenti disponibili.
     
     > [!NOTE]
     > Per assegnare licenze a un massimo di 20 utenti contemporaneamente, puoi ricorrere all'elenco a discesa **Selezionare una visualizzazione** e scegliere una delle opzioni oppure creare una visualizzazione personalizzata. Quindi fai clic su **Modifica**, due volte su **Avanti**, seleziona la licenza e fai clic su **Invia**.  
@@ -61,7 +61,7 @@ Potrebbe essere più semplice visualizzare tutte le impostazioni di audioconfere
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
+1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
 
 2. Nella parte superiore della pagina **ponti conferenza** fare clic su **Impostazioni Bridge**. 
 
@@ -76,7 +76,7 @@ Per altre informazioni, vedere la pagina di [riferimento di PowerShell per Micro
   
 ## <a name="reset-the-meeting-conference-id"></a>Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo teams ](media/teams-logo-30x30.png) **con l'interfaccia di amministrazione di Microsoft teams**
 
 1. Nella barra di spostamento sinistra fare clic su **utenti**e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
@@ -134,7 +134,7 @@ Vedere [impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbe
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
+1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
 
 2. Nella parte superiore della pagina **ponti conferenza** fare clic su **Impostazioni Bridge**. 
 
@@ -146,6 +146,9 @@ Vedere [impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbe
 
     Se si scelgono **i nomi o i numeri di telefono**, è anche possibile scegliere di abilitare o disabilitare i **chiamanti per registrare il nome prima di partecipare alla riunione**. 
 
+    > [!NOTE]
+    > Per impostazione predefinita, i partecipanti esterni non possono visualizzare i numeri di telefono dei partecipanti con accesso esterno. Se si vuole mantenere la privacy di questi numeri di telefono, selezionare **toni** per il **tipo di annuncio di entrata/uscita** (questo impedisce che i numeri vengano letti dalle squadre).
+
 5. Fare clic su **Salva**.
 
     
@@ -153,7 +156,7 @@ Vedere [modificare le impostazioni per un Bridge di audioconferenza](change-the-
   
  **Impostare la lunghezza del PIN per le riunioni**
 
-1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
+1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
 
 2. Nella parte superiore della pagina **ponti conferenza** fare clic su **Impostazioni Bridge**. 
 
@@ -166,7 +169,7 @@ Vedere [modificare le impostazioni per un Bridge di audioconferenza](change-the-
   
  **Abilitare o disabilitare l'invio di messaggi di posta elettronica agli utenti audio**
 
-1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
+1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
 
 2. Nella parte superiore della pagina **ponti conferenza** fare clic su **Impostazioni Bridge**. 
 
@@ -184,7 +187,7 @@ See [Send an email to a user with their Audio Conferencing information](send-an-
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
+1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
 
 2. Selezionare un numero di telefono nell'elenco e fare clic su **modifica**.
 
@@ -199,7 +202,7 @@ See [Set auto attendant languages for Audio Conferencing](set-auto-attendant-lan
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
+1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
 
 2. Selezionare un numero di telefono nell'elenco e fare clic su **modifica**. Qui puoi:
     

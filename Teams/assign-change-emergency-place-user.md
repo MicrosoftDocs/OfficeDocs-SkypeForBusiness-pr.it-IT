@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: In questo articolo verrà illustrato come assegnare o modificare la posizione di un luogo di emergenza per gli utenti dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d5b13cf5d4b4a0cf22077318e3c2c2196840f66e
-ms.sourcegitcommit: 000515147632c6278bcda4505a1038014dda8e2f
+ms.openlocfilehash: 35f7dfe6572b7ef3dc76b6c224d206e2ee4f23a2
+ms.sourcegitcommit: d8e05e66311725f8ff6d28011355129baeb305b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232467"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44539513"
 ---
 # <a name="assign-or-change-the-place-for-an-emergency-location-for-a-user"></a>Assegnare o modificare la posizione di un luogo di emergenza per un utente
 
@@ -37,7 +37,7 @@ Per informazioni su come ottenere piani per le chiamate e su quanto costano, ved
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **Voice**  >  **numeri di telefono**vocale.
 
-2. Nella pagina **numeri di telefono** selezionare un numero utente nell'elenco e quindi fare clic su **modifica**.
+2. Nella pagina **numeri di telefono** fare clic sulla scheda **numeri** , selezionare un numero utente nell'elenco e quindi fare clic su **modifica**.
 
 3. Nel riquadro **modifica** , in **posizione di emergenza**, eseguire una delle operazioni seguenti:
 
@@ -45,7 +45,9 @@ Per informazioni su come ottenere piani per le chiamate e su quanto costano, ved
 
     - Per modificare la posizione già assegnata all'utente, fare clic su **X** per rimuovere il percorso e il luogo esistenti, cercare e quindi selezionare la posizione che si vuole assegnare.
 
-4. Fare clic su **Salva**.
+4. A seconda che si voglia inviare un messaggio di posta elettronica all'utente con le informazioni relative al numero di telefono, disattivare o attivare l' **utente di posta elettronica con le informazioni sui numeri di telefono**. Per impostazione predefinita, questa opzione è attivata.
+
+5. Fare clic su **applica**.
 
 ## <a name="using-powershell"></a>Utilizzo di PowerShell
 
