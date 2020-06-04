@@ -17,12 +17,12 @@ description: Informazioni su come comunicare con utenti di altre organizzazioni 
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: fb22aeaef31d04a9d359bc43742c85b72bf12c97
-ms.sourcegitcommit: 6fbaab29076e16fe18f8faeb7e012a0815c2369d
+ms.openlocfilehash: 4c9b77d01469cb5893a826ae85a1744408623361
+ms.sourcegitcommit: d8e05e66311725f8ff6d28011355129baeb305b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43785929"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "44539443"
 ---
 <a name="communicate-with-users-from-other-organizations-in-microsoft-teams"></a>Comunicare con utenti di altre organizzazioni in Microsoft Teams
 ======================================================
@@ -73,7 +73,7 @@ Se si vuole attivare l'accesso guest nell'organizzazione, iniziare con l'[Elenco
 | È possibile bloccare l’utente singolo | No | Sì |
 | Le @menzioni sono supportate | Sì<sup>4</sup> | Sì |
 | Effettuare chiamate private | Sì | Sì |
-| Visualizzare il numero di telefono dei partecipanti alla riunione con accesso esterno | No | Sì |
+| Visualizzare il numero di telefono dei partecipanti alla riunione con accesso esterno | No<sup>5</sup> | Sì |
 | Consentire video IP | Sì | Sì |
 | Modalità di condivisione dello schermo | Sì<sup>4</sup> | Sì |
 | Consentire Riunione immediata | No | Sì |
@@ -88,6 +88,8 @@ Se si vuole attivare l'accesso guest nell'organizzazione, iniziare con l'[Elenco
 <sup>2</sup>Solo tramite posta elettronica o indirizzo SIP (Session Initiation Protocol).<br>
 <sup>3</sup>La chat esterna (federata) è solo 1:1.<br>
 <sup>4</sup>Chat 1:1 supportata per utenti Solo Teams a utenti Solo Teams di due organizzazioni diverse. 
+<sup>5</sup> Per impostazione predefinita, i partecipanti esterni non possono vedere i numeri di telefono dei partecipanti che hanno eseguito l'accesso tramite telefono. Se si vuole mantenere la privacy di questi numeri di telefono, selezionare **Toni** per **Tipo di annuncio in entrata/uscita**, in modo da evitare che i numeri vengano letti da Teams. Se non si vogliono rivelare i numeri di telefono PSTN esterni agli utenti esterni, quando si attivano gli **annunci di tipo entrata/uscita** selezionare **Toni** per il tipo di annuncio. Per altre informazioni, vedere [Attivare o disattivare i messaggi di entrata e di uscita per le riunioni in Microsoft Teams](turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams.md).
+
 
 ## <a name="related-topics"></a>Argomenti correlati
 
