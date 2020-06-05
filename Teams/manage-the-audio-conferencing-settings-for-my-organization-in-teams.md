@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: 'Per assegnare una licenza di conferenza telefonica con accesso esterno a un utente e molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno, vedere la procedura Microsoft teams. '
-ms.openlocfilehash: f887e6567052f80d6353202906f77a51e6403372
-ms.sourcegitcommit: d8e05e66311725f8ff6d28011355129baeb305b3
+ms.openlocfilehash: eecf5e015c1be21870221ba3b41a43640a6c0869
+ms.sourcegitcommit: 2c23a8c5afc4a6b74c2c6d7487975a94fe99dc07
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44539453"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44562061"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-your-organization-in-microsoft-teams"></a>Gestire le impostazioni dei servizi di audioconferenza per l'organizzazione in Microsoft Teams
 
@@ -145,6 +145,8 @@ Vedere [impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbe
 4. In **tipo di annuncio di entrata/uscita**scegliere **toni** o **nomi o numeri di telefono**. 
 
     Se si scelgono **i nomi o i numeri di telefono**, è anche possibile scegliere di abilitare o disabilitare i **chiamanti per registrare il nome prima di partecipare alla riunione**. 
+    > [!NOTE]
+> Per impostazione predefinita, i partecipanti esterni non possono visualizzare i numeri di telefono dei partecipanti con accesso esterno. Se si vuole mantenere la privacy di questi numeri di telefono, selezionare **toni** per il **tipo di annuncio di entrata/uscita** (questo impedisce che i numeri vengano letti dalle squadre).
 
     > [!NOTE]
     > Per impostazione predefinita, i partecipanti esterni non possono visualizzare i numeri di telefono dei partecipanti con accesso esterno. Se si vuole mantenere la privacy di questi numeri di telefono, selezionare **toni** per il **tipo di annuncio di entrata/uscita** (questo impedisce che i numeri vengano letti dalle squadre).

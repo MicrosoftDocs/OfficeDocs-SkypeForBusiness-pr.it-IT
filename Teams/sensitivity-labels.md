@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come definire e usare le etichette di sensitività in Microsoft teams.
-ms.openlocfilehash: 5fb470262d0d359af87f751ece5f686210286c91
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 7f8eb7e0fa0d34ae21829a12011f094d8e9c9126
+ms.sourcegitcommit: 2c23a8c5afc4a6b74c2c6d7487975a94fe99dc07
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779763"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44562071"
 ---
 # <a name="sensitivity-labels-for-microsoft-teams"></a>Etichette di sensitività per Microsoft Teams
 
@@ -109,6 +109,10 @@ Attualmente, le etichette di sensitività non sono supportate nell'interfaccia d
 **Supporto per le etichette di sensitività nelle API del grafico teams, cmdlet e modelli di PowerShell**
 
 Attualmente gli utenti non potranno applicare etichette di sensitività ai team creati direttamente tramite API grafico, cmdlet di PowerShell e modelli.
+
+**Supporto per le etichette di sensitività nelle SKU di Team EDU**
+
+Le etichette di sensitività non sono attualmente supportate per i clienti che usano SKU per l'istruzione teams.
 
 **Modifica di etichette di sensitività direttamente in una raccolta siti di SharePoint per canali privati**
 

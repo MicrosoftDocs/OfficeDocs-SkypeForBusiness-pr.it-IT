@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.orgwidesettings.resourceaccounts.overview
 - seo-marvel-apr2020
 description: In questo articolo verrà illustrato come creare, modificare e gestire gli account delle risorse in Microsoft teams.
-ms.openlocfilehash: 1ea9d4ebd6cbbb93646555787a04ab5b5516be03
-ms.sourcegitcommit: 693205da865111380b55c514955ac264031eb2fd
+ms.openlocfilehash: 2bf333eef72de4744f13cfe25a4457facaf4b3e6
+ms.sourcegitcommit: f9db7effbb1e56484686afe4724cc3b73380166d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2020
-ms.locfileid: "44512898"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44565903"
 ---
 # <a name="manage-resource-accounts-in-microsoft-teams"></a>Gestire gli account di risorsa in Microsoft Teams
 
@@ -52,7 +52,7 @@ Se l'organizzazione usa già almeno una licenza per il sistema telefonico, per a
 
 <!-- Auto attendants created after November 1st, 2019 also create a new resource account that is associated with the auto attendant. If a phone number is applied to the auto attendant's resource account,  a Phone System - Virtual user license is applied to the resource account if one is available. -->
 
-Se l'operatore automatico o la coda di chiamata è annidata in un operatore automatico di primo livello, l'account di risorse associato deve avere solo un numero di telefono se si vogliono più punti di entrata nella struttura degli operatori automatici e delle code di chiamata.
+Se l'operatore automatico o la coda di chiamata è annidata in un operatore automatico di primo livello, l'account di risorse associato ha bisogno solo di un numero di telefono se si vogliono più punti di entrata nella struttura degli operatori automatici e delle code di chiamata.
 
 Per reindirizzare le chiamate alle persone dell'organizzazione ospitate online, devono avere una licenza per il **sistema telefonico** ed essere abilitate per Enterprise Voice o avere piani di chiamata di Office 365. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, Esegui:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
 
@@ -98,9 +98,11 @@ Quando si crea un account di risorse durante la creazione di un operatore automa
 Un operatore automatico o una coda di chiamata annidata richiederà un account delle risorse, ma in molti casi l'account di risorse corrispondente non avrà bisogno di un numero di telefono e delle licenze necessarie per il supporto di un numero di telefono. La creazione di un account delle risorse che non necessita di un numero di telefono richiede l'esecuzione delle attività seguenti nell'ordine seguente:
 
 1. Creare un nuovo account di risorse. Vedere [creare un account risorse nell'interfaccia di amministrazione di Microsoft teams](#create-a-resource-account-in-the-microsoft-teams-admin-center) o [creare un account di risorse in PowerShell](#create-a-resource-account-in-powershell).
+
 2. Configurare una delle operazioni seguenti:
    - [Operatore automatico cloud](create-a-phone-system-auto-attendant.md)
    - [Coda di chiamata cloud](create-a-phone-system-call-queue.md)
+   
 3. Assegnare l'account della risorsa alla coda di chiamata o all'operatore automatico. Vedere [assegnare/annullare l'assegnazione di numeri di telefono e servizi](#assignunassign-phone-numbers-and-services).
 
 
@@ -115,16 +117,6 @@ Dopo aver acquistato una licenza di sistema telefonico, nella barra di spostamen
 Per creare un nuovo account di risorse, fare clic su **Aggiungi**. Nel riquadro **Aggiungi account risorse** compilare il **nome visualizzato**, **nomeutente** (il nome di dominio deve essere popolato automaticamente) e il **tipo di account delle** risorse per l'account delle risorse. Il tipo di account delle risorse può essere l' **operatore automatico** o la **coda di chiamata**, a seconda dell'app che intendi associare all'account delle risorse. Quando si è pronti, fare clic su **Salva**.
 
 ![Screenshot delle nuove opzioni dell'account delle risorse](media/res-acct.png)
-
-<a name="enablesignin"> </a>
-
-Quando si crea un account di risorse, l'accesso viene bloccato per l'account. Verrà visualizzato un banner nella parte superiore del riquadro che indica che l'account delle risorse non può essere caricato. È necessario sbloccare l'accesso per l'account delle risorse nell'interfaccia di amministrazione di Microsoft 365 in modo che l'account delle risorse sia autorizzato a eseguire l'accesso. A tale scopo, nell'interfaccia di amministrazione di Microsoft 365 accedere a **utenti**, cercare e quindi selezionare l'account delle risorse. Nella parte superiore del riquadro sotto il nome visualizzato fare clic su **Sblocca l'utente**, deselezionare la casella di controllo **blocca l'utente dalla firma in** e quindi fare clic su **Salva modifiche**.
-
-![Screenshot dell'opzione Sblocca l'utente](media/res-acct-unblock.png)
-
-Dopo aver eseguito questa operazione, verrà visualizzato "accesso consentito" sotto il nome visualizzato. 
-
-![Screenshot del messaggio di accesso consentito](media/res-acct-sign-in-allowed.png)
 
 Applicare quindi una licenza all'account delle risorse nell'interfaccia di amministrazione di Microsoft 365, come descritto in [assegnare licenze agli utenti](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide).
 
@@ -238,7 +230,9 @@ Set-CsOnlineApplicationInstance -Identity  <Resource Account oid> -OnpremPhoneNu
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Se non viene visualizzato il numero di telefono assegnato all'account delle risorse nell'interfaccia di amministrazione di teams e non è possibile assegnare il numero da questa posizione, verificare quanto segue:
+### <a name="you-dont-see-the-phone-number-assigned-to-the-resource-account-in-the-microsoft-teams-admin-center"></a>Il numero di telefono assegnato all'account delle risorse nell'interfaccia di amministrazione di Microsoft teams non è visualizzato
+
+Se il numero di telefono assegnato all'account delle risorse non è visualizzato nell'interfaccia di amministrazione di Microsoft teams e non è possibile assegnare il numero, verificare quanto segue:
 
 ``` Powershell
 Get-MsolUser -UserPrincipalName "username@contoso.com"| fl objectID,department
@@ -252,6 +246,25 @@ Set-MsolUser -ObjectId -Department "Microsoft Communication Application Instance
 
 > [!NOTE]
 > Aggiornare la pagina Web dell'interfaccia di amministrazione di teams dopo aver eseguito cmldet e si dovrebbe essere in grado di assegnare il numero correttamente.
+
+### <a name="you-get-a-we-cant-use-this-resource-account-for-services-error-message"></a>Viene ricevuto un messaggio di errore "non è possibile usare questo account di risorsa per i servizi". messaggio di errore
+
+<a name="blocksignin"> </a>
+
+Quando si prova a usare un account delle risorse, viene visualizzato il messaggio di errore seguente:
+
+"Non è possibile usare questo account delle risorse per i servizi. L'account delle risorse deve essere DISABILITAto e bloccato dall'accesso. È necessario bloccare le registrazioni per l'account delle risorse nella pagina utenti nell'interfaccia di amministrazione di Microsoft 365. "
+
+Quando si crea un account di risorsa, per impostazione predefinita è disabilitato e l'accesso è bloccato per l'account. Queste impostazioni non devono essere modificate. Per risolvere il messaggio di errore, bloccare l'account delle risorse dall'accesso. Procedi come segue.
+
+1. Nell'interfaccia di amministrazione di Microsoft 365 accedere a **utenti**, cercare e quindi selezionare l'account delle risorse.
+2. Nella parte superiore del riquadro sotto il nome visualizzato fare clic su **blocca l'utente**, selezionare la casella di controllo **blocca l'utente dalla firma in** e quindi selezionare **Salva modifiche**.
+
+   ![Screenshot dell'opzione blocca l'utente](media/res-acct-block.png)
+
+    Dopo aver eseguito questa operazione, vedrai "Accedi bloccato" sotto il nome visualizzato.
+
+      ![Screenshot del messaggio di accesso bloccato](media/res-acct-sign-in-blocked.png)
 
 ## <a name="related-information"></a>Informazioni correlate
 
