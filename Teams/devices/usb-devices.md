@@ -15,12 +15,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Vedere quali periferiche e dispositivi USB, ad esempio auricolari, vivavoce, webcam e monitor, sono certificati per Microsoft teams.
-ms.openlocfilehash: 25099435d4a62d404571c87a42b29698a64b75f8
-ms.sourcegitcommit: 26a6802fb7bfc865771fc476916957524c280d83
+ms.openlocfilehash: 9ad1e4f564306872588dda2ce82ca1c1504db95d
+ms.sourcegitcommit: 184f4f61a3e739a1cfa533c6d95d405d887ea25d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407408"
+ms.lasthandoff: 06/06/2020
+ms.locfileid: "44591296"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -76,59 +76,62 @@ Se si è un produttore e si vuole partecipare al programma di certificazione, ve
 
 *Tabella aggiornata maggio 2020*
 
-| Produttore    | Modello                   | Completo  | Programma certificato                                  |
-|:----------------|:------------------------|:-----------|:---------------------------------------------------|
-|Jabra             |Altoparlante Speak 750 con dongle USB Jabra link 370|5/21/2020 | Certificato per Microsoft Teams  | 
-|EPOS              | Auricolare Sennheiser ADAPT 660 |5/15/2020 |Certificato per Microsoft Teams  | 
-|EPOS              | Auricolare Sennheiser ADAPT 560|5/15/2020 |Certificato per Microsoft Teams  | 
-|EPOS              | Auricolare Sennheiser ADAPT 460T |5/15/2020 |Certificato per Microsoft Teams  | 
-|EPOS              | Auricolare Sennheiser ADAPT 360| 5/15/2020 |Certificato per Microsoft Teams  | 
-|Yealink           |Auricolare UH36 | 5/13/2020 |Certificato per Microsoft Teams  | 
-| Poli            | Savi 8210 Office        | 4/20/2020  | Skype for business con l'aggiornamento a Microsoft Teams |
-| Poli            | Savi 8210 UC            | 4/20/2020  | Skype for business con l'aggiornamento a Microsoft Teams |
-| Poli            | Savi 8220 Office        | 4/20/2020  | Skype for business con l'aggiornamento a Microsoft Teams |
-| Poli            | Savi 8220 UC            | 4/20/2020  | Skype for business con l'aggiornamento a Microsoft Teams |
-| Poli            | Savi 8240 Office        | 4/20/2020  | Skype for business con l'aggiornamento a Microsoft Teams |
-| Poli            | Savi 8240 UC            | 4/20/2020  | Skype for business con l'aggiornamento a Microsoft Teams |
-| Poli            | BlackWire 5210 Headset  | 4/20/2020  | Skype for business con l'aggiornamento a Microsoft Teams |
-| Poli            | BlackWire 5220 Headset  | 4/20/2020  | Skype for business con l'aggiornamento a Microsoft Teams |
-| Poli            | BlackWire 7225 Headset  | 4/20/2020  | Skype for business con l'aggiornamento a Microsoft Teams |
-| Poli            | Attivazione della Voyager UC        | 4/20/2020  | Skype for business con l'aggiornamento a Microsoft Teams |
-| Yealink         | CP700                   | 4/13/2020  | Certificato per Microsoft Teams                      |
-| Jabra           | Evolve2 65 Headset      | 4/13/2020  | Certificato per Microsoft Teams                      |
-| EPOS/Sennheiser | Impatto SC 30            | 4/9/2020   | Skype for business con l'aggiornamento a Microsoft Teams |
-| EPOS/Sennheiser | Impatto SC 45            | 4/9/2020   | Skype for business con l'aggiornamento a Microsoft Teams |
-| EPOS/Sennheiser | Impatto SC 60            | 4/9/2020   | Skype for business con l'aggiornamento a Microsoft Teams |
-| EPOS/Sennheiser | Impatto SC 75 MS         | 4/9/2020   | Skype for business con l'aggiornamento a Microsoft Teams |
-| EPOS/Sennheiser | Impatto SC 75 MS GUE     | 4/9/2020   | Skype for business con l'aggiornamento a Microsoft Teams |
-| EPOS/Sennheiser | Impatto SC 230 USB MS II | 4/9/2020   | Skype for business con l'aggiornamento a Microsoft Teams |
-| EPOS/Sennheiser | Impatto SC 260 USB MS II | 4/9/2020   | Skype for business con l'aggiornamento a Microsoft Teams |
-| EPOS/Sennheiser | Impatto SC 630 USB MS    | 4/9/2020   | Skype for business con l'aggiornamento a Microsoft Teams |
-| EPOS/Sennheiser | Impatto SC 635 USB       | 4/9/2020   | Skype for business con l'aggiornamento a Microsoft Teams |
-| EPOS/Sennheiser | Impatto SC 660 USB MS    | 4/9/2020   | Skype for business con l'aggiornamento a Microsoft Teams |
-| EPOS/Sennheiser | Impatto SC 660 ANC USB   | 4/9/2020   | Skype for business con l'aggiornamento a Microsoft Teams |
-| EPOS/Sennheiser | Impatto SC 665 USB       | 4/9/2020   | Skype for business con l'aggiornamento a Microsoft Teams |
-| Logitech        | Zona wireless           | 4/8/2020   | Certificato per Microsoft Teams                      |
-| Poli            | Auricolare Voyager 8200    | 3/26/2020  | Skype for business con l'aggiornamento a Microsoft Teams |
-| Logitech        | Zona cablata              | 3/26/2020  | Certificato per Microsoft Teams                      |
-| Jabra           | Evolve2 40 Headset      | 3/26/2020  | Certificato per Microsoft Teams                      |
-| Poli            | Auricolare Voyager 6200    | 3/23/2020  | Skype for business con l'aggiornamento a Microsoft Teams |
-| Poli            | Office Voyager 4245     | 3/23/2020  | Certificato per Microsoft Teams                      |
-| Poli            | BlackWire 8225 Headset  | 3/23/2020  | Certificato per Microsoft Teams                      |
-| Poli            | Calisto 5300-M          | 03/05/2020 | Certificato per Microsoft Teams                      |
-| Poli            | Office Voyager 4210     | 03/05/2020 | Certificato per Microsoft Teams                      |
-| Poli            | Voyager 4210 UC         | 03/05/2020 | Skype for business con l'aggiornamento a Microsoft Teams |
-| Poli            | Office Voyager 4220     | 03/05/2020 | Certificato per Microsoft Teams                      |
-| Poli            | Voyager 4220 UC         | 03/05/2020 | Skype for business con l'aggiornamento a Microsoft Teams |
-| Poli            | Office Voyager 5200     | 03/05/2020 | Certificato per Microsoft Teams                      |
-| Poli            | Voyager 5200 UC         | 03/05/2020 | Skype for business con l'aggiornamento a Microsoft Teams |
-| Poli            | BlackWire 3310-M        | 03/05/2020 | Certificato per Microsoft Teams                      |
-| Poli            | BlackWire 3315-M        | 03/03/2020 | Certificato per Microsoft Teams                      |
-| Poli            | BlackWire 3320-M        | 03/05/2020 | Certificato per Microsoft Teams                      |
-| poli            | BlackWire 3325-M        | 03/05/2020 | Certificato per Microsoft Teams                      |
-| Poli            | Calisto 3200-M          | 01/27/2020 | Certificato per Microsoft Teams                      |
-| Crestron        | CCS-UCA-MIC             | 12/18/2019 | Certificato per Microsoft Teams                      |
-| Sennheiser      | SP 30T                  | 12/05/2019 | Certificato per Microsoft Teams                      |
-| Polycom         | Elara                   | 11/06/2019 | Certificato per Microsoft Teams                      |
-| Polycom         | Studio SoundBar         | 10/18/2019 | Certificato per Microsoft Teams                      |
-| Yealink         | UVC30                   | 10/18/2019 | Certificato per Microsoft Teams                      |
+| Produttore        | Modello                                                     | Completo      | Programma certificato                                      |
+|:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+| EPOS                | Auricolare Sennheiser ADAPT 660                              | 5/15/2020      | Certificato per Microsoft Teams                          |
+| EPOS                | Auricolare Sennheiser ADAPT 560                              | 5/15/2020      | Certificato per Microsoft Teams                          |
+| EPOS                | Auricolare Sennheiser ADAPT 460T                             | 5/15/2020      | Certificato per Microsoft Teams                          |
+| EPOS                | Auricolare Sennheiser ADAPT 360                              | 5/15/2020      | Certificato per Microsoft Teams                          |
+| Yealink             | Auricolare UH36                                              | 5/13/2020      | Certificato per Microsoft Teams                          |
+| Poli                | Savi 8210 Office                                          | 4/20/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | Savi 8210 UC                                              | 4/20/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | Savi 8220 Office                                          | 4/20/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | Savi 8220 UC                                              | 4/20/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | Savi 8240 Office                                          | 4/20/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | Savi 8240 UC                                              | 4/20/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | Savi 8245 Office                                          | 4/20/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | Savi 8245 UC                                             | 4/20/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | BlackWire 5210 Headset                                    | 4/20/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | BlackWire 5220 Headset                                    | 4/20/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | BlackWire 7225 Headset                                    | 4/20/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | Attivazione della Voyager UC                                          | 4/20/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Yealink             | CP700                                                     | 4/13/2020      | Certificato per Microsoft Teams                          |
+| Jabra               | Evolve2 65 Headset                                        | 4/13/2020      | Certificato per Microsoft Teams                          |
+| EPOS/Sennheiser     | Impatto SC 30                                              | 4/9/2020       | Skype for business con l'aggiornamento a Microsoft Teams     |
+| EPOS/Sennheiser     | Impatto SC 45                                              | 4/9/2020       | Skype for business con l'aggiornamento a Microsoft Teams     |
+| EPOS/Sennheiser     | Impatto SC 60                                              | 4/9/2020       | Skype for business con l'aggiornamento a Microsoft Teams     |
+| EPOS/Sennheiser     | Impatto SC 75 MS                                           | 4/9/2020       | Skype for business con l'aggiornamento a Microsoft Teams     |
+| EPOS/Sennheiser     | Impatto SC 75 MS GUE                                       | 4/9/2020       | Skype for business con l'aggiornamento a Microsoft Teams     |
+| EPOS/Sennheiser     | Impatto SC 230 USB MS II                                   | 4/9/2020       | Skype for business con l'aggiornamento a Microsoft Teams     |
+| EPOS/Sennheiser     | Impatto SC 260 USB MS II                                   | 4/9/2020       | Skype for business con l'aggiornamento a Microsoft Teams     |
+| EPOS/Sennheiser     | Impatto SC 630 USB MS                                      | 4/9/2020       | Skype for business con l'aggiornamento a Microsoft Teams     |
+| EPOS/Sennheiser     | Impatto SC 635 USB                                         | 4/9/2020       | Skype for business con l'aggiornamento a Microsoft Teams     |
+| EPOS/Sennheiser     | Impatto SC 660 USB MS                                      | 4/9/2020       | Skype for business con l'aggiornamento a Microsoft Teams     |
+| EPOS/Sennheiser     | Impatto SC 660 ANC USB                                     | 4/9/2020       | Skype for business con l'aggiornamento a Microsoft Teams     |
+| EPOS/Sennheiser     | Impatto SC 665 USB                                         | 4/9/2020       | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Logitech            | Zona wireless                                             | 4/8/2020       | Certificato per Microsoft Teams                          |
+| Poli                | Auricolare Voyager 8200                                      | 3/26/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Logitech            | Zona cablata                                                | 3/26/2020      | Certificato per Microsoft Teams                          |
+| Jabra               | Evolve2 40 Headset                                        | 3/26/2020      | Certificato per Microsoft Teams                          |
+| Poli                | Auricolare Voyager 6200                                      | 3/23/2020      | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | Office Voyager 4245                                       | 3/23/2020      | Certificato per Microsoft Teams                          |
+| Poli                | BlackWire 8225 Headset                                    | 3/23/2020      | Certificato per Microsoft Teams                          |
+| Poli                | Calisto 5300-M                                            | 03/05/2020     | Certificato per Microsoft Teams                          |
+| Poli                | Office Voyager 4210                                       | 03/05/2020     | Certificato per Microsoft Teams                          |
+| Poli                | Voyager 4210 UC                                           | 03/05/2020     | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | Office Voyager 4220                                       | 03/05/2020     | Certificato per Microsoft Teams                          |
+| Poli                | Voyager 4220 UC                                           | 03/05/2020     | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | Office Voyager 5200                                       | 03/05/2020     | Certificato per Microsoft Teams                          |
+| Poli                | Voyager 5200 UC                                           | 03/05/2020     | Skype for business con l'aggiornamento a Microsoft Teams     |
+| Poli                | BlackWire 3310-M                                          | 03/05/2020     | Certificato per Microsoft Teams                          |
+| Poli                | BlackWire 3315-M                                          | 03/03/2020     | Certificato per Microsoft Teams                          |
+| Poli                | BlackWire 3320-M                                          | 03/05/2020     | Certificato per Microsoft Teams                          |
+| poli                | BlackWire 3325-M                                          | 03/05/2020     | Certificato per Microsoft Teams                          |
+| Poli                | Calisto 3200-M                                            | 01/27/2020     | Certificato per Microsoft Teams                          |
+| Crestron            | CCS-UCA-MIC                                               | 12/18/2019     | Certificato per Microsoft Teams                          |
+| Sennheiser          | SP 30T                                                    | 12/05/2019     | Certificato per Microsoft Teams                          |
+| Polycom             | Elara                                                     | 11/06/2019     | Certificato per Microsoft Teams                          |
+| Polycom             | Studio SoundBar                                           | 10/18/2019     | Certificato per Microsoft Teams                          |
+| Yealink             | UVC30                                                     | 10/18/2019     | Certificato per Microsoft Teams                          |
+| Jabra               | PanaCast                                                  | 08/14/2019     | Certificato per Microsoft                                |
+

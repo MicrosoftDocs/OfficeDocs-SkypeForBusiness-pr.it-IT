@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 5456bb7cece960796308a2d987cecaedc9828a3c
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: a7e8cf5e6ed4329a617a7922d4c4380fb5593b7c
+ms.sourcegitcommit: 8395f91205bde549a0a92999ef00c5f5fb03fb80
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350110"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44583523"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione delle app in Microsoft Teams
 
@@ -52,10 +52,10 @@ Supponi ad esempio di voler bloccare tutte le app di terze parti e consentire ad
 Per controllare le app disponibili per diversi gruppi di utenti dell'organizzazione, creare e assegnare uno o più criteri di autorizzazione per le app personalizzate. È possibile creare e assegnare criteri personalizzati distinti a seconda che le app vengano pubblicate da Microsoft, da terze parti o dall'organizzazione. È importante sapere che dopo aver creato un criterio personalizzato, non è possibile modificarlo se le app di terze parti sono disabilitate nelle impostazioni dell'app a livello di organizzazione.
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams accedere ai criteri di autorizzazione delle **app teams**  >  **Permission policies**.
-2. Fare clic su **Aggiungi**.
+2. Fare clic su **Aggiungi**. <br>
     ![Schermata dei criteri di autorizzazione per i nuovi app](media/app-permission-policies-new-policy.png)
 3. Immettere un nome e una descrizione per il criterio.
-4. In app **Microsoft**, **app di terze parti**e **app tenant**selezionare una delle opzioni seguenti:
+4. In app **Microsoft**, **app di terze parti**e **app personalizzate**seleziona una delle opzioni seguenti:
 
     - **Consenti tutte le app**
     - **Consenti app specifiche e blocca tutte le altre**
@@ -65,10 +65,10 @@ Per controllare le app disponibili per diversi gruppi di utenti dell'organizzazi
 5. Se è stata selezionata l'opzione **Consenti app specifiche e blocca altre**, aggiungere le app che si vuole consentire:
 
     1. Selezionare **Consenti app**.
-    1. Cercare le app che si desidera consentire e quindi fare clic su **Aggiungi**. I risultati della ricerca vengono filtrati in Publisher di app (app**Microsoft**, app di **terze parti**o **app tenant**).
-    1. Dopo aver scelto l'elenco di app, fare clic su **Consenti**.
+    1. Cercare le app che si desidera consentire e quindi fare clic su **Aggiungi**. I risultati della ricerca vengono filtrati in Publisher di app (app**Microsoft**, app di **terze parti**o **app personalizzate**).
+    1. Dopo aver scelto l'elenco di app, fare clic su **Consenti**. 
 
-6. Allo stesso modo, se si è selezionato **Blocca app specifiche e si consente a tutti gli altri utenti**, cercare e aggiungere le app che si vuole bloccare.
+6. Allo stesso modo, se si è selezionato **Blocca app specifiche e si consente a tutti gli altri utenti**, cercare e aggiungere le app da bloccare e quindi fare clic su **blocca**.
 7. Fare clic su **Salva**.
 
 ## <a name="edit-an-app-permission-policy"></a>Modificare i criteri di autorizzazione delle app
@@ -92,11 +92,11 @@ Per assegnare un criterio a un utente:
 2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
 3. In **criteri di autorizzazione**per le app selezionare i criteri di autorizzazione per le app da assegnare e quindi fare clic su **applica**.
 
-Per assegnare un criterio a più utenti alla volta:
+Per assegnare un criterio a più utenti contemporaneamente:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi cerca gli utenti o filtra la visualizzazione per mostrare gli utenti desiderati.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
 2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
-3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **applica**.  
+3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **Applica**.  
 
 Si può anche procedere nel modo seguente:
 

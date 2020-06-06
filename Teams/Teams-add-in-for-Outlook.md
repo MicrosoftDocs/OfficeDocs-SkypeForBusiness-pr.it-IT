@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 052cf825e2f05dd17a77043ab87bedbb2f3f8d9c
-ms.sourcegitcommit: 1e7bc16969db01317ee482cabf681febae0ef51f
+ms.openlocfilehash: de92e52b50ce863ba940badbdeff32c90f083fde
+ms.sourcegitcommit: 8395f91205bde549a0a92999ef00c5f5fb03fb80
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44416726"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44583439"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -111,8 +111,6 @@ A causa di alcune limitazioni nel rilascio iniziale, Outlook Mobile supporta sol
 | Solo Teams | Teams |
 
 ### <a name="set-whether-users-in-islands-mode-can-only-use-the-teams-meeting-add-in-or-both-the-teams-meeting-and-skype-for-business-meeting-add-ins"></a>Imposta se gli utenti in modalità isole possono usare solo il componente aggiuntivo riunione teams o sia la riunione teams che i componenti aggiuntivi per riunioni Skype for business
-
-**(disponibile a breve)**
 
 Come amministratore, puoi configurare un'impostazione di criteri riunione teams per controllare quale componente aggiuntivo riunione di Outlook viene usato per *gli utenti che si trovano in modalità isole*. Puoi specificare se gli utenti possono usare solo il componente aggiuntivo riunione teams o sia la riunione teams che i componenti aggiuntivi per le riunioni di Skype for business per pianificare le riunioni in Outlook.
 

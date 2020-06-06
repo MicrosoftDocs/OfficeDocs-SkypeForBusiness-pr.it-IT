@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: 015a127b90aeb24dd9b2c2bcfca2389e95bf1496
-ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
+ms.openlocfilehash: a2d1cf256829cccd27bde2dce311145b8861ae84
+ms.sourcegitcommit: 8395f91205bde549a0a92999ef00c5f5fb03fb80
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44523149"
+ms.lasthandoff: 06/05/2020
+ms.locfileid: "44583499"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -222,7 +222,7 @@ Per le riunioni che necessitano di un'esperienza video di qualità elevata, ad e
 - [Consenti la lavagna](#allow-whiteboard)
 - [Consenti note condivise](#allow-shared-notes)
 
-### <a name="screen-sharing-mode"></a>Modalità condivisione schermo
+### <a name="screen-sharing-mode"></a>Modalità di condivisione dello schermo
 
 Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione determina se la condivisione del desktop o della finestra è consentita nella riunione dell'utente. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi, guest, B2B e federati, ereditano i criteri dell'organizzatore della riunione.
 
@@ -411,8 +411,6 @@ Per consentire a un organizzatore di una riunione di scaricare il report presenz
 Per impedire a un organizzatore di una riunione di scaricare il report, imposta il parametro su **disabled**. Per impostazione predefinita, questa impostazione è disabilitata e l'opzione per scaricare il report non è disponibile.
 
 ## <a name="meeting-policy-settings---meeting-provider-for-islands-mode"></a>Impostazioni dei criteri riunione-provider riunione per la modalità Isole
-
-**(disponibile a breve)**
 
 Questo è un criterio per utente. Questa impostazione controlla il componente aggiuntivo riunione di Outlook usato per *gli utenti che si trovano in modalità isole*. Puoi specificare se gli utenti possono usare solo il componente aggiuntivo riunione teams o sia la riunione teams che i componenti aggiuntivi per le riunioni di Skype for business per pianificare le riunioni in Outlook.
 
