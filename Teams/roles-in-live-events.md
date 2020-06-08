@@ -17,12 +17,12 @@ description: Informazioni sulle funzionalità disponibili per relatori e parteci
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: 6341e688973dc50c070b9a0c01dfa57d03514119
-ms.sourcegitcommit: 1a6b4efad1e6a958cdbaae4b0e2e231145c9658f
+ms.openlocfilehash: 7714442be770420797df1c51a532f769eb0350a4
+ms.sourcegitcommit: f9db7effbb1e56484686afe4724cc3b73380166d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44321725"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "44565859"
 ---
 <a name="presenter-and-participant-capabilities-in-a-teams-live-event"></a>Funzionalità per relatori e partecipanti in un evento live di Teams
 ======================================================
@@ -36,7 +36,6 @@ Le funzionalità per riunioni disponibili sono:
 - Whiteboard
 - Registrazione
 - File
-- Pianificare una riunione (solo per le riunioni)
 
 Questo articolo descrive le funzionalità per i partecipanti e il rispettivo accesso alle funzionalità per gli eventi live.
 
@@ -45,7 +44,7 @@ Questo articolo descrive le funzionalità per i partecipanti e il rispettivo acc
 Relatori e organizzatori includono:
 
 - Relatori dell'organizzazione
-- Relatori di altre organizzazioni (restrizione per gli eventi live), inclusi i partecipanti anonimi ed esterni. I relatori sono designati dall'organizzatore e hanno bisogno di un invito personale da parte dell'organizzatore.
+- Relatori di altre organizzazioni. I relatori sono designati dall'organizzatore e hanno bisogno di un invito personale da parte dell'organizzatore.
 
 Relatori e organizzatori hanno accesso a tutte le funzionalità di un evento live.
 
@@ -65,7 +64,7 @@ Il partecipante interno al tenant appartiene all'organizzazione e dispone delle 
 | Evento live |  | |||
 |---------|----------------|----------------|---------------------|------------|--------------|
 |  **Funzionalità**       | Prima della riunione | Durante la riunione | Dopo la riunione |
-| Chat | Sì | Sì | Sì |
+| Chat | N/D | N/D | N/D |
 | Note riunione | Sì | Sì |Sì |
 | Whiteboard | Sì | Sì |Sì |
 | Registrazione | N/D |Sì | Sì |
@@ -80,7 +79,7 @@ Un partecipante guest è una persona di un'altra organizzazione che è stata inv
 | Evento live  | | |||
 |---------|----------------|----------------|---------------------|------------|--------------|
 | **Funzionalità**        | Prima della riunione | Durante la riunione | Dopo la riunione |
-| Chat | Sì | Sì | Sì |
+| Chat | N/D | N/D | N/D |
 | Note riunione | Sì | Sì | Sì |
 | Whiteboard | No | No | No |
 | Registrazione | N/D | No | No |
@@ -95,7 +94,7 @@ Un partecipante esterno è un utente che usa Teams in un'altra organizzazione, c
 | Evento live |  | |||
 |---------|----------------|----------------|---------------------|------------|--------------|
 |  **Funzionalità**         | Prima della riunione | Durante la riunione | Dopo la riunione |
-| Chat | No| Sì | Sì |
+| Chat | N/D| N/D | N/D |
 | Note riunione | No | No | No |
 | Whiteboard | No| No | No |
 | Registrazione | N/D | No | No |
@@ -109,9 +108,9 @@ Il partecipante anonimo è simile a un utente esterno, ma la sua identità non v
 | Evento live|  | |||
 |---------|----------------|----------------|---------------------|------------|--------------|
 | **Funzionalità**        | Prima della riunione | Durante la riunione | Dopo la riunione |
-| Chat | No | Sì | No |
+| Chat | N/D | N/D | N/D |
 | Note riunione | N/D | No | N/D |
-| Whiteboard | N/D | No | N/D |
+| Whiteboard | N/D | N/D | N/D |
 | Registrazione | N/D | No | N/D |
 | File | N/D | No | N/D |
 |||||||
@@ -122,3 +121,5 @@ Il partecipante anonimo è simile a un utente esterno, ma la sua identità non v
 [Sicurezza e Microsoft Teams](teams-security-guide.md)
 
 [Accesso guest in Teams](guest-access.md)
+
+[Pianificare un evento live in Teams](teams-live-events/plan-for-teams-live-events.md)
