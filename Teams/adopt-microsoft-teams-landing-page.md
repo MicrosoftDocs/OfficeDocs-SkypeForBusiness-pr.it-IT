@@ -21,16 +21,16 @@ f1.keywords:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5224fabff542051438bc523388b96ecf93f7af9a
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 76086d7e34d56a9bab59c7ca10ed40472aecd7a1
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905918"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44610245"
 ---
 # <a name="adopt-microsoft-teams"></a>Adottare Microsoft Teams
 
-Se si è una piccola impresa o se si vogliono distribuire Team che iniziano con la chat, i team & i canali e le riunioni, usare le [istruzioni introduttive](get-started-with-teams-quick-start.md)per iniziare, che è progettato per velocizzare l'esecuzione. Se si è un'organizzazione di grandi dimensioni con una configurazione ibrida o Skype for business, oppure se si vogliono implementare le funzionalità vocali, ad esempio i piani di chiamata di Office 365 o il sistema telefonico, è possibile iniziare con le istruzioni introduttive, ma è necessario disporre delle indicazioni aggiuntive seguenti, in istruzioni per l' **adozione più approfondite**.
+Se si è una piccola impresa o se si vogliono distribuire Team che iniziano con la chat, i team & i canali e le riunioni, usare le [istruzioni introduttive](get-started-with-teams-quick-start.md)per iniziare, che è progettato per velocizzare l'esecuzione. Se si è un'organizzazione di grandi dimensioni con una configurazione ibrida o Skype for business locale o se si vogliono implementare le funzionalità vocali, ad esempio Microsoft 365 o Office 365 o i piani di chiamata o il sistema telefonico, è possibile iniziare a usare le istruzioni introduttive, ma è necessario disporre delle indicazioni aggiuntive seguenti, in **indicazioni di adozione più approfondite**.
 
 <ul class="panelContent cardsFTitle">
     <li>

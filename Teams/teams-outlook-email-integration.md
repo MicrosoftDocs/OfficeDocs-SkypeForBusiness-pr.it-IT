@@ -1,0 +1,44 @@
+---
+title: Integrazione della posta elettronica in teams e Outlook
+author: LanaChin
+ms.author: v-lanac
+manager: serdars
+audience: Admin
+ms.topic: article
+ms.service: msteams
+ms.reviewer: kblevens
+localization_priority: Normal
+search.appverid: MET150
+description: Informazioni sui team e sulle caratteristiche di integrazione della posta elettronica di Outlook, incluse le caratteristiche che consentono agli utenti di condividere le comunicazioni tra i messaggi di posta elettronica in Outlook e chat o canali in teams
+ms.collection:
+- M365-collaboration
+appliesto:
+- Microsoft Teams
+ms.openlocfilehash: 474da725ad88221d131959078a733ed1724ae1be
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44611167"
+---
+# <a name="teams-and-outlook-email-integration"></a><span data-ttu-id="dc2be-103">Integrazione della posta elettronica in teams e Outlook</span><span class="sxs-lookup"><span data-stu-id="dc2be-103">Teams and Outlook email integration</span></span>
+
+<span data-ttu-id="dc2be-104">Microsoft teams include caratteristiche che consentono agli utenti dell'organizzazione di condividere informazioni tra i messaggi di posta elettronica in Outlook e le conversazioni tramite chat o canali in teams e di rimanere in primo piano sulle conversazioni perse.</span><span class="sxs-lookup"><span data-stu-id="dc2be-104">Microsoft Teams includes features that make it easy for users in your organization to share information between email in Outlook and chat or channel conversations in Teams and to stay on top of missed conversations.</span></span> <span data-ttu-id="dc2be-105">Questo articolo offre una panoramica di queste funzionalità e dei controlli di amministratore applicabili.</span><span class="sxs-lookup"><span data-stu-id="dc2be-105">This article gives you an overview of these features and the admin controls that apply.</span></span>
+
+## <a name="share-to-outlook"></a><span data-ttu-id="dc2be-106">Condivisione in Outlook</span><span class="sxs-lookup"><span data-stu-id="dc2be-106">Share to Outlook</span></span>
+
+<span data-ttu-id="dc2be-107">**Condivisione in Outlook** consente agli utenti di condividere una copia di una conversazione di teams in un messaggio di posta elettronica in Outlook senza dover abbandonare teams.</span><span class="sxs-lookup"><span data-stu-id="dc2be-107">**Share to Outlook** lets users share a copy of a Teams conversation to an email in Outlook, without having to leave Teams.</span></span> <span data-ttu-id="dc2be-108">Questa funzionalità è utile se gli utenti devono condividere le conversazioni o gli aggiornamenti di stato con utenti esterni al team immediato o anche all'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="dc2be-108">This feature is handy if users need to share conversations or status updates with users outside their immediate team or even your organization.</span></span> <span data-ttu-id="dc2be-109">Spostarsi all'inizio della conversazione in teams, selezionare **˙ ˙ ˙ altre opzioni**e quindi scegliere **Condividi in Outlook**.</span><span class="sxs-lookup"><span data-stu-id="dc2be-109">Go to the top of the conversation in Teams, select **˙˙˙ More options**, and then select **Share to Outlook**.</span></span>  <span data-ttu-id="dc2be-110">Per altre informazioni, vedere [condividere in Outlook da teams](https://support.office.com/article/share-to-outlook-from-teams-f9dabbe9-9e9b-4e35-99dd-2eeeb67c4f6d).</span><span class="sxs-lookup"><span data-stu-id="dc2be-110">To learn more, see [Share to Outlook from Teams](https://support.office.com/article/share-to-outlook-from-teams-f9dabbe9-9e9b-4e35-99dd-2eeeb67c4f6d).</span></span>
+
+![Schermata che mostra la funzionalità Condividi in Outlook in teams](media/share-to-outlook.png)
+
+<span data-ttu-id="dc2be-112">Per usare questa caratteristica, Outlook sul Web deve essere attivato per l'utente.</span><span class="sxs-lookup"><span data-stu-id="dc2be-112">To use this feature, Outlook on the web must be turned on for the user.</span></span> <span data-ttu-id="dc2be-113">Se Outlook sul Web è disattivato, l'opzione **Condividi in Outlook** non viene visualizzata in teams per l'utente.</span><span class="sxs-lookup"><span data-stu-id="dc2be-113">If Outlook on the web is turned off, the **Share to Outlook** option isn't displayed in Teams for the user.</span></span> <span data-ttu-id="dc2be-114">Per istruzioni su come attivare e disattivare Outlook sul Web, vedere [abilitare o disabilitare Outlook sul Web per una cassetta postale](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app).</span><span class="sxs-lookup"><span data-stu-id="dc2be-114">For steps on how to turn on and turn off Outlook on the web, see [Enable or disable Outlook on the web for a mailbox](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app).</span></span>
+
+## <a name="actionable-activity-emails"></a><span data-ttu-id="dc2be-115">Messaggi di posta elettronica attivi</span><span class="sxs-lookup"><span data-stu-id="dc2be-115">Actionable activity emails</span></span>
+
+<span data-ttu-id="dc2be-116">Gli utenti ottengono automaticamente i messaggi di posta elettronica che possono essere manomessi, aiutandoli a raggiungere conversazioni perse in teams.</span><span class="sxs-lookup"><span data-stu-id="dc2be-116">Users automatically get actionable missed activity emails which help them to catch up on missed conversations in Teams.</span></span> <span data-ttu-id="dc2be-117">I messaggi di posta elettronica per le attività perse mostrano le risposte più recenti da una conversazione, inclusi quelli inviati dopo il messaggio mancante e gli utenti possono fare clic su **Rispondi** per rispondere direttamente da Outlook.</span><span class="sxs-lookup"><span data-stu-id="dc2be-117">The missed activity emails show the latest replies from a conversation, including messages that were sent after the missed message, and users can click **Reply** to respond directly from within Outlook.</span></span> <span data-ttu-id="dc2be-118">Per altre informazioni, vedere [rispondere ai messaggi di posta elettronica di attività perse da Outlook](https://support.office.com/article/reply-to-missed-activity-emails-from-outlook-bc0cf587-db26-4946-aac7-8eebd84f1381).</span><span class="sxs-lookup"><span data-stu-id="dc2be-118">To learn more, see [Reply to missed activity emails from Outlook](https://support.office.com/article/reply-to-missed-activity-emails-from-outlook-bc0cf587-db26-4946-aac7-8eebd84f1381).</span></span>
+
+![Screenshot che mostra un messaggio di posta elettronica con attività perse](media/missed-activity-email.png)
+
+![Screenshot che Mostra come rispondere a un messaggio di posta elettronica con attività perse](media/missed-activity-email-reply.png)
+
+<span data-ttu-id="dc2be-121">Puoi usare il cmdlet [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) insieme al parametro **SmtpActionableMessagesEnabled** per disattivare i messaggi di posta elettronica con azione.</span><span class="sxs-lookup"><span data-stu-id="dc2be-121">You can use the [Set-OrganizationConfig](https://docs.microsoft.com/powershell/module/exchange/organization/set-organizationconfig) cmdlet together with the **SmtpActionableMessagesEnabled** parameter to turn off actionable emails.</span></span> <span data-ttu-id="dc2be-122">Per impostazione predefinita, il parametro **SmtpActionableMessagesEnabled** è impostato su **true**.</span><span class="sxs-lookup"><span data-stu-id="dc2be-122">By default, the **SmtpActionableMessagesEnabled** parameter is set to **true**.</span></span> <span data-ttu-id="dc2be-123">Se si imposta il parametro su **false** , i messaggi di posta elettronica di Office 365 vengono disattivati.</span><span class="sxs-lookup"><span data-stu-id="dc2be-123">Setting the parameter to **false** turns off actionable email messages across Office 365.</span></span> <span data-ttu-id="dc2be-124">Per gli utenti di teams, ciò significa che l'opzione **Rispondi** per rispondere direttamente in Outlook non è disponibile nei messaggi di posta elettronica di attività perse.</span><span class="sxs-lookup"><span data-stu-id="dc2be-124">For Teams users, this means that the **Reply** option to respond directly in Outlook isn't available in missed activity emails.</span></span> <span data-ttu-id="dc2be-125">I messaggi di posta elettronica attività mancanti includono invece un'opzione **Rispondi in teams** per consentire agli utenti di rispondere in teams.</span><span class="sxs-lookup"><span data-stu-id="dc2be-125">Instead, the missed activity emails include a **Reply in Teams** option for users to reply in Teams.</span></span>
