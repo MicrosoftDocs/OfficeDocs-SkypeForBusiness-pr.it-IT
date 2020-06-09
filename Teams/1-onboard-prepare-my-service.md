@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.service: msteams
 search.appverid: MET150
 ms.reviewer: rowille
-description: Usare gli elenchi di controllo onboarding per preparare Office 365 per i team e configurare le funzionalità di base di teams, le reti e i workload vocali cloud.
+description: Usare gli elenchi di controllo onboarding per preparare Microsoft 365 o Office 365 per i team e configurare le funzionalità di base di teams, le reti e i workload vocali di cloud.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 710a365ef68d3e187013892ef978cd8e12557cc1
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 3c805e8ff14ddb1c46f83db819c5dd8a2c305914
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137996"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44610068"
 ---
 # <a name="prepare-my-service"></a>Preparare il servizio
 
@@ -34,7 +34,7 @@ Questo articolo offre una panoramica dei requisiti per preparare i servizi cloud
 
 Gli elenchi di controllo seguenti illustrano la procedura per l'implementazione di servizi di audioconferenza, sistema telefonico con piani di chiamata ("piani di chiamata") e funzionalità di routing diretto del sistema telefonico ("Direct routing") in Microsoft teams.
 
-*  [Preparare Office 365 per Teams](onboarding-checklist-enable-office-365.md)
+*  [Preparare Microsoft 365 o Office 365 per Teams](onboarding-checklist-enable-office-365.md)
 
 *  [Configurare le funzionalità di base di Teams](onboarding-checklist-configure-microsoft-teams-core-capabilities.md)
 

@@ -21,12 +21,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Skype for Business Online
-ms.openlocfilehash: a847d27a53ab406b248f011dd12742b23b69e999
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: f30db1425c61e8cb5f916345c0b751bc81c90a0f
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44041963"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44637425"
 ---
 <a name="manage-teams-during-the-transition-to-the-new-microsoft-teams-admin-center"></a>Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams.
 ======================================================
@@ -36,7 +36,7 @@ ms.locfileid: "44041963"
 
 ## <a name="what-is-the-new-microsoft-teams-admin-center"></a>Che cos'è il nuovo centro di amministrazione di Microsoft Teams?  
 
-La nuova esperienza di interfaccia di amministrazione ti offre un'esperienza unificata per gestire sia team che Skype for business. Stiamo offrendo funzionalità aggiuntive, approfondimenti finali e la possibilità di gestire le impostazioni dei team a livello di utente.
+La nuova esperienza di interfaccia di amministrazione ti offre un'esperienza unificata per gestire sia team che Skype for business. Stiamo offrendo funzionalità aggiuntive, approfondimenti finali e la possibilità di gestire le impostazioni dei team a livello di utente. È possibile accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
 ![Screenshot dell'interfaccia di amministrazione di Microsoft teams.](media/manage-teams-skype-for-business-admin-center-portal.png)
 
@@ -115,4 +115,4 @@ La tabella seguente mostra la posizione in cui è possibile gestire le caratteri
 
 ## <a name="manage-settings-after-the-migration"></a>Gestire le impostazioni dopo la migrazione
 
-Una volta completata la migrazione di queste impostazioni, le disattiveremo nell'interfaccia di amministrazione di Office 365 e nell'interfaccia di amministrazione di Skype for business, che potranno quindi essere gestite nel nuovo centro di amministrazione di Microsoft teams.
+Dopo aver completato la migrazione di queste impostazioni, li disattiveremo nell'interfaccia di amministrazione di Microsoft 365 e nell'interfaccia di amministrazione di Skype for business, che potranno quindi essere gestiti nel nuovo centro di amministrazione di Microsoft teams.

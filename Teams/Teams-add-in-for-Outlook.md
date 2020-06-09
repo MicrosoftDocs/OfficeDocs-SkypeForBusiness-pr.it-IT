@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: de92e52b50ce863ba940badbdeff32c90f083fde
-ms.sourcegitcommit: 8395f91205bde549a0a92999ef00c5f5fb03fb80
+ms.openlocfilehash: 25b7163da92323a0695031a61d93895779a5ded7
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44583439"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44637715"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -65,7 +65,7 @@ Il pulsante Riunione di Teams compare nelle build più recenti dell'app di Outlo
 
 Le coordinate della riunione, ossia il collegamento per unirsi a Teams e i numeri telefonici di accesso esterno, verranno aggiunte all'invito alla riunione dopo che l'utente avrà fatto clic su **Invia**.  
 
-## <a name="teams-meeting-add-in-in-and-findtime-for-outlook"></a>Componente aggiuntivo Riunione di Teams in TrovaOrario per Outlook
+## <a name="teams-meeting-add-in-and-findtime-for-outlook"></a>Componente aggiuntivo riunione teams e FindTime per Outlook
 
 FindTime è un componente aggiuntivo per Outlook che consente agli utenti di raggiungere il consenso in un periodo di riunione tra le aziende. Una volta che gli invitati della riunione hanno fornito il loro orario preferito, TrovaOrario invia l'invito alla riunione per conto dell'utente. Se viene selezionata l'opzione **Riunione online** in TrovaOrario, verrà programmata una riunione di Skype for Business o di Microsoft Teams. (TrovaOrario userà qualsiasi opzione impostata dall'organizzazione come canale predefinito per le riunioni online.)
 

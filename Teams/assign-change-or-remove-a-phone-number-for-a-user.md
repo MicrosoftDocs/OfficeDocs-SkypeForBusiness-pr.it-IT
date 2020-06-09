@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come assegnare, modificare o rimuovere un numero di telefono dell'ufficio per gli utenti del team in modo che le aziende e i client possano effettuare chiamate.
-ms.openlocfilehash: a8dea997df1511406a302922b291fa2248f29356
-ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
+ms.openlocfilehash: 858c6c5f9995d4d9b3914ee769de1bb75d1951af
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326803"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44609961"
 ---
 # <a name="assign-change-or-remove-a-phone-number-for-a-user"></a>Assegnare, modificare o rimuovere il numero di telefono di un utente
 
@@ -51,7 +51,8 @@ Per informazioni su come ottenere piani per le chiamate in team e su quanto cost
 5. A seconda che si voglia inviare un messaggio di posta elettronica all'utente con le informazioni relative al numero di telefono, disattivare o attivare l' **utente di posta elettronica con le informazioni sui numeri di telefono**. Per impostazione predefinita, questa opzione è attivata. 
 6. Fare clic su **Salva**.
     > [!NOTE]
-    > A causa della latenza tra Office 365 e teams, è possibile che siano necessarie alcune ore per consentire agli utenti di essere abilitati. Se il numero di telefono non viene assegnato correttamente dopo qualche ora, [contattare il supporto per i prodotti business-Guida per gli amministratori](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). Opzioni di assistenza
+    > A causa della latenza tra Microsoft 365 o Office 365 e teams, possono essere necessarie fino a 24 ore per consentire agli utenti di essere abilitati. Se il numero di telefono non viene assegnato correttamente dopo 24 ore, [contattare il supporto per i prodotti business-Guida per gli amministratori](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products). Opzioni di assistenza
+
   
 ## <a name="change-a-phone-number-for-a-user"></a>Cambiare un numero di telefono per un utente
  

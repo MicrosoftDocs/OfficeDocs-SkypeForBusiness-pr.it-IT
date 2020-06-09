@@ -8,7 +8,7 @@ ms.topic: conceptual
 ms.service: msteams
 audience: admin
 search.appverid: MET150
-description: Informazioni su come Microsoft teams supporta i team associati ai gruppi di Office 365 tramite l'appartenenza dinamica.
+description: Informazioni su come Microsoft teams supporta i team associati ai gruppi Microsoft 365 tramite l'appartenenza dinamica.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d325ee076d29ddfe50fd6193ec5755bf2bb51b82
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: dc7e3124ec3ec97e3f3643412ccb4f990ab825cc
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905798"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638405"
 ---
 # <a name="overview-of-dynamic-membership-for-teams"></a>Panoramica sull'appartenenza dinamica per i team
 
@@ -35,7 +35,7 @@ Con l'appartenenza dinamica puoi configurare Team per alcuni coorti di utenti de
 
 Usando questa funzionalità, i membri di un determinato team vengono aggiornati automaticamente in base a un set di criteri specifico, invece di gestire manualmente l'appartenenza. In questo modo, le licenze Azure AD Premium P1 e l'appartenenza al team possono essere [assegnate da un amministratore del tenant](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership) alle proprietà di Azure ad di qualsiasi utente, purché si disponga di un tenant e di un account di amministratore.
 
-Microsoft teams può richiedere in qualsiasi momento da pochi minuti a un massimo di 2 ore per riflettere le modifiche dinamiche dell'appartenenza dopo avere avuto effetto nel gruppo Office 365 per un team.
+Microsoft teams può richiedere in qualsiasi momento da pochi minuti a un massimo di 2 ore per riflettere le modifiche dinamiche dell'appartenenza, dopo avere avuto effetto nel gruppo Microsoft 365 per un team.
 
 > [!NOTE]
 > - Le regole possono definire chi è un membro del team, ma non chi è il proprietario del team.
@@ -44,7 +44,7 @@ Microsoft teams può richiedere in qualsiasi momento da pochi minuti a un massim
 > -    I membri non saranno in grado di abbandonare i team da gruppi dinamici.
 
 
-## <a name="creating-and-managing-an-office-365-group-with-dynamic-membership"></a>Creazione e gestione di un gruppo di Office 365 con appartenenza dinamica
+## <a name="creating-and-managing-a-microsoft-365-group-with-dynamic-membership"></a>Creazione e gestione di un gruppo Microsoft 365 con appartenenza dinamica
 Durante l'accesso come amministratore del tenant, seguire le istruzioni in [creare un gruppo dinamico e verificare lo stato](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule). Se necessario, fare riferimento alle [regole di appartenenza dinamiche per i gruppi in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership).
 
 ## <a name="create-a-new-team-with-your-o365-group"></a>Creare un nuovo team con il gruppo di Office 365

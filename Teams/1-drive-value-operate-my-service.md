@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fb06a50d8a61d78abd84d8bf4f54295ece6d68ab
-ms.sourcegitcommit: 3325fd9de57367e9dd60685d1fef096921441a76
+ms.openlocfilehash: 82b1397e597ae6dea218a8f3c27f50d26a60d05f
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997127"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44610078"
 ---
 # <a name="operate-my-service"></a>Gestire il servizio
 
@@ -33,11 +33,11 @@ Questo articolo offre una panoramica dei requisiti per il corretto funzionamento
 
 La Guida alle operazioni offre una panoramica di tutte le attività e le attività necessarie nell'ambito della funzione di gestione dei servizi per Microsoft teams.
 
-La gestione dei servizi è un argomento ampio che include le operazioni quotidiane del servizio Microsoft teams dopo che è stato distribuito e abilitato per gli utenti. Il servizio teams include Microsoft Office 365 e i componenti dell'infrastruttura distribuiti localmente (ad esempio, Networking).
+La gestione dei servizi è un argomento ampio che include le operazioni quotidiane del servizio Microsoft teams dopo che è stato distribuito e abilitato per gli utenti. Il servizio teams include Microsoft 365 o Office 365 e i componenti dell'infrastruttura distribuiti localmente (ad esempio, Networking).
 
 La nozione di gestione dei servizi non è probabilmente un nuovo concetto per la maggior parte delle organizzazioni. I processi e le attività associati ai servizi esistenti potrebbero essere già stati implementati. In questo caso, puoi probabilmente migliorare i tuoi processi correnti quando pianifichi la gestione dei servizi oggi per supportare i team in futuro.
 
-La gestione dei servizi comprende tutte le attività e i processi coinvolti nella gestione dei team end-to-end. Come indicato in precedenza, alcuni componenti della gestione dei servizi, ovvero l'infrastruttura che il servizio di Office 365 stesso comporta, sono responsabili di Microsoft, mentre il cliente è responsabile per gli utenti di gestire i vari aspetti dei team, della rete e degli endpoint forniti.
+La gestione dei servizi comprende tutte le attività e i processi coinvolti nella gestione dei team end-to-end. Come indicato in precedenza, alcuni componenti della gestione dei servizi, ovvero l'infrastruttura che include il servizio Microsoft 365 o Office 365 stesso, sono responsabili di Microsoft, mentre il cliente è responsabile per gli utenti di gestire i vari aspetti dei team, della rete e degli endpoint forniti.
 
 Le attività e le attività in questa guida sono raggruppate in otto categorie, come illustrato nel diagramma seguente. Ognuna di queste categorie verrà espansa nelle sezioni seguenti.
 
@@ -70,7 +70,7 @@ Dopo aver effettuato un contratto, i team corrispondenti dovrebbero iniziare a o
 
 ### <a name="teams-service-dependencies"></a>Dipendenze del servizio Teams
 
-Microsoft teams raggruppa tecnologie in Office 365 per creare un hub per il lavoro di gruppo. Gli esempi includono:
+Microsoft teams raggruppa tecnologie in Microsoft 365 o Office 365 per creare un hub per il lavoro di gruppo. Gli esempi includono:
 
 -   Azure Active Directory (Azure AD) offre servizi di autenticazione e autorizzazione per i team.
 
@@ -104,7 +104,7 @@ Le sezioni seguenti forniscono una panoramica delle attività necessarie per il 
 
 ## <a name="monitor-service-health"></a>Monitorare l'integrità dei servizi
 
-È importante comprendere l'integrità complessiva del servizio Microsoft teams, in modo da poter avvisare proattivamente gli altri utenti dell'organizzazione di qualsiasi evento che influisce sul servizio. Come descritto in precedenza, teams dipende da altri servizi di Office 365, ad esempio Azure Active Directory, Exchange Online, SharePoint Online e OneDrive for business. Per questo motivo, è ugualmente importante monitorare l'integrità dei servizi dipendenti.
+È importante comprendere l'integrità complessiva del servizio Microsoft teams, in modo da poter avvisare proattivamente gli altri utenti dell'organizzazione di qualsiasi evento che influisce sul servizio. Come descritto in precedenza, teams dipende da altri servizi Microsoft 365 o Office 365, ad esempio Azure Active Directory, Exchange Online, SharePoint Online e OneDrive for business. Per questo motivo, è ugualmente importante monitorare l'integrità dei servizi dipendenti.
 
 Incorporare questa attività nel processo di gestione degli incidenti per informare in modo proattivo gli utenti, l'helpdesk e i team operativi per prepararsi a gestire le escalation degli utenti.
 
@@ -113,9 +113,9 @@ Nelle sezioni seguenti vengono descritti gli strumenti che è possibile sfruttar
 | Strumento di monitoraggio                       | Vantaggi                                            | Quando usare                                                                                  |
 |---------------------------------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------|
 | Interfaccia di amministrazione di Microsoft 365                     | Disponibile da qualsiasi dispositivo con un browser supportato. | USA quando non hai bisogno di notifiche in tempo reale.                                          |
-| App di amministrazione di Office 365                  | Fornisce notifiche push al dispositivo mobile.  | USA quando devi ricevere notifiche sugli incidenti del servizio mentre sei in viaggio.                  |
+| App di amministrazione di Microsoft 365 o Office 365                  | Fornisce notifiche push al dispositivo mobile.  | USA quando devi ricevere notifiche sugli incidenti del servizio mentre sei in viaggio.                  |
 | Microsoft System Center               | Integrazione con Microsoft System Center.           | Usare quando sono necessarie funzionalità di monitoraggio avanzate e supporto delle notifiche.                       |
-| API di Communications Service di Office 365 | Accesso a livello di codice all'integrità dei servizi di Office 365.   | Usare quando è necessaria l'integrazione con uno strumento di monitoraggio di terze parti o si vuole creare una soluzione personalizzata. |
+| API di Communications Service di Microsoft 365 o Office 365 | Accesso a livello di programmazione a Microsoft 365 o Office 365 Service Health.   | Usare quando è necessaria l'integrazione con uno strumento di monitoraggio di terze parti o si vuole creare una soluzione personalizzata. |
 
 > [!NOTE]
 > Solo gli utenti a cui è assegnato il ruolo di amministratore **globale** o di **amministrazione del servizio** possono visualizzare l'integrità dei servizi.
@@ -126,7 +126,7 @@ L'interfaccia di [amministrazione di Microsoft 365](https://portal.office.com/) 
 
 ### <a name="monitoring-with-the-mobile-app"></a>Monitoraggio con l'app per dispositivi mobili
 
-L'app di amministrazione di Office 365 è disponibile in Apple iOS, Android e Windows (PC e dispositivi mobili). L'app fornisce agli amministratori dei servizi informazioni sull'integrità dei servizi e sulle modifiche imminenti. L'app supporta le notifiche push che possono avvisarti quasi subito dopo la pubblicazione di un Advisory. In questo modo è possibile mantenere aggiornati lo stato, l'integrità e le eventuali modifiche imminenti al servizio. Il supporto delle notifiche rende lo strumento di monitoraggio consigliato per gli amministratori. Per altre informazioni, vedere:
+L'app di amministrazione Microsoft 365 o Office 365 è disponibile in Apple iOS, Android e Windows (PC e dispositivi mobili). L'app fornisce agli amministratori dei servizi informazioni sull'integrità dei servizi e sulle modifiche imminenti. L'app supporta le notifiche push che possono avvisarti quasi subito dopo la pubblicazione di un Advisory. In questo modo è possibile mantenere aggiornati lo stato, l'integrità e le eventuali modifiche imminenti al servizio. Il supporto delle notifiche rende lo strumento di monitoraggio consigliato per gli amministratori. Per altre informazioni, vedere:
 
 [App per dispositivi mobili amministratore di Office 365](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)
 
@@ -164,7 +164,7 @@ Questi gruppi possono includere i proprietari dei servizi, gli helpdesk, i grupp
 
 Microsoft teams è un servizio basato su cloud. Con questo viene la possibilità di apportare nuove funzionalità e funzionalità a un ritmo rapido. La realizzazione di un'innovazione continua offre un evidente vantaggio per le organizzazioni, ma queste modifiche devono essere gestite in modo appropriato all'interno dell'organizzazione per evitare che l'utente abbia resistenze o escalation all'helpdesk.
 
-Gli aggiornamenti dei team vengono distribuiti automaticamente agli utenti. Gli utenti avranno sempre il client e le funzionalità più recenti disponibili nel servizio teams. Non è possibile gestire l'implementazione degli aggiornamenti di teams agli utenti, pertanto è importante gestire la modifica attraverso programmi di comunicazione, formazione e adozione efficaci. Se gli utenti sono a conoscenza della modifica, hanno colto i vantaggi e hanno il potere di sfruttare le nuove funzionalità&mdash;che sapranno adattare più rapidamente e accogliere positivamente la modifica.
+Gli aggiornamenti dei team vengono distribuiti automaticamente agli utenti. Gli utenti avranno sempre il client e le funzionalità più recenti disponibili nel servizio teams. Non è possibile gestire l'implementazione degli aggiornamenti di teams agli utenti, pertanto è importante gestire la modifica attraverso programmi di comunicazione, formazione e adozione efficaci. Se gli utenti sono a conoscenza della modifica, hanno colto i vantaggi e hanno il potere di sfruttare le nuove funzionalità &mdash; che sapranno adattare più rapidamente e accogliere positivamente la modifica.
 
 ### <a name="monitoring-for-change"></a>Monitoraggio per la modifica
 

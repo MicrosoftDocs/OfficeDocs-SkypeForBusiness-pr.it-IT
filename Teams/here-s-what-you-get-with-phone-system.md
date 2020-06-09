@@ -1,5 +1,5 @@
 ---
-title: Ecco cosa offre il Sistema telefonico in Office 365
+title: Vantaggi offerti dal Sistema telefonico
 ms.reviewer: ''
 author: CarolynRowe
 ms.author: crowe
@@ -22,27 +22,27 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare il sistema telefonico Microsoft per l'azienda. "
-ms.openlocfilehash: 27ec4803a33f524d1c260c27c1af3c71210b33d2
-ms.sourcegitcommit: 152eb7daacd0a36f42aa441633c12c7037a0969a
+ms.openlocfilehash: fa7acbd4593b44805b2f9044602f3521baacaaaf
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/27/2020
-ms.locfileid: "42288704"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638345"
 ---
-# <a name="heres-what-you-get-with-phone-system-in-office-365"></a>Ecco cosa offre il Sistema telefonico in Office 365
+# <a name="heres-what-you-get-with-phone-system"></a>Vantaggi offerti dal Sistema telefonico
 
-Questo articolo descrive il sistema telefonico nelle caratteristiche di Office 365. Per altre informazioni sull'uso del sistema telefonico come sostituzione del PBX (Private Branch Exchange) e sulle opzioni per la connessione alla rete PSTN (Public Switched Telephone Network), vedere [che cos'è il sistema telefonico in Office 365](what-is-phone-system-in-office-365.md).
+Questo articolo descrive le caratteristiche del sistema telefonico. Per altre informazioni sull'uso del sistema telefonico come sostituzione del PBX (Private Branch Exchange) e sulle opzioni per la connessione alla rete PSTN (Public Switched Telephone Network), vedere [cos'è il sistema telefonico](what-is-phone-system-in-office-365.md).
 
 I client sono disponibili per PC, Mac e dispositivi mobili, che offrono funzionalità su dispositivi da tablet e telefoni cellulari a PC e telefoni IP desktop. Per altre informazioni, vedere [ottenere client per Microsoft teams](get-clients.md).
 
   
-## <a name="phone-system-in-office-365-features"></a>Sistema telefonico nelle caratteristiche di Office 365
+## <a name="phone-system-features"></a>Caratteristiche del sistema telefonico
 
 Il sistema telefonico offre le caratteristiche seguenti. Se non diversamente specificato, le funzionalità sono disponibili sia in team che in Skype for business online.
   
 |||
 |:-----|:-----|
-|**Sistema telefonico nella funzionalità Office 365** <br/> |**Descrizione** <br/> |
+|**Funzionalità sistema telefonico** <br/> |**Descrizione** <br/> |
 |[Operatori automatici cloud](what-are-phone-system-auto-attendants.md) <br/> |Consente di creare un sistema di menu che consente ai chiamanti esterni e interni di individuare e inserire o trasferire le chiamate agli utenti o ai reparti aziendali dell'organizzazione.  <br/> |
 |[Code di chiamate cloud](create-a-phone-system-call-queue.md) <br/> |Consente di configurare la modalità di gestione delle code di chiamata per l'organizzazione: ad esempio, configurare i messaggi di saluto e la musica in attesa, cercare l'agente di chiamata disponibile successivo per gestire la chiamata e così via.  <br/> |
 |Musica in attesa | Riproduce la musica predefinita definita dal servizio quando una chiamata esterna proveniente dalla rete PSTN (Public Switched Telephone Network) viene inserita in attesa. Questa funzionalità è compatibile con chiamate da PSTN a team da uno a uno oltre alle chiamate effettuate in una coda di chiamata. Questa caratteristica offre una parità di notifica in attesa con altre piattaforme. Questa caratteristica è configurabile dall'amministratore, ma [attualmente solo tramite PowerShell](https://docs.microsoft.com/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps). Anche la musica di blocco non è supportata nel trasferimento consultivo di una chiamata PSTN.|
@@ -82,13 +82,13 @@ Le funzionalità seguenti non sono ancora disponibili nelle nubi di GCC High e D
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Che cos'è il sistema telefonico in Office 365](what-is-phone-system-in-office-365.md)
+- [Che cos'è Sistema telefonico](what-is-phone-system-in-office-365.md)
 - [Cloud Voice in Microsoft Teams](cloud-voice-landing-page.md)
 - [Configurare Sistema telefonico](setting-up-your-phone-system.md)
 - [Qual è il piano di chiamata adatto alle proprie esigenze?](calling-plan-landing-page.md)
 - [Instradamento diretto di Sistema telefonico](direct-routing-landing-page.md)
 - [Monitorare e gestire la qualità delle chiamate](monitor-call-quality-qos.md)
-- [Licenze per i componenti aggiuntivi Microsoft Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+- [Licenze per i componenti aggiuntivi di Microsoft Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
 - [Tariffe del Sistema telefonico](https://products.office.com/microsoft-teams/voice-calling#requirements)
 - [Team per l'infrastruttura desktop virtualizzata con le chiamate e le riunioni](teams-for-vdi.md#teams-on-vdi-with-calling-and-meetings)
 

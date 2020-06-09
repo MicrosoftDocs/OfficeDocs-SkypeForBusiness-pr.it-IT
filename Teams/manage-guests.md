@@ -17,12 +17,12 @@ description: Informazioni su come creare i primi team e i nuovi canali, a bordo 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 83f4e4cdff4515f89a5b3fe68c91d848f9ae5dda
-ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
+ms.openlocfilehash: 4751f274e4bc7a874c1469041787d7d145c11bb8
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326453"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44637665"
 ---
 <a name="manage-guest-access-in-microsoft-teams"></a>Gestire l'accesso guest in Microsoft Teams
 ======================================
@@ -30,19 +30,19 @@ ms.locfileid: "44326453"
 > [!IMPORTANT]
 > Potrebbe essere necessario attendere qualche ora affinché le modifiche abbiano effetto. 
 
-**Guest** è un tipo di utente in Microsoft teams incluso in tutti gli abbonamenti a Microsoft 365 business standard, Office 365 Enterprise, Microsoft 365 Business Basic e Office 365 Education. Non sono necessarie altre licenze di Office 365. Leggi altre informazioni sulla [gestione delle licenze di accesso Guest](#guest-access-licensing-limits) di seguito.
+**Guest** è un tipo di utente in Microsoft teams incluso in tutti gli abbonamenti a Microsoft 365 business standard, Office 365 Enterprise, Microsoft 365 Business Basic e Office 365 Education. Non sono necessarie altre licenze Microsoft 365 o Office 365. Leggi altre informazioni sulla [gestione delle licenze di accesso Guest](#guest-access-licensing-limits) di seguito.
 
 L'accesso Guest teams è un'impostazione a livello di tenant ed è disattivata per impostazione predefinita. Per informazioni dettagliate su come attivare l'accesso guest, vedere [attivare o disattivare l'accesso Guest ai team](set-up-guests.md)oppure usare l'elenco di [controllo di accesso Guest](guest-access-checklist.md) per passare alla configurazione.
 
 Dopo che l'accesso Guest è attivato, è possibile configurare le impostazioni per gli utenti che usano i controlli descritti in [gestire le impostazioni dei team per l'organizzazione](enable-features-office-365.md) e [gestire i team durante la transizione al nuovo centro di amministrazione di Microsoft teams](manage-teams-skypeforbusiness-admin-center.md).     
     
-Gli amministratori IT possono aggiungere ospiti a livello di tenant, impostare e gestire i criteri e le autorizzazioni degli utenti guest e tirare i report sulle attività degli utenti guest. Questi controlli sono disponibili nell'interfaccia di amministrazione di teams. I contenuti e le attività degli utenti Guest rientrano nella stessa protezione di conformità e controllo del resto di Office 365.
+Gli amministratori IT possono aggiungere ospiti a livello di tenant, impostare e gestire i criteri e le autorizzazioni degli utenti guest e tirare i report sulle attività degli utenti guest. Questi controlli sono disponibili nell'interfaccia di amministrazione di teams. I contenuti e le attività degli utenti Guest rientrano nella stessa protezione di conformità e controllo del resto di Microsoft 365 o Office 365.
 
 I proprietari del team possono invitare nuovi ospiti e aggiungere utenti Guest Directory esistenti ai loro team nell'interfaccia di amministrazione di teams. Identificare gli utenti guest nella pagina **Teams**  >  **Manage teams** e impostare le funzionalità relative ai canali per gli ospiti nella pagina di accesso Guest **delle impostazioni a livello di organizzazione**  >  **Guest access** . Le impostazioni includono consentire agli utenti di creare, aggiornare ed eliminare canali, come illustrato nella figura seguente.
 
 ![Impostazioni delle autorizzazioni guest in teams](media/manage-guest-access-image1.png)
   
-È possibile usare il portale di Azure Active Directory (Azure AD) per gestire gli utenti e l'accesso alle risorse di Office 365 e teams. L'accesso Guest teams consente di usare le funzionalità di collaborazione di Azure AD business-to-business (B2B) come infrastruttura sottostante per archiviare le informazioni sui principi di sicurezza, ad esempio le proprietà delle identità, le appartenenze e le impostazioni di autenticazione a più fattori. Per altre informazioni su Azure AD B2B, vedere [cos'è la collaborazione tra Azure ad B2B](https://go.microsoft.com/fwlink/p/?linkid=853011) e le [domande frequenti su Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=853020)per la collaborazione B2B.
+È possibile usare il portale di Azure Active Directory (Azure AD) per gestire gli utenti e l'accesso a Microsoft 365 o Office 365 e alle risorse teams. L'accesso Guest teams consente di usare le funzionalità di collaborazione di Azure AD business-to-business (B2B) come infrastruttura sottostante per archiviare le informazioni sui principi di sicurezza, ad esempio le proprietà delle identità, le appartenenze e le impostazioni di autenticazione a più fattori. Per altre informazioni su Azure AD B2B, vedere [cos'è la collaborazione tra Azure ad B2B](https://go.microsoft.com/fwlink/p/?linkid=853011) e le [domande frequenti su Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=853020)per la collaborazione B2B.
 
 > [!NOTE]
 > Microsoft teams sempre onora le impostazioni esterne di Azure ad per consentire o impedire l'aggiunta di utenti Guest al tenant. Per altre informazioni, vedere [autorizzare l'accesso guest in Microsoft teams](Teams-dependencies.md).

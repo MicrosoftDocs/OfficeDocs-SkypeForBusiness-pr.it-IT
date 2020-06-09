@@ -18,12 +18,12 @@ description: Informazioni sui passaggi necessari per aggiungere persone esterne 
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8202f7cae250d497eb690a7cb337c12dd1b79cb1
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
-ms.translationtype: HT
+ms.openlocfilehash: 7a30aa56260da8c5e07c8c08c1a8c3745ffb6ee5
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43902551"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44637225"
 ---
 <a name="how-a-guest-joins-a-team"></a>Come partecipare a un team da guest
 ========================
@@ -35,11 +35,11 @@ Il proprietario di un team di Microsoft Teams può aggiungere e gestire i guest 
   
 ## <a name="how-a-guest-becomes-a-member-of-a-team"></a>Come diventare un membro di un team da guest
 
-1. Il proprietario di un team o un amministratore di Office 365 [aggiunge un guest a un team](https://support.office.com/article/add-guests-to-a-team-fccb4fa6-f864-4508-bdde-256e7384a14f).
-1. L'amministratore di Office 365 o il proprietario del team può gestire le funzionalità di un guest se necessario: ad esempio, consentendo a un guest di aggiungere o eliminare canali o disabilitare l'accesso ai file.
+1. Un proprietario del team o un amministratore di Microsoft 365 o Office 365 [aggiunge un Guest a un team](https://support.office.com/article/add-guests-to-a-team-fccb4fa6-f864-4508-bdde-256e7384a14f).
+1. L'amministratore di Microsoft 365 o Office 365 o il proprietario del team gestisce le funzionalità di un guest in modo necessario: ad esempio, consentendo a un guest di aggiungere o eliminare canali o disabilitare l'accesso ai file.
 1. Il guest riceve un'e-mail di benvenuto dal proprietario del team, contenente informazioni sul team e sulle funzionalità disponibili in quanto nuovo membro. 
 1. Il guest accetta l'invito.
-  Gli utenti guest che hanno un indirizzo e-mail di un account aziendale o dell'istituto di istruzione di Azure Active Directory o Office 365, possono accettare direttamente l'invito. 
+  Gli utenti guest che hanno un indirizzo di posta elettronica che appartiene a un account aziendale o dell'Istituto di istruzione di Azure Active Directory, Microsoft 365 o Office 365 possono accettare direttamente l'invito. 
   Se il guest non ha ancora un account Microsoft associato al proprio indirizzo e-mail, verrà reindirizzato per crearne uno gratuitamente. 
 1. Dopo aver accettato l'invito, il guest può [partecipare a team e canali](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499), ricevere e rispondere ai messaggi del canale, [accedere ai file nei canali](https://support.office.com/article/access-files-in-channels-c593c78a-27c4-4661-a598-682baa30ca7e), partecipare alle chat, partecipare alle riunioni, collaborare ai documenti e altro ancora. 
 

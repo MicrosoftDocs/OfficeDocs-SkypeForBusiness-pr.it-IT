@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 17843b886fc334d7b02907882a82dffdf302e9f5
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 698d63f0d53119569f6b212fa7db7a16c827f571
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137986"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44610058"
 ---
 # <a name="evaluate-my-environment"></a>Valutare il proprio ambiente
 
@@ -66,8 +66,8 @@ La distribuzione pone una nuova tecnologia a portata di mano di un utente, ma i 
 Usare le considerazioni seguenti per valutare la preparazione dell'organizzazione per l'indirizzo di gestione delle modifiche degli utenti.
 
 <table>
-<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Si è avuto successo in precedenza con l'adozione di software o servizi da un utente?</li><li>È possibile tenere traccia dell'assorbimento dell'uso?</li><li>Si dispone delle risorse necessarie per progettare e gestire una campagna&mdash;di adozione iniziale&mdash;e continua (sensibilizzazione, formazione e supporto tecnico)?</li><li>Si ha un team di gestione di adozioni/cambiamenti per gli utenti dedicati o si può investire in tali risorse per garantire risultati aziendali?</li></ol></td></tr>
-<tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Se hai risposto &quot;Sì&quot; a tutto quanto sopra indicato, identifica gli stakeholder di gestione degli utenti giusti e inizia la pianificazione della preparazione degli utenti.</li><li>Se non&quot; si &quot;è risposto ad alcuno o a tutto quanto sopra indicato, è consigliabile coinvolgere le risorse esterne per facilitare la guida delle attività correlate alla gestione delle modifiche e alle adozioni per l'organizzazione.</li></ol></td></tr>
+<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Si è avuto successo in precedenza con l'adozione di software o servizi da un utente?</li><li>È possibile tenere traccia dell'assorbimento dell'uso?</li><li>Si dispone delle risorse necessarie per progettare e gestire una &mdash; campagna di adozione iniziale e continua &mdash; (sensibilizzazione, formazione e supporto tecnico)?</li><li>Si ha un team di gestione di adozioni/cambiamenti per gli utenti dedicati o si può investire in tali risorse per garantire risultati aziendali?</li></ol></td></tr>
+<tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Se hai risposto &quot; Sì &quot; a tutto quanto sopra indicato, identifica gli stakeholder di gestione degli utenti giusti e inizia la pianificazione della preparazione degli utenti.</li><li>Se non si è risposto &quot; &quot; ad alcuno o a tutto quanto sopra indicato, è consigliabile coinvolgere le risorse esterne per facilitare la guida delle attività correlate alla gestione delle modifiche e alle adozioni per l'organizzazione.</li></ol></td></tr>
 </table>
 
 
@@ -124,7 +124,7 @@ Per ottimizzare il percorso di rete della rete globale Microsoft, è possibile m
 Le VPN garantiscono un servizio prezioso a molte organizzazioni. Sfortunatamente, in genere non sono progettati o configurati per supportare elementi multimediali in tempo reale. Alcune VPN potrebbero anche non supportare UDP. Le VPN introducono anche un ulteriore livello di crittografia sulla parte superiore del traffico multimediale già crittografato. Inoltre, la connettività al servizio teams potrebbe non essere efficiente a causa del traffico di pinning dei capelli attraverso un dispositivo VPN.
 Inoltre, non sono necessariamente progettati da una prospettiva di capacità per soddisfare i carichi previsti necessari per i team.
 
-La raccomandazione consiste nel creare un percorso alternativo che ignori la VPN per il traffico di teams. Questa operazione è comunemente nota come *VPN a tunnel separato*. Split tunneling significa che il traffico per Office 365 non attraverserà la VPN, ma passerà direttamente a Office 365. Questa modifica avrà un impatto positivo sulla qualità, ma offre anche il vantaggio secondario di ridurre il carico dai dispositivi VPN e dalla rete dell'organizzazione.
+La raccomandazione consiste nel creare un percorso alternativo che ignori la VPN per il traffico di teams. Questa operazione è comunemente nota come *VPN a tunnel separato*. Split tunneling significa che il traffico per Microsoft 365 o Office 365 non percorre la VPN, ma passa direttamente a Microsoft 365 o Office 365. Questa modifica avrà un impatto positivo sulla qualità, ma offre anche il vantaggio secondario di ridurre il carico dai dispositivi VPN e dalla rete dell'organizzazione.
 
 Per implementare un tunnel suddiviso, consultare il proprio fornitore di VPN per i dettagli della configurazione.
 
@@ -153,10 +153,10 @@ I plug-in e i connettori si connettono anche su queste porte TCP. Le quattro por
 
 L'apertura di queste porte è essenziale per una distribuzione affidabile di teams. Il blocco di queste porte non è supportato e avrà un effetto sulla qualità dei contenuti multimediali.
 
-Se l'organizzazione richiede di specificare gli intervalli di indirizzi IP esatti e i domini a cui devono essere aperte queste porte, è possibile limitare gli intervalli e i domini IP di destinazione per queste porte. Per un elenco di porte, protocolli e intervalli IP esatti, vedere [URL e intervalli di indirizzi IP di Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_teams).
+Se l'organizzazione richiede di specificare gli intervalli di indirizzi IP esatti e i domini a cui devono essere aperte queste porte, è possibile limitare gli intervalli e i domini IP di destinazione per queste porte. Per un elenco di porte, protocolli e intervalli IP esatti, vedere [URL e intervalli di indirizzi IP di Microsoft 365 o Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_teams).
 Se si sceglie di limitare gli intervalli di indirizzi IP di destinazione e i domini, è necessario verificare che l'elenco delle porte e degli intervalli sia aggiornato perché potrebbe cambiare. È possibile sottoscrivere [questo feed RSS per l'](https://go.microsoft.com/fwlink/p/?linkid=236301) aggiornamento quando si verificano le modifiche. È anche buona norma verificare se tutte le porte vengono aperte eseguendo regolarmente lo strumento di [valutazione della rete Skype for business](https://www.microsoft.com/download/details.aspx?id=53885) . Per altre informazioni sulle funzionalità di questo strumento, vedere la sezione successiva.
 
-In caso di distribuzione di un server proxy, è consigliabile ignorare il server proxy per tutti i servizi teams. Anche se l'uso di un proxy potrebbe funzionare, è molto probabile che la qualità venga ridotta a causa di un elemento multimediale costretto a usare TCP anziché UDP. Per altre informazioni sui server proxy e l'esclusione, vedere [URL e intervalli di indirizzi IP di Office 365](https://docs.microsoft.com/MicrosoftTeams/office-365-urls-ip-address-ranges).
+In caso di distribuzione di un server proxy, è consigliabile ignorare il server proxy per tutti i servizi teams. Anche se l'uso di un proxy potrebbe funzionare, è molto probabile che la qualità venga ridotta a causa di un elemento multimediale costretto a usare TCP anziché UDP. Per altre informazioni sui server proxy e l'esclusione, vedere [URL e intervalli di indirizzi IP di Microsoft 365 o Office 365](https://docs.microsoft.com/MicrosoftTeams/office-365-urls-ip-address-ranges).
 
 <!--ENDOFSECTION-->
 
@@ -166,14 +166,14 @@ Dopo aver completato la pianificazione e la preparazione della rete, tra cui l'a
 
 È possibile scaricare lo [strumento di valutazione della rete Skype for business](https://www.microsoft.com/download/details.aspx?id=53885) per verificare se la rete è pronta per i team. Lo strumento offre funzionalità duali: può verificare se tutte le porte corrette sono state aperte e può verificare la presenza di problemi di rete.
 
-Dopo aver scaricato e installato lo strumento, è possibile trovarlo in C:\\Program Files\\Microsoft Skype for Business Network Assessment Tool. Una guida dettagliata su come usare lo strumento, Usage. docx, è inclusa in tale directory.
+Dopo aver scaricato e installato lo strumento, è possibile trovarlo in C: \\ Program Files \\ Microsoft Skype for Business Network Assessment Tool. Una guida dettagliata su come usare lo strumento, Usage. docx, è inclusa in tale directory.
 
 ### <a name="test-for-opened-ports"></a>Testare le porte aperte
 
-Aprire una finestra del prompt dei comandi e passare alla directory dello strumento di valutazione della rete immettendo **CD C:\\Program\\Files Microsoft Skype for Business Network Assessment Tool**. Al prompt dei comandi avviare il test per le porte aperte immettendo **networkassessmenttool. exe/connectivitycheck**
+Aprire una finestra del prompt dei comandi e passare alla directory dello strumento di valutazione della rete immettendo **CD C: \\ Program Files \\ Microsoft Skype for Business Network Assessment Tool**. Al prompt dei comandi avviare il test per le porte aperte immettendo **networkassessmenttool. exe/connectivitycheck**
 
 Dopo aver eseguito i controlli, lo strumento visualizzerà il messaggio "verifiche completate correttamente" o un report sulle porte bloccate.
-Viene inoltre generato un file denominato Connectivity_results. txt, che contiene l'output dello strumento e lo archivia nella directory% UserProfile\\% AppData\\Local\\Microsoft Skype for Business Network Assessment Tool.\\
+Viene inoltre generato un file denominato Connectivity_results. txt, che contiene l'output dello strumento e lo archivia nella directory% UserProfile% \\ AppData \\ Local \\ Microsoft Skype for Business Network Assessment Tool \\ .
 
 È consigliabile eseguire regolarmente i controlli di connettività per verificare che le porte siano state aperte e funzionino correttamente.
 
@@ -206,7 +206,7 @@ Tieni presente che entrambi i segmenti devono soddisfare i requisiti per una dis
 
 Se i risultati della pianificazione della larghezza di banda, dei test di porta o di requisiti di rete mostrano che la rete corrente deve essere risolta prima di distribuire Team, è possibile eseguire questa operazione in diversi modi:
 
--   Per una larghezza di banda insufficiente, le connessioni di aggiornamento in modo che il traffico a Office 365 possa fluire senza ostacoli.
+-   Per una larghezza di banda insufficiente, le connessioni di aggiornamento in modo che il traffico verso Microsoft 365 o Office 365 possa fluire senza ostacoli.
 
 -   Per le porte bloccate, modificare le regole del firewall e riprovare le porte.
 

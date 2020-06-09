@@ -18,16 +18,16 @@ f1.keywords:
 - NOCSH
 description: "Informazioni su come aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione nell'interfaccia di amministrazione di Microsoft teams. "
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8bed76fdfff2a6af2dabb3eef5c01dcfb39f422a
-ms.sourcegitcommit: d8e05e66311725f8ff6d28011355129baeb305b3
+ms.openlocfilehash: ae3a224b38fba412b9c0dc4ec0bfde5028440a79
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44539463"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44610325"
 ---
 # <a name="add-change-or-remove-an-emergency-location-for-your-organization"></a>Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza
 
-Una posizione di emergenza deve essere associata a un numero di telefono, ma quando ciò accade può variare tra paesi e aree geografiche. Ad esempio, negli Stati Uniti è necessario associare un percorso di emergenza quando si assegna il numero di telefono all'utente. Nel Regno Unito è necessario associare un percorso di emergenza al numero di telefono quando si ottengono i numeri di telefono da Office 365 o si trasferiscono i numeri di telefono dal provider di servizi corrente.
+Una posizione di emergenza deve essere associata a un numero di telefono, ma quando ciò accade può variare tra paesi e aree geografiche. Ad esempio, negli Stati Uniti è necessario associare un percorso di emergenza quando si assegna il numero di telefono all'utente. Nel Regno Unito è necessario associare un percorso di emergenza al numero di telefono quando si ottengono i numeri di telefono da Microsoft 365 o Office 365 o si trasferiscono i numeri di telefono dal provider di servizi corrente.
 
 Indipendentemente dal paese o dall'area geografica in cui ci si trova, è possibile aggiungere una posizione o un luogo in un luogo di emergenza e rimuovere una posizione di emergenza. A seconda del numero di posizioni fisiche nell'organizzazione, è possibile creare posizioni per edifici, pavimenti e uffici. Vedere [gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md).
   
@@ -45,7 +45,7 @@ Per informazioni su come ottenere un piano per le chiamate e sulla quantità di 
 4. Selezionare il paese o l'area geografica e quindi immettere l'indirizzo.
 
    > [!NOTE]
-   > In Belgio, Francia, Germania, Irlanda, Paesi Bassi e Spagna è importante capire che per attivare correttamente un numero di telefono in Office 365 l'indirizzo impostato nella posizione di emergenza, usato per acquisire il numero, deve corrispondere al prefisso del numero di telefono.
+   > In Belgio, Francia, Germania, Irlanda, Paesi Bassi e Spagna è importante capire che per attivare correttamente un numero di telefono in Microsoft 365 o Office 365, l'indirizzo impostato nella posizione di emergenza, usato per acquisire il numero, deve corrispondere al prefisso del numero di telefono.
 5. Se l'indirizzo non viene trovato e si vuole modificare manualmente l'indirizzo, attivare **modifica manualmente l'** indirizzo.
 6. Fare clic su **Salva**.
 

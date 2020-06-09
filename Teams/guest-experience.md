@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c7bf160e53fcbdd13fefac06c706d743a8b55643
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 20fc95f14782057c6c493d9835fd17a7339018ca
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43902601"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44637275"
 ---
 <a name="what-the-guest-experience-is-like"></a>Com'è l'esperienza guest
 =================================
@@ -57,7 +57,7 @@ Nella tabella seguente vengono confrontate le funzionalità teams disponibili pe
 |Creare riunioni o pianificare le sessioni di Access  <br/> |&#x2713;||
 |Accedere a OneDrive for Business Storage  <br/> |&#x2713;||
 |Creare criteri di accesso Guest a livello di tenant e teams/Channels  <br/> |&#x2713;||
-|Invitare un utente al di fuori del dominio dell'organizzazione di Office 365 <br/>  *I proprietari del team controllano questa impostazione.*  <br/> <br/> |&#x2713;||
+|Invitare un utente esterno al dominio dell'organizzazione Microsoft 365 o Office 365 <br/>  *I proprietari del team controllano questa impostazione.*  <br/> <br/> |&#x2713;||
 |Creare un team  <br/> |&#x2713;||
 |Individuare e partecipare a un team pubblico  <br/> |&#x2713;||
 |Visualizzazione organigramma  <br/> |&#x2713;||
@@ -99,7 +99,7 @@ La tabella seguente mostra le funzionalità di chiamata e riunione disponibili p
 <sup>1</sup> questa funzionalità sarà presto disponibile.
 
 > [!NOTE]
-> Gli amministratori di Office 365 controllano le funzionalità disponibili per gli utenti. 
+> Gli amministratori di Microsoft 365 e Office 365 controllano le funzionalità disponibili per gli utenti. 
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 

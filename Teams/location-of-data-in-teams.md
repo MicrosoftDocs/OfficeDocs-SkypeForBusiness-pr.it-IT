@@ -17,16 +17,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ebe94c04fcc4d93f636544d54930cf83855deec2
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 92516a73843b16212a13b4533da7db6fd1075532
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904818"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638755"
 ---
 # <a name="location-of-data-in-microsoft-teams"></a>Posizione dei dati in Microsoft Teams
 
-I dati in teams si trovano nell'area geografica associata all'organizzazione di Office 365. Attualmente, teams supporta l'Australia, il Canada, la Francia, la Germania, l'India, il Giappone, il Sud Africa, la Corea del sud, la Svizzera (che include Liechtenstein), gli Emirati Arabi Uniti, il Regno Unito, le Americhe, l'APAC e le aree EMEA. 
+I dati in teams si trovano nell'area geografica associata all'organizzazione Microsoft 365 o Office 365. Attualmente, teams supporta l'Australia, il Canada, la Francia, la Germania, l'India, il Giappone, il Sud Africa, la Corea del sud, la Svizzera (che include Liechtenstein), gli Emirati Arabi Uniti, il Regno Unito, le Americhe, l'APAC e le aree EMEA. 
 
 > [!IMPORTANT]
 > I team attualmente offrono la residenza dati in Australia, Canada, Francia, Germania, India, Giappone, Emirati Arabi Uniti, Regno Unito, Corea del sud, Sudafrica e Svizzera (che include Liechtenstein) solo per i nuovi inquilini.
@@ -34,7 +34,7 @@ I dati in teams si trovano nell'area geografica associata all'organizzazione di 
 
 ## <a name="where-your-teams-data-is-stored"></a>Dove sono archiviati i dati del team
 
-Per visualizzare l'area geografica contenente i dati per il tenant, accedere al**profilo dell'organizzazione****delle impostazioni** > dell'interfaccia di [Amministrazione](https://portal.office.com/adminportal/home) > di Microsoft 365. Scorrere verso il basso fino a **posizione dati**.
+Per visualizzare l'area geografica contenente i dati per il tenant, [Microsoft 365 admin center](https://portal.office.com/adminportal/home)accedere al  >  profilo dell'organizzazione**delle impostazioni**dell'interfaccia di amministrazione di Microsoft 365  >  **Organization profile**. Scorrere verso il basso fino a **posizione dati**.
 
 ![Screenshot della tabella della posizione dei dati, inclusi i team nell'interfaccia di amministrazione](media/Overview_of_security_and_compliance_in_Microsoft_Teams_image5.png)
 
@@ -56,7 +56,7 @@ Se il tenant è stato provisioning in Australia, Canada, Unione europea, Francia
 
 #### <a name="chat-channel-messages-team-structure"></a>Chat, messaggi di canale, struttura del team
 
-Ogni team in teams è supportato da un gruppo di Office 365 e dal sito di SharePoint e dalla cassetta postale di Exchange. Chat private (incluse le chat di gruppo), messaggi inviati come parte di una conversazione in un canale e la struttura di team e canali è archiviata in un servizio di chat in uso in Azure. I dati vengono archiviati anche in una cartella nascosta nelle cassette postali di utenti e gruppi per abilitare le funzionalità di protezione delle informazioni.
+Ogni team in teams è supportato da un gruppo Microsoft 365 e dal sito di SharePoint e dalla cassetta postale di Exchange. Chat private (incluse le chat di gruppo), messaggi inviati come parte di una conversazione in un canale e la struttura di team e canali è archiviata in un servizio di chat in uso in Azure. I dati vengono archiviati anche in una cartella nascosta nelle cassette postali di utenti e gruppi per abilitare le funzionalità di protezione delle informazioni.
 
 #### <a name="voicemail-and-contacts"></a>Segreteria telefonica e contatti
 

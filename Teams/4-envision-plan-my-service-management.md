@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1268a87e5e5ae48547e1f2489641ac13cd3bae64
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.openlocfilehash: a74d07cc40adf8010c2d987e05669264f8cc1367
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862716"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44610031"
 ---
 # <a name="plan-my-service-management"></a>Pianificare la gestione dei servizi
 
@@ -31,14 +31,14 @@ Questo articolo offre una panoramica dei requisiti necessari per offrire e gesti
 
 ## <a name="service-management-for-teams"></a>Gestione dei servizi per Teams
 
-La gestione dei servizi è un argomento ampio che include le operazioni quotidiane del servizio Microsoft teams dopo che è stato distribuito e abilitato per gli utenti. Il servizio teams include Microsoft Office 365 e i componenti dell'infrastruttura distribuiti localmente (ad esempio, Networking).
+La gestione dei servizi è un argomento ampio che include le operazioni quotidiane del servizio Microsoft teams dopo che è stato distribuito e abilitato per gli utenti. Il servizio teams include Microsoft 365 o Office 365 e i componenti dell'infrastruttura distribuiti localmente (ad esempio, Networking).
 
 La nozione di gestione dei servizi non è probabilmente un nuovo concetto per la maggior parte delle organizzazioni. Probabilmente hai già implementato processi e attività associati ai servizi esistenti. Ciò detto, è probabile che sia possibile aumentare le informazioni disponibili quando si prevede di gestire i servizi Microsoft teams in futuro.
 
-La gestione dei servizi comprende tutte le attività e i processi coinvolti nella gestione di Microsoft teams end to end. Alcuni componenti della gestione dei servizi, ovvero i componenti dell'infrastruttura che il servizio Office 365 stesso comporta, sono responsabili di Microsoft, mentre il cliente è responsabile per gli utenti di gestire i vari aspetti dei team, della rete e endpoint da essi forniti.
+La gestione dei servizi comprende tutte le attività e i processi coinvolti nella gestione di Microsoft teams end to end. Alcuni componenti della gestione dei servizi, ovvero i componenti dell'infrastruttura che il servizio Microsoft 365 o Office 365 stesso comporta, sono responsabili di Microsoft, mentre il cliente è responsabile per gli utenti di gestire i vari aspetti dei team, della rete e degli endpoint da essi forniti.
 Per una descrizione completa della responsabilità del cliente per la gestione del servizio Team e per quanto riguarda i componenti chiave che sostengono la qualità dell'esperienza utente, vedere Pianificare la [gestione e la qualità del servizio](https://docs.microsoft.com/MicrosoftTeams/prepare-network).
 
-![Diagramma dei tre componenti di qualità](media/plan-my-service-management-image1.png "Diagramma dei tre componenti di qualità--servizio, rete e endpoint di Office 365--e in che modo la gestione dei servizi si sovrappone a tutte e tre le.")
+![Diagramma dei tre componenti di qualità](media/plan-my-service-management-image1.png "Diagramma dei tre componenti di qualità--Microsoft 365 o Office 365 Service, Network e endpoint--e come la gestione dei servizi si sovrappone a tutte e tre le.")
 
 <!--ENDOFSECTION-->
 

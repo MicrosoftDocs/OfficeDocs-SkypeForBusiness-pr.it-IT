@@ -26,10 +26,10 @@ ms.custom:
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per gli Stati Uniti.
 ms.openlocfilehash: 1a33ad9909b7caa76acb2b4e042b24aa98cc86f1
-ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
+ms.lasthandoff: 06/09/2020
 ms.locfileid: "44230334"
 ---
 # <a name="availability-in-the-united-states-us"></a>Disponibilità negli Stati Uniti (USA)
@@ -40,7 +40,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 
 ## <a name="audio-conferencing"></a>Audioconferenza
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per: <br/><ul><li> Chicago<li>Dallas<li>Los Angeles<li>New York City</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
@@ -48,7 +48,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 
 ## <a name="phone-system"></a>Sistema telefonico
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
 | Operatori automatici <br/> |Disponibile  <br/> |
@@ -81,7 +81,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
 
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Sono disponibili i Crediti comunicazioni?  <br/> |Sì  <br/> |
 

@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8c83d985a277c8341565e44878ba03385e23a358
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 9ffc71de13948be077c14699e98fca726bced3eb
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904998"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638495"
 ---
 <a name="manage-teams-in-the-microsoft-teams-admin-center"></a>Gestire team nell'interfaccia di amministrazione di Microsoft Teams
 ==========================================
@@ -33,7 +33,7 @@ ms.locfileid: "43904998"
 
 Questo articolo offre una panoramica degli strumenti di gestione per i team nell'interfaccia di amministrazione di Microsoft teams.
 
-Come amministratore, potrebbe essere necessario visualizzare o aggiornare i team configurati dall'organizzazione per la collaborazione oppure eseguire azioni correttive come l'assegnazione di proprietari per team non proprietari. Puoi gestire i team usati nell'organizzazione tramite il modulo Microsoft teams PowerShell e l'interfaccia di amministrazione di Microsoft teams. Per le funzionalità di amministrazione complete che usano questi due set di strumenti, è necessario assicurarsi che sia stato assegnato uno dei ruoli seguenti:
+Come amministratore, potrebbe essere necessario visualizzare o aggiornare i team configurati dall'organizzazione per la collaborazione oppure eseguire azioni correttive come l'assegnazione di proprietari per team non proprietari. Puoi gestire i team usati nell'organizzazione tramite il modulo Microsoft teams PowerShell e l'interfaccia di amministrazione di Microsoft teams. È possibile accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> . Per le funzionalità di amministrazione complete che usano questi due set di strumenti, è necessario assicurarsi che sia stato assegnato uno dei ruoli seguenti:
 
 - Amministratore globale
 - Amministratore del servizio Teams
@@ -44,7 +44,7 @@ Per altre informazioni sui ruoli di amministratore in teams, è possibile [usare
 
 ## <a name="teams-overview-grid"></a>Griglia Panoramica Teams
 
-Gli strumenti di gestione per i team sono inclusi nel nodo **Teams** nell'interfaccia di amministrazione di Microsoft teams. Nell'interfaccia di amministrazione selezionare **Teams** > **Manage teams**. Ogni team è supportato da un gruppo di Office 365 e questo nodo offre una visualizzazione dei gruppi che sono stati abilitati da Microsoft teams nell'organizzazione.
+Gli strumenti di gestione per i team sono inclusi nel nodo **Teams** nell'interfaccia di amministrazione di Microsoft teams. Nell'interfaccia di amministrazione selezionare **Teams**  >  **Gestire teams**.) Ogni team è supportato da un gruppo Microsoft 365 e questo nodo offre una visualizzazione dei gruppi che sono stati abilitati da Microsoft teams nell'organizzazione.
 
 ![Screenshot della griglia di panoramica Teams](media/manage-teams-in-modern-portal-grid.png)  
 
@@ -55,11 +55,11 @@ La griglia Visualizza le proprietà seguenti:
 - **Membri del team** -numero totale di utenti, inclusi proprietari, Guest e membri del tenant.
 - **Proprietari** -numero di proprietari per il team.
 - **Clienti** -numero di utenti guest di Azure Active Directory B2B che sono membri di questo team.
-- **Privacy** -visibilità/AccessType del gruppo di Office 365 di supporto.
+- **Privacy** -visibilità/AccessType del gruppo Microsoft 365 di supporto.
 - **Stato** : lo stato archiviato o attivo per il team. Leggi altre informazioni sull'archiviazione di teams in [Archive o su come ripristinare un team](https://support.office.com/article/archive-or-restore-a-team-dc161cfd-b328-440f-974b-5da5bd98b5a7).
-- **Descrizione** : Descrizione del gruppo di Office 365 di supporto.
-- **Classificazione** : classificazione (se usata nell'organizzazione) assegnata al gruppo di Office 365 di supporto. Leggi altre informazioni sulle classificazioni in [creare classificazioni per i gruppi di Office nell'organizzazione](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization).
-- **GroupID** : GroupID univoco del gruppo di Office 365 di supporto.
+- **Descrizione** : Descrizione del gruppo Microsoft 365 di supporto.
+- **Classificazione** : classificazione (se usata nell'organizzazione) assegnata al gruppo Microsoft 365 di supporto. Leggi altre informazioni sulle classificazioni in [creare classificazioni per i gruppi di Office nell'organizzazione](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-groups-with-powershell#create-classifications-for-office-groups-in-your-organization).
+- **GroupID** : GroupID univoco del gruppo Microsoft 365 di supporto.
 
 > [!NOTE]
 > Se non sono visualizzate tutte queste proprietà nella griglia, fare clic sull'icona **modifica colonne** . Nel riquadro **modifica colonne** è possibile usare gli interruttori per attivare o disattivare le colonne nella griglia. Al termine, fare clic su **applica**.
@@ -78,7 +78,7 @@ Per modificare le impostazioni specifiche per il gruppo e il team, selezionare i
 
 ### <a name="delete"></a>Eliminare
 
-L'eliminazione di un team è un'eliminazione morbida del team e del gruppo di Office 365 corrispondente. Per ripristinare un team eliminato erroneamente, seguire le istruzioni in [ripristinare un gruppo di Office 365 eliminato](https://docs.microsoft.com/office365/admin/create-groups/restore-deleted-group?view=o365-worldwide).
+L'eliminazione di un team è un'eliminazione morbida del team e del gruppo Microsoft 365 corrispondente. Per ripristinare un team eliminato erroneamente, seguire le istruzioni in [ripristinare un gruppo eliminato](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
 
 ### <a name="search"></a>Ricerca
 
@@ -86,7 +86,7 @@ La ricerca attualmente supporta la stringa "inizia con" e cerca il campo **nome 
 
 ## <a name="team-profile"></a>Profilo del team
 
-È possibile passare alla pagina del profilo del team di un team dalla griglia Panoramica di team principali facendo clic sul nome del team. La pagina del profilo del team Mostra i membri, i proprietari e gli ospiti che appartengono al team (e il relativo gruppo di supporto di Office 365), nonché i canali e le impostazioni del team. Nella pagina del profilo del team è possibile:
+È possibile passare alla pagina del profilo del team di un team dalla griglia Panoramica di team principali facendo clic sul nome del team. La pagina del profilo del team Mostra i membri, i proprietari e gli ospiti che appartengono al team (e il suo supporto Microsoft 365 Group), nonché i canali e le impostazioni del team. Nella pagina del profilo del team è possibile:
 
 - Aggiungere o rimuovere membri e proprietari.
 - Aggiungere o rimuovere canali (si noti che non è possibile rimuovere il canale generale).
@@ -103,7 +103,7 @@ Nella pagina del profilo del team è possibile modificare gli elementi seguenti 
 - **Nome del team**
 - **Descrizione**
 - **Privacy** : specificare se il team è pubblico o privato.
-- **Classificazione** : è supportato dalle classificazioni dei gruppi di Office 365. Scegliere **riservate**, **altamente riservate**o **generali**.
+- **Classificazione** : è supportato dalle classificazioni del gruppo Microsoft 365. Scegliere **riservate**, **altamente riservate**o **generali**.
 - **Impostazioni conversazioni** -imposta se i membri possono modificare ed eliminare i messaggi inviati.
 - **Impostazioni canali** : imposta se i membri possono creare nuovi canali e modificare quelli esistenti e aggiungere, modificare e rimuovere schede, connettori e app.
 
@@ -125,7 +125,7 @@ Sostituire **{GroupID}** nella query per l'effettivo GroupID in questione, che �
 
 2. Accedere a Esplora grafici nel menu a sinistra.
 
-3. Modificare la riga della query in: PATCH > v 1.0 https://graph.microsoft.com/v1.0/groups/{groupid}>.
+3. Modificare la riga della query in: PATCH > v 1.0 > https://graph.microsoft.com/v1.0/groups/{groupid} .
 
 4. Aggiungere il valore seguente nel corpo della richiesta: {"resourceProvisioningOptions": ["team"]}.
 

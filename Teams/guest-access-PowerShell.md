@@ -17,12 +17,12 @@ description: Informazioni su come usare PowerShell per consentire o bloccare l'a
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 28d8109f772a448d61e189a6b0a8aa1c45feb5af
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: d438b9d5cf3af8d200da07fcebe39f4222c2b25a
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43902591"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44637305"
 ---
 <a name="use-powershell-to-control-guest-access-to-a-team"></a>Usare PowerShell per controllare l'accesso guest a un team
 ================================================
@@ -33,7 +33,7 @@ Oltre a usare l'interfaccia di amministrazione di Microsoft 365 e il portale di 
 
 - Consentire l'aggiunta di Guest a tutti i team e ai gruppi di Microsoft 365
 
-- Consentire o bloccare gli utenti Guest da un team specifico o da un gruppo di Office 365
+- Consentire o bloccare gli utenti Guest da un team specifico o da un gruppo di Microsoft 365
 
 Per informazioni dettagliate, vedere "usare PowerShell per controllare l'accesso guest" in [gestire l'accesso guest nei gruppi di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups#use-powershell-to-control-guest-access).
 
@@ -54,7 +54,7 @@ Se si vuole bloccare gli ospiti in teams e si vuole comunque consentire loro di 
     $CSSession = New-CsOnlineSession -Credential $Cred
     Import-PSSession -Session $CSSession
     ```
-3.    Controlla la configurazione e, `AllowGuestUser` se `$False`lo è, usa il cmdlet [set-CsTeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps) per impostarlo su `$True`.
+3.    Controlla la configurazione e, se lo `AllowGuestUser` è `$False` , usa il cmdlet [set-CsTeamsClientConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps) per impostarlo su `$True` .
 
     ```PowerShell
     Get-CsTeamsClientConfiguration

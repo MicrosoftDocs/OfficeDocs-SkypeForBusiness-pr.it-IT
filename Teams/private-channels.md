@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
-ms.openlocfilehash: 761d6a06da6bb02991e706f6e18ac8ce7d4106f4
-ms.sourcegitcommit: bb88ac0c9489bb47957e5ef1074b5df3126b6fdb
-ms.translationtype: HT
+ms.openlocfilehash: 769fd2b489d65b276823abd7c3ff8f579100617a
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "42265631"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44637935"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -68,10 +68,12 @@ Quando viene creato un canale privato, questo viene collegato al team padre e no
 
 ### <a name="who-can-create-private-channels"></a>Chi può creare i canali privati?
 
-Per impostazione predefinita, tutti i proprietari o i membri del team possono creare un canale privato. Gli utenti guest non possono crearli. La possibilità di creare canali privati può essere gestita a livello di team e a livello aziendale:
+Per impostazione predefinita, tutti i proprietari o i membri del team possono creare un canale privato. Gli utenti guest non possono crearli. La possibilità di creare canali privati può essere gestita a livello di team e a livello di organizzazione.
 
-- Nella scheda **Impostazioni** di un team, i proprietari del team possono disattivare o attivare la possibilità per i membri di creare canali privati.
-- L'amministratore può usare i [criteri](teams-policies.md) per controllare quali utenti dell'organizzazione sono autorizzati a creare canali privati.
+> 1. Accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
+
+> 2. Usare i [criteri](teams-policies.md) per controllare gli utenti dell'organizzazione che possono creare canali privati.
+    Dopo aver impostato i criteri, i proprietari del team possono disattivare o attivare la possibilità per i membri di creare canali privati nella scheda **Impostazioni** di un team.
 
 La persona che crea un canale privato è il proprietario del canale privato e solo il proprietario del canale privato può aggiungere o rimuovere direttamente le persone da quest'ultimo. Il proprietario di un canale privato può aggiungere qualsiasi membro del team a un canale privato creato, inclusi gli utenti guest. I membri di un canale privato dispongono di uno spazio di conversazione sicuro e, quando vengono aggiunti nuovi membri, questi possono vedere tutte le conversazioni nel canale privato, anche quelle avvenute in precedenza.
 
@@ -83,7 +85,7 @@ Se un membro del team lascia o viene rimosso da un team, tale utente lascerà o 
 
 Il proprietario di un canale privato non può essere rimosso tramite il client di Teams, se si tratta dell'ultimo proprietario di uno o più canali privati.
 
-Se il proprietario di un canale privato lascia l'organizzazione o se viene rimosso dal gruppo di Office 365 associato al team, un membro del canale privato viene automaticamente innalzato di livello per ricoprire il ruolo di proprietario del canale privato.
+Se un proprietario di canale privato esce dall'organizzazione o se viene rimosso dal gruppo Microsoft 365 associato al team, un membro del canale privato viene automaticamente promosso come proprietario del canale privato.
 
 ### <a name="what-can-team-owners-and-team-members-see-in-a-private-channel"></a>Cosa possono visualizzare i proprietari e i membri del team in un canale privato?
 
@@ -106,12 +108,12 @@ Nella tabella seguente sono illustrate le azioni che i proprietari, i membri e g
 |Azione  |Proprietario di un team|Membro di un team|Utente guest di un team|Proprietario di un canale privato|Membro di un canale privato|Utente guest di un canale privato|
 |---------|---------|---------|---------|---------|---------|---------|
 |Creare un canale privato|Sì<sup>1</sup>|Sì<sup>1,2</sup>|No|N/D|N/D|N/D|
-|Eliminare un canale privato|Sì|No|No|Sì|No|No|
+|Eliminare un canale privato|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|
 |Lasciare un canale privato|N/D|N/D|N/D|Sì<sup>3</sup>|Sì|Sì|
-|Modificare un canale privato|No|N/D|N/D|Sì|No|No|
-|Ripristinare un canale privato eliminato|Sì|No|No|Sì|No|No|
-|Aggiungere membri|No|N/D|N/D|Sì|No|No|
-|Modificare le impostazioni|No|N/D|N/D|Sì|No|No|
+|Modificare un canale privato|No|N/D|N/D|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|
+|Ripristinare un canale privato eliminato|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|
+|Aggiungere membri|No|N/D|N/D|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|
+|Modificare le impostazioni|No|N/D|N/D|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|No|
 |Gestire schede e app|No|N/D|N/D|Sì<sup>4</sup>|Sì<sup>5</sup>|No|
 
 <sup>1</sup> Presupponendo che i criteri configurati dall'amministratore consentano all'utente di creare canali privati.<br>

@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 86e9fd1b26bebd120136c3c33abf0a44ffa03e0d
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.openlocfilehash: 4e77127d6840473cfb6238d9150ac692230181e1
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41862816"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44610048"
 ---
 # <a name="deploy-my-service"></a>Implementare il servizio
 
@@ -44,7 +44,7 @@ Completando le attività in questo PlayBook, l'organizzazione può:
 -   Ridurre le esigenze di supporto e aumentare la soddisfazione degli utenti.
 
 > [!NOTE]
-> Questo articolo e il PlayBook associato non sono progettati per descrivere ogni passaggio di configurazione tecnica necessario per l'abilitazione del servizio o per fornire un tono di chiamata a un sito specifico. Si occupano invece delle attività e delle attività consigliate per gli utenti a bordo in modo semplice e consentono di iniziare a usare i carichi di lavoro vocali di teams attraverso una transizione veloce e fluida con un tasso di adozione elevato, riducendo al minimo i requisiti di supporto. Per informazioni tecniche su come configurare al meglio l'ambiente per i team Voice, vedere gli elenchi di controllo onboarding per [configurare i carichi di lavoro vocali di teams](onboarding-checklist-configure-cloud-voice-workloads-in-Microsoft-Teams.md), [configurare il routing diretto in team](onboarding-checklist-configure-direct-routing-in-Microsoft-Teams.md), [funzionalità di base di teams](onboarding-checklist-configure-microsoft-teams-core-capabilities.md), [networking per Teams](prepare-network.md)e l' [Abilitazione di Office 365](onboarding-checklist-enable-office-365.md).
+> Questo articolo e il PlayBook associato non sono progettati per descrivere ogni passaggio di configurazione tecnica necessario per l'abilitazione del servizio o per fornire un tono di chiamata a un sito specifico. Si occupano invece delle attività e delle attività consigliate per gli utenti a bordo in modo semplice e consentono di iniziare a usare i carichi di lavoro vocali di teams attraverso una transizione veloce e fluida con un tasso di adozione elevato, riducendo al minimo i requisiti di supporto. Per informazioni tecniche su come configurare al meglio l'ambiente per i team Voice, vedere gli elenchi di controllo onboarding per la [configurazione dei workload vocali di teams](onboarding-checklist-configure-cloud-voice-workloads-in-Microsoft-Teams.md), la [configurazione del routing diretto in team](onboarding-checklist-configure-direct-routing-in-Microsoft-Teams.md), le [funzionalità di base di teams](onboarding-checklist-configure-microsoft-teams-core-capabilities.md), la creazione [di reti per i team](prepare-network.md)e l'attivazione di [Microsoft 365 o Office 365](onboarding-checklist-enable-office-365.md).
 
 <!--ENDOFSECTION-->
 
@@ -54,7 +54,7 @@ Lo scopo del PlayBook è quello di affrontare i fattori che influenzano la perce
 
 -   Convalida della disponibilità del servizio
     - Audioconferenza
-    - Piani per chiamate
+    - Piani di chiamata
     - Routing diretto
 
 -   Abilitazione dell'utente
@@ -90,9 +90,9 @@ Indipendentemente dalle dimensioni e dalla complessità della posizione, l'abili
 
 5. Esaminare ogni attività, eseguire le azioni necessarie e aggiornare lo stato man mano che si cammina nella sequenza temporale. Lo stato è rappresentato graficamente, come descritto di seguito:
   
-   - ![Illustrazione di un segno](media/deploy-my-service-image3.png) di spunta verde **Sì o non applicabile (verde):** l'attività è stata completata oppure non è applicabile per il sito e non è necessaria alcuna ulteriore azione.</li>
-   - ![Illustrazione di un punto](media/deploy-my-service-image4.png) esclamativo giallo <strong>l'attività non è ancora stata completata (giallo):</strong> l'attività non è ancora stata completata e deve essere aggiornata a Sì o no nella programmazione.</li>
-   - ![Immagine di una X rossa che indica](media/deploy-my-service-image5.png) No <strong>No (rosso):</strong> l'attività non può essere completata a causa di un problema e deve essere eseguita nella riunione dello stato del progetto.</li></ul>
+   - ![Illustrazione di un segno di spunta verde ](media/deploy-my-service-image3.png) **Sì o non applicabile (verde):** l'attività è stata completata oppure non è applicabile per il sito e non è necessaria alcuna ulteriore azione.</li>
+   - ![Illustrazione di un punto esclamativo giallo ](media/deploy-my-service-image4.png) <strong>l'attività non è ancora stata completata (giallo):</strong> l'attività non è ancora stata completata e deve essere aggiornata a Sì o no nella programmazione.</li>
+   - ![Immagine di una X rossa che indica No ](media/deploy-my-service-image5.png) <strong>No (rosso):</strong> l'attività non può essere completata a causa di un problema e deve essere eseguita nella riunione dello stato del progetto.</li></ul>
 
 6. Lo stato viene arrotolato all'interno di ogni sezione e l'intestazione di sezione è formattata con uno di questi indicatori di stato. Anche **lo stato settimanale** viene aggiornato automaticamente.
 

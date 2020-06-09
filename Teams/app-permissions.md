@@ -19,12 +19,12 @@ localization_priority: Normal
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f19cbbba6df7c43c69af35893466344e8df1d17d
-ms.sourcegitcommit: 296aeac481f901eb9d52b4f12a8c037afc49fa77
+ms.openlocfilehash: 6d2e43c3125421189303d106cfd3bdde66815309
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44256481"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44611015"
 ---
 # <a name="microsoft-teams-apps-permissions-and-considerations"></a>Autorizzazioni e considerazioni sulle app di Microsoft Teams
 
@@ -140,7 +140,7 @@ Nessuno (attualmente)
 
 - Il profilo di rischio per una tabulazione è quasi identico a quello stesso sito Web in uso in una scheda del browser. 
 
-- Una scheda ottiene anche il contesto in cui è in corso, incluso il nome di accesso e l'UPN dell'utente corrente, l'ID oggetto di Azure AD per l'utente corrente, l'ID del gruppo Office 365 in cui risiede (se si tratta di un team), l'ID tenant e le impostazioni locali correnti dell'utente. Tuttavia, per eseguire il mapping di questi ID alle informazioni di un utente, la scheda dovrebbe rendere l'accesso dell'utente ad Azure AD.
+- Una scheda ottiene anche il contesto in cui è in corso, incluso il nome di accesso e l'UPN dell'utente corrente, l'ID oggetto di Azure AD per l'utente corrente, l'ID del gruppo Microsoft 365 in cui risiede (se si tratta di un team), l'ID tenant e le impostazioni locali correnti dell'utente. Tuttavia, per eseguire il mapping di questi ID alle informazioni di un utente, la scheda dovrebbe rendere l'accesso dell'utente ad Azure AD.
 
 ## <a name="connectors"></a>Connettori
 

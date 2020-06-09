@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f449d20f4364629185f719c3217023107f774dd9
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: 62686c87d653532f7f64b797fbe301a1cf0d2610
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350310"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638395"
 ---
 # <a name="move-your-microsoft-staffhub-teams-to-shifts-in-microsoft-teams"></a>Spostare i team di Microsoft StaffHub in turni in Microsoft Teams
 
@@ -56,7 +56,7 @@ Efficace il 30 giugno 2020 StaffHub sarà ritirato. Ti invitiamo a iniziare a us
 
 Quando si sposta un team di StaffHub, i membri del team, i dettagli degli utenti, le pianificazioni del team e i dati della chat vengono spostati in teams. I file non vengono spostati quando si sposta un team di StaffHub. Se un team di StaffHub contiene file che si vuole anche trasferire in teams, è possibile trasferire i file in un passaggio separato.
 
-Ogni team di StaffHub ha bisogno di un gruppo Microsoft 365 o Office 365 corrispondente. Se un team di StaffHub è associato a un gruppo Microsoft 365, l'impostazione della privacy del gruppo viene mantenuta quando si trasferisce il team. Se a un team di StaffHub non è associato un gruppo Microsoft 365, viene automaticamente creato un gruppo con l'impostazione di privacy private per il supporto della transizione.  Considerata la differenza tra team e nomi di gruppo tra team e StaffHub, è possibile che venga visualizzato un nome di team diverso in teams. 
+Ogni team di StaffHub ha bisogno di un gruppo Microsoft 365 o Microsoft 365 corrispondente. Se un team di StaffHub è associato a un gruppo Microsoft 365, l'impostazione della privacy del gruppo viene mantenuta quando si trasferisce il team. Se a un team di StaffHub non è associato un gruppo Microsoft 365, viene automaticamente creato un gruppo con l'impostazione di privacy private per il supporto della transizione.  Considerata la differenza tra team e nomi di gruppo tra team e StaffHub, è possibile che venga visualizzato un nome di team diverso in teams. 
 
 Durante la transizione da Teams da StaffHub a teams, gli utenti non avranno più accesso alle loro pianificazioni in StaffHub e verranno reindirizzati ai turni in teams. È consigliabile comunicare questo cambiamento nell'organizzazione per ridurre al minimo le interruzioni e incoraggiare gli utenti ad adottare ed esplorare team. Se si dispone di Azure AD Premium, è possibile [eseguire un report](run-report-to-show-staffhub-usage.md) per ottenere un elenco di utenti di StaffHub nell'organizzazione che devono conoscere la modifica.  
 

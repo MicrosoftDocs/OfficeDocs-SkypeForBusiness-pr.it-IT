@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 77a325fbe8cacb3b2760f5b3034dee0e16695278
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: ad827244baaacde8ee5c7166590c81347c8eea5b
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42021597"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44610021"
 ---
 # <a name="plan-my-users-experience"></a>Pianificare l'esperienza degli utenti
 
@@ -58,7 +58,7 @@ Per informazioni sui requisiti software per i client di team in ogni piattaforma
 ## <a name="endpoint-firewalls"></a>Firewall endpoint
 
 I firewall lato client possono avere un impatto significativo sull'esperienza utente.
-I firewall lato client possono influire sulla qualità delle chiamate oltre a impedire la creazione di una chiamata. Configurare le esclusioni appropriate nel firewall client in base alle informazioni contenute negli [URL e negli intervalli di indirizzi IP di Office 365](https://aka.ms/o365ips). Il fornitore di terze parti avrà indicazioni specifiche su come creare le esclusioni.
+I firewall lato client possono influire sulla qualità delle chiamate oltre a impedire la creazione di una chiamata. Configurare le esclusioni appropriate nel firewall client in base alle informazioni contenute negli [intervalli di URL e indirizzi IP di Microsoft 365 o Office 365](https://aka.ms/o365ips). Il fornitore di terze parti avrà indicazioni specifiche su come creare le esclusioni.
 
 >[!NOTE]
 > Microsoft teams aggiornerà automaticamente Windows Firewall con una configurazione appropriata del firewall.

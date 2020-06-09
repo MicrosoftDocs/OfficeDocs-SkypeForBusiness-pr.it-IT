@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9d91731792dd049f76d781c4a0be08e92d09e0bb
-ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
+ms.openlocfilehash: 583fdf2ba821437d1877036ddafe5cce0a460269
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326603"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44637295"
 ---
 <a name="microsoft-teams-guest-access-checklist"></a>Elenco di controllo per l'accesso guest in Microsoft Teams
 =========================================
@@ -88,7 +88,7 @@ Queste sono le impostazioni di Azure AD che supportano l'accesso guest in Teams.
 
 Per istruzioni dettagliate sulla configurazione di queste impostazioni, vedere [gestire l'accesso guest nei gruppi di microsoft 365](https://support.office.com/article/manage-guest-access-in-office-365-groups-9de497a9-2f5c-43d6-ae18-767f2e6fe6e0?appver=MOE150) e [controllare l'accesso guest nei gruppi di Microsoft 365](Teams-dependencies.md#control-guest-access-in-microsoft-365-groups).
 
-## <a name="step-4-configure-sharing-in-office-365"></a>Passaggio 4: configurare la condivisione in Office 365 
+## <a name="step-4-configure-sharing-in-microsoft-365"></a>Passaggio 4: configurare la condivisione in Microsoft 365 
 
 Assicurarsi che gli utenti possano aggiungere guest. Ecco come:
 

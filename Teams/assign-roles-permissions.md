@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ba628bf3f58523dc37e2273b437f22af1a0ebc19
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 45cfe8ed255e889093044672cb738152adaaf6ae
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43778932"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44610138"
 ---
 <a name="assign-team-owners-and-members-in-microsoft-teams"></a>Assegnare proprietari e membri del team in Microsoft Teams
 =================================================
@@ -29,7 +29,7 @@ ms.locfileid: "43778932"
 > [!IMPORTANT]
 > [!INCLUDE [new-teams-sfb-admin-center-notice](includes/new-teams-sfb-admin-center-notice.md)]
 
-All'interno di Microsoft teams sono presenti due ruoli utente: **owner** e **member**. Per impostazione predefinita, viene concesso lo stato proprietario a un utente che crea un nuovo team. Inoltre, i proprietari e i membri possono avere funzionalità di moderatore per un canale (a condizione che sia stata configurata la moderazione). Se un team viene creato da un gruppo di Office 365 esistente, le autorizzazioni vengono ereditate.
+All'interno di Microsoft teams sono presenti due ruoli utente: **owner** e **member**. Per impostazione predefinita, viene concesso lo stato proprietario a un utente che crea un nuovo team. Inoltre, i proprietari e i membri possono avere funzionalità di moderatore per un canale (a condizione che sia stata configurata la moderazione). Se un team viene creato da un gruppo Microsoft 365 esistente, le autorizzazioni vengono ereditate.
 
 La tabella seguente mostra la differenza tra le autorizzazioni di un proprietario e di un membro.
 
@@ -71,7 +71,7 @@ Per altre informazioni sulle funzionalità di moderatore, vedere [configurare e 
 
 ## <a name="assign-a-user-role"></a>Assegnare un ruolo utente
 
-Per assegnare un ruolo utente, in teams selezionare il nome del team e fare clic su **altre opzioni** > **Gestisci team**. Nella scheda **membri** è possibile aggiungere membri e scegliere proprietari e moderatori (se si dispone di autorizzazioni sufficienti). Per altre informazioni, vedere [modificare le impostazioni del team in teams](https://support.office.com/article/ce053b04-1b8e-4796-baa8-90dc427b3acc).
+Per assegnare un ruolo utente, in teams selezionare il nome del team e fare clic su **altre opzioni**  >  **Gestisci team**. Nella scheda **membri** è possibile aggiungere membri e scegliere proprietari e moderatori (se si dispone di autorizzazioni sufficienti). Per altre informazioni, vedere [modificare le impostazioni del team in teams](https://support.office.com/article/ce053b04-1b8e-4796-baa8-90dc427b3acc).
 
 ## <a name="permissions-to-create-teams"></a>Autorizzazioni per la creazione di Team
 

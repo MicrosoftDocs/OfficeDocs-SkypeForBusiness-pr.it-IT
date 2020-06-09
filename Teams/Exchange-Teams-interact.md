@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ca63f95bb95a304fc410b402a68a52e5b1aeca9e
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: 5debf9eb72066c90ff0af002b4e5f3b3bafe8383
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44349640"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44637065"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -36,7 +36,7 @@ Gli utenti ospitati in Exchange Online o Exchange dedicato a vNext possono usare
 
 Gli utenti ospitati in Exchange Online dedicato (legacy) devono essere sincronizzati con Azure Active Directory in Microsoft 365 o Office 365. Possono creare e partecipare a team e canali, aggiungere e configurare schede e bot e usare le funzionalità di chat e chiamate. Tuttavia, non possono modificare le immagini del profilo, gestire le riunioni, accedere ai contatti di Outlook o gestire i connettori.
 
-Gli utenti con cassette postali ospitate in locale devono essere sincronizzati con Azure Active Directory. Possono sfruttare tutte le funzionalità dello scenario precedente, inoltre, possono anche modificare l'immagine del profilo utente (se il criterio delle cassette postali di Outlook sul Web lo consente) e gestire le riunioni, fornendo Exchange Server 2016 (aggiornamento cumulativo 3) o versioni successive, viene eseguito localmente con OAuth configurato, preferibilmente tramite la configurazione guidata ibrida di Exchange, come descritto in [configurare l'autenticazione OAuth tra le organizzazioni di Exchange e Exchange Online](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help). Per abilitare la delega del calendario per questi utenti, è anche necessario completare i passaggi 2-3 come descritto in [configurare l'integrazione e il protocollo OAuth tra Skype for business online ed Exchange Server](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises); Questa procedura fornirà all'applicazione per la pianificazione dei team le autorizzazioni necessarie per confermare le autorizzazioni di delega.   
+Gli utenti con cassette postali ospitate in locale devono essere sincronizzati con Azure Active Directory. Possono sfruttare tutte le funzionalità dello scenario precedente, inoltre, possono anche modificare l'immagine del profilo utente (se il criterio delle cassette postali di Outlook sul Web lo consente) e gestire le riunioni, fornendo Exchange Server 2016 (aggiornamento cumulativo 3) o versioni successive, viene eseguito localmente con OAuth configurato, preferibilmente tramite la configurazione guidata ibrida di Exchange, come descritto in [configurare l'autenticazione OAuth tra le organizzazioni di Exchange e Exchange Online](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help). Per abilitare la delega del calendario per questi utenti, è anche necessario completare i passaggi 2-3 come descritto in [configurare l'integrazione e il protocollo OAuth tra Skype for business online ed Exchange Server](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises); Questa procedura fornirà all'applicazione per la pianificazione dei team le autorizzazioni necessarie per confermare le autorizzazioni di delega.
 
 La tabella seguente fornisce un utile riferimento rapido per la disponibilità delle caratteristiche in base all'ambiente Exchange.
 
@@ -45,7 +45,7 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 
 **Azioni supportate:**
 
-| La cassetta postale dell'utente è ospitata in: | eDiscovery| &nbsp;Blocco legale | Conservazione| MGMT per team e canali |Creare e visualizzare riunioni in teams| Modificare l'immagine del profilo utente | Cronologia chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Segreteria telefonica |Aggiungere e configurare connettori|Aggiungere e configurare le schede|Aggiungere e configurare i bot| 
+| La cassetta postale dell'utente è ospitata in: | eDiscovery| &nbsp;Blocco legale | Conservazione| MGMT per team e canali |Creare e visualizzare riunioni in teams| Modificare l'immagine del profilo utente | Cronologia chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Segreteria telefonica |Aggiungere e configurare connettori|Aggiungere e configurare le schede|Aggiungere e configurare i bot|
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 |**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Sì<sup>8</sup>|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
 |**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Sì<sup>8</sup>|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
@@ -78,7 +78,7 @@ Microsoft teams funziona con diversi servizi Microsoft 365 e Office 365 per cons
 
 - Gli utenti devono essere abilitati per la creazione di gruppi di Microsoft 365 per creare team in Microsoft teams.
 
-- Per consentire a Microsoft teams di lavorare con Exchange locale, è necessario configurare il nuovo protocollo di autenticazione di Exchange OAuth, preferibilmente eseguendo la procedura guidata ibrida di Exchange, come descritto in [configurare l'autenticazione OAuth tra le organizzazioni Exchange e Exchange Online](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help). Per consentire agli utenti che dispongono di una cassetta postale di Exchange locale di pianificare le riunioni di team per conto di un altro utente, è necessario completare anche i passaggi 2-3 come descritto in [configurare Integration e OAuth tra Skype for business online ed Exchange Server](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises). 
+- Per consentire a Microsoft teams di lavorare con Exchange locale, è necessario configurare il nuovo protocollo di autenticazione di Exchange OAuth, preferibilmente eseguendo la procedura guidata ibrida di Exchange, come descritto in [configurare l'autenticazione OAuth tra le organizzazioni Exchange e Exchange Online](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help). Per consentire agli utenti che dispongono di una cassetta postale di Exchange locale di pianificare le riunioni di team per conto di un altro utente, è necessario completare anche i passaggi 2-3 come descritto in [configurare Integration e OAuth tra Skype for business online ed Exchange Server](https://docs.microsoft.com/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises).
 
 > [!NOTE]
 > Il componente aggiuntivo Outlook teams può essere usato per pianificare una riunione di team per le cassette postali ospitate in Exchange locale. Tuttavia, la pianificazione di una riunione di team per conto di un altro utente con Exchange locale richiede Exchange 2013 CU9 e versioni successive e il nuovo protocollo di autenticazione di Exchange OAuth. Sia il delegato che il delegante devono avere una cassetta postale in Exchange locale.
@@ -103,3 +103,23 @@ Ecco alcuni aspetti aggiuntivi da considerare quando implementi Microsoft teams 
 
 > [!TIP]
 > Per informazioni su come usare Azure AD Connect per la sincronizzazione con Azure Active Directory, vedere [integrazione delle identità locali con Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=854600).
+
+## <a name="requirements-for-on-premises-exchange-mailbox-user"></a>Requisiti per l'utente di cassette postali di Exchange locale
+
+Se gli utenti desiderano pianificare una riunione di teams tramite Exchange, è necessario verificare quanto segue:
+
+- Sia il delegato che il delegante devono avere una cassetta postale nel server Exchange.
+
+- L'opzione individuazione automatica (autod) V2 è necessaria per consentire al servizio teams di eseguire un'individuazione non autenticata della cassetta postale dell'utente. Autod V2 è supportato in Exchange 2013 CU19 +.
+
+- Il server di Exchange deve essere configurato con il server auth per EVOSTS. Questa operazione viene configurata automaticamente come parte della creazione guidata ibrida per Exchange (HWA).
+
+    Se non si vuole eseguire HWA, è possibile creare manualmente il server auth per EVO STS sul server Exchange seguendo queste istruzioni [configurare l'autenticazione OAuth tra le organizzazioni Exchange e Exchange Online](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help). Tuttavia, ti consigliamo di usare HWA.
+
+- Il server di Exchange deve avere un'applicazione partner configurata con un ID applicazione di **Skype for business online, 00000004-0000-0FF1-CE00-000000000000**. L'ID viene usato dal servizio pianificazione teams e da un account utente collegato con le proprietà seguenti:
+
+  - Nascosto nella Rubrica di Exchange. È consigliabile nasconderla dalla Rubrica perché si tratta di un account utente disabilitato.
+
+  - Assegnazione del ruolo di gestione di Exchange di **UserApplication**.
+
+Per completare l'integrazione, seguire i passaggi 1-3 in [che modo è possibile configurare l'autenticazione OAuth tra le organizzazioni di Exchange e Exchange Online locale?](https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help#how-do-you-configure-oauth-authentication-between-your-on-premises-exchange-and-exchange-online-organizations) Tieni presente che il passaggio 2 include l'assegnazione di ruolo per ArchiveApplication, che non è necessaria per la delega, ma è per l'archiviazione della chat online di SfB in una cassetta postale di Exchange.

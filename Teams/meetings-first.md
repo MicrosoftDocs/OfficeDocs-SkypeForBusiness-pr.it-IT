@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d8c88ba4ddb8b2e9af83e227388232e243dcabe1
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 4e2ca0b4088a7855da8cf2bc5196ecc9f2082475
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140295"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44637945"
 ---
 # <a name="meetings-first"></a>Riunioni al primo posto
 
@@ -78,9 +78,9 @@ Non è necessaria una [topologia ibrida di Skype for business](https://docs.micr
 
 Riunioni prima è supportato con qualsiasi versione di Skype for Business Server (e noto per l'utilizzo con il server Lync non più supportato). È supportata da qualsiasi client Skype for business supportato, ma le funzionalità più efficaci richiedono un client recente.
 
-Una volta soddisfatti questi requisiti (e non prima), gli utenti possono essere [concessi in licenza per Office 365 e teams](https://docs.microsoft.com/office365/enterprise/assign-licenses-to-user-accounts).
+Una volta soddisfatti questi requisiti (e non prima), gli utenti possono essere [concessi in licenza per Microsoft 365 o Office 365 e teams](https://docs.microsoft.com/office365/enterprise/assign-licenses-to-user-accounts).
 
-Per la prima esperienza delle riunioni ottimali, gli utenti devono essere abilitati per la creazione di gruppi di [Exchange Online](exchange-teams-interact.md), [SharePoint Online e OneDrive for Business](sharepoint-onedrive-interact.md)e Office 365. Riunioni prima è supportato per gli utenti la cui cassetta postale si trova in Exchange locale o che non hanno SharePoint Online o OneDrive for business o creazione di gruppi di Office 365. Tuttavia, la loro esperienza sarà meno completa. In particolare, per le organizzazioni che usano Exchange Server locale, potrebbe essere possibile (a seconda della versione di Exchange Server) alcune limitazioni per la creazione e la visualizzazione di riunioni dal client teams, nonché per quanto riguarda le funzionalità di conformità.
+Per la prima esperienza delle riunioni migliori, gli utenti devono essere abilitati per la creazione di gruppi di [Exchange Online](exchange-teams-interact.md), [SharePoint Online e OneDrive for Business](sharepoint-onedrive-interact.md)e Microsoft 365. Riunioni prima è supportato per gli utenti la cui cassetta postale si trova in Exchange locale o che non dispongono di SharePoint Online o OneDrive for business o creazione di gruppi di Microsoft 365. Tuttavia, la loro esperienza sarà meno completa. In particolare, per le organizzazioni che usano Exchange Server locale, potrebbe essere possibile (a seconda della versione di Exchange Server) alcune limitazioni per la creazione e la visualizzazione di riunioni dal client teams, nonché per quanto riguarda le funzionalità di conformità.
 
 Almeno gli utenti devono essere [concessi in licenza per i team](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide). Possono inoltre essere concessi in licenza per i servizi di [audioconferenza](set-up-audio-conferencing-in-teams.md), se necessario.
 

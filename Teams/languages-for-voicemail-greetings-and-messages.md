@@ -22,12 +22,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sulle lingue che è possibile impostare in Skype for business per i messaggi di sistema predefiniti e i saluti della segreteria telefonica.
-ms.openlocfilehash: e5158c7b313ad13abbd370550c38f54c8df04d29
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 0931ee7923b26fe5c81c442a895dbb1bfde8c601
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904521"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638765"
 ---
 # <a name="languages-for-voicemail-greetings-and-messages"></a>Lingua per i messaggi e i saluti della segreteria telefonica
 
@@ -80,7 +80,7 @@ Per cambiare la lingua usata da Skype for Business per i messaggi di saluto dell
 ## <a name="related-topics"></a>Argomenti correlati
 [Disponibilità di Audioconferenza e Piani per chiamate per paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
-[Ecco cosa offre il Sistema telefonico in Office 365](here-s-what-you-get-with-phone-system.md)
+[Vantaggi offerti dal Sistema telefonico](here-s-what-you-get-with-phone-system.md)
   
   
  

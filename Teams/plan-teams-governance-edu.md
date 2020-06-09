@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 79b6e33c6434a1242b7d30322aff77b62f1b42fd
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 631d41d15eb727a9b9919e56720238189159f669
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780215"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638916"
 ---
 # <a name="microsoft-education-governance-faq-for-admins"></a>Domande frequenti sulla governance di Microsoft Education per amministratori
 
@@ -35,7 +35,7 @@ Per evitare nomi inappropriati o fuorvianti oppure solo per ottenere una maggior
 
 -   **Criteri di denominazione suffisso-prefisso** È possibile usare i prefissi o i suffissi per definire la convenzione di denominazione dei team (gruppi), ad esempio **GRP_US_My Group_Engineering**. I prefissi e i suffissi possono essere stringhe fisse o attributi utente, ad esempio **[reparto]**, che vengono aggiunti al nome in base all'utente che sta creando il team.
 -   **Parole bloccate personalizzate** È possibile caricare un set di parole che gli utenti di un'organizzazione specifica sono bloccati dall'uso nei nomi dei team creati. Ad esempio, è possibile bloccare i termini **amministratore delegato**, **libro paga**e **risorse umane** da usare in nomi di team per i gruppi a cui non si applicano.
--   **Classificazione** È possibile creare classificazioni che gli utenti dell'organizzazione possono impostare quando creano un gruppo di Office 365. 
+-   **Classificazione** È possibile creare classificazioni che gli utenti dell'organizzazione possono impostare quando creano un gruppo Microsoft 365. 
 
 > [!IMPORTANT]
 > Usando i criteri di denominazione dei gruppi di Microsoft 365 è necessario usare le licenze di Azure Active Directory Premium P1 o le licenze di Azure AD Basic EDU per ogni utente univoco che fa parte di uno o più gruppi di Microsoft 365.
@@ -66,14 +66,14 @@ All'inizio di ogni semestre o trimestre è necessario un numero di nuovi team. P
 -   Puoi usare l'API Microsoft Graph (attualmente in versione beta) per creare, configurare, clonare ed archiviare team. Per altre informazioni, vedere [usare l'API Microsoft Graph per collaborare con Microsoft teams](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/teams_api_overview) .
 
 > [!TIP]
-> School Data Sync crea un gruppo di Office 365 per ogni classe sincronizzata e [Abilita l'appartenenza a gruppi nascosti](https://techcommunity.microsoft.com/t5/School-Data-Sync/HiddenGroupMembershipEnabled-SDS-setting/td-p/159945) in modo che solo gli insegnanti e gli studenti della classe possano vedere i membri della classe. Se si usa un processo diverso per creare gruppi di classi, usare il parametro HiddenGroupMembershipEnabled del cmdlet New-UnifiedGroup per soddisfare gli stessi requisiti di privacy.
+> School Data Sync crea un gruppo Microsoft 365 per ogni classe sincronizzata e [Abilita l'appartenenza a gruppi nascosti](https://techcommunity.microsoft.com/t5/School-Data-Sync/HiddenGroupMembershipEnabled-SDS-setting/td-p/159945) in modo che solo gli insegnanti e gli studenti della classe possano vedere i membri della classe. Se si usa un processo diverso per creare gruppi di classi, usare il parametro HiddenGroupMembershipEnabled del cmdlet New-UnifiedGroup per soddisfare gli stessi requisiti di privacy.
 
 ## <a name="how-do-i-deal-with-teams-when-the-semester-or-quarter-ends"></a>Come si gestiscono i team quando il semestre o il trimestre termina?
 
 Ti consigliamo di pensare prima di tutto a come gestire i dati dei team quando il semestre scolastico o il trimestre è terminato: se eliminarlo o mantenerlo disponibile per gli studenti anche dopo aver completato il corso. È consigliabile tener presente il calendario scolastico in modo che i criteri impostati non siano in conflitto con le festività. Per implementare la strategia, è possibile usare gli strumenti seguenti:
 
 -   **Criteri di conservazione:** Usare questo pulsante per eliminare tutti i dati antecedenti all'età specificata per verificare che i vecchi dati vengano rimossi dalle chat (per tutti o alcuni utenti) e canali. Puoi anche configurare teams per mantenere il contenuto in modo che non possa essere eliminato. Per altre informazioni, vedere [criteri di conservazione per Microsoft teams](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Retention-policies-for-Microsoft-Teams/ba-p/178011).
--   **Criteri di scadenza:** Configurare i team in scadenza dopo un determinato numero di giorni. Trenta giorni prima della scadenza, tutti i proprietari di un team ricevono una notifica che il loro team deve essere rinnovato, altrimenti verrà eliminato (anche se un amministratore può recuperare i team eliminati per altri 30 giorni). Questa impostazione è molto utile per verificare che i team inutilizzati siano sunsetted. Leggi altre informazioni sui [criteri di scadenza del gruppo di Office 365](https://support.office.com/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733).
+-   **Criteri di scadenza:** Configurare i team in scadenza dopo un determinato numero di giorni. Trenta giorni prima della scadenza, tutti i proprietari di un team ricevono una notifica che il loro team deve essere rinnovato, altrimenti verrà eliminato (anche se un amministratore può recuperare i team eliminati per altri 30 giorni). Questa impostazione è molto utile per verificare che i team inutilizzati siano sunsetted. Leggi altre informazioni sui [criteri di scadenza del gruppo Microsoft 365](https://support.office.com/article/office-365-group-expiration-policy-8d253fe5-0e09-4b3c-8b5e-f48def064733).
 
 -   **Team di archiviazione:** Questa impostazione inserisce i team in modalità di sola lettura. Possono comunque essere visualizzati e cercati, ma nessuno può aggiungere nuovi post. [Archiviare o ripristinare un team](https://support.office.com/article/archive-or-restore-a-team-dc161cfd-b328-440f-974b-5da5bd98b5a7) descrive in che modo i proprietari del team possono archiviare un team. I proprietari del team possono anche usare l' [API del grafico (beta)](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/teams_api_overview) per archiviare o ripristinare un team.
  

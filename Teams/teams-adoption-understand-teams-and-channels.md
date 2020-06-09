@@ -21,18 +21,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c10fcf4f93319a351304ded03f1b3889f8d5c7ca
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: 736ed72a4f4aacd41ed2db746976a9ff848aa74e
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350300"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638545"
 ---
 # <a name="understand-teams-and-channels-in-microsoft-teams"></a>Informazioni su team e canali in Microsoft Teams
 
 I concetti di team e canali sono fondamentali per un'implementazione sana e produttiva di Microsoft teams. 
 
-- Un team è una raccolta di persone, contenuti e strumenti che collaborano per produrre un risultato aziendale per la società. I team sono basati sui gruppi di Microsoft 365 e le modifiche apportate all'appartenenza al gruppo di Office 365 vengono sincronizzate con il team.
+- Un team è una raccolta di persone, contenuti e strumenti che collaborano per produrre un risultato aziendale per la società. I team sono basati su gruppi di Microsoft 365 e le modifiche apportate alla sincronizzazione dell'appartenenza al gruppo Microsoft 365 al team.
 
 - I canali sono gli spazi di collaborazione all'interno di un team in cui è stato eseguito il lavoro effettivo. 
 

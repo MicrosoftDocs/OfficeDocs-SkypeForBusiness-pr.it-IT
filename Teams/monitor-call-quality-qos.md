@@ -17,12 +17,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5ecf199f5027774684f5a626c416f789293926d7
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 2157ea9ec536e644440161fb321c7a60bb8d396e
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140055"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638615"
 ---
 # <a name="implement-qos-and-monitor-call-quality-in-microsoft-teams"></a>Implementare QoS e monitorare la qualità delle chiamate in Microsoft Teams
 
@@ -38,7 +38,7 @@ In teoria, è possibile implementare QoS nella rete interna durante la configura
 
 Per trovare e risolvere i problemi che si verificano durante l'operazione in corso, vengono usati i [**comandi per le chiamate e**](difference-between-call-analytics-and-call-quality-dashboard.md) per la qualità delle chiamate.  
 
-**Chiamata analitica** Mostra informazioni dettagliate sui dispositivi, le reti e la connettività relativi a ***chiamate e riunioni specifiche*** per ogni utente in un account Microsoft teams o Skype for business. Se si è un amministratore di Office 365, è possibile usare la funzione di analisi delle chiamate per risolvere i problemi di connessione e la qualità delle chiamate con una chiamata specifica. Questo può aiutare a identificare ed eliminare i problemi.
+**Chiamata analitica** Mostra informazioni dettagliate sui dispositivi, le reti e la connettività relativi a ***chiamate e riunioni specifiche*** per ogni utente in un account Microsoft teams o Skype for business. Se si è un amministratore di Microsoft 365 o Office 365, è possibile usare la funzione di analisi delle chiamate per risolvere i problemi di qualità delle chiamate e di connessione sperimentati in una chiamata specifica. Questo può aiutare a identificare ed eliminare i problemi.
 
 **Call Quality Dashboard (Call Quality Dashboard)** è progettato per aiutare gli amministratori e gli ingegneri di rete a ottimizzare la propria ***rete***, non analizzare e risolvere i problemi di una singola chiamata. Call Quality dashboard sposta lo stato attiva da utenti specifici per esaminare le informazioni aggregate per un'intera organizzazione. Questo può anche aiutare a identificare ed eliminare i problemi.
 
