@@ -18,22 +18,22 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e92cc870eca689206df0e497ebd174c364b55968
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: bc5cc912a90320b7d7221fcd99df702020c69eaf
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042803"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638355"
 ---
 # <a name="get-started-with-microsoft-teams"></a>Introduzione a Microsoft Teams
 
 > [!IMPORTANT]
-> Se Microsoft Teams è in fase di implementazione rapida in risposta a una richiesta di supporto del **lavoro da remoto** in aumento, usare questa Guida introduttiva per distribuire Teams in tutta l’organizzazione. Questa guida è valida anche se Teams è il primo carico di lavoro di Office 365.
+> Se Microsoft Teams è in fase di implementazione rapida in risposta a una richiesta di supporto del **lavoro da remoto** in aumento, usare questa Guida introduttiva per distribuire Teams in tutta l’organizzazione. Questa guida è valida anche se Teams è il primo carico di lavoro di Microsoft 365 o Office 365.
 
 Per iniziare rapidamente a usare Teams, è consigliabile creare due o tre team e canali per un gruppo selezionato di early adopter. Implementando inizialmente Teams su scala ridotta, si imparerà a usarlo e si acquisiranno informazioni preziose per la successiva distribuzione a livello di organizzazione. Per le piccole aziende, questa Guida introduttiva è tutto ciò che serve per distribuire Teams nell'intera organizzazione.
 
 
-Teams consente di formare rapidamente un team con persone interne ed esterne all'organizzazione, chattare con altri utenti per condurre conversazioni veloci e inclusive, condividere in modo sicuro e creare documenti in modalità condivisa ed eseguire iterazioni sui progetti. È possibile personalizzare Teams aggiungendo l'accesso rapido a note condivise, pagine Web e app. Usare riunioni e chiamate per collaborare in tempo reale ovunque ci si trovi. Teams semplificherà l'accesso ai servizi di Office 365 e alle app di terze parti, diventando il nuovo centro di gravità per le esigenze di collaborazione e di comunicazione. Incoraggiare gli early adopter a installare sia l'applicazione desktop che quella per dispositivi mobili per un'esperienza ottimale e un feedback più accurato.
+Teams consente di formare rapidamente un team con persone interne ed esterne all'organizzazione, chattare con altri utenti per condurre conversazioni veloci e inclusive, condividere in modo sicuro e creare documenti in modalità condivisa ed eseguire iterazioni sui progetti. È possibile personalizzare Teams aggiungendo l'accesso rapido a note condivise, pagine Web e app. Usare riunioni e chiamate per collaborare in tempo reale ovunque ci si trovi. Teams semplificherà l'accesso ai servizi di Microsoft 365 o Office 365 e alle app di terze parti, diventando il nuovo centro di gravità per le esigenze di collaborazione e di comunicazione. Incoraggiare gli early adopter a installare sia l'applicazione desktop che quella per dispositivi mobili per un'esperienza ottimale e un feedback più accurato.
 
 ![Screenshot che mostra le interfacce utente dei client desktop e per dispositivi mobili](media/get-started-microsoft-teams.png "Screenshot che mostra le interfacce utente dei client desktop e per dispositivi mobili di Teams" ) 
 
@@ -50,10 +50,10 @@ Se si è una piccola azienda o se **si sta implementando rapidamente Teams per s
 
 ## <a name="before-you-get-started"></a>Nozioni preliminari
 
-Ecco cosa fare per prepararsi all’implementazione di Teams, sia nel caso in cui Teams sia il primo carico di lavoro ("Teams First"), sia che si tratti di un carico di lavoro successivo in una distribuzione di Office 365 già esistente:
+Ecco cosa fare per prepararsi all'implementazione di Teams, sia nel caso in cui Teams sia il primo carico di lavoro ("Teams First"), sia che si tratti di un carico di lavoro successivo in una distribuzione di Microsoft 365 o Office 365 già esistente:
 
 - [Preparare la rete dell'organizzazione per Teams](prepare-network.md)
-    - È inclusa la configurazione del dominio di Office 365, SharePoint Online, Exchange Online e OneDrive for Business.
+    - È inclusa la configurazione del dominio di Microsoft 365 o Office 365, SharePoint Online, Exchange Online e OneDrive for Business.
 
 - Ottenere le licenze di Teams per tutti. Consultare [Piani di Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/compare-microsoft-teams-options) e [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
 
@@ -65,7 +65,7 @@ Ecco cosa fare per prepararsi all’implementazione di Teams, sia nel caso in cu
    - [Pianificare la connettività ibrida tra Skype for Business Server e Office 365](https://docs.microsoft.com/SkypeForBusiness/hybrid/plan-hybrid-connectivity)
    
    > [!NOTE]
-   > Se l'organizzazione esegue Skype for Business Server (o Lync Server) locale, è necessario [Configurare Azure AD Connect](https://docs.microsoft.com/SkypeForBusiness/hybrid/configure-azure-ad-connect) per sincronizzare la directory locale con Office 365. 
+   > Se l'organizzazione esegue Skype for Business Server (o Lync Server) locale, è necessario [Configurare Azure AD Connect](https://docs.microsoft.com/SkypeForBusiness/hybrid/configure-azure-ad-connect) per sincronizzare la directory locale con Microsoft 365 o Office 365. 
 
 
 ## <a name="next-steps"></a>Passaggi successivi

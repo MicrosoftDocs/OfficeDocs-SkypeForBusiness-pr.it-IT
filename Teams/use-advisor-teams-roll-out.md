@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Usare Advisor per Teams (anteprima pubblica) per pianificare e completare la distribuzione di Microsoft Teams.
-ms.openlocfilehash: 79273c0c0d96bf5f7c52399310bffce433928e2b
-ms.sourcegitcommit: c3f44fccdbd9178d30b52bb0db6f6d31a6dd174b
+ms.openlocfilehash: bd893faa9a166b238a88f3865527bc38ef9bc6d3
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44139199"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44637175"
 ---
 # <a name="use-advisor-for-teams-to-help-you-roll-out-microsoft-teams"></a>Usare Advisor per Teams per distribuire Microsoft Teams
 
@@ -78,7 +78,7 @@ Durante la fase di anteprima pubblica di Advisor per Teams, vengono forniti i du
 Ogni piano include una valutazione di conformità del tenant che è possibile usare per identificare rapidamente gli aspetti dell'ambiente che è necessario correggere prima di implementare Teams. Nelle valutazioni sono inclusi i prerequisiti e le procedure consigliate. Ogni test di valutazione avrà un segno di spunta verde o un triangolo di avviso arancione. 
 
 - <sub><img src="media/use-advisor-teams-roll-out-image2.png" alt="Green check mark"/></img></sub>Un segno di spunta verde indica che il tenant ha superato il test specifico. 
-- <sub><img src="media/use-advisor-teams-roll-out-image1.png" alt="Yellow alert mark"/></img></sub>Un triangolo di avviso arancione indica che è consigliabile eseguire azioni di follow-up per determinare se è necessaria un'azione, ad esempio un criterio di scadenza del Gruppo di Office 365 è consigliabile ma non obbligatorio.
+- <sub><img src="media/use-advisor-teams-roll-out-image1.png" alt="Yellow alert mark"/></img></sub>Un triangolo di avviso arancione indica che è consigliabile eseguire azioni di follow-up per determinare se è necessaria un'azione, ad esempio un criterio di scadenza del gruppo di Microsoft 365 è consigliabile ma non obbligatorio.
 
 > [!IMPORTANT]
 > Dopo che un utente con un ruolo con privilegi di amministratore avvia Advisor per Teams, tutte le valutazioni vengono eseguite in background. Se si aggiorna o corregge un elemento, è possibile che non si rifletta nelle valutazioni fino a 24 ore. Si tratta di una situazione temporanea: non appena Advisor per Teams non sarà più in anteprima pubblica ma disponibile a livello generale, le valutazioni verranno aggiornate in tempo reale.
@@ -102,8 +102,8 @@ Oltre ai [test di valutazione per i carichi di lavoro](#assessment-tests-for-all
 
 |Test di valutazione  |Cosa indica  |
 |---------|---------|
-|Criteri di denominazione del Gruppo di Office 365 configurati     |Se sono stati configurati gli standard di denominazione per i Gruppi di Microsoft 365. I criteri di denominazione per i Gruppi di Microsoft 365 consentono all'organizzazione di applicare una strategia di denominazione coerente con i team creati dall'utente e si applica anche ad altri carichi di lavoro dei Gruppi, tra cui Outlook, SharePoint, Planner e Yammer. Questo test esegue una query in Azure AD tramite Microsoft Graph per verificare l'esistenza di criteri di denominazione validi per i Gruppi di Microsoft 365. Per altre informazioni, leggere [Criteri di denominazione dei Gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/groups-naming-policy).    |
-|Criteri di scadenza dei gruppi di Office 365 configurati     |Se i criteri di scadenza di un Gruppo sono stati definiti per i Gruppi di Microsoft 365. Questo consente all'organizzazione di rimuovere automaticamente Teams inattivi. Per impostazione predefinita l'opzione è disattivata. Questo test esegue una query in Azure AD tramite Microsoft Graph e indica se un valore è stato modificato rispetto all'impostazione predefinita. Per altre informazioni, leggere [Criteri di scadenza dei Gruppi di Office 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups-expiration-policy).    |
+|Criteri di denominazione dei gruppi di Microsoft 365 configurati     |Se sono stati configurati gli standard di denominazione per i Gruppi di Microsoft 365. I criteri di denominazione per i Gruppi di Microsoft 365 consentono all'organizzazione di applicare una strategia di denominazione coerente con i team creati dall'utente e si applica anche ad altri carichi di lavoro dei Gruppi, tra cui Outlook, SharePoint, Planner e Yammer. Questo test esegue una query in Azure AD tramite Microsoft Graph per verificare l'esistenza di criteri di denominazione validi per i Gruppi di Microsoft 365. Per altre informazioni, leggere [Criteri di denominazione dei gruppi di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/groups-naming-policy).    |
+|Criteri di scadenza dei gruppi di Microsoft 365 configurati     |Se i criteri di scadenza di un Gruppo sono stati definiti per i Gruppi di Microsoft 365. Questo consente all'organizzazione di rimuovere automaticamente Teams inattivi. Per impostazione predefinita l'opzione è disattivata. Questo test esegue una query in Azure AD tramite Microsoft Graph e indica se un valore è stato modificato rispetto all'impostazione predefinita. Per altre informazioni, leggere [Criteri di scadenza dei gruppi di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups-expiration-policy).    |
 
 ### <a name="assessments-for-meetings-and-conferencing"></a>Valutazioni per messaggistica istantanea, riunioni e conferenze
 

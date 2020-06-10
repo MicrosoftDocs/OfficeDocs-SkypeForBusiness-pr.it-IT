@@ -21,17 +21,17 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 74764b2a785835b9dfb65bedf3eb67db0e1109af
-ms.sourcegitcommit: 86b0956680b867b8bedb2e969220b8006829ee53
+ms.openlocfilehash: 761f94e34afacb487ac9ce85f5da36d4ca6b866a
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44410421"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44637915"
 ---
 # <a name="how-to-roll-out-microsoft-teams"></a>Come implementare Microsoft Teams
 
 ## <a name="start-here"></a>Iniziare da qui
-Sia per le piccole imprese sia per le società multi-nazionali, il primo passo per l'implementazione di Teams è andare alla pagina [Introduzione](get-started-with-teams-quick-start.md). Viene illustrata la procedura per eseguire la distribuzione di Teams su scala ridotta, che per le piccole imprese potrebbe già essere sufficiente, o se si sta implementando rapidamente Teams come primo carico di lavoro di Office 365 per supportare i **lavoratori remoti**. Se l'organizzazione è più grande, usare [Introduzione](get-started-with-teams-quick-start.md) per eseguire un'implementazione pilota di Teams per un gruppo di early adopter, in modo da poter imparare a usare Teams e iniziare a pianificare la distribuzione a livello di organizzazione. 
+Sia per le piccole imprese sia per le società multi-nazionali, il primo passo per l'implementazione di Teams è andare alla pagina [Introduzione](get-started-with-teams-quick-start.md). Viene illustrata la procedura per eseguire l'implementazione di Teams su scala ridotta, che per le piccole imprese potrebbe già essere sufficiente, o se si sta implementando rapidamente Teams come primo carico di lavoro di Microsoft 365 o Office 365 per supportare i **lavoratori remoti**. Se l'organizzazione è più grande, usare [Introduzione](get-started-with-teams-quick-start.md) per eseguire un'implementazione pilota di Teams per un gruppo di early adopter, in modo da poter imparare a usare Teams e iniziare a pianificare la distribuzione a livello di organizzazione. 
 
 ## <a name="recommended-path-to-teams"></a>Percorso suggerito per Teams
 
@@ -57,7 +57,7 @@ Se si arriva a Teams da Skype for Business (online o locale) oppure se è necess
 |  |Profilo dell’organizzazione|Linee guida  |
 |---------|---------|---------|
 |<IMG src="https://docs.microsoft.com/office/media/icons/migration-teams.svg" alt="Migration arrow symbol" height="50" width="50">|Attualmente uso Skype for Business Online e sono pronto per passare a Teams. |Passare a [Esegui l'aggiornamento a Teams](upgrade-start-here.md).        |
-|<IMG SRC="https://docs.microsoft.com/office/media/icons/hybrid-teams.svg" alt="Hybrid symbol" height="50" width="50">|La mia organizzazione usa Skype for Business Server e voglio implementare Teams. |Per un’implementazione completa di Teams è prima necessario configurare la connettività ibrida tra l'ambiente locale e Microsoft 365. Per iniziare, leggere [Pianificare la connettività ibrida tra Skype for Business Server e Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity). <br><br>È anche consigliabile rivedere [Esegui l'aggiornamento a Teams](upgrade-start-here.md).   |
+|<IMG SRC="https://docs.microsoft.com/office/media/icons/hybrid-teams.svg" alt="Hybrid symbol" height="50" width="50">|La mia organizzazione usa Skype for Business Server e voglio implementare Teams. |Per un’implementazione completa di Teams è prima necessario configurare la connettività ibrida tra l'ambiente locale e Microsoft 365. Per iniziare, leggere [Pianificare la connettività ibrida tra Skype for Business Server e Microsoft 365 o Office 365](https://docs.microsoft.com/skypeforbusiness/hybrid/plan-hybrid-connectivity). <br><br>È anche consigliabile rivedere [Esegui l'aggiornamento a Teams](upgrade-start-here.md).   |
 |<IMG src="https://docs.microsoft.com/office/media/icons/on-premises-teams.svg" alt="On premises symbol" height="50" width="50">|Non ho Skype for Business Server, ma ho una soluzione PSTN locale. Voglio distribuire Teams, mantenendo però la soluzione PSTN locale. |Implementare teams seguendo il [percorso suggerito](#recommended-path-to-teams) indicato sopra.<br><br>Quindi leggere [Pianificare il routing diretto](direct-routing-plan.md) per altre informazioni sull'uso del routing diretto del sistema telefonico per collegare la soluzione PSTN locale a Teams.|
 |
 
