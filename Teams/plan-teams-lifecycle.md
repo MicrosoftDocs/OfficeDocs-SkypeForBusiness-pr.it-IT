@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2ad4592799efef11b7d09d564af5217dd9cdd550
-ms.sourcegitcommit: 69ff557c79d6b1a3d1089fe5c8f5c8ed8ff7431e
+ms.openlocfilehash: eac771d87003ab00adbe3c99adb1193c4ff12779
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43951271"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638845"
 ---
 # <a name="plan-for-lifecycle-management-in-teams"></a>Pianificare la gestione del ciclo di vita in Teams
 
@@ -41,7 +41,7 @@ Tutti i concetti e le definizioni seguenti hanno effetto sulle decisioni da assu
 
 **Team**
 
-Un _team_ è un insieme di persone, contenuti e strumenti che facilitano la collaborazione. Per ogni team si definiscono i membri e le autorizzazioni e i criteri ad essi applicabili. I team sono basati sui gruppi di Microsoft 365 e le modifiche apportate all'appartenenza al gruppo di Office 365 vengono sincronizzate con il team. Come per gli altri gruppi di Microsoft 365, il provisioning del team viene eseguito automaticamente con una cassetta postale di Exchange, un sito di SharePoint, un blocco appunti di OneNote e altre risorse all'interno di Office 365. [Altre informazioni sui Gruppi di Microsoft 365](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+Un _team_ è un insieme di persone, contenuti e strumenti che facilitano la collaborazione. Per ogni team si definiscono i membri e le autorizzazioni e i criteri ad essi applicabili. I team sono basati sui gruppi di Microsoft 365 e le modifiche apportate all'appartenenza al gruppo di Microsoft 365 vengono sincronizzate con il team. Come per gli altri gruppi di Microsoft 365, il provisioning del team viene eseguito automaticamente con una cassetta postale di Exchange, un sito di SharePoint, un blocco appunti di OneNote e altre risorse all'interno di Office 365. [Altre informazioni sui Gruppi di Microsoft 365](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
 
 **Canali**
 
@@ -141,7 +141,7 @@ I team possono avere origine in vari modi, tra cui:
 
 -   Creare il team da zero. Aggiungere membri usando singoli nomi utente o alias di posta elettronica oppure espandere una lista di distribuzione.
 -   Creare il team da un team esistente e usarne la configurazione dei canali e qualsiasi configurazione delle app come modello. Se si vuole, è anche possibile usarne l'elenco dei membri.
--   Aggiungere un team a un gruppo di Office 365 esistente; in questo modo si consente al team l'accesso alla cassetta postale e al sito di SharePoint del gruppo.
+-   Aggiungere un team a un gruppo di Microsoft 365 esistente; in questo modo si consente al team l'accesso alla cassetta postale e al sito di SharePoint del gruppo.
 -   Usare le API per Teams di Microsoft Graph o i cmdlet di PowerShell per creare team. Le API possono creare team a livello di programmazione in base agli attributi della Rubrica globale, ad esempio area geografica o reparto, o ai processi aziendali, ad esempio mandati dei clienti o registri di classe.
 
 Seguire questi collegamenti per ottenere altre informazioni sull'organizzazione dei team:

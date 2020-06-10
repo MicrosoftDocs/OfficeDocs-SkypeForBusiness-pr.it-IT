@@ -17,12 +17,12 @@ localization_priority: Priority
 f1.keywords:
 - NOCSH
 description: Indicazioni complete per effettuare la migrazione da Slack a Microsoft Teams.
-ms.openlocfilehash: 8e6b7383176713a34f5a00ca3914e42ac50f9834
-ms.sourcegitcommit: 5606f908c6efeb67713f5986b1d8575a896bb5bd
+ms.openlocfilehash: ca104baf5baebaa0e44c2202794c1b8ed6862633
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "43506877"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638645"
 ---
 # <a name="migrate-from-slack-to-microsoft-teams"></a>Effettuare la migrazione da Slack a Microsoft Teams
 
@@ -79,12 +79,12 @@ Per esportare i messaggi diretti, controllare strumenti come Esporta nell'App St
 
 Le app in Slack sono come le app in Teams. Una volta ottenuto un elenco di app e delle relative configurazioni nell'area di lavoro, è possibile verificare nell'App Store di Teams se sono disponibili per Teams*. 
 
-Accedere a <your Slack workspace>.slack.com/apps/manage per ottenere un elenco di app e integrazioni personalizzate. In questa pagina viene riportato anche il numero di configurazioni utilizzate da ciascuna app. Le integrazioni personalizzate variano in base alla capacità di migrazione. Se si tratta di un hook Web, in genere è possibile inviarlo a un connettore di Office 365 per spostare il flusso di lavoro in Teams. Valutare bot e altre app caso per caso, per pianificarne il passaggio a Teams.
+Accedere a <your Slack workspace>.slack.com/apps/manage per ottenere un elenco di app e integrazioni personalizzate. In questa pagina viene riportato anche il numero di configurazioni utilizzate da ciascuna app. Le integrazioni personalizzate variano in base alla capacità di migrazione. Se si tratta di un hook Web, in genere è possibile inviarlo a un connettore di Microsoft 365 o Office 365 per spostare il flusso di lavoro in Teams. Valutare bot e altre app caso per caso, per pianificarne il passaggio a Teams.
 
 \*Se l'amministratore ha limitato l'utilizzo delle app, è possibile che l'elenco completo delle app disponibili non sia visibile.
 
 ### <a name="users"></a>Utenti
-Gli schemi di identità utilizzati in Slack potrebbero non essere direttamente corrispondenti a Office 365. Ad esempio, gli indirizzi e-mail degli utenti di Slack potrebbero non essere associati agli account aziendali o dell'istituto di istruzione di Office 365. Per iniziare a pianificare l'implementazione di Teams, è consigliabile creare una mappa di ID utente.
+Gli schemi di identità utilizzati in Slack potrebbero non essere direttamente corrispondenti a Microsoft 365 o Office 365. Ad esempio, gli indirizzi e-mail degli utenti di Slack potrebbero non essere associati agli account aziendali o dell'istituto di istruzione di Microsoft 365 o Office 365. Per iniziare a pianificare l'implementazione di Teams, è consigliabile creare una mappa di ID utente.
 
 Se si dispone di un piano di servizio di Slack a pagamento, è possibile passare a *<your Slack workspace>.slack.com/admin/stats#members* per ottenere informazioni dettagliate sui membri, come l'indirizzo e-mail e il tipo di account per ogni utente, ad esempio guest singolo o multicanale.
 
@@ -335,7 +335,7 @@ Per individuare le app da aggiungere a Teams, è importante sapere come viene ut
 
 In molti casi, le app ricevono dati in base agli eventi da un servizio esterno, ad esempio un sistema di monitoraggio, e inseriscono un messaggio in Slack. È possibile ottenere lo stesso risultato utilizzando un connettore di Microsoft 365, che consente di inviare messaggi in Teams in base agli eventi.
 
-Di seguito sono riportati alcuni esempi di soluzioni di Slack in cui è stato utilizzato un connettore di Office 365 in Teams per l'integrazione.
+Di seguito sono riportati alcuni esempi di soluzioni di Slack in cui è stato utilizzato un connettore di Microsoft 365 in Teams per l'integrazione.
 - Ansible
   - È possibile inviare avvisi a Teams tramite il [webhook di Ansible](https://docs.ansible.com/ansible-tower/latest/html/userguide/notifications.html#webhook)
 - New Relic

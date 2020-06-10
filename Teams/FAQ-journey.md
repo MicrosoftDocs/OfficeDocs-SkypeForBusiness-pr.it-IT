@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 96354e7b1a8283ebf66648c1bb2987119fe5bdc0
-ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
+ms.openlocfilehash: f61da62118229cfa16db7a476c96e9d0bdf4a65a
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44522669"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44637045"
 ---
 # <a name="faq--upgrading-from-skype-for-business-to-microsoft-teams"></a>Domande frequenti - Aggiornamento da Skype for Business a Microsoft Teams
 
@@ -40,7 +40,7 @@ ms.locfileid: "44522669"
 
 ### <a name="why-is-microsoft-teams-replacing-skype-for-business-online"></a>Perché Microsoft Teams sta sostituendo Skype for Business Online?
 
-Microsoft Teams espande le capacità di Skype for Business Online raggruppando file, chat e app in un'app integrata, con funzionalità che consentono alle organizzazioni di muoversi più velocemente e collaborare in modo più efficiente. Grazie al più ampio set di esperienze offerte in Teams, quest'ultimo sostituisce Skype for Business come client di comunicazione di base per Office 365.
+Microsoft Teams espande le capacità di Skype for Business Online raggruppando file, chat e app in un'app integrata, con funzionalità che consentono alle organizzazioni di muoversi più velocemente e collaborare in modo più efficiente. Grazie al più ampio set di esperienze offerte in Teams, quest'ultimo sostituisce Skype for Business come client di comunicazione di base per Microsoft 365 o Office 365.
 
 ### <a name="when-is-the-retirement-of-skype-for-business-online"></a>Quando verrà ritirato Skype for Business Online?
 
@@ -66,7 +66,7 @@ A partire dal 1° settembre 2019, tutti i nuovi clienti di Office 365 verranno t
 
 ### <a name="what-do-you-recommend-for-customers-who-are-currently-in-the-process-of-deploying--or-planning-to-deploy--skype-for-business-in-office-365"></a>Cosa consigliate ai clienti che stanno attualmente distribuendo o stanno pianificando la distribuzione di Skype for Business in Office 365?
 
-I clienti che stanno distribuendo Skype for Business Online possono continuare a farlo. Invitiamo tutti i nuovi clienti di Office 365 a iniziare a usare Teams, indipendentemente o in parallelo con Skype for Business, e a determinare il percorso (coesistenza o solo Teams) e i tempi più idonei alle esigenze dell'azienda. Indipendentemente dal possesso di Skype for Business Online, i clienti dovranno passare a Teams prima della data di ritiro di Skype for Business Online.
+I clienti che stanno distribuendo Skype for Business Online possono continuare a farlo. Invitiamo tutti i nuovi clienti di Microsoft 365 e Office 365 a iniziare a usare Teams, indipendentemente o in parallelo con Skype for Business, e a determinare il percorso (coesistenza o solo Teams) e i tempi più idonei alle esigenze dell'azienda. Indipendentemente dal possesso di Skype for Business Online, i clienti dovranno passare a Teams prima della data di ritiro di Skype for Business Online.
 
 ### <a name="what-support-do-you-offer-customers-who-want-to-move-to-teams-especially-those-who-have-made-significant-investments-in-skype-for-business-online"></a>Quale supporto offrite ai clienti che vogliono passare a Teams, specialmente a coloro che hanno effettuato importanti investimenti in Skype for Business Online?
 
@@ -74,7 +74,7 @@ Invitiamo tutti gli utenti di Skype for Business a iniziare a distribuire Teams 
 
 ### <a name="what-does-this-mean-from-a-licensing-perspective-how-will-customers-pay-for-intelligent-communications-services-in-teams"></a>Quali sono le implicazioni in termini di licenze? In che modo i clienti pagheranno i servizi di comunicazioni intelligenti in Teams?
 
-Teams è disponibile nelle famiglie di prodotti Office 365. Le capacità che oggi sono carichi di lavoro Premium in Skype for Business Online continueranno a essere carichi di lavoro Premium in Teams. Gli investimenti esistenti in materia di licenze effettuati dai clienti vengono mantenuti in Teams. Ad esempio, se un cliente ha acquistato Audioconferenza come prodotto autonomo o come parte di E5 con Skype for Business, Audioconferenza sarà abilitato in Teams così com'è disponibile oggi.
+Teams è disponibile nelle famiglie di prodotti Microsoft 365 e Office 365. Le capacità che oggi sono carichi di lavoro Premium in Skype for Business Online continueranno a essere carichi di lavoro Premium in Teams. Gli investimenti esistenti in materia di licenze effettuati dai clienti vengono mantenuti in Teams. Ad esempio, se un cliente ha acquistato Audioconferenza come prodotto autonomo o come parte di E5 con Skype for Business, Audioconferenza sarà abilitato in Teams così com'è disponibile oggi.
 
 ### <a name="is-microsoft-planning-scheduled-upgrades"></a>Microsoft sta pianificando aggiornamenti programmati?
 
@@ -172,7 +172,7 @@ Sì, Teams è disponibile nel Government Community Cloud (GCC) degli Stati Uniti
 
 ### <a name="what-is-the-plan-for-microsofts-online-voice-capabilities"></a>Qual è il piano per le funzionalità voce online di Microsoft?
 
-Il cuore della nostra soluzione di telefonia è Sistema telefonico, attualmente disponibile. I clienti possono anche aggiungere un piano per chiamate di Microsoft, che offre il supporto completo per le chiamate, tra cui acquisizione e assegnazione di numeri direttamente in Office 365. I clienti che vogliono mantenere le linee telefoniche dell'impianto di telecomunicazioni esistente possono usare Instradamento diretto, incluso in Sistema telefonico. È possibile combinare le funzionalità in base alle esigenze dell'organizzazione per implementare una soluzione di telefonia completa.
+Il cuore della nostra soluzione di telefonia è Sistema telefonico, attualmente disponibile. I clienti possono anche aggiungere un piano per chiamate di Microsoft, che offre il supporto completo per le chiamate, tra cui acquisizione e assegnazione di numeri direttamente in Microsoft 365 o Office 365. I clienti che vogliono mantenere le linee telefoniche dell'impianto di telecomunicazioni esistente possono usare Instradamento diretto, incluso in Sistema telefonico. È possibile combinare le funzionalità in base alle esigenze dell'organizzazione per implementare una soluzione di telefonia completa.
 
 ### <a name="what-is-the-guidance-for-customers-already-deployed-on-phone-system-cloud-pbx-in-skype-for-business-online"></a>Quali sono le indicazioni per i clienti già distribuiti in Sistema telefonico (Cloud PBX) in Skype for Business Online?
 
@@ -190,7 +190,7 @@ Non ci saranno variazioni nella copertura di Audioconferenza come conseguenza de
 
 ### <a name="are-third-party-audio-conferencing-providers-acp-supported-in-teams"></a>I provider di servizi di audioconferenza di terze parti sono supportati in Teams?
 
-Il supporto di provider di servizi di audioconferenza di terze parti in Teams non è previsto. Crediamo che la migliore esperienza di audioconferenza per i clienti che usano Teams e Skype for Business sarà usare i servizi di audioconferenza in Office 365. I clienti che hanno bisogno del supporto di provider di servizi di audioconferenza nelle riunioni di Skype for Business possono continuare a usare il client di Skype for Business per partecipare alle riunioni di Skype for Business. Le riunioni programmate in Teams dovranno usare i servizi di audioconferenza di Office 365.
+Il supporto di provider di servizi di audioconferenza di terze parti in Teams non è previsto. Crediamo che la migliore esperienza di audioconferenza per i clienti che usano Teams e Skype for Business sarà usare i servizi di audioconferenza. I clienti che hanno bisogno del supporto di provider di servizi di audioconferenza nelle riunioni di Skype for Business possono continuare a usare il client di Skype for Business per partecipare alle riunioni di Skype for Business. Le riunioni programmate in Teams dovranno usare i servizi di audioconferenza di Microsoft 365 o Office 365.
 
 Il supporto per l'integrazione di provider di servizi di audioconferenza di terze parti in Skype for Business Online è stato esteso al 31 luglio 2021, con un supporto limitato per i tenant attivi rimanenti volto a concedere più tempo per la transizione.  Si tratta di un aggiornamento rispetto alle tempistiche annunciate nell'aprile 2018.
 

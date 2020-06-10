@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c747d68b53e428678fd07cd690fa7575262d4ae6
-ms.sourcegitcommit: 2d44f1a673316daf0aca3149571b24a63ca72772
+ms.openlocfilehash: 3411d3a163e9da5e58fa258371d02ca878868adb
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227560"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638385"
 ---
 # <a name="how-to-provision-teams-at-scale-for-firstline-workers"></a>Come eseguire il provisioning di Microsoft Teams su vasta scala per gli operatori sul campo
 
@@ -315,7 +315,7 @@ Per gestire questi utenti su vasta scala in modo più efficace, è necessario cr
 
 ### <a name="assign-licensing-to-users-via-group-based-licensing"></a>Assegnare licenze agli utenti tramite le licenze basate sui gruppi
 
-I servizi cloud Microsoft a pagamento, come Office 365, Enterprise Mobility + Security, Dynamics 365 e altri prodotti simili, richiedono apposite licenze. Queste licenze vengono assegnate a ogni utente che deve avere accesso a questi servizi. Per gestire le licenze, gli amministratori usano i portali di gestione (Office o Azure) e i cmdlet di PowerShell. Azure Active Directory (Azure AD) è l'infrastruttura sottostante che supporta la gestione delle identità per tutti i servizi cloud Microsoft. Azure AD archivia le informazioni sugli stati di assegnazione delle licenze per gli utenti.
+I servizi cloud Microsoft a pagamento, come Microsoft 365, Office 365, Enterprise Mobility + Security, Dynamics 365 e altri prodotti simili, richiedono apposite licenze. Queste licenze vengono assegnate a ogni utente che deve avere accesso a questi servizi. Per gestire le licenze, gli amministratori usano i portali di gestione (Office o Azure) e i cmdlet di PowerShell. Azure Active Directory (Azure AD) è l'infrastruttura sottostante che supporta la gestione delle identità per tutti i servizi cloud Microsoft. Azure AD archivia le informazioni sugli stati di assegnazione delle licenze per gli utenti.
 
 Per consentire la gestione delle licenze su vasta scala, Azure AD ora include le licenze basate sui gruppi ed è per questo motivo che sono stati creati i gruppi di sicurezza più indietro in questo articolo. È possibile assegnare una o più licenze di prodotto a un gruppo. Azure AD assicura che le licenze vengano assegnate a tutti i membri del gruppo. A tutti i nuovi membri che entrano a far parte del gruppo vengono assegnate le licenze appropriate. Le licenze vengono rimosse dai membri che lasciano il gruppo. Questa gestione delle licenze elimina la necessità di automatizzare la gestione delle licenze tramite PowerShell per riflettere le modifiche nella struttura dell'organizzazione e del reparto o a livello di singoli utenti.
 
