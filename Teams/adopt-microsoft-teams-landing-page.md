@@ -21,14 +21,17 @@ f1.keywords:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 76086d7e34d56a9bab59c7ca10ed40472aecd7a1
-ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
+ms.openlocfilehash: ac9ab0b53d60ad34f229b2e39e01daab46378611
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44610245"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44665928"
 ---
 # <a name="adopt-microsoft-teams"></a>Adottare Microsoft Teams
+
+> [!NOTE]
+> Per una panoramica sulla transizione all'apprendimento remoto e alle risorse utili per iniziare, vedere la [**Home page di apprendimento remoto**](https://www.microsoft.com/education/remote-learning).
 
 Se si è una piccola impresa o se si vogliono distribuire Team che iniziano con la chat, i team & i canali e le riunioni, usare le [istruzioni introduttive](get-started-with-teams-quick-start.md)per iniziare, che è progettato per velocizzare l'esecuzione. Se si è un'organizzazione di grandi dimensioni con una configurazione ibrida o Skype for business locale o se si vogliono implementare le funzionalità vocali, ad esempio Microsoft 365 o Office 365 o i piani di chiamata o il sistema telefonico, è possibile iniziare a usare le istruzioni introduttive, ma è necessario disporre delle indicazioni aggiuntive seguenti, in **indicazioni di adozione più approfondite**.
 
