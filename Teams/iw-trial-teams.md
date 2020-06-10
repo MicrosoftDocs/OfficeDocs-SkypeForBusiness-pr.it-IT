@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 68d8ff88e34fac291560b414c18055a12d838a91
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: da8f257e6e5d3a3adaaa8e1412187de9cbf8dbe3
+ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042793"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44638775"
 ---
 <a name="manage-the-microsoft-teams-commercial-cloud-trial-offer"></a>Gestire l'offerta Microsoft Teams Commercial Cloud Trial
 =======================================================
@@ -55,7 +55,7 @@ La versione di valutazione mette a disposizione un abbonamento di prova di 1 ann
 
 Gli utenti devono essere abilitati all'iscrizione per app e versioni di valutazione (nell'interfaccia di amministrazione di Microsoft 365). Per altre informazioni, vedere [Gestire la versione di valutazione](#manage-the-trial) più avanti in questo articolo. 
 
-Gli utenti che non hanno una licenza di Office 365 che include Teams possono avvalersi dell'offerta Microsoft Teams Commercial Cloud Trial. Ad esempio, se un utente ha Microsoft 365 Apps for business (che non include Teams), è idoneo per la versione di valutazione.
+Gli utenti che non hanno una licenza di Microsoft 365 o Office 365 che include Teams possono avvalersi dell'offerta Microsoft Teams Commercial Cloud Trial. Ad esempio, se un utente ha Microsoft 365 Apps for business (che non include Teams), è idoneo per la versione di valutazione.
 
 ## <a name="who-is-not-eligible"></a>Chi non è idoneo
 
@@ -148,6 +148,6 @@ Per altre informazioni, vedere [Descrizione del servizio Microsoft Teams](https:
 
 A partire dal 22 aprile 2019, gli utenti possono iniziare a richiedere la licenza Microsoft Teams Commercial Cloud Trial più recente. Se si vuole eseguire la migrazione degli utenti dell'organizzazione dalla licenza di valutazione legacy a quella più recente, è necessario prima di tutto rimuovere la licenza di valutazione di Microsoft Teams precedente da ciascun utente. Dopo la rimozione della licenza legacy, tutti gli utenti interessati possono richiedere la licenza Microsoft Teams Commercial Cloud Trial aggiornata.
 
-- Se si vuole rimuovere questa licenza tramite PowerShell, vedere [Rimuovere le licenze dagli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell)
+- Se si vuole rimuovere questa licenza tramite PowerShell, vedere [Rimuovere le licenze dagli account utente con Microsoft 365 o Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell)
 
-- Se si vuole rimuovere questa licenza tramite il portale di amministrazione, vedere la pagina dedicata alla [rimozione delle licenze per gli utenti di Office 365 per le aziende](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide)
+- Se si vuole rimuovere questa licenza tramite il portale di amministrazione, vedere le istruzioni per [rimuovere le licenze dagli utenti](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide)

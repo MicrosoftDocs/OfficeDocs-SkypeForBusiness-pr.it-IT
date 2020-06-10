@@ -17,12 +17,12 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d2a158f8b43b4cf58e2c5c6c4a4248488f41973d
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 37bd749e44c2020d35a927491553662c74bff01f
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780285"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44610975"
 ---
 # <a name="check-your-internet-connection-for-business-voice"></a>Controllare la connessione Internet per Business Voice
 
@@ -60,7 +60,7 @@ Prima di iniziare, è necessario disporre delle informazioni seguenti:
 
 Eseguire la procedura seguente:
 
-1. Aprire un browser e passare a https://admin.teams.microsoft.com. Accedere con un account dotato di autorizzazioni di amministratore globale. L'account usato per iscriversi a Office 365 dispone di queste autorizzazioni.
+1. Aprire un browser e passare a https://admin.teams.microsoft.com. Accedere con un account dotato di autorizzazioni di amministratore globale. L'account usato per iscriversi a Microsoft 365 o Office 365 dispone di queste autorizzazioni.
 2. Aprire **Pianificazione** e selezionare **Network Planner**.
 3. In **Piani di rete** selezionare **Aggiungi**. Immettere un nome per il piano e quindi selezionare **Applica**. Il piano di rete dovrebbe essere simile a questo:
 
@@ -77,13 +77,13 @@ Eseguire la procedura seguente:
 
 ### <a name="find-your-minimum-internet-connection-speed"></a>Trovare la velocità minima della connessione Internet
 
-Dopo aver selezionato **Genera report**, Office 365 crea un report simile al seguente:
+Dopo aver selezionato **Genera report**, Microsoft 365 o Office 365 crea un report simile al seguente:
 
 ![Dettagli sul report di Network Planner](../media/network-planner-report.png)
 
 Il numero evidenziato indica la quantità di connessione Internet che Teams e VoIP aziendale useranno. Si consiglia di non superare il 30% della velocità totale della connessione Internet. Ad esempio, se la connessione Internet è di 60 Mbps, Teams e Business Voice non devono usare più di 18 Mbps.
 
-Usare questa equazione per determinare la velocità della connessione Internet minima: *\<numero evidenziato> / 0,3*. Con il numero evidenziato nell'immagine precedente, il calcolo è il seguente: *4,6875 / 0,3 = 15,6*. In questo caso, la velocità della connessione Internet deve essere di almeno 15,6 Mbps.
+Usare questa equazione per determinare la velocità della connessione Internet minima: *\<highlighted number> / 0,3*. Con il numero evidenziato nell'immagine precedente, il calcolo è il seguente: *4,6875 / 0,3 = 15,6*. In questo caso, la velocità della connessione Internet deve essere di almeno 15,6 Mbps.
 
 Se Teams e Business Voice usano più del 30% della velocità totale della connessione Internet, il numero evidenziato verrà visualizzato in rosso. In questo caso, potrebbe essere necessario eseguire l'aggiornamento della connessione Internet.
 
