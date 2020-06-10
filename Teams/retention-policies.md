@@ -17,25 +17,25 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be3df465c740aef7069a77cb7a7562fd0ecd8cd9
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: ccbdf48463ab504c1eac51b9558d3edb07533c70
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042443"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44666178"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
 I criteri di conservazione consentono di gestire le informazioni nell'organizzazione in modo più efficiente. Usare i criteri di conservazione per mantenere i dati necessari a conformarsi ai criteri interni dell'organizzazione, alle normative di settore o alle esigenze legali e per eliminare i dati considerati una responsabilità che non è più necessario conservare o che non hanno alcun valore legale o aziendale.
 
-Per impostazione predefinita, i dati di chat, canali e file di teams vengono mantenuti per sempre, a meno che non si tenti di eliminare il contenuto tramite criteri di conservazione, eliminazioni degli utenti, eliminazioni dall'amministratore e così via. Gli amministratori possono configurare i criteri di conservazione dei team per i messaggi di chat e canali e decidere in modo proattivo se mantenere i dati, eliminarli o conservarli per un determinato periodo di tempo e quindi eliminarli.
+Per impostazione predefinita, i dati di chat, canali e file di team vengono mantenuti indefinitamente, a meno che non si tenti di eliminare il contenuto tramite criteri di conservazione, eliminazioni degli utenti, eliminazioni dall'amministratore e così via. Gli amministratori possono configurare i criteri di conservazione dei team per i messaggi di chat e canali e decidere in modo proattivo se mantenere i dati, eliminarli o conservarli per un determinato periodo di tempo e quindi eliminarli.
 
 È possibile creare e gestire i criteri di conservazione per team e altri carichi di lavoro nel [centro conformità Microsoft 365](https://protection.office.com/) o tramite i cmdlet di PowerShell di Security & Compliance Center. È possibile applicare un criterio di conservazione di Teams a un'intera organizzazione o a specifici utenti e team.
 
 > [!NOTE]
 > Non è ancora supportata la configurazione per la conservazione dei messaggi del canale privato. La conservazione dei file condivisi in canali privati è supportata.
 
-Per altre informazioni sui criteri di conservazione di Office 365, vedere [Panoramica dei criteri di conservazione](https://support.office.com/article/overview-of-retention-policies-5e377752-700d-4870-9b6d-12bfc12d2423).
+Per altre informazioni sui criteri di conservazione per Microsoft 365 o Office 365, vedere [Panoramica dei criteri di conservazione](https://support.office.com/article/overview-of-retention-policies-5e377752-700d-4870-9b6d-12bfc12d2423).
 
 ## <a name="what-are-retention-policies-for-teams"></a>Cosa sono i criteri di conservazione di Teams?
 
@@ -148,7 +148,7 @@ Per eliminare un criterio di conservazione di Teams, eseguire le operazioni segu
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-Per creare e gestire i criteri di conservazione dei team tramite [Office 365 Security & PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell)per la conformità, usare i cmdlet seguenti:
+Per creare e gestire i criteri di conservazione dei team tramite la [sicurezza & il centro conformità PowerShell](https://docs.microsoft.com/powershell/exchange/office-365-scc/connect-to-scc-powershell/connect-to-scc-powershell), usare i cmdlet seguenti:
 
 |Criterio|Regola|
 |---|---|

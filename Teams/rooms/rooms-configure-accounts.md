@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ''
 description: Leggere questo argomento per informazioni su come configurare gli account per Microsoft teams rooms in Exchange e Skype for business.
-ms.openlocfilehash: 66eecbb0773f04599a0b5255cb5f83f158eb74f7
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 97367427aa2629fab3e40bae064c02f521ff710d
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41825944"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44666248"
 ---
 # <a name="configure-accounts-for-microsoft-teams-rooms"></a>Configurare gli account per le sale di Microsoft Teams
  
@@ -28,11 +28,11 @@ Leggere questo argomento per informazioni sulle sale di Microsoft teams e su com
   
 Questo argomento illustra come creare account usati dalle sale di Microsoft teams in Microsoft Exchange e Skype for business. Le istruzioni di distribuzione per i dispositivi Microsoft teams Rooms sono descritte in [configurare una console Microsoft teams Rooms](console.md). L'infrastruttura probabilmente rientrerà in una delle configurazioni seguenti:
   
-- Distribuzione online: l'ambiente dell'organizzazione è distribuito interamente in Office 365. Per altre informazioni, vedere [distribuire le sale di Microsoft teams con Office 365](with-office-365.md).
+- Distribuzione online: l'ambiente dell'organizzazione è distribuito interamente in Microsoft 365 o Office 365. Per altre informazioni, vedere [distribuire le sale di Microsoft teams con microsoft 365 o Office 365](with-office-365.md).
     
 - Distribuzione locale: l'organizzazione ha i server che controllano, dove sono ospitati Active Directory, Exchange e Skype for Business Server. Per altre informazioni, vedere [distribuire le sale di Microsoft teams con Skype for Business Server](with-skype-for-business-server-2015.md)
     
-- Distribuzioni ibride: l'organizzazione ha una combinazione di servizi, con alcuni ospitati in locale e alcuni ospitati online tramite Office 365. Con le sale di Microsoft teams sono supportati gli scenari ibridi seguenti: 
+- Distribuzioni ibride: l'organizzazione ha una combinazione di servizi, con alcuni ospitati in locale e alcuni ospitati online tramite Microsoft 365 o Office 365. Con le sale di Microsoft teams sono supportati gli scenari ibridi seguenti:
     
   - Exchange Online con Skype for Business Server in locale. Per altre informazioni, vedere [distribuire le sale di Microsoft teams con Exchange Online (Hybrid)](with-exchange-online.md).
     
@@ -52,7 +52,7 @@ Ogni account di dispositivo è univoco per un singolo dispositivo Microsoft team
 - L'infrastruttura deve essere configurata in modo da consentire a Microsoft teams Rooms di convalidare l'account del dispositivo e di raggiungere i servizi Microsoft appropriati.
     
 > [!IMPORTANT]
-> È vivamente consigliabile che la creazione di account venga eseguita correttamente prima dell'installazione hardware effettiva. Idealmente, la preparazione dell'account viene avviata da due a tre settimane prima dell'installazione. Negli ambienti ibridi l'account usato per le sale di Microsoft Teams deve avere la sincronizzazione delle password abilitata nella sincronizzazione di AAD perché l'autenticazione di Microsoft teams Rooms richiede l'autenticazione di Office 365.
+> È vivamente consigliabile che la creazione di account venga eseguita correttamente prima dell'installazione hardware effettiva. Idealmente, la preparazione dell'account viene avviata da due a tre settimane prima dell'installazione. Negli ambienti ibridi l'account usato per le sale di Microsoft Teams deve avere la sincronizzazione delle password abilitata nella sincronizzazione di AAD perché l'autenticazione di Microsoft teams Rooms richiede l'autenticazione di Microsoft 365 o Office 365.
   
 Si può pensare a un account del dispositivo come account delle risorse riconosciuto dagli utenti come account della sala riunioni o della riunione. Quando si vuole pianificare una riunione usando quella sala riunioni, si invita l'account a tale riunione. Per usare in modo più efficiente le sale di Microsoft teams, è possibile eseguire la stessa operazione con l'account del dispositivo assegnato a ognuno di essi.
   
@@ -72,7 +72,7 @@ Queste proprietà rappresentano la configurazione minima per un account di dispo
    
 ## <a name="advanced-configuration"></a>Configurazione avanzata
 
-Mentre le proprietà per la configurazione di base consentiranno di configurare l'account del dispositivo in un ambiente semplice, è possibile che l'ambiente disponga di altre restrizioni sugli account di directory che devono essere soddisfatte in modo che le sale di Microsoft teams usino correttamente l' account del dispositivo.
+Mentre le proprietà per la configurazione di base consentiranno di configurare l'account del dispositivo in un ambiente semplice, è possibile che l'ambiente abbia altre restrizioni sugli account di directory che devono essere soddisfatte in modo che le sale di Microsoft teams usino correttamente l'account del dispositivo.
   
 |**Proprietà**|**Scopo**|
 |:-----|:-----|
@@ -80,13 +80,13 @@ Mentre le proprietà per la configurazione di base consentiranno di configurare 
    
 Il modo più semplice per configurare gli account di dispositivo consiste nel configurarli con Windows PowerShell remoto. Microsoft include [SkypeRoomProvisioningScript. ps1](https://go.microsoft.com/fwlink/?linkid=870105), uno script che consente di creare nuovi account di dispositivo o di convalidare gli account di risorse esistenti per consentire di trasformarli in account di dispositivo Microsoft teams compatibili.
   
-Se si preferisce usare l'interfaccia utente di Office 365 sui cmdlet di Windows PowerShell, è possibile eseguire manualmente alcuni passaggi. Vedere [creazione di un account di dispositivo tramite Office 365](https://docs.microsoft.com/surface-hub/create-a-device-account-using-office-365).
+Se si preferisce usare l'interfaccia utente di Microsoft 365 o Office 365 tramite i cmdlet di Windows PowerShell, è possibile eseguire manualmente alcuni passaggi. Vedere [creazione di un account di dispositivo con Microsoft 365 o Office 365](https://docs.microsoft.com/surface-hub/create-a-device-account-using-office-365).
   
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificare le sale di Microsoft Teams](rooms-plan.md)
+[Piano per Microsoft Teams Rooms](rooms-plan.md)
   
-[Configurare una console Microsoft teams rooms](console.md)
+[Configurare una console per Microsoft Teams Rooms](console.md)
   
-[Gestire le sale di Microsoft Teams](rooms-manage.md)
+[Gestire Microsoft Teams Rooms](rooms-manage.md).
 

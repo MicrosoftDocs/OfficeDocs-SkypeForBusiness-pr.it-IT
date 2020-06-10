@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ae0a9f0e3d82dcfeb62a90d4601394bf39a03877
-ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
+ms.openlocfilehash: 4ab67b8a8181398c49e4763b3217a2f1ed770a6a
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44523029"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44666058"
 ---
 # <a name="prepare-your-service-for-upgrading-to-teams"></a>Preparare il servizio per l'aggiornamento a teams
 
@@ -44,7 +44,7 @@ Questo articolo offre una panoramica dei requisiti per preparare l'organizzazion
 
 Gli elenchi di controllo seguenti illustrano la procedura per la distribuzione di Microsoft teams nell'organizzazione:
 
-- [Preparare Office 365 per Teams](onboarding-checklist-enable-office-365.md)
+- [Preparare Microsoft 365 o Office 365 per Teams](onboarding-checklist-enable-office-365.md)
 
 - [Configurare le funzionalità di base di Teams](onboarding-checklist-configure-microsoft-teams-core-capabilities.md)
 

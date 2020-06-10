@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come preparare l'infrastruttura per la distribuzione delle sale di Microsoft teams in modo da poter sfruttare tutte le funzionalità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5267e27409e41c014d391048b70620fc802d8ff4
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 4309140e249f5ab3674f0b2255ae195821922ad4
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905348"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44666168"
 ---
 # <a name="prepare-your-environment"></a>Predisporre l'ambiente
 
@@ -55,7 +55,7 @@ Per funzionare correttamente, il dispositivo Microsoft teams Rooms deve avere ac
 - Accedere all'istanza di Active Directory o di Azure Active Directory (Azure AD), nonché ai server di Microsoft Exchange e Skype for business.
 - Accesso a un server in grado di specificare un indirizzo IP tramite DHCP. Le sale di Microsoft teams non possono essere configurate con un indirizzo IP statico.
 - Accesso alle porte HTTP 80 e 443.
-- Porte TCP e UDP configurate come descritto in [requisiti per la porta e il protocollo per i server](/skypeforbusiness/plan-your-deployment/network-requirements/ports-and-protocols) per le implementazioni locali di Skype for Business Server o per gli [URL e gli intervalli di indirizzi IP di Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US) per Microsoft teams o per le implementazioni di Skype for business online.
+- Porte TCP e UDP configurate come descritto in [requisiti per la porta e il protocollo per i server](/skypeforbusiness/plan-your-deployment/network-requirements/ports-and-protocols) per le implementazioni locali di Skype for Business Server oppure per gli [URL e gli intervalli di indirizzi IP di Microsoft 365 e Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US) per Microsoft teams o per le implementazioni di Skype for business online.
 
 > [!IMPORTANT]
 > Assicurati di usare una connessione di rete a 1 Gbps cablata per assicurarti che avrai la larghezza di banda necessaria.
@@ -110,7 +110,7 @@ Per usare questa applicazione, è necessario essere in grado di connettersi agli
 
 |Scopo|Origine o credenziali|Porta di origine|Destinazione|CDN|ExpressRoute per Office 365|IP di destinazione|Porta di destinazione|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-|Autenticazione e identità  <br/> |Vedere [autenticazione e identità di Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#BKMK_Identity) <br/> |||
+|Autenticazione e identità  <br/> |Vedere [autenticazione e identità di Microsoft 365 e Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#BKMK_Identity) <br/> |||
 |Portale e condivisione  <br/> |Vedere l'interfaccia [di amministrazione di Microsoft 365 e condivisa](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#BKMK_Portal-identity) <br/> |||
 |Segnalazione SIP  <br/> |Computer client o utente connesso  <br/> |Porte effimere  <br/> |\*. contoso.com  <br/> |No  <br/> |Sì  <br/> |[Intervalli di indirizzi IP Skype for business](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#BKMK_SfB_IP) <br/> |TCP 443  <br/> |
 |Conferenze Web con connessioni PSOM (Persistent Shared Object Model)  <br/> |Computer client o utente connesso  <br/> |Porte effimere  <br/> |\*. contoso.com  <br/> |No  <br/> |Sì  <br/> |[Intervalli di indirizzi IP Skype for business](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#BKMK_SfB_IP) <br/> |TCP 443  <br/> |
@@ -123,11 +123,11 @@ Per usare questa applicazione, è necessario essere in grado di connettersi agli
 |Client Skype suggerimenti rapidi  <br/> |Computer client o utente connesso  <br/> |Porte effimere  <br/> |quicktips.skypeforbusiness.com  <br/> |No  <br/> |No  <br/> |N/D  <br/> |TCP 443  <br/> |
 
 > [!NOTE]
-> Il carattere jolly per contoso.com e broadcast.skype.com rappresenta un lungo elenco di nodi usati esclusivamente per Office 365. 
+> Il carattere jolly per contoso.com e broadcast.skype.com rappresenta un lungo elenco di nodi usati esclusivamente per Microsoft 365 o Office 365. 
   
 ### <a name="create-provisioning-packages"></a>Creare pacchetti di provisioning
 
-Si utilizzeranno i pacchetti di provisioning per eseguire l'autenticazione in Exchange Server o Office 365.
+Si utilizzeranno i pacchetti di provisioning per eseguire l'autenticazione in Exchange Server, Microsoft 365 o Office 365.
   
 ### <a name="admin-group-management"></a>Gestione dei gruppi di amministratori
 
@@ -144,7 +144,7 @@ L'account del dispositivo in genere non usa una password. È possibile assegnarl
   
 ### <a name="admin---local-administrator-account"></a>"Amministratore"-account di amministratore locale
 
-La password predefinita di Microsoft teams Rooms è impostata su "SFB". La password può essere modificata localmente passando alle impostazioni \> di Windows o al file Autounattend. XML (usare Windows System Image Manager da ADK per apportare la modifica al file XML).
+La password predefinita di Microsoft teams Rooms è impostata su "SFB". La password può essere modificata localmente passando alle impostazioni di Windows \> o al file Autounattend. XML (usare Windows System Image Manager da ADK per apportare la modifica al file XML).
   
 > [!CAUTION]
 > Assicurarsi di cambiare la password di Microsoft teams Rooms il più presto possibile. 
@@ -155,7 +155,7 @@ La password di amministratore locale non è inclusa come scelta durante l'instal
   
 ### <a name="machine-account"></a>Account del computer
 
-Analogamente a qualsiasi dispositivo Windows, il nome del computer può essere rinominato facendo clic con il \> pulsante \> destro del mouse nelle impostazioni relative a Rinomina PC.
+Analogamente a qualsiasi dispositivo Windows, il nome del computer può essere rinominato facendo clic con il pulsante destro del mouse nelle impostazioni \> relative a \> Rinomina PC.
   
  Se si vuole rinominare il computer dopo averla aggiunta a un dominio, usare il comando Rinomina-computer di PowerShell seguito dal nuovo nome del computer.
   

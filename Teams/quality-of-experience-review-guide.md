@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: bb0b28805f06109109a1d7ba47b08f57112c9ee4
-ms.sourcegitcommit: 0835f4335ebc8ca53b8348e0b1b906828eb4e13e
+ms.openlocfilehash: 755be709a6d1aa0093478c0e614346fe319b0bde
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2020
-ms.locfileid: "43918725"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44666208"
 ---
 # <a name="quality-of-experience-review-guide"></a>Guida sul controllo della qualità dell'esperienza 
 
@@ -94,11 +94,11 @@ _Tabella 1-metriche audio di qualità scadente_
 
 | Media metrica     | Descrizione     | Esperienza utente |
 |-------------|-----------------|-----------------|
-| Jitter \>30 ms        | Questa è la variazione media di ritardo tra i pacchetti successivi. I team e Skype for business possono adattarsi ad alcuni livelli di jitter attraverso il buffering. Solo quando il jitter supera il buffering che un partecipante Nota gli effetti di jitter.      | I pacchetti che arrivano a velocità diverse causano la voce di un altoparlante a un suono robotico.   |
-| Tasso \>di perdita di pacchetti 10% o 0,1        | Questa operazione viene spesso definita come percentuale di pacchetti persi. La perdita di pacchetti influenza direttamente la qualità audio, da piccoli pacchetti persi singoli che non hanno quasi alcun impatto sulle perdite di burst di back-to-back che causano il ritaglio completo dell'audio.     | I pacchetti che vengono eliminati e che non arrivano alla destinazione desiderata causano lacune nel supporto, con sillabe perse e parole e video e condivisione dispersivi. |
-| Ora \>di andata e ritorno 500 ms        | Questo è il tempo necessario per ottenere un pacchetto IP dal punto a al punto B e viceversa al punto a. Questo ritardo di propagazione della rete è legato alla distanza fisica tra i due punti e alla velocità della luce e include un sovraccarico aggiuntivo adottato dai vari dispositivi nel percorso di rete.      | I pacchetti che impiegano troppo tempo per arrivare a destinazione causano un effetto walkie-talkie.   |
-| NMOS degradazione \>media 1,0         | Media del Punteggio medio di [valutazione (NMOS)](https://docs.microsoft.com/previous-versions/office/communications-server/bb894481(v=office.12)#network-mos) per il flusso. Rappresenta la quantità di perdite di rete e jitter che ha influenzato la qualità dell'audio ricevuto che ha causato l'eliminazione di NMOS da più di un punto. | Si tratta di una combinazione di jitter, perdita di pacchetti e, in misura minore, maggiore tempo di andata e ritorno. L'utente potrebbe provare una combinazione di questi sintomi.   |
-| Rapporto medio tra campioni \>nascosti 7% o 0,07 | Rapporto medio del numero di fotogrammi audio con campioni nascosti generati dalla perdita di pacchetti per la guarigione del numero totale di fotogrammi audio. Un esempio di audio nascosto è una tecnica usata per attenuare la transizione brusca che in genere viene causata da pacchetti di rete eliminati.      | I valori alti indicano che i livelli significativi di occultamento delle perdite sono stati applicati e hanno provocato l'audio distorto o perso.     |
+| Jitter \> 30 ms        | Questa è la variazione media di ritardo tra i pacchetti successivi. I team e Skype for business possono adattarsi ad alcuni livelli di jitter attraverso il buffering. Solo quando il jitter supera il buffering che un partecipante Nota gli effetti di jitter.      | I pacchetti che arrivano a velocità diverse causano la voce di un altoparlante a un suono robotico.   |
+| Tasso di perdita di pacchetti \> 10% o 0,1        | Questa operazione viene spesso definita come percentuale di pacchetti persi. La perdita di pacchetti influenza direttamente la qualità audio, da piccoli pacchetti persi singoli che non hanno quasi alcun impatto sulle perdite di burst di back-to-back che causano il ritaglio completo dell'audio.     | I pacchetti che vengono eliminati e che non arrivano alla destinazione desiderata causano lacune nel supporto, con sillabe perse e parole e video e condivisione dispersivi. |
+| Ora di andata e ritorno \> 500 ms        | Questo è il tempo necessario per ottenere un pacchetto IP dal punto a al punto B e viceversa al punto a. Questo ritardo di propagazione della rete è legato alla distanza fisica tra i due punti e alla velocità della luce e include un sovraccarico aggiuntivo adottato dai vari dispositivi nel percorso di rete.      | I pacchetti che impiegano troppo tempo per arrivare a destinazione causano un effetto walkie-talkie.   |
+| NMOS degradazione media \> 1,0         | Media del Punteggio medio di [valutazione (NMOS)](https://docs.microsoft.com/previous-versions/office/communications-server/bb894481(v=office.12)#network-mos) per il flusso. Rappresenta la quantità di perdite di rete e jitter che ha influenzato la qualità dell'audio ricevuto che ha causato l'eliminazione di NMOS da più di un punto. | Si tratta di una combinazione di jitter, perdita di pacchetti e, in misura minore, maggiore tempo di andata e ritorno. L'utente potrebbe provare una combinazione di questi sintomi.   |
+| Rapporto medio tra campioni nascosti \> 7% o 0,07 | Rapporto medio del numero di fotogrammi audio con campioni nascosti generati dalla perdita di pacchetti per la guarigione del numero totale di fotogrammi audio. Un esempio di audio nascosto è una tecnica usata per attenuare la transizione brusca che in genere viene causata da pacchetti di rete eliminati.      | I valori alti indicano che i livelli significativi di occultamento delle perdite sono stati applicati e hanno provocato l'audio distorto o perso.     |
 
 #### <a name="setup-failure-rate"></a>Tasso di errore di configurazione
 
@@ -198,7 +198,7 @@ Il successo di operationalizing una distribuzione affidabile e di alta qualità 
 
     -   Per prima cosa, la responsabilità di Microsoft è gestire e mantenere i team e i servizi Skype for business online.
 
-    -   In secondo luogo, le attività che l'organizzazione deve gestire per garantire un accesso affidabile al servizio, ad esempio l'aggiornamento delle informazioni sulla creazione e la gestione dei firewall per i nuovi indirizzi IP di Office 365, quando l'infrastruttura viene aggiunta al servizio.
+    -   In secondo luogo, le attività che l'organizzazione deve gestire per garantire un accesso affidabile al servizio, ad esempio l'aggiornamento delle informazioni sulla creazione e la gestione dei firewall per i nuovi indirizzi IP di Microsoft 365 o Office 365, quando l'infrastruttura viene aggiunta al servizio.
 
 ![Grafico delle categorie di qualità in un'organizzazione](media/qerguide-image-categories.png "Categorie di qualità in un'organizzazione: gestione dei servizi, endpoint e rete.")
 
@@ -213,7 +213,7 @@ La prima volta che si eseguono queste attività sarà necessario uno sforzo magg
 
 #### <a name="service-management-tasks"></a>Attività di gestione dei servizi
 
-In un mondo cloud-First è necessario eseguire alcune attività di gestione dei servizi per mantenere le esperienze degli utenti di alta qualità. Queste attività variano da garantire che la larghezza di banda sia sufficiente per raggiungere il servizio senza saturare i collegamenti Internet, convalidando la qualità del servizio (QoS) in tutte le aree di rete gestite e, infine, rimanendo in primo piano sugli [intervalli IP di Office 365 nei firewall](https://aka.ms/o365ips).
+In un mondo cloud-First è necessario eseguire alcune attività di gestione dei servizi per mantenere le esperienze degli utenti di alta qualità. Queste attività variano da garantire la larghezza di banda sufficiente per raggiungere il servizio senza saturare i collegamenti Internet, convalidando la qualità del servizio (QoS) in tutte le aree di rete gestite e, infine, rimanendo in primo piano negli [intervalli di indirizzi IP di Microsoft 365 e Office 365 sui firewall](https://aka.ms/o365ips).
 
 #### <a name="network-tasks"></a>Attività di rete
 
@@ -307,7 +307,7 @@ Alcuni report di Call Quality Dashboard richiedono l'inserimento di un filtro pe
 
 1. [Installare il modulo di gestione dei servizi di Microsoft Azure PowerShell](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azure-ps?view=azuresmps-4.0.0).
 
-2. Aprire una finestra di comando di PowerShell di Azure ed eseguire lo script seguente immettendo le credenziali di Office 365 quando richiesto: 
+2. Aprire una finestra di comando di PowerShell di Azure ed eseguire lo script seguente, immettendo le credenziali di Microsoft 365 o Office 365 quando richiesto:
 
    ```PowerShell
    Login-AzureRmAccount
@@ -460,7 +460,7 @@ Per una formazione e risorse più approfondite, vedere l' [appendice](#other-res
 
     _Figura 7-accesso a Call Quality dashboard tramite l'interfaccia di amministrazione di Microsoft Teams_
 
--   Accedere agli > **strumenti**di interfaccia di **amministrazione di Skype for business**legacy e selezionare il collegamento a Call Quality dashboard, come illustrato nella figura seguente.
+-   Accedere agli strumenti di interfaccia di **amministrazione di Skype for business**legacy  >  **tools**e selezionare il collegamento a Call Quality dashboard, come illustrato nella figura seguente.
 
     ![Screenshot di Call Quality dashboard selezionato nel riquadro principale.](media/qerguide-image-legacyui.png "Gli strumenti sono selezionati nel riquadro di spostamento sinistro e il collegamento a Call Quality dashboard è selezionato nel riquadro principale.")
 
@@ -498,7 +498,7 @@ Quando si seleziona **modifica** nel menu azione di un report, è possibile apri
 
 |             |           |
 | ------------|-----------|
-| ![Icona del numero 1, che fa riferimento a un callout nella schermata precedente](media/qerguide-image-callout1.png "una") | È possibile scegliere dimensioni, misure e filtri dal riquadro sinistro. Se si punta a un valore esistente, viene visualizzato un pulsante Chiudi (**X**) che è possibile selezionare per rimuovere il valore.<ul><li>Selezionando la quota o la misura, è possibile modificare il titolo modificando il campo **titolo** . È anche possibile modificare l'ordine selezionando le frecce blu in alto o in basso nel riquadro superiore.</li><li>Selezionando**+**() accanto a un titolo si apre la finestra di dialogo per l'aggiunta di una nuova dimensione, misura o filtro.</li><li>Immettere le prime lettere della dimensione, della misura o del filtro nel campo **trova un** per filtrare l'elenco per semplificare la ricerca.</li></ul> |
+| ![Icona del numero 1, che fa riferimento a un callout nella schermata precedente](media/qerguide-image-callout1.png "una") | È possibile scegliere dimensioni, misure e filtri dal riquadro sinistro. Se si punta a un valore esistente, viene visualizzato un pulsante Chiudi (**X**) che è possibile selezionare per rimuovere il valore.<ul><li>Selezionando la quota o la misura, è possibile modificare il titolo modificando il campo **titolo** . È anche possibile modificare l'ordine selezionando le frecce blu in alto o in basso nel riquadro superiore.</li><li>Selezionando ( **+** ) accanto a un titolo si apre la finestra di dialogo per l'aggiunta di una nuova dimensione, misura o filtro.</li><li>Immettere le prime lettere della dimensione, della misura o del filtro nel campo **trova un** per filtrare l'elenco per semplificare la ricerca.</li></ul> |
 | ![Icona del numero 2, che fa riferimento a un callout nella schermata precedente](media/qerguide-image-callout2.png "due") | Il riquadro superiore mostra le opzioni per la personalizzazione del grafico. |
 | ![Icona del numero 3, che fa riferimento a un callout nella schermata precedente](media/qerguide-image-callout3.png "tre") | L'editor di query Mostra un'anteprima del report. |
 | ![Icona del numero 4, che fa riferimento a un callout nella schermata precedente](media/qerguide-image-callout4.png "quattro") | Usare la casella di **modifica** nella parte inferiore dello schermo per creare o modificare una descrizione dettagliata del report. |
@@ -537,7 +537,7 @@ Esempio
 
 
 > [!NOTE]
-> Gli esempi di URL descritti sopra sono solo per la rappresentazione visiva. Usare il collegamento Call Quality dashboard predefinito di <https://cqd.teams.microsoft.com>.
+> Gli esempi di URL descritti sopra sono solo per la rappresentazione visiva. Usare il collegamento Call Quality dashboard predefinito di <https://cqd.teams.microsoft.com> .
 
 
 #### <a name="query-filters"></a>Filtri di query
@@ -548,8 +548,8 @@ _Tabella 3-filtri delle query_
 
 | Filter         | Descrizione          | Esempio di filtro di query Call Quality dashboard      |
 |----------------|----------------------|-------------------------------|
-| Nessun valore vuoto   | Alcuni filtri non hanno la possibilità di filtrare i valori vuoti. Per filtrare manualmente i valori vuoti, usare l'espressione vuota e impostare il filtro su uguale o non uguale, a seconda delle proprie esigenze.      | \< \> Nome \^dell' \\edificio secondo s\*\$                       |
-| Escludi subnet comuni | Senza un file di compilazione valido per separare il Managed from Managed Networks, le reti Home verranno incluse nei report. Queste subnet Home esulano dall'ambito del controllo e possono essere rapidamente escluse da un report. Le subnet comuni, come definite in questa guida, sono 10.0.0.0, 192.168.1.0 e 192.168.0.0. | Seconda subnet \< \> 10.0.0.0 \| 192.168.0.0 \| 192.168.1.0 |
+| Nessun valore vuoto   | Alcuni filtri non hanno la possibilità di filtrare i valori vuoti. Per filtrare manualmente i valori vuoti, usare l'espressione vuota e impostare il filtro su uguale o non uguale, a seconda delle proprie esigenze.      | Nome dell'edificio secondo \<\> \^ \\ s\*\$                       |
+| Escludi subnet comuni | Senza un file di compilazione valido per separare il Managed from Managed Networks, le reti Home verranno incluse nei report. Queste subnet Home esulano dall'ambito del controllo e possono essere rapidamente escluse da un report. Le subnet comuni, come definite in questa guida, sono 10.0.0.0, 192.168.1.0 e 192.168.0.0. | Seconda subnet \<\> 10.0.0.0 \| 192.168.0.0 \| 192.168.1.0 |
 | Solo all'interno della visualizzazione  | Usato per filtrare un report per Managed (Inside) o non Managed (all'esterno). Il modello Call Quality dashboard gestito è già preconfigurato con questi filtri.       | Secondo all'interno di Corp = all'interno        |
 
 #### <a name="report-filters"></a>Filtri di report
@@ -563,7 +563,7 @@ _Tabella 4-filtri per i report_
 | Month      | Iniziare con l'anno prima e poi mese. | 2017-10                           |
 | Alfabetico | Filtri per qualsiasi carattere alfabetico. | [a-z]                             |
 | Numerico    | Filtri per qualsiasi carattere numerico.    | [0-9]                             |
-| Percentuale | Filtri per una percentuale.              | ([3-9]\\.) \|([3-9])\|([1-9] [0-9]) |
+| Percentuale | Filtri per una percentuale.              | ([3-9] \\ .) \| ([3-9]) \| ([1-9] [0-9]) |
 
 ## <a name="import-the-cqd-templates"></a>Importare i modelli di Call Quality dashboard
 
@@ -573,7 +573,7 @@ Questa guida include [due modelli di Call Quality dashboard curati](https://aka.
 
 1. Passare a <https://cqd.teams.microsoft.com>.
 
-2. Eseguire l'autenticazione usando le credenziali amministrative di Office 365.
+2. Eseguire l'autenticazione usando le credenziali amministrative di Microsoft 365 o Office 365.
 
    > [!NOTE]
    > Per accedere a Call Quality dashboard è necessario avere il ruolo amministratore globale, amministratore di Skype for business o report Reader. 
@@ -667,7 +667,7 @@ Ecco alcuni aspetti da considerare prima di implementare il Supernetting:
 
 #### <a name="vpn"></a>VPN
 
-I dati di qualità dell'esperienza (QoE) che i client inviano a Office 365, da cui vengono provenienti i dati di Call Quality dashboard, includono un contrassegno VPN. Call Quality dashboard vedrà questo come la prima VPN e le seconde dimensioni VPN. Tuttavia, questo contrassegno si basa sulla creazione di report dei fornitori VPN in Windows che la scheda di rete VPN registrata è un adattatore di accesso remoto. Non tutti i fornitori di VPN registrano correttamente gli adapter di accesso remoto. Per questo motivo, potresti non essere in grado di usare i filtri di query VPN predefiniti. Esistono due approcci per ospitare subnet VPN nel file di informazioni sull'edificio:
+I dati di qualità dell'esperienza (QoE) che i client inviano a Microsoft 365 o Office 365, da cui vengono provenienti i dati di Call Quality dashboard, includono un contrassegno VPN. Call Quality dashboard vedrà questo come la prima VPN e le seconde dimensioni VPN. Tuttavia, questo contrassegno si basa sulla creazione di report dei fornitori VPN in Windows che la scheda di rete VPN registrata è un adattatore di accesso remoto. Non tutti i fornitori di VPN registrano correttamente gli adapter di accesso remoto. Per questo motivo, potresti non essere in grado di usare i filtri di query VPN predefiniti. Esistono due approcci per ospitare subnet VPN nel file di informazioni sull'edificio:
 
 - Definire un **nome di rete** usando il testo "VPN" in questo campo per le subnet VPN.
 
@@ -692,7 +692,7 @@ I dati di qualità dell'esperienza (QoE) che i client inviano a Office 365, da c
 
 Il dashboard report di riepilogo di Call Quality dashboard include una pagina di **caricamento dei dati del tenant** , a cui si accede selezionando il tag di collegamento **Carica dati tenant** nell'angolo in alto a destra (cercare l'icona dell'ingranaggio). Questa pagina viene usata per gli amministratori per caricare le proprie informazioni, ad esempio il mapping di indirizzi IP e informazioni geografiche, la mappatura di ogni punto di accesso wireless e il relativo indirizzo MAC e così via.
 
-1. Accedere a Call Quality dashboard online esplorando <https://cqd.teams.microsoft.com>.
+1. Accedere a Call Quality dashboard online esplorando <https://cqd.teams.microsoft.com> .
 
 2. Selezionare l'icona dell'ingranaggio nell'angolo in alto a destra e scegliere **Carica dati tenant** dalla pagina **report di riepilogo** .
 
@@ -847,7 +847,7 @@ _Tabella 7-motivi per gli errori di configurazione delle chiamate_
 | Causa errori di configurazione delle chiamate       | Causa tipica                    |
 |----------------------------------|----------------------------------|
 | Regola di esenzione dall'ispezione profonda del pacchetto FW mancante | Indica che le apparecchiature di rete lungo il percorso impedivano che il percorso multimediale venisse stabilito a causa di regole di controllo dei pacchetti approfondite. Questo è probabilmente dovuto alle regole del firewall che non vengono configurate correttamente. In questo scenario l'handshake TCP ha avuto esito positivo, ma l'handshake SSL non è riuscito.      |
-| Regola di eccezione del blocco IP FW mancante      | Indica che le apparecchiature di rete lungo il percorso impedivano che il percorso multimediale venisse stabilito nella rete di Office 365. Questo potrebbe essere dovuto a regole proxy o firewall non configurate correttamente per consentire l'accesso agli indirizzi IP e alle porte usati per i team e il traffico di Skype for business. |
+| Regola di eccezione del blocco IP FW mancante      | Indica che le apparecchiature di rete lungo il percorso impedivano che il percorso multimediale venisse stabilito nella rete Microsoft 365 o Office 365. Questo potrebbe essere dovuto a regole proxy o firewall non configurate correttamente per consentire l'accesso agli indirizzi IP e alle porte usati per i team e il traffico di Skype for business. |
 
 Ora, quando si inizia la correzione, è possibile concentrare gli sforzi su un determinato edificio o subnet. Come illustrato nella tabella precedente, questi problemi sono dovuti a configurazioni di firewall o proxy. Esaminare le opzioni della tabella seguente per le azioni correttive.
 
@@ -856,7 +856,7 @@ _Tabella 8-passaggi successivi per la risoluzione dei problemi di installazione 
 
 |      Correzioni      |                                                                                                                                                                                                                                                                                                                                                                   Linee guida                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Configurare i firewall | Collaborare con il team di rete e verificare la configurazione del firewall con [l'elenco di indirizzi IP di Office 365](https://aka.ms/o365ips).<br><br>Verificare che le [subnet](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_teams) e le porte multimediali siano incluse nelle regole del firewall. <br><br>Verificare che nel firewall siano aperte le porte necessarie (elencate di seguito). UDP deve avere la priorità perché TCP è considerato un protocollo di failback per la condivisione dello schermo audio, video e video e il suo uso influirà sulla qualità della chiamata. La condivisione di applicazioni RDP legacy usa solo TCP.<br><ul><li>**TCP:** porta 443</li><li>**UDP:** porte 3478-3481</li><ul> |
+| Configurare i firewall | Collaborare con il team di rete e verificare la configurazione del firewall con [l'elenco di indirizzi IP di Microsoft 365 e Office 365](https://aka.ms/o365ips).<br><br>Verificare che le [subnet](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_teams) e le porte multimediali siano incluse nelle regole del firewall. <br><br>Verificare che nel firewall siano aperte le porte necessarie (elencate di seguito). UDP deve avere la priorità perché TCP è considerato un protocollo di failback per la condivisione dello schermo audio, video e video e il suo uso influirà sulla qualità della chiamata. La condivisione di applicazioni RDP legacy usa solo TCP.<br><ul><li>**TCP:** porta 443</li><li>**UDP:** porte 3478-3481</li><ul> |
 |        Verificare         |                                                                                                                                                                                                                                                                 Usare lo [strumento di valutazione della rete Microsoft](https://www.microsoft.com/download/details.aspx?id=53885) per verificare la connettività dall'edificio o dalla subnet interessata tramite la funzione controllo connettività.                                                                                                                                                                                                                                                                  |
 
 ### <a name="drop-failures"></a>Eliminare gli errori
@@ -1006,7 +1006,7 @@ _Tabella 10-collaboratori comuni di High PSR_
 
 TCP è considerato un trasporto di failback e non il trasporto primario desiderato per l'elemento multimediale in tempo reale. Il motivo per cui è un trasporto di failback è dovuto alla natura dello stato di TCP. Ad esempio, se una chiamata viene eseguita in una rete latente e i pacchetti multimediali sono in ritardo, i pacchetti di pochi secondi fa, che non sono più utili, competono per la larghezza di banda per accedere al destinatario, che può peggiorare la situazione. Questo fa sì che il guaritore audio cucini e si estenda l'audio, ottenendo artefatti udibili, spesso sotto forma di jitter.
 
-I report in questa sezione non distinguono tra flussi buoni e poveri. In base alle preferenze di UDP, i report cercano l'uso di TCP per la condivisione dello schermo audio, video e video (VBSS). Vengono fornite tariffe di flusso insufficienti per confrontare la qualità UDP rispetto alla qualità TCP, in modo da poter concentrare gli sforzi in cui l'impatto è il più grande. L'utilizzo di TCP è principalmente causato da regole di firewall incomplete. Per altre informazioni sulle regole del firewall per team e Skype for business online, vedere [URL e intervalli di indirizzi IP di Office 365](https://aka.ms/o365ips).
+I report in questa sezione non distinguono tra flussi buoni e poveri. In base alle preferenze di UDP, i report cercano l'uso di TCP per la condivisione dello schermo audio, video e video (VBSS). Vengono fornite tariffe di flusso insufficienti per confrontare la qualità UDP rispetto alla qualità TCP, in modo da poter concentrare gli sforzi in cui l'impatto è il più grande. L'utilizzo di TCP è principalmente causato da regole di firewall incomplete. Per altre informazioni sulle regole del firewall per team e Skype for business online, vedere [URL e intervalli di indirizzi IP di Microsoft 365 e Office 365](https://aka.ms/o365ips).
 
 > [!Important]
 > È vivamente consigliabile caricare un [file di compilazione valido](#building-mapping) , in modo da poter distinguere rapidamente l'interno dai flussi esterni quando si esamina l'uso di TCP.
@@ -1018,8 +1018,8 @@ I report in questa sezione non distinguono tra flussi buoni e poveri. In base al
 
 I report TCP indicano l'utilizzo complessivo di TCP negli ultimi sette mesi. Tutti gli altri report in questa sezione consentiranno di limitare la riduzione di edifici e subnet specifici in cui TCP viene usato più comunemente. I report distinti sono disponibili sia per i flussi di conferenza che per quelli a due parti.
 
-![Grafico che mostra la percentuale di flussi audio che usano](media/qerguide-image-audiostreamswithtcp.png)
-TCP_Figura 25-flussi audio con l'utilizzo TCP_
+![Grafico che mostra la percentuale di flussi audio che usano TCP ](media/qerguide-image-audiostreamswithtcp.png)
+ _Figura 25-flussi audio con l'utilizzo TCP_
 
 
 ##### <a name="investigation"></a>Indagine
@@ -1070,8 +1070,8 @@ _Tabella 11-linee guida per la correzione dei flussi TCP tramite la creazione e 
 
 | Correzioni        | Linee guida     |
 |--------------------|--------------------------------------|
-| Configurare il firewall | Verificare che le [porte e gli indirizzi IP di Office 365](https://aka.ms/o365ips) siano esclusi dal firewall. Per i problemi TCP correlati ai contenuti multimediali, concentrare gli sforzi iniziali sui seguenti:<ul><li>Verificare che le subnet multimediali client 13.107.64.0/18 e 52.112.0.0/14 siano presenti nelle regole del firewall.</li><li>Porte UDP 3478 – 3481 sono le porte multimediali necessarie e devono essere aperte, in caso contrario il client non tornerà alla porta TCP 443.</li></ul> |
-| Verificare             | Usare lo [strumento di valutazione della rete Microsoft](https://www.microsoft.com/download/details.aspx?id=53885) per verificare la connettività a determinati indirizzi IP e porte di Office 365 dall'edificio o dalla subnet interessata.    |
+| Configurare il firewall | Verificare che le [porte e gli indirizzi IP di Microsoft 365 o Office 365](https://aka.ms/o365ips) siano esclusi dal firewall. Per i problemi TCP correlati ai contenuti multimediali, concentrare gli sforzi iniziali sui seguenti:<ul><li>Verificare che le subnet multimediali client 13.107.64.0/18 e 52.112.0.0/14 siano presenti nelle regole del firewall.</li><li>Porte UDP 3478 – 3481 sono le porte multimediali necessarie e devono essere aperte, in caso contrario il client non tornerà alla porta TCP 443.</li></ul> |
+| Verificare             | Usare lo [strumento di valutazione della rete Microsoft](https://www.microsoft.com/download/details.aspx?id=53885) per verificare la connettività a specifici indirizzi IP di Microsoft 365 o Office 365 e alle porte dall'edificio o dalla subnet interessata.    |
 
 ### <a name="http-proxy"></a>Proxy HTTP
 
@@ -1096,7 +1096,7 @@ _Figura 28-flussi audio con utilizzo di proxy HTTP_
 
 Si vogliono visualizzare i piccoli flussi multimediali HTTP possibili. Se si hanno flussi che attraversano il proxy, consultare il team di rete per verificare che siano presenti le esclusioni appropriate in modo che i client vengano direttamente indirizzati a teams o alle subnet multimediali di Skype for business online.
 
-Se si ha un solo proxy Internet nell'organizzazione, verificare gli URL di [Office 365 appropriati e le esclusioni degli intervalli di indirizzi IP](https://aka.ms/o365ips). Se nell'organizzazione sono configurati più proxy Internet, usare il sottoreport HTTP per isolare l'edificio o la subnet interessata.
+Se si ha un solo proxy Internet nell'organizzazione, verificare le esclusioni appropriate per gli [URL di Microsoft 365 o di Office 365 e per gli intervalli di indirizzi IP](https://aka.ms/o365ips). Se nell'organizzazione sono configurati più proxy Internet, usare il sottoreport HTTP per isolare l'edificio o la subnet interessata.
 
 Per le organizzazioni che non possono ignorare il proxy, assicurati che il client Skype for business sia configurato per l'accesso in modo corretto quando si trova dietro un proxy, come descritto nell'articolo [Skype for business dovrebbe usare il server proxy per accedere invece di provare a connettersi direttamente](https://support.microsoft.com/help/3207112/skype-for-business-should-use-proxy-server-to-sign-in-instead-of-tryin). 
 
@@ -1121,7 +1121,7 @@ Ti [consigliamo](proxy-servers-for-skype-for-business-online.md) di ignorare sem
 
 La causa più comune dell'utilizzo HTTP mancano le regole di eccezione nei proxy. Utilizzando l'edificio o la subnet specificata, è possibile determinare rapidamente quale proxy deve essere configurato per il bypass multimediale.
 
-Verificare che i nomi di [dominio completi di Office 365](https://aka.ms/o365ips) necessari siano presenti in whitelist nel proxy.
+Verificare che i nomi di [dominio completi Microsoft 365 o Office 365](https://aka.ms/o365ips) siano disponibili in whitelist nel proxy.
 
 ## <a name="endpoint-investigations"></a>Indagini endpoint
 
@@ -1166,7 +1166,7 @@ Se si ha una combinazione di pacchetti a portata di clic e di installazione (MSI
 
 I numeri di versione per Skype for business possono essere trovati tramite i collegamenti seguenti:
 
--   [Rilasciare informazioni per gli aggiornamenti a Office ProPlus](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
+-   [Rilasciare informazioni per gli aggiornamenti delle app Microsoft 365](https://docs.microsoft.com/officeupdates/release-notes-office365-proplus)
 -   [Cronologia degli aggiornamenti per le app Microsoft 365 per le aziende](https://docs.microsoft.com/officeupdates/update-history-office365-proplus-by-date)
 -   [Download e aggiornamenti per Skype for Business](/SkypeForBusiness/software-updates)
 
@@ -1221,11 +1221,11 @@ Anche i driver Wi-Fi devono essere corretti per una cadenza regolare e devono es
 
 ## <a name="appendix"></a>Appendice 
 
-### <a name="office-365-network-connectivity-principles"></a>Principi di connettività di rete di Office 365
+### <a name="network-connectivity-principles"></a>Principi di connettività di rete
 
-Prima di iniziare a pianificare la rete per la connettività di rete di Office 365, è importante comprendere i principi di connettività per gestire in modo sicuro il traffico di Office 365 e ottenere le migliori prestazioni possibili. L'articolo seguente consente di comprendere le linee guida più recenti per ottimizzare in modo sicuro la connettività di rete di Office 365:
+Prima di iniziare a pianificare la rete per Microsoft 365 o Office 365 connettività di rete, è importante comprendere i principi di connettività per la gestione sicura del traffico di Microsoft 365 o Office 365 e per ottenere le migliori prestazioni possibili. L'articolo seguente consente di comprendere le linee guida più recenti per ottimizzare in modo sicuro la connettività di rete:
 
-[Principi di connettività di rete di Office 365](https://aka.ms/pnc)
+[Principi di connettività di rete Microsoft 365 e Office 365](https://aka.ms/pnc)
 
 ### <a name="planning-for-wi-fi"></a>Pianificazione della rete Wi-Fi
 

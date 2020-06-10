@@ -23,12 +23,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare il sistema telefonico per le code di chiamate cloud con Microsoft teams, che offre un messaggio di saluto, tenere premuto musica, reindirizzare le chiamate e altre funzionalità.
-ms.openlocfilehash: 9c2593f657ae66a1dcde825ac7a783df10cd96d8
-ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
+ms.openlocfilehash: 6bf3353a86cc096d5d9f9891315d9b47de40e9f4
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44523751"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44669423"
 ---
 # <a name="create-a-cloud-call-queue"></a>Creare una coda di chiamata cloud
 
@@ -48,6 +48,7 @@ Tutte le chiamate nella coda vengono inviate agli agenti da uno dei metodi segue
 
 - Con il routing di Attendant, la prima chiamata nella coda squilla tutti gli agenti contemporaneamente.
 - Con il routing seriale, la prima chiamata nella coda squilla tutti gli agenti di chiamata uno alla volta.
+- Con il routing inattivo più lungo, l'agente di chiamata di cui è stato inattivo il tempo più lungo riceve la successiva chiamata disponibile. Il tempo di inattività viene definito come il periodo di tempo in cui lo stato presenza di un agente di chiamata è impostato su **disponibile** o **fuori** sede (se inferiore a 10 minuti), al momento della chiamata. Se la presenza di un agente di chiamata è **assente** per più di 10 minuti, il timer di inattività viene reimpostato.
 - Con Round Robin, il routing delle chiamate in arrivo è bilanciato in modo che ogni agente di chiamata ottenga lo stesso numero di chiamate dalla coda.
 
 Puoi impostare le opzioni di gestione delle chiamate, ad esempio l'opzione di opt-in/opt-out, il routing basato sulla presenza, il tempo di attesa delle chiamate e le opzioni di timeout delle chiamate con uno dei metodi descritti sopra.
@@ -166,7 +167,7 @@ Le chiamate vengono instradate prima a singoli agenti, quindi agli agenti in gru
 - Gruppo di sicurezza
 - Elenco di distribuzione
 
-Gli agenti di chiamata selezionati devono essere uno dei seguenti:
+Gli agenti di chiamata selezionati devono essere uno dei seguenti: 
 
 - Utenti online con licenza di sistema telefonico e VoIP aziendale abilitato
 - Utenti online con un piano per le chiamate
@@ -203,18 +204,24 @@ Una volta abilitata la modalità conferenza in una coda di chiamata, le chiamate
 La maggior parte delle chiamate viene ricevuta tramite uno dei metodi elencati sopra. Se una chiamata viene ricevuta tramite un altro metodo, ad esempio una chiamata VoIP da un client Skype for business, la chiamata verrà comunque aggiunta alla coda di chiamata, ma non trarrà vantaggio dal tempo di connessione più rapido.
 
 ![Icona del numero 3, fa riferimento a un callout nel metodo di ](media/teamscallout3.png)
- **routing** dello screenshot precedente è possibile scegliere **Attendant**, **seriale**o **Round Robin** come metodo di distribuzione. Tutte le code di chiamata nuove ed esistenti hanno il routing di Attendant selezionato per impostazione predefinita. Quando viene usato il routing di Attendant, la prima chiamata nella coda squilla tutti gli agenti di chiamata contemporaneamente. Il primo agente di chiamata a prendere la chiamata riceve la chiamata.
+ **routing** dello screenshot precedente è possibile scegliere l' **operatore**, il **seriale**, il **minimo più lungo**o il **Round Robin** come metodo di distribuzione. Tutte le code di chiamata nuove ed esistenti hanno il routing di Attendant selezionato per impostazione predefinita. Quando viene usato il routing di Attendant, la prima chiamata nella coda squilla tutti gli agenti di chiamata contemporaneamente. Il primo agente di chiamata a prendere la chiamata riceve la chiamata.
 
 - Il **routing degli assistenti** fa sì che la prima chiamata nella coda squilli tutti gli agenti di chiamata contemporaneamente. Il primo agente di chiamata a prendere la chiamata riceve la chiamata.
 - **Routing seriale** le chiamate in arrivo squillano tutti gli agenti di chiamata uno alla volta, dall'inizio dell'elenco agente chiamate. Non è possibile ordinare gli agenti nell'elenco agente chiamate. Se un agente respinge o non prende una chiamata, la chiamata suonerà l'agente successivo e proverà tutti gli agenti finché non viene prelevato o non viene ritirato.
+- Percorsi **inattivi più lunghi** la successiva chiamata disponibile all'agente di chiamata di cui è stato inattivo il periodo di tempo più lungo. Il tempo di inattività viene definito come il periodo di tempo in cui lo stato presenza di un agente di chiamata è impostato su **disponibile** o **fuori** sede (se inferiore a 10 minuti), al momento della chiamata. Se la presenza di un agente di chiamata è impostata su **assente** per più di 10 minuti, il timer di inattività viene reimpostato. Gli Stati di presenza degli utenti vengono interrogati ogni minuto.
+
+    È importante sapere che l'abilitazione di questa impostazione impone anche l'abilitazione del **routing basato sulla presenza** .
+
+    > [!IMPORTANT]
+    > Gli agenti che usano il client Skype for business non riceveranno chiamate quando è abilitata l'impostazione di inattività più lunga. Se si hanno agenti che usano Skype o business, non abilitare questa impostazione.
 - **Round Robin** bilancia il routing delle chiamate in arrivo in modo che ogni agente di chiamata ottenga lo stesso numero di chiamate dalla coda. Questo potrebbe essere auspicabile in un ambiente di vendita in entrata per assicurare la parità di opportunità tra tutti gli agenti di chiamata.
 
 ![Icona del numero 4, fa riferimento a un callout nello screenshot precedente il routing basato sulla presenza del routing basato ](media/teamscallout4.png)
- **Presence-based routing** sul posizionamento usa lo stato di disponibilità degli agenti di chiamata per determinare se un agente deve essere incluso nell'elenco di routing delle chiamate per il metodo di routing selezionato. Gli agenti di chiamata il cui stato di disponibilità è impostato su **disponibile** sono inclusi nell'elenco di routing delle chiamate e possono ricevere chiamate. Gli agenti il cui stato di disponibilità è impostato su qualsiasi altro stato sono esclusi dall'elenco di routing delle chiamate e non ricevono le chiamate finché il loro stato di disponibilità non torna a **disponibile**.
+ **Presence-based routing** sul posizionamento usa lo stato di disponibilità degli agenti di chiamata per determinare se un agente deve essere incluso nell'elenco di routing delle chiamate per il metodo di routing selezionato. Gli agenti di chiamata il cui stato di disponibilità è impostato su **disponibile** sono inclusi nell'elenco di routing delle chiamate e possono ricevere chiamate. Gli agenti il cui stato di disponibilità è impostato su qualsiasi altro stato sono esclusi dall'elenco di routing delle chiamate e non ricevono le chiamate finché il loro stato di disponibilità non torna a **disponibile**.  
 
 Puoi abilitare il routing delle chiamate basate sulla presenza con uno dei metodi di routing.
 
-Se un agente sceglie di ricevere chiamate, non verrà incluso nell'elenco di routing delle chiamate, indipendentemente dal tipo di stato di disponibilità impostato.
+Se un agente sceglie di ricevere chiamate, non verrà incluso nell'elenco di routing delle chiamate, indipendentemente dal tipo di stato di disponibilità impostato. 
 
 > [!IMPORTANT]
 > Gli agenti che usano il client Skype for business non sono inclusi nell'elenco di routing delle chiamate quando è abilitato il routing basato sulla presenza, indipendentemente dallo stato di disponibilità. Gli agenti che non sono presenti nell'elenco di routing delle chiamate non ricevono chiamate. Se si hanno agenti che usano Skype for business, non abilitare il routing delle chiamate basate sulla presenza.
@@ -267,11 +274,11 @@ L'impostazione predefinita è 30 secondi, ma può essere impostata per un massim
 - **Disconnetti** La chiamata è disconnessa.
 - **Reindirizza a** Quando si sceglie questo pulsante, selezionare una delle opzioni seguenti:
 
-  - **Persona nella tua azienda** Un utente online con una licenza di **sistema telefonico** ed essere abilitato per VoIP aziendale o avere un piano per le chiamate. È possibile configurarlo in modo che il chiamante possa essere inviato alla segreteria telefonica. A questo scopo, seleziona una **persona nella tua azienda** e imposta questa persona affinché le chiamate vengano inoltrate direttamente alla segreteria telefonica.
+  - **Persona nell'organizzazione** Un utente online con una licenza di **sistema telefonico** ed essere abilitato per VoIP aziendale o avere un piano per le chiamate. È possibile configurarlo in modo che il chiamante possa essere inviato alla segreteria telefonica. A questo scopo, seleziona una persona nell'organizzazione e imposta questa persona per inoltrare le chiamate direttamente alla segreteria telefonica.
 
   Per informazioni sulle licenze necessarie per la segreteria telefonica, vedere [configurare la segreteria telefonica cloud](set-up-phone-system-voicemail.md).
 
-  - **Applicazione vocale** Selezionare il nome di un account di risorsa associato a una coda di chiamata o a un operatore automatico già creato.
+  - **App vocale** Selezionare il nome di un account di risorsa associato a una coda di chiamata o a un operatore automatico già creato.
 
 * * *
 
@@ -285,7 +292,7 @@ Puoi impostare il valore di timeout in secondi, a intervalli di 15 secondi. In q
 
 - **Disconnetti** La chiamata è disconnessa.
 - **Reindirizzare la chiamata a** Quando si sceglie questa opzione, sono disponibili le opzioni seguenti:
-  - **Persona nella tua azienda** Un utente online con una licenza di **sistema telefonico** ed essere abilitato per VoIP aziendale o per avere piani di chiamata. Per configurarlo in modo che la persona che chiama può essere inviata alla segreteria telefonica, selezionare una **persona nella società** e impostare questa persona per inoltrare le chiamate direttamente alla segreteria telefonica.
+  - **Persona nell'organizzazione** Un utente online con una licenza di **sistema telefonico** ed essere abilitato per VoIP aziendale o per avere piani di chiamata. Per configurarlo in modo che la persona che chiama può essere inviata alla segreteria telefonica, selezionare una persona nell'organizzazione e impostare questa persona per inoltrare le chiamate direttamente alla segreteria telefonica.
 
   Per informazioni sulle licenze necessarie per la segreteria telefonica, vedere [configurare la segreteria telefonica cloud](set-up-phone-system-voicemail.md).
 

@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 491f4132d5f5c4c4e5d8215d0d48277a864cf064
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 4cd9b38f09d4936d2db895f3ae8861bcf65b8a4e
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905218"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44666028"
 ---
 # <a name="upgrade-from-skype-for-business-on-premises-to-teams"></a>Eseguire l'aggiornamento da Skype for business locale a teams
 
@@ -42,7 +42,7 @@ Questo articolo fa parte della fase di distribuzione e implementazione del viagg
 -   [Preparare l'organizzazione](https://aka.ms/SkypeToTeams-UserReadiness)
 -   [Condotto un pilota](https://aka.ms/SkypeToTeams-Pilot)
 
-Se si è implementato Skype for Business Server o Microsoft Lync locale e l'organizzazione vuole eseguire l'aggiornamento a teams, seguire le istruzioni in questo articolo. È necessario configurare la connettività ibrida con l'organizzazione di Office 365 e determinare i requisiti di coesistenza se si stanno spostando gli utenti in teams in fasi. 
+Se si è implementato Skype for Business Server o Microsoft Lync locale e l'organizzazione vuole eseguire l'aggiornamento a teams, seguire le istruzioni in questo articolo. È necessario configurare la connettività ibrida con l'organizzazione Microsoft 365 o Office 365 e determinare i requisiti di coesistenza se si stanno spostando gli utenti in teams in fasi. 
 
 > [!IMPORTANT]
 > Skype for Business Online verrà ritirato il 31 luglio 2021 e non sarà più accessibile o supportato. Per massimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, ti invitiamo a iniziare subito il tuo viaggio in Microsoft teams. Tieni presente che un aggiornamento corretto allinea la disponibilità tecnica e degli utenti, quindi assicurati di sfruttare le linee guida qui mentre navighi in Microsoft teams.

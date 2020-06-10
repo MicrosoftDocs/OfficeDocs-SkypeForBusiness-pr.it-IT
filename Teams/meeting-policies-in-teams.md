@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: 55f65bf14973b54b091e0a6c3ecdc3edf49e6ed3
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 726e14aef92eed8fe681d183b8e1cfd404e659ca
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/09/2020
-ms.locfileid: "44637965"
+ms.locfileid: "44665138"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -395,7 +395,6 @@ Per specificare il valore predefinito dell'utente **che può presentare** l'impo
 
 - **EveryoneUserOverride**: tutti i partecipanti alla riunione possono essere relatori. Questo è il valore predefinito. Questo parametro corrisponde all'impostazione **Everyone** in teams.
 - **EveryoneInCompanyUserOverride**: gli utenti autenticati dell'organizzazione, inclusi gli utenti guest, possono essere relatori. Questo parametro corrisponde all'impostazione **utenti nell'organizzazione** in teams.
-- **EveryoneInSameAndFederatedCompanyUserOverride**: gli utenti autenticati dell'organizzazione, inclusi gli utenti guest e gli utenti provenienti da organizzazioni federate, possono essere relatori. Questo parametro corrisponde all'impostazione **utenti dell'organizzazione e delle organizzazioni attendibili** in teams.
 - **OrganizerOnlyUserOverride**: solo l'organizzatore della riunione può essere un relatore e tutti i partecipanti alla riunione sono designati come partecipanti. Questo parametro corrisponde all'impostazione **solo me** in teams.
 
 Tieni presente che dopo aver impostato il valore predefinito, gli organizzatori della riunione possono comunque modificare questa impostazione in teams e scegliere chi può presentare nelle riunioni che pianificano.

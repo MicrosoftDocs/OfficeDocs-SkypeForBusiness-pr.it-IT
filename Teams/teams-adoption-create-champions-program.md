@@ -21,12 +21,12 @@ f1.keywords:
 description: Informazioni su come formare un team di campioni per promuovere l'adozione di team tramite la sensibilizzazione, l'adozione e l'istruzione nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e2c44be9ac59b3a7c076540b658cf27bf74ef0e8
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: 9f6a54a6da5aa12e92e6ae50960cca5e5faf6d0a
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350260"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44665998"
 ---
 # <a name="create-your-champions-program-for-microsoft-teams"></a>Creare il programma Champions per Microsoft Teams
 
@@ -45,7 +45,7 @@ I campioni devono:
 
 Usare la [Guida ai programmi di Champions](https://go.microsoft.com/fwlink/?linkid=854665) per creare questo programma nell'organizzazione. Le procedure consigliate per questa community sono:
 
-- Partecipare al programma Microsoft 365 o Microsoft Office 365 [Champions](https://aka.ms/O365Champions). Assicurarsi che almeno i responsabili del programma Champion (e potenzialmente tutti i campioni della società) siano membri del programma. Questa chiamata comunitaria gratuita e mensile fornirà informazioni preziose per l'uso di programmi personalizzati e per ottenere il massimo da team e altri servizi Microsoft 365 o Office 365. I materiali di programma possono essere riutilizzati nel programma interno.
+- Partecipare al [programma Champions](https://aka.ms/O365Champions). Assicurarsi che almeno i responsabili del programma Champions (e potenzialmente tutti i campioni della società) siano membri del programma. Questa chiamata comunitaria gratuita e mensile fornirà informazioni preziose per l'uso di programmi personalizzati e per ottenere il massimo da team e altri servizi Microsoft 365 o Office 365. I materiali di programma possono essere riutilizzati nel programma interno.
 
 - Usa il team campione di teamwork: i tuoi campioni dovrebbero usare il team che hai configurato per tutte le comunicazioni del programma, il feedback e per trovare le risorse.  In questo modo i clienti avranno sempre più familiarità con il prodotto e i suoi vantaggi.
 

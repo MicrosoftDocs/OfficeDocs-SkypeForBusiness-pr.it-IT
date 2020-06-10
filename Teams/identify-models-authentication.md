@@ -18,12 +18,12 @@ description: Informazioni sui diversi modelli di identità in Microsoft teams, a
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1ccddd3bacdd495fb6febb11871d6d501f0a666b
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 6c32783b96e5fdfe8c0f783a0fd27fd58a7f04c1
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/09/2020
-ms.locfileid: "44637205"
+ms.locfileid: "44665678"
 ---
 <a name="identity-models-and-authentication-in-microsoft-teams"></a>Modelli di identità e autenticazione in Microsoft Teams
 ==========================================
@@ -51,6 +51,7 @@ A seconda delle decisioni dell'organizzazione relative al modello di identità d
 
 Per ulteriori informazioni, vedere [scelta di un modello di accesso](https://go.microsoft.com/fwlink/?linkid=854626) e informazioni sui modelli di identità e sulle guide di [Azure Active Directory](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9) .
 
+
 <a name="multi-factor-authentication"></a>Autenticazione a più fattori
 ----------------------------
 
@@ -63,5 +64,5 @@ Una volta registrati gli utenti per l'AMF, la volta successiva che un utente acc
 
 |Tipo di tenant  |Opzioni di secondo fattore AMF disponibili  |Note  |
 |---------|---------|---------|
-|**Solo cloud**     |AMF per Microsoft 365 e Office 365 <ul><li>Chiamata telefonica</li><li>Messaggio di testo</li><li>Notifica di app per dispositivi mobili</li><li>Codice di verifica dell'app per dispositivi mobili</li></ul>        |[Pianificare l'autenticazione a più fattori per le distribuzioni di Microsoft 365](https://support.office.com/article/Plan-for-multi-factor-authentication-for-Office-365-Deployments-043807b2-21db-4d5c-b430-c8a6dee0e6ba)         |
-|**Configurazione ibrida (modello di identità sincronizzato o federato)**     |<ul><li>AMF per Microsoft 365 e Office 365</li><li>Modulo AMF di Azure (ADFS Integrated)</li><li>Smart Card fisica o virtuale (ADFS Integrated)</li></ul>         |Nota: sono disponibili altre soluzioni AMF con i [documenti di compatibilità dei provider di Azure ad Identity](https://www.microsoft.com/download/details.aspx?id=56843)         |
+|**Solo cloud**     |AMF per Microsoft 365 o Office 365 <ul><li>Chiamata telefonica</li><li>Messaggio di testo</li><li>Notifica di app per dispositivi mobili</li><li>Codice di verifica dell'app per dispositivi mobili</li></ul>        | |
+|**Configurazione ibrida (modello di identità sincronizzato o federato)**     |<ul><li>AMF per Microsoft 365 o Office 365</li><li>Modulo AMF di Azure (ADFS Integrated)</li><li>Smart Card fisica o virtuale (ADFS Integrated)</li></ul>         |Nota: sono disponibili altre soluzioni AMF con i [documenti di compatibilità dei provider di Azure ad Identity](https://www.microsoft.com/download/details.aspx?id=56843)         |

@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Informazioni su come recuperare i dati di Microsoft teams dal log di controllo.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 62b4c462cec58facca274883c98f1aad23042f16
-ms.sourcegitcommit: 1e7bc16969db01317ee482cabf681febae0ef51f
+ms.openlocfilehash: 609bf3065d160da46b6e65d20235a4451de83c5f
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44416736"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44665638"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams
 
@@ -93,7 +93,7 @@ Qui puoi rivedere le corrispondenze ai criteri impostati e apportare le eventual
 
 ### <a name="mass-delete-scenario"></a>Scenario di eliminazione di massa
 
-Come accennato in precedenza, è possibile monitorare gli scenari di eliminazione. È possibile creare un criterio che monitora l'eliminazione di massa dei siti di teams. In questo esempio viene configurato un criterio basato sugli avvisi per rilevare l'eliminazione di massa dei team in un intervallo di 30 minuti. 
+Come accennato in precedenza, è possibile monitorare gli scenari di eliminazione. È possibile creare un criterio che monitora l'eliminazione di massa dei siti di teams. In questo esempio viene configurato un criterio basato sugli avvisi per rilevare l'eliminazione di massa dei team in un intervallo di 30 minuti.
 
 ![Screenshot della pagina di creazione dei criteri che mostra l'impostazione di un criterio per il rilevamento dell'eliminazione di massa del team](media/TeamsMassDeletePolicy.png)
 
@@ -115,7 +115,7 @@ Quando viene attivato un criterio di attività, è possibile impostare avvisi e 
 
 I [criteri di rilevamento delle anomalie](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy) nella sicurezza delle app cloud consentono di usare le funzionalità utente e l'analisi comportamentale (Ueba) e l'apprendimento automatico (ml) in modo da poter eseguire immediatamente il rilevamento avanzato delle minacce nell'ambiente cloud. Dato che sono abilitati automaticamente, i nuovi criteri di rilevamento delle anomalie forniscono risultati immediati fornendo rilevamenti immediati, con l'obiettivo di numerose anomalie comportamentali tra gli utenti e i computer e i dispositivi connessi alla rete. I nuovi criteri espongono inoltre altri dati dal motore di rilevamento della sicurezza delle app cloud per velocizzare il processo di analisi e contenere le minacce in corso.
 
-Stiamo lavorando per integrare gli eventi dei team in criteri di rilevamento delle anomalie. Per ora è possibile configurare i criteri di rilevamento delle anomalie per altri prodotti Office e ottenere elementi di azione per gli utenti che soddisfano tali criteri. 
+Stiamo lavorando per integrare gli eventi dei team in criteri di rilevamento delle anomalie. Per ora è possibile configurare i criteri di rilevamento delle anomalie per altri prodotti Office e ottenere elementi di azione per gli utenti che soddisfano tali criteri.
 
 ## <a name="teams-activities"></a>Attività Teams
 
@@ -133,14 +133,21 @@ Ecco un elenco di tutti gli eventi registrati per le attività utente e amminist
 |Ruolo modificato dei membri del team    |MemberRoleChanged         |Un proprietario del team modifica il ruolo dei membri in un team. I valori seguenti indicano il tipo di ruolo assegnato all'utente. <br><br>**1** -indica il ruolo del proprietario.<br>**2** -indica il ruolo del membro.<br>**3** -indica il ruolo Guest.<br><br>La proprietà Members include anche il nome dell'organizzazione e l'indirizzo di posta elettronica del membro.        |
 |Impostazioni del team modificate    |TeamSettingChanged        |L'operazione TeamSettingChanged viene registrata quando si esegue l'esecuzione delle attività seguenti da parte di un proprietario del team. Per ognuna di queste attività viene visualizzata una descrizione dell'impostazione modificata (visualizzata tra parentesi) nella colonna **elemento** nei risultati della ricerca del log di controllo.<ul><li>Modifica il tipo di accesso per un team. I team possono essere impostati come privati o pubblici (**tipo di accesso al team**). Quando un team è privato (impostazione predefinita), gli utenti possono accedere al team solo su invito. Quando un team è pubblico, è individuabile da chiunque.</li><li>Modifica la classificazione delle informazioni di un team (**classificazione del team**). I dati del team, ad esempio, possono essere classificati come un impatto elevato, un impatto medio delle aziende o un impatto minimo sulle aziende.</li><li>Modifica il nome di un team (**nome del team**).</li><li>Modifica la descrizione del team (**Descrizione del team**).</li><li>Modifiche apportate alle impostazioni del team. Per accedere a queste impostazioni, il proprietario del team può fare clic con il pulsante destro del mouse su un team, scegliere **Gestisci team**e quindi fare clic sulla scheda **Impostazioni** . Per queste attività, il nome dell'impostazione modificata viene visualizzato nella colonna **elemento** nei risultati della ricerca del log di controllo.</li></ul>         |
 |Team creato    |TeamCreated         |Un utente crea un team.         |
+|Eliminate tutte le app dell'organizzazione|DeletedAllOrganizationApps           |Eliminate tutte le app dell'organizzazione dal catalogo.     |
+|App eliminata |AppDeletedFromCatalog           |Un'app è stata eliminata dal catalogo.     |
 |Canale eliminato     |ChannelDeleted         |Un utente elimina un canale da un team.         |
 |Team eliminato  |TeamDeleted            |Un proprietario del team Elimina un team.      |
+|App installata |AppInstalled         |È stata installata un'app.   |
+|App pubblicata |AppPublishedToCatalog           |Un'app è stata aggiunta al catalogo.     |
 |Bot rimosso dal team   |BotRemovedFromTeam         |Un utente rimuove un bot da un team.       |
 |Connettore rimosso     |ConnectorRemoved         |Un utente rimuove un connettore da un canale.         |
 |Membri rimossi    |MemberRemoved        |Un proprietario del team rimuove i membri da un team, un canale o una chat di gruppo.         |
 |Scheda rimosso    |TabRemoved         |Un utente rimuove una tabulazione da un canale.         |
+|App disinstallata |AppUninstalled           |È stata disinstallata un'app.     |
+|App aggiornata |AppUpdatedInCatalog           |Un'app è stata aggiornata nel catalogo.     |
 |Connettore aggiornato    |ConnectorUpdated         |Un utente ha modificato un connettore in un canale.         |
 |Scheda aggiornamento   |TabUpdated         |Un utente ha modificato una tabulazione in un canale.         |
+|App aggiornata |AppUpgraded           |Un'app è stata aggiornata alla versione più recente del catalogo.     |
 |L'utente ha eseguito l'accesso a teams     |TeamsSessionStarted         |Un utente accede a un client Microsoft teams. Questo evento non acquisisce le attività di aggiornamento del token.         |
 
 ## <a name="shifts-in-teams-activities"></a>Turni nelle attività di Teams
@@ -184,4 +191,4 @@ Puoi usare l'API di gestione attività di Office 365 per recuperare informazioni
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Eseguire ricerche nel log di controllo nel centro conformità di Microsoft 365](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c)
+- [Eseguire ricerche nel log di controllo nel centro conformità di Microsoft 365](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) 

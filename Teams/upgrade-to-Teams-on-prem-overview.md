@@ -18,14 +18,14 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 69efb8c74950ffdb4426049558caaf59254b4605
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 6a864828ce925ea289f27de1b3340a50770b4e88
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779803"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44665268"
 ---
-# <a name="upgrade-from-skype-for-business-to-teams-mdash-for-it-administrators"></a>Eseguire l'aggiornamento da Skype for business &mdash; a teams per gli amministratori IT
+# <a name="upgrade-from-skype-for-business-to-teams-mdash-for-it-administrators"></a>Eseguire l'aggiornamento da Skype for business a teams &mdash; per gli amministratori IT
 
 ## <a name="overview"></a>Panoramica
 
@@ -54,7 +54,7 @@ Con il metodo di funzionalità sovrapposte, gli utenti possono usare sia i team 
 - Le comunicazioni avviate dal client teams di un altro utente saranno sempre presenti nel client teams di un utente, *se l'altro utente si trova nella stessa organizzazione*. 
 - Le comunicazioni avviate dal client teams di un altro utente sbarcheranno sempre nel client Skype for business di un utente, *se l'altro utente si trova in un'organizzazione federata*.
 
-La modalità Islands è la modalità predefinita di TeamsUpgradePolicy per tutte le organizzazioni esistenti che non sono ancora TeamsOnly. Quando si assegna una licenza di Office 365, le licenze di Skype for business online vengono assegnate per impostazione predefinita. (Questo vale anche se l'utente è ospitato in locale in Skype for Business Server. Se l'utente è ospitato in locale o online, lascia la licenza di Skype for business online abilitata, perché è attualmente necessaria per la funzionalità completa di teams. In realtà, se non hai adottato alcuna procedura per modificare la configurazione predefinita, potresti avere già un uso significativo dei team nell'organizzazione.  Questo è uno dei vantaggi dell'approccio delle funzionalità sovrapposte. Consente l'adozione rapida e guidata dall'utente finale all'interno di un'organizzazione.
+La modalità Islands è la modalità predefinita di TeamsUpgradePolicy per tutte le organizzazioni esistenti che non sono ancora TeamsOnly. Quando si assegna una licenza Microsoft 365 o Office 365, per impostazione predefinita vengono assegnate entrambe le licenze teams e Skype for business online. (Questo vale anche se l'utente è ospitato in locale in Skype for Business Server. Se l'utente è ospitato in locale o online, lascia la licenza di Skype for business online abilitata, perché è attualmente necessaria per la funzionalità completa di teams. In realtà, se non hai adottato alcuna procedura per modificare la configurazione predefinita, potresti avere già un uso significativo dei team nell'organizzazione.  Questo è uno dei vantaggi dell'approccio delle funzionalità sovrapposte. Consente l'adozione rapida e guidata dall'utente finale all'interno di un'organizzazione.
 
 Affinché questo metodo funzioni in modo efficace, è necessario che tutti gli utenti eseguano contemporaneamente entrambi i client. Le chat in arrivo e le chiamate dall'interno dell'organizzazione a un utente in modalità isole possono atterrare nel client Skype for business o teams e questo non è sotto il controllo del destinatario. Dipende dal client usato dal mittente per avviare la comunicazione. Se il mittente e il destinatario si trovano in organizzazioni diverse, le chiamate in arrivo e le chat di un utente in modalità isole atterrano sempre nel client Skype for business.  
 
@@ -75,8 +75,8 @@ La tabella seguente riepiloga l'esperienza dei team per la modalità Islands e T
 
 | Esperienza Teams | In modalità Isole | In modalità TeamsOnly |
 |:------------------ | :------------------- | :------------------ |
-| Chat in arrivo e chiamate ricevute in:|  Teams o Skype for business | Teams |
-| Chiamate PSTN ricevute in: | Skype for Business <br>L'uso della funzionalità PSTN in teams non è supportato in modalità Islands.    | Teams |   
+| Chat in arrivo e chiamate ricevute in:|  Teams o Skype for business | Team |
+| Chiamate PSTN ricevute in: | Skype for Business <br>L'uso della funzionalità PSTN in teams non è supportato in modalità Islands.    | Team |   
  |Icone di presenza  | La presenza in Skype for business e teams è indipendente. Gli utenti possono visualizzare stati diversi per gli stessi utenti delle isole, a seconda del client che usano. | La presenza si basa esclusivamente sulle attività dell'utente in teams. Tutti gli altri utenti, indipendentemente dal client che usano, vedono quella presenza. | 
  | Pianificazione delle riunioni   | Gli utenti possono pianificare le riunioni in teams o in Skype for business. Vedranno entrambi i componenti aggiuntivi in Outlook. |   Gli utenti pianificano solo riunioni in teams. Solo il componente aggiuntivo teams è disponibile in Outlook. | 
 
@@ -148,7 +148,7 @@ Gli utenti con account Skype for business ospitati in locale [devono essere spos
 
 -   2 passaggi: dopo aver eseguito Move-CsUser, concedere la modalità TeamsOnly all'utente usando TeamsUpgradePolicy.
 
-A differenza di altri criteri, non è possibile creare nuove istanze di TeamsUpgradePolicy in Office 365. Tutte le istanze esistenti sono compilate nel servizio.  Tieni presente che la modalità è una proprietà all'interno di TeamsUpgradePolicy, piuttosto che il nome di un'istanza di criteri. In alcuni casi, ma non tutti, il nome dell'istanza di criterio corrisponde alla modalità. In particolare, per assegnare la modalità TeamsOnly a un utente, l'istanza "UpgradeToTeams" di TeamsUpgradePolicy viene assegnata all'utente. Per visualizzare un elenco di tutte le istanze, è possibile eseguire il comando seguente:
+A differenza di altri criteri, non è possibile creare nuove istanze di TeamsUpgradePolicy in Microsoft 365 o Office 365. Tutte le istanze esistenti sono compilate nel servizio.  Tieni presente che la modalità è una proprietà all'interno di TeamsUpgradePolicy, piuttosto che il nome di un'istanza di criteri. In alcuni casi, ma non tutti, il nome dell'istanza di criterio corrisponde alla modalità. In particolare, per assegnare la modalità TeamsOnly a un utente, l'istanza "UpgradeToTeams" di TeamsUpgradePolicy viene assegnata all'utente. Per visualizzare un elenco di tutte le istanze, è possibile eseguire il comando seguente:
 
 ```PowerShell
 Get-CsTeamsUpgradePolicy|ft Identity, Mode, NotifySfbUsers
@@ -238,7 +238,7 @@ Per l'opzione di aggiornamento delle funzionalità sovrapposte:
 
 - Considerare questa opzione se è possibile eseguire un aggiornamento rapido per l'organizzazione complessiva.  Poiché esiste un potenziale rischio di confusione con l'esecuzione di entrambi i client, è consigliabile riuscire a ridurre al minimo questo periodo di tempo. Dovresti assicurarti che gli utenti sappiano di eseguire entrambi i client.
 
-- Questa opzione è il modello box fuori sede e non richiede l'intervento dell'amministratore per iniziare a usare teams tranne che per assegnare la licenza di Office 365. Se gli utenti hanno già Skype for business online, è possibile che si trovi già in questo modello.
+- Questa opzione è il modello box fuori sede e non richiede l'intervento dell'amministratore per iniziare a usare teams tranne che per assegnare la licenza Microsoft 365 o Office 365. Se gli utenti hanno già Skype for business online, è possibile che si trovi già in questo modello.
 
 - Può essere difficile uscire dalla modalità di sovrapposizione delle funzionalità e passare a TeamsOnly. Poiché gli utenti aggiornati comunicano solo tramite Team, qualsiasi altro utente dell'organizzazione che comunica con l'utente deve usare teams.  Se si hanno utenti che non hanno iniziato a usare teams, verranno esposti a messaggi mancanti. Inoltre, non vedranno gli utenti di TeamsOnly online in Skype for business. Alcune organizzazioni scelgono di eseguire un aggiornamento a livello di tenant usando il criterio globale tenant per evitare questo problema, ma richiede l'attesa finché tutti gli utenti non saranno pronti per l'aggiornamento.
 
@@ -343,7 +343,7 @@ Questo articolo fornisce solo una panoramica di alto livello. Per altre informaz
 
 Questo è lo scenario di aggiornamento più semplice che include la voce. 
 
-1. Assicurarsi che agli utenti sia stata assegnata una licenza teams. Per impostazione predefinita, quando si assegna una licenza di Office 365, teams è abilitato, quindi, a meno che non sia stata disabilitata in precedenza la licenza teams, non è necessario eseguire alcuna azione.
+1. Assicurarsi che agli utenti sia stata assegnata una licenza teams. Per impostazione predefinita, quando si assegna una licenza Microsoft 365 o Office 365, teams è abilitato, quindi, a meno che non sia stata disabilitata in precedenza la licenza teams, non è necessario eseguire alcuna azione.
 
 2.  Se gli utenti hanno già un piano di chiamata Microsoft con un numero di telefono, l'unica modifica necessaria consiste nell'assegnare la modalità di TeamsOnly utente in TeamsUpgradePolicy.  Prima di assegnare la modalità TeamsOnly, le chiamate PSTN in arrivo sbarcheranno nel client Skype for business dell'utente. Dopo l'aggiornamento alla modalità TeamsOnly, le chiamate PSTN in arrivo sbarcheranno nel client Teams dell'utente.  
 
@@ -365,7 +365,7 @@ I passaggi di base sono elencati di seguito.  I passaggi 1-4 sono elencati nella
 
 5. Aggiornare l'utente: questi passaggi devono essere coordinati. 
 
-   - In Office 365 aggiornare l'utente alla modalità TeamsOnly (Grant-CsTeamsUpgradePolicy).
+   - In Microsoft 365 o Office 365 aggiornare l'utente alla modalità TeamsOnly (Grant-CsTeamsUpgradePolicy).
    - In SBC configurare il routing vocale per abilitare le chiamate in arrivo inviando le chiamate al routing diretto anziché al server di mediazione locale.
 
 
@@ -383,7 +383,7 @@ I passaggi di base sono elencati di seguito.  I passaggi 1-5 sono elencati nella
 
 4. Se lo si desidera, configurare i diversi criteri di team per questi utenti (ad esempio TeamsMessagingPolicy, TeamsMeetingPolicy e così via). Questa operazione può essere eseguita in qualsiasi momento, ma se si vuole garantire che gli utenti abbiano la configurazione corretta quando vengono aggiornati, è consigliabile eseguire questa operazione prima che l'utente venga aggiornato a TeamsOnly.
 
-5. Assegnare le licenze di Office 365, se necessario.  L'utente dovrebbe avere sia teams che Skype for business online Plan 2, oltre a un sistema telefonico. Se il piano 2 di Skype for business online è disabilitato, riattivarlo.  
+5. Assegnare le licenze Microsoft 365 o Office 365, se necessario.  L'utente dovrebbe avere sia teams che Skype for business online Plan 2, oltre a un sistema telefonico. Se il piano 2 di Skype for business online è disabilitato, riattivarlo.  
 
 6. Aggiornare l'utente: questi passaggi devono essere coordinati. 
 
@@ -391,7 +391,7 @@ I passaggi di base sono elencati di seguito.  I passaggi 1-5 sono elencati nella
 
    - In SBC configurare il routing vocale per abilitare le chiamate in arrivo inviando le chiamate al routing diretto anziché al server di mediazione locale. 
 
-   - In Office 365: assegnare il OnlineVoiceRoutingPolicy pertinente per abilitare le chiamate in uscita. 
+   - In Microsoft 365 o Office 365: assegnare il OnlineVoiceRoutingPolicy pertinente per abilitare le chiamate in uscita. 
 
 
 ### <a name="from-skype-for-business-server-on-premises-with-enterprise-voice-to-microsoft-calling-plan"></a>Da Skype for Business Server locale, con Enterprise Voice, al piano per le chiamate Microsoft
@@ -406,7 +406,7 @@ I passaggi di base sono elencati di seguito.I passaggi 1-5 sono elencati nella s
 
 3. Se lo si desidera, configurare i diversi criteri di team per questi utenti, ad esempio TeamsMessagingPolicy, TeamsMeetingPolicy e così via. Questa operazione può essere eseguita in qualsiasi momento, ma se si vuole garantire che gli utenti abbiano la configurazione corretta quando vengono aggiornati, è consigliabile eseguire questa operazione prima che l'utente venga aggiornato a TeamsOnly. 
 
-4. Assegnare le licenze di Office 365, se necessario.L'utente dovrebbe avere sia teams che Skype for business online Plan 2, oltre a un sistema telefonico. Se il piano 2 di Skype for business online è disabilitato, riattivarlo.  
+4. Assegnare le licenze Microsoft 365 o Office 365, se necessario.L'utente dovrebbe avere sia teams che Skype for business online Plan 2, oltre a un sistema telefonico. Se il piano 2 di Skype for business online è disabilitato, riattivarlo.  
 
 5. Ottenere i numeri di telefono per gli utenti. Per informazioni dettagliate, vedere [gestire i numeri di telefono per l'organizzazione](https://docs.microsoft.com/MicrosoftTeams/manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization).
 
@@ -556,7 +556,7 @@ In entrambi i casi, il trasferimento di contatti da Skype for business a teams �
 
 [Linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](migration-interop-guidance-for-teams-with-skype.md) 
 
-[Configurare la connettività ibrida tra Skype for Business Server e Office 365](https://docs.microsoft.com/SkypeForBusiness/hybrid/configure-hybrid-connectivity)
+[Configurare la connettività ibrida tra Skype for Business Server e Microsoft 365 o Office 365](https://docs.microsoft.com/SkypeForBusiness/hybrid/configure-hybrid-connectivity)
 
 [Spostare utenti tra locale e cloud](https://docs.microsoft.com/SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud)
 

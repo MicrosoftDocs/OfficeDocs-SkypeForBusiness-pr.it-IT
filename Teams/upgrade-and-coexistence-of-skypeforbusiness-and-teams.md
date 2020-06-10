@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 44dfc985f213141e20e15eb29198004d10030280
-ms.sourcegitcommit: 8395f91205bde549a0a92999ef00c5f5fb03fb80
+ms.openlocfilehash: bcb1570a87740d899a5f92957c0335e70d7f91ba
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2020
-ms.locfileid: "44583449"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44665418"
 ---
 # <a name="choose-your-upgrade-journey-from-skype-for-business-to-teams"></a>Scegliere il viaggio di aggiornamento da Skype for business a teams
 
@@ -83,7 +83,7 @@ Quando si usa il metodo di funzionalità sovrapposte, il traffico delle comunica
 
 - Le comunicazioni avviate dal client Teams da un *utente di un'organizzazione esterna* verranno sempre atterrate nel client Skype for business di un utente.
 
-Se è stata assegnata una licenza di Office 365 agli utenti, questa sarà l'esperienza di aggiornamento predefinita per l'organizzazione. Quando si assegna una licenza di Office 365, le licenze di Skype for business online vengono assegnate per impostazione predefinita. <sup>2</sup>
+Se è stata assegnata una licenza Microsoft 365 o Office 365 agli utenti, questa sarà l'esperienza di aggiornamento predefinita per l'organizzazione. Quando si assegna una licenza Microsoft 365 o Office 365, per impostazione predefinita vengono assegnate entrambe le licenze teams e Skype for business online. <sup>2</sup>
 
 Affinché questo metodo funzioni efficacemente, tutti gli utenti devono eseguire entrambi i client contemporaneamente. Le chat in arrivo e le chiamate dall'interno dell'organizzazione a un utente in modalità isole possono atterrare nel client Skype for business o teams e questo non è sotto il controllo del destinatario. Dipende dal client usato dal mittente per avviare la comunicazione. Se il mittente e il destinatario si trovano in organizzazioni diverse, le chiamate in arrivo e le chat di un utente in modalità isole atterrano sempre nel client Skype for business.
 
@@ -178,7 +178,7 @@ Nella tabella seguente vengono riepilogati i metodi di aggiornamento:
 |L'interoperabilità tra Skype for business e teams non esiste mentre entrambi gli utenti sono in modalità isole.      |L'interoperabilità è necessaria per la comunicazione tra Skype for business e gli utenti teams.         |
 
 > [!NOTE]
-> Se non si riesce a seguire i metodi supportati per la migrazione degli utenti di Skype for Business Server a teams, è possibile eseguire la transizione degli utenti a teams rimuovendo Skype for Business Server e tutti gli attributi utente correlati in Active Directory. Dopo che gli attributi di Azure Active Directory sono stati eliminati dagli attributi di Skype for Business Server e i record DNS sono stati ripuntati su Office 365, è possibile concedere la licenza agli utenti di Office 365 e aggiornarli a teams. 
+> Se non si riesce a seguire i metodi supportati per la migrazione degli utenti di Skype for Business Server a teams, è possibile eseguire la transizione degli utenti a teams rimuovendo Skype for Business Server e tutti gli attributi utente correlati in Active Directory. Dopo che gli attributi di Azure Active Directory sono stati eliminati dagli attributi di Skype for Business Server e i record DNS sono stati ripuntati su Microsoft 365 o Office 365, sarebbe quindi possibile concedere la licenza agli utenti in Microsoft 365 o Office 365 e aggiornarli a teams. 
 
 > [!IMPORTANT]
 > Con la migrazione completa, i dati di contatto e le riunioni non verranno migrati dall'ambiente locale a Microsoft teams.

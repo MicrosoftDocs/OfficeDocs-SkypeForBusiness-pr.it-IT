@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6aa61c739910e00a277f6c3f201222ac5eb782da
-ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
+ms.openlocfilehash: ec46cfed6c39593dc32b155374f5cf9478d73ad0
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44523019"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44666048"
 ---
 # <a name="prepare-your-environment-for-upgrading-to-teams"></a>Preparare l'ambiente per l'aggiornamento a teams
 
@@ -43,7 +43,7 @@ Per guidare un aggiornamento riuscito delle squadre nell'organizzazione, è impo
 Completare queste attività in parallelo con la preparazione degli utenti:
 
 - [Preparare il personale it](upgrade-prepare-IT-pros.md) per assicurarsi di avere ciò che serve per un viaggio di aggiornamento riuscito.
-- Verificare che l'ambiente soddisfi tutti i [prerequisiti](upgrade-plan-journey-prerequisites.md)e comprendere le dipendenze tra i servizi e i team di Office 365.
+- Verificare che l'ambiente soddisfi tutti i [prerequisiti](upgrade-plan-journey-prerequisites.md)e comprendere le dipendenze tra Microsoft 365 o i servizi e i team di Office 365.
 - [Valutare l'ambiente](upgrade-plan-journey-evaluate-environment.md) eseguendo l'individuazione ambientale usando un questionario di esempio per confermare la disponibilità dell'organizzazione a eseguire un viaggio di aggiornamento riuscito ai team.
 - [Preparare la rete](prepare-network.md) attraverso la pianificazione, la preparazione e l'esecuzione di tutti i passaggi necessari per il risanamento della rete per supportare i carichi di lavoro dei team.
 - [Preparare il servizio](upgrade-prepare-environment-prepare-service.md) per l'implementazione tramite elenchi di controllo onboarding per assicurarsi che la configurazione dei team sia pronta per supportare la migrazione degli utenti da Skype for business a teams.

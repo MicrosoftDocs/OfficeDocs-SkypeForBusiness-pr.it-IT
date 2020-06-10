@@ -24,16 +24,16 @@ ms.custom:
 - ms.teamsadmincenter.users.activity.audioqualitycolumn
 - Reporting
 description: Usare i dettagli di analisi delle chiamate su dispositivi, reti e connettività per risolvere i problemi degli utenti con le chiamate e le riunioni di Microsoft teams e Skype for business.
-ms.openlocfilehash: 05af82a942d54e0f97f2be2b176091f19186cbf4
-ms.sourcegitcommit: 48f64fa38509cf7141b944cd3da60409ec51860b
+ms.openlocfilehash: 71a1e1c339c502da5cbbf998c75e758f2bbe3be2
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43749563"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44665248"
 ---
 # <a name="use-call-analytics-to-troubleshoot-poor-call-quality"></a>Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate
 
-L'analisi delle chiamate consente di risolvere i problemi di chiamata o di connessione con Microsoft teams e Skype for business. Chiamata analitica Mostra informazioni dettagliate sui dispositivi, le reti e la connettività per le chiamate e le riunioni di ogni utente nell'account di Office 365. Se le informazioni relative a compilazione, sito e tenant sono state aggiunte all'analisi delle chiamate, verranno visualizzate anche per ogni chiamata e sessione. Le informazioni disponibili tramite le funzionalità di analisi delle chiamate consentono di individuare il motivo per cui un utente ha ricevuto una chiamata o un'esperienza di riunione scadente. 
+L'analisi delle chiamate consente di risolvere i problemi di chiamata o di connessione con Microsoft teams e Skype for business. Chiamata analitica Mostra informazioni dettagliate sui dispositivi, le reti e la connettività per le chiamate e le riunioni di ogni utente nell'account Microsoft 365 o Office 365. Se le informazioni relative a compilazione, sito e tenant sono state aggiunte all'analisi delle chiamate, verranno visualizzate anche per ogni chiamata e sessione. Le informazioni disponibili tramite le funzionalità di analisi delle chiamate consentono di individuare il motivo per cui un utente ha ricevuto una chiamata o un'esperienza di riunione scadente. 
   
 ## <a name="call-analytics-permissions"></a>Autorizzazioni di analisi delle chiamate
 
@@ -60,7 +60,7 @@ Vedere l'amministratore di teams e Skype for business se serve aiuto con le auto
 
 1. Accedere con le credenziali di supporto delle comunicazioni teams o di amministratore teams.
 
-2. Nel Web browser andare a *https://admin.teams.microsoft.com*.
+2. Nel Web browser andare a *https://admin.teams.microsoft.com* .
     
 3. Nel **Dashboard**, in **ricerca utente**, iniziare a digitare il nome o l'indirizzo SIP dell'utente le cui chiamate si vuole risolvere o selezionare **Visualizza utenti** per visualizzare un elenco di utenti.
     

@@ -20,12 +20,12 @@ ms.custom:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft teams per semplificare, snellire e garantire la coerenza quando si gestiscono i criteri per i gruppi di utenti.
-ms.openlocfilehash: 62151d9356e414f0f527e597492be685c0067fd0
-ms.sourcegitcommit: 86b0956680b867b8bedb2e969220b8006829ee53
+ms.openlocfilehash: 0fc612f4f04e0a57176ac985b40de029d42c5e9e
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44412526"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44669415"
 ---
 # <a name="manage-policy-packages-in-microsoft-teams"></a>Gestire i pacchetti di criteri in Microsoft Teams
 
@@ -35,7 +35,7 @@ Quando si assegna un pacchetto di criteri agli utenti, i criteri del pacchetto v
 
 I pacchetti di criteri non sono disponibili per le organizzazioni di community Cloud (GCC) degli Stati Uniti.
 
-## <a name="what-is-a-policy-package"></a>Che cos'è un pacchetto di criteri?
+## <a name="what-is-a-policy-package"></a>Che cos'è un pacchetto di criteri
 
 I pacchetti di criteri consentono di controllare le caratteristiche dei team che si desidera concedere o limitare per set specifici di persone nell'organizzazione. Ogni pacchetto di criteri in teams è progettato intorno a un ruolo utente e include criteri predefiniti e impostazioni dei criteri che supportano le attività di collaborazione e comunicazione tipiche di tale ruolo.
 
@@ -53,10 +53,8 @@ I team attualmente includono i seguenti pacchetti di criteri.
 |Information Worker sanitari  |Crea un set di criteri e impostazioni dei criteri che forniscono agli Information Worker come personale IT, personale informatico, personale finanziario e responsabili della conformità, accesso completo alla chat, alle chiamate e alle riunioni.|
 |Sala paziente sanitaria  |Crea un set di criteri e impostazioni dei criteri applicabili alle sale del paziente nell'organizzazione sanitaria.|
 |Utente di piccole e medie imprese (Business Voice) |Crea un criterio di configurazione dell'app che include le app per un'esperienza di Business Voice.|
-|Utente di piccole e medie imprese (senza Business Voice) |Crea un set di criteri e impostazioni dei criteri applicabili agli utenti di piccole e medie imprese senza le funzionalità vocali aziendali.|
+|Utente di piccole e medie imprese (senza Business Voice) |Crea un criterio di configurazione dell'app pertinente per gli utenti di team commerciali di piccole e medie dimensioni (non-Business Voice Experience).
 |Addetto alla sicurezza pubblica   |Crea un set di criteri e impostazioni dei criteri applicabili agli addetti alla sicurezza pubblica dell'organizzazione.|
-
-
 
 > [!NOTE]
 > Aggiungeremo altri pacchetti di criteri nelle versioni future dei team, quindi controlla le informazioni più aggiornate.  

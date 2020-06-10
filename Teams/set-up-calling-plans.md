@@ -23,12 +23,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni su come configurare i piani per le chiamate, inclusi i piani di visualizzazione disponibili nella propria area geografica, acquistare & assegnare licenze, ottenere numeri di telefono e aggiungere indirizzi di emergenza & posizioni.
-ms.openlocfilehash: 08db669cfb7ddb75f6a73610f112c682a016354b
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: 84dbff3ed660f6d436f01f0737141d8b261c1318
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042403"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44666238"
 ---
 # <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
 
@@ -57,7 +57,7 @@ Esistono tre modi per ottenere nuovi numeri utente:
 - **Utilizzare un modulo di richiesta per nuovi numeri.** A volte, a seconda del paese o dell'area geografica, non potrai ottenere i nuovi numeri di telefono usando l'interfaccia di amministrazione di teams oppure avrai bisogno di numeri di telefono o codici di area specifici. In questo caso è necessario scaricare un modulo di richiesta, compilarlo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md). 
 
 ## <a name="step-4-add-emergency-addresses-and-locations-for-your-organization"></a>Passaggio 4: aggiungere indirizzi e posizioni di emergenza per l'organizzazione
-<a name="bkmk_add_addresses"> </a> Un indirizzo di emergenza deve essere associato a un numero di telefono. Quando questa associazione si verifica può variare tra paese e aree geografiche. Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito, è necessario associare un indirizzo di emergenza per il numero di telefono quando si desidera ottenere i numeri di telefono da Office 365 o il trasferimento di numeri di telefono da provider di servizi corrente. 
+<a name="bkmk_add_addresses"> </a> Un indirizzo di emergenza deve essere associato a un numero di telefono. Quando questa associazione si verifica può variare tra paese e aree geografiche. Ad esempio, negli Stati Uniti, è necessario associare un indirizzo di emergenza quando si assegna il numero di telefono per l'utente. Nel Regno Unito è necessario associare un indirizzo di emergenza al numero di telefono quando si ottengono i numeri di telefono da Microsoft 365 o Office 365 o quando si trasferiscono i numeri di telefono dal provider di servizi corrente. 
 
 Per informazioni sulle chiamate di emergenza e sulla gestione degli indirizzi di emergenza, vedere [gestire le chiamate di emergenza](what-are-emergency-locations-addresses-and-call-routing.md) e [aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-remove-emergency-location-organization.md).
     

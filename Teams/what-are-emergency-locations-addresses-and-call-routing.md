@@ -24,12 +24,12 @@ ms.custom:
 - Direct Routing
 - seo-marvel-mar2020
 description: Informazioni sulle chiamate in caso di emergenza, incluse indicazioni su indirizzi di emergenza, routing delle chiamate di emergenza e chiamate di emergenza dinamiche.
-ms.openlocfilehash: 889446ca08289ccb15128bee8ca6b6170398c599
-ms.sourcegitcommit: d8e05e66311725f8ff6d28011355129baeb305b3
+ms.openlocfilehash: b41b7e9b4442e10cf3ca352a9d6460f2d537b43e
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44539493"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44665158"
 ---
 # <a name="manage-emergency-calling"></a>Gestire le chiamate di emergenza
 
@@ -84,7 +84,7 @@ Quando la posizione deve essere associata al numero di telefono dipende dal paes
 
 - Negli Stati Uniti e in Canada, ad esempio, è necessaria una posizione di emergenza quando un numero viene assegnato a un utente.
 
-- Per altri paesi, &mdash; ad esempio in Europa, Medio Oriente e Africa (EMEA) &mdash; è necessaria una posizione di emergenza quando si riceve il numero di telefono da Office 365 o quando viene trasferito da un altro provider o gestore di servizi.
+- Per altri paesi, ad esempio in Europa, Medio Oriente e Africa (EMEA), è necessaria una posizione di emergenza quando si riceve il numero di telefono da Microsoft 365 o Office 365 o quando viene trasferito da un altro provider o gestore di servizi.
 
 ### <a name="dynamic-emergency-calling"></a>Chiamate di emergenza dinamiche
 

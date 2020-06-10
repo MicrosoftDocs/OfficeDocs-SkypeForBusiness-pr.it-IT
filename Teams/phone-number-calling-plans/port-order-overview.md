@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.voice.phonenumbers.porting.overview
 - Calling Plans
 description: Informazioni generali sugli ordini di trasferimento e su come trasferire i numeri di telefono dal provider di servizi in teams.
-ms.openlocfilehash: 0102adfd53dba3ff455ddbdbc3678e625fd978de
-ms.sourcegitcommit: 2d44f1a673316daf0aca3149571b24a63ca72772
+ms.openlocfilehash: bc15d7be98f83b39a7dde006e3043b407b76a63e
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/11/2020
-ms.locfileid: "43227540"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44665898"
 ---
 # <a name="whats-a-port-order"></a>Cos'è un ordine di portabilità?
 
@@ -65,7 +65,7 @@ In generale, è possibile trasferire qualsiasi numero di telefono proveniente da
 
 - Numeri di telefono VoIP di un provider di telefonia, ad esempio Vonage o RingCentral.
 
-- Numeri di telefono ibridi Skype for business. Se vuoi trasferire questi numeri, inviaci una e-mail all' <ptn@microsoft.com>indirizzo.
+- Numeri di telefono ibridi Skype for business. Se vuoi trasferire questi numeri, inviaci una e-mail all'indirizzo <ptn@microsoft.com> .
 
   **Non è possibile trasferire:**
   
@@ -112,7 +112,7 @@ Ad esempio, è necessario inviare una richiesta di conversione numero univoco pe
 
 - Numeri per dispositivi mobili
 
-- Numeri di servizio che possono essere usati per i servizi di audioconferenza in Office 365.
+- Numeri di servizio che possono essere usati per i servizi di audioconferenza in Microsoft 365 o Office 365.
 
 Ecco altre informazioni su come inviare richieste di conversione del numero per ognuno di questi tipi di numeri:
   
@@ -131,7 +131,7 @@ Ecco altre informazioni su come inviare richieste di conversione del numero per 
 
 Dopo aver completato la richiesta di un ordine di trasferimento, è necessario tra 7-14 giorni per l'elaborazione. Tuttavia, a seconda del provider di servizi, possono essere necessarie fino a 30 giorni. Dopo il trasferimento dei numeri di telefono, riceverai un messaggio di posta elettronica da parte dell'utente che ti permetterà di essere pronto.
   
-Per controllare lo stato dell'ordine di trasferimento, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a**numeri di telefono** **vocale** > e quindi fai clic su **Cronologia ordini**. Ogni stato dell'ordine di porta è elencato nella colonna **stato** .
+Per controllare lo stato dell'ordine di trasferimento, nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Voice**, passa a  >  **numeri di telefono**vocale e quindi fai clic su **Cronologia ordini**. Ogni stato dell'ordine di porta è elencato nella colonna **stato** .
   
 ## <a name="can-user-subscriber-phone-numbers-be-converted-to-service-numbers"></a>I numeri di telefono can User (Subscriber) possono essere convertiti in numeri di servizio?
 <a name="bkmk_type_1"> </a>

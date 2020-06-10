@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bea614da76bd61cf7c29b0e8f150f1aac85223a7
-ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
+ms.openlocfilehash: 34502fe9883c98179a6b2e23cd8360ae823c1853
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44523159"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "44666018"
 ---
 # <a name="upgrade-from-a-skype-for-business-on-premises-deployment-to-teams"></a>Eseguire l'aggiornamento da una distribuzione locale di Skype for business a teams
 
@@ -54,7 +54,7 @@ Per altre informazioni, vedere [distribuire la connettività ibrida tra Skype fo
 
 ## <a name="step-2-implement-your-chosen-upgrade-journey-for-your-organization"></a>Passaggio 2: implementare il viaggio di aggiornamento scelto per l'organizzazione
 
-Dopo aver completato la configurazione ibrida, è possibile pianificare la migrazione degli utenti a Office 365.
+Dopo aver completato la configurazione ibrida, è possibile pianificare di trasferire gli utenti a Microsoft 365 o Office 365.
 
 Per altre informazioni, vedere:
 
@@ -64,8 +64,8 @@ Per altre informazioni, vedere:
 
 ## <a name="phone-system-and-teams-upgrade"></a>Aggiornamento di sistema telefonico e teams
 
-La transizione dai sistemi telefonici locali ai team consente di sfruttare il routing diretto del sistema telefonico ("Direct routing") o i piani di chiamata forniti da Microsoft per Office 365.
+La transizione dai sistemi telefonici locali ai team consente di sfruttare il routing diretto del sistema telefonico ("Direct routing") o i piani per le chiamate fornite da Microsoft per Microsoft 365 o Office 365.
 
-Se non si usano i piani per le chiamate in Office 365, è necessario eseguire la transizione della distribuzione vocale aziendale al routing diretto del sistema telefonico nell'ambito dell'aggiornamento a teams.
+Se non si usano i piani di chiamata, è necessario eseguire la transizione della distribuzione di VoIP aziendale al routing diretto del sistema telefonico nell'ambito dell'aggiornamento a teams.
 
-Per altre informazioni, vedere [considerazioni aggiuntive per il routing diretto del sistema telefonico](https://docs.microsoft.com/MicrosoftTeams/2-envision-make-my-service-decisions-direct-routing). Se si prevede di usare i piani per le chiamate in Office 365, vedere le indicazioni per [trasferire i numeri di telefono in teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
+Per altre informazioni, vedere [considerazioni aggiuntive per il routing diretto del sistema telefonico](https://docs.microsoft.com/MicrosoftTeams/2-envision-make-my-service-decisions-direct-routing). Se si prevede di usare i piani per le chiamate, vedere le indicazioni per [trasferire i numeri di telefono in teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
