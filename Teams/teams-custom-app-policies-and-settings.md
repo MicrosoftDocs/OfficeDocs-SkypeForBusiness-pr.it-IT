@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.tooltip.allowsideloading
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - seo-marvel-mar2020
-ms.openlocfilehash: a0002ed8312f2a100ab61aa98923c7f4aeb0dc26
-ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
+ms.openlocfilehash: b368b0f81a4ce6bcdf3416ec597b702534e4a857
+ms.sourcegitcommit: 54ce623c4db792b5e33f5db00e575afc88776b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326783"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44698276"
 ---
 # <a name="manage-custom-app-policies-and-settings-in-microsoft-teams"></a>Gestire i criteri e le impostazioni dell'app personalizzata in Microsoft Teams
 
@@ -123,10 +123,10 @@ Ad esempio, supponiamo che tu voglia consentire solo ai proprietari del team di 
 
 |Impostazione dell'app personalizzata a livello di organizzazione |Impostazione dell'app personalizzata del team |Criteri delle app personalizzate per l'utente |Effetto  |
 |---------|---------|---------|---------|
-| Disattivare    | Disattivare    | Disattivare     |L'interazione con tutte le app personalizzate è bloccata per l'organizzazione. Le app personalizzate non possono essere caricate da nessuno. Puoi usare PowerShell per rimuovere l'app personalizzata.   |
-| Disattivare     | Disattivare     | Nella        |L'interazione con tutte le app personalizzate è bloccata per l'organizzazione. Le app personalizzate non possono essere caricate da nessuno. Puoi usare PowerShell per rimuovere l'app personalizzata.         |
-| Disattivare    | Nella        | Disattivare        |L'interazione con tutte le app personalizzate è bloccata per l'organizzazione. Le app personalizzate non possono essere caricate da nessuno. Puoi usare Windows PowerShell per eliminare app personalizzate.         |
-| Disattivare    | Nella      | Nella       |L'interazione con tutte le app personalizzate è bloccata per l'organizzazione. Le app personalizzate non possono essere caricate da nessuno. Puoi usare PowerShell per rimuovere l'app personalizzata.         |
+| Disattivare    | Disattivare    | Disattivare     |L'interazione con tutte le app personalizzate è bloccata per l'organizzazione. Le app personalizzate non possono essere caricate da nessuno eccetto un amministratore del servizio teams o un amministratore globale. Puoi usare PowerShell per rimuovere l'app personalizzata.   |
+| Disattivare     | Disattivare     | Nella        |L'interazione con tutte le app personalizzate è bloccata per l'organizzazione. Le app personalizzate non possono essere caricate da nessuno eccetto un amministratore del servizio teams o un amministratore globale. Puoi usare PowerShell per rimuovere l'app personalizzata.         |
+| Disattivare    | Nella        | Disattivare        |L'interazione con tutte le app personalizzate è bloccata per l'organizzazione. Le app personalizzate non possono essere caricate da nessuno eccetto un amministratore del servizio teams o un amministratore globale. Puoi usare Windows PowerShell per eliminare app personalizzate.         |
+| Disattivare    | Nella      | Nella       |L'interazione con tutte le app personalizzate è bloccata per l'organizzazione. Le app personalizzate non possono essere caricate da nessuno eccetto un amministratore del servizio teams o un amministratore globale. Puoi usare PowerShell per rimuovere l'app personalizzata.         |
 | Nella    | Disattivare       | Disattivare         |  L'utente non può caricare app personalizzate.      |
 | Nella     | Disattivare       | Nella         | Se l'utente è un proprietario del team, può caricare le app personalizzate nel team. Se l'utente non è un proprietario del team, non può caricare le app personalizzate nel team. L'utente può caricare app personalizzate nel contesto personale.     |
 | Nella     | Nella     | Disattivare         | L'utente non può caricare app personalizzate.       |

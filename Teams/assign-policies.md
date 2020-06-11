@@ -18,12 +18,12 @@ description: Scopri i diversi modi per assegnare i criteri agli utenti in Micros
 f1keywords:
 - ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
-ms.openlocfilehash: ae007641734b71a34d9021283704d6b210626a28
-ms.sourcegitcommit: 86b0956680b867b8bedb2e969220b8006829ee53
+ms.openlocfilehash: 098e55aa5f4096ac80e6f54e191e6c9d48d90826
+ms.sourcegitcommit: 54ce623c4db792b5e33f5db00e575afc88776b61
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44410461"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44698286"
 ---
 # <a name="assign-policies-to-your-users-in-microsoft-teams"></a>Assegnare i criteri agli utenti in Microsoft Teams
 
@@ -93,7 +93,7 @@ Si può anche procedere nel modo seguente:
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-Ogni tipo di criterio include il proprio set di cmdlet per la gestione. Usa il ```Grant-``` cmdlet per un tipo di criteri specifico per assegnare i criteri. Ad esempio, usa il ```Grant-CsTeamsMeetingPolicy``` cmdlet per assegnare un criterio di riunione teams agli utenti. Questi cmdlet sono inclusi nel modulo di PowerShell per Skype for business online e sono documentati nella Guida di [riferimento ai cmdlet di Skype for business](https://docs.microsoft.com/powershell/skype/intro?view=skype-ps).
+Ogni tipo di criterio ha un proprio set di cmdlet per la gestione. Usa il ```Grant-``` cmdlet per un tipo di criteri specifico per assegnare i criteri. Ad esempio, usa il ```Grant-CsTeamsMeetingPolicy``` cmdlet per assegnare un criterio di riunione teams agli utenti. Questi cmdlet sono inclusi nel modulo di PowerShell per Skype for business online e sono documentati nella Guida di [riferimento ai cmdlet di Skype for business](https://docs.microsoft.com/powershell/skype/intro?view=skype-ps).
 
  Scaricare e installare il [modulo di PowerShell per Skype for business online](https://www.microsoft.com/en-us/download/details.aspx?id=39366) (se non è già stato fatto), quindi eseguire le operazioni seguenti per connettersi a Skype for business online e avviare una sessione.
 
@@ -135,9 +135,9 @@ Per visualizzare lo stato dell'assegnazione dei criteri, nell'intestazione visua
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
  
-Con l'assegnazione di criteri batch è possibile assegnare un criterio a set di utenti di grandi dimensioni alla volta senza dover usare uno script. Puoi usare il ```New-CsBatchPolicyAssignmentOperationd``` cmdlet per inviare un batch di utenti e i criteri che vuoi assegnare. Le assegnazioni vengono elaborate come operazione in background e viene generato un ID operazione per ogni batch. Puoi quindi usare il ```Get-CsBatchPolicyAssignmentOperation``` cmdlet per tenere traccia dello stato di avanzamento e dello stato delle assegnazioni in un batch. 
+Con l'assegnazione di criteri batch è possibile assegnare un criterio a set di utenti di grandi dimensioni alla volta senza dover usare uno script. Puoi usare il ```New-CsBatchPolicyAssignmentOperation``` cmdlet per inviare un batch di utenti e i criteri che vuoi assegnare. Le assegnazioni vengono elaborate come operazione in background e viene generato un ID operazione per ogni batch. Puoi quindi usare il ```Get-CsBatchPolicyAssignmentOperation``` cmdlet per tenere traccia dello stato di avanzamento e dello stato delle assegnazioni in un batch. 
 
-È possibile specificare gli utenti in base all'ID oggetto, al nome dell'entità utente (UPN), all'indirizzo SIP (Session Initiation Protocol) o all'indirizzo di posta elettronica. Se un batch include utenti duplicati, i duplicati verranno rimossi dal batch prima che l'elaborazione e lo stato vengano forniti solo per gli utenti univoci rimasti nel batch. 
+Puoi specificare gli utenti in base al loro ID oggetto o all'indirizzo SIP (Session Initiation Protocol). Tieni presente che l'indirizzo SIP di un utente ha spesso lo stesso valore del nome dell'entità utente (UPN) o dell'indirizzo di posta elettronica, ma non è necessario. Se un utente viene specificato con il proprio UPN o tramite posta elettronica, ma ha un valore diverso rispetto all'indirizzo SIP, l'assegnazione dei criteri non riesce per l'utente. Se un batch include utenti duplicati, i duplicati verranno rimossi dal batch prima che l'elaborazione e lo stato vengano forniti solo per gli utenti univoci rimasti nel batch. 
 
 Un batch può contenere fino a 5.000 utenti. Per ottenere risultati ottimali, non inviare più di alcuni batch alla volta. Consentire ai batch di completare l'elaborazione prima di inviare più batch.
 
@@ -181,12 +181,12 @@ $user_ids = Get-Content .\users_ids.txt
 New-CsBatchPolicyAssignmentOperation -PolicyType TeamsAppSetupPolicy -PolicyName "HR App Setup Policy" -Identity $users_ids -OperationName "Example 1 batch"
 ```
 
-In questo esempio, ci connettiamo ad Azure AD per recuperare una raccolta di utenti e quindi assegnare un criterio di messaggistica denominato nuovi criteri di messaggistica di noleggio a un batch di utenti specificato tramite il proprio UPN.
+In questo esempio, ci connettiamo ad Azure AD per recuperare una raccolta di utenti e quindi assegnare un criterio di messaggistica denominato nuovi criteri di messaggistica di noleggio a un batch di utenti specificato tramite l'indirizzo SIP.
 
 ```powershell
 Connect-AzureAD
 $users = Get-AzureADUser
-New-CsBatchPolicyAssignmentOperation -PolicyType TeamsMessagingPolicy -PolicyName "New Hire Messaging Policy" -Identity $users.UserPrincipalName -OperationName "Example 2 batch"
+New-CsBatchPolicyAssignmentOperation -PolicyType TeamsMessagingPolicy -PolicyName "New Hire Messaging Policy" -Identity $users.SipProxyAddress -OperationName "Example 2 batch"
 ```
 
 Per altre informazioni, vedere [New-CsBatchPolicyAssignmentOperation](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicyassignmentoperation).
@@ -365,7 +365,7 @@ Get-CsUserPolicyAssignment -Identity daniel@contoso.com -PolicyType TeamsMeeting
 
 Nell'output viene indicato che all'utente sono stati assegnati direttamente i criteri di riunione per le riunioni di teams denominati eventi dei dipendenti, che hanno la precedenza sui criteri denominati fornitori di eventi live assegnati a un gruppo a cui appartiene l'utente.
 
-```
+```console
 AssignmentType PolicyName         Reference
 -------------- ----------         ---------
 Direct         Employee Events
@@ -390,10 +390,9 @@ New-CsBatchPolicyAssignmentOperation -OperationName "Assigning null at bulk" -Po
 
 Con l'assegnazione di un pacchetto di criteri batch, puoi assegnare un pacchetto di criteri a set di grandi dimensioni di utenti alla volta senza dover usare uno script. Si usa il ```New-CsBatchPolicyPackageAssignmentOperation``` cmdlet per inviare un batch di utenti e il pacchetto di criteri che si vuole assegnare. Le assegnazioni vengono elaborate come operazione in background e viene generato un ID operazione per ogni batch. Puoi quindi usare il ```Get-CsBatchPolicyAssignmentOperation``` cmdlet per tenere traccia dello stato di avanzamento e dello stato delle assegnazioni in un batch.
 
-Un batch può contenere fino a 20.000 utenti. È possibile specificare gli utenti per l'ID oggetto, l'UPN, l'indirizzo SIP o l'indirizzo di posta elettronica.
+Puoi specificare gli utenti in base al loro ID oggetto o all'indirizzo SIP (Session Initiation Protocol). Tieni presente che l'indirizzo SIP di un utente ha spesso lo stesso valore del nome dell'entità utente (UPN) o dell'indirizzo di posta elettronica, ma non è necessario. Se un utente viene specificato con il proprio UPN o tramite posta elettronica, ma ha un valore diverso rispetto all'indirizzo SIP, l'assegnazione dei criteri non riesce per l'utente. Se un batch include utenti duplicati, i duplicati verranno rimossi dal batch prima che l'elaborazione e lo stato vengano forniti solo per gli utenti univoci rimasti nel batch. 
 
-> [!IMPORTANT]
-> Al momento consigliamo di assegnare pacchetti di criteri in batch di utenti di 5.000 alla volta. Durante questi periodi di maggiore domanda, potresti riscontrare ritardi nei tempi di elaborazione. Per ridurre al minimo l'impatto di questi tempi di elaborazione più elevati, ti consigliamo di inviare dimensioni batch più piccole fino a utenti di 5.000 e inviare ogni batch solo dopo il completamento di quello precedente. L'invio di batch all'esterno dell'orario di lavoro normale può anche essere utile.
+Un batch può contenere fino a 5.000 utenti. Per ottenere risultati ottimali, non inviare più di alcuni batch alla volta. Consentire ai batch di completare l'elaborazione prima di inviare più batch.
 
 ### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo di PowerShell di Microsoft Teams
 
