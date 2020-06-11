@@ -18,16 +18,16 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-apr2020
-ms.openlocfilehash: 038312f2dc63778111bd58ae93bfc5afab56750c
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 7acb172e7a7785773ce4a8f80d76d8c9781f9c7e
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904051"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690402"
 ---
-<a name="edit-guest-user-information"></a><span data-ttu-id="bedd3-103">Modificare le informazioni degli utenti guest</span><span class="sxs-lookup"><span data-stu-id="bedd3-103">Edit guest user information</span></span>
+<a name="edit-guest-user-information"></a><span data-ttu-id="6e5cc-103">Modificare le informazioni degli utenti guest</span><span class="sxs-lookup"><span data-stu-id="6e5cc-103">Edit guest user information</span></span>
 ===========================
 
-<span data-ttu-id="bedd3-104">Per modificare gli account Guest, ad esempio il nome visualizzato o la foto del profilo, accedere al portale di Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="bedd3-104">To edit guest accounts (such as display name or profile photo), go to your Azure Active Directory portal.</span></span> <span data-ttu-id="bedd3-105">Per altre informazioni, vedere [comprendere l'identità di Office 365 e Azure Active Directory](https://support.office.com/article/Understanding-Office-365-Identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9).</span><span class="sxs-lookup"><span data-stu-id="bedd3-105">For more information, see [Understanding Office 365 identity and Azure Active Directory](https://support.office.com/article/Understanding-Office-365-Identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9).</span></span>
+<span data-ttu-id="6e5cc-104">Per modificare gli account Guest, ad esempio il nome visualizzato o la foto del profilo, accedere al portale di Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="6e5cc-104">To edit guest accounts (such as display name or profile photo), go to your Azure Active Directory portal.</span></span> <span data-ttu-id="6e5cc-105">Per altre informazioni, vedere [concetti relativi a identità ed Azure Active Directory](https://support.office.com/article/Understanding-Office-365-Identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9).</span><span class="sxs-lookup"><span data-stu-id="6e5cc-105">For more information, see [Understanding identity and Azure Active Directory](https://support.office.com/article/Understanding-Office-365-Identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9).</span></span>
 
-<span data-ttu-id="bedd3-106">Attualmente non è possibile modificare le informazioni Guest dall'interfaccia di amministrazione di Microsoft teams, dall'interfaccia di amministrazione di Microsoft 365 o dall'interfaccia di amministrazione di Exchange.</span><span class="sxs-lookup"><span data-stu-id="bedd3-106">Currently, you can't edit guest information from the Microsoft Teams admin center, the Microsoft 365 admin center, or the Exchange admin center.</span></span>
+<span data-ttu-id="6e5cc-106">Attualmente non è possibile modificare le informazioni Guest dall'interfaccia di amministrazione di Microsoft teams, dall'interfaccia di amministrazione di Microsoft 365 o dall'interfaccia di amministrazione di Exchange.</span><span class="sxs-lookup"><span data-stu-id="6e5cc-106">Currently, you can't edit guest information from the Microsoft Teams admin center, the Microsoft 365 admin center, or the Exchange admin center.</span></span>
