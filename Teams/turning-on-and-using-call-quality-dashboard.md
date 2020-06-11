@@ -24,12 +24,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate.
-ms.openlocfilehash: 9a1c7cb451f722d019a4119daf8ab9c3a08c810f
-ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
+ms.openlocfilehash: 965392e02fa0ff24b38c8191b7b2a7aef904a723
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44243577"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44697445"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -347,7 +347,7 @@ Il dashboard report di riepilogo di Call Quality dashboard include una pagina di
 - Una mappa di endpoint da fare/modello/tipo di endpoint e così via.
   
 > [!NOTE]
-> Le etichette di segnalazione che si caricano in Call Quality dashboard verranno gestite come *dati di supporto* sotto il contratto per Office 365, incluse le eventuali informazioni che altrimenti verrebbero considerate dati *dei clienti* o *dati personali*. Non includere dati che non si desidera concedere a Microsoft come *dati di supporto*, queste informazioni saranno visibili agli ingegneri Microsoft per scopi di supporto.
+> Le etichette di segnalazione che si caricano in Call Quality dashboard verranno gestite come *dati di supporto* sotto il contratto per Microsoft 365 o Office 365, incluse le eventuali informazioni che sarebbero altrimenti considerate dati *dei clienti* o *dati personali*. Non includere dati che non si desidera concedere a Microsoft come *dati di supporto*, queste informazioni saranno visibili agli ingegneri Microsoft per scopi di supporto.
 
 ![Screenshot: Mostra i dati del tenant di Call Quality dashboard](media/839c9ab4-0246-46c9-8402-aafd83a0bc63.png)
   

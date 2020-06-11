@@ -24,16 +24,16 @@ ms.custom:
 - ms.teamsadmincenter.audioconferencing.bridgesettings
 - seo-marvel-mar2020
 description: Modificare le impostazioni del Bridge di conferenza audio, incluse le notifiche di entrata e uscita, i nomi di riproduzione o i numeri di telefono, i toni e i chiamanti per registrare il nome.
-ms.openlocfilehash: 48028ccb3f2a0664f9fa724ec91e1dfc0177326f
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: acebe42e8dbc5707238975c34ce97961c1493d91
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780345"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690912"
 ---
 # <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un bridge per audioconferenza
 
-Quando si configurano i servizi di audioconferenza in Office 365, si riceveranno i numeri di telefono per gli utenti provenienti da un Bridge per audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono. Questi numeri di telefono vengono usati quando i chiamanti accedono a una riunione. Il numero di telefono è incluso nella parte inferiore dell'invito alla riunione di Skype for business o Microsoft teams.
+Quando si configurano i servizi di audioconferenza in Microsoft 365 o Office 365, si riceveranno i numeri di telefono per gli utenti provenienti da un Bridge di audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono. Questi numeri di telefono vengono usati quando i chiamanti accedono a una riunione. Il numero di telefono è incluso nella parte inferiore dell'invito alla riunione di Skype for business o Microsoft teams.
   
 Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiamante di ricevere le istruzioni vocali usando un operatore automatico della riunione e quindi, a seconda delle impostazioni, può riprodurre le notifiche, chiedere ai chiamanti di registrare il proprio nome e controllare le impostazioni del PIN. I PIN vengono assegnati agli organizzatori della riunione per consentire loro di avviare una riunione quando non usano un'app Skype for business o Microsoft teams.
 
@@ -45,7 +45,7 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
 
 ## <a name="an-icon-showing-the-microsoft-teams-logo-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) Usando l'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > . 
+1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni. 
 
 2. Nella parte superiore della pagina **ponti conferenza** fare clic su **Impostazioni Bridge**. 
 
@@ -72,7 +72,7 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
 
  **Impostare l'esperienza della riunione quando i chiamanti partecipano a una riunione**
     
-1. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, vai a**impostazioni di Microsoft Bridge**per **Audio conferencing** > audioconferenza.
+1. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, **Vai a**  >  **impostazioni di Microsoft Bridge**per audioconferenza.
     
 2. Nella pagina **Impostazioni Bridge Microsoft** , in **esperienza di partecipazione a una riunione**, selezionare:
     
@@ -92,9 +92,9 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
   
 1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
     
-2. Accedere all'interfaccia di **Amministrazione** > di Microsoft 365**Skype for business**.
+2. Accedere all'interfaccia di **amministrazione di Microsoft 365**  >  **Skype for business**.
     
-3. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, **Vai a** > **impostazioni di Microsoft Bridge**per audioconferenza.
+3. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, **Vai a**  >  **impostazioni di Microsoft Bridge**per audioconferenza.
     
 4. Nella pagina **Impostazioni Bridge Microsoft** , in **sicurezza**, immettere il numero di cifre desiderato per il PIN nell'elenco **lunghezza PIN** e quindi fare clic su **Salva**.
     
@@ -105,9 +105,9 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
   
 1. Accedere con l'account di lavoro o dell'Istituto di istruzione.
     
-2. Accedere all'interfaccia di **Amministrazione** > di Microsoft 365**Skype for business**.
+2. Accedere all'interfaccia di **amministrazione di Microsoft 365**  >  **Skype for business**.
     
-3. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, **Vai a** > **impostazioni di Microsoft Bridge**per audioconferenza.
+3. Nell'interfaccia di **amministrazione di Skype for business**, nella barra di spostamento sinistra, **Vai a**  >  **impostazioni di Microsoft Bridge**per audioconferenza.
     
 4. Nella pagina **Impostazioni Bridge Microsoft** selezionare o deselezionare **Invia automaticamente i messaggi di posta elettronica agli utenti se le informazioni di accesso esterno vengono modificate**e quindi fare clic su **Salva**.
     
@@ -117,11 +117,11 @@ Il Bridge per i servizi di conferenza risponde a una chiamata e chiede al chiama
 
 - Per risparmiare tempo o automatizzare questo processo, puoi usare il cmdlet [set-CsDialinConferencingBridge](https://go.microsoft.com/fwlink/?LinkId=617686) .
     
-- Windows PowerShell riguarda la gestione degli utenti e le azioni che sono autorizzati o meno a eseguire. Con Windows PowerShell puoi gestire Office 365 tramite un unico punto di amministrazione, che ti agevola il lavoro quotidiano quando hai molte attività da svolgere. Per iniziare a usare Windows PowerShell, vedi i seguenti argomenti:
+- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere i seguenti argomenti:
     
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
     
-  - [Modi migliori per gestire Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Procedure consigliate per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
     
 - Windows PowerShell offre numerosi vantaggi in termini di velocità, semplicità e produttività solo con l'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche all'impostazione per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
     

@@ -17,12 +17,12 @@ f1.keywords:
 description: Protocolli di routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a66213214457648ec0b699d77bdadc96113fba27
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 264e7e3de8031e8ac150c186078ff3d7ccff2f16
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43780685"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691222"
 ---
 # <a name="direct-routing---sip-protocol"></a>Routing diretto-protocollo SIP
 
@@ -30,7 +30,7 @@ Questo articolo descrive il modo in cui il routing diretto implementa il SIP (Se
 
 ## <a name="processing-the-incoming-request-finding-the-tenant-and-user"></a>Elaborazione della richiesta in arrivo: individuazione del tenant e dell'utente
 
-In una chiamata in arrivo, il proxy SIP deve trovare il tenant a cui è destinata la chiamata e trovare l'utente specifico all'interno del tenant. L'amministratore del tenant può configurare i numeri non DID, ad esempio + 1001, in più tenant. Di conseguenza, è importante trovare il tenant specifico in cui eseguire la ricerca di numeri perché i numeri non DID potrebbero essere uguali in più organizzazioni di Office 365.  
+In una chiamata in arrivo, il proxy SIP deve trovare il tenant a cui è destinata la chiamata e trovare l'utente specifico all'interno del tenant. L'amministratore del tenant può configurare i numeri non DID, ad esempio + 1001, in più tenant. Di conseguenza, è importante trovare il tenant specifico in cui eseguire la ricerca di numeri perché i numeri non DID potrebbero essere gli stessi in più organizzazioni Microsoft 365 o Office 365.  
 
 Questa sezione descrive il modo in cui il proxy SIP trova il tenant e l'utente ed esegue l'autenticazione di SBC sulla connessione in ingresso.
 
@@ -56,11 +56,11 @@ Alla ricezione dell'invito, il proxy SIP esegue i passaggi seguenti:
 
 2. Provare a trovare un tenant usando il nome FQDN completo presentato nell'intestazione del contatto.  
 
-   Verificare che il nome FQDN dell'intestazione del contatto (sbc1.adatum.biz) sia registrato come nome DNS in qualsiasi organizzazione di Office 365. Se trovata, la ricerca dell'utente viene eseguita nel tenant che ha il nome di dominio completo SBC registrato come Domain Name. Se non viene trovato, il passaggio 3 si applica.   
+   Verificare che il nome FQDN dell'intestazione del contatto (sbc1.adatum.biz) sia registrato come nome DNS in qualsiasi organizzazione Microsoft 365 o Office 365. Se trovata, la ricerca dell'utente viene eseguita nel tenant che ha il nome di dominio completo SBC registrato come Domain Name. Se non viene trovato, il passaggio 3 si applica.   
 
 3. Il passaggio 3 si applica solo se il passaggio 2 non è riuscito. 
 
-   Rimuovere la porzione host dall'FQDN, presentata nell'intestazione del contatto (FQDN: sbc12.adatum.biz, dopo aver rimosso la porzione host: adatum.biz) e verificare se questo nome è registrato come nome DNS in qualsiasi organizzazione di Office 365. Se trovata, la ricerca dell'utente viene eseguita in questo tenant. Se non viene trovata, la chiamata non riesce.
+   Rimuovere la porzione host dall'FQDN, presentata nell'intestazione del contatto (FQDN: sbc12.adatum.biz, dopo aver rimosso la porzione host: adatum.biz) e verificare se questo nome è registrato come nome DNS in qualsiasi organizzazione Microsoft 365 o Office 365. Se trovata, la ricerca dell'utente viene eseguita in questo tenant. Se non viene trovata, la chiamata non riesce.
 
 4. Usando il numero di telefono presentato nell'URI della richiesta, eseguire la ricerca in numero inverso all'interno del tenant disponibile nel passaggio 2 o 3. Corrispondere al numero di telefono presentato a un URI SIP dell'utente all'interno del tenant trovato nel passaggio precedente.
 
@@ -82,7 +82,7 @@ Questo nome deve essere anche il nome comune o i campi nome alternativo oggetto 
 
 Il supporto per i caratteri jolly è descritto in [RFC 2818, sezione 3,1](https://tools.ietf.org/html/rfc2818#section-3.1). Specificamente
 
-*"I nomi possono contenere il carattere \* jolly che si ritiene corrisponda a qualsiasi singolo componente del nome di dominio o frammento di componente. Ad esempio, \*. a.com corrisponde a foo.a.com ma non a bar.foo.a.com. f\*. com corrisponde a foo.com ma non a bar.com. "*
+*"I nomi possono contenere il carattere jolly \* che si ritiene corrisponda a qualsiasi singolo componente del nome di dominio o frammento di componente. Ad esempio, \* . a.com corrisponde a foo.a.com ma non bar.foo.a.com. f \* . com corrisponde a foo.com ma non a bar.com. "*
 
 Se più di un valore nell'intestazione del contatto presentato in un messaggio SIP viene inviato dall'SBC, viene usata solo la parte FQDN del primo valore dell'intestazione del contatto.
 

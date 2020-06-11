@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10d52aca36d92029f8ee832be84e6dc7d140f749
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: f95a38727a886187e6bf01b0a4ec64e5546b627d
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43902881"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689652"
 ---
 <a name="quick-start-guide-configuring-calling-plans-in-microsoft-teams"></a>Guida introduttiva: configurazione di piani di chiamata in Microsoft Teams
 ==============================================================
@@ -36,7 +36,7 @@ Leggere il 12 dicembre 2017, annuncio dei piani di chiamata in teams: [le comuni
 > [!NOTE]
 > È consigliabile, in parallelo con questa Guida introduttiva, leggere il [sistema telefonico con i piani](calling-plan-landing-page.md) per le chiamate e [FastTrack](https://aka.ms/cloudvoice) per pianificare e guidare un implementazione di successo.
 
-Con l'aggiunta di piani di chiamata-una funzionalità di Office 365 alimentata da Skype for business-ora è possibile usare team per effettuare e ricevere chiamate telefoniche da o verso linee terrestri e telefoni cellulari tramite la rete PSTN (Public Switched Telephone Network).
+Con l'aggiunta di piani di chiamata: una caratteristica Microsoft 365 e Office 365 alimentata da Skype for business, ora è possibile usare team per effettuare e ricevere telefonate da o verso linee terrestri e telefoni cellulari tramite la rete PSTN (Public Switched Telephone Network).
 
 ![Screenshot che mostra la pagina dei contatti in teams](media/Calling_in_Teams.png)
 ## <a name="prerequisites-for-enabling-the-calls-tab-in-teams"></a>Prerequisiti per l'abilitazione della scheda **chiamate** in teams

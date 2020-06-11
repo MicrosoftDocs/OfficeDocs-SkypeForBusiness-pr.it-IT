@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bcc9aa13f80a090d65bd51c00b797c2a2ad63c61
-ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
+ms.openlocfilehash: fc1619a751bc6e800ac038486b844de748c6b0b6
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44523329"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691042"
 ---
 # <a name="understand-microsoft-teams-and-skype-for-business-coexistence-and-interoperability"></a>Informazioni sulla coesistenza e l'interoperabilità di Microsoft teams e Skype for business
 
@@ -54,7 +54,7 @@ Ti consigliamo di esaminare le seguenti modalità di coesistenza per determinare
 
 ### <a name="islands-mode"></a>Modalità Isole
 
-Per impostazione predefinita, gli utenti possono eseguire teams insieme a Skype for business come due soluzioni separate che garantiscono funzionalità simili e sovrapposte, ad esempio presenza, chat, chiamate e riunioni. Gli utenti di teams possono anche sfruttare le nuove funzionalità di collaborazione come team e canali, accedere ai file in Office 365 e applicazioni.
+Per impostazione predefinita, gli utenti possono eseguire teams insieme a Skype for business come due soluzioni separate che garantiscono funzionalità simili e sovrapposte, ad esempio presenza, chat, chiamate e riunioni. Gli utenti di teams possono anche sfruttare le nuove funzionalità di collaborazione come team e canali, accedere ai file in Microsoft 365 o Office 365 e applicazioni.
 
 In questa modalità di coesistenza, denominata **Islands**, ognuna delle applicazioni client funziona come un'isola separata. I colloqui di Skype for business con Skype for business e i colloqui di teams con teams. È previsto che gli utenti eseguano entrambi i client in qualsiasi momento e possano comunicare in modo nativo nel client da cui è stata avviata la comunicazione. Di conseguenza, non c'è bisogno di interoperabilità in modalità **isole** .
 
@@ -91,7 +91,7 @@ Per altre considerazioni su come passare alla modalità **solo teams** , vedere 
 
 ### <a name="skype-for-business-with-teams-collaboration"></a>Collaborazione tra Skype for business e teams
 
-Usa questa modalità per introdurre team nell'ambiente mentre continui a sfruttare gli investimenti esistenti in Skype for business. In questa modalità si lascia invariati Skype for business per le funzionalità di chat, chiamate e riunioni e si aggiungono le funzionalità di collaborazione dei team, ovvero team e canali, l'accesso ai file in Office 365 e le applicazioni. Le funzionalità di comunicazione di teams: chat privata, chiamate e riunioni di programmazione sono disattivate per impostazione predefinita in questa modalità.
+Usa questa modalità per introdurre team nell'ambiente mentre continui a sfruttare gli investimenti esistenti in Skype for business. In questa modalità si lascia invariati Skype for business per le funzionalità di chat, chiamate e riunioni e si aggiungono le funzionalità di collaborazione dei team, ovvero team e canali, l'accesso ai file in Microsoft 365 o Office 365 e le applicazioni. Le funzionalità di comunicazione di teams: chat privata, chiamate e riunioni di programmazione sono disattivate per impostazione predefinita in questa modalità.
 
 Le organizzazioni che hanno un punto di partenza di Skype for Business Server in locale o ibrido dovrebbero considerare questa modalità come alternativa alla modalità **isole** , se vogliono dare agli utenti l'interoperabilità e la prevedibilità per le comunicazioni, oltre ad avere una sequenza temporale prevedibile per il loro aggiornamento ai team (invece di affidarsi alla saturazione dell'adozione in modalità **isole** ).
 
@@ -142,7 +142,7 @@ Gli utenti di Skype for business possono effettuare chiamate vocali e video uno-
 <!--![Screen shot of Interop calling experience from Teams](media/Interop_calling_experience_from_Teams.png "Interop calling experience from Teams")-->
 
 > [!Important]
-> Le esperienze di interoperabilità con una distribuzione locale di Skype for business richiedono che l'ambiente locale sia in modalità ibrida con Office 365 Skype for business. Per informazioni dettagliate, vedi indicazioni per la [migrazione e l'interoperabilità](https://aka.ms/SkypeToTeams-Interop).
+> Le esperienze di interoperabilità con una distribuzione locale di Skype for business richiedono che l'ambiente locale sia in modalità ibrida con Microsoft 365 o Office 365 Skype for business. Per informazioni dettagliate, vedi indicazioni per la [migrazione e l'interoperabilità](https://aka.ms/SkypeToTeams-Interop).
 
 Queste esperienze di interoperabilità sono disponibili per e tra gli utenti che hanno una delle seguenti modalità di coesistenza assegnate: **Skype for business con collaborazione teams**, **Skype for business con collaborazione e riunioni di Team**, **solo Skype for business**o **solo teams**. Non c'è interoperabilità per gli utenti in modalità **isole** .
 

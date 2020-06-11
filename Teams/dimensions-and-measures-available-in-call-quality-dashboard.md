@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottenere informazioni dettagliate sulle dimensioni e sulle misure usate dal dashboard qualità chiamata per Microsoft teams e Skype for business online.
-ms.openlocfilehash: 93e7857c2e63f7b13986898ac8e9973c2be189de
-ms.sourcegitcommit: 000515147632c6278bcda4505a1038014dda8e2f
+ms.openlocfilehash: 2dfef2dbe1bb94574911ab94d8da0cff50410592
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232587"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691282"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard"></a>Dimensioni e misure disponibili nel dashboard qualità chiamata
 
@@ -121,8 +121,8 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | First Inside Corp  | Enumerazione <br/>**Valori possibili:** <br/> All'interno, all'esterno  | Indica se il primo endpoint si trova in una subnet all'interno della rete aziendale, in base alla mappatura subnet dei dati dell'edificio tenant. Per impostazione predefinita, l'endpoint viene considerato esterno. <br/> **Valore di esempio:** Dentro | |
 | Second Inside Corp  | Enumerazione <br/> **Valori possibili:** <br/> All'interno, all'esterno | Indica se il secondo endpoint si trova in una subnet all'interno della rete aziendale, in base alla mappatura subnet dei dati dell'edificio tenant. Per impostazione predefinita, l'endpoint viene considerato esterno. <br/>**Valore di esempio:** Dentro  |  |
 |**Deployment**| | | |
-| First Tenant Id  | Stringa  | ID tenant Office 365 per il primo endpoint. <br/> **Valore di esempio:** 00000000 — 0000 -0000-0000 — 000000000000  | <br/>&bull;Non è stato possibile determinare l'ID tenant per il primo endpoint. Questo potrebbe indicare che l'endpoint è stato connesso a una distribuzione locale di Skype for Business Server.  |
-| Second Tenant Id  | Stringa  | ID tenant Office 365 per il secondo endpoint. <br/> **Valore di esempio:** 00000000 — 0000-0000-0000 — 000000000000  |  <br/>&bull;Non è stato possibile determinare l'ID tenant per il secondo endpoint. Questo potrebbe indicare che l'endpoint è stato connesso a una distribuzione locale di Skype for Business Server.  |
+| First Tenant Id  | Stringa  | ID tenant per il primo endpoint. <br/> **Valore di esempio:** 00000000 — 0000 -0000-0000 — 000000000000  | <br/>&bull;Non è stato possibile determinare l'ID tenant per il primo endpoint. Questo potrebbe indicare che l'endpoint è stato connesso a una distribuzione locale di Skype for Business Server.  |
+| Second Tenant Id  | Stringa  | ID tenant per il secondo endpoint. <br/> **Valore di esempio:** 00000000 — 0000-0000-0000 — 000000000000  |  <br/>&bull;Non è stato possibile determinare l'ID tenant per il secondo endpoint. Questo potrebbe indicare che l'endpoint è stato connesso a una distribuzione locale di Skype for Business Server.  |
 | First Pool  | Stringa  | FQDN pool Skype for Business Online assegnato al primo endpoint. <br/> **Valore di esempio:** pool1 <span></span> . Lync <span></span> . com  | <br/>&bull;Indica che l'endpoint è stato effettuato l'accesso a Microsoft teams o Skype for business. Questo campo viene popolato solo per i flussi usando le distribuzioni locali di Skype for Business Server. |
 | Second Pool  | Stringa  | FQDN pool Skype for Business Online assegnato al secondo endpoint. <br/> **Valore di esempio:** <span>pool1.Lync.com</span>   | &bull;Non è stato possibile determinare il pool di Skype for business online per il secondo endpoint. Questo potrebbe indicare che l'endpoint è stato connesso a una distribuzione locale di Skype for Business Server.  |
 | Is Federated  | Boolean  | True se i flussi sono stati tra due tenant federati, false in caso contrario.   | <br/>&bull;Non è stato possibile determinare se si trattava di un flusso federato <br/>&bull;Alcuni dati di segnalazione non sono stati raccolti   |
@@ -455,7 +455,7 @@ I valori booleani sono sempre true o false. In alcuni casi, true può essere rap
 
 Le dimensioni fornite come intervallo o gruppo di valori sono indicate utilizzando il formato seguente:
 
- _\<stringa ordine di ordinamento \> [limite \< inferiore incluso il \>  -  \< limite superiore esclusivo\>_
+ _\<sort order string\> [\<lower bound inclusive\> - \<upper bound exclusive\>_
 
 Ad esempio, la dimensione Durata (Minuti) rappresenta la durata della chiamata in secondi e il valore è riferito come intervallo di valori.
 
@@ -467,7 +467,7 @@ Ad esempio, la dimensione Durata (Minuti) rappresenta la durata della chiamata i
 |066: [3 – 4) |3 minuti < = durata flusso < 4 minuti |
 |  | |
 
-La \< stringa di ordinamento> viene usata per controllare l'ordinamento quando si presentano i dati e può essere usato per il filtro. Ad esempio, un filtro su Durata (Minuti) < "065", mostrerà flussi con una durata inferiore a 2 minuti (lo "0" iniziale è necessario perché il filtro funzioni come previsto).
+La stringa \<sort order string> si usa per controllare l'ordinamento quando si presentano i dati e si può utilizzare per filtrare. Ad esempio, un filtro su Durata (Minuti) < "065", mostrerà flussi con una durata inferiore a 2 minuti (lo "0" iniziale è necessario perché il filtro funzioni come previsto).
 
 > [!NOTE]
 > Il valore effettivo della stringa di ordinamento non è significativo.
@@ -480,7 +480,7 @@ Le stringhe usate da Call Quality dashboard sono spesso derivate dai file di dat
 
 Le dimensioni fornite come coppia di enumerazione sono indicate utilizzando il formato seguente:
 
- _\<valore di enumerazione da un punto finale \> : \< valore di enumerazione dall'altro endpoint\>_
+ _\<enumeration value from one end point\> : \<enumeration value from the other endpoint\>_
 
 L'ordinamento dei valori di enumerazione è coerente ma non riflette l'ordinamento del primo e del secondo endpoint.
 
@@ -515,10 +515,10 @@ Molti valori di misurazione possono essere usati anche come filtri. La tabella s
 |Total Answer Seizure Ratio |Rapporto |Rapporto delle chiamate con durata inferiore a cinque secondi sul numero totale delle chiamate . |
 |Total Short Call Percentage |Percentuale |Percentuale delle chiamate totali meno di 1 minuto di lunghezza. |
 |Total Media Failure Percentage |Percentuale |La percentuale di tutti i flussi in cui non è stato possibile stabilire il percorso del supporto o in cui il percorso del supporto si è chiuso in modo anomalo. |
-|Media Failed Due To Firewall DPI Stream Count |Numero di flussi |Numero di flussi che non è stato possibile eseguire perché l'apparecchiatura di rete bloccava l'accesso a causa dell'ispezione profonda dei pacchetti (DPI, Deep Packet Inspection), che non consentiva il traffico di Skype for Business. Questi errori in genere indicano che un proxy, un firewall o altro dispositivo di protezione della rete, non è configurato correttamente per l'accesso all'indirizzo IP e alle porte usate da Skype for Business in Office 365. |
-|Firewall DPI Media Failure Percentage |Percentuale |Percentuale di flussi che non è stato possibile eseguire perché l'apparecchiatura di rete bloccava l'accesso a causa dell'ispezione profonda dei pacchetti (DPI, Deep Packet Inspection), che non consentiva il traffico di Skype for Business. Questi errori in genere indicano che un proxy, un firewall o altro dispositivo di protezione della rete, non è configurato correttamente per l'accesso all'indirizzo IP e alle porte usate da Skype for Business in Office 365. |
-|Media Failed Due To Firewall IP Blocked Stream Count |Numero di flussi |Numero di flussi che non è stato possibile eseguire perché l'apparecchiatura di rete bloccava l'accesso ai server Skype for Business. Questi errori in genere indicano che un proxy, un firewall o altro dispositivo di protezione della rete, non è configurato correttamente per l'accesso all'indirizzo IP e alle porte usate da Skype for Business in Office 365. |
-|Firewall IP Blocked Media Failure Percentage |Percentuale |Percentuale di flussi che non è stato possibile stabilire perché le apparecchiature di rete hanno bloccato l'accesso ai server Skype for business. Questi errori in genere indicano che un proxy, un firewall o un altro dispositivo di sicurezza di rete non è configurato correttamente per accedere all'indirizzo IP e alle porte usate da Skype for business in Office 365. |
+|Media Failed Due To Firewall DPI Stream Count |Numero di flussi |Numero di flussi che non è stato possibile eseguire perché l'apparecchiatura di rete bloccava l'accesso a causa dell'ispezione profonda dei pacchetti (DPI, Deep Packet Inspection), che non consentiva il traffico di Skype for Business. Questi errori in genere indicano che un proxy, un firewall o un altro dispositivo di sicurezza di rete non è configurato correttamente per accedere all'indirizzo IP e alle porte usate da Skype for business in Microsoft 365 o Office 365. |
+|Firewall DPI Media Failure Percentage |Percentuale |Percentuale di flussi che non è stato possibile eseguire perché l'apparecchiatura di rete bloccava l'accesso a causa dell'ispezione profonda dei pacchetti (DPI, Deep Packet Inspection), che non consentiva il traffico di Skype for Business. Questi errori in genere indicano che un proxy, un firewall o un altro dispositivo di sicurezza di rete non è configurato correttamente per accedere all'indirizzo IP e alle porte usate da Skype for business in Microsoft 365 o Office 365. |
+|Media Failed Due To Firewall IP Blocked Stream Count |Numero di flussi |Numero di flussi che non è stato possibile eseguire perché l'apparecchiatura di rete bloccava l'accesso ai server Skype for Business. Questi errori in genere indicano che un proxy, un firewall o un altro dispositivo di sicurezza di rete non è configurato correttamente per accedere all'indirizzo IP e alle porte usate da Skype for business in Microsoft 365 o Office 365. |
+|Firewall IP Blocked Media Failure Percentage |Percentuale |Percentuale di flussi che non è stato possibile stabilire perché le apparecchiature di rete hanno bloccato l'accesso ai server Skype for business. Questi errori in genere indicano che un proxy, un firewall o un altro dispositivo di sicurezza di rete non è configurato correttamente per accedere all'indirizzo IP e alle porte usate da Skype for business in Microsoft 365 o Office 365. |
 | Supporto non riuscito a causa di un altro conteggio flusso|Numero di flussi| Numero di flussi in cui non è stato possibile stabilire il percorso del supporto tra gli endpoint a causa di un motivo indeterminato o non classificato.| |
 | Percentuale di errore di altri elementi multimediali|Percentuale| Percentuale di flussi in cui non è stato possibile stabilire il percorso del supporto tra gli endpoint a causa di un motivo indeterminato o non classificato. ||
 | Numero totale di chiamate CDR disponibili|Numero di flussi|Numero totale di flussi multimediali con informazioni di affidabilità/diagnostica disponibili. Per questa misura è presente un errore di 0,2%. Per informazioni dettagliate, vedere la nota seguente.|

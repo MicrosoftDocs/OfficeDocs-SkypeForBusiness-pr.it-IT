@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Gli organizzatori della riunione possono imparare a usare l'app teams per consentire ad altre persone di partecipare alla stessa riunione usando i loro telefoni.
-ms.openlocfilehash: fc670995dcf5a16c79c857c217711490be82a664
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 7d15cbbc1b81d54f6a217713cea3927dcff31e56
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901961"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691292"
 ---
 # <a name="dialing-out-from-a-microsoft-teams-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione di Microsoft teams in modo che gli altri utenti possano accedervi
 
@@ -45,7 +45,7 @@ Quando si effettua la chiamata in uscita a un utente, è consigliabile usare i n
 
 Ecco come ottenere la chiamata in uscita per il lavoro:
 
- **Passaggio 1:** Nella riunione usare lo screenshot **Aggiungi persone** ![dell'](media/add-people-button.png) opzione Aggiungi persone per chiamare un numero di telefono.
+ **Passaggio 1:** Nella riunione usare lo screenshot **Aggiungi persone** ![ dell'opzione Aggiungi persone ](media/add-people-button.png) per chiamare un numero di telefono.
  **Passaggio 2:** Immettere il numero di telefono completo, incluso il codice paese nella casella **invita qualcuno o componi un numero** .
   
 ![Screenshot della casella invita qualcuno o componi un numero](media/invite-someone-box.png)
@@ -60,6 +60,6 @@ Per istruzioni su come consentire agli utenti di accedere a una riunione di team
 
 ## <a name="want-to-know-more-about-audio-conferencing"></a>Per saperne di più sui servizi di conferenza telefonica con accesso esterno
 
-[Provare o acquistare le audioconferenze in Office 365](try-or-purchase-audio-conferencing-in-office-365-for-teams.md)
+[Provare o acquistare servizi di audioconferenza](try-or-purchase-audio-conferencing-in-office-365-for-teams.md)
     
 [Licenze per i componenti aggiuntivi di Microsoft Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)

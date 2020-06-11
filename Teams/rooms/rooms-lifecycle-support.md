@@ -14,20 +14,20 @@ f1.keywords:
 localization_priority: Normal
 description: Informazioni sul supporto del ciclo di vita per le sale di Microsoft teams, tra cui la struttura di supporto dinamico e le relative fasi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6a6a3000b97de9756c78ed09c5f4d56a237fda0d
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: f27f2d9b36f0b425bf73e500c089e4e5bbacc6ee
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905378"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691192"
 ---
 # <a name="microsoft-teams-rooms-app-version-support"></a>Supporto per la versione dell'app Microsoft teams rooms
  
 L'app Microsoft teams Rooms ottiene gli aggiornamenti alcune volte all'anno. Ogni aggiornamento supportato per dodici (12) mesi dalla data di rilascio per la disponibilità generale (GA). Il supporto tecnico è disponibile per gli interi dodici (12) mesi. La struttura di supporto è tuttavia dinamica, con due fasi distinte che dipendono dalla disponibilità della versione più recente:
 
-- \- **Fase di manutenzione e aggiornamenti critici** quando si esegue la versione più recente dell'app Microsoft teams rooms, vengono visualizzati aggiornamenti periodici che contengono aggiornamenti della *sicurezza e della manutenzione* .
+- Fase di manutenzione **e aggiornamenti critici** \- Quando si esegue la versione più recente dell'app Microsoft teams rooms, vengono visualizzati aggiornamenti periodici che contengono aggiornamenti della *sicurezza e della manutenzione* .
 
-- La \- **fase aggiornamenti della sicurezza solo** quando viene rilasciata una nuova versione dell'app Microsoft teams rooms, le versioni precedenti dell'app hanno un livello di supporto ridotto con *gli aggiornamenti della sicurezza solo* per il resto del ciclo di vita di dodici (12) mesi.
+- **Solo fase** \- aggiornamenti della sicurezza Quando viene rilasciata una nuova versione dell'app Microsoft teams rooms, le versioni precedenti dell'app hanno un livello di supporto ridotto con *gli aggiornamenti della sicurezza solo* per il resto del ciclo di vita dei dodici (12) mesi.
 
 > [!NOTE]
 > La versione più recente è sempre nella fase di manutenzione e aggiornamenti critici. Quando si verifica un errore di codice che garantisce un aggiornamento critico, è necessario che sia installata anche la versione più recente per ricevere una correzione. Tutte le altre versioni supportate saranno idonee solo per ricevere gli aggiornamenti della sicurezza.
@@ -53,7 +53,8 @@ La tabella seguente mostra le versioni consigliate e supportate di Windows 10 ve
 
 |Versione  |Data di disponibilità   |Stato supporto di Microsoft teams rooms   |Versione minima dell'applicazione di Microsoft teams rooms | Build del sistema operativo consigliata  |
 |:---  |:---       |:---                                  |:---     |:---     |
-| 1909 |2019-11-12 |Attualmente in fase di convalida <br/>Non raccomandato|&#x2014; |&#x2014; |
+| 2004 |2020-05-27 |In convalida <br/>Non raccomandato|&#x2014; |19041,264 |
+| 1909 |2019-11-12 |Completamento della convalida <br/>Nessun problema noto.|Prossimamente |18363,418  |
 | 1903 |2019-05-21 |Supportati <br/>Consigliato  |4.2.4.0 |18362,356 |
 | 1809 |2019-03-28 |Ignorato <br/>&#x2780; non consigliato|&#x2014; |&#x2014; |
 | 1803 |2018-07-10 |Supportati                             |4.1.22.0 |17134,191|
@@ -61,6 +62,8 @@ La tabella seguente mostra le versioni consigliate e supportate di Windows 10 ve
 | 1703 |2017-07-11 |Non supportato                         |&#x2014; |&#x2014; |
 
 &#x2780; Windows 10 versione 1809 non è consigliabile a causa di problemi di compatibilità trovati con l'applicazione Microsoft teams rooms. Questo problema specifico fa in modo che l'applicazione sale di Microsoft teams non venga avviata dopo il riavvio notturno. Questo problema è stato risolto in Windows 10 versione 1903.  
+
+&#x2781; Windows 10 versione 2004 non è consigliabile a causa di problemi di compatibilità trovati con l'applicazione Microsoft teams rooms. Questo problema specifico fa in modo che l'applicazione sale di Microsoft teams non venga avviata dopo il riavvio notturno. 
 
 Quando usi una versione supportata di Windows 10, otterrai sempre gli aggiornamenti delle applicazioni più recenti per l'app Microsoft teams rooms.  
 

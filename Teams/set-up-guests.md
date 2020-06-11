@@ -17,22 +17,22 @@ f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e434a85693226252ecef2a5b4c251024524e698f
-ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
+ms.openlocfilehash: 43965ef0b32551a9b4d5030b762d8fe0c53abcc4
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326563"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690052"
 ---
 <a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso Guest a Microsoft Teams
 ===================================================
 
-L'accesso guest è disabilitato per impostazione predefinita. Come amministratore di Office 365, è necessario attivare l'accesso guest per i team prima che l'amministratore o i proprietari del team possano aggiungere Guest. Per attivare l'accesso guest, usare l' [elenco di controllo di accesso Guest](guest-access-checklist.md). 
+L'accesso guest è disabilitato per impostazione predefinita. Come amministratore di Microsoft 365 o Office 365, è necessario attivare l'accesso guest per i team prima che l'amministratore o i proprietari del team possano aggiungere Guest. Per attivare l'accesso guest, usare l' [elenco di controllo di accesso Guest](guest-access-checklist.md). 
 
 Dopo aver attivato l'accesso guest, potrebbe essere necessario qualche ora affinché le modifiche abbiano effetto. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che l'accesso guest non sia stato attivato o che le impostazioni non siano ancora valide.
 
 > [!IMPORTANT]
-> L'attivazione dell'accesso guest dipende dalle impostazioni in Azure Active Directory, Office 365, SharePoint Online e teams. Per altre informazioni, vedere [autorizzare l'accesso guest in teams](Teams-dependencies.md).
+> L'attivazione dell'accesso guest dipende dalle impostazioni in Azure Active Directory, Microsoft 365 o Office 365, SharePoint Online e teams. Per altre informazioni, vedere [autorizzare l'accesso guest in teams](Teams-dependencies.md).
 
 
 

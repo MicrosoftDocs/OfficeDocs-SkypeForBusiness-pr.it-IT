@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come pianificare il bypass multimediale con il routing diretto del sistema telefonico, che consente di ridurre il percorso del traffico multimediale e migliorare le prestazioni.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a4f8995c3972da8fd2d060b7083edb61138b97ac
-ms.sourcegitcommit: f63cf7fdde333a7cb36c39e9b6cdc33afd2b4601
+ms.openlocfilehash: c1c11361a693fce63a863920fe6b27a2c87621af
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/21/2020
-ms.locfileid: "44338246"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691252"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
@@ -79,13 +79,12 @@ Il diagramma seguente mostra il flusso delle chiamate quando il bypass multimedi
 
 Di seguito viene descritto il flusso delle chiamate se l'utente non ha accesso all'indirizzo IP pubblico di SBC. 
 
-Supponiamo ad esempio che l'utente sia esterno e che l'amministratore del tenant abbia deciso di non aprire l'indirizzo IP pubblico di SBC a tutti gli utenti di Internet, ma solo al cloud Microsoft. I componenti interni del traffico possono fluire tramite i relay di trasporto di teams. Questa è la configurazione consigliata per gli utenti esterni alla rete aziendale. Tenere in considerazione gli aspetti seguenti:
+Supponiamo ad esempio che l'utente sia esterno e che l'amministratore del tenant abbia deciso di non aprire l'indirizzo IP pubblico di SBC a tutti gli utenti di Internet, ma solo al cloud Microsoft. I componenti interni del traffico possono fluire tramite i relay di trasporto di teams. Tenere in considerazione gli aspetti seguenti:
 
 - Vengono usati i relè di trasporto teams.
 
 - Per il bypass multimediale, Microsoft usa una versione di relay di trasporto che richiede l'apertura delle porte da 50 000 a 59 999 tra i relay di trasporto di teams e il SBC (in futuro prevediamo di passare alla versione che richiede solo le porte 3478 e 3479).
 
-- Per scopi di ottimizzazione multimediale, Microsoft consiglia di aprire l'indirizzo IP pubblico di SBC solo ai relay di trasporto di teams. Per i client esterni alla rete aziendale, Microsoft consiglia di usare i relay di trasporto invece di raggiungere direttamente l'indirizzo IP pubblico di SBC.
 
 Il diagramma seguente mostra il flusso delle chiamate quando l'esclusione multimediale è abilitata, il client è esterno e il client non riesce a raggiungere l'indirizzo IP pubblico del controller di bordo della sessione (il supporto viene inoltrato dall'inoltro del trasporto di Teams).
 
@@ -138,7 +137,7 @@ Nel percorso multimediale per le chiamate non ignorate per gli utenti finali | S
 Nel percorso multimediale per le chiamate ignorate per gli utenti finali | Mai | Se il client non riesce a raggiungere il SBC nell'indirizzo IP pubblico | 
 Nel percorso multimediale per le applicazioni vocali | Sempre | Mai | 
 Può eseguire la transcodifica (B2BUA)\* | Sì | No, inoltra solo l'audio tra gli endpoint | 
-Numero di istanze nel mondo e nella posizione | 8 totale: 2 in Stati Uniti Est e ovest; 2 in Amsterdam e Dublino; 2 a Hong Kong e Singapore; 2 in Giappone  | Più
+Numero di istanze nel mondo e nella posizione | 10 totale: 2 in Stati Uniti Est e ovest; 2 in Amsterdam e Dublino; 2 a Hong Kong e Singapore; 2 in Giappone; 2 in Australia Est e sud-est | Più
 
 Gli intervalli IP sono:
 - 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
@@ -165,13 +164,13 @@ Verificare che SBC abbia accesso ai processori multimediali e ai relè di traspo
 
 Per la segnalazione SIP, i requisiti di FQDN e firewall sono gli stessi per i casi non bypassati. 
 
-Il routing diretto è disponibile nei seguenti ambienti di Office 365:
-- Office 365
+Il routing diretto è disponibile nei seguenti ambienti Microsoft 365 o Office 365:
+- Microsoft 365 o Office 365
 - Office 365 GCC
 - Office 365 GCC High
 - Office 365 DoD ulteriori informazioni su [office 365 e gli ambienti governativi degli Stati Uniti](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government) , ad esempio GCC, GCC High e DOD.
 
-### <a name="office-365-and-office-365-gcc-environments"></a>Ambienti Office 365 e Office 365 GCC
+### <a name="microsoft-365-office-365-and-office-365-gcc-environments"></a>Ambienti Microsoft 365, Office 365 e Office 365 GCC
 
 I punti di connessione per il routing diretto sono i tre FQDN seguenti:
 
@@ -227,7 +226,7 @@ Gli FQDN-sip.pstnhub.gov.teams.microsoft.us verranno risolti in uno degli indiri
 ## <a name="sip-signaling-ports"></a>Segnalazione SIP: porte
 
 I requisiti della porta sono gli stessi per tutti gli ambienti di Office 365 in cui viene offerto il routing diretto:
-- Office 365
+- Microsoft 365 o Office 365
 - Office 365 GCC
 - Office 365 GCC High
 - Office 365 DoD
@@ -263,7 +262,7 @@ UDP/SRTP | Client | SBC | 50 000-50 019  | Definita nell'SBC |
 
 I relè di trasporto si trovano nello stesso intervallo dei processori multimediali (per i casi non di bypass): 
 
-### <a name="office-365-and-office-365-gcc-environments"></a>Ambienti Office 365 e Office 365 GCC
+### <a name="microsoft-365-office-365-and-office-365-gcc-environments"></a>Ambienti Microsoft 365, Office 365 e Office 365 GCC
 
 - 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
 
@@ -366,6 +365,5 @@ Per tutti gli altri endpoint che non supportano il bypass multimediale, è possi
 ## <a name="see-also"></a>Vedere anche
 
 [Configurare il bypass multimediale con Instradamento diretto](direct-routing-configure-media-bypass.md)
-
 
 

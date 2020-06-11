@@ -21,12 +21,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Informazioni su come usare l'interfaccia di amministrazione di Microsoft teams o Windows PowerShell per creare e gestire piani di chiamata (piani di chiamate PSTN).
-ms.openlocfilehash: 50cdbaf9fd1e5ae10eca20c0f547dce29d606983
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 966ac2e21d3bc57dd32a0b2732e0be285b9fdf0d
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43902021"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691342"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare piani di chiamata
 
@@ -36,7 +36,7 @@ Dopo aver pianificato i dial plan per l'organizzazione e aver individuato tutte 
 
 ### <a name="create-a-dial-plan"></a>Creare un dial plan
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **Voice** > **dial plan**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **Voice**  >  **dial plan**.
 2. Fare clic su **Aggiungi**e quindi immettere un nome e una descrizione per il dial plan.
     ![Schermata che mostra la pagina Aggiungi per la creazione di un dial plan](media/create-dial-plan.png)
 3. In **Dettagli dial plan**specificare un prefisso di chiamata esterna se gli utenti devono chiamare una o più cifre iniziali aggiuntive (ad esempio, 9) per ottenere una linea esterna. Procedi come segue.
@@ -56,7 +56,7 @@ Dopo aver pianificato i dial plan per l'organizzazione e aver individuato tutte 
 
 ### <a name="edit-a-dial-plan"></a>Modificare un dial plan
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **Voice** > **dial plan**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **Voice**  >  **dial plan**.
 2. Selezionare il dial plan facendo clic a sinistra del nome del dial plan, quindi fare clic su **modifica**.
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva**.
 
@@ -74,7 +74,7 @@ Dopo aver pianificato i dial plan per l'organizzazione e aver individuato tutte 
 
  **Verificare che sia in esecuzione Windows PowerShell versione 3,0 o successiva**
   
-1. Per verificare che sia in esecuzione la versione 3,0 o successiva: **menu** > Start di**Windows PowerShell**.
+1. Per verificare che sia in esecuzione la versione 3,0 o successiva: **menu Start**di  >  **Windows PowerShell**.
     
 2. Controllare la versione digitando  _Get-Host_ nella finestra di **Windows PowerShell**.
     
@@ -82,11 +82,11 @@ Dopo aver pianificato i dial plan per l'organizzazione e aver individuato tutte 
     
 4. È inoltre necessario installare il modulo Windows PowerShell per Skype for business online che consente di creare una sessione remota di Windows PowerShell che si connette a Skype for business online. Puoi scaricare questo modulo, supportato solo in computer a 64 bit, nel [modulo di Windows PowerShell per Skype for business online](https://go.microsoft.com/fwlink/?LinkId=294688). Riavviare il computer se richiesto.
     
-Per altre informazioni, vedere [connettersi a tutti i servizi di Office 365 in una singola finestra di Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window).
+Per altre informazioni, vedere [connettersi a tutti i servizi Microsoft 365 o Office 365 in una singola finestra di Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window).
   
  **Avviare una sessione di Windows PowerShell**
   
-1. Fare clic su **Avvia** > **Windows PowerShell**.
+1. Fare clic su **Avvia**  >  **Windows PowerShell**.
     
 2. Nella finestra di **Windows PowerShell** connettersi a Microsoft 365 o Office 365 eseguendo:
     

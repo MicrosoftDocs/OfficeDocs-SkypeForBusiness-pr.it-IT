@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come abilitare gli utenti al routing diretto di Microsoft Phone System.
-ms.openlocfilehash: 10c62d14f283d565765a47e4c07504bc9bffa720
-ms.sourcegitcommit: 0fdc60840f45ff5b0a39a8ec4a21138f6cab49c9
+ms.openlocfilehash: 2ae485398cef1cef2444de07dcabc4bf3f949ad5
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2020
-ms.locfileid: "43160060"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691372"
 ---
 # <a name="enable-users-for-direct-routing-voice-and-voicemail"></a>Abilitare gli utenti per il routing diretto, la voce e la segreteria telefonica
 
@@ -37,17 +37,17 @@ Per informazioni su tutti i passaggi necessari per la configurazione del routing
 
 Quando si è pronti per consentire agli utenti di eseguire il routing diretto, seguire questa procedura: 
 
-1. Creare un utente in Office 365 e assegnare una licenza per il sistema telefonico. 
+1. Creare un utente in Microsoft 365 o Office 365 e assegnare una licenza per il sistema telefonico. 
 2. Verificare che l'utente sia ospitato in Skype for business online. 
 3. Configurare il numero di telefono e abilitare VoIP aziendale e segreteria telefonica. 
 4. Assegnare la modalità solo teams agli utenti.
 
-## <a name="create-a-user-in-office-365-and-assign-the-license"></a>Creare un utente in Office 365 e assegnare la licenza 
+## <a name="create-a-user-and-assign-the-license"></a>Creare un utente e assegnare la licenza 
 
-Esistono due opzioni per la creazione di un nuovo utente in Office 365. Tuttavia, Microsoft consiglia all'organizzazione di scegliere un'opzione per evitare problemi di routing: 
+Sono disponibili due opzioni per la creazione di un nuovo utente in Microsoft 365 o Office 365. Tuttavia, Microsoft consiglia all'organizzazione di scegliere un'opzione per evitare problemi di routing: 
 
 - Creare l'utente in Active Directory locale e sincronizzare l'utente con il cloud. Vedere [integrare le directory locali con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect).
-- Creare l'utente direttamente nel portale di amministrazione di Office 365. Vedere [aggiungere utenti singolarmente o in blocco a Office 365-Guida per gli amministratori](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec). 
+- Creare l'utente direttamente nell'interfaccia di amministrazione di Microsoft 365. Vedere [aggiungere utenti singolarmente o in blocco a Microsoft 365 o Office 365-Guida per gli amministratori](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec). 
 
 Se la distribuzione di Skype for business online è coesistente con Skype for business 2015 o Lync 2010 o 2013 in locale, l'unica opzione supportata consiste nel creare l'utente nell'Active Directory locale e sincronizzare l'utente con il cloud (opzione 1). 
 

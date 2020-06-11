@@ -16,12 +16,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire i tag usati nell'organizzazione in Microsoft teams.
-ms.openlocfilehash: 6b95dc07954803ea6d15a1ca5bdf6c705ca3e252
-ms.sourcegitcommit: 1d24b62f41bce4f8d86d6060291af1267f75a2a2
+ms.openlocfilehash: 9c17045a167c46cabc2c7bd0c89b7488996975ad
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2020
-ms.locfileid: "43209488"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690857"
 ---
 # <a name="manage-tags-in-microsoft-teams"></a>Gestire i tag in Microsoft Teams
 
@@ -53,7 +53,7 @@ Un team può avere fino a 100 tag, fino a 100 i membri del team possono essere a
 
 Per impostazione predefinita, i proprietari del team possono aggiungere tag. Puoi modificare questa impostazione per consentire ai proprietari del team e ai membri del team di aggiungere tag oppure disattivare i tag per l'organizzazione.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, fare clic su**impostazioni di Team** **Impostazioni** > a livello di organizzazione.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, fare clic su impostazioni **di Team impostazioni a livello di organizzazione**  >  **Teams settings**.
 2. In **contrassegno**, accanto a **contrassegno è abilitato per**Selezionare una delle opzioni seguenti:
 
     - **Proprietari e membri del team**: consentire ai proprietari e ai membri del team di aggiungere tag.
@@ -64,7 +64,7 @@ Per impostazione predefinita, i proprietari del team possono aggiungere tag. Puo
 
 Puoi configurare le impostazioni dei tag seguenti per controllare il modo in cui i tag vengono usati nell'organizzazione.
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, fare clic su**impostazioni di Team** **Impostazioni** > a livello di organizzazione.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, fare clic su impostazioni **di Team impostazioni a livello di organizzazione**  >  **Teams settings**.
 2. In **tagging**impostare le operazioni seguenti in base alle esigenze dell'organizzazione.
 
     - Il **proprietario del team può eseguire l'override di chi può applicare i tag**: quando questo è attivato, i proprietari del team possono consentire o impedire ai membri di aggiungere tag nelle impostazioni del team.
@@ -79,6 +79,8 @@ Se è stato attivato il **proprietario del team può eseguire l'override di chi 
 
 ## <a name="add-tags-in-teams"></a>Aggiungere tag in teams
 
-In teams la scheda **membri** della pagina Manage team per un team include una colonna **Tags** . I proprietari e i membri del team (se la funzionalità è abilitata) possono fare clic su **Gestisci Tag** accanto a un membro per visualizzare l'elenco dei tag suggeriti per il membro e aggiungere i tag all'elenco.
+Per gestire i tag, seleziona **Gestisci teams** sul lato sinistro dell'app e trova il tuo team nell'elenco. Selezionare **altre opzioni**, quindi scegliere **Gestisci Tag**.
 
-![Screenshot che illustra come applicare i tag nel client Teams ](media/manage-tags-teams.png) 
+In questo caso, è possibile creare i tag e assegnarli agli utenti del team.
+
+![Screenshot che illustra come applicare i tag nel client Teams ](media/manage-tags-teams.png)

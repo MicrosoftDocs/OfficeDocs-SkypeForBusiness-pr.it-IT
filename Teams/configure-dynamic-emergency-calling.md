@@ -17,12 +17,12 @@ description: Informazioni su come configurare i piani di chiamata Microsoft e il
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 45e0523086ab985a488da15305fffbed8c57b0dc
-ms.sourcegitcommit: 000515147632c6278bcda4505a1038014dda8e2f
+ms.openlocfilehash: 50e32c34b211766aa5fc3ad7732b1dd392ed8346
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232577"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690882"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -159,7 +159,7 @@ Usare i cmdlet seguenti per aggiungere porte, Switch, subnet e WAP alla LIS.
 
 Usare i criteri seguenti per configurare le chiamate di emergenza. Puoi gestire questi criteri nell'interfaccia di amministrazione di Microsoft teams oppure usando PowerShell.
 
-- **Criteri di routing delle chiamate di emergenza** : si applica solo al routing diretto. Questo criterio Configura i numeri di emergenza, le maschere per numero, se necessario, e la route PSTN per numero.  È possibile assegnare questo criterio agli utenti, ai siti di rete o a entrambi. (Piani di chiamata i client teams vengono abilitati automaticamente per le chiamate di emergenza con i numeri di emergenza provenienti dal paese in base alla posizione di utilizzo di Office 365.)  Per altre informazioni, vedere [gestire i criteri di routing delle chiamate di emergenza per il routing diretto](manage-emergency-call-routing-policies.md).
+- **Criteri di routing delle chiamate di emergenza** : si applica solo al routing diretto. Questo criterio Configura i numeri di emergenza, le maschere per numero, se necessario, e la route PSTN per numero.  È possibile assegnare questo criterio agli utenti, ai siti di rete o a entrambi. (Piani di chiamata i client teams vengono abilitati automaticamente per le chiamate di emergenza con i numeri di emergenza provenienti dal paese in base alla posizione di utilizzo di Microsoft 365 o Office 365.)  Per altre informazioni, vedere [gestire i criteri di routing delle chiamate di emergenza per il routing diretto](manage-emergency-call-routing-policies.md).
 
 - **Criteri** per le chiamate di emergenza: si applica ai piani di chiamata e al routing diretto. Questo criterio configura l'esperienza di notifica di Security desk quando viene effettuata una chiamata di emergenza. È possibile impostare gli utenti che notificano e come vengono notificati. Ad esempio, per informare automaticamente il proprio banco di sicurezza dell'organizzazione e farli ascoltare in caso di chiamate di emergenza.  Questo criterio può essere assegnato a utenti o siti di rete o entrambi. Per altre informazioni, vedere [gestire i criteri per le chiamate di emergenza in teams](manage-emergency-calling-policies.md).
 

@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
-ms.openlocfilehash: ba7da55a33aa1fa65b677146e73ce352158a4cdf
-ms.sourcegitcommit: 6acede580649588334aeb48130ab2a5d73245723
+ms.openlocfilehash: 94bbc68ca8a9b89d2ae8c9931ca57b17f761ae90
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44523810"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44697430"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
@@ -83,7 +83,7 @@ Se si imposta un operatore, indicare agli utenti che chiamano l'opzione in **mod
 Sono disponibili diversi modi per impostare l'operatore:
 
 - **Nessun operatore** Disabilita le opzioni "operatore" e "premi 0". Questa è l'impostazione predefinita corrente.
-- **Persona nell'organizzazione** assegna una persona con una licenza di sistema telefonico abilitata per i piani di chiamate aziendali o assegnati in Office 365. Puoi anche configurarlo in modo che il chiamante venga inviato alla segreteria telefonica. Per inviare un chiamante alla segreteria telefonica, selezionare **persona nell'organizzazione** e impostare le impostazioni dell'account per inviare chiamate direttamente alla segreteria telefonica.
+- **Persona nell'organizzazione** assegna una persona con una licenza di sistema telefonico abilitata per i piani di chiamate aziendali o assegnati in Microsoft 365 o Office 365. Puoi anche configurarlo in modo che il chiamante venga inviato alla segreteria telefonica. Per inviare un chiamante alla segreteria telefonica, selezionare **persona nell'organizzazione** e impostare le impostazioni dell'account per inviare chiamate direttamente alla segreteria telefonica.
 
      > [!Note]
      > La **persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server. Quando si seleziona **persona nell'organizzazione** , è possibile selezionare un account con una cassetta postale condivisa o con una cassetta postale dell'utente.
@@ -157,13 +157,13 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 
 ![Icona del numero 4, un callout nella schermata precedente reindirizza la ](media/teamscallout4.png) **chiamata** invia il chiamante alla destinazione scelta senza scegliere Opzioni. Le impostazioni possibili sono:
 
-  - **Persona nell'organizzazione** L'account scelto deve avere una licenza per il sistema telefonico abilitato per VoIP aziendale o avere un piano di chiamata assegnato in Office 365. È possibile configurarlo in modo che il chiamante possa essere inviato alla segreteria telefonica: selezionare **persona nell'organizzazione** e impostare l'account per inoltrare le chiamate direttamente alla segreteria telefonica.
+  - **Persona nell'organizzazione** L'account scelto deve avere una licenza per il sistema telefonico abilitato per VoIP aziendale o avere un piano di chiamata assegnato in Microsoft 365 o Office 365. È possibile configurarlo in modo che il chiamante possa essere inviato alla segreteria telefonica: selezionare **persona nell'organizzazione** e impostare l'account per inoltrare le chiamate direttamente alla segreteria telefonica.
 
     > [!Note]
     > La **persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server. Quando si seleziona **persona nell'organizzazione** , è possibile selezionare un account con una cassetta postale condivisa o con una cassetta postale dell'utente.
 
   - **App vocale** Selezionare un operatore automatico o una coda di chiamata già configurata. Si cerca l'operatore automatico o la coda di chiamata in base al nome dell'account delle risorse associato al servizio.
-  - **Segreteria telefonica** Selezionare il gruppo Office 365 che contiene gli utenti dell'organizzazione che devono accedere alla segreteria telefonica ricevuta dall'operatore automatico. I messaggi della segreteria telefonica vengono inviati al gruppo Office 365 specificato. Per accedere ai messaggi della segreteria telefonica, i membri del gruppo possono aprirli passando al gruppo in Outlook.
+  - **Segreteria telefonica** Selezionare il gruppo Microsoft 365 che contiene gli utenti dell'organizzazione che devono accedere alla segreteria telefonica ricevuta dall'operatore automatico. I messaggi della segreteria telefonica vengono inviati al gruppo Microsoft 365 specificato. Per accedere ai messaggi della segreteria telefonica, i membri del gruppo possono aprirli passando al gruppo in Outlook.
 
       Cambiare la **trascrizione** **su** attivato per abilitare la trascrizione vocale dei messaggi della segreteria telefonica.
 
@@ -198,11 +198,11 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 <!-- Is the Operator behavior changing here? Looks like operator is only an available option for dial key 0 -->
 
 - **Operatore** Se un operatore è già configurato, l'opzione viene automaticamente mappata alla chiave 0, ma può anche essere eliminata o riassegnata a una chiave diversa. Il chiamante che seleziona questa opzione viene inviato all'operatore designato. Se operator non è impostato su un tasto qualsiasi, anche il comando vocale "operator" è disabilitato. 
-- La **persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server. L'utente deve avere una licenza per il sistema telefonico abilitata per i piani VoIP aziendale o per le chiamate assegnate in Office 365. Cercare la persona nel campo **Cerca in base al nome** .
+- La **persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server. L'utente deve avere una licenza di sistema telefonico abilitata per i piani VoIP aziendale o per le chiamate assegnate in Microsoft 365 o Office 365. Cercare la persona nel campo **Cerca in base al nome** .
 
 - **App vocale** Selezionare un operatore automatico o una coda di chiamata già configurata. Si cerca l'operatore automatico o la coda di chiamata in base al nome dell'account delle risorse associato all'applicazione.
 
-- **Segreteria telefonica** Selezionare il gruppo Office 365 che contiene gli utenti dell'organizzazione che devono accedere alla segreteria telefonica ricevuta dall'operatore automatico. I messaggi della segreteria telefonica vengono inviati al gruppo Office 365 specificato. Per accedere ai messaggi della segreteria telefonica, i membri del gruppo possono aprirli passando al gruppo in Outlook.
+- **Segreteria telefonica** Selezionare il gruppo Microsoft 365 che contiene gli utenti dell'organizzazione che devono accedere alla segreteria telefonica ricevuta dall'operatore automatico. I messaggi della segreteria telefonica vengono inviati al gruppo Microsoft 365 specificato. Per accedere ai messaggi della segreteria telefonica, i membri del gruppo possono aprirli passando al gruppo in Outlook.
 
     Cambiare la **trascrizione** **su** attivato per abilitare la trascrizione vocale dei messaggi della segreteria telefonica.
 
@@ -333,7 +333,7 @@ In questa pagina è possibile impostare chi è elencato nella directory e dispon
 
 Se si selezionano **tutti gli utenti online**, tutti gli utenti idonei sono inclusi nella ricerca nella directory.
 
-**Gruppi di utenti personalizzati** Questa opzione consente di cercare e selezionare un gruppo, una lista di distribuzione o un gruppo di sicurezza di Office 365 già creato nell'organizzazione. Gli utenti vengono aggiunti alla directory se si trovano nel gruppo di Office 365 scelto, nella lista di distribuzione o nel gruppo di sicurezza e sono **utenti online con una licenza di sistema telefonico** o ospitati in locale con Skype for Business Server. È possibile aggiungere più gruppi di Microsoft 365, liste di distribuzione e gruppi di sicurezza alla directory.
+**Gruppi di utenti personalizzati** Questa opzione consente di cercare e selezionare un gruppo di Microsoft 365, una lista di distribuzione o un gruppo di sicurezza già creato nell'organizzazione. Gli utenti vengono aggiunti alla directory se si trovano nel gruppo Microsoft 365, nella lista di distribuzione o nel gruppo di sicurezza scelto e sono **utenti online con una licenza di sistema telefonico** o ospitati in locale con Skype for Business Server. È possibile aggiungere più gruppi di Microsoft 365, liste di distribuzione e gruppi di sicurezza alla directory.
 
 <a name="dialscope"> </a>
 
@@ -343,8 +343,7 @@ In questa pagina è possibile configurare gli utenti dell'organizzazione che ver
 
 Se si seleziona **nessuno**, tutti gli utenti idonei saranno inclusi nella ricerca nella directory.
 
-**Gruppo utenti personalizzato** È possibile cercare un gruppo, una lista di distribuzione o un gruppo di sicurezza di Office 365 creato nell'organizzazione. Gli utenti di tale gruppo sono esclusi dalla ricerca nella directory. È possibile aggiungere più gruppi di Microsoft 365, liste di distribuzione e gruppi di sicurezza.
-
+**Gruppo utenti personalizzato** È possibile cercare un gruppo, una lista di distribuzione o un gruppo di sicurezza di Microsoft 365 creato nell'organizzazione. Gli utenti di tale gruppo sono esclusi dalla ricerca nella directory. È possibile aggiungere più gruppi di Microsoft 365, liste di distribuzione e gruppi di sicurezza.
 
 Se si lasciano le impostazioni predefinite quando l'opzione Componi per nome è abilitata, tutti gli utenti idonei sono inclusi nella ricerca nella directory.
 
@@ -411,7 +410,7 @@ Press the **Create** button to finish setup of your new auto attendant. -->
 
 ### <a name="more-about-windows-powershell"></a>Altre informazioni su Windows PowerShell
 
-- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell è possibile gestire Office 365 e Microsoft Teams da un unico punto di amministrazione in grado di semplificare il lavoro quotidiano. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 e Microsoft Teams da un unico punto di amministrazione in grado di semplificare il lavoro quotidiano. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
 
   - [Introduzione a Windows PowerShell e Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 
@@ -419,13 +418,13 @@ Press the **Create** button to finish setup of your new auto attendant. -->
 
 - Windows PowerShell offre numerosi vantaggi in velocità, semplicità e produttività solo con l'interfaccia di amministrazione di Microsoft 365, ad esempio per apportare modifiche all'impostazione per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
 
-  - [Gestire Office 365 con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)
+  - [Gestire Microsoft 365 o Office 365 con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)
 
   - [Uso di Windows PowerShell per gestire Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Ecco cosa offre il Sistema telefonico in Office 365](/MicrosoftTeams/here-s-what-you-get-with-phone-system)
+[Vantaggi offerti dal Sistema telefonico](/MicrosoftTeams/here-s-what-you-get-with-phone-system)
 
 [Recuperare numeri di telefono del servizio](/microsoftteams/getting-service-phone-numbers).
 

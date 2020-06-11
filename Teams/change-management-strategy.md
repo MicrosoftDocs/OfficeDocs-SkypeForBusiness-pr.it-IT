@@ -15,12 +15,12 @@ description: Creare una strategia di gestione delle modifiche per Microsoft team
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 396649f40a3e3413de67aea61eca7f2feb7dac4b
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 93cc8c9b56381e656cbcfbe2c47aef0e10593e45
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43778382"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690482"
 ---
 <a name="create-a-change-management-strategy-for-microsoft-teams"></a>Creare una strategia di gestione delle modifiche per Microsoft Teams
 =======================================================
@@ -61,8 +61,8 @@ La prima regola di un'adozione efficace consiste nel creare un team dinamico com
 |  |  |
 |---------|---------|
 |![Icona sponsor Executive.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image1.png)     |Gli **sponsor esecutivi** sono i principali leader all'interno dell'organizzazione e la loro partecipazione è essenziale per guidare l'adozione dei dipendenti. Influenzano maggiormente la cultura aziendale e possono comunicare attivamente il valore e i vantaggi di una nuova tecnologia e modo.         |
-|![Icona proprietari di servizi.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image2.png)     |I **proprietari dei servizi** sono responsabili per garantire agli utenti di usare il servizio e ottenere un valore. L'impostazione dei proprietari di servizi all'interno dell'organizzazione è importante per garantire la realizzazione degli obiettivi aziendali impostati per Office 365.         |
-|![Icona di Champions.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image3.png)     |L'acquisizione di buy-in da ogni utente in un'organizzazione è una sfida. I **campioni** possono aiutare ad alleviare questa sfida e a svolgere un ruolo importante nell'adozione di Office 365. Sono ben informati, impegnati a promuovere le loro competenze e sono disposti a prestare assistenza e coaching peer. Aiutano a tradurre Office 365 nella realtà del reparto o del team.         |
+|![Icona proprietari di servizi.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image2.png)     |I **proprietari dei servizi** sono responsabili per garantire agli utenti di usare il servizio e ottenere un valore. L'impostazione dei proprietari di servizi all'interno dell'organizzazione è importante per garantire la realizzazione degli obiettivi aziendali impostati per Microsoft 365 o Office 365.         |
+|![Icona di Champions.](media/Create_a_change_management_strategy_for_Microsoft_Teams_image3.png)     |L'acquisizione di buy-in da ogni utente in un'organizzazione è una sfida. I **campioni** possono aiutare ad alleviare questa sfida e a svolgere un ruolo importante nell'adozione di Microsoft 365 o Office 365. Sono ben informati, impegnati a promuovere le loro competenze e sono disposti a prestare assistenza e coaching peer. Aiutano a tradurre Microsoft 365 o Office 365 nella realtà del reparto o del team.         |
 
 È consigliabile una riunione regolare di questi stakeholder per mantenerli aggiornati sullo stato di avanzamento del programma. L'avvio di un "Consiglio di collaborazione" per consentire il feedback e la discussione può essere uno strumento utile a seconda della cultura aziendale.
 
@@ -145,7 +145,7 @@ Come per qualsiasi & campagna di adozione delle comunicazioni, è consigliabile 
 <a name="measure-and-share-success"></a>Misurare e condividere il successo
 -------------------------------------------------
 
-Il team di progetto deve essere amministratori IT dell'organizzazione. Questi utenti avranno accesso ai report sull'utilizzo di Microsoft teams di Office 365 incorporati nell'esperienza dell'interfaccia di amministrazione di Microsoft 365. Queste informazioni possono mostrare l'uso di Microsoft teams nella tua azienda. Ti consigliamo anche di ricevere feedback direttamente dagli utenti circa la loro esperienza di teams e altre idee che hanno per l'uso. La condivisione di questi esempi reali dall'interno della propria azienda è estremamente utile per l'atterraggio di un cambiamento duraturo nel tempo con la community degli utenti.  
+Il team di progetto deve essere amministratori IT dell'organizzazione. Questi utenti avranno accesso ai report sull'utilizzo di Microsoft teams 365 o Office 365 che sono incorporati nell'esperienza dell'interfaccia di amministrazione di Microsoft 365. Queste informazioni possono mostrare l'uso di Microsoft teams nella tua azienda. Ti consigliamo anche di ricevere feedback direttamente dagli utenti circa la loro esperienza di teams e altre idee che hanno per l'uso. La condivisione di questi esempi reali dall'interno della propria azienda è estremamente utile per l'atterraggio di un cambiamento duraturo nel tempo con la community degli utenti.  
 
 Altre informazioni sui report sull'utilizzo di Microsoft teams nell'interfaccia di amministrazione di Microsoft 365 [qui](https://support.office.com/article/Office-365-Reports-in-the-Admin-Center-Microsoft-Teams-user-activity-07f67fc4-c0a4-4d3f-ad20-f40c7f6db524)
 
@@ -154,8 +154,8 @@ Altre informazioni sui report sull'utilizzo di Microsoft teams nell'interfaccia 
 
 ## <a name="ongoing-adoption"></a>Adozione in corso
 
-La modifica della Guida in un'organizzazione è un'attività continua, non un evento. La riunione di Kick-off è solo l'inizio di consentire alle persone di collaborare in modo più efficace. È importante pianificare i momenti in questo viaggio che mettono in risalto i successi, introducono nuove funzionalità e si connettono alla strategia di servizio complessiva di Office 365, che il reparto IT può creare. Assicurarsi che gli utenti siano impegnati, invece di essere sopraffatti, ridurranno l'affaticamento del cambiamento e li aiuteranno a lasciare andare le vecchie abitudini, come la posta elettronica degli allegati, per accettare qualcosa di nuovo, ad esempio l'archiviazione di documenti nel cloud.
+La modifica della Guida in un'organizzazione è un'attività continua, non un evento. La riunione di Kick-off è solo l'inizio di consentire alle persone di collaborare in modo più efficace. È importante pianificare i momenti in questo viaggio che mettono in risalto i successi, introducono nuove funzionalità e si connettono alla strategia di servizio Microsoft 365 o Office 365 complessiva, che il reparto IT può creare. Assicurarsi che gli utenti siano impegnati, invece di essere sopraffatti, ridurranno l'affaticamento del cambiamento e li aiuteranno a lasciare andare le vecchie abitudini, come la posta elettronica degli allegati, per accettare qualcosa di nuovo, ad esempio l'archiviazione di documenti nel cloud.
 
-Condividere le proprie domande sull'adozione del servizio di teams e Office 365 nella [community adoption di guida](https://techcommunity.microsoft.com/t5/Driving-Adoption/ct-p/DrivingAdoption) nel sito della community tecnica Microsoft. Desideriamo sempre ricevere notizie da te e aiutarti nel viaggio di adozione.  
+Condividere le proprie domande sull'adozione del servizio di teams e Microsoft 365 o Office 365 nella [community adoption di guida](https://techcommunity.microsoft.com/t5/Driving-Adoption/ct-p/DrivingAdoption) nel sito della community tecnica Microsoft. Desideriamo sempre ricevere notizie da te e aiutarti nel viaggio di adozione.  
 
 

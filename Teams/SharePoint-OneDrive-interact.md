@@ -18,12 +18,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f4f536c6395e17e58f255ac3b88ccca0a092815c
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: cdcf054cfcf6b9d4f030ff1cf47bb9959a4cbcf8
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43778562"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689822"
 ---
 # <a name="how-sharepoint-online-and-onedrive-for-business-interact-with-microsoft-teams"></a>Come interagire con SharePoint Online e OneDrive for business con Microsoft Teams
 
@@ -37,7 +37,7 @@ Ogni team di Microsoft Teams ha un sito del team in SharePoint Online e ogni can
 
 I file di chat privati sono archiviati nella cartella OneDrive for business del mittente e le autorizzazioni vengono concesse automaticamente a tutti i partecipanti nell'ambito del processo di condivisione file.
 
-Se gli utenti non sono assegnati e abilitati con le licenze di SharePoint Online, non hanno spazio di archiviazione di OneDrive for business in Office 365. La condivisione dei file continuerà a funzionare nei canali standard, ma gli utenti non potranno condividere file in chat senza spazio di archiviazione di OneDrive for business in Office 365.
+Se gli utenti non sono assegnati e abilitati con le licenze di SharePoint Online, non hanno lo spazio di archiviazione di OneDrive for business in Microsoft 365 o Office 365. La condivisione dei file continuerà a funzionare nei canali standard, ma gli utenti non potranno condividere file in chat senza OneDrive for Business Storage in Microsoft 365 o Office 365.
 
 Archiviando i file nella raccolta documenti di SharePoint Online e in OneDrive for Business, verranno rispettate tutte le regole di conformità configurate a livello di tenant. 
 
@@ -85,7 +85,7 @@ La scheda **file** in teams è simile alla visualizzazione documenti di SharePoi
 
 SharePoint e OneDrive hanno un'impostazione di amministratore per specificare il tipo di collegamento predefinito per i collegamenti creati per un file. Teams adotta lo stesso approccio riutilizzando le impostazioni impostate dall'amministratore per SharePoint e OneDrive. Altre informazioni su questo approccio sono descritte in [modificare il tipo di collegamento predefinito quando gli utenti ottengono collegamenti per la condivisione](https://docs.microsoft.com/sharepoint/change-default-sharing-link). 
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Per altre informazioni sul funzionamento di SharePoint con i team, vedere [SharePoint e teams: meglio insieme](https://techcommunity.microsoft.com/t5/Microsoft-SharePoint-Blog/SharePoint-and-Teams-Better-Together/ba-p/189593).
 

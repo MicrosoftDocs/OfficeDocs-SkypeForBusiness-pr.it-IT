@@ -20,19 +20,22 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 56029dc8f1cb5a9cb99096107d85a6414dc4ed25
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 77cee207d885299e6f8a1a90f889c9f661c7383e
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44638625"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691442"
 ---
 # <a name="migration-and-interoperability-guidance-for-organizations-using-teams-together-with-skype-for-business"></a>Linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business
 
 > [!Tip] 
-> Vedere la sessione seguente per informazioni sulla [coesistenza e l'interoperabilità](https://aka.ms/teams-upgrade-coexistence-interop)
+> Per informazioni sulla [coesistenza e l'interoperabilità,](https://aka.ms/teams-upgrade-coexistence-interop)vedere la sessione seguente.
 
 Come organizzazione con Skype for business che inizia ad adottare teams, gli amministratori possono gestire l'esperienza utente nella propria organizzazione usando il concetto di coesistenza "Mode" che è una proprietà di TeamsUpgradePolicy. Usando la modalità, gli amministratori gestiscono l'interoperabilità e la migrazione mentre gestiscono la transizione da Skype for business a teams.  La modalità di un utente determina il modo in cui vengono pianificate le chat in arrivo e le chiamate in entrata del client, nonché in quali servizi (team o Skype for business) sono programmate nuove riunioni. Regola anche le funzionalità disponibili nel client teams. 
+
+> [!IMPORTANT]
+> Le modifiche apportate a TeamsUpgradePolicy possono richiedere fino a 24 ore. Prima di allora, lo stato presenza utente potrebbe non essere corretto (può essere visualizzato come **sconosciuto**).
 
 
 ## <a name="fundamental-concepts"></a>Concetti fondamentali
@@ -50,7 +53,7 @@ Come organizzazione con Skype for business che inizia ad adottare teams, gli amm
 
 5.  L'interoperabilità tra teams e gli utenti di Skype for business è possibile solo *se l'utente di teams è ospitato online in Skype for business*. L'utente destinatario di Skype for business può essere ospitato in locale (e richiede la configurazione di Skype for business Hybrid) o online. Gli utenti ospitati in Skype for business locale possono usare i team in modalità isole (definiti più avanti in questo documento), ma non possono usare team per l'interoperabilità o la Federazione con altri utenti che usano Skype for business.  
 
-6.    Il comportamento di aggiornamento e di interoperabilità viene determinato in base alla modalità di coesistenza di un utente, descritto più avanti. La modalità è gestita da TeamsUpgradePolicy. 
+6.    Il comportamento di aggiornamento e di interoperabilità viene determinato in base alla modalità di coesistenza di un utente, descritto di seguito. La modalità è gestita da TeamsUpgradePolicy. 
 
 7.  L'aggiornamento di un utente alla modalità TeamsOnly garantisce che tutte le chat in arrivo e le chiamate saranno sempre atterrate nel client Teams dell'utente, indipendentemente dal client da cui ha avuto origine. Questi utenti pianificano anche tutte le nuove riunioni in teams. Per essere in modalità TeamsOnly, un utente deve essere ospitato online in Skype for business. Questa operazione è necessaria per garantire l'interoperabilità, la Federazione e l'amministrazione completa dell'utente teams. Per aggiornare un utente a TeamsOnly:
     - Se l'utente è ospitato in Skype for business online (o non ha mai avuto un account Skype), concedere loro TeamsUpgradePolicy con Mode = TeamsOnly usando l'istanza "UpgradeToTeams" usando PowerShell oppure usare l'interfaccia di amministrazione di teams per selezionare la modalità di TeamsOnly.
@@ -86,9 +89,9 @@ Le modalità sono elencate di seguito.
 
 |Modalità|Chiamata e chat|Pianificazione delle riunioni<sup>1</sup>|Canali & Teams|Caso di utilizzo|
 |---|---|---|---|---|
-|**TeamsOnly<sup>2</sup>**</br>*Richiede Home in Skype for business online*|Team|Team|Sì|Stato finale dell'aggiornamento. Anche l'impostazione predefinita per i nuovi tenant.|
+|**TeamsOnly<sup>2</sup>**</br>*Richiede Home in Skype for business online*|Teams|Teams|Sì|Stato finale dell'aggiornamento. Anche l'impostazione predefinita per i nuovi tenant.|
 |Isole|Sia|Sia|Sì|Configurazione predefinita. Consente a un singolo utente di valutare entrambi i client affiancati. Le chat e le chiamate possono atterrare in entrambi i client, quindi gli utenti devono sempre eseguire entrambi i client. Per evitare un'esperienza di Skype for business confusa o regressione, le comunicazioni esterne (federate), i servizi vocali PSTN e le applicazioni vocali, l'integrazione di Office e molte altre integrazioni continuano a essere gestite da Skype for business.|
-|SfBWithTeamsCollabAndMeetings<sup>2</sup>|Skype for Business|Team|Sì|"First meetings". Principalmente per le organizzazioni locali per trarre vantaggio dalle funzionalità di riunione dei team, se non sono ancora pronte per la migrazione delle chiamate al cloud.|
+|SfBWithTeamsCollabAndMeetings<sup>2</sup>|Skype for Business|Teams|Sì|"First meetings". Principalmente per le organizzazioni locali per trarre vantaggio dalle funzionalità di riunione dei team, se non sono ancora pronte per la migrazione delle chiamate al cloud.|
 |SfBWithTeamsCollab|Skype for Business|Skype for Business|Sì|Punto di partenza alternativo per organizzazioni complesse che necessitano di un controllo amministrativo più rigoroso.|
 |SfBOnly|Skype for Business|Skype for Business|No<sup>3</sup>|Scenario specializzato per le organizzazioni con requisiti severi intorno al controllo dati. Teams viene usato solo per partecipare alle riunioni pianificate da altri utenti.|
 ||||||
@@ -107,6 +110,9 @@ Le modalità sono elencate di seguito.
 
 
 ## <a name="teamsupgradepolicy-managing-migration-and-co-existence"></a>TeamsUpgradePolicy: gestire la migrazione e la coesistenza
+
+> [!IMPORTANT]
+> Le modifiche apportate a TeamsUpgradePolicy possono richiedere fino a 24 ore. Prima di allora, lo stato presenza utente potrebbe non essere corretto (può essere visualizzato come **sconosciuto**).
 
 TeamsUpgradePolicy espone due proprietà chiave: mode e NotifySfbUsers. 
 </br>

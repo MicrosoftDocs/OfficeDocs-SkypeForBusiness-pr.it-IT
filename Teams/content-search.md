@@ -17,12 +17,12 @@ ms.custom: seo-marvel-mar2020
 description: Informazioni sull'uso della ricerca di contenuto in Microsoft teams per eseguire query su Microsoft Teams da Exchange, SharePoint Online, OneDrive for business e OneNote.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 93f566590baedc77a4d15eca96569cc85ce54f0b
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 45da4a0f4acf66cb8caafcd8d2bc2287c1176c94
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43776451"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690442"
 ---
 <a name="use-content-search-in-microsoft-teams"></a>Usare la ricerca contenuto in Microsoft Teams
 =====================================
@@ -32,7 +32,7 @@ ms.locfileid: "43776451"
 
 Ricerca contenuto consente di eseguire query sulle informazioni di Microsoft teams che si estendono in Exchange, SharePoint Online e OneDrive for business.
 
-Per altre informazioni, leggere la [ricerca di contenuto in Office 365](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a).
+Per altre informazioni, leggere la [ricerca di contenuto in Microsoft 365 o Office 365](https://support.office.com/article/Run-a-Content-Search-in-the-Office-365-Security-Compliance-Center-61852fd9-fe8a-4880-a339-cb19ed3bff4a).
 
 Ad esempio, usando la **ricerca di contenuto** per le specifiche della cassetta postale di produzione e delle specifiche di produzione del sito di SharePoint, è possibile eseguire una ricerca in base alle conversazioni di canale standard di Teams da Exchange, upload di file e modifiche da SharePoint Online e modifiche di OneNote.
 

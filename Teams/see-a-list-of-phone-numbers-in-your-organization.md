@@ -23,20 +23,20 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni su come usare l'interfaccia di amministrazione di Microsoft teams per visualizzare un elenco di tutti i numeri di telefono dell'organizzazione e tutti i numeri assegnati agli utenti o non assegnati.
-ms.openlocfilehash: 8483a3847027f3790930653ead39678f6a802533
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 8ad4e0ce2949e2aa72d387aff167a433ec7c8150
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140959"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691172"
 ---
 # <a name="see-a-list-of-phone-numbers-in-your-organization"></a>Visualizzare un elenco di numeri di telefono assegnati nell'organizzazione
 
-Esistono diversi tipi di numeri di telefono che è possibile assegnare a utenti o altri servizi (numeri di servizio), ad esempio per le Conferenze Audio in Office 365.
+Esistono diversi tipi di numeri di telefono che è possibile assegnare agli utenti o ad altri servizi (numeri di servizio), ad esempio per le conferenze audio in Microsoft 365 o Office 365.
   
 ## <a name="to-see-a-list-of-all-phone-numbers-that-you-have-for-your-organization"></a>Per visualizzare un elenco di tutti i numeri di telefono che hai per la tua organizzazione
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo teams ](media/teams-logo-30x30.png) **con l'interfaccia di amministrazione di Microsoft teams**
 
 1. Accedere all'interfaccia di **amministrazione di Microsoft teams**.
 
@@ -63,7 +63,7 @@ Esistono diversi tipi di numeri di telefono che è possibile assegnare a utenti 
 
 Quando si configurano gli utenti, è possibile visualizzare l'elenco dei numeri di telefono già assegnati agli utenti e quali sono i numeri di telefono disponibili per l'assegnazione.
   
-![Icona che mostra il logo](media/teams-logo-30x30.png) teams **con l'interfaccia di amministrazione di Microsoft teams**
+![Icona che mostra il logo teams ](media/teams-logo-30x30.png) **con l'interfaccia di amministrazione di Microsoft teams**
 
 1. Accedere all'interfaccia di **amministrazione di Microsoft teams**.
 
@@ -84,7 +84,7 @@ Quando si configurano gli utenti, è possibile visualizzare l'elenco dei numeri 
 
 Quando si configurano gli utenti dell'organizzazione per effettuare e ricevere chiamate telefoniche, è necessario prima di tutto ottenere i numeri di telefono e quindi assegnarli agli utenti. Dopo aver ottenuto i numeri di telefono, è possibile che si voglia vedere lo stato di attivazione delle assegnazioni numeriche.
 
-![Icona che mostra il logo](media/teams-logo-30x30.png) teams **con l'interfaccia di amministrazione di Microsoft teams** .
+![Icona che mostra il logo teams ](media/teams-logo-30x30.png) **con l'interfaccia di amministrazione di Microsoft teams** .
   
 1. Accedere all'interfaccia di **amministrazione di Microsoft teams**.
 

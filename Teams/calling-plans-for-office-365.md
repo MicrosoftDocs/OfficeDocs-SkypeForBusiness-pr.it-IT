@@ -26,12 +26,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: 'Learn about Calling Plan (PSTN Calling plan) for Skype for business options and how to get licenses for your organization. '
-ms.openlocfilehash: 14e3727ae4e474b2b211df469b44e94b2cec8bf3
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: baa90b5a625abf53890fcd51ff91b0ac754b3c94
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44041733"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691402"
 ---
 # <a name="calling-plans-for-microsoft-365"></a>Piani di chiamata per Microsoft 365
 
@@ -39,28 +39,28 @@ Le chiamate ad altri utenti di Skype for business e Microsoft teams sono gratuit
   
 Ecco le opzioni per i piani di chiamata:
   
-- **Piano per chiamate nazionali**: gli utenti con licenza possono chiamare i numeri che si trovano nel paese/area geografica in cui sono assegnati in Office 365.
+- **Piano per chiamate nazionali**: gli utenti con licenza possono chiamare i numeri che si trovano nel paese/area geografica in cui sono assegnati in Microsoft 365 o Office 365.
     
-- **Piano per chiamate nazionali e internazionali**: gli utenti con licenza possono chiamare i numeri che si trovano nel paese/area geografica in cui la licenza di Office 365 è assegnata all'utente in base alla posizione dell'utente e ai numeri internazionali in [196 paesi/aree geografiche](country-and-region-availability-for-audio-conferencing-and-calling-plans/users-can-make-outbound-calls-to-these-countries-and-regions.md).
+- **Piano per chiamate nazionali e internazionali**: gli utenti con licenza possono chiamare i numeri che si trovano nel paese/area geografica in cui la licenza di Microsoft 365 o Office 365 è assegnata all'utente in base alla posizione dell'utente e ai numeri internazionali in [196 paesi/aree geografiche](country-and-region-availability-for-audio-conferencing-and-calling-plans/users-can-make-outbound-calls-to-these-countries-and-regions.md).
     
 Per informazioni sui minuti mensili disponibili per ogni organizzazione in ogni paese/area geografica, vedere [disponibilità di paesi e aree](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) geografiche.
   
 > [!IMPORTANT]
-> Il paese/area geografica si basa sulla posizione della licenza dell'utente negli > **utenti attivi** dell'interfaccia di **amministrazione di Microsoft 365**e **non** sull'indirizzo di fatturazione elencato nel **profilo dell'organizzazione** nell'area di **amministrazione di Microsoft 365**.   
+> Il paese/area geografica si basa sulla posizione della licenza dell'utente negli utenti attivi dell'interfaccia di **amministrazione di Microsoft 365**  >  **Active users** e **non** sull'indirizzo di fatturazione elencato nel **profilo dell'organizzazione** nell'area di **amministrazione di Microsoft 365**.   
 ![Screenshot della posizione della licenza dell'utente](media/cc1e16d1-8a5e-43e0-99a3-dc991efdfbab.png)
   
 Per informazioni dettagliate sui limiti di utilizzo e sulle condizioni per l'utilizzo, vedere il [periodo di chiamata gratuita per](complimentary-dial-out-period.md)i servizi di audioconferenza.
   
 ## <a name="how-to-buy-a-calling-plan"></a>Come acquistare un piano di chiamata
 
-1. <strong>Devi prima acquistare una</strong> licenza per il componente aggiuntivo * * Phone System<strong>. A questo scopo, [Accedi all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e scegli * *</strong> > **Purchase services** >  > **abbonamenti per i componenti aggiuntivi per**l'acquisto di servizi di fatturazione**Acquista ora**.
+1. <strong>Devi prima acquistare una</strong> licenza per il componente aggiuntivo * * Phone System<strong>. A questo scopo, [Accedi all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e scegli * *</strong>abbonamenti per i componenti aggiuntivi per l'acquisto di servizi di fatturazione  >  **Purchase services**  >  **Add-on subscriptions**  >  **Acquista ora**.
     
     ![Screenshot che mostra l'opzione per acquistare un piano per chiamate vocali.](media/5893fca0-292c-4cdf-9b43-c507a8b44b74.png)
   
     > [!NOTE]
     > A seconda del piano, potrebbe essere necessario acquistare altri componenti aggiuntivi prima di poter acquistare licenze per il sistema telefonico. Per altre informazioni, Vedi [licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
   
-2. Dopo aver acquistato le licenze di sistema telefonico, è possibile acquistare il piano per le chiamate effettuando l'accesso all'interfaccia di **amministrazione di Microsoft 365**, scegliere**abbonamenti per i componenti aggiuntivi**per l'**acquisto di servizi** > di **fatturazione** > e quindi fare clic su **Acquista ora**. Verranno visualizzati i piani per le chiamate.
+2. Dopo aver acquistato le licenze di sistema telefonico, è possibile acquistare il piano per le chiamate effettuando l'accesso all'interfaccia di **amministrazione di Microsoft 365**, scegliere abbonamenti per i componenti aggiuntivi per l'acquisto di servizi di **fatturazione**  >  **Purchase services**  >  **Add-on subscriptions**e quindi fare clic su **Acquista ora**. Verranno visualizzati i piani per le chiamate.
     
     ![Screenshot che mostra le opzioni del piano per le chiamate vocali.](media/ab2d6dce-56eb-4bbc-ac1a-430b0c065d18.png)
   
@@ -88,7 +88,7 @@ Ecco altri articoli che spiegano come configurare i piani per le chiamate:
     
 - [Licenze per i componenti aggiuntivi di Microsoft Teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
     
-- [Ecco cosa offre il Sistema telefonico in Office 365](https://docs.microsoft.com/MicrosoftTeams/here-s-what-you-get-with-phone-system)
+- [Ecco cosa si ottiene con il sistema telefonico in Microsoft 365 o Office 365](https://docs.microsoft.com/MicrosoftTeams/here-s-what-you-get-with-phone-system)
     
    
 ## <a name="related-topics"></a>Argomenti correlati

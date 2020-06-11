@@ -18,12 +18,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 69cd9da8cee3c6cc8345c945e3e40288889d3547
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: dbfee03ac40203c8b76307521b9ec6726feacd2f
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905538"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691522"
 ---
 # <a name="skype-for-business-online-retirement"></a>Ritiro di Skype for Business Online
 
@@ -31,7 +31,7 @@ Skype for business online verrà ritirato il 31 luglio 2021. In questo articolo 
  
 ## <a name="what-is-the-skype-for-business-retirement-plan"></a>Cos'è il piano pensionistico Skype for business?
 
-Skype for business online verrà ritirato il 31 luglio 2021 e dopo tale data il servizio non sarà più accessibile. Tra un momento e l'altro, i clienti attuali di Skype for business online non saranno in grado di modificare il servizio e potranno continuare ad aggiungere nuovi utenti in base alle esigenze. Tuttavia, a partire dal 1 ° settembre 2019, verranno imbarcati tutti i nuovi clienti di Office 365 direttamente in teams per la chat, le riunioni e le chiamate. Tieni presente che il servizio consumer Skype e Skype for Business Server rimarranno inalterati da questo annuncio.  
+Skype for business online verrà ritirato il 31 luglio 2021 e dopo tale data il servizio non sarà più accessibile. Tra un momento e l'altro, i clienti attuali di Skype for business online non saranno in grado di modificare il servizio e potranno continuare ad aggiungere nuovi utenti in base alle esigenze. Tuttavia, a partire dal 1 ° settembre 2019, verranno imbarcati tutti i nuovi clienti di Microsoft 365 o Office 365 direttamente in teams per la chat, le riunioni e le chiamate. Tieni presente che il servizio consumer Skype e Skype for Business Server rimarranno inalterati da questo annuncio.  
 
 ## <a name="why-are-we-making-this-announcement-now"></a>Perché stiamo facendo questo annuncio ora?
 

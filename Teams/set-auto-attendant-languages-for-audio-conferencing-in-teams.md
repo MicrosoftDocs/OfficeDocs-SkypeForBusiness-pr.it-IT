@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Informazioni su come selezionare le lingue per gli operatori automatici di audioconferenza per un numero di audioconferenza in Microsoft teams.
-ms.openlocfilehash: 37d430ba641277c7b72f921b06599f58cff4e4a0
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: d7f6893bfc9c58131fe596597afc1ac90389d908
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140919"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691132"
 ---
 # <a name="set-auto-attendant-languages-for-audio-conferencing-in-microsoft-teams"></a>Impostare le lingue per l'operatore automatico per i servizi di audioconferenza in Microsoft Teams
 
@@ -45,7 +45,7 @@ Scegliere una lingua principale e fino a quattro lingue secondarie. La lingua im
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra, vai a**Bridge conferenza** **riunioni** > .
+1. Nella barra di spostamento sinistra, Vai **Meetings**a  >  **Bridge conferenza**riunioni.
 
 2. Selezionare un numero di telefono di audioconferenza **dedicato** nell'elenco e nella parte superiore della pagina fare clic su **modifica**. È possibile cambiare solo le lingue dei numeri di servizi di audioconferenza dedicati. L'opzione **modifica** viene visualizzata solo quando è selezionato un numero di conferenza audio dedicato.
 
@@ -63,7 +63,7 @@ Scegliere una lingua principale e fino a quattro lingue secondarie. La lingua im
     
 - Le lingue possono essere impostate per numeri specifici, ma non per i numeri di telefono condivisi.
     
-- Per visualizzare un elenco dei paesi/aree geografiche in cui sono disponibili i servizi di Audioconferenza in Office 365 con Microsoft come provider, vedere [Numeri di telefono per Audioconferenza](phone-numbers-for-audio-conferencing-in-teams.md).
+- Per visualizzare un elenco di paesi/aree geografiche in cui sono disponibili i servizi di conferenza audio in Microsoft 365 o Office 365 che usano Microsoft come provider, vedere [numeri di telefono per le conferenze audio](phone-numbers-for-audio-conferencing-in-teams.md).
     
 ## <a name="want-to-use-windows-powershell"></a>Desideri utilizzare Windows PowerShell?
 
@@ -71,5 +71,5 @@ Per altre informazioni, vedere la pagina di [riferimento di PowerShell per Micro
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Provare o acquistare le audioconferenze in Office 365](/SkypeForBusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365)
+[Provare o acquistare servizi di audioconferenza in Microsoft 365 o Office 365](/SkypeForBusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365)
 

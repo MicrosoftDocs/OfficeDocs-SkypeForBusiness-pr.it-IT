@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Leggi altre informazioni sulla funzionalità cloud Voice e leggi le decisioni di distribuzione necessarie che dovrai affrontare.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 952eb7064844cf0e77e829cd2506c4303504074c
-ms.sourcegitcommit: 3ed779277540589eabef745685ab6c67d8a8ff90
+ms.openlocfilehash: 96d4f6b5e75e0f0f716b4f1b840b079996344cfb
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44281671"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690792"
 ---
 # <a name="cloud-voice-in-microsoft-teams"></a>Cloud Voice in Microsoft Teams
 
@@ -43,7 +43,7 @@ Questo articolo consente di decidere se è necessario modificare le impostazioni
 
 Gli articoli seguenti includono ulteriori informazioni sulla distribuzione e l'uso delle funzionalità vocali cloud in teams:
 
-- [Sistema telefonico di Office 365](what-is-phone-system-in-office-365.md)
+- [Sistema telefonico in Microsoft 365 o Office 365](what-is-phone-system-in-office-365.md)
 - [Sistema telefonico con piani di chiamata](calling-plan-landing-page.md)
 - [Instradamento diretto di Sistema telefonico](direct-routing-landing-page.md)
 - [Distribuzione di cloud Voice](cloud-voice-deployment.md)
@@ -57,12 +57,12 @@ Di seguito sono illustrate le impostazioni che la maggior parte delle organizzaz
 
 ## <a name="phone-system-office-365"></a>Sistema telefonico (Office 365)
 
-Sistema telefonico è la tecnologia Microsoft per abilitare il controllo delle chiamate e le funzionalità del PBX (Private Branch Exchange) nel cloud di Office 365. Sistema telefonico consente di sostituire il sistema PBX (Private Branch Exchange) esistente con un set di caratteristiche direttamente recapitate da Office 365 e strettamente integrate nell'esperienza di produttività del cloud aziendale.
+Sistema telefonico è la tecnologia Microsoft per l'abilitazione del controllo delle chiamate e delle funzionalità Private Branch Exchange (PBX) in Microsoft 365 o Office 365 cloud. Il sistema telefonico consente di sostituire il sistema PBX (Private Branch Exchange) esistente con un set di funzionalità fornite direttamente da Microsoft 365 o Office 365 e strettamente integrate nell'esperienza di produttività del cloud aziendale.
 
 
 |Chiedersi|Azione |
 |:------------|:-------|
-|In quali sedi utente o uffici verrà implementato il sistema telefonico? |Per altre informazioni sul sistema telefonico, vedere [cos'è il sistema telefonico in Office 365](what-is-phone-system-in-office-365.md).</li></ul>|
+|In quali sedi utente o uffici verrà implementato il sistema telefonico? |Per altre informazioni sul sistema telefonico, vedere [cos'è il sistema telefonico in Microsoft 365 o Office 365](what-is-phone-system-in-office-365.md).</li></ul>|
 |||
 
 ## <a name="connection-to-the-public-switched-telephone-network-pstn"></a>Connessione alla rete PSTN (Public Switched Telephone Network)
@@ -120,7 +120,7 @@ Come si trasferiscono I numeri di telefono esistenti in teams?|Per altre informa
 
 ### <a name="dial-plans"></a>Dial plan
 
-Un dial plan nella caratteristica sistema telefonico di Office 365 è un set di regole di normalizzazione che traducono i numeri di telefono composti in un formato alternativo (in genere E. 164) per l'autorizzazione alle chiamate e il routing delle chiamate.
+Un dial plan nella caratteristica sistema telefonico di Microsoft 365 o Office 365 è un set di regole di normalizzazione che traducono i numeri di telefono composti in un formato alternativo (in genere E. 164) per l'autorizzazione alle chiamate e il routing delle chiamate.
 
 Per altre informazioni sui dial plan, vedere [Che cosa sono i dial plan?](https://docs.microsoft.com/SkypeForBusiness/what-are-calling-plans-in-office-365/what-are-dial-plans)
 

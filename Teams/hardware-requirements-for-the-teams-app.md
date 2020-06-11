@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 33b88e877afe4711894194d6ae05f51c1244b3af
-ms.sourcegitcommit: 26a6802fb7bfc865771fc476916957524c280d83
+ms.openlocfilehash: 6f097563ae71c6d7f59f0469da98cfbf59f2ec82
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2020
-ms.locfileid: "44407378"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690562"
 ---
 # <a name="hardware-requirements-for-microsoft-teams"></a>Requisiti hardware per Microsoft Teams
 
@@ -43,7 +43,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 |Versione .NET    |  Richiede .NET 4.5 CLR o versione successiva       |
 |Video    |  Videocamera USB 2.0       |
 |Dispositivi    |   Videocamera, microfono e altoparlanti standard del portatile    | 
-|Videochiamate e riunioni | <ul><li>Per una migliore esperienza con le videochiamate di 1:1, è consigliabile usare un computer con processore single-core e 4,0 GB di RAM (o versioni successive). </li><li>Per una migliore esperienza con le riunioni online, è consigliabile usare un computer con processore dual-core e 8,0 GB di RAM (o versioni successive). </li><li>L'effetto video facoltativo **Esegui sfocatura sfondo** richiede un processore con supporto Advanced Vector Extensions 2 (AVX2). Per un elenco dei decodificatori e codificatori non supportati, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md).</li><li>Per partecipare a una riunione con il rilevamento di prossimità in una sala riunioni di Microsoft Teams è necessario il Bluetooth LE, il quale richiede l'abilitazione del Bluetooth nel dispositivo client, mentre per i client Windows è necessario il client Teams a 64 bit. Non è disponibile nei client Teams a 32 bit.</li></ul> |
+|Videochiamate e riunioni | <ul><li>Per una migliore esperienza con le videochiamate di 1:1, è consigliabile usare un computer con processore single-core e 4,0 GB di RAM (o versioni successive). </li><li>Per una migliore esperienza con le riunioni online, è consigliabile usare un computer con processore dual-core e 8,0 GB di RAM (o versioni successive). </li><li>Gli **effetti video di sfondo** facoltativi richiedono un processore con il supporto AVX2 (Advanced Vector Extensions 2) o che esegua Windows 10. </li><li>Per un elenco dei decodificatori e codificatori non supportati, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md).</li><li>Per partecipare a una riunione con il rilevamento di prossimità in una sala riunioni di Microsoft Teams è necessario il Bluetooth LE, il quale richiede l'abilitazione del Bluetooth nel dispositivo client, mentre per i client Windows è necessario il client Teams a 64 bit. Non è disponibile nei client Teams a 32 bit.</li></ul> |
 |Eventi live in Teams | Se si desidera creare eventi live di Teams, è consigliabile usare un computer con processore Core i5 Kaby Lake con 4,0 GB di RAM (o superiore) e codificatore hardware. Per un elenco dei decodificatori e codificatori non supportati, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md). |
 
 ## <a name="hardware-requirements-for-teams-on-a-mac"></a>Requisiti hardware per Teams su Mac
@@ -57,7 +57,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 |Sistema operativo  |    Mac OS X 10.11 El Capitan o versione successiva     |
 |Video  |    Compatibilità con webcam     |
 |Opzioni vocali    |  Compatibilità con microfoni e altoparlanti, auricolari con microfono o dispositivi equivalenti       |
-|Videochiamate e riunioni | <ul><li>Per una migliore esperienza con le videochiamate di 1:1, è consigliabile usare un computer con processore single-core e 4,0 GB di RAM (o versioni successive). </li><li>Per una migliore esperienza con le riunioni online, è consigliabile usare un computer con processore dual-core e 8,0 GB di RAM (o versioni successive). </li><li>L'effetto video facoltativo **Esegui sfocatura sfondo** richiede un processore con supporto Advanced Vector Extensions 2 (AVX2), supportato sulla maggior parte dei dispositivi Mac del 2013 o successivi. Per un elenco dei decodificatori e codificatori non supportati, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md).</li><li>La funzionalità di partecipazione a una riunione tramite il rilevamento di prossimità in una sala riunioni di Microsoft Teams non è disponibile su Mac OS.</li></ul> |
+|Videochiamate e riunioni | <ul><li>Per una migliore esperienza con le videochiamate di 1:1, è consigliabile usare un computer con processore single-core e 4,0 GB di RAM (o versioni successive). </li><li>Per una migliore esperienza con le riunioni online, è consigliabile usare un computer con processore dual-core e 8,0 GB di RAM (o versioni successive). </li><li>Gli **effetti video di sfondo** facoltativi richiedono un processore con il supporto AVX2 (Advanced Vector Extensions 2), supportato in più tardi i dispositivi Mac di 2013 e versioni successive. </li><li>Per un elenco dei decodificatori e codificatori non supportati, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md).</li><li>La funzionalità di partecipazione a una riunione tramite il rilevamento di prossimità in una sala riunioni di Microsoft Teams non è disponibile su Mac OS.</li></ul> |
 
 ## <a name="hardware-requirements-for-teams-on-linux"></a>Requisiti hardware per Teams su Linux
 
@@ -72,7 +72,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 |Video    |  Videocamera USB 2.0       |
 |Dispositivi    |   Videocamera, microfono e altoparlanti standard del portatile    | 
 |Opzioni vocali    |  Compatibilità con microfoni e altoparlanti, auricolari con microfono o dispositivi equivalenti       |
-|Videochiamate e riunioni | <ul><li>Per una migliore esperienza con le videochiamate di 1:1, è consigliabile usare un computer con processore single-core e 4,0 GB di RAM (o versioni successive). </li><li>Per una migliore esperienza con le riunioni online, è consigliabile usare un computer con processore dual-core e 8,0 GB di RAM (o versioni successive).  </li><li>Gli effetti video in background richiedono un processore con il supporto Advanced Vector Extensions 2 (AVX2), supportato nella maggior parte dei dispositivi Mac in ritardo di 2013 e versioni successive. Per un elenco dei decodificatori e codificatori non supportati, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md).</li><li>La funzionalità di partecipazione a una riunione tramite il rilevamento di prossimità in una sala riunioni di Microsoft Teams non è disponibile su Linux.</li></ul>
+|Videochiamate e riunioni | <ul><li>Per una migliore esperienza con le videochiamate di 1:1, è consigliabile usare un computer con processore single-core e 4,0 GB di RAM (o versioni successive). </li><li>Per una migliore esperienza con le riunioni online, è consigliabile usare un computer con processore dual-core e 8,0 GB di RAM (o versioni successive).  </li><li>L'effetto video facoltativo **Esegui sfocatura sfondo** richiede un processore con supporto Advanced Vector Extensions 2 (AVX2), supportato sulla maggior parte dei dispositivi Mac del 2013 o successivi. </li><li>Per un elenco dei decodificatori e codificatori non supportati, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md).</li><li>La funzionalità di partecipazione a una riunione tramite il rilevamento di prossimità in una sala riunioni di Microsoft Teams non è disponibile su Linux.</li></ul>
 |Distribuzioni Linux supportate | Ubuntu 16.04 LTS, 18.04 LTS, Fedora 30 Workstation, RHEL 8 Workstation, CentOS 8
 
 ## <a name="hardware-requirements-for-teams-on-mobile-devices"></a>Requisiti hardware per Teams su dispositivi mobili

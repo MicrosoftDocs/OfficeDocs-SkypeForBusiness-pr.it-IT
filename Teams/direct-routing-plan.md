@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente al sistema telefonico Microsoft.
-ms.openlocfilehash: 29b4136c553d8b0f77fbb10259899ebea793ed98
-ms.sourcegitcommit: 1df448516b05bccd0527256b1f4f20792566f8a2
+ms.openlocfilehash: bd221be2174a538956667e0b113d459f2293882f
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/30/2020
-ms.locfileid: "44428953"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691232"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -71,22 +71,22 @@ I requisiti di infrastruttura per i SBCs, i domini e altri requisiti di connetti
 |:--- |:--- |
 |SBC (Session Border Controller)|Un SBC supportato. Per altre informazioni, Vedi [SBCS supportate](#supported-session-border-controllers-sbcs).|
 |Trunk di telefonia connesso a SBC|Uno o più trunk di telefonia connessi a SBC. Da una parte, il SBC si connette al sistema telefonico Microsoft tramite il routing diretto. SBC può anche connettersi a entità di telefonia di terze parti, come i PBX, gli adattatori per la telefonia analogica e così via. L'opzione di connettività PSTN connessa al SBC funzionerà. Per la configurazione dei trunk PSTN per il SBC, vedere i fornitori SBC o i provider trunk.|
-|Organizzazione di Office 365|Un'organizzazione di Office 365 che si usa per gli utenti di Microsoft teams e la configurazione e la connessione a SBC.|
-|Registrar utente|L'utente deve essere ospitato in Office 365.<br/>Se l'azienda ha un ambiente di Skype for business o Lync locale con connettività ibrida a Office 365, non è possibile abilitare la funzionalità Voice in teams per un utente ospitato in locale.<br/><br/>Per controllare il registrar di un utente, usare il cmdlet di PowerShell di Skype for business online seguente:<br/><code>Get-CsOnlineUser -Identity \<user> \| fl HostingProvider</code> <br/><br/>L'output del cmdlet deve mostrare:<br/><code>HostingProvider : sipfed.online.lync.com</code>|
-|Domini|Uno o più domini aggiunti alle organizzazioni di Office 365.<br/><br/>Tieni presente che non puoi usare il dominio predefinito, \* onmicrosoft.com, che viene creato automaticamente per il tenant.<br/><br/>Per visualizzare i domini, è possibile usare il cmdlet di PowerShell di Skype for business online seguente:<br/><code>Get-CsTenant \| fl Domains</code><br/><br/>Per altre informazioni sui domini e sulle organizzazioni di Office 365, vedere [domande frequenti sui domini](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a).|
+|Microsoft 365 o Office 365 Organization|Un'organizzazione Microsoft 365 o Office 365 che si usa per gli utenti di Microsoft teams e la configurazione e la connessione a SBC.|
+|Registrar utente|L'utente deve essere ospitato in Microsoft 365 o Office 365.<br/>Se l'azienda ha un ambiente Skype for business o Lync locale con connettività ibrida a Microsoft 365 o Office 365, non è possibile abilitare la funzionalità di Voice in teams per un utente ospitato in locale.<br/><br/>Per controllare il registrar di un utente, usare il cmdlet di PowerShell di Skype for business online seguente:<br/><code>Get-CsOnlineUser -Identity \<user> \| fl HostingProvider</code> <br/><br/>L'output del cmdlet deve mostrare:<br/><code>HostingProvider : sipfed.online.lync.com</code>|
+|Domini|Uno o più domini aggiunti alle organizzazioni Microsoft 365 o Office 365.<br/><br/>Tieni presente che non puoi usare il dominio predefinito, \* onmicrosoft.com, che viene creato automaticamente per il tenant.<br/><br/>Per visualizzare i domini, è possibile usare il cmdlet di PowerShell di Skype for business online seguente:<br/><code>Get-CsTenant \| fl Domains</code><br/><br/>Per altre informazioni sui domini e sulle organizzazioni Microsoft 365 o Office 365, vedere [domande frequenti sui domini](https://support.office.com/article/Domains-FAQ-1272bad0-4bd4-4796-8005-67d6fb3afc5a).|
 |Indirizzo IP pubblico per SBC|Un indirizzo IP pubblico che può essere usato per la connessione a SBC. In base al tipo di SBC, SBC può usare NAT.|
-|Nome di dominio completo (FQDN) per SBC|Un nome di dominio completo per SBC, in cui la parte del dominio del nome FQDN è uno dei domini registrati nell'organizzazione di Office 365. Per altre informazioni, Vedi [nomi di dominio SBC](#sbc-domain-names).|
+|Nome di dominio completo (FQDN) per SBC|Un nome di dominio completo per SBC, in cui la parte del dominio del nome FQDN è uno dei domini registrati nell'organizzazione Microsoft 365 o Office 365. Per altre informazioni, Vedi [nomi di dominio SBC](#sbc-domain-names).|
 |Voce DNS pubblica per SBC |Una voce DNS pubblica che mappa il nome di dominio completo SBC all'indirizzo IP pubblico. |
 |Certificato attendibile pubblico per SBC |Certificato per l'SBC da usare per tutte le comunicazioni con routing diretto. Per altre informazioni, vedere [certificato attendibile pubblico per SBC](#public-trusted-certificate-for-the-sbc).|
 |Punti di connessione per il routing diretto |I punti di connessione per il routing diretto sono i tre FQDN seguenti:<br/><br/>`sip.pstnhub.microsoft.com`-L'FQDN globale deve essere provato per primo.<br/>`sip2.pstnhub.microsoft.com`-FQDN secondario, mappa geograficamente alla seconda area di priorità.<br/>`sip3.pstnhub.microsoft.com`– Il nome di dominio completo terziario viene mappato geograficamente alla terza area prioritaria.<br/><br/>Per informazioni sui requisiti di configurazione, vedere [segnalazione SIP: FQDN](#sip-signaling-fqdns).|
-|Indirizzi IP e porte del firewall per il supporto di routing diretto |SBC comunica i servizi seguenti nel cloud:<br/><br/>Proxy SIP, che gestisce la segnalazione<br/>Media processor, che gestisce l'elemento multimediale, eccetto quando è attivato il bypass multimediale<br/><br/>Questi due servizi hanno indirizzi IP distinti in Microsoft Cloud, descritti più avanti in questo documento.<br/><br/>Per altre informazioni, vedere la [sezione Microsoft teams](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) negli [URL e negli intervalli di indirizzi IP di Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). |
+|Indirizzi IP e porte del firewall per il supporto di routing diretto |SBC comunica i servizi seguenti nel cloud:<br/><br/>Proxy SIP, che gestisce la segnalazione<br/>Media processor, che gestisce l'elemento multimediale, eccetto quando è attivato il bypass multimediale<br/><br/>Questi due servizi hanno indirizzi IP distinti in Microsoft Cloud, descritti più avanti in questo documento.<br/><br/>Per altre informazioni, vedere la [sezione Microsoft teams](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) in [URL e intervalli di indirizzi IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). |
 |Profilo di trasporto multimediale|TCP/RTP/SAVP <br/>UDP/RTP/SAVP|
-Indirizzi IP e porte firewall per Microsoft teams media |Per altre informazioni, vedere [URL e intervalli di indirizzi IP di Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). |
+Indirizzi IP e porte firewall per Microsoft teams media |Per altre informazioni, Vedi [URL e intervalli di indirizzi IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges). |
 |||
 
 ## <a name="licensing-and-other-requirements"></a>Licenze e altri requisiti 
 
-Gli utenti del routing diretto devono avere le licenze seguenti assegnate in Office 365: 
+Gli utenti del routing diretto devono avere le licenze seguenti assegnate in Microsoft 365 o Office 365: 
 
 - Sistema telefonico Microsoft. 
 - Microsoft teams + Skype for Business Plan 2, se incluso in licenze.
@@ -117,7 +117,7 @@ Il routing diretto supporta inoltre gli utenti con licenza per Microsoft Calling
 
 La combinazione del piano di chiamata e della connettività di routing diretto per lo stesso utente è facoltativa, ma potrebbe essere utile, ad esempio quando all'utente viene assegnato un piano di chiamata Microsoft, ma si vuole instradare alcune chiamate tramite SBC. Uno degli scenari più comuni è la chiamata a PBX di terze parti.  Con i sistemi PBX di terze parti, tutte le chiamate, eccetto le chiamate ai telefoni collegati ai PBX, vengono instradate tramite il piano di chiamata Microsoft, ma le chiamate ai telefoni collegati ai PBX di terze parti accedono a SBC e quindi restano all'interno della rete aziendale e non PSTN. 
 
-Per altre informazioni sulle licenze per i sistemi telefonici, vedere [ottenere il massimo da Office con le](https://products.office.com/compare-all-microsoft-office-products?tab=2) opzioni di piano di Office 365 e [Office 365](https://technet.microsoft.com/library/office-365-plan-options.aspx). 
+Per altre informazioni sulle licenze per i sistemi telefonici, vedere [ottenere il massimo da Office](https://products.office.com/compare-all-microsoft-office-products?tab=2) e [Opzioni di piano](https://technet.microsoft.com/library/office-365-plan-options.aspx). 
 
 Per altre informazioni sulle licenze per i sistemi telefonici, vedere licenze per i [componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). 
 
@@ -190,15 +190,15 @@ Microsoft sta lavorando all'aggiunta di altre autorità di certificazione in bas
 
 ## <a name="sip-signaling-fqdns"></a>Segnalazione SIP: FQDN 
 
-Il routing diretto è disponibile nei seguenti ambienti di Office 365:
-- Office 365
+Il routing diretto è disponibile negli ambienti seguenti:
+- Microsoft 365 o Office 365
 - Office 365 GCC
 - Office 365 GCC High
 - Office 365 DoD
 
 Leggi altre informazioni su [Office 365 e gli ambienti governativi degli Stati Uniti](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-us-government/office-365-us-government) , ad esempio GCC, GCC High e DOD.
 
-### <a name="office-365-and-office-365-gcc-environments"></a>Ambienti Office 365 e Office 365 GCC
+### <a name="microsoft-365-office-365-and-office-365-gcc-environments"></a>Ambienti Microsoft 365, Office 365 e Office 365 GCC
 
 I punti di connessione per il routing diretto sono i tre FQDN seguenti:
 
@@ -251,8 +251,8 @@ Il nome FQDN sip.pstnhub.gov.teams.microsoft.us verrà risolto in uno degli indi
 
 ## <a name="sip-signaling-ports"></a>Segnalazione SIP: porte
 
-È necessario usare le porte seguenti per gli ambienti di Office 365 in cui è disponibile il routing diretto:
-- Office 365
+È necessario usare le porte seguenti per gli ambienti Microsoft 365 o Office 365 in cui è disponibile il routing diretto:
+- Microsoft 365 o Office 365
 - Office 365 GCC
 - Office 365 GCC High
 - Office 365 DoD
@@ -282,7 +282,7 @@ Tieni presente che i requisiti seguenti si applicano se vuoi distribuire il rout
 
 Il traffico multimediale passa da e verso un servizio separato nel cloud Microsoft. Gli intervalli di indirizzi IP per il traffico multimediale sono i seguenti.
 
-### <a name="office-365-and-office-365-gcc-environments"></a>Ambienti Office 365 e Office 365 GCC
+### <a name="microsoft-365-office-365-and-office-365-gcc-environments"></a>Ambienti Microsoft 365, Office 365 e Office 365 GCC
 
 - 52.112.0.0/14 (indirizzi IP da 52.112.0.1 a 52.115.255.254).
 - 52.120.0.0/14 (indirizzi IP da 52.120.0.1 a 52.123.255.254).
@@ -320,7 +320,7 @@ Posizioni in cui sono stati distribuiti sia i componenti proxy SIP che i process
 
 Posizioni in cui vengono distribuiti solo i processori multimediali (flussi SIP tramite il centro dati più vicino elencato sopra):
 - Giappone (JP est e centro dati ovest)
-- Australia (centri dati AU est e ovest)
+- Australia (centri dati UA est e sud-est)
 
 
 

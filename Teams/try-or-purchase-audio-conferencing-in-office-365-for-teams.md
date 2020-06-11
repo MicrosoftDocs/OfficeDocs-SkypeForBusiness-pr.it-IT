@@ -22,13 +22,13 @@ ms.custom:
 - Audio Conferencing
 - ms.lync.lac.CpcGettingStarted
 - seo-marvel-mar2020
-description: 'Vedi come provare o acquistare le licenze di Audioconferenza (conferenze PSTN) per Office 365 per configurare le conferenze telefoniche a cui gli utenti possono connettersi. '
-ms.openlocfilehash: 26b7074407759533d2ac272371e34c9022dd6ce5
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+description: 'Informazioni su come provare o acquistare licenze per servizi di audioconferenza (servizi di conferenza PSTN) per Microsoft 365 o Office 365 per configurare le chiamate in conferenza a cui gli utenti possono effettuare la chiamata. '
+ms.openlocfilehash: db49a690ef0936dc22a618756d15064543074137
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44041773"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691542"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-microsoft-365-for-microsoft-teams"></a>Provare o acquistare servizi di audioconferenza in Microsoft 365 per Microsoft Teams
 
@@ -52,7 +52,7 @@ Per eseguire questa procedura è necessario essere un amministratore [globale o 
 
    - **Acquista**: Vedi [licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 
-3. [Assegnare o rimuovere licenze per Office 365 per aziende](https://support.office.com/article//997596b5-4173-4627-b915-36abac6786dc) che hai acquistato per gli utenti dell'organizzazione che intendono pianificare o condurre riunioni.
+3. [Aggiungere utenti singolarmente o in blocco](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) acquistati alle persone dell'organizzazione che hanno intenzione di pianificare o condurre riunioni.
 
 4. Se hai acquistato licenze del componente aggiuntivo Audioconferenza e licenze di Credito per la comunicazione, assegna anche quelle. Per istruzioni, vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md).
 
@@ -69,7 +69,7 @@ Se si è un cliente di licenze a volume, è possibile ottenere le licenze di Aud
     > [!IMPORTANT]
     > Se i Crediti per la comunicazione non sono stati impostati, l'Audioconferenza non funzionerà per tutti gli utenti con le licenze di tariffa al minuto.
 
-4. [Assegnare o rimuovere licenze di Office 365 per aziende](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) che hai acquistato per gli utenti dell'organizzazione che intendono pianificare o condurre riunioni.
+4. [Aggiungere utenti singolarmente o in blocco](https://docs.microsoft.com/microsoft-365/admin/add-users/add-users) acquistati alle persone dell'organizzazione che hanno intenzione di pianificare o condurre riunioni.
 
     > [!NOTE]
     > Se si dispongono delle licenze di tariffa al minuto per Audioconferenza, non è necessario assegnare licenze di Credito per la comunicazione separatamente per ogni utente per l'utilizzo di servizi di Audioconferenza (potrebbe ancora essere necessario assegnarli per altri servizi).

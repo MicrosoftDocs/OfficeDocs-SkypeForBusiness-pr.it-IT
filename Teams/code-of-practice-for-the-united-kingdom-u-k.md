@@ -23,16 +23,16 @@ ms.custom:
 - seo-marvel-mar2020
 hideEdit: true
 description: Informazioni sul codice di esercitazione per i piani per chiamate PSTN per Skype for business UK, incluso, dove ottenere assistenza e come inviare reclami e risolvere le controversie.
-ms.openlocfilehash: 064d6961289a7874e9e67843c0cf47339c64f896
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: ac741fec8ccd7262e865ef4aaef8f3858faf3cb7
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779632"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689762"
 ---
 # <a name="calling-plans-in-microsoft-365---code-of-practice-for-the-united-kingdom-uk"></a>Piani di chiamata in Microsoft 365-codice di pratica per il Regno Unito (UK)
 
-Questo codice si applica ai clienti di piccole imprese (organizzazioni con 10 dipendenti o meno) nel Regno Unito (UK) per quanto riguarda il servizio Office 365 Calling Plan (il "servizio") in conformità con le normative per le comunicazioni del Regno Unito. Altri servizi di Skype for Business sono disciplinati dal contratto di servizio tra il cliente e Microsoft e da eventuali altri termini applicabili all'utilizzo del servizio specifico da parte del cliente.
+Questo codice si applica ai clienti di piccole imprese (organizzazioni con 10 dipendenti o meno) nel Regno Unito (UK) per quanto riguarda il servizio Microsoft 365 o Office 365 Calling Plan (il "servizio") in conformità con le normative per le comunicazioni del Regno Unito. Altri servizi di Skype for Business sono disciplinati dal contratto di servizio tra il cliente e Microsoft e da eventuali altri termini applicabili all'utilizzo del servizio specifico da parte del cliente.
 
 ## <a name="1-about-skype-for-business"></a>1. Informazioni su Skype for Business
 
@@ -52,7 +52,7 @@ Alcune risposte possono essere disponibili visitando il [sito web di Skype for B
 
 ## <a name="3-complaints-and-dispute-resolution"></a>3. Reclami e risoluzione dei contenziosi
 
-Soddisfazione del cliente ed eccellenza nel servizio sono le nostre massime priorità. Tuttavia, in caso di qualsiasi reclamo, ci adopereremo rapidamente per aiutare a risolvere il problema. I [piani per le chiamate in Office 365-codice di gestione delle denunce per la pagina Regno Unito (UK) descrive in](complaint-handling-code-for-the-united-kingdom-u-k.md) dettaglio le procedure per le piccole imprese per presentare un reclamo con noi e il nostro sistema di risoluzione delle controversie indipendente.
+Soddisfazione del cliente ed eccellenza nel servizio sono le nostre massime priorità. Tuttavia, in caso di qualsiasi reclamo, ci adopereremo rapidamente per aiutare a risolvere il problema. I [piani per le chiamate in Microsoft 365 o Office 365-codice di gestione delle denunce per la pagina Regno Unito (UK)](complaint-handling-code-for-the-united-kingdom-u-k.md) illustrano le procedure per le piccole imprese per presentare un reclamo con noi e il nostro sistema di risoluzione delle controversie indipendente.
   
 ## <a name="4-number-porting"></a>4. Portabilità del numero
 
@@ -60,13 +60,13 @@ In alcuni casi, Skype for Business non potrà trasferire il numero di telefono d
 
 ## <a name="5-service-reliability"></a>5. Affidabilità del servizio
 
-Il piano di chiamata di Office 365 si basa sulla connessione a banda larga. In caso di interruzione di alimentazione o guasto della connessione a banda larga, non sarà possibile effettuare chiamate telefoniche. Le cause di tali guasti possono essere al di fuori del nostro controllo.
+Microsoft 365 o Office 365 Calling Plan si basa sulla connessione a banda larga. In caso di interruzione di alimentazione o guasto della connessione a banda larga, non sarà possibile effettuare chiamate telefoniche. Le cause di tali guasti possono essere al di fuori del nostro controllo.
 
 ## <a name="6-emergency-calls"></a>6. Chiamate d'emergenza
 
-Skype for Business fornisce accesso ai servizi pubblici di chiamata di emergenza 999/112 ai clienti ubicati in Inghilterra, Galles, Scozia e Irlanda del Nord. Tuttavia, le chiamate di emergenza a 999 o 112 funzionano in modo diverso con i servizi di Office 365 Calling Plan rispetto ai servizi telefonici tradizionali. I clienti sono tenuti a notificare a ogni utente i servizi di Office 365 Calling Plan di queste differenze.
+Skype for Business fornisce accesso ai servizi pubblici di chiamata di emergenza 999/112 ai clienti ubicati in Inghilterra, Galles, Scozia e Irlanda del Nord. Tuttavia, le chiamate di emergenza a 999 o 112 funzionano in modo diverso con i servizi Microsoft 365 o Office 365 Calling Plan rispetto ai servizi telefonici tradizionali. I clienti sono tenuti a notificare a ogni utente dei servizi Microsoft 365 o Office 365 Calling Plan di queste differenze.
 
-Le differenze includono le seguenti: (i) Skype for business potrebbe non conoscere la posizione effettiva di un chiamante, in modo che i servizi di emergenza vengano spediti nella posizione errata; (II) quando un utente di Skype for business compone una chiamata di emergenza, l'utente può essere invitato da un operatore a fornire la propria posizione corrente per facilitare l'instradamento delle chiamate di emergenza e la spedizione di servizi di emergenza; (III) se il dispositivo dell'utente non ha alimentazione, si verifica un'interruzione di corrente o, per qualsiasi motivo, non può accedere a Internet in altro modo, l'utente non può effettuare una chiamata di emergenza tramite i servizi di Office 365 Calling Plan; e (IV) anche se i servizi di Office 365 Calling Plan possono essere usati ovunque nel mondo in cui è disponibile una connessione Internet, gli utenti non devono chiamare 999 o 112 fuori dall'Inghilterra, il Galles, la Scozia o l'Irlanda del Nord, perché la chiamata probabilmente non verrà instradata al servizio di emergenza appropriato.
+Le differenze includono le seguenti: (i) Skype for business potrebbe non conoscere la posizione effettiva di un chiamante, in modo che i servizi di emergenza vengano spediti nella posizione errata; (II) quando un utente di Skype for business compone una chiamata di emergenza, l'utente può essere invitato da un operatore a fornire la propria posizione corrente per facilitare l'instradamento delle chiamate di emergenza e la spedizione di servizi di emergenza; (III) se il dispositivo dell'utente non ha alimentazione, si verifica un'interruzione di corrente o, per qualsiasi motivo, non può accedere a Internet in altro modo, l'utente non può effettuare una chiamata di emergenza tramite Microsoft 365 o Office 365 per i servizi di pianificazione delle chiamate; e (IV) anche se Microsoft 365 e Office 365 Calling Plan Services possono essere usati ovunque nel mondo in cui è disponibile una connessione Internet, gli utenti non devono chiamare 999 o 112 fuori dall'Inghilterra, dal Galles, dalla Scozia o dall'Irlanda del Nord, perché la chiamata probabilmente non verrà instradata al servizio di emergenza appropriato.
 
 È importante che ciascun cliente registri la posizione dei propri utenti e mantenga aggiornate tali informazioni in modo che possano essere inviate ai servizi di emergenza. È possibile modificare le informazioni di posizione tramite il portale di amministrazione di Skype for Business.
 

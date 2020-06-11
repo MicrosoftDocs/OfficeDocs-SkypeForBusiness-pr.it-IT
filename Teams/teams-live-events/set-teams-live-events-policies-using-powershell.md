@@ -18,12 +18,12 @@ description: Esempi di come usare PowerShell per impostare i criteri in teams pe
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4d5f1cceb42afd2be92aedcd0a40af4e23650512
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 1c1131790e36fe451444a8c8a3fb25259d5741da
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140647"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691572"
 ---
 # <a name="use-powershell-to-set-live-events-policies-in-microsoft-teams"></a>Usare PowerShell per impostare i criteri degli eventi dinamici in Microsoft Teams
 
@@ -36,7 +36,7 @@ Puoi usare i cmdlet di Windows PowerShell seguenti per impostare e assegnare le 
 Ecco alcuni esempi.
 
 > [!NOTE]
-> Prima di poter eseguire questi cmdlet, è necessario essere connessi a PowerShell per Skype for business online. Per altre informazioni, vedere [gestire Skype for business online con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell).
+> Prima di poter eseguire questi cmdlet, è necessario essere connessi a PowerShell per Skype for business online. Per altre informazioni, vedere [gestire Skype for business online con Microsoft 365 o Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell).
 
 ## <a name="allow-users-to-schedule-live-events"></a>Consentire agli utenti di pianificare eventi dinamici 
 

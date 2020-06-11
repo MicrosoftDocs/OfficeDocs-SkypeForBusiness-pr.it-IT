@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: "Informazioni su come aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione nell'interfaccia di amministrazione di Microsoft teams. "
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ae3a224b38fba412b9c0dc4ec0bfde5028440a79
-ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
+ms.openlocfilehash: 5758d79325cd83579e2a650db47c9913a0cda26b
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44610325"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690842"
 ---
 # <a name="add-change-or-remove-an-emergency-location-for-your-organization"></a>Aggiungere, modificare o rimuovere un percorso per l'organizzazione di emergenza
 
@@ -46,6 +46,7 @@ Per informazioni su come ottenere un piano per le chiamate e sulla quantità di 
 
    > [!NOTE]
    > In Belgio, Francia, Germania, Irlanda, Paesi Bassi e Spagna è importante capire che per attivare correttamente un numero di telefono in Microsoft 365 o Office 365, l'indirizzo impostato nella posizione di emergenza, usato per acquisire il numero, deve corrispondere al prefisso del numero di telefono.
+
 5. Se l'indirizzo non viene trovato e si vuole modificare manualmente l'indirizzo, attivare **modifica manualmente l'** indirizzo.
 6. Fare clic su **Salva**.
 

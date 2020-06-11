@@ -22,19 +22,19 @@ f1.keywords:
 ms.custom:
 - Legal
 - seo-marvel-mar2020
-description: Informazioni sul periodo di chiamata in uscita gratuito per il piano di chiamate di Office 365 e per i servizi di audioconferenza di Office 365 in Microsoft teams.
-ms.openlocfilehash: 19ffdd1b0a634a2fb3294479b2163af38aefedf6
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+description: Informazioni sul periodo di chiamata gratuita per Microsoft 365 o Office 365 e per i servizi di audioconferenza di Office 365 in Microsoft teams.
+ms.openlocfilehash: 11788e00b1fa643f18beaca2b339a1770c6cd909
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779793"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690892"
 ---
 # <a name="audio-conferencing-complimentary-dial-out-period"></a>Periodo di chiamate gratuite di Audioconferenza
 
 ## <a name="skype-for-business-pstn-services"></a>Servizi di conferenza PSTN Skype for Business
 
-Customers may use Office 365 Calling Plan and Office 365 Audio Conferencing as permitted in the Skype for Business Online PSTN Services Use Terms and Customer's volume licensing agreement. The PSTN Services Use Terms may be found at [Licensing Terms and Documentation](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=2&amp;Keyword=PSTN).
+I clienti possono usare il piano di chiamate Microsoft 365 o Office 365 e i servizi di conferenza audio di Office 365 consentiti nelle comunicazioni PSTN di Skype for business online e nei contratti multilicenza del cliente. I termini per l'uso dei servizi PSTN possono essere trovati in [termini di licenza e documentazione](http://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=2&amp;Keyword=PSTN).
   
 ### <a name="end-of-complimentary-dial-out-period"></a>Fine del periodo di chiamata in uscita gratuito
 
@@ -44,7 +44,7 @@ Questa modifica non verrà eseguita per i paesi in cui è disponibile l'abboname
 
 ### <a name="complimentary-dial-out-period-details"></a>Dettagli del periodo di chiamata gratuita
 
-Per i clienti che adottano il servizio di conferenza audio di Office 365, Microsoft offre un ulteriore vantaggio aggiuntivo correlato alla chiamata in uscita dalle riunioni organizzate dagli utenti assegnati a una licenza di abbonamento a Office 365 per i servizi di audioconferenza tramite il 2019 novembre. Durante questo periodo di tempo gratuito, Microsoft consente agli organizzatori della riunione o ai partecipanti autorizzati come definiti nelle impostazioni dei criteri di riunione, di effettuare chiamate in uscita dall'interno della riunione a numeri di telefono non Premium nei paesi e nelle aree geografiche di 44 "zona A" elencati di seguito. Questo vantaggio si applica alle licenze di abbonamento mensile per i servizi di audioconferenza e non si estende alle licenze pay-per-minute per audioconferenza.
+Per i clienti che adottano il servizio di audioconferenza Microsoft 365 o Office 365, Microsoft offre un ulteriore vantaggio gratuito relativo alla chiamata in uscita dalle riunioni organizzate dagli utenti assegnati a una licenza di abbonamento a Microsoft 365 o Office 365 per i servizi di audioconferenza tramite novembre 2019. Durante questo periodo di tempo gratuito, Microsoft consente agli organizzatori della riunione o ai partecipanti autorizzati come definiti nelle impostazioni dei criteri di riunione, di effettuare chiamate in uscita dall'interno della riunione a numeri di telefono non Premium nei paesi e nelle aree geografiche di 44 "zona A" elencati di seguito. Questo vantaggio si applica alle licenze di abbonamento mensile per i servizi di audioconferenza e non si estende alle licenze pay-per-minute per audioconferenza.
 
 Inoltre, durante il periodo di chiamata gratuita è disponibile un limite di 900 minuti:
 
@@ -58,7 +58,7 @@ Gli utenti con una posizione di utilizzo della licenza (questa è la posizione d
 - Tutte le chiamate in uscita verso le destinazioni non presenti nell'area di un elenco di paesi vengono fatturate al minuto usando i crediti per le comunicazioni alle tariffe pubblicate a tale destinazione (purché il tenant abbia configurato i crediti per le comunicazioni e abbia assegnato la licenza per i crediti di comunicazione all'organizzatore della riunione).
 
 > [!NOTE]
-> È possibile monitorare l'uso di un pool di minuti con accesso esterno nell'interfaccia di amministrazione di Skype for business. Nell'interfaccia di amministrazione di Microsoft teams & Skype accedere ai**pool di minuti PSTN**dei > **report** > del **portale legacy**. Questo pool di minuti gratuiti verrà etichettato nel report come "chiamate in uscita per la zona A paesi e aree geografiche".
+> È possibile monitorare l'uso di un pool di minuti con accesso esterno nell'interfaccia di amministrazione di Skype for business. Nell'interfaccia di amministrazione di Microsoft teams & Skype accedere **Legacy portal**ai pool di  >  **Reports**  >  **minuti PSTN**dei report del portale legacy. Questo pool di minuti gratuiti verrà etichettato nel report come "chiamate in uscita per la zona A paesi e aree geografiche".
 
 Le notifiche tramite posta elettronica verranno inviate a tutti gli amministratori del tenant di un cliente specifico quando l'utilizzo del pool di minuti di accesso esterno del tenant ha raggiunto 80% e 100%.
 

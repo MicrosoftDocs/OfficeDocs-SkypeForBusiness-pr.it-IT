@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare e connettere il proprio SBC al routing diretto del sistema telefonico.
-ms.openlocfilehash: fbcc1d79a4875ba835fc77ea24f6356ded3da894
-ms.sourcegitcommit: 6e24ea8aa9cccf8a1a964c8ed414ef5c7de3dc17
+ms.openlocfilehash: 8ceb4d1811b479fbcdc0d4ca83f4dbc4672227bd
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44159038"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691262"
 ---
 # <a name="connect-your-session-border-controller-sbc-to-direct-routing"></a>Connettere il session border controller (SBC) al routing diretto
 
@@ -38,9 +38,9 @@ Puoi usare l'interfaccia di [amministrazione di Microsoft teams](#using-the-micr
 
 ## <a name="using-the-microsoft-teams-admin-center"></a>Usando l'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nella barra di spostamento sinistra, passa a routing **vocale** > **diretto**e quindi fai clic sulla scheda **SBCS** .
+1. Nella barra di spostamento sinistra, passa a routing **vocale**  >  **diretto**e quindi fai clic sulla scheda **SBCS** .
 2. Fare clic su **Aggiungi**.
-3. Immettere un nome di dominio completo per SBC. <br><br>Verificare che la parte Domain Name dell'FQDN corrisponda a un dominio registrato nel tenant e ricordare che il `*.onmicrosoft.com` nome di dominio non è supportato per il nome di dominio FQDN di SBC. Se ad esempio sono presenti due nomi di dominio, `contoso.com` `contoso.on.microsoft.com`usare `sbc.contoso.com` il nome SBC.
+3. Immettere un nome di dominio completo per SBC. <br><br>Verificare che la parte Domain Name dell'FQDN corrisponda a un dominio registrato nel tenant e ricordare che il `*.onmicrosoft.com` nome di dominio non è supportato per il nome di dominio FQDN di SBC. Se ad esempio sono presenti due nomi di dominio, `contoso.com` `contoso.on.microsoft.com` usare `sbc.contoso.com` il nome SBC.
 4. Configurare le impostazioni seguenti per SBC, in base alle esigenze dell'organizzazione. Per informazioni dettagliate su ognuna di queste impostazioni, vedere [Impostazioni SBC](#sbc-settings).
 
     ![Screenshot della pagina Add SBC nell'interfaccia di amministrazione di Microsoft Teams](media/direct-routing-add-sbc.png)
@@ -86,7 +86,7 @@ New-CsOnlinePSTNGateway -Fqdn <SBC FQDN> -SipSignalingPort <SBC SIP Port> -MaxCo
 
   > [!NOTE]
   > 1. Ti consigliamo di impostare un limite massimo per le chiamate in SBC usando le informazioni che puoi trovare nella documentazione SBC. Il limite attiverà una notifica se SBC è a livello di capacità.
-  > 2. Puoi connettere il SBC solo se la parte del dominio del relativo nome FQDN corrisponde a uno dei domini registrati nel tenant, eccetto \*. onmicrosoft.com. L' \*uso dei nomi di dominio con estensione onmicrosoft.com non è supportato per il nome FQDN di SBC. Se ad esempio sono presenti due nomi di dominio, **Contoso**. com e **Contoso**. onmicrosoft.com, è possibile usare SBC. contoso. con per il nome SBC. Se si prova a connettere l'SBC con un nome, ad esempio SBC. contoso. ABC, il sistema non lo consente, poiché il dominio non è di proprietà di questo tenant.<br/>
+  > 2. Puoi connettere il SBC solo se la parte del dominio del relativo nome FQDN corrisponde a uno dei domini registrati nel tenant, eccetto \* . onmicrosoft.com. \*L'uso dei nomi di dominio con estensione onmicrosoft.com non è supportato per il nome FQDN di SBC. Se ad esempio sono presenti due nomi di dominio, **Contoso**. com e **Contoso**. onmicrosoft.com, è possibile usare SBC. contoso. con per il nome SBC. Se si prova a connettere l'SBC con un nome, ad esempio SBC. contoso. ABC, il sistema non lo consente, poiché il dominio non è di proprietà di questo tenant.<br/>
   > Oltre al dominio registrato nel tenant, è importante che ci sia un utente con tale dominio e una licenza E3 o E5 assegnata. In caso contrario, verrà visualizzato il seguente messaggio di errore:<br/>
   `Can not use the "sbc.contoso.com" domain as it was not configured for this tenant`.
 
@@ -164,7 +164,7 @@ Questa tabella elenca le opzioni che è possibile impostare per SBC nell'interfa
 |No|**Abilitato**|Abilitata|USA per attivare SBC per le chiamate in uscita. Puoi usare questa funzione per rimuovere temporaneamente l'SBC dal servizio durante l'aggiornamento o durante la manutenzione. |Falso|Vero<br/>Falso|Boolean|
 |Sì|**Porta di segnalazione SIP**|SipSignalingPort |Questa è la porta di ascolto usata per comunicare con il routing diretto usando il protocollo Transport Layer (TLS).|Nessuno|Qualsiasi porta|da 0 a 65535 |
 |No|**Opzioni di invio SIP**|SendSIPOptions |Definisce se SBC invierà messaggi di opzioni SIP. Ti consigliamo vivamente di attivare questa impostazione. Quando questa impostazione è disattivata, il SBC viene escluso dal sistema di monitoraggio e avviso.|Vero|Vero<br/>Falso|Boolean|
-|No|**Inoltra cronologia chiamate**|ForwardCallHistory |Indica se le informazioni sulla cronologia delle chiamate vengono inoltrate tramite il trunk. Quando si attiva questa operazione, il proxy di Office 365 invia una cronologia-info e un'intestazione di riferimento. |Falso|Vero<br/>Falso|Boolean|
+|No|**Inoltra cronologia chiamate**|ForwardCallHistory |Indica se le informazioni sulla cronologia delle chiamate vengono inoltrate tramite il trunk. Quando si attiva questa operazione, il proxy Microsoft 365 o Office 365 invia una cronologia-info e un'intestazione di riferimento. |Falso|Vero<br/>Falso|Boolean|
 |No|**Intestazione in avanti P-asserzione-identità (PAI)**|ForwardPAI|Indica se l'intestazione PAI viene inoltrata insieme alla chiamata. L'intestazione PAI consente di verificare l'identità del chiamante. Se questa impostazione è attivata, viene inviata anche l'intestazione privacy: ID.|Falso|Vero<br/>Falso|Boolean|
 |No|**Capacità chiamata simultanea**|MaxConcurrentSessions |Quando si imposta un valore, il sistema di avviso notificherà quando il numero di sessioni simultanee è pari a 90% o superiore a questo valore. Se non si imposta un valore, gli avvisi non vengono generati. Tuttavia, il sistema di monitoraggio riporterà il numero di sessioni simultanee ogni 24 ore. |Null|Null<br/>1-100.000 ||
 |No|**Codici di risposta di failover**|FailoverResponseCodes<br>|Se il routing diretto riceve qualsiasi codice di errore SIP 4xx o 6xx in risposta a un invito in uscita, la chiamata viene considerata completata per impostazione predefinita. In uscita si intende una chiamata da un client teams alla rete PSTN con flusso di traffico: client teams-> Direct routing-> SBC-> Telephony Network). Quando si specifica un codice di risposta di failover, questo impone al routing diretto di provare un altro SBC (se esiste un altro SBC nel criterio di routing vocale dell'utente) quando riceve i codici specificati se SBC non riesce a effettuare una chiamata a causa di problemi di rete o altri. Per altre informazioni, vedere [failover di codici SIP specifici ricevuti da Session Border Controller (SBC)](direct-routing-trunk-failover-on-outbound-call.md).|408, 503, 504||Int|

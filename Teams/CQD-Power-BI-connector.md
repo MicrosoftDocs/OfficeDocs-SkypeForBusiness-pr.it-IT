@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
-ms.openlocfilehash: 84177d98addfa3efc96db4e77148556a941a74dc
-ms.sourcegitcommit: 1e7bc16969db01317ee482cabf681febae0ef51f
+ms.openlocfilehash: eb7d2bf412308b017f2583436dd792d64a084b20
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44416866"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690932"
 ---
 # <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
 
@@ -121,6 +121,8 @@ Nonostante l'uso di Power BI, non tutte le funzionalità di Power BI sono suppor
 4.  **Riferimento ai dati memorizzati nella cache** Power BI attualmente non supporta il riferimento ai dati memorizzati nella cache da un connettore DirectQuery in alcun modo. Qualsiasi tentativo di fare riferimento ai risultati di una query comporterà una nuova query. 
 
 5.  **Filtro dei dati relativi:** È supportata nel connettore Call Quality dashboard, ma solo con le dimensioni ora *inizio* e *ora di fine* . Anche se la dimensione *Data* può essere la scelta più ovvia per il filtro della data relativa, la *Data* non viene archiviata come oggetto data-ora e quindi non supporta il filtro della data relativa in Power bi.
+
+6. **Supporto di Government community Cloud (GCC)-** Per i clienti nell'ambiente GCC, il connettore Power BI di Call Quality dashboard funzionerà quando si usa desktop di Power BI. Il connettore di Power BI Call Quality Dashboard non è attualmente compatibile con il servizio Power BI per i clienti di GCC.
 
 Tieni presente che, anche se il connettore è in anteprima, è improbabile che queste limitazioni cambino con la versione finale del connettore. La maggior parte di questi problemi è una restrizione alla progettazione di connettori DirectQuery in Power BI o fondamentale per la progettazione del modello di dati Call Quality dashboard.
 

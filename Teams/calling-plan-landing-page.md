@@ -17,12 +17,12 @@ description: Determinare quale piano di chiamate di sistema telefonico Microsoft
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4b1fb0abed3477039f4c19c0e2de0ea696626f35
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 46a985247acaf80c228e19dc8ba38cfb1085308e
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905028"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691412"
 ---
 # <a name="which-calling-plan-is-right-for-you"></a>Qual è il piano di chiamata adatto alle proprie esigenze? 
 
@@ -35,8 +35,8 @@ In questo articolo vengono illustrate le decisioni di distribuzione principali p
 
 Gli articoli seguenti includono ulteriori informazioni sulla distribuzione e l'uso di piani di chiamata Microsoft:
 
-- [Sistema telefonico di Office 365](what-is-phone-system-in-office-365.md)
-- [Piani di chiamata per Office 365](calling-plans-for-office-365.md)
+- [Sistema telefonico in Microsoft 365 o Office 365](what-is-phone-system-in-office-365.md)
+- [Piani di chiamata per Microsoft 365 o Office 365](calling-plans-for-office-365.md)
 - [Configurare i piani per chiamate](set-up-calling-plans.md)
 
 
@@ -52,19 +52,19 @@ Sono disponibili due tipi di piani per le chiamate:
 |Chiedersi|Azione |
 |------------|-------|
 |I piani di chiamata sono disponibili nell'area personale? Quali posizioni utente avranno il servizio di piano chiamante? | Per altre informazioni, vedere [disponibilità di paesi e aree geografiche per i piani di audioconferenza e chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). | 
-I miei utenti hanno bisogno di chiamate internazionali? | Per altre informazioni, vedere [chiamare piani per Office 365](calling-plans-for-office-365.md). |
+I miei utenti hanno bisogno di chiamate internazionali? | Per altre informazioni, vedere [chiamare piani per Microsoft 365 o Office 365](calling-plans-for-office-365.md). |
 Gli utenti hanno licenze per i piani di chiamata? | Per acquistare e assegnare licenze, vedere [passaggio 2: acquistare e assegnare licenze](set-up-calling-plans.md#step-2-buy-and-assign-licenses). |
 I miei utenti hanno ciascuno un numero di telefono diretto verso l'interno? | Per ottenere i numeri di telefono, vedere [passaggio 3: ottenere i numeri di telefono](set-up-calling-plans.md#step-3-get-phone-numbers). |
 |||
 
-### <a name="transfer-phone-numbers-to-office-365"></a>Trasferire numeri di telefono in Office 365
+### <a name="transfer-phone-numbers-to-microsoft-365-or-office-365"></a>Trasferire i numeri di telefono a Microsoft 365 o Office 365
 
 È facile trasferire i numeri di telefono dal provider di servizi corrente in teams. Dopo aver convertito i numeri di telefono in teams, Microsoft diventerà il proprio provider di servizi e gli verrà addebitato il numero di telefono. Per altre informazioni, vedere [trasferire i numeri di telefono in teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
 
 
 ### <a name="phone-numbers-and-emergency-locations"></a>Numeri di telefono e posizioni di emergenza
 
-Con i piani per le chiamate in Office 365, ogni utente dell'organizzazione deve avere un numero di telefono univoco diretto (DID) e un indirizzo di emergenza convalidato corrispondente. È anche possibile specificare una posizione di emergenza all'interno dell'indirizzo di emergenza, ad esempio un numero di ufficio o un numero di piano. 
+Con i piani per le chiamate in Microsoft 365 o Office 365, ogni utente dell'organizzazione deve avere un numero di telefono univoco diretto (DID) e un indirizzo di emergenza convalidato corrispondente. È anche possibile specificare una posizione di emergenza all'interno dell'indirizzo di emergenza, ad esempio un numero di ufficio o un numero di piano. 
 
 |Chiedersi|Azione |
 |:------------|:-------|

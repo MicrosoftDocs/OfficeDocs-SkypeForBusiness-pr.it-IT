@@ -23,12 +23,12 @@ ms.custom:
 - Phone System
 - seo-marvel-mar2020
 description: Informazioni su come configurare Skype for Businesss per usare un'altra lingua per il messaggio di saluto predefinito della segreteria telefonica dell'organizzazione.
-ms.openlocfilehash: 9941ba697300d7dd1426e278d8d42900621cf58a
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 988f09141913c72b9334b28d2c218b15bdbf3376
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904331"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691392"
 ---
 # <a name="change-the-default-language-for-greetings-and-emails"></a>Modificare la lingua predefinita per i messaggi di saluto e le e-mail
 
@@ -38,7 +38,7 @@ Se si è un [amministratore globale](https://support.office.com/article/da585eea
   
 - **Le lingue disponibili sono determinate dalla località dell'organizzazione**. Ad esempio, se la tua organizzazione si trova negli Stati Uniti, puoi impostare inglese o spagnolo come lingua predefinita. Se la tua organizzazione si trova in Canada, puoi scegliere fra inglese e francese. Per l'elenco delle lingue disponibili, vedi la sezione [Lingue per saluti e messaggi della segreteria telefonica da Skype for Business](languages-for-voicemail-greetings-and-messages.md).
     
-- **Modifica delle lingue per i messaggi di saluto e segreteria telefonica dei singoli utenti.** È possibile modificare il lingua preferito per gli utenti, che cambierà la lingua dei messaggi di saluto e segreteria telefonica inviati alla propria cassetta postale di Outlook. Per istruzioni, vedere [come impostare le impostazioni relative alla lingua e all'area geograficahttps://docs.microsoft.com/office365/troubleshoot/access-management/set-language-and-region)per Office 365] (. 
+- **Modifica delle lingue per i messaggi di saluto e segreteria telefonica dei singoli utenti.** È possibile modificare il lingua preferito per gli utenti, che cambierà la lingua dei messaggi di saluto e segreteria telefonica inviati alla propria cassetta postale di Outlook. Per istruzioni, vedere [come impostare le impostazioni relative alla lingua e all'area geografica per Microsoft 365 o Office 365] ( https://docs.microsoft.com/office365/troubleshoot/access-management/set-language-and-region) . 
     
     > [!NOTE]
     > Gli utenti possono cambiare la propria lingua di saluto tramite le impostazioni dopo aver effettuato l'accesso seguendo le istruzioni disponibili in [modificare la lingua e il fuso orario di visualizzazione in Microsoft 365 for business](https://support.office.com/en-us/article/change-your-display-language-and-time-zone-in-microsoft-365-for-business-6f238bff-5252-441e-b32b-655d5d85d15b?ui=en-US&rs=en-US&ad=US)
@@ -49,9 +49,9 @@ Se si è un [amministratore globale](https://support.office.com/article/da585eea
     
 ## <a name="change-the-system-language-for-everyone-in-your-organization"></a>Cambiare la lingua di sistema per tutti i membri dell'organizzazione.
 
-1. Accedere con l'account di [amministratore globale](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home). 
+1. Accedere con l'account di [amministratore globale](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home) . 
     
-2. Nell'interfaccia di amministrazione di Microsoft **365 scegliere** > **Settings** > **profilo organizzazione**impostazioni impostazioni. 
+2. Nell'interfaccia di amministrazione di Microsoft **365 scegliere**  >  **Settings**  >  **profilo organizzazione**impostazioni impostazioni. 
     
      ![Screenshot che Mostra come scegliere le impostazioni e quindi profilo organizzazione.](media/9d9de520-bb84-409f-9417-96bd8ec86c48.png)
   
@@ -69,11 +69,11 @@ Se si è un [amministratore globale](https://support.office.com/article/da585eea
     
 - [Configurare i piani per chiamate](set-up-calling-plans.md)
     
-- [Pianificare il sistema telefonico in Office 365 con connettività PSTN locale in Skype for Business Server](https://go.microsoft.com/fwlink/?LinkId=717947)
+- [Pianificare il sistema telefonico in Microsoft 365 o Office 365 con connettività PSTN locale in Skype for Business Server](https://go.microsoft.com/fwlink/?LinkId=717947)
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Cambiare la lingua visualizzata e il fuso orario in Office 365 per le aziende](https://support.office.com/article/Change-your-display-language-and-time-zone-in-Office-365-for-Business-6f238bff-5252-441e-b32b-655d5d85d15b)
+- [Cambiare la lingua di visualizzazione e il fuso orario in Microsoft 365 o Office 365 for business](https://support.office.com/article/Change-your-display-language-and-time-zone-in-Office-365-for-Business-6f238bff-5252-441e-b32b-655d5d85d15b)
     
 - [Aggiungere una lingua o impostare le preferenze di lingua di Office 2010 e versioni successive](https://support.office.com/article/Add-a-language-or-set-language-preferences-in-Office-663d9d94-ca99-4a0d-973e-7c4a6b8a827d)
     

@@ -17,12 +17,12 @@ description: Scopri come usare i controlli di PowerShell per la gestione di Micr
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 32370c234e46b860ab026efd6b284d3db3a1458e
-ms.sourcegitcommit: 69ff557c79d6b1a3d1089fe5c8f5c8ed8ff7431e
+ms.openlocfilehash: c74f27af718b10aa033c51d4b42d1a3d15bcbc1b
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43951251"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690952"
 ---
 # <a name="teams-powershell-overview"></a>Panoramica di PowerShell Teams
 
@@ -44,9 +44,9 @@ Leggere [usare i ruoli di amministratore di Microsoft teams per gestire i team](
 
 I cmdlet per la creazione e la gestione dei team si trovano nel [modulo PowerShell di Microsoft teams](https://www.powershellgallery.com/packages/MicrosoftTeams/). 
 
-I team sono supportate da gruppi di Office 365, quindi quando crei un team crei un gruppo. Sono disponibili un set di cmdlet per l'uso del team di base e delle relative impostazioni (``new-team``, ``get-team``, ``set-team``,), la gestione degli``add-teamuser``utenti ``remove-teamuser``del team (,) e i cmdlet per la gestione dei canali del team``new-teamchannel``( ``remove-teamchannel``,). Tutti questi cmdlet possono essere eseguiti come utenti finali, ma lavoreranno solo sui team di cui si è proprietari o membri. Gli amministratori globali o gli amministratori del servizio teams saranno in grado di agire in tutti i team dell'organizzazione.
+I team sono supportate da gruppi Microsoft 365, quindi quando crei un team crei un gruppo. Sono disponibili un set di cmdlet per l'uso del team di base e delle relative impostazioni ( ``new-team`` , ``get-team`` ,, ``set-team`` ), la gestione degli utenti del team ( ``add-teamuser`` ,) e i ``remove-teamuser`` cmdlet per la gestione dei canali del team ( ``new-teamchannel`` , ``remove-teamchannel`` ). Tutti questi cmdlet possono essere eseguiti come utenti finali, ma lavoreranno solo sui team di cui si è proprietari o membri. Gli amministratori globali o gli amministratori del servizio teams saranno in grado di agire in tutti i team dell'organizzazione.
 
-> Il **GroupID** usato nei cmdlet del modulo di PowerShell per Microsoft teams è uguale alla proprietà **Identity** restituita ``Get-UnifiedGroup`` dal modulo di PowerShell di Exchange.
+> Il **GroupID** usato nei cmdlet del modulo di PowerShell per Microsoft teams è uguale alla proprietà **Identity** restituita dal ``Get-UnifiedGroup`` modulo di PowerShell di Exchange.
 
 ### <a name="differences-between-preview-and-generally-available-microsoft-teams-powershell-module"></a>Differenze tra l'anteprima e il modulo di PowerShell Microsoft teams disponibile in generale
 
@@ -84,30 +84,30 @@ Quando è stata rilasciata la versione generalmente disponibile del modulo di Po
 Usare i cmdlet nel [modulo cmdlet di Skype for business](https://www.microsoft.com/download/details.aspx?id=39366) per gestire i criteri per singoli utenti.
 
 > [!NOTE]
-> I cmdlet saranno disponibili nella sessione di PowerShell quando ci si connette a Skype for business online. Per altre informazioni, vedere [gestire Skype for business online con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell). 
+> I cmdlet saranno disponibili nella sessione di PowerShell quando ci si connette a Skype for business online. Per altre informazioni, vedere [gestire Skype for business online con Microsoft 365 o Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell). 
 
 Un criterio è un gruppo di impostazioni che possono essere applicate in maniera granulare ai singoli utenti. Ogni tipo di criterio ha un proprio set di cmdlet per la creazione, la visualizzazione, l'eliminazione e l'aggiornamento dei criteri stessi e quindi l'assegnazione di tali criteri agli utenti. La struttura generale è:
 
-- OTTENERE i comandi (ad esempio ``Get-CsTeamsMeetingPolicy``,): restituire i documenti dei criteri disponibili per l'assegnazione nell'organizzazione, i criteri creati da Microsoft per l'uso e i criteri personalizzati creati.
-   > Se si vogliono trovare solo i criteri personalizzati creati nell'organizzazione, è possibile usarli ``-Filter "tag:*"``.
+- OTTENERE i comandi (ad esempio, ``Get-CsTeamsMeetingPolicy`` ): restituire i documenti dei criteri disponibili per l'assegnazione nell'organizzazione, i criteri creati da Microsoft per l'uso e i criteri personalizzati creati.
+   > Se si vogliono trovare solo i criteri personalizzati creati nell'organizzazione, è possibile usarli ``-Filter "tag:*"`` .
 
-- NUOVI comandi (ad esempio, ``New-CsTeamsMeetingPolicy``): consentono di creare nuovi criteri per l'organizzazione che sono quindi disponibili per l'assegnazione agli utenti dell'organizzazione. Non tutti i criteri supportano la creazione di criteri personalizzati. Spesso si tratta di verificare che i criteri usati nell'organizzazione dispongano di una combinazione di impostazioni supportata.
+- NUOVI comandi (ad esempio, ``New-CsTeamsMeetingPolicy`` ): consentono di creare nuovi criteri per l'organizzazione che sono quindi disponibili per l'assegnazione agli utenti dell'organizzazione. Non tutti i criteri supportano la creazione di criteri personalizzati. Spesso si tratta di verificare che i criteri usati nell'organizzazione dispongano di una combinazione di impostazioni supportata.
 
-- IMPOSTARE i comandi (ad esempio ``Set-CsTeamsMeetingPolicy``): consente di impostare valori specifici per un determinato criterio. Alcuni criteri non dispongono di comandi impostati o contengono parametri che non possono essere personalizzati nel criterio. Ogni descrizione di PowerShell chiamerà i parametri che non possono essere personalizzati. 
-   > Per modificare i criteri che verranno assegnati per impostazione predefinita agli utenti dell'organizzazione che non dispongono di un criterio personalizzato assegnato, Esegui ``Set-Cs<PolicyName> -Identity Global``.
+- IMPOSTARE i comandi (ad esempio ``Set-CsTeamsMeetingPolicy`` ): consente di impostare valori specifici per un determinato criterio. Alcuni criteri non dispongono di comandi impostati o contengono parametri che non possono essere personalizzati nel criterio. Ogni descrizione di PowerShell chiamerà i parametri che non possono essere personalizzati. 
+   > Per modificare i criteri che verranno assegnati per impostazione predefinita agli utenti dell'organizzazione che non dispongono di un criterio personalizzato assegnato, Esegui ``Set-Cs<PolicyName> -Identity Global`` .
 
-- Rimuovi comandi (ad esempio ``Remove-CsTeamsMeetingPolicy``): puoi usare questo cmdlet per eliminare un criterio personalizzato creato nel tenant. Se si eliminano i criteri personalizzati assegnati ad almeno un utente dell'organizzazione, l'utente ritornerà al criterio globale.
-   > In realtà non è possibile rimuovere il criterio globale nell'organizzazione, ma se si vuole reimpostare il criterio globale dell'organizzazione con le impostazioni predefinite fornite da Microsoft, si può eseguire ``Remove-Cs<PolicyName> -Identity Global``.
+- Rimuovi comandi (ad esempio ``Remove-CsTeamsMeetingPolicy`` ): puoi usare questo cmdlet per eliminare un criterio personalizzato creato nel tenant. Se si eliminano i criteri personalizzati assegnati ad almeno un utente dell'organizzazione, l'utente ritornerà al criterio globale.
+   > In realtà non è possibile rimuovere il criterio globale nell'organizzazione, ma se si vuole reimpostare il criterio globale dell'organizzazione con le impostazioni predefinite fornite da Microsoft, si può eseguire ``Remove-Cs<PolicyName> -Identity Global`` .
 
-- Comando Concedi (ad esempio ``Grant-CsTeamsMeetingPolicy``): consente di assegnare un criterio a un determinato utente.
-   > Per rimuovere un'assegnazione di criteri personalizzata e far rientrare l'utente nei criteri predefiniti dell'organizzazione, eseguire ``Grant-Cs<PolicyName> -Identity <User Identity> -PolicyName $null``.
+- Comando Concedi (ad esempio ``Grant-CsTeamsMeetingPolicy`` ): consente di assegnare un criterio a un determinato utente.
+   > Per rimuovere un'assegnazione di criteri personalizzata e far rientrare l'utente nei criteri predefiniti dell'organizzazione, eseguire ``Grant-Cs<PolicyName> -Identity <User Identity> -PolicyName $null`` .
 
 > [!TIP]
-> Non tutti i criteri consentono la creazione di criteri personalizzati e alcuni criteri hanno impostazioni che non è possibile personalizzare (in modo che sia possibile visualizzare l'impostazione ma non impostare un ``set-`` valore ``new-``personalizzato durante e). La documentazione del cmdlet specifico definirà se i parametri non sono disponibili per i clienti.
+> Non tutti i criteri consentono la creazione di criteri personalizzati e alcuni criteri hanno impostazioni che non è possibile personalizzare (in modo che sia possibile visualizzare l'impostazione ma non impostare un valore personalizzato durante ``set-`` e ``new-`` ). La documentazione del cmdlet specifico definirà se i parametri non sono disponibili per i clienti.
 
 Parametri comuni:
 
-- **Identity**: for ``Get-``, ``Set-``, ``New-``e ``Remove-``, il parametro **Identity** farà sempre riferimento a una specifica istanza di criteri. Per ``Grant``il parametro **Identity** fa riferimento a un oggetto utente specifico a cui è applicato il criterio.
+- **Identity**: for ``Get-`` , ``Set-`` , ``New-`` e ``Remove-`` , il parametro **Identity** farà sempre riferimento a una specifica istanza di criteri. Per ``Grant`` il parametro **Identity** fa riferimento a un oggetto utente specifico a cui è applicato il criterio.
 
 <!--more info here?-->
 
@@ -117,10 +117,10 @@ I cmdlet per la gestione della configurazione si trovano nel [modulo cmdlet di S
 
 Le configurazioni sono contenitori di impostazioni gestite nel servizio che non è possibile specificare a livello di utente. Le impostazioni vengono sempre applicate in tutta l'organizzazione. La configurazione globale è l'unica configurazione efficace dell'organizzazione. Ogni tipo di configurazione include due cmdlet principali:
 
-- ``Get-Cs<ConfigurationName>``(ad esempio, ``Get-CsTeamsClientConfiguration``): 
+- ``Get-Cs<ConfigurationName>``(ad esempio, ``Get-CsTeamsClientConfiguration`` ): 
 
-- IMPOSTA comandi (ad esempio, ``Set-CsTeamsClientConfiguration``): imposta le proprietà nella configurazione di quel tipo. Specificare i parametri che si desidera modificare.
-   > È possibile fare riferimento alla configurazione che si sta modificando in uno dei due modi seguenti: specificando-**Identity global**oppure ``Get-Cs<ConfigurationName>``  |  ``Set-Cs<ConfigurationName>``eseguendo.
+- IMPOSTA comandi (ad esempio, ``Set-CsTeamsClientConfiguration`` ): imposta le proprietà nella configurazione di quel tipo. Specificare i parametri che si desidera modificare.
+   > È possibile fare riferimento alla configurazione che si sta modificando in uno dei due modi seguenti: specificando-**Identity global**oppure eseguendo ``Get-Cs<ConfigurationName>``  |  ``Set-Cs<ConfigurationName>`` .
 
 ## <a name="other-powershell-tools"></a>Altri strumenti di PowerShell
 

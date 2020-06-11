@@ -16,43 +16,43 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su cosa è necessario per eseguire la migrazione a routing diretto da una prospettiva di configurazione di Skype for business online e teams.
-ms.openlocfilehash: fa7a3e09d4f79328545bff29b2f440ba0bfe6990
-ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+ms.openlocfilehash: 11240c3a1067885dbf34499a4e131185acccbf52
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "41888585"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691362"
 ---
 # <a name="migrate-to-direct-routing"></a>Eseguire la migrazione a Instradamento diretto
 
 Questo articolo descrive le informazioni necessarie per eseguire la migrazione a routing diretto da una prospettiva di configurazione di Skype for business online e Microsoft teams. Questo articolo illustra la migrazione da quanto segue: 
  
-- Sistema telefonico Office 365 con piani di chiamata (per team e Skype for business online) 
-- Sistema telefonico Office 365 con connettività PSTN locale in Skype for Business Server (per Skype for business online)  
-- Sistema telefonico Office 365 con connettività PSTN locale tramite Cloud Connector Edition (per Skype for business online)
+- Sistema telefonico con piani di chiamata (per team e Skype for business online) 
+- Sistema telefonico con connettività PSTN locale in Skype for Business Server (per Skype for business online)  
+- Sistema telefonico con connettività PSTN locale tramite Cloud Connector Edition (per Skype for business online)
 
 
 Oltre a questi passaggi di configurazione, la configurazione è necessaria anche per il controller Border Session (SBC) per instradare le chiamate alla nuova route. Che esula dall'ambito di questo documento. Per altre informazioni, vedere la documentazione del fornitore SBC.  
 
 ## <a name="user-provisioning-end-state-for-various-pstn-connectivity-options"></a>Stato finale di provisioning degli utenti per varie opzioni di connettività PSTN 
 
-La tabella seguente mostra lo stato di fine di un utente con provisioning per le opzioni di connettività PSTN selezionate con il sistema telefonico di Office 365. Vengono visualizzati solo gli attributi rilevanti per la voce.
+La tabella seguente mostra lo stato di fine di un utente con provisioning per le opzioni di connettività PSTN selezionate con il sistema telefonico. Vengono visualizzati solo gli attributi rilevanti per la voce.
 
 |Attributi degli oggetti utente |Sistema telefonico con piani di chiamata|Sistema telefonico con connettività PSTN locale tramite Skype for Business Server|Sistema telefonico con connettività PSTN locale tramite connettore Cloud|Sistema telefonico con connettività PSTN locale tramite routing diretto|
 |---|---|---|---|---|
-|Client|Skype for business o Teams |Skype for business |Skype for business |Teams|
+|Client|Skype for business o Teams |Skype for Business |Skype for Business |Teams|
 |Licenze|Skype business online</br>Piano 2</br></br>MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)</br></br></br>Piani di chiamata</br>Teams|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)|Skype business online Plan 2 (MCOProfessional o MCOSTANDARD</br></br></br>Sistema telefonico (MCOEV)</br></br>Teams|
 OnPremLineURI |N/D|Il numero di telefono deve essere sincronizzato dall'annuncio locale. |Il numero di telefono può essere gestito sia in Active Directory locale che in Azure Active Directory.|Il numero di telefono può essere gestito sia in Active Directory locale che in Azure Active Directory. Tuttavia, se l'organizzazione ha Skype for business locale, il numero deve essere sincronizzato dall'Active Directory locale.|
 |LineURI|Numero di telefono chiamante PSTN|Imposta automaticamente dal parametro OnPremLineURI|Imposta automaticamente dal parametro OnPremLineURI|Imposta automaticamente dal parametro OnPremLineURI|
-|EnterpriseVoiceEnabled|True|True|True|True|
-|HostedVoiceMail |True|True|True|True|
+|EnterpriseVoiceEnabled|Vero|Vero|Vero|Vero|
+|HostedVoiceMail |Vero|Vero|Vero|Vero|
 |VoicePolicy|BusinessVoice|HybridVoice|HybridVoice|HybridVoice|
 |HostedVoiceMailPolicy |BusinessVoice|BusinessVoice|BusinessVoice|BusinessVoice|
 |VoiceRoutingPolicy|Ha un valore|Ha un valore|Ha un valore|N/D|
 |OnlineVoiceRoutingPolicy|$Null|$Null|$Null|Ha un valore|
 |TeamsUpgradePolicy<sup>1</sup>|TeamsOnly, SfBOnly|$Null|$Null|TeamsOnly|
-|TeamsCallingPolicy</br>AllowPrivateCalling|True|N/D|N/D|True|
-|TeamsCallingPolicy</br>AllowGroupCalling|True|N/D|N/D|True|
+|TeamsCallingPolicy</br>AllowPrivateCalling|Vero|N/D|N/D|Vero|
+|TeamsCallingPolicy</br>AllowGroupCalling|Vero|N/D|N/D|Vero|
 ||||||
 
 <sup>1</sup> la scelta della modalità corretta della TeamsUpgradePolicy dipende dallo scenario. Leggere l'esperienza vocale in diverse modalità nelle [linee guida per la migrazione e l'interoperabilità per le organizzazioni che usano team insieme a Skype for business](migration-interop-guidance-for-teams-with-skype.md).

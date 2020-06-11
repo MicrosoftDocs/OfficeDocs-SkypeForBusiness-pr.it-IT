@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5846d3912f9acea3a21174b7468e8376e9779b55
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: a99ec5fdea273c5d9e265e22a77c86ee628da3ab
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44637505"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690012"
 ---
 # <a name="overview-of-teams-and-channels-in-microsoft-teams"></a>Panoramica dei team e i canali in Microsoft Teams
 
@@ -75,7 +75,7 @@ Richiede tre minuti la visione del video seguente con la guida per i proprietari
 
    > [!VIDEO https://www.youtube.com/embed/kalV4dG-oFo]
 
-Se si è un amministratore di Microsoft Teams in Office 365, è possibile accedere alle impostazioni a livello di sistema nell'interfaccia di amministrazione di Microsoft Teams. Queste impostazioni possono influire sulle opzioni e le impostazioni predefinite che i proprietari visualizzano nelle impostazioni del team. Ad esempio, è possibile abilitare un canale predefinito "Generale", per gli annunci a livello di team, le discussioni e le risorse che verranno visualizzate nei team.
+Se si è un amministratore di Microsoft teams in Microsoft 365 o Office 365, è possibile accedere a impostazioni a livello di sistema nell'interfaccia di amministrazione di Microsoft teams. Queste impostazioni possono influire sulle opzioni e le impostazioni predefinite che i proprietari visualizzano nelle impostazioni del team. Ad esempio, è possibile abilitare un canale predefinito "Generale", per gli annunci a livello di team, le discussioni e le risorse che verranno visualizzate nei team.
 
 Per impostazione predefinita, tutti gli utenti dispongono delle autorizzazioni per creare un team in Microsoft Teams. Per modificare questa impostazione, vedere [Assegnare ruoli e autorizzazioni in Teams](assign-roles-permissions.md). Gli utenti di un gruppo Microsoft 365 esistente possono anche migliorare le autorizzazioni con la funzionalità teams.
 

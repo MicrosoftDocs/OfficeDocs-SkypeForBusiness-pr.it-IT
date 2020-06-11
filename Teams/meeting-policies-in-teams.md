@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: 726e14aef92eed8fe681d183b8e1cfd404e659ca
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: ae1b73c2aefecb64dfe18e0fda0aa880f3962aa7
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665138"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690942"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -436,8 +436,8 @@ Per specificare se gli utenti possono personalizzare lo sfondo del video in una 
 |---------|---------|
 |**Nofilters**     |L'utente non può personalizzare lo sfondo del video.|
 |**BlurOnly**     |L'utente ha la possibilità di sfocare lo sfondo del video. |
-|**BlurandDefaultBackgrounds**     |L'utente ha la possibilità di sfocare lo sfondo del video o scegliere da un set di immagini da usare come sfondo. |
-|**AllFilters**     |Use ha la possibilità di sfocare lo sfondo del video, scegliere da un set di immagini o caricare immagini personalizzate da usare come sfondo. |
+|**BlurandDefaultBackgrounds**     |L'utente ha la possibilità di sfocare lo sfondo del video o scegliere il set predefinito di immagini da usare come sfondo. |
+|**AllFilters**     |Use ha la possibilità di sfocare lo sfondo del video, scegliere dal set di immagini predefinito o caricare immagini personalizzate da usare come sfondo. |
 
 > [!NOTE]
 > Le immagini caricate dagli utenti non vengono visualizzate dai team. Quando si usa l'impostazione **AllFilters** , è necessario disporre di criteri di organizzazione interni per impedire agli utenti di caricare immagini offensive o inappropriate o immagini che l'organizzazione non ha diritto di usare per gli sfondi delle riunioni di teams.

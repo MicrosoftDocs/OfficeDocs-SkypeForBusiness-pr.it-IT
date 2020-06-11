@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni sulle diverse combinazioni di creazione degli utenti e sulle combinazioni supportate o non consolidate.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 635ab29498ee01c976b33dc62a193bb723ba190e
-ms.sourcegitcommit: ebdad71a8d393466e33a2fdc8606d882a6007588
+ms.openlocfilehash: a7b41eb474d7574aa23b5fa195219794ed715424
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "44280255"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44690872"
 ---
 # <a name="user-accounts-in-a-hybrid-environment-with-pstn-connectivity"></a>Account utente in un ambiente ibrido con connettività PSTN
 
@@ -31,7 +31,7 @@ ms.locfileid: "44280255"
 Questo articolo si applica agli ambienti in cui sono presenti tutte le operazioni seguenti: 
  
 - Skype for Business Server o Lync Server 2013 
-- Un'organizzazione di Office 365 
+- Un'organizzazione di Microsoft 365 o Office 365 
 - Connettività ibrida configurata tra il tenant di Skype for Business Server e Skype for business online o Microsoft Teams 
 - Utenti abilitati a effettuare e ricevere chiamate PSTN (Public Switched Telephone Network) da e verso il client
 
@@ -46,7 +46,7 @@ Un ambiente ibrido di Skype for business con connettività PSTN offre flessibili
 **Definizioni**   
 - **Enterprise Voice:** Opzione per consentire l'accesso a PSTN per gli utenti con account utente Skype for business locale. Il Mediation Server Skype for business in locale offre l'interconnettività alla rete PSTN.  
 - **Connettività vocale ibrida:** Opzione per consentire l'accesso a PSTN per gli utenti con account Skype for business online. Il Mediation Server Skype for business in locale offre l'interconnettività alla rete PSTN. 
-- **Routing diretto:** Opzione per consentire l'accesso a PSTN per gli utenti con account Skype for business online, licenza Microsoft teams, con il client Microsoft teams. SBC è connesso al proxy SIP in Office 365 senza bisogno di alcun software locale da Microsoft.
+- **Routing diretto:** Opzione per consentire l'accesso a PSTN per gli utenti con account Skype for business online, licenza Microsoft teams, con il client Microsoft teams. SBC è connesso al proxy SIP in Microsoft 365 o Office 365 senza bisogno di alcun software locale da Microsoft.
 
   
 **L'ambiente supporta le combinazioni seguenti:**
@@ -70,4 +70,4 @@ Un ambiente ibrido di Skype for business con connettività PSTN offre flessibili
 
 ### <a name="supportability-statement-for-the-hybrid-environment-with-pstn"></a>Istruzione di supporto per l'ambiente ibrido con PSTN
 
-Per tutti gli utenti, è **necessario** creare l'oggetto utente nell'annuncio locale e sincronizzarlo con Azure ad usando lo strumento Azure ad Connect. L'abilitazione degli utenti per Teams/Skype for business **non è supportata** se l'oggetto utente viene creato direttamente in Azure ad in una configurazione ibrida. Per i nuovi utenti, ad esempio un nuovo noleggio, che verranno abilitati direttamente per i team, l'utente deve essere abilitato per Skype for business usando gli strumenti di gestione di Skype for business locali. La creazione di utenti in Skype for business online o in teams senza prima averli abilitati in pool locale con Enterprise Voice **non è supportata**. Per altre informazioni, vedere [sistema telefono piano in Office 365 con connettività PSTN locale in Skype for Business Server](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-phone-system-with-on-premises-pstn-connectivity).
+Per tutti gli utenti, è **necessario** creare l'oggetto utente nell'annuncio locale e sincronizzarlo con Azure ad usando lo strumento Azure ad Connect. L'abilitazione degli utenti per Teams/Skype for business **non è supportata** se l'oggetto utente viene creato direttamente in Azure ad in una configurazione ibrida. Per i nuovi utenti, ad esempio un nuovo noleggio, che verranno abilitati direttamente per i team, l'utente deve essere abilitato per Skype for business usando gli strumenti di gestione di Skype for business locali. La creazione di utenti in Skype for business online o in teams senza prima averli abilitati in pool locale con Enterprise Voice **non è supportata**. Per altre informazioni, vedere [sistema telefonico Plan con connettività PSTN locale in Skype for Business Server](https://docs.microsoft.com/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-phone-system-with-on-premises-pstn-connectivity).

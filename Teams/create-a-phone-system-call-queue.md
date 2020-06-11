@@ -23,12 +23,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare il sistema telefonico per le code di chiamate cloud con Microsoft teams, che offre un messaggio di saluto, tenere premuto musica, reindirizzare le chiamate e altre funzionalità.
-ms.openlocfilehash: 6bf3353a86cc096d5d9f9891315d9b47de40e9f4
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: ac0fb41ebb85a6e7e80d3d221da4dabf456d20aa
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44669423"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44697425"
 ---
 # <a name="create-a-cloud-call-queue"></a>Creare una coda di chiamata cloud
 
@@ -68,10 +68,10 @@ Per iniziare a utilizzare le code di chiamata, è importante ricordare quanto se
   > [!NOTE]
   > I numeri di servizio di routing diretto per le code di chiamata sono supportati solo per gli utenti e gli agenti di Microsoft teams.
 
-  > [!NOTE]
-  > Per reindirizzare le chiamate alle persone dell'organizzazione online, devono avere una licenza per il **sistema telefonico** e essere abilitate per VoIP aziendale o avere piani di chiamata di Office 365. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, Esegui:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
+> [!NOTE]
+> Per reindirizzare le chiamate alle persone dell'organizzazione online, devono avere una licenza per il **sistema telefonico** e essere abilitate per VoIP aziendale o avere piani di chiamata Microsoft 365 o Office 365. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, Esegui:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
 
-- Per altre informazioni sui piani di chiamate di Office 365, vedere [sistemi di telefonia e](calling-plan-landing-page.md) piani di chiamata e [piani di chiamata per Office 365](calling-plans-for-office-365.md).
+- Per altre informazioni sui piani di chiamata, vedere [sistema telefonico e](calling-plan-landing-page.md) piani per chiamate e [chiamate per Microsoft 365 o Office 365](calling-plans-for-office-365.md).
 
 - È possibile assegnare solo i numeri di telefono a pedaggio e numero verde delle code di chiamate cloud disponibili nell'interfaccia di **amministrazione di Microsoft teams** o trasferiti da un altro provider di servizi. I crediti per le comunicazioni sono necessari per i numeri di servizio gratuiti.
 
@@ -97,7 +97,7 @@ Per iniziare a utilizzare le code di chiamata, è importante ricordare quanto se
 
 ## <a name="step-2--get-or-transfer-toll-or-toll-free-service-phone-numbers"></a>Passaggio 2: ottenere o trasferire numeri di servizio a pagamento o a numero verde
 
-Prima di poter creare e configurare le code di chiamata, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono](getting-service-phone-numbers.md) o se si vuole trasferire un numero di servizio esistente, vedere trasferire i [numeri di telefono in Office 365](phone-number-calling-plans/transfer-phone-numbers-to-teams.md). Dopo aver ottenuto il pedaggio o i numeri di telefono del servizio gratuito, verranno visualizzati nei **Microsoft Teams admin center**  >  numeri di telefono della**segreteria**  >  **telefonica**dell'interfaccia di amministrazione di Microsoft teams. I numeri verdi saranno elencati con un **tipo** di servizio numero **-gratuito**.
+Prima di poter creare e configurare le code di chiamata, è necessario ottenere o trasferire i numeri di servizio a pagamento o a pedaggio esistenti. Per ottenere i numeri di servizio, vedere [recupero di numeri di telefono](getting-service-phone-numbers.md) o se si vuole trasferire un numero di servizio esistente, vedere trasferire i [numeri di telefono in teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md). Dopo aver ottenuto il pedaggio o i numeri di telefono del servizio gratuito, verranno visualizzati nei **Microsoft Teams admin center**  >  numeri di telefono della**segreteria**  >  **telefonica**dell'interfaccia di amministrazione di Microsoft teams. I numeri verdi saranno elencati con un **tipo** di servizio numero **-gratuito**.
 
 > [!NOTE]
 > Se si è al di fuori degli Stati Uniti, non è possibile usare l'interfaccia di amministrazione di Microsoft teams per ottenere i numeri di servizio. Vai a [gestire i numeri di telefono per l'organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) per vedere come farlo dall'esterno degli Stati Uniti.
@@ -163,7 +163,7 @@ Le chiamate vengono instradate prima a singoli agenti, quindi agli agenti in gru
 
 È possibile selezionare fino a 200 gli agenti di chiamata che appartengono a una delle seguenti liste di distribuzione o gruppi:
 
-- Gruppo Office 365
+- Gruppo Microsoft 365
 - Gruppo di sicurezza
 - Elenco di distribuzione
 
@@ -178,7 +178,7 @@ Gli agenti di chiamata selezionati devono essere uno dei seguenti:
 
    Per abilitare un agente per VoIP aziendale, è possibile usare Windows PowerShell. Ad esempio, Esegui:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
 
-- Utenti con una licenza di **sistema telefonico** o un piano di chiamata aggiunto a un gruppo di Office 365; una lista di distribuzione abilitata per la posta elettronica; o un gruppo di sicurezza. Quando si aggiunge un agente in una lista di distribuzione o un gruppo di sicurezza come agente della coda di chiamata, è possibile che la prima chiamata arrivi fino a tre ore. Una lista di distribuzione o un gruppo di sicurezza appena creato può richiedere fino a 48 ore per diventare disponibile per l'uso con le code di chiamata. I gruppi Microsoft 365 appena creati sono disponibili quasi immediatamente.
+- Utenti con una licenza di **sistema telefonico** o un piano di chiamata aggiunto a un gruppo di Microsoft 365, a una lista di distribuzione abilitata per la posta elettronica o a un gruppo di sicurezza. Quando si aggiunge un agente in una lista di distribuzione o un gruppo di sicurezza come agente della coda di chiamata, è possibile che la prima chiamata arrivi fino a tre ore. Una lista di distribuzione o un gruppo di sicurezza appena creato può richiedere fino a 48 ore per diventare disponibile per l'uso con le code di chiamata. I gruppi Microsoft 365 appena creati sono disponibili quasi immediatamente.
 
 - Se gli agenti usano l'app Microsoft teams per le chiamate alla coda di chiamata, devono essere in modalità TeamsOnly.
 
@@ -328,7 +328,7 @@ Puoi anche utilizzare Windows PowerShell per creare e configurare code di chiama
 
 ### <a name="more-about-windows-powershell"></a>Altre informazioni su Windows PowerShell
 
-- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell è possibile gestire Office 365 e Microsoft teams con un unico punto di amministrazione. Può semplificare il lavoro quotidiano, quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 e Microsoft teams con un unico punto di amministrazione. Può semplificare il lavoro quotidiano, quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
 
   - [Introduzione a Windows PowerShell e Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 
@@ -336,13 +336,13 @@ Puoi anche utilizzare Windows PowerShell per creare e configurare code di chiama
 
 - Windows PowerShell offre numerosi vantaggi in velocità, semplicità e produttività nell'interfaccia di amministrazione di Microsoft teams quando si apportano modifiche per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
 
-  - [Gestire Office 365 con Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)
+  - [Gestire Microsoft 365 o Office 365 con Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell)
 
   - [Configurare il computer per Windows PowerShell](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Ecco cosa offre il Sistema telefonico in Office 365](here-s-what-you-get-with-phone-system.md)
+[Vantaggi offerti dal Sistema telefonico](here-s-what-you-get-with-phone-system.md)
 
 [Recuperare numeri di telefono del servizio](getting-service-phone-numbers.md).
 

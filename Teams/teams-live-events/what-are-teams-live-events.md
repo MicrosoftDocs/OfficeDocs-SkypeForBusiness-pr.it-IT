@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.liveevents.policies
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b4ea5bce539ff178130910297a47add38464e4d4
-ms.sourcegitcommit: a6425a536746e129ab8bda3984b5ae63fb316192
+ms.openlocfilehash: 1ab528740947fa7efdd0608cec309757c3bb5eb2
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/07/2020
-ms.locfileid: "42558526"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689722"
 ---
 # <a name="what-are-microsoft-teams-live-events"></a>Che cosa sono gli eventi di Microsoft teams Live?
 
@@ -79,7 +79,7 @@ L'obiettivo di eCDN è quello di portare il contenuto video da Internet e distri
 - [Rampa](http://www.ramp.com)
 
 ### <a name="attendee-experience"></a>Esperienza partecipante 
-L'esperienza dei partecipanti è l'aspetto più importante degli eventi live ed è fondamentale che i partecipanti possano partecipare all'evento live senza problemi. L'esperienza partecipante USA Stream Player (per gli eventi prodotti in teams) e Azure Media Player (per gli eventi prodotti in un'app o un dispositivo esterno) e funziona su desktop, browser e dispositivi mobili (iOS, Android). Office 365 offre Yammer e teams come due hub di collaborazione e l'esperienza Live partecipanti è integrata in questi strumenti di collaborazione. 
+L'esperienza dei partecipanti è l'aspetto più importante degli eventi live ed è fondamentale che i partecipanti possano partecipare all'evento live senza problemi. L'esperienza partecipante USA Stream Player (per gli eventi prodotti in teams) e Azure Media Player (per gli eventi prodotti in un'app o un dispositivo esterno) e funziona su desktop, browser e dispositivi mobili (iOS, Android). Microsoft 365 e Office 365 supportano Yammer e teams come due hub di collaborazione e l'esperienza Live partecipanti è integrata in questi strumenti di collaborazione. 
 
 ![Screenshot che mostra l'esperienza dei partecipanti al Live Events](../media/teams-live-events-attendee.png "Schermata che mostra l'esperienza dei partecipanti agli eventi Live")
 

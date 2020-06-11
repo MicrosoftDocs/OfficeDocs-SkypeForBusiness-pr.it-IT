@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 59c3d9d6ee6da2881aff52efa77c3d13678b560a
-ms.sourcegitcommit: ee2b4c207b3c9f993309f66cf8016e137c001c7f
+ms.openlocfilehash: 1338b9f497722b50658545918afa825fb652d462
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/23/2020
-ms.locfileid: "44350230"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689702"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -132,8 +132,10 @@ Per altre informazioni sui team e sulle app Microsoft 365 per le aziende, vedere
 
 1. Scaricare il pacchetto MSI teams che corrisponde al sistema operativo VDI VM usando uno dei collegamenti seguenti:
 
-    - [versione a 32 bit](https://statics.teams.cdn.office.net/production-windows/1.3.00.4461/Teams_windows.msi)
-    - [versione a 64 bit](https://statics.teams.cdn.office.net/production-windows-x64/1.3.00.4461/Teams_windows_x64.msi)
+
+    - [versione a 32 bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&download=true)
+    - [versione a 64 bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true)
+
 
     La versione minima dell'app desktop teams necessaria è la versione 1.3.00.4461. Il blocco PSTN non è supportato nelle versioni precedenti.
 
@@ -246,11 +248,11 @@ Per assegnare i criteri di chiamata di DisallowCalling e i criteri di riunione d
     2.  In **criteri riunione**fare clic su **AllOff**.
 4. Fare clic su **applica**.
 
-Per assegnare un criterio a più utenti alla volta:
+Per assegnare un criterio a più utenti contemporaneamente:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi cerca gli utenti o filtra la visualizzazione per mostrare gli utenti desiderati.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
 2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
-3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **applica**.  
+3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **Applica**.  
 
 Si può anche procedere nel modo seguente:
 
@@ -302,11 +304,11 @@ Per assegnare i criteri di chiamata AllowCalling e i criteri di riunione AllOn a
     2.  In **criteri riunione**fare clic su **Allon**.
 4. Fare clic su **applica**.
 
-Per assegnare un criterio a più utenti alla volta:
+Per assegnare un criterio a più utenti contemporaneamente:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**e quindi cerca gli utenti o filtra la visualizzazione per mostrare gli utenti desiderati.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
 2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
-3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **applica**.  
+3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **Applica**.  
 
 Si può anche procedere nel modo seguente:
 
@@ -373,3 +375,4 @@ Per informazioni su come risolvere i problemi relativi a VDA e CWA, vedere [ques
 
 - [Installare Microsoft teams con MSI](msi-deployment.md)
 - [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
+- [Usare Microsoft teams in Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/teams-on-wvd)
