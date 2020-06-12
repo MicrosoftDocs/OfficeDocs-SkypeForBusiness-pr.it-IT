@@ -18,12 +18,12 @@ description: Gli amministratori possono imparare ad aggiungere nuovi utenti gues
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 026fa191dffa160980bfb00e7031490f01ddc6cc
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: ea1670078a61366e1ab0207368a58f9ad2b900ab
+ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43778221"
+ms.lasthandoff: 06/08/2020
+ms.locfileid: "44609834"
 ---
 <a name="add-a-guest-to-a-team"></a>Aggiungere un utente guest a un team
 =====================
@@ -42,15 +42,15 @@ Gli amministratori possono aggiungere un nuovo utente guest all'organizzazione i
 
 Con Collaborazione B2B di Azure AD, le organizzazioni possono applicare criteri di accesso condizionale e autenticazione a più fattori (MFA) per gli utenti B2B. Questi criteri possono essere applicati a livello di tenant, di app o di singolo utente, così come vengono abilitati per dipendenti a tempo pieno e membri dell'organizzazione. Tali criteri vengono applicati all'organizzazione delle risorse. Per altre informazioni, vedere [Accesso condizionale per gli utenti di Collaborazione B2B](https://go.microsoft.com/fwlink/?linkid=857454). Non è possibile bloccare singoli utenti guest.
 
-Gli utenti guest che sono stati già aggiunti tramite B2B di Azure AD, Gruppi di Microsoft 365 o SharePoint Online sono pronti. L'amministratore di Office 365 o un proprietario dei team può aggiungere questi utenti guest ai rispettivi team. Se un team è già presente in un gruppo di Office 365 e viene aggiunto un utente guest al gruppo, il guest otterrà l'accesso al team. L'aggiunta di un guest tramite il gruppo di Office 365 non genera un messaggio di posta elettronica di invito per il guest, pertanto una persona del team deve informarlo.
+Gli utenti guest che sono stati già aggiunti tramite B2B di Azure AD, Gruppi di Microsoft 365 o SharePoint Online sono pronti. L'amministratore di Microsoft 365 o Office 365 o un proprietario dei team può aggiungere questi utenti guest ai rispettivi team. Se un team è già presente in un gruppo di Microsoft 365 e viene aggiunto un utente guest al gruppo, il guest otterrà l'accesso al team. L'aggiunta di un guest tramite il gruppo di Microsoft 365 non genera un messaggio di posta elettronica di invito per il guest, pertanto una persona del team deve informarlo.
 
 > [!NOTE]
-> Gli utenti guest sono soggetti ai limiti del servizio di [Office 365](https://go.microsoft.com/fwlink/p/?linkid=282347) e [Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=853019).
+> Gli utenti guest sono soggetti ai limiti del servizio di [Microsoft 365 o Office 365](https://go.microsoft.com/fwlink/p/?linkid=282347) e [Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=853019).
 
-È possibile tenere traccia dei guest aggiunti in Azure AD o Centro sicurezza &amp; conformità di Office 365. L'aggiunta di un guest in Microsoft Teams è controllata e registrata come attività di amministrazione del gruppo di Azure AD "Membro aggiunto a gruppo". Per ulteriori dettagli, vedere [Controllo e creazione di report per un utente di Collaborazione B2B](https://go.microsoft.com/fwlink/p/?linkid=858884) e [Eseguire una ricerca nel log di controllo nel Centro sicurezza &amp; conformità di Office 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security--Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
+È possibile tenere traccia dei guest aggiunti in Azure AD o Centro sicurezza di Microsoft 365. L'aggiunta di un guest in Microsoft Teams è controllata e registrata come attività di amministrazione del gruppo di Azure AD "Membro aggiunto a gruppo". Per ulteriori dettagli, vedere [Controllo e creazione di report per un utente di Collaborazione B2B](https://go.microsoft.com/fwlink/p/?linkid=858884) e [Eseguire una ricerca nel log di controllo nel Centro sicurezza di Microsoft 365](https://support.office.com/article/Search-the-audit-log-in-the-Office-365-Security--Compliance-Center-0d4d0f35-390b-4518-800e-0c7ec95e946c).
 
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 [Autorizzare l'accesso guest in Microsoft Teams](teams-dependencies.md)</br>
 [Attivare o disattivare l'accesso guest in Microsoft Teams](set-up-guests.md)</br>

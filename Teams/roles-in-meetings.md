@@ -17,12 +17,12 @@ description: Informazioni sulle funzionalità disponibili per relatori e parteci
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: 11c5858532ade4fd4ed00f7c8f6d1d0c94baeb2d
-ms.sourcegitcommit: 1a6b4efad1e6a958cdbaae4b0e2e231145c9658f
+ms.openlocfilehash: c8433d4caa0defbe83114ac4027c10b6bf61a725
+ms.sourcegitcommit: 862ba1d2b3bd4622b1b0baa15096c29c591cc6c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44321735"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702691"
 ---
 <a name="presenter-and-participant-capabilities-in-a-teams-meeting"></a>Funzionalità per relatori e partecipanti in una riunione di Teams
 ======================================================
@@ -33,7 +33,7 @@ Le funzionalità per riunioni disponibili sono:
 
 - Chat (include foto e adesivi)
 - Note riunione
-- Lavagna
+- Whiteboard
 - Registrazione
 - File
 - Pianificare una riunione (solo per le riunioni)
@@ -60,14 +60,14 @@ I partecipanti alla riunione possono essere di diversi tipi:
 
 ### <a name="in-tenant-participant"></a>Partecipante interno al tenant
 
-Il partecipante interno al tenant appartiene all'organizzazione e ha le credenziali per il tenant. Per altre informazioni su questo partecipante, vedere [Sicurezza e Microsoft Teams](teams-security-guide.md#participant-types).
+Il partecipante interno al tenant appartiene all'organizzazione e dispone delle credenziali per il tenant. Per altre informazioni su questo partecipante, vedere [Sicurezza e Microsoft Teams](teams-security-guide.md#participant-types).
 
 |Riunione  |  | |||
 |---------|----------------|----------------|---------------------|------------|--------------|
 | **Funzionalità**        | Prima della riunione | Durante la riunione | Dopo la riunione |
 | Chat | Sì | Sì | Sì |
 | Note riunione | Sì | Sì |Sì |
-| Lavagna | Sì | Sì |Sì |
+| Whiteboard | Sì | Sì |Sì |
 | Registrazione | N/D |Sì | Sì |
 | File | Sì | Sì | Sì |
 | Pianificare una riunione | Sì | N/D | N/D |
@@ -82,7 +82,7 @@ Un partecipante guest è una persona di un'altra organizzazione che è stata inv
 | **Funzionalità**        | Prima della riunione | Durante la riunione | Dopo la riunione |
 | Chat | Sì | Sì | Sì |
 | Note riunione | Sì | Sì | Sì |
-| Lavagna | No | No |No |
+| Whiteboard | No | No |No |
 | Registrazione | N/D |No | No |
 | File | Sì | Sì | Sì |
 | Pianificare una riunione | No | N/D | N/D |
@@ -90,14 +90,14 @@ Un partecipante guest è una persona di un'altra organizzazione che è stata inv
 
 ### <a name="external-federated-participant"></a>Partecipante esterno (federato)
 
-Un partecipante esterno è un utente che usa Teams in un'altra organizzazione, che è stato invitato a partecipare a una riunione, ma che non ha accesso ad altre risorse condivise dell'organizzazione. I partecipanti esterni vengono visualizzati nell'elenco dei partecipanti alla riunione con il nome identità che usano nella propria organizzazione. Per altre informazioni sui partecipanti esterni, vedere [Comunicare con utenti di altre organizzazioni](communicate-with-users-from-other-organizations.md#external-access).
+Un partecipante esterno è un utente che usa Teams in un'altra organizzazione, che è stato invitato a partecipare a una riunione, ma non ha accesso ad altre risorse condivise dell'organizzazione. I partecipanti esterni vengono mostrati nell'elenco dei partecipanti alla riunione con il nome identità che usano nella propria organizzazione. Altre informazioni sui partecipanti esterni sono disponibili in [Comunicare con utenti di altre organizzazioni](communicate-with-users-from-other-organizations.md#external-access).
 
-| Riunione (può essere aggiunto a un team solo come guest) ||
+| Riunione ||
 |-|-|-|
 | **Funzionalità** |||
-| Chat | N/D |
+| Chat | Sì |
 | Note riunione | N/D |  
-| Lavagna | N/D |
+| Whiteboard | N/D |
 | Registrazione | N/D |  
 | File | N/D |
 | Pianificare una riunione | N/D |
@@ -105,14 +105,14 @@ Un partecipante esterno è un utente che usa Teams in un'altra organizzazione, c
 
 ### <a name="anonymous-participant"></a>Partecipante anonimo
 
-Il partecipante anonimo è simile a un utente esterno, ma la sua identità non viene propagata nella riunione. Nel momento in cui entra nella riunione, immette manualmente un nickname. Per altre informazioni sui partecipanti anonimi, vedere [Sicurezza e Microsoft Teams](teams-security-guide.md#participant-types).
+Il partecipante anonimo è simile a un utente esterno, ma la sua identità non viene rivelata nella riunione. Nel momento in cui entra nella riunione, immette manualmente un nickname. Per altre informazioni sui partecipanti anonimi, vedere [Sicurezza e Microsoft Teams](teams-security-guide.md#participant-types).
 
 | Riunione  | | |||
 |---------|----------------|----------------|---------------------|------------|--------------|
 | **Funzionalità**        | Prima della riunione | Durante la riunione | Dopo la riunione |
-| Chat | N/D | No | N/D |
+| Chat | N/D | Sì | N/D |
 | Note riunione | N/D | No | N/D |
-| Lavagna | N/D | No | N/D |
+| Whiteboard | N/D | No | N/D |
 | Registrazione | N/D | No | N/D |
 | File | N/D | No | N/D |
 | Pianificare una riunione | N/D | N/D | N/D |

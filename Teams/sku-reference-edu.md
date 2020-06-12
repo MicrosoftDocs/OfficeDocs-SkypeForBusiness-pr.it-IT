@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Elenca i piani per le licenze didattiche e gli studenti e gli ID SKU.
 f1keywords: ''
-ms.openlocfilehash: 89b0a3d69fa933c8feacb27cc9c8a8a4213fa2e0
-ms.sourcegitcommit: 33bec766519397f898518a999d358657a413924c
+ms.openlocfilehash: 5f382be6aa19cbfef45bc0dcef350e5354df118a
+ms.sourcegitcommit: 862ba1d2b3bd4622b1b0baa15096c29c591cc6c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "42583338"
+ms.lasthandoff: 06/11/2020
+ms.locfileid: "44702701"
 ---
 # <a name="education-sku-reference"></a>Riferimento SKU per l'istruzione
 
@@ -67,6 +67,7 @@ In questo articolo sono elencati i piani per la facoltà di istruzione e le SKU 
 |Office 365 a5 senza servizi di audioconferenza per gli studenti usa vantaggi  |ENTERPRISEPREMIUM_NOPSTNCONF_STUUSEBNFT         |bc86c9cd-3058-43ba-9972-141678675ac1         |
 |Office 365 Education for Homeschool per studenti     |STANDARDWOFFPACK_HOMESCHOOL_STU         |afbb89a7-db5f-45fb-8af0-1bc5c5015709         |
 |Office 365 a1 per studenti (per dispositivi)     |STANDARDWOFFPACK_STUDENT_DEVICE         |160d609e-ab08-4fce-bc1c-ea13321942ac         |
+|Office 365 a1 Plus per studenti     |STANDARDWOFFPACK_IW_STUDENT         |e82ae690-a2d5-4d76-8d30-7c6e01e6022e         |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
