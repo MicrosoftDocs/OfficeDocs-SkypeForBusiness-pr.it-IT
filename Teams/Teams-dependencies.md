@@ -18,17 +18,17 @@ f1.keywords:
 description: Gestire le funzionalità dell'accesso guest di Microsoft Teams tramite quattro diversi livelli di autorizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 848db9ea517876d941e837eaff34e72e0cff9c2a
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 9c1a01c600ce0b5e64df274b12c9956bf922e9b4
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43778482"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689802"
 ---
 <a name="authorize-guest-access-in-microsoft-teams"></a>Autorizzare l'accesso guest in Microsoft Teams
 ===========================================
 
-Per soddisfare i requisiti dell'organizzazione, è possibile gestire le funzionalità di accesso guest di Microsoft Teams tramite quattro diversi livelli di autorizzazione. Tutti i livelli di autorizzazione si applicano all’organizzazione di Office 365. Ogni livello di autorizzazione controlla l'esperienza degli utenti guest come illustrato di seguito:
+Per soddisfare i requisiti dell'organizzazione, è possibile gestire le funzionalità di accesso guest di Microsoft Teams tramite quattro diversi livelli di autorizzazione. Tutti i livelli di autorizzazione si applicano all’organizzazione di Office 365 o Microsoft 365. Ogni livello di autorizzazione controlla l'esperienza degli utenti guest come illustrato di seguito:
 
 - **Azure Active Directory**: l'accesso guest in Microsoft Teams si basa sulla piattaforma business-to-business (B2B) di Azure AD. Questo livello di autorizzazione controlla l'esperienza degli utenti guest a livello di directory, tenant e applicazione.
 - **Microsoft Teams**: controlla l'esperienza degli utenti guest solo in Microsoft Teams.
@@ -38,9 +38,9 @@ Per soddisfare i requisiti dell'organizzazione, è possibile gestire le funziona
 Questi diversi livelli di autorizzazione forniscono la massima flessibilità per la configurazione dell'accesso guest per l'organizzazione. Ad esempio, se non si vuole fornire agli utenti guest l'accesso in Microsoft Teams ma si vuole consentire l'accesso globale nell'organizzazione, basta disattivare l'accesso guest in Microsoft Teams. Un altro esempio: è possibile abilitare l'accesso guest a livello di Azure AD, Teams e Gruppi, ma disabilitare l'aggiunta degli utenti guest a determinati team che soddisfano uno o più criteri come una classificazione dei dati di tipo riservato. SharePoint Online e OneDrive for Business hanno le proprie impostazioni per l'accesso guest che non si basano su Gruppi di Microsoft 365.
 
 > [!NOTE]
-> Gli utenti guest sono soggetti ai limiti del servizio di [Office 365](https://go.microsoft.com/fwlink/p/?linkid=282347) e [Azure Active Directory](https://go.microsoft.com/fwlink/p/?linkid=853019). 
+> Gli utenti guest sono soggetti ai limiti dei servizi descritti in [Descrizione dei servizi di Office 365 e Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=282347) e [Limitazioni di Collaborazione B2B di Azure AD](https://go.microsoft.com/fwlink/p/?linkid=853019). 
 
-Il seguente diagramma mostra in che modo la dipendenza di autorizzazione per l'accesso guest viene concessa e integrata tra Azure Active Directory, Microsoft Teams e Office 365.
+Il diagramma seguente mostra in che modo la dipendenza di autorizzazione per l'accesso guest viene concessa e integrata tra Azure Active Directory, Microsoft Teams e Office 365 o Microsoft 365.
 
 ![Diagramma delle dipendenze di autorizzazione per l'accesso guest](media/teams_dependencies_image1.png)
 
@@ -110,7 +110,7 @@ Consultare [Accesso guest in Gruppi di Microsoft 365](https://support.office.com
 
 Teams si basa su SharePoint Online e OneDrive for Business per archiviare file e documenti per i canali e le conversazioni chat.  
 
-Per l'esperienza di accesso guest completa in Teams, gli amministratori di Office 365 devono configurare le seguenti impostazioni:
+Per l'esperienza di accesso guest completa in Teams, gli amministratori di Microsoft 365 e Office 365 devono configurare le impostazioni seguenti:
 
 - In SharePoint Online: selezionare **Utenti guest esistenti**, **Utenti guest nuovi ed esistenti** o **Tutti**.
 

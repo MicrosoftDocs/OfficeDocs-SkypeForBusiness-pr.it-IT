@@ -17,12 +17,12 @@ description: Informazioni su come comunicare con utenti di altre organizzazioni 
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: b2f91d994ef05b9668d31dabc4d43033350ae85a
-ms.sourcegitcommit: 2c23a8c5afc4a6b74c2c6d7487975a94fe99dc07
+ms.openlocfilehash: fcc17aa7bc00904a13aa77761472ea3ea37a17cd
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44562041"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689692"
 ---
 <a name="communicate-with-users-from-other-organizations-in-microsoft-teams"></a>Comunicare con utenti di altre organizzazioni in Microsoft Teams
 ======================================================
@@ -44,7 +44,7 @@ Se si vuole consentire agli utenti esterni di accedere a team e canali, l’[acc
 
 ## <a name="guest-access"></a>Accesso guest
 
-Utilizzare l’**accesso guest** per aggiungere un singolo utente, indipendentemente dal dominio, a un team, in cui potrà chattare, chiamare, pianificare riunioni e collaborare ai file dell'organizzazione (archiviati in SharePoint o OneDrive for Business), usando le app di Office 365, come Word, Excel o PowerPoint. Un utente guest può usufruire di quasi tutte le stesse funzionalità di Teams di un membro del team nativo. Per altre informazioni, vedere [Accesso guest in Teams](guest-access.md).
+Usare l'**accesso guest** per aggiungere un singolo utente, indipendentemente dal dominio, a un team in cui potrà chattare, chiamare, pianificare riunioni e collaborare ai file dell'organizzazione (archiviati in SharePoint o OneDrive for Business), usando le app di Office 365 o Microsoft 365, come Word, Excel o PowerPoint. Un utente guest può usufruire di quasi tutte le stesse funzionalità di Teams di un membro del team nativo. Per altre informazioni, vedere [Accesso guest in Teams](guest-access.md).
 
 - Gli utenti guest vengono aggiunti all'Active Directory Domain Services dell'organizzazione.
 - Per comunicare con un guest è necessario che il guest sia connesso a Teams con il proprio account guest. Questo vuol dire che può essere che l’utente si debba disconnettere dal proprio account Teams per accedere all’account Teams dove è guest.
@@ -87,7 +87,7 @@ Se si vuole attivare l'accesso guest nell'organizzazione, iniziare con l'[Elenco
 <sup>1</sup>A condizione che l'utente sia stato aggiunto come guest e che sia stato eseguito l'accesso come guest al tenant guest.<br>
 <sup>2</sup>Solo tramite posta elettronica o indirizzo SIP (Session Initiation Protocol).<br>
 <sup>3</sup>La chat esterna (federata) è solo 1:1.<br>
-<sup>4</sup>Chat 1:1 supportata per utenti Solo Teams a utenti Solo Teams di due organizzazioni diverse. 
+<sup>4</sup>Chat 1:1 supportata per utenti Solo Teams a utenti Solo Teams di due organizzazioni diverse. <br>
 <sup>5</sup> Per impostazione predefinita, i partecipanti esterni non possono vedere i numeri di telefono dei partecipanti che hanno eseguito l'accesso tramite telefono. Se si vuole mantenere la privacy di questi numeri di telefono, selezionare **Toni** per **Tipo di annuncio in entrata/uscita**, in modo da evitare che i numeri vengano letti da Teams. Se non si vogliono rivelare i numeri di telefono PSTN esterni agli utenti esterni, quando si attivano gli **annunci di tipo entrata/uscita** selezionare **Toni** per il tipo di annuncio. Per altre informazioni, vedere [Attivare o disattivare i messaggi di entrata e di uscita per le riunioni in Microsoft Teams](turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams.md).
 
 ## <a name="related-topics"></a>Argomenti correlati

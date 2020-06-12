@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83e5c452cd2e9056818059c5f0b1ddcdeca2c235
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 10d17aedd0a653b6fc5bd24946ede5da09dc4647
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43901951"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691332"
 ---
 # <a name="apps-bots--connectors-in-microsoft-teams"></a>App, bot e connettori in Microsoft Teams
 
@@ -63,11 +63,11 @@ Le app sono autorizzate dagli utenti e gestite dall'amministratore o dal profess
 
 ### <a name="bots-for-private-chats-and-channels"></a>Bot per chat e canali privati
 
-I bot sono programmi automatizzati che rispondono alle domande o forniscono aggiornamenti e notifiche su dettagli che gli utenti trovano interessanti o su cui vogliono mantenersi informati. I bot consentono agli utenti di interagire con servizi cloud come la gestione delle attività, la pianificazione e il polling in una chat di Teams. Teams supporta i bot all'interno di chat e canali privati. Gli amministratori possono controllare se in un’organizzazione di Office 365 è consentito l'uso di bot.
+I bot sono programmi automatizzati che rispondono alle domande o forniscono aggiornamenti e notifiche su dettagli che gli utenti trovano interessanti o su cui vogliono mantenersi informati. I bot consentono agli utenti di interagire con servizi cloud come la gestione delle attività, la pianificazione e il polling in una chat di Teams. Teams supporta i bot all'interno di chat e canali privati. Gli amministratori possono controllare se in un’organizzazione di Microsoft 365 o Office 365 è consentito l'uso di bot.
 
 | Chiedersi | Azione |
 |--------------|--------|
-|Si vuole consentire l'uso di bot personalizzati nell’organizzazione di Office 365?|Per altre informazioni sull'aggiunta di bot, vedere [Aggiungere bot per chat e canali privati in Microsoft Teams](add-bots.md). Per informazioni su come attivare o disattivare i bot personalizzati, vedere [Impostazioni di amministrazione per le app in Microsoft Teams](admin-settings.md).|
+|Si vuole consentire l'uso di bot personalizzati nell’organizzazione?|Per altre informazioni sull'aggiunta di bot, vedere [Aggiungere bot per chat e canali privati in Microsoft Teams](add-bots.md). Per informazioni su come attivare o disattivare i bot personalizzati, vedere [Impostazioni di amministrazione per le app in Microsoft Teams](admin-settings.md).|
 |||
 
 ### <a name="built-in-and-custom-tabs"></a>Schede predefinite e personalizzate
@@ -76,16 +76,16 @@ I proprietari e i membri del team possono aggiungere schede a un canale, una cha
 
 | Chiedersi | Azione |
 |--------------|--------|
-|Si vuole consentire l'uso di schede personalizzate nell’organizzazione di Office 365?|Per altre informazioni, vedere [Usare schede predefinite e personalizzate in Teams](built-in-custom-tabs.md).|
+|Si vuole consentire l'uso di schede personalizzate nell'organizzazione?|Per altre informazioni, vedere [Usare schede predefinite e personalizzate in Teams](built-in-custom-tabs.md).|
 |||
 
-### <a name="office-365-and-custom-connectors"></a>Connettori personalizzati e di Office 365
+### <a name="custom-connectors"></a>Connettori personalizzati
 
 I connettori mantengono il team aggiornato, fornendo contenuto e aggiornamenti provenienti dai servizi usati di frequente direttamente in un canale. Con i connettori, gli utenti di Teams possono ricevere aggiornamenti dai servizi più diffusi, come Twitter, Trello, Wunderlist, GitHub e Azure DevOps Services, nelle proprie chat di Teams.
 
 | Chiedersi | Azione |
 |--------------|--------|
-|Si vuole consentire agli utenti di creare connettori personalizzati?|Per altre informazioni, vedere [Usare i connettori personalizzati e di Office 365 in Teams](office-365-custom-connectors.md).|
+|Si vuole consentire agli utenti di creare connettori personalizzati?|Per altre informazioni, vedere [Usare connettori personalizzati in Teams](office-365-custom-connectors.md).|
 |||
 
 ## <a name="additional-deployment-decisions"></a>Ulteriori decisioni per la distribuzione
@@ -94,7 +94,7 @@ Può essere utile modificare queste impostazioni in base alle esigenze e alla co
 
 ### <a name="activity-reports"></a>Report attività
 
-È possibile usare i report attività per scoprire in che modo gli utenti dell'organizzazione usano Teams. Ad esempio, se alcuni utenti non usano ancora Teams, potrebbero non sapere come iniziare oppure come usare Teams per essere più produttivi e collaborativi. L'organizzazione può usare i report attività per stabilire come assegnare la priorità alle attività di formazione e comunicazione. Per visualizzare i report attività è necessario essere un amministratore globale in Office 365, un amministratore del servizio Teams o un amministratore di Skype for Business.
+È possibile usare i report attività per scoprire in che modo gli utenti dell'organizzazione usano Teams. Ad esempio, se alcuni utenti non usano ancora Teams, potrebbero non sapere come iniziare oppure come usare Teams per essere più produttivi e collaborativi. L'organizzazione può usare i report attività per stabilire come assegnare la priorità alle attività di formazione e comunicazione. Per visualizzare i report attività è necessario essere un amministratore globale in Office 365 o Microsoft 365, un amministratore del servizio Teams o un amministratore di Skype for Business.
 
 | Chiedersi | Azione |
 |--------------|--------|
