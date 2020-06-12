@@ -19,12 +19,12 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 - seo-marvel-apr2020
-ms.openlocfilehash: 3b1546c71cc2796ce599da449ab37bf275384efc
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 6a77e98a75497d8608f0b85ad1a52d3fed8d153b
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44637895"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691312"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -35,7 +35,7 @@ Per iniziare, guardare il breve video sulle chat, i team e i canali di Teams (4:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE476Yj]
 
 *Novità di novembre 2019*
- - È ora possibile [usare Advisor per Teams (anteprima) per distribuire Microsoft Teams](use-advisor-teams-roll-out.md). Advisor per Teams (anteprima) guida l'implementazione di Teams. Valuta l'ambiente di Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente Teams.
+ - È ora possibile [usare Advisor per Teams (anteprima) per distribuire Microsoft Teams](use-advisor-teams-roll-out.md). Advisor per Teams (anteprima) guida l'implementazione di Teams. Valuta l'ambiente di Microsoft 365 o Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente Teams.
  - [Canale YouTube dedicato a Microsoft Teams Essentials for IT](https://aka.ms/MicrosoftTeamsforIT), che include brevi video (8-10 minuti) per illustrare come distribuire, configurare e gestire Teams.
 
 > [!TIP]
@@ -47,7 +47,7 @@ Prima di implementare Teams nell'organizzazione, è necessario verificare che l'
 
 |Chiedersi|Azione |
 |------------|-------|
-|L'organizzazione è pronta per la distribuzione di Teams?|Per rispondere a questa domanda, vedere: <ul><li>[Preparare la rete dell'organizzazione per Teams](prepare-network.md)</li><li>[URL e intervalli di indirizzi IP per Office 365](office-365-urls-ip-address-ranges.md)</li><li>[Pianificare i gruppi di Microsoft 365 durante la creazione di team](plan-office-365-groups.md)</li></ul>|
+|L'organizzazione è pronta per la distribuzione di Teams?|Per rispondere a questa domanda, vedere: <ul><li>[Preparare la rete dell'organizzazione per Teams](prepare-network.md)</li><li>[URL e intervalli di indirizzi IP](office-365-urls-ip-address-ranges.md)</li><li>[Pianificare i gruppi di Microsoft 365 durante la creazione di team](plan-office-365-groups.md)</li></ul>|
 |||
 
 ## <a name="core-deployment-decisions"></a>Decisioni chiave per la distribuzione
@@ -131,7 +131,7 @@ Teams supporta numerosi client Web, desktop e per dispositivi mobili e la config
 
 ### <a name="teams-usage-reporting"></a>Report sull'utilizzo di Teams
 
-I ruoli Amministratore globale di Office 365, Amministratore del servizio Teams e Lettore di report possono visualizzare i report sull'utilizzo di Teams. Per altre informazioni, vedere gli [articoli sull'analisi di utilizzo di Microsoft 365](https://docs.microsoft.com/office365/admin/usage-analytics/usage-analytics?redirectSourcePath=%252farticle%252fMicrosoft-365-usage-analytics-77ff780d-ab19-4553-adea-09cb65ad0f1f&view=o365-worldwide).
+I ruoli Amministratore globale, Amministratore del servizio Teams e Lettore di report possono visualizzare i report sull'utilizzo di Teams. Per altre informazioni, vedere gli [articoli sull'analisi di utilizzo di Microsoft 365](https://docs.microsoft.com/office365/admin/usage-analytics/usage-analytics?redirectSourcePath=%252farticle%252fMicrosoft-365-usage-analytics-77ff780d-ab19-4553-adea-09cb65ad0f1f&view=o365-worldwide).
 
 |Chiedersi|Azione |
 |------------|-------|
@@ -151,16 +151,16 @@ Può essere utile modificare queste impostazioni in base alle esigenze e alla co
 
 ### <a name="teams-licensing"></a>Licenze di Teams
 
-Teams è incluso in molte licenze di Office 365. Per altre informazioni sulle licenze di Teams, vedere [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
+Teams è incluso in molte licenze di Microsoft 365 o Office 365. Per altre informazioni sulle licenze di Teams, vedere [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
 
 |Chiedersi|Azione |
 |------------|-------|
 |Gli utenti hanno le licenze necessarie per usare tutte le funzionalità di Teams che si intende implementare? | Per altre informazioni sui requisiti di licenza, vedere [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).|
 |||
 
-### <a name="exchange-and-sharepoint-interoperability"></a>Interoperabilità con Exchange e SharePoint 
+### <a name="exchange-and-sharepoint-interoperability"></a>Interoperabilità con Exchange e SharePoint
 
-Per usufruire dell'esperienza completa di Teams, è necessario che ogni utente sia abilitato per la creazione di gruppi di Microsoft 365, Exchange Online e SharePoint Online. Gli articoli seguenti contengono informazioni sulle cassette postali di Exchange ospitate in vari ambienti, sull'interazione tra Exchange e Teams e considerazioni analoghe per SharePoint e OneDrive for Business. 
+Per usufruire dell'esperienza completa di Teams, è necessario che ogni utente sia abilitato per la creazione di gruppi di Microsoft 365, Exchange Online e SharePoint Online. Gli articoli seguenti contengono informazioni sulle cassette postali di Exchange ospitate in vari ambienti, sull'interazione tra Exchange e Teams e considerazioni analoghe per SharePoint e OneDrive for Business.
 
 |Chiedersi|Azione |
 |------------|-------|
@@ -176,13 +176,13 @@ Quando si pianifica una distribuzione aziendale di Teams, è necessario tenere c
 | Quali limiti sono probabili limiti di cui si dovrà tenere conto nell'implementazione di Teams? | Per altre informazioni, vedere [Limiti e specifiche per Teams](limits-specifications-teams.md). |
 |||
 
-### <a name="office-365-urls-and-ports"></a>URL e porte di Office 365
+### <a name="urls-and-ports"></a>URL e porte
 
-Le organizzazioni che mantengono un controllo granulare sul traffico Internet devono leggere [URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) per un elenco aggiornato degli URL, degli indirizzi IP, delle porte e dei protocolli che occorre configurare correttamente per Teams. Microsoft migliora costantemente il servizio Office 365 e aggiunge continuamente nuove funzionalità, pertanto le porte, gli URL e gli indirizzi IP necessari potrebbero cambiare nel corso del tempo. È consigliabile sottoscrivere la pagina tramite RSS per ricevere notifiche quando queste informazioni vengono aggiornate o modificate. Assicurarsi come minimo di aver aperto le porte elencate in precedenza in [Prerequisiti per la distribuzione della chat](#chat-deployment-prerequisites).
+Le organizzazioni che mantengono un controllo granulare sul traffico Internet devono leggere [URL e intervalli di indirizzi IP](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges) per un elenco aggiornato degli URL, degli indirizzi IP, delle porte e dei protocolli che occorre configurare correttamente per Teams. Microsoft migliora costantemente i servizi di Office 365 e Microsoft 365 e aggiunge continuamente nuove funzionalità, pertanto le porte, gli URL e gli indirizzi IP necessari potrebbero cambiare nel corso del tempo. È consigliabile sottoscrivere la pagina tramite RSS per ricevere notifiche quando queste informazioni vengono aggiornate o modificate. Assicurarsi come minimo di aver aperto le porte elencate in precedenza in [Prerequisiti per la distribuzione della chat](#chat-deployment-prerequisites).
 
 |Chiedersi|Azione |
 |------------|-------|
-| È necessario usare regole di accesso a Internet per consentire agli utenti di usare Teams o è sufficiente aprire le porte obbligatorie minime? | Per altre informazioni, vedere [URL e intervalli di indirizzi IP per Office 365](office-365-urls-ip-address-ranges.md).|
+| È necessario usare regole di accesso a Internet per consentire agli utenti di usare Teams o è sufficiente aprire le porte obbligatorie minime? | Per altre informazioni, vedere [URL e intervalli di indirizzi IP](office-365-urls-ip-address-ranges.md).|
 |||
 
 
@@ -241,11 +241,11 @@ I professionisti IT che lavorano nel settore dell'istruzione possono usufruire d
 
 ### <a name="government---gcc-considerations"></a>Considerazioni su Government - GCC
 
-L'uso di Microsoft 365 for Government - GCC (Government Community Cloud) è appropriato per le esigenze dei professionisti IT che si occupano di distribuzioni di Office 365 in entità governative federali, statali, locali, comunali e territoriali degli Stati Uniti o altre entità che gestiscono dati soggetti a requisiti e normative.
+L'uso di Office 365 for Government - GCC (Government Community Cloud) è appropriato per le esigenze dei professionisti IT che si occupano di distribuzioni di Office 365 in entità governative federali, statali, locali, comunali e territoriali degli Stati Uniti o altre entità che gestiscono dati soggetti a requisiti e normative.
 
 | Chiedersi | Azione |
 |--------------|--------|
-| Sarà necessario distribuire Teams in un ambiente Microsoft 365 Government - GCC? | Per considerazioni sulla distribuzione, vedere [Pianificare le distribuzioni di Microsoft 365 Government-GCC](plan-for-government-gcc.md).|
+| Sarà necessario distribuire Teams in un ambiente Office 365 Government - GCC? | Per considerazioni sulla distribuzione, vedere [Pianificare le distribuzioni di Office 365 Government - GCC](plan-for-government-gcc.md).|
 |||
 
 ## <a name="next-steps"></a>Passaggi successivi
