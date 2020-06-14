@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare gli utenti dell'organizzazione che lavorano da remoto a essere produttivi con Microsoft Teams, in particolare se lavorano da casa in risposta all'epidemia di COVID-19 (Coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bdcb1dd78db1e3a555b58b40c17a7313d875317a
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: 91f41893f572465d2e51b66a56737f10f0f88fc0
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042423"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691492"
 ---
 # <a name="support-remote-workers-using-microsoft-teams"></a>Supporto per i lavoratori remoti con Microsoft Teams
 
@@ -88,11 +88,11 @@ Condividere queste risorse e video con gli utenti finali per aiutarli a iniziare
 
    - La larghezza di banda limitata può influire sulla qualità audio nelle riunioni di Teams. Per garantire la miglior esperienza di riunione in condizioni di larghezza di banda ridotta, invitare gli utenti a limitare il video e usare la rete PSTN per le chiamate e l'audio della riunione. 
 
-   - Leggere questo blog tempestivo (6 marzo 2020) [Come ottimizzare rapidamente il traffico di Office 365 per il personale remoto e ridurre il carico nell'infrastruttura](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571).
+   - Leggere questo blog tempestivo (6 marzo 2020) [Come ottimizzare rapidamente il traffico di Microsoft 365 o Office 365 per il personale remoto e ridurre il carico nell'infrastruttura](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571).
 
    - Blog del 26 marzo 2020: [In esecuzione su VPN: in che modo Microsoft mantiene connessa la sua forza lavoro remota](https://www.microsoft.com/itshowcase/blog/running-on-vpn-how-microsoft-is-keeping-its-remote-workforce-connected/)
    
-   - Se si è in Cina, vedere [Ottimizzazione delle prestazioni del tenant globale di Office 365 per utenti della Cina](https://docs.microsoft.com/Office365/Enterprise/office-365-networking-china).
+   - Se si è in Cina, vedere [Ottimizzazione delle prestazioni del tenant globale di Microsoft 365 o Office 365 per utenti della Cina](https://docs.microsoft.com/Office365/Enterprise/office-365-networking-china).
 
    - Se si ha bisogno di assistenza per la risoluzione dei problemi relativi alla qualità delle chiamate o delle riunioni, seguire le indicazioni in [Problema noto - Cina: chiamare ID conferenza di Skype for Business/Teams](#known-issue---china-dialing-into-skype-for-business-or-teams-conference-ids) in fondo all'articolo.
 
@@ -104,9 +104,9 @@ Condividere queste risorse e video con gli utenti finali per aiutarli a iniziare
 
    - [Lavorare in remoto e mantenere la sicurezza: guida per CISO](https://www.microsoft.com/security/blog/?p=90736)
 
-   - [12 principali attività dei team di sicurezza per supportare il lavoro da casa](https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work)
+   - [12 principali attività per i team di sicurezza per supportare il lavoro da casa](https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work)
    
-   - [Ottimizzare la connettività di Office 365 per gli utenti remoti tramite split tunneling VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
+   - [Ottimizzare la connettività di Microsoft 365 o Office 365 per gli utenti remoti tramite split tunneling per VPN](https://docs.microsoft.com/Office365/Enterprise/office-365-vpn-split-tunnel)
 
    - [Sicurezza e Teams](teams-security-guide.md) offre tutti i dettagli tecnici sulla sicurezza di Teams, come parte delle procedure e delle procedure consigliate per la sicurezza di livello aziendale di Microsoft 365.
 
@@ -132,9 +132,9 @@ Condividere queste risorse e video con gli utenti finali per aiutarli a iniziare
 
       - Blog di Teams (28 febbraio 2020): [4 tips for working from home with Microsoft Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/4-tips-for-working-from-home-with-microsoft-teams-by-lola/ba-p/1202083) (quattro suggerimenti per lavorare da casa con Microsoft Teams)
 
-      - [Collaborare con Office 365](https://support.office.com/article/Collaborate-with-Office-365-ac05a41e-0b49-4420-9ebc-190ee4e744f4)
+      - [Collaborare con Microsoft 365 o Office 365](https://support.office.com/article/Collaborate-with-Office-365-ac05a41e-0b49-4420-9ebc-190ee4e744f4)
 
-      - [Lavorare in remoto con Office 365](https://support.office.com/article/work-remotely-with-office-365-164946c8-a47a-470e-a0b4-feb12a2eea04)
+      - [Lavorare in remoto con Microsoft 365 o Office 365](https://support.office.com/article/work-remotely-with-office-365-164946c8-a47a-470e-a0b4-feb12a2eea04)
       
       - [Nove suggerimenti per lavorare in remoto](https://www.microsoft.com/tips/home/working-remotely)
 

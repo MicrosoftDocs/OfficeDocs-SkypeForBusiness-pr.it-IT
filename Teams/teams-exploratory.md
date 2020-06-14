@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 502bdb8c5e441449680fa383b20f3e570d8a8ecc
-ms.sourcegitcommit: ef3cd762e799df43bdcde03363c501d7ca9bb6b3
+ms.openlocfilehash: 7054156ad2cb3526cd2e8fc802014433a68efc81
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44489128"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689712"
 ---
 <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 =======================================================
@@ -33,18 +33,18 @@ L'esperienza Microsoft Teams Exploratory consente agli utenti dell'organizzazion
 
 I piani di servizio che un amministratore visualizzerà nell'ambito dell'esperienza Teams Exploratory sono i seguenti:
  - Exchange Online (Piano 1)
- - Flow per Office 365
+ - Flow per Microsoft 365 o Office 365
  - Insights by MyAnalytics
  - Microsoft Forms (Piano E1)
  - Microsoft Planner
  - Microsoft Search
  - Microsoft StaffHub
- - Microsoft Stream per SKU O365 E1
+ - SKU Microsoft Stream per Microsoft 365 e Office 365 E1
  - Microsoft Teams
- - Gestione dispositivi mobili per Office 365
+ - Gestione di dispositivi mobili per Microsoft 365 o Office 365
  - App di Office Mobile per Office 365 
  - Office Online
- - PowerApps per Office 365
+ - PowerApps per Microsoft 365 o Office 365
  - SharePoint Online (Piano 1)
  - Sway
  - To-Do (Piano 1)
@@ -152,7 +152,7 @@ A partire da febbraio 2020, gli utenti idonei possono iniziare a usare l'esperie
 
 - Se si vuole rimuovere questa licenza con PowerShell, vedere [Rimuovere le licenze dagli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell)
 
-- Se si vuole rimuovere questa licenza tramite il portale di amministrazione, vedere la pagina dedicata alla [rimozione delle licenze per gli utenti di Office 365 per le aziende](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide)
+- Se si vuole rimuovere questa licenza tramite il portale di amministrazione, vedere [Eliminare un utente dall'organizzazione](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide)
 
 ## <a name="how-long-does-the-teams-exploratory-experience-last"></a>Qual è la durata dell'esperienza di Teams Exploratory?
 

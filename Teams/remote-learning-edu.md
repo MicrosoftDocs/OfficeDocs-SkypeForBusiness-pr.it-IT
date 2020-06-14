@@ -18,17 +18,23 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b22bef34defe69edf4fe330e0afb0f0b93e5e8e6
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 0bd7c88a08dfdfa76ad560a56e524b7061d240f1
+ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/09/2020
-ms.locfileid: "44638525"
+ms.locfileid: "44666278"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
+Per una panoramica sul passaggio all'apprendimento a distanza e per risorse utili per iniziare, vedere la [home page sull'apprendimento remoto](https://www.microsoft.com/education/remote-learning).
+
+Risorse per aiutare docenti e studenti sono disponibili in [Insegnamento e apprendimento a distanza in Office 365 Education](https://support.office.com/article/remote-teaching-and-learning-in-office-365-education-f651ccae-7b65-478b-8366-51bb884025c4).
+
+Questo articolo illustra i passaggi da eseguire per preparare l'istituto di istruzione per l'apprendimento remoto.
+
 > [!NOTE]
-> Questo articolo contiene indicazioni per preparare l'istituto di istruzione per l'apprendimento remoto. Le risorse seguenti possono essere utili per gli insegnanti, i dirigenti scolastici o i professionisti IT:
+> Le risorse seguenti possono essere utili per gli insegnanti, i dirigenti scolastici o i professionisti IT:
 >
 > - È possibile rendere subito operativa l'intero istituto di istruzione o l'università con Teams, consultare [**Guida introduttiva rapida**](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/teams-for-education-getting-started-1-pager.pdf?raw=true).
 > - Scaricare [**Introduzione a Teams**](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/Teams-for-Education-ITAdmin-get-started-guide.pptx?raw=true): una guida per professionisti IT che offre procedure utili per la gestione della sicurezza e delle modifiche.

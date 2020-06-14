@@ -19,14 +19,19 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a1ffc082e2990b97781100de2cbffd6d094cc5c9
-ms.sourcegitcommit: 3ed779277540589eabef745685ab6c67d8a8ff90
+ms.openlocfilehash: 01f57601e7dbf59286c5a92a45b09f835b21c131
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44281681"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44691302"
 ---
 # <a name="meetings-and-conferencing-in-microsoft-teams"></a>Riunioni e conferenze in Microsoft Teams
+
+> [!NOTE]
+> - Per una panoramica sul passaggio all'apprendimento a distanza e per risorse utili per iniziare, vedere la [**home page sull'apprendimento remoto**](https://www.microsoft.com/education/remote-learning).
+> - Risorse per aiutare docenti e studenti sono disponibili in [**Insegnamento e apprendimento a distanza in Office 365 Education**](https://support.office.com/article/remote-teaching-and-learning-in-office-365-education-f651ccae-7b65-478b-8366-51bb884025c4).
+
 
 L'[Introduzione](get-started-with-teams-quick-start.md) è stata completata. Si è implementato Teams nell'organizzazione, con [chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md). A questo punto si è pronti per aggiungere il carico di lavoro delle riunioni, inclusi [audioconferenza](deploy-audio-conferencing-teams-landing-page.md), video e condivisione. Questo articolo illustra l'implementazione delle riunioni e dell'audioconferenza. Per iniziare, guardare il video sulle riunioni, le conferenze e i dispositivi di Teams (3:28 minuti):
 
@@ -58,11 +63,9 @@ Per estendere le riunioni all'intera organizzazione, occorre verificare che tutt
 - Porte TCP 80 e 443 in uscita dai client che useranno Teams
 - Porte UDP da 3478 a 3481 in uscita dai client che useranno Teams
 
-È possibile usare il [Network Testing Companion](https://www.powershellgallery.com/packages/NetworkTestingCompanion/1.5.2) per verificare che i percorsi di rete siano pronti per il traffico voce e video che supporterà l'esperienza delle riunioni.
-
 | Chiedersi | Azione |
 |--------------|--------|
-|La rete è pronta per la distribuzione delle riunioni di Teams? | Per verificare che la rete sia pronta, vedere:<ul><li>[Preparare la rete dell'organizzazione per Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/prepare-network)</li><li>[URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/MicrosoftTeams/office-365-urls-ip-address-ranges)</li></ul> |
+|La rete è pronta per la distribuzione delle riunioni di Teams? | Per verificare che la rete sia pronta, vedere:<ul><li>[Preparare la rete dell'organizzazione per Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/prepare-network)</li><li>[URL e intervalli di indirizzi IP](https://docs.microsoft.com/MicrosoftTeams/office-365-urls-ip-address-ranges)</li></ul> |
 |||
 
 ## <a name="core-deployment-decisions"></a>Decisioni chiave per la distribuzione

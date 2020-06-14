@@ -18,12 +18,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e997b667b02ef2c3b68e5c751b619098e9e740e4
-ms.sourcegitcommit: a7c823f61d9ab88424bad924113d780ce11e509f
+ms.openlocfilehash: ae4b4c06d6340c89cf41e271db8bcd359f27d211
+ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44224239"
+ms.lasthandoff: 06/10/2020
+ms.locfileid: "44689732"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -46,7 +46,7 @@ Ecco le licenze che devono essere assegnate per produrre o presentare un evento 
 > [!NOTE]
 > Attualmente non ci sono piani di Microsoft 365 Small Business che possono essere usati per creare e organizzare eventi live di Teams.
 
-È importante tenere presente che è necessaria una licenza di Office 365 per partecipare a un evento live come utente autenticato, ma questo requisito dipende dal metodo di produzione utilizzato:
+È importante tenere presente che è necessaria una licenza di Microsoft 365 o Office 365 per partecipare a un evento live come utente autenticato, ma questo requisito dipende dal metodo di produzione usato:
 
 - **Per gli eventi prodotti in Teams,** all'utente deve essere assegnata una licenza di Teams.
 - **Per gli eventi prodotti in un'app o un dispositivo esterno,** all'utente deve essere assegnata una licenza di Stream.
@@ -97,7 +97,7 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 |Numero massimo di partecipanti |10.000 partecipanti |10.000 partecipanti<sup>1</sup> |10.000 partecipanti<sup>1</sup> |
 |Durata massima dell'evento live |4 ore |4 ore |4 ore |
 |Numero massimo di relatori e produttori in un evento live |10 <sup>2</sup> |10 <sup>2</sup> |10 <sup>2</sup> |
-|Numero massimo di eventi live concomitanti per l'organizzazione di Office 365 |15  | 15  | 15  |
+|Numero massimo di eventi live concomitanti per l'organizzazione di Microsoft 365 o Office 365 |15  | 15  | 15  |
 |Creazione eventi live |   Portale di Skype Meeting Broadcast |Teams, Yammer tramite Teams | Teams, Yammer tramite Teams, Stream |
 |Coinvolgimento partecipanti - Yammer |&#x2714; |&#x2714; (esperienza integrata) |&#x2714; (esperienza integrata) |
 |Coinvolgimento partecipanti - Domande e risposte con moderatore |&#x2714;  |&#x2714; |&#x2714; |
@@ -117,7 +117,7 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 |Didascalie e sottotitoli in tempo reale |&#x2714; |&#x2714; |&#x274C; |
 |Didascalie nelle registrazioni degli eventi live |&#x2714; |&#x2714; |&#x2714; |
 |Controlli DVR dei partecipanti (pausa, riavvolgimento) |&#x2714; |&#x2714; |&#x2714; |
-|Supporto eCDN per partner |&#x2714; (Hive, Kollective, Ramp) |&#x2714; (Hive, Kollective, Ramp) |&#x2714; (Hive, Kollective, Ramp) |
+|Supporto eCDN per partner |&#x2714; (Kollective, Ramp) |&#x2714; (Kollective, Ramp) |&#x2714; (Hive, Kollective, Ramp) |
 |Report presenze per i produttori dopo la trasmissione |&#x2714; |&#x2714; |&#x274C; |
 |Analisi delle valutazioni dei partecipanti - Votazioni e sondaggi in tempo reale |&#x2714; (Microsoft Pulse) |&#x274C; |&#x274C; |
 
