@@ -41,6 +41,7 @@
 ## [Etichette di riservatezza per Teams](sensitivity-labels.md)
 ## [Gestire l'individuazione di team privati in Teams](manage-discovery-of-private-teams.md)
 ## [Configurare la moderazione dei canali in Teams](manage-channel-moderation-in-teams.md)
+## [Integrazione della posta elettronica di Outlook e Teams](teams-outlook-email-integration.md)
 ## [Gestire i criteri di messaggistica](messaging-policies-in-teams.md)
 ## [Presenza utente in Teams](presence-admins.md)
 ## [Gestire i tag in Teams](manage-tags.md)
@@ -904,3 +905,5 @@
 ### [Piani di chiamata in Microsoft 365 - Codice di condotta nel Regno Unito](code-of-practice-for-the-united-kingdom-u-k.md)
 ### [Piani di chiamata in Microsoft 365 - Gestione di codice conforme per il Regno Unito](complaint-handling-code-for-the-united-kingdom-u-k.md)
 ### [Condizioni per le chiamate di emergenza](emergency-calling-terms-and-conditions.md)
+
+## [Note sulla versione per le funzionalità di amministratore di Teams](release-notes/release-notes.md)
