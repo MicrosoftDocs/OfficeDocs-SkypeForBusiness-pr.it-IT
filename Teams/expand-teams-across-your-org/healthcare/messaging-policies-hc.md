@@ -18,12 +18,12 @@ appliesto:
 ms.reviewer: ''
 description: Informazioni su come personalizzare un criterio di messaggistica sicuro che può includere le conferme di lettura e le notifiche prioritarie.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 95a4d258f35827d4ad30ee1e6b2938e6331efcc2
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: b4bd8032cce78e388d221108ebdfc08a16b8afd1
+ms.sourcegitcommit: 5dff3217760cf881d1d96e5d5c76101c90afcbc0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905528"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44724886"
 ---
 # <a name="get-started-with-secure-messaging-for-healthcare-organizations"></a>Guida introduttiva a Messaggistica protetta per le organizzazioni del settore sanitario
 
@@ -52,8 +52,6 @@ Per le applicazioni sanitarie, scegliere **utente controllato** o attivato **per
 *Esempio di utilizzo con le conferme di lettura:* Jakob Roth, un paziente ad alto rischio, è ammesso in ospedale.Sofia Krause è un'infermiera che lavora come parte del team interdisciplinare (IDT) di operatori sanitari, inclusi diversi specialisti, viene assegnato come coordinatore di assistenza primaria responsabile di questo paziente.  Sofia avvia una chat di gruppo con un set di medici e altri infermieri che lavoreranno con il paziente per coordinare le cure e avviare un triage di emergenza.Gli infermieri e i medici comunicano e collaborano al piano di assistenza del paziente durante il processo di coordinamento delle cure.  I messaggi importanti e urgenti vengono inviati tramite 1:1 e conversazioni di chat di gruppo. Sofia usa la funzionalità di lettura ricevute per determinare se i messaggi inviati che richiedono il supporto vengono recapitati e letti dai medici o infermieri mirati. I risultati del paziente di Jakob sono quasi ottimali e torna a casa prima perché il suo team di assistenza comunica senza intoppi.
 
 ## <a name="send-urgent-messages-using-priority-notifications"></a>Inviare messaggi urgenti con le notifiche prioritarie
-
-[!INCLUDE [pri-message-offer](../../includes/pri-message-offer.md)]
 
 Un utente può contrassegnare un messaggio come *urgente* quando si inviano messaggi di chat ad altri utenti. Questa caratteristica aiuta il personale ospedaliero ad avvisarsi l'un l'altro quando un incidente critico richiede la sua attenzione. A differenza dei normali messaggi *importanti* , le [notifiche prioritarie](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462) notificano agli utenti ogni due minuti per un massimo di 20 minuti oppure fino a quando il messaggio viene raccolto e letto dal destinatario, massimizzando la probabilità che il messaggio venga agito in modo tempestivo.
 

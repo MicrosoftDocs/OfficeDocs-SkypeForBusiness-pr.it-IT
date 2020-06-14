@@ -16,16 +16,28 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Note sulla versione per le caratteristiche di amministrazione di Microsoft teams.
-ms.openlocfilehash: f8bf1c14e8dca43eccfa2bfdde209eca43fc24fe
-ms.sourcegitcommit: 862ba1d2b3bd4622b1b0baa15096c29c591cc6c4
+ms.openlocfilehash: 99f92af75e90ef568bf98ccb6587d0dad0da1591
+ms.sourcegitcommit: d664ef6994e242bf18a29dac31286c78c163478a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702721"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44710820"
 ---
 # <a name="release-notes-for-microsoft-teams-admin-features"></a>Note sulla versione per le funzionalità di amministrazione di Microsoft Teams
 
 Queste note sulla versione contengono informazioni sulle nuove caratteristiche di amministrazione per Microsoft teams.
+
+## <a name="june-11-2020"></a>11 giugno 2020
+
+### <a name="call-queues---presence-based-routing"></a>Chiamate code-routing basato sulla presenza
+
+Quando è disattivata, le chiamate verranno indirizzate agli agenti che hanno scelto di ricevere chiamate, indipendentemente dallo stato di presenza. Quando attivato, gli agenti di opt-in riceveranno le chiamate solo quando lo stato presenza è disponibile. [Altre informazioni](../create-a-phone-system-call-queue.md).
+
+
+## <a name="june-10-2020"></a>10 giugno 2020
+
+### <a name="call-queues---longest-idle-routing"></a>Code di chiamata-routing più lungo
+Quando si sceglie questo messaggio, le chiamate in arrivo verranno instradate per chiamare gli agenti che non hanno risposto a una chiamata in arrivo per il periodo di tempo più lungo. [Altre informazioni](../create-a-phone-system-call-queue.md).
 
 ## <a name="june-1-2020"></a>1 giugno 2020
 
@@ -90,12 +102,6 @@ Creare tag e assegnargli le persone in modo da poter @mention un gruppo, un ruol
 ### <a name="policy-based-recording-for-teams-calls-and-meetings"></a>Registrazione basata su criteri per le chiamate e le riunioni di Team
 
 Questa funzionalità consente la registrazione automatica basata su criteri di chiamate e riunioni di team tramite fornitori di software certificati Microsoft.
-
-## <a name="march-29-2020"></a>29 marzo 2020
-
-### <a name="call-queues---presence-based-routing"></a>Chiamate code-routing basato sulla presenza
-
-Quando è disattivata, le chiamate verranno indirizzate agli agenti che hanno scelto di ricevere chiamate, indipendentemente dallo stato di presenza. Quando attivato, gli agenti di opt-in riceveranno le chiamate solo quando lo stato presenza è disponibile. [Altre informazioni](../create-a-phone-system-call-queue.md).
 
 ## <a name="march-25-2020"></a>25 marzo 2020
 

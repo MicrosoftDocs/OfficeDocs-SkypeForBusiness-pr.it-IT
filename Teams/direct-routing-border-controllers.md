@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: L'amministratore può conoscere i controller di bordo della sessione (SBCs) che sono stati certificati per il routing diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a76ed1e3a386aef7d6b6216b279a1e712e20f88
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 5b6e79b38ae92c3a2387b91e0d254f99f8412da5
+ms.sourcegitcommit: d664ef6994e242bf18a29dac31286c78c163478a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691272"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44710800"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 
@@ -71,7 +71,11 @@ Leggi [altre informazioni sul routing diretto](https://aka.ms/dr). In caso di do
 |                                                                                                                   |      AP 6350           |    &#10004;   |    &#10004;    |     8.3.0.0.1  |   <ul> <li> [Routing della posizione dinamica della larghezza di banda](https://www.bandwidth.com/partners/microsoft-teams-direct-routing) </li> <li>[Servizio Routing di emergenza Intrado (ERS)](https://www.west.com/safety-services/enterprise-e911-solutions/microsoft-teams-e911-solutions/) </li> <li>[Gateway di emergenza Intrado (EGW)](https://www.west.com/safety-services/enterprise-e911-solutions/microsoft-teams-e911-solutions/)</li>  </ul>  |  &#10004;  |                                            
 |                                                                                                                    |      VME           |    &#10004;    |    &#10004;    |     8.3.0.0.1   |   <ul> <li> [Routing della posizione dinamica della larghezza di banda](https://www.bandwidth.com/partners/microsoft-teams-direct-routing) </li> <li>[Servizio Routing di emergenza Intrado (ERS)](https://www.west.com/safety-services/enterprise-e911-solutions/microsoft-teams-e911-solutions/) </li> <li>[Gateway di emergenza Intrado (EGW)](https://www.west.com/safety-services/enterprise-e911-solutions/microsoft-teams-e911-solutions/)</li>  </ul>  |  &#10004;  |    
 |                     [TE-SYSTEMS](https://www.anynode.de/anynode-and-microsoft-teams/)                               |     anynode         |     &#10004;   |  &#10004;   |      3,20 supportati (consigliato 4,0)        |     |    |    
-|                     [Metaswitch](https://www.metaswitch.com/products/core-network/perimeta-sbc)                               |     SBC Perimeta        |     &#10004;   |  |      4,7      |     |    |    
+|                     [Metaswitch](https://www.metaswitch.com/products/core-network/perimeta-sbc)                               |     SBC Perimeta        |     &#10004;   |  |      4,7      |     |    |  
+|                     [Cisco](http://www.cisco.com/go/cube)                               |     Cisco Unified Border Element (CUBE) per i router di servizi integrati della serie 1000        |     &#10004;   |  |      IOS XE Amsterdam 17.2.1 r      |     |   |  
+|                                   |     Cisco Unified Border Element (CUBE) per i router di servizi integrati della serie 4000        |     &#10004;   |  |      IOS XE Amsterdam 17.2.1 r      |     |    |  
+|                                   |     Elemento Border unificato Cisco (cubo) per router di servizi cloud di serie 1000V       |     &#10004;   |  |      IOS XE Amsterdam 17.2.1 r      |     |    |  
+|                                 |     Cisco Unified Border Element (CUBE) per router di aggregazione di servizi di 1000 Series      |     &#10004;   |  |      IOS XE Amsterdam 17.2.1 r      |     |    |  
 
 La tabella seguente elenca i dispositivi verificati per l'interoperabilità tra il routing diretto e i dispositivi analogici.
 

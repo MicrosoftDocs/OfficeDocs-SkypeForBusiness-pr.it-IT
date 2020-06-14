@@ -23,12 +23,12 @@ ms.custom:
 - Calling Plans
 ROBOTS: NOINDEX, NOFOLLOW
 description: Quando si ottengono numeri di telefono o porting (trasferendo) i numeri per l'organizzazione, potrebbe essere necessario ottenere assistenza e supporto tecnico presso il servizio di assistenza PSTN.
-ms.openlocfilehash: 3079d6881d86239d395c036c9630ef5ee2eac151
-ms.sourcegitcommit: 47637ed816b471fe689e7bdac27b73e6efced60c
+ms.openlocfilehash: fd6300c16ec3f09742138e0ea4879b9d0dd6b12a
+ms.sourcegitcommit: d664ef6994e242bf18a29dac31286c78c163478a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374274"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44710830"
 ---
 # <a name="pstn-service-desk-contact"></a>Contatto per il servizio di assistenza PSTN
 
@@ -42,12 +42,12 @@ Il team di Service Desk PSTN ha attualmente tre indirizzi di posta elettronica p
 
 Se hai bisogno **di assistenza per trasferire/convertire i numeri di telefono esistenti in Microsoft teams**, Includi il maggior numero possibile di dettagli:
   - [ID organizzazione (ID tenant) o domini Microsoft attualmente attivi](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id).
-  - Tipi di numeri di telefono di cui si ha bisogno di assistenza (**utente/abbonato** o **servizio/pedaggio/numero verde**).
+  - Tipi di numeri di telefono di cui si ha bisogno di assistenza **(utenti, Servizi a pagamento o**a pagamento).
   - Altri dettagli importanti in base alla richiesta.
   
 Se hai bisogno di assistenza **per acquisire nuovi numeri di telefono per Microsoft teams**, Includi il maggior numero possibile di dettagli:
   - [ID organizzazione (ID tenant) o domini Microsoft attualmente attivi.](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id)
-  - Tipi di numeri di telefono che si desidera acquisire (**utente/abbonato** o **servizio/pedaggio/numero verde**).
+  - Tipi di numeri di telefono di cui si ha bisogno di assistenza **(utenti, Servizi a pagamento o**a pagamento).
   - Il numero di richieste e il prefisso (i)/Country/Region da cui si desiderano nuovi numeri di telefono.
 
 Se hai bisogno di assistenza per **qualsiasi elemento relativo alla configurazione, alla configurazione, alle licenze/commissioni/fatturazione**, contatta il [supporto per i prodotti per le aziende-pagina della Guida per gli amministratori](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide&tabs=online) e il nostro team tecnico sarà lieto di assisterti.
