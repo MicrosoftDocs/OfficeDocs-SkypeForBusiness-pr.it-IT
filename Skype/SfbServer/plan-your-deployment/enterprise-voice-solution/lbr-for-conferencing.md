@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 8b86740e-db95-4304-bb83-64d0cbb91d47
 description: Pianificazione del routing in base alla posizione per le conferenze in Skype for Business Server VoIP aziendale, compresi i trasferimenti di chiamata consultiva.
-ms.openlocfilehash: f2a44c1f3275dd0cc9e1205d60ba26e01429ea51
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: cec7eb1f853752997ca3dcfbe8546b86227fde9b
+ms.sourcegitcommit: d664ef6994e242bf18a29dac31286c78c163478a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44690582"
+ms.lasthandoff: 06/12/2020
+ms.locfileid: "44710740"
 ---
 # <a name="location-based-routing-for-conferencing-in-skype-for-business-server"></a>Routing in base alla posizione per le conferenze in Skype for Business Server
 
@@ -49,9 +49,7 @@ L'applicazione per il routing basato sulla posizione per le conferenze impedisce
 
 Queste restrizioni di routing in base alla posizione per le conferenze sono riepilogate nella tabella seguente.
 
-| |
-
-|**Utente/i in una conferenza in un determinato punto**|**Utenti autorizzati a partecipare alla conferenza**|**Utenti non autorizzati a partecipare alla conferenza**|
+|Utente/i in una conferenza in un determinato punto|Utenti autorizzati a partecipare alla conferenza|Utenti non autorizzati a partecipare alla conferenza|
 |:-----|:-----|:-----|
 |Utenti del client VoIP Skype for business da un singolo sito di rete  <br/> |Utente client VoIP Skype for business dallo stesso sito di rete  <br/> Utente client VoIP Skype for business da un sito di rete diverso  <br/> Utente client VoIP Skype for business da un sito di rete sconosciuto  <br/> Utente federato del client VoIP di Skype for business  <br/> Aggiunta di un utente da un endpoint PSTN  <br/> |Nessuno  <br/> |
 |Utenti del client VoIP Skype for business da un sito di rete sconosciuto  <br/> |Utente client VoIP Skype for business da qualsiasi sito  <br/> Utente client VoIP Skype for business da un sito sconosciuto  <br/> Utente federato del client VoIP di Skype for business  <br/> |Aggiunta di un utente tramite un endpoint PSTN  <br/> |
@@ -69,7 +67,7 @@ Di seguito sono riportate le caratteristiche aggiuntive del routing basato sulla
 > [!NOTE]
 > Con l'aggiornamento cumulativo 4 di Skype for business, è necessario osservare il comportamento nella tabella seguente:
 
-|**Utente**|**Altra parte**|**Azione**|**Risultato**|
+|User|Altra parte|Azione |Risultato|
 |:-----|:-----|:-----|:-----|
 |Skype for business per dispositivi mobili  <br/> |PSTN  <br/> |Skype for business mobile è in una chiamata PSTN. Skype for business mobile inoltra la chiamata a un operatore automatico di conferenza (CAA).  <br/> |La chiamata è bloccata, con un messaggio di errore appropriato.  <br/> |
 |Skype for business per dispositivi mobili  <br/> |Client Skype for business o utente federato  <br/> |Il client o l'utente federato è su una chiamata VoIP a un utente di routing basato sul percorso di Skype for business mobile e una delle parti viene inoltrata a CAA.  <br/> |La chiamata di escalation è bloccata, con un messaggio di errore appropriato.  <br/> |
@@ -84,14 +82,14 @@ Oltre a applicare il routing basato sulla posizione alle riunioni di Skype for b
 
 Quando un utente abilitato per il routing in base alla posizione avvia un trasferimento di chiamata consultivo di un endpoint PSTN (come mostrato nella figura precedente), in questo modo vengono create due chiamate attive, una chiamata tra l'utente PSTN e Skype for Business utente A e l'altra tra gli utenti di Skype for Business utente A e Skype for business B. il comportamento seguente viene applicato dal routing basato sulla posizione per l'applicazione per conferenze :
 
-- Se il trunk SIP che instrada la chiamata PSTN è autorizzato a reindirizzare la chiamata PSTN al sito di rete in cui si trova l'utente Skype for business B (ovvero destinazione trasferimento), il trasferimento di chiamata sarà consentito; in caso contrario, il trasferimento delle chiamate consultive verrà bloccato. Questa autorizzazione viene eseguita in base alla posizione della parte trasferita che si trova nello stesso sito di rete del trunk SIP che esegue il routing della chiamata attiva all'endpoint PSTN.
+- Se il trunk SIP che instrada la chiamata PSTN è autorizzato a reindirizzare la chiamata PSTN al sito di rete in cui si trova l'utente Skype for business B (ovvero, destinazione trasferimento), il trasferimento di chiamata sarà consentito; in caso contrario, il trasferimento delle chiamate consultive verrà bloccato. Questa autorizzazione viene eseguita in base alla posizione della parte trasferita che si trova nello stesso sito di rete del trunk SIP che esegue il routing della chiamata attiva all'endpoint PSTN.
 
-- Se il trunk SIP che instrada la chiamata PSTN in ingresso non è autorizzato a instradare le chiamate al sito di rete in cui si trova la parte trasferita (utente di Skype for business B) oppure che la parte trasferita si trova in un sito di rete sconosciuto, il trasferimento della chiamata consultiva all'endpoint PSTN (ovvero destinazione trasferimento di chiamata) verrà bloccato.
+- Se il trunk SIP che instrada la chiamata PSTN in ingresso non è autorizzato a instradare le chiamate al sito di rete in cui si trova la parte trasferita (utente di Skype for business B) oppure che la parte trasferita si trova in un sito di rete sconosciuto, il trasferimento della chiamata consultiva all'endpoint PSTN (ovvero l'obiettivo di trasferimento di chiamata) verrà bloccato.
 
 Nella tabella seguente viene descritto il modo in cui vengono applicate le restrizioni di routing basate sulla posizione per il routing basato sulla posizione per le applicazioni di conferenza per i trasferimenti di chiamata consultiva. Anche se gli endpoint PBX non sono direttamente associati a un sito di rete, il trunk SIP a cui è connesso il sistema PBX può essere assegnato a un sito di rete. Pertanto, l'endpoint PBX può essere associato indirettamente a un sito di rete.
 
 
-|**Sito di rete di una parte di chiamata trasferita**|**Sito di rete di destinazione trasferimento di chiamata**|**Comportamento**|
+|Sito di rete di una parte di chiamata trasferita|Sito di rete di destinazione trasferimento di chiamata|Comportamento|
 |:-----|:-----|:-----|
 |Endpoint PSTN  <br/> |Utente di Skype for business nello stesso sito di rete (ad esempio, sito 1)  <br/> |Il trasferimento consultivo sarà consentito  <br/> |
 |Endpoint PSTN  <br/> |Utente di Skype for business in diversi siti di rete (ad esempio, sito 2)  <br/> |Il trasferimento consultivo non sarà consentito  <br/> |
@@ -113,7 +111,7 @@ L'applicazione per il routing in base alla posizione per le conferenze richiede 
 La tabella seguente identifica la combinazione dei ruoli del server e delle versioni che supportano il routing basato sulla posizione.
 
 
-|**Versione pool Front-End**|**Versione Mediation Server**|**Supportata**|
+|Versione pool Front-End|Versione Mediation Server|Supportato|
 |:-----|:-----|:-----|
 |Aggiornamento cumulativo 2 di Skype for Business Server o Lync Server 2013  <br/> |Aggiornamento cumulativo 2 di Skype for Business Server o Lync Server 2013  <br/> |Sì  <br/> |
 |Lync Server 2013 aggiornamento cumulativo 2  <br/> |Lync Server 2013 aggiornamento cumulativo 1  <br/> |No  <br/> |
@@ -137,7 +135,11 @@ Il routing basato sulla posizione per l'applicazione per conferenze si basa sull
 
 Il routing basato sulla posizione per l'applicazione per conferenze è disabilitato per impostazione predefinita. Prima di abilitare questa applicazione, è necessario determinare la priorità giusta da assegnare per l'applicazione. Per determinare questa priorità, eseguire il seguente cmdlet in Skype for Business Server Management Shell:
 
-Get-CsServerApplication-Identity Service: Registrar: <Pool FQDN> in questo cmdlet, \<Pool FQDN\> è il pool in cui deve essere abilitato il routing basato sulla posizione per l'applicazione di conferenza.
+```powershell
+Get-CsServerApplication -Identity Service:Registrar:<Pool FQDN>
+```
+
+In questo cmdlet, \<Pool FQDN\> è il pool in cui deve essere abilitata l'applicazione per il routing basato sul percorso per le conferenze.
 
 Questo cmdlet restituirà l'elenco delle applicazioni ospitate da Skype for Business Server e il valore di priorità per ognuno di essi. All'applicazione di routing in base alla posizione per le conferenze deve essere assegnato un valore di priorità maggiore dell'applicazione "UdcAgent" e più piccolo delle applicazioni "DefaultRouting", "ExumRouting" e "OutboundRouting". Si consiglia di assegnare il routing basato sulla posizione per l'applicazione per le conferenze un valore di priorità che è un punto più alto rispetto al valore di priorità dell'applicazione "UdcAgent".
 
@@ -145,11 +147,15 @@ Ad esempio, se l'applicazione "UdcAgent" ha un valore di priorità pari a "2", l
 
 Dopo aver individuato il valore di priorità corretto per l'applicazione per il routing in base alla posizione per le conferenze, digitare il cmdlet seguente per ogni pool Front-end o server Standard Edition in cui gli utenti di case sono abilitati per il routing basato sulla posizione:
 
-New-CsServerApplication-Identity Service: Registrar: `<Pool FQDN`>/lbrouting-Priority \<Application Priority\> -Enabled $true-Critical $true-Uri<http://www.microsoft.com/LCS/LBRouting>
+```powershell
+New-CsServerApplication -Identity Service:Registrar:<Pool FQDN>/LBRouting -Priority <Application Priority> -Enabled $true -Critical $true -Uri <http://www.microsoft.com/LCS/LBRouting>
+```
 
 Ad esempio:
 
-New-CsServerApplication-Identity Service Registrar:LS2013CU2LBRPool. contoso. com/LBRouting-Priority 3-Enabled $true-Critical $true-Urihttp://www.microsoft.com/LCS/LBRouting
+```powershell
+New-CsServerApplication -Identity Service:Registrar:LS2013CU2LBRPool.contoso.com/LBRouting -Priority 3 -Enabled $true -Critical $true -Uri http://www.microsoft.com/LCS/LBRouting
+```
 
 Dopo aver utilizzato questo cmdlet, riavviare tutti i Front End Server nel pool o nei server Standard Edition in cui è stato abilitato il routing basato sulla posizione per l'applicazione per le conferenze.
 
