@@ -1,10 +1,10 @@
 ### YamlMime:Hub
-title: Documentazione dell'amministratore di Microsoft Teams
-summary: Informazioni su come implementare e gestire team e preparare gli utenti per i team
+title: Documentazione per gli amministratori di Microsoft Teams
+summary: Informazioni su come implementare e gestire Teams e preparare gli utenti per Teams
 brand: teams
 metadata:
-  title: Documentazione dell'amministratore di Microsoft Teams
-  description: Informazioni sulla documentazione dell'amministratore di Microsoft teams, incluso il modo in cui implementare e gestire teams e preparare gli utenti per i team.
+  title: Documentazione per gli amministratori di Microsoft Teams
+  description: Informazioni sulla documentazione per gli amministratori di Microsoft Teams, tra cui come implementare e gestire Teams e preparare gli utenti per Teams.
   ms.service: msteams
   ms.topic: hub-page
   audience: ITPro
@@ -15,22 +15,22 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.openlocfilehash: 77c0310989bb8b6cb649afd4fa24c6f6bd641a18
   ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
-  ms.translationtype: MT
+  ms.translationtype: HT
   ms.contentlocale: it-IT
   ms.lasthandoff: 04/27/2020
   ms.locfileid: "43905478"
 highlightedContent:
   items:
-  - title: COVID-19 Response-supporta i dipendenti remoti con teams
+  - title: Risposta al COVID-19 - Supporto per i lavoratori remoti che usano Teams
     itemType: overview
     url: /MicrosoftTeams/support-remote-work-with-teams
   - title: Come implementare Teams
     itemType: deploy
     url: /MicrosoftTeams/how-to-roll-out-teams
-  - title: Sicurezza e conformità in teams
+  - title: Sicurezza e conformità in Teams
     itemType: overview
     url: /MicrosoftTeams/security-compliance-overview
-  - title: Trovare formazione per l'utente e gli utenti
+  - title: Trovare la formazione su Teams per tecnici e utenti
     itemType: learn
     url: /MicrosoftTeams/training-microsoft-teams-landing-page
   - title: Aggiornamento da Skype for Business a Teams
@@ -44,17 +44,17 @@ additionalContent:
   - items:
     - title: Articoli principali
       links:
-      - text: Preparare la rete per i team
+      - text: Preparare la rete per Teams
         url: /MicrosoftTeams/prepare-network
-      - text: Usare Advisor per Teams per aiutarti a implementare Teams
+      - text: Usare Advisor per Teams per la distribuzione di Teams
         url: /MicrosoftTeams/use-advisor-teams-roll-out
-      - text: Modalità di utilizzo della memoria in teams
+      - text: L'uso della memoria da parte di Teams
         url: /MicrosoftTeams/teams-memory-usage-perf
-      - text: Comunicare con utenti di altre organizzazioni (accesso Guest/External)
+      - text: Comunicare con utenti di altre organizzazioni (accesso guest/esterno)
         url: /MicrosoftTeams/communicate-with-users-from-other-organizations
-      - text: Poster e soluzioni per l'architettura IT
+      - text: Soluzioni e poster sull'architettura IT
         url: /MicrosoftTeams/teams-architecture-solutions-posters
-    - title: Chiamata vocale con teams
+    - title: Chiamate vocali con Teams
       links:
       - text: Cloud Voice in Microsoft Teams
         url: /MicrosoftTeams/cloud-voice-landing-page
@@ -62,17 +62,17 @@ additionalContent:
         url: /MicrosoftTeams/business-voice/whats-business-voice
       - text: Instradamento diretto di Sistema telefonico
         url: /MicrosoftTeams/direct-routing-landing-page
-      - text: Configurare i telefoni di aree comuni
+      - text: Configurare telefoni di aree comuni
         url: /MicrosoftTeams/set-up-common-area-phones
     - title: Altri contenuti di Teams
       links:
-      - text: Contenuto della Guida per gli utenti finali
+      - text: Contenuto della Guida per utenti finali
         url: https://support.office.com/Teams
       - text: Tech Community di Teams
         url: https://techcommunity.microsoft.com/t5/Microsoft-Teams/ct-p/MicrosoftTeams
       - text: Forum di feedback degli utenti di Teams
         url: https://microsoftteams.uservoice.com/
-      - text: Informazioni sui prodotti Teams
+      - text: Informazioni sul prodotto Teams
         url: https://products.office.com/microsoft-teams/group-chat-software
       - text: Piattaforma di sviluppo di Teams
         url: https://docs.microsoft.com/microsoftteams/platform/overview
