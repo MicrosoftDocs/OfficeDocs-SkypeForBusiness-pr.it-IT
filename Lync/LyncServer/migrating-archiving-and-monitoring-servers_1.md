@@ -1,8 +1,8 @@
 ---
-title: Migrazione di server di archiviazione e monitoraggio
+title: Migrazione di server di archiviazione e di monitoraggio
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Migrating Archiving and Monitoring servers
@@ -12,12 +12,12 @@ ms:contentKeyID: 49733722
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 67896576fce21eea630533a5826bbcbc53392fa0
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 43b7c7509dcf678967db651900c67cdfb3d26685
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42209852"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44757077"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -25,7 +25,7 @@ ms.locfileid: "42209852"
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="migrating-archiving-and-monitoring-servers"></a>Migrazione di server di archiviazione e monitoraggio
+# <a name="migrating-archiving-and-monitoring-servers"></a>Migrazione di server di archiviazione e di monitoraggio
 
 </div>
 
@@ -51,7 +51,7 @@ Se si desiderano funzionalità di archiviazione e monitoraggio durante la fase d
     
 
     > [!NOTE]  
-    > Durante la fase di migrazione quando si utilizza ancora il server perimetrale legacy con il nuovo pool pilota di Lync Server 2013, la versione Office Communications Server 2007 R2 del server di archiviazione continua a raccogliere dati per gli utenti ospitati in Office Communications Server 2007 I pool R2 e la versione Lync Server 2013 del server di archiviazione raccolgono i dati per gli utenti ospitati nei pool di Lync Server 2013.
+    > Durante la fase di migrazione quando si utilizza ancora il server perimetrale legacy con il nuovo pool pilota di Lync Server 2013, la versione Office Communications Server 2007 R2 del server di archiviazione continua a raccogliere dati per gli utenti ospitati nei pool di Office Communications Server 2007 R2 e la versione Lync Server 2013 del server di archiviazione raccoglie i dati per gli utenti ospitati nei pool di Lync Server 2013.
 
     
     </div>

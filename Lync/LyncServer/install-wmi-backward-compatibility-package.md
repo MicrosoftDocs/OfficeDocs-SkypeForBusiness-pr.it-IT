@@ -1,8 +1,8 @@
 ---
 title: Installare il pacchetto di compatibilità con le versioni precedenti di WMI
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Install WMI Backward Compatibility package
@@ -12,12 +12,12 @@ ms:contentKeyID: 48183893
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c59e3ea03b3b6f4085f8acf461b1da3f32e21fa9
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 35be17aa08cf26f93a9d4002b23dacdfb35c5143
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42199399"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756595"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -47,7 +47,7 @@ Se si prova ad eseguire il cmdlet **Merge-CsLegacytopology** senza installare il
 
 Per installare il pacchetto di compatibilità con le versioni precedenti di WMI
 
-1.  Dal supporto di installazione, passare a \\Setup\\amd64\\Setup\\OCSWMIBC. MSI.
+1.  Dal supporto di installazione, passare a \\ installazione \\ amd64 \\ \\OCSWMIBC.MSI.
 
 2.  Installare OCSWMIBC.MSI.
     
@@ -55,7 +55,7 @@ Per installare il pacchetto di compatibilità con le versioni precedenti di WMI
     
 
     > [!IMPORTANT]  
-    > OCSWMIBC.msi deve essere installato nel computer in cui viene eseguita l'unione guidata del Generatore di topologie. Si consiglia tuttavia di installare OCSWMIBC.msi in tutti i Front End Server della topologia.
+    > OCSWMIBC.msi must be installed on the computer where the Topology Builder Merge wizard is run. However, we recommend installing OCSWMIBC.msi on all Front End servers in your topology.
 
     
     </div>
@@ -64,7 +64,7 @@ Per installare il pacchetto di compatibilità con le versioni precedenti di WMI
     
 
     > [!IMPORTANT]  
-    > OCSWMIBC. msi può essere installato in qualsiasi computer del dominio in cui sono installati i componenti di base di Lync Server 2013 e Lync Server 2013 Management Shell e ha accesso alla topologia di Office Communications Server 2007 R2 (provider WMI per il dominio di Active Directory Servizi (AD DS) e SQL Server).
+    > OCSWMIBC.msi può essere installato in qualsiasi computer del dominio in cui sono installati i componenti di base di Lync Server 2013 e Lync Server 2013 Management Shell e ha accesso alla topologia di Office Communications Server 2007 R2 (provider WMI per servizi di dominio Active Directory e SQL Server).
 
     
     </div>

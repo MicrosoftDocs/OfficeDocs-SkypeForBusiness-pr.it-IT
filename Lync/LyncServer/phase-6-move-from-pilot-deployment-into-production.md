@@ -1,8 +1,8 @@
 ---
 title: 'Fase 6: passare dalla distribuzione pilota alla produzione'
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: 'Phase 6: Move from pilot deployment into production'
@@ -12,12 +12,12 @@ ms:contentKeyID: 49733867
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: af65324bc20d47bf12804c045a3c1beb62134fd5
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: e51e252fe670b85a2aeb3e827b37465be00ac68e
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189649"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44757067"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 

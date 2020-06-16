@@ -1,8 +1,8 @@
 ---
 title: Configurare il profilo utente
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Configure User Profile
@@ -12,12 +12,12 @@ ms:contentKeyID: 51541419
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: c53f156aee56aa1986302bf2ff2514aef78af592
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 6615e283e0e426e738cd3cdaf714dd90f57b393e
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42188759"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755500"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -43,7 +43,7 @@ Gli strumenti inclusi nel pacchetto dello strumento di stress e prestazioni di L
 
 ## <a name="running-the-lync-server-2013-load-configuration-tool"></a>Esecuzione dello strumento di configurazione del carico di Lync Server 2013
 
-Per configurare i profili utente, eseguire lo strumento di configurazione del caricamento di Lync Server 2013 (UserProfileGenerator. exe) e compilare tutte le schede. UserProfileGenerator. exe genera una directory per ogni computer client che è necessario eseguire la simulazione. Ogni directory client include anche uno script per avviare tutte le istanze dello strumento di stress e prestazioni di Lync Server 2013 (LyncPerfTool. exe).
+Per configurare i profili utente, eseguire lo strumento di configurazione del carico di Lync Server 2013 (UserProfileGenerator.exe) e compilare tutte le schede. UserProfileGenerator.exe genera una directory per ogni computer client che è necessario eseguire la simulazione. Ogni directory client include anche uno script per avviare tutte le istanze dello strumento di stress e prestazioni di Lync Server 2013 (LyncPerfTool.exe).
 
 <div>
 
@@ -65,13 +65,13 @@ La scheda **configurazione comune** dello strumento di configurazione del carico
 
 ![Scheda di configurazione comune.](images/JJ945594.c68dcc8f-10f2-499e-95a2-fccbcc206c2f(OCS.15).jpg "Scheda di configurazione comune.")
 
-1.  In **numero di macchine disponibili**Digitare o fare clic sul numero di computer che si desidera utilizzare per eseguire LyncPerfTool. exe. È consigliabile disporre di un solo computer per ogni 4.500 utenti da simulare. Questo numero può variare se si riduce il livello di carico o se si utilizza solo un sottoinsieme delle funzionalità disponibili. (I livelli di carico sono impostati nella scheda **scenari generali** ).
+1.  In **numero di macchine disponibili**Digitare o fare clic sul numero di computer che si desidera utilizzare per eseguire LyncPerfTool.exe. È consigliabile disporre di un solo computer per ogni 4.500 utenti da simulare. Questo numero può variare se si riduce il livello di carico o se si utilizza solo un sottoinsieme delle funzionalità disponibili. (I livelli di carico sono impostati nella scheda **scenari generali** ).
 
-2.  In **prefisso per i nomi utente**, digitare il prefisso per il nome utente degli utenti. Per eseguire l'accesso, l'URI (Uniform Resource Identifier) sarà: Indice\[di avvio utente di UserPrefix... (Numero di utenti-1) \]@User dominio.
+2.  In **prefisso per i nomi utente**, digitare il prefisso per il nome utente degli utenti. Per eseguire l'accesso, l'URI (Uniform Resource Identifier) sarà: \[ indice di avvio utente di UserPrefix... (Numero di utenti-1) \] @User dominio.
 
 3.  In **password per tutti gli utenti**, immettere la password utilizzata per la creazione degli utenti. Se si lascia vuoto questo campo, il nome utente verrà utilizzato come password.
 
-4.  In **Indice inizio utente**fare clic su o digitare l'indice del primo utente da configurare. È possibile configurare diversi intervalli per diversi tipi o livelli di carico, ma è necessario eseguire UserProfileGenerator. exe una volta per l'intervallo che si desidera configurare.
+4.  In **Indice inizio utente**fare clic su o digitare l'indice del primo utente da configurare. È possibile configurare diversi intervalli per diversi tipi o livelli di carico, ma è necessario eseguire UserProfileGenerator.exe una volta per l'intervallo che si desidera configurare.
 
 5.  In **numero di utenti**, fare clic su o digitare il numero totale di utenti che si intende configurare.
 
@@ -79,7 +79,7 @@ La scheda **configurazione comune** dello strumento di configurazione del carico
 
 7.  In **dominio account**Digitare l'accesso al dominio di servizi di dominio Active Directory.
 
-8.  Immettere il numero massimo di endpoint simultanei in **accedi al secondo (per istanza)** per il quale si desidera che lo strumento esegua l'accesso in tutti gli endpoint/utenti. La frequenza consigliata \<è = 2 per secondo/standard SKU Fe.
+8.  Immettere il numero massimo di endpoint simultanei in **accedi al secondo (per istanza)** per il quale si desidera che lo strumento esegua l'accesso in tutti gli endpoint/utenti. La frequenza consigliata è \< = 2 per secondo/standard SKU Fe.
 
 9.  In **FQDN del proxy di accesso o del pool**Digitare il nome di dominio completo (FQDN) del server a cui si desidera connettere i client. Se gli utenti accedono esternamente, specificare il proxy di accesso. Se gli utenti sono interni, specificare il nome di dominio completo del pool o del server Standard Edition.
 
@@ -116,7 +116,7 @@ Configurare i livelli di carico e i parametri per ognuno degli scenari generali 
 
 4.  In **collaborazione dati**, che include servizi di conferenza dati, specificare il valore appropriato per il livello di carico.
 
-5.  Nell' **espansione della lista di distribuzione**, specificare il valore appropriato per il livello di carico. È inoltre necessario fare clic sul pulsante **Avanzate** e quindi compilare i campi con gli stessi valori configurati nella scheda **elenco di distribuzione** dello strumento di creazione utente di Lync Server (UserProvisioningTool. exe). Per informazioni dettagliate su questi campi, vedere [creare utenti e contatti](create-users-and-contacts.md)
+5.  Nell' **espansione della lista di distribuzione**, specificare il valore appropriato per il livello di carico. È inoltre necessario fare clic sul pulsante **Avanzate** e quindi compilare i campi con gli stessi valori configurati nella scheda **elenco di distribuzione** dello strumento di creazione utente di Lync Server (UserProvisioningTool.exe). Per informazioni dettagliate su questi campi, vedere [creare utenti e contatti](create-users-and-contacts.md)
 
 6.  In **query Web**Rubrica, che è il servizio di ricerca rubrica (non il download dei file della rubrica), specificare il valore appropriato per il livello di carico. Per abilitare i download della Rubrica, fare clic sul pulsante **Avanzate** corrispondente e quindi impostare **EnableABSDownload** su true.
 
@@ -207,7 +207,7 @@ La scheda **dispositivi mobili** consente di configurare tutti gli scenari relat
 
 1.  Fare clic sul pulsante **Avanzate** accanto a **mobilità (UCWA)**. Impostare il campo **UcwaTargetServerUrl** sul server IP virtuale (VIP) del pool di server Director o sul VIP del pool Front end.
 
-2.  In **presenza e audio di messaggistica\\istantanea P2P**, selezionare il valore appropriato per il **livello di carico** per abilitare la simulazione dello scenario per dispositivi mobili.
+2.  In **presenza e \\ audio di messaggistica istantanea P2P**, selezionare il valore appropriato per il **livello di carico** per abilitare la simulazione dello scenario per dispositivi mobili.
 
 <div>
 
@@ -229,7 +229,7 @@ La scheda **Riepilogo** dello strumento di configurazione del carico di Lync Ser
 
 ![Scheda Riepilogo.](images/JJ945594.c675e869-8ded-4195-8c2a-68d844fc96ad(OCS.15).jpg "Scheda Riepilogo.")
 
-La scheda **Riepilogo** indica gli utenti da utilizzare per ogni scenario. È possibile configurare manualmente gli intervalli di numeri utente selezionando la casella di controllo **Abilita generazione di un intervallo di utenti personalizzato** e quindi facendo doppio clic sullo scenario nella tabella che include l' **intervallo di utenti** che si desidera personalizzare. Controllare (RunClient. bat) aggiungere ritardo di accesso all'avvio, per includere i ritardi nei file batch generati in modo che corrispondano alla frequenza di accesso. Questa operazione è utile per impedire l'overload del server quando si effettua l'accesso a un numero elevato di utenti. Fare clic su **genera file**e selezionare la cartella in cui si desidera generare la configurazione. Una finestra di dialogo simile alla figura seguente comparirà quando i file sono stati creati correttamente.
+La scheda **Riepilogo** indica gli utenti da utilizzare per ogni scenario. È possibile configurare manualmente gli intervalli di numeri utente selezionando la casella di controllo **Abilita generazione di un intervallo di utenti personalizzato** e quindi facendo doppio clic sullo scenario nella tabella che include l' **intervallo di utenti** che si desidera personalizzare. Controllare (RunClient.bat) aggiungere il ritardo di accesso all'avvio, per includere i ritardi nei file batch generati in modo che corrispondano alla frequenza di accesso. Questa operazione è utile per impedire l'overload del server quando si effettua l'accesso a un numero elevato di utenti. Fare clic su **genera file**e selezionare la cartella in cui si desidera generare la configurazione. Una finestra di dialogo simile alla figura seguente comparirà quando i file sono stati creati correttamente.
 
 ![Conferma che i file sono stati creati.](images/JJ945594.00dc1e92-bfba-48e7-9568-b97ad864491e(OCS.15).jpg "Conferma che i file sono stati creati.")
 

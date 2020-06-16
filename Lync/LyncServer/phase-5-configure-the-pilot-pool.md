@@ -1,8 +1,8 @@
 ---
 title: 'Fase 5: configurare il pool pilota'
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: 'Phase 5: Configure the pilot pool'
@@ -12,12 +12,12 @@ ms:contentKeyID: 48183532
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 565ae8f69c43c15e25acd707806931afb7c2419e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 56e68d7150fa4af78863049c6e27e26bf5efadba
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42209772"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756787"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -43,13 +43,13 @@ Ora che il pool pilota è stato creato e le informazioni sulla distribuzione leg
 
 ## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Connettere il pool pilota ai server perimetrali legacy](connect-pilot-pool-to-legacy-edge-servers_1.md)
+  - [Connettere il pool pilota ai server legacy di Edge Server](connect-pilot-pool-to-legacy-edge-servers_1.md)
 
   - [Autorizzare la connessione al server perimetrale di Office Communications Server 2007 R2](authorize-connection-to-office-communications-server-2007-r2-edge-server.md)
 
-  - [Verificare le impostazioni di configurazione](verify-configuration-settings_1.md)
+  - [Verificare impostazioni di configurazione](verify-configuration-settings_1.md)
 
-  - [Configurare i certificati e i criteri di accesso del gateway XMPP](configure-xmpp-gateway-access-policies-and-certificates_1.md)
+  - [Configurare criteri e certificati di accesso al gateway XMPP](configure-xmpp-gateway-access-policies-and-certificates_1.md)
 
 </div>
 

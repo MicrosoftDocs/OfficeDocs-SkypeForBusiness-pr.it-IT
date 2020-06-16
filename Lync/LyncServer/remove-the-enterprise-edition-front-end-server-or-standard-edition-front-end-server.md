@@ -1,8 +1,8 @@
 ---
 title: Rimuovere Enterprise Edition Front End Server o Standard Edition Front End Server
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Remove the Enterprise Edition Front End Server or Standard Edition Front End Server
@@ -12,12 +12,12 @@ ms:contentKeyID: 49733721
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 37091a4cc89b64f03697f7ac44a7cc45ff39070e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 461a7868d0c8a6c00df8dba67ed0135a100d4e84
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189449"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44757247"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -43,15 +43,15 @@ Le procedure descritte in questo argomento consentono di rimuovere un pool di Mi
 
 ## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Reimposta il controllo di ammissione di chiamata](reset-call-admission-control.md)
+  - [Reimpostare il controllo di ammissione di chiamata](reset-call-admission-control.md)
 
-  - [Impedisci sessioni per i servizi](prevent-sessions-for-services.md)
+  - [Impedire le sessioni per i servizi](prevent-sessions-for-services.md)
 
   - [Arrestare i servizi di Lync Server 2010](stop-lync-server-2010-services.md)
 
-  - [Rimuovere un front end server da un pool](remove-a-front-end-server-from-a-pool.md)
+  - [Rimuovere un Front End Server da un pool](remove-a-front-end-server-from-a-pool.md)
 
-  - [Rimuovere il pool Front end o il server Standard Edition](remove-front-end-pool-or-standard-edition-server.md)
+  - [Rimuovere pool Front End o server Standard Edition](remove-front-end-pool-or-standard-edition-server.md)
 
 </div>
 

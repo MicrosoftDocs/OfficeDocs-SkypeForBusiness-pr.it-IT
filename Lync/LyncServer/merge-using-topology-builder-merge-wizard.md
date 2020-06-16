@@ -1,8 +1,8 @@
 ---
 title: Unione mediante l'Unione guidata generatore di topologie
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Merge using Topology Builder Merge wizard
@@ -12,12 +12,12 @@ ms:contentKeyID: 48185343
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: dc25e73e2eb62e8d1b43fee4ce4350d8ae05b354
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 4760dcd8810d12b112c3bb042e0f28a039683a08
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42210172"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44757047"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -47,13 +47,13 @@ _**Ultimo argomento modificato:** 2012-10-02_
     
     ![Procedura guidata per la topologia di Unione, specificare la pagina installazione Edge](images/JJ205243.cdca609d-d4d5-47d9-9ff8-8b1daa4106e1(OCS.15).jpg "Procedura guidata per la topologia di Unione, specificare la pagina installazione Edge")  
 
-5.  In **Specificare il tipo di server perimetrale** immettere il tipo di configurazione del server perimetrale e quindi fare clic su **Avanti**. In questo esempio viene utilizzata l'opzione **Server perimetrale singolo**.
+5.  In **Specify Edge Type**, enter the type of Edge Server configuration, and then click **Next**. This example uses the **Single Edge Server** option.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > <STRONG>Distribuzione server perimetrale espanso</STRONG> non è una configurazione supportata. Un <STRONG>Server perimetrale espanso</STRONG> deve essere prima convertito in un <STRONG>Server perimetrale singolo</STRONG> o in un <STRONG>Server perimetrale consolidato con carico bilanciato</STRONG>.
+    > <STRONG>Expanded Edge deployment</STRONG> is not a supported configuration. An <STRONG>Expanded Edge Server</STRONG> must first be converted to a <STRONG>Single Edge Server</STRONG> or a <STRONG>Load-balanced consolidated Edge</STRONG> Server.
 
     
     </div>
@@ -68,7 +68,7 @@ _**Ultimo argomento modificato:** 2012-10-02_
     
 
     > [!IMPORTANT]  
-    > Prima di fare clic su <STRONG>Avanti</STRONG>, eseguire il passaggio successivo di questa procedura. È molto importante non ignorare questo passaggio.
+    > Before you click <STRONG>Next</STRONG>, do the next step in this procedure. It is very important that you do not miss this step.
 
     
     </div>

@@ -1,8 +1,8 @@
 ---
 title: Lync Server 2013; Creare route tra aree di rete
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 audience: admin
 manager: serdars
 f1.keywords:
@@ -13,12 +13,12 @@ ms:mtpsurl: https://technet.microsoft.com/en-us/library/Gg398368(v=OCS.15)
 ms:contentKeyID: 48184159
 ms.date: 07/23/2014
 mtps_version: v=OCS.15
-ms.openlocfilehash: 72917dc3ef179e0c27de6d47e599746a97e0540e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 156f2322d5b1b7cc1951f1cbd4df41eb231a8170
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42210242"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44757207"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -38,7 +38,7 @@ ms.locfileid: "42210242"
 
 _**Ultimo argomento modificato:** 2012-10-20_
 
-Una *route tra aree di rete* definisce la route tra una coppia di aree di rete. Ogni coppia di aree di rete nella distribuzione del servizio Controllo di ammissione di chiamata richiede una route di questo tipo. In tal modo ogni area di rete della distribuzione può accedere a tutte le altre aree.
+A *network interregion route* defines the route between a pair of network regions. Each pair of network regions in your call admission control deployment requires a network interregion route. This enables every network region within the deployment to access every other region.
 
 Se i collegamenti di area impostano limitazioni della larghezza di banda per le connessioni tra le aree, una route tra aree determina il percorso collegato attraversato dalla connessione per passare da un'area all'altra.
 
@@ -99,9 +99,9 @@ Nella topologia di esempio, le route tra aree di rete devono essere definite per
 
 5.  Nella pagina **Nuova route aree di rete** fare clic su **Nome** e quindi digitare un nome per la route tra aree di rete.
 
-6.  Fare clic su **area \#** di rete 1 e quindi fare clic su un'area di rete nell'elenco che si desidera instradare all'area \#di rete 2.
+6.  Fare clic su area di rete ** \# 1**e quindi fare clic su un'area di rete nell'elenco che si desidera instradare all'area di rete \# 2.
 
-7.  Fare clic su **area \#di rete 2**e quindi fare clic su un'area di rete nell'elenco che si desidera instradare all'area \#di rete 1.
+7.  Fare clic su **area di rete \# 2**e quindi fare clic su un'area di rete nell'elenco che si desidera instradare all'area di rete \# 1.
 
 8.  Fare clic su **Aggiungi** accanto al campo **Collegamenti aree di rete** e quindi aggiungere un collegamento all'area di rete che verrà usato come route tra aree di rete.
     
@@ -109,7 +109,7 @@ Nella topologia di esempio, le route tra aree di rete devono essere definite per
     
 
     > [!NOTE]  
-    > Se si crea una route per due aree di rete tra le quali non esiste un collegamento diretto, è necessario aggiungere tutti i collegamenti necessari per completare la route. Ad esempio, la route tra le aree di rete Nord America/APAC richiede due collegamenti tra aree di rete perché non esiste un collegamento diretto tra le due aree.
+    > If you are creating a route for two network regions that do not have a direct network region link between them, you must add all the necessary links to complete the route. For example, the North America/APAC network interregion route requires two network region links because there is no direct network region link between them.
 
     
     </div>

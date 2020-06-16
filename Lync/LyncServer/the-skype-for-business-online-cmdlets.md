@@ -1,8 +1,8 @@
 ---
 title: Cmdlet di Skype for business online
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: The Skype for Business Online cmdlets
@@ -12,12 +12,12 @@ ms:contentKeyID: 56558831
 ms.date: 05/04/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 02365bfeeed60a22ea467091ebb0f2c92b0fa3c2
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8ee81531ca8d900225d2b8dc2a10af55718a5b67
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189189"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755710"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,7 +37,7 @@ ms.locfileid: "42189189"
 
 _**Ultimo argomento modificato:** 2013-07-05_
 
-Quando ci si connette a Skype for business online utilizzando Windows PowerShell, una raccolta di cmdlet Skype for business online viene copiata, in memoria, nel computer in uso. Questi cmdlet, oltre a qualsiasi altro cmdlet già presente nel computer locale (inclusi i cmdlet di base installati durante l'installazione di Windows PowerShell), sono quindi disponibili per la gestione della distribuzione di Skype for business online e del tuo Skype for Account utente business online. I cmdlet Skype for business online sono introdotti nei seguenti argomenti:
+Quando ci si connette a Skype for business online utilizzando Windows PowerShell, una raccolta di cmdlet Skype for business online viene copiata, in memoria, nel computer in uso. Questi cmdlet, oltre a qualsiasi altro cmdlet già presente nel computer locale (inclusi i cmdlet di base installati durante l'installazione di Windows PowerShell), sono disponibili per la gestione della distribuzione di Skype for business online e degli account utente di Skype for business online. I cmdlet Skype for business online sono introdotti nei seguenti argomenti:
 
   - [Gestione dei tenant di Skype for business online](https://docs.microsoft.com/skypeforbusiness/set-up-your-computer-for-windows-powershell/manage-skype-for-business-online-organizations)
 

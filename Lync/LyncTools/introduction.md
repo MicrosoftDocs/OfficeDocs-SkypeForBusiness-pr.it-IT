@@ -1,8 +1,8 @@
 ---
 title: Introduzione
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Introduction
@@ -12,12 +12,12 @@ ms:contentKeyID: 51541414
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 912c6a1704438106a3ffbb178d9f03a536489757
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 354f28948578be528787928fd4e0874f6ff8e5fa
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42204562"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755460"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -112,15 +112,15 @@ Nello strumento di stress e prestazioni di Lync Server 2013 sono incluse le appl
 </thead>
 <tbody>
 <tr class="odd">
-<td><p>UserProvisioningTool. exe</p></td>
+<td><p>UserProvisioningTool.exe</p></td>
 <td><p>Lo strumento di provisioning degli utenti di Lync Server 2013. Questo strumento viene utilizzato per creare utenti e contatti.</p></td>
 </tr>
 <tr class="even">
-<td><p>UserProfileGenerator. exe</p></td>
+<td><p>UserProfileGenerator.exe</p></td>
 <td><p>Strumento di configurazione del caricamento di Lync Server 2013. Questo strumento viene utilizzato per configurare le caratteristiche del carico utente da simulare.</p></td>
 </tr>
 <tr class="odd">
-<td><p>LyncPerfTool. exe</p></td>
+<td><p>LyncPerfTool.exe</p></td>
 <td><p>Strumento di stress e prestazioni di Lync Server 2013. LyncPerfTool è lo strumento che simula il caricamento dell'utente.</p></td>
 </tr>
 <tr class="even">

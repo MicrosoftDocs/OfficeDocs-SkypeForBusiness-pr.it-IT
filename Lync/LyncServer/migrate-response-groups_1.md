@@ -1,8 +1,8 @@
 ---
 title: Eseguire la migrazione di Response Group
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Migrate response groups
@@ -12,12 +12,12 @@ ms:contentKeyID: 48184250
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 36b37fc6a67a1935c442edb4e2e8ef0d8812315c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: de012d0886c51cd70d5003beb24053ff86af05b7
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42190149"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756937"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -61,7 +61,7 @@ Prima di eseguire la migrazione dei Response Group, è necessario che sia stato 
 
 </div>
 
-Per eseguire la migrazione dei Response Group da un pool legacy a Lync Server 2013, è necessario utilizzare il cmdlet **Move-CsRgsConfiguration** . Prima di poter eseguire **Move-CsRgsConfiguration**, è innanzitutto necessario installare il pacchetto di interfacce di compatibilità con le versioni precedenti di Strumentazione gestione Windows (WMI). Installare l'applicazione eseguendo OCSWMIBC. msi. È possibile trovare OCSWMIBC. msi nel supporto di installazione nella cartella Setup.
+Per eseguire la migrazione dei Response Group da un pool legacy a Lync Server 2013, è necessario utilizzare il cmdlet **Move-CsRgsConfiguration** . Prima di poter eseguire **Move-CsRgsConfiguration**, è innanzitutto necessario installare il pacchetto di interfacce di compatibilità con le versioni precedenti di Strumentazione gestione Windows (WMI). Installare l'applicazione eseguendo OCSWMIBC.msi. È possibile trovare OCSWMIBC.msi nel supporto di installazione nella cartella Setup.
 
 <div>
 
@@ -73,7 +73,7 @@ Per eseguire la migrazione dei Response Group da un pool legacy a Lync Server 20
 
 </div>
 
-Dopo aver eseguito la migrazione dei Response Group, è necessario aggiornare l'URL utilizzato dagli agenti formali per accedere ai propri Response Group e utilizzare il pannello di controllo di Lync Server o i cmdlet di Lync Server Management Shell per verificare che siano stati spostati tutti i gruppi di agenti, le code e i flussi di lavoro. correttamente.
+Dopo aver eseguito la migrazione dei Response Group, è necessario aggiornare l'URL utilizzato dagli agenti formali per accedere ai propri Response Group e utilizzare il pannello di controllo di Lync Server o i cmdlet di Lync Server Management Shell per verificare che tutti i gruppi di agenti, le code e i flussi di lavoro siano stati spostati correttamente.
 
 <div>
 
@@ -127,13 +127,13 @@ La procedura seguente per la migrazione delle configurazioni dei Response Group 
     
         Move-CsRgsConfiguration -Source pool01.contoso.net -Destination pool02.contoso.net
 
-5.  Se è stata distribuita la scheda Response Group per Microsoft Office Communicator 2007 R2 nell'ambiente Office Communications Server 2007 R2, rimuovere la scheda dal file Tabs. XML di Office Communicator 2007 R2.
+5.  Se è stata distribuita la scheda Response Group per Microsoft Office Communicator 2007 R2 nell'ambiente Office Communications Server 2007 R2, rimuovere la scheda dal file di tabs.xml di Office Communicator 2007 R2.
     
     <div>
     
 
     > [!NOTE]  
-    > Gli agenti formali utilizzavano la scheda Response Group per accedere ai Response Group in modo da poter ricevere le chiamate. Se è stata distribuita la scheda Response Group, si è scelto il percorso per il file Tabs. XML di Office Communicator 2007 R2 quando è stata distribuita.
+    > Gli agenti formali utilizzavano la scheda Response Group per accedere ai Response Group in modo da poter ricevere le chiamate. Se è stata distribuita la scheda Response Group, si è scelto il percorso del file di tabs.xml di Office Communicator 2007 R2 quando è stata distribuita.
 
     
     </div>
@@ -144,7 +144,7 @@ La procedura seguente per la migrazione delle configurazioni dei Response Group 
     
 
     > [!NOTE]  
-    > L'URL in genere https://webpoolFQDN/RgsClients/Tab.aspxè la posizione in cui FQDNpoolWeb è il nome di dominio completo (FQDN) del pool Web associato al pool di cui è stata eseguita la migrazione in Lync Server 2013.
+    > L'URL in genere è la https://webpoolFQDN/RgsClients/Tab.aspx posizione in cui FQDNpoolWeb è il nome di dominio completo (FQDN) del pool Web associato al pool di cui è stata eseguita la migrazione in Lync Server 2013.
 
     
     </div>

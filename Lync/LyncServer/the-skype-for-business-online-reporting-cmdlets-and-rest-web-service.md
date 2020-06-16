@@ -1,8 +1,8 @@
 ---
 title: Cmdlet per la creazione di report di Skype for business online e REST Web Service
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: The Skype for Business Online reporting cmdlets and REST web service
@@ -12,12 +12,12 @@ ms:contentKeyID: 56563409
 ms.date: 05/04/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 63cbce4dda006bb45606a09eef29d8c47946ad2a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: f40d394ba69cf017c11d4eb6cd57246a9d425c0f
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189179"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755700"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -51,7 +51,7 @@ I cmdlet per i report disponibili per gli amministratori includono:
 
   - Get-CsP2PSessionReport, che fornisce informazioni sul numero e il tipo di sessioni peer-to-peer a cui hanno partecipato gli utenti.
 
-La maggior parte degli amministratori utilizzerà i report disponibili nell'interfaccia di amministrazione di Microsoft 365: non solo i report vengono generati automaticamente, ma forniscono anche una rappresentazione grafica dei dati che spesso è più facile interpretare rispetto ai valori dei numeri non elaborati restituiti dall' cmdlet per la creazione di report. Tuttavia, gli amministratori che hanno familiarità con Windows PowerShell possono utilizzare i cmdlet per la creazione di report per restituire dati che non sono facilmente disponibili nei report di Lync Online. Ad esempio, i cmdlet per i report restituiscono informazioni sulla durata della sessione (la quantità di tempo, espressa in minuti, in cui sono state riportate tutte le sessioni). La durata delle sessioni individuali non è disponibile con i rapporti di Lync Online. Analogamente, nella visualizzazione giornaliera dei report di Lync Online vengono visualizzate informazioni solo per i 14 giorni precedenti. Se si desidera esaminare i totali giornalieri per un giorno diverso, ad esempio una data di quattro mesi fa, è possibile utilizzare i cmdlet per la creazione di report.
+La maggior parte degli amministratori utilizzerà i report disponibili nell'interfaccia di amministrazione di Microsoft 365: non solo i report vengono generati automaticamente, ma forniscono anche una rappresentazione grafica dei dati che spesso è più facile interpretare rispetto ai valori dei numeri non elaborati restituiti dai cmdlet per la creazione di report. Tuttavia, gli amministratori che hanno familiarità con Windows PowerShell possono utilizzare i cmdlet per la creazione di report per restituire dati che non sono facilmente disponibili nei report di Lync Online. Ad esempio, i cmdlet per i report restituiscono informazioni sulla durata della sessione (la quantità di tempo, espressa in minuti, in cui sono state riportate tutte le sessioni). La durata delle sessioni individuali non è disponibile con i rapporti di Lync Online. Analogamente, nella visualizzazione giornaliera dei report di Lync Online vengono visualizzate informazioni solo per i 14 giorni precedenti. Se si desidera esaminare i totali giornalieri per un giorno diverso, ad esempio una data di quattro mesi fa, è possibile utilizzare i cmdlet per la creazione di report.
 
 Gli amministratori possono anche essere interessati all'articolo [utilizzo di Excel per recuperare i dati di report di office 365](https://msdn.microsoft.com/library/dn781442.aspx), in cui viene illustrato come utilizzare la funzionalità di query dei dati OData in Microsoft Excel per creare un report personalizzato di Office 365. I report personalizzati offrono la possibilità di dettare quali dati e quanti dati vengono restituiti dal servizio Reporting di Office 365. I report personalizzati consentono inoltre di eseguire operazioni quali la modalità di ordinamento e raggruppamento dei dati e l'accesso alle informazioni non visualizzate nell'interfaccia di amministrazione.
 

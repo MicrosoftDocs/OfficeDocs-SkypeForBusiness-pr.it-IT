@@ -1,8 +1,8 @@
 ---
-title: Rimuovere il database di SQL Server per un Monitoring Server
+title: Rimuovere il database di SQL Server per un server di monitoraggio
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Remove the SQL Server database for a Monitoring server
@@ -12,12 +12,12 @@ ms:contentKeyID: 49733781
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f175f17b41a72c63aba77e6eb59aadce985ced82
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: a5f899fd36a985c124d5b0bfca899592eb9b7a17
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189389"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44757268"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -25,7 +25,7 @@ ms.locfileid: "42189389"
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="remove-the-sql-server-database-for-a-monitoring-server"></a>Rimuovere il database di SQL Server per un Monitoring Server
+# <a name="remove-the-sql-server-database-for-a-monitoring-server"></a>Rimuovere il database di SQL Server per un server di monitoraggio
 
 </div>
 

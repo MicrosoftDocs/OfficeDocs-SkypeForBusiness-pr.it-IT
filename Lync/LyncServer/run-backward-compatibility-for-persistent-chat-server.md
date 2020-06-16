@@ -1,8 +1,8 @@
 ---
 title: Eseguire la compatibilità con le versioni precedenti del server Chat persistente
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Run backward compatibility for Persistent Chat Server
@@ -12,12 +12,12 @@ ms:contentKeyID: 48184175
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 52d107c13d281001196dcad17604d0bfbbb9e522
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 5308d39e4edcfeddf494aa364f6b7ed43b9822dc
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189339"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755770"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -37,13 +37,13 @@ ms.locfileid: "42189339"
 
 _**Ultimo argomento modificato:** 2013-02-21_
 
-Lync Server 2013, endpoint del server Chat persistente, consente di creare un URL semplice che punta a un pool di server Chat persistente. Questa operazione è utile per i client legacy (Microsoft Office Communications Server 2007 R2 Group Chat Server o Lync Server 2010, Group Chat) perché gli utenti possono immettere un URL semplice nella configurazione manuale quando si tenta di puntare il client legacy a un computer che esegue Lync 2013, Chat persistente. Questo endpoint non viene utilizzato da Chat persistente ed è necessario solo per i client legacy. Questa operazione è utile per il periodo interinale in cui è possibile eseguire la migrazione delle sale, ma i client di Lync 2013 non sono stati distribuiti nell'intera organizzazione. Gli utenti che eseguono Lync 2010 Group Chat (client) possono comunque connettersi al server back-end del server di chat persistente.
+Lync Server 2013, endpoint del server Chat persistente, consente di creare un URL semplice che punta a un pool di server Chat persistente. Questa operazione è utile per i client legacy (Microsoft Office Communications Server 2007 R2 Group Chat Server o Lync Server 2010, Group Chat) perché gli utenti possono immettere un URL semplice nella configurazione manuale quando si tenta di puntare il client legacy a un computer che esegue Lync 2013, Persistent Chat. Questo endpoint non viene utilizzato da Chat persistente ed è necessario solo per i client legacy. Questa operazione è utile per il periodo interinale in cui è possibile eseguire la migrazione delle sale, ma i client di Lync 2013 non sono stati distribuiti nell'intera organizzazione. Gli utenti che eseguono Lync 2010 Group Chat (client) possono comunque connettersi al server back-end del server di chat persistente.
 
 Non è necessario creare più endpoint del server Chat persistente. serve solo una per ogni pool di server Chat persistente. Gli amministratori possono creare più endpoint (uno per pool), ma i client legacy possono essere configurati per la connessione a un solo pool alla volta. Nello scenario usuale o mainstream, la distribuzione legacy è solo un pool. Una nuova distribuzione generalmente esegue la migrazione del pool a un nuovo Lync Server 2013 e potrebbe aggiungere alcuni nuovi pool di server Chat persistente aggiuntivi.
 
 Uno scenario di questo tipo in genere segue questo schema:
 
-  - È possibile amministrare gli utenti con un solo Lync Server 2010, un pool di chat di gruppo e i client di chat di gruppo di Lync 2010 che si connettono al pool utilizzando\<un utente\>noto (SIP predefinito: OCSChat@ domainname. com o uno simile). Gli utenti sono servizi di dominio Active Directory abilitati per SIP e il servizio di ricerca esegue la registrazione per ricevere le richieste in arrivo.
+  - È possibile amministrare gli utenti con un solo Lync Server 2010, un pool di chat di gruppo e i client di chat di gruppo di Lync 2010 che si connettono al pool utilizzando un utente noto (SIP predefinito: ocschat@ \<domainName\> . com o uno simile). Gli utenti sono servizi di dominio Active Directory abilitati per SIP e il servizio di ricerca esegue la registrazione per ricevere le richieste in arrivo.
 
   - Successivamente, si installa un server di chat persistente di Lync Server 2013 e un pool di server Chat persistente.
 

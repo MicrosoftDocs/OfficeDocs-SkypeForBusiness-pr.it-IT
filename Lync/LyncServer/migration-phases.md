@@ -1,8 +1,8 @@
 ---
 title: Fasi della migrazione
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Migration phases
@@ -12,12 +12,12 @@ ms:contentKeyID: 48185642
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 4d8101e5dee47699421ed83effed3c578c96bfda
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 19594eb5f0e7c2847dfbbf41795574c01b67d0be
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189979"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756817"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -45,7 +45,7 @@ Nelle fasi seguenti viene descritto il processo di migrazione del pool da Lync S
 
 1.  [Fase 1: pianificare la migrazione da Lync Server 2010](phase-1-plan-your-migration-from-lync-server-2010.md)
 
-2.  [Fase 2: preparazione per la migrazione](phase-2-prepare-for-migration.md)
+2.  [Fase 2: preparare la migrazione](phase-2-prepare-for-migration.md)
 
 3.  [Fase 3: distribuire il pool pilota di Lync Server 2013](phase-3-deploy-lync-server-2013-pilot-pool.md)
 
@@ -57,7 +57,7 @@ Nelle fasi seguenti viene descritto il processo di migrazione del pool da Lync S
 
 7.  [Fase 7: completare le attività successive alla migrazione](phase-7-complete-post-migration-tasks.md)
 
-8.  [Fase 8: rimuovere i pool legacy](phase-8-decommission-legacy-pools.md)
+8.  [Fase 8: rimuovere le autorizzazioni dei pool legacy](phase-8-decommission-legacy-pools.md)
 
 </div>
 

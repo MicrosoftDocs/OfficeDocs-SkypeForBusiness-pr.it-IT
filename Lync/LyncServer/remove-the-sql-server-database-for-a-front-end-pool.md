@@ -1,8 +1,8 @@
 ---
 title: Rimuovere il database di SQL Server per un pool Front End
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Remove the SQL Server database for a Front End pool
@@ -12,12 +12,12 @@ ms:contentKeyID: 49733681
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: a69972d355ad2870445af14ccfeb097f1d8a6dcb
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 10d46868b63236327825f2fe4134330fd055ead2
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189399"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44757278"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -69,7 +69,7 @@ Dopo la rimozione di un pool Front End di Microsoft Lync Server 2010 o la riconf
     
         Uninstall-CsDataBase -DatabaseType Application -SqlServerFqdn <FQDN> [-SqlInstanceName <instance>]
     
-    Dove \<FQDN\> è il nome di dominio completo del server di \<database\> e instance è l'istanza di database denominata, se ne è stata definita una.
+    Dove \<FQDN\> è il nome di dominio completo del server di database e \<instance\> è l'istanza di database denominata, se ne è stata definita una.
 
 5.  Quando il cmdlet **Uninstall-CsDataBase** richiede di confermare le azioni, leggere le informazioni e quindi premere **S** (o INVIO) per procedere oppure **N** e quindi INVIO per arrestare il cmdlet (in caso di errori).
 

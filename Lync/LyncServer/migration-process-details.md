@@ -1,8 +1,8 @@
 ---
 title: Processo di migrazione-Dettagli
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Migration process - details
@@ -12,12 +12,12 @@ ms:contentKeyID: 48185412
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6df1eb2e0f69f79bd299f2da4f6f12aaba1bb5d8
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 76624475b86427d8e3b1aa4f9efa75c127afcb85
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189949"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756711"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -66,7 +66,7 @@ Assicurarsi di aver soddisfatto i prerequisiti seguenti prima di eseguire la mig
 
 Eseguire la procedura seguente per preparare correttamente i dati di origine per la migrazione.
 
-1.  Eseguire il backup dei database di origine per Lync Server 2010, Group Chat o Office Communications Server 2007 R2 Group Chat. Per informazioni dettagliate sul backup di SQL Server, vedere "Panoramica del backup (SQL Server)" <https://go.microsoft.com/fwlink/p/?linkid=254851>all'indirizzo.
+1.  Eseguire il backup dei database di origine per Lync Server 2010, Group Chat o Office Communications Server 2007 R2 Group Chat. Per informazioni dettagliate sul backup di SQL Server, vedere "Panoramica del backup (SQL Server)" all'indirizzo <https://go.microsoft.com/fwlink/p/?linkid=254851> .
     
     <div>
     
@@ -141,7 +141,7 @@ Eseguire la procedura seguente per eseguire la migrazione del server di chat di 
 
 8.  Porta l'URI del server di ricerca di Microsoft Lync Server 2010, Group Chat o Office Communications Server 2007 R2 Group Chat all'oggetto contatto del server di chat persistente di Lync 2013 server. I passaggi seguenti sono obbligatori se i client di chat di gruppo di Lync 2010 o di Office Communicator 2007 R2 devono connettersi all'ultima Lync 2013, Persistent Chat (client) dopo la migrazione senza modifiche alla configurazione sul fianco del client:
     
-      - Eliminare l'account\<utente del\>Server di ricerca di OCSChat@ domainname. com. Questo è stato utilizzato per puntare al servizio di ricerca in Lync Server 2010, Group Chat. È possibile disinstallare il pool e rimuovere le voci attendibili in un secondo momento.
+      - Eliminare l' \<domainName\> account utente del server di ricerca di OCSChat@. com. Questo è stato utilizzato per puntare al servizio di ricerca in Lync Server 2010, Group Chat. È possibile disinstallare il pool e rimuovere le voci attendibili in un secondo momento.
     
       - Creare un endpoint legacy (oggetto contatto del server Chat persistente) eseguendo il cmdlet di Windows PowerShell **New-CsPersistentChatEndpoint**con l'URI SIP identico in modo che il client legacy funzioni efficacemente quando il servizio viene riavviato.
     
@@ -163,7 +163,7 @@ Eseguire la procedura seguente per eseguire la migrazione del server di chat di 
     
 
     > [!IMPORTANT]  
-    > Lync Server 2013 supporta più pool di server Chat persistente. Tuttavia, è possibile eseguire la migrazione di un pool di chat di gruppo di Lync&nbsp;2010 o di Office Communications Server 2007 R2 a un singolo pool di server di chat persistente di lync Server 2013. È possibile aggiungere ulteriori nuovi pool di server Chat persistente nella distribuzione per soddisfare i requisiti normativi, ad esempio per mantenere i dati all'interno di una determinata geografia.
+    > Lync Server 2013 supporta più pool di server Chat persistente. Tuttavia, è possibile eseguire la migrazione di un pool di chat di gruppo di Lync 2010 o di Office Communications Server 2007 R2 &nbsp; a un singolo pool di server di chat persistente di Lync server 2013. È possibile aggiungere ulteriori nuovi pool di server Chat persistente nella distribuzione per soddisfare i requisiti normativi, ad esempio per mantenere i dati all'interno di una determinata geografia.
 
     
     </div>

@@ -1,8 +1,8 @@
 ---
-title: Rimuovere i server di archiviazione e monitoraggio legacy
+title: Rimuovere server di archiviazione e di monitoraggio legacy
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Remove legacy Archiving and Monitoring servers
@@ -12,12 +12,12 @@ ms:contentKeyID: 48185278
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 23209752263222be3521c6ddb9f9e03bd86d0808
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8d77292fe478fa95deec50df84a78907af4290e3
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42209422"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44757107"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -25,7 +25,7 @@ ms.locfileid: "42209422"
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="remove-legacy-archiving-and-monitoring-servers"></a>Rimuovere i server di archiviazione e monitoraggio legacy
+# <a name="remove-legacy-archiving-and-monitoring-servers"></a>Rimuovere server di archiviazione e di monitoraggio legacy
 
 </div>
 
@@ -41,7 +41,7 @@ Se la distribuzione legacy conteneva un server di archiviazione o un Monitoring 
 
 È possibile spostare gli utenti da Lync Server 2010 a Lync Server 2013 attenendosi alle procedure descritte nella [fase 4: spostare gli utenti di test nel pool pilota](phase-4-move-test-users-to-the-pilot-pool.md).
 
-Dopo aver verificato che tutti gli utenti sono stati rimossi da tutti i pool rimanenti, seguire la procedura descritta in "disinstallazione di Microsoft Lync Server 2010 e rimozione dei ruoli del server", [https://go.microsoft.com/fwlink/p/?linkId=246227](https://go.microsoft.com/fwlink/p/?linkid=246227)che è possibile scaricare all'indirizzo.
+Dopo aver verificato che tutti gli utenti sono stati rimossi da tutti i pool rimanenti, seguire la procedura descritta in "disinstallazione di Microsoft Lync Server 2010 e rimozione dei ruoli del server", che è possibile scaricare all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=246227](https://go.microsoft.com/fwlink/p/?linkid=246227) .
 
 </div>
 

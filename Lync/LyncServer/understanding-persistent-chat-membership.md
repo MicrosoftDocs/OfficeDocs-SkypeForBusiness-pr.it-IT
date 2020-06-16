@@ -1,8 +1,8 @@
 ---
 title: Informazioni sull'appartenenza di chat persistente
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Understanding Persistent Chat membership
@@ -12,12 +12,12 @@ ms:contentKeyID: 48184781
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 3cc357eff6cdc68c5285eeb915f5534b6f38b871
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 400866812ab2d5efb12960dc3c2f37c2fcb8eb45
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189149"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755680"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -69,9 +69,9 @@ Una categoria specifica tutti gli utenti e i gruppi che possono essere membri di
 
 La definizione di **AllowedMembers** e **Creators** per una categoria ha i vantaggi seguenti:
 
-  - Tutte le chat room nella categoria sono vincolate da restrizioni impostate a livello di categoria. È possibile usare questo aspetto per isolare le chat room in base ai criteri di accesso e alle esigenze aziendali.
+  - All chat rooms in this category are bound by the restrictions set at the category level. You can use this to segregate chat rooms based on business need and access policies.
 
-  - Un utente incluso nell'elenco **Creator** può creare nuove chat room nella categoria. Se si desidera implementare un sistema in cui un numero limitato di persone dell'organizzazione può creare chat room, questo controllo può essere usato per soddisfare tale requisito.
+  - A user who is in the **Creators** list can create new chat rooms in that category. If you want to implement a system where a restricted number of personnel in the organization can create chat rooms, this control can be used to meet that requirement.
 
 </div>
 
@@ -81,7 +81,7 @@ La definizione di **AllowedMembers** e **Creators** per una categoria ha i vanta
 
 Il **AllowedMembers** di una categoria deve includere tutti gli utenti che utilizzeranno qualsiasi chat room persistente in questa categoria. A seconda dei requisiti di protezione dei dati aziendali e di verifica del livello appropriato di accesso, è possibile definire una o più categorie per specificare chi può cercare e partecipare alle chat room. Se si vuole consentire solo a un determinato set di utenti (un helpdesk centrale o solo i dipendenti a tempo pieno) di creare chat room, è possibile limitare l'ambito di utenti **Creator** di una categoria in modo conseguente.
 
-Le categorie possono essere inoltre usate per creare barriere etiche, le quali impediscono conflitti di interesse in un'organizzazione. Un amministratore può ad esempio creare chat room in una categoria solo per operatori di borsa mentre un'altra categoria può essere riservata agli analisti.
+Categories can also be used to create ethical walls. Ethical walls prevent any conflict of interest in an organization. For example, an administrator can create chat rooms in a category for traders only, whereas chat rooms in another category can be used by analysts only.
 
 <div>
 

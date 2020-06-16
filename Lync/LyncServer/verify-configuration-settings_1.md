@@ -1,8 +1,8 @@
 ---
 title: Verificare le impostazioni di configurazione
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Verify configuration settings
@@ -12,12 +12,12 @@ ms:contentKeyID: 48183997
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6f7655547ff4f3e528b3948a537bbd5e85f351ed
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2430fe82aa424571405def33139ba315677ffcc7
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42188979"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755600"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -95,7 +95,7 @@ Dopo aver unito la topologia ed eseguito il cmdlet **Import-CsLegacyConfiguratio
 
 ## <a name="to-verify-policies-and-settings"></a>Per verificare i criteri e le impostazioni
 
-1.  Nell'ambiente Office Communications Server 2007 R2, prendere nota dei nomi dei dial plan (in precedenza noti come profili località), i numeri di accesso esterno (i numeri di telefono di accesso e le aree geografiche), le route vocali e i criteri elencati nel tabella precedente, oltre agli URL utilizzati per Communicator Web Access.
+1.  Nell'ambiente Office Communications Server 2007 R2, prendere nota dei nomi dei dial plan (in precedenza noti come profili località), i numeri di accesso esterno (numeri di telefono e aree geografiche di accesso per i servizi di conferenza), le route vocali e i criteri elencati nella tabella precedente, oltre agli URL utilizzati per Communicator Web Access.
 
 2.  Nel server Lync Server 2013 front end, aprire il pannello di controllo di Lync Server.
 

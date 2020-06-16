@@ -1,8 +1,8 @@
 ---
-title: Verificare che la replica degli utenti sia stata completata
+title: Verificare il completamento della replica utente
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Verify user replication has completed
@@ -12,12 +12,12 @@ ms:contentKeyID: 48183441
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 96e8df3cb77e6b53596ae17e15fed6b05243a99a
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 8d883b5446c843ac8b79e2b29d15f8a1c99f0089
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42188799"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755530"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -25,7 +25,7 @@ ms.locfileid: "42188799"
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="verify-user-replication-has-completed"></a>Verificare che la replica degli utenti sia stata completata
+# <a name="verify-user-replication-has-completed"></a>Verificare il completamento della replica utente
 
 </div>
 
@@ -55,7 +55,7 @@ Quando si esegue il cmdlet **Move-CsUser** , è possibile che si verifichi un er
 
 6.  Nell'elenco **Origini eventi** fare clic su **LS User Replicator**.
 
-7.  In ** \<tutti gli ID\> evento** immettere **30024** e quindi fare clic su **OK**.
+7.  In **\<All Event IDs\>** immettere **30024** e quindi fare clic su **OK**.
 
 8.  Nella scheda **Generale** dell'elenco degli eventi filtrati cercare una voce in cui viene indicato che la replica utente è stata completata correttamente.
 

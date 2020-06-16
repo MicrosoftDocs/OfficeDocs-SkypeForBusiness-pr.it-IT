@@ -1,8 +1,8 @@
 ---
 title: 'Fase 7: completare le attività successive alla migrazione'
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: 'Phase 7: Complete post-migration tasks'
@@ -12,12 +12,12 @@ ms:contentKeyID: 48184485
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: d42207ecff45a66f2b8fb4d88abb69483504c644
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: bcf827412104bcfc8b6c3fe2b58378ecab8ad7bf
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42209562"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756777"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -43,9 +43,9 @@ Negli argomenti di questa sezione vengono descritte le attività che dovranno es
 
 ## <a name="in-this-section"></a>Argomenti della sezione
 
-  - [Eseguire la migrazione di riunioni esistenti e del contenuto delle riunioni](migrate-existing-meetings-and-meeting-content.md)
+  - [Eseguire la migrazione di riunioni e di contenuto di riunioni esistenti](migrate-existing-meetings-and-meeting-content.md)
 
-  - [Eseguire la migrazione di numeri di accesso esterno](migrate-dial-in-access-numbers.md)
+  - [Eseguire la migrazione dei numeri di accesso esterno](migrate-dial-in-access-numbers.md)
 
   - [Eseguire la migrazione delle impostazioni dell'applicazione Parcheggio di chiamata](migrate-call-park-application-settings.md)
 
@@ -55,7 +55,7 @@ Negli argomenti di questa sezione vengono descritte le attività che dovranno es
 
   - [Configurare la pagina di partecipazione alle riunioni](configure-the-meeting-join-page.md)
 
-  - [Rimuovere i server di archiviazione e monitoraggio legacy](remove-legacy-archiving-and-monitoring-servers.md)
+  - [Rimuovere server di archiviazione e di monitoraggio legacy](remove-legacy-archiving-and-monitoring-servers.md)
 
   - [Configurare i server applicazioni attendibili](configure-trusted-application-servers.md)
 
@@ -65,9 +65,9 @@ Negli argomenti di questa sezione vengono descritte le attività che dovranno es
 
   - [Configurare il monitoraggio di SCOM](configure-scom-monitoring.md)
 
-  - [Migrare i telefoni delle aree comuni](migrate-common-area-phones.md)
+  - [Eseguire la migrazione dei telefoni di aree comuni](migrate-common-area-phones.md)
 
-  - [Eseguire la migrazione di dispositivi analogici](migrate-analog-devices.md)
+  - [Eseguire la migrazione dei dispositivi analogici](migrate-analog-devices.md)
 
 </div>
 

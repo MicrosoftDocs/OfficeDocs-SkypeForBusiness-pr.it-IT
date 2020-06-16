@@ -1,8 +1,8 @@
 ---
 title: 'Fase 9: completare le attività successive alla migrazione'
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: 'Phase 9: Complete post-migration tasks'
@@ -12,12 +12,12 @@ ms:contentKeyID: 48183292
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 7d1ef8c74a0ac14fd99cabb676a63ca176697fc9
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 1e12268cce33526ba2602a2efc9a611ebb211801
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42209482"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756337"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -45,7 +45,7 @@ Negli argomenti di questa sezione vengono descritte le attività che dovranno es
 
   - [Eseguire la migrazione di Response Group](migrate-response-groups_1.md)
 
-  - [Eseguire la migrazione di numeri di accesso esterno](migrate-dial-in-access-numbers_1.md)
+  - [Eseguire la migrazione dei numeri di accesso esterno](migrate-dial-in-access-numbers_1.md)
 
   - [Abilitare l'integrazione di Exchange 2013 Outlook Web App e della messaggistica istantanea](enable-exchange-2013-outlook-web-app-and-im-integration.md)
 
@@ -53,7 +53,7 @@ Negli argomenti di questa sezione vengono descritte le attività che dovranno es
 
   - [Abilitare il controllo delle chiamate remote](enable-remote-call-control.md)
 
-  - [Rimuovere i server di archiviazione e monitoraggio legacy](remove-legacy-archiving-and-monitoring-servers_1.md)
+  - [Rimuovere server di archiviazione e di monitoraggio legacy](remove-legacy-archiving-and-monitoring-servers_1.md)
 
   - [Eseguire la migrazione di Mediation Server](migrate-mediation-server.md)
 

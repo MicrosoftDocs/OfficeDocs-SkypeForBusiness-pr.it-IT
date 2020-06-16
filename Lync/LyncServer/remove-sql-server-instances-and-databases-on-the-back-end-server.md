@@ -1,8 +1,8 @@
 ---
-title: Rimuovere le istanze e i database di SQL Server nel server back-end
+title: Rimuovere database e istanze di SQL Server nel server back-end
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Remove SQL Server instances and databases on the Back End Server
@@ -12,12 +12,12 @@ ms:contentKeyID: 49733606
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bfd97f461486a873bcfade12fe7359c43ba5680c
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: dbd5a681be1395038116be32b3267be07213af1b
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189479"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756635"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -25,7 +25,7 @@ ms.locfileid: "42189479"
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="remove-sql-server-instances-and-databases-on-the-back-end-server"></a>Rimuovere le istanze e i database di SQL Server nel server back-end
+# <a name="remove-sql-server-instances-and-databases-on-the-back-end-server"></a>Rimuovere database e istanze di SQL Server nel server back-end
 
 </div>
 
@@ -47,7 +47,7 @@ Per rimuovere i database o le istanze per il server di archiviazione o il Monito
 
   - [Rimuovere il database di SQL Server per un pool Front End](remove-the-sql-server-database-for-a-front-end-pool.md)
 
-  - [Rimuovere il database di SQL Server per un Monitoring Server](remove-the-sql-server-database-for-a-monitoring-server.md)
+  - [Rimuovere il database di SQL Server per un server di monitoraggio](remove-the-sql-server-database-for-a-monitoring-server.md)
 
   - [Rimuovere il database di SQL Server per un server di archiviazione](remove-the-sql-server-database-for-an-archiving-server.md)
 

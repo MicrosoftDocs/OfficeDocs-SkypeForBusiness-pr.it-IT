@@ -1,8 +1,8 @@
 ---
 title: Utilizzo di categorie per l'amministrazione del server Chat persistente
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Using categories to administer Persistent Chat Server
@@ -12,12 +12,12 @@ ms:contentKeyID: 48185628
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 0e02a780772cd0e9592bb078ab526a4085a234bc
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 73801c006f7ef5487960628d0f981809cdfd2d38
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189009"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755630"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -63,7 +63,7 @@ I responsabili delle chat room permanenti, che hanno la possibilità di gestire 
 
 </div>
 
-I responsabili delle chat room possono apportare modifiche a tutte le proprietà delle chat room, ad eccezione della categoria della chat. Non è invece possibile impedire loro di eseguire le azioni seguenti:
+Chat room managers can make changes to all chat room properties, except for changing the category of the room. They cannot be restricted from performing the following actions:
 
   - Disabilitazione di una chat room
 
@@ -89,7 +89,7 @@ I responsabili delle chat room possono apportare modifiche a tutte le proprietà
 
 La creazione e la gestione di chat room permanenti è molto più facile con il corretto utilizzo delle categorie. Un amministratore di chat persistente può definire **AllowedMembers** e **creatori** per ogni categoria e può anche definire le impostazioni e i comportamenti predefiniti per le chat room che verranno applicati a tutte le chat room create nella categoria. Gli amministratori di chat persistente creano e gestiscono le categorie utilizzando i cmdlet di Lync Server Control Panel o Windows PowerShell.
 
-Gli utenti, le unità organizzative e i gruppi di utenti identificati come creatori della categoria sono gli unici autorizzati a creare chat room nella categoria. Dopo la creazione della categoria, essi potranno scegliere utenti, unità organizzative e gruppi di utenti dall'elenco **Membri consentiti** della categoria come responsabili di chat room e membri per la gestione e la partecipazione.
+Users, Organizational Units (OUs), and user groups that are identified as Creators of the category are the only individuals and groups that are allowed to create rooms in the category. After the category is created, they can choose users, OUs, and user groups from the category’s **AllowedMembers** list as chat room managers and members to manage and participate in the room.
 
 Le chat room create in una categoria sono soggette ai criteri e alle impostazioni applicati dalla categoria, ad esempio i membri autorizzati, gli utenti che possono gestire la chat room, se sono consentiti caricamenti di file, se è previsto l'invio di inviti e così via.
 

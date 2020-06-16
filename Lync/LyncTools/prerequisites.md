@@ -1,8 +1,8 @@
 ---
 title: Prerequisiti
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Prerequisites
@@ -12,12 +12,12 @@ ms:contentKeyID: 51541417
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 9a4f10cb1bdf5733dbe54519325475871be10564
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 9d8f0ee6a50d40f938a9f2c6f731b0a4afa647ba
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42196149"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756887"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -93,9 +93,9 @@ I computer in cui verrà eseguito lo strumento di stress e prestazioni di Lync S
 
 1.  È necessario essere connessi come membri del gruppo Domain o local Admins.
 
-2.  Lync Server 2013 stress and Performance Tool (LyncPerfTool. exe) non può essere eseguito in un computer che esegue anche i componenti di Lync Server 2013.
+2.  Lync Server 2013 stress and Performance Tool (LyncPerfTool.exe) non può essere eseguito in un computer che esegue anche i componenti di Lync Server 2013.
 
-3.  È necessario eseguire lo strumento di creazione degli utenti di Lync Server 2013 (UserProvisioningTool. exe) nel front end server o nel server Standard Edition in cui si trovano gli account utente. Quando lo strumento viene eseguito più volte, tutti gli utenti abilitati per le comunicazioni unificate di Microsoft devono disporre di un numero di telefono univoco.
+3.  È necessario eseguire lo strumento di creazione degli utenti di Lync Server 2013 (UserProvisioningTool.exe) nel front end server o nel server Standard Edition in cui si trovano gli account utente. Quando lo strumento viene eseguito più volte, tutti gli utenti abilitati per le comunicazioni unificate di Microsoft devono disporre di un numero di telefono univoco.
 
 4.  Le dimensioni del file di paging devono essere gestite dal sistema o devono essere almeno 1,5 volte la quantità di RAM del sistema.
 
