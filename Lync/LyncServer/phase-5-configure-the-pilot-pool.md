@@ -1,8 +1,8 @@
 ---
 title: 'Fase 5: configurare il pool pilota'
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: 'Phase 5: Configure the pilot pool'
@@ -12,12 +12,12 @@ ms:contentKeyID: 48183532
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 565ae8f69c43c15e25acd707806931afb7c2419e
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 56e68d7150fa4af78863049c6e27e26bf5efadba
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42209772"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756787"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -25,7 +25,7 @@ ms.locfileid: "42209772"
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="phase-5-configure-the-pilot-pool"></a><span data-ttu-id="87599-102">Fase 5: configurare il pool pilota</span><span class="sxs-lookup"><span data-stu-id="87599-102">Phase 5: Configure the pilot pool</span></span>
+# <a name="phase-5-configure-the-pilot-pool"></a><span data-ttu-id="8a180-102">Fase 5: configurare il pool pilota</span><span class="sxs-lookup"><span data-stu-id="8a180-102">Phase 5: Configure the pilot pool</span></span>
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "42209772"
 
 <span> </span>
 
-<span data-ttu-id="87599-103">_**Ultimo argomento modificato:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="87599-103">_**Topic Last Modified:** 2012-10-19_</span></span>
+<span data-ttu-id="8a180-103">_**Ultimo argomento modificato:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="8a180-103">_**Topic Last Modified:** 2012-10-19_</span></span>
 
-<span data-ttu-id="87599-104">Ora che il pool pilota è stato creato e le informazioni sulla distribuzione legacy sono state unite con Lync Server 2013, in questa sezione vengono identificate alcune configurazioni che devono essere apportate al pool pilota.</span><span class="sxs-lookup"><span data-stu-id="87599-104">Now that the pilot pool has been created and legacy deployment information has been merged with Lync Server 2013, this section identifies a few configurations that must be made to the pilot pool.</span></span>
+<span data-ttu-id="8a180-104">Ora che il pool pilota è stato creato e le informazioni sulla distribuzione legacy sono state unite con Lync Server 2013, in questa sezione vengono identificate alcune configurazioni che devono essere apportate al pool pilota.</span><span class="sxs-lookup"><span data-stu-id="8a180-104">Now that the pilot pool has been created and legacy deployment information has been merged with Lync Server 2013, this section identifies a few configurations that must be made to the pilot pool.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="87599-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="87599-105">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="8a180-105">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="8a180-105">In This Section</span></span>
 
-  - [<span data-ttu-id="87599-106">Connettere il pool pilota ai server perimetrali legacy</span><span class="sxs-lookup"><span data-stu-id="87599-106">Connect pilot pool to legacy Edge Servers</span></span>](connect-pilot-pool-to-legacy-edge-servers_1.md)
+  - [<span data-ttu-id="8a180-106">Connettere il pool pilota ai server legacy di Edge Server</span><span class="sxs-lookup"><span data-stu-id="8a180-106">Connect pilot pool to legacy Edge Servers</span></span>](connect-pilot-pool-to-legacy-edge-servers_1.md)
 
-  - [<span data-ttu-id="87599-107">Autorizzare la connessione al server perimetrale di Office Communications Server 2007 R2</span><span class="sxs-lookup"><span data-stu-id="87599-107">Authorize connection to Office Communications Server 2007 R2 Edge Server</span></span>](authorize-connection-to-office-communications-server-2007-r2-edge-server.md)
+  - [<span data-ttu-id="8a180-107">Autorizzare la connessione al server perimetrale di Office Communications Server 2007 R2</span><span class="sxs-lookup"><span data-stu-id="8a180-107">Authorize connection to Office Communications Server 2007 R2 Edge Server</span></span>](authorize-connection-to-office-communications-server-2007-r2-edge-server.md)
 
-  - [<span data-ttu-id="87599-108">Verificare le impostazioni di configurazione</span><span class="sxs-lookup"><span data-stu-id="87599-108">Verify configuration settings</span></span>](verify-configuration-settings_1.md)
+  - [<span data-ttu-id="8a180-108">Verificare impostazioni di configurazione</span><span class="sxs-lookup"><span data-stu-id="8a180-108">Verify configuration settings</span></span>](verify-configuration-settings_1.md)
 
-  - [<span data-ttu-id="87599-109">Configurare i certificati e i criteri di accesso del gateway XMPP</span><span class="sxs-lookup"><span data-stu-id="87599-109">Configure XMPP gateway access policies and certificates</span></span>](configure-xmpp-gateway-access-policies-and-certificates_1.md)
+  - [<span data-ttu-id="8a180-109">Configurare criteri e certificati di accesso al gateway XMPP</span><span class="sxs-lookup"><span data-stu-id="8a180-109">Configure XMPP gateway access policies and certificates</span></span>](configure-xmpp-gateway-access-policies-and-certificates_1.md)
 
 </div>
 
