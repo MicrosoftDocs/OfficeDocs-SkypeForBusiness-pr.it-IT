@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: L'amministratore può conoscere i controller di bordo della sessione (SBCs) che sono stati certificati per il routing diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5b6e79b38ae92c3a2387b91e0d254f99f8412da5
-ms.sourcegitcommit: d664ef6994e242bf18a29dac31286c78c163478a
+ms.openlocfilehash: 1c1805ec472a36389cd6b45d5d344438b41a5a32
+ms.sourcegitcommit: d0d37351c37c2b4db9b0fc51b286dd548f5b9542
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44710800"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735436"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 
@@ -72,7 +72,7 @@ Leggi [altre informazioni sul routing diretto](https://aka.ms/dr). In caso di do
 |                                                                                                                    |      VME           |    &#10004;    |    &#10004;    |     8.3.0.0.1   |   <ul> <li> [Routing della posizione dinamica della larghezza di banda](https://www.bandwidth.com/partners/microsoft-teams-direct-routing) </li> <li>[Servizio Routing di emergenza Intrado (ERS)](https://www.west.com/safety-services/enterprise-e911-solutions/microsoft-teams-e911-solutions/) </li> <li>[Gateway di emergenza Intrado (EGW)](https://www.west.com/safety-services/enterprise-e911-solutions/microsoft-teams-e911-solutions/)</li>  </ul>  |  &#10004;  |    
 |                     [TE-SYSTEMS](https://www.anynode.de/anynode-and-microsoft-teams/)                               |     anynode         |     &#10004;   |  &#10004;   |      3,20 supportati (consigliato 4,0)        |     |    |    
 |                     [Metaswitch](https://www.metaswitch.com/products/core-network/perimeta-sbc)                               |     SBC Perimeta        |     &#10004;   |  |      4,7      |     |    |  
-|                     [Cisco](http://www.cisco.com/go/cube)                               |     Cisco Unified Border Element (CUBE) per i router di servizi integrati della serie 1000        |     &#10004;   |  |      IOS XE Amsterdam 17.2.1 r      |     |   |  
+|                     [Cisco](https://www.cisco.com/c/en/us/solutions/enterprise/interoperability-portal/networking_solutions_products_genericcontent0900aecd805bd13d.html)                               |     Cisco Unified Border Element (CUBE) per i router di servizi integrati della serie 1000        |     &#10004;   |  |      IOS XE Amsterdam 17.2.1 r      |     |   |  
 |                                   |     Cisco Unified Border Element (CUBE) per i router di servizi integrati della serie 4000        |     &#10004;   |  |      IOS XE Amsterdam 17.2.1 r      |     |    |  
 |                                   |     Elemento Border unificato Cisco (cubo) per router di servizi cloud di serie 1000V       |     &#10004;   |  |      IOS XE Amsterdam 17.2.1 r      |     |    |  
 |                                 |     Cisco Unified Border Element (CUBE) per router di aggregazione di servizi di 1000 Series      |     &#10004;   |  |      IOS XE Amsterdam 17.2.1 r      |     |    |  
@@ -91,6 +91,7 @@ La tabella seguente elenca i dispositivi verificati per l'interoperabilità tra 
   | [Oracle](https://www.oracle.com/technical-resources/documentation/acme-packet.html) |  AP6300 software versione 8.3.0.1.2|     &#10004;     |
   | [Oracle](https://www.oracle.com/technical-resources/documentation/acme-packet.html) |  AP6350 software versione 8.3.0.1.2|     &#10004;     |
   | [Oracle](https://www.oracle.com/technical-resources/documentation/acme-packet.html) |  Versione del software VME 8.3.0.1.2 |     &#10004;     |
+  | [TE-SYSTEMS](https://www.anynode.de/anynode-and-microsoft-teams/) |  anynode con Grandstream GXW42xx (V 1.0.7.10) |     &#10004;     |
 
 Per darci feedback sui prodotti in teams, ad esempio idee per nuove funzionalità, Vedi [UserVoice](https://microsoftteams.uservoice.com).
 Nota la certificazione concessa a una versione principale. Ciò significa che il firmware con qualsiasi numero nel firmware SBC successivo alla versione principale è supportato.

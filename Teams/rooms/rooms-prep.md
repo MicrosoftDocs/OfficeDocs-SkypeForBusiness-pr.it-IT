@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come preparare l'infrastruttura per la distribuzione delle sale di Microsoft teams in modo da poter sfruttare tutte le funzionalità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4309140e249f5ab3674f0b2255ae195821922ad4
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 8551bc625b270b8b61de4be71ceb772a1d1ede47
+ms.sourcegitcommit: d0d37351c37c2b4db9b0fc51b286dd548f5b9542
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44666168"
+ms.lasthandoff: 06/15/2020
+ms.locfileid: "44735426"
 ---
 # <a name="prepare-your-environment"></a>Predisporre l'ambiente
 
@@ -53,7 +53,7 @@ Un *account di dispositivo* è un account che il client di Microsoft teams Rooms
 Per funzionare correttamente, il dispositivo Microsoft teams Rooms deve avere accesso a una rete cablata che soddisfa questi requisiti:
   
 - Accedere all'istanza di Active Directory o di Azure Active Directory (Azure AD), nonché ai server di Microsoft Exchange e Skype for business.
-- Accesso a un server in grado di specificare un indirizzo IP tramite DHCP. Le sale di Microsoft teams non possono essere configurate con un indirizzo IP statico.
+- Accesso a un server in grado di specificare un indirizzo IP tramite DHCP. Le sale di Microsoft teams non possono essere configurate con un indirizzo IP statico al primo avvio dell'unità.
 - Accesso alle porte HTTP 80 e 443.
 - Porte TCP e UDP configurate come descritto in [requisiti per la porta e il protocollo per i server](/skypeforbusiness/plan-your-deployment/network-requirements/ports-and-protocols) per le implementazioni locali di Skype for Business Server oppure per gli [URL e gli intervalli di indirizzi IP di Microsoft 365 e Office 365](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US) per Microsoft teams o per le implementazioni di Skype for business online.
 
@@ -120,7 +120,7 @@ Per usare questa applicazione, è necessario essere in grado di connettersi agli
 |Condivisione desktop  <br/> |Computer client o utente connesso  <br/> |TCP/UDP 50040-50059  <br/> |\*. contoso.com  <br/> |No  <br/> |Sì  <br/> |[Intervalli di indirizzi IP Skype for business](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#BKMK_SfB_IP) <br/> |TCP 443, 50000-59.999  <br/> |
 |Notifiche push di Lync mobile per Lync Mobile 2010 nei dispositivi iOS. Questa operazione non è necessaria per i dispositivi mobili Android, Nokia Symbian o Windows Phone.  <br/> |Computer client o utente connesso  <br/> |Porte effimere  <br/> |\*. contoso.com  <br/> |No  <br/> |Sì  <br/> |[Intervalli di indirizzi IP Skype for business](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#BKMK_SfB_IP) <br/> |TCP 5223  <br/> |
 |Telemetria Skype  <br/> |Computer client o utente connesso  <br/> |Porte effimere  <br/> |skypemaprdsitus.trafficmanager.net  <br/> pipe.skype.com  <br/> |No  <br/> |No  <br/> |N/D  <br/> |TCP 443  <br/> |
-|Client Skype suggerimenti rapidi  <br/> |Computer client o utente connesso  <br/> |Porte effimere  <br/> |quicktips.skypeforbusiness.com  <br/> |No  <br/> |No  <br/> |N/D  <br/> |TCP 443  <br/> |
+|Suggerimenti rapidi del client Skype  <br/> |Computer client o utente connesso  <br/> |Porte effimere  <br/> |quicktips.skypeforbusiness.com  <br/> |No  <br/> |No  <br/> |N/D  <br/> |TCP 443  <br/> |
 
 > [!NOTE]
 > Il carattere jolly per contoso.com e broadcast.skype.com rappresenta un lungo elenco di nodi usati esclusivamente per Microsoft 365 o Office 365. 
@@ -144,7 +144,7 @@ L'account del dispositivo in genere non usa una password. È possibile assegnarl
   
 ### <a name="admin---local-administrator-account"></a>"Amministratore"-account di amministratore locale
 
-La password predefinita di Microsoft teams Rooms è impostata su "SFB". La password può essere modificata localmente passando alle impostazioni di Windows \> o al file Autounattend. XML (usare Windows System Image Manager da ADK per apportare la modifica al file XML).
+La password predefinita di Microsoft teams Rooms è impostata su "SFB". La password può essere modificata localmente passando alle impostazioni di Windows \> o nel file AutoUnattend.xml (usare Windows System Image Manager da ADK per apportare la modifica al file XML).
   
 > [!CAUTION]
 > Assicurarsi di cambiare la password di Microsoft teams Rooms il più presto possibile. 
