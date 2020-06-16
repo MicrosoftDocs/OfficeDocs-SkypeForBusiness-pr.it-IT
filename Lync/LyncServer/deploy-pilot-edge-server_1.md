@@ -1,8 +1,8 @@
 ---
-title: Distribuire il server perimetrale pilota
+title: Distribuire Edge Server pilota
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Deploy pilot Edge Server
@@ -12,12 +12,12 @@ ms:contentKeyID: 48183446
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 6cbf3be6dd47f794768ba0f3c8140e7124a1cabb
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: c4245efe0faf5dfe947cc52fb22a447e46c0b3e8
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180406"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44751258"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -25,7 +25,7 @@ ms.locfileid: "42180406"
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="deploy-pilot-edge-server"></a>Distribuire il server perimetrale pilota
+# <a name="deploy-pilot-edge-server"></a>Distribuire Edge Server pilota
 
 </div>
 
@@ -39,7 +39,7 @@ _**Ultimo argomento modificato:** 2012-10-19_
 
 In questo argomento vengono evidenziate le impostazioni di configurazione di cui tenere conto prima di distribuire il server perimetrale di Lync Server 2013. In questa sezione vengono evidenziati solo i punti chiave di cui è consigliabile tenere conto nell'ambito della distribuzione del pool di server perimetrali pilota. Per la procedura dettagliata, vedere [Deploying External User Access in Lync Server 2013](lync-server-2013-deploying-external-user-access.md) nella documentazione relativa alla distribuzione, in cui viene descritto il processo di distribuzione e vengono fornite anche informazioni di configurazione per l'accesso degli utenti esterni.
 
-Man mano che si va avanti nella procedura guidata **Definisci pool di server perimetrali**, esaminare le impostazioni di configurazione chiave illustrate nei passaggi seguenti. Si noti che sono visualizzate solo alcune pagine della procedura guidata **Definisci pool di server perimetrali**.
+As you navigate through the **Define New Edge Pool** wizard, review the key configuration settings shown in the following steps. Note that only a few pages of the **Define New Edge Pool** wizard are shown.
 
 **Definire un pool di server perimetrali**
 

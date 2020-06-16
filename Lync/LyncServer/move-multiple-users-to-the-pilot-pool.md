@@ -1,8 +1,8 @@
 ---
 title: Spostare più utenti nel pool pilota
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 f1.keywords:
 - NOCSH
 TOCTitle: Move multiple users to the pilot pool
@@ -12,12 +12,12 @@ ms:contentKeyID: 48184838
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: 81b5ad16b36063c217d90c4c8f1e8a2e7fa3c0ed
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 3a5a92b0438e72be0ecb5acaa1b8e1886768ad59
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42189849"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755400"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -69,7 +69,7 @@ _**Ultimo argomento modificato:** 2012-10-02_
 
 1.  Aprire Lync Server 2013 Management Shell.
 
-2.  Nella riga di comando digitare quanto segue e sostituire **User1** e **User2** con nomi utente specifici che si desidera spostare e sostituire **FQDN del\_pool** con il nome del pool di destinazione. In questo esempio spostiamo gli utenti Hao Chen e Katie Jordan.
+2.  Nella riga di comando digitare quanto segue e sostituire **User1** e **User2** con nomi utente specifici che si desidera spostare e sostituire ** \_ FQDN del pool** con il nome del pool di destinazione. In questo esempio spostiamo gli utenti Hao Chen e Katie Jordan.
     
         Get-CsUser -Filter {DisplayName -eq "User1" -or DisplayName - eq "User2"} | Move-CsUser -Target "pool_FQDN"
     
@@ -79,7 +79,7 @@ _**Ultimo argomento modificato:** 2012-10-02_
     
         Get-CsUser -Identity "User1"
 
-4.  L'identità del **pool di registrazione** deve ora puntare al pool specificato come **FQDN\_del pool** nel passaggio precedente. La presenza di questa identità conferma che l'utente è stato correttamente spostato. Ripetere il passaggio per verificare che **User2** sia stato spostato.
+4.  L'identità del **pool di registrazione** deve ora puntare al pool specificato come ** \_ FQDN del pool** nel passaggio precedente. La presenza di questa identità conferma che l'utente è stato correttamente spostato. Ripetere il passaggio per verificare che **User2** sia stato spostato.
     
     ![Output del cmdlet Get-UsUser-Identity di PowerShell](images/JJ205096.8ff04c67-37a0-4156-bfbc-28f9f7b137c8(OCS.15).jpg "Output del cmdlet Get-UsUser-Identity di PowerShell")  
 
@@ -103,7 +103,7 @@ In questo esempio, tutti gli utenti sono stati restituiti al pool di Lync Server
     
         Get-CsUser -Identity "Hao Chen"
 
-4.  L'identità del **pool di registrazione** per ogni utente ora punta al pool specificato come "FQDN\_del pool" nel passaggio precedente. La presenza di questa identità conferma che l'utente è stato spostato correttamente.
+4.  L'identità del **pool di registrazione** per ogni utente ora punta al pool specificato come "FQDN del pool \_ " nel passaggio precedente. La presenza di questa identità conferma che l'utente è stato spostato correttamente.
 
 5.  Inoltre, è possibile visualizzare l'elenco di utenti nel pannello di controllo di Lync Server 2013 e verificare che il valore del pool di registrazione punti ora al pool di Lync Server 2013.
     

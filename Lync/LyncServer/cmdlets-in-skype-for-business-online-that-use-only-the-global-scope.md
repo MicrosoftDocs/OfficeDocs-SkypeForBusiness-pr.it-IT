@@ -1,8 +1,8 @@
 ---
 title: Cmdlet in Skype for business online che utilizzano solo l'ambito globale
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -13,12 +13,12 @@ ms:contentKeyID: 56558800
 ms.date: 05/04/2015
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: f4a894c4a9c6e2913abb003c49094bc6d6868483
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: b97f3c8d9ca7dda0b96db211192350184cbf27b1
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "42001251"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755098"
 ---
 # <a name="cmdlets-in-skype-for-business-online-that-use-only-the-global-scope"></a>Cmdlet in Skype for business online che utilizzano solo l'ambito globale
 
@@ -86,7 +86,7 @@ In secondo luogo, il cmdlet **Remove-CsVoicePolicy** non elimina effettivamente 
 <td><p>Valore predefinito</p></td>
 </tr>
 <tr class="even">
-<td><p>True</p></td>
+<td><p>Vero</p></td>
 <td><p>Dopo che il criterio globale è stato modificato</p></td>
 </tr>
 <tr class="odd">

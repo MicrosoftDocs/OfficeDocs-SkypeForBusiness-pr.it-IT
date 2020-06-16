@@ -1,8 +1,8 @@
 ---
 title: Modificare gli URL semplici dopo la migrazione
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -13,12 +13,12 @@ ms:contentKeyID: 49733777
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: def26afe2bae21a7a3b6d0ffae4b358c76296e6d
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 2c9f46944e80c5eb7a2d81de6f164d19aab64d29
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42181029"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755326"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -40,9 +40,9 @@ _**Ultimo argomento modificato:** 2012-09-22_
 
 Lync Server supporta tre URL semplici:
 
-  - L'URL **riunione** (meet) viene utilizzato come URL di base per tutte le conferenze nel sito o nell'organizzazione. Con l'URL semplice riunione, i collegamenti per partecipare alle riunioni sono semplici da capire, da comunicare e da distribuire.
+  - **Meet** is used as the base URL for all conferences in the site or organization. With the Meet simple URL, links to join meetings are easy to comprehend, and easy to communicate and distribute.
 
-  - L'URL **per accesso esterno** (dialin) consente di accedere alla pagina Web Impostazioni conferenza telefonica con accesso esterno. L'URL semplice per accesso esterno è incluso in tutti gli inviti a riunioni, in modo che gli utenti che desiderano eseguire l'accesso esterno alla riunione dispongano delle informazioni necessarie sul numero di telefono e sul PIN.
+  - **Dial-in** enables access to the Dial-in Conferencing Settings webpage. The Dial-in simple URL is included in all meeting invitations so that users who want to dial in to the meeting can access the necessary phone number and PIN information.
 
   - L' **amministratore** consente di accedere rapidamente al pannello di controllo di Lync Server. L'URL semplice di amministrazione è interno all'organizzazione.
 
@@ -70,7 +70,7 @@ Dopo aver eseguito la migrazione a Lync Server 2013, è necessario essere a cono
     
 
     > [!TIP]  
-    > È consigliabile utilizzare l'URL più semplice possibile per l'accesso amministrativo. L'opzione più semplice è <STRONG> https://admin.</STRONG> &lt;dominio&gt;.
+    > È consigliabile utilizzare l'URL più semplice possibile per l'accesso amministrativo. L'opzione più semplice è <STRONG> https://admin .</STRONG> &lt; dominio &gt; .
 
     
     </div>

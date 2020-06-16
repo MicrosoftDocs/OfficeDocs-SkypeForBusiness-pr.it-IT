@@ -1,8 +1,8 @@
 ---
 title: Configurare i server applicazioni attendibili
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 audience: Admin
 f1.keywords:
 - NOCSH
@@ -13,12 +13,12 @@ ms:contentKeyID: 48184056
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: bb693a68f58ef16ca29048d9e18738ef98d719d8
-ms.sourcegitcommit: 831d141dfc5a49dd764cb296b73b63e5a9f8e599
+ms.openlocfilehash: 9cbaba4f59a22de6fcee38ee51845d551033cfea
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "42180749"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754484"
 ---
 <div data-xmlns="http://www.w3.org/1999/xhtml">
 
@@ -38,7 +38,7 @@ ms.locfileid: "42180749"
 
 _**Ultimo argomento modificato:** 2012-10-04_
 
-In un ambiente misto, se si crea un nuovo server applicazioni attendibile dopo aver unito la topologia di Office Communications Server legacy con Lync Server 2013 e si definisce un nuovo server applicazioni attendibile tramite Generatore di topologie, è necessario impostare il pool dell'hop successivo come un Pool di Lync Server 2013. In un ambiente Unito, sia il pool di Office Communications Server legacy che il pool di Lync Server 2013 vengono visualizzati nell'elenco a discesa. La selezione del pool legacy *non* è supportata.
+In un ambiente misto, se si crea un nuovo server applicazioni attendibile dopo aver unito la topologia di Office Communications Server legacy con Lync Server 2013 e si definisce un nuovo server applicazioni attendibile tramite Generatore di topologie, è necessario impostare il pool dell'hop successivo come pool di Lync Server 2013. In un ambiente Unito, sia il pool di Office Communications Server legacy che il pool di Lync Server 2013 vengono visualizzati nell'elenco a discesa. La selezione del pool legacy *non* è supportata.
 
 <div>
 
