@@ -1,8 +1,8 @@
 ---
 title: Configurare i client per la migrazione
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Questo argomento contiene le procedure consigliate per la distribuzione del client che è necessario eseguire prima di eseguire la migrazione a Skype for Business Server 2019. Queste modifiche alla configurazione devono essere eseguite su Lync Server 2013 o su Skype for Business Server 2015.
-ms.openlocfilehash: ad3ed4f34409b5ba730d79c24db65092802572db
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: fd630898d064c8ba079f87ce571e73de8cf0aaf9
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "41986091"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44754066"
 ---
 # <a name="configure-clients-for-migration"></a>Configurare i client per la migrazione
 

@@ -1,8 +1,8 @@
 ---
 title: Eseguire il backup di sistemi e dati
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 manager: serdars
 audience: End User
 ms.topic: quickstart
@@ -11,16 +11,16 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: d61fddc1-98d4-4577-a371-33f9e221288c
-description: Prima di iniziare la migrazione, eseguire un backup completo del sistema e documentare il sistema esistente, incluso un inventario degli account utente assegnati a ogni pool, in modo da poterlo ripristinare se necessario. Sono disponibili più strumenti e programmi per eseguire il backup e il ripristino di dati, impostazioni e sistemi.
-ms.openlocfilehash: 4a8e62fe75424f2d8fcb0d0c6af10c54c9339b55
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Prima di iniziare la migrazione, eseguire un backup completo del sistema e documentare il sistema esistente, incluso un inventario degli account utente ospitati in ogni pool, in modo da poterlo ripristinare se necessario. Sono disponibili diversi strumenti e programmi per eseguire il backup e il ripristino di dati, impostazioni e sistemi.
+ms.openlocfilehash: 541eb350d8dbf79875e36f468b18ccf8ac49b969
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41813934"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44752988"
 ---
 # <a name="back-up-systems-and-data"></a>Eseguire il backup di sistemi e dati
 
-Prima di iniziare la migrazione, eseguire un backup completo del sistema e documentare il sistema esistente, incluso un inventario degli account utente ospitati in ogni pool, in modo da poterlo ripristinare se necessario. Sono disponibili più strumenti e programmi per eseguire il backup e il ripristino di dati, impostazioni e sistemi.
+Prima di iniziare la migrazione, eseguire un backup completo del sistema e documentare il sistema esistente, incluso un inventario degli account utente ospitati in ogni pool, in modo che sia possibile ripristinare il rollback se necessario. Sono disponibili diversi strumenti e programmi per eseguire il backup e il ripristino di dati, impostazioni e sistemi.
 
-Per informazioni dettagliate e procedure, vedere procedure di backup e ripristino per la versione in esecuzione. 
+Per informazioni dettagliate e procedure, vedere procedure di backup e ripristino per la versione. 

@@ -1,8 +1,8 @@
 ---
-title: Fase 7 completamento delle attività successive alla migrazione
+title: Fase 7 completare le attività successive alla migrazione
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -10,19 +10,19 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Negli argomenti di questa sezione vengono descritte le attività che è necessario eseguire dopo aver completato la migrazione a Skype for Business Server 2019.
-ms.openlocfilehash: 72b89831f2b3e0811e4dce810ccad9f02e35424f
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Negli argomenti di questa sezione vengono descritte le attività che dovranno essere eseguite dopo aver completato la migrazione a Skype for Business Server 2019.
+ms.openlocfilehash: c0c5c73212ab6f5ecb85383032ea9bdc97703eee
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41813114"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44752298"
 ---
 # <a name="phase-7-complete-post-migration-tasks"></a>Fase 7: completare le attività successive alla migrazione
 
-Negli argomenti di questa sezione vengono descritte le attività che è necessario eseguire dopo aver completato la migrazione a Skype for Business Server 2019.
+Negli argomenti di questa sezione vengono descritte le attività che dovranno essere eseguite dopo aver completato la migrazione a Skype for Business Server 2019.
   
-## <a name="in-this-section"></a>In questa sezione
+## <a name="in-this-section"></a>Contenuto della sezione
 
 - [Eseguire la migrazione di riunioni e di contenuto di riunioni esistenti](migrate-existing-meetings-and-meeting-content.md)
     
@@ -40,7 +40,7 @@ Negli argomenti di questa sezione vengono descritte le attività che è necessar
     
 - [Configurare i server applicazioni attendibili](configure-trusted-application-servers.md)
     
-- [Distribuire i client di Skype for Business Server 2019](deploy-clients.md)
+- [Distribuire i client Skype for Business Server 2019](deploy-clients.md)
     
 - [Connettere un Survivable Branch Appliance](connect-a-survivable-branch-appliance.md)
     

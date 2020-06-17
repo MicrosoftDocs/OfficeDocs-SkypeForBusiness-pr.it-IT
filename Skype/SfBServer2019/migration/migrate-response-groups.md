@@ -1,8 +1,8 @@
 ---
 title: Eseguire la migrazione di Response Group
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Dopo lo spostamento degli utenti nei pool di Skype for Business Server 2019, è possibile eseguire la migrazione dei Response Group. La migrazione dei Response Group include i gruppi di agenti di copia, le code, i flussi di lavoro, i file audio e gli oggetti contatto del gruppo di risposta in movimento dalla distribuzione legacy al pool di Skype for Business Server 2019. Dopo aver eseguito la migrazione dei gruppi di risposta legacy, le chiamate ai Response Group vengono gestite dall'applicazione Response gruppo nel pool Skype for Business Server 2019. Le chiamate ai Response Group non sono più gestite dal pool legacy.
-ms.openlocfilehash: 2d439462fa103cc16fd7ae70b79364be7d79803a
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 03b0ffd900b5d7c23dd6ff680d56c0c4db53d8dc
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42016107"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44752678"
 ---
 # <a name="migrate-response-groups"></a>Eseguire la migrazione di Response Group
 
@@ -40,7 +40,7 @@ Dopo aver eseguito la migrazione dei Response Group, è necessario utilizzare il
 Quando si esegue la migrazione dei Response Group, i Response Group Legacy non vengono rimossi. Quando si gestiscono i Response Group dopo la migrazione usando il pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell, è possibile visualizzare sia i Response Group Legacy che i Response Group di Skype for Business Server 2019. È consigliabile applicare gli aggiornamenti solo ai Response Group di Skype for Business Server 2019. I Response Group Legacy vengono mantenuti solo per scopi di rollback. 
   
 > [!CAUTION]
-> Dopo che la migrazione è stata completata e i nuovi Response Group sono stati creati, il pannello di controllo di Skype for Business Server e Skype for Business Server Management Shell visualizzeranno le versioni legacy e Skype for Business Server 2019 di ogni risposta gruppo. Non utilizzare il pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell per rimuovere i Response Group Legacy. Se si rimuove uno, il Response Group corrispondente che è stato creato durante la migrazione smetterà di funzionare. I Response Group Legacy verranno rimossi quando si rimuove la Commissione del pool legacy. 
+> Dopo che la migrazione è stata completata e i nuovi Response Group sono stati creati, il pannello di controllo di Skype for Business Server e Skype for Business Server Management Shell visualizzeranno le versioni legacy e Skype for Business Server 2019 di ogni Response Group. Non utilizzare il pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell per rimuovere i Response Group Legacy. Se si rimuove uno, il Response Group corrispondente che è stato creato durante la migrazione smetterà di funzionare. I Response Group Legacy verranno rimossi quando si rimuove la Commissione del pool legacy. 
   
 > [!IMPORTANT]
 > È consigliabile rimuovere i dati dalla distribuzione precedente solo dopo la rimozione del pool. È inoltre consigliabile esportare i Response Group subito dopo la migrazione. Se un Response Group Legacy deve essere rimosso, è possibile ripristinare i Response Group dal backup per ottenere i Response Group di Skype for Business Server 2019 in esecuzione di nuovo. 

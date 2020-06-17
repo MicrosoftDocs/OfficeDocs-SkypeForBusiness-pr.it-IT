@@ -1,8 +1,8 @@
 ---
 title: Distribuire i client
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 manager: serdars
 audience: End User
 ms.topic: quickstart
@@ -10,16 +10,16 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Per informazioni dettagliate, vedere Distribuzione di client e dispositivi in Skype for Business Server 2019 nella documentazione relativa alla distribuzione.
-ms.openlocfilehash: a833f9b6243924b7cb669ac6e9d68c517e9258e2
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Per informazioni dettagliate, vedere Deploying clients and Devices in Skype for Business Server 2019 nella documentazione relativa alla distribuzione.
+ms.openlocfilehash: 2263a99d5b6da4d3a354e229c83ff4d6c2e445d6
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41813694"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44753916"
 ---
-# <a name="deploy-skype-for-business-server-clients"></a>Distribuire client di Skype for Business Server
+# <a name="deploy-skype-for-business-server-clients"></a>Distribuire i client di Skype for Business Server
 
-Per informazioni dettagliate, vedere [distribuire client per Skype for Business Server](../../SfbServer/deploy/deploy-clients/deploy-clients.md) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate, vedere [deploy clients for Skype for Business Server](../../SfbServer/deploy/deploy-clients/deploy-clients.md) nella documentazione relativa alla distribuzione.
   
 

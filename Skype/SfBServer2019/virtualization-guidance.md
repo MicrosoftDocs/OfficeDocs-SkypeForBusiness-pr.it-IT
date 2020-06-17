@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: 'Riepilogo: informazioni sul supporto per la virtualizzazione di Skype for Business Server 2019.'
-ms.openlocfilehash: a01f529d80e84df3f7ca844696738b079f78df26
-ms.sourcegitcommit: f9db7effbb1e56484686afe4724cc3b73380166d
+ms.openlocfilehash: b4524b1284a85e7ab372b415d45c2005f8212887
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "44565955"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755810"
 ---
 # <a name="virtualization-support-for-skype-for-business-server-2019"></a>Supporto per la virtualizzazione di Skype for Business Server 2019
 
@@ -42,3 +42,13 @@ Per le hypervisor di terze parti, è necessario un hypervisor che ha superato il
 
 - Vedere le [versioni di Windows Server 2016](https://www.windowsservercatalog.com/results.aspx?&bCatID=1521&cpID=0&avc=86&ava=88&avt=0&avq=0&OR=1&PGS=25) nell'elenco SVVP.
 - Vedere le [versioni di Windows Server 2019](https://www.windowsservercatalog.com/results.aspx?&bCatID=1521&cpID=0&avc=86&ava=130&avt=0&avq=0&OR=1&PGS=25) nell'elenco SVVP.
+
+## <a name="stress-and-performance-tool"></a>Strumento di stress e prestazioni
+
+Lo strumento per lo stress e le prestazioni di Skype for Business Server 2019 include strumenti che semplificano la pianificazione della capacità per Skype for Business Server 2019. Lo strumento di supporto per la sollecitazione e le prestazioni di Skype for Business Server 2019 consente di:
+
+- Semplificare la pianificazione dell'hardware per Skype for Business Server 2019
+- Offrire maggiori informazioni e procedure consigliate per l'ottimizzazione delle prestazioni
+- Misurare le prestazioni delle distribuzioni di Skype for Business Server 2019
+ 
+È possibile scaricare lo strumento da [qui](https://www.microsoft.com/download/details.aspx?id=101447).

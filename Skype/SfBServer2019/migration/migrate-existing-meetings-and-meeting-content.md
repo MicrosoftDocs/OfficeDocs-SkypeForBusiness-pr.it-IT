@@ -1,8 +1,8 @@
 ---
 title: Eseguire la migrazione di riunioni e di contenuto di riunioni esistenti
 ms.reviewer: ''
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 manager: serdars
 audience: ITPro
 ms.topic: quickstart
@@ -10,24 +10,24 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: "Quando si passa da un account utente a un server Skype for Business Server 2019, vengono spostate le informazioni seguenti con l'account utente seguente:"
-ms.openlocfilehash: 6394ebf798560ce5a13fe7ba931076364257decc
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: "Quando un account utente viene spostato da un server Skype for Business Server 2019, le informazioni seguenti vengono spostate con l'account utente seguente:"
+ms.openlocfilehash: 6513f581f55028ec28d4cf05f1f1b3df37c49e65
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41813474"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44752688"
 ---
 # <a name="migrate-existing-meetings-and-meeting-content"></a>Eseguire la migrazione di riunioni e di contenuto di riunioni esistenti
 
-Quando un account utente viene spostato in un server di Skype for Business Server 2019, le informazioni seguenti vengono spostate con l'account utente seguente:
+Quando un account utente viene spostato in un server Skype for Business Server 2019, le informazioni seguenti vengono spostate con l'account utente seguente:
   
-- **Riunioni già programmate dall'utente**. Questo include lo spostamento delle directory di conferenza e dei dati di conferenza.
+- **Le riunioni già pianificate dall'utente**. Vengono spostate anche le directory e i dati delle conferenze.
     
-- **Pin (Personal Identification Number) dell'utente**. Il PIN corrente dell'utente continuerà a funzionare finché non scade o l'utente richiede un nuovo PIN.
+- **Codice PIN (Personal Identification Number) dell'utente**. Il PIN corrente dell'utente continua a funzionare fino alla scadenza o l'utente richiede un nuovo PIN.
     
-Le informazioni dell'account utente seguenti non vengono spostati nel nuovo server.
+Le seguenti informazioni sull'account utente non vengono spostate nel nuovo server.
   
-- **Contenuto della riunione**. Per trasferire il contenuto condiviso durante una riunione, ad esempio PowerPoint, lavagna, allegati o dati del sondaggio, usa il parametro **-MoveConferenceData** come parte del cmdlet **Move-CsUser** . 
+- **Contenuto delle riunioni**. Per spostare il contenuto condiviso durante una riunione, ad esempio PowerPoint, lavagna, allegati o dati di polling, utilizzare il parametro **-MoveConferenceData** come parte del cmdlet **Move-CsUser** . 
     
 
