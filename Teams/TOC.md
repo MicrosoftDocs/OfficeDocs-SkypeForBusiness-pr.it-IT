@@ -136,6 +136,7 @@
 ## [E-mail inviate automaticamente agli utenti in caso di modifica delle impostazioni](emails-sent-to-users-when-their-settings-change-in-teams.md) 
 ## [Consentire agli utenti di registrare il loro nome quando partecipano a una riunione](enable-users-to-record-their-name-when-they-join-a-meeting-in-teams.md)
 ## [Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni](turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams.md)
+## [Opzione Alza la mano nelle riunioni di Teams](raise-hand-meetings.md)
 ## [Riunioni di Teams in browser non supportati](unsupported-browsers.md)
 ## [Configurare la condivisione desktop in Teams](configure-desktop-sharing.md)
 ## [Registrazione delle riunioni cloud di Teams](cloud-recording.md)
