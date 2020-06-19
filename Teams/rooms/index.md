@@ -4,113 +4,42 @@ ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
-layout: LandingPage
 audience: ITPro
-ms.topic: landing-page
+ms.topic: article
+feedback_system: None
 ms.service: msteams
 f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 description: Considerazioni relative alla pianificazione per la distribuzione delle sale di Microsoft teams e su come distribuire e gestire il sistema.
-ms.openlocfilehash: 0a418f6fcca9a122a7e3e6aaca123562f2b6fc56
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 2cba74f72016b51446f7721041039faedd865866
+ms.sourcegitcommit: 18838ed1da69ab4668c903bfcafd4ad2fa02639d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905428"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773381"
 ---
-<h1>Microsoft Teams Rooms</h1>
-<ul class="panelContent cardsW cols cols2">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p>Trasforma gli spazi delle riunioni che vanno dalle piccole aree di calco alle ampie sale riunioni con un'esperienza di Team collaborativa ricca che&#39;semplice da usare, distribuire e gestire. </p>
-                        <p>Avviare le riunioni in tempo con l'aggiunta di un tocco, quindi proiettare istantaneamente la visualizzazione nella sala e condividerla con i partecipanti remoti. </p>
-                        <p>Selezionare il sistema giusto e le periferiche audio video da uno dei nostri partner: Yealink, Logitech, Crestron, Polycom, Lenovo e HP.</p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/srs-room.jpg" alt="A conference table with Microsoft Teams Rooms equipment" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-plan">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/tasks-teams.svg" alt="An icon that represents planning" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Piano</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-deploy">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/deploy-teams.svg" alt="An icon that represents deployment" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Distribuzione</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-manage">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/toolbox.svg" alt="An icon that represents management" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Gestione</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+# <a name="microsoft-teams-rooms"></a><span data-ttu-id="4f874-103">Microsoft Teams Rooms</span><span class="sxs-lookup"><span data-stu-id="4f874-103">Microsoft Teams Rooms</span></span>
+
+<span data-ttu-id="4f874-104">Trasforma gli spazi delle riunioni dalle piccole aree di calco alle ampie sale riunioni con un'esperienza di teams ricca e collaborativa semplice da usare, distribuire e gestire.</span><span class="sxs-lookup"><span data-stu-id="4f874-104">Transform meeting spaces ranging from small huddle areas to large conference rooms with a rich, collaborative Teams experience that's simple to use, deploy, and manage.</span></span>
+
+<span data-ttu-id="4f874-105">Avviare le riunioni in tempo con l'aggiunta di un tocco, quindi proiettare istantaneamente la visualizzazione nella sala e condividerla con i partecipanti remoti.</span><span class="sxs-lookup"><span data-stu-id="4f874-105">Start meetings on time with one-touch join, then instantly project to the display in the room and share to remote participants.</span></span>
+
+<span data-ttu-id="4f874-106">Selezionare il sistema giusto e le periferiche audio video da uno dei nostri partner: Yealink, Logitech, Crestron, Polycom, Lenovo e HP.</span><span class="sxs-lookup"><span data-stu-id="4f874-106">Select the right system and audio video peripherals from one of our partners: Yealink, Logitech, Crestron, Polycom, Lenovo, and HP.</span></span>
+
+:::image type="content" source="../media/srs-room.jpg" alt-text="Una tabella di conferenza con Microsoft teams Rooms Equipment":::
+
+|               |               |               |               |               |               |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| ![Simbolo di elenco](https://docs.microsoft.com/office/media/icons/list-123-teams.svg)  | <span data-ttu-id="4f874-109">**[Piano](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-plan)**</span><span class="sxs-lookup"><span data-stu-id="4f874-109">**[Plan](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-plan)**</span></span>  | ![Simbolo di distribuzione](https://docs.microsoft.com/office/media/icons/deploy-teams.svg)  | <span data-ttu-id="4f874-111">**[Distribuzione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-deploy)**</span><span class="sxs-lookup"><span data-stu-id="4f874-111">**[Deploy](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-deploy)**</span></span>  | ![Strumenti/chiave](https://docs.microsoft.com/office/media/icons/toolbox.svg)  | <span data-ttu-id="4f874-113">**[Gestione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-manage)**</span><span class="sxs-lookup"><span data-stu-id="4f874-113">**[Manage](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-manage)**</span></span> |
+
+<br>
 
 > [!NOTE]
-> Microsoft teams Rooms è progettato per l'uso con Microsoft teams, Skype for business online, Skype for Business Server 2019 o Skype for Business Server 2015.  <br><br>Non è previsto che le piattaforme precedenti come Lync Server 2013 funzionino con le sale di Microsoft teams.
+> <span data-ttu-id="4f874-114">Microsoft teams Rooms è progettato per l'uso con Microsoft teams, Skype for business online, Skype for Business Server 2019 o Skype for Business Server 2015.</span><span class="sxs-lookup"><span data-stu-id="4f874-114">Microsoft Teams Rooms is intended for use with Microsoft Teams, Skype for Business Online, Skype for Business Server 2019, or Skype for Business Server 2015.</span></span>  <br><br><span data-ttu-id="4f874-115">Non è previsto che le piattaforme precedenti come Lync Server 2013 funzionino con le sale di Microsoft teams.</span><span class="sxs-lookup"><span data-stu-id="4f874-115">Earlier platforms like Lync Server 2013 aren't expected to work with Microsoft Teams Rooms.</span></span>
 
-Questi articoli sono destinati agli utenti che hanno il compito di pianificare, distribuire e gestire questi dispositivi e non per quelli del sistema. Gli utenti saranno più interessati alla guida di Microsoft teams Rooms [online](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).
+<span data-ttu-id="4f874-116">Questi articoli sono destinati agli utenti che hanno il compito di pianificare, distribuire e gestire questi dispositivi e non per quelli del sistema.</span><span class="sxs-lookup"><span data-stu-id="4f874-116">These articles are intended for people tasked with planning, deploying, and managing these devices, and not for the users of the system.</span></span> <span data-ttu-id="4f874-117">Gli utenti saranno più interessati alla guida di Microsoft teams Rooms [online](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).</span><span class="sxs-lookup"><span data-stu-id="4f874-117">Users will be more interested in the Microsoft Teams Rooms [online help](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).</span></span>
 
 > [!NOTE]
-> [Skype room System](../rooms/lrs-migration.md) (in precedenza Lync room System) e Microsoft teams Rooms sono prodotti diversi con diverse dipendenze e procedure di distribuzione.
+> <span data-ttu-id="4f874-118">[Skype room System](../rooms/lrs-migration.md) (in precedenza Lync room System) e Microsoft teams Rooms sono prodotti diversi con diverse dipendenze e procedure di distribuzione.</span><span class="sxs-lookup"><span data-stu-id="4f874-118">[Skype Room System](../rooms/lrs-migration.md) (formerly Lync Room System) and Microsoft Teams Rooms are different products with different dependencies and deployment procedures.</span></span>
