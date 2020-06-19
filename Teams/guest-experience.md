@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 20fc95f14782057c6c493d9835fd17a7339018ca
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: b34c58bc043f67d1a60f3b6c30fef7f5cc693b08
+ms.sourcegitcommit: 5895550d9d19a619d90af3381530ca3017e4b520
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44637275"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44799797"
 ---
 <a name="what-the-guest-experience-is-like"></a>Com'è l'esperienza guest
 =================================
@@ -32,9 +32,9 @@ Quando un ospite è invitato a partecipare a un team, riceve un messaggio di pos
     
 ![Screenshot che mostra un esempio di messaggio di posta elettronica di benvenuto](media/guest-experience-image1.png)
     
-Tutti i membri del team vedono un messaggio nel thread del canale che annuncia che il proprietario del team ha aggiunto un Guest e fornisce il nome dell'ospite. Tutti gli utenti del team possono identificare facilmente chi è ospite. Come illustrato nello screenshot seguente di un team di esempio, un banner indica "questo team ha Guest" e viene visualizzata un'etichetta **(Guest)** accanto al nome di ogni Guest.
-    
-![Screenshot che Mostra gli utenti Guest notifica banner](media/guest-experience-image2.png "Lo screenshot mostra una parte del canale di marketing per Northwind Traders, con la notifica nel banner superiore che indica che il team ha GUEST e gli utenti che sono ospiti sono identificati con l'ospite di Word accanto al nome.")
+Tutti i membri del team vedono un messaggio nel thread del canale che annuncia che il proprietario del team ha aggiunto un Guest e fornisce il nome dell'ospite. Tutti gli utenti del team possono identificare facilmente chi è ospite. Un tag nell'angolo in alto a destra del thread del canale indica il numero di Guest nel team e viene visualizzata un'etichetta **(Guest)** accanto al nome di ogni Guest.
+
+![Schermata che mostra il contrassegno che indica il numero di Guest nel team](media/guest-experience-image2.png)
 
 Vedere questi video sull'esperienza Guest in teams:
 - [Partecipare a un team come Guest](https://support.office.com/article/join-a-team-as-a-guest-928d1eef-61e2-49ec-b754-c2fe86b34824)

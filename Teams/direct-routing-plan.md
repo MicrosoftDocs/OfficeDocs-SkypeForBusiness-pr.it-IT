@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente al sistema telefonico Microsoft.
-ms.openlocfilehash: bd221be2174a538956667e0b113d459f2293882f
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 1d0dff52258cfae9776fde57b5a30ff60793b902
+ms.sourcegitcommit: 5895550d9d19a619d90af3381530ca3017e4b520
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691232"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44799827"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -49,7 +49,7 @@ Microsoft offre anche soluzioni vocali all-in-the-cloud, ad esempio il piano per
 
 Il routing diretto supporta inoltre gli utenti che dispongono della licenza aggiuntiva per il piano di chiamate Microsoft. Per altre informazioni, vedere [sistema telefonico e piani per chiamate](calling-plan-landing-page.md). 
 
-Con il routing diretto, quando gli utenti partecipano a una conferenza pianificata, il numero di accesso esterno viene fornito da Microsoft Audio Conferencing Service, che richiede una licenza appropriata.  Quando si effettua la chiamata in uscita, il servizio di audioconferenza Microsoft inserisce le chiamate usando le funzionalità di chiamata online, che richiedono una licenza appropriata. (Si noti che la chiamata in uscita non viene instradata tramite routing diretto). Per altre informazioni, vedere [riunioni online con teams](https://products.office.com/microsoft-teams/online-meeting-solutions). 
+Con il routing diretto, quando gli utenti partecipano a una conferenza pianificata, il numero di accesso esterno viene fornito da Microsoft Audio Conferencing Service, che richiede una licenza appropriata.  Quando si effettua la chiamata in uscita, il servizio di audioconferenza Microsoft inserisce le chiamate usando le funzionalità di chiamata online, che richiedono una licenza appropriata. Nota Se un utente non ha una licenza Microsoft per i servizi di audioconferenza, le route di chiamata tramite routing diretto. Per altre informazioni, vedere [riunioni online con teams](https://products.office.com/microsoft-teams/online-meeting-solutions). 
  
 La pianificazione della distribuzione di routing diretto è la chiave per un'implementazione corretta. In questo articolo vengono illustrati i requisiti relativi a infrastruttura e licenze e vengono fornite informazioni sulla connettività SBC: 
 
@@ -67,7 +67,7 @@ Per informazioni dettagliate sulla configurazione del routing diretto, vedere [c
 ## <a name="infrastructure-requirements"></a>Requisiti per l'infrastruttura
 I requisiti di infrastruttura per i SBCs, i domini e altri requisiti di connettività di rete supportati per distribuire il routing diretto sono elencati nella tabella seguente:  
 
-|**Requisito dell'infrastruttura**|**Sono necessari i seguenti elementi**|
+|Requisito dell'infrastruttura|Sono necessari i seguenti elementi|
 |:--- |:--- |
 |SBC (Session Border Controller)|Un SBC supportato. Per altre informazioni, Vedi [SBCS supportate](#supported-session-border-controllers-sbcs).|
 |Trunk di telefonia connesso a SBC|Uno o più trunk di telefonia connessi a SBC. Da una parte, il SBC si connette al sistema telefonico Microsoft tramite il routing diretto. SBC può anche connettersi a entità di telefonia di terze parti, come i PBX, gli adattatori per la telefonia analogica e così via. L'opzione di connettività PSTN connessa al SBC funzionerà. Per la configurazione dei trunk PSTN per il SBC, vedere i fornitori SBC o i provider trunk.|
@@ -136,7 +136,7 @@ Il nome di dominio SBC deve essere costituito da uno dei nomi registrati nei dom
 
 Nella tabella seguente sono illustrati alcuni esempi di nomi DNS registrati per il tenant, indipendentemente dal fatto che il nome possa essere usato come FQDN per SBC ed esempi di nomi FQDN validi:
 
-|**Nome DNS**|**Può essere usato per il nome di dominio completo SBC**|**Esempi di nomi FQDN**|
+|Nome DNS|Può essere usato per il nome di dominio completo SBC|Esempi di nomi FQDN|
 |:--- |:--- |:--- |
 contoso.com|Sì|**Nomi validi:**<br/>sbc1.contoso.com<br/>ssbcs15.contoso.com<br/>europe.contoso.com|
 |contoso.onmicrosoft.com|No|L'uso dei domini *. onmicrosoft.com non è supportato per i nomi SBC
@@ -257,7 +257,7 @@ Il nome FQDN sip.pstnhub.gov.teams.microsoft.us verrà risolto in uno degli indi
 - Office 365 GCC High
 - Office 365 DoD
 
-|**Traffico**|**Da**|**A**|**Porta di origine**|**Porta di destinazione**|
+|Traffico|Da|A|Porta di origine|Porta di destinazione|
 |:--- |:--- |:--- |:--- |:--- |
 |SIP/TLS|Proxy SIP|SBC|1024-65535|Definita in SBC (per Office 365 è necessario usare solo la porta 5061 di GCC High/DoD)|
 SIP/TLS|SBC|Proxy SIP|Definita nell'SBC|5061|
@@ -269,7 +269,7 @@ SBC esegue una query DNS per risolvere sip.pstnhub.microsoft.com. In base alla p
 
 La tabella seguente riepiloga le relazioni tra i centri dati primari, secondari e terziari:
 
-|**Se il data center principale è**|**EMEA**|**NOAM**|**ASIA**|
+|Se il data center principale è|EMEA|NOAM|ASIA|
 |:--- |:--- |:--- |:--- |
 |Centro dati secondario (sip2.pstnhub.microsoft.com)|NOI|UE|NOI|
 |Centro dati terziario (sip3.pstnhub.microsoft.com)|ASIA|ASIA|UE|
@@ -298,7 +298,7 @@ Il traffico multimediale passa da e verso un servizio separato nel cloud Microso
 ### <a name="port-range-applicable-to-all-environments"></a>Intervallo di porte (applicabile a tutti gli ambienti)
 L'intervallo di porte dei processori multimediali è illustrato nella tabella seguente: 
 
-|**Traffico**|**Da**|**A**|**Porta di origine**|**Porta di destinazione**|
+|Traffico|Da|A|Porta di origine|Porta di destinazione|
 |:--- |:--- |:--- |:--- |:--- |
 |UDP/SRTP|Media processor|SBC|3478-3481 e 49152-53247|Definita nell'SBC|
 |UDP/SRTP|SBC|Media processor|Definita nell'SBC|3478-3481 e 49152-53247|

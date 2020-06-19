@@ -1,7 +1,7 @@
 ---
 title: Informazioni su come configurare le telecamere di contenuto-Microsoft Teams
-ms.author: kenwith
-author: kenwith
+ms.author: serdars
+author: serdarsoysal
 ms.reviewer: sohailta
 manager: serdars
 audience: ITPro
@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 ms.custom: seo-marvel-mar2020
 description: Usare una videocamera di contenuto in una sala Microsoft teams, che interagisce con il software di elaborazione delle immagini per consentire ai relatori di disegnare su una lavagna analogica.
-ms.openlocfilehash: ecd9c20c7f479c548d0ab9b4c3db8bbec945e79f
-ms.sourcegitcommit: 25e70de7c943e22fe6ac6e8d6b4353ca68f81f83
+ms.openlocfilehash: e2aa115f1ddac9c7ae0eb8b247b204429f7ed1d4
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2020
-ms.locfileid: "43157809"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756897"
 ---
 # <a name="content-cameras"></a>Videocamere di contenuto
 
@@ -87,7 +87,7 @@ In alternativa, fare riferimento al Marketplace di Microsoft teams Devices per i
 
 Dopo aver installato la videocamera nella sala, configurarla nella console Microsoft teams rooms della sala:
 
-1. Selezionare **Settings** ![l'icona](../media/70f1b43f-16d6-4172-9139-71d845c4ed5c.png)impostazioni impostazioni, accedere come amministratore e selezionare **Impostazioni dispositivo**.
+1. Selezionare **Settings** l' ![ icona impostazioni impostazioni ](../media/70f1b43f-16d6-4172-9139-71d845c4ed5c.png) , accedere come amministratore e selezionare **Impostazioni dispositivo**.
 2. Nella sezione **impostazioni predefinite fotocamera** selezionare la fotocamera del contenuto e verificare che l'opzione **miglioramenti contenuto** sia selezionata.
 3. Opzionale Se la fotocamera è stata installata a testa in giù perché la videocamera è stata montata dal soffitto, selezionare l'opzione **ruota contenuto camera 180 °** .
 4. Selezionare **Salva ed esci**.
@@ -100,6 +100,6 @@ Puoi anche modificare queste impostazioni in remoto usando un [file di configura
 
 [Gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML](xml-config-file.md)
 
-[Requisiti di Microsoft teams rooms](requirements.md)
+[Requisiti per Microsoft Teams Rooms](requirements.md)
 
 

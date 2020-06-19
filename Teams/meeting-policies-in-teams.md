@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: ae1b73c2aefecb64dfe18e0fda0aa880f3962aa7
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: d14c32357101ef2fe002394046f707445b7c10a6
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44690942"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756917"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -420,9 +420,9 @@ Al momento, è possibile usare PowerShell solo per impostare questo criterio. È
 Per specificare il componente aggiuntivo per la riunione che si desidera sia disponibile per gli utenti, impostare il parametro **PreferredMeetingProviderForIslandsMode** nel modo seguente:
 
 - Imposta il parametro su **TeamsAndSfB** per abilitare sia il componente aggiuntivo riunioni teams che Skype for business in Outlook. Questo è il valore predefinito.
-- Imposta il parametro su **TeamsOnly** per abilitare solo il componente aggiuntivo riunione teams in Outlook. Questa impostazione dei criteri garantisce che tutte le riunioni future abbiano un collegamento per la riunione di teams. Non esegue la migrazione dei collegamenti alle riunioni di Skype for business esistenti in teams. Questa impostazione dei criteri non influisce sulla presenza, la chat, le chiamate PSTN o altre funzionalità di Skype for business, quindi gli utenti continueranno a usare Skype for business per queste funzionalità.
+- Imposta il parametro su **Teams** per abilitare solo il componente aggiuntivo riunione teams in Outlook. Questa impostazione dei criteri garantisce che tutte le riunioni future abbiano un collegamento per la riunione di teams. Non esegue la migrazione dei collegamenti alle riunioni di Skype for business esistenti in teams. Questa impostazione dei criteri non influisce sulla presenza, la chat, le chiamate PSTN o altre funzionalità di Skype for business, quindi gli utenti continueranno a usare Skype for business per queste funzionalità.
 
-  Se si imposta il parametro su **TeamsOnly**e quindi si torna a **TeamsAndSfB**, entrambi i componenti aggiuntivi riunione sono abilitati. Tuttavia, tieni presente che i collegamenti alle riunioni di join di teams esistenti non verranno migrati in Skype for business. Solo le riunioni di Skype for business programmate dopo la modifica avranno un collegamento a una riunione Skype for business.
+  Se si imposta il parametro su **Teams**e quindi si torna a **TeamsAndSfB**, entrambi i componenti aggiuntivi per le riunioni sono abilitati. Tuttavia, tieni presente che i collegamenti alle riunioni di join di teams esistenti non verranno migrati in Skype for business. Solo le riunioni di Skype for business programmate dopo la modifica avranno un collegamento a una riunione Skype for business.
 
 ## <a name="meeting-policy-settings---video-filters-mode"></a>Impostazioni dei criteri riunione-modalità filtri video
 

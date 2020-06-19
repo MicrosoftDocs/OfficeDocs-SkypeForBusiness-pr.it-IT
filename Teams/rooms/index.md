@@ -4,108 +4,37 @@ ms.reviewer: ''
 ms.author: v-lanac
 author: lanachin
 manager: serdars
-layout: LandingPage
 audience: ITPro
-ms.topic: landing-page
+ms.topic: article
+feedback_system: None
 ms.service: msteams
 f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 description: Considerazioni relative alla pianificazione per la distribuzione delle sale di Microsoft teams e su come distribuire e gestire il sistema.
-ms.openlocfilehash: 0a418f6fcca9a122a7e3e6aaca123562f2b6fc56
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 2cba74f72016b51446f7721041039faedd865866
+ms.sourcegitcommit: 18838ed1da69ab4668c903bfcafd4ad2fa02639d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905428"
+ms.lasthandoff: 06/17/2020
+ms.locfileid: "44773381"
 ---
-<h1>Microsoft Teams Rooms</h1>
-<ul class="panelContent cardsW cols cols2">
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardText">
-                        <p>Trasforma gli spazi delle riunioni che vanno dalle piccole aree di calco alle ampie sale riunioni con un'esperienza di Team collaborativa ricca che&#39;semplice da usare, distribuire e gestire. </p>
-                        <p>Avviare le riunioni in tempo con l'aggiunta di un tocco, quindi proiettare istantaneamente la visualizzazione nella sala e condividerla con i partecipanti remoti. </p>
-                        <p>Selezionare il sistema giusto e le periferiche audio video da uno dei nostri partner: Yealink, Logitech, Crestron, Polycom, Lenovo e HP.</p>
-                        <p></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="../media/srs-room.jpg" alt="A conference table with Microsoft Teams Rooms equipment" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-plan">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/tasks-teams.svg" alt="An icon that represents planning" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Piano</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-deploy">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/deploy-teams.svg" alt="An icon that represents deployment" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Distribuzione</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-manage">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/toolbox.svg" alt="An icon that represents management" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Gestione</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+# <a name="microsoft-teams-rooms"></a>Microsoft Teams Rooms
+
+Trasforma gli spazi delle riunioni dalle piccole aree di calco alle ampie sale riunioni con un'esperienza di teams ricca e collaborativa semplice da usare, distribuire e gestire.
+
+Avviare le riunioni in tempo con l'aggiunta di un tocco, quindi proiettare istantaneamente la visualizzazione nella sala e condividerla con i partecipanti remoti.
+
+Selezionare il sistema giusto e le periferiche audio video da uno dei nostri partner: Yealink, Logitech, Crestron, Polycom, Lenovo e HP.
+
+:::image type="content" source="../media/srs-room.jpg" alt-text="Una tabella di conferenza con Microsoft teams Rooms Equipment":::
+
+|               |               |               |               |               |               |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| ![Simbolo di elenco](https://docs.microsoft.com/office/media/icons/list-123-teams.svg)  | **[Piano](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-plan)**  | ![Simbolo di distribuzione](https://docs.microsoft.com/office/media/icons/deploy-teams.svg)  | **[Distribuzione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-deploy)**  | ![Strumenti/chiave](https://docs.microsoft.com/office/media/icons/toolbox.svg)  | **[Gestione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-manage)** |
+
+<br>
 
 > [!NOTE]
 > Microsoft teams Rooms è progettato per l'uso con Microsoft teams, Skype for business online, Skype for Business Server 2019 o Skype for Business Server 2015.  <br><br>Non è previsto che le piattaforme precedenti come Lync Server 2013 funzionino con le sale di Microsoft teams.

@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
-ms.openlocfilehash: 769fd2b489d65b276823abd7c3ff8f579100617a
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 54fd36bd78f1d9ea263fe3e79a3d12a08741c389
+ms.sourcegitcommit: 8acc2ed4cb807f941a6526ec8aad562536f45aa6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44637935"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44804690"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -44,7 +44,10 @@ Un'icona a forma di lucchetto indica un canale privato. Solo i membri dei canali
 
 Attualmente, i canali privati supportano i connettori e le schede, ad eccezione di Stream, Planner e Forms. Stiamo lavorando per fornire un supporto completo delle app per i canali privati, tra cui le estensioni per la messaggistica e i bot.
 
-Ogni team può avere un massimo di 30 canali privati e ogni canale privato può avere un massimo di 250 membri. Il limite di 30 canali privati si aggiunge al limite di 200 standard per ogni team.
+Ogni team può avere un massimo di 30 canali privati e ogni canale privato può avere un massimo di 250 membri. Il limite di 30 canali privati si aggiunge al limite di 200 standard per ogni team. 
+
+Quando si crea un team da un team esistente, non verranno copiati tutti i canali privati nel team esistente.
+
 
 > [!NOTE]
 > Vengono aggiunte continuamente funzionalità ai canali privati, ritornare per le informazioni più aggiornate relative ad app, riunioni di canale ed estensione dei canali privati per i team di grandi dimensioni.
@@ -55,12 +58,12 @@ Per determinare se un canale privato è la soluzione adeguata, valutare le doman
 
 |Esiste già un team che ha queste persone come membri?  |Il lavoro deve essere mantenuto privato rispetto agli altri utenti?  |Gli argomenti di discussione sono molteplici?  |Consiglio  |
 |---------|---------|---------|---------|
-|Sì      |Sì         |Sì         |Creare un canale privato nel team esistente o considerare la possibilità di creare canali privati dedicati per ogni argomento.         |
-|Sì     |Sì         |No         |Creare un canale privato nel team esistente.         |
+|Sì      |Sì         |Supporto per più paesi         |Creare un canale privato nel team esistente o considerare la possibilità di creare canali privati dedicati per ogni argomento.         |
+|Sì     |Sì         |Supporto per riunioni private con ID conferenza di riunione dinamici         |Creare un canale privato nel team esistente.         |
 |Sì     |No         |No         |Creare un canale nel team esistente.         |
 |No     |No         |No         |È consigliabile creare un nuovo team.         |
 |No     |No         |Sì         |È consigliabile creare un nuovo team e quindi, in base alla riservatezza di ogni argomento, creare canali standard o privati distinti per ogni argomento.         |
-|No     |Sì         |No         |Creare un nuovo team e prendere in considerazione la creazione di un canale privato.         |
+|No     |Sì         |Supporto per riunioni private con ID conferenza di riunione dinamici         |Creare un nuovo team e prendere in considerazione la creazione di un canale privato.         |
 
 Quando viene creato un canale privato, questo viene collegato al team padre e non può essere spostato in un altro team. Inoltre, i canali privati non possono essere convertiti in canali standard e viceversa.
 
@@ -70,9 +73,9 @@ Quando viene creato un canale privato, questo viene collegato al team padre e no
 
 Per impostazione predefinita, tutti i proprietari o i membri del team possono creare un canale privato. Gli utenti guest non possono crearli. La possibilità di creare canali privati può essere gestita a livello di team e a livello di organizzazione.
 
-> 1. Accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
+ 1. Accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
-> 2. Usare i [criteri](teams-policies.md) per controllare gli utenti dell'organizzazione che possono creare canali privati.
+ 2. Usare i [criteri](teams-policies.md) per controllare gli utenti dell'organizzazione che possono creare canali privati.
     Dopo aver impostato i criteri, i proprietari del team possono disattivare o attivare la possibilità per i membri di creare canali privati nella scheda **Impostazioni** di un team.
 
 La persona che crea un canale privato è il proprietario del canale privato e solo il proprietario del canale privato può aggiungere o rimuovere direttamente le persone da quest'ultimo. Il proprietario di un canale privato può aggiungere qualsiasi membro del team a un canale privato creato, inclusi gli utenti guest. I membri di un canale privato dispongono di uno spazio di conversazione sicuro e, quando vengono aggiunti nuovi membri, questi possono vedere tutte le conversazioni nel canale privato, anche quelle avvenute in precedenza.
@@ -136,7 +139,7 @@ Per informazioni su come gestire il ciclo di vita dei canali privati nell'organi
 
 ## <a name="private-channel-sharepoint-sites"></a>Siti di SharePoint del canale privato
 
-Ogni canale privato dispone di una raccolta siti di SharePoint ottimizzata per la condivisione di file e il provisioning rapido. La raccolta siti separata consente di garantire l'accesso ai file del canale privato solo ai membri del canale privato, diversamente dal sito del team in cui i proprietari del team hanno accesso a tutte le risorse della raccolta siti. Queste raccolte siti vengono create con una raccolta documenti per impostazione predefinita e possono essere facilmente migliorate per ottenere una raccolta siti completa tramite l'[interfaccia di gestione dei siti](https://support.office.com/article/Enable-or-disable-site-collection-features-A2F2A5C2-093D-4897-8B7F-37F86D83DF04). Ogni raccolta siti viene creata nella stessa area geografica della raccolta siti del team padre. Questi siti semplificati hanno un ID modello personalizzato, "TEAMCHANNEL#0", per semplificare la gestione con PowerShell e API Graph.  Per impostazione di progettazione, non sono visibili nell'interfaccia di amministrazione di SharePoint.
+Ogni canale privato ha una propria raccolta siti di SharePoint. La raccolta siti separata consente di garantire l'accesso ai file del canale privato solo ai membri del canale privato, diversamente dal sito del team in cui i proprietari del team hanno accesso a tutte le risorse della raccolta siti. Queste raccolte siti vengono create con una raccolta documenti per impostazione predefinita e possono essere facilmente migliorate per ottenere una raccolta siti completa tramite l'[interfaccia di gestione dei siti](https://support.office.com/article/Enable-or-disable-site-collection-features-A2F2A5C2-093D-4897-8B7F-37F86D83DF04). Ogni raccolta siti viene creata nella stessa area geografica della raccolta siti del team padre. Questi siti semplificati hanno un ID modello personalizzato, "TEAMCHANNEL#0", per semplificare la gestione con PowerShell e API Graph.  Per impostazione di progettazione, non sono visibili nell'interfaccia di amministrazione di SharePoint.
 
 Per ospitare un maggior numero di raccolte siti per tenant, il limite è stato aumentato da 500.000 a 2 milioni. Una raccolta siti di un canale privato sincronizza la classificazione dei dati ed eredita le autorizzazioni di accesso guest dalla raccolta siti del team padre.  L'appartenenza ai gruppi dei membri e di proprietari della raccolta siti viene mantenuta sincronizzata con quella ai canali privati in Teams. Le modifiche apportate all'appartenenza ai gruppi di membri o di proprietari in SharePoint Online verranno trasferite automaticamente all'appartenenza ai canali privati entro quattro ore. Negli scenari in cui alcuni utenti hanno l'esigenza di accedere ai documenti senza bisogno di accedere ai messaggi del canale privato, è possibile aggiungerli al gruppo Visitatori nel sito o a un nuovo gruppo distinto da quelli di Proprietari e Membri.
 

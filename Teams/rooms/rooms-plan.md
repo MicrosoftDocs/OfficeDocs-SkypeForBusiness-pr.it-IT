@@ -14,12 +14,12 @@ ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 ms.collection:
 - M365-collaboration
 description: Questo articolo illustra le considerazioni relative alla pianificazione per la distribuzione di Microsoft teams rooms, la nuova generazione di sistemi room Skype.
-ms.openlocfilehash: b28c310ab5c00040490d359cf6b79445f0d1cc95
-ms.sourcegitcommit: 3325fd9de57367e9dd60685d1fef096921441a76
+ms.openlocfilehash: 7b954b81d13addd4b8eb0c7bb5614f9e08f24251
+ms.sourcegitcommit: 8b172e9a0d0626c9a88998600d4b17c6c8cdadd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "43997307"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761464"
 ---
 # <a name="plan-microsoft-teams-rooms"></a>Pianificare le sale di Microsoft Teams
 
@@ -102,8 +102,8 @@ _Inventario di esempio/sala riunioni_
 
 | Sito  | Nome sala | Tipo di sala | Numero di persone  | In ambito? | Funzionalità della sala corrente       | Funzionalità future della sala     |
 |-----------|---------------|---------------|-----------------------|--------------|-------------------------------------|----------------------------------------------------------|
-| HQ di Londra | Curie         | Media.        | 6&ndash;12                  | Sì          | Vivavoce                        | 1 schermata, audio e video + presentazione<br>Accesso PSTN |
-| HQ di Sydney | Collina          | Grande         | 12&ndash;16                 | Sì          | Unità AV legacy, 1 schermata e fotocamera | 2 schermi, audio e video + presentazione<br>Accesso PSTN |
+| HQ di Londra | Curie         | Media.        | 6 &ndash; 12                  | Sì          | Vivavoce                        | 1 schermata, audio e video + presentazione<br>Accesso PSTN |
+| HQ di Sydney | Collina          | Grande         | 12 &ndash; 16                 | Sì          | Unità AV legacy, 1 schermata e fotocamera | 2 schermi, audio e video + presentazione<br>Accesso PSTN |
 
 ## <a name="device-selection"></a>Selezione del dispositivo 
 
@@ -124,10 +124,10 @@ _Esempio di modello di distribuzione di Microsoft teams Rooms per l'organizzazio
 
 | **Tipo di stanza/dimensione** | **Numero di persone**  | **Sistema Microsoft teams rooms** | **Periferiche**  | **Display (s)** |
 |----------------------|-----------------------|----------------------------------|-------------------------|-----------------|
-| Stato attiva 10' per 9'      | 2&ndash;4                   |                                  |                         |                 |
-| Piccolo 16' per 16'     | 4&ndash;6                   |                                  |                         |                 |
-| Media 18' per 20'    | 6&ndash;12                  |                                  |                         |                 |
-| Grande 15' da 32'     | 12&ndash;16                 |                                  |                         |                 |
+| Stato attiva 10' per 9'      | 2 &ndash; 4                   |                                  |                         |                 |
+| Piccolo 16' per 16'     | 4 &ndash; 6                   |                                  |                         |                 |
+| Media 18' per 20'    | 6 &ndash; 12                  |                                  |                         |                 |
+| Grande 15' da 32'     | 12 &ndash; 16                 |                                  |                         |                 |
 
 **Suggerimento PRO-** Ora è il momento ideale per iniziare a raccogliere informazioni sulla soluzione Microsoft teams Rooms che hai scelto.
 
@@ -150,7 +150,7 @@ L'organizzazione deve eseguire attività di monitoraggio, amministrazione e gest
 
 Molte organizzazioni hanno un team o un partner AV che gestisce le sale riunioni e i dispositivi. Questo team deve essere coinvolto nell'accettare chi gestirà i dispositivi Microsoft teams Rooms per il monitoraggio delle prestazioni e la distribuzione di aggiornamenti software e hotfix. 
 
-Si consideri la coda dell'helpdesk che instraderà le chiamate correlate a Microsoft teams Rooms֪ e offrirà una FAQ al team dell'helpdesk per comprendere meglio come usare le sale di Microsoft teams e i passaggi principali per la risoluzione dei problemi che possono eseguire. Un buon punto di partenza per le domande frequenti è la guida e il [supporto tecnico](known-issues.md)per gli [utenti](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) dell'organizzazione.
+Si consideri la coda dell'helpdesk che instraderà le chiamate correlate a Microsoft teams Rooms֪ e offrirà una FAQ al team dell'helpdesk per comprendere meglio come usare le sale di Microsoft teams e i passaggi principali per la risoluzione dei problemi che possono eseguire. Un buon punto di partenza per le domande frequenti è la guida e i [problemi noti](known-issues.md)dell' [utente](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) .
 
 |    |     |
 |-----------|------------|

@@ -1,7 +1,7 @@
 ---
 title: Coesistenza con Skype for Business
-author: kenwith
-ms.author: kenwith
+author: serdarsoysal
+ms.author: serdars
 manager: Serdars
 ms.topic: conceptual
 ms.service: msteams
@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
 description: Comportamento di coesistenza tra teams & Skype for business, inclusi i parametri di routing, la chat & il routing delle chiamate, le chat & le chiamate da thread preesistenti & presenza.
-ms.openlocfilehash: ff5e94b16cd55374ec0aeb45aaffdda41fbe0498
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 361f59297fb28e02203b8659be88302bca89515c
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43137307"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44757237"
 ---
 # <a name="coexistence-with-skype-for-business"></a>Coesistenza con Skype for Business
 
@@ -65,12 +65,12 @@ I parametri che determinano il metodo di routing del thread sono i seguenti:
 
 Le tabelle riportate di seguito acquisiscono il routing della chat e delle chiamate in-tenant e sono valide per le nuove chiamate o le chat non avviate da un thread preesistente. Descrive quale client riceverà una nuova chiamata o chat, se originata da un utente a sinistra, a un utente del destinatario in-tenant a destra.
 
-I messaggi inviati agli utenti di TeamsOnly saranno sempre indirizzati a teams. I messaggi inviati agli\* utenti di SFB saranno sempre indirizzati a Skype for business, se la conversazione è possibile come descritto sopra. I messaggi inviati agli utenti delle isole verranno sempre indirizzati allo stesso client da cui sono stati inviati.
+I messaggi inviati agli utenti di TeamsOnly saranno sempre indirizzati a teams. I messaggi inviati agli \* utenti di SFB saranno sempre indirizzati a Skype for business, se la conversazione è possibile come descritto sopra. I messaggi inviati agli utenti delle isole verranno sempre indirizzati allo stesso client da cui sono stati inviati.
 
 Le tabelle seguenti mostrano quale client in una determinata modalità riceverà una chiamata dall'originator (tre colonne più a sinistra), a seconda della modalità di origine, del cliente scelto e della posizione in cui è ospitato il client Skype for business (on-Prem o online).
 
 Nelle tabelle seguenti: 
-- **SFB\* ** rappresenta una delle modalità seguenti: *SfBOnly*, *SfBWithTeamsCollab*, *SfBWithTeamsCollabAndMeetings*.
+- **SFB \* ** rappresenta una delle modalità seguenti: *SfBOnly*, *SfBWithTeamsCollab*, *SfBWithTeamsCollabAndMeetings*.
 
 - Il *testo in corsivo* evidenzia una conversazione di interoperabilità.
 
@@ -78,16 +78,16 @@ Nelle tabelle seguenti:
 
 **Tabella 1a: nuova chat in-tenant o routing delle chiamate a un destinatario della modalità Isole**
 
-| <br/><br/> Modalità | Mittente <br/><br/> Client | <br/><br/> SfB&nbsp;homed | | Destinatario <br/><br/> Isole  |
+| <br/><br/> Modalità | Mittente <br/><br/> Client | <br/><br/> SfB &nbsp; homed | | Destinatario <br/><br/> Isole  |
 |--- |--- |--- |--- |--- |
 | Isole | Teams <br/> Skype for Business<br/> Teams<br/> Skype for Business| Online<br/> Online<br/> On-Prem<br/>On-Prem| &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;|Teams <br/> Skype for Business<br/> Teams<br/> Skype for Business|
 |SfB\* <br/> | Skype for Business<br/>Skype for Business<br/> | Online<br/> On-Prem<br/> |&boxv;<br/>&boxv;|Skype for Business<br/>Skype for Business<br/>|
 |TeamsOnly |Teams| Online<br/>|&boxv;<br/>|Teams|
 | | | | | |
 
-**Tabella 1b: nuova chat in-tenant o routing delle chiamate a un destinatario in modalità\* SFB**
+**Tabella 1b: nuova chat in-tenant o routing delle chiamate a un destinatario in \* modalità SFB**
 
-| <br/><br/> Modalità   | Mittente <br/><br/> Client | <br/><br/> SfB&nbsp;homed | |   Destinatario <br/><br/> SfB\*   |
+| <br/><br/> Modalità   | Mittente <br/><br/> Client | <br/><br/> SfB &nbsp; homed | |   Destinatario <br/><br/> SfB\*   |
 |--- |--- |--- |---   |--- |
 | Isole |Teams<br/>Skype for Business<br/>Teams <br/>Skype for Business  |Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;<br/>| *Skype for Business* <br/> Skype for Business<br/> **Non è possibile** <br/>Skype for Business<br/> |
 |SfB\* <br/> | Skype for Business<br/>Skype for Business<br/> | Online<br/> On-Prem<br/> |&boxv;<br/>&boxv; |  Skype for Business<br/>Skype for Business<br/> |
@@ -96,7 +96,7 @@ Nelle tabelle seguenti:
 
 **Tabella 1C: nuova chat in-tenant o routing delle chiamate a un destinatario della modalità TeamsOnly**
 
-| <br/><br/> Modalità   | Mittente <br/><br/> Client | <br/><br/> SfB&nbsp;homed | |   Destinatario <br/><br/> TeamsOnly  |
+| <br/><br/> Modalità   | Mittente <br/><br/> Client | <br/><br/> SfB &nbsp; homed | |   Destinatario <br/><br/> TeamsOnly  |
 |--- |--- |--- |--- | --- |
 | Isole   |Teams<br/>Skype for Business<br/>Teams <br/>Skype for Business<br/>|Online<br/> Online<br/> On-Prem<br/> On-Prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;|  Teams <br/>*Team* <br/>Teams <br/>*Team*  |
 |SfB\*  | Skype for Business<br/>Skype for Business<br/> | Online<br/> On-Prem<br/> | &boxv;<br/>&boxv; | *Team*  <br/>*Team*   |
@@ -107,7 +107,7 @@ Nelle tabelle seguenti:
   
 Le tabelle seguenti acquisiscono il routing delle chiamate e delle Chat federate e sono valide per le nuove chiamate o le chat. Descrivono quale client riceverà una nuova chiamata o chat, se originata da un utente a sinistra, a un utente di destinazione federato a destra.
 
-In sintesi, se la conversazione è possibile come descritto in precedenza, i messaggi inviati agli utenti di TeamsOnly saranno sempre sbarcati in teams; i messaggi inviati agli\* utenti di SFB saranno sempre atterrati in Skype for business; i messaggi inviati agli utenti delle isole saranno sempre sbarcati in Skype for business indipendentemente dal client da cui sono stati inviati. Il routing per le chat e le chiamate federate è diverso dal routing in-tenant in cui gli utenti delle isole riceveranno sempre una comunicazione federata in Skype for business.
+In sintesi, se la conversazione è possibile come descritto in precedenza, i messaggi inviati agli utenti di TeamsOnly saranno sempre sbarcati in teams; i messaggi inviati agli \* utenti di SFB saranno sempre atterrati in Skype for business; i messaggi inviati agli utenti delle isole saranno sempre atterrati in Skype for business indipendentemente dal client da cui sono stati inviati. Il routing per le chat e le chiamate federate è diverso dal routing in-tenant in cui gli utenti delle isole riceveranno sempre una comunicazione federata in Skype for business.
 
 Questo perché non possiamo presupporre che un partner di Skype for business federativo usi già teams se si trovano in modalità isole. Islands è la modalità predefinita, ma non possiamo presupporre che tutti gli utenti delle isole eseguano team. Con il routing a Skype for business assicuriamo che nessuna comunicazione a un utente di isole non riesca. Se si instradano a teams, è possibile che le comunicazioni non vengano perse se la destinazione non usa team. Il routing a Skype for business garantisce che il messaggio venga sempre ricevuto.  
 
@@ -125,7 +125,7 @@ Le tabelle seguenti descrivono il client che riceverà una chiamata dall'origina
 | TeamsOnly |Teams |Online| &boxv;|*Skype for Business* |
 |  | | | | 
 
-**Tabella 2b: nuova chat federata o routing delle chiamate a un destinatario in modalità\* SFB**
+**Tabella 2b: nuova chat federata o routing delle chiamate a un destinatario in \* modalità SFB**
 
 | <br/><br/>Modalità   | Mittente<br/><br/> Client| <br/><br/>SfB homed| |  Destinatario<br/><br/> SfB\* |  
 |--- |--- |--- |--- |--- |
@@ -174,7 +174,7 @@ Ad esempio, se una chat o una chiamata di un originatore deve atterrare sul clie
 Per conoscere il comportamento da prevedere, è necessario capire che la presenza è condivisa in base alla modalità di coesistenza di un utente:
 
 * Se un utente è in modalità TeamsOnly, qualsiasi altro utente (sia in teams che in Skype for business) vedrà che la presenza di teams di TeamsOnly dell'utente
-* Se un utente si trova in una delle modalità\* SFB (SfbOnly, SfbWithTeamsCollab, SfbWithTeamsCollabAndMeetings), qualsiasi altro utente (sia in team che in Skype for business) vedrà che la presenza\* di Skype for business per l'utente di SFB
+* Se un utente si trova in una delle \* modalità SFB (SfbOnly, SfbWithTeamsCollab, SfbWithTeamsCollabAndMeetings), qualsiasi altro utente (sia in team che in Skype for business) vedrà che la \* presenza di Skype for business per l'utente di SFB
 * Se un utente è in modalità Islands (o legacy), la presenza in teams e la presenza in Skype for business sono indipendenti (i valori non devono corrispondere) e altri utenti vedranno una o l'altra presenza dell'utente Islands, a seconda che si trovino nello stesso tenant o in un tenant federato e quale cliente usano
     * Da teams, qualsiasi altro utente all'interno dello stesso tenant vedrà la presenza di Teams dell'utente Islands; Questa operazione è allineata alla tabella di routing in-tenant riportata sopra
     * Da teams, qualsiasi altro utente di un tenant federato vedrà la presenza di Skype for business dell'utente Islands; Questa operazione è allineata alla tabella di routing federata precedente
@@ -183,7 +183,7 @@ Per conoscere il comportamento da prevedere, è necessario capire che la presenz
 
 ### <a name="in-tenant-presence"></a>Presenza in-tenant
 
-I messaggi inviati agli utenti di TeamsOnly saranno sempre sbarcati in teams. I messaggi inviati agli\* utenti di SFB saranno sempre atterrati in Skype for business, se la conversazione è possibile come descritto sopra. I messaggi inviati agli utenti delle isole saranno sempre atterrati nel client da cui sono stati originati.
+I messaggi inviati agli utenti di TeamsOnly saranno sempre sbarcati in teams. I messaggi inviati agli \* utenti di SFB saranno sempre atterrati in Skype for business, se la conversazione è possibile come descritto sopra. I messaggi inviati agli utenti delle isole saranno sempre atterrati nel client da cui sono stati originati.
 
 La tabella descrive la presenza dell'autore che verrà visualizzata da un osservatore, a seconda della modalità dell'autore e del client di Watcher (per un nuovo thread).
 

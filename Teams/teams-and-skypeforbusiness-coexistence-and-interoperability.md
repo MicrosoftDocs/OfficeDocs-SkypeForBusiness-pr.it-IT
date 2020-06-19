@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fc1619a751bc6e800ac038486b844de748c6b0b6
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: fcf7fc339fdf1b204f81d88c4fed08c720978280
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691042"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756847"
 ---
 # <a name="understand-microsoft-teams-and-skype-for-business-coexistence-and-interoperability"></a>Informazioni sulla coesistenza e l'interoperabilità di Microsoft teams e Skype for business
 
@@ -76,7 +76,7 @@ Questa modalità può essere usata prima di avviare una distribuzione gestita di
 
 
 > [!IMPORTANT]
-> Se si disinstalla il client di Skype for Business dopo aver spostato un utente in modalità **Solo Teams**, l’icona di presenza smetterà di funzionare in Outlook e in altre app di Office. L’icona di presenza funziona bene in Teams. Soluzione alternativa: per visualizzare la presenza in Outlook (e in altre app di Office) è necessario installare Skype for Business, anche se Teams viene eseguito in modalità **Solo Teams**. Microsoft è a conoscenza del problema e sta lavorando per risolverlo.
+> Se si disinstalla il client Skype for business dopo aver spostato un utente in modalità **solo teams** , potrebbe essere necessario riavviare Outlook e teams se la presenza smette di funzionare. 
 
 
 Un utente **solo teams** (detto anche utente *aggiornato* ) ha accesso a tutte le funzionalità in teams. Possono mantenere il client Skype for business per partecipare a riunioni su Skype for business organizzati da utenti non aggiornati o da parti esterne. Un utente aggiornato può continuare a comunicare con altri utenti dell'organizzazione che usano ancora Skype for business usando le funzionalità di interoperabilità tra teams e Skype for business (purché gli utenti di Skype for business non siano in modalità **isole** ). Tuttavia, un utente aggiornato non può avviare una chat, una chiamata o una riunione Skype for business.

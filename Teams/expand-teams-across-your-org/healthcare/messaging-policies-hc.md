@@ -18,12 +18,12 @@ appliesto:
 ms.reviewer: ''
 description: Informazioni su come personalizzare un criterio di messaggistica sicuro che può includere le conferme di lettura e le notifiche prioritarie.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b4bd8032cce78e388d221108ebdfc08a16b8afd1
-ms.sourcegitcommit: 5dff3217760cf881d1d96e5d5c76101c90afcbc0
+ms.openlocfilehash: 1321c22f2eac04063723b404153909c20125dd57
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2020
-ms.locfileid: "44724886"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44755830"
 ---
 # <a name="get-started-with-secure-messaging-for-healthcare-organizations"></a>Guida introduttiva a Messaggistica protetta per le organizzazioni del settore sanitario
 
@@ -53,7 +53,7 @@ Per le applicazioni sanitarie, scegliere **utente controllato** o attivato **per
 
 ## <a name="send-urgent-messages-using-priority-notifications"></a>Inviare messaggi urgenti con le notifiche prioritarie
 
-Un utente può contrassegnare un messaggio come *urgente* quando si inviano messaggi di chat ad altri utenti. Questa caratteristica aiuta il personale ospedaliero ad avvisarsi l'un l'altro quando un incidente critico richiede la sua attenzione. A differenza dei normali messaggi *importanti* , le [notifiche prioritarie](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462) notificano agli utenti ogni due minuti per un massimo di 20 minuti oppure fino a quando il messaggio viene raccolto e letto dal destinatario, massimizzando la probabilità che il messaggio venga agito in modo tempestivo.
+Un utente può contrassegnare un messaggio come *urgente* quando si inviano messaggi di chat ad altri utenti. Questa caratteristica aiuta il personale ospedaliero ad avvisarsi l'un l'altro quando un incidente critico richiede la sua attenzione. A differenza dei normali messaggi *importanti* , le [notifiche prioritarie](https://support.microsoft.com/en-us/office/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462) notificano agli utenti ogni due minuti per un massimo di 20 minuti oppure fino a quando il messaggio viene raccolto e letto dal destinatario, massimizzando la probabilità che il messaggio venga agito in modo tempestivo.
 
 Un amministratore può abilitare o disabilitare la possibilità per gli utenti assegnati a questo criterio di inviare notifiche prioritarie. Questa caratteristica è attivata per impostazione predefinita. Il destinatario del messaggio di priorità potrebbe non avere lo stesso criterio di messaggistica e non avrà l'opzione di disabilitare la ricezione dei messaggi prioritari. Per le applicazioni sanitarie, è consigliabile abilitare la funzionalità per almeno alcuni utenti, ma è necessario determinare quali.
 

@@ -1,7 +1,7 @@
 ---
 title: Guida alla sicurezza di Microsoft Teams
 author: MicrosoftHeidi
-ms.author: heidip
+ms.author: tracyp
 manager: serdars
 ms.topic: reference
 ms.service: msteams
@@ -19,12 +19,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0e13055fb9c4f3f30b1810a24a20aea25c9eb652
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 6762bd49bbe22b1e80c1b97f37048ee0a944e0a1
+ms.sourcegitcommit: 8b172e9a0d0626c9a88998600d4b17c6c8cdadd2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689662"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761444"
 ---
 # <a name="security-and-microsoft-teams"></a>Sicurezza e Microsoft Teams
 

@@ -13,12 +13,12 @@ f1.keywords:
 description: Panoramica della soluzione Integrated Contact Center come servizio (CCaaS) per Microsoft Teams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dccf00bc362f2404b882eb02cf7f51b532ec9161
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: aceca495760670846a869a8dcca9734a5cf7daa1
+ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691472"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44756827"
 ---
 # <a name="contact-center-integrations-for-microsoft-teams"></a>Integrazioni di Contact Center per Microsoft Teams
 
@@ -51,6 +51,7 @@ I partner seguenti sono in procinto di certificare la loro soluzione per Microso
 | Genesys | https://www.genesys.com/microsoft                                                                                   |
 | Luware | https://luware.com/en/solutions/                                                                                       |
 | INCONTACT NICE | https://www.niceincontact.com/microsoft-teams                                                            |
+| Tendfor | https://www.tendfor.com/en/                                                                                     |
 
 Questo elenco verrà aggiornato man mano che altri partner partecipano e soddisfano i criteri di certificazione.
 

@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può leggere le note sulla versione per Microsoft teams rooms, che elencano i miglioramenti cumulativi nelle sale di Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0a4af973e02c8ae3799ee0abe6df5c9694956635
-ms.sourcegitcommit: 6e24ea8aa9cccf8a1a964c8ed414ef5c7de3dc17
+ms.openlocfilehash: f59242fd3877ff1a075668a405a558f0fe18c374
+ms.sourcegitcommit: 8b172e9a0d0626c9a88998600d4b17c6c8cdadd2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2020
-ms.locfileid: "44158953"
+ms.lasthandoff: 06/16/2020
+ms.locfileid: "44761454"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
@@ -353,7 +353,7 @@ Introdotti in questo aggiornamento:
 
 [Supporto per Microsoft teams Rooms Current Branch Versions](rooms-lifecycle-support.md)
 
-[Supportare team nell'organizzazione](known-issues.md)
+[Problemi noti](known-issues.md)
 
 [Piano per Microsoft Teams Rooms](rooms-plan.md)
 
