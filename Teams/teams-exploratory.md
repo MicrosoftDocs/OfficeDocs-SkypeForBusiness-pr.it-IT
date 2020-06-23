@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7054156ad2cb3526cd2e8fc802014433a68efc81
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: a342c27c7379ed11e691098fe309fe4e429cb1e0
+ms.sourcegitcommit: af15d99837a389b6b26952211e65cd68c4b7f46e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689712"
+ms.lasthandoff: 06/18/2020
+ms.locfileid: "44785302"
 ---
 <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 =======================================================
@@ -147,6 +147,8 @@ Per altre informazioni, vedere [Descrizione del servizio Microsoft Teams](https:
 ## <a name="what-happens-to-legacy-microsoft-teams-commercial-cloud-trial-licenses"></a>Che cosa accade alle licenze Microsoft Teams Commercial Cloud Trial legacy?
 
 A partire da febbraio 2020, gli utenti idonei possono iniziare a usare l'esperienza Microsoft Teams Exploratory più recente. Tutte le licenze legacy di Teams Commercial Cloud Trial verranno convertite automaticamente alla nuova offerta prima della scadenza della versione di valutazione.
+
+Quando un utente accede all'offerta Microsoft Teams Commercial Cloud Trial scaduta per la prima volta, gli viene assegnata automaticamente una licenza per l'esperienza di Teams Exploratory.  Gli utenti non vengono convertiti finché non accedono.
 
 ### <a name="remove-a-teams-exploratory-license"></a>Rimuovere una licenza di Teams Exploratory
 

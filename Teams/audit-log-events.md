@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Informazioni su come recuperare i dati di Microsoft teams dal log di controllo.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 609bf3065d160da46b6e65d20235a4451de83c5f
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: a305afdc96f71731431ba187cd4d4021e0cec943
+ms.sourcegitcommit: 8d5ba1346be583af9382906dda556ccf868904f7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665638"
+ms.lasthandoff: 06/19/2020
+ms.locfileid: "44816627"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams
 
@@ -187,8 +187,8 @@ Se l'organizzazione usa l'app turni in teams, è possibile eseguire una ricerca 
 
 ## <a name="office-365-management-activity-api"></a>API di attività di gestione di Office 365
 
-Puoi usare l'API di gestione attività di Office 365 per recuperare informazioni sugli eventi teams. Per altre informazioni sullo schema dell'API di gestione attività per i team, vedere [schema teams](https://docs.microsoft.com/office/office-365-management-api/troubleshooting-the-office-365-management-activity-api).
+Puoi usare l'API di gestione attività di Office 365 per recuperare informazioni sugli eventi teams. Per altre informazioni sullo schema dell'API di gestione attività per i team, vedere [schema teams](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#microsoft-teams-schema).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Eseguire ricerche nel log di controllo nel centro conformità di Microsoft 365](https://support.office.com/article/0d4d0f35-390b-4518-800e-0c7ec95e946c) 
+- [Eseguire ricerche nel log di controllo nel centro conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) 
