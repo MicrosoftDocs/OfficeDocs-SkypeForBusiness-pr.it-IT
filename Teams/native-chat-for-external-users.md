@@ -14,19 +14,19 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: Informazioni sull'esperienza di chat di Team native per utenti di Access esterni (federati) in Microsoft teams, disponibile tra utenti esterni in cui entrambi gli utenti si trovano nella modalità di aggiornamento di TeamsOnly.
-ms.openlocfilehash: 0d6f7ed00482ee68233b4d93cc101e9c820a6f14
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: 1a8cd038f8ff65ea24abb790e564d2cb30ef0ed1
+ms.sourcegitcommit: 44e47c3b2eb44c38cb8d761befdc6c0cef7c61bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41832686"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44842007"
 ---
 <a name="native-chat-experience-for-external-federated-users-in-microsoft-teams"></a>Esperienza di chat nativa per utenti esterni (federati) in Microsoft Teams
 ======================================
 
-Quando gli utenti di Microsoft teams chattano con un utente esterno (federato), l'esperienza della chat è limitata al testo. Tuttavia, se il tenant di teams e quello dell'utente esterno si trova nella modalità di aggiornamento di TeamsOnly, è possibile avere un "esperienza di chat con Team nativi", che include formattazione RTF, @mentions e altre funzionalità di chat. In altre parole, puoi avere la stessa esperienza di chat di Microsoft teams Rich 1:1 con utenti esterni idonei, come hai fatto con gli utenti dell'organizzazione. Le chat di teams native con utenti esterni sono ancora limitate solo alle chat di 1:1 (gli utenti esterni non possono eseguire chat di gruppo).
+Quando un utente di Microsoft teams sta chattando con un utente esterno (federato), l'esperienza della chat è limitata al testo. Tuttavia, se sia l'utente del team che l'utente esterno si trova nella modalità di aggiornamento di TeamsOnly, è possibile avere un'"esperienza di chat con Team nativi", che include la formattazione RTF, la @mentions e altre funzionalità di chat. In altre parole, puoi avere la stessa esperienza di chat di Microsoft teams Rich 1:1 con utenti esterni idonei, come hai fatto con gli utenti dell'organizzazione. Le chat di teams native con utenti esterni sono ancora limitate solo alle chat di 1:1 (gli utenti esterni non possono eseguire chat di gruppo).
 
-L'esperienza di chat nativa per gli utenti esterni è attivata per tutti i tenant di teams, ma non tutti gli utenti sono idonei. Per offrire un'esperienza di chat nativa, è necessario che il mittente e il destinatario si trovino in un tenant di teams che esegue la modalità di aggiornamento di TeamsOnly. Per ulteriori informazioni sui criteri di aggiornamento, vedere [impostazione delle impostazioni di coesistenza e aggiornamento](setting-your-coexistence-and-upgrade-settings.md).
+L'esperienza di chat nativa per gli utenti esterni è attivata per tutti i tenant di teams, ma non tutti gli utenti sono idonei. Per offrire un'esperienza di chat nativa, sia il mittente che il destinatario devono essere configurati per la modalità di aggiornamento di TeamsOnly. Per ulteriori informazioni sui criteri di aggiornamento, vedere [impostazione delle impostazioni di coesistenza e aggiornamento](setting-your-coexistence-and-upgrade-settings.md).
 
 Per visualizzare un elenco delle funzionalità per gli utenti di Access esterni in teams, vedere [confrontare l'accesso esterno e Guest](communicate-with-users-from-other-organizations.md#compare-external-and-guest-access).
 

@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 ms.custom: seo-marvel-mar2020
 description: Gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft teams rooms, incluso l'applicazione di un tema personalizzato e la creazione di un file di impostazioni master.
-ms.openlocfilehash: 8d723423cc8e93429d193f4340eceddcc55ca10d
-ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
+ms.openlocfilehash: 77fc064157d57a2584e4a527148a143680010832
+ms.sourcegitcommit: 44e47c3b2eb44c38cb8d761befdc6c0cef7c61bc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44230504"
+ms.lasthandoff: 06/22/2020
+ms.locfileid: "44842017"
 ---
 # <a name="manage-a-microsoft-teams-rooms-console-settings-remotely-with-an-xml-configuration-file"></a>Gestire le impostazioni della console Microsoft teams rooms in remoto con un file di configurazione XML
 
@@ -30,7 +30,7 @@ Questo articolo illustra la gestione remota delle impostazioni predefinite usate
   
 ## <a name="create-an-xml-configuration-file"></a>Creare un file di configurazione XML
 
-Qualsiasi editor di testo può essere usato per creare un file di impostazioni. La tabella **elementi XML** spiega gli elementi mostrati in questo esempio di file di configurazione SkypeSettings. XML (nome file obbligatorio).
+Qualsiasi editor di testo può essere usato per creare un file di impostazioni. La tabella **elementi XML** spiega gli elementi illustrati in questo esempio SkypeSettings.xml file di configurazione (nome file obbligatorio).
   
 ```XML
 <SkypeSettings>
@@ -88,30 +88,31 @@ Se un valore variabile è di tipo errato, gli elementi non sono in ordine, gli e
 |\<SkypeMeetingsEnabled\>  |&#x2777; booleani  |Primo &#x2776;  |Abilitato per impostazione predefinita. |
 |\<SkypeSignInAddress\> |&#x2778; di stringa  ||Il nome di accesso per l'account del dispositivo SfB o teams della console. |
 |\<ExchangeAddress\> |&#x2778; di stringa  ||Nome di accesso per l'account del dispositivo Exchange della console. Se ExchangeAddress viene omesso, SkypeSignInAddress non verrà riutilizzato automaticamente. |
-|\<> ModernAuthEnabled |&#x2777; booleani  |  |Disabilitata per impostazione predefinita. <br/> <br/>Quando è impostato su true, l'applicazione Microsoft teams Rooms usa solo l'autenticazione moderna per la connessione alle risorse e non rientra nell'autenticazione di base.|
+|\<ModernAuthEnabled> |&#x2777; booleani  |  |Disabilitata per impostazione predefinita. <br/> <br/>Quando è impostato su true, l'applicazione Microsoft teams Rooms usa solo l'autenticazione moderna per la connessione alle risorse e non rientra nell'autenticazione di base.|
 |\<DomainUsername\> |&#x2778; di stringa  ||Il dominio e il nome utente del dispositivo console, ad esempio Seattle\RanierConf. |
 |\<Password\> |Stringa 3  || Il parametro password è la stessa password usata per l'accesso all'account del dispositivo Skype for business.  |
 | \<ConfigureDomain\>  |&#x2778; di stringa  ||È possibile elencare diversi domini, separati da virgole. |
-|\<TeamsMeetingsEnabled\> |&#x2777; booleani  |Primo &#x2776;  |Disabilitata per impostazione predefinita. <br/> <br/> Il file XML viene considerato male formato se sia \< SkypeMeetingsEnabled \> che \< TeamsMeetingsEnabled \> sono disabilitati, ma è accettabile che entrambe le impostazioni siano abilitate in contemporanea. |
-|\<> IsTeamsDefaultClient |&#x2777; booleani  |Primo &#x2776;  |Disabilitata per impostazione predefinita. |
-|\<> BluetoothAdvertisementEnabled |&#x2777; booleani  |Primo &#x2776;  |Abilitato per impostazione predefinita. |
-|\<> AutoAcceptProximateMeetingInvitations |&#x2777; booleani  |Primo &#x2776;  |Se true, le riunioni basate su prossimità vengono accettate automaticamente. Disabilitata per impostazione predefinita. |
+|\<TeamsMeetingsEnabled\> |&#x2777; booleani  |Primo &#x2776;  |Disabilitata per impostazione predefinita. <br/> <br/> Il file XML viene considerato male formato se sia \<SkypeMeetingsEnabled\> e è \<TeamsMeetingsEnabled\> disabilitato, ma è accettabile avere entrambe le impostazioni abilitate in contemporanea. |
+|\<IsTeamsDefaultClient> |&#x2777; booleani  |Primo &#x2776;  |Disabilitata per impostazione predefinita. |
+|\<BluetoothAdvertisementEnabled> |&#x2777; booleani  |Primo &#x2776;  |Abilitato per impostazione predefinita. |
+|\<AutoAcceptProximateMeetingInvitations> |&#x2777; booleani  |Primo &#x2776;  |Se true, le riunioni basate su prossimità vengono accettate automaticamente. Disabilitata per impostazione predefinita. |
 |\<DualScreenMode\>  |&#x2777; booleani  |Primo &#x2776;  |Se true, la modalità dual screen è abilitata. In caso contrario, il dispositivo usa la modalità a schermo singolo. |
-| \<DuplicateIngestDefault\> |&#x2777; booleani  |Primo &#x2776; |Se true, il contenuto viene visualizzato in entrambe le schermate in modalità dual screen, quando non è presente una riunione. | 
+| \<DuplicateIngestDefault\> |&#x2777; booleani  |Primo &#x2776; |Se true, il contenuto viene visualizzato in entrambe le schermate in modalità dual screen, quando non è presente una riunione. |
+|\<DisableTacCommunication\> |&#x2777; booleani  |Primo &#x2776; |Se true, tutte le comunicazioni con gestione dispositivi di amministrazione del team verranno disabilitate. |
 |\<SendLogs\> |Contenitore |Primo &#x2776;  |  |
 |\<EmailAddressForLogsAndFeedback\> |&#x2778; di stringa  | | Imposta un indirizzo di posta elettronica facoltativo a cui possono essere inviati i log quando viene visualizzata la finestra "Invia feedback". |
 |\<SendLogsAndFeedback\> |&#x2777; booleani  | | Se true, i registri vengono inviati all'amministratore. Se false, viene inviato solo il feedback all'amministratore (e non ai registri).  |
-| \<Dispositivi\>  |Contenitore |Primo &#x2776;  | I nomi dei dispositivi audio connessi negli elementi figlio corrispondono agli stessi valori elencati nell'app gestione dispositivi. La configurazione può contenere un dispositivo che attualmente non esiste nel sistema, ad esempio un dispositivo A/V non connesso alla console. La configurazione verrebbe mantenuta per il rispettivo dispositivo.  |
+| \<Devices\>  |Contenitore |Primo &#x2776;  | I nomi dei dispositivi audio connessi negli elementi figlio corrispondono agli stessi valori elencati nell'app gestione dispositivi. La configurazione può contenere un dispositivo che attualmente non esiste nel sistema, ad esempio un dispositivo A/V non connesso alla console. La configurazione verrebbe mantenuta per il rispettivo dispositivo.  |
 |\<MicrophoneForCommunication\> |&#x2778; di stringa  ||Imposta il microfono usato come dispositivo di registrazione in una conferenza. |
 |\<SpeakerForCommunication\> |&#x2778; di stringa  ||Dispositivo da usare come altoparlante per la conferenza. Questa impostazione viene usata per impostare il dispositivo altoparlante usato in una chiamata. |
 |\<DefaultSpeaker\> |&#x2778; di stringa  ||Dispositivo da usare per riprodurre l'audio da un'origine di ingestione HDMI. |
-|\<> ContentCameraId  | &#x2778; di stringa  | | Definire il percorso dell'istanza per la fotocamera configurata in room per condividere il contenuto della lavagna analogica in una riunione. Vedere [individuare il percorso dell'istanza USB di Content camera](#locate-the-content-camera-usb-instance-path).|
-|\<> ContentCameraInverted  | &#x2777; booleani | | Specificare se la fotocamera del contenuto è installata fisicamente a testa in giù. Per le fotocamere del contenuto che supportano la rotazione automatica, specificare false. |
-|\<> ContentCameraEnhancement  | &#x2777; booleani | |Quando è impostato su true (impostazione predefinita), l'immagine della fotocamera del contenuto è migliorata digitalmente: viene rilevato il bordo della lavagna e viene selezionato uno zoom appropriato, le linee di input penna vengono migliorate e la persona che scrive sulla lavagna viene trasformata in modo trasparente.  <br><br> Impostare su false se si vuole inviare un feed video non elaborato ai partecipanti alla riunione per gli spazi in cui una lavagna non è disegnata con una penna e invece la fotocamera viene usata per mostrare note adesive, poster o altri elementi multimediali.  |
-| \<Temi\>  |Contenitore |Primo &#x2776;  |Una delle caratteristiche che è possibile applicare a un file XML è un tema personalizzato per l'organizzazione. È possibile specificare il nome del tema, l'immagine di sfondo e il colore. |
+|\<ContentCameraId>  | &#x2778; di stringa  | | Definire il percorso dell'istanza per la fotocamera configurata in room per condividere il contenuto della lavagna analogica in una riunione. Vedere [individuare il percorso dell'istanza USB di Content camera](#locate-the-content-camera-usb-instance-path).|
+|\<ContentCameraInverted>  | &#x2777; booleani | | Specificare se la fotocamera del contenuto è installata fisicamente a testa in giù. Per le fotocamere del contenuto che supportano la rotazione automatica, specificare false. |
+|\<ContentCameraEnhancement>  | &#x2777; booleani | |Quando è impostato su true (impostazione predefinita), l'immagine della fotocamera del contenuto è migliorata digitalmente: viene rilevato il bordo della lavagna e viene selezionato uno zoom appropriato, le linee di input penna vengono migliorate e la persona che scrive sulla lavagna viene trasformata in modo trasparente.  <br><br> Impostare su false se si vuole inviare un feed video non elaborato ai partecipanti alla riunione per gli spazi in cui una lavagna non è disegnata con una penna e invece la fotocamera viene usata per mostrare note adesive, poster o altri elementi multimediali.  |
+| \<Theming\>  |Contenitore |Primo &#x2776;  |Una delle caratteristiche che è possibile applicare a un file XML è un tema personalizzato per l'organizzazione. È possibile specificare il nome del tema, l'immagine di sfondo e il colore. |
 |\<ThemeName\> |&#x2778; di stringa  || Usato per identificare il tema nel client. Le opzioni relative al nome del tema sono predefinite, uno dei temi preimpostati specificati o personalizzati. <br/>  I nomi dei temi personalizzati usano sempre il nome *Custom*. L'interfaccia utente del client può essere impostata alla console per l'impostazione predefinita o uno dei predefiniti, ma l'uso di un tema personalizzato deve essere impostato in remoto da un amministratore. <br/>  I temi preimpostati includono: <br/>  Predefinita <br/>  Onda blu <br/>  Foresta digitale <br/>  Dreamcatcher <br/>  Limeade <br/>  Pixel perfetti <br/>  Roadmap <br/>  Tramonto <br/>  Per disabilitare il tema corrente, USA "nessun tema" per il Temaname.  |
 |\<CustomThemeImageUrl\> |&#x2778; di stringa  ||Obbligatorio per un tema personalizzato, in caso contrario facoltativo. Immettere solo il nome del file.   |Per altre informazioni sull'immagine del tema personalizzata, vedere la sezione [Immagini tema personalizzate](xml-config-file.md#Themes) .
-|\<CustomThemeColor\> |Contenitore ||Contenitore per i \< valori di RedComponent \> , \< GreenComponent \> e \< BlueComponent \> . Questi valori sono necessari per un tema personalizzato. |
+|\<CustomThemeColor\> |Contenitore ||Contenitore per i \<RedComponent\> \<GreenComponent\> valori, e \<BlueComponent\> . Questi valori sono necessari per un tema personalizzato. |
 |\<RedComponent\> |Byte (0-255) ||Rappresenta il componente colore rosso. |
 |\<GreenComponent\> |Byte (0-255) ||Rappresenta il componente colore verde. |
 |\<BlueComponent\> |Byte (0-255) ||Rappresenta il componente colore blu. | 
@@ -125,7 +126,7 @@ Se un valore variabile è di tipo errato, gli elementi non sono in ordine, gli e
   
 ## <a name="manage-console-settings-with-an-xml-configuration-file"></a>Gestire le impostazioni della console con un file di configurazione XML
 
-All'avvio, se una console Microsoft teams Rooms trova un file XML denominato SkypeSettings. XML in `C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState` cui si trova, applica le impostazioni di configurazione indicate dal file XML e quindi Elimina il file XML.
+All'avvio, se una console Microsoft teams Rooms trova un file XML denominato SkypeSettings.xml in `C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState` cui si trova, applica le impostazioni di configurazione indicate dal file XML e quindi Elimina il file XML.
   
 A seconda del numero di dispositivi di Microsoft teams Rooms che l'organizzazione ha e della modalità di gestione per configurarli, esistono diversi modi per inserire il file di configurazione XML. Dopo aver inserito il file nella console, riavviarlo per elaborare le modifiche alla configurazione. Il file di configurazione XML viene eliminato dopo l'elaborazione corretta. I metodi di gestione suggeriti per i dispositivi Microsoft teams Rooms sono discussi in:
   
@@ -138,7 +139,7 @@ Puoi usare qualsiasi metodo che ti piace, purché sia possibile usarlo per trasf
 
 <a name="Themes"> </a>
 
-Il file di immagine del tema personalizzato deve essere posizionato nella `C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState` cartella. Immettere il nome e l'estensione del file \< nella \> variabile CustomThemeImageUrl.
+Il file di immagine del tema personalizzato deve essere posizionato nella `C:\Users\Skype\AppData\Local\Packages\Microsoft.SkypeRoomSystem_8wekyb3d8bbwe\LocalState` cartella. Immettere il nome e l'estensione del file nella \<CustomThemeImageUrl\> variabile.
   
 Il file di immagine deve essere esattamente 3840X1080 pixel e deve essere uno dei formati di file seguenti: jpg, JPEG, PNG e BMP. Se l'organizzazione vuole un'immagine personalizzata, un progettista grafico può usare il [modello tema personalizzato Photoshop](../downloads/ThemingTemplateMicrosoftTeamsRooms_v2.1.psd). Contiene ulteriori dettagli sulla posizione in cui i vari elementi dell'interfaccia utente sono relativi al resto di un'immagine del tema e quali aree vengono visualizzate in console e schermi.
   

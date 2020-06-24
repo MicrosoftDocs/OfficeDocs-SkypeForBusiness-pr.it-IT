@@ -17,12 +17,12 @@ f1.keywords:
 description: Protocolli di routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 264e7e3de8031e8ac150c186078ff3d7ccff2f16
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 0756860bc6fad7a470a33e00ac8452e7977ecde0
+ms.sourcegitcommit: 93c5afed49f47574f1b00305e5dfbb8a89be02a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691222"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44859651"
 ---
 # <a name="direct-routing---sip-protocol"></a>Routing diretto-protocollo SIP
 
@@ -44,7 +44,7 @@ Di seguito è riportato un esempio del messaggio SIP INVITE in una chiamata in a
 | Intestazione da | Da intestazione da: <SIP: 7168712781@sbc1. adatum. biz; Transport = UDP; Tag = 1c747237679 |
 | Intestazione | A: sip:+183338006777@sbc1.adatum.biz | 
 | Intestazione CSeq | CSeq: 1 invito | 
-| Intestazione contatto | Contatto: <SIP: 68712781@sbc1. adatum. biz; Transport = TLS> | 
+| Intestazione contatto | Contatto: <SIP: 68712781@sbc1. adatum. BIZ: 5058; Transport = TLS> | 
 
 Alla ricezione dell'invito, il proxy SIP esegue i passaggi seguenti:
 
@@ -100,13 +100,13 @@ INVITE sip:+18338006777@sip.pstnhub.microsoft.com SIP /2.0
 
 Il proxy SIP deve calcolare il nome di dominio completo dell'hop successivo per le nuove transazioni client nella finestra di dialogo, ad esempio bye o re-invite, e quando si risponde alle opzioni SIP. Vengono usati contatti o record-route. 
 
-In base alla RFC 3261, l'intestazione del contatto è obbligatoria in qualsiasi richiesta che può comportare una nuova finestra di dialogo. La route di record è necessaria solo se un proxy vuole rimanere sul percorso delle richieste future in una finestra di dialogo. 
+In base alla RFC 3261, l'intestazione del contatto è obbligatoria in qualsiasi richiesta che può comportare una nuova finestra di dialogo. La route di record è necessaria solo se un proxy vuole rimanere sul percorso delle richieste future in una finestra di dialogo. Se un SBC proxy è in uso con l' [ottimizzazione dei contenuti multimediali locali per il routing diretto](https://docs.microsoft.com/MicrosoftTeams/direct-routing-media-optimization), sarà necessario configurare una route di record perché il proxy SBC deve rimanere nella route. 
 
-Microsoft consiglia di usare solo l'intestazione del contatto per i motivi seguenti:
+Microsoft consiglia di usare solo l'intestazione del contatto se non si usa un SBC proxy:
 
-- Per RFC 3261, record-route viene usato se un proxy vuole rimanere sul percorso delle richieste future in una finestra di dialogo, che non è essenziale perché tutto il traffico passa tra il proxy SIP Microsoft e il SBC associato. Non c'è bisogno di un server proxy intermedio tra SBC e proxy SIP Microsoft.
+- Per RFC 3261, record-route viene usato se un proxy vuole rimanere sul percorso delle richieste future in una finestra di dialogo, il che non è essenziale se non è configurato un SBC proxy come tutto il traffico tra il proxy SIP Microsoft e il SBC associato. 
 
-- Il proxy SIP Microsoft usa solo l'intestazione del contatto (non il record-route) per determinare l'hop successivo quando si inviano le opzioni di ping in uscita. La configurazione di un solo parametro (contatto) invece di due (contatto e record-route) semplifica l'amministrazione.
+- Il proxy SIP Microsoft usa solo l'intestazione del contatto (non il record-route) per determinare l'hop successivo quando si inviano le opzioni di ping in uscita. La configurazione di un solo parametro (contatto) invece di due (contatto e record-route) semplifica l'amministrazione se non è in uso un SBC proxy. 
 
 Per calcolare l'hop successivo, il proxy SIP USA:
 
