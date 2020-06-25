@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: "Riepilogo: informazioni su come utilizzare PowerShell per ottenere la funzionalità SEFAUtil in Skype for Business Server 2019 dopo l'installazione dell'aggiornamento cumulativo 1."
-ms.openlocfilehash: 24040a3da5dc2549996463078a55324f3fc03657
-ms.sourcegitcommit: 000515147632c6278bcda4505a1038014dda8e2f
+ms.openlocfilehash: 19c3ba1124bbc1f32f301096036404f8bd101fe9
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44232567"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44868553"
 ---
 # <a name="using-sefautil-functionality-via-powershell-in-skype-for-business-server-2019"></a>Utilizzo della funzionalità SEFAUtil tramite PowerShell in Skype for Business Server 2019
 
@@ -103,7 +103,7 @@ Per le distribuzioni locali, i cmdlet introdotti in questa funzionalità possono
 - CsHelpDesk-Get per tutti i cmdlet
 
 Per ulteriori informazioni su questi ruoli di amministratore, vedere [creare gli amministratori del pannello di controllo di Skype for Business Server](../SfbServer/help-topics/help-depwiz/create-skype-for-business-server-control-panel-administrators.md). L'amministratore può accedere a questi cmdlet direttamente o in remoto accedendo a un computer server.
-Per una distribuzione ibrida, gli amministratori di Skype for business dovrebbero essere in grado di chiamare Get e set per tutti i cmdlet. Per ulteriori informazioni sull'elenco completo dei ruoli, vedere [informazioni sui ruoli di amministratore](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)
+Per una distribuzione ibrida, gli amministratori di Skype for business dovrebbero essere in grado di chiamare Get e set per tutti i cmdlet. Per ulteriori informazioni sull'elenco completo dei ruoli, vedere [informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
 
 > [!NOTE]
 > L'individuazione automatica del server deve essere abilitata. Non verranno introdotti ulteriori requisiti di licenza per l'utilizzo dei cmdlet.

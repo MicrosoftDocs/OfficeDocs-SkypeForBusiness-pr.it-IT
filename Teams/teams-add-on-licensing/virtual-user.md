@@ -20,12 +20,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni su come assegnare un sistema telefonico gratuito-licenza per gli utenti virtuali o una licenza per l'utente del sistema telefonico a pagamento per gli account delle risorse dell'organizzazione.
-ms.openlocfilehash: cd70b4a1d24bf762c5aa1508d29a9ce343cf4b76
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: 00c3463aa933b4d91308fee85d362c4c4807cf69
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042413"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44868653"
 ---
 # <a name="microsoft-365-phone-system--virtual-user-license"></a>Microsoft 365 Phone System-licenza per utenti virtuali
 
@@ -47,25 +47,25 @@ Se l'organizzazione usa il sistema telefonico disponibile gratuito Microsoft 365
 
 ### <a name="license-allocation-example"></a>Esempio di allocazione della licenza
 
-Contoso, Inc. ha acquistato le licenze 600 che includevano il sistema telefonico (uno per ogni dipendente). Contoso è assegnato un sistema telefonico di 25 Plus 60 Microsoft 365-licenze per gli utenti virtuali, 85 in totale. La propria organizzazione ha code di chiamate di 90 e operatori automatici con numeri di telefono. È necessario assegnare tutti i sistemi telefonici Microsoft 365-licenze per gli utenti virtuali e ottenere cinque licenze di sistema telefonico a prezzi regolari. 
+Contoso, Inc. ha acquistato le licenze 600 che includevano il sistema telefonico (uno per ogni dipendente). Contoso è assegnato un sistema telefonico di 25 Plus 60 Microsoft 365-licenze per gli utenti virtuali, 85 in totale. La propria organizzazione ha code di chiamate di 90 e operatori automatici con numeri di telefono. È necessario assegnare tutti i sistemi telefonici Microsoft 365-licenze per gli utenti virtuali e ottenere cinque licenze di sistema telefonico a prezzi regolari.
 
-Contoso dovrebbe valutare la possibilità di riprogettare l'operatore automatico e il sistema delle code di chiamata. Se usano meno numeri di telefono e altri nodi annidati che non hanno bisogno di un numero di telefono, semplificano l'implementazione e riducono i costi. 
+Contoso dovrebbe valutare la possibilità di riprogettare l'operatore automatico e il sistema delle code di chiamata. Se usano meno numeri di telefono e altri nodi annidati che non hanno bisogno di un numero di telefono, semplificano l'implementazione e riducono i costi.
 
-## <a name="how-to-buy-microsoft-365-phone-system--virtual-user-licenses"></a>Come acquistare Microsoft 365 Phone System-Virtual User licenses 
+## <a name="how-to-buy-microsoft-365-phone-system--virtual-user-licenses"></a>Come acquistare Microsoft 365 Phone System-Virtual User licenses
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
-2. Accedere ai**componenti aggiuntivi** per l'**acquisto di servizi** > di **fatturazione** > 
+2. Accedere ai **Billing**  >  **Purchase services**  >  **componenti aggiuntivi** per l'acquisto di servizi di fatturazione
 3. Scorrere fino alla fine per trovare il **sistema telefonico Microsoft 365-** licenza per gli utenti virtuali. Selezionare **Acquista ora**.
 
 > [!NOTE]
-> Tieni presente che devi comunque **acquistare** la licenza anche se ha un costo pari a zero. 
+> Tieni presente che devi comunque **acquistare** la licenza anche se ha un costo pari a zero.
 
 ## <a name="change-an-existing-resource-account-to-use-a-microsoft-365-phone-system--virtual-user-license"></a>Cambiare un account di risorse esistente per usare un sistema telefonico Microsoft 365-licenza utente virtuale
 
-Se si decide di cambiare la licenza per l'account delle risorse da una licenza di sistema telefonico a un sistema telefonico Microsoft 365-licenza utente virtuale: 
+Se si decide di cambiare la licenza per l'account delle risorse da una licenza di sistema telefonico a un sistema telefonico Microsoft 365-licenza utente virtuale:
 
-1. Ottenere il nuovo sistema telefonico Microsoft 365-licenza per gli utenti virtuali. 
-2. Seguire i passaggi collegati nell'interfaccia di amministrazione di Microsoft 365 per [trasferire gli utenti a un altro abbonamento](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?redirectSourcePath=%252farticle%252f997596b5-4173-4627-b915-36abac6786dc&view=o365-worldwide#move-users-to-a-different-subscription). 
+1. Ottenere il nuovo sistema telefonico Microsoft 365-licenza per gli utenti virtuali.
+2. Seguire i passaggi collegati nell'interfaccia di amministrazione di Microsoft 365 per [trasferire gli utenti a un altro abbonamento](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users#move-users-to-a-different-subscription).
 
 > [!WARNING]
 > Rimuovere sempre una licenza per il sistema telefonico completo e assegnare il sistema telefonico Microsoft 365-licenza per gli utenti virtuali nella stessa attività di licenza. Se si rimuove la vecchia licenza, si salvano le modifiche dell'account, si aggiunge la nuova licenza e quindi si salvano di nuovo le impostazioni dell'account, l'account delle risorse potrebbe non funzionare più come previsto. In questo caso, è consigliabile creare un nuovo account delle risorse per il sistema telefonico Microsoft 365-licenza per gli utenti virtuali e rimuovere l'account delle risorse interrotte. 

@@ -13,12 +13,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Configurare un account delle risorse per Skype for Business Server 2019.
-ms.openlocfilehash: b5397a1d179ade5e9d70d6c9cf857bae9319d155
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: f858ea5e18a7d433ca04a9a55c4c0582d5f096ce
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221136"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44868433"
 ---
 # <a name="configure-resource-accounts"></a>Configurare gli account delle risorse
 
@@ -84,7 +84,7 @@ La creazione di un account delle risorse che utilizza un numero di telefono rich
 
     Per ulteriori informazioni su questo comando, vedere [Start-ADSyncSyncCycle](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-scheduler) .
 
-5. Assegnare la licenza del sistema telefonico-utente virtuale o del sistema telefonico all'account delle risorse. Vedere [assegnare licenze per i componenti aggiuntivi di Microsoft teams](/MicrosoftTeams/teams-add-on-licensing/assign-teams-add-on-licenses) e [assegnare licenze a un utente](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?redirectSourcePath=%252farticle%252f997596b5-4173-4627-b915-36abac6786dc&view=o365-worldwide#assign-licenses-to-one-user).
+5. Assegnare la licenza del sistema telefonico-utente virtuale o del sistema telefonico all'account delle risorse. Vedere [assegnare licenze per i componenti aggiuntivi di Microsoft teams](/MicrosoftTeams/teams-add-on-licensing/assign-teams-add-on-licenses) e [assegnare licenze agli utenti](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
    Se si assegna un numero di telefono a un account delle risorse, è ora possibile utilizzare il sistema telefonico senza costi-licenza utente virtuale. Questo fornisce funzionalità del sistema telefonico ai numeri di telefono a livello di organizzazione e consente di creare funzionalità di operatore automatico e coda di chiamata.
 
@@ -199,9 +199,9 @@ La migrazione dalla messaggistica unificata di Exchange al sistema telefonico ri
 
 [Configurare un operatore automatico cloud](/MicrosoftTeams/create-a-phone-system-auto-attendant)  
 
-[Pianificare gli operatori automatici del cloud](plan-cloud-auto-attendant.md)
+[Pianificare gli operatori automatici cloud](plan-cloud-auto-attendant.md)
 
-[Pianificare le code di chiamata cloud](plan-call-queue.md)
+[Pianificare le code delle chiamate cloud](plan-call-queue.md)
 
 [Pianificare il servizio di segreteria cloud per gli utenti locali](plan-cloud-voicemail.md)
 

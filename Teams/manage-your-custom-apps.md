@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come portare le app teams personalizzate dallo sviluppo alla distribuzione.
-ms.openlocfilehash: a2896a2aa2b2d9750afd147b113a76637514afb6
-ms.sourcegitcommit: b5c747e2daad6dd3c1d91f4e61ae6f26db5c77f0
+ms.openlocfilehash: 705f5ecf5628dd981a4deb3ded847b3da8e9ea08
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064531"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44868513"
 ---
 # <a name="manage-your-custom-apps-in-microsoft-teams"></a>Gestire le app personalizzate in Microsoft Teams
 
@@ -41,7 +41,7 @@ Per creare e gestire app personalizzate in teams, sono necessari due tenant: un 
 
 ### <a name="create-test-users"></a>Creare utenti di test
 
-Assicurarsi che gli sviluppatori, sia interni che esterni, abbiano account nel tenant di test. Leggi <a href="https://docs.microsoft.com/office365/admin/add-users/add-users" target="_blank">altre informazioni sull'aggiunta di utenti</a>.
+Assicurarsi che gli sviluppatori, sia interni che esterni, abbiano account nel tenant di test. Leggi <a href="https://docs.microsoft.com/microsoft-365/admin/add-users/add-users" target="_blank">altre informazioni sull'aggiunta di utenti</a>.
 
 ### <a name="allow-custom-apps-in-the-test-tenant"></a>Consentire app personalizzate nel tenant di test
 
@@ -50,13 +50,13 @@ Per offrire agli sviluppatori l'accesso necessario per il test, consentire a tut
 Per consentire agli utenti di caricare app personalizzate, eseguire le operazioni seguenti:
 
 1. Attivare l'impostazione **Consenti interazione con** le app personalizzate per l'intera organizzazione. Procedi come segue.
-    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>, passa a **Teams Apps** > **Manage Apps**, quindi fai clic su **impostazioni dell'app a livello di organizzazione**.
+    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>, passa a **Teams Apps**  >  **Manage Apps**, quindi fai clic su **impostazioni dell'app a livello di organizzazione**.
     2. In **app personalizzate**attivare Consenti l' **interazione con le app personalizzate**e quindi fare clic su **Salva**.
 
     ![Screenshot dell'impostazione dell'app "Consenti interazione con le app personalizzate" a livello di organizzazione](media/manage-your-lob-apps-org-wide-custom-apps.png)
 
 2. Attivare l'impostazione **carica app personalizzate** nei criteri di configurazione dell'app globale. Procedi come segue.
-    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>, accedere ai**criteri di configurazione**delle **app** > teams e quindi fare clic sul criterio **globale (a livello di organizzazione)** .
+    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>, accedere ai criteri di configurazione delle **app teams**  >  **Setup policies**e quindi fare clic sul criterio **globale (a livello di organizzazione)** .
     2. Attivare **carica app personalizzate**e quindi fare clic su **Salva**.
 
     ![Screenshot dell'impostazione di criteri di installazione dell'app "carica app personalizzate"](media/manage-your-lob-apps-app-setup-custom-apps.png)
@@ -86,13 +86,13 @@ Per verificare che l'app funzioni correttamente nel tenant di produzione, è nec
 Per consentire agli utenti attendibili di caricare app personalizzate, eseguire le operazioni seguenti:
 
 1. Attivare l'impostazione **Consenti interazione con** le app personalizzate per l'intera organizzazione. Procedi come segue.
-    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>, passa a **Teams Apps** > **Manage Apps**, quindi fai clic su **impostazioni dell'app a livello di organizzazione**.
+    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>, passa a **Teams Apps**  >  **Manage Apps**, quindi fai clic su **impostazioni dell'app a livello di organizzazione**.
     2. In **app personalizzate**attivare Consenti l' **interazione con le app personalizzate**e quindi fare clic su **Salva**.
 2. Disattivare l'impostazione **carica app personalizzate** nei criteri di configurazione dell'app globale. Procedi come segue.
-    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>, accedere ai**criteri di configurazione**delle **app** > teams e quindi fare clic sul criterio **globale (a livello di organizzazione)** .
+    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>, accedere ai criteri di configurazione delle **app teams**  >  **Setup policies**e quindi fare clic sul criterio **globale (a livello di organizzazione)** .
     2. Disattivare **carica app personalizzate**e quindi fare clic su **Salva**.
 3. Crea un nuovo criterio di configurazione dell'app che consente di caricare app personalizzate e assegnarlo al set di utenti attendibili. Procedi come segue.
-    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>accedere ai**criteri di configurazione**delle **app** > teams e quindi fare clic su **Aggiungi**. Assegnare al nuovo criterio un nome e una descrizione, attivare **carica app personalizzate**e quindi fare clic su **Salva**.
+    1. Nella barra di spostamento sinistra dell'interfaccia di <a href="https://admin.teams.microsoft.com/" target="_blank">amministrazione di Microsoft teams</a>accedere ai criteri di configurazione delle **app teams**  >  **Setup policies**e quindi fare clic su **Aggiungi**. Assegnare al nuovo criterio un nome e una descrizione, attivare **carica app personalizzate**e quindi fare clic su **Salva**.
     2. Selezionare il nuovo criterio creato e quindi fare clic su **Gestisci utenti**. Cercare un utente, fare clic su **Aggiungi**e quindi su **applica**. Ripetere questo passaggio per assegnare i criteri a tutti gli utenti attendibili.
 
         ![Screenshot della pagina "Aggiungi criteri di configurazione dell'app"](media/manage-your-lob-apps-new-app-setup-policy.png)
@@ -125,7 +125,7 @@ Per impostazione predefinita, per consentire agli utenti di trovare l'app, è ne
 
 Per aggiornare un'app, gli sviluppatori devono continuare a seguire il [passaggio 1](#step-1-develop-and-test) e il [passaggio 2](#step-2-validate-in-production).
 
-Puoi aggiornare l'app tramite il catalogo app tenant. A questo scopo, nell'interfaccia di amministrazione di Microsoft teams, vai alle >  **app teams****Manage Apps**. Nell'elenco delle app fare clic sul nome dell'app e quindi su **Aggiorna**. Questa operazione sostituisce l'app esistente nel catalogo dell'app tenant e tutti i criteri di autorizzazione per le app e i criteri di configurazione delle app restano applicati per l'app aggiornata.
+Puoi aggiornare l'app tramite il catalogo app tenant. A questo scopo, nell'interfaccia di amministrazione di Microsoft teams, vai alle **app teams**  >  **Manage Apps**. Nell'elenco delle app fare clic sul nome dell'app e quindi su **Aggiorna**. Questa operazione sostituisce l'app esistente nel catalogo dell'app tenant e tutti i criteri di autorizzazione per le app e i criteri di configurazione delle app restano applicati per l'app aggiornata.
 
 ### <a name="end-user-update-experience"></a>Esperienza di aggiornamento degli utenti finali
 

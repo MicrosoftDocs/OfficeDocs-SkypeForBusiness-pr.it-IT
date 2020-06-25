@@ -24,12 +24,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni su come attivare e usare il dashboard qualità chiamata e ottenere report riepilogativi sulla qualità delle chiamate.
-ms.openlocfilehash: 965392e02fa0ff24b38c8191b7b2a7aef904a723
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 8f1bd778cfa24551d90b0186e606235193a47b0d
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44697445"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44874271"
 ---
 # <a name="turn-on-and-use-call-quality-dashboard-for-microsoft-teams-and-skype-for-business-online"></a>Attivare e usare la chiamata Quality dashboard per Microsoft teams e Skype for business online
 
@@ -41,7 +41,7 @@ Attualmente, Advanced Call Quality dashboard e Call Quality dashboard sono entra
 
 ## <a name="assign-roles-for-accessing-cqd"></a>Assegnare ruoli per l'accesso a Call Quality dashboard
 
-Assegnare [ruoli](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles) per accedere a Call Quality dashboard alle persone che devono usarle. 
+Assegnare [ruoli](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) per accedere a Call Quality dashboard alle persone che devono usarle.
 
 Questa tabella Mostra gli elementi che ogni ruolo può eseguire in Call Quality Dashboard:
 

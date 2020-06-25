@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4e2ca0b4088a7855da8cf2bc5196ecc9f2082475
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 58f8424342fa609124a3b658fbde9d7d297d7b44
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44637945"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44868473"
 ---
 # <a name="meetings-first"></a>Riunioni al primo posto
 
@@ -82,7 +82,7 @@ Una volta soddisfatti questi requisiti (e non prima), gli utenti possono essere 
 
 Per la prima esperienza delle riunioni migliori, gli utenti devono essere abilitati per la creazione di gruppi di [Exchange Online](exchange-teams-interact.md), [SharePoint Online e OneDrive for Business](sharepoint-onedrive-interact.md)e Microsoft 365. Riunioni prima è supportato per gli utenti la cui cassetta postale si trova in Exchange locale o che non dispongono di SharePoint Online o OneDrive for business o creazione di gruppi di Microsoft 365. Tuttavia, la loro esperienza sarà meno completa. In particolare, per le organizzazioni che usano Exchange Server locale, potrebbe essere possibile (a seconda della versione di Exchange Server) alcune limitazioni per la creazione e la visualizzazione di riunioni dal client teams, nonché per quanto riguarda le funzionalità di conformità.
 
-Almeno gli utenti devono essere [concessi in licenza per i team](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/assign-licenses-to-users?view=o365-worldwide). Possono inoltre essere concessi in licenza per i servizi di [audioconferenza](set-up-audio-conferencing-in-teams.md), se necessario.
+Almeno gli utenti devono essere [concessi in licenza per i team](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users). Possono inoltre essere concessi in licenza per i servizi di [audioconferenza](set-up-audio-conferencing-in-teams.md), se necessario.
 
 Ti consigliamo di [concedere la modalità **SfBOnly** o **SfBWithTeamsCollab** ](https://docs.microsoft.com/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps) come predefinito del tenant al momento della licenza per gli utenti. In questo modo gli utenti non inizieranno a usare i team da soli nella modalità **isole** predefinite prima di essere pronti per avviare prima le riunioni.
 

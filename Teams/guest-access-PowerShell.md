@@ -17,12 +17,12 @@ description: Informazioni su come usare PowerShell per consentire o bloccare l'a
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d438b9d5cf3af8d200da07fcebe39f4222c2b25a
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 8c77b34103913d850b29c84096251b3b2795f684
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44637305"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44867983"
 ---
 <a name="use-powershell-to-control-guest-access-to-a-team"></a>Usare PowerShell per controllare l'accesso guest a un team
 ================================================
@@ -35,7 +35,7 @@ Oltre a usare l'interfaccia di amministrazione di Microsoft 365 e il portale di 
 
 - Consentire o bloccare gli utenti Guest da un team specifico o da un gruppo di Microsoft 365
 
-Per informazioni dettagliate, vedere "usare PowerShell per controllare l'accesso guest" in [gestire l'accesso guest nei gruppi di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/manage-guest-access-in-groups#use-powershell-to-control-guest-access).
+Per informazioni dettagliate, vedere "usare PowerShell per controllare l'accesso guest" in [gestire l'accesso guest nei gruppi di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-guest-access-in-groups).
 
   
 È anche possibile usare PowerShell per consentire o bloccare un utente guest in base al proprio dominio. Ad esempio, supponiamo che la tua azienda (contoso) abbia una partnership con un'altra azienda (Fabrikam). È possibile aggiungere Fabrikam all'elenco consentiti in modo che gli utenti possano aggiungere tali Guest ai rispettivi gruppi. Per altre informazioni, vedere [consentire/bloccare l'accesso Guest ai gruppi di Microsoft 365](https://go.microsoft.com/fwlink/?linkid=854001).

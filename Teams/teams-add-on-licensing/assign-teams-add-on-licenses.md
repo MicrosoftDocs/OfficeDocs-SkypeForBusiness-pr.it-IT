@@ -16,12 +16,12 @@ ms.reviewer: mikedav
 description: Informazioni su come assegnare licenze per i componenti aggiuntivi per i team agli utenti per le caratteristiche come l'audioconferenza, il sistema telefonico e i piani di chiamata.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9c7c455628f7595e1517fbd0cef8d2edc454ffbb
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: c7faaf2e65330aafd809872ed19b5f2f16afc668
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042776"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44868583"
 ---
 # <a name="assign-teams-add-on-licenses-to-users"></a>Assegnare licenze per i componenti aggiuntivi per i team agli utenti
 
@@ -48,7 +48,7 @@ Prima di iniziare, esaminare le operazioni seguenti:
 
 ## <a name="using-the-microsoft-365-admin-center"></a>Uso dell'interfaccia di amministrazione di Microsoft 365
 
-Usare l'interfaccia di amministrazione di Microsoft 365 per assegnare licenze a singoli utenti o a piccoli gruppi di utenti alla volta. È possibile assegnare licenze nella pagina **licenze** (per un massimo di 20 utenti alla volta) o nella pagina **utenti attivi** . Il metodo scelto varia a seconda che si vogliano gestire le licenze di prodotto per utenti specifici o gestire le licenze utente per prodotti specifici. 
+Usare l'interfaccia di amministrazione di Microsoft 365 per assegnare licenze a singoli utenti o a piccoli gruppi di utenti alla volta. È possibile assegnare licenze nella pagina **licenze** (per un massimo di 20 utenti alla volta) o nella pagina **utenti attivi** . Il metodo scelto varia a seconda che si vogliano gestire le licenze di prodotto per utenti specifici o gestire le licenze utente per prodotti specifici.
 
 Per istruzioni dettagliate, vedere [assegnare licenze agli utenti](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users).
 
@@ -71,7 +71,7 @@ Ecco un esempio di come usare uno script per assegnare licenze agli utenti.
         ```
     3. Se viene richiesto di installare il provider NuGet, digitare **Y**e quindi premere INVIO.
     4. Se viene richiesto di installare il modulo da PSGallery, digitare **Y**e quindi premere INVIO.
-3. Al prompt dei comandi di Windows PowerShell eseguire lo script seguente per assegnare le licenze agli utenti, dove \<CompanyName: License> è il nome dell'organizzazione e l'identificatore della licenza che si vuole assegnare. Ad esempio, litwareinc: MCOMEETADV.
+3. Al prompt dei comandi di Windows PowerShell eseguire lo script seguente per assegnare licenze agli utenti, dove \<CompanyName:License> si trova il nome dell'organizzazione e l'identificatore per la licenza che si vuole assegnare. Ad esempio, litwareinc: MCOMEETADV.
 
     L'identificatore è diverso dal nome descrittivo della licenza. Ad esempio, l'identificatore per i servizi di audioconferenza è MCOMEETADV. Per altre informazioni, vedere [nomi di prodotti e identificatori SKU per le licenze](#product-names-and-sku-identifiers-for-licensing).
 

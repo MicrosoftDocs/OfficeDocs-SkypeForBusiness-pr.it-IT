@@ -17,18 +17,18 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41d7241cc0ffddf1042a3fe46f75def76c1ccf04
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: a87ee4f846002537311fc5a9a9dd2e5f22757b0e
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43903031"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44868123"
 ---
 # <a name="create-an-org-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
 I team a livello di organizzazione forniscono agli utenti delle organizzazioni di piccole e medie dimensioni una modalità automatica di partecipazione a un singolo team per la collaborazione.
 
-Con i team a livello di organizzazione, gli amministratori globali possono creare facilmente un team pubblico che include tutti gli utenti dell'organizzazione e mantiene l'appartenenza aggiornata con Active Directory man mano che gli utenti entrano nell'organizzazione o la lasciano. Solo gli amministratori globali possono creare team a livello di organizzazione. Attualmente, un team a livello di organizzazione è limitato alle organizzazioni con un massimo di 5.000 utenti. Esiste anche un limite di cinque team a livello di organizzazione per tenant. Se questi requisiti sono soddisfatti, gli amministratori globali vedranno l'opzione **A livello di organizzazione** quando selezionano **Crea un team da zero** durante la creazione di un team. 
+Con i team a livello di organizzazione, gli amministratori globali possono creare facilmente un team pubblico che include tutti gli utenti dell'organizzazione e mantiene l'appartenenza aggiornata con Active Directory man mano che gli utenti entrano nell'organizzazione o la lasciano. Solo gli amministratori globali possono creare team a livello di organizzazione e attualmente un team a livello di organizzazione è limitato alle organizzazioni che non hanno più di 5.000 utenti. Esiste anche un limite di cinque team a livello di organizzazione per tenant. Se questi requisiti sono soddisfatti, gli amministratori globali vedranno l'opzione **A livello di organizzazione** quando selezionano **Crea un team da zero** durante la creazione di un team. 
 
 ![Screenshot dell'opzione per la creazione di un team a livello di organizzazione](media/create-org-wide-team.png "Screenshot dell'opzione per la creazione di un team a livello di organizzazione")
 
@@ -45,7 +45,7 @@ Questi tipi di account non verranno aggiunti al team a livello di organizzazione
 Quando la directory dell'organizzazione viene aggiornata per includere nuovi utenti attivi oppure se alcuni gli utenti non lavorano più presso l'azienda e i loro account vengono disabilitati, le modifiche vengono sincronizzate automaticamente e gli utenti vengono aggiunti o rimossi dal team. I membri del team non possono abbandonare un team a livello di organizzazione. Il proprietario del team può aggiungere o rimuovere manualmente utenti, se necessario.
 
 > [!NOTE]
-> - Se si è un amministratore globale e l'opzione **A livello di organizzazione** non viene visualizzata durante la creazione di un team, è possibile che la funzionalità sia ancora in fase di distribuzione, che sia stato raggiunto il limite di cinque team a livello di organizzazione oppure che l'organizzazione abbia più dei 5.000 membri attualmente consentiti. Contiamo di aumentare il limite in futuro. I team a livello di organizzazione non sono ancora disponibili per Teams per l'istruzione.
+> - Se non si vede l'opzione a **livello** di organizzazione quando si crea un team e si è un amministratore globale, è possibile che sia stato raggiunto il limite di cinque team a livello di organigramma oppure che la propria azienda possa avere più del limite di dimensione corrente dei membri di 5.000. Contiamo di aumentare il limite in futuro. I team a livello di organizzazione non sono ancora disponibili per Teams per l'istruzione.
 > - Le sale che non fanno parte di un elenco di account di sale, attrezzature e risorse potrebbero essere aggiunte o sincronizzate con il team dell'organizzazione. I proprietari del team possono rimuovere facilmente questi account dal team.
 > - Tutte le azioni del sistema per aggiungere o rimuovere membri sono pubblicate nel canale Generale. Inoltre, nel client di Teams sarà indicato che il canale ha nuove attività.
 > - Se l'organizzazione non ha più di 5.000 utenti e ha appena implementato Teams, creeremo automaticamente un team a livello di organizzazione. Il nome del team rifletterà il nome del tenant e avrà un canale Generale. Gli amministratori globali possono modificare questo team come qualsiasi altro team. 
@@ -78,7 +78,7 @@ Anche se i membri non possono uscire da un team a livello di organizzazione, com
 
 ### <a name="is-there-a-way-to-create-an-org-wide-team-other-than-using-the-teams-client"></a>Esiste un modo per creare un team a livello di organizzazione diverso dall'uso del client di Teams?
 
-Gli amministratori globali possono creare un team a livello di organizzazione solo usando il client di Teams. Se l'organizzazione impone la creazione di team con PowerShell, la soluzione alternativa consigliata consiste nell'aggiungere gli amministratori globali al gruppo di sicurezza degli utenti che possono creare un team. Per altre informazioni, vedere [Gestire chi può creare gruppi di Microsoft 365](https://docs.microsoft.com/office365/admin/create-groups/manage-creation-of-groups).
+Gli amministratori globali possono creare un team a livello di organizzazione solo usando il client di Teams. Se l'organizzazione impone la creazione di team con PowerShell, la soluzione alternativa consigliata consiste nell'aggiungere gli amministratori globali al gruppo di sicurezza degli utenti che possono creare un team. Per altre informazioni, vedere [gestire chi può creare gruppi](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-creation-of-groups).
 
 Se questo non è possibile, è possibile usare PowerShell per creare un team pubblico e aggiungere un amministratore globale come proprietario del team. Quindi, l'amministratore globale deve fare clic su **Altre opzioni** accanto al nome del team, fare clic su **Modifica team** e modificare la privacy in **A livello di organizzazione: tutti gli utenti dell'organizzazione verranno aggiunti automaticamente**. Tenere presente che solo i proprietari del team possono accedere all'opzione **Modifica team** e solo gli amministratori globali possono vedere l'opzione **A livello di organizzazione**.
 

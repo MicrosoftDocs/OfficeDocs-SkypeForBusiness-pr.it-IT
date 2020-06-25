@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: 30d67c34e4ef0b7d94b9161bd5f12c51006aaa4e
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: dc05c885b3b2eb5ef4991a6580ebcb0751c87f39
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44669420"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44874253"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
 
@@ -51,8 +51,8 @@ Se è già stata [ottimizzata la rete per microsoft 365 o Office 365](https://do
     
 2.  Si dispone di un dominio verificato per Microsoft 365 o Office 365 (ad esempio, contoso.com)?
     
-      - Se l'organizzazione non ha implementato Microsoft 365 o Office 365, vedere [Introduzione a microsoft 365 o office 365 for business](https://docs.microsoft.com/office365/admin/admin-overview/get-started-with-office-365).
-      - Se l'organizzazione non ha aggiunto o configurato un dominio verificato per Microsoft 365 o Office 365, vedere [verificare il dominio microsoft 365 o office 365](https://docs.microsoft.com/office365/admin/setup/domains-faq).
+      - Se l'organizzazione non ha implementato Microsoft 365 o Office 365, vedere [Introduzione](https://docs.microsoft.com/microsoft-365/admin/admin-overview/get-started-with-office-365).
+      - Se l'organizzazione non ha aggiunto o configurato un dominio verificato per Microsoft 365 o Office 365, vedere le [domande frequenti sui domini](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).
 
 3.  L'organizzazione ha distribuito Exchange Online e SharePoint Online?
     
@@ -99,7 +99,7 @@ Per una discussione approfondita sull'ottimizzazione della rete, tra cui indicaz
 </tr>
 <tr class="even">
 <td>Advisor per Teams</td>
-<td><a href="https://docs.microsoft.com/microsoftteams/use-advisor-teams-roll-out">Advisor per Teams</a> fa parte dell'interfaccia di <a href="https://admin.teams.microsoft.com">amministrazione di teams</a>. Valuta l'ambiente Microsoft 365 o Office 365 e identifica le configurazioni più comuni che potrebbe essere necessario aggiornare o modificare prima di poter implementare correttamente i team.</td>
+<td><a href="https://docs.microsoft.com/microsoftteams/use-advisor-teams-roll-out">Advisor per Teams</a> fa parte dell'interfaccia di <a href="https://admin.teams.microsoft.com">amministrazione di teams</a>. Valuta l'ambiente di Microsoft 365 o Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente Teams.</td>
 </tr>
 <tr class="odd">
 <td>Risoluzione dei nomi esterni</td>
