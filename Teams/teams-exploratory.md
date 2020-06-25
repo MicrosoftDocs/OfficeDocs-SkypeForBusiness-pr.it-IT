@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a342c27c7379ed11e691098fe309fe4e429cb1e0
-ms.sourcegitcommit: af15d99837a389b6b26952211e65cd68c4b7f46e
+ms.openlocfilehash: 99017e63ae784c7c4271454829198c7c06ecfe8e
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785302"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44868463"
 ---
 <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 =======================================================
@@ -154,7 +154,7 @@ Quando un utente accede all'offerta Microsoft Teams Commercial Cloud Trial scadu
 
 - Se si vuole rimuovere questa licenza con PowerShell, vedere [Rimuovere le licenze dagli account utente con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/remove-licenses-from-user-accounts-with-office-365-powershell)
 
-- Se si vuole rimuovere questa licenza tramite il portale di amministrazione, vedere [Eliminare un utente dall'organizzazione](https://docs.microsoft.com/office365/admin/subscriptions-and-billing/remove-licenses-from-users?view=o365-worldwide)
+- Se si vuole rimuovere questa licenza tramite il portale di amministrazione, vedere [Eliminare un utente dall'organizzazione](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user)
 
 ## <a name="how-long-does-the-teams-exploratory-experience-last"></a>Qual è la durata dell'esperienza di Teams Exploratory?
 
