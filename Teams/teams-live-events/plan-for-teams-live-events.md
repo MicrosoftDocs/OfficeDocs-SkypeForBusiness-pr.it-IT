@@ -18,12 +18,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ae4b4c06d6340c89cf41e271db8bcd359f27d211
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 424798b7f9acf1445510eb6a072631dda9501307
+ms.sourcegitcommit: 27fae90d4429e81143ea285edab9dbc19bd3c0bb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689732"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "44854108"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -67,6 +67,14 @@ L'utente deve disporre di:
 
 > [!IMPORTANT]
 > Gli utenti anonimi non autenticati non possono essere invitati come produttori o relatori negli eventi live di Teams.
+
+Per rendere un utente guest relatore in un evento live, eseguire le operazioni seguenti:
+
+1. [Aggiungere l'utente come guest a un team](https://support.office.com/article/add-guests-to-a-team-fccb4fa6-f864-4508-bdde-256e7384a14f).
+2. Chiedere all'utente di accettare l'invito di guest e accedere al team.
+3. [Pianificare l'evento live e aggiungere l'utente guest al gruppo di eventi](https://support.microsoft.com/article/schedule-a-teams-live-event-7a9ce97c-e1cd-470f-acaf-e6dfc179a0e2).
+
+Come procedura consigliata, creare un canale per i produttori e i relatori dell'evento live in modo che possano chattare e condividere informazioni prima dell'evento. Gli utenti che non hanno credenziali di Microsoft 365 non vedranno il calendario in Teams. Per rendere più semplice l'accesso all'evento, i produttori possono pubblicare il collegamento all'evento nel canale. I relatori possono quindi aprire Teams, accedere al canale e infine fare clic sul collegamento per partecipare all'evento. 
 
 ## <a name="who-can-watch-live-events"></a>Chi può assistere agli eventi live
 
@@ -117,7 +125,7 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 |Didascalie e sottotitoli in tempo reale |&#x2714; |&#x2714; |&#x274C; |
 |Didascalie nelle registrazioni degli eventi live |&#x2714; |&#x2714; |&#x2714; |
 |Controlli DVR dei partecipanti (pausa, riavvolgimento) |&#x2714; |&#x2714; |&#x2714; |
-|Supporto eCDN per partner |&#x2714; (Kollective, Ramp) |&#x2714; (Kollective, Ramp) |&#x2714; (Hive, Kollective, Ramp) |
+|Supporto eCDN per partner |&#x2714; (Kollective, Hive) |&#x2714; (Kollective, Hive) |&#x2714; (Hive, Kollective, Ramp) |
 |Report presenze per i produttori dopo la trasmissione |&#x2714; |&#x2714; |&#x274C; |
 |Analisi delle valutazioni dei partecipanti - Votazioni e sondaggi in tempo reale |&#x2714; (Microsoft Pulse) |&#x274C; |&#x274C; |
 
