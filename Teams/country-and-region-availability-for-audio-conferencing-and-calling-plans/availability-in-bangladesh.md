@@ -1,9 +1,9 @@
 ---
-title: Disponibilità in Algeria
-author: LanaChin
-ms.author: v-lanac
+title: Disponibilità in Bangladesh
+author: cichur
+ms.author: v-cichur
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole
+ms.reviewer: fafan
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -23,25 +23,25 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'Algeria.
-ms.openlocfilehash: 541414367e53449628be50ce0885b65000a4aec4
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per il Bangladesh.
+ms.openlocfilehash: 1ec0337d6c63f97197908375c2c8a3712f5b9621
 ms.sourcegitcommit: 0979fae58ecd713f8317ed99caae015b5cc2c8e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/25/2020
-ms.locfileid: "44877897"
+ms.locfileid: "44878029"
 ---
-# <a name="availability-in-algeria"></a>Disponibilità in Algeria
+# <a name="availability-in-bangladesh"></a>Disponibilità in Bangladesh
 
 [Per trovare un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o per altre informazioni sulla disponibilità di Piano chiamata e Audioconferenza per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'Algeria.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per Bangladash.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì. Solo pay-per-minute.  <br/> |
+|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì. Solo pay-per-minute. <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> | No |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> | Richiede crediti di comunicazione <br/> |
    

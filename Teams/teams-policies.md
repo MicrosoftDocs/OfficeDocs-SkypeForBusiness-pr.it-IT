@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.teamsandchannelpolicies.overview
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.discover
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.create
-ms.openlocfilehash: f046a21ee0ff0bf4fe49feea2c4a38702516227a
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: b28b61a6b2d4c441fc69d0e50124df50f95b4a49
+ms.sourcegitcommit: 2e8a61abdd586bf8f0f88cac3b7d4ca4b9d9be34
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44690962"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44889975"
 ---
 # <a name="manage-teams-policies-in-microsoft-teams"></a>Gestire i criteri dei team in Microsoft Teams
 
@@ -48,7 +48,7 @@ Per gestire i criteri dei team, è possibile **passare a**criteri teams teams ne
     ![Screenshot delle impostazioni dei criteri di Teams](media/teams-policies.png)
 4. Scegliere le impostazioni desiderate:
 
-- **Scoprire team privati**:<a name="discoverteams"> </a> attivare questa impostazione per consentire agli utenti di individuare team privati nei risultati della ricerca e nella raccolta team.
+- **Individuazione di team privati** (in anteprima privata)<a name="discoverteams"> </a> : attivare questa impostazione per consentire agli utenti di individuare team privati nei risultati della ricerca e nella raccolta team.
 - **Creare canali privati**: <a name="createchannels"> </a>attivare questa impostazione per consentire agli utenti di creare canali privati.
 
 5. Fare clic su **Salva**.

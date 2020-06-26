@@ -1,9 +1,9 @@
 ---
-title: Disponibilità in Algeria
-author: LanaChin
-ms.author: v-lanac
+title: Disponibilità in Isole Turks e Caicos
+author: cichur
+ms.author: v-cichur
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole
+ms.reviewer: fafan
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -23,25 +23,25 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'Algeria.
-ms.openlocfilehash: 541414367e53449628be50ce0885b65000a4aec4
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per i turchi e le Isole Caicos.
+ms.openlocfilehash: c3aa3f7f653996cbc5518d89095ff231b88798c8
 ms.sourcegitcommit: 0979fae58ecd713f8317ed99caae015b5cc2c8e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/25/2020
-ms.locfileid: "44877897"
+ms.locfileid: "44878021"
 ---
-# <a name="availability-in-algeria"></a>Disponibilità in Algeria
+# <a name="availability-in-turks-and-caicos-islands"></a>Disponibilità in Isole Turks e Caicos
 
 [Per trovare un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o per altre informazioni sulla disponibilità di Piano chiamata e Audioconferenza per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'Algeria.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per i turchi e le Isole Caicos.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì. Solo pay-per-minute.  <br/> |
+|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì. Solo pay-per-minute. <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> | No |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> | Richiede crediti di comunicazione <br/> |
    
@@ -68,9 +68,9 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Non geografica. I numeri di telefono non sono associati a una località o a una città specifica. <br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Non geografica ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
-|I numeri verdi sono disponibili?  <br/> |No  <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Non applicabile<br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |No<br/> |
+|I numeri verdi sono disponibili?  <br/> |Sì  <br/> |
    
  Per ottenere numeri di telefono a pedaggio e a pedaggio gratuito per i servizi di audioconferenza, gli operatori automatici e le code di chiamata, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers).
   

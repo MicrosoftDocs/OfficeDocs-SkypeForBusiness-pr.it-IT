@@ -1,9 +1,9 @@
 ---
-title: Disponibilità in Algeria
-author: LanaChin
-ms.author: v-lanac
+title: Disponibilità in Guatemala
+author: cichur
+ms.author: v-cichur
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole
+ms.reviewer: fafan
 ms.topic: reference
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -23,19 +23,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'Algeria.
-ms.openlocfilehash: 541414367e53449628be50ce0885b65000a4aec4
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per il Guatemala.
+ms.openlocfilehash: c86ffbaf3c8d3f01f691a05c2591423f8e9d5701
 ms.sourcegitcommit: 0979fae58ecd713f8317ed99caae015b5cc2c8e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/25/2020
-ms.locfileid: "44877897"
+ms.locfileid: "44878030"
 ---
-# <a name="availability-in-algeria"></a>Disponibilità in Algeria
+# <a name="availability-in-guatemala"></a>Disponibilità in Guatemala
 
 [Per trovare un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o per altre informazioni sulla disponibilità di Piano chiamata e Audioconferenza per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per l'Algeria.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per il Guatemala.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
@@ -68,8 +68,8 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Non geografica. I numeri di telefono non sono associati a una località o a una città specifica. <br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Non geografica ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
+|Per quali capitali o città principali puoi ottenere numeri a tariffa?   | Cuidad de Guatemala<br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
 |I numeri verdi sono disponibili?  <br/> |No  <br/> |
    
  Per ottenere numeri di telefono a pedaggio e a pedaggio gratuito per i servizi di audioconferenza, gli operatori automatici e le code di chiamata, vedere [recupero di numeri di telefono per Skype for business e Microsoft teams](/microsoftteams/getting-service-phone-numbers).

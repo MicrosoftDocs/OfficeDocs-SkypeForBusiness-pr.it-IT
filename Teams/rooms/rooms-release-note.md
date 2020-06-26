@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può leggere le note sulla versione per Microsoft teams rooms, che elencano i miglioramenti cumulativi nelle sale di Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f59242fd3877ff1a075668a405a558f0fe18c374
-ms.sourcegitcommit: 8b172e9a0d0626c9a88998600d4b17c6c8cdadd2
+ms.openlocfilehash: 7d2b03a954661920b2c31d03081f7d6853e06b12
+ms.sourcegitcommit: 0979fae58ecd713f8317ed99caae015b5cc2c8e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44761454"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44877917"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
@@ -29,6 +29,7 @@ In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di M
 
 |Rilascio |Pubblicato in <br/> Microsoft Store |
 |--- |--- |
+|4.4.63.0 |06/25/2020 |
 |4.4.41.0 |05/06/2020 |
 |4.4.25.0 |03/31/2020 |
 |4.3.42.0 |03/02/2020 |
@@ -63,6 +64,13 @@ In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di M
 |RTM (1.0.8) |12/7/2016 |
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Funzionalità di introduzione e risoluzione dei problemi di Microsoft teams rooms
+
+### <a name="44630-06252020"></a>4.4.63.0 (06/25/2020)
+
+Introdotti in questo aggiornamento:
+- Correzioni di qualità e affidabilità
+- Correzione di "applicazione non verrà avviata dopo l'aggiornamento a 4.4.41.0" problema
+
 
 ### <a name="44410-05062020"></a>4.4.41.0 (05/06/2020)
 

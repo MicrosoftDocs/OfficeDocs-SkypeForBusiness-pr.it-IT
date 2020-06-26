@@ -16,12 +16,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire i tag usati nell'organizzazione in Microsoft teams.
-ms.openlocfilehash: 9c17045a167c46cabc2c7bd0c89b7488996975ad
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: b19613268384831aaaa2608fc183b62fdc1b0445
+ms.sourcegitcommit: 0979fae58ecd713f8317ed99caae015b5cc2c8e4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44690857"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44877937"
 ---
 # <a name="manage-tags-in-microsoft-teams"></a>Gestire i tag in Microsoft Teams
 
@@ -38,6 +38,8 @@ Un tag può essere aggiunto a una persona in un team specifico. Dopo l'aggiunta 
 - Un Product Manager di gruppo vuole Message tutti i responsabili di prodotto in un canale.
 - Un amministratore dell'ospedale vuole inviare un messaggio a tutti i radiologi di un canale.
 - Un responsabile marketing vuole avviare una chat di gruppo con tutte le finestre di progettazione.
+
+Quando un tag viene @mentioned in una conversazione di canale, i membri del team associati al tag riceveranno una notifica, come qualsiasi altra @mention.
 
 Per altre informazioni, vedere [usare i contrassegni in teams](https://support.office.com/article/using-tags-in-teams-667bd56f-32b8-4118-9a0b-56807c96d91e).
 
@@ -77,10 +79,20 @@ Se è stato attivato il **proprietario del team può eseguire l'override di chi 
 
 ![Screenshot dell'impostazione di tag a livello di Team](media/manage-tags-team-settings.png)
 
-## <a name="add-tags-in-teams"></a>Aggiungere tag in teams
+## <a name="use-tags"></a>Usare i tag
 
-Per gestire i tag, seleziona **Gestisci teams** sul lato sinistro dell'app e trova il tuo team nell'elenco. Selezionare **altre opzioni**, quindi scegliere **Gestisci Tag**.
+### <a name="add-tags"></a>Aggiungere tag
+
+Per creare e assegnare tag, selezionare **Teams** sul lato sinistro dell'app e quindi trovare il team nell'elenco. Selezionare **altre opzioni**, quindi scegliere **Gestisci Tag**.
 
 In questo caso, è possibile creare i tag e assegnarli agli utenti del team.
 
 ![Screenshot che illustra come applicare i tag nel client Teams ](media/manage-tags-teams.png)
+
+### <a name="delete-tags"></a>Eliminare i tag
+
+Rimuovi tutti i membri del team associati al tag e il tag verrà eliminato.
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Uso di tag in teams](https://support.office.com/article/using-tags-in-teams-667bd56f-32b8-4118-9a0b-56807c96d91e)
