@@ -17,21 +17,21 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4511bf67926c831548084647195e21ed13fc08f5
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 0eb91032689ffccc5696d60e44e52e72d5f4f067
+ms.sourcegitcommit: 2e8a61abdd586bf8f0f88cac3b7d4ca4b9d9be34
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691202"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44889985"
 ---
 # <a name="admin-quick-start---meetings-and-live-events-in-microsoft-teams"></a>Guida introduttiva per l'amministratore - Riunioni ed eventi live in Microsoft Teams
 
 Esistono due modi per incontrarsi in Microsoft Teams: riunioni ed eventi live. Questo articolo illustra come implementare e configurare rapidamente riunioni ed eventi live per l'organizzazione. 
 
- - Le **riunioni** in Teams includono audio, video e condivisione dello schermo con un massimo di 250 persone. Sono uno dei modi principali per collaborare in Teams. Inoltre, non è necessario essere membri di un'organizzazione (né avere un account Teams) per partecipare a una riunione di Teams: nell'invito sono incluse tutte le istruzioni per collegarsi. 
+ - Le **riunioni** in Teams includono audio, video e condivisione dello schermo con un massimo di 300* persone. Sono uno dei modi principali per collaborare in Teams. Inoltre, non è necessario essere membri di un'organizzazione (né avere un account Teams) per partecipare a una riunione di Teams: nell'invito sono incluse tutte le istruzioni per collegarsi. 
 
- - Gli **eventi live** sono un'estensione delle riunioni di Teams. Permettono di pianificare e produrre eventi da trasmettere a un vasto pubblico online, fino a 10.000 persone. Per una riunione con più di 250 persone, usa un evento live.
-
+ - Gli **eventi live** sono un'estensione delle riunioni di Teams. Permettono di pianificare e produrre eventi da trasmettere a un vasto pubblico online, fino a 10.000 persone. Per una riunione con più di 300 persone, usare un evento live.
+<br><br>**Nota:** per Teams per enti pubblici (GCC, GCC High, DoD), il limite è ancora 250. Questo articolo verrà aggiornato appena il limite del cloud per enti pubblici passerà da 250 a 300.
 ## <a name="get-licenses-for-meetings-and-live-events"></a>Ottieni le licenze per le riunioni e gli eventi live
 
 Chiunque può partecipare gratuitamente a una riunione o a un evento live pubblico di Teams. Non è necessaria una licenza. Per partecipare a una riunione o a un evento live di Teams, è sufficiente fare clic sul pulsante **Partecipa** in Teams o nell'invito alla riunione. L'audio della riunione è incluso in una riunione di Teams, ma se vuoi consentire agli utenti di accedere a una riunione tramite telefono, dovrai specificare un numero di accesso esterno. 
