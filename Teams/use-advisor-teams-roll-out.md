@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Usare Advisor per Teams (anteprima pubblica) per pianificare e completare la distribuzione di Microsoft Teams.
-ms.openlocfilehash: 5c7c0cad16c61b498da0693653979c26da4b219f
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: ef9b22d7e4a3a3c3670acc766ee27cdc2c3de67c
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665258"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44868153"
 ---
 # <a name="use-advisor-for-teams-to-help-you-roll-out-microsoft-teams"></a>Usare Advisor per Teams per distribuire Microsoft Teams
 
@@ -89,7 +89,7 @@ Le sezioni seguenti descrivono le singole valutazioni, tra cui se un elemento è
 
 |Test di valutazione  |Cosa indica  |
 |---------|---------|
-|Dominio con reindirizzamento a microsito configurato     |Se è stato configurato un dominio non @onmicrosoft.com per il tenant, ad esempio @contoso.onmicrosoft.com. Naturalmente è possibile usare il dominio @onmicrosoft. com oppure configurare dominio con reindirizzamento a microsito, secondo l'opzione desiderata. Per altre informazioni, leggere [Aggiungere un dominio](https://docs.microsoft.com/office365/admin/setup/add-domain). |
+|Dominio con reindirizzamento a microsito configurato     |Se è stato configurato un dominio non @onmicrosoft.com per il tenant, ad esempio @contoso.onmicrosoft.com. Naturalmente è possibile usare il dominio @onmicrosoft. com oppure configurare dominio con reindirizzamento a microsito, secondo l'opzione desiderata. Per altre informazioni, leggere [Aggiungere un dominio a Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). |
 |Licenze di Teams     |Si tratta di un prerequisito: **è necessario** avere licenze di Teams per poter distribuire Teams. Eseguire una query in Microsoft Graph per verificare se si hanno licenze di Teams e almeno una licenza disponibile da assegnare. Per altre informazioni, leggere la [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).    |
 |Licenze di Exchange Online     |Se si dispone di un abbonamento attivo con licenze Exchange Online disponibili. Anche se Exchange non è necessario per la funzionalità di base di Teams, l'integrazione con Exchange offre un'esperienza di Teams ottimale. Eseguire una query in Microsoft Graph per analizzare le sottoscrizioni associate al tenant e verificare se si hanno sottoscrizioni con una licenza di Exchange Online idonea e almeno una licenza disponibile da assegnare. Per altre informazioni, vedere [Modalità di interazione tra Exchange e Teams](exchange-teams-interact.md).    |
 |Licenze di SharePoint Online     |Se si dispone di un abbonamento attivo con licenze SharePoint Online disponibili. È consigliabile usare le licenze SharePoint Online per utente per disporre di OneDrive for Business per l'archiviazione dei file nelle chat. Eseguire una query in Microsoft Graph per verificare se si hanno licenze di SharePoint Online e almeno una licenza disponibile da assegnare. Per altre informazioni, leggere [Modalità di interazione di SharePoint Online e OneDrive for Business con Teams](https://docs.microsoft.com/microsoftteams/sharepoint-onedrive-interact).    |
@@ -102,8 +102,8 @@ Oltre ai [test di valutazione per i carichi di lavoro](#assessment-tests-for-all
 
 |Test di valutazione  |Cosa indica  |
 |---------|---------|
-|Criteri di denominazione dei gruppi di Microsoft 365 configurati     |Se sono stati configurati gli standard di denominazione per i Gruppi di Microsoft 365. I criteri di denominazione per i Gruppi di Microsoft 365 consentono all'organizzazione di applicare una strategia di denominazione coerente con i team creati dall'utente e si applica anche ad altri carichi di lavoro dei Gruppi, tra cui Outlook, SharePoint, Planner e Yammer. Questo test esegue una query in Azure AD tramite Microsoft Graph per verificare l'esistenza di criteri di denominazione validi per i Gruppi di Microsoft 365. Per altre informazioni, leggere [Criteri di denominazione dei gruppi](https://docs.microsoft.com/office365/admin/create-groups/groups-naming-policy).    |
-|Criteri di scadenza dei gruppi di Microsoft 365 configurati     |Se i criteri di scadenza di un Gruppo sono stati definiti per i Gruppi di Microsoft 365. Questo consente all'organizzazione di rimuovere automaticamente Teams inattivi. Per impostazione predefinita l'opzione è disattivata. Questo test esegue una query in Azure AD tramite Microsoft Graph e indica se un valore è stato modificato rispetto all'impostazione predefinita. Per altre informazioni, leggere [Criteri di scadenza dei gruppi](https://docs.microsoft.com/office365/admin/create-groups/office-365-groups-expiration-policy).    |
+|Criteri di denominazione dei gruppi di Microsoft 365 configurati     |Se sono stati configurati gli standard di denominazione per i Gruppi di Microsoft 365. I criteri di denominazione per i Gruppi di Microsoft 365 consentono all'organizzazione di applicare una strategia di denominazione coerente con i team creati dall'utente e si applica anche ad altri carichi di lavoro dei Gruppi, tra cui Outlook, SharePoint, Planner e Yammer. Questo test esegue una query in Azure AD tramite Microsoft Graph per verificare l'esistenza di criteri di denominazione validi per i Gruppi di Microsoft 365. Per altre informazioni, leggere [Criterio di denominazione dei gruppi](https://docs.microsoft.com/microsoft-365/admin/create-groups/groups-naming-policy).    |
+|Criteri di scadenza dei gruppi di Microsoft 365 configurati     |Se i criteri di scadenza di un Gruppo sono stati definiti per i Gruppi di Microsoft 365. Questo consente all'organizzazione di rimuovere automaticamente Teams inattivi. Per impostazione predefinita l'opzione è disattivata. Questo test esegue una query in Azure AD tramite Microsoft Graph e indica se un valore è stato modificato rispetto all'impostazione predefinita. Per altre informazioni, leggere [Criteri di scadenza del gruppo Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups-expiration-policy).    |
 
 ### <a name="assessments-for-meetings-and-conferencing"></a>Valutazioni per messaggistica istantanea, riunioni e conferenze
 

@@ -21,12 +21,12 @@ ms.custom: ms.teamsadmincenter.policypackages.overview
 localization_priority: Priority
 search.appverid: MET150
 description: Informazioni sui criteri in un ambiente Education, o EDU, e su come usare e gestire i pacchetti di criteri in Microsoft Teams.
-ms.openlocfilehash: c8eed1c27f73d8805924ee30be0041a710bbdb25
-ms.sourcegitcommit: 624bd511b96cf213483d3ea8f27b20a91d955550
+ms.openlocfilehash: 8e024003957a295d56e26a46f473d543f2cb0ded
+ms.sourcegitcommit: 02dd624d39a14f48b9d2463881605d2f051722e7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44330571"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44874428"
 ---
 # <a name="teams-policies-and-policy-packages-for-education"></a>Criteri e pacchetti di criteri di Teams per l'istruzione
 
@@ -158,9 +158,20 @@ Per fare in modo che gli studenti non possano pianificare una riunione per comun
 
 ![Pagina per gli studenti in apprendimento remoto, con la sezione Generale e tutte le opzioni disattivate.](media/edu-policy-list-a.png)
 
-- Nella stessa pagina, nella sezione Partecipanti e ospiti disattivare **Consenti l'uso di Riunione immediata nelle riunioni private**
+- Nella stessa pagina, nella sezione della riunione Partecipanti e ospiti:
+  - **Consenti l'uso di Riunione immediata nelle riunioni private**: disattivato
+  - **Consenti l'uso della chat nelle riunioni**: disabilitato
 
 ![Sezione Partecipanti e ospiti, con l'opzione Consenti l'uso di Riunione immediata nelle riunioni private impostata su disattivato.](media/edu-participants-and-guests.png)
+
+Se si disattiva **Consenti Riunione immediata nei canali**, **Consenti la pianificazione delle riunioni di canale**, **Consenti la pianificazione delle riunioni private** e **Riunione immediata nelle riunioni private**, non solo si blocca la possibilità per gli studenti di pianificare una riunione come organizzatori, ma si forniscono loro anche le misure di sicurezza seguenti:
+
+- Se gli studenti tentano di partecipare alla riunione prima dell'insegnante, non saranno in grado di partecipare. Questa funzionalità è presente nella versione più recente dell'app Teams.
+- Anche se la creazione di riunioni è disponibile per tutti gli utenti e qualsiasi licenza, le misure di sicurezza relative al blocco della partecipazione descritte sopra, sono valide solo per i clienti di Teams nel settore dell'istruzione in base al tipo di licenza.
+
+Quando si modifica il criterio **Consenti la chat nelle riunioni** per disabilitazione e impedire agli studenti di organizzare riunioni e mantenere il criterio per gli insegnanti (per le riunioni non programmate in un canale o Riunione immediata in un canale), gli studenti non potranno chattare prima dell'ingresso dell'insegnate nella riunione né dopo. Potranno comunque vedere la cronologia chat prima, durante e dopo la riunione. Ad esempio, gli studenti potranno vedere i messaggi dell'insegnante o il collegamento alla registrazione della riunione, se è stata registrata.
+
+Se gli studenti e gli insegnanti hanno il criterio **Consenti la chat nelle riunioni** disattivato, nessuno sarà in grado di chattare nella finestra della chat della riunione. Le misure di sicurezza relative alle limitazioni delle chat nelle riunioni descritte in precedenza si applicano solo ai clienti di Teams nel campo dell'istruzione, in base al tipo di licenza.
 
 #### <a name="control-whether-or-not-students-can-share-their-videos-during-calls-and-meetings"></a>Controllare se gli studenti possono o meno condividere i loro video durante le chiamate o le riunioni
 

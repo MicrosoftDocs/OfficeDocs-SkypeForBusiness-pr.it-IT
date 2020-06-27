@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 32e231fbcef2991e13ec5b496e6ed61eb677ee20
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 2d6e4e8989bf26e4a907deec550d18f344728129
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665758"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44868303"
 ---
 <a name="sign-in-to-microsoft-teams-using-modern-authentication"></a>Accedere a Microsoft Teams con l'autenticazione moderna
 ==========================
@@ -59,6 +59,44 @@ L'autenticazione moderna è un processo che informa Teams che gli utenti hanno g
 
 In MacOS, Teams richiederà agli utenti di immettere il nome utente e le credenziali e potrebbe richiedere l'autenticazione a più fattori, in base alle impostazioni dell'organizzazione. Una volta immesse le credenziali, gli utenti non dovranno fornirle di nuovo. Da quel momento in poi, Teams si avvierà automaticamente ogni volta che lavorano con lo stesso computer.
 
+## <a name="teams-for-ios-and-android-users"></a>Teams per gli utenti di iOS e Android
+
+Dopo l'accesso, gli utenti dei dispositivi mobili visualizzano un elenco di tutti gli account di Microsoft 365 attualmente connessi o che sono stati connessi al dispositivo in precedenza. Possono toccare uno qualsiasi degli account per eseguire l'accesso. Per l'accesso ai dispositivi mobili sono possibili due scenari:
+    
+1. Se l'account selezionato è attualmente connesso ad altre app di Office 365 o Microsoft 365, l'utente viene indirizzato direttamente a Teams. Non è necessario immettere le credenziali.
+    
+2. Se l'utente non ha effettuato l'accesso al proprio account di Microsoft 365 in nessun'altra posizione, verrà chiesto di fornire un'autenticazione a uno o più fattori (AFS o AMF), a seconda di come l'organizzazione ha configurato i criteri di accesso per i dispositivi mobili.
+
+### <a name="adding-multiple-accounts-to-teams"></a>Aggiunta di più account in Teams
+
+Teams per iOS e Android supporta l'aggiunta di più account da un singolo dispositivo. Le immagini seguenti mostrano il modo in cui gli utenti possono aggiungere più account in Teams.
+    
+:::image type="content" source="media/sign-in-multiple-accounts.png" alt-text="Aggiunta di più account in Teams":::
+
+### <a name="use-enterprise-mobility-management-to-control-which-accounts-can-sign-in-to-teams"></a>Usare Enterprise Mobility Management per controllare quali account possono accedere a Teams
+
+Teams per iOS e Android offre agli amministratori IT la possibilità di inviare le configurazioni account agli account di Microsoft 365. Questa funzionalità può essere usata con qualsiasi provider di Gestione dei dispositivi mobili (MDM) che usa il canale di  [Configurazione gestita delle app](https://developer.apple.com/library/archive/samplecode/sc2279/Introduction/Intro.html)  per iOS o il canale  [Android Enterprise](https://developer.android.com/work/managed-configurations)  per Android.
+
+Per gli utenti registrati in Microsoft Intune, è possibile distribuire le impostazioni di configurazione degli account usando Intune nel Portale di Azure.
+
+Dopo la configurazione dell'account nel provider MDM e dopo che l'utente ha eseguito la registrazione del dispositivo, Teams per iOS e Android mostrerà solo gli account autorizzati nella pagina di accesso. L'utente può toccare uno qualsiasi degli account autorizzati in tale pagina per eseguire l'accesso.
+
+Impostare i parametri di configurazione seguenti nel portale di Azure Intune per i dispositivi gestiti.
+
+
+|Piattaforma |Chiave  |Valore  |
+|---------|---------|---------|
+|iOS     |  **IntuneMAMAllowedAccountsOnly**       | **Abilitato**: l'unico account autorizzato è l'account utente gestito definito dalla chiave IntuneMAMUPN.<br> **Disabilitato:** (o qualsiasi valore senza distinzione tra maiuscole e minuscole che corrisponde a **Abilitato**): qualsiasi account è abilitato.        |
+|iOS     |   **IntuneMAMUPN**      |   UPN dell'account autorizzato ad accedere a Teams.<br> Per i dispositivi registrati in Intune, è possibile usare il token {{userprincipalname}} per rappresentare l'account utente registrato.       |
+|Android     |**com.microsoft.intune.mam.AllowedAccountUPNs**         |    I soli account autorizzati sono gli account utente gestiti definiti da questa chiave.<br> Uno o più punti e virgola (;) - UPN delimitati.<br> Per i dispositivi registrati in Intune, è possibile usare il token {{userprincipalname}} per rappresentare l'account utente registrato.
+
+Dopo la configurazione dell'account, Teams limiterà la possibilità di eseguire l'accesso, in modo che possano accedere solo agli account autorizzati nei dispositivi registrati.
+
+Per creare un criterio di configurazione dell'app per i dispositivi iOS/iPadOS gestiti, vedere [Aggiungere i criteri di configurazione delle app per dispositivi gestiti iOS/iPadOS](https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-use-ios).
+
+Per creare un criterio di configurazione dell'app per i dispositivi Android gestiti, vedere  [Aggiungere i criteri di configurazione delle app per dispositivi gestiti Android](https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-use-android).
+
+
 ## <a name="switching-accounts-after-completing-modern-authentication"></a>Cambiare account dopo aver completato l'autenticazione moderna
 
 Se gli utenti stanno lavorando su un computer aggiunto a un dominio, ad esempio se il tenant ha abilitato Kerberos, non possono cambiare account utente dopo aver completato l'autenticazione moderna. Se gli utenti non stanno lavorando su un computer aggiunto a un dominio, possono cambiare account.
@@ -67,9 +105,16 @@ Se gli utenti stanno lavorando su un computer aggiunto a un dominio, ad esempio 
 
 Per disconnettersi da Teams, gli utenti possono fare clic sull'immagine del profilo nella parte superiore dell'app e quindi selezionare **Disconnetti**. Possono anche fare clic con il pulsante destro del mouse sull'icona dell'app nella barra delle applicazioni e scegliere **Disconnetti**. Dopo la disconnessione da Teams, per avviare l'app è necessario immettere di nuovo le credenziali.
 
+### <a name="signing-out-of-teams-for-ios-and-android"></a>Disconnessione da Teams dei dispositivi iOS e Android
+
+Gli utenti di dispositivi mobili possono disconnettersi da Teams passando al menu, scegliendo **Altro** e poi **Disconnetti**. Una volta disconnessi, dovranno reimmettere le credenziali per avviare l'app la volta successiva.
+
+> [!NOTE]
+> Teams per Android usa Single Sign-on (SSO) per facilitare l'esperienza di accesso. Gli utenti devono disconnettersi da **Tutte** le app Microsoft, oltre a Teams, per completare l'uscita dalla piattaforma Android.
+
 ## <a name="urls-and-ip-address-ranges"></a>URL e intervalli di indirizzi IP
 
-Teams richiede la connettività a Internet. Per informazioni sugli endpoint che devono essere raggiungibili per i clienti che usano Teams nei piani di Microsoft 365 o Office 365, oltre che nel cloud per enti pubblici e in altri cloud, vedere [URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+Teams richiede la connettività a Internet. Per informazioni sugli endpoint che devono essere raggiungibili per i clienti che usano Teams nei piani di Office 365, nel cloud per enti pubblici e in altri cloud, vedere [URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
 
 > [!IMPORTANT]
 > Attualmente Teams richiede l'accesso sulla porta TCP 443 al servizio Google ssl.gstatic.com (<https://ssl.gstatic.com)> per tutti gli utenti. Questo avviene anche se non si usa Gstatic. Teams rimuoverà il requisito presto (all'inizio del 2020) e questo articolo verrà aggiornato di conseguenza.

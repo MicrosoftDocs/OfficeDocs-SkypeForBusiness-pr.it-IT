@@ -17,12 +17,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ccbdf48463ab504c1eac51b9558d3edb07533c70
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: e091cc9c5d6f3ce55ea9e64473759afbd59df2c4
+ms.sourcegitcommit: a73df97a06ea860bfaf5387e0acbf3c724697e14
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44666178"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "44902271"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
@@ -59,7 +59,7 @@ Il requisito minimo di licenza per i criteri di conservazione è avere Office 36
 
 ## <a name="how-teams-retention-policies-work"></a>Come funzionano i criteri di conservazione di Teams
 
-Le chat di Teams vengono archiviate in una cartella SubstrateHolds nascosta della cassetta postale di ogni utente della chat e i messaggi del canale di Teams vengono archiviati in una cartella SubstratesHolds nascosta della cassetta postale di gruppo di un team. Teams usa un servizio di chat con tecnologia Azure che archivia anche questi dati e che, per impostazione predefinita, li memorizza per sempre. Con i criteri di conservazione di Teams, quando si eliminano dei dati, questi vengono eliminati definitivamente sia nelle cassette postali di Exchange che nel servizio di chat sottostante.
+Le chat di teams sono archiviate in una cartella nascosta-Teamschat-nella cassetta postale di ogni utente nella chat e i messaggi del canale di teams vengono archiviati in una cartella nascosta-Teamschat-nella cassetta postale del gruppo per un team. Teams usa un servizio di chat con tecnologia Azure che archivia anche questi dati e che, per impostazione predefinita, li memorizza per sempre. Con i criteri di conservazione di Teams, quando si eliminano dei dati, questi vengono eliminati definitivamente sia nelle cassette postali di Exchange che nel servizio di chat sottostante.
 
 Ecco cosa succede quando si applica un criterio di conservazione a messaggi di canali e chat di Teams:
 
@@ -83,7 +83,7 @@ Ecco alcune considerazioni e limitazioni da tenere presenti quando si usano i cr
 
 - Teams non supporta impostazioni di conservazione avanzate, ad esempio la possibilità di applicare un criterio a contenuti che includono parole chiave o informazioni sensibili. Attualmente, i criteri di conservazione di Teams si applicano a tutti i contenuti di messaggi di chat e/o canali.
 
-- I team possono richiedere fino a tre o sette giorni per pulire i messaggi scaduti. I criteri di conservazione di Teams elimineranno i messaggi di chat e canali al termine del periodo di conservazione. Tuttavia, potrebbero essere necessarie fino a tre o sette giorni per pulire questi messaggi e eliminarli definitivamente. Inoltre, i messaggi di chat e canali saranno disponibili per la ricerca tramite gli strumenti di eDiscovery tra il periodo successivo alla scadenza del periodo di conservazione e quello di eliminazione definitiva dei messaggi.
+- Un criterio di conservazione di teams attiverà un processo entro un giorno per eliminare i messaggi di chat e canali quando scade il periodo di conservazione. Tuttavia, potrebbero essere necessarie fino a tre o sette giorni per pulire questi messaggi e eliminarli definitivamente. Inoltre, i messaggi di chat e canali saranno disponibili per la ricerca tramite gli strumenti di eDiscovery tra il periodo successivo alla scadenza del periodo di conservazione e quello di eliminazione definitiva dei messaggi.
 
 ### <a name="multiple-retention-policies-and-the-principles-of-retention"></a>Più criteri di conservazione e i principi di conservazione
 

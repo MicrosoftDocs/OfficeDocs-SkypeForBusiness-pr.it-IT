@@ -19,12 +19,12 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 - seo-marvel-apr2020
-ms.openlocfilehash: 6a77e98a75497d8608f0b85ad1a52d3fed8d153b
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 0de34afb93093a1385dc8c0e4bca078e485e6887
+ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691312"
+ms.lasthandoff: 06/24/2020
+ms.locfileid: "44868113"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -128,10 +128,9 @@ Teams supporta numerosi client Web, desktop e per dispositivi mobili e la config
 |Le impostazioni dei client di Teams per l'organizzazione verranno personalizzate?|Vedere [Installare Teams con MSI](msi-deployment.md).|
 |||
 
-
 ### <a name="teams-usage-reporting"></a>Report sull'utilizzo di Teams
 
-I ruoli Amministratore globale, Amministratore del servizio Teams e Lettore di report possono visualizzare i report sull'utilizzo di Teams. Per altre informazioni, vedere gli [articoli sull'analisi di utilizzo di Microsoft 365](https://docs.microsoft.com/office365/admin/usage-analytics/usage-analytics?redirectSourcePath=%252farticle%252fMicrosoft-365-usage-analytics-77ff780d-ab19-4553-adea-09cb65ad0f1f&view=o365-worldwide).
+I ruoli Amministratore globale, Amministratore del servizio Teams e Lettore di report possono visualizzare i report sull'utilizzo di Teams. Per altre informazioni, vedere [Analisi di utilizzo di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/usage-analytics).
 
 |Chiedersi|Azione |
 |------------|-------|

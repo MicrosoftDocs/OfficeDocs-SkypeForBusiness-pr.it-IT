@@ -1,0 +1,62 @@
+### YamlMime:Hub
+title: Workshop di pianificazione dell'aggiornamento a Teams
+summary: È disponibile una serie di workshop interattivi sulla pianificazione dell'aggiornamento in cui forniremo indicazioni, condivideremo procedure consigliate e risorse progettate per aiutare gli utenti a pianificare e implementare l'aggiornamento a Teams. Per un'esperienza ottimale, iniziare con la sessionePianificare l'aggiornamento qui sotto. Fare clic su qualsiasi titolo del workshop per registrarsi.
+brand: teams
+metadata:
+  title: Workshop di pianificazione dell'aggiornamento a Teams
+  description: È disponibile una serie di workshop interattivi sulla pianificazione dell'aggiornamento in cui forniremo indicazioni, condivideremo procedure consigliate e risorse progettate per aiutare gli utenti a pianificare e implementare l'aggiornamento a Teams. Per un'esperienza ottimale, iniziare con la sessionePianificare l'aggiornamento qui sotto. Fare clic su qualsiasi titolo del workshop per registrarsi.
+  ms.service: msteams
+  ms.topic: hub-page
+  author: LolaJacobsen
+  ms.author: lolaj
+  manager: serdars
+  ms.date: 01/27/2020
+  ms.reviewer: landerl
+  audience: admin
+  f1.keywords:
+  - NOCSH
+  localization_priority: Priority
+  ms.collection:
+  - Teams_ITAdmin_JourneyFromSfB
+  - M365-collaboration
+  ms.custom:
+  - seo-marvel-apr2020
+  search.appverid: MET150
+  appliesto:
+  - Microsoft Teams
+  ms.openlocfilehash: d001251acc86e516267cdcd38a797afbfc2516f2
+  ms.sourcegitcommit: a73df97a06ea860bfaf5387e0acbf3c724697e14
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 06/26/2020
+  ms.locfileid: "44902391"
+productDirectory:
+  items:
+  - title: Pianificare l'aggiornamento (iniziare da qui)
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-teams.svg
+    summary: Scoprire tutto il necessario per facilitare l'aggiornamento a Teams. Audience-All (business sponsor, amministratori IT, disponibilità degli utenti/Change Manager, Project Lead)
+    url: https://microsoftteams.eventbuilder.com/PlanYourUpgrade
+  - title: Preparare gli utenti finali
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-teams.svg
+    summary: Progettare una strategia di preparazione per aiutare gli utenti ad apprezzare e adottare Teams. Audience-disponibilità degli utenti/Change Manager
+    url: https://microsoftteams.eventbuilder.com/UpgradeReadyUsers
+  - title: Identificare il metodo di aggiornamento
+    imageSrc: https://docs.microsoft.com/office/media/icons/hybrid-teams.svg
+    summary: Determinare il metodo più appropriato in base agli obiettivi correnti di implementazione e aggiornamento di Skype for Business. Amministratori IT del gruppo di destinatari
+    url: https://microsoftteams.eventbuilder.com/UpgradeApproach
+  - title: Implementare il metodo di aggiornamento
+    imageSrc: https://docs.microsoft.com/office/media/icons/usage-report-teams.svg
+    summary: Eseguire il metodo di aggiornamento definito come parte del piano di aggiornamento formale. Amministratori IT del gruppo di destinatari
+    url: https://microsoftteams.eventbuilder.com/UpgradeImplement
+additionalContent:
+  sections:
+  - items:
+    - title: Visualizzare questi seminari nel proprio tempo
+      summary: Visita l'aggiornamento a Microsoft teams su YouTube.
+      url: https://aka.ms/UpgradeOnDemand
+    - title: Espandere gli scenari di Teams?
+      summary: Consulta i laboratori per i professionisti IT di teams Chalk Talk.
+      url: https://aka.ms/TeamsChalkTalks
+    - title: Nuovo utente Teams?
+      summary: Leggi altre informazioni su come iniziare a usare teams.
+      url: https://docs.microsoft.com/microsoftteams/teams-overview
