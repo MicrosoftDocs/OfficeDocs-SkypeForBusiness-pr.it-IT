@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2d6e4e8989bf26e4a907deec550d18f344728129
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: 0189c6072840582854b276f0c0116e03fcaff3c0
+ms.sourcegitcommit: 0979fae58ecd713f8317ed99caae015b5cc2c8e4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868303"
+ms.lasthandoff: 06/25/2020
+ms.locfileid: "44877817"
 ---
 <a name="sign-in-to-microsoft-teams-using-modern-authentication"></a>Accedere a Microsoft Teams con l'autenticazione moderna
 ==========================
@@ -65,9 +65,13 @@ Dopo l'accesso, gli utenti dei dispositivi mobili visualizzano un elenco di tutt
     
 1. Se l'account selezionato è attualmente connesso ad altre app di Office 365 o Microsoft 365, l'utente viene indirizzato direttamente a Teams. Non è necessario immettere le credenziali.
     
-2. Se l'utente non ha effettuato l'accesso al proprio account di Microsoft 365 in nessun'altra posizione, verrà chiesto di fornire un'autenticazione a uno o più fattori (AFS o AMF), a seconda di come l'organizzazione ha configurato i criteri di accesso per i dispositivi mobili.
+2. Se l'utente non ha effettuato l'accesso al proprio account di Microsoft 365 in nessun'altra posizione, verrà chiesto di effettuare un'autenticazione a uno o più fattori (SFA o MFA), a seconda di come l'organizzazione ha configurato i criteri di accesso per i dispositivi mobili.
 
-### <a name="adding-multiple-accounts-to-teams"></a>Aggiunta di più account in Teams
+> [!NOTE]
+> Per consentire agli utenti di provare l'esperienza di accesso descritta in questa sezione, sui dispositivi deve essere installata la versione 2.0.13 (Build 2020061704) o successiva di Teams per iOS, oppure la versione 1416/1.0.0.2020061702 o successiva di Teams per Android.
+
+
+### <a name="adding-multiple-accounts-to-teams"></a>Aggiungere account multipli in Teams
 
 Teams per iOS e Android supporta l'aggiunta di più account da un singolo dispositivo. Le immagini seguenti mostrano il modo in cui gli utenti possono aggiungere più account in Teams.
     
