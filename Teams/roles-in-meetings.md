@@ -17,12 +17,12 @@ description: Informazioni sulle funzionalità disponibili per relatori e parteci
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: c8433d4caa0defbe83114ac4027c10b6bf61a725
-ms.sourcegitcommit: 862ba1d2b3bd4622b1b0baa15096c29c591cc6c4
+ms.openlocfilehash: b0302a5c1f09e6ed6bfbb877709ed3562ce1440a
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702691"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938175"
 ---
 <a name="presenter-and-participant-capabilities-in-a-teams-meeting"></a>Funzionalità per relatori e partecipanti in una riunione di Teams
 ======================================================
@@ -36,6 +36,8 @@ Le funzionalità per riunioni disponibili sono:
 - Whiteboard
 - Registrazione
 - File
+    - condivisione di file nella chat di una riunione e visualizzazione/download di file dalla chat di una riunione
+    - presentazione di un file PPT in una riunione (non tramite condivisione dello schermo) e visualizzazione di un file PPT in una riunione
 - Pianificare una riunione (solo per le riunioni)
 
 Questo articolo descrive le funzionalità per i partecipanti e il rispettivo accesso alle funzionalità per le riunioni.
@@ -60,31 +62,33 @@ I partecipanti alla riunione possono essere di diversi tipi:
 
 ### <a name="in-tenant-participant"></a>Partecipante interno al tenant
 
-Il partecipante interno al tenant appartiene all'organizzazione e dispone delle credenziali per il tenant. Per altre informazioni su questo partecipante, vedere [Sicurezza e Microsoft Teams](teams-security-guide.md#participant-types).
+Il partecipante interno al tenant appartiene all'organizzazione e dispone delle credenziali per il tenant. Altre informazioni su questo partecipante sono disponibili in [Sicurezza e Microsoft Teams](teams-security-guide.md#participant-types).
 
-|Riunione  |  | |||
+|  |  | |||
 |---------|----------------|----------------|---------------------|------------|--------------|
 | **Funzionalità**        | Prima della riunione | Durante la riunione | Dopo la riunione |
 | Chat | Sì | Sì | Sì |
 | Note riunione | Sì | Sì |Sì |
 | Whiteboard | Sì | Sì |Sì |
 | Registrazione | N/D |Sì | Sì |
-| File | Sì | Sì | Sì |
+| File - Condivisione di file nella chat di una riunione e visualizzazione/download di file dalla chat di una riunione | Sì | Sì | Sì |
+| File - Presentazione di un file PPT in una riunione (non tramite condivisione dello schermo) e visualizzazione di un file PPT in una riunione | Sì | Sì | Sì |
 | Pianificare una riunione | Sì | N/D | N/D |
 |||||||
 
 ### <a name="guest-participant"></a>Partecipante guest
 
-Un partecipante guest è una persona di un'altra organizzazione che è stata invitata ad accedere a Teams o ad altre risorse nel tenant dell'organizzazione in base alla piattaforma B2B di Azure Active Directory. Gli utenti guest possono essere invitati a partecipare alle normali riunioni e alle riunioni di canale. Per altre informazioni sui partecipanti guest, vedere [Com'è l'esperienza guest](guest-experience.md#comparison-of-team-member-and-guest-capabilities).
+Un partecipante guest è una persona di un'altra organizzazione che è stata invitata ad accedere a Teams o ad altre risorse nel tenant dell'organizzazione in base alla piattaforma B2B di Azure Active Directory. Gli utenti guest possono essere invitati a partecipare alle normali riunioni e alle riunioni di canale. Altre informazioni sui partecipanti guest sono disponibili in [Com'è l'esperienza guest](guest-experience.md#comparison-of-team-member-and-guest-capabilities).
 
-| Riunione |  | |||
+|  |  | |||
 |---------|----------------|----------------|---------------------|------------|--------------|
 | **Funzionalità**        | Prima della riunione | Durante la riunione | Dopo la riunione |
 | Chat | Sì | Sì | Sì |
 | Note riunione | Sì | Sì | Sì |
 | Whiteboard | No | No |No |
 | Registrazione | N/D |No | No |
-| File | Sì | Sì | Sì |
+| File - Condivisione di file nella chat di una riunione e visualizzazione/download di file dalla chat di una riunione | Sì | Sì | Sì |
+| File - Presentazione di un file PPT in una riunione (non tramite condivisione dello schermo) e visualizzazione di un file PPT in una riunione | Sì | Sì | Sì |
 | Pianificare una riunione | No | N/D | N/D |
 |||||||
 
@@ -92,29 +96,31 @@ Un partecipante guest è una persona di un'altra organizzazione che è stata inv
 
 Un partecipante esterno è un utente che usa Teams in un'altra organizzazione, che è stato invitato a partecipare a una riunione, ma non ha accesso ad altre risorse condivise dell'organizzazione. I partecipanti esterni vengono mostrati nell'elenco dei partecipanti alla riunione con il nome identità che usano nella propria organizzazione. Altre informazioni sui partecipanti esterni sono disponibili in [Comunicare con utenti di altre organizzazioni](communicate-with-users-from-other-organizations.md#external-access).
 
-| Riunione ||
+|  ||
 |-|-|-|
 | **Funzionalità** |||
 | Chat | Sì |
 | Note riunione | N/D |  
 | Whiteboard | N/D |
 | Registrazione | N/D |  
-| File | N/D |
+| File - Condivisione di file nella chat di una riunione e visualizzazione/download di file dalla chat di una riunione |  |  |  |
+| File - Presentazione di un file PPT in una riunione (non tramite condivisione dello schermo) e visualizzazione di un file PPT in una riunione |  |  |  |
 | Pianificare una riunione | N/D |
 |||
 
 ### <a name="anonymous-participant"></a>Partecipante anonimo
 
-Il partecipante anonimo è simile a un utente esterno, ma la sua identità non viene rivelata nella riunione. Nel momento in cui entra nella riunione, immette manualmente un nickname. Per altre informazioni sui partecipanti anonimi, vedere [Sicurezza e Microsoft Teams](teams-security-guide.md#participant-types).
+Il partecipante anonimo è simile a un utente esterno, ma la sua identità non viene rivelata nella riunione. Nel momento in cui entra nella riunione, immette manualmente un nickname. Altre informazioni sui partecipanti anonimi sono disponibili in [Sicurezza e Microsoft Teams](teams-security-guide.md#participant-types).
 
-| Riunione  | | |||
+|   | | |||
 |---------|----------------|----------------|---------------------|------------|--------------|
 | **Funzionalità**        | Prima della riunione | Durante la riunione | Dopo la riunione |
 | Chat | N/D | Sì | N/D |
 | Note riunione | N/D | No | N/D |
 | Whiteboard | N/D | No | N/D |
 | Registrazione | N/D | No | N/D |
-| File | N/D | No | N/D |
+| File - Condivisione di file nella chat di una riunione e visualizzazione/download di file dalla chat di una riunione |  |  |  |
+| File - Presentazione di un file PPT in una riunione (non tramite condivisione dello schermo) e visualizzazione di un file PPT in una riunione |  |  |  |
 | Pianificare una riunione | N/D | N/D | N/D |
 |||||||
 
