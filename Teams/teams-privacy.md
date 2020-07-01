@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 924aaf1ad9c9d462a454260226b3a5340f0a68e2
-ms.sourcegitcommit: 0fa50d1cf354d79fbaf16b6aaec60e8d3ab852e8
+ms.openlocfilehash: 9ea6fc3f27b5d97a2e890ec85e68a105acc44b42
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2020
-ms.locfileid: "43579572"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938495"
 ---
 # <a name="privacy-and-microsoft-teams"></a>Privacy e Microsoft Teams
 
@@ -58,7 +58,7 @@ Microsoft non divulga i dati personali tranne:
 1. come descritto nelle Condizioni dei servizi online, ad esempio nel caso dell'uso di subappaltatori autorizzati per fornire alcuni componenti dei servizi.
 1. come richiesto dalla legge.
 
-Se le forze dell’ordine contattano Microsoft con una richiesta, Microsoft proverà a reindirizzare le forze dell’ordine a richiedere tali dati personali direttamente dal cliente. Se obbligato a rivelare i dati personali alle forze dell'ordine, Microsoft informerà tempestivamente il cliente e fornirà una copia della richiesta, salvo divieto. Per altre informazioni sui dati rivelati in risposta alle richieste delle forze dell’ordine e di altri enti pubblici, vedere il [Report sulle richieste di applicazione della legge](https://www.microsoft.com/about/corporate-responsibility/lerr/).
+Se le forze dell’ordine contattano Microsoft con una richiesta, Microsoft proverà a reindirizzare le forze dell’ordine a richiedere tali dati personali direttamente dal cliente. Se obbligato a rivelare i dati personali alle forze dell'ordine, Microsoft informerà tempestivamente il cliente e fornirà una copia della richiesta, salvo divieto. Per altre informazioni sui dati rivelati in risposta alle richieste delle forze dell’ordine e di altri enti pubblici, vedere il [Report sulle richieste di applicazione della legge](https://www.microsoft.com/corporate-responsibility/law-enforcement-requests-report).
 
 La [Guida alla sicurezza di Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview#compliance-standards) offre maggiori informazioni sugli standard di conformità.
 

@@ -12,12 +12,12 @@ ms:contentKeyID: 49733758
 ms.date: 07/23/2014
 manager: serdars
 mtps_version: v=OCS.15
-ms.openlocfilehash: e6a10e2fb6d8e17352eb8a96be57b24e706fc5d5
-ms.sourcegitcommit: 33db8c7febd4cf1591e8dcbbdfd6fc8e8925896e
+ms.openlocfilehash: 1528ef6124193023a0e5938caac7b40c2c6187a2
+ms.sourcegitcommit: 9b1c138b39fd87e239a7b1c5051f30c633e7d813
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/19/2020
-ms.locfileid: "42134392"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44943929"
 ---
 # <a name="assign-a-per-user-voice-policy-in-lync-server-2013"></a>Assegnare un criterio vocale per utente in Lync Server 2013
 
@@ -40,29 +40,29 @@ I criteri vocali globali e a livello di sito vengono assegnati automaticamente a
     
 
     > [!NOTE]  
-    > Le <STRONG> &lt;impostazioni&gt; automatiche</STRONG> applicano le impostazioni predefinite del server o dei criteri globali.
+    > Le impostazioni <STRONG> &lt; automatiche &gt; </STRONG> applicano le impostazioni predefinite del server o dei criteri globali.
 
 
 
-## <a name="assigning-a-per-user-voice-policy-by-using-windows-powershell-cmdlets"></a>Assegnazione di un criterio vocale per utente tramite i cmdlet di Windows PowerShell
+## <a name="assign-per-user-voice-policies"></a>Assegnare criteri vocali per utente
 
-È possibile assegnare criteri vocali per utente tramite Windows PowerShell e il cmdlet **Grant-CsVoicePolicy** . È possibile eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere l'articolo del Blog su Lync Server di Windows PowerShell "Quick Start: Managing Microsoft Lync [https://go.microsoft.com/fwlink/p/?linkId=255876](https://go.microsoft.com/fwlink/p/?linkid=255876)Server 2010 using Remote PowerShell" at.
+È possibile assegnare criteri vocali per utente tramite Windows PowerShell e il cmdlet **Grant-CsVoicePolicy** . È possibile eseguire questo cmdlet da Lync Server 2013 Management Shell o da una sessione remota di Windows PowerShell. Per ulteriori informazioni sull'utilizzo di Windows PowerShell remoto per la connessione a Lync Server, vedere il post del Blog di Windows PowerShell di Lync Server: [Quick Start: Managing Microsoft Lync server 2010 using Remote PowerShell](https://go.microsoft.com/fwlink/p/?linkId=255876).
 
-## <a name="to-assign-a-per-user-voice-policy-to-a-single-user"></a>Per assegnare un criterio vocale per utente a un singolo utente
+### <a name="assign-a-per-user-voice-policy-to-a-single-user"></a>Assegnare un criterio vocale per utente a un singolo utente
 
   - Il comando seguente assegna il criterio vocale per utente RedmondVoicePolicy all'utente Ken Myer.
     
         Grant-CsVoicePolicy -Identity "Ken Myer" -PolicyName "RedmondVoicePolicy"
 
-## <a name="to-assign-a-per-user-voice-policy-to-multiple-users"></a>Per assegnare criteri vocali per utente a più utenti
+## <a name="assign-a-per-user-voice-policy-to-multiple-users"></a>Assegnazione di un criterio vocale per utente a più utenti
 
   - Questo comando assegnare il criterio vocale per utente FinanceVoicePolicy a tutti gli utenti con account nell'unità organizzativa Finance in Active Directory. Per ulteriori informazioni sul parametro OU utilizzato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser](https://technet.microsoft.com/library/gg398125\(v=ocs.15\)) .
     
         Get-CsUser -OU "ou=Finance,ou=North America,dc=litwareinc,dc=com" | Grant-CsVoicePolicy -PolicyName "FinanceVoicePolicy"
 
-## <a name="to-unassign-a-per-user-voice-policy"></a>Per annullare l'assegnazione di un criterio vocale per utente
+## <a name="unassign-a-per-user-voice-policy"></a>Annullamento dell'assegnazione di un criterio vocale per utente
 
-  - Il comando seguente annulla l'assegnazione di qualsiasi criterio vocale per utente precedentemente assegnato a Ken Myer. Dopo aver annullato l'assegnazione del criterio vocale per utente, Ken Myer verrà automaticamente gestito mediante i criteri globali oppure, se esistente, i criteri a livello di sito locale. I criteri a livello di sito hanno precedenza sui criteri globali.
+  - The following command unassigns any per-user voice policy previously assigned to Ken Myer. After the per-user policy is unassigned, Ken Myer will automatically be managed by using the global policy or, if one exists, his local site policy. A site policy takes precedence over the global policy.
     
         Grant-CsVoicePolicy -Identity "Ken Myer" -PolicyName $Null
 
