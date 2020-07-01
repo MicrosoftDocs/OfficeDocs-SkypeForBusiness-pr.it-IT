@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i criteri di ID chiamante in Microsoft teams per modificare o bloccare l'ID chiamante degli utenti di teams nell'organizzazione.
-ms.openlocfilehash: 67b5abef6cdbdab9a127dd2957c2fdfefbaf2927
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 41466640f33769a64ce14d5d3dc47959c876a5bc
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691422"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938465"
 ---
 # <a name="manage-caller-id-policies-in-microsoft-teams"></a>Gestire i criteri di ID chiamante in Microsoft Teams
 
@@ -33,9 +33,7 @@ Come amministratore, puoi usare i criteri di ID chiamante in Microsoft teams per
 
 Ad esempio, quando gli utenti effettuano una chiamata, è possibile modificare l'ID chiamante per visualizzare il numero di telefono principale dell'organizzazione anziché i numeri di telefono degli utenti.
 
-Puoi gestire i criteri ID chiamante accedendo **Voice**ai  >  **criteri ID chiamante** vocale nell'interfaccia di amministrazione di Microsoft teams. È possibile usare il criterio globale (predefinito per l'intera organizzazione) o creare criteri personalizzati e assegnarli agli utenti. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato.
-
-È possibile modificare i criteri globali oppure creare e assegnare criteri personalizzati. Se a un utente viene assegnato un criterio personalizzato, tale criterio si applica all'utente. Se a un utente non viene assegnato un criterio personalizzato, il criterio globale si applica all'utente.
+Puoi gestire i criteri ID chiamante accedendo **Voice**ai  >  **criteri ID chiamante** vocale nell'interfaccia di amministrazione di Microsoft teams. Puoi usare il criterio globale (predefinito per l'intera organizzazione) oppure creare e assegnare criteri personalizzati. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato.
 
 ## <a name="create-a-custom-caller-id-policy"></a>Creare un criterio ID chiamante personalizzato
 
@@ -67,54 +65,10 @@ Puoi gestire i criteri ID chiamante accedendo **Voice**ai  >  **criteri ID chiam
 
 ## <a name="assign-a-custom-caller-id-policy-to-users"></a>Assegnare un criterio ID chiamante personalizzato agli utenti
 
-È possibile usare l'interfaccia di amministrazione di Microsoft teams per assegnare un criterio personalizzato a uno o più utenti o al modulo di PowerShell di Skype for business per assegnare un criterio personalizzato agli utenti di un gruppo, ad esempio un gruppo di sicurezza o un gruppo di distribuzione.
+[!INCLUDE [assign-policy](includes/assign-policy.md)]
 
-### <a name="assign-a-custom-caller-line-id-policy-to-users"></a>Assegnare un criterio ID linea chiamante personalizzato agli utenti
+## <a name="related-topics"></a>Argomenti correlati
 
-Per assegnare un criterio a un utente:
+[New-CsCallingLineIdentity](https://docs.microsoft.com/powershell/module/skype/new-cscallinglineidentity?view=skype-ps)
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi fare clic sull'utente.
-2. Fare clic su **criteri**e quindi fare clic su **modifica**accanto a **criteri assegnati**.
-3. In **criteri ID chiamante**selezionare il criterio che si vuole assegnare e quindi scegliere **Salva**.
-
-Per assegnare un criterio a più utenti contemporaneamente:
-
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
-2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
-3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **Applica**.  
-
-Si può anche procedere nel modo seguente:
-
-1. Accedere ai **Microsoft Teams admin center**  >  **Voice**  >  **criteri ID chiamante**vocale dell'interfaccia di amministrazione di Microsoft teams.
-2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
-3. Scegliere **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
-5. Al termine dell'aggiunta di utenti, selezionare **Salva**.
-
-### <a name="assign-a-custom-caller-id-policy-to-users-in-a-group"></a>Assegnare criteri di ID chiamante personalizzati agli utenti di un gruppo
-
-È consigliabile assegnare un criterio personalizzato a più utenti già identificati. Ad esempio, potresti voler assegnare un criterio a tutti gli utenti di un gruppo di sicurezza. A tale scopo, è possibile connettersi al modulo di PowerShell per il grafico di Azure Active Directory e al modulo di PowerShell per Skype for business. Per altre informazioni sull'uso di PowerShell per la gestione dei team, vedere [Cenni preliminari su teams PowerShell](teams-powershell-overview.md).
-
-In questo esempio, assegniamo un criterio lID chiamante personalizzato denominato criteri ID chiamante supporto per tutti gli utenti del gruppo di supporto contoso.  
-
-> [!NOTE]
-> Prima di tutto, assicurati di connetterti a Azure Active Directory PowerShell per modulo grafico e modulo di PowerShell per Skype for business seguendo la procedura descritta in [Connetti a tutti i servizi Microsoft 365 o Office 365 in una singola finestra di Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window).
-
-Ottenere il GroupObjectId del gruppo specifico.
-```PowerShell
-$group = Get-AzureADGroup -SearchString "Contoso Support"
-```
-Ottenere i membri del gruppo specificato.
-```PowerShell
-$members = Get-AzureADGroupMember -ObjectId $group.ObjectId -All $true | Where-Object {$_.ObjectType -eq "User"}
-```
-Assegnare tutti gli utenti del gruppo a un determinato criterio ID chiamante. In questo esempio è supportato il criterio ID chiamante.
-```PowerShell
-$members | ForEach-Object { Grant-CsCallingLineIdentity -PolicyName "Support Caller ID Policy" -Identity $_.UserPrincipalName}
-``` 
-A seconda del numero di membri del gruppo, questo comando può richiedere diversi minuti per l'esecuzione.
-
- ## <a name="related-topics"></a>Argomenti correlati
-
-- [New-CsCallingLineIdentity](https://docs.microsoft.com/powershell/module/skype/new-cscallinglineidentity?view=skype-ps)
-- [Assegnare criteri agli utenti in teams](assign-policies.md)
+[Assegnare criteri agli utenti in teams](assign-policies.md)

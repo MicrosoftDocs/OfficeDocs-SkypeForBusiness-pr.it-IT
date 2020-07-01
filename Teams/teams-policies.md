@@ -24,20 +24,20 @@ ms.custom:
 - ms.teamsadmincenter.teamsandchannelpolicies.overview
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.discover
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.create
-ms.openlocfilehash: b28b61a6b2d4c441fc69d0e50124df50f95b4a49
-ms.sourcegitcommit: 2e8a61abdd586bf8f0f88cac3b7d4ca4b9d9be34
+ms.openlocfilehash: 9ed0bd3aadcde76835bb3d435429785ceaf562a2
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44889975"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938145"
 ---
 # <a name="manage-teams-policies-in-microsoft-teams"></a>Gestire i criteri dei team in Microsoft Teams
 
 Come amministratore, puoi usare i criteri di teams in Microsoft teams per controllare gli utenti che possono eseguire in team e canali. Ad esempio, puoi impostare se gli utenti possono scoprire team privati nei risultati della ricerca e nella raccolta team e se gli utenti possono creare canali privati.
 
-Per gestire i criteri dei team, è possibile **passare a**criteri teams teams nell'interfaccia di amministrazione di  >  **Teams policies** Microsoft teams. È possibile usare il criterio globale (predefinito per l'intera organizzazione) o creare criteri personalizzati e assegnarli agli utenti. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato.
+Per gestire i criteri dei team, è possibile **passare a**criteri teams teams nell'interfaccia di amministrazione di  >  **Teams policies** Microsoft teams. Puoi usare il criterio globale (predefinito per l'intera organizzazione) oppure creare e assegnare criteri personalizzati. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato.
 
-È possibile modificare i criteri globali oppure creare e assegnare criteri personalizzati. Se a un utente viene assegnato un criterio personalizzato, tale criterio si applica all'utente. Se a un utente non viene assegnato un criterio personalizzato, il criterio globale si applica all'utente. Dopo aver modificato il criterio globale o assegnato un criterio, è possibile che le modifiche abbiano effetto.
+È possibile modificare i criteri globali oppure creare e assegnare criteri personalizzati. Dopo aver modificato il criterio globale o assegnato un criterio, è possibile che le modifiche abbiano effetto.
 
 ## <a name="create-a-custom-teams-policy"></a>Creare un criterio teams personalizzato
 
@@ -63,55 +63,12 @@ Per gestire i criteri dei team, è possibile **passare a**criteri teams teams ne
 
 ## <a name="assign-a-custom-teams-policy-to-users"></a>Assegnare un criterio team personalizzati agli utenti
 
-È possibile usare l'interfaccia di amministrazione di Microsoft teams per assegnare un criterio personalizzato a uno o più utenti o al modulo di PowerShell di Skype for business per assegnare criteri personalizzati a gruppi di utenti, ad esempio un gruppo di sicurezza o un gruppo di distribuzione.
-
-### <a name="assign-a-custom-teams-policy-to-users"></a>Assegnare un criterio team personalizzati agli utenti
-
-Per assegnare un criterio a un utente:
-
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi fare clic sull'utente.
-2. Fare clic su **criteri**e quindi fare clic su **modifica**accanto a **criteri assegnati**.
-3. In **criteri Team**selezionare il criterio che si vuole assegnare e quindi fare clic su **Salva**.
-
-Per assegnare un criterio a più utenti contemporaneamente:
-
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
-2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
-3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **Applica**.  
-
-Si può anche procedere nel modo seguente:
-
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, **Vai a**  >  **criteri**teams teams.
-2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
-3. Scegliere **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
-5. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
-
-### <a name="assign-a-custom-teams-policy-to-users-in-a-group"></a>Assegnare criteri Team personalizzati agli utenti di un gruppo
-
-È consigliabile assegnare un criterio teams personalizzato a più utenti già identificati. Ad esempio, potresti voler assegnare un criterio a tutti gli utenti di un gruppo di sicurezza. A tale scopo, è possibile connettersi al modulo di PowerShell per il grafico di Azure Active Directory e al modulo di PowerShell per Skype for business. Per altre informazioni sull'uso di PowerShell per la gestione dei team, vedere [Cenni preliminari su teams PowerShell](teams-powershell-overview.md).
-
-In questo esempio viene assegnato un criterio teams denominato criteri marketing teams a tutti gli utenti nel gruppo marketing di contoso.  
-
-> [!NOTE]
-> Prima di tutto, assicurati di connetterti a Azure Active Directory PowerShell per modulo grafico e modulo di PowerShell per Skype for business seguendo la procedura descritta in [Connetti a tutti i servizi Microsoft 365 o Office 365 in una singola finestra di Windows PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/connect-to-all-office-365-services-in-a-single-windows-powershell-window).
-
-Ottenere il GroupObjectId del gruppo specifico.
-```PowerShell
-$group = Get-AzureADGroup -SearchString "Contoso Marketing"
-```
-Ottenere i membri del gruppo specificato.
-```PowerShell
-$members = Get-AzureADGroupMember -ObjectId $group.ObjectId -All $true | Where-Object {$_.ObjectType -eq "User"}
-```
-Assegnare tutti gli utenti del gruppo a un determinato criterio teams. In questo esempio si tratta di criteri per i team di marketing.
-```PowerShell
-$members | ForEach-Object { Grant-CsTeamsChannelsPolicy -PolicyName "Marketing Teams Policy" -Identity $_.UserPrincipalName}
-``` 
-A seconda del numero di membri del gruppo, questo comando può richiedere diversi minuti per l'esecuzione.
+[!INCLUDE [assign-policy](includes/assign-policy.md)]
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Gestire l'individuazione di team privati in Teams](manage-discovery-of-private-teams.md)
-- [Canali privati in teams](private-channels.md)
-- [Assegnare criteri agli utenti in teams](assign-policies.md)
+[Gestire l'individuazione di team privati in Teams](manage-discovery-of-private-teams.md)
+
+[Canali privati in teams](private-channels.md)
+
+[Assegnare criteri agli utenti in teams](assign-policies.md)

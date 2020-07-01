@@ -1,14 +1,14 @@
 ---
-title: Ritiro di Microsoft StaffHub
+title: Microsoft StaffHub è stato ritirato
 author: LanaChin
 ms.author: v-lanac
-ms.reviewer: lisawu
+ms.reviewer: lisawu, gumariam
 manager: serdars
 audience: admin
 ms.topic: article
 ms.service: msteams
 search.appverid: MET150
-description: Trova le risposte alle domande frequenti sulla pensione di Microsoft StaffHub e la transizione all'app turni in Microsoft teams.
+description: Trovare le risposte alle domande frequenti sulla pensione di Microsoft StaffHub e la transizione all'app turni in Microsoft teams.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -18,16 +18,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7e557d204ca838ce3f8c5bad9c2c62949bf836aa
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: ed2b2c3b2b1671b0000fb452d3c1b1dd6979625c
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868663"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938315"
 ---
-# <a name="microsoft-staffhub-to-be-retired"></a>Ritiro di Microsoft StaffHub
+# <a name="microsoft-staffhub-has-been-retired"></a>Microsoft StaffHub è stato ritirato
 
-Efficace il 30 giugno 2020, Microsoft StaffHub sarà ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo.
+Efficace il 30 giugno 2020, Microsoft StaffHub è stato ritirato. Stiamo costruendo funzionalità di StaffHub in Microsoft teams. Oggi teams include l'app turni per la gestione della pianificazione e le funzionalità aggiuntive verranno distribuite nel tempo.
 
 Queste modifiche sono parte dei nostri continui sforzi per consentire a tutti i dipendenti di Microsoft 365. Con le funzionalità per gli operatori di I FIRSTLINE ora in teams, ogni dipendente dell'organizzazione potrà usare teams per semplificare la giornata lavorativa, collaborare con i colleghi e accedere a informazioni e competenze per aiutarli a svolgere il loro lavoro migliore.
 
@@ -37,27 +37,27 @@ Queste modifiche sono parte dei nostri continui sforzi per consentire a tutti i 
 
 #### <a name="when-will-staffhub-be-retired"></a>Quando verrà ritirato StaffHub?
 
-A partire dalla metà di aprile 2019, Microsoft StaffHub non sarà più disponibile per i nuovi tenant e non sarà più possibile accedere all'app dall'icona di avvio delle app di Microsoft 365 o Office 365 nei tenant esistenti. Gli utenti correnti saranno comunque in grado di usare il servizio fino al 31 dicembre 2019, ma non verranno resi disponibili altre funzionalità.
+Microsoft StaffHub è stato ritirato, in vigore il 30 giugno 2020.
 
 #### <a name="what-will-happen-once-staffhub-is-retired"></a>Cosa succede quando StaffHub si ritira?
 
-Microsoft StaffHub smetterà di funzionare per tutti gli utenti il 30 giugno 2020. Tutti gli utenti che provano ad aprire l'app verranno visualizzati un messaggio che li indirizza a scaricare teams. Se l'utente ha una licenza attiva che include teams e l'organizzazione ha adottato la procedura appropriata per abilitare i team, i dati e le funzionalità di base di StaffHub saranno resi disponibili al momento della transizione a teams.
-
-Tra il 2019 e il 2020 di aprile StaffHub gli utenti riceveranno le notifiche in-app per incoraggiarle a usare teams.
+StaffHub ha smesso di funzionare per tutti gli utenti il 30 giugno 2020. Chiunque tenti di aprire l'app viene visualizzato un messaggio che li indirizza a scaricare teams.
 
 #### <a name="will-teams-offer-all-the-functionality-currently-offered-in-staffhub"></a>Teams offrirà tutte le funzionalità attualmente disponibili in StaffHub?
 
 In 2019 gennaio, Teams ha iniziato ad offrire turni già disponibili in Microsoft StaffHub. Questa funzionalità consente ai responsabili di pianificare e distribuire le pianificazioni di turni e i membri del team la possibilità di rivedere la pianificazione e di apportare le richieste di modifica di programmazione dai dispositivi mobili. Per altre informazioni, vedere [gestire l'app turni per l'organizzazione in teams](manage-the-shifts-app-for-your-organization-in-teams.md).
 
-Ci impegniamo per offrire un'esperienza utente superiore e per portare le funzionalità esclusive di StaffHub in teams. Per altre informazioni sulle caratteristiche che verranno messe a disposizione in teams, Vedi le [caratteristiche dei lavoratori di i FIRSTLINE presto disponibili in teams](firstline-worker-features-coming-to-teams.md).
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>Cosa è necessario fare per prepararsi a questa modifica?
-
-Per informazioni su come prepararsi per la transizione da StaffHub a turni in teams, passare a [prepararsi per spostare i team di StaffHub in turni](move-staffhub-teams-to-shifts-in-teams.md#prepare).
+Ci impegniamo per offrire un'esperienza utente superiore e per portare le funzionalità esclusive di StaffHub in teams.
 
 #### <a name="why-cant-users-in-my-organization-access-their-staffhub-team-from-shifts-in-teams"></a>Perché gli utenti dell'organizzazione non possono accedere al team di StaffHub da turni in teams?
 
-I team creati con StaffHub possono essere visualizzati e gestiti solo in StaffHub. Dopo che un team di StaffHub è stato spostato in teams, gli utenti saranno in grado di visualizzare le loro pianificazioni in turni. Ti invitiamo a comunicare questa modifica in anticipo e a familiarizzare con gli utenti esistenti con teams.
+Per accedere a un team di StaffHub da turni in teams, è stato necessario spostare il team di StaffHub in teams prima del 30 giugno 2020, ovvero quando StaffHub è stato ritirato.
+
+#### <a name="what-happens-if-i-didnt-move-a-staffhub-team-to-shifts-in-teams"></a>Cosa succede se non si sposta un team di StaffHub in turni in teams?
+
+I team creati con StaffHub e non sono stati spostati in teams non possono più essere visualizzati o spostati in vigore il 30 giugno 2020 quando StaffHub è stato ritirato. Tuttavia, puoi iniziare a usare teams in qualsiasi momento e creare una pianificazione di turno nell'app turni.
+
+Se si ha un team di StaffHub associato a un gruppo di Office 365 che non è stato spostato in teams e si vuole ora creare un team Turns Schedule associato al gruppo di Office 365, contattare il supporto tecnico.
 
 ### <a name="about-shifts"></a>Informazioni sui turni
 
@@ -109,15 +109,9 @@ Per indicazioni per gli amministratori, vedere [gestire l'app turni per l'organi
 
 Per la guida per l'utente finale, vai alla [Guida di turni per gli operatori di i FIRSTLINE](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b).
 
-### <a name="switch-from-staffhub-to-shifts-in-teams"></a>Passare da StaffHub a turni in teams
-
 #### <a name="what-licenses-do-i-need-for-teams"></a>Quali licenze sono necessarie per i team?
 
-Ogni utente deve avere una licenza Microsoft 365 o Office 365 attiva da un [piano idoneo](#which-plans-is-shifts-available-in) e deve essere assegnata una licenza di teams. Per altre informazioni, vedere [spostare i team di StaffHub in turni in teams](move-staffhub-teams-to-shifts-in-teams.md).
-
-#### <a name="how-do-i-move-my-organizations-staffhub-teams-to-teams"></a>Come si muovono I team di StaffHub dell'organizzazione in teams?
-
-Per informazioni dettagliate su come eseguire la transizione da StaffHub a teams, vedere [spostare i team di Microsoft StaffHub in turni in teams](move-staffhub-teams-to-shifts-in-teams.md).
+Ogni utente deve avere una licenza Microsoft 365 o Office 365 attiva da un piano idoneo e deve essere assegnata una licenza di teams. 
 
 #### <a name="how-do-i-enable-teams-in-my-organization"></a>Come si abilitano I team nell'organizzazione?
 
@@ -130,40 +124,6 @@ Teams supporta la coesistenza con Skype for business. Per altre informazioni, ve
 #### <a name="does-each-user-need-to-have-a-microsoft-365-or-office-365-account-or-azure-active-directory-azure-ad-account"></a>Ogni utente deve avere un account Microsoft 365 o Office 365 o un account di Azure Active Directory (Azure AD)?
 
 Sì, ogni Manager e membro del team che usa team e turni in Teams deve avere un account Microsoft 365 o Office 365 (Azure AD) a cui deve essere assegnata una licenza valida.
- 
-#### <a name="in-staffhub-i-could-add-a-special-prefix-to-all-microsoft-365-groups-that-were-created-by-staffhub-teams-can-i-do-the-same-in-teams"></a>In StaffHub è possibile aggiungere un prefisso speciale a tutti i gruppi di Microsoft 365 creati da team di StaffHub. È possibile eseguire la stessa operazione in teams?
-
-Non si avrà la stessa funzionalità quando si passa da StaffHub a teams. Se è necessario applicare la coerenza dei nomi a tutti i gruppi di Microsoft 365, è possibile usare i [criteri di denominazione dei gruppi](https://docs.microsoft.com/microsoft-365/admin/create-groups/groups-naming-policy).
-
-#### <a name="will-team-names-be-the-same-in-teams"></a>I nomi del team saranno gli stessi in teams?
-
-È possibile che il nome di un team sia diverso. I nomi dei team in teams usano il nome del gruppo Microsoft 365. Se il nome del team di StaffHub è diverso dal nome del gruppo Microsoft 365 corrispondente, viene visualizzato un nome diverso quando si passa a teams.
-
-#### <a name="what-happens-to-team-membership-when-a-staffhub-team-is-moved-to-teams"></a>Cosa succede all'appartenenza al team quando un team di StaffHub viene spostato in teams?
-
-L'appartenenza al team viene mantenuta quando un team di StaffHub viene spostato in teams. I numeri di telefono dei membri del team non verranno visualizzati in turni. Se il numero di telefono di StaffHub corrisponde al numero di telefono in Azure AD, verrà archiviato in Azure AD per l'account dell'utente. 
-
-Ti invitiamo a rivedere i roster del team esistenti su StaffHub e, se possibile, allineare i numeri di telefono alle rispettive identità di Azure AD.
- 
-#### <a name="what-happens-to-staffhub-team-members-who-arent-provisioned-or-whose-status-is-inactive"></a>Cosa succede ai membri del team di StaffHub che non hanno eseguito il provisioning o il cui stato è inattivo?
-
-La programmazione dell'utente verrà spostata in turni, ma l'utente non sarà membro del team o di un gruppo di Microsoft 365.
-
-Per gli account inattivi non collegati a un account utente di Azure AD, un Manager può garantire che l'utente venga aggiunto come membro del team aggiungendo un indirizzo di posta elettronica Microsoft 365 o Office 365 valido nella pagina membri del team di StaffHub in modo che l'utente sia collegato all'account di Azure AD corretto nell'organizzazione.
-
-Un'altra opzione consiste nel fatto che gli amministratori eseguano i cmdlet **Add-StaffHubMember** e **Remove-StaffHubUser** per rimuovere un account non provisioning da un team di StaffHub e aggiungere di nuovo l'utente al team con il relativo UPN.
-
-È consigliabile garantire che tutti gli utenti dell'organizzazione siano coperti da una licenza appropriata per ridurre al minimo le interruzioni e l'accesso ai servizi.
- 
-#### <a name="what-happens-to-chats-in-staffhub"></a>Cosa succede alle chat in StaffHub?
-
-Per facilitare la transizione degli utenti, è necessario eseguire la migrazione della cronologia delle chat di dati in StaffHub a teams. La quantità di cronologia delle chat che sarà disponibile in teams dipende da quanto presto configuri l'organizzazione per la transizione. Si consiglia di intervenire entro il 30 giugno 2019 per avere abbastanza tempo per passare 90 giorni di dati entro il 30 giugno 2020.
-
-Assicurarsi che la creazione di gruppi di Microsoft 365 sia abilitata nell'interfaccia di amministrazione di Microsoft 365 prima che inizi la transizione, poiché questo è essenziale per poter trasferire i dati della chat di StaffHub in teams. La mancata attivazione di questo servizio entro il 30 giugno 2019 si tradurrà in una data di migrazione successiva o in un minor numero di dati della chat da copiare.
-
-#### <a name="what-happens-to-files-that-have-been-uploaded-to-staffhub"></a>Cosa succede ai file caricati in StaffHub?
-
-È possibile trasferire i file necessari ai team da StaffHub a teams. I file spostati vengono archiviati nella cartella generale del sito del team in SharePoint Online. In teams gli utenti possono accedere ai file dalla scheda **file** nel canale generale del team. Per altre informazioni, vedere [spostare i team di Microsoft StaffHub in turni in teams](move-staffhub-teams-to-shifts-in-teams.md).
 
 #### <a name="can-i-export-shift-schedules-from-shifts"></a>È possibile esportare le pianificazioni di turno da turni?
   
@@ -182,10 +142,6 @@ Per altre informazioni, vedere [come interagire con i team in SharePoint Online 
 #### <a name="is-there-integration-between-shifts-and-the-outlook-calendar-can-i-export-a-schedule-to-a-calendar"></a>Esiste l'integrazione tra turni e il calendario di Outlook? È possibile esportare una programmazione in un calendario?
  
 I lavoratori di i FIRSTLINE possono vedere a colpo d'occhio l'intera pianificazione del lavoro in turni. Verrà supportato l'integrazione nativa con il calendario di Outlook come parte della nostra roadmap. Nel frattempo, USA Microsoft Flow per configurare l'integrazione con i turni in teams e Outlook e i calendari di Google.
-
-#### <a name="do-i-need-to-train-users-on-how-to-use-shifts-if-theyre-already-familiar-with-staffhub"></a>È necessario formare gli utenti su come usare I turni se hanno già familiarità con StaffHub?
-
-Non è necessario alcun training aggiuntivo. Possono usare i turni in modo simile a come usavano StaffHub. 
  
 #### <a name="what-admin-controls-are-available-to-manage-whether-users-in-my-organization-can-use-shifts"></a>Quali controlli di amministratore sono disponibili per gestire se gli utenti dell'organizzazione possono usare i turni?  
   
@@ -198,10 +154,6 @@ Per altre informazioni, vedere [gestire l'app turni per l'organizzazione in team
 Gestisci teams tramite il modulo di PowerShell Microsoft teams e il modulo di PowerShell per Skype for business. Per altre informazioni, Vedi [Cenni preliminari su teams PowerShell](../../teams-powershell-overview.md). In questo momento non sono disponibili cmdlet di PowerShell specifici per gestire i turni.  
 
 Se si tratta di qualcosa che ti interessa, invia una richiesta tramite il [portale feedback teams su UserVoice](https://microsoftteams.uservoice.com/forums/555103-public-preview/category/182881-developer-platform).
-
-#### <a name="what-will-happen-with-the-staffhub-api-which-is-currently-in-private-preview"></a>Cosa succede con l'API StaffHub, attualmente in anteprima privata?
-
-Se sono state create eventuali integrazioni con le API StaffHub, queste API saranno deprecate. Abbiamo rilasciato API Microsoft Graph per supportare le integrazioni con le soluzioni di gestione risorse umane, paghe o manodopera. Per altre informazioni, vedere [usare l'API Microsoft Graph per lavorare con i team](https://docs.microsoft.com/graph/api/resources/teams-api-overview).
 
 #### <a name="is-reporting-available-to-view-shifts-usage-across-my-organization"></a>La creazione di report è disponibile per visualizzare l'utilizzo di turni nell'organizzazione?
 

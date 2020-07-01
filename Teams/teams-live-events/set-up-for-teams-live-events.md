@@ -3,7 +3,6 @@ title: Configurare gli eventi live in Microsoft Teams
 author: lanachin
 ms.author: v-lanac
 manager: serdars
-ms.date: 07/10/2019
 ms.topic: article
 ms.service: msteams
 ms.reviewer: sonua
@@ -18,12 +17,12 @@ description: Configurazione dell'ambiente per gli eventi live in Teams, incluse 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a813f72c61e34ab217b14316ec4c2320affedfc6
-ms.sourcegitcommit: a73df97a06ea860bfaf5387e0acbf3c724697e14
+ms.openlocfilehash: dcb05d710df669a53e2876699cd8fc74ca3f6a9b
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44902281"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938505"
 ---
 # <a name="set-up-for-live-events-in-microsoft-teams"></a>Configurare gli eventi live in Microsoft Teams
 
@@ -42,20 +41,18 @@ Assicurarsi di aver assegnato correttamente le licenze per [chi può creare e pi
 I criteri per gli eventi live consentono di controllare chi nell'organizzazione può organizzare eventi live e le funzionalità disponibili negli eventi creati. È possibile usare il criterio predefinito o creare uno o più criteri personalizzati per gli eventi live. Dopo aver creato un criterio personalizzato, assegnarlo a un utente o a un gruppo di utenti dell'organizzazione.
 
 > [!NOTE]
-> Se non si creano e assegnano criteri personalizzati, gli utenti dell'organizzazione riceveranno il criterio globale. Per impostazione predefinita, nel criterio globale la pianificazione di eventi live per gli utenti di Teams è abilitata, le didascalie e i sottotitoli in tempo reale sono disattivati, chiunque all'interno dell'organizzazione può partecipare agli eventi live e l'impostazione di registrazione è configurata in modo da registrare sempre.
+> Gli utenti dell'organizzazione otterranno il criterio globale (predefinito per l'intero organigramma) a meno che non si creino e si assegnano criteri personalizzati. Per impostazione predefinita, nel criterio globale la pianificazione di eventi live per gli utenti di Teams è abilitata, le didascalie e i sottotitoli in tempo reale sono disattivati, chiunque all'interno dell'organizzazione può partecipare agli eventi live e l'impostazione di registrazione è configurata in modo da registrare sempre.
 
 ### <a name="create-or-edit-a-live-events-policy"></a>Creare o modificare un criterio per gli eventi live
 
 <a name="bkcreatepolicy"> </a>
 
-**![Icona che mostra il logo di Microsoft Teams](../media/teams-logo-30x30.png) Usare l'interfaccia di amministrazione di Microsoft Teams**
-
-1. Nel riquadro di spostamento sinistro passare a **Riunioni** > **Criteri eventi live**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Meetings**, vedere  >  **criteri eventi live**riunioni.
 2. Eseguire una delle operazioni seguenti:
 
-- Se si vuole modificare il criterio predefinito esistente, scegliere **Globale (predefinito a livello di organizzazione)**.
-- Se si vuole creare un nuovo criterio personalizzato, scegliere **Nuovo criterio**.
-- Se si vuole modificare un criterio personalizzato, selezionare il criterio e quindi scegliere **Modifica**.
+    - Se si vuole modificare il criterio predefinito esistente, scegliere **Globale (predefinito a livello di organizzazione)**.
+    - Se si vuole creare un nuovo criterio personalizzato, scegliere **Aggiungi**.
+    - Se si vuole modificare un criterio personalizzato, selezionare il criterio e quindi scegliere **Modifica**.
 
     Ecco le impostazioni che è possibile modificare per soddisfare le esigenze dell'organizzazione.
 
@@ -72,26 +69,9 @@ I criteri per gli eventi live consentono di controllare chi nell'organizzazione 
 
 È anche possibile eseguire questa operazione usando Windows PowerShell. Per altre informazioni, vedere [Usare PowerShell per impostare i criteri degli eventi live in Microsoft Teams](set-teams-live-events-policies-using-powershell.md). 
 
-### <a name="assign-a-live-events-policy-to-users"></a>Assegnare un criterio per gli eventi live agli utenti 
+### <a name="assign-a-live-events-policy-to-users"></a>Assegnare un criterio per gli eventi live agli utenti
 
-Se è stato creato un criterio personalizzato per gli eventi live, assegnarlo agli utenti per renderlo attivo. 
-
-![Icona che mostra il logo di Microsoft Teams](../media/teams-logo-30x30.png) Usando l'interfaccia di amministrazione di Microsoft Teams.
-
-1. Nel riquadro di spostamento sinistro passare a **Utenti**e quindi selezionare l'utente.
-2. Accanto a **Criteri assegnati** scegliere **Modifica**. 
-3. Selezionare il criterio per gli eventi live da assegnare e quindi scegliere **Salva**. 
-
-È anche possibile assegnare un criterio per gli eventi live a uno o più utenti, come illustrato di seguito:
-
-![Icona che mostra il logo di Microsoft Teams](../media/teams-logo-30x30.png) Usando l'interfaccia di amministrazione di Microsoft Teams.
-
-1. Passare a **Riunioni** > **Criteri eventi live**.
-2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
-3. Scegliere **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
-5. Dopo aver aggiunto gli utenti, selezionare **Salva**.
- 
+Se è stato creato un criterio personalizzato per gli eventi live, assegnarlo agli utenti per renderlo attivo. <br><br>[!INCLUDE [assign-policy](../includes/assign-policy.md)]
 
 ### <a name="enable-users-to-schedule-events-that-were-produced-with-an-external-app-or-device"></a>Consentire agli utenti di pianificare eventi prodotti con un'app o un dispositivo esterno
 
@@ -106,6 +86,7 @@ Per fare in modo che gli utenti possano pianificare eventi prodotti con un'app o
 3. Assicurarsi che gli organizzatori di eventi live abbiano accettato le norme aziendali impostate dall'amministratore di Stream. Se un amministratore del flusso ha [configurato delle linee guida aziendali](https://docs.microsoft.com/stream/company-policy-and-consent) e richiede ai dipendenti di accettarle prima di poter salvare contenuti, gli utenti devono farlo prima di creare un evento live (con un'app o un dispositivo esterno) in Teams. Prima di implementare la funzionalità degli eventi live nell'organizzazione, assicurarsi che tutti gli utenti che creeranno utenti live abbiano accettato le norme aziendali. 
 
 ## <a name="step-4-set-up-a-video-distribution-solution-for-live-events-in-teams"></a>Passaggio 4: Configurare una soluzione di distribuzione video per gli eventi live in Teams
+
 Per la riproduzione di video di eventi live viene usato lo streaming a bitrate adattivo (ABR), ma si tratta di un flusso unicast, vale a dire che ogni spettatore riceve un proprio flusso video da Internet. Quando si trasmettono video o eventi live a moltissimi utenti dell'organizzazione, la larghezza di banda Internet usata dagli spettatori può essere considerevole. Per le organizzazioni che vogliono ridurre il traffico Internet per gli eventi live, le soluzioni per gli eventi live sono integrate con le offerte di reti definite dal software (SDN) o reti per la distribuzione di contenuti aziendali (eCDN) dei partner di fiducia di Microsoft. Queste piattaforme SDN/eCDN consentono alle organizzazioni di ottimizzare la larghezza di banda della rete senza sacrificare le esperienze di visualizzazione degli utenti finali. I partner possono contribuire a garantire una distribuzione più scalabile ed efficiente dei video nell'intera rete aziendale.
 
 **Acquistare e configurare una soluzione all'esterno di Teams** I partner di fiducia di Microsoft del settore offrono consulenza esperta per il ridimensionamento della distribuzione di video. Per abilitare l'uso di un provider di distribuzione di video con Teams, è necessario acquistare e configurare la soluzione SDN/eCDN esterna e separata da Teams.
@@ -124,9 +105,11 @@ Le soluzioni SDN/eCDN seguenti sono preintegrate e possono essere configurate pe
 Dopo aver configurato la soluzione SDN o eCDN, si è pronti per configurare il provider per gli eventi live in Teams. 
 
 ## <a name="next-steps"></a>Passaggi successivi
+
 Andare a [Configurare le impostazioni degli eventi live in Teams](configure-teams-live-events.md).
 
 ### <a name="related-topics"></a>Argomenti correlati
+
 - [Cosa sono gli eventi live di Teams?](what-are-teams-live-events.md)
 - [Pianificare gli eventi live di Teams](plan-for-teams-live-events.md)
 - [Configurare le impostazioni degli eventi live in Teams](configure-teams-live-events.md)

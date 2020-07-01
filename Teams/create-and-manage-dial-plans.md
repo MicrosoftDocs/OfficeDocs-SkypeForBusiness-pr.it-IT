@@ -21,12 +21,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Informazioni su come usare l'interfaccia di amministrazione di Microsoft teams o Windows PowerShell per creare e gestire piani di chiamata (piani di chiamate PSTN).
-ms.openlocfilehash: 966ac2e21d3bc57dd32a0b2732e0be285b9fdf0d
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 0e5f45ecdb92843a77bd7a957b1b7c31b3403b92
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691342"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938235"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare piani di chiamata
 
@@ -60,13 +60,9 @@ Dopo aver pianificato i dial plan per l'organizzazione e aver individuato tutte 
 2. Selezionare il dial plan facendo clic a sinistra del nome del dial plan, quindi fare clic su **modifica**.
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva**.
 
-### <a name="add-users-to-a-dial-plan"></a>Aggiungere utenti a un dial plan
+### <a name="assign-a-dial-plan-to-users"></a>Assegnare un dial plan agli utenti
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, passa a **utenti**.
-2. Selezionare l'utente facendo clic sul nome visualizzato.
-3. Selezionare la scheda **criteri** .
-4. Fare clic su **modifica** a destra dei criteri assegnati.
-5. Nel menu a discesa **dial plan** selezionare il dial plan che si vuole assegnare all'utente e quindi fare clic su **applica**.
+Si assegna un piano di chiamata nello stesso modo in cui si assegnano i criteri. [!INCLUDE [assign-policy](includes/assign-policy.md)]
 
 ## <a name="using-powershell"></a>Utilizzo di PowerShell
   

@@ -24,12 +24,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sulla chiamata gratuita di numeri verdi in Egitto, tra cui disponibilità, disponibilità di reti cablate/fisse e mobili e restrizioni.
-ms.openlocfilehash: d7302220500a766fb00a6a13ffa0d96b0bbcf184
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+ms.openlocfilehash: 3ebb1bbd5a66064b6d53a26347d881df20485d5e
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140435"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938425"
 ---
 # <a name="toll-free-dialing-restrictions-in-egypt"></a>Restrizioni di chiamata gratuita in Egitto
 
@@ -38,7 +38,7 @@ ms.locfileid: "43140435"
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|È disponibile una chiamata gratuita?  <br/> |Sì  <br/> |
+|È disponibile una chiamata gratuita?  <br/> |No  <br/> |
 |Formato di chiamata (s)  <br/> |0800-XXX-XXXX  <br/> |
 |Codice ISO paese/area geografica  <br/> |EG  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |

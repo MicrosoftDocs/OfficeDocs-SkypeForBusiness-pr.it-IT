@@ -23,17 +23,17 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: d14c32357101ef2fe002394046f707445b7c10a6
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 1b7c94cd8dc0f46b72cea21ae46d98ed9a974fc5
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44756917"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938305"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
 ::: zone target="docs"
-I criteri riunione vengono usati per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti nell'organizzazione. Dopo aver creato un criterio e aver apportato le modifiche necessarie, è possibile assegnare utenti al criterio. Si possono gestire i criteri di riunione nell'interfaccia di amministrazione di Microsoft Teams o tramite [PowerShell](teams-powershell-overview.md).
+I criteri riunione vengono usati per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti nell'organizzazione. Puoi usare il criterio globale (predefinito per l'intera organizzazione) creato automaticamente o crea e assegna criteri personalizzati. Si possono gestire i criteri di riunione nell'interfaccia di amministrazione di Microsoft Teams o tramite [PowerShell](teams-powershell-overview.md).
 
 > [!NOTE]
 > Per informazioni sull'uso dei ruoli per gestire le autorizzazioni di relatori e partecipanti alla riunione, vedere [ruoli in una riunione di teams](https://support.microsoft.com/en-us/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019?ui=en-us&rs=en-us&ad=us).
@@ -46,52 +46,49 @@ I criteri riunione vengono usati per controllare le funzionalità disponibili pe
 |Per utente    |Quando si implementano criteri per utente, viene applicato solo il criterio per utente per limitare l'uso di determinate funzionalità da parte dell'organizzatore e/o dei partecipanti alla riunione. Ad esempio, **Consenti l'uso di Riunione immediata nei canali** è un criterio per utente.     |
 |Per organizzatore e per utente     |Quando si implementa una combinazione di criteri per organizzatore e per utente, l'uso di alcune funzionalità da parte dei partecipanti alla riunione è limitato, in base ai criteri applicati al singolo utente e ai criteri dell'organizzatore. Ad esempio, **Consenti registrazione cloud** è un criterio per organizzazione e per utente. Attivare questa impostazione per consentire all'organizzatore della riunione e ai partecipanti di avviare o interrompere una registrazione.
 
-Per impostazione predefinita, viene creato un criterio denominato Globale (predefinito a livello di organizzazione). Il criterio di riunione Globale viene assegnato per impostazione predefinita a tutti gli utenti dell'organizzazione. È possibile modificarlo o creare uno o più criteri personalizzati e assegnarli agli utenti. Se non si creano e assegnano criteri personalizzati, gli utenti riceveranno il criterio Globale. Quando si crea un criterio personalizzato, è possibile consentire o impedire che determinate funzionalità siano disponibili per gli utenti e quindi assegnarlo a uno o più utenti ai quali verranno applicate le impostazioni.
+È possibile modificare le impostazioni dei criteri globali oppure creare e assegnare uno o più criteri personalizzati. Gli utenti otterranno i criteri globali a meno che non si creino e si assegnano criteri personalizzati.
 
 > [!NOTE]
 > Il pulsante Dettagli riunione sarà disponibile se l'utente ha abilitato le licenze per le conferenze audio o se l'utente è autorizzato a ricevere servizi di audioconferenza, in caso contrario, i dettagli della riunione non saranno disponibili.
 
-## <a name="change-or-create-a-meeting-policy"></a>Modificare o creare un criterio di riunione
+## <a name="create-a-custom-meeting-policy"></a>Creare un criterio di riunione personalizzato
 
-Per modificare o creare un criterio riunione, passare all'interfaccia di amministrazione di Microsoft Teams > **Riunioni**  >  **Criteri riunione**. Selezionare un criterio dall'elenco o selezionare **Aggiungi**. Se si sta creando un nuovo criterio, aggiungere un nome e una descrizione. Il nome non può contenere caratteri speciali o più di 64 caratteri. Scegliere le impostazioni desiderate e quindi selezionare **Salva**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Riunioni** > **Criteri riunione**.
+2. Fare clic su **Aggiungi**.
+3. Immettere un nome e una descrizione per il criterio. Il nome non può contenere caratteri speciali o più di 64 caratteri.
+4. Scegliere le impostazioni desiderate.
+5. Fare clic su **Salva**.
 
 Ad esempio, si supponga di avere un gruppo di utenti e di voler limitare la larghezza di banda necessaria per la riunione. È possibile creare un nuovo criterio personalizzato denominato "Larghezza di banda limitata" e disabilitare le impostazioni seguenti:
 
 In **Audio e video**:
+
 - Disattivare Consenti registrazione cloud.
 - Disattivare Consenti video IP.
 
 In **Condivisione di contenuti**:
+
 - Disabilitare la modalità di condivisione dello schermo.
 - Disattivare Consenti la lavagna.
 - Disattivare Consenti note condivise.
 
 Assegnare poi il criterio agli utenti.
 
+## <a name="edit-a-meeting-policy"></a>Modificare i criteri di una riunione
+
+È possibile modificare il criterio globale in tutti i criteri personalizzati creati. 
+
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Riunioni** > **Criteri riunione**.
+2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
+3. Da qui apportare le modifiche desiderate.
+4. Fare clic su **Salva**.
+
 > [!NOTE]
 > A ogni utente può essere assegnato un solo criterio di riunione per volta.
 
 ## <a name="assign-a-meeting-policy-to-users"></a>Assegnare un criterio riunione agli utenti
 
-Per assegnare un criterio riunione a un solo utente:
-
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi fare clic sull'utente.
-2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
-3. In **Criteri riunioni** selezionare il criterio da assegnare e poi fare clic su **Applica**.
-
-Per assegnare un criterio a più utenti contemporaneamente:
-
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi cercare gli utenti o filtrare la visualizzazione per mostrare gli utenti desiderati.
-2. Nella colonna **&#x2713;** (segno di spunta) selezionare gli utenti. Per selezionare tutti gli utenti, fare clic sul &#x2713; (segno di spunta) nella parte superiore della tabella.
-3. Fare clic su **Modifica impostazioni**, apportare le modifiche desiderate e quindi fare clic su **Applica**.  
-
-Si può anche procedere nel modo seguente:
-
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Riunioni** > **Criteri riunione**.
-2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
-3. Scegliere **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
-5. Dopo avere aggiunto gli utenti, selezionare **Salva**.
+[!INCLUDE [assign-policy](includes/assign-policy.md)]
 
 > [!NOTE]
 > Non è possibile eliminare un criterio a cui sono utenti. È prima di tutto necessario assegnare un criterio diverso a tutti gli utenti interessati, quindi sarà possibile eliminare il criterio originale.

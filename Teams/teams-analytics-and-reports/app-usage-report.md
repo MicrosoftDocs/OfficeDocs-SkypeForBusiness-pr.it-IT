@@ -17,12 +17,12 @@ description: Informazioni su come usare il report sull'utilizzo dell'app teams n
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a5d5c1bdb5b5bbe58ecdb90721ce24bd0081a65
-ms.sourcegitcommit: a73df97a06ea860bfaf5387e0acbf3c724697e14
+ms.openlocfilehash: 565a3cb28b73a37162947859effc6ec154b59258
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44902329"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938205"
 ---
 # <a name="microsoft-teams-app-usage-report"></a>Report sull'utilizzo delle app di Microsoft Teams
 
@@ -30,7 +30,7 @@ Il report sull'utilizzo dell'app teams nell'interfaccia di amministrazione di Mi
 
 ## <a name="view-the-app-usage-report"></a>Visualizzare il report sull'utilizzo dell'app
 
-1.  Nella barra di spostamento sinistra dell'interfaccia di amministrazione <https://teams.admin.microsoft.com> fare clic su **analisi &** report \> **utilizzo**rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo app**.
+1.  Nella barra di spostamento sinistra dell'interfaccia di amministrazione <https://admin.teams.microsoft.com> fare clic su **analisi &** report \> **utilizzo**rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo app**.
 
      :::image type="content" source="media/app-usage-report1.png" alt-text="Screenshot della voce di menu report utilizzo":::
 

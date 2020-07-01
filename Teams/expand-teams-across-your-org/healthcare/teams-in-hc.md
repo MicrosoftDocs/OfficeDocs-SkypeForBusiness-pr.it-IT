@@ -18,12 +18,12 @@ appliesto:
 ms.reviewer: ''
 description: Informazioni sulle caratteristiche per l'assistenza sanitaria che includono il coordinamento delle cure, la messaggistica sicura, la telesanità, l'integrazione di EHR e l'integrazione del sistema di lavoro i FIRSTLINE.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b3335fa6cd5135dd30837338d762dd3b3fe8a2e7
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 457a5701288cf3d6203ad690d82d0bea3a4556cc
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905738"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938365"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Guida introduttiva a Teams per le organizzazioni del settore sanitario
 
@@ -109,10 +109,4 @@ Anche correlato alla messaggistica sicura è la possibilità di avere altri tena
 
 ## <a name="firstline-worker-integration"></a>Integrazione di i FIRSTLINE Worker
 
-Microsoft teams si integra con I FIRSTLINE Worker, che può essere usato per coordinare le caratteristiche di personale di spostamento e altro ancora.
-
- Vedere gli articoli seguenti:
-
-- [Spostare i team di Microsoft StaffHub in turni in Microsoft Teams](../shifts/move-staffhub-teams-to-shifts-in-teams.md)
-
-- [Gestire l'app turni per l'organizzazione in Microsoft Teams](../shifts/manage-the-shifts-app-for-your-organization-in-teams.md)
+Microsoft teams si integra con I FIRSTLINE Worker, che può essere usato per coordinare le caratteristiche di personale di spostamento e altro ancora. Vedere [gestire l'app turni per l'organizzazione in Microsoft teams](../shifts/manage-the-shifts-app-for-your-organization-in-teams.md).

@@ -20,49 +20,51 @@ ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 - seo-marvel-apr2020
 description: In questo articolo vengono illustrati i criteri di messaggistica e il modo in cui possono essere usati per controllare la messaggistica di chat in teams.
-ms.openlocfilehash: 9e382f5dd23220cc1a97f2549430a75a79e47eb7
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: b010f26beeab29b1f7362d3ebee57f092d8a28ec
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44756907"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938565"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in teams
 
 <!--- Add zone marker here--->
 
-I criteri di messaggistica vengono usati per controllare le funzionalità di messaggistica disponibili in chat e canali per gli utenti di Microsoft Teams. È possibile usare i criteri predefiniti creati automaticamente o creare uno o più criteri di messaggistica personalizzati per gli utenti dell'organizzazione. Dopo aver creato un criterio, è possibile assegnarlo a un utente o a un gruppo di utenti dell'organizzazione.
+I criteri di messaggistica vengono usati per controllare le funzionalità di messaggistica disponibili in chat e canali per gli utenti di Microsoft Teams. Puoi usare il criterio globale (predefinito per l'intera organizzazione) creato automaticamente o crea e assegna criteri di messaggistica personalizzati.
 
-Per impostazione predefinita, viene creato un criterio denominato globale (impostazione predefinita a livello di organizzazione). Per impostazione predefinita, a tutti gli utenti dell'organizzazione verrà assegnato questo criterio di messaggistica. È possibile apportare modifiche a questo criterio o creare uno o più criteri personalizzati e assegnarvi gli utenti. Quando si creano criteri personalizzati, è possibile consentire o impedire che determinate funzionalità siano disponibili per gli utenti e quindi assegnarle a uno o più utenti che avranno bisogno delle impostazioni applicate.
+Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato. È possibile modificare le impostazioni dei criteri globali oppure creare e assegnare uno o più criteri personalizzati per attivare o disattivare le caratteristiche desiderate.
 
-## <a name="change-or-create-a-messaging-policy"></a>Modificare o creare un criterio di messaggistica
+## <a name="create-a-custom-messaging-policy"></a>Creare criteri di messaggistica personalizzati
 
-È possibile gestire facilmente i criteri di messaggistica nell'interfaccia di amministrazione di Microsoft Teams ( https://admin.teams.microsoft.com) eseguendo l'accesso con le credenziali di amministratore e scegliendo **criteri di messaggistica** nel riquadro di spostamento sinistro. Per modificare i criteri di messaggistica predefiniti esistenti per l'organizzazione, selezionare la riga **globale (org-Wide default)** e quindi apportare le modifiche desiderate. Per creare un nuovo criterio di messaggistica personalizzato, selezionare **nuovo criterio**, assegnare un nome al nuovo criterio e quindi selezionare le impostazioni. Al termine, scegliere **Salva** .
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vedere **criteri di messaggistica**.
+2. Fare clic su **Aggiungi**.
+3. Immettere un nome e una descrizione per il criterio.
+4. Scegliere le impostazioni desiderate.
+5. Fare clic su **Salva**.
 
-Ad esempio, supponiamo di voler verificare che i messaggi inviati non vengano eliminati o modificati. Si creerebbe un nuovo criterio personalizzato denominato "Mantieni messaggi inviati" e si spengono le impostazioni seguenti:
+Ad esempio, supponiamo di voler verificare che i messaggi inviati non vengano eliminati o modificati. Creare un nuovo criterio personalizzato denominato "Mantieni messaggi inviati" e disattivare le impostazioni seguenti:
 
 - I proprietari possono eliminare i messaggi inviati
 - Gli utenti possono eliminare i messaggi inviati
 - Gli utenti possono modificare i messaggi inviati
 
-Assegnare poi il criterio agli utenti.
+Assegna quindi il criterio agli utenti.
 
-> [!NOTE]
-> A un utente può essere assegnato solo un criterio di messaggistica alla volta.
+## <a name="edit-a-messaging-policy"></a>Modificare i criteri di messaggistica
 
-## <a name="assign-a-messaging-policy-to-a-user"></a>Assegnare un criterio di messaggistica a un utente
+È possibile modificare il criterio globale in tutti i criteri personalizzati creati. 
 
-Se crei un criterio di messaggistica personalizzato, sarà attivo solo per un utente se il criterio viene assegnato all'utente. Per assegnare un criterio personalizzato a un utente, accedere all'interfaccia di amministrazione di Microsoft teams, scegliere **utenti** nel riquadro di spostamento sinistro e selezionare l'utente a cui si vuole assegnare il criterio. Nella pagina dell'utente scegliere **modifica** accanto a **criteri assegnati**. Nel riquadro **modifica criteri utente** , quindi, in **criteri di messaggistica**Selezionare i criteri di messaggistica nell'elenco a discesa e selezionare **Salva**. È anche possibile modificare le impostazioni dall'elenco degli utenti. A questo scopo, seleziona l'utente facendo clic a sinistra del nome visualizzato dell'utente. Selezionare **Modifica impostazioni**. Nel riquadro **Modifica impostazioni** , in **criteri di messaggistica**, selezionare il criterio nell'elenco a discesa e quindi selezionare **Salva**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vedere **criteri di messaggistica**.
+2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
+3. Da qui apportare le modifiche desiderate.
+4. Fare clic su **Salva**.
 
-Se si applica un criterio a più utenti, selezionare ognuno di essi facendo clic a sinistra del nome utente e quindi selezionare **Modifica impostazioni**. Nel riquadro **Modifica impostazioni** , in **criteri di messaggistica**, selezionare i criteri nell'elenco a discesa e quindi scegliere **Salva**.
+## <a name="assign-a-custom-messaging-policy-to-users"></a>Assegnare criteri di messaggistica personalizzati agli utenti
 
-È anche possibile assegnare un criterio di messaggistica a uno o più utenti, come indicato di seguito:
+[!INCLUDE [assign-policy](includes/assign-policy.md)]
 
-1. Accedere ai criteri di messaggistica dell'interfaccia di **amministrazione di Microsoft teams**  >  **Messaging policies**.
-2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
-3. Scegliere **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
-5. Dopo aver aggiunto gli utenti, selezionare **Salva**.
+A un utente può essere assegnato solo un criterio di messaggistica alla volta.
 
 > [!NOTE]
 > Non è possibile eliminare un criterio a cui sono utenti. È prima di tutto necessario assegnare un criterio diverso a tutti gli utenti interessati, quindi sarà possibile eliminare il criterio originale.
@@ -71,7 +73,7 @@ Se si applica un criterio a più utenti, selezionare ognuno di essi facendo clic
 
 ## <a name="messaging-policy-settings"></a>Impostazioni dei criteri di messaggistica
 
-Usare le impostazioni seguenti per modificare i criteri di messaggistica globale o creare un nuovo criterio personalizzato:
+Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 
 - **I proprietari possono eliminare i messaggi inviati**  Usare questa impostazione per consentire ai proprietari di eliminare i messaggi inviati dagli utenti in chat.
 - **Gli utenti possono eliminare i messaggi inviati** Usare questa impostazione per consentire agli utenti di eliminare i messaggi inviati in chat.
@@ -109,4 +111,4 @@ Usare le impostazioni seguenti per modificare i criteri di messaggistica globale
 
 ### <a name="related-topics"></a>Argomenti correlati
 
-- [Criteri di riunione in teams](meeting-policies-in-teams.md)
+- [Assegnare criteri agli utenti in teams](assign-policies.md)

@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.tooltip.allowsideloading
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - seo-marvel-mar2020
-ms.openlocfilehash: b368b0f81a4ce6bcdf3416ec597b702534e4a857
-ms.sourcegitcommit: 54ce623c4db792b5e33f5db00e575afc88776b61
+ms.openlocfilehash: 454d3b4a057b15ad0f329434f541cd03d2b41a7f
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44698276"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938455"
 ---
 # <a name="manage-custom-app-policies-and-settings-in-microsoft-teams"></a>Gestire i criteri e le impostazioni dell'app personalizzata in Microsoft Teams
 
@@ -132,6 +132,8 @@ Ad esempio, supponiamo che tu voglia consentire solo ai proprietari del team di 
 | Nella     | Nella     | Disattivare         | L'utente non può caricare app personalizzate.       |
 | Nella    | Nella        | Nella        | L'utente può caricare app personalizzate nel team, indipendentemente dal fatto che l'utente sia un proprietario del team. L'utente può caricare app personalizzate nel contesto personale.       |
 
- ## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-topics"></a>Argomenti correlati
  
-- [Impostazioni di amministrazione per le app in Teams](admin-settings.md)
+[Impostazioni di amministrazione per le app in Teams](admin-settings.md)
+
+[Assegnare criteri agli utenti in teams](assign-policies.md)

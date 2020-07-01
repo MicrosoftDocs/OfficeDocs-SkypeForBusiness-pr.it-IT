@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.callparkpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni su come usare Call Park e retrieve per effettuare una chiamata in attesa nel servizio Teams nel cloud.
-ms.openlocfilehash: e36690c4059ceae67c8615b1e910051439ca8e78
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: a9518705cd5edff3834be21732f78dd47352cd63
+ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042963"
+ms.lasthandoff: 06/30/2020
+ms.locfileid: "44938535"
 ---
 # <a name="call-park-and-retrieve-in-microsoft-teams"></a>Chiamare il parcheggio e il recupero in Microsoft Teams
 
@@ -52,11 +52,11 @@ Call Park and retrieve è attualmente supportato dai seguenti client e dispositi
 
 | Funzionalità | Desktop Teams | App teams Mac | App Web Teams (Edge) |App teams per dispositivi mobili iOS/Android | Telefono IP Teams | Telefono IP Skype for business |
 |------------|---------------|---------------|----------------------|-----------------------------|----------------|-----------------------------|
-| Parcheggiare una chiamata | Sì | Sì | Sì | Sì | Prossimamente| No |
-| Recuperare una chiamata parcheggiata | Sì | Sì | Sì | Sì | Prossimamente| No |
-| Chiamata non recuperata Ring back | Sì | Sì | Sì | Sì | Prossimamente| No |
+| Parcheggiare una chiamata | Sì | Sì | Sì | Sì | Sì | No |
+| Recuperare una chiamata parcheggiata | Sì | Sì | Sì | Sì | Sì | No |
+| Chiamata non recuperata Ring back | Sì | Sì | Sì | Sì | Sì | No |
 
-## <a name="configuring-call-park-and-retrieve"></a>Configurazione di Call Park e recupero
+## <a name="configure-call-park-and-retrieve"></a>Configurare il parcheggio delle chiamate e il recupero
 
 È necessario essere un amministratore per configurare il parcheggio delle chiamate e il recupero e la caratteristica è disabilitata per impostazione predefinita. Puoi abilitarlo per gli utenti e creare gruppi di utenti usando i criteri per il parcheggio delle chiamate. Quando si applica lo stesso criterio a un set di utenti, è possibile parcheggiare e recuperare le chiamate tra di loro. Per configurare Call Park per gli utenti e creare gruppi di utenti di Call Park, seguire la procedura di [assegnazione di un parcheggio](#assign-a-call-park-policy) di chiamata seguente.
 
@@ -64,33 +64,35 @@ Per informazioni su come usare la funzionalità chiama parcheggio e recupera, ve
 
 ### <a name="enable-a-call-park-policy"></a>Abilitare un criterio per il parcheggio delle chiamate
 
-Seguire questa procedura per abilitare un criterio per il parcheggio delle chiamate:
-
-1. Accedere ai criteri per il**Voice** > **parcheggio**dell'interfaccia di amministrazione > di **Microsoft teams**.
-2. Selezionare **nuovo criterio**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Voice**accedere ai criteri per il parcheggio per le  >  **chiamate**vocali.
+2. Selezionare **Aggiungi**.
 3. Assegnare un nome al criterio e quindi passare **Consenti al parcheggio** di chiamata **.**
 4. Selezionare **Salva**.
 
+#### <a name="using-powershell"></a>Utilizzo di PowerShell
+
+Vedere [New-CsTeamsCallParkPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamscallparkpolicy?view=skype-ps).
+
+### <a name="edit-a-call-park-policy"></a>Modificare un criterio per il parcheggio delle chiamate
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Voice**accedere ai criteri per il parcheggio per le  >  **chiamate**vocali.
+2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi fare clic su **modifica**.
+3. Opzione **Consenti parcheggio chiamate** su **disattivato** o **su**.
+4. Fare clic su **Salva**.
+
+#### <a name="using-powershell"></a>Utilizzo di PowerShell
+
+Vedere [set-CsTeamsCallParkPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamscallparkpolicy?view=skype-ps). Ad esempio, per modificare l'impostazione predefinita, eseguire le operazioni seguenti:
+
+  ```PowerShell
+  Set-CsTeamsCallParkPolicy -Identity Global -AllowCallPark $true
+  ```
+
 ### <a name="assign-a-call-park-policy"></a>Assegnare un criterio per il parcheggio delle chiamate
 
-Seguire questa procedura per assegnare un criterio di parcheggio di chiamata a uno o più utenti:
-
-1. Accedere ai criteri per il**Voice** > **parcheggio**dell'interfaccia di amministrazione > di **Microsoft teams**.
-2. Selezionare il criterio facendo clic a sinistra del nome del criterio.
-3. Scegliere **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
-5. Dopo aver aggiunto gli utenti, selezionare **Salva**.
+[!INCLUDE [assign-policy](includes/assign-policy.md)]
  
-### <a name="configure-call-park-and-retrieve-with-powershell"></a>Configurare il parcheggio delle chiamate e il recupero con PowerShell
-
-Usa il cmdlet di PowerShell [New-CsTeamsCallParkPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamscallparkpolicy?view=skype-ps) per creare un criterio per il parcheggio delle chiamate.
-
-Usare il cmdlet di PowerShell [Grant-CsTeamsCallParkPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamscallparkpolicy?view=skype-ps) per concedere un criterio per il parcheggio delle chiamate.
-
-È possibile modificare l'impostazione predefinita usando [set-CsTeamsCallParkPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamscallparkpolicy?view=skype-ps) come indicato di seguito:
-
-`Set-CsTeamsCallParkPolicy -Identity Global -AllowCallPark $true`
-
+Vedere anche [Grant-CsTeamsCallParkPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamscallparkpolicy?view=skype-ps).
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
@@ -105,6 +107,8 @@ Se un utente tenta di recuperare una chiamata e non riesce, verificare quanto se
 - Modalità Isola-Call Park and retrieve non è disponibile nella modalità Isola di teams.
 - La chiamata è già stata recuperata o terminata.
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="related-topics"></a>Argomenti correlati
 
-[Parcheggiare una chiamata in teams](https://support.office.com/article/park-a-call-in-teams-8538c063-d676-4e9a-8045-fc3b7299bb2f).
+[Parcheggiare una chiamata in teams](https://support.office.com/article/park-a-call-in-teams-8538c063-d676-4e9a-8045-fc3b7299bb2f)
+
+[Assegnare criteri agli utenti in teams](assign-policies.md)
