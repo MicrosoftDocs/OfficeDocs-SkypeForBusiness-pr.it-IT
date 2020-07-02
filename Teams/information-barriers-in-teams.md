@@ -16,12 +16,12 @@ description: In questo articolo vengono illustrati gli ostacoli alle informazion
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 12bd0102904ff933b5a2ffd6f12d8a8d3b76aaaa
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: 7ab476fa906c849e2c5af59546c3cca482be461a
+ms.sourcegitcommit: 4099da7b1db7663e63ef5bece16e3090c33ea207
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868693"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45021829"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -92,7 +92,16 @@ I criteri di barriera delle informazioni vengono attivati quando si verificano g
 
     ![Schermata che mostra l'utente bloccato dalla riunione](media/information-barriers-meeting.png)
 
-- **Una schermata viene condivisa tra due o più utenti** : ogni volta che viene condivisa una schermata tra due o più utenti, la condivisione dello schermo deve essere valutata per verificare che non violi i criteri di barriera delle informazioni di altri utenti. Se si violano i criteri di barriera delle informazioni, la condivisione dello schermo non sarà consentita.
+- **Una schermata viene condivisa tra due o più utenti** : ogni volta che viene condivisa una schermata tra due o più utenti, la condivisione dello schermo deve essere valutata per verificare che non violi i criteri di barriera delle informazioni di altri utenti. Se si violano i criteri di barriera delle informazioni, la condivisione dello schermo non sarà consentita. 
+ 
+    Ecco un esempio di condivisione dello schermo prima che venga applicato il criterio. 
+
+    ![Screenshot che mostra una chat utente](media/ib-before-screen-share-policy.png)
+
+    Ecco un esempio di condivisione dello schermo dopo l'applicazione dei criteri. Le icone condivisione schermo e chiamata non sono visibili.
+
+    ![Schermata che mostra il carattere utente con le impostazioni bloccate](media/ib-after-screen-share-policy.png)
+
 - **Un utente inserisce una chiamata telefonica (VoIP) in teams** : ogni volta che viene avviata una chiamata vocale da un utente a un altro utente o gruppo di utenti, la chiamata viene valutata per assicurarsi che non violi i criteri di barriera delle informazioni di altri membri del team. In caso di violazione, la chiamata vocale è bloccata.
 - **Utenti guest in teams** -i criteri barriera delle informazioni si applicano agli utenti guest anche in teams. Se gli utenti Guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere [gestire l'accesso guest nei gruppi di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-guest-access-in-groups). Una volta individuabili gli utenti guest, puoi [definire i criteri di barriera delle informazioni](https://docs.microsoft.com/office365/securitycompliance/information-barriers-policies).
 
@@ -100,9 +109,17 @@ I criteri di barriera delle informazioni vengono attivati quando si verificano g
 
 Quando l'amministratore dei criteri barriera delle informazioni apporta modifiche a un criterio o una modifica del criterio viene applicata a causa di una modifica del profilo di un utente, ad esempio per una modifica del processo o un motivo simile, il servizio di valutazione dei criteri barriera informazioni esegue automaticamente la ricerca nei membri per garantire che i membri del team non violino i criteri.
 
-Se esiste una chat o altre comunicazioni esistenti tra gli utenti e viene impostato un nuovo criterio o viene modificato un criterio esistente, il servizio valuta le comunicazioni esistenti per verificare che le comunicazioni siano ancora consentite.
+Se esiste una chat o altre comunicazioni esistenti tra gli utenti e viene impostato un nuovo criterio o viene modificato un criterio esistente, il servizio valuta le comunicazioni esistenti per verificare che le comunicazioni siano ancora consentite. 
 
-- **chat di 1:1** -se la comunicazione tra i due utenti non è più consentita (se un criterio blocca la comunicazione viene applicato a uno o entrambi gli utenti), viene bloccata un'ulteriore comunicazione e la conversazione della chat diventa di sola lettura.
+- **chat di 1:1** -se la comunicazione tra i due utenti non è più consentita (se un criterio blocca la comunicazione viene applicato a uno o entrambi gli utenti), viene bloccata un'ulteriore comunicazione e la conversazione della chat diventa di sola lettura. 
+
+    Ecco un esempio che mostra che la chat è visibile.
+
+    ![Screenshot che mostra che la chat utente è disponibile](media/ib-before-1-1chat-policy.png)
+
+    Ecco un esempio che mostra che la chat è disabilitata.
+
+    ![Screenshot che mostra che la chat utente è disabilitata](media/ib-after-1-1chat-policy.png)
 
 - **Chat di gruppo** : se la comunicazione di un utente al gruppo non è più consentita (ad esempio, se un utente modifica i processi), l'utente, insieme agli altri utenti che violano il criterio, potrebbe essere rimosso dalla chat di gruppo e non sarà possibile comunicare ulteriormente con il gruppo. L'utente può ancora vedere le vecchie conversazioni (che saranno di sola lettura), ma non sarà in grado di vedere o partecipare a nuove conversazioni con il gruppo. Se i criteri nuovi o modificati che impediscono la comunicazione vengono applicati a più utenti, gli utenti interessati dal criterio potrebbero essere rimossi da una chat di gruppo. Possono ancora vedere le conversazioni precedenti.
 
@@ -126,11 +143,30 @@ Attualmente gli utenti avvertono quanto segue se un criterio barriera informativ
     ![Schermata che mostra la chat di gruppo](media/information-barriers-people-picker.png)
     
 - **Scheda attività** : se un utente visita la scheda **attività** di un utente bloccato, non verranno visualizzati messaggi. La scheda **attività** Visualizza solo i post di canale e non ci sarebbero canali comuni tra i due utenti.
+
+    Ecco un esempio della visualizzazione scheda attività.
+
+    ![Schermata che mostra la scheda attività](media/ib-before-activity-tab-policy.png)
+
+    Ecco un esempio della visualizzazione della scheda attività bloccata.
+
+    ![Schermata che mostra la scheda attività bloccata](media/ib-after-activity-tab-policy.png)
+
+
 - **Organigrammi: se** un utente accede a un organigramma in cui viene visualizzato un utente bloccato, l'utente bloccato non verrà visualizzato nell'organigramma e verrà visualizzato un messaggio di errore.
 - **Scheda persone** : se un utente partecipa a una conversazione e l'utente viene bloccato in seguito, gli altri utenti vedranno un messaggio di errore al posto della scheda persone quando passa il puntatore del mouse sul nome dell'utente bloccato. Le azioni elencate nella scheda, ad esempio le chiamate e le chat, non saranno disponibili.
 - **Contatti suggeriti** : gli utenti bloccati non vengono visualizzati nell'elenco dei contatti suggeriti (l'elenco dei contatti iniziale visualizzato per i nuovi utenti).
 - **Contatti chat** : un utente può visualizzare gli utenti bloccati nell'elenco contatti chat, ma gli utenti bloccati verranno identificati e l'unica azione che l'utente può eseguire è eliminarli. L'utente può anche fare clic su di essi per visualizzare la conversazione passata.
 - **Chiamate contatti** -un utente può vedere gli utenti bloccati nell'elenco contatti chiamate, ma gli utenti bloccati verranno identificati e l'unica azione che l'utente può eseguire è eliminarli.
+
+    Ecco un esempio di utente bloccato nell'elenco contatti chiamate.
+
+    ![Screenshot che mostra la chat utente dell'utente](media/ib-before-chat-contacts-policy.png)
+
+    Ecco un esempio della chat che viene disabilitata per un utente nell'elenco di contenuto chiamate.
+
+    ![Schermata che mostra l'utente bloccato dalla chat](media/ib-after-chat-contacts-policy.png)
+
 - **Migrazione di Skype to teams** -durante una migrazione di Skype for business a teams, tutti gli utenti, anche quelli bloccati da criteri di barriera delle informazioni, verranno migrati in teams e verranno gestiti come descritto sopra.
 
 ## <a name="teams-policies-and-sharepoint-sites"></a>Criteri per i team e siti di SharePoint

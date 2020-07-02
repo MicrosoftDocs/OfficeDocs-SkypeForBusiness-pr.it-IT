@@ -18,19 +18,19 @@ description: Scopri i diversi modi per assegnare i criteri agli utenti in Micros
 f1keywords:
 - ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
-ms.openlocfilehash: 403131fa3e7bd2b3fb2a128640ac49497394d669
-ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
+ms.openlocfilehash: c7522bc4bffeafeef4d194f5e4ad24ec9648a91a
+ms.sourcegitcommit: 4099da7b1db7663e63ef5bece16e3090c33ea207
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44938545"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45021754"
 ---
 # <a name="assign-policies-to-your-users-in-microsoft-teams"></a>Assegnare i criteri agli utenti in Microsoft Teams
 
 > [!NOTE]
 > **Tenere presente quanto segue su una delle caratteristiche descritte in questo articolo, assegnazione dei criteri a gruppi**: 
 > - [L'assegnazione dei criteri a gruppi che usano l'interfaccia di amministrazione di Microsoft teams](#using-the-microsoft-teams-admin-center-3)non è ancora stata rilasciata. È stata annunciata e arriverà presto. 
-> - L' [assegnazione dei criteri ai gruppi tramite PowerShell](#using-powershell-3)è attualmente disponibile solo in anteprima privata. I cmdlet di PowerShell per questa funzionalità si trovano nel modulo di PowerShell per i team pre-release.
+> - L' [assegnazione dei criteri ai gruppi tramite PowerShell](#using-powershell-3)è attualmente disponibile solo in anteprima privata. I cmdlet per questa funzionalità si trovano nel modulo anteprima pubblica di PowerShell per Teams.
 >
 > Per rimanere in primo piano sullo stato di rilascio di questa funzionalità, vedere la [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=61185).
 
@@ -160,7 +160,7 @@ In questo esempio, assegniamo un criterio riunione teams denominato criteri riun
 Grant-CsTeamsMeetingPolicy -Identity reda@contoso.com -PolicyName "Student Meeting Policy"
 ```
 
-Per altre informazioni, vedere [gestione dei criteri tramite PowerShell](teams-powershell-overview.md#managing-policies-via-powershell).
+Per altre informazioni, leggere [gestione dei criteri tramite PowerShell](teams-powershell-managing-teams.md#manage-policies-via-powershell).
 
 ## <a name="assign-a-policy-package"></a>Assegnare un pacchetto di criteri
 
@@ -315,40 +315,14 @@ Per modificare la classificazione di un'assegnazione di gruppo, è necessario ri
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-**Questa caratteristica è attualmente disponibile solo in anteprima privata. I cmdlet per questa funzionalità si trovano nel modulo di PowerShell per i team pre-release.**
+**Questa caratteristica è attualmente disponibile solo in anteprima privata. I cmdlet per questa funzionalità si trovano nel modulo anteprima pubblica di PowerShell per Teams.**
 
 > [!NOTE]
 > Attualmente, l'assegnazione dei criteri ai gruppi che usano PowerShell non è disponibile per tutti i tipi di criteri teams. Vedere [New-CsGroupPolicyAssignment](https://docs.microsoft.com/powershell/module/teams/new-csgrouppolicyassignment) per l'elenco dei tipi di criteri supportati.
 
 #### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo di PowerShell di Microsoft Teams
 
-I cmdlet si trovano nella versione preliminare del modulo di PowerShell teams. Seguire questa procedura per disinstallare prima di tutto la versione in genere disponibile del modulo di PowerShell Teams (se è installato) e quindi installare la versione più recente di pre-rilascio del modulo dalla raccolta di test di PowerShell.
-
-Se non è già stato eseguito, eseguire la procedura seguente per registrare la raccolta di test di PowerShell come origine attendibile.
-
-```powershell
-Register-PSRepository -SourceLocation https://www.poshtestgallery.com/api/v2 -Name PsTestGallery -InstallationPolicy Trusted
-```
-
-Se è installata la versione in genere disponibile del modulo di PowerShell teams, eseguire la procedura seguente per disinstallarlo.
-
-```powershell
-Uninstall-Module MicrosoftTeams -AllVersions
-```
-
-Eseguire la procedura seguente per installare il modulo di PowerShell Microsoft Teams più recente dalla raccolta di test di PowerShell.
-
-```powershell
-Install-Module MicrosoftTeams -Repository PSTestGallery
-```
-
-Eseguire le operazioni seguenti per connettersi ai team e avviare una sessione.
-
-```powershell
-Connect-MicrosoftTeams
-```
-
-Quando viene richiesto, accedere con le credenziali di amministratore.
+Questi cmdlet fanno parte del modulo anteprima pubblica di PowerShell teams. Per informazioni dettagliate, vedere [installare teams PowerShell](teams-powershell-install.md).
 
 #### <a name="assign-a-policy-to-a-group"></a>Assegnare un criterio a un gruppo
 
