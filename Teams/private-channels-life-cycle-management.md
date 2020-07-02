@@ -18,19 +18,19 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire il ciclo di vita dei canali privati nell'organizzazione.
-ms.openlocfilehash: 45d9591eed2bd3a880d3ca3e2ceb2252bf6f8898
-ms.sourcegitcommit: b381d8f0b9fc45133d52175fa85901b66e744abd
+ms.openlocfilehash: 0f4f4d21adcb73731c8d0218a7b776c0aacbc7da
+ms.sourcegitcommit: a94a267c421a78587b0dbbea5fa167aad2882e9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/20/2020
-ms.locfileid: "44326693"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45012292"
 ---
 # <a name="manage-the-life-cycle-of-private-channels-in-microsoft-teams"></a>Gestire il ciclo di vita dei canali privati in Microsoft Teams
 
 In questa sezione sono disponibili le indicazioni necessarie per gestire il ciclo di vita dei [canali privati](private-channels.md) nell'organizzazione.
 
 > [!IMPORTANT]
-> Se si usano i passaggi di PowerShell in questo articolo per gestire i canali privati, è necessario installare e usare la versione più recente del modulo di PowerShell per i team nella [raccolta di test di PowerShell](https://www.poshtestgallery.com/packages/MicrosoftTeams/). Per istruzioni su come installare il modulo, vedere [installare la versione preliminare del modulo di PowerShell teams](install-prerelease-teams-powershell-module.md). La versione più recente disponibile al pubblico del modulo di PowerShell teams non supporta la gestione dei canali privati.
+> Se si usano i passaggi di PowerShell in questo articolo per gestire i canali privati, è necessario installare e usare il modulo di anteprima pubblica di PowerShell teams dalla [raccolta di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/). Per istruzioni su come installare il modulo, vedere [installare Microsoft teams PowerShell](teams-powershell-install.md). Il modulo di PowerShell più recente per i team di disponibilità generale non supporta la gestione dei canali privati.
 
 ## <a name="set-whether-team-members-can-create-private-channels"></a>Impostare se i membri del team possono creare canali privati
 

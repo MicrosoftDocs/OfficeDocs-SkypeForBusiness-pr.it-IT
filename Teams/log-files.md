@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni sui registri di debug, multimediali e desktop prodotti da Microsoft teams, dove possono essere trovati e come possono essere utili per la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a9981a30eb0365f2919d86bd6bf694375e71e9eb
-ms.sourcegitcommit: 47637ed816b471fe689e7bdac27b73e6efced60c
+ms.openlocfilehash: 7ad44af297cdfe375f28485e1c4c4e223f616666
+ms.sourcegitcommit: a94a267c421a78587b0dbbea5fa167aad2882e9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44374204"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45012192"
 ---
 <a name="use-log-files-in-troubleshooting-microsoft-teams"></a>Usare i file di log in risoluzione dei problemi di Microsoft Teams
 =================================================
@@ -44,6 +44,7 @@ La tabella seguente descrive i diversi client e i registri associati. I file di 
 |Web    |X         |-         |-         |
 |Windows     |X         |X         |X         |
 |Mac OSX     |X         |X         |X         |
+|Linux     |X         |X         |X         |
 |iOS     |-         |-         |-         |
 |Android     |-         |-         |-         |
 
@@ -72,11 +73,17 @@ I log di debug vengono prodotti usando i seguenti metodi specifici per il sistem
 
       Tasto di scelta rapida: opzione + comando + MAIUSC + 1
 
+-   Linux
+
+      Tasto di scelta rapida: CTRL + ALT + MAIUSC + 1
+
 I log di debug vengono scaricati automaticamente nelle cartelle seguenti.
 
 -   Windows:% UserProfile% \\ download
 
 -   Mac OSX: download
+
+-   Linux: ~/Downloads
 
 -   Browser: verrà richiesto di salvare il log di debug nella posizione di salvataggio predefinita
 
@@ -93,6 +100,8 @@ I registri multimediali contengono dati di diagnostica relativi alla condivision
 |            |%appdata%\Microsoft\Teams\media-stack \\ *. etl         |
 |Mac OSX     |~/Libreria/Application Support/Microsoft/teams/media-stack/*. Blog         |
 |            |~/Libreria/Application Support/Microsoft/teams/skylib/*. Blog         |
+|Linux       |~/.config/Microsoft/Microsoft teams/media-stack/*. Blog         |
+|            |~/.config/Microsoft/Microsoft teams/skylib/*. Blog         |
 
 
 
@@ -103,13 +112,18 @@ I registri desktop, noti anche come log del programma di avvio automatico, conte
 
 Windows
 
-1.  Fare clic con il pulsante destro del mouse sull' **icona di Microsoft teams nella barra delle** applicazioni, selezionare **Ottieni log**
+1.  Fare clic con il pulsante destro del mouse sull'icona di **Microsoft teams** nella barra delle applicazioni, selezionare **Ottieni log**
 
 Mac OsX:
 
 1.  Scegliere **Get logs** dal menu a discesa della **Guida**
 
+Linux
+
+1.  Fare clic sull'icona **Microsoft teams** nella barra delle applicazioni, selezionare **Get logs**
+
 |Client |Posizione |
 |---------|---------|
-|Windows     |%appdata%\Microsoft\Teams\logs.txt         |
-|Mac OSX     |~/Libreria/Application Support/Microsoft/teams/logs. txt         |
+|Windows     |% AppData% \Microsoft\Teams\logs.txt         |
+|Mac OSX     |~/Libreria/Application Support/Microsoft/teams/logs.txt         |
+|Linux       |~/.config/Microsoft/Microsoft teams/logs.txt         |

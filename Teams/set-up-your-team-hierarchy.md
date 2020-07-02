@@ -15,12 +15,12 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e60e152128c60279e3bb9ee9e3d37e881effce9a
-ms.sourcegitcommit: 1a6b4efad1e6a958cdbaae4b0e2e231145c9658f
+ms.openlocfilehash: 136b06a6c134fc2ec906c8c2175d462f71a5b9a6
+ms.sourcegitcommit: 9b1c138b39fd87e239a7b1c5051f30c633e7d813
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44321745"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44944019"
 ---
 # <a name="set-up-your-team-targeting-hierarchy"></a>Configurare la gerarchia di destinazione del team
 
@@ -116,7 +116,7 @@ L' `Store layout` attributo contiene valori che includono `Compact` , `Standard`
 ## <a name="apply-your-hierarchy"></a>Applicare la gerarchia
 
 > [!IMPORTANT]
-> Per eseguire questo passaggio, è necessario installare e usare la versione più recente del modulo di PowerShell teams dalla [raccolta di test di PowerShell](https://www.poshtestgallery.com/packages/MicrosoftTeams/). Per istruzioni su come installare il modulo, vedere [installare la versione preliminare del modulo di PowerShell teams](install-prerelease-teams-powershell-module.md).
+> Per eseguire questo passaggio, è necessario installare e usare il modulo di anteprima pubblica di PowerShell teams dalla [raccolta di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/). Per istruzioni su come installare il modulo, vedere [installare teams PowerShell](teams-powershell-install.md).
 
 Dopo aver definito la gerarchia nel file CSV dello schema, si è pronti per caricarla in teams. A tale scopo, eseguire il comando seguente. Per eseguire questa procedura è necessario essere un amministratore globale o un amministratore del servizio teams.
 
@@ -127,7 +127,7 @@ Set-TeamTargetingHierarchy -FilePath "C:\ContosoTeamSchema.csv"
 ## <a name="remove-your-hierarchy"></a>Rimuovere la gerarchia
 
 > [!IMPORTANT]
-> Per eseguire questo passaggio, è necessario installare e usare la versione più recente del modulo di PowerShell teams dalla [raccolta di test di PowerShell](https://www.poshtestgallery.com/packages/MicrosoftTeams/). Per istruzioni su come installare il modulo, vedere [installare la versione preliminare del modulo di PowerShell teams](install-prerelease-teams-powershell-module.md).
+> Per eseguire questo passaggio, è necessario installare e usare il modulo di anteprima pubblica di PowerShell teams dalla [raccolta di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/). Per istruzioni su come installare il modulo, vedere [installare teams PowerShell](teams-powershell-install.md).
 
 Se si vuole disabilitare immediatamente la scheda **elenchi pubblicati** per tutti gli utenti dell'organizzazione, è possibile rimuovere la gerarchia. Gli utenti non avranno accesso alla scheda **elenchi pubblicati** o a nessuna delle funzionalità nella scheda.  Questo include la possibilità di creare nuovi elenchi di attività da pubblicare, accedere a elenchi di bozze, pubblicare, annullare la pubblicazione e duplicare elenchi e visualizzare i report. La rimozione della gerarchia non annulla la pubblicazione delle attività pubblicate in precedenza. Queste attività rimarranno disponibili per il completamento dei team destinatari. 
 

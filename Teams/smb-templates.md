@@ -17,12 +17,12 @@ appliesto:
 ms.reviewer: lavenkat
 description: Usare i modelli predefiniti di Microsoft teams per creare rapidamente e facilmente team per piccole e medie imprese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0d88ee5ea6a584a4b064b1ba12dd6d6ef72f2f25
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 1de5e0459168c7586f0b8e18a33153ca1519853a
+ms.sourcegitcommit: 9b1c138b39fd87e239a7b1c5051f30c633e7d813
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44757057"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44944029"
 ---
 # <a name="get-started-with-teams-templates-for-small-and-medium-businesses"></a>Introduzione ai modelli di team per le piccole e medie imprese
 

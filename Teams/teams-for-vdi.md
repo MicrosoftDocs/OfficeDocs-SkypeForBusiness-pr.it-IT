@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 82e7a9af9c8e3fa2374234efbb752682d58d1602
-ms.sourcegitcommit: dad97d53f63e5164095b6d6de2d1b0445e2c10db
+ms.openlocfilehash: 53eed34584cb3a8167367e29f036cb21d741bd83
+ms.sourcegitcommit: 9b1c138b39fd87e239a7b1c5051f30c633e7d813
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/20/2020
-ms.locfileid: "44820847"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "44944009"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -144,8 +144,8 @@ Per altre informazioni sui team e sulle app Microsoft 365 per le aziende, vedere
 1. Scaricare il pacchetto MSI teams che corrisponde al sistema operativo VDI VM usando uno dei collegamenti seguenti:
 
 
-    - [versione a 32 bit](https://statics.teams.cdn.office.net/production-windows/1.3.00.12058/Teams_windows.msi)
-    - [versione a 64 bit](https://statics.teams.cdn.office.net/production-windows-x64/1.3.00.12058/Teams_windows_x64.msi)
+    - [versione a 32 bit](https://statics.teams.cdn.office.net/production-windows/1.3.00.13565/Teams_windows.msi)
+    - [versione a 64 bit](https://statics.teams.cdn.office.net/production-windows-x64/1.3.00.13565/Teams_windows_x64.msi)
 
 
     La versione minima dell'app desktop teams necessaria è la versione 1.3.00.4461. Il blocco PSTN non è supportato nelle versioni precedenti.

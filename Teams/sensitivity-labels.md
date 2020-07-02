@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come definire e usare le etichette di sensitività in Microsoft teams.
-ms.openlocfilehash: e2482a5afeb7dff9804a5a0591cd377be9f9b177
-ms.sourcegitcommit: 27fae90d4429e81143ea285edab9dbc19bd3c0bb
+ms.openlocfilehash: 2940fd5537f02a6d5b3125f4c0037b9705571ffa
+ms.sourcegitcommit: a94a267c421a78587b0dbbea5fa167aad2882e9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "44854118"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45012312"
 ---
 # <a name="sensitivity-labels-for-microsoft-teams"></a>Etichette di sensitività per Microsoft Teams
 
@@ -100,6 +100,10 @@ Un proprietario del team può modificare l'etichetta di sensitività e l'imposta
 Puoi specificare se un team creato con una specifica etichetta consente l'accesso guest. I team creati con un'etichetta che non consente l'accesso Guest sono disponibili solo per gli utenti dell'organizzazione. Gli utenti esterni all'organizzazione non possono essere aggiunti al team.
 
 ## <a name="known-issues"></a>Problemi noti
+
+**Etichette predefinite figlio non visualizzate durante la creazione del team**
+
+Attualmente, un set di etichette figlio come etichetta predefinita per i team non verrà visualizzato nella parte superiore dell'elenco nel menu a discesa etichette di sensitività nel modello di creazione del team. I creatori del team possono comunque usare l'elenco a discesa per applicare l'etichetta figlio come soluzione alternativa.
 
 **Supporto per le etichette di sensitività nell'interfaccia di amministrazione di Microsoft Teams**
 

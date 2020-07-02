@@ -16,12 +16,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 97fa736a1f2277dbd9da2305b75bf16b26d34e73
-ms.sourcegitcommit: 02dd624d39a14f48b9d2463881605d2f051722e7
+ms.openlocfilehash: 817e9ff29ff1081c1d6f6aee4720f991eb845a21
+ms.sourcegitcommit: a94a267c421a78587b0dbbea5fa167aad2882e9b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874413"
+ms.lasthandoff: 07/01/2020
+ms.locfileid: "45012282"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -43,7 +43,7 @@ Per registrare le riunioni di un utente di Teams, è necessario che Microsoft St
 - L'utente ha spazio di archiviazione sufficiente in Microsoft Stream per salvare le registrazioni
 - L'utente ha l'impostazione TeamsMeetingPolicy-AllowCloudRecording configurata su True
 - L'utente non è un utente anonimo, guest o federato nella riunione
-- Per abilitare la trascrizione per una riunione di un utente, il criterio di riunione Teams a cui sono assegnati deve avere-AllowTranscription impostazione deve essere impostato su true.
+- Per abilitare la trascrizione per una riunione di un utente, i criteri di riunione dei team a cui sono assegnati devono avere l'impostazione-AllowTranscription impostata su true.
 
 <sup>1</sup> l'utente deve avere la licenza per caricare/scaricare riunioni in/da Microsoft Stream, ma non ha bisogno della licenza per registrare una riunione. Se si vuole impedire a un utente di registrare una riunione di Microsoft Teams, è necessario assegnargli un criterio TeamsMeetingPolicy con AllowCloudRecording impostato su $False.
 
@@ -115,7 +115,7 @@ Per altre informazioni sulla posizione di archiviazione dei dati tra i servizi i
 
 Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. Se si disattiva questa opzione, durante la riproduzione di una registrazione di riunione non saranno disponibili le opzioni **Cerca** e **Cc**. La persona che ha avviato la registrazione ha bisogno che questa impostazione sia attivata perché la registrazione includa anche una trascrizione.
 
-Si noti che la trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che hanno la lingua di Teams impostata sull'inglese e quando durante la riunione si usa l'inglese.
+**Tieni presente** che la trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che hanno la lingua in teams impostati per l'inglese e quando l'inglese viene pronunciato nella riunione.
 
 È possibile usare l'interfaccia di amministrazione di Microsoft Teams o PowerShell per impostare un criterio per le riunioni di Teams con cui controllare se chi avvia la registrazione riceve l'opzione per trascriverne la registrazione.
 
