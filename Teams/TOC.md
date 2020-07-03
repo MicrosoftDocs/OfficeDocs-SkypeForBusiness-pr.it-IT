@@ -259,6 +259,7 @@
 ### [Condivisione delle chiamate e risposta alle chiamate di gruppo](call-sharing-and-group-call-pickup.md)
 ### [Criteri di chiamata](teams-calling-policy.md)
 ### [Modalità di linea condivisa](shared-line-appearance.md)
+### [Configurazione del tastierino](dial-pad-configuration.md)
 
 
 ## Piani di chiamata
@@ -780,6 +781,7 @@
 
 ## Dispositivi supportati
 ### [Gestire i dispositivi in Teams](devices/device-management.md)
+### [Update your devices remotely](devices/remote-update.md)
 ### [Telefoni per Teams](devices/phones-for-teams.md)
 ### [Dispositivi video e audio USB](devices/usb-devices.md)
 ### [Distribuire barre di collaborazione per Microsoft Teams](devices/collab-bar-deploy.md)
@@ -790,8 +792,10 @@
 
 ## PowerShell per Teams
 ### [Panoramica](teams-powershell-overview.md)
+### [Installare PowerShell per Teams](teams-powershell-install.md)
+### [Gestire Teams con PowerShell per Teams](teams-powershell-managing-teams.md)
+### [Note sulla versione di PowerShell per Teams](teams-powershell-release-notes.md)
 ### [Informazioni di riferimento sui cmdlet per Teams](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps)
-### [Installare la versione non definitiva del modulo PowerShell di Teams](install-prerelease-teams-powershell-module.md)
 
 ## [Documentazione per sviluppatori di Teams](https://docs.microsoft.com/microsoftteams/platform)
 ## [Ottenere assistenza in Teams](get-help-in-microsoft-teams.md)
