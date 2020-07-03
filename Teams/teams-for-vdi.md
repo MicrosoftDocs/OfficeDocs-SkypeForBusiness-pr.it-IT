@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 53eed34584cb3a8167367e29f036cb21d741bd83
-ms.sourcegitcommit: 9b1c138b39fd87e239a7b1c5051f30c633e7d813
+ms.openlocfilehash: 49b260179749b5aba906fdf0ce64cd5b99452b37
+ms.sourcegitcommit: ad82786076cc965e75b1ec5ffd4bc9bf75437340
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44944009"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45028162"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -30,12 +30,12 @@ In questo articolo vengono illustrati i requisiti e le limitazioni per l'uso di 
 ## <a name="what-is-vdi"></a>Che cos'è VDI?
 
 Virtual Desktop Infrastructure (VDI) è la tecnologia di virtualizzazione che ospita un sistema operativo desktop e le applicazioni su un server centralizzato in un centro dati. Questo consente agli utenti un'esperienza desktop completamente personalizzata con una fonte centralizzata completamente sicura e conforme.
- 
+
 Microsoft teams in un ambiente virtualizzato supporta la chat e la collaborazione. Inoltre, con la piattaforma Citrix sono supportate anche le funzionalità di chiamata e riunione.
 
 I team in un ambiente virtualizzato supportano più configurazioni. Questi includono le modalità VDI, dedicate, condivise, persistenti e non persistenti. Le caratteristiche sono in continuo sviluppo e vengono aggiunte regolarmente e la funzionalità si espanderà nei prossimi mesi e anni.
- 
-L'uso di team in un ambiente virtualizzato potrebbe essere alquanto diverso dall'uso di team in un ambiente non virtualizzato. Ad esempio, alcune funzionalità avanzate potrebbero non essere disponibili in un ambiente virtualizzato e la risoluzione del video potrebbe essere diversa. 
+
+L'uso di team in un ambiente virtualizzato potrebbe essere alquanto diverso dall'uso di team in un ambiente non virtualizzato. Ad esempio, alcune funzionalità avanzate potrebbero non essere disponibili in un ambiente virtualizzato e la risoluzione del video potrebbe essere diversa.
 
 Per garantire un'esperienza utente ottimale, seguire le istruzioni in questo articolo.
 
@@ -100,12 +100,12 @@ Di seguito è riportata la configurazione minima consigliata della VM.
 
 In una configurazione non persistente, le modifiche apportate al sistema operativo locale degli utenti non vengono mantenute dopo la disconnessione degli utenti. Tali configurazioni sono in genere sessioni multiutente condivise. La configurazione di VM varia in base al numero di utenti e alle risorse fisiche disponibili nella casella.
 
-Per una configurazione non persistente, l'app desktop Teams deve essere installata per ogni computer nell'immagine dorata. Per altre informazioni, vedere l'articolo [installare o aggiornare l'app desktop teams nella sezione VDI](#install-or-update-the-teams-desktop-app-on-vdi) . Questo garantisce un avvio efficiente dell'app teams durante una sessione utente. 
+Per una configurazione non persistente, l'app desktop Teams deve essere installata per ogni computer nell'immagine dorata. Per altre informazioni, vedere l'articolo [installare o aggiornare l'app desktop teams nella sezione VDI](#install-or-update-the-teams-desktop-app-on-vdi) . Questo garantisce un avvio efficiente dell'app teams durante una sessione utente.
 
 L'uso di team con una configurazione non persistente richiede anche un responsabile della gestione della cache dei profili per la sincronizzazione dei dati runtime di teams efficient. In questo modo, le informazioni appropriate specifiche per l'utente, ad esempio dati utente, profilo e impostazioni, vengono memorizzate nella cache durante la sessione utente. Verificare che i dati di queste due cartelle vengano sincronizzati.  
 
 - C:\Users\username\AppData\Local\Microsoft\IdentityCache (%localAppdata%\Microsoft\IdentityCache)
-- C:\Users\username\AppData\Roaming\Microsoft\Teams(%appdata%\Microsoft\Teams)
+- C:\Users\username\AppData\Roaming\Microsoft\Teams (%appdata%\Microsoft\Teams)
 
 Sono disponibili varie soluzioni di gestione della cache. Ad esempio, [FSLogix](https://docs.microsoft.com/fslogix/overview). Consultare il provider di gestione della cache per istruzioni di configurazione specifiche.
 
@@ -143,10 +143,8 @@ Per altre informazioni sui team e sulle app Microsoft 365 per le aziende, vedere
 
 1. Scaricare il pacchetto MSI teams che corrisponde al sistema operativo VDI VM usando uno dei collegamenti seguenti:
 
-
     - [versione a 32 bit](https://statics.teams.cdn.office.net/production-windows/1.3.00.13565/Teams_windows.msi)
     - [versione a 64 bit](https://statics.teams.cdn.office.net/production-windows-x64/1.3.00.13565/Teams_windows_x64.msi)
-
 
     La versione minima dell'app desktop teams necessaria è la versione 1.3.00.4461. Il blocco PSTN non è supportato nelle versioni precedenti.
 
@@ -179,6 +177,7 @@ Per altre informazioni sui team e sulle app Microsoft 365 per le aziende, vedere
       ```console
       msiexec /passive /x <path_to_msi> /l*v <uninstall_logfile_name>
       ```
+
       Questo processo disinstalla i team dalla cartella programmi (x86) o file di programmi, a seconda dell'ambiente del sistema operativo.
 
 ## <a name="teams-on-vdi-performance-considerations"></a>Considerazioni sulle prestazioni di teams su VDI
@@ -271,9 +270,9 @@ Si può anche procedere nel modo seguente:
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa al criterio che vuoi assegnare. Ad esempio:
     - Accedere ai **Voice**  >  **criteri**per le chiamate vocali e quindi fare clic su **DisallowCalling**.
     - Accedere a **Meetings**  >  **criteri riunione**riunioni e quindi fare clic su **AllOff**.
-3. Scegliere **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
-5. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
+2. Scegliere **Gestisci utenti**.
+3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
+4. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
 
 #### <a name="assign-policies-using-powershell"></a>Assegnare criteri tramite PowerShell
 
@@ -327,9 +326,9 @@ Si può anche procedere nel modo seguente:
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa al criterio che vuoi assegnare. Ad esempio:
     - Accedere ai **Voice**  >  **criteri**per le chiamate vocali e quindi fare clic su **AllowCalling**.
     - Accedere a **Meetings**  >  **criteri riunione**riunioni e quindi fare clic su **Allon**.
-3. Scegliere **Gestisci utenti**.
-4. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
-5. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
+2. Scegliere **Gestisci utenti**.
+3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
+4. Al termine dell'aggiunta di utenti, fare clic su **Salva**.
 
 #### <a name="assign-policies-using-powershell"></a>Assegnare criteri tramite PowerShell
 

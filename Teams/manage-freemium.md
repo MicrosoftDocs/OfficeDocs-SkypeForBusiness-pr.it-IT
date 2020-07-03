@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0d8d7edb5710883c7725a0784819d3a35c1c2f2f
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 0d8c8246ef635f860b5cc601613faf5ef1663726
+ms.sourcegitcommit: ad82786076cc965e75b1ec5ffd4bc9bf75437340
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905098"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45028132"
 ---
 <a name="manage-the-free-version-of-microsoft-teams"></a>Gestire la versione gratuita di Microsoft Teams
 ==========================================
@@ -37,7 +37,7 @@ Per altre informazioni sulle versioni di team e sulle relative funzionalità, ve
 
 
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 - Per un breve riepilogo delle differenze tra team e teams Free, vedere [differenze tra Microsoft teams e Microsoft teams Free](https://support.office.com/article/0b69cf39-eb52-49af-b255-60d46fdf8a9c). 
 - Per altre informazioni sull'aggiornamento alla versione completa dei team, vedere [aggiornamento da teams Free to teams](https://support.office.com/article/29475bbd-a34f-4175-9b33-d44430f8ad39) e [aggiornamento della versione di Microsoft teams Free to Subscription](upgrade-freemium.md).
@@ -45,10 +45,6 @@ Per altre informazioni sulle versioni di team e sulle relative funzionalità, ve
 
 ## <a name="get-the-right-teams-trial"></a>Ottenere la versione di valutazione di right Teams
 
-Microsoft sta eseguendo licenze di valutazione di Office 365 (che includono Team) disponibili in risposta alla maggiore necessità per i dipendenti di lavorare da casa (WFH) in risposta al focolaio di COVID-19 (coronavirus). 
-
-- [E1 Trial](e1-trial-license.md): questa offerta è destinata a qualsiasi cliente, inclusi i nonprofit, gestita da una rappresentante dell'account Microsoft.
-
-- Per il governo degli Stati Uniti (GCC), vedere la [versione di valutazione di Office 365 G1](g1-trial-license.md). 
+- In alternativa a teams Free, consulta [esplorazioni teams](teams-exploratory.md).
 
 - I clienti EDU devono usare la [licenza gratuita di Office 365 a1](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans).

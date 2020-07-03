@@ -17,12 +17,12 @@ description: Informazioni su come gestire le app teams nella pagina Manage Apps 
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: d4abedbd24f9f0211a66b0890fe9d3db2fc977cd
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: 7884aa033d3d137ac36fe86a47a2861732b50bb5
+ms.sourcegitcommit: ad82786076cc965e75b1ec5ffd4bc9bf75437340
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868483"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45028092"
 ---
 <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia di amministrazione di Microsoft Teams
 ======================================================
@@ -86,7 +86,7 @@ Usa le impostazioni dell'app a livello di organizzazione per controllare se gli 
     - **Consenti app di terze parti**: controlla se gli utenti possono usare app di terze parti. Se disattivi questa impostazione, gli utenti non potranno installare o usare app di terze parti e lo stato dell'app di queste app viene visualizzato come bloccato a **livello di organizzazione** nella tabella.
 
         > [!NOTE]
-        > In una distribuzione di team di Microsoft 365 Government-GCC, l'impostazione **Consenti app di terze parti in teams** è disimpostata per impostazione predefinita.
+        > In una distribuzione di team di Microsoft 365 Government-GCC, l'impostazione **Consenti app di terze parti** è disinserita per impostazione predefinita.
 
         Quando le **app di terze parti** sono disattivate, i [webhook in uscita](https://docs.microsoft.com/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors) sono disabilitati, il che significa che gli utenti non possono crearli. Quando questa impostazione è attivata, i webhook in uscita sono abilitati per tutti gli utenti, indipendentemente dal fatto che l'impostazione sia inserita o disattivata nei criteri di autorizzazione delle app degli utenti.
     - **Consenti a tutte le nuove app di terze parti pubblicate nello Store per impostazione predefinita**: questo controlla se le nuove app di terze parti pubblicate nell'app store teams diventano automaticamente disponibili in teams. Puoi impostare questa opzione solo se Consenti app di terze parti.

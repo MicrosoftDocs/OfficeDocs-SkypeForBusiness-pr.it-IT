@@ -20,12 +20,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni sulle licenze per i componenti aggiuntivi per Microsoft teams e sulle funzionalità che si ottengono con ogni licenza.
-ms.openlocfilehash: acb0ff4cd9cbaeeedb81490731a8b68a8de854a8
-ms.sourcegitcommit: 42b9b921d28cb02f537f0598653835193eb3f42f
+ms.openlocfilehash: 307dad7dbf8ca19bdeb10fa18b2cbd18a2273f74
+ms.sourcegitcommit: ad82786076cc965e75b1ec5ffd4bc9bf75437340
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44170687"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45028182"
 ---
 # <a name="microsoft-teams-add-on-licenses"></a>Licenze per i componenti aggiuntivi Microsoft Teams
 
@@ -39,7 +39,7 @@ Ecco un elenco delle caratteristiche che è possibile aggiungere con le licenze 
 
 |||||
 |:-----|:-----|:-----|:-----|
-|**Caratteristica** <br/> |**Descrizione** <br/> |**Small Business (<utenti di 300)**|**Grandi aziende (>utenti di 300)**|
+|**Funzionalità** <br/> |**Descrizione** <br/> |**Small Business (<utenti di 300)**|**Grandi aziende (>utenti di 300)**|
 **Microsoft 365 Business Voice** <br/> | [Business Voice](../business-voice/whats-business-voice.md) è una soluzione per la telefonia progettata per piccole e medie imprese fino a 300 utenti che raggruppano sistema telefonico, servizi di audioconferenza, un piano per chiamate nazionali e altro ancora. Le funzionalità del sistema telefonico che si ottengono includono la segreteria telefonica, l'ID chiamante, il parcheggio delle chiamate, l'inoltro di chiamata, gli operatori automatici e le code di chiamata. <br> Per scoprire se Business Voice è disponibile nel proprio paese o nella propria area geografica, vedere [disponibilità per i paesi e le aree](../business-voice/country-region-availability.md)geografiche per le aziende. Per informazioni sui prezzi, vedere [prezzi per le voci aziendali](https://go.microsoft.com/fwlink/?linkid=2127221). <br/> |&#x2713;||
 |**Audioconferenza** <br/> |A volte gli utenti dell'organizzazione dovranno usare un telefono per chiamare una riunione di teams invece il computer. Configurare i servizi di [audioconferenza](../audio-conferencing-in-office-365.md) per gli utenti che pianificano o conducono riunioni. <br/> Per sapere se l'Audioconferenza è disponibile nel proprio Paese o area geografica, consulta [Disponibilità per Paese e area geografica di Audioconferenza e Piani di chiamata](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). Per informazioni sui prezzi, vedere i [prezzi per le audioconferenze](https://go.microsoft.com/fwlink/?linkid=799762).  <br/> |&#x2713;<sup>1</sup>|&#x2713;|
 |**Numeri verdi gratuiti** |Se si vogliono numeri verdi per i servizi di audioconferenza, gli operatori automatici o le code di chiamata, è necessario [configurare i crediti](../set-up-communications-credits-for-your-organization.md)per le comunicazioni. <br/> |&#x2713;|&#x2713;|
@@ -164,9 +164,9 @@ Per altre informazioni, vedere [offerte non profit di Microsoft 365 e Office 365
 
 In risposta a un aumento della necessità per gli utenti di lavorare in remoto (o lavorare da casa), Microsoft ha diverse offerte di valutazione gratuite di team per organizzazioni governative, didattiche e non profit. Le prove sono disponibili per questi piani:
 
-- Versione di valutazione di Office 365 Enterprise [E1](../e1-trial-license.md), versione di valutazione E3 e E5
+- Versione di valutazione di Office 365 Enterprise [E1](../e1-trial-license.md) (eliminata a partire dal 1 ° luglio 2020), versione di valutazione E3 e E5
 - [Versione di valutazione](../teams-edu-licensing.md) di Office 365 Education a1
-- [Versione di valutazione](../g1-trial-license.md) di Office 365 Government G1
+- Office 365 Government [G1 Trial](../g1-trial-license.md) (interrotto dal 1 ° luglio 2020)
 
 Per iscriversi a un'offerta di valutazione, vedere [iscriversi a un'offerta di valutazione](https://transform.microsoft.com/customer-trials?tab=requestnewtrial).
 
@@ -176,7 +176,7 @@ Ecco un riepilogo delle offerte di prova per le funzionalità vocali.
 
   ![Opzioni basate su versione di valutazione](../media/licensing-trial-offers.png)
 
- Il piano di base non deve essere un'offerta di valutazione per usare una di queste versioni per le funzionalità vocali. È possibile usare un piano aziendale Microsoft 365 o un piano aziendale, governativo, scolastico o no profit con le offerte di valutazione per le funzionalità vocali. Per visualizzare le offerte di prova e i componenti aggiuntivi disponibili, nell'interfaccia di amministrazione di Microsoft 365 accedere a**servizi di acquisto**di **fatturazione** > , selezionare **altre categorie che potrebbero interessare**e quindi selezionare **componenti**aggiuntivi.
+ Il piano di base non deve essere un'offerta di valutazione per usare una di queste versioni per le funzionalità vocali. È possibile usare un piano aziendale Microsoft 365 o un piano aziendale, governativo, scolastico o no profit con le offerte di valutazione per le funzionalità vocali. Per visualizzare le offerte di prova e i componenti aggiuntivi disponibili, nell'interfaccia di amministrazione di Microsoft 365 accedere a servizi di acquisto di **fatturazione**  >  **Purchase services**, selezionare **altre categorie che potrebbero interessare**e quindi selezionare **componenti**aggiuntivi.
 
   Per ognuna di queste opzioni per la voce e i servizi di conferenza, i crediti per le [comunicazioni](../set-up-communications-credits-for-your-organization.md) sono obbligatori se si hanno numeri verdi o se è necessario aggiungere altri minuti per consentire agli utenti di effettuare chiamate in uscita dalle riunioni o per consentire agli utenti di chiamare PSTN nazionali e internazionali.
 
@@ -188,7 +188,7 @@ Ecco un riepilogo delle offerte di prova per le funzionalità vocali.
 
 * * *
 
-## <a name="need-help"></a>Per informazioni dettagliate
+## <a name="need-help"></a>Hai bisogno di assistenza?
 
 È necessario parlare con qualcuno delle opzioni per i componenti aggiuntivi? [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
 
