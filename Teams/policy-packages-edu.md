@@ -21,12 +21,12 @@ ms.custom: ms.teamsadmincenter.policypackages.overview
 localization_priority: Priority
 search.appverid: MET150
 description: Informazioni sui criteri in un ambiente Education, o EDU, e su come usare e gestire i pacchetti di criteri in Microsoft Teams.
-ms.openlocfilehash: 8e024003957a295d56e26a46f473d543f2cb0ded
-ms.sourcegitcommit: 02dd624d39a14f48b9d2463881605d2f051722e7
+ms.openlocfilehash: fcc6a5d22d5e499cf698e424148ff37cd3ee054e
+ms.sourcegitcommit: 4099da7b1db7663e63ef5bece16e3090c33ea207
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2020
-ms.locfileid: "44874428"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45021884"
 ---
 # <a name="teams-policies-and-policy-packages-for-education"></a>Criteri e pacchetti di criteri di Teams per l'istruzione
 
@@ -148,6 +148,9 @@ A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in mod
 ### <a name="meeting-policies"></a>Criteri riunione
 
 #### <a name="turn-off-the-ability-to-create-and-start-meetings"></a>Disattivare la possibilità di creare e avviare riunioni
+
+> [!NOTE]
+> Questa funzionalità potrebbe non essere visibile nel tenant al momento. Il motivo è che la funzionalità è in fase di implementazione e sarà disponibile per tutti gli utenti non appena sarà implementata in tutti i tenant. Vedere la [Roadmap di Teams](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=63355) per maggiori informazioni.
 
 Per fare in modo che gli studenti non possano pianificare una riunione per comunicare senza alcuna sorveglianza, nei criteri riunione **disattivare** le funzionalità di creazione riunioni con queste impostazioni generali:
 
