@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3411d3a163e9da5e58fa258371d02ca878868adb
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 7a57de3528ac9ef0f950c7034b3c6ee3860b53ea
+ms.sourcegitcommit: ad82786076cc965e75b1ec5ffd4bc9bf75437340
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44638385"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45028172"
 ---
 # <a name="how-to-provision-teams-at-scale-for-firstline-workers"></a>Come eseguire il provisioning di Microsoft Teams su vasta scala per gli operatori sul campo
 
@@ -50,7 +50,7 @@ Scaricare le risorse disponibili [qui](https://aka.ms/flwteamsscale).
 
 ## <a name="technical-requirements"></a>Requisiti tecnici
 
-- Nel tenant deve essere disponibile il numero appropriato di licenze che includano Microsoft Teams. Se non si hanno ancora queste licenze, seguire le istruzioni per attivare la [versione di valutazione gratuita di Office 365 E1](e1-trial-license.md).
+- Nel tenant deve essere disponibile il numero appropriato di licenze che includano Microsoft Teams. Se non si dispone ancora di queste licenze, consultare [Teams Exploratory](teams-exploratory.md) per un abbonamento di valutazione gratuito.
 - Per eseguire questa procedura, è necessario che i ruoli seguenti siano assegnati in Azure AD: amministratore globale, amministratore utenti e all'amministratore del servizio Teams.
 - È necessario che l'utente abbia i diritti necessari per installare e configurare il software nel computer locale.
 

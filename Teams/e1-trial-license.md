@@ -15,47 +15,24 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 03544095e5189af2f80714151f31648f79e65c8d
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: ea7c72e78fe14894678f963f8b876a608f6d6222
+ms.sourcegitcommit: ad82786076cc965e75b1ec5ffd4bc9bf75437340
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868673"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45028152"
 ---
 <a name="manage-the-office-365-e1-trial"></a>Gestire la versione di valutazione di Office 365 E1
 ==============================
 
-Novità di marzo 2020: è ora disponibile una versione di valutazione gratuita di 6 mesi di Office 365 E1 che include Microsoft Teams. Microsoft rende disponibile questa speciale licenza di valutazione E1 in risposta alla crescente necessità dei dipendenti di lavorare da casa (WFH) in seguito all'epidemia di COVID-19 (coronavirus). 
-
-Per informazioni sulle opzioni disponibili con la licenza E1, consultare [Office 365 E1](https://www.microsoft.com/microsoft-365/business/office-365-enterprise-e1-business-software).
-
-Indicazioni imperdibili per il [supporto dei lavoratori in remoto con Teams](support-remote-work-with-teams.md).
-
-## <a name="how-to-get-an-e1-trial-license"></a>Come ottenere una licenza di valutazione E1
-
-Contattare il proprio rappresentante Microsoft. Si riceverà un codice promozionale da usare per iscriversi per la versione di valutazione E1. 
-
-Per le organizzazioni servite da un partner Microsoft, rivolgersi al partner per ottenere una versione di valutazione gratuita di 6 mesi di Teams. Se non si ha ancora un partner Microsoft e si vuole rivolgersi a un partner, passare a [Provider di soluzioni Microsoft](https://www.microsoft.com/solution-providers/home) e cercare partner esperti in Teams.
+A partire dal 1° luglio 2020, la licenza della versione di valutazione di Office 365 E1 non è più disponibile. Se occorre fornire una licenza per Microsoft Teams agli utenti, leggere la [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description) per un elenco degli abbonamenti a pagamento che includono Teams. In alternativa, le organizzazioni idonee possono usare la **[versione gratuita di Teams](https://support.office.com/article/Welcome-to-Microsoft-Teams-free-6d79a648-6913-4696-9237-ed13de64ae3c)** oppure i dipendenti possono attivare l'esperienza **[Teams Exploratory](teams-exploratory.md)**.
 
 
-## <a name="how-to-sign-up-for-e1"></a>Ecco come iscriversi per la versione di valutazione E1
+I clienti di Teams for Education possono prendere in considerazione la [licenza di Office 365 A1](teams-edu-licensing.md) gratuita.
 
-Fare clic sul codice promozionale nel messaggio di posta elettronica che verrà inviato dal rappresentante Microsoft. 
+Usare le indicazioni fornite in questo articolo per gestire le licenze della versione di valutazione di Office 365 E1 esistenti, nonché il [passaggio a un abbonamento a pagamento](#upgrade-users-from-the-office-365-e1-trial-license).
 
-
-## <a name="whos-eligible"></a>Chi è idoneo
-
-Questa offerta è rivolta a tutti i clienti gestiti da un rappresentante Microsoft. Si tratta di organizzazioni, incluse le organizzazioni no profit, che non hanno attivato altre versioni di valutazione di Office 365 E1 in passato. 
-
-Dopo aver usato il codice promozionale per la versione di valutazione E1, non è possibile usarlo di nuovo, né attivare un altro codice di valutazione E1. In questi casi, è possibile fare in modo che i dipendenti attivino una licenza di [Teams Exploratory](teams-exploratory.md).
-
-## <a name="who-isnt-eligible"></a>Chi non è idoneo
-
-- Questa offerta non è disponibile per i clienti GCC, GCC High, DoD o EDU. 
-
-- Per GCC, vedere la [versione di valutazione di Office 365 G1](g1-trial-license.md). 
-
-- I clienti EDU devono usare la licenza gratuita di Office 365 A1.
+Consultare le indicazioni imperdibili per il [supporto dei lavoratori remoti con Teams](support-remote-work-with-teams.md).
 
 ## <a name="manage-the-e1-trial"></a>Gestire la versione di valutazione E1
 

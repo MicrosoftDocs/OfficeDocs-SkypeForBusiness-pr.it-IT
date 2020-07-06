@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare i lavoratori degli enti pubblici che lavorano da remoto a essere produttivi con Microsoft Teams, in particolare se lavorano da casa in risposta all'epidemia di COVID-19 (Coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 92d7e2d151b467cabf387791f635fb284c99fca1
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: cb3fb631c47a97d96c2709bbbe4257950221cb91
+ms.sourcegitcommit: ad82786076cc965e75b1ec5ffd4bc9bf75437340
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042383"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45028142"
 ---
 # <a name="support-remote-government-workers-using-microsoft-teams"></a>Supporto per i lavoratori remoti degli enti pubblici con Microsoft Teams
 
@@ -31,7 +31,7 @@ Se si esegue Microsoft Teams come parte di Office 365 per enti pubblici, usare q
 
 Informazioni su come preparare Teams nell'organizzazione:
 
-  - Assicurarsi che tutti gli utenti abbiano accesso a Teams, usando l'offerta gratuita di 6 mesi di **[Office 365 G1](../g1-trial-license.md)**. Se serve assistenza, contattare il proprio partner o il team degli account Microsoft.
+  - Assicurarsi che tutti abbiano accesso a Teams con un [abbonamento a pagamento che includa Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description). 
 
   - Se si dispone già di un abbonamento, assicurarsi che **[Teams sia attivo](../user-access.md)** per tutti.
 

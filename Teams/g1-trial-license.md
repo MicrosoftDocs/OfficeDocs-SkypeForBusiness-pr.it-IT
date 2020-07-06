@@ -15,43 +15,21 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 97f7e653e345c8e2448f0519087c5f6eb6b600d1
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: 38ffb22e1f1321f7aebffa2ae22bb154bef48ca5
+ms.sourcegitcommit: ad82786076cc965e75b1ec5ffd4bc9bf75437340
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868542"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "45028102"
 ---
 <a name="manage-the-office-365-g1-trial-for-us-government"></a>Gestire la versione di valutazione di Office 365 G1 per il governo degli Stati Uniti 
 ==============================
 
-Novità di marzo 2020: è ora disponibile una versione di valutazione gratuita di 6 mesi di Office 365 G1 che include Microsoft Teams. Microsoft rende disponibile questa speciale licenza di valutazione G1 per il governo degli Stati Uniti, in risposta alla crescente necessità dei dipendenti di lavorare da casa a causa dell'epidemia di COVID-19 (coronavirus).
+A partire dal 1° luglio 2020, la licenza della versione di valutazione di Office 365 E1 non è più disponibile. Se occorre fornire una licenza per Microsoft Teams agli utenti, leggere la [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description) per un elenco degli abbonamenti a pagamento che includono Teams. 
 
-Per informazioni sulle opzioni disponibili con una licenza G1, vedere [Piani Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans) e le [funzionalità di Microsoft Teams disponibili nel cloud GCC](plan-for-government-gcc.md).
+Usare le indicazioni fornite in questo articolo per gestire le licenze della versione di valutazione di Office 365 G1 esistenti, nonché il [passaggio a un abbonamento a pagamento](#upgrade-users-from-the-office-365-g1-trial-license). Per maggiori informazioni, vedere [Piani Microsoft 365 Government](https://www.microsoft.com/microsoft-365/government/compare-office-365-government-plans) e le [funzionalità di Microsoft Teams disponibili nel cloud GCC](plan-for-government-gcc.md).
 
 Consultare le indicazioni per il  [supporto dei lavoratori remoti con Teams](support-remote-work-with-teams.md).
-
-## <a name="how-to-get-an-g1-trial-license"></a>Come ottenere una licenza di valutazione G1
-
-Contattare il proprio rappresentante Microsoft. Si riceverà un codice promozionale da usare per iscriversi per la versione di valutazione G1.
-
-## <a name="how-to-sign-up-for-the-g1-trial"></a>Ecco come iscriversi per la versione di valutazione G1
-
-Seguire le istruzioni nel messaggio di posta elettronica che verrà inviato dal rappresentante Microsoft.
-
-## <a name="whos-eligible"></a>Chi è idoneo
-
-Questa offerta è rivolta ai clienti del governo degli Stati Uniti che operano nel cloud GCC e sono gestiti da un rappresentante Microsoft. Si tratta di organizzazioni che non hanno attivato altre versioni di valutazione di Office 365 G1 in passato.
-
-Dopo aver usato il codice promozionale per la versione di valutazione G1, non è possibile usarlo di nuovo, né attivare un altro codice di valutazione G1.
-
-## <a name="who-isnt-eligible"></a>Chi non è idoneo
-
-  - Questa offerta non è disponibile per i clienti commerciali, GCC High, DoD o EDU.
-
-  - I clienti commerciali devono usare la versione di valutazione di Office 365 E1.
-
-  - I clienti EDU devono usare la licenza gratuita di Office 365 A1.
 
 ## <a name="manage-the-g1-trial"></a>Gestire la versione di valutazione G1
 
