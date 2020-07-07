@@ -18,12 +18,11 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fdecae806c0e02efc9a440ce192528ab6017d994
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
-ms.translationtype: MT
+ms.openlocfilehash: 877ebf8041b52e6522dc55a053e0465d4aa6a48d
+ms.sourcegitcommit: ac36d3923095a4321dad14fdf23c98358affd10c
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689812"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049413"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -133,6 +132,10 @@ Eseguire la procedura seguente per risolvere i problemi relativi al componente a
 ### <a name="teams-meeting-add-in-in-outlook-for-windows-does-not-show"></a>Il componente aggiuntivo riunione teams in Outlook per Windows non viene visualizzato
 
 Se non si riesce a trovare il componente aggiuntivo Riunione di Teams per Outlook per l'installazione, provare a eseguire questa procedura di risoluzione dei problemi.
+
+[Scaricare](https://aka.ms/SaRA-TeamsAddInScenario) ed eseguire l' [Assistente per il ripristino del supporto tecnico Microsoft](https://aka.ms/SaRA_Home) per eseguire procedure e correzioni automatiche per la risoluzione dei problemi.
+
+In alternativa, eseguire manualmente le operazioni seguenti:
 
 - Gli utenti di Windows 7 devono installare l' [aggiornamento per Universal C Runtime in Windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows) per il componente aggiuntivo riunione teams per il lavoro.
 - Verificare che l'utente disponga di un criterio di aggiornamento di teams che consente la pianificazione delle riunioni in teams. Per altre informazioni, vedere [eseguire l'aggiornamento da Skype for business a teams](https://docs.microsoft.com/microsoftteams/upgrade-to-teams-on-prem-overview#meetings) .

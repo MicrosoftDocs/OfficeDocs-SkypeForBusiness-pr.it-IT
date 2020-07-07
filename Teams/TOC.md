@@ -658,6 +658,7 @@
 ### [Guida introduttiva per gli operatori sul campo](firstline-workers-quickstart.yml)
 ### [Distribuzione con script per gli operatori sul campo](flw-scripted-deployment.md)
 ### [RealWear per Microsoft Teams](flw-realwear.md)
+### [Walkie Talkie](walkie-talkie.md)
 ### [Creare un'app del portale Intranet di Teams da un sito o una pagina di SharePoint Online](teams-standalone-static-tabs-using-spo-sites.md)
 
 ## [Teams per la vendita al dettaglio](expand-teams-across-your-org/teams-for-retail-landing-page.md)

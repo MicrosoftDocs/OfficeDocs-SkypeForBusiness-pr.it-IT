@@ -20,12 +20,11 @@ ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 - seo-marvel-apr2020
 description: In questo articolo vengono illustrati i criteri di messaggistica e il modo in cui possono essere usati per controllare la messaggistica di chat in teams.
-ms.openlocfilehash: b010f26beeab29b1f7362d3ebee57f092d8a28ec
-ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
-ms.translationtype: MT
+ms.openlocfilehash: c29697c8ec4d235ed232616e34590351bea59e9e
+ms.sourcegitcommit: 2467ece95e100a3a3cc2be3538d8eb7d878b3663
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44938565"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45042978"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in teams
 
@@ -95,7 +94,7 @@ Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 - **Consenti anteprime URL** Usare questa impostazione per attivare o disattivare l'anteprima automatica degli URL nei messaggi.
 - **Consentire agli utenti di tradurre i messaggi** Attivare questa impostazione per consentire agli utenti di tradurre automaticamente i messaggi di teams nella lingua specificata dalle impostazioni della lingua personale per Microsoft 365 o Office 365.
 - **Consentire all'utilità di lettura immersiva di visualizzare i messaggi** Attivare questa impostazione per consentire agli utenti di visualizzare i messaggi in Microsoft immersive Reader. Immersive Reader è uno strumento di apprendimento che offre un'esperienza di lettura a schermo intero per aumentare la leggibilità del testo.
-- **Inviare messaggi urgenti con le notifiche prioritarie** Se si attiva questa opzione, gli utenti possono inviare messaggi usando le [notifiche prioritarie](https://support.microsoft.com/en-us/office/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462). Le notifiche prioritarie avvisano gli utenti ogni 2 minuti per un periodo di 20 minuti o finché i messaggi contrassegnati come *urgenti* vengono prelevati e letti dal destinatario, massimizzando la probabilità che il messaggio venga agito in modo tempestivo.
+- **Inviare messaggi urgenti con le notifiche prioritarie** Se si attiva questa opzione, gli utenti possono inviare messaggi usando le [notifiche prioritarie](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462). Le notifiche prioritarie avvisano gli utenti ogni 2 minuti per un periodo di 20 minuti o finché i messaggi contrassegnati come *urgenti* vengono prelevati e letti dal destinatario, massimizzando la probabilità che il messaggio venga agito in modo tempestivo.
 - **Creazione di messaggi audio** 
   > [!Important]
   > I messaggi audio non vengono acquisiti in eDiscovery Reporting.

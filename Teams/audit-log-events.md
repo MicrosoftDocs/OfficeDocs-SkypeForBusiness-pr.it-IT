@@ -15,12 +15,11 @@ search.appverid: MET150
 description: Informazioni su come recuperare i dati di Microsoft teams dal log di controllo.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a305afdc96f71731431ba187cd4d4021e0cec943
-ms.sourcegitcommit: 8d5ba1346be583af9382906dda556ccf868904f7
-ms.translationtype: MT
+ms.openlocfilehash: 4084074d9dec08b2c254d1678fde51d0a26adfaa
+ms.sourcegitcommit: 2467ece95e100a3a3cc2be3538d8eb7d878b3663
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44816627"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45042878"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams
 
@@ -41,7 +40,7 @@ Per un elenco completo delle attività di teams controllate, vedere [attività d
 
 ## <a name="turn-on-auditing-in-teams"></a>Attivare il controllo in teams
 
-Prima di poter esaminare i dati di controllo, è necessario attivare prima di tutto il controllo nel [centro conformità & sicurezza](https://protection.office.com). Per assistenza durante l'attivazione del controllo, leggere [attivare o disattivare la ricerca nel log di controllo](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014).
+Prima di poter esaminare i dati di controllo, è necessario attivare prima di tutto il controllo nel [centro conformità & sicurezza](https://protection.office.com). Per informazioni sull'attivazione del controllo, leggere [attivare o disattivare la ricerca nel log di controllo](https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014).
 
 > [!IMPORTANT]
 > I dati di controllo sono disponibili solo dal momento in cui è stato attivato il controllo.
@@ -97,13 +96,13 @@ Come accennato in precedenza, è possibile monitorare gli scenari di eliminazion
 
 ![Screenshot della pagina di creazione dei criteri che mostra l'impostazione di un criterio per il rilevamento dell'eliminazione di massa del team](media/TeamsMassDeletePolicy.png)
 
-Come Mostra la schermata, è possibile impostare molti parametri diversi per questo criterio per monitorare le eliminazioni dei team, tra cui gravità, azione singola o ripetuta e parametri che limitano questa operazione ai team e all'eliminazione del sito. Questa operazione può essere eseguita indipendentemente da un modello oppure è possibile che sia stato creato un modello per la base dei criteri, a seconda delle esigenze dell'organizzazione.
+Come Mostra la schermata, è possibile impostare molti parametri diversi per questo criterio per monitorare le eliminazioni dei team, tra cui gravità, azione singola o ripetuta e parametri che limitano questa operazione ai team e all'eliminazione del sito. Questa operazione può essere eseguita indipendentemente da un modello oppure è possibile che sia stato creato un modello per basare il criterio in base alle esigenze dell'organizzazione.
 
 Dopo aver stabilito un criterio che funzionerà per l'azienda, è possibile esaminare i risultati nel log attività come vengono attivati gli eventi:
 
 ![Screenshot di un elenco di eventi attivati dalle eliminazioni di massa](media/TeamsMassDeleteList.png)
 
-È possibile filtrare i criteri impostati per visualizzare i risultati di tale criterio. Se i risultati ottenuti nel registro attività non sono soddisfacenti (forse si verificano molti risultati o niente affatto), potrebbe essere utile ottimizzare la query per renderla più pertinente a ciò che è necessario.
+È possibile filtrare i criteri impostati per visualizzare i risultati di tale criterio. Se i risultati ottenuti nel registro attività non sono soddisfacenti (si possono vedere molti risultati o niente affatto), potrebbe essere utile ottimizzare la query per renderla più pertinente a ciò che è necessario.
 
 ### <a name="alert-and-governance-scenario"></a>Scenario di avviso e governance
 
@@ -115,7 +114,7 @@ Quando viene attivato un criterio di attività, è possibile impostare avvisi e 
 
 I [criteri di rilevamento delle anomalie](https://docs.microsoft.com/cloud-app-security/anomaly-detection-policy) nella sicurezza delle app cloud consentono di usare le funzionalità utente e l'analisi comportamentale (Ueba) e l'apprendimento automatico (ml) in modo da poter eseguire immediatamente il rilevamento avanzato delle minacce nell'ambiente cloud. Dato che sono abilitati automaticamente, i nuovi criteri di rilevamento delle anomalie forniscono risultati immediati fornendo rilevamenti immediati, con l'obiettivo di numerose anomalie comportamentali tra gli utenti e i computer e i dispositivi connessi alla rete. I nuovi criteri espongono inoltre altri dati dal motore di rilevamento della sicurezza delle app cloud per velocizzare il processo di analisi e contenere le minacce in corso.
 
-Stiamo lavorando per integrare gli eventi dei team in criteri di rilevamento delle anomalie. Per ora è possibile configurare i criteri di rilevamento delle anomalie per altri prodotti Office e ottenere elementi di azione per gli utenti che soddisfano tali criteri.
+Stiamo lavorando per integrare gli eventi dei team in criteri di rilevamento delle anomalie. Per il momento, puoi configurare i criteri di rilevamento delle anomalie per gli altri prodotti di Office e ottenere elementi di azione per gli utenti che soddisfano tali criteri.
 
 ## <a name="teams-activities"></a>Attività Teams
 
@@ -138,6 +137,7 @@ Ecco un elenco di tutti gli eventi registrati per le attività utente e amminist
 |Canale eliminato     |ChannelDeleted         |Un utente elimina un canale da un team.         |
 |Team eliminato  |TeamDeleted            |Un proprietario del team Elimina un team.      |
 |App installata |AppInstalled         |È stata installata un'app.   |
+|Azione eseguita sulla scheda|PerformedCardAction|Un utente ha intrapreso un'azione su una scheda adattiva all'interno di una chat. Le schede adattive vengono in genere usate dai bot per consentire l'ampia visualizzazione delle informazioni e l'interazione nelle chat. <br/><br/>**Nota:** Solo le azioni di input in linea su una scheda adattiva all'interno di una chat saranno disponibili nel log di controllo. Ad esempio, quando un utente invia una risposta al sondaggio in una conversazione di canale su una scheda adattiva generata da un bot di sondaggio. Le azioni degli utenti, ad esempio "Visualizza risultato", che apriranno una finestra di dialogo o le azioni degli utenti all'interno di finestre di dialogo non saranno disponibili nel log di controllo.|
 |App pubblicata |AppPublishedToCatalog           |Un'app è stata aggiunta al catalogo.     |
 |Bot rimosso dal team   |BotRemovedFromTeam         |Un utente rimuove un bot da un team.       |
 |Connettore rimosso     |ConnectorRemoved         |Un utente rimuove un connettore da un canale.         |

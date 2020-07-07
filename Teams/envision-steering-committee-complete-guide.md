@@ -16,12 +16,11 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 397f41a468c987e70d068066dcf16ddf0e64843a
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
-ms.translationtype: MT
+ms.openlocfilehash: a7e4e24b871ab537e336ddbd2b25c0d44408c299
+ms.sourcegitcommit: 2467ece95e100a3a3cc2be3538d8eb7d878b3663
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43136786"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45042788"
 ---
 # <a name="steering-committee"></a>Comitato direttivo
 
@@ -88,7 +87,7 @@ Quando si pianifica una riunione del Comitato, tenere conto della cadenza del pr
 
 ### <a name="prepare-for-the-meeting"></a>Preparare la riunione
 
-Per sfruttare al meglio il tempo di tutti, è necessario prepararsi per la riunione. Il team di base può iniziare a preparare il materiale per la riunione del comitato direttivo. Il modello del comitato direttivo [modello del comitato direttivo-collegamento al modello PPT di esempio] può essere usato come punto di partenza per la preparazione.
+Per sfruttare al meglio il tempo di tutti, è necessario prepararsi per la riunione. Il team di base può iniziare a preparare il materiale per la riunione del comitato direttivo. È possibile creare una presentazione di PowerPoint per prepararsi alla riunione.
 
 Gli asset seguenti devono essere completati e inclusi nel deck della presentazione per la riunione:
 
@@ -160,7 +159,7 @@ La riunione deve essere una continuazione naturale del lavoro di preparazione ch
 
 5.  Prova sempre a promuovere le notizie positive sugli sforzi del lavoro e i feedback degli utenti (se disponibili). Raccontare e vendere la storia. Se il feedback è totalmente negativo, prepararsi a discuterne e spiegare cosa viene fatto per risolvere i problemi di esperienza utente negativi.
 
-    un.  Approfitta della possibilità di dare complimenti ai singoli membri del team per il buon lavoro che stanno facendo. È importante riconoscere quando i membri del team lavorano duramente, in particolare davanti al loro team di leadership.
+    a.  Approfitta della possibilità di dare complimenti ai singoli membri del team per il buon lavoro che stanno facendo. È importante riconoscere quando i membri del team lavorano duramente, in particolare davanti al loro team di leadership.
 
 6.  Salvare sempre la fine della riunione per concordare i passaggi successivi e identificare il proprietario degli elementi di azione concordati durante la riunione.
 

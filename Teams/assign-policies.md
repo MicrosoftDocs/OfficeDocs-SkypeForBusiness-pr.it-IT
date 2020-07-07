@@ -18,20 +18,16 @@ description: Scopri i diversi modi per assegnare i criteri agli utenti in Micros
 f1keywords:
 - ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
-ms.openlocfilehash: c7522bc4bffeafeef4d194f5e4ad24ec9648a91a
-ms.sourcegitcommit: 4099da7b1db7663e63ef5bece16e3090c33ea207
-ms.translationtype: MT
+ms.openlocfilehash: 161a979578f24b351c93e870a562e6c4104b52d0
+ms.sourcegitcommit: ac36d3923095a4321dad14fdf23c98358affd10c
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45021754"
+ms.lasthandoff: 07/07/2020
+ms.locfileid: "45049443"
 ---
 # <a name="assign-policies-to-your-users-in-microsoft-teams"></a>Assegnare i criteri agli utenti in Microsoft Teams
 
 > [!NOTE]
-> **Tenere presente quanto segue su una delle caratteristiche descritte in questo articolo, assegnazione dei criteri a gruppi**: 
-> - [L'assegnazione dei criteri a gruppi che usano l'interfaccia di amministrazione di Microsoft teams](#using-the-microsoft-teams-admin-center-3)non è ancora stata rilasciata. È stata annunciata e arriverà presto. 
-> - L' [assegnazione dei criteri ai gruppi tramite PowerShell](#using-powershell-3)è attualmente disponibile solo in anteprima privata. I cmdlet per questa funzionalità si trovano nel modulo anteprima pubblica di PowerShell per Teams.
->
+> Una delle caratteristiche descritte in questo articolo: [l'assegnazione dei criteri ai gruppi che usano l'interfaccia di amministrazione di Microsoft teams](#using-the-microsoft-teams-admin-center-3)non è ancora stata rilasciata. È stata annunciata e arriverà presto.
 > Per rimanere in primo piano sullo stato di rilascio di questa funzionalità, vedere la [Roadmap di Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=61185).
 
 Come amministratore, puoi usare i criteri per controllare le caratteristiche dei team disponibili per gli utenti dell'organizzazione. Ad esempio, esistono criteri per la chiamata, criteri per le riunioni e criteri di messaggistica, per citarne solo alcuni.
@@ -73,7 +69,7 @@ Prima di assegnare criteri a singoli utenti o gruppi, iniziare [impostando i cri
 |[Assegnare un criterio a singoli utenti](#assign-a-policy-to-individual-users)    | Si è nuovi team e si è appena iniziato o si deve solo assegnare uno o due criteri a un numero limitato di utenti. |L'interfaccia di amministrazione di Microsoft teams o i cmdlet di PowerShell nel modulo di PowerShell Skype for business online
 | [Assegnare un pacchetto di criteri](#assign-a-policy-package)   | È necessario assegnare più criteri a specifici set di utenti dell'organizzazione che hanno ruoli uguali o simili. Ad esempio, assegnare il pacchetto di criteri Education (Teacher) agli insegnanti della scuola per consentire loro l'accesso completo alle chat, alle chiamate e alle riunioni e al pacchetto di criteri per l'istruzione (studente della scuola secondaria) agli studenti secondari per limitare alcune funzionalità come le chiamate private.  |Interfaccia di amministrazione di Microsoft teams o cmdlet di PowerShell nel modulo di PowerShell Teams|
 |[Assegnare un criterio a un gruppo di utenti](#assign-a-policy-to-a-batch-of-users)   | È necessario assegnare criteri a set di utenti di grandi dimensioni. Ad esempio, si vuole assegnare un criterio a centinaia o migliaia di utenti dell'organizzazione alla volta.  |Interfaccia di amministrazione di Microsoft teams o cmdlet di PowerShell nel modulo di PowerShell Teams|
-|[Assegnare un criterio a un gruppo](#assign-a-policy-to-a-group) (in anteprima/presto disponibile)|È necessario assegnare criteri in base all'appartenenza al gruppo di un utente. Ad esempio, si vuole assegnare un criterio a tutti gli utenti in un gruppo di sicurezza o in un'unità organizzativa.| Interfaccia di amministrazione di Microsoft Teams (disponibile a breve) o cmdlet di PowerShell nel modulo di PowerShell Teams (in anteprima)|
+|[Assegnare un criterio a un gruppo](#assign-a-policy-to-a-group) |È necessario assegnare criteri in base all'appartenenza al gruppo di un utente. Ad esempio, si vuole assegnare un criterio a tutti gli utenti in un gruppo di sicurezza o in un'unità organizzativa.| L'interfaccia di amministrazione di Microsoft Teams (disponibile a breve) o i cmdlet di PowerShell nel modulo di PowerShell Teams|
 | [Assegnare un pacchetto di criteri a un gruppo di utenti](#assign-a-policy-package-to-a-batch-of-users)|È necessario assegnare più criteri a un gruppo di utenti dell'organizzazione che hanno ruoli uguali o simili. Ad esempio, assegna il pacchetto di criteri Education (Teacher) a tutti gli insegnanti dell'Istituto di istruzione usando l'assegnazione batch per consentire loro l'accesso completo alle chat, alle chiamate e alle riunioni e assegnare il pacchetto di criteri per l'istruzione (studente di scuola secondaria) a un gruppo di studenti secondari per limitare alcune funzionalità come le chiamate private.|Cmdlet di PowerShell nel modulo di PowerShell Teams|
 | Assegnare un pacchetto di criteri a un gruppo (disponibile a breve)   | ||
 
@@ -315,14 +311,12 @@ Per modificare la classificazione di un'assegnazione di gruppo, è necessario ri
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-**Questa caratteristica è attualmente disponibile solo in anteprima privata. I cmdlet per questa funzionalità si trovano nel modulo anteprima pubblica di PowerShell per Teams.**
-
 > [!NOTE]
 > Attualmente, l'assegnazione dei criteri ai gruppi che usano PowerShell non è disponibile per tutti i tipi di criteri teams. Vedere [New-CsGroupPolicyAssignment](https://docs.microsoft.com/powershell/module/teams/new-csgrouppolicyassignment) per l'elenco dei tipi di criteri supportati.
 
 #### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo di PowerShell di Microsoft Teams
 
-Questi cmdlet fanno parte del modulo anteprima pubblica di PowerShell teams. Per informazioni dettagliate, vedere [installare teams PowerShell](teams-powershell-install.md).
+Per informazioni dettagliate, vedere [installare teams PowerShell](teams-powershell-install.md).
 
 #### <a name="assign-a-policy-to-a-group"></a>Assegnare un criterio a un gruppo
 
@@ -385,6 +379,9 @@ Per altre informazioni, vedere [Remove-CsGroupPolicyAssignment](https://docs.mic
 
 #### <a name="change-a-policy-assignment-for-a-group"></a>Modificare un'assegnazione di criteri per un gruppo
 
+> [!NOTE]
+> Il ```Set-CsGroupPolicyAssignment``` cmdlet sarà presto disponibile. Nel frattempo, per modificare un'assegnazione di criteri di gruppo, è possibile rimuovere l'assegnazione di criteri corrente dal gruppo e quindi aggiungere una nuova assegnazione di criteri.
+
 Dopo aver assegnato un criterio a un gruppo, è possibile usare il ```Set-CsGroupPolicyAssignment``` cmdlet per modificare l'assegnazione dei criteri del gruppo, come indicato di seguito:
 
 - Modificare la classificazione
@@ -398,6 +395,8 @@ Set-CsGroupPolicyAssignment -GroupId 566b8d39-5c5c-4aaa-bc07-4f36278a1b38 -Polic
 ```
 
 Per altre informazioni, vedere [set-CsGroupPolicyAssignment](https://docs.microsoft.com/powershell/module/teams/set-csgrouppolicyassignment).
+
+
 
 #### <a name="change-the-effective-policy-for-a-user"></a>Modificare i criteri effettivi per un utente
 

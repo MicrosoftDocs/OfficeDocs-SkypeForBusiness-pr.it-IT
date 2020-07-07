@@ -17,12 +17,11 @@ description: Informazioni su come gestire le app teams nella pagina Manage Apps 
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: 7884aa033d3d137ac36fe86a47a2861732b50bb5
-ms.sourcegitcommit: ad82786076cc965e75b1ec5ffd4bc9bf75437340
-ms.translationtype: MT
+ms.openlocfilehash: bd793cc4ec6cbd27180e3babeb69c7fdc5e98ce4
+ms.sourcegitcommit: 2467ece95e100a3a3cc2be3538d8eb7d878b3663
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45028092"
+ms.lasthandoff: 07/06/2020
+ms.locfileid: "45042928"
 ---
 <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia di amministrazione di Microsoft Teams
 ======================================================
@@ -77,6 +76,9 @@ Quando blocchi o Consenti un'app nella pagina **Gestisci** app, questa app è bl
 
 Usa le impostazioni dell'app a livello di organizzazione per controllare se gli utenti possono installare app di terze parti e se gli utenti possono caricare o interagire con app personalizzate nella tua azienda. Le impostazioni dell'app a livello di organizzazione regolano il comportamento per tutti gli utenti ed eseguono l'override di qualsiasi altro criterio di autorizzazione dell'app assegnato agli utenti. Puoi usarle per controllare le app malevole o problematiche.
 
+> [!NOTE]
+> La pagina **Gestisci app** non è ancora disponibile in Microsoft 365 Government-distribuzioni GCC di teams.  Per informazioni su come usare le impostazioni dell'app a livello di organizzazione per abilitare o disabilitare le app di terze parti, vedere [gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
+
 1. Nella pagina **Manage Apps** selezionare **impostazioni dell'app a livello di organizzazione**. È quindi possibile configurare le impostazioni desiderate nel pannello.
 
     ![Screenshot delle impostazioni dell'app a livello di organizzazione](media/manage-apps-org-wide-app-settings.png)
@@ -84,9 +86,6 @@ Usa le impostazioni dell'app a livello di organizzazione per controllare se gli 
 2. In **app di terze parti**disattivare o attivare queste impostazioni per controllare l'accesso alle app di terze parti:
 
     - **Consenti app di terze parti**: controlla se gli utenti possono usare app di terze parti. Se disattivi questa impostazione, gli utenti non potranno installare o usare app di terze parti e lo stato dell'app di queste app viene visualizzato come bloccato a **livello di organizzazione** nella tabella.
-
-        > [!NOTE]
-        > In una distribuzione di team di Microsoft 365 Government-GCC, l'impostazione **Consenti app di terze parti** è disinserita per impostazione predefinita.
 
         Quando le **app di terze parti** sono disattivate, i [webhook in uscita](https://docs.microsoft.com/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors) sono disabilitati, il che significa che gli utenti non possono crearli. Quando questa impostazione è attivata, i webhook in uscita sono abilitati per tutti gli utenti, indipendentemente dal fatto che l'impostazione sia inserita o disattivata nei criteri di autorizzazione delle app degli utenti.
     - **Consenti a tutte le nuove app di terze parti pubblicate nello Store per impostazione predefinita**: questo controlla se le nuove app di terze parti pubblicate nell'app store teams diventano automaticamente disponibili in teams. Puoi impostare questa opzione solo se Consenti app di terze parti.
