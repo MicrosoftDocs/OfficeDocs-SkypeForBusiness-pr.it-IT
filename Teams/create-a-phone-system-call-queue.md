@@ -23,12 +23,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare il sistema telefonico per le code di chiamate cloud con Microsoft teams, che offre un messaggio di saluto, tenere premuto musica, reindirizzare le chiamate e altre funzionalità.
-ms.openlocfilehash: ac0fb41ebb85a6e7e80d3d221da4dabf456d20aa
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: dd11e33e4947ea231310b06af2570711d55b2451
+ms.sourcegitcommit: c8b5d4dd70d183f7ca480fb735a19290a3457b30
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44697425"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45077716"
 ---
 # <a name="create-a-cloud-call-queue"></a>Creare una coda di chiamata cloud
 
@@ -69,7 +69,7 @@ Per iniziare a utilizzare le code di chiamata, è importante ricordare quanto se
   > I numeri di servizio di routing diretto per le code di chiamata sono supportati solo per gli utenti e gli agenti di Microsoft teams.
 
 > [!NOTE]
-> Per reindirizzare le chiamate alle persone dell'organizzazione online, devono avere una licenza per il **sistema telefonico** e essere abilitate per VoIP aziendale o avere piani di chiamata Microsoft 365 o Office 365. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, Esegui:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
+> Per reindirizzare le chiamate alle persone dell'organizzazione online, devono avere una licenza per il **sistema telefonico** e essere abilitate per VoIP aziendale o avere piani di chiamata Microsoft 365 o Office 365. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, Esegui:' Set-CsUser-Identity "Amos Marble"-EnterpriseVoiceEnabled $true.
 
 - Per altre informazioni sui piani di chiamata, vedere [sistema telefonico e](calling-plan-landing-page.md) piani per chiamate e [chiamate per Microsoft 365 o Office 365](calling-plans-for-office-365.md).
 
@@ -174,11 +174,11 @@ Gli agenti di chiamata selezionati devono essere uno dei seguenti:
 - Utenti di Skype for Business Server locale
 
   > [!NOTE]
-  > Questo vale anche se vuoi reindirizzare le chiamate agli utenti dell'organizzazione online. Questi utenti devono avere una licenza per il **sistema telefonico** e VoIP aziendale abilitato *o* avere un piano di chiamata. Per altre informazioni, vedere [assegnare licenze Skype for business](https://docs.microsoft.com/skypeforbusiness/skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses), [assegnare licenze Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/assign-teams-add-on-licenses)o [quale piano per le chiamate è giusto per l'utente?](https://docs.microsoft.com/microsoftteams/calling-plan-landing-page)
+  > Questo vale anche se vuoi reindirizzare le chiamate agli utenti dell'organizzazione online. Questi utenti devono avere una licenza per il sistema telefonico e VoIP aziendale abilitato *o* avere un piano di chiamata. Per altre informazioni, vedere [assegnare licenze Skype for business](https://docs.microsoft.com/skypeforbusiness/skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses), [assegnare licenze Microsoft teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/assign-teams-add-on-licenses)o [quale piano per le chiamate è giusto per l'utente?](https://docs.microsoft.com/microsoftteams/calling-plan-landing-page)
 
    Per abilitare un agente per VoIP aziendale, è possibile usare Windows PowerShell. Ad esempio, Esegui:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
 
-- Utenti con una licenza di **sistema telefonico** o un piano di chiamata aggiunto a un gruppo di Microsoft 365, a una lista di distribuzione abilitata per la posta elettronica o a un gruppo di sicurezza. Quando si aggiunge un agente in una lista di distribuzione o un gruppo di sicurezza come agente della coda di chiamata, è possibile che la prima chiamata arrivi fino a tre ore. Una lista di distribuzione o un gruppo di sicurezza appena creato può richiedere fino a 48 ore per diventare disponibile per l'uso con le code di chiamata. I gruppi Microsoft 365 appena creati sono disponibili quasi immediatamente.
+- Utenti con una licenza di sistema telefonico o un piano di chiamata aggiunto a un gruppo di Microsoft 365, a una lista di distribuzione abilitata per la posta elettronica o a un gruppo di sicurezza. Quando si aggiunge un agente in una lista di distribuzione o un gruppo di sicurezza come agente della coda di chiamata, è possibile che la prima chiamata arrivi fino a tre ore. Una lista di distribuzione o un gruppo di sicurezza appena creato può richiedere fino a 48 ore per diventare disponibile per l'uso con le code di chiamata. I gruppi Microsoft 365 appena creati sono disponibili quasi immediatamente.
 
 - Se gli agenti usano l'app Microsoft teams per le chiamate alla coda di chiamata, devono essere in modalità TeamsOnly.
 
@@ -274,11 +274,23 @@ L'impostazione predefinita è 30 secondi, ma può essere impostata per un massim
 - **Disconnetti** La chiamata è disconnessa.
 - **Reindirizza a** Quando si sceglie questo pulsante, selezionare una delle opzioni seguenti:
 
-  - **Persona nell'organizzazione** Un utente online con una licenza di **sistema telefonico** ed essere abilitato per VoIP aziendale o avere un piano per le chiamate. È possibile configurarlo in modo che il chiamante possa essere inviato alla segreteria telefonica. A questo scopo, seleziona una persona nell'organizzazione e imposta questa persona per inoltrare le chiamate direttamente alla segreteria telefonica.
+  - **Persona nell'organizzazione** Un utente online con una licenza di sistema telefonico ed essere abilitato per VoIP aziendale o avere un piano per le chiamate. È possibile configurarlo in modo che il chiamante possa essere inviato alla segreteria telefonica. A questo scopo, seleziona una persona nell'organizzazione e imposta questa persona per inoltrare le chiamate direttamente alla segreteria telefonica.
 
   Per informazioni sulle licenze necessarie per la segreteria telefonica, vedere [configurare la segreteria telefonica cloud](set-up-phone-system-voicemail.md).
 
   - **App vocale** Selezionare il nome di un account di risorsa associato a una coda di chiamata o a un operatore automatico già creato.
+
+  - **Numero di telefono esterno** Scegliere questa impostazione per trasferire il chiamante a un numero di telefono esterno specificato. Tenere presente quanto segue:
+
+    - L'account delle risorse associato all'applicazione che effettua il trasferimento PSTN deve avere un numero di telefono a cui è stata assegnata una licenza per il sistema telefonico virtuale. Le licenze di sistema telefonico non sono supportate. L'account delle risorse deve inoltre avere una delle opzioni seguenti:
+        - Per un account delle risorse con un numero di piano chiamante, assegnare una licenza per il [piano di chiamata](calling-plans-for-office-365.md) .
+        - Per un account delle risorse con un numero di routing diretto, assegnare un [criterio di routing vocale online](manage-voice-routing-policies.md).
+    - Il numero di telefono in uscita visualizzato è determinato nel modo seguente:
+        - Per chiamare i numeri del piano, viene visualizzato il numero di telefono del chiamante originale.
+        - Per i numeri di routing diretti, il numero inviato si basa sull'impostazione P-Asserted-Identity (PAI) nell'SBC, come indicato di seguito:
+            - Se impostato su disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
+            - Se impostato su abilitato, viene visualizzato il numero di telefono dell'account risorse.
+    - I trasferimenti tra Trunks del piano chiamante e trunk di routing diretto non sono supportati.
 
 * * *
 
@@ -292,11 +304,23 @@ Puoi impostare il valore di timeout in secondi, a intervalli di 15 secondi. In q
 
 - **Disconnetti** La chiamata è disconnessa.
 - **Reindirizzare la chiamata a** Quando si sceglie questa opzione, sono disponibili le opzioni seguenti:
-  - **Persona nell'organizzazione** Un utente online con una licenza di **sistema telefonico** ed essere abilitato per VoIP aziendale o per avere piani di chiamata. Per configurarlo in modo che la persona che chiama può essere inviata alla segreteria telefonica, selezionare una persona nell'organizzazione e impostare questa persona per inoltrare le chiamate direttamente alla segreteria telefonica.
+  - **Persona nell'organizzazione** Un utente online con una licenza di sistema telefonico ed essere abilitato per VoIP aziendale o per avere piani di chiamata. Per configurarlo in modo che la persona che chiama può essere inviata alla segreteria telefonica, selezionare una persona nell'organizzazione e impostare questa persona per inoltrare le chiamate direttamente alla segreteria telefonica.
 
   Per informazioni sulle licenze necessarie per la segreteria telefonica, vedere [configurare la segreteria telefonica cloud](set-up-phone-system-voicemail.md).
 
   - **App vocale** Selezionare il nome di un account di risorsa associato a una coda di chiamata o a un operatore automatico già creato.
+
+  - **Numero di telefono esterno** Scegliere questa impostazione per trasferire il chiamante a un numero di telefono esterno specificato. Tenere presente quanto segue:
+
+    - L'account delle risorse associato all'applicazione che effettua il trasferimento PSTN deve avere un numero di telefono a cui è stata assegnata una licenza per il sistema telefonico virtuale. Le licenze di sistema telefonico non sono supportate. L'account delle risorse deve inoltre avere una delle opzioni seguenti:
+        - Per un account delle risorse con un numero di piano chiamante, assegnare una licenza per il [piano di chiamata](calling-plans-for-office-365.md) .
+        - Per un account delle risorse con un numero di routing diretto, assegnare un [criterio di routing vocale online](manage-voice-routing-policies.md).
+    - Il numero di telefono in uscita visualizzato è determinato nel modo seguente:
+        - Per chiamare i numeri del piano, viene visualizzato il numero di telefono del chiamante originale.
+        - Per i numeri di routing diretti, il numero inviato si basa sull'impostazione P-Asserted-Identity (PAI) nell'SBC, come indicato di seguito:
+            - Se impostato su disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
+            - Se impostato su abilitato, viene visualizzato il numero di telefono dell'account risorse.
+    - I trasferimenti tra Trunks del piano chiamante e trunk di routing diretto non sono supportati.
 
 ## <a name="change-caller-id-for-outbound-calls"></a>Modificare l'ID chiamante per le chiamate in uscita
 

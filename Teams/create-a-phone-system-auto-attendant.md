@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici di cloud per Microsoft teams.
-ms.openlocfilehash: 0cdba07297e22b116bbfe120f4d1e5640ee9a892
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: 247cb553c2fb3c4dafd1a36b826fc13f2f21b0ce
+ms.sourcegitcommit: c8b5d4dd70d183f7ca480fb735a19290a3457b30
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44874254"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45077717"
 ---
 # <a name="set-up-a-cloud-auto-attendant"></a>Configurare un operatore automatico cloud
 
@@ -37,7 +37,7 @@ Per altre informazioni sugli operatori automatici, vedere [che cosa sono gli ope
 > [!NOTE]
 > Questo articolo si applica sia a Microsoft teams che a Skype for business online.
 
-I numeri di telefono non vengono assegnati direttamente all'operatore automatico, ma piuttosto a un [account delle risorse](manage-resource-accounts.md) associato all'operatore automatico.
+I numeri di telefono non vengono assegnati direttamente all'operatore automatico, bensì a un [account delle risorse](manage-resource-accounts.md) associato all'operatore automatico.
 
 Le implementazioni di operatore automatico spesso coinvolgono diversi operatori automatici. Un operatore automatico di *primo livello* ha in genere un account delle risorse con un numero di telefono assegnato. Un operatore automatico annidato viene usato come menu di secondo livello a cui l'operatore automatico di *primo livello* si connette come chiamata. Un operatore automatico *annidato* non è necessario per avere un numero di telefono assegnato al proprio account di risorse.
 
@@ -88,7 +88,19 @@ Sono disponibili diversi modi per impostare l'operatore:
      > [!Note]
      > La **persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server. Quando si seleziona **persona nell'organizzazione** , è possibile selezionare un account con una cassetta postale condivisa o con una cassetta postale dell'utente.
 
-- **App vocale**  Selezionare il nome dell'account della risorsa collegato a un operatore automatico o a una coda di chiamata già creata. I chiamanti che richiedono l'operatore vengono reindirizzati.  
+- **App vocale**  Selezionare il nome dell'account della risorsa collegato a un operatore automatico o a una coda di chiamata già creata. I chiamanti che richiedono l'operatore vengono reindirizzati.
+- **Numero di telefono esterno** trasferisce il chiamante a un numero di telefono esterno specificato. Tenere presente quanto segue:
+
+    - L'account delle risorse associato all'applicazione che effettua il trasferimento PSTN deve avere un numero di telefono a cui è stata assegnata una licenza per il sistema telefonico virtuale. Le licenze di sistema telefonico non sono supportate. L'account delle risorse deve inoltre avere una delle opzioni seguenti:
+        - Per un account delle risorse con un numero di piano chiamante, assegnare una licenza per il [piano di chiamata](calling-plans-for-office-365.md) .
+        - Per un account delle risorse con un numero di routing diretto, assegnare un [criterio di routing vocale online](manage-voice-routing-policies.md).
+    - Il numero di telefono in uscita visualizzato è determinato nel modo seguente:
+        - Per chiamare i numeri del piano, viene visualizzato il numero di telefono del chiamante originale.
+        - Per i numeri di routing diretti, il numero inviato si basa sull'impostazione P-Asserted-Identity (PAI) nell'SBC, come indicato di seguito:
+            - Se impostato su disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
+            - Se impostato su abilitato, viene visualizzato il numero di telefono dell'account risorse.
+    - I trasferimenti tra Trunks del piano chiamante e trunk di routing diretto non sono supportati.
+
 <!--   
 
 - **Auto attendant** Select the name of the resource account linked to an auto attendant that has already been created. Callers that request an operator are redirected there.
@@ -157,15 +169,27 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 
 ![Icona del numero 4, un callout nella schermata precedente reindirizza la ](media/teamscallout4.png) **chiamata** invia il chiamante alla destinazione scelta senza scegliere Opzioni. Le impostazioni possibili sono:
 
-  - **Persona nell'organizzazione** L'account scelto deve avere una licenza per il sistema telefonico abilitato per VoIP aziendale o avere un piano di chiamata assegnato in Microsoft 365 o Office 365. È possibile configurarlo in modo che il chiamante possa essere inviato alla segreteria telefonica: selezionare **persona nell'organizzazione** e impostare l'account per inoltrare le chiamate direttamente alla segreteria telefonica.
+  - **Persona nell'organizzazione** L'account scelto deve avere una licenza per il sistema telefonico abilitato per VoIP aziendale o avere un piano di chiamata assegnato in Microsoft 365 o Office 365. È possibile configurarlo in modo che il chiamante possa essere inviato alla segreteria telefonica. Selezionare **persona nell'organizzazione** e impostare l'account per inoltrare le chiamate direttamente alla segreteria telefonica.
 
     > [!Note]
     > La **persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server. Quando si seleziona **persona nell'organizzazione** , è possibile selezionare un account con una cassetta postale condivisa o con una cassetta postale dell'utente.
 
   - **App vocale** Selezionare un operatore automatico o una coda di chiamata già configurata. Si cerca l'operatore automatico o la coda di chiamata in base al nome dell'account delle risorse associato al servizio.
+  - **Numero di telefono esterno** trasferisce il chiamante a un numero di telefono esterno specificato. Tenere presente quanto segue:
+
+    - L'account delle risorse associato all'applicazione che effettua il trasferimento PSTN deve avere un numero di telefono a cui è stata assegnata una licenza per il sistema telefonico virtuale. Le licenze di sistema telefonico non sono supportate. L'account delle risorse deve inoltre avere una delle opzioni seguenti:
+        - Per un account delle risorse con un numero di piano chiamante, assegnare una licenza per il [piano di chiamata](calling-plans-for-office-365.md) .
+        - Per un account delle risorse con un numero di routing diretto, assegnare un [criterio di routing vocale online](manage-voice-routing-policies.md).
+    - Il numero di telefono in uscita visualizzato è determinato nel modo seguente:
+        - Per chiamare i numeri del piano, viene visualizzato il numero di telefono del chiamante originale.
+        - Per i numeri di routing diretti, il numero inviato si basa sull'impostazione P-Asserted-Identity (PAI) nell'SBC, come indicato di seguito:
+            - Se impostato su disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
+            - Se impostato su abilitato, viene visualizzato il numero di telefono dell'account risorse.
+    - I trasferimenti tra Trunks del piano chiamante e trunk di routing diretto non sono supportati.
   - **Segreteria telefonica** Selezionare il gruppo Microsoft 365 che contiene gli utenti dell'organizzazione che devono accedere alla segreteria telefonica ricevuta dall'operatore automatico. I messaggi della segreteria telefonica vengono inviati al gruppo Microsoft 365 specificato. Per accedere ai messaggi della segreteria telefonica, i membri del gruppo possono aprirli passando al gruppo in Outlook.
 
       Cambiare la **trascrizione** **su** attivato per abilitare la trascrizione vocale dei messaggi della segreteria telefonica.
+
 
  * * *
 
@@ -201,6 +225,18 @@ Se si seleziona **Disconnetti**, il chiamante viene disconnesso dopo la riproduz
 - La **persona dell'organizzazione** può essere un utente online o un utente ospitato in locale con Skype for Business Server. L'utente deve avere una licenza di sistema telefonico abilitata per i piani VoIP aziendale o per le chiamate assegnate in Microsoft 365 o Office 365. Cercare la persona nel campo **Cerca in base al nome** .
 
 - **App vocale** Selezionare un operatore automatico o una coda di chiamata già configurata. Si cerca l'operatore automatico o la coda di chiamata in base al nome dell'account delle risorse associato all'applicazione.
+
+- **Numero di telefono esterno** trasferisce il chiamante a un numero di telefono esterno specificato. Tenere presente quanto segue:
+
+    - L'account delle risorse associato all'applicazione che effettua il trasferimento PSTN deve avere un numero di telefono a cui è stata assegnata una licenza per il sistema telefonico virtuale. Le licenze di sistema telefonico non sono supportate. L'account delle risorse deve inoltre avere una delle opzioni seguenti:
+        - Per un account delle risorse con un numero di piano chiamante, assegnare una licenza per il [piano di chiamata](calling-plans-for-office-365.md) .
+        - Per un account delle risorse con un numero di routing diretto, assegnare un [criterio di routing vocale online](manage-voice-routing-policies.md).
+    - Il numero di telefono in uscita visualizzato è determinato nel modo seguente:
+        - Per chiamare i numeri del piano, viene visualizzato il numero di telefono del chiamante originale.
+        - Per i numeri di routing diretti, il numero inviato si basa sull'impostazione P-Asserted-Identity (PAI) nell'SBC, come indicato di seguito:
+            - Se impostato su disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
+            - Se impostato su abilitato, viene visualizzato il numero di telefono dell'account risorse.
+    - I trasferimenti tra Trunks del piano chiamante e trunk di routing diretto non sono supportati.
 
 - **Segreteria telefonica** Selezionare il gruppo Microsoft 365 che contiene gli utenti dell'organizzazione che devono accedere alla segreteria telefonica ricevuta dall'operatore automatico. I messaggi della segreteria telefonica vengono inviati al gruppo Microsoft 365 specificato. Per accedere ai messaggi della segreteria telefonica, i membri del gruppo possono aprirli passando al gruppo in Outlook.
 

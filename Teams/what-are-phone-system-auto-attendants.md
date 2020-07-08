@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sugli operatori automatici del cloud e su come usarli per consentire ai chiamanti di spostarsi in un sistema di menu per individuare e inserire o trasferire chiamate a utenti o reparti.
-ms.openlocfilehash: 590d2282faa4642cbd23c195e6a2e9e327803993
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 53353df78c0344b3cf96b1854ea576e8d907bfbc
+ms.sourcegitcommit: c8b5d4dd70d183f7ca480fb735a19290a3457b30
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665188"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45077641"
 ---
 # <a name="what-are-cloud-auto-attendants"></a>Cosa sono gli operatori automatici cloud?
 
@@ -42,7 +42,7 @@ Per configurare un operatore automatico per il sistema telefonico, vedere [confi
 Un operatore automatico cloud ha le caratteristiche seguenti:
   
 - Può fornire messaggi di saluto informativi o aziendali.
-- Può offrire menu aziendali personalizzati. Puoi personalizzare questi menu per disporre di più di un livello.
+- It can provide custom corporate menus. You can customize these menus to have more than one level.
 - Fornisce la ricerca nella directory che consente alle persone che chiamano per cercare un nome nella directory dell'organizzazione.
 - Consente a un utente che chiama di raggiungere o di uscire da un messaggio per una persona dell'organizzazione.
 - Supporta più lingue per le richieste, la sintesi vocale e il riconoscimento vocale.
@@ -71,8 +71,9 @@ Per iniziare a utilizzare gli operatori automatici, è importante ricordare quan
     > [!IMPORTANT]
     > I numeri di telefono di utenti (abbonati) non possono essere assegnati agli operatori automatici, ma solo numeri di telefono di servizio a pagamento o numeri verdi.
 
-- Un sistema di operatore automatico completo coinvolgerà in genere più operatori automatici e può richiedere solo un singolo numero di telefono assegnato per l'operatore automatico di primo livello o di entrata. Gli altri operatori automatici o le code di chiamata nel sistema completo necessitano solo di un numero di telefono se si vuole specificare più punti di ingresso nel sistema.
-- È possibile applicare più di un numero di telefono a un operatore automatico associando più account di risorse a un operatore automatico.
+- Un sistema di operatore automatico completo coinvolgerà in genere più operatori automatici.
+- È possibile applicare più numeri di telefono agli operatori automatici di livello entry-level.
+- Gli operatori automatici di livello non di ingresso o le code di chiamata nel sistema completo avranno bisogno solo di un numero di telefono se faranno chiamate PSTN in uscita.
   
 ## <a name="feature-overview"></a>Panoramica delle caratteristiche
 
