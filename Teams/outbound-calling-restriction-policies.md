@@ -21,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Gli amministratori possono controllare il tipo di audioconferenza e chiamate PSTN degli utenti finali che possono essere effettuate dagli utenti.
-ms.openlocfilehash: ca4b7920ccad27a9434cbd1e5f76d7d10c4f4612
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: fd7c30a7561c06dd237bb72b405c8fc5b7b68dcd
+ms.sourcegitcommit: c8b5d4dd70d183f7ca480fb735a19290a3457b30
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665908"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45077671"
 ---
 # <a name="outbound-calling-restriction-policies-for-audio-conferencing-and-user-pstn-calls"></a>Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente
 
@@ -69,7 +69,7 @@ Per scoprire quali paesi/aree geografiche sono considerate zone A, vedere [zone 
 
 3.    In **restrizioni ai dial-out delle riunioni di questo utente**selezionare l'opzione di restrizione chiamata in uscita desiderata.
 
-    ![Le restrizioni alle opzioni per i dial-out](media/restrictions-to-dial-outs.png)
+    ![Le restrizioni alle opzioni per i dial-out](/Skype/SfbOnline/images/restrictions-to-dial-outs.png)
 
 5. Fare clic su **Salva**.
 
