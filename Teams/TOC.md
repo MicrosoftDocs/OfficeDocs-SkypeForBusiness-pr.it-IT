@@ -694,21 +694,29 @@
 
 <!-- ============================================================ -->
 # Monitoraggio, manutenzione e risoluzione dei problemi
-## [Monitorare e gestire la qualità delle chiamate](monitor-call-quality-qos.md)
-### [Guida sul controllo della qualità dell'esperienza](quality-of-experience-review-guide.md)
-### [Configurare QoS in Teams](QoS-in-Teams.md)
+## Monitorare e gestire la qualità delle chiamate
+### [Monitorare e gestire la qualità delle chiamate](monitor-call-quality-qos.md)
+### Dashboard qualità delle chiamate (CQD)
+#### [Cosa si intende per CQD?](CQD-what-is-call-quality-dashboard.md)
+#### [Configurare CQD](turning-on-and-using-call-quality-dashboard.md)
+#### [Caricare tenant e creare dati](CQD-upload-tenant-building-data.md)
+#### [Dati e report di CQD](CQD-data-and-reports.md)
+#### [Usare CQD per gestire la qualità di chiamate e riunioni](quality-of-experience-review-guide.md)
+#### [Domande frequenti](CQD-frequently-asked-questions.md)
+#### [Dimensioni e misure disponibili in CQD](dimensions-and-measures-available-in-call-quality-dashboard.md)
+#### [Classificazione del flusso in CQD](stream-classification-in-call-quality-dashboard.md)
+#### [Creare una mappa predefinita](CQD-building-mapping.md)
+#### Usare Power BI per analizzare i dati di Dashboard Qualità della chiamata
+##### [Usare Power BI per analizzare i dati di Dashboard Qualità della chiamata](CQD-Power-BI-query-templates.md)
+##### [Installare il connettore Power BI per usare i modelli di query di Dashboard Qualità della chiamata](CQD-Power-BI-connector.md)
+##### [Ottenere i dati di Dashboard Qualità della chiamata sull'utilizzo di Teams](CQD-teams-utilization-report.md)
+##### [Usare il report di Instradamento diretto PSTN di CQD](CQD-PSTN-report.md)
+### Analisi delle chiamate
+#### [Configurare l'analisi delle chiamate](set-up-call-analytics.md)
+#### [Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+### Qualità del servizio (QoS)
+#### [Configurare QoS in Teams](QoS-in-Teams.md)
 #### [Configurare QoS nei client di Windows](QoS-in-Teams-clients.md)
-### [Analisi delle chiamate e Dashboard Qualità della chiamata](difference-between-call-analytics-and-call-quality-dashboard.md)
-### [Configurare l'analisi delle chiamate](set-up-call-analytics.md)
-### [Uso dell'analisi delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
-### [Attivazione e utilizzo di Dashboard Qualità della chiamata](turning-on-and-using-call-quality-dashboard.md)
-### Usare Power BI per analizzare i dati di Dashboard Qualità della chiamata
-#### [Usare Power BI per analizzare i dati di Dashboard Qualità della chiamata](CQD-Power-BI-query-templates.md)
-#### [Installare il connettore Power BI per usare i modelli di query di Dashboard Qualità della chiamata](CQD-Power-BI-connector.md)
-#### [Ottenere i dati di Dashboard Qualità della chiamata sull'utilizzo di Teams](CQD-teams-utilization-report.md)
-#### [Usare il report Instradamento diretto PSTN di Dashboard Qualità della chiamata](CQD-PSTN-report.md)
-### [Dimensioni e misure disponibili in Dashboard Qualità della chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md)
-### [Classificazione del flusso in Dashboard Qualità della chiamata](stream-classification-in-call-quality-dashboard.md)
 ## [Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)
 ## [Risoluzione dei problemi di installazione e aggiornamento](troubleshoot-installation.md)
 ## [Risolvere i problemi di connettività con il client di Teams](connectivity-issues.md)
@@ -717,6 +725,7 @@
 ## [Domande frequenti: Supporto del personale remoto](FAQ-support-remote-workforce.md)
 ## [Verifica dell'integrità dei servizi per Teams](service-health.md)
 ## [Contattare il supporto tecnico per i prodotti per le aziende - Guida dell'amministratore](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
+
 
 <!-- ============================================================ -->
   
