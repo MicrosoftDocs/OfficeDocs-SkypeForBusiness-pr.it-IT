@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 30cbb5a29f88494c24474624a79ffa4ea8004025
-ms.sourcegitcommit: 10046048a670b66d93e8ac3ba7c3ebc9c3c5fc2f
+ms.openlocfilehash: f800b92a0663b5c4318022c00cbb9ba022f2e8c3
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "42160363"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085682"
 ---
 <a name="admin-settings-for-apps-in-microsoft-teams"></a>Impostazioni di amministrazione per le app in Microsoft Teams
 ==========================================
@@ -34,7 +34,7 @@ ms.locfileid: "42160363"
 
 Le app contengono strumenti fuori sede per l'organizzazione per ottenere un numero maggiore di team. Queste app combinano la funzionalità di schede, estensioni di messaggistica, connettori e bot forniti da Microsoft, creati da terze parti o da sviluppatori dell'organizzazione.
 
-Puoi gestire le app per l'organizzazione in **app teams** nell'interfaccia di amministrazione di Microsoft teams. Ad esempio, puoi consentire o bloccare le app a livello di organizzazione, impostare i criteri per controllare quali app sono disponibili per gli utenti del team e personalizzare i team tramite il blocco delle app più importanti per gli utenti.
+Puoi gestire le app per l'organizzazione in **app teams** nell'interfaccia di [Amministrazione](https://admin.teams.microsoft.com/). Ad esempio, puoi consentire o bloccare le app a livello di organizzazione, impostare i criteri per controllare quali app sono disponibili per gli utenti del team e personalizzare i team tramite il blocco delle app più importanti per gli utenti.
 
 Stiamo migliorando continuamente l'esperienza dell'app in teams e aggiungendo funzionalità e funzionalità. Nel corso del tempo creeremo altre funzionalità di gestione delle app, quindi ricontrolla le informazioni più aggiornate sui criteri per le app.
 
@@ -46,7 +46,7 @@ La pagina **Gestisci app** consente di visualizzare tutte le app disponibili nel
 
 Per altre informazioni, vedere [gestire le app in teams](manage-apps.md).
 
-## <a name="app-permission-policies"></a>Criteri di autorizzazione delle app
+## <a name="app-permission-policies"></a>Criteri di autorizzazione app
 
 Con i criteri di autorizzazione delle app, puoi controllare quali app sono disponibili per gli utenti specifici dell'organizzazione. È possibile consentire o bloccare tutte le app o le app specifiche pubblicate da Microsoft, da terze parti e dall'organizzazione.
 

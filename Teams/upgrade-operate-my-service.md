@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d7828675f2a1dc7f3ea6f1cbad1227a9c47bd816
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: c23d5d3967e681b0b30d69c5977672063f4e648e
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868503"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085912"
 ---
 # <a name="operate-your-service"></a>Gestire il servizio
 
@@ -49,7 +49,9 @@ Le attività e le attività in questa guida sono raggruppate in otto categorie, 
 
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Decidere in che modo verranno implementate le operazioni per i team.</li></ul></td></tr>
+
 <tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Esaminare la Guida alle operazioni in completa.</li><li>Implementare una strategia operativa che si allinei agli obiettivi dell'organizzazione per offrire la qualità e l'affidabilità dei carichi di lavoro del team.</li><li>Esaminare la guida alla revisione della qualità delle esperienze.</li><li> Implementare una strategia operativa per eseguire regolarmente le recensioni sulla qualità delle esperienze per verificare che la distribuzione dei team sia operativa alle sue capacità di picco.</li></ul></td></tr>
+
 </table>
 
 ### <a name="operational-role-mapping"></a>Mapping dei ruoli operativi
@@ -377,12 +379,12 @@ Per garantire l'integrità della rete, è necessario eseguire una serie di attiv
 Tutte le organizzazioni hanno bisogno di un gruppo o di un individuo per essere responsabili della qualità. Questo è il ruolo più importante nella gestione dei servizi. Il ruolo di campione di qualità viene assegnato a una persona o un gruppo appassionato dell'esperienza degli utenti.
 Questo ruolo richiede le competenze necessarie per identificare le tendenze nell'ambiente e la sponsorizzazione per collaborare con altri team per gestire i correttivi. Il candidato migliore per il campione di qualità è in genere il proprietario del servizio clienti. A seconda delle dimensioni e della complessità dell'organizzazione, potrebbe essere una persona o un gruppo con una passione per garantire un'esperienza utente di alta qualità.
 
-Il campione della qualità sfrutta gli strumenti esistenti e i processi documentati, come Call Quality Dashboard (Call Quality Dashboard) e la qualità della Guida alla revisione dell'esperienza, per monitorare l'esperienza utente, identificare le tendenze della qualità e correggere le esigenze di guida.
+Il campione della qualità sfrutta gli strumenti esistenti e i processi documentati, come Call Quality Dashboard (Call Quality Dashboard) e [migliora e monitora la qualità delle chiamate per i team](monitor-call-quality-qos.md), per monitorare l'esperienza utente, identificare le tendenze della qualità e correggere le correzioni in base alle esigenze.
 Il campione di qualità dovrebbe collaborare con i rispettivi team per guidare azioni correttive e segnalare a un comitato direttivo informazioni sullo stato di avanzamento e su eventuali problemi aperti.
 
-La [Guida alla revisione della qualità della](https://aka.ms/qerguide) funzionalità include attività che valutano e includono indicazioni per il risanamento in aree chiave che hanno un impatto maggiore sul miglioramento dell'esperienza utente. Le indicazioni fornite nella Guida alla revisione dell'esperienza di qualità si basano sull'uso di Call Quality dashboard online come strumento principale per segnalare e analizzare ogni area, con un particolare accento sull'audio per massimizzare l'adozione e l'impatto. Le eventuali ottimizzazioni apportate alla rete per migliorare l'esperienza audio si traducono anche direttamente nei miglioramenti della condivisione di video e desktop.
+[Migliorare e monitorare la qualità delle chiamate per i team](monitor-call-quality-qos.md) include attività che valutano e includono indicazioni per il risanamento in aree chiave che hanno un impatto maggiore sul miglioramento dell'esperienza utente. Le indicazioni fornite nella Guida alla revisione dell'esperienza di qualità si basano sull'uso di Call Quality dashboard online come strumento principale per segnalare e analizzare ogni area, con un particolare accento sull'audio per massimizzare l'adozione e l'impatto. Le eventuali ottimizzazioni apportate alla rete per migliorare l'esperienza audio si traducono anche direttamente nei miglioramenti della condivisione di video e desktop.
 
-Ti consigliamo vivamente di nominare il campione di qualità in anticipo. Dopo essere stati nominati, dovrebbero iniziare a familiarizzarsi con il contenuto della Guida alla revisione dell'esperienza e dei materiali di formazione associati.
+Ti consigliamo vivamente di nominare il campione di qualità in anticipo. Dopo essere stati nominati, dovrebbero iniziare a familiarizzare con il contenuto [per migliorare e monitorare la qualità delle chiamate per i team](monitor-call-quality-qos.md) e i materiali di formazione associati.
 
 ### <a name="dailyweeklymonthlyas-needed-tasks"></a>Attività quotidiane/settimanali/mensili/necessarie
 
@@ -398,7 +400,7 @@ Ti consigliamo vivamente di nominare il campione di qualità in anticipo. Dopo e
 
 [Caricare informazioni sulle costruzioni](https://docs.microsoft.com/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard#upload-building-information)
 
-[Guida sul controllo della qualità dell'esperienza](https://aka.ms/qerguide)
+[Migliorare e monitorare la qualità delle chiamate per i team](monitor-call-quality-qos.md)
 
 <!--ENDOFSECTION-->
 
@@ -419,7 +421,7 @@ I firewall lato client possono influire sulla qualità delle chiamate e persino 
 
 ### <a name="wi-fi-drivers"></a>Driver Wi-Fi
 
-I driver Wi-Fi potrebbero essere problematici. Ad esempio, un driver potrebbe avere comportamenti di roaming molto aggressivi tra i punti di accesso in grado di indurre una commutazione di Access Point non necessaria, con una qualità di chiamata scadente. Un driver Wi-Fi con scarse prestazioni potrebbe essere scoperto attraverso una valutazione della qualità dell'esperienza (Vedi la [Guida alla revisione della qualità dell'esperienza](https://aka.ms/qerguide) per maggiori dettagli). È essenziale implementare un processo basato sulla qualità che monitora i nuovi driver Wi-Fi e assicura che siano testati prima di essere distribuiti nel popolamento generale degli utenti.
+I driver Wi-Fi potrebbero essere problematici. Ad esempio, un driver potrebbe avere comportamenti di roaming molto aggressivi tra i punti di accesso in grado di indurre una commutazione di Access Point non necessaria, con una qualità di chiamata scadente. Un driver Wi-Fi con prestazioni scarse potrebbe essere scoperto attraverso una valutazione della qualità dell'esperienza (vedere [migliorare e monitorare la qualità delle chiamate per i team](monitor-call-quality-qos.md) per maggiori dettagli). È essenziale implementare un processo basato sulla qualità che monitora i nuovi driver Wi-Fi e assicura che siano testati prima di essere distribuiti nel popolamento generale degli utenti.
 
 ### <a name="endpoint-management"></a>Gestione endpoint
 
@@ -445,7 +447,7 @@ Anche se sono state seguite le indicazioni precedenti, gli utenti dell'organizza
 |---|---|---|---|
 | Requisiti endpoint | Verificare che l'endpoint teams continui a soddisfare tutti i requisiti software per i team elencati in [ottenere client per Microsoft teams](get-clients.md). | Mensile | |
 | Firewall endpoint | Gestire le esclusioni appropriate nel firewall endpoint in base alle informazioni contenute negli [URL e negli intervalli di indirizzi IP di Office 365](https://aka.ms/o365ips). Il fornitore di terze parti avrà indicazioni specifiche su come mantenere le esclusioni. Sottoscrivere il [feed RSS](https://support.office.com/o365ip/rss) per ricevere automaticamente una notifica delle modifiche. | In base alle esigenze | |
-| Driver Wi-Fi | Testare e aggiornare i driver Wi-Fi nel PC. Convalidare i risultati usando Call Quality Dashboard ([Guida alla revisione della qualità dell'esperienza](https://aka.ms/qerguide)). | In base alle esigenze | |
+| Driver Wi-Fi | Testare e aggiornare i driver Wi-Fi nel PC. Convalidare i risultati usando Call Quality Dashboard ([migliorare e monitorare la qualità delle chiamate per i team](monitor-call-quality-qos.md)). | In base alle esigenze | |
 | Gestione endpoint | Gestire il catalogo di endpoint e dispositivi di interfaccia supportati, ad esempio auricolari. Gestire i contratti fornitore, la garanzia, la distribuzione, la sostituzione e i criteri di ripristino. | Mensile | |
 | Risoluzione dei problemi di endpoint | La risoluzione dei problemi può includere la verifica della connettività, l'elenco dei problemi noti, la raccolta del log, l'analisi e l'escalation del supporto Microsoft o di fornitori di terze parti. | In base alle esigenze | |
 

@@ -14,17 +14,17 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-description: Usare il report routing diretto PSTN di Call Quality dashboard per monitorare e risolvere i problemi di chiamata PSTN in Microsoft teams.
-ms.openlocfilehash: a3a7d84a21858b8cb2039f3f5bb6efde6b9adaaa
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+description: Usare il report di routing diretto PSTN di Microsoft teams Call Quality Dashboard (Call Quality Dashboard) per monitorare e risolvere i problemi di chiamate PSTN in Microsoft teams.
+ms.openlocfilehash: 0987ae30c9bb0b428a4d46bf036c2de938c555f0
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221750"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085342"
 ---
 # <a name="using-the-cqd-pstn-direct-routing-report"></a>Uso del report di routing diretto PSTN di Call Quality dashboard
 
-Novità di marzo 2020 è stato aggiunto un report di routing diretto PSTN di Call Quality Dashboard ai modelli di [query di Power bi scaricabili per Call Quality dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). 
+Novità di marzo 2020 è stato aggiunto un report di routing diretto PSTN di Microsoft teams Call Quality Dashboard (Call Quality Dashboard) ai [modelli di query di Power bi scaricabili per Call Quality dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). 
 
 
 Il report routing diretto PSTN di Call Quality Dashboard (Call Quality dashboard PSTN Direct routing report. PBIT) consente di comprendere i modelli di utilizzo e la qualità dei servizi PSTN. Questo report consente di monitorare l'utilizzo del servizio, le informazioni relative a session border controller (SBC), il servizio di telefonia, i parametri di rete e i dettagli del rapporto di efficacia della rete. Queste informazioni consentono di identificare i problemi, incluso il motivo per cui sono state eliminate le chiamate. Ad esempio, potrai vedere quando il volume scende o il numero di chiamate che vengono influenzate e per quale motivo.
@@ -146,3 +146,5 @@ Se viene visualizzato un picco su uno dei quattro grafici (latenza, jitter, tass
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Usare Power BI per analizzare i dati di Call Quality dashboard per Microsoft Teams](CQD-PSTN-report.md)
+
+[Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)

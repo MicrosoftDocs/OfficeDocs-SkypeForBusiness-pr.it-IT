@@ -2,11 +2,11 @@
 title: Criteri di conservazione in Microsoft Teams
 author: LanaChin
 ms.author: anwara
+ms.reviewer: prvijay
 manager: prvijay
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
-ms.reviewer: prvijay
 description: In questo articolo vengono illustrati i criteri di conservazione e come crearli e gestirli in Microsoft teams.
 localization_priority: Normal
 search.appverid: MET150
@@ -17,12 +17,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e091cc9c5d6f3ce55ea9e64473759afbd59df2c4
-ms.sourcegitcommit: a73df97a06ea860bfaf5387e0acbf3c724697e14
+ms.openlocfilehash: 5800e75e253ad5669b833a3302a04bbe2ac39763
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "44902271"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086152"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
@@ -59,15 +59,24 @@ Il requisito minimo di licenza per i criteri di conservazione è avere Office 36
 
 ## <a name="how-teams-retention-policies-work"></a>Come funzionano i criteri di conservazione di Teams
 
-Le chat di teams sono archiviate in una cartella nascosta-Teamschat-nella cassetta postale di ogni utente nella chat e i messaggi del canale di teams vengono archiviati in una cartella nascosta-Teamschat-nella cassetta postale del gruppo per un team. Teams usa un servizio di chat con tecnologia Azure che archivia anche questi dati e che, per impostazione predefinita, li memorizza per sempre. Con i criteri di conservazione di Teams, quando si eliminano dei dati, questi vengono eliminati definitivamente sia nelle cassette postali di Exchange che nel servizio di chat sottostante.
+Le chat di teams sono archiviate in una cartella nascosta (Teamschat) nella cassetta postale di ogni utente nella chat e i messaggi del canale di teams vengono archiviati in una cartella nascosta (Teamschat) nella cassetta postale del gruppo per un team. Teams usa un servizio di chat con tecnologia Azure che archivia anche questi dati e che, per impostazione predefinita, li memorizza per sempre. Con i criteri di conservazione di Teams, quando si eliminano dei dati, questi vengono eliminati definitivamente sia nelle cassette postali di Exchange che nel servizio di chat sottostante.
 
-Ecco cosa succede quando si applica un criterio di conservazione a messaggi di canali e chat di Teams:
+Ecco cosa succede quando si applica un criterio di **mantenimento della conservazione** a teams chat o Channel messages:
 
-- Se un messaggio della chat o del canale viene modificato o eliminato da un utente durante il periodo di conservazione, questo viene copiato (se è stato modificato) o spostato (se è stato eliminato) nella cartella SubstrateHolds e archiviato fino alla scadenza del periodo di conservazione. Se il criterio è configurato per l'eliminazione dei dati al termine del periodo di conservazione, i messaggi verranno eliminati definitivamente il giorno della scadenza di tale periodo.
-- Se il messaggio di una chat o un canale non viene eliminato da un utente durante il periodo di conservazione, viene spostato nella cartella SubstrateHolds entro un giorno dalla scadenza del periodo di conservazione. Se il criterio è configurato per l'eliminazione dei dati al termine del periodo di conservazione, il messaggio verrà eliminato definitivamente un giorno dopo lo spostamento nella cartella.
+- Se una chat o un messaggio di canale viene modificato o eliminato da un utente durante il periodo di conservazione, il messaggio viene copiato (se è stato modificato) o spostato (se è stato eliminato) nella cartella SubstrateHolds e archiviato fino alla scadenza del periodo di conservazione. Se il criterio è configurato per l'eliminazione dei dati al termine del periodo di conservazione, i messaggi verranno eliminati definitivamente il giorno della scadenza di tale periodo.
+- Se una chat o un messaggio di canale non viene eliminato da un utente durante il periodo di **conservazione** , il messaggio viene spostato nella cartella SubstrateHolds entro un giorno dopo la scadenza del periodo di conservazione. Se il criterio è configurato per l'eliminazione dei dati al termine del periodo di conservazione, il messaggio verrà eliminato definitivamente un giorno dopo lo spostamento nella cartella.
+
+Ecco cosa succede quando si applica un criterio di **eliminazione della conservazione** alle chat team e ai messaggi del canale.
+
+- Quando una chat o un messaggio di canale scade, ossia l'età del messaggio è più che consentita dalla **conservazione:** i criteri di eliminazione, un servizio di back-end, identificano i messaggi scaduti e li eliminano nello spazio di archiviazione back-end (cassetta postale dell'utente o del gruppo). 
+- Dopo l'eliminazione di un messaggio nello spazio di archiviazione back-end, viene attivato un processo per eliminare lo stesso messaggio nel servizio chat di Azure-Powered e nell'app Teams dell'utente. Per eliminare i messaggi nell'app teams, l'app deve essere connessa a Internet ed essere in stato di inattività (nessuna attività utente), in modo che il processo di eliminazione non interferisca con l'esperienza utente. Dato che un utente potrebbe avere più dispositivi, che potrebbero essere in diversi Stati, le eliminazioni di conservazione non verranno sincronizzate con questi dispositivi esattamente nello stesso momento.
+- Dopo aver completato l'eliminazione dei messaggi nello spazio di archiviazione back-end, questi messaggi smetteranno di essere visualizzati nei report di ricerca di conformità, ad esempio eDiscovery.
 
 > [!NOTE]
 > La stessa procedura viene applicata alle chat di interoperabilità di Skype for Business Online e Teams. Quando una chat di Skype for Business Online viene spostata in Teams, diventa un messaggio in un thread di chat di Teams e viene inserita nella cassetta postale appropriata. I criteri di conservazione di Teams elimineranno questi messaggi dal thread di Teams. Tuttavia, se la cronologia delle conversazioni è abilitata per Skype for Business Online e dal lato client di Skype for Business Online i messaggi sono stati salvati in una cassetta postale, i dati della chat non vengono gestiti dai criteri di conservazione di Teams.
+
+> [!NOTE]
+> L'eliminazione dei messaggi è permanente e irreversibile.
 
 I criteri di conservazione di Teams si basano sulla data di creazione dei messaggi della chat o del canale e sono retroattivi. In altre parole, se si creano criteri di conservazione per l'eliminazione di dati precedenti a 90 giorni, i dati di Teams creati più di 90 giorni fa verranno eliminati.
 
@@ -83,7 +92,7 @@ Ecco alcune considerazioni e limitazioni da tenere presenti quando si usano i cr
 
 - Teams non supporta impostazioni di conservazione avanzate, ad esempio la possibilità di applicare un criterio a contenuti che includono parole chiave o informazioni sensibili. Attualmente, i criteri di conservazione di Teams si applicano a tutti i contenuti di messaggi di chat e/o canali.
 
-- Un criterio di conservazione di teams attiverà un processo entro un giorno per eliminare i messaggi di chat e canali quando scade il periodo di conservazione. Tuttavia, potrebbero essere necessarie fino a tre o sette giorni per pulire questi messaggi e eliminarli definitivamente. Inoltre, i messaggi di chat e canali saranno disponibili per la ricerca tramite gli strumenti di eDiscovery tra il periodo successivo alla scadenza del periodo di conservazione e quello di eliminazione definitiva dei messaggi.
+- Un criterio di conservazione di teams attiverà un processo per eliminare i messaggi di chat e canali quando scadono questi messaggi (in base alla data di creazione del messaggio). Tuttavia, a seconda del carico del servizio, potrebbero essere necessarie fino a sette giorni per eliminare definitivamente i messaggi dall'app archiviazione e backup del backend. Questi messaggi saranno inoltre ricercabili con gli strumenti di conformità (eDiscovery, ricerca dell'utente finale) finché non vengono eliminati definitivamente dall'archivio back-end.
 
 ### <a name="multiple-retention-policies-and-the-principles-of-retention"></a>Più criteri di conservazione e i principi di conservazione
 

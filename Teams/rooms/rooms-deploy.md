@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni su come distribuire le sale di Microsoft teams, incluse le fasi di distribuzione.
-ms.openlocfilehash: cf5ba9614426c59412c53b7e0e9420ca09ef6267
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: ee8ff755674828b4a2635316227f9cc27189a110
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905408"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085962"
 ---
 # <a name="deployment-overview"></a>Panoramica della distribuzione
 
@@ -119,7 +119,7 @@ La pianificazione della configurazione e della distribuzione comprende le aree p
 
 Ogni dispositivo Microsoft teams Rooms richiede un account di risorse dedicato e univoco che deve essere abilitato sia per Microsoft teams che per Skype for business ed Exchange. Questo account deve avere una cassetta postale della sala ospitata in Exchange ed essere abilitata come sala riunioni nella distribuzione di teams o Skype for business. Sul lato Exchange l'elaborazione del calendario deve essere configurata in modo che il dispositivo possa accettare automaticamente le convocazioni di riunione in arrivo. Per altre informazioni sulla creazione di questi account, vedere [configurare gli account per Microsoft teams Rooms](rooms-configure-accounts.md). 
 
-**Suggerimento PRO** : rende i nomi visualizzati per questi account descrittivi e di facile comprensione. Questi sono i nomi che gli utenti vedranno durante la ricerca e l'aggiunta di sistemi Microsoft teams Rooms alle riunioni. Alcune organizzazioni usano il*nome della sala*del *sito*-Convenzione (*capacità massima della sala*)-RS, quindi ad esempio Curie, una sala riunioni di 12 persone a Londra, potrebbe avere il nome visualizzato Lon-Curie (12)-RS. 
+**Suggerimento PRO** : rende i nomi visualizzati per questi account descrittivi e di facile comprensione. Questi sono i nomi che gli utenti vedranno durante la ricerca e l'aggiunta di sistemi Microsoft teams Rooms alle riunioni. Alcune organizzazioni usano il nome della sala del *sito* - *Room Name*Convenzione (*capacità massima della sala*)-RS, quindi ad esempio Curie, una sala riunioni di 12 persone a Londra, potrebbe avere il nome visualizzato Lon-Curie (12)-RS. 
 
 |    |     |
 |-----------|------------|
@@ -138,7 +138,7 @@ Quando si pianifica di distribuire le sale di Microsoft teams, è possibile pren
 | Distribuire più di 50 dispositivi Microsoft teams rooms, distribuire dispositivi da più fornitori o richiedere agli agenti specifici dell'organizzazione come parte della distribuzione. | Usare una piattaforma di distribuzione e creazione di software basato su sequencer, ad esempio [Microsoft endpoint Configuration Manager](rooms-scale.md).  |
 
 
-**Suggerimento PRO** : ogni sala di Microsoft Teams deve avere un nome di computer valido e univoco nella rete. Molti sistemi di monitoraggio e avviso visualizzano il nome del computer come identificatore chiave, quindi è importante sviluppare una convenzione di denominazione per le distribuzioni di Microsoft teams Rooms che consente al personale di supporto di individuare facilmente le sale di Microsoft teams contrassegnate come che richiedono un'azione. Un esempio potrebbe essere l'uso di un modello di*Site*-*nome della sala* MTR-sito (MTR-Lon-Curie). 
+**Suggerimento PRO** : ogni sala di Microsoft Teams deve avere un nome di computer valido e univoco nella rete. Molti sistemi di monitoraggio e avviso visualizzano il nome del computer come identificatore chiave, quindi è importante sviluppare una convenzione di denominazione per le distribuzioni di Microsoft teams Rooms che consente al personale di supporto di individuare facilmente le sale di Microsoft teams contrassegnate come che richiedono un'azione. Un esempio potrebbe essere l'uso di un modello di nome della sala MTR-*sito* - *Room Name* (MTR-Lon-Curie). 
 
 Nell'ambito della distribuzione è anche necessario considerare la strategia per la gestione e la configurazione degli [account locali](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/clients-and-devices/skype-room-systems-v2-0#local-accounts) creati dal programma di installazione dell'applicazione Microsoft teams rooms.
 
@@ -188,7 +188,7 @@ Per altre informazioni su come usare il file di configurazione XML, vedere [gest
 
 Dopo la distribuzione del sistema Microsoft teams rooms, è consigliabile testarlo. Verificare che le funzionalità elencate nella [Guida di Microsoft teams Rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) stiano lavorando sul dispositivo distribuito. È consigliabile che il team di distribuzione verifichi che le sale di Microsoft teams accedano a Microsoft Operations Management Suite (se usato). È anche importante effettuare numerose chiamate di test e riunioni per verificare la qualità. Per altre informazioni, Vedi questo [elenco di controllo della distribuzione utile](console.md#microsoft-teams-rooms-deployment-checklist).
 
-Ti consigliamo di configurare i file di costruzione per Call Quality Dashboard (Call Quality Dashboard) come parte dei team generali o di Skype for business, di monitorare le tendenze della qualità e di impegnarti nel processo di revisione della qualità dell'esperienza. Per altre informazioni, vedi la [Guida alla revisione della qualità della prova](https://aka.ms/qerguide). 
+Ti consigliamo di configurare i file di costruzione per Call Quality Dashboard (Call Quality Dashboard) come parte dei team generali o di Skype for business, di monitorare le tendenze della qualità e di impegnarti nel processo di revisione della qualità dell'esperienza. Per altre informazioni, vedere [migliorare e monitorare la qualità delle chiamate per i team](../monitor-call-quality-qos.md). 
 
 ### <a name="asset-management"></a>Asset Management
 

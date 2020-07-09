@@ -15,19 +15,19 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-description: Usare i report di Power BI di utilizzo dei team per tenere traccia dell'utilizzo di Microsoft teams nell'organizzazione.
-ms.openlocfilehash: efca39a89eecdf9d603a81a07d8529147f87698a
-ms.sourcegitcommit: 4d376449a75928282373598647f2b82127909c4f
+description: Usare i report di Power BI per l'utilizzo dei team per accedere ai dati di Microsoft teams Call Quality Dashboard (Call Quality Dashboard) per tenere traccia dell'utilizzo di Microsoft teams nell'organizzazione.
+ms.openlocfilehash: bd1a95a683da881a78acb5d4849bba0ac55f4898
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2020
-ms.locfileid: "42978555"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085582"
 ---
 # <a name="view-microsoft-teams-utilization-in-power-bi-using-cqd-data"></a>Visualizzare l'utilizzo di Microsoft teams in Power BI usando i dati di Call Quality dashboard
 
 Novità di marzo 2020 è stato aggiunto un report di utilizzo dei team ai [modelli di query di Power bi scaricabili per Call Quality dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). 
 
-I nuovi report di utilizzo dei team consentono di vedere come (e quanto) gli utenti usano Microsoft teams. Questi report sono progettati per essere una posizione centralizzata che consente agli amministratori e alle aziende leader di accedere rapidamente a questi dati.
+I nuovi report di utilizzo dei team consentono di vedere come (e quanto) gli utenti usano Microsoft teams accedendo ai dati di Call Quality Dashboard (teams Call Quality Dashboard). Questi report sono progettati per essere una posizione centralizzata che consente agli amministratori e alle aziende leader di accedere rapidamente a questi dati.
 
 Il report utilizzo di Power BI di teams è costituito da due report principali: riepilogo delle **[chiamate](#call-count-summary-report)** e riepilogo dei **[minuti audio](#audio-minutes-summary-report)**. L' [uso quotidiano](#daily-usage), i [dettagli audio regionali](#regional-audio-details), i [Dettagli delle conferenze](#conference-details) e i report [degli elenchi di utenti](#user-list) entrano in gioco quando un utente sfrutta i rapporti di drill-down descritti nelle descrizioni seguenti.
 
@@ -51,7 +51,7 @@ La pagina principale (riepilogo Conteggio chiamate) fornisce immediatamente il n
   ![Screenshot: report sull'utilizzo di Teams](media/CQD-teams-utilization-report4.png)
 
 Nella sezione in basso a sinistra della pagina è disponibile una tabella che fornisce i valori totali per ogni tipo di elemento multimediale dello scorso anno. 
-    ![Screenshot: report](media/CQD-teams-utilization-report5.png) ![sull'utilizzo di teams screenshot: report sull'utilizzo di Teams](media/CQD-teams-utilization-report6.png)   
+    ![Screenshot: report sull'utilizzo di teams ](media/CQD-teams-utilization-report5.png) ![ screenshot: report sull'utilizzo di Teams](media/CQD-teams-utilization-report6.png)   
 
 A destra della tabella, un grafico a barre Mostra i client con la maggior parte dei casi (chiamate/flussi) per gli ultimi 30 giorni.
    ![Screenshot: report sull'utilizzo di Teams](media/CQD-teams-utilization-report7.png)
@@ -167,4 +167,6 @@ Nella tabella inferiore vengono fornite informazioni dettagliate sulle sessioni 
 [Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
 
 [Analisi delle chiamate e Dashboard Qualità della chiamata](difference-between-call-analytics-and-call-quality-dashboard.md)
+
+[Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)
  

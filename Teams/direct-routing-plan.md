@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 description: Informazioni su come Microsoft Phone System Direct routing consente di connettere un SBC (Session Border Controller) supportato dal cliente al sistema telefonico Microsoft.
-ms.openlocfilehash: 1d0dff52258cfae9776fde57b5a30ff60793b902
-ms.sourcegitcommit: 5895550d9d19a619d90af3381530ca3017e4b520
+ms.openlocfilehash: 71ef4cd96853bd11f1169fd10aa7519c3ea4a2ec
+ms.sourcegitcommit: a22a7b7e4bf556ee3e5e2e51c6f9f1c865a0724a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44799827"
+ms.lasthandoff: 07/08/2020
+ms.locfileid: "45083176"
 ---
 # <a name="plan-direct-routing"></a>Pianificare Instradamento diretto
 
@@ -219,6 +219,8 @@ Gli FQDN-sip.pstnhub.microsoft.com, sip2.pstnhub.microsoft.com e sip3.pstnhub.mi
 - 52.114.76.76 
 - 52.114.7.24 
 - 52.114.14.70
+- 52.114.16.74
+- 52.114.20.29
 
 È necessario aprire le porte per tutti questi indirizzi IP nel firewall per consentire il traffico in entrata e in uscita da e verso gli indirizzi per la segnalazione.  Se il firewall supporta i nomi DNS, il nome FQDN sip-all.pstnhub.microsoft.com si risolve in tutti questi indirizzi IP. 
 

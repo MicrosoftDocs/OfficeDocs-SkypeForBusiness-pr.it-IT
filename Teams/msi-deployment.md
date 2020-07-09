@@ -5,7 +5,7 @@ ms.author: v-lanac
 manager: serdars
 ms.topic: article
 ms.service: msteams
-ms.reviewer: rowille
+ms.reviewer: rafarhi, jhreddy
 audience: admin
 description: Usare Microsoft endpoint Configuration Manager per distribuire in blocco Microsoft teams per selezionare utenti o computer.
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6f4d29790994ba155984077ea9046fc6cf097302
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: ae096b52a6934ed4a59fbd7d8ec20fba3a6baa47
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43902811"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45088194"
 ---
 # <a name="install-microsoft-teams-using-microsoft-endpoint-configuration-manager"></a>Installare Microsoft Teams usando Microsoft Endpoint Configuration Manager
 
@@ -85,7 +85,7 @@ Se un utente disinstalla teams dal proprio profilo utente, il programma di insta
 > I passaggi successivi contengono informazioni su come modificare il registro di sistema. Verificare di eseguire il backup del registro di sistema prima di modificarlo e di sapere come ripristinare il registro di sistema, se si verifica un problema. Per altre informazioni su come eseguire il backup, ripristinare e modificare il registro di sistema, vedere [informazioni sul Registro di sistema di Windows per utenti avanzati](https://support.microsoft.com/help/256986).
 
 1. Disinstallare l'app teams installata per ogni profilo utente. Per altre informazioni, vedere [disinstallare Microsoft teams](https://support.office.com/article/uninstall-microsoft-teams-3b159754-3c26-4952-abe7-57d27f5f4c81#ID0EAABAAA=Desktop).
-2. Eliminare la directory in modo ricorsivo in `%localappdata%\Microsoft\Teams\`.
+2. Eliminare la directory in modo ricorsivo in `%localappdata%\Microsoft\Teams\` .
 3. Eliminare il `HKEY_CURRENT_USER\Software\Microsoft\Office\Teams\PreventInstallationFromMsi` valore del registro di sistema.
 4. Redistribuire il pacchetto MSI su quel particolare computer.
 

@@ -19,14 +19,16 @@ f1.keywords:
 ms.custom:
 - PowerShell
 description: Usa Windows PowerShell e i cmdlet Get-CsTenant e Get-CsTenantLicensingConfiguration per ottenere informazioni sul tenant di Skype for business online.
-ms.openlocfilehash: e4765fbbe8c705300bb93c09651034e080a8132e
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: 06597447edaf095be3df26b58e6210bb919ee0bd
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42010619"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085692"
 ---
 # <a name="manage-skype-for-business-online-organizations"></a>Gestire le organizzazioni di Skype for business online
+> [!NOTE]
+> La [versione di anteprima pubblica di PowerShell per Teams](https://www.powershellgallery.com/packages/MicrosoftTeams/) più recente è integrata con Skype for Business Online Connector, che fornisce un singolo modulo per la gestione di PowerShell per Teams.
 
 Puoi trovare informazioni sul tenant di Skype for business online usando i cmdlet **Get-CsTenant** e **Get-CsTenantLicensingConfiguration** .
   

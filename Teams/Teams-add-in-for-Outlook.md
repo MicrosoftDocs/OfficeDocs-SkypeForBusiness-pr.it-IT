@@ -18,11 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 877ebf8041b52e6522dc55a053e0465d4aa6a48d
-ms.sourcegitcommit: ac36d3923095a4321dad14fdf23c98358affd10c
+ms.openlocfilehash: 0e9111f54bc3f94c028c8ddc8549e1202326df4f
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049413"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085242"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -175,3 +176,6 @@ Se il componente aggiuntivo non viene ancora visualizzato, eseguire la procedura
 Se l'amministratore ha configurato Microsoft Exchange per [controllare l'accesso a Exchange Web Server (EWS)](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange), un eventuale delegato non potrà pianificare una riunione di Teams per conto del suo superiore. La soluzione per questa configurazione è in fase di sviluppo e verrà rilasciata in futuro. Come soluzione alternativa, l'amministratore può aggiungere la stringa seguente all'elenco Consenti EWS: "*SchedulingService*". 
 
 
+## <a name="related-topics"></a>Argomenti correlati
+
+[Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)

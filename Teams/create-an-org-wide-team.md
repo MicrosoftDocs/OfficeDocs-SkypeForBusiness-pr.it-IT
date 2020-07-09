@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a87ee4f846002537311fc5a9a9dd2e5f22757b0e
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: 222daeb76d24186078ac6a49581dbfb05f1711bd
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868123"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086223"
 ---
 # <a name="create-an-org-wide-team-in-microsoft-teams"></a>Creare un team a livello di organizzazione in Microsoft Teams
 
@@ -32,7 +32,7 @@ Con i team a livello di organizzazione, gli amministratori globali possono crear
 
 ![Screenshot dell'opzione per la creazione di un team a livello di organizzazione](media/create-org-wide-team.png "Screenshot dell'opzione per la creazione di un team a livello di organizzazione")
 
-Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a Teams, gli viene assegnata una licenza di valutazione Microsoft Teams Commercial Cloud Trial. Per altre informazioni sulla licenza di valutazione, vedere [Gestire l'offerta Microsoft Teams Commercial Cloud Trial](iw-trial-teams.md). 
+Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a teams, all'utente viene assegnata una licenza esplorativa Microsoft teams. Per ulteriori informazioni sulla licenza esplorativa, vedere [gestire la licenza esplorativa Microsoft teams](teams-exploratory.md). 
 
 Questi tipi di account non verranno aggiunti al team a livello di organizzazione:
 

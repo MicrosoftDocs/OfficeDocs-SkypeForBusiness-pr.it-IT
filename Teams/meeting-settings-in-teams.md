@@ -21,12 +21,12 @@ ms.custom:
 ms.collection:
 - M365-collaboration
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 761504400639c8ed53c617f6c816dd7c4703a530
-ms.sourcegitcommit: ef3cd762e799df43bdcde03363c501d7ca9bb6b3
+ms.openlocfilehash: 1d7aed894724a09f1b3cc352ef3e280cf3ead310
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44489138"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086162"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -83,10 +83,10 @@ Con la partecipazione anonima, chiunque può partecipare alla riunione come uten
 
 <a name="bknetwork"> </a>
 
-Se si usa la Qualità del servizio [(QoS)](qos-in-teams.md) per assegnare la priorità al traffico di rete, è possibile abilitare gli indicatori QoS e impostare gli intervalli di porte per ogni tipo di traffico multimediale. L’impostazione dell'intervallo di porte per diversi tipi di traffico è un unico passaggio per gestire i contenuti multimediali in tempo reale; per altre informazioni, vedere [Qualità del servizio (QoS) in Teams](qos-in-teams.md).
+Se si usa la qualità del servizio (QoS) per dare priorità al traffico di rete, è possibile abilitare i marcatori QoS e impostare gli intervalli di porta per ogni tipo di traffico multimediale. L’impostazione dell'intervallo di porte per diversi tipi di traffico è un unico passaggio per gestire i contenuti multimediali in tempo reale; per altre informazioni, vedere [Qualità del servizio (QoS) in Teams](qos-in-teams.md).
 
 > [!IMPORTANT]
-> Se si attiva la Qualità del servizio (QoS) o si modificano le impostazioni nell'interfaccia di amministrazione di Microsoft Teams per il servizio di Microsoft Teams, è anche necessario [applicare le impostazioni di corrispondenza a tutti i dispositivi degli utenti](QoS-in-Teams-clients.md) e a tutti i dispositivi di rete interni per implementare completamente le modifiche apportate alla Qualità del servizio (QoS) in Teams.
+> Se si Abilita la QoS o si modificano le impostazioni nell'interfaccia di amministrazione di Microsoft teams per il servizio teams, sarà necessario [applicare anche le impostazioni di corrispondenza a tutti i dispositivi utente](QoS-in-Teams-clients.md) e a tutti i dispositivi di rete interni per implementare completamente le modifiche apportate al QoS in teams.
 
  ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
 1. Accedere all'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a>.

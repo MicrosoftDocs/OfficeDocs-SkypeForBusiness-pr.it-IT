@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come sviluppare ed eseguire la manutenzione e le operazioni in corso per verificare che i sistemi Microsoft teams Rooms siano disponibili per gli utenti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6b63e42e1f3fa3d5540936d562aa913837103ed1
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: bd1b552e9a59ee36856d23478a7e414637976889
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905368"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085952"
 ---
 # <a name="management-overview"></a>Panoramica della gestione
 
@@ -42,7 +42,7 @@ Le informazioni sullo stato dell'applicazione Microsoft teams Rooms e delle peri
 |**Impostazione**|**Permette**|
 |:-----|:-----|
 |HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon AutoAdminLogon = (DWORD) 1  <br/> |Consente l'avvio delle sale di Microsoft Teams  <br/> |
-|Power Management-\> in AC, disattivare lo schermo dopo 10 minuti  <br/> Power Management-\> su AC, non posizionare mai il sistema in modalità Sleep  <br/> |Consente alle sale di Microsoft teams di disattivare i display allegati e di riattivarsi automaticamente  <br/> |
+|Power Management- \> in AC, disattivare lo schermo dopo 10 minuti  <br/> Power Management- \> su AC, non posizionare mai il sistema in modalità Sleep  <br/> |Consente alle sale di Microsoft teams di disattivare i display allegati e di riattivarsi automaticamente  <br/> |
 |NET account/maxpwage: illimitato  <br/> O un mezzo equivalente per disabilitare la scadenza della password per l'account locale. La mancata esecuzione di questa operazione causerà l'errore di accesso dell'account Skype che lamenta una password scaduta. Tieni presente che questo ha un impatto su tutti gli account locali nel computer e quindi la mancata impostazione di questa operazione causerà anche l'eventuale scadenza dell'account amministrativo nella casella.  <br/> |Consente all'account Skype di accedere sempre  <br/> |
 
 Il trasferimento di file tramite criteri di gruppo è illustrato in [configurare un elemento del file](https://technet.microsoft.com/library/cc772536%28v=ws.11%29.aspx).
@@ -65,7 +65,7 @@ Ti consigliamo di implementare procedure di monitoraggio della qualità e affida
 
 Quando si caricano le informazioni sull'edificio in Call Quality dashboard, è possibile esaminare le tendenze per la qualità delle chiamate e l'affidabilità in base a un livello per edificio, che consente di confrontare facilmente gli edifici e di attirare l'attenzione su problemi specifici.
 
-Ti consigliamo di rivedere e seguire la [Guida alla revisione della qualità dell'esperienza](https://aka.ms/qerguide) per identificare le tendenze di qualità e affidabilità e creare un piano di azione per risolverli. 
+Ti consigliamo di rivedere e seguire [migliorare e monitorare la qualità delle chiamate per i team](../monitor-call-quality-qos.md) per identificare le tendenze di qualità e affidabilità e creare un piano di azione per risolverli. 
 
 ## <a name="updating-the-microsoft-teams-rooms-os-and-microsoft-teams-rooms-application"></a>Aggiornamento del sistema operativo Microsoft teams Rooms e dell'applicazione Microsoft teams rooms
 

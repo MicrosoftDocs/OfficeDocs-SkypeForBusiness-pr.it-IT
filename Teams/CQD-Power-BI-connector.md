@@ -14,17 +14,17 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-description: Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
-ms.openlocfilehash: eb7d2bf412308b017f2583436dd792d64a084b20
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+description: Installare il connettore di Power BI per usare i modelli di query di Call Quality Dashboard (Call Quality Dashboard)
+ms.openlocfilehash: d474ad6e3f10b0aefaafcd06bb17a5959b65846d
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44690932"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085572"
 ---
 # <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
 
-Prima di poter usare i modelli di query di Power BI per Call Quality Dashboard (file PBIX), è necessario installare il connettore Power BI per Microsoft Call Quality dashboard, usando il file *MicrosoftCallQuality. PQX* incluso nel [download](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). 
+Prima di poter usare i modelli di query di Power BI (file PBIX) per Microsoft teams Call Quality Dashboard (Call Quality Dashboard), è necessario installare il connettore Power BI per Microsoft Call Quality dashboard, usando il file *MicrosoftCallQuality. PQX* incluso nel [download](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). 
 
 Leggere [usare Power BI per analizzare i dati di Call Quality dashboard per i team](CQD-Power-BI-query-templates.md) per informazioni su questi modelli.
 

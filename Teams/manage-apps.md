@@ -17,11 +17,12 @@ description: Informazioni su come gestire le app teams nella pagina Manage Apps 
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: bd793cc4ec6cbd27180e3babeb69c7fdc5e98ce4
-ms.sourcegitcommit: 2467ece95e100a3a3cc2be3538d8eb7d878b3663
+ms.openlocfilehash: 1aa72a1720139324f53168c36f1d27a12b5cf5bb
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45042928"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45086213"
 ---
 <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia di amministrazione di Microsoft Teams
 ======================================================
@@ -31,6 +32,9 @@ Come amministratore, la pagina **Gestisci app** nell'interfaccia di amministrazi
 La pagina **Gestisci app** consente di visualizzare tutte le app disponibili nel catalogo del tenant, fornendo le informazioni necessarie per decidere quali app consentire o bloccare in tutta l'organizzazione. Puoi quindi usare i [criteri di autorizzazione](teams-app-permission-policies.md)per le app, i [criteri di configurazione delle app](teams-app-setup-policies.md)e i [criteri e le impostazioni delle app personalizzate](teams-custom-app-policies-and-settings.md) per configurare l'esperienza dell'app per utenti specifici dell'organizzazione.
 
 Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alle **app teams**  >  **Manage Apps**. Per accedere alla pagina è necessario essere un amministratore globale o un servizio di teams.
+
+> [!NOTE]
+> La pagina **Gestisci app** non è ancora disponibile nelle distribuzioni di team di Microsoft 365 Government community Cloud (GCC).
 
 ## <a name="view-apps-in-your-tenant-app-catalog"></a>Visualizzare le app nel catalogo dell'app tenant
 
@@ -77,7 +81,7 @@ Quando blocchi o Consenti un'app nella pagina **Gestisci** app, questa app è bl
 Usa le impostazioni dell'app a livello di organizzazione per controllare se gli utenti possono installare app di terze parti e se gli utenti possono caricare o interagire con app personalizzate nella tua azienda. Le impostazioni dell'app a livello di organizzazione regolano il comportamento per tutti gli utenti ed eseguono l'override di qualsiasi altro criterio di autorizzazione dell'app assegnato agli utenti. Puoi usarle per controllare le app malevole o problematiche.
 
 > [!NOTE]
-> La pagina **Gestisci app** non è ancora disponibile in Microsoft 365 Government-distribuzioni GCC di teams.  Per informazioni su come usare le impostazioni dell'app a livello di organizzazione per abilitare o disabilitare le app di terze parti, vedere [gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
+> Per informazioni su come usare le impostazioni dell'app a livello di organizzazione in Microsoft 365 Government-distribuzioni di GCC per i team, vedere [gestire i criteri di autorizzazione delle app in teams](teams-app-permission-policies.md).
 
 1. Nella pagina **Manage Apps** selezionare **impostazioni dell'app a livello di organizzazione**. È quindi possibile configurare le impostazioni desiderate nel pannello.
 

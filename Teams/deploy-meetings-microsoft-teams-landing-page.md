@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 01f57601e7dbf59286c5a92a45b09f835b21c131
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 689a66eea93d71c6b083bfd370ba1c73b6a28245
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691302"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085802"
 ---
 # <a name="meetings-and-conferencing-in-microsoft-teams"></a>Riunioni e conferenze in Microsoft Teams
 

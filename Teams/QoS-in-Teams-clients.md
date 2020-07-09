@@ -1,14 +1,13 @@
 ---
-title: Implementare la qualità del servizio nei client di Teams
+title: Implementare la qualità del servizio (QoS) nei client di Microsoft Teams
 author: lolajacobsen
 ms.author: lolaj
 manager: Serdars
-ms.date: 2/17/2019
 ms.topic: article
 ms.service: msteams
-ms.reviewer: rowille
+ms.reviewer: vkorlep, siunies
 audience: admin
-description: Informazioni su come preparare la rete per l'organizzazione per la qualità del servizio (QoS) in Microsoft teams.
+description: Informazioni su come usare la qualità del servizio (QoS) per ottimizzare il traffico di rete per il client desktop di Microsoft teams.
 ms.custom: seo-marvel-mar2020
 localization_priority: Normal
 search.appverid: MET150
@@ -18,16 +17,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 81c10ce415c0ed0db670a81b896289b23cb39218
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 80b9257abbbb873b30367f9d430e9a8d155cda09
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904561"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085532"
 ---
-# <a name="set-qos-on-windows-clients"></a>Configurare QoS nei client di Windows
+# <a name="implement-quality-of-service-qos-in-microsoft-teams-clients"></a>Implementare la qualità del servizio (QoS) nei client di Microsoft Teams
 
-È possibile usare il QoS basato su criteri all'interno di criteri di gruppo per impostare l'intervallo della porta di origine per il valore DSCP predefinito nel client teams. Gli intervalli di porte specificati nella tabella seguente sono un punto di partenza per creare un criterio per ogni carico di lavoro.
+È possibile usare la qualità del servizio (QoS) basata sui criteri in criteri di gruppo per impostare l'intervallo di porta di origine per il valore DSCP predefinito nel client teams. Gli intervalli di porte specificati nella tabella seguente sono un punto di partenza per creare un criterio per ogni carico di lavoro.
 
 *Tabella 1. Intervalli di porte iniziali consigliati*
 
@@ -54,7 +53,7 @@ Per creare criteri audio QoS per i computer Windows 10 aggiunti al dominio, acce
 
 1. Nella pagina di apertura della finestra di dialogo **QoS basata sui criteri** Digitare un nome per il nuovo criterio nella casella **nome** . Selezionare **Specifica valore DSCP** e impostare il valore su **46**. Lascia **specificare la frequenza di accelerazione in uscita** deselezionata e quindi fare clic su **Avanti**.
 
-1. Nella pagina successiva selezionare **solo le applicazioni con il nome del file eseguibile** e immettere il nome **Teams. exe**e quindi fare clic su **Avanti**. Questa impostazione indica al criterio di assegnare priorità solo al traffico corrispondente dal client teams.
+1. Nella pagina successiva selezionare solo le **applicazioni con il nome del file eseguibile** e immettere il nome **Teams.exe**e quindi fare clic su **Avanti**. Questa impostazione indica al criterio di assegnare priorità solo al traffico corrispondente dal client teams.
 
 1. Nella terza pagina verificare che sia selezionato l'indirizzo IP di **origine** e **qualsiasi indirizzo IP di destinazione** e quindi fare clic su **Avanti**. Queste due impostazioni assicurano che i pacchetti vengano gestiti indipendentemente da quale computer (indirizzo IP) ha inviato i pacchetti e quale computer (indirizzo IP) riceverà i pacchetti.
 
@@ -86,9 +85,9 @@ Per verificare che i valori dell'oggetto Criteri di gruppo siano stati impostati
    gpresult /R > gp.txt
    ```
 
-   Questo genererà un report degli oggetti Criteri di stato applicati e lo invierà a un file di testo denominato *GP. txt*.
+   Questo genererà un report degli oggetti Criteri di stato applicati e lo invierà a un file di testo denominato *gp.txt*.
 
-   Per un report HTML più leggibile denominato *GP. html*, immettere il comando seguente:
+   Per un report HTML più leggibile denominato *gp.html*, immettere il comando seguente:
 
    ```console
    gpresult /H gp.html
@@ -98,7 +97,7 @@ Per verificare che i valori dell'oggetto Criteri di gruppo siano stati impostati
 
 1. Aprire l'editor del registro di sistema e andare a
 
-   Criteri\_\\di\_Microsoft\\\\Windows\\\\QoS di HKEY local machine software
+   \_Criteri di \_ \\ \\ \\ Microsoft \\ Windows \\ QoS di HKEY local machine software
 
    Verificare i valori delle voci del registro di sistema elencate nella tabella 2.
 
@@ -106,7 +105,7 @@ Per verificare che i valori dell'oggetto Criteri di gruppo siano stati impostati
 
    |          Nome          |  Tipo  |    Dati     |
    |         :---:          | :---:  |    :---:    |
-   |    Nome applicazione    | REG_SZ |  Teams. exe  |
+   |    Nome applicazione    | REG_SZ |  Teams.exe  |
    |       Valore DSCP       | REG_SZ |     46      |
    |        IP locale        | REG_SZ |     \*      |
    | Lunghezza prefisso IP locale | REG_SZ |     \*      |
@@ -119,3 +118,8 @@ Per verificare che i valori dell'oggetto Criteri di gruppo siano stati impostati
    | | | |
 
 1. Verificare che il valore per la voce nome applicazione sia corretto per il client in uso e verificare che sia il valore DSCP che le voci della porta locale riflettano le impostazioni nell'oggetto Criteri di gruppo.
+
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Implementare la qualità del servizio (QoS) in teams](QoS-in-Teams.md)

@@ -16,12 +16,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2439a2fd23566c93fb60772112da098cff315760
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 28a89502a628c3cc9dcdf2c910371bb37568f194
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665168"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085172"
 ---
 # <a name="enable-microsoft-365-or-office-365"></a>Abilitare Microsoft 365 o Office 365
  
@@ -36,4 +36,4 @@ ms.locfileid: "44665168"
 | 7  | Confermare gli amministratori del tenant | Collaborare con i team di sicurezza per sviluppare un modello di amministrazione di Microsoft 365 o Office 365. <br/><br/>Assicurarsi di identificare e documentare tutti gli amministratori del tenant e del servizio. | | [Informazioni sui ruoli di amministratore di Microsoft 365 o Office 365](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d) |
 | 8  | Implementare ruoli amministrativi per il tenant | Verificare che il modello di amministrazione soddisfi le esigenze dell'organizzazione e assegnare i ruoli di amministratore di Microsoft 365 o Office 365 agli amministratori. | | [Assegnare ruoli di amministratore in Microsoft 365 o Office 365 for business](https://support.office.com/article/Assign-admin-roles-in-Office-365-for-business-eac4d046-1afd-4f1a-85fc-8219c79e1504) |
 | 9  | Accedere al dashboard qualità chiamata (Call Quality Dashboard) caricare le informazioni sull'edificio. | Ogni distribuzione di teams dovrebbe sfruttare la Call Quality dashboard per ottenere informazioni dettagliate sulla qualità e l'affidabilità di tutte le chiamate che usano team. <br><br>Usare le linee guida Call Quality dashboard elencate nella colonna **altre informazioni** per trarre il massimo vantaggio da questo strumento. | | [Pianificazione per la gestione e la qualità dei servizi](https://docs.microsoft.com/MicrosoftTeams/prepare-network) <br/><br/>[Guida alla revisione dell'esperienza di qualità](https://aka.ms/qerguide) <br/><br/>[Modelli di revisione dell'esperienza di qualità](https://aka.ms/qertemplates) <br/><br/>[Attivazione e utilizzo di Call Quality dashboard per Microsoft teams e Skype for business online](https://support.office.com/article/Turning-on-and-using-Call-Quality-Dashboard-for-Microsoft-Teams-and-Skype-for-Business-Online-553fa13c-92d2-4d5c-a3d5-41a073cb047c)<br><br>[Caricare informazioni sulle costruzioni](https://docs.microsoft.com/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard?#upload-building-information) |
-| 10  | Verificare che le informazioni sull'edificio vengano elaborate e Call Quality Dashboard (Call Quality Dashboard) sia accessibile per il tenant. | | | [Dashboard qualità delle chiamate](https://cqd.lync.com) |
+| 10  | Verificare che le informazioni sull'edificio vengano elaborate e Call Quality Dashboard (Call Quality Dashboard) sia accessibile per il tenant. | | | [Dashboard qualità delle chiamate](https://cqd.teams.microsoft.com) |

@@ -1,10 +1,10 @@
 ---
-title: Dimensioni e misure-dashboard qualità chiamata
+title: Dimensioni e misure-dashboard qualità chiamata (Call Quality Dashboard)
 ms.author: lolaj
 author: LolaJacobsen
 manager: serdars
 ms.reviewer: siunies, mikedav, gageames
-ms.topic: conceptual
+ms.topic: article
 ms.assetid: e97aeeee-9e43-416f-b433-9cdd63d8874b
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -21,17 +21,17 @@ f1.keywords:
 ms.custom:
 - Reporting
 - seo-marvel-mar2020
-description: Ottenere informazioni dettagliate sulle dimensioni e sulle misure usate dal dashboard qualità chiamata per Microsoft teams e Skype for business online.
-ms.openlocfilehash: 09beeb289b2861ff239e52a136b604bc8d58fa8f
-ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
+description: Ottenere informazioni dettagliate sulle dimensioni e sulle misure usate dal dashboard qualità chiamata (Call Quality Dashboard) per Microsoft teams e Skype for business online.
+ms.openlocfilehash: 1b5be1cc988a1999bee05aba04b0f27c9127bd54
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44938515"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085782"
 ---
-# <a name="dimensions-and-measurements-available-in-call-quality-dashboard"></a>Dimensioni e misure disponibili nel dashboard qualità chiamata
+# <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili nel dashboard qualità chiamata (Call Quality Dashboard)
 
-Il dashboard qualità chiamata (Call Quality Dashboard) per Microsoft teams e Skype for business online ti permette di comprendere meglio la qualità delle chiamate effettuate con questi servizi. Questo argomento fornisce informazioni dettagliate sulle dimensioni e le misure visibili tramite Call Quality dashboard. Per altre informazioni su Call Quality dashboard, vedere [attivazione e utilizzo di Call Quality dashboard per Microsoft teams e Skype for business online](turning-on-and-using-call-quality-dashboard.md).
+Il dashboard qualità chiamata (Call Quality Dashboard) per Microsoft teams e Skype for business online ti permette di comprendere meglio la qualità delle chiamate effettuate con questi servizi. Questo argomento fornisce informazioni dettagliate sulle dimensioni e le misure visibili tramite Call Quality dashboard. Per altre informazioni su Call Quality dashboard, vedere [usare Call Quality dashboard per gestire la qualità delle chiamate e delle riunioni in Microsoft teams](quality-of-experience-review-guide.md).
 
 ## <a name="first-and-second-endpoint-classification"></a>Classificazione del primo e secondo endpoint
 
@@ -170,7 +170,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | First User Agent  | Stringa  | Stringa agente utente del primo endpoint. <br/> **Valore di esempio:** UCCAPI/16.0.7766.5281 OC/16.0.7766.2047 (Skype for business) | &bull;Nessun agente utente segnalato dal primo endpoint   |
 | Second User Agent  | Stringa  | Stringa agente utente del secondo endpoint. <br/> **Valore di esempio:** UCCAPI/16.0.7766.5281 OC/16.0.7766.2047 (Skype for business) | &bull;Nessun agente utente è stato segnalato dal secondo endpoint   |
 | Conference Type  | Enumerazione <br/>**Valori possibili:** <br/>&bull;conf: ApplicationSharing <br/>&bull;conf: audio-video <br/>&bull;conf: stato attiva | URI del tipo di conferenza.  <br/> **Valore di esempio:** conf: audio-video | &bull;Scenario non congressuale.   |
-| ID conferenza  | Stringa | ID conferenza (o ID chiamata) associato ai flussi. In cqd.teams.microsoft.com tutte le chiamate hanno un ID chiamata, indipendentemente dal fatto che si tratti di una chiamata da persona a persona (P2P) o di una conferenza telefonica. In cqd.lync.com questo valore è solo avialble per le conferenze telefoniche Skype for business.  Questa dimensione può contenere un numero eccessivo di righe da usare come dimensione in un report. Può invece essere usata come filtro.  <br/> **Valore di esempio (CQD.Lync.com):** 0001P6GK <br/> **Valore di esempio (CQD.teams.Microsoft.com):** 5a962ccf-b9cb-436A-A433-f28bf5404ad8  | |
+| ID conferenza  | Stringa | ID conferenza (o ID chiamata) associato ai flussi. In cqd.teams.microsoft.com tutte le chiamate hanno un ID chiamata, indipendentemente dal fatto che si tratti di una chiamata da persona a persona (P2P) o di una conferenza telefonica. In cqd.lync.com questo valore è disponibile solo per le conferenze telefoniche Skype for business.  Questa dimensione può contenere un numero eccessivo di righe da usare come dimensione in un report. Può invece essere usata come filtro.  <br/> **Valore di esempio (CQD.Lync.com):** 0001P6GK <br/> **Valore di esempio (CQD.teams.Microsoft.com):** 5a962ccf-b9cb-436A-A433-f28bf5404ad8  | |
 | First Client App Version  | Stringa  | Version of the application used for the first endpoint. Data is parsed from the user agent string. <br/> **Valore di esempio:** 16.0.7766.2047 | &bull;Non è stato possibile analizzare la stringa della versione <br/>&bull;Il valore non è stato segnalato.   |
 | Second Client App Version  | Stringa  | Version of the application used for the second endpoint. Data is parsed from the user agent string. <br/> **Valore di esempio:** 16.0.7766.2047 | &bull;Non è stato possibile analizzare la stringa della versione <br/>&bull;Il valore non è stato segnalato. |
 |ID riunione (in cqd.teams.microsoft.com) <br/> ID conferenza (in cqd.lync.com) |Stringa |Identificatore della riunione, generato al momento della creazione della riunione. <br/> **Valore di esempio (Skype for business):** 0001P6GK  <br/> **Valore di esempio (Teams):** 19: meeting_MzB... zIw@thread. V2| |
@@ -701,9 +701,18 @@ Molti valori di dimensione e misura possono essere usati anche come filtri. È p
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Configurazione di Skype for Business Call Analytics](set-up-call-analytics.md)
+[Migliorare e monitorare la qualità delle chiamate per i team](monitor-call-quality-qos.md)
 
-[Uso di Call Analytics per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+[Che cos'è Call Quality dashboard?](CQD-what-is-call-quality-dashboard.md)
 
-[Analisi delle chiamate e Dashboard Qualità della chiamata](difference-between-call-analytics-and-call-quality-dashboard.md)
- 
+[Configurare il dashboard sulla qualità delle chiamate (Call Quality Dashboard)](turning-on-and-using-call-quality-dashboard.md)
+
+[Caricare i dati del tenant e della creazione](CQD-upload-tenant-building-data.md)
+
+[Dati e report di Call Quality dashboard](CQD-data-and-reports.md)
+
+[Usare Call Quality dashboard per gestire la qualità delle chiamate e delle riunioni](quality-of-experience-review-guide.md)
+
+[Classificazione del flusso in Call Quality dashboard](stream-classification-in-call-quality-dashboard.md)
+
+[Usare Power BI per analizzare i dati di Call Quality dashboard](CQD-Power-BI-query-templates.md)

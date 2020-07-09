@@ -22,17 +22,20 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bace73e411970ee1b907890b08a5e501daf90e50
-ms.sourcegitcommit: d8e05e66311725f8ff6d28011355129baeb305b3
+ms.openlocfilehash: 1b32e9db020b3498e8185b4d38e25d1d9a1feca5
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "44539643"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085292"
 ---
 <a name="add-and-update-reporting-labels"></a>Aggiungere e aggiornare etichette di reporting
 ============================
 
-Le etichette dei report vengono usate nell'organizzazione per indicare le posizioni fisiche di uffici, edifici o siti organizzativi. La pagina delle etichette dei report nell'interfaccia di amministrazione di Microsoft teams consente di specificare un file di testo (CSV o TSV) contenente un elenco di percorsi fisici e le subnet di rete associate. Questo file viene usato da Call Analytics e Call Quality dashboard per la generazione di report. Quando si carica il mapping della subnet, i report forniti da questi servizi conterranno anche i nomi della posizione, semplificando la comprensione e l'uso dei report per risolvere eventuali problemi potenziali.
+Le etichette dei report vengono usate nell'organizzazione per indicare le posizioni fisiche di uffici, edifici o siti organizzativi. La pagina delle etichette dei report nell'interfaccia di amministrazione di Microsoft teams consente di specificare un file di testo (CSV o TSV) contenente un elenco di percorsi fisici e le subnet di rete associate. Questo file viene usato dall'analisi delle chiamate per la generazione di report. Quando si carica il mapping della subnet, i report forniti da questi servizi conterranno anche i nomi della posizione, semplificando la comprensione e l'uso dei report per risolvere eventuali problemi potenziali.
+
+> [!IMPORTANT]
+> Le etichette di segnalazione che si caricano verranno gestite come *dati di supporto* sotto il contratto per Office 365, incluse le informazioni che altrimenti verrebbero considerate dati *dei clienti* o *dati personali*. Non includere dati che non si desidera concedere a Microsoft come dati di *supporto*, poiché queste informazioni saranno visibili agli ingegneri Microsoft per scopi di supporto.
 
 Le etichette dei report e i dati relativi alle posizioni che fornisci sono una singola struttura di dati, attualmente non è disponibile alcuna interfaccia per apportare singole modifiche ai dati.
 
@@ -57,7 +60,7 @@ Usare l'esempio seguente per creare il file di dati.
 |10.0.131.0    |SVC-1|32|USCAMTV001|Contoso leased ri&F|Office|RI&F|Visualizzazione Mountain|94043|NOI|CA|NOI|1|1|
 |10.0.132.0    |SVC-1|32|USCAMTV001|Contoso leased ri&F|Office|RI&F|Visualizzazione Mountain|94043|NOI|CA|NOI|1|1|
 
-Per altre informazioni sulla formattazione del file di dati, vedere [formato di file di dati tenant e struttura del file di dati dell'edificio](turning-on-and-using-call-quality-dashboard.md#tenant-data-file-format-and-structure).
+Per altre informazioni sulla formattazione del file di dati, vedere [formato di file di dati tenant e struttura del file di dati dell'edificio](CQD-upload-tenant-building-data.md#upload-building-data-file).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

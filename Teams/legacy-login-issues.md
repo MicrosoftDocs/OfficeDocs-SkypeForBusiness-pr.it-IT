@@ -17,12 +17,12 @@ description: Risolvere i problemi relativi alla ricezione dei messaggi e alle ch
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 52038470e81b825391e4176c07af7a30f51356df
-ms.sourcegitcommit: ef3cd762e799df43bdcde03363c501d7ca9bb6b3
+ms.openlocfilehash: af7845b5fd6d50d63be6cd21749cbfedc7669fcf
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44489161"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085152"
 ---
 <a name="issues-receiving-messages-and-calls-on-legacy-systems"></a>Problemi di ricezione di messaggi e chiamate su sistemi legacy
 ==============================================================
@@ -45,3 +45,8 @@ Per altre informazioni, vedere [accedere a Microsoft teams con l'autenticazione 
 ## <a name="skype-token-revocation"></a>Revoca token Skype
 
 Quando si cambia/si reimposta una password, i client meno recenti non riceveranno messaggi e richiederanno fino a un'ora. Per risolvere il problema, riavviare l'app o passa a client più recenti.
+
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)

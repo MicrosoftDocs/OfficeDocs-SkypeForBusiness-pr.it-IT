@@ -21,16 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4a4676349dab9c7b587e63dcc9a538c9f0b43a80
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: b8c6a59216d1ac04c0e079015aa9de13f8cecb37
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904798"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45088234"
 ---
 # <a name="use-the-network-planner-for-microsoft-teams"></a>Usare Network Planner per Microsoft Teams
 
-Network Planner è un nuovo strumento disponibile nell'interfaccia di amministrazione di teams. Si può trovare passando a **Planner** > **Network Planner**. In pochi passaggi, la pianificazione della rete può aiutare a determinare e organizzare i requisiti di rete per la connessione degli utenti di Microsoft teams all'intera organizzazione. Quando fornisci i dettagli della rete e l'uso dei team, Network Planner calcola i requisiti di rete per la distribuzione di team e la voce cloud tra le posizioni fisiche dell'organizzazione.
+Network Planner è un nuovo strumento disponibile nell'interfaccia di amministrazione di teams. Si può trovare passando a **Planner**  >  **Network Planner**. In pochi passaggi, la pianificazione della rete può aiutare a determinare e organizzare i requisiti di rete per la connessione degli utenti di Microsoft teams all'intera organizzazione. Quando fornisci i dettagli della rete e l'uso dei team, Network Planner calcola i requisiti di rete per la distribuzione di team e la voce cloud tra le posizioni fisiche dell'organizzazione.
 
 ![Screenshot di Network Planner](media/network-planner.png)
 
