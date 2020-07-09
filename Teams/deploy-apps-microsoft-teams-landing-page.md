@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 10d17aedd0a653b6fc5bd24946ede5da09dc4647
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: bf2e7304fc452478da57bad003fffc5193353c8b
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691332"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085822"
 ---
 # <a name="apps-bots--connectors-in-microsoft-teams"></a>App, bot e connettori in Microsoft Teams
 
@@ -103,7 +103,7 @@ Può essere utile modificare queste impostazioni in base alle esigenze e alla co
 
 ### <a name="app-templates"></a>Modelli di app
 
-I modelli di app sono app pronte per la produzione per Microsoft Teams, gestite dalla community, open source e disponibili su GitHub. Ognuno contiene istruzioni dettagliate per la distribuzione e l'installazione dell'app per l'organizzazione, fornendo un'app pronta all'uso che è possibile installare e iniziare a usare immediatamente. È disponibile anche il codice sorgente completo, quindi è possibile esaminare il modello in dettaglio oppure creare una copia tramite fork del codice e modificarlo per soddisfare esigenze specifiche.
+I modelli di app sono app pronte per la produzione per Microsoft Teams, gestite dalla community, open source e disponibili su GitHub. Ognuno contiene istruzioni dettagliate per la distribuzione e l'installazione dell'app per l'organizzazione, fornendo un'app pronta all'uso che è possibile installare e iniziare a usare immediatamente. È disponibile anche il codice sorgente completo, quindi è possibile esaminarlo in dettaglio oppure creare una copia tramite fork del codice e modificarlo per soddisfare esigenze specifiche.
 
 | Chiedersi | Azione |
 |--------------|--------|

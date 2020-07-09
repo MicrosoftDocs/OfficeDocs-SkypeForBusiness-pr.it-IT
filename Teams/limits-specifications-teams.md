@@ -18,11 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e9356ae3dc9ed5bb7375f90cad18e13a83b8f5e8
-ms.sourcegitcommit: 2467ece95e100a3a3cc2be3538d8eb7d878b3663
+ms.openlocfilehash: 83872fd1a98bc75a2872651e0ed8085ef815d082
+ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45042798"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45085712"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -68,7 +69,7 @@ La chat di Teams opera in un back-end di Microsoft Exchange, quindi per la funzi
 |Numero di file allegati<sup>2</sup>  |10     |
 |Dimensione chat | Circa 28 KB per post<sup>3</sup> |
 
-<sup>1</sup> Se si hanno più di 1 persone in una chat, le funzionalità di chat seguenti vengono disattivate: risposte automatiche di Outlook, messaggi di stato di Teams, indicatore di scrittura in corso, chiamate audio e video, condivisione e conferme di lettura.
+<sup>1</sup> Se si hanno più di 1 persone in una chat, le funzionalità di chat seguenti vengono disattivate: risposte automatiche di Outlook, messaggi di stato di Teams, indicatore di scrittura in corso, chiamate audio e video, condivisione e conferme di lettura. Il pulsante "Imposta opzioni di recapito" (!) viene rimosso anche quando le chat di gruppo privato contengono più di 20 membri.
 
 <sup>2</sup> Se il numero di allegati supera questo limite, viene visualizzato un messaggio di errore.
 
