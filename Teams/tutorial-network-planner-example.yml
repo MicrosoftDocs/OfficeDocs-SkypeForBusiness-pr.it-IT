@@ -16,12 +16,12 @@ metadata:
   ms.collection:
   - M365-collaboration
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 5148415363ac62c68140982d03235b8bfa8835ac
-  ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+  ms.openlocfilehash: 04e3c6ea65a010d995c109819b7e4a58384344f4
+  ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 04/27/2020
-  ms.locfileid: "43904511"
+  ms.lasthandoff: 07/09/2020
+  ms.locfileid: "45086132"
 items:
 - durationInMinutes: 2
   content: "\nLo strumento Network Planner è disponibile nell'interfaccia di amministrazione di teams. Consente di determinare i requisiti di rete per l'organizzazione. Questo scenario di esempio Mostra come usare lo strumento per creare siti, utenti e report in cui è in corso una società denominata Contoso. \n\n## <a name=\"before-you-begin\"></a>Prima di iniziare\n\nSupponiamo che tu conosca già il tuo modo per aggirare l'interfaccia di amministrazione di teams e hai familiarità con ciò che devi fare per preparare la rete per i team. Se si tratta del primo articolo che si è visto in Network Planner, è consigliabile passare prima di tutto agli articoli seguenti.\n\n- [Preparare la rete dell'organizzazione per Teams](prepare-network.md)\n- [Usare Network Planner per Microsoft Teams](network-planner.md) \n\n## <a name=\"overview-of-contoso-network\"></a>Panoramica della rete contoso\n\nContoso ha tre posizioni:\n\n- **Sede centrale di Seattle:** Questa è la posizione principale per contoso. Ha 1000 dipendenti e 25 di loro stanno chiamando solo. Il sito è connesso a Internet ed esiste una connessione telefonica locale (PSTN). Contoso ha configurato il routing diretto per poter usare la connessione telefonica locale con i team. \n- **Kirkland Office:** Questa filiale ha 400 dipendenti e 10 chiama solo. Il sito usa la connessione alla sede centrale sia per il traffico Internet che per il telefono (PSTN). Questo ufficio è connesso alla sede centrale di Seattle usando una connessione WAN.\n- **Ufficio di Denver:** Questo Office include 250 dipendenti e 50 che chiamano solo. Il sito ha una connessione Internet locale, ma non ha una connessione telefonica diretta (PSTN).\n\nIniziamo!\n"
@@ -42,4 +42,4 @@ items:
   content: "\nDopo aver generato il report, viene visualizzata una schermata che mostra i requisiti di larghezza di banda sia in base a valori specifici della modalità che in generale. Per impostazione predefinita, la larghezza di banda consentita è impostata su 30%. Modificando questo valore e facendo clic su **Esegui report**, è possibile visualizzare il diverso impatto sulla larghezza di banda della rete. Tutte le aree che richiedono maggiore larghezza di banda saranno evidenziate in rosso.\n\n![Analisi report](media/network-planner-report-output.png)\n\nNetwork Planner offre anche suggerimenti basati sull'impatto proiettato dei team nella rete. Fare clic sull'icona della visualizzazione raccomandazione per visualizzare i suggerimenti per ogni sito, se presenti. L'immagine seguente mostra una visualizzazione consigliata di esempio.\n\n![Visualizzazione raccomandazione](media/network-planner-recommendation-view.png)\n\nIn questo caso, è possibile vedere che la larghezza di banda del sito di Kirkland deve essere aumentata per ottenere prestazioni ottimali dai team. \n"
 - title: Risorse aggiuntive
   durationInMinutes: 1
-  content: "\nViene completato lo scenario di esempio per Network Planner. Per altre informazioni su come preparare l'organizzazione per i team, è possibile tornare [all'articolo di Planner di rete](network-planner.md)o consultare le risorse seguenti:\n\n - [Preparare la rete dell'organizzazione per Microsoft Teams](prepare-network.md)\n - [Guida sul controllo della qualità dell'esperienza](quality-of-experience-review-guide.md)\n - [URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)"
+  content: "\nViene completato lo scenario di esempio per Network Planner. Per altre informazioni su come preparare l'organizzazione per i team, è possibile tornare [all'articolo di Planner di rete](network-planner.md)o consultare le risorse seguenti:\n\n - [Preparare la rete dell'organizzazione per Microsoft Teams](prepare-network.md)\n - [Migliorare e monitorare la qualità delle chiamate per i team](monitor-call-quality-qos.md)\n - [URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)"
