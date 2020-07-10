@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come definire e usare le etichette di sensitività in Microsoft teams.
-ms.openlocfilehash: 2940fd5537f02a6d5b3125f4c0037b9705571ffa
-ms.sourcegitcommit: a94a267c421a78587b0dbbea5fa167aad2882e9b
+ms.openlocfilehash: 4f1bdc4715fd1375cff637604c93962e2f30c258
+ms.sourcegitcommit: d7f49f8c28cba32d3715ea1965c736e6ba574bda
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45012312"
+ms.lasthandoff: 07/09/2020
+ms.locfileid: "45091269"
 ---
 # <a name="sensitivity-labels-for-microsoft-teams"></a>Etichette di sensitività per Microsoft Teams
 
@@ -99,15 +99,15 @@ Un proprietario del team può modificare l'etichetta di sensitività e l'imposta
 
 Puoi specificare se un team creato con una specifica etichetta consente l'accesso guest. I team creati con un'etichetta che non consente l'accesso Guest sono disponibili solo per gli utenti dell'organizzazione. Gli utenti esterni all'organizzazione non possono essere aggiunti al team.
 
+### <a name="sensitivity-labels-in-the-microsoft-teams-admin-center"></a>Etichette di sensitività nell'interfaccia di amministrazione di Microsoft Teams
+
+Quando si crea o si modifica un team nell'interfaccia di amministrazione di Microsoft teams, è possibile impostare le etichette di sensitività. Le etichette di sensitività sono visibili anche nelle proprietà del team e nella colonna **classificazione** nella pagina Gestisci Teams dell'interfaccia di amministrazione di Microsoft teams.
+
 ## <a name="known-issues"></a>Problemi noti
 
 **Etichette predefinite figlio non visualizzate durante la creazione del team**
 
 Attualmente, un set di etichette figlio come etichetta predefinita per i team non verrà visualizzato nella parte superiore dell'elenco nel menu a discesa etichette di sensitività nel modello di creazione del team. I creatori del team possono comunque usare l'elenco a discesa per applicare l'etichetta figlio come soluzione alternativa.
-
-**Supporto per le etichette di sensitività nell'interfaccia di amministrazione di Microsoft Teams**
-
-Attualmente, le etichette di sensitività non sono supportate nell'interfaccia di amministrazione di Microsoft teams. Se si usano le etichette di sensitività, non sarà possibile impostare le etichette di sensibilità quando si crea o si modifica un team. Anche le etichette di sensitività non sono visibili nelle proprietà del team e non saranno visibili nella colonna **classificazione** nell'interfaccia di amministrazione di Microsoft teams.
 
 **Supporto per le etichette di sensitività nelle API del grafico teams, cmdlet e modelli di PowerShell**
 
