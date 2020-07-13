@@ -18,12 +18,12 @@ f1.keywords:
 description: Gestire le funzionalità dell'accesso guest di Microsoft Teams tramite quattro diversi livelli di autorizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9c1a01c600ce0b5e64df274b12c9956bf922e9b4
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: fe067e88fe6e73b16e4296b611e87eb94d7e060c
+ms.sourcegitcommit: 397c4840fb053238de24b8b24ae75588b33b693d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44689802"
+ms.lasthandoff: 07/10/2020
+ms.locfileid: "45098364"
 ---
 <a name="authorize-guest-access-in-microsoft-teams"></a>Autorizzare l'accesso guest in Microsoft Teams
 ===========================================
@@ -104,7 +104,7 @@ Da Gruppi di Microsoft 365, è possibile controllare l'aggiunta di utenti guest 
 
 Queste impostazioni si applicano a livello del tenant e controllano l'esperienza degli utenti guest in Gruppi di Microsoft 365 e Teams.
 
-Consultare [Accesso guest in Gruppi di Microsoft 365](https://support.office.com/article/Guest-access-in-Office-365-Groups-bfc7a840-868f-4fd6-a390-f347bf51aff6) per maggiori informazioni sull'accesso guest nei gruppi, tra cui il modo in cui funziona l'accesso guest, il modo in cui gestire l'accesso guest e le risposte alle domande frequenti.
+Consultare [Gestire l'accesso guest in Gruppi di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-guest-access-in-groups?view=o365-worldwide#manage-groups-guest-access) e [Accesso guest in Gruppi di Microsoft 365](https://support.office.com/article/Guest-access-in-Office-365-Groups-bfc7a840-868f-4fd6-a390-f347bf51aff6) per ulteriori informazioni sull'accesso guest nei gruppi, tra cui il modo in cui funziona l'accesso guest, il modo in cui gestire l'accesso guest e le risposte alle domande frequenti.
 
 ## <a name="control-guest-access-to-sharepoint-online-and-onedrive-for-business"></a>Controllare l'accesso guest in SharePoint Online e OneDrive for Business
 
