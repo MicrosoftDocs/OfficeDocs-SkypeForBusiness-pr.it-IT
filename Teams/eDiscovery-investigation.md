@@ -1,15 +1,15 @@
 ---
 title: Eseguire un'analisi eDiscovery del contenuto
-author: LolaJacobsen
-ms.author: hakank
-manager: serdars
+author: markjjo
+ms.author: markjjo
+manager: laurawi
 ms.topic: article
 ms.service: msteams
 audience: admin
 ms.collection:
 - M365-collaboration
 - SPO_Content
-ms.reviewer: anach
+ms.reviewer: anwara
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 55afbf3ff1dd3f38990dc60f9cae3cbce7c2f9db
-ms.sourcegitcommit: 69ff557c79d6b1a3d1089fe5c8f5c8ed8ff7431e
+ms.openlocfilehash: 0bdd14db1fd0e849effe9ffe1789c06e1e012d90
+ms.sourcegitcommit: 113e3a7314505cf78da57917ff62642125fb11fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2020
-ms.locfileid: "43950891"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45121396"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Eseguire un'analisi eDiscovery del contenuto in Microsoft Teams
 
@@ -56,7 +56,7 @@ Non tutto il contenuto del team è eDiscoverable. La tabella seguente mostra i t
 
 - I dati di Microsoft teams verranno visualizzati come messaggi istantanei o conversazioni nell'output di esportazione di Excel eDiscovery. È possibile aprire il `.pst` file in Outlook per visualizzare i messaggi dopo l'esportazione.
 
-    Quando si visualizza `.pst` il file per il team, tenere presente che tutte le conversazioni vengono mantenute nella cartella chat del team in Cronologia conversazioni. Il titolo del messaggio contiene il nome del team e il nome del canale. Ad esempio, l'immagine seguente mostra un messaggio di Roberto che ha inviato un messaggio al canale standard di Project 7 del team di specifiche di manufacturing.
+    Quando si Visualizza il `.pst` file per il team, tenere presente che tutte le conversazioni vengono mantenute nella cartella chat del team in Cronologia conversazioni. Il titolo del messaggio contiene il nome del team e il nome del canale. Ad esempio, l'immagine seguente mostra un messaggio di Roberto che ha inviato un messaggio al canale standard di Project 7 del team di specifiche di manufacturing.
 
     ![Screenshot di una cartella della chat del team nella cassetta postale di un utente in Outlook](media/Conduct_an_eDiscovery_investigation_of_content_in_Microsoft_Teams_image1.png)
 
@@ -180,11 +180,11 @@ Oltre ai documenti, è possibile aggiungere posta elettronica, messaggi di Team,
 
 Il pulsante **Gestisci set di revisione** offre opzioni aggiuntive, ad esempio analisi, report di riepilogo, numero di set di carichi aggiunti e così via.
 
-Per accedere a visualizzazioni e grafici dei dati, fare clic su **visualizzazione profilo di ricerca** **singoli risultati** \> nell'angolo in alto a destra. È possibile fare clic su cunei in questi grafici per selezionare in modo interattivo il tipo di contenuto che si vuole eseguire. Ad esempio, puoi scegliere di eseguire query solo sul contenuto di teams. È anche possibile salvare queste query come si salvano le query scritte manualmente.
+Per accedere a visualizzazioni e grafici dei dati, fare clic **Individual results** su \> **visualizzazione profilo di ricerca** singoli risultati nell'angolo in alto a destra. È possibile fare clic su cunei in questi grafici per selezionare in modo interattivo il tipo di contenuto che si vuole eseguire. Ad esempio, puoi scegliere di eseguire query solo sul contenuto di teams. È anche possibile salvare queste query come si salvano le query scritte manualmente.
 
 #### <a name="summary-view-text-view-and-annotate-view"></a>Visualizzazione Riepilogo, visualizzazione testo e visualizzazione annotazioni
 
-Se si fa clic su una conversazione in teams nel set di revisione, viene visualizzata la **visualizzazione Riepilogo**, che visualizza un'intera conversazione teams come elenco dei messaggi con cui è possibile interagire singolarmente. Fare clic sulla freccia rivolta verso il basso a destra di un messaggio per visualizzare un menu di scelta rapida che consente di visualizzare i dettagli `.msg` del messaggio o scaricare il singolo file. Se si fa clic su Dettagli messaggio, verrà visualizzato un riepilogo dei metadati o i metadati completi del messaggio.
+Se si fa clic su una conversazione in teams nel set di revisione, viene visualizzata la **visualizzazione Riepilogo**, che visualizza un'intera conversazione teams come elenco dei messaggi con cui è possibile interagire singolarmente. Fare clic sulla freccia rivolta verso il basso a destra di un messaggio per visualizzare un menu di scelta rapida che consente di visualizzare i dettagli del messaggio o scaricare il singolo `.msg` file. Se si fa clic su Dettagli messaggio, verrà visualizzato un riepilogo dei metadati o i metadati completi del messaggio.
 
 Per scaricare un PDF, fare clic sul pulsante Scarica nell'angolo in alto a destra della visualizzazione riepilogo.
 
@@ -196,7 +196,7 @@ Nella parte inferiore della scheda **Visualizzazione annotazioni** si trova il p
 
 #### <a name="action-menu"></a>Menu azione
 
-All'interno della finestra Revisione set è possibile esportare il contenuto facendo clic su **Esporta** **azione** \> . Durante l'esportazione sono disponibili molte opzioni.
+All'interno della finestra Revisione set è possibile esportare il contenuto facendo clic **Action** su \> **Esporta**azione. Durante l'esportazione sono disponibili molte opzioni.
 
 Per esportare un file contenente tutti i metadati per tutti i messaggi di teams, fare clic su per selezionare la casella di controllo **Carica file** . Per includere nel file i tag applicati al contenuto, fare clic su per selezionare la casella di controllo **Contrassegni** .
 

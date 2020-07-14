@@ -16,12 +16,12 @@ f1.keywords:
 description: Configurare l'ottimizzazione multimediale locale per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c3da3cf243b24d0f614c05e9d09eb68796a68545
-ms.sourcegitcommit: 296aeac481f901eb9d52b4f12a8c037afc49fa77
+ms.openlocfilehash: e53f9156b6ab6d33223c9b1d3e11a604ba0c1c31
+ms.sourcegitcommit: 113e3a7314505cf78da57917ff62642125fb11fd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "44256491"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45121606"
 ---
 # <a name="configure-local-media-optimization-for-direct-routing"></a>Configurare l'ottimizzazione multimediale locale per il routing diretto
 
@@ -71,6 +71,7 @@ L'ottimizzazione media locale è supportata dai seguenti fornitori di SBC:
 |            |  SBC 5400         | 8,2  |
 |            |  SBC 7000         | 8,2  |
 |            |  SBC SWe          | 8,2  |
+| [Bordo SBC della barra multifunzione](https://support.sonus.net/display/UXDOC81/Best+Practice+-+Configuring+Microsoft+Teams+Local+Media+Optimization)  |  SBC SWe Lite | 8.1.5 (Build 239) |
 | [TE-SYSTEMS](https://www.anynode.de/local_media_optimization/) |  anynode          | 4.0.1 + |
 | [Oracle](https://www.oracle.com/industries/communications/enterprise-communications/session-border-controller/microsoft.html) | AP 1100 | 8.4.0.0.0 |
 |        | AP 3900 | 8.4.0.0.0 |
