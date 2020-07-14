@@ -255,6 +255,7 @@
 #### [Creare una coda delle chiamate nel cloud](create-a-phone-system-call-queue.md)
 #### [Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams](answer-auto-attendant-and-call-queue-calls.md)
 
+### [Bloccare le chiamate in entrata](block-inbound-calls.md)
 ### [Parcheggio di chiamata e recupero](call-park-and-retrieve.md)
 ### [Condivisione delle chiamate e risposta alle chiamate di gruppo](call-sharing-and-group-call-pickup.md)
 ### [Criteri di chiamata](teams-calling-policy.md)
