@@ -18,12 +18,12 @@ appliesto:
 ms.reviewer: ''
 description: Informazioni sulle caratteristiche per l'assistenza sanitaria che includono il coordinamento delle cure, la messaggistica sicura, la telesanità, l'integrazione di EHR e l'integrazione del sistema di lavoro i FIRSTLINE.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 457a5701288cf3d6203ad690d82d0bea3a4556cc
-ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
+ms.openlocfilehash: 8d2a77e5e7e696e20efb13a5c805968fc3af3204
+ms.sourcegitcommit: 70b80892a152f86a6d596f0f5b58cf391bc29098
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44938365"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45138106"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Guida introduttiva a Teams per le organizzazioni del settore sanitario
 
@@ -89,9 +89,25 @@ L'app pazienti si basa sulla piattaforma di estensibilità teams e sfrutta il fr
 
 Vedere [integrazione di record sanitari elettronici in Microsoft teams](patients-app.md) per dettagli sull'implementazione.
 
-## <a name="templates"></a>Modelli
+## <a name="teams-templates"></a>Modelli di Teams
 
 I nuovi modelli per la creazione di team sono stati sviluppati per applicarsi a un ambiente ospedaliero e più presto sono attesi. In questo modo è più semplice creare team che gli operatori sanitari usano per coordinare le cure per i pazienti in diversi reparti o corsi. Vedere [Introduzione ai modelli di team per le organizzazioni sanitarie](healthcare-templates.md). I team possono essere avviati per i reparti interni, ad esempio cardiologia o per i corsi di assistenza, e altri modelli sono in sviluppo.
+
+## <a name="lists-app"></a>App elenchi
+
+[!INCLUDE [preview-feature](../../includes/preview-feature.md)]
+
+L'app elenchi in teams aiuta i team a tenere traccia delle informazioni e organizzare il lavoro. L'app è preinstallata per tutti gli utenti di teams ed è disponibile come scheda in ogni team e canale. Gli elenchi possono essere creati da zero, da modelli predefiniti o dall'importazione di dati in Excel.
+
+I team di assistenza possono usare il modello patients per iniziare. Possono creare elenchi per tenere traccia delle esigenze e dello stato dei pazienti. I dati dei pazienti esistenti nei fogli di calcolo di Excel possono essere introdotti per creare un elenco in teams. Questi elenchi possono essere usati per scenari come i turni e il monitoraggio dei pazienti per coordinare le cure.
+
+Ad esempio, un'infermiera della carica crea un elenco di pazienti in un team che include tutti i membri del team di assistenza. Durante i turni, il team di servizi di assistenza accede ai propri dispositivi mobili e aggiorna le informazioni sul paziente nell'elenco, che tutti i membri del team possono visualizzare per rimanere sincronizzati. Durante le sessioni di arrotondamento in cui il team di assistenza si riunisce per discutere e valutare le metriche sulle prestazioni chiave per garantire che un paziente sia sul giusto percorso di scorrimento per il discarico, può condividere queste informazioni usando teams su uno schermo di grandi dimensioni. I membri del team di assistenza che non sono presenti nel sito possono partecipare in remoto.
+
+Ecco un elenco di esempio che è stato configurato per l'arrotondamento dei pazienti.
+
+:::image type="content" source="../../media/lists-patients-example.png" alt-text="Screenshot dell'elenco di esempio per l'arrotondamento del paziente":::
+
+Per altre informazioni, vedere [gestire l'app elenchi per l'organizzazione in teams](../../manage-lists-app.md).
 
 ## <a name="secure-messaging"></a>Messaggistica sicura
 
@@ -105,7 +121,7 @@ Insieme, queste funzionalità permettono una maggiore attenzione ai messaggi urg
 
 Per ulteriori informazioni, vedere [Introduzione ai criteri di messaggistica sicura per le organizzazioni sanitarie](messaging-policies-hc.md) .
 
-Anche correlato alla messaggistica sicura è la possibilità di avere altri tenant federati da organizzazioni sanitarie, consentendo una comunicazione intertenant più ricca. vedere [gestire l'accesso esterno (Federazione) in Microsoft teams](../../manage-external-access.md).
+Anche correlato alla messaggistica sicura è la possibilità di avere altri tenant federati da organizzazioni sanitarie, consentendo una comunicazione intertenant più ricca. Vedere [gestire l'accesso esterno (Federazione) in Microsoft teams](../../manage-external-access.md).
 
 ## <a name="firstline-worker-integration"></a>Integrazione di i FIRSTLINE Worker
 

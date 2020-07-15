@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come preparare l'infrastruttura per la distribuzione delle sale di Microsoft teams in modo da poter sfruttare tutte le funzionalità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8551bc625b270b8b61de4be71ceb772a1d1ede47
-ms.sourcegitcommit: d0d37351c37c2b4db9b0fc51b286dd548f5b9542
+ms.openlocfilehash: a8252151dcad1c8e483394c6268d445376f25973
+ms.sourcegitcommit: 2cc36c954200f50de33b909856b33fe0a9a6b7a5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/15/2020
-ms.locfileid: "44735426"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45125959"
 ---
 # <a name="prepare-your-environment"></a>Predisporre l'ambiente
 
@@ -36,8 +36,8 @@ Questa sezione contiene una panoramica dei passaggi necessari per preparare l'am
    - HTTP: 80
    - Se la rete viene eseguita tramite proxy, sarà necessario anche l'indirizzo proxy o le informazioni sullo script.
     
-     > [!NOTE]
-     > Microsoft teams Rooms non supporta l'input HDCP, che è stato osservato in modo da causare problemi con la funzionalità di ingesting HDMI (video, audio). Assicurarsi che le opzioni connesse alle sale di Microsoft teams siano disattivate.
+     > [!IMPORTANT]
+     > Microsoft teams Rooms non supporta l'autenticazione proxy perché potrebbe interferire con le normali operazioni della chat room. Verificare che Microsoft teams rooms sia stato esentato dall'autenticazione del proxy prima di entrare in produzione.
   
 3. Per migliorare l'esperienza acquisita, Microsoft raccoglie i dati. Per consentire a Microsoft di raccogliere dati, whitelist questi siti:
 

@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.users.voice.calldelegation.tooltip
 - seo-marvel-apr2020
 description: Scopri come inviare agli utenti un messaggio di posta elettronica con le informazioni relative ai servizi di audioconferenza in Microsoft teams.
-ms.openlocfilehash: 80c279e4d80478c2392f8c4faffb46e822c016e4
-ms.sourcegitcommit: 09ff11f8e4f6a93cedc34a5d732a133163df79a0
+ms.openlocfilehash: 92eda8a1818d98689e71d81f31c5355df3ef1e26
+ms.sourcegitcommit: 2cc36c954200f50de33b909856b33fe0a9a6b7a5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2020
-ms.locfileid: "44042583"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45125979"
 ---
 # <a name="shared-line-appearance-in-microsoft-teams"></a>Aspetto della linea condivisa in Microsoft Teams
 
@@ -59,14 +59,14 @@ L'aspetto delle linee condivise è attualmente supportato dalle app e dai dispos
 
 | Funzionalità | Desktop Teams | App teams Mac | App Web Teams (Edge) |App teams per dispositivi mobili iOS/Android | Telefono IP Teams |
 |------------|---------------|---------------|----------------------|-----------------------------|----------------|
-| Configurare la delega | Sì | Sì | Sì | No | No |
-| Ricevere chiamate per conto di un altro utente | Sì | Sì | Sì | Sì | Sì |
-| Chiamare un numero di telefono per conto di un altro utente | Sì | Sì | Sì | Sì | Sì |
-| Chiamare un utente di teams per conto di un altro | Sì | Sì | Sì | Sì | Sì |
-| Vedere la visualizzazione amministratore delle righe condivise | Sì | Sì | Sì | No | No |
-| Vedere la visualizzazione amministratore delle attività di chiamata del responsabile | Sì | Sì | Sì | No | No |
-| Vedere la visualizzazione Manager dei delegati | Sì | Sì | Sì | No | No |
-| L'amministratore o il responsabile può tenere o riprendere | Sì | Sì | Sì | No | No |
+| Configurare la delega | Sì | Supporto per più paesi | Sì | No | Sì |
+| Ricevere chiamate per conto di un altro utente | Sì | Supporto per più paesi | Supporto per più paesi | Supporto per più paesi | Supporto per più paesi |
+| Chiamare un numero di telefono per conto di un altro utente | Sì | Supporto per più paesi | Supporto per più paesi | Supporto per più paesi | Supporto per più paesi |
+| Chiamare un utente di teams per conto di un altro | Sì | Supporto per più paesi | Supporto per più paesi | Supporto per più paesi | Supporto per più paesi |
+| Vedere la visualizzazione amministratore delle righe condivise | Sì | Supporto per più paesi | Sì | No | No |
+| Vedere la visualizzazione amministratore delle attività di chiamata del responsabile | Sì | Supporto per più paesi | Sì | No | No |
+| Vedere la visualizzazione Manager dei delegati | Sì | Supporto per più paesi | Sì | No | No |
+| L'amministratore o il responsabile può tenere o riprendere | Sì | Supporto per più paesi | Sì | No | No |
 
 ## <a name="limitations"></a>Limitazioni
 
@@ -74,6 +74,6 @@ I responsabili possono aggiungere fino a 25 delegati e i delegati possono avere 
  
 Se il delegante e il delegato non si trovano nella stessa posizione geografica, spetta al provider PSTN consentire all'ID chiamante di presentarsi da una posizione geografica diversa per una chiamata delegata (per conto di). 
  
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 [Condividere una linea telefonica con un delegato](https://support.office.com/article/share-a-phone-line-with-a-delegate-16307929-a51f-43fc-8323-3b1bf115e5a8)

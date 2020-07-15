@@ -13,12 +13,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Aggiornare i telefoni di Microsoft teams e le barre di collaborazione in remoto usando l'interfaccia di amministrazione Teams
-ms.openlocfilehash: 7e47c9394eddfa73b8b55279b68ae59ff7b6de3d
-ms.sourcegitcommit: 9b1c138b39fd87e239a7b1c5051f30c633e7d813
+ms.openlocfilehash: f7607da002be7f038e4cafe5b4b6026ea2d99ddf
+ms.sourcegitcommit: 2cc36c954200f50de33b909856b33fe0a9a6b7a5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44944106"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45125949"
 ---
 # <a name="update-microsoft-teams-devices-remotely"></a>Aggiornare i dispositivi Microsoft teams in remoto
 
@@ -32,7 +32,7 @@ Con l'interfaccia di amministrazione di Microsoft teams è possibile aggiornare 
 Gli aggiornamenti del firmware del dispositivo possono essere applicati automaticamente o pianificati per una data e un'ora future. Gli altri aggiornamenti del dispositivo disponibili non vengono applicati automaticamente, ma possono essere applicati manualmente o pianificati per una data e un'ora future.
 
 > [!NOTE]
-> Mentre gli aggiornamenti del firmware del dispositivo possono essere pianificati, se la data e l'ora pianificate ricadono dopo il ritardo massimo configurato di 30 o 90 giorni, l'aggiornamento del firmware viene applicato quando viene raggiunto il ritardo massimo. La data e l'ora pianificate vengono ignorate.
+> Mentre gli aggiornamenti del firmware del dispositivo possono essere pianificati, se la data e l'ora pianificate ricadono dopo il ritardo massimo configurato di 30 o 90 giorni, l'aggiornamento del firmware viene applicato quando viene raggiunto il ritardo massimo. La data e l'ora pianificate vengono ignorate. Inoltre, l'aggiornamento remoto di Microsoft teams Devices è una funzionalità non ancora disponibile nei tenant di cloud governative degli Stati Uniti (GCC-High).
 
 ## <a name="choose-automatic-device-firmware-update-behavior"></a>Scegliere il comportamento di aggiornamento automatico del firmware del dispositivo
 
