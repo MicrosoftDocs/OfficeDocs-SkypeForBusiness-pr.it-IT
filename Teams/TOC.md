@@ -672,13 +672,13 @@
 
 # Sicurezza, privacy e conformità
 ## [Panoramica](security-compliance-overview.md)
-## Sicurezza e privacy
+## Sicurezza
 ### [Guida alla sicurezza](teams-security-guide.md)
+### [Azure Sentinel e Teams](teams-sentinel-guide.md)
 ### [Modelli di identità e autenticazione](identify-models-authentication.md)
 ### [Accedere a Teams con l'autenticazione moderna](sign-in-teams.md)
 ### [Collegamenti sicuri in Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams?toc=/microsoftteams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
-### [Privacy e Microsoft Teams](teams-privacy.md)
-### [Posizione dei dati in Teams](location-of-data-in-teams.md)
+### [Criteri di controllo dell'applicazione AppLocker](applocker-in-teams.md)
 ## Conformità
 ### [Barriere informative](information-barriers-in-teams.md)
 ### [Criteri di conservazione](retention-policies.md)
@@ -691,7 +691,9 @@
 ### Ricerca contenuto
 #### [Usare la Ricerca contenuto](content-search.md)
 #### [Effettuare ricerche nel log di controllo per eventi](audit-log-events.md)
-### [Criteri di controllo dell'applicazione AppLocker](applocker-in-teams.md)
+## Privacy
+### [Privacy e Microsoft Teams](teams-privacy.md)
+### [Posizione dei dati in Teams](location-of-data-in-teams.md)
 
 <!-- ============================================================ -->
 # Monitoraggio, manutenzione e risoluzione dei problemi
