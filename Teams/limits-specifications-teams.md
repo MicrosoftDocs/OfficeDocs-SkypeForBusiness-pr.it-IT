@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83872fd1a98bc75a2872651e0ed8085ef815d082
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: a864e810df8cdd69a9c8a2e9bb29524147a3b865
+ms.sourcegitcommit: 70b80892a152f86a6d596f0f5b58cf391bc29098
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45085712"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45137906"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -111,7 +111,7 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 
 |Funzionalità     | Limite massimo |
 |------------|---------------|
-|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 300 <br><br>**Nota:** per Teams per enti pubblici (GCC, GCC High, DoD), il limite è ancora 250. Questo articolo verrà aggiornato appena il limite del cloud per enti pubblici passerà da 250 a 300.   |
+|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 300 |
 |Numero di persone in un video o una chiamata audio dalla chat | 20 |
 |Dimensione massima file di PowerPoint | 2 GB|
 |Teams conserva le [registrazioni delle riunioni](cloud-recording.md) che non vengono caricate in Microsoft Stream, disponibili per il download locale | 20 giorni |

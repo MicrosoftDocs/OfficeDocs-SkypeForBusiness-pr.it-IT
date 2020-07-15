@@ -17,12 +17,12 @@ description: Informazioni su come comunicare con utenti di altre organizzazioni 
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: 8676c45a386a9fb36571e3262a8c70769f45f0a6
-ms.sourcegitcommit: af15d99837a389b6b26952211e65cd68c4b7f46e
+ms.openlocfilehash: 61cbaf6b869ffb0ff377615081953d16a6a63aea
+ms.sourcegitcommit: 2cc36c954200f50de33b909856b33fe0a9a6b7a5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785278"
+ms.lasthandoff: 07/14/2020
+ms.locfileid: "45125969"
 ---
 <a name="communicate-with-users-from-other-organizations-in-microsoft-teams"></a>Comunicare con utenti di altre organizzazioni in Microsoft Teams
 ======================================================
@@ -47,7 +47,7 @@ Se si vuole consentire agli utenti esterni di accedere a team e canali, l’[acc
 Usare l'**accesso guest** per aggiungere un singolo utente, indipendentemente dal dominio, a un team in cui potrà chattare, chiamare, pianificare riunioni e collaborare ai file dell'organizzazione (archiviati in SharePoint o OneDrive for Business), usando le app di Office 365 o Microsoft 365, come Word, Excel o PowerPoint. Un utente guest può usufruire di quasi tutte le stesse funzionalità di Teams di un membro del team nativo. Per altre informazioni, vedere [Accesso guest in Teams](guest-access.md).
 
 - Gli utenti guest vengono aggiunti all'Active Directory Domain Services dell'organizzazione.
-- Per comunicare con un guest è necessario che il guest sia connesso a Teams con il proprio account guest. Questo vuol dire che può essere che l’utente si debba disconnettere dal proprio account Teams per accedere all’account Teams dove è guest.
+- Per comunicare con un guest è necessario che il guest sia connesso a Teams con il proprio account guest. Ciò significa che un guest potrebbe doversi disconnettere dal proprio account Teams e accedere all'account dove è guest, oppure cambiare organizzazione se si tratta dello stesso account.
 - Gli utenti guest hanno accesso a più risorse in Teams, ad esempio file, team e canali, rispetto agli utenti con accesso esterno (federato).
 - L'amministratore di Teams controlla tutto ciò che un guest può o non può fare grazie all'interfaccia di amministrazione di Teams. Per altre informazioni, vedere [Gestire l’accesso guest](manage-guests.md).
 
