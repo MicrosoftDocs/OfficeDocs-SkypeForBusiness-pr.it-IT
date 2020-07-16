@@ -18,11 +18,12 @@ description: Scopri i diversi modi per assegnare i criteri agli utenti in Micros
 f1keywords:
 - ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
-ms.openlocfilehash: 161a979578f24b351c93e870a562e6c4104b52d0
-ms.sourcegitcommit: ac36d3923095a4321dad14fdf23c98358affd10c
+ms.openlocfilehash: 0978ed0413c372b8bacbb936af6e125294e9d35f
+ms.sourcegitcommit: 95ccfce5016dfda1a59812df446824be21f3f23e
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/07/2020
-ms.locfileid: "45049443"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45143847"
 ---
 # <a name="assign-policies-to-your-users-in-microsoft-teams"></a>Assegnare i criteri agli utenti in Microsoft Teams
 
@@ -295,7 +296,7 @@ Se non specifichi una classificazione, all'assegnazione dei criteri viene assegn
 **Questa caratteristica non è ancora stata rilasciata. È stata annunciata e arriverà presto.**
 
 > [!NOTE]
-> Attualmente, l'assegnazione dei criteri ai gruppi che usano l'interfaccia di amministrazione di Microsoft teams è disponibile solo per i criteri di chiamata dei team, i criteri per le riunioni di team e i criteri di messaggistica Per altri tipi di criteri, usare PowerShell.
+> Attualmente, l'assegnazione dei criteri ai gruppi che usano l'interfaccia di amministrazione di Microsoft teams è disponibile solo per i criteri di chiamata dei team, i criteri di parcheggio per i team, i criteri per i team, i criteri per le riunioni dei team e i criteri di messaggistica di team. Per altri tipi di criteri, usare PowerShell.
 
 1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams passa alla pagina tipo di criteri. Ad esempio, vai a **Meetings**  >  **criteri riunione**riunioni.
 2. Selezionare la scheda **assegnazione criteri di gruppo** .

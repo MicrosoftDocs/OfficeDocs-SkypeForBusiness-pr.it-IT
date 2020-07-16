@@ -13,12 +13,12 @@ f1.keywords:
 description: Panoramica della soluzione Integrated Contact Center come servizio (CCaaS) per Microsoft Teams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: aceca495760670846a869a8dcca9734a5cf7daa1
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 34f801c19bcbc5479e4e71f520a4d0d437a7b58a
+ms.sourcegitcommit: 95ccfce5016dfda1a59812df446824be21f3f23e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44756827"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45143837"
 ---
 # <a name="contact-center-integrations-for-microsoft-teams"></a>Integrazioni di Contact Center per Microsoft Teams
 
@@ -49,6 +49,7 @@ I partner seguenti sono in procinto di certificare la loro soluzione per Microso
 | Enghouse interattivo | http://www.enghouseteams.com/                                                       |
 | Five9 | https://www.five9.com/products/application-integration/uc-integration                                                   |
 | Genesys | https://www.genesys.com/microsoft                                                                                   |
+| Tecnologie Landis | https://landistechnologies.com/microsoft-teams-contact-center/                                          |
 | Luware | https://luware.com/en/solutions/                                                                                       |
 | INCONTACT NICE | https://www.niceincontact.com/microsoft-teams                                                            |
 | Tendfor | https://www.tendfor.com/en/                                                                                     |
@@ -204,11 +205,11 @@ Leggere la tabella seguente per una panoramica dei modelli di integrazione suppo
 </tr>
 <tr class="even">
 <td>Connettività del servizio</td>
-<td>Platform<br />
+<td>Piattaforma<br />
 (Piani di chiamata + DR)</td>
 <td>Routing diretto</td>
 <td>Routing diretto</td>
-<td>Platform<br />
+<td>Piattaforma<br />
 (Piani di chiamata + DR)</td>
 </tr>
 </tbody>

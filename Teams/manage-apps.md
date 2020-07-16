@@ -17,12 +17,12 @@ description: Informazioni su come gestire le app teams nella pagina Manage Apps 
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: 1aa72a1720139324f53168c36f1d27a12b5cf5bb
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: 3a99577b51f08d9ae0e0d4aef73297fade1b1176
+ms.sourcegitcommit: 92a1158a4ade08d7168691b7f8b44a33df090afb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086213"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45146122"
 ---
 <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia di amministrazione di Microsoft Teams
 ======================================================
@@ -42,22 +42,31 @@ Puoi visualizzare tutte le app nel catalogo delle app del tenant, incluse le inf
 
 ![Screenshot della pagina delle app gestite](media/manage-apps.png)
 
-- **Nome**: nome dell'app. Fai clic sul nome dell'app per visualizzare altre informazioni sull'app. Questo include una descrizione dell'app, che sia consentita o bloccata, versione, categorie che si applicano all'app, stato di certificazione, funzionalità supportate e ID app. Ecco un esempio:<br> 
-![Screenshot della pagina Dettagli app per un'app](media/manage-apps-app-details.png)
+- **Nome**: nome dell'app. Fai clic sul nome dell'app per visualizzare altre informazioni sull'app. Questo include una descrizione dell'app, che sia consentita o bloccata, versione, categorie che si applicano all'app, stato di certificazione, funzionalità supportate e ID app. Ecco un esempio:
+
+  ![Screenshot della pagina Dettagli app per un'app](media/manage-apps-app-details.png)
+  
 - **Certificazione**: se l'app ha superato la certificazione, verrà visualizzata l' **attestazione** **certificata o Publisher Microsoft 365** . Fare clic sul collegamento per visualizzare i dettagli di certificazione per l'app. Se viene visualizzato " **--** ", non sono disponibili informazioni sulla certificazione per l'app. Per altre informazioni sulle app certificate in teams, leggere il [programma di certificazione delle app Microsoft 365](https://docs.microsoft.com/teams-app-certification/all-apps).  
+
 - **Categorie**: categorie che si applicano all'app.
+
 - **Stato dell'app**: stato dell'app a livello di organizzazione, che può essere uno dei seguenti:
+
     - **Consentito**: l'app è disponibile per tutti gli utenti dell'organizzazione.
+    
     - **Bloccata**: l'app è bloccata e non è disponibile per tutti gli utenti dell'organizzazione.
-    - **Bloccata a livello di organizzazione**: l'app è bloccata nelle impostazioni dell'app a livello di organizzazione. <br>
-È importante sapere che questa colonna rappresenta lo stato consentito e bloccato delle app che in precedenza erano nel riquadro **impostazioni a livello di organizzazione** . Ora puoi visualizzare, bloccare e consentire le app a livello di organizzazione nella pagina **Gestisci app** . 
+    
+    - **Bloccata a livello di organizzazione**: l'app è bloccata nelle impostazioni dell'app a livello di organizzazione.
+    
+      È importante sapere che questa colonna rappresenta lo stato consentito e bloccato delle app che in precedenza erano nel riquadro **impostazioni a livello di organizzazione** . Ora puoi visualizzare, bloccare e consentire le app a livello di organizzazione nella pagina **Gestisci app** . 
+
 - **Versione**: versione dell'app.
 
 Per visualizzare le informazioni desiderate nella tabella, fare clic su **modifica colonna** nell'angolo in alto a destra per aggiungere o rimuovere colonne alla tabella.
 
 ## <a name="upload-a-new-app"></a>Caricare una nuova app
 
-Puoi usare il catalogo app per testare e distribuire applicazioni personalizzate create appositamente per l'organizzazione. Viene creato un pacchetto dell'app teams con [Teams App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio). Quando si ha il pacchetto dell'app, è possibile aggiungerlo al catalogo dell'app. Mentre tutti gli utenti dell'organizzazione possono visualizzare il catalogo delle app, solo gli amministratori globali e i servizi di teams possono pubblicarli e gestirli.
+Puoi usare il catalogo app per testare e distribuire applicazioni personalizzate create appositamente per l'organizzazione. Viene creato un pacchetto dell'app teams con [Teams App Studio](https://docs.microsoft.com/microsoftteams/platform/get-started/get-started-app-studio). Quando hai il pacchetto dell'app, puoi aggiungerlo al catalogo app. Mentre tutti gli utenti dell'organizzazione possono visualizzare il catalogo delle app, solo gli amministratori globali e i servizi di teams possono pubblicarli e gestirli.
 
 Per caricare una nuova app personalizzata nel catalogo dell'app tenant, fai clic su **carica nuova app** per caricare il pacchetto dell'app in formato zip. L'app non viene evidenziata dopo il caricamento, quindi dovrai cercare il catalogo dell'app per trovarlo.
 
@@ -91,7 +100,8 @@ Usa le impostazioni dell'app a livello di organizzazione per controllare se gli 
 
     - **Consenti app di terze parti**: controlla se gli utenti possono usare app di terze parti. Se disattivi questa impostazione, gli utenti non potranno installare o usare app di terze parti e lo stato dell'app di queste app viene visualizzato come bloccato a **livello di organizzazione** nella tabella.
 
-        Quando le **app di terze parti** sono disattivate, i [webhook in uscita](https://docs.microsoft.com/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors) sono disabilitati, il che significa che gli utenti non possono crearli. Quando questa impostazione è attivata, i webhook in uscita sono abilitati per tutti gli utenti, indipendentemente dal fatto che l'impostazione sia inserita o disattivata nei criteri di autorizzazione delle app degli utenti.
+        > [!NOTE]
+        > Quando le **app di terze parti** sono disattivate, i [webhook in uscita](https://docs.microsoft.com/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors) sono disabilitati, il che significa che gli utenti non possono crearli. Quando questa impostazione è attivata, i webhook in uscita sono abilitati per tutti gli utenti e puoi controllarli a livello di utente consentendo o bloccando l'app webhook in uscita tramite i [criteri di autorizzazione dell'app](teams-app-permission-policies.md). <br><br>Tieni presente che se hai i [criteri di autorizzazione delle app](teams-app-permission-policies.md) esistenti per le app **Microsoft** che usano l'opzione **Consenti app specifiche e blocca tutte le altre** impostazioni e vuoi abilitare i webhook in uscita per gli utenti, Aggiungi l'app webhook in uscita all'elenco.
     - **Consenti a tutte le nuove app di terze parti pubblicate nello Store per impostazione predefinita**: questo controlla se le nuove app di terze parti pubblicate nell'app store teams diventano automaticamente disponibili in teams. Puoi impostare questa opzione solo se Consenti app di terze parti.
 
 3. In **app personalizzate**disattivare o attivare **Consenti l'interazione con le app personalizzate**. Questa impostazione controlla se gli utenti possono interagire con le app personalizzate. Per altre informazioni, vedere [gestire i criteri e le impostazioni dell'app personalizzata in teams](teams-custom-app-policies-and-settings.md).
