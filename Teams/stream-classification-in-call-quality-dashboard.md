@@ -29,11 +29,11 @@ ms.locfileid: "45085892"
 ---
 # <a name="stream-classification-in-call-quality-dashboard-cqd"></a>Classificazione del flusso nel dashboard qualità chiamata (Call Quality Dashboard)
 
-The Call Quality Dashboard (CQD) for Microsoft Teams and Skype for Business Online allows you to gain insights into the quality of calls made using Microsoft Teams and Skype for Business services. This topic provides detailed information about the quality classification of media streams. To learn more about CQD and how to set it up, see [Set up Call Quality Dashboard](turning-on-and-using-call-quality-dashboard.md).
+Il dashboard qualità chiamata (Call Quality Dashboard) per Microsoft teams e Skype for business online consente di ottenere informazioni approfondite sulla qualità delle chiamate effettuate con i servizi Microsoft teams e Skype for business. Questo argomento fornisce informazioni dettagliate sulla classificazione della qualità dei flussi multimediali. Per altre informazioni su Call Quality dashboard e su come configurarlo, vedere [configurare il dashboard sulla qualità delle chiamate](turning-on-and-using-call-quality-dashboard.md).
 
 ## <a name="classifier-definitions"></a>Definizioni di classificatore
 
-Streams in CQD are classified as _Good_, _Poor_, or _Unclassified_ based on the values of the available key quality metrics. The metrics and conditions used to classify stream are shown in the tables that follow. CQD's "Poor Due To" dimensions can be used to understand which metric is responsible for a _Poor_ classification. For more information on these dimensions, see [Dimensions and measures available in Call Quality Dashboard](dimensions-and-measures-available-in-call-quality-dashboard.md).
+I flussi in Call Quality dashboard sono classificati come _buoni_, _poveri_o non _classificati_ in base ai valori delle metriche di qualità chiave disponibili. Le metriche e le condizioni usate per classificare il flusso vengono visualizzate nelle tabelle seguenti. Le dimensioni "povero a causa di" di Call Quality dashboard possono essere usate per capire quale metrica è responsabile di una classificazione _scadente_ . Per altre informazioni su queste dimensioni, vedere [dimensioni e misure disponibili nel dashboard qualità chiamata](dimensions-and-measures-available-in-call-quality-dashboard.md).
 
 ### <a name="audio-classifier"></a>Classificatore audio
 
@@ -41,7 +41,7 @@ Se vengono soddisfatte una o più delle condizioni seguenti, un flusso audio vie
 
 |Metrica|Condizione|Spiegazione|
 |:-----|:-----|:-----|
-|Audio Degradation Avg|> 1,0|Average Network Mean Opinion Score degradation for stream. How much network loss and jitter have impacted the quality of received audio.|
+|Audio Degradation Avg|> 1,0|Media Network valutazione della degradazione del Punteggio di opinione per Stream. La quantità di perdite di rete e jitter ha influenzato la qualità dell'audio ricevuto.|
 |Round Trip|> 500|Media del tempo di propagazione della rete di andata e ritorno, calcolata in millisecondi. Dettagli disponibili in [RFC3550](https://tools.ietf.org/html/rfc3550).|
 |Packet Loss Rate|> 0,1|Percentuale media di perdita pacchetti dello stream.|
 |Jitter|> 30|Jitter medio dello stream in millisecondi.|

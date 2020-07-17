@@ -38,7 +38,7 @@ ms.locfileid: "44757207"
 
 _**Ultimo argomento modificato:** 2012-10-20_
 
-A *network interregion route* defines the route between a pair of network regions. Each pair of network regions in your call admission control deployment requires a network interregion route. This enables every network region within the deployment to access every other region.
+Una *route tra aree di rete* definisce la route tra una coppia di aree di rete. Ogni coppia di aree di rete nella distribuzione del servizio Controllo di ammissione di chiamata richiede una route di questo tipo. In tal modo ogni area di rete della distribuzione può accedere a tutte le altre aree.
 
 Se i collegamenti di area impostano limitazioni della larghezza di banda per le connessioni tra le aree, una route tra aree determina il percorso collegato attraversato dalla connessione per passare da un'area all'altra.
 
@@ -109,7 +109,7 @@ Nella topologia di esempio, le route tra aree di rete devono essere definite per
     
 
     > [!NOTE]  
-    > If you are creating a route for two network regions that do not have a direct network region link between them, you must add all the necessary links to complete the route. For example, the North America/APAC network interregion route requires two network region links because there is no direct network region link between them.
+    > Se si crea una route per due aree di rete tra le quali non esiste un collegamento diretto, è necessario aggiungere tutti i collegamenti necessari per completare la route. Ad esempio, la route tra le aree di rete Nord America/APAC richiede due collegamenti tra aree di rete perché non esiste un collegamento diretto tra le due aree.
 
     
     </div>

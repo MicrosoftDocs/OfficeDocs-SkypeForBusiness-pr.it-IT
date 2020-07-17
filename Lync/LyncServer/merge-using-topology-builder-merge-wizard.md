@@ -47,13 +47,13 @@ _**Ultimo argomento modificato:** 2012-10-02_
     
     ![Procedura guidata per la topologia di Unione, specificare la pagina installazione Edge](images/JJ205243.cdca609d-d4d5-47d9-9ff8-8b1daa4106e1(OCS.15).jpg "Procedura guidata per la topologia di Unione, specificare la pagina installazione Edge")  
 
-5.  In **Specify Edge Type**, enter the type of Edge Server configuration, and then click **Next**. This example uses the **Single Edge Server** option.
+5.  In **Specificare il tipo di server perimetrale** immettere il tipo di configurazione del server perimetrale e quindi fare clic su **Avanti**. In questo esempio viene utilizzata l'opzione **Server perimetrale singolo**.
     
     <div>
     
 
     > [!IMPORTANT]  
-    > <STRONG>Expanded Edge deployment</STRONG> is not a supported configuration. An <STRONG>Expanded Edge Server</STRONG> must first be converted to a <STRONG>Single Edge Server</STRONG> or a <STRONG>Load-balanced consolidated Edge</STRONG> Server.
+    > <STRONG>Distribuzione server perimetrale espanso</STRONG> non è una configurazione supportata. Un <STRONG>Server perimetrale espanso</STRONG> deve essere prima convertito in un <STRONG>Server perimetrale singolo</STRONG> o in un <STRONG>Server perimetrale consolidato con carico bilanciato</STRONG>.
 
     
     </div>
@@ -68,7 +68,7 @@ _**Ultimo argomento modificato:** 2012-10-02_
     
 
     > [!IMPORTANT]  
-    > Before you click <STRONG>Next</STRONG>, do the next step in this procedure. It is very important that you do not miss this step.
+    > Prima di fare clic su <STRONG>Avanti</STRONG>, eseguire il passaggio successivo di questa procedura. È molto importante non ignorare questo passaggio.
 
     
     </div>

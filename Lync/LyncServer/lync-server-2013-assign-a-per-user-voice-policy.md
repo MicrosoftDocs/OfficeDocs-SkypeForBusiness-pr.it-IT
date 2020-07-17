@@ -62,7 +62,7 @@ I criteri vocali globali e a livello di sito vengono assegnati automaticamente a
 
 ## <a name="unassign-a-per-user-voice-policy"></a>Annullamento dell'assegnazione di un criterio vocale per utente
 
-  - The following command unassigns any per-user voice policy previously assigned to Ken Myer. After the per-user policy is unassigned, Ken Myer will automatically be managed by using the global policy or, if one exists, his local site policy. A site policy takes precedence over the global policy.
+  - Il comando seguente annulla l'assegnazione di qualsiasi criterio vocale per utente precedentemente assegnato a Ken Myer. Dopo aver annullato l'assegnazione del criterio vocale per utente, Ken Myer verrà automaticamente gestito mediante i criteri globali oppure, se esistente, i criteri a livello di sito locale. I criteri a livello di sito hanno precedenza sui criteri globali.
     
         Grant-CsVoicePolicy -Identity "Ken Myer" -PolicyName $Null
 

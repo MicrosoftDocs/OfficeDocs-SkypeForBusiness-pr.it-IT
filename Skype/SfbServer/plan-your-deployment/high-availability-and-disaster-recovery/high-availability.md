@@ -98,7 +98,7 @@ Non è consigliabile distribuire un pool Front End contenente due soli Front End
   
 Se si ha mai bisogno di distribuire un pool con due front end server, seguire queste linee guida:
   
-- If one of the two Front End Servers goes down, you should try to bring the failed server back up as soon as you can. Similarly, if you need to upgrade one of the two servers, bring it back online as soon as the upgrade is finished.
+- Se uno dei due Front End Server si arresta, riattivarlo al più presto. Analogamente, se occorre aggiornare uno dei due server, riportarlo online subito dopo l'aggiornamento.
     
 - Se per qualche ragione si rende necessario arrestare entrambi i server contemporaneamente, al termine dell'intervento procedere come segue:
     

@@ -49,7 +49,7 @@ Prima di rimuovere il pool, è necessario eseguire la procedura seguente per ogn
     
         Get-CsConferenceDirectory
     
-    Because this cmdlet returns all the conference directories in your organization, you may want to limit the results to only the pool you want to decommission. For example, if you want to decommission a pool with the fully qualified domain name (FQDN) pool01.contoso.net:
+    Dato che il cmdlet restituisce tutte le directory conferenze nell'organizzazione, può essere utile limitare i risultati solo al pool per cui si desidera rimuovere le autorizzazioni. Se si desidera rimuovere le autorizzazioni per un pool con il nome di dominio completo (FQDN) pool01.contoso.net, ad esempio, utilizzare il comando seguente:
     
         Get-CsConferenceDirectory | Where-Object {$_.ServiceID -match "pool01.contoso.net"}
     

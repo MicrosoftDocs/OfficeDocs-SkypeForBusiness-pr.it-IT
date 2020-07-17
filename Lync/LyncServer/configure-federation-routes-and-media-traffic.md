@@ -269,7 +269,7 @@ Utilizzare le procedure seguenti per la transizione della route di Federazione e
     
 
     > [!NOTE]  
-    > If you do not have a hardware load balancer, you need to update the DNS A record for federation to resolve to the new Lync Server Access Edge server. To accomplish this with minimum disruption, reduce the TLL value for the external Lync Server Access Edge FQDN so that when DNS is updated to point to the new Lync Server Access Edge, federation and remote access will be updated quickly.
+    > Se non si dispone di un servizio di bilanciamento del carico hardware, è necessario aggiornare il record A DNS per la federazione in modo che venga risolto nel nuovo server Access Edge Server di Lync Server. Per eseguire questa operazione causando una minima interruzione del servizio, ridurre il valore TLL per l'FQDN Access Edge di Lync Server esterno in modo che se il DNS viene aggiornato per puntare al nuovo Access Edge Server di Lync Server, la federazione e l'accesso remoto vengano aggiornati rapidamente.
 
     
     </div>

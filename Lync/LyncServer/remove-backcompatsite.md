@@ -49,7 +49,7 @@ Dopo avere disattivato tutti i pool e avere disinstallato tutti i server perimet
 
 3.  Fare clic su **Avanti** per continuare.
 
-4.  On the **Specify Legacy Edge** page, ensure that list of Edge Servers is empty. If the list is not empty, use the **Remove** button to remove all the legacy Edge Servers, and then click **Next**.
+4.  Nella pagina **Specifica il server perimetrale legacy** assicurarsi che l'elenco di server perimetrali sia vuoto. Se l'elenco non è vuoto, utilizzare il pulsante **Rimuovi** per rimuovere tutti i server perimetrali legacy e quindi fare clic su **Avanti**.
     
     ![Procedura guidata per la topologia di Unione, specificare la pagina installazione Edge](images/JJ204637.fb35a59a-711e-4259-b177-7311df1fed3c(OCS.15).jpg "Procedura guidata per la topologia di Unione, specificare la pagina installazione Edge")  
 

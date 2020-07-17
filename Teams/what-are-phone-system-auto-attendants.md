@@ -42,7 +42,7 @@ Per configurare un operatore automatico per il sistema telefonico, vedere [confi
 Un operatore automatico cloud ha le caratteristiche seguenti:
   
 - Può fornire messaggi di saluto informativi o aziendali.
-- It can provide custom corporate menus. You can customize these menus to have more than one level.
+- Può offrire menu aziendali personalizzati. Puoi personalizzare questi menu per disporre di più di un livello.
 - Fornisce la ricerca nella directory che consente alle persone che chiamano per cercare un nome nella directory dell'organizzazione.
 - Consente a un utente che chiama di raggiungere o di uscire da un messaggio per una persona dell'organizzazione.
 - Supporta più lingue per le richieste, la sintesi vocale e il riconoscimento vocale.

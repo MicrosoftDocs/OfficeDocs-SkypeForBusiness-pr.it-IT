@@ -49,13 +49,13 @@ Eseguire la procedura seguente per la transizione del Mediation Server, collocat
 
 3.  Fare clic con il pulsante destro del mouse su **Pool Mediation Server** e quindi scegliere **Nuovo Mediation Server**.
 
-4.  On the **Define New Mediation Pool** page, provide the FQDN of the new Mediation Server pool. Also, select whether this pool will be a single-server or multiple-server pool, and then click **Next**.
+4.  Nella pagina **Definisci nuovo pool Mediation Server** immettere il nome di dominio completo del nuovo pool Mediation Server, specificare se sarà un pool a server singolo o a più server e quindi fare clic su **Avanti**.
 
 5.  Selezionare il pool dell'hop Front End server successivo al quale il nuovo Mediation Server instraderà le chiamate in arrivo e quindi fare clic su **Avanti**.
 
 6.  Selezionare il pool di server perimetrali che deve essere utilizzato dal Mediation Server e quindi fare clic su **Avanti**.
 
-7.  On the **Specify PSTN gateways** page, associate the previous PSTN gateway with the Mediation Server. Select the gateway and then click **Add**.
+7.  Nella pagina **Specificare i gateway PSTN** associare il gateway PSTN precedente al Mediation Server. Selezionare il gateway e quindi fare clic su **Aggiungi**.
 
 8.  Fare clic su **Fine** per chiudere la procedura guidata **Definisci nuovo pool Mediation Server**.
 

@@ -47,7 +47,7 @@ In generale, la Rubrica di Lync Server 2010 viene migrata insieme al resto della
 
 **Voci della Rubrica raggruppate**
 
-If you set the **PartitionbyOU** WMI property to True to create address books for each OU, you need to set the **msRTCSIP-GroupingId** Active Directory attribute on users and contacts if you want to continue grouping address book entries. You might want to group address book entries to limit the scope of Address Book searches. To use the **msRTCSIP-GroupingId** attribute, write a script to populate the attribute, assigning the same value for all of the users that you want to group together. For example, assign a single value for all the users in an OU.
+Se la proprietà WMI **PartitionbyOU** è stata impostata su True per creare una Rubrica per ogni unità organizzativa e si desidera continuare a raggruppare le voci della Rubrica, è necessario impostare l'attributo di Active Directory **msRTCSIP-GroupingId** per utenti e contatti. Per limitare l'ambito delle ricerche nella Rubrica è consigliabile raggruppare le voci della Rubrica. Per utilizzare l'attributo **msRTCSIP-GroupingId**, creare uno script per popolare l'attributo, assegnando lo stesso valore per tutti gli utenti che si desidera raggruppare. Ad esempio, assegnare un unico valore a tutti gli utenti di un'unità organizzativa.
 
 **Regole di normalizzazione della Rubrica**
 
@@ -57,7 +57,7 @@ Se sono state personalizzate le regole di normalizzazione della Rubrica nell'amb
 
 
 > [!NOTE]  
-> If your organization uses remote call control and you customized Address Book normalization rules, you must perform the procedure in this topic before you can use remote call control. The procedure requires membership in the RTCUniversalServerAdmins group or equivalent rights.
+> Se nell'organizzazione viene utilizzato il controllo delle chiamate remote e le regole di normalizzazione della Rubrica sono state personalizzate, prima di utilizzare il controllo delle chiamate remote è necessario eseguire la procedura descritta in questo argomento. L'esecuzione della procedura richiede l'appartenenza al gruppo RTCUniversalServerAdmins o diritti equivalenti.
 
 
 
@@ -86,7 +86,7 @@ Se si imposta il valore di **UseNormalizationRules** su false in modo che gli ut
 
 3.  Alcuni tipi di voci non funzioneranno correttamente in Lync Server 2013. Cercare all'interno del file i tipi di voci descritti in questo passaggio, modificarli secondo necessità e salvare le modifiche nella cartella condivisa della Rubrica all'interno del pool pilota.
     
-    Strings that include required whitespace or punctuation cause normalization rules to fail because these characters are stripped out of the string that is input to the normalization rules. If you have strings that include required whitespace or punctuation, you need to modify the strings. For example, the following string would cause the normalization rule to fail:
+    Le stringhe che includono spazi o caratteri di punteggiatura necessari provocano un errore nelle regole di normalizzazione poiché tali caratteri vengono rimossi dalla stringa utilizzata come input nelle regole di normalizzazione. Se sono presenti stringhe che includono spazi o caratteri di punteggiatura necessari, è necessario modificare le stringhe. La stringa seguente, ad esempio, genererà un errore nelle regola di normalizzazione:
     
         \s*\(\s*\d\d\d\s*\)\s*\-\s*\d\d\d\s*\-\s*\d\d\d\d
     

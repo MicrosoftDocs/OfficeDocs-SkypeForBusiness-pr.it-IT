@@ -69,9 +69,9 @@ Una categoria specifica tutti gli utenti e i gruppi che possono essere membri di
 
 La definizione di **AllowedMembers** e **Creators** per una categoria ha i vantaggi seguenti:
 
-  - All chat rooms in this category are bound by the restrictions set at the category level. You can use this to segregate chat rooms based on business need and access policies.
+  - Tutte le chat room nella categoria sono vincolate da restrizioni impostate a livello di categoria. È possibile usare questo aspetto per isolare le chat room in base ai criteri di accesso e alle esigenze aziendali.
 
-  - A user who is in the **Creators** list can create new chat rooms in that category. If you want to implement a system where a restricted number of personnel in the organization can create chat rooms, this control can be used to meet that requirement.
+  - Un utente incluso nell'elenco **Creator** può creare nuove chat room nella categoria. Se si desidera implementare un sistema in cui un numero limitato di persone dell'organizzazione può creare chat room, questo controllo può essere usato per soddisfare tale requisito.
 
 </div>
 
@@ -81,7 +81,7 @@ La definizione di **AllowedMembers** e **Creators** per una categoria ha i vanta
 
 Il **AllowedMembers** di una categoria deve includere tutti gli utenti che utilizzeranno qualsiasi chat room persistente in questa categoria. A seconda dei requisiti di protezione dei dati aziendali e di verifica del livello appropriato di accesso, è possibile definire una o più categorie per specificare chi può cercare e partecipare alle chat room. Se si vuole consentire solo a un determinato set di utenti (un helpdesk centrale o solo i dipendenti a tempo pieno) di creare chat room, è possibile limitare l'ambito di utenti **Creator** di una categoria in modo conseguente.
 
-Categories can also be used to create ethical walls. Ethical walls prevent any conflict of interest in an organization. For example, an administrator can create chat rooms in a category for traders only, whereas chat rooms in another category can be used by analysts only.
+Le categorie possono essere inoltre usate per creare barriere etiche, le quali impediscono conflitti di interesse in un'organizzazione. Un amministratore può ad esempio creare chat room in una categoria solo per operatori di borsa mentre un'altra categoria può essere riservata agli analisti.
 
 <div>
 

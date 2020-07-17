@@ -30,9 +30,9 @@ ms.locfileid: "44841987"
 ---
 # <a name="what-are-communications-credits"></a>Cosa sono i Crediti comunicazioni?
 
-Communications Credits are a convenient way to pay for Audio Conferencing and Calling Plan minutes. It helps ensure you and your users are never caught without being able to:
+[] I Crediti comunicazioni son un modo comodo per pagare i minuti di Audioconferenze e Piani per chiamate. Tu e i tuoi utenti sarete sempre in grado di:
   
-- Add toll-free numbers to use with Audio Conferencing meetings, auto attendants, or call queues. Toll-free calls are billed per minute and require a positive Communications Credits balance.
+- Aggiungere numeri verdi da usare per riunioni, operatori automatici o code di chiamata per l'Audioconferenza. Le chiamate a numero verde sono fatturate a minuti e richiedono un saldo positivo di Crediti comunicazioni.
     
 - Effettuare chiamate in uscita da una riunione in audioconferenza per aggiungere altri utenti da qualsiasi parte del mondo.
     
@@ -45,10 +45,10 @@ Communications Credits are a convenient way to pay for Audio Conferencing and Ca
 - Effettuare una chiamata in uscita e pagare al minuto dopo aver esaurito l'assegnazione dei minuti mensili.
     
 > [!NOTE]
-> Outbound calls to some destinations may be included in your Audio Conferencing subscription. Please check your subscription information for details. 
+> Le chiamate in uscita verso alcune destinazioni possono essere incluse nel tuo abbonamento Audioconferenza. Per i dettagli, controlla le informazioni sull'abbonamento. 
   
 > [!NOTE]
-> If your organization is located in a different region than the billing address of your Enterprise Agreement (EA), you might not be able to purchase Communications Credits. If you are unable to acquire Communications Credits, open a support incident from the portal and we will work with you to mitigate this issue until a permanent solution is in place. 
+> Se l'organizzazione risiede in un'area geografica diversa dall'indirizzo di fatturazione del tuo contratto aziendale (EA, enterprise agreement), potrebbe non essere possibile acquistare Crediti comunicazioni. Se non riesci ad acquistare Crediti comunicazioni, apri un ticket di assistenza sul portale e collaboreremo per correggere la situazione finché non sarà implementata una soluzione permanente. 
   
 ## <a name="what-are-the-communications-credits-rates"></a>Quali sono le tariffe dei Crediti comunicazioni?
 
@@ -56,14 +56,14 @@ Se si sta chiedendo quale sia il costo delle chiamate per i piani di chiamata, v
   
 ## <a name="what-is-it"></a>Descrizione
 
-To use toll-free numbers in Skype for Business, Communications Credits are required as these calls are billed per minute. Also, we recommend that you set up Communications Credits for your Calling Plan and Audio Conferencing users who need the ability to dial out to **any PSTN destination**. Many countries/regions are included, but some destinations may not be included in your Calling Plan or Audio Conferencing subscriptions. If you don't set up Communications Credits or assign a license to your users and you run out minutes for your organization (depending on your Calling Plan, Audio Conferencing plan, or your country/region), those users won't be able to make calls or dial out from Online Audio Conferencing meetings.
+Per usare i numeri verdi in Skype for Business, sono necessari Crediti comunicazioni in quanto queste chiamate sono fatturate a minuto. Inoltre, è consigliabile impostare i Crediti comunicazioni per gli utenti di Piani per chiamate e Audioconferenza che hanno necessità di effettuare chiamate in uscita verso **qualsiasi destinazione PSTN**. Sono inclusi molti paesi/aree geografiche, ma alcune destinazioni PSTN possono non essere incluse in un dato abbonamento Piano per chiamate e Audioconferenza. Se non vengono impostati i Crediti comunicazioni o assegnata una licenza agli utenti e vengono esauriti i minuti per la propria organizzazione (a seconda del Piano per chiamate e Audioconferenza per lo specifico paese/area geografica), quegli utenti non potranno effettuare chiamate o chiamate in uscita dalle riunioni online in audioconferenza.
   
 > [!NOTE]
 > È necessario configurare i crediti per le comunicazioni e quindi assegnare una licenza per i crediti di comunicazione per ogni utente degli utenti attivi degli utenti dell'interfaccia di **amministrazione di Microsoft 365**  >  **Users**  >  **Active Users**. 
   
 È consigliabile valutare attentamente l'utilizzo del servizio PSTN dell'organizzazione per comprendere la configurazione migliore per i crediti per le comunicazioni. Per altre informazioni sui servizi PSTN, è possibile leggere le [domande frequenti](Audio-Conferencing-common-questions.md)sul [sistema telefonico e sulle chiamate](calling-plan-landing-page.md) e sui piani di audioconferenza.
   
-You can set up consumption billing using a **one-time funding** of the pre-paid balance **OR** by setting up an **auto-recharge** ( **recommended** ) amount with a minimum balance that will trigger a purchase for that recharge amount. Initially, it's suggested that you set up auto recharge amounts that allow you to monitor actual usage and find the right auto recharge thresholds that meet your needs and usage patterns. Communications Credits should be monitored over time and then adjust the minimum balance and recharge amounts as needed to be tailored for each organization's needs.
+È possibile considerare la fatturazione a consumo con il **pagamento una tantum** del saldo prepagato **OPPURE** l'impostazione di una somma di **autoricarica** ( **opzione consigliata** ) con un saldo minimo che attiverà un acquisto per tale importo da ricaricare. Inizialmente, è consigliabile configurare importi di autoricarica che consentano di monitorare l'uso effettivo e individuare le giuste soglie di autoricarica che soddisfino le proprie esigenze e i piani di utilizzo. I Crediti comunicazioni dovrebbero essere misurati nel tempo per determinare il saldo minimo e gli importi di ricarica in base alle esigenze di ogni organizzazione.
   
 > [!NOTE]
 > È possibile vedere i piani e i prezzi accedendo [all'interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e accedendo agli abbonamenti per la **fatturazione**  >  **Subscriptions**  >  **Aggiungi abbonamenti**. 
@@ -74,7 +74,7 @@ Nell'interfaccia di **amministrazione di Microsoft 365**  >  per l'**Billing**  
 
 Ogni organizzazione farà un diverso uso dei piani per chiamate, a seconda del volume e delle tariffe. Sarà necessario chiedere questo tipo di dati di utilizzo al provider di servizi corrente. Per le organizzazioni che usano Skype for business già come provider di servizi, è possibile ottenere i dati di utilizzo tramite la revisione in report dell'interfaccia di **amministrazione di Microsoft 365**o nell'interfaccia di  >  **Reports** **amministrazione di Skype for business**per  >  **Reports**  >  **i dettagli sull'utilizzo PSTN**.
   
-When you are setting up Communications Credits, you will need to investigate call usage for your organization to determine the amounts that you will need to put in. You can get call usage information by reviewing the **PSTN usage details** report. This report lets you export the call data records to Excel and create custom reports.
+Quando si impostano i Crediti comunicazioni è necessario analizzare l'uso delle chiamate nella propria organizzazione per determinare gli importi da considerare. Per ottenere informazioni sull'uso delle chiamate, esaminare il report **Dettagli dell'utilizzo della rete PSTN**. Questo report permette di esportare i record dei dati di chiamata su Excel e di creare report personalizzati.
 
 > [!NOTE]
 > I crediti per le comunicazioni vengono usati anche per i numeri a tariffa Premium. Il chiamante paga le spese.

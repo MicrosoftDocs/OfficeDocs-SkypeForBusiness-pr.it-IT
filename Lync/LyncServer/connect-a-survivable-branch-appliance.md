@@ -69,7 +69,7 @@ Ogni Survivable Branch Appliance (SBA) è associato a un pool Front end che fung
 
 7.  Fare clic su **Avanti** e quindi eseguire una delle operazioni seguenti:
     
-    1.  If you are using a Lync 2010 Survivable Branch Appliance or Server at this site, be sure to uncheck the **Open the New Survivable Wizard when this wizard closes** option. Click **Finish**.
+    1.  Se nel sito si utilizza un Survivable Branch Appliance o un Survivable Branch Server di Lync 2010, deselezionare l'opzione **Aprire la procedura guidata Nuovo Survivable Branch Appliance al termine di questa procedura guidata** e quindi fare clic su **Fine**.
 
 8.  Per associare la SBA legacy Lync Server 2010 al pool Front End di Lync Server 2013:
     

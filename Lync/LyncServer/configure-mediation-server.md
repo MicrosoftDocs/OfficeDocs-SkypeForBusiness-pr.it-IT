@@ -39,7 +39,7 @@ _**Ultimo argomento modificato:** 2012-09-28_
 
 In questa procedura vengono illustrati i passaggi per configurare il pool di Lync Server 2013 per l'utilizzo di Lync Server 2013 Mediation Server, anziché del Mediation Server di Office Communications Server 2007 R2 legacy.
 
-To successfully publish, enable, or disable a topology when adding or removing a server role, you should be logged in as a user who is a member of the RTCUniversalServerAdmins and Domain Admins groups. It is also possible to delegate the proper administrator rights and permissions for adding server roles. For details, see Delegate Setup Permissions in the Standard Edition server or Enterprise Edition server Deployment documentation. For other configuration changes, only membership in the RTCUniversalServerAdmins group is required.
+Per pubblicare, abilitare o disabilitare correttamente una topologia quando si aggiunge o si rimuove un ruolo del server, è necessario accedere come utente membro dei gruppi RTCUniversalServerAdmins e Domain Admins. È inoltre possibile delegare i diritti di amministratore e le autorizzazioni appropriate per l'aggiunta di ruoli del server. Per informazioni dettagliate, vedere Delegare autorizzazioni di installazione nella documentazione relativa alla distribuzione del server Standard Edition o Enterprise Edition. Per apportare altre modifiche relative alla configurazione è sufficiente appartenere al gruppo RTCUniversalServerAdmins.
 
 <div>
 
@@ -63,7 +63,7 @@ To successfully publish, enable, or disable a topology when adding or removing a
 
 4.  Inserire le informazioni seguenti nella pagina **Definisci nuovo gateway IP/PSTN**:
     
-      - Enter the gateway FQDN or IP address. The FQDN of the gateway is required if the gateway uses the TLS protocol.
+      - Immettere il nome di dominio completo (FQDN) o l'indirizzo IP del gateway. Il nome di dominio completo (FQDN) del gateway è richiesto se il gateway utilizza il protocollo TLS.
     
       - Accettare il valore predefinito di **Porta di attesa per gateway IP/PSTN** o immettere la nuova porta di attesa, se è stata modificata.
     
