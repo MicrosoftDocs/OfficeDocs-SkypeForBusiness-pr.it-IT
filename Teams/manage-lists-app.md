@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: b7e237ffd041c2207516b714147d555b3a1b9043
-ms.sourcegitcommit: 70b80892a152f86a6d596f0f5b58cf391bc29098
+ms.openlocfilehash: 1423c17d57c0074f9e6db1091791eb3f17370414
+ms.sourcegitcommit: f7f86744c6dbf0db87e1408fd1f4b770fda07ff9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138369"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158694"
 ---
 # <a name="manage-the-lists-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app elenchi per l'organizzazione in Microsoft Teams
 
@@ -46,7 +46,7 @@ I modelli degli elenchi sono adattati a scenari comuni per il monitoraggio delle
 
 - Tenere traccia dei problemi e portarli alla chiusura usando il modello Tracker problema.
 - Organizzare tutti i dettagli dell'evento con il modello di itinerario dell'evento.
-- Usa il modello patients per registrare le esigenze e lo stato dei pazienti in modo che i team di assistenza sanitaria nell'organizzazione del settore sanitario possano monitorare e coordinare le cure.
+- Usare il modello patients per registrare le esigenze e lo stato dei pazienti per i team di assistenza nell'organizzazione sanitaria per monitorare e coordinare le cure.
 - Tenere traccia dello stato delle applicazioni di prestito con il modello prestiti.
 
 ## <a name="example-scenario"></a>Scenario di esempio

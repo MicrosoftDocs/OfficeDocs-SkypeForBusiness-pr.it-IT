@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: be512ac7726defdd2879114eb47ed3e66a229e30
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 0ed9c6b55551e7541f8074b71f67abd57851df9c
+ms.sourcegitcommit: f7f86744c6dbf0db87e1408fd1f4b770fda07ff9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44751538"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158504"
 ---
 # <a name="how-to-use-microsoft-teams-effectively"></a>Come usare efficacemente Microsoft Teams
 
@@ -37,10 +37,10 @@ La tecnologia sta innovando a ritmo inedito. La permanenza attuale e l'attivazio
 
 ## <a name="monitor-for-network-health-and-quality"></a>Monitorare l'integrità e la qualità della rete
 
-Lo stato della rete interessa l'esperienza utente. Quando un utente ha un'esperienza povera (ad esempio, le cadute di chiamata o il tempo di ritardo durante l'Unione delle riunioni), queste correlano alla tecnologia stessa, lasciandole con l'impressione che la tecnologia non funzioni e apra la porta per le app non supportate. L'implementazione di un piano per monitorare e mitigare l'integrità della rete consentirà di garantire un'esperienza utente positiva oltre a ridurre le chiamate al proprio supporto tecnico. Per altre informazioni, vedere gli articoli seguenti:
+Lo stato della rete interessa l'esperienza utente. Quando un utente ha un'esperienza povera (ad esempio, le cadute di chiamata o il tempo di ritardo durante l'Unione delle riunioni), queste correlano alla tecnologia stessa, lasciandole con l'impressione che la tecnologia non funzioni e apra la porta per le app non supportate. L'implementazione di un piano per monitorare e mitigare l'integrità della rete consentirà di garantire un'esperienza utente positiva oltre a ridurre le chiamate al proprio supporto tecnico. Per altre informazioni, vedere:
 
 - [Gestire il servizio](upgrade-operate-my-service.md)
-- [Monitorare la qualità](upgrade-monitor-quality.md)
+- [Monitorare e migliorare la qualità delle chiamate](monitor-call-quality-qos.md)
 - [Migliorare il servizio](upgrade-enhance-my-service.md)
 
 ## <a name="drive-user-momentum-and-adoption"></a>Slancio e adozione dell'utente dell'unità

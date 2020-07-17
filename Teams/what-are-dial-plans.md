@@ -21,12 +21,12 @@ ms.custom:
 - ms.teamsadmincenter.voice.dialplans.overview
 - Calling Plans
 description: "Informazioni sul tipo di piani per chiamate telefoniche (PSTN Calling dial plan) disponibili con teams e su come sceglierne uno per l'organizzazione.  "
-ms.openlocfilehash: 3ca0848094e94ff302cfcdeaa80ddd72a3b86698
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: ddd2de412d0ddd00135f9b095eb2d14c8fc4c922
+ms.sourcegitcommit: 91f6db3cdb4f2b7761d2b21f0f4eef405edacd5f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836686"
+ms.lasthandoff: 07/16/2020
+ms.locfileid: "45153578"
 ---
 # <a name="what-are-dial-plans"></a>Che cosa sono i piani di chiamata?
 
@@ -57,6 +57,9 @@ Di seguito sono riportati i possibili piani di chiamata effettivi.
  **Paese del servizio utente del tenant** Se un piano di chiamata utente del tenant è definito e assegnato a un utente, l'utente provisioning riceverà un piano di chiamata effettivo costituito dal piano di dial User del tenant Unito e dal dial plan del paese di servizio associato alla posizione di utilizzo.
 
 Vedere [creare e gestire piani di chiamata](create-and-manage-dial-plans.md) per creare piani di chiamata del tenant.
+
+> [!NOTE]
+> Nello scenario in cui nessuna regola di normalizzazione del dial plan si applica a un numero composto, la stringa chiamata è ancora normalizzata per anteporre "+ CC", dove CC è il codice paese della posizione di utilizzo dell'utente che effettua la chiamata. Questo si applica ai piani di chiamata, al routing diretto e agli scenari di accesso esterno per conferenze PSTN.
 
 ## <a name="planning-for-tenant-dial-plans"></a>Pianificazione dei piani di chiamata tenant
 
@@ -105,7 +108,7 @@ Devono essere assegnate una o più regole di normalizzazione al piano di chiamat
 Dato che qualsiasi piano di dialing del tenant viene effettivamente Unito con un dial plan di paese di servizio di un determinato utente, è probabile che le regole di normalizzazione del piano di servizio dial plan debbano essere valutate per determinare quali regole di normalizzazione del piano di chiamata del tenant sono necessarie. Il cmdlet **Get-CsEffectiveTenantDialPlan** può essere utilizzato per questo scopo. Il cmdlet prende l'identità dell'utente come parametro di input e restituisce tutte le regole di normalizzazione applicabili per l'utente.
 
 ### <a name="creating-normalization-rules"></a>Creazione di regole di normalizzazione
-<a name="createrule"> </a> <a name="regularexpression"> </a>
+<a name="createrule"> </a>
 
 Le regole di normalizzazione usano le espressioni regolari di .NET Framework per specificare i modelli di corrispondenza numerica che il server usa per tradurre le stringhe di chiamata nel formato E. 164. Possono essere create regole di normalizzazione specificando l'espressione regolare per cercare l'abbinamento e la conversione da eseguire quando si trova l'abbinamento. Terminata l'operazione, è possibile immettere un numero di prova per verificare che la regola di normalizzazione funzioni come previsto.
 
@@ -117,11 +120,11 @@ Per creare e gestire regole di normalizzazione per i piani di chiamata del tenan
 
 La tabella seguente mostra esempi di regole di normalizzazione scritte sotto forma di espressioni regolari .NET Framework. Si tratta solo di esempi, non di regole fisse di riferimento per la creazione di regole di normalizzazione.
 
- **Regole di normalizzazione con le espressioni regolari di .NET Framework**<a name="#regularexpression"> </a>
+<a name="regularexpression"> </a> 
+ **Regole di normalizzazione con le espressioni regolari di .NET Framework**
 
-||||||
+| Nome regola<br/> | Descrizione<br/> | Schema numerico<br/> | Conversione<br/> | Esempio<br/> |
 |:-----|:-----|:-----|:-----|:-----|
-|**Nome regola** <br/> |**Descrizione** <br/> |**Schema numerico** <br/> |**Conversione** <br/> |**Esempio** <br/> |
 |4digitExtension  <br/> |Converte i numeri interni a 4 cifre.  <br/> |^(\\d{4})$  <br/> |+1425555$1  <br/> |0100 viene convertito in +14255550100  <br/> |
 |5digitExtension  <br/> |Converte i numeri interni a 5 cifre.  <br/> |^5(\\d{4})$  <br/> |+1425555$1  <br/> |50100 viene convertito in +14255550100  <br/> |
 |7digitcallingRedmond  <br/> |Converte i numeri a 7 cifre in numeri locali di Redmond.  <br/> |^(\\d{7})$  <br/> |+1425$1  <br/> |5550100 viene convertito in +14255550100  <br/>|
@@ -135,13 +138,12 @@ La tabella seguente mostra esempi di regole di normalizzazione scritte sotto for
 
  La tabella seguente illustra un piano di chiamata di esempio per Redmond, Washington, Stati Uniti, in base alle regole di normalizzazione indicate nella tabella precedente.
 
-| |
-|:---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Piano di chiamata Redmond** <br/>                                                                                                                              |
-| 5digitExtension <br/>                                                                                                                                    |
-| 7digitcallingRedmond <br/>                                                                                                                               |
-| RedmondSitePrefix <br/>                                                                                                                                  |
-| RedmondOperator <br/>                                                                                                                                    |
+| Piano di chiamata Redmond<br/> |
+|:-----------------------|                                                                                                                      
+| 5digitExtension <br/> |                                                                                                                                    
+| 7digitcallingRedmond <br/> |
+| RedmondSitePrefix <br/> |
+| RedmondOperator <br/> |
 
 > [!NOTE]
 > I nomi delle regole di normalizzazione visualizzati nella tabella precedente non includono spazi, ma si tratta di una scelta. Il primo nome nella tabella, ad esempio, avrebbe potuto essere "5 digit extension" o "5-digit Extension" e sarebbe stato comunque valido.

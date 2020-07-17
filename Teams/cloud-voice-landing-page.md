@@ -20,33 +20,32 @@ search.appverid: MET150
 description: Leggi altre informazioni sulla funzionalità cloud Voice e leggi le decisioni di distribuzione necessarie che dovrai affrontare.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 96d4f6b5e75e0f0f716b4f1b840b079996344cfb
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 8106e5ef30b71ec82e9b1ae42f785b7a73b170a5
+ms.sourcegitcommit: f7f86744c6dbf0db87e1408fd1f4b770fda07ff9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44690792"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158644"
 ---
-# <a name="cloud-voice-in-microsoft-teams"></a>Cloud Voice in Microsoft Teams
+# <a name="voice---phone-system-and-pstn-connectivity-options"></a>Opzioni di connettività PSTN e di sistema telefonico
 
-L'[Introduzione](get-started-with-teams-quick-start.md) è stata completata. Si è implementato Teams nell'organizzazione, con [chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md). Forse hai distribuito [riunioni & conferenze](deploy-meetings-microsoft-teams-landing-page.md). Ora si è pronti ad aggiungere funzionalità di cloud Voice per gli utenti. 
+L'[Introduzione](get-started-with-teams-quick-start.md) è stata completata. Si è implementato Teams nell'organizzazione, con [chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md). Forse hai distribuito [riunioni & conferenze](deploy-meetings-microsoft-teams-landing-page.md). Ora si è pronti per aggiungere funzionalità vocali per gli utenti. 
 
-Cloud Voice offre funzionalità PBX (Private Branch Exchange) e opzioni per la connessione alla rete PSTN (Public Switched Telephone Network).
+Voice offre funzionalità PBX (Private Branch Exchange) e opzioni per la connessione alla rete PSTN (Public Switched Telephone Network).
 
-Questo articolo consente di decidere se è necessario modificare le impostazioni vocali predefinite del cloud, in base al profilo dell'organizzazione e ai requisiti aziendali, quindi illustra ogni modifica. Le impostazioni sono suddivise in due gruppi, a partire dal set di [modifiche che è più probabile apportare](#core-deployment-decisions). Il secondo gruppo include le [impostazioni aggiuntive](#additional-deployment-decisions) che può essere utile configurare in base alle esigenze dell'organizzazione.
+Questo articolo consente di decidere se è necessario modificare le impostazioni vocali predefinite, in base al profilo dell'organizzazione e ai requisiti aziendali, quindi illustra ogni modifica. Le impostazioni sono suddivise in due gruppi, a partire dal set di [modifiche che è più probabile apportare](#core-deployment-decisions). Il secondo gruppo include le [impostazioni aggiuntive](#additional-deployment-decisions) che può essere utile configurare in base alle esigenze dell'organizzazione.
 
 È consigliabile che tutte le organizzazioni funzionino tramite le decisioni principali e quindi, se l'organizzazione ha requisiti aggiuntivi, esaminare il materiale seguente.
 
 
 
-## <a name="learn-more-about-cloud-voice"></a>Leggi altre informazioni su cloud Voice
+## <a name="learn-more-about-voice"></a>Leggi altre informazioni su Voice
 
-Gli articoli seguenti includono ulteriori informazioni sulla distribuzione e l'uso delle funzionalità vocali cloud in teams:
+Gli articoli seguenti includono ulteriori informazioni sulla distribuzione e l'uso delle funzionalità vocali in teams:
 
 - [Sistema telefonico in Microsoft 365 o Office 365](what-is-phone-system-in-office-365.md)
 - [Sistema telefonico con piani di chiamata](calling-plan-landing-page.md)
 - [Instradamento diretto di Sistema telefonico](direct-routing-landing-page.md)
-- [Distribuzione di cloud Voice](cloud-voice-deployment.md)
 - [Soluzioni di telefonia Microsoft](https://docs.microsoft.com/SkypeForBusiness/hybrid/msft-telephony-solutions)
 - Per altre informazioni sul sistema telefonico, vedere la sessione seguente: [Introduzione al sistema telefonico in Microsoft teams](https://aka.ms/teams-phone-system)
 

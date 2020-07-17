@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4ab67b8a8181398c49e4763b3217a2f1ed770a6a
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 359f5071444942fd2209c39b9e93b1b9424ec0e0
+ms.sourcegitcommit: f7f86744c6dbf0db87e1408fd1f4b770fda07ff9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44666058"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158684"
 ---
 # <a name="prepare-your-service-for-upgrading-to-teams"></a>Preparare il servizio per l'aggiornamento a teams
 
@@ -40,9 +40,9 @@ Questo articolo fa parte della fase di preparazione tecnica del viaggio di aggio
 
 Questo articolo offre una panoramica dei requisiti per preparare l'organizzazione per i servizi di collaborazione e cloud Voice con teams. Preparandolo in modo corretto, puoi essere certo di essere pronto per consentire l'organizzazione a queste funzionalità.
 
-## <a name="onboarding-checklists-for-microsoft-teams-rollout"></a>Elenchi di controllo onboarding per l'implementazione di Microsoft Teams
+## <a name="onboarding-checklists-and-landing-pages-for-microsoft-teams-rollout"></a>Elenchi di controllo e pagine di destinazione onboarding per Microsoft Teams
 
-Gli elenchi di controllo seguenti illustrano la procedura per la distribuzione di Microsoft teams nell'organizzazione:
+Gli elenchi di controllo e le pagine di destinazione seguenti illustrano i passaggi per la distribuzione di Microsoft teams nell'organizzazione:
 
 - [Preparare Microsoft 365 o Office 365 per Teams](onboarding-checklist-enable-office-365.md)
 
@@ -50,9 +50,12 @@ Gli elenchi di controllo seguenti illustrano la procedura per la distribuzione d
 
 - [Preparare la rete](prepare-network.md)
 
-- [Configurare i carichi di lavoro cloud Voice in teams](onboarding-checklist-configure-cloud-voice-workloads-in-Microsoft-Teams.md)
+- [Chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md)
 
-- [Configurare il routing diretto in teams](onboarding-checklist-configure-direct-routing-in-microsoft-teams.md)
+- [Riunioni e servizi di audioconferenza](deploy-meetings-microsoft-teams-landing-page.md)
+
+- [Sistema telefonico e opzioni di connettività PSTN](cloud-voice-landing-page.md)
+
 
 Attività e attività in questi elenchi di controllo sono gli elementi principali "da fare" che si applicano a tutte le distribuzioni di funzionalità di collaborazione e Voice con teams. È possibile personalizzare gli elenchi di controllo per includere le attività e le attività specifiche per il proprio viaggio in teams.
 

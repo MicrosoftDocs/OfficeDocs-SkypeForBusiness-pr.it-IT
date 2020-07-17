@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 241c1f2ab0287b6beb2a99386b2f04b1f7cbfb28
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 1199bacde9ed41152cde6054975963cfd5a19ae9
+ms.sourcegitcommit: f7f86744c6dbf0db87e1408fd1f4b770fda07ff9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44666068"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158734"
 ---
 # <a name="prerequisites-and-environmental-dependencies-for-teams"></a>Prerequisiti e dipendenze ambientali per i team
 
@@ -48,12 +48,16 @@ Vedere gli articoli seguenti per informazioni sui prerequisiti e sul modo in cui
 
 - Se l'organizzazione non ha sincronizzato le identità con Azure Active Directory, vedere [modelli di identità e autenticazione in Microsoft teams](identify-models-authentication.md).
 
-- Se l'organizzazione non ha<sup>una</sup>t di Exchange Online, vedere [informazioni su come interagire con Exchange e Microsoft teams](Exchange-Teams-interact.md).
+- Se l'organizzazione non ha Exchange Online, vedere [informazioni su come interagire con Exchange e Microsoft teams](Exchange-Teams-interact.md).
 
 - Se l'organizzazione non ha SharePoint Online, vedere [informazioni sul modo in cui SharePoint Online e OneDrive for business interagiscono con Microsoft teams](SharePoint-OneDrive-interact.md).
 
-- Informazioni su come [interagire con microsoft 365 Groups e Microsoft teams](Office-365-groups.md).
+- Per informazioni su come interagire con Microsoft [365 Groups e Microsoft teams](Office-365-groups.md).
 
-- Se l'organizzazione è un Istituto di istruzione e si usa un sistema di informazioni per studenti, [distribuire School Data Sync](https://docs.microsoft.com/schooldatasync) prima di distribuire Microsoft teams.
+- Se l'organizzazione è un Istituto di istruzione e si usa un sistema di informazioni per studenti, vedere [Introduzione a Microsoft School Data Sync](https://docs.microsoft.com/schooldatasync) prima della distribuzione di Microsoft teams.
+
+- Se l'organizzazione sta prendendo in considerazione le opzioni di chiamata PSTN (Public Switched Telephone Network), vedi sistema di telefonia [vocale e connettività PSTN](cloud-voice-landing-page.md), il [piano di chiamata è giusto per te](calling-plan-landing-page.md)e il [routing diretto del sistema telefonico](direct-routing-landing-page.md).
+
+- Per verificare che tutti i requisiti di rete siano stati soddisfatti prima di eseguire il rollforward dei team, vedere [preparare la rete dell'organizzazione per Microsoft teams](prepare-network.md).
 
 Dopo aver verificato che l'ambiente soddisfi tutti i prerequisiti applicabili, [valutare l'ambiente corrente per i team](upgrade-plan-journey-evaluate-environment.md).

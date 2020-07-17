@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bcb1570a87740d899a5f92957c0335e70d7f91ba
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 0ef1b81bda61cba281f944499118966d2b9a528d
+ms.sourcegitcommit: f7f86744c6dbf0db87e1408fd1f4b770fda07ff9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665418"
+ms.lasthandoff: 07/17/2020
+ms.locfileid: "45158604"
 ---
 # <a name="choose-your-upgrade-journey-from-skype-for-business-to-teams"></a>Scegliere il viaggio di aggiornamento da Skype for business a teams
 
@@ -56,6 +56,9 @@ In questo articolo vengono illustrate le varie modalità che consentono di gesti
 Per preparare formalmente l'organizzazione per il viaggio in teams, è necessario avviare la pianificazione per gli scenari di aggiornamento che consentiranno alla tua organizzazione di accettare completamente i team come unica soluzione di comunicazione e collaborazione.
 
 Per aiutare a guidare il processo decisionale, familiarizzare con le varie modalità, i concetti e la terminologia pertinenti per l'aggiornamento da Skype for business a teams. Per altre informazioni, vedere [coesistenza e interoperabilità di Microsoft teams e Skype for business](https://aka.ms/SkypeToTeams-Coexist).
+
+> [!NOTE]
+> Dovrai anche prendere in considerazione gli scenari di migrazione vocale. Sistema telefonico è la tecnologia Microsoft per l'abilitazione del controllo delle chiamate e delle funzionalità Private Branch Exchange (PBX) in Microsoft 365 o Office 365 cloud. Per connettere il sistema telefonico alla rete PSTN (Public Switched Telephone Network) in modo che gli utenti possano effettuare telefonate in tutto il mondo, sono disponibili opzioni in base alle esigenze aziendali. Per altre informazioni sulle opzioni del sistema telefonico e della connettività PSTN, vedere [sistema di telefonia vocale e connettività PSTN](cloud-voice-landing-page.md).
 
 Un utente che è stato migrato a teams non usa più un client Skype for business tranne che per partecipare a una riunione ospitata in Skype for business. Tutte le chat in arrivo e le chiamate atterrano nel client Teams dell'utente, indipendentemente dal fatto che il mittente usi team o Skype for business. Tutte le nuove riunioni organizzate dall'utente aggiornato verranno programmate come riunioni teams. Se l'utente tenta di usare il client Skype for business, l'avvio delle chat e delle chiamate è bloccato<sup>1</sup>. Tuttavia, l'utente può (e deve) ancora usare il client Skype for business per partecipare alle riunioni a cui sono state invitate.
 
@@ -105,8 +108,8 @@ La tabella seguente riepiloga l'esperienza dei team per la modalità Islands e T
 
 | Esperienza Teams | In modalità Isole | In modalità TeamsOnly |
 |:------------------ | :------------------- | :------------------ |
-| Chat in arrivo e chiamate ricevute in:|  Teams o Skype for business | Team |
-| Chiamate PSTN ricevute in: | Skype for Business <br>L'uso della funzionalità PSTN in teams non è supportato in modalità Islands.     | Team |   
+| Chat in arrivo e chiamate ricevute in:|  Teams o Skype for business | Teams |
+| Chiamate PSTN ricevute in: | Skype for Business <br>L'uso della funzionalità PSTN in teams non è supportato in modalità Islands.     | Teams |   
  |Icone di presenza    | La presenza in Skype for business e teams è indipendente. Gli utenti possono visualizzare stati diversi per gli stessi utenti delle isole, a seconda del client che usano. | La presenza si basa esclusivamente sulle attività dell'utente in teams. Tutti gli altri utenti, indipendentemente dal client che usano, vedono quella presenza. | 
  | Pianificazione delle riunioni    | Gli utenti possono pianificare le riunioni in teams o in Skype for business. Per impostazione predefinita, vedranno entrambi i componenti aggiuntivi in Outlook. Puoi impostare un criterio per la riunione di teams per controllare se gli utenti possono usare solo il componente aggiuntivo riunione teams o sia la riunione teams che i componenti aggiuntivi per le riunioni di Skype for business. Per altre informazioni, vedere [impostare il provider della riunione per gli utenti in modalità isole](meeting-policies-in-teams.md#meeting-policy-settings---meeting-provider-for-islands-mode). |     Gli utenti pianificano solo riunioni in teams. Solo il componente aggiuntivo teams è disponibile in Outlook. | 
 
@@ -151,10 +154,10 @@ In alternativa, l'amministratore può prima di tutto spostare solo la pianificaz
 
 |Esperienza Teams  |In modalità SfBWithTeamsCollab |In modalità SfBWithTeamsCollabAndMeetings |In modalità TeamsOnly  |
 |---------|---------|---------|---------|
-|Chat in arrivo e chiamate VOIP dagli utenti dell'organizzazione ricevute in:     | Skype for Business        | Skype for Business       | Team        |
-|Chiamate PSTN ricevute in:     | Skype for Business        |Skype for Business         | Team        |
-|Icone di presenza     | Skype for Business        |Skype for Business         | Team        |
-|Pianificazione delle riunioni     | Skype for Business         | Team        | Team        |
+|Chat in arrivo e chiamate VOIP dagli utenti dell'organizzazione ricevute in:     | Skype for Business        | Skype for Business       | Teams        |
+|Chiamate PSTN ricevute in:     | Skype for Business        |Skype for Business         | Teams        |
+|Icone di presenza     | Skype for Business        |Skype for Business         | Teams        |
+|Pianificazione delle riunioni     | Skype for Business         | Teams        | Teams        |
 
 
 La tabella seguente riepiloga i pro e i contro dell'uso delle modalità Skype for business come passaggio di transizione verso la modalità TeamsOnly.
