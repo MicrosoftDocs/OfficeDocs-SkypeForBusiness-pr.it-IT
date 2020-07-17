@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c025e408842c3d883112b7c99d930fc77db47435
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: 1a2012464d3847cf15ae76fd9c5b5b453d810fa7
+ms.sourcegitcommit: 95ccfce5016dfda1a59812df446824be21f3f23e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44867973"
+ms.lasthandoff: 07/15/2020
+ms.locfileid: "45143787"
 ---
 <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 ======================================
@@ -46,7 +46,7 @@ L'accesso guest è un'impostazione a livello di organizzazione in Teams ed è di
 
 ## <a name="licensing-for-guest-access"></a>Licenze per l'accesso guest
 
-L'accesso guest è incluso in tutti gli abbonamenti di Microsoft 365 Business Standard, Office 365 Enterprise e Office 365 Education. Non sono necessarie altre licenze di Microsoft 365 o Office 365. Teams non impone un numero limite di utenti guest che è possibile aggiungere. Tuttavia, il numero totale di utenti guest che possono essere aggiunti al tenant dipende dal limite imposto dalla licenza di Azure AD, che in genere è di 5 guest per ogni utente con licenza. Per altre informazioni, vedere [Licenze di collaborazione B2B di Azure AD](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance).
+L'accesso guest è incluso in tutti gli abbonamenti di Microsoft 365 Business Standard, Office 365 Enterprise e Office 365 Education. Non sono necessarie altre licenze di Microsoft 365 o Office 365. Teams non impone un numero limite di utenti guest che è possibile aggiungere. Tuttavia, il numero totale di guest che possono essere aggiunti al tenant possono essere limitati dalle funzionalità a pagamento di Azure AD. Per altre informazioni, vedere [Licenze di collaborazione B2B di Azure AD](https://docs.microsoft.com/azure/active-directory/b2b/licensing-guidance).
 
 
 > [!NOTE]
