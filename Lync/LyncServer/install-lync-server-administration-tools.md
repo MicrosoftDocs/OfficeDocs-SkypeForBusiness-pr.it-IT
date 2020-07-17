@@ -25,7 +25,7 @@ ms.locfileid: "44756525"
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="install-lync-server-administration-tools"></a><span data-ttu-id="59599-102">Installare gli strumenti di amministrazione di Lync Server</span><span class="sxs-lookup"><span data-stu-id="59599-102">Install Lync Server administration tools</span></span>
+# <a name="install-lync-server-administration-tools"></a><span data-ttu-id="b8b48-102">Installare gli strumenti di amministrazione di Lync Server</span><span class="sxs-lookup"><span data-stu-id="b8b48-102">Install Lync Server administration tools</span></span>
 
 </div>
 
@@ -35,28 +35,28 @@ ms.locfileid: "44756525"
 
 <span> </span>
 
-<span data-ttu-id="59599-103">_**Ultimo argomento modificato:** 2012-10-02_</span><span class="sxs-lookup"><span data-stu-id="59599-103">_**Topic Last Modified:** 2012-10-02_</span></span>
+<span data-ttu-id="b8b48-103">_**Ultimo argomento modificato:** 2012-10-02_</span><span class="sxs-lookup"><span data-stu-id="b8b48-103">_**Topic Last Modified:** 2012-10-02_</span></span>
 
-<span data-ttu-id="59599-104">In questo argomento viene descritto come installare gli strumenti di amministrazione necessari per la distribuzione e la gestione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="59599-104">This topic describes how to install the administrative tools you need to use to deploy and manage Lync Server 2013.</span></span> <span data-ttu-id="59599-105">È inoltre possibile installarli in altri computer, ad esempio in console amministrative dedicate.</span><span class="sxs-lookup"><span data-stu-id="59599-105">You can also install the administrative tools on other computers, such as dedicated administrative consoles.</span></span>
+<span data-ttu-id="b8b48-104">In questo argomento viene descritto come installare gli strumenti di amministrazione necessari per la distribuzione e la gestione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="b8b48-104">This topic describes how to install the administrative tools you need to use to deploy and manage Lync Server 2013.</span></span> <span data-ttu-id="b8b48-105">È inoltre possibile installarli in altri computer, ad esempio in console amministrative dedicate.</span><span class="sxs-lookup"><span data-stu-id="b8b48-105">You can also install the administrative tools on other computers, such as dedicated administrative consoles.</span></span>
 
 <div>
 
-## <a name="to-install-the-lync-server-2013-administrative-tools"></a><span data-ttu-id="59599-106">Per installare gli strumenti di amministrazione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="59599-106">To install the Lync Server 2013 administrative tools</span></span>
+## <a name="to-install-the-lync-server-2013-administrative-tools"></a><span data-ttu-id="b8b48-106">Per installare gli strumenti di amministrazione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b8b48-106">To install the Lync Server 2013 administrative tools</span></span>
 
-1.  <span data-ttu-id="59599-107">Nel server front end di Lync Server 2013 eseguire il programma di installazione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="59599-107">On the Lync Server 2013 Front End Server, run Lync Server 2013 Setup.</span></span>
+1.  <span data-ttu-id="b8b48-107">Nel server front end di Lync Server 2013 eseguire il programma di installazione di Lync Server 2013.</span><span class="sxs-lookup"><span data-stu-id="b8b48-107">On the Lync Server 2013 Front End Server, run Lync Server 2013 Setup.</span></span>
 
-2.  <span data-ttu-id="59599-108">Nella pagina distribuzione guidata di Lync Server 2013 selezionare **installa strumenti di amministrazione**</span><span class="sxs-lookup"><span data-stu-id="59599-108">From the Lync Server 2013 Deployment Wizard page, select **Install Administrative Tools**</span></span>
+2.  <span data-ttu-id="b8b48-108">Nella pagina distribuzione guidata di Lync Server 2013 selezionare **installa strumenti di amministrazione**</span><span class="sxs-lookup"><span data-stu-id="b8b48-108">From the Lync Server 2013 Deployment Wizard page, select **Install Administrative Tools**</span></span>
     
-    <span data-ttu-id="59599-109">![Distribuzione guidata di Lync Server 2013, pagina di benvenuto](images/JJ205265.5f88ae18-9c3c-42ea-a91a-836ecf5d515f(OCS.15).jpg "Distribuzione guidata di Lync Server 2013, pagina di benvenuto")</span><span class="sxs-lookup"><span data-stu-id="59599-109">![Lync Server 2013 Deployment Wizard, Welcome page](images/JJ205265.5f88ae18-9c3c-42ea-a91a-836ecf5d515f(OCS.15).jpg "Lync Server 2013 Deployment Wizard, Welcome page")</span></span>
+    <span data-ttu-id="b8b48-109">![Distribuzione guidata di Lync Server 2013, pagina di benvenuto](images/JJ205265.5f88ae18-9c3c-42ea-a91a-836ecf5d515f(OCS.15).jpg "Distribuzione guidata di Lync Server 2013, pagina di benvenuto")</span><span class="sxs-lookup"><span data-stu-id="b8b48-109">![Lync Server 2013 Deployment Wizard, Welcome page](images/JJ205265.5f88ae18-9c3c-42ea-a91a-836ecf5d515f(OCS.15).jpg "Lync Server 2013 Deployment Wizard, Welcome page")</span></span>
 
 </div>
 
 <div>
 
-## <a name="see-also"></a><span data-ttu-id="59599-110">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="59599-110">See Also</span></span>
+## <a name="see-also"></a><span data-ttu-id="b8b48-110">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="b8b48-110">See Also</span></span>
 
 
-[<span data-ttu-id="59599-111">Strumenti di amministrazione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="59599-111">Lync Server 2013 administrative tools</span></span>](lync-server-2013-lync-server-administrative-tools.md)  
+[<span data-ttu-id="b8b48-111">Strumenti di amministrazione di Lync Server 2013</span><span class="sxs-lookup"><span data-stu-id="b8b48-111">Lync Server 2013 administrative tools</span></span>](lync-server-2013-lync-server-administrative-tools.md)  
   
 
 </div>

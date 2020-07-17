@@ -25,7 +25,7 @@ ms.locfileid: "44757217"
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="phase-4-move-test-users-to-the-pilot-pool"></a><span data-ttu-id="a5365-102">Fase 4: spostare gli utenti di test nel pool pilota</span><span class="sxs-lookup"><span data-stu-id="a5365-102">Phase 4: Move test users to the pilot pool</span></span>
+# <a name="phase-4-move-test-users-to-the-pilot-pool"></a><span data-ttu-id="13a1f-102">Fase 4: spostare gli utenti di test nel pool pilota</span><span class="sxs-lookup"><span data-stu-id="13a1f-102">Phase 4: Move test users to the pilot pool</span></span>
 
 </div>
 
@@ -35,21 +35,21 @@ ms.locfileid: "44757217"
 
 <span> </span>
 
-<span data-ttu-id="a5365-103">_**Ultimo argomento modificato:** 2012-09-26_</span><span class="sxs-lookup"><span data-stu-id="a5365-103">_**Topic Last Modified:** 2012-09-26_</span></span>
+<span data-ttu-id="13a1f-103">_**Ultimo argomento modificato:** 2012-09-26_</span><span class="sxs-lookup"><span data-stu-id="13a1f-103">_**Topic Last Modified:** 2012-09-26_</span></span>
 
-<span data-ttu-id="a5365-104">È possibile spostare un singolo utente o gruppi di utenti nella nuova distribuzione di Microsoft Lync Server 2013 utilizzando i due metodi seguenti: Lync Server Control Panel e Lync Server Management Shell.</span><span class="sxs-lookup"><span data-stu-id="a5365-104">You can move a single user or groups of users to your new Microsoft Lync Server 2013 deployment using the following two methods: Lync Server Control Panel and Lync Server Management Shell.</span></span> <span data-ttu-id="a5365-105">Negli argomenti di questa sezione vengono descritte le attività che è necessario eseguire durante la distribuzione pilota, nonché prima di spostare la distribuzione di Lync Server 2013 da una distribuzione pilota a una distribuzione a livello di produzione.</span><span class="sxs-lookup"><span data-stu-id="a5365-105">The topics in this section describe tasks you must complete during pilot deployment, as well as prior to moving your deployment of Lync Server 2013 from a pilot deployment to a production-level deployment.</span></span>
+<span data-ttu-id="13a1f-104">È possibile spostare un singolo utente o gruppi di utenti nella nuova distribuzione di Microsoft Lync Server 2013 utilizzando i due metodi seguenti: Lync Server Control Panel e Lync Server Management Shell.</span><span class="sxs-lookup"><span data-stu-id="13a1f-104">You can move a single user or groups of users to your new Microsoft Lync Server 2013 deployment using the following two methods: Lync Server Control Panel and Lync Server Management Shell.</span></span> <span data-ttu-id="13a1f-105">Negli argomenti di questa sezione vengono descritte le attività che è necessario eseguire durante la distribuzione pilota, nonché prima di spostare la distribuzione di Lync Server 2013 da una distribuzione pilota a una distribuzione a livello di produzione.</span><span class="sxs-lookup"><span data-stu-id="13a1f-105">The topics in this section describe tasks you must complete during pilot deployment, as well as prior to moving your deployment of Lync Server 2013 from a pilot deployment to a production-level deployment.</span></span>
 
 <div>
 
-## <a name="in-this-section"></a><span data-ttu-id="a5365-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="a5365-106">In This Section</span></span>
+## <a name="in-this-section"></a><span data-ttu-id="13a1f-106">Argomenti della sezione</span><span class="sxs-lookup"><span data-stu-id="13a1f-106">In This Section</span></span>
 
-  - [<span data-ttu-id="a5365-107">Visualizzare gli utenti correnti nel pool di Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="a5365-107">View current users in Lync Server 2010 pool</span></span>](view-current-users-in-lync-server-2010-pool.md)
+  - [<span data-ttu-id="13a1f-107">Visualizzare gli utenti correnti nel pool di Lync Server 2010</span><span class="sxs-lookup"><span data-stu-id="13a1f-107">View current users in Lync Server 2010 pool</span></span>](view-current-users-in-lync-server-2010-pool.md)
 
-  - [<span data-ttu-id="a5365-108">Verificare il completamento della replica utente</span><span class="sxs-lookup"><span data-stu-id="a5365-108">Verify user replication has completed</span></span>](verify-user-replication-has-completed.md)
+  - [<span data-ttu-id="13a1f-108">Verificare il completamento della replica utente</span><span class="sxs-lookup"><span data-stu-id="13a1f-108">Verify user replication has completed</span></span>](verify-user-replication-has-completed.md)
 
-  - [<span data-ttu-id="a5365-109">Spostare un singolo utente nel pool pilota</span><span class="sxs-lookup"><span data-stu-id="a5365-109">Move a single user to the pilot pool</span></span>](move-a-single-user-to-the-pilot-pool.md)
+  - [<span data-ttu-id="13a1f-109">Spostare un singolo utente nel pool pilota</span><span class="sxs-lookup"><span data-stu-id="13a1f-109">Move a single user to the pilot pool</span></span>](move-a-single-user-to-the-pilot-pool.md)
 
-  - [<span data-ttu-id="a5365-110">Spostare più utenti nel pool pilota</span><span class="sxs-lookup"><span data-stu-id="a5365-110">Move multiple users to the pilot pool</span></span>](move-multiple-users-to-the-pilot-pool.md)
+  - [<span data-ttu-id="13a1f-110">Spostare più utenti nel pool pilota</span><span class="sxs-lookup"><span data-stu-id="13a1f-110">Move multiple users to the pilot pool</span></span>](move-multiple-users-to-the-pilot-pool.md)
 
 </div>
 

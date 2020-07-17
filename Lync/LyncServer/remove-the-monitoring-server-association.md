@@ -25,7 +25,7 @@ ms.locfileid: "44756545"
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="remove-the-monitoring-server-association"></a><span data-ttu-id="b8325-102">Rimuovere l'associazione del server di monitoraggio</span><span class="sxs-lookup"><span data-stu-id="b8325-102">Remove the Monitoring server association</span></span>
+# <a name="remove-the-monitoring-server-association"></a><span data-ttu-id="f62ca-102">Rimuovere l'associazione del server di monitoraggio</span><span class="sxs-lookup"><span data-stu-id="f62ca-102">Remove the Monitoring server association</span></span>
 
 </div>
 
@@ -35,42 +35,42 @@ ms.locfileid: "44756545"
 
 <span> </span>
 
-<span data-ttu-id="b8325-103">_**Ultimo argomento modificato:** 2012-10-04_</span><span class="sxs-lookup"><span data-stu-id="b8325-103">_**Topic Last Modified:** 2012-10-04_</span></span>
+<span data-ttu-id="f62ca-103">_**Ultimo argomento modificato:** 2012-10-04_</span><span class="sxs-lookup"><span data-stu-id="f62ca-103">_**Topic Last Modified:** 2012-10-04_</span></span>
 
-<span data-ttu-id="b8325-104">Per rimuovere il Monitoring Server, è necessario modificare o cancellare la dipendenza dal pool Front end associato, Front End Server, Survivable Branch Appliance e Survivable Branch Server.</span><span class="sxs-lookup"><span data-stu-id="b8325-104">To remove the Monitoring Server, you need to change or clear the dependency on the associated Front End pool, Front End Server, Survivable Branch Appliance and Survivable Branch Server.</span></span> <span data-ttu-id="b8325-105">È possibile modificare le proprietà del pool Front End, Front End Server, Survivable Branch Appliance e Survivable Branch Server per rimuovere la dipendenza.</span><span class="sxs-lookup"><span data-stu-id="b8325-105">You edit the properties of the Front End pool, Front End Server, Survivable Branch Appliance and Survivable Branch Server to remove the dependency.</span></span> <span data-ttu-id="b8325-106">Dopo aver cancellato la dipendenza ed eliminato il server in Generatore di topologie, verrà eliminato anche l'oggetto archivio database associato in Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="b8325-106">After you clear the dependency and delete the server in Topology Builder, you are notified that the associated database store object in Topology Builder will also be deleted.</span></span>
+<span data-ttu-id="f62ca-104">Per rimuovere il Monitoring Server, è necessario modificare o cancellare la dipendenza dal pool Front end associato, Front End Server, Survivable Branch Appliance e Survivable Branch Server.</span><span class="sxs-lookup"><span data-stu-id="f62ca-104">To remove the Monitoring Server, you need to change or clear the dependency on the associated Front End pool, Front End Server, Survivable Branch Appliance and Survivable Branch Server.</span></span> <span data-ttu-id="f62ca-105">È possibile modificare le proprietà del pool Front End, Front End Server, Survivable Branch Appliance e Survivable Branch Server per rimuovere la dipendenza.</span><span class="sxs-lookup"><span data-stu-id="f62ca-105">You edit the properties of the Front End pool, Front End Server, Survivable Branch Appliance and Survivable Branch Server to remove the dependency.</span></span> <span data-ttu-id="f62ca-106">Dopo aver cancellato la dipendenza ed eliminato il server in Generatore di topologie, verrà eliminato anche l'oggetto archivio database associato in Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="f62ca-106">After you clear the dependency and delete the server in Topology Builder, you are notified that the associated database store object in Topology Builder will also be deleted.</span></span>
 
 <div>
 
-## <a name="to-remove-the-monitoring-server-association"></a><span data-ttu-id="b8325-107">Per rimuovere l'associazione del Monitoring Server</span><span class="sxs-lookup"><span data-stu-id="b8325-107">To remove the Monitoring Server association</span></span>
+## <a name="to-remove-the-monitoring-server-association"></a><span data-ttu-id="f62ca-107">Per rimuovere l'associazione del Monitoring Server</span><span class="sxs-lookup"><span data-stu-id="f62ca-107">To remove the Monitoring Server association</span></span>
 
-1.  <span data-ttu-id="b8325-108">Aprire Lync Server 2013 front end server, aprire Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="b8325-108">Open the Lync Server 2013 Front End Server, open Topology Builder.</span></span>
+1.  <span data-ttu-id="f62ca-108">Aprire Lync Server 2013 front end server, aprire Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="f62ca-108">Open the Lync Server 2013 Front End Server, open Topology Builder.</span></span>
 
-2.  <span data-ttu-id="b8325-109">Passare al nodo Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="b8325-109">Navigate to the Lync Server 2010 node.</span></span>
+2.  <span data-ttu-id="f62ca-109">Passare al nodo Lync Server 2010.</span><span class="sxs-lookup"><span data-stu-id="f62ca-109">Navigate to the Lync Server 2010 node.</span></span>
 
-3.  <span data-ttu-id="b8325-110">In Generatore di topologie espandere **pool Enterprise Edition front end**, **Standard Edition Front End Server**o **siti di succursale**, in base alla posizione in cui è definito il Monitoring Server.</span><span class="sxs-lookup"><span data-stu-id="b8325-110">In Topology Builder, expand **Enterprise Edition Front End pools**, **Standard Edition Front End Servers**, or **Branch sites**, based on where the Monitoring Server is defined.</span></span>
+3.  <span data-ttu-id="f62ca-110">In Generatore di topologie espandere **pool Enterprise Edition front end**, **Standard Edition Front End Server**o **siti di succursale**, in base alla posizione in cui è definito il Monitoring Server.</span><span class="sxs-lookup"><span data-stu-id="f62ca-110">In Topology Builder, expand **Enterprise Edition Front End pools**, **Standard Edition Front End Servers**, or **Branch sites**, based on where the Monitoring Server is defined.</span></span>
 
-4.  <span data-ttu-id="b8325-111">Se è presente un Survivable Branch Server associato, espandere **siti**di succursale, espandere il nome del sito di succursale e quindi espandere **Survivable Branch Appliance**.</span><span class="sxs-lookup"><span data-stu-id="b8325-111">If you have Survivable Branch Server associated, expand **Branch sites**, expand the branch site name, and then expand **Survivable Branch Appliances**.</span></span>
+4.  <span data-ttu-id="f62ca-111">Se è presente un Survivable Branch Server associato, espandere **siti**di succursale, espandere il nome del sito di succursale e quindi espandere **Survivable Branch Appliance**.</span><span class="sxs-lookup"><span data-stu-id="f62ca-111">If you have Survivable Branch Server associated, expand **Branch sites**, expand the branch site name, and then expand **Survivable Branch Appliances**.</span></span>
     
     <div>
     
 
     > [!NOTE]  
-    > <span data-ttu-id="b8325-112"><STRONG>Survivable Branch Appliance</STRONG> nell'interfaccia utente si applica sia a Survivable Branch Server che a Survivable Branch Appliance.</span><span class="sxs-lookup"><span data-stu-id="b8325-112"><STRONG>Survivable Branch Appliances</STRONG> in the user interface applies to both Survivable Branch Server and Survivable Branch Appliance.</span></span>
+    > <span data-ttu-id="f62ca-112"><STRONG>Survivable Branch Appliance</STRONG> nell'interfaccia utente si applica sia a Survivable Branch Server che a Survivable Branch Appliance.</span><span class="sxs-lookup"><span data-stu-id="f62ca-112"><STRONG>Survivable Branch Appliances</STRONG> in the user interface applies to both Survivable Branch Server and Survivable Branch Appliance.</span></span>
 
     
     </div>
 
-5.  <span data-ttu-id="b8325-113">Fare clic con il pulsante destro del mouse sul pool, sul server o sul dispositivo associato al Monitoring Server e quindi scegliere **modifica proprietà**.</span><span class="sxs-lookup"><span data-stu-id="b8325-113">Right-click the pool, server, or device that is associated with the Monitoring Server, and then click **Edit Properties**.</span></span>
+5.  <span data-ttu-id="f62ca-113">Fare clic con il pulsante destro del mouse sul pool, sul server o sul dispositivo associato al Monitoring Server e quindi scegliere **modifica proprietà**.</span><span class="sxs-lookup"><span data-stu-id="f62ca-113">Right-click the pool, server, or device that is associated with the Monitoring Server, and then click **Edit Properties**.</span></span>
 
-6.  <span data-ttu-id="b8325-114">In **Modifica proprietà**, in **Generale**, in **Associazioni**, deselezionare la casella di controllo **Associa Monitoring Server** e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="b8325-114">In **Edit Properties**, under **General**, under **Associations**, clear the **Associate Monitoring Server** check box, and then click **OK**.</span></span>
+6.  <span data-ttu-id="f62ca-114">In **Modifica proprietà**, in **Generale**, in **Associazioni**, deselezionare la casella di controllo **Associa Monitoring Server** e quindi fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="f62ca-114">In **Edit Properties**, under **General**, under **Associations**, clear the **Associate Monitoring Server** check box, and then click **OK**.</span></span>
 
-7.  <span data-ttu-id="b8325-115">Ripetere il passaggio precedente per qualsiasi altro pool, server o dispositivo associato al Monitoring Server.</span><span class="sxs-lookup"><span data-stu-id="b8325-115">Repeat the previous step for any other pool, server or device associated with the Monitoring Server.</span></span>
+7.  <span data-ttu-id="f62ca-115">Ripetere il passaggio precedente per qualsiasi altro pool, server o dispositivo associato al Monitoring Server.</span><span class="sxs-lookup"><span data-stu-id="f62ca-115">Repeat the previous step for any other pool, server or device associated with the Monitoring Server.</span></span>
 
-8.  <span data-ttu-id="b8325-116">Fare clic con il pulsante destro del mouse su Monitoring Server e quindi scegliere **Elimina**.</span><span class="sxs-lookup"><span data-stu-id="b8325-116">Right-click the Monitoring Server, and then click **Delete**.</span></span>
+8.  <span data-ttu-id="f62ca-116">Fare clic con il pulsante destro del mouse su Monitoring Server e quindi scegliere **Elimina**.</span><span class="sxs-lookup"><span data-stu-id="f62ca-116">Right-click the Monitoring Server, and then click **Delete**.</span></span>
 
-9.  <span data-ttu-id="b8325-117">In **Elimina archivi dipendenti** fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="b8325-117">On **Delete Dependent Stores**, click **OK**.</span></span>
+9.  <span data-ttu-id="f62ca-117">In **Elimina archivi dipendenti** fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="f62ca-117">On **Delete Dependent Stores**, click **OK**.</span></span>
 
-10. <span data-ttu-id="b8325-118">Pubblicare la topologia, controllare lo stato della replica ed eseguire la distribuzione guidata di Lync Server in base alle esigenze.</span><span class="sxs-lookup"><span data-stu-id="b8325-118">Publish the topology, check replication status, and run the Lync Server Deployment Wizard as needed.</span></span>
+10. <span data-ttu-id="f62ca-118">Pubblicare la topologia, controllare lo stato della replica ed eseguire la distribuzione guidata di Lync Server in base alle esigenze.</span><span class="sxs-lookup"><span data-stu-id="f62ca-118">Publish the topology, check replication status, and run the Lync Server Deployment Wizard as needed.</span></span>
 
 </div>
 

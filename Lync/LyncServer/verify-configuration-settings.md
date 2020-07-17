@@ -25,7 +25,7 @@ ms.locfileid: "44755610"
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="verify-configuration-settings"></a><span data-ttu-id="52ef9-102">Verificare le impostazioni di configurazione</span><span class="sxs-lookup"><span data-stu-id="52ef9-102">Verify configuration settings</span></span>
+# <a name="verify-configuration-settings"></a><span data-ttu-id="0ebbf-102">Verificare le impostazioni di configurazione</span><span class="sxs-lookup"><span data-stu-id="0ebbf-102">Verify configuration settings</span></span>
 
 </div>
 
@@ -35,11 +35,11 @@ ms.locfileid: "44755610"
 
 <span> </span>
 
-<span data-ttu-id="52ef9-103">_**Ultimo argomento modificato:** 2012-09-06_</span><span class="sxs-lookup"><span data-stu-id="52ef9-103">_**Topic Last Modified:** 2012-09-06_</span></span>
+<span data-ttu-id="0ebbf-103">_**Ultimo argomento modificato:** 2012-09-06_</span><span class="sxs-lookup"><span data-stu-id="0ebbf-103">_**Topic Last Modified:** 2012-09-06_</span></span>
 
-<span data-ttu-id="52ef9-104">È possibile convalidare la replica delle informazioni di configurazione nel server perimetrale eseguendo il cmdlet **Get-CsManagementStoreReplicationStatus** di lync Server 2013 nel computer interno in cui si trova l'archivio di gestione centrale o in qualsiasi computer aggiunto al dominio in cui è installato lync Server 2013 Core Components (OcsCore.msi).</span><span class="sxs-lookup"><span data-stu-id="52ef9-104">You can validate the replication of configuration information to the Edge server by running the Lync Server 2013 **Get-CsManagementStoreReplicationStatus** cmdlet on the internal computer on which the Central Management store is located, or on any domain joined computer on which Lync Server 2013 Core Components (OcsCore.msi) is installed.</span></span>
+<span data-ttu-id="0ebbf-104">È possibile convalidare la replica delle informazioni di configurazione nel server perimetrale eseguendo il cmdlet **Get-CsManagementStoreReplicationStatus** di lync Server 2013 nel computer interno in cui si trova l'archivio di gestione centrale o in qualsiasi computer aggiunto al dominio in cui è installato lync Server 2013 Core Components (OcsCore.msi).</span><span class="sxs-lookup"><span data-stu-id="0ebbf-104">You can validate the replication of configuration information to the Edge server by running the Lync Server 2013 **Get-CsManagementStoreReplicationStatus** cmdlet on the internal computer on which the Central Management store is located, or on any domain joined computer on which Lync Server 2013 Core Components (OcsCore.msi) is installed.</span></span>
 
-<span data-ttu-id="52ef9-105">I risultati iniziali possono indicare lo stato "False" anziché "True" per la replica.</span><span class="sxs-lookup"><span data-stu-id="52ef9-105">Initial results may indicate the status as "False" instead of "True" for replication.</span></span> <span data-ttu-id="52ef9-106">In questo caso, eseguire il cmdlet **Invoke-CsManagementStoreReplication** e attendere il completamento della replica prima di eseguire di nuovo **Get-CsManagementStoreReplicationStatus**.</span><span class="sxs-lookup"><span data-stu-id="52ef9-106">If so, run the **Invoke-CsManagementStoreReplication** cmdlet and allow time for the replication to complete before running the **Get-CsManagementStoreReplicationStatus** again.</span></span>
+<span data-ttu-id="0ebbf-105">I risultati iniziali possono indicare lo stato "False" anziché "True" per la replica.</span><span class="sxs-lookup"><span data-stu-id="0ebbf-105">Initial results may indicate the status as "False" instead of "True" for replication.</span></span> <span data-ttu-id="0ebbf-106">In questo caso, eseguire il cmdlet **Invoke-CsManagementStoreReplication** e attendere il completamento della replica prima di eseguire di nuovo **Get-CsManagementStoreReplicationStatus**.</span><span class="sxs-lookup"><span data-stu-id="0ebbf-106">If so, run the **Invoke-CsManagementStoreReplication** cmdlet and allow time for the replication to complete before running the **Get-CsManagementStoreReplicationStatus** again.</span></span>
 
 </div>
 

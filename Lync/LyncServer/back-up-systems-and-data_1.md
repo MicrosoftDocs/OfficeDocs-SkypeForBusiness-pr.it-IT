@@ -26,7 +26,7 @@ ms.locfileid: "44755346"
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="back-up-systems-and-data"></a><span data-ttu-id="30c67-102">Eseguire il backup di sistemi e dati</span><span class="sxs-lookup"><span data-stu-id="30c67-102">Back up systems and data</span></span>
+# <a name="back-up-systems-and-data"></a><span data-ttu-id="a500f-102">Eseguire il backup di sistemi e dati</span><span class="sxs-lookup"><span data-stu-id="a500f-102">Back up systems and data</span></span>
 
 </div>
 
@@ -36,9 +36,9 @@ ms.locfileid: "44755346"
 
 <span> </span>
 
-<span data-ttu-id="30c67-103">_**Ultimo argomento modificato:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="30c67-103">_**Topic Last Modified:** 2012-10-19_</span></span>
+<span data-ttu-id="a500f-103">_**Ultimo argomento modificato:** 2012-10-19_</span><span class="sxs-lookup"><span data-stu-id="a500f-103">_**Topic Last Modified:** 2012-10-19_</span></span>
 
-<span data-ttu-id="30c67-104">Prima di iniziare la migrazione a Lync Server 2013, è consigliabile eseguire un backup completo del sistema e documentare il sistema esistente, incluso un inventario degli account utente ospitati in ogni pool, in modo da poter ripristinare Office Communications Server 2007 R2, se necessario.</span><span class="sxs-lookup"><span data-stu-id="30c67-104">Before you begin the migration to Lync Server 2013, we strongly recommend that you perform a full system backup and document your existing system, including an inventory of user accounts that are homed on each pool, so that you can roll back to Office Communications Server 2007 R2 if it becomes necessary.</span></span> <span data-ttu-id="30c67-105">Sono disponibili diversi strumenti e programmi per eseguire il backup e il ripristino di dati, impostazioni e sistemi.</span><span class="sxs-lookup"><span data-stu-id="30c67-105">Multiple tools and programs are available for backing up and restoring data, settings, and systems.</span></span> <span data-ttu-id="30c67-106">Per informazioni dettagliate e procedure, vedere "Guida di backup e ripristino di Office Communications Server 2007 R2" all'indirizzo <https://go.microsoft.com/fwlink/p/?linkid=168162> .</span><span class="sxs-lookup"><span data-stu-id="30c67-106">For details and procedures, see "Office Communications Server 2007 R2 Backup and Restoration Guide" at <https://go.microsoft.com/fwlink/p/?linkid=168162>.</span></span>
+<span data-ttu-id="a500f-104">Prima di iniziare la migrazione a Lync Server 2013, è consigliabile eseguire un backup completo del sistema e documentare il sistema esistente, incluso un inventario degli account utente ospitati in ogni pool, in modo da poter ripristinare Office Communications Server 2007 R2, se necessario.</span><span class="sxs-lookup"><span data-stu-id="a500f-104">Before you begin the migration to Lync Server 2013, we strongly recommend that you perform a full system backup and document your existing system, including an inventory of user accounts that are homed on each pool, so that you can roll back to Office Communications Server 2007 R2 if it becomes necessary.</span></span> <span data-ttu-id="a500f-105">Sono disponibili diversi strumenti e programmi per eseguire il backup e il ripristino di dati, impostazioni e sistemi.</span><span class="sxs-lookup"><span data-stu-id="a500f-105">Multiple tools and programs are available for backing up and restoring data, settings, and systems.</span></span> <span data-ttu-id="a500f-106">Per informazioni dettagliate e procedure, vedere "Guida di backup e ripristino di Office Communications Server 2007 R2" all'indirizzo <https://go.microsoft.com/fwlink/p/?linkid=168162> .</span><span class="sxs-lookup"><span data-stu-id="a500f-106">For details and procedures, see "Office Communications Server 2007 R2 Backup and Restoration Guide" at <https://go.microsoft.com/fwlink/p/?linkid=168162>.</span></span>
 
 </div>
 

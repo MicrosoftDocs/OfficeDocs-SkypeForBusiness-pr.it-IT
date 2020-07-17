@@ -25,7 +25,7 @@ ms.locfileid: "44757137"
 
 <div data-asp="https://msdn2.microsoft.com/asp">
 
-# <a name="remove-an-authorized-host-entry"></a><span data-ttu-id="905f2-102">Rimuovere una voce host autorizzata</span><span class="sxs-lookup"><span data-stu-id="905f2-102">Remove an authorized host entry</span></span>
+# <a name="remove-an-authorized-host-entry"></a><span data-ttu-id="d7824-102">Rimuovere una voce host autorizzata</span><span class="sxs-lookup"><span data-stu-id="d7824-102">Remove an authorized host entry</span></span>
 
 </div>
 
@@ -35,25 +35,25 @@ ms.locfileid: "44757137"
 
 <span> </span>
 
-<span data-ttu-id="905f2-103">_**Ultimo argomento modificato:** 2012-09-26_</span><span class="sxs-lookup"><span data-stu-id="905f2-103">_**Topic Last Modified:** 2012-09-26_</span></span>
+<span data-ttu-id="d7824-103">_**Ultimo argomento modificato:** 2012-09-26_</span><span class="sxs-lookup"><span data-stu-id="d7824-103">_**Topic Last Modified:** 2012-09-26_</span></span>
 
-<span data-ttu-id="905f2-104">In questo argomento viene descritto come rimuovere una voce host autorizzata legacy (nota come *voce di applicazione attendibile* in Lync Server 2013).</span><span class="sxs-lookup"><span data-stu-id="905f2-104">This topic describes how to remove a legacy authorized host entry (known as a *trusted application entry* in Lync Server 2013).</span></span> <span data-ttu-id="905f2-105">Quando si esegue la migrazione del controllo delle chiamate remote a una distribuzione di Lync Server 2013, è necessario rimuovere le voci host autorizzate esistenti per i gateway SIP/CSTA nella distribuzione di Office Communications Server 2007 R2.</span><span class="sxs-lookup"><span data-stu-id="905f2-105">You must remove existing authorized host entries for any SIP/CSTA gateways in your Office Communications Server 2007 R2 deployment when you migrate remote call control to a Lync Server 2013 deployment.</span></span> <span data-ttu-id="905f2-106">È necessario utilizzare gli strumenti di amministrazione inclusi in Office Communications Server 2007 R2 per rimuovere le voci host autorizzate esistenti.</span><span class="sxs-lookup"><span data-stu-id="905f2-106">You must use the administrative tools included with Office Communications Server 2007 R2 to remove the existing authorized host entries.</span></span>
+<span data-ttu-id="d7824-104">In questo argomento viene descritto come rimuovere una voce host autorizzata legacy (nota come *voce di applicazione attendibile* in Lync Server 2013).</span><span class="sxs-lookup"><span data-stu-id="d7824-104">This topic describes how to remove a legacy authorized host entry (known as a *trusted application entry* in Lync Server 2013).</span></span> <span data-ttu-id="d7824-105">Quando si esegue la migrazione del controllo delle chiamate remote a una distribuzione di Lync Server 2013, è necessario rimuovere le voci host autorizzate esistenti per i gateway SIP/CSTA nella distribuzione di Office Communications Server 2007 R2.</span><span class="sxs-lookup"><span data-stu-id="d7824-105">You must remove existing authorized host entries for any SIP/CSTA gateways in your Office Communications Server 2007 R2 deployment when you migrate remote call control to a Lync Server 2013 deployment.</span></span> <span data-ttu-id="d7824-106">È necessario utilizzare gli strumenti di amministrazione inclusi in Office Communications Server 2007 R2 per rimuovere le voci host autorizzate esistenti.</span><span class="sxs-lookup"><span data-stu-id="d7824-106">You must use the administrative tools included with Office Communications Server 2007 R2 to remove the existing authorized host entries.</span></span>
 
 <div>
 
-## <a name="to-remove-an-authorized-host-entry-in-an-office-communications-server-2007-r2-deployment"></a><span data-ttu-id="905f2-107">Per rimuovere una voce host autorizzato in una distribuzione di Office Communications Server 2007 R2</span><span class="sxs-lookup"><span data-stu-id="905f2-107">To remove an authorized host entry in an Office Communications Server 2007 R2 deployment</span></span>
+## <a name="to-remove-an-authorized-host-entry-in-an-office-communications-server-2007-r2-deployment"></a><span data-ttu-id="d7824-107">Per rimuovere una voce host autorizzato in una distribuzione di Office Communications Server 2007 R2</span><span class="sxs-lookup"><span data-stu-id="d7824-107">To remove an authorized host entry in an Office Communications Server 2007 R2 deployment</span></span>
 
-1.  <span data-ttu-id="905f2-108">Aprire la console di amministrazione di Office Communications Server 2007 R2.</span><span class="sxs-lookup"><span data-stu-id="905f2-108">Open the Office Communications Server 2007 R2 administrative console.</span></span>
+1.  <span data-ttu-id="d7824-108">Aprire la console di amministrazione di Office Communications Server 2007 R2.</span><span class="sxs-lookup"><span data-stu-id="d7824-108">Open the Office Communications Server 2007 R2 administrative console.</span></span>
 
-2.  <span data-ttu-id="905f2-109">Espandere l'albero e fare clic con il pulsante destro del mouse sul pool in cui è stato creato l'host autorizzato.</span><span class="sxs-lookup"><span data-stu-id="905f2-109">Expand the tree and right-click the pool where the authorized host was created.</span></span>
+2.  <span data-ttu-id="d7824-109">Espandere l'albero e fare clic con il pulsante destro del mouse sul pool in cui è stato creato l'host autorizzato.</span><span class="sxs-lookup"><span data-stu-id="d7824-109">Expand the tree and right-click the pool where the authorized host was created.</span></span>
 
-3.  <span data-ttu-id="905f2-110">Scegliere **Proprietà** e quindi fare clic su **Proprietà Front End**.</span><span class="sxs-lookup"><span data-stu-id="905f2-110">Click **Properties**, and then click **Front End Properties**.</span></span>
+3.  <span data-ttu-id="d7824-110">Scegliere **Proprietà** e quindi fare clic su **Proprietà Front End**.</span><span class="sxs-lookup"><span data-stu-id="d7824-110">Click **Properties**, and then click **Front End Properties**.</span></span>
 
-4.  <span data-ttu-id="905f2-111">Fare clic sulla scheda **Autorizzazione host**.</span><span class="sxs-lookup"><span data-stu-id="905f2-111">Click the **Host Authorization** tab.</span></span>
+4.  <span data-ttu-id="d7824-111">Fare clic sulla scheda **Autorizzazione host**.</span><span class="sxs-lookup"><span data-stu-id="d7824-111">Click the **Host Authorization** tab.</span></span>
 
-5.  <span data-ttu-id="905f2-112">Selezionare un server e quindi fare clic su **Rimuovi**.</span><span class="sxs-lookup"><span data-stu-id="905f2-112">Select a server, and then click **Remove**.</span></span>
+5.  <span data-ttu-id="d7824-112">Selezionare un server e quindi fare clic su **Rimuovi**.</span><span class="sxs-lookup"><span data-stu-id="d7824-112">Select a server, and then click **Remove**.</span></span>
 
-6.  <span data-ttu-id="905f2-113">In **Proprietà** fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="905f2-113">In **Properties**, click **OK**.</span></span>
+6.  <span data-ttu-id="d7824-113">In **Proprietà** fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="d7824-113">In **Properties**, click **OK**.</span></span>
 
 </div>
 

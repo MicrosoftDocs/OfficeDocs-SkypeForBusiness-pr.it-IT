@@ -18,73 +18,73 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 06/16/2020
 ms.locfileid: "44751678"
 ---
-# <a name="verify-the-legacy-environment"></a><span data-ttu-id="02a3f-105">Verificare l'ambiente legacy</span><span class="sxs-lookup"><span data-stu-id="02a3f-105">Verify the legacy environment</span></span>
+# <a name="verify-the-legacy-environment"></a><span data-ttu-id="66ec2-105">Verificare l'ambiente legacy</span><span class="sxs-lookup"><span data-stu-id="66ec2-105">Verify the legacy environment</span></span>
 
-<span data-ttu-id="02a3f-106">Prima di distribuire Skype for Business Server 2019 in uno stato di coesistenza, è necessario verificare che i servizi legacy siano stati configurati e avviati.</span><span class="sxs-lookup"><span data-stu-id="02a3f-106">Before deploying Skype for Business Server 2019 in a coexistence state, you need to verify that legacy services have been configured and started.</span></span> <span data-ttu-id="02a3f-107">È importante identificare i servizi e le funzionalità principali presenti nell'ambiente legacy prima di distribuire un pool pilota di Skype for Business Server 2019.</span><span class="sxs-lookup"><span data-stu-id="02a3f-107">It is important to identify key services and features that exist in your legacy environment prior to deploying a Skype for Business Server 2019 pilot pool.</span></span> <span data-ttu-id="02a3f-108">Prima di distribuire Microsoft Skype for Business Server 2019 XMPP in uno stato di coesistenza con una distribuzione XMPP legacy, è necessario verificare che i servizi XMPP legacy siano stati configurati e avviati e identificare il partner federato che la configurazione di XMPP legacy supporta.</span><span class="sxs-lookup"><span data-stu-id="02a3f-108">Before deploying Microsoft Skype for Business Server 2019 XMPP in a coexistence state with a legacy XMPP deployment, you need to verify that the legacy XMPP services have been configured and started, and identify which federated partner the legacy XMPP configuration is supporting.</span></span> <span data-ttu-id="02a3f-109">La verifica della distribuzione legacy comporta quanto segue:</span><span class="sxs-lookup"><span data-stu-id="02a3f-109">Verifying your legacy deployment entails the following:</span></span>
+<span data-ttu-id="66ec2-106">Prima di distribuire Skype for Business Server 2019 in uno stato di coesistenza, è necessario verificare che i servizi legacy siano stati configurati e avviati.</span><span class="sxs-lookup"><span data-stu-id="66ec2-106">Before deploying Skype for Business Server 2019 in a coexistence state, you need to verify that legacy services have been configured and started.</span></span> <span data-ttu-id="66ec2-107">È importante identificare i servizi e le funzionalità principali presenti nell'ambiente legacy prima di distribuire un pool pilota di Skype for Business Server 2019.</span><span class="sxs-lookup"><span data-stu-id="66ec2-107">It is important to identify key services and features that exist in your legacy environment prior to deploying a Skype for Business Server 2019 pilot pool.</span></span> <span data-ttu-id="66ec2-108">Prima di distribuire Microsoft Skype for Business Server 2019 XMPP in uno stato di coesistenza con una distribuzione XMPP legacy, è necessario verificare che i servizi XMPP legacy siano stati configurati e avviati e identificare il partner federato che la configurazione di XMPP legacy supporta.</span><span class="sxs-lookup"><span data-stu-id="66ec2-108">Before deploying Microsoft Skype for Business Server 2019 XMPP in a coexistence state with a legacy XMPP deployment, you need to verify that the legacy XMPP services have been configured and started, and identify which federated partner the legacy XMPP configuration is supporting.</span></span> <span data-ttu-id="66ec2-109">La verifica della distribuzione legacy comporta quanto segue:</span><span class="sxs-lookup"><span data-stu-id="66ec2-109">Verifying your legacy deployment entails the following:</span></span>
   
-- <span data-ttu-id="02a3f-110">Verifica dell'avvio dei servizi legacy</span><span class="sxs-lookup"><span data-stu-id="02a3f-110">Verifying that the legacy services are started</span></span>
+- <span data-ttu-id="66ec2-110">Verifica dell'avvio dei servizi legacy</span><span class="sxs-lookup"><span data-stu-id="66ec2-110">Verifying that the legacy services are started</span></span>
     
-- <span data-ttu-id="02a3f-111">Revisione della topologia e degli utenti</span><span class="sxs-lookup"><span data-stu-id="02a3f-111">Reviewing the topology and users</span></span>
+- <span data-ttu-id="66ec2-111">Revisione della topologia e degli utenti</span><span class="sxs-lookup"><span data-stu-id="66ec2-111">Reviewing the topology and users</span></span>
     
-- <span data-ttu-id="02a3f-112">Verifica delle impostazioni di Federazione e server perimetrali</span><span class="sxs-lookup"><span data-stu-id="02a3f-112">Verifying the federation and Edge server settings</span></span>
+- <span data-ttu-id="66ec2-112">Verifica delle impostazioni di Federazione e server perimetrali</span><span class="sxs-lookup"><span data-stu-id="66ec2-112">Verifying the federation and Edge server settings</span></span>
     
-- <span data-ttu-id="02a3f-113">Verifica di servizi XMPP e partner federati</span><span class="sxs-lookup"><span data-stu-id="02a3f-113">Verifying XMPP services and federated partners</span></span>
+- <span data-ttu-id="66ec2-113">Verifica di servizi XMPP e partner federati</span><span class="sxs-lookup"><span data-stu-id="66ec2-113">Verifying XMPP services and federated partners</span></span>
     
-## <a name="verify-that-legacy-services-are-started"></a><span data-ttu-id="02a3f-114">Verificare che i servizi legacy siano stati avviati</span><span class="sxs-lookup"><span data-stu-id="02a3f-114">Verify that legacy services are started</span></span>
+## <a name="verify-that-legacy-services-are-started"></a><span data-ttu-id="66ec2-114">Verificare che i servizi legacy siano stati avviati</span><span class="sxs-lookup"><span data-stu-id="66ec2-114">Verify that legacy services are started</span></span>
 
-1. <span data-ttu-id="02a3f-115">Dal front end server legacy passare all'applet Amministrazione\servizi. amministrativa.</span><span class="sxs-lookup"><span data-stu-id="02a3f-115">From the legacy Front End Server, navigate to the Administrative Tools\Services applet.</span></span>
+1. <span data-ttu-id="66ec2-115">Dal front end server legacy passare all'applet Amministrazione\servizi. amministrativa.</span><span class="sxs-lookup"><span data-stu-id="66ec2-115">From the legacy Front End Server, navigate to the Administrative Tools\Services applet.</span></span>
     
-2. <span data-ttu-id="02a3f-116">Verificare che i servizi seguenti siano in esecuzione nel Front End Server:</span><span class="sxs-lookup"><span data-stu-id="02a3f-116">Verify that the following services are running on the Front End Server:</span></span>
+2. <span data-ttu-id="66ec2-116">Verificare che i servizi seguenti siano in esecuzione nel Front End Server:</span><span class="sxs-lookup"><span data-stu-id="66ec2-116">Verify that the following services are running on the Front End Server:</span></span>
     
      ![Elenco dei servizi in esecuzione nel front end server](../media/migration_lyncserver_config_w14_services.jpg)
   
-## <a name="review-the-legacy-topology-in-skype-for-business-server-control-panel"></a><span data-ttu-id="02a3f-118">Esaminare la topologia legacy nel pannello di controllo di Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="02a3f-118">Review the legacy topology in Skype for Business Server Control Panel</span></span>
+## <a name="review-the-legacy-topology-in-skype-for-business-server-control-panel"></a><span data-ttu-id="66ec2-118">Esaminare la topologia legacy nel pannello di controllo di Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="66ec2-118">Review the legacy topology in Skype for Business Server Control Panel</span></span>
 
-1. <span data-ttu-id="02a3f-119">Eseguire l'accesso al Front End Server con un account membro del gruppo RTCUniversalServerAdmins oppure membro del ruolo amministrativo CsAdministrator o CsUserAdministrator.</span><span class="sxs-lookup"><span data-stu-id="02a3f-119">Log on to the Front End Server with an account that is a member of the RTCUniversalServerAdmins group or a member of the CsAdministrator or CsUserAdministrator administrative role.</span></span>
+1. <span data-ttu-id="66ec2-119">Eseguire l'accesso al Front End Server con un account membro del gruppo RTCUniversalServerAdmins oppure membro del ruolo amministrativo CsAdministrator o CsUserAdministrator.</span><span class="sxs-lookup"><span data-stu-id="66ec2-119">Log on to the Front End Server with an account that is a member of the RTCUniversalServerAdmins group or a member of the CsAdministrator or CsUserAdministrator administrative role.</span></span>
     
-2. <span data-ttu-id="02a3f-120">Aprire il pannello di controllo di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="02a3f-120">Open the Skype for Business Server Control Panel.</span></span>
+2. <span data-ttu-id="66ec2-120">Aprire il pannello di controllo di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="66ec2-120">Open the Skype for Business Server Control Panel.</span></span>
     
-3. <span data-ttu-id="02a3f-121">Selezionare **Topologia**.</span><span class="sxs-lookup"><span data-stu-id="02a3f-121">Select **Topology**.</span></span> <span data-ttu-id="02a3f-122">Verificare che siano elencati i vari server della distribuzione legacy.</span><span class="sxs-lookup"><span data-stu-id="02a3f-122">Verify that the various servers in your legacy deployment are listed.</span></span>
+3. <span data-ttu-id="66ec2-121">Selezionare **Topologia**.</span><span class="sxs-lookup"><span data-stu-id="66ec2-121">Select **Topology**.</span></span> <span data-ttu-id="66ec2-122">Verificare che siano elencati i vari server della distribuzione legacy.</span><span class="sxs-lookup"><span data-stu-id="66ec2-122">Verify that the various servers in your legacy deployment are listed.</span></span>
     
      ![Pagina della topologia del pannello di controllo](../media/migration_lyncserver_2010_topology.JPG)
   
-## <a name="review-legacy-users-in-skype-for-business-server-control-panel"></a><span data-ttu-id="02a3f-124">Esaminare gli utenti legacy nel pannello di controllo di Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="02a3f-124">Review legacy users in Skype for Business Server Control Panel</span></span>
+## <a name="review-legacy-users-in-skype-for-business-server-control-panel"></a><span data-ttu-id="66ec2-124">Esaminare gli utenti legacy nel pannello di controllo di Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="66ec2-124">Review legacy users in Skype for Business Server Control Panel</span></span>
 
-1. <span data-ttu-id="02a3f-125">Aprire il pannello di controllo di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="02a3f-125">Open the Skype for Business Server Control Panel.</span></span>
+1. <span data-ttu-id="66ec2-125">Aprire il pannello di controllo di Skype for Business Server.</span><span class="sxs-lookup"><span data-stu-id="66ec2-125">Open the Skype for Business Server Control Panel.</span></span>
     
-2. <span data-ttu-id="02a3f-126">Selezionare **utenti**e quindi fare clic su **trova**.</span><span class="sxs-lookup"><span data-stu-id="02a3f-126">Select **Users**, and then click **Find**.</span></span>
+2. <span data-ttu-id="66ec2-126">Selezionare **utenti**e quindi fare clic su **trova**.</span><span class="sxs-lookup"><span data-stu-id="66ec2-126">Select **Users**, and then click **Find**.</span></span>
     
-3. <span data-ttu-id="02a3f-127">Verificare che la colonna **pool di registrazione** punti al pool legacy per ogni utente elencato.</span><span class="sxs-lookup"><span data-stu-id="02a3f-127">Verify that the **Registrar Pool** column points to the legacy pool for each user listed.</span></span> 
+3. <span data-ttu-id="66ec2-127">Verificare che la colonna **pool di registrazione** punti al pool legacy per ogni utente elencato.</span><span class="sxs-lookup"><span data-stu-id="66ec2-127">Verify that the **Registrar Pool** column points to the legacy pool for each user listed.</span></span> 
     
      ![Elenco degli utenti del pannello di controllo](../media/migration_lyncserver_2010_allusers.JPG)
   
-## <a name="verify-legacy-edge-and-federation-settings"></a><span data-ttu-id="02a3f-129">Verificare le impostazioni del server perimetrale e federativo legacy</span><span class="sxs-lookup"><span data-stu-id="02a3f-129">Verify legacy Edge and federation settings</span></span>
+## <a name="verify-legacy-edge-and-federation-settings"></a><span data-ttu-id="66ec2-129">Verificare le impostazioni del server perimetrale e federativo legacy</span><span class="sxs-lookup"><span data-stu-id="66ec2-129">Verify legacy Edge and federation settings</span></span>
 
-1. <span data-ttu-id="02a3f-130">Avviare Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="02a3f-130">Start Topology Builder.</span></span>
+1. <span data-ttu-id="66ec2-130">Avviare Generatore di topologie.</span><span class="sxs-lookup"><span data-stu-id="66ec2-130">Start Topology Builder.</span></span>
     
-2. <span data-ttu-id="02a3f-131">Selezionare **Scarica topologia dalla distribuzione esistente**.</span><span class="sxs-lookup"><span data-stu-id="02a3f-131">Select **Download Topology from existing deployment**.</span></span>
+2. <span data-ttu-id="66ec2-131">Selezionare **Scarica topologia dalla distribuzione esistente**.</span><span class="sxs-lookup"><span data-stu-id="66ec2-131">Select **Download Topology from existing deployment**.</span></span>
     
-3. <span data-ttu-id="02a3f-132">Scegliere un nome di file e salvare la topologia con il tipo di file default. tbxml.</span><span class="sxs-lookup"><span data-stu-id="02a3f-132">Choose a file name, and save the topology with the default .tbxml file type.</span></span>
+3. <span data-ttu-id="66ec2-132">Scegliere un nome di file e salvare la topologia con il tipo di file default. tbxml.</span><span class="sxs-lookup"><span data-stu-id="66ec2-132">Choose a file name, and save the topology with the default .tbxml file type.</span></span>
     
-4. <span data-ttu-id="02a3f-133">Espandere il nodo installazioni legacy per rivelare i diversi ruoli del server nella distribuzione.</span><span class="sxs-lookup"><span data-stu-id="02a3f-133">Expand the legacy installs node to reveal the various server roles in the deployment.</span></span>
+4. <span data-ttu-id="66ec2-133">Espandere il nodo installazioni legacy per rivelare i diversi ruoli del server nella distribuzione.</span><span class="sxs-lookup"><span data-stu-id="66ec2-133">Expand the legacy installs node to reveal the various server roles in the deployment.</span></span>
     
-5. <span data-ttu-id="02a3f-134">Selezionare il nodo del sito e verificare che sia impostato un valore **Assegnazione route federazione sito** .</span><span class="sxs-lookup"><span data-stu-id="02a3f-134">Select the site node and verify that a **Site federation route assignment** value is set.</span></span> 
+5. <span data-ttu-id="66ec2-134">Selezionare il nodo del sito e verificare che sia impostato un valore **Assegnazione route federazione sito** .</span><span class="sxs-lookup"><span data-stu-id="66ec2-134">Select the site node and verify that a **Site federation route assignment** value is set.</span></span> 
     
      ![Generatore di topologie, route di Federazione del sito](../media/migration_lyncserver_w14_federation.jpg)
   
-6. <span data-ttu-id="02a3f-136">Selezionare il server Standard Edition o il pool Enterprise Edition front end.</span><span class="sxs-lookup"><span data-stu-id="02a3f-136">Select the Standard Edition Server or Enterprise Edition front end pool.</span></span> <span data-ttu-id="02a3f-137">Determinare se un pool di server perimetrali è stato configurato per il supporto sottostante alle **associazioni**.</span><span class="sxs-lookup"><span data-stu-id="02a3f-137">Determine whether an Edge pool has been configured for media below **Associations**.</span></span> 
+6. <span data-ttu-id="66ec2-136">Selezionare il server Standard Edition o il pool Enterprise Edition front end.</span><span class="sxs-lookup"><span data-stu-id="66ec2-136">Select the Standard Edition Server or Enterprise Edition front end pool.</span></span> <span data-ttu-id="66ec2-137">Determinare se un pool di server perimetrali è stato configurato per il supporto sottostante alle **associazioni**.</span><span class="sxs-lookup"><span data-stu-id="66ec2-137">Determine whether an Edge pool has been configured for media below **Associations**.</span></span> 
     
      ![Generatore di topologie che Mostra server e pool](../media/migration_lyncserver_w14_edgepool_media.jpg)
   
-7. <span data-ttu-id="02a3f-139">Selezionare il pool di server perimetrali e identificare se un pool di hop successivo è configurato al di sotto della **selezione dell'hop successivo**.</span><span class="sxs-lookup"><span data-stu-id="02a3f-139">Select the Edge pool and identify whether a Next hop pool is configured below **Next hop selection**.</span></span>
+7. <span data-ttu-id="66ec2-139">Selezionare il pool di server perimetrali e identificare se un pool di hop successivo è configurato al di sotto della **selezione dell'hop successivo**.</span><span class="sxs-lookup"><span data-stu-id="66ec2-139">Select the Edge pool and identify whether a Next hop pool is configured below **Next hop selection**.</span></span>
     
      ![Generatore di topologie, selezione dell'hop successivo](../media/migration_lyncserver_w14_nexthop.jpg)
   
-## <a name="verify-legacy-xmpp-federated-partner-configuration"></a><span data-ttu-id="02a3f-141">Verificare la configurazione del partner federato XMPP legacy</span><span class="sxs-lookup"><span data-stu-id="02a3f-141">Verify legacy XMPP federated partner Configuration</span></span>
+## <a name="verify-legacy-xmpp-federated-partner-configuration"></a><span data-ttu-id="66ec2-141">Verificare la configurazione del partner federato XMPP legacy</span><span class="sxs-lookup"><span data-stu-id="66ec2-141">Verify legacy XMPP federated partner Configuration</span></span>
 
-1. <span data-ttu-id="02a3f-142">Dal server XMPP legacy passare all'applet Strumenti di amministrazione\Servizi.</span><span class="sxs-lookup"><span data-stu-id="02a3f-142">From the legacy XMPP server, navigate to the Administrative Tools\Services applet.</span></span>
+1. <span data-ttu-id="66ec2-142">Dal server XMPP legacy passare all'applet Strumenti di amministrazione\Servizi.</span><span class="sxs-lookup"><span data-stu-id="66ec2-142">From the legacy XMPP server, navigate to the Administrative Tools\Services applet.</span></span>
     
-2. <span data-ttu-id="02a3f-143">Verificare che il servizio Office Communications Server XMPP Gateway sia stato avviato.</span><span class="sxs-lookup"><span data-stu-id="02a3f-143">Verify that the Office Communications Server XMPP Gateway service is started.</span></span> 
+2. <span data-ttu-id="66ec2-143">Verificare che il servizio Office Communications Server XMPP Gateway sia stato avviato.</span><span class="sxs-lookup"><span data-stu-id="66ec2-143">Verify that the Office Communications Server XMPP Gateway service is started.</span></span> 
     
      ![Servizio gateway XMPP di Office Communications Server](../media/migration_lyncserver_15_xmpp_legacyservicesstarted.JPG)
   
