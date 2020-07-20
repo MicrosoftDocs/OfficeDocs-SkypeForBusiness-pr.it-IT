@@ -17,12 +17,12 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 448534a9cab210be71f36ac034207d35e2b9f5f7
-ms.sourcegitcommit: 3ed779277540589eabef745685ab6c67d8a8ff90
+ms.openlocfilehash: b352493f408f9adbc41fc978c4990f3d07f7a410
+ms.sourcegitcommit: f1386c5cfe52819e54f4ffb1f1ce06aef5a59522
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "44281701"
+ms.lasthandoff: 07/18/2020
+ms.locfileid: "45170605"
 ---
 # <a name="country-and-region-availability-for-business-voice"></a>Disponibilità di Business Voice per paesi e aree geografiche
 
@@ -36,7 +36,7 @@ Nei paesi e nelle regioni **con** supporto per Piani per chiamate e Attività in
 - Non è più necessario abbonarsi a un operatore telefonico di terze parti per gestire i numeri di telefono.
 - Non è più necessaria alcuna apparecchiatura telefonica locale (oltre ai dispositivi dell'utente finale come i telefoni da tavolo).
 
-Se il tenant si trova in un paese o un'area geografica che supporta Piani per chiamate e la procedura guidata Attività, vedere [Cosa serve per acquistare e usare Microsoft 365 Business Voice?](what-to-buy.md).
+Se il tenant si trova in un Paese o un'area geografica che supporta Piani per chiamate e la procedura guidata Attività, vedere [Cosa serve per acquistare e usare Microsoft 365 Business Voice?](what-to-buy.md)
 
 Nei paesi e nelle regioni **senza** di supporto per Piani per chiamate e la procedura guidata Attività, è necessario acquistare Business Voice da un partner o da un rivenditore Microsoft. Dopo aver acquistato Business Voice, è necessario collaborare con il partner o rivenditore e il proprio operatore telefonico di terze parti per configurare l'instradamento diretto tra l'hardware di telefonia locale e Microsoft 365.
 
@@ -55,6 +55,7 @@ Per informazioni sulle funzionalità incluse in Business Voice con e senza Piano
 | Regno Unito       | X                                    | X<sup>1</sup>                                               | X                      |
 | Stati Uniti        | X                                    | X<sup>1</sup>                                               | X                      |
 | Argentina            |                                      | X                                                           |                        |
+| Australia            |                                      | X                                                           |                        |
 | Austria              |                                      | X                                                           |                        |
 | Belgio              |                                      | X                                                           |                        |
 | Bosnia ed Erzegovina |                                      | X                                                           |                        |
