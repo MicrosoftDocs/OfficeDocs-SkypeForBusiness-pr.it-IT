@@ -227,7 +227,7 @@
 <!-- ============================================================ -->
 
 
-# Cloud Voice 
+# Voice: sistema telefonico e connettività 
 
 ## [Pianificare la distribuzione](cloud-voice-landing-page.md)
 
@@ -517,6 +517,7 @@
 #### [Integrare gli stakeholder del progetto](upgrade-enlist-stakeholders.md)
 #### [Definire l'ambito del progetto](upgrade-define-project-scope.md)
 #### [Informazioni su coesistenza e interoperabilità](teams-and-skypeforbusiness-coexistence-and-interoperability.md)
+#### [Informazioni sul sistema telefonico e opzioni relative alla connettività PSTN](cloud-voice-landing-page.md)
 #### [Scegliere il percorso verso l'aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 #### [Pianificare un progetto pilota](pilot-essentials.md)
 
@@ -537,11 +538,7 @@
 ### [Aggiornare Skype for Business Online a Teams](upgrade-to-Teams-execute-SkypeforBusinessOnline.md)
 ### [Aggiornare Skype for Business locale a Teams](upgrade-to-Teams-execute-SkypeforBusinessHybridOnPrem.md)
 
-## Gestione, adozione e ottimizzazione
-### [Panoramica del piano operativo](continue-journey.md)
-### [Gestire il servizio](upgrade-operate-my-service.md)
-### [Monitorare la qualità](upgrade-monitor-quality.md)
-### [Migliorare il servizio](upgrade-enhance-my-service.md)
+## [Gestione, adopzione e ottimizzazione](continue-journey.md)
 
 ## [Ritiro di Skype for Business Online](skype-for-business-online-retirement.md)
 ## [Domande frequenti](FAQ-journey.md)
@@ -700,6 +697,8 @@
 
 <!-- ============================================================ -->
 # Monitoraggio, manutenzione e risoluzione dei problemi
+## [Gestire il servizio](upgrade-operate-my-service.md)
+## [Migliorare il servizio](upgrade-enhance-my-service.md)
 ## Monitorare e gestire la qualità delle chiamate
 ### [Monitorare e gestire la qualità delle chiamate](monitor-call-quality-qos.md)
 ### Dashboard qualità delle chiamate (CQD)
@@ -723,6 +722,9 @@
 ### Qualità del servizio (QoS)
 #### [Configurare QoS in Teams](QoS-in-Teams.md)
 #### [Configurare QoS nei client di Windows](QoS-in-Teams-clients.md)
+
+
+
 ## [Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)
 ## [Risoluzione dei problemi di installazione e aggiornamento](troubleshoot-installation.md)
 ## [Risolvere i problemi di connettività con il client di Teams](connectivity-issues.md)
@@ -934,5 +936,7 @@
 ### [Piani di chiamata in Microsoft 365 - Codice di condotta nel Regno Unito](code-of-practice-for-the-united-kingdom-u-k.md)
 ### [Piani di chiamata in Microsoft 365 - Gestione di codice conforme per il Regno Unito](complaint-handling-code-for-the-united-kingdom-u-k.md)
 ### [Condizioni per le chiamate di emergenza](emergency-calling-terms-and-conditions.md)
+
+## [Modulo di individuazione aggiornamenti](upgrade-plan-journey-discovery-questionnaire.md)
 
 ## [Note sulla versione per le funzionalità di amministratore di Teams](release-notes/release-notes.md)
