@@ -1,0 +1,67 @@
+### YamlMime:Landing
+title: Documentazione di Skype for Business Server 2019
+summary: Informazioni su come implementare Skype for Business Server 2019.
+metadata:
+  title: Documentazione di Skype for Business Server 2019
+  description: Informazioni su come implementare Skype for Business Server 2019.
+  ms.service: skype-for-business-online
+  ms.topic: landing-page
+  audience: ITPro
+  author: LanaChin
+  ms.author: v-lanac
+  ms.date: 06/23/2020
+  ms.openlocfilehash: 4aa8036644cf6d38e150d458c7ca1645e3d6822e
+  ms.sourcegitcommit: e2ce0a0c26f31bb09413c0999380301d7b693331
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 07/21/2020
+  ms.locfileid: "45189348"
+landingContent:
+- title: Informazioni su Skype for Business Server 2019
+  linkLists:
+  - linkListType: whats-new
+    links:
+    - text: Novità
+      url: /skypeforbusiness/whats-new
+  - linkListType: overview
+    links:
+    - text: Requisiti di sistema
+      url: /skypeforbusiness/plan/system-requirements
+    - text: Requisiti di rete
+      url: /skypeforbusiness/plan-your-deployment/network-requirements/network-requirements
+  - linkListType: download
+    links:
+    - text: Scarica subito!
+      url: https://www.microsoft.com/en-us/evalcenter/evaluate-skype-business-server-2019
+- title: Piano
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Informazioni generali sulla topologia
+      url: /skypeforbusiness/plan-your-deployment/topology-basics/topology-basics
+    - text: Pianificare la connettività ibrida
+      url: /skypeforbusiness/hybrid/plan-hybrid-connectivity
+    - text: Pianificare VoIP aziendale
+      url: /skypeforbusiness/plan-your-deployment/enterprise-voice-solution/enterprise-voice
+- title: Installare e gestire
+  linkLists:
+  - linkListType: deploy
+    links:
+    - text: Installare Skype for Business Server
+      url: /skypeforbusiness/deploy/install/install
+    - text: Eseguire la migrazione a Skype for business 2019
+      url: /skypeforbusiness/migration/migration-to-skype-for-business-server-2019
+    - text: Distribuire VoIP aziendale
+      url: /skypeforbusiness/deploy/deploy-enterprise-voice/deploy-enterprise-voice
+  - linkListType: how-to-guide
+    links:
+    - text: Gestire la topologia
+      url: /skypeforbusiness/manage/topology/topology
+- title: Altre risorse
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Documentazione di Skype for Business Server 2015
+      url: /SkypeForBusiness/skype-for-business-server-2015
+    - text: Documentazione di Lync Server 2013
+      url: /lyncserver/microsoft-lync-server-2013
