@@ -219,7 +219,6 @@
 ## Eventi live
 ### [Cosa sono gli eventi live di Teams?](teams-live-events/what-are-teams-live-events.md)
 ### [Pianificare gli eventi live di Teams](teams-live-events/plan-for-teams-live-events.md)
-### [Funzionalità di relatore, produttore e partecipante in un evento live](roles-in-live-events.md)
 ### [Configurare gli eventi live di Teams](teams-live-events/set-up-for-teams-live-events.md)
 ### [Usare PowerShell per impostare i criteri degli eventi live di Teams](teams-live-events/set-teams-live-events-policies-using-powershell.md)
 ### [Configurare le impostazioni degli eventi live di Teams](teams-live-events/configure-teams-live-events.md)
