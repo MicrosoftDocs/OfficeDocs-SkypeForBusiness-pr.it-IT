@@ -21,12 +21,12 @@ ms.custom:
 ms.collection:
 - M365-collaboration
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: 1d7aed894724a09f1b3cc352ef3e280cf3ead310
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: 6a30843070adc8da14343ad2dc94730a750e1f31
+ms.sourcegitcommit: bdf6cea0face74809ad3b8b935bc14ad60b3bb35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086162"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201220"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -97,7 +97,7 @@ Se si usa la qualità del servizio (QoS) per dare priorità al traffico di rete,
 
     - Per consentire l'uso dei contrassegni DSCP per la Qualità del servizio (QoS), attivare **Inserire gli indicatori della Qualità del servizio (QoS) per il traffico multimediale in tempo reale**. È possibile solo usare o non usare gli indicatori; non è possibile quindi impostare indicatori personalizzati per ciascun tipo di traffico. Per altre informazioni sugli indicatori DSCP, vedere [Selezionare un metodo di implementazione QoS](QoS-in-Teams.md#select-a-qos-implementation-method).
         > [!NOTE]
-        > Attivando **Inserisci gli indicatori della Qualità del servizio (QoS) per il traffico di contenuti multimediali in tempo reale** si consentirà anche la comunicazione all'inoltro di trasporto con porte UDP 3479 (audio), 3480 (video) e 3481 (condivisione).
+        > La codifica DSCP viene in genere eseguita tramite porte di origine e il traffico UDP verrà indirizzato a relay Transfport con la porta di destinazione di 3478 per impostazione predefinita.  Se la società richiede l'assegnazione di tag alle porte di destinazione, contattare il supporto per consentire la comunicazione con il relay di trasporto con le porte UDP 3479 (audio), 3480 (video) e 3481 (condivisione).
     - Per specificare gli intervalli di porte, accanto a **Selezionare un intervallo di porte per ogni tipo di traffico multimediale in tempo reale**, selezionare **Specificare gli intervalli di porte**e quindi immettere la porta iniziale e quella finale per la condivisione audio, video e dello schermo. Se si seleziona questa opzione, è necessario implementare la Qualità del servizio (QoS).
         > [!IMPORTANT]
         > Se si seleziona **Utilizzare automaticamente qualsiasi porta disponibile**, vengono usate le porte disponibili tra 1024 e 65535. Usare questa opzione solo quando non si implementa la Qualità del servizio (QoS).

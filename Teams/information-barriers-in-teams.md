@@ -16,12 +16,12 @@ description: In questo articolo vengono illustrati gli ostacoli alle informazion
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc9bbd3f3ff190eee3aa0b44ba68dfd8eb9aab6a
-ms.sourcegitcommit: 113e3a7314505cf78da57917ff62642125fb11fd
+ms.openlocfilehash: 29a9ac9d80e4c729dc6c040c1a7ec7fdc5eaa7d7
+ms.sourcegitcommit: a5276a713697e089d0eb0d80bba83a7af8d48251
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45121706"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45202912"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -31,7 +31,7 @@ Le informazioni barriere (IB) sono criteri che possono essere configurati da un 
 > - Non è possibile creare gruppi di barriere informativi tra i tenant.
 > - L'uso dei bot per l'aggiunta di utenti non è supportato nella versione 1.
 > - I canali privati sono conformi ai criteri di barriera delle informazioni configurati.
-> - Novità: il supporto delle informazioni barriera per il sito di SharePoint connesso a teams è ora in anteprima privata. Fare clic [qui](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR3-O9WDTKhhDtgWfphwS9YhUM0hJNklNRkZKMlhLNDRZNzlEQlVDSjdZVi4u) per partecipare all'anteprima privata.
+> - Novità: per informazioni sul supporto degli ostacoli per il sito di SharePoint connesso a teams, fare clic [qui](https://docs.microsoft.com/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites).
 
 I criteri barriera delle informazioni impediscono anche ricerche e individuazione. Questo significa che se tenti di comunicare con qualcuno con cui non devi comunicare, non troverai l'utente nella selezione persone.
 
@@ -171,6 +171,8 @@ Quando viene creato un team, viene eseguito il provisioning di un sito di ShareP
 
 Ad esempio: in Contoso Bank Corporation, l'utente "Sesha@contosobank.onmicrosoft.com" appartiene al segmento di Investment Banking e l'utente "Nikita@contosobank.onmicrosoft.com" appartiene al segmento Advisory. I criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti.
 Quando l'utente Seshe crea un team per il segmento investment banking, il team e il sito di SharePoint che lo appoggiano saranno accessibili solo agli utenti del segmento investment banking. L'utente Nikita non può accedere al sito anche se ha il collegamento al sito.
+
+Per altre informazioni, fare clic [qui](https://docs.microsoft.com/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites) .
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 

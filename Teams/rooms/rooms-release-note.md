@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può leggere le note sulla versione per Microsoft teams rooms, che elencano i miglioramenti cumulativi nelle sale di Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 68101e5787db85e0b3136e292a332fd9c1a62ecf
-ms.sourcegitcommit: 4099da7b1db7663e63ef5bece16e3090c33ea207
+ms.openlocfilehash: cd072f87371dacd45d92d92307ffe79567831201
+ms.sourcegitcommit: bdf6cea0face74809ad3b8b935bc14ad60b3bb35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45021874"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201180"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
@@ -29,6 +29,7 @@ In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di M
 
 |Rilascio |Pubblicato in <br/> Microsoft Store |
 |--- |--- |
+|4.5.33.0 |07/20/2020 |
 |4.4.63.0 |06/25/2020 |
 |4.4.41.0 |05/06/2020 |
 |4.4.25.0 |03/31/2020 |
@@ -64,6 +65,17 @@ In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di M
 |RTM (1.0.8) |12/7/2016 |
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Funzionalità di introduzione e risoluzione dei problemi di Microsoft teams rooms
+
+### <a name="45330-07202020"></a>4.5.33.0 (07/20/2020)
+Introdotti in questo aggiornamento:
+- Partecipare a riunioni Cisco WebEx da teams Rooms con Direct Guest join
+- Abilitazione e registrazione automatica del centro di amministrazione Teams
+- Supporto per la versione di Windows 10 1909
+- Passare al layout della raccolta video anche quando il contenuto è presente
+- Supporto Virtual raise Hands per i partecipanti e i controlli per relatore
+- Impostazione predefinita del volume regolabile per i servizi di conferenza e altoparlante predefinito
+- Cercare e chiamare gli utenti federati (tenant) dalla sala Teams
+    
 
 ### <a name="44630-06252020"></a>4.4.63.0 (06/25/2020)
 

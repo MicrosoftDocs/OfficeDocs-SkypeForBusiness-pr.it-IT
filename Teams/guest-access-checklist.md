@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 583fdf2ba821437d1877036ddafe5cce0a460269
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: ee7fd8e7fc85e345df3e29de99e16292c6ef7e1f
+ms.sourcegitcommit: bdf6cea0face74809ad3b8b935bc14ad60b3bb35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44637295"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45201050"
 ---
 <a name="microsoft-teams-guest-access-checklist"></a>Elenco di controllo per l'accesso guest in Microsoft Teams
 =========================================
@@ -78,7 +78,7 @@ Queste sono le impostazioni di Azure AD che supportano l'accesso guest in Teams.
 
 ## <a name="step-3-configure-microsoft-365-groups"></a>Passaggio 3: configurare i gruppi Microsoft 365
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, accedere **Settings**a  >  **Impostazioni**impostazioni, fare clic su **Servizi**e quindi selezionare **gruppi Microsoft 365**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 accedere alle **Settings**impostazioni dell'  >  **organizzazione**impostazioni, fare clic su **Servizi**e quindi selezionare **gruppi Microsoft 365**.
 
      ![La schermata mostra le impostazioni dei gruppi di Microsoft 365](media/guest-access-checklist-services-settings.png)
 2. Assicurarsi che la casella di controllo **Consenti ai membri del gruppo esterni all'organizzazione di accedere al contenuto del gruppo** sia selezionata. In caso contrario, gli utenti guest non saranno in grado di accedere al contenuto del gruppo.
@@ -92,7 +92,7 @@ Per istruzioni dettagliate sulla configurazione di queste impostazioni, vedere [
 
 Assicurarsi che gli utenti possano aggiungere guest. Ecco come:
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare a **Impostazioni** > **Impostazioni**, fare clic su **Sicurezza e privacy** e quindi selezionare **Condivisione**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 accedere alle **Settings**impostazioni dell'  >  **organizzazione**impostazioni, fare clic su **sicurezza & privacy**e quindi selezionare **condivisione**.
 
      ![Screenshot che mostra un esempio di impostazioni dei servizi](media/guest-access-checklist-security-privacy-settings.png)
  

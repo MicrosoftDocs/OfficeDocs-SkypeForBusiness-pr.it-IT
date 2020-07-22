@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: dc05c885b3b2eb5ef4991a6580ebcb0751c87f39
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: e2346c8bae770671150edc19416676f38bc1d126
+ms.sourcegitcommit: a5276a713697e089d0eb0d80bba83a7af8d48251
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44874253"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "45202938"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
 
@@ -173,3 +173,4 @@ Se la larghezza di banda *non è* limitata, teams ottimizza la qualità multimed
 
 [Come implementare Teams](How-to-roll-out-teams.md)
 
+[Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)
