@@ -132,6 +132,38 @@
 # Riunioni e conferenze
 ## [Avvio veloce: riunioni ed eventi live](quick-start-meetings-live-events.md)
 ## [Pianificare la distribuzione](deploy-meetings-microsoft-teams-landing-page.md)
+## Microsoft Teams Rooms
+### [Panoramica](rooms/index.md)
+### Piano
+#### [Panoramica della pianificazione di Microsoft Teams Rooms](rooms/rooms-plan.md)
+#### [Supporto versione](rooms/rooms-lifecycle-support.md)
+#### [Note sulla versione](rooms/rooms-release-note.md)
+#### [Predisporre l'ambiente](rooms/rooms-prep.md)
+#### [Requisiti](rooms/requirements.md)
+#### [Concessione di licenze online](rooms/rooms-licensing.md)
+#### [Gestione dei piani con Monitoraggio di Azure](rooms/azure-monitor-plan.md)
+#### [Gestione dei piani con Microsoft Teams Room Premium](rooms/microsoft-teams-rooms-premium.md)
+### Distribuisci
+#### [Panoramica della distribuzione](rooms/rooms-deploy.md)
+#### [Configurare gli account](rooms/rooms-configure-accounts.md)
+#### [Con Office 365](rooms/with-office-365.md)
+#### [Con Skype for Business Server](rooms/with-skype-for-business-server-2015.md)
+#### [Con Exchange Online (ibrido)](rooms/with-exchange-online.md)
+#### [Con Exchange locale (ibrido)](rooms/with-exchange-on-premises.md)
+#### [Configurare una console](rooms/console.md)
+#### [Configurare l'autenticazione](rooms/rooms-authentication.md)
+#### [Utilizzo di Microsoft Endpoint Configuration Manager](rooms/rooms-scale.md)
+#### [Gestione con Monitoraggio di Azure](rooms/azure-monitor-deploy.md)
+#### [Eseguire la migrazione di SRS V1 o LRS](rooms/lrs-migration.md)
+#### [Videocamere di contenuto](rooms/content-camera.md)
+### Gestione
+#### [Panoramica della gestione](rooms/rooms-manage.md)
+#### [Manutenzione e operazioni](rooms/rooms-operations.md)
+#### [Supportare Teams nell'organizzazione](rooms/known-issues.md)
+#### [Dispositivi con Monitoraggio di Azure](rooms/azure-monitor-manage.md)
+#### [Impostazioni con un file XML](rooms/xml-config-file.md)
+#### [Uso dello strumento di ripristino](rooms/recovery-tool.md)
+
 ## [Esercitazione: riunioni in Teams](Tutorial-Meetings-in-Teams.yml)
 ## [Gestire i criteri delle riunioni](meeting-policies-in-teams.md)
 ## [Gestire le impostazioni delle riunioni](meeting-settings-in-teams.md)
@@ -147,7 +179,6 @@
 ## [Configurare la funzionalità Chiamami per gli utenti](set-up-the-call-me-feature-for-your-users.md)
 ## [Ottenere un report di partecipazione alle riunioni](teams-analytics-and-reports/meeting-attendance-report.md)
 ## [Configurazione del servizio MMS (Meeting Migration Service)](/SkypeForBusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
-## [Microsoft Teams Rooms](rooms/index.md)
 ## [Gestire la Lavagna in Teams](manage-whiteboard.md)
 
 
