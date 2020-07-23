@@ -22,20 +22,17 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni sui dati e i report disponibili in Microsoft Call Quality Dashboard (Call Quality Dashboard).
-ms.openlocfilehash: 02acff8cd423901c8959e94af664ffe4d43c0e51
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: 2801b8b2a35ae06c4bb42479bac64985b13ea93f
+ms.sourcegitcommit: 3e5cac88911611c94c0330bf50af9c34db308cdf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086049"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45372165"
 ---
 # <a name="data-and-reports-in-call-quality-dashboard-cqd"></a>Dati e report in dashboard qualità chiamata (Call Quality Dashboard)
 
 Microsoft Call Quality Dashboard (Call Quality Dashboard) usa un feed di dati in tempo reale (NRT). I record di chiamata sono disponibili in Call Quality dashboard entro 30 minuti dalla fine di una chiamata. I record di chiamata della pipeline NRT sono disponibili solo per alcuni mesi prima di essere rimossi dal set di dati. 
 
-
-> [!NOTE]
-> Advanced Call Quality Dashboard (nuovo nel novembre 2019) unisce i dati della pipeline Call Quality dashboard precedente (che ha reso i record di chiamata disponibili in circa 24 ore) con i dati della NRT della pipeline Advanced Call Quality dashboard. Le query nei portali precedenti e avanzati per i dati del periodo di archiviazione producono gli stessi risultati. Le query su un portale per i dati NRT e NRT data + EUII periodi saranno diverse.
 
 ## <a name="many-ways-to-access-cqd-data"></a>Molti modi per accedere ai dati di Call Quality dashboard
 
@@ -46,7 +43,7 @@ Puoi accedere ai dati di Call Quality dashboard in diversi viali. Scegliere quel
 |Interfaccia di amministrazione di teams [( https://admin.teams.microsoft.com) ](https://admin.teams.microsoft.com)    | I dati di Call Quality dashboard sono inclusi nella pagina **utenti** nell'interfaccia di amministrazione di teams, che mostra i dati più comuni necessari in un formato di facile lettura. Non è possibile personalizzare i dati di Call Quality dashboard che si trovano in **utenti**.  |
 |Portale di [Call Quality dashboard https://cqd.teams.microsoft.com) (](https://cqd.teams.microsoft.com)     | Report di riepilogo e dettagliati affidabili che soddisfano la maggior parte delle esigenze, con il filtro drill-through. È anche possibile personalizzare i report nel portale di Call Quality dashboard. <br><br>Ottenere due [modelli di report di Call Quality dashboard](#import-the-cqd-report-templates) per analizzare i dati nel portale di Call Quality dashboard.       |
 |Power BI     | Usare le query dirette per visualizzare i dati di Call Quality dashboard in Power BI usando i [modelli di Power bi personalizzabili](CQD-Power-BI-query-templates.md). [Scaricare i modelli di query di Power BI per Call Quality dashboard](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true).<br><br>Puoi anche [usare l'API REST per accedere ai dati di Call Quality dashboard](https://docs.microsoft.com/skypeforbusiness/management-tools/call-quality-dashboard/data-api) tramite Power bi. Usa questo metodo se vuoi scaricare i tuoi dati di Call Quality dashboard in modo da poterli lavorare offline. Il vantaggio dell'uso di questo metodo è una prestazione migliore, particolarmente utile per i set di dati di grandi dimensioni che si impantanano in Power BI quando si è online.       |
-|API del grafico     | Accedere ai dati di qualità delle chiamate con l' [API del grafico](https://docs.microsoft.com/graph/api/resources/callrecords-api-overview?view=graph-rest-beta). Questo è il metodo più complesso, ma offre il massimo controllo e flessibilità per analizzare i dati di qualità delle chiamate. Ad esempio, se devi unirti ad altri dati per l'organizzazione, puoi usare l'API del grafico per creare un modello di dati e incorporare i dati sulla qualità delle chiamate.        |
+|API di Microsoft Graph     | Accedere ai dati di qualità delle chiamate con l' [API del grafico](https://docs.microsoft.com/graph/api/resources/callrecords-api-overview?view=graph-rest-beta). Questo è il metodo più complesso, ma offre il massimo controllo e flessibilità per analizzare i dati di qualità delle chiamate. Ad esempio, se devi unirti ad altri dati per l'organizzazione, puoi usare l'API del grafico per creare un modello di dati e incorporare i dati sulla qualità delle chiamate.        |
 
 ## <a name="import-the-cqd-report-templates"></a>Importare i modelli di report di Call Quality dashboard
 

@@ -18,18 +18,18 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9369cf56a32142d6527fcb86271d8d0fa56718ec
-ms.sourcegitcommit: 2467ece95e100a3a3cc2be3538d8eb7d878b3663
+ms.openlocfilehash: 4154a3ad30bf18de934f0fe5a23bbabc94fc76eb
+ms.sourcegitcommit: 863347fb6e5916d8d936adc4ddcebb2e32a91d1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/06/2020
-ms.locfileid: "45043011"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229052"
 ---
 # <a name="walkie-talkie-app-in-microsoft-teams"></a>App walkie talkie in Microsoft Teams
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-L'app walkie talkie in teams fornisce comunicazioni immediate push-to-Talk (PTT) per il team e sarà presto disponibile in anteprima pubblica in Android. Walkie talkie consente agli utenti di connettersi con il proprio team usando gli stessi canali sottostanti di cui sono membri. Solo gli utenti che si connettono a walkie talkie in un canale diventano partecipanti e possono comunicare tra loro tramite push-to-Talk, uno alla volta.
+L'app walkie talkie in teams fornisce comunicazioni immediate push-to-Talk (PTT) per il team ed è disponibile in anteprima pubblica su Android. Walkie talkie consente agli utenti di connettersi con il proprio team usando gli stessi canali sottostanti di cui sono membri. Solo gli utenti che si connettono a walkie talkie in un canale diventano partecipanti e possono comunicare tra loro tramite push-to-Talk, uno alla volta.
 
 Con walkie-talkie in teams, i lavoratori di i FIRSTLINE possono ora comunicare in modo sicuro con un'esperienza di PTT familiare senza dover trasportare radio ingombranti e il walkie-talkie funziona ovunque con WiFi o connettività Internet cellulare.
 
@@ -73,9 +73,9 @@ L'utilizzo dei dati attesi da walkie talkie è di circa 20KB/s durante l'invio o
 
 I lavoratori I FIRSTLINE spesso devono parlare e ricevere chiamate walkie-talkie anche quando i loro telefoni sono bloccati. Questa esperienza è possibile tramite dispositivi specializzati con un pulsante PTT dedicato.
 
-- Telefoni esistenti
-  - Auricolari cablati ([Klein Electronics](https://www.kleinelectronics.com/))
-  - Auricolari wireless ([Jabra BlueParrott](https://www.blueparrott.com/))
+- Cuffie
+  - Auricolari cablati ([Klein Electronics](https://www.kleinelectronics.com/poc-accessories/mtwt/))
+  - Auricolari wireless ([Jabra BlueParrott](https://www.blueparrott.com/microsoft-teams-walkie-talkie))
 - Telefoni robusti
   - Samsung Galaxy XCover Pro
     - [Altre info](https://www.samsung.com/us/business/products/mobile/phones/galaxy-xcover-pro/).

@@ -21,12 +21,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Skype for Business Online
-ms.openlocfilehash: f30db1425c61e8cb5f916345c0b751bc81c90a0f
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 0dc4e9a4c223422ab743e657d808f5de0f3239e7
+ms.sourcegitcommit: 863347fb6e5916d8d936adc4ddcebb2e32a91d1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44637425"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45228892"
 ---
 <a name="manage-teams-during-the-transition-to-the-new-microsoft-teams-admin-center"></a>Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams.
 ======================================================
@@ -34,9 +34,9 @@ ms.locfileid: "44637425"
 > [!IMPORTANT]
 > [!INCLUDE [new-teams-sfb-admin-center-notice](includes/new-teams-sfb-admin-center-notice.md)]
 
-## <a name="what-is-the-new-microsoft-teams-admin-center"></a>Che cos'è il nuovo centro di amministrazione di Microsoft Teams?  
+## <a name="what-is-the-new-microsoft-teams-admin-center"></a>Qual è il nuovo centro di amministrazione di Microsoft Teams  
 
-La nuova esperienza di interfaccia di amministrazione ti offre un'esperienza unificata per gestire sia team che Skype for business. Stiamo offrendo funzionalità aggiuntive, approfondimenti finali e la possibilità di gestire le impostazioni dei team a livello di utente. È possibile accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
+La nuova esperienza di interfaccia di amministrazione ti offre un'esperienza unificata per gestire sia team che Skype for business. Stiamo offrendo funzionalità aggiuntive, approfondimenti finali e la possibilità di gestire le impostazioni dei team a livello di utente.
 
 ![Screenshot dell'interfaccia di amministrazione di Microsoft teams.](media/manage-teams-skype-for-business-admin-center-portal.png)
 
@@ -84,15 +84,15 @@ La tabella seguente identifica le sezioni dell'esperienza teams che sono state m
 
 - Consentire a un utente di trasferire localmente le app che possono essere gestite a livello di utente in [TeamsAppSetupPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsappsetuppolicy?view=skype-ps).
 - Consenti agli utenti di un tenant di interagire con le app personalizzate che possono essere gestite a livello di tenant nelle impostazioni dell'app per l'intera organizzazione.
- 
-<sup>3</sup> le app predefinite e le app esterne possono essere abilitate e disabilitate a livello di utente in TeamsAppPermissionPolicy. Inoltre, le app possono essere bloccate a livello di tenant nelle impostazioni dell'app a livello di organizzazione che sostituisce tutte le impostazioni di utenti e livelli di tenant. 
+
+<sup>3</sup> le app predefinite e le app esterne possono essere abilitate e disabilitate a livello di utente in TeamsAppPermissionPolicy. Inoltre, le app possono essere bloccate a livello di tenant nelle impostazioni dell'app a livello di organizzazione che sostituisce tutte le impostazioni di utenti e livelli di tenant.
 
 > [!NOTE]
-> Si continuerà a usare il dashboard dei gruppi nell'interfaccia di amministrazione di Microsoft 365 per la configurazione relativa a team e canali. Le impostazioni per le app rimarranno nell'area Teams dell'interfaccia di amministrazione di Microsoft 365 e verranno migrate in un secondo momento. 
+> Si continuerà a usare il dashboard dei gruppi nell'interfaccia di amministrazione di Microsoft 365 per la configurazione relativa a team e canali. Le impostazioni per le app rimarranno nell'area Teams dell'interfaccia di amministrazione di Microsoft 365 e verranno migrate in un secondo momento.
 
 ## <a name="manage-settings-during-the-migration"></a>Gestire le impostazioni durante la migrazione
 
-È possibile continuare a modificare le impostazioni nell'interfaccia di amministrazione di Microsoft 365 e nell'interfaccia di amministrazione di Skype for business finché la migrazione per una sezione non è completa per il tenant. 
+È possibile continuare a modificare le impostazioni nell'interfaccia di amministrazione di Microsoft 365 e nell'interfaccia di amministrazione di Skype for business finché la migrazione per una sezione non è completa per il tenant.
 
 La tabella seguente mostra la posizione in cui è possibile gestire le caratteristiche durante la migrazione.
 
@@ -104,7 +104,7 @@ La tabella seguente mostra la posizione in cui è possibile gestire le caratteri
 |Gestione del ciclo di vita di Teams   |    X    |      |       |
 |Impostazioni Teams   |    X    |      |       |
 |Impostazioni di accesso esterno     |    X    |      |       |
-|Gestione utenti    |         |         |    X     |    
+|Gestione utenti    |         |         |    X     |
 |Audioconferenza     |    X     |    X     |         |
 |Piani di chiamata     |    X    |    X     |         |
 |Sistema telefonico    |    X    |     X    |         |

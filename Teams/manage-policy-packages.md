@@ -20,20 +20,18 @@ ms.custom:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft teams per semplificare, snellire e garantire la coerenza quando si gestiscono i criteri per i gruppi di utenti.
-ms.openlocfilehash: 0fc612f4f04e0a57176ac985b40de029d42c5e9e
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 0bd14852a9f488bb6740a2df8219041ba0c71ebb
+ms.sourcegitcommit: 13b88679f3154c264dd2f01be785d6570276853e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44669415"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45374364"
 ---
 # <a name="manage-policy-packages-in-microsoft-teams"></a>Gestire i pacchetti di criteri in Microsoft Teams
 
 Un pacchetto di criteri in Microsoft teams è una raccolta di criteri predefiniti e di impostazioni dei criteri che è possibile assegnare agli utenti che hanno ruoli simili nell'organizzazione. I pacchetti di criteri sono stati creati per semplificare, snellire e garantire la coerenza della gestione dei criteri per i gruppi di utenti nell'organizzazione.  
 
 Quando si assegna un pacchetto di criteri agli utenti, i criteri del pacchetto vengono creati e quindi è possibile personalizzare le impostazioni dei criteri nel pacchetto per soddisfare le esigenze dell'organizzazione.
-
-I pacchetti di criteri non sono disponibili per le organizzazioni di community Cloud (GCC) degli Stati Uniti.
 
 ## <a name="what-is-a-policy-package"></a>Che cos'è un pacchetto di criteri
 
@@ -49,6 +47,8 @@ I team attualmente includono i seguenti pacchetti di criteri.
 |Istruzione (insegnante)    |Crea un set di criteri e impostazioni dei criteri applicabili agli insegnanti.      |
 |Istruzione (insegnante di scuola elementare che usa l'apprendimento remoto)    |Crea una serie di criteri che si applicano agli insegnanti delle scuole elementari per massimizzare la sicurezza e la collaborazione degli studenti quando si adotta l'apprendimento a distanza.      |
 |Istruzione (studente della scuola elementare che usa l'apprendimento remoto)    |Crea una serie di criteri che si applicano agli studenti delle scuole elementari per massimizzare la sicurezza e la collaborazione degli studenti quando si adotta l'apprendimento a distanza.      |
+|Gestione i FIRSTLINE |Crea un set di criteri e applica tali impostazioni ai responsabili di I FIRSTLINE dell'organizzazione. |
+|Lavoratore i FIRSTLINE |Crea un set di criteri e applica tali impostazioni agli operatori I FIRSTLINE dell'organizzazione. |
 |Lavoratore clinico sanitario  |Crea un set di criteri e impostazioni dei criteri che conferiscono agli operatori clinici, ad esempio infermieri registrati, addebiti infermieri, medici e assistenti sociali, l'accesso completo alla chat, alle chiamate, alla gestione del turno e alle riunioni. |
 |Information Worker sanitari  |Crea un set di criteri e impostazioni dei criteri che forniscono agli Information Worker come personale IT, personale informatico, personale finanziario e responsabili della conformità, accesso completo alla chat, alle chiamate e alle riunioni.|
 |Sala paziente sanitaria  |Crea un set di criteri e impostazioni dei criteri applicabili alle sale del paziente nell'organizzazione sanitaria.|

@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1d3548ead35c63e2d34c47b340559c3174f1c895
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: e17f27cdbaaca9070d87714b58906df96539e12e
+ms.sourcegitcommit: 3e5cac88911611c94c0330bf50af9c34db308cdf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45086192"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45372195"
 ---
 <a name="archive-or-delete-a-team-in-microsoft-teams"></a>Archiviare o eliminare un team in Microsoft Teams
 ===========================================
@@ -40,9 +40,9 @@ Con l'eliminazione di un team, vengono eliminate anche le attività del team in 
 
 ## <a name="archive-a-team"></a>Archiviare un team
 
-Seguire questi passaggi per archiviare un team.
+Seguire questi passaggi per archiviare un team. Per apportare queste modifiche, è necessario essere un amministratore del servizio teams. Vedere [usare i ruoli di amministratore di team per gestire i team](https://docs.microsoft.com/microsoftteams/using-admin-roles) per leggere informazioni su come ottenere ruoli di amministratore e autorizzazioni.
 
-1. Nell'interfaccia di amministrazione di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> selezionare **Teams**.
+1. Nell'interfaccia di amministrazione selezionare **Teams**.
 2. Selezionare un team facendo clic sul nome del team.
 3. Selezionare **Archivia**. Verrà visualizzato il messaggio seguente.
 
@@ -55,7 +55,7 @@ Seguire questi passaggi per archiviare un team.
 
 Seguire questi passaggi per attivare nuovamente un team archiviato.
 
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a>selezionare **Teams**.
+1. Nell'interfaccia di amministrazione selezionare **Teams**.
 2. Selezionare un team facendo clic sul nome del team.
 3. Selezionare **Annulla archiviazione**. Lo stato del team diventerà **Attivo**.
 
@@ -63,7 +63,7 @@ Seguire questi passaggi per attivare nuovamente un team archiviato.
 
 Se il team non è più necessario, è possibile eseguire l’eliminazione al posto dell’archiviazione. Seguire questi passaggi per eliminare il team.
 
-1.  Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Amministrazione</a>selezionare **Teams**.
+1.  Nell'interfaccia di amministrazione selezionare **Teams**.
 2.  Selezionare un team facendo clic sul nome del team.
 3.  Selezionare **Elimina**. Verrà visualizzato un messaggio di conferma.
 4.  Selezionare **Elimina** per eliminare definitivamente il team.
@@ -79,7 +79,7 @@ Per impostazione predefinita, un gruppo Microsoft 365 eliminato viene mantenuto 
 1. Aprire Windows PowerShell come amministratore.
 2. Se è presente l’installazione di una versione precedente del modulo di Azure AD o di una sua anteprima, disinstallarlo eseguendo una delle operazioni seguenti:
 
-    ```PowerShell 
+    ```PowerShell
     Uninstall-Module AzureADPreview
     ```
 
@@ -90,7 +90,7 @@ Per impostazione predefinita, un gruppo Microsoft 365 eliminato viene mantenuto 
 
     ```PowerShell
     Install-Module AzureADPreview
-    ```    
+    ```
 
 ### <a name="restore-the-deleted-microsoft-365-group"></a>Ripristinare il gruppo Microsoft 365 eliminato
 
@@ -102,7 +102,7 @@ Per impostazione predefinita, un gruppo Microsoft 365 eliminato viene mantenuto 
 2. Eseguire la procedura seguente per visualizzare un elenco di tutti i gruppi Microsoft 365 eliminati temporaneamente che si trovano ancora entro il periodo di conservazione di 30 giorni. Utilizzare il parametro **-All $True** se sono presenti molti gruppi.
     ```PowerShell
     Get-AzureADMSDeletedGroup
-    ``` 
+    ```
 3. Individuare il gruppo che si vuole ripristinare e quindi prendere nota dell'ID.
 4. Eseguire le operazioni seguenti, in cui [Id] è l'ID del gruppo, per ripristinare il gruppo.
     ```PowerShell

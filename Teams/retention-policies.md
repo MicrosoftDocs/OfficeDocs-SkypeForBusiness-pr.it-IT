@@ -17,12 +17,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: efa11a5ca91be13508ab518ab5be504743825b68
-ms.sourcegitcommit: a5276a713697e089d0eb0d80bba83a7af8d48251
+ms.openlocfilehash: 01b042ee5eb604e59044022e3064f522039b4272
+ms.sourcegitcommit: 13b88679f3154c264dd2f01be785d6570276853e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45202955"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45247385"
 ---
 # <a name="retention-policies-in-microsoft-teams"></a>Criteri di conservazione in Microsoft Teams
 
@@ -154,6 +154,24 @@ Per eliminare un criterio di conservazione di Teams, eseguire le operazioni segu
 1. Nel riquadro di spostamento sinistro del Centro sicurezza e conformità, passare a **Governance delle informazioni** > **Conservazione**.
 2. Nell'elenco dei criteri di conservazione, selezionare la casella di controllo accanto al criterio di conservazione che si desidera eliminare.
 3. Selezionare **Elimina criterio**.
+
+### <a name="end-user-experience"></a>Esperienza utente finale
+
+Per le chat private (chat di 1:1) o le chat di gruppo, gli utenti finali vedranno che le chat precedenti alla configurazione dei criteri di conservazione vengono eliminate e un messaggio di controllo che indica che "è stato eliminato un messaggio più vecchio a causa dei criteri di conservazione dell'organizzazione" viene visualizzato sopra i messaggi ancora non eliminati.
+:::image type="content" source="media/retention-policies-image1.png" alt-text="Screenshot della conservazione della chat":::
+
+
+:::image type="content" source="media/retention-policies-image2.png" alt-text="Screenshot della conservazione di Group Chat":::
+
+Per i messaggi di canale, gli utenti finali (membri del canale) vedranno scomparire i messaggi eliminati dalla visualizzazione dopo la scadenza dei messaggi. Se il messaggio eliminato è un messaggio padre di una conversazione in thread, al posto del messaggio padre viene visualizzato un messaggio che indica che "questo messaggio è stato eliminato a causa di un criterio di conservazione".
+
+:::image type="content" source="media/retention-policies-image3.png" alt-text="Screenshot del canale prima della conservazione":::
+
+:::image type="content" source="media/retention-policies-image4.png" alt-text="Screenshot del canale dopo la conservazione":::
+
+> [!NOTE]
+> La messaggistica dell'utente finale non è modificabile dall'utente o dall'amministratore in questo momento.
+
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 

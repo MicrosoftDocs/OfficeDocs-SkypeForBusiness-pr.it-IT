@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f800b92a0663b5c4318022c00cbb9ba022f2e8c3
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: 7ae1776cf57368ea0f18cb6b0e46e5a11dffe447
+ms.sourcegitcommit: 863347fb6e5916d8d936adc4ddcebb2e32a91d1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45085682"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45228902"
 ---
 <a name="admin-settings-for-apps-in-microsoft-teams"></a>Impostazioni di amministrazione per le app in Microsoft Teams
 ==========================================
@@ -34,7 +34,7 @@ ms.locfileid: "45085682"
 
 Le app contengono strumenti fuori sede per l'organizzazione per ottenere un numero maggiore di team. Queste app combinano la funzionalità di schede, estensioni di messaggistica, connettori e bot forniti da Microsoft, creati da terze parti o da sviluppatori dell'organizzazione.
 
-Puoi gestire le app per l'organizzazione in **app teams** nell'interfaccia di [Amministrazione](https://admin.teams.microsoft.com/). Ad esempio, puoi consentire o bloccare le app a livello di organizzazione, impostare i criteri per controllare quali app sono disponibili per gli utenti del team e personalizzare i team tramite il blocco delle app più importanti per gli utenti.
+Puoi gestire le app per l'organizzazione in **app teams** nell'interfaccia di amministrazione. Vedere [usare i ruoli di amministratore di team per gestire i team](https://docs.microsoft.com/microsoftteams/using-admin-roles) per leggere informazioni su come ottenere ruoli di amministratore e autorizzazioni. Ad esempio, puoi consentire o bloccare le app a livello di organizzazione, impostare i criteri per controllare quali app sono disponibili per gli utenti del team e personalizzare i team tramite il blocco delle app più importanti per gli utenti.
 
 Stiamo migliorando continuamente l'esperienza dell'app in teams e aggiungendo funzionalità e funzionalità. Nel corso del tempo creeremo altre funzionalità di gestione delle app, quindi ricontrolla le informazioni più aggiornate sui criteri per le app.
 

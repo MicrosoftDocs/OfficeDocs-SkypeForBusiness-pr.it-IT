@@ -22,24 +22,22 @@ ms.reviewer: islubin
 description: Informazioni su come usare i ruoli amministrativi per designare gli amministratori che necessitano di livelli di accesso diversi per la gestione dei team.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e56ce07f73eb4fe7ce69c2e1fc3522cbfc254096
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 8e044a806136330e630eb7f5336a9480f9ebd435
+ms.sourcegitcommit: 863347fb6e5916d8d936adc4ddcebb2e32a91d1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665208"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229042"
 ---
 # <a name="use-microsoft-teams-administrator-roles-to-manage-teams"></a>Usare i ruoli di amministratore di Microsoft teams per gestire Teams
 
-Usando Azure Active Directory (Azure AD), è possibile designare gli amministratori che necessitano di livelli di accesso diversi per la gestione di Microsoft teams. Gli amministratori possono gestire il carico di lavoro di teams intero oppure possono avere autorizzazioni delegate per la risoluzione dei problemi di qualità delle chiamate o per gestire le esigenze di telefonia dell'organizzazione. 
+Usando Azure Active Directory (Azure AD), è possibile designare gli amministratori che necessitano di livelli di accesso diversi per la gestione di Microsoft teams. Gli amministratori possono gestire il carico di lavoro di teams intero oppure possono avere autorizzazioni delegate per la risoluzione dei problemi di qualità delle chiamate o per gestire le esigenze di telefonia dell'organizzazione.
 
 ## <a name="teams-roles-and-capabilities"></a>Ruoli e funzionalità di Teams
 
 Sono disponibili quattro ruoli di amministratore di teams: amministratore del servizio teams, amministratore delle comunicazioni di teams, specialista delle comunicazioni di teams e ingegnere del supporto per Communications teams. Esaminare la tabella seguente per capire cosa può fare ogni ruolo e quali strumenti possono essere usati dall'amministratore nell'interfaccia di amministrazione di Microsoft teams e in PowerShell.
 
-Per seguire i dati, accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
-
-
+Per seguire la procedura, è necessario essere un amministratore. Le istruzioni per ottenere le autorizzazioni sono contenute in questo articolo.
 
 <!-- add Global admin role? -->
 

@@ -17,12 +17,12 @@ description: Informazioni su come usare il report attività utente teams nell'in
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9516c7ed39a56e09bb714f58e988dc46b41ec9e2
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 19f1ef23e29805e53d819752e3f6313c4989d295
+ms.sourcegitcommit: 3e5cac88911611c94c0330bf50af9c34db308cdf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43903871"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45372155"
 ---
 # <a name="microsoft-teams-user-activity-report"></a>Report attività utente di Microsoft Teams
 
@@ -30,7 +30,9 @@ Il report attività utente teams offre informazioni sui tipi di attività che gl
 
 ## <a name="view-the-user-activity-report"></a>Visualizzare il report attività utente
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** > report**sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **attività utente teams**.
+Per apportare queste modifiche, è necessario essere un amministratore del servizio teams. Vedere [usare i ruoli di amministratore di team per gestire i team](https://docs.microsoft.com/microsoftteams/using-admin-roles) per leggere informazioni su come ottenere ruoli di amministratore e autorizzazioni.
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione fare clic su **analisi &** report  >  **sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **attività utente teams**.
 2. In **intervallo di date**selezionare un intervallo e quindi fare clic su **Esegui report**.
 
     ![Screenshot del report attività utente teams nell'interfaccia di amministrazione di teams con callout](../media/teams-reports-user-activity-with-callouts.png "Screenshot del report attività utente teams nell'interfaccia di amministrazione di teams con callout")

@@ -16,16 +16,16 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come usare il dashboard integrità per monitorare la connessione tra il controller di bordo della sessione e il routing diretto.
-ms.openlocfilehash: 55ae433428a8bb6fd42d4166e5d756432463b4ed
-ms.sourcegitcommit: 929c050c038a64216e38b0a67569a8f18ad4baf2
+ms.openlocfilehash: a75510340815489921a5dd67a204b6914a9539d4
+ms.sourcegitcommit: 863347fb6e5916d8d936adc4ddcebb2e32a91d1c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2020
-ms.locfileid: "43940743"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229112"
 ---
 # <a name="health-dashboard-for-direct-routing"></a>Dashboard integrità per il routing diretto
 
-Il dashboard integrità per il routing diretto consente di monitorare la connessione tra l'SBC (Session Border Controller) e l'interfaccia Direct routing.  Con dashboard integrità è possibile monitorare le informazioni su SBC, il servizio di telefonia e i parametri di rete tra il SBC e l'interfaccia di routing diretta. Queste informazioni consentono di identificare i problemi, incluso il motivo per cui sono state eliminate le chiamate. Ad esempio, il SBC potrebbe interrompere l'invio di chiamate se un certificato nell'SBC è scaduto o se sono presenti problemi di rete.  
+Il dashboard integrità per il routing diretto consente di monitorare la connessione tra l'SBC (Session Border Controller) e l'interfaccia Direct routing.  Con dashboard integrità è possibile monitorare le informazioni su SBC, il servizio di telefonia e i parametri di rete tra il SBC e l'interfaccia di routing diretta. Queste informazioni consentono di identificare i problemi, incluso il motivo per cui sono state eliminate le chiamate. Ad esempio, il SBC potrebbe interrompere l'invio di chiamate se un certificato nell'SBC è scaduto o se sono presenti problemi di rete. Vedere i [ruoli di amministratore](using-admin-roles.md) per scoprire chi ha accesso al dashboard integrità.
 
 Il dashboard integrità monitora due livelli di informazioni:
 
@@ -33,7 +33,6 @@ Il dashboard integrità monitora due livelli di informazioni:
 - Informazioni dettagliate sul SBCs connesso
 
 È possibile visualizzare dashboard integrità nell'interfaccia di amministrazione di Microsoft teams e Skype for business.
-
 
 ## <a name="overall-health"></a>Integrità generale
 
@@ -47,18 +46,17 @@ Il dashboard integrità offre le informazioni seguenti relative all'integrità c
 
 - **Network efficacia ratio (ner)** -l'ner misura la capacità di una rete di consegnare le chiamate misurando il numero di chiamate inviate rispetto al numero di chiamate recapitate a un destinatario.  
 
-   L'NER misura la capacità delle reti di consegnare le chiamate al terminale più remoto, ad esclusione delle azioni degli utenti con conseguente rigetto delle chiamate.  Se il destinatario ha rifiutato una chiamata o ha inviato la chiamata alla segreteria telefonica, la chiamata viene conteggiata come recapito riuscito. Ciò significa che un messaggio di risposta, un segnale di occupato o un anello senza risposta vengono considerati chiamate di successo. 
+   L'NER misura la capacità delle reti di consegnare le chiamate al terminale più remoto, ad esclusione delle azioni degli utenti con conseguente rigetto delle chiamate.  Se il destinatario ha rifiutato una chiamata o ha inviato la chiamata alla segreteria telefonica, la chiamata viene conteggiata come recapito riuscito. Ciò significa che un messaggio di risposta, un segnale di occupato o un anello senza risposta vengono considerati chiamate di successo.
   
-   Ad esempio, supponiamo che Direct routing abbia inviato una chiamata a SBC e SBC restituisca il codice SIP "timeout del server di 504: il server ha tentato di accedere a un altro server nel tentativo di elaborare la richiesta e non ha ricevuto una risposta rapida". Questa risposta indica che c'è un problema sul lato SBC e questo ridurrà l'NER nel dashboard integrità per questo SBC. 
+   Ad esempio, supponiamo che Direct routing abbia inviato una chiamata a SBC e SBC restituisca il codice SIP "timeout del server di 504: il server ha tentato di accedere a un altro server nel tentativo di elaborare la richiesta e non ha ricevuto una risposta rapida". Questa risposta indica che c'è un problema sul lato SBC e questo ridurrà l'NER nel dashboard integrità per questo SBC.
   
-   Dato che l'azione da eseguire potrebbe dipendere dal numero di chiamate interessate, il dashboard dell'integrità Mostra quante chiamate sono state analizzate per calcolare un parametro. Se il numero di chiamate è inferiore a 100, l'NER potrebbe essere abbastanza basso, ma comunque normale. 
+   Dato che l'azione da eseguire potrebbe dipendere dal numero di chiamate interessate, il dashboard dell'integrità Mostra quante chiamate sono state analizzate per calcolare un parametro. Se il numero di chiamate è inferiore a 100, l'NER potrebbe essere abbastanza basso, ma comunque normale.
 
    La formula usata per calcolare NER è:
 
    NER = 100 x (risposte chiamate + utente occupato + squillo nessuna risposta + attacchi terminali)/Total chiamate
 
- 
-- **Durata media** delle chiamate: le informazioni sulla durata media delle chiamate consentono di monitorare la qualità delle chiamate. La durata media di una chiamata PSTN di 1:1 è di quattro-cinque minuti.  Tuttavia, per ogni società, questa media può essere diversa.  Microsoft consiglia di stabilire una previsione per la durata media della chiamata per la società. Se questo parametro è significativamente inferiore alla linea di base, potrebbe indicare che gli utenti hanno problemi con la qualità della chiamata o l'affidabilità e si riagganciano prima del solito. Se si inizia a visualizzare una durata di chiamata media estremamente bassa, ad esempio 15 secondi, i chiamanti potrebbero essere sospesi perché il servizio non è in esecuzione in modo affidabile. 
+- **Durata media** delle chiamate: le informazioni sulla durata media delle chiamate consentono di monitorare la qualità delle chiamate. La durata media di una chiamata PSTN di 1:1 è di quattro-cinque minuti.  Tuttavia, per ogni società, questa media può essere diversa.  Microsoft consiglia di stabilire una previsione per la durata media della chiamata per la società. Se questo parametro è significativamente inferiore alla linea di base, potrebbe indicare che gli utenti hanno problemi con la qualità della chiamata o l'affidabilità e si riagganciano prima del solito. Se si inizia a visualizzare una durata di chiamata media estremamente bassa, ad esempio 15 secondi, i chiamanti potrebbero essere sospesi perché il servizio non è in esecuzione in modo affidabile.
 
    Dato che l'azione da eseguire potrebbe dipendere dal numero di chiamate interessate, il dashboard dell'integrità Mostra quante chiamate sono state analizzate per calcolare un parametro.
 
@@ -76,17 +74,15 @@ Il dashboard integrità offre le informazioni seguenti relative all'integrità c
 
     - Avviso, nessuna opzione SIP: il controller del bordo della sessione esiste nel database (l'amministratore lo ha creato usando il comando New-CsOnlinePSTNGateway). È configurata per l'invio di opzioni SIP, ma il servizio di routing diretto non ha mai visto le opzioni SIP di ritorno da questo SBC.
 
-    - Avviso, i messaggi SIP non vengono configurati: il monitoraggio del trunk tramite le opzioni SIP non è attivato. Il sistema di chiamate Microsoft usa le opzioni SIP e il monitoraggio dell'handshake Transport Layer Security (TLS) per rilevare lo stato di integrità dei controller di bordo della sessione connessa (SBCs) a livello di applicazione. Si verificheranno problemi se il trunk può essere raggiunto a livello di rete (tramite ping), ma il certificato è scaduto o lo stack SIP non funziona. Per identificare tempestivamente questi problemi, Microsoft consiglia di abilitare l'invio di opzioni SIP. Verificare la documentazione del produttore SBC per configurare l'invio delle opzioni SIP. 
+    - Avviso, i messaggi SIP non vengono configurati: il monitoraggio del trunk tramite le opzioni SIP non è attivato. Il sistema di chiamate Microsoft usa le opzioni SIP e il monitoraggio dell'handshake Transport Layer Security (TLS) per rilevare lo stato di integrità dei controller di bordo della sessione connessa (SBCs) a livello di applicazione. Si verificheranno problemi se il trunk può essere raggiunto a livello di rete (tramite ping), ma il certificato è scaduto o lo stack SIP non funziona. Per identificare tempestivamente questi problemi, Microsoft consiglia di abilitare l'invio di opzioni SIP. Verificare la documentazione del produttore SBC per configurare l'invio delle opzioni SIP.
 
 - **Capacità delle chiamate simultanee** : è possibile specificare il limite delle chiamate simultanee che un SBC può gestire usando il comando New-o set-CsOnlinePSTNGateway con il parametro-MaxConcurrentSessions. Questo parametro calcola il numero di chiamate inviate o ricevute tramite routing diretto usando un SBC specifico e lo confronta con il limite impostato. Nota: se il SBC gestisce anche le chiamate a PBX diversi, questo numero non visualizzerà le chiamate simultanee effettive.
-
 
 ## <a name="detailed-information-for-each-sbc"></a>Informazioni dettagliate per ogni SBC
 
 È anche possibile visualizzare le informazioni dettagliate per un SBC specifico, come illustrato nello screenshot seguente:
 
 ![Dettagli del dashboard di integrità](media/direct-routing-dashboard-SBC-detail1.png)
-
 
 La visualizzazione dettagliata mostra i seguenti parametri aggiuntivi:
 
@@ -113,7 +109,3 @@ La visualizzazione dettagliata mostra i seguenti parametri aggiuntivi:
    È possibile scorrere i dati in base al numero di giorni e alla direzione delle chiamate (in ingresso/in uscita/tutti i flussi).
 
 **Rapporto efficacia di rete** : questo è lo stesso parametro visualizzato nel dashboard integrità generale, ma con l'opzione per suddividere i dati in base a serie temporali o direzione chiamata.
-
-
-
-
