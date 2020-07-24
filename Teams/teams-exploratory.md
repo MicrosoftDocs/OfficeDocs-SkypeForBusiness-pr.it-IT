@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 99017e63ae784c7c4271454829198c7c06ecfe8e
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: d0b5c289a2cc87c778a0d9b0bd1ebb8d52978fb4
+ms.sourcegitcommit: 863347fb6e5916d8d936adc4ddcebb2e32a91d1c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868463"
+ms.lasthandoff: 07/22/2020
+ms.locfileid: "45229142"
 ---
 <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 =======================================================
@@ -79,9 +79,9 @@ Gli amministratori possono impedire agli utenti finali di eseguire l'esperienza 
 
 ### <a name="prevent-users-from-installing-trial-apps-and-services"></a>Impedire agli utenti di installare le versioni di valutazione di app e servizi
 
-È possibile disattivare l'opzione per installare le versioni di valutazione di app e servizi per evitare che gli utenti eseguano l'esperienza Teams Exploratory. È necessario avere i privilegi di amministratore. Per altre informazioni sui ruoli di amministratore, vedere [Usare i ruoli di amministratore di Microsoft Teams per gestire Teams](teams-exploratory.md).
+È possibile disattivare l'opzione per installare le versioni di valutazione di app e servizi per evitare che gli utenti eseguano l'esperienza Teams Exploratory. 
 
-1. Nell'[interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home), passare a **Impostazioni** > **Impostazioni**, selezionare **Servizi** e quindi selezionare **App e servizi di proprietà degli utenti**.
+1. Dall'interfaccia di amministrazione di Microsoft 365, andare in **Impostazioni** > **Impostazioni**, selezionare **Servizi**, quindi **App e servizi di proprietà dell'utente**.
 
     ![Screenshot della pagina Servizi nell'interfaccia di amministrazione](media/iw-trial-services.png)
 
@@ -98,7 +98,7 @@ Un utente a cui è stata assegnata una licenza che include Teams non è idoneo p
 
 Per disattivare l'accesso a Teams:
 
-1. Nell'[interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home) selezionare**Utenti** > **Utenti attivi**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** > **Utenti attivi**.
 
 2. Selezionare la casella accanto al nome dell'utente.
 
