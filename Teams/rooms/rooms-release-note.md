@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può leggere le note sulla versione per Microsoft teams rooms, che elencano i miglioramenti cumulativi nelle sale di Microsoft teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cd072f87371dacd45d92d92307ffe79567831201
-ms.sourcegitcommit: bdf6cea0face74809ad3b8b935bc14ad60b3bb35
+ms.openlocfilehash: 2975d384fd0d09b36e18802dbede4e8ec7dc721b
+ms.sourcegitcommit: f1834bb47452007480269b5a5cdad20037c32ef6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201180"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45390116"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
@@ -29,7 +29,7 @@ In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di M
 
 |Rilascio |Pubblicato in <br/> Microsoft Store |
 |--- |--- |
-|4.5.33.0 |07/20/2020 |
+|4.5.35.0 |07/23/2020 |
 |4.4.63.0 |06/25/2020 |
 |4.4.41.0 |05/06/2020 |
 |4.4.25.0 |03/31/2020 |
@@ -66,8 +66,10 @@ In questo articolo vengono illustrati i miglioramenti cumulativi nelle sale di M
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Funzionalità di introduzione e risoluzione dei problemi di Microsoft teams rooms
 
-### <a name="45330-07202020"></a>4.5.33.0 (07/20/2020)
+### <a name="45350-07232020"></a>4.5.35.0 (07/23/2020)
+
 Introdotti in questo aggiornamento:
+
 - Partecipare a riunioni Cisco WebEx da teams Rooms con Direct Guest join
 - Abilitazione e registrazione automatica del centro di amministrazione Teams
 - Supporto per la versione di Windows 10 1909
@@ -75,11 +77,14 @@ Introdotti in questo aggiornamento:
 - Supporto Virtual raise Hands per i partecipanti e i controlli per relatore
 - Impostazione predefinita del volume regolabile per i servizi di conferenza e altoparlante predefinito
 - Cercare e chiamare gli utenti federati (tenant) dalla sala Teams
-    
+
+> [!IMPORTANT]
+> La versione 4,5 è l'ultima versione per supportare Windows 10 versione 1803; le versioni future non verranno offerte ai sistemi in Windows 10 versione 1803. Per altre informazioni sul supporto della versione Windows, vedere [supporto per Windows 10 Release](https://docs.microsoft.com/microsoftteams/rooms/rooms-lifecycle-support#windows-10-release-support).
 
 ### <a name="44630-06252020"></a>4.4.63.0 (06/25/2020)
 
 Introdotti in questo aggiornamento:
+
 - Correzioni di qualità e affidabilità
 - Correzione di "applicazione non verrà avviata dopo l'aggiornamento a 4.4.41.0" problema
 
@@ -89,6 +94,7 @@ Introdotti in questo aggiornamento:
 ### <a name="44410-05062020"></a>4.4.41.0 (05/06/2020)
 
 Introdotti in questo aggiornamento:
+
 - Correzioni per l'affidabilità per l'avvio delle applicazioni in Windows 10 Kiosk
 
 ### <a name="44250-03312020"></a>4.4.25.0 (03/31/2020)

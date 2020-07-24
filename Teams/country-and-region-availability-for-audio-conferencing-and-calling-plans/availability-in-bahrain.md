@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft teams disponibili per il Bahrain.
-ms.openlocfilehash: 5d3dbac85646384eb2491c05797235d212450382
-ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
+ms.openlocfilehash: 2b87e6545d8c24215f9d61c6b2f75ade95fa3266
+ms.sourcegitcommit: ca2faa1cd2b078e8d0389b5d2f49bfe6ddbcb9f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44231215"
+ms.lasthandoff: 07/23/2020
+ms.locfileid: "45391624"
 ---
 # <a name="availability-in-bahrain"></a>Disponibilità in Bahrain
 
@@ -40,7 +40,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |No  <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per: <br/><ul><li>Manama</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
@@ -48,7 +48,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for business e Microsoft tea
    
 ## <a name="phone-system"></a>Sistema telefonico
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Il Sistema telefonico è disponibile per l'acquisto?  <br/> |Sì  <br/> |
 | Operatori automatici <br/> |Disponibile  <br/> |
@@ -68,10 +68,10 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
-|**Caratteristica**|**Dettagli**|
+|**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Manama  <br/> |
-|Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
+|Sono disponibili numeri verdi a tariffa?  <br/> |No  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |No  <br/> |
    
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
