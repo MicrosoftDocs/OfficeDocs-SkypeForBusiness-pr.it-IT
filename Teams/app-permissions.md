@@ -19,12 +19,12 @@ localization_priority: Normal
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6d2e43c3125421189303d106cfd3bdde66815309
-ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
+ms.openlocfilehash: e12509f8a8b2bf43b98cb7c0dba387aa1e92383b
+ms.sourcegitcommit: 682566e51a9e5f0fc65540535c7dcdcbd38e04c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44611015"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429368"
 ---
 # <a name="microsoft-teams-apps-permissions-and-considerations"></a>Autorizzazioni e considerazioni sulle app di Microsoft Teams
 
@@ -59,7 +59,7 @@ Nessuno
 
 - Un'app deve rivelare i dati che usa e i dati usati per i collegamenti alle condizioni d'uso e ai criteri di privacy.
 
-- Il [consenso specifico della risorsa](resource-specific-consent.md) fornisce un set di autorizzazioni che possono essere richieste dalle app, visualizzate nella schermata di installazione dell'app. Per altre informazioni sulle autorizzazioni per il consenso specifiche delle risorse, vedere informazioni di [riferimento sulle autorizzazioni](https://docs.microsoft.com/graph/permissions-reference)per i grafici.
+- Il [consenso specifico della risorsa](resource-specific-consent.md) fornisce un set di autorizzazioni che possono essere richieste dalle app, visualizzate nella schermata di installazione dell'app. Per altre informazioni sulle autorizzazioni per il consenso specifiche delle risorse, vedere informazioni di [riferimento sulle autorizzazioni](https://docs.microsoft.com/graph/permissions-reference#teams-resource-specific-consent-permissions)per i grafici.
 
 - Le app possono anche avere bisogno di autorizzazioni diverse dalle autorizzazioni di consenso specifiche delle risorse. Dopo l'installazione di un'app, l'app può richiedere le autorizzazioni del grafico tramite una richiesta di consenso. Per altre informazioni, vedere [informazioni sulle esperienze di consenso dell'applicazione Azure ad](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience). È possibile configurare le autorizzazioni API e il consenso in Azure Portal. Per altre informazioni, Vedi [Framework di consenso di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/consent-framework).
 
@@ -117,7 +117,7 @@ Nessuno
 
 <sup>1</sup> alcuni bot inviano solo messaggi (POST_MESSAGE_USER). Si chiamano bot "solo notifica", ma il termine non fa riferimento a ciò che un bot è autorizzato o non può fare, ma significa che il bot non vuole esporre un'esperienza di conversazione. Teams USA questo campo per disabilitare la funzionalità nell'interfaccia utente che verrebbe normalmente abilitata; il bot non è limitato in ciò che è consentito eseguire rispetto ai bot che espongono un'esperienza di conversazione.
 
-<sup>2</sup> regolato dalla proprietà booleana supportsFiles sull'oggetto bot nel file manifest. JSON per l'app.
+<sup>2</sup> governato dalla proprietà booleana supportsFiles sull'oggetto bot nel manifest.jssu file per l'app.
 
 > [!NOTE]
 > Se un bot ha un proprio accesso, la prima volta che l'utente accede a un'esperienza di consenso diversa è la seconda:
