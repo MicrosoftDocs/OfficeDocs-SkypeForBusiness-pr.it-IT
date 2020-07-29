@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3e8b8e8605b5e4f916389109cb611996aa90a895
-ms.sourcegitcommit: 34a30c2c9a8e32bfcb382c3e6e7237f277ec361d
+ms.openlocfilehash: e85ef79247bdf35c3c116504af23728a0d268ca5
+ms.sourcegitcommit: 682566e51a9e5f0fc65540535c7dcdcbd38e04c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45206766"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "45429328"
 ---
 # <a name="recommended-methods-and-best-practices-for-creating-class-teams"></a>Metodi raccomandati e migliori pratiche per la creazione dei team di classe
 
@@ -60,17 +60,17 @@ L'automazione della creazione del team consente ad amministratori IT e insegnant
 
 ### <a name="considerations"></a>Considerazioni
 
-SDS crea i team in due passaggi. Nel primo passaggio, un gruppo di Microsoft 365 viene creato in Azure Active Directory (Azure AD), e nel secondo il gruppo viene convertito automaticamente in un team.  Il secondo passaggio per la creazione di team è facoltativo in SDS. Un amministratore potrebbe voler evitare di creare automaticamente i team, in base al tempo di distribuzione e al numero di team inutilizzati che potrebbero derivarne. Raccomandiamo agli istituti con 500.000 o più team di disattivare la creazione automatica dei team in SDS, e di seguire il [metodo di creazione dei team con docente](#teacher-led-team-creation-from-office-365-class-groups).  
+SDS crea i team in due passaggi. Nel primo passaggio, un gruppo di Microsoft 365 viene creato in Azure Active Directory (Azure AD), e nel secondo il gruppo viene convertito automaticamente in un team.  Il secondo passaggio per la creazione di team è facoltativo in SDS. Un amministratore potrebbe voler evitare di creare automaticamente i team, in base al tempo di distribuzione e al numero di team inutilizzati che potrebbero derivarne. Raccomandiamo alle istituzioni con oltre 500.000 team di disattivare la creazione automatica dei team in SDS, e di seguire il [metodo di creazione dei team con docente](#educator-led-team-creation-from-office-365-class-groups).  
 
 ### <a name="get-started"></a>Per iniziare
 
 Per iniziare, andare a [School Data Sync (SDS)](https://docs.microsoft.com/SchoolDataSync) e contattare [https://aka.ms/sdssupport](https://aka.ms/sdssupport) l'assistenza distribuzione.  
 
-## <a name="teacher-led-team-creation-from-office-365-class-groups"></a>Creazione dei team con docente dai gruppi di classe di Office 365
+## <a name="educator-led-team-creation-from-office-365-class-groups"></a>Creazione dei team con docente dai gruppi di classe di Office 365
 
 **Questa caratteristica sarà disponibile a breve, entro la metà di agosto 2020.**
 
-La creazione di team con docente è un'ottima opzione per la distribuzione, se si vuole consentire agli insegnanti di creare rapidamente le classi necessarie. Raccomandiamo agli istututi con 500.000 o più team di usare questo metodo per minimizzare il numero di team creati esternamente.  
+La creazione di team con docente è un'ottima opzione per la distribuzione, se si vuole semplificare ai docenti la creazione delle le classi necessarie. Raccomandiamo agli istututi con 500.000 o più team di usare questo metodo per minimizzare il numero di team creati esternamente.  
 
 Questo approccio ibrido consente di usare SDS per creare i gruppi di ciascuna classe (raccomandato), oppure di usare la [API di Graph](https://docs.microsoft.com/graph/api/educationroot-post-classes) per crearli autonomamente. Dopo aver preparato i gruppi di classe, gli educatori possono convertirli in team usando l'icona **Classi suggerite**.
 
@@ -147,6 +147,6 @@ Gli studenti e gli insegnanti otterranno il massimo da Teams quando potranno usa
 ## <a name="recommended-best-practices"></a>Buone pratiche consigliate
 
 - Distribuisci subito! Si consiglia effettuare prontamente la distribuzione per garantire che tutto funzioni correttamente e sia pronto per il primo giorno di scuola. Se si usa SDS, non è necessaria l'iscrizione completa degli studenti per avviare la distribuzione di SDS. Gli studenti verranno sincronizzati quando queste informazioni saranno disponibili in SIS.
-- Se si hanno più di 500.000 team, è consigliabile usare il [metodo di creazione dei team con docente](#teacher-led-team-creation-from-office-365-class-groups). Riduce i team inutilizzati e gli ingombri creando solo team di classe rilevanti e necessari.  
-- Se si verificano problemi (ad esempio i corsi sono mancanti) con la creazione automatica del team di SDS e gli insegnanti devono usarli subito, si può usare il [metodo di creazione dei team con docente](#teacher-led-team-creation-from-office-365-class-groups). La [Creazione manuale del team](#manual-team-creation) è un'altra soluzione, ma non tiene aggiornata l'iscrizione del proprio team.  
+- Se si hanno più di 500.000 team, è consigliabile usare il [metodo di creazione dei team con docente](#educator-led-team-creation-from-office-365-class-groups). Riduce i team inutilizzati e gli ingombri creando solo team di classe rilevanti e necessari.  
+- Se si verificano problemi con la creazione automatica di team con SDS, ad esempio i corsi sono mancanti, e ai docenti servono subito, è possibile usare il [metodo di creazione dei team con docente](#educator-led-team-creation-from-office-365-class-groups). La [Creazione manuale del team](#manual-team-creation) è un'altra soluzione, ma non tiene aggiornata l'iscrizione del proprio team.  
 - Il tenant prevede un limite di 500.000 team. Di conseguenza, gli amministratori devono cercare in modo proattivo di ridurre il numero di team inutilizzati per evitare di superare questi limiti ed estendere il tempo di configurazione. Per altre informazioni sui limiti, vedere [Limiti e specifiche di Microsoft Teams](limits-specifications-teams.md).  
