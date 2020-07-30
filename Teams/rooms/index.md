@@ -13,26 +13,29 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 description: Considerazioni relative alla pianificazione per la distribuzione delle sale di Microsoft teams e su come distribuire e gestire il sistema.
-ms.openlocfilehash: 2cba74f72016b51446f7721041039faedd865866
-ms.sourcegitcommit: 18838ed1da69ab4668c903bfcafd4ad2fa02639d
+ms.openlocfilehash: 98fbd10cdbc575412253b4a9c8fdfc16869da2ed
+ms.sourcegitcommit: 824c79bd050b0abb576004f6209bb081d5090a8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773381"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521991"
 ---
 # <a name="microsoft-teams-rooms"></a>Microsoft Teams Rooms
 
-Trasforma gli spazi delle riunioni dalle piccole aree di calco alle ampie sale riunioni con un'esperienza di teams ricca e collaborativa semplice da usare, distribuire e gestire.
-
-Avviare le riunioni in tempo con l'aggiunta di un tocco, quindi proiettare istantaneamente la visualizzazione nella sala e condividerla con i partecipanti remoti.
-
-Selezionare il sistema giusto e le periferiche audio video da uno dei nostri partner: Yealink, Logitech, Crestron, Polycom, Lenovo e HP.
-
-:::image type="content" source="../media/srs-room.jpg" alt-text="Una tabella di conferenza con Microsoft teams Rooms Equipment":::
+:::row:::
+    :::column span="2":::
+       Trasforma gli spazi delle riunioni dalle piccole aree di calco alle ampie sale riunioni con un'esperienza di teams ricca e collaborativa semplice da usare, distribuire e gestire. <br> 
+       Avviare le riunioni in tempo con l'aggiunta di un tocco, quindi proiettare istantaneamente la visualizzazione nella sala e condividerla con i partecipanti remoti.<br> 
+       Selezionare il sistema giusto e le periferiche audio video da uno dei nostri partner: Yealink, Logitech, Crestron, Polycom, Lenovo e HP.
+    :::column-end:::
+    :::column:::
+       ![Una tabella di conferenza con Microsoft teams Rooms Equipment](../media/srs-room.jpg)
+    :::column-end:::
+:::row-end:::
 
 |               |               |               |               |               |               |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| ![Simbolo di elenco](https://docs.microsoft.com/office/media/icons/list-123-teams.svg)  | **[Piano](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-plan)**  | ![Simbolo di distribuzione](https://docs.microsoft.com/office/media/icons/deploy-teams.svg)  | **[Distribuzione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-deploy)**  | ![Strumenti/chiave](https://docs.microsoft.com/office/media/icons/toolbox.svg)  | **[Gestione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-manage)** |
+| ![Simbolo di elenco](https://docs.microsoft.com/office/media/icons/list-123-teams_small.svg)  | **[Piano](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-plan)**  | ![Simbolo di distribuzione](https://docs.microsoft.com/office/media/icons/deploy-teams_small.svg)  | **[Distribuzione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-deploy)**  | ![Strumenti/chiave](https://docs.microsoft.com/office/media/icons/toolbox_small.svg)  | **[Gestione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-manage)** |
 
 <br>
 

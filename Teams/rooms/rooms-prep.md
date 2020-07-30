@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come preparare l'infrastruttura per la distribuzione delle sale di Microsoft teams in modo da poter sfruttare tutte le funzionalità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8252151dcad1c8e483394c6268d445376f25973
-ms.sourcegitcommit: 2cc36c954200f50de33b909856b33fe0a9a6b7a5
+ms.openlocfilehash: d565cd500f22f86c19e38b531511eb25a5e1227a
+ms.sourcegitcommit: c573b0be535fcf927ae01d60a7eb8fbf1aec271d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45125959"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526702"
 ---
 # <a name="prepare-your-environment"></a>Predisporre l'ambiente
 
@@ -39,7 +39,7 @@ Questa sezione contiene una panoramica dei passaggi necessari per preparare l'am
      > [!IMPORTANT]
      > Microsoft teams Rooms non supporta l'autenticazione proxy perché potrebbe interferire con le normali operazioni della chat room. Verificare che Microsoft teams rooms sia stato esentato dall'autenticazione del proxy prima di entrare in produzione.
   
-3. Per migliorare l'esperienza acquisita, Microsoft raccoglie i dati. Per consentire a Microsoft di raccogliere dati, whitelist questi siti:
+3. Per migliorare l'esperienza acquisita, Microsoft raccoglie i dati. Per consentire a Microsoft di raccogliere dati, consentire l'elenco di questi siti:
 
    - Endpoint client di telemetria:https://vortex.data.microsoft.com/
    - Endpoint delle impostazioni di telemetria:https://settings.data.microsoft.com/

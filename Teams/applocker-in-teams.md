@@ -16,24 +16,24 @@ description: Informazioni su come abilitare l'applicazione client teams desktop 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cbccede3ca2d114b7bffa81b669a06a519f6b4e6
-ms.sourcegitcommit: 113e3a7314505cf78da57917ff62642125fb11fd
+ms.openlocfilehash: 4e70fc4502851137494c316db9eff7faefc140d1
+ms.sourcegitcommit: c573b0be535fcf927ae01d60a7eb8fbf1aec271d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45121666"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46526692"
 ---
 # <a name="applocker-application-control-policies-in-microsoft-teams"></a>Criteri di controllo delle applicazioni di AppLocker in Microsoft Teams
 
 Questo articolo spiega come abilitare l'app client desktop teams con i criteri di controllo dell'applicazione AppLocker. L'uso di AppLocker è progettato per limitare l'esecuzione di programmi e script da parte di utenti non amministrativi. Per altre informazioni e indicazioni su AppLocker, vedere [che cos'è AppLocker?](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/what-is-applocker).
 
-Il processo per l'attivazione di teams con AppLocker richiede la creazione di criteri di whitelist basati su AppLocker. I criteri vengono creati con il software di gestione di criteri di gruppo e/o l'uso dei cmdlet di Windows PowerShell per AppLocker (per altre informazioni, vedere la [documentazione di riferimento tecnico di AppLocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-technical-reference) ). I criteri di AppLocker vengono salvati in formato XML e possono essere modificati con qualsiasi testo o editor XML.
+Il processo per l'attivazione di teams con AppLocker richiede la creazione di criteri di elenco consentiti basati su AppLocker. I criteri vengono creati con il software di gestione di criteri di gruppo e/o l'uso dei cmdlet di Windows PowerShell per AppLocker (per altre informazioni, vedere la [documentazione di riferimento tecnico di AppLocker](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-technical-reference) ). I criteri di AppLocker vengono salvati in formato XML e possono essere modificati con qualsiasi testo o editor XML.
 
-## <a name="teams-whitelisting-with-applocker"></a>Whitelist delle squadre con AppLocker
+## <a name="teams-allow-list-with-applocker"></a>Elenco dei team consentiti con AppLocker
 
 Le regole di AppLocker sono organizzate in insiemi di regole. Le regole di AppLocker si applicano all'app di destinazione e sono i componenti che costituiscono i criteri di AppLocker.  
 
-Per i team whitelist, ti consigliamo di usare le [regole della condizione di Publisher](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/understanding-the-publisher-rule-condition-in-applocker) , poiché tutti i file dell'app teams sono firmati digitalmente.
+Per consentire ai teams, ti consigliamo di usare le [regole delle condizioni di Publisher](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/applocker/understanding-the-publisher-rule-condition-in-applocker) poiché tutti i file dell'app teams sono firmati digitalmente.
   
 Non è consigliabile usare le regole di percorso perché la directory di installazione di teams è scrivibile dall'utente. Non è inoltre consigliabile usare le regole hash perché le regole devono essere aggiornate ogni volta che viene aggiornata l'app client teams.
 

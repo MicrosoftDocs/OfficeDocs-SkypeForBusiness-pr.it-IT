@@ -20,12 +20,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni sulle licenze per i componenti aggiuntivi per Microsoft teams e sulle funzionalità che si ottengono con ogni licenza.
-ms.openlocfilehash: 307dad7dbf8ca19bdeb10fa18b2cbd18a2273f74
-ms.sourcegitcommit: ad82786076cc965e75b1ec5ffd4bc9bf75437340
+ms.openlocfilehash: 3e6ab7572c04151c76a99faedd328ac32c457811
+ms.sourcegitcommit: 824c79bd050b0abb576004f6209bb081d5090a8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45028182"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46522463"
 ---
 # <a name="microsoft-teams-add-on-licenses"></a>Licenze per i componenti aggiuntivi Microsoft Teams
 
@@ -41,7 +41,7 @@ Ecco un elenco delle caratteristiche che è possibile aggiungere con le licenze 
 |:-----|:-----|:-----|:-----|
 |**Funzionalità** <br/> |**Descrizione** <br/> |**Small Business (<utenti di 300)**|**Grandi aziende (>utenti di 300)**|
 **Microsoft 365 Business Voice** <br/> | [Business Voice](../business-voice/whats-business-voice.md) è una soluzione per la telefonia progettata per piccole e medie imprese fino a 300 utenti che raggruppano sistema telefonico, servizi di audioconferenza, un piano per chiamate nazionali e altro ancora. Le funzionalità del sistema telefonico che si ottengono includono la segreteria telefonica, l'ID chiamante, il parcheggio delle chiamate, l'inoltro di chiamata, gli operatori automatici e le code di chiamata. <br> Per scoprire se Business Voice è disponibile nel proprio paese o nella propria area geografica, vedere [disponibilità per i paesi e le aree](../business-voice/country-region-availability.md)geografiche per le aziende. Per informazioni sui prezzi, vedere [prezzi per le voci aziendali](https://go.microsoft.com/fwlink/?linkid=2127221). <br/> |&#x2713;||
-|**Audioconferenza** <br/> |A volte gli utenti dell'organizzazione dovranno usare un telefono per chiamare una riunione di teams invece il computer. Configurare i servizi di [audioconferenza](../audio-conferencing-in-office-365.md) per gli utenti che pianificano o conducono riunioni. <br/> Per sapere se l'Audioconferenza è disponibile nel proprio Paese o area geografica, consulta [Disponibilità per Paese e area geografica di Audioconferenza e Piani di chiamata](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). Per informazioni sui prezzi, vedere i [prezzi per le audioconferenze](https://go.microsoft.com/fwlink/?linkid=799762).  <br/> |&#x2713;<sup>1</sup>|&#x2713;|
+|**Audioconferenza** <br/> |A volte gli utenti dell'organizzazione dovranno usare un telefono per chiamare una riunione di teams invece il computer. Configurare i servizi di [audioconferenza](../audio-conferencing-in-office-365.md) per gli utenti che pianificano o conducono riunioni. <br/> Per sapere se l'Audioconferenza è disponibile nel proprio Paese o area geografica, consulta [Disponibilità per Paese e area geografica di Audioconferenza e Piani di chiamata](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). Per informazioni sui prezzi, vedere i [prezzi per le audioconferenze](https://go.microsoft.com/fwlink/?linkid=799762).  <br/> |&#x2713;|&#x2713;|
 |**Numeri verdi gratuiti** |Se si vogliono numeri verdi per i servizi di audioconferenza, gli operatori automatici o le code di chiamata, è necessario [configurare i crediti](../set-up-communications-credits-for-your-organization.md)per le comunicazioni. <br/> |&#x2713;|&#x2713;|
 |**Sistema telefonico** <br/> |[Phone System](../what-is-phone-system-in-office-365.md) è un servizio telefonico ospitato che offre funzionalità di controllo delle chiamate e PBX (Private Branch Exchange), con opzioni per la connessione alla rete PSTN (Public Switched Telephone Network). Le caratteristiche del sistema telefonico includono la segreteria telefonica cloud, l'ID chiamante, il parcheggio delle chiamate, l'inoltro di chiamata, gli operatori automatici, le code di chiamata, il trasferimento delle chiamate, l'ID chiamante e altro ancora. <br>Per altre informazioni, vedere [Ecco cosa si ottiene con il sistema telefonico](../here-s-what-you-get-with-phone-system.md). Per informazioni sui prezzi, vedere [prezzi per il sistema telefonico](https://go.microsoft.com/fwlink/?linkid=799763).  <br/> |&#x2713;<sup>1</sup>|&#x2713;|
 |**Piani di chiamata** <br/> |Se si vuole che gli utenti possano chiamare i numeri di telefono all'esterno dell'organizzazione, ottenere un piano per le [chiamate](../calling-plans-for-office-365.md). Ci sono piani per chiamate nazionali e piani per chiamate nazionali e internazionali. Per informazioni sui prezzi, vedere [prezzi per i piani di chiamata](https://go.microsoft.com/fwlink/?linkid=799761 ).  <br/> |&#x2713;<sup>1</sup>|&#x2713;|

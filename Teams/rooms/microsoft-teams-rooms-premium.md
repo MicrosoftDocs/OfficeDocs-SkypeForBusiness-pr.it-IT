@@ -16,16 +16,16 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su Microsoft teams Rooms Premium.
 f1keywords: ''
-ms.openlocfilehash: 01486e66f13af34fb14264c3a14dc414e0d5eb4f
-ms.sourcegitcommit: bdf6cea0face74809ad3b8b935bc14ad60b3bb35
+ms.openlocfilehash: 3caaf978e3d848eb2a06b82bc91acfc8d539ca45
+ms.sourcegitcommit: 824c79bd050b0abb576004f6209bb081d5090a8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201280"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521981"
 ---
 # <a name="microsoft-teams-rooms-premium"></a>Microsoft teams Rooms Premium
 
-Microsoft teams Rooms Premium è un servizio di gestione e monitoraggio IT basato su cloud che consente di mantenere aggiornati i dispositivi Microsoft teams Rooms e le relative periferiche e di monitorarlo in modo proattivo, supportando un ambiente ottimizzato per un'esperienza utente ottimale.
+Microsoft teams Rooms Premium include un servizio di monitoraggio e gestione IT basato su cloud che consente di mantenere aggiornati i dispositivi Microsoft teams Rooms e le relative periferiche e di monitorarlo in modo proattivo, supportando un ambiente ottimizzato per un'esperienza utente ottimale.
 
 Microsoft teams Rooms Premium è per le organizzazioni che desiderano migliorare l'esperienza della sala riunioni e scalare rapidamente l'impronta offrendo una gestione proattiva per i dispositivi Microsoft teams rooms. Il servizio consente alle organizzazioni di risparmiare tempo, denaro e competenze che altrimenti verrebbero spese per la gestione della sala "fai da te".  
 
@@ -62,8 +62,6 @@ Ecco un riepilogo delle caratteristiche importanti che il servizio Microsoft tea
 |**Informazioni e suggerimenti**   |Utilizzo, incidenti, integrità e report generali (visualizzazioni cronologiche)         |
 
 ## <a name="service-prerequisites"></a>Prerequisiti del servizio
-
-Microsoft teams Rooms Premium Service è una licenza per il componente aggiuntivo per ogni camera. Le sale di Microsoft teams richiedono una licenza per la sala utente o Microsoft teams separata.
 
 Per Microsoft teams Rooms Premium per mantenere la qualità del servizio, le sale iscritte devono essere [periferiche supportate da Microsoft teams Rooms](requirements.md#hardware-requirements)ed è necessario preparare l'ambiente con tutti gli [URL e gli intervalli di indirizzi IP di Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges?redirectSourcePath=%252fen-us%252farticle%252fOffice-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2) completamente consentiti e raggiungibili dai dispositivi della sala riunioni. Per altre informazioni, vedere [preparare l'ambiente](rooms-prep.md) nella documentazione di Microsoft teams rooms.
 
