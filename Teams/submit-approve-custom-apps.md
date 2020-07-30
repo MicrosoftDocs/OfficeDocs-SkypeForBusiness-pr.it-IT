@@ -1,0 +1,148 @@
+---
+title: Usare l'API di invio di app teams per inviare e approvare le app personalizzate
+author: lanachin
+ms.author: v-lanac
+manager: serdars
+ms.reviewer: joglocke, vaibhava
+ms.topic: article
+ms.tgt.pltfrm: cloud
+ms.service: msteams
+audience: Admin
+ms.collection:
+- M365-collaboration
+appliesto:
+- Microsoft Teams
+f1.keywords:
+- NOCSH
+localization_priority: Normal
+search.appverid: MET150
+description: Informazioni su come approvare le app personalizzate inviate con l'API di invio di app teams in Microsoft teams.
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 4c3563dc028c8566d29906e4e42a2002a197e71d
+ms.sourcegitcommit: 8812db47b45d171d47e71f87e84ab1828590392d
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "46523696"
+---
+# <a name="publish-a-custom-app-submitted-through-the-teams-app-submission-api"></a><span data-ttu-id="e070d-103">Pubblicare un'app personalizzata inviata tramite l'API di invio di app Teams</span><span class="sxs-lookup"><span data-stu-id="e070d-103">Publish a custom app submitted through the Teams App Submission API</span></span>
+
+[!INCLUDE [preview-feature](includes/preview-feature.md)]
+
+## <a name="overview"></a><span data-ttu-id="e070d-104">Panoramica</span><span class="sxs-lookup"><span data-stu-id="e070d-104">Overview</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="e070d-105">Quando pubblichi un'app teams personalizzata, è disponibile per gli utenti nell'App Store dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="e070d-105">When you publish a custom Teams app, it's available to users in your organization's app store.</span></span> <span data-ttu-id="e070d-106">Esistono due modi per pubblicare un'app personalizzata e il modo in cui si usa dipende da come si ottiene l'app.</span><span class="sxs-lookup"><span data-stu-id="e070d-106">There are two ways to publish a custom app and the way that you use depends on how you get the app.</span></span> <span data-ttu-id="e070d-107">**Questo articolo illustra come approvare e pubblicare un'app personalizzata che uno sviluppatore Invia tramite l'API di invio di app teams**.</span><span class="sxs-lookup"><span data-stu-id="e070d-107">**This article focuses on how to approve and publish a custom app that a developer submits through the Teams App Submission API**.</span></span> <span data-ttu-id="e070d-108">L'altro metodo, che carica un'app personalizzata, viene usato quando uno sviluppatore Invia un pacchetto dell'app in formato zip.</span><span class="sxs-lookup"><span data-stu-id="e070d-108">The other method, uploading a custom app, is used when a developer sends you an app package in .zip format.</span></span> <span data-ttu-id="e070d-109">Per altre informazioni su questo metodo, vedere [pubblicare un'app personalizzata caricando un pacchetto dell'app](manage-your-custom-apps.md).</span><span class="sxs-lookup"><span data-stu-id="e070d-109">To learn more about that method, see [Publish a custom app by uploading an app package](manage-your-custom-apps.md).</span></span>
+ 
+<span data-ttu-id="e070d-110">Questo articolo fornisce indicazioni complete su come portare l'app teams dallo sviluppo alla distribuzione all'individuazione.</span><span class="sxs-lookup"><span data-stu-id="e070d-110">This article provides end-to-end guidance for how to take your Teams app from development to deployment to discovery.</span></span> <span data-ttu-id="e070d-111">Otterrai una panoramica delle esperienze connesse che il team offre in tutto il ciclo di vita dell'app per semplificare la creazione, la distribuzione e la gestione di app personalizzate nell'App Store dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="e070d-111">You'll get an overview of the connected experiences that Teams provides across the app lifecycle to streamline how to develop, deploy, and manage custom apps in your organization's app store.</span></span>
+
+<span data-ttu-id="e070d-112">Verranno illustrati i passaggi del ciclo di vita, incluso il modo in cui gli sviluppatori possono usare l'API di invio delle app teams per inviare app personalizzate direttamente all'interfaccia di amministrazione di Microsoft teams per la revisione e l'approvazione, come impostare i criteri per la gestione delle app per gli utenti dell'organizzazione e il modo in cui gli utenti li scoprono in teams.</span><span class="sxs-lookup"><span data-stu-id="e070d-112">We'll cover each step of the lifecycle, including how developers can use the Teams App Submission API to submit custom apps directly to the Microsoft Teams admin center for you to review and approve, how to set policies to manage apps for users in your organization, and how your users discover them in Teams.</span></span>
+
+![Panoramica della tua app dallo sviluppo alla distribuzione](media/custom-app-lifecycle.png)
+
+<span data-ttu-id="e070d-114">Questa guida si basa sugli aspetti relativi ai team dell'app ed è destinata ad amministratori e professionisti IT.</span><span class="sxs-lookup"><span data-stu-id="e070d-114">This guidance focuses on the Teams aspects of the app and is intended for admins and IT pros.</span></span> <span data-ttu-id="e070d-115">Per informazioni su come sviluppare le app per Team, vedi la <a href="https://docs.microsoft.com/microsoftteams/platform" target="_blank">documentazione per sviluppatori teams</a>.</span><span class="sxs-lookup"><span data-stu-id="e070d-115">For information about developing Teams apps, see the <a href="https://docs.microsoft.com/microsoftteams/platform" target="_blank">Teams developer documentation</a>.</span></span>
+
+## <a name="develop"></a><span data-ttu-id="e070d-116">Sviluppo</span><span class="sxs-lookup"><span data-stu-id="e070d-116">Develop</span></span>
+
+### <a name="create-the-app"></a><span data-ttu-id="e070d-117">Creare l'app</span><span class="sxs-lookup"><span data-stu-id="e070d-117">Create the app</span></span>
+
+<span data-ttu-id="e070d-118">La piattaforma Microsoft teams per sviluppatori consente agli sviluppatori di integrare facilmente le tue app e i tuoi servizi per migliorare la produttività, prendere decisioni più velocemente e creare collaborazione attorno a contenuti e flussi di lavoro esistenti.</span><span class="sxs-lookup"><span data-stu-id="e070d-118">The Microsoft Teams developer platform makes it easy for developers to integrate your own apps and services to improve productivity, make decisions faster, and create collaboration around existing content and workflows.</span></span> <span data-ttu-id="e070d-119">Le app create nella piattaforma teams sono ponticelli tra il client teams e i servizi e i flussi di lavoro, che li portano direttamente nel contesto della piattaforma di collaborazione.</span><span class="sxs-lookup"><span data-stu-id="e070d-119">Apps built on the Teams platform are bridges between the Teams client and your services and workflows, bringing them directly into the context of your collaboration platform.</span></span> <span data-ttu-id="e070d-120">Per altre informazioni, vedere la <a href="https://docs.microsoft.com/microsoftteams/platform" target="_blank">documentazione relativa allo sviluppatore di teams</a>.</span><span class="sxs-lookup"><span data-stu-id="e070d-120">For more information, go to the <a href="https://docs.microsoft.com/microsoftteams/platform" target="_blank">Teams developer documentation</a>.</span></span>
+
+### <a name="submit-the-app"></a><span data-ttu-id="e070d-121">Inviare l'app</span><span class="sxs-lookup"><span data-stu-id="e070d-121">Submit the app</span></span>
+
+<span data-ttu-id="e070d-122">Quando l'app è pronta per l'uso in produzione, lo sviluppatore può inviare l'app usando l'API di invio dell'app teams, che può essere chiamata dall'API del grafico, da un ambiente di sviluppo integrato (IDE), come il codice di Visual Studio, o da una piattaforma come Power Apps e Power Virtual Agents.</span><span class="sxs-lookup"><span data-stu-id="e070d-122">When the app is ready for use in production, the developer can submit the app using the Teams App Submission API, which can be called from Graph API, an integrated development environment (IDE) such as Visual Studio Code, or a platform such as Power Apps and Power Virtual Agents.</span></span> <span data-ttu-id="e070d-123">In questo modo l'app è disponibile nella pagina <a href="https://docs.microsoft.com/microsoftteams/manage-apps" target="_blank">Gestisci app</a> dell'interfaccia di amministrazione di Microsoft teams, in cui l'amministratore può rivederlo e approvarlo.</span><span class="sxs-lookup"><span data-stu-id="e070d-123">Doing this makes the app available on the <a href="https://docs.microsoft.com/microsoftteams/manage-apps" target="_blank">Manage apps</a> page of the Microsoft Teams admin center, where you, the admin, can review and approve it.this</span></span> 
+
+<span data-ttu-id="e070d-124">L'API di invio delle app teams, basata su Microsoft Graph, consente all'organizzazione di svilupparsi sulla piattaforma di tua scelta e automatizza il processo di approvazione per le app personalizzate in teams.</span><span class="sxs-lookup"><span data-stu-id="e070d-124">The Teams App Submission API, built on Microsoft Graph, allows your organization to develop on the platform of your choice and automates the submission-to-approval process for custom apps on Teams.</span></span>
+
+<span data-ttu-id="e070d-125">Ecco un esempio di come si presenta il passaggio di presentazione dell'app nel codice di Visual Studio:</span><span class="sxs-lookup"><span data-stu-id="e070d-125">Here's an example of what this app submission step looks like in Visual Studio Code:</span></span>
+
+![Screenshot dell'invio di un'app nel codice di Visual Studio](media/custom-app-lifecycle-submit-app.png)
+
+<span data-ttu-id="e070d-127">Tieni presente che l'app non viene ancora pubblicata nell'App Store dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="e070d-127">Keep in mind that this doesn't publish the app to your organization's app store yet.</span></span> <span data-ttu-id="e070d-128">Questo passaggio invia l'app all'interfaccia di amministrazione di Microsoft teams in cui è possibile approvarla per la pubblicazione nell'App Store dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="e070d-128">This step submits the app to the Microsoft Teams admin center where you can approve it for publishing to your organization's app store.</span></span>
+
+## <a name="validate"></a><span data-ttu-id="e070d-129">Convalidare</span><span class="sxs-lookup"><span data-stu-id="e070d-129">Validate</span></span>
+
+<span data-ttu-id="e070d-130">La pagina <a href="https://docs.microsoft.com/microsoftteams/manage-apps" target="_blank">Gestisci app</a> nell'interfaccia di amministrazione di Microsoft Teams (nella barra di spostamento sinistra passa a **app teams**  >  **Manage Apps**), consente di visualizzare tutte le app teams per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="e070d-130">The <a href="https://docs.microsoft.com/microsoftteams/manage-apps" target="_blank">Manage apps</a> page in the Microsoft Teams admin center (in the left navigation, go to **Teams apps** > **Manage apps**), gives you a view into all Teams apps for your organization.</span></span> <span data-ttu-id="e070d-131">Il widget **approvazione in sospeso** nella parte superiore della pagina consente di sapere quando un'app personalizzata viene inviata per l'approvazione.</span><span class="sxs-lookup"><span data-stu-id="e070d-131">The **Pending approval** widget at the top of the page lets you know when a custom app is submitted for approval.</span></span>
+
+<span data-ttu-id="e070d-132">Nella tabella un'app appena presentata Mostra automaticamente **lo stato di pubblicazione** della **presentazione** e **lo stato** del **blocco**.</span><span class="sxs-lookup"><span data-stu-id="e070d-132">In the table, a newly submitted app automatically shows a **Publishing status** of **Submitted** and **Status** of **Blocked**.</span></span> <span data-ttu-id="e070d-133">Puoi ordinare la colonna **stato pubblicazione** in ordine decrescente per trovare rapidamente l'app.</span><span class="sxs-lookup"><span data-stu-id="e070d-133">You can sort the **Publishing status** column in descending order to quickly find the app.</span></span>
+
+![<span data-ttu-id="e070d-134">Screenshot della pagina Manage Apps che mostra le richieste in sospeso e lo stato dell'app</span><span class="sxs-lookup"><span data-stu-id="e070d-134">Screenshot of Manage apps page showing pending requests and app status</span></span> ](media/custom-app-lifecycle-validate-app.png)
+
+<span data-ttu-id="e070d-135">Fare clic sul nome dell'app per accedere alla pagina dei dettagli dell'app.</span><span class="sxs-lookup"><span data-stu-id="e070d-135">Click the app name to go to the app details page.</span></span> <span data-ttu-id="e070d-136">Nella scheda **informazioni** è possibile visualizzare i dettagli relativi all'app, inclusi descrizione, stato, mittente e ID app.</span><span class="sxs-lookup"><span data-stu-id="e070d-136">On the **About** tab, you can view details about the app, including description, status, submitter, and app ID.</span></span>
+
+![Screenshot della pagina dei dettagli dell'app per un'app inviata](media/custom-app-lifecycle-app-details.png)
+
+## <a name="publish"></a><span data-ttu-id="e070d-138">Pubblicare</span><span class="sxs-lookup"><span data-stu-id="e070d-138">Publish</span></span>
+
+<span data-ttu-id="e070d-139">Quando sei pronto per rendere l'app disponibile agli utenti, pubblica l'app.</span><span class="sxs-lookup"><span data-stu-id="e070d-139">When you're ready to make the app available to users, publish the app.</span></span>
+
+1. <span data-ttu-id="e070d-140">Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alle **app teams**  >  **Manage Apps**.</span><span class="sxs-lookup"><span data-stu-id="e070d-140">In the left navigation of the Microsoft Teams admin center, go to **Teams apps** > **Manage apps**.</span></span>
+2. <span data-ttu-id="e070d-141">Fare clic sul nome dell'app per accedere alla pagina dei dettagli dell'app e quindi nella casella **stato pubblicazione** selezionare **pubblica**.</span><span class="sxs-lookup"><span data-stu-id="e070d-141">Click the app name to go to the app details page, and then in the **Publishing status** box, select **Publish**.</span></span>
+
+    <span data-ttu-id="e070d-142">Dopo aver pubblicato l'app, lo **stato di pubblicazione** viene modificato in **Published** e lo **stato** viene modificato automaticamente in **allowed**.</span><span class="sxs-lookup"><span data-stu-id="e070d-142">After you publish the app, the **Publishing status** changes to **Published** and the **Status** automatically changes to **Allowed**.</span></span>
+
+## <a name="set-up-and-manage"></a><span data-ttu-id="e070d-143">Configurare e gestire</span><span class="sxs-lookup"><span data-stu-id="e070d-143">Set up and manage</span></span>
+
+### <a name="control-access-to-the-app"></a><span data-ttu-id="e070d-144">Controllare l'accesso all'app</span><span class="sxs-lookup"><span data-stu-id="e070d-144">Control access to the app</span></span>
+
+<span data-ttu-id="e070d-145">Per impostazione predefinita, tutti gli utenti dell'organizzazione possono accedere all'app nell'App Store dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="e070d-145">By default, all users in your organization can access the app in your organization's app store.</span></span> <span data-ttu-id="e070d-146">Per limitare e controllare chi ha l'autorizzazione per l'uso dell'app, puoi creare e assegnare un criterio di autorizzazione per le app.</span><span class="sxs-lookup"><span data-stu-id="e070d-146">To restrict and control who has permission to use the app, you can create and assign an app permission policy.</span></span> <span data-ttu-id="e070d-147">Per altre informazioni, vedere <a href="https://docs.microsoft.com/microsoftteams/teams-app-permission-policies" target="_blank">gestire i criteri di autorizzazione delle app in teams</a>.</span><span class="sxs-lookup"><span data-stu-id="e070d-147">To learn more, see <a href="https://docs.microsoft.com/microsoftteams/teams-app-permission-policies" target="_blank">Manage app permission policies in Teams</a>.</span></span>
+
+### <a name="pin-and-install-the-app-for-users-to-discover"></a><span data-ttu-id="e070d-148">Aggiungere e installare l'app per individuare gli utenti</span><span class="sxs-lookup"><span data-stu-id="e070d-148">Pin and install the app for users to discover</span></span>
+
+<span data-ttu-id="e070d-149">Per impostazione predefinita, gli utenti possono trovare l'app che devono passare all'App Store dell'organizzazione e cercarla.</span><span class="sxs-lookup"><span data-stu-id="e070d-149">By default, for users to find the app they have to go to your organization's app store and browse or search for it.</span></span> <span data-ttu-id="e070d-150">Per semplificare l'accesso all'app da parte degli utenti, puoi aggiungere l'app alla barra dell'app in teams.</span><span class="sxs-lookup"><span data-stu-id="e070d-150">To make it easy for users to get to the app, you can pin the app to the app bar in Teams.</span></span> <span data-ttu-id="e070d-151">A questo scopo, crea un criterio di configurazione dell'app e assegnalo agli utenti.</span><span class="sxs-lookup"><span data-stu-id="e070d-151">To do this, create an app setup policy and assign it to users.</span></span> <span data-ttu-id="e070d-152">Per altre informazioni, Vedi <a href="https://docs.microsoft.com/microsoftteams/teams-app-setup-policies" target="_blank">gestire i criteri di configurazione delle app in teams</a>.</span><span class="sxs-lookup"><span data-stu-id="e070d-152">To learn more, see <a href="https://docs.microsoft.com/microsoftteams/teams-app-setup-policies" target="_blank">Manage app setup policies in Teams</a>.</span></span>
+
+## <a name="discover-and-adopt"></a><span data-ttu-id="e070d-153">Individuare e adottare</span><span class="sxs-lookup"><span data-stu-id="e070d-153">Discover and adopt</span></span>
+
+<span data-ttu-id="e070d-154">Gli utenti che hanno le autorizzazioni per l'app possono trovarlo nell'App Store dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="e070d-154">Users who have permissions to the app can find it in your organization's app store.</span></span> <span data-ttu-id="e070d-155">Passa a \*\*compilato per *il nome dell'organizzazione* \*\* nella pagina app per trovare le app personalizzate dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="e070d-155">Go to **Built for *Your Organization Name*** on the Apps page to find your organization's custom apps.</span></span>
+
+![<span data-ttu-id="e070d-156">Screenshot della pagina app che mostra l'app pubblicata</span><span class="sxs-lookup"><span data-stu-id="e070d-156">Screenshot of Apps page showing published app</span></span> ](media/custom-app-lifecycle-discovery.png)
+
+<span data-ttu-id="e070d-157">Se hai creato e assegnato un criterio di configurazione dell'app, l'app viene aggiunta alla barra dell'app in teams per facilitare l'accesso agli utenti a cui è stato assegnato il criterio.</span><span class="sxs-lookup"><span data-stu-id="e070d-157">If you created and assigned an app setup policy, the app is pinned to the app bar in Teams for easy access for those users who were assigned the policy.</span></span>
+
+## <a name="update"></a><span data-ttu-id="e070d-158">Aggiornamento</span><span class="sxs-lookup"><span data-stu-id="e070d-158">Update</span></span>
+
+<span data-ttu-id="e070d-159">Per aggiornare un'app, gli sviluppatori devono continuare a seguire i passaggi della sezione [sviluppo](#develop) .</span><span class="sxs-lookup"><span data-stu-id="e070d-159">To update an app, developers should continue to follow the steps in the [Develop](#develop) section.</span></span>
+
+<span data-ttu-id="e070d-160">Quando lo sviluppatore Invia un aggiornamento a un'app personalizzata pubblicata, riceverai una notifica nel widget **approvazione in sospeso** della pagina <a href="https://docs.microsoft.com/microsoftteams/manage-apps" target="_blank">Gestisci app</a> .</span><span class="sxs-lookup"><span data-stu-id="e070d-160">When the developer submits an update to a published custom app, you'll get notified in the **Pending approval** widget of the <a href="https://docs.microsoft.com/microsoftteams/manage-apps" target="_blank">Manage apps</a> page.</span></span> <span data-ttu-id="e070d-161">Nella tabella lo stato di **pubblicazione** dell'app verrà impostato su **Update inviato**.</span><span class="sxs-lookup"><span data-stu-id="e070d-161">In the table, the **Publishing status** of the app will be set to **Update submitted**.</span></span>
+
+![<span data-ttu-id="e070d-162">Screenshot della pagina Manage Apps che mostra le richieste in sospeso e lo stato dell'app</span><span class="sxs-lookup"><span data-stu-id="e070d-162">Screenshot of Manage apps page showing pending requests and app status</span></span> ](media/custom-app-lifecycle-update-submitted.png)
+
+<span data-ttu-id="e070d-163">Per rivedere e pubblicare un aggiornamento di un'app:</span><span class="sxs-lookup"><span data-stu-id="e070d-163">To review and publish an app update:</span></span>
+
+1. <span data-ttu-id="e070d-164">Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams, vai alle **app teams**  >  **Manage Apps**.</span><span class="sxs-lookup"><span data-stu-id="e070d-164">In the left navigation of the Microsoft Teams admin center, go to **Teams apps** > **Manage apps**.</span></span>
+2. <span data-ttu-id="e070d-165">Fare clic sul nome dell'app per passare alla pagina dei dettagli dell'app e quindi selezionare **Aggiorna disponibile** per rivedere i dettagli dell'aggiornamento.</span><span class="sxs-lookup"><span data-stu-id="e070d-165">Click the app name to go to the app details page, and then select **Update available** to review details of the update.</span></span>
+
+    ![<span data-ttu-id="e070d-166">Screenshot della pagina Manage Apps che mostra le richieste in sospeso e lo stato dell'app</span><span class="sxs-lookup"><span data-stu-id="e070d-166">Screenshot of Manage apps page showing pending requests and app status</span></span> ](media/custom-app-lifecycle-update-app.png)
+3. <span data-ttu-id="e070d-167">Quando si è pronti, selezionare **pubblica** per pubblicare l'aggiornamento.</span><span class="sxs-lookup"><span data-stu-id="e070d-167">When you're ready, select **Publish** to publish the update.</span></span> <span data-ttu-id="e070d-168">Questa operazione sostituisce l'app esistente, aggiorna il numero di versione e lo **stato di pubblicazione** viene modificato in **Published**.</span><span class="sxs-lookup"><span data-stu-id="e070d-168">Doing this replaces the existing app, updates the version number, and changes the **Publishing status** to **Published**.</span></span> <span data-ttu-id="e070d-169">Tutti i criteri di autorizzazione per le app e i criteri di configurazione delle app restano applicati per l'app aggiornata.</span><span class="sxs-lookup"><span data-stu-id="e070d-169">All app permission policies and app setup policies remain enforced for the updated app.</span></span>
+
+    <span data-ttu-id="e070d-170">Se si rifiuta l'aggiornamento, la versione precedente dell'app rimane pubblicata.</span><span class="sxs-lookup"><span data-stu-id="e070d-170">If you reject the update, the earlier version of the app remains published.</span></span>
+
+<span data-ttu-id="e070d-171">Tieni presente quanto segue:</span><span class="sxs-lookup"><span data-stu-id="e070d-171">Keep in mind the following:</span></span>
+
+- <span data-ttu-id="e070d-172">Quando un'app viene approvata, una qualsiasi può inviare un aggiornamento all'app.</span><span class="sxs-lookup"><span data-stu-id="e070d-172">When an app is approved, any one can submit an update to the app.</span></span> <span data-ttu-id="e070d-173">Questo significa che altri sviluppatori, incluso lo sviluppatore che ha originariamente inviato l'app, possono inviare un aggiornamento all'app.</span><span class="sxs-lookup"><span data-stu-id="e070d-173">This means other developers, including the developer who originally submitted the app, can submit an update to the app.</span></span>
+- <span data-ttu-id="e070d-174">Quando uno sviluppatore Invia un'app e la richiesta è in sospeso, solo lo stesso sviluppatore può inviare un aggiornamento all'app.</span><span class="sxs-lookup"><span data-stu-id="e070d-174">When a developer submits an app and the request is pending, only that same developer can submit an update to the app.</span></span> <span data-ttu-id="e070d-175">Altri sviluppatori possono inviare un aggiornamento solo dopo che l'app è stata approvata.</span><span class="sxs-lookup"><span data-stu-id="e070d-175">Other developers can submit an update only after the app is approved.</span></span>
+
+### <a name="update-experience-for-users"></a><span data-ttu-id="e070d-176">Esperienza di aggiornamento per gli utenti</span><span class="sxs-lookup"><span data-stu-id="e070d-176">Update experience for users</span></span>
+
+<span data-ttu-id="e070d-177">Nella maggior parte dei casi, dopo la pubblicazione di un aggiornamento di un'app, la nuova versione viene visualizzata automaticamente per gli utenti.</span><span class="sxs-lookup"><span data-stu-id="e070d-177">In most cases, after you publish an app update, the new version automatically appears for users.</span></span> <span data-ttu-id="e070d-178">Tuttavia, esistono alcuni aggiornamenti al manifesto di <a href="https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema" target="_blank">Microsoft teams</a> che richiedono l'accettazione da parte dell'utente:</span><span class="sxs-lookup"><span data-stu-id="e070d-178">However, there are some updates to the <a href="https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema" target="_blank">Microsoft Teams manifest</a> that require user acceptance to complete:</span></span>
+
+* <span data-ttu-id="e070d-179">È stato aggiunto o rimosso un bot</span><span class="sxs-lookup"><span data-stu-id="e070d-179">A bot was added or removed</span></span>
+* <span data-ttu-id="e070d-180">Modifica della proprietà "botId" di un bot esistente</span><span class="sxs-lookup"><span data-stu-id="e070d-180">An existing bot's "botId" property changed</span></span>
+* <span data-ttu-id="e070d-181">Modifica della proprietà "isNotificationOnly" di un bot esistente</span><span class="sxs-lookup"><span data-stu-id="e070d-181">An existing bot's "isNotificationOnly" property changed</span></span>
+* <span data-ttu-id="e070d-182">La proprietà "supportsFiles" del bot è cambiata</span><span class="sxs-lookup"><span data-stu-id="e070d-182">The bot's "supportsFiles" property changed</span></span>
+* <span data-ttu-id="e070d-183">È stata aggiunta o rimossa un'estensione della messaggistica</span><span class="sxs-lookup"><span data-stu-id="e070d-183">A messaging extension was added or removed</span></span>
+* <span data-ttu-id="e070d-184">È stato aggiunto un nuovo connettore</span><span class="sxs-lookup"><span data-stu-id="e070d-184">A new connector was added</span></span>
+* <span data-ttu-id="e070d-185">È stata aggiunta una nuova scheda statica</span><span class="sxs-lookup"><span data-stu-id="e070d-185">A new static tab was added</span></span>
+* <span data-ttu-id="e070d-186">È stata aggiunta una nuova scheda configurabile</span><span class="sxs-lookup"><span data-stu-id="e070d-186">A new configurable tab was added</span></span>
+* <span data-ttu-id="e070d-187">Proprietà all'interno di "webApplicationInfo" modificate</span><span class="sxs-lookup"><span data-stu-id="e070d-187">Properties inside "webApplicationInfo" changed</span></span>
+
+![Screenshot che mostra le app che hanno una nuova versione disponibile](media/manage-your-custom-apps-update1.png)
+
+![Screenshot dell'opzione di aggiornamento per un'app](media/manage-your-custom-apps-update2.png)
+
+## <a name="related-topics"></a><span data-ttu-id="e070d-190">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="e070d-190">Related topics</span></span>
+
+- [<span data-ttu-id="e070d-191">Gestire le app nell'interfaccia di amministrazione di Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="e070d-191">Manage your apps in the Microsoft Teams admin center</span></span>](manage-apps.md)
+- [<span data-ttu-id="e070d-192">Gestire le impostazioni e i criteri delle app personalizzate in Teams</span><span class="sxs-lookup"><span data-stu-id="e070d-192">Manage custom app policies and settings in Teams</span></span>](teams-custom-app-policies-and-settings.md)
+- [<span data-ttu-id="e070d-193">Gestire i criteri di autorizzazione delle app in Teams</span><span class="sxs-lookup"><span data-stu-id="e070d-193">Manage app permission policies in Teams</span></span>](teams-app-permission-policies.md)
+- [<span data-ttu-id="e070d-194">Gestire i criteri di configurazione delle app in Teams</span><span class="sxs-lookup"><span data-stu-id="e070d-194">Manage app setup policies in Teams</span></span>](teams-app-setup-policies.md)

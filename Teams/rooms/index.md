@@ -13,33 +13,36 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 description: Considerazioni relative alla pianificazione per la distribuzione delle sale di Microsoft teams e su come distribuire e gestire il sistema.
-ms.openlocfilehash: 2cba74f72016b51446f7721041039faedd865866
-ms.sourcegitcommit: 18838ed1da69ab4668c903bfcafd4ad2fa02639d
+ms.openlocfilehash: 98fbd10cdbc575412253b4a9c8fdfc16869da2ed
+ms.sourcegitcommit: 824c79bd050b0abb576004f6209bb081d5090a8f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44773381"
+ms.lasthandoff: 07/29/2020
+ms.locfileid: "46521991"
 ---
-# <a name="microsoft-teams-rooms"></a><span data-ttu-id="e3e90-103">Microsoft Teams Rooms</span><span class="sxs-lookup"><span data-stu-id="e3e90-103">Microsoft Teams Rooms</span></span>
+# <a name="microsoft-teams-rooms"></a><span data-ttu-id="ffa36-103">Microsoft Teams Rooms</span><span class="sxs-lookup"><span data-stu-id="ffa36-103">Microsoft Teams Rooms</span></span>
 
-<span data-ttu-id="e3e90-104">Trasforma gli spazi delle riunioni dalle piccole aree di calco alle ampie sale riunioni con un'esperienza di teams ricca e collaborativa semplice da usare, distribuire e gestire.</span><span class="sxs-lookup"><span data-stu-id="e3e90-104">Transform meeting spaces ranging from small huddle areas to large conference rooms with a rich, collaborative Teams experience that's simple to use, deploy, and manage.</span></span>
-
-<span data-ttu-id="e3e90-105">Avviare le riunioni in tempo con l'aggiunta di un tocco, quindi proiettare istantaneamente la visualizzazione nella sala e condividerla con i partecipanti remoti.</span><span class="sxs-lookup"><span data-stu-id="e3e90-105">Start meetings on time with one-touch join, then instantly project to the display in the room and share to remote participants.</span></span>
-
-<span data-ttu-id="e3e90-106">Selezionare il sistema giusto e le periferiche audio video da uno dei nostri partner: Yealink, Logitech, Crestron, Polycom, Lenovo e HP.</span><span class="sxs-lookup"><span data-stu-id="e3e90-106">Select the right system and audio video peripherals from one of our partners: Yealink, Logitech, Crestron, Polycom, Lenovo, and HP.</span></span>
-
-:::image type="content" source="../media/srs-room.jpg" alt-text="Una tabella di conferenza con Microsoft teams Rooms Equipment":::
+:::row:::
+    :::column span="2":::
+       <span data-ttu-id="ffa36-104">Trasforma gli spazi delle riunioni dalle piccole aree di calco alle ampie sale riunioni con un'esperienza di teams ricca e collaborativa semplice da usare, distribuire e gestire.</span><span class="sxs-lookup"><span data-stu-id="ffa36-104">Transform meeting spaces ranging from small huddle areas to large conference rooms with a rich, collaborative Teams experience that's simple to use, deploy, and manage.</span></span> <br> 
+       <span data-ttu-id="ffa36-105">Avviare le riunioni in tempo con l'aggiunta di un tocco, quindi proiettare istantaneamente la visualizzazione nella sala e condividerla con i partecipanti remoti.</span><span class="sxs-lookup"><span data-stu-id="ffa36-105">Start meetings on time with one-touch join, then instantly project to the display in the room and share to remote participants.</span></span><br> 
+       <span data-ttu-id="ffa36-106">Selezionare il sistema giusto e le periferiche audio video da uno dei nostri partner: Yealink, Logitech, Crestron, Polycom, Lenovo e HP.</span><span class="sxs-lookup"><span data-stu-id="ffa36-106">Select the right system and audio video peripherals from one of our partners: Yealink, Logitech, Crestron, Polycom, Lenovo, and HP.</span></span>
+    :::column-end:::
+    :::column:::
+       ![Una tabella di conferenza con Microsoft teams Rooms Equipment](../media/srs-room.jpg)
+    :::column-end:::
+:::row-end:::
 
 |               |               |               |               |               |               |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| ![Simbolo di elenco](https://docs.microsoft.com/office/media/icons/list-123-teams.svg)  | <span data-ttu-id="e3e90-109">**[Piano](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-plan)**</span><span class="sxs-lookup"><span data-stu-id="e3e90-109">**[Plan](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-plan)**</span></span>  | ![Simbolo di distribuzione](https://docs.microsoft.com/office/media/icons/deploy-teams.svg)  | <span data-ttu-id="e3e90-111">**[Distribuzione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-deploy)**</span><span class="sxs-lookup"><span data-stu-id="e3e90-111">**[Deploy](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-deploy)**</span></span>  | ![Strumenti/chiave](https://docs.microsoft.com/office/media/icons/toolbox.svg)  | <span data-ttu-id="e3e90-113">**[Gestione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-manage)**</span><span class="sxs-lookup"><span data-stu-id="e3e90-113">**[Manage](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-manage)**</span></span> |
+| ![Simbolo di elenco](https://docs.microsoft.com/office/media/icons/list-123-teams_small.svg)  | <span data-ttu-id="ffa36-109">**[Piano](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-plan)**</span><span class="sxs-lookup"><span data-stu-id="ffa36-109">**[Plan](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-plan)**</span></span>  | ![Simbolo di distribuzione](https://docs.microsoft.com/office/media/icons/deploy-teams_small.svg)  | <span data-ttu-id="ffa36-111">**[Distribuzione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-deploy)**</span><span class="sxs-lookup"><span data-stu-id="ffa36-111">**[Deploy](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-deploy)**</span></span>  | ![Strumenti/chiave](https://docs.microsoft.com/office/media/icons/toolbox_small.svg)  | <span data-ttu-id="ffa36-113">**[Gestione](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-manage)**</span><span class="sxs-lookup"><span data-stu-id="ffa36-113">**[Manage](https://docs.microsoft.com/MicrosoftTeams/rooms/rooms-manage)**</span></span> |
 
 <br>
 
 > [!NOTE]
-> <span data-ttu-id="e3e90-114">Microsoft teams Rooms è progettato per l'uso con Microsoft teams, Skype for business online, Skype for Business Server 2019 o Skype for Business Server 2015.</span><span class="sxs-lookup"><span data-stu-id="e3e90-114">Microsoft Teams Rooms is intended for use with Microsoft Teams, Skype for Business Online, Skype for Business Server 2019, or Skype for Business Server 2015.</span></span>  <br><br><span data-ttu-id="e3e90-115">Non è previsto che le piattaforme precedenti come Lync Server 2013 funzionino con le sale di Microsoft teams.</span><span class="sxs-lookup"><span data-stu-id="e3e90-115">Earlier platforms like Lync Server 2013 aren't expected to work with Microsoft Teams Rooms.</span></span>
+> <span data-ttu-id="ffa36-114">Microsoft teams Rooms è progettato per l'uso con Microsoft teams, Skype for business online, Skype for Business Server 2019 o Skype for Business Server 2015.</span><span class="sxs-lookup"><span data-stu-id="ffa36-114">Microsoft Teams Rooms is intended for use with Microsoft Teams, Skype for Business Online, Skype for Business Server 2019, or Skype for Business Server 2015.</span></span>  <br><br><span data-ttu-id="ffa36-115">Non è previsto che le piattaforme precedenti come Lync Server 2013 funzionino con le sale di Microsoft teams.</span><span class="sxs-lookup"><span data-stu-id="ffa36-115">Earlier platforms like Lync Server 2013 aren't expected to work with Microsoft Teams Rooms.</span></span>
 
-<span data-ttu-id="e3e90-116">Questi articoli sono destinati agli utenti che hanno il compito di pianificare, distribuire e gestire questi dispositivi e non per quelli del sistema.</span><span class="sxs-lookup"><span data-stu-id="e3e90-116">These articles are intended for people tasked with planning, deploying, and managing these devices, and not for the users of the system.</span></span> <span data-ttu-id="e3e90-117">Gli utenti saranno più interessati alla guida di Microsoft teams Rooms [online](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).</span><span class="sxs-lookup"><span data-stu-id="e3e90-117">Users will be more interested in the Microsoft Teams Rooms [online help](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).</span></span>
+<span data-ttu-id="ffa36-116">Questi articoli sono destinati agli utenti che hanno il compito di pianificare, distribuire e gestire questi dispositivi e non per quelli del sistema.</span><span class="sxs-lookup"><span data-stu-id="ffa36-116">These articles are intended for people tasked with planning, deploying, and managing these devices, and not for the users of the system.</span></span> <span data-ttu-id="ffa36-117">Gli utenti saranno più interessati alla guida di Microsoft teams Rooms [online](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).</span><span class="sxs-lookup"><span data-stu-id="ffa36-117">Users will be more interested in the Microsoft Teams Rooms [online help](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="e3e90-118">[Skype room System](../rooms/lrs-migration.md) (in precedenza Lync room System) e Microsoft teams Rooms sono prodotti diversi con diverse dipendenze e procedure di distribuzione.</span><span class="sxs-lookup"><span data-stu-id="e3e90-118">[Skype Room System](../rooms/lrs-migration.md) (formerly Lync Room System) and Microsoft Teams Rooms are different products with different dependencies and deployment procedures.</span></span>
+> <span data-ttu-id="ffa36-118">[Skype room System](../rooms/lrs-migration.md) (in precedenza Lync room System) e Microsoft teams Rooms sono prodotti diversi con diverse dipendenze e procedure di distribuzione.</span><span class="sxs-lookup"><span data-stu-id="ffa36-118">[Skype Room System](../rooms/lrs-migration.md) (formerly Lync Room System) and Microsoft Teams Rooms are different products with different dependencies and deployment procedures.</span></span>
