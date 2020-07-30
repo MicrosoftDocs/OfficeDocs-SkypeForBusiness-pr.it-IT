@@ -1,5 +1,5 @@
 ---
-title: Modelli di team per piccole e medie imprese
+title: Modelli di team per le piccole e medie imprese create con Microsoft Graph
 author: serdarsoysal
 ms.author: serdars
 manager: serdars
@@ -15,16 +15,16 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.reviewer: lavenkat
-description: Usare i modelli predefiniti di Microsoft teams per creare rapidamente e facilmente team per piccole e medie imprese.
+description: Usare i modelli predefiniti di Microsoft teams incorporati in Microsoft Graph per creare rapidamente e facilmente team per piccole e medie imprese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1de5e0459168c7586f0b8e18a33153ca1519853a
-ms.sourcegitcommit: 9b1c138b39fd87e239a7b1c5051f30c633e7d813
+ms.openlocfilehash: 9807e7f3694731af398abd83189698420ec36b8a
+ms.sourcegitcommit: ded1e92348b6c18aa31f7f67e68ced3db525977d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "44944029"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506149"
 ---
-# <a name="get-started-with-teams-templates-for-small-and-medium-businesses"></a>Introduzione ai modelli di team per le piccole e medie imprese
+# <a name="teams-templates-built-in-microsoft-graph-for-small-and-medium-businesses"></a>Modelli di teams incorporati in Microsoft Graph per piccole e medie imprese
 
 I modelli di Microsoft teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate.
 

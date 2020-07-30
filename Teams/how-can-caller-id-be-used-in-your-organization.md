@@ -22,18 +22,22 @@ ms.custom:
 - Calling Plans
 - ms.teamsadmincenter.voice.callerid.overview
 description: L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
-ms.openlocfilehash: 67bb9d13d9cdece2793837044e280927e03c5795
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: 5c20f439d156997c89ca54c2a3bf39e9c3a42ae4
+ms.sourcegitcommit: ded1e92348b6c18aa31f7f67e68ced3db525977d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44638896"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506199"
 ---
 # <a name="how-can-caller-id-be-used-in-your-organization"></a>Come usare l'ID chiamante nella tua organizzazione
 
 L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
   
 La funzionalità ID chiamante è disponibile per tutti gli utenti del sistema telefonico indipendentemente dalla connettività PSTN:
+
+- Piani per chiamate Microsoft 
+
+- Instradamento diretto di Sistema telefonico 
   
 - Connettività PSTN in linea
     
@@ -50,7 +54,7 @@ Sono disponibili tre opzioni per l'ID chiamante PSTN in uscita:
   
 - Numero di telefono assegnato all'utente, ovvero l'impostazione predefinita.
     
-- Un numero di telefono Classificato come *servizio* e numero *verde* nell'inventario dei piani di chiamata per il numero di telefono. In genere viene assegnata a un operatore automatico o una coda di chiamata aziendale.
+- Un numero di telefono Classificato come *servizio* e numero *verde* nell'inventario dei piani di chiamata per il numero di telefono. In genere assegnato a una coda di chiamata o operatore automatico dell'organizzazione.
     
 - Impostato su anonimo.
     
@@ -64,7 +68,7 @@ Per impostare l'ID chiamante in uscita, vedere [Impostazione dell'ID chiamante p
   
 ### <a name="end-user-control-of-outbound-caller-id"></a>Controllo utente finale dell'ID chiamante in uscita
 
-L'attributo EnableUserOverride consente a singoli o più utenti di modificare l'impostazione dell'ID chiamante in **Anonymous**. Questo problema si applica solo quando un criterio CallingLineIdentity è configurato con un parametro CallingIDSubstitute di LineURI o sostituto. Il valore predefinito di EnableUserOverride è false.
+L'attributo EnableUserOverride consente a singoli o più utenti di modificare l'impostazione dell'ID chiamante in **Anonymous**. Ciò è valido solo quando viene configurato un criterio CallingLineIdentity con un parametro CallingIDSubstitute LineURI o sostituto. Il valore predefinito di EnableUserOverride è false.
   
 Gli utenti finali possono impostare l'ID chiamante su **Anonimo** usando la scheda **Impostazioni** nel client desktop Skype for business, selezionare **chiama un utente finale** (se abilitato dall'amministratore) e quindi selezionare **Nascondi il numero di telefono e le informazioni del profilo per tutte le chiamate**. In teams gli utenti possono accedere all'immagine del profilo nell'angolo in alto a destra, selezionare **le**  >  **chiamate**di impostazioni e quindi in **ID chiamante**selezionare **Nascondi il numero di telefono e le informazioni del profilo per tutte le chiamate**.
   

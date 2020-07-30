@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Installare il connettore di Power BI per usare i modelli di query di Call Quality Dashboard (Call Quality Dashboard)
-ms.openlocfilehash: 1647497cf2551a125e28d5a3920625bee15eca9f
-ms.sourcegitcommit: 70b80892a152f86a6d596f0f5b58cf391bc29098
+ms.openlocfilehash: 1c315dc0214ee0540ddce25fb8f0a1dc1794048f
+ms.sourcegitcommit: ded1e92348b6c18aa31f7f67e68ced3db525977d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45138044"
+ms.lasthandoff: 07/28/2020
+ms.locfileid: "46506169"
 ---
 # <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare il connettore di Power BI per usare i modelli di query di Call Quality dashboard
 
@@ -124,7 +124,7 @@ Nonostante l'uso di Power BI, non tutte le funzionalità di Power BI sono suppor
 
 6. **Supporto di Government community Cloud (GCC)-** Per i clienti nell'ambiente GCC, il connettore Power BI di Call Quality dashboard funzionerà quando si usa desktop di Power BI. Il connettore di Power BI Call Quality Dashboard non è attualmente compatibile con il servizio Power BI per i clienti di GCC.
 
-Tieni presente che, anche se il connettore è in anteprima, è improbabile che queste limitazioni cambino con la versione finale del connettore. La maggior parte di questi problemi è una restrizione alla progettazione di connettori DirectQuery in Power BI o fondamentale per la progettazione del modello di dati Call Quality dashboard.
+La maggior parte di questi problemi è una restrizione alla progettazione di connettori DirectQuery in Power BI o fondamentale per la progettazione del modello di dati Call Quality dashboard.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
