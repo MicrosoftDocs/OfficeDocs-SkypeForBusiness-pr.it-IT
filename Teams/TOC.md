@@ -53,7 +53,6 @@
 ## [Modelli di Teams creati in Graph per Piccole e medie imprese](smb-templates.md)
 
 
-
 ## App, bot e connettori
 
 ### [Panoramica](deploy-apps-microsoft-teams-landing-page.md)
