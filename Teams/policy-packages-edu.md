@@ -21,12 +21,12 @@ ms.custom: ms.teamsadmincenter.policypackages.overview
 localization_priority: Priority
 search.appverid: MET150
 description: Informazioni sui criteri in un ambiente Education, o EDU, e su come usare e gestire i pacchetti di criteri in Microsoft Teams.
-ms.openlocfilehash: fcc6a5d22d5e499cf698e424148ff37cd3ee054e
-ms.sourcegitcommit: 4099da7b1db7663e63ef5bece16e3090c33ea207
+ms.openlocfilehash: b395005dd8e997d296c56b055fff29f2c1636180
+ms.sourcegitcommit: dc3e8ae454c42981f037f4de2e48005428b6078e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45021884"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533903"
 ---
 # <a name="teams-policies-and-policy-packages-for-education"></a>Criteri e pacchetti di criteri di Teams per l'istruzione
 
@@ -100,7 +100,7 @@ Una volta creata o aggiornata la definizione di criteri, è possibile assegnarla
 È anche possibile assegnare un criterio a un utente passando a Utenti, selezionando l'utente per il quale si vogliono aggiornare i criteri, selezionando Criteri e quindi Modifica. Da qui è possibile selezionare la definizione di criteri che si vuole assegnare all'utente per ogni area di funzionalità.
 
 > [!IMPORTANT]
-> Se si fa parte di un istituto di istruzione di grandi dimensioni, usare l'esperienza del portale di amministrazione di Microsoft Teams per impostare i criteri per ogni utente può essere difficoltoso. Sarà preferibile assegnare criteri in blocchi con PowerShell. Se necessario, sono disponibili informazioni specifiche per il settore su come [assegnare criteri a grandi gruppi di utenti dell'istituto di istruzione](batch-policy-assignment-edu.md). È anche possibile consultare la sezione seguente relativa ai pacchetti di criteri, che rappresentano un ottimo modo per gestire i criteri e le impostazioni per i grandi gruppi di utenti.
+> Se si fa parte di un istituto di istruzione di grandi dimensioni, usare l'esperienza del portale di amministrazione di Microsoft Teams per impostare i criteri per ogni utente può essere difficoltoso. Sarà preferibile assegnare criteri in blocchi con PowerShell. Se necessario, sono disponibili informazioni specifiche per il settore su come [assegnare criteri a grandi gruppi di utenti dell'istituto di istruzione](batch-group-policy-assignment-edu.md). È anche possibile consultare la sezione seguente relativa ai pacchetti di criteri, che rappresentano un ottimo modo per gestire i criteri e le impostazioni per i grandi gruppi di utenti.
 
 ![Riquadro Modifica criteri utente, sul lato destro della pagina Criteri assegnati.](media/edu-edit-user-policies-pane.png)
 

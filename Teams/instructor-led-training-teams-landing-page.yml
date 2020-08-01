@@ -1,0 +1,62 @@
+### YamlMime:Hub
+title: Training con docente per Microsoft Teams
+summary: Microsoft è lieta di ospitare una serie di corsi di formazione online gratuiti e in tempo reale, creati per consentirti di iniziare subito a usare Teams.   Che tu sia il decision maker dell’azienda, un amministratore, un professionista IT o un utente finale, troverai un corso adatto a te. Non sai da dove iniziare? Esegui la Verifica delle conoscenze su Teams. Partecipa per vedere Teams in azione, ottenere risposte alle tue domande e interagire con gli istruttori live. Per visualizzare i corsi di formazione all’ora che preferisci, visita il training per utenti finali on-demand. Fai clic su una sessione di seguito per iscriverti.
+metadata:
+  title: Training con docente per Microsoft Teams
+  description: Informazioni su come iscriversi a corsi di formazione live gratuiti con docente per scoprire tutto su Microsoft Teams.
+  ms.topic: hub-page
+  author: lolajacobsen
+  ms.author: lolaj
+  ms.date: 06/16/2020
+  ms.openlocfilehash: 11b6a79428b957680c5a931f062e44f605a6d54c
+  ms.sourcegitcommit: dc3e8ae454c42981f037f4de2e48005428b6078e
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 07/31/2020
+  ms.locfileid: "46534114"
+highlightedContent:
+  items:
+  - title: Controllo conoscenza Teams
+    itemType: learn
+    url: https://aka.ms/TeamsKnowledgeCheck
+  - title: Formazione su richiesta per gli utenti finali
+    itemType: video
+    url: https://aka.ms/TeamsOnDemand
+productDirectory:
+  items:
+  - title: Introduzione a Microsoft Teams
+    imageSrc: https://docs.microsoft.com/office/media/icons/whats-new-megaphone-teams.svg
+    summary: "Che cos'è Microsoft Teams? Partecipa a questa sessione di orientamento della durata di 30 minuti e scopri che cos'è Teams e come funziona. (Pubblico: tutti)"
+    url: https://aka.ms/SayhelloTeams
+  - title: Inizia a usare Teams
+    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-teams.svg
+    summary: "Da chat e riunioni all'uso di team e canali, alla fine di questa sessione gli utenti disporranno delle basi necessarie per usare Teams in tutta sicurezza. (Pubblico: utenti finali)"
+    url: https://aka.ms/GetstartedwithMSTeams
+  - title: Organizza riunioni efficaci con Teams
+    imageSrc: https://docs.microsoft.com/office/media/icons/tasks-teams.svg
+    summary: 'Scopri come sfruttare al meglio Teams prima, durante e dopo le riunioni. (Pubblico: utenti finali)'
+    url: https://aka.ms/RunmeetingsTeams
+  - title: Esplorare team e canali in Teams
+    imageSrc: https://docs.microsoft.com/office/media/icons/users-people.svg
+    summary: 'Informazioni su come semplificare un progetto e la collaborazione tra gruppi di lavoro. (Pubblico: utenti finali)'
+    url: https://aka.ms/TeamsandchannelsinTeams
+  - title: Scopri come usare le app in Teams
+    imageSrc: https://docs.microsoft.com/office/media/icons/blocks-teams.svg
+    summary: " Impara a migliorare il lavoro di gruppo grazie alle app. (Pubblico: utenti finali)"
+    url: https://aka.ms/IntegrateappsinTeams
+  - title: Scopri come perfezionare l’uso di Teams
+    imageSrc: https://docs.microsoft.com/office/media/icons/best-practices-teams.svg
+    summary: 'Informazioni su modi creativi per ottimizzare e organizzare Teams nell’ambito del tuo lavoro quotidiano. (Pubblico: utenti finali)'
+    url: https://aka.ms/GodeeperwithTeams
+  - title: Teams per l'istruzione - Webinar
+    imageSrc: https://docs.microsoft.com/office/media/icons/education-tutorial-teams.svg
+    summary: "Scopri come usare Teams nell'istruzione superiore. (Pubblico: personale, studenti, docenti universitari, facoltà di ricerca, professionisti IT)"
+    url: https://aka.ms/TeamsEduWebinars
+  - title: Gestire il lavoro da casa con Teams
+    imageSrc: https://docs.microsoft.com/office/media/icons/headset-teams.svg
+    summary: " NUOVO! Le procedure consigliate per rimanere in contatto con il team e garantire la produttività. (Pubblico: utenti finali, team e responsabili di reparto)"
+    url: https://aka.ms/WorkathomewithTeams
+  - title: Workshop di pianificazione dell'aggiornamento
+    imageSrc: https://docs.microsoft.com/office/media/icons/migration-teams.svg
+    summary: 'Pianificare e implementare un aggiornamento riuscito a teams. (Audience: professionisti IT, responsabili delle modifiche alle adozioni)'
+    url: /MicrosoftTeams/upgrade-workshops-landing-page

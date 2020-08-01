@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c1df183046dc2378081382e2a8b46c9b3b92c80a
-ms.sourcegitcommit: 60b859dcb8ac727a38bf28cdb63ff762e7338af8
+ms.openlocfilehash: 318a430f6f59cbb28ffeda4336c36ae07533615b
+ms.sourcegitcommit: dc3e8ae454c42981f037f4de2e48005428b6078e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "44938195"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533741"
 ---
 # <a name="powershell-script-sample---create-and-assign-a-messaging-policy"></a>Esempio di script di PowerShell: creare e assegnare un criterio di messaggistica
 
@@ -38,7 +38,6 @@ Questo script usa il cmdlet [Grant-CsTeamsMessagingPolicy,](https://docs.microso
 Scaricare e installare il [modulo di PowerShell per Skype for business online](https://www.microsoft.com/download/details.aspx?id=39366)e quindi riavviare il computer, se richiesto.
 
 Per altre informazioni, vedere [gestire Skype for business online con Office 365 PowerShell](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell).
-
 
 ## <a name="sample-script"></a>Script di esempio
 
@@ -62,4 +61,4 @@ $dataSetFilePath = "<csv file with user ids for newly provisioned students> "
 ```
 
 > [!NOTE]
-> È anche possibile assegnare un criterio di messaggistica direttamente agli utenti in scala tramite un'assegnazione di criteri batch o a un gruppo di cui sono membri gli utenti. Per altre informazioni, vedere [assegnare criteri a set di utenti di grandi dimensioni dell'Istituto di istruzione](../batch-policy-assignment-edu.md) e [assegnare criteri agli utenti in teams](../assign-policies.md).
+> È anche possibile assegnare un criterio di messaggistica direttamente agli utenti in scala tramite un'assegnazione di criteri batch o a un gruppo di cui sono membri gli utenti. Per altre informazioni, vedere [assegnare criteri a set di utenti di grandi dimensioni dell'Istituto di istruzione](../batch-group-policy-assignment-edu.md) e [assegnare criteri agli utenti in teams](../assign-policies.md).

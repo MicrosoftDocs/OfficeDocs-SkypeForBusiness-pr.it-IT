@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Elenca i piani per le licenze didattiche e gli studenti e gli ID SKU.
 f1keywords: ''
-ms.openlocfilehash: 5f382be6aa19cbfef45bc0dcef350e5354df118a
-ms.sourcegitcommit: 862ba1d2b3bd4622b1b0baa15096c29c591cc6c4
+ms.openlocfilehash: 921ea3313709fc16b415915b444e416527076251
+ms.sourcegitcommit: dc3e8ae454c42981f037f4de2e48005428b6078e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/11/2020
-ms.locfileid: "44702701"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533893"
 ---
 # <a name="education-sku-reference"></a>Riferimento SKU per l'istruzione
 
@@ -71,4 +71,4 @@ In questo articolo sono elencati i piani per la facoltà di istruzione e le SKU 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Assegnare criteri a grandi gruppi di utenti nella tua scuola](batch-policy-assignment-edu.md)
+- [Assegnare criteri a grandi gruppi di utenti nella tua scuola](batch-group-policy-assignment-edu.md)
