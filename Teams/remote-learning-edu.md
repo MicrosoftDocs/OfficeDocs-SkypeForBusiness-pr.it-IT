@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 62cb28b26cb96faa05674a705f33b34bfb00aa90
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: f0fab79f0672c21f348ccfda999bcc32a468c87f
+ms.sourcegitcommit: dc3e8ae454c42981f037f4de2e48005428b6078e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45085972"
+ms.lasthandoff: 07/31/2020
+ms.locfileid: "46533761"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -98,7 +98,7 @@ Per una panoramica su come creare team, vedere: [Creare un team di classe in Mic
 > [!IMPORTANT]
 > Per i criteri riunione assegnati agli utenti, è consigliabile configurare l'opzione "Ammetti automaticamente le persone" su "Tutti gli utenti dell'organizzazione". Questa opzione garantisce che gli utenti non autenticati debbano essere ammessi dalla sala di attesa per poter partecipare alle riunioni di Teams. Per altre informazioni, leggere [Gestire i criteri di riunione in Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams#automatically-admit-people).
 
-**Il personale e gli insegnanti di scuola primaria** dovrebbero disporre di criteri che gli garantiscano le funzionalità di base e che possano essere limitate per gli studenti. Creare nuovi criteri che consentano la pianificazione delle chat private e la pianificazione delle riunioni (le impostazioni predefinite per un nuovo criterio). [Assegnare questi criteri in blocco al personale e ai docenti tramite l'assegnazione di criteri per batch](batch-policy-assignment-edu.md).
+**Il personale e gli insegnanti di scuola primaria** dovrebbero disporre di criteri che gli garantiscano le funzionalità di base e che possano essere limitate per gli studenti. Creare nuovi criteri che consentano la pianificazione delle chat private e la pianificazione delle riunioni (le impostazioni predefinite per un nuovo criterio). [Assegnare questi criteri in blocco al personale e ai docenti](batch-group-policy-assignment-edu.md).
 
 ## <a name="start-using-teams"></a>Introduzione a Teams
 

@@ -8,7 +8,7 @@
 
 # Formazione
 ## [Panoramica](training-microsoft-teams-landing-page.md)
-## [Training con docente per Teams](instructor-led-training-teams-landing-page.md)
+## [Training con docente per Teams](instructor-led-training-teams-landing-page.yml)
 ## [Formazione amministratori per Teams](itadmin-readiness.md)
 ## [Formazione utenti finali per Teams](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)
 <!-- ============================================================ -->
@@ -670,7 +670,8 @@
 ### [Guida introduttiva per amministratori - Teams per l'istruzione](teams-quick-start-edu.yml)
 ### [Iniziare a usare l'apprendimento a distanza](remote-learning-edu.md)
 ### [Criteri e pacchetti di criteri di Teams per l'istruzione](policy-packages-edu.md)
-### [Assegnare criteri a grandi gruppi di utenti](batch-policy-assignment-edu.md)
+### [Assegnare criteri a grandi gruppi di utenti](batch-group-policy-assignment-edu.md)
+### [Script di PowerShell per creare gruppi di sicurezza per docenti e studenti](scripts/powershell-script-security-groups-edu.md)
 ### [Indicazioni per larghezza di banda ridotta per gli amministratori dell'istruzione](edu-remote-low-bandwidth.md)
 ### [Informazioni su Classe](class-insights.md)
 ### [Assegnare attività in Teams per l'istruzione](expand-teams-across-your-org/assignments-in-teams.md)
