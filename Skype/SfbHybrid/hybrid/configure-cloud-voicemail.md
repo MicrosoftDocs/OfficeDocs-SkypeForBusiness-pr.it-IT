@@ -13,12 +13,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Istruzioni per l'implementazione della segreteria telefonica basata su cloud per gli utenti ospitati in Skype for Business Server.
-ms.openlocfilehash: 8284ee3d06574f3d5772b929fcae8363f399acb8
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: 29faba6bf092647f0c55899f013c6b4bf146304f
+ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44221460"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552582"
 ---
 # <a name="configure-cloud-voicemail-service-for-on-premises-users"></a>Configurare il servizio di segreteria cloud per gli utenti locali
 
@@ -38,7 +38,7 @@ La configurazione del messaggio vocale cloud prevede le attività seguenti:
 
 2.  Assicurarsi di aver configurato la connettività ibrida, come descritto in [Plan Hybrid Connectivity](plan-hybrid-connectivity.md) e [Configure Hybrid Connectivity](configure-hybrid-connectivity.md). 
 
-3.  Configurare il servizio di [segreteria cloud come provider di hosting nel server perimetrale](#configure-cloud-voicemail-as-the-hosting-provider) , come descritto in questo articolo.
+3.  Configurare il servizio di [segreteria cloud come provider di hosting nel front end server](#configure-cloud-voicemail-as-the-hosting-provider) , come descritto in questo articolo.
 
 4.  [Configurare un criterio di segreteria telefonica ospitata](#configure-a-hosted-voicemail-policy) come descritto in questo articolo.
 
