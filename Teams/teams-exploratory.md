@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d0b5c289a2cc87c778a0d9b0bd1ebb8d52978fb4
-ms.sourcegitcommit: 863347fb6e5916d8d936adc4ddcebb2e32a91d1c
+ms.openlocfilehash: 1508305fbc1d45caff9306dd5afb01d587df030b
+ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45229142"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552284"
 ---
 <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 =======================================================
@@ -79,9 +79,9 @@ Gli amministratori possono impedire agli utenti finali di eseguire l'esperienza 
 
 ### <a name="prevent-users-from-installing-trial-apps-and-services"></a>Impedire agli utenti di installare le versioni di valutazione di app e servizi
 
-È possibile disattivare l'opzione per installare le versioni di valutazione di app e servizi per evitare che gli utenti eseguano l'esperienza Teams Exploratory. 
+È possibile disattivare la possibilità di installare versioni di valutazione di app e servizi, che non consentirebbero agli utenti di eseguire l'esperienza Teams Exploratory. 
 
-1. Dall'interfaccia di amministrazione di Microsoft 365, andare in **Impostazioni** > **Impostazioni**, selezionare **Servizi**, quindi **App e servizi di proprietà dell'utente**.
+1. Nell'interfaccia di amministrazione di Microsoft 365, passare a **Impostazioni** > **Impostazioni organizzazione**, selezionare **Servizi**, quindi **App e servizi di proprietà dell'utente**.
 
     ![Screenshot della pagina Servizi nell'interfaccia di amministrazione](media/iw-trial-services.png)
 
@@ -169,4 +169,3 @@ Le licenze per l'esperienza Microsoft Teams Exploratory iniziate entro 90 giorni
 Per tali contratti, l'anno successivo all'attivazione da parte del primo utente finale delle licenze per l'esperienza di Microsoft Teams Exploratory, verrà considerato come data di ricorrenza o di rinnovo. Gli utenti di Microsoft Teams Exploratory devono convertire la propria licenza in una licenza a pagamento entro tale data ogni anno, in base ai criteri illustrati in precedenza.
 
 Ad esempio, se il primo utente finale attiva una licenza Microsoft Teams Exploratory il 19 giugno 2020, deve convertirla insieme agli altri utenti idonei nel tenant del cliente in una licenza a pagamento di Teams entro il 19 giugno 2021. 
-

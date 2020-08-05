@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b0e6185b81d7fcdbf76efa7c827249a93dfc00df
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: 9f541eb0bd6970a54bad5272a26ec3a3449d2a13
+ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868683"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552632"
 ---
 <a name="manage-the-microsoft-teams-commercial-cloud-trial-offer"></a>Gestire l'offerta Microsoft Teams Commercial Cloud Trial
 =======================================================
@@ -81,7 +81,7 @@ Gli amministratori possono impedire che gli utenti finali richiedano app e servi
 
 È possibile disabilitare l'installazione delle versioni di valutazione di app e servizi per un utente.
 
-1. Nell'[interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home), passare a **Impostazioni** > **Impostazioni**, selezionare **Servizi** e quindi selezionare **App e servizi di proprietà degli utenti**.
+1. Nell'[Interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home), passare a **Impostazioni** > **Impostazioni organizzazione**, selezionare **Servizi**, quindi selezionare **App e servizi di proprietà dell'utente**.
 
     ![Screenshot della pagina Servizi nell'interfaccia di amministrazione](media/iw-trial-services.png)
 
