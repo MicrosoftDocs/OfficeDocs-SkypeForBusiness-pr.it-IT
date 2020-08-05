@@ -21,18 +21,18 @@ ms.custom:
 - Phone System
 - seo-marvel-mar2020
 description: "Informazioni su come configurare i telefoni per l'area comune per atri, aree di ricezione e sale conferenze "
-ms.openlocfilehash: ef75c23ff72d9b640fb5a53feff7cf46fec43292
-ms.sourcegitcommit: 2cc36c954200f50de33b909856b33fe0a9a6b7a5
+ms.openlocfilehash: d9d77765451f98028f808028822ec42e6e51fdc7
+ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45125989"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552304"
 ---
 # <a name="set-up-the-common-area-phone-license-for-microsoft-teams"></a>Configurare la licenza telefonica per l'area comune per Microsoft Teams
 > [!NOTE]
 > I telefoni delle aree comuni non supportano la segreteria telefonica.
 
-Un telefono con area comune viene in genere posizionato in un'area come una sala d'attesa o in un'altra area disponibile per molti utenti per effettuare una chiamata; ad esempio, un'area di ricezione, una sala d'attesa o un telefono per conferenze. I telefoni delle aree comuni sono configurati come dispositivi anziché utenti e possono accedere automaticamente a una rete.
+Un telefono con area comune viene in genere posizionato in un'area come una sala d'attesa o in un'altra area disponibile per molti utenti per effettuare una chiamata; ad esempio, un'area di ricezione, una sala d'attesa o un telefono per conferenze. I telefoni delle aree comuni sono connessi con gli account collegati a una licenza telefonica per l'area comune. Anche il criterio TeamsIPPhone deve essere impostato in modo appropriato per consentire al telefono di avere un'esperienza utente nell'area comune.
 
 Nei passaggi seguenti ti aiuteremo a configurare un account per il sistema telefonico per la distribuzione dei telefoni delle aree comuni per l'organizzazione. Per un'esperienza di sala riunioni più completa, inclusi i servizi di audioconferenza, valutare l'acquisto della licenza dedicata sala riunioni con un dispositivo della sala riunioni. 
 

@@ -17,14 +17,17 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come controllare se i team privati possono essere scoperti dagli utenti di Microsoft teams tramite suggerimenti nella raccolta team e nei risultati della ricerca.
-ms.openlocfilehash: 0d068de791afd32d38b2b49ada275c6e3eced41c
-ms.sourcegitcommit: ed3d7ebb193229cab9e0e5be3dc1c28c3f622c1b
+ms.openlocfilehash: e06a9511d8198a069c3dccfdbbbacf3d3f1b2c42
+ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41836516"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46554696"
 ---
 # <a name="manage-discovery-of-private-teams-in-microsoft-teams"></a>Gestire l'individuazione di team privati in Microsoft Teams
+
+> [!IMPORTANT]
+> In base al feedback dei clienti, stiamo disabilitando questa funzionalità, in vigore il 31 agosto 2020. Ciò significa che dopo il 31 agosto 2020 non sarà più possibile impostare team privati come individuabili e tutti i nuovi team privati esistenti non saranno più individuabili. Per altre informazioni, vedere la Guida di [orientamento di Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap?featureid=44370).
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
@@ -60,7 +63,7 @@ I proprietari del team possono impostare l'impostazione di individuazione per un
 
 ### <a name="in-team-settings"></a>Nelle impostazioni del team
 
-In teams, vai al team privato, fai clic su **altre opzioni** > **Gestisci team**. Nella scheda **Impostazioni** espandere **individuazione team**e quindi deselezionare o selezionare la casella di controllo **attiva individuabilità** .
+In teams, vai al team privato, fai clic su **altre opzioni**  >  **Gestisci team**. Nella scheda **Impostazioni** espandere **individuazione team**e quindi deselezionare o selezionare la casella di controllo **attiva individuabilità** .
 
 ![Schermata dell'impostazione individuazione per i team privati esistenti](media/private-team-discovery-existing-team.png)
 

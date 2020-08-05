@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 955a642d2a2309ccbaf9f9d6280170a93a9179ae
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
-ms.translationtype: HT
+ms.openlocfilehash: 34d7780e1d10370b78c11c1a8021381aff71f479
+ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43905898"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552592"
 ---
 <a name="configure-desktop-sharing-in-microsoft-teams"></a>Configurare la condivisione desktop in Microsoft Teams
 ============================================
@@ -54,7 +54,7 @@ Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni
 5. Abilitare o disabilitare le impostazioni seguenti:
 
     - **Consentire a un partecipante di concedere o richiedere il controllo**: consente ai membri del team di concedere o richiedere il controllo dell'applicazione o del desktop del relatore.
-    - **Consentire a un partecipante esterno di concedere o richiedere il controllo**: consente ai guest e agli utenti (federati) esterni di concedere o richiedere il controllo dell'applicazione o del desktop del relatore.
+    - **Consentire a un partecipante esterno di dare o richiedere il controllo** , ovvero un criterio per utente. Indipendentemente dal modo in cui l'organizzatore della riunione ha impostato, l'organizzazione ha impostato questo set per un utente non controlla quali partecipanti esterni possono eseguire. Questo parametro controlla se i partecipanti esterni possono avere il controllo o richiedere il controllo dello schermo del condivisore, a seconda di quello che il condivisore ha impostato nei criteri della riunione dell'organizzazione.
     - **Consentire la condivisione di PowerPoint**: consente di creare riunioni nelle quali è possibile caricare e condividere le presentazioni di PowerPoint.
     - **Consentire la lavagna**: consente agli utenti di condividere una lavagna.
     - **Consentire le note condivise**: consente agli utenti di creare note condivise.

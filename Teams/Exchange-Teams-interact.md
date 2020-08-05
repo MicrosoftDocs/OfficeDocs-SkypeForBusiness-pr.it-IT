@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2806d913fb63dcd2a7a25b26153435333282e871
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 8b064fa34511704c382ca42e6daa7812c17a13b0
+ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44752978"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552012"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -45,28 +45,26 @@ La tabella seguente fornisce un utile riferimento rapido per la disponibilità d
 
 **Azioni supportate:**
 
-| La cassetta postale dell'utente è ospitata in: | eDiscovery| &nbsp;Blocco legale | Conservazione| MGMT per team e canali |Creare e visualizzare riunioni in teams| Modificare l'immagine del profilo utente | Cronologia chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Segreteria telefonica |Aggiungere e configurare connettori|Aggiungere e configurare le schede|Aggiungere e configurare i bot|
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-|**Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Sì<sup>8</sup>|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
-|**VNext dedicato a Exchange Online**|Sì <sup>2</sup>|Sì <sup>2</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Sì<sup>8</sup>|Sì|Supporto per più paesi|Sì <sup>7</sup>|Sì|Supporto per più paesi|Supporto per più paesi|Supporto per più paesi|
-|**Exchange Online dedicato-legacy** (obbligatorio per la sincronizzazione con Azure ad)|Sì <sup>2</sup>|Sì <sup>2, 3</sup>|Sì <sup> 4|Sì|No|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup> 5|Sì <sup> 6|Sì|Supporto per più paesi|
-|**Exchange locale** (è necessario eseguire la sincronizzazione con Azure ad & OAuth config)|Sì <sup>2</sup>| Sì <sup>2</sup> |Sì <sup> 4|Sì|Sì (Exchange 2016 CU3 +)|No|Sì|Sì|Supporto per riunioni private con ID conferenza di riunione dinamici|Sì <sup> 5|Sì <sup> 6|Sì|Supporto per più paesi|
+| La cassetta postale dell'utente è ospitata in:                                        | eDiscovery       | &nbsp;Blocco legale    | Conservazione  | MGMT per team e canali | Creare e visualizzare riunioni in teams | Modificare l'immagine del profilo utente | Cronologia chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Segreteria telefonica  | Aggiungere e configurare connettori | Aggiungere e configurare le schede | Aggiungere e configurare i bot |
+|---------------------------------------------------------------------|------------------|--------------------|------------|-----------------------|-----------------------------------|-----------------------------|--------------|-----------------|-------------------------|------------|------------------------------|------------------------|------------------------|
+| **Exchange Online**                                                 | Sì <sup>1</sup> | Sì <sup>1</sup>   | Sì        | Supporto per più paesi                   | Supporto per più paesi                               | Sì<sup>7</sup>             | Sì          | Supporto per più paesi             | Sì <sup>6</sup>        | Sì        | Supporto per più paesi                          | Supporto per più paesi                    | Supporto per più paesi                    |
+| **VNext dedicato a Exchange Online**                                 | Sì <sup>1</sup> | Sì <sup>1</sup>   | Sì        | Supporto per più paesi                   | Supporto per più paesi                               | Sì<sup>7</sup>             | Sì          | Supporto per più paesi             | Sì <sup>6</sup>        | Sì        | Supporto per più paesi                          | Supporto per più paesi                    | Supporto per più paesi                    |
+| **Exchange Online dedicato-legacy** (obbligatorio per la sincronizzazione con Azure ad)  | Sì <sup>1</sup> | Sì <sup>1, 2</sup> | Sì <sup> 3 | Sì                   | No                                | No                          | Sì          | Sì             | Supporto per riunioni private con ID conferenza di riunione dinamici                      | Sì <sup> 4 | Sì <sup> 5                   | Sì                    | Supporto per più paesi                    |
+| **Exchange locale** (è necessario eseguire la sincronizzazione con Azure ad & OAuth config) | Sì <sup>1</sup> | Sì <sup>1</sup>   | Sì <sup> 3 | Sì                   | Sì (Exchange 2016 CU3 +)          | No                          | Sì          | Sì             | Supporto per riunioni private con ID conferenza di riunione dinamici                      | Sì <sup> 4 | Sì <sup> 5                   | Sì                    | Supporto per più paesi                    |
 
-<sup>1</sup> Exchange 2016 CU3 e versioni successive supportate.  
+<sup>1</sup> eDiscovery e Legal detiene per la conformità ai messaggi di canale è supportato per tutte le opzioni di hosting.
 
-<sup>2</sup> eDiscovery e Legal detiene per la conformità ai messaggi di canale è supportato per tutte le opzioni di hosting.
+<sup>2</sup> i messaggi di chat privati di teams non sono ancora supportati per il blocco legale per l'opzione di hosting.
 
-<sup>3</sup> i messaggi di chat privati di teams non sono ancora supportati per il blocco legale per l'opzione di hosting.
+<sup>3</sup> la conservazione userà una cassetta postale ombreggiata per l'utente online per archiviare i messaggi.
 
-<sup>4</sup> la conservazione userà una cassetta postale ombreggiata per l'utente online per archiviare i messaggi. [Microsoft teams supporta eDiscovery per gli utenti di teams in un ambiente ibrido di Exchange](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/Microsoft-Teams-supports-eDiscovery-for-Teams-users-in-a/ba-p/200009).
+<sup>4</sup> gli utenti di teams con cassetta postale di Exchange locale possono usare la segreteria telefonica con teams e ricevere messaggi vocali in Outlook, ma i messaggi vocali non saranno disponibili per la visualizzazione o la riproduzione all'interno del client teams.
 
-<sup>5</sup> gli utenti di teams con cassetta postale di Exchange locale possono usare la segreteria telefonica con teams e ricevere messaggi vocali in Outlook, ma i messaggi vocali non saranno disponibili per la visualizzazione o la riproduzione all'interno del client teams.
+<sup>5</sup> se uno dei proprietari di un team può aggiungere connettori, tutti gli altri membri del team potranno farlo, anche se le cassette postali vengono ospitate in locale.
 
-<sup>6</sup> se uno dei proprietari di un team può aggiungere connettori, tutti gli altri membri del team saranno in grado di farlo, anche se le cassette postali vengono ospitate in locale.
+<sup>6</sup> solo contatti nella cartella Contatti predefinita. L'accesso ad altri contatti o cartelle secondarie non è supportato.
 
-<sup>7</sup> solo contatti nella cartella Contatti predefinita. L'accesso ad altri contatti o cartelle secondarie non è supportato.
-
-<sup>8</sup> teams onora l'impostazione di [Outlook sul criterio delle cassette postali Web](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy) configurata dagli amministratori del tenant per controllare se gli utenti possono modificare l'immagine del profilo. Se l'impostazione **-SetPhotoEnabled** è disattivata nel criterio, gli utenti non possono aggiungere, modificare o rimuovere l'immagine del profilo. Ad esempio, se un utente carica un'immagine del profilo approvata dal reparto IT o HR dell'organizzazione, non è necessaria alcuna azione. Tuttavia, se un utente carica un'immagine non appropriata, cambia l'immagine in base ai criteri interni dell'organizzazione.
+<sup>7</sup> teams onora l'impostazione di [Outlook sul criterio delle cassette postali Web](https://docs.microsoft.com/powershell/module/exchange/client-access/set-owamailboxpolicy) configurata dagli amministratori del tenant per controllare se gli utenti possono modificare l'immagine del profilo. Se l'impostazione **-SetPhotoEnabled** è disattivata nel criterio, gli utenti non possono aggiungere, modificare o rimuovere l'immagine del profilo. Ad esempio, se un utente carica un'immagine del profilo approvata dal reparto IT o HR dell'organizzazione, non è necessaria alcuna azione. Tuttavia, se un utente carica un'immagine non appropriata, cambia l'immagine in base ai criteri interni dell'organizzazione.
 
 ## <a name="requirements-to-get-the-most-out-of-microsoft-teams"></a>Requisiti per ottenere il massimo da Microsoft Teams
 

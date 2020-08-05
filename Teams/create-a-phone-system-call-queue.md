@@ -23,12 +23,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare il sistema telefonico per le code di chiamate cloud con Microsoft teams, che offre un messaggio di saluto, tenere premuto musica, reindirizzare le chiamate e altre funzionalità.
-ms.openlocfilehash: dd11e33e4947ea231310b06af2570711d55b2451
-ms.sourcegitcommit: c8b5d4dd70d183f7ca480fb735a19290a3457b30
+ms.openlocfilehash: f0631eece5b8f67cd93c46b34c56bb2283826c3f
+ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45077716"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46556641"
 ---
 # <a name="create-a-cloud-call-queue"></a>Creare una coda di chiamata cloud
 
@@ -203,6 +203,10 @@ Una volta abilitata la modalità conferenza in una coda di chiamata, le chiamate
 
 La maggior parte delle chiamate viene ricevuta tramite uno dei metodi elencati sopra. Se una chiamata viene ricevuta tramite un altro metodo, ad esempio una chiamata VoIP da un client Skype for business, la chiamata verrà comunque aggiunta alla coda di chiamata, ma non trarrà vantaggio dal tempo di connessione più rapido.
 
+> [!NOTE]
+> Occupato in occupato non è supportato dalla modalità conferenza. Gli agenti sulle chiamate di coda non di chiamata potrebbero essere ancora presentati con una chiamata alla coda di chiamata se il routing basato sulla presenza non è abilitato.
+
+
 ![Icona del numero 3, fa riferimento a un callout nel metodo di ](media/teamscallout3.png)
  **routing** dello screenshot precedente è possibile scegliere l' **operatore**, il **seriale**, il **minimo più lungo**o il **Round Robin** come metodo di distribuzione. Tutte le code di chiamata nuove ed esistenti hanno il routing di Attendant selezionato per impostazione predefinita. Quando viene usato il routing di Attendant, la prima chiamata nella coda squilla tutti gli agenti di chiamata contemporaneamente. Il primo agente di chiamata a prendere la chiamata riceve la chiamata.
 
@@ -274,9 +278,7 @@ L'impostazione predefinita è 30 secondi, ma può essere impostata per un massim
 - **Disconnetti** La chiamata è disconnessa.
 - **Reindirizza a** Quando si sceglie questo pulsante, selezionare una delle opzioni seguenti:
 
-  - **Persona nell'organizzazione** Un utente online con una licenza di sistema telefonico ed essere abilitato per VoIP aziendale o avere un piano per le chiamate. È possibile configurarlo in modo che il chiamante possa essere inviato alla segreteria telefonica. A questo scopo, seleziona una persona nell'organizzazione e imposta questa persona per inoltrare le chiamate direttamente alla segreteria telefonica.
-
-  Per informazioni sulle licenze necessarie per la segreteria telefonica, vedere [configurare la segreteria telefonica cloud](set-up-phone-system-voicemail.md).
+  - **Persona nell'organizzazione** Un utente online con una licenza di sistema telefonico ed è abilitato per VoIP aziendale o ha un piano per le chiamate.
 
   - **App vocale** Selezionare il nome di un account di risorsa associato a una coda di chiamata o a un operatore automatico già creato.
 
@@ -291,6 +293,13 @@ L'impostazione predefinita è 30 secondi, ma può essere impostata per un massim
             - Se impostato su disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
             - Se impostato su abilitato, viene visualizzato il numero di telefono dell'account risorse.
     - I trasferimenti tra Trunks del piano chiamante e trunk di routing diretto non sono supportati.
+  - **Segreteria telefonica** Selezionare il gruppo Microsoft 365 che contiene gli utenti dell'organizzazione che devono accedere alla segreteria telefonica ricevuta dalla coda di chiamata e quindi selezionare una delle opzioni seguenti:
+      - **Riprodurre un file audio** Se si sceglie questa opzione, selezionare **Carica file** per caricare un messaggio di saluto registrato. La registrazione non può essere superiore a 5 MB. 
+      - **Digitare un messaggio di saluto** Se si sceglie questa opzione, immettere il testo da leggere per il sistema (fino a 1000 caratteri). Ad esempio, puoi digitare "Mi dispiace che non possiamo prendere la tua chiamata in questo momento. Lasciare il nome, il numero di telefono e la ragione per la chiamata dopo il bip. "
+
+      Attivare la trascrizione se si vuole abilitare la trascrizione vocale dei messaggi della segreteria telefonica.
+
+      I messaggi della segreteria telefonica vengono inviati al gruppo Microsoft 365 specificato. Per accedere ai messaggi della segreteria telefonica, i membri del gruppo possono aprirli passando al gruppo in Outlook.
 
 * * *
 
@@ -304,9 +313,7 @@ Puoi impostare il valore di timeout in secondi, a intervalli di 15 secondi. In q
 
 - **Disconnetti** La chiamata è disconnessa.
 - **Reindirizzare la chiamata a** Quando si sceglie questa opzione, sono disponibili le opzioni seguenti:
-  - **Persona nell'organizzazione** Un utente online con una licenza di sistema telefonico ed essere abilitato per VoIP aziendale o per avere piani di chiamata. Per configurarlo in modo che la persona che chiama può essere inviata alla segreteria telefonica, selezionare una persona nell'organizzazione e impostare questa persona per inoltrare le chiamate direttamente alla segreteria telefonica.
-
-  Per informazioni sulle licenze necessarie per la segreteria telefonica, vedere [configurare la segreteria telefonica cloud](set-up-phone-system-voicemail.md).
+  - **Persona nell'organizzazione** Un utente online con una licenza di sistema telefonico e abilitato per VoIP aziendale o per i piani di chiamata.
 
   - **App vocale** Selezionare il nome di un account di risorsa associato a una coda di chiamata o a un operatore automatico già creato.
 
@@ -321,6 +328,13 @@ Puoi impostare il valore di timeout in secondi, a intervalli di 15 secondi. In q
             - Se impostato su disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
             - Se impostato su abilitato, viene visualizzato il numero di telefono dell'account risorse.
     - I trasferimenti tra Trunks del piano chiamante e trunk di routing diretto non sono supportati.
+    - **Segreteria telefonica** Selezionare il gruppo Microsoft 365 che contiene gli utenti dell'organizzazione che devono accedere alla segreteria telefonica ricevuta dalla coda di chiamata e quindi selezionare una delle opzioni seguenti:
+      - **Riprodurre un file audio** Se si sceglie questa opzione, selezionare **Carica file** per caricare un messaggio di saluto registrato. La registrazione non può essere superiore a 5 MB.
+      - **Digitare un messaggio di saluto** Se si sceglie questa opzione, immettere il testo da leggere per il sistema (fino a 1000 caratteri). Ad esempio, puoi digitare "Mi dispiace che non possiamo prendere la tua chiamata in questo momento. Lasciare il nome, il numero di telefono e la ragione per la chiamata dopo il bip. "
+
+      Attivare la trascrizione se si vuole abilitare la trascrizione vocale dei messaggi della segreteria telefonica.
+
+      I messaggi della segreteria telefonica vengono inviati al gruppo Microsoft 365 specificato. Per accedere ai messaggi della segreteria telefonica, i membri del gruppo possono aprirli passando al gruppo in Outlook.
 
 ## <a name="change-caller-id-for-outbound-calls"></a>Modificare l'ID chiamante per le chiamate in uscita
 

@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d38b0adf1a342c4398d2779e2f0b5ec3aa310144
-ms.sourcegitcommit: 3e5cac88911611c94c0330bf50af9c34db308cdf
+ms.openlocfilehash: 4305f8f03f806be1a453e037620c6e16e71ac4dc
+ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45372005"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552264"
 ---
 <a name="microsoft-teams-guest-access-checklist"></a>Elenco di controllo per l'accesso guest in Microsoft Teams
 =========================================
@@ -123,6 +123,16 @@ Nell'applicazione Teams, a livello di singolo team, configurare le autorizzazion
 ![Screenshot che mostra un esempio di interruttore impostazioni di team/canale](media/guest-access-checklist-TeamsSettings2.png)
 
 Per altre informazioni sull'accesso guest, vedere [Accesso guest in Teams](guest-access.md) e [Attivare o disattivare l'accesso guest a Microsoft Teams](set-up-guests.md).
+
+## <a name="step-7-turn-on-anonymous-users-can-join-a-meeting-if-you-want-guests-to-join-meetings"></a>Passaggio 7: attivare "gli utenti anonimi possono partecipare a una riunione" Se si vuole che gli ospiti partecipino alle riunioni
+
+Se si vuole che gli ospiti partecipino alle riunioni, attivare gli **utenti anonimi possono partecipare a un'** impostazione di riunione nell'interfaccia di amministrazione di Microsoft teams. 
+
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams **Meetings**passa a  >  **Impostazioni riunione**riunioni.
+
+2. In **Partecipanti**, attivare **Gli utenti anonimi possono partecipare a una riunione**.
+
+Per altre informazioni, vedere [gestire le impostazioni delle riunioni in teams](meeting-settings-in-teams.md). 
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 

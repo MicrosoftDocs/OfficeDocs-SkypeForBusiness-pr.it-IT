@@ -16,12 +16,12 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c47ca6105b1d497bbba391856bfc190ea88fb47f
-ms.sourcegitcommit: 3e5cac88911611c94c0330bf50af9c34db308cdf
+ms.openlocfilehash: 233e26042c66e96f5611b9f3997684404353453d
+ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45372035"
+ms.lasthandoff: 08/04/2020
+ms.locfileid: "46552274"
 ---
 # <a name="plan-location-based-routing-for-direct-routing"></a>Pianificare l'instradamento basato sulla posizione per Instradamento diretto
 
@@ -30,12 +30,17 @@ ms.locfileid: "45372035"
 In alcuni paesi e aree geografiche è vietato aggirare il provider PSTN (Public Switched Telephone Network) per ridurre i costi delle chiamate interurbane. Questo articolo descrive come usare il routing basato sulla posizione per limitare l'esclusione dei pedaggi per gli utenti di Microsoft teams in base alla loro posizione geografica. Questo articolo si applica solo al routing diretto del sistema telefonico.
 
 In questa sezione verrà visualizzata una panoramica del routing basato sulla posizione e delle indicazioni utili per pianificare la pianificazione. Quando si è pronti per applicare e abilitare il routing basato sulla posizione, vedere:
+
 - [Distribuire le impostazioni di rete per il routing basato sulla posizione](location-based-routing-configure-network-settings.md)
 - [Abilitare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-enable.md)
 
-Il routing basato sulla posizione è una caratteristica che consente di limitare l'esclusione dei pedaggi in base ai criteri e alla posizione geografica dell'utente al momento della chiamata PSTN in ingresso o in uscita. 
+> [!NOTE]
+> Il routing basato sulla posizione non è disponibile nelle distribuzioni di Microsoft 365 Government community Cloud (GCC).
+
+Il routing basato sulla posizione è una caratteristica che consente di limitare l'esclusione dei pedaggi in base ai criteri e alla posizione geografica dell'utente al momento della chiamata PSTN in ingresso o in uscita. Il routing basato sulla posizione è destinato a creare un meccanismo per evitare l'esclusione del pedaggio. Non dovrebbe essere usato come meccanismo per instradare in modo dinamico le chiamate PSTN in base alla posizione dell'utente o potrebbero verificarsi conseguenze indesiderate.
 
 Quando un utente di teams è abilitato per il routing basato sulla posizione, si applicano le operazioni seguenti:
+
 - Per effettuare una chiamata PSTN in uscita, una delle operazioni seguenti deve essere vera:
     - L'endpoint dell'utente si trova in un sito di rete abilitato per il routing basato sulla posizione e chiama l'uscita tramite il gateway corrispondente abilitato per il routing basato sulla posizione. 
     - L'endpoint dell'utente si trova in un sito di rete non abilitato per il routing basato sulla posizione e chiama l'uscita tramite un gateway non abilitato per il routing basato sulla posizione.
