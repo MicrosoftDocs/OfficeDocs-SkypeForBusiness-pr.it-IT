@@ -16,12 +16,12 @@ f1.keywords:
 description: Configurare l'ottimizzazione multimediale locale per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e53f9156b6ab6d33223c9b1d3e11a604ba0c1c31
-ms.sourcegitcommit: 113e3a7314505cf78da57917ff62642125fb11fd
+ms.openlocfilehash: ecbbb4f01267265f9f1041e7d51652d063ced353
+ms.sourcegitcommit: 2aea6ec07149a3054ee4434c8a0bffabf1a16d25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2020
-ms.locfileid: "45121606"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46576988"
 ---
 # <a name="configure-local-media-optimization-for-direct-routing"></a>Configurare l'ottimizzazione multimediale locale per il routing diretto
 
@@ -57,7 +57,7 @@ Questo articolo descrive la configurazione per i componenti Microsoft. Per infor
 L'ottimizzazione media locale è supportata dai seguenti fornitori di SBC:
 
 | Fornitore | Prodotto |    Versione software |
-|:------------|:-------|:-------| :-------|
+|:------------|:-------|:-------|
 | [AudioCodes](https://www.audiocodes.com/media/13253/connecting-audiocodes-sbc-to-microsoft-teams-direct-routing-enterprise-model-configuration-note.pdf) |    SBC 500 medium |   7.20 a. 256 | 
 |            |  SBC 800 Medium |   7.20 a. 256 | 
 |            |  SBC 2600 medium |  7.20 a. 256 | 
@@ -71,7 +71,9 @@ L'ottimizzazione media locale è supportata dai seguenti fornitori di SBC:
 |            |  SBC 5400         | 8,2  |
 |            |  SBC 7000         | 8,2  |
 |            |  SBC SWe          | 8,2  |
-| [Bordo SBC della barra multifunzione](https://support.sonus.net/display/UXDOC81/Best+Practice+-+Configuring+Microsoft+Teams+Local+Media+Optimization)  |  SBC SWe Lite | 8.1.5 (Build 239) |
+| [Bordo SBC della barra multifunzione](https://support.sonus.net/display/UXDOC81/Best+Practice+-+Configuring+Microsoft+Teams+Local+Media+Optimization)  |  SBC SWe Lite | 8.1.5 |
+|               | SBC 1000 | 8.1.5  |
+|               | SBC 2000 | 8.1.5  |
 | [TE-SYSTEMS](https://www.anynode.de/local_media_optimization/) |  anynode          | 4.0.1 + |
 | [Oracle](https://www.oracle.com/industries/communications/enterprise-communications/session-border-controller/microsoft.html) | AP 1100 | 8.4.0.0.0 |
 |        | AP 3900 | 8.4.0.0.0 |

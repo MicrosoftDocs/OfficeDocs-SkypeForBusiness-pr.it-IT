@@ -15,12 +15,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Vedere quali periferiche e dispositivi USB, ad esempio auricolari, vivavoce, webcam e monitor, sono certificati per Microsoft teams.
-ms.openlocfilehash: 14565d34b8e03095f7484fe89b0d303a8a0790bc
-ms.sourcegitcommit: 98760985712d3cccefd0378964a26324677cf777
+ms.openlocfilehash: 3b92c41745027987ec3f03272fd10077c6302c49
+ms.sourcegitcommit: b14ad0a6c454b20f34fccbd1d312de24379faef0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45166744"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46572261"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -78,8 +78,15 @@ Se si è un produttore e si vuole partecipare al programma di certificazione, ve
 
 | Produttore        | Modello                                                     | Completo      | Programma certificato                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
-|Bose                 |Auricolare NC 700                                             |6/8/2020        |Certificato per Microsoft Teams|
-|Jabra              | Altoparlante Speak 750 con dongle USB Jabra link 370       | 5/21/2020 | Certificato per Microsoft Teams|
+|ViewSonic            |WCD-IFP8670                                                |7/31/2020       |Certificato per Skype for business                        |
+|ViewSonic            |WCD-IFP6570                                               |7/31/2020       |Certificato per Skype for business                        |
+|Jabra                |Attivare l'auricolare 75                                          |7/31/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
+|Jabra                |Attivare l'auricolare 65                                          |7/31/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
+|Jabra                |Attivare l'auricolare 50                                          |7/31/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
+|Avocor               |WCD-AVW-6555                                              |7/30/2020       |Certificato per Microsoft Teams                           |
+|Jabra                |Evolve2 85 Headset                                         |7/17/2020       |Certificato per Microsoft Teams                           |
+|Bose                 |Auricolare NC 700                                             |6/8/2020        |Certificato per Microsoft Teams                           |
+|Jabra                | Altoparlante Speak 750 con dongle USB Jabra link 370     | 5/21/2020       | Certificato per Microsoft Teams                         |
 | EPOS                | Auricolare Sennheiser ADAPT 660                              | 5/15/2020      | Certificato per Microsoft Teams                          |
 | EPOS                | Auricolare Sennheiser ADAPT 560                              | 5/15/2020      | Certificato per Microsoft Teams                          |
 | EPOS                | Auricolare Sennheiser ADAPT 460T                             | 5/15/2020      | Certificato per Microsoft Teams                          |

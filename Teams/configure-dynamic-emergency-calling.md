@@ -17,12 +17,12 @@ description: Informazioni su come configurare i piani di chiamata Microsoft e il
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 27ee8dd17b3948d373b5a6c13a210d298ee10d8c
-ms.sourcegitcommit: a22a7b7e4bf556ee3e5e2e51c6f9f1c865a0724a
+ms.openlocfilehash: 1b0cfe260a2d7e159c4adfad31d5266ed5f924d5
+ms.sourcegitcommit: 2aea6ec07149a3054ee4434c8a0bffabf1a16d25
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45083156"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46576928"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -75,6 +75,9 @@ I client seguenti sono attualmente supportati.  Controlla spesso per vedere gli 
 - Client di teams per dispositivi mobili per client Android e Google Play Store versione 1416/1.0.0.2019121201 e versioni successive
 - Telefono teams versione 1449/1.0.94.2019110802 e versioni successive
 - Teams Rooms versione 4.4.25.0 e versioni successive
+
+> [!NOTE]
+> Le chiamate di emergenza dinamiche, inclusa la notifica di Security desk, non sono supportate nel client Web teams. Per impedire agli utenti di usare il client Web teams per chiamare i numeri PSTN, è possibile impostare un criterio per la chiamata di team e disattivare l'impostazione **Consenti chiamate PSTN Web** . Per altre informazioni, vedere [chiamare i criteri in teams](teams-calling-policy.md) e [set-CsTeamsCallingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps).
 
 ## <a name="assign-emergency-addresses"></a>Assegnare indirizzi di emergenza
 

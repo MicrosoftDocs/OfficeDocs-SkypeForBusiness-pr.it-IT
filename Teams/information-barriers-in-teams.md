@@ -1,7 +1,7 @@
 ---
 title: Barriere informative in Microsoft Teams
 author: chrfox
-ms.author: chrfox
+ms.author: anwara
 manager: laurawi
 ms.topic: article
 ms.service: msteams
@@ -16,12 +16,12 @@ description: In questo articolo vengono illustrati gli ostacoli alle informazion
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 29a9ac9d80e4c729dc6c040c1a7ec7fdc5eaa7d7
-ms.sourcegitcommit: a5276a713697e089d0eb0d80bba83a7af8d48251
+ms.openlocfilehash: 585cff9e8eb99a736b25e4ee0463ce4783c01ad1
+ms.sourcegitcommit: b14ad0a6c454b20f34fccbd1d312de24379faef0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45202912"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46572381"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -177,6 +177,9 @@ Per altre informazioni, fare clic [qui](https://docs.microsoft.com/sharepoint/in
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 
 Per altri dettagli, inclusi i piani e i prezzi, vedere indicazioni per le [licenze](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+
+## <a name="known-issues"></a>Problemi noti
+- **Gli utenti non possono partecipare alle riunioni**: se i criteri IB sono abilitati, gli utenti non possono partecipare alle riunioni se la dimensione del roster delle riunioni è superiore a 250 utenti. La causa principale è che i controlli IB si basano sul fatto che gli utenti possano essere aggiunti a un roster della chat di riunione e che prenda il segnale per consentire agli utenti di partecipare alle riunioni. Partecipare a una riunione una volta aggiungerà l'utente al roster, quindi per le riunioni ricorrenti, il roster si riempie velocemente. Dopo aver raggiunto un numero di utenti di 250, non è consentito aggiungere altri utenti al roster della chat di riunione. Se IB è abilitato, gli utenti non possono partecipare alla riunione, ma se IB non è abilitato, gli utenti possono partecipare alla riunione, anche se non verranno aggiunti al roster della chat di riunione. Una soluzione a breve termine consiste nel rimuovere i membri inattivi dal roster della chat di riunione per creare spazio per i nuovi utenti. Le dimensioni dei roster della chat di riunione verranno comunque aumentate in un secondo momento.
 
 ## <a name="more-information"></a>Ulteriori informazioni
 

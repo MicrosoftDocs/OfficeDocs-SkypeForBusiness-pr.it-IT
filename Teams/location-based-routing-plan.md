@@ -16,12 +16,12 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 233e26042c66e96f5611b9f3997684404353453d
-ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
+ms.openlocfilehash: 3ab779c7b60ab702284c871ab6bd0ec08d051267
+ms.sourcegitcommit: b14ad0a6c454b20f34fccbd1d312de24379faef0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552274"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46572241"
 ---
 # <a name="plan-location-based-routing-for-direct-routing"></a>Pianificare l'instradamento basato sulla posizione per Instradamento diretto
 
@@ -35,7 +35,7 @@ In questa sezione verrà visualizzata una panoramica del routing basato sulla po
 - [Abilitare l'instradamento basato sulla posizione per Instradamento diretto](location-based-routing-enable.md)
 
 > [!NOTE]
-> Il routing basato sulla posizione non è disponibile nelle distribuzioni di Microsoft 365 Government community Cloud (GCC).
+> Il routing basato sulla posizione non è disponibile nelle distribuzioni High o DoD di Microsoft 365 Government community Cloud (GCC).
 
 Il routing basato sulla posizione è una caratteristica che consente di limitare l'esclusione dei pedaggi in base ai criteri e alla posizione geografica dell'utente al momento della chiamata PSTN in ingresso o in uscita. Il routing basato sulla posizione è destinato a creare un meccanismo per evitare l'esclusione del pedaggio. Non dovrebbe essere usato come meccanismo per instradare in modo dinamico le chiamate PSTN in base alla posizione dell'utente o potrebbero verificarsi conseguenze indesiderate.
 
