@@ -660,6 +660,7 @@
 ### [Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario](expand-teams-across-your-org/healthcare/healthcare-templates.md)
 ### [Guida introduttiva a Messaggistica protetta per le organizzazioni del settore sanitario](expand-teams-across-your-org/healthcare/messaging-policies-hc.md)
 ### [Delega messaggi](expand-teams-across-your-org/healthcare/hc-delegates.md)
+### [Pacchetti di criteri di Teams per il settore sanitario](policy-packages-healthcare.md)
 ### [Panoramica dell'app Pazienti](expand-teams-across-your-org/healthcare/patients-app-overview.md)
 #### [Integrare cartelle cliniche elettroniche in Microsoft Teams](expand-teams-across-your-org/healthcare/patients-app.md)
 ##### [Specifica dell'interfaccia DSTU2](expand-teams-across-your-org/healthcare/dstu2-interface.md)
