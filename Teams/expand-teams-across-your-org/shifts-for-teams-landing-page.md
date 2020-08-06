@@ -1,8 +1,7 @@
 ---
 title: Turni per Teams
 description: Ottenere le indicazioni per l'amministratore necessarie per configurare e gestire i turni, lo strumento di Gestione pianificazione in teams.
-layout: LandingPage
-ms.topic: landing-page
+ms.topic: conceptual
 author: lanachin
 ms.author: v-lanac
 audience: admin
@@ -17,177 +16,33 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5ba2118defb86ac6b957ac181c9a02afc5eed82f
-ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
+ms.openlocfilehash: 58b08faf39613d22747c16d04ead292e4242933b
+ms.sourcegitcommit: b14ad0a6c454b20f34fccbd1d312de24379faef0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44610280"
+ms.lasthandoff: 08/05/2020
+ms.locfileid: "46572308"
 ---
-# <a name="shifts-for-teams"></a>Turni per Teams
+# <a name="shifts-for-teams"></a><span data-ttu-id="c21c4-103">Turni per Teams</span><span class="sxs-lookup"><span data-stu-id="c21c4-103">Shifts for Teams</span></span>
 
-Teams offre agli operatori I FIRSTLINE dell'organizzazione gli strumenti necessari per comunicare e collaborare efficacemente e svolgere il loro lavoro migliore. Qui troverai le indicazioni per gli amministratori che ti servono per configurare e gestire i turni, lo strumento di Gestione pianificazione, in teams.
+<span data-ttu-id="c21c4-104">Teams offre agli operatori I FIRSTLINE dell'organizzazione gli strumenti necessari per comunicare e collaborare efficacemente e svolgere il loro lavoro migliore.</span><span class="sxs-lookup"><span data-stu-id="c21c4-104">Teams gives Firstline Workers in your organization the tools they need to communicate and collaborate effectively and do their best work.</span></span> <span data-ttu-id="c21c4-105">Qui troverai le indicazioni per gli amministratori che ti servono per configurare e gestire i turni, lo strumento di Gestione pianificazione, in teams.</span><span class="sxs-lookup"><span data-stu-id="c21c4-105">Here you'll find the admin guidance you need to set up and manage Shifts, the schedule management tool, in Teams.</span></span>
 
-### <a name="set-up-and-manage-shifts-for-your-organization"></a>Configurare e gestire i turni per l'organizzazione
+### <a name="set-up-and-manage-shifts-for-your-organization"></a><span data-ttu-id="c21c4-106">Configurare e gestire i turni per l'organizzazione</span><span class="sxs-lookup"><span data-stu-id="c21c4-106">Set up and manage Shifts for your organization</span></span>
 
-<ul class="panelContent cardsF">
-    <li>
-        <a href="https://docs.microsoft.com/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/task-checklist-planning-teams.svg" alt="A checklist icon depicting managing shifts" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Gestire i turni nell'organizzazione</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b#PickTab=Specific_apps">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/Help.svg" alt="A question mark icon depicting help" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Sposta la guida per gli operatori di I FIRSTLINE</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+|               |               |               |               |
+| ------------- | ------------- | ------------- | ------------- |
+|![attività-elenco di controllo-pianificazione-Teams](../media/task-checklist-planning-teams-small.svg) | <span data-ttu-id="c21c4-108">**[Gestire i turni nell'organizzazione](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams)**</span><span class="sxs-lookup"><span data-stu-id="c21c4-108">**[Manage Shifts in your organization](/microsoftteams/expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams)**</span></span> |![progettazione](../media/Help-small.svg)  | <span data-ttu-id="c21c4-110">**[Sposta la guida per gli operatori di I FIRSTLINE](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b#PickTab=Specific_apps)**</span><span class="sxs-lookup"><span data-stu-id="c21c4-110">**[Shifts Help for Firstline Workers](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b#PickTab=Specific_apps)**</span></span> |
 
-### <a name="shifts-extensions"></a>Estensioni di turni
+### <a name="shifts-extensions"></a><span data-ttu-id="c21c4-111">Estensioni di turni</span><span class="sxs-lookup"><span data-stu-id="c21c4-111">Shifts extensions</span></span>
 
-<ul class="panelContent cardsF">
-    <li>
-        <a href="https://docs.microsoft.com/graph/api/resources/shift?view=graph-rest-1.0">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/api.svg" alt="Three gears - API"/>
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>API di Shift Graph</h3>
-                        <p>Le API shifts Graph permettono di integrare i dati di turni con i sistemi di gestione della manodopera esterna, offrendoti la flessibilità necessaria per creare esperienze personalizzate di turni nel back-end, offrendo agli utenti un'esperienza di front-end completa in teams.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://github.com/OfficeDev/Microsoft-Teams-Shifts-WFM-Connectors">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/api.svg" alt="Three gears - API"/>
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Integrazioni della gestione della forza lavoro</h3>
-                        <p>Se si usano sistemi di gestione della forza lavoro di terze parti, ad esempio Kronos e JDA, per la pianificazione, l'ora e la presenza, è possibile integrare direttamente i turni attraverso le API del grafico turni e l'SDK con le integrazioni open source.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-   <li>
-        <a href="https://github.com/OfficeDev/Microsoft-Teams-Shifts-Power-Automate-Templates">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/process-flow-teams.svg" alt="Process/flow chart symbol"/>
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Turni + automatizzazione della potenza</h3>
-                        <p>Turni + Power Automate consente di ottenere informazioni da turni e creare flussi di lavoro personalizzati con altre app ed eseguire operazioni su scala. Automatizzare i processi chiave con codice poco o niente. I trigger e i modelli supportano diversi scenari, ad esempio l'abilitazione dell'approvazione automatica per le richieste di spostamento quando l'approvazione di un Manager non è necessaria.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+|               |               |
+| ------------- | ------------- |
+| ![API](../media/api-small.svg) | <span data-ttu-id="c21c4-113">**[API di Shift Graph](/graph/api/resources/shift?view=graph-rest-1.0)** Le API shifts Graph permettono di integrare i dati di turni con i sistemi di gestione della manodopera esterna, offrendoti la flessibilità necessaria per creare esperienze personalizzate di turni nel back-end, offrendo agli utenti un'esperienza di front-end completa in teams.</span><span class="sxs-lookup"><span data-stu-id="c21c4-113">**[Shift Graph APIs](/graph/api/resources/shift?view=graph-rest-1.0)** Shifts Graph APIs allow you to integrate Shifts data with external workforce management systems, providing you the flexibility to build custom Shifts experiences in the back end, while giving users a rich, front-end experience in Teams.</span></span>             |
+| ![API](../media/api-small.svg) | <span data-ttu-id="c21c4-115">**[Integrazioni della gestione della forza lavoro](https://github.com/OfficeDev/Microsoft-Teams-Shifts-WFM-Connectors)** Se si usano sistemi di gestione della forza lavoro di terze parti, ad esempio Kronos e JDA, per la pianificazione, l'ora e la presenza, è possibile integrare direttamente i turni attraverso le API del grafico turni e l'SDK con le integrazioni open source.</span><span class="sxs-lookup"><span data-stu-id="c21c4-115">**[Workforce management integrations](https://github.com/OfficeDev/Microsoft-Teams-Shifts-WFM-Connectors)** If you're using third-party workforce management systems, such as Kronos and JDA, for scheduling, time, and attendance, you can integrate directly with Shifts through Shifts Graph APIs and SDK with open source integrations.</span></span> |
+| ![API](../media/process-flow-teams-small.svg) | <span data-ttu-id="c21c4-117">**[Turni + automatizzazione della potenza](https://github.com/OfficeDev/Microsoft-Teams-Shifts-Power-Automate-Templates)** Turni + Power Automate consente di ottenere informazioni da turni e creare flussi di lavoro personalizzati con altre app ed eseguire operazioni su scala.</span><span class="sxs-lookup"><span data-stu-id="c21c4-117">**[Shifts + Power Automate](https://github.com/OfficeDev/Microsoft-Teams-Shifts-Power-Automate-Templates)** Shifts + Power Automate lets you take info from Shifts and create custom workflows with other apps and perform operations at scale.</span></span> <span data-ttu-id="c21c4-118">Automatizzare i processi chiave con codice poco o niente.</span><span class="sxs-lookup"><span data-stu-id="c21c4-118">Automate key processes with little to no code.</span></span> <span data-ttu-id="c21c4-119">I trigger e i modelli supportano diversi scenari, ad esempio l'abilitazione dell'approvazione automatica per le richieste di spostamento quando l'approvazione di un Manager non è necessaria.</span><span class="sxs-lookup"><span data-stu-id="c21c4-119">The triggers and templates support a variety of scenarios such as enabling auto-approvals for shift requests when a manager’s approval isn't needed.</span></span> |
 
----
+## <a name="featured-training"></a><span data-ttu-id="c21c4-120">Formazione in primo piano</span><span class="sxs-lookup"><span data-stu-id="c21c4-120">Featured training</span></span>
 
-## <a name="featured-training"></a>Formazione in primo piano
-
-<ul class="panelContent cardsFTitle">
-    <li>
-        <a href="https://support.office.com/article/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/arrow-right-2-teams.svg" alt="An arrow icon representing quick start" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Video: che cos'è shifts?</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-    <li>
-        <a href="https://support.office.com/article/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/clock-teams.svg" alt="An icon representing an analog clock" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Video: creare una pianificazione di turni</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-        <li>
-        <a href="https://support.office.com/article/manage-a-shifts-schedule-63acda7b-ea39-441a-b1c6-c404a72e79f7">
-        <div class="cardSize">
-            <div class="cardPadding">
-                <div class="card">
-                    <div class="cardImageOuter">
-                        <div class="cardImage">
-                            <img src="https://docs.microsoft.com/office/media/icons/blocks-teams.svg" alt="A building blocks icon" />
-                        </div>
-                    </div>
-                    <div class="cardText">
-                        <h3>Video: gestire una programmazione turni</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </a>
-    </li>
-</ul>
+|               |               |               |               |               |               |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| ![freccia destra-2-teams](../media/arrow-right-2-teams-small.svg)  |  [<span data-ttu-id="c21c4-122">Video: che cos'è shifts?</span><span class="sxs-lookup"><span data-stu-id="c21c4-122">Video: What is Shifts?</span></span>](https://support.office.com/article/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |![Clock-Teams](../media/clock-teams-small.svg)  |  [<span data-ttu-id="c21c4-124">Video: che cos'è shifts?</span><span class="sxs-lookup"><span data-stu-id="c21c4-124">Video: What is Shifts?</span></span>](https://support.office.com/article/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984) |![blocchi-Teams](../media/blocks-teams-small.svg)  |  [<span data-ttu-id="c21c4-126">Video: gestire una programmazione turni</span><span class="sxs-lookup"><span data-stu-id="c21c4-126">Video: Manage a Shifts schedule</span></span>](https://support.office.com/article/manage-a-shifts-schedule-63acda7b-ea39-441a-b1c6-c404a72e79f7) |
