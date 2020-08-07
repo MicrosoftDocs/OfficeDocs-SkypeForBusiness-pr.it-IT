@@ -4,7 +4,7 @@ Teams supporta completamente i browser Internet seguenti, con le eccezioni segna
 |Browser  |Chiamate: audio, video e condivisione  |Riunioni: audio, video e condivisione <sup>1</sup> <sup>2</sup> <sup>3</sup>  |
 |---------|---------|---------|
 |Internet Explorer 11     |Non supportato         |Le riunioni sono supportate solo se includono le coordinate PSTN. Per partecipare a una riunione in Internet Explorer 11 senza coordinate PSTN, gli utenti devono scaricare il client desktop di Teams.<br><br>Video: non supportato<br><br>Condivisione: solo condivisione in entrata (non in uscita)     |
-|Microsoft Edge, RS2 o versioni successive     |Completamente supportato, tranne la condivisione in uscita         |Completamente supportato, tranne la condivisione in uscita         |
+|Microsoft Edge, RS2 o versioni successive     |Completamente supportato, tranne la condivisione in uscita <sup>4</sup>         |Completamente supportato, tranne la condivisione in uscita         |
 |Microsoft Edge (basato su Chromium), l'ultima versione più due versioni precedenti     | Supporto completo    |Supporto completo         |
 |Google Chrome, l'ultima versione più due versioni precedenti       |Supporto completo |Supporto completo <br> <br>La condivisione è supportata senza plug-in o estensioni in Chrome versione 72 o successiva.       |
 |Safari 13+     |Chiamate 1:1 non supportate. Chiamate di gruppo supportate con supporto completo per l'audio.<br><br>Video: non supportato<br><br>Condivisione: solo condivisione in entrata (non in uscita)         |Le riunioni sono supportate con supporto completo per l'audio.<br><br>Video: non supportato<br><br>Condivisione: solo condivisione in entrata (non in uscita)     |
@@ -16,6 +16,8 @@ Teams supporta completamente i browser Internet seguenti, con le eccezioni segna
 <sup>2</sup> Esegui sfocatura dello sfondo non è disponibile quando si esegue Teams in un browser. Questa funzionalità è disponibile solo per il client desktop di Teams.
 
 <sup>3</sup> Le riunioni di Teams sui browser sono limitate a un singolo feed video in entrata di un interlocutore attivo.
+
+<sup>4</sup> Microsoft Edge RS2 o la versione successiva non supporta l'invio di traffico audio e video in tempo reale tramite proxy HTTP.
 
 > [!NOTE]
 > Se il sistema operativo può eseguire il browser supportato, Teams è supportato nei computer desktop. Ad esempio, eseguendo Firefox nel sistema operativo Linux è possibile usare Teams.
