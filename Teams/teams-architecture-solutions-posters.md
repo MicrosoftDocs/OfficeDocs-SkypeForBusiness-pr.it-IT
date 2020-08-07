@@ -1,7 +1,7 @@
 ---
 title: Poster di soluzioni di telefonia e architettura IT di Microsoft Teams
-ms.author: lolaj
-author: lolajacobsen
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 audience: ITPro
 ms.topic: hub-page
@@ -16,12 +16,12 @@ search.appverid:
 f1.keywords:
 - NOCSH
 description: "Riepilogo: informazioni sull'architettura logica dei servizi di produttività in Microsoft 365, con Microsoft Teams. Sono disponibili inoltre informazioni sulle soluzioni di telefonia per Teams. "
-ms.openlocfilehash: 6518762250e2cd6fadc2bc2b6eb284a4af31edc4
-ms.sourcegitcommit: b5c747e2daad6dd3c1d91f4e61ae6f26db5c77f0
+ms.openlocfilehash: dbf9d5eaff538786125b6414b209692ddf36472f
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2020
-ms.locfileid: "44064501"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46583495"
 ---
 # <a name="microsoft-teams-it-architecture-and-telephony-solutions-posters"></a>Poster di soluzioni di telefonia e architettura IT di Microsoft Teams
 
