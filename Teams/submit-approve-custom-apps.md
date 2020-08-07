@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come approvare le app personalizzate inviate con l'API di invio di app teams in Microsoft teams.
-ms.openlocfilehash: 6efb6a6c1541b7ea7e252b132c0ea891560bbdb6
-ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
+ms.openlocfilehash: 7168a6cf531890a8e942153cc4d214085d6bc63f
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552602"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46583505"
 ---
 # <a name="publish-a-custom-app-submitted-through-the-teams-app-submission-api"></a>Pubblicare un'app personalizzata inviata tramite l'API di invio di app Teams
 
@@ -87,6 +87,12 @@ Per impostazione predefinita, tutti gli utenti dell'organizzazione possono acced
 ### <a name="pin-and-install-the-app-for-users-to-discover"></a>Aggiungere e installare l'app per individuare gli utenti
 
 Per impostazione predefinita, gli utenti possono trovare l'app che devono passare all'App Store dell'organizzazione e cercarla. Per semplificare l'accesso all'app da parte degli utenti, puoi aggiungere l'app alla barra dell'app in teams. A questo scopo, crea un criterio di configurazione dell'app e assegnalo agli utenti. Per altre informazioni, Vedi <a href="https://docs.microsoft.com/microsoftteams/teams-app-setup-policies" target="_blank">gestire i criteri di configurazione delle app in teams</a>.
+
+### <a name="search-the-audit-log-for-teams-app-events"></a>Eseguire ricerche nel log di controllo per gli eventi delle app Teams
+
+È possibile eseguire una ricerca nel log di controllo per visualizzare l'attività delle app teams nell'organizzazione. Per altre informazioni su come eseguire una ricerca nel log di controllo e visualizzare un elenco di attività di Team registrate nel log di controllo, vedere <a href="https://docs.microsoft.com/microsoftteams/audit-log-events" target="_blank">eseguire la ricerca nel log di controllo per gli eventi in teams</a>.
+
+Prima di eseguire una ricerca nel log di controllo, è necessario attivare prima di tutto il controllo nel <a href="https://protection.office.com" target="_blank">centro conformità & sicurezza</a>. Per altre informazioni, vedere <a href="https://support.office.com/article/Turn-Office-365-audit-log-search-on-or-off-e893b19a-660c-41f2-9074-d3631c95a014" target="_blank">attivare o disattivare la ricerca nel log di controllo</a>. Tieni presente che i dati di controllo sono disponibili solo dal momento in cui hai attivato il controllo.
 
 ## <a name="discover-and-adopt"></a>Individuare e adottare
 

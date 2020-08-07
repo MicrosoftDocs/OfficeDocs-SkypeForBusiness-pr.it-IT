@@ -13,16 +13,19 @@ f1.keywords:
 description: Panoramica della soluzione Integrated Contact Center come servizio (CCaaS) per Microsoft Teams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 34f801c19bcbc5479e4e71f520a4d0d437a7b58a
-ms.sourcegitcommit: 95ccfce5016dfda1a59812df446824be21f3f23e
+ms.openlocfilehash: 3f553c29d2a18816053c28c57a6f0f78b818825a
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "45143837"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46583253"
 ---
 # <a name="contact-center-integrations-for-microsoft-teams"></a>Integrazioni di Contact Center per Microsoft Teams
 
 L'integrazione delle più comuni soluzioni di Contact Center con Microsoft teams è una necessità comune per i clienti che implementano le funzionalità di chiamata dei team.  Questo articolo offre una panoramica del modo in cui le soluzioni Contact Center possono essere integrate con Microsoft teams e altre informazioni sulle soluzioni partner che partecipano al programma di certificazione Microsoft teams Connected Contact Center.
+
+> [!NOTE]
+> La funzionalità di integrazione del centro contatti richiede una licenza per comunicazioni avanzate. 
 
 ## <a name="what-is-a-contact-center-integration-for-microsoft-teams"></a>Che cos'è un'integrazione di Contact Center per Microsoft Teams?
 
@@ -38,7 +41,7 @@ Per gli altri utenti che desiderano soluzioni integrate con strumenti aziendali 
 
 ## <a name="connected-contact-center-for-microsoft-teams-certification-program"></a>Centro contatti connesso per il programma di certificazione Microsoft Teams
 
-Oltre a pubblicare le API pubblicamente disponibili per consentire ai partner di sviluppare e integrare soluzioni CCaaS per i team, abbiamo sviluppato il centro contatti connesso per il programma di certificazione Microsoft teams per garantire ai clienti la garanzia che la soluzione di ogni partner sia stata testata e verificata per garantire qualità, compatibilità e affidabilità da soluzioni Microsoft.
+Le API che consentono ai partner di sviluppare e integrare soluzioni CCaaS per i team sono disponibili con la licenza per le comunicazioni avanzate. Abbiamo inoltre sviluppato il centro contatti collegato per Microsoft teams Program per garantire ai clienti la garanzia che la soluzione di ogni partner partecipante sia stata testata e verificata per garantire la qualità, la compatibilità e l'affidabilità che si aspettano da soluzioni Microsoft.
 
 I partner seguenti sono in procinto di certificare la loro soluzione per Microsoft teams e sono pronti per coinvolgere i clienti:
 
@@ -196,8 +199,8 @@ Leggere la tabella seguente per una panoramica dei modelli di integrazione suppo
 </tr>
 <tr class="odd">
 <td>Esperienza di IW/PMI</td>
-<td>Teams</td>
-<td>Teams</td>
+<td>Team</td>
+<td>Team</td>
 <td><p>Teams +</p>
 <p>estensioni</p></td>
 <td><p>Teams +</p>

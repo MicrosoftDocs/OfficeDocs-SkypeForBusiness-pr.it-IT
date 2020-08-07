@@ -1,8 +1,8 @@
 ---
 title: Rispondere alle chiamate all'operatore automatico e alla coda di chiamata
 ms.reviewer: waseemh
-author: LolaJacobsen
-ms.author: lolaj
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 audience: ITPro
 ms.date: 09/20/2018
@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 80400d9e9d7ab1519a15ab299f07896f55342eaf
-ms.sourcegitcommit: a610bfe9c0192432744dfaf8d5ff5c2bb5a16b00
+ms.openlocfilehash: 1ea09e005dea2a89cb23b55a8ac59eaf491df460
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2020
-ms.locfileid: "43190870"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46582823"
 ---
 <a name="answer-auto-attendant-and-call-queue-calls-directly-from-teams"></a>Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams
 ===========================================================
@@ -65,7 +65,7 @@ Per ricevere le chiamate all'operatore automatico e alla coda di chiamata in Mic
 
 ## <a name="related-topics"></a>Argomenti correlati
 
--    [Che cos'è il sistema telefonico in Office 365](what-is-phone-system-in-office-365.md)
+-    [Che cos'è il sistema telefonico in Microsoft 365 o Office 365](what-is-phone-system-in-office-365.md)
 -    [Creare una coda di chiamata cloud](create-a-phone-system-call-queue.md)
 -    [Cosa sono gli operatori automatici cloud?](what-are-phone-system-auto-attendants.md)
 -    [Configurare un operatore automatico cloud](create-a-phone-system-auto-attendant.md)

@@ -1,7 +1,7 @@
 ---
 title: Dimensioni e misure-dashboard qualità chiamata (Call Quality Dashboard)
-ms.author: lolaj
-author: LolaJacobsen
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.reviewer: siunies, mikedav, gageames
 ms.topic: article
@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottenere informazioni dettagliate sulle dimensioni e sulle misure usate dal dashboard qualità chiamata (Call Quality Dashboard) per Microsoft teams e Skype for business online.
-ms.openlocfilehash: 1625a7fcb0de0c2e5ad8586b0985ddb61de5e75b
-ms.sourcegitcommit: 3e5cac88911611c94c0330bf50af9c34db308cdf
+ms.openlocfilehash: 9398c7861be3b87e0d181c979ffb0046dbfdf695
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45372135"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46583945"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili nel dashboard qualità chiamata (Call Quality Dashboard)
 

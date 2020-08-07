@@ -1,7 +1,7 @@
 ---
 title: Usare le schede predefinite e personalizzate in Microsoft Teams
-author: LolaJacobsen
-ms.author: lolaj
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.date: 06/20/2019
 ms.topic: article
@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni su come usare le schede predefinite e personalizzate per includere funzionalità come le conversazioni, i file, le mappe e altro ancora.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e542b1370cdd03fb0c39c5bf471df58ec0c7e989
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: 8ed9b1048eae307eaba0dcb5463cee15dac981db
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824694"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46581357"
 ---
 <a name="use-built-in-and-custom-tabs-in-microsoft-teams"></a>Usare le schede predefinite e personalizzate in Microsoft Teams
 ==================================================
@@ -41,7 +41,7 @@ I proprietari e i membri del team possono aggiungere schede a un canale, una cha
 
     ![Screenshot delle linguette in una chat.](media/Use_built-in_and_custom_tabs_add_tabs_to_a_chat.png)
 
-- I proprietari e i membri del team possono aggiungere altre schede a un canale o una chat facendo clic su **Aggiungi una scheda** ![screenshot del pulsante Aggiungi una scheda, con un segno +.](media/Use_built-in_and_custom_tabs_add_a_tab_button.png) nella parte superiore del canale o della chat.
+- I proprietari e i membri del team possono aggiungere altre schede a un canale o una chat facendo clic su **Aggiungi una scheda** ![ screenshot del pulsante Aggiungi una scheda, con un segno +.](media/Use_built-in_and_custom_tabs_add_a_tab_button.png) nella parte superiore del canale o della chat.
 
 - I file di Excel, PowerPoint, Word e PDF devono essere caricati nella scheda **file** prima che possano essere convertiti in tabulazioni. Tutti i file caricati esistenti possono essere convertiti in una scheda con un solo clic, come illustrato di seguito.
 

@@ -1,6 +1,6 @@
 ---
 title: Classificazione del flusso nel dashboard qualità chiamata (Call Quality Dashboard)
-ms.author: lolajacobsen
+ms.author: serdarsacobsen
 author: lolaj
 manager: serdars
 ms.reviewer: gageames
@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Optimization
 description: Informazioni sul modo in cui la qualità del flusso è classificata nel dashboard qualità chiamata (Call Quality Dashboard) per Microsoft teams e Skype for business online.
-ms.openlocfilehash: 28c3857f1bf30903e9a59d45e8149f8ecbfc57be
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: 0853b5602525d17f8fd8d440a5275dc2c8ab04a3
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45085892"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46583825"
 ---
 # <a name="stream-classification-in-call-quality-dashboard-cqd"></a>Classificazione del flusso nel dashboard qualità chiamata (Call Quality Dashboard)
 

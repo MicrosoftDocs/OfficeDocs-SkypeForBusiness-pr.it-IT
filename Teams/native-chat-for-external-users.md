@@ -1,7 +1,7 @@
 ---
 title: Esperienza di chat nativa per utenti esterni (federati) in Microsoft Teams
-author: LolaJacobsen
-ms.author: lolaj
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -14,12 +14,12 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 description: Informazioni sull'esperienza di chat di Team native per utenti di Access esterni (federati) in Microsoft teams, disponibile tra utenti esterni in cui entrambi gli utenti si trovano nella modalità di aggiornamento di TeamsOnly.
-ms.openlocfilehash: 1a8cd038f8ff65ea24abb790e564d2cb30ef0ed1
-ms.sourcegitcommit: 44e47c3b2eb44c38cb8d761befdc6c0cef7c61bc
+ms.openlocfilehash: 1274e71f5854e05049c8d766bd3456a0792b1032
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/22/2020
-ms.locfileid: "44842007"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46583845"
 ---
 <a name="native-chat-experience-for-external-federated-users-in-microsoft-teams"></a>Esperienza di chat nativa per utenti esterni (federati) in Microsoft Teams
 ======================================

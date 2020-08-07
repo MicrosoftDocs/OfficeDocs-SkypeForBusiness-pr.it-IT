@@ -17,12 +17,12 @@ description: Informazioni su come usare il report utilizzo eventi di teams Live 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: faf4a19b8a9bcd4b6fbdc2b3fd55882121015da2
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: f9b25fa7c476c9dd3fe347af26fc13742b41d009
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904291"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46583765"
 ---
 # <a name="microsoft-teams-live-event-usage-report"></a>Report sull'utilizzo degli eventi di Microsoft teams Live
 
@@ -30,7 +30,7 @@ Il report utilizzo eventi di teams Live nell'interfaccia di amministrazione di M
 
 ## <a name="view-the-live-event-usage-report"></a>Visualizzare il report sull'utilizzo di eventi dinamici
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** > report**sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo eventi teams Live**.
+1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft teams fare clic su **analisi &** report  >  **sull'utilizzo**dei rapporti. Nella scheda **Visualizza report** , in **report**, selezionare **utilizzo eventi teams Live**.
 2. In **intervallo di date**selezionare un intervallo predefinito o impostare un intervallo personalizzato. È possibile impostare un intervallo in cui visualizzare i dati fino a un anno, sei mesi prima e dopo la data corrente.
 3. Opzionale In **Organizer**puoi scegliere di visualizzare solo gli eventi dinamici organizzati da un utente specifico.
 4. Fare clic su **Esegui report**.  
@@ -46,6 +46,9 @@ Il report utilizzo eventi di teams Live nell'interfaccia di amministrazione di M
 |**3**   |<ul><li>L'asse X nel grafico è l'intervallo di date selezionato per il report.</li> <li> L'asse Y è il numero totale di visualizzazioni.</li> </ul>Posizionare il puntatore del mouse sul punto in una data specifica per visualizzare il numero di visualizzazioni in tutti gli eventi dinamici in tale data.|
 |**4**   |La tabella offre una ripartizione di ogni evento dinamico. <ul><li>L' **evento** è il nome visualizzato dell'evento Live. Fare clic sul nome dell'evento per [ottenere maggiori dettagli](#view-event-details) sull'evento. </li> <li>L' **ora di inizio** si riferisce alla data e all'ora di inizio dell'evento.</li> <li>**Lo stato dell'evento** indica se l'evento è avvenuto.  </li><li>**Organizer** è il nome dell'organizzatore di eventi.</li> <li>I **relatori** sono i nomi dei relatori dell'evento.</li><li>I **produttori** sono i nomi dei produttori di eventi.</li><li>**Visualizzazioni** è il numero di visualizzazioni univoche.</li><li>La **registrazione** Mostra se l'impostazione di registrazione è attivata o disattivata.</li><li>Il **tipo di produzione** indica se l'evento viene prodotto in teams o da un'applicazione o da un dispositivo esterno.</li></li> </ul>Tieni presente che se un account utente non esiste più in Azure AD, il nome utente viene visualizzato come "--" nella tabella. <br><br>Per visualizzare le informazioni desiderate nella tabella, assicurarsi di aggiungere le colonne alla tabella. |
 |**5**   |Selezionare **modifica colonne** per aggiungere o rimuovere colonne nella tabella.|
+
+## <a name="notes"></a>Note
+Visualizzati fino a 100 eventi live che corrispondono ai criteri del report corrente. Per visualizzare altri eventi dinamici, applicare filtri per la data per ridurre le dimensioni dell'elenco.
 
 ## <a name="view-event-details"></a>Visualizzare i dettagli dell'evento
 

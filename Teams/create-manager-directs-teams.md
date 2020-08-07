@@ -1,8 +1,8 @@
 ---
 title: Creare teams manager di persone in Microsoft Teams
 ms.reviewer: pbethi
-author: LolaJacobsen
-ms.author: lolaj
+author: SerdarSoysal
+ms.author: serdars
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: eb6cd6ed74bebd0cbd729b828c152b9f04d1fc1f
-ms.sourcegitcommit: cfaae3ecbf853766de788b4825a86e04f68868ca
+ms.openlocfilehash: fe57656eec61747dd0a43d475444e65d8600e222
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "42796226"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46583675"
 ---
 # <a name="create-people-manager-teams-in-microsoft-teams"></a>Creare teams manager di persone in Microsoft Teams
 
@@ -30,9 +30,9 @@ Quando si distribuisce Microsoft teams anziché il lancio con una "tabulazione v
 
 ## <a name="how-to-use-the-powershell-script"></a>Come usare lo script di PowerShell 
 
-Iniziare eseguendo i [responsabili dell'esportazione e il relativo script directs](scripts/powershell-script-create-teams-from-managers-export-managers.md) (che presuppone che siano già stati eseguiti i moduli di PowerShell [Connect-AzureAd](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0) e [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams?view=teams-ps) ). L' *export managers and its directs* script crea un file delimitato da tabulazioni (ExportedManagerDirects. txt) che elenca tutti i responsabili con i relativi report diretti. 
+Iniziare eseguendo i [responsabili dell'esportazione e il relativo script directs](scripts/powershell-script-create-teams-from-managers-export-managers.md) (che presuppone che siano già stati eseguiti i moduli di PowerShell [Connect-AzureAd](https://docs.microsoft.com/powershell/module/azuread/connect-azuread?view=azureadps-2.0) e [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams?view=teams-ps) ). L' *export managers and its directs* script crea un file delimitato da tabulazioni (ExportedManagerDirects.txt) che elenca tutti i responsabili con i relativi report diretti. 
 
-Esegui quindi lo [script crea nuovi teams manager](scripts/powershell-script-create-teams-from-managers-new-teams.md). Questo script legge il file ExportedManagerDirects. txt e crea un team per ogni Manager, con i report diretti di tale Manager come membri. Se un Manager o Direct non è abilitato per i team, lo script li ignora e non crea un team. (Rivedere il report, quindi rieseguire lo script dopo aver attivato team per tutti gli utenti che ne hanno bisogno. Lo script non creerà un secondo team per qualsiasi Manager per cui è già stato creato un team.
+Esegui quindi lo [script crea nuovi teams manager](scripts/powershell-script-create-teams-from-managers-new-teams.md). Questo script legge il file ExportedManagerDirects.txt e crea un team per ogni Manager, con i report diretti di tale Manager come membri. Se un Manager o Direct non è abilitato per i team, lo script li ignora e non crea un team. (Rivedere il report, quindi rieseguire lo script dopo aver attivato team per tutti gli utenti che ne hanno bisogno. Lo script non creerà un secondo team per qualsiasi Manager per cui è già stato creato un team.
 
 Per ogni team, lo script crea un canale generale e "solo per divertimento". 
 

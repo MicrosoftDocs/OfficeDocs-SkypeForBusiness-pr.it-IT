@@ -1,7 +1,7 @@
 ---
 title: Dati e report in dashboard qualità chiamata (Call Quality Dashboard)
-ms.author: lolaj
-author: LolaJacobsen
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.reviewer: mikedav, siunies, gageames
 ms.topic: article
@@ -22,12 +22,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni sui dati e i report disponibili in Microsoft Call Quality Dashboard (Call Quality Dashboard).
-ms.openlocfilehash: 2801b8b2a35ae06c4bb42479bac64985b13ea93f
-ms.sourcegitcommit: 3e5cac88911611c94c0330bf50af9c34db308cdf
+ms.openlocfilehash: ec9714e0eae187bc82edf01809b50d8512d04e01
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45372165"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46583093"
 ---
 # <a name="data-and-reports-in-call-quality-dashboard-cqd"></a>Dati e report in dashboard qualità chiamata (Call Quality Dashboard)
 
@@ -123,18 +123,18 @@ Se si vuole usare Power BI per analizzare i dati di Call Quality dashboard, legg
 |Funzionalità|Report di riepilogo|Report dettagliati|
 |:--- |:--- |:--- |
 |Metrica di condivisione applicazioni | No | Sì |
-|Supporto per informazioni sulla creazione di clienti | Sì | Supporto per più paesi |
+|Supporto per informazioni sulla creazione di clienti | Sì | Sì |
 |Supporto per le informazioni sull'endpoint cliente | Solo in <span> CQD.teams.Microsoft.com<span/> | Solo in <span> CQD.teams.Microsoft.com<span/> |
 |Supporto analisi drill-down   | No   | Sì   |
 |Metriche per l'affidabilità multimediale   | No   | Sì   |
-|Report di out-of-the-box   | Sì   | Supporto per più paesi   |
-|Report generali   | Sì   | Supporto per più paesi   |
+|Report di out-of-the-box   | Sì   | Sì   |
+|Report generali   | Sì   | Sì   |
 |Set di report per utente   | No   | Sì   |
 |Personalizzazione del set di report (aggiunta, eliminazione, modifica di report)   | No   | Sì   |
 |Metriche di condivisione dello schermo basate su video   | No   | Sì   |
 |Metriche video   | No   | Sì   |
 |Quantità di dati disponibili   | Ultimi 12 mesi   | Ultimi 12 mesi   |
-|Dati di Microsoft Teams   | Sì   | Supporto per più paesi   |
+|Dati di Microsoft Teams   | Sì   | Sì   |
 | | | |
 
 

@@ -1,6 +1,6 @@
 ---
 title: Office 365 Government-distribuzioni di GCC
-author: lolajacobsen
+author: SerdarSoysal
 ms.author: heidip
 manager: serdars
 ms.topic: article
@@ -20,12 +20,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b93762c92d9681074124ba8ddb3fd066bdf8a60a
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 2fb916b30a26694debf8d699fc05cc3fcc8c8c77
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665228"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46581247"
 ---
 # <a name="plan-for-office-365-government---gcc-deployments"></a>Pianificare le distribuzioni di Office 365 Government-GCC
 

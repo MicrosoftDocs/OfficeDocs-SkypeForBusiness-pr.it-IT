@@ -1,7 +1,7 @@
 ---
 title: Domande frequenti sul dashboard di Call Quality (Call Quality Dashboard)
-ms.author: lolaj
-author: LolaJacobsen
+ms.author: serdars
+author: SerdarSoysal
 manager: serdars
 ms.reviewer: mikedav, siunies, gageames
 ms.topic: article
@@ -21,12 +21,12 @@ ms.custom:
 - Reporting
 - seo-marvel-apr2020
 description: Leggere le domande frequenti (FAQ) e le risposte su Microsoft teams Call Quality Dashboard (Call Quality Dashboard).
-ms.openlocfilehash: 43dd0f85c21914320ff48c2e0aab82614670ff90
-ms.sourcegitcommit: 3e5cac88911611c94c0330bf50af9c34db308cdf
+ms.openlocfilehash: 8ad0a1745799194ec11284f8f7aaabd76bd30d05
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45372125"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46584025"
 ---
 # <a name="call-quality-dashboard-cqd-frequently-asked-questions-faq"></a>Domande frequenti sul dashboard di Call Quality (Call Quality Dashboard)
 

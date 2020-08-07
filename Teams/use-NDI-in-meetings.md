@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d971a7c9e44e2fbf7c3d2500f237e3755c5f89d0
-ms.sourcegitcommit: 824c79bd050b0abb576004f6209bb081d5090a8f
+ms.openlocfilehash: 86c0908b04b2eece835a747d9f57625878c15a99
+ms.sourcegitcommit: 95989f1a93524a2025feeb50b8635da332961ea3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46522916"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46588290"
 ---
 # <a name="use-ndi-in-microsoft-teams"></a>Usare NDI in Microsoft Teams
 
@@ -40,7 +40,7 @@ NDI è limitato a una rete locale e deve essere considerato solo una parte del f
 
 NDI richiede che vengano attivati due passaggi per un utente.
 
-1. L'amministratore del tenant deve abilitare il flag di funzionalità enableStreamingCallsOverNdi.
+1. L'amministratore del tenant deve abilitare la proprietà "AllowNDIStreaming" in CsTeamsMeetingPolicy.
 
 ```PowerShell
 Set-CsTeamsMeetingPolicy -Identity MEETING_POLICY -AllowNDIStreaming $true
@@ -54,13 +54,13 @@ L'immagine seguente mostra il messaggio di banner visualizzato da un utente in u
 
 ![Immagine del banner di NDI visualizzato in una riunione di teams.](media/NDI-disclosure.png)
 
-Il banner contiene un collegamento ai [criteri di privacy Microsoft](https://support.skype.com/faq/FA34853/what-is-skype-for-content-creators?q=ndi).
+Il banner contiene un collegamento ai [criteri di privacy Microsoft](https://aka.ms/teamsprivacy).
 
 ## <a name="supported-locales-and-user-types"></a>Impostazioni locali e tipi di utente supportati
 
 NDI è supportato in tutte le impostazioni locali. Gli utenti seguenti sono supportati in una riunione di NDI:
 
-- In-tenant-supporto completo, distribuito in base a Ring/ID tenant/userId (controllato da criteri riunione + contrassegno funzionalità)
+- In-tenant-supporto completo, distribuito in base a Ring/ID tenant/userId (controllato da criteri riunioni)
 - Federati-No (anche quando hanno NDI)<sup>1</sup>
 - Freemium-No (valore predefinito)
 - Anonimo-No (valore predefinito)
