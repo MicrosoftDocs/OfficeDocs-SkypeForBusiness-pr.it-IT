@@ -7,8 +7,8 @@ metadata:
   description: Progettato per i professionisti IT e i responsabili decisionali, i colloqui di Chalk teams offrono un'opportunità unica per imparare le procedure consigliate e le indicazioni pratiche in alcuni degli scenari più comuni e interessanti in teams. Facilitati da esperti in materia, questi laboratori interattivi online ti offriranno approfondimenti per migliorare l'implementazione dei team e offrire un valore aggiunto per gli utenti finali. Fare clic su qualsiasi titolo del workshop seguente per visualizzare le date e gli orari disponibili e iscriversi oggi stesso. Fare clic su qualsiasi titolo del workshop per registrarsi.
   ms.service: msteams
   ms.topic: hub-page
-  author: LolaJacobsen
-  ms.author: lolaj
+  author: SerdarSoysal
+  ms.author: serdars
   manager: serdars
   ms.date: 06/17/2020
   ms.reviewer: nsuter
@@ -25,12 +25,12 @@ metadata:
   search.appverid: MET150
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: 45489827990ef2453a92e6a7ea980790efadb569
-  ms.sourcegitcommit: a73df97a06ea860bfaf5387e0acbf3c724697e14
+  ms.openlocfilehash: aeb244d8969ad3f8463cd966a6f0facae68f08e0
+  ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 06/26/2020
-  ms.locfileid: "44902390"
+  ms.lasthandoff: 08/06/2020
+  ms.locfileid: "46583465"
 productDirectory:
   items:
   - title: 'Arrivare a teams: zero alla produzione'
