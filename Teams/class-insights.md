@@ -16,16 +16,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 75d9396bf5f537f965493bb0db317a1286b2f950
-ms.sourcegitcommit: b14ad0a6c454b20f34fccbd1d312de24379faef0
+ms.openlocfilehash: e122071a9a4173250a78468126ed576d1e560607
+ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46572371"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "46581497"
 ---
 # <a name="insights-in-teams-for-education-for-it-admins"></a>Insights di Teams per l’istruzione per amministratori IT
 
-Con Insights in Microsoft Teams per l’istruzione, i docenti e i dirigenti possono accedere ai dati analitici relativi all’impegno digitale, alle attività assegnate, ai voti, alle comunicazioni e altro ancora.
+Con Insights di Microsoft Teams per l’istruzione, i docenti possono accedere ai dati analitici relativi all’impegno digitale, alle attività assegnate, ai voti, alle comunicazioni e altro ancora.
 
 La funzionalità Insights è attiva in Office 365 Education, SKU A1, A3 e A5.
 
@@ -34,13 +34,11 @@ La funzionalità Insights è attiva in Office 365 Education, SKU A1, A3 e A5.
 
 ## <a name="permissions"></a>Autorizzazioni
 
-- Gli studenti vengono identificati in base all’istituto e **non hanno accesso alla scheda Dati analitici** anche se sono proprietari del team.
-- I docenti sono definiti secondo gli istituti di istruzione. I docenti devono appartenere a un istituto di istruzione e essere proprietari del team di classe per aggiungere e visualizzare la scheda Insights. La scheda riflette le attività dei membri del team di classe che non sono proprietari (inclusi i docenti che non sono proprietari del team).
-- I dirigenti sono definiti secondo gli istituti di istruzione. L'amministratore globale IT è identificato dal suo ruolo. I dirigenti devono appartenere a un istituto di istruzione e ottenere autorizzazioni esplicite dall’amministratore globale IT per visualizzare i report nell’app Insights.
+I docenti possono aggiungere Insights a un canale pubblico all'interno di un team di classe passando a App nella barra delle applicazioni di Teams e cercando Insights.
 
-Insights è disponibile in due moduli:
-- Schede: i docenti possono aggiungere Insights a un canale pubblico all'interno di un team di classe passando a App nella barra delle applicazioni di Teams e cercando Insights.
-- App personale: i dirigenti possono aggiungere l'app Insights come app personale (disponibile nel menu a sinistra di Teams) passando a App nella barra delle applicazioni di Teams e cercando Insights.
+- Gli studenti vengono identificati in base all’istituto e **non hanno accesso alla scheda Dati analitici** anche se sono proprietari del team.
+- I docenti sono definiti secondo gli istituti di istruzione.
+- I docenti devono appartenere a un istituto di istruzione e essere proprietari del team di classe per aggiungere e visualizzare la scheda Insights. La scheda riflette le attività dei membri del team di classe che non sono proprietari (inclusi i docenti che non sono proprietari del team).
 
 ## <a name="compliance"></a>Conformità
 
@@ -51,7 +49,7 @@ La funzionalità Insights ha impegni di conformità all’avanguardia ed è clas
 
 ## <a name="privacy"></a>Privacy
 
-Le informazioni raccolte e visualizzate tramite Insights soddisfano oltre 90 standard normativi e di settore, tra cui GDPR e FERPA (Family Education Rights and Privacy Act) per la sicurezza degli studenti e dei bambini e altre normative simili orientate alla privacy. È importante che gli amministratori IT sappiano che le informazioni raccolte per ogni singolo studente devono essere usate solo in un contesto di classe, per consentire ai docenti e ai dirigenti di determinare l’andamento della classe. Le informazioni vengono raccolte per le attività di apprendimento significative, ad esempio la presenza alle riunioni di classe, la pubblicazione di messaggi, le risposte ai post di altri studenti, l’impegno sulle attività, la modifica di file e altro ancora. Ad esempio, non vengono visualizzate informazioni sulle chat private o sull'accesso a Teams.
+Le informazioni raccolte e visualizzate tramite Insights soddisfano oltre 90 standard normativi e di settore, tra cui GDPR e FERPA (Family Education Rights and Privacy Act) per la sicurezza degli studenti e dei bambini e altre normative simili orientate alla privacy. È importante che gli amministratori IT sappiano che le informazioni raccolte per ogni singolo studente devono essere usate solo in un contesto di classe, per consentire ai docenti di determinare l’andamento della classe. Le informazioni vengono raccolte per le attività di apprendimento significative, ad esempio la presenza alle riunioni di classe, la pubblicazione di messaggi, le risposte ai post di altri studenti, l’impegno sulle attività, la modifica di file e altro ancora. Ad esempio, non vengono visualizzate informazioni sulle chat private o sull'accesso a Teams.
 
 Il nostro obiettivo consiste nell’aiutare i docenti a comprendere l’impegno degli studenti e a evidenziare l'apprendimento. Anche se queste attività di classe sono concentrate sulle azioni a livello di studente, Microsoft Teams non assegna valori positivi o negativi a tali azioni e gli studenti non vengono identificati in base a un giudizio sulla base di criteri. Le informazioni contenute in Insights informano i docenti, ad esempio, sull’attività di uno studente all’interno dello strumento durante un determinato periodo di tempo o se ha completato in tempo tutte le assegnazioni della settimana passata. Il docente rimane responsabile dell’interazione con lo studente e la relativa famiglia, o i relativi tutori, per determinare il motivo per cui è stata o non è stata rilevata una determinata attività.
 
