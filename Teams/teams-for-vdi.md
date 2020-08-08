@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 49b260179749b5aba906fdf0ce64cd5b99452b37
-ms.sourcegitcommit: ad82786076cc965e75b1ec5ffd4bc9bf75437340
+ms.openlocfilehash: 54d5f9fbf9821e88e17ebb8fe5dfa45f2b3c7270
+ms.sourcegitcommit: 8816b58e175031cb0a71e0d0e89e447a7b83a760
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "45028162"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597116"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -31,7 +31,7 @@ In questo articolo vengono illustrati i requisiti e le limitazioni per l'uso di 
 
 Virtual Desktop Infrastructure (VDI) è la tecnologia di virtualizzazione che ospita un sistema operativo desktop e le applicazioni su un server centralizzato in un centro dati. Questo consente agli utenti un'esperienza desktop completamente personalizzata con una fonte centralizzata completamente sicura e conforme.
 
-Microsoft teams in un ambiente virtualizzato supporta la chat e la collaborazione. Inoltre, con la piattaforma Citrix sono supportate anche le funzionalità di chiamata e riunione.
+Microsoft teams in un ambiente virtualizzato supporta la chat e la collaborazione. E con le piattaforme Windows Virtual Desktop o Citrix sono supportate anche le funzionalità di chiamata e riunione.
 
 I team in un ambiente virtualizzato supportano più configurazioni. Questi includono le modalità VDI, dedicate, condivise, persistenti e non persistenti. Le caratteristiche sono in continuo sviluppo e vengono aggiunte regolarmente e la funzionalità si espanderà nei prossimi mesi e anni.
 
@@ -54,15 +54,20 @@ L'uso di team in un ambiente virtualizzato richiede i componenti seguenti.
 
 L'app desktop teams è stata convalidata con i principali provider di soluzioni di virtualizzazione. Con più fornitori di mercato, ti consigliamo di consultare il provider di soluzioni di virtualizzazione per assicurarti di soddisfare i requisiti minimi.
   
-Attualmente, teams on VDI con ottimizzazione audio/video (AV) è certificato con Citrix. Esaminare le informazioni in questa sezione per assicurarti di soddisfare i requisiti di Citrix e teams per la funzionalità appropriata.
+Attualmente, teams on VDI con ottimizzazione audio/video (AV) è certificato con Windows Virtual Desktop e Citrix. Esaminare le informazioni in questa sezione per assicurarti di soddisfare tutti i requisiti per la funzionalità appropriata.
 
-### <a name="partners-certified-for-teams"></a>Partner certificati per Teams
+### <a name="platforms-certified-for-teams"></a>Piattaforme certificate per Teams
 
-I partner seguenti hanno soluzioni per l'infrastruttura desktop virtuale per i team.
+Le piattaforme seguenti hanno soluzioni per l'infrastruttura desktop virtuale per i team.
 
-|Partner|Soluzione partner|
+|Piattaforma|Soluzione|
 |----|---|
-|![Il logo che rappresenta Citrix](media/citrix.png)| <a href="https://www.citrix.com/products/citrix-virtual-apps-and-desktops/" target="_blank">App virtuali e desktop Citrix</a> |
+|![Logo che rappresenta Microsoft](media/microsoft-logo.png)| <a href="https://docs.microsoft.com/azure/virtual-desktop/teams-on-wvd" target="_blank">Desktop virtuale di Windows</a> |
+|![Il logo che rappresenta Citrix](media/citrix-logo.png)| <a href="https://www.citrix.com/products/citrix-virtual-apps-and-desktops/" target="_blank">App virtuali e desktop Citrix</a> |
+
+### <a name="windows-virtual-desktop"></a>Desktop virtuale di Windows
+
+Windows Virtual Desktop offre l'ottimizzazione AV per i team su VDI. Per altre informazioni e requisiti e installazione, vedere [usare teams in Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/teams-on-wvd).
 
 ### <a name="citrix-virtual-apps-and-desktops-requirements"></a>Requisiti per le app virtuali e i desktop di Citrix
 
@@ -360,19 +365,19 @@ Per altre informazioni sull'uso di PowerShell per gestire i criteri delle riunio
 ### <a name="calling-and-meetings"></a>Chiamate e riunioni
 
 - L'interoperabilità con Skype for business è limitata alle chiamate audio; non esiste una modalità video.
-- L'interazione DTMF (Dual Tone Multi Frequency) con i sistemi di telefonia non è attualmente supportata.
 - L'aggiunta di riunioni teams come utente anonimo non è ottimizzata per AV. L'utente può partecipare alla riunione e avere un'esperienza non ottimizzata.
 - In riunioni o chiamate di gruppo è supportato solo un singolo flusso video in arrivo. Quando più persone inviano video, viene visualizzato solo il video del relatore dominante in un dato momento.
 - La risoluzione del flusso video in entrata e in uscita è limitata alla risoluzione 720p. Si tratta di una limitazione WebRTC.
 - È supportato un solo flusso video da una videocamera in arrivo o da un flusso di condivisione dello schermo. Quando c'è una condivisione dello schermo in arrivo, viene visualizzata la condivisione dello schermo, invece del video del relatore dominante.
 - Condivisione dello schermo in uscita:
-    - La condivisione dello schermo dalla chat non è supportata.
     - La condivisione delle applicazioni non è supportata.
 - Dare controllo e prendere il controllo:
     - Non supportato durante una sessione di condivisione dello schermo o di condivisione dell'applicazione.
     - Supportato durante una sessione di condivisione di PowerPoint.
-- Quando si condivide la schermata in una configurazione con più monitor, viene condiviso solo il monitor principale.
-- Il ridimensionamento DPI elevato su CWA non è supportato.
+- Limitazioni solo Citrix
+    - L'interazione DTMF (Dual Tone Multi Frequency) con i sistemi di telefonia non è attualmente supportata.
+    - Quando si condivide la schermata in una configurazione con più monitor, viene condiviso solo il monitor principale.
+    - Il ridimensionamento DPI elevato su CWA non è supportato.
 
 Per i problemi noti relativi ai team che non sono correlati a VDI, vedere [supportare team nell'organizzazione](Known-issues.md).
 

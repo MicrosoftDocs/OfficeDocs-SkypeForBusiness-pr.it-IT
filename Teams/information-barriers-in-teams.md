@@ -16,12 +16,12 @@ description: In questo articolo vengono illustrati gli ostacoli alle informazion
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 585cff9e8eb99a736b25e4ee0463ce4783c01ad1
-ms.sourcegitcommit: b14ad0a6c454b20f34fccbd1d312de24379faef0
+ms.openlocfilehash: 2fa842f341bac8aca0c1972519777de2855cf06c
+ms.sourcegitcommit: 197f96841a58efd70bcd198b6eb1775e5ecd155c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46572381"
+ms.lasthandoff: 08/07/2020
+ms.locfileid: "46592910"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere informative in Microsoft Teams
 
@@ -167,12 +167,12 @@ Attualmente gli utenti avvertono quanto segue se un criterio barriera informativ
 
 ## <a name="teams-policies-and-sharepoint-sites"></a>Criteri per i team e siti di SharePoint
 
-Quando viene creato un team, viene eseguito il provisioning di un sito di SharePoint e viene associato al team per l'esperienza dei file. L'accesso a questo sito e ai file di SharePoint rende omaggio alla IB dell'organizzazione, ovvero solo gli utenti il cui segmento IB corrisponde al criterio IB sono autorizzati ad accedere. Anche al momento della condivisione di file, viene rispettato il criterio IB.
+Quando viene creato un team, viene effettuato il provisioning di un sito di SharePoint e si associa a Microsoft teams per l'esperienza dei file. I criteri per le barriere informative non vengono rispettati per impostazione predefinita in questo sito e file di SharePoint. Per abilitare i criteri di barriera delle informazioni, l'amministratore ha già compilato un modulo, richiedendo l'abilitazione dei criteri IB in SharePoint e OneDrive (vedere la sezione *prerequisito* in [barriere informative](https://docs.microsoft.com/sharepoint/information-barriers#prerequisites)). Se il criterio barriera informativo è attivato in SharePoint e OneDrive, i criteri di IB lavoreranno sui siti di SharePoint provisioning quando un team viene creato con Microsoft teams.
 
-Ad esempio: in Contoso Bank Corporation, l'utente "Sesha@contosobank.onmicrosoft.com" appartiene al segmento di Investment Banking e l'utente "Nikita@contosobank.onmicrosoft.com" appartiene al segmento Advisory. I criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti.
+**Esempio di criteri IB nel sito di SharePoint di un team**: in Contoso Bank Corporation l'utente "Sesha@contosobank.onmicrosoft.com" appartiene al segmento di Investment Banking e l'utente "Nikita@contosobank.onmicrosoft.com" appartiene al segmento Advisory. I criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti.
 Quando l'utente Seshe crea un team per il segmento investment banking, il team e il sito di SharePoint che lo appoggiano saranno accessibili solo agli utenti del segmento investment banking. L'utente Nikita non può accedere al sito anche se ha il collegamento al sito.
 
-Per altre informazioni, fare clic [qui](https://docs.microsoft.com/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites) .
+Per altre informazioni, vedere l'articolo [barriere informative](https://docs.microsoft.com/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites) .
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 
@@ -181,7 +181,7 @@ Per altri dettagli, inclusi i piani e i prezzi, vedere indicazioni per le [licen
 ## <a name="known-issues"></a>Problemi noti
 - **Gli utenti non possono partecipare alle riunioni**: se i criteri IB sono abilitati, gli utenti non possono partecipare alle riunioni se la dimensione del roster delle riunioni è superiore a 250 utenti. La causa principale è che i controlli IB si basano sul fatto che gli utenti possano essere aggiunti a un roster della chat di riunione e che prenda il segnale per consentire agli utenti di partecipare alle riunioni. Partecipare a una riunione una volta aggiungerà l'utente al roster, quindi per le riunioni ricorrenti, il roster si riempie velocemente. Dopo aver raggiunto un numero di utenti di 250, non è consentito aggiungere altri utenti al roster della chat di riunione. Se IB è abilitato, gli utenti non possono partecipare alla riunione, ma se IB non è abilitato, gli utenti possono partecipare alla riunione, anche se non verranno aggiunti al roster della chat di riunione. Una soluzione a breve termine consiste nel rimuovere i membri inattivi dal roster della chat di riunione per creare spazio per i nuovi utenti. Le dimensioni dei roster della chat di riunione verranno comunque aumentate in un secondo momento.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 - Per ulteriori informazioni sulle barriere informative, vedere [barriere informative](https://docs.microsoft.com/office365/securitycompliance/information-barriers).
 

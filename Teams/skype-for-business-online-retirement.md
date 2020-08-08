@@ -18,36 +18,90 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7ce21fb620f37479a051b7ed4467dcc3cd9f6f19
-ms.sourcegitcommit: dc3e8ae454c42981f037f4de2e48005428b6078e
+ms.openlocfilehash: 10fa7e13289a4696dd723b2b6634dc7147321342
+ms.sourcegitcommit: 8816b58e175031cb0a71e0d0e89e447a7b83a760
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/31/2020
-ms.locfileid: "46533843"
+ms.lasthandoff: 08/08/2020
+ms.locfileid: "46597091"
 ---
 # <a name="skype-for-business-online-retirement"></a>Ritiro di Skype for Business Online
 
-Skype for business online verrà ritirato il 31 luglio 2021. In questo articolo vengono fornite informazioni dettagliate sul piano pensionistico, una breve spiegazione del motivo per cui si sta eseguendo l'annuncio e un riepilogo delle operazioni da eseguire per consentire ai clienti di migrare a teams.
+Nel 2019 luglio abbiamo annunciato che **Skype for business online verrà ritirato il 31 luglio 2021,** dando ai clienti due anni per pianificare le proprie transizioni a Microsoft teams, l'hub per il lavoro di gruppo in Microsoft 365. Con meno di un anno di permanenza, vogliamo garantire che i clienti dispongano delle informazioni e delle risorse necessarie per pianificare ed eseguire un aggiornamento riuscito a teams.
  
-## <a name="what-is-the-skype-for-business-retirement-plan"></a>Cos'è il piano pensionistico Skype for business?
+## <a name="why-is-skype-for-business-online-retiring"></a>Perché Skype for business online viene ritirato?
 
-Skype for business online verrà ritirato il 31 luglio 2021 e dopo tale data il servizio non sarà più accessibile. Tra un momento e l'altro, i clienti attuali di Skype for business online non saranno in grado di modificare il servizio e potranno continuare ad aggiungere nuovi utenti in base alle esigenze. Tuttavia, a partire dal 1 ° settembre 2019, verranno imbarcati tutti i nuovi clienti di Microsoft 365 o Office 365 direttamente in teams per la chat, le riunioni e le chiamate. Tieni presente che il servizio consumer Skype e Skype for Business Server rimarranno inalterati da questo annuncio.  
+Sin dalla sua introduzione, Skype for business online è stato uno strumento prezioso per milioni di persone in tutto il mondo. Combinando la messaggistica istantanea, le chiamate e il video in un'unica applicazione, Skype for business online ha stabilito nuove possibilità per le comunicazioni commerciali. Microsoft teams è il prossimo capitolo di tale visione.
 
-## <a name="why-are-we-making-this-announcement-now"></a>Perché stiamo facendo questo annuncio ora?
+Le funzionalità di Microsoft teams vanno oltre quelle di Skype for business online. Combinando la chat, il video, le chiamate, la collaborazione con documenti e l'integrazione delle applicazioni in una singola esperienza, teams consente di lavorare in modo completamente nuovo. L'innovazione e lo sviluppo della piattaforma in corso significa che gli utenti del team traggono vantaggio da prestazioni, funzionalità, flessibilità e sicurezza più ricche.
 
-In 2017 abbiamo lanciato Microsoft teams come "hub for teamwork" in Microsoft 365. Teams combina chat, video, chiamate e la collaborazione di documenti in un'unica app integrata e consente di lavorare in modo completamente nuovo. Negli ultimi due anni abbiamo lavorato in stretta collaborazione con i clienti per perfezionare teams e ora siamo al punto che possiamo consigliarlo come aggiornamento a tutti i clienti di Skype for business online. I clienti che hanno già effettuato la modifica indicano che i team non solo li hanno aiutati a migliorare la collaborazione in generale, ma ha anche fornito una rara opportunità di ripensare il modo in cui il lavoro viene fatto nelle loro organizzazioni. Con teams, le aziende di tutto il mondo diventano più agili, accorciano i tempi di ciclo, migliorano l'efficienza dei flussi di lavoro principali e ritagliano un sovraccarico non necessario. Teams non è solo un upgrade per Skype for business online, è uno strumento potente che apre la porta a un modo completamente nuovo di fare business. Ma non prendere la parola per farlo. Leggi altre informazioni sui potenziali vantaggi dei team per la tua organizzazione con il libro bianco di Forrester pubblicato[di recente "l'impatto economico totale di Microsoft teams](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf)".
+Teams non è solo un upgrade per Skype for business online, è uno strumento potente che consente alle aziende, alle scuole e alle organizzazioni di diventare più agili e migliorare l'efficienza dei flussi di lavoro principali. Per altre informazioni sui potenziali vantaggi dei team per l'organizzazione, vedere il white paper di Forrester, [il totale impatto economico™ di Microsoft teams](https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf?rtc=1).
 
-## <a name="what-is-microsoft-doing-to-help-customers-migrate-to-teams"></a>Che cosa fa Microsoft per aiutare i clienti a eseguire la migrazione a teams?
 
-Per tutti i vantaggi del passaggio a teams, riconosciamo che la migrazione richiederà tempo e sforzo, e siamo qui per aiutarti.
- 
-In primo luogo, stiamo facendo investimenti di prodotti per rispondere alle richieste di funzionalità di clienti attuali di Skype for business online, tra cui:
+## <a name="what-does-this-mean-for-skype-for-business-customers"></a>Che cosa significa questo per i clienti Skype for business?
 
-- **911 dinamico**. Una caratteristica di Microsoft teams Phone System, Dynamic E911 usa automaticamente la posizione corrente del chiamante per instradare un centro chiamate PSAP (Public Safety Answering Point) gestito dall'amministrazione locale.  La E911 dinamica verrà recapitata in teams per gli Stati Uniti entro la fine di questo anno di calendario.
-- **Periodi di conservazione più brevi**. Le nuove opzioni del periodo di conservazione consentiranno ai clienti di limitare i periodi di conservazione del canale e della chat al più breve 1 giorno e assicurarsi che quando i dati vengono eliminati vengano rimossi da tutti i percorsi di archiviazione permanenti nel servizio teams.  I periodi di conservazione più brevi saranno disponibili in team entro la fine di questo anno di calendario.
-- **Teams e interoperabilità consumer Skype**. L'interoperabilità tra teams e Skype consumer consentirà agli utenti dei due servizi di comunicare tramite chat e chiamate.  Teams e Skype consumer Interop saranno disponibili in teams nel primo trimestre dell'anno di calendario 2020.
-- **Registrazione di integrazione e conformità al centro contatti**. In Inspire all'inizio di questo mese abbiamo annunciato partnership teams con Five9, Genesys e NICE per abilitare le soluzioni Contact Center-e con ASC, NICE e verit per consentire la registrazione della conformità.   Stiamo lavorando anche con altri partner certificati di Skype for business online per proporre al mercato altre soluzioni per la registrazione di contatti e conformità per i team.
- 
-E quando si è pronti per iniziare, offriamo [un set completo di risorse tecniche di orientamento e pianificazione](https://aka.ms/SkypeToTeams), tra cui un Framework di successo collaudato, procedure consigliate, documenti di pianificazione, [formazione gratuita con istruttore](instructor-led-training-teams-landing-page.yml)e [FastTrack](https://www.microsoft.com/FastTrack) onboarding Assistance per gli abbonamenti idonei.
- 
-Dalla sua introduzione in 2014, Skype for business è stato uno strumento prezioso per milioni di persone in tutto il mondo.  Combinando la messaggistica istantanea, le chiamate e il video in un'unica app, il prodotto ha creato una nuova visione per le comunicazioni commerciali. Microsoft teams è il prossimo capitolo di tale visione e, con le notizie di oggi, non solo annunciamo la pensione del servizio Skype for business online, ma stiamo anche comunicando la nostra fiducia in teams.  Dopo più di due anni di mercato, teams è pronto per i clienti più esigenti e siamo convinti che lo amerete!  Se sei un cliente corrente di Skype for business online, inizia a pianificare la migrazione di oggi.  Siamo impegnati ad aiutarti in ogni fase del percorso e non vediamo l'ora di provare il nuovo modo di lavorare. 
+Dopo che Skype for business online si ritira il 31 luglio 2021, il servizio non sarà più accessibile. Fino ad allora, i clienti attuali di Skype for business online non potranno cambiare servizio e potranno aggiungere nuovi utenti in base alle esigenze. A partire dal 1 ° settembre 2019, tutti i nuovi clienti di Microsoft 365 sono stati imbarcati direttamente in team per la chat, le riunioni e le chiamate.
+
+Il tempo necessario per la transizione completa ai team varia in base alle caratteristiche esclusive dell'organizzazione, tra cui il numero di utenti, la complessità tecnica e l'adattabilità interna per la modifica. Come tale, ti consigliamo di pianificare l'aggiornamento a teams Today, non solo per assicurarti un tempo sufficiente per eseguire una transizione efficace da Skype for business, ma per realizzare più rapidamente i vantaggi dei team.
+
+Teams è disponibile nella maggior parte dei piani business e Enterprise Microsoft 365 e gli attuali investimenti per le licenze riportano i team. Le capacità che oggi sono carichi di lavoro Premium in Skype for Business Online continueranno a essere carichi di lavoro Premium in Teams. Ad esempio, se si è acquistato un audioconferenza autonomo o come parte di E5 con Skype for business, i servizi di audioconferenza verranno abilitati in teams.
+
+Il servizio consumer Skype e Skype for Business Server non sono interessati dal ritiro di Skype for business online.
+
+[Leggere le domande frequenti](faq-journey.md) sul processo di aggiornamento ai team e alla roadmap delle funzionalità teams.
+
+## <a name="what-is-microsoft-doing-to-help-customers-transition-to-teams"></a>Che cosa fa Microsoft per aiutare i clienti a passare a teams?
+
+Sfrutta l'ampia gamma di risorse disponibili per pianificare la distribuzione e l'aggiornamento dei team da Skype for business:
+
+- [Distribuzione e aggiornamento della documentazione di teams](upgrade-start-here.md) -Guida tecnica gratuita per gli amministratori IT.
+
+- [FastTrack per Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) -assistenza per la distribuzione di teams disponibile per i piani idonei.
+
+- [Teams Live Training](https://docs.microsoft.com/microsoftteams/instructor-led-training-teams-landing-page) -corsi di formazione gratuiti online progettati per far funzionare gli utenti finali con teams.
+
+- [Colloqui di Chalk teams](https://docs.microsoft.com/MicrosoftTeams/chalk-talks-landing-page) -laboratori gratuiti online per professionisti IT e decision maker che condividono le procedure consigliate per alcuni degli scenari più diffusi e interessanti in teams.
+
+- [Workshop di pianificazione dell'aggiornamento di teams](https://docs.microsoft.com/MicrosoftTeams/upgrade-workshops-landing-page) -workshop di pianificazione interattiva gratuita per l'aggiornamento, in cui verranno fornite indicazioni, procedure consigliate e risorse progettate per pianificare e implementare l'aggiornamento ai team.
+
+- [Microsoft Partners](https://www.microsoft.com/solution-providers/home) -Microsoft Solution Providers può aiutarti a sfruttare al meglio i team.
+
+- [Blog di Microsoft teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/bg-p/MicrosoftTeamsBlog) -ottenere le ultime notizie di teams che coprono le nuove caratteristiche, le risorse di adozione e utilizzo, i dispositivi team e l'integrazione con altre applicazioni per la produttività aziendale.
+
+Se sei un cliente corrente di Skype for business online, inizia a pianificare la migrazione ai team di oggi. Siamo entusiasti di provare le sue potenti funzionalità di comunicazione e collaborazione e siamo impegnati ad aiutarti durante il tragitto.
+
+## <a name="skype-for-business-online-retirement-faqs"></a>Domande frequenti sulla pensione di Skype for business online
+
+**Gli attuali clienti di Skype for Business Online potranno aggiungere nuove postazioni al tenant?**<br>
+Sì. Gli attuali clienti di Skype for Business Online possono aggiungere nuove postazioni al proprio tenant, con la consapevolezza che alla fine dovranno spostare questi utenti in Microsoft Teams.
+
+**Qual è il futuro di Skype for Business Server?**<br>
+Riconosciamo che i clienti usano Skype for Business Server e molti hanno bisogno di continuare a usare Skype for Business Server per alcuni utenti o aree geografiche a causa dei loro requisiti. In questi casi, le organizzazioni possono adottare Teams insieme a Skype for Business Server per promuovere il lavoro in team e la collaborazione. L'ultima versione di Skype for Business Server 2019 è stata rilasciata in ottobre 2018 con il supporto mainstream previsto per il 9 gennaio 2024.
+
+**Che cosa significa questo per il servizio consumer Skype?**<br>
+Il pensionamento di Skype for business online non avrà alcun impatto sul servizio consumer Skype.
+
+**Che cosa significa questo per i clienti Microsoft 365 esistenti?**<br>
+Le funzionalità chiave di Skype for Business Online sono state inserite in Teams, insieme a novità relative a voce, video e riunioni. Invitiamo tutti i clienti di Microsoft 365 a iniziare a usare teams oggi all'interno della propria organizzazione, in modo indipendente o affiancato da Skype for business online e/o da Skype for Business Server.
+
+**Continuerete a investire per migliorare Skype for Business Online?**<br>
+Intendiamo supportare Skype for business online con la data di pensionamento del 31 luglio 2021. Tuttavia, con Microsoft teams che sostituisce Skype for business online come soluzione di comunicazione di base per Microsoft 365, continuerà a essere il punto in cui si concentra lo sviluppo e l'innovazione in corso. I clienti che cercano le funzionalità e le prestazioni più recenti sono incoraggiati a eseguire l'aggiornamento a Microsoft teams.
+
+**Cosa si consiglia per i clienti attualmente in fase di distribuzione o per la pianificazione della distribuzione, Skype for business in Microsoft 365?**<br>
+I clienti che stanno distribuendo Skype for Business Online possono continuare a farlo. Invitiamo tutti i nuovi clienti di Microsoft 365 a iniziare a usare teams, indipendentemente da o in parallelo con Skype for business e a determinare il percorso (coesistenza o solo Teams) e l'intervallo di tempo che soddisfa le esigenze aziendali. Indipendentemente dal possesso di Skype for Business Online, i clienti dovranno passare a Teams prima della data di ritiro di Skype for Business Online.
+
+**Che cosa significa questo da un punto di vista delle licenze? In che modo i clienti pagheranno servizi di comunicazione intelligente in teams?**<br>
+Teams è disponibile in molte delle suite Microsoft 365. Le capacità che oggi sono carichi di lavoro Premium in Skype for Business Online continueranno a essere carichi di lavoro Premium in Teams. Gli investimenti esistenti in materia di licenze effettuati dai clienti vengono mantenuti in Teams. Ad esempio, se un cliente ha acquistato Audioconferenza come prodotto autonomo o come parte di E5 con Skype for Business, Audioconferenza sarà abilitato in Teams così com'è disponibile oggi.
+
+**Microsoft sta pianificando aggiornamenti programmati?**<br>
+Attualmente non sono previsti aggiornamenti programmati per i clienti aziendali. I clienti possono scegliere di passare a Teams quando è opportuno per la propria organizzazione, prima della data di ritiro di Skype for Business Online il 31 luglio 2021. A utenti e amministratori saranno resi disponibili strumenti e istruzioni per la transizione a Teams.
+
+Per supportare i clienti più piccoli che potrebbero non avere risorse IT dedicate, Microsoft assiste agli aggiornamenti automatici da Skype for business online a teams. I clienti idonei ricevono una notifica dell'aggiornamento tramite messaggi di posta elettronica e notifiche del Centro messaggi. Nelle comunicazioni sono disponibili maggiori dettagli. Per altre informazioni, vedere [Aggiornamenti automatici da Skype for Business Online a Microsoft Teams](https://docs.microsoft.com/microsoftteams/upgrade-automated).
+
+**In che modo l'annuncio del ritiro di Skype for Business Online riguarda le organizzazioni con configurazioni ibride (Skype for Business Online e Skype for Business Server)?**<br>
+I clienti che usano ambienti ibridi con configurazioni online e locali dovranno eseguire la transizione degli utenti da Skype for Business Online a Microsoft Teams entro la data di ritiro del 31 luglio 2021. I percorsi di aggiornamento per le configurazioni ibride, basati su principi di coesistenza e interoperabilità rimarranno dopo il ritiro di Skype for Business Online. Per altre informazioni, vedere [Coesistenza con Skype for Business](coexistence-chat-calls-presence.md) e [Coesistenza e interoperabilità di Microsoft Teams e Skype for Business](teams-and-skypeforbusiness-coexistence-and-interoperability.md).
+
+I clienti con abbonamenti idonei sono invitati a usare [FastTrack](https://www.microsoft.com/fasttrack?rtc=1) per assistenza nell'onboarding di Teams.
+
+
+
