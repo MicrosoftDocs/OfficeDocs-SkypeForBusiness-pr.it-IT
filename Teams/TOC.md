@@ -25,7 +25,7 @@
 
 <!-- ============================================================ -->
 
-# Chat, team, canali e app
+# Chat, team e canali
 ## [Pianificare la distribuzione](deploy-chat-teams-channels-microsoft-teams-landing-page.md)
 ## [Usare Advisor per Teams per la distribuzione di Teams](use-advisor-teams-roll-out.md)
 ## [Panoramica su team e canali](teams-channels-overview.md)
@@ -51,25 +51,6 @@
 ## [Archiviare o eliminare un team](archive-or-delete-a-team.md)
 ## [Effettuare la migrazione da Slack a Teams](migrate-slack-to-teams.md)
 ## [Modelli di Teams creati in Graph per Piccole e medie imprese](smb-templates.md)
-
-
-## App, bot e connettori
-
-### [Panoramica](deploy-apps-microsoft-teams-landing-page.md)
-### [Autorizzazioni e considerazioni sulle app](app-permissions.md)
-### [Gestire le app per Teams](manage-apps.md)
-### [Impostazioni di amministrazione per le app in Teams](admin-settings.md)
-### [Usare schede predefinite e personalizzate](built-in-custom-tabs.md)
-### [Usare i connettori personalizzati e di Microsoft 365 o Office 365](Office-365-custom-connectors.md)
-### [Consenso specifico per le risorse](resource-specific-consent.md)
-### [Pubblicare un'app personalizzata inviata tramite l'API per l’invio dell’app di Teams](submit-approve-custom-apps.md)
-### [Pubblicare un'app personalizzata caricando un pacchetto dell'app](upload-custom-apps.md)
-### [Certificazione delle app](/teams-app-certification/all-apps?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
-### [Modelli di app per Teams](https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
-### [Gestire l'app Elenchi per l'organizzazione in Teams](manage-lists-app.md)
-### [Gestire l'app Attività per l'organizzazione](manage-tasks-app.md)
-### [Configurare la gerarchia di destinazione del team](set-up-your-team-hierarchy.md)
-### [Configurare l'app Riunioni Skype per Teams](configure-skype-meetings-app-to-work-with-teams.md)
 
 ## Comunicare con utenti esterni
 ### [Comunicare con utenti di altre organizzazioni](communicate-with-users-from-other-organizations.md)
@@ -129,6 +110,26 @@
 
 <!-- ============================================================ -->
 
+# App, bot e connettori
+
+## [Panoramica](deploy-apps-microsoft-teams-landing-page.md)
+## [Autorizzazioni e considerazioni sulle app](app-permissions.md)
+## [Gestire le app per Teams](manage-apps.md)
+## [Impostazioni di amministrazione per le app in Teams](admin-settings.md)
+## [Usare schede predefinite e personalizzate](built-in-custom-tabs.md)
+## [Usare i connettori personalizzati e di Microsoft 365 o Office 365](Office-365-custom-connectors.md)
+## [Consenso specifico per le risorse](resource-specific-consent.md)
+## [Pubblicare un'app personalizzata inviata tramite l'API per l’invio dell’app di Teams](submit-approve-custom-apps.md)
+## [Pubblicare un'app personalizzata caricando un pacchetto dell'app](upload-custom-apps.md)
+## [Certificazione delle app](/teams-app-certification/all-apps?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
+## [Modelli di app per Teams](https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
+## [Gestire l'app Elenchi per l'organizzazione in Teams](manage-lists-app.md)
+## [Gestire l'app Attività per l'organizzazione](manage-tasks-app.md)
+## [Configurare la gerarchia di destinazione del team](set-up-your-team-hierarchy.md)
+## [Configurare l'app Riunioni Skype per Teams](configure-skype-meetings-app-to-work-with-teams.md)
+
+
+<!-- ============================================================ -->
 # Riunioni e conferenze
 ## [Avvio veloce: riunioni ed eventi live](quick-start-meetings-live-events.md)
 ## [Pianificare la distribuzione](deploy-meetings-microsoft-teams-landing-page.md)
