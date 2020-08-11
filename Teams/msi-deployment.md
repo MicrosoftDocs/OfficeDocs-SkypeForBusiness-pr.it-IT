@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ae096b52a6934ed4a59fbd7d8ec20fba3a6baa47
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: 7a5b35add8e6de0a723ab568c4e0959bb9e5612b
+ms.sourcegitcommit: 1eb92a4a8c877f8b6c77cee62609cf9e8c9ee0a7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45088194"
+ms.lasthandoff: 08/10/2020
+ms.locfileid: "46606922"
 ---
 # <a name="install-microsoft-teams-using-microsoft-endpoint-configuration-manager"></a>Installare Microsoft Teams usando Microsoft Endpoint Configuration Manager
 
@@ -33,7 +33,6 @@ Per usare Microsoft Endpoint Configuration Manager o Criteri di gruppo o qualsia
 
 Ecco i collegamenti ai file MSI:
 
-
 |Entità  |32 bit      |64 bit      |
 |---------|---------|---------|
 |Commerciale:     | [32 bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&download=true)        | [64 bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true)       |
@@ -41,13 +40,15 @@ Ecco i collegamenti ai file MSI:
 |Governo federale - GCC High    | [32 bit](https://gov.teams.microsoft.us/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&download=true)         | [64 bit](https://gov.teams.microsoft.us/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true)        |
 |Governo federale - DoD     | [32 bit](https://dod.teams.microsoft.us/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&download=true)        | [64 bit](https://dod.teams.microsoft.us/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true)        |
 
-> [!NOTE]
-> Installare la versione a 64 bit di Teams nei sistemi operativi a 64 bit. Se si prova a installare la versione a 64 bit di teams in un sistema operativo a 32 bit, l'installazione non avrà esito positivo e attualmente non verrà visualizzato un messaggio di errore.
+**Per garantire una distribuzione corretta, tenere presente quanto segue:**
 
-I team possono anche essere inclusi in una distribuzione delle app Microsoft 365 per le aziende. Per altre informazioni, vedere [distribuire Microsoft teams con le app microsoft 365 per le aziende](https://docs.microsoft.com/deployoffice/teams-install).
+- Installare la versione a 64 bit di Teams nei sistemi operativi a 64 bit. Se si prova a installare la versione a 64 bit di teams in un sistema operativo a 32 bit, l'installazione non avrà esito positivo e attualmente non verrà visualizzato un messaggio di errore.
 
-> [!Note]
-> Per altre informazioni su Microsoft endpoint Configuration Manager, vedere [che cos'è Configuration Manager?](https://docs.microsoft.com/configmgr/core/understand/introduction)
+- Se il tenant del cliente si trova sulle nubi di GCCH o DoD, il cliente deve impostare l'endpoint iniziale nel registro di sistema aggiungendo il valore **CloudType** alla chiave **HKEY_CURRENT_USER \software\policies\microsoft\office\16.0\teams** nel registro di sistema. Il tipo per **CloudType** è **DWORD** e i valori sono (0 = non impostato, 1 = commerciale, 2 = GCC, * = GCCH, 4 = DOD). L'impostazione dell'endpoint con la chiave del registro di sistema limita i team alla connessione all'endpoint cloud corretto per la connettività di pre-accesso con teams.
+
+- I team possono anche essere inclusi in una distribuzione delle app Microsoft 365 per le aziende. Per altre informazioni, vedere [distribuire Microsoft teams con le app microsoft 365 per le aziende](https://docs.microsoft.com/deployoffice/teams-install).
+
+- Per altre informazioni su Microsoft endpoint Configuration Manager, vedere [che cos'è Configuration Manager?](https://docs.microsoft.com/configmgr/core/understand/introduction)
 
 ## <a name="deployment-procedure-recommended"></a>Procedura di distribuzione (consigliata)
 
