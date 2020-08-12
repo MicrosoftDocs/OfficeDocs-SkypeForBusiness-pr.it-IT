@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Informazioni su come assegnare un ID conferenza per un utente in Skype for Business online e quale devono essere i parametri ID conferenza. '
-ms.openlocfilehash: caa94984b06ff73d8f14acf4727870a988298974
-ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
+ms.openlocfilehash: a8f0e64ef30e1e503a1e3b78c9823f5d115df837
+ms.sourcegitcommit: b72bf3827e7145b9b6a95c84e88a7879c6e8c337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44163915"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46643606"
 ---
 # <a name="view-and-reset-a-conference-id-assigned-to-a-user-in-skype-for-business-online"></a>Visualizzare e reimpostare un ID conferenza assegnato a un utente in Skype for Business online
 
@@ -82,7 +82,7 @@ Per ulteriori informazioni sul cmdlet, vedere [Get-CsOnlineDialInConferencingUse
 
 2. Accedere all'interfaccia di amministrazione > **Skype for business**.
 
-3. Negli**utenti**di servizi di> **audioconferenza** > per l'interfaccia di **amministrazione di Skype for business**, nel riquadro azioni in **ID conferenza**fare clic su **Reimposta**.
+3. Negli utenti di servizi di audioconferenza per l'interfaccia di **amministrazione di Skype for business** >  **Audio conferencing**  >  **Users**, nel riquadro azioni in **ID conferenza**fare clic su **Reimposta**.
 
 4. Nella finestra **Reimposta ID conferenza** fare clic su **Sì**. A conference ID will be automatically created and an email sent to the user with the new conference ID.
 
@@ -103,7 +103,7 @@ Per ulteriori informazioni sul cmdlet, vedere [Get-CsOnlineDialInConferencingUse
 
 - L'ID conferenza deve soddisfare la lunghezza in cifre impostata sul ponte per audioconferenze. Non è possibile utilizzare caratteri speciali o alfabetici negli ID conferenza; possono essere utilizzati solo i numeri.
 
-- L'ID conferenza per tutti gli utenti di audioconferenze sarà di 7 cifre per impostazione predefinita e il numero di cifre non può essere modificato.
+- L'ID conferenza per tutti gli utenti di servizi di audioconferenza sarà di 9 cifre per impostazione predefinita e il numero di cifre non può essere modificato.
 
 
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
