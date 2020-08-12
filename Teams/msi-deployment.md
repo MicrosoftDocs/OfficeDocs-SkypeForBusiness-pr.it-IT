@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7a5b35add8e6de0a723ab568c4e0959bb9e5612b
-ms.sourcegitcommit: 1eb92a4a8c877f8b6c77cee62609cf9e8c9ee0a7
+ms.openlocfilehash: 55a514aa6aec6991e331b445a2fbb6e9c602ac91
+ms.sourcegitcommit: b72bf3827e7145b9b6a95c84e88a7879c6e8c337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46606922"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46640831"
 ---
 # <a name="install-microsoft-teams-using-microsoft-endpoint-configuration-manager"></a>Installare Microsoft Teams usando Microsoft Endpoint Configuration Manager
 
@@ -44,7 +44,7 @@ Ecco i collegamenti ai file MSI:
 
 - Installare la versione a 64 bit di Teams nei sistemi operativi a 64 bit. Se si prova a installare la versione a 64 bit di teams in un sistema operativo a 32 bit, l'installazione non avrà esito positivo e attualmente non verrà visualizzato un messaggio di errore.
 
-- Se il tenant del cliente si trova sulle nubi di GCCH o DoD, il cliente deve impostare l'endpoint iniziale nel registro di sistema aggiungendo il valore **CloudType** alla chiave **HKEY_CURRENT_USER \software\policies\microsoft\office\16.0\teams** nel registro di sistema. Il tipo per **CloudType** è **DWORD** e i valori sono (0 = non impostato, 1 = commerciale, 2 = GCC, * = GCCH, 4 = DOD). L'impostazione dell'endpoint con la chiave del registro di sistema limita i team alla connessione all'endpoint cloud corretto per la connettività di pre-accesso con teams.
+- Se il tenant del cliente si trova sulle nubi di GCCH o DoD, il cliente deve impostare l'endpoint iniziale nel registro di sistema aggiungendo il valore **CloudType** alla chiave **HKEY_CURRENT_USER \software\policies\microsoft\office\16.0\teams** nel registro di sistema. Il tipo per **CloudType** è **DWORD** e i valori sono (0 = non impostato, 1 = commerciale, 2 = GCC, 3 = GCCH, 4 = DOD). L'impostazione dell'endpoint con la chiave del registro di sistema limita i team alla connessione all'endpoint cloud corretto per la connettività di pre-accesso con teams.
 
 - I team possono anche essere inclusi in una distribuzione delle app Microsoft 365 per le aziende. Per altre informazioni, vedere [distribuire Microsoft teams con le app microsoft 365 per le aziende](https://docs.microsoft.com/deployoffice/teams-install).
 

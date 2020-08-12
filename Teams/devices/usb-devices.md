@@ -15,12 +15,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Vedere quali periferiche e dispositivi USB, ad esempio auricolari, vivavoce, webcam e monitor, sono certificati per Microsoft teams.
-ms.openlocfilehash: 3b92c41745027987ec3f03272fd10077c6302c49
-ms.sourcegitcommit: b14ad0a6c454b20f34fccbd1d312de24379faef0
+ms.openlocfilehash: 1bf3e122293665d5e883f191c31b76ba4dbba061
+ms.sourcegitcommit: b72bf3827e7145b9b6a95c84e88a7879c6e8c337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46572261"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46640911"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -80,8 +80,8 @@ Se si è un produttore e si vuole partecipare al programma di certificazione, ve
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
 |ViewSonic            |WCD-IFP8670                                                |7/31/2020       |Certificato per Skype for business                        |
 |ViewSonic            |WCD-IFP6570                                               |7/31/2020       |Certificato per Skype for business                        |
-|Jabra                |Attivare l'auricolare 75                                          |7/31/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
-|Jabra                |Attivare l'auricolare 65                                          |7/31/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
+|Jabra                |Auricolare evolve 75                                          |7/31/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
+|Jabra                |Auricolare evolve 65                                          |7/31/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
 |Jabra                |Attivare l'auricolare 50                                          |7/31/2020       |Skype for business con l'aggiornamento a Microsoft Teams      |
 |Avocor               |WCD-AVW-6555                                              |7/30/2020       |Certificato per Microsoft Teams                           |
 |Jabra                |Evolve2 85 Headset                                         |7/17/2020       |Certificato per Microsoft Teams                           |

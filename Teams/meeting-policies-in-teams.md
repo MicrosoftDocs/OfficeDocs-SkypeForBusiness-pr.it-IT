@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in teams e usarle per controllare le funzionalità disponibili per le riunioni dei partecipanti per i meeting pianificati dagli utenti.
-ms.openlocfilehash: 8eba2d4ebed9112e1ada4e3101bae9fe1cbfbcfe
-ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
+ms.openlocfilehash: c617669cdb5b0ee9f5a7acd52c2c9064b9cbc88e
+ms.sourcegitcommit: b72bf3827e7145b9b6a95c84e88a7879c6e8c337
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46552612"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46640961"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestire i criteri di riunione in Teams
 
@@ -219,7 +219,7 @@ Per le riunioni che necessitano di un'esperienza video di qualità elevata, ad e
 - [Consenti la lavagna](#allow-whiteboard)
 - [Consenti note condivise](#allow-shared-notes)
 
-### <a name="screen-sharing-mode"></a>Modalità di condivisione dello schermo
+### <a name="screen-sharing-mode"></a>Modalità condivisione schermo
 
 Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione determina se la condivisione del desktop o della finestra è consentita nella riunione dell'utente. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi, guest, B2B e federati, ereditano i criteri dell'organizzatore della riunione.
 
@@ -443,3 +443,4 @@ Per specificare se gli utenti possono personalizzare lo sfondo del video in una 
 
 - [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
 - [Assegnare criteri agli utenti in teams](assign-policies.md)
+- [Rimuovere i criteri di riunione di RestrictedAnonymousAccess teams dagli utenti](meeting-policies-restricted-anonymous-access.md)

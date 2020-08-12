@@ -1,5 +1,5 @@
 ---
-title: Usare i modelli di teams nella console di amministrazione
+title: Usare i modelli di team per creare un nuovo team
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -19,12 +19,12 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cc62eeb2cbbc14ce921c3f85860a72d38b59965d
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 8cb72ba0fce238a89b1d087baef16a30cb2d55d3
+ms.sourcegitcommit: 3814db70796888f15ea47d7810e1621a92992870
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583173"
+ms.lasthandoff: 08/11/2020
+ms.locfileid: "46634732"
 ---
 # <a name="get-started-with-teams-templates-in-the-teams-admin-console"></a>Introduzione ai modelli di teams nella console di amministrazione di Teams
 
@@ -35,7 +35,7 @@ ms.locfileid: "46583173"
 > [!NOTE]
 > I modelli di teams attualmente non supportano la creazione di canali privati. La creazione di canali privati non è inclusa nelle definizioni di modello.
 
-I modelli di teams sono definizioni predefinite della struttura di un team progettate attorno a un progetto o una necessità aziendale. Usare i modelli predefiniti o creare un modello personalizzato. I modelli di team consentono di creare rapidamente spazi di collaborazione avanzati con canali per diversi argomenti e preinstallare app per il pull in contenuti e servizi mission-critical. I modelli teams offrono una struttura del team predefinita che consente di creare facilmente team coerenti nell'organizzazione. Attualmente è possibile usare un modello nella console di amministrazione o tramite [Microsoft Graph](get-started-with-teams-templates.md).
+I modelli di teams sono definizioni predefinite della struttura di un team progettate attorno a un progetto o una necessità aziendale. Usare i modelli predefiniti o creare un modello personalizzato. I modelli di team consentono di creare rapidamente spazi di collaborazione avanzati con canali per diversi argomenti e preinstallare app per il pull in contenuti e servizi mission-critical. I modelli teams offrono una struttura del team predefinita che consente di creare facilmente team coerenti nell'organizzazione. Attualmente è possibile creare un team da un modello in teams o tramite [Microsoft Graph](get-started-with-teams-templates.md).
 
 In questo articolo vengono illustrate le proprietà che è possibile definire nei modelli, i tipi di modello di base e come è possibile usare alcune richieste di esempio per creare un team da un modello.
 
