@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come abilitare gli utenti al routing diretto di Microsoft Phone System.
-ms.openlocfilehash: 2ae485398cef1cef2444de07dcabc4bf3f949ad5
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: 5fc3955430e5aa441d3c1099a86011d2b0c760f0
+ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691372"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656147"
 ---
 # <a name="enable-users-for-direct-routing-voice-and-voicemail"></a>Abilitare gli utenti per il routing diretto, la voce e la segreteria telefonica
 
@@ -53,9 +53,9 @@ Se la distribuzione di Skype for business online è coesistente con Skype for bu
 
 Per informazioni sui requisiti di licenza, vedere [licenze e altri requisiti](direct-routing-plan.md#licensing-and-other-requirements) per [pianificare il routing diretto](direct-routing-plan.md).
 
-## <a name="ensure-that-the-user-is-homed-in-skype-for-business-online"></a>Verificare che l'utente sia ospitato in Skype for business online 
+## <a name="ensure-that-the-user-is-homed-online"></a>Verificare che l'utente sia ospitato online 
 
-Il routing diretto richiede che l'utente sia ospitato in Skype for business online. Puoi controllare osservando il parametro RegistrarPool, che deve avere un valore nel dominio infra.lync.com.
+Il routing diretto richiede che l'utente sia ospitato online. Puoi controllare osservando il parametro RegistrarPool, che deve avere un valore nel dominio infra.lync.com.
 
 1. Connettersi a PowerShell remoto.
 2. Emettere il comando: 

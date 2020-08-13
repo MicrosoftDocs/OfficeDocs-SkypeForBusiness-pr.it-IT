@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 697e36085169e0666e6a821a66c763be39cf9425
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: 16da525051e09f4ed1a7acaf3e9906f59b8b30af
+ms.sourcegitcommit: b23d3d583910aa21a62ea69b554ab614c1ae8079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868523"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648587"
 ---
 # <a name="team-expiration-and-renewal-in-microsoft-teams"></a>Scadenza e rinnovo del team in Microsoft Teams
 
@@ -33,7 +33,7 @@ Quando si applicano criteri di scadenza a un team, un proprietario del team rice
 
 ![Screenshot del pulsante Rinnova ora per rinnovare un team nelle impostazioni del team](media/team-expiration.png "Screenshot del pulsante Rinnova ora per rinnovare un team nelle impostazioni del team")
 
-Se il proprietario del team non rinnova il team, il team viene inserito in uno stato "Soft-deleted", il che significa che può essere ripristinato entro i prossimi 30 giorni.
+Se il proprietario del team non rinnova il team e non sono presenti ulteriori attività nel team fino alla fine dei criteri di scadenza, il team viene inserito in uno stato "Soft-deleted", il che significa che può essere ripristinato entro i prossimi 30 giorni.
 
 ## <a name="team-auto-renewal"></a>Rinnovo automatico del team
 

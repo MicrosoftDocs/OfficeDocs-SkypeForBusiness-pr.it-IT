@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a44adb84cb6669bb96bd617fb52ea9b5fdceb7af
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 4861683d3c46eaa6122ffbac0d2ae17b4f3a7979
+ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46581127"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46655997"
 ---
 <a name="microsoft-365-groups-and-microsoft-teams"></a>Microsoft 365 Groups e Microsoft Teams
 =====================================
@@ -40,7 +40,7 @@ Non perdere i [gruppi di poster in Microsoft 365 per gli architetti it](teams-ar
 <a name="how-microsoft-365-groups-work"></a>Come funzionano i gruppi di Microsoft 365
 --------------------------
 
-Quando si crea un team, nel backend si sta creando un gruppo Microsoft 365 e la raccolta documenti di SharePoint associata e il blocco appunti di OneNote, oltre a collegamenti ad altre applicazioni cloud di Office 365. Se la persona che crea il team è proprietaria di un gruppo di Office 365 pubblico o privato esistente, può aggiungere la funzionalità teams al gruppo se ha meno di 5000 persone e non è mai stato aggiunto a teams. In questo modo viene creato un canale **generale** predefinito in cui risiedono messaggi di chat, documenti, OneNote e altri oggetti. La visualizzazione della raccolta documenti per il canale rivelerà la cartella **generale** che rappresenta il canale nel team. Cosa più importante, se crei una struttura di cartelle personalizzata all'interno di una raccolta documenti, non viene **propagata** ai team come canale; per il momento, scorre solo da team in SharePoint.
+Quando si crea un team, nel backend si sta creando un gruppo Microsoft 365 e la raccolta documenti di SharePoint associata e il blocco appunti di OneNote, oltre a collegamenti ad altre applicazioni cloud di Office 365. Se la persona che crea il team è proprietaria di un gruppo di Office 365 pubblico o privato esistente, può aggiungere la funzionalità teams al gruppo se il numero di membri del gruppo si trova entro i limiti specificati in [limiti e specifiche per Microsoft teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) e il gruppo non è mai stato aggiunto ai team. In questo modo viene creato un canale **generale** predefinito in cui risiedono messaggi di chat, documenti, OneNote e altri oggetti. La visualizzazione della raccolta documenti per il canale rivelerà la cartella **generale** che rappresenta il canale nel team. Cosa più importante, se crei una struttura di cartelle personalizzata all'interno di una raccolta documenti, non viene **propagata** ai team come canale; per il momento, scorre solo da team in SharePoint.
 
 > [!NOTE]
 > In base al feedback dei clienti, i nuovi gruppi di Microsoft 365 generati come risultato della creazione di un team nel client Microsoft teams non verranno più visualizzati in Outlook per impostazione predefinita. Per attivare o disattivare la visualizzazione dei gruppi in Outlook, usare il cmdlet [set-UnifiedGroup](https://docs.microsoft.com/powershell/module/exchange/users-and-groups/set-unifiedgroup) con il parametro **HiddenFromExchangeClientsEnabled** . I gruppi creati tramite Outlook e successivamente abilitati per i team continueranno a essere visualizzati sia in Outlook che in teams. 

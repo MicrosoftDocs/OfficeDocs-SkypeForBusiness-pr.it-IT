@@ -1,7 +1,7 @@
 ---
 title: Gestire l'accesso guest in Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -17,12 +17,12 @@ description: Informazioni su come creare i primi team e i nuovi canali, a bordo 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4751f274e4bc7a874c1469041787d7d145c11bb8
-ms.sourcegitcommit: 3323c86f31c5ab304944a34892601fcc7b448025
+ms.openlocfilehash: fa45c5c307e33188548353a9a4d36086d804b278
+ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44637665"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46655937"
 ---
 <a name="manage-guest-access-in-microsoft-teams"></a>Gestire l'accesso guest in Microsoft Teams
 ======================================
@@ -30,7 +30,7 @@ ms.locfileid: "44637665"
 > [!IMPORTANT]
 > Potrebbe essere necessario attendere qualche ora affinché le modifiche abbiano effetto. 
 
-**Guest** è un tipo di utente in Microsoft teams incluso in tutti gli abbonamenti a Microsoft 365 business standard, Office 365 Enterprise, Microsoft 365 Business Basic e Office 365 Education. Non sono necessarie altre licenze Microsoft 365 o Office 365. Leggi altre informazioni sulla [gestione delle licenze di accesso Guest](#guest-access-licensing-limits) di seguito.
+**Guest** è un tipo di utente in Microsoft teams incluso in tutti gli abbonamenti a Microsoft 365 business standard, Office 365 Enterprise, Microsoft 365 Business Basic e Office 365 Education. Non sono necessarie altre licenze di Microsoft 365 o Office 365. Leggi altre informazioni sulla [gestione delle licenze di accesso Guest](#guest-access-licensing-limits) di seguito.
 
 L'accesso Guest teams è un'impostazione a livello di tenant ed è disattivata per impostazione predefinita. Per informazioni dettagliate su come attivare l'accesso guest, vedere [attivare o disattivare l'accesso Guest ai team](set-up-guests.md)oppure usare l'elenco di [controllo di accesso Guest](guest-access-checklist.md) per passare alla configurazione.
 

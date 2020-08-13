@@ -1,20 +1,19 @@
 ---
 title: Gestire l'app elogi nell'interfaccia di amministrazione di Teams
-author: CaitlynZawideh
-ms.author: t-cazaw
+author: cichur
+ms.author: v-cichur
 manager: serdars
 audience: admin
 ms.topic: article
 ms.service: msteams
 localization_priority: Normal
 description: Informazioni sulle impostazioni di amministrazione nell'app elogi nell'interfaccia di amministrazione di Microsoft Teams
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: deff9fca7cf1097399079482dc4667052a7be537
-ms.sourcegitcommit: 5bcc25fb20ed72bac02bc78e40b591e67eb58686
+ms.openlocfilehash: 2fa2f7e92646dafe3d8bf1cc39325a682c823686
+ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2020
-ms.locfileid: "46564077"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656307"
 ---
 # <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app elogi nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -46,7 +45,7 @@ Gli insegnanti possono riconoscere i singoli studenti per ottenere risultati e c
 
 ## <a name="create-your-own-badges"></a>Creare badge personalizzati
 
-Passare i **badge personalizzati** su attivato e selezionare **Crea un badge personalizzato**. Da lì è possibile progettare un badge personalizzato nel pannello laterale.
+Passare i **badge personalizzati** su attivato e selezionare **Crea un badge personalizzato**. Da lì è possibile progettare un badge personalizzato nel pannello laterale. Puoi creare fino a 25 badge personalizzati. 
 
 1. Immettere un nome per il badge. Questo è il nome che verrà visualizzato nel badge quando gli utenti inviano elogi.
 
@@ -55,7 +54,7 @@ Passare i **badge personalizzati** su attivato e selezionare **Crea un badge per
    > [!TIP]
    > Se non si ha familiarità con i valori esadecimali, questo articolo include una [rapida introduzione](#hex-colors-intro) per illustrare come usarli.
 
-3. Caricare un'immagine di badge. Il tipo di file accettato è. PNG. Il file deve essere minore di 25KB.
+3. Caricare un'immagine di badge. Il tipo di file accettato è. PNG. Il file di immagine deve essere inferiore a 40 KB con dimensioni massime di 216 X 216 pixel.
 ![Badge con campi in background, testo e immagini etichettati](media/praise-app-badge-fields.png)
 
 4. Localizzare il nome del badge: in **nomi di badge localizzati**selezionare **Aggiungi**. Selezionare le impostazioni locali desiderate nell'elenco a discesa. Immettere quindi il nome del badge nella lingua designata.
@@ -98,7 +97,7 @@ Di seguito è riportato un elenco di colori di esempio per iniziare:
 
 **Quando si scelgono i colori, tieni presente l'accessibilità.** Alcuni colori vanno insieme meglio di altri.  Creare un contrasto tra il testo e i colori di sfondo per semplificare la lettura del nome del badge. Se ad esempio si sceglie un colore di sfondo scuro, scegliere un colore di testo chiaro.
 
-**Quando si seleziona un'immagine, tieni presente la dimensione del badge.** Per ottenere una qualità ottimale, è consigliabile caricare un file di immagine di 216x216 pixel. Evitare di allungare o distorcere l'immagine per adattarla a queste dimensioni.
+**Quando si seleziona un'immagine, tieni presente la dimensione del badge.** Per ottenere una qualità ottimale, è consigliabile caricare un file di immagine di 216 x 216 pixel (che rappresentano le dimensioni massime). Evitare di allungare o distorcere l'immagine per adattarla a queste dimensioni.
 
 **Se l'immagine del badge non è rettangolare, rendere trasparente l'immagine.** È necessario eseguire questa operazione prima di caricare il file di immagine in elogio.
 

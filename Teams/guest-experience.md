@@ -1,7 +1,7 @@
 ---
 title: Com'è l'esperienza guest
-author: lanachin
-ms.author: v-lanac
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.topic: conceptual
 audience: admin
@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b34c58bc043f67d1a60f3b6c30fef7f5cc693b08
-ms.sourcegitcommit: 5895550d9d19a619d90af3381530ca3017e4b520
+ms.openlocfilehash: 4d02fa805481e99b2627f4ca88b4d4000da31972
+ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44799797"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46655947"
 ---
 <a name="what-the-guest-experience-is-like"></a>Com'è l'esperienza guest
 =================================
@@ -69,19 +69,19 @@ La tabella seguente mostra le funzionalità di chiamata e riunione disponibili p
 
 | Caratteristica chiamante | I | Utenti E1 e E3 | E5 e Enterprise Voice User |
 | --------------- | ----- | -------------- | -------------- |
-| Chiamate VOIP | Sì | Sì | Supporto per più paesi |
-| Chiamata di gruppo | Sì | Sì | Supporto per più paesi |
-| Controlli di chiamata principali supportati (blocco, mute, video attivato/disattivato, condivisione dello schermo) | Sì | Sì | Supporto per più paesi |
-| Destinazione di trasferimento | Sì | Sì | Supporto per più paesi |
-| Può trasferire una chiamata | Sì | Sì | Supporto per più paesi |
-| Trasferimento consultivo can | Sì | Sì | Supporto per più paesi |
-| Può aggiungere altri utenti a una chiamata tramite VOIP | Sì | Sì | Supporto per più paesi |
+| Chiamate VOIP | Sì | Sì | Sì |
+| Chiamata di gruppo | Sì | Sì | Sì |
+| Controlli di chiamata principali supportati (blocco, mute, video attivato/disattivato, condivisione dello schermo) | Sì | Sì | Sì |
+| Destinazione di trasferimento | Sì | Sì | Sì |
+| Può trasferire una chiamata | Sì | Sì | Sì |
+| Trasferimento consultivo can | Sì | Sì | Sì |
+| Può aggiungere altri utenti a una chiamata tramite VOIP | Sì | Sì | Sì |
 | Può aggiungere utenti per numero di telefono a una chiamata | No | No | Sì |
-| Inoltra destinazione | No | Sì | Supporto per più paesi |
-| Destinazione gruppo chiamate | No | Sì | Supporto per più paesi |
-| Destinazione senza risposta | No | Sì | Supporto per più paesi |
-| Può essere la destinazione di una chiamata federata | No | Sì | Supporto per più paesi |
-| Può eseguire una chiamata federata | No | Sì | Supporto per più paesi |
+| Inoltra destinazione | No | Sì | Sì |
+| Destinazione gruppo chiamate | No | Sì | Sì |
+| Destinazione senza risposta | No | Sì | Sì |
+| Può essere la destinazione di una chiamata federata | No | Sì | Sì |
+| Può eseguire una chiamata federata | No | Sì | Sì |
 | Può inoltrare immediatamente le chiamate | No | No | Sì |
 | Può chiamare simultaneamente le chiamate | No | No | Sì |
 | Può instradare le chiamate senza risposta | No | No | Sì |

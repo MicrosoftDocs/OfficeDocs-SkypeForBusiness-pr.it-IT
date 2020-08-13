@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 17420c93c883054d36c4ae2e1b323be9e589a2c2
-ms.sourcegitcommit: f7f86744c6dbf0db87e1408fd1f4b770fda07ff9
+ms.openlocfilehash: 1981640ab06d00e7895e11c0e15adf7555577908
+ms.sourcegitcommit: b23d3d583910aa21a62ea69b554ab614c1ae8079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/17/2020
-ms.locfileid: "45158674"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648607"
 ---
 # <a name="upgrade-from-skype-for-business-on-premises-to-teams"></a>Eseguire l'aggiornamento da Skype for business locale a teams
 
@@ -75,7 +75,7 @@ Per altre informazioni, vedere [trasferire gli utenti tra locale e il cloud](h
 
 ## <a name="step-4-disable-hybrid-to-complete-your-migration-to-the-cloud"></a>Passaggio 4: disabilitare l'ibrido per completare la migrazione al cloud
 
-Dopo aver spostato tutti gli utenti dal locale al cloud, è possibile rimuovere la Commissione dalla distribuzione di Skype for business locale. Per altre informazioni, vedere [disabilitare l'ibrido per completare la migrazione al cloud](upgrade-to-teams-execute-skypeforbusinesshybridonprem.md).
+Dopo aver spostato tutti gli utenti dal locale al cloud, è possibile rimuovere la Commissione dalla distribuzione di Skype for business locale. Per altre informazioni, vedere [disabilitare l'ibrido per completare la migrazione al cloud](https://docs.microsoft.com/skypeforbusiness/hybrid/cloud-consolidation-disabling-hybrid).
 
 
 ## <a name="phone-system-and-pstn-connectivity-options"></a>Sistema telefonico e opzioni di connettività PSTN
@@ -89,4 +89,3 @@ Quando si considerano le opzioni di connettività PSTN (Public Switched Telephon
 - Un utente in Skype for business locale con Enterprise Voice, che si sposterà in online e userà un piano di chiamata Microsoft. La migrazione di questo utente a teams richiede lo spostamento dell'account Skype for business locale dell'utente nel cloud e il coordinamento di tale spostamento con una a) la porta del numero di telefono di tale utente in un piano di chiamata Microsoft o B) che assegna un nuovo numero di abbonato dalle aree disponibili.  Per altre informazioni, vedere [da Skype for Business Server locale, con Enterprise Voice, al piano per le chiamate Microsoft](upgrade-to-teams-on-prem-overview.md#from-skype-for-business-server-on-premises-with-enterprise-voice-to-microsoft-calling-plan).
 
 - Un utente in Skype for business locale con Enterprise Voice, che si sposterà in online e continuerà a mantenere la connettività PSTN locale. La migrazione di questo utente a teams richiede lo spostamento dell'account Skype for business locale dell'utente nel cloud e il coordinamento di tale spostamento con la migrazione dell'utente al routing diretto. Per altre informazioni, vedere [da Skype for Business Server locale, con VoIP aziendale, per indirizzare il routing](upgrade-to-teams-on-prem-overview.md#from-skype-for-business-server-on-premises-with-enterprise-voice-to-direct-routing).
-

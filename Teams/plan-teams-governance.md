@@ -1,7 +1,7 @@
 ---
 title: Pianificare la governance in teams-Microsoft Teams
-author: lanachin
-ms.author: v-lanac
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.date: 08/10/2018
 ms.topic: reference
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 19b2fc0c14730f4aa4c25ccdfcf5298f6f038d3d
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: ea48b4df3313784cf129cf483aebac341917cb21
+ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44665278"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656357"
 ---
 # <a name="plan-for-governance-in-teams"></a>Pianificare la governance in Teams
 
@@ -103,6 +103,34 @@ Per informazioni tecniche su come implementare queste impostazioni, vedere:
 
 - [Archiviare o ripristinare un team](https://support.office.com/article/archive-or-restore-a-team-dc161cfd-b328-440f-974b-5da5bd98b5a7).
 
+## <a name="group-and-team-membership-management"></a>Gestione di gruppi e membri del team
+
+Per i team che richiedono una rapida onboarding e offboarding o utenti e Guest, è necessario gestire in modo coerente i membri di gruppi basati su progetti o con restrizioni. L'organizzazione potrebbe anche dover verificare che tutti i membri correnti abbiano la giustificazione aziendale in un team. La gestione dei membri può essere difficile perché i proprietari del team possono andarsene e gli utenti di solito non lasciano i gruppi per conto proprio quando un progetto termina o quando cambiano ruolo. Il modo migliore per gestire l'appartenenza ai gruppi che consente agli utenti di accedere quando necessario, ma assicurarsi che il gruppo non abbia un rischio di accesso non appropriato sia attraverso due processi distrettuali: la gestione dei diritti e le recensioni di Access.
+
+La [gestione dei diritti](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview) consente di delegare a un utente, ad esempio un Project Manager, di raccogliere tutte le risorse necessarie, incluse le appartenenze ai team, in un unico pacchetto. Possono anche definire chi può effettuare richieste: gli utenti nel tenant o da altre organizzazioni connesse. Project Manager riceverà le richieste di accesso nel proprio messaggio di posta elettronica e approverà o negherà le richieste nel portale di accesso. Gli amministratori possono configurare le condizioni di accesso per includere una data o un periodo di scadenza quando l'utente o l'ospite verrà rimosso dal team, a meno che l'accesso non venga rinnovato. Gli amministratori possono anche configurare i gruppi associati ai team per partecipare alle recensioni di Access. Per le [recensioni di Access](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview), i proprietari del gruppo riceveranno promemoria regolari per rivedere i membri di un team. Le recensioni di Access includono raccomandazioni, che semplificano l'esecuzione del processo di attestazione normale per i proprietari dei gruppi.
+
+||||
+|:-|:-|:-|
+|<img src="media/audio_conferencing_image7.png" alt= "An icon depicting decision points"/>  | Punti decisionali | L'organizzazione richiede un processo coerente per la gestione dell'appartenenza a uno o più team? <br> La propria organizzazione richiede i proprietari o i membri stessi per giustificare l'appartenenza continua di uno o più team regolarmente? <br> L'organizzazione richiede l'approvazione per gli utenti e gli ospiti per richiedere l'accesso alle risorse, inclusi team, gruppi, siti di SharePoint e app? |
+|<img src="media/audio_conferencing_image9.png" alt= "An icon depicting the next steps"/>| Passaggi successivi | Documentare i requisiti delle organizzazioni per ogni team o team specifici per la scadenza dell'appartenenza.<br>Pianificare in che modo l'organizzazione può raggruppare Team, gruppi, siti di SharePoint e app in pacchetti di Access.<br>Pianificare quali persone, ad esempio il responsabile del richiedente, un Project Manager, uno sponsor per un'organizzazione connessa o un responsabile della sicurezza dell'organizzazione dovranno approvare o rifiutare le richieste di accesso. |
+
+> [!TIP]
+> Usare la tabella seguente per acquisire i requisiti dell'organizzazione.
+
+| Funzionalità | Dettagli | Licenza Premium di Azure AD | Decisione |
+|:-|:-|:-|:-|
+| Recensioni di Access | Configurare le recensioni di Access per ricertificare l'appartenenza di team specifici a intervalli regolari | P2 | DA definire |
+| Gestione dei diritti | Configurare il pacchetto di Access per consentire agli utenti e agli ospiti di richiedere l'accesso ai team | P2 | DA definire |
+
+> [!NOTE]
+> Per informazioni su come pianificare in anticipo, vedere [altre informazioni sulle licenze necessarie](https://azure.microsoft.com/pricing/details/active-directory/).
+
+### <a name="additional-information"></a>Altre informazioni
+
+Per informazioni tecniche su come implementare queste impostazioni, vedere:
+
+- [Gestione dei diritti](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
+- [Recensioni di Access](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)
 
 ## <a name="teams-feature-management"></a>Gestione delle funzionalità Teams
 

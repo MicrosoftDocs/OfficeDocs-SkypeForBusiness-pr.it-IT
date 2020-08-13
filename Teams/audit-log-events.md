@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Informazioni su come recuperare i dati di Microsoft teams dal log di controllo.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 64b2e2f28b33a3f0518dbf4f2f07a4be3053d342
-ms.sourcegitcommit: 3814db70796888f15ea47d7810e1621a92992870
+ms.openlocfilehash: ac732b499327e6661472c59f370f45ece42e78cc
+ms.sourcegitcommit: b23d3d583910aa21a62ea69b554ab614c1ae8079
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2020
-ms.locfileid: "46634612"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648537"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Eseguire una ricerca nel log di controllo per gli eventi in Microsoft Teams
 
@@ -193,7 +193,7 @@ Puoi usare l'API di gestione attività di Office 365 per recuperare informazioni
 
 ## <a name="attribution-in-teams-audit-logs"></a>Attribuzione nei log di controllo di Teams
 
-Attualmente esiste un problema noto con l'attribuzione nei registri di controllo dei team e nei messaggi di controlli: un proprietario potrebbe essere erroneamente attribuito con la rimozione o l'aggiunta di utenti. Questo accade quando la modifica si verifica all'esterno di teams. In questi casi, è consigliabile usare i [log di controllo di Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+Le modifiche apportate all'appartenenza a teams (ad esempio utenti aggiunti o eliminati) effettuate tramite Azure Active Directory (Azure AD), il portale di amministrazione di Microsoft 365 o l'API di Microsoft 365 groups verranno visualizzate nei messaggi di controllo dei team e nel canale generale con l'attribuzione di un proprietario esistente del team e non con l'effettivo iniziatore dell'azione. In questi scenari, consulta i log di controllo di gruppo di Azure AD o [Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance) per visualizzare le informazioni pertinenti.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
