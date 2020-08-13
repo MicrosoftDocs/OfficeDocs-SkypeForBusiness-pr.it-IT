@@ -1,7 +1,7 @@
 ---
-title: Usare Advisor per Teams (anteprima pubblica) per distribuire Microsoft Teams
-author: lolajacobsen
-ms.author: lolaj
+title: Usare Advisor per Teams per distribuire Microsoft Teams
+author: SerdarSoysal
+ms.author: serdars
 ms.reviewer: brandber
 manager: serdars
 ms.topic: article
@@ -18,19 +18,17 @@ localization_priority: Priority
 f1.keywords:
 - CSH
 ms.custom: ''
-description: Usare Advisor per Teams (anteprima pubblica) per pianificare e completare la distribuzione di Microsoft Teams.
-ms.openlocfilehash: e447c05fc19766d3e67d510af6fbd424dc4173e7
-ms.sourcegitcommit: bdf6cea0face74809ad3b8b935bc14ad60b3bb35
+description: Usare Advisor per Teams per pianificare e completare la distribuzione di Microsoft Teams.
+ms.openlocfilehash: 72870eb94bc5bf19fce439c3607500eb688a291f
+ms.sourcegitcommit: b23d3d583910aa21a62ea69b554ab614c1ae8079
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "45201210"
+ms.lasthandoff: 08/12/2020
+ms.locfileid: "46648597"
 ---
 # <a name="use-advisor-for-teams-to-help-you-roll-out-microsoft-teams"></a>Usare Advisor per Teams per distribuire Microsoft Teams
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
-
-Advisor per Teams (anteprima pubblica) illustra in modo dettagliato l'implementazione di Microsoft Teams. Valuta l’ambiente dell’organizzazione di Microsoft 365 o Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente Teams. Quindi, Advisor per Teams crea un team di distribuzione (in Teams) con canali per ogni carico di lavoro che si vuole distribuire. Ogni carico di lavoro del team di distribuzione include un piano di Planner completo che include tutte le attività di implementazione per ogni carico di lavoro.  Con questo piano di Planner, si possono assegnare attività alle persone responsabili di ogni fase dell'implementazione, tra cui il project manager, gli amministratori di Teams e di Microsoft 365 o di Office 365, il personale del supporto e il team di adozione e conformità degli utenti. Ogni attività di implementazione contiene tutte le indicazioni e le risorse necessarie per completare correttamente l'attività.
+Advisor per Teams fornisce una guida per l'implementazione di Microsoft Teams. Valuta l’ambiente dell’organizzazione di Microsoft 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente Teams. Quindi, Advisor per Teams crea un team di distribuzione (in Teams) con canali per ogni carico di lavoro che si vuole distribuire. Ogni carico di lavoro del team di distribuzione include un piano di Planner completo che include tutte le attività di implementazione per ogni carico di lavoro.  Con questo piano di Planner, si possono assegnare attività alle persone responsabili di ogni fase dell'implementazione, tra cui il project manager, gli amministratori dei servizi di Teams, le persone di supporto e il team di adozione e conformità degli utenti. Ogni attività di implementazione contiene tutte le indicazioni e le risorse necessarie per completare correttamente l'attività.
 
 Advisor per Teams fa parte dell'[interfaccia di amministrazione di Teams](https://admin.teams.microsoft.com). Per sfruttare al meglio l'integrazione di Advisor per Teams con Forms e Planner, è necessaria almeno una licenza di Microsoft 365 Business Basic. Per iniziare a usare Advisor per Teams, fare clic sul pulsante **Avvia** nel widget **Distribuzione del carico di lavoro di Teams** nel dashboard. In alternativa, passare a **Pianificazione** > **Assistente per Teams**.
 
@@ -39,21 +37,21 @@ Advisor per Teams fa parte dell'[interfaccia di amministrazione di Teams](https:
 
 Per una panoramica guidata dell'esperienza di Advisor per Teams, vedere il video di Microsoft Mechanics [Distribuire e configurare Microsoft Teams](https://youtu.be/o2mlsUubIO4?t=50).
 
-## <a name="using-advisor-for-teams-public-preview"></a>Usare Advisor per Teams (anteprima pubblica)
+## <a name="using-advisor-for-teams"></a>Usare Advisor per Teams
 
-**Per usare Assistente per Teams sono necessarie le licenze di Teams, Forms e Planner.** Non è tuttavia necessario essere un amministratore di Teams per usare Assistente per Teams: chiunque nell'organizzazione può usarlo. Sono state configurate autorizzazioni speciali in modo che gli utenti non amministratori possano accedere ad Advisor per Teams, anche se questo si trova nell'interfaccia di amministrazione di Teams. È necessario essere un amministratore di Teams, un amministratore del servizio Teams oppure un amministratore globale per aprire le valutazioni di conformità del tenant, poiché i ruoli speciali senza privilegi di amministratore non hanno accesso alle API Microsoft Graph alla base delle valutazioni.
+**Per usare Assistente per Teams sono necessarie le licenze di Teams, Forms e Planner.** Non è tuttavia necessario essere un amministratore di Teams per usare Assistente per Teams: chiunque nell'organizzazione può usarlo. Sono state configurate autorizzazioni speciali in modo che gli utenti non amministratori possano accedere ad Advisor per Teams, anche se questo si trova nell'interfaccia di amministrazione di Teams. È necessario essere un amministratore di Teams, un amministratore del servizio Teams oppure un amministratore globale per aprire le valutazioni di conformità del tenant, poiché i ruoli speciali senza privilegi di amministratore non hanno accesso alle API Microsoft Graph alla base delle valutazioni. Non è tuttavia necessario essere un amministratore di Teams per usare Assistente per Teams: chiunque nell'organizzazione può usarlo. Sono state configurate autorizzazioni speciali in modo che gli utenti non amministratori possano accedere ad Advisor per Teams, anche se questo si trova nell'interfaccia di amministrazione di Teams. È necessario essere un amministratore di Teams, un amministratore del servizio Teams oppure un amministratore globale per aprire le valutazioni di conformità del tenant, poiché i ruoli speciali senza privilegi di amministratore non hanno accesso alle API Microsoft Graph alla base delle valutazioni.
 
 > [!IMPORTANT]
-> Se la voce **Assistente per Teams** non è presente in **Pianificazione** nell'interfaccia di amministrazione di Teams, l'utente non ha la licenza per Teams. Questo comportamento verrà modificato in futuro.
+> Se la voce **Assistente per Teams** non è presente in **Pianificazione** nell'interfaccia di amministrazione di Teams, l'utente non ha la licenza per Teams.
 
 La prima volta che si usa Advisor per Teams viene creato un team di distribuzione in Teams. Viene inoltre aggiunto un canale per ogni carico di lavoro selezionato.
 
 > [!IMPORTANT]
-> Se è già stato creato un team di distribuzione e un altro utente prova a crearlo, viene visualizzato un messaggio di errore che informa che è necessario contattare il team di supporto. Questo impedirà a Teams di rivelare inavvertitamente informazioni relative al team e ai membri esistenti. Rivolgersi al proprietario del team di distribuzione per essere aggiunti oppure contattare il supporto tecnico per ottenere assistenza.
+> Se è già stato creato un team di distribuzione e un altro utente prova a crearlo, viene visualizzato un messaggio di errore che informa che è necessario contattare il proprio team di supporto. Questo impedirà a Teams di rivelare inavvertitamente informazioni relative al team e ai membri esistenti. Rivolgersi al proprietario del team di distribuzione per essere aggiunti oppure contattare il supporto tecnico per ottenere assistenza.
 
 ## <a name="available-advisor-for-teams-plans"></a>Advisor disponibile per i piani di Teams
 
-Durante la fase di anteprima pubblica di Advisor per Teams, vengono forniti i due piani seguenti:
+Advisor per Teams attualmente prevede i seguenti piani:
 
 1. Chat, team, canali e app
     - Valutazione del tenant
@@ -81,7 +79,7 @@ Ogni piano include una valutazione di conformità del tenant che è possibile us
 - <sub><img src="media/use-advisor-teams-roll-out-image1.png" alt="Yellow alert mark"/></img></sub>Un triangolo di avviso arancione indica che è consigliabile eseguire azioni di follow-up per determinare se è necessaria un'azione, ad esempio un criterio di scadenza del gruppo di Microsoft 365 è consigliabile ma non obbligatorio.
 
 > [!IMPORTANT]
-> Dopo che un utente con un ruolo con privilegi di amministratore avvia Advisor per Teams, tutte le valutazioni vengono eseguite in background. Se si aggiorna o corregge un elemento, è possibile che non si rifletta nelle valutazioni fino a 24 ore. Si tratta di una situazione temporanea: non appena Advisor per Teams non sarà più in anteprima pubblica ma disponibile a livello generale, le valutazioni verranno aggiornate in tempo reale.
+> Dopo che un utente con un ruolo con privilegi di amministratore avvia Advisor per Teams, tutte le valutazioni vengono eseguite in background. Se si aggiorna o corregge un elemento, è possibile che non si rifletta nelle valutazioni fino a 24 ore.
 
 Le sezioni seguenti descrivono le singole valutazioni, tra cui se un elemento è un prerequisito o una procedura consigliata, il modo in cui vengono eseguiti i controlli e il motivo della valutazione, nonché le indicazioni per la correzione se necessaria.
 
@@ -143,7 +141,7 @@ Quando Advisor per Teams crea il team di distribuzione, il relativo bot consegna
 Per sfruttare al meglio l'integrazione di Advisor per Teams con Forms e Planner, è necessario almeno Microsoft 365 Business Basic.
 
 ### <a name="can-i-delete-the-deployment-team"></a>È possibile eliminare il team di distribuzione?
-Dopo che Advisor per Teams ha creato il team di distribuzione, è possibile gestire il team come qualsiasi altro team, inclusa la possibilità di eliminarlo. Tenere presente che se non si elimina il team tramite l'interfaccia di amministrazione di Teams, il team verrà visualizzato come ancora esistente nell'interfaccia di amministrazione. Si tratta di una situazione temporanea: verrà risolta quando Advisor per Teams non sarà più in anteprima pubblica e diventerà disponibile a livello generale.
+Dopo che Advisor per Teams ha creato il team di distribuzione, è possibile gestire il team come qualsiasi altro team, inclusa la possibilità di eliminarlo. Tenere presente che se non si elimina il team tramite l'interfaccia di amministrazione di Teams, il team verrà visualizzato come ancora esistente nell'interfaccia di amministrazione.
 
 ### <a name="can-i-add-or-remove-channels-in-the-deployment-team"></a>È possibile aggiungere o rimuovere canali nel team di distribuzione?
 Sì, dopo aver creato il team di distribuzione i canali verranno gestiti allo stesso modo di tutti gli altri team.
@@ -181,5 +179,4 @@ Passare al [Centro assistenza di Forms](https://support.office.com/forms).
 
 [Procedure consigliate per l'organizzazione dei team in Teams](best-practices-organizing.md)
 
-[Nomi dei prodotti e identificatori dei piani di servizio per le licenze](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference
-)
+[Nomi dei prodotti e identificatori dei piani di servizio per le licenze](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)

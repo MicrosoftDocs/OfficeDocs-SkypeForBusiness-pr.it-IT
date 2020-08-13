@@ -18,20 +18,20 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8358aaf175536ea567c6972d878466bdb004b660
-ms.sourcegitcommit: 95989f1a93524a2025feeb50b8635da332961ea3
+ms.openlocfilehash: 0148ea6ad68ede22807553f2bb708299c74bf884
+ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2020
-ms.locfileid: "46588270"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46656337"
 ---
-# <a name="microsoft-teams-admin-training"></a>Formazione per gli amministratori di Microsoft Teams
+# <a name="microsoft-teams-training"></a>Formazione su Microsoft Teams
 
 |               |               |
 | ------------- | ------------- |
 | <img src="https://docs.microsoft.com/office/media/icons/walkthrough-map-teams.svg" width="40 px" height="40 px" alt-text="walkthrough-map-teams"> | **[Formazione per gli amministratori](/microsoftteams/itadmin-readiness)** </br> Usare queste esercitazioni, i video e le altre risorse di formazione per saperne di più su Teams e incentivarne l'utilizzo nell'organizzazione. 
-| <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-teams.svg" width="40 px" height="40 px" alt-text="education-tutorial-teams"> | **[Formazione con docente](/microsoftteams/instructor-led-training-teams-landing-page)** </br> I corsi di formazione online gratuiti e in tempo reale ospitati da Microsoft sono pensati per consentire agli utenti di iniziare subito a usare Teams. Partecipa per vedere Teams in azione, ottenere risposte alle tue domande e interagire con gli istruttori live. 
-| <img src="https://docs.microsoft.com/office/media/icons/user.svg" width="40 px" height="40 px" alt-text="user"> | **[Formazione per gli utenti finali.](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)** </br> Usare queste risorse di formazione per consentire agli utenti dell'organizzazione di sfruttare al meglio Teams. |
+| <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-teams.svg" width="40 px" height="40 px" alt-text="education-tutorial-teams"> | **[Formazione dal vivo di Teams](/microsoftteams/instructor-led-training-teams-landing-page)** </br> I corsi di formazione online gratuiti e in tempo reale ospitati da Microsoft sono pensati per consentire agli utenti di iniziare subito a usare Teams. Partecipa per vedere Teams in azione, ottenere risposte alle tue domande e interagire con gli istruttori live. 
+| <img src="https://docs.microsoft.com/office/media/icons/user.svg" width="40 px" height="40 px" alt-text="user"> | **[Formazione online di Teams](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)** </br> Usare queste risorse di formazione autogestita per consentire agli utenti di sfruttare al meglio Teams. |
 
 ## <a name="dont-miss-this-key-training"></a>Risorse fondamentali per la formazione
 
@@ -78,5 +78,4 @@ Questo elenco verrà continuamente aggiornato. Si consiglia quindi di consultarl
    :::column-end:::
 
 :::row-end:::
-
 ---
