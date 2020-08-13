@@ -168,6 +168,7 @@
 
 ## [Esercitazione: riunioni in Teams](Tutorial-Meetings-in-Teams.yml)
 ## [Gestire i criteri delle riunioni](meeting-policies-in-teams.md)
+## [Rimuovere criterio riunione RestrictedAnonymousAccess da utenti](meeting-policies-restricted-anonymous-access.md)
 ## [Gestire le impostazioni delle riunioni](meeting-settings-in-teams.md)
 ## [E-mail inviate automaticamente agli utenti in caso di modifica delle impostazioni](emails-sent-to-users-when-their-settings-change-in-teams.md) 
 ## [Consentire agli utenti di registrare il loro nome quando partecipano a una riunione](enable-users-to-record-their-name-when-they-join-a-meeting-in-teams.md)
