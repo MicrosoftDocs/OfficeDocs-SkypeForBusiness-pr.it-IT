@@ -125,6 +125,7 @@
 ## [Modelli di app per Teams](https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json)
 ## [Gestire l'app Elenchi per l'organizzazione in Teams](manage-lists-app.md)
 ## [Gestire l'app Attività per l'organizzazione](manage-tasks-app.md)
+## [Gestire l’app Complimenti nell'interfaccia di amministrazione di Teams](manage-praise-app.md)
 ## [Configurare la gerarchia di destinazione del team](set-up-your-team-hierarchy.md)
 ## [Configurare l'app Riunioni Skype per Teams](configure-skype-meetings-app-to-work-with-teams.md)
 
@@ -830,6 +831,7 @@
 ## Dispositivi supportati
 ### [Gestire i dispositivi in Teams](devices/device-management.md)
 ### [Update your devices remotely](devices/remote-update.md)
+### [Gestire i tag dei dispositivi Teams](devices/manage-device-tags.md)
 ### [Telefoni per Teams](devices/phones-for-teams.md)
 ### [Dispositivi video e audio USB](devices/usb-devices.md)
 ### [Distribuire barre di collaborazione per Microsoft Teams](devices/collab-bar-deploy.md)
