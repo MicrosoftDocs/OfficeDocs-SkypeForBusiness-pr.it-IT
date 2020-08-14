@@ -1,7 +1,7 @@
 ---
 title: Gestire gli account delle risorse in teams
-ms.author: dstrome
-author: dstrome
+ms.author: mikeplum
+author: MikePlumleyMSFT
 manager: serdars
 ms.reviewer: jastark, wasseemh
 ms.topic: article
@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.orgwidesettings.resourceaccounts.overview
 - seo-marvel-apr2020
 description: In questo articolo verrà illustrato come creare, modificare e gestire gli account delle risorse in Microsoft teams.
-ms.openlocfilehash: b47e00323129211f657ec1dafc4e62a7cd6e4321
-ms.sourcegitcommit: 6a4bd155e73ab21944dd5f4f0c776e4cd0508147
+ms.openlocfilehash: 90e8ab26782424c6cc341936f185a253c6d1fbe6
+ms.sourcegitcommit: eb8b573a426b6a68c763968c4cd2d45bc0d6a4b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "44868613"
+ms.lasthandoff: 08/14/2020
+ms.locfileid: "46672857"
 ---
 # <a name="manage-resource-accounts-in-microsoft-teams"></a>Gestire gli account di risorsa in Microsoft Teams
 
@@ -54,7 +54,7 @@ Se l'organizzazione usa già almeno una licenza per il sistema telefonico, per a
 
 Se l'operatore automatico o la coda di chiamata è annidata in un operatore automatico di primo livello, l'account di risorse associato ha bisogno solo di un numero di telefono se si vogliono più punti di entrata nella struttura degli operatori automatici e delle code di chiamata.
 
-Per reindirizzare le chiamate alle persone dell'organizzazione ospitate online, devono avere una licenza di **sistema telefonico** ed essere abilitate per Enterprise Voice o avere piani di chiamata Microsoft 365 o Office 365. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, Esegui:`Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
+Per reindirizzare le chiamate alle persone dell'organizzazione ospitate online, devono avere una licenza di **sistema telefonico** ed essere abilitate per Enterprise Voice o avere piani di chiamata Microsoft 365 o Office 365. Vedere [assegnare licenze per i componenti aggiuntivi Microsoft teams](teams-add-on-licensing/assign-teams-add-on-licenses.md). Per abilitare VoIP aziendale, è possibile utilizzare Windows PowerShell. Ad esempio, Esegui: `Set-CsUser -identity "Amos Marble" -EnterpriseVoiceEnabled $true`
 
 > [!WARNING]
 > Per evitare problemi con l'account delle risorse, seguire questa procedura in questo ordine.
@@ -178,7 +178,7 @@ L'ID applicazione che devi usare durante la creazione delle istanze dell'applica
 
 1. Per creare un account delle risorse online per l'uso con un operatore automatico, usare il comando seguente:
 
-    ``` Powershell
+    ```powershell
     New-CsOnlineApplicationInstance -UserPrincipalName testra1@contoso.com -ApplicationId "ce933385-9390-45d1-9512-c8d228074e07" -DisplayName "Resource account 1"
     ```
 
@@ -186,7 +186,7 @@ L'ID applicazione che devi usare durante la creazione delle istanze dell'applica
 
 3. Opzionale Dopo aver applicato la licenza corretta all'account delle risorse, è possibile assegnare un numero di telefono all'account delle risorse, come illustrato di seguito. Non tutti gli account delle risorse richiedono un numero di telefono. Se non è stata applicata una licenza per l'account delle risorse, l'assegnazione del numero di telefono non riuscirà.
 
-   ``` Powershell
+   ```powershell
    Set-CsOnlineVoiceApplicationInstance -Identity testra1@contoso.com -TelephoneNumber +14255550100
    Get-CsOnlineTelephoneNumber -TelephoneNumber +14255550100
    ```
@@ -198,7 +198,7 @@ L'ID applicazione che devi usare durante la creazione delle istanze dell'applica
 
    Per assegnare un numero di telefono di routing diretto a un account delle risorse (ospitati in Microsoft teams o Skype for Business Server 2019), usare il cmdlet seguente per PowerShell per Skype for business online:
 
-   ``` Powershell
+   ```powershell
    Set-CsOnlineApplicationInstance -Identity appinstance01@contoso.com -OnpremPhoneNumber +14250000000
    ```
 
@@ -216,7 +216,7 @@ Al termine, fare clic su **Salva**.
 
 Assicurarsi di dissociare il numero di telefono dall'account delle risorse prima di eliminarlo, per evitare che il numero di servizio venga bloccato in modalità in sospeso. Puoi eseguire questa operazione usando il cmdlet seguente:
 
-``` Powershell
+```powershell
 Set-CsOnlineVoiceApplicationInstance -Identity <Resource Account oid> -TelephoneNumber $null
 ```
 
@@ -224,7 +224,7 @@ Dopo aver eseguito questa operazione, è possibile eliminare l'account delle ris
 
 Per dissociare un numero di telefono di routing diretto dall'account delle risorse, usare il cmdlet seguente:
 
-``` Powershell
+```powershell
 Set-CsOnlineApplicationInstance -Identity  <Resource Account oid> -OnpremPhoneNumber ""
 ```
 
@@ -234,13 +234,13 @@ Set-CsOnlineApplicationInstance -Identity  <Resource Account oid> -OnpremPhoneNu
 
 Se il numero di telefono assegnato all'account delle risorse non è visualizzato nell'interfaccia di amministrazione di Microsoft teams e non è possibile assegnare il numero, verificare quanto segue:
 
-``` Powershell
+```powershell
 Get-MsolUser -UserPrincipalName "username@contoso.com"| fl objectID,department
 ```
 
 Se l'attributo Department Visualizza l'endpoint dell'applicazione Skype for business, eseguire il cmdlet seguente:
 
-``` Powershell
+```powershell
 Set-MsolUser -ObjectId -Department "Microsoft Communication Application Instance"
 ```
 

@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Gli organizzatori della riunione possono imparare a usare l'app teams per consentire ad altre persone di partecipare alla stessa riunione usando i loro telefoni.
-ms.openlocfilehash: 7d15cbbc1b81d54f6a217713cea3927dcff31e56
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+ms.openlocfilehash: f84f811d89847bfdf17f123abe9c2df88536bc76
+ms.sourcegitcommit: 7a9c63ee790108eaa61950ce28ae8027311039d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691292"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662106"
 ---
 # <a name="dialing-out-from-a-microsoft-teams-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione di Microsoft teams in modo che gli altri utenti possano accedervi
 
@@ -38,7 +38,8 @@ Quando si effettua la chiamata in uscita a un utente, è consigliabile usare i n
   Tieni presente che:
 
 - È possibile effettuare la chiamata solo se si partecipa a una riunione tramite teams.
-- L'organizzatore della riunione è stato abilitato per i servizi di audioconferenza.
+- L'organizzatore della riunione è stato abilitato per i servizi di audioconferenza oppure, nel caso in cui non è stata assegnata una licenza di audioconferenza, è consentito effettuare chiamate alla rete telefonica pubblica tramite piani per chiamate online o routing diretto.
+- All'organizzatore della riunione viene [concesso un criterio di chiamata in linea che consente la chiamata fuori dalle conferenze abilitate](https://docs.microsoft.com/powershell/module/skype/grant-csdialoutpolicy?view=skype-ps)
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]

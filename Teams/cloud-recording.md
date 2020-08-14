@@ -16,12 +16,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 817e9ff29ff1081c1d6f6aee4720f991eb845a21
-ms.sourcegitcommit: a94a267c421a78587b0dbbea5fa167aad2882e9b
+ms.openlocfilehash: 6c032745a8476e42ef57a6ce8d746717fcf02708
+ms.sourcegitcommit: 7a9c63ee790108eaa61950ce28ae8027311039d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "45012282"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662086"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -36,7 +36,7 @@ Argomenti correlati: [documentazione per gli utenti finali sulla registrazione d
 
 Per registrare le riunioni di un utente di Teams, è necessario che Microsoft Stream sia abilitato per il tenant. Sono inoltre necessari i prerequisiti seguenti sia per l'organizzatore della riunione che per la persona che avvia la registrazione:
 
-- L'utente ha un abbonamento a Office 365 E1, E3, E5, A1, A3, A5, M365 Business, Business Premium o Business Essentials
+- L'utente ha Office 365 E1, E3, E5, a1, a3, a5, M365 Business Premium, M365 business standard o M365 Business Basic.
 - L'utente ha una licenza di Microsoft Stream<sup>1</sup> 
 - L'utente ha autorizzazioni per il caricamento di video in Microsoft Stream
 - L'utente ha accettato le linee guida dell'azienda, se sono state configurate dall'amministratore

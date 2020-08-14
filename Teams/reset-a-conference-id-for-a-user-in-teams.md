@@ -21,20 +21,19 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Informazioni sui passaggi per reimpostare l'ID conferenza di una riunione dell'utente in Microsoft teams e ottenere collegamenti agli strumenti di aggiornamento e migrazione delle riunioni.
-ms.openlocfilehash: fbda2d65868d9f4082ae7b3ee835d0560c609e11
-ms.sourcegitcommit: f586d2765195dbd5b7cf65615a03a1cb098c5466
+ms.openlocfilehash: 52b547fee5bf027bcef21914e3ba3aa79b0e4e08
+ms.sourcegitcommit: 7a9c63ee790108eaa61950ce28ae8027311039d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "44666198"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662126"
 ---
 # <a name="reset-a-conference-id-for-a-user-in-microsoft-teams"></a>Reimpostare un ID conferenza per un utente in Microsoft Teams
 
 Un ID conferenza dinamico è incluso nella parte inferiore degli inviti alle riunioni insieme ai numeri di telefono di accesso esterno che possono essere usati dai chiamanti per chiamare una riunione. Quando l'utente compone il numero di telefono, l'operatore automatico per la riunione chiederà al chiamante di immettere l'ID conferenza in modo che possa partecipare alla riunione.
   
 > [!NOTE]
-> Se il provider di servizi di conferenza è Microsoft, l'ID conferenza degli utenti è impostato su Solo dinamico per impostazione predefinita. Sfortunatamente, non c'è possibilità di modificarla per diventare statica, dato che ora non è supportata. Gli ID conferenza vengono impostati automaticamente solo per gli utenti di Microsoft teams abilitati per i servizi di audioconferenza. 
-
+> Gli ID conferenza vengono generati automaticamente, saranno compresi tra le cifre di 7-9 e vengono impostati quando si Abilita la conferenza audio per un utente. **Gli ID conferenza statici non sono supportati.** 
 
 ## <a name="resetting-the-conference-id-for-a-user"></a>Reimpostare l'ID conferenza per un utente
 
@@ -59,7 +58,7 @@ Un ID conferenza dinamico è incluso nella parte inferiore degli inviti alle riu
 
 - È possibile inviare tutte le informazioni di conferenza all'utente in un messaggio di posta elettronica che include l'ID conferenza e i numeri di telefono di accesso esterno facendo clic su **Invia informazioni conferenza in posta elettronica** per l'utente nella sezione **audioconferenza** . Il PIN non è incluso.
     
-- Un ID conferenza conterrà 8 cifre e non è possibile modificarne la lunghezza.
+- Un ID conferenza di 7-9 digit viene creato dal servizio teams. Non è possibile modificarne la lunghezza.
     
 - Dopo la reimpostazione, il nuovo ID conferenza viene riportato nella sezione **ID conferenza**.
     

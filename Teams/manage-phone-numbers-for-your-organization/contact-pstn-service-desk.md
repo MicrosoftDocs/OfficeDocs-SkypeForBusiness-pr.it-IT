@@ -23,12 +23,12 @@ ms.custom:
 - Calling Plans
 ROBOTS: NOINDEX, NOFOLLOW
 description: Quando si ottengono numeri di telefono o numeri di porta (trasferimento) per l'organizzazione, potrebbe essere necessario ottenere assistenza e supporto tecnico presso il servizio di assistenza PSTN.
-ms.openlocfilehash: 7e259010772dd655f748f30e3de291a4a43c5cef
-ms.sourcegitcommit: 8816b58e175031cb0a71e0d0e89e447a7b83a760
+ms.openlocfilehash: b0ba69aae5c25db788279ec4e28ad306514b1974
+ms.sourcegitcommit: 7a9c63ee790108eaa61950ce28ae8027311039d9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/08/2020
-ms.locfileid: "46597061"
+ms.lasthandoff: 08/13/2020
+ms.locfileid: "46662096"
 ---
 # <a name="pstn-service-desk-contact-information"></a>Informazioni di contatto per i servizi PSTN
 
@@ -36,8 +36,9 @@ Per contattare il team del servizio di assistenza PSTN, inviare un messaggio di 
 
 | **Voglio trasferire/portare I numeri esistenti**  | **Si vogliono ordinare nuovi numeri per** |
 |:-----:|:------:|
-| **All'interno** degli **Stati Uniti** o in **Canada**, inviare un messaggio di posta elettronica a [PTN@microsoft.com](mailto:ptn@microsoft.com).| **Belgio, Francia, Germania, Gran Bretagna, Irlanda, Paesi Bassi, Spagna, Svezia, Svizzera**, inviare un messaggio di posta elettronica a [ptneu@microsoft.com](mailto:ptneu@microsoft.com).|
-|Al di **fuori** degli **Stati Uniti** o in **Canada**, inviare un messaggio di posta elettronica a [ptneu@microsoft.com](mailto:ptneu@microsoft.com).| **Resto del mondo**, invia un messaggio di posta elettronica a [gcstnmsd@microsoft.com](mailto:gcstnmsd@microsoft.com).|
+| [**All'interno degli Stati Uniti o Canada**, invia un messaggio di posta elettronica su PTN@microsoft.com](mailto:ptn@microsoft.com)| [**Belgio, Francia, Germania, Gran Bretagna, Irlanda, Paesi Bassi, Spagna, Svezia, Svizzera**, invia un messaggio di posta elettronica a ptneu@microsoft.com](mailto:ptneu@microsoft.com)|
+|[Al di **fuori degli Stati Uniti o Canada**, invia un messaggio di posta elettronica su ptneu@microsoft.com](mailto:ptneu@microsoft.com)| [**Resto del mondo**, invia un messaggio di posta elettronica a gcstnmsd@microsoft.com](mailto:gcstnmsd@microsoft.com)|
+|A causa di un picco elevato nelle richieste in arrivo, il team di conversione del **Nord America** viene eseguito il backlog. Stiamo lavorando per cancellare questo backlog in base a una FIFO (First in, First out) e, di conseguenza, **la risposta alle nuove richieste verrà ritardata.**|A causa di un picco elevato nelle richieste in arrivo, il **team di trasferimento dell'UE** è stato eseguito come backlog. Stiamo lavorando per cancellare questo backlog in base a una FIFO (First in, First out) e, di conseguenza, **la risposta alle nuove richieste verrà ritardata.**|
 
 > [!NOTE]
 > Le risposte dell'America del Nord potrebbero essere ritardate a causa di un notevole aumento delle richieste in arrivo. L'arretrato viene eliminato in base a una FIFO (First in, First out).
