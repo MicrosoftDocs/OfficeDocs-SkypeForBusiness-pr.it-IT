@@ -17,17 +17,17 @@ f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6674f755c4f6a36c3877680aa0c4c4de4f27c83c
-ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
+ms.openlocfilehash: d9e91f51bb809b9917036dce1d074ec694cb113f
+ms.sourcegitcommit: 20258b691ffc559b1656fd1e57f67f5c3a9e29e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46656197"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46761152"
 ---
 <a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso Guest a Microsoft Teams
 ===================================================
 
-L'accesso guest è disabilitato per impostazione predefinita. Come amministratore di Microsoft 365 o Office 365, è necessario attivare l'accesso guest per i team prima che l'amministratore o i proprietari del team possano aggiungere Guest. Per attivare l'accesso guest, usare l' [elenco di controllo di accesso Guest](guest-access-checklist.md). 
+L'accesso guest è disabilitato per impostazione predefinita. Come amministratore di Microsoft 365 o Office 365, è necessario attivare l'accesso guest per i team prima che l'amministratore o i proprietari del team possano aggiungere Guest. Per attivare l'accesso guest, [collaborare con gli ospiti in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team). 
 
 Dopo aver attivato l'accesso guest, potrebbe essere necessario qualche ora affinché le modifiche abbiano effetto. Se un utente vede il messaggio "Contatta l'amministratore" quando prova ad aggiungere un Guest al proprio team, è probabile che l'accesso guest non sia stato attivato o che le impostazioni non siano ancora valide.
 

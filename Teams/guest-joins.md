@@ -18,12 +18,12 @@ description: Informazioni sui passaggi necessari per aggiungere persone esterne 
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 476640953c0b3773fde44727dede6b95e6bf676d
-ms.sourcegitcommit: 875c854547b5d3ad838ad10c1eada3f0cddc8e66
+ms.openlocfilehash: 985374db5ff44d19efb26571dc7e9a0e78241002
+ms.sourcegitcommit: 20258b691ffc559b1656fd1e57f67f5c3a9e29e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "46655917"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46761232"
 ---
 <a name="how-a-guest-joins-a-team"></a>Come partecipare a un team da guest
 ========================
@@ -31,7 +31,7 @@ ms.locfileid: "46655917"
 Il proprietario di un team di Microsoft Teams può aggiungere e gestire i guest nei propri team tramite Web o desktop. Chiunque abbia un account di posta elettronica aziendale o personale come Outlook, Gmail o altri, può partecipare come guest in Teams e avere accesso completo a chat, riunioni e file del team. È possibile aggiungere come guest solo persone esterne all'organizzazione, ad esempio partner o consulenti. Le persone dell'organizzazione possono partecipare come normali membri del team.
   
 > [!NOTE]
-> L'accesso guest è disabilitato per impostazione predefinita. Quindi, prima di poter partecipare a un team, un amministratore deve abilitare l'accesso guest in Teams. Per farlo, usare l'[Elenco di controllo degli accessi guest](guest-access-checklist.md). 
+> L'accesso guest è disabilitato per impostazione predefinita. Quindi, prima di poter partecipare a un team, un amministratore deve abilitare l'accesso guest in Teams. Per farlo, Vedi [collaborare con gli utenti in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team). 
   
 ## <a name="how-a-guest-becomes-a-member-of-a-team"></a>Come diventare un membro di un team da guest
 
