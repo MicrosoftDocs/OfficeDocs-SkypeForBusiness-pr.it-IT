@@ -17,12 +17,12 @@ description: Informazioni su come comunicare con utenti di altre organizzazioni 
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: 28897d5d94d56a7113fc555e0547192931caf3eb
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 5f493643ede3fda0eab0791d5195d749f20eb7ad
+ms.sourcegitcommit: 20258b691ffc559b1656fd1e57f67f5c3a9e29e1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46581797"
+ms.lasthandoff: 08/15/2020
+ms.locfileid: "46761382"
 ---
 <a name="communicate-with-users-from-other-organizations-in-microsoft-teams"></a>Comunicare con utenti di altre organizzazioni in Microsoft Teams
 ======================================================
@@ -51,7 +51,7 @@ Usare l'**accesso guest** per aggiungere un singolo utente, indipendentemente da
 - Gli utenti guest hanno accesso a più risorse in Teams, ad esempio file, team e canali, rispetto agli utenti con accesso esterno (federato).
 - L'amministratore di Teams controlla tutto ciò che un guest può o non può fare grazie all'interfaccia di amministrazione di Teams. Per altre informazioni, vedere [Gestire l’accesso guest](manage-guests.md).
 
-Se si vuole attivare l'accesso guest nell'organizzazione, iniziare con l'[Elenco di controllo dell’accesso guest](guest-access-checklist.md).
+Se sei pronto per attivare l'accesso ospite nella tua organizzazione, inizia con [Collaborare con gli ospiti in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team).
 
 
 ## <a name="compare-external-and-guest-access"></a>Confrontare l'accesso esterno e guest
