@@ -63,7 +63,6 @@
 
 ### Accesso guest
 #### [Informazioni sull'accesso guest](guest-access.md)
-#### [Elenco di controllo dell'accesso guest](guest-access-checklist.md)
 #### [Come un guest partecipa a un team](guest-joins.md)
 #### [Com'è l'esperienza guest](guest-experience.md)
 #### [Autorizzare l'accesso guest in Teams](teams-dependencies.md)
@@ -148,6 +147,9 @@
 ### Distribuisci
 #### [Panoramica della distribuzione](rooms/rooms-deploy.md)
 #### [Configurare gli account](rooms/rooms-configure-accounts.md)
+#### Surface Hub
+##### [Configurare Riunioni coordinate](rooms/coordinated-meetings.md)
+##### [Gestire le impostazioni di Microsoft Teams Rooms](rooms/surface-hub-manage-config.md).
 #### [Con Office 365](rooms/with-office-365.md)
 #### [Con Skype for Business Server](rooms/with-skype-for-business-server-2015.md)
 #### [Con Exchange Online (ibrido)](rooms/with-exchange-online.md)
